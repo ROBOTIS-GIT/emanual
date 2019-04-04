@@ -186,15 +186,15 @@ main:
       - title: "H42P-020-S300-R"
         titlekr: "H42P-020-S300-R"
         url: /dxl/pro_plus/h42p-020-s300-r/
-      # - title: "M54P-060-S250-R"
-      #   titlekr: "M54P-060-S250-R"
-      #   url: /dxl/pro_plus/m54p-060-s250-r/
-      # - title: "M54P-040-S250-R"
-      #   titlekr: "M54P-040-S250-R"
-      #   url: /dxl/pro_plus/m54p-040-s250-r/
-      # - title: "M42P-010-S260-R"
-      #   titlekr: "M42P-010-S260-R"
-      #   url: /dxl/pro_plus/m42p-010-s260-r/
+      - title: "M54P-060-S250-R"
+        titlekr: "M54P-060-S250-R"
+        url: /dxl/pro_plus/m54p-060-s250-r/
+      - title: "M54P-040-S250-R"
+        titlekr: "M54P-040-S250-R"
+        url: /dxl/pro_plus/m54p-040-s250-r/
+      - title: "M42P-010-S260-R"
+        titlekr: "M42P-010-S260-R"
+        url: /dxl/pro_plus/m42p-010-s260-r/
     - title: "Procotol 1.0"
       titlekr: "프로토콜 1.0"
       url: /dxl/protocol1/
@@ -366,9 +366,9 @@ main:
       - title: "DYNAMIXEL Workbench"
         titlekr: "다이나믹셀 워크벤치"
         url: /software/dynamixel/dynamixel_workbench/
-      # - title: "DYNAMIXEL Wizard 2.0"
-      #   titlekr: "다이나믹셀 위자드 2.0"
-      #   url: /software/dynamixel/dynamixel_wizard2/
+      - title: "DYNAMIXEL Wizard 2.0"
+        titlekr: "다이나믹셀 위자드 2.0"
+        url: /software/dynamixel/dynamixel_wizard2/
     - title: "Mobile Apps"
       titlekr: "모바일 앱"
       children:
@@ -451,9 +451,9 @@ main:
       url: /software/arduino_ide/
     - title: "ROBOTIS Framework Packages"
       url: /software/robotis_framework_packages/
-    - title: "ROBOTIS Manipulator library"
-      titlekr: "ROBOTIS Manipulator library"
-      url: /software/robotis_manipulator_libs/
+    - title: "ROBOTIS Manipulator Library"
+      titlekr: "ROBOTIS Manipulator Library"
+      url: /software/robotis_manipulator_library/doxygen/html/index.html
   - title: "PARTS"
     titlekr: "부품"
     children:
@@ -17916,277 +17916,6 @@ robotis_framework_packages:
       url: /software/robotis_framework_packages/tutorials/#creating-new-sensor-module
     - title: "Creating new robot manager"
       url: /software/robotis_framework_packages/tutorials/#creating-new-robot-manager
-
-#Robotis Manipulator library sidebar
-robotis_manipulator_libs:
-  - title: "Overview"
-    url: /software/robotis_manipulator_libs/#overview
-  - title: "Installation"
-    url: /software/robotis_manipulator_libs/#installation
-    children:
-    - title: "ROS Package"
-      url: /software/robotis_manipulator_libs/#ros-package
-    - title: "OpenCR"
-      url: /software/robotis_manipulator_libs/#opencr
-  - title: "Struct List"
-    url: /software/robotis_manipulator_libs/#struct-list
-    children:
-    - title: "Value Set"
-      url: /software/robotis_manipulator_libs/#value-set
-      children:
-      - title: "Pose"
-        url: /software/robotis_manipulator_libs/#pose
-      - title: "Value"
-        url: /software/robotis_manipulator_libs/#value
-    - title: "Trajectory Set"
-      url: /software/robotis_manipulator_libs/#trajectory-set
-      children:
-      - title: "JointWaypoint"
-        url: /software/robotis_manipulator_libs/#jointwaypoint
-      - title: "TaskWaypoint"
-        url: /software/robotis_manipulator_libs/#taskwaypoint
-  - title: "Class List"
-    url: /software/robotis_manipulator_libs/#class-list
-    children:
-    - title: "Manipulator Class"
-      url: /software/robotis_manipulator_libs/#manipulator-class
-      children:
-      - title: "Add Functions"
-        url: /software/robotis_manipulator_libs/#add-functions
-      - title: "Set Functions"
-        url: /software/robotis_manipulator_libs/#set-functions
-      - title: "get Functions"
-        url: /software/robotis_manipulator_libs/#get-functions
-      - title: "Check Functions"
-        url: /software/robotis_manipulator_libs/#check-functions
-      - title: "Find Functions"
-        url: /software/robotis_manipulator_libs/#find-functions
-    - title: "Trajectory Class"
-      url: /software/robotis_manipulator_libs/#trajectory-class
-      children:
-      - title: "Trajectory Time Functions"
-        url: /software/robotis_manipulator_libs/#trajectory-time-functions
-      - title: "Manipulator Functions"
-        url: /software/robotis_manipulator_libs/#manipulator-functions
-      - title: "Waypoint Functions"
-        url: /software/robotis_manipulator_libs/#waypoint-functions
-      - title: "Get Trajectory Functions"
-        url: /software/robotis_manipulator_libs/#get-trajectory-functions
-      - title: "Make Trajectory Functions"
-        url: /software/robotis_manipulator_libs/#make-trajectory-functions
-      - title: "Custom Trajectory setting Functions"
-        url: /software/robotis_manipulator_libs/#custom-trajectory-setting-functions
-      - title: "Tool Functions"
-        url: /software/robotis_manipulator_libs/#tool-functions
-    - title: "(Virtual) Kinematics Class"
-      url: /software/robotis_manipulator_libs/#virtual-kinematics-class
-    - title: "(Virtual) JointActuator Class"
-      url: /software/robotis_manipulator_libs/#virtual-jointactuator-class
-    - title: "(Virtual) ToolActuator Class"
-      url: /software/robotis_manipulator_libs/#virtual-toolactuator-class
-    - title: "(Virtual) CustomJointTrajectory Class"
-      url: /software/robotis_manipulator_libs/#virtual-customjointtrajectory-class
-    - title: "(Virtual) CustomTaskTrajectory Class"
-      url: /software/robotis_manipulator_libs/#virtual-customtasktrajectory-class
-  - title: "API References"
-    url: /software/robotis_manipulator_libs/#api-references
-    children:
-    - title: "Private Parameters"
-      url: /software/robotis_manipulator_libs/#pravate-parameters
-    - title: "Initialize Functions"
-      url: /software/robotis_manipulator_libs/#initializa-functions
-      children:
-      - title: "addWorld"
-        url: /software/robotis_manipulator_libs/#addworld
-      - title: "addJoint"
-        url: /software/robotis_manipulator_libs/#addjoint
-      - title: "addTool"
-        url: /software/robotis_manipulator_libs/#addtool
-      - title: "addComponentChild"
-        url: /software/robotis_manipulator_libs/#addcomponentchild
-      - title: "printManipulatorSetting"
-        url: /software/robotis_manipulator_libs/#printmanipulatorsetting
-      - title: "addKinematics"
-        url: /software/robotis_manipulator_libs/#addkinematics
-      - title: "addJointActuator"
-        url: /software/robotis_manipulator_libs/#addjointactuator
-      - title: "addToolActuator"
-        url: /software/robotis_manipulator_libs/#addtoolactuator
-      - title: "addCustomTrajectory"
-        url: /software/robotis_manipulator_libs/#addcustomtrajectory
-    - title: "Manipulator data get Functions"
-      url: /software/robotis_manipulator_libs/#manipulator-data-get-functions
-      children:
-      - title: "getManipulator"
-        url: /software/robotis_manipulator_libs/#getmanipulator
-      - title: "getJointValue"
-        url: /software/robotis_manipulator_libs/#getjointvalue
-      - title: "getToolValue"
-        url: /software/robotis_manipulator_libs/#gettoolvalue
-      - title: "getAllActiveJointValue"
-        url: /software/robotis_manipulator_libs/#getallactivejointvalue
-      - title: "getAllJointValue"
-        url: /software/robotis_manipulator_libs/#getalljointvalue
-      - title: "getAllToolPosition"
-        url: /software/robotis_manipulator_libs/#getalltoolposition
-      - title: "getAllToolValue"
-        url: /software/robotis_manipulator_libs/#getKinematicPose
-      - title: "getDynamicPose"
-        url: /software/robotis_manipulator_libs/#getdynamicpose
-      - title: "getPose"
-        url: /software/robotis_manipulator_libs/#getpose
-    - title: "Kinematics Functions"
-      url: /software/robotis_manipulator_libs/#kinematics-functions
-      children:
-      - title: "jacobian"
-        url: /software/robotis_manipulator_libs/#jacobian
-      - title: "solveForwardKinematics"
-        url: /software/robotis_manipulator_libs/#solveforwardkinematics
-      - title: "solveInverseKinematics"
-        url: /software/robotis_manipulator_libs/#solveinversekinematics
-      - title: "setKinematicsOption"
-        url: /software/robotis_manipulator_libs/#setkinematicsoption
-    - title: "Actuator Functions"
-      url: /software/robotis_manipulator_libs/#actuator-functions
-      children:
-      - title: "setJointActuatorMode"
-        url: /software/robotis_manipulator_libs/#setjointactuatormode
-      - title: "setToolActuatorMode"
-        url: /software/robotis_manipulator_libs/#settoolactuatormode
-      - title: "getJointActuatorId"
-        url: /software/robotis_manipulator_libs/#getjointactuatorid
-      - title: "getToolActuatorId"
-        url: /software/robotis_manipulator_libs/#gettoolactuatorid
-      - title: "enableActuator"
-        url: /software/robotis_manipulator_libs/#enableactuator
-      - title: "disableActuator"
-        url: /software/robotis_manipulator_libs/#disableactuator
-      - title: "enableAllJointActuator"
-        url: /software/robotis_manipulator_libs/#enablealljointactuator
-      - title: "disableAllJointActuator"
-        url: /software/robotis_manipulator_libs/#disablealljointactuator
-      - title: "enableAllToolActuator"
-        url: /software/robotis_manipulator_libs/#enablealltoolactuator
-      - title: "disableAllToolActuator"
-        url: /software/robotis_manipulator_libs/#disablealltoolactuator
-      - title: "enableAllActuator"
-        url: /software/robotis_manipulator_libs/#enableallactuator
-      - title: "disableAllActuator"
-        url: /software/robotis_manipulator_libs/#disableallactuator
-      - title: "getActuatorEnabledState"
-        url: /software/robotis_manipulator_libs/#getactuatorenabledstate
-      - title: "sendJointActuatorValue"
-        url: /software/robotis_manipulator_libs/#sendjointactuatorvalue
-      - title: "sendMultipleJointActuatorValue"
-        url: /software/robotis_manipulator_libs/#sendmultiplejointactuatorvalue
-      - title: "sendAllJointActuatorValue"
-        url: /software/robotis_manipulator_libs/#sendalljointactuatorvalue
-      - title: "receiveJointActuatorValue"
-        url: /software/robotis_manipulator_libs/#receivejointactuatorvalue
-      - title: "receiveMultipleJointActuatorValue"
-        url: /software/robotis_manipulator_libs/#receivemultiplejointactuatorvalue
-      - title: "receiveAllJointActuatorValue"
-        url: /software/robotis_manipulator_libs/#receivealljointactuatorvalue
-      - title: "sendToolActuatorValue"
-        url: /software/robotis_manipulator_libs/#sendtoolactuatorvalue
-      - title: "sendMultipleToolActuatorValue"
-        url: /software/robotis_manipulator_libs/#sendmultipletoolactuatorvalue
-      - title: "sendAllToolActuatorValue"
-        url: /software/robotis_manipulator_libs/#sendalltoolactuatorvalue
-      - title: "receiveToolActuatorValue"
-        url: /software/robotis_manipulator_libs/#receivetoolactuatorvalue
-      - title: "receiveMultipleToolActuatorValue"
-        url: /software/robotis_manipulator_libs/#receivemultipletoolactuatorvalue
-      - title: "receiveAllToolActuatorValue"
-        url: /software/robotis_manipulator_libs/#receivealltoolactuatorvalue
-    - title: "Time Functions"
-      url: /software/robotis_manipulator_libs/#Time-functions
-      children:
-      - title: "getTrajectoryMoveTime"
-        url: /software/robotis_manipulator_libs/#gettrajectorymovetime
-      - title: "getMovingState"
-        url: /software/robotis_manipulator_libs/#getmovingstate
-    - title: "Check Joint Limit Functions"
-      url: /software/robotis_manipulator_libs/#check-joint-limit-functions
-      children:
-      - title: "checkJointLimit"
-        url: /software/robotis_manipulator_libs/#checkjointlimit
-    - title: "Trajectory Functions"
-      url: /software/robotis_manipulator_libs/#trajectory-functions
-      children:
-      - title: "getTrajectory"
-        url: /software/robotis_manipulator_libs/#gettrajectory
-      - title: "makeJointTrajectoryFromPresentPosition"
-        url: /software/robotis_manipulator_libs/#makejointtrajectoryfrompresentposition
-      - title: "makeJointTrajectory"
-        url: /software/robotis_manipulator_libs/#makejointtrajectory
-      - title: "makeTaskTrajectoryFromPresentPose"
-        url: /software/robotis_manipulator_libs/#maketasktrajectoryfrompresentpose
-      - title: "makeTaskTrajectory"
-        url: /software/robotis_manipulator_libs/#maketasktrajectory
-      - title: "setCustomTrajectoryOption"
-        url: /software/robotis_manipulator_libs/#setcustomtrajectoryoption
-      - title: "makeCustomTrajectory"
-        url: /software/robotis_manipulator_libs/#makecustomtrajectory
-      - title: "sleepTrajectory"
-        url: /software/robotis_manipulator_libs/#sleeptrajectory
-      - title: "makeToolTrajectory"
-        url: /software/robotis_manipulator_libs/#maketooltrajectory
-      - title: "getJointGoalValueFromTrajectory"
-        url: /software/robotis_manipulator_libs/#getjointgoalvaluefromtrajectory
-      - title: "getJointGoalValueFromTrajectoryTickTime"
-        url: /software/robotis_manipulator_libs/#getjointgoalvaluefromtrajectoryticktime
-      - title: "getToolGoalValue"
-        url: /software/robotis_manipulator_libs/#gettoolgoalvalue
-  - title: "Additional Function API"
-    url: /software/robotis_manipulator_libs/#additional-function-api
-    children:
-    - title: "math"
-      url: /software/robotis_manipulator_libs/#math
-      children:
-      - title: "Make Functions"
-        url: /software/robotis_manipulator_libs/#make-functions
-      - title: "Convert Functions"
-        url: /software/robotis_manipulator_libs/#convert-functions
-      - title: "Math Functions"
-        url: /software/robotis_manipulator_libs/#math-functions
-    - title: "log"
-      url: /software/robotis_manipulator_libs/#log
-      children:
-      - title: "print"
-        url: /software/robotis_manipulator_libs/#print
-      - title: "println"
-        url: /software/robotis_manipulator_libs/#println
-      - title: "info"
-        url: /software/robotis_manipulator_libs/#info
-      - title: "warn"
-        url: /software/robotis_manipulator_libs/#warn
-      - title: "error"
-        url: /software/robotis_manipulator_libs/#error
-      - title: "print vector"
-        url: /software/robotis_manipulator_libs/#print-vector
-      - title: "print matrix"
-        url: /software/robotis_manipulator_libs/#print-matrix
-  - title: "API Usage Tutorials"
-    url: /software/robotis_manipulator_libs/#api-usage-tutorials
-    children:
-    - title: "Step1 Make Manipulator Class"
-      url: /software/robotis_manipulator_libs/#step1-make-manipulator-class
-    - title: "Step2 Initialize Manipulator"
-      url: /software/robotis_manipulator_libs/#step2-initialize-manipulator
-      children:
-      - title: "Set Robot Parameter"
-        url: /software/robotis_manipulator_libs/#set-robot-parameter
-      - title: "Add Kinematics Object"
-        url: /software/robotis_manipulator_libs/#add-kinematics-object
-      - title: "Add Actuator Object"
-        url: /software/robotis_manipulator_libs/#add-actuator-object
-      - title: "Add Custom Trajectory Object"
-        url: /software/robotis_manipulator_libs/#add-custom-trajectory-object
-    - title: "Step3 Make Control Process Function"
-      url: /software/robotis_manipulator_libs/#step3-make-control-process-function
-    - title: "Step4 Use it"
-      url: /software/robotis_manipulator_libs/#step4-use-it
 
 
 #DYNAMIXEL SDK sidebar

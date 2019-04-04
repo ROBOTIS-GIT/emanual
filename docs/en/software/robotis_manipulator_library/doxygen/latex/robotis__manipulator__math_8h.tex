@@ -1,0 +1,112 @@
+\hypertarget{robotis__manipulator__math_8h}{}\section{include/robotis\+\_\+manipulator/robotis\+\_\+manipulator\+\_\+math.h File Reference}
+\label{robotis__manipulator__math_8h}\index{include/robotis\+\_\+manipulator/robotis\+\_\+manipulator\+\_\+math.\+h@{include/robotis\+\_\+manipulator/robotis\+\_\+manipulator\+\_\+math.\+h}}
+{\ttfamily \#include $<$unistd.\+h$>$}\\*
+{\ttfamily \#include $<$eigen3/\+Eigen/\+Eigen$>$}\\*
+{\ttfamily \#include $<$eigen3/\+Eigen/\+LU$>$}\\*
+{\ttfamily \#include $<$math.\+h$>$}\\*
+Include dependency graph for robotis\+\_\+manipulator\+\_\+math.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{robotis__manipulator__math_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{robotis__manipulator__math_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacerobotis__manipulator}{robotis\+\_\+manipulator}
+\begin{DoxyCompactList}\small\item\em main namespace \end{DoxyCompactList}\item 
+ \hyperlink{namespacerobotis__manipulator_1_1math}{robotis\+\_\+manipulator\+::math}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{robotis__manipulator__math_8h_af7e8592d0a634bd3642e9fd508ea8022}{D\+E\+G2\+R\+AD}~0.\+01745329252
+\item 
+\#define \hyperlink{robotis__manipulator__math_8h_ac5a945020d3528355cda82d383676736}{R\+A\+D2\+D\+EG}~57.\+2957795131
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Eigen\+::\+Vector3d \hyperlink{namespacerobotis__manipulator_1_1math_a057ca65131575b85aec169f3a50ed796}{robotis\+\_\+manipulator\+::math\+::vector3} (double v1, double v2, double v3)
+\begin{DoxyCompactList}\small\item\em vector3 \end{DoxyCompactList}\item 
+Eigen\+::\+Matrix3d \hyperlink{namespacerobotis__manipulator_1_1math_a22fb2daaef2f7943fa0dbd7a24e0fd4d}{robotis\+\_\+manipulator\+::math\+::matrix3} (double m11, double m12, double m13, double m21, double m22, double m23, double m31, double m32, double m33)
+\begin{DoxyCompactList}\small\item\em matrix3 \end{DoxyCompactList}\item 
+Eigen\+::\+Matrix3d \hyperlink{namespacerobotis__manipulator_1_1math_a34ebf1c9f0f64e52807fd9798a7d87c8}{robotis\+\_\+manipulator\+::math\+::inertia\+Matrix} (double ixx, double ixy, double ixz, double iyy, double iyz, double izz)
+\begin{DoxyCompactList}\small\item\em inertia\+Matrix \end{DoxyCompactList}\item 
+Eigen\+::\+Vector3d \hyperlink{namespacerobotis__manipulator_1_1math_acb3c85751c21502d8d23a13cc08b3cf5}{robotis\+\_\+manipulator\+::math\+::convert\+X\+Y\+Z\+To\+Vector} (double x, double y, double z)
+\begin{DoxyCompactList}\small\item\em convert\+X\+Y\+Z\+To\+Vector \end{DoxyCompactList}\item 
+Eigen\+::\+Matrix3d \hyperlink{namespacerobotis__manipulator_1_1math_ab7682932090e254cb077badb80fe8667}{robotis\+\_\+manipulator\+::math\+::convert\+Roll\+Angle\+To\+Rotation\+Matrix} (double angle)
+\begin{DoxyCompactList}\small\item\em convert\+Roll\+Angle\+To\+Rotation\+Matrix \end{DoxyCompactList}\item 
+Eigen\+::\+Matrix3d \hyperlink{namespacerobotis__manipulator_1_1math_aa6112f12db3755d6677f45c9e0806cbf}{robotis\+\_\+manipulator\+::math\+::convert\+Pitch\+Angle\+To\+Rotation\+Matrix} (double angle)
+\begin{DoxyCompactList}\small\item\em convert\+Pitch\+Angle\+To\+Rotation\+Matrix \end{DoxyCompactList}\item 
+Eigen\+::\+Matrix3d \hyperlink{namespacerobotis__manipulator_1_1math_a0a45b10176c2a214876aa265ec8e707e}{robotis\+\_\+manipulator\+::math\+::convert\+Yaw\+Angle\+To\+Rotation\+Matrix} (double angle)
+\begin{DoxyCompactList}\small\item\em convert\+Yaw\+Angle\+To\+Rotation\+Matrix \end{DoxyCompactList}\item 
+Eigen\+::\+Vector3d \hyperlink{namespacerobotis__manipulator_1_1math_adaa070908c6328c2459be5eaf64af68f}{robotis\+\_\+manipulator\+::math\+::convert\+Rotation\+Matrix\+To\+R\+P\+Y\+Vector} (const Eigen\+::\+Matrix3d \&rotation\+\_\+matrix)
+\begin{DoxyCompactList}\small\item\em convert\+Rotation\+Matrix\+To\+R\+P\+Y\+Vector \end{DoxyCompactList}\item 
+Eigen\+::\+Matrix3d \hyperlink{namespacerobotis__manipulator_1_1math_a4bbc795e8c06dd0472ed25864f6ec886}{robotis\+\_\+manipulator\+::math\+::convert\+R\+P\+Y\+To\+Rotation\+Matrix} (double roll, double pitch, double yaw)
+\begin{DoxyCompactList}\small\item\em convert\+R\+P\+Y\+To\+Rotation\+Matrix \end{DoxyCompactList}\item 
+Eigen\+::\+Quaterniond \hyperlink{namespacerobotis__manipulator_1_1math_aa1d5ec03193d986594c03ab884126416}{robotis\+\_\+manipulator\+::math\+::convert\+R\+P\+Y\+To\+Quaternion} (double roll, double pitch, double yaw)
+\begin{DoxyCompactList}\small\item\em convert\+R\+P\+Y\+To\+Quaternion \end{DoxyCompactList}\item 
+Eigen\+::\+Quaterniond \hyperlink{namespacerobotis__manipulator_1_1math_ae5a4fd98d1cef4a4b1224b19daff63bf}{robotis\+\_\+manipulator\+::math\+::convert\+Rotation\+Matrix\+To\+Quaternion} (const Eigen\+::\+Matrix3d \&rotation\+\_\+matrix)
+\begin{DoxyCompactList}\small\item\em convert\+Rotation\+Matrix\+To\+Quaternion \end{DoxyCompactList}\item 
+Eigen\+::\+Vector3d \hyperlink{namespacerobotis__manipulator_1_1math_a5d6107f6a65d430f3eee81f93327c37a}{robotis\+\_\+manipulator\+::math\+::convert\+Quaternion\+To\+R\+P\+Y\+Vector} (const Eigen\+::\+Quaterniond \&quaternion)
+\begin{DoxyCompactList}\small\item\em convert\+Quaternion\+To\+R\+P\+Y\+Vector \end{DoxyCompactList}\item 
+Eigen\+::\+Matrix3d \hyperlink{namespacerobotis__manipulator_1_1math_a7a7c421fe85e75a3897a4c0c492bb662}{robotis\+\_\+manipulator\+::math\+::convert\+Quaternion\+To\+Rotation\+Matrix} (const Eigen\+::\+Quaterniond \&quaternion)
+\begin{DoxyCompactList}\small\item\em convert\+Quaternion\+To\+Rotation\+Matrix \end{DoxyCompactList}\item 
+Eigen\+::\+Vector3d \hyperlink{namespacerobotis__manipulator_1_1math_a0659ad2d283ad43e01eca23f0be6a134}{robotis\+\_\+manipulator\+::math\+::convert\+Rotation\+Matrix\+To\+Omega} (const Eigen\+::\+Matrix3d \&rotation\+\_\+matrix)
+\begin{DoxyCompactList}\small\item\em convert\+Rotation\+Matrix\+To\+Omega \end{DoxyCompactList}\item 
+Eigen\+::\+Matrix4d \hyperlink{namespacerobotis__manipulator_1_1math_a5f001cf17bbf0daaaacd46f58d3f6e8a}{robotis\+\_\+manipulator\+::math\+::convert\+X\+Y\+Z\+R\+P\+Y\+To\+Transformation\+Matrix} (double x, double y, double z, double roll, double pitch, double yaw)
+\begin{DoxyCompactList}\small\item\em convert\+X\+Y\+Z\+R\+P\+Y\+To\+Transformation\+Matrix \end{DoxyCompactList}\item 
+Eigen\+::\+Matrix4d \hyperlink{namespacerobotis__manipulator_1_1math_a0e864bea906520574b93496db74427f0}{robotis\+\_\+manipulator\+::math\+::convert\+X\+Y\+Z\+To\+Transformation\+Matrix} (double x, double y, double z)
+\begin{DoxyCompactList}\small\item\em convert\+X\+Y\+Z\+To\+Transformation\+Matrix \end{DoxyCompactList}\item 
+Eigen\+::\+Matrix4d \hyperlink{namespacerobotis__manipulator_1_1math_a82a56f3cb0404e06bf37f2e167c839ef}{robotis\+\_\+manipulator\+::math\+::convert\+R\+P\+Y\+To\+Transformation\+Matrix} (double roll, double pitch, double yaw)
+\begin{DoxyCompactList}\small\item\em convert\+R\+P\+Y\+To\+Transformation\+Matrix \end{DoxyCompactList}\item 
+Eigen\+::\+Vector3d \hyperlink{namespacerobotis__manipulator_1_1math_ae69e1aacc48ed72442eb4dc82e280be0}{robotis\+\_\+manipulator\+::math\+::convert\+Omega\+To\+R\+P\+Y\+Velocity} (Eigen\+::\+Vector3d rpy\+\_\+vector, Eigen\+::\+Vector3d omega)
+\begin{DoxyCompactList}\small\item\em convert\+Omega\+To\+R\+P\+Y\+Velocity \end{DoxyCompactList}\item 
+Eigen\+::\+Vector3d \hyperlink{namespacerobotis__manipulator_1_1math_a73d50f3962eeac18f464f879e6a0c8fc}{robotis\+\_\+manipulator\+::math\+::convert\+R\+P\+Y\+Velocity\+To\+Omega} (Eigen\+::\+Vector3d rpy\+\_\+vector, Eigen\+::\+Vector3d rpy\+\_\+velocity)
+\begin{DoxyCompactList}\small\item\em convert\+R\+P\+Y\+Velocity\+To\+Omega \end{DoxyCompactList}\item 
+Eigen\+::\+Vector3d \hyperlink{namespacerobotis__manipulator_1_1math_aabd3cc7c059a6372e917bc98a3e5c1dd}{robotis\+\_\+manipulator\+::math\+::convert\+Omega\+Dot\+To\+R\+P\+Y\+Acceleration} (Eigen\+::\+Vector3d rpy\+\_\+vector, Eigen\+::\+Vector3d rpy\+\_\+velocity, Eigen\+::\+Vector3d omega\+\_\+dot)
+\begin{DoxyCompactList}\small\item\em convert\+Omega\+Dot\+To\+R\+P\+Y\+Acceleration \end{DoxyCompactList}\item 
+Eigen\+::\+Vector3d \hyperlink{namespacerobotis__manipulator_1_1math_a752d1631596538515894f09f210eb17b}{robotis\+\_\+manipulator\+::math\+::convert\+R\+P\+Y\+Acceleration\+To\+Omega\+Dot} (Eigen\+::\+Vector3d rpy\+\_\+vector, Eigen\+::\+Vector3d rpy\+\_\+velocity, Eigen\+::\+Vector3d rpy\+\_\+acceleration)
+\begin{DoxyCompactList}\small\item\em convert\+R\+P\+Y\+Acceleration\+To\+Omega\+Dot \end{DoxyCompactList}\item 
+double \hyperlink{namespacerobotis__manipulator_1_1math_a27a6dd481239e8377185dac85cf9cd77}{robotis\+\_\+manipulator\+::math\+::sign} (double value)
+\begin{DoxyCompactList}\small\item\em sign \end{DoxyCompactList}\item 
+Eigen\+::\+Matrix4d \hyperlink{namespacerobotis__manipulator_1_1math_a0e23b77220a7f83814de154838a47be7}{robotis\+\_\+manipulator\+::math\+::inverse\+Transformation\+Matrix} (const Eigen\+::\+Matrix\+Xd \&transformation\+\_\+matrix)
+\begin{DoxyCompactList}\small\item\em inverse\+Transformation\+Matrix \end{DoxyCompactList}\item 
+Eigen\+::\+Vector3d \hyperlink{namespacerobotis__manipulator_1_1math_a38b3c7716c5b8a29a75d8b3243eb75e7}{robotis\+\_\+manipulator\+::math\+::matrix\+Logarithm} (Eigen\+::\+Matrix3d rotation\+\_\+matrix)
+\begin{DoxyCompactList}\small\item\em matrix\+Logarithm \end{DoxyCompactList}\item 
+Eigen\+::\+Matrix3d \hyperlink{namespacerobotis__manipulator_1_1math_a03bf0fffc828339f2216fd4a98a32923}{robotis\+\_\+manipulator\+::math\+::skew\+Symmetric\+Matrix} (Eigen\+::\+Vector3d v)
+\begin{DoxyCompactList}\small\item\em skew\+Symmetric\+Matrix \end{DoxyCompactList}\item 
+Eigen\+::\+Matrix3d \hyperlink{namespacerobotis__manipulator_1_1math_a515d31a7d3b19cce814cd121717bcb60}{robotis\+\_\+manipulator\+::math\+::rodrigues\+Rotation\+Matrix} (Eigen\+::\+Vector3d axis, double angle)
+\begin{DoxyCompactList}\small\item\em rodrigues\+Rotation\+Matrix \end{DoxyCompactList}\item 
+Eigen\+::\+Vector3d \hyperlink{namespacerobotis__manipulator_1_1math_ab4f15d22dddddc5f712de188ba0f85f4}{robotis\+\_\+manipulator\+::math\+::position\+Difference} (Eigen\+::\+Vector3d desired\+\_\+position, Eigen\+::\+Vector3d present\+\_\+position)
+\begin{DoxyCompactList}\small\item\em position\+Difference \end{DoxyCompactList}\item 
+Eigen\+::\+Vector3d \hyperlink{namespacerobotis__manipulator_1_1math_a26796dad948a40bc2c0ac2c139ed85f0}{robotis\+\_\+manipulator\+::math\+::orientation\+Difference} (Eigen\+::\+Matrix3d desired\+\_\+orientation, Eigen\+::\+Matrix3d present\+\_\+orientation)
+\begin{DoxyCompactList}\small\item\em orientation\+Difference \end{DoxyCompactList}\item 
+Eigen\+::\+Vector\+Xd \hyperlink{namespacerobotis__manipulator_1_1math_a5bf9202c405abf15e234505842bf7361}{robotis\+\_\+manipulator\+::math\+::pose\+Difference} (Eigen\+::\+Vector3d desired\+\_\+position, Eigen\+::\+Vector3d present\+\_\+position, Eigen\+::\+Matrix3d desired\+\_\+orientation, Eigen\+::\+Matrix3d present\+\_\+orientation)
+\begin{DoxyCompactList}\small\item\em pose\+Difference \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{robotis\+\_\+manipulator\+\_\+math.\+h@{robotis\+\_\+manipulator\+\_\+math.\+h}!D\+E\+G2\+R\+AD@{D\+E\+G2\+R\+AD}}
+\index{D\+E\+G2\+R\+AD@{D\+E\+G2\+R\+AD}!robotis\+\_\+manipulator\+\_\+math.\+h@{robotis\+\_\+manipulator\+\_\+math.\+h}}
+\subsubsection[{\texorpdfstring{D\+E\+G2\+R\+AD}{DEG2RAD}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+E\+G2\+R\+AD~0.\+01745329252}\hypertarget{robotis__manipulator__math_8h_af7e8592d0a634bd3642e9fd508ea8022}{}\label{robotis__manipulator__math_8h_af7e8592d0a634bd3642e9fd508ea8022}
+
+
+Definition at line 41 of file robotis\+\_\+manipulator\+\_\+math.\+h.
+
+\index{robotis\+\_\+manipulator\+\_\+math.\+h@{robotis\+\_\+manipulator\+\_\+math.\+h}!R\+A\+D2\+D\+EG@{R\+A\+D2\+D\+EG}}
+\index{R\+A\+D2\+D\+EG@{R\+A\+D2\+D\+EG}!robotis\+\_\+manipulator\+\_\+math.\+h@{robotis\+\_\+manipulator\+\_\+math.\+h}}
+\subsubsection[{\texorpdfstring{R\+A\+D2\+D\+EG}{RAD2DEG}}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+A\+D2\+D\+EG~57.\+2957795131}\hypertarget{robotis__manipulator__math_8h_ac5a945020d3528355cda82d383676736}{}\label{robotis__manipulator__math_8h_ac5a945020d3528355cda82d383676736}
+
+
+Definition at line 42 of file robotis\+\_\+manipulator\+\_\+math.\+h.
+

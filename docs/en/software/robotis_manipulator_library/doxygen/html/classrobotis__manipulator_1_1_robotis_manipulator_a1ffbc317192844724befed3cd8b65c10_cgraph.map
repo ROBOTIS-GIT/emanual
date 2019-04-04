@@ -1,0 +1,16 @@
+<map id="robotis_manipulator::RobotisManipulator::makeJointTrajectory" name="robotis_manipulator::RobotisManipulator::makeJointTrajectory">
+<area shape="rect" id="node2" href="$classrobotis__manipulator_1_1_trajectory.html#a58b1d4fb60f7e3ed9150d312766debc1" title="setPresentJointWaypoint " alt="" coords="215,5,402,61"/>
+<area shape="rect" id="node3" href="$classrobotis__manipulator_1_1_trajectory.html#a05e95f1473723592130f63321664fb0c" title="updatePresentWaypoint " alt="" coords="219,85,399,141"/>
+<area shape="rect" id="node5" href="$classrobotis__manipulator_1_1_trajectory.html#ae08c22d6ab0608b4e1ec7e0996caf96e" title="setTrajectoryType " alt="" coords="208,165,409,206"/>
+<area shape="rect" id="node6" href="$classrobotis__manipulator_1_1_trajectory.html#a0c400f1108635495fe7fc6cdae8bc8bb" title="setMoveTime " alt="" coords="221,230,396,271"/>
+<area shape="rect" id="node7" href="$classrobotis__manipulator_1_1_trajectory.html#a840fce5e4b16eb4ef957ff0aba2bf146" title="getPresentJointWaypoint " alt="" coords="215,295,402,351"/>
+<area shape="rect" id="node8" href="$classrobotis__manipulator_1_1_trajectory.html#a3e05d461f6bdf874a58a6a35ff6ce351" title="removeWaypointDynamicData " alt="" coords="211,375,406,431"/>
+<area shape="rect" id="node9" href="$classrobotis__manipulator_1_1_kinematics.html#a6065cf1bff763854b9a0bd62945a093b" title="solveInverseKinematics " alt="" coords="220,455,397,511"/>
+<area shape="rect" id="node10" href="$classrobotis__manipulator_1_1_trajectory.html#ae5276de42edf154de107c1f194f6b322" title="getManipulator " alt="" coords="218,534,399,575"/>
+<area shape="rect" id="node11" href="$classrobotis__manipulator_1_1_robotis_manipulator.html#afa3c8994013b876eb38f22b4128f147a" title="getMovingState " alt="" coords="237,599,380,655"/>
+<area shape="rect" id="node12" href="$classrobotis__manipulator_1_1_trajectory.html#a2cd72b326825ebcda3bdf2d52389e30f" title="makeJointTrajectory " alt="" coords="201,678,416,719"/>
+<area shape="rect" id="node13" href="$classrobotis__manipulator_1_1_robotis_manipulator.html#a471cb5d00c34dfe28fd260daaf4fd7a7" title="startMoving " alt="" coords="237,743,380,799"/>
+<area shape="rect" id="node15" href="$namespacerobotis__manipulator_1_1log.html#a6a84cb5481107ad244344093086fb557" title="error " alt="" coords="241,822,376,863"/>
+<area shape="rect" id="node4" href="$classrobotis__manipulator_1_1_kinematics.html#adfdd3727052c27d12e3fc2209c025317" title="solveForwardKinematics " alt="" coords="464,85,645,141"/>
+<area shape="rect" id="node14" href="$classrobotis__manipulator_1_1_trajectory.html#ad11707f44e3b0cefdb5f60b6c4f3ab77" title="setStartTimeToPresentTime " alt="" coords="469,743,640,799"/>
+</map>

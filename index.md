@@ -43,6 +43,9 @@ Please also checkout **[ROBOTIS Download Center]** for useful resources.
     <option value="/docs/en/dxl/pro_plus/h54p-200-s500-r/#control-table-of-eeprom-area">H54P-200-S500-R</option>
     <option value="/docs/en/dxl/pro_plus/h54p-100-s500-r/#control-table-of-eeprom-area">H54P-100-S500-R</option>
     <option value="/docs/en/dxl/pro_plus/h42p-020-s300-r/#control-table-of-eeprom-area">H42P-020-S300-R</option>
+    <option value="/docs/en/dxl/pro_plus/m54p-060-s250-r/#control-table-of-eeprom-area">M54P-060-S250-R</option>
+    <option value="/docs/en/dxl/pro_plus/m54p-040-s250-r/#control-table-of-eeprom-area">M54P-050-S250-R</option>
+    <option value="/docs/en/dxl/pro_plus/m42p-010-s260-r/#control-table-of-eeprom-area">M42P-010-S260-R</option>
 </select>
 
 -

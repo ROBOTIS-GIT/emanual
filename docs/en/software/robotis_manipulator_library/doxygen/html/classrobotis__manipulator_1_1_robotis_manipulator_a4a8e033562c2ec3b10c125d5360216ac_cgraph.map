@@ -1,0 +1,9 @@
+<map id="robotis_manipulator::RobotisManipulator::makeTaskTrajectory" name="robotis_manipulator::RobotisManipulator::makeTaskTrajectory">
+<area shape="rect" id="node2" href="$classrobotis__manipulator_1_1_trajectory.html#a58b1d4fb60f7e3ed9150d312766debc1" title="setPresentJointWaypoint " alt="" coords="443,5,630,61"/>
+<area shape="rect" id="node3" href="$classrobotis__manipulator_1_1_trajectory.html#a05e95f1473723592130f63321664fb0c" title="updatePresentWaypoint " alt="" coords="447,85,627,141"/>
+<area shape="rect" id="node5" href="$classrobotis__manipulator_1_1_trajectory.html#ae5276de42edf154de107c1f194f6b322" title="getManipulator " alt="" coords="446,245,627,286"/>
+<area shape="rect" id="node6" href="$classrobotis__manipulator_1_1_manipulator.html#a04b2efdf66bc0e4bd04dc9aafd9f2d47" title="getComponentPositionFromWorld " alt="" coords="203,281,393,337"/>
+<area shape="rect" id="node7" href="$classrobotis__manipulator_1_1_robotis_manipulator.html#af99e51e771170748507ac7c750b515da" title="makeTaskTrajectory " alt="" coords="223,151,373,207"/>
+<area shape="rect" id="node4" href="$classrobotis__manipulator_1_1_kinematics.html#adfdd3727052c27d12e3fc2209c025317" title="solveForwardKinematics " alt="" coords="680,85,861,141"/>
+<area shape="rect" id="node8" href="$classrobotis__manipulator_1_1_manipulator.html#a9228f1f4b7fd627da2a618b79b2f0c0b" title="getComponentOrientationFromWorld " alt="" coords="441,165,632,221"/>
+</map>

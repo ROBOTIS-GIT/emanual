@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/software/robotis_manipulator_libs/
 sidebar:
-  title: robotis manipulator library
+  title: Robotis Manipulator Library
   nav: "robotis_manipulator_libs"
 ---
 
@@ -1056,4 +1056,3 @@ Eigen::VectorXd poseDifference(Eigen::Vector3d desired_position, Eigen::Vector3d
 ## [Step4 Use it](#step4.-use-it)
 
 ** Coming soon **
-

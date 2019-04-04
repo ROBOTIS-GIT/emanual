@@ -91,13 +91,12 @@ Check your ROBOTIS OP2 package for the following items.
 | 7  | DC Power Supply                          |    1     |
 | 8  | Spare Cables                             |  1 pack  |
 | 9  | Red Ball                                 |    1     |
-| 10 | RoboPlus CD                              |    1     |
-| 11 | Battery Pack                             |    3     |
-| 12 | Battery Charger                          |    1     |
-| 13 | Wrench & Screw Driver                    |  1 set   |
-| 14 | Spare Bolts and Nuts                     |  1 pack  |
-| 15 | Ethernet Cable                           |    1     |
-| 16 | Hard Case                                |    1     |
+| 10 | Battery Pack                             |    3     |
+| 11 | Battery Charger                          |    1     |
+| 12 | Wrench & Screw Driver                    |  1 set   |
+| 13 | Spare Bolts and Nuts                     |  1 pack  |
+| 14 | Ethernet Cable                           |    1     |
+| 15 | Hard Case                                |    1     |
 
 ![](/assets/images/platform/op2/op2_004.png)
 
