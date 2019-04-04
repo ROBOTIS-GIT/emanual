@@ -42,6 +42,19 @@ If you need more help for installing Ubuntu, check out the step-by-step guide fr
 
 ![](/assets/images/platform/turtlebot3/logo_ros.png)
 
+Setup sources list : The following code will configure your computer to accept software(s) from packages.ros.org
+
+``` bash
+$ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+```
+
+Setup keys : These are the required keys for installing all the ros packages properly. 
+  (If you won't do this, catkin_make in 6.1.3. will not work)
+
+``` bash
+$ sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116
+```
+
 The following script will allow you to simplify the ROS installation procedure. Run the following command in a terminal window. The terminal application can be found with the Ubuntu search icon on the top left corner of the screen, or you can use shortcut key for terminal is `Ctrl`-`Alt`-`T`. After install ROS, please reboot Remote PC.
 
 ``` bash
