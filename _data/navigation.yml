@@ -186,15 +186,15 @@ main:
       - title: "H42P-020-S300-R"
         titlekr: "H42P-020-S300-R"
         url: /dxl/pro_plus/h42p-020-s300-r/
-      # - title: "M54P-060-S250-R"
-      #   titlekr: "M54P-060-S250-R"
-      #   url: /dxl/pro_plus/m54p-060-s250-r/
-      # - title: "M54P-040-S250-R"
-      #   titlekr: "M54P-040-S250-R"
-      #   url: /dxl/pro_plus/m54p-040-s250-r/
-      # - title: "M42P-010-S260-R"
-      #   titlekr: "M42P-010-S260-R"
-      #   url: /dxl/pro_plus/m42p-010-s260-r/
+      - title: "M54P-060-S250-R"
+        titlekr: "M54P-060-S250-R"
+        url: /dxl/pro_plus/m54p-060-s250-r/
+      - title: "M54P-040-S250-R"
+        titlekr: "M54P-040-S250-R"
+        url: /dxl/pro_plus/m54p-040-s250-r/
+      - title: "M42P-010-S260-R"
+        titlekr: "M42P-010-S260-R"
+        url: /dxl/pro_plus/m42p-010-s260-r/
     - title: "Procotol 1.0"
       titlekr: "프로토콜 1.0"
       url: /dxl/protocol1/
@@ -366,9 +366,9 @@ main:
       - title: "DYNAMIXEL Workbench"
         titlekr: "다이나믹셀 워크벤치"
         url: /software/dynamixel/dynamixel_workbench/
-      # - title: "DYNAMIXEL Wizard 2.0"
-      #   titlekr: "다이나믹셀 위자드 2.0"
-      #   url: /software/dynamixel/dynamixel_wizard2/
+      - title: "DYNAMIXEL Wizard 2.0"
+        titlekr: "다이나믹셀 위자드 2.0"
+        url: /software/dynamixel/dynamixel_wizard2/
     - title: "Mobile Apps"
       titlekr: "모바일 앱"
       children:

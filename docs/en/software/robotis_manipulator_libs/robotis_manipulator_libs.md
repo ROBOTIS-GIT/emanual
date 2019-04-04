@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/software/robotis_manipulator_libs/
 sidebar:
-  title: robotis manipulator library
+  title: Robotis Manipulator Library
   nav: "robotis_manipulator_libs"
 ---
 

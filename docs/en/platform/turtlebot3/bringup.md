@@ -125,6 +125,11 @@ process[turtlebot3_diagnostics-3]: started with pid [14200]
 ``` bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ roslaunch turtlebot3_bringup turtlebot3_remote.launch
+```
+
+One a new terminal window and enter the below command.
+
+```bash
 $ rosrun rviz rviz -d `rospack find turtlebot3_description`/rviz/model.rviz
 ```
 
