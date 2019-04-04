@@ -156,7 +156,9 @@ Select Tools → Port → /dev/ttyACM0.
 
 # [API References](#api-references)
 
-**Coming soon**
+[Click here to open the API Reference manual]{: .blank}
+
+[Click here to open the API Reference manual]: /docs/en/software/robotis_manipulator_libs/doxygen/html/index.html
 
 # [API Usage Tutorials](#api-usage-tutorials)
 
