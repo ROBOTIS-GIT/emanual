@@ -15374,16 +15374,21 @@ openmanipulator_x:
       - title: "Camera Application"
         url: /platform/openmanipulator_x/ros_applications/#camera-application
         children:
-          - title: "Astra Pro"
-            url: /platform/openmanipulator_x/ros_applications/#astra-pro
-          - title: "Realsense D435"
-            url: /platform/openmanipulator_x/ros_applications/#realsense-d435
-          - title: "Raspberry Pi Camera V2"
-            url: /platform/openmanipulator_x/ros_applications/#raspberry-pi-camera-v2
-          - title: "AR Marker package"
-            url: /platform/openmanipulator_x/ros_applications/#ar-marker-package
+          - title: "Install Camera Package"
+            url: /platform/openmanipulator_x/ros_applications/#install-camera-package
+          - title: "Install AR Marker Package"
+            url: /platform/openmanipulator_x/ros_applications/#install-ar-marker-package
+          - title: "Pick and Place Example"
+            url: /platform/openmanipulator_x/ros_applications/#pick-and-place-example
       - title: "Master Slave"
         url: /platform/openmanipulator_x/ros_applications/#master-slave
+        children:
+          - title: "Setup of OpenManipulator-X"
+            url: /platform/openmanipulator_x/ros_applications/#setup-of-openmanipulator-x
+          - title: "Install Package"
+            url: /platform/openmanipulator_x/ros_applications/#install-package
+          - title: "Execute Example"
+            url: /platform/openmanipulator_x/ros_applications/#execute-example
   - title: "[OpenCR] Setup"
     url: /platform/openmanipulator_x/opencr_setup/#opencr-setup
     children:
