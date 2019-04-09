@@ -244,6 +244,14 @@ main:
   - title: "STEAM"
     titlekr: "교육키트"
     children:
+    - title: "PLAY"
+      children:
+        - title: "PLAY 300"
+          url: /edu/play/play-300/
+        - title: "PLAY 600"
+          url: /edu/play/play-600/
+        - title: "PLAY 700"
+          url: /edu/play/play-700/
     - title: "*OLLO"
       titlekr: "*올로"
       children:
