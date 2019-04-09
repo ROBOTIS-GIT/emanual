@@ -228,7 +228,7 @@ sidebar:
 
 ### 홀 기준 이동
 
-    ![](/assets/images/sw/rplus2/design/r+design17.jpg)
+![](/assets/images/sw/rplus2/design/r+design17.jpg)
 
 1. 대부분의 경우 파트의 이동이 홀과 홀이 마주 닿게 하는 경우가 많은데 이 경우에는 홀 기준 이동을 이용 하는 것이 편리합니다.  
 2. 홀 기준 이동이란 이동 대상 파트의 홀과 마주 닿을 파트의 홀을 복수 선택(Shift + 클릭) 후 하단 메뉴의 이동버튼 또는 단축키(M)을 이용하여 이동하는 방식입니다.  
