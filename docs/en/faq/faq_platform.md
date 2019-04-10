@@ -20,7 +20,7 @@ sidebar:
 - [OP3 manual]{: .blank}  
 
 ## **Where can I purchase grippers?**  
-- You can consider Seed Robotics{: .blank} or SAKE Robotics grippers{: .blank}
+- You can consider [Seed Robotics]{: .blank} or [SAKE Robotics grippers]{: .blank}
 
 
 
