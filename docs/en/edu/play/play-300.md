@@ -11,6 +11,8 @@ sidebar:
   nav: "play-300"
 ---
 
+![](/assets/images/edu/play/300/play300_product.png)
+
 # [Introduction](#introduction)
 
 
@@ -24,5 +26,12 @@ sidebar:
 
 # [Examples](#examples)
 
-## [Integrated Expamples](#Integrated-examples)
-## [Chapter Examples](#chapter-examples)
+|                                Example                                | Description |
+|:---------------------------------------------------------------------:|:-----------:|
+|  Triceratops<br>![](/assets/images/edu/play/300/play300_dino_01.png)  |             |
+| Tyrannosaurus<br>![](/assets/images/edu/play/300/play300_dino_02.png) |             |
+| Brachiosaurus<br>![](/assets/images/edu/play/300/play300_dino_03.png) |             |
+|    Dragon<br>![](/assets/images/edu/play/300/play300_dino_04.png)     |             |
+|   Crocodile<br>![](/assets/images/edu/play/300/play300_dino_05.png)   |             |
+|     Snail<br>![](/assets/images/edu/play/300/play300_dino_06.png)     |             |
+|     Frog<br>![](/assets/images/edu/play/300/play300_dino_07.png)      |             |
