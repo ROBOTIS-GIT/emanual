@@ -246,10 +246,10 @@ main:
     children:
     - title: "PLAY"
       children:
-        - title: "PLAY 300"
-          url: /edu/play/play-300/
-        - title: "PLAY 600"
-          url: /edu/play/play-600/
+        # - title: "PLAY 300"
+        #   url: /edu/play/play-300/
+        # - title: "PLAY 600"
+        #   url: /edu/play/play-600/
         - title: "PLAY 700"
           url: /edu/play/play-700/
     - title: "*OLLO"
@@ -12601,89 +12601,52 @@ all-edu:
     titlekr: "미니"
     url: /edu/#mini
     urlkr: /edu/#미니
-#PLAY 300 sidebar
 
+#PLAY 300 sidebar
 play-300:
   - title: "Introduction"
     titlekr: "개요"
     url: /edu/play/play-300/#introduction
-  - title : "Part List"
-    titlekr: "부품목록"
+  - title: "Part List"
+    titlekr: "부품 목록"
     url: /edu/play/play-300/#part-list
-  - title : "quick Start"
+  - title: "Quick Start"
     titlekr: "작동하기"
-    url:  /edu/play/play-300/#quick-start
-    children:
-      - title : "How to play"
-        titlekr: "작동방법"
-        url : /edu/play/play-300/#how-to-play
-      - title: "Selection Program"
-        titlekr: "프로그램 선택방법"
-        url: /edu/play/play-300/#selection-program
-  - title : "Example"
-  #  titlekr : "교안예제"
-        url : /edu/play/play-700/#examples
-        children :
-          - title : "Integrated Expamples"
-            url : /edu/play/play-300/#Integrated-examples
-          -title : "Chapter Examples"
-            url : /edu/play/play-300/#chapter-examples
+    url: /edu/play/play-300/#quick-start
+  - title: "Examples"
+    titlekr: "교안예제"
+    url: /edu/play/play-300/#examples
 
 #PLAY 600 sidebar
-
 play-600:
-    - title: "Introduction"
-    #  titlekr: "개요"
-      url: /edu/play/play-600/#introduction
-    - title : "Part List"
-    #  titlekr: "부품목록"
-      url: /edu/play/play-600/#part-list
-    - title : "quick Start"
-    #  titlekr: "작동하기"
-      url:  /edu/play/play-600/#quick-start
-      children:
-        - title : "How to play"
-    #      titlekr: "작동방법"
-          url : /edu/play/play-600/#how-to-play
-        - title: "Selection Program"
-    #      titlekr: "프로그램 선택방법"
-          url: /edu/play/play-600/#selection-program
-    - title : "Example"
-  #    titlekr : "교안예제"
-      url : /edu/play/play-600/#examples
-      children :
-        - title : "Integrated Expamples"
-          url : /edu/play/play-600/#Integrated-examples
-        -title : "Chapter Examples"
-          url : /edu/play/play-600/#chapter-examples
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /edu/play/play-600/#introduction
+  - title: "Part List"
+    titlekr: "부품 목록"
+    url: /edu/play/play-600/#part-list
+  - title: "Quick Start"
+    titlekr: "작동하기"
+    url: /edu/play/play-600/#quick-start
+  - title: "Examples"
+    titlekr: "교안예제"
+    url: /edu/play/play-600/#examples
 
 #PLAY 700 sidebar
 play-700:
   - title: "Introduction"
-  #  titlekr: "개요"
     url: /edu/play/play-700/#introduction
-  - title : "Part List"
-  #  titlekr: "부품목록"
+  - title: "Part List"
     url: /edu/play/play-700/#part-list
-  - title : "quick Start"
-  #  titlekr: "작동하기"
-    url:  /edu/play/play-700/#quick-start
+  - title: "Quick Start"
+    url: /edu/play/play-700/#quick-start
     children:
-      - title : "How to play"
-  #      titlekr: "작동방법"
-        url : /edu/play/play-700/#how-to-play
+      - title: "How to play"
+        url: /edu/play/play-700/#how-to-play
       - title: "Selection Program"
-  #      titlekr: "프로그램 선택방법"
         url: /edu/play/play-700/#selection-program
-  - title : "Example"
-    url : /edu/play/play-700/#examples
-    children :
-      - title : "Integrated Expamples"
-        url : /edu/play/play-700/#Integrated-examples
-      -title : "Chapter Examples"
-        url : /edu/play/play-700/#chapter-examples
-
-  #  titlekr : "교안예제"
+  - title: "Examples"
+    url: /edu/play/play-700/#examples
 
 #Ollo Bug Kit sidebar
 ollo_bugkit:
@@ -15213,7 +15176,7 @@ turtlebot3:
     - title: "Automatic Parking Vision"
       url: /platform/turtlebot3/applications/#automatic-parking-vision
     - title: "Load Multiple TurtleBot3s"
-      url : /platform/turtlebot3/applications/#load-multiple-turtlebot3s
+      url: /platform/turtlebot3/applications/#load-multiple-turtlebot3s
   - title: "Learn"
     url: /platform/turtlebot3/learn/#learn
     children:

@@ -18,18 +18,32 @@ Building upon the PLAY 600 PETs, the PLAY 700 emphasizes creative design using R
 The controller included with the PLAY 700, the CM-50 is a motorized gearbox that brings your child's creation to live. It also includes built-in sensors so that children can learn programming via SCRATCH or ROBOTIS R+TASK.   
 
 # [Part List](#part-list)
-
+//place the image of the part list from the textbook.
 
 
 # [Quick Start](#quick-start)
 
-- R+PLAY700 App[[Android](https://play.google.com/store/apps/details?id=com.robotis.play700&hl=en)/[ios](https://itunes.apple.com/us/app/play700/id1156037721)],[R+SCRATCH](http://en.robotis.com/service/download.php?no=9%20) and [SCRATCH Offline Editor](https://scratch.mit.edu/download) is required for operating ROBOTIS PLAY700. {: .notice}  
+## [Install Softwares](#install-softwares)
 
+### [Smart Devices](#smart-devices)
+Please install R+PLAY 700.  
+In order to program the robot using smart devices, R+m.Task2 should be installed.
+- R+PLAY 700 App Download([Android](https://play.google.com/store/apps/details?id=com.robotis.play700&hl=en) / [iOS](https://itunes.apple.com/us/app/play700/id1156037721))
+- R+m.Task2 App Download([Android]() / [iOS]())
+
+### [PC](#pc)
+SCRATCH adopts block programming GUI that is easier than traditional programming style.  
+It is recommended to use SCRATCH to program the robot.
+- [R+SCRATCH](http://en.robotis.com/service/download.php?no=9%20)
+- [SCRATCH 2.0 Offline Editor](https://scratch.mit.edu/download)  
 
 ## [How to play](#how-to-play)
-## [Selection Program](#selection-program)
+
+### [Connect Bluetooth](#connect-bluetooth)
+//describe how to make bluetooth connection between the robot and PC/smart devices.
+
+### [Selection an Example](#selection-an-example)
+//describe how to select an example and run it from R+PLAY 700 app.
 
 # [Examples](#examples)
-
-## [Integrated Expamples](#Integrated-examples)
-## [Chapter Examples](#chapter-examples)
+//simply list up the example lists in the R+PLAY 700.
