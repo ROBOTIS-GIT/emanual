@@ -1,15 +1,19 @@
-This value provides additional information about the movement. Following Error Bit(0x08) and In-Position Bit(0x01) only work with Position Control Mode, Extended Position Control Mode{% if page.product_group!='dxl_xl430' %}, Current-based Position Control Mode{% else %}{% endif %}.
+This one byte data provides additional information about the movement.  
+Following Error(0x08) and In-Position(0x01) are available under Position Control Mode, Extended Position Control Mode{% if page.product_group!='dxl_xl430' %}, Current-based Position Control Mode{% else %}{% endif %}.
 
 
-||| Details     | Description     |
-| :---: | :---: |:---: | :---: |
-| Bit 7 | 0x80 | - | Unused |
-| Bit 6 | 0x40 | - | Unused |
-| Bit 5<br />~<br />Bit 4 | 0x30 | Profile Type(0x30)<br />Profile Type(0x20)<br />Profile Type(0x10)<br />Profile Type(0x00)|Trapezoidal Velocity Profile<br />Triangular Velocity Profile<br />Rectangular Velocity Profile<br />Profile is not used|
-| Bit 3 | 0x08 | Following Error | Dynamixel fails to reach desired position trajectory |
-| Bit 2 | 0x04 | - | Unused |
-| Bit 1 | 0x02 | Profile Ongoing | Profile is in progress with Goal Position(116) instruction |
-| Bit 0 | 0x01 | In-Position | Dynamixel is reached to desired position |
+|    Bit    |        Value         |   Information    | Description                                                                                                    |
+|:---------:|:--------------------:|:----------------:|:---------------------------------------------------------------------------------------------------------------|
+|   Bit 7   |          X           |        -         | Reserved                                                                                                       |
+|   Bit 6   |          X           |        -         | Reserved                                                                                                       |
+| Bit [5:4] | 11<br>10<br>01<br>00 | Velocity Profile | 11 : Trapezoidal Profile<br />10 : Triangular Profile<br />01 : Rectangular Profile<br />00 : Profile not used |
+|   Bit 3   |        0 or 1        | Following Error  | 1 : DYNAMIXEL fails to reach the desired position trajectory                                                   |
+|   Bit 2   |          X           |        -         | Reserved                                                                                                       |
+|   Bit 1   |        0 or 1        | Profile Ongoing  | 1 : Profile is in progress with Goal Position(116) instruction                                                 |
+|   Bit 0   |        0 or 1        |   In-Position    | 1 : DYNAMIXEL reached to the desired position                                                                  |
 
 **NOTE** : Triangular velocity profile is configured when Rectangular velocity profile cannot reach to the Profile Velocity(112).
+{: .notice}
+
+**NOTE** : In-Position bit will be set when the positional deviation is smaller than a predefined value under Position related control modes.
 {: .notice}
