@@ -232,8 +232,8 @@ main:
     - title: "OpenManipulator"
       titlekr: "오픈매니퓰레이터"
       children:
-      - title: "*Manipulator-H"
-        titlekr: "*Manipulator-H"
+      - title: "Manipulator-H"
+        titlekr: "Manipulator-H"
         url: /platform/manipulator_h/introduction/
     #  - title: "OpenManipulator-PRO"
     #    titlekr: "OpenManipulator-PRO"
@@ -246,10 +246,10 @@ main:
     children:
     - title: "PLAY"
       children:
-        # - title: "PLAY 300"
-        #   url: /edu/play/play-300/
-        # - title: "PLAY 600"
-        #   url: /edu/play/play-600/
+        - title: "PLAY 300"
+          url: /edu/play/play-300/
+        - title: "PLAY 600"
+          url: /edu/play/play-600/
         - title: "PLAY 700"
           url: /edu/play/play-700/
     - title: "*OLLO"
@@ -12613,6 +12613,11 @@ play-300:
   - title: "Quick Start"
     titlekr: "작동하기"
     url: /edu/play/play-300/#quick-start
+    children:
+      - title: "Assemble Robot"
+        url: /edu/play/play-300/#assemble-robot
+      - title: "Activate Robot"
+        url: /edu/play/play-300/#activate-robot
   - title: "Examples"
     titlekr: "교안예제"
     url: /edu/play/play-300/#examples
@@ -12628,6 +12633,11 @@ play-600:
   - title: "Quick Start"
     titlekr: "작동하기"
     url: /edu/play/play-600/#quick-start
+    children:
+      - title: "Assemble Robot"
+        url: /edu/play/play-600/#assemble-robot
+      - title: "Activate Robot"
+        url: /edu/play/play-600/#activate-robot
   - title: "Examples"
     titlekr: "교안예제"
     url: /edu/play/play-600/#examples
