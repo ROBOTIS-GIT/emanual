@@ -232,8 +232,8 @@ main:
     - title: "OpenManipulator"
       titlekr: "오픈매니퓰레이터"
       children:
-      - title: "*Manipulator-H"
-        titlekr: "*Manipulator-H"
+      - title: "Manipulator-H"
+        titlekr: "Manipulator-H"
         url: /platform/manipulator_h/introduction/
     #  - title: "OpenManipulator-PRO"
     #    titlekr: "OpenManipulator-PRO"
@@ -244,6 +244,14 @@ main:
   - title: "STEAM"
     titlekr: "교육키트"
     children:
+    - title: "PLAY"
+      children:
+        - title: "PLAY 300"
+          url: /edu/play/play-300/
+        - title: "PLAY 600"
+          url: /edu/play/play-600/
+        - title: "PLAY 700"
+          url: /edu/play/play-700/
     - title: "*OLLO"
       titlekr: "*올로"
       children:
@@ -12594,6 +12602,76 @@ all-edu:
     url: /edu/#mini
     urlkr: /edu/#미니
 
+#PLAY 300 sidebar
+play-300:
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /edu/play/play-300/#introduction
+  - title: "Part List"
+    titlekr: "부품 목록"
+    url: /edu/play/play-300/#part-list
+  - title: "Quick Start"
+    titlekr: "작동하기"
+    url: /edu/play/play-300/#quick-start
+    children:
+      - title: "Assemble Robot"
+        url: /edu/play/play-300/#assemble-robot
+      - title: "Activate Robot"
+        url: /edu/play/play-300/#activate-robot
+  - title: "Examples"
+    titlekr: "교안예제"
+    url: /edu/play/play-300/#examples
+
+#PLAY 600 sidebar
+play-600:
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /edu/play/play-600/#introduction
+  - title: "Part List"
+    titlekr: "부품 목록"
+    url: /edu/play/play-600/#part-list
+  - title: "Quick Start"
+    titlekr: "작동하기"
+    url: /edu/play/play-600/#quick-start
+    children:
+      - title: "Assemble Robot"
+        url: /edu/play/play-600/#assemble-robot
+      - title: "Activate Robot"
+        url: /edu/play/play-600/#activate-robot
+  - title: "Examples"
+    titlekr: "교안예제"
+    url: /edu/play/play-600/#examples
+
+#PLAY 700 sidebar
+play-700:
+  - title: "Introduction"
+    url: /edu/play/play-700/#introduction
+  - title: "Part List"
+    url: /edu/play/play-700/#part-list
+  - title: "Quick Start"
+    url: /edu/play/play-700/#quick-start
+    children:
+      - title: "Smart Device"
+        url: /edu/play/play-700/#smart-device
+        children:
+          - title: "App Install"
+            url: /edu/play/play-700/#app-install
+          - title: "Select Example"
+            url: /edu/play/play-700/#select-example
+          - title: "Connect and Run"
+            url: /edu/play/play-700/#connect-and-run
+      - title: "Windows PC"
+        url: /edu/play/play-700/#windows-pc
+        children:
+          - title: "Software Install"
+            url: /edu/play/play-700/#software-install
+          - title: "Connect Bluetooth"
+            url: /edu/play/play-700/#connect-bluetooth
+          - title: "Run Scratch"
+            url: /edu/play/play-700/#run-scratch
+  - title: "Vidoe Tutorials"
+    url: /edu/play/play-700/#video-tutorials
+
 #Ollo Bug Kit sidebar
 ollo_bugkit:
   - title: "Introduction"
@@ -15122,7 +15200,7 @@ turtlebot3:
     - title: "Automatic Parking Vision"
       url: /platform/turtlebot3/applications/#automatic-parking-vision
     - title: "Load Multiple TurtleBot3s"
-      url : /platform/turtlebot3/applications/#load-multiple-turtlebot3s
+      url: /platform/turtlebot3/applications/#load-multiple-turtlebot3s
   - title: "Learn"
     url: /platform/turtlebot3/learn/#learn
     children:
