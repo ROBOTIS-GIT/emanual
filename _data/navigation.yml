@@ -12664,7 +12664,7 @@ play-700:
         url: /edu/play/play-700/#windows-pc
         children:
           - title: "Software Install"
-            url: /edu/play/play-700/#app-install
+            url: /edu/play/play-700/#software-install
           - title: "Connect Bluetooth"
             url: /edu/play/play-700/#connect-bluetooth
           - title: "Run Scratch"
