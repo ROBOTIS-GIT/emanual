@@ -12651,12 +12651,26 @@ play-700:
   - title: "Quick Start"
     url: /edu/play/play-700/#quick-start
     children:
-      - title: "How to play"
-        url: /edu/play/play-700/#how-to-play
-      - title: "Selection Program"
-        url: /edu/play/play-700/#selection-program
-  - title: "Examples"
-    url: /edu/play/play-700/#examples
+      - title: "Smart Device"
+        url: /edu/play/play-700/#smart-device
+        children:
+          - title: "App Install"
+            url: /edu/play/play-700/#app-install
+          - title: "Select Example"
+            url: /edu/play/play-700/#select-example
+          - title: "Connect and Run"
+            url: /edu/play/play-700/#connect-and-run
+      - title: "Windows PC"
+        url: /edu/play/play-700/#windows-pc
+        children:
+          - title: "Software Install"
+            url: /edu/play/play-700/#app-install
+          - title: "Connect Bluetooth"
+            url: /edu/play/play-700/#connect-bluetooth
+          - title: "Run Scratch"
+            url: /edu/play/play-700/#run-scratch
+  - title: "Vidoe Tutorials"
+    url: /edu/play/play-700/#video-tutorials
 
 #Ollo Bug Kit sidebar
 ollo_bugkit:
