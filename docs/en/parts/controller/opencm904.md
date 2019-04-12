@@ -102,7 +102,9 @@ Control Table consists of data regarding the current status and operation of con
 |    8    |  1   |      Baud Rate      |      Communication Baud Rate      |   R    |     1      |
 |    9    |  1   |  Return Delay Time  |        Response Delay Time        |   RW   |     0      |
 |   10    |  1   | Status Return Level |   Select Types of Status Return   |   RW   |     2      |
-|   12    |  1   |    DXL Baud Rate    | Dynamixel Communication Baud Rate |   RW   |     3      |
+|   11    |  1   | Bootloader Version  |   Indicates Bootloader Version    |   R    |     -      |
+|   12    |  1   |    DXL Baud Rate    | DYNAMIXEL Communication Baud Rate |   RW   |     3      |
+|   16    |  1   |  DYNAMIXEL Channel  |       Select DYNAMIXEL Port       |   RW   |     0      |
 
 ## [RAM Area](#ram-area)
 

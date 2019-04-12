@@ -26,7 +26,7 @@ The Control Table is a structure of data implemented in the device. Users can re
 {% capture mx2_control_table %}
 **CAUTION**
 1. MX(2.0) Firmware is different from MX series' control table and address. Please check the control table address before usage.
-2. MX(2.0) Firmware inherits Dynamixel X's function. Therefore, it supports [Protocol 1.0](/docs/en/dxl/protocol1/) and [Protocol 2.0](/docs/en/dxl/protocol2/), and various Operating Modes, Secondary ID, Drive Mode, Bus Watchdong, etc. Please refer to the control table for more details.
+2. MX(2.0) Firmware inherits Dynamixel X's function. Therefore, it supports [Protocol 1.0](/docs/en/dxl/protocol1/) and [Protocol 2.0](/docs/en/dxl/protocol2/), and various Operating Modes, Secondary ID, Drive Mode, Bus Watchdog, etc. Please refer to the control table for more details.
 {% endcapture %}
 
 <div class="notice--warning">{{ mx2_control_table | markdownify }}</div>

@@ -18,7 +18,8 @@ Building upon the PLAY 600 PETs, the PLAY 700 emphasizes creative design using R
 The controller included with the PLAY 700, the CM-50 is a motorized gearbox that brings your child's creation to live. It also includes built-in sensors so that children can learn programming via [SCRATCH]{: .blank} or ROBOTIS [R+TASK]{: .blank}.   
 
 # [Part List](#part-list)
-![](/assets/images/edu/play/700/play_700_partlist.png/)
+
+![](/assets/images/edu/play/700/play_700_partlist.png)
 
 
 # [Quick Start](#quick-start)
@@ -107,17 +108,17 @@ Succesful pairing will turn on the solid blue LED for both [BT-410] and Dongle m
 
 1. Run the R+Scratch program. Select `CM-50` on the controller menu.  
   ![](/assets/images/edu/play/700/play_700_a_scratch.png)
-2. Click on Port tap and then `Auto Search` to find the port connected to controller automatically  
+2. Click on Port tap and then `Auto Search` to find the port connected to controller automatically.  
   ![](/assets/images/edu/play/700/play_700_b_scratch.png)
 3. Click on `Connect` button to connect the controller to Scratch program.  
   ![](/assets/images/edu/play/700/play_700_c_scratch.png)
 4. Click on `Open Scratch` to open saved Scratch program. In order to write a new program, click on `New Scratch`.
-  ![](/assets/images/edu/play/700/play_700_d_scratch.png)
+  ![](/assets/images/edu/play/700/play_700_d_scratch.png)  
 5. Double click on the program to run. After saving, Scratch will run.  
   ![](/assets/images/edu/play/700/play_700_e_scratch.png)
 6. On the Scratch program, click on `More Block` to find out available blocks for CM-50 controller.  
-There are blocks for controlling motors and sensors in the CM-50 controller.  
-Green dot indicates the robot is connected to the program.
+There are blocks for controlling motors and sensors in the CM-50 controller.   
+Green dot indicates the robot is connected to the program.  
   ![](/assets/images/edu/play/700/play_700_f_scratch.png)
 
 # [Video Tutorials](#video-tutorials)
