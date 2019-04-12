@@ -19948,8 +19948,6 @@ opencr10:
     children:
     - title: "Recovery Mode"
       url: /parts/controller/opencr10/#recovery-mode
-    - title: "Install Windows Driver"
-      url: /parts/controller/opencr10/#install-windows-driver
     - title: "Certifications"
       url: /parts/controller/opencr10/#certifications
   - title: "Bootloader"
@@ -19972,17 +19970,17 @@ opencr10:
         url: /parts/controller/opencr10/#message-processing
       - title: "Folder Structure"
         url: /parts/controller/opencr10/#folder-structure
-    - title: "Update Bootloader(Linux)"
-      url: /parts/controller/opencr10/#update-bootloaderlinux
+    - title: "Update Bootloader"
+      url: /parts/controller/opencr10/#update-bootloader
       children:
       - title: "Enter DFU Mode"
         url: /parts/controller/opencr10/#enter-dfu-mode
       - title: "Check Boot Mode"
         url: /parts/controller/opencr10/#check-boot-mode
-      - title: "Update Bootloader"
-        url: /parts/controller/opencr10/#update-bootloader
-    - title: "Firmware Recovery Mode"
-      url: /parts/controller/opencr10/#firmware-recovery-mode
+      - title: "Burn Bootloader"
+        url: /parts/controller/opencr10/#burn-bootloader
+      - title: "Driver Install(Optional)"
+        url: /parts/controller/opencr10/#driver-installoptional
   - title: "Downloader"
     url: /parts/controller/opencr10/#downloader
     children:

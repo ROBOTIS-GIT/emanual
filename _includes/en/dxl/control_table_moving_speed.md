@@ -1,7 +1,7 @@
 It is a moving speed to Goal Position.  
 The range and the unit of the value may vary depending on the operation mode.
 
-+ **Join Mode**  
++ **Joint Mode**  
   0 ~ 1,023(0x3FF) can be used, and the unit is about 0.111rpm.  
   If it is set to 0, it means the maximum rpm of the motor is used without controlling the speed.  
   If it is 1023, it is about 114rpm.  
