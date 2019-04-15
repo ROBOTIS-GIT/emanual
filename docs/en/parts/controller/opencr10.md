@@ -480,7 +480,12 @@ Click Tools → Burn Bootloader to download the bootloader.
 ## [Install on Windows](#install-on-windows)
 
 ### [Install Driver](#install-driver)
-To use OpenCR's USB port as a serial port in Windows, you need a USB CDC driver. You can install the USB driver provided by ST.
+
+**WARNING** : For Windows 10 PCs, please skip this driver installation.  
+Proper driver will be automatically installed.
+{: .notice--warning}
+
+To use OpenCR's USB port as a serial port in Windows below 8.x, you need a USB CDC driver. You can install the USB driver provided by ST.
 
 [http://www.st.com/en/development-tools/stsw-stm32102.html](http://www.st.com/en/development-tools/stsw-stm32102.html)
 
