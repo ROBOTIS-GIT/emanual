@@ -11,29 +11,24 @@ sidebar:
   nav: "faq_software"
 ---
 
-# Software FAQs
 
 **TIP** : Software download can be found [Download Center](http://www.robotis.us/software/)
-{: .notice--warning}
+{: .notice--success}
 
-## How can I test DYNAMIXEL control table?
+# How can I test DYNAMIXEL control table?
 1. Please use [DYNAMIXEL Wizard] or [DYNAMIXEL Wizard 2.0] for the product using **Protocol 1.0**.
 2. Please use [R+ Manager 2.0] or [DYNAMIXEL Wizard 2.0] for the product using **Protocol 2.0**.
 
 
-## What is the DYNAMIXEL SDK?
- If you are operating DYNAMIXEL from your PC with [U2D2] or [USB2Dynamixel], You can use [DYNAMIXEL SDK](/docs/en/software/dynamixel/dynamixel_sdk/overview/)(C, C++, C#, Java, MATLAB, LabVIEW, Python, ROS) or [R+ Task] or [R+ Task 2.0]  
+# What is the DYNAMIXEL SDK?
+If you are operating DYNAMIXEL from your PC with [U2D2] or [USB2Dynamixel], You can use [DYNAMIXEL SDK](/docs/en/software/dynamixel/dynamixel_sdk/overview/)(C, C++, C#, Java, MATLAB, LabVIEW, Python, ROS) or [R+ Task] or [R+ Task 2.0]  
 
 
-## What is the DYNAMIXEL Workbench?
+# What is the DYNAMIXEL Workbench?
+If DYNAMIXEL SDK for [Arduino IDE] is too cumbersome, DYNAMIXEL Workbench is recommended - a lighter-weight collection of libraries for simplified connection of DYNAMIXELs using [Arduino IDE] and OpenCM9.04. In addition, with DYNAMIXEL Workbench it may be possible to have [OpenCM9.04] act as both the [U2D2] serial interface and embedded controller Arduino to save further space.
 
- If DYNAMIXEL SDK for [Arduino IDE] is too cumbersome, DYNAMIXEL Workbench is recommended - a lighter-weight collection of libraries for simplified connection of DYNAMIXELs using [Arduino IDE] and OpenCM9.04. In addition, with DYNAMIXEL Workbench it may be possible to have [OpenCM9.04] act as both the [U2D2] serial interface and embedded controller Arduino to save further space.
-
-
-## What software is available?
-
+# What software is available?
 [RoboPlus 1.0](http://www.robotis.us/roboplus1/) includes the application [Dynamixel Wizard], which will allow you to access the control table of the DYNAMIXEL to test and configure firmware parameters. <br>
-
 
 [DYNAMIXEL SDK] have collection of open-source library in a variety of programming languages for the development of DYNAMIXEL control code.
 
