@@ -12,6 +12,8 @@ sidebar:
 ---
 
 
+
+
 # [Product Compatibility Guide](/docs/en/parts/controller/controller_compatibility/)
 
 # [Download Task Code](/docs/en/faq/download_task_code/)
@@ -19,6 +21,19 @@ sidebar:
 # [Task Rule Check](/docs/en/software/rplus1/task/task_misc/#rule-check)
 
 # [CM 510/530 Fuse Replacement](/docs/en/faq/cm_510_530_fuse/)
+
+# How the X-series can communicate with dynamixel with protocol 1.0?
+
+- Users can select Dynamixel protocol version (1.0 and 2.0) by using X-series.
+Even if Protocol 1.0 is selected, Protocol 2.0 Control Table will be used.
+It is recommended to use an identical protocol version for multiple Dynamixels.
+**TIP** : users can upgrade their MX-series DYNAMIXELs to Control Table 2.0 for the new firmware features, new control table, and "Protocol Version" parameter for Communication Protocol flexibility.  
+{: .notice --warning}  
+
+
+
+
+
 
 # What is RoboPlus?  
 - RoboPlus is a software to create a customized programme for every ROBOTIS product.  

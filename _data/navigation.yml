@@ -336,8 +336,8 @@ main:
         url: /edu/iot/iot-1/
       - titlekr: "2단계 교육키트"
         url: /edu/iot/iot-2/
-    # - titlekr: "실과 로봇"
-    #   url: /edu/info/
+    - titlekr: "실과 로봇"
+      url: /edu/info/
     - titlekr: "*자동차 로봇"
       url: /edu/car/
     - title: "BIOLOID"
@@ -20623,6 +20623,12 @@ u2d2:
 
 #FAQ sidebar
 faq:
+
+
+#FAQ Protocol Compatibility Table
+faq_protocol_compatibility_table:
+  - title: "Protocol Compatibitily"
+    url: /docs/en/faq/faq_protocol_compatibility_table
 
 #FAQ Platform
 faq_platform:

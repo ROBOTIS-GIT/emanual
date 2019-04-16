@@ -12,3 +12,19 @@ sidebar:
 ---
 
 # Parts FAQs
+
+
+
+## Which Controller uses protocol 1.0/2.0?
+- Please refer to [protocol compatibility table](/docs/en/faq/faq_protocol_compatibility_table) to check information.
+
+## What controller be compatible with Arduino and recommended?
+- [OpenCM9.04] and  [OpenCM485 EXP Board] is recommended for users.Users have established control Arduino hardware with reference to available resources on the [ROBOTIS GitHub](https://github.com/ROBOTIS-GIT)
+
+
+
+
+
+[OpenCM9.04]: /docs/en/parts/controller/opencm904/#introduction
+
+[OpenCM485 EXP Board]: /docs/en/parts/controller/opencm485exp/
