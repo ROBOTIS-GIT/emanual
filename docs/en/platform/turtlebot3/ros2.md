@@ -109,8 +109,8 @@ If you get any build errors or warnings from dependencies, please refer to below
 ```bash
 $ cd ~/turtlebot3
 $ rm -rf ./opencr_update.tar.xz
-$ wget https://github.com/ROBOTIS-GIT/OpenCR_Binaries/raw/master/turtlebot3/ROS2/latest/opencr_update.tar.xz
-$ tar -xf ./opencr_update.tar.xz
+$ wget https://github.com/ROBOTIS-GIT/OpenCR-Binaries/raw/master/turtlebot3/ROS2/latest/opencr_update.tar.bz2
+$ tar -xf ./opencr_update.tar.bz2
 
 $ export OPENCR_PORT=/dev/ttyACM0
 $ export OPENCR_MODEL=burger
