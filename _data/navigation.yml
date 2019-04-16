@@ -20624,6 +20624,12 @@ u2d2:
 #FAQ sidebar
 faq:
 
+
+#FAQ Protocol Compatibility Table
+faq_protocol_compatibility_table:
+  - title: "Protocol Compatibitily"
+    url: /docs/en/faq/faq_protocol_compatibility_table
+
 #FAQ Platform
 faq_platform:
   - title: "OP Series"
