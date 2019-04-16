@@ -45,7 +45,7 @@ sidebar:
 - Please refer to [this page]{: .blank} for the Manipulator Base Plate. We have 2 types of plates which are Base Plate-01 and Base Plate-02.  
 
 ## **Is OpenManipulator available examples, and some helpful information?**
-- All [technical specifications](/docs/en/platform/openmanipulator_x/specification/#specification), configuration examples, and [open-source CAD](http://en.robotis.com/service/downloadpage.php?ca_id=70g0) for OpenManipulator is available online in the ROBOTIS e-Manual entry for OpenManipulator.   
+- All [technical specifications](/docs/en/platform/openmanipulator_x/specification/#specification), configuration examples, and [open-source CAD](http://en.robotis.com/service/downloadpage.php?ca_id=70g0) for OpenManipulator is available online in the ROBOTIS e-Manual entry for [OpenManipulator](/docs/en/platform/openmanipulator_x/overview/).   
 
 - ROBOTIS also offers the DYNAMIXEL SDK- a collection of open-source, The [DYNAMIXEL SDK](http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/overview/#dynamixel-sdk) includes resources for the use of MatLab for your reference.   
 

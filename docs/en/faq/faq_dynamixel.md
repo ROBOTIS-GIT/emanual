@@ -20,19 +20,23 @@ sidebar:
 # What is the difference between Protocol 1.0 and 2.0?
 
 The structure of the instruction and status packet are different.  
-[Protocol 1.0] is used with established Dynamixel product lines- the AX-series and MX-series Dynamixel servos operate with [Protocol 1.0].  
-[Protocol 2.0] is used with the most recently-released Dynamixel series- the X-series and PRO series utilize [Protocol 2.0]. In addition, [MX]-series Dynamixels may undergo firmware upgrade to utilize [Protocol 2.0].  
+[Protocol 1.0] is used with established Dynamixel product lines- the AX-series and MX-series Dynamixel servos operate with [Protocol 1.0].<br>
 
+[Protocol 2.0] is used with the most recently-released Dynamixel series- the X-series and PRO series utilize [Protocol 2.0]. The control tables of Dynamixels using Protocol 2.0 are expanded to include PID (proportional- integral- derivative) controls allowing for extremely precise and fine-tuned movements. In addition, [MX]-series Dynamixels may undergo firmware upgrade to utilize [Protocol 2.0].<br>
+
+X-series : XL,XM,XH
+MX-series : MX-28/64/106
+
+<br>
 Please refer to [Protocol 1.0] and [Protocol 2.0] description pages for more information.  
 
-
-# Which DYNAMIXEL uses Protocol 1.0 and Protocol 2.0?
+# Which DYNAMIXEL uses Protocol 1.0 and Protocol 2.0?  
 
 Please refer to [Compatibility Table](/docs/en/faq/faq_protocol_compatibility_table/) of ROBOTIS products.  
 
-#What does Control Table/DYNAMIXEL firmware mean?
+#What does Control Table/DYNAMIXEL firmware mean?  
 
- The Control Table contains every numbered firmware address that may be used in a command or status packet.  
+ The Control Table contains every numbered firmware address that may be used in a command or status packet.   
 
 **tip:** The firmware addresses remain similar for DYNAMIXELs within the same series.  
 ex)Goal Position of [AX-12A](/docs/en/dxl/ax/ax-12a/#goal-position-30) and [AX-18A](/docs/en/dxl/ax/ax-18a/#goal-position-30) is firmware address 30.
@@ -103,6 +107,19 @@ Please refer to the specifications for DYNAMIXEL Pro series.
 
 # DYNAMIXEL is not detected from other softwares(LabView, Visual Studio, etc) when trying to communicate via SDK source code examples.
 In a peculiar case, Windows 32-bit DLL could not recognize COM port higher than COM9.
+
+
+# What is the meaning of suffix 'R','T' on the last digit of Dynamixel's model number?
+Most models of Dynamixel contain a suffix on the last digit of the model number (e.g. MX-64R ; XM430-W210T) which denotes the format of asynchronous serial communication utilized by the Dynamixel. It is important to ensure the correct serial interface format is chosen for compatibility in the intended system and across daisy-chained Dynamixels.  
+<br>
+-R : RS-485 serial communication  
+-T : TTL serial communication    
+
+[Connector Information](docs/en/dxl/mx/mx-28/#connector-information)
+
+
+# Are actuators certified as intrinsically safe?  
+Dynamixel Pro is CE/FCC certified. For more information, please search ROBOTIS [e-Manual](http://emanual.robotis.com/) for Pro and Pro + series.
 
 
 [Protocol 1.0]: /docs/en/dxl/protocol1/

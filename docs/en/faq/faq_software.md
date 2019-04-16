@@ -13,8 +13,8 @@ sidebar:
 
 # Software FAQs
 
-**NOTE** : Software download can be found [Download center](http://en.robotis.com/service/downloadcenter.php)
-{: .notice}
+**TIP** : Software download can be found [Download Center](http://www.robotis.us/software/)
+{: .notice--warning}
 
 ## How can I test DYNAMIXEL control table?
 1. Please use [DYNAMIXEL Wizard] or [DYNAMIXEL Wizard 2.0] for the product using **Protocol 1.0**.
