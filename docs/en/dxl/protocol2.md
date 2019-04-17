@@ -24,9 +24,9 @@ sidebar:
 # [Instruction Packet](#instruction-packet)
 Instruction Packet is the command data sent to the Device.
 
-|Header1|Header2|Header3|Reserved|Packet ID|Length1|Length2|Instruction|Param|Param|Param|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|ID|Len_L|Len_H|Instruction|Param 1|...|Param N|CRC_L|CRC_H|
+| Header1 | Header2 | Header3 | Reserved | Packet ID | Length1 | Length2 | Instruction |  Param  | Param |  Param  | CRC1  | CRC2  |
+|:-------:|:-------:|:-------:|:--------:|:---------:|:-------:|:-------:|:-----------:|:-------:|:-----:|:-------:|:-----:|:-----:|
+|  0xFF   |  0xFF   |  0xFD   |   0x00   |    ID     |  Len_L  |  Len_H  | Instruction | Param 1 |  ...  | Param N | CRC_L | CRC_H |
 
 ## [Header](#header)
 The field indicates the start of the Packet

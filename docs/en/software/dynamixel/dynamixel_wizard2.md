@@ -17,7 +17,7 @@ sidebar:
 
 ## [DYNAMIXEL Wizard 2.0](#dynamixel-wizard-20)
 
-DYNAMIXEL Wizard 2.0 is an optimized tool for managing DYNAMIXELs from various operating systems.  
+DYNAMIXEL Wizard 2.0 is an optimized tool for managing DYNAMIXELs from various operating systems.
 The following features are provided with DYNAMIXEL Wizard 2.0.
 
 - DYNAMIXEL Firmware Update
@@ -32,6 +32,7 @@ The following features are provided with DYNAMIXEL Wizard 2.0.
 
 - [Protocol 1.0]
 - [Protocol 2.0]
+- [Compatibility Table]{: .popup}
 
 ## [Supported OS](#supported-os)
 
@@ -40,8 +41,8 @@ The following features are provided with DYNAMIXEL Wizard 2.0.
 
 ## [Definition of Firmware](#definition-of-firmware)
 
-Firmware is a fundamental program to operate the hardware device.  
-It is recommended to keep the firmware updated because it contains various communication regulations to exchange data with other devices such as computers or smartphones.  
+Firmware is a fundamental program to operate the hardware device.
+It is recommended to keep the firmware updated because it contains various communication regulations to exchange data with other devices such as computers or smartphones.
 Although almost all ROBOTIS products are shipped with preinstalled firmwares, new firmwares can be released for updated features or bug fixes.
 
 ## [Importance of Firmware Update](#importance-of-firmware-update)
@@ -81,14 +82,14 @@ Detected DYNAMIXELs can be tested by modifying control table values.
 
 ## [Graph Window](#graph-window)
 
-By selecting control table items to be plotted, values of the selected items will be drawn in the graph window in real time.  
+By selecting control table items to be plotted, values of the selected items will be drawn in the graph window in real time.
 Please refer to [Basic Feature > Graph] section for more details about selecting control table items.
 
 ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_001.png)
 
 ## [Packet Window](#packet-window)
 
-User can manually generate an Instruction packet for the selected protocol version.  
+User can manually generate an Instruction packet for the selected protocol version.
 Detailed packet data can be loaded by selecting a packet in the packet history.
 
 ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_001.png)
@@ -101,7 +102,7 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 
 ## [Install: Windows](#install-windows)
 
-1. Execute downloaded installation file.  
+1. Execute downloaded installation file.
 2. Click on `Next` button to proceed installation.
 
 ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_win_01.png)
@@ -116,7 +117,7 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
     # sudo chmod 775 DynamixelWizard2Setup-x86
     ```
 
-3. Run the install program.  
+3. Run the install program.
 
     ```c
     # ./DynamixelWizard2Setup-x86
@@ -162,7 +163,7 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_options_001.png)
 
-3. Select Protocol version, communication ports, baudrates, and the range of ID to scan. Click `OK` to confirm the selection.  
+3. Select Protocol version, communication ports, baudrates, and the range of ID to scan. Click `OK` to confirm the selection.
   Selecting less option reduces time to scan DYNAMIXEL.
 
 ### [Scan DYNAMIXEL](#scan-dynamixel)
@@ -184,10 +185,10 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_002.png)
 
-2. `Factory Reset` button in the Sub Menu on the right column will reset the DYNAMIXEL to factory status(ID and Baudrate will not be reset).  
-  `Reboot` button will soft reset the DYNAMIXEL.  
-  `Torque` switch will toggle the Torque of DYNAMIXEL.  
-  `LED` switch will toggle the LED of DYNAMIXEL.  
+2. `Factory Reset` button in the Sub Menu on the right column will reset the DYNAMIXEL to factory status(ID and Baudrate will not be reset).
+  `Reboot` button will soft reset the DYNAMIXEL.
+  `Torque` switch will toggle the Torque of DYNAMIXEL.
+  `LED` switch will toggle the LED of DYNAMIXEL.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_003.png)
 
@@ -197,7 +198,7 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 
 5. Position controlling interface will appear on the buttom right corner of the program.
 
-    **WARNING** : Please be cautious when changing values as DYNAMIXEL can rotate or move.  
+    **WARNING** : Please be cautious when changing values as DYNAMIXEL can rotate or move.
     {: .notice--warning}
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_004.png)
@@ -240,7 +241,7 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 6. In order to optimize the graph drawing speed, check the option to read selected items only.
 
     **NOTE** : Checking this option will only refresh selected items in the Control Table.
-    {: .notice}  
+    {: .notice}
 
 7. Click `OK` to confirm changes.
 
@@ -278,7 +279,7 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_014.png)
 
-2. Set the communication port and baudrate then click `Open` to open the port.  
+2. Set the communication port and baudrate then click `Open` to open the port.
   Once the port is successfully opened, DYNAMIXEL protocol minitoring on the port will begin.
 
     **NOTE** : If communication port is in use and fails to open, the port should be released first.
@@ -286,13 +287,13 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_002.png)
 
-3. Select Protocol version and instruction to use.  
-  In this example, `Write` instruction for Protocol version `2.0` is selected.  
+3. Select Protocol version and instruction to use.
+  In this example, `Write` instruction for Protocol version `2.0` is selected.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_003.png)
 
-4. Specific data can be written on the instuction as shown below.  
-  In this example, LED will be turned on by writing `1` to LED control address.  
+4. Specific data can be written on the instuction as shown below.
+  In this example, LED will be turned on by writing `1` to LED control address.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_004.png)
 
@@ -487,7 +488,7 @@ In order to find error in DYNAMIXEL, self diagnosis can be performed.
 2. Self diagnosis will begin with a breif instruction.
 
     **WARNING** : DYNAMIXEL will be factory reset during self diagnosis.
-    {: .notice--warning}  
+    {: .notice--warning}
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_self_002.png)
 
@@ -617,3 +618,4 @@ In order to use the minimum communication interval(1 [ms]), please follow the in
 [H42P-020-S300-R]: /docs/en/dxl/pro_plus/h42p-020-s300-r/
 [H54P-100-S500-R]: /docs/en/dxl/pro_plus/h54p-100-s500-r/
 [H54P-200-S500-R]: /docs/en/dxl/pro_plus/h54p-200-s500-r/
+[Compatibility Table]: /docs/en/popup/faq_protocol_compatibility_table/
