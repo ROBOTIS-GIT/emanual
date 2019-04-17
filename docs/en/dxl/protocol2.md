@@ -17,12 +17,16 @@ sidebar:
 - Protocol 2.0 supported controllers: CM-150, CM-200, OpenCM9.04, OpenCR
 - Other: 2.0 protocol from R+ Smart app
 
+**TIP** : Users can refer to ROBOTIS Protocol [Compatibility Table]{: .popup} with reference.
+{: .notice--success}
+
+
 # [Instruction Packet](#instruction-packet)
 Instruction Packet is the command data sent to the Device.
 
-|Header1|Header2|Header3|Reserved|Packet ID|Length1|Length2|Instruction|Param|Param|Param|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|ID|Len_L|Len_H|Instruction|Param 1|...|Param N|CRC_L|CRC_H|
+| Header1 | Header2 | Header3 | Reserved | Packet ID | Length1 | Length2 | Instruction |  Param  | Param |  Param  | CRC1  | CRC2  |
+|:-------:|:-------:|:-------:|:--------:|:---------:|:-------:|:-------:|:-----------:|:-------:|:-----:|:-------:|:-----:|:-----:|
+|  0xFF   |  0xFF   |  0xFD   |   0x00   |    ID     |  Len_L  |  Len_H  | Instruction | Param 1 |  ...  | Param N | CRC_L | CRC_H |
 
 ## [Header](#header)
 The field indicates the start of the Packet
@@ -607,3 +611,9 @@ The field that indicates the processing result of Instruction Packet
 |P8|P9|P10|P11|P12|P13|CRC1|CRC2|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |0x02|0x1F|0x00|0x01|0x00|0x50|0xB7|0x68|
+
+
+
+
+
+[Compatibility Table]: /docs/en/popup/faq_protocol_compatibility_table/
