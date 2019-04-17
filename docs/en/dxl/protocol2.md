@@ -17,6 +17,10 @@ sidebar:
 - Protocol 2.0 supported controllers: CM-150, CM-200, OpenCM9.04, OpenCR
 - Other: 2.0 protocol from R+ Smart app
 
+**TIP** : Users can refer to ROBOTIS Protocol [Compatibility Table]{: .popup} with reference.
+{: .notice--success}
+
+
 # [Instruction Packet](#instruction-packet)
 Instruction Packet is the command data sent to the Device.
 
@@ -607,3 +611,9 @@ The field that indicates the processing result of Instruction Packet
 |P8|P9|P10|P11|P12|P13|CRC1|CRC2|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |0x02|0x1F|0x00|0x01|0x00|0x50|0xB7|0x68|
+
+
+
+
+
+[Compatibility Table]: /docs/en/popup/faq_protocol_compatibility_table/
