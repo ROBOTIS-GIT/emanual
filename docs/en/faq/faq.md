@@ -97,18 +97,22 @@ RoboPlus is a software to create a customized programming for every ROBOTIS prod
 
 ## Software installation for OS X fails with a security warning.
 
-1. **Open System panel from Launchpad or Dock.**
-![](/assets/images/faq/OS_X_fail/osx_system_config.png)
+  1 . **Open System panel from Launchpad or Dock.**
 
-2. **Click on the Security & Privacy icon.**
-![](/assets/images/faq/OS_X_fail/osx_security.png)
+  ![](/assets/images/faq/OS_X_fail/osx_system_config.png)
 
-3. **Click the lock icon and enter the password.**
-![](/assets/images/faq/OS_X_fail/osx_security_mod.png)
-![](/assets/images/faq/OS_X_fail/osx_authority.png)
+  2 . **Click on the Security & Privacy icon.**
 
-4. Select **"Anywhere"** and try installation again.
-![](/assets/images/faq/OS_X_fail/osx_all_app_allowance.png)
+  ![](/assets/images/faq/OS_X_fail/osx_security.png)
+
+  3 . **Click the lock icon and enter the password.**
+
+  ![](/assets/images/faq/OS_X_fail/osx_security_mod.png)
+  ![](/assets/images/faq/OS_X_fail/osx_authority.png)
+
+  4 . Select **"Anywhere"** and try installation again.
+
+  ![](/assets/images/faq/OS_X_fail/osx_all_app_allowance.png)
 
 
 [Dynamixel SDK]: /docs/en/software/dynamixel/dynamixel_sdk/overview/

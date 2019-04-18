@@ -39,7 +39,7 @@ Please refer to [Compatibility Table]{: .popup} of ROBOTIS products.
 
 The Control Table contains every numbered firmware address that may be used in a command or status packet.
 
-**TIP** : The firmware addresses remain similar for DYNAMIXELs within the same series.
+**TIP** : The firmware addresses remain similar for DYNAMIXELs within the same series.    
 ex) Goal Position of [AX-12A](/docs/en/dxl/ax/ax-12a/#goal-position-30) and [AX-18A](/docs/en/dxl/ax/ax-18a/#goal-position-30) is firmware address 30.
 {: .notice--success}
 

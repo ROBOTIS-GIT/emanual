@@ -304,21 +304,21 @@ main:
         url: /edu/dream/dream2-5/
       - title: "School Set"
         url: /edu/dream/dream2-schoolset/
-    - titlekr: "스마트 I"
+    - titlekr: "*스마트 I"
       children:
-      - titlekr: "1단계 교육키트"
+      - titlekr: "*1단계 교육키트"
         url: /edu/smart/smart1-1/
-      - titlekr: "2단계 교육키트"
+      - titlekr: "*2단계 교육키트"
         url: /edu/smart/smart1-2/
-      - titlekr: "3단계 교육키트"
+      - titlekr: "*3단계 교육키트"
         url: /edu/smart/smart1-3/
-    - titlekr: "스마트 II"
+    - titlekr: "*스마트 II"
       children:
-      - titlekr: "1단계 교육키트"
+      - titlekr: "*1단계 교육키트"
         url: /edu/smart/smart2-1/
-      - titlekr: "2단계 교육키트"
+      - titlekr: "*2단계 교육키트"
         url: /edu/smart/smart2-2/
-      - titlekr: "3단계 교육키트"
+      - titlekr: "*3단계 교육키트"
         url: /edu/smart/smart2-3/
     - titlekr: "스마트 III"
       children:
