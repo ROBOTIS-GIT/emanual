@@ -40,7 +40,7 @@
           {% if nav.children != null %}
           <li class="mobile_depth_1">
             <input type="checkbox" name="mobile_nav_depth_1" id="{{ depth1_title }}">
-            <label for="{{ depth1_title }}">{% if depth1_title contains '*' %}{{ depth1_title | remove:'*' }} <i class="fa fa-lock" style="font-size:12px; color:red;"></i>{% else %}{{ depth1_title }}{% endif %}</label>
+            <label for="{{ depth1_title }}">{% if depth1_title contains '*' %}{{ depth1_title | remove:'*' }} <span class="fa-stack fa-2x"><i class="fa fa-usd fa-stack-1x" style="color:white"></i><i class="fa fa-ban fa-stack-2x" style="color:red"></i></span>{% else %}{{ depth1_title }}{% endif %}</label>
             <ul>
             {% for child in nav.children %}
               {% if page.lang=='kr' %}
@@ -68,7 +68,7 @@
                 {% if depth2_title != null %}
                   <li class="mobile_depth_2">
                     <input type="radio" name="sublevel" id="{{ depth1_title }}{{ depth2_title }}">
-                    <label for="{{ depth1_title }}{{ depth2_title }}">{% if depth2_title contains '*' %}{{ depth2_title | remove:'*' }} <i class="fa fa-lock" style="font-size:12px; color:red;"></i>{% else %}{{ depth2_title }}{% endif %}</label>
+                    <label for="{{ depth1_title }}{{ depth2_title }}">{% if depth2_title contains '*' %}{{ depth2_title | remove:'*' }} <span class="fa-stack fa-2x"><i class="fa fa-usd fa-stack-1x" style="color:white"></i><i class="fa fa-ban fa-stack-2x" style="color:red"></i></span>{% else %}{{ depth2_title }}{% endif %}</label>
                     <ul>
                     {% for grandchild in child.children %}
                       {% if page.lang=='kr' %}
@@ -93,7 +93,7 @@
                       {% endif %}
                       {% if depth3_title != null %}
                         <li class="mobile_depth_3">
-                          <a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ depth3_url }}" class="{{ active }}">{% if depth3_title contains '*' %}{{ depth3_title | remove:'*' }} <i class="fa fa-lock" style="font-size:12px; color:red;"></i>{% else %}{{ depth3_title }}{% endif %}</a>
+                          <a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ depth3_url }}" class="{{ active }}">{% if depth3_title contains '*' %}{{ depth3_title | remove:'*' }} <span class="fa-stack fa-2x"><i class="fa fa-usd fa-stack-1x" style="color:white"></i><i class="fa fa-ban fa-stack-2x" style="color:red"></i></span>{% else %}{{ depth3_title }}{% endif %}</a>
                         </li>
                       {% endif %}
                     {% endfor %}
@@ -187,7 +187,7 @@
                 {% if shoulderurl %}
                   {% if shoulderurl contains "://" %}<a href="{{ shoulderurl }}">{% else %}
                     <a href="{{ site.url }}{{ site.baseurl }}/docs/{{ page.lang }}{{ shoulderurl }}">{% endif %}{% else %}
-                <a>{% endif %}{% if shouldertitle contains '*' %}{{ shouldertitle | remove:'*' }} <i class="fa fa-lock" style="font-size:12px; color:red;"></i>{% else %}{{ shouldertitle }}{% endif %}</a>
+                <a>{% endif %}{% if shouldertitle contains '*' %}{{ shouldertitle | remove:'*' }} <span class="fa-stack fa-2x"><i class="fa fa-usd fa-stack-1x" style="color:white"></i><i class="fa fa-ban fa-stack-2x" style="color:red"></i></span>{% else %}{{ shouldertitle }}{% endif %}</a>
               {% endif %}
 
               {% if shoulder.children != null %}
@@ -217,7 +217,7 @@
                   {% if kneetitle %}
                     {% if kneeurl %}
                       {% if kneeurl contains "://" %}<a href="{{ kneeurl }}">{% else %}<a href="{{ site.url }}{{ site.baseurl }}/docs/{{ page.lang }}{{ kneeurl }}">{% endif %}{% else %}
-                        <a>{% endif %}{% if kneetitle contains '*' %}{{ kneetitle | remove:'*' }} <i class="fa fa-lock" style="font-size:12px; color:red;"></i>{% else %}{{ kneetitle }}{% endif %}</a>
+                        <a>{% endif %}{% if kneetitle contains '*' %}{{ kneetitle | remove:'*' }} <span class="fa-stack fa-2x"><i class="fa fa-usd fa-stack-1x" style="color:white"></i><i class="fa fa-ban fa-stack-2x" style="color:red"></i></span>{% else %}{{ kneetitle }}{% endif %}</a>
                     {% endif %}
                 {% endfor %}
               </div>

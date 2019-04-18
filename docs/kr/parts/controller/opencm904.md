@@ -106,7 +106,9 @@ sidebar:
 |8|1|Baud Rate|제어기 통신속도|R|1|
 |9|1|Return Delay Time|응답 지연 시간|RW|0|
 |10|1|Status Return Level|응답 레벨|RW|2|
+|11|1|Bootloader Version|부트로더 버전 정보|R|-|
 |12|1|DXL Baud Rate|다이나믹셀 통신속도|RW|3|
+|16|1|DYNAMIXEL Channel|다이나믹셀 포트 선택|RW|0|
 
 ## [RAM Area](#ram-area)
 

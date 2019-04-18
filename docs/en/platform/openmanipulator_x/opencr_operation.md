@@ -31,7 +31,18 @@ When the upload is completed, the following comments are displayed in the log wi
 
 ![](/assets/images/parts/controller/opencr10/downloader_01.png)
 
-**Tip**: If an error of `cmd_read_board_name fail: 0xF020` occurs constantly during upload, please refer to [OpenCR e-manual](http://emanual.robotis.com/docs/en/parts/controller/opencr10/#firmware-recovery-mode) to enter the firmware recovery mode and upload the source code again after entering mode.
+{% capture openmanipulator_configuration %}
+**WARNING** : Please refer to below default DYNAMIXEL configuration for OpenManipulator-X chain if you have a custom manipulator.
+- Joint 1 ID : 11
+- Joint 2 ID : 12
+- Joint 3 ID : 13
+- Joint 4 ID : 14
+- Gripper ID : 15
+- Baudrate : 1 Mbps
+{% endcapture %}
+<div class="notice--warning">{{ openmanipulator_configuration | markdownify }}</div>
+
+**Tip**: If an error of `cmd_read_board_name fail: 0xF020` occurs constantly during upload, please refer to [OpenCR e-Manual] to enter the firmware recovery mode and upload the source code again after entering mode.
 {: .notice--success}
 
 ## [GUI Program](#gui-program)
@@ -115,27 +126,15 @@ The user can make the demonstration using hand guiding function.
 
   <iframe width="560" height="315" src="https://www.youtube.com/embed/FGHBMJByJ7k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-  The settings for [ROBOTIS RC-100B][rc100] controller is included in the OpenCR firmware for OpenManipulator. This controller can be used with the Bluetooth module [BT410][bt410].    
+  The settings for [ROBOTIS RC-100B] controller is included in the OpenCR firmware for OpenManipulator. This controller can be used with the Bluetooth module [BT410].    
   ![](/assets/images/platform/openmanipulator_x/OpenManipulator_chain_processing_teleop.png)
 
 
 
 [OpenCR]: /docs/en/parts/controller/opencr10/
-[OpenCR Manual]: /docs/en/parts/controller/opencr10/
-[rc100]: /docs/en/parts/communication/rc-100/
-[bt410]: /docs/en/parts/communication/bt-410/
-
-[open_manipulator_msgs/GetJointPosition]: /docs/en/popup/open_manipulator_msgs_GetJointPosition/
-[open_manipulator_msgs/GetKinematicsPose]: /docs/en/popup/open_manipulator_msgs_GetKinematicsPose/
-[open_manipulator_msgs/SetJointPosition]: /docs/en/popup/open_manipulator_msgs_SetJointPosition/
-[open_manipulator_msgs/SetKinematicsPose]: /docs/en/popup/open_manipulator_msgs_SetKinematicsPose/
-[open_manipulator_msgs/SetActuatorState]: /docs/en/popup/open_manipulator_msgs_SetActuatorState/
-[open_manipulator_msgs/SetDrawingTrajectory]: /docs/en/popup/open_manipulator_msgs_SetDrawingTrajectory/
-
-[sensor_msgs/JointState]: /docs/en/popup/sensor_msgs_JointState_msg/
-[open_manipulator_msgs/KinematicsPose]: /docs/en/popup/open_manipulator_msgs_KinematicsPose/
-[open_manipulator_msgs/OpenManipulatorState]: /docs/en/popup/open_manipulator_msgs_OpenManipulatorState/
-[std_msgs::String]: /docs/en/popup/std_msgs_string/
+[OpenCR e-Manual]: /docs/en/parts/controller/opencr10/#firmware-recovery-mode
+[ROBOTIS RC-100B]: /docs/en/parts/communication/rc-100/
+[BT410]: /docs/en/parts/communication/bt-410/
 
 [task space]: /docs/en/popup/open_manipulator_coordinates/
 [joint space]: /docs/en/popup/open_manipulator_coordinates/
