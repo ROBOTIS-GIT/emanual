@@ -391,13 +391,13 @@ $ open_manipulator_ar_markers ar_pose.launch camera_model:=raspicam user_marker_
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-And Open the other terminal window and enter the following command in the terminal. 
+And Open the other terminal window and enter the following command in the terminal.
 ``` bash
-$ roslaunch open_manipulator_pick_and_place open_manipulator_pick_and_place.launch 
+$ roslaunch open_manipulator_pick_and_place open_manipulator_pick_and_place.launch
 ```
 So, you can see the following message in the terminal window. You can check the robot status.
 
-``` 
+```
 -----------------------------
 Pick and Place demonstration!
 -----------------------------
@@ -475,11 +475,7 @@ After run roscore, Run **the controller of slave OpenManipulator**. Open the oth
 $ roslaunch open_manipulator_controller open_manipulator_controller.launch dynamixel_usb_port:=/dev/ttyUSB0
 ```
 
-<<<<<<< HEAD
 If the master OpenManipulator-X controller has been launched successfully, the terminal will show the following message.
-=======
-If the slave OpenManipulator controller has been launched successfully, the terminal will show the following message.
->>>>>>> master
 
 ```
 SUMMARY
@@ -516,11 +512,7 @@ And Open the other terminal window and enter the following command in the termin
 $ roslaunch open_manipulator_master_slave open_manipulator_master.launch usb_port:=/dev/ttyUSB1
 ```
 
-<<<<<<< HEAD
 If the slave OpenManipulator-X controller has been launched successfully, the terminal will show the following message.
-=======
-If the master OpenManipulator controller has been launched successfully, the terminal will show the following message.
->>>>>>> master
 
 ```
 SUMMARY
@@ -552,7 +544,7 @@ Gripper Dynamixel ID : 5, Model Name :XM430-W350
 
 So, you can see the following message in the terminal window. You can check the current control mode and robot status(joint angle, tool position).
 
-``` 
+```
 -----------------------------
 Control Your OpenManipulator!
 -----------------------------

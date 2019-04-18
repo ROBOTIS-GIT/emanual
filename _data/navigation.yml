@@ -19688,8 +19688,6 @@ opencr10:
         url: /parts/controller/opencr10/#porting-to-arduino-idelinux
       - title: "Remove Modemmanager"
         url: /parts/controller/opencr10/#remove-modemmanager
-      - title: "Writing Bootloader"
-        url: /parts/controller/opencr10/#writing-bootloaderlinux
     - title: "Install on Mac"
       url: /parts/controller/opencr10/#install-on-mac
       children:
@@ -19699,8 +19697,6 @@ opencr10:
         url: /parts/controller/opencr10/#run-arduino-idemac
       - title: "Porting to Arduino IDE"
         url: /parts/controller/opencr10/#porting-to-arduino-idemac
-      - title: "Writing Bootloader"
-        url: /parts/controller/opencr10/#writing-bootloadermac
     - title: "Install on Windows"
       url: /parts/controller/opencr10/#install-on-windows
       children:
