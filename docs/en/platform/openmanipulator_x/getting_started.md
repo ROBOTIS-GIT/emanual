@@ -28,7 +28,7 @@ When you have enough understanding about OpenManipulator-X from above step, it i
 
 ### [Hardware Setup](#hardware-setup)
 
-1. `Check the Part List` : The OpenManipulator-X only contains the parts required to configure the OpenManipulator body. For controlling and operating the OpenManipulator-X, the optional parts is necessary. 
+1. `Check the Part List` : The OpenManipulator-X only contains the parts required to configure the OpenManipulator-X body. For controlling and operating the OpenManipulator-X, the optional parts is necessary. 
 Please check [the part list page](/docs/en/platform/openmanipulator_x/assembly/#part-list), prepare the every requaired parts.
 The [SMPS 12V5A](http://en.robotis.com/shop_en/item.php?it_id=903-0124-200) is necessary to supply the 12V power to the dynamixels of OpenManipulator-X. The [Base Plate-02](http://en.robotis.com/shop_en/item.php?it_id=905-0026-000)
 is used to secure the OpenManipulator-X to the workspace. 
@@ -127,7 +127,7 @@ We are proposing a way to replace and manipulate tool(gripper) of manipulator to
 <img src="/assets/images/platform/openmanipulator_x/OpenManipulator_tool_modi.png" width="600">
 
 ### [OpenManipulator Friends](#openmanipulator-friends)
-Modify the hardware(DOF, structure) and software(kinematics, trajectory) of OpenManipulator-X and manipulate your own OpenManipulator. We provide a variety of the OpenManipulator friends as examples of hardware transformations. Try to control the manipulator with different structure and enjoy it. And try out the kinematics solving algorithm for the different structure.
+Modify the hardware(DOF, structure) and software(kinematics, trajectory) of OpenManipulator-X and manipulate your own OpenManipulator. We provide a variety of the OpenManipulator-X friends as examples of hardware transformations. Try to control the manipulator with different structure and enjoy it. And try out the kinematics solving algorithm for the different structure.
 
 - [OpenManipulator Friends](/docs/en/platform/openmanipulator_x/friends/#friends)
 

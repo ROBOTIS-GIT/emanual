@@ -24,7 +24,7 @@ sidebar:
 
 ## [Launch gazebo](#launch-gazebo)
 
-Load OpenManipulator on Gazebo simulator and click on Play `▶` button.
+Load OpenManipulator-X on Gazebo simulator and click on Play `▶` button.
 
   ``` bash
   $ roslaunch open_manipulator_gazebo open_manipulator_gazebo.launch
@@ -68,12 +68,12 @@ Launch the open_manipulator_controller for gazebo simulation.
   ```
 {% capture notice_01 %}
 **NOTE**:
-- To control the OpenManipulator in the Gazebo environment using the OpenManipulator Controller, the controller must set the **use_platform** parameter to **false** because it needs to send messages to gazebo instead of Platform.
-- If you want to manipulate the OpenManipulator using Moveit within the Gazebo simulator, you should also convert the **use_moveit** to **ture** in open_manipulator_controller launch file.
+- To control the OpenManipulator-X in the Gazebo environment using the OpenManipulator-X Controller, the controller must set the **use_platform** parameter to **false** because it needs to send messages to gazebo instead of Platform.
+- If you want to manipulate the OpenManipulator-X using Moveit within the Gazebo simulator, you should also convert the **use_moveit** to **ture** in open_manipulator_controller launch file.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-If the OpenManipulator controller for gazebo simulation Launched successfully, the terminal will represent below messages.
+If the OpenManipulator-X controller for gazebo simulation Launched successfully, the terminal will represent below messages.
 
 ```
 SUMMARY
@@ -97,7 +97,7 @@ ROS_MASTER_URI=http://localhost:11311
 process[open_manipulator-1]: started with pid [9820]
 [ INFO] [1544506914.862653563]: Ready to simulate /open_manipulator on Gazebo
 ```
-**NOTE** : In OpenManipulator controller for gazebo simulation, Joint and Gripper Dynamixel are not enable, following messages will not display :  
+**NOTE** : In OpenManipulator-X controller for gazebo simulation, Joint and Gripper Dynamixel are not enable, following messages will not display :  
 Joint Dynamixel ID : 11, Model Name : XM430-W350  
 Joint Dynamixel ID : 12, Model Name : XM430-W350  
 Joint Dynamixel ID : 13, Model Name : XM430-W350  

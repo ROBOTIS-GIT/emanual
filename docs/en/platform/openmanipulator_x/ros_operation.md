@@ -35,13 +35,13 @@ sidebar:
   To controll OpenManipulator, first click the `Timer Start` button.  
   ![](/assets/images/platform/openmanipulator_x/OpenManipulator_GUI.png)  
 
-  To check the status of the OpenManipulator (joint states, kinematics pose).  
+  To check the status of the OpenManipulator-X (joint states, kinematics pose).  
   ![](/assets/images/platform/openmanipulator_x/OpenManipulator_GUI2.png)  
 
-  To manipulate the OpenManipulator in the [joint space]{: .popup}. Enter the joint angles and total time of the trajectory. Then click the `send` button.  
+  To manipulate the OpenManipulator-X in the [joint space]{: .popup}. Enter the joint angles and total time of the trajectory. Then click the `send` button.  
   ![](/assets/images/platform/openmanipulator_x/OpenManipulator_GUI3.png)  
 
-  To manipulate the OpenManipulator in the [task space]{: .popup}. Enter the kinematics pose of the OpenManipulator end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory. Then click the `send` button.  
+  To manipulate the OpenManipulator-X in the [task space]{: .popup}. Enter the kinematics pose of the OpenManipulator-X end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory. Then click the `send` button.  
   ![](/assets/images/platform/openmanipulator_x/OpenManipulator_GUI4.png)  
 
   To create a drawing trajectory with the OpenManipulator. First, choose the drawing trajectory type(line, circle, rhombus, heart). And enter the parameters according to the drawing trajectory type and the total time of the drawing trajectory. Then click the `send` button.  
@@ -220,7 +220,7 @@ The user can use this service to receives a kinematics pose which is calculated 
 The user can use this service to create a trajectory in the [joint space]{: .popup} by move_group. The user inputs the angle of the target joint and the total time of the trajectory.
 
 - `/open_manipulator/moveit/set_kinematics_pose` ([open_manipulator_msgs/SetKinematicsPose]{: .popup})  
-The user can use this service to create a trajectory in the [task space]{: .popup} by move_group. The user inputs the kinematics pose(orientation only) of the OpenManipulator end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
+The user can use this service to create a trajectory in the [task space]{: .popup} by move_group. The user inputs the kinematics pose(orientation only) of the OpenManipulator-X end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
 
 **TIP**: If you would like to use inverse kinematics with `position_only`, check `open_manipulator_moveit` -> `config` -> `kinematics.yaml` and set `position_only_ik` parameter to **True**.
 {: .notice--success}

@@ -182,12 +182,12 @@ CAD Files ([Onshape](http://www.robotis.com/service/download.php?no=692), [Thing
 ![](/assets/images/platform/openmanipulator_x/OpenManipulator_Link_OnShape.png)
 
 #### Assembly
-Assemble the OpenManipulator Link by referring to the manual uploaded on [Instructables page](https://www.instructables.com/id/OpenManipulator-Link/).
+Assemble the OpenManipulator-X Link by referring to the manual uploaded on [Instructables page](https://www.instructables.com/id/OpenManipulator-Link/).
 
 
 ### Software Setup
 
-**NOTE**: This example controller source code for OpenManipulator Link does not use ROS.
+**NOTE**: This example controller source code for OpenManipulator-X Link does not use ROS.
 {: .notice--info}
 
 #### OpenCR
@@ -202,7 +202,7 @@ Upload the example source to OpenCR.
 #### Processing
 Set the Processing IDE referring to [Processing Setup](/docs/en/platform/openmanipulator_x/opencr-setup/#opencr-setup).
 
-Download processing source code for OpenManipulator Link.
+Download processing source code for OpenManipulator-X Link.
 
 ``` bash
 $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_processing.git
