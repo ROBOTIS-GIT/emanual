@@ -22,6 +22,8 @@ sidebar:
 
 # [CM 510/530 Fuse Replacement](/docs/en/faq/cm_510_530_fuse/)
 
+
+
 # How the X-series can communicate with dynamixel with protocol 1.0?
 
 Users can select Dynamixel [Protocol 1.0] and [Protocol 2.0] when using X-series.
@@ -84,11 +86,26 @@ RoboPlus is a software to create a customized programming for every ROBOTIS prod
 
   [N:N Communication](http://emanual.robotis.com/docs/en/parts/communication/zig-110/#1n-communication)
 
+# Are ROBOTIS products RoHS compliant?
+Please refer to [the page.](http://en.robotis.com/model/board.php?bo_table=robotis_faq_en&wr_id=46&sca=GENERAL)
+# Where can I download the drawings for ROBOTIS products?
+Please refer to [the page.](http://en.robotis.com/model/board.php?bo_table=robotis_faq_en&wr_id=35&sca=GENERAL)
+
+# What is stall torque?
+Please refer to [the page.](http://en.robotis.com/model/board.php?bo_table=robotis_faq_en&wr_id=34&sca=GENERAL)
+
+# What is the difference between normal horns and thrust horns?
+ Please refer to [the page.](http://en.robotis.com/model/board.php?bo_table=robotis_faq_en&wr_id=32&sca=GENERAL)
+
+# How much is N.m when converted to kgf.cm?
+ Please refer to [the page.](http://en.robotis.com/model/board.php?bo_table=robotis_faq_en&wr_id=33&sca=GENERAL)
+
 # I want to check the controller and dynamixel.
 
   [Selfcheck](http://en.robotis.com/model/selfcheck.php) is offered
 
 # Software installation for OS X fails with a security warning.
+
 
 ## Minimum System Requirements
 
