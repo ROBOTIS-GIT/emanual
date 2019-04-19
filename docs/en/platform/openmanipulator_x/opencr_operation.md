@@ -15,11 +15,11 @@ sidebar:
 
 # [[OpenCR] Operation](#opencr-operation)
 
-## [Upload Controller](#upload-controller)
+## [Upload Controller Program](#upload-controller-program)
 
 Find example source codes.
 
-Go to `Examples` → `OpenManipulator` → `example` → `Chain` → `open_manipulator_chain` on Arduino IDE for OpenCR.
+Go to `Examples` > `OpenManipulator` > `example` > `Chain` > `open_manipulator_chain` on Arduino IDE for OpenCR.
 
 ![](/assets/images/platform/openmanipulator_x/OpenManipulator_chain_arduino.png)
 
@@ -33,49 +33,68 @@ When the upload is completed, the following comments are displayed in the log wi
 
 {% capture openmanipulator_configuration %}
 **WARNING** : Please refer to below default DYNAMIXEL configuration for OpenManipulator-X chain if you have a custom manipulator.
-- Joint 1 ID : 11
-- Joint 2 ID : 12
-- Joint 3 ID : 13
-- Joint 4 ID : 14
-- Gripper ID : 15
-- Baudrate : 1 Mbps
+
+|  Joint  | ID | Baudrate |
+|:-------:|:--:|:--------:|
+|    1    | 11 |  1 Mbps  |
+|    2    | 12 |  1 Mbps  |
+|    3    | 13 |  1 Mbps  |
+|    4    | 14 |  1 Mbps  |
+| Gripper | 15 |  1 Mbps  |
+
 {% endcapture %}
 <div class="notice--warning">{{ openmanipulator_configuration | markdownify }}</div>
 
-**Tip**: If an error of `cmd_read_board_name fail: 0xF020` occurs constantly during upload, please refer to [OpenCR e-Manual] to enter the firmware recovery mode and upload the source code again after entering mode.
+**TIP** : If an error of `cmd_read_board_name fail: 0xF020` occurs constantly during upload, please refer to [OpenCR e-Manual] to enter the firmware recovery mode and upload the source code again after entering mode.
 {: .notice--success}
 
-## [GUI Program](#gui-program)
+## [Setup Processing(GUI)](#setup-processinggui)
 
-### [Processing Setup](#processing-setup)
+1. Download Processing from blow link and install.
 
-Download Processing and load OpenCR board on it
+    - **Download Processing** : [https://processing.org/download/](https://processing.org/download/)
 
-- [Download Processing](https://processing.org/download/)
+2. Launch Processing and go to `Tools` > `Add Tool..`.
 
-Open Processing and Go to `Tools` → `Add Tool..`. Search `ControlP5` and install it.
+    ![](/assets/images/platform/openmanipulator_x/processing_add_tools.png)
 
-<img src="/assets/images/platform/openmanipulator_x/processing_add_tools.png" width="400">
-<img src="/assets/images/platform/openmanipulator_x/OpenManipulator_chain_processing_1.png" width="400">
+3. Search for `ControlP5` and install it.
 
-Download processing source code for OpenManipulator.
+    ![](/assets/images/platform/openmanipulator_x/OpenManipulator_chain_processing_1.png)
 
-``` bash
-$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_processing.git
-```
+4. Download processing source code for OpenManipulator.
 
-Open downloaded processing source code file (**Folder where you downloaded the source code** → `open_manipulator_processing` → `Chain` → `Chain.pde`) on Processing IDE, and Run it.
+    ```bash
+    $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_processing.git
+    ```
 
-**NOTE**: Upload **OpenCR example source code** to OpenCR before run **processing source code**.
-{: .notice--info}
 
-<img src="/assets/images/platform/openmanipulator_x/processing_open1.png" width="400">
-<img src="/assets/images/platform/openmanipulator_x/processing_open2.png" width="450">
-<img src="/assets/images/platform/openmanipulator_x/processing_run.png" width="400">
+### [Launch Processing(GUI)](#launch-processinggui)
 
-When the processing source code is successfully executed, the following graphical GUI is displayed.
+**WARNING** : OpenCR1.0 must be connected to OpenMANIPULATOR-X before launching Processing.  
+Press `Reset Button` of OpenCR1.0 to enable torque for OpenMANIPULATOR-X.
+{: .notice--warning}
 
-![](/assets/images/platform/openmanipulator_x/OpenManipulator_chain_processing_2.png)
+1. Connect USB cable and power supply to OpenCR1.0.
+
+2. Turn on the OpenCR1.0 switch.
+
+3. Press `Reset Button` of OpenCR1.0 and check DYNAMIXELs of OpenMANIPULATOR-X are torque enabled.
+
+4. Search downloaded processing file from **Folder where you downloaded the source code** > `open_manipulator_processing` > `Chain` > `Chain.pde` and open it on Processing IDE.
+
+    **NOTE**: Upload **OpenCR OpenManipulator example** to OpenCR before running **Processing example**.
+    {: .notice--info}
+
+    ![](/assets/images/platform/openmanipulator_x/processing_open1.png)
+
+    ![](/assets/images/platform/openmanipulator_x/processing_open2.png)
+
+    ![](/assets/images/platform/openmanipulator_x/processing_run.png)
+
+5. Run the processing source code, and the following graphical GUI will be displayed.
+
+    ![](/assets/images/platform/openmanipulator_x/OpenManipulator_chain_processing_2.png)
 
 {% capture notice_01 %}
 **Tip**: If the processing console displays an error message and the GUI does not run normally, check the following:

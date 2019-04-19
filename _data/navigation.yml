@@ -15474,23 +15474,16 @@ openmanipulator_x:
         url: /platform/openmanipulator_x/opencr_setup/#connection
       - title: "Arduino IDE Setup"
         url: /platform/openmanipulator_x/opencr_setup/#arduino-ide-setup
-        children:
-          - title: "Install on Linux"
-            url: /platform/openmanipulator_x/opencr_setup/#install-on-linux
-          - title: "Install on Mac"
-            url: /platform/openmanipulator_x/opencr_setup/#install-on-mac
-          - title: "Install on Windows"
-            url: /platform/openmanipulator_x/opencr_setup/#install-on-windows
   - title: "[OpenCR] Operation"
     url: /platform/openmanipulator_x/opencr_operation/#opencr-operation
     children:
-      - title: "Upload Controller"
-        url: /platform/openmanipulator_x/opencr_operation/#upload-controller
-      - title: "GUI Program"
-        url: /platform/openmanipulator_x/opencr_operation/#gui-program
+      - title: "Upload Controller Program"
+        url: /platform/openmanipulator_x/opencr_operation/#upload-controller-program
+      - title: "Setup Processing(GUI)"
+        url: /platform/openmanipulator_x/opencr_operation/#setup-processinggui
+      - title: "Launch Processing(GUI)"
+        url: /platform/openmanipulator_x/opencr_operation/#launch-processinggui
         children:
-          - title: "Processing Setup"
-            url: /platform/openmanipulator_x/opencr_operation/#processing-setup
           - title: "Control Interface"
             url: /platform/openmanipulator_x/opencr_operation/#control-interface
           - title: "Hand guiding"
