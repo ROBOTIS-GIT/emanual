@@ -17,9 +17,11 @@ sidebar:
 
 # [Introduction](#introduction)
 
-- It is the motor used in OLLO; it is connected to CM-100, and the direction of spin and the speed of spin can be adjusted through port control.
+- It is connected to ROBOTIS's controllers, and the direction of spin and the speed of spin can be adjusted through port control.
 - If it is set to "Spin Mode," it can be operated as the geared motor; if it is set to "Joint Mode," the motor can be moved to the designated location by setting the speed of spin(Power)and the value of location.
 - It is mainly used to maintain certain angles pursuant to some conditions such as moving joints, moving steering devices, etc.
+
+Please refer to the Compatibility Guide below.
 
 `Compatibility Guide` [Controller Compatibility]
 
