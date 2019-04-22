@@ -15486,7 +15486,7 @@ openmanipulator_x:
         children:
           - title: "Control Interface"
             url: /platform/openmanipulator_x/opencr_operation/#control-interface
-          - title: "Hand guiding"
+          - title: "Hand Guiding"
             url: /platform/openmanipulator_x/opencr_operation/#hand-guiding
       - title: "Teleoperation RC100"
         url: /platform/openmanipulator_x/opencr_operation/#teleoperation-rc100
