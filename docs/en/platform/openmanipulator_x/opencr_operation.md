@@ -68,8 +68,7 @@ When the upload is completed, the following comments are displayed in the log wi
     $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_processing.git
     ```
 
-
-### [Launch Processing(GUI)](#launch-processinggui)
+## [Launch Processing(GUI)](#launch-processinggui)
 
 **WARNING** : OpenCR1.0 must be connected to OpenMANIPULATOR-X before launching Processing.
 Press `Reset Button` of OpenCR1.0 to enable torque for OpenMANIPULATOR-X.
@@ -112,7 +111,9 @@ If you have checked the above and it does not work normally, I recommend running
 {: .notice--info}
 
 The user can use processing program to manipulate the OpenManipulator.
- To manipulate the OpenManipulator, click the toggle button to `CONTROLLER ON`.   
+
+  To manipulate the OpenManipulator, click the toggle button to `CONTROLLER ON`.
+
   ![](/assets/images/platform/openmanipulator_x/OpenManipulator_chain_processing_3.png)
 
 
@@ -125,7 +126,7 @@ The user can use processing program to manipulate the OpenManipulator.
 
   ![](/assets/images/platform/openmanipulator_x/OpenManipulator_chain_processing_5.png)
 
-### [Hand guiding](#hand-guiding)
+### [Hand Guiding](#hand-guiding)
 
 The user can make the demonstration using hand guiding function.
 
@@ -140,7 +141,8 @@ The user can make the demonstration using hand guiding function.
   7. Click the `MOTION START` button to start the saved poses.
 
   Click the toggle button to `MOTION REPEAT ON` if you want to repeat the demonstration.
-  The total time of the trajectory between saved poses is the same as 2 seconds.         
+  The total time of the trajectory between saved poses is the same as 2 seconds.
+
   ![](/assets/images/platform/openmanipulator_x/OpenManipulator_chain_processing_6.png)
 
 ## [Teleoperation RC100](#teleoperation-rc100)
