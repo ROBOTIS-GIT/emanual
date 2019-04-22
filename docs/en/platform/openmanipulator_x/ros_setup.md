@@ -18,7 +18,7 @@ sidebar:
 **NOTE** : The following instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 {: .notice--info}
 
-**WARNING** : If you would like to control OpenManipulator on OpenCR (Embedded board) instead of using ROS, please set it up as described in [[OpenCR] Setup](/docs/en/platform/openmanipulator_x/opencr_setup/#opencr-setup).
+**WARNING** : If you would like to control OpenManipulator-X on OpenCR (Embedded board) instead of using ROS, please set it up as described in [[OpenCR] Setup](/docs/en/platform/openmanipulator_x/opencr_setup/#opencr-setup).
 {: .notice--warning}
 
 
@@ -73,7 +73,7 @@ $ git clone https://github.com/ROBOTIS-GIT/robotis_manipulator.git
 $ cd ~/catkin_ws && catkin_make
 ```
 
-If the catkin_make command has been completed without any errors, all the preparations for using OpenManipulator are done.
+If the catkin_make command has been completed without any errors, all the preparations for using OpenManipulator-X are done.
 
 ## [Communication Converter](#communication-converter)
 
@@ -108,7 +108,7 @@ $ rosrun open_manipulator_controller create_udev_rules
 
 ### [OpenCR](#opencr)
 This section explains how to set up OpenCR as a communication board between **ROS Packages** of PC and DYNAMIXEL of OpenManipulator-X.  
-If you want to operate OpenManipulator on embedded system (OpenCR) without ROS, please refer [[OpenCR] Setup](/docs/en/platform/openmanipulator_x/opencr-setup/#opencr-setup).
+If you want to operate OpenManipulator-X on embedded system (OpenCR) without ROS, please refer [[OpenCR] Setup](/docs/en/platform/openmanipulator_x/opencr-setup/#opencr-setup).
 
 #### Connection
 
