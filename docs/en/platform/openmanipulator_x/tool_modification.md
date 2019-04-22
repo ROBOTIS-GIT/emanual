@@ -24,7 +24,7 @@ sidebar:
 ### Hardware Setup
 
 
-Remove normal gripper of OpenManipulator and install a vacuum gripper. You can download the STL file of the vacuum gripper from the link in the table below, and print it to the 3D printer.
+Remove normal gripper of OpenManipulator-X and install a vacuum gripper. You can download the STL file of the vacuum gripper from the link in the table below, and print it to the 3D printer.
 
 <img src="/assets/images/platform/openmanipulator_x/OpenManipulator_vacuum_cad.png" width="1000">
 
@@ -66,7 +66,7 @@ Go to `Examples` → `OpenManipulator` → `example` → `Chain` → `open_manip
 
 ### Hardware Setup
 
-Remove normal gripper of OpenManipulator and install a pen holder. You can download the STL file of the pen holder from the link in the table below, and print it to the 3D printer.
+Remove normal gripper of OpenManipulator-X and install a pen holder. You can download the STL file of the pen holder from the link in the table below, and print it to the 3D printer.
 
 <img src="/assets/images/platform/openmanipulator_x/OpenManipulator_pen_cad.png" width="1000">
 

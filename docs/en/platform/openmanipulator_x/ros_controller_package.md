@@ -15,7 +15,7 @@ sidebar:
 
 # [[ROS] Controller Package](#ros-controller-package)
 
-The OpenManipulator controller provides basic manipulation of OpenManipulator. You can control the dynamixel of OpenManipulator and check states of OpenManipulator through [messages](/docs/en/platform/openmanipulator_x/#message-list) of the controller.
+The OpenManipulator-X controller provides basic manipulation of OpenManipulator. You can control the dynamixel of OpenManipulator-X and check states of OpenManipulator-X through [messages](/docs/en/platform/openmanipulator_x/#message-list) of the controller.
 
 **NOTE**: This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 {: .notice--info}
@@ -69,12 +69,12 @@ Before you launch controller, let's check `open_manipulator_controller` launch f
 
 `use_robot_name` is a parameter to set manipulator name(namespace of ROS messages).  
 `dynamixel_usb_port` is a parameter to set use port to connected with Dynamixel of OpenManipulator. If you use U2D2, it should be set **/dev/ttyUSB@**. If you use OpenCR, it should be set **/dev/ttyACM@** (@ indicates the port number connected to the Dynamixel).  
-`dynamixel_baud_rate` is a parameter to set baud rate of dynamixel. default baud rate of dynamixel used in OpenManipulator is 1000000.  
+`dynamixel_baud_rate` is a parameter to set baud rate of dynamixel. default baud rate of dynamixel used in OpenManipulator-X is 1000000.  
 `control_period` is a parameter to set communication period between dynamixel and PC (control loop time).  
-`use_platform` is a parameter that sets whether to use the actual OpenManipulator or OpenManipulator simulation. please refer [ROS Simulation](/docs/en/platform/openmanipulator_x/ros_simulation/#ros-simulation) chapter.  
+`use_platform` is a parameter that sets whether to use the actual OpenManipulator-X or OpenManipulator-X simulation. please refer [ROS Simulation](/docs/en/platform/openmanipulator_x/ros_simulation/#ros-simulation) chapter.  
 `use_moveit`, `planning_group_name` and `moveit_sample_duration` are parameters supposed to set loading [move_group](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/move_group_interface/move_group_interface_tutorial.html) package. please refer [MoveIt!](/docs/en/platform/openmanipulator_x/ros-operation/#moveit) chapter.
 
-After set the parameters, launch the OpenManipulator controller to start [[ROS] Operation](/docs/en/platform/openmanipulator_x/ros_operation/#ros-operation).
+After set the parameters, launch the OpenManipulator-X controller to start [[ROS] Operation](/docs/en/platform/openmanipulator_x/ros_operation/#ros-operation).
 
 Please, open the terminal window, run roscore as entering following command.
 
@@ -88,12 +88,12 @@ After run roscore, open the other terminal window and enter the following comman
 $ roslaunch open_manipulator_controller open_manipulator_controller.launch
 ```
 
-**WARNING**: It is recommended to place OpenManipulator at the following pose and start the controller so that each component of OpenManipulator does not conflict.  
+**WARNING**: It is recommended to place OpenManipulator-X at the following pose and start the controller so that each component of OpenManipulator-X does not conflict.  
 <img src="/assets/images/platform/openmanipulator_x/open_manipulator_start_pose.png" width="250">
 <!-- ![](/assets/images/platform/openmanipulator_x/open_manipulator_start_pose.png) -->
 {: .notice--warning}
 
-If the OpenManipulator controller has been launched successfully, the terminal will show the following message.
+If the OpenManipulator-X controller has been launched successfully, the terminal will show the following message.
 
 ```
 SUMMARY
@@ -147,7 +147,7 @@ Even if you can't find any Dynamixels, please check firmware to use ROBOTIS soft
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-Publish a topic message to check the OpenManipulator setting.
+Publish a topic message to check the OpenManipulator-X setting.
 
 ``` bash
 $ rostopic pub /open_manipulator/option std_msgs/String "print_open_manipulator_setting"
@@ -440,7 +440,7 @@ This parameter is descripted on OpenManipulator.cpp in open_manipulator_libs pac
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-Load OpenManipulator on RViz.
+Load OpenManipulator-X on RViz.
 
 ``` bash
 $ roslaunch open_manipulator_description open_manipulator_rviz.launch
@@ -449,7 +449,7 @@ $ roslaunch open_manipulator_description open_manipulator_rviz.launch
 {% capture notice_01 %}
 **NOTE**:
 - If you launched the [OpenManipulator controller](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) before launching the open_manipulator_controller file, the robot model on RViz would be synchronized with the actual robot.
-- If the user would like to check only model of OpenManipulator without control the actual OpenManipulator, the user can launch the RViz without the OpenManipulator controller.
+- If the user would like to check only model of OpenManipulator-X without control the actual OpenManipulator, the user can launch the RViz without the OpenManipulator-X controller.
 The user can change each joint by GUI, if the user launch only RViz by executing the following command :
 `$ roslaunch open_manipulator_description open_manipulator_rviz.launch use_gui:=true`
 
@@ -474,7 +474,7 @@ OpenManipulator Controller provides **topic** and **service** messages to contro
 
 #### [Topic Monitor](#topic-monitor)
 
-In order to check the topics of OpenManipulator controller, you can use [rqt][rqt] provided by ROS. Rqt is a Qt-based framework for GUI development for ROS. Rqt allows users to easily see topic status by displaying all topics on a topic list. You can see topic name, type, bandwidth, Hz and value on rqt.
+In order to check the topics of OpenManipulator-X controller, you can use [rqt][rqt] provided by ROS. Rqt is a Qt-based framework for GUI development for ROS. Rqt allows users to easily see topic status by displaying all topics on a topic list. You can see topic name, type, bandwidth, Hz and value on rqt.
 
 Run rqt.
 ``` bash
@@ -516,7 +516,7 @@ A list of topics that the open_manipulator_controller publishes.
 
  <!-- <img src="/assets/images/platform/openmanipulator_x/rqt_kinematic_pose.png" width="1000"> -->
 
-`/open_manipulator/states`([open_manipulator_msgs/OpenManipulatorState]{: .popup}) is a message indicating the status of OpenManipulator. **"open_manipulator_actuator_state"** indicates whether actuators (Dynamixels) are enabled ("ACTUATOR_ENABLE") or disabled ("ACTUATOR_DISABLE"). **"open_manipulator_moving_state"** indicates whether OpenManipulator is moving along the trajectory ("IS_MOVING") or stopped ("STOPPED").
+`/open_manipulator/states`([open_manipulator_msgs/OpenManipulatorState]{: .popup}) is a message indicating the status of OpenManipulator. **"open_manipulator_actuator_state"** indicates whether actuators (Dynamixels) are enabled ("ACTUATOR_ENABLE") or disabled ("ACTUATOR_DISABLE"). **"open_manipulator_moving_state"** indicates whether OpenManipulator-X is moving along the trajectory ("IS_MOVING") or stopped ("STOPPED").
 
  <!-- <img src="/assets/images/platform/openmanipulator_x/rqt_states.png" width="1000"> -->
 
@@ -536,7 +536,7 @@ A list of topics that the open_manipulator_controller subscribes.
 **NOTE**: These topics are messages for checking the status of the robot regardless of the robot's motion.
 {: .notice--info}
 
-`/open_manipulator/option`([std_msgs/String]{: .popup}) is used to set OpenManipulator options. **"print_open_manipulator_setting"** : request the open_manipulator_controller controller to display "Manipulator Description".
+`/open_manipulator/option`([std_msgs/String]{: .popup}) is used to set OpenManipulator-X options. **"print_open_manipulator_setting"** : request the open_manipulator_controller controller to display "Manipulator Description".
 
  <!-- <img src="/assets/images/platform/openmanipulator_x/rqt_option.png" width="1000"> -->
 
@@ -554,7 +554,7 @@ In addition, you can monitor topics through rqt whenever you have a topic added 
 
 #### [Service Server List](#service-server-list)
 
-**NOTE**: These services are messages to operate OpenManipulator or to change the status of the Dynamixels of OpenManipulator.
+**NOTE**: These services are messages to operate OpenManipulator-X or to change the status of the Dynamixels of OpenManipulator.
 {: .notice--info}
 
 
@@ -565,34 +565,34 @@ A list of service servers that open_manipulator_controller has.
 The user can use this service to create a trajectory in the [joint space]{: .popup}. The user inputs the angle of the target joint and the total time of the trajectory.
 
 - `/open_manipulator/goal_joint_space_path_to_kinematics_pose` ([open_manipulator_msgs/SetKinematicsPose]{: .popup})  
-The user can use this service to create a trajectory in the [joint space]{: .popup}. The user inputs the kinematics pose of the OpenManipulator end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
+The user can use this service to create a trajectory in the [joint space]{: .popup}. The user inputs the kinematics pose of the OpenManipulator-X end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
 
 - `/open_manipulator/goal_joint_space_path_to_kinematics_position` ([open_manipulator_msgs/SetKinematicsPose]{: .popup})  
-The user can use this service to create a trajectory in the [joint space]{: .popup}. The user inputs the kinematics pose(position only) of the OpenManipulator end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
+The user can use this service to create a trajectory in the [joint space]{: .popup}. The user inputs the kinematics pose(position only) of the OpenManipulator-X end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
 
 - `/open_manipulator/goal_joint_space_path_to_kinematics_orientation` ([open_manipulator_msgs/SetKinematicsPose]{: .popup})  
-The user can use this service to create a trajectory in the [joint space]{: .popup}. The user inputs the kinematics pose(orientation only) of the OpenManipulator end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
+The user can use this service to create a trajectory in the [joint space]{: .popup}. The user inputs the kinematics pose(orientation only) of the OpenManipulator-X end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
 
 - `/open_manipulator/goal_task_space_path` ([open_manipulator_msgs/SetKinematicsPose]{: .popup})  
-The user can use this service to create a trajectory in the [task space]{: .popup}. The user inputs the kinematics pose of the OpenManipulator end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
+The user can use this service to create a trajectory in the [task space]{: .popup}. The user inputs the kinematics pose of the OpenManipulator-X end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
 
 - `/open_manipulator/goal_task_space_path_position_only` ([open_manipulator_msgs/SetKinematicsPose]{: .popup})  
-The user can use this service to create a trajectory in the [task space]{: .popup}. The user inputs the kinematics pose(position only) of the OpenManipulator end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
+The user can use this service to create a trajectory in the [task space]{: .popup}. The user inputs the kinematics pose(position only) of the OpenManipulator-X end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
 
 - `/open_manipulator/goal_task_space_path_orientation_only` ([open_manipulator_msgs/SetKinematicsPose]{: .popup})  
-The user can use this service to create a trajectory in the [task space]{: .popup}. The user inputs the kinematics pose(orientation only) of the OpenManipulator end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
+The user can use this service to create a trajectory in the [task space]{: .popup}. The user inputs the kinematics pose(orientation only) of the OpenManipulator-X end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
 
 - `/open_manipulator/goal_joint_space_path_from_present` ([open_manipulator_msgs/SetJointPosition]{: .popup})  
 The user can use this service to create a trajectory from present joint angle in the [joint space]{: .popup}. The user inputs the angle of the target joint to be changed and the total time of the trajectory.
 
 - `/open_manipulator/goal_task_space_path_from_present` ([open_manipulator_msgs/SetKinematicsPose]{: .popup})  
-The user can use this service to create a trajectory from present kinematics pose in the task space. The user inputs the kinematics pose to be changed of the OpenManipulator end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
+The user can use this service to create a trajectory from present kinematics pose in the task space. The user inputs the kinematics pose to be changed of the OpenManipulator-X end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
 
 - `/open_manipulator/goal_task_space_path_from_present_position_only` ([open_manipulator_msgs/SetKinematicsPose]{: .popup})  
-The user can use this service to create a trajectory from present kinematics pose in the [task space]{: .popup}. The user inputs the kinematics pose(position only) of the OpenManipulator end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
+The user can use this service to create a trajectory from present kinematics pose in the [task space]{: .popup}. The user inputs the kinematics pose(position only) of the OpenManipulator-X end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
 
 - `/open_manipulator/goal_task_space_path_from_present_orientation_only` ([open_manipulator_msgs/SetKinematicsPose]{: .popup})  
-The user can use this service to create a trajectory from present kinematics pose in the [task space]{: .popup}. The user inputs the kinematics pose(orientation only) of the OpenManipulator end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
+The user can use this service to create a trajectory from present kinematics pose in the [task space]{: .popup}. The user inputs the kinematics pose(orientation only) of the OpenManipulator-X end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
 
 - `/open_manipulator/goal_tool_control` ([open_manipulator_msgs/SetJointPosition]{: .popup})  
 The user can use this service to move the tool of OpenManipulator.
@@ -615,7 +615,7 @@ This service is used when using moveit! The user can use this service to receive
 This service is used when using moveit! The user can use this service to create a trajectory in the [joint space]{: .popup} by move_group. The user inputs the angle of the target joint and the total time of the trajectory.
 
 - `/moveit/set_kinematics_pose` ([open_manipulator_msgs/SetKinematicsPose]{: .popup})  
-This service is used when using moveit! The user can use this service to create a trajectory in the [task space]{: .popup} by move_group. The user inputs the kinematics pose of the OpenManipulator end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
+This service is used when using moveit! The user can use this service to create a trajectory in the [task space]{: .popup} by move_group. The user inputs the kinematics pose of the OpenManipulator-X end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
 
 [open_manipulator_msgs/GetJointPosition]: /docs/en/popup/open_manipulator_msgs_GetJointPosition/
 [open_manipulator_msgs/GetKinematicsPose]: /docs/en/popup/open_manipulator_msgs_GetKinematicsPose/

@@ -391,13 +391,13 @@ $ open_manipulator_ar_markers ar_pose.launch camera_model:=raspicam user_marker_
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-And Open the other terminal window and enter the following command in the terminal. 
+And Open the other terminal window and enter the following command in the terminal.
 ``` bash
-$ roslaunch open_manipulator_pick_and_place open_manipulator_pick_and_place.launch 
+$ roslaunch open_manipulator_pick_and_place open_manipulator_pick_and_place.launch
 ```
 So, you can see the following message in the terminal window. You can check the robot status.
 
-``` 
+```
 -----------------------------
 Pick and Place demonstration!
 -----------------------------
@@ -419,7 +419,7 @@ There are three commands. Please enter that number in the terminal.
 
 ## [Master Slave](#master-slave)
 
-In this example, if the user is holding the master OpenManipulator, the slave OpenManipulator moves like master robot. Recording mode allows you to save the trajectory as you move the master OpenManipulator and play it back to the slave OpenManipulator.
+In this example, if the user is holding the master OpenManipulator, the slave OpenManipulator-X moves like master robot. Recording mode allows you to save the trajectory as you move the master OpenManipulator-X and play it back to the slave OpenManipulator.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kTS3Yx75mLo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -430,7 +430,7 @@ Since you need to control two OpenManipulators on one PC, use two U2D2s and two 
 
 ![](/assets/images/platform/openmanipulator_x/OpenManipulator_master_slave.png)
 #### Master OpenManipulator
-Master OpenManipulator is a robot that is controlled by the user. This is easy to move because no torque is applied to dynamixel. Dynamixel of master OpenManipulator sets the ID as below and the baudrate as 1000000bps.
+Master OpenManipulator-X is a robot that is controlled by the user. This is easy to move because no torque is applied to dynamixel. Dynamixel of master OpenManipulator-X sets the ID as below and the baudrate as 1000000bps.
 
 | Name    | Dynamixel ID |
 |:-------:|:------------:|
@@ -441,7 +441,7 @@ Master OpenManipulator is a robot that is controlled by the user. This is easy t
 | Gripper | 5            |
 
 #### Slave OpenManipulator
-Slave OpenManipulator moves synchronously with Master OpenManipulator. Dynamixel of slave OpenManipulator sets the ID as below and the baudrate as 1000000bps. This is the same as the default OpenManipulator setting.
+Slave OpenManipulator-X moves synchronously with Master OpenManipulator. Dynamixel of slave OpenManipulator-X sets the ID as below and the baudrate as 1000000bps. This is the same as the default OpenManipulator-X setting.
 
 | Name    | Dynamixel ID |
 |:-------:|:------------:|
@@ -475,7 +475,7 @@ After run roscore, Run **the controller of slave OpenManipulator**. Open the oth
 $ roslaunch open_manipulator_controller open_manipulator_controller.launch dynamixel_usb_port:=/dev/ttyUSB0
 ```
 
-If the slave OpenManipulator controller has been launched successfully, the terminal will show the following message.
+If the master OpenManipulator-X controller has been launched successfully, the terminal will show the following message.
 
 ```
 SUMMARY
@@ -512,7 +512,7 @@ And Open the other terminal window and enter the following command in the termin
 $ roslaunch open_manipulator_master_slave open_manipulator_master.launch usb_port:=/dev/ttyUSB1
 ```
 
-If the master OpenManipulator controller has been launched successfully, the terminal will show the following message.
+If the slave OpenManipulator-X controller has been launched successfully, the terminal will show the following message.
 
 ```
 SUMMARY
@@ -544,7 +544,7 @@ Gripper Dynamixel ID : 5, Model Name :XM430-W350
 
 So, you can see the following message in the terminal window. You can check the current control mode and robot status(joint angle, tool position).
 
-``` 
+```
 -----------------------------
 Control Your OpenManipulator!
 -----------------------------
