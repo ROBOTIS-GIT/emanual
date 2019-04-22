@@ -27,7 +27,7 @@ Upload the example source to OpenCR.
 
 ![](/assets/images/platform/openmanipulator_x/upload_chain_example.png)
 
-When the upload is completed, the following comments are displayed in the log window. 
+When the upload is completed, the following comments are displayed in the log window.
 
 ![](/assets/images/parts/controller/opencr10/downloader_01.png)
 
@@ -68,8 +68,7 @@ When the upload is completed, the following comments are displayed in the log wi
     $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_processing.git
     ```
 
-
-### [Launch Processing(GUI)](#launch-processinggui)
+## [Launch Processing(GUI)](#launch-processinggui)
 
 **WARNING** : OpenCR1.0 must be connected to OpenMANIPULATOR-X before launching Processing.  
 Press `Reset Button` of OpenCR1.0 to enable torque for OpenMANIPULATOR-X.
@@ -111,9 +110,9 @@ If you have checked the above and it does not work normally, I recommend running
 **NOTE**: Upload **OpenCR example source code** to OpenCR before run **processing source code**.
 {: .notice--info}
 
-The user can use processing program to manipulate the OpenManipulator.  
-  To manipulate the OpenManipulator, click the toggle button to `CONTROLLER ON`.  
-  ![](/assets/images/platform/openmanipulator_x/OpenManipulator_chain_processing_3.png)  
+The user can use processing program to manipulate the OpenManipulator.
+  To manipulate the OpenManipulator, click the toggle button to `CONTROLLER ON`.
+  ![](/assets/images/platform/openmanipulator_x/OpenManipulator_chain_processing_3.png)
 
   The user can manipulate the OpenManipulator-X in the [joint space]{: .popup}.  
   Set the joint angles. Then click the `SEND JOINT ANGLE` button. And set the gripper parameter. Then click the `SET GRIPPER` button.  
@@ -123,9 +122,9 @@ The user can use processing program to manipulate the OpenManipulator.
   Click the desired direction button to manipulate the OpenManipulator.  
   ![](/assets/images/platform/openmanipulator_x/OpenManipulator_chain_processing_5.png)
 
-### [Hand guiding](#hand-guiding)
+### [Hand Guiding](#hand-guiding)
 
-The user can make the demonstration using hand guiding function.  
+The user can make the demonstration using hand guiding function.
 
   <iframe width="560" height="315" src="https://www.youtube.com/embed/9mE9QgAro8A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -137,15 +136,15 @@ The user can make the demonstration using hand guiding function.
   6. Click the toggle button to `TORQUE ON`
   7. Click the `MOTION START` button to start the saved poses.
 
-  Click the toggle button to `MOTION REPEAT ON` if you want to repeat the demonstration.  
-  The total time of the trajectory between saved poses is the same as 2 seconds.  
+  Click the toggle button to `MOTION REPEAT ON` if you want to repeat the demonstration.
+  The total time of the trajectory between saved poses is the same as 2 seconds.
   ![](/assets/images/platform/openmanipulator_x/OpenManipulator_chain_processing_6.png)
 
 ## [Teleoperation RC100](#teleoperation-rc100)
 
   <iframe width="560" height="315" src="https://www.youtube.com/embed/FGHBMJByJ7k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-  The settings for [ROBOTIS RC-100B] controller is included in the OpenCR firmware for OpenManipulator. This controller can be used with the Bluetooth module [BT410].    
+  The settings for [ROBOTIS RC-100B] controller is included in the OpenCR firmware for OpenManipulator. This controller can be used with the Bluetooth module [BT410].
   ![](/assets/images/platform/openmanipulator_x/OpenManipulator_chain_processing_teleop.png)
 
 

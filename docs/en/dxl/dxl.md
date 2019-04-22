@@ -85,6 +85,12 @@ sidebar:
 
 # [PRO Plus(+) Series](#pro-plus-series)
 
-|H54P-200-S500-R|H54P-100-S500-R|H42P-020-S300-R|
-|:---:|:---:|:---:|
-|[![](/assets/images/dxl/pro_plus/h54p-200-s500-r.png)](/docs/en/dxl/pro_plus/h54p-200-s500-r/)|[![](/assets/images/dxl/pro_plus/h54p-100-s500-r.png)](/docs/en/dxl/pro_plus/h54p-100-s500-r/)|[![](/assets/images/dxl/pro_plus/h42p-020-s300-r.png)](/docs/en/dxl/pro_plus/h42p-020-s300-r/)|
+|                                        H54P-200-S500-R                                         |                                        H54P-100-S500-R                                         |                                        H42P-020-S300-R                                         |
+|:----------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------:|
+| [![](/assets/images/dxl/pro_plus/h54p-200-s500-r.png)](/docs/en/dxl/pro_plus/h54p-200-s500-r/) | [![](/assets/images/dxl/pro_plus/h54p-100-s500-r.png)](/docs/en/dxl/pro_plus/h54p-100-s500-r/) | [![](/assets/images/dxl/pro_plus/h42p-020-s300-r.png)](/docs/en/dxl/pro_plus/h42p-020-s300-r/) |
+
+
+
+ |                    M54P-060-S250-R                    |                   M54P-040-S250-R                    |                    M42P-010-S260-R                    |
+ |:-----------------------------------------------------:|:----------------------------------------------------:|:-----------------------------------------------------:|
+ |[![](/assets/images/dxl/pro_plus/m54p-040-s250-r.png)](/docs/en/dxl/pro_plus/m54p-060-s250-r/) | [![](/assets/images/dxl/pro_plus/m54p-060-s250-r.png)](http://localhost:4000/docs/en/dxl/pro_plus/m54p-040-s250-r/) | [![](/assets/images/dxl/pro_plus/m42p-010-s260-r.png)](/docs/en/dxl/pro_plus/m42p-010-s260-r/) |
