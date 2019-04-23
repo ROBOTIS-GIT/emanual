@@ -13,7 +13,7 @@ In the above circuit diagram, the direction of data signal of TxD and RxD in the
 
 ## [Pin Arrangement](#pin-arrangement)
 Connector pin arrangement is shown below.
-DYNAMIXEL {% if page.product_group=='dxl_pro_plus' %}PRO+{% else %}PRO{% endif %} has two 4-pin connectors arranged in pin-2-pin configuration.  
+DYNAMIXEL {% if page.product_group=='dxl_pro_plus' %}PRO+{% else %}PRO{% endif %} has two 4-pin connectors arranged in pin-2-pin configuration.
 In this arrangement there's no priority in the connector order and DYNAMIXEL {% if page.product_group=='dxl_pro_plus' %}PRO+{% else %}PRO{% endif %} can be driven like the MX-series.
 Additionally there is a 2-pin connector dedicated for power input for high-current operations.
 
