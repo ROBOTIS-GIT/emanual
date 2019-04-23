@@ -70,7 +70,7 @@ When the upload is completed, the following comments are displayed in the log wi
 
 ## [Launch Processing(GUI)](#launch-processinggui)
 
-**WARNING** : OpenCR1.0 must be connected to OpenMANIPULATOR-X before launching Processing.  
+**WARNING** : OpenCR1.0 must be connected to OpenMANIPULATOR-X before launching Processing.
 Press `Reset Button` of OpenCR1.0 to enable torque for OpenMANIPULATOR-X.
 {: .notice--warning}
 
@@ -111,15 +111,19 @@ If you have checked the above and it does not work normally, I recommend running
 {: .notice--info}
 
 The user can use processing program to manipulate the OpenManipulator.
+
   To manipulate the OpenManipulator, click the toggle button to `CONTROLLER ON`.
+
   ![](/assets/images/platform/openmanipulator_x/OpenManipulator_chain_processing_3.png)
 
-  The user can manipulate the OpenManipulator-X in the [joint space]{: .popup}.  
-  Set the joint angles. Then click the `SEND JOINT ANGLE` button. And set the gripper parameter. Then click the `SET GRIPPER` button.  
-  ![](/assets/images/platform/openmanipulator_x/OpenManipulator_chain_processing_4.png)  
 
-  The user can manipulate the OpenManipulator-X in the ([task space]{: .popup}). Click the `TASK SPACE CONTROL` button to change the tab.  
-  Click the desired direction button to manipulate the OpenManipulator.  
+  The user can manipulate the OpenManipulator-X in the [joint space]{: .popup}.
+  Set the joint angles. Then click the `SEND JOINT ANGLE` button. And set the gripper parameter. Then click the `SET GRIPPER` button.
+  ![](/assets/images/platform/openmanipulator_x/OpenManipulator_chain_processing_4.png)
+
+  The user can manipulate the OpenManipulator-X in the [task space]{: .popup}. Click the `TASK SPACE CONTROL` button to change the tab.
+  Click the desired direction button to manipulate the OpenManipulator.
+
   ![](/assets/images/platform/openmanipulator_x/OpenManipulator_chain_processing_5.png)
 
 ### [Hand Guiding](#hand-guiding)
@@ -129,7 +133,7 @@ The user can make the demonstration using hand guiding function.
   <iframe width="560" height="315" src="https://www.youtube.com/embed/9mE9QgAro8A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
   1. Click the `HAND GUIDING` button to change the tab.
-  2. Holds the OpenManipulator-X by hand and click the toggle button to `TORQUE OFF`.   
+  2. Holds the OpenManipulator-X by hand and click the toggle button to `TORQUE OFF`.
   3. Move the OpenManipulator-X to the desired pose by hand.
   4. Click the `SAVE JOINT POSE` to save the present pose.
   5. Repeat step 3 and 4 to create the demonstration.
@@ -138,6 +142,7 @@ The user can make the demonstration using hand guiding function.
 
   Click the toggle button to `MOTION REPEAT ON` if you want to repeat the demonstration.
   The total time of the trajectory between saved poses is the same as 2 seconds.
+
   ![](/assets/images/platform/openmanipulator_x/OpenManipulator_chain_processing_6.png)
 
 ## [Teleoperation RC100](#teleoperation-rc100)
