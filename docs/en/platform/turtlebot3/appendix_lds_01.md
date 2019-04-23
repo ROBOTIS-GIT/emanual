@@ -11,7 +11,7 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 21"></div>
+<div style="counter-reset: h1 22"></div>
 <div style="counter-reset: h2 2"></div>
 
 <!--[dummy Header 1]>
@@ -232,7 +232,7 @@ $ git clone https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
 #### Download firmware and run
 
 1. After connecting USB to PC, select `Tools` -> `Board` -> `OpenCR Board` in Arduino IDE.
-1. Change `Tools`-> `Port` to the port to which the board is connected.  
+1. Change `Tools`-> `Port` to the port to which the board is connected.
 1. In the Arduino IDE Examples, select the firmware for LDS (`File` -> `Examples` -> `OpenCR` -> `Etc` -> `LDS` -> `drawLDS`).
 1. Click `Upload` icon in the Arduino IDE that displays the red circle to build and download the firmware. When the download is completed, the firmware is automatically executed.
 
