@@ -7879,6 +7879,14 @@ h42-20-s300-r:
         titlekr: "커넥터 정보"
         url: /dxl/pro/h42-20-s300-r/#connector-information
         urlkr: /dxl/pro/h42-20-s300-r/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/pro/h42-20-s300-r/#communication-circuit
+        urlkr: /dxl/pro/h42-20-s300-r/#통신-회로
+      - title: "Pin Arrangement"
+        titlekr: "핀 배열"
+        url: /dxl/pro/h42-20-s300-r/#pin-arrangement
+        urlkr: /dxl/pro/h42-20-s300-r/#핀-배열
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/pro/h42-20-s300-r/#drawings

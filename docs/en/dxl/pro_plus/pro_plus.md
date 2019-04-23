@@ -6,6 +6,7 @@ permalink: /docs/en/dxl/pro_plus/
 sidebar:
   title: DYNAMIXEL PRO+
   nav: "dynamixel_pro_plus"
+product_group: dxl_pro_plus
 ---
 
 ![](/assets/images/dxl/pro_plus/pro-plus.png)
@@ -43,29 +44,8 @@ sidebar:
 # [Communication Circuitry](#communication-circuitry)
 
 ## [Connection to UART](#connection-to-uart)
-To control DYNAMIXEL Pro+ with a personally made Main Controller, the signal of Main Controller UART should be converted into RS485 type signal. The following is a recommended circuit diagram.
 
-![](/assets/images/dxl/pro/485_circuit_pro.png)
-
-[MAX485 Datasheet](http://ecee.colorado.edu/~mcclurel/max485ds.pdf)
-
-The power of DYNAMIXEL is supplied via Pin1(-), Pin2(+). (The above circuit is built into DYNAMIXEL-only controller)
-
-In the above circuit diagram, the direction of data signal of TxD and RxD in the TTL Level is determined according to the level of DIRECTION 485 as follows:
-- In case of DIRECTION485 Level = High: The signal of TxD is output to D+ and D-.
-- In case of DIRECTION485 Level = Low: The signal of D+ and D- is output to RxD.
-
-## [Pin Arrangement](#pin-arrangement)
-Connector pin arrangement is shown below. DYNAMIXEL PRO+ has two 4-pin connectors arranged in pin-2-pin configuration. In this arrangement it does not matter the order of connection and DYNAMIXEL PRO+ can be driven like the MX-series. Additionally there is a 2-pin connector dedicated for power input for high-current operations.
-
-![](/assets/images/dxl/pro_plus/pin_name.png)
-
-![](/assets/images/dxl/pro_plus/connection.png)
-
-![](/assets/images/dxl/pro_plus/wiring.png)
-
-**WARNING** : When wiring please pay attention to the wire arrangement. Incorrectly connected DYNAMIXEL may be damaged severely.
-{: .notice--warning}
+{% include en/dxl/communication_circuit_pro.md %}
 
 ## [Confirmation of Connection](#confirmation-of-connection)
 
