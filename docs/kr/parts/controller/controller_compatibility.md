@@ -105,4 +105,4 @@ sidebar:
 [OpenCM9.04]: /docs/kr/parts/controller/opencm904/
 [OpenCM7.0]: /docs/kr/parts/controller/opencm7/
 [485 EXP]: /docs/kr/parts/controller/exp485/
-[OpenCR]: /docs/kr/parts/controller/opencr/
+[OpenCR]: /docs/en/parts/controller/opencr10/

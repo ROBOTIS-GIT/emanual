@@ -158,7 +158,7 @@ The RC-100 is used to control the robot.
 |4 + L|Attack Left|
 |4 + R|Attack Right|
 
-##### Setting the CM-510 IR Channels
+##### Setting the CM-530 IR Channels
 
 After mounting the IR receiver on CM-530 under control mode, you can set the channels to control it remotely by pressing the Aux button. If you change the channel of the controller, you must also change the channel of RC-100. On how to change the channel of RC-100, please refer to Changing RC-100's Channel.
 
@@ -928,13 +928,13 @@ A high signal can be sent to the OUT port using RoboPlus Task.
 When the code above is executed, high signal will be sent to the OUT port of the device connected to PORT 3, and the LED will turn on.
 
 #### Reading the ADC Value
-Most of the sensors used in robots, such as IR sensors and distance sensors, support analog output. The CM-510 can use its external ports to read the sensor’s analog output signals. These sensors may be designed by the user or bought from a store.
+Most of the sensors used in robots, such as IR sensors and distance sensors, support analog output. The CM-510/CM-530 can use its external ports to read the sensor’s analog output signals. These sensors may be designed by the user or bought from a store.
 
 - Below is an image of a tilt sensor. When the sensor is tilted, it prints the tilted value as the analog singal.
 
 ![](/assets/images/edu/bioloid/premium_diy_sensor_03.png)
 
-- The left pin of the tilt sensor is 5V VCC. The center is an analog signal output pin, and the right pin is GND.  This sensor can be used by connecting its pins to the corresponding pins on CM-510’s external port.  To try for yourself, please refer to the pin information for CM-510’s external ports.
+- The left pin of the tilt sensor is 5V VCC. The center is an analog signal output pin, and the right pin is GND.  This sensor can be used by connecting its pins to the corresponding pins on CM-530's/CM-510’s external port.  To try for yourself, please refer to the pin information for CM-530's/CM-510’s external ports.
 
 ![](/assets/images/edu/bioloid/premium_diy_sensor_04.png)
 

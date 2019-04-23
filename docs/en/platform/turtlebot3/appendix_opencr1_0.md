@@ -11,7 +11,7 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 21"></div>
+<div style="counter-reset: h1 22"></div>
 <div style="counter-reset: h2 1"></div>
 
 <!--[dummy Header 1]>
@@ -94,7 +94,7 @@ linear_acceleration_covariance: [0.03999999910593033, 0.0, 0.0, 0.0, 0.039999999
 #### [Debugging](#debugging)
 
 `turtlebot3_core.ino` includes debugging code to check odometry, connected sensor and state of TurtleBot3 or Dynamixels.
-This might be help you to implement code and test it without ROS connection. 
+This might be help you to implement code and test it without ROS connection.
 
 **First**, ready to [LN-101](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=1277&GC=GD0B0107) or any [USB to Serial converter](https://www.sparkfun.com/products/12731).
 
@@ -133,7 +133,7 @@ OpenCR SENSORS
 ---------------------------------------
 Battery : 12.15
 Button : 0
-IMU : 
+IMU :
     w : 1.00
     x : 0.00
     y : -0.00
@@ -147,7 +147,7 @@ Encoder(right) : 4001
 ---------------------------------------
 TurtleBot3
 ---------------------------------------
-Odometry : 
+Odometry :
          x : 0.00
          y : 0.00
      theta : 0.00

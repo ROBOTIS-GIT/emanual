@@ -17,9 +17,7 @@ sidebar:
 
 # [Introduction](#introduction)
 
-It is the motor used in OLLO; it is connected to CM-100, and the direction of spin and the speed of spin can be adjusted through port control.  
-It can be operated as general DC motors by connecting OLLO switch and the battery box.
-
+It is connected to ROBOTIS's controller, and the direction of spin and the speed of spin can be adjusted through port control.  Please refer to the Compatibility Guide below.
 - `Compatibility Guide` [Controller Compatibility]
 
 # [Specifications](#specifications)
@@ -49,5 +47,5 @@ It can be operated as general DC motors by connecting OLLO switch and the batter
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-qRy_NDd5eU" frameborder="0" allowfullscreen></iframe>
 
-[Controller Compatibility]: /docs/en/parts/controller/controller_compatibility/
+[Controller Compatibility]: /docs/en/parts/controller/controller_compatibility/#parts
 [Geared Motor]: /docs/en/software/rplus1/task/programming_02/#reduction-motor
