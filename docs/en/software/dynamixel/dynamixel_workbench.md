@@ -658,7 +658,7 @@ Launch controller and joint_operator.
 
 ```
 $ cd ~/catkin_ws && catkin_make
-$ roslaunch dynamixel_workbench_controllers dynamixel_controllers.launch 
+$ roslaunch dynamixel_workbench_operators wheel_operator.launch
 $ roslaunch dynamixel_workbench_controllers dynamixel_controllers.launch use_cmd_vel:=true
 ```
 
