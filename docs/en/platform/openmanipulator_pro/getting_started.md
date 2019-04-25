@@ -82,7 +82,7 @@ Information appearing in a CAUTION concerns the protection of personnel and equi
 
 ### Wiring
 
-![](/assets/images/platform/OpenMANIPULATOR_pro/wiring.jpg)
+![](/assets/images/platform/openmanipulator_pro/wiring.png)
 
 - The diagram above illustrates joints 1~6 connected in daisy-chain (serial) configuration with 4P Cable.
 - Joint 1 (labeled as “1st”) connects to U2D2 via 4P Cable.
