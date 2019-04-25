@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_x/mobile_manipulation/
 sidebar:
-  title: OpenManipulator-X
+  title: OpenMANIPULATOR-X
   nav: "openmanipulator_x"
 ---
 
@@ -35,7 +35,7 @@ Install dependent packages
   $ cd ~/catkin_ws && catkin_make
   ```
 
-Load a TurtleBot3 Waffle or Waffle Pi with OpenManipulator-X on RViz.
+Load a TurtleBot3 Waffle or Waffle Pi with OpenMANIPULATOR-X on RViz.
 
   **TIP**: TB3_MODEL =  `waffle`, `waffle_pi`
   {: .notice--success}

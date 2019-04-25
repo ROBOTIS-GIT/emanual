@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_x/specification/
 sidebar:
-  title: OpenManipulator-X
+  title: OpenMANIPULATOR-X
   nav: "openmanipulator_x"
 ---
 
@@ -17,7 +17,7 @@ sidebar:
 
 ## [Hardware Specification](#hardware-specification)
 
-| Items               | Unit    |OpenManipulator-X                        |
+| Items               | Unit    |OpenMANIPULATOR-X                        |
 |:--------------------|:--------|:----------------------------------------|
 | **Actuator**        |         | Dynamixel XM430-W350-T                  |
 | **Input Voltage**   | V       | 12                                      |

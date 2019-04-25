@@ -229,17 +229,17 @@ main:
     - title: "TurtleBot3"
       titlekr: "터틀봇3"
       url: /platform/turtlebot3/overview/
-    - title: "OpenManipulator"
+    - title: "OpenMANIPULATOR"
       titlekr: "오픈매니퓰레이터"
       children:
       - title: "Manipulator-H"
         titlekr: "Manipulator-H"
         url: /platform/manipulator_h/introduction/
-    #  - title: "OpenManipulator-PRO"
-    #    titlekr: "OpenManipulator-PRO"
+    #  - title: "OpenMANIPULATOR-PRO"
+    #    titlekr: "OpenMANIPULATOR-PRO"
     #    url: /platform/openmanipulator_pro/overview/
-      - title: "OpenManipulator-X"
-        titlekr: "OpenManipulator-X"
+      - title: "OpenMANIPULATOR-X"
+        titlekr: "OpenMANIPULATOR-X"
         url: /platform/openmanipulator_x/overview/
   - title: "STEAM"
     titlekr: "교육키트"
@@ -15266,7 +15266,7 @@ turtlebot3:
   - title: "Manipulation"
     url: /platform/turtlebot3/manipulation/#manipulation
     children:
-    - title: "TurtleBot3 with OpenManipulator"
+    - title: "TurtleBot3 with OpenMANIPULATOR"
       url: /platform/turtlebot3/manipulation/#turtlebot3-with-openmanipulator
     - title: "Software Setup"
       url: /platform/turtlebot3/manipulation/#software-setup
@@ -15350,7 +15350,7 @@ turtlebot3:
     children:
     - title: "TurtleBot3 Friends: Car"
       url: /platform/turtlebot3/locomotion/#turtlebot3-friends-car
-    - title: "TurtleBot3 Friends: OpenManipulator"
+    - title: "TurtleBot3 Friends: OpenMANIPULATOR"
       url: /platform/turtlebot3/locomotion/#turtlebot3-friends-openmanipulator
     - title: "TurtleBot3 Friends: Segway"
       url: /platform/turtlebot3/locomotion/#turtlebot3-friends-segway
@@ -15526,7 +15526,7 @@ turtlebot3:
     - title: "About OST (Open Source Team)"
       url: /platform/turtlebot3/contact_us/#about-ost-open-source-team
 
-#OpenManipulator-X
+#OpenMANIPULATOR-X
 openmanipulator_x:
   - title: "Overview"
     url: /platform/openmanipulator_x/overview/#overview
@@ -15553,9 +15553,9 @@ openmanipulator_x:
   - title: "Getting Started"
     url: /platform/openmanipulator_x/getting_started/#getting-started
     children:
-      - title: "About OpenManipulator-X"
+      - title: "About OpenMANIPULATOR-X"
         url: /platform/openmanipulator_x/getting_started/#about-openmanipulator-x
-      - title: "OpenManipulator-X Setup"
+      - title: "OpenMANIPULATOR-X Setup"
         url: /platform/openmanipulator_x/getting_started/#openmanipulator-x-setup
       - title: "Let's try Basic Operation"
         url: /platform/openmanipulator_x/getting_started/#lets-try-basic-operation
@@ -15645,7 +15645,7 @@ openmanipulator_x:
       - title: "Master Slave"
         url: /platform/openmanipulator_x/ros_applications/#master-slave
         children:
-          - title: "Setup of OpenManipulator-X"
+          - title: "Setup of OpenMANIPULATOR-X"
             url: /platform/openmanipulator_x/ros_applications/#setup-of-openmanipulator-x
           - title: "Install Package"
             url: /platform/openmanipulator_x/ros_applications/#install-package
@@ -15686,17 +15686,17 @@ openmanipulator_x:
   - title: "Friends"
     url: /platform/openmanipulator_x/friends/#friends
     children:
-      - title: "OpenManipulator SCARA"
+      - title: "OpenMANIPULATOR SCARA"
         url: /platform/openmanipulator_x/friends/#openmanipulator-scara
-      - title: "OpenManipulator Link"
+      - title: "OpenMANIPULATOR Link"
         url: /platform/openmanipulator_x/friends/#openmanipulator-link
-      - title: "OpenManipulator Planar"
+      - title: "OpenMANIPULATOR Planar"
         url: /platform/openmanipulator_x/friends/#openmanipulator-planar
-      - title: "OpenManipulator Delta"
+      - title: "OpenMANIPULATOR Delta"
         url: /platform/openmanipulator_x/friends/#openmanipulator-delta
-      - title: "OpenManipulator Stewart"
+      - title: "OpenMANIPULATOR Stewart"
         url: /platform/openmanipulator_x/friends/#openmanipulator-stewart
-      - title: "OpenManipulator Linear"
+      - title: "OpenMANIPULATOR Linear"
         url: /platform/openmanipulator_x/friends/#openmanipulator-linear
 
 #OpenManipulator-PRO
@@ -19915,7 +19915,7 @@ opencr10:
         url: /parts/controller/opencr10/#joystic-sensor
     - title: "Dynamixel Workbench"
       url: /parts/controller/opencr10/#dynamixel-workbench
-    - title: "OpenManipulator"
+    - title: "OpenMANIPULATOR"
       url: /parts/controller/opencr10/#openmanipulator
   - title: "Downloads"
     url: /parts/controller/opencr10/#downloads

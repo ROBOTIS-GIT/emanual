@@ -21,19 +21,19 @@ If have any questions or issues, please get a ticket in [github issue](https://g
 
 # [Supported Dynamixels](#supported-dynamixels)
 
-| Dynamixel Series |                 |                    |                   |                     |               |
-| ---------------- | --------------- | ------------------ | ----------------- | ------------------- | ------------- |
-| **AX**           | AX-12W          | AX-12+/12A         | AX-18F/18A        |
-| **RX**           | RX-10           | RX-24F             | RX-28             | RX-64               |
-| **EX**           | EX-106+         |
-| **MX**           | MX-12W          | MX-28, MX-28(2.0)  | MX-64, MX-64(2.0) | MX-106, MX-106(2.0) |
-| **XL**           | XL320           | XL430-W250         |
-| **XM**           | XM430-210       | XM430-W350         | XM540-W210        | XM540-W270          |
-| **XH**           | XH430-W210      | XH430-W350         | XH430-V210        | XH430-V350          |
-| **PRO-L**        | L42-10-S300-R   | L54-30-S500-R      | L54-30-S400-R     | L54-50-S500-R       | L54-50-S290-R |
-| **PRO-M**        | M42-10-S260-R   | M54-40-S250-R      | M54-60-S250-R     |
-| **PRO-H**        | H42-20-S300-R   | H54-100-S500-R     | H54-200-S500-R    |
-| **PRO+**         | H42P-020-S300-R | H54P-100-S500-R    | H54P-200-S500-R   |
+| Dynamixel Series |                 |                   |                   |                     |               |
+|:-----------------|:----------------|:------------------|:------------------|:--------------------|:--------------|
+| **AX**           | AX-12W          | AX-12+/12A        | AX-18F/18A        |                     |               |
+| **RX**           | RX-10           | RX-24F            | RX-28             | RX-64               |               |
+| **EX**           | EX-106+         |                   |                   |                     |               |
+| **MX**           | MX-12W          | MX-28, MX-28(2.0) | MX-64, MX-64(2.0) | MX-106, MX-106(2.0) |               |
+| **XL**           | XL320           | XL430-W250        |                   |                     |               |
+| **XM**           | XM430-210       | XM430-W350        | XM540-W210        | XM540-W270          |               |
+| **XH**           | XH430-W210      | XH430-W350        | XH430-V210        | XH430-V350          |               |
+| **PRO-L**        | L42-10-S300-R   | L54-30-S500-R     | L54-30-S400-R     | L54-50-S500-R       | L54-50-S290-R |
+| **PRO-M**        | M42-10-S260-R   | M54-40-S250-R     | M54-60-S250-R     |                     |               |
+| **PRO-H**        | H42-20-S300-R   | H54-100-S500-R    | H54-200-S500-R    |                     |               |
+| **PRO+**         | H42P-020-S300-R | H54P-100-S500-R   | H54P-200-S500-R   |                     |               |
 
 
 
@@ -717,7 +717,7 @@ Let's take a look at the `moveit_bridge.launch` file. First, you should set **pl
 
 I will give you an example to show how to use moveit_bridge.
 
-1. Downloads [OpenManipulator](/docs/en/platform/openmanipulator/) packages  
+1. Downloads [OpenMANIPULATOR](/docs/en/platform/openmanipulator/) packages  
 
 1. Modify `joint_2_0.yaml` file  
 
@@ -847,7 +847,7 @@ The user can use this service to receives a kinematics pose which is calculated 
 The user can use this service to create a trajectory in the [joint space]{: .popup} by move_group. The user **input**s the angle of the target joint and the total time of the trajectory.
 
 - `moveit/set_kinematics_pose`([open_manipulator_msgs/SetKinematicsPose]{: .popup})   
-The user can use this service to create a trajectory in the [task space]{: .popup} by move_group. The user **input**s the kinematics pose(orientation only) of the OpenManipulator end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
+The user can use this service to create a trajectory in the [task space]{: .popup} by move_group. The user **input**s the kinematics pose(orientation only) of the OpenMANIPULATOR end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
 
 ## [OpenCR and OpenCM Tutorials](#opencr-and-opencm-tutorials)
 

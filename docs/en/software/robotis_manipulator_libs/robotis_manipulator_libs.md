@@ -162,9 +162,9 @@ Select Tools → Port → /dev/ttyACM0.
 
 # [Usage Tutorials](#usage-tutorials)
 <!-- The robotis_manipulator는 매니퓰레이터를 제어하기 위해 필요한 정보를 저장하고, 운동학, 경로생성, 액추에이터 통신등을 수행해주는 라이브러리입니다. 이 튜토리얼에서는 robotis_manipulator의 사용법에 대해 설명합니다. -->
-<!-- 이 튜토리얼에서는 OpenManipulator-X RM-X52-TNM를 제어하기 위해 작성된 open_manipulator_libs를 예로 들어 설명할 것입니다. -->
+<!-- 이 튜토리얼에서는 OpenMANIPULATOR-X RM-X52-TNM를 제어하기 위해 작성된 open_manipulator_libs를 예로 들어 설명할 것입니다. -->
 The robotis_manipulator is a library that stores parameters needed to control a manipulator, and performs kinematics solving, trajectory generation, and actuator communication. This tutorial describes how to use the robotis_manipulator.
-In this tutorial, we will use `open_manipulator_libs` created to control **OpenManipulator-X RM-X52-TNM**, as an example.
+In this tutorial, we will use `open_manipulator_libs` created to control **OpenMANIPULATOR-X RM-X52-TNM**, as an example.
 
 ## [Step1 Make Manipulator Class](#step1.-make-manipulator-class)
 

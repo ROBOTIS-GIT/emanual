@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_x/opencr_setup/
 sidebar:
-  title: OpenManipulator-X
+  title: OpenMANIPULATOR-X
   nav: "openmanipulator_x"
 ---
 
@@ -15,21 +15,21 @@ sidebar:
 
 # [[OpenCR] Setup](#opencr-setup)
 
-**WARNING** : This instruction **does not use ROS** to operate OpenManipulator-X.  
-The way OpenManipulator-X is controlled by OpenCR (embedded system) and ROS is completely different.  
+**WARNING** : This instruction **does not use ROS** to operate OpenMANIPULATOR-X.  
+The way OpenMANIPULATOR-X is controlled by OpenCR (embedded system) and ROS is completely different.  
 When operating with ROS, the PC becomes a main controller.  
 On the other hands, when operating with OpenCR, the OpenCR becomes a main controller.
 {: .notice--danger}
 
-OpenManipulator-X is compatible with **OpenCR**. We offer API to easily control manipulator.
-This API supports Dynamixel, Dynamixel X including protocol 1.0 and 2.0. Furthermore, this code can be used for Friends of OpenManipulator.
+OpenMANIPULATOR-X is compatible with **OpenCR**. We offer API to easily control manipulator.
+This API supports Dynamixel, Dynamixel X including protocol 1.0 and 2.0. Furthermore, this code can be used for Friends of OpenMANIPULATOR.
 User can make thier code in **Arduino IDE** and simulate or control using **Processing** GUI.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fT1Wv6qHknI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## [Connection](#connection)
 
-Connect micro USB (connected to PC), Dynamixel(OpenManipulator), and 12V Power to OpenCR as shown below.
+Connect micro USB (connected to PC), Dynamixel(OpenMANIPULATOR), and 12V Power to OpenCR as shown below.
 
 <img src="/assets/images/platform/openmanipulator_x/OpenManipulator_opencr_setup.png" width="500">
 

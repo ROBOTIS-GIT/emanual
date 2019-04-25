@@ -7,7 +7,7 @@ share: false
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_pro/ros_manipulator_manager/
 sidebar:
-  title: OpenManipulator-PRO
+  title: OpenMANIPULATOR-PRO
   nav: "openmanipulator_pro"
 ---
 
