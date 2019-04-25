@@ -66,13 +66,13 @@ The diagram below shows the “home position” of the Dynamixel PRO+s from Open
 ## [Mass Property](#mass-property)
 ### Coordinate
 
-![](/assets/images/platform/openmanipulator_pro/mass1.jpg)
+![](/assets/images/platform/openmanipulator_pro/mass1.png)
 
 Total Mass : 5,551g
 
 ### Link 1
 
-![](/assets/images/platform/openmanipulator_pro/mass2.jpg)
+![](/assets/images/platform/openmanipulator_pro/mass2.png)
 
 - Mass(g) : 1,030
 - Center of Gravity(mm)
@@ -90,7 +90,7 @@ Total Mass : 5,551g
 
 ### Link 2
 
-![](/assets/images/platform/openmanipulator_pro/mass3.jpg)
+![](/assets/images/platform/openmanipulator_pro/mass3.png)
 
 - Mass(g) : 1,404
 - Center of Gravity(mm)
@@ -108,7 +108,7 @@ Total Mass : 5,551g
 
 ### Link 3
 
-![](/assets/images/platform/openmanipulator_pro/mass4.jpg)
+![](/assets/images/platform/openmanipulator_pro/mass4.png)
 
 - Mass(g) : 1,236
 - Center of Gravity(mm)
@@ -126,7 +126,7 @@ Total Mass : 5,551g
 
 ### Link 4
 
-![](/assets/images/platform/openmanipulator_pro/mass5.jpg)
+![](/assets/images/platform/openmanipulator_pro/mass5.png)
 
 - Mass(g) : 491
 - Center of Gravity(mm)
@@ -144,7 +144,7 @@ Total Mass : 5,551g
 
 ### Link 5
 
-![](/assets/images/platform/openmanipulator_pro/mass6.jpg)
+![](/assets/images/platform/openmanipulator_pro/mass6.png)
 
 - Mass(g) : 454
 - Center of Gravity(mm)

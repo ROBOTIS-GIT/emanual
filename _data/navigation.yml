@@ -459,9 +459,9 @@ main:
       url: /software/arduino_ide/
     - title: "ROBOTIS Framework Packages"
       url: /software/robotis_framework_packages/
-    # - title: "ROBOTIS Manipulator library"
-    #   titlekr: "ROBOTIS Manipulator library"
-    #   url: /software/robotis_manipulator_libs/
+    - title: "ROBOTIS Manipulator library"
+      titlekr: "ROBOTIS Manipulator library"
+      url: /software/robotis_manipulator_libs/
   - title: "PARTS"
     titlekr: "부품"
     children:
