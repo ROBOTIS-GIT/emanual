@@ -1157,9 +1157,9 @@ void loop()
 
 - [Dynamixel-Workbench examples](/docs/en/software/dynamixel/dynamixel_workbench/#opencr-and-opencm-tutorials)
 
-## [OpenManipulator](#openmanipulator)
+## [OpenMANIPULATOR](#openmanipulator)
 
-- [OpenManipulator examples](/docs/en/platform/openmanipulator/#how-to-control-on-opencr)
+- [OpenMANIPULATOR examples](/docs/en/platform/openmanipulator/#how-to-control-on-opencr)
 
 # [Downloads](#downloads)
 

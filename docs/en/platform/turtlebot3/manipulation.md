@@ -18,7 +18,7 @@ sidebar:
 {% capture notice_01 %}
 **NOTE**:
 - This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-- If you want more specfic information about OpenManipulator, please refer to the [OpenManipulator e-Manual](/docs/en/platform/openmanipulator/).
+- If you want more specfic information about OpenMANIPULATOR, please refer to the [OpenMANIPULATOR e-Manual](/docs/en/platform/openmanipulator/).
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -30,13 +30,13 @@ sidebar:
 **TIP**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. The shortcut key for running the terminal is `Ctrl`-`Alt`-`T`.
 {: .notice--success}
 
-## [TurtleBot3 with OpenManipulator](#turtlebot3-with-openmanipulator)
+## [TurtleBot3 with OpenMANIPULATOR](#turtlebot3-with-openmanipulator)
 
 ![](/assets/images/platform/turtlebot3/manipulation/tb3_with_opm_logo.png)
 
-The OpenManipulator by ROBOTIS is one of the manipulators that support ROS, and has the advantage of being able to easily manufacture at a low cost by using Dynamixel actuators with 3D printed parts.
+The OpenMANIPULATOR by ROBOTIS is one of the manipulators that support ROS, and has the advantage of being able to easily manufacture at a low cost by using Dynamixel actuators with 3D printed parts.
 
-The OpenManipulator has the advantage of being compatible with TurtleBot3 Waffle and Waffle Pi. Through this compatibility can compensate for the lack of freedom and can have greater completeness as a service robot with the the SLAM and Navigation capabilities that the TurtleBot3 has. TurtleBot3 and OpenManipulator can be used as a `mobile manipulator` and can do things like the following videos.
+The OpenMANIPULATOR has the advantage of being compatible with TurtleBot3 Waffle and Waffle Pi. Through this compatibility can compensate for the lack of freedom and can have greater completeness as a service robot with the the SLAM and Navigation capabilities that the TurtleBot3 has. TurtleBot3 and OpenMANIPULATOR can be used as a `mobile manipulator` and can do things like the following videos.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Qhvk5cnX2hM" frameborder="0" allowfullscreen></iframe>
 
@@ -49,7 +49,7 @@ The OpenManipulator has the advantage of being compatible with TurtleBot3 Waffle
 **NOTE**: Before you install `open_manipulator_with_tb3` packages, please make sure `turtlebot3` and `open_manipulator` packages have been installed previously in RemotePC and setup [Raspberry Pi 3](/docs/en/platform/turtlebot3/raspberry_pi_3_setup/#raspberry-pi-3-setup).
 {: .notice--info}
 
-- Install dependent packages for the OpenManipulator with TurtleBot3.
+- Install dependent packages for the OpenMANIPULATOR with TurtleBot3.
 
 **[Remote PC]**
 ```bash
@@ -62,7 +62,7 @@ $ sudo apt-get install ros-kinetic-smach* ros-kinetic-ar-track-alvar ros-kinetic
 $ cd ~/catkin_ws && catkin_make
 ```
 
-- If `catkin_make` command is completed without any errors, the preparation for OpenManipulator is done. Then load a TurtleBot3 Waffle or Waffle Pi with OpenManipulator on RViz.
+- If `catkin_make` command is completed without any errors, the preparation for OpenMANIPULATOR is done. Then load a TurtleBot3 Waffle or Waffle Pi with OpenMANIPULATOR on RViz.
 
 **TIP**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `waffle`, `waffle_pi`. If you want to permanently set the export settings, please refer to [Export TURTLEBOT3_MODEL][export_turtlebot3_model]{: .popup} page.
 {: .notice--success}
@@ -77,12 +77,12 @@ $ roslaunch open_manipulator_with_tb3_description open_manipulator_with_tb3_rviz
 
 ## [Hardware Setup](#hardware-setup)
 
-- [CAD files](http://www.robotis.com/service/download.php?no=767) (TurtleBot3 Waffle Pi + OpenManipulator)
+- [CAD files](http://www.robotis.com/service/download.php?no=767) (TurtleBot3 Waffle Pi + OpenMANIPULATOR)
 
 ![](/assets/images/platform/turtlebot3/manipulation/hardware_setup.png)
 
 - First, detach lidar sensor and shift it front of TurtleBot3 (Red circle represents position of bolts).
-- Second, attach OpenManipulator on the TurtleBot3 (Yellow circle represents position of bolts).
+- Second, attach OpenMANIPULATOR on the TurtleBot3 (Yellow circle represents position of bolts).
 
 ![](/assets/images/platform/turtlebot3/manipulation/assemble_points.png)
 
@@ -114,7 +114,7 @@ When firmware upload is completed, `jump_to_fw` text string will be printed on t
 
 - [Arduino IDE for using OpenCR](/docs/en/parts/controller/opencr10/#arduino-ide)
 
-- OpenCR firmware (or the source) for TurtleBot3 with Openmanipulator is to control DYNAMIXEL and sensors in the ROS. The firmware is located in OpenCR example which is downloaded by the board manager.
+- OpenCR firmware (or the source) for TurtleBot3 with OpenMANIPULATOR is to control DYNAMIXEL and sensors in the ROS. The firmware is located in OpenCR example which is downloaded by the board manager.
 
 - Go to `File` → `Examples` → `TurtleBot3` → `turtlebot3_with_open_manipulator` → `turtlebot3_with_open_manipulator_core`.
 
@@ -198,7 +198,7 @@ $ roslaunch open_manipulator_with_tb3_tools navigation.launch use_platform:=true
 
   ![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_moveit_sim_2.jpg)
 
-- Below rqt plugins shows example of control OpenManipulator.
+- Below rqt plugins shows example of control OpenMANIPULATOR.
 
   ![](/assets/images/platform/turtlebot3/manipulation/joint_position_service.png)
 
@@ -240,7 +240,7 @@ kinematics_pose:
   tolerance: 0.0
 ```
 
-- In order to control gripper(**range is -0.01~0.01**) of OpenManipulator, below service command might be help.
+- In order to control gripper(**range is -0.01~0.01**) of OpenMANIPULATOR, below service command might be help.
 
 ```bash
 $ rosservice call /om_with_tb3/gripper "planning_group: ''
@@ -258,7 +258,7 @@ path_time: 0.0"
 
 ## [Simulation](#simulation)
 
-- Load TurtleBot3 with OpenManipulator on Gazebo simulator and click `Play` button
+- Load TurtleBot3 with OpenMANIPULATOR on Gazebo simulator and click `Play` button
 
 ```bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
@@ -331,7 +331,7 @@ $ rostopic list
 /tf_static
 ```
 
-- OpenManipulator in Gazebo is controllered by ROS message. For example, to use below command make publish joint position (radian).
+- OpenMANIPULATOR in Gazebo is controllered by ROS message. For example, to use below command make publish joint position (radian).
 
 ```bash
 $ rostopic pub /om_with_tb3/joint4_position/command std_msgs/Float64 "data: -0.21" --once

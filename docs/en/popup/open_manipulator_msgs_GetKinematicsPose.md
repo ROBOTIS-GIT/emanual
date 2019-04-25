@@ -25,7 +25,7 @@ This service receives kinematics pose of end_effector in planning_group
 
   - Response
     * `KinematicsPose kinematics_pose`
-&emsp;&emsp; The kinematics pose of the OpenManipulator end-effector relative to the base frame.
+&emsp;&emsp; The kinematics pose of the OpenMANIPULATOR end-effector relative to the base frame.
 
 
 [open_manipulator_msgs/KinematicsPose]: /docs/en/popup/open_manipulator_msgs_GetKinematicsPose/

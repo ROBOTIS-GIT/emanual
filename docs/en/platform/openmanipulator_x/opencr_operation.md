@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_x/opencr_operation/
 sidebar:
-  title: OpenManipulator-X
+  title: OpenMANIPULATOR-X
   nav: "openmanipulator_x"
 ---
 
@@ -32,7 +32,7 @@ When the upload is completed, the following comments are displayed in the log wi
 ![](/assets/images/parts/controller/opencr10/downloader_01.png)
 
 {% capture openmanipulator_configuration %}
-**WARNING** : Please refer to below default DYNAMIXEL configuration for OpenManipulator-X chain if you have a custom manipulator.
+**WARNING** : Please refer to below default DYNAMIXEL configuration for OpenMANIPULATOR-X chain if you have a custom manipulator.
 
 |  Joint  | ID | Baudrate |
 |:-------:|:--:|:--------:|
@@ -62,7 +62,7 @@ When the upload is completed, the following comments are displayed in the log wi
 
     ![](/assets/images/platform/openmanipulator_x/OpenManipulator_chain_processing_1.png)
 
-4. Download processing source code for OpenManipulator.
+4. Download processing source code for OpenMANIPULATOR.
 
     ```bash
     $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_processing.git
@@ -82,7 +82,7 @@ Press `Reset Button` of OpenCR1.0 to enable torque for OpenMANIPULATOR-X.
 
 4. Search downloaded processing file from **Folder where you downloaded the source code** > `open_manipulator_processing` > `Chain` > `Chain.pde` and open it on Processing IDE.
 
-    **NOTE**: Upload **OpenCR OpenManipulator example** to OpenCR before running **Processing example**.
+    **NOTE**: Upload **OpenCR OpenMANIPULATOR example** to OpenCR before running **Processing example**.
     {: .notice--info}
 
     ![](/assets/images/platform/openmanipulator_x/processing_open1.png)
@@ -110,19 +110,19 @@ If you have checked the above and it does not work normally, I recommend running
 **NOTE**: Upload **OpenCR example source code** to OpenCR before run **processing source code**.
 {: .notice--info}
 
-The user can use processing program to manipulate the OpenManipulator.
+The user can use processing program to manipulate the OpenMANIPULATOR.
 
-  To manipulate the OpenManipulator, click the toggle button to `CONTROLLER ON`.
+  To manipulate the OpenMANIPULATOR, click the toggle button to `CONTROLLER ON`.
 
   ![](/assets/images/platform/openmanipulator_x/OpenManipulator_chain_processing_3.png)
 
 
-  The user can manipulate the OpenManipulator-X in the [joint space]{: .popup}.
+  The user can manipulate the OpenMANIPULATOR-X in the [joint space]{: .popup}.
   Set the joint angles. Then click the `SEND JOINT ANGLE` button. And set the gripper parameter. Then click the `SET GRIPPER` button.
   ![](/assets/images/platform/openmanipulator_x/OpenManipulator_chain_processing_4.png)
 
-  The user can manipulate the OpenManipulator-X in the [task space]{: .popup}. Click the `TASK SPACE CONTROL` button to change the tab.
-  Click the desired direction button to manipulate the OpenManipulator.
+  The user can manipulate the OpenMANIPULATOR-X in the [task space]{: .popup}. Click the `TASK SPACE CONTROL` button to change the tab.
+  Click the desired direction button to manipulate the OpenMANIPULATOR.
 
   ![](/assets/images/platform/openmanipulator_x/OpenManipulator_chain_processing_5.png)
 
@@ -133,8 +133,8 @@ The user can make the demonstration using hand guiding function.
   <iframe width="560" height="315" src="https://www.youtube.com/embed/9mE9QgAro8A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
   1. Click the `HAND GUIDING` button to change the tab.
-  2. Holds the OpenManipulator-X by hand and click the toggle button to `TORQUE OFF`.
-  3. Move the OpenManipulator-X to the desired pose by hand.
+  2. Holds the OpenMANIPULATOR-X by hand and click the toggle button to `TORQUE OFF`.
+  3. Move the OpenMANIPULATOR-X to the desired pose by hand.
   4. Click the `SAVE JOINT POSE` to save the present pose.
   5. Repeat step 3 and 4 to create the demonstration.
   6. Click the toggle button to `TORQUE ON`
@@ -149,7 +149,7 @@ The user can make the demonstration using hand guiding function.
 
   <iframe width="560" height="315" src="https://www.youtube.com/embed/FGHBMJByJ7k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-  The settings for [ROBOTIS RC-100B] controller is included in the OpenCR firmware for OpenManipulator. This controller can be used with the Bluetooth module [BT410].
+  The settings for [ROBOTIS RC-100B] controller is included in the OpenCR firmware for OpenMANIPULATOR. This controller can be used with the Bluetooth module [BT410].
   ![](/assets/images/platform/openmanipulator_x/OpenManipulator_chain_processing_teleop.png)
 
 

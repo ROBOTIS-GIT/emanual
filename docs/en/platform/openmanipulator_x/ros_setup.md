@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_x/ros_setup/
 sidebar:
-  title: OpenManipulator-X
+  title: OpenMANIPULATOR-X
   nav: "openmanipulator_x"
 ---
 
@@ -18,7 +18,7 @@ sidebar:
 **NOTE** : The following instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 {: .notice--info}
 
-**WARNING** : If you would like to control OpenManipulator-X on OpenCR (Embedded board) instead of using ROS, please set it up as described in [[OpenCR] Setup](/docs/en/platform/openmanipulator_x/opencr_setup/#opencr-setup).
+**WARNING** : If you would like to control OpenMANIPULATOR-X on OpenCR (Embedded board) instead of using ROS, please set it up as described in [[OpenCR] Setup](/docs/en/platform/openmanipulator_x/opencr_setup/#opencr-setup).
 {: .notice--warning}
 
 
@@ -52,7 +52,7 @@ If you prefer manual installation, please following the link below.
 - [Manual installation of ROS Kinetic](http://wiki.ros.org/kinetic/Installation/Ubuntu)
 
 ## [Install ROS Packages](#install-ros-packages)
-Install dependent packages for OpenManipulator. Run the following command in a terminal window.
+Install dependent packages for OpenMANIPULATOR. Run the following command in a terminal window.
 
 **NOTE**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`+`Alt`+`t`.
 {: .notice--info}
@@ -73,14 +73,14 @@ $ git clone https://github.com/ROBOTIS-GIT/robotis_manipulator.git
 $ cd ~/catkin_ws && catkin_make
 ```
 
-If the catkin_make command has been completed without any errors, all the preparations for using OpenManipulator-X are done.
+If the catkin_make command has been completed without any errors, all the preparations for using OpenMANIPULATOR-X are done.
 
 ## [Communication Converter](#communication-converter)
 
 ### [U2D2](#u2d2)
 
 #### Connection
-Connect micro USB (connected to PC), Dynamixel(OpenManipulator), and 12V Power to U2D2 and U2D2 power hub board as shown below.
+Connect micro USB (connected to PC), Dynamixel(OpenMANIPULATOR), and 12V Power to U2D2 and U2D2 power hub board as shown below.
 
 <img src="/assets/images/platform/openmanipulator_x/OpenManipulator_u2d2_setup2.png" width="800">
 
@@ -107,12 +107,12 @@ $ rosrun open_manipulator_controller create_udev_rules
 {: .notice--success}
 
 ### [OpenCR](#opencr)
-This section explains how to set up OpenCR as a communication board between **ROS Packages** of PC and DYNAMIXEL of OpenManipulator-X.  
-If you want to operate OpenManipulator-X on embedded system (OpenCR) without ROS, please refer [[OpenCR] Setup](/docs/en/platform/openmanipulator_x/opencr-setup/#opencr-setup).
+This section explains how to set up OpenCR as a communication board between **ROS Packages** of PC and DYNAMIXEL of OpenMANIPULATOR-X.  
+If you want to operate OpenMANIPULATOR-X on embedded system (OpenCR) without ROS, please refer [[OpenCR] Setup](/docs/en/platform/openmanipulator_x/opencr-setup/#opencr-setup).
 
 #### Connection
 
-Connect micro USB (connected to PC), Dynamixel(OpenManipulator), and 12V Power to OpenCR as shown below.
+Connect micro USB (connected to PC), Dynamixel(OpenMANIPULATOR), and 12V Power to OpenCR as shown below.
 
 <img src="/assets/images/platform/openmanipulator_x/OpenManipulator_opencr_setup2.png" width="800">
 
@@ -140,4 +140,5 @@ When the upload is completed, the following comments are displayed in the log wi
 
 If it is shown different comments than this, try uploading again. Refer to the [OpenCR](http://emanual.robotis.com/docs/en/parts/controller/opencr10/) for details.
 
-**Tip**: If an error of `cmd_read_board_name fail: 0xF020` occurs constantly during upload, please refer to [OpenCR e-manual](http://emanual.robotis.com/docs/en/parts/controller/opencr10/#firmware-recovery-mode) to enter the firmware recovery mode and upload the source code again after entering mode.
+**TIP**: If an error of `cmd_read_board_name fail: 0xF020` occurs constantly during upload, please refer to [OpenCR e-manual](http://emanual.robotis.com/docs/en/parts/controller/opencr10/#firmware-recovery-mode) to enter the firmware recovery mode and upload the source code again after entering mode.  
+{: .notice--success}

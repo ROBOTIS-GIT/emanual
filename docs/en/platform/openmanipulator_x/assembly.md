@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_x/assembly/
 sidebar:
-  title: OpenManipulator-X
+  title: OpenMANIPULATOR-X
   nav: "openmanipulator_x"
 ---
 
@@ -71,13 +71,13 @@ sidebar:
 | **Plate**  | [Base Plate-02](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=3331)                  |    1     |
 
 
-<!-- - [Parts of OpenManipulator-X](https://docs.google.com/a/robotis.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit?usp=sharing) -->
+<!-- - [Parts of OpenMANIPULATOR-X](https://docs.google.com/a/robotis.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit?usp=sharing) -->
 
 <!-- [DIY Manual](https://drive.google.com/open?id=1c5U0v2dQhYiulqiWI0VQMameG82WCc-4rl6J6zlQejA) -->
 
 ## [3D Printed Parts](#3d-printed-parts)
 
-We provide the 3D CAD files of OpenManipulator-X parts. User can easily modify and print them.
+We provide the 3D CAD files of OpenMANIPULATOR-X parts. User can easily modify and print them.
 
 - 3D CAD Files ([Onshape](http://www.robotis.com/service/download.php?no=690), [Thingiverse](https://www.thingiverse.com/thing:3069574))
 
@@ -85,9 +85,9 @@ We provide the 3D CAD files of OpenManipulator-X parts. User can easily modify a
 
 ## [Assembly Manual](#assembly-manual)
 
-OpenManipulator-X is delivered as unassembled parts in the box. Follow the following instruction to assemble it.
+OpenMANIPULATOR-X is delivered as unassembled parts in the box. Follow the following instruction to assemble it.
 
-- `Download PDF` [Assembly Manual for OpenManipulator-X](http://www.robotis.com/service/download.php?no=1255)
+- `Download PDF` [Assembly Manual for OpenMANIPULATOR-X](http://www.robotis.com/service/download.php?no=1255)
 
 - `Assembly Video`
 

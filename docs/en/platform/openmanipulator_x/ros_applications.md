@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_x/ros_applications/
 sidebar:
-  title: OpenManipulator-X
+  title: OpenMANIPULATOR-X
   nav: "openmanipulator_x"
 ---
 
@@ -215,7 +215,7 @@ $ roslaunch roslaunch open_manipulator_camera raspicam.launch
 **NOTE**:
 - This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - The `open_manipulator_perceptions` package requires [`ar_track_alvar`](http://wiki.ros.org/ar_track_alvar) package.
-- Make sure to run the [OpenManipulator controller](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) instructions before running the instructions below.
+- Make sure to run the [Openmanipulator controller](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) instructions before running the instructions below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -288,7 +288,7 @@ When the camera recognizes the AR marker, the pose of the AR marker is shown on 
 ![](/assets/images/platform/openmanipulator_x/OpenManipulator_AR_Marker.png)
 
 ### [Pick and Place Example](#pick-and-place-example)
-In this example, OpenManipulator-X uses Raspberry Pi Camera V2 to pick and place blocks. Print the camera frame to the OpenManipulator-X using a 3D printer to mount the camera. Attach a 3cm x 3cm ar marker to the cube block. When you run the example package, you pick the ar marker's id 1, 2, and 3 in order and stack them on one side.
+In this example, OpenMANIPULATOR-X uses Raspberry Pi Camera V2 to pick and place blocks. Print the camera frame to the OpenMANIPULATOR-X using a 3D printer to mount the camera. Attach a 3cm x 3cm ar marker to the cube block. When you run the example package, you pick the ar marker's id 1, 2, and 3 in order and stack them on one side.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5trKxv8UPN8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

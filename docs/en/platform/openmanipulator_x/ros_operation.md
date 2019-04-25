@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_x/ros_operation/
 sidebar:
-  title: OpenManipulator-X
+  title: OpenMANIPULATOR-X
   nav: "openmanipulator_x"
 ---
 
@@ -23,28 +23,28 @@ sidebar:
 **NOTE**:
 - This instructions has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - This instructions are supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
-- Make sure to run the [OpenManipulator controller](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) instructions before running the instruction below.
+- Make sure to run the [OpenMANIPULATOR controller](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) instructions before running the instruction below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-  You can use the GUI program to manipulate OpenManipulator. Launch `open_manipulator_control_gui` node.  This program shows the status of and allows users to control OpenManipulator.
+  You can use the GUI program to manipulate OpenMANIPULATOR. Launch `open_manipulator_control_gui` node.  This program shows the status of and allows users to control OpenMANIPULATOR.
 
   ``` bash
   $ roslaunch open_manipulator_control_gui open_manipulator_control_gui.launch
   ```
-  To controll OpenManipulator, first click the `Timer Start` button.  
+  To controll OpenMANIPULATOR, first click the `Timer Start` button.  
   ![](/assets/images/platform/openmanipulator_x/OpenManipulator_GUI.png)  
 
-  To check the status of the OpenManipulator-X (joint states, kinematics pose).  
+  To check the status of the OpenMANIPULATOR-X (joint states, kinematics pose).  
   ![](/assets/images/platform/openmanipulator_x/OpenManipulator_GUI2.png)  
 
-  To manipulate the OpenManipulator-X in the [joint space]{: .popup}. Enter the joint angles and total time of the trajectory. Then click the `send` button.  
+  To manipulate the OpenMANIPULATOR-X in the [joint space]{: .popup}. Enter the joint angles and total time of the trajectory. Then click the `send` button.  
   ![](/assets/images/platform/openmanipulator_x/OpenManipulator_GUI3.png)  
 
-  To manipulate the OpenManipulator-X in the [task space]{: .popup}. Enter the kinematics pose of the OpenManipulator-X end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory. Then click the `send` button.  
+  To manipulate the OpenMANIPULATOR-X in the [task space]{: .popup}. Enter the kinematics pose of the OpenMANIPULATOR-X end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory. Then click the `send` button.  
   ![](/assets/images/platform/openmanipulator_x/OpenManipulator_GUI4.png)  
 
-  To create a drawing trajectory with the OpenManipulator. First, choose the drawing trajectory type(line, circle, rhombus, heart). And enter the parameters according to the drawing trajectory type and the total time of the drawing trajectory. Then click the `send` button.  
+  To create a drawing trajectory with the OpenMANIPULATOR. First, choose the drawing trajectory type(line, circle, rhombus, heart). And enter the parameters according to the drawing trajectory type and the total time of the drawing trajectory. Then click the `send` button.  
   ![](/assets/images/platform/openmanipulator_x/OpenManipulator_GUI5.png)  
 
 ## [Teleoperation](#teleoperation)
@@ -52,7 +52,7 @@ sidebar:
 **NOTE**:
 - This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - This instruction is supposed to be run on PC with ROS packages installed in. Please run the instruction below on your PC ROS packages installed in.
-- Make sure to run [OpenManipulator controller](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) instructions before running the instructions below.
+- Make sure to run [OpenMANIPULATOR controller](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) instructions before running the instructions below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -72,7 +72,7 @@ sidebar:
 
   ```
   ---------------------------
-  Control Your OpenManipulator!
+  Control Your OpenMANIPULATOR!
   ---------------------------
   w : increase x axis in task space
   s : decrease x axis in task space
@@ -118,7 +118,7 @@ Connect PS4 joystick to the PC via Bluetooth using the following command
 $ sudo ds4drv
 ```
 
-Enter pairing mode with PS4 by pressing and holding Playstation button + share button for 10 sec. If the light on PS4 turns blue, enter the following commands in terminal and control OpenManipulator.
+Enter pairing mode with PS4 by pressing and holding Playstation button + share button for 10 sec. If the light on PS4 turns blue, enter the following commands in terminal and control OpenMANIPULATOR.
 
 ``` bash
 $ export ROS_NAMESPACE=/open_manipulator
@@ -202,7 +202,7 @@ After set the parameters, launch the open_manipulator_controller.
   ```
 
 **Warning!**     
-When launching the controller to use MoveIt!, [OpenManipulator launch file](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) must be turned off.
+When launching the controller to use MoveIt!, [OpenMANIPULATOR launch file](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) must be turned off.
 {: .notice--warning}
 
   ![](/assets/images/platform/openmanipulator_x/moveit_launch.png)  
@@ -220,7 +220,7 @@ The user can use this service to receives a kinematics pose which is calculated 
 The user can use this service to create a trajectory in the [joint space]{: .popup} by move_group. The user inputs the angle of the target joint and the total time of the trajectory.
 
 - `/open_manipulator/moveit/set_kinematics_pose` ([open_manipulator_msgs/SetKinematicsPose]{: .popup})  
-The user can use this service to create a trajectory in the [task space]{: .popup} by move_group. The user inputs the kinematics pose(orientation only) of the OpenManipulator-X end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
+The user can use this service to create a trajectory in the [task space]{: .popup} by move_group. The user inputs the kinematics pose(orientation only) of the OpenMANIPULATOR-X end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
 
 **TIP**: If you would like to use inverse kinematics with `position_only`, check `open_manipulator_moveit` -> `config` -> `kinematics.yaml` and set `position_only_ik` parameter to **True**.
 {: .notice--success}
