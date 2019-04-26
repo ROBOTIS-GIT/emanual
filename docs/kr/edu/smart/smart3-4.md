@@ -17,13 +17,13 @@ sidebar:
 
 로보티즈 스마트III는 일반 리모컨을 이용한 로봇 구동의 단순 조정한계를 스마트 기기와 로봇을 블루투스로 연결하여 양방향 입출력이 가능하도록 구현된 교육용 로봇 솔루션입니다.
 
-로보티즈 스마트III는 교재와 예제 로봇이 결합되어 로봇 및 과학 원리의 이해, 로봇의 제작, 문제 풀이 등의 과정을 제공합니다.
+- 교재와 예제 로봇이 결합되어 로봇 및 과학 원리의 이해, 로봇의 제작, 문제 풀이 등의 과정을 제공합니다.
 
-로보티즈 스마트III 4단계에는 추가적인 서보모터를 통해 최대 8관절의 로봇구조를 학습할 수 있습니다. 이번 단계에서 새로이 사용되는 모션 프로그램을 통해 다관절 생체모방형 로봇이나 복잡한 기계의 형태를 구현하는 동작을 가진 로봇을 학습 할 수 있습니다.
+- 추가적인 서보모터를 통해 최대 8관절의 로봇구조를 배울수 있습니다. 이번 단계에서 모션 프로그램을 통해 다관절 생체모방형 로봇이나 복잡한 기계의 형태를 구현하는 동작을 가진 로봇을 학습 할 수 있습니다.
 
-로보티즈 스마트III 4단계에서 프로그램 학습 및 다운로드를 하기 위해서는 R+SMARTIII 와R+m.Task2, 그리고 R+m.motion이 필요합니다.
+- 프로그램 학습 및 다운로드를 하기 위해서는 [R+ SMARTIII] 와 [R+m.Task2.0], 그리고 [R+m.Motion]이 필요합니다.
 
-또한, 스마트기기가 없는 경우에도 로보티즈 BT-410 SET가 결합된 리모컨(RC-100B)으로 로봇을 조종할 수 있도록 별도의 예제 프로그램이 제공됩니다.
+- 스마트기기가 없을때는, 블루투스모듈(BT-410 SET)가 결합된 리모컨(RC-100B)으로 로봇을 조종할 수 있도록 별도의 예제 프로그램이 제공됩니다.
 
 
 [스마트 앱 파라미터 사용법 바로가기]  
@@ -37,14 +37,19 @@ sidebar:
 
 # [작동하기](#작동하기)
 
-- 스마트 기기에 R+ SMARTIII 와 R+m.task2.0 를 설치해야 합니다.
+- 스마트 기기에 [R+ SMARTIII] 와 [R+m.Task2.0],[R+m.Motion]을 설치해야 합니다.
 
 - 앱 설치가 완료되면 스마트III 1단계 키트에 포함된 제어기([CM-200])에 블루투스([BT-410])를 연결하고 R+SMARTIII에서 R+m.task2.0을 실행하여 예제를 다운로드 받습니다.
 
-  **[R+ SMARTIII 설치 및 예제 다운로드 방법 바로가기]**
-
-  **주의**: 제어기에 프로그램을 다운로드 받으면, 그전에 다운받은 프로그램은 지워집니다. 예제 동작시 음원이나 음성이 재생되는 것을 함께 확인하기 위해서는 스마트 기기의 미디어 볼륨을 반드시 키우고 실행하길 권장합니다.  
-  {: .notice}
+{% capture warning_1 %}
+ **주의**   
+ - 제어기에 프로그램을 다운로드 받으면, 그전에 다운받은 프로그램은 지워집니다. 예제 동작시 음원이나 음성이 재생되는 것을 함께 확인하기 위해서는 스마트 기기의 미디어 볼륨을 반드시 키우고 실행하길 권장합니다.  
+ - 구글의 변경된 정책으로 SMS 기능은 더이상 지원되지 않습니다.
+ SMS 기능이 필요한 경우 이전 버전의 앱 설치파일(APK)을 다운로드 받아 수동으로 설치하시기 바랍니다.  
+ 이전 버전 사용시 최신 업데이트가 반영되지 않는 점 유의하시기 바랍니다.  
+ **[R+ SMARTIII 설치 및 예제 다운로드 방법 바로가기](/docs/kr/software/mobile_app/rplussmart/#r-smart-다운로드설치)**
+{% endcapture %}
+<div class ="notice--warning">{{ warning_1 | markdownify}}</div>
 
 ## 작동방법
 
@@ -83,6 +88,9 @@ sidebar:
 [태스크 코드 다운로드]: /docs/kr/faq/download_task_code/
 [CM-200]: /docs/kr/parts/controller/cm-200/
 [BT-410]: /docs/kr/parts/communication/bt-410/
+[R+m.Motion]: /docs/kr/software/rplus_mobile/mmotion/
+[R+ SMARTIII]: /docs/kr/software/mobile_app/rplussmart/
+[R+m.Task2.0]: /docs/kr/software/rplus_mobile/mtask20/
 [01_smart3_L4_Factory_kr.tskx]: http://www.robotis.com/service/download.php?no=1110
 [03_smart3_L4_Factory_RC_kr.tskx]: http://www.robotis.com/service/download.php?no=1119
 [01_smart3_L4_Smart_Explorer_kr.tskx]: http://www.robotis.com/service/download.php?no=1113
