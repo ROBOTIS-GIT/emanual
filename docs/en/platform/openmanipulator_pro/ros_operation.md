@@ -32,7 +32,7 @@ sidebar:
 You can use the GUI program to manipulate OpenMANIPULATOR-PRO. This program shows the status of and allows users to control OpenMANIPULATOR-PRO.
 
 ```
-$ rosrun manipulator_h_gui manipulator_h_gui
+$ rosrun open_manipulator_pro_gui open_manipulator_pro_gui
 ```
 
 ![](/assets/images/platform/manipulator_h/manipulator_h_gui.png)  

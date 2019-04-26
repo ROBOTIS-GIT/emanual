@@ -30,17 +30,8 @@ sidebar:
 ```
 $ sudo bash
 [sudo] password for robotis:   
-# roslaunch manipulator_h_manager open_manipulator_pro_manager.launch   
+# roslaunch open_manipulator_pro_manager open_manipulator_pro_manager.launch   
 ```
-If you have a gripper([RH-P12-RN(A)](/docs/en/platform/rh_p12_rna/)), see below.
-
-```
-$ sudo bash
-[sudo] password for robotis:   
-# roslaunch manipulator_h_manager open_manipulator_pro_manager.launch with_gripper:=true
-```
-
-
 
 If the manipulator manger has been launched successfully, the terminal will show the following message.
 
@@ -59,11 +50,11 @@ PARAMETERS
 
 NODES
   /
-    manipulator_h_manager (manipulator_h_manager/manipulator_h_manager)
+    open_manipulator_pro_manager (open_manipulator_pro_manager/open_manipulator_pro_manager)
 
 ROS_MASTER_URI=http://localhost:11311
 
-process[manipulator_h_manager-1]: started with pid [19408]
+process[open_manipulator_pro_manager-1]: started with pid [19408]
 [ INFO] [1552279834.24ro20783]: manager->init
 /dev/ttyUSB0 added. (baudrate: 1000000)
 (/dev/ttyUSB0) [ID:  1] H54P-200-S500-R added.
@@ -75,15 +66,23 @@ process[manipulator_h_manager-1]: started with pid [19408]
 [ INFO] [1552279834.361381084]: Load offsets...
 ```
 
+{% capture notice_01 %}
+**NOTE**:
+If you have a gripper([RH-P12-RN(A)](/docs/en/platform/rh_p12_rna/)), Download the [source code of RH-P12-RN](https://github.com/ROBOTIS-GIT/RH-P12-RN.git) from GitHub and add the gripper module to the framework([Example](http://emanual.robotis.com/docs/en/software/robotis_framework_packages/tutorials/#tutorials)).
+{% endcapture %}
+<div class="notice--info">{{ notice_01 | markdownify }}</div>
+
+
+
 ## [Check Setting](#check-setting)
 ### [RViz](#rviz)
 ```
-$ roslaunch manipulator_h_bringup open_manipulator_pro.launch
+$ roslaunch open_manipulator_pro_bringup open_manipulator_pro.launch
 ```
 
 If you have a gripper([RH-P12-RN(A)](/docs/en/platform/rh_p12_rna/)), see below.
 ```
-$ roslaunch manipulator_h_bringup open_manipulator_pro.launch with_gripper:=true
+$ roslaunch open_manipulator_pro_bringup open_manipulator_pro.launch with_gripper:=true
 ```
 ![](/assets/images/platform/openmanipulator_pro/rviz.png)
 
