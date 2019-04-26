@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: openOpenMANIPULATOR_pro_getting_started
+ref: openmanipulator_pro_getting_started
 read_time: true
 share: false
 author_profile: false
@@ -102,7 +102,7 @@ The power cable supplies power to the Manipulator.
 ### U2D2
 [U2D2](/docs/en/parts/interface/u2d2/) is a small size USB communication converter that enables to control and operate DYNAMIXEL with PC. Connect the [U2D2](/docs/en/parts/interface/u2d2/) to the PC via USB hub.
 
-![](/assets/images/platform/OpenMANIPULATOR_pro/u2d2.png)
+![](/assets/images/platform/openmanipulator_pro/u2d2.png)
 
 ### Goal Position Values with Respect to Rotation
 
@@ -110,5 +110,5 @@ The power cable supplies power to the Manipulator.
 
 |Model Name|Relationship between angle(deg) and position value|
 |:---:|:---:|
-|H54P-200-S500-R<br />H54P-100-S500-R|-180 ~ 180 (deg) → -501923 ~ 501923<br />![](/assets/images/platform/OpenMANIPULATOR_pro/h54p_goal_position.png)<br />![](/assets/images/platform/OpenMANIPULATOR_pro/h54p_goal_angle.png)|
-|H42P-020-S300-R|-180 ~ 180 (deg) → -303750 ~ 303750<br />![](/assets/images/platform/OpenMANIPULATOR_pro/h42p_goal_position.png)<br />![](/assets/images/platform/OpenMANIPULATOR_pro/h42p_goal_angle.png)|
+|H54P-200-S500-R<br />H54P-100-S500-R|-180 ~ 180 (deg) → -501923 ~ 501923<br />![](/assets/images/platform/openmanipulator_pro/h54p_goal_position.png)<br />![](/assets/images/platform/openmanipulator_pro/h54p_goal_angle.png)|
+|H42P-020-S300-R|-180 ~ 180 (deg) → -303750 ~ 303750<br />![](/assets/images/platform/openmanipulator_pro/h42p_goal_position.png)<br />![](/assets/images/platform/openmanipulator_pro/h42p_goal_angle.png)|

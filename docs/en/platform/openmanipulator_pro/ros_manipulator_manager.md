@@ -135,7 +135,7 @@ $ roslaunch manipulator_h_bringup open_manipulator_pro.launch with_gripper:=true
 
 
 [std_msgs/String]: /docs/en/popup/std_msgs_string/
-[std_msgs/Float64]: /docs/en/popup/std_msgs_float64_msg/
+[std_msgs/Float64]: /docs/en/popup/std_msgs_Float64_msg/
 [geometry_msgs/Pose]: /docs/en/popup/geometry_msgs_Pose_msg/
 [robotis_controller_msgs/StatusMsg]: /docs/en/popup/StatusMsg.msg/
 [manipulator_manipulation_module_msgs/JointPose]: /docs/en/popup/JointPose.msg/
