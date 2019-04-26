@@ -1798,7 +1798,7 @@ LED 모듈의 왼쪽과 오른쪽 LED 를 ON/OFF 하거나 현재 상태를 읽�
 
 숫자를 기억하고 있어야 하는 경우나 특정 상황에 따라 값을 바꾸어야 하는 경우, 혹은 공통된 값을 한꺼번에 변경해야 할 경우에 유용합니다.
 
-
+[서보모터 부품]: /docs/kr/parts/motor/servo_motor/
 [CM-100]: /docs/kr/parts/controller/cm-100.md
 [CM-100A]: /docs/kr/parts/controller/cm-100.md
 [CM-150]: /docs/kr/parts/controller/cm-150.md
