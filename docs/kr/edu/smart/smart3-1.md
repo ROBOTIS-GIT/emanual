@@ -40,22 +40,33 @@ sidebar:
 
 # [작동하기](#작동하기)
 
-- 스마트 기기에 [R+ SMARTIII] 와 [R+m.Task2.0]를 설치해야 합니다.
+- 스마트 기기에 [R+ SMARTIII] 와 [R+m.Task2.0]를 설치해야 합니다.  
+- 앱 설치가 완료되면 스마트III 1단계 키트에 포함된 제어기([CM-200])에 블루투스([BT-410])를 연결하고 R+SMARTIII에서 R+m.task2.0을 실행하여 예제를 다운로드 받습니다.  
+ 
+**[R+ SMARTIII 설치 및 예제 다운로드 방법 바로가기](/docs/kr/software/mobile_app/rplussmart/#r-smart-다운로드설치)**  
+{% capture warning_1 %}
+**주의**  
+- 제어기에 프로그램을 다운로드 받으면, 그전에 다운받은 프로그램은 지워집니다.  
+- 예제 동작시 음원이나 음성이 재생되는 것을 함께 확인하기 위해서는 스마트 기기의 미디어 볼륨을 반드시 키우고 실행하길 권장합니다.
+{% endcapture %}
+<div class ="notice--warning">{{ warning_1 | markdownify}}</div>
 
-- 앱 설치가 완료되면 스마트III 1단계 키트에 포함된 제어기(CM-200)에 블루투스(BT-410)를 연결하고 R+SMARTIII에서 R+m.task2.0을 실행하여 예제를 다운로드 받습니다.
- {% capture warning_1 %}
-  **주의**   
-  - 제어기에 프로그램을 다운로드 받으면, 그전에 다운받은 프로그램은 지워집니다. 예제 동작시 음원이나 음성이 재생되는 것을 함께 확인하기 위해서는 스마트 기기의 미디어 볼륨을 반드시 키우고 실행하길 권장합니다.  
-  - 구글의 변경된 정책으로 SMS 기능은 더이상 지원되지 않습니다.
-  SMS 기능이 필요한 경우 이전 버전의 앱 설치파일(APK)을 다운로드 받아 수동으로 설치하시기 바랍니다.  
-  이전 버전 사용시 최신 업데이트가 반영되지 않는 점 유의하시기 바랍니다.  
-  **[R+ SMARTIII 설치 및 예제 다운로드 방법 바로가기](/docs/kr/software/mobile_app/rplussmart/#r-smart-다운로드설치)**
- {% endcapture %}
- <div class ="notice--warning">{{ warning_1 | markdownify}}</div>
+{% capture warning_2 %}
+**주의**  
+- 구글의 변경된 정책으로 SMS 기능은 더이상 지원되지 않습니다.  
+SMS 기능이 필요한 경우 이전 버전의 앱 설치파일(APK)을 다운로드 받아 수동으로 설치하시기 바랍니다.  
+이전 버전 사용시 최신 업데이트가 반영되지 않는 점 유의하시기 바랍니다.  
+[R+ SMART (v0.9.3.6) 다운로드](http://www.robotis.com/service/download.php?no=1674)  
+[R+ SMART2 (v0.9.3.6) 다운로드](http://www.robotis.com/service/download.php?no=1675)  
+[R+ SMART3 (v0.9.6.1) 다운로드](http://www.robotis.com/service/download.php?no=1673)   
+**참고** : [인터넷에서 받은 앱 설치하기](/docs/kr/popup/apk_install){: .popup}  
+{% endcapture %}
+<div class ="notice--warning">{{ warning_2 | markdownify}}</div>
+
  
 ## 작동방법
 
-- 제어기의 버튼을 눌러 전원을 켭니다. R+ SMARTIII에서 해당 예제를 클릭하여 제어기와 스마트기기 연결이 완료되면 프로그램이 실행됩니다.
+- 제어기의 버튼을 눌러 전원을 켭니다. R+ SMARTIII에서 해당 예제를 클릭하여 제어기와 스마트기기 연결이 완료되면 프로그램이 실행됩니다.  
 
   ![](/assets/images/edu/smart/cm_200_7.jpg)
 

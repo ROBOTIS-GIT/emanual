@@ -37,18 +37,30 @@ sidebar:
 
 # [작동하기](#작동하기)
 
-- 사용할 스마트 기기에 (R+IoT)를 설치해야 합니다.
-- 설치가 완료되면 로보티즈IOT 1단계 키트에 포함된 제어기(openCM7.0)에 블루투스를 연결하고 R+IoT에서 R+m.Task2를 이용하여 프로그램을 코딩한 후 다운로드 받습니다.
- {% capture warning_1 %}
-  **주의**   
-  - 제어기에 프로그램을 다운로드 받으면, 그전에 다운받은 프로그램은 지워집니다. 예제 동작시 음원이나 음성이 재생되는 것을 함께 확인하기 위해서는 스마트 기기의 미디어 볼륨을 반드시 키우고 실행하길 권장합니다.  
-  - 구글의 변경된 정책으로 SMS 기능은 더이상 지원되지 않습니다.
-  SMS 기능이 필요한 경우 이전 버전의 앱 설치파일(APK)을 다운로드 받아 수동으로 설치하시기 바랍니다.  
-  이전 버전 사용시 최신 업데이트가 반영되지 않는 점 유의하시기 바랍니다.  
-  **[R+IoT 설치 및 실행 방법 바로가기](/docs/kr/software/mobile_app/rplusiot/#r-iot-다운로드설치)**  
-  **[R+m.task2 설치 및 실행 방법 바로가기](/docs/kr/software/rplus_mobile/mtask20/)**
- {% endcapture %}
- <div class ="notice--warning">{{ warning_1 | markdownify}}</div>
+- 사용할 스마트 기기에 (R+IoT)를 설치해야 합니다.  
+
+- 설치가 완료되면 로보티즈IOT 1단계 키트에 포함된 제어기([OpenCM7.0])에 블루투스를 연결하고 R+IoT에서 [R+m.태스크2.0]을 이용하여 프로그램을 코딩한 후 다운로드 받습니다.  
+ 
+[R+IoT 설치 및 실행 방법 바로가기]  
+  
+[R+m.태스크2.0 설치 및 실행 방법 바로가기]  
+
+{% capture warning_1 %}
+**주의**  
+- 제어기에 프로그램을 다운로드 받으면, 그전에 다운받은 프로그램은 지워집니다. 
+- 예제 동작시 음원이나 음성이 재생되는 것을 함께 확인하기 위해서는 스마트 기기의 미디어 볼륨을 반드시 키우고 실행하길 권장합니다.
+{% endcapture %}
+<div class ="notice--warning">{{ warning_1 | markdownify}}</div>
+
+{% capture warning_2 %}
+**주의**
+- 구글의 변경된 정책으로 SMS 기능은 더이상 지원되지 않습니다.  
+SMS 기능이 필요한 경우 이전 버전의 앱 설치파일(APK)을 다운로드 받아 수동으로 설치하시기 바랍니다.  
+이전 버전 사용시 최신 업데이트가 반영되지 않는 점 유의하시기 바랍니다.  
+[R+ IoT (v0.9.3.6) 다운로드](http://www.robotis.com/service/download.php?no=1669)  
+**참고** : [인터넷에서 받은 앱 설치하기](/docs/kr/popup/apk_install){: .popup}  
+{% endcapture %}
+<div class ="notice--warning">{{ warning_2 | markdownify}}</div>
 
 ## [작동방법](#작동방법)
 
@@ -92,6 +104,8 @@ sidebar:
 [교안예제]: #교안예제
 [R+m.태스크2.0]: /docs/kr/software/rplus_mobile/mtask20/
 [예제의 실행 방법]: /docs/kr/edu/ollo/bugkit/#태스크-코드-다운로드
+[R+IoT 설치 및 실행 방법 바로가기]: /docs/kr/software/mobile_app/rplusiot/#r-iot-다운로드설치
+[R+m.태스크2.0 설치 및 실행 방법 바로가기]: /docs/kr/software/rplus_mobile/mtask20/  
 [IoT_L2_1_Hello(p)_KR]: http://www.robotis.com/service/download.php?no=1162
 [IoT_L2_1_Hello_KR]: http://www.robotis.com/service/download.php?no=1163
 [IoT_L2_2_MessageSignal(p)_KR]: http://www.robotis.com/service/download.php?no=1164
