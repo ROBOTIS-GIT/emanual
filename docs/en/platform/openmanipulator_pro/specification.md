@@ -41,6 +41,11 @@ sidebar:
 If you have a gripper([RH-P12-RN(A)](/docs/en/platform/rh_p12_rna/)), see below.
 ![](/assets/images/platform/openmanipulator_pro/dimension_with_gripper.png)
 
+## [Workspace](#workspace)
+![](/assets/images/platform/openmanipulator_pro/ws1.png)
+  
+![](/assets/images/platform/openmanipulator_pro/ws2.png)  
+
 
 ## [Home Position](#home-position)
 

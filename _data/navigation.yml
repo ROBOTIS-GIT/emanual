@@ -235,9 +235,9 @@ main:
       - title: "Manipulator-H"
         titlekr: "Manipulator-H"
         url: /platform/manipulator_h/introduction/
-    #  - title: "OpenMANIPULATOR-PRO"
-    #    titlekr: "OpenMANIPULATOR-PRO"
-    #    url: /platform/openmanipulator_pro/overview/
+      - title: "OpenMANIPULATOR-PRO"
+        titlekr: "OpenMANIPULATOR-PRO"
+        url: /platform/openmanipulator_pro/overview/
       - title: "OpenMANIPULATOR-X"
         titlekr: "OpenMANIPULATOR-X"
         url: /platform/openmanipulator_x/overview/
@@ -15717,6 +15717,8 @@ openmanipulator_pro:
         url: /platform/openmanipulator_pro/specification/#specifications
       - title: "Dimension"
         url: /platform/openmanipulator_pro/specification/#dimension
+      - title: "Workspace"
+        url: /platform/openmanipulator_pro/specification/#workspace
       - title: "Home Position"
         url: /platform/openmanipulator_pro/specification/#home-position
       - title: "D-H Configuration"
