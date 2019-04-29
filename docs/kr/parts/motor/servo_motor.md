@@ -16,6 +16,7 @@ sidebar:
 ![img](/assets/images/parts/motor/servo_motor_product.jpg)
 
 > 서보 모터 SM-10
+
 - 로보티즈 IoT 및 로보티즈 스마트교육키트등에 사용되는 모터입니다.
 - 제어기에 포트 제어를 통해 동작을 제어할 수 있습니다.
 - "회전 모드" 로 설정하면 감속모터와 동일하게 동작시킬 수 있으며, "관절 모드" 로 설정하면 회전 속도(힘)와 위치값 지정을 통해 모터를 지정된 위치까지 움직이도록 할 수 있습니다.
@@ -66,5 +67,5 @@ sidebar:
 
  <iframe width="560" height="315" src="https://www.youtube.com/embed/-qRy_NDd5eU" frameborder="0" allowfullscreen></iframe>
 
- [로보플러스 태스크 1.0-서보모터]: /docs/kr/software/rplus1/task/programming_02/#서보모터
+ [로보플러스 태스크 1.0- 서보모터]: /docs/kr/software/rplus1/task/programming_02/#서보모터
  [제어기 호환표]: /docs/kr/parts/controller/controller_compatibility/

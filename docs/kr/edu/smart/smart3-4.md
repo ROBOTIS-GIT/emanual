@@ -41,15 +41,25 @@ sidebar:
 
 - 앱 설치가 완료되면 스마트III 1단계 키트에 포함된 제어기([CM-200])에 블루투스([BT-410])를 연결하고 R+SMARTIII에서 R+m.task2.0을 실행하여 예제를 다운로드 받습니다.
 
+**[R+ SMARTIII 설치 및 예제 다운로드 방법 바로가기](/docs/kr/software/mobile_app/rplussmart/#r-smart-다운로드설치)**  
 {% capture warning_1 %}
- **주의**   
- - 제어기에 프로그램을 다운로드 받으면, 그전에 다운받은 프로그램은 지워집니다. 예제 동작시 음원이나 음성이 재생되는 것을 함께 확인하기 위해서는 스마트 기기의 미디어 볼륨을 반드시 키우고 실행하길 권장합니다.  
- - 구글의 변경된 정책으로 SMS 기능은 더이상 지원되지 않습니다.
- SMS 기능이 필요한 경우 이전 버전의 앱 설치파일(APK)을 다운로드 받아 수동으로 설치하시기 바랍니다.  
- 이전 버전 사용시 최신 업데이트가 반영되지 않는 점 유의하시기 바랍니다.  
- **[R+ SMARTIII 설치 및 예제 다운로드 방법 바로가기](/docs/kr/software/mobile_app/rplussmart/#r-smart-다운로드설치)**
+**주의**  
+- 제어기에 프로그램을 다운로드 받으면, 그전에 다운받은 프로그램은 지워집니다.  
+- 예제 동작시 음원이나 음성이 재생되는 것을 함께 확인하기 위해서는 스마트 기기의 미디어 볼륨을 반드시 키우고 실행하길 권장합니다.
 {% endcapture %}
 <div class ="notice--warning">{{ warning_1 | markdownify}}</div>
+
+{% capture warning_2 %}
+**주의**  
+- 구글의 변경된 정책으로 SMS 기능은 더이상 지원되지 않습니다.  
+SMS 기능이 필요한 경우 이전 버전의 앱 설치파일(APK)을 다운로드 받아 수동으로 설치하시기 바랍니다.  
+이전 버전 사용시 최신 업데이트가 반영되지 않는 점 유의하시기 바랍니다.  
+[R+ SMART (v0.9.3.6) 다운로드](http://www.robotis.com/service/download.php?no=1674)  
+[R+ SMART2 (v0.9.3.6) 다운로드](http://www.robotis.com/service/download.php?no=1675)  
+[R+ SMART3 (v0.9.6.1) 다운로드](http://www.robotis.com/service/download.php?no=1673)   
+**참고** : [인터넷에서 받은 앱 설치하기](/docs/kr/popup/apk_install){: .popup}  
+{% endcapture %}
+<div class ="notice--warning">{{ warning_2 | markdownify}}</div>
 
 ## 작동방법
 
@@ -68,17 +78,17 @@ sidebar:
 {: .notice}
 
 
-|로봇|태스크 코드|
-| :---: | :-----: |
-|1. 컬러공장<br />![](/assets/images/edu/smart/200_smartiii_l4_1factory.png)|[로봇 예제 프로그램][01_smart3_L4_Factory_kr.tskx]<br />[조종기 프로그램][03_smart3_L4_Factory_RC_kr.tskx]|
-|2. 스마트 탐사차<br />![](/assets/images/edu/smart/200_smartiii_l4_2tongs_car.png)|[로봇 예제 프로그램][01_smart3_L4_Smart_Explorer_kr.tskx]<br />[조종기 프로그램][03_smart3_L4_Smart_Explorer_RC_kr.tskx]|
-|3. 4족 로봇<br />![](/assets/images/edu/smart/200_smartiii_l4_3fwrobot.png)|[로봇 예제 프로그램][01_smart3_L4_Quadruped_Robot_kr.tskx]<br />[모션 파일][smart3_L4_Quadruped_Robot_kr.mtnx]<br />[조종기 프로그램][03_smart3_L4_Quadruped_Robot_RC_kr.tskx]|
-|4. 춤추는 고릴라<br />![](/assets/images/edu/smart/200_smartiii_l4_4dj_gorilla.png)|[로봇 예제 프로그램][01_smart3_L4_DJ_Gorilla_kr.tskx]<br />[모션 파일][smart3_L4_DJ_Gorilla_kr.mtnx]<br />[조종기 프로그램][03_smart3_L4_DJ_Gorilla_RC_kr.tskx]|
-|5. 스마트 강아지<br />![](/assets/images/edu/smart/200_smartiii_l4_5puppy.png)|[로봇 예제 프로그램][01_smart3_L4_Smart_Puppy_kr.tskx]<br />[모션 파일][smart3_L4_Smart_Puppy_kr.mtnx]<br />[조종기 프로그램][03_smart3_L4_Smart_Puppy_RC_kr.tskx]|
-|6. 변신로봇<br />![](/assets/images/edu/smart/200_smartiii_l4_6transformer.png)|[로봇 예제 프로그램][01_smart3_L4_Transformation_Robot_kr.tskx]<br />[모션 파일][smart3_L4_Transformation_Robot_kr.mtnx]<br />[조종기 프로그램][03_smart3_L4_Transformation_Robot_RC_kr.tskx]|
-|7. 레전드 히어로<br />![](/assets/images/edu/smart/200_smartiii_l4_7hero.png)|[로봇 예제 프로그램][01_smart3_L4_Hero.tskx]<br />[모션 파일][smart3_L4_Hero_kr.mtnx]<br />[조종기 프로그램][03_smart3_L4_Hero_RC_kr.tskx]|
-|8. 드래곤<br />![](/assets/images/edu/smart/200_smartiii_l4_8dragon.png)|[로봇 예제 프로그램][01_smart3_L4_Dragon_kr.tskx]<br />[모션 파일][smart3_L4_Dragon.mtnx]<br />[조종기 프로그램][03_smart3_L4_Dragon_RC_kr.tskx]|
-|9. 슈퍼카<br />![](/assets/images/edu/smart/200_smartiii_l4_9super_car.png)|[로봇 예제 프로그램][01_smart3_L4_Super_Car_kr.tskx]<br />[조종기 프로그램][03_smart3_L4_Super_Car_RC_kr.tskx]|
+|                                        로봇                                         |                                                                                          태스크 코드                                                                                          |
+|:-----------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+|     1. 컬러공장<br />![](/assets/images/edu/smart/200_smartiii_l4_1factory.png)     |                                          [로봇 예제 프로그램][01_smart3_L4_Factory_kr.tskx]<br />[조종기 프로그램][03_smart3_L4_Factory_RC_kr.tskx]                                           |
+| 2. 스마트 탐사차<br />![](/assets/images/edu/smart/200_smartiii_l4_2tongs_car.png)  |                                   [로봇 예제 프로그램][01_smart3_L4_Smart_Explorer_kr.tskx]<br />[조종기 프로그램][03_smart3_L4_Smart_Explorer_RC_kr.tskx]                                    |
+|     3. 4족 로봇<br />![](/assets/images/edu/smart/200_smartiii_l4_3fwrobot.png)     |        [로봇 예제 프로그램][01_smart3_L4_Quadruped_Robot_kr.tskx]<br />[모션 파일][smart3_L4_Quadruped_Robot_kr.mtnx]<br />[조종기 프로그램][03_smart3_L4_Quadruped_Robot_RC_kr.tskx]         |
+| 4. 춤추는 고릴라<br />![](/assets/images/edu/smart/200_smartiii_l4_4dj_gorilla.png) |                [로봇 예제 프로그램][01_smart3_L4_DJ_Gorilla_kr.tskx]<br />[모션 파일][smart3_L4_DJ_Gorilla_kr.mtnx]<br />[조종기 프로그램][03_smart3_L4_DJ_Gorilla_RC_kr.tskx]                |
+|   5. 스마트 강아지<br />![](/assets/images/edu/smart/200_smartiii_l4_5puppy.png)    |              [로봇 예제 프로그램][01_smart3_L4_Smart_Puppy_kr.tskx]<br />[모션 파일][smart3_L4_Smart_Puppy_kr.mtnx]<br />[조종기 프로그램][03_smart3_L4_Smart_Puppy_RC_kr.tskx]               |
+|   6. 변신로봇<br />![](/assets/images/edu/smart/200_smartiii_l4_6transformer.png)   | [로봇 예제 프로그램][01_smart3_L4_Transformation_Robot_kr.tskx]<br />[모션 파일][smart3_L4_Transformation_Robot_kr.mtnx]<br />[조종기 프로그램][03_smart3_L4_Transformation_Robot_RC_kr.tskx] |
+|    7. 레전드 히어로<br />![](/assets/images/edu/smart/200_smartiii_l4_7hero.png)    |                          [로봇 예제 프로그램][01_smart3_L4_Hero.tskx]<br />[모션 파일][smart3_L4_Hero_kr.mtnx]<br />[조종기 프로그램][03_smart3_L4_Hero_RC_kr.tskx]                           |
+|      8. 드래곤<br />![](/assets/images/edu/smart/200_smartiii_l4_8dragon.png)       |                       [로봇 예제 프로그램][01_smart3_L4_Dragon_kr.tskx]<br />[모션 파일][smart3_L4_Dragon.mtnx]<br />[조종기 프로그램][03_smart3_L4_Dragon_RC_kr.tskx]                        |
+|     9. 슈퍼카<br />![](/assets/images/edu/smart/200_smartiii_l4_9super_car.png)     |                                        [로봇 예제 프로그램][01_smart3_L4_Super_Car_kr.tskx]<br />[조종기 프로그램][03_smart3_L4_Super_Car_RC_kr.tskx]                                         |
 
 
 [스마트 앱 파라미터 사용법 바로가기]: /docs/kr/software/rplus1/task/task_misc/#스마트앱-파라미터
