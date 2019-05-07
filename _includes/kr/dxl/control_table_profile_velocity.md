@@ -13,6 +13,9 @@ Time-based Profile이 선택된 경우, Profile Velocity(112)는 Profile의 총 
 | 단위                   | 1 [msec]                      | Profile의 도달시간을 설정합니다.                                                                                                       |
 | 범위                   | 0 ~ 32737                     | '0'인 경우, 무한대 속도를 뜻합니다.<br>Profile Acceleration(108)이 Profile Velocity(112)의 50%를 넘을 경우, 50%로 제한되어 적용됩니다. |
 
+**참고** : Time-based Profile은 펌웨어 버전 42 이상에서 지원합니다.
+{: .notice}
+
 Profile이란 모터 구동 시 급격하게 변하는 속도와 가속도를 조절함으로써 진동, 소음 및 모터의 부하를 줄이는 가감속 제어 방법입니다.  
 일반적으로 속도에 근거하여 가감속을 제어하기 때문에 Velocity Profile이라고 불립니다.  
 장치는 3가지 형태의 Profile을 제공합니다. 다음은 3가지 종류의 Profile을 표시합니다.  
