@@ -3,7 +3,7 @@ layout: archive
 lang: en
 ref: openmanipulator_pro_specification
 read_time: true
-share: true
+share: false
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_pro/specification/
 sidebar:
