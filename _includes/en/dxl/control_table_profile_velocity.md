@@ -16,6 +16,8 @@ Profile Velocity(112) is applied only in Position Control Mode and Extended Posi
 |        Unit        | 1 [msec]  | Sets the time span for the Profile                                                                                    |
 |       Range        | 0 ~ 32737 | '0' stands for an infinite velocity.<br>Profile Acceleration(108) will not exceed 50% of Profile Velocity(112) value. |
 
+**NOTE** : Time-based Profile is available from the firmware version 42.
+{: .notice}
 
 The Profile is an acceleration/deceleration control method to reduce vibration, noise and load of the motor by controlling dramatically changing velocity and acceleration.  
 It is also called Velocity Profile as it controls acceleration and deceleration based on velocity.  

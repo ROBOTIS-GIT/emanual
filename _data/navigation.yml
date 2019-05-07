@@ -235,9 +235,9 @@ main:
       - title: "Manipulator-H"
         titlekr: "Manipulator-H"
         url: /platform/manipulator_h/introduction/
-      #- title: "OpenMANIPULATOR-PRO"
-      #  titlekr: "OpenMANIPULATOR-PRO"
-      #  url: /platform/openmanipulator_pro/overview/
+      - title: "OpenMANIPULATOR-PRO"
+        titlekr: "OpenMANIPULATOR-PRO"
+        url: /platform/openmanipulator_pro/overview/
       - title: "OpenMANIPULATOR-X"
         titlekr: "OpenMANIPULATOR-X"
         url: /platform/openmanipulator_x/overview/

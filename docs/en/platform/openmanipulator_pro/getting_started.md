@@ -3,7 +3,7 @@ layout: archive
 lang: en
 ref: openmanipulator_pro_getting_started
 read_time: true
-share: false
+share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_pro/getting_started/
 sidebar:
