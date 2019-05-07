@@ -17,7 +17,7 @@ sidebar:
 
 ![](/assets/images/platform/openmanipulator_x/OpenManipulator.png)
 
-![](/assets/images/platform/openmanipulator_x/OpenManipulator_Introduction.jpg)
+<img src="/assets/images/platform/openmanipulator_x/OpenManipulator_Introduction.jpg" width="1000">
 
 ROS-enabled OpenMANIPULATOR-X RM-X52-TNM is a full open robot platform consisting of **OpenSoftware**​, **OpenHardware** and **OpenCR(Embedded board)​**.
 

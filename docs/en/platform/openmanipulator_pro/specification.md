@@ -3,7 +3,7 @@ layout: archive
 lang: en
 ref: openmanipulator_pro_specification
 read_time: true
-share: false
+share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_pro/specification/
 sidebar:
@@ -40,6 +40,11 @@ sidebar:
 
 If you have a gripper([RH-P12-RN(A)](/docs/en/platform/rh_p12_rna/)), see below.
 ![](/assets/images/platform/openmanipulator_pro/dimension_with_gripper.png)
+
+## [Workspace](#workspace)
+![](/assets/images/platform/openmanipulator_pro/ws1.png)
+  
+![](/assets/images/platform/openmanipulator_pro/ws2.png)  
 
 
 ## [Home Position](#home-position)

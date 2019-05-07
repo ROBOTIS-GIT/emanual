@@ -3,7 +3,7 @@ layout: archive
 lang: en
 ref: openmanipulator_pro_overview
 read_time: true
-share: false
+share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_pro/overview/
 sidebar:
@@ -13,6 +13,11 @@ sidebar:
 
 
 # [Overview](#overview)
+
+
+![](/assets/images/platform/openmanipulator_pro/logo.png)
+
+<img src="/assets/images/platform/openmanipulator_pro/product_img.png" width="1250">
 
 ## [OpenSoftware](#opensoftware)
 OpenMANIPULATOR-PRO RM-P60-RNH is based on ROS ​and OpenSource. Users can also control it more easily by linking it with the MoveIt! package. Even if you do not have an actual robot, you can control the robot in the Gazebo simulator​.
