@@ -1,5 +1,5 @@
-{% if page.product_group=='dxl_mx2' %}Dynamixel의 드라이브 모드를 설정합니다. 펌웨어 39 이상에서 지원합니다.
-{% elsif page.ref == 'xh430-w350' or page.ref == 'xh430-w210' or page.ref =='xm430-w350' or page.ref =='xm430-w210' %}Dynamixel의 드라이브 모드를 설정합니다. 펌웨어 38 이상에서 지원합니다.
+{% if page.product_group=='dxl_mx2' %}다이나믹셀의 드라이브 모드를 설정합니다. 펌웨어 39 이상에서 지원합니다.  
+{% elsif page.product_group=='dxl_x430' %}다이나믹셀의 드라이브 모드를 설정합니다. 펌웨어 38 이상에서 지원합니다.  
 {% endif %}
 
 |     Bit     |          항목          | 설명                                                                                                                                                                                                   |
