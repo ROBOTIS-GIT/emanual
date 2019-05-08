@@ -1,9 +1,9 @@
 These values indicate Gains of Velocity Control Mode. Gains of DYNAMIXEL’s internal controller can be calculated from Gains of the Control Table as shown below. Velocity P Gain of DYNAMIXEL’s internal controller is abbreviated to K<sub>V</sub>P and that of the Control Table is abbreviated to K<sub>V</sub>P<sub>(TBL)</sub>.
 
-|                     | Controller Gain |                   Conversion Equations                   | Range | Description |
-|:-------------------:|:---------------:|:--------------------------------------------------------:|:-------------------:|
-| Velocity I Gain(76) | K<sub>V</sub>I  | K<sub>V</sub>I = K<sub>V</sub>I<sub>(TBL)</sub> / 65,536 | 0 ~ 16,383 | I Gain |
-| Velocity P Gain(78) | K<sub>V</sub>P  |  K<sub>V</sub>P = K<sub>V</sub>P<sub>(TBL)</sub> / 128   | 0 ~ 16,383 | P Gain |
+|                     | Controller Gain |                   Conversion Equations                   |   Range    | Description |
+|:-------------------:|:---------------:|:--------------------------------------------------------:|:----------:|:-----------:|
+| Velocity I Gain(76) | K<sub>V</sub>I  | K<sub>V</sub>I = K<sub>V</sub>I<sub>(TBL)</sub> / 65,536 | 0 ~ 16,383 |   I Gain    |
+| Velocity P Gain(78) | K<sub>V</sub>P  |  K<sub>V</sub>P = K<sub>V</sub>P<sub>(TBL)</sub> / 128   | 0 ~ 16,383 |   P Gain    |
 
 
 Below figure is a block diagram describing the velocity controller in Velocity Control Mode. When the instruction transmitted from the user is received by DYNAMIXEL, it takes following steps until driving the horn.
@@ -18,5 +18,5 @@ Below figure is a block diagram describing the velocity controller in Velocity C
 ![](/assets/images/dxl/velocity_controller_pi_gain.jpg)
 
 
-**NOTE** : K<sub>v</sub>A stands for Anti-windup Gain and ‘β’ is a conversion coefficient of position and velocity that cannot be modified by users. For more details about the PID controller, please refer to the [PID Controller at wikipedia](http://en.wikipedia.org/wiki/PID_controller).
+**NOTE** : K<sub>a</sub> stands for Anti-windup Gain and &beta; is a conversion coefficient of position and velocity that cannot be modified by users. For more details about the PID controller, please refer to the [PID Controller at wikipedia](http://en.wikipedia.org/wiki/PID_controller).
 {: .notice}
