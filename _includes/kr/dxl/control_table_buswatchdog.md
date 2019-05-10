@@ -13,7 +13,7 @@ Bus Watchdog 기능은 [Torque Enable(64)]가 ‘1’인 경우, 제어기와 �
 이때 Bus Watchdog(98)은 ‘-1’(Bus Watchdog Error)로 변경됩니다.  
 Bus Watchdog Error 상태가 되면, Goal Value([Goal PWM(100)], {% if page.product_group!='dxl_xl430' %}[Goal Current(102)], {% else %}{% endif %}[Goal Velocity(104)], [Goal Position(116)])의 Access(접근 속성)은 읽기 전용(Read Only)로 변경됩니다.  
 따라서 Goal Value에 새로운 값을 쓸 경우, Status packet을 통해 Range Error를 회신합니다.  
-[Bus Wathdog(98)]의 값을 ‘0’으로 변경하면, Bus Watchdog Error는 해제됩니다.
+[Bus Watchdog(98)]의 값을 ‘0’으로 변경하면, Bus Watchdog Error는 해제됩니다.
 
 **참고** : Range Error에 대한 자세한 사항은 [프로토콜]을 참고해주세요.
 {: .notice}
