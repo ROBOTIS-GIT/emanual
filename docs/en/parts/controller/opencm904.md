@@ -27,7 +27,7 @@ sidebar:
 |       JTAG/SWD       |         X         |         1         |         1         |
 |     Micro B USB      |         X         |         1         |         1         |
 |      5-Pin Port      |         X         |         4         |         4         |
-|  Dynamixel TTL BUS   |         X         |         4 `1`     |         4 `2`     |
+|  Dynamixel TTL BUS   |         X         |       4 `1`       |       4 `2`       |
 | 4 Pin Communication  |         X         |         1         |         1         |
 
 `1`: [MOLEX 53253-0370] x 2(for XL-320), [MOLEX 22-03-5035] x 2(for AX/MX-Series)  
@@ -194,7 +194,7 @@ Port for daisy chaining Dynamixels that use 3-pin cables (Dynamixel TTL Bus).
 {% include en/dxl/pinout_warning.md %}
 
 ### [Communication Port](#communication-port)
-Used from wired/wireless communication using peripheral devices (i.e. BT-210, BT-110A, ZIG-110A, LN-101, etc). OpenCM9.04’s 4-pin communication port uses Serial2(USART2).
+Used from wired/wireless communication using peripheral devices (i.e. [BT-410], [BT-210], [BT-110A], [ZIG-110A], [LN-101], etc). OpenCM9.04’s 4-pin communication port uses Serial2(USART2).
 
 ![](/assets/images/parts/controller/opencm904/opencm9.04_1-1.jpg)
 
@@ -2077,6 +2077,7 @@ Please refer to [R+Manager 2.0 Firmware Recovery](/docs/en/software/rplus2/manag
 [ZIG-100]: /docs/en/parts/communication/zig-110/
 [BT-110]: /docs/en/parts/communication/bt-110/
 [BT-210]: /docs/en/parts/communication/bt-210/
+[BT-410]: /docs/en/parts/communication/bt-410/
 [Automatic Turn-off]: /docs/en/software/rplus1/task/programming_02/#powersave-timer
 [Firmware Update]: /docs/en/software/rplus1/manager/#firmware-update
 [OpenCM 9.04 Manual]: http://www.robotis.com/download/doc/controller/OpenCM9.04_en/OpenCM9.04_manual_en.zip

@@ -17,20 +17,20 @@ sidebar:
 
 ## [Hardware Specification](#hardware-specification)
 
-| Items               | Unit    |OpenMANIPULATOR-X                        |
-|:--------------------|:--------|:----------------------------------------|
-| **Actuator**        |         | Dynamixel XM430-W350-T                  |
-| **Input Voltage**   | V       | 12                                      |
-| **DOF**             | -       | 5 (4 DOF + 1 DOF Gripper)               |
-| **Payload**         | g       | 500                                     |
-| **Repeatability**   | mm      | < 0.2                                   |
-| **Speed(Joint)**    | RPM     | 46                                      |
-| **Weight**          | kg (lb) | 0.70  (1.54)                            |
-| **Reach**           | mm (in) | 380   (14.9)                            |
-| **Gripper Stroke**  | mm (in) | 20~75 (0.79~2.95)                       |
-| **Communication**   | -       | TTL Level Multidrop BUS                 |
-| **Software**        | -       | ROS, Dynamixel SDK, Arduino, Processing |
-| **Main Controller** | -       | PC, OpenCR                              |
+| Items               | Unit    | OpenMANIPULATOR-X                                    |
+|:--------------------|:--------|:-----------------------------------------------------|
+| **Actuator**        |         | Dynamixel [XM430-W350-T](/docs/en/dxl/x/xm430-w350/) |
+| **Input Voltage**   | V       | 12                                                   |
+| **DOF**             | -       | 5 (4 DOF + 1 DOF Gripper)                            |
+| **Payload**         | g       | 500                                                  |
+| **Repeatability**   | mm      | < 0.2                                                |
+| **Speed(Joint)**    | RPM     | 46                                                   |
+| **Weight**          | kg (lb) | 0.70  (1.54)                                         |
+| **Reach**           | mm (in) | 380   (14.9)                                         |
+| **Gripper Stroke**  | mm (in) | 20~75 (0.79~2.95)                                    |
+| **Communication**   | -       | TTL Level Multidrop BUS                              |
+| **Software**        | -       | ROS, Dynamixel SDK, Arduino, Processing              |
+| **Main Controller** | -       | PC, OpenCR                                           |
 
 ## [Dimension](#dimension)
 
