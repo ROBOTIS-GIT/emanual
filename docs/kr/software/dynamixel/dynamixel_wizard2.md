@@ -68,6 +68,7 @@ sidebar:
 | **PRO M(A)**     | [M42-10-S260-R(A)] | [M54-40-S250-R(A)]    | [M54-60-S250-R(A)]    |                         |                 |
 | **PRO H(A)**     | [H42-20-S300-R(A)] | [H54-100-S500-R(A)]   | [H54-200-S500-R(A)]   |                         |                 |
 | **PRO+ H**       | [H42P-020-S300-R]  | [H54P-100-S500-R]     | [H54P-100-S500-R]     |                         |                 |
+| **PRO+ M**       | [M54P-060-S250-R]  | [M54P-040-S250-R]     | [M42P-010-S260-R]     |                         |                 |
 | **ETC**          | [RH-P12-RN]        | [RH-P12-RN(A)]        |                       |                         |                 |
 
 # [메뉴 설명](#메뉴-설명)
@@ -111,13 +112,13 @@ sidebar:
 2. 다음의 명령어를 수행하여 설치파일의 실행권한을 변경합니다.
 
     ```c
-    # sudo chmod 775 DynamixelWizard2Setup-x86
+    # sudo chmod 775 DynamixelWizard2Setup_x64
     ```
 
 3. 설치파일을 실행합니다.  
 
     ```c
-    # ./DynamixelWizard2Setup-x86
+    # ./DynamixelWizard2Setup_x64
     ```
 
 4. 안내에 따라 `Next`버튼을 눌러 설치를 진행합니다.
@@ -610,5 +611,8 @@ sidebar:
 [H42P-020-S300-R]: /docs/kr/dxl/pro_plus/h42p-020-s300-r/
 [H54P-100-S500-R]: /docs/kr/dxl/pro_plus/h54p-100-s500-r/
 [H54P-200-S500-R]: /docs/kr/dxl/pro_plus/h54p-200-s500-r/
-[RH-P12-RN]: /docs/kr/platform/rh_p12_rn/rh_p12_rn/
-[RH-P12-RN(A)]: /docs/kr/platform/rh_p12_rn/rh_p12_rna/
+[M54P-060-S250-R]: /docs/kr/dxl/pro_plus/m54p-060-s250-r/
+[M54P-040-S250-R]: /docs/kr/dxl/pro_plus/m54p-040-s250-r/
+[M42P-010-S260-R]: /docs/kr/dxl/pro_plus/m42p-010-s260-r/
+[RH-P12-RN]: /docs/kr/platform/rh_p12_rn/
+[RH-P12-RN(A)]: /docs/kr/platform/rh_p12_rna/
