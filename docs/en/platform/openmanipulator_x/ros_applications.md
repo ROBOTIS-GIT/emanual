@@ -290,7 +290,7 @@ When the camera recognizes the AR marker, the pose of the AR marker is shown on 
 ### [Pick and Place Example](#pick-and-place-example)
 In this example, OpenMANIPULATOR-X uses Raspberry Pi Camera V2 to pick and place blocks. Print the camera frame to the OpenMANIPULATOR-X using a 3D printer to mount the camera. Attach a 3cm x 3cm ar marker to the cube block. When you run the example package, you pick the ar marker's id 1, 2, and 3 in order and stack them on one side.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5trKxv8UPN8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jIO2lhit1g8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### Camera Frame
 
@@ -382,7 +382,7 @@ Gripper Dynamixel ID : 15, Model Name :XM430-W350
 And Open the other terminal window and enter the following command in the terminal. This command is to execute a package that recognizes the ar marker. Enter the type of camera you are using and the size of the ar marker. In this example, we use a Raspberry Pi Camera V2 and 3cm ar marker.
 
 ``` bash
-$ open_manipulator_ar_markers ar_pose.launch camera_model:=raspicam user_marker_size:=3.0
+$ roslaunch open_manipulator_ar_markers ar_pose.launch camera_model:=raspicam user_marker_size:=3.0
 ```
 
 {% capture notice_01 %}
