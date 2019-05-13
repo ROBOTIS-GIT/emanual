@@ -70,6 +70,10 @@ You can find task codes and motion files for other actions on the [Standard](#st
 
 # [Download](#download)
 
+中文用户 (DREAM, STEM, MINI等产品) 请参考中文手册.  
+[下载示例文件]{: .popup}  
+{: .notice--warning}
+
 ## [Standard Examples](#standard-examples)
 
 |Robot|Description|
@@ -201,3 +205,4 @@ You can find task codes and motion files for other actions on the [Standard](#st
 [adv_ex_16-2]: http://support.robotis.com/en/baggage_files/bioloid/stem/16.bio_stem_cannonshooter2_en.tsk
 [adv_ex_16-3]: http://support.robotis.com/en/baggage_files/bioloid/stem/16.bio_stem_cannonshooter3_en.tsk
 [adv_ex_16-4]: https://www.dropbox.com/s/ki6c9vb3acyjmni/BIOLOID_STEM_16.CannonShooter.wmv?dl=0
+[下载示例文件]: /docs/en/popup/stem_example_cn/
