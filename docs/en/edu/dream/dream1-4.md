@@ -41,6 +41,10 @@ You will need the USB cable to download the programs.
 This is included in ROBOTIS DREAM Level 1.
 {: .notice}
 
+中文用户 (DREAM, STEM, MINI等产品) 请参考中文手册.  
+[下载示例文件]{: .popup}  
+{: .notice--warning}
+
 |                                    Robot                                    |     TASK Code     |
 |:---------------------------------------------------------------------------:|:-----------------:|
 |        1. Tank<br />![](/assets/images/edu/dream/dream1-4_tank.jpg)         | [Download][ex_01] |
@@ -73,3 +77,4 @@ This is included in ROBOTIS DREAM Level 1.
 [ex_10]: http://www.robotis.com/service/download.php?no=1562
 [ex_11]: http://www.robotis.com/service/download.php?no=1564
 [ex_12]: http://www.robotis.com/service/download.php?no=1570
+[下载示例文件]: /docs/en/popup/dream1-4_example_cn/
