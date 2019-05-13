@@ -204,8 +204,8 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 
 5. Position controlling interface will appear on the buttom right corner of the program.
 
-    **NOTE** : Please be cautious when changing values as DYNAMIXEL can rotate or move.
-    {: .notice}
+    **WARNING** : Please be cautious when changing values as DYNAMIXEL can rotate or move.
+    {: .notice--warning}
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_004.png)
 
@@ -288,8 +288,8 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 2. Set the communication port and baudrate then click `Open` to open the port.
   Once the port is successfully opened, DYNAMIXEL protocol minitoring on the port will begin.
 
-    **WARNING** : If Open failed is shown up, please check whether communication port is connected at the **Main Toolbar** or not, then button `Disconnect` to avoid port collision.  
-    {: .notice--warning}
+    **NOTE** : If Open failed is shown up, please check whether communication port is connected at the **Main Toolbar** or not, then button `Disconnect` to avoid port collision.  
+    {: .notice}
     
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_002.png)
 
