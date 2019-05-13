@@ -71,7 +71,7 @@ Although almost all ROBOTIS products are shipped with preinstalled firmwares, ne
 | **PRO H(A)**     | [H42-20-S300-R(A)] | [H54-100-S500-R(A)]   | [H54-200-S500-R(A)]   |                         |                 |
 | **PRO+ H**       | [H42P-020-S300-R]  | [H54P-100-S500-R]     | [H54P-100-S500-R]     |                         |                 |
 | **PRO+ M**       | [M54P-060-S250-R]  | [M54P-040-S250-R]     | [M42P-010-S260-R]     |                         |                 |
-
+| **ETC**          | [RH-P12-RN]        | [RH-P12-RN(A)]        |                       |                         |                 |
  
 
 
@@ -175,8 +175,8 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 
 1. Go to `Device` > `Scan` to start searching connected DYNAMIXELs.
 
-    **WARNING** : If Open failed is shown up, please check whether communication port is connected at the **Main Toolbar** or not, then button `Disconnect` to avoid port collision. 
-    {: .notice--warning}
+    **NOTE** : If Open failed is shown up, please check whether communication port is connected at the **Main Toolbar** or not, then button `Disconnect` to avoid port collision. 
+    {: .notice}
   
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_012.png)
@@ -204,8 +204,8 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 
 5. Position controlling interface will appear on the buttom right corner of the program.
 
-    **WARNING** : Please be cautious when changing values as DYNAMIXEL can rotate or move.
-    {: .notice--warning}
+    **NOTE** : Please be cautious when changing values as DYNAMIXEL can rotate or move.
+    {: .notice}
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_004.png)
 
@@ -627,4 +627,6 @@ In order to use the minimum communication interval(1 [ms]), please follow the in
 [M54P-060-S250-R]: /docs/en/dxl/pro_plus/m54p-060-s250-r/
 [M54P-040-S250-R]: /docs/en/dxl/pro_plus/m54p-040-s250-r/
 [M42P-010-S260-R]: /docs/en/dxl/pro_plus/m42p-010-s260-r/
+[RH-P12-RN]: /docs/en/platform/rh_p12_rn/
+[RH-P12-RN(A)]: /docs/en/platform/rh_p12_rna/
 [Compatibility Table]: /docs/en/popup/faq_protocol_compatibility_table/
