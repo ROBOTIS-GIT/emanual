@@ -10,6 +10,11 @@ sidebar:
   title: STEAM
   nav: "all-edu"
 ---
+# [PLAY](#play)
+
+|                                             300                                             |                                             600                                             |                                             700                                             |
+|:-------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------:|
+| [![](/assets/images/edu/play/300/play300_product.resized.png)](/docs/en/edu/play/play-300/) | [![](/assets/images/edu/play/600/play600_product.resized.png)](/docs/en/edu/play/play-600/) | [![](/assets/images/edu/play/700/play700_product.resized.png)](/docs/en/edu/play/play-700/) |
 
 # [OLLO](#ollo)
 

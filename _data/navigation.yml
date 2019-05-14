@@ -12756,6 +12756,8 @@ protocol2:
         url: /dxl/protocol2/#bulk-write
 
 all-edu:
+  - title: "PLAY"
+    url: /edu/#play
   - title: "OLLO"
     titlekr: "올로"
     url: /edu/#ollo
@@ -12776,6 +12778,8 @@ all-edu:
     urlkr: /edu/#스마트-iii
   - titlekr: "IoT"
     urlkr: /edu/#iot
+  - titlekr : "실과로봇"
+    urlkr: /edu/#실과로봇
   - titlekr: "자동차 로봇"
     urlkr: /edu/#자동차-로봇
   - title: "BIOLOID"
