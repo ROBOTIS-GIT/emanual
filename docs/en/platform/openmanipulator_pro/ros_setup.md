@@ -58,13 +58,16 @@ $ sudo apt-get install ros-kinetic-gazebo*
 ```
 
 ``` bash
-$ cd ~/catkin_ws/src/
-$ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git
-$ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-Framework.git
-$ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-Framework-msgs.git
-$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_pro.git
-$ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-Math.git
-$ cd ~/catkin_ws && catkin_make
+$ cd ~/catkin_ws/src/  
+$ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git  
+$ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench.git  
+$ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench-msgs.git  
+$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_pro.git  
+$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_pro_msgs.git  
+$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_pro_simulations.git  
+$ git clone https://github.com/ROBOTIS-GIT/robotis_manipulator.git  
+$ cd ~/catkin_ws && catkin_make  
+
 ```
 
 If the catkin_make command has been completed without any errors, all the preparations for using OpenMANIPULATOR-PRO are done.

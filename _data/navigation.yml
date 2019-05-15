@@ -15753,11 +15753,11 @@ openmanipulator_pro:
         url: /platform/openmanipulator_pro/ros_setup/#install-ros-on-pc
       - title: "Install ROS Packages"
         url: /platform/openmanipulator_pro/ros_setup/#install-ros-packages
-  - title: "[ROS] Manipulator Manager"
-    url: /platform/openmanipulator_pro/ros_manipulator_manager/#ros-manipulator-manager
+  - title: "[ROS] Controller Package"
+    url: /platform/openmanipulator_pro/ros-controller-package/#ros-controller-package
     children:
-      - title: "Launch Manager"
-        url: /platform/openmanipulator_pro/ros_manipulator_manager/#launch-manager
+      - title: "Launch Controller"
+        url: /platform/openmanipulator_pro/ros-controller-package/#launch-controller
       - title: "Check Setting"
         url: /platform/openmanipulator_pro/ros_manipulator_manager/#check-setting
         children:
