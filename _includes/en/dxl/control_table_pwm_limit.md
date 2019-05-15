@@ -2,4 +2,4 @@ This value indicates maximum PWM output. [Goal PWM(100)] can’t be configured w
 
 |Values|Description|
 |:---:|:---:|
-|0(0%) ~ 885(100%)|885 = 100[%] output|
+|0(0 [%]) ~ 885(100 [%])|885 = 100 [%] output|

@@ -186,7 +186,7 @@ We provide the Linux distro image based on Raspbian. They are pre-installed with
 
 ##### Remote PC
 - Download the Linux distro image based on Raspbian for TurtleBot3
-  - [download link](http://www.robotis.com/service/download.php?no=730)
+  - [download link](http://www.robotis.com/service/download.php?no=1738)
   - SHA256: 7a868c275169b1f02c04617cc0cce9654fd8222623c78b22d0a27c73a9609398
 - After download, unzip the downloaded file.
 - Guide to burn the image to SD card

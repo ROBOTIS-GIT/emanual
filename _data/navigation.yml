@@ -231,9 +231,10 @@ main:
       url: /platform/turtlebot3/overview/
     - title: "OpenMANIPULATOR"
       titlekr: "오픈매니퓰레이터"
+      url: /platform/openmanipulator/
       children:
-      - title: "Manipulator-H"
-        titlekr: "Manipulator-H"
+      - title: "*Manipulator-H"
+        titlekr: "*Manipulator-H"
         url: /platform/manipulator_h/introduction/
       - title: "OpenMANIPULATOR-PRO"
         titlekr: "OpenMANIPULATOR-PRO"
@@ -13922,7 +13923,7 @@ mini:
     - title: "ID Map"
       titlekr: "ID Map"
       url: /edu/mini/#id-map
-      urlkr: /edu/mini/#xl32-id-map
+      urlkr: /edu/mini/#id-map
 
 car:
   - titlekr: "개요"
@@ -15527,6 +15528,11 @@ turtlebot3:
       url: /platform/turtlebot3/contact_us/#about-ost-open-source-team
 
 #OpenMANIPULATOR-X
+openmanipulator:
+  - title : "OpenMANIPULATOR-X"
+    url: /platform/openmanipulator/#openmanipulator-x
+  - title : "OpenMANIPULATOR-PRO"
+    url: /platform/openmanipulator/#openmanipulator-pro
 openmanipulator_x:
   - title: "Overview"
     url: /platform/openmanipulator_x/overview/#overview

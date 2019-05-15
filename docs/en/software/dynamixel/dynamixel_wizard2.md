@@ -70,6 +70,11 @@ Although almost all ROBOTIS products are shipped with preinstalled firmwares, ne
 | **PRO M(A)**     | [M42-10-S260-R(A)] | [M54-40-S250-R(A)]    | [M54-60-S250-R(A)]    |                         |                 |
 | **PRO H(A)**     | [H42-20-S300-R(A)] | [H54-100-S500-R(A)]   | [H54-200-S500-R(A)]   |                         |                 |
 | **PRO+ H**       | [H42P-020-S300-R]  | [H54P-100-S500-R]     | [H54P-100-S500-R]     |                         |                 |
+| **PRO+ M**       | [M54P-060-S250-R]  | [M54P-040-S250-R]     | [M42P-010-S260-R]     |                         |                 |
+| **ETC**          | [RH-P12-RN]        | [RH-P12-RN(A)]        |                       |                         |                 |
+ 
+
+
 
 # [Menu Description](#menu-description)
 
@@ -114,13 +119,13 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 2. Enter the following command to change the permission.
 
     ```c
-    # sudo chmod 775 DynamixelWizard2Setup-x86
+    # sudo chmod 775 DynamixelWizard2Setup_x64
     ```
 
 3. Run the install program.
 
     ```c
-    # ./DynamixelWizard2Setup-x86
+    # ./DynamixelWizard2Setup_x64
     ```
 
 4. Click on `Next` button to proceed installation.
@@ -170,8 +175,9 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 
 1. Go to `Device` > `Scan` to start searching connected DYNAMIXELs.
 
-    **NOTE** : If communication port is in use and fails to open, the port should be released first.
+    **NOTE** : If Open failed is shown up, please check whether communication port is connected at the **Main Toolbar** or not, then button `Disconnect` to avoid port collision. 
     {: .notice}
+  
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_012.png)
 
@@ -253,8 +259,8 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 
 2. Click `Start` button in the graph window to start plotting data.
 
-    **NOTE** : If there isn't any detected or connected device, `Start` button will be disabled. Please scan DYNAMIXEL first.
-    {: .notice}
+    **WARNING** : If there isn't any detected or connected device, `Start` button will be disabled. Please scan DYNAMIXEL first.
+    {: .notice--warning}
 
 3. After start plotting, enable Torque first then change `Goal Position` to see how `Present Position` data is plotted in real time.
 
@@ -282,9 +288,9 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 2. Set the communication port and baudrate then click `Open` to open the port.
   Once the port is successfully opened, DYNAMIXEL protocol minitoring on the port will begin.
 
-    **NOTE** : If communication port is in use and fails to open, the port should be released first.
+    **NOTE** : If Open failed is shown up, please check whether communication port is connected at the **Main Toolbar** or not, then button `Disconnect` to avoid port collision.  
     {: .notice}
-
+    
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_002.png)
 
 3. Select Protocol version and instruction to use.
@@ -618,4 +624,9 @@ In order to use the minimum communication interval(1 [ms]), please follow the in
 [H42P-020-S300-R]: /docs/en/dxl/pro_plus/h42p-020-s300-r/
 [H54P-100-S500-R]: /docs/en/dxl/pro_plus/h54p-100-s500-r/
 [H54P-200-S500-R]: /docs/en/dxl/pro_plus/h54p-200-s500-r/
+[M54P-060-S250-R]: /docs/en/dxl/pro_plus/m54p-060-s250-r/
+[M54P-040-S250-R]: /docs/en/dxl/pro_plus/m54p-040-s250-r/
+[M42P-010-S260-R]: /docs/en/dxl/pro_plus/m42p-010-s260-r/
+[RH-P12-RN]: /docs/en/platform/rh_p12_rn/
+[RH-P12-RN(A)]: /docs/en/platform/rh_p12_rna/
 [Compatibility Table]: /docs/en/popup/faq_protocol_compatibility_table/

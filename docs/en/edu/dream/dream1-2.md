@@ -69,6 +69,10 @@ To create your own program or download, click here to read more on [How to Downl
 You will need the USB cable to download the programs. This is included in ROBOTIS DREAM Level 1.
 {: .notice}
 
+中文用户 (DREAM, STEM, MINI等产品) 请参考中文手册.  
+[下载示例文件]{: .popup}  
+{: .notice--warning}
+
 1. Integrated example program
     - This program is basically included in the main controller when you purchase the goods.
     - Please refer to the Operating Method to see how to use this program.
@@ -111,3 +115,4 @@ You will need the USB cable to download the programs. This is included in ROBOTI
 [ex_11]: http://www.robotis.com/service/download.php?no=1539
 [ex_12]: http://www.robotis.com/service/download.php?no=1540
 [power_button]: /assets/images/edu/ollo/ollo_lvl2_001.jpg
+[下载示例文件]: /docs/en/popup/dream1-2_example_cn/
