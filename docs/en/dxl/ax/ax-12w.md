@@ -114,6 +114,10 @@ product_group: dxl_ax
 **NOTE** : Less than 3% of the baud rate error margin will not affect to UART communication.
 {: .notice}
 
+**NOTE** : For the stable communication with higher baudrate, configure USB Latency value to the lower.  
+[USB Latency Setting](/docs/en/software/dynamixel/dynamixel_wizard2/#usb-latency-setting) 
+{: .notice}
+
 
 ### <a name="return-delay-time"></a>**[Return Delay Time (5)](#return-delay-time-5)**
 {% include en/dxl/control_table_return_delay_time.md %}
