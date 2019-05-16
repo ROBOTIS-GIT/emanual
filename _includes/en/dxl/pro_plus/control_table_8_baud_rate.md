@@ -13,5 +13,9 @@ Baud Rate determines serial communication speed between controller and device.
 | 1(Default) |         57,600          |      57,613      |     0.023%      |
 |     0      |          9,600          |      9,600       |     0.000%      |
 
-**NOTE** : Less than 3[%] of the baud rate error margin will not affect to UART communication.
+**NOTE** : Less than 3% of the baud rate error margin will not affect to UART communication.
+{: .notice}
+
+**NOTE** : For the stable communication with higher baudrate, configure USB Latency value to the lower.  
+[USB Latency Setting](/docs/en/software/dynamixel/dynamixel_wizard2/#usb-latency-setting) 
 {: .notice}
