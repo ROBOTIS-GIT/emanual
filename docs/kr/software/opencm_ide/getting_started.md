@@ -22,6 +22,9 @@ ROBOTIS OpenCM에서 사용된 오픈 소스의 라이선스는 원저작자의 
 - [GNU GPL](http://opensource.org/licenses/gpl-license.php)
 - [GNL LGPL](http://opensource.org/licenses/lgpl-license.php)
 
+**주의** : OpenCM IDE는 더이상 업데이트되지 않습니다. [Arduino IDE](/docs/kr/software/arduino_ide/)사용을 권장드립니다.
+{: .notice--warning}
+
 ## ROBOTIS OpenCM 소프트웨어 다운로드
 
 사용 중인 OS에 따라 아래의 링크를 통해 다운로드 받을 수 있습니다.

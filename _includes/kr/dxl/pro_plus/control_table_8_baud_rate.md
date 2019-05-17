@@ -15,3 +15,7 @@
 
 **참고** : UART는 Baudrate 오차가 3 [%] 이내이면 통신에 지장이 없습니다.
 {: .notice}
+
+**참고**: 높은 통신데이터를 정상적으로 사용하기위해, 응답시간을 낮춰주세요.  
+[응답 시간 조정](/docs/kr/software/dynamixel/dynamixel_wizard2/#포트-응답-속도-설정)  
+{: .notice}
