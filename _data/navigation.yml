@@ -15752,24 +15752,24 @@ openmanipulator_pro:
       - title: "Install ROS on PC"
         url: /platform/openmanipulator_pro/ros_setup/#install-ros-on-pc
       - title: "Install ROS Packages"
-        url: /platform/openmanipulator_pro/ros_setup/#install-ros-packages
+        url: /platform/openmanipulator_pro/ros_setup/#install-ros-package
   - title: "[ROS] Controller Package"
-    url: /platform/openmanipulator_pro/ros-controller-package/#ros-controller-package
+    url: /platform/openmanipulator_pro/ros_controller_package/#ros-controller-package
     children:
       - title: "Launch Controller"
-        url: /platform/openmanipulator_pro/ros-controller-package/#launch-controller
+        url: /platform/openmanipulator_pro/ros_controller_package/#launch-controller
       - title: "Check Setting"
-        url: /platform/openmanipulator_pro/ros_manipulator_manager/#check-setting
+        url: /platform/openmanipulator_pro/ros_controller_package/#check-setting
         children:
           - title: "RViz"
-            url: /platform/openmanipulator_pro/ros_manipulator_manager/#rviz
+            url: /platform/openmanipulator_pro/ros_controller_package/#rviz
       - title: "Message List"
-        url: /platform/openmanipulator_pro/ros_manipulator_manager/#message-list
+        url: /platform/openmanipulator_pro/ros_controller_package/#message-list
         children:
           - title: "Topic"
-            url: /platform/openmanipulator_pro/ros_manipulator_manager/#topic
+            url: /platform/openmanipulator_pro/ros_controller_package/#topic
           - title: "Service"
-            url: /platform/openmanipulator_pro/ros_manipulator_manager/#service
+            url: /platform/openmanipulator_pro/ros_controller_package/#service
   - title: "[ROS] Operation"
     url: /platform/openmanipulator_pro/ros_operation/#ros-operation
     children:
@@ -15780,10 +15780,10 @@ openmanipulator_pro:
   - title: "[ROS] Simulation"
     url: /platform/openmanipulator_pro/ros_simulation/#ros-simulation
     children:
-      - title: "Manager for gazebo"
-        url: /platform/openmanipulator_pro/ros_simulation/#manager-for-gazebo
       - title: "Launch gazebo"
         url: /platform/openmanipulator_pro/ros_simulation/#launch-gazebo
+      - title: "Controller for gazebo"
+        url: /platform/openmanipulator_pro/ros_simulation/#controller-for-gazebo
 
 #Manipulator-H
 manipulator_h:

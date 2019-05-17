@@ -54,20 +54,19 @@ Install dependent packages for ROBOTIS manipulator ROS program. Run the followin
 {: .notice--info}
 
 ``` bash
-$ sudo apt-get install ros-kinetic-gazebo*
+$ sudo apt-get install ros-kinetic-ros-controllers ros-kinetic-gazebo* ros-kinetic-moveit* ros-kinetic-industrial-core
 ```
 
 ``` bash
-$ cd ~/catkin_ws/src/  
-$ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git  
-$ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench.git  
-$ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench-msgs.git  
-$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_pro.git  
-$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_pro_msgs.git  
-$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_pro_simulations.git  
-$ git clone https://github.com/ROBOTIS-GIT/robotis_manipulator.git  
-$ cd ~/catkin_ws && catkin_make  
-
+$ cd ~/catkin_ws/src/
+$ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git
+$ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench.git
+$ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench-msgs.git
+$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_pro.git
+$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_pro_msgs.git
+$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_pro_simulations.git
+$ git clone https://github.com/ROBOTIS-GIT/robotis_manipulator.git
+$ cd ~/catkin_ws && catkin_make
 ```
 
 If the catkin_make command has been completed without any errors, all the preparations for using OpenMANIPULATOR-PRO are done.

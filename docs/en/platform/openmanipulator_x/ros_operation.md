@@ -195,7 +195,7 @@ The below parameters can be used to load [move_group](http://docs.ros.org/kineti
 `planning_group_name` is a parameter to set in [setup_assistant](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/setup_assistant/setup_assistant_tutorial.html#step-4-add-planning-groups)  
 `moveit_sample_duration` is a parameter to set sampling time when joint trajectory is planned from MoveIt!
 
-After set the parameters, launch the open_manipulator_controller.
+When all parameter is set , launch the open_manipulator_pro_controller.
 
   ``` bash
   $ roslaunch open_manipulator_controller open_manipulator_controller.launch use_moveit:=true

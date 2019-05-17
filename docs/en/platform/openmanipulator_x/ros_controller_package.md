@@ -22,7 +22,7 @@ The OpenMANIPULATOR-X controller provides basic manipulation of OpenMANIPULATOR.
 
 ## [Launch Controller](#launch-controller)
 
-Before you launch controller, let's check `open_manipulator_controller` launch file in `open_manipulator_controller` package.
+Before launching the controller, Please check `open_manipulator_controller` launch file in `open_manipulator_controller` package.
 
   ```
   <launch>
@@ -72,7 +72,7 @@ Before you launch controller, let's check `open_manipulator_controller` launch f
 `dynamixel_baud_rate` is a parameter to set baud rate of dynamixel. default baud rate of dynamixel used in OpenMANIPULATOR-X is 1000000.  
 `control_period` is a parameter to set communication period between dynamixel and PC (control loop time).  
 `use_platform` is a parameter that sets whether to use the actual OpenMANIPULATOR-X or OpenMANIPULATOR-X simulation. please refer [ROS Simulation](/docs/en/platform/openmanipulator_x/ros_simulation/#ros-simulation) chapter.  
-`use_moveit`, `planning_group_name` and `moveit_sample_duration` are parameters supposed to set loading [move_group](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/move_group_interface/move_group_interface_tutorial.html) package. please refer [MoveIt!](/docs/en/platform/openmanipulator_x/ros-operation/#moveit) chapter.
+`use_moveit`, `planning_group_name` and `moveit_sample_duration` are parameters to set loading [move_group](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/move_group_interface/move_group_interface_tutorial.html) package. please refer to [MoveIt!](/docs/en/platform/openmanipulator_x/ros-operation/#moveit) chapter.
 
 After set the parameters, launch the OpenMANIPULATOR-X controller to start [[ROS] Operation](/docs/en/platform/openmanipulator_x/ros_operation/#ros-operation).
 
@@ -132,7 +132,7 @@ Even if you can't find any Dynamixels, please check firmware to use ROBOTIS soft
 {% endcapture %}
 <div class="notice--success">{{ notice_01 | markdownify }}</div>
 
-**NOTE**: open_manipulator_controller is compatible with [Protocol 2.0](/docs/en/dxl/protocol2/). Since [Protocol 1.0](/docs/en/dxl/protocol1/) doesn't support SyncRead instructions that has access to multiple Dynamixels simultaneously. Protocol 2.0 supports [`MX2`](/docs/en/dxl/mx/mx-64-2/), `X` and `Pro` series, but it does not support `AX`, `RX` and `EX`.
+**NOTE**: open_manipulator_controller is compatible with [Protocol 2.0](/docs/en/dxl/protocol2/). Since [Protocol 1.0](/docs/en/dxl/protocol1/) doesn't support SyncRead instructions that access to multiple Dynamixels simultaneously. Protocol 2.0 supports `MX 2.0`, `X` and `Pro` series, but it does not support `AX`, `RX` and `EX`.
 {: .notice--info}
 
 ## [Check Setting](#check-setting)
@@ -485,11 +485,11 @@ $ rqt
 **TIP**: If rqt is not displayed, select the `plugin` -> `Topics` -> `OpenMANIPULATOR`.
 {: .notice--success}
 
-Topics without their checkboxes clicked will not be monitored. To monitor topics, click on the checkboxes next to topic names.
+Clicked topics without a check mark will not be monitored. To monitor topics, click the checkboxes.
 
  <img src="/assets/images/platform/openmanipulator_x/rqt_1.png" width="1000">
 
-If you would like to see more detail topic message, click the `▶` button next to each checkbox.
+If you would like to see more details about topic message, click the `▶` button next to each checkbox.
 
  <img src="/assets/images/platform/openmanipulator_x/rqt_2.png" width="1000">
 
@@ -536,7 +536,7 @@ A list of topics that the open_manipulator_controller subscribes.
 **NOTE**: These topics are messages for checking the status of the robot regardless of the robot's motion.
 {: .notice--info}
 
-`/open_manipulator/option`([std_msgs/String]{: .popup}) is used to set OpenMANIPULATOR-X options. **"print_open_manipulator_setting"** : request the open_manipulator_controller controller to display "Manipulator Description".
+`/open_manipulator/option`([std_msgs/String]{: .popup}) is used to set OpenMANIPULATOR-X options. **"print_open_manipulator_setting"** : is to request the open_manipulator_controller to display "Manipulator Description".
 
  <!-- <img src="/assets/images/platform/openmanipulator_x/rqt_option.png" width="1000"> -->
 
