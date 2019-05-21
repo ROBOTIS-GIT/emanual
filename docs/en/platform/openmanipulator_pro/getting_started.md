@@ -95,7 +95,7 @@ The OpenMANIPULATOR-PRO requires 24V for operations. Ensure the power supply is 
 
 ### Connector Information
 The 4P Cable connects the OpenMANIPULATOR-PRO and U2D2.     
-The power cable supplies power to the Manipulator.
+The power cable supplies power to the OpenMANIPULATOR-PRO.
 
 {% include en/dxl/pro_plus/jst_485_pro_plus.md %}
 

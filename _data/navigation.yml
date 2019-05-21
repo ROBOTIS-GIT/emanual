@@ -231,7 +231,7 @@ main:
       url: /platform/turtlebot3/overview/
     - title: "OpenMANIPULATOR"
       titlekr: "오픈매니퓰레이터"
-      url: /platform/openmanipulator/
+      url: /platform/openmanipulator_main
       children:
       - title: "*Manipulator-H"
         titlekr: "*Manipulator-H"
@@ -15531,12 +15531,13 @@ turtlebot3:
     - title: "About OST (Open Source Team)"
       url: /platform/turtlebot3/contact_us/#about-ost-open-source-team
 
-#OpenMANIPULATOR-X
+#OpenMANIPULATOR-MAIN
 openmanipulator:
   - title : "OpenMANIPULATOR-X"
-    url: /platform/openmanipulator/#openmanipulator-x
+    url: /platform/openmanipulator_main/#openmanipulator-x
   - title : "OpenMANIPULATOR-PRO"
-    url: /platform/openmanipulator/#openmanipulator-pro
+    url: /platform/openmanipulator_main/#openmanipulator-pro
+#OpenMANIPULATOR-X
 openmanipulator_x:
   - title: "Overview"
     url: /platform/openmanipulator_x/overview/#overview
