@@ -31,7 +31,7 @@ If you need more help with installing Ubuntu, check out the step-by-step guide f
 
 ![](/assets/images/platform/openmanipulator_pro/logo_ros.png)
 
-The following script will allow you to simplify the ROS installation procedure. Run the following command in a terminal window. The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. The shortcut key to open a terminal is `Ctrl`+`Alt`+`t`. After installing ROS, please reboot PC.
+The following script will allow you to simplify the ROS installation procedure. Run the following commands in a terminal window. The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. The shortcut key to open a terminal is `Ctrl`+`Alt`+`t`. After installing ROS, please reboot PC.
 
 ``` bash
 $ sudo apt-get update
@@ -42,13 +42,13 @@ $ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/instal
 **NOTE**: In order to check which packages are installed, please check this link out. [install_ros_kinetic.sh](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh)
 {: .notice--info}
 
-If you prefer manual installation, please following the link below.
+If you prefer manual installation, please follow the link below.
 
 - [Manual installation of ROS Kinetic](http://wiki.ros.org/kinetic/Installation/Ubuntu)
 
-## [Install ROS package](#install-ros-package)
+## [Install ROS Package](#install-ros-package)
 
-Install dependent packages for ROBOTIS manipulator ROS program. Run the following command in a terminal window.
+Install dependent packages for OpenMANIPULATOR-PRO ROS program. Run the following commands in a terminal window.
 
 **NOTE**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`+`Alt`+`t`.
 {: .notice--info}

@@ -54,7 +54,6 @@ Enter `rostopic list` to list up the activated topics.
   /rosout
   /rosout_agg
   ```
-Open an [open_manipulator_pro_control_gui](/docs/en/platform/openmanipulator_pro/ros_operation/#gui-program)
 
 ## [Controller for gazebo](#controller-for-gazebo)
 
@@ -101,6 +100,8 @@ Joint Dynamixel ID : 13, Model Name : XM430-W350
 Joint Dynamixel ID : 14, Model Name : XM430-W350  
 Gripper Dynamixel ID : 15, Model Name : XM430-W350
 {: .notice--info}
+
+Open an [open_manipulator_pro_control_gui](/docs/en/platform/openmanipulator_pro/ros_operation/#gui-program) to control OpenMANIPULATOR-PRO
 
 [OpenCR]: /docs/en/parts/controller/opencr10/
 [OpenCR Manual]: /docs/en/parts/controller/opencr10/

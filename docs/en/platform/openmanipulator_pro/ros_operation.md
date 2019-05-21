@@ -16,17 +16,6 @@ sidebar:
 
 # [[ROS] Operation](#ros-operation)
 
-{% capture notice_01 %}
-**NOTE**:
-- This instructions has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-- This instructions are supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
-- Make sure to run the [OpenMANIPULATOR Manager](/docs/en/platform/openmanipulator_pro/ros_manipulator_manager/#ros-manipulator-manager) instructions before running the instruction below.
-{% endcapture %}
-<div class="notice--info">{{ notice_01 | markdownify }}</div>
-
-**NOTE**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`+`Alt`+`t`.
-{: .notice--info}
-
 ## [GUI Program](#gui-program)
 
 {% capture notice_01 %}
@@ -110,7 +99,6 @@ i : increase joint 5 angle
 k : decrease joint 5 angle
 o : increase joint 6 angle
 l : decrease joint 6 angle
-openmanipulator
 v : gripper open
 b : gripper close
        
@@ -206,7 +194,7 @@ Before you launch controller using MoveIt!, check `open_manipulator_pro_controll
   ```
 
 **Parameters List** :
-The below parameters can be used to load [move_group](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/move_group_interface/move_group_interface_tutorial.html) package.
+The below The following parameters can be used to load [move_group](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/move_group_interface/move_group_interface_tutorial.html) package.
 - `use_moveit`
 - `planning_group_name`
 - `moveit_sample_duration`
@@ -215,11 +203,10 @@ The below parameters can be used to load [move_group](http://docs.ros.org/kineti
 `planning_group_name` is a parameter to set in [setup_assistant](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/setup_assistant/setup_assistant_tutorial.html#step-4-add-planning-groups)  
 `moveit_sample_duration` is a parameter to set sampling time when joint trajectory is planned from MoveIt!
 
-When all parameter is set , launch the open_manipulator_pro_controller.
+After setting all the parameters, launch the open_manipulator_pro_controller.
 
   ``` bash
   $ roslaunch open_manipulator_pro_controller open_manipulator_pro_controller.launch use_moveit:=true
-
   ```
 
 **Warning!**     

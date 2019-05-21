@@ -15775,6 +15775,8 @@ openmanipulator_pro:
     children:
       - title: "GUI Program"
         url: /platform/openmanipulator_pro/ros_operation/#gui-program
+      - title: "Teleoperation"
+        url: /platform/openmanipulator_pro/ros_operation/#teleoperation
       - title: "MoveIt!"
         url: /platform/openmanipulator_pro/ros_operation/#moveit
   - title: "[ROS] Simulation"

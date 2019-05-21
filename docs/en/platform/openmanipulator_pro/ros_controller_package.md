@@ -15,16 +15,15 @@ sidebar:
 
 # [[ROS] Controller Package](#ros-controller-package)
 
-The OpenMANIPULATOR-PRO controller provides basic manipulation of OpenMANIPULATOR-PRO. You can control the dynamixel of OpenMANIPULATOR-PRO and check states of OpenMANIPULATOR-PRO through [messages](/docs/en/platform/openmanipulator_pro/ros_controller_package/#message-list) of the controller.  
+The OpenMANIPULATOR-PRO controller provides basic manipulation of OpenMANIPULATOR-PRO. You can control DYNAMIXEL of OpenMANIPULATOR-PRO and check states of OpenMANIPULATOR-PRO through [messages](/docs/en/platform/openmanipulator_pro/ros_controller_package/#message-list) of the controller.  
  
 
-**NOTE**:  
-- This instructions has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+**NOTE**: This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 {: .notice--info}
 
 ## [Launch Controller](#launch-controller)
 
-Before launching the controller, Please check open_manipulator_pro_controller launch file in open_manipulator_pro_controller package.  
+Before launching the controller, please check `open_manipulator_pro_controller` launch file in `open_manipulator_pro_controller` package.  
 
 ```
 <launch>
@@ -59,7 +58,7 @@ Before launching the controller, Please check open_manipulator_pro_controller la
 </launch>
   
 ```
-**Parameters List** : The parameters list is used to set control environments.  
+**Parameters List** : The following parameters set control environments.  
 - `use_robot_name`
 - `dynamixel_usb_port`
 - `dynamixel_baud_rate`
@@ -70,26 +69,26 @@ Before launching the controller, Please check open_manipulator_pro_controller la
 - `moveit_sample_duration`
 
 `use_robot_name` is a parameter to set manipulator name(namespace of ROS messages).  
-`dynamixel_usb_port` is a parameter to set use port to connected with Dynamixel of OpenMANIPULATOR. If you use U2D2, it should be set **/dev/ttyUSB@**. If you use OpenCR, it should be set **/dev/ttyACM@** (@ indicates the port number connected to the Dynamixel).  
-`dynamixel_baud_rate` is a parameter to set baud rate of dynamixel. default baud rate of dynamixel used in OpenMANIPULATOR-PRO is 1000000.  
-`control_period` is a parameter to set communication period between dynamixel and PC (control loop time).  
+`dynamixel_usb_port` is a parameter to set USB port to connect with DYNAMIXEL of OpenMANIPULATOR-PRO. If you use U2D2, it should be set **/dev/ttyUSB@**. If you use OpenCR, it should be set **/dev/ttyACM@** (@ indicates the port number connected to the DYNAMIXEL).  
+`dynamixel_baud_rate` is a parameter to set baud rate of DYNAMIXEL. default baud rate of DYNAMIXEL used in OpenMANIPULATOR-PRO is 1000000.  
+`control_period` is a parameter to set communication period between DYNAMIXEL and PC (control loop time).  
 `use_platform` is a parameter that sets whether to use the actual OpenMANIPULATOR-PRO or OpenMANIPULATOR-PRO simulation. please refer [ROS Simulation](/docs/en/platform/openmanipulator_pro/ros_simulation/#ros-simulation) chapter.  
-`use_moveit`, `planning_group_name` and `moveit_sample_duration` are parameters to set loading [move_group](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/move_group_interface/move_group_interface_tutorial.html) package. please refer to [MoveIt!](/docs/en/platform/openmanipulator_pro/ros_operation/#moveit) chapter.
+`use_moveit`, `planning_group_name` and `moveit_sample_duration` are parameters to load [move_group](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/move_group_interface/move_group_interface_tutorial.html) package. please refer to [MoveIt!](/docs/en/platform/openmanipulator_pro/ros_operation/#moveit) chapter.
 
-After set the parameters, launch the OpenMANIPULATOR-PRO controller to start [[ROS] Operation](/docs/en/platform/openmanipulator_pro/ros_operation/#ros-operation).
+After setting those parameters, launch the OpenMANIPULATOR-PRO controller to start [[ROS] Operation](/docs/en/platform/openmanipulator_pro/ros_operation/#ros-operation).
 
-Please, open the terminal window, run roscore as entering following command.
+Please, open the Terminal then run roscore along with following command.
 
 ``` bash
 $ roscore
 ```
 
-After run roscore, open the other terminal window and enter the following commands in the terminal.  
+After running roscore, open  another Terminal then wrtie the following commands in Terminal.  
 
 ``` bash
 $ roslaunch open_manipulator_pro_controller open_manipulator_pro_controller.launch
 ```
-If the OpenMANIPULATOR-PRO controller has been launched successfully, the terminal will show the following message.  
+Follwing message will be shown in the Terminal after the process done successfully.  
 
 ```
 SUMMARY
@@ -124,14 +123,14 @@ process[open_manipulator_pro_manager-1]: started with pid [19408]
 
 {% capture notice_01 %}
 **TIP**:  
-- If you can't load DYNAMIXELS, please check your DYNAMIXELS settings by using the following command from the Dynamixel-Workbench packages.   
+- If you can't load DYNAMIXEL, please check your DYNAMIXEL settings by using the following command from the Dynamixel-Workbench packages.   
 `rosrun dynamixel_workbench_controllers find_dynamixel /dev/ttyUSB0`  
-if DYNAMIXELS aren't recoginized, please check firmware with ROBOTIS software ([R+ Manager 2.0](/docs/en/software/rplus2/manager/) or [DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/#firmware-update))
-- If you would like to change Dynamixel ID, please check [`OpenManipulator.cpp`](https://github.com/ROBOTIS-GIT/open_manipulator/blob/be2859a0506b4e941a19435c0a07562b41768a27/open_manipulator_libs/src/OpenManipulator.cpp#L40) in the open_manipulator_lib folder. The default ID is **11, 12, 13, 14** for joints and **15** for the gripper  
+if DYNAMIXEL aren't recoginized, please check firmware with ROBOTIS software ([R+ Manager 2.0](/docs/en/software/rplus2/manager/) or [DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/#firmware-update))
+- If you would like to change Dynamixel ID, please check [`open_manipulator_pro.cpp`](https://github.com/ROBOTIS-GIT/open_manipulator/blob/be2859a0506b4e941a19435c0a07562b41768a27/open_manipulator_pro_libs/src/OpenManipulator.cpp#L40) in the open_manipulator_lib folder. The default ID is The default ID is **11, 12, 13, 14 ,15 and 16** for joints.
 {% endcapture %}
 <div class="notice--success">{{ notice_01 | markdownify }}</div>
 
-**NOTE**: open_manipulator_pro_controller is compatible with [Protocol 2.0](/docs/en/dxl/protocol2/). Since [Protocol 1.0](/docs/en/dxl/protocol1/) doesn't support SyncRead instructions that access to multiple DYNAMIXELS simultaneously. Protocol 2.0 supports `MX 2.0`, `X`, `Pro`, `Pro +` series, but it does not support `AX`, `RX` and `EX`.  
+**NOTE**: OpenMANIPULATOR-PRO controller is compatible with [Protocol 2.0](/docs/en/dxl/protocol2/). [Protocol 1.0](/docs/en/dxl/protocol1/) doesn't support SyncRead instructions that access to multiple DYNAMIXEL simultaneously. Protocol 2.0 supports `MX 2.0`, `X`, `Pro`, `Pro +` series, but it does not support `AX`, `RX` and `EX`.  
 {: .notice--info}
 
 ## [Check Setting](#check-setting)
@@ -141,7 +140,7 @@ if DYNAMIXELS aren't recoginized, please check firmware with ROBOTIS software ([
 {% capture notice_01 %}
 **NOTE**:  
 - The below instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.  
-- This instruction is supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.  
+- This instruction is supposed to be run on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.  
 - Make sure to run the [OpenMANIPULATOR-PRO controller](/docs/en/platform/openmanipulator_pro/ros_controller_package/#launch-controller) instructions before running the instructions below.  
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
@@ -151,6 +150,286 @@ Publish a topic message to check the OpenMANIPULATOR-PRO setting.
 ``` bash
 $ rostopic pub /open_manipulator_pro/option std_msgs/String "print_open_manipulator_setting"
 ```
+<**Manipulator Description**> will be printed on Terminal.  
+Launch the open_manipulator_controller. It is shown that present states of the OpenMANIPULATOR-PRO.  
+This parameter is descripted on OpenMANIPULATOR.cpp in open_manipulator_libs package.  
+`~/catkin_ws/src/open_manipulator_pro/open_manipulator_pro_libs/src/open_manipulator_pro.cpp`
+
+```
+    ----------<Manipulator Description>----------
+    <Degree of freedom>
+    4.000
+    <Size of Components>
+    5.000
+
+    <Configuration of world>
+    [Name]
+    -World Name : world
+    -Child Name : joint1
+    [Static Pose]
+    -Position :
+    (0.000, 0.000, 0.000)
+    -Orientation :
+    (1.000, 0.000, 0.000
+    0.000, 1.000, 0.000
+    0.000, 0.000, 1.000)
+    [Dynamic Pose]
+    -Linear Velocity :
+    (0.000, 0.000, 0.000)
+    -Linear acceleration :
+    (0.000, 0.000, 0.000)
+    -Angular Velocity :
+    (0.000, 0.000, 0.000)
+    -Angular acceleration :
+    (0.000, 0.000, 0.000)
+
+    <Configuration of gripper>
+    [Component Type]
+      Tool
+    [Name]
+    -Parent Name : joint4
+    [Actuator]
+    -Actuator Name : tool_dxl
+    -ID :  15
+    -Joint Axis :
+    (0.000, 0.000, 0.000)
+    -Coefficient :  -0.015
+    -Limit :
+        Maximum : 0.010, Minimum : -0.010
+    [Actuator Value]
+    -Value :  0.008
+    -Velocity :  0.000
+    -Acceleration :  0.000
+    -Effort :  0.000
+    [Constant]
+    -Relative Position from parent component :
+    (0.130, 0.000, 0.000)
+    -Relative Orientation from parent component :
+    (1.000, 0.000, 0.000
+    0.000, 1.000, 0.000
+    0.000, 0.000, 1.000)
+    -Mass :  0.000
+    -Inertia Tensor :
+    (1.000, 0.000, 0.000
+    0.000, 1.000, 0.000
+    0.000, 0.000, 1.000)
+    -Center of Mass :
+    (0.000, 0.000, 0.000)
+    [Variable]
+    -Position :
+    (0.138, -0.005, 0.015)
+    -Orientation :
+    (-0.006, 0.043, 0.999
+    0.000, 0.999, -0.043
+    -1.000, 0.000, -0.006)
+    -Linear Velocity :
+    (0.000, 0.000, 0.000)
+    -Linear acceleration :
+    (0.000, 0.000, 0.000)
+    -Angular Velocity :
+    (0.000, 0.000, 0.000)
+    -Angular acceleration :
+    (0.000, 0.000, 0.000)
+
+    <Configuration of joint1>
+    [Component Type]
+      Active Joint
+    [Name]
+    -Parent Name : world
+    -Child Name 1 : joint2
+    [Actuator]
+    -Actuator Name : joint_dxl
+    -ID :  11
+    -Joint Axis :
+    (0.000, 0.000, 1.000)
+    -Coefficient :  1.000
+    -Limit :
+        Maximum : 3.142, Minimum : -3.142
+    [Actuator Value]
+    -Value :  -0.043
+    -Velocity :  0.000
+    -Acceleration :  0.000
+    -Effort :  0.000
+    [Constant]
+    -Relative Position from parent component :
+    (0.012, 0.000, 0.017)
+    -Relative Orientation from parent component :
+    (1.000, 0.000, 0.000
+    0.000, 1.000, 0.000
+    0.000, 0.000, 1.000)
+    -Mass :  0.000
+    -Inertia Tensor :
+    (1.000, 0.000, 0.000
+    0.000, 1.000, 0.000
+    0.000, 0.000, 1.000)
+    -Center of Mass :
+    (0.000, 0.000, 0.000)
+    [Variable]
+    -Position :
+    (0.012, 0.000, 0.017)
+    -Orientation :
+    (0.999, 0.043, 0.000
+    -0.043, 0.999, 0.000
+    0.000, 0.000, 1.000)
+    -Linear Velocity :
+    (0.000, 0.000, 0.000)
+    -Linear acceleration :
+    (0.000, 0.000, 0.000)
+    -Angular Velocity :
+    (0.000, 0.000, 0.000)
+    -Angular acceleration :
+    (0.000, 0.000, 0.000)
+
+    <Configuration of joint2>
+    [Component Type]
+      Active Joint
+    [Name]
+    -Parent Name : joint1
+    -Child Name 1 : joint3
+    [Actuator]
+    -Actuator Name : joint_dxl
+    -ID :  12
+    -Joint Axis :
+    (0.000, 1.000, 0.000)
+    -Coefficient :  1.000
+    -Limit :
+        Maximum : 1.571, Minimum : -2.050
+    [Actuator Value]
+    -Value :  -0.052
+    -Velocity :  0.000
+    -Acceleration :  0.000
+    -Effort :  0.000
+    [Constant]
+    -Relative Position from parent component :
+    (0.000, 0.000, 0.058)
+    -Relative Orientation from parent component :
+    (1.000, 0.000, 0.000
+    0.000, 1.000, 0.000
+    0.000, 0.000, 1.000)
+    -Mass :  0.000
+    -Inertia Tensor :
+    (1.000, 0.000, 0.000
+    0.000, 1.000, 0.000
+    0.000, 0.000, 1.000)
+    -Center of Mass :
+    (0.000, 0.000, 0.000)
+    [Variable]
+    -Position :
+    (0.012, 0.000, 0.075)
+    -Orientation :
+    (0.998, 0.043, -0.052
+    -0.043, 0.999, 0.002
+    0.052, 0.000, 0.999)
+    -Linear Velocity :
+    (0.000, 0.000, 0.000)
+    -Linear acceleration :
+    (0.000, 0.000, 0.000)
+    -Angular Velocity :
+    (0.000, 0.000, 0.000)
+    -Angular acceleration :
+    (0.000, 0.000, 0.000)
+
+    <Configuration of joint3>
+    [Component Type]
+      Active Joint
+    [Name]
+    -Parent Name : joint2
+    -Child Name 1 : joint4
+    [Actuator]
+    -Actuator Name : joint_dxl
+    -ID :  13
+    -Joint Axis :
+    (0.000, 1.000, 0.000)
+    -Coefficient :  1.000
+    -Limit :
+        Maximum : 1.530, Minimum : -1.571
+    [Actuator Value]
+    -Value :  0.546
+    -Velocity :  0.000
+    -Acceleration :  0.000
+    -Effort :  0.000
+    [Constant]
+    -Relative Position from parent component :
+    (0.024, 0.000, 0.128)
+    -Relative Orientation from parent component :
+    (1.000, 0.000, 0.000
+    0.000, 1.000, 0.000
+    0.000, 0.000, 1.000)
+    -Mass :  0.000
+    -Inertia Tensor :
+    (1.000, 0.000, 0.000
+    0.000, 1.000, 0.000
+    0.000, 0.000, 1.000)
+    -Center of Mass :
+    (0.000, 0.000, 0.000)
+    [Variable]
+    -Position :
+    (0.029, -0.001, 0.204)
+    -Orientation :
+    (0.880, 0.043, 0.474
+    -0.038, 0.999, -0.020
+    -0.474, 0.000, 0.880)
+    -Linear Velocity :
+    (0.000, 0.000, 0.000)
+    -Linear acceleration :
+    (0.000, 0.000, 0.000)
+    -Angular Velocity :
+    (0.000, 0.000, 0.000)
+    -Angular acceleration :
+    (0.000, 0.000, 0.000)
+
+    <Configuration of joint4>
+    [Component Type]
+      Active Joint
+    [Name]
+    -Parent Name : joint3
+    -Child Name 1 : gripper
+    [Actuator]
+    -Actuator Name : joint_dxl
+    -ID :  14
+    -Joint Axis :
+    (0.000, 1.000, 0.000)
+    -Coefficient :  1.000
+    -Limit :
+        Maximum : 2.000, Minimum : -1.800
+    [Actuator Value]
+    -Value :  1.083
+    -Velocity :  0.000
+    -Acceleration :  0.000
+    -Effort :  -2.690
+    [Constant]
+    -Relative Position from parent component :
+    (0.124, 0.000, 0.000)
+    -Relative Orientation from parent component :
+    (1.000, 0.000, 0.000
+    0.000, 1.000, 0.000
+    0.000, 0.000, 1.000)
+    -Mass :  0.000
+    -Inertia Tensor :
+    (1.000, 0.000, 0.000
+    0.000, 1.000, 0.000
+    0.000, 0.000, 1.000)
+    -Center of Mass :
+    (0.000, 0.000, 0.000)
+    [Variable]
+    -Position :
+    (0.138, -0.005, 0.145)
+    -Orientation :
+    (-0.006, 0.043, 0.999
+    0.000, 0.999, -0.043
+    -1.000, 0.000, -0.006)
+    -Linear Velocity :
+    (0.000, 0.000, 0.000)
+    -Linear acceleration :
+    (0.000, 0.000, 0.000)
+    -Angular Velocity :
+    (0.000, 0.000, 0.000)
+    -Angular acceleration :
+    (0.000, 0.000, 0.000)
+    ---------------------------------------------
+```
+
+
 
 ### [RViz](#rviz)
 
@@ -166,11 +445,11 @@ Load OpenMANIPULATOR-PRO on RViz.
 ``` bash
 $ roslaunch open_manipulator_pro_description open_manipulator_pro_rviz.launch
 ```
+
 {% capture notice_01 %}
-**NOTE**:  
+**NOTE**:
 - If you launched the [OpenMANIPULATOR-PRO controller](/docs/en/platform/openmanipulator_pro/ros_controller_package/#launch-controller) before launching the open_manipulator_pro_controller file, the robot model on RViz would be synchronized with the actual robot.
 - If the user would like to check only model of OpenMANIPULATOR-PRO without OpenMANIPULATOR-PRO, the user can launch the RViz without the OpenMANIPULATOR-PRO controller.  
-
 The user can change each joint by GUI, if the user launch only RViz by executing the following command :
 `$ roslaunch open_manipulator_description open_manipulator_pro_rviz.launch use_gui:=true`
 
@@ -207,7 +486,7 @@ $ rqt
 
 comming soon
 
-**TIP**: If rqt is not displayed, select the `plugin` -> `Topics` -> ` OpenMANIPULATOR-PRO`.
+**TIP**: If rqt is not displayed, select the `plugin` -> `Topic Monitor` -> ` OpenMANIPULATOR-PRO`.
 {: .notice--success}
 
 Clicked topics without a check mark clicked will not be monitored. To monitor topics, click the checkboxes next. 
@@ -234,7 +513,7 @@ A list of topics that the open_manipulator_pro_controller publishes.
 **NOTE**: These topics are messages for checking the status of the robot regardless of the robot's motion.
 {: .notice--info}
 
-`/open_manipulator_pro/joint_states`([sensor_msgs/JointState]{: .popup}) is a message indicating the states of joints of OpenMANIPULATOR-PRO. **"name"** indicates joint component names.  **"effort"** shows currents of the joint DYNAMIXELS. **"position"** and **"velocity"** indicates angles and angular velocities of joints.
+`/open_manipulator_pro/joint_states`([sensor_msgs/JointState]{: .popup}) is a message indicating the states of joints of OpenMANIPULATOR-PRO. **"name"** indicates joint component names.  **"effort"** shows currents of the joint DYNAMIXEL. **"position"** and **"velocity"** indicates angles and angular velocities of joints.
 
  <!-- <img src="/assets/images/platform/openmanipulator_x/rqt_joint_states.png" width="1000"> -->
 
@@ -242,7 +521,7 @@ A list of topics that the open_manipulator_pro_controller publishes.
 
  <!-- <img src="/assets/images/platform/openmanipulator_x/rqt_kinematic_pose.png" width="1000"> -->
 
-`/open_manipulator_pro/states`([open_manipulator_pro_msgs/OpenManipulatorState]{: .popup}) is a message indicating the status of OpenMANIPULATOR-PRO. **"open_manipulator_pro_actuator_state"** indicates whether actuators (DYNAMIXELS) are enabled ("ACTUATOR_ENABLE") or disabled ("ACTUATOR_DISABLE"). **"open_manipulator_pro_moving_state"** indicates whether OpenMANIPULATOR-PRO is moving along the trajectory ("IS_MOVING") or stopped ("STOPPED").
+`/open_manipulator_pro/states`([open_manipulator_pro_msgs/OpenManipulatorState]{: .popup}) is a message indicating the status of OpenMANIPULATOR-PRO. **"open_manipulator_pro_actuator_state"** indicates whether actuators (DYNAMIXEL) are enabled ("ACTUATOR_ENABLE") or disabled ("ACTUATOR_DISABLE"). **"open_manipulator_pro_moving_state"** indicates whether OpenMANIPULATOR-PRO is moving along the trajectory ("IS_MOVING") or stopped ("STOPPED").
 
  <!-- <img src="/assets/images/platform/openmanipulator_x/rqt_states.png" width="1000"> -->
 
@@ -280,7 +559,7 @@ In addition, you can monitor topics through rqt whenever you have a topic added 
 
 #### [Service Server List](#service-server-list)
 
-**NOTE**: These services are messages to operate OpenMANIPULATOR-PRO or to change the status of the DYNAMIXELS of OpenMANIPULATOR-PRO.
+**NOTE**: These services are messages to operate OpenMANIPULATOR-PRO or to change the status of the DYNAMIXEL of OpenMANIPULATOR-PRO.
 {: .notice--info}
 
 
