@@ -38,6 +38,7 @@ The following features are provided with DYNAMIXEL Wizard 2.0.
 
 - Windows
 - Linux
+- Mac OS
 
 ## [Definition of Firmware](#definition-of-firmware)
 
@@ -101,9 +102,10 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 
 # [Software Installation](#software-installation)
 
-**Download Beta test version**
+**Download Software**
   - [for Windows](http://www.robotis.com/service/download.php?no=1670)
   - [for Linux](http://www.robotis.com/service/download.php?no=1671)
+  - [for Mac](http://www.robotis.com/service/download.php?no=1760)
 
 ## [Install: Windows](#install-windows)
 

@@ -38,6 +38,7 @@ sidebar:
 
 - Windows 7 / 8 / 10
 - Ubuntu 16 / 18
+- Mac OS
 
 ## [펌웨어 정의](#펌웨어-정의)
 
@@ -93,9 +94,10 @@ sidebar:
 
 # [다이나믹셀 위자드 2.0 설치](#다이나믹셀-위자드-20-설치)
 
-**베타 테스트버전 다운로드**
+**소프트웨어 다운로드**
   - [윈도우즈](http://www.robotis.com/service/download.php?no=1670)
   - [리눅스](http://www.robotis.com/service/download.php?no=1671)
+  - [맥 OS](http://www.robotis.com/service/download.php?no=1760)
 
 ## [윈도우에서 설치하기](#윈도우에서-설치하기)
 
