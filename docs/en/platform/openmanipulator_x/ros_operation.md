@@ -35,7 +35,7 @@ sidebar:
   To controll OpenMANIPULATOR-X, first click the `Timer Start` button.  
   ![](/assets/images/platform/openmanipulator_x/OpenManipulator_GUI.png)  
 
-  To check the status of the OpenMANIPULATOR-X (joint states, kinematics pose).  
+  Check the status of the OpenMANIPULATOR-X (joint states, kinematics pose).  
   ![](/assets/images/platform/openmanipulator_x/OpenManipulator_GUI2.png)  
 
   To manipulate the OpenMANIPULATOR-X in the [joint space]{: .popup}. Enter the joint angles and total time of the trajectory. Then click the `send` button.  
@@ -44,7 +44,7 @@ sidebar:
   To manipulate the OpenMANIPULATOR-X in the [task space]{: .popup}. Enter the kinematics pose of the OpenMANIPULATOR-X end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory. Then click the `send` button.  
   ![](/assets/images/platform/openmanipulator_x/OpenManipulator_GUI4.png)  
 
-  To create a drawing trajectory with the OpenMANIPULATOR-X. First, choose the drawing trajectory type(line, circle, rhombus, heart). And enter the parameters according to the drawing trajectory type and the total time of the drawing trajectory. Then click the `send` button.  
+  To create a drawing trajectory with OpenMANIPULATOR-X. First, choose the drawing trajectory type(line, circle, rhombus, heart). And enter the parameters according to the drawing trajectory type and the total time of the drawing trajectory. Then click the `send` button.  
   ![](/assets/images/platform/openmanipulator_x/OpenManipulator_GUI5.png)  
 
 ## [Teleoperation](#teleoperation)
@@ -60,7 +60,7 @@ sidebar:
 
 ### [Keyboard](#keyboard)
 
-**TIP**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`+`Alt`+`t`.
+**TIP**: Terminal can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for Terminal is `Ctrl`+`Alt`+`t`.
 {: .notice--success}
 
   Launch `open_manipulator_teleop_keyboard` node for simple teleoperation test using the keyboard.
@@ -138,16 +138,14 @@ Connect XBOX 360 joystick to the PC with Wireless Adapter or USB cable, and laun
 
 ``` bash
 $ sudo xboxdrv --silent
-
 $ export ROS_NAMESPACE=/open_manipulator
 $ roslaunch teleop_twist_joy teleop.launch
-
 $ roslaunch open_manipulator_teleop open_manipulator_teleop_joystick.launch
 ```
 
 ## [MoveIt!](#moveit)
 
-**TIP**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`+`Alt`+`t`.
+**TIP**: Terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`+`Alt`+`t`.
 {: .notice--success}
 
 Before you launch controller using MoveIt!, check `open_manipulator_controller` launch file in `open_manipulator_controller` package.
@@ -211,10 +209,10 @@ When launching the controller to use MoveIt!, [OpenMANIPULATOR-X launch file](/d
 A list of MoveIt!-related service server that open_manipulator_controller has.
 
 - `/open_manipulator/moveit/get_joint_position` ([open_manipulator_msgs/GetJointPosition]{: .popup})  
-The user can use this service to receives a joint position which is calculated by move_group.  
+The user can use this service to receive a joint position which is calculated by move_group.  
 
 - `/open_manipulator/moveit/get_kinematics_pose` ([open_manipulator_msgs/GetKinematicsPose]{: .popup})  
-The user can use this service to receives a kinematics pose which is calculated by move_group.
+The user can use this service to receive a kinematics pose which is calculated by move_group.
 
 - `/open_manipulator/moveit/set_joint_position` ([open_manipulator_msgs/SetJointPosition]{: .popup})  
 The user can use this service to create a trajectory in the [joint space]{: .popup} by move_group. The user inputs the angle of the target joint and the total time of the trajectory.

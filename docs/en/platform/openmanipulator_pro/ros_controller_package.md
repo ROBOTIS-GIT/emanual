@@ -15,7 +15,7 @@ sidebar:
 
 # [[ROS] Controller Package](#ros-controller-package)
 
-The OpenMANIPULATOR-PRO controller provides basic manipulation of OpenMANIPULATOR-PRO. You can control DYNAMIXEL of OpenMANIPULATOR-PRO and check states of OpenMANIPULATOR-PRO through [messages](/docs/en/platform/openmanipulator_pro/ros_controller_package/#message-list) of the controller.  
+The OpenMANIPULATOR-PRO controller provides basic manipulation of OpenMANIPULATOR-PRO. You can control DYNAMIXEL's of OpenMANIPULATOR-PRO and check states of OpenMANIPULATOR-PRO through [messages](/docs/en/platform/openmanipulator_pro/ros_controller_package/#message-list) of the controller.  
  
 
 **NOTE**: This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
@@ -88,6 +88,13 @@ After running roscore, open  another Terminal then wrtie the following commands 
 ``` bash
 $ roslaunch open_manipulator_pro_controller open_manipulator_pro_controller.launch
 ```
+
+**WARNING**: It is recommended to place OpenMANIPULATOR-PRO at the following pose and start the controller so that each component of OpenMANIPULATOR-PRO does not conflict.  
+<img src="/assets/images/platform/openmanipulator_pro/open_manipulator_start_pose.png" width="250">
+<!-- ![](/assets/images/platform/openmanipulator_x/open_manipulator_start_pose.png) -->
+{: .notice--warning}
+
+
 Follwing message will be shown in the Terminal after the process done successfully.  
 
 ```
@@ -95,38 +102,36 @@ SUMMARY
 ========
 
 PARAMETERS
- * /gazebo: False
- * /gazebo_robot_name: robotis_manipulat...
- * /init_file_path: /home/user/catkin...
- * /offset_table: /home/user/catkin...
- * /robot_file_path: /home/user/catkin...
+ * /open_manipulator_pro/control_period: 0.01
+ * /open_manipulator_pro/moveit_sample_duration: 0.05
+ * /open_manipulator_pro/planning_group_name: arm
+ * /open_manipulator_pro/using_moveit: False
+ * /open_manipulator_pro/using_platform: True
  * /rosdistro: kinetic
  * /rosversion: 1.12.14
 
 NODES
   /
-    open_manipulator_pro_manager (open_manipulator_pro_manager/open_manipulator_pro_manager)
+    open_manipulator_pro (open_manipulator_pro_controller/open_manipulator_pro_controller)
 
-ROS_MASTER_URI=http://localhost:11311
+ROS_MASTER_URI=http://192.168.3.149:11311
 
-process[open_manipulator_pro_manager-1]: started with pid [19408]
-[ INFO] [1552279834.24ro20783]: manager->init
-/dev/ttyUSB0 added. (baudrate: 1000000)
-(/dev/ttyUSB0) [ID:  1] H54P-200-S500-R added.
-(/dev/ttyUSB0) [ID:  2] H54P-200-S500-R added.
-(/dev/ttyUSB0) [ID:  3] H54P-100-S500-R added.
-(/dev/ttyUSB0) [ID:  4] H54P-100-S500-R added.
-(/dev/ttyUSB0) [ID:  5] H42P-020-S300-R added.
-(/dev/ttyUSB0) [ID:  6] H42P-020-S300-R added.
-[ INFO] [1552279834.361381084]: Load offsets...
+process[open_manipulator_pro-1]: started with pid [12510]
+Joint Dynamixel ID : 1, Model Name : PRO-PLUS-H54P-200-S500-R
+Joint Dynamixel ID : 2, Model Name : PRO-PLUS-H54P-200-S500-R
+Joint Dynamixel ID : 3, Model Name : PRO-PLUS-H54P-100-S500-R
+Joint Dynamixel ID : 4, Model Name : PRO-PLUS-H54P-100-S500-R
+Joint Dynamixel ID : 5, Model Name : PRO-PLUS-H42P-020-S300-R
+Joint Dynamixel ID : 6, Model Name : PRO-PLUS-H42P-020-S300-R
+[INFO] Succeeded to init /open_manipulator_pro
 ```
 
 {% capture notice_01 %}
 **TIP**:  
-- If you can't load DYNAMIXEL, please check your DYNAMIXEL settings by using the following command from the Dynamixel-Workbench packages.   
+- If you can't load DYNAMIXEL, please check your DYNAMIXEL settings by using the following command from the DYNAMIXEL-Workbench packages.   
 `rosrun dynamixel_workbench_controllers find_dynamixel /dev/ttyUSB0`  
 if DYNAMIXEL aren't recoginized, please check firmware with ROBOTIS software ([R+ Manager 2.0](/docs/en/software/rplus2/manager/) or [DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/#firmware-update))
-- If you would like to change Dynamixel ID, please check [`open_manipulator_pro.cpp`](https://github.com/ROBOTIS-GIT/open_manipulator/blob/be2859a0506b4e941a19435c0a07562b41768a27/open_manipulator_pro_libs/src/OpenManipulator.cpp#L40) in the open_manipulator_lib folder. The default ID is The default ID is **11, 12, 13, 14 ,15 and 16** for joints.
+- If you would like to change Dynamixel ID, please check [`open_manipulator_pro.cpp`](https://github.com/ROBOTIS-GIT/open_manipulator/blob/be2859a0506b4e941a19435c0a07562b41768a27/open_manipulator_pro_libs/src/OpenManipulator.cpp#L40) in the open_manipulator_pro_lib folder. The default ID is **11, 12, 13, 14 ,15 and 16** for joints.
 {% endcapture %}
 <div class="notice--success">{{ notice_01 | markdownify }}</div>
 
@@ -148,7 +153,7 @@ if DYNAMIXEL aren't recoginized, please check firmware with ROBOTIS software ([R
 Publish a topic message to check the OpenMANIPULATOR-PRO setting.
 
 ``` bash
-$ rostopic pub /open_manipulator_pro/option std_msgs/String "print_open_manipulator_setting"
+$ rostopic pub /open_manipulator_pro/option std_msgs/String "print_open_manipulator_prp_setting"
 ```
 <**Manipulator Description**> will be printed on Terminal.  
 Launch the open_manipulator_controller. It is shown that present states of the OpenMANIPULATOR-PRO.  
@@ -156,277 +161,375 @@ This parameter is descripted on OpenMANIPULATOR.cpp in open_manipulator_libs pac
 `~/catkin_ws/src/open_manipulator_pro/open_manipulator_pro_libs/src/open_manipulator_pro.cpp`
 
 ```
-    ----------<Manipulator Description>----------
-    <Degree of freedom>
-    4.000
-    <Size of Components>
-    5.000
+----------<Manipulator Description>----------
+<Degree of Freedom>
+6.000
+<Number of Components>
+7.000
 
-    <Configuration of world>
-    [Name]
-    -World Name : world
-    -Child Name : joint1
-    [Static Pose]
-    -Position :
-    (0.000, 0.000, 0.000)
-    -Orientation :
-    (1.000, 0.000, 0.000
-    0.000, 1.000, 0.000
-    0.000, 0.000, 1.000)
-    [Dynamic Pose]
-    -Linear Velocity :
-    (0.000, 0.000, 0.000)
-    -Linear acceleration :
-    (0.000, 0.000, 0.000)
-    -Angular Velocity :
-    (0.000, 0.000, 0.000)
-    -Angular acceleration :
-    (0.000, 0.000, 0.000)
+<World Configuration>
+[Name]
+-World Name : world
+-Child Name : joint1
+[Static Pose]
+-Position : 
+(0.000, 0.000, 0.000)
+-Orientation : 
+(1.000, 0.000, 0.000
+0.000, 1.000, 0.000
+0.000, 0.000, 1.000)
+[Dynamic Pose]
+-Linear Velocity : 
+(0.000, 0.000, 0.000)
+-Linear acceleration : 
+(0.000, 0.000, 0.000)
+-Angular Velocity : 
+(0.000, 0.000, 0.000)
+-Angular acceleration : 
+(0.000, 0.000, 0.000)
 
-    <Configuration of gripper>
-    [Component Type]
-      Tool
-    [Name]
-    -Parent Name : joint4
-    [Actuator]
-    -Actuator Name : tool_dxl
-    -ID :  15
-    -Joint Axis :
-    (0.000, 0.000, 0.000)
-    -Coefficient :  -0.015
-    -Limit :
-        Maximum : 0.010, Minimum : -0.010
-    [Actuator Value]
-    -Value :  0.008
-    -Velocity :  0.000
-    -Acceleration :  0.000
-    -Effort :  0.000
-    [Constant]
-    -Relative Position from parent component :
-    (0.130, 0.000, 0.000)
-    -Relative Orientation from parent component :
-    (1.000, 0.000, 0.000
-    0.000, 1.000, 0.000
-    0.000, 0.000, 1.000)
-    -Mass :  0.000
-    -Inertia Tensor :
-    (1.000, 0.000, 0.000
-    0.000, 1.000, 0.000
-    0.000, 0.000, 1.000)
-    -Center of Mass :
-    (0.000, 0.000, 0.000)
-    [Variable]
-    -Position :
-    (0.138, -0.005, 0.015)
-    -Orientation :
-    (-0.006, 0.043, 0.999
-    0.000, 0.999, -0.043
-    -1.000, 0.000, -0.006)
-    -Linear Velocity :
-    (0.000, 0.000, 0.000)
-    -Linear acceleration :
-    (0.000, 0.000, 0.000)
-    -Angular Velocity :
-    (0.000, 0.000, 0.000)
-    -Angular acceleration :
-    (0.000, 0.000, 0.000)
+<gripperConfiguration> 
+[Component Type]
+Tool
+[Name]
+-Parent Name : joint6
+[Actuator]
+-Actuator Name : 
+-ID :  -1
+-Joint Axis : 
+(0.000, 0.000, 0.000)
+-Coefficient :  -0.015
+-Position Limit : 
+  Maximum : 0.010, Minimum : -0.010
+[Actuator Value]
+-Position :  0.000
+-Velocity :  0.000
+-Acceleration :  0.000
+-Effort :  0.000
+[Constant]
+-Relative Position from parent component : 
+(0.000, 0.000, 0.000)
+-Relative Orientation from parent component : 
+(1.000, 0.000, 0.000
+0.000, 1.000, 0.000
+0.000, 0.000, 1.000)
+-Mass :  0.064
+-Inertia Tensor : 
+(0.000, 0.000, -0.000
+0.000, 0.000, -0.000
+-0.000, -0.000, 0.000)
+-Center of Mass : 
+(0.036, 0.025, -0.000)
+[Variable]
+-Position : 
+(0.223, -0.000, -0.001)
+-Orientation : 
+(0.006, -0.004, 1.000
+-0.001, 1.000, 0.004
+-1.000, -0.001, 0.006)
+-Linear Velocity : 
+(0.000, 0.000, 0.000)
+-Linear acceleration : 
+(0.000, 0.000, 0.000)
+-Angular Velocity : 
+(0.000, 0.000, 0.000)
+-Angular acceleration : 
+(0.000, 0.000, 0.000)
 
-    <Configuration of joint1>
-    [Component Type]
-      Active Joint
-    [Name]
-    -Parent Name : world
-    -Child Name 1 : joint2
-    [Actuator]
-    -Actuator Name : joint_dxl
-    -ID :  11
-    -Joint Axis :
-    (0.000, 0.000, 1.000)
-    -Coefficient :  1.000
-    -Limit :
-        Maximum : 3.142, Minimum : -3.142
-    [Actuator Value]
-    -Value :  -0.043
-    -Velocity :  0.000
-    -Acceleration :  0.000
-    -Effort :  0.000
-    [Constant]
-    -Relative Position from parent component :
-    (0.012, 0.000, 0.017)
-    -Relative Orientation from parent component :
-    (1.000, 0.000, 0.000
-    0.000, 1.000, 0.000
-    0.000, 0.000, 1.000)
-    -Mass :  0.000
-    -Inertia Tensor :
-    (1.000, 0.000, 0.000
-    0.000, 1.000, 0.000
-    0.000, 0.000, 1.000)
-    -Center of Mass :
-    (0.000, 0.000, 0.000)
-    [Variable]
-    -Position :
-    (0.012, 0.000, 0.017)
-    -Orientation :
-    (0.999, 0.043, 0.000
-    -0.043, 0.999, 0.000
-    0.000, 0.000, 1.000)
-    -Linear Velocity :
-    (0.000, 0.000, 0.000)
-    -Linear acceleration :
-    (0.000, 0.000, 0.000)
-    -Angular Velocity :
-    (0.000, 0.000, 0.000)
-    -Angular acceleration :
-    (0.000, 0.000, 0.000)
+<
+joint1Configuration> [Component Type]
+Active Joint
+[Name]
+-Parent Name : world
+-Child Name 1 : joint2
+[Actuator]
+-Actuator Name : joint_dxl
+-ID :  1
+-Joint Axis : 
+(0.000, 0.000, 1.000)
+-Coefficient :  1.000
+-Position Limit : 
+  Maximum : 3.142, Minimum : -3.142
+[Actuator Value]
+-Position :  -0.001
+-Velocity :  0.000
+-Acceleration :  0.000
+-Effort :  0.000
+[Constant]
+-Relative Position from parent component : 
+(0.000, 0.000, 0.126)
+-Relative Orientation from parent component : 
+(1.000, 0.000, 0.000
+0.000, 1.000, 0.000
+0.000, 0.000, 1.000)
+-Mass :  0.098
+-Inertia Tensor : 
+(0.000, -0.000, -0.000
+-0.000, 0.000, 0.000
+-0.000, 0.000, 0.000)
+-Center of Mass : 
+(-0.000, 0.001, 0.047)
+[Variable]
+-Position : 
+(0.000, 0.000, 0.126)
+-Orientation : 
+(1.000, 0.001, 0.000
+-0.001, 1.000, 0.000
+0.000, 0.000, 1.000)
+-Linear Velocity : 
+(0.000, 0.000, 0.000)
+-Linear acceleration : 
+(0.000, 0.000, 0.000)
+-Angular Velocity : 
+(0.000, 0.000, 0.000)
+-Angular acceleration : 
+(0.000, 0.000, 0.000)
 
-    <Configuration of joint2>
-    [Component Type]
-      Active Joint
-    [Name]
-    -Parent Name : joint1
-    -Child Name 1 : joint3
-    [Actuator]
-    -Actuator Name : joint_dxl
-    -ID :  12
-    -Joint Axis :
-    (0.000, 1.000, 0.000)
-    -Coefficient :  1.000
-    -Limit :
-        Maximum : 1.571, Minimum : -2.050
-    [Actuator Value]
-    -Value :  -0.052
-    -Velocity :  0.000
-    -Acceleration :  0.000
-    -Effort :  0.000
-    [Constant]
-    -Relative Position from parent component :
-    (0.000, 0.000, 0.058)
-    -Relative Orientation from parent component :
-    (1.000, 0.000, 0.000
-    0.000, 1.000, 0.000
-    0.000, 0.000, 1.000)
-    -Mass :  0.000
-    -Inertia Tensor :
-    (1.000, 0.000, 0.000
-    0.000, 1.000, 0.000
-    0.000, 0.000, 1.000)
-    -Center of Mass :
-    (0.000, 0.000, 0.000)
-    [Variable]
-    -Position :
-    (0.012, 0.000, 0.075)
-    -Orientation :
-    (0.998, 0.043, -0.052
-    -0.043, 0.999, 0.002
-    0.052, 0.000, 0.999)
-    -Linear Velocity :
-    (0.000, 0.000, 0.000)
-    -Linear acceleration :
-    (0.000, 0.000, 0.000)
-    -Angular Velocity :
-    (0.000, 0.000, 0.000)
-    -Angular acceleration :
-    (0.000, 0.000, 0.000)
+<
+joint2Configuration> [Component Type]
+Active Joint
+[Name]
+-Parent Name : joint1
+-Child Name 1 : joint3
+[Actuator]
+-Actuator Name : joint_dxl
+-ID :  2
+-Joint Axis : 
+(0.000, 1.000, 0.000)
+-Coefficient :  1.000
+-Position Limit : 
+  Maximum : 3.142, Minimum : -3.142
+[Actuator Value]
+-Position :  0.517
+-Velocity :  0.000
+-Acceleration :  0.000
+-Effort :  0.000
+[Constant]
+-Relative Position from parent component : 
+(0.000, 0.000, 0.033)
+-Relative Orientation from parent component : 
+(1.000, 0.000, 0.000
+0.000, 1.000, 0.000
+0.000, 0.000, 1.000)
+-Mass :  0.139
+-Inertia Tensor : 
+(0.000, 0.000, -0.000
+0.000, 0.000, -0.000
+-0.000, -0.000, 0.000)
+-Center of Mass : 
+(0.010, 0.000, 0.102)
+[Variable]
+-Position : 
+(0.000, 0.000, 0.159)
+-Orientation : 
+(0.869, 0.001, 0.494
+-0.001, 1.000, -0.000
+-0.494, 0.000, 0.869)
+-Linear Velocity : 
+(0.000, 0.000, 0.000)
+-Linear acceleration : 
+(0.000, 0.000, 0.000)
+-Angular Velocity : 
+(0.000, 0.000, 0.000)
+-Angular acceleration : 
+(0.000, 0.000, 0.000)
 
-    <Configuration of joint3>
-    [Component Type]
-      Active Joint
-    [Name]
-    -Parent Name : joint2
-    -Child Name 1 : joint4
-    [Actuator]
-    -Actuator Name : joint_dxl
-    -ID :  13
-    -Joint Axis :
-    (0.000, 1.000, 0.000)
-    -Coefficient :  1.000
-    -Limit :
-        Maximum : 1.530, Minimum : -1.571
-    [Actuator Value]
-    -Value :  0.546
-    -Velocity :  0.000
-    -Acceleration :  0.000
-    -Effort :  0.000
-    [Constant]
-    -Relative Position from parent component :
-    (0.024, 0.000, 0.128)
-    -Relative Orientation from parent component :
-    (1.000, 0.000, 0.000
-    0.000, 1.000, 0.000
-    0.000, 0.000, 1.000)
-    -Mass :  0.000
-    -Inertia Tensor :
-    (1.000, 0.000, 0.000
-    0.000, 1.000, 0.000
-    0.000, 0.000, 1.000)
-    -Center of Mass :
-    (0.000, 0.000, 0.000)
-    [Variable]
-    -Position :
-    (0.029, -0.001, 0.204)
-    -Orientation :
-    (0.880, 0.043, 0.474
-    -0.038, 0.999, -0.020
-    -0.474, 0.000, 0.880)
-    -Linear Velocity :
-    (0.000, 0.000, 0.000)
-    -Linear acceleration :
-    (0.000, 0.000, 0.000)
-    -Angular Velocity :
-    (0.000, 0.000, 0.000)
-    -Angular acceleration :
-    (0.000, 0.000, 0.000)
+<
+joint3Configuration> [Component Type]
+Active Joint
+[Name]
+-Parent Name : joint2
+-Child Name 1 : joint4
+[Actuator]
+-Actuator Name : joint_dxl
+-ID :  3
+-Joint Axis : 
+(0.000, 1.000, 0.000)
+-Coefficient :  1.000
+-Position Limit : 
+  Maximum : 3.142, Minimum : -3.142
+[Actuator Value]
+-Position :  0.915
+-Velocity :  0.000
+-Acceleration :  0.000
+-Effort :  0.000
+[Constant]
+-Relative Position from parent component : 
+(0.030, 0.000, 0.264)
+-Relative Orientation from parent component : 
+(1.000, 0.000, 0.000
+0.000, 1.000, 0.000
+0.000, 0.000, 1.000)
+-Mass :  0.133
+-Inertia Tensor : 
+(0.000, -0.000, -0.000
+-0.000, 0.000, 0.000
+-0.000, 0.000, 0.000)
+-Center of Mass : 
+(0.091, 0.000, 0.000)
+[Variable]
+-Position : 
+(0.157, -0.000, 0.374)
+-Orientation : 
+(0.138, 0.001, 0.990
+-0.000, 1.000, -0.001
+-0.990, 0.000, 0.138)
+-Linear Velocity : 
+(0.000, 0.000, 0.000)
+-Linear acceleration : 
+(0.000, 0.000, 0.000)
+-Angular Velocity : 
+(0.000, 0.000, 0.000)
+-Angular acceleration : 
+(0.000, 0.000, 0.000)
 
-    <Configuration of joint4>
-    [Component Type]
-      Active Joint
-    [Name]
-    -Parent Name : joint3
-    -Child Name 1 : gripper
-    [Actuator]
-    -Actuator Name : joint_dxl
-    -ID :  14
-    -Joint Axis :
-    (0.000, 1.000, 0.000)
-    -Coefficient :  1.000
-    -Limit :
-        Maximum : 2.000, Minimum : -1.800
-    [Actuator Value]
-    -Value :  1.083
-    -Velocity :  0.000
-    -Acceleration :  0.000
-    -Effort :  -2.690
-    [Constant]
-    -Relative Position from parent component :
-    (0.124, 0.000, 0.000)
-    -Relative Orientation from parent component :
-    (1.000, 0.000, 0.000
-    0.000, 1.000, 0.000
-    0.000, 0.000, 1.000)
-    -Mass :  0.000
-    -Inertia Tensor :
-    (1.000, 0.000, 0.000
-    0.000, 1.000, 0.000
-    0.000, 0.000, 1.000)
-    -Center of Mass :
-    (0.000, 0.000, 0.000)
-    [Variable]
-    -Position :
-    (0.138, -0.005, 0.145)
-    -Orientation :
-    (-0.006, 0.043, 0.999
-    0.000, 0.999, -0.043
-    -1.000, 0.000, -0.006)
-    -Linear Velocity :
-    (0.000, 0.000, 0.000)
-    -Linear acceleration :
-    (0.000, 0.000, 0.000)
-    -Angular Velocity :
-    (0.000, 0.000, 0.000)
-    -Angular acceleration :
-    (0.000, 0.000, 0.000)
-    ---------------------------------------------
+<
+joint4Configuration> [Component Type]
+Active Joint
+[Name]
+-Parent Name : joint3
+-Child Name 1 : joint5
+[Actuator]
+-Actuator Name : joint_dxl
+-ID :  4
+-Joint Axis : 
+(1.000, 0.000, 0.000)
+-Coefficient :  1.000
+-Position Limit : 
+  Maximum : 3.142, Minimum : -3.142
+[Actuator Value]
+-Position :  -0.007
+-Velocity :  0.000
+-Acceleration :  0.000
+-Effort :  0.000
+[Constant]
+-Relative Position from parent component : 
+(0.195, 0.000, 0.030)
+-Relative Orientation from parent component : 
+(1.000, 0.000, 0.000
+0.000, 1.000, 0.000
+0.000, 0.000, 1.000)
+-Mass :  0.143
+-Inertia Tensor : 
+(0.000, 0.000, -0.000
+0.000, 0.000, 0.000
+-0.000, 0.000, 0.000)
+-Center of Mass : 
+(0.044, 0.000, 0.009)
+[Variable]
+-Position : 
+(0.213, -0.000, 0.185)
+-Orientation : 
+(0.138, -0.006, 0.990
+-0.000, 1.000, 0.006
+-0.990, -0.001, 0.138)
+-Linear Velocity : 
+(0.000, 0.000, 0.000)
+-Linear acceleration : 
+(0.000, 0.000, 0.000)
+-Angular Velocity : 
+(0.000, 0.000, 0.000)
+-Angular acceleration : 
+(0.000, 0.000, 0.000)
+
+<
+joint5Configuration> [Component Type]
+Active Joint
+[Name]
+-Parent Name : joint4
+-Child Name 1 : joint6
+[Actuator]
+-Actuator Name : joint_dxl
+-ID :  5
+-Joint Axis : 
+(0.000, 1.000, 0.000)
+-Coefficient :  1.000
+-Position Limit : 
+  Maximum : 3.142, Minimum : -3.142
+[Actuator Value]
+-Position :  0.132
+-Velocity :  0.000
+-Acceleration :  0.000
+-Effort :  0.000
+[Constant]
+-Relative Position from parent component : 
+(0.063, 0.000, 0.000)
+-Relative Orientation from parent component : 
+(1.000, 0.000, 0.000
+0.000, 1.000, 0.000
+0.000, 0.000, 1.000)
+-Mass :  0.143
+-Inertia Tensor : 
+(0.000, 0.000, -0.000
+0.000, 0.000, 0.000
+-0.000, 0.000, 0.000)
+-Center of Mass : 
+(0.044, 0.000, 0.009)
+[Variable]
+-Position : 
+(0.222, -0.000, 0.122)
+-Orientation : 
+(0.006, -0.006, 1.000
+-0.001, 1.000, 0.006
+-1.000, -0.001, 0.006)
+-Linear Velocity : 
+(0.000, 0.000, 0.000)
+-Linear acceleration : 
+(0.000, 0.000, 0.000)
+-Angular Velocity : 
+(0.000, 0.000, 0.000)
+-Angular acceleration : 
+(0.000, 0.000, 0.000)
+
+<
+joint6Configuration> [Component Type]
+Active Joint
+[Name]
+-Parent Name : joint5
+-Child Name 1 : gripper
+[Actuator]
+-Actuator Name : joint_dxl
+-ID :  6
+-Joint Axis : 
+(1.000, 0.000, 0.000)
+-Coefficient :  1.000
+-Position Limit : 
+  Maximum : 3.142, Minimum : -3.142
+[Actuator Value]
+-Position :  0.002
+-Velocity :  0.000
+-Acceleration :  0.000
+-Effort :  -2.690
+[Constant]
+-Relative Position from parent component : 
+(0.123, 0.000, 0.000)
+-Relative Orientation from parent component : 
+(1.000, 0.000, 0.000
+0.000, 1.000, 0.000
+0.000, 0.000, 1.000)
+-Mass :  0.143
+-Inertia Tensor : 
+(0.000, 0.000, -0.000
+0.000, 0.000, 0.000
+-0.000, 0.000, 0.000)
+-Center of Mass : 
+(0.044, 0.000, 0.009)
+[Variable]
+-Position : 
+(0.223, -0.000, -0.001)
+-Orientation : 
+(0.006, -0.004, 1.000
+-0.001, 1.000, 0.004
+-1.000, -0.001, 0.006)
+-Linear Velocity : 
+(0.000, 0.000, 0.000)
+-Linear acceleration : 
+(0.000, 0.000, 0.000)
+-Angular Velocity : 
+(0.000, 0.000, 0.000)
+-Angular acceleration : 
+(0.000, 0.000, 0.000)
+---------------------------------------------
 ```
 
 
@@ -449,9 +552,9 @@ $ roslaunch open_manipulator_pro_description open_manipulator_pro_rviz.launch
 {% capture notice_01 %}
 **NOTE**:
 - If you launched the [OpenMANIPULATOR-PRO controller](/docs/en/platform/openmanipulator_pro/ros_controller_package/#launch-controller) before launching the open_manipulator_pro_controller file, the robot model on RViz would be synchronized with the actual robot.
-- If the user would like to check only model of OpenMANIPULATOR-PRO without OpenMANIPULATOR-PRO, the user can launch the RViz without the OpenMANIPULATOR-PRO controller.  
+- If users would like to check only model of OpenMANIPULATOR-PRO without OpenMANIPULATOR-PRO, the user can launch the RViz without the OpenMANIPULATOR-PRO controller.  
 The user can change each joint by GUI, if the user launch only RViz by executing the following command :
-`$ roslaunch open_manipulator_description open_manipulator_pro_rviz.launch use_gui:=true`
+`$ roslaunch open_manipulator_pro_description open_manipulator_pro_rviz.launch use_gui:=true`
 
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
@@ -465,7 +568,7 @@ The user can change each joint by GUI, if the user launch only RViz by executing
 {% capture notice_01 %}
 **NOTE**:  
 - This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.  
-- This instruction is supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.  
+- This instruction is supposed to be run on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.  
 - Make sure to run the [OpenMANIPULATOR-PRO controller](/docs/en/platform/openmanipulator_pro/ros_controller_package/#launch-controller) instructions before running the instructions below.  
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
@@ -484,19 +587,20 @@ Run rqt.
 $ rqt
 ```
 
-comming soon
+![](/assets/images/platform/openmanipulator_pro/rqt1.png)  
+
 
 **TIP**: If rqt is not displayed, select the `plugin` -> `Topic Monitor` -> ` OpenMANIPULATOR-PRO`.
 {: .notice--success}
 
-Clicked topics without a check mark clicked will not be monitored. To monitor topics, click the checkboxes next. 
+Topics without a check mark will not be monitored. To monitor topics, click the checkboxes next. 
 
-comming soon  
+![](/assets/images/platform/openmanipulator_pro/rqt2.png)  
 
 
 If you would like to see more details about topic message, click the `▶` button next to each checkbox.  
 
-comming soon  
+![](/assets/images/platform/openmanipulator_pro/rqt3.png)   
 
 [rqt]: http://wiki.ros.org/rqt
 

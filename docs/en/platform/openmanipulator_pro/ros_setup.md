@@ -15,7 +15,8 @@ sidebar:
 
 # [[ROS] Setup](#ros-setup)
 
-- The OpenMANIPULATOR ROS program is based on **Linux Ununtu 16.04** OS and **ROS Kinetic Kame**.
+**NOTE** : The OpenMANIPULATOR ROS program is based on `Linux Ununtu 16.04` and `ROS Kinetic Kame`.
+{: .notice--info}
 
 ## [Install Ubuntu on PC](#install-ubuntu-on-pc)
 
@@ -48,7 +49,7 @@ If you prefer manual installation, please follow the link below.
 
 ## [Install ROS Package](#install-ros-package)
 
-Install dependent packages for OpenMANIPULATOR-PRO ROS program. Run the following commands in a terminal window.
+Install dependent packages for OpenMANIPULATOR-PRO. Run the following commands in a terminal window.
 
 **NOTE**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`+`Alt`+`t`.
 {: .notice--info}

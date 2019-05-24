@@ -26,4 +26,5 @@ OpenMANIPULATOR-PRO RM-P60-RNH is based on ROS ​and OpenSource. Users can also
 OpenMANIPULATOR-PRO RM-P60-RNH is composed of [Dynamixel Pro+ series](/docs/en/dxl/pro_plus/). Dynamixel has a modular form and adopts the daisy chain method. It allows users to easily add or remove joints for their own use. Taking advantage of this characteristic, users can build seven different types of OpenMANIPULATOR robots.
 
 ## [Introduction Video](#introduction-video)
-Coming Soon.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gQmaXIipT1A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

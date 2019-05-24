@@ -94,11 +94,12 @@ process[open_manipulator_pro-1]: started with pid [4388]
 [INFO] Ready to simulate /open_manipulator_pro on Gazebo
 ```
 **NOTE** : In OpenMAIPULATOR-PRO controller for gazebo simulation, Joint and Gripper Dynamixel are not enable, following messages will not be displayed :  
-Joint Dynamixel ID : 11, Model Name : XM430-W350  
-Joint Dynamixel ID : 12, Model Name : XM430-W350  
-Joint Dynamixel ID : 13, Model Name : XM430-W350  
-Joint Dynamixel ID : 14, Model Name : XM430-W350  
-Gripper Dynamixel ID : 15, Model Name : XM430-W350
+Joint Dynamixel ID : 1, Model Name : PRO-PLUS-H54P-200-S500-R  
+Joint Dynamixel ID : 2, Model Name : PRO-PLUS-H54P-200-S500-R  
+Joint Dynamixel ID : 3, Model Name : PRO-PLUS-H54P-100-S500-R  
+Joint Dynamixel ID : 4, Model Name : PRO-PLUS-H54P-100-S500-R  
+Joint Dynamixel ID : 5, Model Name : PRO-PLUS-H42P-020-S300-R  
+Joint Dynamixel ID : 6, Model Name : PRO-PLUS-H42P-020-S300-R  
 {: .notice--info}
 
 Open an [open_manipulator_pro_control_gui](/docs/en/platform/openmanipulator_pro/ros_operation/#gui-program) to control OpenMANIPULATOR-PRO

@@ -28,31 +28,29 @@ sidebar:
 
 You can use the GUI program to manipulate OpenMANIPULATOR-PRO. Launch `open_manipulator_pro_control_gui` node. This program shows the status of and allows users to control OpenMANIPULATOR-PRO.
 
-```
+```bash
 $ roslaunch open_manipulator_pro_control_gui open_manipulator_pro_control_gui.launch
 ```
- 
-**Comming Soon**   
 
-  To controll OpenMANIPULATOR, first click the `Timer Start` button.  
+  To controll OpenMANIPULATOR-PRO, first click the `Timer Start` button.  
   
-  Comming soon!  
+  ![](/assets/images/platform/openmanipulator_pro/OpenManipulator_GUI.png) 
 
-  To check the status of the OpenMANIPULATOR-PRO (joint states, kinematics pose).  
+  Check the status of the OpenMANIPULATOR-PRO (joint states, kinematics pose).  
   
-  Comming soon!  
+  ![](/assets/images/platform/openmanipulator_pro/OpenManipulator_GUI2.png) 
   
   To manipulate the OpenMANIPULATOR-PRO in the [joint space]{: .popup}. Enter the joint angles and total time of the trajectory. Then click the `send` button.  
   
-  Comming soon!  
+  ![](/assets/images/platform/openmanipulator_pro/OpenManipulator_GUI3.png)  
 
   To manipulate the OpenMANIPULATOR-PRO in the [task space]{: .popup}. Enter the kinematics pose of the OpenMANIPULATOR-PRO end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory. Then click the `send` button.  
   
-  Comming soon!    
+  ![](/assets/images/platform/openmanipulator_pro/OpenManipulator_GUI4.png)    
 
-  To create a drawing trajectory with the OpenMANIPULATOR. First, choose the drawing trajectory type(line, circle, rhombus, heart). And enter the parameters according to the drawing trajectory type and the total time of the drawing trajectory. Then click the `send` button.  
+  To create a drawing trajectory with OpenMANIPULATOR-PRO. First, choose the drawing trajectory type(line, circle, rhombus, heart). And enter the parameters according to the drawing trajectory type and the total time of the drawing trajectory. Then click the `send` button.  
     
-  Comming soon!  
+  ![](/assets/images/platform/openmanipulator_pro/OpenManipulator_GUI5.png) 
 
 ## [Teleoperation](#teleoperation)
 {% capture notice_01 %}
@@ -65,7 +63,7 @@ $ roslaunch open_manipulator_pro_control_gui open_manipulator_pro_control_gui.la
 
 ### [Keyboard](#keyboard)
 
-**TIP**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`+`Alt`+`t`.
+**TIP**: Terminal can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for Terminal is `Ctrl`+`Alt`+`t`.
 {: .notice--success}
 
 Launch `open_manipulator_pro_teleop_keyboard` node for simple teleoperation test using the keyboard.  
@@ -155,7 +153,7 @@ $ roslaunch open_manipulator_pro_teleop open_manipulator_pro_teleop_joystick.lau
 
 ## [MoveIt!](#moveit)
 
-**TIP**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`+`Alt`+`t`.
+**TIP**: Terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`+`Alt`+`t`.
 {: .notice--success}
 
 Before you launch controller using MoveIt!, check `open_manipulator_pro_controller` launch file in `open_manipulator_pro_controller` package.
@@ -219,10 +217,10 @@ When launching the controller to use MoveIt!, [OpenMANIPULATOR-PRO launch file](
 A list of MoveIt!-related service server that open_manipulator_pro_controller has.
 
 - `/open_manipulator_pro/moveit/get_joint_position` ([open_manipulator_pro_msgs/GetJointPosition]{: .popup})  
-The user can use this service to receives a joint position which is calculated by move_group.  
+The user can use this service to receive a joint position which is calculated by move_group.  
 
 - `/open_manipulator_pro/moveit/get_kinematics_pose` ([open_manipulator_pro_msgs/GetKinematicsPose]{: .popup})  
-The user can use this service to receives a kinematics pose which is calculated by move_group.
+The user can use this service to receive a kinematics pose which is calculated by move_group.
 
 - `/open_manipulator_pro/moveit/set_joint_position` ([open_manipulator_pro_msgs/SetJointPosition]{: .popup})  
 The user can use this service to create a trajectory in the [joint space]{: .popup} by move_group. The user inputs the angle of the target joint and the total time of the trajectory.
