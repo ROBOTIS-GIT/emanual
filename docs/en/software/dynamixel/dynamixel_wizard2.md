@@ -13,7 +13,7 @@ sidebar:
 
 # [Introduction](#introduction)
 
-![](/assets/images/sw/dynamixel/wizard2/wizard2_main_000.png)
+![](/assets/images/sw/dynamixel/wizard2/wizard2_main_000.jpg)
 
 ## [DYNAMIXEL Wizard 2.0](#dynamixel-wizard-20)
 
