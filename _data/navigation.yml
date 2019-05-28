@@ -5753,10 +5753,10 @@ xc430-w240:
         titlekr: "배선 예시"
         url: /dxl/x/2xl430-w250/#wiring-through-back-case
         urlkr: /dxl/x/2xl430-w250/#배선-예시
-      - title: "Option Frame Assembly"
-        titlekr: "옵션프레임 조립"
-        url: /dxl/x/2xl430-w250/#option-frame-assembly
-        urlkr: /dxl/x/2xl430-w250/#옵션프레임-조립
+    #  - title: "Option Frame Assembly"
+    #    titlekr: "옵션프레임 조립"
+    #    url: /dxl/x/2xl430-w250/#option-frame-assembly
+    #    urlkr: /dxl/x/2xl430-w250/#옵션프레임-조립
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/x/2xl430-w250/#reference
