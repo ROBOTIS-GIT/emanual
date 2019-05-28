@@ -348,6 +348,15 @@ After run roscore, Run **the controller of OpenManipulator**. Open the other ter
 ``` bash
 $ roslaunch open_manipulator_controller open_manipulator_controller.launch
 ```
+{% capture warning_01 %}
+
+**WARNING**  
+Please check each joint position before running OpenMANIPULATOR-X. It might stop operation because of joint postion out of range.  
+The picture on the below is showing you the ideal pose of OpenMANIPULATOR-X. Please adjust each joints along with the following picture when DYNAMIXEL torque isn't enabled.    
+  
+<img src="/assets/images/platform/openmanipulator_x/open_manipulator_start_pose.png" width="250">
+{% endcapture %}
+<div class="notice--warning">{{ warning_01 | markdownify }}</div>
 
 If the OpenManipulator controller has been launched successfully, the terminal will show the following message.
 
@@ -386,8 +395,7 @@ $ roslaunch open_manipulator_ar_markers ar_pose.launch camera_model:=raspicam us
 ```
 
 {% capture notice_01 %}
-**NOTE**:
-- To use the **Raspberry Pi Camera V2**, Run the camera node in Raspberry Pi.
+**NOTE**: To use the **Raspberry Pi Camera V2**, Run the camera node in Raspberry Pi.  
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -474,6 +482,17 @@ After run roscore, Run **the controller of slave OpenManipulator**. Open the oth
 ``` bash
 $ roslaunch open_manipulator_controller open_manipulator_controller.launch dynamixel_usb_port:=/dev/ttyUSB0
 ```
+
+
+{% capture warning_01 %}
+
+**WARNING** :  
+Please check each joint position before running OpenMANIPULATOR-X. It might stop operation because of joint position out of range.  
+The picture on the below is showing you the ideal pose of OpenMANIPULATOR-X. Please adjust each joints along with the following picture when DYNAMIXEL torque isn't enabled.    
+  
+<img src="/assets/images/platform/openmanipulator_x/open_manipulator_start_pose.png" width="250">
+{% endcapture %}
+<div class="notice--warning">{{ warning_01 | markdownify }}</div>
 
 If the master OpenManipulator-X controller has been launched successfully, the terminal will show the following message.
 

@@ -88,10 +88,15 @@ After run roscore, open the other terminal window and enter the following comman
 $ roslaunch open_manipulator_controller open_manipulator_controller.launch
 ```
 
-**WARNING**: It is recommended to place OpenMANIPULATOR-X at the following pose and start the controller so that each component of OpenMANIPULATOR-X does not conflict.  
+{% capture warning_01 %}
+
+**WARNING** :  
+Please check each joint position before running OpenMANIPULATOR-X. It might stop operation because of joint position out of range.  
+The picture on the below is showing you the ideal pose of OpenMANIPULATOR-X. Please adjust each joints along with the following picture when DYNAMIXEL torque isn't enabled.    
+        
 <img src="/assets/images/platform/openmanipulator_x/open_manipulator_start_pose.png" width="250">
-<!-- ![](/assets/images/platform/openmanipulator_x/open_manipulator_start_pose.png) -->
-{: .notice--warning}
+{% endcapture %}
+<div class="notice--warning">{{ warning_01 | markdownify }}</div>
 
 If the OpenMANIPULATOR-X controller has been launched successfully, the terminal will show the following message.
 
