@@ -13,7 +13,7 @@ sidebar:
 
 # [개요](#개요)
 
-![](/assets/images/sw/dynamixel/wizard2/wizard2_main_000.png)
+![](/assets/images/sw/dynamixel/wizard2/wizard2_main_000.jpg)
 
 ## [다이나믹셀 위자드 2.0](#다이나믹셀-위자드-20)
 
