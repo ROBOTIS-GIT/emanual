@@ -19058,9 +19058,7 @@ dynamixel_workbench:
       - title: "Controllers"
         url: /software/dynamixel/dynamixel_workbench/#controllers
       - title: "Operators"
-        url: /software/dynamixel/dynamixel_workbench/#operators
-      - title: "Moveit! Bridge"
-        url: /software/dynamixel/dynamixel_workbench/#moveit-bridge
+        url: /software/dynamixel/dynamixel_workbench/#operators              
     - title: "OpenCR and OpenCM"
       url: /software/dynamixel/dynamixel_workbench/#opencr-and-opencm-tutorials
       children:
