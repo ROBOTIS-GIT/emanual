@@ -17211,6 +17211,300 @@ rplustask2:
       url: /software/rplus2/task/#faq
       urlkr: /software/rplus2/task/#자주-묻는-질문
 
+#R+ Task 3.0 sidebar
+rplustask3:
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /software/rplustask3/#introduction
+    urlkr: /software/rplustask3/#개요
+    children:
+    - title: "Compatible Products"
+      titlekr: "호환 제품"
+      url: /software/rplustask3/#compatible-products
+      urlkr: /software/rplustask3/#호환-제품
+  - title: "Getting Started"
+    titlekr: "시작하기"
+    url: /software/rplustask3/#getting-started
+    urlkr: /software/rplustask3/#시작하기
+    children:
+    - title: "Software Install"
+      titlekr: "소프트웨어 설치"
+      url: /software/rplustask3/#software-install
+      urlkr: /software/rplustask3/#소프트웨어-설치
+    - title: "Menu Descriptions"
+      titlekr: "메뉴 설명"
+      url: /software/rplustask3/#menu-descriptions
+      urlkr: /software/rplustask3/#메뉴-설명
+  - title: "Task Programming"
+    titlekr: "태스크 프로그래밍"
+    url: /software/rplustask3/#task-programming
+    urlkr: /software/rplustask3/#태스크-프로그래밍
+    children:
+    - title: "Create New File"
+      titlekr: "새 파일 만들기"
+      url: /software/rplustask3/#create-new-file
+      urlkr: /software/rplustask3/#새-파일-만들기
+    - title: "Open Task File"
+      titlekr: "태스크 예제 열기"
+      url: /software/rplustask3/#open-task-file
+      urlkr: /software/rplustask3/#태스크-예제-열기
+    - title: "Insert/Change Instruction"
+      titlekr: "명령어 삽입/변경"
+      url: /software/rplustask3/#insertchange-instruction
+      urlkr: /software/rplustask3/#명령어-삽입변경
+    - title: "Select Multiple Lines"
+      titlekr: "여러 줄 선택"
+      url: /software/rplustask3/#select-multiple-lines
+      urlkr: /software/rplustask3/#여러-줄-선택
+    - title: "Insert/Delete Line"
+      titlekr: "줄 삽입/지우기"
+      url: /software/rplustask3/#insertdelete-line
+      urlkr: /software/rplustask3/#줄-삽입지우기
+    - title: "Enable/Disable Line"
+      titlekr: "줄 활성/비활성"
+      url: /software/rplustask3/#enabledisable-line
+      urlkr: /software/rplustask3/#줄-활성비활성
+    - title: "Copy/Cut/Paste"
+      titlekr: "복사/잘라내기/붙여넣기"
+      url: /software/rplustask3/#copycutpaste
+      urlkr: /software/rplustask3/#복사잘라내기붙여넣기
+    - title: "Undo/Redo"
+      titlekr: "실행취소/다시실행"
+      url: /software/rplustask3/#undoredo
+      urlkr: /software/rplustask3/#실행취소다시실행
+    - title: "Download Task Code"
+      titlekr: "태스크 다운로드 하기"
+      url: /software/rplustask3/#download-task-code
+      urlkr: /software/rplustask3/#태스크-다운로드-하기
+    - title: "Print Output"
+      titlekr: "프로그램 출력보기"
+      url: /software/rplustask3/#print-output
+      urlkr: /software/rplustask3/#프로그램-출력보기
+  - title: "Task Instructions"
+    titlekr: "태스크 명령어"
+    url: /software/rplustask3/#task-instructions
+    urlkr: /software/rplustask3/#태스크-명령어
+    children:
+    - title: "Start/End"
+      titlekr: "시작과 끝"
+      url: /software/rplustask3/#startend
+      urlkr: /software/rplustask3/#시작과-끝
+      children:
+      - title: "Start Program"
+        titlekr: "프로그램 시작"
+        url: /software/rplustask3/#start-program
+        urlkr: /software/rplustask3/#프로그램-시작start-program
+      - title: "End Program"
+        titlekr: "프로그램 끝"
+        url: /software/rplustask3/#end-program
+        urlkr: /software/rplustask3/#프로그램-끝end-program
+      - title: "Begin Block / End Block"
+        titlekr: "구간 시작 / 구간 끝"
+        url: /software/rplustask3/#begin-block--end-block
+        urlkr: /software/rplustask3/#구간-시작구간-끝begin-blockend-block
+      - title: "Comment"
+        titlekr: "주석"
+        url: /software/rplustask3/#comment
+        urlkr: /software/rplustask3/#주석comment
+    - title: "Execute"
+      titlekr: "실행문"
+      url: /software/rplustask3/#execute
+      urlkr: /software/rplustask3/#실행문
+      children:
+      - title: "Compute"
+        titlekr: "계산"
+        url: /software/rplustask3/#compute
+        urlkr: /software/rplustask3/#계산
+      - title: "Load"
+        titlekr: "로드"
+        url: /software/rplustask3/#load
+        urlkr: /software/rplustask3/#로드
+      - title: "Math Expression"
+        titlekr: "다중 수식"
+        url: /software/rplustask3/#math-expression
+        urlkr: /software/rplustask3/#다중-수식
+      - title: "Lable/Jump"
+        titlekr: "레이블/점프"
+        url: /software/rplustask3/#lablejump
+        urlkr: /software/rplustask3/#레이블점프
+    - title: "Condition"
+      titlekr: "조건문"
+      url: /software/rplustask3/#condition
+      urlkr: /software/rplustask3/#조건문
+      children:
+      - title: "Conditional Clause?"
+        titlekr: "조건절이란?"
+        url: /software/rplustask3/#conditional-clause
+        urlkr: /software/rplustask3/#조건절이란
+      - title: "If"
+        titlekr: "만약"
+        url: /software/rplustask3/#if
+        urlkr: /software/rplustask3/#만약
+      - title: "Else If"
+        titlekr: "아니면 만약"
+        url: /software/rplustask3/#else-if
+        urlkr: /software/rplustask3/#아니면-만약
+      - title: "Else"
+        titlekr: "아니면"
+        url: /software/rplustask3/#else
+        urlkr: /software/rplustask3/#아니면
+    - title: "Loop"
+      titlekr: "반복문"
+      url: /software/rplustask3/#loop
+      urlkr: /software/rplustask3/#반복문
+      children:
+      - title: "Endless Loop"
+        titlekr: "무조건 반복"
+        url: /software/rplustask3/#endless-loop
+        urlkr: /software/rplustask3/#무조건-반복
+      - title: "Loop While"
+        titlekr: "조건 반복"
+        url: /software/rplustask3/#loop-while
+        urlkr: /software/rplustask3/#조건-반복
+      - title: "Loop For"
+        titlekr: "횟수 반복"
+        url: /software/rplustask3/#loop-for
+        urlkr: /software/rplustask3/#횟수-반복
+      - title: "Wait While"
+        titlekr: "조건 대기"
+        url: /software/rplustask3/#wait-while
+        urlkr: /software/rplustask3/#조건-대기
+      - title: "Break Loop"
+        titlekr: "반복 끝내기"
+        url: /software/rplustask3/#break-loop
+        urlkr: /software/rplustask3/#반복-끝내기
+    - title: "Function(Sub-Routine)"
+      titlekr: "함수(서브루틴)"
+      url: /software/rplustask3/#functionsub-routine
+      urlkr: /software/rplustask3/#함수서브루틴
+      children:
+      - title: "Function/Call"
+        titlekr: "함수/호출"
+        url: /software/rplustask3/#functioncall
+        urlkr: /software/rplustask3/#함수호출
+      - title: "Return"
+        titlekr: "복귀"
+        url: /software/rplustask3/#return
+        urlkr: /software/rplustask3/#복귀
+      - title: "Callback"
+        titlekr: "콜백"
+        url: /software/rplustask3/#callback
+        urlkr: /software/rplustask3/#콜백
+  - title: "Task Parameters"
+    titlekr: "태스크 파라미터"
+    url: /software/rplustask3/#task-parameters
+    urlkr: /software/rplustask3/#태스크-파라미터
+    children:
+    - title: "Controllers"
+      titlekr: "제어기 장치"
+      url: /software/rplustask3/#controllers
+      urlkr: /software/rplustask3/#제어기-장치
+    - title: "Dynamixel"
+      titlekr: "다이나믹셀 장치"
+      url: /software/rplustask3/#dynamixel
+      urlkr: /software/rplustask3/#다이나믹셀-장치
+    - titlekr: "스마트 장치"
+      urlkr: /software/rplustask3/#스마트-장치
+    - title: "Common"
+      titlekr: "공통"
+      url: /software/rplustask3/#common
+      urlkr: /software/rplustask3/#공통
+  - title: "Motion Programming"
+    titlekr: "모션 프로그래밍"
+    url: /software/rplustask3/#motion-programming
+    urlkr: /software/rplustask3/#모션-프로그래밍
+    children:
+    - title: "Open Motion File"
+      titlekr: "모션 예제 열기"
+      url: /software/rplustask3/#open-motion-file
+      urlkr: /software/rplustask3/#모션-예제-열기
+    - title: ""
+      titlekr: "로봇 연결하기"
+      url: /software/rplustask3/#
+      urlkr: /software/rplustask3/#로봇-연결하기
+    - title: ""
+      titlekr: "새 모션 유닛 만들기"
+      url: /software/rplustask3/#
+      urlkr: /software/rplustask3/#새-모션-유닛-만들기
+    - title: ""
+      titlekr: "모션 유닛 편집하기"
+      url: /software/rplustask3/#
+      urlkr: /software/rplustask3/#모션-유닛-편집하기
+    - title: ""
+      titlekr: "새 모션 만들기"
+      url: /software/rplustask3/#
+      urlkr: /software/rplustask3/#새-모션-만들기
+    - title: ""
+      titlekr: "모션 편집하기"
+      url: /software/rplustask3/#
+      urlkr: /software/rplustask3/#모션-편집하기
+    - title: ""
+      titlekr: "모션 그룹 만들기"
+      url: /software/rplustask3/#
+      urlkr: /software/rplustask3/#모션-그룹-만들기
+    - title: ""
+      titlekr: "모션 다운로드 하기"
+      url: /software/rplustask3/#
+      urlkr: /software/rplustask3/#모션-다운로드-하기
+    - title: ""
+      titlekr: "모션 저장하기"
+      url: /software/rplustask3/#
+      urlkr: /software/rplustask3/#모션-저장하기
+  - title: "Useful Tips"
+    titlekr: "유용한 정보"
+    url: /software/rplustask3/#useful-tips
+    urlkr: /software/rplustask3/#유용한-정보
+    children:
+    - title: "Search Variables/Functions"
+      titlekr: "변수, 함수 참조 찾기"
+      url: /software/rplustask3/#search-variablesfunctions
+      urlkr: /software/rplustask3/#변수-함수-참조-찾기
+    - title: "Search Keyword"
+      titlekr: "키워드 찾기"
+      url: /software/rplustask3/#search-keyword
+      urlkr: /software/rplustask3/#키워드-찾기
+    - title: "Grammar/Compile Check"
+      titlekr: "문법검사/컴파일 결과 확인하기"
+      url: /software/rplustask3/#grammarcompile-check
+      urlkr: /software/rplustask3/#문법검사컴파일-결과-확인하기
+    - title: ""
+      titlekr: "자유 형태 로봇 생성"
+      url: /software/rplustask3/#
+      urlkr: /software/rplustask3/#자유-형태-로봇-생성
+    - title: ""
+      titlekr: "로봇 모델 변경"
+      url: /software/rplustask3/#
+      urlkr: /software/rplustask3/#로봇-모델-변경
+    - title: ""
+      titlekr: "포즈 미러링"
+      url: /software/rplustask3/#
+      urlkr: /software/rplustask3/#포즈-미러링
+    - title: ""
+      titlekr: "모션 호출번호 수정"
+      url: /software/rplustask3/#
+      urlkr: /software/rplustask3/#모션-호출번호-수정
+    - title: ""
+      titlekr: "모션 파일간 데이터 복사"
+      url: /software/rplustask3/#
+      urlkr: /software/rplustask3/#모션-파일간-데이터-복사
+    - title: ""
+      titlekr: "오프셋 편집"
+      url: /software/rplustask3/#
+      urlkr: /software/rplustask3/#오프셋-편집
+    - title: ""
+      titlekr: "구 버전 파일 변환하기"
+      url: /software/rplustask3/#
+      urlkr: /software/rplustask3/#구-버전-파일-변환하기
+    - title: ""
+      titlekr: "3D 카메라 조작"
+      url: /software/rplustask3/#
+      urlkr: /software/rplustask3/#3d-카메라-조작
+    - title: ""
+      titlekr: "단축키"
+      url: /software/rplustask3/#
+      urlkr: /software/rplustask3/#단축키
+
+
 #R+ Motion 2.0 sidebar
 rplusmotion2:
   - title: "Introduction"
@@ -18764,9 +19058,7 @@ dynamixel_workbench:
       - title: "Controllers"
         url: /software/dynamixel/dynamixel_workbench/#controllers
       - title: "Operators"
-        url: /software/dynamixel/dynamixel_workbench/#operators
-      - title: "Moveit! Bridge"
-        url: /software/dynamixel/dynamixel_workbench/#moveit-bridge
+        url: /software/dynamixel/dynamixel_workbench/#operators              
     - title: "OpenCR and OpenCM"
       url: /software/dynamixel/dynamixel_workbench/#opencr-and-opencm-tutorials
       children:

@@ -19,22 +19,29 @@ The purpose of Dynamixel-Workbench is **to use more simple and easy to use any D
 
 If have any questions or issues, please get a ticket in [github issue](https://github.com/ROBOTIS-GIT/dynamixel-workbench/issues).
 
+**WARNING** : Single manager and Single manager GUI are not supported anymore. Please use [DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/). 
+{: .notice--warning}
+  
+
 # [Supported Dynamixels](#supported-dynamixels)
 
-| Dynamixel Series |                 |                   |                   |                     |               |
-|:-----------------|:----------------|:------------------|:------------------|:--------------------|:--------------|
-| **AX**           | AX-12W          | AX-12+/12A        | AX-18F/18A        |                     |               |
-| **RX**           | RX-10           | RX-24F            | RX-28             | RX-64               |               |
-| **EX**           | EX-106+         |                   |                   |                     |               |
-| **MX**           | MX-12W          | MX-28, MX-28(2.0) | MX-64, MX-64(2.0) | MX-106, MX-106(2.0) |               |
-| **XL**           | XL320           | XL430-W250        |                   |                     |               |
-| **XM**           | XM430-210       | XM430-W350        | XM540-W210        | XM540-W270          |               |
-| **XH**           | XH430-W210      | XH430-W350        | XH430-V210        | XH430-V350          |               |
-| **PRO-L**        | L42-10-S300-R   | L54-30-S500-R     | L54-30-S400-R     | L54-50-S500-R       | L54-50-S290-R |
-| **PRO-M**        | M42-10-S260-R   | M54-40-S250-R     | M54-60-S250-R     |                     |               |
-| **PRO-H**        | H42-20-S300-R   | H54-100-S500-R    | H54-200-S500-R    |                     |               |
-| **PRO+**         | H42P-020-S300-R | H54P-100-S500-R   | H54P-200-S500-R   |                     |               |
 
+| DYNAMIXEL Series |                                |                                |                                |                                |                 |
+|:-----------------|:-------------------------------|:-------------------------------|:-------------------------------|:-------------------------------|:----------------|
+| **AX**           | [AX-12W]                       | [AX-12+/12A]                   | [AX-18F/18A]                   |                                |                 |
+| **RX**           | [RX-10]                        | [RX-24F]                       | [RX-28]                        | [RX-64]                        |                 |
+| **EX**           | [EX-106+]                      |                                |                                |                                |                 |
+| **MX**           | [MX-12W]                       | [MX-28], [MX-28(2.0)]          | [MX-64], [MX-64(2.0)]          | [MX-106], [MX-106(2.0)]        |                 |
+| **XL**           | [XL320]                        | [XL430-W250]                   |                                |                                |                 |
+| **XM**           | [XM430-W210]                   | [XM430-W350]                   | [XM540-W150]                   | [XM540-W270]                   |                 |
+| **XH**           | [XH430-W210]<br/> [XH430-W350] | [XH430-V210]<br/> [XH430-V350] | [XH540-W150]<br/> [XH540-W270] | [XH540-V150]<br/> [XH540-V270] |                 |
+| **PRO H**        | [H42-20-S300-R]                | [H54-100-S500-R]               | [H54-200-S500-R]               |                                |                 |
+| **PRO M**        | [M42-10-S260-R]                | [M54-40-S250-R]                | [M54-60-S250-R]                |                                |                 |
+| **PRO L**        | [L42-10-S300-R]                | [L54-30-S500-R]                | [L54-30-S400-R]                | [L54-50-S500-R]                | [L54-50-S290-R] |
+| **PRO H(A)**     | [H42-20-S300-R(A)]             | [H54-100-S500-R(A)]            | [H54-200-S500-R(A)]            |                                |                 |
+| **PRO M(A)**     | [M42-10-S260-R(A)]             | [M54-40-S250-R(A)]             | [M54-60-S250-R(A)]             |                                |                 |
+| **PRO+ H**       | [H42P-020-S300-R]              | [H54P-100-S500-R]              | [H54P-100-S500-R]              |                                |                 |
+| **PRO+ M**       | [M54P-060-S250-R]              | [M54P-040-S250-R]              | [M42P-010-S260-R]              |                                |                 |
 
 
 The **Dynamixel Workbench** metapackage contains four packages: **Single Manager**, **Controllers**, **Operators**, and **Toolbox**. The ***Single Manager*** package provides a program that can manage the entire Dynamixel series, including Dynamixel, Dynamixel X, and Dynamixel PRO, using the ***Toolbox*** library developed on the basis of [Dynamixel SDK](http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/overview/). These packages not only show the status of Dynamixel, but also allow you to change Control Table address values via command line or GUI interface. The ***Controllers*** package introduces how to employ the Dynamixel on different operating mode with Dynamixel Workbench library(***Toolbox***).  In addition, the ***Operators*** demonstrates some straightforward examples by operating ***Controllers***.
@@ -77,8 +84,6 @@ $ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench-msgs.git
 
 ``` bash
 $ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git
-$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_msgs.git
-$ sudo apt-get install ros-kinetic-moveit-core ros-kinetic-moveit-ros-planning ros-kinetic-moveit-ros-planning-interface
 ```
 
 ## [OpenCR and OpenCM](#opencr-and-opencm)
@@ -106,7 +111,7 @@ $ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench.git
 ```
 ### Setup DynamixelSDK library
 
-- [LINUX](http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/library_setup/cpp_linux/#cpp-linux)  
+- [Linux](http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/library_setup/cpp_linux/#cpp-linux)  
 - [macOS](http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/library_setup/cpp_macos/#cpp-macos)  
 
 ### Setup Dynamixel-Workbench library
@@ -184,9 +189,8 @@ Then you can use `/dev/ttyACM0` port (The number of port may be different depend
     - [Single Manager GUI](/docs/en/software/dynamixel/dynamixel_workbench/#single-manager-gui)
     - [Controllers](/docs/en/software/dynamixel/dynamixel_workbench/#controllers)
     - [Operators](/docs/en/software/dynamixel/dynamixel_workbench/#operators)
-    - [MoveIt! Bridge](/docs/en/software/dynamixel/dynamixel_workbench/#moveit-bridge)
 
-- [OpenCR and OpenCM](/docs/en/software/dynamixel/dynamixel_workbench/#opencr-and-opencm-tutorials)
+    - [OpenCR and OpenCM](/docs/en/software/dynamixel/dynamixel_workbench/#opencr-and-opencm-tutorials)
     - [o_Find_Dynamixel](/docs/en/software/dynamixel/dynamixel_workbench/#o_find_dynamixel)
     - [p_Monitor](/docs/en/software/dynamixel/dynamixel_workbench/#p_monitor)
 
@@ -240,8 +244,11 @@ Then you can see below texts.
 
 ### [Single Manager](#single-manager)
 
-**WARNING**: This package is intended for `SINGLE` Dynamixel. Please connect only `One(1)` Dynamixel to your device.  
+**WARNING** : This package is intended for `SINGLE` Dynamixel. Please connect only `One(1)` Dynamixel to your device.  
 If you connect multiple Dynamixels, manager would detect the **lowest ID** among connected Dynamixels.
+{: .notice--warning}
+
+**WARNING** : Single manager and Single manager GUI are not supported anymore. Please use [DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/). 
 {: .notice--warning}
 
 This package is to check Dynamixel status and access Dynamixel's control table.
@@ -351,6 +358,9 @@ Receives command to control Dynamixel
 ### [Single Manager GUI](#single-manager-gui)
 
 **WARNING**: Before you run this package, please launch [single_manager](/docs/en/software/dynamixel/dynamixel_workbench/#single-manager) first.
+{: .notice--warning}
+
+**WARNING** : Single manager and Single manager GUI are not supported anymore. Please use [DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/). 
 {: .notice--warning}
 
 This package is to check Dynamixel status and access Dynamixel's Control Table addresses via **GUI**.
@@ -696,159 +706,7 @@ Namespace of this node
 **Topic List** :
 - `/cmd_vel`([geometry_msgs/Twist](http://docs.ros.org/melodic/api/geometry_msgs/html/msg/Twist.html))  
 Send command velocity to control Dynamixels
-
-### [MoveIt! Bridge](#moveit-bridge)
-
-This package is to receive joint trajectory from MoveIt! and send it to controllers. The purpose of this package is to provide bridge between MoveIt! and Dynamixels.
-
-Let's take a look at the `moveit_bridge.launch` file. First, you should set **planning_group** argument when you make MoveIt! configuration packages. ([Setup Assistant Tutorials](https://ros-planning.github.io/moveit_tutorials/doc/setup_assistant/setup_assistant_tutorial.html#step-4-add-planning-groups)) Second, you have to remap /joint_trajectory topic name when you set on **dynamixel_controllers.launch** file.
-
-```
-<launch>
-  <arg name="robot_name"       default="open_manipulator"/>
-  <arg name="planning_group"   default="arm"/>
-
-  <node name="$(arg planning_group)" pkg="dynamixel_workbench_moveit_bridge" type="moveit_bridge" **output**="screen">
-    <param name="planning_group"      value="$(arg planning_group)"/>
-    <remap from="$(arg planning_group)/joint_trajectory" to="$(arg robot_name)/joint_trajectory"/>
-  </node>
-</launch>
-```
-
-I will give you an example to show how to use moveit_bridge.
-
-1. Downloads [OpenMANIPULATOR](/docs/en/platform/openmanipulator/) packages  
-
-1. Modify `joint_2_0.yaml` file  
-
-    ```
-    joint1:
-      ID: 11
-      Return_Delay_Time: 0
-      Operating_Mode: 3
-    joint2:
-      ID: 12
-      Return_Delay_Time: 0
-      Operating_Mode: 3
-    joint3:
-      ID: 13
-      Return_Delay_Time: 0
-      Operating_Mode: 3
-    joint4:
-      ID: 14
-      Return_Delay_Time: 0
-      Operating_Mode: 3
-    gripper:
-      ID: 15
-      Return_Delay_Time: 0
-      Operating_Mode: 5
-    ```   
-
-1. Modify `dynamixel_controllers.launch` file  
-
-    ```
-    <launch>
-    <arg name="usb_port"                default="/dev/ttyUSB0"/>
-    <arg name="dxl_baud_rate"           default="57600"/>
-    <arg name="namespace"               default="dynamixel_workbench"/>
-
-    <arg name="use_moveit"              default="true"/>
-    <arg name="use_joint_state"         default="true"/>
-    <arg name="use_cmd_vel"             default="false"/>
-
-    <param name="dynamixel_info"          value="$(find dynamixel_workbench_controllers)/config/basic.yaml"/>
-
-    <node name="$(arg namespace)" pkg="dynamixel_workbench_controllers" type="dynamixel_workbench_controllers"
-            required="true" output="screen" args="$(arg usb_port) $(arg dxl_baud_rate)">
-        <param name="use_moveit"              value="$(arg use_moveit)"/>
-        <param name="use_joint_states_topic"  value="$(arg use_joint_state)"/>
-        <param name="use_cmd_vel_topic"       value="$(arg use_cmd_vel)"/>
-        <rosparam>
-        publish_period: 0.010
-        dxl_read_period: 0.010
-        dxl_write_period: 0.010
-        mobile_robot_config:                <!--this values will be set when 'use_cmd_vel' is true-->
-            seperation_between_wheels: 0.160  <!--default value is set by reference of TB3-->
-            radius_of_wheel: 0.033            <!--default value is set by reference of TB3-->
-        </rosparam>
-    </node>
-    </launch>
-    ```  
-    **WARNING**: The controller should be set **joint_2_0.yaml** and set True to `use_moveit` parameter.
-    {: .notice--warning}  
-
-1. Launch dynamixel_controller
-
-    ```
-    $ roslaunch dynamixel_workbench_controllers dynamixel_controllers.launch
-    ```
-
-    If launch file is success to load Dynamixels, you can watch below
-
-    ```
-    [ INFO] [1544603367.568390712]: Name : gripper, ID : 15, Model Number : 1020
-    [ INFO] [1544603367.603361288]: Name : joint1, ID : 11, Model Number : 1020
-    [ INFO] [1544603367.638365961]: Name : joint2, ID : 12, Model Number : 1020
-    [ INFO] [1544603367.673359371]: Name : joint3, ID : 13, Model Number : 1020
-    [ INFO] [1544603367.708354294]: Name : joint4, ID : 14, Model Number : 1020
-    ```
-
-1. Launch open_manipulator_moveit
-
-    ```
-    $ roslaunch open_manipulator_controller open_manipulator_moveit.launch sample_duration:=0.030
-    ```
-
-    If launch file is success to MoveIt!, Rviz is openned and you can watch a manipulator
-
-    **TIP**: [How to set Industrial filter into joint trajectory]{: .popup}
-    {: .notice--success}
-
-1. Launch moveit_bridge
-
-    ```
-    $ roslaunch dynamixel_workbench_moveit_bridge moveit_bridge.launch robot_name:=open_manipulator
-    ```
-
-    If launch file is success to load moveit_bridge, you can watch below
-
-    ```
-    [ INFO] [1544603508.733061360]: Loading robot model 'open_manipulator'...
-    [ INFO] [1544603508.733104674]: No root/virtual joint specified in SRDF. Assuming fixed joint
-    [ INFO] [1544603508.854923512]: Loading robot model 'open_manipulator'...
-    [ INFO] [1544603508.854944540]: No root/virtual joint specified in SRDF. Assuming fixed joint
-    [ INFO] [1544603510.023867011]: Ready to take commands for planning group arm.
-    ```
-
-1. Drag interative marker and push `Plan and Excute` button. Then the Dynamixels will rotate.  
-
-**Parameters List** :
-- `robot_name`  
-Robot name should be set namespace argument when you set dynamixel_controller.launch file
-
-- `planning_group`  
-Planning group when you make MoveIt! configuration packages  
-
-**Topic List** :
-- `/joint_trajectory`([trajectory_msgs/JointTrajectory](http://docs.ros.org/melodic/api/trajectory_msgs/html/msg/JointTrajectory.html))  
-Sends joint trajectory to control Dynamixels
-
-- `/move_group/display_planned_path`([moveit_msgs/DisplayTrajectory](http://docs.ros.org/melodic/api/moveit_msgs/html/msg/DisplayTrajectory.html))  
-Receives planned path by move_group
-
-**Service List** :
-- `moveit/get_joint_position`([open_manipulator_msgs/GetJointPosition]{: .popup})  
-The user can use this service to receives a joint position which is calculated by move_group.
-
-- `moveit/get_kinematics_pose`([open_manipulator_msgs/GetKinematicsPose]{: .popup})  
-The user can use this service to receives a kinematics pose which is calculated by move_group.
-
-- `moveit/set_joint_position`([open_manipulator_msgs/SetJointPosition]{: .popup})   
-The user can use this service to create a trajectory in the [joint space]{: .popup} by move_group. The user **input**s the angle of the target joint and the total time of the trajectory.
-
-- `moveit/set_kinematics_pose`([open_manipulator_msgs/SetKinematicsPose]{: .popup})   
-The user can use this service to create a trajectory in the [task space]{: .popup} by move_group. The user **input**s the kinematics pose(orientation only) of the OpenMANIPULATOR end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
-
+ 
 ## [OpenCR and OpenCM Tutorials](#opencr-and-opencm-tutorials)
 
 Dynamixel-Workbench firmware in OpenCR and OpenCM is completely same. You can select any example what you want and upload it.
@@ -2250,13 +2108,61 @@ Return load. Unit is %
 [dynamixel_workbench_msgs/DynamixelInfo]: /docs/en/popup/dynamixel_workbench_msgs_DynamixelInfo/
 [dynamixel_workbench_msgs/DynamixelCommand]: /docs/en/popup/dynamixel_workbench_msgs_DynamixelCommand/
 [dynamixel_workbench_msgs/DynamixelStateList]: /docs/en/popup/dynamixel_workbench_msgs_DynamixelStateList/
-
 [open_manipulator_msgs/GetJointPosition]: /docs/en/popup/open_manipulator_msgs_GetJointPosition/
 [open_manipulator_msgs/GetKinematicsPose]: /docs/en/popup/open_manipulator_msgs_GetKinematicsPose/
 [open_manipulator_msgs/SetJointPosition]: /docs/en/popup/open_manipulator_msgs_SetJointPosition/
 [open_manipulator_msgs/SetKinematicsPose]: /docs/en/popup/open_manipulator_msgs_SetKinematicsPose/
-
 [How to set Industrial filter into joint trajectory]: /docs/en/popup/how_to_set_smoothing_filter/
-
-
 [DynamixelSDK]: http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/overview/
+[AX-12W]: /docs/en/dxl/ax/ax-12w/
+[AX-12+/12A]: /docs/en/dxl/ax/ax-12a/
+[AX-18F/18A]: /docs/en/dxl/ax/ax-18a/
+[EX-106+]: /docs/en/dxl/ex/ex-106+/   
+[RX-10]: /docs/en/dxl/rx/rx-10/
+[RX-24F]: /docs/en/dxl/rx/rx-24f/
+[RX-28]: /docs/en/dxl/rx/rx-28/
+[RX-64]: /docs/en/dxl/rx/rx-64/
+[MX-12W]: /docs/en/dxl/mx/mx-12w/
+[MX-28]: /docs/en/dxl/mx/mx-28/
+[MX-28(2.0)]: /docs/en/dxl/mx/mx-28-2/
+[MX-64]: /docs/en/dxl/mx/mx-64/
+[MX-64(2.0)]: /docs/en/dxl/mx/mx-64-2/
+[MX-106]: /docs/en/dxl/mx/mx-106/
+[MX-106(2.0)]: /docs/en/dxl/mx/mx-106-2/
+[XL320]: /docs/en/dxl/x/xl320/
+[XL430-W250]: /docs/en/dxl/x/xl430-w250/
+[XM430-W210]: /docs/en/dxl/x/xm430-w210/
+[XM430-W350]: /docs/en/dxl/x/xm430-w350/
+[XH430-W210]: /docs/en/dxl/x/xh430-w210/
+[XM540-W150]: /docs/en/dxl/x/xm540-w150/
+[XM540-W270]: /docs/en/dxl/x/xm540-w270/
+[XH430-W350]: /docs/en/dxl/x/xh430-w350/
+[XH430-V210]: /docs/en/dxl/x/xh430-v210/
+[XH430-V350]: /docs/en/dxl/x/xh430-v350/
+[XH540-W150]: /docs/en/dxl/x/xh540-w150/
+[XH540-W270]: /docs/en/dxl/x/xh540-w270/
+[XH540-V150]: /docs/en/dxl/x/xh540-v150/
+[XH540-V270]: /docs/en/dxl/x/xh540-v270/
+[H54-200-S500-R]: /docs/en/dxl/pro/h54-200-s500-r/
+[H54-100-S500-R]: /docs/en/dxl/pro/h54-100-s500-r/
+[H42-20-S300-R]: /docs/en/dxl/pro/h42-20-s300-r/
+[M54-60-S250-R]: /docs/en/dxl/pro/m54-60-s250-r/
+[M54-40-S250-R]: /docs/en/dxl/pro/m54-40-s250-r/
+[M42-10-S260-R]: /docs/en/dxl/pro/m42-10-s260-r/
+[H54-200-S500-R(A)]: /docs/en/dxl/pro/h54-200-s500-ra/
+[H54-100-S500-R(A)]: /docs/en/dxl/pro/h54-100-s500-ra/
+[H42-20-S300-R(A)]: /docs/en/dxl/pro/h42-20-s300-ra/
+[M54-60-S250-R(A)]: /docs/en/dxl/pro/m54-60-s250-ra/
+[M54-40-S250-R(A)]: /docs/en/dxl/pro/m54-40-s250-ra/
+[M42-10-S260-R(A)]: /docs/en/dxl/pro/m42-10-s260-ra/
+[L54-50-S500-R]: /docs/en/dxl/pro/l54-50-s500-r/
+[L54-50-S290-R]: /docs/en/dxl/pro/l54-50-s290-r/
+[L54-30-S500-R]: /docs/en/dxl/pro/l54-30-s500-r/
+[L54-30-S400-R]: /docs/en/dxl/pro/l54-30-s400-r/
+[L42-10-S300-R]: /docs/en/dxl/pro/l42-10-s300-r/
+[H42P-020-S300-R]: /docs/en/dxl/pro_plus/h42p-020-s300-r/
+[H54P-100-S500-R]: /docs/en/dxl/pro_plus/h54p-100-s500-r/
+[H54P-200-S500-R]: /docs/en/dxl/pro_plus/h54p-200-s500-r/
+[M54P-060-S250-R]: /docs/en/dxl/pro_plus/m54p-060-s250-r/
+[M54P-040-S250-R]: /docs/en/dxl/pro_plus/m54p-040-s250-r/
+[M42P-010-S260-R]: /docs/en/dxl/pro_plus/m42p-010-s260-r/
