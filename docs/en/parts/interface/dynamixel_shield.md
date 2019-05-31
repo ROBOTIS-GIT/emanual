@@ -156,6 +156,11 @@ The shield library is based on the Dynamixel model and automatically refers to t
 
 ## [Available APIs](#available-apis)
 
+### [DynamixelShield(v0.0.5)](dynamixelshieldv005)
+
+**WARNING** : This API will be deprecated and replaced to [DYNAMIXEL2Arduino](#dynamixel2arduino) APIs
+{: .notice--warning}
+
 ```c
 bool begin(uint32_t baud_rate = 57600, uint8_t protocol_version = DXL_PACKET_VER_2_0);
 
@@ -202,5 +207,58 @@ bool syncWriteBegin(void);
 bool syncWriteEnd(void);
 ```
 
+### [DYNAMIXEL2Arduino](#dynamixel2arduino)
+
+**NOTE** : This library is currently available from [GitHub repository]{: .blank} and will be released soon.
+{: .notice}
+
+- [begin()]{: .popup}
+- [getPortBaud()]{: .popup}
+- [ping()]{: .popup}
+- [scan()]{: .popup}
+- [getModelNumber()]{: .popup}
+- [setID()]{: .popup}
+- [setProtocol()]{: .popup}
+- [setBaudrate()]{: .popup}
+- [torqueOn()]{: .popup}
+- [torqueOff()]{: .popup}
+- [ledOn()]{: .popup}
+- [ledOff()]{: .popup}
+- [setOperatingMode()]{: .popup}
+- [setGoalPosition()]{: .popup}
+- [getPresentPosition()]{: .popup}
+- [setGoalVelocity()]{: .popup}
+- [getPresentVelocity()]{: .popup}
+- [setGoalPWM()]{: .popup}
+- [getPresentPWM()]{: .popup}
+- [setGoalCurrent()]{: .popup}
+- [getPresentCurrent()]{: .popup}
+- [readControlTableItem()]{: .popup}
+- [writeControlTableItem()]{: .popup}
 
 [Arduino Official Guide]: https://www.arduino.cc/en/Guide/Libraries
+
+[GitHub repository]: https://github.com/ROBOTIS-GIT/Dynamixel2Arduino
+[begin()]: /docs/en/popup/arduino_api/begin/
+[getPortBaud()]: /docs/en/popup/arduino_api/getPortBaud/
+[ping()]: /docs/en/popup/arduino_api/ping/
+[scan()]: /docs/en/popup/arduino_api/scan/
+[getModelNumber()]: /docs/en/popup/arduino_api/getModelNumber/
+[setID()]: /docs/en/popup/arduino_api/setID/
+[setProtocol()]: /docs/en/popup/arduino_api/setProtocol/
+[setBaudrate()]: /docs/en/popup/arduino_api/setBaudrate/
+[torqueOn()]: /docs/en/popup/arduino_api/torqueOn/
+[torqueOff()]: /docs/en/popup/arduino_api/torqueOff/
+[ledOn()]: /docs/en/popup/arduino_api/ledOn/
+[ledOff()]: /docs/en/popup/arduino_api/ledOff/
+[setOperatingMode()]: /docs/en/popup/arduino_api/setOperatingMode/
+[setGoalPosition()]: /docs/en/popup/arduino_api/setGoalPosition/
+[getPresentPosition()]: /docs/en/popup/arduino_api/getPresentPosition/
+[setGoalVelocity()]: /docs/en/popup/arduino_api/setGoalVelocity/
+[getPresentVelocity()]: /docs/en/popup/arduino_api/getPresentVelocity/
+[setGoalPWM()]: /docs/en/popup/arduino_api/setGoalPWM/
+[getPresentPWM()]: /docs/en/popup/arduino_api/getPresentPWM/
+[setGoalCurrent()]: /docs/en/popup/arduino_api/setGoalCurrent/
+[getPresentCurrent()]: /docs/en/popup/arduino_api/getPresentCurrent/
+[readControlTableItem()]: /docs/en/popup/arduino_api/readControlTableItem/
+[writeControlTableItem()]: /docs/en/popup/arduino_api/writeControlTableItem/
