@@ -158,7 +158,7 @@ The shield library is based on the Dynamixel model and automatically refers to t
 
 ### [DynamixelShield(v0.0.5)](dynamixelshieldv005)
 
-**WARNING** : This API will be deprecated and replaced to DYNAMIXEL2Arduino APIs
+**WARNING** : This API will be deprecated and replaced to [DYNAMIXEL2Arduino](#dynamixel2arduino) APIs
 {: .notice--warning}
 
 ```c
@@ -213,7 +213,7 @@ bool syncWriteEnd(void);
 {: .notice}
 
 - [begin()]{: .popup}
-- [getPortBuad()]{: .popup}
+- [getPortBaud()]{: .popup}
 - [ping()]{: .popup}
 - [scan()]{: .popup}
 - [getModelNumber()]{: .popup}
@@ -240,7 +240,7 @@ bool syncWriteEnd(void);
 
 [GitHub repository]: https://github.com/ROBOTIS-GIT/Dynamixel2Arduino
 [begin()]: /docs/en/popup/arduino_api/begin/
-[getPortBuad()]: /docs/en/popup/arduino_api/getPortBuad/
+[getPortBaud()]: /docs/en/popup/arduino_api/getPortBaud/
 [ping()]: /docs/en/popup/arduino_api/ping/
 [scan()]: /docs/en/popup/arduino_api/scan/
 [getModelNumber()]: /docs/en/popup/arduino_api/getModelNumber/
