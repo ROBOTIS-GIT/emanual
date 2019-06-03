@@ -38,7 +38,7 @@ sidebar:
 
 - Windows 7 / 8 / 10
 - Ubuntu 16 / 18
-- Mac OS
+- Mac OS X (10.11 El Capitan or above)
 
 ## [펌웨어 정의](#펌웨어-정의)
 

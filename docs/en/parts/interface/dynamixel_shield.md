@@ -156,6 +156,36 @@ The shield library is based on the Dynamixel model and automatically refers to t
 
 ## [Available APIs](#available-apis)
 
+
+### [DYNAMIXEL2Arduino](#dynamixel2arduino)
+
+**NOTE** : This library is currently available from [GitHub repository]{: .blank} and will be released soon.
+{: .notice}
+
+- [begin()]{: .popup}
+- [getPortBaud()]{: .popup}
+- [ping()]{: .popup}
+- [scan()]{: .popup}
+- [getModelNumber()]{: .popup}
+- [setID()]{: .popup}
+- [setProtocol()]{: .popup}
+- [setBaudrate()]{: .popup}
+- [torqueOn()]{: .popup}
+- [torqueOff()]{: .popup}
+- [ledOn()]{: .popup}
+- [ledOff()]{: .popup}
+- [setOperatingMode()]{: .popup}
+- [setGoalPosition()]{: .popup}
+- [getPresentPosition()]{: .popup}
+- [setGoalVelocity()]{: .popup}
+- [getPresentVelocity()]{: .popup}
+- [setGoalPWM()]{: .popup}
+- [getPresentPWM()]{: .popup}
+- [setGoalCurrent()]{: .popup}
+- [getPresentCurrent()]{: .popup}
+- [readControlTableItem()]{: .popup}
+- [writeControlTableItem()]{: .popup}
+
 ### [DynamixelShield(v0.0.5)](dynamixelshieldv005)
 
 **WARNING** : This API will be deprecated and replaced to [DYNAMIXEL2Arduino](#dynamixel2arduino) APIs
@@ -207,34 +237,7 @@ bool syncWriteBegin(void);
 bool syncWriteEnd(void);
 ```
 
-### [DYNAMIXEL2Arduino](#dynamixel2arduino)
 
-**NOTE** : This library is currently available from [GitHub repository]{: .blank} and will be released soon.
-{: .notice}
-
-- [begin()]{: .popup}
-- [getPortBaud()]{: .popup}
-- [ping()]{: .popup}
-- [scan()]{: .popup}
-- [getModelNumber()]{: .popup}
-- [setID()]{: .popup}
-- [setProtocol()]{: .popup}
-- [setBaudrate()]{: .popup}
-- [torqueOn()]{: .popup}
-- [torqueOff()]{: .popup}
-- [ledOn()]{: .popup}
-- [ledOff()]{: .popup}
-- [setOperatingMode()]{: .popup}
-- [setGoalPosition()]{: .popup}
-- [getPresentPosition()]{: .popup}
-- [setGoalVelocity()]{: .popup}
-- [getPresentVelocity()]{: .popup}
-- [setGoalPWM()]{: .popup}
-- [getPresentPWM()]{: .popup}
-- [setGoalCurrent()]{: .popup}
-- [getPresentCurrent()]{: .popup}
-- [readControlTableItem()]{: .popup}
-- [writeControlTableItem()]{: .popup}
 
 [Arduino Official Guide]: https://www.arduino.cc/en/Guide/Libraries
 

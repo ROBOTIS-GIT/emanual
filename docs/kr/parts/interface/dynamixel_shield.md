@@ -155,7 +155,36 @@ dxl.begin(1000000, DXL_PACKET_VER_2_0);
 
 ## [사용 가능한 API 목록](#사용-가능한-api-목록)
 
-### [DynamixelShield(v0.0.5)](dynamixelshieldv005)
+### [DYNAMIXEL2Arduino](#dynamixel2arduino)
+
+**참고** : 이 라이브러리는 현재 [GitHub repository]{: .blank}를 통해 다운로드 받을 수 있습니다.
+{: .notice}
+
+- [begin()]{: .popup}
+- [getPortBaud()]{: .popup}
+- [ping()]{: .popup}
+- [scan()]{: .popup}
+- [getModelNumber()]{: .popup}
+- [setID()]{: .popup}
+- [setProtocol()]{: .popup}
+- [setBaudrate()]{: .popup}
+- [torqueOn()]{: .popup}
+- [torqueOff()]{: .popup}
+- [ledOn()]{: .popup}
+- [ledOff()]{: .popup}
+- [setOperatingMode()]{: .popup}
+- [setGoalPosition()]{: .popup}
+- [getPresentPosition()]{: .popup}
+- [setGoalVelocity()]{: .popup}
+- [getPresentVelocity()]{: .popup}
+- [setGoalPWM()]{: .popup}
+- [getPresentPWM()]{: .popup}
+- [setGoalCurrent()]{: .popup}
+- [getPresentCurrent()]{: .popup}
+- [readControlTableItem()]{: .popup}
+- [writeControlTableItem()]{: .popup}
+
+### [DynamixelShield(v0.0.5)](#dynamixelshieldv005)
 
 **주의** : 이 API는 더이상 지원되지 않으며 단종될 예정입니다. [DYNAMIXEL2Arduino](#dynamixel2arduino)를 참고해주시기 바랍니다.
 {: .notice--warning}
@@ -206,34 +235,7 @@ bool syncWriteBegin(void);
 bool syncWriteEnd(void);
 ```
 
-### [DYNAMIXEL2Arduino](#dynamixel2arduino)
 
-**참고** : 이 라이브러리는 현재 [GitHub repository]{: .blank}를 통해 다운로드 받을 수 있습니다.
-{: .notice}
-
-- [begin()]{: .popup}
-- [getPortBaud()]{: .popup}
-- [ping()]{: .popup}
-- [scan()]{: .popup}
-- [getModelNumber()]{: .popup}
-- [setID()]{: .popup}
-- [setProtocol()]{: .popup}
-- [setBaudrate()]{: .popup}
-- [torqueOn()]{: .popup}
-- [torqueOff()]{: .popup}
-- [ledOn()]{: .popup}
-- [ledOff()]{: .popup}
-- [setOperatingMode()]{: .popup}
-- [setGoalPosition()]{: .popup}
-- [getPresentPosition()]{: .popup}
-- [setGoalVelocity()]{: .popup}
-- [getPresentVelocity()]{: .popup}
-- [setGoalPWM()]{: .popup}
-- [getPresentPWM()]{: .popup}
-- [setGoalCurrent()]{: .popup}
-- [getPresentCurrent()]{: .popup}
-- [readControlTableItem()]{: .popup}
-- [writeControlTableItem()]{: .popup}
 
 [Arduino Official Guide]: https://www.arduino.cc/en/Guide/Libraries
 

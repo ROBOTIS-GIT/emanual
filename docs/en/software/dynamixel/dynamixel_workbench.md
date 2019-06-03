@@ -19,7 +19,7 @@ The purpose of Dynamixel-Workbench is **to use more simple and easy to use any D
 
 If have any questions or issues, please get a ticket in [github issue](https://github.com/ROBOTIS-GIT/dynamixel-workbench/issues).
 
-**WARNING** : Single manager and Single manager GUI are not supported anymore. Please use [DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/). 
+**WARNING** : Support for Single Manager and Single Manager GUI will end on Jun 21st, 2019. Please use [DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/). 
 {: .notice--warning}
   
 
@@ -248,7 +248,7 @@ Then you can see below texts.
 If you connect multiple Dynamixels, manager would detect the **lowest ID** among connected Dynamixels.
 {: .notice--warning}
 
-**WARNING** : Single manager and Single manager GUI are not supported anymore. Please use [DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/). 
+**WARNING** : Support for Single Manager and Single Manager GUI will end on Jun 21st, 2019. Please use [DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/). 
 {: .notice--warning}
 
 This package is to check Dynamixel status and access Dynamixel's control table.
@@ -360,7 +360,7 @@ Receives command to control Dynamixel
 **WARNING**: Before you run this package, please launch [single_manager](/docs/en/software/dynamixel/dynamixel_workbench/#single-manager) first.
 {: .notice--warning}
 
-**WARNING** : Single manager and Single manager GUI are not supported anymore. Please use [DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/). 
+**WARNING** : Support for Single Manager and Single Manager GUI will end on Jun 21st, 2019. Please use [DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/). 
 {: .notice--warning}
 
 This package is to check Dynamixel status and access Dynamixel's Control Table addresses via **GUI**.
