@@ -36,9 +36,10 @@ The following features are provided with DYNAMIXEL Wizard 2.0.
 
 ## [Supported OS](#supported-os)
 
-- Windows
-- Linux
-- Mac OS
+- Windows 7 / 8 / 10
+- Ubuntu 16 / 18
+- Mac OS X (10.11 El Capitan or above)
+
 
 ## [Definition of Firmware](#definition-of-firmware)
 

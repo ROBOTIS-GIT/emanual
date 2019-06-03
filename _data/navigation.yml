@@ -12858,7 +12858,7 @@ play-700:
             url: /edu/play/play-700/#connect-bluetooth
           - title: "Run Scratch"
             url: /edu/play/play-700/#run-scratch
-  - title: "Vidoe Tutorials"
+  - title: "Video Tutorials"
     url: /edu/play/play-700/#video-tutorials
 
 #Ollo Bug Kit sidebar
@@ -20336,6 +20336,15 @@ dynamixel_shield:
       titlekr: "사용 가능한 API 목록"
       url: /parts/interface/dynamixel_shield/#available-apis
       urlkr: /parts/interface/dynamixel_shield/#사용-가능한-api-목록
+      children:
+        - title: DYNAMIXEL2Arduino
+          titlekr: DYNAMIXEL2Arduino
+          url: /parts/interface/dynamixel_shield/#dynamixel2arduino
+          urlkr: /parts/interface/dynamixel_shield/#dynamixel2arduino
+        - title: DYNAMIXELShield
+          titlekr: DYNAMIXELShield
+          url: /parts/interface/dynamixel_shield/#dynamixelshieldv005
+          urlkr: /parts/interface/dynamixel_shield/#dynamixelshieldv005
 
 u2d2_power_hub:
   - title: "Introduction"
