@@ -64,7 +64,7 @@ $ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git
 $ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench.git
 $ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench-msgs.git
 $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_pro.git
-$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_pro_msgs.git
+$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_msgs.git
 $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_pro_simulations.git
 $ git clone https://github.com/ROBOTIS-GIT/robotis_manipulator.git
 $ cd ~/catkin_ws && catkin_make

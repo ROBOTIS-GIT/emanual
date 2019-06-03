@@ -608,28 +608,28 @@ If you would like to see more details about topic message, click the `▶` butto
 
 **Published Topic List** :
 A list of topics that the open_manipulator_pro_controller publishes.
-- `/open_manipulator_pro/states`
-- `/open_manipulator_pro/joint_states`
-- `/open_manipulator_pro/gripper/kinematics_pose`
-- `/open_manipulator_pro/*joint_name*_position/command`
-- `/open_manipulator_pro/rviz/moveit/update_start_state`
+- `/open_manipulator/states`
+- `/open_manipulator/joint_states`
+- `/open_manipulator/gripper/kinematics_pose`
+- `/open_manipulator/*joint_name*_position/command`
+- `/open_manipulator/rviz/moveit/update_start_state`
 
 **NOTE**: These topics are messages for checking the status of the robot regardless of the robot's motion.
 {: .notice--info}
 
-`/open_manipulator_pro/joint_states`([sensor_msgs/JointState]{: .popup}) is a message indicating the states of joints of OpenMANIPULATOR-PRO. **"name"** indicates joint component names.  **"effort"** shows currents of the joint DYNAMIXEL. **"position"** and **"velocity"** indicates angles and angular velocities of joints.
+`/open_manipulator/joint_states`([sensor_msgs/JointState]{: .popup}) is a message indicating the states of joints of OpenMANIPULATOR-PRO. **"name"** indicates joint component names.  **"effort"** shows currents of the joint DYNAMIXEL. **"position"** and **"velocity"** indicates angles and angular velocities of joints.
 
  <!-- <img src="/assets/images/platform/openmanipulator_x/rqt_joint_states.png" width="1000"> -->
 
-`/open_manipulator_pro/gripper/kinematics_pose`([open_manipulator_pro_msgs/KinematicsPose]{: .popup}) is a message indicating pose (position and orientation) in [task space]{: .popup}. **"position"** indicates the x, y and z values of the center of the end-effector (tool). **"Orientation"** indicates the direction of the end-effector (tool) as quaternion.
+`/open_manipulator/gripper/kinematics_pose`([open_manipulator_msgs/KinematicsPose]{: .popup}) is a message indicating pose (position and orientation) in [task space]{: .popup}. **"position"** indicates the x, y and z values of the center of the end-effector (tool). **"Orientation"** indicates the direction of the end-effector (tool) as quaternion.
 
  <!-- <img src="/assets/images/platform/openmanipulator_x/rqt_kinematic_pose.png" width="1000"> -->
 
-`/open_manipulator_pro/states`([open_manipulator_pro_msgs/OpenManipulatorState]{: .popup}) is a message indicating the status of OpenMANIPULATOR-PRO. **"open_manipulator_pro_actuator_state"** indicates whether actuators (DYNAMIXEL) are enabled ("ACTUATOR_ENABLE") or disabled ("ACTUATOR_DISABLE"). **"open_manipulator_pro_moving_state"** indicates whether OpenMANIPULATOR-PRO is moving along the trajectory ("IS_MOVING") or stopped ("STOPPED").
+`/open_manipulator/states`([open_manipulator_msgs/OpenManipulatorState]{: .popup}) is a message indicating the status of OpenMANIPULATOR-PRO. **"open_manipulator_actuator_state"** indicates whether actuators (DYNAMIXEL) are enabled ("ACTUATOR_ENABLE") or disabled ("ACTUATOR_DISABLE"). **"open_manipulator_moving_state"** indicates whether OpenMANIPULATOR-PRO is moving along the trajectory ("IS_MOVING") or stopped ("STOPPED").
 
  <!-- <img src="/assets/images/platform/openmanipulator_x/rqt_states.png" width="1000"> -->
 
-`/open_manipulator_pro/*joint_name*_position/command`([std_msgs/Float64]{: .popup}) are the messages to publish goal position of each joint to gazebo simulation node. `*joint_name*` shows the name of each joint. The messages will only be published if you run the controller package with the `use_platform` parameter set to `false`.
+`/open_manipulator/*joint_name*_position/command`([std_msgs/Float64]{: .popup}) are the messages to publish goal position of each joint to gazebo simulation node. `*joint_name*` shows the name of each joint. The messages will only be published if you run the controller package with the `use_platform` parameter set to `false`.
 
 `/rviz/moveit/update_start_state`([std_msgs/Empty]{: .popup}) is a message to update start state of moveit! trajectory. This message will only be published if you run the controller package with the `use_moveit` parameter set to `true`.
 
@@ -637,19 +637,19 @@ A list of topics that the open_manipulator_pro_controller publishes.
 
 **Subscribed Topic List**:
 A list of topics that the open_manipulator_pro_controller subscribes.
-- `/open_manipulator_pro/option`
-- `/open_manipulator_pro/move_group/display_planned_path`
-- `/open_manipulator_pro/move_group/goal`
-- `/open_manipulator_pro/execute_trajectory/goal`
+- `/open_manipulator/option`
+- `/open_manipulator/move_group/display_planned_path`
+- `/open_manipulator/move_group/goal`
+- `/open_manipulator/execute_trajectory/goal`
 
 **NOTE**: These topics are messages for checking the status of the robot regardless of the robot's motion.
 {: .notice--info}
 
-`/open_manipulator_pro/option`([std_msgs/String]{: .popup}) is used to set OpenMANIPULATOR-PRO options. **"print_open_manipulator_setting"** : is to request the open_manipulator_pro_controller to display "Manipulator Description".
+`/open_manipulator/option`([std_msgs/String]{: .popup}) is used to set OpenMANIPULATOR-PRO options. **"print_open_manipulator_setting"** : is to request the open_manipulator_pro_controller to display "Manipulator Description".
 
-<img src="/assets/images/platform/openmanipulator_pro/rqt_option.png" width="1000"> 
+<!-- <img src="/assets/images/platform/openmanipulator_pro/rqt_option.png" width="1000">  --->
 
-`/open_manipulator_pro/option`([moveit_msgs/DisplayTrajectory]{: .popup}) is used to subscribe a planned joint trajectory published from moveit!
+`/open_manipulator/option`([moveit_msgs/DisplayTrajectory]{: .popup}) is used to subscribe a planned joint trajectory published from moveit!
 
 `/move_group/goal`([moveit_msgs/MoveGroupActionGoal]{: .popup}) is used to subscribe a planning option data published from moveit!
 
@@ -670,68 +670,68 @@ In addition, you can monitor topics through rqt whenever you have a topic added 
 **Service Server List** :
 A list of service servers that open_manipulator_pro_controller has.
 
-- `/open_manipulator_pro/goal_joint_space_path` ([open_manipulator_pro_msgs/SetJointPosition]{: .popup})  
+- `/open_manipulator/goal_joint_space_path` ([open_manipulator_msgs/SetJointPosition]{: .popup})  
 The user can use this service to create a trajectory in the [joint space]{: .popup}. The user inputs the angle of the target joint and the total time of the trajectory.
 
-- `/open_manipulator_pro/goal_joint_space_path_to_kinematics_pose` ([open_manipulator_pro_msgs/SetKinematicsPose]{: .popup})  
+- `/open_manipulator/goal_joint_space_path_to_kinematics_pose` ([open_manipulator_msgs/SetKinematicsPose]{: .popup})  
 The user can use this service to create a trajectory in the [joint space]{: .popup}. The user inputs the kinematics pose of the OpenMANIPULATOR-PRO end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
 
-- `/open_manipulator_pro/goal_joint_space_path_to_kinematics_position` ([open_manipulator_pro_msgs/SetKinematicsPose]{: .popup})  
+- `/open_manipulator/goal_joint_space_path_to_kinematics_position` ([open_manipulator_msgs/SetKinematicsPose]{: .popup})  
 The user can use this service to create a trajectory in the [joint space]{: .popup}. The user inputs the kinematics pose(position only) of the OpenMANIPULATOR-PRO end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
 
-- `/open_manipulator_pro/goal_joint_space_path_to_kinematics_orientation` ([open_manipulator_pro_msgs/SetKinematicsPose]{: .popup})  
+- `/open_manipulator/goal_joint_space_path_to_kinematics_orientation` ([open_manipulator_msgs/SetKinematicsPose]{: .popup})  
 The user can use this service to create a trajectory in the [joint space]{: .popup}. The user inputs the kinematics pose(orientation only) of the OpenMANIPULATOR-PRO end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
 
-- `/open_manipulator_pro/goal_task_space_path` ([open_manipulator_pro_msgs/SetKinematicsPose]{: .popup})  
+- `/open_manipulator/goal_task_space_path` ([open_manipulator_msgs/SetKinematicsPose]{: .popup})  
 The user can use this service to create a trajectory in the [task space]{: .popup}. The user inputs the kinematics pose of the OpenMANIPULATOR-PRO end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
 
-- `/open_manipulator_pro/goal_task_space_path_position_only` ([open_manipulator_pro_msgs/SetKinematicsPose]{: .popup})  
+- `/open_manipulator/goal_task_space_path_position_only` ([open_manipulator_msgs/SetKinematicsPose]{: .popup})  
 The user can use this service to create a trajectory in the [task space]{: .popup}. The user inputs the kinematics pose(position only) of the OpenMANIPULATOR-PRO end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
 
-- `/open_manipulator_pro/goal_task_space_path_orientation_only` ([open_manipulator_pro_msgs/SetKinematicsPose]{: .popup})  
+- `/open_manipulator/goal_task_space_path_orientation_only` ([open_manipulator_msgs/SetKinematicsPose]{: .popup})  
 The user can use this service to create a trajectory in the [task space]{: .popup}. The user inputs the kinematics pose(orientation only) of the OpenMANIPULATOR-PRO end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
 
-- `/open_manipulator_pro/goal_joint_space_path_from_present` ([open_manipulator_pro_msgs/SetJointPosition]{: .popup})  
+- `/open_manipulator/goal_joint_space_path_from_present` ([open_manipulator_msgs/SetJointPosition]{: .popup})  
 The user can use this service to create a trajectory from present joint angle in the [joint space]{: .popup}. The user inputs the angle of the target joint to be changed and the total time of the trajectory.
 
-- `/open_manipulator_pro/goal_task_space_path_from_present` ([open_manipulator_pro_msgs/SetKinematicsPose]{: .popup})  
+- `/open_manipulator/goal_task_space_path_from_present` ([open_manipulator_msgs/SetKinematicsPose]{: .popup})  
 The user can use this service to create a trajectory from present kinematics pose in the task space. The user inputs the kinematics pose to be changed of the OpenMANIPULATOR-PRO end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
 
-- `/open_manipulator_pro/goal_task_space_path_from_present_position_only` ([open_manipulator_pro_msgs/SetKinematicsPose]{: .popup})  
+- `/open_manipulator/goal_task_space_path_from_present_position_only` ([open_manipulator_msgs/SetKinematicsPose]{: .popup})  
 The user can use this service to create a trajectory from present kinematics pose in the [task space]{: .popup}. The user inputs the kinematics pose(position only) of the OpenMANIPULATOR-PRO end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
 
-- `/open_manipulator_pro/goal_task_space_path_from_present_orientation_only` ([open_manipulator_pro_msgs/SetKinematicsPose]{: .popup})  
+- `/open_manipulator/goal_task_space_path_from_present_orientation_only` ([open_manipulator_msgs/SetKinematicsPose]{: .popup})  
 The user can use this service to create a trajectory from present kinematics pose in the [task space]{: .popup}. The user inputs the kinematics pose(orientation only) of the OpenMANIPULATOR-PRO end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
 
-- `/open_manipulator_pro/goal_tool_control` ([open_manipulator_pro_msgs/SetJointPosition]{: .popup})  
+- `/open_manipulator/goal_tool_control` ([open_manipulator_msgs/SetJointPosition]{: .popup})  
 The user can use this service to move the tool of OpenMANIPULATOR_PRO.
 
-- `/open_manipulator_pro/set_actuator_state` ([open_manipulator_pro_msgs/SetActuatorState]{: .popup})  
+- `/open_manipulator/set_actuator_state` ([open_manipulator_msgs/SetActuatorState]{: .popup})  
 The user can use this service to control the state of actucators.   
 If the user set true at set_actuator_state valuable, the actuator will be enabled.  
 If the user set false at set_actuator_state valuable, the actuator will be disabled.
 
-- `/open_manipulator_pro/goal_drawing_trajectory` ([open_manipulator_pro_msgs/SetDrawingTrajectory]{: .popup})  
+- `/open_manipulator/goal_drawing_trajectory` ([open_manipulator_msgs/SetDrawingTrajectory]{: .popup})  
 The user can use this service to create a drawing trajectory. The user can create the circle, the rhombus, the heart, and the straight line trajectory.
 
-- `/moveit/get_joint_position` ([open_manipulator_pro_msgs/GetJointPosition]{: .popup})  
+- `/moveit/get_joint_position` ([open_manipulator_msgs/GetJointPosition]{: .popup})  
 This service is used when using moveit! The user can use this service to receives a joint position which is calculated by move_group.
 
-- `/moveit/get_kinematics_pose` ([open_manipulator_pro_msgs/GetKinematicsPose]{: .popup})  
+- `/moveit/get_kinematics_pose` ([open_manipulator_msgs/GetKinematicsPose]{: .popup})  
 This service is used when using moveit! The user can use this service to receives a kinematics pose which is calculated by move_group.
 
-- `/moveit/set_joint_position` ([open_manipulator_pro_msgs/SetJointPosition]{: .popup})  
+- `/moveit/set_joint_position` ([open_manipulator_msgs/SetJointPosition]{: .popup})  
 This service is used when using moveit! The user can use this service to create a trajectory in the [joint space]{: .popup} by move_group. The user inputs the angle of the target joint and the total time of the trajectory.
 
-- `/moveit/set_kinematics_pose` ([open_manipulator_pro_msgs/SetKinematicsPose]{: .popup})  
+- `/moveit/set_kinematics_pose` ([open_manipulator_msgs/SetKinematicsPose]{: .popup})  
 This service is used when using moveit! The user can use this service to create a trajectory in the [task space]{: .popup} by move_group. The user inputs the kinematics pose of the OpenMANIPULATOR-PRO end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
 
-[open_manipulator_pro_msgs/GetJointPosition]: /docs/en/popup/open_manipulator_pro_msgs_GetJointPosition/
-[open_manipulator_pro_msgs/GetKinematicsPose]: /docs/en/popup/open_manipulator_pro_msgs_GetKinematicsPose/
-[open_manipulator_pro_msgs/SetJointPosition]: /docs/en/popup/open_manipulator_pro_msgs_SetJointPosition/
-[open_manipulator_pro_msgs/SetKinematicsPose]: /docs/en/popup/open_manipulator_pro_msgs_SetKinematicsPose/
-[open_manipulator_pro_msgs/SetActuatorState]: /docs/en/popup/open_manipulator_pro_msgs_SetActuatorState/
-[open_manipulator_pro_msgs/SetDrawingTrajectory]: /docs/en/popup/open_manipulator_pro_msgs_SetDrawingTrajectory/
+[open_manipulator_msgs/GetJointPosition]: /docs/en/popup/open_manipulator_msgs_GetJointPosition/
+[open_manipulator_msgs/GetKinematicsPose]: /docs/en/popup/open_manipulator_msgs_GetKinematicsPose/
+[open_manipulator_msgs/SetJointPosition]: /docs/en/popup/open_manipulator_msgs_SetJointPosition/
+[open_manipulator_msgs/SetKinematicsPose]: /docs/en/popup/open_manipulator_msgs_SetKinematicsPose/
+[open_manipulator_msgs/SetActuatorState]: /docs/en/popup/open_manipulator_msgs_SetActuatorState/
+[open_manipulator_msgs/SetDrawingTrajectory]: /docs/en/popup/open_manipulator_msgs_SetDrawingTrajectory/
 [std_msgs/Float64]: /docs/en/popup/std_msgs_Float64_msg/
 [std_msgs/Empty]: /docs/en/popup/std_msgs_Empty_msg/
 [moveit_msgs/DisplayTrajectory]: /docs/en/popup/moveit_msgs_DisplayTrajectory_msg/
@@ -740,8 +740,8 @@ This service is used when using moveit! The user can use this service to create 
 
 
 [sensor_msgs/JointState]: /docs/en/popup/sensor_msgs_JointState_msg/
-[open_manipulator_pro_msgs/KinematicsPose]: /docs/en/popup/open_manipulator_pro_msgs_KinematicsPose/
-[open_manipulator_pro_msgs/OpenManipulatorState]: /docs/en/popup/open_manipulator_pro_msgs_OpenManipulatorState/
+[open_manipulator_msgs/KinematicsPose]: /docs/en/popup/open_manipulator_msgs_KinematicsPose/
+[open_manipulator_msgs/OpenManipulatorState]: /docs/en/popup/open_manipulator_msgs_OpenManipulatorState/
 [std_msgs/String]: /docs/en/popup/std_msgs_string/
 
 [task space]: /docs/en/popup/open_manipulator_pro_coordinates/
