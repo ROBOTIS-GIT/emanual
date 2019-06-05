@@ -119,43 +119,7 @@ sidebar:
 
 # [라이브러리 API](#라이브러리-api)
 
-## [라이브러리 초기화](#라이브러리-초기화)
-
-라이브러리를 사용하기 위해서는 통신 포트의 속도와 프로토콜을 설정하여 begin 함수로 초기화 한다.
-
-```c
-dxl.begin(1000000, DXL_PACKET_VER_2_0);
-```
-
-> 1Mbps 통신 속도에 프로토콜 2.0 으로 설정
-
-
-## [다이나믹셀 연결](#다이나믹셀-연결)
-
-쉴드 라이브러리는 다이나믹셀의 모델을 기반으로 하여 자동으로 주소값을 참조하도록 되어 있기 때문에 연결된 다이나믹셀이 무엇인지 알기 위해서 연결된 다이나믹셀의 ID와 모델을 추가해야 한다.
-
--	자동 추가
-  ```c
-  dxl.ping();
-  ```
-
-  > ping 함수를 이용하여 자동으로 1번 부터 31번까지 검색을 해서 연결된 다이나믹셀이 있으면 추가한다.
-
--	수동 추가
-  ```c
-  dxl.begin(1000000);
-  delay(1000);
-  dxl.addMotor(1, M_XL430);
-  dxl.addMotor(2, M_XL430);
-  dxl.addMotor(15, M_AX12);
-  ```
-
-  > addMotor 함수를 이용하여 추가한다.
-
-
-## [사용 가능한 API 목록](#사용-가능한-api-목록)
-
-### [DYNAMIXEL2Arduino](#dynamixel2arduino)
+## [DYNAMIXEL2Arduino](#dynamixel2arduino)
 
 **참고** : 이 라이브러리는 현재 [GitHub repository]{: .blank}를 통해 다운로드 받을 수 있습니다.
 {: .notice}
@@ -184,7 +148,7 @@ dxl.begin(1000000, DXL_PACKET_VER_2_0);
 - [readControlTableItem()]{: .popup}
 - [writeControlTableItem()]{: .popup}
 
-### [DynamixelShield(v0.0.5)](#dynamixelshieldv005)
+## [DynamixelShield(v0.0.5)](#dynamixelshieldv005)
 
 **주의** : 이 API는 더이상 지원되지 않으며 단종될 예정입니다. [DYNAMIXEL2Arduino](#dynamixel2arduino)를 참고해주시기 바랍니다.
 {: .notice--warning}

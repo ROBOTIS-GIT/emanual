@@ -120,44 +120,7 @@ If you have successfully installed the library, you'll be able to find several e
 
 # [Library API](#library-api)
 
-## [Initialize Library](#initialize-library)
-
-Before using library, you should initialize the communication speed of com port and protocol version with begin function.
-
-```c
-dxl.begin(1000000, DXL_PACKET_VER_2_0);
-```
-
-> Baud rate : 1Mbps, Protocol : Dynamixel protocol 2.0
-
-
-## [Connect Dynamixel](#connect-dynamixel)
-
-The shield library is based on the Dynamixel model and automatically refers to the address value, so you need to add the ID and model of the connected Dynamixel to know what the connected Dynamixel is.
-
--	Automatic Setup
-  ```c
-  dxl.ping();
-  ```
-
-  > Using **ping** function, automatically search from 1 to 31 and add connected Dynamixel.
-
--	Manual Setup
-  ```c
-  dxl.begin(1000000);
-  delay(1000);
-  dxl.addMotor(1, M_XL430);
-  dxl.addMotor(2, M_XL430);
-  dxl.addMotor(15, M_AX12);
-  ```
-
-  > Add Dynamixel using **addMotor** function.
-
-
-## [Available APIs](#available-apis)
-
-
-### [DYNAMIXEL2Arduino](#dynamixel2arduino)
+## [DYNAMIXEL2Arduino](#dynamixel2arduino)
 
 **NOTE** : This library is currently available from [GitHub repository]{: .blank} and will be released soon.
 {: .notice}
@@ -186,7 +149,7 @@ The shield library is based on the Dynamixel model and automatically refers to t
 - [readControlTableItem()]{: .popup}
 - [writeControlTableItem()]{: .popup}
 
-### [DynamixelShield(v0.0.5)](dynamixelshieldv005)
+## [DynamixelShield(v0.0.5)](dynamixelshieldv005)
 
 **WARNING** : This API will be deprecated and replaced to [DYNAMIXEL2Arduino](#dynamixel2arduino) APIs
 {: .notice--warning}
