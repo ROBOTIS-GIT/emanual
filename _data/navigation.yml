@@ -20324,14 +20324,14 @@ dynamixel_shield:
     url: /parts/interface/dynamixel_shield/#library-api
     urlkr: /parts/interface/dynamixel_shield/#라이브러리-api
     children:
-    - title: DYNAMIXEL2Arduino
-      titlekr: DYNAMIXEL2Arduino
-      url: /parts/interface/dynamixel_shield/#dynamixel2arduino
-      urlkr: /parts/interface/dynamixel_shield/#dynamixel2arduino
+    - title: DYNAMIXELShield(v0.1.0 or above)
+      titlekr: DYNAMIXELShield(v0.1.0 or above)
+      url: /parts/interface/dynamixel_shield/#dynamixelshieldv010-or-above
+      urlkr: /parts/interface/dynamixel_shield/#다이나믹셀-쉴드v010-이상
     - title: DYNAMIXELShield
       titlekr: DYNAMIXELShield
       url: /parts/interface/dynamixel_shield/#dynamixelshieldv005
-      urlkr: /parts/interface/dynamixel_shield/#dynamixelshieldv005
+      urlkr: /parts/interface/dynamixel_shield/#다이나믹셀-쉴드v005
 
 u2d2_power_hub:
   - title: "Introduction"

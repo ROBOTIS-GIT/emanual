@@ -136,14 +136,14 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 
 ## [Install: Mac](#install-mac)
 
-1. Download the package file.
-2. Right click on the downloaded dmg file and select `Open` from the mene.
+1. Download the package file.  
+2. Right click on the downloaded dmg file and select `Open` from the mene.  
   ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_mac_01.png)
-3. Launch the `DynamixelWizard2Setup_x64` file.
+3. Launch the `DynamixelWizard2Setup_x64` file.  
   ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_mac_02.png)
-4. If a warning message pops up, select `Open` to proceed installation.
+4. If a warning message pops up, select `Open` to proceed installation.  
   ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_mac_03.png)
-5. Click `Next` to continue and follow the setup instruction.
+5. Click `Next` to continue and follow the setup instruction.  
   ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_mac_04.png)
 
 # [Uninstall Software](#uninstall-software)
