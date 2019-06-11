@@ -12,7 +12,7 @@ This function controls PWM of DYNAMIXEL.
 
 - setGoalPWM(id, value, unit)
 
-## parameters
+## Parameters
 
 - **id** : ID of a specific DYNAMIXEL. Data type : unsigned int8
 - **value** : Goal PWM value in raw value(default) or percentage. Data type : float

@@ -91,14 +91,13 @@ Dynamixel Shield  was created to use RC100 and Dynamixel on arduino board. We pr
 
 ## [Features](#features)
 
+- Compatible to Arduino boards
 -	Support dynamixel protocol 1.0/2.0
-- Up to 16 Dynamixels can be controlled
-
-(Typically, each motor(XL-320 or XL430-W250) consumes 0.4 ~ 0.6A of current. )
-
+- Up to 16 Dynamixels can be controlled (Typically, each motor(XL-320 or XL430-W250) consumes 0.4 ~ 0.6A of current)
 - Support SynWrite function
 - Support RC100 library
-- Serial communication using software serial library.
+- Serial communication using software serial library
+- DYNAMIXEL Shield library(v0.1.0 or above) requires DYNAMIXEL2Arduino library
 
 ## [Install Library](#install-library)
 
@@ -111,7 +110,13 @@ There are three ways to add libraries to the Arduino IDE.
 Each way is described in detail in the [Arduino Official Guide], so please refer to it if necessary.  
 Below is an example of using the Library Manager.
 
-![](/assets/images/parts/interface/dynamixel_shield/library_manager.png)
+![](/assets/images/parts/interface/dynamixel_shield/library_manager_01.png)
+
+In order to use DYNAMIXEL Shield library(v0.1.0 or above), DYNAMIXEL2Arduino library must be installed.
+
+![](/assets/images/parts/interface/dynamixel_shield/library_manager_02.png)
+
+![](/assets/images/parts/interface/dynamixel_shield/library_manager_03.png)
 
 If you have successfully installed the library, you'll be able to find several examples of DynamixelShield in the examples.
 
@@ -120,10 +125,10 @@ If you have successfully installed the library, you'll be able to find several e
 
 # [Library API](#library-api)
 
-## [DYNAMIXEL2Arduino](#dynamixel2arduino)
+## [DYNAMIXELShield(v0.1.0 or above)](#dynamixelshieldv010-or-above)
 
-**NOTE** : This library is currently available from [GitHub repository]{: .blank} and will be released soon.
-{: .notice}
+**WARNING** : In order to use DYNAMIXEL Shield library(v0.1.0 or above), [DYNAMIXEL2Arduino library](#install-library) must be installed.
+{: .notice--warning}
 
 - [begin()]{: .popup}
 - [getPortBaud()]{: .popup}
@@ -148,10 +153,12 @@ If you have successfully installed the library, you'll be able to find several e
 - [getPresentCurrent()]{: .popup}
 - [readControlTableItem()]{: .popup}
 - [writeControlTableItem()]{: .popup}
+- [syncRead()]{: .popup}
+- [syncWrite()]{: .popup}
 
-## [DynamixelShield(v0.0.5)](dynamixelshieldv005)
+## [DynamixelShield(v0.0.5)](#dynamixelshieldv005)
 
-**WARNING** : This API will be deprecated and replaced to [DYNAMIXEL2Arduino](#dynamixel2arduino) APIs
+**WARNING** : This version of API is deprecated.
 {: .notice--warning}
 
 ```c
@@ -228,3 +235,5 @@ bool syncWriteEnd(void);
 [getPresentCurrent()]: /docs/en/popup/arduino_api/getPresentCurrent/
 [readControlTableItem()]: /docs/en/popup/arduino_api/readControlTableItem/
 [writeControlTableItem()]: /docs/en/popup/arduino_api/writeControlTableItem/
+[syncRead()]: /docs/en/popup/arduino_api/syncRead/
+[syncWrite()]: /docs/en/popup/arduino_api/syncWrite/

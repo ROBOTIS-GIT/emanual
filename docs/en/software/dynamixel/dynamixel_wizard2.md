@@ -75,7 +75,7 @@ Although almost all ROBOTIS products are shipped with preinstalled firmwares, ne
 | **PRO+ M**       | [M54P-060-S250-R]              | [M54P-040-S250-R]              | [M42P-010-S260-R]              |                                |                 |
 | **ETC**          | [RH-P12-RN]                    | [RH-P12-RN(A)]                 |                                |                                |                 |
 
- 
+
 
 
 
@@ -134,6 +134,18 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 
 4. Click on `Next` button to proceed installation.
 
+## [Install: Mac](#install-mac)
+
+1. Download the package file.
+2. Right click on the downloaded dmg file and select `Open` from the mene.
+  ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_mac_01.png)
+3. Launch the `DynamixelWizard2Setup_x64` file.
+  ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_mac_02.png)
+4. If a warning message pops up, select `Open` to proceed installation.
+  ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_mac_03.png)
+5. Click `Next` to continue and follow the setup instruction.
+  ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_mac_04.png)
+
 # [Uninstall Software](#uninstall-software)
 
 ## [Uninstall: Windows](#uninstall-windows)
@@ -179,9 +191,9 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 
 1. Go to `Device` > `Scan` to start searching connected DYNAMIXELs.
 
-    **NOTE** : If Open failed is shown up, please check whether communication port is connected at the **Main Toolbar** or not, then button `Disconnect` to avoid port collision. 
+    **NOTE** : If Open failed is shown up, please check whether communication port is connected at the **Main Toolbar** or not, then button `Disconnect` to avoid port collision.
     {: .notice}
-  
+
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_012.png)
 
@@ -294,7 +306,7 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 
     **NOTE** : If Open failed is shown up, please check whether communication port is connected at the **Main Toolbar** or not, then button `Disconnect` to avoid port collision.  
     {: .notice}
-    
+
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_002.png)
 
 3. Select Protocol version and instruction to use.

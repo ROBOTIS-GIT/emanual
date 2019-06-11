@@ -12,7 +12,7 @@ This function requests the model number of DYNAMIXEL.
 
 - getModelNumber(id)
 
-## parameters
+## Parameters
 
 - **id** : ID of a specific DYNAMIXEL. Data type : unsigned int8
 

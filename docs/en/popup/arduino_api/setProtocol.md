@@ -12,7 +12,7 @@ This function changes protocol version of DYNAMIXEL.
 
 - setProtocol(id, version)
 
-## parameters
+## Parameters
 
 - **id** : ID of a specific DYNAMIXEL. Data type : unsigned int8
 - **version** : Protocol version to use. Data type : float

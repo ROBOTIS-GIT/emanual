@@ -12,7 +12,7 @@ This function checks the connection status of DYNAMIXEL with Broadcast ID.
 
 - scan()
 
-## parameters
+## Parameters
 
 - None
 

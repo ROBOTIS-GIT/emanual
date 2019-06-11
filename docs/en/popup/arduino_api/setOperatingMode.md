@@ -12,7 +12,7 @@ This function changes operating mode of DYNAMIXEL.
 
 - setOperatingMode(id, mode)
 
-## parameters
+## Parameters
 
 - **id** : ID of a specific DYNAMIXEL. Data type : unsigned int8
 - **mode** : Operating mode to use. Data type : unsigned int8
