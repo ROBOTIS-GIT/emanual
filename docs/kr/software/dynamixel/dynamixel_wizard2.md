@@ -128,14 +128,14 @@ sidebar:
 
 ## [맥에서 설치하기](#맥에서-설치하기)
 
-1. 설치 패키지를 다운로드 합니다.
-2. 다운로드가 완료된 dmg 파일을 오른쪽 클릭하고 `Open(열기)`를 선택합니다.
+1. 설치 패키지를 다운로드 합니다.  
+2. 다운로드가 완료된 dmg 파일을 오른쪽 클릭하고 `Open(열기)`를 선택합니다.  
   ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_mac_01.png)
-3. `DynamixelWizard2Setup_x64` 파일을 실행합니다.
+3. `DynamixelWizard2Setup_x64` 파일을 실행합니다.  
   ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_mac_02.png)
-4. 아래와 같은 경고창이 나타나면 `Open(열기)`를 선택하고 설치를 진행합니다.
+4. 아래와 같은 경고창이 나타나면 `Open(열기)`를 선택하고 설치를 진행합니다.  
   ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_mac_03.png)
-5. `Next(다음)`버튼을 누르고 설치과정을 따라 진행합니다.
+5. `Next(다음)`버튼을 누르고 설치과정을 따라 진행합니다.  
   ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_mac_04.png)
 
 # [다이나믹셀 위자드 2.0 제거](#다이나믹셀-위자드-20-제거)
