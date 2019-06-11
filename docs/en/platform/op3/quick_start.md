@@ -39,8 +39,8 @@ If you want to use the battery pack, please follow the below procedure.
 4. Close and secure the compartment door (screw the thumbscrew) afterwards.
 5. Disconnect DC power supply.
 
-**NOTE** : To prevent unexpected shutdown, ensure that ROBOTIS OP3 is connected with at least one active power source.
-{: .notice}
+**WARRNING** : Connecting battery during operation might cause malfunctions or risky troubles with electric sparks or etc. So, make sure connection to GND firstly then connect the the other side of battery, or that power cable is pluged out before connecting bettery.  
+{: .notice--warning}
 
 ![](/assets/images/platform/op3/op3_013_rev2.png)
 
@@ -355,6 +355,9 @@ from ROBOTIS before their standard warranty period is over.
 
 ## [Sub Controller(OpenCR)](#sub-controlleropencr)
 
+**WARRNING** : Connecting battery during operation might cause malfunctions or risky troubles with electric sparks or etc. So, make sure connection to GND firstly then connect the the other side of battery, or that power cable is pluged out before connecting bettery  
+{: .notice--warning}
+
 ### [Control Table](#contrl-table)
 Control Table consists of data regarding the current status and operation of OpenCR. The user can control OpenCR by changing data of Control Table via Instruction packet.
 
@@ -376,15 +379,15 @@ In the Control table, some data share the same name, but they are attached with 
 
 ### [EEPROM Area](#eeprom-area)
 
-|  Address  |        Name         |        Description         | Access | Init Value |
-|:---------:|:-------------------:|:--------------------------:|:------:|:----------:|
-| 0 (0X00)  |   Model Number(L)   |   model number low byte    |   R    |  0(0X00)   |
-| 1 (0X01)  |   Model Number(H)   |   model number high byte   |   R    | 116 (0X74) |
-| 2 (0X02)  | Version of Firmware |      firmware version      |   R    |     -      |
-| 3 (0X03)  |         ID          |          OpenCR ID         |   RW   | 200 (0XC8) |
-| 4 (0X04)  |      Baud Rate      |  Communication baud rate   |   RW   |  1 (0X01)  |
-| 5 (0X05)  |  Return Delay Time  |     Return Delay Time      |   RW   |  0 (0X0)   |
-| 16 (0X10) | Status Return Level |    Status Return Level     |   RW   |  0 (0X00)  |
+|  Address  |        Name         |       Description       | Access | Init Value |
+|:---------:|:-------------------:|:-----------------------:|:------:|:----------:|
+| 0 (0X00)  |   Model Number(L)   |  model number low byte  |   R    |  0(0X00)   |
+| 1 (0X01)  |   Model Number(H)   | model number high byte  |   R    | 116 (0X74) |
+| 2 (0X02)  | Version of Firmware |    firmware version     |   R    |     -      |
+| 3 (0X03)  |         ID          |        OpenCR ID        |   RW   | 200 (0XC8) |
+| 4 (0X04)  |      Baud Rate      | Communication baud rate |   RW   |  1 (0X01)  |
+| 5 (0X05)  |  Return Delay Time  |    Return Delay Time    |   RW   |  0 (0X0)   |
+| 16 (0X10) | Status Return Level |   Status Return Level   |   RW   |  0 (0X00)  |
 
 
 ### [RAM Area](#ram-area)
@@ -440,14 +443,14 @@ Represents the communication speed. 0 (0x00) to 7 (0x07) can be used for it.
 
 | Data |  Set BPS  | Target BPS | Tolerance |
 |:----:|:---------:|:----------:|:---------:|
-|  0   | 9,600      | 9,600       |  0.000 %  |
-|  1   | 57,600     | 57,600      |  0.000 %  |
-|  2   | 115,200    | 115,200     |  0.000 %  |
-|  3   | 1,000,000   | 1,000,000    |  0.000 %  |
-|  4   | 2,000,000   | 2,000,000    |  0.000 %  |
-|  5   | 3,000,000   | 3,000,000    |  0.000 %  |
-|  6   | 4,000,000   | 4,000,000    |  0.000 %  |
-|  7   | 4,500,000   | 4,500,000    |  0.000 %  |
+|  0   |   9,600   |   9,600    |  0.000 %  |
+|  1   |  57,600   |   57,600   |  0.000 %  |
+|  2   |  115,200  |  115,200   |  0.000 %  |
+|  3   | 1,000,000 | 1,000,000  |  0.000 %  |
+|  4   | 2,000,000 | 2,000,000  |  0.000 %  |
+|  5   | 3,000,000 | 3,000,000  |  0.000 %  |
+|  6   | 4,000,000 | 4,000,000  |  0.000 %  |
+|  7   | 4,500,000 | 4,500,000  |  0.000 %  |
 
 **NOTE** : Maximum Baud Rate error of 3% is within the tolerance of UART communication.
 {: .notice}

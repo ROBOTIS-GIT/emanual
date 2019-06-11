@@ -20,8 +20,6 @@ sidebar:
 ### Overview
 ROBOTIS provides STP files for ROBOTIS-OP3 parts and assembly. Users can view frame shapes and assembled figure.  
 
-
-
 ### Description
 
 ![](/assets/images/platform/op3/op3_assemble_data.png)
@@ -48,7 +46,9 @@ ROBOTIS provides STP files for ROBOTIS-OP3 parts and assembly. Users can view fr
   > Reference : [Download](https://github.com/ROBOTIS-GIT/ROBOTIS-OP-Series-Data/tree/master/ROBOTIS-OP3/Hardware/Mechanics/Skin)
 
 ## [Electronics Data](#electronic_data)
+
 ### Main Controller : Intel NUC i3  
+
 ### Sub Controller : [OpenCR](/docs/en/parts/controller/opencr10/)  
 ### Boards
 - [OP3 LED AMP Board](https://github.com/ROBOTIS-GIT/ROBOTIS-OP-Series-Data/blob/master/ROBOTIS-OP3/Hardware/Electronics/Boards/OP3_LED-AMP_Board_170213.pdf)
