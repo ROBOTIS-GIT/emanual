@@ -736,7 +736,7 @@ void loop() {
 ## [OP3](#op3)
 OpenCR is used for power and sensor control in OP3, a humanoid robot. If the OpenCR firmware for OP3 has been changed, follow the procedure below to update it.
  
-**WARRNING** : Connecting battery during operation might cause malfunctions or risky troubles with electric sparks or etc. So, make sure connection to GND firstly then connect the the other side of battery, or that power cable is pluged out before connecting bettery  
+**WARRNING** : Please turn off the power switch before connecting power source(battery or SMPS) to the product.
 {: .notice--warning}
 
 ### Preparations
