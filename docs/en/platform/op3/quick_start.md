@@ -39,7 +39,10 @@ If you want to use the battery pack, please follow the below procedure.
 4. Close and secure the compartment door (screw the thumbscrew) afterwards.
 5. Disconnect DC power supply.
 
-**WARRNING** : Connecting battery during operation might cause malfunctions or risky troubles with electric sparks or etc. So, make sure connection to GND firstly then connect the the other side of battery, or that power cable is pluged out before connecting bettery.  
+**WARRNING** : Please turn off the power switch before connecting power source(battery or SMPS) to the product.
+{: .notice--warning}
+
+**WARNING** : Make sure OpenCR should be switched off when connecting the battery. 
 {: .notice--warning}
 
 ![](/assets/images/platform/op3/op3_013_rev2.png)
@@ -355,8 +358,9 @@ from ROBOTIS before their standard warranty period is over.
 
 ## [Sub Controller(OpenCR)](#sub-controlleropencr)
 
-**WARRNING** : Connecting battery during operation might cause malfunctions or risky troubles with electric sparks or etc. So, make sure connection to GND firstly then connect the the other side of battery, or that power cable is pluged out before connecting bettery  
+**WARRNING** : Please turn off the power switch before connecting power source(battery or SMPS) to the product.
 {: .notice--warning}
+
 
 ### [Control Table](#contrl-table)
 Control Table consists of data regarding the current status and operation of OpenCR. The user can control OpenCR by changing data of Control Table via Instruction packet.
