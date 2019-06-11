@@ -12,7 +12,7 @@ This function turns on the led of DYNAMIXEL.
 
 - ledOn(id)
 
-## parameters
+## Parameters
 
 - **id** : ID of a specific DYNAMIXEL. Data type : unsigned int8
 

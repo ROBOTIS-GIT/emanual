@@ -12,7 +12,7 @@ This function controls velocity(wheel mode speed) of DYNAMIXEL.
 
 - setGoalVelocity(id, value, unit)
 
-## parameters
+## Parameters
 
 - **id** : ID of a specific DYNAMIXEL. Data type : unsigned int8
 - **value** : Goal Velocity value in raw value(default) or RPM or percentage. Data type : float

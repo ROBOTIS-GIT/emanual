@@ -12,7 +12,7 @@ Initialization function gets data from DYNAMIXEL control table item.
 
 - readControlTableItem(item_idex, id, timeout)
 
-## parameters
+## Parameters
 
 - **item_index** : DYNAMIXEL control table item index. Data type : unsigned int8
 

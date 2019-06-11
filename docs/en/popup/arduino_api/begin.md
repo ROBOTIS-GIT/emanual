@@ -12,7 +12,7 @@ Initialization function to start communication with DYNAMIXEL or change baudrate
 
 - begin(baud)
 
-## parameters
+## Parameters
 
 - **baud** : The communication speed to set the serial port (the speed to communicate with DYNAMIXEL) (default : 57600)
 

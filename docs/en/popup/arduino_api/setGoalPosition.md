@@ -12,7 +12,7 @@ This function controls position(joint) of DYNAMIXEL.
 
 - setGoalPosition(id, value, unit)
 
-## parameters
+## Parameters
 
 - **id** : ID of a specific DYNAMIXEL. Data type : unsigned int8
 - **value** : Goal Position value in encoder value(default) or angle in degree. Data type : float

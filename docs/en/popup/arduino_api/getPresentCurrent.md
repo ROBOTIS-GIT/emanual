@@ -12,7 +12,7 @@ This function gets present current of DYNAMIXEL.
 
 - getPresentCurrent(id, value, unit)
 
-## parameters
+## Parameters
 
 - **id** : ID of a specific DYNAMIXEL. Data type : unsigned int8
 - **value** : Present Current value in raw value(default) or milli amphere or percentage. Data type : float

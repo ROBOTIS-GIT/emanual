@@ -12,7 +12,7 @@ This function changes baudrate of DYNAMIXEL.
 
 - setBaudrate(id, baudrate)
 
-## parameters
+## Parameters
 
 - **id** : ID of a specific DYNAMIXEL. Data type : unsigned int8
 - **baudrate** : Communication speed(baudrate) to use. Data type : unsigned int32

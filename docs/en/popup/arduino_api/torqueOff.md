@@ -12,7 +12,7 @@ This function turns off the torque of DYNAMIXEL.
 
 - torqueOff(id)
 
-## parameters
+## Parameters
 
 - **id** : ID of a specific DYNAMIXEL. Data type : unsigned int8
 

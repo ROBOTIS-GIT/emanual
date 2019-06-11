@@ -12,7 +12,7 @@ This function gets present velocity(wheel mode speed) of DYNAMIXEL.
 
 - getPresentVelocity(id, unit)
 
-## parameters
+## Parameters
 
 - **id** : ID of a specific DYNAMIXEL. Data type : unsigned int8
 - **unit** : Types of value. Data type : unsigned int8

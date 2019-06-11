@@ -12,7 +12,7 @@ This function gets present PWM value of DYNAMIXEL.
 
 - getPresentPWM(id, unit)
 
-## parameters
+## Parameters
 
 - **id** : ID of a specific DYNAMIXEL. Data type : unsigned int8
 - **unit** : Types of value. Data type : unsigned int8

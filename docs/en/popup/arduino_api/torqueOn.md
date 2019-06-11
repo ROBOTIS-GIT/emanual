@@ -12,7 +12,7 @@ This function turns on the torque of DYNAMIXEL.
 
 - torqueOn(id)
 
-## parameters
+## Parameters
 
 - **id** : ID of a specific DYNAMIXEL. Data type : unsigned int8
 

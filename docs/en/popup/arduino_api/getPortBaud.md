@@ -12,7 +12,7 @@ This function gets baudrate of the serial port.
 
 - getPortBaud()
 
-## parameters
+## Parameters
 
 - None
 

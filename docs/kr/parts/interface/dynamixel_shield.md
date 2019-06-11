@@ -80,7 +80,7 @@ sidebar:
 
 -	다이나믹셀 제어를 위해서 아두이노 보드의 하드웨어 시리얼 포트를 사용하는데 같은 포트로 업로드가 진행 되기 때문에 두 포트가 충돌이 날 수 있다.
 -	따라서 업로드를 위해서는 시리얼 포트 스위치를 이용하여 Upload 위치로 이동 시킨 후 업로드를 한다.
--	업로드가 완료된 후에는 다이나믹셀 제어를 위해서 스위치를 Dynamixel 위치로 이동 시켜야한다. 이동 시키지 않는다면 다이나믹셀 구동이 되지 않는다
+-	업로드가 완료된 후에는 다이나믹셀 제어를 위해서 스위치를 Dynamixel 위치로 이동 시켜야한다. 이동 시키지 않는다면 다이나믹셀 구동이 되지 않는다.
 
 ## [다이나믹셀 전원 스위치](#다이나믹셀-전원-스위치)
 
@@ -91,13 +91,13 @@ sidebar:
 
 ## [특징](#특징)
 
+- 아두이노 보드 호환
 -	다이나믹셀 프로토콜 1.0/2.0 지원
--	최대 16개 다이나믹셀 제어 가능
-
-(일반적으로 XL-320, XL430-W250은 각 모터당 0.4 ~ 0.6A를 소모한다.)
+-	최대 16개 다이나믹셀 제어 가능(일반적으로 XL-320, XL430-W250은 각 모터당 0.4 ~ 0.6A를 소모함)
 -	SynWrite 지원
 -	RC100 라이브러리 지원
 -	소프트 시리얼 라이브러리를 이용한 시리얼 통신
+- 다이나믹셀 쉴드 라이브러리 버전 0.1.0부터 DYNAMIXEL2Arduino 라이브러리를 기반으로 사용
 
 ## [라이브러리 설치](#라이브러리-설치)
 
@@ -110,7 +110,13 @@ sidebar:
 각각의 방법에 대한 자세한 설명은 [Arduino Official Guide]에서 찾을 수 있다.  
 다음은 라이브러리 매니저를 활용하는 예이다.
 
-![](/assets/images/parts/interface/dynamixel_shield/library_manager.png)
+![](/assets/images/parts/interface/dynamixel_shield/library_manager_01.png)
+
+다이나믹셀 쉴드 라이브러리(v0.1.0 이상)를 사용하기 위해서는 DYNAMIXEL2Arduino 라이브러리를 먼저 설치해야 한다.
+
+![](/assets/images/parts/interface/dynamixel_shield/library_manager_02.png)
+
+![](/assets/images/parts/interface/dynamixel_shield/library_manager_03.png)
 
 라이브러리를 설치하였다면, examples 항목에 DynamixelShield가 생기고 사용 가능한 예제를 볼 수 있다.
 
@@ -119,10 +125,10 @@ sidebar:
 
 # [라이브러리 API](#라이브러리-api)
 
-## [DYNAMIXEL2Arduino](#dynamixel2arduino)
+## [다이나믹셀 쉴드(v0.1.0 이상)](#다이나믹셀-쉴드v010-이상)
 
-**참고** : 이 라이브러리는 현재 [GitHub repository]{: .blank}를 통해 다운로드 받을 수 있습니다.
-{: .notice}
+**주의** : DYNAMIXEL Shield 라이브러리(v0.1.0 이상)를 사용하기 위해서는 [DYNAMIXEL2Arduino 라이브러리](#라이브러리-설치)를 설치해야 합니다.
+{: .notice--warning}
 
 - [begin()]{: .popup}
 - [getPortBaud()]{: .popup}
@@ -147,10 +153,12 @@ sidebar:
 - [getPresentCurrent()]{: .popup}
 - [readControlTableItem()]{: .popup}
 - [writeControlTableItem()]{: .popup}
+- [syncRead()]{: .popup}
+- [syncWrite()]{: .popup}
 
-## [DynamixelShield(v0.0.5)](#dynamixelshieldv005)
+## [다이나믹셀 쉴드(v0.0.5)](#다이나믹셀-쉴드v005)
 
-**주의** : 이 API는 더이상 지원되지 않으며 단종될 예정입니다. [DYNAMIXEL2Arduino](#dynamixel2arduino)를 참고해주시기 바랍니다.
+**주의** : 이 버전의 API는 더이상 지원되지 않습니다.
 {: .notice--warning}
 
 ```c
@@ -202,7 +210,6 @@ bool syncWriteEnd(void);
 
 
 [Arduino Official Guide]: https://www.arduino.cc/en/Guide/Libraries
-
 [GitHub repository]: https://github.com/ROBOTIS-GIT/Dynamixel2Arduino
 [begin()]: /docs/en/popup/arduino_api/begin/
 [getPortBaud()]: /docs/en/popup/arduino_api/getPortBaud/
@@ -227,3 +234,5 @@ bool syncWriteEnd(void);
 [getPresentCurrent()]: /docs/en/popup/arduino_api/getPresentCurrent/
 [readControlTableItem()]: /docs/en/popup/arduino_api/readControlTableItem/
 [writeControlTableItem()]: /docs/en/popup/arduino_api/writeControlTableItem/
+[syncRead()]: /docs/en/popup/arduino_api/syncRead/
+[syncWrite()]: /docs/en/popup/arduino_api/syncWrite/

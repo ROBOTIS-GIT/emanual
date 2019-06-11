@@ -12,7 +12,7 @@ This function changes ID of DYNAMIXEL.
 
 - setID(id, new_id)
 
-## parameters
+## Parameters
 
 - **id** : ID of a specific DYNAMIXEL. Data type : unsigned int8
 - **new_id** : A new ID to assign to the DYNAMIXEL. Data type : unsigned int8

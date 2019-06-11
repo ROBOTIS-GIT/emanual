@@ -12,7 +12,7 @@ This function checks the connection status of DYNAMIXEL.
 
 - ping(id)
 
-## parameters
+## Parameters
 
 - **id** : ID of a specific DYNAMIXEL or Broadcast ID 254(0xFE). (default : 254) Data type : unsigned int8
 

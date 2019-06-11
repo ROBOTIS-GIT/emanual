@@ -12,7 +12,7 @@ This function turns off the led of DYNAMIXEL.
 
 - ledOff(id)
 
-## parameters
+## Parameters
 
 - **id** : ID of a specific DYNAMIXEL. Data type : unsigned int8
 
