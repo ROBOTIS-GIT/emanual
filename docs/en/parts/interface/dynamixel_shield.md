@@ -155,6 +155,9 @@ If you have successfully installed the library, you'll be able to find several e
 - [writeControlTableItem()]{: .popup}
 - [syncRead()]{: .popup}
 - [syncWrite()]{: .popup}
+- [bulkRead()]{: .popup}
+- [bulkWrite()]{: .popup}
+- [getLastLibErrCode()]{: .popup}
 
 ## [DynamixelShield(v0.0.5)](#dynamixelshieldv005)
 
@@ -210,7 +213,6 @@ bool syncWriteEnd(void);
 
 
 [Arduino Official Guide]: https://www.arduino.cc/en/Guide/Libraries
-
 [GitHub repository]: https://github.com/ROBOTIS-GIT/Dynamixel2Arduino
 [begin()]: /docs/en/popup/arduino_api/begin/
 [getPortBaud()]: /docs/en/popup/arduino_api/getPortBaud/
@@ -237,3 +239,6 @@ bool syncWriteEnd(void);
 [writeControlTableItem()]: /docs/en/popup/arduino_api/writeControlTableItem/
 [syncRead()]: /docs/en/popup/arduino_api/syncRead/
 [syncWrite()]: /docs/en/popup/arduino_api/syncWrite/
+[bulkRead()]: /docs/en/popup/arduino_api/bulkRead/
+[bulkWrite()]: /docs/en/popup/arduino_api/bulkWrite/
+[getLastLibErrCode()]: /docs/en/popup/arduino_api/getLastLibErrCode/

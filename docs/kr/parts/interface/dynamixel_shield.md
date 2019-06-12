@@ -155,6 +155,9 @@ sidebar:
 - [writeControlTableItem()]{: .popup}
 - [syncRead()]{: .popup}
 - [syncWrite()]{: .popup}
+- [bulkRead()]{: .popup}
+- [bulkWrite()]{: .popup}
+- [getLastLibErrCode()]{: .popup}
 
 ## [다이나믹셀 쉴드(v0.0.5)](#다이나믹셀-쉴드v005)
 
@@ -236,3 +239,6 @@ bool syncWriteEnd(void);
 [writeControlTableItem()]: /docs/en/popup/arduino_api/writeControlTableItem/
 [syncRead()]: /docs/en/popup/arduino_api/syncRead/
 [syncWrite()]: /docs/en/popup/arduino_api/syncWrite/
+[bulkRead()]: /docs/en/popup/arduino_api/bulkRead/
+[bulkWrite()]: /docs/en/popup/arduino_api/bulkWrite/
+[getLastLibErrCode()]: /docs/en/popup/arduino_api/getLastLibErrCode/
