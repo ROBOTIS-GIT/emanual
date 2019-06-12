@@ -3,11 +3,11 @@ layout: archive
 lang: en
 ref: openmanipulator_pro_ros_operation
 read_time: true
-share: false
+share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_pro/ros_operation/
 sidebar:
-  title: OpenManipulator-PRO
+  title: OpenMANIPULATOR-PRO
   nav: "openmanipulator_pro"
 
 ---
@@ -20,7 +20,7 @@ sidebar:
 **NOTE**:
 - This instructions has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - This instructions are supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
-- Make sure to run the [OpenManipulator Manager](/docs/en/platform/openmanipulator_pro/ros_manipulator_manager/#ros-manipulator-manager) instructions before running the instruction below.
+- Make sure to run the [OpenMANIPULATOR Manager](/docs/en/platform/openmanipulator_pro/ros_manipulator_manager/#ros-manipulator-manager) instructions before running the instruction below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -29,10 +29,10 @@ sidebar:
 
 ## [GUI Program](#gui-program)
 
-You can use the GUI program to manipulate OpenManipulator-PRO. This program shows the status of and allows users to control OpenManipulator-PRO.
+You can use the GUI program to manipulate OpenMANIPULATOR-PRO. This program shows the status of and allows users to control OpenMANIPULATOR-PRO.
 
 ```
-$ rosrun manipulator_h_gui manipulator_h_gui
+$ rosrun open_manipulator_pro_gui open_manipulator_pro_gui
 ```
 
 ![](/assets/images/platform/manipulator_h/manipulator_h_gui.png)  

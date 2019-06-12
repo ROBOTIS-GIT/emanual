@@ -50,10 +50,10 @@ sidebar:
 **[TurtleBot3 47 Reinforcement Learning]**
 <iframe width="560" height="315" src="https://www.youtube.com/embed/WADmP0wzLxs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-**[TurtleBot3 46 Pick and Place Tutorial by TurtleBot3 with OpenManipulator]**
+**[TurtleBot3 46 Pick and Place Tutorial by TurtleBot3 with OpenMANIPULATOR]**
 <iframe width="560" height="315" src="https://www.youtube.com/embed/DLOq8yNcCoE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-**[TurtleBot3 45 TurtleBot3 with OpenManipulator]**
+**[TurtleBot3 45 TurtleBot3 with OpenMANIPULATOR]**
 <iframe width="560" height="315" src="https://www.youtube.com/embed/P82pZsqpBg0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 **[TurtleBot3 44 Automatic Parking Vision]**
@@ -128,7 +128,7 @@ sidebar:
 **[TurtleBot3 21 Friends - Auto]**
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1V33iEu4ylw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-**[TurtleBot3 20 Friends - OpenManipulator Chain]**
+**[TurtleBot3 20 Friends - OpenMANIPULATOR Chain]**
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Qhvk5cnX2hM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 **[TurtleBot3 19 Friends - Road Train]**
@@ -213,8 +213,3 @@ sidebar:
 
 **[TurtleBot3 - Official Product Video]**
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9OC3J53RUsk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-
-
-
-

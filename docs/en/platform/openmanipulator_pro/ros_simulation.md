@@ -3,11 +3,11 @@ layout: archive
 lang: en
 ref: openmanipulator_pro_ros_simulation
 read_time: true
-share: false
+share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_pro/ros_simulation/
 sidebar:
-  title: OpenManipulator-PRO
+  title: OpenMANIPULATOR-PRO
   nav: "openmanipulator_pro"
 ---
 
@@ -28,12 +28,12 @@ sidebar:
 ## [Manager for gazebo](#manager-for-gazebo)
 
 ```
-$ roslaunch manipulator_h_manager open_manipulator_pro_manager_gazebo.launch
+$ roslaunch open_manipulator_pro_manager open_manipulator_pro_manager_gazebo.launch
 ```
 
 If you have a gripper([RH-P12-RN(A)](/docs/en/platform/rh_p12_rna/)), see below.
 ```
-$ roslaunch manipulator_h_manager open_manipulator_pro_manager_gazebo.launch with_gripper:=true
+$ roslaunch open_manipulator_pro_manager open_manipulator_pro_manager_gazebo.launch with_gripper:=true
 ```
 
 If the manipulator manger has been launched successfully, the terminal will show the following message.
@@ -53,11 +53,11 @@ PARAMETERS
 
 NODES
   /
-    manipulator_h_manager (manipulator_h_manager/manipulator_h_manager)
+    open_manipulator_pro_manager (open_manipulator_pro_manager/open_manipulator_pro_manager)
 
 ROS_MASTER_URI=http://localhost:11311
 
-process[manipulator_h_manager-1]: started with pid [19408]
+process[open_manipulator_pro_manager-1]: started with pid [19408]
 [ INFO] [1552279834.246020783]: manager->init
 /dev/ttyUSB0 added. (baudrate: 1000000)
 (/dev/ttyUSB0) [ID:  1] H54P-200-S500-R added.
@@ -73,10 +73,10 @@ process[manipulator_h_manager-1]: started with pid [19408]
 
 Load the manipulator on Gazebo simulator and click on Play `▶` button.
 ```
-$ roslaunch manipulator_h_gazebo open_manipulator_pro_gazebo.launch   
+$ roslaunch open_manipulator_pro_gazebo open_manipulator_pro_gazebo.launch   
 ```
 If you have a gripper([RH-P12-RN(A)](/docs/en/platform/rh_p12_rna/)), see below.
 ```
-$ roslaunch manipulator_h_gazebo open_manipulator_pro_gazebo.launch with_gripper:=true
+$ roslaunch open_manipulator_pro_gazebo open_manipulator_pro_gazebo.launch with_gripper:=true
 ```
 ![](/assets/images/platform/openmanipulator_pro/gazebo.png)  

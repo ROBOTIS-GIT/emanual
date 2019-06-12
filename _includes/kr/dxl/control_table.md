@@ -63,7 +63,9 @@ Packet에 대한 자세한 내용은 [{{ protocol }}]을 참고해주세요.
 ### [영역 (EEPROM, RAM)](#영역-eeprom-ram)
 Control Table은 2가지 영역으로 구분됩니다. RAM Area에 위치한 Data는 전원이 인가될 때마다 다시 초기값으로 설정됩니다(Volatile).  
 반면 EEPROM Area에 위치한 Data는 값을 변경하면 전원이 꺼져도 그 값이 보존됩니다(Non-Volatile).  
-**EEPROM Area에 위치한 모든 Data는 Torque Enable({{ torque_enable }})의 값이 '0'일 때만 변경할 수 있습니다.**
+
+**EEPROM Area에 위치한 모든 Data는 Torque Enable({{ torque_enable }})의 값이 '0'(Off)일 때만 변경할 수 있습니다.**
+{: .notice--warning}
 
 ### [크기](#크기)
 Data의 Size는 용도에 따라 {{ data_size }} byte로 정해져 있습니다. Instruction Packet을 통해 Data를 변경할 때는 해당 Data의 Size를 확인하시기 바랍니다.  

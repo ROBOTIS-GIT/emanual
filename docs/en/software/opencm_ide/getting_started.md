@@ -21,6 +21,9 @@ For more information on the OpenCM9.04 refer to the Appendix section of the e-ma
 - [GNU GPL](http://opensource.org/licenses/gpl-license.php)
 - [GNL LGPL](http://opensource.org/licenses/lgpl-license.php)
 
+**WARNING** : OpenCM IDE is not updated anymore. It is recommanded to use [Arduino IDE](/docs/en/software/arduino_ide/) as OpenCM IDE isn't maintanined anymore.
+{: .notice--warning}
+
 ## ROBOTIS OpenCM Software Download
 
 OpenCM9.04 uses the ROBOTIS OpenCM Integrated Developmental Environment (IDE) to allow users to program with ease.  

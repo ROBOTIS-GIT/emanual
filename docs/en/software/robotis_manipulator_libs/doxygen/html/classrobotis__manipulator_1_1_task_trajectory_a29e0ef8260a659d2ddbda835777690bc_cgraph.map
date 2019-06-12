@@ -1,0 +1,5 @@
+<map id="robotis_manipulator::TaskTrajectory::makeTaskTrajectory" name="robotis_manipulator::TaskTrajectory::makeTaskTrajectory">
+<area shape="rect" id="node2" href="$namespacerobotis__manipulator_1_1math.html#adaa070908c6328c2459be5eaf64af68f" title="convertRotationMatrixToRPYVector " alt="" coords="287,5,481,61"/>
+<area shape="rect" id="node3" href="$namespacerobotis__manipulator_1_1math.html#ae69e1aacc48ed72442eb4dc82e280be0" title="convertOmegaToRPYVelocity " alt="" coords="263,85,505,126"/>
+<area shape="rect" id="node4" href="$namespacerobotis__manipulator_1_1math.html#aabd3cc7c059a6372e917bc98a3e5c1dd" title="convertOmegaDotToRPYAcceleration " alt="" coords="240,150,528,191"/>
+</map>

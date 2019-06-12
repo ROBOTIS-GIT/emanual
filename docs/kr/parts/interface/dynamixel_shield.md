@@ -80,7 +80,7 @@ sidebar:
 
 -	다이나믹셀 제어를 위해서 아두이노 보드의 하드웨어 시리얼 포트를 사용하는데 같은 포트로 업로드가 진행 되기 때문에 두 포트가 충돌이 날 수 있다.
 -	따라서 업로드를 위해서는 시리얼 포트 스위치를 이용하여 Upload 위치로 이동 시킨 후 업로드를 한다.
--	업로드가 완료된 후에는 다이나믹셀 제어를 위해서 스위치를 Dynamixel 위치로 이동 시켜야한다. 이동 시키지 않는다면 다이나믹셀 구동이 되지 않는다
+-	업로드가 완료된 후에는 다이나믹셀 제어를 위해서 스위치를 Dynamixel 위치로 이동 시켜야한다. 이동 시키지 않는다면 다이나믹셀 구동이 되지 않는다.
 
 ## [다이나믹셀 전원 스위치](#다이나믹셀-전원-스위치)
 
@@ -91,13 +91,13 @@ sidebar:
 
 ## [특징](#특징)
 
+- 아두이노 보드 호환
 -	다이나믹셀 프로토콜 1.0/2.0 지원
--	최대 16개 다이나믹셀 제어 가능
-
-(일반적으로 XL-320, XL430-W250은 각 모터당 0.4 ~ 0.6A를 소모한다.)
+-	최대 16개 다이나믹셀 제어 가능(일반적으로 XL-320, XL430-W250은 각 모터당 0.4 ~ 0.6A를 소모함)
 -	SynWrite 지원
 -	RC100 라이브러리 지원
 -	소프트 시리얼 라이브러리를 이용한 시리얼 통신
+- 다이나믹셀 쉴드 라이브러리 버전 0.1.0부터 DYNAMIXEL2Arduino 라이브러리를 기반으로 사용
 
 ## [라이브러리 설치](#라이브러리-설치)
 
@@ -110,7 +110,13 @@ sidebar:
 각각의 방법에 대한 자세한 설명은 [Arduino Official Guide]에서 찾을 수 있다.  
 다음은 라이브러리 매니저를 활용하는 예이다.
 
-![](/assets/images/parts/interface/dynamixel_shield/library_manager.png)
+![](/assets/images/parts/interface/dynamixel_shield/library_manager_01.png)
+
+다이나믹셀 쉴드 라이브러리(v0.1.0 이상)를 사용하기 위해서는 DYNAMIXEL2Arduino 라이브러리를 먼저 설치해야 한다.
+
+![](/assets/images/parts/interface/dynamixel_shield/library_manager_02.png)
+
+![](/assets/images/parts/interface/dynamixel_shield/library_manager_03.png)
 
 라이브러리를 설치하였다면, examples 항목에 DynamixelShield가 생기고 사용 가능한 예제를 볼 수 있다.
 
@@ -119,41 +125,42 @@ sidebar:
 
 # [라이브러리 API](#라이브러리-api)
 
-## [라이브러리 초기화](#라이브러리-초기화)
+## [다이나믹셀 쉴드(v0.1.0 이상)](#다이나믹셀-쉴드v010-이상)
 
-라이브러리를 사용하기 위해서는 통신 포트의 속도와 프로토콜을 설정하여 begin 함수로 초기화 한다.
+**주의** : DYNAMIXEL Shield 라이브러리(v0.1.0 이상)를 사용하기 위해서는 [DYNAMIXEL2Arduino 라이브러리](#라이브러리-설치)를 설치해야 합니다.
+{: .notice--warning}
 
-```c
-dxl.begin(1000000, DXL_PACKET_VER_2_0);
-```
+- [begin()]{: .popup}
+- [getPortBaud()]{: .popup}
+- [ping()]{: .popup}
+- [scan()]{: .popup}
+- [getModelNumber()]{: .popup}
+- [setID()]{: .popup}
+- [setProtocol()]{: .popup}
+- [setBaudrate()]{: .popup}
+- [torqueOn()]{: .popup}
+- [torqueOff()]{: .popup}
+- [ledOn()]{: .popup}
+- [ledOff()]{: .popup}
+- [setOperatingMode()]{: .popup}
+- [setGoalPosition()]{: .popup}
+- [getPresentPosition()]{: .popup}
+- [setGoalVelocity()]{: .popup}
+- [getPresentVelocity()]{: .popup}
+- [setGoalPWM()]{: .popup}
+- [getPresentPWM()]{: .popup}
+- [setGoalCurrent()]{: .popup}
+- [getPresentCurrent()]{: .popup}
+- [readControlTableItem()]{: .popup}
+- [writeControlTableItem()]{: .popup}
+- [syncRead()]{: .popup}
+- [syncWrite()]{: .popup}
 
-> 1Mbps 통신 속도에 프로토콜 2.0 으로 설정
+## [다이나믹셀 쉴드(v0.0.5)](#다이나믹셀-쉴드v005)
 
+**주의** : 이 버전의 API는 더이상 지원되지 않습니다.
+{: .notice--warning}
 
-## [다이나믹셀 연결](#다이나믹셀-연결)
-
-쉴드 라이브러리는 다이나믹셀의 모델을 기반으로 하여 자동으로 주소값을 참조하도록 되어 있기 때문에 연결된 다이나믹셀이 무엇인지 알기 위해서 연결된 다이나믹셀의 ID와 모델을 추가해야 한다.
-
--	자동 추가
-  ```c
-  dxl.ping();
-  ```
-
-  > ping 함수를 이용하여 자동으로 1번 부터 31번까지 검색을 해서 연결된 다이나믹셀이 있으면 추가한다.
-
--	수동 추가
-  ```c
-  dxl.begin(1000000);
-  delay(1000);
-  dxl.addMotor(1, M_XL430);
-  dxl.addMotor(2, M_XL430);
-  dxl.addMotor(15, M_AX12);
-  ```
-
-  > addMotor 함수를 이용하여 추가한다.
-
-
-## [사용 가능한 API 목록](#사용-가능한-api-목록)
 ```c
 bool begin(uint32_t baud_rate = 57600, uint8_t protocol_version = DXL_PACKET_VER_2_0);
 
@@ -201,4 +208,31 @@ bool syncWriteEnd(void);
 ```
 
 
+
 [Arduino Official Guide]: https://www.arduino.cc/en/Guide/Libraries
+[GitHub repository]: https://github.com/ROBOTIS-GIT/Dynamixel2Arduino
+[begin()]: /docs/en/popup/arduino_api/begin/
+[getPortBaud()]: /docs/en/popup/arduino_api/getPortBaud/
+[ping()]: /docs/en/popup/arduino_api/ping/
+[scan()]: /docs/en/popup/arduino_api/scan/
+[getModelNumber()]: /docs/en/popup/arduino_api/getModelNumber/
+[setID()]: /docs/en/popup/arduino_api/setID/
+[setProtocol()]: /docs/en/popup/arduino_api/setProtocol/
+[setBaudrate()]: /docs/en/popup/arduino_api/setBaudrate/
+[torqueOn()]: /docs/en/popup/arduino_api/torqueOn/
+[torqueOff()]: /docs/en/popup/arduino_api/torqueOff/
+[ledOn()]: /docs/en/popup/arduino_api/ledOn/
+[ledOff()]: /docs/en/popup/arduino_api/ledOff/
+[setOperatingMode()]: /docs/en/popup/arduino_api/setOperatingMode/
+[setGoalPosition()]: /docs/en/popup/arduino_api/setGoalPosition/
+[getPresentPosition()]: /docs/en/popup/arduino_api/getPresentPosition/
+[setGoalVelocity()]: /docs/en/popup/arduino_api/setGoalVelocity/
+[getPresentVelocity()]: /docs/en/popup/arduino_api/getPresentVelocity/
+[setGoalPWM()]: /docs/en/popup/arduino_api/setGoalPWM/
+[getPresentPWM()]: /docs/en/popup/arduino_api/getPresentPWM/
+[setGoalCurrent()]: /docs/en/popup/arduino_api/setGoalCurrent/
+[getPresentCurrent()]: /docs/en/popup/arduino_api/getPresentCurrent/
+[readControlTableItem()]: /docs/en/popup/arduino_api/readControlTableItem/
+[writeControlTableItem()]: /docs/en/popup/arduino_api/writeControlTableItem/
+[syncRead()]: /docs/en/popup/arduino_api/syncRead/
+[syncWrite()]: /docs/en/popup/arduino_api/syncWrite/

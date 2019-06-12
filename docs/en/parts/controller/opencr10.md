@@ -385,30 +385,6 @@ After programming with the Arduino IDE and uploading the program to the OpenCR, 
 $ sudo apt-get purge modemmanager
 ```
 
-### [Writing Bootloader(Linux)](#writing-bootloaderlinux)
-
-**CAUTION** : Update only if the boot loader version has been changed.
-{: .notice--warning}
-
-The STM32F7xx, which is used for the main MCU on the OpenCR board, supports DFU(Device Firmware Upgrade). This enables the built-in bootloader of the MCU by itself to boot the DFU protocol by using USB, primarily for the bootloader initialization, the recovery mode, and the bootloader update. The biggest advantage to let the users be able to use bootloader with USB but no other JTAG equipment. Write the firmware by using the DFU mode which is embedded in MCU without writing / debugging equipment, such as STLink.
-
-#### Programmer Setting
-Select Tools → DFU-UTIL
-
-![](/assets/images/parts/controller/opencr10/bootloader_19.png)
-
-#### Run DFU mode.
-Press the `Reset Button` while the `Boot Button` is being pushed. This activates the DFU mode.  
-If you successfully entered to DFU mode, you will be able to find `STMicroelectronics STM Device in DFU Mode` text string when *lsusb* is entered in the terminal.
-
-![](/assets/images/platform/turtlebot3/preparation/ide10.png)
-
-#### Download the bootloader.
-
-Click Tools → Burn Bootloader to download the bootloader.
-
-![](/assets/images/platform/turtlebot3/preparation/ide9.png)
-
 ## [Install on Mac](#install-on-mac)
 
 ### [Install Arduino IDE(Mac)](#install-arduino-idemac)
@@ -457,30 +433,15 @@ Select Tools → Port → /dev/cu.usbmodem1411
 
 ![](/assets/images/parts/controller/opencr10/arduino_mac_06.png)
 
-### [Writing Bootloader(Mac)](#writing-bootloadermac)
-The STM32F7xx, which is used for the main MCU on the OpenCR board, supports DFU(Device Firmware Upgrade). This enables the built-in bootloader of the MCU by itself to boot the DFU protocol by using USB, primarily for the bootloader initialization, the recovery mode, and the bootloader update. The biggest advantage to let the users be able to use bootloader with USB but no other JTAG equipment. Write the firmware by using the DFU mode which is embedded in MCU without writing / debugging equipment, such as STLink.
-
-#### Programmer Setting
-
-Select Tools → DFU-UTIL
-
-![](/assets/images/parts/controller/opencr10/arduino_mac_07.png)
-
-#### Run DFU Mode
-Press the `Reset Button` while the `Boot Button` is being pushed. This activates the DFU mode.
-
-![](/assets/images/parts/controller/opencr10/bootloader_19.png)
-
-#### Download bootloader
-
-Click Tools → Burn Bootloader to download the bootloader.
-
-![](/assets/images/parts/controller/opencr10/arduino_mac_08.png)
-
 ## [Install on Windows](#install-on-windows)
 
 ### [Install Driver](#install-driver)
-To use OpenCR's USB port as a serial port in Windows, you need a USB CDC driver. You can install the USB driver provided by ST.
+
+**WARNING** : For Windows 10 PCs, please skip this driver installation.  
+Proper driver will be automatically installed.
+{: .notice--warning}
+
+To use OpenCR's USB port as a serial port in Windows below 8.x, you need a USB CDC driver. You can install the USB driver provided by ST.
 
 [http://www.st.com/en/development-tools/stsw-stm32102.html](http://www.st.com/en/development-tools/stsw-stm32102.html)
 
@@ -774,6 +735,9 @@ void loop() {
 
 ## [OP3](#op3)
 OpenCR is used for power and sensor control in OP3, a humanoid robot. If the OpenCR firmware for OP3 has been changed, follow the procedure below to update it.
+ 
+**WARRNING** : Please turn off the power switch before connecting power source(battery or SMPS) to the product.
+{: .notice--warning}
 
 ### Preparations
 OpenCR develops and downloads firmware through the Arduino IDE. Therefore, you must install the Arduino IDE in advance and install the OpenCR board package. Install through the following link document.
@@ -1196,9 +1160,9 @@ void loop()
 
 - [Dynamixel-Workbench examples](/docs/en/software/dynamixel/dynamixel_workbench/#opencr-and-opencm-tutorials)
 
-## [OpenManipulator](#openmanipulator)
+## [OpenMANIPULATOR](#openmanipulator)
 
-- [OpenManipulator examples](/docs/en/platform/openmanipulator/#how-to-control-on-opencr)
+- [OpenMANIPULATOR examples](/docs/en/platform/openmanipulator/#how-to-control-on-opencr)
 
 # [Downloads](#downloads)
 
@@ -1210,39 +1174,20 @@ void loop()
 
 ## [Recovery Mode](#recovery-mode)
 
-- `e-Manual` [OpenCR Firmware Recovery](#firmware-recovery-mode)
+If currupted or incompleted firmware is downloaded and the board freezes or does not work, you must enter the boot loader to be able to download the normal firmware.  
+To execute the boot loader, please follow the instruction below.
 
-## [Install Windows Driver](#install-windows-driver)
-In Windows 10, device driver is usually installed automatically.  
-However, if ST DFU driver is not properly installed, OpenCR will not be able to burn new bootloader.  
-When failing to burn the bootloader in Arduino IDE with below error message, please reinstall the DFU driver as described below.
+1. Hold down the `PUSH SW2` button.
+2. Press the `Reset` button.
+3. Release the `Reset` button.
+4. Release the `PUSH SW2` button.
 
-```
-Cannot open DFU device 0483:df11
-No DFU capable USB device available
-Error while burning bootloader.
-```
+OpenCR will enter the boot loader after reset. When the boot loader is running, the STATUS LED blinks every 100ms.
 
-> Error Message from Arduino IDE while burning Bootloader.
+![](/assets/images/parts/controller/opencr10/bootloader_19.png)
 
-### Driver Installation
+You can download the normal firmware while the boot loader is running.
 
-1. Download Zadig from [http://zadig.akeo.ie/](http://zadig.akeo.ie/)
-
-2. Install and run Zadig.
-
-3. Go to `Options` > `List All Devices`.
-
-    ![](/assets/images/parts/controller/opencr10/zadig_01.png)
-
-4. Select **STM32 BOOTLOADER** and install **WinUSB** driver.
-
-    ![](/assets/images/parts/controller/opencr10/zadig_02.png)
-
-5. Enter Bootloader by holding `Boot` button and press `Reset` button and check the driver is correctly installed from the device manager.
-
-    ![](/assets/images/parts/controller/opencr10/dfu_device_manager.png)
-    
 ## [Certifications](#certifications)
 Please inquire us for information regarding unlisted certifications.
 
@@ -1251,7 +1196,12 @@ Please inquire us for information regarding unlisted certifications.
 
 
 # [Bootloader](#bootloader)
-The bootloader is responsible for initializing the board and downloading and executing the firmware into flash memory.
+The bootloader is responsible for initializing the board and downloading and executing the firmware into flash memory.  
+
+The STM32F7xx, which is used for the main MCU on the OpenCR board, supports DFU(Device Firmware Upgrade).  
+This enables the built-in bootloader of the MCU by itself to boot the DFU protocol by using USB, primarily for the bootloader initialization, the recovery mode, and the bootloader update.  
+The biggest advantage to let the users be able to use bootloader with USB but no other JTAG equipment.  
+Write the firmware by using the DFU mode which is embedded in MCU without writing / debugging equipment, such as STLink.
 
 |     Item     |     Description     |
 |:------------:|:-------------------:|
@@ -1461,7 +1411,7 @@ void cmd_read_version( msg_t *p_msg )
 
 ![](/assets/images/parts/controller/opencr10/bootloader_08.png)
 
-## [Update Bootloader(Linux)](#update-bootloaderlinux)
+## [Update Bootloader](#update-bootloader)
 
 You can update the bootloader using the MCU's DFU mode on the OpenCR board.  
 To update using DFU mode, you need to install dfu-util.
@@ -1483,6 +1433,8 @@ OpenCR will enter the DFU mode after reset by the built-in boot loader.
 ![](/assets/images/parts/controller/opencr10/bootloader_19.png)
 
 ### [Check Boot Mode](#check-boot-mode)
+
+#### For Linux
 If you run lsusb, you can check if it is in DFU mode. If the MCU is in DFU mode, the DFU device will be displayed after running lsusb.
 
 ```bash
@@ -1491,8 +1443,76 @@ $ lsusb
 
 ![](/assets/images/parts/controller/opencr10/bootloader_10.png)
 
-### [Update Bootloader](#update-bootloader)
-After building the boot loader, move to the folder where the bin file is located and update it with dfu-util.
+#### For Windows
+Open the `Device Manager` > `Universal Serial Bus Devices` and see if **STM32 BOOTLOADER** is detected.  
+If not, please refer to [Driver Install(Optional)](#driver-installoptional) section.
+
+![](/assets/images/parts/controller/opencr10/dfu_device_manager.png)
+
+### [Burn Bootloader](#burn-bootloader)
+
+#### [Burn Bootloader(Linux)](#burn-bootloaderlinux)
+
+**CAUTION** : Update the bootloader if version has been updated.
+{: .notice--warning}
+
+##### Programmer Setting
+Select Tools → DFU-UTIL
+
+![](/assets/images/parts/controller/opencr10/bootloader_19.png)
+
+##### Run DFU mode.
+Press the `Reset Button` while the `Boot Button` is being pushed. This activates the DFU mode.  
+If you successfully entered to DFU mode, you will be able to find `STMicroelectronics STM Device in DFU Mode` text string when *lsusb* is entered in the terminal.
+
+![](/assets/images/platform/turtlebot3/preparation/ide10.png)
+
+##### Download Bootloader.
+
+Click Tools → Burn Bootloader to download the bootloader.
+
+![](/assets/images/platform/turtlebot3/preparation/ide9.png)
+
+#### [Burn Bootloader(Mac)](#burn-bootloadermac)
+
+**CAUTION** : Update the bootloader if version has been updated.
+{: .notice--warning}
+
+##### Programmer Setting
+
+Select Tools → DFU-UTIL
+
+![](/assets/images/parts/controller/opencr10/arduino_mac_07.png)
+
+##### Run DFU Mode
+Press the `Reset Button` while the `Boot Button` is being pushed. This activates the DFU mode.
+
+![](/assets/images/parts/controller/opencr10/bootloader_19.png)
+
+##### Download Bootloader
+
+Click Tools → Burn Bootloader to download the bootloader.
+
+![](/assets/images/parts/controller/opencr10/arduino_mac_08.png)
+
+#### [Burn Bootloader(Windows)](#burn-bootloaderwindows)
+
+**CAUTION** : Update the bootloader if version has been updated.
+{: .notice--warning}
+
+##### Run DFU Mode
+Press the `Reset Button` while the `Boot Button` is being pushed. This activates the DFU mode.
+
+![](/assets/images/parts/controller/opencr10/bootloader_19.png)
+
+##### Download Bootloader
+After setting up the Arduino IDE, run Arduino IDE and go to `Tools` > `Burn Bootloader` to download the bootloader.
+
+![](/assets/images/parts/controller/opencr10/bootloader_12.png)
+
+#### Custom Bootloader
+If you have built a custom bootloader, move to the folder where the bin file is located and update it with dfu-util.  
+Below command is an example where *opencr_boot.bin* is placed at the root directory.
 
 ```bash
 $ sudo dfu-util -d 0483:df11 -a 0 -s 0x08000000 -D ./opencr_boot.bin
@@ -1500,21 +1520,32 @@ $ sudo dfu-util -d 0483:df11 -a 0 -s 0x08000000 -D ./opencr_boot.bin
 
 ![](/assets/images/parts/controller/opencr10/bootloader_11.png)
 
-## [Firmware Recovery Mode](#firmware-recovery-mode)
+### [Driver Install(Optional)](driver-installoptional)
+In order to perform Bootloader update, ST DFU driver has to be installed on your PC.
+In Windows 10, ST DFU driver is usually **installed automatically**.  
 
-If currupted or incompleted firmware is downloaded and the board freezes or does not work, you must enter the boot loader to be able to download the normal firmware.  
-To execute the boot loader, please follow the instruction below.
+However, if ST DFU driver is not properly installed, OpenCR will not be able to burn new bootloader in Arduino IDE.  
+When failing to burn the bootloader in **Arduino IDE** with below error message, please reinstall the DFU driver as described below.
 
-1. Hold down the `PUSH SW2` button.
-2. Press the `Reset` button.
-3. Release the `Reset` button.
-4. Release the `PUSH SW2` button.
+```
+Cannot open DFU device 0483:df11
+No DFU capable USB device available
+Error while burning bootloader.
+```
 
-OpenCR will enter the boot loader after reset. When the boot loader is running, the STATUS LED blinks every 100ms.
+> Error Message from Arduino IDE while burning Bootloader.
 
-![](/assets/images/parts/controller/opencr10/bootloader_19.png)
+1. Download Zadig from [http://zadig.akeo.ie/](http://zadig.akeo.ie/)
 
-You can download the normal firmware while the boot loader is running.
+2. Install and run Zadig.
+
+3. Go to `Options` > `List All Devices`.
+
+    ![](/assets/images/parts/controller/opencr10/zadig_01.png)
+
+4. Select **STM32 BOOTLOADER** and install **WinUSB** driver.
+
+    ![](/assets/images/parts/controller/opencr10/zadig_02.png)
 
 # [Downloader](#downloader)
 

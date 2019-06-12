@@ -106,7 +106,9 @@ sidebar:
 |8|1|Baud Rate|제어기 통신속도|R|1|
 |9|1|Return Delay Time|응답 지연 시간|RW|0|
 |10|1|Status Return Level|응답 레벨|RW|2|
+|11|1|Bootloader Version|부트로더 버전 정보|R|-|
 |12|1|DXL Baud Rate|다이나믹셀 통신속도|RW|3|
+|16|1|DYNAMIXEL Channel|다이나믹셀 포트 선택|RW|0|
 
 ## [RAM Area](#ram-area)
 
@@ -196,7 +198,7 @@ LBS-04 리튬 이온 배터리 2개를 직렬 연결하는 커넥터 입니다. 
 {% include kr/dxl/pinout_warning.md %}
 
 ### [통신포트](#통신포트)
-BT-210, BT-110A, ZIG-110A, LN-101 등과 같은 4핀 케이블을 연결해서 외부 장치와 유/무선 통신을 수행합니다. OpenCM9.04의 4핀 통신 포트는 Serial2(USART2)를 사용합니다.
+[BT-410],[BT-210], [BT-110], [ZIG-110], [LN-101] 등과 같은 4핀 케이블을 연결해서 외부 장치와 유/무선 통신을 수행합니다. OpenCM9.04의 4핀 통신 포트는 Serial2(USART2)를 사용합니다.
 
 ![](/assets/images/parts/controller/opencm904/opencm9.04_1-1.jpg)
 
@@ -667,6 +669,11 @@ Tools > Port > COM1를 선택하십시오.
 [OpenCM9.04 C Type 펌웨어 복구하기]: /docs/kr/edu/mini/#로보티즈-미니-제어기-펌웨어-업데이트
 [아두이노 IDE]: #아두이노-ide
 [OpenCM IDE]: /docs/kr/software/opencm_ide/getting_started/
+[LN-101]: /docs/kr/parts/interface/ln-101/
+[ZIG-110]: /docs/kr/parts/communication/zig-110/
+[BT-110]: /docs/kr/parts/communication/bt-110/
+[BT-210]: /docs/kr/parts/communication/bt-210/
+[BT-410]: /docs/kr/parts/communication/bt-410/
 [Dynamixel SDK]: /docs/kr/software/dynamixel/dynamixel_sdk/overview/
 [DynamixelWorkbench]: /docs/kr/software/dynamixel/dynamixel_workbench/
 [컨트롤 테이블 확인하기]: /docs/kr/software/rplus2/manager/#다이나믹셀-컨트롤-테이블

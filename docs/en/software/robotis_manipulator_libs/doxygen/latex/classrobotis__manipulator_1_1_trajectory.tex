@@ -1,0 +1,1596 @@
+\hypertarget{classrobotis__manipulator_1_1_trajectory}{}\section{robotis\+\_\+manipulator\+:\+:Trajectory Class Reference}
+\label{classrobotis__manipulator_1_1_trajectory}\index{robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}}
+
+
+The \hyperlink{classrobotis__manipulator_1_1_trajectory}{Trajectory} class.  
+
+
+
+
+{\ttfamily \#include $<$robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+h$>$}
+
+
+
+Collaboration diagram for robotis\+\_\+manipulator\+:\+:Trajectory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrobotis__manipulator_1_1_trajectory__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrobotis__manipulator_1_1_trajectory_ae549cd04019f4a985addb26c6a7ee1a1}{Trajectory} ()
+\item 
+\hyperlink{classrobotis__manipulator_1_1_trajectory_a89ee3aa113de35bced88abecbdb0b25e}{$\sim$\+Trajectory} ()
+\item 
+void \hyperlink{classrobotis__manipulator_1_1_trajectory_a0c400f1108635495fe7fc6cdae8bc8bb}{set\+Move\+Time} (double move\+\_\+time)
+\begin{DoxyCompactList}\small\item\em set\+Move\+Time \end{DoxyCompactList}\item 
+void \hyperlink{classrobotis__manipulator_1_1_trajectory_a187822acb94ca96938ebc06019ffc73e}{set\+Present\+Time} (double present\+\_\+time)
+\begin{DoxyCompactList}\small\item\em set\+Present\+Time \end{DoxyCompactList}\item 
+void \hyperlink{classrobotis__manipulator_1_1_trajectory_ad11707f44e3b0cefdb5f60b6c4f3ab77}{set\+Start\+Time\+To\+Present\+Time} ()
+\begin{DoxyCompactList}\small\item\em set\+Start\+Time\+To\+Present\+Time \end{DoxyCompactList}\item 
+void \hyperlink{classrobotis__manipulator_1_1_trajectory_a1c964bc02b44d87e1f7d02c446ab0f5d}{set\+Start\+Time} (double start\+\_\+time)
+\begin{DoxyCompactList}\small\item\em set\+Start\+Time \end{DoxyCompactList}\item 
+double \hyperlink{classrobotis__manipulator_1_1_trajectory_a998cdbaa9895e9a3ea6c7ec49f7b47d9}{get\+Move\+Time} ()
+\begin{DoxyCompactList}\small\item\em get\+Move\+Time \end{DoxyCompactList}\item 
+double \hyperlink{classrobotis__manipulator_1_1_trajectory_aa88cc828dc324d2441cfbafaff15dbb1}{get\+Tick\+Time} ()
+\begin{DoxyCompactList}\small\item\em get\+Tick\+Time \end{DoxyCompactList}\item 
+void \hyperlink{classrobotis__manipulator_1_1_trajectory_a19b2f886aff8fcb4bef369f2a8e0fac0}{set\+Manipulator} (\hyperlink{classrobotis__manipulator_1_1_manipulator}{Manipulator} manipulator)
+\begin{DoxyCompactList}\small\item\em set\+Manipulator \end{DoxyCompactList}\item 
+\hyperlink{classrobotis__manipulator_1_1_manipulator}{Manipulator} $\ast$ \hyperlink{classrobotis__manipulator_1_1_trajectory_ae5276de42edf154de107c1f194f6b322}{get\+Manipulator} ()
+\begin{DoxyCompactList}\small\item\em get\+Manipulator \end{DoxyCompactList}\item 
+\hyperlink{classrobotis__manipulator_1_1_joint_trajectory}{Joint\+Trajectory} \hyperlink{classrobotis__manipulator_1_1_trajectory_a378a65986082eb2bc125928b7e56889d}{get\+Joint\+Trajectory} ()
+\begin{DoxyCompactList}\small\item\em get\+Joint\+Trajectory \end{DoxyCompactList}\item 
+\hyperlink{classrobotis__manipulator_1_1_task_trajectory}{Task\+Trajectory} \hyperlink{classrobotis__manipulator_1_1_trajectory_a1e4ee32908b244fea91919f1013e2e6a}{get\+Task\+Trajectory} ()
+\begin{DoxyCompactList}\small\item\em get\+Task\+Trajectory \end{DoxyCompactList}\item 
+\hyperlink{classrobotis__manipulator_1_1_custom_joint_trajectory}{Custom\+Joint\+Trajectory} $\ast$ \hyperlink{classrobotis__manipulator_1_1_trajectory_ac45c691a9fee06027d17ea6e55d688ea}{get\+Custom\+Joint\+Trajectory} (\hyperlink{namespacerobotis__manipulator_a08c2d25e77a01ad75b9bb740f8ce4765}{Name} name)
+\begin{DoxyCompactList}\small\item\em get\+Custom\+Joint\+Trajectory \end{DoxyCompactList}\item 
+\hyperlink{classrobotis__manipulator_1_1_custom_task_trajectory}{Custom\+Task\+Trajectory} $\ast$ \hyperlink{classrobotis__manipulator_1_1_trajectory_afbfddec6e3015179c30b76d5142f54c3}{get\+Custom\+Task\+Trajectory} (\hyperlink{namespacerobotis__manipulator_a08c2d25e77a01ad75b9bb740f8ce4765}{Name} name)
+\begin{DoxyCompactList}\small\item\em get\+Custom\+Task\+Trajectory \end{DoxyCompactList}\item 
+void \hyperlink{classrobotis__manipulator_1_1_trajectory_a4d7f38c0e931889ba513dfa1a9fae3df}{add\+Custom\+Trajectory} (\hyperlink{namespacerobotis__manipulator_a08c2d25e77a01ad75b9bb740f8ce4765}{Name} trajectory\+\_\+name, \hyperlink{classrobotis__manipulator_1_1_custom_joint_trajectory}{Custom\+Joint\+Trajectory} $\ast$custom\+\_\+trajectory)
+\begin{DoxyCompactList}\small\item\em add\+Custom\+Trajectory \end{DoxyCompactList}\item 
+void \hyperlink{classrobotis__manipulator_1_1_trajectory_a6e35e2a6ce37644e479e188c842f4532}{add\+Custom\+Trajectory} (\hyperlink{namespacerobotis__manipulator_a08c2d25e77a01ad75b9bb740f8ce4765}{Name} trajectory\+\_\+name, \hyperlink{classrobotis__manipulator_1_1_custom_task_trajectory}{Custom\+Task\+Trajectory} $\ast$custom\+\_\+trajectory)
+\begin{DoxyCompactList}\small\item\em add\+Custom\+Trajectory \end{DoxyCompactList}\item 
+void \hyperlink{classrobotis__manipulator_1_1_trajectory_a9376519929c9ac310590f92784950ed3}{set\+Custom\+Trajectory\+Option} (\hyperlink{namespacerobotis__manipulator_a08c2d25e77a01ad75b9bb740f8ce4765}{Name} trajectory\+\_\+name, const void $\ast$arg)
+\begin{DoxyCompactList}\small\item\em set\+Custom\+Trajectory\+Option \end{DoxyCompactList}\item 
+void \hyperlink{classrobotis__manipulator_1_1_trajectory_a6ffae7998c29d372196b83ed63eb0540}{set\+Present\+Control\+Tool\+Name} (\hyperlink{namespacerobotis__manipulator_a08c2d25e77a01ad75b9bb740f8ce4765}{Name} present\+\_\+control\+\_\+tool\+\_\+name)
+\begin{DoxyCompactList}\small\item\em set\+Present\+Control\+Tool\+Name \end{DoxyCompactList}\item 
+\hyperlink{namespacerobotis__manipulator_a08c2d25e77a01ad75b9bb740f8ce4765}{Name} \hyperlink{classrobotis__manipulator_1_1_trajectory_acc33565a63cb8d328170bb8486d910b1}{get\+Present\+Custom\+Trajectory\+Name} ()
+\begin{DoxyCompactList}\small\item\em get\+Present\+Custom\+Trajectory\+Name \end{DoxyCompactList}\item 
+\hyperlink{namespacerobotis__manipulator_a08c2d25e77a01ad75b9bb740f8ce4765}{Name} \hyperlink{classrobotis__manipulator_1_1_trajectory_a49ba36b57306d92db3214fdf21db75e5}{get\+Present\+Control\+Tool\+Name} ()
+\begin{DoxyCompactList}\small\item\em get\+Present\+Control\+Tool\+Name \end{DoxyCompactList}\item 
+void \hyperlink{classrobotis__manipulator_1_1_trajectory_addb10c2af208b5e1040a60b7bbf81952}{init\+Trajectory\+Waypoint} (\hyperlink{classrobotis__manipulator_1_1_manipulator}{Manipulator} actual\+\_\+manipulator, \hyperlink{classrobotis__manipulator_1_1_kinematics}{Kinematics} $\ast$kinematics)
+\begin{DoxyCompactList}\small\item\em init\+Trajectory\+Waypoint \end{DoxyCompactList}\item 
+void \hyperlink{classrobotis__manipulator_1_1_trajectory_a05e95f1473723592130f63321664fb0c}{update\+Present\+Waypoint} (\hyperlink{classrobotis__manipulator_1_1_kinematics}{Kinematics} $\ast$kinematics)
+\begin{DoxyCompactList}\small\item\em update\+Present\+Waypoint \end{DoxyCompactList}\item 
+void \hyperlink{classrobotis__manipulator_1_1_trajectory_a58b1d4fb60f7e3ed9150d312766debc1}{set\+Present\+Joint\+Waypoint} (\hyperlink{namespacerobotis__manipulator_a4456fd8b14e1f6b7733a77837dfe9339}{Joint\+Waypoint} joint\+\_\+value\+\_\+vector)
+\begin{DoxyCompactList}\small\item\em set\+Present\+Joint\+Waypoint \end{DoxyCompactList}\item 
+void \hyperlink{classrobotis__manipulator_1_1_trajectory_a043c122ac281c223eb73303255981d17}{set\+Present\+Task\+Waypoint} (\hyperlink{namespacerobotis__manipulator_a08c2d25e77a01ad75b9bb740f8ce4765}{Name} tool\+\_\+name, \hyperlink{namespacerobotis__manipulator_a440e2d88ec85fdee394e540dc6024c3e}{Task\+Waypoint} tool\+\_\+position\+\_\+value\+\_\+vector)
+\begin{DoxyCompactList}\small\item\em set\+Present\+Task\+Waypoint \end{DoxyCompactList}\item 
+\hyperlink{namespacerobotis__manipulator_a4456fd8b14e1f6b7733a77837dfe9339}{Joint\+Waypoint} \hyperlink{classrobotis__manipulator_1_1_trajectory_a840fce5e4b16eb4ef957ff0aba2bf146}{get\+Present\+Joint\+Waypoint} ()
+\begin{DoxyCompactList}\small\item\em get\+Present\+Joint\+Waypoint \end{DoxyCompactList}\item 
+\hyperlink{namespacerobotis__manipulator_a440e2d88ec85fdee394e540dc6024c3e}{Task\+Waypoint} \hyperlink{classrobotis__manipulator_1_1_trajectory_a74a9251b2c725b3e37c679cbd3102925}{get\+Present\+Task\+Waypoint} (\hyperlink{namespacerobotis__manipulator_a08c2d25e77a01ad75b9bb740f8ce4765}{Name} tool\+\_\+name)
+\begin{DoxyCompactList}\small\item\em get\+Present\+Task\+Waypoint \end{DoxyCompactList}\item 
+\hyperlink{namespacerobotis__manipulator_a4456fd8b14e1f6b7733a77837dfe9339}{Joint\+Waypoint} \hyperlink{classrobotis__manipulator_1_1_trajectory_a3e05d461f6bdf874a58a6a35ff6ce351}{remove\+Waypoint\+Dynamic\+Data} (\hyperlink{namespacerobotis__manipulator_a4456fd8b14e1f6b7733a77837dfe9339}{Joint\+Waypoint} value)
+\begin{DoxyCompactList}\small\item\em remove\+Waypoint\+Dynamic\+Data \end{DoxyCompactList}\item 
+\hyperlink{namespacerobotis__manipulator_a440e2d88ec85fdee394e540dc6024c3e}{Task\+Waypoint} \hyperlink{classrobotis__manipulator_1_1_trajectory_a1740e6f16d5428083a7a3338bca70702}{remove\+Waypoint\+Dynamic\+Data} (\hyperlink{namespacerobotis__manipulator_a440e2d88ec85fdee394e540dc6024c3e}{Task\+Waypoint} value)
+\begin{DoxyCompactList}\small\item\em remove\+Waypoint\+Dynamic\+Data \end{DoxyCompactList}\item 
+void \hyperlink{classrobotis__manipulator_1_1_trajectory_ae08c22d6ab0608b4e1ec7e0996caf96e}{set\+Trajectory\+Type} (\hyperlink{namespacerobotis__manipulator_a008c110bef924df2737c5583000a9293}{Trajectory\+Type} trajectory\+\_\+type)
+\begin{DoxyCompactList}\small\item\em set\+Trajectory\+Type \end{DoxyCompactList}\item 
+bool \hyperlink{classrobotis__manipulator_1_1_trajectory_ad611b4f48e92be9c112c36cc2569bb75}{check\+Trajectory\+Type} (\hyperlink{namespacerobotis__manipulator_a008c110bef924df2737c5583000a9293}{Trajectory\+Type} trajectory\+\_\+type)
+\begin{DoxyCompactList}\small\item\em check\+Trajectory\+Type \end{DoxyCompactList}\item 
+void \hyperlink{classrobotis__manipulator_1_1_trajectory_a2cd72b326825ebcda3bdf2d52389e30f}{make\+Joint\+Trajectory} (\hyperlink{namespacerobotis__manipulator_a4456fd8b14e1f6b7733a77837dfe9339}{Joint\+Waypoint} start\+\_\+way\+\_\+point, \hyperlink{namespacerobotis__manipulator_a4456fd8b14e1f6b7733a77837dfe9339}{Joint\+Waypoint} goal\+\_\+way\+\_\+point)
+\begin{DoxyCompactList}\small\item\em make\+Joint\+Trajectory \end{DoxyCompactList}\item 
+void \hyperlink{classrobotis__manipulator_1_1_trajectory_a5d93fd05d5c8faa50286fc9b2c662744}{make\+Task\+Trajectory} (\hyperlink{namespacerobotis__manipulator_a440e2d88ec85fdee394e540dc6024c3e}{Task\+Waypoint} start\+\_\+way\+\_\+point, \hyperlink{namespacerobotis__manipulator_a440e2d88ec85fdee394e540dc6024c3e}{Task\+Waypoint} goal\+\_\+way\+\_\+point)
+\begin{DoxyCompactList}\small\item\em make\+Task\+Trajectory \end{DoxyCompactList}\item 
+void \hyperlink{classrobotis__manipulator_1_1_trajectory_a99cb5270c06f500744da8bb65547581b}{make\+Custom\+Trajectory} (\hyperlink{namespacerobotis__manipulator_a08c2d25e77a01ad75b9bb740f8ce4765}{Name} trajectory\+\_\+name, \hyperlink{namespacerobotis__manipulator_a4456fd8b14e1f6b7733a77837dfe9339}{Joint\+Waypoint} start\+\_\+way\+\_\+point, const void $\ast$arg)
+\begin{DoxyCompactList}\small\item\em make\+Custom\+Trajectory \end{DoxyCompactList}\item 
+void \hyperlink{classrobotis__manipulator_1_1_trajectory_af9e0f7972639f216f9ee5b31a0032218}{make\+Custom\+Trajectory} (\hyperlink{namespacerobotis__manipulator_a08c2d25e77a01ad75b9bb740f8ce4765}{Name} trajectory\+\_\+name, \hyperlink{namespacerobotis__manipulator_a440e2d88ec85fdee394e540dc6024c3e}{Task\+Waypoint} start\+\_\+way\+\_\+point, const void $\ast$arg)
+\begin{DoxyCompactList}\small\item\em make\+Custom\+Trajectory \end{DoxyCompactList}\item 
+void \hyperlink{classrobotis__manipulator_1_1_trajectory_a511789dcd0003c3afaacbf7f58f56ec2}{set\+Tool\+Goal\+Position} (\hyperlink{namespacerobotis__manipulator_a08c2d25e77a01ad75b9bb740f8ce4765}{Name} tool\+\_\+name, double tool\+\_\+goal\+\_\+position)
+\begin{DoxyCompactList}\small\item\em set\+Tool\+Goal\+Position \end{DoxyCompactList}\item 
+void \hyperlink{classrobotis__manipulator_1_1_trajectory_af02155337e38fdd5fc4c09e7ee066851}{set\+Tool\+Goal\+Value} (\hyperlink{namespacerobotis__manipulator_a08c2d25e77a01ad75b9bb740f8ce4765}{Name} tool\+\_\+name, \hyperlink{namespacerobotis__manipulator_aa0556c98c5294ccf3a96c2d0fe315e40}{Joint\+Value} tool\+\_\+goal\+\_\+value)
+\begin{DoxyCompactList}\small\item\em set\+Tool\+Goal\+Value \end{DoxyCompactList}\item 
+double \hyperlink{classrobotis__manipulator_1_1_trajectory_a59589016316f09e9f5894c6e47d0e7af}{get\+Tool\+Goal\+Position} (\hyperlink{namespacerobotis__manipulator_a08c2d25e77a01ad75b9bb740f8ce4765}{Name} tool\+\_\+name)
+\begin{DoxyCompactList}\small\item\em get\+Tool\+Goal\+Position \end{DoxyCompactList}\item 
+\hyperlink{namespacerobotis__manipulator_aa0556c98c5294ccf3a96c2d0fe315e40}{Joint\+Value} \hyperlink{classrobotis__manipulator_1_1_trajectory_af731f5f58a734655772c56467488262f}{get\+Tool\+Goal\+Value} (\hyperlink{namespacerobotis__manipulator_a08c2d25e77a01ad75b9bb740f8ce4765}{Name} tool\+\_\+name)
+\begin{DoxyCompactList}\small\item\em get\+Tool\+Goal\+Value \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacerobotis__manipulator_a008c110bef924df2737c5583000a9293}{Trajectory\+Type} \hyperlink{classrobotis__manipulator_1_1_trajectory_ad21a6583cfce56cc25ea8469d77293ec}{trajectory\+\_\+type\+\_\+}
+\item 
+\hyperlink{structrobotis__manipulator_1_1_time}{Time} \hyperlink{classrobotis__manipulator_1_1_trajectory_ab6bc1ea3ef5611ddf84667040bf47ceb}{trajectory\+\_\+time\+\_\+}
+\item 
+\hyperlink{classrobotis__manipulator_1_1_manipulator}{Manipulator} \hyperlink{classrobotis__manipulator_1_1_trajectory_acd9fd9ae6cc065a10d9d438cda1081de}{manipulator\+\_\+}
+\item 
+\hyperlink{classrobotis__manipulator_1_1_joint_trajectory}{Joint\+Trajectory} \hyperlink{classrobotis__manipulator_1_1_trajectory_a3d59b0625d5d7033d42fb4b5ee64ba1b}{joint\+\_\+}
+\item 
+\hyperlink{classrobotis__manipulator_1_1_task_trajectory}{Task\+Trajectory} \hyperlink{classrobotis__manipulator_1_1_trajectory_a15902dd84985ac133318a1ac58eae093}{task\+\_\+}
+\item 
+std\+::map$<$ \hyperlink{namespacerobotis__manipulator_a08c2d25e77a01ad75b9bb740f8ce4765}{Name}, \hyperlink{classrobotis__manipulator_1_1_custom_joint_trajectory}{Custom\+Joint\+Trajectory} $\ast$ $>$ \hyperlink{classrobotis__manipulator_1_1_trajectory_a4424c07ba6cdfb08ca84fff0e2284f67}{cus\+\_\+joint\+\_\+}
+\item 
+std\+::map$<$ \hyperlink{namespacerobotis__manipulator_a08c2d25e77a01ad75b9bb740f8ce4765}{Name}, \hyperlink{classrobotis__manipulator_1_1_custom_task_trajectory}{Custom\+Task\+Trajectory} $\ast$ $>$ \hyperlink{classrobotis__manipulator_1_1_trajectory_a1b02b691bf591629f4abf8478c437216}{cus\+\_\+task\+\_\+}
+\item 
+\hyperlink{namespacerobotis__manipulator_a08c2d25e77a01ad75b9bb740f8ce4765}{Name} \hyperlink{classrobotis__manipulator_1_1_trajectory_aaeb1b7b142b7dd04ca7410e758549254}{present\+\_\+custom\+\_\+trajectory\+\_\+name\+\_\+}
+\item 
+\hyperlink{namespacerobotis__manipulator_a08c2d25e77a01ad75b9bb740f8ce4765}{Name} \hyperlink{classrobotis__manipulator_1_1_trajectory_a497b1c21424ec3a0476cf4c96a951223}{present\+\_\+control\+\_\+tool\+\_\+name\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classrobotis__manipulator_1_1_trajectory}{Trajectory} class. 
+
+Definition at line 158 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}!Trajectory@{Trajectory}}
+\index{Trajectory@{Trajectory}!robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}}
+\subsubsection[{\texorpdfstring{Trajectory()}{Trajectory()}}]{\setlength{\rightskip}{0pt plus 5cm}robotis\+\_\+manipulator\+::\+Trajectory\+::\+Trajectory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrobotis__manipulator_1_1_trajectory_ae549cd04019f4a985addb26c6a7ee1a1}{}\label{classrobotis__manipulator_1_1_trajectory_ae549cd04019f4a985addb26c6a7ee1a1}
+
+
+Definition at line 174 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+h.
+
+
+\begin{DoxyCode}
+174 \{\}
+\end{DoxyCode}
+\index{robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}!````~Trajectory@{$\sim$\+Trajectory}}
+\index{````~Trajectory@{$\sim$\+Trajectory}!robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}}
+\subsubsection[{\texorpdfstring{$\sim$\+Trajectory()}{~Trajectory()}}]{\setlength{\rightskip}{0pt plus 5cm}robotis\+\_\+manipulator\+::\+Trajectory\+::$\sim$\+Trajectory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrobotis__manipulator_1_1_trajectory_a89ee3aa113de35bced88abecbdb0b25e}{}\label{classrobotis__manipulator_1_1_trajectory_a89ee3aa113de35bced88abecbdb0b25e}
+
+
+Definition at line 175 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+h.
+
+
+\begin{DoxyCode}
+175 \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}!add\+Custom\+Trajectory@{add\+Custom\+Trajectory}}
+\index{add\+Custom\+Trajectory@{add\+Custom\+Trajectory}!robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}}
+\subsubsection[{\texorpdfstring{add\+Custom\+Trajectory(\+Name trajectory\+\_\+name, Custom\+Joint\+Trajectory $\ast$custom\+\_\+trajectory)}{addCustomTrajectory(Name trajectory_name, CustomJointTrajectory *custom_trajectory)}}]{\setlength{\rightskip}{0pt plus 5cm}void Trajectory\+::add\+Custom\+Trajectory (
+\begin{DoxyParamCaption}
+\item[{{\bf Name}}]{trajectory\+\_\+name, }
+\item[{{\bf Custom\+Joint\+Trajectory} $\ast$}]{custom\+\_\+trajectory}
+\end{DoxyParamCaption}
+)}\hypertarget{classrobotis__manipulator_1_1_trajectory_a4d7f38c0e931889ba513dfa1a9fae3df}{}\label{classrobotis__manipulator_1_1_trajectory_a4d7f38c0e931889ba513dfa1a9fae3df}
+
+
+add\+Custom\+Trajectory 
+
+
+\begin{DoxyParams}{Parameters}
+{\em trajectory\+\_\+name} & \\
+\hline
+{\em custom\+\_\+trajectory} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 336 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+cpp.
+
+
+\begin{DoxyCode}
+337 \{
+338   \hyperlink{classrobotis__manipulator_1_1_trajectory_a4424c07ba6cdfb08ca84fff0e2284f67}{cus\_joint\_}.insert(std::make\_pair(trajectory\_name, custom\_trajectory));
+339 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrobotis__manipulator_1_1_trajectory_a4d7f38c0e931889ba513dfa1a9fae3df_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}!add\+Custom\+Trajectory@{add\+Custom\+Trajectory}}
+\index{add\+Custom\+Trajectory@{add\+Custom\+Trajectory}!robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}}
+\subsubsection[{\texorpdfstring{add\+Custom\+Trajectory(\+Name trajectory\+\_\+name, Custom\+Task\+Trajectory $\ast$custom\+\_\+trajectory)}{addCustomTrajectory(Name trajectory_name, CustomTaskTrajectory *custom_trajectory)}}]{\setlength{\rightskip}{0pt plus 5cm}void Trajectory\+::add\+Custom\+Trajectory (
+\begin{DoxyParamCaption}
+\item[{{\bf Name}}]{trajectory\+\_\+name, }
+\item[{{\bf Custom\+Task\+Trajectory} $\ast$}]{custom\+\_\+trajectory}
+\end{DoxyParamCaption}
+)}\hypertarget{classrobotis__manipulator_1_1_trajectory_a6e35e2a6ce37644e479e188c842f4532}{}\label{classrobotis__manipulator_1_1_trajectory_a6e35e2a6ce37644e479e188c842f4532}
+
+
+add\+Custom\+Trajectory 
+
+
+\begin{DoxyParams}{Parameters}
+{\em trajectory\+\_\+name} & \\
+\hline
+{\em custom\+\_\+trajectory} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 341 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+cpp.
+
+
+\begin{DoxyCode}
+342 \{
+343   \hyperlink{classrobotis__manipulator_1_1_trajectory_a1b02b691bf591629f4abf8478c437216}{cus\_task\_}.insert(std::make\_pair(trajectory\_name, custom\_trajectory));
+344 \}
+\end{DoxyCode}
+\index{robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}!check\+Trajectory\+Type@{check\+Trajectory\+Type}}
+\index{check\+Trajectory\+Type@{check\+Trajectory\+Type}!robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}}
+\subsubsection[{\texorpdfstring{check\+Trajectory\+Type(\+Trajectory\+Type trajectory\+\_\+type)}{checkTrajectoryType(TrajectoryType trajectory_type)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Trajectory\+::check\+Trajectory\+Type (
+\begin{DoxyParamCaption}
+\item[{{\bf Trajectory\+Type}}]{trajectory\+\_\+type}
+\end{DoxyParamCaption}
+)}\hypertarget{classrobotis__manipulator_1_1_trajectory_ad611b4f48e92be9c112c36cc2569bb75}{}\label{classrobotis__manipulator_1_1_trajectory_ad611b4f48e92be9c112c36cc2569bb75}
+
+
+check\+Trajectory\+Type 
+
+
+\begin{DoxyParams}{Parameters}
+{\em trajectory\+\_\+type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 432 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+cpp.
+
+
+\begin{DoxyCode}
+433 \{
+434   \textcolor{keywordflow}{if}(\hyperlink{classrobotis__manipulator_1_1_trajectory_ad21a6583cfce56cc25ea8469d77293ec}{trajectory\_type\_}==trajectory\_type)
+435     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+436   \textcolor{keywordflow}{else}
+437     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+438 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrobotis__manipulator_1_1_trajectory_ad611b4f48e92be9c112c36cc2569bb75_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}!get\+Custom\+Joint\+Trajectory@{get\+Custom\+Joint\+Trajectory}}
+\index{get\+Custom\+Joint\+Trajectory@{get\+Custom\+Joint\+Trajectory}!robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}}
+\subsubsection[{\texorpdfstring{get\+Custom\+Joint\+Trajectory(\+Name name)}{getCustomJointTrajectory(Name name)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Custom\+Joint\+Trajectory} $\ast$ Trajectory\+::get\+Custom\+Joint\+Trajectory (
+\begin{DoxyParamCaption}
+\item[{{\bf Name}}]{name}
+\end{DoxyParamCaption}
+)}\hypertarget{classrobotis__manipulator_1_1_trajectory_ac45c691a9fee06027d17ea6e55d688ea}{}\label{classrobotis__manipulator_1_1_trajectory_ac45c691a9fee06027d17ea6e55d688ea}
+
+
+get\+Custom\+Joint\+Trajectory 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 326 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+cpp.
+
+
+\begin{DoxyCode}
+327 \{
+328   \textcolor{keywordflow}{return} \hyperlink{classrobotis__manipulator_1_1_trajectory_a4424c07ba6cdfb08ca84fff0e2284f67}{cus\_joint\_}.at(name);
+329 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrobotis__manipulator_1_1_trajectory_ac45c691a9fee06027d17ea6e55d688ea_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}!get\+Custom\+Task\+Trajectory@{get\+Custom\+Task\+Trajectory}}
+\index{get\+Custom\+Task\+Trajectory@{get\+Custom\+Task\+Trajectory}!robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}}
+\subsubsection[{\texorpdfstring{get\+Custom\+Task\+Trajectory(\+Name name)}{getCustomTaskTrajectory(Name name)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Custom\+Task\+Trajectory} $\ast$ Trajectory\+::get\+Custom\+Task\+Trajectory (
+\begin{DoxyParamCaption}
+\item[{{\bf Name}}]{name}
+\end{DoxyParamCaption}
+)}\hypertarget{classrobotis__manipulator_1_1_trajectory_afbfddec6e3015179c30b76d5142f54c3}{}\label{classrobotis__manipulator_1_1_trajectory_afbfddec6e3015179c30b76d5142f54c3}
+
+
+get\+Custom\+Task\+Trajectory 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 331 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+cpp.
+
+
+\begin{DoxyCode}
+332 \{
+333   \textcolor{keywordflow}{return} \hyperlink{classrobotis__manipulator_1_1_trajectory_a1b02b691bf591629f4abf8478c437216}{cus\_task\_}.at(name);
+334 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrobotis__manipulator_1_1_trajectory_afbfddec6e3015179c30b76d5142f54c3_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}!get\+Joint\+Trajectory@{get\+Joint\+Trajectory}}
+\index{get\+Joint\+Trajectory@{get\+Joint\+Trajectory}!robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}}
+\subsubsection[{\texorpdfstring{get\+Joint\+Trajectory()}{getJointTrajectory()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Joint\+Trajectory} Trajectory\+::get\+Joint\+Trajectory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrobotis__manipulator_1_1_trajectory_a378a65986082eb2bc125928b7e56889d}{}\label{classrobotis__manipulator_1_1_trajectory_a378a65986082eb2bc125928b7e56889d}
+
+
+get\+Joint\+Trajectory 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 316 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+cpp.
+
+
+\begin{DoxyCode}
+317 \{
+318   \textcolor{keywordflow}{return} \hyperlink{classrobotis__manipulator_1_1_trajectory_a3d59b0625d5d7033d42fb4b5ee64ba1b}{joint\_};
+319 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrobotis__manipulator_1_1_trajectory_a378a65986082eb2bc125928b7e56889d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}!get\+Manipulator@{get\+Manipulator}}
+\index{get\+Manipulator@{get\+Manipulator}!robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}}
+\subsubsection[{\texorpdfstring{get\+Manipulator()}{getManipulator()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Manipulator} $\ast$ Trajectory\+::get\+Manipulator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrobotis__manipulator_1_1_trajectory_ae5276de42edf154de107c1f194f6b322}{}\label{classrobotis__manipulator_1_1_trajectory_ae5276de42edf154de107c1f194f6b322}
+
+
+get\+Manipulator 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 311 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+cpp.
+
+
+\begin{DoxyCode}
+312 \{
+313   \textcolor{keywordflow}{return} &\hyperlink{classrobotis__manipulator_1_1_trajectory_acd9fd9ae6cc065a10d9d438cda1081de}{manipulator\_};
+314 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrobotis__manipulator_1_1_trajectory_ae5276de42edf154de107c1f194f6b322_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}!get\+Move\+Time@{get\+Move\+Time}}
+\index{get\+Move\+Time@{get\+Move\+Time}!robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}}
+\subsubsection[{\texorpdfstring{get\+Move\+Time()}{getMoveTime()}}]{\setlength{\rightskip}{0pt plus 5cm}double Trajectory\+::get\+Move\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrobotis__manipulator_1_1_trajectory_a998cdbaa9895e9a3ea6c7ec49f7b47d9}{}\label{classrobotis__manipulator_1_1_trajectory_a998cdbaa9895e9a3ea6c7ec49f7b47d9}
+
+
+get\+Move\+Time 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 296 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+cpp.
+
+
+\begin{DoxyCode}
+297 \{
+298   \textcolor{keywordflow}{return} \hyperlink{classrobotis__manipulator_1_1_trajectory_ab6bc1ea3ef5611ddf84667040bf47ceb}{trajectory\_time\_}.\hyperlink{structrobotis__manipulator_1_1_time_af1ee3f302af9a5fb1201124a89a9f4c0}{total\_move\_time};
+299 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrobotis__manipulator_1_1_trajectory_a998cdbaa9895e9a3ea6c7ec49f7b47d9_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}!get\+Present\+Control\+Tool\+Name@{get\+Present\+Control\+Tool\+Name}}
+\index{get\+Present\+Control\+Tool\+Name@{get\+Present\+Control\+Tool\+Name}!robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}}
+\subsubsection[{\texorpdfstring{get\+Present\+Control\+Tool\+Name()}{getPresentControlToolName()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Name} Trajectory\+::get\+Present\+Control\+Tool\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrobotis__manipulator_1_1_trajectory_a49ba36b57306d92db3214fdf21db75e5}{}\label{classrobotis__manipulator_1_1_trajectory_a49ba36b57306d92db3214fdf21db75e5}
+
+
+get\+Present\+Control\+Tool\+Name 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 364 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+cpp.
+
+
+\begin{DoxyCode}
+365 \{
+366  \textcolor{keywordflow}{return} \hyperlink{classrobotis__manipulator_1_1_trajectory_a497b1c21424ec3a0476cf4c96a951223}{present\_control\_tool\_name\_};
+367 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrobotis__manipulator_1_1_trajectory_a49ba36b57306d92db3214fdf21db75e5_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}!get\+Present\+Custom\+Trajectory\+Name@{get\+Present\+Custom\+Trajectory\+Name}}
+\index{get\+Present\+Custom\+Trajectory\+Name@{get\+Present\+Custom\+Trajectory\+Name}!robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}}
+\subsubsection[{\texorpdfstring{get\+Present\+Custom\+Trajectory\+Name()}{getPresentCustomTrajectoryName()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Name} Trajectory\+::get\+Present\+Custom\+Trajectory\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrobotis__manipulator_1_1_trajectory_acc33565a63cb8d328170bb8486d910b1}{}\label{classrobotis__manipulator_1_1_trajectory_acc33565a63cb8d328170bb8486d910b1}
+
+
+get\+Present\+Custom\+Trajectory\+Name 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 359 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+cpp.
+
+
+\begin{DoxyCode}
+360 \{
+361   \textcolor{keywordflow}{return} \hyperlink{classrobotis__manipulator_1_1_trajectory_aaeb1b7b142b7dd04ca7410e758549254}{present\_custom\_trajectory\_name\_};
+362 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrobotis__manipulator_1_1_trajectory_acc33565a63cb8d328170bb8486d910b1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}!get\+Present\+Joint\+Waypoint@{get\+Present\+Joint\+Waypoint}}
+\index{get\+Present\+Joint\+Waypoint@{get\+Present\+Joint\+Waypoint}!robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}}
+\subsubsection[{\texorpdfstring{get\+Present\+Joint\+Waypoint()}{getPresentJointWaypoint()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Joint\+Waypoint} Trajectory\+::get\+Present\+Joint\+Waypoint (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrobotis__manipulator_1_1_trajectory_a840fce5e4b16eb4ef957ff0aba2bf146}{}\label{classrobotis__manipulator_1_1_trajectory_a840fce5e4b16eb4ef957ff0aba2bf146}
+
+
+get\+Present\+Joint\+Waypoint 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 395 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+cpp.
+
+
+\begin{DoxyCode}
+396 \{
+397   \textcolor{keywordflow}{return} \hyperlink{classrobotis__manipulator_1_1_trajectory_acd9fd9ae6cc065a10d9d438cda1081de}{manipulator\_}.\hyperlink{classrobotis__manipulator_1_1_manipulator_ae11f05005b456e13ef17585a70179dce}{getAllActiveJointValue}();
+398 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrobotis__manipulator_1_1_trajectory_a840fce5e4b16eb4ef957ff0aba2bf146_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}!get\+Present\+Task\+Waypoint@{get\+Present\+Task\+Waypoint}}
+\index{get\+Present\+Task\+Waypoint@{get\+Present\+Task\+Waypoint}!robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}}
+\subsubsection[{\texorpdfstring{get\+Present\+Task\+Waypoint(\+Name tool\+\_\+name)}{getPresentTaskWaypoint(Name tool_name)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Task\+Waypoint} Trajectory\+::get\+Present\+Task\+Waypoint (
+\begin{DoxyParamCaption}
+\item[{{\bf Name}}]{tool\+\_\+name}
+\end{DoxyParamCaption}
+)}\hypertarget{classrobotis__manipulator_1_1_trajectory_a74a9251b2c725b3e37c679cbd3102925}{}\label{classrobotis__manipulator_1_1_trajectory_a74a9251b2c725b3e37c679cbd3102925}
+
+
+get\+Present\+Task\+Waypoint 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tool\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 400 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+cpp.
+
+
+\begin{DoxyCode}
+401 \{
+402   \textcolor{keywordflow}{return} \hyperlink{classrobotis__manipulator_1_1_trajectory_acd9fd9ae6cc065a10d9d438cda1081de}{manipulator\_}.\hyperlink{classrobotis__manipulator_1_1_manipulator_ae48083e42b02bbf672f43b2f77979f21}{getComponentPoseFromWorld}(tool\_name);
+403 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrobotis__manipulator_1_1_trajectory_a74a9251b2c725b3e37c679cbd3102925_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}!get\+Task\+Trajectory@{get\+Task\+Trajectory}}
+\index{get\+Task\+Trajectory@{get\+Task\+Trajectory}!robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}}
+\subsubsection[{\texorpdfstring{get\+Task\+Trajectory()}{getTaskTrajectory()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Task\+Trajectory} Trajectory\+::get\+Task\+Trajectory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrobotis__manipulator_1_1_trajectory_a1e4ee32908b244fea91919f1013e2e6a}{}\label{classrobotis__manipulator_1_1_trajectory_a1e4ee32908b244fea91919f1013e2e6a}
+
+
+get\+Task\+Trajectory 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 321 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+cpp.
+
+
+\begin{DoxyCode}
+322 \{
+323   \textcolor{keywordflow}{return} \hyperlink{classrobotis__manipulator_1_1_trajectory_a15902dd84985ac133318a1ac58eae093}{task\_};
+324 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrobotis__manipulator_1_1_trajectory_a1e4ee32908b244fea91919f1013e2e6a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}!get\+Tick\+Time@{get\+Tick\+Time}}
+\index{get\+Tick\+Time@{get\+Tick\+Time}!robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}}
+\subsubsection[{\texorpdfstring{get\+Tick\+Time()}{getTickTime()}}]{\setlength{\rightskip}{0pt plus 5cm}double Trajectory\+::get\+Tick\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrobotis__manipulator_1_1_trajectory_aa88cc828dc324d2441cfbafaff15dbb1}{}\label{classrobotis__manipulator_1_1_trajectory_aa88cc828dc324d2441cfbafaff15dbb1}
+
+
+get\+Tick\+Time 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 301 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+cpp.
+
+
+\begin{DoxyCode}
+302 \{
+303   \textcolor{keywordflow}{return} \hyperlink{classrobotis__manipulator_1_1_trajectory_ab6bc1ea3ef5611ddf84667040bf47ceb}{trajectory\_time\_}.\hyperlink{structrobotis__manipulator_1_1_time_ad2cd4e29dff6c5491cc57abdfe1f8655}{present\_time} - 
+      \hyperlink{classrobotis__manipulator_1_1_trajectory_ab6bc1ea3ef5611ddf84667040bf47ceb}{trajectory\_time\_}.\hyperlink{structrobotis__manipulator_1_1_time_a9381eb504cea1e8405182cfc7e9abe13}{start\_time};
+304 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrobotis__manipulator_1_1_trajectory_aa88cc828dc324d2441cfbafaff15dbb1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}!get\+Tool\+Goal\+Position@{get\+Tool\+Goal\+Position}}
+\index{get\+Tool\+Goal\+Position@{get\+Tool\+Goal\+Position}!robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}}
+\subsubsection[{\texorpdfstring{get\+Tool\+Goal\+Position(\+Name tool\+\_\+name)}{getToolGoalPosition(Name tool_name)}}]{\setlength{\rightskip}{0pt plus 5cm}double Trajectory\+::get\+Tool\+Goal\+Position (
+\begin{DoxyParamCaption}
+\item[{{\bf Name}}]{tool\+\_\+name}
+\end{DoxyParamCaption}
+)}\hypertarget{classrobotis__manipulator_1_1_trajectory_a59589016316f09e9f5894c6e47d0e7af}{}\label{classrobotis__manipulator_1_1_trajectory_a59589016316f09e9f5894c6e47d0e7af}
+
+
+get\+Tool\+Goal\+Position 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tool\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 484 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+cpp.
+
+
+\begin{DoxyCode}
+485 \{
+486   \textcolor{keywordflow}{return} \hyperlink{classrobotis__manipulator_1_1_trajectory_acd9fd9ae6cc065a10d9d438cda1081de}{manipulator\_}.\hyperlink{classrobotis__manipulator_1_1_manipulator_af7c65103032ba25d26dd77b49f7875ec}{getJointPosition}(tool\_name);
+487 \}
+\end{DoxyCode}
+\index{robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}!get\+Tool\+Goal\+Value@{get\+Tool\+Goal\+Value}}
+\index{get\+Tool\+Goal\+Value@{get\+Tool\+Goal\+Value}!robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}}
+\subsubsection[{\texorpdfstring{get\+Tool\+Goal\+Value(\+Name tool\+\_\+name)}{getToolGoalValue(Name tool_name)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Joint\+Value} Trajectory\+::get\+Tool\+Goal\+Value (
+\begin{DoxyParamCaption}
+\item[{{\bf Name}}]{tool\+\_\+name}
+\end{DoxyParamCaption}
+)}\hypertarget{classrobotis__manipulator_1_1_trajectory_af731f5f58a734655772c56467488262f}{}\label{classrobotis__manipulator_1_1_trajectory_af731f5f58a734655772c56467488262f}
+
+
+get\+Tool\+Goal\+Value 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tool\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 489 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+cpp.
+
+
+\begin{DoxyCode}
+490 \{
+491   \textcolor{keywordflow}{return} \hyperlink{classrobotis__manipulator_1_1_trajectory_acd9fd9ae6cc065a10d9d438cda1081de}{manipulator\_}.\hyperlink{classrobotis__manipulator_1_1_manipulator_ad8709ca99c7a1ac09450fc8bca0ab7a5}{getJointValue}(tool\_name);
+492 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrobotis__manipulator_1_1_trajectory_af731f5f58a734655772c56467488262f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}!init\+Trajectory\+Waypoint@{init\+Trajectory\+Waypoint}}
+\index{init\+Trajectory\+Waypoint@{init\+Trajectory\+Waypoint}!robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}}
+\subsubsection[{\texorpdfstring{init\+Trajectory\+Waypoint(\+Manipulator actual\+\_\+manipulator, Kinematics $\ast$kinematics)}{initTrajectoryWaypoint(Manipulator actual_manipulator, Kinematics *kinematics)}}]{\setlength{\rightskip}{0pt plus 5cm}void Trajectory\+::init\+Trajectory\+Waypoint (
+\begin{DoxyParamCaption}
+\item[{{\bf Manipulator}}]{actual\+\_\+manipulator, }
+\item[{{\bf Kinematics} $\ast$}]{kinematics}
+\end{DoxyParamCaption}
+)}\hypertarget{classrobotis__manipulator_1_1_trajectory_addb10c2af208b5e1040a60b7bbf81952}{}\label{classrobotis__manipulator_1_1_trajectory_addb10c2af208b5e1040a60b7bbf81952}
+
+
+init\+Trajectory\+Waypoint 
+
+
+\begin{DoxyParams}{Parameters}
+{\em actual\+\_\+manipulator} & \\
+\hline
+{\em kinematics} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 369 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+cpp.
+
+
+\begin{DoxyCode}
+370 \{
+371   \hyperlink{classrobotis__manipulator_1_1_trajectory_a19b2f886aff8fcb4bef369f2a8e0fac0}{setManipulator}(actual\_manipulator);
+372   \hyperlink{namespacerobotis__manipulator_a4456fd8b14e1f6b7733a77837dfe9339}{JointWaypoint} joint\_way\_point\_vector;
+373   joint\_way\_point\_vector = \hyperlink{classrobotis__manipulator_1_1_trajectory_ae5276de42edf154de107c1f194f6b322}{getManipulator}()->
+      \hyperlink{classrobotis__manipulator_1_1_manipulator_ae11f05005b456e13ef17585a70179dce}{getAllActiveJointValue}();
+374 
+375   \hyperlink{classrobotis__manipulator_1_1_trajectory_a58b1d4fb60f7e3ed9150d312766debc1}{setPresentJointWaypoint}(joint\_way\_point\_vector);
+376   \hyperlink{classrobotis__manipulator_1_1_trajectory_a05e95f1473723592130f63321664fb0c}{updatePresentWaypoint}(kinematics);
+377 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrobotis__manipulator_1_1_trajectory_addb10c2af208b5e1040a60b7bbf81952_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}!make\+Custom\+Trajectory@{make\+Custom\+Trajectory}}
+\index{make\+Custom\+Trajectory@{make\+Custom\+Trajectory}!robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}}
+\subsubsection[{\texorpdfstring{make\+Custom\+Trajectory(\+Name trajectory\+\_\+name, Joint\+Waypoint start\+\_\+way\+\_\+point, const void $\ast$arg)}{makeCustomTrajectory(Name trajectory_name, JointWaypoint start_way_point, const void *arg)}}]{\setlength{\rightskip}{0pt plus 5cm}void Trajectory\+::make\+Custom\+Trajectory (
+\begin{DoxyParamCaption}
+\item[{{\bf Name}}]{trajectory\+\_\+name, }
+\item[{{\bf Joint\+Waypoint}}]{start\+\_\+way\+\_\+point, }
+\item[{const void $\ast$}]{arg}
+\end{DoxyParamCaption}
+)}\hypertarget{classrobotis__manipulator_1_1_trajectory_a99cb5270c06f500744da8bb65547581b}{}\label{classrobotis__manipulator_1_1_trajectory_a99cb5270c06f500744da8bb65547581b}
+
+
+make\+Custom\+Trajectory 
+
+
+\begin{DoxyParams}{Parameters}
+{\em trajectory\+\_\+name} & \\
+\hline
+{\em start\+\_\+way\+\_\+point} & \\
+\hline
+{\em arg} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 450 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+cpp.
+
+
+\begin{DoxyCode}
+451 \{
+452   \textcolor{keywordflow}{if}(\hyperlink{classrobotis__manipulator_1_1_trajectory_a4424c07ba6cdfb08ca84fff0e2284f67}{cus\_joint\_}.find(trajectory\_name) != \hyperlink{classrobotis__manipulator_1_1_trajectory_a4424c07ba6cdfb08ca84fff0e2284f67}{cus\_joint\_}.end())
+453   \{
+454     \hyperlink{classrobotis__manipulator_1_1_trajectory_aaeb1b7b142b7dd04ca7410e758549254}{present\_custom\_trajectory\_name\_} = trajectory\_name;
+455     \hyperlink{classrobotis__manipulator_1_1_trajectory_a4424c07ba6cdfb08ca84fff0e2284f67}{cus\_joint\_}.at(trajectory\_name)->makeJointTrajectory(
+      \hyperlink{classrobotis__manipulator_1_1_trajectory_ab6bc1ea3ef5611ddf84667040bf47ceb}{trajectory\_time\_}.\hyperlink{structrobotis__manipulator_1_1_time_af1ee3f302af9a5fb1201124a89a9f4c0}{total\_move\_time}, start\_way\_point, arg);
+456   \}
+457   \textcolor{keywordflow}{else}
+458     \hyperlink{namespacerobotis__manipulator_1_1log_a6a84cb5481107ad244344093086fb557}{log::error}(\textcolor{stringliteral}{"[makeCustomTrajectory] Wrong way point type."});
+459 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrobotis__manipulator_1_1_trajectory_a99cb5270c06f500744da8bb65547581b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrobotis__manipulator_1_1_trajectory_a99cb5270c06f500744da8bb65547581b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}!make\+Custom\+Trajectory@{make\+Custom\+Trajectory}}
+\index{make\+Custom\+Trajectory@{make\+Custom\+Trajectory}!robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}}
+\subsubsection[{\texorpdfstring{make\+Custom\+Trajectory(\+Name trajectory\+\_\+name, Task\+Waypoint start\+\_\+way\+\_\+point, const void $\ast$arg)}{makeCustomTrajectory(Name trajectory_name, TaskWaypoint start_way_point, const void *arg)}}]{\setlength{\rightskip}{0pt plus 5cm}void Trajectory\+::make\+Custom\+Trajectory (
+\begin{DoxyParamCaption}
+\item[{{\bf Name}}]{trajectory\+\_\+name, }
+\item[{{\bf Task\+Waypoint}}]{start\+\_\+way\+\_\+point, }
+\item[{const void $\ast$}]{arg}
+\end{DoxyParamCaption}
+)}\hypertarget{classrobotis__manipulator_1_1_trajectory_af9e0f7972639f216f9ee5b31a0032218}{}\label{classrobotis__manipulator_1_1_trajectory_af9e0f7972639f216f9ee5b31a0032218}
+
+
+make\+Custom\+Trajectory 
+
+
+\begin{DoxyParams}{Parameters}
+{\em trajectory\+\_\+name} & \\
+\hline
+{\em start\+\_\+way\+\_\+point} & \\
+\hline
+{\em arg} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 461 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+cpp.
+
+
+\begin{DoxyCode}
+462 \{
+463   \textcolor{keywordflow}{if}(\hyperlink{classrobotis__manipulator_1_1_trajectory_a1b02b691bf591629f4abf8478c437216}{cus\_task\_}.find(trajectory\_name) != \hyperlink{classrobotis__manipulator_1_1_trajectory_a1b02b691bf591629f4abf8478c437216}{cus\_task\_}.end())
+464   \{
+465     \hyperlink{classrobotis__manipulator_1_1_trajectory_aaeb1b7b142b7dd04ca7410e758549254}{present\_custom\_trajectory\_name\_} = trajectory\_name;
+466     \hyperlink{classrobotis__manipulator_1_1_trajectory_a1b02b691bf591629f4abf8478c437216}{cus\_task\_}.at(trajectory\_name)->makeTaskTrajectory(\hyperlink{classrobotis__manipulator_1_1_trajectory_ab6bc1ea3ef5611ddf84667040bf47ceb}{trajectory\_time\_}.
+      \hyperlink{structrobotis__manipulator_1_1_time_af1ee3f302af9a5fb1201124a89a9f4c0}{total\_move\_time}, start\_way\_point, arg);
+467   \}
+468   \textcolor{keywordflow}{else}
+469     \hyperlink{namespacerobotis__manipulator_1_1log_a6a84cb5481107ad244344093086fb557}{log::error}(\textcolor{stringliteral}{"[makeCustomTrajectory] Wrong way point type."});
+470 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrobotis__manipulator_1_1_trajectory_af9e0f7972639f216f9ee5b31a0032218_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}!make\+Joint\+Trajectory@{make\+Joint\+Trajectory}}
+\index{make\+Joint\+Trajectory@{make\+Joint\+Trajectory}!robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}}
+\subsubsection[{\texorpdfstring{make\+Joint\+Trajectory(\+Joint\+Waypoint start\+\_\+way\+\_\+point, Joint\+Waypoint goal\+\_\+way\+\_\+point)}{makeJointTrajectory(JointWaypoint start_way_point, JointWaypoint goal_way_point)}}]{\setlength{\rightskip}{0pt plus 5cm}void Trajectory\+::make\+Joint\+Trajectory (
+\begin{DoxyParamCaption}
+\item[{{\bf Joint\+Waypoint}}]{start\+\_\+way\+\_\+point, }
+\item[{{\bf Joint\+Waypoint}}]{goal\+\_\+way\+\_\+point}
+\end{DoxyParamCaption}
+)}\hypertarget{classrobotis__manipulator_1_1_trajectory_a2cd72b326825ebcda3bdf2d52389e30f}{}\label{classrobotis__manipulator_1_1_trajectory_a2cd72b326825ebcda3bdf2d52389e30f}
+
+
+make\+Joint\+Trajectory 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\+\_\+way\+\_\+point} & \\
+\hline
+{\em goal\+\_\+way\+\_\+point} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 440 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+cpp.
+
+
+\begin{DoxyCode}
+441 \{
+442   \hyperlink{classrobotis__manipulator_1_1_trajectory_a3d59b0625d5d7033d42fb4b5ee64ba1b}{joint\_}.\hyperlink{classrobotis__manipulator_1_1_joint_trajectory_a27165ae6c8bc5ffd3d431ac03c77cddb}{makeJointTrajectory}(\hyperlink{classrobotis__manipulator_1_1_trajectory_ab6bc1ea3ef5611ddf84667040bf47ceb}{trajectory\_time\_}.
+      \hyperlink{structrobotis__manipulator_1_1_time_af1ee3f302af9a5fb1201124a89a9f4c0}{total\_move\_time}, start\_way\_point, goal\_way\_point);
+443 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrobotis__manipulator_1_1_trajectory_a2cd72b326825ebcda3bdf2d52389e30f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}!make\+Task\+Trajectory@{make\+Task\+Trajectory}}
+\index{make\+Task\+Trajectory@{make\+Task\+Trajectory}!robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}}
+\subsubsection[{\texorpdfstring{make\+Task\+Trajectory(\+Task\+Waypoint start\+\_\+way\+\_\+point, Task\+Waypoint goal\+\_\+way\+\_\+point)}{makeTaskTrajectory(TaskWaypoint start_way_point, TaskWaypoint goal_way_point)}}]{\setlength{\rightskip}{0pt plus 5cm}void Trajectory\+::make\+Task\+Trajectory (
+\begin{DoxyParamCaption}
+\item[{{\bf Task\+Waypoint}}]{start\+\_\+way\+\_\+point, }
+\item[{{\bf Task\+Waypoint}}]{goal\+\_\+way\+\_\+point}
+\end{DoxyParamCaption}
+)}\hypertarget{classrobotis__manipulator_1_1_trajectory_a5d93fd05d5c8faa50286fc9b2c662744}{}\label{classrobotis__manipulator_1_1_trajectory_a5d93fd05d5c8faa50286fc9b2c662744}
+
+
+make\+Task\+Trajectory 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\+\_\+way\+\_\+point} & \\
+\hline
+{\em goal\+\_\+way\+\_\+point} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 445 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+cpp.
+
+
+\begin{DoxyCode}
+446 \{
+447   \hyperlink{classrobotis__manipulator_1_1_trajectory_a15902dd84985ac133318a1ac58eae093}{task\_}.\hyperlink{classrobotis__manipulator_1_1_task_trajectory_a29e0ef8260a659d2ddbda835777690bc}{makeTaskTrajectory}(\hyperlink{classrobotis__manipulator_1_1_trajectory_ab6bc1ea3ef5611ddf84667040bf47ceb}{trajectory\_time\_}.
+      \hyperlink{structrobotis__manipulator_1_1_time_af1ee3f302af9a5fb1201124a89a9f4c0}{total\_move\_time}, start\_way\_point, goal\_way\_point);
+448 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrobotis__manipulator_1_1_trajectory_a5d93fd05d5c8faa50286fc9b2c662744_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}!remove\+Waypoint\+Dynamic\+Data@{remove\+Waypoint\+Dynamic\+Data}}
+\index{remove\+Waypoint\+Dynamic\+Data@{remove\+Waypoint\+Dynamic\+Data}!robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}}
+\subsubsection[{\texorpdfstring{remove\+Waypoint\+Dynamic\+Data(\+Joint\+Waypoint value)}{removeWaypointDynamicData(JointWaypoint value)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Joint\+Waypoint} Trajectory\+::remove\+Waypoint\+Dynamic\+Data (
+\begin{DoxyParamCaption}
+\item[{{\bf Joint\+Waypoint}}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{classrobotis__manipulator_1_1_trajectory_a3e05d461f6bdf874a58a6a35ff6ce351}{}\label{classrobotis__manipulator_1_1_trajectory_a3e05d461f6bdf874a58a6a35ff6ce351}
+
+
+remove\+Waypoint\+Dynamic\+Data 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 405 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+cpp.
+
+
+\begin{DoxyCode}
+406 \{
+407   \textcolor{keywordflow}{for}(uint32\_t index =0; index < value.size(); index++)
+408   \{
+409     value.at(index).velocity = 0.0;
+410     value.at(index).acceleration = 0.0;
+411     value.at(index).effort = 0.0;
+412   \}
+413   \textcolor{keywordflow}{return} value;
+414 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrobotis__manipulator_1_1_trajectory_a3e05d461f6bdf874a58a6a35ff6ce351_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}!remove\+Waypoint\+Dynamic\+Data@{remove\+Waypoint\+Dynamic\+Data}}
+\index{remove\+Waypoint\+Dynamic\+Data@{remove\+Waypoint\+Dynamic\+Data}!robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}}
+\subsubsection[{\texorpdfstring{remove\+Waypoint\+Dynamic\+Data(\+Task\+Waypoint value)}{removeWaypointDynamicData(TaskWaypoint value)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Task\+Waypoint} Trajectory\+::remove\+Waypoint\+Dynamic\+Data (
+\begin{DoxyParamCaption}
+\item[{{\bf Task\+Waypoint}}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{classrobotis__manipulator_1_1_trajectory_a1740e6f16d5428083a7a3338bca70702}{}\label{classrobotis__manipulator_1_1_trajectory_a1740e6f16d5428083a7a3338bca70702}
+
+
+remove\+Waypoint\+Dynamic\+Data 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 416 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+cpp.
+
+
+\begin{DoxyCode}
+417 \{
+418   value.\hyperlink{structrobotis__manipulator_1_1_pose_a8accf10d21933e07ade2728fcccf4ae6}{dynamic}.\hyperlink{structrobotis__manipulator_1_1_dynamic_pose_a45f314d8e2d3f78a4bc9c2aa72f0badc}{linear}.\hyperlink{structrobotis__manipulator_1_1_dynamicvector_a6bbccf8316887a8da3cd6aa065f3beac}{velocity} = Eigen::Vector3d::Zero(3);
+419   value.\hyperlink{structrobotis__manipulator_1_1_pose_a8accf10d21933e07ade2728fcccf4ae6}{dynamic}.\hyperlink{structrobotis__manipulator_1_1_dynamic_pose_a45f314d8e2d3f78a4bc9c2aa72f0badc}{linear}.\hyperlink{structrobotis__manipulator_1_1_dynamicvector_afc83eba2d67af4c23150a08824f0f01e}{acceleration} = Eigen::Vector3d::Zero(3);
+420   value.\hyperlink{structrobotis__manipulator_1_1_pose_a8accf10d21933e07ade2728fcccf4ae6}{dynamic}.\hyperlink{structrobotis__manipulator_1_1_dynamic_pose_a424459b0d1108f1e65594f5d193cbae6}{angular}.\hyperlink{structrobotis__manipulator_1_1_dynamicvector_a6bbccf8316887a8da3cd6aa065f3beac}{velocity} = Eigen::Vector3d::Zero(3);
+421   value.\hyperlink{structrobotis__manipulator_1_1_pose_a8accf10d21933e07ade2728fcccf4ae6}{dynamic}.\hyperlink{structrobotis__manipulator_1_1_dynamic_pose_a424459b0d1108f1e65594f5d193cbae6}{angular}.\hyperlink{structrobotis__manipulator_1_1_dynamicvector_afc83eba2d67af4c23150a08824f0f01e}{acceleration} = Eigen::Vector3d::Zero(3);
+422   \textcolor{keywordflow}{return} value;
+423 \}
+\end{DoxyCode}
+\index{robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}!set\+Custom\+Trajectory\+Option@{set\+Custom\+Trajectory\+Option}}
+\index{set\+Custom\+Trajectory\+Option@{set\+Custom\+Trajectory\+Option}!robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}}
+\subsubsection[{\texorpdfstring{set\+Custom\+Trajectory\+Option(\+Name trajectory\+\_\+name, const void $\ast$arg)}{setCustomTrajectoryOption(Name trajectory_name, const void *arg)}}]{\setlength{\rightskip}{0pt plus 5cm}void Trajectory\+::set\+Custom\+Trajectory\+Option (
+\begin{DoxyParamCaption}
+\item[{{\bf Name}}]{trajectory\+\_\+name, }
+\item[{const void $\ast$}]{arg}
+\end{DoxyParamCaption}
+)}\hypertarget{classrobotis__manipulator_1_1_trajectory_a9376519929c9ac310590f92784950ed3}{}\label{classrobotis__manipulator_1_1_trajectory_a9376519929c9ac310590f92784950ed3}
+
+
+set\+Custom\+Trajectory\+Option 
+
+
+\begin{DoxyParams}{Parameters}
+{\em trajectory\+\_\+name} & \\
+\hline
+{\em arg} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 346 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+cpp.
+
+
+\begin{DoxyCode}
+347 \{
+348   \textcolor{keywordflow}{if}(\hyperlink{classrobotis__manipulator_1_1_trajectory_a4424c07ba6cdfb08ca84fff0e2284f67}{cus\_joint\_}.find(trajectory\_name) != \hyperlink{classrobotis__manipulator_1_1_trajectory_a4424c07ba6cdfb08ca84fff0e2284f67}{cus\_joint\_}.end())
+349     \hyperlink{classrobotis__manipulator_1_1_trajectory_a4424c07ba6cdfb08ca84fff0e2284f67}{cus\_joint\_}.at(trajectory\_name)->setOption(arg);
+350   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(\hyperlink{classrobotis__manipulator_1_1_trajectory_a1b02b691bf591629f4abf8478c437216}{cus\_task\_}.find(trajectory\_name) != \hyperlink{classrobotis__manipulator_1_1_trajectory_a1b02b691bf591629f4abf8478c437216}{cus\_task\_}.end())
+351     \hyperlink{classrobotis__manipulator_1_1_trajectory_a1b02b691bf591629f4abf8478c437216}{cus\_task\_}.at(trajectory\_name)->setOption(arg);
+352 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrobotis__manipulator_1_1_trajectory_a9376519929c9ac310590f92784950ed3_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}!set\+Manipulator@{set\+Manipulator}}
+\index{set\+Manipulator@{set\+Manipulator}!robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}}
+\subsubsection[{\texorpdfstring{set\+Manipulator(\+Manipulator manipulator)}{setManipulator(Manipulator manipulator)}}]{\setlength{\rightskip}{0pt plus 5cm}void Trajectory\+::set\+Manipulator (
+\begin{DoxyParamCaption}
+\item[{{\bf Manipulator}}]{manipulator}
+\end{DoxyParamCaption}
+)}\hypertarget{classrobotis__manipulator_1_1_trajectory_a19b2f886aff8fcb4bef369f2a8e0fac0}{}\label{classrobotis__manipulator_1_1_trajectory_a19b2f886aff8fcb4bef369f2a8e0fac0}
+
+
+set\+Manipulator 
+
+
+\begin{DoxyParams}{Parameters}
+{\em manipulator} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 306 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+cpp.
+
+
+\begin{DoxyCode}
+307 \{
+308   \hyperlink{classrobotis__manipulator_1_1_trajectory_acd9fd9ae6cc065a10d9d438cda1081de}{manipulator\_}= manipulator;
+309 \}
+\end{DoxyCode}
+\index{robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}!set\+Move\+Time@{set\+Move\+Time}}
+\index{set\+Move\+Time@{set\+Move\+Time}!robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}}
+\subsubsection[{\texorpdfstring{set\+Move\+Time(double move\+\_\+time)}{setMoveTime(double move_time)}}]{\setlength{\rightskip}{0pt plus 5cm}void Trajectory\+::set\+Move\+Time (
+\begin{DoxyParamCaption}
+\item[{double}]{move\+\_\+time}
+\end{DoxyParamCaption}
+)}\hypertarget{classrobotis__manipulator_1_1_trajectory_a0c400f1108635495fe7fc6cdae8bc8bb}{}\label{classrobotis__manipulator_1_1_trajectory_a0c400f1108635495fe7fc6cdae8bc8bb}
+
+
+set\+Move\+Time 
+
+
+\begin{DoxyParams}{Parameters}
+{\em move\+\_\+time} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 276 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+cpp.
+
+
+\begin{DoxyCode}
+277 \{
+278   \hyperlink{classrobotis__manipulator_1_1_trajectory_ab6bc1ea3ef5611ddf84667040bf47ceb}{trajectory\_time\_}.\hyperlink{structrobotis__manipulator_1_1_time_af1ee3f302af9a5fb1201124a89a9f4c0}{total\_move\_time} = move\_time;
+279 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrobotis__manipulator_1_1_trajectory_a0c400f1108635495fe7fc6cdae8bc8bb_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}!set\+Present\+Control\+Tool\+Name@{set\+Present\+Control\+Tool\+Name}}
+\index{set\+Present\+Control\+Tool\+Name@{set\+Present\+Control\+Tool\+Name}!robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}}
+\subsubsection[{\texorpdfstring{set\+Present\+Control\+Tool\+Name(\+Name present\+\_\+control\+\_\+tool\+\_\+name)}{setPresentControlToolName(Name present_control_tool_name)}}]{\setlength{\rightskip}{0pt plus 5cm}void Trajectory\+::set\+Present\+Control\+Tool\+Name (
+\begin{DoxyParamCaption}
+\item[{{\bf Name}}]{present\+\_\+control\+\_\+tool\+\_\+name}
+\end{DoxyParamCaption}
+)}\hypertarget{classrobotis__manipulator_1_1_trajectory_a6ffae7998c29d372196b83ed63eb0540}{}\label{classrobotis__manipulator_1_1_trajectory_a6ffae7998c29d372196b83ed63eb0540}
+
+
+set\+Present\+Control\+Tool\+Name 
+
+
+\begin{DoxyParams}{Parameters}
+{\em present\+\_\+control\+\_\+tool\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 354 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+cpp.
+
+
+\begin{DoxyCode}
+355 \{
+356   \hyperlink{classrobotis__manipulator_1_1_trajectory_a497b1c21424ec3a0476cf4c96a951223}{present\_control\_tool\_name\_} = present\_control\_tool\_name;
+357 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrobotis__manipulator_1_1_trajectory_a6ffae7998c29d372196b83ed63eb0540_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}!set\+Present\+Joint\+Waypoint@{set\+Present\+Joint\+Waypoint}}
+\index{set\+Present\+Joint\+Waypoint@{set\+Present\+Joint\+Waypoint}!robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}}
+\subsubsection[{\texorpdfstring{set\+Present\+Joint\+Waypoint(\+Joint\+Waypoint joint\+\_\+value\+\_\+vector)}{setPresentJointWaypoint(JointWaypoint joint_value_vector)}}]{\setlength{\rightskip}{0pt plus 5cm}void Trajectory\+::set\+Present\+Joint\+Waypoint (
+\begin{DoxyParamCaption}
+\item[{{\bf Joint\+Waypoint}}]{joint\+\_\+value\+\_\+vector}
+\end{DoxyParamCaption}
+)}\hypertarget{classrobotis__manipulator_1_1_trajectory_a58b1d4fb60f7e3ed9150d312766debc1}{}\label{classrobotis__manipulator_1_1_trajectory_a58b1d4fb60f7e3ed9150d312766debc1}
+
+
+set\+Present\+Joint\+Waypoint 
+
+
+\begin{DoxyParams}{Parameters}
+{\em joint\+\_\+value\+\_\+vector} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 385 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+cpp.
+
+
+\begin{DoxyCode}
+386 \{
+387   \hyperlink{classrobotis__manipulator_1_1_trajectory_acd9fd9ae6cc065a10d9d438cda1081de}{manipulator\_}.\hyperlink{classrobotis__manipulator_1_1_manipulator_af42c8e7d8b0a1fe505832d632348e804}{setAllActiveJointValue}(joint\_value\_vector);
+388 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrobotis__manipulator_1_1_trajectory_a58b1d4fb60f7e3ed9150d312766debc1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}!set\+Present\+Task\+Waypoint@{set\+Present\+Task\+Waypoint}}
+\index{set\+Present\+Task\+Waypoint@{set\+Present\+Task\+Waypoint}!robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}}
+\subsubsection[{\texorpdfstring{set\+Present\+Task\+Waypoint(\+Name tool\+\_\+name, Task\+Waypoint tool\+\_\+position\+\_\+value\+\_\+vector)}{setPresentTaskWaypoint(Name tool_name, TaskWaypoint tool_position_value_vector)}}]{\setlength{\rightskip}{0pt plus 5cm}void Trajectory\+::set\+Present\+Task\+Waypoint (
+\begin{DoxyParamCaption}
+\item[{{\bf Name}}]{tool\+\_\+name, }
+\item[{{\bf Task\+Waypoint}}]{tool\+\_\+position\+\_\+value\+\_\+vector}
+\end{DoxyParamCaption}
+)}\hypertarget{classrobotis__manipulator_1_1_trajectory_a043c122ac281c223eb73303255981d17}{}\label{classrobotis__manipulator_1_1_trajectory_a043c122ac281c223eb73303255981d17}
+
+
+set\+Present\+Task\+Waypoint 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tool\+\_\+name} & \\
+\hline
+{\em tool\+\_\+position\+\_\+value\+\_\+vector} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 390 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+cpp.
+
+
+\begin{DoxyCode}
+391 \{
+392   \hyperlink{classrobotis__manipulator_1_1_trajectory_acd9fd9ae6cc065a10d9d438cda1081de}{manipulator\_}.\hyperlink{classrobotis__manipulator_1_1_manipulator_ad070b3aba379f97459e2c784626d05a4}{setComponentPoseFromWorld}(tool\_name, tool\_value\_vector)
+      ;
+393 \}
+\end{DoxyCode}
+\index{robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}!set\+Present\+Time@{set\+Present\+Time}}
+\index{set\+Present\+Time@{set\+Present\+Time}!robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}}
+\subsubsection[{\texorpdfstring{set\+Present\+Time(double present\+\_\+time)}{setPresentTime(double present_time)}}]{\setlength{\rightskip}{0pt plus 5cm}void Trajectory\+::set\+Present\+Time (
+\begin{DoxyParamCaption}
+\item[{double}]{present\+\_\+time}
+\end{DoxyParamCaption}
+)}\hypertarget{classrobotis__manipulator_1_1_trajectory_a187822acb94ca96938ebc06019ffc73e}{}\label{classrobotis__manipulator_1_1_trajectory_a187822acb94ca96938ebc06019ffc73e}
+
+
+set\+Present\+Time 
+
+
+\begin{DoxyParams}{Parameters}
+{\em present\+\_\+time} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 281 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+cpp.
+
+
+\begin{DoxyCode}
+282 \{
+283   \hyperlink{classrobotis__manipulator_1_1_trajectory_ab6bc1ea3ef5611ddf84667040bf47ceb}{trajectory\_time\_}.\hyperlink{structrobotis__manipulator_1_1_time_ad2cd4e29dff6c5491cc57abdfe1f8655}{present\_time} = present\_time;
+284 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrobotis__manipulator_1_1_trajectory_a187822acb94ca96938ebc06019ffc73e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}!set\+Start\+Time@{set\+Start\+Time}}
+\index{set\+Start\+Time@{set\+Start\+Time}!robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}}
+\subsubsection[{\texorpdfstring{set\+Start\+Time(double start\+\_\+time)}{setStartTime(double start_time)}}]{\setlength{\rightskip}{0pt plus 5cm}void Trajectory\+::set\+Start\+Time (
+\begin{DoxyParamCaption}
+\item[{double}]{start\+\_\+time}
+\end{DoxyParamCaption}
+)}\hypertarget{classrobotis__manipulator_1_1_trajectory_a1c964bc02b44d87e1f7d02c446ab0f5d}{}\label{classrobotis__manipulator_1_1_trajectory_a1c964bc02b44d87e1f7d02c446ab0f5d}
+
+
+set\+Start\+Time 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\+\_\+time} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 291 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+cpp.
+
+
+\begin{DoxyCode}
+292 \{
+293   \hyperlink{classrobotis__manipulator_1_1_trajectory_ab6bc1ea3ef5611ddf84667040bf47ceb}{trajectory\_time\_}.\hyperlink{structrobotis__manipulator_1_1_time_a9381eb504cea1e8405182cfc7e9abe13}{start\_time} = start\_time;
+294 \}
+\end{DoxyCode}
+\index{robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}!set\+Start\+Time\+To\+Present\+Time@{set\+Start\+Time\+To\+Present\+Time}}
+\index{set\+Start\+Time\+To\+Present\+Time@{set\+Start\+Time\+To\+Present\+Time}!robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}}
+\subsubsection[{\texorpdfstring{set\+Start\+Time\+To\+Present\+Time()}{setStartTimeToPresentTime()}}]{\setlength{\rightskip}{0pt plus 5cm}void Trajectory\+::set\+Start\+Time\+To\+Present\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrobotis__manipulator_1_1_trajectory_ad11707f44e3b0cefdb5f60b6c4f3ab77}{}\label{classrobotis__manipulator_1_1_trajectory_ad11707f44e3b0cefdb5f60b6c4f3ab77}
+
+
+set\+Start\+Time\+To\+Present\+Time 
+
+
+
+Definition at line 286 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+cpp.
+
+
+\begin{DoxyCode}
+287 \{
+288   \hyperlink{classrobotis__manipulator_1_1_trajectory_ab6bc1ea3ef5611ddf84667040bf47ceb}{trajectory\_time\_}.\hyperlink{structrobotis__manipulator_1_1_time_a9381eb504cea1e8405182cfc7e9abe13}{start\_time} = \hyperlink{classrobotis__manipulator_1_1_trajectory_ab6bc1ea3ef5611ddf84667040bf47ceb}{trajectory\_time\_}.
+      \hyperlink{structrobotis__manipulator_1_1_time_ad2cd4e29dff6c5491cc57abdfe1f8655}{present\_time};
+289 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrobotis__manipulator_1_1_trajectory_ad11707f44e3b0cefdb5f60b6c4f3ab77_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}!set\+Tool\+Goal\+Position@{set\+Tool\+Goal\+Position}}
+\index{set\+Tool\+Goal\+Position@{set\+Tool\+Goal\+Position}!robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}}
+\subsubsection[{\texorpdfstring{set\+Tool\+Goal\+Position(\+Name tool\+\_\+name, double tool\+\_\+goal\+\_\+position)}{setToolGoalPosition(Name tool_name, double tool_goal_position)}}]{\setlength{\rightskip}{0pt plus 5cm}void Trajectory\+::set\+Tool\+Goal\+Position (
+\begin{DoxyParamCaption}
+\item[{{\bf Name}}]{tool\+\_\+name, }
+\item[{double}]{tool\+\_\+goal\+\_\+position}
+\end{DoxyParamCaption}
+)}\hypertarget{classrobotis__manipulator_1_1_trajectory_a511789dcd0003c3afaacbf7f58f56ec2}{}\label{classrobotis__manipulator_1_1_trajectory_a511789dcd0003c3afaacbf7f58f56ec2}
+
+
+set\+Tool\+Goal\+Position 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tool\+\_\+name} & \\
+\hline
+{\em tool\+\_\+goal\+\_\+position} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 473 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+cpp.
+
+
+\begin{DoxyCode}
+474 \{
+475   \hyperlink{classrobotis__manipulator_1_1_trajectory_acd9fd9ae6cc065a10d9d438cda1081de}{manipulator\_}.\hyperlink{classrobotis__manipulator_1_1_manipulator_acedaab5099be0997bb2aae307c81fa80}{setJointPosition}(tool\_name, tool\_goal\_position);
+476 \}
+\end{DoxyCode}
+\index{robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}!set\+Tool\+Goal\+Value@{set\+Tool\+Goal\+Value}}
+\index{set\+Tool\+Goal\+Value@{set\+Tool\+Goal\+Value}!robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}}
+\subsubsection[{\texorpdfstring{set\+Tool\+Goal\+Value(\+Name tool\+\_\+name, Joint\+Value tool\+\_\+goal\+\_\+value)}{setToolGoalValue(Name tool_name, JointValue tool_goal_value)}}]{\setlength{\rightskip}{0pt plus 5cm}void Trajectory\+::set\+Tool\+Goal\+Value (
+\begin{DoxyParamCaption}
+\item[{{\bf Name}}]{tool\+\_\+name, }
+\item[{{\bf Joint\+Value}}]{tool\+\_\+goal\+\_\+value}
+\end{DoxyParamCaption}
+)}\hypertarget{classrobotis__manipulator_1_1_trajectory_af02155337e38fdd5fc4c09e7ee066851}{}\label{classrobotis__manipulator_1_1_trajectory_af02155337e38fdd5fc4c09e7ee066851}
+
+
+set\+Tool\+Goal\+Value 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tool\+\_\+name} & \\
+\hline
+{\em tool\+\_\+goal\+\_\+value} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 479 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+cpp.
+
+
+\begin{DoxyCode}
+480 \{
+481   \hyperlink{classrobotis__manipulator_1_1_trajectory_acd9fd9ae6cc065a10d9d438cda1081de}{manipulator\_}.\hyperlink{classrobotis__manipulator_1_1_manipulator_aa740b17551040520851ec8dc1d619bfe}{setJointValue}(tool\_name, tool\_goal\_value);
+482 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrobotis__manipulator_1_1_trajectory_af02155337e38fdd5fc4c09e7ee066851_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}!set\+Trajectory\+Type@{set\+Trajectory\+Type}}
+\index{set\+Trajectory\+Type@{set\+Trajectory\+Type}!robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}}
+\subsubsection[{\texorpdfstring{set\+Trajectory\+Type(\+Trajectory\+Type trajectory\+\_\+type)}{setTrajectoryType(TrajectoryType trajectory_type)}}]{\setlength{\rightskip}{0pt plus 5cm}void Trajectory\+::set\+Trajectory\+Type (
+\begin{DoxyParamCaption}
+\item[{{\bf Trajectory\+Type}}]{trajectory\+\_\+type}
+\end{DoxyParamCaption}
+)}\hypertarget{classrobotis__manipulator_1_1_trajectory_ae08c22d6ab0608b4e1ec7e0996caf96e}{}\label{classrobotis__manipulator_1_1_trajectory_ae08c22d6ab0608b4e1ec7e0996caf96e}
+
+
+set\+Trajectory\+Type 
+
+
+\begin{DoxyParams}{Parameters}
+{\em trajectory\+\_\+type} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 427 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+cpp.
+
+
+\begin{DoxyCode}
+428 \{
+429   \hyperlink{classrobotis__manipulator_1_1_trajectory_ad21a6583cfce56cc25ea8469d77293ec}{trajectory\_type\_} = trajectory\_type;
+430 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrobotis__manipulator_1_1_trajectory_ae08c22d6ab0608b4e1ec7e0996caf96e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}!update\+Present\+Waypoint@{update\+Present\+Waypoint}}
+\index{update\+Present\+Waypoint@{update\+Present\+Waypoint}!robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}}
+\subsubsection[{\texorpdfstring{update\+Present\+Waypoint(\+Kinematics $\ast$kinematics)}{updatePresentWaypoint(Kinematics *kinematics)}}]{\setlength{\rightskip}{0pt plus 5cm}void Trajectory\+::update\+Present\+Waypoint (
+\begin{DoxyParamCaption}
+\item[{{\bf Kinematics} $\ast$}]{kinematics}
+\end{DoxyParamCaption}
+)}\hypertarget{classrobotis__manipulator_1_1_trajectory_a05e95f1473723592130f63321664fb0c}{}\label{classrobotis__manipulator_1_1_trajectory_a05e95f1473723592130f63321664fb0c}
+
+
+update\+Present\+Waypoint 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kinematics} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 379 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+cpp.
+
+
+\begin{DoxyCode}
+380 \{
+381   \textcolor{comment}{//kinematics}
+382   kinematics->\hyperlink{classrobotis__manipulator_1_1_kinematics_adfdd3727052c27d12e3fc2209c025317}{solveForwardKinematics}(&\hyperlink{classrobotis__manipulator_1_1_trajectory_acd9fd9ae6cc065a10d9d438cda1081de}{manipulator\_});
+383 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrobotis__manipulator_1_1_trajectory_a05e95f1473723592130f63321664fb0c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrobotis__manipulator_1_1_trajectory_a05e95f1473723592130f63321664fb0c_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}!cus\+\_\+joint\+\_\+@{cus\+\_\+joint\+\_\+}}
+\index{cus\+\_\+joint\+\_\+@{cus\+\_\+joint\+\_\+}!robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}}
+\subsubsection[{\texorpdfstring{cus\+\_\+joint\+\_\+}{cus_joint_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::map$<${\bf Name}, {\bf Custom\+Joint\+Trajectory} $\ast$$>$ robotis\+\_\+manipulator\+::\+Trajectory\+::cus\+\_\+joint\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrobotis__manipulator_1_1_trajectory_a4424c07ba6cdfb08ca84fff0e2284f67}{}\label{classrobotis__manipulator_1_1_trajectory_a4424c07ba6cdfb08ca84fff0e2284f67}
+
+
+Definition at line 167 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+h.
+
+\index{robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}!cus\+\_\+task\+\_\+@{cus\+\_\+task\+\_\+}}
+\index{cus\+\_\+task\+\_\+@{cus\+\_\+task\+\_\+}!robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}}
+\subsubsection[{\texorpdfstring{cus\+\_\+task\+\_\+}{cus_task_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::map$<${\bf Name}, {\bf Custom\+Task\+Trajectory} $\ast$$>$ robotis\+\_\+manipulator\+::\+Trajectory\+::cus\+\_\+task\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrobotis__manipulator_1_1_trajectory_a1b02b691bf591629f4abf8478c437216}{}\label{classrobotis__manipulator_1_1_trajectory_a1b02b691bf591629f4abf8478c437216}
+
+
+Definition at line 168 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+h.
+
+\index{robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}!joint\+\_\+@{joint\+\_\+}}
+\index{joint\+\_\+@{joint\+\_\+}!robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}}
+\subsubsection[{\texorpdfstring{joint\+\_\+}{joint_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Joint\+Trajectory} robotis\+\_\+manipulator\+::\+Trajectory\+::joint\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrobotis__manipulator_1_1_trajectory_a3d59b0625d5d7033d42fb4b5ee64ba1b}{}\label{classrobotis__manipulator_1_1_trajectory_a3d59b0625d5d7033d42fb4b5ee64ba1b}
+
+
+Definition at line 165 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+h.
+
+\index{robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}!manipulator\+\_\+@{manipulator\+\_\+}}
+\index{manipulator\+\_\+@{manipulator\+\_\+}!robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}}
+\subsubsection[{\texorpdfstring{manipulator\+\_\+}{manipulator_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Manipulator} robotis\+\_\+manipulator\+::\+Trajectory\+::manipulator\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrobotis__manipulator_1_1_trajectory_acd9fd9ae6cc065a10d9d438cda1081de}{}\label{classrobotis__manipulator_1_1_trajectory_acd9fd9ae6cc065a10d9d438cda1081de}
+
+
+Definition at line 163 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+h.
+
+\index{robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}!present\+\_\+control\+\_\+tool\+\_\+name\+\_\+@{present\+\_\+control\+\_\+tool\+\_\+name\+\_\+}}
+\index{present\+\_\+control\+\_\+tool\+\_\+name\+\_\+@{present\+\_\+control\+\_\+tool\+\_\+name\+\_\+}!robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}}
+\subsubsection[{\texorpdfstring{present\+\_\+control\+\_\+tool\+\_\+name\+\_\+}{present_control_tool_name_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Name} robotis\+\_\+manipulator\+::\+Trajectory\+::present\+\_\+control\+\_\+tool\+\_\+name\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrobotis__manipulator_1_1_trajectory_a497b1c21424ec3a0476cf4c96a951223}{}\label{classrobotis__manipulator_1_1_trajectory_a497b1c21424ec3a0476cf4c96a951223}
+
+
+Definition at line 171 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+h.
+
+\index{robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}!present\+\_\+custom\+\_\+trajectory\+\_\+name\+\_\+@{present\+\_\+custom\+\_\+trajectory\+\_\+name\+\_\+}}
+\index{present\+\_\+custom\+\_\+trajectory\+\_\+name\+\_\+@{present\+\_\+custom\+\_\+trajectory\+\_\+name\+\_\+}!robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}}
+\subsubsection[{\texorpdfstring{present\+\_\+custom\+\_\+trajectory\+\_\+name\+\_\+}{present_custom_trajectory_name_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Name} robotis\+\_\+manipulator\+::\+Trajectory\+::present\+\_\+custom\+\_\+trajectory\+\_\+name\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrobotis__manipulator_1_1_trajectory_aaeb1b7b142b7dd04ca7410e758549254}{}\label{classrobotis__manipulator_1_1_trajectory_aaeb1b7b142b7dd04ca7410e758549254}
+
+
+Definition at line 170 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+h.
+
+\index{robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}!task\+\_\+@{task\+\_\+}}
+\index{task\+\_\+@{task\+\_\+}!robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}}
+\subsubsection[{\texorpdfstring{task\+\_\+}{task_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Task\+Trajectory} robotis\+\_\+manipulator\+::\+Trajectory\+::task\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrobotis__manipulator_1_1_trajectory_a15902dd84985ac133318a1ac58eae093}{}\label{classrobotis__manipulator_1_1_trajectory_a15902dd84985ac133318a1ac58eae093}
+
+
+Definition at line 166 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+h.
+
+\index{robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}!trajectory\+\_\+time\+\_\+@{trajectory\+\_\+time\+\_\+}}
+\index{trajectory\+\_\+time\+\_\+@{trajectory\+\_\+time\+\_\+}!robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}}
+\subsubsection[{\texorpdfstring{trajectory\+\_\+time\+\_\+}{trajectory_time_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Time} robotis\+\_\+manipulator\+::\+Trajectory\+::trajectory\+\_\+time\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrobotis__manipulator_1_1_trajectory_ab6bc1ea3ef5611ddf84667040bf47ceb}{}\label{classrobotis__manipulator_1_1_trajectory_ab6bc1ea3ef5611ddf84667040bf47ceb}
+
+
+Definition at line 162 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+h.
+
+\index{robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}!trajectory\+\_\+type\+\_\+@{trajectory\+\_\+type\+\_\+}}
+\index{trajectory\+\_\+type\+\_\+@{trajectory\+\_\+type\+\_\+}!robotis\+\_\+manipulator\+::\+Trajectory@{robotis\+\_\+manipulator\+::\+Trajectory}}
+\subsubsection[{\texorpdfstring{trajectory\+\_\+type\+\_\+}{trajectory_type_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Trajectory\+Type} robotis\+\_\+manipulator\+::\+Trajectory\+::trajectory\+\_\+type\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrobotis__manipulator_1_1_trajectory_ad21a6583cfce56cc25ea8469d77293ec}{}\label{classrobotis__manipulator_1_1_trajectory_ad21a6583cfce56cc25ea8469d77293ec}
+
+
+Definition at line 161 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/robotis\+\_\+manipulator/\hyperlink{robotis__manipulator__trajectory__generator_8h}{robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+h}\item 
+src/robotis\+\_\+manipulator/\hyperlink{robotis__manipulator__trajectory__generator_8cpp}{robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+cpp}\end{DoxyCompactItemize}

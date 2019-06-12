@@ -44,6 +44,10 @@ You will need the USB cable to download the programs.
 This is included in ROBOTIS DREAM Level 1.
 {: .notice}
 
+中文用户 (DREAM, STEM, MINI等产品) 请参考中文手册.  
+[下载示例文件]{: .popup}  
+{: .notice--warning}
+
 |                                      Robot                                      |     TASK Code     |
 |:-------------------------------------------------------------------------------:|:-----------------:|
 |       1. Music Box<br />![](/assets/images/edu/dream/dream1-3_orgol.jpg)        | [Download][ex_01] |
@@ -78,3 +82,4 @@ This is included in ROBOTIS DREAM Level 1.
 [ex_10]: http://www.robotis.com/service/download.php?no=1560
 [ex_11]: http://www.robotis.com/service/download.php?no=1556
 [ex_12]: http://www.robotis.com/service/download.php?no=1549
+[下载示例文件]: /docs/en/popup/dream1-3_example_cn/

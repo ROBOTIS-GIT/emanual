@@ -5,5 +5,5 @@
   - Embedded board for ROS: OpenCR
   - SLAM & Navigation with TurtleBot3
   - How to program a delivery robot using ROS Java
-  - OpenManipulator simulation using MoveIt! and Gazebo
+  - OpenMANIPULATOR simulation using MoveIt! and Gazebo
 - Please refer to this book for more information on ROS, SLAM, and Navigation that are not covered in this e-manual. You can download the [pdf of this book](/docs/en/platform/turtlebot3/learn/#books).

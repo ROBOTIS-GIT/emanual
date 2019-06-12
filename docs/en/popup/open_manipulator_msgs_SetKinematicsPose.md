@@ -25,7 +25,7 @@ This service creates a trajectory in the task space.
 &emsp;&emsp; End-Effector name which is relative to the base frame
 
     * `KinematicsPose kinematics_pose`
-&emsp;&emsp; The kinematics pose of the OpenManipulator end-effector relative to the base frame.
+&emsp;&emsp; The kinematics pose of the OpenMANIPULATOR end-effector relative to the base frame.
 
     * `float64 path_time`
 &emsp;&emsp; Total time of the trajectory.

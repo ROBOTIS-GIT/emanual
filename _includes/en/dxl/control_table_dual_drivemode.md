@@ -1,11 +1,15 @@
-Drive Mode is availabe from the firmware version 38.
+{% if page.product_group=='dxl_mx2' %}Drive Mode is availabe from the firmware version 39. 
+{% endif %}
 
-|Bit|Item|Description|
-| :---: | :---: | :---: |
-|Bit 2 ~ 7|N/A|Unused, always '0'|
-|Bit 1|Master/Slave Setting<br />(Dual Joint)|Master Mode(0): Operate as a Master Dynamixel<br />Slave Mode(1): Operate as a Slave Dynamixel|
-|Bit 0|Direction of Rotation|Normal Mode(0): CCW(Positive), CW(Negative)<br />Reverse Mode(1): CCW(Negative), CW(Positive)|
+|    Bit    |                  Item                  |                                                                                                      Description                                                                                                      |
+|:---------:|:--------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| Bit 3 ~ 7 |                  N/A                   |                                                                                                  Unused, always '0'                                                                                                   |
+|   Bit 2   |         Profile configuration         | Velocity-based Profile('0') : Create a Profile based on Velocity<br />Time-based Profile('1') : Create a Profile based on time<br />※ Please refer to [Profile Velocity(112)](#profile-velocity112) for more details. |
+|   Bit 1   | Master/Slave Setting<br />(Dual Joint) |                                                            Master Mode(0): Operate as a Master Dynamixel<br />Slave Mode(1): Operate as a Slave Dynamixel                                                             |
+|   Bit 0   |         Direction of Rotation          |                                                             Normal Mode(0): CCW(Positive), CW(Negative)<br />Reverse Mode(1): CCW(Negative), CW(Positive)                                                             |
 
+**NOTE** : Time-based Profile is available from the firmware version 42.
+{: .notice}
 **NOTE** : Setting Reverse mode('1') for Direction of Rotation, DYNAMIXEL will switch rotating direction.  
 Therefore the direction of Position, Velocity, Current, PWM will be affected.  
 This feature can be very useful when configuring symmetrical joint system or wheel system.

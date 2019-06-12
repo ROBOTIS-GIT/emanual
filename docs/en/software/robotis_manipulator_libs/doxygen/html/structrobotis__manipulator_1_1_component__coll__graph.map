@@ -1,0 +1,12 @@
+<map id="robotis_manipulator::Component" name="robotis_manipulator::Component">
+<area shape="rect" id="node2" href="$structrobotis__manipulator_1_1_relative.html" title="{robotis_manipulator\l::Relative\n||}" alt="" coords="300,395,435,487"/>
+<area shape="rect" id="node3" href="$structrobotis__manipulator_1_1_kinematic_pose.html" title="{robotis_manipulator\l::KinematicPose\n|+ position\l+ orientation\l|}" alt="" coords="176,197,311,303"/>
+<area shape="rect" id="node9" href="$structrobotis__manipulator_1_1_pose.html" title="{robotis_manipulator\l::Pose\n||}" alt="" coords="97,395,232,487"/>
+<area shape="rect" id="node4" href="$structrobotis__manipulator_1_1_inertia.html" title="{robotis_manipulator\l::Inertia\n|+ mass\l+ inertia_tensor\l+ center_of_mass\l|}" alt="" coords="345,189,480,311"/>
+<area shape="rect" id="node5" href="$structrobotis__manipulator_1_1_joint_constant.html" title="{robotis_manipulator\l::JointConstant\n|+ id\l+ axis\l+ coefficient\l|}" alt="" coords="459,381,593,502"/>
+<area shape="rect" id="node6" href="$structrobotis__manipulator_1_1_limit.html" title="{robotis_manipulator\l::Limit\n|+ maximum\l+ minimum\l|}" alt="" coords="504,197,639,303"/>
+<area shape="rect" id="node7" href="$structrobotis__manipulator_1_1_chaining_name.html" title="{robotis_manipulator\l::ChainingName\n|+ parent\l+ child\l|}" alt="" coords="617,388,752,495"/>
+<area shape="rect" id="node8" href="$structrobotis__manipulator_1_1_point.html" title="{robotis_manipulator\l::Point\n|+ position\l+ velocity\l+ acceleration\l+ effort\l|}" alt="" coords="776,373,911,509"/>
+<area shape="rect" id="node10" href="$structrobotis__manipulator_1_1_dynamic_pose.html" title="{robotis_manipulator\l::DynamicPose\n||}" alt="" coords="5,204,140,296"/>
+<area shape="rect" id="node11" href="$structrobotis__manipulator_1_1_dynamicvector.html" title="{robotis_manipulator\l::Dynamicvector\n|+ velocity\l+ acceleration\l|}" alt="" coords="5,5,140,112"/>
+</map>

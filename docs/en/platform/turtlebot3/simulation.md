@@ -269,8 +269,8 @@ $ rosrun map_server map_saver -f ~/map
 #### [TurtleBot3 AutoRace with Gazebo](#turtlebot3-autorace-with-gazebo)
 Go to [AutoRace with Gazebo](/docs/en/platform/turtlebot3/autonomous_driving/#autorace-with-gazebo).
 
-#### [Turtlebot3 with OpenManipulator](#turtlebot3-with-openmanipulator)
-Go to [OpenManipulator with Gazebo](/docs/en/platform/turtlebot3/manipulation/#simulation)
+#### [Turtlebot3 with OpenMANIPULATOR](#turtlebot3-with-openmanipulator)
+Go to [OpenMANIPULATOR with Gazebo](/docs/en/platform/turtlebot3/manipulation/#simulation)
 
 ### [Standalone Gazebo Plugin](#standalone-gazebo-plugin)
 

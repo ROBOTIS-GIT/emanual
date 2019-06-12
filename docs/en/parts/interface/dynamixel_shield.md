@@ -91,14 +91,13 @@ Dynamixel Shield  was created to use RC100 and Dynamixel on arduino board. We pr
 
 ## [Features](#features)
 
+- Compatible to Arduino boards
 -	Support dynamixel protocol 1.0/2.0
-- Up to 16 Dynamixels can be controlled
-
-(Typically, each motor(XL-320 or XL430-W250) consumes 0.4 ~ 0.6A of current. )
-
+- Up to 16 Dynamixels can be controlled (Typically, each motor(XL-320 or XL430-W250) consumes 0.4 ~ 0.6A of current)
 - Support SynWrite function
 - Support RC100 library
-- Serial communication using software serial library.
+- Serial communication using software serial library
+- DYNAMIXEL Shield library(v0.1.0 or above) requires DYNAMIXEL2Arduino library
 
 ## [Install Library](#install-library)
 
@@ -111,7 +110,13 @@ There are three ways to add libraries to the Arduino IDE.
 Each way is described in detail in the [Arduino Official Guide], so please refer to it if necessary.  
 Below is an example of using the Library Manager.
 
-![](/assets/images/parts/interface/dynamixel_shield/library_manager.png)
+![](/assets/images/parts/interface/dynamixel_shield/library_manager_01.png)
+
+In order to use DYNAMIXEL Shield library(v0.1.0 or above), DYNAMIXEL2Arduino library must be installed.
+
+![](/assets/images/parts/interface/dynamixel_shield/library_manager_02.png)
+
+![](/assets/images/parts/interface/dynamixel_shield/library_manager_03.png)
 
 If you have successfully installed the library, you'll be able to find several examples of DynamixelShield in the examples.
 
@@ -120,41 +125,41 @@ If you have successfully installed the library, you'll be able to find several e
 
 # [Library API](#library-api)
 
-## [Initialize Library](#initialize-library)
+## [DYNAMIXELShield(v0.1.0 or above)](#dynamixelshieldv010-or-above)
 
-Before using library, you should initialize the communication speed of com port and protocol version with begin function.
+**WARNING** : In order to use DYNAMIXEL Shield library(v0.1.0 or above), [DYNAMIXEL2Arduino library](#install-library) must be installed.
+{: .notice--warning}
 
-```c
-dxl.begin(1000000, DXL_PACKET_VER_2_0);
-```
+- [begin()]{: .popup}
+- [getPortBaud()]{: .popup}
+- [ping()]{: .popup}
+- [scan()]{: .popup}
+- [getModelNumber()]{: .popup}
+- [setID()]{: .popup}
+- [setProtocol()]{: .popup}
+- [setBaudrate()]{: .popup}
+- [torqueOn()]{: .popup}
+- [torqueOff()]{: .popup}
+- [ledOn()]{: .popup}
+- [ledOff()]{: .popup}
+- [setOperatingMode()]{: .popup}
+- [setGoalPosition()]{: .popup}
+- [getPresentPosition()]{: .popup}
+- [setGoalVelocity()]{: .popup}
+- [getPresentVelocity()]{: .popup}
+- [setGoalPWM()]{: .popup}
+- [getPresentPWM()]{: .popup}
+- [setGoalCurrent()]{: .popup}
+- [getPresentCurrent()]{: .popup}
+- [readControlTableItem()]{: .popup}
+- [writeControlTableItem()]{: .popup}
+- [syncRead()]{: .popup}
+- [syncWrite()]{: .popup}
 
-> Baud rate : 1Mbps, Protocol : Dynamixel protocol 2.0
+## [DynamixelShield(v0.0.5)](#dynamixelshieldv005)
 
-
-## [Connect Dynamixel](#connect-dynamixel)
-
-The shield library is based on the Dynamixel model and automatically refers to the address value, so you need to add the ID and model of the connected Dynamixel to know what the connected Dynamixel is.
-
--	Automatic Setup
-  ```c
-  dxl.ping();
-  ```
-
-  > Using **ping** function, automatically search from 1 to 31 and add connected Dynamixel.
-
--	Manual Setup
-  ```c
-  dxl.begin(1000000);
-  delay(1000);
-  dxl.addMotor(1, M_XL430);
-  dxl.addMotor(2, M_XL430);
-  dxl.addMotor(15, M_AX12);
-  ```
-
-  > Add Dynamixel using **addMotor** function.
-
-
-## [Available APIs](#available-apis)
+**WARNING** : This version of API is deprecated.
+{: .notice--warning}
 
 ```c
 bool begin(uint32_t baud_rate = 57600, uint8_t protocol_version = DXL_PACKET_VER_2_0);
@@ -203,4 +208,32 @@ bool syncWriteEnd(void);
 ```
 
 
+
 [Arduino Official Guide]: https://www.arduino.cc/en/Guide/Libraries
+
+[GitHub repository]: https://github.com/ROBOTIS-GIT/Dynamixel2Arduino
+[begin()]: /docs/en/popup/arduino_api/begin/
+[getPortBaud()]: /docs/en/popup/arduino_api/getPortBaud/
+[ping()]: /docs/en/popup/arduino_api/ping/
+[scan()]: /docs/en/popup/arduino_api/scan/
+[getModelNumber()]: /docs/en/popup/arduino_api/getModelNumber/
+[setID()]: /docs/en/popup/arduino_api/setID/
+[setProtocol()]: /docs/en/popup/arduino_api/setProtocol/
+[setBaudrate()]: /docs/en/popup/arduino_api/setBaudrate/
+[torqueOn()]: /docs/en/popup/arduino_api/torqueOn/
+[torqueOff()]: /docs/en/popup/arduino_api/torqueOff/
+[ledOn()]: /docs/en/popup/arduino_api/ledOn/
+[ledOff()]: /docs/en/popup/arduino_api/ledOff/
+[setOperatingMode()]: /docs/en/popup/arduino_api/setOperatingMode/
+[setGoalPosition()]: /docs/en/popup/arduino_api/setGoalPosition/
+[getPresentPosition()]: /docs/en/popup/arduino_api/getPresentPosition/
+[setGoalVelocity()]: /docs/en/popup/arduino_api/setGoalVelocity/
+[getPresentVelocity()]: /docs/en/popup/arduino_api/getPresentVelocity/
+[setGoalPWM()]: /docs/en/popup/arduino_api/setGoalPWM/
+[getPresentPWM()]: /docs/en/popup/arduino_api/getPresentPWM/
+[setGoalCurrent()]: /docs/en/popup/arduino_api/setGoalCurrent/
+[getPresentCurrent()]: /docs/en/popup/arduino_api/getPresentCurrent/
+[readControlTableItem()]: /docs/en/popup/arduino_api/readControlTableItem/
+[writeControlTableItem()]: /docs/en/popup/arduino_api/writeControlTableItem/
+[syncRead()]: /docs/en/popup/arduino_api/syncRead/
+[syncWrite()]: /docs/en/popup/arduino_api/syncWrite/

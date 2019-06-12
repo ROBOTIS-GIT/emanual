@@ -3,11 +3,11 @@ layout: archive
 lang: en
 ref: openmanipulator_pro_ros_setup
 read_time: true
-share: false
+share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_pro/ros_setup/
 sidebar:
-  title: OpenManipulator-PRO
+  title: OpenMANIPULATOR-PRO
   nav: "openmanipulator_pro"
 ---
 
@@ -15,7 +15,7 @@ sidebar:
 
 # [[ROS] Setup](#ros-setup)
 
-- The OpenManipulator ROS program is based on **Linux Ununtu 16.04** OS and **ROS Kinetic Kame**.
+- The OpenMANIPULATOR ROS program is based on **Linux Ununtu 16.04** OS and **ROS Kinetic Kame**.
 
 ## [Install Ubuntu on PC](#install-ubuntu-on-pc)
 
@@ -62,9 +62,9 @@ $ cd ~/catkin_ws/src/
 $ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git
 $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-Framework.git
 $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-Framework-msgs.git
-$ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-MANIPULATOR-H.git
+$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_pro.git
 $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-Math.git
 $ cd ~/catkin_ws && catkin_make
 ```
 
-If the catkin_make command has been completed without any errors, all the preparations for using OpenManipulator-PRO are done.
+If the catkin_make command has been completed without any errors, all the preparations for using OpenMANIPULATOR-PRO are done.

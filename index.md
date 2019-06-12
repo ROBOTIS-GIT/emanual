@@ -18,9 +18,21 @@ header:
 - New ROBOTIS Community [Forum] is available. Please checkout the [Forum] if you have any issue with ROBOTIS Products.
 
 {% capture index_notice_01 %}
-한국어 사용자는 [한글 매뉴얼](http://emanual.robotis.com/docs/kr/)을 참조하세요.  
-日本語e-manualは現時点で編集されていません。 英語版ページをご参照下さい。  
-目前, 还没有中文版. 请使用提供的Google翻译器 <img src="/assets/images/icon_google.png">.
+- 한국어 사용자는 [한글 매뉴얼](http://emanual.robotis.com/docs/kr/)을 참조하세요.  
+- 日本語e-manualは現時点で編集されていません。 英語版ページをご参照下さい。  
+- 目前, 还没有中文版. 请使用提供的Google翻译器 <img src="/assets/images/icon_google.png">.
+  - 中文用户 (DREAM, STEM, MINI等产品) 请参考中文手册.
+  - [DREAM Lv2 下载示例文件]{: .popup}
+  - [DREAM Lv3 下载示例文件]{: .popup}
+  - [DREAM Lv4 下载示例文件]{: .popup}
+  - [STEM 下载示例文件]{: .popup}
+  - [MINI 下载]{: .popup}
+
+[DREAM Lv2 下载示例文件]: /docs/en/popup/dream1-2_example_cn/
+[DREAM Lv3 下载示例文件]: /docs/en/popup/dream1-3_example_cn/
+[DREAM Lv4 下载示例文件]: /docs/en/popup/dream1-4_example_cn/
+[STEM 下载示例文件]: /docs/en/popup/stem_example_cn/
+[MINI 下载]: /docs/en/popup/mini_example_cn/
 {% endcapture %}
 <div class="notice--success">{{ index_notice_01 | markdownify }}</div>
 
@@ -43,6 +55,9 @@ Please also checkout **[ROBOTIS Download Center]** for useful resources.
     <option value="/docs/en/dxl/pro_plus/h54p-200-s500-r/#control-table-of-eeprom-area">H54P-200-S500-R</option>
     <option value="/docs/en/dxl/pro_plus/h54p-100-s500-r/#control-table-of-eeprom-area">H54P-100-S500-R</option>
     <option value="/docs/en/dxl/pro_plus/h42p-020-s300-r/#control-table-of-eeprom-area">H42P-020-S300-R</option>
+    <option value="/docs/en/dxl/pro_plus/m54p-060-s250-r/#control-table-of-eeprom-area">M54P-060-S250-R</option>
+    <option value="/docs/en/dxl/pro_plus/m54p-040-s250-r/#control-table-of-eeprom-area">M54P-050-S250-R</option>
+    <option value="/docs/en/dxl/pro_plus/m42p-010-s260-r/#control-table-of-eeprom-area">M42P-010-S260-R</option>
 </select>
 
 -

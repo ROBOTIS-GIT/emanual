@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_x/friends/
 sidebar:
-  title: OpenManipulator-X
+  title: OpenMANIPULATOR-X
   nav: "openmanipulator_x"
 ---
 
@@ -17,14 +17,14 @@ sidebar:
 
   Friends List
 
-  - [OpenManipulator SCARA](/docs/en/platform/openmanipulator_x/friends/#openmanipulator-scara)
-  - [OpenManipulator Link](/docs/en/platform/openmanipulator_x/friends/#openmanipulator-link)
-  - [OpenManipulator Planar](/docs/en/platform/openmanipulator_x/friends/#openmanipulator-planar)
-  - [OpenManipulator Delta](/docs/en/platform/openmanipulator_x/friends/#openmanipulator-delta)
-  - [OpenManipulator Stewart](/docs/en/platform/openmanipulator_x/friends/#openmanipulator-stewart)
-  - [OpenManipulator Linear](/docs/en/platform/openmanipulator_x/friends/#openmanipulator-linear)
+  - [OpenMANIPULATOR SCARA](/docs/en/platform/openmanipulator_x/friends/#openmanipulator-scara)
+  - [OpenMANIPULATOR Link](/docs/en/platform/openmanipulator_x/friends/#openmanipulator-link)
+  - [OpenMANIPULATOR Planar](/docs/en/platform/openmanipulator_x/friends/#openmanipulator-planar)
+  - [OpenMANIPULATOR Delta](/docs/en/platform/openmanipulator_x/friends/#openmanipulator-delta)
+  - [OpenMANIPULATOR Stewart](/docs/en/platform/openmanipulator_x/friends/#openmanipulator-stewart)
+  - [OpenMANIPULATOR Linear](/docs/en/platform/openmanipulator_x/friends/#openmanipulator-linear)
 
-## [OpenManipulator SCARA](#openmanipulator-scara)
+## [OpenMANIPULATOR SCARA](#openmanipulator-scara)
 
 ![](/assets/images/platform/openmanipulator_x/OpenManipulator_SCARA.png)
 
@@ -72,7 +72,7 @@ sidebar:
 
 For more information, please refer to [BOM](https://docs.google.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit#gid=1200068410).
 
-<!-- [Parts of OpenManipulator](https://docs.google.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit#gid=1916070381) -->
+<!-- [Parts of OpenMANIPULATOR](https://docs.google.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit#gid=1916070381) -->
 
 #### 3D Printed Parts
 
@@ -101,7 +101,7 @@ Open processing source code file (`open_manipulator_processing` → `Scara` → 
 
  <iframe width="560" height="315" src="https://www.youtube.com/embed/4PK3I1JfSzc" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
-## [OpenManipulator Link](#openmanipulator-link)
+## [OpenMANIPULATOR Link](#openmanipulator-link)
 
 ![](/assets/images/platform/openmanipulator_x/OpenManipulator_Link.png)
 
@@ -182,12 +182,12 @@ CAD Files ([Onshape](http://www.robotis.com/service/download.php?no=692), [Thing
 ![](/assets/images/platform/openmanipulator_x/OpenManipulator_Link_OnShape.png)
 
 #### Assembly
-Assemble the OpenManipulator Link by referring to the manual uploaded on [Instructables page](https://www.instructables.com/id/OpenManipulator-Link/).
+Assemble the OpenMANIPULATOR-X Link by referring to the manual uploaded on [Instructables page](https://www.instructables.com/id/OpenManipulator-Link/).
 
 
 ### Software Setup
 
-**NOTE**: This example controller source code for OpenManipulator Link does not use ROS.
+**NOTE**: This example controller source code for OpenMANIPULATOR-X Link does not use ROS.
 {: .notice--info}
 
 #### OpenCR
@@ -202,7 +202,7 @@ Upload the example source to OpenCR.
 #### Processing
 Set the Processing IDE referring to [Processing Setup](/docs/en/platform/openmanipulator_x/opencr-setup/#opencr-setup).
 
-Download processing source code for OpenManipulator Link.
+Download processing source code for OpenMANIPULATOR-X Link.
 
 ``` bash
 $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_processing.git
@@ -231,7 +231,7 @@ If you have checked the above and it does not work normally, I recommend running
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/WR9_1AheOok" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-## [OpenManipulator Planar](#openmanipulator-planar)
+## [OpenMANIPULATOR Planar](#openmanipulator-planar)
 
 ![](/assets/images/platform/openmanipulator_x/OpenManipulator_Planar.png)
 
@@ -298,7 +298,7 @@ Open processing source code file (`open_manipulator_processing` → `Planar` →
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UtFnywz4hdY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## [OpenManipulator Delta](#openmanipulator-delta)
+## [OpenMANIPULATOR Delta](#openmanipulator-delta)
 
 ![](/assets/images/platform/openmanipulator_x/OpenManipulator_Delta.png)
 
@@ -365,7 +365,7 @@ Open processing source code file (`open_manipulator_processing` → `Delta` → 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vFyphQwdV6I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## [OpenManipulator Stewart](#openmanipulator-stewart)
+## [OpenMANIPULATOR Stewart](#openmanipulator-stewart)
 
 ![](/assets/images/platform/openmanipulator_x/OpenManipulator_Stewart.png)
 
@@ -433,7 +433,7 @@ Open processing source code file (`open_manipulator_processing` → `Stewart` �
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9YUWLAm24yA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## [OpenManipulator Linear](#openmanipulator-linear)
+## [OpenMANIPULATOR Linear](#openmanipulator-linear)
 
 ![](/assets/images/platform/openmanipulator_x/OpenManipulator_Linear.png)
 

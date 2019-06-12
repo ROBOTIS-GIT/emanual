@@ -3,11 +3,11 @@ layout: archive
 lang: en
 ref: openmanipulator_pro_specification
 read_time: true
-share: false
+share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_pro/specification/
 sidebar:
-  title: OpenManipulator-PRO
+  title: OpenMANIPULATOR-PRO
   nav: "openmanipulator_pro"
 ---
 
@@ -17,34 +17,42 @@ sidebar:
 
 ## [Specifications](#specifications)
 
-|Item|OpenManipulator-PRO RM-P60-RNH|
-|:---:|:---:|
-|DOF|6|
-|Payload|3 kg|
-|Reach|645 mm|
-|Repeatability|±0.05 mm|
-|Weight|5 kg|
-|Operating voltage|24 V|
-|Resolution|Joint 1 : -&pi;(rad) ~ &pi;(rad) , -501,923 ~ 501,923 (pulse)<br />Joint 2 : -&pi;(rad) ~ &pi;(rad) , -501,923 ~ 501,923 (pulse)<br />Joint 3 : -&pi;(rad) ~ &pi;(rad) , -501,923 ~ 501,923 (pulse)<br />Joint 4 : -&pi;(rad) ~ &pi;(rad) , -501,923 ~ 501,923 (pulse)<br />Joint 5 : -&pi;(rad) ~ &pi;(rad) , -303,750 ~ 303,750 (pulse)<br />Joint 6 : -&pi;(rad) ~ &pi;(rad) , -303,750 ~ 303,750 (pulse)|
-|Dynamixel Pro<br />Model Name|Joint 1, 2 : H54P-200-S500-R (200W)<br />Joint 3, 4 : H54P-100-S500-R (100W)<br />Joint 5, 6 : H42P-020-S300-R (20W)|
-|Operating Range|Joint 1 : -&pi;(rad) ~ &pi;(rad)<br />Joint 2 : -&pi;/2(rad) ~ &pi;/2(rad)<br />Joint 3 : -&pi;/2(rad) ~ 3&pi;/4(rad)<br />Joint 4 : -&pi;(rad) ~ &pi;(rad)<br />Joint 5 : -&pi;/2(rad) ~ &pi;/2(rad)<br />Joint 6 : -&pi;(rad) ~ &pi;(rad)|
-|Default ID|Joint 1 (ID:1), Joint 2 (ID:2), Joint 3 (ID:3),<br />Joint 4 (ID:4), Joint 5 (ID:5), Joint 6 (ID:6)|
-|Motor type|Brushless DC Servo(H54P Series),<br />Coreless DC Motor(H42P Series)|
-|Position sensor type|Absolute Encoder(for Homing),<br />Incremental Encoder(for Control)|
-|Communications|RS485|
-|Communication Baudrate|1000000 bps|
+
+|             Item              |                                                                                                                                                                                        OpenMANIPULATOR-PRO RM-P60-RNH                                                                                                                                                                                        |
+|:-----------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+|              DOF              |                                                                                                                                                                                                      6                                                                                                                                                                                                       |
+|            Payload            |                                                                                                                                                                                                     3 kg                                                                                                                                                                                                     |
+|             Reach             |                                                                                                                                                                                                    645 mm                                                                                                                                                                                                    |
+|         Repeatability         |                                                                                                                                                                                                   ±0.05 mm                                                                                                                                                                                                   |
+|            Weight             |                                                                                                                                                                                                     5 kg                                                                                                                                                                                                     |
+|       Operating voltage       |                                                                                                                                                                                                     24 V                                                                                                                                                                                                     |
+|          Resolution           | Joint 1 : -&pi;(rad) ~ &pi;(rad) , -501,923 ~ 501,923 (pulse)<br />Joint 2 : -&pi;(rad) ~ &pi;(rad) , -501,923 ~ 501,923 (pulse)<br />Joint 3 : -&pi;(rad) ~ &pi;(rad) , -501,923 ~ 501,923 (pulse)<br />Joint 4 : -&pi;(rad) ~ &pi;(rad) , -501,923 ~ 501,923 (pulse)<br />Joint 5 : -&pi;(rad) ~ &pi;(rad) , -303,750 ~ 303,750 (pulse)<br />Joint 6 : -&pi;(rad) ~ &pi;(rad) , -303,750 ~ 303,750 (pulse) |
+| Dynamixel Pro<br />Model Name |                                                                                                                                             Joint 1, 2 : [H54P-200-S500-R](/docs/en/dxl/pro_plus/h54p-200-s500-r/) (200W)<br />Joint 3, 4 : [H54P-100-S500-R](/docs/en/dxl/pro_plus/h54p-100-s500-r/)(100W)<br />Joint 5, 6 : [H42P-020-S300-R](/docs/en/dxl/pro_plus/h42p-020-s300-r/) (20W)                                                                                                                                             |
+|        Operating Range        |                                                                                 Joint 1 : -&pi;(rad) ~ &pi;(rad)<br />Joint 2 : -&pi;/2(rad) ~ &pi;/2(rad)<br />Joint 3 : -&pi;/2(rad) ~ 3&pi;/4(rad)<br />Joint 4 : -&pi;(rad) ~ &pi;(rad)<br />Joint 5 : -&pi;/2(rad) ~ &pi;/2(rad)<br />Joint 6 : -&pi;(rad) ~ &pi;(rad)                                                                                  |
+|          Default ID           |                                                                                                                                                     Joint 1 (ID:1), Joint 2 (ID:2), Joint 3 (ID:3),<br />Joint 4 (ID:4), Joint 5 (ID:5), Joint 6 (ID:6)                                                                                                                                                      |
+|          Motor type           |                                                                                                                                                                     Brushless DC Servo(H54P Series),<br />Coreless DC Motor(H42P Series)                                                                                                                                                                     |
+|     Position sensor type      |                                                                                                                                                                     Absolute Encoder(for Homing),<br />Incremental Encoder(for Control)                                                                                                                                                                      |
+|        Communications         |                                                                                                                                                                                                    RS485                                                                                                                                                                                                     |
+|    Communication Baudrate     |                                                                                                                                                                                                 1000000 bps                                                                                                                                                                                                  |
+
 
 
 ## [Dimension](#dimension)
 ![](/assets/images/platform/openmanipulator_pro/dimension.png)
 
 If you have a gripper([RH-P12-RN(A)](/docs/en/platform/rh_p12_rna/)), see below.
+
 ![](/assets/images/platform/openmanipulator_pro/dimension_with_gripper.png)
+
+## [Workspace](#workspace)
+![](/assets/images/platform/openmanipulator_pro/ws1.png)
+  
+![](/assets/images/platform/openmanipulator_pro/ws2.png)  
 
 
 ## [Home Position](#home-position)
 
-The diagram below shows the “home position” of the Dynamixel PRO+s from OpenManipulator-PRO.
+The diagram below shows the “home position” of the Dynamixel PRO+s from OpenMANIPULATOR-PRO.
 
 ![](/assets/images/platform/openmanipulator_pro/home_position.jpg)
 
@@ -54,25 +62,25 @@ The diagram below shows the “home position” of the Dynamixel PRO+s from Open
 
 - DH Parameter
 
-|Link|Link Length(mm)|Link Twist(rad)|Joint Offset(mm)|Joint Angle(rad)|DXL Angle(rad)|
-|:---:|:---:|:---:|:---:|:---:|:---:|
-|1|0|-&pi;/2|0|0|0|
-|2|265.69|0|0|0|![](/assets/images/platform/openmanipulator_pro/d_h_eq_001.gif)|
-|3|30|-&pi;/2|0|0|![](/assets/images/platform/openmanipulator_pro/d_h_eq_002.gif)|
-|4|0|-&pi;/2|258|0|0|
-|5|0|-&pi;/2|0|0|0|
-|6|0|0|0|0|0|
+| Link | Link Length(mm) | Link Twist(rad) | Joint Offset(mm) | Joint Angle(rad) |                         DXL Angle(rad)                          |
+|:----:|:---------------:|:---------------:|:----------------:|:----------------:|:---------------------------------------------------------------:|
+|  1   |        0        |     -&pi;/2     |        0         |        0         |                                0                                |
+|  2   |     265.69      |        0        |        0         |        0         | ![](/assets/images/platform/openmanipulator_pro/d_h_eq_001.gif) |
+|  3   |       30        |     -&pi;/2     |        0         |        0         | ![](/assets/images/platform/openmanipulator_pro/d_h_eq_002.gif) |
+|  4   |        0        |     -&pi;/2     |       258        |        0         |                                0                                |
+|  5   |        0        |     -&pi;/2     |        0         |        0         |                                0                                |
+|  6   |        0        |        0        |        0         |        0         |                                0                                |
 
 ## [Mass Property](#mass-property)
 ### Coordinate
 
-![](/assets/images/platform/openmanipulator_pro/mass1.jpg)
+![](/assets/images/platform/openmanipulator_pro/mass1.png)
 
 Total Mass : 5,551g
 
 ### Link 1
 
-![](/assets/images/platform/openmanipulator_pro/mass2.jpg)
+![](/assets/images/platform/openmanipulator_pro/mass2.png)
 
 - Mass(g) : 1,030
 - Center of Gravity(mm)
@@ -90,7 +98,7 @@ Total Mass : 5,551g
 
 ### Link 2
 
-![](/assets/images/platform/openmanipulator_pro/mass3.jpg)
+![](/assets/images/platform/openmanipulator_pro/mass3.png)
 
 - Mass(g) : 1,404
 - Center of Gravity(mm)
@@ -108,7 +116,7 @@ Total Mass : 5,551g
 
 ### Link 3
 
-![](/assets/images/platform/openmanipulator_pro/mass4.jpg)
+![](/assets/images/platform/openmanipulator_pro/mass4.png)
 
 - Mass(g) : 1,236
 - Center of Gravity(mm)
@@ -126,7 +134,7 @@ Total Mass : 5,551g
 
 ### Link 4
 
-![](/assets/images/platform/openmanipulator_pro/mass5.jpg)
+![](/assets/images/platform/openmanipulator_pro/mass5.png)
 
 - Mass(g) : 491
 - Center of Gravity(mm)
@@ -144,7 +152,7 @@ Total Mass : 5,551g
 
 ### Link 5
 
-![](/assets/images/platform/openmanipulator_pro/mass6.jpg)
+![](/assets/images/platform/openmanipulator_pro/mass6.png)
 
 - Mass(g) : 454
 - Center of Gravity(mm)

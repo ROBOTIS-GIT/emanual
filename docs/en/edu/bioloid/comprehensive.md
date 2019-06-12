@@ -22,6 +22,9 @@ Robots of 18 DOF can be built with Comprehensive Kit including the contents in B
   - From a simple barrier bar of 1 DOF to a spider or a humanoid of 18 DOF, it is possible to build the robot and edit the example programs.  It will help increasing your understanding for robot programming.
   - You can also create your one and only robot by designing, assembling and programming it by yourself.
 
+**WARNING** : ROBOTIS  BIOLOID Comprehensive has been discontinued.
+{: .notice--warning}
+
 # [Getting Started](#getting-started)
 
 ## [Part List](#part-list)

@@ -18,12 +18,12 @@ sidebar:
 ![](/assets/images/platform/turtlebot3/overview/turtlebot3_flyer_front_ver1806.png)
 
 ## [Publish](#publish)
-
+OpenMANIPULATOR
   - 07/03/2018 [TurtleBot3 AutoRace with Gazebo](https://discourse.ros.org/t/tb3-turtlebot3-autorace-with-gazebo/5261)
   - 05/25/2018 [Announcing TurtleBot3 Software(v1.0.0) and Firmware(v1.2.0) Update](https://discourse.ros.org/t/announcing-turtlebot3-software-v1-0-0-and-firmware-v1-2-0-update/4888)
   - 05/21/2018 [Reinforcement Learning with TB3!](https://discourse.ros.org/t/tb3-reinforcement-learning-with-tb3/4842)
   - 05/16/2018 [1 Year of TurtleBot3: Call for Collaboration (by 23 MAY)](https://discourse.ros.org/t/1-year-of-turtlebot3-call-for-collaboration-by-23-may/4792)
-  - 05/11/2018 [TurtleBot3 with OpenManipulator is released](https://discourse.ros.org/t/turtlebot3-with-openmanipulator-is-released/4747)
+  - 05/11/2018 [TurtleBot3 with OpenMANIPULATOR is released](https://discourse.ros.org/t/turtlebot3-with-openmanipulator-is-released/4747)
   - 04/27/2018 [Awesome TurtleBot3 Projects like BallBot Project](https://discourse.ros.org/t/awesome-turtlebot3-projects-like-ballbot-project/4629)
   - 04/20/2018 [TurtleBot3 Automatic Parking under AR detection](https://discourse.ros.org/t/tb3-turtlebot3-automatic-parking-under-ar-detection/4476)
   - 03/29/2018 [TurtleBot3 AutoRace 2017 Tutorial & Source Codes released](https://discourse.ros.org/t/tb3-turtlebot3-autorace-2017-tutorial-source-codes-released/4339)
@@ -75,7 +75,7 @@ sidebar:
   - 10/24/2017 [Announcing the Arm TechCon Innovation Award Finalists, arm TechCon](http://www.armtechcon.com/announcing-the-arm-techcon-innovation-award-finalists/)
   - 10/13/2017 [Top 10 Open Source Linux Robots, Linux.com](https://www.linux.com/blog/2017/10/top-10-open-source-linux-robots)
   - 09/22/2017 "TurtleBot3 AutoRace" on ROSCon2017, [PDF](https://roscon.ros.org/2017/presentations/ROSCon%202017%20Lightning%20211.pdf), [Video](https://vimeo.com/236177042#t=1760s)
-  - 09/21/2017 "Introducing OpenManipulator; the full open robot platform" on ROSCon2017, [PDF](https://roscon.ros.org/2017/presentations/ROSCon%202017%20OpenManipulator.pdf), [Video](https://vimeo.com/236147296)
+  - 09/21/2017 "Introducing OpenMANIPULATOR; the full open robot platform" on ROSCon2017, [PDF](https://roscon.ros.org/2017/presentations/ROSCon%202017%20OpenManipulator.pdf), [Video](https://vimeo.com/236147296)
   - 07/16/2017 [The TurtleBot3 Teacher: Learn the ROS platform with this robot kit, IEEE Spectrum](https://spectrum.ieee.org/geek-life/hands-on/the-turtlebot3-teacher)
   - 06/16/2017 [Turtlebot3, the Open Source Ubuntu/ROS-Based Robot Kit, Open Electronics](https://www.open-electronics.org/turtlebot3-the-open-source-ubunturos-based-robot-kit/)
   - 06/14/2017 [Open Source TurtleBot 3 Robot Kit Runs Ubuntu and ROS on Raspberry Pi, Linux.com](https://www.linux.com/news/event/open-source-summit-na/2017/6/open-source-turtlebot-3-robot-kit-runs-ubuntu-and-ros-raspberry-pi)

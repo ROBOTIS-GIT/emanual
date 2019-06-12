@@ -12,6 +12,8 @@ sidebar:
 ---
 
 # [R+ IoT 어플 사용방법](#r-iot-어플-사용방법)
+[로보티즈 IoT 2단계]에서 사용되는 어플리케이션으로 [R+m.Task]와 연동하여 다양한 기능을 활용하실수 있습니다.  
+[어플리케이션 다운로드/설치](#r-iot-다운로드설치)후, 아래의 순서들을 진행해주세요.
 
 ## [환경설정](#환경설정)
 
@@ -333,3 +335,5 @@ SMS 기능이 필요한 경우 이전 버전의 앱 설치파일(APK)을 다운�
 
 [R+ IoT (v0.9.3.6) 다운로드]: http://www.robotis.com/service/download.php?no=1669
 [인터넷에서 받은 앱 설치하기]: /docs/kr/popup/apk_install
+[로보티즈 IoT 2단계]: /docs/kr/edu/iot/iot-2/
+[R+m.Task]: /docs/kr/software/rplus_mobile/mtask20/

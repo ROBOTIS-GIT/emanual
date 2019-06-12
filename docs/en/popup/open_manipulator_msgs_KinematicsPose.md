@@ -17,7 +17,7 @@ layout: popup
 &emsp;&emsp; This topic msessage indicates the pose of the end-effector in the task space. The end-effector is included in topic name.
 
   - `geometry_msgs/Pose pose`
-&emsp;&emsp; The kinematics pose of the OpenManipulator end-effector in the task space.
+&emsp;&emsp; The kinematics pose of the OpenMANIPULATOR end-effector in the task space.
 
   - `float64 max_accelerations_scaling_factor`
 &emsp;&emsp; maximum acceleration scaling factor for making joint trajectory from MoveIt!

@@ -13,11 +13,11 @@ sidebar:
 
 # [Introduction](#introduction)
 
-![](/assets/images/sw/dynamixel/wizard2/wizard2_main_000.png)
+![](/assets/images/sw/dynamixel/wizard2/wizard2_main_000.jpg)
 
 ## [DYNAMIXEL Wizard 2.0](#dynamixel-wizard-20)
 
-DYNAMIXEL Wizard 2.0 is an optimized tool for managing DYNAMIXELs from various operating systems.  
+DYNAMIXEL Wizard 2.0 is an optimized tool for managing DYNAMIXELs from various operating systems.
 The following features are provided with DYNAMIXEL Wizard 2.0.
 
 - DYNAMIXEL Firmware Update
@@ -32,16 +32,19 @@ The following features are provided with DYNAMIXEL Wizard 2.0.
 
 - [Protocol 1.0]
 - [Protocol 2.0]
+- [Compatibility Table]{: .popup}
 
 ## [Supported OS](#supported-os)
 
-- Windows
-- Linux
+- Windows 7 / 8 / 10
+- Ubuntu 16 / 18
+- Mac OS X (10.11 El Capitan or above)
+
 
 ## [Definition of Firmware](#definition-of-firmware)
 
-Firmware is a fundamental program to operate the hardware device.  
-It is recommended to keep the firmware updated because it contains various communication regulations to exchange data with other devices such as computers or smartphones.  
+Firmware is a fundamental program to operate the hardware device.
+It is recommended to keep the firmware updated because it contains various communication regulations to exchange data with other devices such as computers or smartphones.
 Although almost all ROBOTIS products are shipped with preinstalled firmwares, new firmwares can be released for updated features or bug fixes.
 
 ## [Importance of Firmware Update](#importance-of-firmware-update)
@@ -53,22 +56,28 @@ Although almost all ROBOTIS products are shipped with preinstalled firmwares, ne
 
 ## [Supported Products](#supported-products)
 
-| DYNAMIXEL Series |                    |                       |                       |                         |                 |
-|:-----------------|:-------------------|:----------------------|:----------------------|:------------------------|:----------------|
-| **DX**           | [DX-113]           | [DX-116]              | [DX-117]              |                         |                 |
-| **AX**           | [AX-12W]           | [AX-12+/12A]          | [AX-18F/18A]          |                         |                 |
-| **RX**           | [RX-10]            | [RX-24F]              | [RX-28]               | [RX-64]                 |                 |
-| **EX**           | [EX-106+]          |                       |                       |                         |                 |
-| **MX**           | [MX-12W]           | [MX-28], [MX-28(2.0)] | [MX-64], [MX-64(2.0)] | [MX-106], [MX-106(2.0)] |                 |
-| **XL**           | [XL320]            | [XL430-W250]          |                       |                         |                 |
-| **XM**           | [XM430-W210]       | [XM430-W350]          | [XM540-W150]          | [XM540-W270]            |                 |
-| **XH**           | [XH430-W210]       | [XH430-W350]          | [XH430-V210]          | [XH430-V350]            |                 |
-| **PRO L**        | [L42-10-S300-R]    | [L54-30-S500-R]       | [L54-30-S400-R]       | [L54-50-S500-R]         | [L54-50-S290-R] |
-| **PRO M**        | [M42-10-S260-R]    | [M54-40-S250-R]       | [M54-60-S250-R]       |                         |                 |
-| **PRO H**        | [H42-20-S300-R]    | [H54-100-S500-R]      | [H54-200-S500-R]      |                         |                 |
-| **PRO M(A)**     | [M42-10-S260-R(A)] | [M54-40-S250-R(A)]    | [M54-60-S250-R(A)]    |                         |                 |
-| **PRO H(A)**     | [H42-20-S300-R(A)] | [H54-100-S500-R(A)]   | [H54-200-S500-R(A)]   |                         |                 |
-| **PRO+ H**       | [H42P-020-S300-R]  | [H54P-100-S500-R]     | [H54P-100-S500-R]     |                         |                 |
+| DYNAMIXEL Series |                                |                                |                                |                                |                 |
+|:-----------------|:-------------------------------|:-------------------------------|:-------------------------------|:-------------------------------|:----------------|
+| **DX**           | [DX-113]                       | [DX-116]                       | [DX-117]                       |                                |                 |
+| **AX**           | [AX-12W]                       | [AX-12+/12A]                   | [AX-18F/18A]                   |                                |                 |
+| **RX**           | [RX-10]                        | [RX-24F]                       | [RX-28]                        | [RX-64]                        |                 |
+| **EX**           | [EX-106+]                      |                                |                                |                                |                 |
+| **MX**           | [MX-12W]                       | [MX-28], [MX-28(2.0)]          | [MX-64], [MX-64(2.0)]          | [MX-106], [MX-106(2.0)]        |                 |
+| **XL**           | [XL320]                        | [XL430-W250]                   |                                |                                |                 |
+| **XM**           | [XM430-W210]                   | [XM430-W350]                   | [XM540-W150]                   | [XM540-W270]                   |                 |
+| **XH**           | [XH430-W210]<br/> [XH430-W350] | [XH430-V210]<br/> [XH430-V350] | [XH540-W150]<br/> [XH540-W270] | [XH540-V150]<br/> [XH540-V270] |                 |
+| **PRO H**        | [H42-20-S300-R]                | [H54-100-S500-R]               | [H54-200-S500-R]               |                                |                 |
+| **PRO M**        | [M42-10-S260-R]                | [M54-40-S250-R]                | [M54-60-S250-R]                |                                |                 |
+| **PRO L**        | [L42-10-S300-R]                | [L54-30-S500-R]                | [L54-30-S400-R]                | [L54-50-S500-R]                | [L54-50-S290-R] |
+| **PRO H(A)**     | [H42-20-S300-R(A)]             | [H54-100-S500-R(A)]            | [H54-200-S500-R(A)]            |                                |                 |
+| **PRO M(A)**     | [M42-10-S260-R(A)]             | [M54-40-S250-R(A)]             | [M54-60-S250-R(A)]             |                                |                 |
+| **PRO+ H**       | [H42P-020-S300-R]              | [H54P-100-S500-R]              | [H54P-100-S500-R]              |                                |                 |
+| **PRO+ M**       | [M54P-060-S250-R]              | [M54P-040-S250-R]              | [M42P-010-S260-R]              |                                |                 |
+| **ETC**          | [RH-P12-RN]                    | [RH-P12-RN(A)]                 |                                |                                |                 |
+
+
+
+
 
 # [Menu Description](#menu-description)
 
@@ -81,28 +90,61 @@ Detected DYNAMIXELs can be tested by modifying control table values.
 
 ## [Graph Window](#graph-window)
 
-By selecting control table items to be plotted, values of the selected items will be drawn in the graph window in real time.  
+By selecting control table items to be plotted, values of the selected items will be drawn in the graph window in real time.
 Please refer to [Basic Feature > Graph] section for more details about selecting control table items.
 
 ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_001.png)
 
 ## [Packet Window](#packet-window)
 
-User can manually generate an Instruction packet for the selected protocol version.  
+User can manually generate an Instruction packet for the selected protocol version.
 Detailed packet data can be loaded by selecting a packet in the packet history.
 
 ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_001.png)
 
 # [Software Installation](#software-installation)
 
-**Download Beta test version**
+**Download Software**
   - [for Windows](http://www.robotis.com/service/download.php?no=1670)
   - [for Linux](http://www.robotis.com/service/download.php?no=1671)
+  - [for Mac](http://www.robotis.com/service/download.php?no=1760)
 
-Execute downloaded install file.  
-Click on `Next` button to proceed installation.
+## [Install: Windows](#install-windows)
+
+1. Execute downloaded installation file.
+2. Click on `Next` button to proceed installation.
 
 ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_win_01.png)
+
+## [Install: Linux](#install-linux)
+
+1. Download the installation file.
+
+2. Enter the following command to change the permission.
+
+    ```c
+    # sudo chmod 775 DynamixelWizard2Setup_x64
+    ```
+
+3. Run the install program.
+
+    ```c
+    # ./DynamixelWizard2Setup_x64
+    ```
+
+4. Click on `Next` button to proceed installation.
+
+## [Install: Mac](#install-mac)
+
+1. Download the package file.  
+2. Right click on the downloaded dmg file and select `Open` from the mene.  
+  ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_mac_01.png)
+3. Launch the `DynamixelWizard2Setup_x64` file.  
+  ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_mac_02.png)
+4. If a warning message pops up, select `Open` to proceed installation.  
+  ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_mac_03.png)
+5. Click `Next` to continue and follow the setup instruction.  
+  ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_mac_04.png)
 
 # [Uninstall Software](#uninstall-software)
 
@@ -124,7 +166,7 @@ Click on `Next` button to proceed installation.
 
 1. From the folder where Dynamixel Wizard 2.0 is installed, execute `maintenancetool`.
 
-2. Select `Remove all components` and click `Next` to proceed..
+2. Select `Remove all components` and click `Next` to proceed.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_linux_03.png)
 
@@ -142,15 +184,16 @@ Click on `Next` button to proceed installation.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_options_001.png)
 
-3. Select Protocol version, communication ports, baudrates, and the range of ID to scan. Click `OK` to confirm the selection.  
+3. Select Protocol version, communication ports, baudrates, and the range of ID to scan. Click `OK` to confirm the selection.
   Selecting less option reduces time to scan DYNAMIXEL.
 
 ### [Scan DYNAMIXEL](#scan-dynamixel)
 
 1. Go to `Device` > `Scan` to start searching connected DYNAMIXELs.
 
-    **NOTE** : If communication port is in use and fails to open, the port should be released first.
+    **NOTE** : If Open failed is shown up, please check whether communication port is connected at the **Main Toolbar** or not, then button `Disconnect` to avoid port collision.
     {: .notice}
+
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_012.png)
 
@@ -164,10 +207,10 @@ Click on `Next` button to proceed installation.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_002.png)
 
-2. `Factory Reset` button in the Sub Menu on the right column will reset the DYNAMIXEL to factory status(ID and Baudrate will not be reset).  
-  `Reboot` button will soft reset the DYNAMIXEL.  
-  `Torque` switch will toggle the Torque of DYNAMIXEL.  
-  `LED` switch will toggle the LED of DYNAMIXEL.  
+2. `Factory Reset` button in the Sub Menu on the right column will reset the DYNAMIXEL to factory status(ID and Baudrate will not be reset).
+  `Reboot` button will soft reset the DYNAMIXEL.
+  `Torque` switch will toggle the Torque of DYNAMIXEL.
+  `LED` switch will toggle the LED of DYNAMIXEL.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_003.png)
 
@@ -177,7 +220,7 @@ Click on `Next` button to proceed installation.
 
 5. Position controlling interface will appear on the buttom right corner of the program.
 
-    **WARNING** : Please be cautious when changing values as DYNAMIXEL can rotate or move.  
+    **WARNING** : Please be cautious when changing values as DYNAMIXEL can rotate or move.
     {: .notice--warning}
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_004.png)
@@ -220,7 +263,7 @@ Click on `Next` button to proceed installation.
 6. In order to optimize the graph drawing speed, check the option to read selected items only.
 
     **NOTE** : Checking this option will only refresh selected items in the Control Table.
-    {: .notice}  
+    {: .notice}
 
 7. Click `OK` to confirm changes.
 
@@ -232,8 +275,8 @@ Click on `Next` button to proceed installation.
 
 2. Click `Start` button in the graph window to start plotting data.
 
-    **NOTE** : If there isn't any detected or connected device, `Start` button will be disabled. Please scan DYNAMIXEL first.
-    {: .notice}
+    **WARNING** : If there isn't any detected or connected device, `Start` button will be disabled. Please scan DYNAMIXEL first.
+    {: .notice--warning}
 
 3. After start plotting, enable Torque first then change `Goal Position` to see how `Present Position` data is plotted in real time.
 
@@ -247,10 +290,10 @@ Click on `Next` button to proceed installation.
     - Save : Save plotted data to CSV file
     - Enable/Disable Item : Click items on the right to toggle visibility
     - Zoom In : Drag an area to zoom in
-      - + `Shift` : Zoom In on X axis only
-      - + `Ctrl` : Zoom In on Y axis only
+      - `Shift` + `Select Area` : Zoom In on X axis only
+      - `Ctrl` + `Select Area` : Zoom In on Y axis only
       - Use mouse wheel to undo / redo zoom level setting
-    - While running the graph, use `Ctrl` + `Mouse Wheel` to adjust X axis length between 1 and 10 seconds.
+    - While running the graph, use `Ctrl` + `Mouse Wheel` to adjust X axis length from 1 to 10 seconds.
 
 ## [Packet](#packet)
 
@@ -258,21 +301,21 @@ Click on `Next` button to proceed installation.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_014.png)
 
-2. Set the communication port and baudrate then click `Open` to open the port.  
+2. Set the communication port and baudrate then click `Open` to open the port.
   Once the port is successfully opened, DYNAMIXEL protocol minitoring on the port will begin.
 
-    **NOTE** : If communication port is in use and fails to open, the port should be released first.
+    **NOTE** : If Open failed is shown up, please check whether communication port is connected at the **Main Toolbar** or not, then button `Disconnect` to avoid port collision.  
     {: .notice}
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_002.png)
 
-3. Select Protocol version and instruction to use.  
-  In this example, `Write` instruction for Protocol version `2.0` is selected.  
+3. Select Protocol version and instruction to use.
+  In this example, `Write` instruction for Protocol version `2.0` is selected.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_003.png)
 
-4. Specific data can be written on the instuction as shown below.  
-  In this example, LED will be turned on by writing `1` to LED control address.  
+4. Specific data can be written on the instuction as shown below.
+  In this example, LED will be turned on by writing `1` to LED control address.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_004.png)
 
@@ -337,7 +380,7 @@ Click on `Next` button to proceed installation.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_017.png)
 
-2. Firmware recovery will begin with a breif instruction. Please do NOT disconnect or turn off the DYNAMIXEL.
+2. Firmware recovery will begin with a breif instruction. Please do **NOT** disconnect or turn off the DYNAMIXEL.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_001.png)
 
@@ -347,7 +390,7 @@ Click on `Next` button to proceed installation.
 
 4. The proper communication port that is connected to DYNAMIXEL has to be selected manually. If the port is in use, it has to be released first.
 
-    **WARNING** : Only one DYNAMIXEL has to be connected to the port when recoverying the DYNAMIXEL firmware.
+    **WARNING** : Only one DYNAMIXEL should be connected to the port when recoverying the DYNAMIXEL firmware.
     {: .notice--warning}
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_003.png)
@@ -356,7 +399,7 @@ Click on `Next` button to proceed installation.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_004.png)
 
-6. If DYNAMIXEL is successfully detected, wizard begins firmware recovery. Please do NOT disconnect or turn off the DYNAMIXEL.
+6. If DYNAMIXEL is successfully detected, wizard begins firmware recovery. Please do **NOT** disconnect or turn off the DYNAMIXEL.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_005.png)
 
@@ -467,7 +510,7 @@ In order to find error in DYNAMIXEL, self diagnosis can be performed.
 2. Self diagnosis will begin with a breif instruction.
 
     **WARNING** : DYNAMIXEL will be factory reset during self diagnosis.
-    {: .notice--warning}  
+    {: .notice--warning}
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_self_002.png)
 
@@ -505,7 +548,7 @@ In order to find error in DYNAMIXEL, self diagnosis can be performed.
 
 ## [Graph Optimization](#graph-optimization)
 
-In order to use the minimum communication interval(1[ms]), please follow the instruction below.
+In order to use the minimum communication interval(1 [ms]), please follow the instruction below.
 
 ### [USB Latency Setting](#usb-latency-setting)
 
@@ -577,6 +620,10 @@ In order to use the minimum communication interval(1[ms]), please follow the ins
 [XH430-W350]: /docs/en/dxl/x/xh430-w350/
 [XH430-V210]: /docs/en/dxl/x/xh430-v210/
 [XH430-V350]: /docs/en/dxl/x/xh430-v350/
+[XH540-W150]: /docs/en/dxl/x/xh540-w150/
+[XH540-W270]: /docs/en/dxl/x/xh540-w270/
+[XH540-V150]: /docs/en/dxl/x/xh540-v150/
+[XH540-V270]: /docs/en/dxl/x/xh540-v270/
 [H54-200-S500-R]: /docs/en/dxl/pro/h54-200-s500-r/
 [H54-100-S500-R]: /docs/en/dxl/pro/h54-100-s500-r/
 [H42-20-S300-R]: /docs/en/dxl/pro/h42-20-s300-r/
@@ -597,3 +644,9 @@ In order to use the minimum communication interval(1[ms]), please follow the ins
 [H42P-020-S300-R]: /docs/en/dxl/pro_plus/h42p-020-s300-r/
 [H54P-100-S500-R]: /docs/en/dxl/pro_plus/h54p-100-s500-r/
 [H54P-200-S500-R]: /docs/en/dxl/pro_plus/h54p-200-s500-r/
+[M54P-060-S250-R]: /docs/en/dxl/pro_plus/m54p-060-s250-r/
+[M54P-040-S250-R]: /docs/en/dxl/pro_plus/m54p-040-s250-r/
+[M42P-010-S260-R]: /docs/en/dxl/pro_plus/m42p-010-s260-r/
+[RH-P12-RN]: /docs/en/platform/rh_p12_rn/
+[RH-P12-RN(A)]: /docs/en/platform/rh_p12_rna/
+[Compatibility Table]: /docs/en/popup/faq_protocol_compatibility_table/

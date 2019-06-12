@@ -390,7 +390,7 @@ Windows 8/8.1에서 제어판을 열기 위해서는 데스크톱 모드에서 �
 
     ![](/assets/images/edu/mini/darwin_mini_controler4.jpg)
 
-## [XL-320 ID MAP](#xl320-id-map)
+## [ID MAP](#id-map)
 
 ![](/assets/images/edu/mini/darwin_mini_8.jpg)
 

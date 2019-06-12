@@ -11,7 +11,7 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 21"></div>
+<div style="counter-reset: h1 22"></div>
 <div style="counter-reset: h2 2"></div>
 
 <!--[dummy Header 1]>
@@ -222,8 +222,11 @@ $ git clone https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
 
 #### Preparations
 - It does not provide a dedicated interface board, but you can connect it to the power and UART of the embedded board as shown below.
-
+a
 ![](/assets/images/platform/turtlebot3/appendix_lds/lds_lines.png)
+
+**WARNNING** : The wiring colours of LDS-01 could differ from the picture by manaufacturers. 
+{: .notice--warning}
 
 - OpenCR develops and downloads firmware through the Arduino IDE. Therefore, you must install the Arduino IDE in advance and install the OpenCR board package. Install through the following link document.
 
@@ -232,7 +235,7 @@ $ git clone https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
 #### Download firmware and run
 
 1. After connecting USB to PC, select `Tools` -> `Board` -> `OpenCR Board` in Arduino IDE.
-1. Change `Tools`-> `Port` to the port to which the board is connected.  
+1. Change `Tools`-> `Port` to the port to which the board is connected.
 1. In the Arduino IDE Examples, select the firmware for LDS (`File` -> `Examples` -> `OpenCR` -> `Etc` -> `LDS` -> `drawLDS`).
 1. Click `Upload` icon in the Arduino IDE that displays the red circle to build and download the firmware. When the download is completed, the firmware is automatically executed.
 

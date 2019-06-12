@@ -13,3 +13,6 @@ Please refer to [Profile Velocity(112)] for more details.
 |:------------------:|:---------:|:-------------------------------------------------------------------------------------------------------------------------------------------|
 |        Unit        | 1 [msec]  | Sets accelerating time of the Profile                                                                                                      |
 |       Range        | 0 ~ 32737 | '0' stands for an infinite accelerating time('0 [msec]').<br>Profile Acceleration(108) will not exceed 50% of Profile Velocity(112) value. |
+
+**NOTE** : Time-based Profile is available from the firmware version 42.
+{: .notice}

@@ -186,15 +186,15 @@ main:
       - title: "H42P-020-S300-R"
         titlekr: "H42P-020-S300-R"
         url: /dxl/pro_plus/h42p-020-s300-r/
-      # - title: "M54P-060-S250-R"
-      #   titlekr: "M54P-060-S250-R"
-      #   url: /dxl/pro_plus/m54p-060-s250-r/
-      # - title: "M54P-040-S250-R"
-      #   titlekr: "M54P-040-S250-R"
-      #   url: /dxl/pro_plus/m54p-040-s250-r/
-      # - title: "M42P-010-S260-R"
-      #   titlekr: "M42P-010-S260-R"
-      #   url: /dxl/pro_plus/m42p-010-s260-r/
+      - title: "M54P-060-S250-R"
+        titlekr: "M54P-060-S250-R"
+        url: /dxl/pro_plus/m54p-060-s250-r/
+      - title: "M54P-040-S250-R"
+        titlekr: "M54P-040-S250-R"
+        url: /dxl/pro_plus/m54p-040-s250-r/
+      - title: "M42P-010-S260-R"
+        titlekr: "M42P-010-S260-R"
+        url: /dxl/pro_plus/m42p-010-s260-r/
     - title: "Procotol 1.0"
       titlekr: "프로토콜 1.0"
       url: /dxl/protocol1/
@@ -229,21 +229,30 @@ main:
     - title: "TurtleBot3"
       titlekr: "터틀봇3"
       url: /platform/turtlebot3/overview/
-    - title: "OpenManipulator"
+    - title: "OpenMANIPULATOR"
       titlekr: "오픈매니퓰레이터"
+      url: /platform/openmanipulator_main
       children:
       - title: "*Manipulator-H"
         titlekr: "*Manipulator-H"
         url: /platform/manipulator_h/introduction/
-    #  - title: "OpenManipulator-PRO"
-    #    titlekr: "OpenManipulator-PRO"
-    #    url: /platform/openmanipulator_pro/overview/
-      - title: "OpenManipulator-X"
-        titlekr: "OpenManipulator-X"
+      - title: "OpenMANIPULATOR-PRO"
+        titlekr: "OpenMANIPULATOR-PRO"
+        url: /platform/openmanipulator_pro/overview/
+      - title: "OpenMANIPULATOR-X"
+        titlekr: "OpenMANIPULATOR-X"
         url: /platform/openmanipulator_x/overview/
   - title: "STEAM"
     titlekr: "교육키트"
     children:
+    - title: "PLAY"
+      children:
+        - title: "PLAY 300"
+          url: /edu/play/play-300/
+        - title: "PLAY 600"
+          url: /edu/play/play-600/
+        - title: "PLAY 700"
+          url: /edu/play/play-700/
     - title: "*OLLO"
       titlekr: "*올로"
       children:
@@ -296,21 +305,21 @@ main:
         url: /edu/dream/dream2-5/
       - title: "School Set"
         url: /edu/dream/dream2-schoolset/
-    - titlekr: "스마트 I"
+    - titlekr: "*스마트 I"
       children:
-      - titlekr: "1단계 교육키트"
+      - titlekr: "*1단계 교육키트"
         url: /edu/smart/smart1-1/
-      - titlekr: "2단계 교육키트"
+      - titlekr: "*2단계 교육키트"
         url: /edu/smart/smart1-2/
-      - titlekr: "3단계 교육키트"
+      - titlekr: "*3단계 교육키트"
         url: /edu/smart/smart1-3/
-    - titlekr: "스마트 II"
+    - titlekr: "*스마트 II"
       children:
-      - titlekr: "1단계 교육키트"
+      - titlekr: "*1단계 교육키트"
         url: /edu/smart/smart2-1/
-      - titlekr: "2단계 교육키트"
+      - titlekr: "*2단계 교육키트"
         url: /edu/smart/smart2-2/
-      - titlekr: "3단계 교육키트"
+      - titlekr: "*3단계 교육키트"
         url: /edu/smart/smart2-3/
     - titlekr: "스마트 III"
       children:
@@ -328,8 +337,8 @@ main:
         url: /edu/iot/iot-1/
       - titlekr: "2단계 교육키트"
         url: /edu/iot/iot-2/
-    # - titlekr: "실과 로봇"
-    #   url: /edu/info/
+    - titlekr: "실과 로봇"
+      url: /edu/info/
     - titlekr: "*자동차 로봇"
       url: /edu/car/
     - title: "BIOLOID"
@@ -366,9 +375,9 @@ main:
       - title: "DYNAMIXEL Workbench"
         titlekr: "다이나믹셀 워크벤치"
         url: /software/dynamixel/dynamixel_workbench/
-      # - title: "DYNAMIXEL Wizard 2.0"
-      #   titlekr: "다이나믹셀 위자드 2.0"
-      #   url: /software/dynamixel/dynamixel_wizard2/
+      - title: "DYNAMIXEL Wizard 2.0"
+        titlekr: "다이나믹셀 위자드 2.0"
+        url: /software/dynamixel/dynamixel_wizard2/
     - title: "Mobile Apps"
       titlekr: "모바일 앱"
       children:
@@ -5744,10 +5753,10 @@ xc430-w240:
         titlekr: "배선 예시"
         url: /dxl/x/2xl430-w250/#wiring-through-back-case
         urlkr: /dxl/x/2xl430-w250/#배선-예시
-      - title: "Option Frame Assembly"
-        titlekr: "옵션프레임 조립"
-        url: /dxl/x/2xl430-w250/#option-frame-assembly
-        urlkr: /dxl/x/2xl430-w250/#옵션프레임-조립
+    #  - title: "Option Frame Assembly"
+    #    titlekr: "옵션프레임 조립"
+    #    url: /dxl/x/2xl430-w250/#option-frame-assembly
+    #    urlkr: /dxl/x/2xl430-w250/#옵션프레임-조립
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/x/2xl430-w250/#reference
@@ -7871,6 +7880,14 @@ h42-20-s300-r:
         titlekr: "커넥터 정보"
         url: /dxl/pro/h42-20-s300-r/#connector-information
         urlkr: /dxl/pro/h42-20-s300-r/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/pro/h42-20-s300-r/#communication-circuit
+        urlkr: /dxl/pro/h42-20-s300-r/#통신-회로
+      - title: "Pin Arrangement"
+        titlekr: "핀 배열"
+        url: /dxl/pro/h42-20-s300-r/#pin-arrangement
+        urlkr: /dxl/pro/h42-20-s300-r/#핀-배열
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/pro/h42-20-s300-r/#drawings
@@ -8098,6 +8115,14 @@ h42-20-s300-ra:
         titlekr: "커넥터 정보"
         url: /dxl/pro/h42-20-s300-ra/#connector-information
         urlkr: /dxl/pro/h42-20-s300-ra/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/pro/h42-20-s300-ra/#communication-circuit
+        urlkr: /dxl/pro/h42-20-s300-ra/#통신-회로
+      - title: "Pin Arrangement"
+        titlekr: "핀 배열"
+        url: /dxl/pro/h42-20-s300-ra/#pin-arrangement
+        urlkr: /dxl/pro/h42-20-s300-ra/#핀-배열
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/pro/h42-20-s300-ra/#drawings
@@ -8284,6 +8309,14 @@ h54-100-s500-r:
         titlekr: "커넥터 정보"
         url: /dxl/pro/h54-100-s500-r/#connector-information
         urlkr: /dxl/pro/h54-100-s500-r/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/pro/h54-100-s500-r/#communication-circuit
+        urlkr: /dxl/pro/h54-100-s500-r/#통신-회로
+      - title: "Pin Arrangement"
+        titlekr: "핀 배열"
+        url: /dxl/pro/h54-100-s500-r/#pin-arrangement
+        urlkr: /dxl/pro/h54-100-s500-r/#핀-배열
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/pro/h54-100-s500-r/#drawings
@@ -8511,6 +8544,14 @@ h54-100-s500-ra:
         titlekr: "커넥터 정보"
         url: /dxl/pro/h54-100-s500-ra/#connector-information
         urlkr: /dxl/pro/h54-100-s500-ra/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/pro/h54-100-s500-ra/#communication-circuit
+        urlkr: /dxl/pro/h54-100-s500-ra/#통신-회로
+      - title: "Pin Arrangement"
+        titlekr: "핀 배열"
+        url: /dxl/pro/h54-100-s500-ra/#pin-arrangement
+        urlkr: /dxl/pro/h54-100-s500-ra/#핀-배열
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/pro/h54-100-s500-ra/#drawings
@@ -8697,6 +8738,14 @@ h54-200-s500-r:
         titlekr: "커넥터 정보"
         url: /dxl/pro/h54-200-s500-r/#connector-information
         urlkr: /dxl/pro/h54-200-s500-r/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/pro/h54-200-s500-r/#communication-circuit
+        urlkr: /dxl/pro/h54-200-s500-r/#통신-회로
+      - title: "Pin Arrangement"
+        titlekr: "핀 배열"
+        url: /dxl/pro/h54-200-s500-r/#pin-arrangement
+        urlkr: /dxl/pro/h54-200-s500-r/#핀-배열
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/pro/h54-200-s500-r/#drawings
@@ -8924,6 +8973,14 @@ h54-200-s500-ra:
         titlekr: "커넥터 정보"
         url: /dxl/pro/h54-200-s500-ra/#connector-information
         urlkr: /dxl/pro/h54-200-s500-ra/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/pro/h54-200-s500-ra/#communication-circuit
+        urlkr: /dxl/pro/h54-200-s500-ra/#통신-회로
+      - title: "Pin Arrangement"
+        titlekr: "핀 배열"
+        url: /dxl/pro/h54-200-s500-ra/#pin-arrangement
+        urlkr: /dxl/pro/h54-200-s500-ra/#핀-배열
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/pro/h54-200-s500-ra/#drawings
@@ -9104,6 +9161,14 @@ l42-10-s300-r:
         titlekr: "커넥터 정보"
         url: /dxl/pro/l42-10-s300-r/#connector-information
         urlkr: /dxl/pro/l42-10-s300-r/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/pro/l42-10-s300-r/#communication-circuit
+        urlkr: /dxl/pro/l42-10-s300-r/#통신-회로
+      - title: "Pin Arrangement"
+        titlekr: "핀 배열"
+        url: /dxl/pro/l42-10-s300-r/#pin-arrangement
+        urlkr: /dxl/pro/l42-10-s300-r/#핀-배열
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/pro/l42-10-s300-r/#drawings
@@ -9290,6 +9355,14 @@ l54-30-s400-r:
         titlekr: "커넥터 정보"
         url: /dxl/pro/l54-30-s400-r/#connector-information
         urlkr: /dxl/pro/l54-30-s400-r/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/pro/l54-30-s400-r/#communication-circuit
+        urlkr: /dxl/pro/l54-30-s400-r/#통신-회로
+      - title: "Pin Arrangement"
+        titlekr: "핀 배열"
+        url: /dxl/pro/l54-30-s400-r/#pin-arrangement
+        urlkr: /dxl/pro/l54-30-s400-r/#핀-배열
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/pro/l54-30-s400-r/#drawings
@@ -9476,6 +9549,14 @@ l54-30-s500-r:
         titlekr: "커넥터 정보"
         url: /dxl/pro/l54-30-s500-r/#connector-information
         urlkr: /dxl/pro/l54-30-s500-r/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/pro/l54-30-s500-r/#communication-circuit
+        urlkr: /dxl/pro/l54-30-s500-r/#통신-회로
+      - title: "Pin Arrangement"
+        titlekr: "핀 배열"
+        url: /dxl/pro/l54-30-s500-r/#pin-arrangement
+        urlkr: /dxl/pro/l54-30-s500-r/#핀-배열
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/pro/l54-30-s500-r/#drawings
@@ -9662,6 +9743,14 @@ l54-50-s290-r:
         titlekr: "커넥터 정보"
         url: /dxl/pro/l54-50-s290-r/#connector-information
         urlkr: /dxl/pro/l54-50-s290-r/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/pro/l54-50-s290-r/#communication-circuit
+        urlkr: /dxl/pro/l54-50-s290-r/#통신-회로
+      - title: "Pin Arrangement"
+        titlekr: "핀 배열"
+        url: /dxl/pro/l54-50-s290-r/#pin-arrangement
+        urlkr: /dxl/pro/l54-50-s290-r/#핀-배열
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/pro/l54-50-s290-r/#drawings
@@ -9848,6 +9937,14 @@ l54-50-s500-r:
         titlekr: "커넥터 정보"
         url: /dxl/pro/l54-50-s500-r/#connector-information
         urlkr: /dxl/pro/l54-50-s500-r/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/pro/l54-50-s500-r/#communication-circuit
+        urlkr: /dxl/pro/l54-50-s500-r/#통신-회로
+      - title: "Pin Arrangement"
+        titlekr: "핀 배열"
+        url: /dxl/pro/l54-50-s500-r/#pin-arrangement
+        urlkr: /dxl/pro/l54-50-s500-r/#핀-배열
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/pro/l54-50-s500-r/#drawings
@@ -10034,6 +10131,14 @@ m42-10-s260-r:
         titlekr: "커넥터 정보"
         url: /dxl/pro/m42-10-s260-r/#connector-information
         urlkr: /dxl/pro/m42-10-s260-r/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/pro/m42-10-s260-r/#communication-circuit
+        urlkr: /dxl/pro/m42-10-s260-r/#통신-회로
+      - title: "Pin Arrangement"
+        titlekr: "핀 배열"
+        url: /dxl/pro/m42-10-s260-r/#pin-arrangement
+        urlkr: /dxl/pro/m42-10-s260-r/#핀-배열
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/pro/m42-10-s260-r/#drawings
@@ -10261,6 +10366,14 @@ m42-10-s260-ra:
         titlekr: "커넥터 정보"
         url: /dxl/pro/m42-10-s260-ra/#connector-information
         urlkr: /dxl/pro/m42-10-s260-ra/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/pro/m42-10-s260-ra/#communication-circuit
+        urlkr: /dxl/pro/m42-10-s260-ra/#통신-회로
+      - title: "Pin Arrangement"
+        titlekr: "핀 배열"
+        url: /dxl/pro/m42-10-s260-ra/#pin-arrangement
+        urlkr: /dxl/pro/m42-10-s260-ra/#핀-배열
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/pro/m42-10-s260-ra/#drawings
@@ -10447,6 +10560,14 @@ m54-40-s250-r:
         titlekr: "커넥터 정보"
         url: /dxl/pro/m54-40-s250-r/#connector-information
         urlkr: /dxl/pro/m54-40-s250-r/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/pro/m54-40-s250-r/#communication-circuit
+        urlkr: /dxl/pro/m54-40-s250-r/#통신-회로
+      - title: "Pin Arrangement"
+        titlekr: "핀 배열"
+        url: /dxl/pro/m54-40-s250-r/#pin-arrangement
+        urlkr: /dxl/pro/m54-40-s250-r/#핀-배열
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/pro/m54-40-s250-r/#drawings
@@ -10674,6 +10795,14 @@ m54-40-s250-ra:
         titlekr: "커넥터 정보"
         url: /dxl/pro/m54-40-s250-ra/#connector-information
         urlkr: /dxl/pro/m54-40-s250-ra/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/pro/m54-40-s250-ra/#communication-circuit
+        urlkr: /dxl/pro/m54-40-s250-ra/#통신-회로
+      - title: "Pin Arrangement"
+        titlekr: "핀 배열"
+        url: /dxl/pro/m54-40-s250-ra/#pin-arrangement
+        urlkr: /dxl/pro/m54-40-s250-ra/#핀-배열
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/pro/m54-40-s250-ra/#drawings
@@ -10860,6 +10989,14 @@ m54-60-s250-r:
         titlekr: "커넥터 정보"
         url: /dxl/pro/m54-60-s250-r/#connector-information
         urlkr: /dxl/pro/m54-60-s250-r/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/pro/m54-60-s250-r/#communication-circuit
+        urlkr: /dxl/pro/m54-60-s250-r/#통신-회로
+      - title: "Pin Arrangement"
+        titlekr: "핀 배열"
+        url: /dxl/pro/m54-60-s250-r/#pin-arrangement
+        urlkr: /dxl/pro/m54-60-s250-r/#핀-배열
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/pro/m54-60-s250-r/#drawings
@@ -11087,6 +11224,14 @@ m54-60-s250-ra:
         titlekr: "커넥터 정보"
         url: /dxl/pro/m54-60-s250-ra/#connector-information
         urlkr: /dxl/pro/m54-60-s250-ra/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/pro/m54-60-s250-ra/#communication-circuit
+        urlkr: /dxl/pro/m54-60-s250-ra/#통신-회로
+      - title: "Pin Arrangement"
+        titlekr: "핀 배열"
+        url: /dxl/pro/m54-60-s250-ra/#pin-arrangement
+        urlkr: /dxl/pro/m54-60-s250-ra/#핀-배열
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/pro/m54-60-s250-ra/#drawings
@@ -11305,6 +11450,14 @@ h54p-200-s500-r:
       titlekr: "커넥터 정보"
       url: /dxl/pro_plus/h54p-200-s500-r/#connector-information
       urlkr: /dxl/pro_plus/h54p-200-s500-r/#커넥터-정보
+    - title: "Communication Circuit"
+      titlekr: "통신 회로"
+      url: /dxl/pro_plus/h54p-200-s500-r/#communication-circuit
+      urlkr: /dxl/pro_plus/h54p-200-s500-r/#통신-회로
+    - title: "Pin Arrangement"
+      titlekr: "핀 배열"
+      url: /dxl/pro_plus/h54p-200-s500-r/#pin-arrangement
+      urlkr: /dxl/pro_plus/h54p-200-s500-r/#핀-배열
     - title: "Drawings"
       titlekr: "도면"
       url: /dxl/pro_plus/h54p-200-s500-r/#drawings
@@ -11523,6 +11676,14 @@ h54p-100-s500-r:
       titlekr: "커넥터 정보"
       url: /dxl/pro_plus/h54p-100-s500-r/#connector-information
       urlkr: /dxl/pro_plus/h54p-100-s500-r/#커넥터-정보
+    - title: "Communication Circuit"
+      titlekr: "통신 회로"
+      url: /dxl/pro_plus/h54p-100-s500-r/#communication-circuit
+      urlkr: /dxl/pro_plus/h54p-100-s500-r/#통신-회로
+    - title: "Pin Arrangement"
+      titlekr: "핀 배열"
+      url: /dxl/pro_plus/h54p-100-s500-r/#pin-arrangement
+      urlkr: /dxl/pro_plus/h54p-100-s500-r/#핀-배열
     - title: "Drawings"
       titlekr: "도면"
       url: /dxl/pro_plus/h54p-100-s500-r/#drawings
@@ -11741,6 +11902,14 @@ h42p-020-s300-r:
       titlekr: "커넥터 정보"
       url: /dxl/pro_plus/h42p-020-s300-r/#connector-information
       urlkr: /dxl/pro_plus/h42p-020-s300-r/#커넥터-정보
+    - title: "Communication Circuit"
+      titlekr: "통신 회로"
+      url: /dxl/pro_plus/h42p-020-s300-r/#communication-circuit
+      urlkr: /dxl/pro_plus/h42p-020-s300-r/#통신-회로
+    - title: "Pin Arrangement"
+      titlekr: "핀 배열"
+      url: /dxl/pro_plus/h42p-020-s300-r/#pin-arrangement
+      urlkr: /dxl/pro_plus/h42p-020-s300-r/#핀-배열
     - title: "Drawings"
       titlekr: "도면"
       url: /dxl/pro_plus/h42p-020-s300-r/#drawings
@@ -11959,6 +12128,14 @@ m42p-010-s260-r:
       titlekr: "커넥터 정보"
       url: /dxl/pro_plus/m42p-010-s260-r/#connector-information
       urlkr: /dxl/pro_plus/m42p-010-s260-r/#커넥터-정보
+    - title: "Communication Circuit"
+      titlekr: "통신 회로"
+      url: /dxl/pro_plus/m42p-010-s260-r/#communication-circuit
+      urlkr: /dxl/pro_plus/m42p-010-s260-r/#통신-회로
+    - title: "Pin Arrangement"
+      titlekr: "핀 배열"
+      url: /dxl/pro_plus/m42p-010-s260-r/#pin-arrangement
+      urlkr: /dxl/pro_plus/m42p-010-s260-r/#핀-배열
     - title: "Drawings"
       titlekr: "도면"
       url: /dxl/pro_plus/m42p-010-s260-r/#drawings
@@ -12177,6 +12354,14 @@ m54p-040-s250-r:
       titlekr: "커넥터 정보"
       url: /dxl/pro_plus/m54p-040-s250-r/#connector-information
       urlkr: /dxl/pro_plus/m54p-040-s250-r/#커넥터-정보
+    - title: "Communication Circuit"
+      titlekr: "통신 회로"
+      url: /dxl/pro_plus/m54p-040-s250-r/#communication-circuit
+      urlkr: /dxl/pro_plus/m54p-040-s250-r/#통신-회로
+    - title: "Pin Arrangement"
+      titlekr: "핀 배열"
+      url: /dxl/pro_plus/m54p-040-s250-r/#pin-arrangement
+      urlkr: /dxl/pro_plus/m54p-040-s250-r/#핀-배열
     - title: "Drawings"
       titlekr: "도면"
       url: /dxl/pro_plus/m54p-040-s250-r/#drawings
@@ -12395,6 +12580,14 @@ m54p-060-s250-r:
       titlekr: "커넥터 정보"
       url: /dxl/pro_plus/m54p-060-s250-r/#connector-information
       urlkr: /dxl/pro_plus/m54p-060-s250-r/#커넥터-정보
+    - title: "Communication Circuit"
+      titlekr: "통신 회로"
+      url: /dxl/pro_plus/m54p-060-s250-r/#communication-circuit
+      urlkr: /dxl/pro_plus/m54p-060-s250-r/#통신-회로
+    - title: "Pin Arrangement"
+      titlekr: "핀 배열"
+      url: /dxl/pro_plus/m54p-060-s250-r/#pin-arrangement
+      urlkr: /dxl/pro_plus/m54p-060-s250-r/#핀-배열
     - title: "Drawings"
       titlekr: "도면"
       url: /dxl/pro_plus/m54p-060-s250-r/#drawings
@@ -12563,6 +12756,8 @@ protocol2:
         url: /dxl/protocol2/#bulk-write
 
 all-edu:
+  - title: "PLAY"
+    url: /edu/#play
   - title: "OLLO"
     titlekr: "올로"
     url: /edu/#ollo
@@ -12583,6 +12778,8 @@ all-edu:
     urlkr: /edu/#스마트-iii
   - titlekr: "IoT"
     urlkr: /edu/#iot
+  - titlekr : "실과로봇"
+    urlkr: /edu/#실과로봇
   - titlekr: "자동차 로봇"
     urlkr: /edu/#자동차-로봇
   - title: "BIOLOID"
@@ -12593,6 +12790,76 @@ all-edu:
     titlekr: "미니"
     url: /edu/#mini
     urlkr: /edu/#미니
+
+#PLAY 300 sidebar
+play-300:
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /edu/play/play-300/#introduction
+  - title: "Part List"
+    titlekr: "부품 목록"
+    url: /edu/play/play-300/#part-list
+  - title: "Quick Start"
+    titlekr: "작동하기"
+    url: /edu/play/play-300/#quick-start
+    children:
+      - title: "Assemble Robot"
+        url: /edu/play/play-300/#assemble-robot
+      - title: "Activate Robot"
+        url: /edu/play/play-300/#activate-robot
+  - title: "Examples"
+    titlekr: "교안예제"
+    url: /edu/play/play-300/#examples
+
+#PLAY 600 sidebar
+play-600:
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /edu/play/play-600/#introduction
+  - title: "Part List"
+    titlekr: "부품 목록"
+    url: /edu/play/play-600/#part-list
+  - title: "Quick Start"
+    titlekr: "작동하기"
+    url: /edu/play/play-600/#quick-start
+    children:
+      - title: "Assemble Robot"
+        url: /edu/play/play-600/#assemble-robot
+      - title: "Activate Robot"
+        url: /edu/play/play-600/#activate-robot
+  - title: "Examples"
+    titlekr: "교안예제"
+    url: /edu/play/play-600/#examples
+
+#PLAY 700 sidebar
+play-700:
+  - title: "Introduction"
+    url: /edu/play/play-700/#introduction
+  - title: "Part List"
+    url: /edu/play/play-700/#part-list
+  - title: "Quick Start"
+    url: /edu/play/play-700/#quick-start
+    children:
+      - title: "Smart Device"
+        url: /edu/play/play-700/#smart-device
+        children:
+          - title: "App Install"
+            url: /edu/play/play-700/#app-install
+          - title: "Select Example"
+            url: /edu/play/play-700/#select-example
+          - title: "Connect and Run"
+            url: /edu/play/play-700/#connect-and-run
+      - title: "Windows PC"
+        url: /edu/play/play-700/#windows-pc
+        children:
+          - title: "Software Install"
+            url: /edu/play/play-700/#software-install
+          - title: "Connect Bluetooth"
+            url: /edu/play/play-700/#connect-bluetooth
+          - title: "Run Scratch"
+            url: /edu/play/play-700/#run-scratch
+  - title: "Video Tutorials"
+    url: /edu/play/play-700/#video-tutorials
 
 #Ollo Bug Kit sidebar
 ollo_bugkit:
@@ -13660,7 +13927,7 @@ mini:
     - title: "ID Map"
       titlekr: "ID Map"
       url: /edu/mini/#id-map
-      urlkr: /edu/mini/#xl32-id-map
+      urlkr: /edu/mini/#id-map
 
 car:
   - titlekr: "개요"
@@ -15004,7 +15271,7 @@ turtlebot3:
   - title: "Manipulation"
     url: /platform/turtlebot3/manipulation/#manipulation
     children:
-    - title: "TurtleBot3 with OpenManipulator"
+    - title: "TurtleBot3 with OpenMANIPULATOR"
       url: /platform/turtlebot3/manipulation/#turtlebot3-with-openmanipulator
     - title: "Software Setup"
       url: /platform/turtlebot3/manipulation/#software-setup
@@ -15088,7 +15355,7 @@ turtlebot3:
     children:
     - title: "TurtleBot3 Friends: Car"
       url: /platform/turtlebot3/locomotion/#turtlebot3-friends-car
-    - title: "TurtleBot3 Friends: OpenManipulator"
+    - title: "TurtleBot3 Friends: OpenMANIPULATOR"
       url: /platform/turtlebot3/locomotion/#turtlebot3-friends-openmanipulator
     - title: "TurtleBot3 Friends: Segway"
       url: /platform/turtlebot3/locomotion/#turtlebot3-friends-segway
@@ -15122,7 +15389,7 @@ turtlebot3:
     - title: "Automatic Parking Vision"
       url: /platform/turtlebot3/applications/#automatic-parking-vision
     - title: "Load Multiple TurtleBot3s"
-      url : /platform/turtlebot3/applications/#load-multiple-turtlebot3s
+      url: /platform/turtlebot3/applications/#load-multiple-turtlebot3s
   - title: "Learn"
     url: /platform/turtlebot3/learn/#learn
     children:
@@ -15264,7 +15531,13 @@ turtlebot3:
     - title: "About OST (Open Source Team)"
       url: /platform/turtlebot3/contact_us/#about-ost-open-source-team
 
-#OpenManipulator-X
+#OpenMANIPULATOR-MAIN
+openmanipulator:
+  - title : "OpenMANIPULATOR-X"
+    url: /platform/openmanipulator_main/#openmanipulator-x
+  - title : "OpenMANIPULATOR-PRO"
+    url: /platform/openmanipulator_main/#openmanipulator-pro
+#OpenMANIPULATOR-X
 openmanipulator_x:
   - title: "Overview"
     url: /platform/openmanipulator_x/overview/#overview
@@ -15286,14 +15559,14 @@ openmanipulator_x:
         url: /platform/openmanipulator_x/specification/#hardware-specification
       - title: "Dimension"
         url: /platform/openmanipulator_x/specification/#dimension
-      - title: "Repeatability"
-        url: /platform/openmanipulator_x/specification/#repeatability
+#      - title: "Repeatability"
+#        url: /platform/openmanipulator_x/specification/#repeatability
   - title: "Getting Started"
     url: /platform/openmanipulator_x/getting_started/#getting-started
     children:
-      - title: "About OpenManipulator-X"
+      - title: "About OpenMANIPULATOR-X"
         url: /platform/openmanipulator_x/getting_started/#about-openmanipulator-x
-      - title: "OpenManipulator-X Setup"
+      - title: "OpenMANIPULATOR-X Setup"
         url: /platform/openmanipulator_x/getting_started/#openmanipulator-x-setup
       - title: "Let's try Basic Operation"
         url: /platform/openmanipulator_x/getting_started/#lets-try-basic-operation
@@ -15374,16 +15647,21 @@ openmanipulator_x:
       - title: "Camera Application"
         url: /platform/openmanipulator_x/ros_applications/#camera-application
         children:
-          - title: "Astra Pro"
-            url: /platform/openmanipulator_x/ros_applications/#astra-pro
-          - title: "Realsense D435"
-            url: /platform/openmanipulator_x/ros_applications/#realsense-d435
-          - title: "Raspberry Pi Camera V2"
-            url: /platform/openmanipulator_x/ros_applications/#raspberry-pi-camera-v2
-          - title: "AR Marker package"
-            url: /platform/openmanipulator_x/ros_applications/#ar-marker-package
+          - title: "Install Camera Package"
+            url: /platform/openmanipulator_x/ros_applications/#install-camera-package
+          - title: "Install AR Marker Package"
+            url: /platform/openmanipulator_x/ros_applications/#install-ar-marker-package
+          - title: "Pick and Place Example"
+            url: /platform/openmanipulator_x/ros_applications/#pick-and-place-example
       - title: "Master Slave"
         url: /platform/openmanipulator_x/ros_applications/#master-slave
+        children:
+          - title: "Setup of OpenMANIPULATOR-X"
+            url: /platform/openmanipulator_x/ros_applications/#setup-of-openmanipulator-x
+          - title: "Install Package"
+            url: /platform/openmanipulator_x/ros_applications/#install-package
+          - title: "Execute Example"
+            url: /platform/openmanipulator_x/ros_applications/#execute-example
   - title: "[OpenCR] Setup"
     url: /platform/openmanipulator_x/opencr_setup/#opencr-setup
     children:
@@ -15391,26 +15669,19 @@ openmanipulator_x:
         url: /platform/openmanipulator_x/opencr_setup/#connection
       - title: "Arduino IDE Setup"
         url: /platform/openmanipulator_x/opencr_setup/#arduino-ide-setup
-        children:
-          - title: "Install on Linux"
-            url: /platform/openmanipulator_x/opencr_setup/#install-on-linux
-          - title: "Install on Mac"
-            url: /platform/openmanipulator_x/opencr_setup/#install-on-mac
-          - title: "Install on Windows"
-            url: /platform/openmanipulator_x/opencr_setup/#install-on-windows
   - title: "[OpenCR] Operation"
     url: /platform/openmanipulator_x/opencr_operation/#opencr-operation
     children:
-      - title: "Upload Controller"
-        url: /platform/openmanipulator_x/opencr_operation/#upload-controller
-      - title: "GUI Program"
-        url: /platform/openmanipulator_x/opencr_operation/#gui-program
+      - title: "Upload Controller Program"
+        url: /platform/openmanipulator_x/opencr_operation/#upload-controller-program
+      - title: "Setup Processing(GUI)"
+        url: /platform/openmanipulator_x/opencr_operation/#setup-processinggui
+      - title: "Launch Processing(GUI)"
+        url: /platform/openmanipulator_x/opencr_operation/#launch-processinggui
         children:
-          - title: "Processing Setup"
-            url: /platform/openmanipulator_x/opencr_operation/#processing-setup
           - title: "Control Interface"
             url: /platform/openmanipulator_x/opencr_operation/#control-interface
-          - title: "Hand guiding"
+          - title: "Hand Guiding"
             url: /platform/openmanipulator_x/opencr_operation/#hand-guiding
       - title: "Teleoperation RC100"
         url: /platform/openmanipulator_x/opencr_operation/#teleoperation-rc100
@@ -15426,17 +15697,17 @@ openmanipulator_x:
   - title: "Friends"
     url: /platform/openmanipulator_x/friends/#friends
     children:
-      - title: "OpenManipulator SCARA"
+      - title: "OpenMANIPULATOR SCARA"
         url: /platform/openmanipulator_x/friends/#openmanipulator-scara
-      - title: "OpenManipulator Link"
+      - title: "OpenMANIPULATOR Link"
         url: /platform/openmanipulator_x/friends/#openmanipulator-link
-      - title: "OpenManipulator Planar"
+      - title: "OpenMANIPULATOR Planar"
         url: /platform/openmanipulator_x/friends/#openmanipulator-planar
-      - title: "OpenManipulator Delta"
+      - title: "OpenMANIPULATOR Delta"
         url: /platform/openmanipulator_x/friends/#openmanipulator-delta
-      - title: "OpenManipulator Stewart"
+      - title: "OpenMANIPULATOR Stewart"
         url: /platform/openmanipulator_x/friends/#openmanipulator-stewart
-      - title: "OpenManipulator Linear"
+      - title: "OpenMANIPULATOR Linear"
         url: /platform/openmanipulator_x/friends/#openmanipulator-linear
 
 #OpenManipulator-PRO
@@ -15457,6 +15728,8 @@ openmanipulator_pro:
         url: /platform/openmanipulator_pro/specification/#specifications
       - title: "Dimension"
         url: /platform/openmanipulator_pro/specification/#dimension
+      - title: "Workspace"
+        url: /platform/openmanipulator_pro/specification/#workspace
       - title: "Home Position"
         url: /platform/openmanipulator_pro/specification/#home-position
       - title: "D-H Configuration"
@@ -16938,6 +17211,300 @@ rplustask2:
       url: /software/rplus2/task/#faq
       urlkr: /software/rplus2/task/#자주-묻는-질문
 
+#R+ Task 3.0 sidebar
+rplustask3:
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /software/rplustask3/#introduction
+    urlkr: /software/rplustask3/#개요
+    children:
+    - title: "Compatible Products"
+      titlekr: "호환 제품"
+      url: /software/rplustask3/#compatible-products
+      urlkr: /software/rplustask3/#호환-제품
+  - title: "Getting Started"
+    titlekr: "시작하기"
+    url: /software/rplustask3/#getting-started
+    urlkr: /software/rplustask3/#시작하기
+    children:
+    - title: "Software Install"
+      titlekr: "소프트웨어 설치"
+      url: /software/rplustask3/#software-install
+      urlkr: /software/rplustask3/#소프트웨어-설치
+    - title: "Menu Descriptions"
+      titlekr: "메뉴 설명"
+      url: /software/rplustask3/#menu-descriptions
+      urlkr: /software/rplustask3/#메뉴-설명
+  - title: "Task Programming"
+    titlekr: "태스크 프로그래밍"
+    url: /software/rplustask3/#task-programming
+    urlkr: /software/rplustask3/#태스크-프로그래밍
+    children:
+    - title: "Create New File"
+      titlekr: "새 파일 만들기"
+      url: /software/rplustask3/#create-new-file
+      urlkr: /software/rplustask3/#새-파일-만들기
+    - title: "Open Task File"
+      titlekr: "태스크 예제 열기"
+      url: /software/rplustask3/#open-task-file
+      urlkr: /software/rplustask3/#태스크-예제-열기
+    - title: "Insert/Change Instruction"
+      titlekr: "명령어 삽입/변경"
+      url: /software/rplustask3/#insertchange-instruction
+      urlkr: /software/rplustask3/#명령어-삽입변경
+    - title: "Select Multiple Lines"
+      titlekr: "여러 줄 선택"
+      url: /software/rplustask3/#select-multiple-lines
+      urlkr: /software/rplustask3/#여러-줄-선택
+    - title: "Insert/Delete Line"
+      titlekr: "줄 삽입/지우기"
+      url: /software/rplustask3/#insertdelete-line
+      urlkr: /software/rplustask3/#줄-삽입지우기
+    - title: "Enable/Disable Line"
+      titlekr: "줄 활성/비활성"
+      url: /software/rplustask3/#enabledisable-line
+      urlkr: /software/rplustask3/#줄-활성비활성
+    - title: "Copy/Cut/Paste"
+      titlekr: "복사/잘라내기/붙여넣기"
+      url: /software/rplustask3/#copycutpaste
+      urlkr: /software/rplustask3/#복사잘라내기붙여넣기
+    - title: "Undo/Redo"
+      titlekr: "실행취소/다시실행"
+      url: /software/rplustask3/#undoredo
+      urlkr: /software/rplustask3/#실행취소다시실행
+    - title: "Download Task Code"
+      titlekr: "태스크 다운로드 하기"
+      url: /software/rplustask3/#download-task-code
+      urlkr: /software/rplustask3/#태스크-다운로드-하기
+    - title: "Print Output"
+      titlekr: "프로그램 출력보기"
+      url: /software/rplustask3/#print-output
+      urlkr: /software/rplustask3/#프로그램-출력보기
+  - title: "Task Instructions"
+    titlekr: "태스크 명령어"
+    url: /software/rplustask3/#task-instructions
+    urlkr: /software/rplustask3/#태스크-명령어
+    children:
+    - title: "Start/End"
+      titlekr: "시작과 끝"
+      url: /software/rplustask3/#startend
+      urlkr: /software/rplustask3/#시작과-끝
+      children:
+      - title: "Start Program"
+        titlekr: "프로그램 시작"
+        url: /software/rplustask3/#start-program
+        urlkr: /software/rplustask3/#프로그램-시작start-program
+      - title: "End Program"
+        titlekr: "프로그램 끝"
+        url: /software/rplustask3/#end-program
+        urlkr: /software/rplustask3/#프로그램-끝end-program
+      - title: "Begin Block / End Block"
+        titlekr: "구간 시작 / 구간 끝"
+        url: /software/rplustask3/#begin-block--end-block
+        urlkr: /software/rplustask3/#구간-시작구간-끝begin-blockend-block
+      - title: "Comment"
+        titlekr: "주석"
+        url: /software/rplustask3/#comment
+        urlkr: /software/rplustask3/#주석comment
+    - title: "Execute"
+      titlekr: "실행문"
+      url: /software/rplustask3/#execute
+      urlkr: /software/rplustask3/#실행문
+      children:
+      - title: "Compute"
+        titlekr: "계산"
+        url: /software/rplustask3/#compute
+        urlkr: /software/rplustask3/#계산
+      - title: "Load"
+        titlekr: "로드"
+        url: /software/rplustask3/#load
+        urlkr: /software/rplustask3/#로드
+      - title: "Math Expression"
+        titlekr: "다중 수식"
+        url: /software/rplustask3/#math-expression
+        urlkr: /software/rplustask3/#다중-수식
+      - title: "Lable/Jump"
+        titlekr: "레이블/점프"
+        url: /software/rplustask3/#lablejump
+        urlkr: /software/rplustask3/#레이블점프
+    - title: "Condition"
+      titlekr: "조건문"
+      url: /software/rplustask3/#condition
+      urlkr: /software/rplustask3/#조건문
+      children:
+      - title: "Conditional Clause?"
+        titlekr: "조건절이란?"
+        url: /software/rplustask3/#conditional-clause
+        urlkr: /software/rplustask3/#조건절이란
+      - title: "If"
+        titlekr: "만약"
+        url: /software/rplustask3/#if
+        urlkr: /software/rplustask3/#만약
+      - title: "Else If"
+        titlekr: "아니면 만약"
+        url: /software/rplustask3/#else-if
+        urlkr: /software/rplustask3/#아니면-만약
+      - title: "Else"
+        titlekr: "아니면"
+        url: /software/rplustask3/#else
+        urlkr: /software/rplustask3/#아니면
+    - title: "Loop"
+      titlekr: "반복문"
+      url: /software/rplustask3/#loop
+      urlkr: /software/rplustask3/#반복문
+      children:
+      - title: "Endless Loop"
+        titlekr: "무조건 반복"
+        url: /software/rplustask3/#endless-loop
+        urlkr: /software/rplustask3/#무조건-반복
+      - title: "Loop While"
+        titlekr: "조건 반복"
+        url: /software/rplustask3/#loop-while
+        urlkr: /software/rplustask3/#조건-반복
+      - title: "Loop For"
+        titlekr: "횟수 반복"
+        url: /software/rplustask3/#loop-for
+        urlkr: /software/rplustask3/#횟수-반복
+      - title: "Wait While"
+        titlekr: "조건 대기"
+        url: /software/rplustask3/#wait-while
+        urlkr: /software/rplustask3/#조건-대기
+      - title: "Break Loop"
+        titlekr: "반복 끝내기"
+        url: /software/rplustask3/#break-loop
+        urlkr: /software/rplustask3/#반복-끝내기
+    - title: "Function(Sub-Routine)"
+      titlekr: "함수(서브루틴)"
+      url: /software/rplustask3/#functionsub-routine
+      urlkr: /software/rplustask3/#함수서브루틴
+      children:
+      - title: "Function/Call"
+        titlekr: "함수/호출"
+        url: /software/rplustask3/#functioncall
+        urlkr: /software/rplustask3/#함수호출
+      - title: "Return"
+        titlekr: "복귀"
+        url: /software/rplustask3/#return
+        urlkr: /software/rplustask3/#복귀
+      - title: "Callback"
+        titlekr: "콜백"
+        url: /software/rplustask3/#callback
+        urlkr: /software/rplustask3/#콜백
+  - title: "Task Parameters"
+    titlekr: "태스크 파라미터"
+    url: /software/rplustask3/#task-parameters
+    urlkr: /software/rplustask3/#태스크-파라미터
+    children:
+    - title: "Controllers"
+      titlekr: "제어기 장치"
+      url: /software/rplustask3/#controllers
+      urlkr: /software/rplustask3/#제어기-장치
+    - title: "Dynamixel"
+      titlekr: "다이나믹셀 장치"
+      url: /software/rplustask3/#dynamixel
+      urlkr: /software/rplustask3/#다이나믹셀-장치
+    - titlekr: "스마트 장치"
+      urlkr: /software/rplustask3/#스마트-장치
+    - title: "Common"
+      titlekr: "공통"
+      url: /software/rplustask3/#common
+      urlkr: /software/rplustask3/#공통
+  - title: "Motion Programming"
+    titlekr: "모션 프로그래밍"
+    url: /software/rplustask3/#motion-programming
+    urlkr: /software/rplustask3/#모션-프로그래밍
+    children:
+    - title: "Open Motion File"
+      titlekr: "모션 예제 열기"
+      url: /software/rplustask3/#open-motion-file
+      urlkr: /software/rplustask3/#모션-예제-열기
+    - title: ""
+      titlekr: "로봇 연결하기"
+      url: /software/rplustask3/#
+      urlkr: /software/rplustask3/#로봇-연결하기
+    - title: ""
+      titlekr: "새 모션 유닛 만들기"
+      url: /software/rplustask3/#
+      urlkr: /software/rplustask3/#새-모션-유닛-만들기
+    - title: ""
+      titlekr: "모션 유닛 편집하기"
+      url: /software/rplustask3/#
+      urlkr: /software/rplustask3/#모션-유닛-편집하기
+    - title: ""
+      titlekr: "새 모션 만들기"
+      url: /software/rplustask3/#
+      urlkr: /software/rplustask3/#새-모션-만들기
+    - title: ""
+      titlekr: "모션 편집하기"
+      url: /software/rplustask3/#
+      urlkr: /software/rplustask3/#모션-편집하기
+    - title: ""
+      titlekr: "모션 그룹 만들기"
+      url: /software/rplustask3/#
+      urlkr: /software/rplustask3/#모션-그룹-만들기
+    - title: ""
+      titlekr: "모션 다운로드 하기"
+      url: /software/rplustask3/#
+      urlkr: /software/rplustask3/#모션-다운로드-하기
+    - title: ""
+      titlekr: "모션 저장하기"
+      url: /software/rplustask3/#
+      urlkr: /software/rplustask3/#모션-저장하기
+  - title: "Useful Tips"
+    titlekr: "유용한 정보"
+    url: /software/rplustask3/#useful-tips
+    urlkr: /software/rplustask3/#유용한-정보
+    children:
+    - title: "Search Variables/Functions"
+      titlekr: "변수, 함수 참조 찾기"
+      url: /software/rplustask3/#search-variablesfunctions
+      urlkr: /software/rplustask3/#변수-함수-참조-찾기
+    - title: "Search Keyword"
+      titlekr: "키워드 찾기"
+      url: /software/rplustask3/#search-keyword
+      urlkr: /software/rplustask3/#키워드-찾기
+    - title: "Grammar/Compile Check"
+      titlekr: "문법검사/컴파일 결과 확인하기"
+      url: /software/rplustask3/#grammarcompile-check
+      urlkr: /software/rplustask3/#문법검사컴파일-결과-확인하기
+    - title: ""
+      titlekr: "자유 형태 로봇 생성"
+      url: /software/rplustask3/#
+      urlkr: /software/rplustask3/#자유-형태-로봇-생성
+    - title: ""
+      titlekr: "로봇 모델 변경"
+      url: /software/rplustask3/#
+      urlkr: /software/rplustask3/#로봇-모델-변경
+    - title: ""
+      titlekr: "포즈 미러링"
+      url: /software/rplustask3/#
+      urlkr: /software/rplustask3/#포즈-미러링
+    - title: ""
+      titlekr: "모션 호출번호 수정"
+      url: /software/rplustask3/#
+      urlkr: /software/rplustask3/#모션-호출번호-수정
+    - title: ""
+      titlekr: "모션 파일간 데이터 복사"
+      url: /software/rplustask3/#
+      urlkr: /software/rplustask3/#모션-파일간-데이터-복사
+    - title: ""
+      titlekr: "오프셋 편집"
+      url: /software/rplustask3/#
+      urlkr: /software/rplustask3/#오프셋-편집
+    - title: ""
+      titlekr: "구 버전 파일 변환하기"
+      url: /software/rplustask3/#
+      urlkr: /software/rplustask3/#구-버전-파일-변환하기
+    - title: ""
+      titlekr: "3D 카메라 조작"
+      url: /software/rplustask3/#
+      urlkr: /software/rplustask3/#3d-카메라-조작
+    - title: ""
+      titlekr: "단축키"
+      url: /software/rplustask3/#
+      urlkr: /software/rplustask3/#단축키
+
+
 #R+ Motion 2.0 sidebar
 rplusmotion2:
   - title: "Introduction"
@@ -17926,249 +18493,24 @@ robotis_manipulator_libs:
     children:
     - title: "ROS Package"
       url: /software/robotis_manipulator_libs/#ros-package
+      childreb:
+      - title: "Install Ubuntu on PC"
+        url: /software/robotis_manipulator_libs/#install-ubuntu-on-pc
+      - title: "Install ROS on PC"
+        url: /software/robotis_manipulator_libs/#install-ros-on-pc
+      - title: "Install ROS Package"
+        url: /software/robotis_manipulator_libs/#install-ros-package
     - title: "OpenCR"
       url: /software/robotis_manipulator_libs/#opencr
-  - title: "Struct List"
-    url: /software/robotis_manipulator_libs/#struct-list
-    children:
-    - title: "Value Set"
-      url: /software/robotis_manipulator_libs/#value-set
       children:
-      - title: "Pose"
-        url: /software/robotis_manipulator_libs/#pose
-      - title: "Value"
-        url: /software/robotis_manipulator_libs/#value
-    - title: "Trajectory Set"
-      url: /software/robotis_manipulator_libs/#trajectory-set
-      children:
-      - title: "JointWaypoint"
-        url: /software/robotis_manipulator_libs/#jointwaypoint
-      - title: "TaskWaypoint"
-        url: /software/robotis_manipulator_libs/#taskwaypoint
-  - title: "Class List"
-    url: /software/robotis_manipulator_libs/#class-list
-    children:
-    - title: "Manipulator Class"
-      url: /software/robotis_manipulator_libs/#manipulator-class
-      children:
-      - title: "Add Functions"
-        url: /software/robotis_manipulator_libs/#add-functions
-      - title: "Set Functions"
-        url: /software/robotis_manipulator_libs/#set-functions
-      - title: "get Functions"
-        url: /software/robotis_manipulator_libs/#get-functions
-      - title: "Check Functions"
-        url: /software/robotis_manipulator_libs/#check-functions
-      - title: "Find Functions"
-        url: /software/robotis_manipulator_libs/#find-functions
-    - title: "Trajectory Class"
-      url: /software/robotis_manipulator_libs/#trajectory-class
-      children:
-      - title: "Trajectory Time Functions"
-        url: /software/robotis_manipulator_libs/#trajectory-time-functions
-      - title: "Manipulator Functions"
-        url: /software/robotis_manipulator_libs/#manipulator-functions
-      - title: "Waypoint Functions"
-        url: /software/robotis_manipulator_libs/#waypoint-functions
-      - title: "Get Trajectory Functions"
-        url: /software/robotis_manipulator_libs/#get-trajectory-functions
-      - title: "Make Trajectory Functions"
-        url: /software/robotis_manipulator_libs/#make-trajectory-functions
-      - title: "Custom Trajectory setting Functions"
-        url: /software/robotis_manipulator_libs/#custom-trajectory-setting-functions
-      - title: "Tool Functions"
-        url: /software/robotis_manipulator_libs/#tool-functions
-    - title: "(Virtual) Kinematics Class"
-      url: /software/robotis_manipulator_libs/#virtual-kinematics-class
-    - title: "(Virtual) JointActuator Class"
-      url: /software/robotis_manipulator_libs/#virtual-jointactuator-class
-    - title: "(Virtual) ToolActuator Class"
-      url: /software/robotis_manipulator_libs/#virtual-toolactuator-class
-    - title: "(Virtual) CustomJointTrajectory Class"
-      url: /software/robotis_manipulator_libs/#virtual-customjointtrajectory-class
-    - title: "(Virtual) CustomTaskTrajectory Class"
-      url: /software/robotis_manipulator_libs/#virtual-customtasktrajectory-class
+      - title: "Connection"
+        url: /software/robotis_manipulator_libs/#connection
+      - title: "Arduino IDE Setup"
+        url: /software/robotis_manipulator_libs/#arduino-ide-setup
   - title: "API References"
     url: /software/robotis_manipulator_libs/#api-references
-    children:
-    - title: "Private Parameters"
-      url: /software/robotis_manipulator_libs/#pravate-parameters
-    - title: "Initialize Functions"
-      url: /software/robotis_manipulator_libs/#initializa-functions
-      children:
-      - title: "addWorld"
-        url: /software/robotis_manipulator_libs/#addworld
-      - title: "addJoint"
-        url: /software/robotis_manipulator_libs/#addjoint
-      - title: "addTool"
-        url: /software/robotis_manipulator_libs/#addtool
-      - title: "addComponentChild"
-        url: /software/robotis_manipulator_libs/#addcomponentchild
-      - title: "printManipulatorSetting"
-        url: /software/robotis_manipulator_libs/#printmanipulatorsetting
-      - title: "addKinematics"
-        url: /software/robotis_manipulator_libs/#addkinematics
-      - title: "addJointActuator"
-        url: /software/robotis_manipulator_libs/#addjointactuator
-      - title: "addToolActuator"
-        url: /software/robotis_manipulator_libs/#addtoolactuator
-      - title: "addCustomTrajectory"
-        url: /software/robotis_manipulator_libs/#addcustomtrajectory
-    - title: "Manipulator data get Functions"
-      url: /software/robotis_manipulator_libs/#manipulator-data-get-functions
-      children:
-      - title: "getManipulator"
-        url: /software/robotis_manipulator_libs/#getmanipulator
-      - title: "getJointValue"
-        url: /software/robotis_manipulator_libs/#getjointvalue
-      - title: "getToolValue"
-        url: /software/robotis_manipulator_libs/#gettoolvalue
-      - title: "getAllActiveJointValue"
-        url: /software/robotis_manipulator_libs/#getallactivejointvalue
-      - title: "getAllJointValue"
-        url: /software/robotis_manipulator_libs/#getalljointvalue
-      - title: "getAllToolPosition"
-        url: /software/robotis_manipulator_libs/#getalltoolposition
-      - title: "getAllToolValue"
-        url: /software/robotis_manipulator_libs/#getKinematicPose
-      - title: "getDynamicPose"
-        url: /software/robotis_manipulator_libs/#getdynamicpose
-      - title: "getPose"
-        url: /software/robotis_manipulator_libs/#getpose
-    - title: "Kinematics Functions"
-      url: /software/robotis_manipulator_libs/#kinematics-functions
-      children:
-      - title: "jacobian"
-        url: /software/robotis_manipulator_libs/#jacobian
-      - title: "solveForwardKinematics"
-        url: /software/robotis_manipulator_libs/#solveforwardkinematics
-      - title: "solveInverseKinematics"
-        url: /software/robotis_manipulator_libs/#solveinversekinematics
-      - title: "setKinematicsOption"
-        url: /software/robotis_manipulator_libs/#setkinematicsoption
-    - title: "Actuator Functions"
-      url: /software/robotis_manipulator_libs/#actuator-functions
-      children:
-      - title: "setJointActuatorMode"
-        url: /software/robotis_manipulator_libs/#setjointactuatormode
-      - title: "setToolActuatorMode"
-        url: /software/robotis_manipulator_libs/#settoolactuatormode
-      - title: "getJointActuatorId"
-        url: /software/robotis_manipulator_libs/#getjointactuatorid
-      - title: "getToolActuatorId"
-        url: /software/robotis_manipulator_libs/#gettoolactuatorid
-      - title: "enableActuator"
-        url: /software/robotis_manipulator_libs/#enableactuator
-      - title: "disableActuator"
-        url: /software/robotis_manipulator_libs/#disableactuator
-      - title: "enableAllJointActuator"
-        url: /software/robotis_manipulator_libs/#enablealljointactuator
-      - title: "disableAllJointActuator"
-        url: /software/robotis_manipulator_libs/#disablealljointactuator
-      - title: "enableAllToolActuator"
-        url: /software/robotis_manipulator_libs/#enablealltoolactuator
-      - title: "disableAllToolActuator"
-        url: /software/robotis_manipulator_libs/#disablealltoolactuator
-      - title: "enableAllActuator"
-        url: /software/robotis_manipulator_libs/#enableallactuator
-      - title: "disableAllActuator"
-        url: /software/robotis_manipulator_libs/#disableallactuator
-      - title: "getActuatorEnabledState"
-        url: /software/robotis_manipulator_libs/#getactuatorenabledstate
-      - title: "sendJointActuatorValue"
-        url: /software/robotis_manipulator_libs/#sendjointactuatorvalue
-      - title: "sendMultipleJointActuatorValue"
-        url: /software/robotis_manipulator_libs/#sendmultiplejointactuatorvalue
-      - title: "sendAllJointActuatorValue"
-        url: /software/robotis_manipulator_libs/#sendalljointactuatorvalue
-      - title: "receiveJointActuatorValue"
-        url: /software/robotis_manipulator_libs/#receivejointactuatorvalue
-      - title: "receiveMultipleJointActuatorValue"
-        url: /software/robotis_manipulator_libs/#receivemultiplejointactuatorvalue
-      - title: "receiveAllJointActuatorValue"
-        url: /software/robotis_manipulator_libs/#receivealljointactuatorvalue
-      - title: "sendToolActuatorValue"
-        url: /software/robotis_manipulator_libs/#sendtoolactuatorvalue
-      - title: "sendMultipleToolActuatorValue"
-        url: /software/robotis_manipulator_libs/#sendmultipletoolactuatorvalue
-      - title: "sendAllToolActuatorValue"
-        url: /software/robotis_manipulator_libs/#sendalltoolactuatorvalue
-      - title: "receiveToolActuatorValue"
-        url: /software/robotis_manipulator_libs/#receivetoolactuatorvalue
-      - title: "receiveMultipleToolActuatorValue"
-        url: /software/robotis_manipulator_libs/#receivemultipletoolactuatorvalue
-      - title: "receiveAllToolActuatorValue"
-        url: /software/robotis_manipulator_libs/#receivealltoolactuatorvalue
-    - title: "Time Functions"
-      url: /software/robotis_manipulator_libs/#Time-functions
-      children:
-      - title: "getTrajectoryMoveTime"
-        url: /software/robotis_manipulator_libs/#gettrajectorymovetime
-      - title: "getMovingState"
-        url: /software/robotis_manipulator_libs/#getmovingstate
-    - title: "Check Joint Limit Functions"
-      url: /software/robotis_manipulator_libs/#check-joint-limit-functions
-      children:
-      - title: "checkJointLimit"
-        url: /software/robotis_manipulator_libs/#checkjointlimit
-    - title: "Trajectory Functions"
-      url: /software/robotis_manipulator_libs/#trajectory-functions
-      children:
-      - title: "getTrajectory"
-        url: /software/robotis_manipulator_libs/#gettrajectory
-      - title: "makeJointTrajectoryFromPresentPosition"
-        url: /software/robotis_manipulator_libs/#makejointtrajectoryfrompresentposition
-      - title: "makeJointTrajectory"
-        url: /software/robotis_manipulator_libs/#makejointtrajectory
-      - title: "makeTaskTrajectoryFromPresentPose"
-        url: /software/robotis_manipulator_libs/#maketasktrajectoryfrompresentpose
-      - title: "makeTaskTrajectory"
-        url: /software/robotis_manipulator_libs/#maketasktrajectory
-      - title: "setCustomTrajectoryOption"
-        url: /software/robotis_manipulator_libs/#setcustomtrajectoryoption
-      - title: "makeCustomTrajectory"
-        url: /software/robotis_manipulator_libs/#makecustomtrajectory
-      - title: "sleepTrajectory"
-        url: /software/robotis_manipulator_libs/#sleeptrajectory
-      - title: "makeToolTrajectory"
-        url: /software/robotis_manipulator_libs/#maketooltrajectory
-      - title: "getJointGoalValueFromTrajectory"
-        url: /software/robotis_manipulator_libs/#getjointgoalvaluefromtrajectory
-      - title: "getJointGoalValueFromTrajectoryTickTime"
-        url: /software/robotis_manipulator_libs/#getjointgoalvaluefromtrajectoryticktime
-      - title: "getToolGoalValue"
-        url: /software/robotis_manipulator_libs/#gettoolgoalvalue
-  - title: "Additional Function API"
-    url: /software/robotis_manipulator_libs/#additional-function-api
-    children:
-    - title: "math"
-      url: /software/robotis_manipulator_libs/#math
-      children:
-      - title: "Make Functions"
-        url: /software/robotis_manipulator_libs/#make-functions
-      - title: "Convert Functions"
-        url: /software/robotis_manipulator_libs/#convert-functions
-      - title: "Math Functions"
-        url: /software/robotis_manipulator_libs/#math-functions
-    - title: "log"
-      url: /software/robotis_manipulator_libs/#log
-      children:
-      - title: "print"
-        url: /software/robotis_manipulator_libs/#print
-      - title: "println"
-        url: /software/robotis_manipulator_libs/#println
-      - title: "info"
-        url: /software/robotis_manipulator_libs/#info
-      - title: "warn"
-        url: /software/robotis_manipulator_libs/#warn
-      - title: "error"
-        url: /software/robotis_manipulator_libs/#error
-      - title: "print vector"
-        url: /software/robotis_manipulator_libs/#print-vector
-      - title: "print matrix"
-        url: /software/robotis_manipulator_libs/#print-matrix
-  - title: "API Usage Tutorials"
-    url: /software/robotis_manipulator_libs/#api-usage-tutorials
+  - title: "Usage Tutorials"
+    url: /software/robotis_manipulator_libs/#usage-tutorials
     children:
     - title: "Step1 Make Manipulator Class"
       url: /software/robotis_manipulator_libs/#step1-make-manipulator-class
@@ -18716,9 +19058,7 @@ dynamixel_workbench:
       - title: "Controllers"
         url: /software/dynamixel/dynamixel_workbench/#controllers
       - title: "Operators"
-        url: /software/dynamixel/dynamixel_workbench/#operators
-      - title: "Moveit! Bridge"
-        url: /software/dynamixel/dynamixel_workbench/#moveit-bridge
+        url: /software/dynamixel/dynamixel_workbench/#operators              
     - title: "OpenCR and OpenCM"
       url: /software/dynamixel/dynamixel_workbench/#opencr-and-opencm-tutorials
       children:
@@ -19199,6 +19539,41 @@ embedded_c_cm530:
         titlekr: "RC100과 ZIGBee"
         url: /software/embedded_sdk/embedded_c_cm530/#rc-100zigbee
         urlkr: /software/embedded_sdk/embedded_c_cm530/#rc100과-zigbee
+
+#CM-50 Controller sidebar
+cm-50:
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /parts/controller/cm-50/#introduction
+    urlkr: /parts/controller/cm-50/#개요
+  - title: "Specifications"
+    titlekr: "제품 사양"
+    url: /parts/controller/cm-50/#specifications
+    urlkr: /parts/controller/cm-50/#제품-사양
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /parts/controller/cm-50/#control-table
+    urlkr: /parts/controller/cm-50/#컨트롤-테이블
+  - title: "Layout"
+    titlekr: "각 부 명칭"
+    url: /parts/controller/cm-50/#layout
+    urlkr: /parts/controller/cm-50/#각-부-명칭
+  - title: "Connecting Power"
+    titlekr: "전원 연결"
+    url: /parts/controller/cm-50/#connecting-power
+    urlkr: /parts/controller/cm-50/#전원-연결
+  - title: "How to Operate"
+    titlekr: "작동 방법"
+    url: /parts/controller/cm-50/#how-to-operate
+    urlkr: /parts/controller/cm-50/#작동-방법
+  - title: "Connect to PC"
+    titlekr: "PC 연결"
+    url: /parts/controller/cm-50/#connect-to-pc
+    urlkr: /parts/controller/cm-50/#pc-연결
+  - title: "Wireless Communication"
+    titlekr: "무선통신 연결"
+    url: /parts/controller/cm-50/#wireless-communication
+    urlkr: /parts/controller/cm-50/#무선-통신-모듈-연결하기
 
 #CM-100A Controller sidebar
 cm-100:
@@ -19795,8 +20170,6 @@ opencr10:
         url: /parts/controller/opencr10/#porting-to-arduino-idelinux
       - title: "Remove Modemmanager"
         url: /parts/controller/opencr10/#remove-modemmanager
-      - title: "Writing Bootloader"
-        url: /parts/controller/opencr10/#writing-bootloaderlinux
     - title: "Install on Mac"
       url: /parts/controller/opencr10/#install-on-mac
       children:
@@ -19806,8 +20179,6 @@ opencr10:
         url: /parts/controller/opencr10/#run-arduino-idemac
       - title: "Porting to Arduino IDE"
         url: /parts/controller/opencr10/#porting-to-arduino-idemac
-      - title: "Writing Bootloader"
-        url: /parts/controller/opencr10/#writing-bootloadermac
     - title: "Install on Windows"
       url: /parts/controller/opencr10/#install-on-windows
       children:
@@ -19849,7 +20220,7 @@ opencr10:
         url: /parts/controller/opencr10/#joystic-sensor
     - title: "Dynamixel Workbench"
       url: /parts/controller/opencr10/#dynamixel-workbench
-    - title: "OpenManipulator"
+    - title: "OpenMANIPULATOR"
       url: /parts/controller/opencr10/#openmanipulator
   - title: "Downloads"
     url: /parts/controller/opencr10/#downloads
@@ -19858,8 +20229,6 @@ opencr10:
     children:
     - title: "Recovery Mode"
       url: /parts/controller/opencr10/#recovery-mode
-    - title: "Install Windows Driver"
-      url: /parts/controller/opencr10/#install-windows-driver
     - title: "Certifications"
       url: /parts/controller/opencr10/#certifications
   - title: "Bootloader"
@@ -19882,17 +20251,17 @@ opencr10:
         url: /parts/controller/opencr10/#message-processing
       - title: "Folder Structure"
         url: /parts/controller/opencr10/#folder-structure
-    - title: "Update Bootloader(Linux)"
-      url: /parts/controller/opencr10/#update-bootloaderlinux
+    - title: "Update Bootloader"
+      url: /parts/controller/opencr10/#update-bootloader
       children:
       - title: "Enter DFU Mode"
         url: /parts/controller/opencr10/#enter-dfu-mode
       - title: "Check Boot Mode"
         url: /parts/controller/opencr10/#check-boot-mode
-      - title: "Update Bootloader"
-        url: /parts/controller/opencr10/#update-bootloader
-    - title: "Firmware Recovery Mode"
-      url: /parts/controller/opencr10/#firmware-recovery-mode
+      - title: "Burn Bootloader"
+        url: /parts/controller/opencr10/#burn-bootloader
+      - title: "Driver Install(Optional)"
+        url: /parts/controller/opencr10/#driver-installoptional
   - title: "Downloader"
     url: /parts/controller/opencr10/#downloader
     children:
@@ -19955,18 +20324,14 @@ dynamixel_shield:
     url: /parts/interface/dynamixel_shield/#library-api
     urlkr: /parts/interface/dynamixel_shield/#라이브러리-api
     children:
-    - title: "Initialize Library"
-      titlekr: "라이브러리 초기화"
-      url: /parts/interface/dynamixel_shield/#initialize-library
-      urlkr: /parts/interface/dynamixel_shield/#라이브러리-초기화
-    - title: "Connect Dynamixel"
-      titlekr: "다이나믹셀 연결"
-      url: /parts/interface/dynamixel_shield/#connect-dynamixel
-      urlkr: /parts/interface/dynamixel_shield/#다이나믹셀-연결
-    - title: "Available APIs"
-      titlekr: "사용 가능한 API 목록"
-      url: /parts/interface/dynamixel_shield/#available-apis
-      urlkr: /parts/interface/dynamixel_shield/#사용-가능한-api-목록
+    - title: DYNAMIXELShield(v0.1.0 or above)
+      titlekr: DYNAMIXELShield(v0.1.0 or above)
+      url: /parts/interface/dynamixel_shield/#dynamixelshieldv010-or-above
+      urlkr: /parts/interface/dynamixel_shield/#다이나믹셀-쉴드v010-이상
+    - title: DYNAMIXELShield
+      titlekr: DYNAMIXELShield
+      url: /parts/interface/dynamixel_shield/#dynamixelshieldv005
+      urlkr: /parts/interface/dynamixel_shield/#다이나믹셀-쉴드v005
 
 u2d2_power_hub:
   - title: "Introduction"
@@ -20732,6 +21097,12 @@ u2d2:
 
 #FAQ sidebar
 faq:
+
+
+#FAQ Protocol Compatibility Table
+faq_protocol_compatibility_table:
+  - title: "Protocol Compatibitily"
+    url: /docs/en/faq/faq_protocol_compatibility_table
 
 #FAQ Platform
 faq_platform:

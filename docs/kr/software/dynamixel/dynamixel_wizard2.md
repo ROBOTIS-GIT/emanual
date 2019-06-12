@@ -13,7 +13,7 @@ sidebar:
 
 # [개요](#개요)
 
-![](/assets/images/sw/dynamixel/wizard2/wizard2_main_000.png)
+![](/assets/images/sw/dynamixel/wizard2/wizard2_main_000.jpg)
 
 ## [다이나믹셀 위자드 2.0](#다이나믹셀-위자드-20)
 
@@ -38,6 +38,7 @@ sidebar:
 
 - Windows 7 / 8 / 10
 - Ubuntu 16 / 18
+- Mac OS X (10.11 El Capitan or above)
 
 ## [펌웨어 정의](#펌웨어-정의)
 
@@ -52,23 +53,25 @@ sidebar:
 
 ## [지원 제품 목록](#지원-제품-목록)
 
-| DYNAMIXEL Series |                    |                       |                       |                         |                 |
-|:-----------------|:-------------------|:----------------------|:----------------------|:------------------------|:----------------|
-| **DX**           | [DX-113]           | [DX-116]              | [DX-117]              |                         |                 |
-| **AX**           | [AX-12W]           | [AX-12+/12A]          | [AX-18F/18A]          |                         |                 |
-| **RX**           | [RX-10]            | [RX-24F]              | [RX-28]               | [RX-64]                 |                 |
-| **EX**           | [EX-106+]          |                       |                       |                         |                 |
-| **MX**           | [MX-12W]           | [MX-28], [MX-28(2.0)] | [MX-64], [MX-64(2.0)] | [MX-106], [MX-106(2.0)] |                 |
-| **XL**           | [XL320]            | [XL430-W250]          |                       |                         |                 |
-| **XM**           | [XM430-W210]       | [XM430-W350]          | [XM540-W150]          | [XM540-W270]            |                 |
-| **XH**           | [XH430-W210]       | [XH430-W350]          | [XH430-V210]          | [XH430-V350]            |                 |
-| **PRO L**        | [L42-10-S300-R]    | [L54-30-S500-R]       | [L54-30-S400-R]       | [L54-50-S500-R]         | [L54-50-S290-R] |
-| **PRO M**        | [M42-10-S260-R]    | [M54-40-S250-R]       | [M54-60-S250-R]       |                         |                 |
-| **PRO H**        | [H42-20-S300-R]    | [H54-100-S500-R]      | [H54-200-S500-R]      |                         |                 |
-| **PRO M(A)**     | [M42-10-S260-R(A)] | [M54-40-S250-R(A)]    | [M54-60-S250-R(A)]    |                         |                 |
-| **PRO H(A)**     | [H42-20-S300-R(A)] | [H54-100-S500-R(A)]   | [H54-200-S500-R(A)]   |                         |                 |
-| **PRO+ H**       | [H42P-020-S300-R]  | [H54P-100-S500-R]     | [H54P-100-S500-R]     |                         |                 |
-| **ETC**          | [RH-P12-RN]        | [RH-P12-RN(A)]        |                       |                         |                 |
+| DYNAMIXEL Series |                                |                                |                                |                                |                 |
+|:-----------------|:-------------------------------|:-------------------------------|:-------------------------------|:-------------------------------|:----------------|
+| **DX**           | [DX-113]                       | [DX-116]                       | [DX-117]                       |                                |                 |
+| **AX**           | [AX-12W]                       | [AX-12+/12A]                   | [AX-18F/18A]                   |                                |                 |
+| **RX**           | [RX-10]                        | [RX-24F]                       | [RX-28]                        | [RX-64]                        |                 |
+| **EX**           | [EX-106+]                      |                                |                                |                                |                 |
+| **MX**           | [MX-12W]                       | [MX-28], [MX-28(2.0)]          | [MX-64], [MX-64(2.0)]          | [MX-106], [MX-106(2.0)]        |                 |
+| **XL**           | [XL320]                        | [XL430-W250]                   |                                |                                |                 |
+| **XM**           | [XM430-W210]                   | [XM430-W350]                   | [XM540-W150]                   | [XM540-W270]                   |                 |
+| **XH**           | [XH430-W210]<br/> [XH430-W350] | [XH430-V210]<br/> [XH430-V350] | [XH540-W150]<br/> [XH540-W270] | [XH540-V150]<br/> [XH540-V270] |                 |
+| **PRO H**        | [H42-20-S300-R]                | [H54-100-S500-R]               | [H54-200-S500-R]               |                                |                 |
+| **PRO M**        | [M42-10-S260-R]                | [M54-40-S250-R]                | [M54-60-S250-R]                |                                |                 |
+| **PRO L**        | [L42-10-S300-R]                | [L54-30-S500-R]                | [L54-30-S400-R]                | [L54-50-S500-R]                | [L54-50-S290-R] |
+| **PRO H(A)**     | [H42-20-S300-R(A)]             | [H54-100-S500-R(A)]            | [H54-200-S500-R(A)]            |                                |                 |
+| **PRO M(A)**     | [M42-10-S260-R(A)]             | [M54-40-S250-R(A)]             | [M54-60-S250-R(A)]             |                                |                 |
+| **PRO+ H**       | [H42P-020-S300-R]              | [H54P-100-S500-R]              | [H54P-100-S500-R]              |                                |                 |
+| **PRO+ M**       | [M54P-060-S250-R]              | [M54P-040-S250-R]              | [M42P-010-S260-R]              |                                |                 |
+| **ETC**          | [RH-P12-RN]                    | [RH-P12-RN(A)]                 |                                |                                |                 |
+
 
 # [메뉴 설명](#메뉴-설명)
 
@@ -92,9 +95,10 @@ sidebar:
 
 # [다이나믹셀 위자드 2.0 설치](#다이나믹셀-위자드-20-설치)
 
-**베타 테스트버전 다운로드**
+**소프트웨어 다운로드**
   - [윈도우즈](http://www.robotis.com/service/download.php?no=1670)
   - [리눅스](http://www.robotis.com/service/download.php?no=1671)
+  - [맥 OS](http://www.robotis.com/service/download.php?no=1760)
 
 ## [윈도우에서 설치하기](#윈도우에서-설치하기)
 
@@ -111,16 +115,28 @@ sidebar:
 2. 다음의 명령어를 수행하여 설치파일의 실행권한을 변경합니다.
 
     ```c
-    # sudo chmod 775 DynamixelWizard2Setup-x86
+    # sudo chmod 775 DynamixelWizard2Setup_x64
     ```
 
 3. 설치파일을 실행합니다.  
 
     ```c
-    # ./DynamixelWizard2Setup-x86
+    # ./DynamixelWizard2Setup_x64
     ```
 
 4. 안내에 따라 `Next`버튼을 눌러 설치를 진행합니다.
+
+## [맥에서 설치하기](#맥에서-설치하기)
+
+1. 설치 패키지를 다운로드 합니다.  
+2. 다운로드가 완료된 dmg 파일을 오른쪽 클릭하고 `Open(열기)`를 선택합니다.  
+  ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_mac_01.png)
+3. `DynamixelWizard2Setup_x64` 파일을 실행합니다.  
+  ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_mac_02.png)
+4. 아래와 같은 경고창이 나타나면 `Open(열기)`를 선택하고 설치를 진행합니다.  
+  ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_mac_03.png)
+5. `Next(다음)`버튼을 누르고 설치과정을 따라 진행합니다.  
+  ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_mac_04.png)
 
 # [다이나믹셀 위자드 2.0 제거](#다이나믹셀-위자드-20-제거)
 
@@ -332,7 +348,7 @@ sidebar:
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_016.png)
 
-2. 관리할 대상이 정상적으로 검색되었는지 확인한 후 다음 버튼을 클릭합니다.  
+2. 관리할 대상이 정상적으로 검색되었는지 확인한 후 `다음` 버튼을 클릭합니다.  
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_update_all_001_kr.png)
 
@@ -340,7 +356,7 @@ sidebar:
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_update_all_002_kr.png)
 
-4. 업데이트가 정상적으로 완료될때까지 기다린후, 닫기 버튼을 클릭합니다.  
+4. 업데이트가 정상적으로 완료될때까지 기다린후, `닫기` 버튼을 클릭합니다.  
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_update_all_003_kr.png)
 
@@ -517,14 +533,14 @@ sidebar:
 
 ## [그래프 속도 최적화](#그래프-속도-최적화)
 
-그래프 설정에서 통신주기(Interval)를 최소 1ms로 설정할 수 있습니다.    
+그래프 설정에서 통신주기(Interval)를 최소 1 [ms]로 설정할 수 있습니다.  
 다음과 같이 설정하면 그래프를 최대한 빠르게 동작시킬 수 있습니다.
 
 ### [포트 응답 속도 설정](#포트-응답-속도-설정)
 
 #### 윈도우
 
-1. 윈도우의 장치관리자를 실행합니다. 해당 포트를 선택하고 마우스 오른쪽 버튼을 클릭하여 나온 메뉴에서 `속성`을 선택합니다.
+1. 윈도우의 `장치 관리자`를 실행합니다. 해당 포트를 선택하고 마우스 오른쪽 버튼을 클릭하여 나온 메뉴에서 `속성`을 선택합니다.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_008.png)
 
@@ -590,6 +606,10 @@ sidebar:
 [XH430-W350]: /docs/kr/dxl/x/xh430-w350/
 [XH430-V210]: /docs/kr/dxl/x/xh430-v210/
 [XH430-V350]: /docs/kr/dxl/x/xh430-v350/
+[XH540-W150]: /docs/kr/dxl/x/xh540-w150/
+[XH540-W270]: /docs/kr/dxl/x/xh540-w270/
+[XH540-V150]: /docs/kr/dxl/x/xh540-v150/
+[XH540-V270]: /docs/kr/dxl/x/xh540-v270/
 [H54-200-S500-R]: /docs/kr/dxl/pro/h54-200-s500-r/
 [H54-100-S500-R]: /docs/kr/dxl/pro/h54-100-s500-r/
 [H42-20-S300-R]: /docs/kr/dxl/pro/h42-20-s300-r/
@@ -610,5 +630,8 @@ sidebar:
 [H42P-020-S300-R]: /docs/kr/dxl/pro_plus/h42p-020-s300-r/
 [H54P-100-S500-R]: /docs/kr/dxl/pro_plus/h54p-100-s500-r/
 [H54P-200-S500-R]: /docs/kr/dxl/pro_plus/h54p-200-s500-r/
-[RH-P12-RN]: /docs/kr/platform/rh_p12_rn/rh_p12_rn/
-[RH-P12-RN(A)]: /docs/kr/platform/rh_p12_rn/rh_p12_rna/
+[M54P-060-S250-R]: /docs/kr/dxl/pro_plus/m54p-060-s250-r/
+[M54P-040-S250-R]: /docs/kr/dxl/pro_plus/m54p-040-s250-r/
+[M42P-010-S260-R]: /docs/kr/dxl/pro_plus/m42p-010-s260-r/
+[RH-P12-RN]: /docs/kr/platform/rh_p12_rn/
+[RH-P12-RN(A)]: /docs/kr/platform/rh_p12_rna/

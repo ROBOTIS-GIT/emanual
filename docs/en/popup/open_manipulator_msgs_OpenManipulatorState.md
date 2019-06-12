@@ -23,10 +23,10 @@ layout: popup
   ```
 
 - Description
-&emsp;&emsp; This topic msessage indicates the status of OpenManipulator.
+&emsp;&emsp; This topic msessage indicates the status of OpenMANIPULATOR.
 
   * `string open_manipulator_moving_state`
 &emsp;&emsp; This parameter indicates whether the torque of the actuator(Dynamixel) is enable("ACTUATOR_ENABLE") or disable("ACTUATOR_DISABLE").
 
   * `string open_manipulator_actuator_state`
-&emsp;&emsp; This parameter indicates whether OpenManipulator is "MOVING" or "STOPPED" along the trajectory.
+&emsp;&emsp; This parameter indicates whether OpenMANIPULATOR is "MOVING" or "STOPPED" along the trajectory.

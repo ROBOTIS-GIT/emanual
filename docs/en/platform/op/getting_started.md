@@ -29,7 +29,7 @@ Congratulations on purchasing DARWIN-OP. DARWIN-OP will lead you to the robot wo
 
 **CAUTION** : Exercise safety when using this product. Robotis is not responsible, in any ways, for any accidents due to user negligence.
 {: .notice--warning}
- 
+
 - Please read the instructions carefully before getting started.
 - This product may not be suitable for children aged below 15.
 - Do not use any other tools other than the ones provided with the kit.
@@ -52,12 +52,11 @@ Congratulations on purchasing DARWIN-OP. DARWIN-OP will lead you to the robot wo
 7. 2 wrenches, 2 screwdrivers
 8. 1 set of spare cables
 9. 1 set of spare bolts and nuts
-10. 1 red ball 
+10. 1 red ball
 11. 1 set of color patches (7 individual)
 12. 1 USB thumb drive (with installed recovery software)
 13. 1 quick start guide
-14. 1 CD with RoboPlus software
-15. 2 spare fuses
+14. 2 spare fuses
 
 ## [Layout](#layout)
 
@@ -75,7 +74,7 @@ Congratulations on purchasing DARWIN-OP. DARWIN-OP will lead you to the robot wo
 
 **CAUTION** : If the connection is unstable, please unplug the battery pack completely and plug the battery pack again.
 {: .notice--warning}
- 
+
 **CAUTION** : Only use the supplied battery charger. Charging the battery pack with any other charger may cause damages.
 {: .notice--warning}
 
@@ -87,27 +86,27 @@ To switch battery pack, while operating, perform the following:
 1. Connect the DC power to the DC jack.
 
     ![](/assets/images/platform/op/op_hotswap_01.jpg)
- 
+
 2. Disconnect the battery cable from the battery jack.
 
     ![](/assets/images/platform/op/op_hotswap_02.jpg)
- 
+
 3. Unscrew the thumbscrew from the battery compartment door.
 
     ![](/assets/images/platform/op/op_hotswap_03.jpg)
- 
+
 4. Remove the battery pack.
 
     ![](/assets/images/platform/op/op_hotswap_04.jpg)
- 
+
 5. Insert a fully-charged battery pack; close and screw the thumbscrew.
 
     ![](/assets/images/platform/op/op_hotswap_05.jpg)
- 
+
 6. Connect the battery cable to the battery jack(The connector is a standard deans jack with the same dimensions).
 
     ![](/assets/images/platform/op/op_hotswap_06.jpg)
- 
+
 7. Remove DC power from the DC jack.
 
     ![](/assets/images/platform/op/op_hotswap_07.jpg)
@@ -117,19 +116,19 @@ To switch battery pack, while operating, perform the following:
 ## [Preparation](#preparation)
 
 The following procedure takes you through the set up process.
- 
+
 1. Set DARWIN-OP in the kneeling position as illustrated below
 
     ![](/assets/images/platform/op/op_001.jpg)
 
   **CAUTION** : Setting DARWIN-OP in any position other than kneeling may cause physical damages.
   {: .notice--warning}
- 
+
 2. If DC power (12V) supply is used to provide power to DARWIN-OP  
   Connect the AC plug of your power adapter into a power outlet and the DC connector into DARWIN-OP's DC jack. The DC jack is located at the back and lower right side of DARWIN-OP.
 
     ![](/assets/images/platform/op/op_002.jpg)
- 
+
 3. If Battery Pack (11.1V) is used instead of the DC power supply  
   You can select either DC power supply or battery pack to power on DARWIN-OP. If you want to use the battery pack please follow the steps below.
 
@@ -137,17 +136,17 @@ The following procedure takes you through the set up process.
   - Open the battery back compartment door (unscrew the thumbscrew) and insert the battery pack.  Close and secure the compartment (screw the thumbscrew) afterwards.
   - Connect the battery pack cable to the battery power jack.
   - Disconnect DC power supply.
- 
+
   **NOTE** : To prevent unexpected shut down ensure that DARWIN-OP is connected to at least 1 active power source.
   {: .notice}
- 
+
     ![](/assets/images/platform/op/op_003.jpg)
 
 4. Switching On  
   Turn rocker switch on located on the back lower right side of DARWIN-OP.
 
     ![](/assets/images/platform/op/op_004.jpg)
- 
+
 Once power is on the following will take place sequentially
 
 |Status|Description|
@@ -164,30 +163,30 @@ DARWIN-OP comes with preconfigured 4 modes of operations:
 - Autonomous Soccer mode
 - Interactive Motion mode
 - Vision Processing mode
- 
+
 DARWIN-OP defaults to Demonstration-ready mode when turned on.  
 To switch between modes, press the `MODE` button. DARWIN-OP announces each mode with each pressing. Each mode has its own indicating LED.  
 To run each mode, press `START` button. After pressing `START` DARWIN-OP will stand up and begin operations.
 
 ![](/assets/images/platform/op/op_009.jpg)
- 
+
 **RESET Button**  
 The `RESET` button resets the actuators, not the entire robot. Please keep in mind that the demo program is still running in the main controller.
 
 **CAUTION** : The RESET button powers off all actuators. It is highly recommended that DARWIN-OP is set at kneeling position before pressing RESET or hold DARWIN-OP by its carrying handle. Pressing the RESET button while DARWIN-OP is moving may result in damages the the actuator(s) or/and robot itself.
 {: .notice--warning}
- 
+
 ### [Demonstration Ready Mode](#demonstration-ready-mode)
 
 This is the default mode when you turn DARWIN-OP on. LED 1 (red), LED 2 (blue) and LED 3 (green) are on; the head LED changes from green to amber and DARWIN-OP announces "demonstration-ready mode." DARWIN-OP is ready for action.
 
 **NOTE** : DARWIN-OP remains in kneeling position and does not move under this mode. This is the best-suited mode to change power source.
 {: .notice}
- 
+
 If you wish to completely end the demo program without turning DARWIn-OP off please refer here.
 
 ![](/assets/images/platform/op/op_010.jpg)
- 
+
 ### [Autonomous Soccer Mode](#autonomous-soccer-mode)
 
 DARWIN-OP pursues and kicks a red ball (you can change the ball color), playing a soccer by itself. When DARWIN-OP falls down, either on its back or belly, it gets up resumes ball search and pursuit.
@@ -219,7 +218,7 @@ DARWIN-OP performs pre-programmed motions sequentially while talking.
 1. Press the "MODE" button until LED 2 (blue) is on. DARWIN-OP announces "Interactive motion mode."
 
     ![](/assets/images/platform/op/op_012.jpg)
-  
+
 2. Press the "START" button to begin. DARWIN-OP will stand up and announce "Start motion demonstration."
 3. DARWIN-OP performs the following actions sequentially
 
@@ -247,7 +246,7 @@ You may download the cards from [here](https://sourceforge.net/projects/darwinop
 1. Press the "MODE" button until the LED 3 (green) is on. DARWIN-OP announces "Vision processing mode."
 
   ![](/assets/images/platform/op/op_022.jpg)
-  
+
 2. Press the "START" button to begin. DARWIN-OP announces "Start vision processing demonstration" and gets up.
 3. Select a color(s) card and place it in front of DARWIN-OP. The card should be approximately 15cm (about 6in) in front of DARWIN-OP.
 
@@ -264,17 +263,17 @@ If you experience difficulties with DARWIN-OP reading the card you may need to a
 If it the lighting around DARWIN-OP is too bright or dark, it maybw difficult to operate DARWIN-OP.
 
 ![](/assets/images/platform/op/op_026.jpg)![](/assets/images/platform/op/op_027.jpg)
- 
+
 You may change settings for color and white balance.  
 You may modify color settings to change ball color for Soccer Mode.
 
 ![](/assets/images/platform/op/op_028.jpg)
- 
+
 To be able to manipulate color settings you must:
 1. Connect to DARWIN-OP via ether wired or wireless LAN.
 2. Check on the 'Obtain an IP address automatically' menu from Internet Protocol (TCP/IP) properties of 'Local area connection properties'
 3. Have a web browser Firefox (recommenced) or Internet Explorer.
- 
+
 The following procedure to access color settings assumes a connection via wired LAN:
 1. Ensure you have a proper connection with DARWIN-OP.
 2. Open up your computer's web browser.  
@@ -286,7 +285,7 @@ The following procedure to access color settings assumes a connection via wired 
 4. Click on the increment/decrement buttons until you have desired settings. You can see the changes visually.
 
   ![](/assets/images/platform/op/op_029.jpg)
- 
+
 The following values are the default values.
 
 ||Ball|Red|Yellow|Blue|
@@ -319,7 +318,7 @@ The HSV(Hue, Saturation, Value) model, also known as HSB (Hue, Saturation, Brigh
   - Ranges from 0-100%
 
 ![](/assets/images/platform/op/op_031.jpg)
- 
+
 How do you know if color calibration for the ball has been properly adjusted for the desired color?
 
 ![](/assets/images/platform/op/op_032.jpg)
@@ -329,10 +328,10 @@ The illustration above depicts the ball covered in a patch of orange and green a
 
 However, there is also a patch of green at the lower right portion of the ball.
 - Green means that the hue tolerance range between the ball settings and one of the other colors settings (blue in this case) overlap.
- 
+
 Recall that the default hue for blue is 225 with a tolerance of 15. This gives blue a hue range from 210 to 240.
 In this example the hue value for the ball has been changed to 216 (for a blue ball) with tolerance at 15. This gives the ball hue range from 201 to 231.
- 
+
 Values between 210 and 231 overlap. This means that the hue value(s) at the lower right portion of the ball is between 210 and 231.
 
 ![](/assets/images/platform/op/op_033.jpg)
@@ -342,7 +341,7 @@ Values between 210 and 231 overlap. This means that the hue value(s) at the lowe
 To shut down the computer inside DARWIN-OP perform one of the following:
 1) Press the depression button (1st depression), located on the front left side of the chest, 3 times.
 2) If you can connect a monitor and see the screen, click on "darwin" (located at the top right corner of the screen) and then click on "Shut Down."
- 
+
 DARWIN-OP will announce 'bye-bye” and begin shut-down procedure:
 
 ![](/assets/images/platform/op/op_034.jpg)

@@ -3,22 +3,35 @@ layout: archive
 lang: en
 ref: openmanipulator_pro_overview
 read_time: true
-share: false
+share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_pro/overview/
 sidebar:
-  title: OpenManipulator-PRO
+  title: OpenMANIPULATOR-PRO
   nav: "openmanipulator_pro"
 ---
 
 
 # [Overview](#overview)
 
+
+![](/assets/images/platform/openmanipulator_pro/logo.png)
+
+<img src="/assets/images/platform/openmanipulator_pro/product_img.png" width="1250">
+
+- User Programmable Open-Source Manipulator System 
+
+- Modular Platform for Easy Maintenance and Customization
+
+- No External Control Box & High Weight-to-Payload Ratio
+
 ## [OpenSoftware](#opensoftware)
-OpenManipulator-PRO RM-P60-RNH is based on ROS ​and OpenSource. Users can also control it more easily by linking it with the MoveIt! package. Even if you do not have an actual robot, you can control the robot in the Gazebo simulator​.
+OpenMANIPULATOR-PRO RM-P60-RNH is based on ROS ​and OpenSource. Users can also control it more easily by linking it with the MoveIt! package. Even if you don't have an actual robot, you can control the robot in the Gazebo simulator​.
 
 ## [Dynamixel Examples](#dynamixel-examples)
-OpenManipulator-PRO RM-P60-RNH is composed of [Dynamixel Pro+ series](/docs/en/dxl/pro_plus/). Dynamixel has a modular form and adopts the daisy chain method. It allows users to easily add or remove joints for their own use. Taking advantage of this characteristic, users can build seven different types of OpenManipulator robots.
+OpenMANIPULATOR-PRO RM-P60-RNH is composed of [Dynamixel PRO+ series](/docs/en/dxl/pro_plus/). Dynamixel has a modular form and adopts the daisy chain method. It allows users to easily add or remove joints for their own use.  
 
 ## [Introduction Video](#introduction-video)
-Coming Soon.
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gQmaXIipT1A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

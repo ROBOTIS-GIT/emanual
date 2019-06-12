@@ -1,0 +1,5 @@
+<map id="robotis_manipulator::RobotisManipulator::sendMultipleToolActuatorValue" name="robotis_manipulator::RobotisManipulator::sendMultipleToolActuatorValue">
+<area shape="rect" id="node2" href="$classrobotis__manipulator_1_1_manipulator.html#a437ac5f137aa788c4db07690c185e9ba" title="getCoefficient " alt="" coords="266,5,453,47"/>
+<area shape="rect" id="node3" href="$classrobotis__manipulator_1_1_manipulator.html#a371446cbf4d2d5a572b173d713305fb1" title="getComponentActuatorName " alt="" coords="264,70,455,126"/>
+<area shape="rect" id="node4" href="$classrobotis__manipulator_1_1_manipulator.html#aa740b17551040520851ec8dc1d619bfe" title="setJointValue " alt="" coords="267,149,451,191"/>
+</map>
