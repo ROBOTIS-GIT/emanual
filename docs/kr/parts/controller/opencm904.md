@@ -11,7 +11,7 @@ sidebar:
   nav: "opencm904"
 ---
 
-![](/assets/images/parts/controller/opencm904/9.04_main.png)
+![](/assets/images/parts/controller/opencm904/opencm904_product.png)
 
 > OpenCM 9.04
 
@@ -184,7 +184,7 @@ USART 1번 채널은 다이나믹셀 TTL Bus에 할당되어 있어서 핀11(TX1
 
 ## [각 부 명칭](#각-부-명칭)
 
-![](/assets/images/parts/controller/opencm904/9.04_map.jpg)
+![](/assets/images/parts/controller/opencm904/opencm904_02.png)
 
 ### [전원 스위치](#전원-스위치)
 보드와 다이나믹셀 전원을 on/off하는 스위치 입니다. 단, USB 연결시 보드 전원은 on/off되지 않습니다.
