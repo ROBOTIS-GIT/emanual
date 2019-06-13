@@ -21,10 +21,32 @@ sidebar:
 
 # [제품 사양](#제품-사양)
 
-|항목|사양|
-|:---:|:---:|
-|동작 전압|7.4V (XL-320) ~ 12V (X Series)|
-|허용전류|1A(아두이노), 10A(터미널 전원 커넥터)|
+|   항목    |                 사양                  |
+|:---------:|:------------------------------------:|
+| 동작 전압 | 7.4V (XL-320) ~ 24V (PRO / X Series)  |
+| 허용전류  | 1A(아두이노), 10A(터미널 전원 커넥터)   |
+
+## [지원되는 다이나믹셀](#지원되는-다이나믹셀)
+
+| 다이나믹셀 시리즈 |                                |                                |                                |                                |                 |
+|:-----------------|:-------------------------------|:-------------------------------|:-------------------------------|:-------------------------------|:----------------|
+| **AX**           | [AX-12W]                       | [AX-12+/12A]                   | [AX-18F/18A]                   |                                |                 |
+| **RX** `1`       | [RX-10]                        | [RX-24F]                       | [RX-28]                        | [RX-64]                        |                 |
+| **DX** `1`       | [DX-113]                       | [DX-116]                       | [DX-117]                       |                                |                 |
+| **EX** `1`       | [EX-106+]                      |                                |                                |                                |                 |
+| **MX**           | [MX-12W]                       | [MX-28], [MX-28(2.0)]          | [MX-64], [MX-64(2.0)]          | [MX-106], [MX-106(2.0)]        |                 |
+| **XL**           | [XL320]                        | [XL430-W250]                   |                                |                                |                 |
+| **XM**           | [XM430-W210]                   | [XM430-W350]                   | [XM540-W150]                   | [XM540-W270]                   |                 |
+| **XH**           | [XH430-W210]<br/> [XH430-W350] | [XH430-V210]<br/> [XH430-V350] | [XH540-W150]<br/> [XH540-W270] | [XH540-V150]<br/> [XH540-V270] |                 |
+| **PRO H**        | [H42-20-S300-R]                | [H54-100-S500-R]               | [H54-200-S500-R]               |                                |                 |
+| **PRO M**        | [M42-10-S260-R]                | [M54-40-S250-R]                | [M54-60-S250-R]                |                                |                 |
+| **PRO L** `1`    | [L42-10-S300-R]                | [L54-30-S500-R]                | [L54-30-S400-R]                | [L54-50-S500-R]                | [L54-50-S290-R] |
+| **PRO H(A)**     | [H42-20-S300-R(A)]             | [H54-100-S500-R(A)]            | [H54-200-S500-R(A)]            |                                |                 |
+| **PRO M(A)**     | [M42-10-S260-R(A)]             | [M54-40-S250-R(A)]             | [M54-60-S250-R(A)]             |                                |                 |
+| **PRO+ H**       | [H42P-020-S300-R]              | [H54P-100-S500-R]              | [H54P-100-S500-R]              |                                |                 |
+| **PRO+ M**       | [M54P-060-S250-R]              | [M54P-040-S250-R]              | [M42P-010-S260-R]              |                                |                 |
+
+`1` RX, DX, EX, PRO L 시리즈를 사용하려면 소스 코드에서 별도의 설정이 필요합니다.
 
 # [각 부 명칭](#각-부-명칭)
 
@@ -130,6 +152,8 @@ sidebar:
 **주의** : DYNAMIXEL Shield 라이브러리(v0.1.0 이상)를 사용하기 위해서는 [DYNAMIXEL2Arduino 라이브러리](#라이브러리-설치)를 설치해야 합니다.
 {: .notice--warning}
 
+### [Dynamixel2Arduino 클래스](#dynamixel2arduino-클래스)
+
 - [begin()]{: .popup}
 - [getPortBaud()]{: .popup}
 - [ping()]{: .popup}
@@ -153,11 +177,30 @@ sidebar:
 - [getPresentCurrent()]{: .popup}
 - [readControlTableItem()]{: .popup}
 - [writeControlTableItem()]{: .popup}
+
+### [Master 클래스](#master-클래스)
+
+Dynamixel2Arduino 클래스는 Master 클래스로부터 다음의 함수를 상속받습니다.
+
 - [syncRead()]{: .popup}
 - [syncWrite()]{: .popup}
 - [bulkRead()]{: .popup}
 - [bulkWrite()]{: .popup}
 - [getLastLibErrCode()]{: .popup}
+
+### [RobotisRemoteController 클래스](#robotisremotecontroller-클래스)
+
+- [begin()][rc100_begin]{: .popup}
+- [availableData()]{: .popup}
+- [readData()]{: .popup}
+- [availableEvent()]{: .popup}
+- [readEvent()]{: .popup}
+- [flushRx()]{: .popup}
+- [available()]{: .popup}
+- [read()]{: .popup}
+- [peek()]{: .popup}
+- [flush()]{: .popup}
+- [write()]{: .popup}
 
 ## [다이나믹셀 쉴드(v0.0.5)](#다이나믹셀-쉴드v005)
 
@@ -211,6 +254,61 @@ bool syncWriteEnd(void);
 ```
 
 
+[AX-12W]: /docs/kr/dxl/ax/ax-12w/
+[AX-12+/12A]: /docs/kr/dxl/ax/ax-12a/
+[AX-18F/18A]: /docs/kr/dxl/ax/ax-18a/
+[DX-113]: /docs/kr/dxl/dx/dx-113/
+[DX-116]: /docs/kr/dxl/dx/dx-116/
+[DX-117]: /docs/kr/dxl/dx/dx-117/
+[EX-106+]: /docs/kr/dxl/ex/ex-106+/
+[RX-10]: /docs/kr/dxl/rx/rx-10/
+[RX-24F]: /docs/kr/dxl/rx/rx-24f/
+[RX-28]: /docs/kr/dxl/rx/rx-28/
+[RX-64]: /docs/kr/dxl/rx/rx-64/
+[MX-12W]: /docs/kr/dxl/mx/mx-12w/
+[MX-28]: /docs/kr/dxl/mx/mx-28/
+[MX-28(2.0)]: /docs/kr/dxl/mx/mx-28-2/
+[MX-64]: /docs/kr/dxl/mx/mx-64/
+[MX-64(2.0)]: /docs/kr/dxl/mx/mx-64-2/
+[MX-106]: /docs/kr/dxl/mx/mx-106/
+[MX-106(2.0)]: /docs/kr/dxl/mx/mx-106-2/
+[XL320]: /docs/kr/dxl/x/xl320/
+[XL430-W250]: /docs/kr/dxl/x/xl430-w250/
+[XM430-W210]: /docs/kr/dxl/x/xm430-w210/
+[XM430-W350]: /docs/kr/dxl/x/xm430-w350/
+[XH430-W210]: /docs/kr/dxl/x/xh430-w210/
+[XM540-W150]: /docs/kr/dxl/x/xm540-w150/
+[XM540-W270]: /docs/kr/dxl/x/xm540-w270/
+[XH430-W350]: /docs/kr/dxl/x/xh430-w350/
+[XH430-V210]: /docs/kr/dxl/x/xh430-v210/
+[XH430-V350]: /docs/kr/dxl/x/xh430-v350/
+[XH540-W150]: /docs/kr/dxl/x/xh540-w150/
+[XH540-W270]: /docs/kr/dxl/x/xh540-w270/
+[XH540-V150]: /docs/kr/dxl/x/xh540-v150/
+[XH540-V270]: /docs/kr/dxl/x/xh540-v270/
+[H54-200-S500-R]: /docs/kr/dxl/pro/h54-200-s500-r/
+[H54-100-S500-R]: /docs/kr/dxl/pro/h54-100-s500-r/
+[H42-20-S300-R]: /docs/kr/dxl/pro/h42-20-s300-r/
+[M54-60-S250-R]: /docs/kr/dxl/pro/m54-60-s250-r/
+[M54-40-S250-R]: /docs/kr/dxl/pro/m54-40-s250-r/
+[M42-10-S260-R]: /docs/kr/dxl/pro/m42-10-s260-r/
+[H54-200-S500-R(A)]: /docs/kr/dxl/pro/h54-200-s500-ra/
+[H54-100-S500-R(A)]: /docs/kr/dxl/pro/h54-100-s500-ra/
+[H42-20-S300-R(A)]: /docs/kr/dxl/pro/h42-20-s300-ra/
+[M54-60-S250-R(A)]: /docs/kr/dxl/pro/m54-60-s250-ra/
+[M54-40-S250-R(A)]: /docs/kr/dxl/pro/m54-40-s250-ra/
+[M42-10-S260-R(A)]: /docs/kr/dxl/pro/m42-10-s260-ra/
+[L54-50-S500-R]: /docs/kr/dxl/pro/l54-50-s500-r/
+[L54-50-S290-R]: /docs/kr/dxl/pro/l54-50-s290-r/
+[L54-30-S500-R]: /docs/kr/dxl/pro/l54-30-s500-r/
+[L54-30-S400-R]: /docs/kr/dxl/pro/l54-30-s400-r/
+[L42-10-S300-R]: /docs/kr/dxl/pro/l42-10-s300-r/
+[H42P-020-S300-R]: /docs/kr/dxl/pro_plus/h42p-020-s300-r/
+[H54P-100-S500-R]: /docs/kr/dxl/pro_plus/h54p-100-s500-r/
+[H54P-200-S500-R]: /docs/kr/dxl/pro_plus/h54p-200-s500-r/
+[M54P-060-S250-R]: /docs/kr/dxl/pro_plus/m54p-060-s250-r/
+[M54P-040-S250-R]: /docs/kr/dxl/pro_plus/m54p-040-s250-r/
+[M42P-010-S260-R]: /docs/kr/dxl/pro_plus/m42p-010-s260-r/
 
 [Arduino Official Guide]: https://www.arduino.cc/en/Guide/Libraries
 [GitHub repository]: https://github.com/ROBOTIS-GIT/Dynamixel2Arduino
@@ -242,3 +340,14 @@ bool syncWriteEnd(void);
 [bulkRead()]: /docs/en/popup/arduino_api/bulkRead/
 [bulkWrite()]: /docs/en/popup/arduino_api/bulkWrite/
 [getLastLibErrCode()]: /docs/en/popup/arduino_api/getLastLibErrCode/
+[rc100_begin]: /docs/en/popup/arduino_api/rc100_begin/
+[availableData()]: /docs/en/popup/arduino_api/availableData/
+[readData()]: /docs/en/popup/arduino_api/readData/
+[availableEvent()]: /docs/en/popup/arduino_api/availableEvent/
+[readEvent()]: /docs/en/popup/arduino_api/readEvent/
+[flushRx()]: /docs/en/popup/arduino_api/flushRx/
+[available()]: /docs/en/popup/arduino_api/available/
+[read()]: /docs/en/popup/arduino_api/read/
+[peek()]: /docs/en/popup/arduino_api/peek/
+[flush()]: /docs/en/popup/arduino_api/flush/
+[write()]: /docs/en/popup/arduino_api/write/
