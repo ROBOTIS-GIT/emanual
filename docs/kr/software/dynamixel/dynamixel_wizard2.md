@@ -18,6 +18,11 @@ sidebar:
 
 ![](/assets/images/sw/dynamixel/wizard2/wizard2_main_000.jpg)
 
+**패키치파일 다운로드**  
+[윈도우즈](http://www.robotis.com/service/download.php?no=1670)  
+[리눅스](http://www.robotis.com/service/download.php?no=1671)  
+[맥 OS](http://www.robotis.com/service/download.php?no=1760)  
+
 ## [다이나믹셀 위자드 2.0](#다이나믹셀-위자드-20)
 
 다이나믹셀 위자드 2.0은 다양한 운영체제에서 다이나믹셀 제품들을 통합 관리할 수 있는 편리한 툴입니다.

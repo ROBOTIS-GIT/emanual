@@ -13,9 +13,15 @@ sidebar:
 
 ![](/assets/images/sw/dynamixel/wizard2/wizard2_main_003.png)
 
+
 # [Introduction](#introduction)
 
 ![](/assets/images/sw/dynamixel/wizard2/wizard2_main_000.jpg)
+
+**Package file for**  
+[Windows](http://www.robotis.com/service/download.php?no=1670)  
+[Linux](http://www.robotis.com/service/download.php?no=1671)  
+[Mac](http://www.robotis.com/service/download.php?no=176)  
 
 ## [DYNAMIXEL Wizard 2.0](#dynamixel-wizard-20)
 
@@ -83,7 +89,7 @@ Although almost all ROBOTIS products are shipped with preinstalled firmwares, ne
 
 ## [Install: Windows](#install-windows)
 
-1. Download the installation file then
+1. Download the package file.
 - [Package file for Windows](http://www.robotis.com/service/download.php?no=1670)  
 2. Execute downloaded installation file.  
 3. Click on `Next` button to proceed installation.
@@ -92,7 +98,7 @@ Although almost all ROBOTIS products are shipped with preinstalled firmwares, ne
 
 ## [Install: Linux](#install-linux)
 
-1. Download the installation file.  
+1. Download the package file.  
 - [Package file for Linux](http://www.robotis.com/service/download.php?no=1671)  
 2. Enter the following command to change the permission.
 
