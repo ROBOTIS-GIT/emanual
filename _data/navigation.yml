@@ -20084,6 +20084,15 @@ opencm904:
         titlekr: "윈도우즈에 설치하기"
         url: /parts/controller/opencm904/#install-on-windows
         urlkr: /parts/controller/opencm904/#윈도우즈에-설치하기
+    - title: "Library API"
+      titlekr: "라이브러리 API"
+      url: /parts/controller/opencm904/#library-api
+      urlkr: /parts/controller/opencm904/#라이브러리-api
+      children:
+      - title: "Dynamixel2Arduino Library"
+        titlekr: "Dynamixel2Arduino 라이브러리"
+        url: /parts/controller/opencm904/#dynamixel2arduino-library
+        urlkr: /parts/controller/opencm904/#dynamixel2arduino-라이브러리  
   - title: "Examples"
     url: /parts/controller/opencm904/#examples
     children:
@@ -20119,7 +20128,9 @@ opencm904:
     urlkr: /parts/controller/opencm904/#참고자료
     children:
     - title: "Recovery Mode"
+      titlekr: "펌웨어 복구모드"
       url: /parts/controller/opencm904/#recovery-mode
+      urlkr: /parts/controller/opencm904/#펌웨어-복구모드
     - title: "Install Windows Driver"
       url: /parts/controller/opencm904/#install-windows-driver
     - title: "Dimension"
@@ -20343,10 +20354,10 @@ dynamixel_shield:
       titlekr: "다이나믹셀 전원 스위치"
       url: /parts/interface/dynamixel_shield/#dynamixel-power-switch
       urlkr: /parts/interface/dynamixel_shield/#다이나믹셀-전원-스위치
-  - title: "Arduino Shield Libraries"
-    titlekr: "아두이노 쉴드 라이브러리"
-    url: /parts/interface/dynamixel_shield/#arduino-shield-libraries
-    urlkr: /parts/interface/dynamixel_shield/#아두이노-쉴드-라이브러리
+  - title: "DYNAMIXEL Shield Libraries"
+    titlekr: "다이나믹셀 쉴드 라이브러리"
+    url: /parts/interface/dynamixel_shield/#dynamixel-shield-libraries
+    urlkr: /parts/interface/dynamixel_shield/#다이나믹셀-쉴드-라이브러리
     children:
     - title: "Features"
       titlekr: "특징"
@@ -20356,19 +20367,19 @@ dynamixel_shield:
       titlekr: "라이브러리 설치"
       url: /parts/interface/dynamixel_shield/#install-library
       urlkr: /parts/interface/dynamixel_shield/#라이브러리-설치
-  - title: "Library API"
-    titlekr: "라이브러리 API"
-    url: /parts/interface/dynamixel_shield/#library-api
-    urlkr: /parts/interface/dynamixel_shield/#라이브러리-api
-    children:
-    - title: DYNAMIXELShield(v0.1.0 or above)
-      titlekr: DYNAMIXELShield(v0.1.0 or above)
-      url: /parts/interface/dynamixel_shield/#dynamixelshieldv010-or-above
-      urlkr: /parts/interface/dynamixel_shield/#다이나믹셀-쉴드v010-이상
-    - title: DYNAMIXELShield
-      titlekr: DYNAMIXELShield
-      url: /parts/interface/dynamixel_shield/#dynamixelshieldv005
-      urlkr: /parts/interface/dynamixel_shield/#다이나믹셀-쉴드v005
+    - title: "Library API"
+      titlekr: "라이브러리 API"
+      url: /parts/interface/dynamixel_shield/#library-api
+      urlkr: /parts/interface/dynamixel_shield/#라이브러리-api
+      children:
+      - title: DYNAMIXELShield(v0.1.0 or above)
+        titlekr: DYNAMIXELShield(v0.1.0 or above)
+        url: /parts/interface/dynamixel_shield/#dynamixelshieldv010-or-above
+        urlkr: /parts/interface/dynamixel_shield/#다이나믹셀-쉴드v010-이상
+      - title: DYNAMIXELShield(v0.0.5)
+        titlekr: DYNAMIXELShield(v0.0.5)
+        url: /parts/interface/dynamixel_shield/#dynamixelshieldv005
+        urlkr: /parts/interface/dynamixel_shield/#다이나믹셀-쉴드v005
 
 u2d2_power_hub:
   - title: "Introduction"

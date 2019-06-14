@@ -27,7 +27,7 @@ sidebar:
 |       JTAG/SWD       |         X         |         1         |         1         |
 |     Micro B USB      |         X         |         1         |         1         |
 |      5-Pin Port      |         X         |         4         |         4         |
-|  Dynamixel TTL BUS   |         X         |       4 `1`       |       4 `2`       |
+|  DYNAMIXEL TTL BUS   |         X         |       4 `1`       |       4 `2`       |
 | 4 Pin Communication  |         X         |         1         |         1         |
 
 `1`: [MOLEX 53253-0370] x 2(for XL-320), [MOLEX 22-03-5035] x 2(for AX/MX-Series)  
@@ -40,7 +40,7 @@ sidebar:
 **NOTE** : Refer to the ROBOTIS-MINI for controller recovery (type C-only) [ROBOTIS-MINI Controller Firmware Update]
 {: .notice}
 
-**CAUTION** : Please **DISCONNECT** OpenCM9.04 and OpenCM 485 Expansion board when updating or recovering Dynamixel firmware.
+**CAUTION** : Please **DISCONNECT** OpenCM9.04 and OpenCM 485 Expansion board when updating or recovering DYNAMIXEL firmware.
 {: .notice--warning}
 
 # [Specifications](#specifications)
@@ -60,20 +60,27 @@ sidebar:
 |          SPI           |                2                |
 |        I2C(TWI)        |                2                |
 |         Debug          |           JTAG & SWD            |
-| Dynamixel TTL BUS 3pin |                4                |
+| DYNAMIXEL TTL BUS 3pin |                4                |
 |       Dimensions       |          27mm x 66.5mm          |
 
 {% capture opencm904_caution_01 %}
-`Caution`
-- USB power is cannot be used to operate Dynamixels. Separate power supply needs to be provided.  
+**WARNING**
+- USB power is cannot be used to operate DYNAMIXELs. Separate power supply needs to be provided.  
   (OpenCM9.04 can operate using power supplied via USB, battery, + - terminal.)
-- Check the operating voltage for peripheral devices when using additional power supplies. Dynamixel or XL-series is receives the exact voltage supplied.   
-- Dynamixel and XL-series cannot be used together due to different operating voltages.
+- Check the operating voltage for peripheral devices when using power supply. DYNAMIXEL or XL-series receives the exact same voltage.
+- XL-320 cannot be used with other DYNAMIXELs due to the difference in operating voltages.
 {% endcapture %}
 
-<div class="notice--warning">{{ opencm904_caution_01 | markdownify }}</div>
+<div class="notice--danger">{{ opencm904_caution_01 | markdownify }}</div>
 
 # [Control Table](#control-table)
+
+**CAUTION**  
+The control table of OpenCM9.04 can only be accessed using the default firmware.  
+If other program such as Arduino sketch is downloaded, the control table cannot be used.  
+In order to use the control table and connect to Roboplus softwares, please perform Firmware Recovery from R+Manager 2.0.
+{: .notice--warning}
+
 Control Table consists of data regarding the current status and operation of controller. The user can control controller by changing data of Control Table via Instruction packet.
 
 - **EEPROM and RAM**  
@@ -155,8 +162,8 @@ Control Table consists of data regarding the current status and operation of con
 **NOTE** : Some Addresses of the Control Table can be tested with R+ Manager 2.0.
 {: .notice}
 
-**WARNING** : Dynamixel should **NOT** use ID 200 when OpenCM9.04 is using factory default firmware recovered with R+Manager.  
-ID 200 will be assigned to OpenCM9.04 in a factory default firmware.
+**WARNING** : DYNAMIXEL should **NOT** use ID 200 when OpenCM9.04 is using factory default firmware recovered with R+Manager.  
+ID 200 will be assigned to OpenCM9.04 in the factory default firmware.
 {: .notice--warning}
 
 # [Hardware](#hardware)
@@ -171,7 +178,7 @@ OpenCM9.04’s block diagram is shown below. OpenCM9.04’s schematic is based o
 The power schematic is designed to cascade through 5V and 3.3V regulators. 5V is supplied to TTL bus and 3.3V is supplied to microcontrollers, 5-pin port and 4-pin communication port.  
 OpenCM9.04 supports USB2.0 FS. Micro-B connector is used to download the program or perform data communication.  
 Pin 11(TX1) & Pin 12(RX1) cannot be used simultaneously because USART Channel 1 is assigned to DYNAMIXEL TTL Bus.  
-USART channel 1 is registered under Dynamixel TTL Bus and cannot be used simultaneously with pin 11(TX1) & 12(RX1).
+USART channel 1 is registered under DYNAMIXEL TTL Bus and cannot be used simultaneously with pin 11(TX1) & 12(RX1).
 
 ![](/assets/images/parts/controller/opencm904/opencm904_01.png)
 
@@ -188,8 +195,8 @@ Connects two LBS-04 Lithium-ion battery.
 **CAUTION** : Do NOT charge the battery while its connected to the board because the user will short the circuit. Be sure to disconnect from the board when charging the battery.
 {: .notice--warning}
 
-### [Dynamixel TTL 3 PIN](#dynamixel-ttl-3-pin)
-Port for daisy chaining Dynamixels that use 3-pin cables (Dynamixel TTL Bus).
+### [DYNAMIXEL TTL 3 PIN](#dynamixel-ttl-3-pin)
+Port for daisy chaining DYNAMIXELs that use 3-pin cables (DYNAMIXEL TTL Bus).
 
 {% include en/dxl/pinout_warning.md %}
 
@@ -331,17 +338,17 @@ All of OpenCM9.04’s GPIO pins can internally “pull-up” or “pull-down” 
 - **A8** : Digital I/O, analog input, & PWM output.
 - **A9** Digital I/O, analog input, & PWM output.
 - **D10** : Digital I/O & PWM output.
-- **D11** : Digital I/O & PWM output. USART1’s (Serial1) TX pin. Cannot be simultaneously used with the Dynamixel TTL Bus.
-- **D12** : Digital I/O & PWM output. USART1(Serial1)’s RX pin. Cannot be simultaneously used with the Dynamixel TTL Bus.
+- **D11** : Digital I/O & PWM output. USART1’s (Serial1) TX pin. Cannot be simultaneously used with the DYNAMIXEL TTL Bus.
+- **D12** : Digital I/O & PWM output. USART1(Serial1)’s RX pin. Cannot be simultaneously used with the DYNAMIXEL TTL Bus.
 - **D13** : Digital I/O & PWM output.
 - **D14** : Digital I/O & PWM output. Pin connected to the Status LED. It’s pre-defined as BOARD_LED_PIN.
 - **D15** : Digital I/O.
 - **VCC(+)** : +voltage of the board. There are 2 VCC(+) pins. Connected to the + terminal of the battery socket.
 - **GND(-)** :-voltage of the board. There are 2 GND(-) pins. Connected to the + terminal of the battery socket.
-- **TTL** : Dynamixel TTL Bus’s Data line. Used to communicate with 3-pin TTL Dynamixels.
-- **D** : Relevant to Dynamixel TTL Bus and used to select TX, RX.
-- **X** : Dynamixel TTL Bus’s TX pin.
-- **L** : Dynamixel TTL Bus’s RX pin.
+- **TTL** : DYNAMIXEL TTL Bus’s Data line. Used to communicate with 3-pin TTL DYNAMIXELs.
+- **D** : Relevant to DYNAMIXEL TTL Bus and used to select TX, RX.
+- **X** : DYNAMIXEL TTL Bus’s TX pin.
+- **L** : DYNAMIXEL TTL Bus’s RX pin.
 - **D16** : Digital I/O Pin.
 - **D17** : Digital I/O Pin.
 - **D18** : Digital I/O Pin.
@@ -455,7 +462,7 @@ We recommend using 2 LBS-40 batteries when operating the XL-320.
 
 > LBS-40 battery
 
-We recommend using +- pin to power Dynamixels other than XL-320.
+We recommend using +- pin to power DYNAMIXELs other than XL-320.
 
 ![](/assets/images/parts/controller/opencm904/opencm904_19.png)
 
@@ -488,9 +495,9 @@ incorrect battery to the battery socket. Only connect LBS-40 onto the battery so
 ![](/assets/images/parts/controller/opencm904/opencm904_24.png)
 
 It is possible to simultaneously connect the USB port, LBS-40 battery, and +- pin.(Built-in protection)  
-We recommend supplying the recommended voltage of the Dynamixel when supplying power via +- pin or battery. Higher voltage usage may reduce the Dynamixel’s lifespan or damage the product.  
+We recommend supplying the recommended voltage of the DYNAMIXEL when supplying power via +- pin or battery. Higher voltage usage may reduce the DYNAMIXEL’s lifespan or damage the product.  
 The OpenCM9.04’s maximum tolerable voltage is 16V; voltage input greater than 16V may damage the board.  
-Dynamixel cannot operate using the power supplied via USB cable, but communication ports and I/O headers can be operated normally.  
+DYNAMIXEL cannot operate using the power supplied via USB cable, but communication ports and I/O headers can be operated normally.  
 CAUTION: do NOT charge the LBS-40 battery while it is connected to the board and the board is connected to the PC via USB cable.
 
 # [Switch Assembly(Type A)](#switch-assemblytype-a)
@@ -509,7 +516,7 @@ Power switch is included in the OpenCM accessory kit or other switches with the 
 
 # [Connector Assembly(Type A)](#connector-assemblytype-a)
 
-OpenCM9.04’s Dynamixel 3-Pin TTL pins are all compatible with Dynamixel 3-pin TTL and XL-320 3-pin TTL(mini-type). Thus, both type of pins can be soldered and used.  
+OpenCM9.04’s DYNAMIXEL 3-Pin TTL pins are all compatible with DYNAMIXEL 3-pin TTL and XL-320 3-pin TTL(mini-type). Thus, both type of pins can be soldered and used.  
 Both types of 3-pin TTL pins are included in OpenCM Accessory Set.
 
 ![](/assets/images/parts/controller/opencm904/opencm904_27.png)
@@ -525,8 +532,8 @@ Both types of 3-pin TTL pins are included in OpenCM Accessory Set.
 
 |                      | [Arduino IDE] | [OpenCM IDE] |
 |:--------------------:|:-------------:|:------------:|
-|   [Dynamixel SDK]    |       O       |      X       |
-| [DynamixelWorkbench] |       O       |      X       |
+|   [DYNAMIXEL SDK]    |       O       |      X       |
+| [DYNAMIXELWorkbench] |       O       |      X       |
 |  Arduino Libraries   |       O       |      O       |
 |         OS X         |       O       |  O(10.12.2)  |
 |        Linux         |       O       |   O(12.04)   |
@@ -718,6 +725,63 @@ Select Tools > Port > COM1.
 
 The value of COM1 may be different depending on the environment connected to the PC.
 {: .notice}
+
+## [Library API](#library-api)
+
+There are three ways to add libraries to the Arduino IDE.
+
+- Using the Library Manager
+- Importing a .zip Library
+- Manual installation
+
+Each way is described in detail in the [Arduino Official Guide]{: .blank}, so please refer to it if necessary.  
+Below is an example of using the Library Manager.
+
+![](/assets/images/parts/interface/dynamixel_shield/library_manager_01.png)
+
+Search for `DYNAMIXEL2Arduino` from the Library Manager and install the library.
+
+![](/assets/images/parts/interface/dynamixel_shield/library_manager_02.png)
+
+If the DYNAMIXEL2Arduino library has been successfully installed, useful examples to control DYNAMIXEL can be found under the DYNAMIXEL2Arduino category.
+
+### [Dynamixel2Arduino Library](#dynamixel2arduino-library)
+
+#### [Dynamixel2Arduino Class](#dynamixel2arduino-class)
+
+- [begin()]{: .popup}
+- [getPortBaud()]{: .popup}
+- [ping()]{: .popup}
+- [scan()]{: .popup}
+- [getModelNumber()]{: .popup}
+- [setID()]{: .popup}
+- [setProtocol()]{: .popup}
+- [setBaudrate()]{: .popup}
+- [torqueOn()]{: .popup}
+- [torqueOff()]{: .popup}
+- [ledOn()]{: .popup}
+- [ledOff()]{: .popup}
+- [setOperatingMode()]{: .popup}
+- [setGoalPosition()]{: .popup}
+- [getPresentPosition()]{: .popup}
+- [setGoalVelocity()]{: .popup}
+- [getPresentVelocity()]{: .popup}
+- [setGoalPWM()]{: .popup}
+- [getPresentPWM()]{: .popup}
+- [setGoalCurrent()]{: .popup}
+- [getPresentCurrent()]{: .popup}
+- [readControlTableItem()]{: .popup}
+- [writeControlTableItem()]{: .popup}
+
+#### [Master Class](#master-class)
+
+Dynamixel2Arduino class inherits below public functions from the Master class.
+
+- [syncRead()]{: .popup}
+- [syncWrite()]{: .popup}
+- [bulkRead()]{: .popup}
+- [bulkWrite()]{: .popup}
+- [getLastLibErrCode()]{: .popup}
 
 # [Examples](#examples)
 
@@ -936,9 +1000,9 @@ void loop() {
 }
 ```
 
-## [DynamixelWorkbench](#dynamixelworkbench)
+## [DYNAMIXELWorkbench](#dynamixelworkbench)
 
-- [Dynamixel-Workbench examples](/docs/en/software/dynamixel/dynamixel_workbench/#opencr-and-opencm-tutorials)
+- [DYNAMIXEL-Workbench examples](/docs/en/software/dynamixel/dynamixel_workbench/#opencr-and-opencm-tutorials)
 
 ## [Servo](#servo)
 
@@ -2088,5 +2152,35 @@ Please refer to [R+Manager 2.0 Firmware Recovery](/docs/en/software/rplus2/manag
 [ROBOTIS-MINI Controller Firmware Update]: /docs/en/edu/mini/#firmware-update
 [Arduino IDE]: /docs/en/parts/controller/opencm904/#arduino-ide
 [OpenCM IDE]: http://emanual.robotis.com/docs/en/software/opencm_ide/getting_started/
-[Dynamixel SDK]: /docs/en/software/dynamixel/dynamixel_sdk/overview/
-[DynamixelWorkbench]: http://wiki.ros.org/dynamixel_workbench
+[DYNAMIXEL SDK]: /docs/en/software/dynamixel/dynamixel_sdk/overview/
+[DYNAMIXELWorkbench]: http://wiki.ros.org/dynamixel_workbench
+[Arduino Official Guide]: https://www.arduino.cc/en/Guide/Libraries
+[GitHub repository]: https://github.com/ROBOTIS-GIT/Dynamixel2Arduino
+[begin()]: /docs/en/popup/arduino_api/begin/
+[getPortBaud()]: /docs/en/popup/arduino_api/getPortBaud/
+[ping()]: /docs/en/popup/arduino_api/ping/
+[scan()]: /docs/en/popup/arduino_api/scan/
+[getModelNumber()]: /docs/en/popup/arduino_api/getModelNumber/
+[setID()]: /docs/en/popup/arduino_api/setID/
+[setProtocol()]: /docs/en/popup/arduino_api/setProtocol/
+[setBaudrate()]: /docs/en/popup/arduino_api/setBaudrate/
+[torqueOn()]: /docs/en/popup/arduino_api/torqueOn/
+[torqueOff()]: /docs/en/popup/arduino_api/torqueOff/
+[ledOn()]: /docs/en/popup/arduino_api/ledOn/
+[ledOff()]: /docs/en/popup/arduino_api/ledOff/
+[setOperatingMode()]: /docs/en/popup/arduino_api/setOperatingMode/
+[setGoalPosition()]: /docs/en/popup/arduino_api/setGoalPosition/
+[getPresentPosition()]: /docs/en/popup/arduino_api/getPresentPosition/
+[setGoalVelocity()]: /docs/en/popup/arduino_api/setGoalVelocity/
+[getPresentVelocity()]: /docs/en/popup/arduino_api/getPresentVelocity/
+[setGoalPWM()]: /docs/en/popup/arduino_api/setGoalPWM/
+[getPresentPWM()]: /docs/en/popup/arduino_api/getPresentPWM/
+[setGoalCurrent()]: /docs/en/popup/arduino_api/setGoalCurrent/
+[getPresentCurrent()]: /docs/en/popup/arduino_api/getPresentCurrent/
+[readControlTableItem()]: /docs/en/popup/arduino_api/readControlTableItem/
+[writeControlTableItem()]: /docs/en/popup/arduino_api/writeControlTableItem/
+[syncRead()]: /docs/en/popup/arduino_api/syncRead/
+[syncWrite()]: /docs/en/popup/arduino_api/syncWrite/
+[bulkRead()]: /docs/en/popup/arduino_api/bulkRead/
+[bulkWrite()]: /docs/en/popup/arduino_api/bulkWrite/
+[getLastLibErrCode()]: /docs/en/popup/arduino_api/getLastLibErrCode/

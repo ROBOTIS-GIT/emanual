@@ -109,7 +109,7 @@ sidebar:
 -	다이나믹셀 커넥터의 전원을 별도로 On/Off 할수 있는 스위치이다.
 
 
-# [아두이노 쉴드 라이브러리](#아두이노-쉴드-라이브러리)
+# [다이나믹셀 쉴드 라이브러리](#다이나믹셀-쉴드-라이브러리)
 
 ## [특징](#특징)
 
@@ -145,14 +145,14 @@ sidebar:
 ![](/assets/images/parts/interface/dynamixel_shield/examples.png)
 
 
-# [라이브러리 API](#라이브러리-api)
+## [라이브러리 API](#라이브러리-api)
 
-## [다이나믹셀 쉴드(v0.1.0 이상)](#다이나믹셀-쉴드v010-이상)
+### [다이나믹셀 쉴드(v0.1.0 이상)](#다이나믹셀-쉴드v010-이상)
 
 **주의** : DYNAMIXEL Shield 라이브러리(v0.1.0 이상)를 사용하기 위해서는 [DYNAMIXEL2Arduino 라이브러리](#라이브러리-설치)를 설치해야 합니다.
 {: .notice--warning}
 
-### [Dynamixel2Arduino 클래스](#dynamixel2arduino-클래스)
+#### [Dynamixel2Arduino 클래스](#dynamixel2arduino-클래스)
 
 - [begin()]{: .popup}
 - [getPortBaud()]{: .popup}
@@ -178,7 +178,7 @@ sidebar:
 - [readControlTableItem()]{: .popup}
 - [writeControlTableItem()]{: .popup}
 
-### [Master 클래스](#master-클래스)
+#### [Master 클래스](#master-클래스)
 
 Dynamixel2Arduino 클래스는 Master 클래스로부터 다음의 함수를 상속받습니다.
 
@@ -188,7 +188,7 @@ Dynamixel2Arduino 클래스는 Master 클래스로부터 다음의 함수를 상
 - [bulkWrite()]{: .popup}
 - [getLastLibErrCode()]{: .popup}
 
-### [RobotisRemoteController 클래스](#robotisremotecontroller-클래스)
+#### [RobotisRemoteController 클래스](#robotisremotecontroller-클래스)
 
 - [begin()][rc100_begin]{: .popup}
 - [availableData()]{: .popup}
@@ -202,7 +202,7 @@ Dynamixel2Arduino 클래스는 Master 클래스로부터 다음의 함수를 상
 - [flush()]{: .popup}
 - [write()]{: .popup}
 
-## [다이나믹셀 쉴드(v0.0.5)](#다이나믹셀-쉴드v005)
+### [다이나믹셀 쉴드(v0.0.5)](#다이나믹셀-쉴드v005)
 
 **주의** : 이 버전의 API는 더이상 지원되지 않습니다.
 {: .notice--warning}
