@@ -109,7 +109,7 @@ Dynamixel Shield  was created to use RC100 and Dynamixel on arduino board. We pr
 -	It is a switch that can turn on / off the power of Dynamixel connector.
 
 
-# [Arduino Shield Libraries](#arduino-shield-libraries)
+# [DYNAMIXEL Shield Libraries](#dynamixel-shield-libraries)
 
 ## [Features](#features)
 
@@ -145,14 +145,14 @@ If you have successfully installed the library, you'll be able to find several e
 ![](/assets/images/parts/interface/dynamixel_shield/examples.png)
 
 
-# [Library API](#library-api)
+## [Library API](#library-api)
 
-## [DYNAMIXELShield(v0.1.0 or above)](#dynamixelshieldv010-or-above)
+### [DYNAMIXELShield(v0.1.0 or above)](#dynamixelshieldv010-or-above)
 
 **WARNING** : In order to use DYNAMIXEL Shield library(v0.1.0 or above), [DYNAMIXEL2Arduino library](#install-library) must be installed.
 {: .notice--warning}
 
-### [Dynamixel2Arduino Class](#dynamixel2arduino-class)
+#### [Dynamixel2Arduino Class](#dynamixel2arduino-class)
 
 - [begin()]{: .popup}
 - [getPortBaud()]{: .popup}
@@ -178,7 +178,7 @@ If you have successfully installed the library, you'll be able to find several e
 - [readControlTableItem()]{: .popup}
 - [writeControlTableItem()]{: .popup}
 
-### [Master Class](#master-class)
+#### [Master Class](#master-class)
 
 Dynamixel2Arduino class inherits below public functions from the Master class.
 
@@ -188,7 +188,7 @@ Dynamixel2Arduino class inherits below public functions from the Master class.
 - [bulkWrite()]{: .popup}
 - [getLastLibErrCode()]{: .popup}
 
-### [RobotisRemoteController Class](#robotisremotecontroller-class)
+#### [RobotisRemoteController Class](#robotisremotecontroller-class)
 
 - [begin()][rc100_begin]{: .popup}
 - [availableData()]{: .popup}
@@ -202,7 +202,7 @@ Dynamixel2Arduino class inherits below public functions from the Master class.
 - [flush()]{: .popup}
 - [write()]{: .popup}
 
-## [DynamixelShield(v0.0.5)](#dynamixelshieldv005)
+### [DynamixelShield(v0.0.5)](#dynamixelshieldv005)
 
 **WARNING** : This version of API is deprecated.
 {: .notice--warning}

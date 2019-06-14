@@ -19,16 +19,16 @@ sidebar:
 
 - OpenCM9.04 Types Package
 
-|Item|OpenCM9.04 A Type|OpenCM9.04 B Type|OpenCM9.04 C Type|
-|:---:|:---:|:---:|:---:|
-|Power Switch|X|1|1|
-|User Button|1|1|1|
-|2Pin Battery(LBS-40)|X|2|2|
-|JTAG/SWD|X|1|1|
-|Micro B USB|X|1|1|
-|5-Pin Port|X|4|4|
-|Dynamixel TTL BUS|X|4`1`|4`2`|
-|4 Pin 통신 포트|X|1|1|
+|         Item         | OpenCM9.04 A Type | OpenCM9.04 B Type | OpenCM9.04 C Type |
+|:--------------------:|:-----------------:|:-----------------:|:-----------------:|
+|     Power Switch     |         X         |         1         |         1         |
+|     User Button      |         1         |         1         |         1         |
+| 2Pin Battery(LBS-40) |         X         |         2         |         2         |
+|       JTAG/SWD       |         X         |         1         |         1         |
+|     Micro B USB      |         X         |         1         |         1         |
+|      5-Pin Port      |         X         |         4         |         4         |
+|  Dynamixel TTL BUS   |         X         |       4`1`        |       4`2`        |
+|   4 Pin 통신 포트    |         X         |         1         |         1         |
 
 `1`: [MOLEX 53253-0370] x 2(XL-320 호환), [MOLEX 22-03-5035] x 2(AX 또는 MX 시리즈 호환)  
 `2`: [MOLEX 53253-0370] x 4(XL-320 호환)
@@ -37,7 +37,7 @@ sidebar:
 - Type으로는 A,B,C type이 있습니다. 위의 Type사진과 표를 보면 커넥터를 제공 여부에 따라 Type이 달라집니다.  
   (A Type의 경우 OpenCM9.04-악세서리 세트를 별도 구매하시면 B,C Type에서 제공하는 모든 커넥터 부품들과 USB Cable을 한번에 구입할 수 있습니다.) [악세서리 구매하기]
 
-**참고**: 제어기복구는 현재 OpenCM9.04 C 타입(다윈미니용제어기)만 지원되고있으며, 복구방법은 아래 링크에서 확인가능합니다. [OpenCM9.04 C Type 펌웨어 복구하기]
+**참고**: 제어기 복구는 현재 OpenCM9.04 C 타입(다윈미니용제어기)만 지원되고있으며, 복구방법은 아래 링크에서 확인가능합니다. [OpenCM9.04 C Type 펌웨어 복구하기]
 {: .notice}
 
 **주의**: 다이나믹셀 펌웨어 업데이트 및 복구시 OpenCM9.04와 OpenCM 485 확장보드를 반드시 분리해주세요.
@@ -64,17 +64,23 @@ sidebar:
 |          크기           |          27mm x 66.5mm          |
 
 {% capture opencm904_caution_01 %}
-**주의**:
+**경고**:
 - USB전원으로는 다이나믹셀을 구동할 수 없습니다. 별도의 전원을 공급해주세요.  
   (OpenCM9.04 는 USB나 배터리 또는 + - 터미널 중에 하나 이상의 전원이 공급되면 동작합니다.)
 - 별도의 전원공급시 연결되는 주변장치의 동작전압을 확인해주세요. 제어기에 입력된 전압이 다이나믹셀에 바로 공급됩니다.
-- 7.2V를 권장하는 XL-320은 다른 다이나믹셀과 동작전압의 차이가 있어 함께 사용할 수 없습니다.
+- 7.4V를 권장하는 XL-320은 다른 다이나믹셀과 동작전압의 차이가 있어 함께 사용할 수 없습니다.
 {% endcapture %}
 
-<div class="notice--warning">{{ opencm904_caution_01 | markdownify }}</div>
+<div class="notice--danger">{{ opencm904_caution_01 | markdownify }}</div>
 
 
 # [컨트롤 테이블](#컨트롤-테이블)
+
+**주의**  
+OpenCM9.04의 컨트롤 테이블은 기본 펌웨어를 사용해서 접근이 가능하며, 아두이노 또는 다른 프로그램의 코드를 다운로드하면 사용할 수 없게 됩니다.  
+다시 로보플러스 소프트웨어와 연결해서 컨트롤 테이블을 사용하려면 로보플러스 매니저 2.0을 통해 펌웨어를 복구해야 합니다.
+{: .notice--warning}
+
 컨트롤 테이블은 제어기 내부에 존재하는 데이터의 집합체입니다. 사용자는 컨트롤 테이블의 주소를 이용하여
 해당 주소에 저장된 데이터를 읽어오거나 새로운 데이터를 입력할 수 있습니다.
  
@@ -98,63 +104,63 @@ sidebar:
 
 ## [EEPROM Area](#eeprom-area)
 
-|주소|크기|데이터|설명|접근속성|초기값|
-|:---:|:---:|:---:|:---:|:---:|:---:|
-|0|2|Model Number|모델 변호|R|400|
-|6|1|Firmware Version|펌웨어 버전 정보|R|-|
-|7|1|ID|제어기 ID|RW|200|
-|8|1|Baud Rate|제어기 통신속도|R|1|
-|9|1|Return Delay Time|응답 지연 시간|RW|0|
-|10|1|Status Return Level|응답 레벨|RW|2|
-|11|1|Bootloader Version|부트로더 버전 정보|R|-|
-|12|1|DXL Baud Rate|다이나믹셀 통신속도|RW|3|
-|16|1|DYNAMIXEL Channel|다이나믹셀 포트 선택|RW|0|
+| 주소 | 크기 |       데이터        |         설명         | 접근속성 | 초기값 |
+|:----:|:----:|:-------------------:|:--------------------:|:--------:|:------:|
+|  0   |  2   |    Model Number     |      모델 변호       |    R     |  400   |
+|  6   |  1   |  Firmware Version   |   펌웨어 버전 정보   |    R     |   -    |
+|  7   |  1   |         ID          |      제어기 ID       |    RW    |  200   |
+|  8   |  1   |      Baud Rate      |   제어기 통신속도    |    R     |   1    |
+|  9   |  1   |  Return Delay Time  |    응답 지연 시간    |    RW    |   0    |
+|  10  |  1   | Status Return Level |      응답 레벨       |    RW    |   2    |
+|  11  |  1   | Bootloader Version  |  부트로더 버전 정보  |    R     |   -    |
+|  12  |  1   |    DXL Baud Rate    | 다이나믹셀 통신속도  |    RW    |   3    |
+|  16  |  1   |  DYNAMIXEL Channel  | 다이나믹셀 포트 선택 |    RW    |   0    |
 
 ## [RAM Area](#ram-area)
 
-|주소|크기|데이터|설명|접근속성|초기값|
-|:---:|:---:|:---:|:---:|:---:|:---:|
-|21|1|Mode Number|현재 모드 번호|RW|-|
-|26|1|Button Status|사용자버튼 상태|R|0|
-|66|2|Motion Play Page|모션 실행 페이지 번호|RW|0|
-|68|1|Motion Play Status|모션 실행 상태|R|-|
-|73|1|128ms Timer Value|128ms 타이머 값|RW|0|
-|74|2|1ms Timer Value|1ms 타이머 값 |RW|0|
-|77|1|Random Number|임의의 숫자|RW|-|
-|79|1|Green LED|녹색 LED 값|RW|0|
-|82|1|Motion LED|모션중 LED 사용 여부|RW|0|
-|360|2|Port 1 IR Sensor Value|1번 포트 적외선 센서 값|R|-|
-|366|2|Port 4 IR Sensor Value|4번 포트 적외선 센서 값|R|-|
-|368|2|Port 1 DMS Sensor Value|1번 포트 DMS 센서 값|R|-|
-|370|2|Port 2 DMS Sensor Value|2번 포트 DMS 센서 값|R|-|
-|372|2|Port 3 DMS Sensor Value|3번 포트 DMS 센서 값|R|-|
-|374|2|Port 4 DMS Sensor Value|4번 포트 DMS 센서 값|R|-|
-|376|1|Port 1 Touch Sensor Value|1번 포트 터치 센서 값 |R|-|
-|377|1|Port 2 Touch Sensor Value|2번 포트 터치 센서 값 |R|-|
-|378|1|Port 3 Touch Sensor Value|3번 포트 터치 센서 값 |R|-|
-|379|1|Port 4 Touch Sensor Value|4번 포트 터치 센서 값 |R|-|
-|381|1|Port 2 LED Module Value|2번 포트 LED모듈 제어 값 |RW|0|
-|382|1|Port 3 LED Module Value|3번 포트 LED모듈 제어 값 |RW|0|
-|386|2|Port 2 User Device Value|2번 포트의 사용자 장치|RW|0|
-|388|2|Port 3 User Device Value|3번 포트의 사용자 장치|RW|0|
-|392|1|Port 1 Temperature Sensor Value|1번 포트 온도 센서 값|R|-|
-|393|1|Port 2 Temperature Sensor Value|2번 포트 온도 센서 값|R|-|
-|394|1|Port 3 Temperature Sensor Value|3번 포트 온도 센서 값|R|-|
-|395|1|Port 4 Temperature Sensor Value|4번 포트 온도 센서 값|R|-|
-|396|1|Port 1 Ultrasonic Sensor Value|1번 포트 초음파 센서 값|R|-|
-|397|1|Port 2 Ultrasonic Sensor Value|2번 포트 초음파 센서 값|R|-|
-|398|1|Port 3 Ultrasonic Sensor Value|3번 포트 초음파 센서 값|R|-|
-|399|1|Port 4 Ultrasonic Sensor Value|4번 포트 초음파 센서 값|R|-|
-|400|1|Port 1 Magnetic Sensor Value|1번 포트 자석 센서 값 |R|-|
-|401|1|Port 2 Magnetic Sensor Value|2번 포트 자석 센서 값 |R|-|
-|402|1|Port 3 Magnetic Sensor Value|3번 포트 자석 센서 값 |R|-|
-|403|1|Port 4 Magnetic Sensor Value|4번 포트 자석 센서 값 |R|-|
-|404|1|Port 1 Motion Sensor Value|1번 포트 동작 감지 센서 값|R|-|
-|405|1|Port 2 Motion Sensor Value|2번 포트 동작 감지 센서 값|R|-|
-|406|1|Port 3 Motion Sensor Value|3번 포트 동작 감지 센서 값|R|-|
-|407|1|Port 4 Motion Sensor Value|4번 포트 동작 감지 센서 값|R|-|
-|409|1|Port 2 Color Sensor Value|2번 포트 칼라 센서 값 |R|-|
-|410|1|Port 3 Color Sensor Value|3번 포트 칼라 센서 값 |R|-|
+| 주소 | 크기 |             데이터              |            설명            | 접근속성 | 초기값 |
+|:----:|:----:|:-------------------------------:|:--------------------------:|:--------:|:------:|
+|  21  |  1   |           Mode Number           |       현재 모드 번호       |    RW    |   -    |
+|  26  |  1   |          Button Status          |      사용자버튼 상태       |    R     |   0    |
+|  66  |  2   |        Motion Play Page         |   모션 실행 페이지 번호    |    RW    |   0    |
+|  68  |  1   |       Motion Play Status        |       모션 실행 상태       |    R     |   -    |
+|  73  |  1   |        128ms Timer Value        |      128ms 타이머 값       |    RW    |   0    |
+|  74  |  2   |         1ms Timer Value         |       1ms 타이머 값        |    RW    |   0    |
+|  77  |  1   |          Random Number          |        임의의 숫자         |    RW    |   -    |
+|  79  |  1   |            Green LED            |        녹색 LED 값         |    RW    |   0    |
+|  82  |  1   |           Motion LED            |    모션중 LED 사용 여부    |    RW    |   0    |
+| 360  |  2   |     Port 1 IR Sensor Value      |  1번 포트 적외선 센서 값   |    R     |   -    |
+| 366  |  2   |     Port 4 IR Sensor Value      |  4번 포트 적외선 센서 값   |    R     |   -    |
+| 368  |  2   |     Port 1 DMS Sensor Value     |    1번 포트 DMS 센서 값    |    R     |   -    |
+| 370  |  2   |     Port 2 DMS Sensor Value     |    2번 포트 DMS 센서 값    |    R     |   -    |
+| 372  |  2   |     Port 3 DMS Sensor Value     |    3번 포트 DMS 센서 값    |    R     |   -    |
+| 374  |  2   |     Port 4 DMS Sensor Value     |    4번 포트 DMS 센서 값    |    R     |   -    |
+| 376  |  1   |    Port 1 Touch Sensor Value    |   1번 포트 터치 센서 값    |    R     |   -    |
+| 377  |  1   |    Port 2 Touch Sensor Value    |   2번 포트 터치 센서 값    |    R     |   -    |
+| 378  |  1   |    Port 3 Touch Sensor Value    |   3번 포트 터치 센서 값    |    R     |   -    |
+| 379  |  1   |    Port 4 Touch Sensor Value    |   4번 포트 터치 센서 값    |    R     |   -    |
+| 381  |  1   |     Port 2 LED Module Value     |  2번 포트 LED모듈 제어 값  |    RW    |   0    |
+| 382  |  1   |     Port 3 LED Module Value     |  3번 포트 LED모듈 제어 값  |    RW    |   0    |
+| 386  |  2   |    Port 2 User Device Value     |   2번 포트의 사용자 장치   |    RW    |   0    |
+| 388  |  2   |    Port 3 User Device Value     |   3번 포트의 사용자 장치   |    RW    |   0    |
+| 392  |  1   | Port 1 Temperature Sensor Value |   1번 포트 온도 센서 값    |    R     |   -    |
+| 393  |  1   | Port 2 Temperature Sensor Value |   2번 포트 온도 센서 값    |    R     |   -    |
+| 394  |  1   | Port 3 Temperature Sensor Value |   3번 포트 온도 센서 값    |    R     |   -    |
+| 395  |  1   | Port 4 Temperature Sensor Value |   4번 포트 온도 센서 값    |    R     |   -    |
+| 396  |  1   | Port 1 Ultrasonic Sensor Value  |  1번 포트 초음파 센서 값   |    R     |   -    |
+| 397  |  1   | Port 2 Ultrasonic Sensor Value  |  2번 포트 초음파 센서 값   |    R     |   -    |
+| 398  |  1   | Port 3 Ultrasonic Sensor Value  |  3번 포트 초음파 센서 값   |    R     |   -    |
+| 399  |  1   | Port 4 Ultrasonic Sensor Value  |  4번 포트 초음파 센서 값   |    R     |   -    |
+| 400  |  1   |  Port 1 Magnetic Sensor Value   |   1번 포트 자석 센서 값    |    R     |   -    |
+| 401  |  1   |  Port 2 Magnetic Sensor Value   |   2번 포트 자석 센서 값    |    R     |   -    |
+| 402  |  1   |  Port 3 Magnetic Sensor Value   |   3번 포트 자석 센서 값    |    R     |   -    |
+| 403  |  1   |  Port 4 Magnetic Sensor Value   |   4번 포트 자석 센서 값    |    R     |   -    |
+| 404  |  1   |   Port 1 Motion Sensor Value    | 1번 포트 동작 감지 센서 값 |    R     |   -    |
+| 405  |  1   |   Port 2 Motion Sensor Value    | 2번 포트 동작 감지 센서 값 |    R     |   -    |
+| 406  |  1   |   Port 3 Motion Sensor Value    | 3번 포트 동작 감지 센서 값 |    R     |   -    |
+| 407  |  1   |   Port 4 Motion Sensor Value    | 4번 포트 동작 감지 센서 값 |    R     |   -    |
+| 409  |  1   |    Port 2 Color Sensor Value    |   2번 포트 칼라 센서 값    |    R     |   -    |
+| 410  |  1   |    Port 3 Color Sensor Value    |   3번 포트 칼라 센서 값    |    R     |   -    |
 
 **참고**: R+ Manager 2.0을 통해서 제어기를 연결하면 컨트롤 테이블을 확인할 수 있습니다. ([컨트롤 테이블 확인하기])
 {: .notice}
@@ -266,17 +272,17 @@ ROBOTIS 5핀 장치(모듈)를 연결해 사용 할 수 있습니다.
 
 > 5핀 케이블 연결 방향
 
-|5핀 장치 종류|포트 1|포트 2|포트 3|포트 4|
-|:---:|:---:|:---:|:---:|:---:|
-|적외선센서|O|X|X|O|
-|DMS센서|O|O|O|O|
-|자이로센서|O|O|O|O|
-|접촉센서|O|O|O|O|
-|컬러센서|X|O|O|X|
-|자석센서|O|O|O|o|
-|온도센서|O|O|O|O|
-|동작감지센서|O|O|O|O|
-|LED모듈|X|O|O|X|
+| 5핀 장치 종류 | 포트 1 | 포트 2 | 포트 3 | 포트 4 |
+|:-------------:|:------:|:------:|:------:|:------:|
+|  적외선센서   |   O    |   X    |   X    |   O    |
+|    DMS센서    |   O    |   O    |   O    |   O    |
+|  자이로센서   |   O    |   O    |   O    |   O    |
+|   접촉센서    |   O    |   O    |   O    |   O    |
+|   컬러센서    |   X    |   O    |   O    |   X    |
+|   자석센서    |   O    |   O    |   O    |   o    |
+|   온도센서    |   O    |   O    |   O    |   O    |
+| 동작감지센서  |   O    |   O    |   O    |   O    |
+|    LED모듈    |   X    |   O    |   O    |   X    |
 
 > 로보티즈 센서 및 LED 모듈 호환 리스트
 
@@ -437,17 +443,17 @@ OpenCM9.04의 다이나믹셀 TTL 3핀 홀은 기존 다이나믹셀 TTL 3핀과
 - [아두이노 IDE]
 - [OpenCM IDE]
 
-||[아두이노 IDE]|[OpenCM IDE]|
-|:---:|:---:|:---:|
-|[Dynamixel SDK]|O|X|
-|[DynamixelWorkbench]|O|X|
-|아두이노 라이브러리|O|O|
-|OS X|O|O (10.12.2)|
-|리눅스|O|O (12.04)|
-|윈도우즈|O|O|
+|                      | [아두이노 IDE] | [OpenCM IDE] |
+|:--------------------:|:--------------:|:------------:|
+|   [Dynamixel SDK]    |       O        |      X       |
+| [DynamixelWorkbench] |       O        |      X       |
+| 아두이노 라이브러리  |       O        |      O       |
+|         OS X         |       O        | O (10.12.2)  |
+|        리눅스        |       O        |  O (12.04)   |
+|       윈도우즈       |       O        |      O       |
 
 ## [OpenCM IDE](#opencm-ide)
-OpenCM IDE는 더이상 업데이트되지 않습니다. [아두이노 IDE]를 사용하시는 것을 권장드립니다.
+OpenCM IDE는 더이상 지원하지 않습니다. [아두이노 IDE]를 사용해주세요.
 
 - [OpenCM IDE] 매뉴얼
 
@@ -648,6 +654,63 @@ Tools > Port > COM1를 선택하십시오.
 `COM1`의 마지막 숫자인 포트번호는 PC의 환경에 따라 바뀔 수 있습니다. 장치관리자에서 포트번호를 확인하시기 바랍니다.
 {: .notice}
 
+## [라이브러리 API](#라이브러리-api)
+
+아두이노 IDE에서 라이브러리를 추가하는 세가지 방법이 있습니다.
+
+- 라이브러리 매니저를 활용하는 방법
+- Zip파일로 압축된 라이브러리를 불러오는 방법
+- 수동으로 설치하는 방법
+
+각각의 방법에 대한 자세한 설명은 [Arduino Official Guide]{: .blank}에서 찾을 수 있습니다.  
+다음은 라이브러리 매니저를 활용하는 방법입니다.
+
+![](/assets/images/parts/interface/dynamixel_shield/library_manager_01.png)
+
+라이브러리 매니저에서 `DYNAMIXEL2Arduino`를 검색하고 설치합니다.
+
+![](/assets/images/parts/interface/dynamixel_shield/library_manager_02.png)
+
+DYNAMIXEL2Arduino 라이브러리가 성공적으로 설치되었다면, DYNAMIXEL2Arduino 항목에서 다이나믹셀을 제어하는 유용한 예제를 찾을 수 있습니다.
+
+### [Dynamixel2Arduino 라이브러리](#dynamixel2arduino-라이브러리)
+
+#### [Dynamixel2Arduino 클래스](#dynamixel2arduino-클래스)
+
+- [begin()]{: .popup}
+- [getPortBaud()]{: .popup}
+- [ping()]{: .popup}
+- [scan()]{: .popup}
+- [getModelNumber()]{: .popup}
+- [setID()]{: .popup}
+- [setProtocol()]{: .popup}
+- [setBaudrate()]{: .popup}
+- [torqueOn()]{: .popup}
+- [torqueOff()]{: .popup}
+- [ledOn()]{: .popup}
+- [ledOff()]{: .popup}
+- [setOperatingMode()]{: .popup}
+- [setGoalPosition()]{: .popup}
+- [getPresentPosition()]{: .popup}
+- [setGoalVelocity()]{: .popup}
+- [getPresentVelocity()]{: .popup}
+- [setGoalPWM()]{: .popup}
+- [getPresentPWM()]{: .popup}
+- [setGoalCurrent()]{: .popup}
+- [getPresentCurrent()]{: .popup}
+- [readControlTableItem()]{: .popup}
+- [writeControlTableItem()]{: .popup}
+
+#### [Master 클래스](#master-클래스)
+
+Dynamixel2Arduino 클래스는 Master 클래스로부터 다음의 함수를 상속받습니다.
+
+- [syncRead()]{: .popup}
+- [syncWrite()]{: .popup}
+- [bulkRead()]{: .popup}
+- [bulkWrite()]{: .popup}
+- [getLastLibErrCode()]{: .popup}
+
 # [다운로드](#다운로드)
 
 - `매뉴얼 다운로드` [OpenCM9.04_manual_ko.zip]
@@ -658,9 +721,27 @@ Tools > Port > COM1를 선택하십시오.
 
 # [참고자료](#참고자료)
 
+## [펌웨어 복구모드](#펌웨어-복구모드)
+
+- 펌웨어의 오류나 잘못된 프로그램의 다운로드로 인해 제어기가 정상적으로 동작하지 않는 경우, 로보플러스 매니저 1.0 / 2.0을 이용해 펌웨어를 복구할 수 있습니다.
+- 제어기에 연결된 전원을 모두 제거합니다. `User` 버튼을 누른 상태에서 PC와 연결된 USB 케이블을 제어기에 연결합니다.
+
+  ![](/assets/images/sw/mobile/mini_firmware_02.jpg)
+  > `User` 버튼
+
+  ![](/assets/images/parts/controller/opencm904/opencm904_08.png)
+
+- 아래와 같이 복구모드로 진입하게 되면, 녹색 LED가 켜집니다. 프로그램이나 펌웨어의 다운로드가 완료되면 제어기가 리셋되며 녹색 LED가 꺼집니다.
+
+  ![](/assets/images/parts/controller/opencm904/recovery_led.jpg)
+
+[로보플러스 매니저 2.0: 펌웨어 복구](/docs/kr/software/rplus2/manager/#펌웨어-복구) 또는 [로보플러스 매니저 1.0: 펌웨어 복구](/docs/kr/software/rplus1/manager/#펌웨어-복구)를 참조하세요.
+{: .notice}
+
 ## [도면](#도면)
 
 ![](/assets/images/parts/controller/opencm904/floor_plan.png)
+
 
 
 [MOLEX 53253-0370]: https://www.molex.com/molex/products/datasheet.jsp?part=active/0532530370_PCB_HEADERS.xml
@@ -682,3 +763,33 @@ Tools > Port > COM1를 선택하십시오.
 [OpenCM9.04_REV_1.-(131009)-TOP.pdf]: http://support.robotis.com/ko/baggage_files/opencm/opencm9.04__rev_1.0(131009)-top.pdf
 [OpenCM9.04_REV_1.-(131009)-BOTTOM.pdf]: http://support.robotis.com/ko/baggage_files/opencm/opencm9.04__rev_1.0(131009)-bottom.pdf
 [OpenCM9.04_REV_1.-(131009)-Gerber.pdf]: http://support.robotis.com/ko/baggage_files/opencm/opencm9.04__rev_1.0(131009)-gerber.pdf
+[Arduino Official Guide]: https://www.arduino.cc/en/Guide/Libraries
+[GitHub repository]: https://github.com/ROBOTIS-GIT/Dynamixel2Arduino
+[begin()]: /docs/en/popup/arduino_api/begin/
+[getPortBaud()]: /docs/en/popup/arduino_api/getPortBaud/
+[ping()]: /docs/en/popup/arduino_api/ping/
+[scan()]: /docs/en/popup/arduino_api/scan/
+[getModelNumber()]: /docs/en/popup/arduino_api/getModelNumber/
+[setID()]: /docs/en/popup/arduino_api/setID/
+[setProtocol()]: /docs/en/popup/arduino_api/setProtocol/
+[setBaudrate()]: /docs/en/popup/arduino_api/setBaudrate/
+[torqueOn()]: /docs/en/popup/arduino_api/torqueOn/
+[torqueOff()]: /docs/en/popup/arduino_api/torqueOff/
+[ledOn()]: /docs/en/popup/arduino_api/ledOn/
+[ledOff()]: /docs/en/popup/arduino_api/ledOff/
+[setOperatingMode()]: /docs/en/popup/arduino_api/setOperatingMode/
+[setGoalPosition()]: /docs/en/popup/arduino_api/setGoalPosition/
+[getPresentPosition()]: /docs/en/popup/arduino_api/getPresentPosition/
+[setGoalVelocity()]: /docs/en/popup/arduino_api/setGoalVelocity/
+[getPresentVelocity()]: /docs/en/popup/arduino_api/getPresentVelocity/
+[setGoalPWM()]: /docs/en/popup/arduino_api/setGoalPWM/
+[getPresentPWM()]: /docs/en/popup/arduino_api/getPresentPWM/
+[setGoalCurrent()]: /docs/en/popup/arduino_api/setGoalCurrent/
+[getPresentCurrent()]: /docs/en/popup/arduino_api/getPresentCurrent/
+[readControlTableItem()]: /docs/en/popup/arduino_api/readControlTableItem/
+[writeControlTableItem()]: /docs/en/popup/arduino_api/writeControlTableItem/
+[syncRead()]: /docs/en/popup/arduino_api/syncRead/
+[syncWrite()]: /docs/en/popup/arduino_api/syncWrite/
+[bulkRead()]: /docs/en/popup/arduino_api/bulkRead/
+[bulkWrite()]: /docs/en/popup/arduino_api/bulkWrite/
+[getLastLibErrCode()]: /docs/en/popup/arduino_api/getLastLibErrCode/
