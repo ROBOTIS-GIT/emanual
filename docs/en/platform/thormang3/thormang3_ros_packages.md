@@ -17,6 +17,14 @@ sidebar:
 
 ## [MPC Packages](#mpc-packages)
 
+{% capture package_warning %}  
+![](/assets/images/icon_warning.png)  
+**CAUTION** : There are two versions of thormang3 manager depending on the version of THORMANG3.  
+ - DXL PRO version : thormang3_manager in ROBOTIS-THORMANG-MPC  
+ - DXL PRO+ version : thormang3_p_manager in ROBOTIS-THORMANG-P-MPC  
+{% endcapture %}
+<div class="notice--warning">{{ package_warning | markdownify }}</div>  
+
 ### [thormang3_manager](#thormang3-manager)
 
 `thormang3_manager` is a package to apply ROBOTIS Framework to THORMANG3. Refer to the below link to create a new robot manager.
@@ -47,6 +55,39 @@ $ sudo bash
   - **init_file_path (string, default: "")** : This path indicates the location of the file that contains initialization information of each joint.
   - **ft_data_path (string, default: "")** : This path indicates the location of the file that contains calibration matrix and unloaded voltage information of the FT sensor.
   - **ft_calibration_data_path (string, default: "")** : This path indicates the location of the file that contains the reference value for FT sensor calibration.
+
+
+### [thormang3_p_manager](#thormang3-p-manager)
+
+`thormang3_p_manager` is a package to apply ROBOTIS Framework to THORMANG3(DXL Pro+ Ver). Refer to the below link to create a new robot manager. It's almost same with `thormang3_manager`. The difference is the actuator-related settings.  
+
+#### Download & Build
+
+`Reference` : [MPC Installation]
+{: .notice}
+
+#### Run
+Execute the program with a .launch file in order to load ROS parameters. The command should be executed from the root account to configure the attribute of Thread.
+
+```
+$ sudo bash
+[sudo] password for robotis:
+# roslaunch thormang3_p_manager thormang3_p_manager.launch
+```
+
+#### ROS API
+
+- Launch Parameters
+
+  - **gazebo (bool, default: false)** : Configure whether to the program run in gazebo mode.
+  - **gazebo_robot_name (string, default: "")** : Configure the robot name for joint_state topic name when running in gazebo mode.  
+    ex) If thormang3 is the gazebo_robot_name, /thormang3/joint_states will be subscribed.
+  - **offset_file_path (string, default: "")** : This path indicates the location of the file that contains offset data of each joint and initial posture data for offset adjustment.
+  - **robot_file_path (string, default: "")** : This path indicates the location of .robot file that contains robot data.
+  - **init_file_path (string, default: "")** : This path indicates the location of the file that contains initialization information of each joint.
+  - **ft_data_path (string, default: "")** : This path indicates the location of the file that contains calibration matrix and unloaded voltage information of the FT sensor.
+  - **ft_calibration_data_path (string, default: "")** : This path indicates the location of the file that contains the reference value for FT sensor calibration.
+
 
 ### [thormang3_kinematics_dynamics](#thormang3-kinematics-dynamics)
 
@@ -375,6 +416,69 @@ This module is to control the head. This module is included in the Thormang3 Man
   - `/robotis/status` ([robotis_controller_msgs/StatusMsg]{: .popup})  
     The message indicates status of the head_control_module.
 
+### [thormang3_tuning_module](#thormang3-tuning-module)  
+
+This module is for tuning gain and offset of THORMANG3. Users can tune gain and offset under thormang3_p_manager.(Users no longer have to run the offset tuner server separately.)
+
+#### Download & Build
+
+  `Reference` : [MPC Installation]
+  {: .notice}
+
+`Reference` : Creating new robot manager
+{: .notice}
+
+#### ROS API
+
+##### Subscribed Topics  
+
+  - `/robotis/tuning_module/tuning_pose` ([std_msgs/String]{: .popup})     
+    The topic transfers pose for tuning gain or offset  
+    
+  - `/robotis/tuning_module/joint_offset_data` ([thormang3_tuning_module_msgs/JointOffsetData]{: .popup})     
+    The topic transfers Joint offset   
+
+  - `/robotis/tuning_module/joint_gain_data` ([thormang3_tuning_module_msgs/JointOffsetData]{: .popup})     
+    The topic transfers Joint gain 
+
+  - `/robotis/tuning_module/torque_enable` ([thormang3_tuning_module_msgs/JointTorqueOnOffArray]{: .popup})    
+    The topic executes Torque on/off command   
+
+  - `/robotis/tuning_module/command` ([std_msgs/String]{: .popup})    
+    The topic transfers other commands(save, initial posture, etc). 
+
+##### Published Topics  
+
+  - `/robotis/enable_ctrl_module` ([std_msgs/String]{: .popup})  
+    A tuning_module activation topic to take the initial posture.  
+
+  - `/robotis/sync_write_item` ([robotis_controller_msgs/SyncWriteItem]{: .popup})  
+    A topic to sync write in order to turn on/off torque.  
+
+  - `/robotis/status` ([robotis_controller_msgs/StatusMsg]{: .popup})  
+    The message indicates status of the head_control_module.
+
+  - `/robotis/enable_offset` ([std_msgs/Bool]{: .popup})  
+    A topic to turn off and off the offset in controller.      
+
+  - `/robotis/tuning_module/present_joints_data` ([thormang3_tuning_module_msgs/JointsOffsetPositionData]{: .popup})  
+    This message is used by tuning_module to send information about each joint to the client.   
+
+##### Services  
+  - `/robotis/set_present_ctrl_modules` ([robotis_controller_msgs/SetModule]{: .popup})  
+    The service to set module to `tuning_module`.  
+
+  - `/robotis/load_offset` ([robotis_controller_msgs/LoadOffset]{: .popup})  
+    The service send the path to load offset.
+
+##### Services Called  
+
+  - `/robotis/tuning_module/get_present_joint_offset_data` ([thormang3_tuning_module_msgs/GetPresentJointOffsetData]{: .popup})  
+    The service send saved joint offset and gain.
+
+##### Parameters  
+  - **offset_file_path (string, default: "")** : This path indicates the location of the file that contains offset data of each joint and initial posture data for offset adjustment.
+  - **init_file_path (string, default: "")** : This path indicates the location of the file that contains initialization information of each joint. It has gain for dynamixels.
 
 ### [ati_ft_sensor](#ati-ft-sensor)
 
@@ -568,6 +672,34 @@ Acquired sensor values when the robot is hanging on the lift and standing on the
 
   - `/robotis/sensor/ft_right_foot/scaled` ([geometry_msgs/WrenchStamped]{: .popup})  
     scaled output from the force torque sensor on the left foot
+
+### [thormang3_alarm_module](#thormang3-alarm-module)
+
+The sensor module of THORMANG3 reads the present current of leg joints and checks if the joint is overloaded.
+
+#### Download & Build
+
+  `Reference` : [MPC Installation]
+  {: .notice}
+
+#### ROS API
+
+1. Subscribed Topics
+  - `/robotis/overload/command` ([std_msgs/String]{: .popup})  
+    Alarm module Command : reset, load_limit
+
+2. Published Topics
+  - `/robotis/status` ([robotis_controller_msgs/StatusMsg]{: .popup})  
+    The status message of THORMANG3
+
+  - `/robotis/overload/data` ([thormang3_alarm_module_msgs/JointOverload]{: .popup})  
+    caculated overload and present current of leg joints  
+
+  - `/robotis/overload/status` ([thormang3_alarm_module_msgs/JointOverloadStatus]{: .popup})  overload status and warning/error count  
+
+3. Config file
+  - `thormang3_alarm_module/data/overload.yaml`  
+    
 
 ### [thormang3_balance_control](#thormang3-balance-control)
 
@@ -1295,8 +1427,22 @@ This is the modified version of KumarRobotics/imu_3dm_gx4.
 ##### Published Topics
 
 `/robotis/sensor/imu/imu` ([sensor_msgs/Imu]{: .popup})
-
 Present output of the IMU Sensor
+
+### [microstrain_3dm_gx5_45](#microstrain-3dm-gx5-45)  
+This package is for the IMU Sensor(MicroStrain 3DM-GX5-25).  
+The latest THORMANG3 is equipped with 3DM-GX5-25. Users have to check what version is eqipped and modify `manager.launch` file to operate THORMANG3.  
+
+#### Download & Build  
+
+`Reference` : [MPC Installation]  
+
+#### ROS API  
+
+##### Published Topics  
+
+`/robotis/sensor/imu/imu` ([sensor_msgs/Imu]{: .popup})
+Present output of the IMU Sensor  
 
 ## [PPC Packages](#ppc-packages)
 
@@ -1704,6 +1850,62 @@ $ rosrun thormang3_offset_tuner_client thormang3_offset_tuner_client
 `~/ROBOTIS-THORMANG-MPC/thormang3_manager/config/offset.yaml`   
   Saved offset value   
 
+### [thormang3_tuner_client](#thormang3-tuner-client)
+
+The GUI Node that can adjust gain and offset of THORMANG3.  
+It does not need to the server, it works with `thormang3_tuning_module` under the thormang3 manager.
+
+#### Download & Build
+
+  `Reference` : [OPC Installation]
+  {: .notice}
+
+#### Run  
+```
+$ rosrun thormang3_tuner_client thormang3_tuner_client
+```  
+![](/assets/images/platform/thormang3/thormang3_tuner_client.png)  
+
+#### ROS API
+
+##### Published Topics
+`/robotis/tuning_module/joint_offset_data` ([thormang3_tuning_module_msgs/JointOffsetData]{: .popup})     
+  The topic transfers Joint offset   
+
+`/robotis/tuning_module/joint_gain_data` ([thormang3_tuning_module_msgs/JointOffsetData]{: .popup})     
+  The topic transfers Joint gain   
+
+`/robotis/tuning_module/torque_enable` ([thormang3_tuning_module_msgs/JointTorqueOnOffArray]{: .popup})    
+  The topic executes Torque on/off command   
+
+`/robotis/tuning_module/command` ([std_msgs/String]{: .popup})    
+  The topic transfers other commands(save, initial posture, etc).   
+
+`/robotis/tuning_module/tuning_pose` ([std_msgs/String]{: .popup})    
+  The topic transfers pose name to tune gain.  
+
+##### Subscribed Topics  
+`/robotis/tuning_module/present_joints_data` ([thormang3_tuning_module_msgs/JointsOffsetPositionData]{: .popup})    
+  ...  
+
+`/robotis/sensor/imu/imu` ([sensor_msgs/Imu]{: .popup})    
+  It shows the orientation(roll, pitch) of the robot to the client.  
+  
+`/robotis/sensor/ft_right_foot/scaled` ([geometry_msgs/WrenchStamped]{: .popup})    
+  The scaled force fo direction z is used to tune the offset considering the center of weight.  
+  
+`/robotis/sensor/ft_left_foot/scaled` ([geometry_msgs/WrenchStamped]{: .popup})    
+  The scaled force fo direction z is used to tune the offset considering the center of weight.  
+
+##### Services
+`/robotis/tuning_module/get_present_joint_offset_data` ([thormang3_tuning_module_msgs/GetPresentJointOffsetData]{: .popup})  
+  The service obtains saved joint offset
+
+##### Parameters  
+`/thormang3_tuner_client/config/tm3_joint_data.yaml`   
+  joint list for making UI  
+
+
 ## [Common Packages](#common-packages)
 
 ### [thormang3_description](#thormang3-description)
@@ -1960,6 +2162,29 @@ The following are Messages and Service used for the thormang3_offset_tuner_serve
   - [GetPresentJointOffsetData.srv]{: .popup}
 
 
+### [thormang3_alarm_module_msgs](#thormang3-alarm-module-msgs)
+
+The following messages alert user to overloading of both legs.
+
+- ROS Message Type
+  - [JointOverload.msg]{: .popup}
+  - [JointOverloadStatus.msg]{: .popup}
+
+
+### [thormang3_tuning_module_msgs](#thormang3-tuning-module-msgs)
+
+The following are Messages and Service used for the thormang3_tuning_module and the thormang3_tuner_client.
+
+- ROS Message Type
+  - [thormang3_tuning_module_msgs/JointOffsetData.msg]{: .popup}  
+  - [thormang3_tuning_module_msgs/JointOffsetPositionData.msg]{: .popup}
+  - [thormang3_tuning_module_msgs/JointTorqueOnOff.msg]{: .popup}
+  - [thormang3_tuning_module_msgs/JointTorqueOnOffArray.msg]{: .popup}
+
+- ROS Service Type
+  - [thormang3_tuning_module_msgs/GetPresentJointOffsetData.srv]{: .popup}
+
+
 [MPC Installation]: /docs/en/platform/thormang3/getting_started/#mpc-installation
 [PPC Installation]: /docs/en/platform/thormang3/getting_started/#ppc-installation
 [OPC Installation]: /docs/en/platform/thormang3/getting_started/#opc-installation
@@ -2019,14 +2244,21 @@ The following are Messages and Service used for the thormang3_offset_tuner_serve
 [thormang3_walking_module_msgs/StepData]: /docs/en/popup/StepData.msg/
 [thormang3_walking_module_msgs/BalanceParam]: /docs/en/popup/BalanceParam.msg/
 
-
-
-
 [thormang3_head_control_module]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3-head-control-module
 
-
-
 [thormang3_head_control_module_msgs/HeadJointPose]: /docs/en/popup/HeadJointPose.msg
+
+[robotis_controller_msgs/SyncWriteItem]: /doc/en/popup/SyncWriteItem.msg
+[thormang3_tuning_module_msgs/JointsOffsetPositionData]: /doc/en/popup/JointsOffsetPositionData.msg
+[thormang3_tuning_module_msgs/JointOffsetData]: /doc/en/popup/JointOffsetData2.msg
+[thormang3_tuning_module_msgs/JointTorqueOnOffArray]: /doc/en/popup/JointTorqueOnOffArray2.msg
+[thormang3_tuning_module_msgs/GetPresentJointOffsetData]: /doc/en/popup/GetPresentJointOffsetData2.srv
+[thormang3_tuning_module_msgs/JointsOffsetPositionData.msg]: /doc/en/popup/JointsOffsetPositionData.msg
+[thormang3_tuning_module_msgs/JointOffsetData.msg]: /doc/en/popup/JointOffsetData2.msg
+[thormang3_tuning_module_msgs/JointTorqueOnOffArray.msg]: /doc/en/popup/JointTorqueOnOffArray2.msg
+[thormang3_tuning_module_msgs/GetPresentJointOffsetData.srv]: /doc/en/popup/GetPresentJointOffsetData2.srv
+[robotis_controller_msgs/SetModule]: /doc/en/popup/SetModule.srv
+[robotis_controller_msgs/LoadOffset]: /doc/en/popup/LoadOffset.srv
 
 [JointPose.msg]: /docs/en/popup/JointPose.msg/
 [JointOffsetData.msg]: /docs/en/popup/JointOffsetData.msg/
@@ -2034,6 +2266,11 @@ The following are Messages and Service used for the thormang3_offset_tuner_serve
 [JointTorqueOnOffArray.msg]: /docs/en/popup/JointTorqueOnOffArray.msg/
 [JointFeedBackGain.msg]: /docs/en/popup/JointFeedBackGain.msg/
 [JointTorqueOnOff.msg]: /docs/en/popup/JointTorqueOnOff.msg/
+
+[thormang3_alarm_module_msgs/JointOverload]: /docs/en/popup/JointOverload.msg/
+[thormang3_alarm_module_msgs/JointOverloadStatus]: /docs/en/popup/JointOverloadStatus.msg/
+[JointOverload]: /docs/en/popup/JointOverload.msg/
+[JointOverloadStatus]: /docs/en/popup/JointOverloadStatus.msg/
 
 [IsRunning.srv]: /docs/en/popup/(thormang3_action_module_msgs)IsRunning.srv/
 [laser_assembler/AssembleScan2]: /docs/en/popup/laser_assembler_AssembleScan2_srv/

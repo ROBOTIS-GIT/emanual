@@ -217,7 +217,9 @@ This section introduces how to install the ROBOTIS ROS Package for THORMANG3.
 
 - ROBOTIS-Framework : DXL SDK based Framework for ROBOTIS platforms
 - ROBOTIS-Framework-msgs : ROS Messages used in the ROBOTIS-Framework
-- ROBOTIS-THORMANG-MPC : ROS Packages for the Motion PC of THORMANG3
+- ROBOTIS-Math : Math library for THORMANG3
+- ROBOTIS-THORMANG-MPC : ROS Packages for the Motion PC of THORMANG3(DXL PRO Ver.)
+- ROBOTIS-THORMANG-P-MPC : ROS Packages for the Motion PC of THORMANG3(DXL PRO+ Ver.)
 - ROBOTIS-THORMANG-MPC-SENSORs : ROS Packages of sensors that is controled the Motion PC of THORMANG3 
 - ROBOTIS-THORMANG-PPC : ROS Packages for the Perception PC of THORMANG3
 - ROBOTIS-THORMANG-OPC : ROS Packages for the Operating PC of THORMANG3
@@ -228,9 +230,16 @@ This section introduces how to install the ROBOTIS ROS Package for THORMANG3.
 
 ### [MPC Installation](#mpc-installation)
 
-Install the ROBOTIS ROS Package from the MPC. The ROS Package is installed by default.
+Install the ROBOTIS ROS Package from the MPC. The ROS Package is installed by default.  
+{% capture package_warning %}  
+![](/assets/images/icon_warning.png)  
+**CAUTION** : The packages to download differ depending on the version of ROBOTIS THORMANG3.  
+{% endcapture %}
+<div class="notice--warning">{{ package_warning | markdownify }}</div> 
 
 1. Download Packages from GitHub to the source folder in the catkin workspace.
+    **NOTE** : DXL Pro Ver.
+    {: .notice}  
     ```
     $ cd ~/catkin_ws/src
     $ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git
@@ -242,7 +251,22 @@ Install the ROBOTIS ROS Package from the MPC. The ROS Package is installed by de
     $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-THORMANG-Common.git
     $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-THORMANG-msgs.git
     $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-THORMANG-Tools.git
+    ```  
+
+    **NOTE** : DXL Pro+ Ver.
+    {: .notice}
     ```
+    $ cd ~/catkin_ws/src
+    $ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git
+    $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-Math.git
+    $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-Framework.git
+    $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-Framework-msgs.git
+    $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-THORMANG-P-MPC.git    
+    $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-THORMANG-MPC-SENSORs.git
+    $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-THORMANG-Common.git
+    $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-THORMANG-msgs.git
+    $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-THORMANG-Tools.git
+    ```  
 
 2. After installing all dependent packages, go to the workspace and build.  
     ```
@@ -250,7 +274,14 @@ Install the ROBOTIS ROS Package from the MPC. The ROS Package is installed by de
     $ catkin_make
     ```
 
-3. Find *ft_calibration_data.yaml* and *ft_data.yaml* from provided USB and copy them to `thormang3_manager/config/`.
+3. Find *ft_calibration_data.yaml* and *ft_data.yaml* from provided USB and copy them to the proper folder.  
+    **NOTE** : DXL Pro Ver.
+    {: .notice}  
+    `thormang3_manager/config/`  
+   
+    **NOTE** : DXL Pro+ Ver.  
+    {: .notice}  
+    `thormang3_p_manager/config/`  
 
 ### [PPC Installation](#ppc-installation)
 
@@ -279,6 +310,7 @@ Install the ROBOTIS ROS Package from the OPC.
     ```
     $ cd ~/catkin_ws/src
     $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-Framework-msgs.git
+    $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-Math.git
     $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-THORMANG-OPC.git
     $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-THORMANG-msgs.git
     $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-THORMANG-Common.git
