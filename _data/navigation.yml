@@ -17293,19 +17293,19 @@ rplustask3:
       - title: "Start Program"
         titlekr: "프로그램 시작"
         url: /software/rplustask3/#start-program
-        urlkr: /software/rplustask3/#프로그램-시작start-program
+        urlkr: /software/rplustask3/#프로그램-시작
       - title: "End Program"
         titlekr: "프로그램 끝"
         url: /software/rplustask3/#end-program
-        urlkr: /software/rplustask3/#프로그램-끝end-program
+        urlkr: /software/rplustask3/#프로그램-끝
       - title: "Begin Block / End Block"
         titlekr: "구간 시작 / 구간 끝"
         url: /software/rplustask3/#begin-block--end-block
-        urlkr: /software/rplustask3/#구간-시작구간-끝begin-blockend-block
+        urlkr: /software/rplustask3/#구간-시작구간-끝
       - title: "Comment"
         titlekr: "주석"
         url: /software/rplustask3/#comment
-        urlkr: /software/rplustask3/#주석comment
+        urlkr: /software/rplustask3/#주석
     - title: "Execute"
       titlekr: "실행문"
       url: /software/rplustask3/#execute
@@ -17395,6 +17395,10 @@ rplustask3:
     url: /software/rplustask3/#task-parameters
     urlkr: /software/rplustask3/#태스크-파라미터
     children:
+    - title: "Port Nickname"
+      titlekr: "포트 닉네임 변경"
+      url: /software/rplustask3/#port-nickname
+      urlkr: /software/rplustask3/#포트-닉네임-변경
     - title: "Controllers"
       titlekr: "제어기 장치"
       url: /software/rplustask3/#controllers
@@ -17468,21 +17472,29 @@ rplustask3:
       url: /software/rplustask3/#grammarcompile-check
       urlkr: /software/rplustask3/#문법검사컴파일-결과-확인하기
     - title: ""
+      titlekr: "키프레임"
+      url: /software/rplustask3/#
+      urlkr: /software/rplustask3/#키프레임
+    - title: ""
+      titlekr: "음원재생"
+      url: /software/rplustask3/#
+      urlkr: /software/rplustask3/#음원-재생       
+    - title: ""
       titlekr: "자유 형태 로봇 생성"
       url: /software/rplustask3/#
       urlkr: /software/rplustask3/#자유-형태-로봇-생성
     - title: ""
-      titlekr: "로봇 모델 변경"
+      titlekr: "3D 로봇 변경"
       url: /software/rplustask3/#
-      urlkr: /software/rplustask3/#로봇-모델-변경
+      urlkr: /software/rplustask3/#3d-로봇-변경
     - title: ""
       titlekr: "포즈 미러링"
       url: /software/rplustask3/#
       urlkr: /software/rplustask3/#포즈-미러링
     - title: ""
-      titlekr: "모션 호출번호 수정"
+      titlekr: "모션 호출 번호 수정"
       url: /software/rplustask3/#
-      urlkr: /software/rplustask3/#모션-호출번호-수정
+      urlkr: /software/rplustask3/#모션-호출-번호-수정
     - title: ""
       titlekr: "모션 파일간 데이터 복사"
       url: /software/rplustask3/#
@@ -17494,11 +17506,23 @@ rplustask3:
     - title: ""
       titlekr: "구 버전 파일 변환하기"
       url: /software/rplustask3/#
-      urlkr: /software/rplustask3/#구-버전-파일-변환하기
+      urlkr: /software/rplustask3/#구-버전-파일mtn-변환하기
     - title: ""
       titlekr: "3D 카메라 조작"
       url: /software/rplustask3/#
       urlkr: /software/rplustask3/#3d-카메라-조작
+    - title: ""
+      titlekr: "화면에 각도 출력하기"
+      url: /software/rplustask3/#
+      urlkr: /software/rplustask3/#화면에-각도-출력하기
+    - title: ""
+      titlekr: "배경이미지 지정"
+      url: /software/rplustask3/#
+      urlkr: /software/rplustask3/#배경이미지-지정
+    - title: ""
+      titlekr: "초기위치 이동"
+      url: /software/rplustask3/#
+      urlkr: /software/rplustask3/#초기위치-이동    
     - title: ""
       titlekr: "단축키"
       url: /software/rplustask3/#

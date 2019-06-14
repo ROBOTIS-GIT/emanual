@@ -4,6 +4,25 @@
   background-color: white;
   border-radius: $img-border-radius;
   font-size: 1em;
+  
+  h1 {
+    font-size: $type-size-4;
+    color: #134268;
+  }
+  
+  h2 {
+    font-size: $type-size-5;
+    color: #1a5b8f;
+  }
+  
+  h3 {
+    font-size: $type-size-5;
+    color: #2174b6;
+  }
+  
+  ul, ol, div, table {
+    margin: 0 0 0 1em;
+  }
 }
 
 .popup {
