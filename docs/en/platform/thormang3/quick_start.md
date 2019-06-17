@@ -110,13 +110,53 @@ ROBOTIS recommends users to connect with THROMANG3 via SSH client.
 
 ## [Basic Operation](#basic-operation)
 
-### Basic Manipulation Demo
-
+### Basic Manipulation Demo  
+#### Run the roscore  
 1. Connect to the PPC with SSH client program (IP: 10.17.3.35)
 
     ```
-    $ ssh 10.17.3.35 -l robotis (password: 111111)
+    $ ssh 10.17.3.35 -l robotis
     ```
+     - user name : `robotis`
+     - password : `111111`  
+
+2. Run the `roscore`  
+    ```
+    $ roscore
+    ```  
+  
+#### Run the thormang3 manager  
+{% capture package_warning %}  
+![](/assets/images/icon_warning.png)  
+**CAUTION** : The command differs depending on the version of ROBOTIS THORMANG3.  
+{% endcapture %}
+<div class="notice--warning">{{ package_warning | markdownify }}</div>  
+1. Connect to the MPC with SSH client program (IP: 10.17.3.30)  
+    ```
+    $ ssh 10.17.3.30 -l robotis
+    ```
+     - user name : `robotis`  
+     - password : `111111`  
+
+2. Run the manager  
+Please check the IMU version and the `thormang3 manager.launch` file before running the manager.  
+     - THORMANG3 PRO Ver.   
+        ```
+        $ roslaunch thormang3_manager thormang3_manager.launch
+        ```  
+     - THORMANG3 PRO+ Ver.   
+        ```
+        $ roslaunch thormang3_p_manager thormang3_p_manager.launch
+        ```  
+
+#### Play basic manipulation demo  
+1. Connect to the PPC with SSH client program (IP: 10.17.3.35)
+
+    ```
+    $ ssh 10.17.3.35 -l robotis
+    ```
+     - user name : `robotis`
+     - password : `111111`
 
 2. The following command will execute the manipulation demo.
 
@@ -155,13 +195,53 @@ ROBOTIS recommends users to connect with THROMANG3 via SSH client.
     $ rostopic pub -1 /robotis/manipulation_demo/command std_msgs/String "left_arm"
     ```
 
-### Basic Walking Simple Demo
-
-1. Connect to the PPC with SSH client program (IP: 10.17.3.35).
+### Basic Walking Simple Demo  
+#### Run the roscore  
+1. Connect to the PPC with SSH client program (IP: 10.17.3.35)
 
     ```
-    $ ssh 10.17.3.35 -l robotis(password: 111111)   
+    $ ssh 10.17.3.35 -l robotis
     ```
+     - user name : `robotis`
+     - password : `111111`  
+
+2. Run the `roscore`  
+    ```
+    $ roscore
+    ```  
+  
+#### Run the thormang3 manager  
+{% capture package_warning %}  
+![](/assets/images/icon_warning.png)  
+**CAUTION** : The command differs depending on the version of ROBOTIS THORMANG3.  
+{% endcapture %}
+<div class="notice--warning">{{ package_warning | markdownify }}</div>  
+1. Connect to the MPC with SSH client program (IP: 10.17.3.30)  
+    ```
+    $ ssh 10.17.3.30 -l robotis
+    ```
+     - user name : `robotis`  
+     - password : `111111`  
+
+2. Run the manager  
+Please check the IMU version and the `thormang3 manager.launch` file before running the manager.  
+  - THORMANG3 PRO Ver.   
+    ```
+    $ roslaunch thormang3_manager thormang3_manager.launch
+    ```  
+  - THORMANG3 PRO+ Ver.   
+    ```
+    $ roslaunch thormang3_p_manager thormang3_p_manager.launch
+    ```  
+
+#### Play basic manipulation demo  
+1. Connect to the PPC with SSH client program (IP: 10.17.3.35)
+
+    ```
+    $ ssh 10.17.3.35 -l robotis
+    ```
+     - user name : `robotis`
+     - password : `111111`
 
 2. The following command will execute the walking demo.
 
