@@ -20,7 +20,7 @@ layout: popup
  ```
 
 - Description
-This message is used when creating `thormang3_tuning_module_msgs/GetPresentJointOffsetData.srv`.
+This message is used when creating `thormang3_tuning_module_msgs/GetPresentJointOffsetData.srv` snd `thormang3_tuning_module_msgs/JointsOffsetPositionData.msg`  
 
     * ` string  joint_name`
 &emsp;&emsp; joint name

@@ -435,13 +435,13 @@ This module is for tuning gain and offset of THORMANG3. Users can tune gain and 
   - `/robotis/tuning_module/tuning_pose` ([std_msgs/String]{: .popup})     
     The topic transfers pose for tuning gain or offset  
     
-  - `/robotis/tuning_module/joint_offset_data` ([thormang3_tuning_module_msgs/JointOffsetData]{: .popup})     
+  - `/robotis/tuning_module/joint_offset_data` ([thormang3_tuning_module_msgs/JointOffsetData][thormang3_tuning_module_msgs/JointOffsetData.msg]{: .popup})     
     The topic transfers Joint offset   
 
-  - `/robotis/tuning_module/joint_gain_data` ([thormang3_tuning_module_msgs/JointOffsetData]{: .popup})     
+  - `/robotis/tuning_module/joint_gain_data` ([thormang3_tuning_module_msgs/JointOffsetData][thormang3_tuning_module_msgs/JointOffsetData.msg]{: .popup})     
     The topic transfers Joint gain 
 
-  - `/robotis/tuning_module/torque_enable` ([thormang3_tuning_module_msgs/JointTorqueOnOffArray]{: .popup})    
+  - `/robotis/tuning_module/torque_enable` ([thormang3_tuning_module_msgs/JointTorqueOnOffArray][thormang3_tuning_module_msgs/JointTorqueOnOffArray.msg]{: .popup})    
     The topic executes Torque on/off command   
 
   - `/robotis/tuning_module/command` ([std_msgs/String]{: .popup})    
@@ -461,7 +461,7 @@ This module is for tuning gain and offset of THORMANG3. Users can tune gain and 
   - `/robotis/enable_offset` ([std_msgs/Bool]{: .popup})  
     A topic to turn off and off the offset in controller.      
 
-  - `/robotis/tuning_module/present_joints_data` ([thormang3_tuning_module_msgs/JointsOffsetPositionData]{: .popup})  
+  - `/robotis/tuning_module/present_joints_data` ([thormang3_tuning_module_msgs/JointsOffsetPositionData][thormang3_tuning_module_msgs/JointsOffsetPositionData.msg]{: .popup})  
     This message is used by tuning_module to send information about each joint to the client.   
 
 ##### Services  
@@ -473,7 +473,7 @@ This module is for tuning gain and offset of THORMANG3. Users can tune gain and 
 
 ##### Services Called  
 
-  - `/robotis/tuning_module/get_present_joint_offset_data` ([thormang3_tuning_module_msgs/GetPresentJointOffsetData]{: .popup})  
+  - `/robotis/tuning_module/get_present_joint_offset_data` ([thormang3_tuning_module_msgs/GetPresentJointOffsetData][thormang3_tuning_module_msgs/GetPresentJointOffsetData.srv]{: .popup})  
     The service send saved joint offset and gain.
 
 ##### Parameters  
@@ -692,10 +692,10 @@ The sensor module of THORMANG3 reads the present current of leg joints and check
   - `/robotis/status` ([robotis_controller_msgs/StatusMsg]{: .popup})  
     The status message of THORMANG3
 
-  - `/robotis/overload/data` ([thormang3_alarm_module_msgs/JointOverload]{: .popup})  
+  - `/robotis/overload/data` ([thormang3_alarm_module_msgs/JointOverload][thormang3_alarm_module_msgs/JointOverload.msg]{: .popup})  
     caculated overload and present current of leg joints  
 
-  - `/robotis/overload/status` ([thormang3_alarm_module_msgs/JointOverloadStatus]{: .popup})  overload status and warning/error count  
+  - `/robotis/overload/status` ([thormang3_alarm_module_msgs/JointOverloadStatus][thormang3_alarm_module_msgs/JointOverloadStatus.msg]{: .popup})  overload status and warning/error count  
 
 3. Config file
   - `thormang3_alarm_module/data/overload.yaml`  
@@ -1833,17 +1833,17 @@ $ rosrun thormang3_offset_tuner_client thormang3_offset_tuner_client
 #### ROS API
 
 ##### Published Topics
-`/robotis/offset_tuner/joint_offset_data` ([thormang3_offset_tuner_msgs/JointOffsetData|JointOffsetData.msg]{: .popup})     
+`/robotis/offset_tuner/joint_offset_data` ([thormang3_offset_tuner_msgs/JointOffsetData][thormang3_offset_tuner_msgs/JointOffsetData.msg]{: .popup})     
   The topic transfers Joint offset   
 
-`/robotis/offset_tuner/torque_enable` ([thormang3_offset_tuner_msgs/JointTorqueOnOffArray|JointTorqueOnOffArray.msg]{: .popup})    
+`/robotis/offset_tuner/torque_enable` ([thormang3_offset_tuner_msgs/JointTorqueOnOffArray][thormang3_offset_tuner_msgs/JointTorqueOnOffArray.msg]{: .popup})    
   The topic executes Torque on/off command   
 
 `/robotis/offset_tuner/command` ([std_msgs/String]{: .popup})    
   The topic transfers other commands(save, initial posture, etc).   
 
 ##### Services
-`/robotis/offset_tuner/get_present_joint_offset_data` ([thormang3_offset_tuner_msgs/GetPresentJointOffsetData|GetPresentJointOffsetData.srv]{: .popup})  
+`/robotis/offset_tuner/get_present_joint_offset_data` ([thormang3_offset_tuner_msgs/GetPresentJointOffsetData][thormang3_offset_tuner_msgs/GetPresentJointOffsetData.srv]{: .popup})  
   The service obtains saved joint offset
 
 ##### Parameters  
@@ -1869,13 +1869,13 @@ $ rosrun thormang3_tuner_client thormang3_tuner_client
 #### ROS API
 
 ##### Published Topics
-`/robotis/tuning_module/joint_offset_data` ([thormang3_tuning_module_msgs/JointOffsetData]{: .popup})     
+`/robotis/tuning_module/joint_offset_data` ([thormang3_tuning_module_msgs/JointOffsetData][thormang3_tuning_module_msgs/JointOffsetData.msg]{: .popup})     
   The topic transfers Joint offset   
 
-`/robotis/tuning_module/joint_gain_data` ([thormang3_tuning_module_msgs/JointOffsetData]{: .popup})     
+`/robotis/tuning_module/joint_gain_data` ([thormang3_tuning_module_msgs/JointOffsetData][thormang3_tuning_module_msgs/JointOffsetData.msg]{: .popup})     
   The topic transfers Joint gain   
 
-`/robotis/tuning_module/torque_enable` ([thormang3_tuning_module_msgs/JointTorqueOnOffArray]{: .popup})    
+`/robotis/tuning_module/torque_enable` ([thormang3_tuning_module_msgs/JointTorqueOnOffArray][thormang3_tuning_module_msgs/JointTorqueOnOffArray.msg]{: .popup})    
   The topic executes Torque on/off command   
 
 `/robotis/tuning_module/command` ([std_msgs/String]{: .popup})    
@@ -1885,7 +1885,7 @@ $ rosrun thormang3_tuner_client thormang3_tuner_client
   The topic transfers pose name to tune gain.  
 
 ##### Subscribed Topics  
-`/robotis/tuning_module/present_joints_data` ([thormang3_tuning_module_msgs/JointsOffsetPositionData]{: .popup})    
+`/robotis/tuning_module/present_joints_data` ([thormang3_tuning_module_msgs/JointsOffsetPositionData][thormang3_tuning_module_msgs/JointsOffsetPositionData.msg]{: .popup})    
   ...  
 
 `/robotis/sensor/imu/imu` ([sensor_msgs/Imu]{: .popup})    
@@ -1898,7 +1898,7 @@ $ rosrun thormang3_tuner_client thormang3_tuner_client
   The scaled force fo direction z is used to tune the offset considering the center of weight.  
 
 ##### Services
-`/robotis/tuning_module/get_present_joint_offset_data` ([thormang3_tuning_module_msgs/GetPresentJointOffsetData]{: .popup})  
+`/robotis/tuning_module/get_present_joint_offset_data` ([thormang3_tuning_module_msgs/GetPresentJointOffsetData][thormang3_tuning_module_msgs/GetPresentJointOffsetData.srv]{: .popup})  
   The service obtains saved joint offset
 
 ##### Parameters  
@@ -1957,10 +1957,10 @@ $ roslaunch thormang3_offset_tuner_server thormang3_offset_tuner_server.launch
 `/robotis/base/send_tra` ([std_msgs/String]{: .popup})  
   The topic informs the start and end of trajectory following.  
 
-`/robotis/offset_tuner/joint_offset_data` ([thormang3_offset_tuner_msgs/JointOffsetData]{: .popup})  
+`/robotis/offset_tuner/joint_offset_data` ([thormang3_offset_tuner_msgs/JointOffsetData][thormang3_offset_tuner_msgs/JointOffsetData.msg]{: .popup})  
   The topic updates joint offset related parameters.  
 
-`/robotis/offset_tuner/torque_enable` ([thormang3_offset_tuner_msgs/JointTorqueOnOffArray]{: .popup})  
+`/robotis/offset_tuner/torque_enable` ([thormang3_offset_tuner_msgs/JointTorqueOnOffArray][thormang3_offset_tuner_msgs/JointTorqueOnOffArray.msg]{: .popup})  
   The topic transfers Torque enable/disable command for joints.
 
 `/robotis/offset_tuner/command` ([std_msgs/String]{: .popup})  
@@ -1969,7 +1969,7 @@ $ roslaunch thormang3_offset_tuner_server thormang3_offset_tuner_server.launch
   - "ini_pose" : Take the initial posture for offset tuning  
 
 #### Services
-`robotis/offset_tuner/get_present_joint_offset_data` ([thormang3_offset_tuner_msgs/GetPresentJointOffsetData]{: .popup})  
+`robotis/offset_tuner/get_present_joint_offset_data` ([thormang3_offset_tuner_msgs/GetPresentJointOffsetData][thormang3_offset_tuner_msgs/GetPresentJointOffsetData.srv]{: .popup})  
   The service obtains current offset data from the [thormang3_offset_tuner_client].  
 
 ### [thormang3_action_editor](#thormang3-action-editor)
@@ -2153,13 +2153,13 @@ Messages used in the [thormang3_head_control_module]
 The following are Messages and Service used for the thormang3_offset_tuner_server and the [thormang3_offset_tuner_client].
 
 - ROS Message Type
-  - [JointOffsetData.msg]{: .popup}
-  - [JointOffsetPositionData.msg]{: .popup}
-  - [JointTorqueOnOff.msg]{: .popup}
-  - [JointTorqueOnOffArray.msg]{: .popup}
+  - [JointOffsetData.msg][thormang3_offset_tuner_msgs/JointOffsetData.msg]{: .popup}
+  - [JointOffsetPositionData.msg][thormang3_offset_tuner_msgs/JointOffsetPositionData.msg]{: .popup}
+  - [JointTorqueOnOff.msg][thormang3_offset_tuner_msgs/JointTorqueOnOff.msg]{: .popup}
+  - [JointTorqueOnOffArray.msg][thormang3_offset_tuner_msgs/JointTorqueOnOffArray.msg]{: .popup}
 
 - ROS Service Type
-  - [GetPresentJointOffsetData.srv]{: .popup}
+  - [GetPresentJointOffsetData.srv][thormang3_offset_tuner_msgs/GetPresentJointOffsetData.srv]{: .popup}
 
 
 ### [thormang3_alarm_module_msgs](#thormang3-alarm-module-msgs)
@@ -2167,8 +2167,8 @@ The following are Messages and Service used for the thormang3_offset_tuner_serve
 The following messages alert user to overloading of both legs.
 
 - ROS Message Type
-  - [JointOverload.msg]{: .popup}
-  - [JointOverloadStatus.msg]{: .popup}
+  - [JointOverload.msg][thormang3_alarm_module_msgs/JointOverload.msg]{: .popup}
+  - [JointOverloadStatus.msg][thormang3_alarm_module_msgs/JointOverloadStatus.msg]{: .popup}
 
 
 ### [thormang3_tuning_module_msgs](#thormang3-tuning-module-msgs)
@@ -2176,13 +2176,13 @@ The following messages alert user to overloading of both legs.
 The following are Messages and Service used for the thormang3_tuning_module and the thormang3_tuner_client.
 
 - ROS Message Type
-  - [thormang3_tuning_module_msgs/JointOffsetData.msg]{: .popup}  
-  - [thormang3_tuning_module_msgs/JointOffsetPositionData.msg]{: .popup}
-  - [thormang3_tuning_module_msgs/JointTorqueOnOff.msg]{: .popup}
-  - [thormang3_tuning_module_msgs/JointTorqueOnOffArray.msg]{: .popup}
+  - [JointOffsetData.msg][thormang3_tuning_module_msgs/JointOffsetData.msg]{: .popup}  
+  - [JointOffsetPositionData.msg][thormang3_tuning_module_msgs/JointOffsetPositionData.msg]{: .popup}
+  - [JointTorqueOnOff.msg][thormang3_tuning_module_msgs/JointTorqueOnOff.msg]{: .popup}
+  - [JointTorqueOnOffArray.msg][thormang3_tuning_module_msgs/JointTorqueOnOffArray.msg]{: .popup}
 
 - ROS Service Type
-  - [thormang3_tuning_module_msgs/GetPresentJointOffsetData.srv]{: .popup}
+  - [GetPresentJointOffsetData.srv][thormang3_tuning_module_msgs/GetPresentJointOffsetData.srv]{: .popup}
 
 
 [MPC Installation]: /docs/en/platform/thormang3/getting_started/#mpc-installation
@@ -2215,12 +2215,12 @@ The following are Messages and Service used for the thormang3_tuning_module and 
 
 [thormang3_offset_tuner_client]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3-offset-tuner-client
 [thormang3_offset_tuner_server]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3-offset-tuner-server
-[thormang3_offset_tuner_msgs/JointOffsetData|JointOffsetData.msg]: /docs/en/popup/JointOffsetData.msg/
-[thormang3_offset_tuner_msgs/JointOffsetData]: /docs/en/popup/JointOffsetData.msg/
-[thormang3_offset_tuner_msgs/JointTorqueOnOffArray|JointTorqueOnOffArray.msg]: /docs/en/popup/JointTorqueOnOffArray.msg/
-[thormang3_offset_tuner_msgs/JointTorqueOnOffArray]: /docs/en/popup/JointTorqueOnOffArray.msg/
-[thormang3_offset_tuner_msgs/GetPresentJointOffsetData|GetPresentJointOffsetData.srv]: /docs/en/popup/GetPresentJointOffsetData.srv/
-[thormang3_offset_tuner_msgs/GetPresentJointOffsetData]: /docs/en/popup/GetPresentJointOffsetData.srv/
+
+[thormang3_offset_tuner_msgs/JointOffsetData.msg]: /docs/en/popup/JointOffsetData.msg/
+[thormang3_offset_tuner_msgs/JointOffsetPositionData.msg]: /docs/en/popup/JointOffsetPositionData.msg/
+[thormang3_offset_tuner_msgs/JointTorqueOnOff.msg]: /docs/en/popup/JointTorqueOnOff.msg/
+[thormang3_offset_tuner_msgs/JointTorqueOnOffArray.msg]: /docs/en/popup/JointTorqueOnOffArray.msg/
+[thormang3_offset_tuner_msgs/GetPresentJointOffsetData.srv]: /docs/en/popup/GetPresentJointOffsetData.srv/
 
 [thormang3_manipulation_module_msgs/KinematicsPose]: /docs/en/popup/KinematicsPose.msg/
 [thormang3_manipulation_module_msgs/JointPose]: /docs/en/popup/JointPose.msg/
@@ -2249,28 +2249,23 @@ The following are Messages and Service used for the thormang3_tuning_module and 
 [thormang3_head_control_module_msgs/HeadJointPose]: /docs/en/popup/HeadJointPose.msg
 
 [robotis_controller_msgs/SyncWriteItem]: /doc/en/popup/SyncWriteItem.msg
-[thormang3_tuning_module_msgs/JointsOffsetPositionData]: /doc/en/popup/JointsOffsetPositionData.msg
-[thormang3_tuning_module_msgs/JointOffsetData]: /doc/en/popup/JointOffsetData2.msg
-[thormang3_tuning_module_msgs/JointTorqueOnOffArray]: /doc/en/popup/JointTorqueOnOffArray2.msg
-[thormang3_tuning_module_msgs/GetPresentJointOffsetData]: /doc/en/popup/GetPresentJointOffsetData2.srv
-[thormang3_tuning_module_msgs/JointsOffsetPositionData.msg]: /doc/en/popup/JointsOffsetPositionData.msg
-[thormang3_tuning_module_msgs/JointOffsetData.msg]: /doc/en/popup/JointOffsetData2.msg
-[thormang3_tuning_module_msgs/JointTorqueOnOffArray.msg]: /doc/en/popup/JointTorqueOnOffArray2.msg
-[thormang3_tuning_module_msgs/GetPresentJointOffsetData.srv]: /doc/en/popup/GetPresentJointOffsetData2.srv
 [robotis_controller_msgs/SetModule]: /doc/en/popup/SetModule.srv
 [robotis_controller_msgs/LoadOffset]: /doc/en/popup/LoadOffset.srv
 
-[JointPose.msg]: /docs/en/popup/JointPose.msg/
-[JointOffsetData.msg]: /docs/en/popup/JointOffsetData.msg/
-[JointOffsetPositionData.msg]: /docs/en/popup/JointOffsetPositionData.msg/
-[JointTorqueOnOffArray.msg]: /docs/en/popup/JointTorqueOnOffArray.msg/
-[JointFeedBackGain.msg]: /docs/en/popup/JointFeedBackGain.msg/
-[JointTorqueOnOff.msg]: /docs/en/popup/JointTorqueOnOff.msg/
+[thormang3_tuning_module_msgs/JointOffsetData.msg]: /doc/en/popup/JointOffsetData2.msg
+[thormang3_tuning_module_msgs/JointOffsetPositionData.msg]: /doc/en/popup/JointOffsetPositionData2.msg
+[thormang3_tuning_module_msgs/JointsOffsetPositionData.msg]: /doc/en/popup/JointsOffsetPositionData.msg
+[thormang3_tuning_module_msgs/JointTorqueOnOffArray.msg]: /doc/en/popup/JointTorqueOnOffArray2.msg
+[thormang3_tuning_module_msgs/JointTorqueOnOff.msg]: /doc/en/popup/JointTorqueOnOff2.msg
+[thormang3_tuning_module_msgs/GetPresentJointOffsetData.srv]: /doc/en/popup/GetPresentJointOffsetData2.srv
 
-[thormang3_alarm_module_msgs/JointOverload]: /docs/en/popup/JointOverload.msg/
-[thormang3_alarm_module_msgs/JointOverloadStatus]: /docs/en/popup/JointOverloadStatus.msg/
-[JointOverload]: /docs/en/popup/JointOverload.msg/
-[JointOverloadStatus]: /docs/en/popup/JointOverloadStatus.msg/
+
+[JointPose.msg]: /docs/en/popup/JointPose.msg/
+[JointFeedBackGain.msg]: /docs/en/popup/JointFeedBackGain.msg/
+
+
+[thormang3_alarm_module_msgs/JointOverload.msg]: /docs/en/popup/JointOverload.msg/
+[thormang3_alarm_module_msgs/JointOverloadStatus.msg]: /docs/en/popup/JointOverloadStatus.msg/
 
 [IsRunning.srv]: /docs/en/popup/(thormang3_action_module_msgs)IsRunning.srv/
 [laser_assembler/AssembleScan2]: /docs/en/popup/laser_assembler_AssembleScan2_srv/
@@ -2289,7 +2284,6 @@ The following are Messages and Service used for the thormang3_tuning_module and 
 [FootStepCommand.msg]: /docs/en/popup/FootStepCommand.msg/
 [Step2D.msg]: /docs/en/popup/Step2D.msg/
 [Step2DArray.msg]: /docs/en/popup/Step2DArray.msg/
-[GetPresentJointOffsetData.srv]: /docs/en/popup/GetPresentJointOffsetData.srv/
 [BalanceParam.msg]: /docs/en/popup/BalanceParam.msg/
 [DampingBalanceParam.msg]: /docs/en/popup/DampingBalanceParam.msg/
 [PoseXYZRPY.msg]: /docs/en/popup/PoseXYZRPY.msg/
