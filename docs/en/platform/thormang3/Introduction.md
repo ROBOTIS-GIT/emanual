@@ -26,7 +26,17 @@ Read this guide thouroughly before getting with THORMANG.
 ## [What is THORMANG3?](#what-is-thormang3)
 
 THOR (Tactical Hazardous Operations Robot) is an affordable, full size humanoid robot platform with advanced
-computational power, sophisticated sensors, high payload capacity, and dynamic motion abilities to enable many exciting researches and educational activities.
+computational power, sophisticated sensors, high payload capacity, and dynamic motion abilities to enable many exciting researches and educational activities.   
+
+{% capture package_warning %}  
+![](/assets/images/icon_warning.png)  
+**CAUTION** : Due to the revision of Dynamixel Pro, there are two versions.  
+ - ROBOTIS THORMANG3 DXL PRO version  
+ - ROBOTIS THORMANG3 DXL PRO+ version  
+    ROBOTIS THORMANG3 (DXL PRO+ Ver) is changed actuators from Dynamixel Pro to Dynamixel Pro Plus. It has been applied to ROBOTIS THORMANG3 since June 2019.  
+    | Reference : [DYNAMIXEL PRO+]  
+{% endcapture %}
+<div class="notice--warning">{{ package_warning | markdownify }}</div>
 
 ## [Package Contents](#package-contents)
 
@@ -118,3 +128,4 @@ ROBOTIS is not responsible for any damages or losses resulting from any accident
 
 [thormang3_stp.zip]:http://support.robotis.com/en/baggage_files/thormang3/thormang3_stp.zip
 [sim_for_thormang3_stl.zip]:http://support.robotis.com/en/baggage_files/thormang3/sim_for_thormang3_stl.zip
+[DYNAMIXEL PRO+]:http://emanual.robotis.com/docs/en/dxl/pro_plus/
