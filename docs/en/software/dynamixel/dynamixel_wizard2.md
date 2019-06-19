@@ -18,7 +18,7 @@ sidebar:
 
 ![](/assets/images/sw/dynamixel/wizard2/wizard2_main_000.jpg)
 
-**Software Download**  
+**Software Download(v2.0.0.7)**  
 [Windows](http://www.robotis.com/service/download.php?no=1670)  
 [Linux](http://www.robotis.com/service/download.php?no=1671)  
 [Mac](http://www.robotis.com/service/download.php?no=176)  
@@ -90,7 +90,7 @@ Although almost all ROBOTIS products are shipped with preinstalled firmwares, ne
 ## [Install: Windows](#install-windows)
 
 1. Download the package file.
-- [Package file for Windows](http://www.robotis.com/service/download.php?no=1670)  
+- [Windows Software Download(v2.0.0.7)](http://www.robotis.com/service/download.php?no=1670)  
 2. Execute downloaded installation file.  
 3. Click on `Next` button to proceed installation.
 
@@ -99,7 +99,7 @@ Although almost all ROBOTIS products are shipped with preinstalled firmwares, ne
 ## [Install: Linux](#install-linux)
 
 1. Download the package file.  
-- [Package file for Linux](http://www.robotis.com/service/download.php?no=1671)  
+- [Linux Software Download(v2.0.0.7)](http://www.robotis.com/service/download.php?no=1671)  
 2. Enter the following command to change the permission.
 
     ```c
@@ -117,7 +117,7 @@ Although almost all ROBOTIS products are shipped with preinstalled firmwares, ne
 ## [Install: Mac](#install-mac)
 
 1. Download the package file.  
-- [Package file for Mac](http://www.robotis.com/service/download.php?no=1760)
+- [Mac Software Download(v2.0.0.7)](http://www.robotis.com/service/download.php?no=1760)
 2. Right click on the downloaded dmg file and select `Open` from the mene.  
   ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_mac_01.png)
 3. Launch the `DynamixelWizard2Setup_x64` file.  
@@ -151,6 +151,11 @@ Although almost all ROBOTIS products are shipped with preinstalled firmwares, ne
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_linux_03.png)
 
+## [Uninstall: Mac](#uninstall-mac)
+
+1. Go to `DYNAMIXEL2Wizard` from `Applications`.
+2. Execute `maintenancetool` in DYNAMIXEL2Wizard folder.
+3. Select `Remove all components` and click `Next` to proceed.
 
 # [Menu Description](#menu-description)
 

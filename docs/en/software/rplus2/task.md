@@ -35,7 +35,7 @@ A robot operates according to the task code created by the user, and the RoboPlu
 [`Mac OS X R+Task 2.0 Download`]{: .blank}
 {: .notice--warning}
 
-[`Mac OS X R+Task 2.0 Download`]: http://www.robotis.com/service/download.php?no=2
+[`Mac OS X R+Task 2.0 Download`]: http://en.robotis.com/service/download.php?no=2
 
 1. Download R+Task 2.0 from below download link.  
   [`Mac OS X R+Task 2.0 Download`]{: .blank}

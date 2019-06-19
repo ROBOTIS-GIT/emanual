@@ -30,7 +30,7 @@ The Motion project file has an .mtnx extension, and is shown on the PC as the ic
 [`Mac OS X R+Motion 2.0 Download`]{: .blank}
 {: .notice--warning}
 
-[`Mac OS X R+Motion 2.0 Download`]: http://www.robotis.com/service/download.php?no=7
+[`Mac OS X R+Motion 2.0 Download`]: http://en.robotis.com/service/download.php?no=7
 
 1. Download R+Motion 2.0 from below download link.  
   [`Mac OS X R+Motion 2.0 Download`]{: .blank}
