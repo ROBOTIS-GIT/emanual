@@ -17478,7 +17478,7 @@ rplustask3:
     - title: ""
       titlekr: "음원재생"
       url: /software/rplustask3/#
-      urlkr: /software/rplustask3/#음원-재생       
+      urlkr: /software/rplustask3/#음원-재생
     - title: ""
       titlekr: "자유 형태 로봇 생성"
       url: /software/rplustask3/#
@@ -17522,7 +17522,7 @@ rplustask3:
     - title: ""
       titlekr: "초기위치 이동"
       url: /software/rplustask3/#
-      urlkr: /software/rplustask3/#초기위치-이동    
+      urlkr: /software/rplustask3/#초기위치-이동
     - title: ""
       titlekr: "단축키"
       url: /software/rplustask3/#
@@ -19082,7 +19082,7 @@ dynamixel_workbench:
       - title: "Controllers"
         url: /software/dynamixel/dynamixel_workbench/#controllers
       - title: "Operators"
-        url: /software/dynamixel/dynamixel_workbench/#operators              
+        url: /software/dynamixel/dynamixel_workbench/#operators
     - title: "OpenCR and OpenCM"
       url: /software/dynamixel/dynamixel_workbench/#opencr-and-opencm-tutorials
       children:
@@ -19140,7 +19140,7 @@ dynamixel_wizard2:
     titlekr: "다이나믹셀 위자드 2.0 설치"
     url: /software/dynamixel/dynamixel_wizard2/#software-installation
     urlkr: /software/dynamixel/dynamixel_wizard2/#다이나믹셀-위자드-20-설치
-    children: 
+    children:
       - title: "Install: Windows"
         titlekr: "윈도우에서 설치하기"
         url: /software/dynamixel/dynamixel_wizard2/#install-windows
@@ -19166,6 +19166,10 @@ dynamixel_wizard2:
         titlekr: "리눅스에서 제거하기"
         url: /software/dynamixel/dynamixel_wizard2/#uninstall-linux
         urlkr: /software/dynamixel/dynamixel_wizard2/#리눅스에서-제거하기
+      - title: "Uninstall: Mac"
+        titlekr: "맥에서 제거하기"
+        url: /software/dynamixel/dynamixel_wizard2/#uninstall-mac
+        urlkr: /software/dynamixel/dynamixel_wizard2/#맥에서-제거하기
   - title: "Menu Description"
     titlekr: "메뉴 설명"
     url: /software/dynamixel/dynamixel_wizard2/#menu-description
@@ -20092,7 +20096,7 @@ opencm904:
       - title: "Dynamixel2Arduino Library"
         titlekr: "Dynamixel2Arduino 라이브러리"
         url: /parts/controller/opencm904/#dynamixel2arduino-library
-        urlkr: /parts/controller/opencm904/#dynamixel2arduino-라이브러리  
+        urlkr: /parts/controller/opencm904/#dynamixel2arduino-라이브러리
   - title: "Examples"
     url: /parts/controller/opencm904/#examples
     children:
