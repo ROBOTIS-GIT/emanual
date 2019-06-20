@@ -1,4 +1,5 @@
 common_pro_specs:
+  mcu:                &mcu                "ARM CORTEX-M4 (168 [MHz], 32Bit)"
   motor:              &motor              "BLDC(Maxon)"
   motor_l:            &motor_l            "BLDC"
   baudrate:           &baudrate           "9,600 [bps] ~ 10.5 [Mbps]"
@@ -24,6 +25,7 @@ common_pro_specs:
   standbycurrent:     &standbycurrent     "80 [mA]"
 
 h42-20-s300-r:
+  mcu:                *mcu
   motor:              "Coreless(Maxon)"
   baudrate:           *baudrate
   opmode_en:          *opmode_en
@@ -53,6 +55,7 @@ h42-20-s300-r:
   standbycurrent:     *standbycurrent
 
 h54-100-s500-r:
+  mcu:                *mcu
   motor:              *motor
   baudrate:           *baudrate
   opmode_en:          *opmode_en
@@ -82,6 +85,7 @@ h54-100-s500-r:
   standbycurrent:     *standbycurrent
 
 h54-200-s500-r:
+  mcu:                *mcu
   motor:              *motor
   baudrate:           *baudrate
   opmode_en:          *opmode_en
@@ -111,6 +115,7 @@ h54-200-s500-r:
   standbycurrent:     *standbycurrent
 
 l42-10-s300-r:
+  mcu:                *mcu
   motor:              "Coreless"
   baudrate:           *baudrate
   opmode_en:          *opmode_en
@@ -140,6 +145,7 @@ l42-10-s300-r:
   standbycurrent:     *standbycurrent
 
 l54-30-s400-r:
+  mcu:                *mcu
   motor:              *motor_l
   baudrate:           *baudrate
   opmode_en:          *opmode_en
@@ -169,6 +175,7 @@ l54-30-s400-r:
   standbycurrent:     *standbycurrent
 
 l54-30-s500-r:
+  mcu:                *mcu
   motor:              *motor_l
   baudrate:           *baudrate
   opmode_en:          *opmode_en
@@ -198,6 +205,7 @@ l54-30-s500-r:
   standbycurrent:     *standbycurrent
 
 l54-50-s290-r:
+  mcu:                *mcu
   motor:              *motor_l
   baudrate:           *baudrate
   opmode_en:          *opmode_en
@@ -227,6 +235,7 @@ l54-50-s290-r:
   standbycurrent:     *standbycurrent
 
 l54-50-s500-r:
+  mcu:                *mcu
   motor:              *motor_l
   baudrate:           *baudrate
   opmode_en:          *opmode_en
@@ -256,6 +265,7 @@ l54-50-s500-r:
   standbycurrent:     *standbycurrent
 
 m42-10-s260-r:
+  mcu:                *mcu
   motor:              "Coreless(Maxon)"
   baudrate:           *baudrate
   opmode_en:          *opmode_en
@@ -285,6 +295,7 @@ m42-10-s260-r:
   standbycurrent:     *standbycurrent
 
 m54-40-s250-r:
+  mcu:                *mcu
   motor:              *motor
   baudrate:           *baudrate
   opmode_en:          *opmode_en
@@ -314,6 +325,7 @@ m54-40-s250-r:
   standbycurrent:     *standbycurrent
 
 m54-60-s250-r:
+  mcu:                *mcu
   motor:              *motor
   baudrate:           *baudrate
   opmode_en:          *opmode_en
