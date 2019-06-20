@@ -50,6 +50,8 @@ main:
         url: /dxl/rx/rx-64/
     - title: "MX Series"
       titlekr: "MX 시리즈"
+      url: /dxl/mx/
+      urlkr:
       children:
       - title: "MX-12W"
         titlekr: "MX-12W"
