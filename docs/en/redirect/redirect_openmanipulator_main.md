@@ -1,7 +1,7 @@
 ---
 layout: redirect
 lang: en
-ref: redirect_openmanipulator
+ref: redirect_openmanipulator_main
 permalink: /openmanipulator/
 redirecturl: /docs/en/platform/openmanipulator_main
 ---
