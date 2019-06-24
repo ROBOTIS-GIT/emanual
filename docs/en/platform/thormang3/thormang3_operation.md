@@ -638,6 +638,54 @@ $ rosrun thormang3_offset_tuner_client thormang3_offset_tuner_client
 ![](/assets/images/platform/thormang3/thormang3_075.png)
 
 
+## [Tuner Client](#tuner-client)
+
+Instruction about how to run the Thormang3 gain and offset tuner program.   
+
+### [Execute in MPC](#execute-in-mpc-tuner-client)
+
+This program works with `thormang3_p_manager`. User don't have to run the server for this program.
+
+```
+# roslaunch thormang3_p_manager thormang_p_manager.launch  
+```
+
+### [Execute in OPC](#execute-in-opc-tuner-client)
+
+Execute the gain and offset tuner GUI program.
+
+```
+$ rosrun thormang3_tuner_client thormang3_tuner_client  
+```  
+![](/assets/images/platform/thormang3/thormang3_tuner_client.png)   
+
+### [How to use GUI program](#how-to-use-gui-program-tuner-client)
+
+![](/assets/images/platform/thormang3/thormang3_tuner_client_01.png)    
+
+{% capture package_warning %}  
+![](/assets/images/icon_warning.png)  
+**CAUTION** : When you click `initial pose` or change module to the others, THORMANG3 may jump.  
+This should be done with THORMANG in the air.  
+{% endcapture %}
+<div class="notice--warning">{{ package_warning | markdownify }}</div> 
+  
+
+1. Go to initial pose : If user click this button, tuning_module in robotis_controller is activated and THORMANG3 goes to initial pose.  
+2. Select kinematics group  
+3. Load present status : goal position, offset, gain
+4. Change offset or gain
+5. Save the changed value to config file
+
+- Sensors
+  - FT Force : Scaled force value in direction of Z  
+  - IMU : Robot orientation(roll, pitch) from IMU
+- Pose  
+  - How to change pose  
+    - select pose name  
+    - click `tuning pose`  
+  - pose config file : `thormang3_tuning_module/data/tune_pose.yaml`
+
 [PPC Installation]: /docs/en/platform/thormang3/getting_started/#ppc-installation
 [OPC Installation]: /docs/en/platform/thormang3/getting_started/#opc-installation
 

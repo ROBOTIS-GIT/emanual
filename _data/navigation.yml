@@ -50,6 +50,8 @@ main:
         url: /dxl/rx/rx-64/
     - title: "MX Series"
       titlekr: "MX 시리즈"
+      url: /dxl/mx/
+      urlkr:
       children:
       - title: "MX-12W"
         titlekr: "MX-12W"
@@ -14935,6 +14937,8 @@ thormang3:
       children:
       - title: "thormang3_manager"
         url: /platform/thormang3/thormang3_ros_packages/#thormang3_manager
+      - title: "thormang3_p_manager"
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3_p_manager
       - title: "thormang3_kinematics_dynamics"
         url: /platform/thormang3/thormang3_ros_packages/#thormang3_kinematics_dynamics
       - title: "thormang3_action_module"
@@ -14947,14 +14951,20 @@ thormang3:
         url: /platform/thormang3/thormang3_ros_packages/#thormang3_walking_module
       - title: "thormang3_head_control_module"
         url: /platform/thormang3/thormang3_ros_packages/#thormang3_head_control_module
+      - title: "thormang3_tuning_module"
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3_tuning_module
       - title: "ati_ft_sensor"
         url: /platform/thormang3/thormang3_ros_packages/#ati_ft_sensor
       - title: "thormang3_feet_ft_module"
         url: /platform/thormang3/thormang3_ros_packages/#thormang3_feet_ft_module
+      - title: "thormang3_alarm_module"
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3_alarm_module
       - title: "thormang3_balance_control"
         url: /platform/thormang3/thormang3_ros_packages/#thormang3_balance_control
       - title: "imu-3dm-gx4"
         url: /platform/thormang3/thormang3_ros_packages/#imu-3dm-gx4
+      - title: "imu-3dm-gx5"
+        url: /platform/thormang3/thormang3_ros_packages/#microstrain-3dm-gx5-45
     - title: "PPC Packages"
       url: /platform/thormang3/thormang3_ros_packages/#ppc-packages
       children:
@@ -14975,6 +14985,8 @@ thormang3:
         url: /platform/thormang3/thormang3_ros_packages/#thormang3_foot_step_generator
       - title: "thormang3_offset_tuner_client"
         url: /platform/thormang3/thormang3_ros_packages/#thormang3_offset_tuner_client
+      - title: "thormang3_tuner_client"
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3_tuner_client
     - title: "Common Packages"
       url: /platform/thormang3/thormang3_ros_packages/#common-packages
       children:
@@ -15004,6 +15016,10 @@ thormang3:
         url: /platform/thormang3/thormang3_ros_packages/#thormang3_head_control_module_msgs
       - title: "thormang3_offset_tuner_msgs"
         url: /platform/thormang3/thormang3_ros_packages/#thormang3_offset_tuner_msgs
+      - title: "thormang3_alarm_module_msgs"
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3_alarm_module_msgs
+      - title: "thormang3_tuning_module_msgs"
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3_tuning_module_msgs
   - title: "THORMANG3 Operation"
     url: /platform/thormang3/thormang3_operation/#thormang3-operation
     children:
@@ -15030,6 +15046,8 @@ thormang3:
         url: /platform/thormang3/thormang3_operation/#operate-walking-module
     - title: "Offset Tuner"
       url: /platform/thormang3/thormang3_operation/#offset-tuner
+    - title: "Gain and Offset Tuner"
+      url: /platform/thormang3/thormang3_operation/#tuner-client
   - title: "Gazebo Simulation"
     url: /platform/thormang3/gazebo_simulation/#gazebo-simulation
     children:

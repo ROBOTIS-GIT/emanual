@@ -18,24 +18,27 @@ product_group: dxl_mx
 
 # [Specifications](#specifications)
 
-| Item                   | Specifications                                                              |
-|:-----------------------|:----------------------------------------------------------------------------|
-| Baud Rate              | 8000 bps ~ 4.5 Mbps                                                         |
-| Resolution             | 0.088&deg;                                                                  |
-| Running Degree         | 0&deg; ~ 360&deg;<br />Endless Turn                                         |
-| Weight                 | 54.6g                                                                       |
-| Dimensions (W x H x D) | 32mm x 50mm x 40mm                                                          |
-| Gear Ratio             | 32 : 1                                                                      |
-| No Load Speed          | 470rpm (at 12V)                                                             |
-| Operating Temperature  | -5&deg;C ~ +70&deg;C                                                        |
-| Input Voltage          | 10 ~ 14.8V (**Recommended : 12V**)                                          |
-| Standby Current        | 60mA                                                                        |
-| Command Signal         | Digital Packet                                                              |
-| Protocol Type          | Half Duplex Asynchronous Serial Communication<br />(8bit, 1stop, No Parity) |
-| Physical Connection    | TTL Level Multidrop Bus(Daisy Chain Type Connector)                         |
-| ID                     | 0 ~ 253                                                                     |
-| Feedback               | Position, Temperature, Load, Input Voltage, etc                             |
-| Material               | Engineering Plastic                                                         |
+| Item                   | Specifications                                                                                |
+|:-----------------------|:----------------------------------------------------------------------------------------------|
+| MCU                    | ARM CORTEX-M3 (72 [MHz], 32Bit)                                                               |
+| Position Sensor        | Contactless absolute encoder (12Bit, 360 [°])<br />Maker : ams(www.ams.com), Part No : AS5045 |
+| Motor                  | Cored                                                                                         |
+| Baud Rate              | 8000 bps ~ 4.5 Mbps                                                                           |
+| Resolution             | 0.088&deg;                                                                                    |
+| Running Degree         | 0&deg; ~ 360&deg;<br />Endless Turn                                                           |
+| Weight                 | 54.6g                                                                                         |
+| Dimensions (W x H x D) | 32mm x 50mm x 40mm                                                                            |
+| Gear Ratio             | 32 : 1                                                                                        |
+| No Load Speed          | 470rpm (at 12V)                                                                               |
+| Operating Temperature  | -5&deg;C ~ +70&deg;C                                                                          |
+| Input Voltage          | 10 ~ 14.8V (**Recommended : 12V**)                                                            |
+| Standby Current        | 60mA                                                                                          |
+| Command Signal         | Digital Packet                                                                                |
+| Protocol Type          | Half Duplex Asynchronous Serial Communication<br />(8bit, 1stop, No Parity)                   |
+| Physical Connection    | TTL Level Multidrop Bus(Daisy Chain Type Connector)                                           |
+| ID                     | 0 ~ 253                                                                                       |
+| Feedback               | Position, Temperature, Load, Input Voltage, etc                                               |
+| Material               | Engineering Plastic                                                                           |
 
 {% include en/dxl/warning.md %}
 

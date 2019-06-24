@@ -1,5 +1,5 @@
 common_mx_specs:
-  mcu:                &mcu            "ST CORTEX-M3 (STM32F103C8 @ 72 [Mhz], 32Bit)"
+  mcu:                &mcu            "ARM CORTEX-M3 (72 [MHz], 32Bit)"
   encoder:            &encoder        "Contactless absolute encoder (12Bit, 360 [&deg;])<br />Maker : ams(www.ams.com), Part No : AS5045"
   baudrate:           &baudrate       "8,000 [bps] ~ 4.5 [Mbps]"
   motor:              &motor          "Coreless(Maxon)"
