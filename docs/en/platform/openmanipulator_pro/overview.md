@@ -33,5 +33,4 @@ OpenMANIPULATOR-PRO RM-P60-RNH is composed of [Dynamixel PRO+ series](/docs/en/d
 
 ## [Introduction Video](#introduction-video)
 
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gQmaXIipT1A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
