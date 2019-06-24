@@ -48,7 +48,6 @@ sidebar:
 
 **[Remote PC]** Download `Ubuntu MATE 16.04` image for the Raspberry Pi 3 on your remote PC from the link below.
 
-- [Download page](https://ubuntu-mate.org/download/) (Choose ... > Raspberry Pi > 16.04.2 (Xenial) > Download Links)
 - [Direct download link](https://ubuntu-mate.org/raspberry-pi/ubuntu-mate-16.04.2-desktop-armhf-raspberry-pi.img.xz)
 
 **[Remote PC]** In order to write an Ubuntu MATE image to microSD, it is recommended using `GNOME Disks` with `Restore Disk Image...` option, which natively supports XZ compressed image.
