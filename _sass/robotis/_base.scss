@@ -24,6 +24,7 @@ html {
 
 body {
   counter-reset: h1;
+  top: 0px !important; 
   margin: 0;
   padding: 0;
   color: $text-color;

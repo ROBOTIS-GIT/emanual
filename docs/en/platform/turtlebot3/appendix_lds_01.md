@@ -222,8 +222,11 @@ $ git clone https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
 
 #### Preparations
 - It does not provide a dedicated interface board, but you can connect it to the power and UART of the embedded board as shown below.
-
+a
 ![](/assets/images/platform/turtlebot3/appendix_lds/lds_lines.png)
+
+**WARNNING** : The wiring colours of LDS-01 could differ from the picture by manaufacturers. 
+{: .notice--warning}
 
 - OpenCR develops and downloads firmware through the Arduino IDE. Therefore, you must install the Arduino IDE in advance and install the OpenCR board package. Install through the following link document.
 

@@ -199,9 +199,18 @@ After setting all the parameters, launch the open_manipulator_pro_controller.
   $ roslaunch open_manipulator_controller open_manipulator_controller.launch use_moveit:=true
   ```
 
-**Warning!**     
-When launching the controller to use MoveIt!, [OpenMANIPULATOR-X launch file](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) must be turned off.
+
+**WARNING** : When launching the controller to use MoveIt!, [OpenMANIPULATOR-X launch file](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) must be turned off.  
 {: .notice--warning}
+
+{% capture warning_01 %}
+**WARNING** :  
+Please check each joint position before running OpenMANIPULATOR-X. It might stop operation because of joint position out of range.  
+The picture on the below is showing you the ideal pose of OpenMANIPULATOR-X. Please adjust each joints along with the following picture when DYNAMIXEL torque isn't enabled.    
+  
+<img src="/assets/images/platform/openmanipulator_x/open_manipulator_start_pose.png" width="250">
+{% endcapture %}
+<div class="notice--warning">{{ warning_01 | markdownify }}</div>
 
   ![](/assets/images/platform/openmanipulator_x/moveit_launch.png)  
 

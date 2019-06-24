@@ -57,6 +57,15 @@ Go to `Examples` → `OpenManipulator` → `example` → `Chain` → `open_manip
 
 ![](/assets/images/platform/openmanipulator_x/OpenManipulator_chain_arduino.png)
 
+{% capture warning_01 %}
+
+**WARNING** :  
+Please check each joint position before running OpenMANIPULATOR-X. It might stop operation because of joint position out of range.  
+The picture on the below is showing you the ideal pose of OpenMANIPULATOR-X. Please adjust each joints along with the following picture when DYNAMIXEL torque isn't enabled.    
+  
+<img src="/assets/images/platform/openmanipulator_x/open_manipulator_start_pose.png" width="250">
+{% endcapture %}
+<div class="notice--warning">{{ warning_01 | markdownify }}</div>
 
 ## [Pen Holder](#pen-holder)
 
@@ -87,6 +96,17 @@ Find example source codes.
 Go to `Examples` → `OpenManipulator` → `example` → `Chain` → `open_manipulator_chain_pen` on Arduino IDE for OpenCR.
 
 ![](/assets/images/platform/openmanipulator_x/OpenManipulator_chain_arduino.png)
+
+{% capture warning_01 %}
+
+**WARNING** :  
+Please check each joint position before running OpenMANIPULATOR-X. It might stop operation because of joint position out of range.  
+The picture on the below is showing you the ideal pose of OpenMANIPULATOR-X. Please adjust each joints along with the following picture when DYNAMIXEL torque isn't enabled.    
+  
+<img src="/assets/images/platform/openmanipulator_x/open_manipulator_start_pose.png" width="250">
+{% endcapture %}
+<div class="notice--warning">{{ warning_01 | markdownify }}</div>
+
 
 [OpenCR]: /docs/en/parts/controller/opencr10/
 [OpenCR Manual]: /docs/en/parts/controller/opencr10/

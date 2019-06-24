@@ -13,7 +13,7 @@ sidebar:
 
 # OpenMANIPULATOR-PRO
 ![](/assets/images/platform/openmanipulator_pro/logo.png)
-![](/assets/images/platform/openmanipulator_pro/product_img.png)
+<img src="/assets/images/platform/openmanipulator_pro/product_img.png" width="1250">
 
 
 OpenMANIPULATOR-PRO는 현재 영문으로만 지원되고 있습니다. [영문 e매뉴얼의 OpenMANIPULATOR-PRO]를 이용하시기 바랍니다.

@@ -11,9 +11,17 @@ sidebar:
   nav: "dynamixel_wizard2"
 ---
 
+![](/assets/images/sw/dynamixel/wizard2/wizard2_main_003.png)
+
+
 # [Introduction](#introduction)
 
-![](/assets/images/sw/dynamixel/wizard2/wizard2_main_000.png)
+![](/assets/images/sw/dynamixel/wizard2/wizard2_main_000.jpg)
+
+**Software Download(v2.0.0.7)**  
+[Windows](http://www.robotis.com/service/download.php?no=1670)  
+[Linux](http://www.robotis.com/service/download.php?no=1671)  
+[Mac](http://www.robotis.com/service/download.php?no=176)  
 
 ## [DYNAMIXEL Wizard 2.0](#dynamixel-wizard-20)
 
@@ -36,8 +44,10 @@ The following features are provided with DYNAMIXEL Wizard 2.0.
 
 ## [Supported OS](#supported-os)
 
-- Windows
-- Linux
+- Windows 7 / 8 / 10
+- Ubuntu 16 / 18
+- Mac OS X (10.11 El Capitan or above)
+
 
 ## [Definition of Firmware](#definition-of-firmware)
 
@@ -54,68 +64,42 @@ Although almost all ROBOTIS products are shipped with preinstalled firmwares, ne
 
 ## [Supported Products](#supported-products)
 
-| DYNAMIXEL Series |                    |                       |                       |                         |                 |
-|:-----------------|:-------------------|:----------------------|:----------------------|:------------------------|:----------------|
-| **DX**           | [DX-113]           | [DX-116]              | [DX-117]              |                         |                 |
-| **AX**           | [AX-12W]           | [AX-12+/12A]          | [AX-18F/18A]          |                         |                 |
-| **RX**           | [RX-10]            | [RX-24F]              | [RX-28]               | [RX-64]                 |                 |
-| **EX**           | [EX-106+]          |                       |                       |                         |                 |
-| **MX**           | [MX-12W]           | [MX-28], [MX-28(2.0)] | [MX-64], [MX-64(2.0)] | [MX-106], [MX-106(2.0)] |                 |
-| **XL**           | [XL320]            | [XL430-W250]          |                       |                         |                 |
-| **XM**           | [XM430-W210]       | [XM430-W350]          | [XM540-W150]          | [XM540-W270]            |                 |
-| **XH**           | [XH430-W210]       | [XH430-W350]          | [XH430-V210]          | [XH430-V350]            |                 |
-| **PRO L**        | [L42-10-S300-R]    | [L54-30-S500-R]       | [L54-30-S400-R]       | [L54-50-S500-R]         | [L54-50-S290-R] |
-| **PRO M**        | [M42-10-S260-R]    | [M54-40-S250-R]       | [M54-60-S250-R]       |                         |                 |
-| **PRO H**        | [H42-20-S300-R]    | [H54-100-S500-R]      | [H54-200-S500-R]      |                         |                 |
-| **PRO M(A)**     | [M42-10-S260-R(A)] | [M54-40-S250-R(A)]    | [M54-60-S250-R(A)]    |                         |                 |
-| **PRO H(A)**     | [H42-20-S300-R(A)] | [H54-100-S500-R(A)]   | [H54-200-S500-R(A)]   |                         |                 |
-| **PRO+ H**       | [H42P-020-S300-R]  | [H54P-100-S500-R]     | [H54P-100-S500-R]     |                         |                 |
-| **PRO+ M**       | [M54P-060-S250-R]  | [M54P-040-S250-R]     | [M42P-010-S260-R]     |                         |                 |
-| **ETC**          | [RH-P12-RN]        | [RH-P12-RN(A)]        |                       |                         |                 |
- 
+| DYNAMIXEL Series |                                |                                |                                |                                |                 |
+|:-----------------|:-------------------------------|:-------------------------------|:-------------------------------|:-------------------------------|:----------------|
+| **DX**           | [DX-113]                       | [DX-116]                       | [DX-117]                       |                                |                 |
+| **AX**           | [AX-12W]                       | [AX-12+/12A]                   | [AX-18F/18A]                   |                                |                 |
+| **RX**           | [RX-10]                        | [RX-24F]                       | [RX-28]                        | [RX-64]                        |                 |
+| **EX**           | [EX-106+]                      |                                |                                |                                |                 |
+| **MX**           | [MX-12W]                       | [MX-28], [MX-28(2.0)]          | [MX-64], [MX-64(2.0)]          | [MX-106], [MX-106(2.0)]        |                 |
+| **XL**           | [XL320]                        | [XL430-W250]                   |                                |                                |                 |
+| **XM**           | [XM430-W210]                   | [XM430-W350]                   | [XM540-W150]                   | [XM540-W270]                   |                 |
+| **XH**           | [XH430-W210]<br/> [XH430-W350] | [XH430-V210]<br/> [XH430-V350] | [XH540-W150]<br/> [XH540-W270] | [XH540-V150]<br/> [XH540-V270] |                 |
+| **PRO H**        | [H42-20-S300-R]                | [H54-100-S500-R]               | [H54-200-S500-R]               |                                |                 |
+| **PRO M**        | [M42-10-S260-R]                | [M54-40-S250-R]                | [M54-60-S250-R]                |                                |                 |
+| **PRO L**        | [L42-10-S300-R]                | [L54-30-S500-R]                | [L54-30-S400-R]                | [L54-50-S500-R]                | [L54-50-S290-R] |
+| **PRO H(A)**     | [H42-20-S300-R(A)]             | [H54-100-S500-R(A)]            | [H54-200-S500-R(A)]            |                                |                 |
+| **PRO M(A)**     | [M42-10-S260-R(A)]             | [M54-40-S250-R(A)]             | [M54-60-S250-R(A)]             |                                |                 |
+| **PRO+ H**       | [H42P-020-S300-R]              | [H54P-100-S500-R]              | [H54P-100-S500-R]              |                                |                 |
+| **PRO+ M**       | [M54P-060-S250-R]              | [M54P-040-S250-R]              | [M42P-010-S260-R]              |                                |                 |
+| **ETC**          | [RH-P12-RN]                    | [RH-P12-RN(A)]                 |                                |                                |                 |
 
 
-
-# [Menu Description](#menu-description)
-
-## [Main Screen](#main-screen)
-
-The main screen of software classifies the detected DYNAMIXELs according to communication ports, baudrates, and products.
-Detected DYNAMIXELs can be tested by modifying control table values.
-
-![](/assets/images/sw/dynamixel/wizard2/wizard2_main_002.png)
-
-## [Graph Window](#graph-window)
-
-By selecting control table items to be plotted, values of the selected items will be drawn in the graph window in real time.
-Please refer to [Basic Feature > Graph] section for more details about selecting control table items.
-
-![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_001.png)
-
-## [Packet Window](#packet-window)
-
-User can manually generate an Instruction packet for the selected protocol version.
-Detailed packet data can be loaded by selecting a packet in the packet history.
-
-![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_001.png)
 
 # [Software Installation](#software-installation)
 
-**Download Beta test version**
-  - [for Windows](http://www.robotis.com/service/download.php?no=1670)
-  - [for Linux](http://www.robotis.com/service/download.php?no=1671)
-
 ## [Install: Windows](#install-windows)
 
-1. Execute downloaded installation file.
-2. Click on `Next` button to proceed installation.
+1. Download the package file.
+- [Windows Software Download(v2.0.0.7)](http://www.robotis.com/service/download.php?no=1670)  
+2. Execute downloaded installation file.  
+3. Click on `Next` button to proceed installation.
 
 ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_win_01.png)
 
 ## [Install: Linux](#install-linux)
 
-1. Download the installation file.
-
+1. Download the package file.  
+- [Linux Software Download(v2.0.0.7)](http://www.robotis.com/service/download.php?no=1671)  
 2. Enter the following command to change the permission.
 
     ```c
@@ -129,6 +113,19 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
     ```
 
 4. Click on `Next` button to proceed installation.
+
+## [Install: Mac](#install-mac)
+
+1. Download the package file.  
+- [Mac Software Download(v2.0.0.7)](http://www.robotis.com/service/download.php?no=1760)
+2. Right click on the downloaded dmg file and select `Open` from the mene.  
+  ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_mac_01.png)
+3. Launch the `DynamixelWizard2Setup_x64` file.  
+  ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_mac_02.png)
+4. If a warning message pops up, select `Open` to proceed installation.  
+  ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_mac_03.png)
+5. Click `Next` to continue and follow the setup instruction.  
+  ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_mac_04.png)
 
 # [Uninstall Software](#uninstall-software)
 
@@ -154,6 +151,35 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_linux_03.png)
 
+## [Uninstall: Mac](#uninstall-mac)
+
+1. Go to `DYNAMIXEL2Wizard` from `Applications`.
+2. Execute `maintenancetool` in DYNAMIXEL2Wizard folder.
+3. Select `Remove all components` and click `Next` to proceed.
+
+# [Menu Description](#menu-description)
+
+## [Main Screen](#main-screen)
+
+The main screen of software classifies the detected DYNAMIXELs according to communication ports, baudrates, and products.
+Detected DYNAMIXELs can be tested by modifying control table values.
+
+![](/assets/images/sw/dynamixel/wizard2/wizard2_main_002.png)
+
+## [Graph Window](#graph-window)
+
+By selecting control table items to be plotted, values of the selected items will be drawn in the graph window in real time.
+Please refer to [Basic Feature > Graph] section for more details about selecting control table items.
+
+![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_001.png)
+
+## [Packet Window](#packet-window)
+
+User can manually generate an Instruction packet for the selected protocol version.
+Detailed packet data can be loaded by selecting a packet in the packet history.
+
+![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_001.png)
+
 # [Basic Features](#basic-features)
 
 ## [Connect DYNAMIXEL](#connect-dynamixel)
@@ -175,9 +201,9 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 
 1. Go to `Device` > `Scan` to start searching connected DYNAMIXELs.
 
-    **NOTE** : If Open failed is shown up, please check whether communication port is connected at the **Main Toolbar** or not, then button `Disconnect` to avoid port collision. 
+    **NOTE** : If Open failed is shown up, please check whether communication port is connected at the **Main Toolbar** or not, then button `Disconnect` to avoid port collision.
     {: .notice}
-  
+
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_012.png)
 
@@ -290,7 +316,7 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 
     **NOTE** : If Open failed is shown up, please check whether communication port is connected at the **Main Toolbar** or not, then button `Disconnect` to avoid port collision.  
     {: .notice}
-    
+
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_002.png)
 
 3. Select Protocol version and instruction to use.
@@ -604,6 +630,10 @@ In order to use the minimum communication interval(1 [ms]), please follow the in
 [XH430-W350]: /docs/en/dxl/x/xh430-w350/
 [XH430-V210]: /docs/en/dxl/x/xh430-v210/
 [XH430-V350]: /docs/en/dxl/x/xh430-v350/
+[XH540-W150]: /docs/en/dxl/x/xh540-w150/
+[XH540-W270]: /docs/en/dxl/x/xh540-w270/
+[XH540-V150]: /docs/en/dxl/x/xh540-v150/
+[XH540-V270]: /docs/en/dxl/x/xh540-v270/
 [H54-200-S500-R]: /docs/en/dxl/pro/h54-200-s500-r/
 [H54-100-S500-R]: /docs/en/dxl/pro/h54-100-s500-r/
 [H42-20-S300-R]: /docs/en/dxl/pro/h42-20-s300-r/

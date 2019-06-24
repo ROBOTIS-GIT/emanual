@@ -13,22 +13,28 @@ sidebar:
 
 # [개요](#개요)
 
-![](/assets/images/parts/controller/opencm904/opencm485exp_14.jpg)
+![](/assets/images/parts/controller/opencm904/opencm485exp_product.jpg)
 
 # [주요 사양](#주요-사양)
 
-- 입력전압 : 5~30V
-- Power : SMPS, LiPo, DXL PRO 24V
-- 전원 스위치 : 1
-- 다이나믹셀 포트 : 4Pin x 5, 3Pin x 5
-- 버튼 : 2
-- LED : 5
-- 크기 : 68 mm X 66.5 mm
-- 무게 : 32g
+|      항목       |          설명           |
+|:---------------:|:-----------------------:|
+|    입력전압     |         5 ~ 30V         |
+|      전원       | SMPS, LiPo, DXL PRO 24V |
+|   전원 스위치   |            1            |
+| 다이나믹셀 포트 |   4Pin x 5, 3Pin x 5    |
+|      버튼       |            2            |
+|       LED       |            5            |
+|      크기       |     68 mm X 66.5 mm     |
+|      무게       |           32g           |
+|   Serial3 TX    |       헤더 핀 #24       |
+|   Serial3 RX    |       헤더 핀 #25       |
+|  통신방향 제어  |       헤더 핀 #22       |
+
 
 # [각 부 명칭](#각-부-명칭)
 
-![](/assets/images/parts/controller/opencm904/opencm485exp_11_kr.jpg)
+![](/assets/images/parts/controller/opencm904/opencm485exp_01.jpg)
 
 1. **SMPS DC Adapter** : SMPS DC Adapter를 연결해 OpenCM 485 확장보드 보드에 전원을 인가합니다.
 2. **DXL Pro Power** : 다이나믹셀 프로와 동일한 24V 전원 커넥터로 전원을 인가합니다.
@@ -58,11 +64,11 @@ sidebar:
 
 3. OpenCM9.04에 USB Cable를 연결 합니다.
 
-    ![](/assets/images/parts/controller/opencm904/opencm485exp_13.jpg)
+    ![](/assets/images/parts/controller/opencm904/opencm485exp_04.jpg)
 
 4. 다이나믹셀과 SMPS를 연결 합니다.
 
-    ![](/assets/images/parts/controller/opencm904/opencm485exp-12.jpg)
+    ![](/assets/images/parts/controller/opencm904/opencm485exp_05.jpg)
 
 **참고**: 다이나믹셀 펌웨어 업데이트 및 복구시 OpenCM9.04와 OpenCM 485 확장보드를 반드시 분리해주세요
 {: .notice--warning}
@@ -73,7 +79,7 @@ sidebar:
 OpenCM 485 확장보드 와 OpenCM9.04 연결시 전원 블록 다이어그램  
 OpenCM 485 확장보드는 기본적으로 OpenCM9.04 5V 전원 공급을 하며, JP1은 아래 OpeCM 485 확장보드에서 VDD전원을 OpenCM9.04로 공급할 것인지 결정합니다.
 
-![](/assets/images/parts/controller/opencm904/opencm485exp_2.png)
+![](/assets/images/parts/controller/opencm904/opencm485exp_06.png)
 
 > OpenCM 485 EXP 전원 연결도
 
@@ -98,21 +104,21 @@ OpenCM 485 확장보드를 OpenCM9.04와 연결해서 사용하기 위해서는 
 
     ```cpp
     #include <DynamixelSDK.h>
-    
+
     #define DEVICENAME      "3"   //Serial3 포트 사용
-    
+
     dynamixel::PortHandler *portHandler = dynamixel::PortHandler::getPortHandler(DEVICENAME);
     portHandler->openPort();
     ```
-    
+
     - DynamixelWorkbench를 사용해서 프로그래밍 하는 경우 아래와 같이 Serial3를 사용하도록 설정합니다.
-    
+
     ```cpp
     #include <DynamixelWorkbench.h>
-    
+
     #define DEVICENAME      "3"   //Serial3 포트 사용
     #define BAUDRATE        57600
-    
+
     DynamixelWorkbench dxl_wb;
     dxl_wb.begin(DEVICE_NAME, BAUDRATE);
     ```
@@ -130,7 +136,7 @@ OpenCM 485  확장보드에는 OpenCM9.04의 IO핀과 연결된 버튼 2개와 
 |LED2|19|
 |LED3|20|
 
-![](/assets/images/parts/controller/opencm904/opencm485exp_10_kr.jpg)
+![](/assets/images/parts/controller/opencm904/opencm485exp_11.jpg)
 
 
 # [다운로드](#다운로드)
