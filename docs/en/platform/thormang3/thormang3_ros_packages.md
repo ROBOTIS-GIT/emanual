@@ -276,9 +276,9 @@ The motion file is edited with thormang3_action_editor
   `Reference` : [MPC Installation]
   {: .notice}
 
-  The Motion Module is used in the manager as a form of library.
+  The motion module is used in the manager as a form of library.
 
-  `Reference` : Creating new robot manager
+  `Reference` : [Creating new robot manager](/docs/en/software/robotis_framework_packages/tutorials/#creating-new-robot-manager)
   {: .notice}
 
 #### ROS API
@@ -422,8 +422,8 @@ This module is for tuning gain and offset of THORMANG3. Users can tune gain and 
 
 #### Download & Build
 
-  `Reference` : [MPC Installation]
-  {: .notice}
+`Reference` : [MPC Installation]
+{: .notice}
 
 `Reference` : Creating new robot manager
 {: .notice}
