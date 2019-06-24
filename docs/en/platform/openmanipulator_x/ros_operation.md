@@ -23,19 +23,19 @@ sidebar:
 **NOTE**:
 - This instructions has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - This instructions are supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
-- Make sure to run the [OpenMANIPULATOR controller](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) instructions before running the instruction below.
+- Make sure to run the [OpenMANIPULATOR-X controller](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) instructions before running the instruction below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-  You can use the GUI program to manipulate OpenMANIPULATOR. Launch `open_manipulator_control_gui` node.  This program shows the status of and allows users to control OpenMANIPULATOR.
+  You can use the GUI program to manipulate OpenMANIPULATOR-X. Launch `open_manipulator_control_gui` node.  This program shows the status of and allows users to control OpenMANIPULATOR-X.
 
   ``` bash
   $ roslaunch open_manipulator_control_gui open_manipulator_control_gui.launch
   ```
-  To controll OpenMANIPULATOR, first click the `Timer Start` button.  
+  To controll OpenMANIPULATOR-X, first click the `Timer Start` button.  
   ![](/assets/images/platform/openmanipulator_x/OpenManipulator_GUI.png)  
 
-  To check the status of the OpenMANIPULATOR-X (joint states, kinematics pose).  
+  Check the status of the OpenMANIPULATOR-X (joint states, kinematics pose).  
   ![](/assets/images/platform/openmanipulator_x/OpenManipulator_GUI2.png)  
 
   To manipulate the OpenMANIPULATOR-X in the [joint space]{: .popup}. Enter the joint angles and total time of the trajectory. Then click the `send` button.  
@@ -44,7 +44,7 @@ sidebar:
   To manipulate the OpenMANIPULATOR-X in the [task space]{: .popup}. Enter the kinematics pose of the OpenMANIPULATOR-X end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory. Then click the `send` button.  
   ![](/assets/images/platform/openmanipulator_x/OpenManipulator_GUI4.png)  
 
-  To create a drawing trajectory with the OpenMANIPULATOR. First, choose the drawing trajectory type(line, circle, rhombus, heart). And enter the parameters according to the drawing trajectory type and the total time of the drawing trajectory. Then click the `send` button.  
+  To create a drawing trajectory with OpenMANIPULATOR-X. First, choose the drawing trajectory type(line, circle, rhombus, heart). And enter the parameters according to the drawing trajectory type and the total time of the drawing trajectory. Then click the `send` button.  
   ![](/assets/images/platform/openmanipulator_x/OpenManipulator_GUI5.png)  
 
 ## [Teleoperation](#teleoperation)
@@ -60,7 +60,7 @@ sidebar:
 
 ### [Keyboard](#keyboard)
 
-**TIP**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`+`Alt`+`t`.
+**TIP**: Terminal can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for Terminal is `Ctrl`+`Alt`+`t`.
 {: .notice--success}
 
   Launch `open_manipulator_teleop_keyboard` node for simple teleoperation test using the keyboard.
@@ -72,7 +72,7 @@ sidebar:
 
   ```
   ---------------------------
-  Control Your OpenMANIPULATOR!
+  Control Your OpenMANIPULATOR-X!
   ---------------------------
   w : increase x axis in task space
   s : decrease x axis in task space
@@ -118,7 +118,7 @@ Connect PS4 joystick to the PC via Bluetooth using the following command
 $ sudo ds4drv
 ```
 
-Enter pairing mode with PS4 by pressing and holding Playstation button + share button for 10 sec. If the light on PS4 turns blue, enter the following commands in terminal and control OpenMANIPULATOR.
+Enter pairing mode with PS4 by pressing and holding Playstation button + share button for 10 sec. If the light on PS4 turns blue, enter the following commands in terminal and control OpenMANIPULATOR-X.
 
 ``` bash
 $ export ROS_NAMESPACE=/open_manipulator
@@ -138,16 +138,14 @@ Connect XBOX 360 joystick to the PC with Wireless Adapter or USB cable, and laun
 
 ``` bash
 $ sudo xboxdrv --silent
-
 $ export ROS_NAMESPACE=/open_manipulator
 $ roslaunch teleop_twist_joy teleop.launch
-
 $ roslaunch open_manipulator_teleop open_manipulator_teleop_joystick.launch
 ```
 
 ## [MoveIt!](#moveit)
 
-**TIP**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`+`Alt`+`t`.
+**TIP**: Terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`+`Alt`+`t`.
 {: .notice--success}
 
 Before you launch controller using MoveIt!, check `open_manipulator_controller` launch file in `open_manipulator_controller` package.
@@ -186,7 +184,7 @@ Before you launch controller using MoveIt!, check `open_manipulator_controller` 
   ```
 
 **Parameters List** :
-The below parameters can be used to load [move_group](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/move_group_interface/move_group_interface_tutorial.html) package.
+The following parameters can be used to load [move_group](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/move_group_interface/move_group_interface_tutorial.html) package.
 - `use_moveit`
 - `planning_group_name`
 - `moveit_sample_duration`
@@ -195,25 +193,24 @@ The below parameters can be used to load [move_group](http://docs.ros.org/kineti
 `planning_group_name` is a parameter to set in [setup_assistant](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/setup_assistant/setup_assistant_tutorial.html#step-4-add-planning-groups)  
 `moveit_sample_duration` is a parameter to set sampling time when joint trajectory is planned from MoveIt!
 
-After set the parameters, launch the open_manipulator_controller.
+After setting all the parameters, launch the open_manipulator_pro_controller.
 
   ``` bash
   $ roslaunch open_manipulator_controller open_manipulator_controller.launch use_moveit:=true
   ```
 
+**WARNING** : When launching the controller to use MoveIt!, [OpenMANIPULATOR-X launch file](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) must be turned off.  
+{: .notice--warning}
+
 {% capture warning_01 %}
 
 **WARNING** :  
 Please check each joint position before running OpenMANIPULATOR-X. It might stop operation because of joint position out of range.  
-The picture on the below is showing you the ideal pose of OpenMANIPULATOR-X. Please adjust each joints along with the following picture when DYNAMIXEL torque isn't enabled.    
+The picture on the below is showing you the ideal pose of OpenMANIPULATOR-X. Please adjust each joints along with the following picture when DYNAMIXEL torque isn't enabled.  
   
 <img src="/assets/images/platform/openmanipulator_x/open_manipulator_start_pose.png" width="250">
 {% endcapture %}
 <div class="notice--warning">{{ warning_01 | markdownify }}</div>
-
-**WARNING**     
-When launching the controller to use MoveIt!, [OpenMANIPULATOR launch file](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) must be turned off.
-{: .notice--warning}
 
   ![](/assets/images/platform/openmanipulator_x/moveit_launch.png)  
 
@@ -221,10 +218,10 @@ When launching the controller to use MoveIt!, [OpenMANIPULATOR launch file](/doc
 A list of MoveIt!-related service server that open_manipulator_controller has.
 
 - `/open_manipulator/moveit/get_joint_position` ([open_manipulator_msgs/GetJointPosition]{: .popup})  
-The user can use this service to receives a joint position which is calculated by move_group.  
+The user can use this service to receive a joint position which is calculated by move_group.  
 
 - `/open_manipulator/moveit/get_kinematics_pose` ([open_manipulator_msgs/GetKinematicsPose]{: .popup})  
-The user can use this service to receives a kinematics pose which is calculated by move_group.
+The user can use this service to receive a kinematics pose which is calculated by move_group.
 
 - `/open_manipulator/moveit/set_joint_position` ([open_manipulator_msgs/SetJointPosition]{: .popup})  
 The user can use this service to create a trajectory in the [joint space]{: .popup} by move_group. The user inputs the angle of the target joint and the total time of the trajectory.
