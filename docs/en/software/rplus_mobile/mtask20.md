@@ -45,6 +45,7 @@ The device must support bluetooth in order to use download feature.
 
 ## [Supported Controllers](#supported-controllers)
 
+- CM-50 - COMMING SOON
 - [CM-150]
 - [CM-200]
 - [CM-510]
@@ -52,6 +53,7 @@ The device must support bluetooth in order to use download feature.
 - [CM-700]
 - [OpenCM9.04]
 - [OpenCM7.0]
+
 
 ## [App Download](#app-download)
 
