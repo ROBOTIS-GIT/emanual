@@ -12860,6 +12860,29 @@ play-700:
             url: /edu/play/play-700/#run-scratch
   - title: "Video Tutorials"
     url: /edu/play/play-700/#video-tutorials
+  - title: "Reference"
+    url: /edu/play/play-700/#reference
+    children: 
+    - title: "Access to Play Mode"
+      url: /edu/play/play-700/#access-to-play-mode
+    - title: "Access to Manage Mode"
+      url: /edu/play/play-700/#access-to-manage-mode
+    - title: "Access to Tuning Mode"
+      url: /edu/play/play-700/#access-to-tuning-mode
+    - title: "Speed Synchronization for Straightness" 
+      url: /edu/play/play-700/#speed-synchronization-for-straightness
+      children:
+      - title: "Motor Tuning"
+        url: /edu/play/play-700/#motor-tuning
+        children:
+        - title: "RC-100B"
+          url: /edu/play/play-700/#rc-100b
+        - title: "RC-200"
+          url: /edu/play/play-700/#rc-200
+        - title: "Virtual Remote Controller"
+          url: /edu/play/play-700/#virtual-remote-controller
+    - title: "Remote Controller description"
+      url: /edu/play/play-700/#remote-controller-description
 
 #Ollo Bug Kit sidebar
 ollo_bugkit:
