@@ -343,11 +343,6 @@ main:
       url: /edu/info/
     - titlekr: "*자동차 로봇"
       url: /edu/car/
-    - titlekr: "ROBOTIS ENGINEER"
-      children:
-      - title: "kit1"
-        titlekr: "키트1"
-        url : /edu/engineer/kit1/
     - title: "BIOLOID"
       titlekr: "바이올로이드"
       url: /edu/bioloid/
