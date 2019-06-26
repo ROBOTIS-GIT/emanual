@@ -341,6 +341,11 @@ main:
       url: /edu/info/
     - titlekr: "*자동차 로봇"
       url: /edu/car/
+    - titlekr: "ROBOTIS ENGINEER"
+      children:
+      - title: "kit1"
+        titlekr: "키트1"
+        url : /edu/engineer/kit1/
     - title: "BIOLOID"
       titlekr: "바이올로이드"
       url: /edu/bioloid/
@@ -13877,6 +13882,73 @@ bioloid-gp:
       url: /edu/bioloid/gp/#make-your-own-sensor
       urlkr: /edu/bioloid/gp/#사용자-센서-제작
 
+
+#ROBOTIS ENGINEER KIT sidebar
+kit1:
+  - titlekr: "개요"
+    urlkr: /edu/engineer/kit1/#개요
+    children:
+    - titlekr: "부품 목록"
+      urlkr: /edu/engineer/kit1/#부품-목록
+    - titlekr: "주의사항"
+      urlkr: /edu/engineer/kit1/#주의사항
+  - titlekr: "작동하기"
+    urlkr: /edu/engineer/kit1/#작동하기
+    children:
+    - titlekr: "앱 설치하기"
+      urlkr: /edu/engineer/kit1/#앱-설치하기
+    - titlekr: "블루투스 연결하기"
+      urlkr: /edu/engineer/kit1/#블루투스-연결하기
+    - titlekr: "예제 다운로드"
+      urlkr: /edu/engineer/kit1/#예제-다운로드
+    - titlekr: "예제 실행하기"
+      urlkr: /edu/engineer/kit1/#예제-실행하기
+      children:
+      - titlekr: "환경 설정"
+        urlkr: /edu/engineer/kit1/#환경-설정
+      - titlekr: "Dr.R"
+        urlkr: /edu/engineer/kit1/#drr
+      - titlekr: "MAX-E1"
+        urlkr: /edu/engineer/kit1/#max-e1
+      - titlekr: "SPI"
+        urlkr: /edu/engineer/kit1/#spi
+    - titlekr: "로봇 설정하기"
+      urlkr: /edu/engineer/kit1/#로봇-설정하기
+      children:
+      - titlekr: "모터 조립확인"
+        urlkr: /edu/engineer/kit1/#모터-조립확인
+      - titlekr : "모터 오프셋 설정"
+        urlkr: /edu/engineer/kit1/#모터-오프셋-설정
+  - titlekr: "튜토리얼"
+    urlkr: /edu/engineer/kit1/#튜토리얼
+    children:
+    - titlekr: "코드 작성하기"
+      urlkr: /edu/engineer/kit1/#코드-작성하기
+    - titlekr: "예제 조립서"
+      urlkr: /edu/engineer/kit1/#예제-조립서  
+    - titlekr: "3D 프린팅"
+      urlkr: /edu/engineer/kit1/#3d-프린팅
+    - titlekr: "교육자료"
+      urlkr: /edu/engineer/kit1/#교육자료
+  - titlekr: "다운로드"
+    urlkr: /edu/engineer/kit1/#다운로드
+  - titlekr: "참고자료"
+    urlkr: /edu/engineer/kit1/#참고자료
+    children:
+    - titlekr: "점검 및 자가진단"
+      urlkr: /edu/engineer/kit1/#점검-및-자가진단
+    - titlekr: "배터리 충전하기"
+      urlkr: /edu/engineer/kit1/#배터리-충전하기
+      children:
+      - titlekr: "충전지 잔량 확인하기"
+        urlkr: /edu/engineer/kit1/#충전지-잔량-확인하기
+    - titlekr: "퓨즈 교체하기"
+      urlkr: /edu/engineer/kit1/#퓨즈-교체하기
+    - titlekr: "로봇 초기화"
+      urlkr: /edu/engineer/kit1/#로봇-초기화
+    
+        
+        
 #ROBOTIS MINI sidebar
 mini:
   - title: "Introduction"
@@ -17561,11 +17633,7 @@ rplustask3:
     - title: ""
       titlekr: "초기위치 이동"
       url: /software/rplustask3/#
-      urlkr: /software/rplustask3/#초기위치-이동
-    - title: ""
-      titlekr: "단축키"
-      url: /software/rplustask3/#
-      urlkr: /software/rplustask3/#단축키
+      urlkr: /software/rplustask3/#초기위치-이동    
 
 
 #R+ Motion 2.0 sidebar
