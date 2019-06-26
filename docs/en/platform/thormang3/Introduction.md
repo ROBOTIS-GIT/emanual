@@ -122,7 +122,6 @@ ROBOTIS is not responsible for any damages or losses resulting from any accident
 - Do not use batteries or chargers other than provided in the kit.
 - Gears must be replaced after long excessive use.
 
-
 [thormang3_stp.zip]: http://support.robotis.com/en/baggage_files/thormang3/thormang3_stp.zip
 [sim_for_thormang3_stl.zip]: http://support.robotis.com/en/baggage_files/thormang3/sim_for_thormang3_stl.zip
 [DYNAMIXEL PRO+]: /docs/en/dxl/pro_plus/
