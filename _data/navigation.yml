@@ -12864,14 +12864,14 @@ play-700:
     url: /edu/play/play-700/#video-tutorials
   - title: "Reference"
     url: /edu/play/play-700/#reference
-    children: 
+    children:
     - title: "Access to Play Mode"
       url: /edu/play/play-700/#access-to-play-mode
     - title: "Access to Manage Mode"
       url: /edu/play/play-700/#access-to-manage-mode
     - title: "Access to Tuning Mode"
       url: /edu/play/play-700/#access-to-tuning-mode
-    - title: "Speed Synchronization for Straightness" 
+    - title: "Speed Synchronization for Straightness"
       url: /edu/play/play-700/#speed-synchronization-for-straightness
       children:
       - title: "Motor Tuning"
@@ -13887,8 +13887,22 @@ kit1:
     children:
     - titlekr: "부품 목록"
       urlkr: /edu/engineer/kit1/#부품-목록
+      children:
+      - titlekr: "CM-550 제어기"
+        urlkr: /edu/engineer/kit1/#cm-550-제어기
+      - titlekr: "2XL430 다이나믹셀"
+        urlkr: /edu/engineer/kit1/#2xl430-다이나믹셀
     - titlekr: "주의사항"
       urlkr: /edu/engineer/kit1/#주의사항
+      children:
+      - titlekr: "안전에 대한 주의사항"
+        urlkr: /edu/engineer/kit1/#안전에-대한-주의사항
+      - titlekr: "사용상 주의사항"
+        urlkr: /edu/engineer/kit1/#사용상-주의사항
+      - titlekr: "충전기/충전지 사용시 주의사항"
+        urlkr: /edu/engineer/kit1/#충전기충전지-사용시-주의사항
+      - titlekr: "조립시 주의사항"
+        urlkr: /edu/engineer/kit1/#조립시-주의사항
   - titlekr: "작동하기"
     urlkr: /edu/engineer/kit1/#작동하기
     children:
@@ -13901,8 +13915,6 @@ kit1:
     - titlekr: "예제 실행하기"
       urlkr: /edu/engineer/kit1/#예제-실행하기
       children:
-      - titlekr: "환경 설정"
-        urlkr: /edu/engineer/kit1/#환경-설정
       - titlekr: "Dr.R"
         urlkr: /edu/engineer/kit1/#drr
       - titlekr: "MAX-E1"
@@ -13918,17 +13930,17 @@ kit1:
         urlkr: /edu/engineer/kit1/#모터-오프셋-설정
   - titlekr: "튜토리얼"
     urlkr: /edu/engineer/kit1/#튜토리얼
-    children:
-    - titlekr: "코드 작성하기"
-      urlkr: /edu/engineer/kit1/#코드-작성하기
-    - titlekr: "예제 조립서"
-      urlkr: /edu/engineer/kit1/#예제-조립서  
-    - titlekr: "3D 프린팅"
-      urlkr: /edu/engineer/kit1/#3d-프린팅
-    - titlekr: "교육자료"
-      urlkr: /edu/engineer/kit1/#교육자료
-  - titlekr: "다운로드"
-    urlkr: /edu/engineer/kit1/#다운로드
+    # children:
+    # - titlekr: "코드 작성하기"
+    #   urlkr: /edu/engineer/kit1/#코드-작성하기
+    # - titlekr: "예제 조립서"
+    #   urlkr: /edu/engineer/kit1/#예제-조립서
+    # - titlekr: "3D 프린팅"
+    #   urlkr: /edu/engineer/kit1/#3d-프린팅
+    # - titlekr: "교육자료"
+    #   urlkr: /edu/engineer/kit1/#교육자료
+  - titlekr: "소프트웨어 다운로드"
+    urlkr: /edu/engineer/kit1/#소프트웨어-다운로드
   - titlekr: "참고자료"
     urlkr: /edu/engineer/kit1/#참고자료
     children:
@@ -13936,16 +13948,15 @@ kit1:
       urlkr: /edu/engineer/kit1/#점검-및-자가진단
     - titlekr: "배터리 충전하기"
       urlkr: /edu/engineer/kit1/#배터리-충전하기
-      children:
-      - titlekr: "충전지 잔량 확인하기"
-        urlkr: /edu/engineer/kit1/#충전지-잔량-확인하기
+    - titlekr: "충전지 잔량 확인하기"
+      urlkr: /edu/engineer/kit1/#충전지-잔량-확인하기
     - titlekr: "퓨즈 교체하기"
       urlkr: /edu/engineer/kit1/#퓨즈-교체하기
-    - titlekr: "로봇 초기화"
-      urlkr: /edu/engineer/kit1/#로봇-초기화
-    
-        
-        
+    # - titlekr: "로봇 초기화"
+    #   urlkr: /edu/engineer/kit1/#로봇-초기화
+
+
+
 #ROBOTIS MINI sidebar
 mini:
   - title: "Introduction"
@@ -17632,7 +17643,7 @@ rplustask3:
     - title: ""
       titlekr: "초기위치 이동"
       url: /software/rplustask3/#
-      urlkr: /software/rplustask3/#초기위치-이동    
+      urlkr: /software/rplustask3/#초기위치-이동
 
 
 #R+ Motion 2.0 sidebar
