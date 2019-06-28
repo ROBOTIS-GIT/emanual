@@ -11309,6 +11309,9 @@ h54p-200-s500-r:
         - title: "Secondary ID(12)"
           titlekr: "Secondary ID(12)"
           url: /dxl/pro_plus/h54p-200-s500-r/#secondary-id12
+        - title: "Protocol Type(13)"
+          titlekr: "Protocol Type(13)"
+          url: /dxl/pro_plus/h54p-200-s500-r/#protocol-type13         
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
           url: /dxl/pro_plus/h54p-200-s500-r/#homing-offset20
@@ -11535,6 +11538,9 @@ h54p-100-s500-r:
         - title: "Secondary ID(12)"
           titlekr: "Secondary ID(12)"
           url: /dxl/pro_plus/h54p-100-s500-r/#secondary-id12
+        - title: "Protocol Type(13)"
+          titlekr: "Protocol Type(13)"
+          url: /dxl/pro_plus/h54p-100-s500-r/#protocol-type13          
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
           url: /dxl/pro_plus/h54p-100-s500-r/#homing-offset20
@@ -11761,6 +11767,9 @@ h42p-020-s300-r:
         - title: "Secondary ID(12)"
           titlekr: "Secondary ID(12)"
           url: /dxl/pro_plus/h42p-020-s300-r/#secondary-id12
+        - title: "Protocol Type(13)"
+          titlekr: "Protocol Type(13)"
+          url: /dxl/pro_plus/h42p-020-s300-r/#protocol-type13          
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
           url: /dxl/pro_plus/h42p-020-s300-r/#homing-offset20
@@ -11987,6 +11996,9 @@ m42p-010-s260-r:
         - title: "Secondary ID(12)"
           titlekr: "Secondary ID(12)"
           url: /dxl/pro_plus/m42p-010-s260-r/#secondary-id12
+        - title: "Protocol Type(13)"
+          titlekr: "Protocol Type(13)"
+          url: /dxl/pro_plus/m42p-010-s260-r/#protocol-type13          
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
           url: /dxl/pro_plus/m42p-010-s260-r/#homing-offset20
@@ -12213,6 +12225,9 @@ m54p-040-s250-r:
         - title: "Secondary ID(12)"
           titlekr: "Secondary ID(12)"
           url: /dxl/pro_plus/m54p-040-s250-r/#secondary-id12
+        - title: "Protocol Type(13)"
+          titlekr: "Protocol Type(13)"
+          url: /dxl/pro_plus/m54p-040-s250-r/#protocol-type13        
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
           url: /dxl/pro_plus/m54p-040-s250-r/#homing-offset20
@@ -12439,6 +12454,9 @@ m54p-060-s250-r:
         - title: "Secondary ID(12)"
           titlekr: "Secondary ID(12)"
           url: /dxl/pro_plus/m54p-060-s250-r/#secondary-id12
+        - title: "Protocol Type(13)"
+          titlekr: "Protocol Type(13)"
+          url: /dxl/pro_plus/m54p-060-s250-r/#protocol-type13                    
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
           url: /dxl/pro_plus/m54p-060-s250-r/#homing-offset20
@@ -19192,10 +19210,6 @@ dynamixel_workbench:
       children:
       - title: "Find Dynamixels"
         url: /software/dynamixel/dynamixel_workbench/#find-dynamixels
-      - title: "Single Manager"
-        url: /software/dynamixel/dynamixel_workbench/#single-manager
-      - title: "Single Manager GUI"
-        url: /software/dynamixel/dynamixel_workbench/#single-manager-gui
       - title: "Controllers"
         url: /software/dynamixel/dynamixel_workbench/#controllers
       - title: "Operators"
@@ -19741,11 +19755,11 @@ cm-50:
       titlekr: "Play Mode"
       url: /parts/controller/cm-50/#play-mode
       urlkr: /parts/controller/cm-50/#play-mode
-      title: "Manage Mode"
+    - title: "Manage Mode"
       titlekr: "Manage Mode"
       url: /parts/controller/cm-50/#manage-mode
       urlkr: /parts/controller/cm-50/#manage-mode
-      title: "Tuning Mode"
+    - title: "Tuning Mode"
       titlekr: "Tuning Mode"
       url: /parts/controller/cm-50/#tuning-mode
       urlkr: /parts/controller/cm-50/#tuning-mode
@@ -19760,18 +19774,22 @@ cm-50:
       urlkr: /parts/controller/cm-50/#모터-튜닝
       children:
       - title: "RC-100B"
+        titlekr: "RC-100B"
         url: /parts/controller/cm-50/#rc-100b
         urlkr: /parts/controller/cm-50/#rc-100b  
-        title: "RC-200"
+      - title: "RC-200"
+        titlekr: "RC-200"
         url: /parts/controller/cm-50/#rc-200
         urlkr: /parts/controller/cm-50/#rc-200 
-        title: "스마트기기"
+      - title: "Smart Device"
+        titlekr: "스마트기기"
         url: /parts/controller/cm-50/#smart-device
         urlkr: /parts/controller/cm-50/#모터-튜닝
-        title: "Button Description For Tuning  "
+      - title: "Button Description For Tuning"
         titlekr: "무선 조종기 튜닝 설명서"
         url: /parts/controller/cm-50/#button-description-for-tuning
         urlkr: /parts/controller/cm-50/#무선-조종기-튜닝-설명서
+        
 #CM-100A Controller sidebar
 cm-100:
   - title: "Introduction"
