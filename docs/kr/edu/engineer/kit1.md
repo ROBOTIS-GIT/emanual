@@ -219,6 +219,16 @@ product_group: 2xl430-w250
 
 ## [앱 설치하기](#앱-설치하기)
 
+{% capture app_install %}  
+현재 로보플러스 엔지니어는 비공개 상태입니다. 아래 링크를 통해 앱을 다운로드 받아 설치해 주세요.  
+- **[로보플러스 엔지니어 안드로이드 앱 다운로드]**  
+- **로보플러스 태스크 3.0 [윈도우용 다운로드], [안드로이드 앱 다운로드]**
+- **참고** : [인터넷에서 다운로드 받은 앱 설치하기]{: .popup}
+
+[인터넷에서 다운로드 받은 앱 설치하기]: /docs/kr/popup/apk_install
+{% endcapture %}
+<div class="notice--success">{{ app_install | markdownify }}</div>
+
 1. 스마트폰 또는 태블릿에서 `플레이 스토어` 또는 `앱 스토어`를 실행합니다.  
   ![](/assets/images/edu/engineer/kit1/app_installation_01_kr.png)
 
@@ -230,9 +240,6 @@ product_group: 2xl430-w250
 
 4. 아래와 같은 화면이 나타나면 `동의`를 눌러 설치를 진행합니다.  
   ![](/assets/images/edu/engineer/kit1/app_installation_04_kr.png)
-
-[ROBOTIS ENGINEER(Android) 다운로드]  
-[ROBOTIS ENGINEER(iOS) 다운로드]
 
 
 ## [블루투스 연결하기](#블루투스-연결하기)
@@ -414,7 +421,15 @@ Dr.R 예제를 선택하면 스마트 기기에 왼쪽과 같은 표정 화면�
 - 태스크 코드를 작성하여, 로봇을 원하는대로 명령으로 구동할 수 있습니다.
 - 모션파일로 로봇의 행동을 직접 만들어 줄 수 있습니다.
 
-**[로보플러스 태스크 3.0 다운로드]**
+{% capture app_install %}  
+현재 로보플러스 엔지니어는 비공개 상태입니다. 아래 링크를 통해 앱을 다운로드 받아 설치해 주세요.  
+- **[로보플러스 엔지니어 안드로이드 앱 다운로드]**  
+- **로보플러스 태스크 3.0 [윈도우용 다운로드], [안드로이드 앱 다운로드]**
+- **참고** : [인터넷에서 다운로드 받은 앱 설치하기]{: .popup}
+
+[인터넷에서 다운로드 받은 앱 설치하기]: /docs/kr/popup/apk_install
+{% endcapture %}
+<div class="notice--success">{{ app_install | markdownify }}</div>
 
 # [참고자료](#참고자료)
 
@@ -491,4 +506,6 @@ CM-550에는 과전류가 흘러서 회로가 손상되는 것을 방지하기 �
 [로보플러스 태스크 3.0]: /docs/kr/software/rplustask3/
 [로보플러스 태스크 2.0]: /docs/kr/software/rplus2/task/
 [로보플러스 모션 2.0]: /docs/kr/software/rplus2/motion/
-[로보플러스 태스크 3.0 다운로드]: 
+[안드로이드 앱 다운로드]: http://www.robotis.com/service/download.php?no=1772
+[윈도우용 다운로드]: http://www.robotis.com/service/download.php?no=1774
+[로보플러스 엔지니어 안드로이드 앱 다운로드]: http://www.robotis.com/service/download.php?no=1773
