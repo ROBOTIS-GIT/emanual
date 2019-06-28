@@ -9,5 +9,8 @@ This value decides how to return Status Packet when the device receives an Instr
 **NOTE** : If the ID of Instruction Packet is set to Broad Cast ID(0xFE), Status Packet will not be returned for READ and WRITE Instructions regardless of Status Return Level. For more details, please refer to the [Status Packet] section of [Protocol 2.0].
 {: .notice}
 
+**WARNING** : Modebus-RTU dose not support Status Return Level(516).    
+{: .notice--warning}
+
 [Status Packet]: /docs/en/dxl/protocol2/#status-packet
 [Protocol 2.0]: /docs/en/dxl/protocol2/
