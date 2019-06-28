@@ -5,16 +5,16 @@ If those errors are detected, [Torque Enable(512)] is reset to ‘0’ and the m
 Controllers can identify the error status by checking Alert Bit(0x80) in the Error field of the Status Packet, or reading [Hardware Error Status(518)] of the device.  
 In order to turn on the torque of the device in shutdown status, REBOOT has to be performed first. The followings are detectable situations.
 
-|  Bit  |              Item               | Description                                                                     |
-|:-----:|:-------------------------------:|:--------------------------------------------------------------------------------|
-| Bit 7 |                -                | Not used, always '0'                                                            |
-| Bit 6 |                -                | Not used, always '0'                                                            |
-| Bit 5 |     Overload Error(Default)     | Detect persistent load that exceeds maximum output                              |
-| Bit 4 | Electrical Shock Error(Default) | Detect electric shock on the circuit or insufficient power to operate the motor |
-| Bit 3 |  Motor Encoder Error(Default)   | Detect malfunction of the motor encoder                                         |
-| Bit 2 |   OverHeating Error(Default)    | Detect internal temperature exceeds the configured operating temperature        |
-| Bit 1 |     Motor Hall Sensor Error     | Motor hall sensor value exceeds normal range                                    |
-| Bit 0 |       Input Voltage Error       | Detect input voltage exceeds the configured operating voltage                   |
+|  Bit  |               Item               | Description                                                                     |
+|:-----:|:--------------------------------:|:--------------------------------------------------------------------------------|
+| Bit 7 |                -                 | Not used, always '0'                                                            |
+| Bit 6 |                -                 | Not used, always '0'                                                            |
+| Bit 5 |     Overload Error(Default)      | Detect persistent load that exceeds maximum output                              |
+| Bit 4 | Electrical Shock Error(Default)  | Detect electric shock on the circuit or insufficient power to operate the motor |
+| Bit 3 |   Motor Encoder Error(Default)   | Detect malfunction of the motor encoder                                         |
+| Bit 2 |        OverHeating Error         | Detect internal temperature exceeds the configured operating temperature        |
+| Bit 1 | Motor Hall Sensor Error(Default) | Motor hall sensor value exceeds normal range                                    |
+| Bit 0 |       Input Voltage Error        | Detect input voltage exceeds the configured operating voltage                   |
 
 {% capture shutdown_pro %}
 **NOTE** :
