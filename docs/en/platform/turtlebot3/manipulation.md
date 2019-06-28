@@ -73,7 +73,7 @@ $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ roslaunch open_manipulator_with_tb3_description open_manipulator_with_tb3_rviz.launch
 ```
 
-![](/assets/images/platform/openmanipulator/TurtleBot3_with_Open_Manipulator.png)
+![](/assets/images/platform/turtlebot3/manipulation/TurtleBot3_with_Open_Manipulator.png)
 
 ## [Hardware Setup](#hardware-setup)
 

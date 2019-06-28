@@ -17,6 +17,7 @@ sidebar:
 # [Introduction](#introduction)
 
 ![](/assets/images/sw/dynamixel/wizard2/wizard2_main_000.jpg)
+<<<<<<< Updated upstream
 
 **Software Download(v2.0.0.7)**  
 [Windows](http://www.robotis.com/service/download.php?no=1670)  
