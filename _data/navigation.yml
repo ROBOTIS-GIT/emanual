@@ -13375,10 +13375,15 @@ info:
   - titlekr: "엔트리로 작동하기"
     urlkr: /edu/info/#엔트리로-작동하기
     children:
-      - titlekr: "엔트리 설치하기"
-        urlkr: /edu/info/#엔트리-설치하기
-      - titlekr: "PC에 예제 다운로드하기"
-        urlkr: /edu/info/#pc에-예제-다운로드하기
+      - titlekr: "온라인 버전"
+        urlkr: /edu/info/#온라인-버전
+      - titlekr: "오프라인 버전"
+        urlkr: /edu/info/#오프라인-버전
+        children: 
+        - titlekr: "PC에 엔트리 설치하기"
+          urlkr: /edu/info/#pc에-엔트리-설치하기          
+        - titlekr: "PC에 예제 다운로드하기"
+          urlkr: /edu/info/#pc에-예제-다운로드하기
       - titlekr: "엔트리에서 예제 불러오기"
         urlkr: /edu/info/#엔트리에서-예제-불러오기
       - titlekr: "PC에 블루투스 연결하기"
@@ -13394,8 +13399,15 @@ info:
         urlkr: /edu/info/#r-실과로봇-설치하기
       - titlekr: "제어기와 스마트기기 연결"
         urlkr: /edu/info/#제어기와-스마트기기-연결
-      - titlekr: "R+ 실과로봇에서 예제 불러오기"
-        urlkr: /edu/info/#r-실과로봇에서-예제-불러오기
+      - titlekr: "통합 프로그램 실행하기"
+        urlkr: /edu/info/#통합-프로그램-실행하기
+        children: 
+        - titlekr: "안내로봇 실행하기"
+          urlkr: /edu/info/#안내로봇-실행하기
+      - titlekr: "제어기에 태스크파일 다운로드"
+        urlkr: /edu/info/#제어기에-태스크파일-다운로드
+  - titlekr: 실과로봇 앱 예제 초기화 방법
+    urlkr: /edu/info/#실과로봇-앱-예제-초기화-방법
   - titlekr: "교육자료 다운로드"
     urlkr: /edu/info/#교육자료-다운로드
     children:
