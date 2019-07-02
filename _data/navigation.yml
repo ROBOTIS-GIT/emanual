@@ -12899,8 +12899,8 @@ play-700:
           url: /edu/play/play-700/#rc-100b
         - title: "RC-200"
           url: /edu/play/play-700/#rc-200
-        - title: "Virtual Remote Controller"
-          url: /edu/play/play-700/#virtual-remote-controller
+        - title: "Smart Device"
+          url: /edu/play/play-700/#smart-device
     - title: "Remote Controller description"
       url: /edu/play/play-700/#remote-controller-description
 
@@ -19746,9 +19746,9 @@ cm-50:
     titlekr: "무선통신 연결"
     url: /parts/controller/cm-50/#wireless-communication
     urlkr: /parts/controller/cm-50/#무선-통신-모듈-연결하기
-  - title: "Controller Mode"
+  - title: "Mode Select"
     titlekr: "제어기 모드 선택"
-    url: /parts/controller/cm-50/#controller-mode
+    url: /parts/controller/cm-50/#mode-select
     urlkr: /parts/controller/cm-50/#제어기-모드-선택
     children: 
     - title: "Play Mode"
