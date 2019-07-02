@@ -32,3 +32,6 @@ If a specific item has address longer than 2 byte, each address byte has to be s
 
 **NOTE** : In order to allocate Data in the Control Table longer than 2[byte] to Indirect Address, all address must be allocated to Indirect Address like the above Example 2.
 {: .notice}
+
+**WARNING** : Modebus-RTU dose not support Indirect Address and Indirect Data.    
+{: .notice--warning}
