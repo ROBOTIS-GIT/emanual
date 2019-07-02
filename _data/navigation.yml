@@ -13382,8 +13382,8 @@ info:
         children: 
         - titlekr: "PC에 엔트리 설치하기"
           urlkr: /edu/info/#pc에-엔트리-설치하기          
-        - titlekr: "PC에 예제 다운로드하기"
-          urlkr: /edu/info/#pc에-예제-다운로드하기
+      - titlekr: "PC에 예제 다운로드하기"
+        urlkr: /edu/info/#pc에-예제-다운로드하기
       - titlekr: "엔트리에서 예제 불러오기"
         urlkr: /edu/info/#엔트리에서-예제-불러오기
       - titlekr: "PC에 블루투스 연결하기"
