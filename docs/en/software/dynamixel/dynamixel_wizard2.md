@@ -23,8 +23,6 @@ sidebar:
 [Windows](http://www.robotis.com/service/download.php?no=1670)  
 [Linux](http://www.robotis.com/service/download.php?no=1671)  
 [Mac](http://www.robotis.com/service/download.php?no=176)  
-=======
->>>>>>> Stashed changes
 
 ## [DYNAMIXEL Wizard 2.0](#dynamixel-wizard-20)
 
