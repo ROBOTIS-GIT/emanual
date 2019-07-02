@@ -12899,8 +12899,8 @@ play-700:
           url: /edu/play/play-700/#rc-100b
         - title: "RC-200"
           url: /edu/play/play-700/#rc-200
-        - title: "Virtual Remote Controller"
-          url: /edu/play/play-700/#virtual-remote-controller
+        - title: "Smart Device"
+          url: /edu/play/play-700/#smart-device
     - title: "Remote Controller description"
       url: /edu/play/play-700/#remote-controller-description
 
@@ -19758,9 +19758,9 @@ cm-50:
     titlekr: "무선통신 연결"
     url: /parts/controller/cm-50/#wireless-communication
     urlkr: /parts/controller/cm-50/#무선-통신-모듈-연결하기
-  - title: "Controller Mode"
+  - title: "Mode Select"
     titlekr: "제어기 모드 선택"
-    url: /parts/controller/cm-50/#controller-mode
+    url: /parts/controller/cm-50/#mode-select
     urlkr: /parts/controller/cm-50/#제어기-모드-선택
     children: 
     - title: "Play Mode"
@@ -19775,32 +19775,27 @@ cm-50:
       titlekr: "Tuning Mode"
       url: /parts/controller/cm-50/#tuning-mode
       urlkr: /parts/controller/cm-50/#tuning-mode
-  - title: "Speed Synchronization for Straightness"
+  - title: "Straightness Tuning"
     titlekr: "직진성 보정"
-    url: /parts/controller/cm-50/#speed-synchronization-for-straightnes
+    url: /parts/controller/cm-50/#straightness-tuning
     urlkr: /parts/controller/cm-50/#직진성-보정
     children:
-    - title: "Motor Tuning"
-      titlekr: "모터 튜닝"
-      url: /parts/controller/cm-50/#motor-tuning
-      urlkr: /parts/controller/cm-50/#모터-튜닝
-      children:
-      - title: "RC-100B"
-        titlekr: "RC-100B"
-        url: /parts/controller/cm-50/#rc-100b
-        urlkr: /parts/controller/cm-50/#rc-100b  
-      - title: "RC-200"
-        titlekr: "RC-200"
-        url: /parts/controller/cm-50/#rc-200
-        urlkr: /parts/controller/cm-50/#rc-200 
-      - title: "Smart Device"
-        titlekr: "스마트기기"
-        url: /parts/controller/cm-50/#smart-device
-        urlkr: /parts/controller/cm-50/#모터-튜닝
-      - title: "Button Description For Tuning"
-        titlekr: "무선 조종기 튜닝 설명서"
-        url: /parts/controller/cm-50/#button-description-for-tuning
-        urlkr: /parts/controller/cm-50/#무선-조종기-튜닝-설명서
+    - title: "RC-100B"
+      titlekr: "RC-100B"
+      url: /parts/controller/cm-50/#rc-100b
+      urlkr: /parts/controller/cm-50/#rc-100b  
+    - title: "RC-200"
+      titlekr: "RC-200"
+      url: /parts/controller/cm-50/#rc-200
+      urlkr: /parts/controller/cm-50/#rc-200 
+    - title: "Smart Device"
+      titlekr: "스마트 기기"
+      url: /parts/controller/cm-50/#smart-device
+      urlkr: /parts/controller/cm-50/#스마트-기기
+    - title: "Tuning Guide"
+      titlekr: "튜닝 설명서"
+      url: /parts/controller/cm-50/#tuning-guide
+      urlkr: /parts/controller/cm-50/#튜닝-설명서
         
 #CM-100A Controller sidebar
 cm-100:
