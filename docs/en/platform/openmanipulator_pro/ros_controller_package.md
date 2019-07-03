@@ -744,5 +744,5 @@ This service is used when using moveit! The user can use this service to create 
 [open_manipulator_msgs/OpenManipulatorState]: /docs/en/popup/open_manipulator_msgs_OpenManipulatorState/
 [std_msgs/String]: /docs/en/popup/std_msgs_string/
 
-[task space]: /docs/en/popup/open_manipulator_pro_coordinates/
-[joint space]: /docs/en/popup/open_manipulator_pro_coordinates/
+[task space]: /docs/en/popup/open_manipulator_coordinates/
+[joint space]: /docs/en/popup/open_manipulator_coordinates/

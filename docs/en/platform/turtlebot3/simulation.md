@@ -115,6 +115,9 @@ $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ roslaunch turtlebot3_gazebo turtlebot3_house.launch
 ```
 
+**NOTE** : If `TurtleBot3 House` is excuted for the first time, downloading the map file takes a couple of minutes or more depending on download speed.
+{: .notice}
+
 ![](/assets/images/platform/turtlebot3/simulation/turtlebot3_house.png)
 
 ![](/assets/images/platform/turtlebot3/simulation/turtlebot3_house1.png)

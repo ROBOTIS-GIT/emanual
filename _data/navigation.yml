@@ -12882,27 +12882,11 @@ play-700:
     url: /edu/play/play-700/#video-tutorials
   - title: "Reference"
     url: /edu/play/play-700/#reference
-    children:
-    - title: "Access to Play Mode"
-      url: /edu/play/play-700/#access-to-play-mode
-    - title: "Access to Manage Mode"
-      url: /edu/play/play-700/#access-to-manage-mode
-    - title: "Access to Tuning Mode"
-      url: /edu/play/play-700/#access-to-tuning-mode
-    - title: "Speed Synchronization for Straightness"
-      url: /edu/play/play-700/#speed-synchronization-for-straightness
-      children:
-      - title: "Motor Tuning"
-        url: /edu/play/play-700/#motor-tuning
-        children:
-        - title: "RC-100B"
-          url: /edu/play/play-700/#rc-100b
-        - title: "RC-200"
-          url: /edu/play/play-700/#rc-200
-        - title: "Smart Device"
-          url: /edu/play/play-700/#smart-device
-    - title: "Remote Controller description"
-      url: /edu/play/play-700/#remote-controller-description
+    children: 
+      - title: "Straightness Tuning"
+        url: /edu/play/play-700/#straightness-tuning
+    
+
 
 #Ollo Bug Kit sidebar
 ollo_bugkit:
@@ -13375,8 +13359,13 @@ info:
   - titlekr: "엔트리로 작동하기"
     urlkr: /edu/info/#엔트리로-작동하기
     children:
-      - titlekr: "엔트리 설치하기"
-        urlkr: /edu/info/#엔트리-설치하기
+      - titlekr: "온라인 버전"
+        urlkr: /edu/info/#온라인-버전
+      - titlekr: "오프라인 버전"
+        urlkr: /edu/info/#오프라인-버전
+        children: 
+        - titlekr: "PC에 엔트리 설치하기"
+          urlkr: /edu/info/#pc에-엔트리-설치하기          
       - titlekr: "PC에 예제 다운로드하기"
         urlkr: /edu/info/#pc에-예제-다운로드하기
       - titlekr: "엔트리에서 예제 불러오기"
@@ -13394,8 +13383,15 @@ info:
         urlkr: /edu/info/#r-실과로봇-설치하기
       - titlekr: "제어기와 스마트기기 연결"
         urlkr: /edu/info/#제어기와-스마트기기-연결
-      - titlekr: "R+ 실과로봇에서 예제 불러오기"
-        urlkr: /edu/info/#r-실과로봇에서-예제-불러오기
+      - titlekr: "통합 프로그램 실행하기"
+        urlkr: /edu/info/#통합-프로그램-실행하기
+        children: 
+        - titlekr: "안내로봇 실행하기"
+          urlkr: /edu/info/#안내로봇-실행하기
+      - titlekr: "제어기에 태스크파일 다운로드"
+        urlkr: /edu/info/#제어기에-태스크파일-다운로드
+  - titlekr: 실과로봇 앱 예제 초기화 방법
+    urlkr: /edu/info/#실과로봇-앱-예제-초기화-방법
   - titlekr: "교육자료 다운로드"
     urlkr: /edu/info/#교육자료-다운로드
     children:
