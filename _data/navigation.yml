@@ -11311,7 +11311,7 @@ h54p-200-s500-r:
           url: /dxl/pro_plus/h54p-200-s500-r/#secondary-id12
         - title: "Protocol Type(13)"
           titlekr: "Protocol Type(13)"
-          url: /dxl/pro_plus/h54p-200-s500-r/#protocol-type13         
+          url: /dxl/pro_plus/h54p-200-s500-r/#protocol-type13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
           url: /dxl/pro_plus/h54p-200-s500-r/#homing-offset20
@@ -11540,7 +11540,7 @@ h54p-100-s500-r:
           url: /dxl/pro_plus/h54p-100-s500-r/#secondary-id12
         - title: "Protocol Type(13)"
           titlekr: "Protocol Type(13)"
-          url: /dxl/pro_plus/h54p-100-s500-r/#protocol-type13          
+          url: /dxl/pro_plus/h54p-100-s500-r/#protocol-type13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
           url: /dxl/pro_plus/h54p-100-s500-r/#homing-offset20
@@ -11769,7 +11769,7 @@ h42p-020-s300-r:
           url: /dxl/pro_plus/h42p-020-s300-r/#secondary-id12
         - title: "Protocol Type(13)"
           titlekr: "Protocol Type(13)"
-          url: /dxl/pro_plus/h42p-020-s300-r/#protocol-type13          
+          url: /dxl/pro_plus/h42p-020-s300-r/#protocol-type13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
           url: /dxl/pro_plus/h42p-020-s300-r/#homing-offset20
@@ -11998,7 +11998,7 @@ m42p-010-s260-r:
           url: /dxl/pro_plus/m42p-010-s260-r/#secondary-id12
         - title: "Protocol Type(13)"
           titlekr: "Protocol Type(13)"
-          url: /dxl/pro_plus/m42p-010-s260-r/#protocol-type13          
+          url: /dxl/pro_plus/m42p-010-s260-r/#protocol-type13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
           url: /dxl/pro_plus/m42p-010-s260-r/#homing-offset20
@@ -12227,7 +12227,7 @@ m54p-040-s250-r:
           url: /dxl/pro_plus/m54p-040-s250-r/#secondary-id12
         - title: "Protocol Type(13)"
           titlekr: "Protocol Type(13)"
-          url: /dxl/pro_plus/m54p-040-s250-r/#protocol-type13        
+          url: /dxl/pro_plus/m54p-040-s250-r/#protocol-type13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
           url: /dxl/pro_plus/m54p-040-s250-r/#homing-offset20
@@ -12456,7 +12456,7 @@ m54p-060-s250-r:
           url: /dxl/pro_plus/m54p-060-s250-r/#secondary-id12
         - title: "Protocol Type(13)"
           titlekr: "Protocol Type(13)"
-          url: /dxl/pro_plus/m54p-060-s250-r/#protocol-type13                    
+          url: /dxl/pro_plus/m54p-060-s250-r/#protocol-type13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
           url: /dxl/pro_plus/m54p-060-s250-r/#homing-offset20
@@ -13962,8 +13962,8 @@ kit1:
       urlkr: /edu/engineer/kit1/#점검-및-자가진단
     - titlekr: "배터리 충전하기"
       urlkr: /edu/engineer/kit1/#배터리-충전하기
-    - titlekr: "충전지 잔량 확인하기"
-      urlkr: /edu/engineer/kit1/#충전지-잔량-확인하기
+    - titlekr: "배터리 잔량 확인하기"
+      urlkr: /edu/engineer/kit1/#배터리-잔량-확인하기
     - titlekr: "퓨즈 교체하기"
       urlkr: /edu/engineer/kit1/#퓨즈-교체하기
     # - titlekr: "로봇 초기화"
@@ -19746,7 +19746,7 @@ cm-50:
     titlekr: "제어기 모드 선택"
     url: /parts/controller/cm-50/#mode-select
     urlkr: /parts/controller/cm-50/#제어기-모드-선택
-    children: 
+    children:
     - title: "Play Mode"
       titlekr: "Play Mode"
       url: /parts/controller/cm-50/#play-mode
@@ -19767,11 +19767,11 @@ cm-50:
     - title: "RC-100B"
       titlekr: "RC-100B"
       url: /parts/controller/cm-50/#rc-100b
-      urlkr: /parts/controller/cm-50/#rc-100b  
+      urlkr: /parts/controller/cm-50/#rc-100b
     - title: "RC-200"
       titlekr: "RC-200"
       url: /parts/controller/cm-50/#rc-200
-      urlkr: /parts/controller/cm-50/#rc-200 
+      urlkr: /parts/controller/cm-50/#rc-200
     - title: "Smart Device"
       titlekr: "스마트 기기"
       url: /parts/controller/cm-50/#smart-device
@@ -19780,7 +19780,7 @@ cm-50:
       titlekr: "튜닝 설명서"
       url: /parts/controller/cm-50/#tuning-guide
       urlkr: /parts/controller/cm-50/#튜닝-설명서
-        
+
 #CM-100A Controller sidebar
 cm-100:
   - title: "Introduction"
@@ -20047,6 +20047,81 @@ cm-530:
     titlekr: "관련 동영상"
     url: /parts/controller/cm-530/#videos
     urlkr: /parts/controller/cm-530/#관련-동영상
+
+#CM-550 Controller sidebar
+cm-550:
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /parts/controller/cm-550/#introduction
+    urlkr: /parts/controller/cm-550/#개요
+  - title: "Specifications"
+    titlekr: "제품 사양"
+    url: /parts/controller/cm-550/#specifications
+    urlkr: /parts/controller/cm-550/#제품-사양
+  - title: "Layout"
+    titlekr: "각 부 명칭"
+    url: /parts/controller/cm-550/#layout
+    urlkr: /parts/controller/cm-550/#각-부-명칭
+    children:
+    - titlekr: "전원 포트"
+      urlkr: /parts/controller/cm-550/#전원-포트
+    - titlekr: "로보티즈 5핀 포트"
+      urlkr: /parts/controller/cm-550/#로보티즈-5핀-포트
+    - titlekr: "외부통신 포트"
+      urlkr: /parts/controller/cm-550/#외부통신-포트
+    - titlekr: "다이나믹셀 포트"
+      urlkr: /parts/controller/cm-550/#다이나믹셀-포트
+  - title: "Connecting Power"
+    titlekr: "전원 연결"
+    url: /parts/controller/cm-550/#connecting-power
+    urlkr: /parts/controller/cm-550/#전원-연결
+  - title: "How to Operate"
+    titlekr: "작동 방법"
+    url: /parts/controller/cm-550/#how-to-operate
+    urlkr: /parts/controller/cm-550/#작동-방법
+    children:
+    - titlekr: "전원 켜기"
+      urlkr: /parts/controller/cm-550/#전원-켜기
+    - titlekr: "시작"
+      urlkr: /parts/controller/cm-550/#시작
+    - titlekr: "종료"
+      urlkr: /parts/controller/cm-550/#종료
+    - titlekr: "동작 모드"
+      urlkr: /parts/controller/cm-550/#동작-모드
+      children:
+      - titlekr: "MANAGE"
+        urlkr: /parts/controller/cm-550/#manage
+      - titlekr: "PLAY"
+        urlkr: /parts/controller/cm-550/#play
+      - titlekr: "MOTION"
+        urlkr: /parts/controller/cm-550/#motion
+  - titlekr: "호환 소프트웨어"
+    urlkr: /parts/controller/cm-550/#호환-소프트웨어
+    children:
+    - titlekr: "로보플러스 매니저 2.0"
+      urlkr: /parts/controller/cm-550/#로보플러스-매니저-20
+    - titlekr: "로보플러스 태스크 3.0"
+      urlkr: /parts/controller/cm-550/#로보플러스-태스크-30
+    - titlekr: "파이썬"
+      urlkr: /parts/controller/cm-550/#파이썬
+  - title: "Connect to PC"
+    titlekr: "PC 연결"
+    url: /parts/controller/cm-550/#connect-to-pc
+    urlkr: /parts/controller/cm-550/#pc-연결
+  - title: "Wireless Communication"
+    titlekr: "블루투스 연결"
+    url: /parts/controller/cm-550/#wireless-communication
+    urlkr: /parts/controller/cm-550/#블루투스-연결
+  - title: "Charging"
+    titlekr: "충전하기"
+    url: /parts/controller/cm-550/#charging
+    urlkr: /parts/controller/cm-550/#충전하기
+  - titlekr: "배터리 잔량 확인하기"
+    urlkr: /parts/controller/cm-550/#배터리-잔량-확인하기
+  - title: "Fuse Replacement"
+    titlekr: "퓨즈 교체하기"
+    url: /parts/controller/cm-550/#fuse-replacement
+    urlkr: /parts/controller/cm-550/#퓨즈-교체하기
 
 #CM-700 Controller sidebar
 cm-700:
