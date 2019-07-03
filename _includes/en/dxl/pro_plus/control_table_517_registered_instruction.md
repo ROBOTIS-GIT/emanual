@@ -6,3 +6,7 @@
 
 **NOTE** : If ACTION instruction is executed, the value will be changed to 0.
 {: .notice}
+
+**WARNING** :  Modebus-RTU dose not support Registered Instruction(517).    
+{: .notice--warning}
+ 
