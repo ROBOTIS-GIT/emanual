@@ -132,7 +132,14 @@ Green dot indicates the robot is connected to the program.
 
 - [More PLAY 700 Youtube Tutorials]{: .blank}
 
+# [Reference](#reference)
 
+## [Straightness Tuning](#straightness-tuning)
+
+If the robot dosen’t move straight and keep steering to the right or left, the straightness can be tuned under Tuning Mode.  
+
+Please follow [Straightness Tuning](/docs/en/parts/controller/cm-50/#straightness-tuning) Manual on CM-50 with a reference. 
+{: .notice--info}
 
 
 [R+TASK]: /docs/en/software/rplus2/task/
