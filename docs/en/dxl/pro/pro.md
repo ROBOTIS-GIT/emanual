@@ -9,8 +9,13 @@ sidebar:
 product_group: dxl_pro
 ---
 
+
+
 ![](/assets/images/dxl/pro/dynamixelpro_main.jpg)
 >DYNAMIXEL PRO
+
+**WARNING** : DYNAMIXEL PRO has been discontinued. 
+{: .notice--warning}
 
 # [Product Lineup](#product-lineup)
 
