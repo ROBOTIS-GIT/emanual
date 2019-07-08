@@ -15924,7 +15924,6 @@ openmanipulator_pro:
       - title: "Controller for gazebo"
         url: /platform/openmanipulator_pro/ros_simulation/#controller-for-gazebo
 
-      
 
 #Manipulator-H
 manipulator_h:
