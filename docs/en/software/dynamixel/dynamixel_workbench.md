@@ -241,8 +241,8 @@ Then you can see below texts.
 
 This package is to control Dynamixels by ROS API. You can load your Dynamixels by simply creating yaml file.  
 
-The configuration of the yaml file is as follows. [name] is used for joint name of /joint_states topic as well as identifing Dynamixel.  
-When controller is initialized, Dynamixel information is loaded from the file and configures each [Control_Table_Item] with the [value] for each Dynamixel based on [id].
+The configuration of the yaml file is as follows. `name` is used for joint name of /joint_states topic as well as identifing Dynamixel.  
+When controller is initialized, Dynamixel information is loaded from the file and configures each `Control_Table_Item` with the `value` for each Dynamixel based on `id`.
 
 ```
 [name]:
@@ -278,11 +278,13 @@ tilt:
   Profile_Acceleration: 0
   Profile_Velocity: 0
 ```
-
-**WARNING**:
+**WARNING**: `Torque_Enable` isn't supposed to be set by users, but it's enabled by itself during initialization.  
+{: .notice--warning}
+  
+**WARNING**:  
 You can find control table of Dynamixel on [e-Manual](http://emanual.robotis.com/#control-table)  
-Control table item has to follow [Camel_Case](https://en.wikipedia.org/wiki/Camel_case) without a blank.  
-You are supposed to set at least Dynamixel ID.
+Control table item has to follow [Camel_Case](https://en.wikipedia.org/wiki/Camel_case) without a blank.    
+You are supposed to set at least Dynamixel ID.  
 {: .notice--warning}
 
 Let's take a look at the `dynamixel_controller.launch` file
