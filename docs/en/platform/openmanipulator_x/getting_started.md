@@ -35,7 +35,7 @@ is used to secure the OpenMANIPULATOR-X to the workspace.
 The controller or communication board you need to prepare depends on your development environment. If you want to develop on an embedded system, prepare [OpenCR](http://en.robotis.com/shop_en/item.php?it_id=903-0257-000) and PC. To use the ROS, prepare your PC and either the [U2D2](http://en.robotis.com/shop_en/item.php?it_id=902-0132-000) + [U2D2 Power Hub Board](http://en.robotis.com/shop_en/item.php?it_id=902-0145-000) or [OpenCR](http://en.robotis.com/shop_en/item.php?it_id=903-0257-000).  
 To summarize, the parts to prepare are shown in the table below.
 
-2. `Assembly` : The OpenMANIPULATOR-X is provided as a non-assembled part to the box. Assemble the OpenMANIPULATOR-X according to the instructions of [Assembly Manual](/docs/en/platform/Openmanipulator/assembly/#assembly-manual). 
+2. `Assembly` : The OpenMANIPULATOR-X is provided as a non-assembled part to the box. Assemble the OpenMANIPULATOR-X according to the instructions of [Assembly Manual](/docs/en/platform/openmanipulator_x/assembly/#assembly-manual). 
 
 - **Parts**
 
