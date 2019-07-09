@@ -120,45 +120,45 @@ main:
       - title: "XH540-V270"
         titlekr: "XH540-V270"
         url: /dxl/x/xh540-v270/
-    - title: "PRO Series"
-      titlekr: "PRO 시리즈"
+    - title: "*PRO Series"
+      titlekr: "*PRO 시리즈"
       url: /dxl/pro/
       children:
-      - title: "H54-200-S500-R(A)"
-        titlekr: "H54-200-S500-R(A)"
+      - title: "*H54-200-S500-R(A)"
+        titlekr: "*H54-200-S500-R(A)"
         url: /dxl/pro/h54-200-s500-ra/
-      - title: "H54-100-S500-R(A)"
-        titlekr: "H54-100-S500-R(A)"
+      - title: "*H54-100-S500-R(A)"
+        titlekr: "*H54-100-S500-R(A)"
         url: /dxl/pro/h54-100-s500-ra/
-      - title: "H42-20-S300-R(A)"
-        titlekr: "H42-20-S300-R(A)"
+      - title: "*H42-20-S300-R(A)"
+        titlekr: "*H42-20-S300-R(A)"
         url: /dxl/pro/h42-20-s300-ra/
-      - title: "M54-60-S250-R(A)"
-        titlekr: "M54-60-S250-R(A)"
+      - title: "*M54-60-S250-R(A)"
+        titlekr: "*M54-60-S250-R(A)"
         url: /dxl/pro/m54-60-s250-ra/
-      - title: "M54-40-S250-R(A)"
-        titlekr: "M54-40-S250-R(A)"
+      - title: "*M54-40-S250-R(A)"
+        titlekr: "*M54-40-S250-R(A)"
         url: /dxl/pro/m54-40-s250-ra/
-      - title: "M42-10-S260-R(A)"
-        titlekr: "M42-10-S260-R(A)"
+      - title: "*M42-10-S260-R(A)"
+        titlekr: "*M42-10-S260-R(A)"
         url: /dxl/pro/m42-10-s260-ra/
-      - title: "H54-200-S500-R"
-        titlekr: "H54-200-S500-R"
+      - title: "*H54-200-S500-R"
+        titlekr: "*H54-200-S500-R"
         url: /dxl/pro/h54-200-s500-r/
-      - title: "H54-100-S500-R"
-        titlekr: "H54-100-S500-R"
+      - title: "*H54-100-S500-R"
+        titlekr: "*H54-100-S500-R"
         url: /dxl/pro/h54-100-s500-r/
-      - title: "H42-20-S300-R"
-        titlekr: "H42-20-S300-R"
+      - title: "*H42-20-S300-R"
+        titlekr: "*H42-20-S300-R"
         url: /dxl/pro/h42-20-s300-r/
-      - title: "M54-60-S250-R"
-        titlekr: "M54-60-S250-R"
+      - title: "*M54-60-S250-R"
+        titlekr: "*M54-60-S250-R"
         url: /dxl/pro/m54-60-s250-r/
-      - title: "M54-40-S250-R"
-        titlekr: "M54-40-S250-R"
+      - title: "*M54-40-S250-R"
+        titlekr: "*M54-40-S250-R"
         url: /dxl/pro/m54-40-s250-r/
-      - title: "M42-10-S260-R"
-        titlekr: "M42-10-S260-R"
+      - title: "*M42-10-S260-R"
+        titlekr: "*M42-10-S260-R"
         url: /dxl/pro/m42-10-s260-r/
       - title: "*L54-50-S500-R"
         titlekr: "*L54-50-S500-R"
@@ -472,6 +472,9 @@ main:
       titlekr: "제어기"
       url: /parts/controller/controller_compatibility/
       children:
+      - title: "CM-50"
+        titlekr: "CM-50"
+        url: /parts/controller/cm-50/
       - title: "*CM-100A"
         titlekr: "*CM-100A"
         url: /parts/controller/cm-100/
@@ -12882,10 +12885,10 @@ play-700:
     url: /edu/play/play-700/#video-tutorials
   - title: "Reference"
     url: /edu/play/play-700/#reference
-    children: 
+    children:
       - title: "Straightness Tuning"
         url: /edu/play/play-700/#straightness-tuning
-    
+
 
 
 #Ollo Bug Kit sidebar
@@ -13363,9 +13366,9 @@ info:
         urlkr: /edu/info/#온라인-버전
       - titlekr: "오프라인 버전"
         urlkr: /edu/info/#오프라인-버전
-        children: 
+        children:
         - titlekr: "PC에 엔트리 설치하기"
-          urlkr: /edu/info/#pc에-엔트리-설치하기          
+          urlkr: /edu/info/#pc에-엔트리-설치하기
       - titlekr: "PC에 예제 다운로드하기"
         urlkr: /edu/info/#pc에-예제-다운로드하기
       - titlekr: "엔트리에서 예제 불러오기"
@@ -13385,7 +13388,7 @@ info:
         urlkr: /edu/info/#제어기와-스마트기기-연결
       - titlekr: "통합 프로그램 실행하기"
         urlkr: /edu/info/#통합-프로그램-실행하기
-        children: 
+        children:
         - titlekr: "안내로봇 실행하기"
           urlkr: /edu/info/#안내로봇-실행하기
       - titlekr: "제어기에 태스크파일 다운로드"
@@ -15920,6 +15923,7 @@ openmanipulator_pro:
         url: /platform/openmanipulator_pro/ros_simulation/#launch-gazebo
       - title: "Controller for gazebo"
         url: /platform/openmanipulator_pro/ros_simulation/#controller-for-gazebo
+
 
 #Manipulator-H
 manipulator_h:
@@ -20102,8 +20106,6 @@ cm-550:
       urlkr: /parts/controller/cm-550/#로보플러스-매니저-20
     - titlekr: "로보플러스 태스크 3.0"
       urlkr: /parts/controller/cm-550/#로보플러스-태스크-30
-    - titlekr: "파이썬"
-      urlkr: /parts/controller/cm-550/#파이썬
   - title: "Connect to PC"
     titlekr: "PC 연결"
     url: /parts/controller/cm-550/#connect-to-pc

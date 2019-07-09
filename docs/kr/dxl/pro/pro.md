@@ -8,8 +8,15 @@ sidebar:
   nav: "dynamixel_pro"
 ---
 
+
+
+
+
 ![](/assets/images/dxl/pro/dynamixelpro_main.jpg)
 > 다이나믹셀 PRO
+
+**주의** :  다이나믹셀 PRO는 는 현재 단종되어 더 이상 판매되지 않습니다.
+{: .notice--warning}
 
 # [제품 라인업](#제품-라인업)
 
