@@ -15923,27 +15923,7 @@ openmanipulator_pro:
         url: /platform/openmanipulator_pro/ros_simulation/#launch-gazebo
       - title: "Controller for gazebo"
         url: /platform/openmanipulator_pro/ros_simulation/#controller-for-gazebo
-  - title: "[ROS] Tool Applications"
-    url: /platform/openmanipulator_pro/ros_tool_applications/#ros-tool-application
-    children:
-      - title: "RH-P12-RN Gripper"
-        url: /platform/openmanipulator_pro/ros_tool_applications/#rh-p12-rn-gripper
-        children: 
-          - title: "Parts List"
-            url: /platform/openmanipulator_pro/ros_tool_applications/#parts-list
-          - title: "Assembly Manual"
-            url: /platform/openmanipulator_pro/ros_tool_applications/#assembly-manual
-          - title: "Operation"
-            url: /platform/openmanipulator_pro/ros_tool_applications/#operation
-            children:
-              - title: "Something"
-                url: /platform/openmanipulator_pro/ros_tool_applications/something
-              - title: "GUI Program" 
-                url: /platform/openmanipulator_pro/ros_tool_applications/#gui-program
-              - title: "Teleoperation"
-                url: /platform/openmanipulator_pro/ros_tool_applications/#teleoperation
 
-      
 
 #Manipulator-H
 manipulator_h:
