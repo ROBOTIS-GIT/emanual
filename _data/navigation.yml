@@ -15943,8 +15943,6 @@ openmanipulator_pro:
               - title: "Teleoperation"
                 url: /platform/openmanipulator_pro/ros_tool_applications/#teleoperation
 
-      
-
 #Manipulator-H
 manipulator_h:
   - title: "Introduction"

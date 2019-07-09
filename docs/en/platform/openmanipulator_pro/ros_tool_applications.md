@@ -41,7 +41,7 @@ sidebar:
     ![](/assets/images/platform/openmanipulator_pro/open_manipulator_gripper_assembly_03.png)
     
     **NOTE** : There are 2 more holes on the other side for screws.
-    {: .notice}
+    {: .notice--info}
 
 3. Connect OpenMANIPULATOR-PRO and RH-P12-RN with CABLE_4P_180MM Cable.
 
@@ -50,8 +50,12 @@ sidebar:
 
 ### [Operation](#operation)
 
-**NOTE** :This instruction has been tested on Ubuntu 16.04 and ROS Kinetic Kame.
-{: .notice}
+{% capture notice_01 %}
+**NOTE** :  
+- This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.  
+- This instruction is supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
+{% endcapture %}
+<div class="notice--info">{{ notice_01 | markdownify }}</div>
 
 Please, open the Terminal then run **roscore** along with following command.  
 
@@ -67,24 +71,61 @@ $ roslaunch open_manipulator_pro_controller open_manipulator_pro_controller.laun
 
 #### [GUI Program](#gui-program)
 
+Launch `open_manipulator_pro_control_gui node`. This program shows the status of and allows users to control OpenMANIPULATOR-PRO.
+
 ```bash
 $ roslaunch open_manipulator_pro_control_gui open_manipulator_pro_control_gui.launch with_gripper:=true
 ```
+- [GUI Program e-Manual](/docs/en/platform/openmanipulator_pro/ros_operation/#ros-operation)  
+
 
 #### [Teleoperation](#teleoperation)
 
 **Keyboard**  
-You can do Teleoperation with a keyboard on your pc.
+
+Launch open_manipulator_pro_teleop_keyboard node for simple teleoperation test using the keyboard.
 
 ```bash
 $ roslaunch open_manipulator_pro_teleop open_manipulator_pro_teleop_keyboard.launch with_gripper:=true
 ```
 
+
 **PS4 & XBOX 360 Joystick**  
-You can do Teleoperation with a joystic.
 
 ```bash
 $ export ROS_NAMESPACE=open_manipulator_pro
 $ roslaunch teleop_twist_joy teleop.launch
 $ roslaunch open_manipulator_pro_teleop open_manipulator_pro_teleop_joystick.launch with_gripper:=true
 ```
+
+- [Teleoperation e-Manual](/docs/en/platform/openmanipulator_pro/ros_operation/#teleoperation)
+
+#### [MoveIt!](#moveit)
+
+```bash 
+$ roslaunch open_manipulator_pro_controller open_manipulator_pro_controller.launch use_moveit:=true with_gripper:=true
+```
+
+- [MoveIt! e-Manual](/docs/en/platform/openmanipulator_pro/ros_operation/#moveit)
+
+### [Simulation](#simulation)
+
+#### [Launch Gazebo](#launch-gazebo)
+
+Load OpenManipulator-PRO on Gazebo simulator
+
+```bash
+$ roslaunch open_manipulator_pro_gazebo open_manipulator_pro_gazebo.launch with_gripper:=true
+```
+
+
+- [Launch Gazebo e-Manual](/docs/en/platform/openmanipulator_pro/ros_simulation/#launch-gazebo)
+
+#### [Controller for Gazebo](#controller-for-gazebo)
+
+Launch the open_manipulator_pro_controller for gazebo simulation.
+
+```bash
+$ roslaunch open_manipulator_pro_controller open_manipulator_pro_controller.launch use_platform:=false with_gripper:=true
+```
+- [Controller for Gazebo e-Manual](/docs/en/platform/openmanipulator_pro/ros_simulation/#controller-for-gazebo)
