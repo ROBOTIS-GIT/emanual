@@ -83,8 +83,6 @@ $ roslaunch open_manipulator_pro_control_gui open_manipulator_pro_control_gui.la
 
 **Keyboard**  
 
-Launch open_manipulator_pro_teleop_keyboard node for simple teleoperation test using the keyboard.
-
 ```bash
 $ roslaunch open_manipulator_pro_teleop open_manipulator_pro_teleop_keyboard.launch with_gripper:=true
 ```
