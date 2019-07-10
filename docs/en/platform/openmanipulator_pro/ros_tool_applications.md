@@ -78,7 +78,6 @@ $ roslaunch open_manipulator_pro_control_gui open_manipulator_pro_control_gui.la
 ```
 - [GUI Program e-Manual](/docs/en/platform/openmanipulator_pro/ros_operation/#ros-operation)  
 
-
 #### [Teleoperation](#teleoperation)
 
 **Keyboard**  
@@ -87,8 +86,8 @@ $ roslaunch open_manipulator_pro_control_gui open_manipulator_pro_control_gui.la
 $ roslaunch open_manipulator_pro_teleop open_manipulator_pro_teleop_keyboard.launch with_gripper:=true
 ```
 
-
 **PS4 & XBOX 360 Joystick**  
+You can do Teleoperation with a joystic.
 
 ```bash
 $ export ROS_NAMESPACE=open_manipulator_pro
@@ -103,7 +102,6 @@ $ roslaunch open_manipulator_pro_teleop open_manipulator_pro_teleop_joystick.lau
 ```bash 
 $ roslaunch open_manipulator_pro_controller open_manipulator_pro_controller.launch use_moveit:=true with_gripper:=true
 ```
-
 - [MoveIt! e-Manual](/docs/en/platform/openmanipulator_pro/ros_operation/#moveit)
 
 ### [Simulation](#simulation)
@@ -115,7 +113,6 @@ Load OpenManipulator-PRO on Gazebo simulator
 ```bash
 $ roslaunch open_manipulator_pro_gazebo open_manipulator_pro_gazebo.launch with_gripper:=true
 ```
-
 
 - [Launch Gazebo e-Manual](/docs/en/platform/openmanipulator_pro/ros_simulation/#launch-gazebo)
 
