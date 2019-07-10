@@ -15888,8 +15888,18 @@ openmanipulator_pro:
         url: /platform/openmanipulator_pro/ros_setup/#install-ubuntu-on-pc
       - title: "Install ROS on PC"
         url: /platform/openmanipulator_pro/ros_setup/#install-ros-on-pc
+        children:
+          - title: "ROS Kinetic Kame"
+            url: /platform/openmanipulator_pro/ros_setup/#ros-kinetic-kame
+          - title: "ROS Melodic Morenia"
+            url: /platform/openmanipulator_pro/ros_setup/#ros-melodic-morenia
       - title: "Install ROS Packages"
         url: /platform/openmanipulator_pro/ros_setup/#install-ros-package
+        children:
+          - title: "ROS Kinetic Kame Package"
+            url: /platform/openmanipulator_pro/ros_setup/#ros-kinetic-kame-package
+          - title: "ROS Melodic Morenia Package"
+            url: /platform/openmanipulator_pro/ros_setup/#ros-melodic-morenia-package
   - title: "[ROS] Controller Package"
     url: /platform/openmanipulator_pro/ros_controller_package/#ros-controller-package
     children:
@@ -15932,16 +15942,23 @@ openmanipulator_pro:
           - title: "Parts List"
             url: /platform/openmanipulator_pro/ros_tool_applications/#parts-list
           - title: "Assembly Manual"
-            url: /platform/openmanipulator_pro/ros_tool_applications/#asssembly-manual
+            url: /platform/openmanipulator_pro/ros_tool_applications/#assembly-manual
           - title: "Operation"
             url: /platform/openmanipulator_pro/ros_tool_applications/#operation
             children:
-              - title: "Something"
-                url: /platform/openmanipulator_pro/ros_tool_applications/something
               - title: "GUI Program" 
                 url: /platform/openmanipulator_pro/ros_tool_applications/#gui-program
               - title: "Teleoperation"
                 url: /platform/openmanipulator_pro/ros_tool_applications/#teleoperation
+              - title: "Moveit!"
+                url: /platform/openmanipulator_pro/ros_tool_applications/#moveit
+          - title: "Simulation"
+            url: /platform/openmanipulator_pro/ros_tool_applications/#simulation
+            children:
+              - title: "Launch Gazebo"
+                url: /platform/openmanipulator_pro/ros_tool_applications/#launch-gazebo
+              - title: "Controller for Gazebo"
+                url: /platform/openmanipulator_pro/ros_tool_applications/#controller-for-gazebo 
 #Manipulator-H
 manipulator_h:
   - title: "Introduction"

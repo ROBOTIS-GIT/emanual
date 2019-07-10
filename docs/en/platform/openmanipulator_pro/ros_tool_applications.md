@@ -40,7 +40,7 @@ sidebar:
   
     ![](/assets/images/platform/openmanipulator_pro/open_manipulator_gripper_assembly_03.png)
     
-    **NOTE** : There are 2 more holes on the other side for screws.
+    **NOTE** : There are two more holes on the other side for screws.
     {: .notice--info}
 
 3. Connect OpenMANIPULATOR-PRO and RH-P12-RN with CABLE_4P_180MM Cable.
@@ -52,7 +52,8 @@ sidebar:
 
 {% capture notice_01 %}
 **NOTE** :  
-- This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.  
+- This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+- This instruction has been tested on `Ubuntu 18.04` and `ROS Melodic Morenia`.  
 - This instruction is supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
@@ -105,6 +106,13 @@ $ roslaunch open_manipulator_pro_controller open_manipulator_pro_controller.laun
 - [MoveIt! e-Manual](/docs/en/platform/openmanipulator_pro/ros_operation/#moveit)
 
 ### [Simulation](#simulation)
+
+{% capture notice_02 %}
+**NOTE** :  
+- This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`, also `Ubuntu 18.04` and `ROS Melodic Morenia`.  
+- This instruction is supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
+{% endcapture %}
+<div class="notice--info">{{ notice_02 | markdownify }}</div>
 
 #### [Launch Gazebo](#launch-gazebo)
 

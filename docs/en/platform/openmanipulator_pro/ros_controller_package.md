@@ -18,8 +18,13 @@ sidebar:
 The OpenMANIPULATOR-PRO controller provides basic manipulation of OpenMANIPULATOR-PRO. You can control DYNAMIXEL's of OpenMANIPULATOR-PRO and check states of OpenMANIPULATOR-PRO through [messages](/docs/en/platform/openmanipulator_pro/ros_controller_package/#message-list) of the controller.  
  
 
-**NOTE**: This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-{: .notice--info}
+{% capture notice_01 %}
+**NOTE** :  
+- This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+- This instruction has been tested on `Ubuntu 18.04` and `ROS Melodic Morenia`.  
+- This instruction is supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
+{% endcapture %}
+<div class="notice--info">{{ notice_01 | markdownify }}</div>
 
 ## [Launch Controller](#launch-controller)
 
@@ -144,7 +149,8 @@ if DYNAMIXEL aren't recoginized, please check firmware with ROBOTIS software ([R
 
 {% capture notice_01 %}
 **NOTE**:  
-- The below instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.  
+- This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+- This instruction has been tested on `Ubuntu 18.04` and `ROS Melodic Morenia`.
 - This instruction is supposed to be run on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.  
 - Make sure to run the [OpenMANIPULATOR-PRO controller](/docs/en/platform/openmanipulator_pro/ros_controller_package/#launch-controller) instructions before running the instructions below.  
 {% endcapture %}
@@ -539,6 +545,7 @@ Active Joint
 {% capture notice_01 %}
 **NOTE**:  
 - This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+- This instruction has been tested on `Ubuntu 18.04` and `ROS Melodic Morenia`.  
 - This instruction is supposed to be run on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
@@ -567,7 +574,8 @@ The user can change each joint by GUI, if the user launch only RViz by executing
 
 {% capture notice_01 %}
 **NOTE**:  
-- This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.  
+- This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+- This instruction has been tested on `Ubuntu 18.04` and `ROS Melodic Morenia`.   
 - This instruction is supposed to be run on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.  
 - Make sure to run the [OpenMANIPULATOR-PRO controller](/docs/en/platform/openmanipulator_pro/ros_controller_package/#launch-controller) instructions before running the instructions below.  
 {% endcapture %}
