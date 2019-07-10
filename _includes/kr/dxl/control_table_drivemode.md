@@ -20,10 +20,21 @@
 {: .notice}
 {% else %}{% endif %}
 
-**참고** : 회전방향의 역방향 모드를 설정하면, 장치의 회전 방향이 변경됩니다.  
-따라서 {% if page.product_group=='dxl_mx2' or page.product_group=='dxl_x540' %}Position, Velocity, Current, PWM{% else %}Position, Speed, Load{% endif %}의 방향이 모두 변경됩니다.  
+**참고** : Normal/Reverse Mode에서 방향 모드(Normal('0')/Reverse('1'))를 설정하면, 장치의 회전 방향이 변경됩니다.  
+따라서 다이나믹셀의 {% if page.product_group=='dxl_mx2' or page.product_group=='dxl_x540' %}Position, Velocity, Current, PWM{% elsif page.ref=='mx-106' %} Position {% else %} Position, Speed, Load{% endif %}의 방향이 변경됩니다.  
 대칭구조의 관절이나 바퀴 구동 시스템을 구성할 때 편리하게 사용할 수 있습니다.
 {: .notice}
+
+{% if page.ref=='mx-106' %}
+**참고** : MX-106에서는 Present Position의 방향만 변경됩니다. Present Speed와 Present Load 의 방향은 그대로 유지됩니다. 
+{: .notice}
+
+{% capture drivemode %}
+**주의** : MX-106의 바퀴모드에서는 Normal/Reverse Mode를 변경할수없습니다. 따라서, MX-106에서 Normal/Reverse Mode는 관절모드와 다중회전 모드에서만 사용가능합니다. [CW/CCW Angle Limit](#cwccw-angle-limit6-8)을 참고해주세요.
+{% endcapture %}
+<div class="notice--warning">{{ drivemode | markdownify }}</div>
+{% else %}{% endif %}
+
 
 {% if page.product_group=='dxl_x540' or page.product_group=='dxl_ex' or page.ref=='mx-106-2' or page.ref=='mx-106' %}
 #### 듀얼 모드
