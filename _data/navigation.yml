@@ -15959,6 +15959,7 @@ openmanipulator_pro:
                 url: /platform/openmanipulator_pro/ros_tool_applications/#launch-gazebo
               - title: "Controller for Gazebo"
                 url: /platform/openmanipulator_pro/ros_tool_applications/#controller-for-gazebo 
+                
 #Manipulator-H
 manipulator_h:
   - title: "Introduction"
