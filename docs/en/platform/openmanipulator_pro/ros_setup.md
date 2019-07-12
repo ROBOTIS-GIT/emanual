@@ -18,13 +18,13 @@ sidebar:
 {% capture notice_01 %}
 **NOTE** : 
 - This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-- This instruction has been tested on `Ubuntu 18.04` and `ROS Melodic Morenia`.  .
+- This instruction has been tested on `Ubuntu 18.04` and `ROS Melodic Morenia`.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-## [Install Ubuntu on PC](#install-ubuntu-on-pc)
+## [Install Ubuntu on a PC](#install-ubuntu-on-pc)
 
-Download and install `Ubuntu 16.04` or `Ubuntu 18.04` on your PC.
+Download and install `Ubuntu 16.04` or `Ubuntu 18.04` on your a PC.
 
 - [Download link](https://www.ubuntu.com/download/alternative-downloads)
 
@@ -37,6 +37,9 @@ If you need more help with installing Ubuntu, check out the step-by-step guide f
 ![](/assets/images/platform/openmanipulator_pro/logo_ros.png)
 
 The following script will allow you to simplify the ROS installation procedure. Run the following commands in a terminal window. The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. The shortcut key to open a terminal is `Ctrl`+`Alt`+`t`. After installing ROS, please reboot PC.
+
+**WARNING** : Does not install two ROS package on a PC.
+{: .notice--warning}
 
 ### [ROS Kinetic Kame](#ros-kinetic-kame)
 
@@ -69,15 +72,15 @@ If you prefer manual installation, please follow the link below.
 {: .notice--info}
 
 
-
-
-
 ## [Install ROS Package](#install-ros-package)
 
 Install dependent packages for OpenMANIPULATOR-PRO. Run the following commands in a terminal window.
 
 **NOTE**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`+`Alt`+`t`.
-{: .notice--info}
+{: .notice--info} 
+
+**WARNING** : Does not install two ROS package on a PC.
+{: .notice--warning}
 
 ### [ROS Kinetic Kame Package](#ros-kinetic-kame-package)
 

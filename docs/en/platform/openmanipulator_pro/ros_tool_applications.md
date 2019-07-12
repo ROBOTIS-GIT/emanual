@@ -22,7 +22,7 @@ sidebar:
 |                     | Part Name           | Quantity |
 |:--------------------|:--------------------|:--------:|
 | **Necessary Parts** | OpenMANIPULATOR_PRO |    1     |
-| .                   | RH-P12-RN (Gripper) |    1     |
+|                     | RH-P12-RN (Gripper) |    1     |
 | **Chassis Parts**   | FRP42_A110K         |    1     |
 | **Cables**          | CABLE_4P_180MM      |    1     |
 | **Miscellaneous**   | WB_M3X08_NYLOK_K    |    12    |
@@ -55,6 +55,7 @@ sidebar:
 - This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - This instruction has been tested on `Ubuntu 18.04` and `ROS Melodic Morenia`.  
 - This instruction is supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
+- Make sure to run the [OpenMANIPULATOR-PRO controller](/docs/en/platform/openmanipulator_pro/ros_controller_package/#launch-controller) instructions before running the instruction below
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -69,6 +70,7 @@ After running **roscore**, open another Terminal then write the following comman
 ```bash
 $ roslaunch open_manipulator_pro_controller open_manipulator_pro_controller.launch with_gripper:=true
 ```
+
 
 #### [GUI Program](#gui-program)
 
@@ -109,7 +111,8 @@ $ roslaunch open_manipulator_pro_controller open_manipulator_pro_controller.laun
 
 {% capture notice_02 %}
 **NOTE** :  
-- This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`, also `Ubuntu 18.04` and `ROS Melodic Morenia`.  
+- This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+- This instruction has been tested on `Ubuntu 18.04` and `ROS Melodic Morenia`.
 - This instruction is supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
 {% endcapture %}
 <div class="notice--info">{{ notice_02 | markdownify }}</div>
