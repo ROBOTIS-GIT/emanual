@@ -16,21 +16,20 @@
 |     Bit 0(0x01)     |        Normal/Reverse Mode          | **[0]** Normal Mode: 반시계방향(CCW)이 양수값, 시계방향(CW)이 음수값<br />**[1]** Reverse Mode: 시계방향(CW)이 양수값, 반시계방향(CCW)이 음수값                                                                           |
 
 {% if page.product_group=='dxl_mx2' or page.product_group=='dxl_x540' or page.product_group=='dxl_x430' or page.product_group=='dxl_xl430' %}
-**참고** : Time-based Profile은 펌웨어 V42 이상에서 지원합니다.
+**참고** : Time-based Profile은 펌웨어 V42부터 지원합니다.
 {: .notice}
 {% else %}{% endif %}
 
-**참고** : Normal/Reverse Mode에서 방향 모드(Normal('0')/Reverse('1'))를 설정하면, 장치의 회전 방향이 변경됩니다.  
-따라서 다이나믹셀의 {% if page.product_group=='dxl_mx2' or page.product_group=='dxl_x540' %}Position, Velocity, Current, PWM{% elsif page.ref=='mx-106' %} Position {% else %} Position, Speed, Load{% endif %}의 방향이 변경됩니다.  
+**참고** : Drive Mode(10)의 0번 비트(Normal/Reverse Mode)를 설정하면, 다이나믹셀의 기본동작 방향이 반전됩니다.  
+따라서 다이나믹셀의 {% if page.product_group=='dxl_mx2' or page.product_group=='dxl_x540' %}**Position**, **Velocity**, **Current**, **PWM**값{% else %}**Goal Position**, **Present Position**{% endif %}의 방향이 반전됩니다.  
 대칭구조의 관절이나 바퀴 구동 시스템을 구성할 때 편리하게 사용할 수 있습니다.
 {: .notice}
 
-{% if page.ref=='mx-106' %}
-**참고** : MX-106에서는 Present Position의 방향만 변경됩니다. Present Speed와 Present Load 의 방향은 그대로 유지됩니다. 
-{: .notice}
-
+{% if page.ref=='mx-106' or page.product_group=='dxl_ex' %}
 {% capture drivemode %}
-**주의** : MX-106의 바퀴모드에서는 Normal/Reverse Mode를 변경할수없습니다. 따라서, MX-106에서 Normal/Reverse Mode는 관절모드와 다중회전 모드에서만 사용가능합니다. [CW/CCW Angle Limit](#cwccw-angle-limit6-8)을 참고해주세요.
+**주의** : MX-106과 EX-106+는 바퀴 모드로 설정되면 Normal/Reverse Mode를 지원하지 않습니다.  
+Normal/Reverse Mode는 관절모드와 다중회전 모드에서만 사용가능합니다.  
+동작 모드 설정은 [CW/CCW Angle Limit](#cwccw-angle-limit6-8)을 참고해주세요.
 {% endcapture %}
 <div class="notice--warning">{{ drivemode | markdownify }}</div>
 {% else %}{% endif %}
@@ -44,14 +43,14 @@
 슬레이브 다이나믹셀은 동기화 케이블을 통해 전달된 마스터 다이나믹셀의 PWM 신호에 의해서만 제어됩니다.  
 따라서 슬레이브 장치의 {% if page.product_group=='dxl_ex' or page.ref=='mx-106' %}Goal Position, Moving Speed는{% else %}Goal Position, Goal Velocity, Goal Current, Goal PWM은{% endif %} 무시됩니다.
 
-슬레이브 모드로 설정된 다이나믹셀의 회전 방향은 Drive Mode(10)의 Normal/Reverse 설정이 아닌 **동기화 케이블의 꼬임** 여부에 의해 결정됩니다.  
+슬레이브 모드로 설정된 다이나믹셀의 회전 방향은 Drive Mode(10)의 Normal/Reverse Mode 설정이 아닌 **동기화 케이블의 종류**에 의해 결정됩니다.  
 기본형 동기화 케이블을 사용하면 마스터와 같은 방향으로 회전하고, 꼬임형 동기화 케이블을 사용하면 마스터와 반대 방향으로 회전합니다.
 {: .notice}
 
 {% if page.product_group=='dxl_x540' %}
-![](/assets/images/dxl/x/x-series_dual_joint.png)
+![](/assets/images/dxl/x/x-series_dual_joint_kr.png)
 {% else %}
-![](/assets/images/dxl/ex/ex-106_dual.png)
+![](/assets/images/dxl/ex/ex-106_dual_kr.png)
 {% endif %}
 
 |   동기화 케이블     |                                                          설명                                                        |
@@ -64,9 +63,9 @@
 **주의** : 마스터와 슬레이브가 프레임으로 연결되어있지 않으면 부하에 따라 조금씩 다르게 구동될 수 있습니다. 아래와 같이 프레임으로 연결하신 후 듀얼모드를 사용해주세요.
 
 {% if page.product_group=='dxl_x540' %}
-![](/assets/images/dxl/x/x-series_dual_joint_frame.png)
+![](/assets/images/dxl/x/x-series_dual_joint_frame_kr.png)
 {% else %}
-![](/assets/images/dxl/ex/ex-106+_fr08-h110_fr08-d101.png)
+![](/assets/images/dxl/ex/ex-106+_fr08-h110_fr08-d101_kr.png)
 {% endif %}
 {% endcapture %}
 <div class="notice--warning">{{ dual_frame | markdownify }}</div>
