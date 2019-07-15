@@ -21,7 +21,7 @@ sidebar:
 
 |                     | Part Name           | Quantity |
 |:--------------------|:--------------------|:--------:|
-| **Necessary Parts** | OpenMANIPULATOR_PRO |    1     |
+| **Necessary Parts** | OpenMANIPULATOR-PRO |    1     |
 |                     | RH-P12-RN (Gripper) |    1     |
 | **Chassis Parts**   | FRP42_A110K         |    1     |
 | **Cables**          | CABLE_4P_180MM      |    1     |
@@ -79,6 +79,16 @@ Launch `open_manipulator_pro_control_gui node`. This program shows the status of
 ```bash
 $ roslaunch open_manipulator_pro_control_gui open_manipulator_pro_control_gui.launch with_gripper:=true
 ```
+
+To controll OpenMANIPULATOR-PRO with RH-P12-RN (Gripper), click the `Timer Start` button.  
+
+![](/assets/images/platform/openmanipulator_pro/open_manipulator_gripper_operation_01.png)
+
+To activate RH-P12-RN (Gripper), Click the 'Gripper open' button.
+
+![](/assets/images/platform/openmanipulator_pro/open_manipulator_gripper_operation_02.png)
+
+
 - [GUI Program e-Manual](/docs/en/platform/openmanipulator_pro/ros_operation/#ros-operation)  
 
 #### [Teleoperation](#teleoperation)
