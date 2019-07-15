@@ -84,7 +84,9 @@ To controll OpenMANIPULATOR-PRO with RH-P12-RN (Gripper), click the `Timer Start
 
 ![](/assets/images/platform/openmanipulator_pro/open_manipulator_gripper_operation_01.png)
 
-To activate RH-P12-RN (Gripper), Click the 'Gripper open' button.
+
+To activate RH-P12-RN (Gripper), Click the `Gripper open` button.
+
 
 ![](/assets/images/platform/openmanipulator_pro/open_manipulator_gripper_operation_02.png)
 
