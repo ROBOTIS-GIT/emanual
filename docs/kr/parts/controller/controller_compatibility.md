@@ -31,18 +31,18 @@ sidebar:
 
 |       모델       | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[485 EXP]) | [OpenCM7.0] | [OpenCR] |
 |:----------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:----------------------------:|:-----------:|:--------:|
-|    AX Series     |   O    |    X    |    x     |    X     |    X     |    O     |    O     |    X     |    O     |    O     |             X(O)             |      X      |    O     |
-|    DX Series     |   X    |    X    |    x     |    X     |    X     |    X     |    X     |    X     |    O     |    O     |             X(O)             |      X      |    O     |
-|    RX Series     |   X    |    X    |    x     |    X     |    X     |    X     |    X     |    X     |    O     |    O     |             X(O)             |      X      |    O     |
-|    EX Series     |   X    |    X    |    x     |    X     |    X     |    X     |    X     |    X     |    O     |    O     |             X(O)             |      X      |    O     |
-|  MX Series(TTL)  |   O    |    X    |    x     |    X     |    X     |    O     |    O     |    X     |    O     |    O     |             X(O)             |      X      |    O     |
-| MX Series(RS485) |   X    |    X    |    x     |    X     |    X     |    X     |    X     |    X     |    O     |    O     |             X(O)             |      X      |    O     |
-|      XL-320      |   X    |    X    |    x     |    X     |    X     |    X     |    X     |    X     |    X     |    O     |             O(X)             |      X      |    X     |
-|    2XL Series    |   X    |    X    |    x     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |             X(O)             |      X      |    O     |
-|    XL Series     |   X    |    X    |    x     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |             X(O)             |      X      |    O     |
-|    XM Series     |   X    |    X    |    x     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |             X(O)             |      X      |    O     |
-|    XH Series     |   X    |    X    |    x     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |             X(O)             |      X      |    O     |
-|    PRO Series    |   X    |    X    |    x     |    X     |    X     |    X     |    X     |    X     |    O     |    X     |             X(O)             |      X      |    O     |
+|    AX Series     |   O    |    X    |    X     |    X     |    X     |    O     |    O     |    X     |    O     |    O     |             X(O)             |      X      |    O     |
+|    DX Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    O     |             X(O)             |      X      |    O     |
+|    RX Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    O     |             X(O)             |      X      |    O     |
+|    EX Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    O     |             X(O)             |      X      |    O     |
+|  MX Series(TTL)  |   O    |    X    |    X     |    X     |    X     |    O     |    O     |    X     |    O     |    O     |             X(O)             |      X      |    O     |
+| MX Series(RS485) |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    O     |             X(O)             |      X      |    O     |
+|      XL-320      |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    O     |             O(X)             |      X      |    X     |
+|    2XL Series    |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |             X(O)             |      X      |    O     |
+|    XL Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |             X(O)             |      X      |    O     |
+|    XM Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |             X(O)             |      X      |    O     |
+|    XH Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |             X(O)             |      X      |    O     |
+|    PRO Series    |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    X     |             X(O)             |      X      |    O     |
 
 
 ## 부품
@@ -54,7 +54,7 @@ sidebar:
 |          Micro USB(B)          |   X    |    X    |    X     |    O     |    X     |    X     |    X     |    O     |    X     |    O     |              O               |      O      |    O     |
 |             LN-101             |   X    |    X    |    O     |    O     |    O     |    X     |    X     |    O     |    O     |    O     |              O               |      O      |    O     |
 |            IRSS-10             |   X    |    X    |    O     |    O     |    O     |    O     |    O     |    O     |    O     |    O     |              O               |      O      |    O     |
-|             TS-10              |   X    |    X    |    O     |    O     |    O     |    O     |    O     |    O     |    O     |    O     |              O               |      O      |    O     |
+|       TS-10 (터치 센서)        |   X    |    X    |    O     |    O     |    O     |    O     |    O     |    O     |    O     |    O     |              O               |      O      |    O     |
 |    DMS-80 (거리 측정 센서)     |   X    |    X    |    X     |    X     |    X     |    O     |    O     |    O     |    O     |    O     |              O               |      O      |    O     |
 | IR 어레이 (적외선 어레이 센서) |   O    |    X    |    X     |    X     |    X     |    O     |    O     |    X     |    O     |    X     |              O               |      X      |    O     |
 |      GS-12 (자이로 센서)       |   X    |    X    |    X     |    X     |    X     |    O     |    O     |    X     |    O     |    O     |              O               |      O      |    O     |
@@ -95,34 +95,34 @@ sidebar:
 |:---------------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:----------------------------:|:-----------:|:--------:|
 | 로보플러스 태스크 1.0 |   O    |    X    |    O     |    O     |    O     |    O     |    O     |    X     |    O     |    X     |             O(X)             |      X      |    X     |
 | 로보플러스 매니저 1.0 |   O    |    X    |    O     |    O     |    O     |    O     |    O     |    X     |    O     |    X     |             O(X)             |      X      |    X     |
-| 로보플러스 모션  1.0  |   O    |    X    |    x     |    O     |    O     |    O     |    O     |    X     |    O     |    X     |             O(X)             |      X      |    X     |
+| 로보플러스 모션  1.0  |   O    |    X    |    X     |    O     |    O     |    O     |    O     |    X     |    O     |    X     |             O(X)             |      X      |    X     |
 
 ### 로보플러스 2.0
 
 |         모델          | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[485 EXP]) | [OpenCM7.0] | [OpenCR] |
 |:---------------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:----------------------------:|:-----------:|:--------:|
-| 로보플러스 태스크 2.0 |   O    |    X    |    x     |    O     |    O     |    O     |    O     |    X     |    O     |    X     |             O(X)             |      X      |    X     |
-| 로보플러스 매니저 2.0 |   O    |    X    |    x     |    O     |    O     |    O     |    O     |    X     |    O     |    X     |             O(X)             |      X      |    X     |
-|  로보플러스 모션 2.0  |   O    |    X    |    x     |    O     |    O     |    O     |    O     |    X     |    O     |    X     |             O(X)             |      X      |    X     |
+| 로보플러스 태스크 2.0 |   O    |    X    |    X     |    O     |    O     |    O     |    O     |    X     |    O     |    X     |             O(X)             |      X      |    X     |
+| 로보플러스 매니저 2.0 |   O    |    X    |    X     |    O     |    O     |    O     |    O     |    X     |    O     |    X     |             O(X)             |      X      |    X     |
+|  로보플러스 모션 2.0  |   O    |    X    |    X     |    O     |    O     |    O     |    O     |    X     |    O     |    X     |             O(X)             |      X      |    X     |
 
 ### 기타 소프트웨어
 
 |         모델          | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[485 EXP]) | [OpenCM7.0] | [OpenCR] |
 |:---------------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:----------------------------:|:-----------:|:--------:|
-| 로보플러스 태스크 3.0     |   O    |    O    |    O     |    O     |    O     |    O     |    O     |    X     |    O     |    X     |             O(X)             |      O      |    X     |
+| 로보플러스 태스크 3.0 |   O    |    O    |    O     |    O     |    O     |    O     |    O     |    X     |    O     |    X     |             O(X)             |      O      |    X     |
 |      OpenCM IDE       |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              O               |      X      |    X     |
-|     아두이노 IDE        |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              O               |      O      |    O     |
-|      스크래치2.0        |   X    |    X    |    X     |    O     |    X     |    X     |    X     |    X     |    X     |    X     |              X               |      O      |    X     |
+|     아두이노 IDE      |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              O               |      O      |    O     |
+|      스크래치2.0      |   X    |    X    |    X     |    O     |    X     |    X     |    X     |    X     |    X     |    X     |              X               |      O      |    X     |
 
 
 
 
 [ln-101]: /docs/kr/parts/interface/ln-101/
-[CM-50]: /docs/en/parts/controller/cm-100/
+[CM-5]: /docs/kr/parts/controller/cm-5/
+[CM-50]: /docs/kr/parts/controller/cm-100/
 [CM-100]: /docs/kr/parts/controller/cm-100/
 [CM-150]: /docs/kr/parts/controller/cm-150/
 [CM-200]: /docs/kr/parts/controller/cm-200/
-[CM-5]: /docs/kr/parts/controller/cm-5/
 [CM-510]: /docs/kr/parts/controller/cm-510/
 [CM-530]: /docs/kr/parts/controller/cm-530/
 [CM-550]: /docs/kr/parts/controller/cm-550/
