@@ -18,9 +18,6 @@ sidebar:
 The purpose of Dynamixel-Workbench is **to use more simple and easy to use any Dynamixels**. This library is based on [DynamixelSDK] and supports ROS, Linux, macOS and Arduino. However, this library is not magic stick to operate Dynamixels with any setup. It has some restriction compared with DynamixelSDK but we are continue to upgrade this library for almost everyone loves Dynamixels.
 
 If have any questions or issues, please get a ticket in [github issue](https://github.com/ROBOTIS-GIT/dynamixel-workbench/issues).
-
-**WARNING** : Support for Single Manager and Single Manager GUI will end on Jun 21st, 2019. Please use [DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/). 
-{: .notice--warning}
   
 
 # [Supported Dynamixels](#supported-dynamixels)
@@ -35,16 +32,16 @@ If have any questions or issues, please get a ticket in [github issue](https://g
 | **XL**           | [XL320]                        | [XL430-W250]                   |                                |                                |                 |
 | **XM**           | [XM430-W210]                   | [XM430-W350]                   | [XM540-W150]                   | [XM540-W270]                   |                 |
 | **XH**           | [XH430-W210]<br/> [XH430-W350] | [XH430-V210]<br/> [XH430-V350] | [XH540-W150]<br/> [XH540-W270] | [XH540-V150]<br/> [XH540-V270] |                 |
-| **PRO H**        | [H42-20-S300-R]                | [H54-100-S500-R]               | [H54-200-S500-R]               |                                |                 |
-| **PRO M**        | [M42-10-S260-R]                | [M54-40-S250-R]                | [M54-60-S250-R]                |                                |                 |
 | **PRO L**        | [L42-10-S300-R]                | [L54-30-S500-R]                | [L54-30-S400-R]                | [L54-50-S500-R]                | [L54-50-S290-R] |
-| **PRO H(A)**     | [H42-20-S300-R(A)]             | [H54-100-S500-R(A)]            | [H54-200-S500-R(A)]            |                                |                 |
+| **PRO M**        | [M42-10-S260-R]                | [M54-40-S250-R]                | [M54-60-S250-R]                |                                |                 |
+| **PRO H**        | [H42-20-S300-R]                | [H54-100-S500-R]               | [H54-200-S500-R]               |                                |                 |
 | **PRO M(A)**     | [M42-10-S260-R(A)]             | [M54-40-S250-R(A)]             | [M54-60-S250-R(A)]             |                                |                 |
-| **PRO+ H**       | [H42P-020-S300-R]              | [H54P-100-S500-R]              | [H54P-100-S500-R]              |                                |                 |
+| **PRO H(A)**     | [H42-20-S300-R(A)]             | [H54-100-S500-R(A)]            | [H54-200-S500-R(A)]            |                                |                 |
 | **PRO+ M**       | [M54P-060-S250-R]              | [M54P-040-S250-R]              | [M42P-010-S260-R]              |                                |                 |
+| **PRO+ H**       | [H42P-020-S300-R]              | [H54P-100-S500-R]              | [H54P-100-S500-R]              |                                |                 |
 
 
-The **Dynamixel Workbench** metapackage contains four packages: **Single Manager**, **Controllers**, **Operators**, and **Toolbox**. The ***Single Manager*** package provides a program that can manage the entire Dynamixel series, including Dynamixel, Dynamixel X, and Dynamixel PRO, using the ***Toolbox*** library developed on the basis of [Dynamixel SDK](http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/overview/). These packages not only show the status of Dynamixel, but also allow you to change Control Table address values via command line or GUI interface. The ***Controllers*** package introduces how to employ the Dynamixel on different operating mode with Dynamixel Workbench library(***Toolbox***).  In addition, the ***Operators*** demonstrates some straightforward examples by operating ***Controllers***.
+The **Dynamixel Workbench** metapackage contains 3 packages:  **Controllers**, **Operators**, and **Toolbox**. The **Controllers** package introduces how to employ the Dynamixel on different operating mode with Dynamixel Workbench library(**Toolbox**).  In addition, the **Operators** demonstrates some straightforward examples by operating **Controllers**.
 
 [ROS WIKI](http://wiki.ros.org/dynamixel_workbench)
 
@@ -166,7 +163,6 @@ Then you can find `/dev/ttyUSB0` (The number of port may be different depending 
 ### Connect power(12v) and TTL or RS485
 
 ![](/assets/images/parts/controller/opencr10/opencr_pinout.png)
-
 **TIP**:
 If you want to use OpenCR as U2D2, please upload `usb_to_dxl` firmware (`File` -> `Examples` -> `OpenCR` -> `10.Etc` -> `usb_to_dxl`)
 Then you can use `/dev/ttyACM0` port (The number of port may be different depending on setup).
@@ -185,8 +181,6 @@ Then you can use `/dev/ttyACM0` port (The number of port may be different depend
 
 - [ROS](/docs/en/software/dynamixel/dynamixel_workbench/#ros-tutorials)
     - [Find Dynamixels](/docs/en/software/dynamixel/dynamixel_workbench/#find-dynamixels)
-    - [Single Manager](/docs/en/software/dynamixel/dynamixel_workbench/#single-manager)
-    - [Single Manager GUI](/docs/en/software/dynamixel/dynamixel_workbench/#single-manager-gui)
     - [Controllers](/docs/en/software/dynamixel/dynamixel_workbench/#controllers)
     - [Operators](/docs/en/software/dynamixel/dynamixel_workbench/#operators)
 
@@ -242,166 +236,13 @@ Then you can see below texts.
 **TIP**: If you can't find any Dynamixels, please check usb port, power. Even if it can't find anything, please check firmware to use ROBOTIS software ([R+ Manager 2.0](http://emanual.robotis.com/docs/en/software/rplus2/manager/) or [R+ Manager 1.0](http://emanual.robotis.com/docs/en/software/rplus2/manager/))
 {: .notice--success}
 
-### [Single Manager](#single-manager)
-
-**WARNING** : This package is intended for `SINGLE` Dynamixel. Please connect only `One(1)` Dynamixel to your device.  
-If you connect multiple Dynamixels, manager would detect the **lowest ID** among connected Dynamixels.
-{: .notice--warning}
-
-**WARNING** : Support for Single Manager and Single Manager GUI will end on Jun 21st, 2019. Please use [DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/). 
-{: .notice--warning}
-
-This package is to check Dynamixel status and access Dynamixel's control table.
-
-Let's take a look at the `single_manager.launch` file below.
-
-```
-<launch>
-  <arg name="use_ping"         default="false"/>
-  <arg name="id"               default="1"/>
-
-  <arg name="device_name"      default="/dev/ttyUSB0"/>
-  <arg name="baud_rate"        default="57600"/>
-
-  <arg name="scan_range"       default="10"/>
-
-  <param name="ping"             value="$(arg use_ping)"  type="bool"/>
-  <param name="ping_id"          value="$(arg id)"/>
-
-  <param name="device_name"      value="$(arg device_name)"/>
-  <param name="baud_rate"        value="$(arg baud_rate)"/>
-
-  <param name="scan_range"        value="$(arg scan_range)"/>
-
-  <node name="single_dynamixel_monitor" pkg="dynamixel_workbench_single_manager"
-        type="single_dynamixel_monitor" required="true" **output**="screen"/>
-
-  <node name="single_dynamixel_controller" pkg="dynamixel_workbench_single_manager"
-        type="single_dynamixel_controller" required="true" **output**="screen"/>
-</launch>
-```
-
-Launch single_manager
-
-```
-$ cd ~/catkin_ws && catkin_make
-$ roslaunch dynamixel_workbench_single_manager single_manager.launch
-```
-
-If the manager finds a Dynamixel, you can see below text.
-
-```
-Succeed to init(57600)
-[ID] 1, [Model Name] XM430-W350, [BAUD RATE] 57600 [VERSION] 2.0
-dynamixel_workbench_single_manager : Init Success!
-```
-
-If you press the **ENTER KEY**, you can see below.
-
-```
-----------------------------------------------------------------------
-Single Manager supports GUI (dynamixel_workbench_single_manager_gui)  
-----------------------------------------------------------------------
-Command list :
-[help|h|?]...............: help
-[info]...................: information of a Dynamixel
-[table]..................: check a control table of a Dynamixel
-[torque_on]..............: torque on Dynamixel
-[torque_off].............: torque off Dynamixel
-[joint] [data]...........: set data to goal position address
-[wheel] [data]...........: set data to goal position address
-[id] [new id]............: change id
-[baud] [new baud]........: change baud rate
-[version] [new version]..: change protocol version
-[reboot].................: reboot a Dynamixel(only protocol version 2.0)
-[reset]..................: command for all data back to factory settings values
-[address name] [data]....: change address value of a Dynamixel
-[exit]...................: shutdown
-----------------------------------------------------------------------
-Press Enter Key To Command A Dynamixel
-[CMD]
-```
-
-**WARNING**: In order to send the Command, please press `ENTER` key.
-{: .notice--warning}
-
-**NOTE**: If user wants specific information about Dynamixel control table, please follow the link [e-Manual](http://emanual.robotis.com/#control-table).
-{: .notice--info}
-
-**Parameters List** :
-- `use_ping`    
-If you set this True, manager would be ping `id` parameters  
-
-- `id`  
-This parameters is valid when `use_ping` is True  
-
-- `device_name`  
-Device name you connected
-
-- `baud_rate`  
-Baud rate of Dynamixel  
-
-- `scan_range`  
-This parameters is valid when `use_ping` is False
-
-**Topic List** :
-- `/dynamixel/(model_name)`  
-Provides states of connected Dynamixel
-
-**Service List** :  
-- `/dynamixel/info`([dynamixel_workbench_msgs/DynamixelInfo]{: .popup})  
-Provides information about connected Dynamixel  
-
-- `/dynamixel/command`([dynamixel_workbench_msgs/DynamixelCommand]{: .popup})  
-Receives command to control Dynamixel  
-
-### [Single Manager GUI](#single-manager-gui)
-
-**WARNING**: Before you run this package, please launch [single_manager](/docs/en/software/dynamixel/dynamixel_workbench/#single-manager) first.
-{: .notice--warning}
-
-**WARNING** : Support for Single Manager and Single Manager GUI will end on Jun 21st, 2019. Please use [DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/). 
-{: .notice--warning}
-
-This package is to check Dynamixel status and access Dynamixel's Control Table addresses via **GUI**.
-
-Run single_manager_gui
-
-```
-$ rosrun dynamixel_workbench_single_manager_gui dynamixel_workbench_single_manager_gui
-```
-
-Then the GUI is openned
-
-![](/assets/images/sw/dynamixel/dynamixel_workbench/single_manager_gui.jpg)
-
-Let's operate the Dynamixel using GUI. We can easily change the ID, Operating Mode and Baudrate from separate widget and access all address using combobox widget.   
-
-If you want to change motor position, click the **Torque Enable** button first.  
-
-![](/assets/images/sw/dynamixel/dynamixel_workbench/gui_torque_enable.jpg)
-
-Second, select **Goal_Position** in combobox and turn dial, type value on line edit or click **Position ZERO** button.
-
-![](/assets/images/sw/dynamixel/dynamixel_workbench/gui_goal_position.jpg)
-
-**Topic List** :
-- `/dynamixel/(model_name)`  
-Provides states of connected Dynamixel
-
-**Service List** :  
-- `/dynamixel/info`([dynamixel_workbench_msgs/DynamixelInfo]{: .popup})  
-Provides information about connected Dynamixel  
-
-- `/dynamixel/command`([dynamixel_workbench_msgs/DynamixelCommand]{: .popup})  
-Receives command to control Dynamixel
 
 ### [Controllers](#controllers)
 
 This package is to control Dynamixels by ROS API. You can load your Dynamixels by simply creating yaml file.  
 
-The configuration of the yaml file is as follows. [name] is used for joint name of /joint_states topic as well as identifing Dynamixel.  
-When controller is initialized, Dynamixel information is loaded from the file and configures each [Control_Table_Item] with the [value] for each Dynamixel based on [id].
+The configuration of the yaml file is as follows. `name` is used for joint name of /joint_states topic as well as identifing Dynamixel.  
+When controller is initialized, Dynamixel information is loaded from the file and configures each `Control_Table_Item` with the `value` for each Dynamixel based on `id`.
 
 ```
 [name]:
@@ -437,11 +278,13 @@ tilt:
   Profile_Acceleration: 0
   Profile_Velocity: 0
 ```
-
-**WARNING**:
+**WARNING**: `Torque_Enable` isn't supposed to be set by users, but it's enabled by itself during initialization.  
+{: .notice--warning}
+  
+**WARNING**:  
 You can find control table of Dynamixel on [e-Manual](http://emanual.robotis.com/#control-table)  
-Control table item has to follow [Camel_Case](https://en.wikipedia.org/wiki/Camel_case) without a blank.  
-You are supposed to set at least Dynamixel ID.
+Control table item has to follow [Camel_Case](https://en.wikipedia.org/wiki/Camel_case) without a blank.    
+You are supposed to set at least Dynamixel ID.  
 {: .notice--warning}
 
 Let's take a look at the `dynamixel_controller.launch` file

@@ -64,6 +64,9 @@ sidebar:
       ```
 
 ### roscore (PPC)
+
+**CAUTION** : If `roscore` is terminated while it is running, relaunch `roscore`, `thormang3 sensors` and `thormang3 manager`.
+{: .notice--warning}
 1. Connect to the **PPC**
     - via ssh  
       1. Run below command on the terminal.  
@@ -78,11 +81,10 @@ sidebar:
 
 2. Launch [roscore]  
   Execute below command on the Terminal  
-  ```bash
-  $ roscore
-  ```
+```bash
+$ roscore
+```
 
-    - If `roscore` is terminated while it is running, relaunch `roscore`, `thormang3 sensors` and `thormang3 manager`.
 
 ### thormang3 sensors (PPC)
 1. Connect to the **PPC**  
@@ -122,8 +124,7 @@ Simple demo of the [thormang3_manipulation_module]
 
 #### Install & Build
 
-  **NOTE** : Reference : [PPC Installation]
-  {: .notice}
+> Reference : [PPC Installation]
 
 #### Usage
 
@@ -172,8 +173,7 @@ Simple demo of the [thormang3_walking_module]
 
 #### Install & Build
 
-**NOTE** : Reference : [PPC Installation]
-{: .notice}
+> Reference : [PPC Installation]
 
 #### Usage
 
@@ -236,7 +236,7 @@ Operating PC is used to control the robot from the outside.
   - [ROBOTIS-THORMANG-Common]
 
 #### OPC Network setting  
-- `Reference` [Example Setting for OPC]  
+> Reference : [Example Setting for OPC]  
 
 - IP Address : Static IP address is recommended  
   > ex )
@@ -366,8 +366,8 @@ Instructions about how to calibrate FT Sensors on THORMANG3's feet. Balance Algo
 
 #### Install & Build
 
-  **NOTE** : Reference : [OPC Installation]
-  {: .notice}
+>Reference : [OPC Installation]
+
 
 #### Run
 > Reference : [How to execute OPC's GUI program]
@@ -507,8 +507,8 @@ Structure looks like the below figure.
 
 ##### Install & Build
 
-  **NOTE** : Reference : [OPC Installation]
-  {: .notice}
+> Reference : [OPC Installation]
+  
 
 ##### Run
 > Reference : [How to execute OPC's GUI program]
@@ -561,8 +561,8 @@ A walking example that follows StepData using [footstep_planner].
 
 ##### Install & Build
 
-  **NOTE** : Reference : [OPC Installation]
-  {: .notice}
+> Reference : [OPC Installation]
+
 
 ##### Run
 - Execute [thormang3_demo] as below.
@@ -637,6 +637,54 @@ $ rosrun thormang3_offset_tuner_client thormang3_offset_tuner_client
 
 ![](/assets/images/platform/thormang3/thormang3_075.png)
 
+
+## [Tuner Client](#tuner-client)
+
+Instruction about how to run the Thormang3 gain and offset tuner program.   
+
+### [Execute in MPC](#execute-in-mpc-tuner-client)
+
+This program works with `thormang3_p_manager`. User don't have to run the server for this program.
+
+```
+# roslaunch thormang3_p_manager thormang_p_manager.launch  
+```
+
+### [Execute in OPC](#execute-in-opc-tuner-client)
+
+Execute the gain and offset tuner GUI program.
+
+```
+$ rosrun thormang3_tuner_client thormang3_tuner_client  
+```  
+![](/assets/images/platform/thormang3/thormang3_tuner_client.png)   
+
+### [How to use GUI program](#how-to-use-gui-program-tuner-client)
+
+![](/assets/images/platform/thormang3/thormang3_tuner_client_01.png)    
+
+{% capture package_warning %}  
+![](/assets/images/icon_warning.png)  
+**CAUTION** : When you click `initial pose` or change module to the others, THORMANG3 may jump.  
+This should be done with THORMANG in the air.  
+{% endcapture %}
+<div class="notice--warning">{{ package_warning | markdownify }}</div> 
+  
+
+1. Go to initial pose : If user click this button, tuning_module in robotis_controller is activated and THORMANG3 goes to initial pose.  
+2. Select kinematics group  
+3. Load present status : goal position, offset, gain
+4. Change offset or gain
+5. Save the changed value to config file
+
+- Sensors
+  - FT Force : Scaled force value in direction of Z  
+  - IMU : Robot orientation(roll, pitch) from IMU
+- Pose  
+  - How to change pose  
+    - select pose name  
+    - click `tuning pose`  
+  - pose config file : `thormang3_tuning_module/data/tune_pose.yaml`
 
 [PPC Installation]: /docs/en/platform/thormang3/getting_started/#ppc-installation
 [OPC Installation]: /docs/en/platform/thormang3/getting_started/#opc-installation

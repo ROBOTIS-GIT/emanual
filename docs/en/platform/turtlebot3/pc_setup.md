@@ -50,13 +50,19 @@ $ sudo apt-get upgrade
 $ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh && chmod 755 ./install_ros_kinetic.sh && bash ./install_ros_kinetic.sh
 ```
 
+If you prefer manual installation, please following the link below.
+
+- [Manual installation of ROS Kinetic](http://wiki.ros.org/kinetic/Installation/Ubuntu)  
+
 **NOTE**: In order to check which packages are installed, please check this link out. [install_ros_kinetic.sh](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh)
 {: .notice--info}
 
-If you prefer manual installation, please following the link below.
-
-- [Manual installation of ROS Kinetic](http://wiki.ros.org/kinetic/Installation/Ubuntu)
-
+{% capture info_01 %}
+**NOTE**:  
+ - ROBOTIS ROS packages support Melodic Morenia, however, it is recommended to use Kinetic Kame for TurtleBot3.
+ - In case of upgrading ROS to Melodic Morenia, please make sure that third party ROS packages are fully supported.
+{% endcapture %}
+<div class ="notice--info">{{info_01 | markdownify}}</div>
 
 ### [Install Dependent ROS Packages](#install-dependent-ros-packages)
 

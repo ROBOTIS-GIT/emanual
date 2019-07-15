@@ -1,6 +1,7 @@
 
 | 항목                      | 내용                                                      |
 |:--------------------------|:----------------------------------------------------------|
+| MCU                     | {{ site.data.dxl_pro_info[page.ref].mcu }}                 |
 | 모터                      | {{ site.data.dxl_pro_info[page.ref].motor }}              |
 | 통신속도                  | {{ site.data.dxl_pro_info[page.ref].baudrate }}           |
 | 동작모드                  | {{ site.data.dxl_pro_info[page.ref].opmode }}             |

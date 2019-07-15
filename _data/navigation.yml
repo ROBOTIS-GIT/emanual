@@ -50,6 +50,8 @@ main:
         url: /dxl/rx/rx-64/
     - title: "MX Series"
       titlekr: "MX 시리즈"
+      url: /dxl/mx/
+      urlkr:
       children:
       - title: "MX-12W"
         titlekr: "MX-12W"
@@ -118,45 +120,45 @@ main:
       - title: "XH540-V270"
         titlekr: "XH540-V270"
         url: /dxl/x/xh540-v270/
-    - title: "PRO Series"
-      titlekr: "PRO 시리즈"
+    - title: "*PRO Series"
+      titlekr: "*PRO 시리즈"
       url: /dxl/pro/
       children:
-      - title: "H54-200-S500-R(A)"
-        titlekr: "H54-200-S500-R(A)"
+      - title: "*H54-200-S500-R(A)"
+        titlekr: "*H54-200-S500-R(A)"
         url: /dxl/pro/h54-200-s500-ra/
-      - title: "H54-100-S500-R(A)"
-        titlekr: "H54-100-S500-R(A)"
+      - title: "*H54-100-S500-R(A)"
+        titlekr: "*H54-100-S500-R(A)"
         url: /dxl/pro/h54-100-s500-ra/
-      - title: "H42-20-S300-R(A)"
-        titlekr: "H42-20-S300-R(A)"
+      - title: "*H42-20-S300-R(A)"
+        titlekr: "*H42-20-S300-R(A)"
         url: /dxl/pro/h42-20-s300-ra/
-      - title: "M54-60-S250-R(A)"
-        titlekr: "M54-60-S250-R(A)"
+      - title: "*M54-60-S250-R(A)"
+        titlekr: "*M54-60-S250-R(A)"
         url: /dxl/pro/m54-60-s250-ra/
-      - title: "M54-40-S250-R(A)"
-        titlekr: "M54-40-S250-R(A)"
+      - title: "*M54-40-S250-R(A)"
+        titlekr: "*M54-40-S250-R(A)"
         url: /dxl/pro/m54-40-s250-ra/
-      - title: "M42-10-S260-R(A)"
-        titlekr: "M42-10-S260-R(A)"
+      - title: "*M42-10-S260-R(A)"
+        titlekr: "*M42-10-S260-R(A)"
         url: /dxl/pro/m42-10-s260-ra/
-      - title: "H54-200-S500-R"
-        titlekr: "H54-200-S500-R"
+      - title: "*H54-200-S500-R"
+        titlekr: "*H54-200-S500-R"
         url: /dxl/pro/h54-200-s500-r/
-      - title: "H54-100-S500-R"
-        titlekr: "H54-100-S500-R"
+      - title: "*H54-100-S500-R"
+        titlekr: "*H54-100-S500-R"
         url: /dxl/pro/h54-100-s500-r/
-      - title: "H42-20-S300-R"
-        titlekr: "H42-20-S300-R"
+      - title: "*H42-20-S300-R"
+        titlekr: "*H42-20-S300-R"
         url: /dxl/pro/h42-20-s300-r/
-      - title: "M54-60-S250-R"
-        titlekr: "M54-60-S250-R"
+      - title: "*M54-60-S250-R"
+        titlekr: "*M54-60-S250-R"
         url: /dxl/pro/m54-60-s250-r/
-      - title: "M54-40-S250-R"
-        titlekr: "M54-40-S250-R"
+      - title: "*M54-40-S250-R"
+        titlekr: "*M54-40-S250-R"
         url: /dxl/pro/m54-40-s250-r/
-      - title: "M42-10-S260-R"
-        titlekr: "M42-10-S260-R"
+      - title: "*M42-10-S260-R"
+        titlekr: "*M42-10-S260-R"
         url: /dxl/pro/m42-10-s260-r/
       - title: "*L54-50-S500-R"
         titlekr: "*L54-50-S500-R"
@@ -470,6 +472,9 @@ main:
       titlekr: "제어기"
       url: /parts/controller/controller_compatibility/
       children:
+      - title: "CM-50"
+        titlekr: "CM-50"
+        url: /parts/controller/cm-50/
       - title: "*CM-100A"
         titlekr: "*CM-100A"
         url: /parts/controller/cm-100/
@@ -11307,6 +11312,9 @@ h54p-200-s500-r:
         - title: "Secondary ID(12)"
           titlekr: "Secondary ID(12)"
           url: /dxl/pro_plus/h54p-200-s500-r/#secondary-id12
+        - title: "Protocol Type(13)"
+          titlekr: "Protocol Type(13)"
+          url: /dxl/pro_plus/h54p-200-s500-r/#protocol-type13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
           url: /dxl/pro_plus/h54p-200-s500-r/#homing-offset20
@@ -11533,6 +11541,9 @@ h54p-100-s500-r:
         - title: "Secondary ID(12)"
           titlekr: "Secondary ID(12)"
           url: /dxl/pro_plus/h54p-100-s500-r/#secondary-id12
+        - title: "Protocol Type(13)"
+          titlekr: "Protocol Type(13)"
+          url: /dxl/pro_plus/h54p-100-s500-r/#protocol-type13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
           url: /dxl/pro_plus/h54p-100-s500-r/#homing-offset20
@@ -11759,6 +11770,9 @@ h42p-020-s300-r:
         - title: "Secondary ID(12)"
           titlekr: "Secondary ID(12)"
           url: /dxl/pro_plus/h42p-020-s300-r/#secondary-id12
+        - title: "Protocol Type(13)"
+          titlekr: "Protocol Type(13)"
+          url: /dxl/pro_plus/h42p-020-s300-r/#protocol-type13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
           url: /dxl/pro_plus/h42p-020-s300-r/#homing-offset20
@@ -11985,6 +11999,9 @@ m42p-010-s260-r:
         - title: "Secondary ID(12)"
           titlekr: "Secondary ID(12)"
           url: /dxl/pro_plus/m42p-010-s260-r/#secondary-id12
+        - title: "Protocol Type(13)"
+          titlekr: "Protocol Type(13)"
+          url: /dxl/pro_plus/m42p-010-s260-r/#protocol-type13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
           url: /dxl/pro_plus/m42p-010-s260-r/#homing-offset20
@@ -12211,6 +12228,9 @@ m54p-040-s250-r:
         - title: "Secondary ID(12)"
           titlekr: "Secondary ID(12)"
           url: /dxl/pro_plus/m54p-040-s250-r/#secondary-id12
+        - title: "Protocol Type(13)"
+          titlekr: "Protocol Type(13)"
+          url: /dxl/pro_plus/m54p-040-s250-r/#protocol-type13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
           url: /dxl/pro_plus/m54p-040-s250-r/#homing-offset20
@@ -12437,6 +12457,9 @@ m54p-060-s250-r:
         - title: "Secondary ID(12)"
           titlekr: "Secondary ID(12)"
           url: /dxl/pro_plus/m54p-060-s250-r/#secondary-id12
+        - title: "Protocol Type(13)"
+          titlekr: "Protocol Type(13)"
+          url: /dxl/pro_plus/m54p-060-s250-r/#protocol-type13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
           url: /dxl/pro_plus/m54p-060-s250-r/#homing-offset20
@@ -12860,6 +12883,13 @@ play-700:
             url: /edu/play/play-700/#run-scratch
   - title: "Video Tutorials"
     url: /edu/play/play-700/#video-tutorials
+  - title: "Reference"
+    url: /edu/play/play-700/#reference
+    children:
+      - title: "Straightness Tuning"
+        url: /edu/play/play-700/#straightness-tuning
+
+
 
 #Ollo Bug Kit sidebar
 ollo_bugkit:
@@ -13332,8 +13362,13 @@ info:
   - titlekr: "엔트리로 작동하기"
     urlkr: /edu/info/#엔트리로-작동하기
     children:
-      - titlekr: "엔트리 설치하기"
-        urlkr: /edu/info/#엔트리-설치하기
+      - titlekr: "온라인 버전"
+        urlkr: /edu/info/#온라인-버전
+      - titlekr: "오프라인 버전"
+        urlkr: /edu/info/#오프라인-버전
+        children:
+        - titlekr: "PC에 엔트리 설치하기"
+          urlkr: /edu/info/#pc에-엔트리-설치하기
       - titlekr: "PC에 예제 다운로드하기"
         urlkr: /edu/info/#pc에-예제-다운로드하기
       - titlekr: "엔트리에서 예제 불러오기"
@@ -13351,8 +13386,15 @@ info:
         urlkr: /edu/info/#r-실과로봇-설치하기
       - titlekr: "제어기와 스마트기기 연결"
         urlkr: /edu/info/#제어기와-스마트기기-연결
-      - titlekr: "R+ 실과로봇에서 예제 불러오기"
-        urlkr: /edu/info/#r-실과로봇에서-예제-불러오기
+      - titlekr: "통합 프로그램 실행하기"
+        urlkr: /edu/info/#통합-프로그램-실행하기
+        children:
+        - titlekr: "안내로봇 실행하기"
+          urlkr: /edu/info/#안내로봇-실행하기
+      - titlekr: "제어기에 태스크파일 다운로드"
+        urlkr: /edu/info/#제어기에-태스크파일-다운로드
+  - titlekr: 실과로봇 앱 예제 초기화 방법
+    urlkr: /edu/info/#실과로봇-앱-예제-초기화-방법
   - titlekr: "교육자료 다운로드"
     urlkr: /edu/info/#교육자료-다운로드
     children:
@@ -13853,6 +13895,84 @@ bioloid-gp:
       titlekr: "사용자 센서 제작"
       url: /edu/bioloid/gp/#make-your-own-sensor
       urlkr: /edu/bioloid/gp/#사용자-센서-제작
+
+
+#ROBOTIS ENGINEER KIT sidebar
+kit1:
+  - titlekr: "개요"
+    urlkr: /edu/engineer/kit1/#개요
+    children:
+    - titlekr: "부품 목록"
+      urlkr: /edu/engineer/kit1/#부품-목록
+      children:
+      - titlekr: "CM-550 제어기"
+        urlkr: /edu/engineer/kit1/#cm-550-제어기
+      - titlekr: "2XL430 다이나믹셀"
+        urlkr: /edu/engineer/kit1/#2xl430-다이나믹셀
+    - titlekr: "주의사항"
+      urlkr: /edu/engineer/kit1/#주의사항
+      children:
+      - titlekr: "안전에 대한 주의사항"
+        urlkr: /edu/engineer/kit1/#안전에-대한-주의사항
+      - titlekr: "사용상 주의사항"
+        urlkr: /edu/engineer/kit1/#사용상-주의사항
+      - titlekr: "충전기/충전지 사용시 주의사항"
+        urlkr: /edu/engineer/kit1/#충전기충전지-사용시-주의사항
+      - titlekr: "조립시 주의사항"
+        urlkr: /edu/engineer/kit1/#조립시-주의사항
+  - titlekr: "작동하기"
+    urlkr: /edu/engineer/kit1/#작동하기
+    children:
+    - titlekr: "앱 설치하기"
+      urlkr: /edu/engineer/kit1/#앱-설치하기
+    - titlekr: "블루투스 연결하기"
+      urlkr: /edu/engineer/kit1/#블루투스-연결하기
+    - titlekr: "예제 다운로드"
+      urlkr: /edu/engineer/kit1/#예제-다운로드
+    - titlekr: "예제 실행하기"
+      urlkr: /edu/engineer/kit1/#예제-실행하기
+      children:
+      - titlekr: "Dr.R"
+        urlkr: /edu/engineer/kit1/#drr
+      - titlekr: "MAX-E1"
+        urlkr: /edu/engineer/kit1/#max-e1
+      - titlekr: "SPI"
+        urlkr: /edu/engineer/kit1/#spi
+    - titlekr: "로봇 설정하기"
+      urlkr: /edu/engineer/kit1/#로봇-설정하기
+      children:
+      - titlekr: "모터 조립확인"
+        urlkr: /edu/engineer/kit1/#모터-조립확인
+      - titlekr : "모터 오프셋 설정"
+        urlkr: /edu/engineer/kit1/#모터-오프셋-설정
+  - titlekr: "튜토리얼"
+    urlkr: /edu/engineer/kit1/#튜토리얼
+    # children:
+    # - titlekr: "코드 작성하기"
+    #   urlkr: /edu/engineer/kit1/#코드-작성하기
+    # - titlekr: "예제 조립서"
+    #   urlkr: /edu/engineer/kit1/#예제-조립서
+    # - titlekr: "3D 프린팅"
+    #   urlkr: /edu/engineer/kit1/#3d-프린팅
+    # - titlekr: "교육자료"
+    #   urlkr: /edu/engineer/kit1/#교육자료
+  - titlekr: "소프트웨어 다운로드"
+    urlkr: /edu/engineer/kit1/#소프트웨어-다운로드
+  - titlekr: "참고자료"
+    urlkr: /edu/engineer/kit1/#참고자료
+    children:
+    - titlekr: "점검 및 자가진단"
+      urlkr: /edu/engineer/kit1/#점검-및-자가진단
+    - titlekr: "배터리 충전하기"
+      urlkr: /edu/engineer/kit1/#배터리-충전하기
+    - titlekr: "배터리 잔량 확인하기"
+      urlkr: /edu/engineer/kit1/#배터리-잔량-확인하기
+    - titlekr: "퓨즈 교체하기"
+      urlkr: /edu/engineer/kit1/#퓨즈-교체하기
+    # - titlekr: "로봇 초기화"
+    #   urlkr: /edu/engineer/kit1/#로봇-초기화
+
+
 
 #ROBOTIS MINI sidebar
 mini:
@@ -14935,6 +15055,8 @@ thormang3:
       children:
       - title: "thormang3_manager"
         url: /platform/thormang3/thormang3_ros_packages/#thormang3_manager
+      - title: "thormang3_p_manager"
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3_p_manager
       - title: "thormang3_kinematics_dynamics"
         url: /platform/thormang3/thormang3_ros_packages/#thormang3_kinematics_dynamics
       - title: "thormang3_action_module"
@@ -14947,14 +15069,20 @@ thormang3:
         url: /platform/thormang3/thormang3_ros_packages/#thormang3_walking_module
       - title: "thormang3_head_control_module"
         url: /platform/thormang3/thormang3_ros_packages/#thormang3_head_control_module
+      - title: "thormang3_tuning_module"
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3_tuning_module
       - title: "ati_ft_sensor"
         url: /platform/thormang3/thormang3_ros_packages/#ati_ft_sensor
       - title: "thormang3_feet_ft_module"
         url: /platform/thormang3/thormang3_ros_packages/#thormang3_feet_ft_module
+      - title: "thormang3_alarm_module"
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3_alarm_module
       - title: "thormang3_balance_control"
         url: /platform/thormang3/thormang3_ros_packages/#thormang3_balance_control
       - title: "imu-3dm-gx4"
         url: /platform/thormang3/thormang3_ros_packages/#imu-3dm-gx4
+      - title: "imu-3dm-gx5"
+        url: /platform/thormang3/thormang3_ros_packages/#microstrain-3dm-gx5-45
     - title: "PPC Packages"
       url: /platform/thormang3/thormang3_ros_packages/#ppc-packages
       children:
@@ -14975,6 +15103,8 @@ thormang3:
         url: /platform/thormang3/thormang3_ros_packages/#thormang3_foot_step_generator
       - title: "thormang3_offset_tuner_client"
         url: /platform/thormang3/thormang3_ros_packages/#thormang3_offset_tuner_client
+      - title: "thormang3_tuner_client"
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3_tuner_client
     - title: "Common Packages"
       url: /platform/thormang3/thormang3_ros_packages/#common-packages
       children:
@@ -15004,6 +15134,10 @@ thormang3:
         url: /platform/thormang3/thormang3_ros_packages/#thormang3_head_control_module_msgs
       - title: "thormang3_offset_tuner_msgs"
         url: /platform/thormang3/thormang3_ros_packages/#thormang3_offset_tuner_msgs
+      - title: "thormang3_alarm_module_msgs"
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3_alarm_module_msgs
+      - title: "thormang3_tuning_module_msgs"
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3_tuning_module_msgs
   - title: "THORMANG3 Operation"
     url: /platform/thormang3/thormang3_operation/#thormang3-operation
     children:
@@ -15030,6 +15164,8 @@ thormang3:
         url: /platform/thormang3/thormang3_operation/#operate-walking-module
     - title: "Offset Tuner"
       url: /platform/thormang3/thormang3_operation/#offset-tuner
+    - title: "Gain and Offset Tuner"
+      url: /platform/thormang3/thormang3_operation/#tuner-client
   - title: "Gazebo Simulation"
     url: /platform/thormang3/gazebo_simulation/#gazebo-simulation
     children:
@@ -15752,40 +15888,78 @@ openmanipulator_pro:
         url: /platform/openmanipulator_pro/ros_setup/#install-ubuntu-on-pc
       - title: "Install ROS on PC"
         url: /platform/openmanipulator_pro/ros_setup/#install-ros-on-pc
+        children:
+          - title: "ROS Kinetic Kame"
+            url: /platform/openmanipulator_pro/ros_setup/#ros-kinetic-kame
+          - title: "ROS Melodic Morenia"
+            url: /platform/openmanipulator_pro/ros_setup/#ros-melodic-morenia
       - title: "Install ROS Packages"
-        url: /platform/openmanipulator_pro/ros_setup/#install-ros-packages
-  - title: "[ROS] Manipulator Manager"
-    url: /platform/openmanipulator_pro/ros_manipulator_manager/#ros-manipulator-manager
+        url: /platform/openmanipulator_pro/ros_setup/#install-ros-package
+        children:
+          - title: "ROS Kinetic Kame Package"
+            url: /platform/openmanipulator_pro/ros_setup/#ros-kinetic-kame-package
+          - title: "ROS Melodic Morenia Package"
+            url: /platform/openmanipulator_pro/ros_setup/#ros-melodic-morenia-package
+  - title: "[ROS] Controller Package"
+    url: /platform/openmanipulator_pro/ros_controller_package/#ros-controller-package
     children:
-      - title: "Launch Manager"
-        url: /platform/openmanipulator_pro/ros_manipulator_manager/#launch-manager
+      - title: "Launch Controller"
+        url: /platform/openmanipulator_pro/ros_controller_package/#launch-controller
       - title: "Check Setting"
-        url: /platform/openmanipulator_pro/ros_manipulator_manager/#check-setting
+        url: /platform/openmanipulator_pro/ros_controller_package/#check-setting
         children:
           - title: "RViz"
-            url: /platform/openmanipulator_pro/ros_manipulator_manager/#rviz
+            url: /platform/openmanipulator_pro/ros_controller_package/#rviz
       - title: "Message List"
-        url: /platform/openmanipulator_pro/ros_manipulator_manager/#message-list
+        url: /platform/openmanipulator_pro/ros_controller_package/#message-list
         children:
           - title: "Topic"
-            url: /platform/openmanipulator_pro/ros_manipulator_manager/#topic
+            url: /platform/openmanipulator_pro/ros_controller_package/#topic
           - title: "Service"
-            url: /platform/openmanipulator_pro/ros_manipulator_manager/#service
+            url: /platform/openmanipulator_pro/ros_controller_package/#service
   - title: "[ROS] Operation"
     url: /platform/openmanipulator_pro/ros_operation/#ros-operation
     children:
       - title: "GUI Program"
         url: /platform/openmanipulator_pro/ros_operation/#gui-program
+      - title: "Teleoperation"
+        url: /platform/openmanipulator_pro/ros_operation/#teleoperation
       - title: "MoveIt!"
         url: /platform/openmanipulator_pro/ros_operation/#moveit
   - title: "[ROS] Simulation"
     url: /platform/openmanipulator_pro/ros_simulation/#ros-simulation
     children:
-      - title: "Manager for gazebo"
-        url: /platform/openmanipulator_pro/ros_simulation/#manager-for-gazebo
       - title: "Launch gazebo"
         url: /platform/openmanipulator_pro/ros_simulation/#launch-gazebo
-
+      - title: "Controller for gazebo"
+        url: /platform/openmanipulator_pro/ros_simulation/#controller-for-gazebo
+  - title: "[ROS] Tool Applications"
+    url: /platform/openmanipulator_pro/ros_tool_applications
+    children:
+      - title: "RH-P12-RN Gripper"
+        url: /platform/openmanipulator_pro/ros_tool_applications/#rh-p12-rn-gripper
+        children: 
+          - title: "Parts List"
+            url: /platform/openmanipulator_pro/ros_tool_applications/#parts-list
+          - title: "Assembly Manual"
+            url: /platform/openmanipulator_pro/ros_tool_applications/#assembly-manual
+          - title: "Operation"
+            url: /platform/openmanipulator_pro/ros_tool_applications/#operation
+            children:
+              - title: "GUI Program" 
+                url: /platform/openmanipulator_pro/ros_tool_applications/#gui-program
+              - title: "Teleoperation"
+                url: /platform/openmanipulator_pro/ros_tool_applications/#teleoperation
+              - title: "Moveit!"
+                url: /platform/openmanipulator_pro/ros_tool_applications/#moveit
+          - title: "Simulation"
+            url: /platform/openmanipulator_pro/ros_tool_applications/#simulation
+            children:
+              - title: "Launch Gazebo"
+                url: /platform/openmanipulator_pro/ros_tool_applications/#launch-gazebo
+              - title: "Controller for Gazebo"
+                url: /platform/openmanipulator_pro/ros_tool_applications/#controller-for-gazebo 
+                
 #Manipulator-H
 manipulator_h:
   - title: "Introduction"
@@ -17523,10 +17697,6 @@ rplustask3:
       titlekr: "초기위치 이동"
       url: /software/rplustask3/#
       urlkr: /software/rplustask3/#초기위치-이동
-    - title: ""
-      titlekr: "단축키"
-      url: /software/rplustask3/#
-      urlkr: /software/rplustask3/#단축키
 
 
 #R+ Motion 2.0 sidebar
@@ -19075,10 +19245,6 @@ dynamixel_workbench:
       children:
       - title: "Find Dynamixels"
         url: /software/dynamixel/dynamixel_workbench/#find-dynamixels
-      - title: "Single Manager"
-        url: /software/dynamixel/dynamixel_workbench/#single-manager
-      - title: "Single Manager GUI"
-        url: /software/dynamixel/dynamixel_workbench/#single-manager-gui
       - title: "Controllers"
         url: /software/dynamixel/dynamixel_workbench/#controllers
       - title: "Operators"
@@ -19615,6 +19781,44 @@ cm-50:
     titlekr: "무선통신 연결"
     url: /parts/controller/cm-50/#wireless-communication
     urlkr: /parts/controller/cm-50/#무선-통신-모듈-연결하기
+  - title: "Mode Select"
+    titlekr: "제어기 모드 선택"
+    url: /parts/controller/cm-50/#mode-select
+    urlkr: /parts/controller/cm-50/#제어기-모드-선택
+    children:
+    - title: "Play Mode"
+      titlekr: "Play Mode"
+      url: /parts/controller/cm-50/#play-mode
+      urlkr: /parts/controller/cm-50/#play-mode
+    - title: "Manage Mode"
+      titlekr: "Manage Mode"
+      url: /parts/controller/cm-50/#manage-mode
+      urlkr: /parts/controller/cm-50/#manage-mode
+    - title: "Tuning Mode"
+      titlekr: "Tuning Mode"
+      url: /parts/controller/cm-50/#tuning-mode
+      urlkr: /parts/controller/cm-50/#tuning-mode
+  - title: "Straightness Tuning"
+    titlekr: "직진성 보정"
+    url: /parts/controller/cm-50/#straightness-tuning
+    urlkr: /parts/controller/cm-50/#직진성-보정
+    children:
+    - title: "RC-100B"
+      titlekr: "RC-100B"
+      url: /parts/controller/cm-50/#rc-100b
+      urlkr: /parts/controller/cm-50/#rc-100b
+    - title: "RC-200"
+      titlekr: "RC-200"
+      url: /parts/controller/cm-50/#rc-200
+      urlkr: /parts/controller/cm-50/#rc-200
+    - title: "Smart Device"
+      titlekr: "스마트 기기"
+      url: /parts/controller/cm-50/#smart-device
+      urlkr: /parts/controller/cm-50/#스마트-기기
+    - title: "Tuning Guide"
+      titlekr: "튜닝 설명서"
+      url: /parts/controller/cm-50/#tuning-guide
+      urlkr: /parts/controller/cm-50/#튜닝-설명서
 
 #CM-100A Controller sidebar
 cm-100:
@@ -19882,6 +20086,79 @@ cm-530:
     titlekr: "관련 동영상"
     url: /parts/controller/cm-530/#videos
     urlkr: /parts/controller/cm-530/#관련-동영상
+
+#CM-550 Controller sidebar
+cm-550:
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /parts/controller/cm-550/#introduction
+    urlkr: /parts/controller/cm-550/#개요
+  - title: "Specifications"
+    titlekr: "제품 사양"
+    url: /parts/controller/cm-550/#specifications
+    urlkr: /parts/controller/cm-550/#제품-사양
+  - title: "Layout"
+    titlekr: "각 부 명칭"
+    url: /parts/controller/cm-550/#layout
+    urlkr: /parts/controller/cm-550/#각-부-명칭
+    children:
+    - titlekr: "전원 포트"
+      urlkr: /parts/controller/cm-550/#전원-포트
+    - titlekr: "로보티즈 5핀 포트"
+      urlkr: /parts/controller/cm-550/#로보티즈-5핀-포트
+    - titlekr: "외부통신 포트"
+      urlkr: /parts/controller/cm-550/#외부통신-포트
+    - titlekr: "다이나믹셀 포트"
+      urlkr: /parts/controller/cm-550/#다이나믹셀-포트
+  - title: "Connecting Power"
+    titlekr: "전원 연결"
+    url: /parts/controller/cm-550/#connecting-power
+    urlkr: /parts/controller/cm-550/#전원-연결
+  - title: "How to Operate"
+    titlekr: "작동 방법"
+    url: /parts/controller/cm-550/#how-to-operate
+    urlkr: /parts/controller/cm-550/#작동-방법
+    children:
+    - titlekr: "전원 켜기"
+      urlkr: /parts/controller/cm-550/#전원-켜기
+    - titlekr: "시작"
+      urlkr: /parts/controller/cm-550/#시작
+    - titlekr: "종료"
+      urlkr: /parts/controller/cm-550/#종료
+    - titlekr: "동작 모드"
+      urlkr: /parts/controller/cm-550/#동작-모드
+      children:
+      - titlekr: "MANAGE"
+        urlkr: /parts/controller/cm-550/#manage
+      - titlekr: "PLAY"
+        urlkr: /parts/controller/cm-550/#play
+      - titlekr: "MOTION"
+        urlkr: /parts/controller/cm-550/#motion
+  - titlekr: "호환 소프트웨어"
+    urlkr: /parts/controller/cm-550/#호환-소프트웨어
+    children:
+    - titlekr: "로보플러스 매니저 2.0"
+      urlkr: /parts/controller/cm-550/#로보플러스-매니저-20
+    - titlekr: "로보플러스 태스크 3.0"
+      urlkr: /parts/controller/cm-550/#로보플러스-태스크-30
+  - title: "Connect to PC"
+    titlekr: "PC 연결"
+    url: /parts/controller/cm-550/#connect-to-pc
+    urlkr: /parts/controller/cm-550/#pc-연결
+  - title: "Wireless Communication"
+    titlekr: "블루투스 연결"
+    url: /parts/controller/cm-550/#wireless-communication
+    urlkr: /parts/controller/cm-550/#블루투스-연결
+  - title: "Charging"
+    titlekr: "충전하기"
+    url: /parts/controller/cm-550/#charging
+    urlkr: /parts/controller/cm-550/#충전하기
+  - titlekr: "배터리 잔량 확인하기"
+    urlkr: /parts/controller/cm-550/#배터리-잔량-확인하기
+  - title: "Fuse Replacement"
+    titlekr: "퓨즈 교체하기"
+    url: /parts/controller/cm-550/#fuse-replacement
+    urlkr: /parts/controller/cm-550/#퓨즈-교체하기
 
 #CM-700 Controller sidebar
 cm-700:

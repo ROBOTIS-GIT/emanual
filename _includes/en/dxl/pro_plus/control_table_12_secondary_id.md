@@ -8,10 +8,10 @@ The differences between Secondary ID(12) and ID(7) are as follows :
 4. If Instruction Packet ID is the same as Secondary ID(12), the Status Packet will not be returned.
 5. If the value of Secondary ID(12) is 253 or higher, the Secondary ID function is deactivated.
 
-|Values|Description|
-| :---: | :---: |
-|0 ~ 252|Activate Secondary ID function|
-|253 ~ 255|Deactivate Secondary ID function, Default value ‘255’|
+|  Values   |                      Description                      |
+|:---------:|:-----------------------------------------------------:|
+|  0 ~ 252  |            Activate Secondary ID function             |
+| 253 ~ 255 | Deactivate Secondary ID function, Default value ‘255’ |
 
 The following are examples of operation when there are five devices with ID (7) set from 1 to 5.
 
@@ -27,3 +27,6 @@ The following are examples of operation when there are five devices with ID (7) 
 {% endcapture %}
 
 <div class="notice--success">{{ secondary_id_ex1 | markdownify }}</div>
+
+**WARNING** : Modebus-RTU dose not support Secondary ID(12).    
+{: .notice--warning}
