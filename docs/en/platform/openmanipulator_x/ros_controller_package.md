@@ -82,7 +82,7 @@ Please, open Terminal then run roscore along with following command.
 $ roscore
 ```
 
-After running roscore, open another Terminal then wrtie the following commands in Terminal.
+After running roscore, open another Terminal then write the following commands in Terminal.
 
 ``` bash
 $ roslaunch open_manipulator_controller open_manipulator_controller.launch
