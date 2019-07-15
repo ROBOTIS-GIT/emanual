@@ -20,7 +20,8 @@ sidebar:
 
 {% capture notice_01 %}
 **NOTE**:
-- This instructions has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+- This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+- This instruction has been tested on `Ubuntu 18.04` and `ROS Melodic`
 - This instructions are supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
 - Make sure to run the [OpenMANIPULATOR-PRO controller](/docs/en/platform/openmanipulator_pro/ros_controller_package/#launch-controller) instructions before running the instruction below.
 {% endcapture %}
@@ -56,6 +57,7 @@ $ roslaunch open_manipulator_pro_control_gui open_manipulator_pro_control_gui.la
 {% capture notice_01 %}
 **NOTE**:
 - This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+- This instruction has been tested on `Ubuntu 18.04` and `ROS Melodic Morenia`. 
 - This instruction is supposed to be run on PC with ROS packages installed in. Please run the instruction below on your PC ROS packages installed in.
 - Make sure to run [OpenMANIPULATOR-PRO controller](/docs/en/platform/openmanipulator_pro/ros-controller-package/#launch-controller) instructions before running the instructions below.
 {% endcapture %}
