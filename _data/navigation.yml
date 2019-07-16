@@ -15938,7 +15938,7 @@ openmanipulator_pro:
     children:
       - title: "RH-P12-RN Gripper"
         url: /platform/openmanipulator_pro/ros_tool_applications/#rh-p12-rn-gripper
-        children: 
+        children:
           - title: "Parts List"
             url: /platform/openmanipulator_pro/ros_tool_applications/#parts-list
           - title: "Assembly Manual"
@@ -15946,7 +15946,7 @@ openmanipulator_pro:
           - title: "Operation"
             url: /platform/openmanipulator_pro/ros_tool_applications/#operation
             children:
-              - title: "GUI Program" 
+              - title: "GUI Program"
                 url: /platform/openmanipulator_pro/ros_tool_applications/#gui-program
               - title: "Teleoperation"
                 url: /platform/openmanipulator_pro/ros_tool_applications/#teleoperation
@@ -15958,8 +15958,8 @@ openmanipulator_pro:
               - title: "Launch Gazebo"
                 url: /platform/openmanipulator_pro/ros_tool_applications/#launch-gazebo
               - title: "Controller for Gazebo"
-                url: /platform/openmanipulator_pro/ros_tool_applications/#controller-for-gazebo 
-                
+                url: /platform/openmanipulator_pro/ros_tool_applications/#controller-for-gazebo
+
 #Manipulator-H
 manipulator_h:
   - title: "Introduction"
@@ -20132,8 +20132,10 @@ cm-550:
         urlkr: /parts/controller/cm-550/#manage
       - titlekr: "PLAY"
         urlkr: /parts/controller/cm-550/#play
-      - titlekr: "MOTION"
-        urlkr: /parts/controller/cm-550/#motion
+      - titlekr: "BOOT LOADER"
+        urlkr: /parts/controller/cm-550/#boot-loader
+    - titlekr: "펌웨어 복구"
+      urlkr: /parts/controller/cm-550/#펌웨어-복구
   - titlekr: "호환 소프트웨어"
     urlkr: /parts/controller/cm-550/#호환-소프트웨어
     children:
@@ -20145,10 +20147,10 @@ cm-550:
     titlekr: "PC 연결"
     url: /parts/controller/cm-550/#connect-to-pc
     urlkr: /parts/controller/cm-550/#pc-연결
-  - title: "Wireless Communication"
-    titlekr: "블루투스 연결"
-    url: /parts/controller/cm-550/#wireless-communication
-    urlkr: /parts/controller/cm-550/#블루투스-연결
+  - title: "Connect to Smart Device"
+    titlekr: "스마트 기기 연결"
+    url: /parts/controller/cm-550/#connect-to-smart-device
+    urlkr: /parts/controller/cm-550/#스마트-기기-연결
   - title: "Charging"
     titlekr: "충전하기"
     url: /parts/controller/cm-550/#charging
