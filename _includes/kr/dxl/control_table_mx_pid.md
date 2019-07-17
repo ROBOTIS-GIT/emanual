@@ -6,24 +6,25 @@ MX 시리즈는 대표적 제어기법인 PID Controller를 이용합니다.
 
 ![](/assets/images/dxl/mx/mx-12_pid_control.png)
 
-- `K<sub>p</sub>` = P Gain / 8
-- `K<sub>i</sub>` = I Gain * 1,000 / 2,048
-- `K<sub>d</sub>` = D Gain * 4 / 1,000
+- **K<sub>p</sub>** = P Gain / 8
+- **K<sub>i</sub>** = I Gain * 1,000 / 2,048
+- **K<sub>d</sub>** = D Gain * 4 / 1,000
 
-**The relationship between Compliance Slop and PID**
+**PID 와 컴플라이언스 슬로프와의 관계**
 
-|Slope|P Gain|
-| :---: | :---: |
-|8|128|
-|16|64|
-|32|32|
-|64|16|
-|128|8|
+| Slope | P Gain |
+|:-----:|:------:|
+|   8   |  128   |
+|  16   |   64   |
+|  32   |   32   |
+|  64   |   16   |
+|  128  |   8    |
 
-The less the P gain, The larger the back lash, and the weaker the amount of output near goal position.  
-At some extent, it is like a combined concept of margine and slope.  
-It does not exactly match the previous concept of compliance. So it is obvious if you see the difference in terms of motion.  
-**Explanation for PID required.**  
-For the brief explanation about general PID, please refer to the website(link) below.  
-[http://en.wikipedia.org/wiki/PID_controller](http://en.wikipedia.org/wiki/PID_controller)
-FYI, PID control theory is not only limited to the control of motor(actuator) but is a generic theory that can be applied to all kinds of control.
+P Gain이 작을수록 유격이 커지고 목표위치 근처에서의 출력이 약해집니다.  
+즉, Margin과 Slope를 합친 것과 같은 개념입니다.  
+구형 다이나믹셀의 Compliance의 개념과 매칭되지 않습니다.  
+
+**PID란?**  
+PID에 대한 설명은 아래 사이트를 참고해주세요.  
+[http://en.wikipedia.org/wiki/PID_controller](http://en.wikipedia.org/wiki/PID_controller)  
+참고로, PID 제어론은 단순히 모터 제어에만 국한되지 않고, 모든 제어에 적용할 수 있는 일반적인 이론입니다.
