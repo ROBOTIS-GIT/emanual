@@ -15,6 +15,10 @@ sidebar:
 
 # [Manipulator SDK Programming](#manipulator-sdk-programming)
 
+**ROBOTIS Manipulator SDK Download**  
+[Manipulator H-32bit (zip)](http://en.robotis.com/service/download.php?no=58)  
+[Manipulator L-32bit (zip)](http://en.robotis.com/service/download.php?no=59)  
+
 ## [Manipulator SDK](#manipulator-sdk)
 
 - The ArmSDK is based on Window 7 OS and Visual Studio 2010.
