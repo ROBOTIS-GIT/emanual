@@ -65,7 +65,7 @@ When firmware upload is completed, `jump_to_fw` text string will be printed on t
 
 When firmware upload is completed, `jump_to_fw` text string will be printed on the terminal.
 
-#### [(Alternative)Arduino IDE](#alternative-arduino-ide)
+#### [(Alternative) Arduino IDE](#alternative-arduino-ide)
 
 **WARNING**: The contents in this chapter corresponds to the `Remote PC` (your desktop or laptop PC) which will control TurtleBot3. Do **NOT** apply this instruction to your TurtleBot3.
 {: .notice--warning}

@@ -13929,6 +13929,21 @@ kit1:
       urlkr: /edu/engineer/kit1/#블루투스-연결하기
     - titlekr: "예제 다운로드"
       urlkr: /edu/engineer/kit1/#예제-다운로드
+      children:
+      - titlekr: "PC에서 예제 다운로드"
+        urlkr: /edu/engineer/kit1/#pc에서-예제-다운로드
+        children:
+          - titlekr: "태스크 다운로드 (PC)"
+            urlkr: /edu/engineer/kit1/#태스크-다운로드-pc
+          - titlekr: "모션 다운로드 (PC)"
+            urlkr: /edu/engineer/kit1/#모션-다운로드-pc
+      - titlekr: "스마트 기기에서 예제 다운로드"
+        urlkr: /edu/engineer/kit1/#스마트-기기에서-예제-다운로드
+        children: 
+          - titlekr: "태스크 다운로드 (스마트 기기)"
+            urlkr: /edu/engineer/kit1/#태스크-다운로드-스마트-기기
+          - titlekr: "모션 다운로드 (스마트 기기)"
+            urlkr: /edu/engineer/kit1/#모션-다운로드-스마트-기기
     - titlekr: "예제 실행하기"
       urlkr: /edu/engineer/kit1/#예제-실행하기
       children:
@@ -13947,7 +13962,27 @@ kit1:
         urlkr: /edu/engineer/kit1/#모터-오프셋-설정
   - titlekr: "튜토리얼"
     urlkr: /edu/engineer/kit1/#튜토리얼
-    # children:
+    children:
+      - titlekr: "머신러닝기반의 사물인식"
+        urlkr: /edu/engineer/kit1/#머신러닝기반의-사물인식
+        children: 
+          - titlekr: "윈도우즈"
+            urlkr: /edu/engineer/kit1/#윈도우즈
+            children: 
+            - titlekr: "pip패키지 업그레이드"
+              urlkr: /edu/engineer/kit1/#pip패키지-업그레이드
+            - titlekr: "폴더생성"
+              urlkr: /edu/engineer/kit1/#폴더생성
+            - titlekr: "아나콘다 가상실행 환경 만들기"
+              urlkr: /edu/engineer/kit1/#아나콘다-가상실행-환경-만들기
+            - titlekr: "TensorFlow 설치하기"
+              urlkr: /edu/engineer/kit1/#tensorflw-설치하기
+            - titlekr: "필요 파일 및 폴더 생성"
+              urlkr: /edu/engineer/kit1/#필요-파일-및-폴더-생성
+            - titlekr: "이미지 학습"
+              urlkr: /edu/engineer/kit1/#이미지-학습
+            - titlekr: "프로젝트에 학습 파일 적용하기"
+              urlkr: /edu/engineer/kit1/#프로젝트에-학습파일-적용하기
     # - titlekr: "코드 작성하기"
     #   urlkr: /edu/engineer/kit1/#코드-작성하기
     # - titlekr: "예제 조립서"
