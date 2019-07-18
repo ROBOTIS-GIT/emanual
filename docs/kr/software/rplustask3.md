@@ -126,7 +126,7 @@ sidebar:
 
     ![](/assets/images/sw/rplus_task3/task3_008.png)
 
-3. 프로토콜 버전과 제어기콜 선택합니다.
+3. 프로토콜 버전과 제어기를 선택합니다.
 4. `확인` 버튼을 클릭하면 새로운 태스크 파일이 생성됩니다.
 
     ![](/assets/images/sw/rplus_task3/task3_009.png)
@@ -720,7 +720,7 @@ R+ Task 3.0에서 사용하는 파라미터를 설명합니다. 각 장치에 �
 
 - R+ Motion을 통해 제어기에 다운로드된 모션을 실행하기 위한 파라미터입니다.
 - 특정 제어기에서만 사용할 수 있습니다.  
-  (지원 제어기 : [CM-200], [CM-5], [CM-510], [CM-530], [CM-700], [OpenCM], [CM-550])
+  (지원 제어기 : [CM-200], [CM-5], [CM-510], [CM-530], [CM-550], [CM-700], [OpenCM 9.04] )
 
 
 
@@ -1965,6 +1965,7 @@ Ctrl키를 활용하면 각 프레임 사이의 공간을 사용하여 총 시�
 [CM-5]: /docs/kr/parts/controller/cm-5/
 [CM-510]: /docs/kr/parts/controller/cm-510/
 [CM-530]: /docs/kr/parts/controller/cm-530/
+[CM-550]: /docs/kr/parts/controller/cm-550/
 [CM-700]: /docs/kr/parts/controller/cm-700/
 [OpenCM]: /docs/kr/parts/controller/controller_compatibility/
 [R+ Smart]: /docs/kr/software/mobile_app/rplussmart/
