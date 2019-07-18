@@ -25,7 +25,7 @@ product_group: dxl_ax
 | 최소 제어각     | 0.29 [deg]                                                              |
 | 모터            | Cored                                                                  |
 | 기어비          | 32 : 1                                                                 |
-| 정지 토크    | 0.2 [N&middot;m] (at 12 [V], 1.4 [A])                                        |
+| Stall Torque | 0.2 [N&middot;m] (at 12 [V], 1.4 [A])                                        |
 | 무부하 속도   | 470 [rpm] (at 12.0 [V], Wheel Mode)<br />54 [rpm] (at 12.0 [V], Joint Mode)          |
 | 동작 모드       | 관절 모드 : 0 ~ 300 [deg]<br />바퀴 모드 : 무한 회전                   |
 | 동작 온도       | -5 ~ +70 [&deg;C]                                                   |

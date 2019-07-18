@@ -12,7 +12,7 @@
 | 무게                      | {{ site.data.dxl_mx_info[page.ref].weight }}             |
 | 크기 (W x H x D)          | {{ site.data.dxl_mx_info[page.ref].dimensions }}         |
 | 기어비                    | {{ site.data.dxl_mx_info[page.ref].gearratio }}          |
-| 정지 토크                 | {{ site.data.dxl_mx_info[page.ref].stalltorque }}        |
+| Stall Torque              | {{ site.data.dxl_mx_info[page.ref].stalltorque }}        |
 | 무부하 속도               | {{ site.data.dxl_mx_info[page.ref].noloadspeed }}        |
 | [반경방향 하중]{: .popup} | `1` {{ site.data.dxl_mx_info[page.ref].radialload }}     |
 | [축방향 하중]{: .popup}   | `1` {{ site.data.dxl_mx_info[page.ref].axialload }}      |
