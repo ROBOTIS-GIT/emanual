@@ -33,16 +33,16 @@ product_group: 2xl430-w250
 
 #### [제품 사양](#제품-사양)  
 
-|     항목      |                                                           사양                                                        |
-|:-------------:|:--------------------------------------------------------------------------------------------------------------------:|
-|     무게      |                                                            58.8g                                                        |
-|      MCU      |                                                        STM32F405RG                                                   |
-|   동작 전압   |                                  허용 범위 : 6.5V ~ 15V, 권장 전압 : 11.1V (Li-PO 3cell)                               |
-|  소모 전류량  | 대기시 : 50mA<br />포트 1 ~ 2 I/O 최대전류 : 0.5A<br />포트 3 ~ 5 I/O 최대전류 : 0.02A<br />전체 최대 전류 : 10A (Fuse)  |
-|   동작 온도   |                                                    -5&deg;C ~ 70&deg;C                                                |
-|   통신 모듈   |                                                    BLE Slave 모듈 내장                                                 |
+|     항목      |                                                           사양                                                            |
+|:-------------:|:-------------------------------------------------------------------------------------------------------------------------:|
+|     무게      |                                                           58.8g                                                           |
+|      MCU      |                                                        STM32F405RG                                                        |
+|   동작 전압   |                                  허용 범위 : 6.5V ~ 15V, 권장 전압 : 11.1V (Li-PO 3cell)                                  |
+|  소모 전류량  |  대기시 : 50mA<br />포트 1 ~ 2 I/O 최대전류 : 0.5A<br />포트 3 ~ 5 I/O 최대전류 : 0.02A<br />전체 최대 전류 : 10A (Fuse)  |
+|   동작 온도   |                                                    -5&deg;C ~ 70&deg;C                                                    |
+|   통신 모듈   |                                                    BLE Slave 모듈 내장                                                    |
 | 내부 I/O 장치 | 버튼 : 2 개 (MODE 1, START 1)<br />마이크 (소리 감지) : 1<br />전압 센서 : 1<br />자이로 가속도 센서 : 1<br />RGB LED : 1 |
-| 외부 I/O 장치 |       로보티즈 5핀 포트 : 5<br />(서보모터/IR센서/온습도센서 : 1, 2번 포트 사용)<br />다이나믹셀 X 시리즈 포트 : 6       |
+| 외부 I/O 장치 |       로보티즈 5핀 포트 : 5<br />(서보모터/IR센서/온습도센서 : 1, 2번 포트 사용)<br />다이나믹셀 X 시리즈 포트 : 6        |
 
 
 #### [CM-550 각 부 명칭](#cm-550-각-부-명칭)  
@@ -78,8 +78,8 @@ product_group: 2xl430-w250
 2XL430은 2축 제어가 가능한 새로운 다이나믹셀입니다.
 
 
-| 항목             | 내용                                                      |
-|:-----------------|:----------------------------------------------------------|
+| 항목             | 내용                                                              |
+|:-----------------|:------------------------------------------------------------------|
 | MCU              | {{ site.data.dxl_x_info[page.product_group].mcu }}                |
 | 위치 센서        | {{ site.data.dxl_x_info[page.product_group].encoder }}            |
 | 모터             | {{ site.data.dxl_x_info[page.product_group].motor }}              |
@@ -256,7 +256,7 @@ product_group: 2xl430-w250
 4. 스마트 기기에서 `ROBOTIS ENGINEER`앱을 실행하고 화면에 표시된 블루투스 아이콘을 누릅니다.  
   ![](/assets/images/edu/engineer/kit1/bluetooth_connection_4.png)
 
-5. 제어기에 표시된 숫자 (마지막 두자리)를 확인합니다.  
+5. 제어기에 표시된 문자 (마지막 두자리)를 확인합니다.  
   ![](/assets/images/edu/engineer/kit1/bluetooth_connection_5.png)
 
 6. 확인한 숫자를 왼쪽 상자에 입력한 후 `검색` 을 누릅니다.  
@@ -268,12 +268,147 @@ product_group: 2xl430-w250
 ## [예제 다운로드](#예제-다운로드)
 - CM-550 제어기에는 최초 출하시 KIT 1 타입에 맞는 프로그램이 기본적으로 다운로드되어 있습니다.  
 
-| 예제명 |       태스크 파일        |       모션 파일       |
-|:-------|:-----------------------:|:--------------------:|
-| Dr.R   | [태스크 파일 다운로드]() | [모션 파일 다운로드]() |
-| MAX-E1 | [태스크 파일 다운로드]() | [모션 파일 다운로드]() |
-| SPI    | [태스크 파일 다운로드]() | [모션 파일 다운로드]() |
+| 예제명    |                                 태스크 파일                                  |                                 모션 파일                                 |
+|:----------|:----------------------------------------------------------------------------:|:-------------------------------------------------------------------------:|
+| 종합 예제 | [태스크 파일 다운로드](http://www.robotis.com/service/download.php?no=1779 ) | [모션 파일 다운로드](http://www.robotis.com/service/download.php?no=1787) |
+| Dr.R      | [태스크 파일 다운로드](http://www.robotis.com/service/download.php?no=1780)  | [모션 파일 다운로드](http://www.robotis.com/service/download.php?no=1788) |
+| MAX-E1    | [태스크 파일 다운로드](http://www.robotis.com/service/download.php?no=1781)  | [모션 파일 다운로드](http://www.robotis.com/service/download.php?no=1789) |
+| SPI       | [태스크 파일 다운로드](http://www.robotis.com/service/download.php?no=1782)  | [모션 파일 다운로드](http://www.robotis.com/service/download.php?no=1790) |
 
+
+{% capture opening_exam %}
+**참조** :  
+[R+Task 3.0에서 태스크 예제 파일 열기](/docs/kr/software/rplustask3/#태스크-예제-열기)  
+[R+Task 3.0에서 모션 예제 파일 열기](/docs/kr/software/rplustask3/#모션-예제-열기)
+{% endcapture %}
+<div class="notice">{{opening_exam | markdownify}}</div>
+
+### [PC에서 예제 다운로드](#pc에서-예제-다운로드)
+
+- Micro USB 포트를 이용하여, PC와 직접 연결하여 태스크(.tsk3) 및 모션(.mtn3) 파일을 원격으로 다운로드 받을 할 수 있습니다. 
+- CM-550에 내장된 BT-410 슬레이브 모듈과 BT-410 Dongle로 원격으로 다운로드 할 수 있습니다. 
+
+1. CM-550에 전원을 연결합니다.
+2. PC의 USB 포트에, BT-410 Dongle을 연결합니다.
+3. CM-550을 BT-410 Dongle에 가져다 대면, 페어링이 완료됩니다.
+4. R+Task3.0을 실행시킨후, 왼쪽 하단의 `연결`버튼을 클릭 해주세요. 
+  
+    ![](/assets/images/edu/engineer/kit1/remote_pairing_01.png)  
+
+5. `Use USB Dongle`을 클릭 해주세요.
+    
+    ![](/assets/images/edu/engineer/kit1/remote_pairing_02.png)  
+
+6. 사용할 시리얼 포트를 검색 후, 시리얼 포트를 선택해 주세요. 
+
+    ![](/assets/images/edu/engineer/kit1/remote_pairing_03.png)  
+
+7. 이미지에 빨간색 박스가 그려져 있는곳을 클릭하여, PC와 제어기가 연결이 되도록 해주세요.   
+    
+    ![](/assets/images/edu/engineer/kit1/remote_pairing_04.png)     
+
+8. 연결이 성공적으로 완료되면 '삐비빅' 소리가 납니다.  
+
+    ![](/assets/images/edu/engineer/kit1/remote_pairing_05.png)  
+      
+{% capture pairing_01 %}
+**참고** : 
+- 제어기의 UART 통신포트 근처를 BT-410 Dongle과 가까이 연결하시는게 좋습니다.
+- 페어링이 완료된 후에는 로봇과 PC의 거리가 멀어져도 통신이 끊어지지 않습니다.
+- 페어링이 한번 설정되면, 이후 멀리서도 페어링이 자동으로 됩니다.  
+{% endcapture %}
+<div class="notice">{{ pairing_01 | markdownify}}</div> 
+
+#### [태스크 다운로드 (PC)](#태스크-다운로드-pc)
+
+제어기에 태스크(.tsk3)를 다운로드 하는 방법입니다.   
+
+1. 제어기와 PC가 연결된 상태에서, 제품에 맞는 태스크 예제를 선택합니다.
+
+    ![](/assets/images/edu/engineer/kit1/remote_pairing_06.png)  
+
+2. 오른쪽 상단의 `프로그램 다운로드` 버튼을 클릭합니다. 
+  
+    ![](/assets/images/edu/engineer/kit1/remote_pairing_07.png)    
+    ![](/assets/images/edu/engineer/kit1/remote_pairing_08.png)   
+  
+#### [모션 다운로드 (PC)](#모션-다운로드-pc)
+
+1. 제어기와 PC가 연결된 상태에서, 제품에 맞는 모션예제를 선택 합니다.
+
+    ![](/assets/images/edu/engineer/kit1/remote_pairing_09.png)  
+
+2. 원하는 모션예제를 클릭후, 선택 버튼을 누릅니다.
+
+    ![](/assets/images/edu/engineer/kit1/remote_pairing_10.png)  
+
+3. 오른쪽 상단의 `모션 다운로드`버튼을 클릭 합니다. 
+
+    ![](/assets/images/edu/engineer/kit1/remote_pairing_11.png)  
+
+4. 모션 다운로드 탭으로 이동하면, 모션 그룹목록을 선택할수 있습니다. 원하는 모션을 선택하여 제어기에 다운로드 해주세요. 
+    
+    ![](/assets/images/edu/engineer/kit1/remote_pairing_12.png)
+
+### [스마트 기기에서 예제 다운로드](#스마트-기기에서-예제-다운로드)
+  
+R+Task3 앱을 이용하여 제어기에 파일을 다운로드 받는 방법입니다. 
+  
+1. R+Task3을 스마트 기기에서 실행 후, 이미지에서 빨간색 박스가 그려져 있는곳을 클릭해주세요.
+
+    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_01.png)  
+
+2. 로봇 연결하기 창이 활성화 되면, 이미지에서 빨간색 박스가 그려져 있는곳을 클릭해주세요.
+
+    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_02.png)  
+
+3. 제어기에 표시된 문자 (마지막 두자리)를 확인합니다.  
+  
+    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_02_1.png)
+
+4. 확인한 문자를 입력 해주세요.
+
+    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_03.png)  
+
+5. 연결할 블루투스를 검색후 활성화된 시리얼포트를 더블 클릭 또는 연결버튼을 클릭하여 제어기와 연결 해주세요. 
+  
+    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_04.png)    
+    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_05.png)  
+  
+#### [태스크 다운로드 (스마트 기기)](#태스크-다운로드-스마트-기기)
+
+원격으로 스마트 기기에서, 제어기로 태스크파일(.tsk3)을 다운로드 할수있습니다.  
+
+1. 제어기가 스마트 기기에 연결된 상태에서, 홈탭의 **태스크 예제**를 클릭하여 제품을 선택 해주세요.
+
+    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_06.png)
+  
+2. 빨간색 박스가 그려져 있는곳을 클릭하여, 제어기에 태스크 파일을 다운로드 해주세요.  
+
+    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_07.png)  
+
+
+#### [모션 다운로드 (스마트기기)](#모션-다운로드-스마트기기)
+
+1. 제어기가 스마트 기기에 연결된 상태에서, 홈탭의 **모션 예제**를 클릭하여 제품을 선택 해주세요.
+    
+    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_08.png)  
+
+2. **예제 선택하기**창이 활성화되면, 원하는 예제를 선택 해주세요.
+    
+    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_09.png)  
+
+3. 이미지에서 빨간색 박스가 그려져 있는곳을 선택 해주세요. 
+
+    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_10.png)  
+
+4. 이미지의 오른쪽 상단의 모션다운로드 탭을 클릭 해주세요.
+ 
+    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_11.png)  
+
+5. 오른쪽 하단의 빨간색 `모션 다운로드` 버튼을 클릭하면, 모션파일을 제어기에 다운로드 할수있습니다. 
+
+    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_12.png) 
 
 ## [예제 실행하기](#예제-실행하기)
 
@@ -317,13 +452,13 @@ Dr.R 예제를 선택하면 스마트 기기에 왼쪽과 같은 표정 화면�
 
 ##### 모드 메뉴
 
-|                        아이콘                         | 모드 설명                                                                                                                              |
-|:-----------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------|
-|  ![](/assets/images/edu/engineer/kit1/icon_demo.png)  | **DEMO : 감성인식 모드**<br>기본 데모 모드로 스마트 기기 화면을 통해 감정상태를 표현합니다.<br>로봇이나 스마트 기기를 터치하면 다양한 반응을 합니다.          |
-|  ![](/assets/images/edu/engineer/kit1/icon_face.png)  | **FACE : 얼굴인식 모드**<br>스마트 기기의 카메라로 얼굴을 인식하고 추적하는 모드입니다.<br>AR 기술을 적용해 추적하는 얼굴 위에 스티커를 입힙니다.             |
-| ![](/assets/images/edu/engineer/kit1/icon_object.png) | **OBJECT : 객체인식 모드**<br>사전에 등록된 물건을 카메라로 인식하고 말하는 모드입니다.<br>바나나, 볼펜, 차 열쇠, 지갑, 지폐 등 12종의 물건을 말할 수 있습니다.|
-| ![](/assets/images/edu/engineer/kit1/icon_voice.png)  | **VOICE : 음성인식 모드**<br>등록된 음성 명령을 인식하고 실행하는 모드입니다.<br>모드 변경 및 옵션 메뉴 실행, 종료 등의 명령을 인식합니다.                  |
-|  ![](/assets/images/edu/engineer/kit1/icon_clap.png)  | **CLAP : 박수감지 모드**<br>제어기의 마이크 센서를 통해 박수소리를 인식하는 모드입니다.<br>인식한 박수소리의 숫자만큼 Dr.R이 따라서 박수를 칩니다.            |
+|                        아이콘                         | 모드 설명                                                                                                                                                       |
+|:-----------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  ![](/assets/images/edu/engineer/kit1/icon_demo.png)  | **DEMO : 감성인식 모드**<br>기본 데모 모드로 스마트 기기 화면을 통해 감정상태를 표현합니다.<br>로봇이나 스마트 기기를 터치하면 다양한 반응을 합니다.            |
+|  ![](/assets/images/edu/engineer/kit1/icon_face.png)  | **FACE : 얼굴인식 모드**<br>스마트 기기의 카메라로 얼굴을 인식하고 추적하는 모드입니다.<br>AR 기술을 적용해 추적하는 얼굴 위에 스티커를 입힙니다.               |
+| ![](/assets/images/edu/engineer/kit1/icon_object.png) | **OBJECT : 객체인식 모드**<br>사전에 등록된 물건을 카메라로 인식하고 말하는 모드입니다.<br>바나나, 볼펜, 차 열쇠, 지갑, 지폐 등 12종의 물건을 말할 수 있습니다. |
+| ![](/assets/images/edu/engineer/kit1/icon_voice.png)  | **VOICE : 음성인식 모드**<br>등록된 음성 명령을 인식하고 실행하는 모드입니다.<br>모드 변경 및 옵션 메뉴 실행, 종료 등의 명령을 인식합니다.                      |
+|  ![](/assets/images/edu/engineer/kit1/icon_clap.png)  | **CLAP : 박수감지 모드**<br>제어기의 마이크 센서를 통해 박수소리를 인식하는 모드입니다.<br>인식한 박수소리의 숫자만큼 Dr.R이 따라서 박수를 칩니다.              |
 
 ##### 옵션메뉴
 
@@ -349,11 +484,11 @@ Dr.R 예제를 선택하면 스마트 기기에 왼쪽과 같은 표정 화면�
 
 #### 메뉴 화면
 
-|                         아이콘                         | 메뉴 설명                                                          |
-|:------------------------------------------------------:|:----------------------------------------------------------------|
-| ![](/assets/images/edu/engineer/kit1/icon_remote.png)  | **REMOTE** : 기본 조종 모드 화면을 불러오는 버튼입니다.                  |
+|                         아이콘                         | 메뉴 설명                                                                    |
+|:------------------------------------------------------:|:-----------------------------------------------------------------------------|
+| ![](/assets/images/edu/engineer/kit1/icon_remote.png)  | **REMOTE** : 기본 조종 모드 화면을 불러오는 버튼입니다.                      |
 | ![](/assets/images/edu/engineer/kit1/icon_gesture.png) | **GESTURE** : 등록된 스마트 기기의 동작 제스처로 로봇을 조종하는 기능입니다. |
-|  ![](/assets/images/edu/engineer/kit1/icon_clap.png)   | **CLAP** : 박수소리를 감지하고 감지한 횟수만큼 MAX-E1이 박수를 칩니다.     |
+|  ![](/assets/images/edu/engineer/kit1/icon_clap.png)   | **CLAP** : 박수소리를 감지하고 감지한 횟수만큼 MAX-E1이 박수를 칩니다.       |
 
 ### [SPI](#spi)
 
@@ -368,11 +503,11 @@ Dr.R 예제를 선택하면 스마트 기기에 왼쪽과 같은 표정 화면�
 
 #### 메뉴 화면
 
-|                         아이콘                         | 메뉴 설명                                                  |
-|:------------------------------------------------------:|:--------------------------------------------------------|
-| ![](/assets/images/edu/engineer/kit1/icon_remote.png)  | **REMOTE** : 기본 조종 모드 화면을 불러오는 버튼입니다.         |
-| ![](/assets/images/edu/engineer/kit1/icon_music.png) | **GESTURE** : 스마트 기기를 통해 로봇과 함께 연주를 하는 기능입니다. |
-|  ![](/assets/images/edu/engineer/kit1/icon_clap.png)   | **CLAP** : 박수소리를 감지하고 감지한 횟수만큼 SPI가 움직입니다.   |
+|                        아이콘                         | 메뉴 설명                                                            |
+|:-----------------------------------------------------:|:---------------------------------------------------------------------|
+| ![](/assets/images/edu/engineer/kit1/icon_remote.png) | **REMOTE** : 기본 조종 모드 화면을 불러오는 버튼입니다.              |
+| ![](/assets/images/edu/engineer/kit1/icon_music.png)  | **GESTURE** : 스마트 기기를 통해 로봇과 함께 연주를 하는 기능입니다. |
+|  ![](/assets/images/edu/engineer/kit1/icon_clap.png)  | **CLAP** : 박수소리를 감지하고 감지한 횟수만큼 SPI가 움직입니다.     |
 
 ## [로봇 설정하기](#로봇-설정하기)
 
@@ -414,6 +549,212 @@ Dr.R 예제를 선택하면 스마트 기기에 왼쪽과 같은 표정 화면�
 다양한 교육 관련 자료를 준비중에 있습니다.
 {: .notice}
 
+## [머신러닝기반의 사물인식](#머신러닝기반의-사물인식)
+ROBOTIS ENGINEER는 머신러닝(Tensor Flow)기반의 사물학습 및 객체인식 기능을 제공하고 있습니다.
+
+{% capture info_01 %}
+- 사물학습 및 객체인식을 사용하기 위해서는, 카메라가 장착된 스마트 기기가 있어야합니다.
+- 스마트 기기에 **[로보플러스 엔지니어 앱](#소프트웨어-다운로드)** 설치가 필요합니다.
+{% endcapture %}
+<div class="notice--info">{{ info_01 | markdownify}}</div>
+
+### [윈도우즈](#윈도우즈)
+{% capture info_02 %}
+**아나콘다 다운로드**  
+TensorFlow 이미지 학습을 하기 위해서 사용하는 PC에 `Anaconda3-4.2.0` 설치가 필요합니다.  
+- [윈도우즈 32bit](https://repo.continuum.io/archive/Anaconda3-4.2.0-Windows-x86.exe)  
+- [윈도우즈 64bit](https://repo.continuum.io/archive/Anaconda3-4.2.0-Windows-x86_64.exe)  
+{% endcapture %}
+<div class="notice">{{ info_02 | markdownify}}</div>
+
+#### [pip패키지 업그레이드](#pip패키지-업그레이드)
+
+1. 관리자 권한으로 명령 프롬프트를 실행해 주세요. (Ctrl +Shift를 누른상태에서 명령프롬프트를 클릭하셔도 됩니다.)
+
+    ![](/assets/images/edu/engineer/kit1/obj_classification_cmd_01.png)
+
+2. 실행하면 아래와 같은 화면이 나옵니다. 
+
+    ![](/assets/images/edu/engineer/kit1/obj_classification_cmd_02.png)
+
+3. 명령 프롬프트에서 아래의 명령어를 입력해주세요. 
+
+    ``` posh
+    python -m pip install --upgrade pip
+    ```
+
+    ![](/assets/images/edu/engineer/kit1/obj_classification_cmd_03.png)
+
+4. pip패키지가 성공적으로 업그레이드 된다면 아래와 같이 표시됩니다.
+
+    ![](/assets/images/edu/engineer/kit1/obj_classification_cmd_04.png)
+
+
+ pip패키지가 업그레이드 되지않는 다면, 아나콘다의 다운로드 경로가 `C 드라이브` 가 맞는지 확인해주세요.
+ {:.notice--info}
+
+#### [폴더생성](#폴더생성)
+
+1. `D 드라이브`에 `!R+Smart` 폴더를 만들어 주세요.
+    
+    ![](/assets/images/edu/engineer/kit1/obj_classification_mkdir_01.png)
+
+  PC에 `D 드라이브`가 없을경우 파티션분리를 통해서, `D 드라이브`를 생성 해주셔야합니다. 
+  {: .notice--info}
+          
+2. 현재 드라이브가 `C 드라이브` 이므로, 아래의 명령어를 입력하여 디렉토리를 변경해주세요. 
+    ``` posh
+    cd D:!R+Smart
+    ```
+  
+    ![](/assets/images/edu/engineer/kit1/obj_classification_mkdir_02.png) 
+
+    
+3. 아래의 명령어를 입력하여, 명령 프롬프트의 경로를 `D 드라이브` 로 이동후, 디렉토리를 변경해주세요
+  
+    ``` posh
+    d:
+    ```
+  
+    ![](/assets/images/edu/engineer/kit1/obj_classification_mkdir_03.png) 
+
+#### [아나콘다 가상실행 환경 만들기](#아나콘다-가상실행-환경-만들기)
+
+1. 아래의 명령어를 입력해서, 가상실행 환경을 구축해주세요.
+    
+    ``` posh
+    conda create -n tensorflow python=3.5
+    ```
+  
+    ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_01.png) 
+
+2. 설치여부를 묻습니다. `y` 입력후, `Enter Key`를 눌러 패키지 설치에 동의해주세요.
+ 
+    ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_02.png)
+
+3. 성공적으로 설치되면 아래의 사진과 같이 나옵니다. 
+  
+    ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_03.png)
+  
+#### [TensorFlow 설치하기](tensorflw-설치하기)
+
+머신러닝을 구동 시키기 위해, TensorFlow를 설치합니다. 
+
+1. 아래의 명령어를 입력하여, 앞서 구축했던 가상실행 환경(아나콘다)에 TensorFlow를 활성화 시킬 수 있습니다.
+
+    ```posh
+    activate tensorflow
+    ```
+  
+    ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_04.png)
+
+2. 마지막으로 아래의 명령어로 TensorFlow를 설치 해 주세요.
+
+    ```posh
+    pip install tensorflow
+    ```
+    
+    ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_05.png)
+
+#### [필요 파일 및 폴더 생성](#필요-파일-및-폴더-생성)
+
+1. `retrain.py` 파일을 다운로드 받아주세요. - [retrain.py 다운로드](http://www.robotis.com/service/download.php?no=1778)
+
+2. `!R+Smart`폴더에, 다운로드 받은 `retrain.py` 파일을 복사후, 객체 추가를 위한 `photos` 폴더를 만들어 주세요.
+    
+    ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_retrain.png)
+
+3. `photos` 폴더 안에 `001 dummy`, `002 banana` 그리고 `003 pineapple`과 같이 객체 이미지를 추가할 폴더를 만들고 필요한 이미지를 각각 폴더에 맞게 추가 해주세요.
+ 
+    ![](/assets/images/edu/engineer/kit1/obj_classification_image_01.png)
+ 
+ {% capture notice_01 %}
+  **참고** : 
+  - `001 dummy` 폴더는 지정해둔 객체 이외의 이미지에 반응하기 위해 만들어 주세요. 더미 폴더는 객체인식 오류를 줄여줄수가 있습니다.  
+  - 여러 이미지를 반복해서 트레이닝 시켜주어야 하기 때문에, 이미지 수는 많을 수록 좋습니다.
+  - 카메라의 객체 인식률을 높일려면 이미지를 100개 이상 각 객체폴더에 저장하는것을 추천드립니다.  
+  - 폴더명을 `001`, `002` 와 같은 숫자로 시작하면, 추가한 아이템번호가 순서대로 정렬 됩니다.
+  - 구글 크롬에서 머신러닝에 필요한 이미지를 한번에 저장할수 있습니다. [크롬에서 이미지 다운로드 하기](#크롬에서-이미지-다운로드-하기)를 참조 해주세요.
+ {% endcapture %}
+ <div class="notice">{{notice_01 | markdownify}}</div>
+
+  **주의** : 폴더 및 이미지 파일명은 반드시 영문으로 작성 해주세요.
+  {: .notice--warning}
+
+#### [이미지 학습](#이미지-학습)
+
+1. 아래의 명령어를 입력하여, `photos`폴더에 추가한 객체 이미지들을 학습 시킬수 있습니다.
+
+    ```posh
+    python retrain.py --bottleneck_dir=./bottlenecks --model_dir=./inception  --output_graph=./Smart_OC.pb --output_labels=./Smart_OC.txt --image_dir ./photos --architecture mobilenet_1.0_224 --how_many_training_steps 1000
+    ```
+  
+    ![](/assets/images/edu/engineer/kit1/obj_classification_img_learning_01.png)
+    
+  위의 명령어에서 `how_many_training_steps`은 이미지 학습의 횟수를 결정합니다. 횟수는 1000회 정도가 적당합니다. 위의 명령어는 1000회로 학습합니다. 
+  {: .notice--info}
+  
+  **주의** : 폴더 및 이미지 파일의 이름은 반드시 영문이어야 합니다. 한글 사용시 에러가 발생합니다.
+  {: .notice--warning}
+
+2. 학습이 완료되면 아래와 같이 `Smart_OC.txt` 와 `Smart_OC.pb` 파일이 `!R+Smart` 폴더에 생성됩니다. 
+
+   ![](/assets/images/edu/engineer/kit1/obj_classification_oc.png)
+
+#### [프로젝트에 학습 파일 적용하기](#프로젝트에-학습파일-적용하기)
+
+1. ROBOTIS ENGINEER가 설치된 스마트 기기를 PC와 연결해주세요. 
+  
+2. 연결된 스마트 기기의 폴더로 접근한뒤, RoboPlus -> ROBOTIS ENGINEER > CUSTOM 폴더를 찾아 더블클릭해주세요.
+
+    ![](/assets/images/edu/engineer/kit1/obj_classification_application_01.png)  
+    ![](/assets/images/edu/engineer/kit1/obj_classification_application_02.png)  
+    ![](/assets/images/edu/engineer/kit1/obj_classification_application_03.png)
+
+3. 원하는 프로젝트이름으로 폴더를 생성 해주세요. 아래에서는 `Project 1`을 생성 하겠습니다.
+
+    ![](/assets/images/edu/engineer/kit1/obj_classification_application_04.png)
+
+4. 데이터베이스를 사용하기 위해서 `Db` 폴더를 생성해주세요. 
+
+    ![](/assets/images/edu/engineer/kit1/obj_classification_application_05.png)
+
+5. `!R+Smart` 에서 생성된 학습파일(`Smart_OC.txt` 와 `Smart_OC.pb`)을 `Db` 폴더에 복사 해주세요.  
+
+    ![](/assets/images/edu/engineer/kit1/obj_classification_application_06.png)
+
+6. 휴대폰을 pc에서 분리후, `ROBOTIS ENGINEER` 앱을 실행합니다.
+
+    ![](/assets/images/edu/engineer/kit1/engineer_app_1.png)
+    
+7. `User Tab` 으로 이동합니다.
+
+    ![](/assets/images/edu/engineer/kit1/obj_classification_test_01.png)
+
+8. 생성한 사용자 폴더의 `설정` 버튼을 클릭합니다.   
+  
+    ![](/assets/images/edu/engineer/kit1/obj_classification_test_02.png)
+
+9. `비전` > `객체 분류` 로 들어갑니다.
+ 
+    ![](/assets/images/edu/engineer/kit1/obj_classification_test_03.png)
+      
+10. 이미지 폴더가 추가되었는지 확인합니다.
+    
+    ![](/assets/images/edu/engineer/kit1/obj_classification_test_04.png)
+
+11. 객체를 놓고, 카메라를 통해 사물인식이 잘 되는지 확인합니다.
+ 
+    ![](/assets/images/edu/engineer/kit1/obj_classification_test_05.png)   
+
+{% capture retrain %}
+**참고** : 기존 학습파일(`Smart_OC.txt` 와 `Smart_OC.pb`)에 새로운 데이터를 추가할 수 없습니다. 원하는 객체를 추가할려면, 사용하시는 객체 이미지폴더에 이미지 추가후, 새로운 학습파일을 만들어 주세요. 
+- [필요 파일 및 폴더 생성](#필요-파일-및-폴더-생성)
+- [이미지 학습](#이미지-학습)
+{% endcapture %}
+<div class="notice">{{ retrain | markdownify }}</div>
+
+
 # [소프트웨어 다운로드](#소프트웨어-다운로드)
 
 - ROBOTIS ENGINEER는 [로보플러스 태스크 3.0]을 지원합니다.
@@ -432,6 +773,44 @@ Dr.R 예제를 선택하면 스마트 기기에 왼쪽과 같은 표정 화면�
 <div class="notice--success">{{ app_install | markdownify }}</div>
 
 # [참고자료](#참고자료)
+
+## [크롬에서 이미지 다운로드 하기](#크롬에서-이미지-다운로드-하기)
+
+구글 크롬에서 확장 프로그램을 설치하여, 학습에 필요한 이미지 파일을 대량으로 다운로드 받을수 있습니다. 
+
+1. Bulk Image Downloader 확장 프로그램을 크롬에서 설치해주세요. - [Bulk Image Downloader 확장 프로그램 설치](https://chrome.google.com/webstore/detail/bulk-image-downloader/lamfengpphafgjdgacmmnpakdphmjlji) 
+
+    ![](/assets/images/edu/engineer/kit1/obj_classification_bulk_01.png)
+           
+2. 구글에서 학습에 필요한 객체의 이미지를 검색후, **페이지 상단 오른쪽 툴바에서 다운로드 받은 확장 프로그램**을 클릭해주세요. 여기서는 "바나나"를 검색 하겠습니다.
+
+    ![](/assets/images/edu/engineer/kit1/obj_classification_bulk_02.png)
+
+
+3. 클릭후 다음과 같은 창이 활성화 되면 `All tabs` 또는 `Current Tab`을 선택하여, 이미지를 선택하실수 있습니다. 
+
+    ![](/assets/images/edu/engineer/kit1/obj_classification_bulk_reference.png)
+    
+  {% capture reference %}
+  **참고** : 
+  - `All tabs`은 검색한 페이지의 모든 탭에서 이미지를 선택합니다. 많은 양의 이미지를 다운로드 받으실때 유용합니다.
+  - `Current Tab`은 검색한 페이지의 현재 탭에서 이미지를 선택합니다. 적당한 양의 이미지를 다운로드 받으실때 유용합니다.
+  {% endcapture %}
+  <div class="notice">{{ reference | markdownify }}</div>
+
+4. 필요한 객체의 이미지를 선택하고, `Download` 버튼을 클릭해주세요.
+
+    ![](/assets/images/edu/engineer/kit1/obj_classification_bulk_03.png)
+
+
+5. 다운로드 받은 "바나나" 객체의 이미지를 `002 banana` 폴더에 이동 시켜주세요. 
+
+    ![](/assets/images/edu/engineer/kit1/obj_classification_bulk_04.png)
+
+    ![](/assets/images/edu/engineer/kit1/obj_classification_bulk_05.png)
+
+**참조** : [이미지 학습](#이미지-학습)  
+{: .notice}
 
 ## [점검 및 자가진단](#점검-및-자가진단)
 

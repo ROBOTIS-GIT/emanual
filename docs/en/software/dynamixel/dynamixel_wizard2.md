@@ -21,7 +21,7 @@ sidebar:
 **Software Download(v2.0.1.3)**  
 [Windows](http://www.robotis.com/service/download.php?no=1670)  
 [Linux](http://www.robotis.com/service/download.php?no=1671)  
-[Mac](http://www.robotis.com/service/download.php?no=176)  
+[Mac](http://www.robotis.com/service/download.php?no=1760)  
 
 ## [DYNAMIXEL Wizard 2.0](#dynamixel-wizard-20)
 
