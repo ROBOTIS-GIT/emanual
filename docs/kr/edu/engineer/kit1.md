@@ -550,7 +550,7 @@ Dr.R 예제를 선택하면 스마트 기기에 왼쪽과 같은 표정 화면�
 {: .notice}
 
 ## [머신러닝기반의 사물인식](#머신러닝기반의-사물인식)
-ROBOTIS ENGINEER는 머신러닝(Tensor Flow)기반의 사물학습 및 객체인식 기능을 제공하고 있습니다.
+ROBOTIS ENGINEER는 머신러닝(Tensor Flow)기반의 사물학습 및 객체인식 기능을 사용 할 수 있습니다. 아래의 매뉴얼을 따라하며 머신러닝에 쉽게 접근해보세요.
 
 {% capture info_01 %}
 - 사물학습 및 객체인식을 사용하기 위해서는, 카메라가 장착된 스마트 기기가 있어야합니다.
@@ -599,8 +599,9 @@ TensorFlow 이미지 학습을 하기 위해서 사용하는 PC에 `Anaconda3-4.
     
     ![](/assets/images/edu/engineer/kit1/obj_classification_mkdir_01.png)
 
-  PC에 `D 드라이브`가 없을경우 파티션분리를 통해서, `D 드라이브`를 생성 해주셔야합니다. 
-  {: .notice--info}
+- 설치경로는, `D 드라이브` 또는 `C 드라이브` 등 상관없습니다. 매뉴얼에서는 `D 드라이브` 기준으로 설치하겠습니다.
+- 폴더이름은 사용자의 임의로 변경가능합니다. 매뉴얼에서는 `!R+Smart` 기준으로 설치하겠습니다. 
+{: .notice--info}
           
 2. 현재 드라이브가 `C 드라이브` 이므로, 아래의 명령어를 입력하여 디렉토리를 변경해주세요. 
     ``` posh
@@ -714,6 +715,9 @@ TensorFlow 이미지 학습을 하기 위해서 사용하는 PC에 `Anaconda3-4.
 3. 원하는 프로젝트이름으로 폴더를 생성 해주세요. 아래에서는 `Project 1`을 생성 하겠습니다.
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_application_04.png)
+
+**참고** : 이미 사용하시는 프로젝트가 있으시다면, **3번 단계**는 건너 뛰셔도 괜찮습니다. 
+{: .notice--info}
 
 4. 데이터베이스를 사용하기 위해서 `Db` 폴더를 생성해주세요. 
 
