@@ -656,13 +656,13 @@ The package utilizes OpenCV library in order to search for a ball with a specifi
 - Standalone   
 Execute the program with a `.launch` file in order to load ROS parameters of ball_detector.  
   ```
-  $ roslaunch ball_detector ball_detector.launch
+  $ roslaunch op3_ball_detector ball_detector.launch
   ```
 
 - Launch with usb_cam package  
 Execute the program with a `.launch` file in order to load ROS parameters.  
   ```
-  $ roslaunch ball_detector ball_detector_from_usb_cam.launch
+  $ roslaunch op3_ball_detector ball_detector_from_usb_cam.launch
   ```
  > Reference : [`usb_cam`]  
  > Reference : The following software must be pre-installed to use `usb_cam` package.  
