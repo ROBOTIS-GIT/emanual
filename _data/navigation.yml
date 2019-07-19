@@ -13991,6 +13991,8 @@ kit1:
     #   urlkr: /edu/engineer/kit1/#3d-프린팅
     # - titlekr: "교육자료"
     #   urlkr: /edu/engineer/kit1/#교육자료
+  - titlekr: "교육자료 신청하기"
+    urlkr: /edu/engineer/kit1/#교육자료-신청하기
   - titlekr: "소프트웨어 다운로드"
     urlkr: /edu/engineer/kit1/#소프트웨어-다운로드
   - titlekr: "참고자료"

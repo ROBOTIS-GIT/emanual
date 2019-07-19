@@ -317,7 +317,7 @@ product_group: 2xl430-w250
 - 페어링이 완료된 후에는 로봇과 PC의 거리가 멀어져도 통신이 끊어지지 않습니다.
 - 페어링이 한번 설정되면, 이후 멀리서도 페어링이 자동으로 됩니다.  
 {% endcapture %}
-<div class="notice">{{ pairing_01 | markdownify}}</div> 
+<div class="notice--info">{{ pairing_01 | markdownify}}</div> 
 
 #### [태스크 다운로드 (PC)](#태스크-다운로드-pc)
 
@@ -676,7 +676,7 @@ TensorFlow 이미지 학습을 하기 위해서 사용하는 PC에 `Anaconda3-4.
   - 폴더명을 `001`, `002` 와 같은 숫자로 시작하면, 추가한 아이템번호가 순서대로 정렬 됩니다.
   - 구글 크롬에서 머신러닝에 필요한 이미지를 한번에 저장할수 있습니다. [크롬에서 이미지 다운로드 하기](#크롬에서-이미지-다운로드-하기)를 참조 해주세요.
  {% endcapture %}
- <div class="notice">{{notice_01 | markdownify}}</div>
+ <div class="notice--info">{{notice_01 | markdownify}}</div>
 
   **주의** : 폴더 및 이미지 파일명은 반드시 영문으로 작성 해주세요.
   {: .notice--warning}
@@ -752,8 +752,19 @@ TensorFlow 이미지 학습을 하기 위해서 사용하는 PC에 `Anaconda3-4.
 - [필요 파일 및 폴더 생성](#필요-파일-및-폴더-생성)
 - [이미지 학습](#이미지-학습)
 {% endcapture %}
-<div class="notice">{{ retrain | markdownify }}</div>
+<div class="notice--info">{{ retrain | markdownify }}</div>
 
+
+# [교육자료 신청하기](#교육자료-신청하기)
+
+![](/assets/images/edu/engineer/kit1/engineer_edu_metarials.png)
+
+{% capture edu_application %}
+**아래의 링크에서 ROBOTIS ENGINEER Kit의 다양한 교육자료를 받을 수 있습니다.**  
+
+[교육자료 신청하기](https://www.robotis.com/pdf_project/register.php)
+{% endcapture %}
+<div class="notice--info">{{ edu_application | markdownify }}</div>
 
 # [소프트웨어 다운로드](#소프트웨어-다운로드)
 
@@ -796,7 +807,7 @@ TensorFlow 이미지 학습을 하기 위해서 사용하는 PC에 `Anaconda3-4.
   - `All tabs`은 검색한 페이지의 모든 탭에서 이미지를 선택합니다. 많은 양의 이미지를 다운로드 받으실때 유용합니다.
   - `Current Tab`은 검색한 페이지의 현재 탭에서 이미지를 선택합니다. 적당한 양의 이미지를 다운로드 받으실때 유용합니다.
   {% endcapture %}
-  <div class="notice">{{ reference | markdownify }}</div>
+  <div class="notice--info">{{ reference | markdownify }}</div>
 
 4. 필요한 객체의 이미지를 선택하고, `Download` 버튼을 클릭해주세요.
 
