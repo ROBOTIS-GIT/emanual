@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/kr/edu/engineer/kit1/
 sidebar:
-  title: ENGINEER Kit 1
+  title: 엔지니어 키트 1
   nav: "kit1"
 product_group: 2xl430-w250
 ---
@@ -33,18 +33,16 @@ product_group: 2xl430-w250
 
 #### [제품 사양](#제품-사양)  
 
-|      항목      |                                                            사양                                                            |
-|:--------------:|:--------------------------------------------------------------------------------------------------------------------------:|
-|      무게      |                                                           58.8g                                                            |
-|      MCU       |                                              ARM Cortex-M4 (168 [MHz], 32Bit)                                              |
-|  배터리 전압   |                                  허용 범위 : 6.5V ~ 15V, 권장 전압 : 11.1V (Li-PO 3cell)                                   |
-|   SMPS 전압    |                                         허용 범위 : 6.5V ~ 15V, 권장 전압 : 12.0V                                          |
-| Micro USB 전압 |                                         허용 범위 : 4.75V ~ 5.25V, 권장 전압 : 5.0V                                         |
-|  소모 전류량   |  대기시 : 50mA<br />포트 1 ~ 2 I/O 최대전류 : 0.5A<br />포트 3 ~ 5 I/O 최대전류 : 0.02A<br />전체 최대 전류 : 10A (Fuse)   |
-|   동작 온도    |                                                    -5&deg;C ~ 70&deg;C                                                     |
-|   통신 모듈    |                                                    BLE Slave 모듈 내장                                                     |
-| 내부 I/O 장치  | 버튼 : 2 개 (MODE 1, START 1)<br />마이크 (소리 감지) : 1<br />전압 센서 : 1<br />자이로 가속도 센서 : 1<br />RGB LED : 1  |
-| 외부 I/O 장치  | 부저: 1<br /> 로보티즈 5핀 포트 : 5<br />(서보모터/IR센서/온습도센서 : 1, 2번 포트 사용)<br />다이나믹셀 X 시리즈 포트 : 6 |
+|     항목      |                                                           사양                                                        |
+|:-------------:|:--------------------------------------------------------------------------------------------------------------------:|
+|     무게      |                                                            58.8g                                                        |
+|      MCU      |                                   ARM Cortex-M4 (168 [MHz], 32Bit)                                                   |
+|   동작 전압   |충전지 : 허용범위 6.5V ~ 15V, 권장 전압 11.1V (Li-PO 3cell)<br />SMPS : 허용범위 6.5V ~ 15V, 권장 전압 12.0V<br />Micro USB : 허용범위 4.75V ~ 5.25V, 권장 전압 5.0V|
+|  소모 전류량  | 대기시 : 50mA<br />포트 1 ~ 2 I/O 최대전류 : 0.5A<br />포트 3 ~ 5 I/O 최대전류 : 0.02A<br />전체 최대 전류 : 10A (Fuse)  |
+|   동작 온도   |                                                    -5&deg;C ~ 70&deg;C                                                |
+|   통신 모듈   |                                                    BLE Slave 모듈 내장                                                 |
+| 내부 I/O 장치 | 버튼 : 2 개 (MODE 1, START 1)<br />마이크 (소리 감지) : 1<br />부저 : 1<br />전압 센서 : 1<br />자이로 가속도 센서 : 1<br />RGB LED : 1 |
+| 외부 I/O 장치 |       로보티즈 5핀 포트 : 5<br />(서보모터/IR센서/온습도센서 : 1, 2번 포트 사용)<br />X 시리즈 다이나믹셀 포트 : 6       |
 
 
 #### [CM-550 각 부 명칭](#cm-550-각-부-명칭)  
@@ -69,15 +67,17 @@ product_group: 2xl430-w250
 - `MIC` 내장 마이크 : 박수 소리를 감지할 수 있는 마이크가 기본으로 내장되어 있습니다.
 - `FUSE` 퓨즈 : 10A 퓨즈가 내장되어 있습니다.
 
-**주의** :  CM-550 제어기의 USB 포트는 PC와의 통신용이므로 스마트 기기나 다른 장치와 연결하지 마세요. 제어기 고장의 원인이 될 수 있습니다.  
+**주의** : CM-550 제어기의 USB 포트는 PC와의 통신용이므로 스마트 기기나 다른 장치와 연결하지 마세요. 제어기 고장의 원인이 될 수 있습니다.  
 {: .notice--warning}
 
+**[CM-550 매뉴얼 바로가기]{: .blank}**
+{: .notice}
 
 ### [2XL430 다이나믹셀](#2xl430-다이나믹셀)
 
 ![](/assets/images/edu/engineer/kit1/2xl430_intro.png)
 
-2XL430은 2축 제어가 가능한 새로운 다이나믹셀입니다.
+2XL430-W250은 2축 제어가 가능한 새로운 다이나믹셀입니다.
 
 
 | 항목             | 내용                                                              |
@@ -222,11 +222,12 @@ product_group: 2xl430-w250
 
 ## [앱 설치하기](#앱-설치하기)
 
-{% capture app_install %}  
-현재 로보플러스 엔지니어는 비공개 상태입니다. 아래 링크를 통해 앱을 다운로드 받아 설치해 주세요.  
-- **[로보플러스 엔지니어 안드로이드 앱 다운로드](http://www.robotis.com/service/download.php?no=1773)**  
-- **로보플러스 태스크 3.0 [윈도우용 다운로드](http://www.robotis.com/service/download.php?no=1774), [안드로이드 앱 다운로드](http://www.robotis.com/service/download.php?no=1772)**
-- **참고** : [인터넷에서 다운로드 받은 앱 설치하기]{: .popup}
+{% capture app_install %}
+**로보플러스 엔지니어 : [안드로이드 앱 다운로드](http://www.robotis.com/service/download.php?no=1773)**  
+**로보플러스 태스크 3.0 : [안드로이드 앱 다운로드](http://www.robotis.com/service/download.php?no=1772)**  
+**로보플러스 태스크 3.0 : [윈도우용 다운로드](http://www.robotis.com/service/download.php?no=1774)**  
+
+**참고** : [인터넷에서 다운로드 받은 앱 설치하기]{: .popup}
 
 [인터넷에서 다운로드 받은 앱 설치하기]: /docs/kr/popup/apk_install
 {% endcapture %}
@@ -276,7 +277,7 @@ product_group: 2xl430-w250
 
 ## [예제 다운로드](#예제-다운로드)
 - CM-550 제어기에는 최초 출하시 KIT 1 타입에 맞는 프로그램이 기본적으로 다운로드되어 있습니다.  
-- 종합예제는 `Dr.R`, `MAX-E1`, `SPI` 세가지 로봇의 태스크 파일과 모션파일이 모두 포함된 예제입니다.
+- 종합예제는 `Dr.R`, `MAX-E1`, `SPI` 세가지 로봇이 모두 포함된 예제입니다.
 
 | 예제명    |                                 태스크 파일                                  |                                 모션 파일                                 |
 |:----------|:----------------------------------------------------------------------------:|:-------------------------------------------------------------------------:|
@@ -287,9 +288,11 @@ product_group: 2xl430-w250
 
 
 {% capture opening_exam %}
-**참조** :  
-[R+Task 3.0에서 태스크 예제 파일 열기](/docs/kr/software/rplustask3/#태스크-예제-열기)  
-[R+Task 3.0에서 모션 예제 파일 열기](/docs/kr/software/rplustask3/#모션-예제-열기)
+[로보플러스 태스크 3.0에서 태스크 예제 파일 열기](/docs/kr/software/rplustask3/#태스크-예제-열기)  
+[CM-550 제어기에 태스크 다운로드 하기](/docs/kr/software/rplustask3/#태스크-다운로드-하기)  
+
+[로보플러스 태스크 3.0에서 모션 예제 파일 열기](/docs/kr/software/rplustask3/#모션-예제-열기)  
+[CM-550 제어기에 모션 다운로드 하기](/docs/kr/software/rplustask3/#모션-다운로드-하기)
 {% endcapture %}
 <div class="notice">{{opening_exam | markdownify}}</div>
 
@@ -323,9 +326,9 @@ product_group: 2xl430-w250
 
 {% capture pairing_01 %}
 **참고** :
-- 첫 페어링 시 제어기의 `MODE` 버튼을 BT-410 Dongle과 가까이 연결하시는게 좋습니다.
+- 첫 페어링 시 제어기의 `MODE` 버튼쪽으로 BT-410 Dongle을 가까이 가져가면 자동으로 페어링됩니다.
 - 페어링이 완료된 후에는 로봇과 PC의 거리가 멀어져도 통신이 끊어지지 않습니다.
-- 페어링이 한번 설정되면, 이후 멀리서도 페어링이 자동으로 됩니다.  
+- 페어링이 한번 설정되면, 이후 멀리서도 자동으로 페어링이 됩니다.  
 {% endcapture %}
 <div class="notice--info">{{ pairing_01 | markdownify}}</div>
 
@@ -556,11 +559,8 @@ Dr.R 예제를 선택하면 스마트 기기에 왼쪽과 같은 표정 화면�
 
 # [튜토리얼](#튜토리얼)
 
-다양한 교육 관련 자료를 준비중에 있습니다.
-{: .notice}
-
-## [머신러닝기반의 사물인식](#머신러닝기반의-사물인식)
-ROBOTIS ENGINEER는 머신러닝(Tensor Flow)기반의 사물학습 및 객체인식 기능을 사용 할 수 있습니다. 아래의 매뉴얼을 따라하며 머신러닝에 쉽게 접근해보세요.
+## [머신러닝 기반의 사물인식](#머신러닝-기반의-사물인식)
+로보티즈 엔지니어는 머신러닝(Tensor Flow)기반의 사물학습 및 객체인식 기능을 사용할 수 있습니다. 아래의 매뉴얼을 따라하며 머신러닝에 쉽게 접근해보세요.
 
 {% capture info_01 %}
 - 사물학습 및 객체인식을 사용하기 위해서는, 카메라가 장착된 스마트 기기가 있어야합니다.
@@ -685,7 +685,6 @@ TensorFlow 이미지 학습을 하기 위해서 사용하는 PC에 `Anaconda3-4.
   - 여러 이미지를 반복해서 트레이닝 시켜주어야 하기 때문에, 이미지 수는 많을 수록 좋습니다.
   - 카메라의 객체 인식률을 높일려면 이미지를 100개 이상 각 객체폴더에 저장하는것을 추천드립니다.  
   - 폴더명을 `001`, `002` 와 같은 숫자로 시작하면, 추가한 아이템번호가 순서대로 정렬 됩니다.
-  - 구글 크롬에서 머신러닝에 필요한 이미지를 한번에 저장할수 있습니다. [크롬에서 이미지 다운로드 하기](#크롬에서-이미지-다운로드-하기)를 참조 해주세요.
  {% endcapture %}
  <div class="notice--info">{{notice_01 | markdownify}}</div>
 
@@ -716,18 +715,18 @@ TensorFlow 이미지 학습을 하기 위해서 사용하는 PC에 `Anaconda3-4.
 
 1. ROBOTIS ENGINEER가 설치된 스마트 기기를 PC와 연결해주세요.
 
-2. 연결된 스마트 기기의 폴더로 접근한뒤, RoboPlus -> ROBOTIS ENGINEER > CUSTOM 폴더를 찾아 더블클릭해주세요.
+2. 연결된 스마트 기기의 폴더로 접근한뒤, `RoboPlus` -> `ROBOTIS ENGINEER` > `CUSTOM` 폴더를 찾아 더블클릭해주세요.
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_application_01.png)  
     ![](/assets/images/edu/engineer/kit1/obj_classification_application_02.png)  
     ![](/assets/images/edu/engineer/kit1/obj_classification_application_03.png)
 
-3. 원하는 프로젝트이름으로 폴더를 생성 해주세요. 아래에서는 `Project 1`을 생성 하겠습니다.
+3. 원하는 프로젝트 이름으로 폴더를 생성해주세요. 아래에서는 `Project 1`을 생성하겠습니다.
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_application_04.png)
 
-**참고** : 이미 사용하시는 프로젝트가 있으시다면, **3번 단계** 는 건너 뛰셔도 괜찮습니다.
-{: .notice--info}
+    **참고** : 이미 사용중인 프로젝트가 있다면, **3번 단계**는 건너뛰셔도 됩니다.
+    {: .notice--info}
 
 4. 데이터베이스를 사용하기 위해서 `Db` 폴더를 생성해주세요.
 
@@ -737,7 +736,7 @@ TensorFlow 이미지 학습을 하기 위해서 사용하는 PC에 `Anaconda3-4.
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_application_06.png)
 
-6. 휴대폰을 pc에서 분리후, `ROBOTIS ENGINEER` 앱을 실행합니다.
+6. 휴대폰을 PC에서 분리후, `ROBOTIS ENGINEER` 앱을 실행합니다.
 
     ![](/assets/images/edu/engineer/kit1/engineer_app_1.png)
 
@@ -762,7 +761,7 @@ TensorFlow 이미지 학습을 하기 위해서 사용하는 PC에 `Anaconda3-4.
     ![](/assets/images/edu/engineer/kit1/obj_classification_test_05.png)   
 
 {% capture retrain %}
-**참고** : 기존 학습파일(`Smart_OC.txt` 와 `Smart_OC.pb`)에 새로운 데이터를 추가할 수 없습니다. 원하는 객체를 추가할려면, 사용하시는 객체 이미지폴더에 이미지 추가후, 새로운 학습파일을 만들어 주세요.
+**참고** : 기존 학습파일(`Smart_OC.txt` 와 `Smart_OC.pb`)에 새로운 데이터를 추가할 수 없습니다. 원하는 객체를 추가하려면, 사용하시는 객체 이미지폴더에 이미지 추가후, 새로운 학습파일을 만들어 주세요.
 - [필요 파일 및 폴더 생성](#필요-파일-및-폴더-생성)
 - [이미지 학습](#이미지-학습)
 {% endcapture %}
@@ -771,27 +770,28 @@ TensorFlow 이미지 학습을 하기 위해서 사용하는 PC에 `Anaconda3-4.
 
 # [교육자료 신청하기](#교육자료-신청하기)
 
-![](/assets/images/edu/engineer/kit1/engineer_edu_metarials.png)
-
 {% capture edu_application %}
-**아래의 링크에서 ROBOTIS ENGINEER Kit의 다양한 교육자료를 받을 수 있습니다.**  
+아래의 링크에서 로보티즈 엔지니어 키트의 다양한 교육자료를 받을 수 있습니다.
 
-[교육자료 신청하기](https://www.robotis.com/pdf_project/register.php)
+[**교육자료 신청하기**](https://www.robotis.com/pdf_project/register.php)
 {% endcapture %}
 <div class="notice--info">{{ edu_application | markdownify }}</div>
 
+![](/assets/images/edu/engineer/kit1/engineer_edu_metarials.png)
+
 # [소프트웨어 다운로드](#소프트웨어-다운로드)
 
-- ROBOTIS ENGINEER는 [로보플러스 태스크 3.0]을 지원합니다.
+- 로보티즈 엔지니어는 [로보플러스 태스크 3.0]을 지원합니다.
 - [로보플러스 태스크 3.0]은 기존의 [로보플러스 태스크 2.0]과 [로보플러스 모션 2.0]이 통합된 프로그램입니다.
 - 태스크 코드를 작성하여, 로봇을 원하는대로 명령으로 구동할 수 있습니다.
 - 모션파일로 로봇의 행동을 직접 만들어 줄 수 있습니다.
 
 {% capture app_install %}  
- 아래 링크를 통해 앱을 다운로드 받아 설치해 주세요.  
-- **[로보플러스 엔지니어 안드로이드 앱 다운로드](http://www.robotis.com/service/download.php?no=1773)**
-- **로보플러스 태스크 3.0 [윈도우용 다운로드](http://www.robotis.com/service/download.php?no=1774), [안드로이드 앱 다운로드](http://www.robotis.com/service/download.php?no=1772)**
-- **참고** : [인터넷에서 다운로드 받은 앱 설치하기]{: .popup}
+**로보플러스 엔지니어 : [안드로이드 앱 다운로드](http://www.robotis.com/service/download.php?no=1773)**  
+**로보플러스 태스크 3.0 : [안드로이드 앱 다운로드](http://www.robotis.com/service/download.php?no=1772)**  
+**로보플러스 태스크 3.0 : [윈도우용 다운로드](http://www.robotis.com/service/download.php?no=1774)**  
+
+**참고** : [인터넷에서 다운로드 받은 앱 설치하기]{: .popup}
 
 [인터넷에서 다운로드 받은 앱 설치하기]: /docs/kr/popup/apk_install
 {% endcapture %}
@@ -801,18 +801,21 @@ TensorFlow 이미지 학습을 하기 위해서 사용하는 PC에 `Anaconda3-4.
 
 ## [제어기 BLE 신호세기 설정](#제어기-ble-신호세기-설정)
 
-1. CM-550의 BLE 슬레이브와 연결 되어 있는 BT-410 마스터 모듈 또는 BT-410 Dongle의 전원이 꺼져 있도록 확인합니다. (만일 켜져 있는 경우 CM-550을 켜는 순간 서로 페어링 되며 BLE 신호 확인 및 설정을 할 수 없게 됩니다.)
-2. CM-550의 전원을 켜고 USB케이블로 PC에 연결합니다. (외부전원없이 USB케이블로 제어기에 충분한 전원공급이 가능합니다.)
+1. CM-550의 BLE와 연결되어 있는 BT-410 마스터 모듈 또는 BT-410 Dongle의 전원이 꺼져있는지 확인합니다.  
+  (만일 전원이 켜져 있는 경우 CM-550을 켜는 순간 서로 페어링 되며 BLE 신호 확인 및 설정을 할 수 없게 됩니다)
+
+2. CM-550의 전원을 켜고 USB 케이블로 PC에 연결합니다 (외부 전원 없이 USB 케이블로 제어기에 충분한 전원공급이 가능합니다).
+
 3. CM-550의 전원 LED가 깜박이는 것을 확인합니다. 
 
-    **참고** : CM-550의 전원 LED가 게속 켜진 상태로 유지된다면, 전원을 끈후 1번과정을 다시 확인 후 진행 해주세요.
+    **참고** : CM-550의 전원 LED가 깜빡이지 않는다면, 전원을 끈후 1번 과정을 확인 후 진행해주세요.
     {: .notice--info}
 
-4. R+Manager 2.0 을 실행합니다.
+4. 로보플러스 매니저 2.0 을 실행합니다.
 
     ![](/assets/images/edu/engineer/kit1/BLE_signal_power_01_kr.png)
 
-5.  `업데이트 검사` 를 클릭후, R+Manager 2.0이 최신버전인지 확인해주세요.
+5.  `업데이트 검사` 를 클릭한 다음, 로보플러스 매니저 2.0이 최신버전인지 확인합니다.
   
     ![](/assets/images/edu/engineer/kit1/BLE_signal_power_02_kr.png)  
     ![](/assets/images/edu/engineer/kit1/BLE_signal_power_03_kr.png)
@@ -821,47 +824,48 @@ TensorFlow 이미지 학습을 하기 위해서 사용하는 PC에 `Anaconda3-4.
 
     ![](/assets/images/edu/engineer/kit1/BLE_signal_power_04_kr.png)
 
-7. 제품에서 CM-550을 선택 후 `확인`을 클릭해주세요.
+7. 제품 중에서 CM-550을 선택 후 `확인` 을 클릭합니다.
 
     ![](/assets/images/edu/engineer/kit1/BLE_signal_power_05_kr.png)
 
-8.  `업데이트 & 테스트`를 클릭 해주세요.
+8.  `업데이트 & 테스트` 를 클릭합니다.
 
     ![](/assets/images/edu/engineer/kit1/BLE_signal_power_06_kr.png)
 
-9. `다음`을 클릭 해주세요.
+9. `다음` 을 클릭합니다.
 
     ![](/assets/images/edu/engineer/kit1/BLE_signal_power_07_kr.png)
 
-10. 연결된 제어기의 포트를 선택 해주세요.
+10. 연결된 제어기의 포트를 선택합니다.
 
     ![](/assets/images/edu/engineer/kit1/BLE_signal_power_08_kr.png)
 
-11. 제어기와 pc의 통신속도를 선택 해주세요.
+11. 제어기와 PC의 통신속도를 선택합니다.
 
     ![](/assets/images/edu/engineer/kit1/BLE_signal_power_09_kr.png)
 
-12. 제어기 검색이 완료돠면 `다음`을 클릭 해주세요.
+12. 제어기 검색이 완료되면 `다음` 을 클릭합니다.
 
     ![](/assets/images/edu/engineer/kit1/BLE_signal_power_10_kr.png)
 
-13. 다시한번 `다음`을 클릭 해주세요.
+13. `다음` 을 클릭합니다.
 
     ![](/assets/images/edu/engineer/kit1/BLE_signal_power_11_kr.png)
 
-14. 제어기와 PC가 성공적으로 연결이 되면, 아래 이미지와 같이 컨트롤 테이블이 활성화 됩니다.
+14. 제어기와 PC가 성공적으로 연결이 되면, 아래 이미지와 같이 컨트롤 테이블이 표시됩니다.
 
     ![](/assets/images/edu/engineer/kit1/BLE_signal_power_12_kr.png)
 
-15. 활성화된 컨트롤 테이블의 막대를 아래로 내려 `BLE Signal Power (139)` 컨트롤테이블 주솟값을 찾아서 클릭해주세요.
+15. 컨트롤 테이블을 스크롤해서 `BLE Signal Power (139)` 를 찾습니다.
 
     ![](/assets/images/edu/engineer/kit1/BLE_signal_power_13_kr.png)
 
-16. 화면 오른쪽의 `BLE Signal` 에서 원하시는 db값을 선택 후, 저장해주세요.
+16. 화면 오른쪽의 `BLE Signal Power` 에서 값을 선택 후 저장합니다.  
+  큰 값을 선택할수록 신호가 강해지며, 다른 장치와 간섭이 발생할 경우 신호를 줄여주세요.
 
     ![](/assets/images/edu/engineer/kit1/BLE_signal_power_14_kr.png)
 
-17. 마지막으로, `BLE Signal` 의 db값이 알맞게 저장되었는지 확인해주세요. 
+17. 마지막으로, `BLE Signal Power` 의 값이 저장되었는지 확인해주세요. 
 
     ![](/assets/images/edu/engineer/kit1/BLE_signal_power_15_kr.png)
 
@@ -934,6 +938,7 @@ CM-550에는 과전류가 흘러서 회로가 손상되는 것을 방지하기 �
 {: .notice--danger}
 
 
+[CM-550 매뉴얼 바로가기]: /docs/kr/parts/controller/cm-550/
 [2XL430-W250 매뉴얼 바로가기]: /docs/kr/dxl/x/2xl430-w250/
 [로보플러스 태스크 3.0]: /docs/kr/software/rplustask3/
 [로보플러스 태스크 2.0]: /docs/kr/software/rplus2/task/

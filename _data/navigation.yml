@@ -51,7 +51,6 @@ main:
     - title: "MX Series"
       titlekr: "MX 시리즈"
       url: /dxl/mx/
-      urlkr:
       children:
       - title: "MX-12W"
         titlekr: "MX-12W"
@@ -84,6 +83,9 @@ main:
       - title: "XL430-W250"
         titlekr: "XL430-W250"
         url: /dxl/x/xl430-w250/
+      - title: "2XL430-W250"
+        titlekr: "2XL430-W250"
+        url: /dxl/x/2xl430-w250/
       - title: "XM430-W210"
         titlekr: "XM430-W210"
         url: /dxl/x/xm430-w210/
@@ -362,6 +364,10 @@ main:
       - title: "ROBOTIS GP"
         titlekr: "ROBOTIS GP"
         url: /edu/bioloid/gp/
+    - titlekr: "로보티즈 엔지니어"
+      children:
+      - titlekr: "키트 1"
+        url: /edu/engineer/kit1/
     - title: "ROBOTIS MINI"
       titlekr: "로보티즈 미니"
       url: /edu/mini/
@@ -427,6 +433,8 @@ main:
       - title: "R+ Block"
         titlekr: "로보플러스 블록"
         url: /software/rplus2/rplus2_block/
+    - titlekr: "로보플러스 태스크 3.0"
+      url: /software/rplustask3/
     - title: "R+ Mobile"
       titlekr: "로보플러스 모바일"
       children:
@@ -494,6 +502,8 @@ main:
       - title: "CM-530"
         titlekr: "CM-530"
         url: /parts/controller/cm-530/
+      - titlekr: "CM-550"
+        url: /parts/controller/cm-550/
       - title: "CM-700"
         titlekr: "CM-700"
         url: /parts/controller/cm-700/
@@ -13963,8 +13973,8 @@ kit1:
   - titlekr: "튜토리얼"
     urlkr: /edu/engineer/kit1/#튜토리얼
     children:
-      - titlekr: "머신러닝기반의 사물인식"
-        urlkr: /edu/engineer/kit1/#머신러닝기반의-사물인식
+      - titlekr: "머신러닝 기반의 사물인식"
+        urlkr: /edu/engineer/kit1/#머신러닝-기반의-사물인식
         children: 
           - titlekr: "윈도우즈"
             urlkr: /edu/engineer/kit1/#윈도우즈
@@ -20182,8 +20192,8 @@ cm-550:
     titlekr: "충전하기"
     url: /parts/controller/cm-550/#charging
     urlkr: /parts/controller/cm-550/#충전하기
-  - titlekr: "배터리 잔량 확인하기"
-    urlkr: /parts/controller/cm-550/#배터리-잔량-확인하기
+  - titlekr: "충전지 잔량 확인하기"
+    urlkr: /parts/controller/cm-550/#충전지-잔량-확인하기
   - title: "Fuse Replacement"
     titlekr: "퓨즈 교체하기"
     url: /parts/controller/cm-550/#fuse-replacement
