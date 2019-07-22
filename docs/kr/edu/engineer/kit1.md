@@ -7,7 +7,7 @@ share: false
 author_profile: false
 permalink: /docs/kr/edu/engineer/kit1/
 sidebar:
-  title: ENGINEER Kit 1
+  title: 엔지니어 키트 1
   nav: "kit1"
 product_group: 2xl430-w250
 ---
