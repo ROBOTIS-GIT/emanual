@@ -768,7 +768,7 @@ TensorFlow 이미지 학습을 하기 위해서 사용하는 PC에 `Anaconda3-4.
 <div class="notice--info">{{ retrain | markdownify }}</div>
 
 
-# [교육자료 신청하기](#교육자료-신청하기)
+# [교육자료 다운로드](#교육자료-다운로드)
 
 {% capture edu_application %}
 아래의 링크에서 로보티즈 엔지니어 키트의 다양한 교육자료를 받을 수 있습니다.
@@ -802,21 +802,18 @@ TensorFlow 이미지 학습을 하기 위해서 사용하는 PC에 `Anaconda3-4.
 ## [제어기 BLE 신호세기 설정](#제어기-ble-신호세기-설정)
 
 1. CM-550의 BLE와 연결되어 있는 BT-410 마스터 모듈 또는 BT-410 Dongle의 전원이 꺼져있는지 확인합니다.  
-  (만일 전원이 켜져 있는 경우 CM-550을 켜는 순간 서로 페어링 되며 BLE 신호 확인 및 설정을 할 수 없게 됩니다)
+  (만일 전원이 켜져 있는 경우 CM-550을 켜는 순간 서로 페어링 되기 때문에 BLE 신호 확인 및 설정을 할 수 없습니다)
 
 2. CM-550의 전원을 켜고 USB 케이블로 PC에 연결합니다 (외부 전원 없이 USB 케이블로 제어기에 충분한 전원공급이 가능합니다).
 
-3. CM-550의 전원 LED가 깜박이는 것을 확인합니다. 
-
-    **참고** : CM-550의 전원 LED가 깜빡이지 않는다면, 전원을 끈후 1번 과정을 확인 후 진행해주세요.
-    {: .notice--info}
+3. CM-550의 `MODE` 버튼이 깜박이는 것을 확인합니다.
 
 4. 로보플러스 매니저 2.0 을 실행합니다.
 
     ![](/assets/images/edu/engineer/kit1/BLE_signal_power_01_kr.png)
 
-5.  `업데이트 검사` 를 클릭한 다음, 로보플러스 매니저 2.0이 최신버전인지 확인합니다.
-  
+5. `업데이트 검사` 를 클릭한 다음, 로보플러스 매니저 2.0이 최신버전인지 확인합니다.
+
     ![](/assets/images/edu/engineer/kit1/BLE_signal_power_02_kr.png)  
     ![](/assets/images/edu/engineer/kit1/BLE_signal_power_03_kr.png)
 
@@ -865,7 +862,7 @@ TensorFlow 이미지 학습을 하기 위해서 사용하는 PC에 `Anaconda3-4.
 
     ![](/assets/images/edu/engineer/kit1/BLE_signal_power_14_kr.png)
 
-17. 마지막으로, `BLE Signal Power` 의 값이 저장되었는지 확인해주세요. 
+17. 마지막으로, `BLE Signal Power` 의 값이 저장되었는지 확인해주세요.
 
     ![](/assets/images/edu/engineer/kit1/BLE_signal_power_15_kr.png)
 
