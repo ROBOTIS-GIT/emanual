@@ -67,7 +67,7 @@ product_group: 2xl430-w250
 - `MIC` 내장 마이크 : 박수 소리를 감지할 수 있는 마이크가 기본으로 내장되어 있습니다.
 - `FUSE` 퓨즈 : 10A 퓨즈가 내장되어 있습니다.
 
-**주의** :  CM-550 제어기의 USB 포트는 PC와의 통신용이므로 스마트 기기나 다른 장치와 연결하지 마세요. 제어기 고장의 원인이 될 수 있습니다.  
+**주의** : CM-550 제어기의 USB 포트는 PC와의 통신용이므로 스마트 기기나 다른 장치와 연결하지 마세요. 제어기 고장의 원인이 될 수 있습니다.  
 {: .notice--warning}
 
 
@@ -75,7 +75,7 @@ product_group: 2xl430-w250
 
 ![](/assets/images/edu/engineer/kit1/2xl430_intro.png)
 
-2XL430은 2축 제어가 가능한 새로운 다이나믹셀입니다.
+2XL430-W250은 2축 제어가 가능한 새로운 다이나믹셀입니다.
 
 
 | 항목             | 내용                                                              |
@@ -285,39 +285,39 @@ product_group: 2xl430-w250
 
 ### [PC에서 예제 다운로드](#pc에서-예제-다운로드)
 
-- Micro USB 포트를 이용하여, PC와 직접 연결하여 태스크(.tsk3) 및 모션(.mtn3) 파일을 원격으로 다운로드 받을 할 수 있습니다. 
-- CM-550에 내장된 BT-410 슬레이브 모듈과 BT-410 Dongle로 원격으로 다운로드 할 수 있습니다. 
+- Micro USB 포트를 이용하여, PC와 직접 연결하여 태스크(.tsk3) 및 모션(.mtn3) 파일을 원격으로 다운로드 받을 할 수 있습니다.
+- CM-550에 내장된 BT-410 슬레이브 모듈과 BT-410 Dongle로 원격으로 다운로드 할 수 있습니다.
 
 1. CM-550에 전원을 연결합니다.
 2. PC의 USB 포트에, BT-410 Dongle을 연결합니다.
 3. CM-550을 BT-410 Dongle에 가져다 대면, 페어링이 완료됩니다.
-4. R+Task3.0을 실행시킨후, 왼쪽 하단의 `연결`버튼을 클릭 해주세요. 
-  
+4. R+Task3.0을 실행시킨후, 왼쪽 하단의 `연결`버튼을 클릭 해주세요.
+
     ![](/assets/images/edu/engineer/kit1/remote_pairing_01.png)  
 
 5. `Use USB Dongle`을 클릭 해주세요.
-    
+
     ![](/assets/images/edu/engineer/kit1/remote_pairing_02.png)  
 
-6. 사용할 시리얼 포트를 검색 후, 시리얼 포트를 선택해 주세요. 
+6. 사용할 시리얼 포트를 검색 후, 시리얼 포트를 선택해 주세요.
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_03.png)  
 
 7. 이미지에 빨간색 박스가 그려져 있는곳을 클릭하여, PC와 제어기가 연결이 되도록 해주세요.   
-    
+
     ![](/assets/images/edu/engineer/kit1/remote_pairing_04.png)     
 
 8. 연결이 성공적으로 완료되면 '삐비빅' 소리가 납니다.  
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_05.png)  
-      
+
 {% capture pairing_01 %}
-**참고** : 
+**참고** :
 - 제어기의 UART 통신포트 근처를 BT-410 Dongle과 가까이 연결하시는게 좋습니다.
 - 페어링이 완료된 후에는 로봇과 PC의 거리가 멀어져도 통신이 끊어지지 않습니다.
 - 페어링이 한번 설정되면, 이후 멀리서도 페어링이 자동으로 됩니다.  
 {% endcapture %}
-<div class="notice--info">{{ pairing_01 | markdownify}}</div> 
+<div class="notice--info">{{ pairing_01 | markdownify}}</div>
 
 #### [태스크 다운로드 (PC)](#태스크-다운로드-pc)
 
@@ -327,11 +327,11 @@ product_group: 2xl430-w250
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_06.png)  
 
-2. 오른쪽 상단의 `프로그램 다운로드` 버튼을 클릭합니다. 
-  
+2. 오른쪽 상단의 `프로그램 다운로드` 버튼을 클릭합니다.
+
     ![](/assets/images/edu/engineer/kit1/remote_pairing_07.png)    
     ![](/assets/images/edu/engineer/kit1/remote_pairing_08.png)   
-  
+
 #### [모션 다운로드 (PC)](#모션-다운로드-pc)
 
 1. 제어기와 PC가 연결된 상태에서, 제품에 맞는 모션예제를 선택 합니다.
@@ -342,18 +342,18 @@ product_group: 2xl430-w250
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_10.png)  
 
-3. 오른쪽 상단의 `모션 다운로드`버튼을 클릭 합니다. 
+3. 오른쪽 상단의 `모션 다운로드`버튼을 클릭 합니다.
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_11.png)  
 
-4. 모션 다운로드 탭으로 이동하면, 모션 그룹목록을 선택할수 있습니다. 원하는 모션을 선택하여 제어기에 다운로드 해주세요. 
-    
+4. 모션 다운로드 탭으로 이동하면, 모션 그룹목록을 선택할수 있습니다. 원하는 모션을 선택하여 제어기에 다운로드 해주세요.
+
     ![](/assets/images/edu/engineer/kit1/remote_pairing_12.png)
 
 ### [스마트 기기에서 예제 다운로드](#스마트-기기에서-예제-다운로드)
-  
-R+Task3 앱을 이용하여 제어기에 파일을 다운로드 받는 방법입니다. 
-  
+
+R+Task3 앱을 이용하여 제어기에 파일을 다운로드 받는 방법입니다.
+
 1. R+Task3을 스마트 기기에서 실행 후, 이미지에서 빨간색 박스가 그려져 있는곳을 클릭해주세요.
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_01.png)  
@@ -363,18 +363,18 @@ R+Task3 앱을 이용하여 제어기에 파일을 다운로드 받는 방법입
     ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_02.png)  
 
 3. 제어기에 표시된 문자 (마지막 두자리)를 확인합니다.  
-  
+
     ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_02_1.png)
 
 4. 확인한 문자를 입력 해주세요.
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_03.png)  
 
-5. 연결할 블루투스를 검색후 활성화된 시리얼포트를 더블 클릭 또는 연결버튼을 클릭하여 제어기와 연결 해주세요. 
-  
+5. 연결할 블루투스를 검색후 활성화된 시리얼포트를 더블 클릭 또는 연결버튼을 클릭하여 제어기와 연결 해주세요.
+
     ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_04.png)    
     ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_05.png)  
-  
+
 #### [태스크 다운로드 (스마트 기기)](#태스크-다운로드-스마트-기기)
 
 원격으로 스마트 기기에서, 제어기로 태스크파일(.tsk3)을 다운로드 할수있습니다.  
@@ -382,7 +382,7 @@ R+Task3 앱을 이용하여 제어기에 파일을 다운로드 받는 방법입
 1. 제어기가 스마트 기기에 연결된 상태에서, 홈탭의 **태스크 예제**를 클릭하여 제품을 선택 해주세요.
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_06.png)
-  
+
 2. 빨간색 박스가 그려져 있는곳을 클릭하여, 제어기에 태스크 파일을 다운로드 해주세요.  
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_07.png)  
@@ -391,24 +391,24 @@ R+Task3 앱을 이용하여 제어기에 파일을 다운로드 받는 방법입
 #### [모션 다운로드 (스마트기기)](#모션-다운로드-스마트기기)
 
 1. 제어기가 스마트 기기에 연결된 상태에서, 홈탭의 **모션 예제**를 클릭하여 제품을 선택 해주세요.
-    
+
     ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_08.png)  
 
 2. **예제 선택하기**창이 활성화되면, 원하는 예제를 선택 해주세요.
-    
+
     ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_09.png)  
 
-3. 이미지에서 빨간색 박스가 그려져 있는곳을 선택 해주세요. 
+3. 이미지에서 빨간색 박스가 그려져 있는곳을 선택 해주세요.
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_10.png)  
 
 4. 이미지의 오른쪽 상단의 모션다운로드 탭을 클릭 해주세요.
- 
+
     ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_11.png)  
 
-5. 오른쪽 하단의 빨간색 `모션 다운로드` 버튼을 클릭하면, 모션파일을 제어기에 다운로드 할수있습니다. 
+5. 오른쪽 하단의 빨간색 `모션 다운로드` 버튼을 클릭하면, 모션파일을 제어기에 다운로드 할수있습니다.
 
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_12.png) 
+    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_12.png)
 
 ## [예제 실행하기](#예제-실행하기)
 
@@ -573,11 +573,11 @@ TensorFlow 이미지 학습을 하기 위해서 사용하는 PC에 `Anaconda3-4.
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_cmd_01.png)
 
-2. 실행하면 아래와 같은 화면이 나옵니다. 
+2. 실행하면 아래와 같은 화면이 나옵니다.
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_cmd_02.png)
 
-3. 명령 프롬프트에서 아래의 명령어를 입력해주세요. 
+3. 명령 프롬프트에서 아래의 명령어를 입력해주세요.
 
     ``` posh
     python -m pip install --upgrade pip
@@ -596,57 +596,57 @@ TensorFlow 이미지 학습을 하기 위해서 사용하는 PC에 `Anaconda3-4.
 #### [폴더생성](#폴더생성)
 
 1. `D 드라이브`에 `!R+Smart` 폴더를 만들어 주세요.
-    
+
     ![](/assets/images/edu/engineer/kit1/obj_classification_mkdir_01.png)
 
 - 설치경로는, `D 드라이브` 또는 `C 드라이브` 등 상관없습니다. 매뉴얼에서는 `D 드라이브` 기준으로 설치하겠습니다.
-- 폴더이름은 사용자의 임의로 변경가능합니다. 매뉴얼에서는 `!R+Smart` 기준으로 설치하겠습니다. 
+- 폴더이름은 사용자의 임의로 변경가능합니다. 매뉴얼에서는 `!R+Smart` 기준으로 설치하겠습니다.
 {: .notice--info}
-          
-2. 현재 드라이브가 `C 드라이브` 이므로, 아래의 명령어를 입력하여 디렉토리를 변경해주세요. 
+
+2. 현재 드라이브가 `C 드라이브` 이므로, 아래의 명령어를 입력하여 디렉토리를 변경해주세요.
     ``` posh
     cd D:!R+Smart
     ```
-  
-    ![](/assets/images/edu/engineer/kit1/obj_classification_mkdir_02.png) 
 
-    
+    ![](/assets/images/edu/engineer/kit1/obj_classification_mkdir_02.png)
+
+
 3. 아래의 명령어를 입력하여, 명령 프롬프트의 경로를 `D 드라이브` 로 이동후, 디렉토리를 변경해주세요
-  
+
     ``` posh
     d:
     ```
-  
-    ![](/assets/images/edu/engineer/kit1/obj_classification_mkdir_03.png) 
+
+    ![](/assets/images/edu/engineer/kit1/obj_classification_mkdir_03.png)
 
 #### [아나콘다 가상실행 환경 만들기](#아나콘다-가상실행-환경-만들기)
 
 1. 아래의 명령어를 입력해서, 가상실행 환경을 구축해주세요.
-    
+
     ``` posh
     conda create -n tensorflow python=3.5
     ```
-  
-    ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_01.png) 
+
+    ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_01.png)
 
 2. 설치여부를 묻습니다. `y` 입력후, `Enter Key`를 눌러 패키지 설치에 동의해주세요.
- 
+
     ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_02.png)
 
-3. 성공적으로 설치되면 아래의 사진과 같이 나옵니다. 
-  
+3. 성공적으로 설치되면 아래의 사진과 같이 나옵니다.
+
     ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_03.png)
-  
+
 #### [TensorFlow 설치하기](tensorflw-설치하기)
 
-머신러닝을 구동 시키기 위해, TensorFlow를 설치합니다. 
+머신러닝을 구동 시키기 위해, TensorFlow를 설치합니다.
 
 1. 아래의 명령어를 입력하여, 앞서 구축했던 가상실행 환경(아나콘다)에 TensorFlow를 활성화 시킬 수 있습니다.
 
     ```posh
     activate tensorflow
     ```
-  
+
     ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_04.png)
 
 2. 마지막으로 아래의 명령어로 TensorFlow를 설치 해 주세요.
@@ -654,7 +654,7 @@ TensorFlow 이미지 학습을 하기 위해서 사용하는 PC에 `Anaconda3-4.
     ```posh
     pip install tensorflow
     ```
-    
+
     ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_05.png)
 
 #### [필요 파일 및 폴더 생성](#필요-파일-및-폴더-생성)
@@ -662,15 +662,15 @@ TensorFlow 이미지 학습을 하기 위해서 사용하는 PC에 `Anaconda3-4.
 1. `retrain.py` 파일을 다운로드 받아주세요. - [retrain.py 다운로드](http://www.robotis.com/service/download.php?no=1778)
 
 2. `!R+Smart`폴더에, 다운로드 받은 `retrain.py` 파일을 복사후, 객체 추가를 위한 `photos` 폴더를 만들어 주세요.
-    
+
     ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_retrain.png)
 
 3. `photos` 폴더 안에 `001 dummy`, `002 banana` 그리고 `003 pineapple`과 같이 객체 이미지를 추가할 폴더를 만들고 필요한 이미지를 각각 폴더에 맞게 추가 해주세요.
- 
+
     ![](/assets/images/edu/engineer/kit1/obj_classification_image_01.png)
- 
+
  {% capture notice_01 %}
-  **참고** : 
+  **참고** :
   - `001 dummy` 폴더는 지정해둔 객체 이외의 이미지에 반응하기 위해 만들어 주세요. 더미 폴더는 객체인식 오류를 줄여줄수가 있습니다.  
   - 여러 이미지를 반복해서 트레이닝 시켜주어야 하기 때문에, 이미지 수는 많을 수록 좋습니다.
   - 카메라의 객체 인식률을 높일려면 이미지를 100개 이상 각 객체폴더에 저장하는것을 추천드립니다.  
@@ -689,23 +689,23 @@ TensorFlow 이미지 학습을 하기 위해서 사용하는 PC에 `Anaconda3-4.
     ```posh
     python retrain.py --bottleneck_dir=./bottlenecks --model_dir=./inception  --output_graph=./Smart_OC.pb --output_labels=./Smart_OC.txt --image_dir ./photos --architecture mobilenet_1.0_224 --how_many_training_steps 1000
     ```
-  
+
     ![](/assets/images/edu/engineer/kit1/obj_classification_img_learning_01.png)
-    
-  위의 명령어에서 `how_many_training_steps`은 이미지 학습의 횟수를 결정합니다. 횟수는 1000회 정도가 적당합니다. 위의 명령어는 1000회로 학습합니다. 
+
+  위의 명령어에서 `how_many_training_steps`은 이미지 학습의 횟수를 결정합니다. 횟수는 1000회 정도가 적당합니다. 위의 명령어는 1000회로 학습합니다.
   {: .notice--info}
-  
+
   **주의** : 폴더 및 이미지 파일의 이름은 반드시 영문이어야 합니다. 한글 사용시 에러가 발생합니다.
   {: .notice--warning}
 
-2. 학습이 완료되면 아래와 같이 `Smart_OC.txt` 와 `Smart_OC.pb` 파일이 `!R+Smart` 폴더에 생성됩니다. 
+2. 학습이 완료되면 아래와 같이 `Smart_OC.txt` 와 `Smart_OC.pb` 파일이 `!R+Smart` 폴더에 생성됩니다.
 
    ![](/assets/images/edu/engineer/kit1/obj_classification_oc.png)
 
 #### [프로젝트에 학습 파일 적용하기](#프로젝트에-학습파일-적용하기)
 
-1. ROBOTIS ENGINEER가 설치된 스마트 기기를 PC와 연결해주세요. 
-  
+1. ROBOTIS ENGINEER가 설치된 스마트 기기를 PC와 연결해주세요.
+
 2. 연결된 스마트 기기의 폴더로 접근한뒤, RoboPlus -> ROBOTIS ENGINEER > CUSTOM 폴더를 찾아 더블클릭해주세요.
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_application_01.png)  
@@ -716,10 +716,10 @@ TensorFlow 이미지 학습을 하기 위해서 사용하는 PC에 `Anaconda3-4.
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_application_04.png)
 
-**참고** : 이미 사용하시는 프로젝트가 있으시다면, **3번 단계**는 건너 뛰셔도 괜찮습니다. 
+**참고** : 이미 사용하시는 프로젝트가 있으시다면, **3번 단계**는 건너 뛰셔도 괜찮습니다.
 {: .notice--info}
 
-4. 데이터베이스를 사용하기 위해서 `Db` 폴더를 생성해주세요. 
+4. 데이터베이스를 사용하기 위해서 `Db` 폴더를 생성해주세요.
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_application_05.png)
 
@@ -730,29 +730,29 @@ TensorFlow 이미지 학습을 하기 위해서 사용하는 PC에 `Anaconda3-4.
 6. 휴대폰을 pc에서 분리후, `ROBOTIS ENGINEER` 앱을 실행합니다.
 
     ![](/assets/images/edu/engineer/kit1/engineer_app_1.png)
-    
+
 7. `User Tab` 으로 이동합니다.
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_test_01.png)
 
 8. 생성한 사용자 폴더의 `설정` 버튼을 클릭합니다.   
-  
+
     ![](/assets/images/edu/engineer/kit1/obj_classification_test_02.png)
 
 9. `비전` > `객체 분류` 로 들어갑니다.
- 
+
     ![](/assets/images/edu/engineer/kit1/obj_classification_test_03.png)
-      
+
 10. 이미지 폴더가 추가되었는지 확인합니다.
-    
+
     ![](/assets/images/edu/engineer/kit1/obj_classification_test_04.png)
 
 11. 객체를 놓고, 카메라를 통해 사물인식이 잘 되는지 확인합니다.
- 
+
     ![](/assets/images/edu/engineer/kit1/obj_classification_test_05.png)   
 
 {% capture retrain %}
-**참고** : 기존 학습파일(`Smart_OC.txt` 와 `Smart_OC.pb`)에 새로운 데이터를 추가할 수 없습니다. 원하는 객체를 추가할려면, 사용하시는 객체 이미지폴더에 이미지 추가후, 새로운 학습파일을 만들어 주세요. 
+**참고** : 기존 학습파일(`Smart_OC.txt` 와 `Smart_OC.pb`)에 새로운 데이터를 추가할 수 없습니다. 원하는 객체를 추가할려면, 사용하시는 객체 이미지폴더에 이미지 추가후, 새로운 학습파일을 만들어 주세요.
 - [필요 파일 및 폴더 생성](#필요-파일-및-폴더-생성)
 - [이미지 학습](#이미지-학습)
 {% endcapture %}
@@ -791,23 +791,23 @@ TensorFlow 이미지 학습을 하기 위해서 사용하는 PC에 `Anaconda3-4.
 
 ## [크롬에서 이미지 다운로드 하기](#크롬에서-이미지-다운로드-하기)
 
-구글 크롬에서 확장 프로그램을 설치하여, 학습에 필요한 이미지 파일을 대량으로 다운로드 받을수 있습니다. 
+구글 크롬에서 확장 프로그램을 설치하여, 학습에 필요한 이미지 파일을 대량으로 다운로드 받을수 있습니다.
 
-1. Bulk Image Downloader 확장 프로그램을 크롬에서 설치해주세요. - [Bulk Image Downloader 확장 프로그램 설치](https://chrome.google.com/webstore/detail/bulk-image-downloader/lamfengpphafgjdgacmmnpakdphmjlji) 
+1. Bulk Image Downloader 확장 프로그램을 크롬에서 설치해주세요. - [Bulk Image Downloader 확장 프로그램 설치](https://chrome.google.com/webstore/detail/bulk-image-downloader/lamfengpphafgjdgacmmnpakdphmjlji)
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_bulk_01.png)
-           
+
 2. 구글에서 학습에 필요한 객체의 이미지를 검색후, **페이지 상단 오른쪽 툴바에서 다운로드 받은 확장 프로그램**을 클릭해주세요. 여기서는 "바나나"를 검색 하겠습니다.
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_bulk_02.png)
 
 
-3. 클릭후 다음과 같은 창이 활성화 되면 `All tabs` 또는 `Current Tab`을 선택하여, 이미지를 선택하실수 있습니다. 
+3. 클릭후 다음과 같은 창이 활성화 되면 `All tabs` 또는 `Current Tab`을 선택하여, 이미지를 선택하실수 있습니다.
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_bulk_reference.png)
-    
+
   {% capture reference %}
-  **참고** : 
+  **참고** :
   - `All tabs`은 검색한 페이지의 모든 탭에서 이미지를 선택합니다. 많은 양의 이미지를 다운로드 받으실때 유용합니다.
   - `Current Tab`은 검색한 페이지의 현재 탭에서 이미지를 선택합니다. 적당한 양의 이미지를 다운로드 받으실때 유용합니다.
   {% endcapture %}
@@ -818,7 +818,7 @@ TensorFlow 이미지 학습을 하기 위해서 사용하는 PC에 `Anaconda3-4.
     ![](/assets/images/edu/engineer/kit1/obj_classification_bulk_03.png)
 
 
-5. 다운로드 받은 "바나나" 객체의 이미지를 `002 banana` 폴더에 이동 시켜주세요. 
+5. 다운로드 받은 "바나나" 객체의 이미지를 `002 banana` 폴더에 이동 시켜주세요.
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_bulk_04.png)
 
