@@ -39,30 +39,6 @@ sidebar:
 
 # [시작하기](#시작하기)
 
-## [소프트웨어 설치](#소프트웨어-설치)
-
-1. 로보플러스 태스크 3.0을 다운로드 받으세요.  
-  [`윈도우 로보플러스 태스크 3.0 다운로드`]{: .blank}
-
-2. 다운로드받은 R+Task 3.0 설치파일을 더블클릭해서 실행한다음 설치과정을 안내할 언어로 `한국어`를 선택합니다.  
-  ![](/assets/images/sw/rplus_task3/rplustask3_install_01_kr.png)
-
-3. `다음` 버튼을 눌러 마법사를 이용한 설치를 진행합니다.  
-  ![](/assets/images/sw/rplus_task3/rplustask3_install_02_kr.png)
-
-4. `사용권 계약의 조항에 동의합니다`를 선택하고 `다음` 버튼을 클릭합니다.  
-  ![](/assets/images/sw/rplus_task3/rplustask3_install_03_kr.png)
-
-5. 프로그램을 설치할 위치를 확인하고 `다음` 버튼을 클릭합니다.  
-  ![](/assets/images/sw/rplus_task3/rplustask3_install_04_kr.png)
-
-6. 설치 준비가 완료되면 `설치` 버튼을 클릭해서 설치를 시작합니다.  
-  ![](/assets/images/sw/rplus_task3/rplustask3_install_05_kr.png)  
-  ![](/assets/images/sw/rplus_task3/rplustask3_install_06_kr.png)
-
-7. 설치가 완료되면 `완료` 버튼을 눌러 종료합니다.  
-  ![](/assets/images/sw/rplus_task3/rplustask3_install_07_kr.png)
-
 ## [메뉴 설명](#메뉴-설명)
 
 1. 홈 탭  
@@ -270,7 +246,7 @@ sidebar:
 ### [주석](#주석)
 
 - 프로그램의 설명이 필요한 경우 해당 줄에 주석(메모)을 추가할 수 있습니다.
-- // 기호가 삽입되면 더블 클릭하여 내용을 수정할 수 있습니다.
+- "//" 기호가 삽입되면 더블 클릭하여 내용을 수정할 수 있습니다.
 - 주석을 작성하던 도중에 “취소”(혹은 ESC)버튼을 클릭하면 입력 전의 내용으로 복구됩니다.
 - 아래는 코드에 주석을 추가해 해석을 돕는 예제입니다.
 
@@ -323,7 +299,7 @@ sidebar:
 ### [다중 수식](#다중-수식)
 
 - 복잡한 계산식을 실행할 때 사용하는 명령어입니다.
-- 수식 내에는 변수 또는 상수만 사용이 가능하며, 아래 그림과 같이 그 밖의 값은 변수에 대입하여 사용해야 합니다.
+- 수식 내부에서는 변수 또는 상수만 사용이 가능하며, 아래 그림과 같이 그 밖의 값은 변수에 대입하여 사용해야 합니다.
 
 
 ![](/assets/images/sw/rplus_task3/multiple_expression_1.png)
@@ -405,7 +381,7 @@ sidebar:
 ### [아니면 만약](#아니면-만약)
 
 - “만약”에 이어서 또 다른 조건을 검사할 때 사용합니다.
-- 반드시 처음 조건으로 만약 구문이 존재해야 합니다.
+- 반드시 처음 조건으로 "만약" 구문이 존재해야 합니다.
 - C언어의 else if와 같은 개념입니다.
 - 아래는 만약과 아니면 만약을 사용하여 “변수 값이 100과 같으면?”과 “변수 값이 50과 같으면?”을 모두 판단하는 예제입니다.
 
@@ -536,7 +512,7 @@ sidebar:
 
   ![](/assets/images/sw/rplus_task3/task3_067.png)
 
-- 아래는 “복귀”를 사용하여 함수가 실행되는 도중에 복귀한 예제입니다..
+- 아래는 “복귀”를 사용하여 함수가 실행되는 도중에 복귀한 예제입니다.
 
   ![](/assets/images/sw/rplus_task3/task3_068.png)
 
@@ -550,7 +526,7 @@ sidebar:
   - 외부 장치와의 통신 횟수가 최대 2회로 제약이 있습니다.
   - 콜백 함수의 작성에 있어 코드크기가 512bytes를 넘을 수 없습니다.
 
-- 아래는 콜백 함수를 사용하여 받은 무선 데이터를 “수신데이터”변수에 저장하는 예제입니다.
+- 아래는 콜백 함수를 사용하여 받은 무선 데이터를 “수신데이터” 변수에 저장하는 예제입니다.
 
   ![](/assets/images/sw/rplus_task3/task3_069.png)
 
@@ -574,7 +550,7 @@ R+ Task 3.0에서 사용하는 파라미터를 설명합니다. 각 장치에 �
 ### [주변장치(감속모터)](#주변장치감속모터)
 
 - 제어기에 연결된 감속모터를 제어하기 위해 사용합니다.
-- 제어기마다 연결할 수 있는 장치가 다릅니다. 제어기 기능 비교를 참고하세요. [제어기 기능 비교]
+- 제어기마다 연결할 수 있는 장치가 다릅니다. 제어기 호환표를 참고하세요. [제어기 호환표]
 - 방향 : CW(Clock Wise : 시계 방향), CCW(Counter Clock Wise : 반시계 방향)
 - 출력 : 값 범위는 0~1023이며, 0일 때 정지, 1023일 때 100% 출력으로 설정됩니다.
 
@@ -591,7 +567,7 @@ R+ Task 3.0에서 사용하는 파라미터를 설명합니다. 각 장치에 �
 ### [주변장치(서보모터: 동작모드/속도/위치)](#주변장치서보모터-동작모드속도위치)
 
 - 제어기에 연결된 서보모터를 제어하기 위해 사용합니다.
-- 제어기마다 연결할 수 있는 장치가 다릅니다. 제어기 기능 비교를 참고하세요. [제어기 기능 비교]
+- 제어기마다 연결할 수 있는 장치가 다릅니다. 제어기 호환표를 참고하세요. [제어기 호환표]
 - 서보모터 동작모드 : 속도모드와 관절모드를 선택할수있습니다.( CM-550제외 )
 
   ![](/assets/images/sw/rplus_task3/servo_mode_selection.png)
@@ -612,7 +588,7 @@ R+ Task 3.0에서 사용하는 파라미터를 설명합니다. 각 장치에 �
 
   ![](/assets/images/sw/rplus_task3/servo_joint.png)
 
-- CM-550은 모터의 모드가 속도모드와 관절모드가 지정되어있습니다.
+- CM-550은 모터의 동작모드가 속도모드와 관절모드가 지정되어있습니다. 그러므로 다른 제어기와 동작모드에 속도 모드와 관절 모드를 지정해줄 필요없이 바로 사용가능합니다.
 
   ![](/assets/images/sw/rplus_task3/cm550_servo_selection.png)  
 
@@ -622,7 +598,7 @@ R+ Task 3.0에서 사용하는 파라미터를 설명합니다. 각 장치에 �
 ### [주변장치(LED 모듈)](#주변장치led-모듈)
 
 - 제어기에 연결된 LED 모듈을 제어하기 위해 사용합니다.
-- 제어기마다 연결할 수 있는 장치가 다릅니다. 제어기 기능 비교를 참고하세요. [제어기 기능 비교]
+- 제어기마다 연결할 수 있는 장치가 다릅니다. 제어기 호환표를 참고하세요. [제어기 호환표]
 - LED 모듈의 오른쪽 LED와 왼쪽 LED를 켜거나 끌 수 있습니다.
 
   ![](/assets/images/sw/rplus_task3/task3_077.png)
@@ -633,7 +609,7 @@ R+ Task 3.0에서 사용하는 파라미터를 설명합니다. 각 장치에 �
 
 ### [주변장치(여러가지 센서)](#주변장치여러가지-센서)
 
-제어기에 연결된 여러 센서를 제어하기 위해 사용합니다. 제어기마다 연결할 수 있는 센서가 다릅니다. 제어기 기능 비교를 참고하세요. [제어기 기능 비교]
+제어기에 연결된 여러 센서를 제어하기 위해 사용합니다. 제어기마다 연결할 수 있는 장치가 다릅니다. 제어기 호환표를 참고하세요. [제어기 호환표]
 
 - 접촉센서 : 접촉센서의 접촉 여부를 읽어오기 위해 사용합니다. (True일 때 접촉됨, False일 때 접촉되지 않음)
   - [접촉 센서 부품 정보]
@@ -682,11 +658,13 @@ R+ Task 3.0에서 사용하는 파라미터를 설명합니다. 각 장치에 �
     ![](/assets/images/sw/rplus_task3/task3_086.png)
 
 - 온습도 센서 : 물체의 온도와 습도를 읽어오기 위해 사용합니다. (온도 범위 : -20~120&deg;C, 습도 범위 : 0~100%)
+  - [온습도 센서 부품 정보]
   - 아래는 온습도 센서를 사용한 예제입니다.
 
     ![](/assets/images/sw/rplus_task3/task3_087.png)
 
 - 조도 센서 : 장소의 밝기를 감지하기 위해 사용합니다. (값 범위 0~ 1023, 값이 0에 가까울수록 주위가 어둡습니다.)
+  - [조도 센서 부품 정보]
   - 아래는 조도 센서를 사용한 예제입니다.
 
     ![](/assets/images/sw/rplus_task3/task3_088.png)
@@ -743,7 +721,7 @@ R+ Task 3.0에서 사용하는 파라미터를 설명합니다. 각 장치에 �
 - 제어기에 내장된 마이크를 사용하여 일정 수준 이상의 큰 소리가 날 경우 1회씩 카운트하는 기능입니다. 대표적인 예로 박수 소리를 카운트하여 로봇을 동작시킬 때 많이 사용합니다.
 - 제어기마다 지원하는 센서의 종류가 다릅니다. 각 제어기의 매뉴얼을 참고하세요.
 
-  - [CM-100A], [CM-150], [CM-200], [CM-5], [CM-510], [CM-530], [CM-700], [OpenCM]
+  - [CM-5], [CM-50], [CM-100A], [CM-150], [CM-200], [CM-510], [CM-530], [CM-550], [CM-700], [OpenCM 7.0], [OpenCM 9.04]
 
 - 최종 소리감지 횟수 : 감지된 소리 횟수를 누적하여 카운트합니다. 초기화가 필요한 경우 0값을 직접 입력해야 합니다.
 - 아래는 최종 소리감지 횟수를 이용한 예제입니다.
@@ -761,7 +739,7 @@ R+ Task 3.0에서 사용하는 파라미터를 설명합니다. 각 장치에 �
 - 적외선 센서의 값 범위는 0~1023입니다. 물체와의 거리가 가까울수록 큰 값을 가지며, 거리가 멀수록 작은 값을 가집니다.
 - 제어기마다 내장된 센서의 종류가 다릅니다. 각 제어기의 매뉴얼을 참고하세요.
 
-  - [CM-100A], [CM-150], [CM-200], [CM-5], [CM-510], [CM-530], [CM-700], [OpenCM]
+  - [CM-5], [CM-50], [CM-100A], [CM-150], [CM-200], [CM-510], [CM-530], [CM-550], [CM-700], [OpenCM 7.0], [OpenCM 9.04]
 
 - 왼쪽 적외선 센서 : 제어기 왼쪽 하단에 위치한 적외선 센서의 값을 읽어올 때 사용합니다.
 - 중앙 적외선 센서 : 제어기 전면 중앙에 위치한 적외선 센서의 값을 읽어올 때 사용합니다.
@@ -775,7 +753,7 @@ R+ Task 3.0에서 사용하는 파라미터를 설명합니다. 각 장치에 �
 - 제어기에 내장된 버튼의 값을 읽어올 때 사용합니다.
 - 제어기마다 지원하는 센서의 종류가 다릅니다. 각 제어기의 매뉴얼을 참고하세요.
 
-  - [CM-100A], [CM-150], [CM-200], [CM-5], [CM-510], [CM-530], [CM-700], [OpenCM]
+  - [CM-5], [CM-50], [CM-100A], [CM-150], [CM-200], [CM-510], [CM-530], [CM-550], [CM-700], [OpenCM 7.0], [OpenCM 9.04]
 
 - 시작 버튼 눌림 횟수 : 최초 제어기를 켤 때 연속적으로 시작버튼을 누른 횟수를 읽어올 때 사용합니다. 시작 버튼 눌림 횟수의 값의 범위는 0~255입니다.
 - 아래는 시작 버튼 눌림 횟수를 사용하는 예제입니다.
@@ -1515,7 +1493,7 @@ R+ Task 3.0에서 사용하는 파라미터를 설명합니다. 각 장치에 �
 3. 전체 관절을 선택한 후 ”토크 끄기”버튼을 클릭하여 실제 로봇의 토크를 풀어줍니다. (임의로 관절을 클릭한 후 Ctrl+A를 누르면 전체 관절이 선택됩니다.)  
     ![](/assets/images/sw/rplus_task3/motion_sync_01.png)
 4. 실제 로봇을 손으로 움직여 원하는 포즈를 만든 후 “토크 켜기”버튼을 클릭, 이어서 “로봇 포즈 읽기“버튼을 클릭합니다. (3D 로봇이 실제 로봇의 포즈를 따라 합니다.)  
-    ![](/assets/images/sw/rplus_task3/motion_sync_03.png)
+    ![](/assets/images/sw/rplus_task3/motion_sync_03.png)  
     ![](/assets/images/sw/rplus_task3/motion_sync_04.png)
 5. 화면 상단에 검게 표시된 타임라인에서 임의의 위치를 클릭한 후 “키 프레임 삽입”버튼을 클릭하여 로봇으로부터 읽어온 포즈를 해당 위치에 삽입합니다.  
     ![](/assets/images/sw/rplus_task3/motion_sync_05.png)  
@@ -1716,7 +1694,8 @@ Ctrl키를 활용하면 각 프레임 사이의 공간을 사용하여 총 시�
     ![](/assets/images/sw/rplus_task3/motion_user_01.png)  
 
 2. 사용할 ID와 모터 종류를 선택한 후 “확인”버튼을 클릭하면 관절목록에 추가됩니다.
-    ![](/assets/images/sw/rplus_task3/motion_user_02.png)  
+
+    ![](/assets/images/sw/rplus_task3/motion_user_02.png)    
     ![](/assets/images/sw/rplus_task3/motion_user_03.png)  
 
 3. 이와 같이 사용할 모터 목록을 작성한 후 프로젝트를 생성하면 아래 그림과 같이 자유 형태 로봇이 생성됩니다.  
@@ -1739,13 +1718,12 @@ Ctrl키를 활용하면 각 프레임 사이의 공간을 사용하여 총 시�
 3. 3D 로봇이 변경되면 아래와 같이 탭이 이동합니다.
 4. 불필요한 관절이 있을 경우 해당 관절을 제거하는 것이 좋습니다. 다시 홈 탭의 “3D 로봇”메뉴로 이동합니다. (제거할 관절이 없다면 ⑤는 생략합니다.)  
 5. 선택한 후 좌측의 “관절 제거”버튼을 사용하여 제거합니다. 제거가 완료되면 우측 하단의 “확인”버튼을 클릭합니다.
+  
     ![](/assets/images/sw/rplus_task3/motion_3d_03.png)
 
-    ![](/assets/images/sw/rplus_task3/motion_3d_04.png)
-
 6. 불필요한 관절이 모두 제거되었습니다.
-
-    ![](/assets/images/sw/rplus_task3/motion_3d_05.png)
+  
+    ![](/assets/images/sw/rplus_task3/motion_3d_04.png)
 
 ## [포즈 미러링](#포즈-미러링)
 
@@ -1921,9 +1899,11 @@ Ctrl키를 활용하면 각 프레임 사이의 공간을 사용하여 총 시�
 
   1. 배경삽입 버튼을 클릭후, 원하는 배경을 삽입하세요.  
   ![](/assets/images/sw/rplus_task3/motion_background_01.png)  
-  2. 아래 사진과 같이 배경 위로 모터를 배치할수 있습니다.  
+
+  2. 아래 사진과 같이 배경 위로 모터를 배치할수 있습니다.    
   ![](/assets/images/sw/rplus_task3/motion_background_02.png)  
-  3. 제작시, 자유 배치 잠금 버튼을 클릭하여, 모터가 움직이지 않도록 고정시켜 주세요.
+  
+  3. 제작시, 자유 배치 잠금 버튼을 클릭하여, 모터가 움직이지 않도록 고정시켜 주세요.  
   ![](/assets/images/sw/rplus_task3/motion_background_03.png)  
 
 ## [초기위치 이동](#초기위치-이동)
@@ -1932,15 +1912,18 @@ Ctrl키를 활용하면 각 프레임 사이의 공간을 사용하여 총 시�
   ![](/assets/images/sw/rplus_task3/motion_position_init.png)
 
 
-[`윈도우 로보플러스 태스크 3.0 다운로드`]: http://www.robotis.com/service/download.php?no=1774
-[제어기 기능 비교]: /docs/kr/parts/controller/controller_compatibility/
+[제어기 호환표]: /docs/kr/parts/controller/controller_compatibility/
 [접촉 센서 부품 정보]: /docs/kr/parts/sensor/ts-10/
 [적외선 센서 부품 정보]: /docs/kr/parts/sensor/irss-10/
 [컬러 센서 부품 정보]: /docs/kr/parts/sensor/cs-10/
 [자석 센서 부품 정보]: /docs/kr/parts/sensor/mgss-10/
 [온도 센서 부품 정보]: /docs/kr/parts/sensor/tps-10/
+[절대 거리 센서 부품 정보]: /docs/kr/parts/sensor/dms-80/
+[조도 센서 부품 정보]: /docs/kr/parts/sensor/cds-10/
+[온습도 센서 부품 정보]: /docs/kr/parts/sensor/tms-10/
 [동작감지 센서 부품 정보]: /docs/kr/parts/sensor/pir-10/
 [사용자 센서 제작]: /docs/kr/edu/bioloid/premium/#사용자-센서-제작
+[CM-50]: /docs/kr/parts/controller/cm-100/
 [CM-100A]: /docs/kr/parts/controller/cm-100/
 [CM-150]: /docs/kr/parts/controller/cm-150/
 [CM-200]: /docs/kr/parts/controller/cm-200/
@@ -1949,7 +1932,7 @@ Ctrl키를 활용하면 각 프레임 사이의 공간을 사용하여 총 시�
 [CM-530]: /docs/kr/parts/controller/cm-530/
 [CM-550]: /docs/kr/parts/controller/cm-550/
 [CM-700]: /docs/kr/parts/controller/cm-700/
-[OpenCM]: /docs/kr/parts/controller/controller_compatibility/
+[OpenCM 7.0]: /docs/kr/parts/controller/opencm7/
 [R+ Smart]: /docs/kr/software/mobile_app/rplussmart/
 [R+ Smart 컨트롤 테이블]: /docs/kr/software/mobile_app/rplussmart/#r-smart-control-table
 [ROBOTIS DREAM]: /docs/kr/edu/dream/dream1-1/
@@ -1958,7 +1941,7 @@ Ctrl키를 활용하면 각 프레임 사이의 공간을 사용하여 총 시�
 [ROBOTIS PREMIUM]: /docs/kr/edu/bioloid/premium/
 [ROBOTIS GP]: /docs/kr/edu/bioloid/gp/
 [ROBOTIS MINI]: /docs/kr/edu/mini/
-[OpenCM9.04]: /docs/kr/parts/controller/opencm904/
+[OpenCM 9.04]: /docs/kr/parts/controller/opencm904/
 [BT-110]: /docs/kr/parts/communication/bt-110/
 [BT-210]: /docs/kr/parts/communication/bt-210/
 [BT-410]: /docs/kr/parts/communication/bt-410/

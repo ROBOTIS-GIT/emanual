@@ -17438,10 +17438,10 @@ rplustask3:
     url: /software/rplustask3/#getting-started
     urlkr: /software/rplustask3/#시작하기
     children:
-    - title: "Software Install"
-      titlekr: "소프트웨어 설치"
-      url: /software/rplustask3/#software-install
-      urlkr: /software/rplustask3/#소프트웨어-설치
+#    - title: "Software Install"
+#      titlekr: "소프트웨어 설치"
+#      url: /software/rplustask3/#software-install
+#      urlkr: /software/rplustask3/#소프트웨어-설치
     - title: "Menu Descriptions"
       titlekr: "메뉴 설명"
       url: /software/rplustask3/#menu-descriptions
