@@ -39,50 +39,6 @@ sidebar:
 
 # [시작하기](#시작하기)
 
-<!-- 
-## [소프트웨어 설치](#소프트웨어-설치)
-<!-- 
-1. 로보플러스 태스크 3.0을 다운로드 받으세요.  
-  [`Mac OS X 로보플러스 태스크 3.0 다운로드`]{: .blank}
-
-[`Mac OS X 로보플러스 태스크 3.0 다운로드`]: http:
-
-2. 다운로드받은 R+Task 3.0 패키지를 더블클릭해서 실행하세요.  
-  ![](/assets/images/sw/rplus2/task/roboplus_task2_install_01.png)
-
-    - 만약 아래와 같은 창이 열리며 파일이 실행되지 않을 때에는 다음의 방법으로 실행하시기 바랍니다.  
-      ![](/assets/images/sw/rplus2/task/roboplus_task2_install_02_kr.png)
-    - `시스템 환경설정`에서 `보안 및 개인 정보 보호` 메뉴를 실행하세요.  
-      ![](/assets/images/sw/rplus2/task/roboplus_task2_install_03_kr.png)
-    - `확인 없이 열기` 버튼을 누르면 다운로드된 로보플러스 태스크 2.0 패키지가 실행됩니다.  
-      ![](/assets/images/sw/rplus2/task/roboplus_task2_install_04_kr.png)
-
-3. 패키지가 성공적으로 실행되면 `계속` 버튼을 눌러 진행하세요.  
-  ![](/assets/images/sw/rplus2/task/roboplus_task2_install_05_kr.png)
-
-4. `폴더 선택...` 또는 `설치 위치 변경...` 을 눌러 압축을 해제할 폴더의 위치를 선택한 뒤 `선택` 버튼으로 선택된 폴더를 결정합니다. 이 폴더의 위치에서 설치파일을 찾아야 하므로 폴더의 위치를 기억해주세요.  
-  ![](/assets/images/sw/rplus2/task/roboplus_task2_install_06_kr.png)  
-  ![](/assets/images/sw/rplus2/task/roboplus_task2_install_06_2_kr.png)
-
-5. `설치` 버튼을 누르면 선택된 폴더에 압축해제를 시작합니다.  
-  ![](/assets/images/sw/rplus2/task/roboplus_task2_install_07_kr.png)
-
-6. 사용자 환경 설정에 따라 아래와 같이 암호 입력이 필요할 수 있습니다.  
-  ![](/assets/images/sw/rplus2/task/roboplus_task2_install_08_kr.png)
-
-7. 압축해제가 완료되면 `닫기` 버튼을 눌러 종료합니다.  
-  ![](/assets/images/sw/rplus2/task/roboplus_task2_install_09_kr.png)
-
-8. 앞서 4단계에서 지정한 폴더에서 설치파일인 `R+Task2.0(v2.3.0 Mac).dmg` 를 찾아 더블클릭으로 실행합니다.  
-  ![](/assets/images/sw/rplus2/task/roboplus_task2_install_dmg.png)
-
-9. 프로그램이 정상적으로 실행되면 아래와 같은 창이 나타납니다.  
-  좌측의 `R+TaskPatcher` 아이콘을 우측의 `응용 프로그램` 아이콘쪽으로 끌어서 옮깁니다.  
-  ![](/assets/images/sw/rplus2/task/roboplus_task2_install_10.png)
-
-11. 소프트웨어의 설치가 정상적으로 완료되면 아래와 같이 응용 프로그램 또는 런처에서 설치된 소프트웨어를 찾을 수 있습니다.  
-  ![](/assets/images/sw/rplus2/task/roboplus_task2_install_11.png)
--->
 ## [메뉴 설명](#메뉴-설명)
 
 1. 홈 탭  
@@ -103,7 +59,7 @@ sidebar:
 4. 모션유닛 탭  
   모션 예제를 선택하거나 자유 형태 로봇 모션을 만들 수 있는 화면입니다.
 
-    ![](/assets/images/sw/rplus_task3/task3_002.png)
+    ![](/assets/images/sw/rplus_task3/task3_002.png)  
 
     ![](/assets/images/sw/rplus_task3/task3_005.png)
 

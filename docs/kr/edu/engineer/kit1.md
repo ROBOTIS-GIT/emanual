@@ -16,7 +16,7 @@ product_group: 2xl430-w250
 
 ![](/assets/images/edu/engineer/kit1/enginner_main.png)
 
-**로보티즈 엔지니어**는 스마트 기기를 활용한 AI 기술이 적용된 새로운 개념의 차세대 로봇입니다.  
+**로보티즈 엔지니어** 는 스마트 기기를 활용한 AI 기술이 적용된 새로운 개념의 차세대 로봇입니다.  
 
 - 다양한 움직임을 구현하는 관절형 구조
 - 단계별 로봇교육과정 및 표준 커리큘럼 제공
@@ -214,7 +214,7 @@ product_group: 2xl430-w250
 
 **참고**  
 중공형 배선 연결은 케이블의 내구성을 더 높이거나 미관상의 케이블 정리를 위해 사용하는 결합 방법입니다.  
-반드시 사용해야 하는 것은 아니며 아이들러캡 결합 후 부득이 케이블을 교체 시 일반적인 조립방법보다 시간이 더 소요될 수도 있습니다.  
+반드시 사용해야 하는 것은 아니며 아이들러 캡 결합 후 부득이 케이블을 교체 시 일반적인 조립방법보다 시간이 더 소요될 수도 있습니다.  
 {: .notice--info}
 
 
@@ -236,7 +236,7 @@ product_group: 2xl430-w250
 1. 스마트폰 또는 태블릿에서 `플레이 스토어` 또는 `앱 스토어`를 실행합니다.  
   ![](/assets/images/edu/engineer/kit1/app_installation_01_kr.png)
 
-2. `플레이 스토어` 또는 `앱 스토어` 검색창에 **로보티즈**를 입력합니다.  
+2. `플레이 스토어` 또는 `앱 스토어` 검색창에 **로보티즈** 를 입력합니다.  
   ![](/assets/images/edu/engineer/kit1/app_installation_02_kr.png)
 
 3. 검색된 목록에서 `ROBOTIS ENGINEER`를 찾아 `설치`를 선택합니다.  
@@ -251,22 +251,22 @@ product_group: 2xl430-w250
 1. CM-550 제어기의 스위치를 눌러 전원을 켭니다.  
   ![](/assets/images/edu/engineer/kit1/bluetooth_connection_1.png)
 
-2. 제어기의 모드버튼을 눌러 녹색이 점멸하도록 합니다.  
+2. 제어기의 `MODE` 버튼을 눌러 녹색이 점멸하도록 합니다.  
   ![](/assets/images/edu/engineer/kit1/bluetooth_connection_2.png)
 
-    **참고** : [블루투스 연결하기](#블루투스-연결하기) 에서 2번과 3번은 로봇의 태스크 프로그램을 실행시키기 위한 과정입니다. 블루투스 연결을 위해서는 꼭 필요하지 않습니다.
+    **참고** : `MODE` 버튼이 녹색으로 점멸할 경우 태스크 프로그램의 실행을 대기하는 모드입니다.
     {: .notice--info}
 
-3. 제어기의 시작버튼을 누릅니다.  
+3. 제어기의 `START` 버튼을 누릅니다.  
   ![](/assets/images/edu/engineer/kit1/bluetooth_connection_3.png)
 
-    **참고** : [블루투스 연결하기](#블루투스-연결하기) 에서 2번과 3번은 로봇의 태스크 프로그램을 실행시키기 위한 과정입니다. 블루투스 연결을 위해서는 꼭 필요하지 않습니다.
+    **참고** : `MODE` 버튼이 녹색으로 점멸할 때 `START` 버튼을 누르면 `MODE` 버튼이 녹색으로 고정되며 태스크 프로그램이 실행됩니다.
     {: .notice--info}
 
 4. 스마트 기기에서 `ROBOTIS ENGINEER`앱을 실행하고 화면에 표시된 블루투스 아이콘을 누릅니다.  
   ![](/assets/images/edu/engineer/kit1/bluetooth_connection_4.png)
 
-5. 제어기에 표시된 문자 (마지막 두자리)를 확인합니다.  
+5. 제어기에 표시된 문자(마지막 두자리)를 확인합니다.  
   ![](/assets/images/edu/engineer/kit1/bluetooth_connection_5.png)
 
 6. 확인한 숫자를 왼쪽 상자에 입력한 후 `검색` 을 누릅니다.  
@@ -289,34 +289,34 @@ product_group: 2xl430-w250
 
 {% capture opening_exam %}
 [로보플러스 태스크 3.0에서 태스크 예제 파일 열기](/docs/kr/software/rplustask3/#태스크-예제-열기)  
-[CM-550 제어기에 태스크 다운로드 하기](/docs/kr/software/rplustask3/#태스크-다운로드-하기)  
+[CM-550 제어기에 태스크 다운로드 하기](#태스크-다운로드-pc)  
 
 [로보플러스 태스크 3.0에서 모션 예제 파일 열기](/docs/kr/software/rplustask3/#모션-예제-열기)  
-[CM-550 제어기에 모션 다운로드 하기](/docs/kr/software/rplustask3/#모션-다운로드-하기)
+[CM-550 제어기에 모션 다운로드 하기](#모션-다운로드-pc)
 {% endcapture %}
 <div class="notice">{{opening_exam | markdownify}}</div>
 
 ### [PC에서 예제 다운로드](#pc에서-예제-다운로드)
 
-- Micro USB 포트를 이용하여, PC와 직접 연결하여 태스크(.tsk3) 및 모션(.mtn3) 파일을 원격으로 다운로드 받을 할 수 있습니다.
-- CM-550에 내장된 BLE 슬레이브 모듈과 BT-410 Dongle로 원격으로 예제를 다운로드 할 수 있습니다.
+- Micro USB 포트를 이용하여, PC와 직접 연결하여 태스크(.tsk3) 및 모션(.mtn3) 파일을 원격으로 다운로드 받을 수 있습니다.
+- CM-550에 내장된 BLE 슬레이브 모듈과 BT-410 동글을 페어링하면 PC에서 원격으로 예제를 업로드 할 수 있습니다.
 
 1. CM-550에 전원을 연결합니다.
-2. PC의 USB 포트에, BT-410 Dongle을 연결합니다.
-3. CM-550의 `MODE` 버튼 부분을 BT-410 Dongle에 가져다 대면, 페어링이 완료됩니다.
-4. R+Task3.0을 실행시킨후, 왼쪽 하단의 `연결`버튼을 클릭 해주세요.
+2. PC의 USB 포트에, BT-410 동글을 연결합니다.
+3. CM-550의 `MODE` 버튼 부분을 BT-410 동글에 가까이 가져가면, 페어링이 완료됩니다.
+4. 로보플러스 태스크 3.0을 실행시킨 후, 왼쪽 하단의 `연결`버튼을 클릭 해주세요.
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_01.png)  
 
-5. `Use USB Dongle`을 클릭 해주세요.
+5. BT-410 동글을 사용할 경우 반드시 `Use USB Dongle` 옵션을 선택해주세요.
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_02.png)  
 
-6. 사용할 시리얼 포트를 검색 후, 시리얼 포트를 선택해 주세요.
+6. 사용할 시리얼 포트를 선택해 주세요.
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_03.png)  
 
-7. 이미지에 빨간색 박스가 그려져 있는곳을 클릭하여, PC와 제어기가 연결이 되도록 해주세요.   
+7. 연결 버튼을 클릭하여, PC와 제어기를 연결시켜 주세요.   
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_04.png)     
 
@@ -326,7 +326,7 @@ product_group: 2xl430-w250
 
 {% capture pairing_01 %}
 **참고** :
-- 첫 페어링 시 제어기의 `MODE` 버튼쪽으로 BT-410 Dongle을 가까이 가져가면 자동으로 페어링됩니다.
+- 첫 페어링 시 제어기의 `MODE` 버튼쪽으로 BT-410 동글을 가까이 가져가면 자동으로 페어링됩니다.
 - 페어링이 완료된 후에는 로봇과 PC의 거리가 멀어져도 통신이 끊어지지 않습니다.
 - 페어링이 한번 설정되면, 이후 멀리서도 자동으로 페어링이 됩니다.  
 {% endcapture %}
@@ -347,31 +347,31 @@ product_group: 2xl430-w250
 
 #### [모션 다운로드 (PC)](#모션-다운로드-pc)
 
-1. 제어기와 PC가 연결된 상태에서, 제품에 맞는 모션예제를 선택 합니다.
+1. 제어기와 PC가 연결된 상태에서, 제품과 예제를 선택합니다.
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_09.png)  
 
-2. 원하는 모션예제를 클릭후, 선택 버튼을 누릅니다.
+2. 다운로드 하려는 모션예제를 선택합니다.
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_10.png)  
 
-3. 오른쪽 상단의 `모션 다운로드`버튼을 클릭 합니다.
+3. 오른쪽 상단의 `모션 다운로드` 탭을 클릭합니다.
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_11.png)  
 
-4. 모션 다운로드 탭으로 이동하면, 모션 그룹목록을 선택할수 있습니다. 원하는 모션을 선택하여 제어기에 다운로드 해주세요.
+4. 모션 다운로드 탭에서는, 모션 그룹을 선택할 수 있습니다. 원하는 모션을 선택하여 제어기에 다운로드 해주세요.
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_12.png)
 
 ### [스마트 기기에서 예제 다운로드](#스마트-기기에서-예제-다운로드)
 
-R+Task3 앱을 이용하여 제어기에 파일을 다운로드 받는 방법입니다.
+로보플러스 태스크 3.0 앱을 이용하여 제어기에 파일을 다운로드 받는 방법입니다.
 
-1. R+Task3을 스마트 기기에서 실행 후, 이미지에서 빨간색 박스가 그려져 있는곳을 클릭해주세요.
+1. 로보플러스 태스크 3.0 앱을 스마트 기기에서 실행 후, 이미지에서 빨간색 박스로 표시된 버튼을 클릭해주세요.
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_01.png)  
 
-2. 로봇 연결하기 창이 활성화 되면, 이미지에서 빨간색 박스가 그려져 있는곳을 클릭해주세요.
+2. 로봇 연결하기 창이 활성화되면, 이미지에서 빨간색 박스로 표시된 블루투스 검색 버튼을 클릭해주세요.
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_02.png)  
 
@@ -379,20 +379,20 @@ R+Task3 앱을 이용하여 제어기에 파일을 다운로드 받는 방법입
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_02_1.png)
 
-4. 확인한 문자를 입력 해주세요.
+4. 확인한 문자를 입력해주세요.
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_03.png)  
 
-5. 연결할 블루투스를 검색후 활성화된 시리얼포트를 더블 클릭 또는 연결버튼을 클릭하여 제어기와 연결 해주세요.
+5. 연결할 블루투스를 검색후 활성화된 시리얼포트를 선택하여 제어기와 연결해주세요.
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_04.png)    
     ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_05.png)  
 
 #### [태스크 다운로드 (스마트 기기)](#태스크-다운로드-스마트-기기)
 
-원격으로 스마트 기기에서, 제어기로 태스크파일(.tsk3)을 다운로드 할수있습니다.  
+원격으로 스마트 기기에서, 제어기로 태스크파일(.tsk3)을 다운로드 할 수 있습니다.  
 
-1. 제어기가 스마트 기기에 연결된 상태에서, 홈탭의 **태스크 예제**를 클릭하여 제품을 선택 해주세요.
+1. 제어기가 스마트 기기에 연결된 상태에서, 홈탭의 **태스크 예제** 를 클릭하여 제품을 선택 해주세요.
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_06.png)
 
@@ -403,30 +403,29 @@ R+Task3 앱을 이용하여 제어기에 파일을 다운로드 받는 방법입
 
 #### [모션 다운로드 (스마트기기)](#모션-다운로드-스마트기기)
 
-1. 제어기가 스마트 기기에 연결된 상태에서, 홈탭의 **모션 예제**를 클릭하여 제품을 선택 해주세요.
+1. 제어기가 스마트 기기에 연결된 상태에서, 홈 탭의 **모션 예제** 를 클릭하여 제품을 선택해주세요.
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_08.png)  
 
-2. **예제 선택하기**창이 활성화되면, 원하는 예제를 선택 해주세요.
+2. **예제 선택하기** 창이 활성화되면, 원하는 예제를 선택해주세요.
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_09.png)  
 
-3. 이미지에서 빨간색 박스가 그려져 있는곳을 선택 해주세요.
+3. 이미지에서 빨간색 박스로 표시된 메뉴 버튼을 선택해주세요.
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_10.png)  
 
-4. 이미지의 오른쪽 상단의 모션다운로드 탭을 클릭 해주세요.
+4. 오른쪽 상단의 모션 다운로드 탭을 선택해주세요.
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_11.png)  
 
-5. 오른쪽 하단의 빨간색 `모션 다운로드` 버튼을 클릭하면, 모션파일을 제어기에 다운로드 할수있습니다.
+5. 오른쪽 하단의 빨간색 `모션 다운로드` 버튼을 누르면, 모션파일을 제어기에 다운로드 할 수 있습니다.
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_12.png)
 
 ## [예제 실행하기](#예제-실행하기)
 
-`ROBOTIS ENGINEER` 앱을 실행하고 조립된 로봇 예제와 같은 예제 메뉴를 선택하면 해당 예제에
-맞는 다양한 기능들을 사용할 수 있습니다.    
+`ROBOTIS ENGINEER` 앱을 실행하고 조립된 로봇 예제와 같은 예제 메뉴를 선택하면 해당 예제에 맞는 다양한 기능들을 사용할 수 있습니다.    
 
 ![](/assets/images/edu/engineer/kit1/engineer_app_1.png)
 
@@ -768,7 +767,7 @@ TensorFlow 이미지 학습을 하기 위해서 사용하는 PC에 `Anaconda3-4.
 <div class="notice--info">{{ retrain | markdownify }}</div>
 
 
-# [교육자료 신청하기](#교육자료-신청하기)
+# [교육자료 다운로드](#교육자료-다운로드)
 
 {% capture edu_application %}
 아래의 링크에서 로보티즈 엔지니어 키트의 다양한 교육자료를 받을 수 있습니다.
@@ -801,22 +800,19 @@ TensorFlow 이미지 학습을 하기 위해서 사용하는 PC에 `Anaconda3-4.
 
 ## [제어기 BLE 신호세기 설정](#제어기-ble-신호세기-설정)
 
-1. CM-550의 BLE와 연결되어 있는 BT-410 마스터 모듈 또는 BT-410 Dongle의 전원이 꺼져있는지 확인합니다.  
-  (만일 전원이 켜져 있는 경우 CM-550을 켜는 순간 서로 페어링 되며 BLE 신호 확인 및 설정을 할 수 없게 됩니다)
+1. CM-550의 BLE와 연결되어 있는 BT-410 마스터 모듈 또는 BT-410 동글의 전원이 꺼져있는지 확인합니다.  
+  (만일 전원이 켜져 있는 경우 CM-550을 켜는 순간 서로 페어링 되기 때문에 BLE 신호 확인 및 설정을 할 수 없습니다)
 
 2. CM-550의 전원을 켜고 USB 케이블로 PC에 연결합니다 (외부 전원 없이 USB 케이블로 제어기에 충분한 전원공급이 가능합니다).
 
-3. CM-550의 전원 LED가 깜박이는 것을 확인합니다. 
-
-    **참고** : CM-550의 전원 LED가 깜빡이지 않는다면, 전원을 끈후 1번 과정을 확인 후 진행해주세요.
-    {: .notice--info}
+3. CM-550의 `MODE` 버튼이 깜박이는 것을 확인합니다.
 
 4. 로보플러스 매니저 2.0 을 실행합니다.
 
     ![](/assets/images/edu/engineer/kit1/BLE_signal_power_01_kr.png)
 
-5.  `업데이트 검사` 를 클릭한 다음, 로보플러스 매니저 2.0이 최신버전인지 확인합니다.
-  
+5. `업데이트 검사` 를 클릭한 다음, 로보플러스 매니저 2.0이 최신버전인지 확인합니다.
+
     ![](/assets/images/edu/engineer/kit1/BLE_signal_power_02_kr.png)  
     ![](/assets/images/edu/engineer/kit1/BLE_signal_power_03_kr.png)
 
@@ -861,11 +857,14 @@ TensorFlow 이미지 학습을 하기 위해서 사용하는 PC에 `Anaconda3-4.
     ![](/assets/images/edu/engineer/kit1/BLE_signal_power_13_kr.png)
 
 16. 화면 오른쪽의 `BLE Signal Power` 에서 값을 선택 후 저장합니다.  
-  큰 값을 선택할수록 신호가 강해지며, 다른 장치와 간섭이 발생할 경우 신호를 줄여주세요.
+  큰 값을 선택할수록 신호가 강해지며, 다른 장치와 간섭이 발생할 경우 신호를 줄여주세요.  
 
     ![](/assets/images/edu/engineer/kit1/BLE_signal_power_14_kr.png)
 
-17. 마지막으로, `BLE Signal Power` 의 값이 저장되었는지 확인해주세요. 
+    `BLE Signal Power` 값이 `UNKNOWN(0)`인 경우 1번 단계로 돌아가서 BT-410 마스터 또는 BT-410 동글의 전원이 꺼져있는지 확인하시기 바랍니다.
+    {: .notice}
+
+17. 마지막으로, `BLE Signal Power` 의 값이 저장되었는지 확인해주세요.
 
     ![](/assets/images/edu/engineer/kit1/BLE_signal_power_15_kr.png)
 

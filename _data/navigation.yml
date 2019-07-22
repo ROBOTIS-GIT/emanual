@@ -13949,7 +13949,7 @@ kit1:
             urlkr: /edu/engineer/kit1/#모션-다운로드-pc
       - titlekr: "스마트 기기에서 예제 다운로드"
         urlkr: /edu/engineer/kit1/#스마트-기기에서-예제-다운로드
-        children: 
+        children:
           - titlekr: "태스크 다운로드 (스마트 기기)"
             urlkr: /edu/engineer/kit1/#태스크-다운로드-스마트-기기
           - titlekr: "모션 다운로드 (스마트 기기)"
@@ -13975,10 +13975,10 @@ kit1:
     children:
       - titlekr: "머신러닝 기반의 사물인식"
         urlkr: /edu/engineer/kit1/#머신러닝-기반의-사물인식
-        children: 
+        children:
           - titlekr: "윈도우즈"
             urlkr: /edu/engineer/kit1/#윈도우즈
-            children: 
+            children:
             - titlekr: "pip패키지 업그레이드"
               urlkr: /edu/engineer/kit1/#pip패키지-업그레이드
             - titlekr: "폴더생성"
@@ -13993,8 +13993,8 @@ kit1:
               urlkr: /edu/engineer/kit1/#이미지-학습
             - titlekr: "프로젝트에 학습 파일 적용하기"
               urlkr: /edu/engineer/kit1/#프로젝트에-학습파일-적용하기
-  - titlekr: "교육자료 신청하기"
-    urlkr: /edu/engineer/kit1/#교육자료-신청하기
+  - titlekr: "교육자료 다운로드"
+    urlkr: /edu/engineer/kit1/#교육자료-다운로드
   - titlekr: "소프트웨어 다운로드"
     urlkr: /edu/engineer/kit1/#소프트웨어-다운로드
   - titlekr: "참고자료"
