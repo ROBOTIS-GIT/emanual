@@ -13983,14 +13983,6 @@ kit1:
               urlkr: /edu/engineer/kit1/#이미지-학습
             - titlekr: "프로젝트에 학습 파일 적용하기"
               urlkr: /edu/engineer/kit1/#프로젝트에-학습파일-적용하기
-    # - titlekr: "코드 작성하기"
-    #   urlkr: /edu/engineer/kit1/#코드-작성하기
-    # - titlekr: "예제 조립서"
-    #   urlkr: /edu/engineer/kit1/#예제-조립서
-    # - titlekr: "3D 프린팅"
-    #   urlkr: /edu/engineer/kit1/#3d-프린팅
-    # - titlekr: "교육자료"
-    #   urlkr: /edu/engineer/kit1/#교육자료
   - titlekr: "교육자료 신청하기"
     urlkr: /edu/engineer/kit1/#교육자료-신청하기
   - titlekr: "소프트웨어 다운로드"
@@ -13998,20 +13990,16 @@ kit1:
   - titlekr: "참고자료"
     urlkr: /edu/engineer/kit1/#참고자료
     children:
-    - titlekr: "크롬에서 이미지 다운로드 하기"
-      urlkr: /edu/engineer/kit1/#크롬에서-이미지-다운로드-하기 
+    - titlekr: "제어기 BLE 신호세기 설정"
+      urlkr: /edu/engineer/kit1/#제어기-ble-신호세기-설정
     - titlekr: "점검 및 자가진단"
       urlkr: /edu/engineer/kit1/#점검-및-자가진단
     - titlekr: "배터리 충전하기"
       urlkr: /edu/engineer/kit1/#배터리-충전하기
-    - titlekr: "배터리 잔량 확인하기"
-      urlkr: /edu/engineer/kit1/#배터리-잔량-확인하기
+    - titlekr: "충전지 잔량 확인하기"
+      urlkr: /edu/engineer/kit1/#충전지-잔량-확인하기
     - titlekr: "퓨즈 교체하기"
       urlkr: /edu/engineer/kit1/#퓨즈-교체하기
-    # - titlekr: "로봇 초기화"
-    #   urlkr: /edu/engineer/kit1/#로봇-초기화
-
-
 
 #ROBOTIS MINI sidebar
 mini:
