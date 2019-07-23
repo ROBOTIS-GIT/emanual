@@ -29,8 +29,8 @@ This feature can be very useful when configuring symmetrical joint system or whe
 
 {% if page.ref=='mx-106' or page.product_group=='dxl_ex' %}
 {% capture drivemode %}
-**CAUTION** : When MX-106 and EX-106+ are operated on Wheel Mode(endless), Normal/Reverse Mode is not available.  
-Normal/Reverse Mode on MX-106 and EX-106+ is only available for Joint Mode and Multi-turn Mode .  
+**CAUTION** : When MX-106 and EX-106+ are set to Wheel Mode(endless), Normal/Reverse Mode isn't supported.    
+Normal/Reverse Mode on MX-106 and EX-106+ is available for Joint Mode and Multi-turn Mode .  
 Please refer to [CW/CCW Angle Limit](#cwccw-angle-limit6-8) for Operation Type(Wheel Mode, Joint Mode, Multi-turn Mode).
 {% endcapture %}
 <div class="notice--warning">{{ drivemode | markdownify }}</div>
