@@ -15882,6 +15882,176 @@ openmanipulator_x:
         url: /platform/openmanipulator_x/friends/#openmanipulator-stewart
       - title: "OpenMANIPULATOR Linear"
         url: /platform/openmanipulator_x/friends/#openmanipulator-linear
+        
+openmanipulator_x_ros2:
+  - title: "Overview"
+    url: /platform/openmanipulator_x_ros2/overview/#overview
+    children:
+      - title: "OpenSoftware"
+        url: /platform/openmanipulator_x_ros2/overview/#opensoftware
+      - title: "OpenHardware"
+        url: /platform/openmanipulator_x_ros2/overview/#openhardware
+      - title: "OpenCR (Embedded board)"
+        url: /platform/openmanipulator_x_ros2/overview/#opencr-embedded-board
+      - title: "Dynamixel Examples"
+        url: /platform/openmanipulator_x_ros2/overview/#dynamixel-examples
+      - title: "Introduction video"
+        url: /platform/openmanipulator_x_ros2/overview/#introduction-video
+  - title: "Specification"
+    url: /platform/openmanipulator_x_ros2/specification/#specification
+    children:
+      - title: "Hardware Specification"
+        url: /platform/openmanipulator_x_ros2/specification/#hardware-specification
+      - title: "Dimension"
+        url: /platform/openmanipulator_x_ros2/specification/#dimension
+  - title: "Getting Started"
+    url: /platform/openmanipulator_x_ros2/getting_started/#getting-started
+    children:
+      - title: "About OpenMANIPULATOR-X"
+        url: /platform/openmanipulator_x_ros2/getting_started/#about-openmanipulator-x
+      - title: "OpenMANIPULATOR-X Setup"
+        url: /platform/openmanipulator_x_ros2/getting_started/#openmanipulator-x-setup
+      - title: "Let's try Basic Operation"
+        url: /platform/openmanipulator_x_ros2/getting_started/#lets-try-basic-operation
+      - title: "Challenge Applications"
+        url: /platform/openmanipulator_x_ros2/getting_started/#challenge-applications
+      - title: "Let's design my own manipulator"
+        url: /platform/openmanipulator_x_ros2/getting_started/#lets-design-my-own-manipulator
+  - title: "Assembly"
+    url: /platform/openmanipulator_x_ros2/assembly/#assembly
+    children:
+      - title: "Part Lists"
+        url: /platform/openmanipulator_x_ros2/assembly/#part-lists
+      - title: "3D Printed Parts"
+        url: /platform/openmanipulator_x_ros2/assembly/#3d-printed-parts
+      - title: "Assembly Manual"
+        url: /platform/openmanipulator_x_ros2/assembly/#assembly-manual
+  - title: "[ROS] Setup"
+    url: /platform/openmanipulator_x_ros2/ros_setup/#ros-setup
+    children:
+      - title: "Install Ubuntu on PC"
+        url: /platform/openmanipulator_x_ros2/ros_setup/#install-ubuntu-on-pc
+      - title: "Install ROS on PC"
+        url: /platform/openmanipulator_x_ros2/ros_setup/#install-ros-on-pc
+      - title: "Install ROS Packages"
+        url: /platform/openmanipulator_x_ros2/ros_setup/#install-ros-packages
+      - title: "Communication Converter"
+        url: /platform/openmanipulator_x_ros2/ros_setup/#communication-converter
+        children:
+          - title: "U2D2"
+            url: /platform/openmanipulator_x_ros2/ros_setup/#u2d2
+          - title: "OpenCR"
+            url: /platform/openmanipulator_x_ros2/ros_setup/#opencr
+  - title: "[ROS] Controller Package"
+    url: /platform/openmanipulator_x_ros2/ros_controller_package/#ros-controller-package
+    children:
+      - title: "Launch Controller"
+        url: /platform/openmanipulator_x_ros2/ros_controller_package/#launch-controller
+      - title: "Check Setting"
+        url: /platform/openmanipulator_x_ros2/ros_controller_package/#check-setting
+        children:
+          - title: "Manipulator Description"
+            url: /platform/openmanipulator_x_ros2/ros_controller_package/#manipulator-description
+          - title: "RViz"
+            url: /platform/openmanipulator_x_ros2/ros_controller_package/#rviz
+      - title: "Message List"
+        url: /platform/openmanipulator_x_ros2/ros_controller_package/#message-list
+        children:
+          - title: "Topic"
+            url: /platform/openmanipulator_x_ros2/ros_controller_package/#topic
+          - title: "Service"
+            url: /platform/openmanipulator_x_ros2/ros_controller_package/#service
+  - title: "[ROS] Operation"
+    url: /platform/openmanipulator_x_ros2/ros_operation/#ros-operation
+    children:
+      - title: "GUI Program"
+        url: /platform/openmanipulator_x_ros2/ros_operation/#gui-program
+      - title: "Teleoperation"
+        url: /platform/openmanipulator_x_ros2/ros_operation/#teleoperation
+        children:
+          - title: "Keyboard"
+            url: /platform/openmanipulator_x_ros2/ros_operation/#keyboard
+          - title: "PS4 Joystick"
+            url: /platform/openmanipulator_x_ros2/ros_operation/#ps4-joystick
+          - title: "XBOX 360 Joystick"
+            url: /platform/openmanipulator_x_ros2/ros_operation/#xbox-360-joystick
+      - title: "MoveIt!"
+        url: /platform/openmanipulator_x_ros2/ros_operation/#moveit
+  - title: "[ROS] Simulation"
+    url: /platform/openmanipulator_x_ros2/ros_simulation/#ros-simulation
+    children:
+      - title: "Launch gazebo"
+        url: /platform/openmanipulator_x_ros2/ros_simulation/#launch-gazebo
+      - title: "Controller for gazebo"
+        url: /platform/openmanipulator_x_ros2/ros_simulation/#controller-for-gazebo
+  - title: "[ROS] Applications"
+    url: /platform/openmanipulator_x_ros2/ros_applications/#ros-applications
+    children:
+      - title: "Camera Application"
+        url: /platform/openmanipulator_x_ros2/ros_applications/#camera-application
+        children:
+          - title: "Install Camera Package"
+            url: /platform/openmanipulator_x_ros2/ros_applications/#install-camera-package
+          - title: "Install AR Marker Package"
+            url: /platform/openmanipulator_x_ros2/ros_applications/#install-ar-marker-package
+          - title: "Pick and Place Example"
+            url: /platform/openmanipulator_x_ros2/ros_applications/#pick-and-place-example
+      - title: "Master Slave"
+        url: /platform/openmanipulator_x_ros2/ros_applications/#master-slave
+        children:
+          - title: "Setup of OpenMANIPULATOR-X"
+            url: /platform/openmanipulator_x_ros2/ros_applications/#setup-of-openmanipulator-x
+          - title: "Install Package"
+            url: /platform/openmanipulator_x_ros2/ros_applications/#install-package
+          - title: "Execute Example"
+            url: /platform/openmanipulator_x_ros2/ros_applications/#execute-example
+  - title: "[OpenCR] Setup"
+    url: /platform/openmanipulator_x_ros2/opencr_setup/#opencr-setup
+    children:
+      - title: "Connection"
+        url: /platform/openmanipulator_x_ros2/opencr_setup/#connection
+      - title: "Arduino IDE Setup"
+        url: /platform/openmanipulator_x_ros2/opencr_setup/#arduino-ide-setup
+  - title: "[OpenCR] Operation"
+    url: /platform/openmanipulator_x_ros2/opencr_operation/#opencr-operation
+    children:
+      - title: "Upload Controller Program"
+        url: /platform/openmanipulator_x_ros2/opencr_operation/#upload-controller-program
+      - title: "Setup Processing(GUI)"
+        url: /platform/openmanipulator_x_ros2/opencr_operation/#setup-processinggui
+      - title: "Launch Processing(GUI)"
+        url: /platform/openmanipulator_x_ros2/opencr_operation/#launch-processinggui
+        children:
+          - title: "Control Interface"
+            url: /platform/openmanipulator_x_ros2/opencr_operation/#control-interface
+          - title: "Hand Guiding"
+            url: /platform/openmanipulator_x_ros2/opencr_operation/#hand-guiding
+      - title: "Teleoperation RC100"
+        url: /platform/openmanipulator_x_ros2/opencr_operation/#teleoperation-rc100
+  - title: "Tool Modification"
+    url: /platform/openmanipulator_x_ros2/tool_modification/#tool-modification
+    children:
+      - title: "Vacuum Gripper"
+        url: /platform/openmanipulator_x_ros2/tool_modification/#vacuum-gripper
+      - title: "Pen Holder"
+        url: /platform/openmanipulator_x_ros2/tool_modification/#pen-holder
+  - title: "Mobile Manipulation"
+    url: /platform/openmanipulator_x_ros2/mobile_manipulation/#mobile-manipulation
+  - title: "Friends"
+    url: /platform/openmanipulator_x_ros2/friends/#friends
+    children:
+      - title: "OpenMANIPULATOR SCARA"
+        url: /platform/openmanipulator_x_ros2/friends/#openmanipulator-scara
+      - title: "OpenMANIPULATOR Link"
+        url: /platform/openmanipulator_x_ros2/friends/#openmanipulator-link
+      - title: "OpenMANIPULATOR Planar"
+        url: /platform/openmanipulator_x_ros2/friends/#openmanipulator-planar
+      - title: "OpenMANIPULATOR Delta"
+        url: /platform/openmanipulator_x_ros2/friends/#openmanipulator-delta
+      - title: "OpenMANIPULATOR Stewart"
+        url: /platform/openmanipulator_x_ros2/friends/#openmanipulator-stewart
+      - title: "OpenMANIPULATOR Linear"
+        url: /platform/openmanipulator_x_ros2/friends/#openmanipulator-linear
 
 #OpenManipulator-PRO
 openmanipulator_pro:
