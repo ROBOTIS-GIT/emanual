@@ -223,9 +223,9 @@ product_group: 2xl430-w250
 ## [앱 설치하기](#앱-설치하기)
 
 {% capture app_install %}
-**로보플러스 엔지니어 : [안드로이드 앱 다운로드](http://www.robotis.com/service/download.php?no=1773)**  
+**로보플러스 엔지니어 : [안드로이드 앱 다운로드](https://play.google.com/store/apps/details?id=com.robotis.robotisEngineer&hl=ko)**  
 **로보플러스 태스크 3.0 : [안드로이드 앱 다운로드](http://www.robotis.com/service/download.php?no=1772)**  
-**로보플러스 태스크 3.0 : [윈도우용 다운로드](http://www.robotis.com/service/download.php?no=1774)**  
+**로보플러스 태스크 3.0 : [윈도우용 설치파일 다운로드](http://www.robotis.com/service/download.php?no=1774)**  
 
 **참고** : [인터넷에서 다운로드 받은 앱 설치하기]{: .popup}
 
@@ -786,9 +786,9 @@ TensorFlow 이미지 학습을 하기 위해서 사용하는 PC에 `Anaconda3-4.
 - 모션파일로 로봇의 행동을 직접 만들어 줄 수 있습니다.
 
 {% capture app_install %}  
-**로보플러스 엔지니어 : [안드로이드 앱 다운로드](http://www.robotis.com/service/download.php?no=1773)**  
+**로보플러스 엔지니어 : [안드로이드 앱 다운로드](https://play.google.com/store/apps/details?id=com.robotis.robotisEngineer&hl=ko)**  
 **로보플러스 태스크 3.0 : [안드로이드 앱 다운로드](http://www.robotis.com/service/download.php?no=1772)**  
-**로보플러스 태스크 3.0 : [윈도우용 다운로드](http://www.robotis.com/service/download.php?no=1774)**  
+**로보플러스 태스크 3.0 : [윈도우용 설치파일 다운로드](http://www.robotis.com/service/download.php?no=1774)**  
 
 **참고** : [인터넷에서 다운로드 받은 앱 설치하기]{: .popup}
 
