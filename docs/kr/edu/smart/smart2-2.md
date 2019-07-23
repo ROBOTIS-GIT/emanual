@@ -25,6 +25,9 @@ sidebar:
 
 보다 다양한 관절이 사용되는 로봇을 제작 및 프로그래밍 하기 위해서는 교육키트3단계를 구매하시면 됩니다.
 
+**주의**: 로보티즈 스마트II 2단계는 현재 단종되어 더 이상 판매되지 않습니다.
+{: .notice--warning}
+
 [스마트 앱 파라미터 사용법 바로가기]  
 {: .notice}
 
@@ -81,15 +84,15 @@ sidebar:
 [스마트II 2단계 교안예제]: #교안예제
 [태스크 코드 다운로드]: /docs/kr/faq/download_task_code/
 [BT-210]: /docs/kr/parts/communication/bt-210/
-[01_SMARTII_L2_ROULETTE_KR]: http://support.robotis.com/ko/baggage_files/smart2/01_smart2_l2_roulette_kr.tsk
-[02_SMARTII_L2_Color_test_KR]: http://support.robotis.com/ko/baggage_files/smart2/02_smart2_l2_color_test_kr.tsk
-[01_SMARTII_L2_RACINGCAR_KR]: http://support.robotis.com/ko/baggage_files/smart2/01_smart2_l2_racingcar_kr.tsk
-[02_SMARTII_L2_Vibration_test_KR]: http://support.robotis.com/ko/baggage_files/smart2/02_smart2_l2_vibration_test_kr.tsk
-[01_SMARTII_L2_STRONGBOX_KR]: http://support.robotis.com/ko/baggage_files/smart2/01_smart2_l2_strongbox_kr.tsk
-[02_SMARTII_L2_Touch_test_KR]: http://support.robotis.com/ko/baggage_files/smart2/02_smart2_l2_touch_test_kr.tsk
-[01_SMARTII_L2_GLADIATOR_KR]: http://support.robotis.com/ko/baggage_files/smart2/01_smart2_l2_gladiator_kr.tsk
-[02_SMARTII_L2_FaceDetecting_test_KR]: http://support.robotis.com/ko/baggage_files/smart2/02_smart2_l2_facedetecting_test_kr.tsk
-[01_SMARTII_L2_TANK_KR]: http://support.robotis.com/ko/baggage_files/smart2/01_smart2_l2_tank_kr.tsk
-[02_SMARTII_L2_TILT_test_KR]: http://support.robotis.com/ko/baggage_files/smart2/02_smart2_l2_tilt_test_kr.tsk
-[01_SMARTII_L2_ALARMCLOCK_KR ]: http://support.robotis.com/ko/baggage_files/smart2/01_smart2_l2_alarmclock_kr.tsk
-[02_SMARTII_L2_Clock_test_KR]: http://support.robotis.com/ko/baggage_files/smart2/02_smart2_l2_clock_test_kr.tsk
+[01_SMARTII_L2_ROULETTE_KR]: http://www.robotis.com/service/download.php?no=1011
+[02_SMARTII_L2_Color_test_KR]: http://www.robotis.com/service/download.php?no=1015
+[01_SMARTII_L2_RACINGCAR_KR]: http://www.robotis.com/service/download.php?no=1010
+[02_SMARTII_L2_Vibration_test_KR]: http://www.robotis.com/service/download.php?no=1019
+[01_SMARTII_L2_STRONGBOX_KR]: http://www.robotis.com/service/download.php?no=1012
+[02_SMARTII_L2_Touch_test_KR]: http://www.robotis.com/service/download.php?no=1018
+[01_SMARTII_L2_GLADIATOR_KR]: http://www.robotis.com/service/download.php?no=1009
+[02_SMARTII_L2_FaceDetecting_test_KR]: http://www.robotis.com/service/download.php?no=1016
+[01_SMARTII_L2_TANK_KR]: http://www.robotis.com/service/download.php?no=1013
+[02_SMARTII_L2_TILT_test_KR]: http://www.robotis.com/service/download.php?no=1017
+[01_SMARTII_L2_ALARMCLOCK_KR ]: http://www.robotis.com/service/download.php?no=1008
+[02_SMARTII_L2_Clock_test_KR]: http://www.robotis.com/service/download.php?no=1014

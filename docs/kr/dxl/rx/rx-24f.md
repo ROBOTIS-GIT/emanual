@@ -9,6 +9,7 @@ permalink: /docs/kr/dxl/rx/rx-24f/
 sidebar:
   title: RX-24F
   nav: "rx-24f"
+product_group: dxl_rx
 ---
 
 ![](/assets/images/dxl/rx/rx-24f_product.png)
@@ -27,7 +28,7 @@ sidebar:
 | 최소 제어각 | 0.29&deg;  |
 | 모터 | Coreless|
 | 기어비 | 193 : 1  |
-| 정지 토크 | 2.6 N*m (at 12V, 2.4A) |
+| Stall Torque | 2.6 N*m (at 12V, 2.4A) |
 | 무부하 속도 | 126rpm (at 12V) |
 | 동작 모드| 관절 모드 (0&deg; ~ 300&deg;) / 바퀴 모드(무한 회전)|
 | 동작 온도   | -5&deg;C ~ +80&deg;C |
@@ -45,7 +46,7 @@ sidebar:
 
 {% include kr/dxl/warning.md %}
 
-{% include kr/dxl/control_table_protocol1.md %}
+{% include kr/dxl/control_table.md %}
 
 ## [EEPROM 영역](#eeprom-영역)
 
@@ -238,7 +239,7 @@ sidebar:
 
 # [참고자료](#참고자료)
 
-**주의**: [호환성 가이드]
+**주의**: [호환성 가이드]{: .blank}
 {: .notice}
 
 ## [커넥터 정보](#커넥터-정보)
@@ -250,5 +251,5 @@ sidebar:
 
 {% include kr/dxl/485_ttl_connection.md %}
 
-
 [호환성 가이드]: http://www.robotis.com/service/compatibility_table.php?cate=d
+{% include kr/dxl/common_link.md %}

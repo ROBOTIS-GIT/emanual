@@ -23,3 +23,6 @@ RC-100 의 U / L / D / R 버튼을 누름에 따라 보행 드로이드가 전�
 
 ### 동작 확인
 다운로드한 태스크 코드를 PLAY 시킵니다. RC-100 을 이용하여 전진 / 후진 / 좌회전 / 우회전으로 조종하면서 원하는 방향으로 이동하는지 확인합니다.
+
+[BIO_CMP_WalkingDroidExam_KR.tsk]: http://www.robotis.com/service/download.php?no=1243
+[BIO_CMP_WalkingDroidExam_KR.mtn]: http://www.robotis.com/service/download.php?no=1242

@@ -11,7 +11,7 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 14"></div>
+<div style="counter-reset: h1 15"></div>
 
 # [Locomotion](#locomotion)
 
@@ -19,9 +19,10 @@ In the video, watch how TurtleBot3 can be assembled and reassembled with a few a
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/o9d7NVC0A1Y" frameborder="0" allowfullscreen></iframe>
 
-With this openended component, handful of TurtleBot3 friends with various characteristics could be built. You can create a totally new robot that is never seen before. Create a variety of robots based on open hardware and try out the new Locomotion.
+With this openended component, handful of TurtleBot3 friends with various characteristics could be built. You can create a totally new robot that is never seen before. Create a variety of robots based on open hardware and try out the new Locomotion.  
 
-- `TurtleBot3 Friends List`
+**TurtleBot3 Friends List**
+ 
 - [TurtleBot3 Friends: Car](#turtlebot3-friends-car)
 - [TurtleBot3 Friends: OpenManipulator](#turtlebot3-friends-openmanipulator)
 - [TurtleBot3 Friends: Segway](#turtlebot3-friends-segway)
@@ -33,11 +34,33 @@ With this openended component, handful of TurtleBot3 friends with various charac
 - [TurtleBot3 Friends: Bike](#turtlebot3-friends-bike)
 - [TurtleBot3 Friends: Road Train](#turtlebot3-friends-road-train)
 - [TurtleBot3 Friends: Real TurtleBot](#turtlebot3-friends-real-turtlebot)
-- [TurtleBot3 Friends: Carrier](#turtlebot3-friends-carrier)
+- [TurtleBot3 Friends: Carrier](#turtlebot3-friends-carrier)  
 
+**Components List ( BOM )**  
 
-- `Components List File`
-- [BOM](https://goo.gl/XPgJkZ)
+| Single Item                                                 | Quantity | Set Item                  | Quantity | Purchase Links                                                                                                                                                                         |
+|:------------------------------------------------------------|:---------|:--------------------------|:---------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| XL430-W250-T ([e-Manual](/docs/en/dxl/x/xl430-w250/))       | 2        | XL430-W250-T              | 2        | [ROBOTIS SHOP](http://en.robotis.com/shop_en/item.php?it_id=902-0135-000)                                                                                                              |
+| ROBOT CABLE-X4P 240mm                                       | 2        | ROBOT CABLE-X4P 240mm     | 2        | [ROBOTIS SHOP](http://en.robotis.com/shop_en/item.php?it_id=903-0245-000)                                                                                                              |
+| OpenCR1.0 ([e-Manual](/docs/en/parts/controller/opencr10/)) | 1        | OpenCR1.0                 | 1        | [ROBOTIS SHOP](http://en.robotis.com/shop_en/item.php?it_id=903-0257-000)                                                                                                              |
+| TB3 Waffle Plate-IPL-01                                     | 6        | TB3 Waffle Plate-IPL-01   | 1        | [ROBOTIS SHOP](http://en.robotis.com/shop_en/item.php?it_id=903-0259-000)                                                                                                              |
+| TB3 PCB Support-IBB-01                                      | 4        | TB3 PCB Support-IBB-01    | 1        | [ROBOTIS SHOP](http://en.robotis.com/shop_en/item.php?it_id=903-0261-000)                                                                                                              |
+| Rivet-Mg(n)                                                 | 4        | Rivet-Mg(n)               | 4        | [ROBOTIS SHOP](http://en.robotis.com/shop_en/item.php?it_id=913-3002-000)                                                                                                              |
+| TB3 Wheel/Tire                                              | 2        | TB3 Wheel/Tire Set-ISW-01 | 1        | [ROBOTIS SHOP](http://en.robotis.com/shop_en/item.php?it_id=903-0260-000)                                                                                                              |
+| PHS M3x8mm                                                  | 20       | None                      | None     | [Online Store](https://us.misumi-ec.com/vona2/detail/110302280810/?HissuCode=NKJ3-8&PNSearch=NKJ3-8&KWSearch=NKJ3-8&searchFlow=results2type)                                           |
+| PHS M2.5x8mm                                                | 4        | None                      | None     | [Online Store](https://us.misumi-ec.com/vona2/detail/110302280810/?HissuCode=NKJ2.5-8&PNSearch=NKJ2.5-8&KWSearch=NKJ2.5-8&searchFlow=results2type)                                     |
+| PHS M2.5x12mm                                               | 16       | None                      | None     | [Online Store](https://us.misumi-ec.com/vona2/detail/221000802128/?HissuCode=00000000-M2.5X12-SUS&PNSearch=00000000-M2.5X12-SUS&KWSearch=00000000-M2.5X12-SUS&searchFlow=results2type) |
+| WB_M2x4mm                                                   | 8        | None                      | None     | [Online Store](https://us.misumi-ec.com/vona2/detail/221000551286/?HissuCode=CSH-ST-M2-4&PNSearch=CSH-ST-M2-4&KWSearch=CSH-ST-M2-4&searchFlow=results2type)                            |
+| WB_M2.5x20mm                                                | 8        | None                      | None     | [Online Store](https://us.misumi-ec.com/vona2/detail/221000551286/?HissuCode=CSH-ST-M2.5-20&PNSearch=CSH-ST-M2.5-20&KWSearch=CSH-ST-M2.5-20&searchFlow=results2type)                   |
+| NUT_M2.5                                                    | 4        | None                      | None     | [Online Store](https://us.misumi-ec.com/vona2/detail/110300250540/?HissuCode=SLBNR2.5&PNSearch=SLBNR2.5&KWSearch=SLBNR2.5&searchFlow=results2type)                                     |
+| NUT_M3                                                      | 8        | None                      | None     | [Online Store](https://us.misumi-ec.com/vona2/detail/110300250540/?HissuCode=SLBNR3&PNSearch=SLBNR3&KWSearch=SLBNR3&searchFlow=results2type)                                           |
+| SB-S3-45                                                    | 4        | None                      | None     | [Online Store](https://us.misumi-ec.com/vona2/detail/110500137950/?HissuCode=SB-O3-45&searchFlow=results2similartn)                                                                    |
+| SB-S3-35                                                    | 2        | None                      | None     | [Online Store](https://us.misumi-ec.com/vona2/detail/110500137950/?HissuCode=SB-O3-35&searchFlow=results2similartn)                                                                    |
+| 3D printing parts(HV Converter)                             | 4        | None                      | None     | [Onshape](https://cad.onshape.com/documents/f369a265c003df3767a37472/w/42e27bfc98b5e204f5a483fe/e/5b993b12303647b7aa5484f2)                                                            |
+
+[BOM spreadsheets](https://docs.google.com/spreadsheets/d/1vbIFMRJMbyOd2D6BtwV1Ow_yBc9xRHktqZhTTmwI_l4/edit#gid=368658157)  
+ 
+
 
 ![](/assets/images/platform/turtlebot3/friends/All_friends.jpg)
 
@@ -102,7 +125,7 @@ With this openended component, handful of TurtleBot3 friends with various charac
 - **Type**: Segway robot
 - **Features**: Balancing with only two DYNAMIXEL by applying PID controller.
 - **Components**: Two Dynamixel X 430 Series (All for balancing), an OpenCR1.0 Board, TurtleBot3 Chassis and Battery, 3D printed chassis.
-- [BOM](https://docs.google.com/spreadsheets/d/1IEmOjpqpl2eChhDlZxerMd0W6hTqfVNaQc6Pu_3WlpM/edit#gid=2116354)
+- [BOM](https://docs.google.com/spreadsheets/d/1vbIFMRJMbyOd2D6BtwV1Ow_yBc9xRHktqZhTTmwI_l4/edit?pli=1#gid=368658157)
 - Hardware ([Onshape](http://www.robotis.com/service/download.php?no=680), [Thingiverse](https://www.thingiverse.com/thing:3069806))
 - **Software**: `Examples` → `turtlebot3` → `turtlebot3_friends` → `turtlebot3_segway`
 - **Video**:
@@ -117,7 +140,7 @@ With this openended component, handful of TurtleBot3 friends with various charac
 - **Type**: 4 Wheel parallel translation vehicle
 - **Features**: 4 Joints and 4 wheels will become a futuristic technology on transportation society by overcoming fuel-consuming mechanics.
 - **Components**: Eight Dynamixel X 430 Series (Four for steering, four for driving), an OpenCR1.0 Board, a RC100 Remote Controller with BT410 master-slave Bluetooth modules, TurtleBot3 Chassis and Battery, 3D printed chassis.
-- [BOM](https://docs.google.com/spreadsheets/d/1IEmOjpqpl2eChhDlZxerMd0W6hTqfVNaQc6Pu_3WlpM/edit#gid=598826169)
+- [BOM](https://docs.google.com/spreadsheets/d/1vbIFMRJMbyOd2D6BtwV1Ow_yBc9xRHktqZhTTmwI_l4/edit?pli=1#gid=0)
 - Hardware ([Onshape](http://www.robotis.com/service/download.php?no=681), [Thingiverse](https://www.thingiverse.com/thing:3069758))
 - **Software**: `Examples` → `turtlebot3` → `turtlebot3_friends` → `turtlebot3_conveyor`
 - **Video**:
@@ -132,7 +155,7 @@ With this openended component, handful of TurtleBot3 friends with various charac
 - **Type**: 4WD Car
 - **Features**: 4 Big wheels let it be strong in the rough terrain or even a big difference of elevation.
 - **Components**: Four Dynamixel X 430 Series (All for driving), an OpenCR1.0 Board, a RC100 Remote Controller with BT410 master-slave Bluetooth modules, TurtleBot3 Chassis and Battery, 3D printed chassis.
-- [BOM](https://docs.google.com/spreadsheets/d/1IEmOjpqpl2eChhDlZxerMd0W6hTqfVNaQc6Pu_3WlpM/edit#gid=667600885)
+- [BOM](https://docs.google.com/spreadsheets/d/1vbIFMRJMbyOd2D6BtwV1Ow_yBc9xRHktqZhTTmwI_l4/edit?pli=1#gid=46862313)
 - Hardware ([Onshape](http://www.robotis.com/service/download.php?no=682), [Thingiverse](https://www.thingiverse.com/thing:3069796))
 - **Software**: `Examples` → `turtlebot3` → `turtlebot3_friends` → `turtlebot3_monster`
 - **Video**:
@@ -147,7 +170,7 @@ With this openended component, handful of TurtleBot3 friends with various charac
 - **Type**: Caterpillar
 - **Features**: Caterpillar units which are connected and assembled on sprocket wheels make it be strong in the rough terrain.
 - **Components**: Two Dynamixel X 430 Series (All for driving), an OpenCR1.0 Board, a RC100 Remote Controller with BT410 master-slave Bluetooth modules, TurtleBot3 Chassis and Battery, Caterpillar Unit, 3D printed chassis.
-- [BOM](https://docs.google.com/spreadsheets/d/1IEmOjpqpl2eChhDlZxerMd0W6hTqfVNaQc6Pu_3WlpM/edit#gid=2000352540)
+- [BOM](https://docs.google.com/spreadsheets/d/1vbIFMRJMbyOd2D6BtwV1Ow_yBc9xRHktqZhTTmwI_l4/edit?pli=1#gid=146214313)
 - Hardware ([Onshape](http://www.robotis.com/service/download.php?no=683), [Thingiverse](https://www.thingiverse.com/thing:3069755))
 - **Software**: `Examples` → `turtlebot3` → `turtlebot3_friends` → `turtlebot3_tank`
 - **Video**:
@@ -162,7 +185,7 @@ With this openended component, handful of TurtleBot3 friends with various charac
 - **Type**: Omni wheel
 - **Features**: Omni wheels have additional discs around the circumference make it laterally driveable.
 - **Components**: Three Dynamixel X 430 Series (All for driving), an OpenCR1.0 Board, a RC100 Remote Controller with BT410 master-slave Bluetooth modules, TurtleBot3 Chassis and Battery, 3D printed chassis.
-- [BOM](https://docs.google.com/spreadsheets/d/1IEmOjpqpl2eChhDlZxerMd0W6hTqfVNaQc6Pu_3WlpM/edit#gid=62380643)
+- [BOM](https://docs.google.com/spreadsheets/d/1vbIFMRJMbyOd2D6BtwV1Ow_yBc9xRHktqZhTTmwI_l4/edit?pli=1#gid=381353368)
 - Hardware ([Onshape](http://www.robotis.com/service/download.php?no=684), [Thingiverse](https://www.thingiverse.com/thing:3069809))
 - **Software**: `Examples` → `turtlebot3` → `turtlebot3_friends` → `turtlebot3_omni`
 - **Video**:
@@ -177,7 +200,7 @@ With this openended component, handful of TurtleBot3 friends with various charac
 - **Type**: Mecanum wheel
 - **Features**: Mecanum wheels have additional discs around the circumference make it laterally driveable.
 - **Components**: Four Dynamixel X 430 Series (All for driving), an OpenCR1.0 Board, a RC100 Remote Controller with BT410 master-slave Bluetooth modules, TurtleBot3 Chassis and Battery, 3D printed chassis.
-- [BOM](https://docs.google.com/spreadsheets/d/1IEmOjpqpl2eChhDlZxerMd0W6hTqfVNaQc6Pu_3WlpM/edit#gid=1361078880)
+- [BOM](https://docs.google.com/spreadsheets/d/1vbIFMRJMbyOd2D6BtwV1Ow_yBc9xRHktqZhTTmwI_l4/edit#gid=953634249)
 - Hardware ([Onshape](http://www.robotis.com/service/download.php?no=685), [Thingiverse](https://www.thingiverse.com/thing:3069811))
 - **Software**: `Examples` → `turtlebot3` → `turtlebot3_friends` → `turtlebot3_mechanum`
 - **Video**: See in the video [TurtleBot3 Friends: Omni](#turtlebot3-friends-omni) above.
@@ -190,7 +213,7 @@ With this openended component, handful of TurtleBot3 friends with various charac
 - **Type**: 3-DOF Motorcycle
 - **Features**: Cute 3-wheeled bikey reveals its existence on the "Car" film as a brother of the "Car".
 - **Components**: Three Dynamixel X 430 Series (One for steering, two for driving), an OpenCR1.0 Board, a RC100 Remote Controller with BT410 master-slave Bluetooth modules, TurtleBot3 Chassis and Battery, 3D printed chassis.
-- [BOM](https://docs.google.com/spreadsheets/d/1IEmOjpqpl2eChhDlZxerMd0W6hTqfVNaQc6Pu_3WlpM/edit#gid=940977959)
+- [BOM](https://docs.google.com/spreadsheets/d/1vbIFMRJMbyOd2D6BtwV1Ow_yBc9xRHktqZhTTmwI_l4/edit?pli=1#gid=107279947)
 - Hardware ([Onshape](http://www.robotis.com/service/download.php?no=686), [Thingiverse](https://www.thingiverse.com/thing:3069817))
 - **Software**: `Examples` → `turtlebot3` → `turtlebot3_friends` → `turtlebot3_bike`
 - **Video**: See in the videos [TurtleBot3 Friends: Car](#turtlebot3-friends-car) and [TurtleBot3 Friends: monster](#turtlebot3-friends-monster) above.
@@ -203,7 +226,7 @@ With this openended component, handful of TurtleBot3 friends with various charac
 - **Type**: Road train
 - **Features**: Road train can connect vehicles and it can serve various things!
 - **Components**: Two Dynamixel X 430 Series (two for driving), an OpenCR1.0 Board, a RC100 Remote Controller with BT410 master-slave Bluetooth modules, TurtleBot3 Chassis and Battery, 3D printed chassis.
-- [BOM](https://docs.google.com/spreadsheets/d/1IEmOjpqpl2eChhDlZxerMd0W6hTqfVNaQc6Pu_3WlpM/edit#gid=1816123527)
+- [BOM](https://docs.google.com/spreadsheets/d/1vbIFMRJMbyOd2D6BtwV1Ow_yBc9xRHktqZhTTmwI_l4/edit#gid=1473715654)
 - Hardware ([Onshape](http://www.robotis.com/service/download.php?no=687), [Thingiverse](https://www.thingiverse.com/thing:3069804))
 - **Software**: `Examples` → `turtlebot3` → `turtlebot3_friends` → `turtlebot3_road_train`
 - **Video**:
@@ -218,7 +241,7 @@ With this openended component, handful of TurtleBot3 friends with various charac
 - **Type**: 8-DOF legged robot (a.k.a. Real TurtleBot)
 - **Features**: A real TurtleBot will make most of the fanpics in the turtlebot society!.
 - **Components**: Ten Dynamixel X 430 Series (Four for leg joint, another four for shoulder joint, two for head), an OpenCR1.0 Board, a RC100 Remote Controller with BT410 master-slave Bluetooth modules, TurtleBot3 Chassis and Battery, 3D printed chassis.
-- [BOM](https://docs.google.com/spreadsheets/d/1IEmOjpqpl2eChhDlZxerMd0W6hTqfVNaQc6Pu_3WlpM/edit#gid=2088315005)
+- [BOM](https://docs.google.com/spreadsheets/d/1vbIFMRJMbyOd2D6BtwV1Ow_yBc9xRHktqZhTTmwI_l4/edit#gid=1862775028)
 - Hardware ([Onshape](http://www.robotis.com/service/download.php?no=688), [Thingiverse](https://www.thingiverse.com/thing:3069748))
 - **Software**: `Examples` → `turtlebot3` → `turtlebot3_friends` → `turtlebot3_realturtlebot`
 - **Video**:
@@ -234,7 +257,7 @@ With this openended component, handful of TurtleBot3 friends with various charac
 - **Type**: 2 Wheel mobile based platform as service robot
 - **Features**: 2 wheeled mobile platform will serve whatever you wants.
 - **Components**: A TurtleBot3 Waffle, 6 supports for 4th layer, another 6 supports for 5th layer construction, extra Waffle Plates in each layers, customized 3D printed wheel and ball caster.
-- [BOM](https://docs.google.com/spreadsheets/d/1IEmOjpqpl2eChhDlZxerMd0W6hTqfVNaQc6Pu_3WlpM/edit#gid=490107710)
+- [BOM](https://docs.google.com/spreadsheets/d/1vbIFMRJMbyOd2D6BtwV1Ow_yBc9xRHktqZhTTmwI_l4/edit#gid=71921372)
 - Hardware ([Onshape](http://www.robotis.com/service/download.php?no=689), [Thingiverse](https://www.thingiverse.com/thing:3069815))
 - **Software**: `Examples` → `turtlebot3` → `turtlebot3_waffle` → `turtlebot3_waffle`
 - **Video**:
@@ -242,3 +265,6 @@ With this openended component, handful of TurtleBot3 friends with various charac
   <iframe width="560" height="315" src="https://www.youtube.com/embed/5NYdgnzxykc" frameborder="0" allowfullscreen></iframe>
 
   <iframe width="560" height="315" src="https://www.youtube.com/embed/u7qb8xiSiNg" frameborder="0" allowfullscreen></iframe>
+
+
+[BOM]: /docs/en/popup/turtlebot3_bom

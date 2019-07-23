@@ -15,7 +15,7 @@
 
 ![](/assets/images/dxl/pro/pro_external_port.png)
 
-![](/assets/images/dxl/pro/pro_external_port_pinout.png)
+![](/assets/images/dxl/pro_plus/external_port_pinout.png)
 
 |핀 1|핀 2|핀 3|핀 4|핀 5|핀 6|
 | :---: | :---: | :---: | :---: | :---: | :---: |

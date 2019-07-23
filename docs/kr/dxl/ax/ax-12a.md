@@ -9,6 +9,7 @@ permalink: /docs/kr/dxl/ax/ax-12a/
 sidebar:
   title: AX-12A
   nav: "ax-12a"
+product_group: dxl_ax
 ---
 
 ![](/assets/images/dxl/ax/ax-12+_product.png)
@@ -24,32 +25,32 @@ sidebar:
 
 # [주요 사양](#주요-사양)
 
-| 항목            | 내용                                                                         |
-|:----------------|:-----------------------------------------------------------------------------|
-| 무게            | 53.5 [g](AX-12, AX-12+), 54.6 [g](AX-12A)                                          |
-| 크기            | 32 X 50 X 40 [mm]<br />1.26 X 1.97 X 1.57 [inch]                             |
-| 최소 제어각     | 0.29 [deg]                                                                    |
-| 모터            | Cored                                                                        |
-| 기어비          | 254 : 1                                                                      |
-| 정지 토크    | 1.5 [N&middot;m] (at 12 [V], 1.5 [A])                                          |
-| 무부하 속도   | 59 [rpm] (at 12 [V])                                                               |
-| 동작 모드       | 관절 모드 : 0 ~ 300 [deg]<br />바퀴 모드 : 무한 회전                   |
-| 동작 온도       | -5 ~ +70 [&deg;C]                                                   |
-| 사용 전압       | 9.0 ~ 12.0 [V] (**권장 전압 : 11.1 [V]**)                                    |
-| 제어 명령  | Digital Packet                                                               |
-| 프로토콜 타입   | Half Duplex Asynchronous Serial Communicationf<br />(8bit, 1stop, No Parity) |
-| 통신 연결 | TTL Level Multi Drop Bus                         |
-| ID              | 254 ID (0~253)                                                               |
-| 피드백        | Position, Temperature, Load, Input Voltage 등                              |
-| 기어 재질   | Engineering Plastic(Full)                                               |
-| 케이스 재질        | Engineering Plastic(Front, Middle, Back)                               |
+| 항목          | 내용                                                                         |
+|:--------------|:-----------------------------------------------------------------------------|
+| 무게          | AX-12 (53.5 [g]), AX-12+ (53.5 [g]), AX-12A (54.6 [g])                       |
+| 크기          | 32 X 50 X 40 [mm]<br />1.26 X 1.97 X 1.57 [inch]                             |
+| 최소 제어각   | 0.29 [deg]                                                                   |
+| 모터          | Cored                                                                        |
+| 기어비        | 254 : 1                                                                      |
+| Stall Torque | 1.5 [N&middot;m] (at 12 [V], 1.5 [A])                                        |
+| 무부하 속도   | 59 [rpm] (at 12 [V])                                                         |
+| 동작 모드     | 관절 모드 : 0 ~ 300 [deg]<br />바퀴 모드 : 무한 회전                         |
+| 동작 온도     | -5 ~ +70 [&deg;C]                                                            |
+| 사용 전압     | 9.0 ~ 12.0 [V] (**권장 전압 : 11.1 [V]**)                                    |
+| 제어 명령     | Digital Packet                                                               |
+| 프로토콜 타입 | Half Duplex Asynchronous Serial Communicationf<br />(8bit, 1stop, No Parity) |
+| 통신 연결     | TTL Level Multi Drop Bus                                                     |
+| ID            | 254 ID (0~253)                                                               |
+| 피드백        | Position, Temperature, Load, Input Voltage 등                                |
+| 기어 재질     | Engineering Plastic(Full)                                                    |
+| 케이스 재질   | Engineering Plastic(Front, Middle, Back)                                     |
 
 **주의**: Stall Torque 는 순간적으로 낼수있는 최대정지토크를 의미합니다. 실제 구동을 위해 로봇을 설계하신다면 Stall Torque의 1/5 이하의 로드가 걸리도록 설계하셔야 안정적인 움직임이 가능합니다.
 {: .notice}
 
 {% include kr/dxl/warning.md %}
 
-{% include kr/dxl/control_table_protocol1.md %}
+{% include kr/dxl/control_table.md %}
 
 ## [EEPROM 영역](#eeprom-영역)
 
@@ -124,6 +125,11 @@ Baudrate(BPS) = 2,000,000 / (Value + 1)
 
 **참고**: UART는 Baudrate 오차가 3% 이내이면 통신에 지장이 없습니다.
 {: .notice}
+
+**참고**: 높은 통신데이터를 정상적으로 사용하기위해, 응답시간을 낮춰주세요.  
+[응답 시간 조정](/docs/kr/software/dynamixel/dynamixel_wizard2/#포트-응답-속도-설정)  
+{: .notice}
+
 
 ### <a name="return-delay-time"></a>**[Return Delay Time (5)](#return-delay-time-5)**
 {% include kr/dxl/control_table_return_delay_time.md %}
@@ -222,8 +228,21 @@ F3은 다음과 같은 방법으로 적용됩니다. F3은 AX-12A의 3면(좌,�
 
 # [참고자료](#참고자료)
 
-**주의**: [호환성 가이드]
+**주의**  
+[호환성 가이드]{: .blank}  
+[케이블 호환성]{: .popup}
 {: .notice}
+
+## [인증 획득](#인증-획득)
+표기되지 않은 인증에 대해서는 별도 문의하시기 바랍니다.
+
+### [FCC](#fcc)
+
+#### AX-12
+{% include kr/dxl/fcc_class_b.md %}
+
+#### AX-12+ / AX-12A
+{% include kr/dxl/fcc_class_a.md %}
 
 ## [커넥터 정보](#커넥터-정보)
 {% include kr/dxl/molex_ttl.md %}
@@ -237,3 +256,4 @@ F3은 다음과 같은 방법으로 적용됩니다. F3은 AX-12A의 3면(좌,�
 {% include kr/dxl/485_ttl_connection.md %}
 
 [호환성 가이드]: http://www.robotis.com/service/compatibility_table.php?cate=d
+{% include kr/dxl/common_link.md %}

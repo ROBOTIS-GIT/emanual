@@ -4,6 +4,6 @@
 ### [TTL 통신](#ttl-통신)
 ![](/assets/images/dxl/ttl_circuit.png)
 
-![](/assets/images/dxl/x/x_series_ttl_pin.png)
+{% if page.ref=='2xl430-w250' %} ![](/assets/images/dxl/x/2xl/2x_series_ttl_pin.png) {% else %}![](/assets/images/dxl/x/x_series_ttl_pin.png) {% endif %} 
 
 {% include kr/dxl/pinout_warning.md %}

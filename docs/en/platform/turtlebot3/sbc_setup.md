@@ -23,7 +23,7 @@ sidebar:
 **WARNING**: Setup work requires Power and Time. So battery is not suitable. We recommend using SMPS (AC adapter) during this work.
 {: .notice--warning}
 
-**NOTE**: We are offering three models of TurtleBot3. TurtleBot3 Burger and Waffle Pi use Raspberry Pi 3, and TurtleBot3 Waffle uses Intel Joule 570x. Choose from the following pages according to the SBC used in your model.
+**NOTE**: We are offering three models of TurtleBot3. TurtleBot3 Burger and Waffle Pi use Raspberry Pi 3 B and B+, and TurtleBot3 Waffle uses Intel Joule 570x. Choose from the following pages according to the SBC used in your model.
 {: .notice--info}
 
 ### [Raspberry Pi 3](#raspberry-pi-3)
@@ -34,6 +34,12 @@ sidebar:
 - Second method: We provide the Linux distro image based on Raspbian. They are pre-installed with ROS and ROS-packages related TurtleBot3. It is available immediately without additional installation. If you want to use it, please take the second method `Install Linux based on Raspbian` below. 
 {% endcapture %}
 <div class="notice--info">{{ info_01 | markdownify }}</div>
+
+{% capture info_02 %}
+**NOTE**: Raspberry Pi 3 B+ is available in TurtleBot3 Burger and Waffle Pi. If you use Raspberry Pi 3 B+, please refer to the following.
+- For Ubuntu MATE, it does not support the Raspberry Pi B+. So the first method described above can not be used. Instead, we recommend using a second method `Install Linux based on Raspbian` below.
+{% endcapture %}
+<div class="notice--info">{{ info_02 | markdownify }}</div>
 
   - [Install Linux (Ubuntu MATE)][install_linux_ubuntu_mate]
 

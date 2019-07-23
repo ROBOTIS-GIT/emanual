@@ -1,4 +1,5 @@
 common_proa_specs:
+  mcu:                &mcu                "ARM CORTEX-M4 (168 [MHz], 32Bit)"
   motor:              &motor              "BLDC(Maxon)"
   baudrate:           &baudrate           "9,600 [bps] ~ 10.5 [Mbps]"
   opmode:             &opmode             "토크 제어모드<br />속도 제어모드<br />위치 제어모드<br />확장 위치 제어모드<br />PWM 제어모드(전압 제어모드)"
@@ -23,7 +24,8 @@ common_proa_specs:
   standbycurrent:     &standbycurrent     "80 [mA]"
 
 h42-20-s300-ra:
-  motor:              *motor
+  mcu:                *mcu
+  motor:              "Coreless(Maxon)"
   baudrate:           *baudrate
   opmode_en:          *opmode_en
   opmode:             *opmode
@@ -52,6 +54,7 @@ h42-20-s300-ra:
   standbycurrent:     *standbycurrent
 
 h54-100-s500-ra:
+  mcu:                *mcu
   motor:              *motor
   baudrate:           *baudrate
   opmode_en:          *opmode_en
@@ -81,6 +84,7 @@ h54-100-s500-ra:
   standbycurrent:     *standbycurrent
 
 h54-200-s500-ra:
+  mcu:                *mcu
   motor:              *motor
   baudrate:           *baudrate
   opmode_en:          *opmode_en
@@ -110,7 +114,8 @@ h54-200-s500-ra:
   standbycurrent:     *standbycurrent
 
 m42-10-s260-ra:
-  motor:              *motor
+  mcu:                *mcu
+  motor:              "Coreless(Maxon)"
   baudrate:           *baudrate
   opmode_en:          *opmode_en
   opmode:             *opmode
@@ -139,6 +144,7 @@ m42-10-s260-ra:
   standbycurrent:     *standbycurrent
 
 m54-40-s250-ra:
+  mcu:                *mcu
   motor:              *motor
   baudrate:           *baudrate
   opmode_en:          *opmode_en
@@ -168,6 +174,7 @@ m54-40-s250-ra:
   standbycurrent:     *standbycurrent
 
 m54-60-s250-ra:
+  mcu:                *mcu
   motor:              *motor
   baudrate:           *baudrate
   opmode_en:          *opmode_en

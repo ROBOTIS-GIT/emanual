@@ -1,5 +1,5 @@
 common_x_specs:
-  mcu:                &mcu            "ST CORTEX-M3 (STM32F103C8 @ 72 [Mhz], 32Bit)"
+  mcu:                &mcu            "ARM CORTEX-M3 (72 [MHz], 32Bit)"
   encoder:            &encoder        "Contactless absolute encoder (12Bit, 360 [&deg;])<br />Maker : ams(www.ams.com), Part No : AS5045"
   baudrate:           &baudrate       "9,600 [bps] ~ 4.5 [Mbps]"
   control:            &control        "PID control"
@@ -38,7 +38,7 @@ xl320:
 xh430-v210:
   mcu:                *mcu
   encoder:            *encoder
-  motor:              "Maxon"
+  motor:              "Coreless(Maxon)"
   baudrate:           *baudrate
   control:            *control
   resolution:         *resolution
@@ -67,7 +67,7 @@ xh430-v210:
 xh430-v350:
   mcu:                *mcu
   encoder:            *encoder
-  motor:              "Maxon"
+  motor:              "Coreless(Maxon)"
   baudrate:           *baudrate
   control:            *control
   resolution:         *resolution
@@ -96,7 +96,7 @@ xh430-v350:
 xh430-w210:
   mcu:                *mcu
   encoder:            *encoder
-  motor:              "Maxon"
+  motor:              "Coreless(Maxon)"
   baudrate:           *baudrate
   control:            *control
   resolution:         *resolution
@@ -125,7 +125,7 @@ xh430-w210:
 xh430-w350:
   mcu:                *mcu
   encoder:            *encoder
-  motor:              "Maxon"
+  motor:              "Coreless(Maxon)"
   baudrate:           *baudrate
   control:            *control
   resolution:         *resolution
@@ -176,9 +176,38 @@ xl430-w250:
   protocoltype:       *ttl
   physicalconnection: *ttl_connection
   id:                 *id
-  feedback:           *feedback
+  feedback:           "Position, Velocity, Load, Realtime tick, Trajectory, Temperature, Input Voltage, etc"
   material:           "Engineering Plastic"
   standbycurrent:     "52 [mA]"
+
+2xl430-w250:
+  mcu:                *mcu
+  encoder:            "Contactless absolute encoder (12Bit, 360 [&deg;])<br />Maker : ams(www.ams.com), Part No : AS5601"
+  motor:              "Cored"
+  baudrate:           *baudrate
+  control:            *control
+  resolution:         *resolution
+  backlash:           "N/A"
+  mode:               "속도 제어 모드<br />위치 제어 모드 (0 ~ 360 [&deg;])<br />확장 위치 제어 모드 (멀티턴)<br />PWM 제어 모드 (Voltage Control Mode)"
+  mode_en:            "Velcoity Control Mode<br />Position Control Mode (0 ~ 360 [&deg;])<br />Extended Position Control Mode (Multi-turn)<br />PWM Control Mode (Voltage Control Mode)"
+  weight:             "98.2 [g]"
+  dimensions:         "36 x 46.5 x 36 [mm]"
+  gearratio:          "257.4 : 1"
+  stalltorque:        "1.0 [N.m] (at 9.0 [V], 1.0 [A])<br />**1.4 [N.m] (at 11.1 [V], 1.3 [A])**<br />1.5 [N.m] (at 12.0 [V], 1.4 [A])"
+  noloadspeed:        "47 [rev/min] (at 9.0 [V])<br />**57 [rev/min] (at 11.1 [V])**<br />61 [rev/min] (at 12.0 [V])"
+  radialload:         "N/A"
+  radialload_en:      "N/A"
+  axialload:          "N/A"
+  temperature:        "-5 ~ +72 [&deg;C]"
+  voltage:            "6.5 ~ 12.0 [V] (**권장 전압 : 11.1 [V]**)"
+  voltage_en:         "6.5 ~ 12.0 [V] (**Recommended : 11.1 [V]**)"
+  command:            *command
+  protocoltype:       *ttl
+  physicalconnection: *ttl_connection
+  id:                 *id
+  feedback:           "Position, Velocity, Load, Realtime tick, Trajectory, Temperature, Input Voltage, etc"
+  material:           "Full Metal Gear <br />Engineering Plastic(Front, Middle, Back)"
+  standbycurrent:     "49 [mA]"
 
 xc430-w240:
   mcu:                "ST CORTEX-M3 (STM32F103C8 @ 72 [Mhz], 32Bit)"
@@ -190,24 +219,82 @@ xc430-w240:
   backlash:           "N/A"
   mode:               "속도 제어 모드<br />위치 제어 모드 (0 ~ 360 [&deg;])<br />확장 위치 제어 모드 (멀티턴)<br />PWM 제어 모드 (Voltage Control Mode)"
   mode_en:            "Velcoity Control Mode<br />Position Control Mode (0 ~ 360 [&deg;])<br />Extended Position Control Mode (Multi-turn)<br />PWM Control Mode (Voltage Control Mode)"
-  weight:             "64 [g]"
+  weight:             "65 [g]"
   dimensions:         "28.5 x 46.5 x 34 [mm]"
   gearratio:          "245.22 : 1"
-  stalltorque:        "TBD (at 9.0 [V], TBD)<br />**TBD (at 11.1 [V], TBD)**<br />1.7 [Nm] (at 12.0 [V], 1.4 [A])"
-  noloadspeed:        "TBD (at 9.0 [V])<br />**TBD (at 11.1 [V])**<br />71 [rev/min] (at 12.0 [V])"
+  stalltorque:        "1.4 [N.m] (at 9.0 [V], 1.1 [A])<br />1.7 [N.m] (at 11.1 [V], 1.3 [A])<br />**1.9 [Nm] (at 12.0 [V], 1.4 [A])**"
+  noloadspeed:        "52 [rev/min] (at 9.0 [V])<br />65 [rev/min] (at 11.1 [V])<br />**70 [rev/min] (at 12.0 [V])**"
   radialload:         "N/A"
   radialload_en:      "N/A"
   axialload:          "N/A"
   temperature:        *temperature
-  voltage:            "7.0 ~ 12.0 [V] (**권장 전압 : 12 [V]**)"
-  voltage_en:         "7.0 ~ 12.0 [V] (**Recommended : 12.0 [V]**)"
+  voltage:            "6.5 ~ 14.8 [V] (**권장 전압 : 12 [V]**)"
+  voltage_en:         "6.5 ~ 14.8 [V] (**Recommended : 12.0 [V]**)"
   command:            "Digital Packet"
   protocoltype:       "Half Duplex Asynchronous Serial Communication<br />(8bit, 1stop, No Parity)"
   physicalconnection: "TTL Level Multidrop Bus"
   id:                 "253 ID (0 ~ 252)"
   feedback:           "Position, Velocity, Load, Realtime tick, Trajectory, Temperature, Input Voltage, etc"
   material:           "Full Metal Gear<br />Engineering Plastic (Body)"
-  standbycurrent:     "45 [mA]"
+  standbycurrent:     "46 [mA]"
+
+2xc430-w250:
+  mcu:                *mcu
+  encoder:            "Contactless absolute encoder (12Bit, 360 [&deg;])<br />Maker : ams(www.ams.com), Part No : AS5601"
+  motor:              "Cored"
+  baudrate:           *baudrate
+  control:            *control
+  resolution:         *resolution
+  backlash:           "N/A"
+  mode:               "속도 제어 모드<br />위치 제어 모드 (0 ~ 360 [&deg;])<br />확장 위치 제어 모드 (멀티턴)<br />PWM 제어 모드 (Voltage Control Mode)"
+  mode_en:            "Velcoity Control Mode<br />Position Control Mode (0 ~ 360 [&deg;])<br />Extended Position Control Mode (Multi-turn)<br />PWM Control Mode (Voltage Control Mode)"
+  weight:             "98.2 [g]"
+  dimensions:         "36 x 46.5 x 36 [mm]"
+  gearratio:          "257.4 : 1"
+  stalltorque:        "TBD"
+  noloadspeed:        "TBD"
+  radialload:         "N/A"
+  radialload_en:      "N/A"
+  axialload:          "N/A"
+  temperature:        "-5 ~ +72 [&deg;C]"
+  voltage:            "6.5 ~ 14.8 [V] (**권장 전압 : 12.0 [V]**)"
+  voltage_en:         "6.5 ~ 14.8 [V] (**Recommended : 12.0 [V]**)"
+  command:            *command
+  protocoltype:       *ttl
+  physicalconnection: *ttl_connection
+  id:                 *id
+  feedback:           "Position, Velocity, Load, Realtime tick, Trajectory, Temperature, Input Voltage, etc"
+  material:           "Engineering Plastic"
+  standbycurrent:     "49 [mA]"
+
+xc430-w150:
+  mcu:                "ST CORTEX-M3 (STM32F103C8 @ 72 [Mhz], 32Bit)"
+  encoder:            "Contactless absolute encoder (12Bit, 360 [&deg;])<br />Maker : ams(www.ams.com), Part No : AS5601"
+  motor:              "Coreless"
+  baudrate:           "9,600 [bps] ~ 4.5 [Mbps]"
+  control:            "PID control"
+  resolution:         *resolution
+  backlash:           "N/A"
+  mode:               "속도 제어 모드<br />위치 제어 모드 (0 ~ 360 [&deg;])<br />확장 위치 제어 모드 (멀티턴)<br />PWM 제어 모드 (Voltage Control Mode)"
+  mode_en:            "Velcoity Control Mode<br />Position Control Mode (0 ~ 360 [&deg;])<br />Extended Position Control Mode (Multi-turn)<br />PWM Control Mode (Voltage Control Mode)"
+  weight:             "65 [g]"
+  dimensions:         "28.5 x 46.5 x 34 [mm]"
+  gearratio:          "159.59 : 1"
+  stalltorque:        "1.2 [N.m] (at 9.0 [V], 1.1 [A])<br />1.4 [N.m] (at 11.1 [V], 1.3 [A])<br />**1.6 [Nm] (at 12.0 [V], 1.4 [A])**"
+  noloadspeed:        "80 [rev/min] (at 9.0 [V])<br />99 [rev/min] (at 11.1 [V])<br />**106 [rev/min] (at 12.0 [V])**"
+  radialload:         "N/A"
+  radialload_en:      "N/A"
+  axialload:          "N/A"
+  temperature:        *temperature
+  voltage:            "6.5 ~ 14.8 [V] (**권장 전압 : 12.0 [V]**)"
+  voltage_en:         "6.5 ~ 14.8 [V] (**Recommended : 12.0 [V]**)"
+  command:            "Digital Packet"
+  protocoltype:       "Half Duplex Asynchronous Serial Communication<br />(8bit, 1stop, No Parity)"
+  physicalconnection: "TTL Level Multidrop Bus"
+  id:                 "253 ID (0 ~ 252)"
+  feedback:           "Position, Velocity, Load, Realtime tick, Trajectory, Temperature, Input Voltage, etc"
+  material:           "Full Metal Gear<br />Engineering Plastic (Body)"
+  standbycurrent:     "46 [mA]"
 
 xm430-w210:
   mcu:                *mcu
@@ -253,6 +340,122 @@ xm430-w350:
   gearratio:          "353.5 : 1"
   stalltorque:        "3.8 [N.m] (at 11.1 [V], 2.1 [A])<br />**4.1 [Nm] (at 12.0 [V], 2.3 [A])**<br />4.8 [Nm] (at 14.8 [V], 2.7 [A])"
   noloadspeed:        "43 [rev/min] (at 11.1 [V])<br />**46 [rev/min] (at 12.0 [V])**<br />57 [rev/min] (at 14.8 [V])"
+  radialload:         *radialload
+  radialload_en:      *radialload_en
+  axialload:          *axialload
+  temperature:        *temperature
+  voltage:            *voltage_12
+  voltage_en:         *voltage_12_en
+  command:            *command
+  protocoltype:       *rs485_ttl
+  physicalconnection: *rs485_ttl_conn
+  id:                 *id
+  feedback:           *feedback
+  material:           *material
+  standbycurrent:     *standbycurrent_40
+
+xh540-v270:
+  mcu:                *mcu
+  encoder:            *encoder
+  motor:              "Maxon"
+  baudrate:           *baudrate
+  control:            *control
+  resolution:         *resolution
+  backlash:           *backlash_x
+  mode:               *mode
+  mode_en:            *mode_en
+  weight:             *weight_540
+  dimensions:         *dimension_540
+  gearratio:          "272.5 : 1"
+  stalltorque:        "9.2 [Nm] (at 24 [V], 2.4 [A])"
+  noloadspeed:        "34 [rev/min] (at 24 [V])"
+  radialload:         *radialload
+  radialload_en:      *radialload_en
+  axialload:          *axialload
+  temperature:        *temperature
+  voltage:            *voltage_24
+  voltage_en:         *voltage_24_en
+  command:            *command
+  protocoltype:       *rs485
+  physicalconnection: *rs485_connection
+  id:                 *id
+  feedback:           *feedback
+  material:           *material
+  standbycurrent:     *standbycurrent_36
+
+xh540-v150:
+  mcu:                *mcu
+  encoder:            *encoder
+  motor:              "Maxon"
+  baudrate:           *baudrate
+  control:            *control
+  resolution:         *resolution
+  backlash:           *backlash_x
+  mode:               *mode
+  mode_en:            *mode_en
+  weight:             *weight_540
+  dimensions:         *dimension_540
+  gearratio:          "152.3 : 1"
+  stalltorque:        "6.4 [N.m] (at 24 [V], 2.4 [A])"
+  noloadspeed:        "60 [rev/min] (at 24 [V])"
+  radialload:         *radialload
+  radialload_en:      *radialload_en
+  axialload:          *axialload
+  temperature:        *temperature
+  voltage:            *voltage_24
+  voltage_en:         *voltage_24_en
+  command:            *command
+  protocoltype:       *rs485
+  physicalconnection: *rs485_connection
+  id:                 *id
+  feedback:           *feedback
+  material:           *material
+  standbycurrent:     *standbycurrent_36
+
+xh540-w150:
+  mcu:                *mcu
+  encoder:            *encoder
+  motor:              "Maxon"
+  baudrate:           *baudrate
+  control:            *control
+  resolution:         *resolution
+  backlash:           *backlash_x
+  mode:               *mode
+  mode_en:            *mode_en
+  weight:             *weight_540
+  dimensions:         *dimension_540
+  gearratio:          "152.3 : 1"
+  stalltorque:        "6.6 [N.m] @ 11.1 [V], 4.5 [A]<br />7.1 [Nm] @ 12.0 [V], 4.9 [A]<br />8.5 [Nm] @ 14.8 [V], 5.9 [A]"
+  noloadspeed:        "66 [rev/min] @ 11.1 [V]<br />70 [rev/min] @ 12.0 [V]<br />86 [rev/min] @ 14.8"
+  radialload:         *radialload
+  radialload_en:      *radialload_en
+  axialload:          *axialload
+  temperature:        *temperature
+  voltage:            *voltage_12
+  voltage_en:         *voltage_12_en
+  command:            *command
+  protocoltype:       *rs485_ttl
+  physicalconnection: *rs485_ttl_conn
+  id:                 *id
+  feedback:           *feedback
+  material:           *material
+  standbycurrent:     *standbycurrent_40
+
+xh540-w270:
+  mcu:                *mcu
+  encoder:            *encoder
+  motor:              "Maxon"
+  baudrate:           *baudrate
+  control:            *control
+  resolution:         *resolution
+  backlash:           *backlash_x
+  mode:               *mode
+  mode_en:            *mode_en
+  weight:             *weight_540
+  dimensions:         *dimension_540
+  gearratio:          "272.5 : 1"
+  stalltorque:        "9.2 [Nm] (at 11.1 [V], 4.5 [A])<br />**9.9 [Nm] (at 12.0 [V], 4.9 [A])**<br />11.7 [Nm] (at 14.8 [V], 5.9 [A])"
+  noloadspeed:        "36 [rev/min] (at 11.1 [V])<br />**39 [rev/min] (at 12.0 [V])**<br />46 [rev/min] (at 14.8 [V])"
   radialload:         *radialload
   radialload_en:      *radialload_en
   axialload:          *axialload

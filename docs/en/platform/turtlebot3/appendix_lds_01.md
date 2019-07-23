@@ -11,7 +11,7 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 21"></div>
+<div style="counter-reset: h1 22"></div>
 <div style="counter-reset: h2 2"></div>
 
 <!--[dummy Header 1]>
@@ -26,7 +26,7 @@ sidebar:
 
 - 360 Laser Distance Sensor LDS-01 is a 2D laser scanner capable of sensing 360 degrees that collects a set of data around the robot to use for SLAM (Simultaneous Localization and Mapping) and Navigation.
 - The LDS-01 is used for TurtleBot3 Burger, Waffle and Waffle Pi models.
-- It supports USB interface([USB2LDS][u2d2]) and is easy to install on a PC.
+- It supports USB interface([USB2LDS]) and is easy to install on a PC.
 - It supports UART interface for embedded baord.
 
 ### [Introduction Video](#introduction-video)
@@ -162,7 +162,7 @@ $ git clone https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
 #### Build
 
 - The makefile used here is set for Linux. Windows and macOS should be changed according to their development environment.
- 
+
 ``` bash
 $ cd hls_lfcd_lds_driver/applications/lds_driver/
 $ make
@@ -204,9 +204,9 @@ $ git clone https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
 
 #### Build
 
-- Run the Qt Creator 
+- Run the Qt Creator
 - Open file (`Ctrl`-`O`) the `lds_polar_graph.pro` file (hls_lfcd_lds_driver/applications/lds_polar_graph/lds_polar_graph.pro)
-- Change the [input your portname](https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver/blob/cf866c6b80060ab9270a664d665d287afcca2c10/applications/lds_polar_graph/lds_polar_graph.cpp#L47) of source code 
+- Change the [input your portname](https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver/blob/cf866c6b80060ab9270a664d665d287afcca2c10/applications/lds_polar_graph/lds_polar_graph.cpp#L47) of source code
 - Build all (`Ctrl`-`Shift`-`B`)
 
 #### Run
@@ -219,11 +219,14 @@ $ git clone https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
 
 - We provide a way to connect to an embedded board.
 - The data of the LDS-01 can be used on the embedded board like OpenCR and Arduino, and it can be confirmed on the LCD as a graph like below.
- 
+
 #### Preparations
 - It does not provide a dedicated interface board, but you can connect it to the power and UART of the embedded board as shown below.
-
+a
 ![](/assets/images/platform/turtlebot3/appendix_lds/lds_lines.png)
+
+**WARNNING** : The wiring colours of LDS-01 could differ from the picture by manaufacturers. 
+{: .notice--warning}
 
 - OpenCR develops and downloads firmware through the Arduino IDE. Therefore, you must install the Arduino IDE in advance and install the OpenCR board package. Install through the following link document.
 
@@ -232,10 +235,16 @@ $ git clone https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
 #### Download firmware and run
 
 1. After connecting USB to PC, select `Tools` -> `Board` -> `OpenCR Board` in Arduino IDE.
-1. Change `Tools`-> `Port` to the port to which the board is connected.  
+1. Change `Tools`-> `Port` to the port to which the board is connected.
 1. In the Arduino IDE Examples, select the firmware for LDS (`File` -> `Examples` -> `OpenCR` -> `Etc` -> `LDS` -> `drawLDS`).
 1. Click `Upload` icon in the Arduino IDE that displays the red circle to build and download the firmware. When the download is completed, the firmware is automatically executed.
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/7wKyW6yLNSg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-[u2d2]: docs/en/parts/interface/u2d2/
+### [Certifications](#certifications)
+Please inquire us for information regarding unlisted certifications.
+
+#### [FCC](#fcc)
+{% include en/dxl/fcc_class_b.md %}
+
+[USB2LDS]: /docs/en/platform/turtlebot3/appendix_lds_01/#user-guide-for-embedded-board

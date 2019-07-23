@@ -8,13 +8,13 @@
 | Velocity P Gain(78) | K<sub>V</sub>P |  K<sub>V</sub>P = K<sub>V</sub>P<sub>(TBL)</sub> / 128   | 0 ~ 16,383 | P Gain |
 
 다음은 속도 제어 모드에서 동작하는 속도제어기의 블록다이어그램입니다. 사용자의 요청이 장치에 전달된 후, 장치의 Horn이 구동되기까지의 과정은 다음과 같습니다.
-1. 사용자의 요청이 통신 버스를 통해 Goal Velocity(104)에 등록됩니다.
-2. Goal Velocity(104)는 Profile Acceleration(108)에 의해서 목표 속도 궤적으로 변경됩니다.
-3. 목표 속도 궤적은 Velocity Trajectory(136) 에 표기됩니다.
+1. 사용자의 요청이 통신 버스를 통해 [Goal Velocity(104)]에 등록됩니다.
+2. [Goal Velocity(104)]는 [Profile Acceleration(108)]에 의해서 목표 속도 궤적으로 변경됩니다.
+3. 목표 속도 궤적은 [Velocity Trajectory(136)] 에 표기됩니다.
 4. PI 제어기는 목표 속도 궤적을 기반으로 모터에 인가할 PWM 출력을 계산합니다.
-5. Goal PWM(100)은 계산된 PWM 출력을 제한하여 최종 PWM값을 결정합니다.
+5. [Goal PWM(100)]은 계산된 PWM 출력을 제한하여 최종 PWM값을 결정합니다.
 6. 최종 PWM값은 Inverter를 통해 모터에 적용되고 장치의 Horn이 구동됩니다.
-7. 구동 결과는 Present Position(132), Present Velocity(128) Present PWM(124), Present Current(126)에 표기됩니다.
+7. 구동 결과는 [Present Position(132)], [Present Velocity(128)] [Present PWM(124)], {% if page.product_group=='dxl_xl430' %}[Present Load(126)]{% else %}[Present Current(126)]{% endif %}에 표기됩니다.
 
 ![](/assets/images/dxl/velocity_controller_pi_gain.jpg)
 

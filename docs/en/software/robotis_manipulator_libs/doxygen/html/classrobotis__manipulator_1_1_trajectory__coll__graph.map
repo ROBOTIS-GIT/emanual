@@ -1,0 +1,12 @@
+<map id="robotis_manipulator::Trajectory" name="robotis_manipulator::Trajectory">
+<area shape="rect" id="node2" href="$classrobotis__manipulator_1_1_manipulator.html" title="The Manipulator class. " alt="" coords="93,727,276,980"/>
+<area shape="rect" id="node3" href="$structrobotis__manipulator_1_1_world.html" title="{robotis_manipulator\l::World\n|+ name\l+ child\l|}" alt="" coords="117,528,252,635"/>
+<area shape="rect" id="node4" href="$structrobotis__manipulator_1_1_pose.html" title="{robotis_manipulator\l::Pose\n||}" alt="" coords="117,359,252,451"/>
+<area shape="rect" id="node5" href="$structrobotis__manipulator_1_1_dynamic_pose.html" title="{robotis_manipulator\l::DynamicPose\n||}" alt="" coords="5,197,140,289"/>
+<area shape="rect" id="node6" href="$structrobotis__manipulator_1_1_dynamicvector.html" title="{robotis_manipulator\l::Dynamicvector\n|+ velocity\l+ acceleration\l|}" alt="" coords="5,5,140,112"/>
+<area shape="rect" id="node7" href="$structrobotis__manipulator_1_1_kinematic_pose.html" title="{robotis_manipulator\l::KinematicPose\n|+ position\l+ orientation\l|}" alt="" coords="164,189,299,296"/>
+<area shape="rect" id="node8" href="$classrobotis__manipulator_1_1_task_trajectory.html" title="The TaskTrajectory class. " alt="" coords="300,771,501,936"/>
+<area shape="rect" id="node9" href="$classrobotis__manipulator_1_1_minimum_jerk.html" title="The MinimumJerk class. " alt="" coords="435,513,569,649"/>
+<area shape="rect" id="node10" href="$classrobotis__manipulator_1_1_joint_trajectory.html" title="The JointTrajectory class. " alt="" coords="525,771,727,936"/>
+<area shape="rect" id="node11" href="$structrobotis__manipulator_1_1_time.html" title="{robotis_manipulator\l::Time\n|+ total_move_time\l+ present_time\l+ start_time\l|}" alt="" coords="751,793,885,914"/>
+</map>

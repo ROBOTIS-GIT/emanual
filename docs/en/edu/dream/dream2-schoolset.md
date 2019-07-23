@@ -11,8 +11,6 @@ sidebar:
   nav: "dream2-schoolset"
 ---
 
-# DREAM2 School Set
-
 # [Introduction](#introduction)
 
 ROBOTIS DREAM II School Set consists of DREAM II Jump Kit, Level 2 & Level 3 Part Kits with a PDF Assembly Manual for 20+ Robot Configurations.  

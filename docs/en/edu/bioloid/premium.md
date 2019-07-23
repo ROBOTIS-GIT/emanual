@@ -158,7 +158,7 @@ The RC-100 is used to control the robot.
 |4 + L|Attack Left|
 |4 + R|Attack Right|
 
-##### Setting the CM-510 IR Channels
+##### Setting the CM-530 IR Channels
 
 After mounting the IR receiver on CM-530 under control mode, you can set the channels to control it remotely by pressing the Aux button. If you change the channel of the controller, you must also change the channel of RC-100. On how to change the channel of RC-100, please refer to Changing RC-100's Channel.
 
@@ -678,38 +678,38 @@ Please refer to the [Gripper Assembly].
 
 [ex_beginner_1-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_CrossingGate_ASM_EN.pdf
 [ex_beginner_1-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_crossinggate_en.tsk
-[ex_beginner_1-3]: http://www.robotis.com/video/BIO_PRM_CrossingGate.wmv
+[ex_beginner_1-3]: https://www.dropbox.com/s/r3j2ozjljrdmog3/BIO_PRM_CrossingGate.wmv?dl=0
 [ex_beginner_2-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_UniversalGauge_ASM_EN.pdf
 [ex_beginner_2-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_universalgauge_en.tsk
-[ex_beginner_2-3]: http://www.robotis.com/video/BIO_PRM_UniversalGauge.wmv
+[ex_beginner_2-3]: https://www.dropbox.com/s/2ymcu5boposrkx0/BIO_PRM_UniversalGauge.wmv?dl=0
 [ex_beginner_3-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_CrocodileMouth_ASM_EN.pdf
 [ex_beginner_3-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_crocodilemouth_en.tsk
-[ex_beginner_3-3]: http://www.robotis.com/video/BIO_PRM_CrocodileMouth.wmv
+[ex_beginner_3-3]: https://www.dropbox.com/s/5amlfqbs8bp111n/BIO_PRM_CrocodileMouth.wmv?dl=0
 [ex_beginner_4-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_PanTilt_ASM_EN.pdf
 [ex_beginner_4-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_pantilt_en.tsk
-[ex_beginner_4-3]: http://www.robotis.com/video/BIO_PRM_PanTilt.wmv
+[ex_beginner_4-3]: https://www.dropbox.com/s/z5jxto4zdwnsefx/BIO_PRM_PanTilt.wmv?dl=0
 [ex_beginner_5-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_ParkingGate_ASM_EN.pdf
 [ex_beginner_5-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_parkinggate_en.tsk
-[ex_beginner_5-3]: http://www.robotis.com/video/BIO_PRM_ParkingGate.wmv
+[ex_beginner_5-3]: https://www.dropbox.com/s/sn6li7gu68jw0es/BIO_PRM_ParkingGate.wmv?dl=0
 [ex_beginner_6-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_SmartCar_ASM_EN.pdf
 [ex_beginner_6-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_smartcar_en.tsk
-[ex_beginner_6-3]: http://www.robotis.com/video/BIO_PRM_SmartCar.wmv
+[ex_beginner_6-3]: https://www.dropbox.com/s/pa6u6brs4nhebud/BIO_PRM_SmartCar.wmv?dl=0
 [ex_beginner_7-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_ClappingCrab_ASM_EN.pdf
 [ex_beginner_7-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_clappingcrab_en.tsk
-[ex_beginner_7-3]: http://www.robotis.com/video/BIO_PRM_ClappingCrab.wmv
+[ex_beginner_7-3]: https://www.dropbox.com/s/k8vlerjsmw80fse/BIO_PRM_ClappingCrab.wmv?dl=0
 [ex_beginner_8-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_AttackingDuck_ASM_EN.pdf
 [ex_beginner_8-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_attackingduck_en.tsk
-[ex_beginner_8-3]: http://www.robotis.com/video/BIO_PRM_AttackingDuck.wmv
+[ex_beginner_8-3]: https://www.dropbox.com/s/ogfmctvc2zcnjs5/BIO_PRM_AttackingDuck.wmv?dl=0
 [ex_beginner_9-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_DistanceLevelMeter_ASM_EN.pdf
 [ex_beginner_9-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_distancelevelmeter_en.tsk
-[ex_beginner_9-3]: http://www.robotis.com/video/BIO_PRM_DistanceLevelMeter.wmv
+[ex_beginner_9-3]: https://www.dropbox.com/s/g4z6ucy58pr28cg/BIO_PRM_DistanceLevelMeter.wmv?dl=0
 [ex_beginner_10-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_LineTracer_ASM_EN.pdf
 [ex_beginner_10-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_linetracer_en.tsk
-[ex_beginner_10-3]: http://www.robotis.com/video/BIO_PRM_LineTracer.wmv
+[ex_beginner_10-3]: https://www.dropbox.com/s/bi4c81e79hup3vu/BIO_PRM_LineTracer.wmv?dl=0
 [ex_beginner_11-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_WalkingDroid_ASM_EN.pdf
 [ex_beginner_11-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_walkingdroid_en.tsk
 [ex_beginner_11-3]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_walkingdroid_en.mtn
-[ex_beginner_11-4]: http://www.robotis.com/video/BIO_PRM_WalkingDroid.wmv
+[ex_beginner_11-4]: https://www.dropbox.com/s/v2ujjwfd5zsvkpx/BIO_PRM_WalkingDroid.wmv?dl=0
 
 ### [Intermediate](#intermediate)
 
@@ -739,42 +739,42 @@ Please refer to the [Gripper Assembly].
 
 [ex_intermediate_1-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_ProbingRobot_ASM_eng.pdf
 [ex_intermediate_1-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_probingrobot_en.tsk
-[ex_intermediate_1-3]: http://www.robotis.com/video/BIO_PRM_ProvingRobot.wmv
+[ex_intermediate_1-3]: https://www.dropbox.com/s/nb5zqfhfcfr1hqq/BIO_PRM_ProvingRobot.wmv?dl=0
 [ex_intermediate_2-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_Excavator_ASM_EN.pdf
 [ex_intermediate_2-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_excavator_en.tsk
 [ex_intermediate_2-3]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_excavator_en.mtn
-[ex_intermediate_2-4]: http://www.robotis.com/video/BIO_PRM_Excavator.wmv
+[ex_intermediate_2-4]: https://www.dropbox.com/s/mvw9ng07h7qpsq2/BIO_PRM_Excavator.wmv?dl=0
 [ex_intermediate_3-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_RobotFlower_ASM_EN.pdf
 [ex_intermediate_3-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_robotflower_en.tsk
 [ex_intermediate_3-3]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_robotflower_en.mtn
-[ex_intermediate_3-4]: http://www.robotis.com/video/BIO_PRM_RobotFlower.wmv
+[ex_intermediate_3-4]: https://www.dropbox.com/s/pkcxzr2vckeqph0/BIO_PRM_RobotFlower.wmv?dl=0
 [ex_intermediate_4-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_Fawn_ASM_EN.pdf
 [ex_intermediate_4-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_fawn_en.tsk
 [ex_intermediate_4-3]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_fawn_en.mtn
-[ex_intermediate_4-4]: http://www.robotis.com/video/BIO_PRM_Fawn.wmv
+[ex_intermediate_4-4]: https://www.dropbox.com/s/fo4kmsk7hk8p1oi/BIO_PRM_Fawn.wmv?dl=0
 [ex_intermediate_5-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_Turtle_ASM_EN.pdf
 [ex_intermediate_5-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_turtle_en.tsk
 [ex_intermediate_5-3]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_turtle_en.mtn
-[ex_intermediate_5-4]: http://www.robotis.com/video/BIO_PRM_Tuttle.wmv
+[ex_intermediate_5-4]: https://www.dropbox.com/s/fwco6p5wifs41vm/BIO_PRM_Turtle.wmv?dl=0
 [ex_intermediate_6-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_GerWalk_ASM_EN.pdf
 [ex_intermediate_6-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_gerwalk_en.tsk
 [ex_intermediate_6-3]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_gerwalk_en.mtn
-[ex_intermediate_6-4]: http://www.robotis.com/video/BIO_PRM_GerWalk.wmv
+[ex_intermediate_6-4]: https://www.dropbox.com/s/wnv2kuu0y1lj0ia/BIO_PRM_GerWalk.wmv?dl=0
 [ex_intermediate_7-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_BattleDroid_ASM_EN.pdf
 [ex_intermediate_7-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_battledroid_en.tsk
 [ex_intermediate_7-3]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_battledroid_en.mtn
-[ex_intermediate_7-4]: http://www.robotis.com/video/BIO_PRM_BattleDroid.wmv
+[ex_intermediate_7-4]: https://www.dropbox.com/s/e39178yae2wo4wh/BIO_PRM_BattleDroid.wmv?dl=0
 [ex_intermediate_8-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_QuadrupedRobot_ASM_EN.pdf
 [ex_intermediate_8-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_quadrupedrobot_en.tsk
 [ex_intermediate_8-3]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_quadrupedwalkingrobot_en.mtn
-[ex_intermediate_8-4]: http://www.robotis.com/video/BIO_PRM_QuadrupedWalkingRobot.wmv
+[ex_intermediate_8-4]: https://www.dropbox.com/s/i15yq60h7en23n1/BIO_PRM_QuadrupedWalkingRobot.wmv?dl=0
 [ex_intermediate_9-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_BipedRobot_ASM_EN.pdf
 [ex_intermediate_9-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_bipedrobot_en.tsk
 [ex_intermediate_9-3]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_bipedwalkingrobot_en.mtn
-[ex_intermediate_9-4]: http://www.robotis.com/video/BIO_PRM_BipedWalkingRobot.wmv
+[ex_intermediate_9-4]: https://www.dropbox.com/s/vvkgnrvj6kmbf3s/BIO_PRM_BipedWalkingRobot.wmv?dl=0
 [ex_intermediate_10-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_RobotArm_ASM_EN.pdf
 [ex_intermediate_10-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_robotarm_en.tsk
-[ex_intermediate_10-3]: http://www.robotis.com/video/BIO_PRM_RobotArm.wmv
+[ex_intermediate_10-3]: https://www.dropbox.com/s/pqxbqhq1mb4b0dk/BIO_PRM_RobotArm.wmv?dl=0
 
 
 ### [Advanced](#advanced)
@@ -796,23 +796,23 @@ Please refer to the [Gripper Assembly].
 [ex_advanced_1-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_Dinosaur_ASM_EN.pdf
 [ex_advanced_1-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_dinosaur_en.tsk
 [ex_advanced_1-3]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_dinosaur_en.mtn
-[ex_advanced_1-4]: http://www.robotis.com/video/BIO_PRM_Dinosaur.wmv
+[ex_advanced_1-4]: https://www.dropbox.com/s/wf4vg932jsg63g6/BIO_PRM_Dinosaur.wmv?dl=0
 [ex_advanced_2-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_Puppy_ASM_EN.pdf
 [ex_advanced_2-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_puppy_en.tsk
 [ex_advanced_2-3]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_puppy_en.mtn
-[ex_advanced_2-4]: http://www.robotis.com/video/BIO_PRM_Puppy.wmv
+[ex_advanced_2-4]: https://www.dropbox.com/s/z844sld7e55xqjr/BIO_PRM_Puppy.wmv?dl=0
 [ex_advanced_3-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_KingSpider_ASM_EN.pdf
 [ex_advanced_3-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_kingspider_en.tsk
 [ex_advanced_3-3]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_kingspider_en.mtn
-[ex_advanced_3-4]: http://www.robotis.com/video/BIO_PRM_KingSpider.wmv
+[ex_advanced_3-4]: https://www.dropbox.com/s/cqiku4w55jfsu8w/BIO_PRM_KingSpider.wmv?dl=0
 [ex_advanced_4-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_Scorpion_ASM_EN.pdf
 [ex_advanced_4-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_scorpion_en.tsk
 [ex_advanced_4-3]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_scorpion_en.mtn
-[ex_advanced_4-4]: http://www.robotis.com/video/BIO_PRM_Scorpion.wmv
+[ex_advanced_4-4]: https://www.dropbox.com/s/xi794k7suepm72q/BIO_PRM_Scorpion.wmv?dl=0
 [ex_advanced_5-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_Lizard_ASM_EN.pdf
 [ex_advanced_5-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_lizard_en.tsk
 [ex_advanced_5-3]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_lizard_en.mtn
-[ex_advanced_5-4]: http://www.robotis.com/video/BIO_PRM_Lizard.wmv
+[ex_advanced_5-4]: https://www.dropbox.com/s/za3th47u4gyei4d/BIO_PRM_Lizard.wmv?dl=0
 
 # [References](#references)
 
@@ -928,13 +928,13 @@ A high signal can be sent to the OUT port using RoboPlus Task.
 When the code above is executed, high signal will be sent to the OUT port of the device connected to PORT 3, and the LED will turn on.
 
 #### Reading the ADC Value
-Most of the sensors used in robots, such as IR sensors and distance sensors, support analog output. The CM-510 can use its external ports to read the sensor’s analog output signals. These sensors may be designed by the user or bought from a store.
+Most of the sensors used in robots, such as IR sensors and distance sensors, support analog output. The CM-510/CM-530 can use its external ports to read the sensor’s analog output signals. These sensors may be designed by the user or bought from a store.
 
 - Below is an image of a tilt sensor. When the sensor is tilted, it prints the tilted value as the analog singal.
 
 ![](/assets/images/edu/bioloid/premium_diy_sensor_03.png)
 
-- The left pin of the tilt sensor is 5V VCC. The center is an analog signal output pin, and the right pin is GND.  This sensor can be used by connecting its pins to the corresponding pins on CM-510’s external port.  To try for yourself, please refer to the pin information for CM-510’s external ports.
+- The left pin of the tilt sensor is 5V VCC. The center is an analog signal output pin, and the right pin is GND.  This sensor can be used by connecting its pins to the corresponding pins on CM-530's/CM-510’s external port.  To try for yourself, please refer to the pin information for CM-530's/CM-510’s external ports.
 
 ![](/assets/images/edu/bioloid/premium_diy_sensor_04.png)
 

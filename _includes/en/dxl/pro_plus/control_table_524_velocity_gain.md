@@ -4,7 +4,7 @@ These values indicate Gains of Velocity Control Mode. Gains of the device's inte
 |:-------------------------:|:-----------------:|:----------:|:-----------------------------:|
 |   Velocity I Gain(524)    |  K<sub>V</sub>I   | 0 ~ 32,767 |    Velocity Integral Gain     |
 |   Velocity P Gain(526)    |  K<sub>V</sub>P   | 0 ~ 32,767 |  Velocity Proportional Gain   |
-| Feedforward 2nd Gain(536) | K<sub>FF1st</sub> | 0 ~ 32,767 | Acceleration Feedforward Gain |
+| Feedforward 2nd Gain(536) | K<sub>FF2nd</sub> | 0 ~ 32,767 | Acceleration Feedforward Gain |
 
 Below figure is a block diagram describing the velocity controller in Velocity Control Mode. When the instruction is received by the device, it takes following steps until driving the device.
 

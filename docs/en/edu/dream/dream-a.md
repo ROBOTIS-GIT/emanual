@@ -11,8 +11,6 @@ sidebar:
   nav: "dream-a"
 ---
 
-# DREAM SET A
-
 # [Introduction](#introduction)
 
 ROBOTIS DREAM is an entry level robotics kit optimized for learning and teaching robotics.
@@ -24,6 +22,8 @@ Set A combines the parts from the existing products ROBOTIS DREAM Level 1 and Le
 
 **CAUTION** : The controller([CM-150]) in ROBOTIS DREAM SET A contains a "Comprehensive Program" that can make the robot move without downloading a program. To program or download a program you will need the USB Cable included. If you want to build and program your robots using more parts and peripheral devices, please purchase the ROBOTIS DREAM SET B or necessary parts separately.
 
+**WARNING** : ROBOTIS DREAM A has been discontinued.
+{: .notice--warning}
 
 # [Part List](#part-list)
 

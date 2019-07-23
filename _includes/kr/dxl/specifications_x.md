@@ -12,7 +12,7 @@
 | 무게             | {{ site.data.dxl_x_info[page.ref].weight }}             |
 | 크기 (W x H x D) | {{ site.data.dxl_x_info[page.ref].dimensions }}         |
 | 기어비           | {{ site.data.dxl_x_info[page.ref].gearratio }}          |
-| 정지 토크        | {{ site.data.dxl_x_info[page.ref].stalltorque }}        |
+| Stall Torque   | {{ site.data.dxl_x_info[page.ref].stalltorque }}        |
 | 무부하 속도      | {{ site.data.dxl_x_info[page.ref].noloadspeed }}        |{% if site.data.dxl_x_info[page.ref].radialload != 'N/A' %}
 | [반경방향 하중]{: .popup}| {{ site.data.dxl_x_info[page.ref].radialload }}         |{% else %}{% endif %}{% if site.data.dxl_x_info[page.ref].axialload != 'N/A' %}
 | [축방향 하중]{: .popup}  | {{ site.data.dxl_x_info[page.ref].axialload }}          |{% else %}{% endif %}

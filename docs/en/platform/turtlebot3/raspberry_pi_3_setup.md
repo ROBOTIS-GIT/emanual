@@ -30,21 +30,24 @@ sidebar:
 <div class="notice--warning">{{ notice_01 | markdownify }}</div>
 
 {% capture notice_02 %}
-**NOTE**: There are two ways to install Linux and ROS to Raspberry Pi 3. 
+**NOTE**: There are two ways to install Linux and ROS to Raspberry Pi 3.
 - First method: If you prefer Ubuntu MATE, please take the first method `Install Linux (Ubuntu MATE)` below. This method should install the ROS and dependency packages after installing the Linux images. This instruction takes about 1 hours to install ROS and related packages for TurtleBot3.
-- Second method: We provide the Linux distro based on Raspbian. They are pre-installed with ROS and ROS-packages related TurtleBot3. It is available immediately without additional installation. If you want to use it, please take the second method `Install Linux based on Raspbian` below. 
+- Second method: We provide the Linux distro based on Raspbian. They are pre-installed with ROS and ROS-packages related TurtleBot3. It is available immediately without additional installation. If you want to use it, please take the second method `Install Linux based on Raspbian` below.
 {% endcapture %}
 <div class="notice--info">{{ notice_02 | markdownify }}</div>
 
 #### [Install Linux (Ubuntu MATE)](#install-linux-ubuntu-mate)
 
 ##### [1) Install Ubuntu MATE on TurtleBot PC](#1-install-ubuntu-mate-on-turtlebot-pc)
+
+**WARNING**: `Ubuntu Mate` does not correspond to `Raspberry Pi 3 B +` at present. If you have it, please install `Raspbian` instead.
+{: .notice--warning}
+
 **WARNING**: The microSD card should have at least **8 GB** of empty space in order to install Linux (Ubuntu MATE) on Raspberry Pi 3.
 {: .notice--warning}
 
 **[Remote PC]** Download `Ubuntu MATE 16.04` image for the Raspberry Pi 3 on your remote PC from the link below.
 
-- [Download page](https://ubuntu-mate.org/download/) (Choose ... > Raspberry Pi > 16.04.2 (Xenial) > Download Links)
 - [Direct download link](https://ubuntu-mate.org/raspberry-pi/ubuntu-mate-16.04.2-desktop-armhf-raspberry-pi.img.xz)
 
 **[Remote PC]** In order to write an Ubuntu MATE image to microSD, it is recommended using `GNOME Disks` with `Restore Disk Image...` option, which natively supports XZ compressed image.
@@ -178,24 +181,24 @@ $ source ~/.bashrc
 **WARNING**: The SDcard should have at least **8 GB** of empty space in order to install Linux on Raspberry Pi 3.
 {: .notice--warning}
 
-We provide the Linux distro image based on Raspbian. They are pre-installed with ROS and ROS-packages related TurtleBot3. It supports the TurtleBot3 Burger and Waffle Pi model. In this distro image, non-free software like Wolfram, Mathematica, Minecraft Pi and Oracle Java SE are removed. 
+We provide the Linux distro image based on Raspbian. They are pre-installed with ROS and ROS-packages related TurtleBot3. It supports the TurtleBot3 Burger and Waffle Pi model. In this distro image, non-free software like Wolfram, Mathematica, Minecraft Pi and Oracle Java SE are removed.
 
 ##### Remote PC
 - Download the Linux distro image based on Raspbian for TurtleBot3
-  - [download link](http://www.robotis.com/service/download.php?no=730)
-  - SHA256: a82e6dff50d6216ae2f557ebb1d8636af7d6c8a260e8df4f7ae7c9c8bdc0da28
+  - [download link](http://www.robotis.com/service/download.php?no=1738)
+  - SHA256: 7a868c275169b1f02c04617cc0cce9654fd8222623c78b22d0a27c73a9609398
 - After download, unzip the downloaded file.
 - Guide to burn the image to SD card
   - Visit [etcher.io](https://etcher.io/) and download and install the Etcher SD card image utility.
   - Run Etcher and select the Linux image you downloaded on your computer or laptop.
   - Select the SD card drive.
-  - Click Burn to transfer the image to the SD card. 
-- (other methods to burn) You can use 'dd' command in Linux or use application 'win32diskimager' in Windows. For a complete guide, take a look [here](https://elinux.org/RPi_Easy_SD_Card_Setup#Using_the_Linux_command_line) (for Linux users) and [here](elinux.org/RPi_Easy_SD_Card_Setup#Using_the_Win32DiskImager_program) (for Windows users)
+  - Click Burn to transfer the image to the SD card.
+- (other methods to burn) You can use 'dd' command in Linux or use application 'win32 Disk Imager' in Windows. For a complete guide, take a look [here](https://elinux.org/RPi_Easy_SD_Card_Setup#Using_the_Linux_command_line) (for Linux users) and [here](https://elinux.org/RPi_Easy_SD_Card_Setup#Using_the_Win32DiskImager_program) (for Windows users)
 
 ##### TurtleBot PC
 - After the installation, you can login with username **pi** and password **turtlebot**. In this case, you have to connect your Raspberry Pi to your monitor using an HDMI cable, and connect your keyboard and mouse to the Raspberry Pi.
 
-- Expand filesystem to use a whole SD card. 
+- Expand filesystem to use a whole SD card.
   ```
   sudo raspi-config
   (select 7 Advanced Options > A1 Expand Filesystem)
@@ -217,10 +220,10 @@ We provide the Linux distro image based on Raspbian. They are pre-installed with
 - Network configuration for ROS [(reference link)][network_configuration]
 	```
 	nano ~/.bashrc
-	(modified the `localhost` below to `Raspberry Pi's IP`)
+	(modify `localhost` to REMOTE_PC_IP and RASPBERRY_PI_3_IP)
 
-	export ROS_MASTER_URI=http://localhost:11311
-	export ROS_HOSTNAME=localhost
+	export ROS_MASTER_URI=http://REMOTE_PC_IP:11311
+	export ROS_HOSTNAME=RASPBERRY_PI_3_IP
 	```
 
 	```
@@ -228,7 +231,7 @@ We provide the Linux distro image based on Raspbian. They are pre-installed with
 	```
 
 ##### Remote PC
-- Once you're done the wireless configuration, you can connect to Raspberry Pi via SSH from your desktop or laptop [(reference link)][enable_ssh_server_in_raspberry_pi]: 
+- Once you're done the wireless configuration, you can connect to Raspberry Pi via SSH from your desktop or laptop [(reference link)][enable_ssh_server_in_raspberry_pi]:
   ```
   ssh pi@192.168.xxx.xxx (The IP 192.168.xxx.xxx is your Raspberry Pi's IP or hostname)
   ```

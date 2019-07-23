@@ -11,10 +11,15 @@ sidebar:
   nav: "protocol1"
 ---
 
+
 # [Communication Overview](#communication-overview)
 
 To control Dynamixel, communication should be established according to the protocol of Dynamixel.  Dynamixel is driven by receiving binary data. Examples of programs for the transmission of this kind of data are described in detail in the User’s Manual of the Dynamixel-only controller or the USB2Dynamixel.
 Thus, this manual describes only the method and protocol of communication used in Dynamixel on the assumption that Main Controller can transfer binary data.
+
+**TIP** : Users can refer to ROBOTIS Protocol [Compatibility Table]{: .popup} with reference.
+{: .notice--success}
+
 
 ## [Packet](#packet)
 
@@ -22,7 +27,7 @@ Main Controller and Dynamixel communicate each other by sending and receiving da
 
 ## [ID](#id)
 
-ID is a specific number for distinction of each Dynamixel when several Dynamixels are linked to one bus.  
+ID is a specific number for distinction of each Dynamixel when several Dynamixels are linked to one bus.
 By giving IDs to Instruction and Status Packets, Main Controller can control only the Dynamixel that you want to control
 
 ## [Protocol](#protocol)
@@ -57,7 +62,7 @@ The **TXD_BUFFER_READY_BIT** is used when one byte is to be transmitted via the 
   }
   ```
 
-When changing the direction, the **TXD_SHIFT_REGISTER_EMPTY_BIT** must be checked. The following is an example program that sends an Instruction Packet  
+When changing the direction, the **TXD_SHIFT_REGISTER_EMPTY_BIT** must be checked. The following is an example program that sends an Instruction Packet
 
 ```c
 DIRECTION_PORT = TX_DIRECTION;
@@ -296,9 +301,9 @@ This instruction is to execute the registered Reg Write instruction. The Action 
 This instruction is to reset the Control Table of Dynamixel to the factory default values.
 
 {% capture reset_warning_01 %}
-**CAUTION** : Please be careful as Reset instruction will overwrite factory reset values in the EEPROM. 
+**CAUTION** : Please be careful as Reset instruction will overwrite factory reset values in the EEPROM.
 
-**CAUTION** : Broadcast ID(0xFE) cannot be used for Reset instruction.  
+**CAUTION** : Broadcast ID(0xFE) cannot be used for Reset instruction.
   Applied Products : MX-12W(V41), MX-28(V40), MX-64(V40), MX-106(V40), X-series(except XL-320), MX series with Protocol 2.0
 {% endcapture %}
 
@@ -454,3 +459,9 @@ When Bulk Read instruction is received, Dynamixel with ID 2 monitors the status 
 
 
 [Changing IDs of Dynamixel]: /docs/en/software/rplus1/manager/#id-setup
+
+
+
+
+
+[Compatibility Table]: /docs/en/popup/faq_protocol_compatibility_table/

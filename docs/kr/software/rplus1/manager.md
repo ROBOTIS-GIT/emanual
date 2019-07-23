@@ -26,7 +26,7 @@ sidebar:
 
 ## [설치하기](#설치하기)
 
-- `다운로드` [로보티즈 홈페이지 자료실](http://www.robotis.com/service/downloadpage.php?cate=software)
+- `다운로드` [로보티즈 홈페이지 자료실](http://www.robotis.com/service/downloadcenter.php)
 
 로보플러스는 모든 로보티즈 제품을 프로그래밍할 수 있는 통합 소프트웨어입니다.
 
@@ -1062,7 +1062,7 @@ AX-S1에는 버저가 장착되어 있습니다. 버저 울림 시간을 설정�
 [제어기별 관리방법]: #제어기
 [펌웨어복구]: #펌웨어-복구
 [OpenCM9.04 펌웨어복구]: /docs/kr/software/opencm_ide/getting_started/#복구-모드
-[CM150, CM200 해결방법]: /docs/kr/faq/usb_driver_install/
+[CM150, CM200 해결방법]: /docs/kr/popup/usb_driver_install/
 [OpenCM9.04 해결방법]: /docs/kr/software/opencm_ide/getting_started/#소프트웨어-설치
 [제어기 펌웨어 업데이트]: #펌웨어-업데이트
 [Zig2Serial - Zig100 연결하기]: /docs/kr/parts/communication/zig2serial/#사용-방법

@@ -22,6 +22,9 @@ Robots of 4 DOF can be built with Beginner Kit.  This kit is recommended for peo
   - Also, purchasing 14 additional AX-12+ for Bioloid Beginner Kit and frame set for Comprehensive Kit, you can build intermediate-level robots and advanced-level robots of 18 DOF.
   - You can also create your one and only robot by designing, assembling and programming it by yourself.
 
+**WARNING** : ROBOTIS BIOLOID Beginner has been discontinued.
+{: .notice--warning}
+
 # [Getting Started](#getting-started)
 
 ## [Part List](#part-list)

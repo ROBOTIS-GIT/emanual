@@ -9,6 +9,7 @@ permalink: /docs/kr/dxl/ax/ax-18a/
 sidebar:
   title: AX-18A
   nav: "ax-18a"
+product_group: dxl_ax
 ---
 
 ![](/assets/images/dxl/ax/ax-18f_product.jpg)
@@ -23,12 +24,12 @@ sidebar:
 
 | 항목            | 내용                                                                        |
 |:----------------|:----------------------------------------------------------------------------|
-| 무게            | 54.5 [g](AX-18F), 55.9 [g](AX-18A)                                                |
+| 무게            | AX-18F (54.5 [g]), AX-18A (55.9 [g])                                                |
 | 크기            | 32 X 50 X 40 [mm]<br />1.26 X 1.97 X 1.57 [inch]                            |
 | 최소 제어각     | 0.29 [deg]                                                                   |
 | 모터            | Coreless                                                                    |
 | 기어비          | 254 : 1                                                                     |
-| 정지 토크    | 1.8 [N&middot;m] (at 12 [V], 2.2 [A])                                                      |
+| Stall Torque  | 1.8 [N&middot;m] (at 12 [V], 2.2 [A])                                                      |
 | 무부하 속도   | 97 [rpm] (at 12 [V])                                                              |
 | 동작 모드       | 관절 모드 : 0 ~ 300 [deg]<br />바퀴 모드 : 무한 회전                   |
 | 동작 온도       | -5 ~ +70 [&deg;C]                                                   |
@@ -46,7 +47,7 @@ sidebar:
 
 {% include kr/dxl/warning.md %}
 
-{% include kr/dxl/control_table_protocol1.md %}
+{% include kr/dxl/control_table.md %}
 
 ## [EEPROM 영역](#eeprom-영역)
 
@@ -121,6 +122,11 @@ Baudrate(BPS) = 2,000,000 / (Value + 1)
 
 **참고**: UART는 Baudrate 오차가 3% 이내이면 통신에 지장이 없습니다.
 {: .notice}
+
+**참고**: 높은 통신데이터를 정상적으로 사용하기위해, 응답시간을 낮춰주세요.  
+[응답 시간 조정](/docs/kr/software/dynamixel/dynamixel_wizard2/#포트-응답-속도-설정)  
+{: .notice}
+
 
 ### <a name="return-delay-time"></a>**[Return Delay Time (5)](#return-delay-time-5)**
 {% include kr/dxl/control_table_return_delay_time.md %}
@@ -206,8 +212,21 @@ Baudrate(BPS) = 2,000,000 / (Value + 1)
 
 # [참고자료](#참고자료)
 
-**주의**: [호환성 가이드]
+**주의**  
+[호환성 가이드]{: .blank}  
+[케이블 호환성]{: .popup}
 {: .notice}
+
+## [인증 획득](#인증-획득)
+표기되지 않은 인증에 대해서는 별도 문의하시기 바랍니다.
+
+### [FCC](#fcc)
+
+#### AX-18A
+{% include kr/dxl/fcc_class_a.md %}
+
+#### AX-18F
+{% include kr/dxl/fcc_class_b.md %}
 
 ## [커넥터 정보](#커넥터-정보)
 {% include kr/dxl/molex_ttl.md %}
@@ -221,3 +240,5 @@ Baudrate(BPS) = 2,000,000 / (Value + 1)
 {% include kr/dxl/485_ttl_connection.md %}
 
 [호환성 가이드]: http://www.robotis.com/service/compatibility_table.php?cate=d
+
+{% include kr/dxl/common_link.md %}

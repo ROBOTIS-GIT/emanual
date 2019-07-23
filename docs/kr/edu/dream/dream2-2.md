@@ -13,13 +13,13 @@ sidebar:
 
 # [개요](#개요)
 
-**로보티즈 드림Ⅱ 2단계** 는 로봇이란 무엇인지에 대한 기본 개념부터 로봇의 동력, 센서의 활용, 속도와 힘, 보행과 주행 등 과학적 원리와 물리적 이론에 보다 쉽게 접근하고, 실험을 통해 자연스럽게 개념과 원리를 습득하게 해 줍니다.  
-비슷한 형태의 로봇을 반복적으로 분해/조립하는 단순 학습이 아닌, 로봇을 움직일 수 있게 하는 원리를 이해하고 학습할 수 있습니다.
+**로보티즈 드림Ⅱ 2단계** 는 로봇이란 무엇인지에 대한 기본 개념부터 로봇의 동력, 센서의 활용, 속도와 힘, 보행과 주행 등 과학적 원리와 물리적 이론을, 실험을 통해 자연스럽게 개념과 원리를 습득할수 있습니다. 비슷한 형태의 로봇을 반복적으로 분해/조립하는 단순 학습이 아닌, 로봇을 움직일 수 있게 하는 원리를 이해하고 학습할 수 있습니다.
 
-로보티즈 드림Ⅱ 2단계는 총 12장의 교재와 예제 로봇이 결합되어 프로그래밍의 기본 학습과 센서의 활용, 로봇의 제작, 원리의 이해, 문제 풀이 등의 과정을 제공합니다.  12장에 걸쳐 로봇을 순서대로 만들면서 로봇 제작의 원리를 학습할 수 있습니다.
+- 총 12장의 교재와 예제 로봇이 결합되어 프로그래밍의 기본 학습과 센서의 활용, 로봇의 제작, 원리의 이해, 문제 풀이 등의 과정을 제공합니다.
 
-로보티즈 드림Ⅱ 2단계의 통합프로그램은 제어기([CM-150])에 내장되어있으며, 사용자가 직접 프로그램 학습 및 다운로드를 하기 위해서는 로보티즈 드림Ⅱ 1단계에 포함되어 있는 USB 케이블을 이용해서 다운로드 할 수 있습니다.
-보다 다양한 주변 장치를 이용하여 로봇을 제작 및 프로그래밍하기 위해서는 로보티즈 드림Ⅱ 3단계를 구매하시면 됩니다.
+- 로보티즈 드림Ⅱ 2단계의 통합프로그램은 제어기([CM-150])에 내장되어있으며, 사용자가 직접 프로그램 학습 및 다운로드를 하기 위해서는 로보티즈 드림Ⅱ 1단계에 포함되어 있는 USB 케이블을 이용해서 다운로드 할 수 있습니다.
+
+- 로보티즈 드림II 3단계로, 더 다양한 로봇을 제작할수 있습니다.
 
 # [부품 목록](#부품-목록)
 
@@ -100,16 +100,16 @@ sidebar:
 [자동꺼짐타이머 바로가기]: /docs/kr/software/rplus1/task/programming_02/#자동꺼짐-타이머
 [예제 태스크 코드의 다운로드 방법]: /docs/kr/faq/download_task_code/#cm-150
 [작동하기]: #작동하기
-[DREAM_L2_Total_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l2_total_kr.tskx
-[DREAM_L2_Elephant_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l2_elephant_kr.tskx
-[DREAM_L2_Fireflylight_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l2_fireflylight_kr.tskx
-[DREAM_L2_Avoider_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l2_avoider_kr.tskx
-[DREAM_L2_Seal_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l2_seal_kr.tskx
-[DREAM_L2_Abeetle_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l2_abeetle_kr.tskx
-[DREAM_L2_Raccoon_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l2_raccoon_kr.tskx
-[DREAM_L2_Scorpion_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l2_scorpion_kr.tskx
-[DREAM_L2_Puppy_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l2_puppy_kr.tskx
-[DREAM_L2_Squirrel_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l2_squirrel_kr.tskx
-[DREAM_L2_Buffalo_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l2_buffalo_kr.tskx
-[DREAM_L2_Crocodile_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l2_crocodile_kr.tskx
-[DREAM_L2_Distancesensor_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l2_distancesensor_kr.tskx
+[DREAM_L2_Total_KR.tskx]: http://www.robotis.com/service/download.php?no=915
+[DREAM_L2_Elephant_KR.tskx]: http://www.robotis.com/service/download.php?no=908
+[DREAM_L2_Fireflylight_KR.tskx]: http://www.robotis.com/service/download.php?no=909
+[DREAM_L2_Avoider_KR.tskx]: http://www.robotis.com/service/download.php?no=904
+[DREAM_L2_Seal_KR.tskx]: http://www.robotis.com/service/download.php?no=913
+[DREAM_L2_Abeetle_KR.tskx]: http://www.robotis.com/service/download.php?no=903
+[DREAM_L2_Raccoon_KR.tskx]: http://www.robotis.com/service/download.php?no=911
+[DREAM_L2_Scorpion_KR.tskx]: http://www.robotis.com/service/download.php?no=912
+[DREAM_L2_Puppy_KR.tskx]: http://www.robotis.com/service/download.php?no=910
+[DREAM_L2_Squirrel_KR.tskx]: http://www.robotis.com/service/download.php?no=914
+[DREAM_L2_Buffalo_KR.tskx]: http://www.robotis.com/service/download.php?no=905
+[DREAM_L2_Crocodile_KR.tskx]: http://www.robotis.com/service/download.php?no=906
+[DREAM_L2_Distancesensor_KR.tskx]: http://www.robotis.com/service/download.php?no=907

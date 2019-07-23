@@ -115,6 +115,9 @@ $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ roslaunch turtlebot3_gazebo turtlebot3_house.launch
 ```
 
+**NOTE** : If `TurtleBot3 House` is excuted for the first time, downloading the map file takes a couple of minutes or more depending on download speed.
+{: .notice}
+
 ![](/assets/images/platform/turtlebot3/simulation/turtlebot3_house.png)
 
 ![](/assets/images/platform/turtlebot3/simulation/turtlebot3_house1.png)
@@ -269,8 +272,8 @@ $ rosrun map_server map_saver -f ~/map
 #### [TurtleBot3 AutoRace with Gazebo](#turtlebot3-autorace-with-gazebo)
 Go to [AutoRace with Gazebo](/docs/en/platform/turtlebot3/autonomous_driving/#autorace-with-gazebo).
 
-#### [Turtlebot3 with OpenManipulator](#turtlebot3-with-openmanipulator)
-Go to [OpenManipulator with Gazebo](/docs/en/platform/turtlebot3/manipulation/#simulation)
+#### [Turtlebot3 with OpenMANIPULATOR](#turtlebot3-with-openmanipulator)
+Go to [OpenMANIPULATOR with Gazebo](/docs/en/platform/turtlebot3/manipulation/#simulation)
 
 ### [Standalone Gazebo Plugin](#standalone-gazebo-plugin)
 

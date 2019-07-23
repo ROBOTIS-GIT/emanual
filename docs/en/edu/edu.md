@@ -8,8 +8,13 @@ author_profile: false
 permalink: /docs/en/edu/
 sidebar:
   title: STEAM
-  nav: ""
+  nav: "all-edu"
 ---
+# [PLAY](#play)
+
+|                                             300                                             |                                             600                                             |                                             700                                             |
+|:-------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------:|
+| [![](/assets/images/edu/play/300/play300_product.resized.png)](/docs/en/edu/play/play-300/) | [![](/assets/images/edu/play/600/play600_product.resized.png)](/docs/en/edu/play/play-600/) | [![](/assets/images/edu/play/700/play700_product.resized.png)](/docs/en/edu/play/play-700/) |
 
 # [OLLO](#ollo)
 
@@ -17,11 +22,17 @@ sidebar:
 |:---:|:---:|:---:|
 |[![](/assets/images/edu/ollo/bug_kit.jpg)](/docs/en/edu/ollo/bugkit/) | [![](/assets/images/edu/ollo/edu_2nd.png)](/docs/en/edu/ollo/explorer/) | [![](/assets/images/edu/ollo/edu_3rd.png)](/docs/en/edu/ollo/inventor/)|
 
+**WARNING** : ROBOTIS OLLO has been discontinued.
+{: .notice--warning}
+
 # [DREAM](#dream)
 
 |LEVEL 2|LEVEL 3|LEVEL 4|SET A|SET B|
 |:---:|:---:|:---:|:---:|:---:|
 |[![](/assets/images/edu/dream/dream_en02_110.jpg)](/docs/en/edu/dream/dream1-2/) | [![](/assets/images/edu/dream/dream3_en.jpg)](/docs/en/edu/dream/dream1-3/) | [![](/assets/images/edu/dream/dream4_en.jpg)](/docs/en/edu/dream/dream1-4/)| [![](/assets/images/edu/dream/e-manual_dream_seta_tn.jpg)](/docs/en/edu/dream/dream-a/)| [![](/assets/images/edu/dream/e-manual_dream_setb_tn.jpg)](/docs/en/edu/dream/dream-b/)|
+
+**WARNING** : ROBOTIS DREAM has been discontinued.
+{: .notice--warning}
 
 # [DREAM II](#dream-ii)
 

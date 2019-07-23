@@ -28,13 +28,18 @@ External Port는 전기적으로 절연되어 있지 않기 때문에, 전기적
 - External Port 의 GNDext 핀과 Dynamixel 커넥터의 GND핀을 직접 연결하지 마십시오. 전원 노이즈가 External Port로 유입될 수 있습니다.
 {% endcapture %}
 
-<div class="notice--warning">{{ control_table_externalportdata_warning | markdownify }}</div>
-
+<div class="notice--danger">{{ control_table_externalportdata_warning | markdownify }}</div>
 
 #### 외부 확장 포트의 위치 및 핀 기능
 아래와 같이 나사를 제거하고 커버를 들어내면 외부 확장 포트가 드러납니다.
 
+{% if page.ref=='rh_p12_rn' or page.ref=='rh_p12_rna' %}
+![](/assets/images/platform/rh_p12_rn/rh_p12_rn_external_port.png)
+{% elsif page.product_group=='dxl_pro_a' %}
+![](/assets/images/dxl/pro/pro_external_port.png)
+{% else %}
 ![](/assets/images/dxl/pro_plus/external_port.png)
+{% endif %}
 
 ![](/assets/images/dxl/pro_plus/external_port_pinout.png)
 

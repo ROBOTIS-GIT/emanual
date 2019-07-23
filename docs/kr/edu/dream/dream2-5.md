@@ -13,17 +13,15 @@ sidebar:
 
 # [개요](#개요)
 
-로보티즈 드림II 5는 리모컨을 통한 다양한 형태의 로봇 조종 원리를 학습할 수 있습니다. 로봇 프로그램의 순서도 개념을 이해하고, 프로그래밍 기초 지식을 학습함으로써 대회 출전을 위한 실질적인 로봇 제작 및 프로그래밍을 살펴보는 단계입니다.  
-제작한 로봇으로 기록 경기를 하거나 게임을 할 수 있는 프로그램을 직접 체험해 봅니다.  
-로보티즈 드림II 5단계는 1,2,3,4단계 키트와 결합되어 총 12개의 예제 로봇을 만들 수 있습니다.  또한 교재에는 12개의 예제 로봇을 만들 수 있는 조립서와 예제 로봇들의 제어 프로그램, 부품들의 활용, 원리의 이해, 문제풀이 등의 과정을 제공합니다.  
-12장에 걸쳐 로봇을 순서대로 만들면서 로봇 제작의 원리를 학습할 수 있습니다.
-
+로보티즈 드림II 5단계는 리모컨을 통한 다양한 형태의 로봇 조종 원리를 학습할 수 있습니다. 로봇 프로그램의 순서도 개념을 이해하고, 프로그래밍 기초 지식을 학습함으로써 대회 출전을 위한 실질적인 로봇 제작 및 프로그래밍을 살펴보는 단계입니다.  
+- 제작한 로봇으로 기록 경기를 하거나 게임을 할 수 있는 프로그램을 사용할 수 있습니다.
+- 로보티즈 드림II 5단계는 1,2,3,4단계 키트와 결합되어 총 12개의 예제 로봇을 만들 수 있습니다. 각 장마다 순서대로 로봇을 만들면서 제어 프로그램과 센서들의 활용, 원리의 이해, 문제풀이 등의 과정을 제공합니다.
+- 로봇을 보다 다양한 형태로 제작하거나, 더 복잡한 로봇을 만들 때에는 로보티즈 스마트 교육키트를 이용해보세요. 
 {% capture dream_01 %}
 **주의**:
 - 교육키트 5단계는 1, 2, 3, 4단계 키트의 부품들이 있어야 로봇을 제작할 수 있습니다. 반드시 교육키트 [1단계](/docs/kr/edu/dream/dream2-1/), [2단계](/docs/kr/edu/dream/dream2-2/), [3단계](/docs/kr/edu/dream/dream2-3/), [4단계](/docs/kr/edu/dream/dream2-4/)를 먼저 구매하시기 바랍니다.
 - 로보티즈 드림II 5단계에서 프로그램은 제어기(CM-150)에 사용자가 직접 프로그램 하거나 다운로드 해야 합니다.
 - 로보티즈 드림II 1단계에 포함되어 있는 USB 케이블을 이용해서 다운로드 할 수 있습니다.
-- 로봇을 보다 다양한 형태로 제작하거나, 더 복잡한 로봇을 만들 때에는 로보티즈 스마트 교육키트를 이용해보세요.  
 {% endcapture %}
 
 <div class="notice--warning">{{ dream_01 | markdownify }}</div>
@@ -60,15 +58,15 @@ sidebar:
 
 [BT-410]: /docs/kr/parts/communication/bt-410/
 [예제 태스크 코드의 다운로드 방법]: /docs/kr/faq/download_task_code/#cm-150
-[DREAM_L5_Tank_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l5_tank_kr.tskx
-[DREAM_L5_RobotKnight_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l5_robotknight_kr.tskx
-[DREAM_L5_WarRobot_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l3_fourwheeled_kr.tskx
-[DREAM_L5_SoccerRobot_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l5_soccerrobot_kr.tskx
-[DREAM_L5_Excavator_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l5_excavator_kr.tskx
-[DREAM_L5_LadderTruck_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l5_laddertruck_kr.tskx
-[DREAM_L5_ForkLift_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l5_forklift_kr.tskx
-[DREAM_L5_BoxingRobot_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l5_boxingrobot_kr.tskx
-[DREAM_L5_Bulldozer_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l5_bulldozer_kr.tskx
-[DREAM_L5_DribbleRobot_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l5_dribblerobot_kr.tskx
-[DREAM_L5_Explorer_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l5_explorer_kr.tskx
-[DREAM_L5_TransportRobot_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l5_transportrobot_kr.tskx
+[DREAM_L5_Tank_KR.tskx]: http://www.robotis.com/service/download.php?no=953
+[DREAM_L5_RobotKnight_KR.tskx]: http://www.robotis.com/service/download.php?no=951
+[DREAM_L5_WarRobot_KR.tskx]: http://www.robotis.com/service/download.php?no=954
+[DREAM_L5_SoccerRobot_KR.tskx]: http://www.robotis.com/service/download.php?no=952
+[DREAM_L5_Excavator_KR.tskx]: http://www.robotis.com/service/download.php?no=947
+[DREAM_L5_LadderTruck_KR.tskx]: http://www.robotis.com/service/download.php?no=950
+[DREAM_L5_ForkLift_KR.tskx]: http://www.robotis.com/service/download.php?no=949
+[DREAM_L5_BoxingRobot_KR.tskx]: http://www.robotis.com/service/download.php?no=944
+[DREAM_L5_Bulldozer_KR.tskx]: http://www.robotis.com/service/download.php?no=945
+[DREAM_L5_DribbleRobot_KR.tskx]: http://www.robotis.com/service/download.php?no=946
+[DREAM_L5_Explorer_KR.tskx]: http://www.robotis.com/service/download.php?no=948
+[DREAM_L5_TransportRobot_KR.tskx]: http://www.robotis.com/service/download.php?no=955

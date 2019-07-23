@@ -13,22 +13,28 @@ sidebar:
 
 # [개요](#개요)
 
-![](/assets/images/parts/controller/opencm904/opencm485exp_14.jpg)
+![](/assets/images/parts/controller/opencm904/opencm485exp_product.jpg)
 
 # [주요 사양](#주요-사양)
 
-- 입력전압 : 5~30V
-- Power : SMPS, LiPo, DXL PRO 24V
-- 전원 스위치 : 1
-- 다이나믹셀 포트 : 4Pin x 5, 3Pin x 5
-- 버튼 : 2
-- LED : 5
-- 크기 : 68 mm X 66.5 mm
-- 무게 : 32g
+|      항목       |          설명           |
+|:---------------:|:-----------------------:|
+|    입력전압     |         5 ~ 30V         |
+|      전원       | SMPS, LiPo, DXL PRO 24V |
+|   전원 스위치   |            1            |
+| 다이나믹셀 포트 |   4Pin x 5, 3Pin x 5    |
+|      버튼       |            2            |
+|       LED       |            5            |
+|      크기       |     68 mm X 66.5 mm     |
+|      무게       |           32g           |
+|   Serial3 TX    |       헤더 핀 #24       |
+|   Serial3 RX    |       헤더 핀 #25       |
+|  통신방향 제어  |       헤더 핀 #22       |
+
 
 # [각 부 명칭](#각-부-명칭)
 
-![](/assets/images/parts/controller/opencm904/opencm485exp_11_kr.jpg)
+![](/assets/images/parts/controller/opencm904/opencm485exp_01.jpg)
 
 1. **SMPS DC Adapter** : SMPS DC Adapter를 연결해 OpenCM 485 확장보드 보드에 전원을 인가합니다.
 2. **DXL Pro Power** : 다이나믹셀 프로와 동일한 24V 전원 커넥터로 전원을 인가합니다.
@@ -58,11 +64,11 @@ sidebar:
 
 3. OpenCM9.04에 USB Cable를 연결 합니다.
 
-    ![](/assets/images/parts/controller/opencm904/opencm485exp_13.jpg)
+    ![](/assets/images/parts/controller/opencm904/opencm485exp_04.jpg)
 
 4. 다이나믹셀과 SMPS를 연결 합니다.
 
-    ![](/assets/images/parts/controller/opencm904/opencm485exp-12.jpg)
+    ![](/assets/images/parts/controller/opencm904/opencm485exp_05.jpg)
 
 **참고**: 다이나믹셀 펌웨어 업데이트 및 복구시 OpenCM9.04와 OpenCM 485 확장보드를 반드시 분리해주세요
 {: .notice--warning}
@@ -73,7 +79,7 @@ sidebar:
 OpenCM 485 확장보드 와 OpenCM9.04 연결시 전원 블록 다이어그램  
 OpenCM 485 확장보드는 기본적으로 OpenCM9.04 5V 전원 공급을 하며, JP1은 아래 OpeCM 485 확장보드에서 VDD전원을 OpenCM9.04로 공급할 것인지 결정합니다.
 
-![](/assets/images/parts/controller/opencm904/opencm485exp_2.png)
+![](/assets/images/parts/controller/opencm904/opencm485exp_06.png)
 
 > OpenCM 485 EXP 전원 연결도
 
@@ -88,35 +94,34 @@ OpenCM 485 확장보드의 TTL/485 버스는 OpenCM9.04의 USART3(Serial3)을 �
 
 # [OpenCM 485 확장보드 프로그래밍](#opencm-485-확장보드-프로그래밍)
 
-1. Support.robotis.com -> 소프트웨어 도움말 -> ROBORIS_OpenCM 반드시 V 1.0.1 이 후 버전을 사용하셔야 합니다.
+OpenCM 485 확장보드를 OpenCM9.04와 연결해서 사용하기 위해서는 아두이노 IDE를 사용해야 합니다.
 
-    ![](/assets/images/parts/controller/opencm904/opencm485exp_4.png)
+1. [아두이노 IDE 설치하기]{: .blank}
 
-2. 다운받은 OpenCM IDE  압축을 풀고 ROBOTIS_OpenCM.exe를 실행 합니다.
+2. OpenCM 485 확장보드의 485 Bus는 OpenCM9.04에서 Serial3(USART3)를 통해서 패킷을 주고 받습니다.
 
-    ![](/assets/images/parts/controller/opencm904/opencm485exp_5.png)
-
-3. OpenCM 485 확장보드의 485 Bus는 OpenCM9.04에서 Serial3(USART3)를 통해서 패킷을 주고 받습니다. 반드시 Dynamixel 클래스 변수 선언시 3으로 초기화 해야 합니다.
+    - DynamixelSDK를 사용해서 프로그래밍 하는 경우 아래와 같이 Serial3를 사용하도록 설정해야 합니다.
 
     ```cpp
-    Dynamixel Dxl(3); //Dynamixel on Serial3 (USART3). -> OpenCM 485 확장보드에 있는  USART3을 사용 하려면 3으로 써야 합니다.
-    void setup() {
-      Dxl.begin(1);  //1Mbps  
-    }
+    #include <DynamixelSDK.h>
 
-    void loop() {  
-      Dxl.writeWord(6, 30, 0);
-      Dxl.writeWord(2, 30, 0);
-      delay(1000);              
-      Dxl.writeWord(6, 30, 1023);
-      Dxl.writeWord(2, 30, 4095);
-      delay(1000);
-    }
+    #define DEVICENAME      "3"   //Serial3 포트 사용
+
+    dynamixel::PortHandler *portHandler = dynamixel::PortHandler::getPortHandler(DEVICENAME);
+    portHandler->openPort();
     ```
 
-4. 아래의 다운로드 버튼을 눌러서 프로그램을 다운로드 합니다.
+    - DynamixelWorkbench를 사용해서 프로그래밍 하는 경우 아래와 같이 Serial3를 사용하도록 설정합니다.
 
-    ![](/assets/images/parts/controller/opencm904/opencm485exp_7.png)
+    ```cpp
+    #include <DynamixelWorkbench.h>
+
+    #define DEVICENAME      "3"   //Serial3 포트 사용
+    #define BAUDRATE        57600
+
+    DynamixelWorkbench dxl_wb;
+    dxl_wb.begin(DEVICE_NAME, BAUDRATE);
+    ```
 
 # [버튼 및 LED 활용](#버튼-및-led-활용)
 
@@ -131,14 +136,12 @@ OpenCM 485  확장보드에는 OpenCM9.04의 IO핀과 연결된 버튼 2개와 
 |LED2|19|
 |LED3|20|
 
-![](/assets/images/parts/controller/opencm904/opencm485exp_10_kr.jpg)
+![](/assets/images/parts/controller/opencm904/opencm485exp_11.jpg)
 
 
 # [다운로드](#다운로드)
 
 - `다운로드` [SCHEMATIC-OpenCM 485 EXP.pdf]
 
-
-
-
- [SCHEMATIC-OpenCM 485 EXP.pdf]: http://support.robotis.com/ko/baggage_files/opencm/schematic1___opencm_485exp.pdf
+[아두이노 IDE 설치하기]: /docs/kr/software/arduino_ide/
+[SCHEMATIC-OpenCM 485 EXP.pdf]: http://support.robotis.com/ko/baggage_files/opencm/schematic1___opencm_485exp.pdf

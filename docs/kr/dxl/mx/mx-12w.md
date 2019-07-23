@@ -9,6 +9,7 @@ permalink: /docs/kr/dxl/mx/mx-12w/
 sidebar:
   title: MX-12W
   nav: "mx-12w"
+product_group: dxl_mx
 ---
 
 ![](/assets/images/dxl/mx/mx-12_product.jpg)
@@ -17,78 +18,78 @@ sidebar:
 
 # [주요 사양](#주요-사양)
 
-| 항목           | 내용    |
-| :------------- | :------------- |
-|MCU | ST CORTEX-M3 (STM32F103C8 @ 72MHZ, 32BIT)|
-|위치 센서 | Contactless absolute encoder (12BIT, 360 [°]) / Maker : ams (www.ams.com), Part No : AS5045|
-|모터 | Cored|
-| 통신속도       | 8,000 [bps] ~ 4.5 [Mbps]       |
-|제어 알고리즘 | PID CONTROL |
-| 최소 제어각 | 0.088 [&deg;]  |
-| 동작 모드 | 관절 모드 (0 ~ 360 [°]) / 바퀴 모드 (무한 회전)|
-| 무게 | 54.6 [g] |
-| 크기 | 32 x 50 x 40 [mm] |
-| 기어비 | 32 : 1  |
-| 무부하 속도 | 470 [rev/min] (at 12V) |
-| 동작 온도 | -5 ~ +70 [&deg;C] |
-| 사용 전압 | 10 ~ 14.8 [V] (**권장 전압 : 12 [V]**) |
-| 제어 명령 | Digital Packet |
-| 프로토콜 타입 | Half Duplex Asynchronous Serial Communication<br />(8bit, 1stop, No Parity) |
-| 통신 연결 | TTL Level Multidrop Bus(Daisy Chain Type Connector) |
-| ID | 254 ID (0 ~ 253) |
-| 피드백 | Position, Temperature, Load, Input Voltage 등 |
-| 재질 | Engineering Plastic |
-| 대기 전류 | 60 [mA] |
+| 항목          | 내용                                                                                        |
+|:--------------|:--------------------------------------------------------------------------------------------|
+| MCU           | ARM CORTEX-M3 (72 [MHz], 32Bit)                                                             |
+| 위치 센서     | Contactless absolute encoder (12BIT, 360 [°])<br />Maker : ams (www.ams.com), Part No : AS5045 |
+| 모터          | Cored                                                                                       |
+| 통신속도      | 8,000 [bps] ~ 4.5 [Mbps]                                                                    |
+| 제어 알고리즘 | PID CONTROL                                                                                 |
+| 최소 제어각   | 0.088 [&deg;]                                                                               |
+| 동작 모드     | 관절 모드 (0 ~ 360 [°]) / 바퀴 모드 (무한 회전)                                             |
+| 무게          | 54.6 [g]                                                                                    |
+| 크기          | 32 x 50 x 40 [mm]                                                                           |
+| 기어비        | 32 : 1                                                                                      |
+| 무부하 속도   | 470 [rev/min] (at 12V)                                                                      |
+| 동작 온도     | -5 ~ +70 [&deg;C]                                                                           |
+| 사용 전압     | 10 ~ 14.8 [V] (**권장 전압 : 12 [V]**)                                                      |
+| 제어 명령     | Digital Packet                                                                              |
+| 프로토콜 타입 | Half Duplex Asynchronous Serial Communication<br />(8bit, 1stop, No Parity)                 |
+| 통신 연결     | TTL Level Multidrop Bus(Daisy Chain Type Connector)                                         |
+| ID            | 254 ID (0 ~ 253)                                                                            |
+| 피드백        | Position, Temperature, Load, Input Voltage 등                                               |
+| 재질          | Engineering Plastic                                                                         |
+| 대기 전류     | 60 [mA]                                                                                     |
 
 {% include kr/dxl/warning.md %}
 
-{% include kr/dxl/control_table_protocol1.md %}
+{% include kr/dxl/control_table.md %}
 
 ## [EEPROM 영역](#eeprom-영역)
 
-| 주소     | 크기<br>(Byte)     | 명칭     | 의미    | 접근     | 기본값  |
-| :---------: | :-----------:  | :----------- | :------------ | :--------: | :------------: |
-|0|2|[Model Number](#model-number)         | 모델 번호의 바이트      | R       | 104 |
-|2|1|[Firmware Version](#firmware-version)    |펌웨어 버전 정보|R|-|
-|3|1|[ID](#id)                  |통신 ID     |RW|1|
-|4|1|[Baud Rate](#baud-rate)           |통신 속도|RW|1|
-|5|1|[Return Delay Time](#return-delay-time)   |응답 지연 시간|RW|250|
-|6|2|[CW Angle Limit](#cw-angle-limit)          |시계 방향 한계 각도 값의 바이트|RW|0|
-|8|2|[CCW Angle Limit](#ccw-angle-limit)          |반시계 방향 한계 각도 값의 바이트|RW|4,095|
-|11|1|[Temperature Limit](#temperature-limit)   |내부 한계 온도|RW|70|
-|12|1|[Min Voltage Limit](#min-voltage-limit)   |최저 한계 전압|RW|60|
-|13|1|[Max Voltage Limit](#max-voltage-limit)   |최고 한계 전압|RW|160|
-|14|2|[Max Torque](#max-torque)           |토크 한계 값의 바이트|RW|1023|
-|16|1|[Status Return Level](#status-return-level)      |응답 레벨|RW|2|
-|17|1|[Alarm LED](#alarm-led)                             |알람용 LED 기능|RW|36|
-|18|1|[Shutdown](#shutdown)            |알람용 셧 다운(Shut down) 기능|RW|36|
-|20|2|[Multi Turn Offset](#multi-turn-offset)   |다중 회전 오프셋 바이트|RW|0|
-|22|1|[Resolution Divider](#resolution-divider) |해상도 디바이더|RW|1|
+| 주소 | 크기<br>(Byte) | 명칭                                        | 의미                              | 접근 | 기본값 |
+|:----:|:--------------:|:--------------------------------------------|:----------------------------------|:----:|:------:|
+|  0   |       2        | [Model Number](#model-number)               | 모델 번호의 바이트                |  R   |  360   |
+|  2   |       1        | [Firmware Version](#firmware-version)       | 펌웨어 버전 정보                  |  R   |   -    |
+|  3   |       1        | [ID](#id)                                   | 통신 ID                           |  RW  |   1    |
+|  4   |       1        | [Baud Rate](#baud-rate)                     | 통신 속도                         |  RW  |   1    |
+|  5   |       1        | [Return Delay Time](#return-delay-time)     | 응답 지연 시간                    |  RW  |  250   |
+|  6   |       2        | [CW Angle Limit](#cw-angle-limit)           | 시계 방향 한계 각도 값의 바이트   |  RW  |   0    |
+|  8   |       2        | [CCW Angle Limit](#ccw-angle-limit)         | 반시계 방향 한계 각도 값의 바이트 |  RW  | 4,095  |
+|  11  |       1        | [Temperature Limit](#temperature-limit)     | 내부 한계 온도                    |  RW  |   70   |
+|  12  |       1        | [Min Voltage Limit](#min-voltage-limit)     | 최저 한계 전압                    |  RW  |   60   |
+|  13  |       1        | [Max Voltage Limit](#max-voltage-limit)     | 최고 한계 전압                    |  RW  |  160   |
+|  14  |       2        | [Max Torque](#max-torque)                   | 토크 한계 값의 바이트             |  RW  |  1023  |
+|  16  |       1        | [Status Return Level](#status-return-level) | 응답 레벨                         |  RW  |   2    |
+|  17  |       1        | [Alarm LED](#alarm-led)                     | 알람용 LED 기능                   |  RW  |   36   |
+|  18  |       1        | [Shutdown](#shutdown)                       | 알람용 셧 다운(Shut down) 기능    |  RW  |   36   |
+|  20  |       2        | [Multi Turn Offset](#multi-turn-offset)     | 다중 회전 오프셋 바이트           |  RW  |   0    |
+|  22  |       1        | [Resolution Divider](#resolution-divider)   | 해상도 디바이더                   |  RW  |   1    |
 
 
 ## [RAM 영역](#ram-영역)
 
-| 주소     | 크기<br>(Byte)     | 명칭     | 의미    | 접근     | 기본값  |
-| :---------: | :-----------:  | :----------- | :------------ | :--------: | :------------: |
-|24|1|[Torque Enable](#torque-enable)            |토크 켜기|RW|0|
-|25|1|[LED](#led)                             |LED On/Off|RW|0|
-|26|1|[D Gain](#d-gain)   |Derivative Gain|RW|8|
-|27|1|[I Gain](#i-gain)   |Integral Gain|RW|0|
-|28|1|[P Gain](#p-gain)   |Proportional Gain|RW|8|
-|30|2|[Goal Position](#goal-position)                 |목표 위치 값의 바이트|RW|-|
-|32|2|[Moving Speed](#moving-speed)             |목표 속도 값의 바이트|RW|-|
-|34|2|[Torque Limit](#torque-limit)            |토크 한계 값의 바이트|RW|ADD 14\&15|
-|36|2|[Present Position](#present-position)     |현재 위치 값의 바이트|R|-|
-|38|2|[Present Speed](#present-speed)           |현재 속도 값의 바이트|R|-|
-|40|2|[Present Load](#present-load)             |현재 하중 값의 바이트|R|-|
-|42|1|[Present Voltage](#present-voltage)       |현재 전압|R|-|
-|43|1|[Present Temperature](#present-temperature)|현재 온도|R|-|
-|44|1|[Registered](#registered)                 |Instruction의 등록 여부|R|0|
-|46|1|[Moving](#moving)                   |움직임 유무|R|0|
-|47|1|[Lock](#lock)                   |EEPROM 잠금|RW|0|
-|48|2|[Punch](#punch)                   |Punch 값의 바이트|RW|32|
-|50|2|[Realtime Tick](#realtime-tick)                   |실시간 Tick|R|0|
-|73|1|[Goal Acceleration](#goal-acceleration)   |목표 가속도값|RW|0|
+| 주소 | 크기<br>(Byte) | 명칭                                        | 의미                    | 접근 |   기본값   |
+|:----:|:--------------:|:--------------------------------------------|:------------------------|:----:|:----------:|
+|  24  |       1        | [Torque Enable](#torque-enable)             | 토크 켜기               |  RW  |     0      |
+|  25  |       1        | [LED](#led)                                 | LED On/Off              |  RW  |     0      |
+|  26  |       1        | [D Gain](#d-gain)                           | Derivative Gain         |  RW  |     8      |
+|  27  |       1        | [I Gain](#i-gain)                           | Integral Gain           |  RW  |     0      |
+|  28  |       1        | [P Gain](#p-gain)                           | Proportional Gain       |  RW  |     8      |
+|  30  |       2        | [Goal Position](#goal-position)             | 목표 위치 값의 바이트   |  RW  |     -      |
+|  32  |       2        | [Moving Speed](#moving-speed)               | 목표 속도 값의 바이트   |  RW  |     -      |
+|  34  |       2        | [Torque Limit](#torque-limit)               | 토크 한계 값의 바이트   |  RW  | ADD 14\&15 |
+|  36  |       2        | [Present Position](#present-position)       | 현재 위치 값의 바이트   |  R   |     -      |
+|  38  |       2        | [Present Speed](#present-speed)             | 현재 속도 값의 바이트   |  R   |     -      |
+|  40  |       2        | [Present Load](#present-load)               | 현재 하중 값의 바이트   |  R   |     -      |
+|  42  |       1        | [Present Voltage](#present-voltage)         | 현재 전압               |  R   |     -      |
+|  43  |       1        | [Present Temperature](#present-temperature) | 현재 온도               |  R   |     -      |
+|  44  |       1        | [Registered](#registered)                   | Instruction의 등록 여부 |  R   |     0      |
+|  46  |       1        | [Moving](#moving)                           | 움직임 유무             |  R   |     0      |
+|  47  |       1        | [Lock](#lock)                               | EEPROM 잠금             |  RW  |     0      |
+|  48  |       2        | [Punch](#punch)                             | Punch 값의 바이트       |  RW  |     32     |
+|  50  |       2        | [Realtime Tick](#realtime-tick)             | 실시간 Tick             |  R   |     0      |
+|  73  |       1        | [Goal Acceleration](#goal-acceleration)     | 목표 가속도값           |  RW  |     0      |
 
 
 
@@ -108,11 +109,11 @@ sidebar:
 
 Value 값이 250 이상인 경우 :
 
-| Value     | Baud Rate     | 오차     |
-| :------------: | :------------: | :------------: |
-|250|2,250,000|0.000 [%]|
-|251|2,500,000|0.000 [%]|
-|252|3,000,000|0.000 [%]|
+| Value | Baud Rate |   오차    |
+|:-----:|:---------:|:---------:|
+|  250  | 2,250,000 | 0.000 [%] |
+|  251  | 2,500,000 | 0.000 [%] |
+|  252  | 3,000,000 | 0.000 [%] |
 
 ### <a name="return-delay-time"></a>**[Return Delay Time (5)](#return-delay-time-5)**
 {% include kr/dxl/control_table_return_delay_time.md %}
@@ -216,17 +217,15 @@ Value 값이 250 이상인 경우 :
 ### <a name="goal-acceleration"></a>**[Goal Acceleration (73)](#goal-acceleration-73)**
 {% include kr/dxl/control_table_goal_acceleration.md %}
 
-# [조립 예시](#조립-예시)
-
-
-
 # [유지보수](#유지보수)
 
 {% include kr/dxl/horn_bearing_replacement.md %}
 
 # [참고자료](#참고자료)
 
-**주의**: [호환성 가이드]
+**주의**  
+[호환성 가이드]{: .blank}  
+[케이블 호환성]{: .popup}
 {: .notice}
 
 ## [커넥터 정보](#커넥터-정보)
@@ -243,3 +242,5 @@ Value 값이 250 이상인 경우 :
 {% include kr/dxl/download_center_notice.md %}
 
 [호환성 가이드]: http://www.robotis.com/service/compatibility_table.php?cate=d
+
+{% include kr/dxl/common_link.md %}

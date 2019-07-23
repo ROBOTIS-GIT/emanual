@@ -26,7 +26,13 @@ Read this guide thouroughly before getting with THORMANG.
 ## [What is THORMANG3?](#what-is-thormang3)
 
 THOR (Tactical Hazardous Operations Robot) is an affordable, full size humanoid robot platform with advanced
-computational power, sophisticated sensors, high payload capacity, and dynamic motion abilities to enable many exciting researches and educational activities.
+computational power, sophisticated sensors, high payload capacity, and dynamic motion abilities to enable many exciting researches and educational activities.   
+
+{% capture package_info_01 %}    
+**NOTE** : ROBOTIS THORMANG3 has been renewed with new actuator DYNAMIXEL PRO+ from DYNAMIXEL PRO since June 2019.   
+- [DYNAMIXEL PRO+](/docs/en/dxl/pro_plus/)
+{% endcapture %}
+<div class="notice">{{ package_info_01 | markdownify }}</div>
 
 ## [Package Contents](#package-contents)
 
@@ -46,9 +52,10 @@ computational power, sophisticated sensors, high payload capacity, and dynamic m
 ![](/assets/images/platform/thormang3/thormang3_001.jpg)
 
 {% capture package_warning %}
-**CAUTION** : This package does not include the Operating PC and Power Supplies.
-Additional components may need to be purchased as described below.
- - When operating THORMANG3 from a distance, one Operating PC is required.
+**CAUTION**  
+This package does not include the operating PC and Power Supplies.
+Additional components may need to be purchased as described below.  
+ - When operating THORMANG3 from a distance, one operating PC is required.
  - When operating THORMANG3 without batteries, two external power supplies (for actuators and internal PCs) are required.
 {% endcapture %}
 <div class="notice--warning">{{ package_warning | markdownify }}</div>
@@ -88,7 +95,7 @@ Recommended Component Specifications
 |Feature|Description|
 |:---:|:---:|
 |DOF|29|
-|Actuator|200W x 10 / 100W x 11 / 20W x 8|
+|Actuator|200W ([H54P-200-S500-R]) x 10 <br /> 100W ([H54P-100-S500-R]) x 11 <br /> 20W ([H42P-020-S300-R]) x 8|
 |Computer|Intel® NUC with Intel® Core™ i5 Processor<br />(DDR4 RAM 8GB / M.2 SSD 128GB) x2|
 |Wireless router|Dlink DIR-806A x 1|
 |Sensor|Logitech C920 HD Camera x 1<br />Intel Realsense(Option) x 1<br />Hokuyo UTM-30LX-EW(Option) x 1<br />F/T: ATi Mini58-SI-2800-120 x 2<br />IMU: MicroSrain 3DM-GX4-25 x 1|
@@ -115,6 +122,9 @@ ROBOTIS is not responsible for any damages or losses resulting from any accident
 - Do not use batteries or chargers other than provided in the kit.
 - Gears must be replaced after long excessive use.
 
-
-[thormang3_stp.zip]:http://support.robotis.com/en/baggage_files/thormang3/thormang3_stp.zip
-[sim_for_thormang3_stl.zip]:http://support.robotis.com/en/baggage_files/thormang3/sim_for_thormang3_stl.zip
+[thormang3_stp.zip]: http://support.robotis.com/en/baggage_files/thormang3/thormang3_stp.zip
+[sim_for_thormang3_stl.zip]: http://support.robotis.com/en/baggage_files/thormang3/sim_for_thormang3_stl.zip
+[DYNAMIXEL PRO+]: /docs/en/dxl/pro_plus/
+[H54P-200-S500-R]: /docs/en/dxl/pro_plus/h54p-200-s500-r/
+[H54P-100-S500-R]: /docs/en/dxl/pro_plus/h54p-100-s500-r/
+[H42P-020-S300-R]: /docs/en/dxl/pro_plus/h42p-020-s300-r/

@@ -21,7 +21,19 @@ sidebar:
 항상 제어기의 펌웨어를 최신 버전으로 유지 시켜주세요.  
 반드시 구동 기기에서 블루투스를 지원해야 다운로드 기능을 이용할 수 있습니다.
 
-## [지원제품](#지원제품)
+### [Android](#android)
+  - OS : Android 2.3이상
+  - 하드웨어 : 1.2 dual-core CPU, 1GB RAM 이상, 블루투스 및 센서 내장 기기
+  - BT-210, BT-110 지원
+  - BT-410 지원 (Android 4.4이상)
+
+### [iOS](#ios)
+  - OS : iOS 8.0 이상
+  - 하드웨어 : iPhone4S, iPod 5G, iPad mini, iPad 2 이상
+  - BT-410 지원
+  - BT-210, BT-110 **미지원**
+
+## [지원 제품](#지원-제품)
 
 - [ROBOTIS DREAM]
 - [ROBOTIS SMART]
@@ -31,7 +43,24 @@ sidebar:
 - [ROBOTIS MINI]
 - [ROBOTIS IoT]
 
-그 외 [CM-150], [CM-200], [CM-510], [CM-530], [CM-700], [OpenCM9.04], [OpenCM7.0]을 사용하여 만든 사용자 로봇
+## [지원 제어기](#지원-제어기)
+
+- [CM-150]
+- [CM-200]
+- [CM-510]
+- [CM-530]
+- [CM-700]
+- [OpenCM9.04]
+- [OpenCM7.0]
+
+## [앱 다운로드](#앱-다운로드)
+
+- [안드로이드 앱 다운로드](https://play.google.com/store/apps/details?id=com.robotis.task2)
+- [아이폰 앱 다운로드](https://itunes.apple.com/kr/app/r%2b-m.task2-robotis/id1031166481?mt=8)
+
+## [앱 설치](#앱-설치)
+
+{% include kr/software/mobile_app/task/install.md %}
 
 # [메뉴설명](#메뉴설명)
 
@@ -143,7 +172,7 @@ sidebar:
 
     ![](/assets/images/sw/rplus_mobile/r+m_task2_18_kr.gif)
 
-## [다운로드 하기](#다운로드-하기)
+## [태스크 다운로드하기](#태스크-다운로드하기)
 
 1. “장치” 버튼을 클릭합니다.
 2. 로봇의 연결 장치를 선택합니다 (처음 연결할 경우 블루투스 필터 2자리를 입력해야 합니다.)
@@ -296,30 +325,6 @@ R+ Task 2.0 매뉴얼의 [프로그래밍(파라미터)]를 참고하세요.
 
 [프로그래밍(명령어)]: /docs/kr/software/rplus2/task/#프로그래밍파라미터
 
-# [소프트웨어 다운로드](#소프트웨어-다운로드)
-
-## [Android](#android)
-- 시스템 최저 요구 사양
-  - OS : Android 2.3이상
-  - 하드웨어 : 1.2 dual-core CPU, 1GB RAM 이상, 블루투스 및 센서 내장 기기
-
-- 통신
-  - BT-410 지원 (Android 4.4이상)
-  - BT-210, BT-110 지원
-
-- [다운로드](https://play.google.com/store/apps/details?id=com.robotis.task2)
-
-## [Apple](#apple)
-- 시스템 최저 요구 사양
-  - OS : iOS 8.0 이상
-  - 하드웨어 : iPhone4S, iPod 5G, iPad mini, iPad 2 이상
-
-- 통신 관련
-  - BT-410 지원
-  - BT-210, BT-110 지원 불가
-
-- [다운로드](https://itunes.apple.com/kr/app/r%2b-m.task2-robotis/id1031166481?mt=8)
-
 # [유용한 정보](#유용한-정보)
 
 ## [변수, 함수 참조 찾기](#변수-함수-참조-찾기)
@@ -370,7 +375,7 @@ PC에서 작성한 태스크 파일을 안드로이드 기기에 복사하여 �
 
     ![](/assets/images/sw/rplus_mobile/r+m_task2_50_kr.gif)
 
-3. “RoboPlus”폴더 내에 원하는 태스크 파일(*.tsk)을 복사합니다.*
+3. “RoboPlus”폴더 내에 원하는 태스크 파일(\*.tsk)을 복사합니다.
 
     ![](/assets/images/sw/rplus_mobile/r+m_task2_51_kr.gif)
 
@@ -443,7 +448,9 @@ PC에서 작성한 태스크 파일을 iOS 기기에 복사하여 사용할 수 
 
 ## 제어기가 잘 연결되지 않습니다. 어떻게 해야 하나요?
 
-- 제어기를 껐다 켠 후 다시 시도해보세요. 문제가 지속된다면 제어기의 펌웨어를 최신 버전으로 업데이트하세요. 제어기 펌웨어 업데이트
+- 제어기를 껐다 켠 후 다시 시도해보세요. 문제가 지속된다면 제어기의 펌웨어를 최신 버전으로 업데이트하세요.
+  - [로보플러스 매니저 1.0 펌웨어 업데이트]
+  - [로보플러스 매니저 2.0 펌웨어 업데이트]
 
 ## 도움말 애니메이션을 더 이상 보고 싶지 않습니다. 어떻게 해야 하나요?
 
@@ -466,3 +473,5 @@ PC에서 작성한 태스크 파일을 iOS 기기에 복사하여 사용할 수 
 [BT-110]: /docs/kr/parts/communication/bt-110/
 [BT-210]: /docs/kr/parts/communication/bt-210/
 [BT-410]: /docs/kr/parts/communication/bt-410/
+[로보플러스 매니저 1.0 펌웨어 업데이트]: /docs/kr/software/rplus1/manager/#펌웨어-업데이트
+[로보플러스 매니저 2.0 펌웨어 업데이트]: /docs/kr/software/rplus2/manager/#펌웨어-업데이트

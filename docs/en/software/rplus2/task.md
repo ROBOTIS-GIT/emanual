@@ -29,7 +29,55 @@ A robot operates according to the task code created by the user, and the RoboPlu
 
 # [Getting Started](#getting-started)
 
-## [Manual Instructions](#manual-instructions)
+## [Software Install](#software-install)
+
+**WARNING** : R+Task 2.0 software installation procedure for Mac OS X has been updated since v2.3.0.  
+[`Mac OS X R+Task 2.0 Download`]{: .blank}
+{: .notice--warning}
+
+[`Mac OS X R+Task 2.0 Download`]: http://en.robotis.com/service/download.php?no=2
+
+1. Download R+Task 2.0 from below download link.  
+  [`Mac OS X R+Task 2.0 Download`]{: .blank}
+
+2. Double click to open the downloaded package file `R+Task2.0(v2.3.0 Mac).pkg`.  
+  ![](/assets/images/sw/rplus2/task/roboplus_task2_install_01.png)
+
+    - If below popup message appears and fails to open the file, please read the following instructions.  
+      ![](/assets/images/sw/rplus2/task/roboplus_task2_install_02.png)
+    - Open `System Preference` and select `Security & Privacy` menu.  
+      ![](/assets/images/sw/rplus2/task/roboplus_task2_install_03.png)
+    - Click `Open Anyway` button to open downloaded R+Task 2.0 package.  
+      ![](/assets/images/sw/rplus2/task/roboplus_task2_install_04.png)
+
+3. If downloaded package is successfully opened, below installer will appear. Click on `Continue`.  
+  ![](/assets/images/sw/rplus2/task/roboplus_task2_install_05.png)
+
+4. Click on `Choose Folder` or `Change Install Location...` to select a folder to extract package files. Please remember this folder to find installation file `R+Task2.0(v2.3.0 Mac).dmg` in the later part of installation.  
+  Click on `Choose` to confirm selection.  
+  ![](/assets/images/sw/rplus2/task/roboplus_task2_install_06.png)  
+  ![](/assets/images/sw/rplus2/task/roboplus_task2_install_06_2.png)
+
+5. Click on `Install` button start extracting files.  
+  ![](/assets/images/sw/rplus2/task/roboplus_task2_install_07.png)
+
+6. Enter password if necessary.  
+  ![](/assets/images/sw/rplus2/task/roboplus_task2_install_08.png)
+
+7. Click on `Close` button.  
+  ![](/assets/images/sw/rplus2/task/roboplus_task2_install_09.png)
+
+8. Go to the selected folder from above step 4 and double click to run the installation file `R+Task2.0(v2.3.0 Mac).dmg`  
+  ![](/assets/images/sw/rplus2/task/roboplus_task2_install_dmg.png)
+
+9. Below window will be opened if the file is running successfully.  
+  Drag `R+TaskPatcher` icon on the left side and drop it on the right side where `Applications` icon is located at.  
+  ![](/assets/images/sw/rplus2/task/roboplus_task2_install_10.png)
+
+11. If software is successfully installed, it'll be appeared on Applications or Launcher screen.  
+  ![](/assets/images/sw/rplus2/task/roboplus_task2_install_11.png)
+
+## [Menu Descriptions](#menu-descriptions)
 
 1. Editing Tab for Each Stage  
     The workspace is divided into Home Tab, Programming Tab, and Debugging Tab.
@@ -433,7 +481,7 @@ This instruction controls the flow of program based on the True/False result of 
 - When using multiple conditional clauses, the following logical operators can be used :
   - then : does not connect any conditional clause. Only uses one conditional clause.
   - && : two conditional clauses are computed with AND operation
-  - || : two conditional clauses are computed with OR operation
+  - \|\| : two conditional clauses are computed with OR operation
 
     ![](/assets/images/sw/rplus2/task/roboplus_task2_067.jpg)
 

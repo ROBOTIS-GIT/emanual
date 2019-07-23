@@ -11,7 +11,7 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 21"></div>
+<div style="counter-reset: h1 22"></div>
 <div style="counter-reset: h2 0"></div>
 
 <!--[dummy Header 1]>
@@ -26,7 +26,7 @@ sidebar:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gZWoyCvU-U8" frameborder="0" allowfullscreen></iframe>
 
-`DYNAMIXEL X-Series` is a new line-up of high performance networked actuator module, which has been widely used for building various types of robots with reliability and expandability. 
+`DYNAMIXEL X-Series` is a new line-up of high performance networked actuator module, which has been widely used for building various types of robots with reliability and expandability.
 
 Two different types of DYNAMIXEL is adopted in TurtleBot3 Burger, Waffle and Waffle Pi as they have different requirements. DYNAMIXEL X-Series shares its design, therefore, users can replace actuators depend on applications.
 
@@ -37,7 +37,7 @@ Two different types of DYNAMIXEL is adopted in TurtleBot3 Burger, Waffle and Waf
   - Direct Screw Assembly to the Case (without Nut Insert)
   - Improved Heat Sink Featuring Aluminum Case
 
-- Various Control Functions  
+- Various Control Functions
   - 6 Operating Modes
   - Current-Based Torque Control (4096 steps, 2.69mA/step)
   - Profile Control for Smooth Motion Planning
@@ -65,7 +65,7 @@ Two different types of DYNAMIXEL is adopted in TurtleBot3 Burger, Waffle and Waf
 | Standby Current | 52mA                                           | 40mA                                                                               |
 
 
-- More information for actuators can be found at below ROBOTIS e-Manual links.  
+- More information for actuators can be found at below ROBOTIS e-Manual links.
   - [XL430-W250][xl430_w250] for TurtleBot3 Burger
   - [XM430-W210][xm430_w210] for TurtleBot3 Waffle and Waffle Pi
 
@@ -82,5 +82,5 @@ The ROBOTIS Dynamixel SDK is a software development library that provides Dynami
 [dynamixel]: http://en.robotis.com/subindex/dxl_en.php
 [xl430_w250]: /docs/en/dxl/x/xl430-w250/
 [xm430_w210]: /docs/en/dxl/x/xm430-w210/
-[dynamixel_sdk]: /docs/en/software/dynamixel/dynamixel_sdk/overview/ 
+[dynamixel_sdk]: /docs/en/software/dynamixel/dynamixel_sdk/overview/
 [dynamixel_sdk_github]: https://github.com/ROBOTIS-GIT/DynamixelSDK

@@ -24,6 +24,7 @@ html {
 
 body {
   counter-reset: h1;
+  top: 0px !important; 
   margin: 0;
   padding: 0;
   color: $text-color;
@@ -136,7 +137,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     blockquote {
       word-wrap: break-word;
-      margin: 0.5em 0.5em 0 3em;
+      margin: 0em 0.5em 1em 3em;
       font-style: italic;
       color: $primary-color;
       border-left: 0.25em solid $primary-color;
@@ -323,13 +324,14 @@ ul > li > ul {
 }
 
 img {
-  border: 1px solid #999;
-  border-radius: $img-border-radius;
+  max-width: 100%;
+  height: auto;
+  padding: 0.5em 0 0 0;
 }
 
 blockquote {
   word-wrap: break-word;
-  margin: 0.5em 0.5em 0 0;
+  margin: 0 0.5em 1em 0;
   font-style: italic;
   color: $primary-color;
   border-left: 0.25em solid $primary-color;

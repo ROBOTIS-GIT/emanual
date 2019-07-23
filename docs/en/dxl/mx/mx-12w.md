@@ -9,6 +9,7 @@ permalink: /docs/en/dxl/mx/mx-12w/
 sidebar:
   title: MX-12W
   nav: "mx-12w"
+product_group: dxl_mx
 ---
 
 ![](/assets/images/dxl/mx/mx-12_product.jpg)
@@ -17,40 +18,43 @@ sidebar:
 
 # [Specifications](#specifications)
 
-| Item           | Specifications     |
-| :------------- | :------------- |
-| Baud Rate       | 8000 bps ~ 4.5 Mbps       |
-| Resolution | 0.088&deg;  |
-| Running Degree | 0&deg; ~ 360&deg;<br />Endless Turn |
-| Weight | 54.6g |
-| Dimensions (W x H x D) | 32mm x 50mm x 40mm |
-| Gear Ratio | 32 : 1  |
-| No Load Speed | 470rpm (at 12V) |
-| Operating Temperature | -5&deg;C ~ +70&deg;C |
-| Input Voltage | 10 ~ 14.8V (**Recommended : 12V**) |
-| Standby Current | 60mA |
-| Command Signal | Digital Packet |
-| Protocol Type | Half Duplex Asynchronous Serial Communication<br />(8bit, 1stop, No Parity) |
-| Physical Connection | TTL Level Multidrop Bus(Daisy Chain Type Connector) |
-| ID | 0 ~ 253 |
-| Feedback | Position, Temperature, Load, Input Voltage, etc |
-| Material | Engineering Plastic |
+| Item                   | Specifications                                                                                |
+|:-----------------------|:----------------------------------------------------------------------------------------------|
+| MCU                    | ARM CORTEX-M3 (72 [MHz], 32Bit)                                                               |
+| Position Sensor        | Contactless absolute encoder (12Bit, 360 [°])<br />Maker : ams(www.ams.com), Part No : AS5045 |
+| Motor                  | Cored                                                                                         |
+| Baud Rate              | 8000 bps ~ 4.5 Mbps                                                                           |
+| Resolution             | 0.088&deg;                                                                                    |
+| Running Degree         | 0&deg; ~ 360&deg;<br />Endless Turn                                                           |
+| Weight                 | 54.6g                                                                                         |
+| Dimensions (W x H x D) | 32mm x 50mm x 40mm                                                                            |
+| Gear Ratio             | 32 : 1                                                                                        |
+| No Load Speed          | 470rpm (at 12V)                                                                               |
+| Operating Temperature  | -5&deg;C ~ +70&deg;C                                                                          |
+| Input Voltage          | 10 ~ 14.8V (**Recommended : 12V**)                                                            |
+| Standby Current        | 60mA                                                                                          |
+| Command Signal         | Digital Packet                                                                                |
+| Protocol Type          | Half Duplex Asynchronous Serial Communication<br />(8bit, 1stop, No Parity)                   |
+| Physical Connection    | TTL Level Multidrop Bus(Daisy Chain Type Connector)                                           |
+| ID                     | 0 ~ 253                                                                                       |
+| Feedback               | Position, Temperature, Load, Input Voltage, etc                                               |
+| Material               | Engineering Plastic                                                                           |
 
 {% include en/dxl/warning.md %}
 
-{% include en/dxl/control_table_protocol1.md %}
+{% include en/dxl/control_table.md %}
 
 ## [Control Table of EEPROM Area](#control-table-of-eeprom-area)
 
 | Address | Size<br>(Byte) | Data Name                                   | Description                        | Access | Initial<br />Value |
 |:-------:|:--------------:|:--------------------------------------------|:-----------------------------------|:------:|:------------------:|
-|    0    |       2        | [Model Number](#model-number)               | Model Number                       |   R    |        104         |
+|    0    |       2        | [Model Number](#model-number)               | Model Number                       |   R    |        360         |
 |    2    |       1        | [Firmware Version](#firmware-version)       | Firmware Version                   |   R    |         -          |
 |    3    |       1        | [ID](#id)                                   | DYNAMIXEL ID                       |   RW   |         1          |
 |    4    |       1        | [Baud Rate](#baud-rate)                     | Communication Speed                |   RW   |         1          |
 |    5    |       1        | [Return Delay Time](#return-delay-time)     | Response Delay Time                |   RW   |        250         |
 |    6    |       2        | [CW Angle Limit](#cw-angle-limit)           | Clockwise Angle Limit              |   RW   |         0          |
-|    8    |       2        | [CCW Angle Limit](#ccw-angle-limit)         | Counter-Clockwise Angle Limit      |   RW   |        4,095        |
+|    8    |       2        | [CCW Angle Limit](#ccw-angle-limit)         | Counter-Clockwise Angle Limit      |   RW   |       4,095        |
 |   11    |       1        | [Temperature Limit](#temperature-limit)     | Maximum Internal Temperature Limit |   RW   |         70         |
 |   12    |       1        | [Min Voltage Limit](#min-voltage-limit)     | Minimum Input Voltage Limit        |   RW   |         60         |
 |   13    |       1        | [Max Voltage Limit](#max-voltage-limit)     | Maximum Input Voltage Limit        |   RW   |        160         |
@@ -71,7 +75,7 @@ sidebar:
 |   26    |       1        | [D Gain](#d-gain)                           | Derivative Gain               |   RW   |         8          |
 |   27    |       1        | [I Gain](#i-gain)                           | Integral Gain                 |   RW   |         0          |
 |   28    |       1        | [P Gain](#p-gain)                           | Proportional Gain             |   RW   |         8          |
-|   30    |       2        | [Goal Position](#goal-position)             | Desired Position               |   RW   |         -          |
+|   30    |       2        | [Goal Position](#goal-position)             | Desired Position              |   RW   |         -          |
 |   32    |       2        | [Moving Speed](#moving-speed)               | Moving Speed(Moving Velocity) |   RW   |         -          |
 |   34    |       2        | [Torque Limit](#torque-limit)               | Torque Limit(Goal Torque)     |   RW   |   ADD 14&amp;15    |
 |   36    |       2        | [Present Position](#present-position)       | Present Position              |   R    |         -          |
@@ -101,28 +105,32 @@ sidebar:
 ### <a name="baud-rate"></a>**[Baud Rate (4)](#baud-rate-4)**
 Baud Rate determines serial communication speed between a controller and DYNAMIXELs.
 
-| Value     | Baud Rate(bps)     | Margin of Error     |
-| :------------: | :------------: | :------------: |
-|1(Default)|1M|0.000%|
-|3|500,000| 0.000%|
-|4|400,000| 0.000%|
-|7|250,000| 0.000%|
-|9|200,000| 0.000%|
-|16|115200| -2.124%|
-|34|57600| 0.794%|
-|103|19200| -0.160%|
-|207|9600| -0.160%|
+|   Value    | Baud Rate(bps) | Margin of Error |
+|:----------:|:--------------:|:---------------:|
+| 1(Default) |       1M       |     0.000%      |
+|     3      |    500,000     |     0.000%      |
+|     4      |    400,000     |     0.000%      |
+|     7      |    250,000     |     0.000%      |
+|     9      |    200,000     |     0.000%      |
+|     16     |     115200     |     -2.124%     |
+|     34     |     57600      |     0.794%      |
+|    103     |     19200      |     -0.160%     |
+|    207     |      9600      |     -0.160%     |
 
 **NOTE** : Less than 3% of the baud rate error margin will not affect to UART communication.
 {: .notice}
 
+**NOTE** : For the stable communication with higher baudrate, configure USB Latency value to the lower.  
+[USB Latency Setting](/docs/en/software/dynamixel/dynamixel_wizard2/#usb-latency-setting) 
+{: .notice}
+
 For BPS over 250 values :
 
-| Value     | Baud Rate     | Margin of Error     |
-| :------------: | :------------: | :------------: |
-|250|2,250,000|0.000%|
-|251|2,500,000|0.000%|
-|252|3,000,000|0.000%|
+| Value | Baud Rate | Margin of Error |
+|:-----:|:---------:|:---------------:|
+|  250  | 2,250,000 |     0.000%      |
+|  251  | 2,500,000 |     0.000%      |
+|  252  | 3,000,000 |     0.000%      |
 
 ### <a name="return-delay-time"></a>**[Return Delay Time (5)](#return-delay-time-5)**
 {% include en/dxl/control_table_return_delay_time.md %}
@@ -233,7 +241,9 @@ For example, if it is set to 300 then the motor is moving to the CCW direction a
 
 # [Reference](#reference)
 
-**NOTE** : [Compatibility Guide]
+**NOTE**  
+[Compatibility Guide]{: .blank}  
+[Harness Compatibility]{: .popup}
 {: .notice}
 
 ## [Videos](#videos)
@@ -251,3 +261,5 @@ For example, if it is set to 300 then the motor is moving to the CCW direction a
 {% include en/dxl/download_center_notice.md %}
 
 [Compatibility Guide]: http://en.robotis.com/service/compatibility_table.php?cate=d
+
+{% include en/dxl/common_link.md %}

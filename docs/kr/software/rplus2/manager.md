@@ -193,6 +193,8 @@ V2.0.0 기준으로 지원 제품이 한정됩니다. 지원 제품 목록에 �
 
 11. 컨트롤 테이블에 대한 더 많은 정보를 얻으려면 각 제품의 E-Manual을 참고하세요.
 
+## [제어기 컨트롤 테이블](#제어기-컨트롤-테이블)
+
 
 # [고급 기능](#고급-기능)
 
@@ -341,5 +343,5 @@ AX시리즈, MX시리즈, RX시리즈, DX시리즈, EX시리즈, CM-530, CM-510,
 [ROBOTIS IoT]: /docs/kr/edu/
 [ROBOTIS MINI]: /docs/kr/edu/
 [CM-150, CM-200, OpenCM9.04, OpenCM7.0]: /docs/kr/parts/controller/controller_compatibility/
-[USB 드라이버 설치]: /docs/kr/faq/usb_driver_install/
+[USB 드라이버 설치]: /docs/kr/popup/usb_driver_install/
 [LN-101 드라이버 설치]: /docs/kr/parts/interface/ln-101/#드라이버-설치-확인

@@ -11,7 +11,7 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 21"></div>
+<div style="counter-reset: h1 22"></div>
 
 # [OpenSource and Licenses](#opensource-licenses)
 
@@ -34,13 +34,13 @@ sidebar:
   - [DYNAMIXEL SDK](https://github.com/ROBOTIS-GIT/DynamixelSDK)
   - [DYNAMIXEL Workbench](https://github.com/ROBOTIS-GIT/dynamixel-workbench)
   - [LDS Driver](https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver)
-  - [OpenManipulator](https://github.com/ROBOTIS-GIT/open_manipulator)
-  - [OpenManipulator Messages](https://github.com/ROBOTIS-GIT/open_manipulator_msgs)
-  - [OpenManipulator Simulations](https://github.com/ROBOTIS-GIT/open_manipulator_simulations)
-  - [OpenManipulator Perceptions](https://github.com/ROBOTIS-GIT/open_manipulator_perceptions)
-  - [OpenManipulator with TB3](https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3)
-  - [OpenManipulator with TB3 Messages](https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3_msgs)
-  - [OpenManipulator with TB3 Simulations](https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3_simulations)
+  - [OpenMANIPULATOR](https://github.com/ROBOTIS-GIT/open_manipulator)
+  - [OpenMANIPULATOR Messages](https://github.com/ROBOTIS-GIT/open_manipulator_msgs)
+  - [OpenMANIPULATOR Simulations](https://github.com/ROBOTIS-GIT/open_manipulator_simulations)
+  - [OpenMANIPULATOR Perceptions](https://github.com/ROBOTIS-GIT/open_manipulator_perceptions)
+  - [OpenMANIPULATOR with TB3](https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3)
+  - [OpenMANIPULATOR with TB3 Messages](https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3_msgs)
+  - [OpenMANIPULATOR with TB3 Simulations](https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3_simulations)
 
 
 ## [OpenSource Hardware](#opensource-hardware)
@@ -54,7 +54,7 @@ sidebar:
   - [TurtleBot3 Waffle Pi](http://www.robotis.com/service/download.php?no=678)
 
 + TurtleBot3 Frineds Hardware  
-  - [TurtleBot3 OpenManipulator](http://www.robotis.com/service/download.php?no=679)
+  - [TurtleBot3 OpenMANIPULATOR](http://www.robotis.com/service/download.php?no=679)
   - [TurtleBot3 Segway](http://www.robotis.com/service/download.php?no=680)
   - [TurtleBot3 Conveyor](http://www.robotis.com/service/download.php?no=681)
   - [TurtleBot3 Monster](http://www.robotis.com/service/download.php?no=682)

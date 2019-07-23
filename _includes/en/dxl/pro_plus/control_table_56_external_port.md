@@ -17,7 +17,7 @@ Shorter cable increases accuracy of the measurement.
 | Analogue Input           | 0                       | Converts External Port signal to digital value<br />External Data = signal x (4,095 / 3.3) | R      | Resolution : 12[bit] (0 ~ 4,095)                                                                                |
 | Digital Output Push-Pull | 1                       | 0 : Set External Port output to 0[V]<br />1 : Set External Port output to 3.3[V]    | W      | Output High level(VOH) : 2.4 [V] (min)<br />Output Low level(VOL) : 0.5 [V] (max)                               |
 | Digital Input Pull-Up    | 2                       | 0 : External Port input is 0[V]<br />1 : External Port input is 3.3[V] or Open        | R      | Input High level(VIH) : 2.3 [V] (min)<br />Input Low level(VIL) : 1.0 [V] (max)<br />Pull-Up : 40 [k&Omega;] (typ)   |
-| Digital Input Pull-Down  | 3 (초기값)              | 0 : External Port input is 0[V] or Open <br />1 : External Port input is 3.3[V]       | R      | Input High level(VIH) : 2.3 [V] (min)<br />Input Low level(VIL) : 1.0 [V] (max)<br />Pull-Down : 40 [k&Omega;] (typ) |
+| Digital Input Pull-Down  | 3 (Default)              | 0 : External Port input is 0[V] or Open <br />1 : External Port input is 3.3[V]       | R      | Input High level(VIH) : 2.3 [V] (min)<br />Input Low level(VIL) : 1.0 [V] (max)<br />Pull-Down : 40 [k&Omega;] (typ) |
 
 {% capture control_table_externalportdata_warning %}
 **WARNING** : The External Port is not electrically insulated, therefore, abide by the electrical specifications.  
@@ -29,12 +29,18 @@ If the electrical specification is exceeded or there is a problem with the signa
 - Do not connect the GNDext pin of External Port directly to the GND pin of DYNAMIXEL connector. Noise from power may affect on the External Port.
 {% endcapture %}
 
-<div class="notice--warning">{{ control_table_externalportdata_warning | markdownify }}</div>
+<div class="notice--danger">{{ control_table_externalportdata_warning | markdownify }}</div>
 
 #### External expansion port location and pin function
 Remove bolts and cover plate to reveal External Port connector.
 
+{% if page.ref=='rh_p12_rn' or page.ref=='rh_p12_rna' %}
+![](/assets/images/platform/rh_p12_rn/rh_p12_rn_external_port.png)
+{% elsif page.product_group=='dxl_pro_a' %}
+![](/assets/images/dxl/pro/pro_external_port.png)
+{% else %}
 ![](/assets/images/dxl/pro_plus/external_port.png)
+{% endif %}
 
 ![](/assets/images/dxl/pro_plus/external_port_pinout.png)
 

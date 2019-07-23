@@ -11,8 +11,6 @@ sidebar:
   nav: "dream-b"
 ---
 
-# DREAM SET B
-
 # [Introduction](#introduction)
 
 ROBOTIS DREAM is an entry level robotics kit optimized for learning and teaching robotics.
@@ -23,6 +21,9 @@ Set B combines the parts from the existing products ROBOTIS DREAM Level 3 and Le
 - Full workbook for students available (sold separately).
 
 **CAUTION** : ROBOTIS DREAM SET B requires parts from ROBOTIS DREAM SET A. Please make sure to purchase SET A  to build the robots in SET B. Users must program the robots or download the program into the controller([CM-150]) to operate the robot. To download programs, you will need the USB cable included in SET A.
+
+**WARNING** : ROBOTIS DREAM B has been discontinued.
+{: .notice--warning}
 
 # [Part List](#part-list)
 

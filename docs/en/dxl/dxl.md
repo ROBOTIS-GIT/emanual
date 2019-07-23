@@ -45,7 +45,7 @@ sidebar:
 
 |XL320|XL430-W250|
 |:---:|:---:|
-|[![](/assets/images/dxl/x/xl320_product.jpg)](/docs/en/dxl/x/xl320/)|[![](/assets/images/dxl/x/xl430_product.png)](/docs/en/dxl/x/xl430-w250/)|
+|[![](/assets/images/dxl/x/xl320_product.jpg)](/docs/en/dxl/x/xl320/)|[![](/assets/images/dxl/x/xl430_product_new.png)](/docs/en/dxl/x/xl430-w250/)|
 
 ## [XM Series](#xm-series)
 
@@ -56,10 +56,10 @@ sidebar:
 
 ## [XH Series](#xh-series)
 
-|XH430|
-|:---:|
-|![](/assets/images/dxl/x/x_series_product.png)|
-|[XH430-W210](/docs/en/dxl/x/xh430-w210/)<br>[XH430-W350](/docs/en/dxl/x/xh430-w350/)<br>[XH430-V210](/docs/en/dxl/x/xh430-v210/)<br>[XH430-V350](/docs/en/dxl/x/xh430-v350/)|
+|XH430|XH540|
+|:---:|:---:|
+|![](/assets/images/dxl/x/x_series_product.png)|![](/assets/images/dxl/x/x540-series_product.png)|
+|[XH430-W210](/docs/en/dxl/x/xh430-w210/)<br>[XH430-W350](/docs/en/dxl/x/xh430-w350/)<br>[XH430-V210](/docs/en/dxl/x/xh430-v210/)<br>[XH430-V350](/docs/en/dxl/x/xh430-v350/)|[XH540-W150](/docs/en/dxl/x/xh540-w150/)<br>[XH540-W270](/docs/en/dxl/x/xh540-w270/)<br>[XH540-V150](/docs/en/dxl/x/xh540-v150/)<br>[XH540-V270](/docs/en/dxl/x/xh540-v270/)|
 
 # [PRO Series](#pro-series)
 
@@ -71,12 +71,26 @@ sidebar:
 
 ## [PRO M Series](#pro-m-series)
 
-|M54-60-S250-R|M54-40-S250-R|M42-10-S260-R|
-|:---:|:---:|:---:|
-|[![](/assets/images/dxl/pro/h54-200-s500-r_product.jpg)](/docs/en/dxl/pro/m54-60-s250-r/)|[![](/assets/images/dxl/pro/h54-100-s500-r_product.jpg)](/docs/en/dxl/pro/m54-40-s250-r/)|[![](/assets/images/dxl/pro/m42-10-s260-r_product.jpg)](/docs/en/dxl/pro/m42-10-s260-r/)|
+|                                              M54-60-S250-R                                               |                                              M54-40-S250-R                                               |                                              M42-10-S260-R                                               |
+|:--------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------:|
+|                          ![](/assets/images/dxl/pro/h54-200-s500-r_product.jpg)                          |                          ![](/assets/images/dxl/pro/h54-100-s500-r_product.jpg)                          |                          ![](/assets/images/dxl/pro/m42-10-s260-r_product.jpg)                           |
+| [M54-60-S250-R](/docs/en/dxl/pro/m54-60-s250-r/)<br>[M54-60-S250-R(A)](/docs/en/dxl/pro/m54-60-s250-ra/) | [M54-40-S250-R](/docs/en/dxl/pro/m54-40-s250-r/)<br>[M54-40-S250-R(A)](/docs/en/dxl/pro/m54-40-s250-ra/) | [M42-10-S260-R](/docs/en/dxl/pro/m42-10-s260-r/)<br>[M42-10-S260-R(A)](/docs/en/dxl/pro/m42-10-s260-ra/) |
 
 ## [PRO H Series](#pro-h-series)
 
-|H54-200-S500-R|H54-100-S500-R|H42-20-S300-R|
-|:---:|:---:|:---:|
-|[![](/assets/images/dxl/pro/h54-200-s500-r_product.jpg)](/docs/en/dxl/pro/h54-200-s500-r/)|[![](/assets/images/dxl/pro/h54-100-s500-r_product.jpg)](/docs/en/dxl/pro/h54-100-s500-r/)|[![](/assets/images/dxl/pro/h42-20-s300-r_product.jpg)](/docs/en/dxl/pro/h42-20-s300-r/)|
+|                                                H54-200-S500-R                                                |                                                H54-100-S500-R                                                |                                              H42-20-S300-R                                               |
+|:------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------:|
+|                            ![](/assets/images/dxl/pro/h54-200-s500-r_product.jpg)                            |                            ![](/assets/images/dxl/pro/h54-100-s500-r_product.jpg)                            |                          ![](/assets/images/dxl/pro/h42-20-s300-r_product.jpg)                           |
+| [H54-200-S500-R](/docs/en/dxl/pro/h54-200-s500-r/)<br>[H54-200-S500-R(A)](/docs/en/dxl/pro/h54-200-s500-ra/) | [H54-100-S500-R](/docs/en/dxl/pro/h54-100-s500-r/)<br>[H54-100-S500-R(A)](/docs/en/dxl/pro/h54-100-s500-ra/) | [H42-20-S300-R](/docs/en/dxl/pro/h42-20-s300-r/)<br>[H42-20-S300-R(A)](/docs/en/dxl/pro/h42-20-s300-ra/) |
+
+# [PRO Plus(+) Series](#pro-plus-series)
+
+|                                        H54P-200-S500-R                                         |                                        H54P-100-S500-R                                         |                                        H42P-020-S300-R                                         |
+|:----------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------:|
+| [![](/assets/images/dxl/pro_plus/h54p-200-s500-r.png)](/docs/en/dxl/pro_plus/h54p-200-s500-r/) | [![](/assets/images/dxl/pro_plus/h54p-100-s500-r.png)](/docs/en/dxl/pro_plus/h54p-100-s500-r/) | [![](/assets/images/dxl/pro_plus/h42p-020-s300-r.png)](/docs/en/dxl/pro_plus/h42p-020-s300-r/) |
+
+
+
+ |                    M54P-060-S250-R                    |                   M54P-040-S250-R                    |                    M42P-010-S260-R                    |
+ |:-----------------------------------------------------:|:----------------------------------------------------:|:-----------------------------------------------------:|
+ |[![](/assets/images/dxl/pro_plus/m54p-040-s250-r.png)](/docs/en/dxl/pro_plus/m54p-060-s250-r/) | [![](/assets/images/dxl/pro_plus/m54p-060-s250-r.png)](http://localhost:4000/docs/en/dxl/pro_plus/m54p-040-s250-r/) | [![](/assets/images/dxl/pro_plus/m42p-010-s260-r.png)](/docs/en/dxl/pro_plus/m42p-010-s260-r/) |

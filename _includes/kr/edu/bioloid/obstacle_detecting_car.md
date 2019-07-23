@@ -41,3 +41,5 @@ AX-12+ 를 장애물 감지차의 바퀴로 사용하기 위해 바퀴 모드(�
 다운로드한 태스크 코드를 PLAY 시킵니다. 장애물을 피하며 주행하는지 확인하십시오.
 
 ![](/assets/images/edu/bioloid/detectcar-result_KR.png)
+
+[BIO_CMP_ObstacleDetectionCarExam_KR.tsk]: http://www.robotis.com/service/download.php?no=1214

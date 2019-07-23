@@ -9,6 +9,7 @@ permalink: /docs/kr/dxl/ax/ax-12w/
 sidebar:
   title: AX-12W
   nav: "ax-12w"
+product_group: dxl_ax
 ---
 
 ![](/assets/images/dxl/ax/ax-12w_product.jpg)
@@ -24,7 +25,7 @@ sidebar:
 | 최소 제어각     | 0.29 [deg]                                                              |
 | 모터            | Cored                                                                  |
 | 기어비          | 32 : 1                                                                 |
-| 정지 토크    | 0.2 [N&middot;m] (at 12 [V], 1.4 [A])                                        |
+| Stall Torque | 0.2 [N&middot;m] (at 12 [V], 1.4 [A])                                        |
 | 무부하 속도   | 470 [rpm] (at 12.0 [V], Wheel Mode)<br />54 [rpm] (at 12.0 [V], Joint Mode)          |
 | 동작 모드       | 관절 모드 : 0 ~ 300 [deg]<br />바퀴 모드 : 무한 회전                   |
 | 동작 온도       | -5 ~ +70 [&deg;C]                                                   |
@@ -40,7 +41,7 @@ sidebar:
 
 {% include kr/dxl/warning.md %}
 
-{% include kr/dxl/control_table_protocol1.md %}
+{% include kr/dxl/control_table.md %}
 
 
 ## [EEPROM 영역](#eeprom-영역)
@@ -116,6 +117,11 @@ Baudrate(BPS) = 2,000,000 / (Value + 1)
 
 **참고**: UART는 Baudrate 오차가 3% 이내이면 통신에 지장이 없습니다.
 {: .notice}
+
+**참고**: 높은 통신데이터를 정상적으로 사용하기위해, 응답시간을 낮춰주세요.  
+[응답 시간 조정](/docs/kr/software/dynamixel/dynamixel_wizard2/#포트-응답-속도-설정)  
+{: .notice}
+
 
 ### <a name="return-delay-time"></a>**[Return Delay Time (5)](#return-delay-time-5)**
 {% include kr/dxl/control_table_return_delay_time.md %}
@@ -199,8 +205,16 @@ Baudrate(BPS) = 2,000,000 / (Value + 1)
 
 # [참고자료](#참고자료)
 
-**주의**: [호환성 가이드]
+**주의**  
+[호환성 가이드]{: .blank}  
+[케이블 호환성]{: .popup}
 {: .notice}
+
+## [인증 획득](#인증-획득)
+표기되지 않은 인증에 대해서는 별도 문의하시기 바랍니다.
+
+### [FCC](#fcc)
+{% include kr/dxl/fcc_class_a.md %}
 
 ## [커넥터 정보](#커넥터-정보)
 {% include kr/dxl/molex_ttl.md %}
@@ -214,3 +228,4 @@ Baudrate(BPS) = 2,000,000 / (Value + 1)
 {% include kr/dxl/485_ttl_connection.md %}
 
 [호환성 가이드]: http://www.robotis.com/service/compatibility_table.php?cate=d
+{% include kr/dxl/common_link.md %}

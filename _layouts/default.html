@@ -15,6 +15,7 @@
     {% include head/custom.html %}
     <script type="text/javascript" src="/assets/js/plugins/elasticlunr.js"></script>
     <script src="/assets/js/search.js"></script>
+    <!-- <script src="/assets/js/robotis_product_parse.js"></script> -->
     <!-- <script type="text/javascript" src="/assets/js/plugins/lunr.js"></script> -->
     <script>
       var toggle_google = 0;
@@ -50,6 +51,7 @@
     </script>
     <script>
     $(document).ready(function() {
+      $('.blank').attr('target', '_blank');
     	$('.popup').magnificPopup({
     		type: 'ajax',
     		alignTop: true,

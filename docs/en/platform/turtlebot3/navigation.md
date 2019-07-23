@@ -66,7 +66,7 @@ $ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/m
 {: .notice--success}
 
 ``` bash
-$ rviz -d `rospack find turtlebot3_slam`/rviz/turtlebot3_navigation.rviz
+$ rviz -d `rospack find turtlebot3_navigation`/rviz/turtlebot3_navigation.rviz
 ```
 
 ## [Estimate Initial Pose](#estimate-initial-pose)

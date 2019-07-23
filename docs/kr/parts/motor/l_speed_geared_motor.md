@@ -13,9 +13,12 @@ sidebar:
 
 # [개요](#개요)
 
-![img](/assets/images/parts/motor/l_speed_geared_motor_product.jpg)     
+![img](/assets/images/parts/motor/l_speed_geared_motor_product.jpg)
 
 > 저속 감속 모터
+
+**주의**: 저속 감속모터는 현재 **단종**되어 더 이상 판매되지 않습니다.  
+{: .notice--warning}
 
 로보티즈 드림(ROBOTIS DREAM) 1단계에서 사용되는 모터 입니다.
 

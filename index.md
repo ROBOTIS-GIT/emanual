@@ -18,9 +18,21 @@ header:
 - New ROBOTIS Community [Forum] is available. Please checkout the [Forum] if you have any issue with ROBOTIS Products.
 
 {% capture index_notice_01 %}
-한국어 사용자는 [한글 매뉴얼](http://emanual.robotis.com/docs/kr/)을 참조하세요.  
-日本語e-manualは現時点で編集されていません。 英語版ページをご参照下さい。  
-目前, 还没有中文版. 请使用提供的Google翻译器 <img src="/assets/images/icon_google.png">.
+- 한국어 사용자는 [한글 매뉴얼](http://emanual.robotis.com/docs/kr/)을 참조하세요.  
+- 日本語e-manualは現時点で編集されていません。 英語版ページをご参照下さい。  
+- 目前, 还没有中文版. 请使用提供的Google翻译器 <img src="/assets/images/icon_google.png">.
+  - 中文用户 (DREAM, STEM, MINI等产品) 请参考中文手册.
+  - [DREAM Lv2 下载示例文件]{: .popup}
+  - [DREAM Lv3 下载示例文件]{: .popup}
+  - [DREAM Lv4 下载示例文件]{: .popup}
+  - [STEM 下载示例文件]{: .popup}
+  - [MINI 下载]{: .popup}
+
+[DREAM Lv2 下载示例文件]: /docs/en/popup/dream1-2_example_cn/
+[DREAM Lv3 下载示例文件]: /docs/en/popup/dream1-3_example_cn/
+[DREAM Lv4 下载示例文件]: /docs/en/popup/dream1-4_example_cn/
+[STEM 下载示例文件]: /docs/en/popup/stem_example_cn/
+[MINI 下载]: /docs/en/popup/mini_example_cn/
 {% endcapture %}
 <div class="notice--success">{{ index_notice_01 | markdownify }}</div>
 
@@ -36,24 +48,27 @@ Please also checkout **[ROBOTIS Download Center]** for useful resources.
 - [Protocol 2.0](/docs/en/dxl/protocol2/)
 
 ### Control Table
-- 
-<select id="x_ctrl_table_select" onchange="window.location.href=this.value;">
-    <option selected disabled hidden>X Series</option>
-    <option value="http://emanual.robotis.com/docs/en/dxl/x/xl320/#control-table-of-eeprom-area">XL-320</option>
-    <option value="/docs/en/dxl/x/xl430-w250/#control-table-of-eeprom-area">XL430-W250</option>
-    <option value="/docs/en/dxl/x/xm430-w210/#control-table-of-eeprom-area">XM430-W210</option>
-    <option value="/docs/en/dxl/x/xm430-w350/#control-table-of-eeprom-area">XM430-W350</option>
-    <option value="/docs/en/dxl/x/xm540-w150/#control-table-of-eeprom-area">XM540-W150</option>
-    <option value="/docs/en/dxl/x/xm540-w270/#control-table-of-eeprom-area">XM540-W270</option>
-    <option value="/docs/en/dxl/x/xh430-w210/#control-table-of-eeprom-area">XH430-W210</option>
-    <option value="/docs/en/dxl/x/xh430-w350/#control-table-of-eeprom-area">XH430-W350</option>
-    <option value="/docs/en/dxl/x/xh430-v210/#control-table-of-eeprom-area">XH430-V210</option>
-    <option value="/docs/en/dxl/x/xh430-v350/#control-table-of-eeprom-area">XH430-V350</option>
+
+-
+<select id="pro_plus_ctrl_table_select" onchange="window.location.href=this.value;">
+    <option selected disabled hidden>PRO+ Series</option>
+    <option value="/docs/en/dxl/pro_plus/h54p-200-s500-r/#control-table-of-eeprom-area">H54P-200-S500-R</option>
+    <option value="/docs/en/dxl/pro_plus/h54p-100-s500-r/#control-table-of-eeprom-area">H54P-100-S500-R</option>
+    <option value="/docs/en/dxl/pro_plus/h42p-020-s300-r/#control-table-of-eeprom-area">H42P-020-S300-R</option>
+    <option value="/docs/en/dxl/pro_plus/m54p-060-s250-r/#control-table-of-eeprom-area">M54P-060-S250-R</option>
+    <option value="/docs/en/dxl/pro_plus/m54p-040-s250-r/#control-table-of-eeprom-area">M54P-050-S250-R</option>
+    <option value="/docs/en/dxl/pro_plus/m42p-010-s260-r/#control-table-of-eeprom-area">M42P-010-S260-R</option>
 </select>
 
-- 
+-
 <select id="pro_ctrl_table_select" onchange="window.location.href=this.value;">
     <option selected disabled hidden>PRO Series</option>
+    <option value="/docs/en/dxl/pro/h54-200-s500-ra/#control-table-of-eeprom-area">H54-200-S500-R(A)</option>
+    <option value="/docs/en/dxl/pro/h54-100-s500-ra/#control-table-of-eeprom-area">H54-100-S500-R(A)</option>
+    <option value="/docs/en/dxl/pro/h42-20-s300-ra/#control-table-of-eeprom-area">H42-20-S300-R(A)</option>
+    <option value="/docs/en/dxl/pro/m54-60-s250-ra/#control-table-of-eeprom-area">M54-60-S250-R(A)</option>
+    <option value="/docs/en/dxl/pro/m54-40-s250-ra/#control-table-of-eeprom-area">M54-40-S250-R(A)</option>
+    <option value="/docs/en/dxl/pro/m42-10-s260-ra/#control-table-of-eeprom-area">M42-10-S260-R(A)</option>
     <option value="/docs/en/dxl/pro/h54-200-s500-r/#control-table-of-eeprom-area">H54-200-S500-R</option>
     <option value="/docs/en/dxl/pro/h54-100-s500-r/#control-table-of-eeprom-area">H54-100-S500-R</option>
     <option value="/docs/en/dxl/pro/h42-20-s300-r/#control-table-of-eeprom-area">H42-20-S300-R</option>
@@ -67,7 +82,26 @@ Please also checkout **[ROBOTIS Download Center]** for useful resources.
     <option value="/docs/en/dxl/pro/l42-10-s300-r/#control-table-of-eeprom-area">L42-10-S300-R</option>
 </select>
 
-- 
+-
+<select id="x_ctrl_table_select" onchange="window.location.href=this.value;">
+    <option selected disabled hidden>X Series</option>
+    <option value="http://emanual.robotis.com/docs/en/dxl/x/xl320/#control-table-of-eeprom-area">XL-320</option>
+    <option value="/docs/en/dxl/x/xl430-w250/#control-table-of-eeprom-area">XL430-W250</option>
+    <option value="/docs/en/dxl/x/xm430-w210/#control-table-of-eeprom-area">XM430-W210</option>
+    <option value="/docs/en/dxl/x/xm430-w350/#control-table-of-eeprom-area">XM430-W350</option>
+    <option value="/docs/en/dxl/x/xm540-w150/#control-table-of-eeprom-area">XM540-W150</option>
+    <option value="/docs/en/dxl/x/xm540-w270/#control-table-of-eeprom-area">XM540-W270</option>
+    <option value="/docs/en/dxl/x/xh430-w210/#control-table-of-eeprom-area">XH430-W210</option>
+    <option value="/docs/en/dxl/x/xh430-w350/#control-table-of-eeprom-area">XH430-W350</option>
+    <option value="/docs/en/dxl/x/xh430-v210/#control-table-of-eeprom-area">XH430-V210</option>
+    <option value="/docs/en/dxl/x/xh430-v350/#control-table-of-eeprom-area">XH430-V350</option>
+    <option value="/docs/en/dxl/x/xh540-w150/#control-table-of-eeprom-area">XH540-W150</option>
+    <option value="/docs/en/dxl/x/xh540-w270/#control-table-of-eeprom-area">XH540-W270</option>
+    <option value="/docs/en/dxl/x/xh540-v150/#control-table-of-eeprom-area">XH540-V150</option>
+    <option value="/docs/en/dxl/x/xh540-v270/#control-table-of-eeprom-area">XH540-V270</option>
+</select>
+
+-
 <select id="mx_ctrl_table_select" onchange="window.location.href=this.value;">
     <option selected disabled hidden>MX Series</option>
     <option value="/docs/en/dxl/mx/mx-12w/#control-table-of-eeprom-area">MX-12W</option>
@@ -79,7 +113,7 @@ Please also checkout **[ROBOTIS Download Center]** for useful resources.
     <option value="/docs/en/dxl/mx/mx-106-2/#control-table-of-eeprom-area">MX-106(2.0)</option>
 </select>
 
-- 
+-
 <select id="ax_ctrl_table_select" onchange="window.location.href=this.value;">
     <option selected disabled hidden>AX Series</option>
     <option value="/docs/en/dxl/ax/ax-12w/#control-table-of-eeprom-area">AX-12W</option>

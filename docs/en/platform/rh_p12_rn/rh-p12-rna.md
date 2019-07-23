@@ -9,6 +9,7 @@ permalink: /docs/en/platform/rh_p12_rna/
 sidebar:
   title: RH-P12-RN(A)
   nav: "rh_p12_rna"
+product_group: rh_p12_rna
 ---
 
 # [Introduction](#introduction)
@@ -30,7 +31,7 @@ sidebar:
 | Operating Mode         | Current Control Mode<br />Current based Position Control Mode                                  |
 | Weight                 | 500g                                                                                           |
 | Stroke                 | 0 ~ 109mm                                                                                      |
-| Gear Ratio             | 1295.7 : 1                                                                                     |
+| Gear Ratio             | 1181 : 1                                                                                     |
 | Maximum Gripping Force | 170N                                                                                           |
 | Recommended Payload    | 5kg                                                                                            |
 | Operating Temperature  | -5&deg;C ~ 55&deg;C                                                                            |
@@ -46,42 +47,41 @@ sidebar:
 
 {% include en/dxl/warning.md %}
 
-{% include en/dxl/pro_plus/control_table.md %}
+{% include en/dxl/control_table.md %}
 
 ## [Control Table of EEPROM Area](#control-table-of-eeprom-area)
 
-| Address | Size<br>(Byte) | Data Name                                   | Access | Initial<br />Value |               Range                |      Unit      |
-|:-------:|:--------------:|:--------------------------------------------|:------:|:------------------:|:----------------------------------:|:--------------:|
-|    0    |       2        | [Model Number](#model-number)               |   R    |       51,201       |                 -                  |       -        |
-|    2    |       4        | [Model Information](#model-information)     |   R    |         -          |                 -                  |       -        |
-|    6    |       1        | [Firmware Version](#firmware-version)       |   R    |         -          |                 -                  |       -        |
-|    7    |       1        | [ID](#id)                                   |   RW   |         1          |              0 ~ 252               |       -        |
-|    8    |       1        | [Baud Rate](#baud-rate)                     |   RW   |         1          |               0 ~ 9                |       -        |
-|    9    |       1        | [Return Delay Time](#return-delay-time)     |   RW   |        250         |              0 ~ 255               |    2 [μsec]    |
-|   10    |       1        | [Drive Mode](#drive-mode)                   |   RW   |         0          |               0 ~ 1                |       -        |
-|   11    |       1        | [Operating Mode](#operating-mode)           |   RW   |         5          |                0, 5                |       -        |
-|   12    |       1        | [Sencondary ID](#secondary-id)              |   RW   |        255         |              0 ~ 255               |       -        |
-|   20    |       4        | [Homing Offset](#homing-offset)             |   RW   |         0          | -2,147,483,648 ~<br> 2,147,483,647 |   1 [pulse]    |
-|   24    |       4        | [Moving Threshold](#moving-threshold)       |   RW   |         50         | -2,147,483,648 ~<br> 2,147,483,647 | 0.01 [rev/min] |
-|   31    |       1        | [Temperature Limit](#temperature-limit)     |   RW   |         80         |              0 ~ 100               |     1 [℃]      |
-|   32    |       2        | [Max Voltage Limit](#max-voltage-limit)     |   RW   |        350         |              0 ~ 350               |    0.1 [V]     |
-|   34    |       2        | [Min Voltage Limit](#min-voltage-limit)     |   RW   |        150         |              0 ~ 350               |    0.1 [V]     |
-|   36    |       2        | [PWM Limit](#pwm-limit)                     |   RW   |       2,009        |             0 ~ 2,009              |       -        |
-|   38    |       2        | [Current Limit](#current-limit)             |   RW   |       1,984        |             0 ~ 1,984              |     1 [mA]     |
-|   40    |       4        | [Acceleration Limit](#acceleration-limit)   |   RW   |       3,447        |           0 ~ 1,378,788            |  1 [rev/min²]  |
-|   44    |       4        | [Velocity Limit](#velocity-limit)           |   RW   |       2,970        |             0 ~ 2,970              | 0.01 [rev/min] |
-|   48    |       4        | [Max Position Limit](#max-position-limit)   |   RW   |       1,150        |           0 ~ 1,150            |   1 [pulse]    |
-|   52    |       4        | [Min Position Limit](#min-position-limit)   |   RW   |         0          |           0 ~ 1,150            |   1 [pulse]    |
-|   56    |       1        | [External Port Mode 1](#external-port-mode) |   RW   |         3          |               0 ~ 3                |       -        |
-|   57    |       1        | [External Port Mode 2](#external-port-mode) |   RW   |         3          |               0 ~ 3                |       -        |
-|   58    |       1        | [External Port Mode 3](#external-port-mode) |   RW   |         3          |               0 ~ 3                |       -        |
-|   59    |       1        | [External Port Mode 4](#external-port-mode) |   RW   |         3          |               0 ~ 3                |       -        |
-|   63    |       1        | [Shutdown](#shutdown)                       |   RW   |         52         |              0 ~ 255               |       -        |
-|   168   |       2        | [Indirect Address 1](#indirect-address)     |   RW   |        634         |            512 ~ 1,023             |       -        |
-|   170   |       2        | [Indirect Address 2](#indirect-address)     |   RW   |        635         |            512 ~ 1,023             |       -        |
-|   172   |       2        | [Indirect Address 3](#indirect-address)     |   RW   |        636         |            512 ~ 1,023             |       -        |
-|   ...   |      ...       | ...                                         |  ...   |        ...         |                ...                 |      ...       |
-|   422   |       2        | [Indirect Address 128](#indirect-address)   |   RW   |        761         |            512 ~ 1,023             |       -        |
+| Address | Size<br>(Byte) | Data Name                                   | Access | Initial<br />Value |     Range     |      Unit      |
+|:-------:|:--------------:|:--------------------------------------------|:------:|:------------------:|:-------------:|:--------------:|
+|    0    |       2        | [Model Number](#model-number)               |   R    |       35,074       |       -       |       -        |
+|    2    |       4        | [Model Information](#model-information)     |   R    |         -          |       -       |       -        |
+|    6    |       1        | [Firmware Version](#firmware-version)       |   R    |         -          |       -       |       -        |
+|    7    |       1        | [ID](#id)                                   |   RW   |         1          |    0 ~ 252    |       -        |
+|    8    |       1        | [Baud Rate](#baud-rate)                     |   RW   |         1          |     0 ~ 9     |       -        |
+|    9    |       1        | [Return Delay Time](#return-delay-time)     |   RW   |        250         |    0 ~ 255    |    2 [μsec]    |
+|   11    |       1        | [Operating Mode](#operating-mode)           |   RW   |         5          |     0, 5      |       -        |
+|   12    |       1        | [Sencondary ID](#secondary-id)              |   RW   |        255         |    0 ~ 255    |       -        |
+|   20    |       4        | [Homing Offset](#homing-offset)             |   RW   |         0          |   0 ~ 1,150   |   1 [pulse]    |
+|   24    |       4        | [Moving Threshold](#moving-threshold)       |   RW   |         80         |   0 ~ 2,970   | 0.01 [rev/min] |
+|   31    |       1        | [Temperature Limit](#temperature-limit)     |   RW   |         80         |    0 ~ 100    |     1 [&deg;C]      |
+|   32    |       2        | [Max Voltage Limit](#max-voltage-limit)     |   RW   |        350         |    0 ~ 350    |    0.1 [V]     |
+|   34    |       2        | [Min Voltage Limit](#min-voltage-limit)     |   RW   |        150         |    0 ~ 350    |    0.1 [V]     |
+|   36    |       2        | [PWM Limit](#pwm-limit)                     |   RW   |       2,009        |   0 ~ 2,009   |       -        |
+|   38    |       2        | [Current Limit](#current-limit)             |   RW   |       1,984        |   0 ~ 1,984   |     1 [mA]     |
+|   40    |       4        | [Acceleration Limit](#acceleration-limit)   |   RW   |       3,447        | 0 ~ 1,378,788 |  1 [rev/min<sup>2</sup>]  |
+|   44    |       4        | [Velocity Limit](#velocity-limit)           |   RW   |       2,970        |   0 ~ 2,970   | 0.01 [rev/min] |
+|   48    |       4        | [Max Position Limit](#max-position-limit)   |   RW   |       1,150        |   0 ~ 1,150   |   1 [pulse]    |
+|   52    |       4        | [Min Position Limit](#min-position-limit)   |   RW   |         0          |   0 ~ 1,150   |   1 [pulse]    |
+|   56    |       1        | [External Port Mode 1](#external-port-mode) |   RW   |         3          |     0 ~ 3     |       -        |
+|   57    |       1        | [External Port Mode 2](#external-port-mode) |   RW   |         3          |     0 ~ 3     |       -        |
+|   58    |       1        | [External Port Mode 3](#external-port-mode) |   RW   |         3          |     0 ~ 3     |       -        |
+|   59    |       1        | [External Port Mode 4](#external-port-mode) |   RW   |         3          |     0 ~ 3     |       -        |
+|   63    |       1        | [Shutdown](#shutdown)                       |   RW   |         52         |    0 ~ 255    |       -        |
+|   168   |       2        | [Indirect Address 1](#indirect-address)     |   RW   |        634         |  512 ~ 1,023  |       -        |
+|   170   |       2        | [Indirect Address 2](#indirect-address)     |   RW   |        635         |  512 ~ 1,023  |       -        |
+|   172   |       2        | [Indirect Address 3](#indirect-address)     |   RW   |        636         |  512 ~ 1,023  |       -        |
+|   ...   |      ...       | ...                                         |  ...   |        ...         |      ...      |      ...       |
+|   422   |       2        | [Indirect Address 128](#indirect-address)   |   RW   |        761         |  512 ~ 1,023  |       -        |
 
 ## [Control Table of RAM Area](#control-table-of-ram-area)
 
@@ -95,7 +95,7 @@ sidebar:
 |   517   |       1        | [Registered Instruction](#registered-instruction) |   R    |         0          |                          -                          |       -        |
 |   518   |       1        | [Hardware Error Status](#hardware-error-status)   |   R    |         0          |                          -                          |       -        |
 |   524   |       2        | [Velocity I Gain](#velocity-i-gain)               |   RW   |         -          |                     0 ~ 32,767                      |       -        |
-|   526   |       2        | [Velocity P Gain](#velocity-p-gain)               |   RW   |         -          |                     0 ~ 32,767                      |       -        |
+|   526   |       2        | [Velocity P Gain](#velocity-i-gain)               |   RW   |         -          |                     0 ~ 32,767                      |       -        |
 |   528   |       2        | [Position D Gain](#position-p-gain)               |   RW   |         -          |                     0 ~ 32,767                      |       -        |
 |   532   |       2        | [Position P Gain](#position-p-gain)               |   RW   |         -          |                     0 ~ 32,767                      |       -        |
 |   530   |       2        | [Position I Gain](#position-p-gain)               |   RW   |         -          |                     0 ~ 32,767                      |       -        |
@@ -105,7 +105,7 @@ sidebar:
 |   548   |       2        | [Goal PWM](#goal-pwm)                             |   RW   |         -          |         -PWM Limit(36) ~<br> PWM Limit(36)          |       -        |
 |   550   |       2        | [Goal Current](#goal-current)                     |   RW   |         0          |     -Current Limit(38) ~<br> Current Limit(38)      |     1 [mA]     |
 |   552   |       4        | [Goal Velocity](#goal-velocity)                   |   RW   |         0          |    -Velocity Limit(44) ~<br> Velocity Limit(44)     | 0.01 [rev/min] |
-|   556   |       4        | [Profile Acceleration](#profile-acceleration)     |   RW   |         0          |           0 ~<br> Acceleration Limit(40)            |  1 [rev/min²]  |
+|   556   |       4        | [Profile Acceleration](#profile-acceleration)     |   RW   |         0          |           0 ~<br> Acceleration Limit(40)            |  1 [rev/min<sup>2</sup>]  |
 |   560   |       4        | [Profile Velocity](#profile-velocity)             |   RW   |         0          |             0 ~<br> Velocity Limit(44)              | 0.01 [rev/min] |
 |   564   |       4        | [Goal Position](#goal-position)                   |   RW   |         -          | Min Position Limit(52) ~<br> Max Position Limit(48) |    1[pulse]    |
 |   568   |       2        | [Realtime Tick](#realtime-tick)                   |   R    |         -          |                     0 ~ 32,767                      |    1 [msec]    |
@@ -118,7 +118,7 @@ sidebar:
 |   584   |       4        | [Velocity Trajectory](#velocity-trajectory)       |   R    |         -          |                          -                          | 0.01 [rev/min] |
 |   588   |       4        | [Position Trajectory](#position-trajectory)       |   R    |         -          |                          -                          |   1 [pulse]    |
 |   592   |       2        | [Present Input Voltage](#present-input-voltage)   |   R    |         -          |                          -                          |    0.1 [V]     |
-|   594   |       1        | [Present Temperature](#present-temperature)       |   R    |         -          |                          -                          |     1 [℃]      |
+|   594   |       1        | [Present Temperature](#present-temperature)       |   R    |         -          |                          -                          |     1 [&deg;C]      |
 |   600   |       2        | [External Port Data 1](#external-port-data)       |  R/RW  |         0          |                      0 ~ 4,095                       |       -        |
 |   602   |       2        | [External Port Data 2](#external-port-data)       |  R/RW  |         0          |                      0 ~ 4,095                       |       -        |
 |   604   |       2        | [External Port Data 3](#external-port-data)       |  R/RW  |         0          |                      0 ~ 4,095                       |       -        |
@@ -157,9 +157,6 @@ This address stores model number of the device.
 ### <a name="return-delay-time"></a>**[Return Delay Time(9)](#return-delay-time9)**
 {% include en/dxl/pro_plus/control_table_9_return_delay_time.md %}
 
-### <a name="drive-mode"></a>**[Drive Mode(10)](#drive-mode10)**
-{% include en/dxl/pro_plus/control_table_10_drive_mode.md %}
-
 ### <a name="operating-mode"></a>**[Operating Mode(11)](#operating-mode11)**
 Operating mode of the device can be configured. Each control mode has different characteristics so please choose appropriate mode for the application.
 
@@ -173,10 +170,19 @@ Operating mode of the device can be configured. Each control mode has different 
 {% include en/dxl/pro_plus/control_table_12_secondary_id.md %}
 
 ### <a name="homing-offset"></a>**[Homing Offset(20)](#homing-offset20)**
-{% include en/dxl/pro_plus/control_table_20_homing_offset.md %}
+Users can adjust the Home position by setting Home Offset(20). The Homing Offset value is added to the Present Position(580).  
+Present Position(580) = Actual Position + Homing Offset(20).
+
+|   Unit    | Value Range |
+|:---------:|:-----------:|
+| 1 [pulse] |   0 ~ 1150  |
 
 ### <a name="moving-threshold"></a>**[Moving Threshold(24)](#moving-threshold24)**
 {% include en/dxl/pro_plus/control_table_24_moving_threshold.md %}
+
+|     Unit       |    Value Range    |
+| :------------: | :---------------: |
+| 0.01 [rev/min] |     0 ~ 2,970     |
 
 ### <a name="temperature-limit"></a>**[Temperature Limit(31)](#temperature-limit31)**
 {% include en/dxl/pro_plus/control_table_31_temperature_limit.md %}
@@ -201,10 +207,10 @@ Profile Acceleration(556) cannot be configured with any values exceeding Acceler
 
 |     Unit     |  Value Range  |
 |:------------:|:-------------:|
-| 1 [rev/min²] | 0 ~ 1,378,788 |
+| 1 [rev/min<sup>2</sup>] | 0 ~ 1,378,788 |
 
 ### <a name="velocity-limit"></a>**[Velocity Limit(44)](#velocity-limit44)**
-This value indicates maximum velocity of Goal Velocity(552) and Profile Velocity(562).
+This value indicates maximum velocity of Goal Velocity(552) and Profile Velocity(560).
 Goal Velocity(552) and Profile Velocity(562) cannot be configured with any values exceeding Velocity Limit(44). Attempting to write an invalid value will fail and set the Limit Error Bit in the error field of the Status Packet.
 
 |      Unit      | Value Range |
@@ -215,54 +221,12 @@ Goal Velocity(552) and Profile Velocity(562) cannot be configured with any value
 These values limit maximum and minimum positions in Current based Position Control Mode within the range of 0 ~ 1,150.  
 Therefore, Goal Position(564) should not exceed the limit range. Attempting to write an invalid value will fail and set the Limit Error Bit in the error field of the Status Packet.
 
-|   Unit    |    Value Range     |
-|:---------:|:------------------:|
-| 1 [pulse] | 0 ~ 1,150 |
+|   Unit    | Value Range |
+|:---------:|:-----------:|
+| 1 [pulse] |  0 ~ 1,150  |
 
 ### <a name="external-port-mode"></a><a name="external-port-data"></a>**[External Port Mode](#external-port-mode)**, **[External Port Data](#external-port-data)**
-External ports that can be used for various purposes are provided.  
-The property of each port is configured by the External Port Mode (56 ~ 59) and data of external port is controlled by the External Port Data(600 ~ 607).  
-The signal of External Port can be controlled or checked via External Port Data.  
-The External Port is not electrically insulated, therefore, abide by the electrical specifications.  
-Shielded cable or twisted paired cable reduces signal noise and error.  
-Shorter cable increases accuracy of the measurement.
-
-| Item  | Description                               |
-| :---: | :--------------------------------: |
-| Voltage  | 0 ~ 3.3 [V]<br />VESD(HBM) : 2[kV] |
-| Current  | 0 ~ 5 [mA]                         |
-
-※ VESD(HBM) : ESD(Electrostatic Discharge) Voltage(human body model)
-
-| Function                     | External Port Mode      | External Port Data                                                                      | Access  | Details                                                                                                            |
-| :----------------------  | :---------------------: | :-------------------------------------------------------------------------------------  | :----: | :-------------------------------------------------------------------------------------------------------------: |
-| Analogue Input           | 0                       | Converts External Port signal to digital value<br />External Data = signal x (4,095 / 3.3) | R      | Resolution : 12[bit] (0 ~ 4,095)                                                                                |
-| Digital Output Push-Pull | 1                       | 0 : Set External Port output to 0[V]<br />1 : Set External Port output to 3.3[V]    | W      | Output High level(VOH) : 2.4 [V] (min)<br />Output Low level(VOL) : 0.5 [V] (max)                               |
-| Digital Input Pull-Up    | 2                       | 0 : External Port input is 0[V]<br />1 : External Port input is 3.3[V] or Open        | R      | Input High level(VIH) : 2.3 [V] (min)<br />Input Low level(VIL) : 1.0 [V] (max)<br />Pull-Up : 40 [k&Omega;] (typ)   |
-| Digital Input Pull-Down  | 3 (초기값)              | 0 : External Port input is 0[V] or Open <br />1 : External Port input is 3.3[V]       | R      | Input High level(VIH) : 2.3 [V] (min)<br />Input Low level(VIL) : 1.0 [V] (max)<br />Pull-Down : 40 [k&Omega;] (typ) |
-
-{% capture control_table_externalportdata_warning %}
-**WARNING** : The External Port is not electrically insulated, therefore, abide by the electrical specifications.  
-If the electrical specification is exceeded or there is a problem with the signal connection, special caution is required because DYNAMIXEL can be damaged.  
-- Be careful not to cause electric shock by static electricity (ESD), short circuit, open circuit.
-- Be careful not to let water or dust get into the External Port connector.
-- If you are not using the External Port, remove the cable.
-- To connect or disconnect the External Port, proceed with power off.
-- Do not connect the GNDext pin of External Port directly to the GND pin of DYNAMIXEL connector. Noise from power may affect on the External Port.
-{% endcapture %}
-
-<div class="notice--warning">{{ control_table_externalportdata_warning | markdownify }}</div>
-
-#### External expansion port location and pin function
-Remove bolts and cover plate to reveal External Port connector.
-
-![](/assets/images/platform/rh_p12_rn/rh_p12_rn_external_port.png)
-
-![](/assets/images/platform/rh_p12_rn/rh_p12_rn_external_port_pinout.png)
-
-| Pin 1 | Pin 2 | Pin 3 | Pin 4 | Pin 5 | Pin 6 |
-|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-|  GND  | 3.3V  | PORT1 | PORT2 | PORT3 | PORT4 |
+{% include en/dxl/pro_plus/control_table_56_external_port.md %}
 
 ### <a name="shutdown"></a>**[Shutdown(63)](#shutdown63)**
 {% include en/dxl/pro_plus/control_table_63_shutdown.md %}
@@ -271,7 +235,7 @@ Remove bolts and cover plate to reveal External Port connector.
 {% include en/dxl/pro_plus/control_table_168_indirect.md %}
 
 ### <a name="torque-enable"></a>**[Torque Enable(512)](#torque-enable512)**
-{% include en/dxl/pro_plus/control_table_512_torque_enable.md %}
+{% include en/dxl/control_table_torque_enable.md %}
 
 ### <a name="led"></a>**[RGB LED](#rgb-led)**
 {% include en/dxl/pro_plus/control_table_513_led.md %}
@@ -320,7 +284,8 @@ Below figure is a block diagram describing the position controller in Current-ba
 {% include en/dxl/pro_plus/control_table_548_goal_pwm.md %}
 
 ### <a name="goal-current"></a>**[Goal Current(550)](#goal-current550)**
-{% include en/dxl/pro_plus/control_table_550_goal_current.md %}
+In Current Control Mode, Goal Current(550) can be used to set the desired current. This value sets a current limit of the current controller in Current-based Position Control Mode.
+This value cannot exceed Current Limit(38).
 
 ### <a name="goal-velocity"></a>**[Goal Velocity(552)](#goal-velocity552)**
 Goal Velocity(552) value is used as an input limiter of velocity controller.  
@@ -342,7 +307,7 @@ In case of Velocity Control Mode, Profile Acceleration(556) is applied, but Prof
 
 |      Unit      |      Value Range       |             Description              |
 |:--------------:|:----------------------:|:------------------------------------:|
-| 0.01 [rev/min] | 0 ~ Velocity Limit(44) | '0' stands for the infinite velocity |
+| 0.01 [rev/min] | 0 ~ Velocity Limit(44) | ‘0’ stands for the infinite velocity |
 
 The Profile is an acceleration/deceleration control technique to reduce vibration, noise and load on the motor by controlling dramatically changing velocity and acceleration.  
 It is also called Velocity Profile as it controls acceleration and deceleration based on velocity.  
@@ -387,11 +352,11 @@ Acceleration time(t<sub>1</sub>) can be calculated as below equation.
 
 ### <a name="goal-position"></a>**[Goal Position(564)](#goal-position564)**
 Desired position can be set with Goal Position(564).  
-This value must be inbetween Min Position Limit(52) and Max Position Limit(48).
+This value must be in between Min Position Limit(52) and Max Position Limit(48).
 
-|Model Name|Goal Position = 0|Goal Position = 740|
-| :-------: | :--------: | :--------: |
-|RH-P12-RN|![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_open.png)|![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_close.png)|
+| Model Name | Goal Position = 0 | Goal Position = 740 |
+| :--------: | :---------------: | :-----------------: |
+| RH-P12-RN  | ![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_open.png) | ![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_close.png) |
 
 ### <a name="realtime-tick"></a>**[Realtime Tick(568)](#realtime-tick568)**
 {% include en/dxl/pro_plus/control_table_568_realtime_tick.md %}
@@ -425,9 +390,9 @@ This value provides additional information about the movement. In-Position Bit(0
 ### <a name="present-position"></a>**[Present Position(580)](#present-position580)**
 This value represents present position of the device.
 
-|Model Name|Goal Position = 0|Goal Position = 740|
-| :-------: | :--------: | :--------: |
-|RH-P12-RN|![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_open.png)|![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_close.png)|
+| Model Name | Goal Position = 0 | Goal Position = 740 |
+| :--------: | :---------------: | :-----------------: |
+| RH-P12-RN  |![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_open.png)|![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_close.png)|
 
 ### <a name="velocity-trajectory"></a>**[Velocity Trajectory(584)](#velocity-trajectory584)**
 This is a desired velocity trajectory created by Profile. For more details, please refer to the [Profile Velocity(560)].
@@ -463,12 +428,12 @@ This is a desired position trajectory created by Profile. This value is only use
 |    Diagram     |       ![](/assets/images/dxl/jst_b4beha_diagram.png)       |             ![](/assets/images/dxl/molex_5304706_diagram.png)              |
 |    Housing     |                        [JST EHR-04]                        |    ![](/assets/images/dxl/molex_510210600.png)<br />[MOLEX 51021-0600]     |
 |   PCB Header   | ![](/assets/images/dxl/jst_b4beha.png)<br />[JST B4B-EH-A] |    ![](/assets/images/dxl/molex_530470610.png)<br />[MOLEX 53047-0610]     |
-| Crimp Terminal |                    [JST SHE-001T-P0.6]                     |                             [MOLEX 50079-8100]                             |
+| Crimp Terminal |                    [JST SEH-001T-P0.6]                     |                             [MOLEX 50079-8100]                             |
 |   Wire Gauge   |                           21 AWG                           |                                   21 AWG                                   |
 
 [JST EHR-04]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
 [JST B4B-EH-A]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
-[JST SHE-001T-P0.6]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
+[JST SEH-001T-P0.6]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
 [MOLEX 51021-0600]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0510210600_CRIMP_HOUSINGS.xml
 [MOLEX 53047-0610]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0530470610_PCB_HEADERS.xml
 [MOLEX 50079-8100]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0500798100_CRIMP_TERMINALS.xml
@@ -477,6 +442,10 @@ This is a desired position trajectory created by Profile. This value is only use
 `Download` [RH-P12-RN(PDF).zip](http://www.robotis.com/service/download.php?no=740)  
 `Download` [RH-P12-RN(STP).zip](http://www.robotis.com/service/download.php?no=741)
 
+## [Certifications](#certifications)
+Please inquire us for information regarding unlisted certifications.
 
-[PDF]: http://support.robotis.com/en/baggage_files/dynamixel/rh-p12-rn.pdf
-[Torque Enable(562)]: #torque-enable562
+### [FCC](#fcc)
+{% include en/dxl/fcc_class_b.md %}
+
+{% include en/dxl/common_link.md %}

@@ -21,6 +21,8 @@ This motor is used in ROBOTIS DREAM LEVEL 1
 
 `Compatibility Guide` [Controller Compatibility]
 
+**CAUTION** : Low Speed Geared Motor is **DISCONTINUED**.
+{: .notice--warning}
 # [Specifications](#specifications)
 
 - Weight : 15g
@@ -48,5 +50,5 @@ This motor is used in ROBOTIS DREAM LEVEL 1
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-qRy_NDd5eU" frameborder="0" allowfullscreen></iframe>
 
-[Controller Compatibility]: /docs/en/parts/controller/controller_compatibility/
+[Controller Compatibility]: /docs/en/parts/controller/controller_compatibility/#parts
 [Geared Motor]: /docs/en/software/rplus1/task/programming_02/#reduction-motor

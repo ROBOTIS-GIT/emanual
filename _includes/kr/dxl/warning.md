@@ -10,11 +10,28 @@
 {% endcapture %}
 <div class="notice--danger">{{ dxl_danger | markdownify }}</div>
 
+{% if page.product_group=='dxl_ax' or page.product_group=='dxl_dx' or page.product_group=='dxl_ex' or page.product_group=='dxl_rx' %}
+  {% assign target_file = 'dxl_info' %}
+{% elsif page.product_group=='dxl_mx' %}
+  {% assign target_file = 'dxl_mx_info' %}
+{% elsif page.product_group=='dxl_pro_plus' %}
+  {% assign target_file = 'dxl_pro_plus_info' %}
+{% elsif page.product_group=='dxl_pro_a' %}
+  {% assign target_file = 'dxl_proa_info' %}
+{% elsif page.product_group=='dxl_pro' %}
+  {% assign target_file = 'dxl_pro_info' %}
+{% elsif page.product_group=='dxl_x430' or page.product_group=='dxl_xl430' or page.product_group=='dxl_x540' or page.product_group=='dxl_xl320' %}
+  {% assign target_file = 'dxl_x_info' %}
+{% elsif page.product_group=='rh_p12_rn' or page.product_group=='rh_p12_rna' %}
+  {% assign target_file = 'rh_p12_rn_info' %}
+{% else %}
+{% endif %}
+
 {% capture dxl_caution %}  
 ![](/assets/images/icon_warning.png)  
 **경고**  
 (상해나 제품 손상의 원인이 됩니다.)
-- 제품의 사용 환경을 준수하세요. (온도 : 5 ~ 55 [&deg;C])
+- 제품의 사용 환경을 준수하세요. (온도 : {{ site.data[target_file][page.ref].temperature }})
 - 작동 중인 제품 내부로 칼날, 압정, 불씨 등을 흡입시키지 마세요.
 {% endcapture %}
 <div class="notice--warning">{{ dxl_caution | markdownify }}</div>

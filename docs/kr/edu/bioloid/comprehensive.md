@@ -21,6 +21,9 @@ sidebar:
   - 1자유도의 간단한 차단바에서부터 18자유도의 거미로봇, 휴머노이드까지 직접 제작하고, 예제프로그램을 편집해 봄으로서 프로그래밍에 대한 이해도를 높일 수 있습니다.
   - 기본 예제 로봇 이외에 나만의 로봇을 구상하여 조립하고, 프로그램하면 세상 어디에도 없는 나만의 독창적인 로봇을 만들 수 있습니다.
 
+**주의** : 로보티즈 바이올로이드 종합은 현재 단종되어 더 이상 판매되지 않습니다.
+{: .notice--warning}
+
 # [시작하기](#시작하기)
 
 ## [부품 목록](#부품-목록)
@@ -128,7 +131,7 @@ sidebar:
 [CM-5]: /docs/kr/parts/controller/cm-5/
 [AX-12A]: /docs/kr/dxl/ax/ax-12a/
 [AX-S1]: /docs/kr/parts/sensor/ax-s1/
-[자료실]: http://www.robotis.com/service/downloadpage.php?cate=software
+[자료실]: http://www.robotis.com/service/downloadcenter.php
 [충전하기]: #충전하기cm-5
 [태스크 코드 다운로드 방법]: #태스크-코드-다운로드
 [태스크 코드 다운로드]: #태스크-코드-다운로드
@@ -138,13 +141,13 @@ sidebar:
 [RoboPlus Task]: /docs/kr/software/rplus1/task/getting_started/
 [로보플러스 태스크]: /docs/kr/software/rplus1/task/getting_started/
 [제어기 선택]: /docs/kr/software/rplus1/task/task_misc/#제어기-선택
-[BIO_CMP_AttackingDuck_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_cmp_attackingduck_kr.tsk
+[BIO_CMP_AttackingDuck_KR.tsk]: http://www.robotis.com/service/download.php?no=1181
 [RoboPlus Manager]: /docs/kr/software/rplus1/manager/
 [물체 감지 기준 값과 물체 감지 유무]: /docs/kr/software/rplus1/task/programming_02/#물체감지
-[BIO_CMP_ObstacleDetectionCarExam_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_cmp_obstacledetectioncarexam_kr.tsk
+[BIO_CMP_ObstacleDetectionCarExam_KR.tsk]: http://www.robotis.com/service/download.php?no=1214
 [로봇 연결하기 참조]: /docs/kr/software/rplus1/motion/#로봇-연결하기
-[BIO_CMP_WalkingDroidExam1_KR.mtn]: http://support.robotis.com/ko/baggage_files/bioloid/bio_cmp_walkingdroidexam1_kr.mtn
-[BIO_CMP_WalkingDroid_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_cmp_walkingdroid_kr.tsk
+[BIO_CMP_WalkingDroidExam1_KR.mtn]: http://www.robotis.com/service/download.php?no=1241
+[BIO_CMP_WalkingDroid_KR.tsk]: http://www.robotis.com/service/download.php?no=1246
 
 [화면 출력 후 줄 바꿈]: /docs/kr/software/rplus1/task/programming_02/#화면출력줄바꿈
 [태스크 코드 작성]: /docs/kr/software/rplus1/task/programming_01/#프로그래밍
@@ -161,8 +164,8 @@ sidebar:
 [RC-100]: /docs/kr/parts/communication/rc-100/
 [ZIG-100]: /docs/kr/parts/communication/zig-110/
 [보행 드로이드 제작 2 - 태스크 코드]: /docs/kr/edu/bioloid/comprehensive/#보행-드로이드-제작-2태스크-코드
-[BIO_CMP_WalkingDroidExam_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_cmp_walkingdroidexam_kr.tsk
-[BIO_CMP_WalkingDroidExam_KR.mtn]: http://support.robotis.com/ko/baggage_files/bioloid/bio_cmp_walkingdroidexam_kr.mtn
+[BIO_CMP_WalkingDroidExam_KR.tsk]: http://www.robotis.com/service/download.php?no=1243
+[BIO_CMP_WalkingDroidExam_KR.mtn]: http://www.robotis.com/service/download.php?no=1242
 [프로그램 시작의 자세한 사용법은 여기를 참고하세요.]: /docs/kr/software/rplus1/task/programming_01/#프로그램-시작
 [프로그램 강제 종료의 자세한 사용법은 여기를 참고하세요.]: /docs/kr/software/rplus1/task/programming_01/#프로그램-강제종료
 [구간 시작/끝의 자세한 사용법은 여기를 참고하세요.]: /docs/kr/software/rplus1/task/programming_01/#구간-시작끝

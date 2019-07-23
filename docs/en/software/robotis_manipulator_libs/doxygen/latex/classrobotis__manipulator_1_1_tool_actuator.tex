@@ -1,0 +1,293 @@
+\hypertarget{classrobotis__manipulator_1_1_tool_actuator}{}\section{robotis\+\_\+manipulator\+:\+:Tool\+Actuator Class Reference}
+\label{classrobotis__manipulator_1_1_tool_actuator}\index{robotis\+\_\+manipulator\+::\+Tool\+Actuator@{robotis\+\_\+manipulator\+::\+Tool\+Actuator}}
+
+
+The \hyperlink{classrobotis__manipulator_1_1_tool_actuator}{Tool\+Actuator} class.  
+
+
+
+
+{\ttfamily \#include $<$robotis\+\_\+manipulator\+\_\+manager.\+h$>$}
+
+
+
+Collaboration diagram for robotis\+\_\+manipulator\+:\+:Tool\+Actuator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{classrobotis__manipulator_1_1_tool_actuator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrobotis__manipulator_1_1_tool_actuator_a393a1f2eb9247c20b56f679da40cc390}{Tool\+Actuator} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classrobotis__manipulator_1_1_tool_actuator}{Tool\+Actuator}. \end{DoxyCompactList}\item 
+virtual \hyperlink{classrobotis__manipulator_1_1_tool_actuator_a0c1149bde6ce9ff31b7291a8d97c46cd}{$\sim$\+Tool\+Actuator} ()
+\begin{DoxyCompactList}\small\item\em $\sim$\+Tool\+Actuator \end{DoxyCompactList}\item 
+virtual void \hyperlink{classrobotis__manipulator_1_1_tool_actuator_a81d51f1ce5e2c7afc3244ce106d2acd9}{init} (uint8\+\_\+t actuator\+\_\+id, const void $\ast$arg)=0
+\begin{DoxyCompactList}\small\item\em init \end{DoxyCompactList}\item 
+virtual void \hyperlink{classrobotis__manipulator_1_1_tool_actuator_a03b26fd9cfc195aaca7bc2e506847e5e}{set\+Mode} (const void $\ast$arg)=0
+\begin{DoxyCompactList}\small\item\em set\+Mode \end{DoxyCompactList}\item 
+virtual uint8\+\_\+t \hyperlink{classrobotis__manipulator_1_1_tool_actuator_afd249246d350782587c2e115b0a46e6f}{get\+Id} ()=0
+\begin{DoxyCompactList}\small\item\em get\+Id \end{DoxyCompactList}\item 
+virtual void \hyperlink{classrobotis__manipulator_1_1_tool_actuator_a8515f35a6b77350af9476e6d0a7c41f3}{enable} ()=0
+\begin{DoxyCompactList}\small\item\em enable \end{DoxyCompactList}\item 
+virtual void \hyperlink{classrobotis__manipulator_1_1_tool_actuator_afa622c462cd4221645f7004b486359db}{disable} ()=0
+\begin{DoxyCompactList}\small\item\em disable \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classrobotis__manipulator_1_1_tool_actuator_a5fdb394c44142a588cfefcbf22de11ec}{send\+Tool\+Actuator\+Value} (\hyperlink{namespacerobotis__manipulator_a26f478d98222f9ce1bf66c7df248037b}{Actuator\+Value} value)=0
+\begin{DoxyCompactList}\small\item\em send\+Tool\+Actuator\+Value \end{DoxyCompactList}\item 
+virtual \hyperlink{namespacerobotis__manipulator_a26f478d98222f9ce1bf66c7df248037b}{Actuator\+Value} \hyperlink{classrobotis__manipulator_1_1_tool_actuator_a5b3d663619610cf739b16efb1b3a580f}{receive\+Tool\+Actuator\+Value} ()=0
+\begin{DoxyCompactList}\small\item\em receive\+Tool\+Actuator\+Value \end{DoxyCompactList}\item 
+bool \hyperlink{classrobotis__manipulator_1_1_tool_actuator_a6b64dd76b7d473f3a634762422e5951f}{find\+Id} (uint8\+\_\+t actuator\+\_\+id)
+\begin{DoxyCompactList}\small\item\em find\+Id \end{DoxyCompactList}\item 
+bool \hyperlink{classrobotis__manipulator_1_1_tool_actuator_a2a8dc83e93e4c0b965423a2058c9c590}{get\+Enabled\+State} ()
+\begin{DoxyCompactList}\small\item\em get\+Enabled\+State \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classrobotis__manipulator_1_1_tool_actuator_ae9bdfbba232f772298d8c3342c125b4a}{enabled\+\_\+state\+\_\+}
+\begin{DoxyCompactList}\small\item\em enabled\+\_\+state\+\_\+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classrobotis__manipulator_1_1_tool_actuator}{Tool\+Actuator} class. 
+
+Definition at line 143 of file robotis\+\_\+manipulator\+\_\+manager.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{robotis\+\_\+manipulator\+::\+Tool\+Actuator@{robotis\+\_\+manipulator\+::\+Tool\+Actuator}!Tool\+Actuator@{Tool\+Actuator}}
+\index{Tool\+Actuator@{Tool\+Actuator}!robotis\+\_\+manipulator\+::\+Tool\+Actuator@{robotis\+\_\+manipulator\+::\+Tool\+Actuator}}
+\subsubsection[{\texorpdfstring{Tool\+Actuator()}{ToolActuator()}}]{\setlength{\rightskip}{0pt plus 5cm}robotis\+\_\+manipulator\+::\+Tool\+Actuator\+::\+Tool\+Actuator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrobotis__manipulator_1_1_tool_actuator_a393a1f2eb9247c20b56f679da40cc390}{}\label{classrobotis__manipulator_1_1_tool_actuator_a393a1f2eb9247c20b56f679da40cc390}
+
+
+\hyperlink{classrobotis__manipulator_1_1_tool_actuator}{Tool\+Actuator}. 
+
+
+
+Definition at line 154 of file robotis\+\_\+manipulator\+\_\+manager.\+h.
+
+
+\begin{DoxyCode}
+154 :\hyperlink{classrobotis__manipulator_1_1_tool_actuator_ae9bdfbba232f772298d8c3342c125b4a}{enabled\_state\_}(\textcolor{keyword}{false})\{\}
+\end{DoxyCode}
+\index{robotis\+\_\+manipulator\+::\+Tool\+Actuator@{robotis\+\_\+manipulator\+::\+Tool\+Actuator}!````~Tool\+Actuator@{$\sim$\+Tool\+Actuator}}
+\index{````~Tool\+Actuator@{$\sim$\+Tool\+Actuator}!robotis\+\_\+manipulator\+::\+Tool\+Actuator@{robotis\+\_\+manipulator\+::\+Tool\+Actuator}}
+\subsubsection[{\texorpdfstring{$\sim$\+Tool\+Actuator()}{~ToolActuator()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual robotis\+\_\+manipulator\+::\+Tool\+Actuator\+::$\sim$\+Tool\+Actuator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classrobotis__manipulator_1_1_tool_actuator_a0c1149bde6ce9ff31b7291a8d97c46cd}{}\label{classrobotis__manipulator_1_1_tool_actuator_a0c1149bde6ce9ff31b7291a8d97c46cd}
+
+
+$\sim$\+Tool\+Actuator 
+
+
+
+Definition at line 158 of file robotis\+\_\+manipulator\+\_\+manager.\+h.
+
+
+\begin{DoxyCode}
+158 \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{robotis\+\_\+manipulator\+::\+Tool\+Actuator@{robotis\+\_\+manipulator\+::\+Tool\+Actuator}!disable@{disable}}
+\index{disable@{disable}!robotis\+\_\+manipulator\+::\+Tool\+Actuator@{robotis\+\_\+manipulator\+::\+Tool\+Actuator}}
+\subsubsection[{\texorpdfstring{disable()=0}{disable()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void robotis\+\_\+manipulator\+::\+Tool\+Actuator\+::disable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classrobotis__manipulator_1_1_tool_actuator_afa622c462cd4221645f7004b486359db}{}\label{classrobotis__manipulator_1_1_tool_actuator_afa622c462cd4221645f7004b486359db}
+
+
+disable 
+
+\index{robotis\+\_\+manipulator\+::\+Tool\+Actuator@{robotis\+\_\+manipulator\+::\+Tool\+Actuator}!enable@{enable}}
+\index{enable@{enable}!robotis\+\_\+manipulator\+::\+Tool\+Actuator@{robotis\+\_\+manipulator\+::\+Tool\+Actuator}}
+\subsubsection[{\texorpdfstring{enable()=0}{enable()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void robotis\+\_\+manipulator\+::\+Tool\+Actuator\+::enable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classrobotis__manipulator_1_1_tool_actuator_a8515f35a6b77350af9476e6d0a7c41f3}{}\label{classrobotis__manipulator_1_1_tool_actuator_a8515f35a6b77350af9476e6d0a7c41f3}
+
+
+enable 
+
+\index{robotis\+\_\+manipulator\+::\+Tool\+Actuator@{robotis\+\_\+manipulator\+::\+Tool\+Actuator}!find\+Id@{find\+Id}}
+\index{find\+Id@{find\+Id}!robotis\+\_\+manipulator\+::\+Tool\+Actuator@{robotis\+\_\+manipulator\+::\+Tool\+Actuator}}
+\subsubsection[{\texorpdfstring{find\+Id(uint8\+\_\+t actuator\+\_\+id)}{findId(uint8_t actuator_id)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Tool\+Actuator\+::find\+Id (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{actuator\+\_\+id}
+\end{DoxyParamCaption}
+)}\hypertarget{classrobotis__manipulator_1_1_tool_actuator_a6b64dd76b7d473f3a634762422e5951f}{}\label{classrobotis__manipulator_1_1_tool_actuator_a6b64dd76b7d473f3a634762422e5951f}
+
+
+find\+Id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em actuator\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 46 of file robotis\+\_\+manipulator\+\_\+manager.\+cpp.
+
+
+\begin{DoxyCode}
+47 \{
+48   \textcolor{keywordflow}{if}(\hyperlink{classrobotis__manipulator_1_1_tool_actuator_afd249246d350782587c2e115b0a46e6f}{getId}() == actuator\_id)
+49   \{
+50     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+51   \}
+52   \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+53 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{classrobotis__manipulator_1_1_tool_actuator_a6b64dd76b7d473f3a634762422e5951f_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{robotis\+\_\+manipulator\+::\+Tool\+Actuator@{robotis\+\_\+manipulator\+::\+Tool\+Actuator}!get\+Enabled\+State@{get\+Enabled\+State}}
+\index{get\+Enabled\+State@{get\+Enabled\+State}!robotis\+\_\+manipulator\+::\+Tool\+Actuator@{robotis\+\_\+manipulator\+::\+Tool\+Actuator}}
+\subsubsection[{\texorpdfstring{get\+Enabled\+State()}{getEnabledState()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Tool\+Actuator\+::get\+Enabled\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrobotis__manipulator_1_1_tool_actuator_a2a8dc83e93e4c0b965423a2058c9c590}{}\label{classrobotis__manipulator_1_1_tool_actuator_a2a8dc83e93e4c0b965423a2058c9c590}
+
+
+get\+Enabled\+State 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 55 of file robotis\+\_\+manipulator\+\_\+manager.\+cpp.
+
+
+\begin{DoxyCode}
+56 \{
+57   \textcolor{keywordflow}{return} \hyperlink{classrobotis__manipulator_1_1_tool_actuator_ae9bdfbba232f772298d8c3342c125b4a}{enabled\_state\_};
+58 \}
+\end{DoxyCode}
+\index{robotis\+\_\+manipulator\+::\+Tool\+Actuator@{robotis\+\_\+manipulator\+::\+Tool\+Actuator}!get\+Id@{get\+Id}}
+\index{get\+Id@{get\+Id}!robotis\+\_\+manipulator\+::\+Tool\+Actuator@{robotis\+\_\+manipulator\+::\+Tool\+Actuator}}
+\subsubsection[{\texorpdfstring{get\+Id()=0}{getId()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual uint8\+\_\+t robotis\+\_\+manipulator\+::\+Tool\+Actuator\+::get\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classrobotis__manipulator_1_1_tool_actuator_afd249246d350782587c2e115b0a46e6f}{}\label{classrobotis__manipulator_1_1_tool_actuator_afd249246d350782587c2e115b0a46e6f}
+
+
+get\+Id 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{robotis\+\_\+manipulator\+::\+Tool\+Actuator@{robotis\+\_\+manipulator\+::\+Tool\+Actuator}!init@{init}}
+\index{init@{init}!robotis\+\_\+manipulator\+::\+Tool\+Actuator@{robotis\+\_\+manipulator\+::\+Tool\+Actuator}}
+\subsubsection[{\texorpdfstring{init(uint8\+\_\+t actuator\+\_\+id, const void $\ast$arg)=0}{init(uint8_t actuator_id, const void *arg)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void robotis\+\_\+manipulator\+::\+Tool\+Actuator\+::init (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{actuator\+\_\+id, }
+\item[{const void $\ast$}]{arg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classrobotis__manipulator_1_1_tool_actuator_a81d51f1ce5e2c7afc3244ce106d2acd9}{}\label{classrobotis__manipulator_1_1_tool_actuator_a81d51f1ce5e2c7afc3244ce106d2acd9}
+
+
+init 
+
+
+\begin{DoxyParams}{Parameters}
+{\em actuator\+\_\+id} & \\
+\hline
+{\em arg} & \\
+\hline
+\end{DoxyParams}
+\index{robotis\+\_\+manipulator\+::\+Tool\+Actuator@{robotis\+\_\+manipulator\+::\+Tool\+Actuator}!receive\+Tool\+Actuator\+Value@{receive\+Tool\+Actuator\+Value}}
+\index{receive\+Tool\+Actuator\+Value@{receive\+Tool\+Actuator\+Value}!robotis\+\_\+manipulator\+::\+Tool\+Actuator@{robotis\+\_\+manipulator\+::\+Tool\+Actuator}}
+\subsubsection[{\texorpdfstring{receive\+Tool\+Actuator\+Value()=0}{receiveToolActuatorValue()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Actuator\+Value} robotis\+\_\+manipulator\+::\+Tool\+Actuator\+::receive\+Tool\+Actuator\+Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classrobotis__manipulator_1_1_tool_actuator_a5b3d663619610cf739b16efb1b3a580f}{}\label{classrobotis__manipulator_1_1_tool_actuator_a5b3d663619610cf739b16efb1b3a580f}
+
+
+receive\+Tool\+Actuator\+Value 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{robotis\+\_\+manipulator\+::\+Tool\+Actuator@{robotis\+\_\+manipulator\+::\+Tool\+Actuator}!send\+Tool\+Actuator\+Value@{send\+Tool\+Actuator\+Value}}
+\index{send\+Tool\+Actuator\+Value@{send\+Tool\+Actuator\+Value}!robotis\+\_\+manipulator\+::\+Tool\+Actuator@{robotis\+\_\+manipulator\+::\+Tool\+Actuator}}
+\subsubsection[{\texorpdfstring{send\+Tool\+Actuator\+Value(\+Actuator\+Value value)=0}{sendToolActuatorValue(ActuatorValue value)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool robotis\+\_\+manipulator\+::\+Tool\+Actuator\+::send\+Tool\+Actuator\+Value (
+\begin{DoxyParamCaption}
+\item[{{\bf Actuator\+Value}}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classrobotis__manipulator_1_1_tool_actuator_a5fdb394c44142a588cfefcbf22de11ec}{}\label{classrobotis__manipulator_1_1_tool_actuator_a5fdb394c44142a588cfefcbf22de11ec}
+
+
+send\+Tool\+Actuator\+Value 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{robotis\+\_\+manipulator\+::\+Tool\+Actuator@{robotis\+\_\+manipulator\+::\+Tool\+Actuator}!set\+Mode@{set\+Mode}}
+\index{set\+Mode@{set\+Mode}!robotis\+\_\+manipulator\+::\+Tool\+Actuator@{robotis\+\_\+manipulator\+::\+Tool\+Actuator}}
+\subsubsection[{\texorpdfstring{set\+Mode(const void $\ast$arg)=0}{setMode(const void *arg)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void robotis\+\_\+manipulator\+::\+Tool\+Actuator\+::set\+Mode (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{arg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classrobotis__manipulator_1_1_tool_actuator_a03b26fd9cfc195aaca7bc2e506847e5e}{}\label{classrobotis__manipulator_1_1_tool_actuator_a03b26fd9cfc195aaca7bc2e506847e5e}
+
+
+set\+Mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arg} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{robotis\+\_\+manipulator\+::\+Tool\+Actuator@{robotis\+\_\+manipulator\+::\+Tool\+Actuator}!enabled\+\_\+state\+\_\+@{enabled\+\_\+state\+\_\+}}
+\index{enabled\+\_\+state\+\_\+@{enabled\+\_\+state\+\_\+}!robotis\+\_\+manipulator\+::\+Tool\+Actuator@{robotis\+\_\+manipulator\+::\+Tool\+Actuator}}
+\subsubsection[{\texorpdfstring{enabled\+\_\+state\+\_\+}{enabled_state_}}]{\setlength{\rightskip}{0pt plus 5cm}bool robotis\+\_\+manipulator\+::\+Tool\+Actuator\+::enabled\+\_\+state\+\_\+}\hypertarget{classrobotis__manipulator_1_1_tool_actuator_ae9bdfbba232f772298d8c3342c125b4a}{}\label{classrobotis__manipulator_1_1_tool_actuator_ae9bdfbba232f772298d8c3342c125b4a}
+
+
+enabled\+\_\+state\+\_\+ 
+
+
+
+Definition at line 149 of file robotis\+\_\+manipulator\+\_\+manager.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/robotis\+\_\+manipulator/\hyperlink{robotis__manipulator__manager_8h}{robotis\+\_\+manipulator\+\_\+manager.\+h}\item 
+src/robotis\+\_\+manipulator/\hyperlink{robotis__manipulator__manager_8cpp}{robotis\+\_\+manipulator\+\_\+manager.\+cpp}\end{DoxyCompactItemize}

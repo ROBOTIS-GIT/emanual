@@ -74,7 +74,7 @@ sidebar:
   - 태스크 코드 파일을 더블클릭하여 열 수 있습니다.
   - R+Task의 파일열기 기능으로 열 수 있습니다.
 
-3. 제어기([CM-150])를 충전배터리(LBS-041)와 연결한 후 제어기의 전원을 켭니다.
+3. 제어기([CM-150])를 충전배터리(LB-041)와 연결한 후 제어기의 전원을 켭니다.
 
 4. 마이크로 USB케이블 사용해 PC와 제어기([CM-150])을 연결합니다.
 
@@ -176,8 +176,8 @@ sidebar:
 [CM-530]: /docs/kr/parts/controller/cm-530/
 [룰 체크 에러 메시지]: /docs/kr/software/rplus1/task/task_misc/#룰-체크
 [제어기 정보]: /docs/kr/parts/controller/controller_compatibility/
-[R+Task 2.0 다운로드]: http://www.robotis.com/service/downloadpage.php?ca_id=10
-[Roboplus 다운로드]: http://www.robotis.com/service/downloadpage.php?ca_id=10
+[R+Task 2.0 다운로드]: http://www.robotis.com/service/downloadcenter.php
+[Roboplus 다운로드]: http://www.robotis.com/service/downloadcenter.php
 [예제 파일 다운로드]: /docs/kr/edu/bioloid/stem/#다운로드
 
 

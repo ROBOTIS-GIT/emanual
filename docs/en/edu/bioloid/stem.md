@@ -70,6 +70,10 @@ You can find task codes and motion files for other actions on the [Standard](#st
 
 # [Download](#download)
 
+中文用户 (DREAM, STEM, MINI等产品) 请参考中文手册.  
+[下载示例文件]{: .popup}  
+{: .notice--warning}
+
 ## [Standard Examples](#standard-examples)
 
 |Robot|Description|
@@ -137,67 +141,68 @@ You can find task codes and motion files for other actions on the [Standard](#st
 [adv_ex_1-1]: http://support.robotis.com/en/baggage_files/bioloid/stem/1.bio_stem_sequenceracer1_en.tsk
 [adv_ex_1-2]: http://support.robotis.com/en/baggage_files/bioloid/stem/1.bio_stem_sequenceracer2_en.tsk
 [adv_ex_1-3]: http://support.robotis.com/en/baggage_files/bioloid/stem/1.bio_stem_sequenceracer3_en.tsk
-[adv_ex_1-4]: http://www.robotis.com/video/BIO_STEM_SequenceRacer.wmv
+[adv_ex_1-4]: https://www.dropbox.com/s/oyfw0kb58iz9kri/BIO_STEM_SequenceRacer.wmv?dl=0
 [adv_ex_2-1]: http://support.robotis.com/en/baggage_files/bioloid/stem/2.bio_stem_bugfighter1_en.tsk
 [adv_ex_2-2]: http://support.robotis.com/en/baggage_files/bioloid/stem/2.bio_stem_bugfighter2_en.tsk
 [adv_ex_2-3]: http://support.robotis.com/en/baggage_files/bioloid/stem/2.bio_stem_bugfighter3_en.tsk
-[adv_ex_2-4]: http://www.robotis.com/video/BIO_STEM_BugFighter.wmv
+[adv_ex_2-4]: https://www.dropbox.com/s/yzdrrbtcc2aeh29/BIO_STEM_BugFighter.wmv?dl=0
 [adv_ex_3-1]: http://support.robotis.com/en/baggage_files/bioloid/stem/3.bio_stem_tumbler1_en.tsk
 [adv_ex_3-2]: http://support.robotis.com/en/baggage_files/bioloid/stem/3.bio_stem_tumbler2_en.tsk
 [adv_ex_3-3]: http://support.robotis.com/en/baggage_files/bioloid/stem/3.bio_stem_tumbler3_en.tsk
-[adv_ex_3-4]: http://www.robotis.com/video/BIO_STEM_Tumbler.wmv
+[adv_ex_3-4]: https://www.dropbox.com/s/5z7ksfr5q1zh6cz/BIO_STEM_Tumbler.wmv?dl=0
 [adv_ex_4-1]: http://support.robotis.com/en/baggage_files/bioloid/stem/4.bio_stem_linefollower1_en.tsk
 [adv_ex_4-2]: http://support.robotis.com/en/baggage_files/bioloid/stem/4.bio_stem_linefollower2_en.tsk
 [adv_ex_4-3]: http://support.robotis.com/en/baggage_files/bioloid/stem/4.bio_stem_linefollower3_en.tsk
-[adv_ex_4-4]: http://www.robotis.com/video/BIO_STEM_LineFollower.wmv
+[adv_ex_4-4]: https://www.dropbox.com/s/2uepyqreod2pijq/BIO_STEM_LineFollower.wmv?dl=0
 [adv_ex_5-1]: http://support.robotis.com/en/baggage_files/bioloid/stem/5.bio_stem_digitalpiano1_en.tsk
 [adv_ex_5-2]: http://support.robotis.com/en/baggage_files/bioloid/stem/5.bio_stem_digitalpiano2_en.tsk
 [adv_ex_5-3]: http://support.robotis.com/en/baggage_files/bioloid/stem/5.bio_stem_digitalpiano3_en.tsk
-[adv_ex_5-4]: http://www.robotis.com/video/BIO_STEM_DigitalPiano.wmv
+[adv_ex_5-4]: https://www.dropbox.com/s/kb5bdbo5g4d7q94/BIO_STEM_DigitalPiano.wmv?dl=0
 [adv_ex_6-1]: http://support.robotis.com/en/baggage_files/bioloid/stem/6.bio_stem_motorcycle1_en.tsk
 [adv_ex_6-2]: http://support.robotis.com/en/baggage_files/bioloid/stem/6.bio_stem_motorcycle2_en.tsk
 [adv_ex_6-3]: http://support.robotis.com/en/baggage_files/bioloid/stem/6.bio_stem_motorcycle3_en.tsk
-[adv_ex_6-4]: http://www.robotis.com/video/BIO_STEM_MotorCycle.wmv
+[adv_ex_6-4]: https://www.dropbox.com/s/82qihref1vnd1dm/BIO_STEM_MotorCycle.wmv?dl=0
 [adv_ex_7-1]: http://support.robotis.com/en/baggage_files/bioloid/stem/7.bio_stem_avoider1_en.tsk
 [adv_ex_7-2]: http://support.robotis.com/en/baggage_files/bioloid/stem/7.bio_stem_avoider2_en.tsk
 [adv_ex_7-3]: http://support.robotis.com/en/baggage_files/bioloid/stem/7.bio_stem_avoider3_en.tsk
-[adv_ex_7-4]: http://www.robotis.com/video/BIO_STEM_Avoider.wmv
+[adv_ex_7-4]: https://www.dropbox.com/s/f0lysly1n7hwwob/BIO_STEM_Avoider.wmv?dl=0
 [adv_ex_8-1]: http://support.robotis.com/en/baggage_files/bioloid/stem/8.bio_stem_scribbler1_en.tsk
 [adv_ex_8-2]: http://support.robotis.com/en/baggage_files/bioloid/stem/8.bio_stem_scribbler2_en.tsk
 [adv_ex_8-3]: http://support.robotis.com/en/baggage_files/bioloid/stem/8.bio_stem_scribbler3_en.tsk
-[adv_ex_8-4]: http://www.robotis.com/video/BIOLOID_STEM_8.Scribbler.wmv
+[adv_ex_8-4]: https://www.dropbox.com/s/5zsfnjfate8qvek/BIOLOID_STEM_8.Scribbler.wmv?dl=0
 [adv_ex_9-1]: http://support.robotis.com/en/baggage_files/bioloid/stem/9.bio_stem_transporter1_en.tsk
 [adv_ex_9-2]: http://support.robotis.com/en/baggage_files/bioloid/stem/9.bio_stem_transporter2_en.tsk
 [adv_ex_9-3]: http://support.robotis.com/en/baggage_files/bioloid/stem/9.bio_stem_transporter3_en.tsk
-[adv_ex_9-4]: http://www.robotis.com/video/BIOLOID_STEM_9.Transporter.wmv
+[adv_ex_9-4]: https://www.dropbox.com/s/mxzsnhkqcdx7y7i/BIOLOID_STEM_9.Transporter.wmv?dl=0
 [adv_ex_10-1]: http://support.robotis.com/en/baggage_files/bioloid/stem/10.bio_stem_probecar1_en.tsk
 [adv_ex_10-2]: http://support.robotis.com/en/baggage_files/bioloid/stem/10.bio_stem_probecar2_en.tsk
 [adv_ex_10-3]: http://support.robotis.com/en/baggage_files/bioloid/stem/10.bio_stem_probecar3_en.tsk
-[adv_ex_10-4]: http://www.robotis.com/video/BIOLOID_STEM_10.ProbeCar.wmv
+[adv_ex_10-4]: https://www.dropbox.com/s/8qze3dox68ps2dg/BIOLOID_STEM_10.ProbeCar.wmv?dl=0
 [adv_ex_11-1]: http://support.robotis.com/en/baggage_files/bioloid/stem/11.bio_stem_beetlegripper1_en.tsk
 [adv_ex_11-2]: http://support.robotis.com/en/baggage_files/bioloid/stem/11.bio_stem_beetlegripper2_en.tsk
 [adv_ex_11-3]: http://support.robotis.com/en/baggage_files/bioloid/stem/11.bio_stem_beetlegripper3_en.tsk
-[adv_ex_11-4]: http://www.robotis.com/video/BIOLOID_STEM_11.BeetleGripper.wmv
+[adv_ex_11-4]: https://www.dropbox.com/s/wid2tkdt66cvzhw/BIOLOID_STEM_11.BeetleGripper.wmv?dl=0
 [adv_ex_12-1]: http://support.robotis.com/en/baggage_files/bioloid/stem/12.bio_stem_robotarm1_en.tsk
 [adv_ex_12-2]: http://support.robotis.com/en/baggage_files/bioloid/stem/12.bio_stem_robotarm2_en.tsk
 [adv_ex_12-3]: http://support.robotis.com/en/baggage_files/bioloid/stem/12.bio_stem_robotarm3_en.tsk
-[adv_ex_12-4]: http://www.robotis.com/video/BIOLOID_STEM_12.RobotArm.wmv
+[adv_ex_12-4]: https://www.dropbox.com/s/51px3ueunn2qnzw/BIOLOID_STEM_12.RobotArm.wmv?dl=0
 [adv_ex_13-1]: http://support.robotis.com/en/baggage_files/bioloid/stem/13.bio_stem_walking_droid1_en.tsk
 [adv_ex_13-2]: http://support.robotis.com/en/baggage_files/bioloid/stem/13.bio_stem_walking_droid2_en.tsk
 [adv_ex_13-3]: http://support.robotis.com/en/baggage_files/bioloid/stem/13.bio_stem_walking_droid3_en.tsk
 [adv_ex_13-4]: http://support.robotis.com/en/baggage_files/bioloid/stem/13.bio_stem_walking_droid_en.mtn
-[adv_ex_13-5]: http://www.robotis.com/video/BIOLOID_STEM_13.WalkingDroid.wmv
+[adv_ex_13-5]: https://www.dropbox.com/s/eviwej7oac04zxx/BIOLOID_STEM_13.WalkingDroid.wmv?dl=0
 [adv_ex_14-1]: http://support.robotis.com/en/baggage_files/bioloid/stem/14.bio_stem_hexapod1_en.tsk
 [adv_ex_14-2]: http://support.robotis.com/en/baggage_files/bioloid/stem/14.bio_stem_hexapod2_en.tsk
 [adv_ex_14-3]: http://support.robotis.com/en/baggage_files/bioloid/stem/14.bio_stem_hexapod3_en.tsk
 [adv_ex_14-4]: http://support.robotis.com/en/baggage_files/bioloid/stem/14.bio_stem_hexapod_en.mtn
-[adv_ex_14-5]: http://www.robotis.com/video/BIOLOID_STEM_14.Hexapod.wmv
+[adv_ex_14-5]: https://www.dropbox.com/s/ijs1gdqaywmzao6/BIOLOID_STEM_14.Hexapod.wmv?dl=0
 [adv_ex_15-1]: http://support.robotis.com/en/baggage_files/bioloid/stem/15.bio_stem_greetingpenguin1_en.tsk
 [adv_ex_15-2]: http://support.robotis.com/en/baggage_files/bioloid/stem/15.bio_stem_greetingpenguin2_en.tsk
 [adv_ex_15-3]: http://support.robotis.com/en/baggage_files/bioloid/stem/15.bio_stem_greetingpenguin3_en.tsk
 [adv_ex_15-4]: http://support.robotis.com/en/baggage_files/bioloid/stem/15.bio_stem_greetingpenguin_en.mtn
-[adv_ex_15-5]: http://www.robotis.com/video/BIOLOID_STEM_15.GreetingPenguin.wmv
+[adv_ex_15-5]: https://www.dropbox.com/s/r0krjfoalzb6fi2/BIOLOID_STEM_15.GreetingPenguin.wmv?dl=0
 [adv_ex_16-1]: http://support.robotis.com/en/baggage_files/bioloid/stem/16.bio_stem_cannonshooter1_en.tsk
 [adv_ex_16-2]: http://support.robotis.com/en/baggage_files/bioloid/stem/16.bio_stem_cannonshooter2_en.tsk
 [adv_ex_16-3]: http://support.robotis.com/en/baggage_files/bioloid/stem/16.bio_stem_cannonshooter3_en.tsk
-[adv_ex_16-4]: http://www.robotis.com/video/BIOLOID_STEM_16.CannonShooter.wmv
+[adv_ex_16-4]: https://www.dropbox.com/s/ki6c9vb3acyjmni/BIOLOID_STEM_16.CannonShooter.wmv?dl=0
+[下载示例文件]: /docs/en/popup/stem_example_cn/

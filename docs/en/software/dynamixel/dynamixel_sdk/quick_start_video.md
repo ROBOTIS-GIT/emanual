@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: quick_start_video
+ref: dynamixel_sdk_quick_start_video
 read_time: true
 share: true
 author_profile: false
