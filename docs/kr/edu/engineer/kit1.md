@@ -21,7 +21,7 @@ product_group: 2xl430-w250
 - 다양한 움직임을 구현하는 관절형 구조
 - 단계별 로봇교육과정 및 표준 커리큘럼 제공
 - 3D프린팅 지원
-- 로보플러스 엔지니어, 로보플러스 태스크 3.0 등 다용도 소프트웨어 사용가능
+- 로보티즈 엔지니어, 로보플러스 태스크 3.0 등 다용도 소프트웨어 사용가능
 - Raspberry Pi 와 카메라 확장가능
 
 
@@ -223,7 +223,7 @@ product_group: 2xl430-w250
 ## [앱 설치하기](#앱-설치하기)
 
 {% capture app_install %}
-**로보플러스 엔지니어 : [안드로이드 앱 다운로드](https://play.google.com/store/apps/details?id=com.robotis.robotisEngineer)**  
+**로보티즈 엔지니어 : [안드로이드 앱 다운로드](https://play.google.com/store/apps/details?id=com.robotis.robotisEngineer)**  
 **로보플러스 태스크 3.0 : [안드로이드 앱 다운로드](https://play.google.com/store/apps/details?id=com.robotis.task3)**  
 **로보플러스 태스크 3.0 : [윈도우용 설치파일 다운로드](http://www.robotis.com/service/download.php?no=1774)**  
 
@@ -563,7 +563,7 @@ Dr.R 예제를 선택하면 스마트 기기에 왼쪽과 같은 표정 화면�
 
 {% capture info_01 %}
 - 사물학습 및 객체인식을 사용하기 위해서는, 카메라가 장착된 스마트 기기가 있어야합니다.
-- 스마트 기기에 **[로보플러스 엔지니어 앱](#소프트웨어-다운로드)** 설치가 필요합니다.
+- 스마트 기기에 **[로보티즈 엔지니어 앱](#소프트웨어-다운로드)** 설치가 필요합니다.
 {% endcapture %}
 <div class="notice--info">{{ info_01 | markdownify}}</div>
 
@@ -786,7 +786,7 @@ TensorFlow 이미지 학습을 하기 위해서 사용하는 PC에 `Anaconda3-4.
 - 모션파일로 로봇의 행동을 직접 만들어 줄 수 있습니다.
 
 {% capture app_install %}  
-**로보플러스 엔지니어 : [안드로이드 앱 다운로드](https://play.google.com/store/apps/details?id=com.robotis.robotisEngineer)**  
+**로보티즈 엔지니어 : [안드로이드 앱 다운로드](https://play.google.com/store/apps/details?id=com.robotis.robotisEngineer)**  
 **로보플러스 태스크 3.0 : [안드로이드 앱 다운로드](https://play.google.com/store/apps/details?id=com.robotis.task3)**  
 **로보플러스 태스크 3.0 : [윈도우용 설치파일 다운로드](http://www.robotis.com/service/download.php?no=1774)**  
 
