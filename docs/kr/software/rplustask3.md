@@ -1908,6 +1908,7 @@ Ctrl키를 활용하면 각 프레임 사이의 공간을 사용하여 총 시�
   모터전체의 위치를 0점으로 이동 시킵니다.  
   ![](/assets/images/sw/rplus_task3/motion_position_init.png)
 
+로보티즈 프리미엄의 휴머노이드 제품은, '0점'
 
 [제어기 호환표]: /docs/kr/parts/controller/controller_compatibility/
 [접촉 센서 부품 정보]: /docs/kr/parts/sensor/ts-10/
