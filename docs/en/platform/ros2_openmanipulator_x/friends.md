@@ -1,14 +1,14 @@
 ---
 layout: archive
 lang: en
-ref: openmanipulator_x_ros2_friends
+ref: ros2_openmanipulator_x_friends
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/openmanipulator_x_ros2/friends/
+permalink: /docs/en/platform/ros2_openmanipulator_x/friends/
 sidebar:
-  title: OpenMANIPULATOR-X ROS2
-  nav: "openmanipulator_x_ros2"
+  title: "[ROS2] OpenMANIPULATOR-X"
+  nav: "ros2_openmanipulator_x"
 ---
 
 <div style="counter-reset: h1 13"></div>
@@ -191,7 +191,7 @@ Assemble the OpenMANIPULATOR-X Link by referring to the manual uploaded on [Inst
 {: .notice--info}
 
 #### OpenCR
-First of all, set the OpenCR board referring to [[OpenCR] setup](/docs/en/platform/openmanipulator_x_ros2/opencr-setup/#opencr-setup).
+First of all, set the OpenCR board referring to [[OpenCR] setup](/docs/en/platform/ros2_openmanipulator_x/opencr-setup/#opencr-setup).
 
 Open example source code `Examples` → `OpenManipulator` → `example` → `Link` → `open_manipulator_link` on Arduino IDE for OpenCR.
 Upload the example source to OpenCR.
@@ -200,7 +200,7 @@ Upload the example source to OpenCR.
 {: .notice--success}
 
 #### Processing
-Set the Processing IDE referring to [Processing Setup](/docs/en/platform/openmanipulator_x_ros2/opencr-setup/#opencr-setup).
+Set the Processing IDE referring to [Processing Setup](/docs/en/platform/ros2_openmanipulator_x/opencr-setup/#opencr-setup).
 
 Download processing source code for OpenMANIPULATOR-X Link.
 

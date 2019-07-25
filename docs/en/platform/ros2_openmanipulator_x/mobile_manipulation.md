@@ -1,14 +1,14 @@
 ---
 layout: archive
 lang: en
-ref: openmanipulator_x_ros2_mobile_manipulation
+ref: ros2_openmanipulator_x_mobile_manipulation
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/openmanipulator_x_ros2/mobile_manipulation/
+permalink: /docs/en/platform/ros2_openmanipulator_x/mobile_manipulation/
 sidebar:
-  title: OpenMANIPULATOR-X ROS2
-  nav: "openmanipulator_x_ros2"
+  title: "[ROS2] OpenMANIPULATOR-X"
+  nav: "ros2_openmanipulator_x"
 ---
 
 <div style="counter-reset: h1 12"></div>

@@ -1,14 +1,14 @@
 ---
 layout: archive
 lang: en
-ref: openmanipulator_x_ros2_opencr_operation
+ref: ros2_openmanipulator_x_opencr_operation
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/openmanipulator_x_ros2/opencr_operation/
+permalink: /docs/en/platform/ros2_openmanipulator_x/opencr_operation/
 sidebar:
-  title: OpenMANIPULATOR-X ROS2
-  nav: "openmanipulator_x_ros2"
+  title: "[ROS2] OpenMANIPULATOR-X"
+  nav: "ros2_openmanipulator_x"
 ---
 
 <div style="counter-reset: h1 10"></div>

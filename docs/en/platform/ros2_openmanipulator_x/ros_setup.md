@@ -1,24 +1,24 @@
 ---
 layout: archive
 lang: en
-ref: openmanipulator_x_ros2_ros_setup
+ref: ros2_openmanipulator_x_ros_setup
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/openmanipulator_x_ros2/ros_setup/
+permalink: /docs/en/platform/ros2_openmanipulator_x/ros_setup/
 sidebar:
-  title: OpenMANIPULATOR-X ROS2
-  nav: "openmanipulator_x_ros2"
+  title: "[ROS2] OpenMANIPULATOR-X"
+  nav: "ros2_openmanipulator_x"
 ---
 
 <div style="counter-reset: h1 4"></div>
 
-# [[ROS] Setup](#ros-setup)
+# [[ROS2] Setup](#ros-setup)
 
 **NOTE** : The following instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 {: .notice--info}
 
-**WARNING** : If you would like to control OpenMANIPULATOR-X on OpenCR (Embedded board) instead of using ROS, please set it up as described in [OpenCR Setup](/docs/en/platform/openmanipulator_x_ros2/opencr_setup/#opencr-setup).
+**WARNING** : If you would like to control OpenMANIPULATOR-X on OpenCR (Embedded board) instead of using ROS, please set it up as described in [OpenCR Setup](/docs/en/platform/ros2_openmanipulator_x/opencr_setup/#opencr-setup).
 {: .notice--warning}
 
 
@@ -108,7 +108,7 @@ $ rosrun open_manipulator_controller create_udev_rules
 
 ### [OpenCR](#opencr)
 This section explains how to set up OpenCR as a communication board between **ROS Packages** of PC and DYNAMIXEL's of OpenMANIPULATOR-X.  
-If you want to operate OpenMANIPULATOR-X on embedded system (OpenCR) without ROS, please refer [OpenCR Setup](/docs/en/platform/openmanipulator_x_ros2/opencr-setup/#opencr-setup).
+If you want to operate OpenMANIPULATOR-X on embedded system (OpenCR) without ROS, please refer [OpenCR Setup](/docs/en/platform/ros2_openmanipulator_x/opencr-setup/#opencr-setup).
 
 #### Connection
 
@@ -123,7 +123,7 @@ Connect micro USB (connected to PC), Dynamixel's(OpenMANIPULATOR-X), and 12V Pow
 
 Please refer to the following pages to install the Arduino IDE and enable the OpenCR board in the Arduino IDE environment.
 
-- [Arduino IDE for using OpenCR](/docs/en/platform/openmanipulator_x_ros2/opencr_setup/#arduino-ide-setup)
+- [Arduino IDE for using OpenCR](/docs/en/platform/ros2_openmanipulator_x/opencr_setup/#arduino-ide-setup)
 
 After completing all the above settings, open the Arduino IDE and open `usb to dxl` example source code as shown below.
 Go to `Examples` → `OpenCR` → `10.Etc` → `usb_to_dxl` on Arduino IDE for OpenCR.

@@ -1,19 +1,19 @@
 ---
 layout: archive
 lang: en
-ref: openmanipulator_x_ros2_ros_operation
+ref: ros2_openmanipulator_x_ros_operation
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/openmanipulator_x_ros2/ros_operation/
+permalink: /docs/en/platform/ros2_openmanipulator_x/ros_operation/
 sidebar:
-  title: OpenMANIPULATOR-X ROS2
-  nav: "openmanipulator_x_ros2"
+  title: "[ROS2] OpenMANIPULATOR-X"
+  nav: "ros2_openmanipulator_x"
 ---
 
 <div style="counter-reset: h1 6"></div>
 
-# [[ROS] Operation](#ros-operation)
+# [[ROS2] Operation](#ros-operation)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dctx7Y6zNKA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -23,7 +23,7 @@ sidebar:
 **NOTE**:
 - This instructions has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - This instructions are supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
-- Make sure to run the [OpenMANIPULATOR-X controller](/docs/en/platform/openmanipulator_x_ros2/ros_controller_package/#launch-controller) instructions before running the instruction below.
+- Make sure to run the [OpenMANIPULATOR-X controller](/docs/en/platform/ros2_openmanipulator_x/ros_controller_package/#launch-controller) instructions before running the instruction below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -52,7 +52,7 @@ sidebar:
 **NOTE**:
 - This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - This instruction is supposed to be run on PC with ROS packages installed in. Please run the instruction below on your PC ROS packages installed in.
-- Make sure to run [OpenMANIPULATOR controller](/docs/en/platform/openmanipulator_x_ros2/ros_controller_package/#launch-controller) instructions before running the instructions below.
+- Make sure to run [OpenMANIPULATOR controller](/docs/en/platform/ros2_openmanipulator_x/ros_controller_package/#launch-controller) instructions before running the instructions below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -199,7 +199,7 @@ After setting all the parameters, launch the open_manipulator_pro_controller.
   $ roslaunch open_manipulator_controller open_manipulator_controller.launch use_moveit:=true
   ```
 
-**WARNING** : When launching the controller to use MoveIt!, [OpenMANIPULATOR-X launch file](/docs/en/platform/openmanipulator_x_ros2/ros_controller_package/#launch-controller) must be turned off.  
+**WARNING** : When launching the controller to use MoveIt!, [OpenMANIPULATOR-X launch file](/docs/en/platform/ros2_openmanipulator_x/ros_controller_package/#launch-controller) must be turned off.  
 {: .notice--warning}
 
 {% capture warning_01 %}

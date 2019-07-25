@@ -1,19 +1,19 @@
 ---
 layout: archive
 lang: en
-ref: openmanipulator_x_ros2_ros_simulation
+ref: ros2_openmanipulator_x_ros_simulation
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/openmanipulator_x_ros2/ros_simulation/
+permalink: /docs/en/platform/ros2_openmanipulator_x/ros_simulation/
 sidebar:
-  title: OpenMANIPULATOR-X ROS2
-  nav: "openmanipulator_x_ros2"
+  title: "[ROS2] OpenMANIPULATOR-X"
+  nav: "ros2_openmanipulator_x"
 ---
 
 <div style="counter-reset: h1 7"></div>
 
-# [[ROS] Simulation](#ros-simulation)
+# [[ROS2] Simulation](#ros-simulation)
 
 {% capture notice_01 %}
 **NOTE**:
@@ -55,7 +55,7 @@ Enter `rostopic list` to list up the activated topics.
   /rosout
   /rosout_agg
   ```
-Open an [open_manipulator_control_gui](/docs/en/platform/openmanipulator_x_ros2/ros_operation/#gui-program)
+Open an [open_manipulator_control_gui](/docs/en/platform/ros2_openmanipulator_x/ros_operation/#gui-program)
 
   ![](/assets/images/platform/openmanipulator_x/OpenManipulator_Chain_gazebo_2.png)
 

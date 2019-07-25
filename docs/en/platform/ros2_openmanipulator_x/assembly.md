@@ -1,14 +1,14 @@
 ---
 layout: archive
 lang: en
-ref: openmanipulator_x_ros2_assembly
+ref: ros2_openmanipulator_x_assembly
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/openmanipulator_x_ros2/assembly/
+permalink: /docs/en/platform/ros2_openmanipulator_x/assembly/
 sidebar:
-  title: OpenMANIPULATOR-X ROS2
-  nav: "openmanipulator_x_ros2"
+  title: "[ROS2] OpenMANIPULATOR-X"
+  nav: "ros2_openmanipulator_x"
 ---
 
 <div style="counter-reset: h1 3"></div>

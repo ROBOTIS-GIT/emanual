@@ -1,14 +1,14 @@
 ---
 layout: archive
 lang: en
-ref: openmanipulator_x_ros2_tool_modification
+ref: ros2_openmanipulator_x_tool_modification
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/openmanipulator_x_ros2/tool_modification/
+permalink: /docs/en/platform/ros2_openmanipulator_x/tool_modification/
 sidebar:
-  title: OpenMANIPULATOR-X ROS2
-  nav: "openmanipulator_x_ros2"
+  title: "[ROS2] OpenMANIPULATOR-X"
+  nav: "ros2_openmanipulator_x"
 ---
 
 <div style="counter-reset: h1 11"></div>
@@ -46,7 +46,7 @@ Set vacuum gripper system referring [Instrucables page](https://www.instructable
   | .                        | NEBV-Z4WA2L-P-E-2.5-N-LE2-S1 (Cable for Valve) | 1        | [shop Link](https://www.festo.com/cat/en-us_us/products_NEBV_V?CurrentIDCode1=NEBV-Z4WA2L-P-E-2.5-N-LE2&CurrentPartNo=8003577)                                                                                                                                               |
 
 ### Software Setup
-Please refer the detailed description of [[OpenCR] Setup](/docs/en/platform/openmanipulator_x_ros2/opencr_setup/#opencr-setup)      
+Please refer the detailed description of [[OpenCR] Setup](/docs/en/platform/ros2_openmanipulator_x/opencr_setup/#opencr-setup)      
 Download Arduino IDE and load OpenCR board on it
 
 - [Arduino IDE for using OpenCR](/docs/en/parts/controller/opencr10/#arduino-ide)
@@ -86,7 +86,7 @@ Remove normal gripper of OpenMANIPULATOR-X and install a pen holder. You can dow
   | **3D Printed Tool Part** | Pen Holder | 1        | [Download Link](https://www.thingiverse.com/thing:3069574) |
 
 ### Software Setup
-Please refer the detailed description of [[OpenCR] Setup](/docs/en/platform/openmanipulator_x_ros2/opencr_setup/#opencr-setup)    
+Please refer the detailed description of [[OpenCR] Setup](/docs/en/platform/ros2_openmanipulator_x/opencr_setup/#opencr-setup)    
 Download Arduino IDE and load OpenCR board on it
 
 - [Arduino IDE for using OpenCR](/docs/en/parts/controller/opencr10/#arduino-ide)

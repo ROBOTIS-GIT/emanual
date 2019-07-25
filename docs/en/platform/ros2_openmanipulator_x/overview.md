@@ -5,10 +5,10 @@ ref: openmanipulator_ros2_overview
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/openmanipulator_x_ros2/overview/
+permalink: /docs/en/platform/ros2_openmanipulator_x/overview/
 sidebar:
-  title: OpenMANIPULATOR-X ROS2
-  nav: "openmanipulator_x_ros2"
+  title: "[ROS2] OpenMANIPULATOR-X"
+  nav: "ros2_openmanipulator_x"
 ---
 
 <div style="counter-reset: h1 0"></div>
