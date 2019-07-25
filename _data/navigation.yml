@@ -396,6 +396,9 @@ main:
       - title: "ROBOTIS MINI"
         titlekr: "로보티즈 미니"
         url: /software/mobile_app/mini_app/
+      - title: "R+ Block"
+        titlekr: "로보플러스 블록"
+        url: /software/rplus2/rplus2_block/
     - title: "R+ 1.0"
       titlekr: "로보플러스 1.0"
       children:
@@ -430,9 +433,6 @@ main:
       - title: "R+ Scratch"
         titlekr: "로보플러스 스크래치"
         url: /software/rplus2/scratch/
-      - title: "R+ Block"
-        titlekr: "로보플러스 블록"
-        url: /software/rplus2/rplus2_block/
     - titlekr: "로보플러스 태스크 3.0"
       url: /software/rplustask3/
     - title: "R+ Mobile"
