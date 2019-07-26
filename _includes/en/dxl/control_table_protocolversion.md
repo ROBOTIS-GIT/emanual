@@ -5,7 +5,7 @@ It is recommended to use an identical protocol version for multiple Dynamixels.
 |   Value    | Protocol Version |                             Compatible Dynamixels                             |
 |:----------:|:----------------:|:-----------------------------------------------------------------------------:|
 |     1      |       1.0        | AX Series, DX Series, RX Series, EX Series, MX Series with Firmware below v39 |
-| 2(default) |       2.0        |         MX-28/64/106 with Firmware v39 or above, X Series, Pro Series         |
+| 2(default) |       2.0        |         MX-28/64/106 with Firmware v39 or above, X Series, PRO Series         |
 
 
 **WARNING** : In order to change the Protocol Type to Protocol 1.0, please use DYNAMIXEL Wizard 2.0 as R+ Manager 2.0 does not support Protocol 1.0.
