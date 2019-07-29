@@ -2,15 +2,15 @@
 layout: popup
 ---
 
-# ROBOTIS Protocol Compatibility Table
+# 로보티즈 프로토콜 호환표
 
-- [Protocol 1.0]
-- [Protocol 2.0]
+- [프로토콜 1.0]
+- [프로토콜 2.0]
 
-Compatibility Key: O= Yes ; X= No ; * = User Action Required
+**범례** O= 호환 ; X= 미호환 ; * = 호환가능
 {: .notice --info}
 
-| Product              |        [Protocol 1.0]        |        [Protocol 2.0]         |
+| 제품                  |        [프로토콜 1.0]          |        [프로토콜 2.0]           |
 |:---------------------|:----------------------------:|:-----------------------------:|
 | AX-12W               |              O               |               X               |
 | AX-12A               |              O               |               X               |
@@ -72,20 +72,17 @@ Compatibility Key: O= Yes ; X= No ; * = User Action Required
 | OpenCR1.0            |  O*<br>(Library-dependent)   |   O*<br>(Library-dependent)   |
 
 
-
-
-**NOTE** :
-- X-series can switch [protocol 2.0] into [protocol 1.0] aside from [XL320](/docs/en/dxl/x/xl320/).
-- Except MX-12W, MX-series can be upgraded to [protocol 2.0] by updating firmware to V39 or above.
+**참고** :
+- [XL-320](/docs/kr/dxl/x/xl320/)을 제외한 X 시리즈는 [프로토콜 2.0]을 기본으로 사용하지만 [프로토콜 1.0]을 별도로 설정해서 사용할 수 있습니다.
+- MX-12W를 제외한 MX 시리즈는 MX(2.0) 펌웨어 V39 이상으로 업데이트하면 [프로토콜 2.0]을 기본으로 사용하고 [프로토콜 1.0]을 별도로 설정해서 사용할 수 있습니다.
 {: .notice--info}
 
-**WARNING** : MX(2.0) Firmware is different from MX series control table and address.
-Please check the control table address before usage.
-MX(2.0) Firmware inherits Dynamixel X’s function.
-Therefore, it supports Protocol 1.0 and Protocol 2.0, and various Operating Modes, Secondary ID, Drive Mode, Bus Watchdog, etc.
-Please refer to the control table for more details.
+**경고** : MX(2.0) 펌웨어는 MX 펌웨어의 컨트롤 테이블과 다른 구조와 주소체계를 가지고 있습니다. 펌웨어를 업데이트하기 이전에 컨트롤 테이블을 확인하세요.
+MX(2.0) 펌웨어는 다이나믹셀 X 시리즈의 컨트롤 테이블을 바탕으로 제작되었습니다.  
+따라서 프로토콜 1.0과 2.0을 모두 지원하며, Secondary ID, Drive Mode, Bus Watchdog 등 다양한 기능을 지원합니다.  
+더 자세한 정보는 각 제품의 컨트롤 테이블을 참조하세요.  
 {: .notice--warning}
 
 
-[Protocol 1.0]: /docs/en/dxl/protocol1/
-[Protocol 2.0]: /docs/en/dxl/protocol2/
+[프로토콜 1.0]: /docs/kr/dxl/protocol1/
+[프로토콜 2.0]: /docs/kr/dxl/protocol2/
