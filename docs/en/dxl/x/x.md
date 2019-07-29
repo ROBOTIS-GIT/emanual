@@ -51,3 +51,8 @@ sidebar:
 ## [XL Models](#xl-models)
 - [XL320](/docs/en/dxl/x/xl320/)
 - [XL430-W250](/docs/en/dxl/x/xl430-w250/)
+- [2XL430-W250](/docs/en/dxl/x/2xl430-w250/)
+
+## [XC Models](#xc-models)
+- [XC430-W150](/docs/en/dxl/x/xc430-w150/)
+- [XC430-W240](/docs/en/dxl/x/xc430-w240/)
