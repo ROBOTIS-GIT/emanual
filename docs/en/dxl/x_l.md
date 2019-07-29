@@ -16,3 +16,7 @@ sidebar:
 # [XL430-W250](#xl430-w250)
 
 [![](/assets/images/dxl/x/xl430_product.png)](/docs/en/dxl/x/xl430-w250/)
+
+# [2XL430-W250](#2xl430-w250)
+
+[![](/assets/images/dxl/x/2xl/2xl430_product.png)](/docs/en/dxl/x/2xl430-w250/)

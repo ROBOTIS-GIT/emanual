@@ -87,6 +87,9 @@ Please also checkout **[ROBOTIS Download Center]** for useful resources.
     <option selected disabled hidden>X Series</option>
     <option value="http://emanual.robotis.com/docs/en/dxl/x/xl320/#control-table-of-eeprom-area">XL-320</option>
     <option value="/docs/en/dxl/x/xl430-w250/#control-table-of-eeprom-area">XL430-W250</option>
+    <option value="/docs/en/dxl/x/2xl430-w250/#control-table-of-eeprom-area">2XL430-W250</option>
+    <option value="/docs/en/dxl/x/xc430-w150/#control-table-of-eeprom-area">XC430-W150</option>
+    <option value="/docs/en/dxl/x/xc430-w240/#control-table-of-eeprom-area">XC430-W240</option>
     <option value="/docs/en/dxl/x/xm430-w210/#control-table-of-eeprom-area">XM430-W210</option>
     <option value="/docs/en/dxl/x/xm430-w350/#control-table-of-eeprom-area">XM430-W350</option>
     <option value="/docs/en/dxl/x/xm540-w150/#control-table-of-eeprom-area">XM540-W150</option>
@@ -198,5 +201,4 @@ Please also checkout **[ROBOTIS Download Center]** for useful resources.
 [L54-30-S400-R]: /docs/en/dxl/pro/l54-30-s400-r/#control-table-of-eeprom-area
 [L42-10-S300-R]: /docs/en/dxl/pro/l42-10-s300-r/#control-table-of-eeprom-area
 [Forum]: http://en.robotis.com/service/forum.php
-[Previous e-Manual]: http://support.robotis.com
 [ROBOTIS Download Center]: http://en.robotis.com/service/downloadcenter.php

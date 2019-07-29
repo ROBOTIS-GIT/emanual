@@ -43,3 +43,7 @@ sidebar:
 - [XL320](/docs/kr/dxl/x/xl320/)
 - [XL430-W250](/docs/kr/dxl/x/xl430-w250/)
 - [2XL430-W250](/docs/kr/dxl/x/2xl430-w250/)
+
+## [XC 모델](#xc-모델)
+- [XC430-W150](/docs/kr/dxl/x/xc430-w150/)
+- [XC430-W240](/docs/kr/dxl/x/xc430-w240/)

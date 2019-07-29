@@ -86,6 +86,12 @@ main:
       - title: "2XL430-W250"
         titlekr: "2XL430-W250"
         url: /dxl/x/2xl430-w250/
+      - title: "XC430-W150"
+        titlekr: "XC430-W150"
+        url: /dxl/x/xc430-w150/
+      - title: "XC430-W240"
+        titlekr: "XC430-W240"
+        url: /dxl/x/xc430-w240/
       - title: "XM430-W210"
         titlekr: "XM430-W210"
         url: /dxl/x/xm430-w210/

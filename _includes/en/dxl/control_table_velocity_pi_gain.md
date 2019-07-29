@@ -1,4 +1,7 @@
-These values indicate Gains of Velocity Control Mode. Gains of DYNAMIXEL’s internal controller can be calculated from Gains of the Control Table as shown below. Velocity P Gain of DYNAMIXEL’s internal controller is abbreviated to K<sub>V</sub>P and that of the Control Table is abbreviated to K<sub>V</sub>P<sub>(TBL)</sub>.
+These values indicate Gains of Velocity Control Mode.  
+Gains of DYNAMIXEL’s internal controller can be calculated from Gains of the Control Table as shown below.  
+The constant in each equations include sampling time.  
+Velocity P Gain of DYNAMIXEL’s internal controller is abbreviated to K<sub>V</sub>P and that of the Control Table is abbreviated to K<sub>V</sub>P<sub>(TBL)</sub>.
 
 |                     | Controller Gain |                   Conversion Equations                   |   Range    | Description |
 |:-------------------:|:---------------:|:--------------------------------------------------------:|:----------:|:-----------:|
