@@ -17,7 +17,7 @@ sidebar:
 
 {% capture notice_01 %}
 **NOTE**:
-- This instructions were tested on `Ubuntu 18.04` and `ROS2 Crystal Clemmys`.
+- This instructions were tested on `Ubuntu 18.04` and `ROS2 Dashing Diademata`.
 - This instructions are supposed to be running on the remote PC. Please run the instructions below on your **[Remote PC]**. However, the part marked **[TurtleBot]** is the content that runs on SBC of TurtleBot3.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
@@ -25,7 +25,7 @@ sidebar:
 **TIP**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. The shortcut key for running the terminal is `Ctrl`-`Alt`-`T`.
 {: .notice--success}
 
-This chapter shows some demos using TurtleBot3 with ROS2 and Gazebo9. In order to implement these demos, you have to install some packages.
+This chapter shows some demos using TurtleBot3 with **ROS2** and **Gazebo9**. In order to implement these demos, you have to install some packages.
 
 <!-- **NOTE**: This application must be set ROS2 firmware version `1.0.0` or higher and must be used only `ROS2` not ROS.
 {: .notice--info} -->
@@ -34,17 +34,17 @@ This chapter shows some demos using TurtleBot3 with ROS2 and Gazebo9. In order t
 
 ### [PC setup](#pc-setup)
 
-**NOTE**: All demos have been tested in `Ubuntu 18.04` and `macOS High Sierra` installed `ROS2 Crystal Clemmys`.
-If you got stuck during installation, please following [ROS Answers][ROS Answers] or [ROS2 Issue][ROS2 Issue].
+**NOTE**: All demos have been tested in `Ubuntu 18.04` installed `ROS2 Dashing Diademata`.
+If you got stuck during installation, please following [ROS Answers][ROS Answers].
 {: .notice--info}
 
-#### [Install Ubuntu on Remote PC]
+#### Install Ubuntu on Remote PC
 - [Ubuntu 18.04](http://releases.ubuntu.com/18.04/)
 
-#### [Install ROS2 on Remote PC]
-- [ROS2 Installation](https://index.ros.org/doc/ros2/Installation/)
+#### Install ROS2 on Remote PC
+- [ROS2 Installation](https://index.ros.org/doc/ros2/Installation/Dashing/)
 
-#### [Install TurtleBot3 ROS2 Packages]
+#### Install TurtleBot3 ROS2 Packages
 **[Remote PC]** Download turtlebot3 packages and install some dependencies for ROS2
 
 ```bash
@@ -62,12 +62,17 @@ $ sudo apt install -y \
     python3-sphinx
 # Install Gazebo9
 $ curl -sSL http://get.gazebosim.org | sh
+$ sudo apt install ros-dashing-gazebo-*
 # Install Navigation2 dependencies
 $ sudo apt install -y \
     libsdl-image1.2 \
     libsdl-image1.2-dev \
     libsdl1.2debian \
-    libsdl1.2-dev
+    libsdl1.2-dev \
+    ros-dashing-test-msgs \
+    ros-dashing-tf2-sensor-msgs
+# Install vcstool
+$ sudo apt install python3-vcstool
 ```
 
 ```bash
@@ -83,14 +88,14 @@ $ echo 'source ~/turtlebot3_ws/install/setup.bash' >> ~/.bashrc
 $ source ~/.bashrc
 ```
 
-{% capture notice_01 %}
+{% capture notice_02 %}
 **NOTE**: 
 If you get any build errors or warnings from dependencies, please refer to below documents.
 - [Related a document for Cartographer](https://google-cartographer.readthedocs.io/en/latest/)
 - [Related a document for Cartographer_ros](https://google-cartographer-ros.readthedocs.io/en/latest/)
 - [Related a document for Navigation2](https://github.com/ros-planning/navigation2/blob/master/README.md)
 {% endcapture %}
-<div class="notice--info">{{ notice_01 | markdownify }}</div>
+<div class="notice--info">{{ notice_02 | markdownify }}</div>
 
 ### [SBC setup](#sbc-setup)
 
@@ -98,27 +103,42 @@ If you get any build errors or warnings from dependencies, please refer to below
 
 1. Download [Raspbian Stretch with desktop and recommended software](https://www.raspberrypi.org/downloads/raspbian/)
 1. Unzip the download file and burn image to your microSD card(>8GB)
-1. Follow instruction that [How to setup for TurtleBot3 with ROS2][How to set sbc for turtlebot3 with ros2]{: .popup}
+1. The following instructions show how to set sbc directly without burning the image.
+
+```bash
+$ export ROS2_DISTRO=dashing    #distro you want
+$ cd && wget https://github.com/ROBOTIS-GIT/turtlebot3/raw/ros2/turtlebot3_sbc_settings/$ROS2_DISTRO/tb3_sbc_settings.tar.bz2
+$ tar -xjf tb3_sbc_settings.tar.bz2
+$ cd tb3_sbc_settings
+$ ./install.sh
+```
+If the installation is completed normally, the message "Complete!" Is displayed.
+
+{% capture notice_03 %}
+**NOTE**: 
+This instruction only supports a specific version of ROS2.
+You can modify the script(.sh) to suit your tastes. But we do not have a guarantee for this.
+
+Most of the errors are due to the dependency of each software.
+Therefore, if you need detailed information on interdependency, please refer to the following documents.
+- [Related a document for ROS2](https://index.ros.org/doc/ros2/Releases/#distribution-details)
+- [Related a document for FastRTPS](https://github.com/ros2/rmw_fastrtps)
+- [Related a document for Micro-XRCE-DDS](https://github.com/eProsima/Micro-XRCE-DDS)
+- [Related a document for ros2arduino](https://github.com/ROBOTIS-GIT/ros2arduino)
+- [Related a document for TurtleBot3 ros2 packages](https://github.com/ROBOTIS-GIT/turtlebot3/tree/ros2)
+{% endcapture %}
+<div class="notice--info">{{ notice_03 | markdownify }}</div>
 
 ### [OpenCR setup](#opencr-setup)
 
 **[TurtleBot]** Upload firmware for ROS2.
 
-- TurtleBot3 Burger
-
 ```bash
-$ cd ~/turtlebot3
-$ rm -rf ./opencr_update.tar.xz
-$ wget https://github.com/ROBOTIS-GIT/OpenCR-Binaries/raw/master/turtlebot3/ROS2/latest/opencr_update.tar.bz2
-$ tar -xf ./opencr_update.tar.bz2
-
-$ export OPENCR_PORT=/dev/ttyACM0
-$ export OPENCR_MODEL=burger
-$ cd ./opencr_update
-$ ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr
+$ export OPENCR_PORT=/dev/ttyACM0   #OpenCR port
+$ export OPENCR_MODEL=burger        #tb3 model you want
+$ cd ~/tb3_sbc_settings && ./opencr_fw_update.sh ${OPENCR_PORT} ${OPENCR_MODEL}
 ```
-
-If uploading the firmware succeeds, below message will be displayed in the terminal.
+If uploading the firmware succeeds, some message will be displayed in the terminal like below.
 
 ```bash
 armv7l
@@ -142,77 +162,76 @@ opencr_ld_main
 [OK] jump_to_fw 
 ```
 
-- TurtleBot3 Waffle or Waffle_Pi
+{% capture notice_04 %}
+**NOTE**: 
+This is also possible through the following instructions.
 
 ```bash
-$ cd ~/turtlebot3
-$ rm -rf ./opencr_update.tar.xz
-$ wget https://github.com/ROBOTIS-GIT/OpenCR_Binaries/raw/master/turtlebot3/ROS2/latest/opencr_update.tar.xz
-$ tar -xf ./opencr_update.tar.xz
-
-$ export OPENCR_PORT=/dev/ttyACM0
-$ export OPENCR_MODEL=waffle
-$ cd ./opencr_update
-$ ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr
+$ export ROS2_DISTRO=dashing        #distro you want
+$ rm -rf opencr_update.tar.bz2
+$ wget https://github.com/ROBOTIS-GIT/OpenCR-Binaries/raw/master/turtlebot3/ROS2/$ROS2_DISTRO/opencr_update.tar.bz2
+$ tar -xjf ./opencr_update.tar.bz2
+$ cd opencr_update
+$ export OPENCR_PORT=/dev/ttyACM0   #OpenCR port
+$ export OPENCR_MODEL=burger        #tb3 model you want
+$ ./update.sh $OPENCR_PORT $OPENCR_MODEL
 ```
+{% endcapture %}
+<div class="notice--info">{{ notice_04 | markdownify }}</div>
 
-If uploading the firmware succeeds, below message will be displayed in the terminal.
-
-```bash
-armv7l
-arm
-OpenCR Update Start..
-opencr_ld_shell ver 1.0.0
-opencr_ld_main 
-[  ] file name   	: waffle.opencr 
-[  ] file size   	: 168 KB
-[  ] fw_name     	: waffle 
-[  ] fw_ver      	: V180903R1 
-[OK] Open port   	: /dev/ttyACM0
-[  ]
-[  ] Board Name  	: OpenCR R1.0
-[  ] Board Ver   	: 0x17020800
-[  ] Board Rev   	: 0x00000000
-[OK] flash_erase 	: 0.96s
-[OK] flash_write 	: 1.92s 
-[OK] CRC Check   	: 10E28C8 10E28C8 , 0.006000 sec
-[OK] Download 
-[OK] jump_to_fw 
-```
-
-**[TurtleBot]** Reset OpenCR using RESET button.
+**[TurtleBot]** Reset OpenCR using `RESET` button.
     
 ![](/assets/images/parts/controller/opencr10/bootloader_19.png)
 
 ## [Bringup](#bringup)
 
-### [Bringup TurtleBot3]
-**[TurtleBot, RemotePC]** Sync time between TurtleBot and RemotePC
+### Bringup TurtleBot3
+**[TurtleBot], [RemotePC]** Sync time between TurtleBot and RemotePC
 
 ```bash
 $ sudo apt-get install ntpdate
 $ sudo ntpdate ntp.ubuntu.com
 ```
 
-**[TurtleBot]** Run Micro-XRCE-DDS Agent for OpenCR
+**[TurtleBot]** Run two Micro-XRCE-DDS Agent for OpenCR and Lidar, and run Lidar Micro-XRCE-DDS Client
 
 ```bash
-$ cd ~/turtlebot3 && MicroXRCEAgent serial /dev/ttyACM0
+$ cd ~/tb3_sbc_settings && ./run.sh
 ```
 
-**[TurtleBot]** Run Micro-XRCE-DDS Agent for Lidar
+If it is executed normally, the following screen will be displayed. This script is also included, so please read it carefully.
 
 ```bash
-$ cd ~/turtlebot3 && MicroXRCEAgent udp 2018
+pi@raspberrypi:~/turtlebot3_sbc_setting $ ./run.sh 
+bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+
+########################################################################
+Run two Agent and one Client for LDS & OpenCR
+########################################################################
+nohup: nohup: appending output to 'nohup.out'
+ignoring input and appending output to 'nohup.out'
+nohup: ignoring input and appending output to 'nohup.out'
+
+Two MicroXRCEAgents and one MicroXRCEClient listed below are running in the background.
+ - MicroXRCEAgent #for lidar using UDP
+ - MicroXRCEAgent #for OpenCR using Serial
+ - turtlebot3_lidar_xrce_client #MicroXRCE client application for publishing lidar data
+Please refer to the note below to check its execution status or to terminate it.
+
+========== NOTE ==========
+This script uses the nohup command to run multiple processes in the background.
+Therefore, to terminate these processes, use the kill command like below
+
+ use 'ps | grep "MicroXRCEAgent"' command for checking process ID
+ kill [PID number]
+
+Also, logs running in the background are stored in nohup.out in the current folder where this command was executed.
+==========================
+
+pi@raspberrypi:~/turtlebot3_sbc_setting $ 
 ```
 
-**[TurtleBot]** Run Lidar application
-
-```bash
-$ ./turtlebot3/turtlebot3_lidar
-```
-
-**[Remote PC]** Launch robot includinf robot_state_publisher and turtlebot3_node
+**[Remote PC]** Launch robot include robot_state_publisher and turtlebot3_node
 
 **TIP**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `burger`, `waffle`, `waffle_pi`. If you want to permanently set the export settings, please refer to [Export TURTLEBOT3_MODEL][export_turtlebot3_model]{: .popup} page.
 {: .notice--success}
@@ -262,10 +281,9 @@ $ ros2 topic list
 /parameter_events
 /reset
 /robot_description
+/rosout
 /scan
-/scan_half
 /sensor_state
-/sound
 /tf
 /tf_static
 /time_sync
@@ -312,9 +330,9 @@ CTRL-C to quit
 - [Related a document for Cartographer](https://google-cartographer.readthedocs.io/en/latest/)
 - [Related a document for Cartographer_ros](https://google-cartographer-ros.readthedocs.io/en/latest/)
 
-The **SLAM (Simultaneous Localization and Mapping)** is a technique to draw a map by estimating current location in an arbitrary space. The SLAM is a well-known feature of TurtleBot from its predecessors. The video here shows you how accurately TurtleBot3 can draw a map with its compact and affordable platform.
+The **SLAM (Simultaneous Localization And Mapping)** is a technique to draw a map by estimating current location in an arbitrary space. The SLAM is a well-known feature of TurtleBot from its predecessors. The video here shows you how accurately TurtleBot3 can draw a map with its compact and affordable platform.
 
-**[TurtleBot, RemotePC]** Sync time between TurtleBot and RemotePC
+**[TurtleBot], [RemotePC]** Sync time between TurtleBot and RemotePC
 
 ```bash
 $ sudo apt-get install ntpdate
@@ -421,3 +439,4 @@ $ ros2 param set /local_costmap/local_costmap use_sim_time True
 [ROS Answers]: https://answers.ros.org/questions/
 [ROS2 Issue]: https://github.com/ros2/ros2/issues
 [How to set sbc for turtlebot3 with ros2]: /docs/en/popup/turtlebot3_ros2_sbc_setting
+[export_turtlebot3_model]: /docs/en/platform/turtlebot3/export_turtlebot3_model
