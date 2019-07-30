@@ -10,11 +10,11 @@ sidebar:
 
 ![](/assets/images/dxl/x/x_series_product.png)
 
-# [Dynamixel X](#dynamixel-x)
+# [DYNAMIXEL X](#dynamixel-x)
 
 ![](/assets/images/dxl/x/dxl_x_productline.jpg)
 
-> Dynamixel X Series Lineups
+> DYNAMIXEL X Series Lineups
 
 ## Basic Feature
 - Improved Torque, Compact Size
