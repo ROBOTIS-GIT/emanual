@@ -47,7 +47,7 @@ $ sudo service ssh start
 $ sudo ufw allow ssh
 ```
 
-Before start to connect SSH, you need to check `host name`. Redbox in below image shows it.
+Before starting to connect SSH, you need to check `host name`. Redbox in below image shows it.
 
 ![](/assets/images/platform/turtlebot3/faq/computer_name.png)
 
@@ -141,7 +141,7 @@ You can download it in the following way.
 
 We released the TurtleBot3 Friends hardware design file at the link below.
 
-- [Locomotion (TurtleBot3 Friends)](http://emanual.robotis.com/docs/en/platform/turtlebot3/friends/#turtlebot3-friends-car)
+- [Locomotion (TurtleBot3 Friends)](/docs/en/platform/turtlebot3/locomotion/#turtlebot3-friends-car)
 
 So, you can download the STL files directly from each Onshape address as shown in the following figures.
 
