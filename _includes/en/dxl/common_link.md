@@ -4,7 +4,7 @@
 [Return Delay time(9)]: #return-delay-time-9
 [Operating Mode(11)]: #operating-mode11
 [Homing Offset(13)]: #homing-offset13
-[Protocol Version(13)]: #protocol-version13
+[Protocol Type(13)]: #protocol-type13
 [Max Torque(14)]: #max-torque-14
 [Homing Offset(20)]: #homing-offset20
 [Acceleration Limit(26)]: #acceleration-limit26

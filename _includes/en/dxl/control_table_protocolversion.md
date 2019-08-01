@@ -1,8 +1,8 @@
-Users can select Dynamixel protocol version (1.0 and 2.0).  
+Users can select DYNAMIXEL protocol type (1.0 and 2.0).  
 Even if Protocol 1.0 is selected, Protocol 2.0 Control Table will be used.  
-It is recommended to use an identical protocol version for multiple Dynamixels.
+It is recommended to use an identical protocol type for multiple DYNAMIXEL.
 
-|   Value    | Protocol Version |                             Compatible Dynamixels                             |
+|   Value    | Protocol Type |                             Compatible DYNAMIXEL                             |
 |:----------:|:----------------:|:-----------------------------------------------------------------------------:|
 |     1      |       1.0        | AX Series, DX Series, RX Series, EX Series, MX Series with Firmware below v39 |
 | 2(default) |       2.0        |         MX-28/64/106 with Firmware v39 or above, X Series, PRO Series         |
