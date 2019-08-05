@@ -15346,7 +15346,7 @@ thormang3:
         url: /platform/thormang3/thormang3_ros_packages/#thormang3_balance_control
       - title: "imu-3dm-gx4"
         url: /platform/thormang3/thormang3_ros_packages/#imu-3dm-gx4
-      - title: "imu-3dm-gx5"
+      - title: "microstrain_3dm_gx5_45"
         url: /platform/thormang3/thormang3_ros_packages/#microstrain-3dm-gx5-45
     - title: "PPC Packages"
       url: /platform/thormang3/thormang3_ros_packages/#ppc-packages

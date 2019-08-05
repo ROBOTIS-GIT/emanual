@@ -35,5 +35,14 @@ layout: default
       <i class="fa fa-fw fa-github" aria-hidden="true"></i> Edit on GitHub
     </a>
     {{ content }}
+
+    {% assign page_numbers=site.pages | where:"product_group", page.product_group | sort: 'page_number' %}
+    {% assign previous_page = page.page_number | minus: 1 %}
+    {% assign next_page = page.page_number | plus: 1 %}
+    {% if page.page_number==1 %}<button style="position:relative; padding:0.5em; margin:1em; background:#FFF; color:#FFF; border: 1px solid #FFF">{% endif %}
+    {% for available_page in page_numbers %}
+      {% if available_page.page_number == previous_page %}<button style="position:relative; padding:0.5em; margin:1em; background:#777; color:#FFF; border: 1px solid #000" onClick="movetopage('{{ available_page.url }}');"><i class="fa fa-chevron-left" aria-hidden="true"></i> Previous Page</button>{% endif %}
+      {% if available_page.page_number == next_page %}<button style="float:right; position:relative; padding:0.5em; margin:1em; background:#777; color:#FFF; border: 1px solid #000" onClick="movetopage('{{ available_page.url }}');">Next Page <i class="fa fa-chevron-right" aria-hidden="true"></i></button>{% endif %}
+    {% endfor %}
   </div>
 </div>

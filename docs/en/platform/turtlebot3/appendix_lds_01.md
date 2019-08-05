@@ -9,6 +9,8 @@ permalink: /docs/en/platform/turtlebot3/appendix_lds_01/
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
+product_group: turtlebot3
+page_number: 37
 ---
 
 <div style="counter-reset: h1 22"></div>
@@ -62,7 +64,7 @@ sidebar:
 #### [General Specifications](#general-specifications)
 
 | Items                    | Specifications                                                     |
-| ------------------------ | ------------------------------------------------------------------ |
+|:-------------------------|:-------------------------------------------------------------------|
 | Operating supply voltage | 5V DC ±5%                                                          |
 | Light source             | Semiconductor Laser Diode(λ=785nm)                                 |
 | LASER safety             | IEC60825-1 Class 1                                                 |
@@ -77,7 +79,7 @@ sidebar:
 #### [Measurement Performance Specifications](#measurement-performance-specifications)
 
 | Items                               | Specifications |
-| ----------------------------------- | -------------- |
+|:------------------------------------|:---------------|
 | Distance Range                      | 120 ~ 3,500mm  |
 | Distance Accuracy (120mm ~ 499mm)   | ±15mm          |
 | Distance Accuracy(500mm ~ 3,500mm)  | ±5.0%          |
