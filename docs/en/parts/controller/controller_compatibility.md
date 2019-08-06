@@ -11,8 +11,7 @@ sidebar:
   nav: "controller_compatibility"
 ---
 
-# Supported Baudrates for Dynamixel
-
+# [Supported Baudrates for Dynamixel](#supported-baudrates-for-dynamixel)
 
 | Baudrate(bps) | [CM-5] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04] | [OpenCR] |
 |:-------------:|:------:|:--------:|:--------:|:--------:|:--------:|:--------:|:------------:|:--------:|
@@ -26,9 +25,9 @@ sidebar:
 |     4.5M      |   X    |    X     |    X     |    X     |    X     |    X     |      X       |    O     |
 
 
-# Compatibility
+# [Compatibility Table](#compatibility-table)
 
-## Dynamixel
+## [DYNAMIXEL](#dynamixel)
 
 |      Model       | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[485 EXP]) | [OpenCM7.0] | [OpenCR] |
 |:----------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:----------------------------:|:-----------:|:--------:|
@@ -47,9 +46,9 @@ sidebar:
 
 
 
-## Parts
+## [Parts](#parts)
 
-|                   Model                   | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[485 EXP]) | [OpenCM7.0] | [OpenCR] |
+|                  Model                   | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[485 EXP]) | [OpenCM7.0] | [OpenCR] |
 |:----------------------------------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:----------------------------:|:-----------:|:--------:|
 |           Bioloid Serial Cable           |   O    |    X    |    X     |    X     |    X     |    O     |    X     |    X     |    X     |    X     |              X               |      X      |    X     |
 |                 Mini USB                 |   X    |    X    |    X     |    X     |    X     |    X     |    O     |    X     |    X     |    X     |              X               |      X      |    X     |
@@ -88,35 +87,74 @@ sidebar:
 
 `1` IR Receiver with OpenCM 9.04 is not supported on R+Task
 
-## Software
+## [Software](#software)
 
-### R+ 1.0
+### [R+ 1.0](#r-10)
 
-|         Model          | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[485 EXP]) | [OpenCM7.0] | [OpenCR] |
-|:---------------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:----------------------------:|:-----------:|:--------:|
-| R+ Task 1.0 |   O    |    X    |    O     |    O     |    O     |    O     |    O     |    X     |    O     |    X     |             O(X)             |      X      |    X     |
-| R+ Manager 1.0 |   O    |    X    |    O     |    O     |    O     |    O     |    O     |    X     |    O     |    X     |             O(X)             |      X      |    X     |
-| R+ Motion  1.0  |   O    |    X    |    X     |    O     |    O     |    O     |    O     |    X     |    O     |    X     |             O(X)             |      X      |    X     |
+|      Model       | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[485 EXP]) | [OpenCM7.0] | [OpenCR] |
+|:----------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:----------------------------:|:-----------:|:--------:|
+|  [R+ Task 1.0]   |   O    |    X    |    O     |    O     |    O     |    O     |    O     |    X     |    O     |    X     |             O(X)             |      X      |    X     |
+| [R+ Manager 1.0] |   O    |    X    |    O     |    O     |    O     |    O     |    O     |    X     |    O     |    X     |             O(X)             |      X      |    X     |
+| [R+ Motion  1.0] |   O    |    X    |    X     |    O     |    O     |    O     |    O     |    X     |    O     |    X     |             O(X)             |      X      |    X     |
 
-### R+ 2.0
+R+ Manager 1.0 only supports a firmware update or restore of controllers, but it isn't possible to read control table of controller via R+ Manager 1.0.
+{: .notice--info}
 
-|         Model          | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[485 EXP]) | [OpenCM7.0] | [OpenCR] |
-|:---------------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:----------------------------:|:-----------:|:--------:|
-| R+ Task 2.0 |   O    |    X    |    X     |    O     |    O     |    O     |    O     |    X     |    O     |    X     |             O(X)             |      X      |    X     |
-| R+ Manage 2.0 |   O    |    X    |    X     |    O     |    O     |    O     |    O     |    X     |    O     |    X     |             O(X)             |      X      |    X     |
-| R+ Motion 2.0  |   O    |    X    |    X     |    O     |    O     |    O     |    O     |    X     |    O     |    X     |             O(X)             |      X      |    X     |
+### [R+ 2.0](#r-20)
 
-### etc
+|      Model       | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[485 EXP]) | [OpenCM7.0] | [OpenCR] |
+|:----------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:----------------------------:|:-----------:|:--------:|
+|  [R+ Task 2.0]   |   O    |    X    |    X     |    O     |    O     |    O     |    O     |    X     |    O     |    X     |             O(X)             |      X      |    X     |
+| [R+ Manager 2.0] |   O    |    X    |    X     |    O     |    O     |    O     |    O     |    X     |    O     |    X     |             O(X)             |      X      |    X     |
+| [R+ Motion 2.0]  |   O    |    X    |    X     |    O     |    O     |    O     |    O     |    X     |    O     |    X     |             O(X)             |      X      |    X     |
 
-|    Model    | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[485 EXP]) | [OpenCM7.0] | [OpenCR] |
-|:-----------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:----------------------------:|:-----------:|:--------:|
-| R+ Task 3.0 |   O    |    O    |    O     |    O     |    O     |    O     |    O     |    X     |    O     |    X     |             O(X)             |      O      |    X     |
-| OpenCM IDE  |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              O               |      X      |    X     |
-| Arduino IDE |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              O               |      O      |    O     |
-| Scratch2.0  |   X    |    X    |    X     |    O     |    X     |    X     |    X     |    X     |    X     |    X     |              X               |      O      |    X     |
+### [R+ 3.0](#r-30)
 
+|     Model     | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[485 EXP]) | [OpenCM7.0] | [OpenCR] |
+|:-------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:----------------------------:|:-----------:|:--------:|
+| [R+ Task 3.0] |   O    |    O    |    O     |    O     |    O     |    O     |    O     |    O     |    O     |    X     |             O(X)             |      O      |    X     |
 
 
+### [R+ Mobile](#r-mobile)
+
+|      Model       | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[485 EXP]) | [OpenCM7.0] | [OpenCR] |
+|:----------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:----------------------------:|:-----------:|:--------:|
+|   [R+ m.Task]    |   O    |    O    |    O     |    O     |    O     |    O     |    O     |    X     |    O     |    X     |              O(X)              |      O      |    X     |
+| [R+ m.Task 2.0]  |   O    |    O    |    X     |    O     |    O     |    O     |    O     |    X     |    X     |    X     |              O(X)              |      O      |    X     |
+| [R+ m.Mtion 2.0] |   O    |    X    |    X     |    X     |    O     |    O     |    O     |    X     |    O     |    X     |              O(X)              |      X      |    X     |
+|  [R+ m.Design]   |   O    |    X    |    O     |    O     |    O     |    O     |    O     |    X     |    X     |    X     |              O(X)              |      X      |    X     |
+
+### [R+ Mobile (STEAM KIT)](#r-mobile-steam-kit)
+
+|             Model              | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[485 EXP]) | [OpenCM7.0] | [OpenCR] |
+|:------------------------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:----------------------------:|:-----------:|:--------:|
+| R+ SMART <br> ( I / II / III ) |   X    |    X    |    X     |    X     |    O     |    X     |    X     |    X     |    X     |    X     |              X               |      X      |    X     |
+|             R+ IoT             |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              X               |      O      |    X     |
+|         [R+ Play 700]          |   X    |    O    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              X               |      X      |    X     |
+|         [ROBOTIS MINI]         |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              O(X)               |      X      |    X     |
+
+R+ SMART and R+IoT aren't released yet.
+{: .notice--info}
+
+
+### [etc](#etc)
+
+|             Model             | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[485 EXP]) | [OpenCM7.0] | [OpenCR] |
+|:-----------------------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:----------------------------:|:-----------:|:--------:|
+|         [R+ Scratch]          |   X    |    O    |    X     |    O     |    X     |    X     |    X     |    X     |    X     |    X     |              X               |      O      |    X     |
+|         [OpenCM IDE]          |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              O               |      X      |    X     |
+|        [DYNAMIXEL SDK]        |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              O               |      X      |    O     |
+|     [DYNAMIXEL Workbench]     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              O               |      X      |    O     |
+|    [DYNAMIXEL Wizard 2.0]     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              X               |      X      |    X     |
+| [ROBOTIS Manipulator library] |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              X               |      X      |    O     |
+| [Embeded SDK(CM-510/530/700)] |   X    |    X    |    X     |    X     |    X     |    O     |    O     |    X     |    O     |    X     |              X               |      X      |    X     |
+|          Arduino IDE          |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              O               |      O      |    O     |
+
+{% capture etc %}
+- Users can build their own manipulator with ROBOTIS Manipulator library offerd by ROBOTIS.
+- Users can build there own firmware of CM-510/530/700 with Embeded SDK offerd by ROBOTIS.
+{% endcapture %}
+<div class="notice--info">{{ etc | markdownify }}</div>
 
 [ln-101]: /docs/en/parts/interface/ln-101/
 [CM-5]: /docs/en/parts/controller/cm-5/
@@ -130,6 +168,29 @@ sidebar:
 [CM-700]: /docs/en/parts/controller/cm-700/
 [CM-900]: /docs/en/parts/controller/cm-900/
 [OpenCM9.04]: /docs/en/parts/controller/opencm904/
-[OpenCM7.0]: /docs/en/parts/controller/opencm7/
+[OpenCM7.0]: /docs/kr/parts/controller/opencm7/
 [485 EXP]: /docs/en/parts/controller/opencm485exp/
 [OpenCR]: /docs/en/parts/controller/opencr10/
+[R+ Task 1.0]: /docs/en/software/rplus1/task/getting_started/
+[R+ Manager 1.0]: /docs/en/software/rplus1/manager/
+[R+ Motion  1.0]: /docs/en/software/rplus1/motion/
+[로보플러스 위자드 1.0]: /docs/en/software/rplus1/dynamixel_wizard/
+[R+ Task 2.0]: /docs/en/software/rplus2/task/
+[R+ Manager 2.0]: /docs/en/software/rplus2/manager/
+[R+ Motion 2.0]: /docs/en/software/rplus2/motion/
+[R+ Task 3.0]: /docs/en/software/rplustask3/
+[R+ IoT]: /docs/kr/software/mobile_app/rplusiot/
+[R+ m.Task]: /docs/en/software/rplus_mobile/mtask/
+[R+ m.Task 2.0]: /docs/en/software/rplus_mobile/mtask20/
+[R+ m.Mtion 2.0]: /docs/en/software/rplus_mobile/mmotion/
+[R+ m.Design]: /docs/en/software/rplus_mobile/mdesign/
+[R+ SMART]: /docs/kr/software/mobile_app/rplussmart/
+[R+ Play 700]: /docs/en/edu/play/play-700/#quick-start
+[ROBOTIS MINI]: /docs/en/software/mobile_app/mini_app/
+[R+ Scratch]: /docs/en/software/rplus2/scratch/
+[OpenCM IDE]: /docs/en/software/opencm_ide/getting_started/              
+[DYNAMIXEL SDK]: /docs/en/software/dynamixel/dynamixel_sdk/overview/
+[DYNAMIXEL Workbench]: /docs/en/software/dynamixel/dynamixel_workbench/
+[DYNAMIXEL Wizard 2.0]: /docs/en/software/dynamixel/dynamixel_wizard2/
+[Embeded SDK(CM-510/530/700)]: /docs/en/software/embedded_sdk/
+[ROBOTIS Manipulator library]: /docs/en/software/robotis_manipulator_libs/
