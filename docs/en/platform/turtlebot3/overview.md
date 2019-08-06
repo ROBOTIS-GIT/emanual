@@ -57,9 +57,9 @@ If you are interested in partnership with us to realize open source robotics, pl
 \* Each collaboration member's web page can be found [here][partners].
 
 ### TurtleBot3 Map
-
+<div>
 <script type="text/javascript" src="https://embed.githubusercontent.com/view/geojson/turtlebot/map/master/Distributors.geojson"></script>
-
+</div>
 
 [turtlebot]: https://www.turtlebot.com/
 [ros]: http://www.ros.org/about-ros/

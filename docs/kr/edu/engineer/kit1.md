@@ -291,10 +291,10 @@ product_group: 2xl430-w250
 
 
 {% capture opening_exam %}
-[로보플러스 태스크 3.0에서 태스크 예제 파일 열기](/docs/kr/software/rplustask3/#태스크-예제-열기)  
+[로보플러스 태스크 3.0에서 태스크 예제 파일 열기](/docs/kr/software/rplustask3/task_programming/#태스크-예제-열기)  
 [CM-550 제어기에 태스크 다운로드 하기](#태스크-다운로드-pc)  
 
-[로보플러스 태스크 3.0에서 모션 예제 파일 열기](/docs/kr/software/rplustask3/#모션-예제-열기)  
+[로보플러스 태스크 3.0에서 모션 예제 파일 열기](/docs/kr/software/rplustask3/motion_programming/#모션-예제-열기)  
 [CM-550 제어기에 모션 다운로드 하기](#모션-다운로드-pc)
 {% endcapture %}
 <div class="notice">{{opening_exam | markdownify}}</div>
