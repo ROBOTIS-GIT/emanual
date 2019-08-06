@@ -9,6 +9,8 @@ permalink: /docs/en/platform/turtlebot3/appendix_opencr1_0/
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
+product_group: turtlebot3
+page_number: 36
 ---
 
 <div style="counter-reset: h1 22"></div>
@@ -42,17 +44,17 @@ OpenCR will be the best solution for implementing your embedded control design.
 **NOTE**: Hot swap power switch between `shore power`(12V, 5A SMPS) and `mobile power`(battery) from OpenCR board enables UPS(Uninterrupted Power Supply) feature.
 {: .notice--info}
 
-| Items                    | Specifications                                                                                     |
-|--------------------------|----------------------------------------------------------------------------------------------------|
-| Microcontroller          | STM32F746ZGT6 / 32-bit ARM Cortex®-M7 with  FPU (216MHz, 462DMIPS)                                 |
-| Sensors                  | Gyroscope 3Axis, Accelerometer 3Axis, Magnetometer 3Axis (MPU9250)                                 |
-| Programmer               | ARM Cortex 10pin JTAG/SWD connector<br />USB Device Firmware Upgrade (DFU)<br />Serial             |
-| Extension pins           | 32 pins (L 14, R 18) *Arduino connectivity<br />Sensor module x 4 pins<br />Extension connector x 18 pins|
-| Communication circuits   | USB (Micro-B USB connector/USB 2.0/Host/Peripheral/OTG)<br />TTL ([B3B-EH-A] / Dynamixel)<br />RS485 ([B4B-EH-A] / Dynamixel)<br />UART x 2 ([20010WS-04])<br />CAN ([20010WS-04])|
-| LEDs and buttons         | LD2 (red/green) : USB communication<br />User LED x 4 : LD3 (red), LD4 (green), LD5 (blue)<br />User button  x 2|
-| Powers                   | External input source<br />5 V (USB VBUS), 7-24 V (Battery or SMPS)<br />Default battery : LI-PO 11.1V 1,800mAh 19.98Wh<br />Default SMPS: 12V 5A<br />External output source<br />12V@1A([SMW250-02]), 5V@4A([5267-02A]), 3.3V@800mA([20010WS-02])<br />External battery Port for RTC (Real Time Clock) ([Molex 53047-0210])<br />Power LED: LD1 (red, 3.3 V power on)<br />Reset button x 1 (for power reset of board)<br />Power on/off switch x 1|
-| Dimensions               | 105(W) X 75(D) mm                                                                                  |
-| Mass                     | 60g                                                                                                |
+| Items                  | Specifications                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+|:-----------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Microcontroller        | STM32F746ZGT6 / 32-bit ARM Cortex®-M7 with  FPU (216MHz, 462DMIPS)                                                                                                                                                                                                                                                                                                                                                                                    |
+| Sensors                | Gyroscope 3Axis, Accelerometer 3Axis, Magnetometer 3Axis (MPU9250)                                                                                                                                                                                                                                                                                                                                                                                    |
+| Programmer             | ARM Cortex 10pin JTAG/SWD connector<br />USB Device Firmware Upgrade (DFU)<br />Serial                                                                                                                                                                                                                                                                                                                                                                |
+| Extension pins         | 32 pins (L 14, R 18) *Arduino connectivity<br />Sensor module x 4 pins<br />Extension connector x 18 pins                                                                                                                                                                                                                                                                                                                                             |
+| Communication circuits | USB (Micro-B USB connector/USB 2.0/Host/Peripheral/OTG)<br />TTL ([B3B-EH-A] / Dynamixel)<br />RS485 ([B4B-EH-A] / Dynamixel)<br />UART x 2 ([20010WS-04])<br />CAN ([20010WS-04])                                                                                                                                                                                                                                                                    |
+| LEDs and buttons       | LD2 (red/green) : USB communication<br />User LED x 4 : LD3 (red), LD4 (green), LD5 (blue)<br />User button  x 2                                                                                                                                                                                                                                                                                                                                      |
+| Powers                 | External input source<br />5 V (USB VBUS), 7-24 V (Battery or SMPS)<br />Default battery : LI-PO 11.1V 1,800mAh 19.98Wh<br />Default SMPS: 12V 5A<br />External output source<br />12V@1A([SMW250-02]), 5V@4A([5267-02A]), 3.3V@800mA([20010WS-02])<br />External battery Port for RTC (Real Time Clock) ([Molex 53047-0210])<br />Power LED: LD1 (red, 3.3 V power on)<br />Reset button x 1 (for power reset of board)<br />Power on/off switch x 1 |
+| Dimensions             | 105(W) X 75(D) mm                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Mass                   | 60g                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 
 ### [User Guide](#user-guide)
 

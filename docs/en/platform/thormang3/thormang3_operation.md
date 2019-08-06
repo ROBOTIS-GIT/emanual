@@ -9,6 +9,8 @@ permalink: /docs/en/platform/thormang3/thormang3_operation/
 sidebar:
   title: THORMANG3
   nav: "thormang3"
+product_group: thormang3
+page_number: 5
 ---
 
 <div style="counter-reset: h1 4">

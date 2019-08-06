@@ -9,7 +9,10 @@ permalink: /docs/en/platform/thormang3/gazebo_simulation/
 sidebar:
   title: THORMANG3
   nav: "thormang3"
+product_group: thormang3
+page_number: 6
 ---
+
 <div style="counter-reset: h1 5"></div>
 
 # [Gazebo Simulation](#gazebo-simulation)
