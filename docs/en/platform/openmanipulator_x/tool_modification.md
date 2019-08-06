@@ -9,6 +9,8 @@ permalink: /docs/en/platform/openmanipulator_x/tool_modification/
 sidebar:
   title: OpenMANIPULATOR-X
   nav: "openmanipulator_x"
+product_group: openmanipulator_x
+page_number: 12
 ---
 
 <div style="counter-reset: h1 11"></div>

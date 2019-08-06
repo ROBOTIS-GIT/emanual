@@ -9,6 +9,8 @@ permalink: /docs/en/platform/openmanipulator_x/ros_controller_package/
 sidebar:
   title: OpenMANIPULATOR-X
   nav: "openmanipulator_x"
+product_group: openmanipulator_x
+page_number: 6
 ---
 
 <div style="counter-reset: h1 5"></div>
