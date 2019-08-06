@@ -9,6 +9,8 @@ permalink: /docs/en/platform/manipulator_h/examples/
 sidebar:
   title: MANIPULATOR-H
   nav: "manipulator_h"
+product_group: manipulator_h
+page_number: 4
 ---
 
 <div style="counter-reset: h1 3"></div>

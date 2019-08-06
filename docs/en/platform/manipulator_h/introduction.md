@@ -9,6 +9,8 @@ permalink: /docs/en/platform/manipulator_h/introduction/
 sidebar:
   title: Manipulator-H
   nav: "manipulator_h"
+product_group: manipulator_h
+page_number: 1
 ---
 
 ![](/assets/images/platform/manipulator_h/manipulator_product.gif)
@@ -106,19 +108,19 @@ Information appearing in a CAUTION concerns the protection of personnel and equi
 
 ## [Specifications](#specifications)
 
-|Item|Manipulator-H|
-|:---:|:---:|
-|DOF|6 DOF|
-|Payload|3kg|
-|Weight|5kg|
-|Operating voltage|24V|
-|Resolution|Joint 1 : -&pi;(rad) ~ &pi;(rad) , -251,961 ~ 251,961 (pulse)<br />Joint 2 : -&pi;(rad) ~ &pi;(rad) , -251,961 ~ 251,961 (pulse)<br />Joint 3 : -&pi;(rad) ~ &pi;(rad) , -251,961 ~ 251,961 (pulse)<br />Joint 4 : -&pi;(rad) ~ &pi;(rad) , -251,961 ~ 251,961 (pulse)<br />Joint 5 : -&pi;(rad) ~ &pi;(rad) , -151,875 ~ 151,875 (pulse)<br />Joint 6 : -&pi;(rad) ~ &pi;(rad) , -151,875 ~ 151,875 (pulse)|
-|Dynamixel Pro<br />Model Name|Joint 1, 2 : H54-200-S500-R<br />Joint 3, 4 : H54-100-S500-R<br />Joint 5, 6 : H42-20-S300-R|
-|Operating Range|Joint 1 : -&pi;(rad) ~ &pi;(rad)<br />Joint 2 : -&pi;/2(rad) ~ &pi;/2(rad)<br />Joint 3 : -&pi;/2(rad) ~ 3&pi;/4(rad)<br />Joint 4 : -&pi;(rad) ~ &pi;(rad)<br />Joint 5 : -&pi;/2(rad) ~ &pi;/2(rad)<br />Joint 6 : -&pi;(rad) ~ &pi;(rad)|
-|Default ID|Joint 1 (ID:1), Joint 2 (ID:2), Joint 3 (ID:3),<br />Joint 4 (ID:4), Joint 5 (ID:5), Joint 6 (ID:6)|
-|Motor type|Brushless DC Servo(H54 Series),<br />Coreless DC Motor(H42 Series)|
-|Position sensor type|Absolute Encoder(for Homing),<br />Incremental Encoder(for Control)|
-|Communications|RS485|
+|             Item              |                                                                                                                                                                                                Manipulator-H                                                                                                                                                                                                 |
+|:-----------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+|              DOF              |                                                                                                                                                                                                    6 DOF                                                                                                                                                                                                     |
+|            Payload            |                                                                                                                                                                                                     3kg                                                                                                                                                                                                      |
+|            Weight             |                                                                                                                                                                                                     5kg                                                                                                                                                                                                      |
+|       Operating voltage       |                                                                                                                                                                                                     24V                                                                                                                                                                                                      |
+|          Resolution           | Joint 1 : -&pi;(rad) ~ &pi;(rad) , -251,961 ~ 251,961 (pulse)<br />Joint 2 : -&pi;(rad) ~ &pi;(rad) , -251,961 ~ 251,961 (pulse)<br />Joint 3 : -&pi;(rad) ~ &pi;(rad) , -251,961 ~ 251,961 (pulse)<br />Joint 4 : -&pi;(rad) ~ &pi;(rad) , -251,961 ~ 251,961 (pulse)<br />Joint 5 : -&pi;(rad) ~ &pi;(rad) , -151,875 ~ 151,875 (pulse)<br />Joint 6 : -&pi;(rad) ~ &pi;(rad) , -151,875 ~ 151,875 (pulse) |
+| Dynamixel Pro<br />Model Name |                                                                                                                                                         Joint 1, 2 : H54-200-S500-R<br />Joint 3, 4 : H54-100-S500-R<br />Joint 5, 6 : H42-20-S300-R                                                                                                                                                         |
+|        Operating Range        |                                                                                 Joint 1 : -&pi;(rad) ~ &pi;(rad)<br />Joint 2 : -&pi;/2(rad) ~ &pi;/2(rad)<br />Joint 3 : -&pi;/2(rad) ~ 3&pi;/4(rad)<br />Joint 4 : -&pi;(rad) ~ &pi;(rad)<br />Joint 5 : -&pi;/2(rad) ~ &pi;/2(rad)<br />Joint 6 : -&pi;(rad) ~ &pi;(rad)                                                                                  |
+|          Default ID           |                                                                                                                                                     Joint 1 (ID:1), Joint 2 (ID:2), Joint 3 (ID:3),<br />Joint 4 (ID:4), Joint 5 (ID:5), Joint 6 (ID:6)                                                                                                                                                      |
+|          Motor type           |                                                                                                                                                                      Brushless DC Servo(H54 Series),<br />Coreless DC Motor(H42 Series)                                                                                                                                                                      |
+|     Position sensor type      |                                                                                                                                                                     Absolute Encoder(for Homing),<br />Incremental Encoder(for Control)                                                                                                                                                                      |
+|        Communications         |                                                                                                                                                                                                    RS485                                                                                                                                                                                                     |
 
 ## [D-H Configuration](#d-h-configuration)
 
@@ -126,14 +128,14 @@ Information appearing in a CAUTION concerns the protection of personnel and equi
 
 - DH Parameter
 
-|Link|Link Length(mm)|Link Twist(rad)|Joint Offset(mm)|Joint Angle(rad)|DXL Angle(rad)|
-|:---:|:---:|:---:|:---:|:---:|:---:|
-|1|0|-&pi;/2|0|0|0|
-|2|265.69|0|0|0|![](/assets/images/platform/manipulator_h/manipulator_h_eq_001.gif)|
-|3|30|-&pi;/2|0|0|![](/assets/images/platform/manipulator_h/manipulator_h_eq_002.gif)|
-|4|0|-&pi;/2|258|0|0|
-|5|0|-&pi;/2|0|0|0|
-|6|0|0|0|0|0|
+| Link | Link Length(mm) | Link Twist(rad) | Joint Offset(mm) | Joint Angle(rad) |                           DXL Angle(rad)                            |
+|:----:|:---------------:|:---------------:|:----------------:|:----------------:|:-------------------------------------------------------------------:|
+|  1   |        0        |     -&pi;/2     |        0         |        0         |                                  0                                  |
+|  2   |     265.69      |        0        |        0         |        0         | ![](/assets/images/platform/manipulator_h/manipulator_h_eq_001.gif) |
+|  3   |       30        |     -&pi;/2     |        0         |        0         | ![](/assets/images/platform/manipulator_h/manipulator_h_eq_002.gif) |
+|  4   |        0        |     -&pi;/2     |       258        |        0         |                                  0                                  |
+|  5   |        0        |     -&pi;/2     |        0         |        0         |                                  0                                  |
+|  6   |        0        |        0        |        0         |        0         |                                  0                                  |
 
 ## [Home Position](#home-position)
 

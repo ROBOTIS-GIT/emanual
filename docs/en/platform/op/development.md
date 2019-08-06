@@ -9,6 +9,8 @@ permalink: /docs/en/platform/op/development/
 sidebar:
   title: ROBOTIS OP
   nav: "op"
+product_group: op
+page_number: 2
 ---
 
 <div style="counter-reset: h1 3"></div>

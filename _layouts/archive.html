@@ -37,6 +37,7 @@ layout: default
     {{ content }}
 
     {% assign page_numbers=site.pages | where:"product_group", page.product_group | sort: 'page_number' %}
+    {% assign page_numbers=page_numbers | where:"lang", page.lang %}
     {% assign previous_page = page.page_number | minus: 1 %}
     {% assign next_page = page.page_number | plus: 1 %}
     {% if page.page_number==1 %}<button style="position:relative; height:2em; padding:0.5em; margin:1em; background:#FFF; color:#FFF; border: 1px solid #FFF">{% endif %}

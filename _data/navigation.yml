@@ -17842,16 +17842,124 @@ rplustask3:
       titlekr: "제어기 장치"
       url: /software/rplustask3/task_programming/#controllers
       urlkr: /software/rplustask3/task_programming/#제어기-장치
+      children:
+      - title: ""
+        titlekr: "주변 장치"
+        url: /software/rplustask3/task_programming/#
+        urlkr: /software/rplustask3/task_programming/#주변-장치
+      - title: ""
+        titlekr: "모션 제어"
+        url: /software/rplustask3/task_programming/#
+        urlkr: /software/rplustask3/task_programming/#모션-제어
+      - title: ""
+        titlekr: "내장 센서"
+        url: /software/rplustask3/task_programming/#
+        urlkr: /software/rplustask3/task_programming/#내장-센서
+      - title: ""
+        titlekr: "버저"
+        url: /software/rplustask3/task_programming/#
+        urlkr: /software/rplustask3/task_programming/#버저
+      - title: ""
+        titlekr: "리모컨"
+        url: /software/rplustask3/task_programming/#
+        urlkr: /software/rplustask3/task_programming/#리모컨
+      - title: ""
+        titlekr: "타이머"
+        url: /software/rplustask3/task_programming/#
+        urlkr: /software/rplustask3/task_programming/#타이머
+      - title: ""
+        titlekr: "기타"
+        url: /software/rplustask3/task_programming/#
+        urlkr: /software/rplustask3/task_programming/#제어기-기타
+      - title: ""
+        titlekr: "직접 입력"
+        url: /software/rplustask3/task_programming/#
+        urlkr: /software/rplustask3/task_programming/#제어기-직접-입력
     - title: "Dynamixel"
       titlekr: "다이나믹셀 장치"
       url: /software/rplustask3/task_programming/#dynamixel
       urlkr: /software/rplustask3/task_programming/#다이나믹셀-장치
+      children:
+      - title: ""
+        titlekr: "다이나믹셀"
+        url: /software/rplustask3/task_programming/#
+        urlkr: /software/rplustask3/task_programming/#다이나믹셀
+      - title: ""
+        titlekr: "SyncWrite"
+        url: /software/rplustask3/task_programming/#
+        urlkr: /software/rplustask3/task_programming/#syncwrite
+      - title: ""
+        titlekr: "적외선 센서 어레이"
+        url: /software/rplustask3/task_programming/#
+        urlkr: /software/rplustask3/task_programming/#적외선-센서-어레이
+      - title: ""
+        titlekr: "직접 입력"
+        url: /software/rplustask3/task_programming/#
+        urlkr: /software/rplustask3/task_programming/#다이나믹셀-장치-직접-입력
     - titlekr: "스마트 장치"
       urlkr: /software/rplustask3/task_programming/#스마트-장치
+      children:
+      - title: ""
+        titlekr: "카메라"
+        url: /software/rplustask3/task_programming/#
+        urlkr: /software/rplustask3/task_programming/#카메라
+      - title: ""
+        titlekr: "비전"
+        url: /software/rplustask3/task_programming/#
+        urlkr: /software/rplustask3/task_programming/#비전
+      - title: ""
+        titlekr: "표시"
+        url: /software/rplustask3/task_programming/#
+        urlkr: /software/rplustask3/task_programming/#표시
+      - title: ""
+        titlekr: "멀티미디어"
+        url: /software/rplustask3/task_programming/#
+        urlkr: /software/rplustask3/task_programming/#멀티미디어
+      - title: ""
+        titlekr: "센서"
+        url: /software/rplustask3/task_programming/#
+        urlkr: /software/rplustask3/task_programming/#센서
+      - title: ""
+        titlekr: "기타"
+        url: /software/rplustask3/task_programming/#
+        urlkr: /software/rplustask3/task_programming/#스마트-장치-기타
+      - title: ""
+        titlekr: "사용자 데이터"
+        url: /software/rplustask3/task_programming/#
+        urlkr: /software/rplustask3/task_programming/#사용자-데이터
+      - title: ""
+        titlekr: "직접 입력"
+        url: /software/rplustask3/task_programming/#
+        urlkr: /software/rplustask3/task_programming/#스마트-장치-직접-입력
     - title: "Common"
       titlekr: "공통"
       url: /software/rplustask3/task_programming/#common
       urlkr: /software/rplustask3/task_programming/#공통
+      children:
+      - title: ""
+        titlekr: "변수"
+        url: /software/rplustask3/task_programming/#
+        urlkr: /software/rplustask3/task_programming/#변수
+      - title: ""
+        titlekr: "숫자"
+        url: /software/rplustask3/task_programming/#
+        urlkr: /software/rplustask3/task_programming/#숫자
+      - title: ""
+        titlekr: "참/거짓"
+        url: /software/rplustask3/task_programming/#
+        urlkr: /software/rplustask3/task_programming/#참거짓
+      - title: ""
+        titlekr: "2진수 숫자"
+        url: /software/rplustask3/task_programming/#
+        urlkr: /software/rplustask3/task_programming/#2진수-숫자
+      - title: ""
+        titlekr: "모터 모드"
+        url: /software/rplustask3/task_programming/#
+        urlkr: /software/rplustask3/task_programming/#모터-모드
+    - title: ""
+      titlekr: "모션 목록"
+      url: /software/rplustask3/task_programming/#
+      urlkr: /software/rplustask3/task_programming/#모션-목록
   - title: "Motion Programming"
     titlekr: "모션 프로그래밍"
     url: /software/rplustask3/motion_programming/#motion-programming

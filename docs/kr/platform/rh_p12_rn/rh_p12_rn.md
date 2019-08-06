@@ -10,6 +10,7 @@ sidebar:
   title: RH-P12-RN
   nav: "rh_p12_rn"
 product_group: rh_p12_rn
+page_number: 1
 ---
 
 # [개요](#개요)
@@ -32,7 +33,7 @@ product_group: rh_p12_rn
 | 동작 모드           | 전류제어 모드<br />전류기반 위치제어 모드                                                      |
 | 무게                | 500g                                                                                           |
 | 스트로크            | 0 ~ 109mm                                                                                      |
-| 감속비              | 1181 : 1                                                                                     |
+| 감속비              | 1181 : 1                                                                                       |
 | 최대 파지력         | 170N                                                                                           |
 | 권장 가반하중       | 5kg                                                                                            |
 | 동작 온도           | -5&deg;C ~ 55&deg;C                                                                            |
@@ -50,7 +51,7 @@ product_group: rh_p12_rn
 
 ## [EEPROM 영역](#eeprom-영역)
 
-| 주소  | 크기<br>(Byte) | 명칭                                         | 설명                                       | 접근  | 기본값  |
+| 주소 | 크기<br>(Byte) | 명칭                                        | 설명                                      | 접근 | 기본값 |
 |:----:|:--------------:|:--------------------------------------------|:------------------------------------------|:----:|:------:|
 |  0   |       2        | [Model Number](#model-number)               | Model Number                              |  R   | 35073  |
 |  2   |       4        | [Model Information](#model-information)     | Model Information                         |  R   |   -    |
@@ -82,7 +83,7 @@ product_group: rh_p12_rn
 
 ## [RAM 영역](#ram-영역)
 
-|  주소 | 크기<br>(Byte)  | 명칭                                              | 설명                            | 접근  | 기본값  |
+| 주소 | 크기<br>(Byte) | 명칭                                              | 설명                           | 접근 | 기본값 |
 |:----:|:--------------:|:--------------------------------------------------|:-------------------------------|:----:|:------:|
 | 562  |       1        | [Torque Enable](#torque-enable)                   | Motor Torque On/Off            |  RW  |   0    |
 | 563  |       1        | [LED Red](#led-red)                               | Red LED Intensity Value        |  RW  |   0    |
@@ -123,7 +124,7 @@ product_group: rh_p12_rn
 ### <a name="model-number"></a>**[Model Number(0)](#model-number0)**
 장치의 모델 번호입니다.
 
-|   모델명   |    모델 번호     |
+|  모델명   |   모델 번호    |
 |:---------:|:--------------:|
 | RH-P12-RN | 35073 (0x8901) |
 
@@ -144,9 +145,9 @@ product_group: rh_p12_rn
 
 | Value      | Operating Mode         | Description                                     |
 |:-----------|:-----------------------|:------------------------------------------------|
-| 0          | 전류제어 모드            | 속도와 위치는 제어하지 않고, 전류를 제어합니다.         |
+| 0          | 전류제어 모드          | 속도와 위치는 제어하지 않고, 전류를 제어합니다. |
 | 1 ~ 4      | Reserved               | -                                               |
-| 5(Default) | 전류기반 위치제어 모드     | 위치와 전류를 제어합니다.                           |
+| 5(Default) | 전류기반 위치제어 모드 | 위치와 전류를 제어합니다.                       |
 
 ### <a name="moving-threshold"></a>**[Moving Threshold(17)](#moving-threshold17)**
 {% include kr/dxl/control_table_17_movingthreshold_pro.md %}
@@ -320,8 +321,8 @@ Operating Mode(11) 에 따라 다른 의미로 사용됩니다.
 
 | Operating Mode             | Goal Current                                      |
 |:---------------------------|:--------------------------------------------------|
-| 0 (전류제어 모드)            | Goal Current(604)값이 목표 전류값으로 사용됩니다.      |
-| 5 (전류기반 위치제어 모드)     | Goal Current(604)값이 최대 전류값으로 사용됩니다.      |
+| 0 (전류제어 모드)          | Goal Current(604)값이 목표 전류값으로 사용됩니다. |
+| 5 (전류기반 위치제어 모드) | Goal Current(604)값이 최대 전류값으로 사용됩니다. |
 
 Goal Current(604)는 Current Limit(30) 보다 큰 값을 사용할 수 없습니다.
 
@@ -389,13 +390,13 @@ Goal Velocity(600)가 ‘0’인 경우, Profile 이 비활성화 되어 Goal Ac
 
 ## [커넥터 정보](#커넥터-정보)
 
-|     항목      |                           RS-485                           |                                  외부포트                                  |
+|     항목     |                           RS-485                           |                                  외부포트                                  |
 |:------------:|:----------------------------------------------------------:|:--------------------------------------------------------------------------:|
-|   핀 번호     |        `1` GND<br>`2` VDD<br>`3` DATA+<br>`4` DATA-        | `1` GND<br>`2` VDD<br>`3` PORT 1<br>`4` PORT 2<br>`5` PORT 3<br>`6` PORT 4 |
-|  다이어그램    |       ![](/assets/images/dxl/jst_b4beha_diagram.png)       |             ![](/assets/images/dxl/molex_5304706_diagram.png)              |
-|    하우징     |  ![](/assets/images/dxl/JST_EHR-4.png)<br />[JST EHR-04]   |    ![](/assets/images/dxl/molex_510210600.png)<br />[MOLEX 51021-0600]     |
-|   PCB 헤더    | ![](/assets/images/dxl/jst_b4beha.png)<br />[JST B4B-EH-A] |    ![](/assets/images/dxl/molex_530470610.png)<br />[MOLEX 53047-0610]     |
-| Crimp 터미널  |                    [JST SEH-001T-P0.6]                     |                             [MOLEX 50079-8100]                             |
+|   핀 번호    |        `1` GND<br>`2` VDD<br>`3` DATA+<br>`4` DATA-        | `1` GND<br>`2` VDD<br>`3` PORT 1<br>`4` PORT 2<br>`5` PORT 3<br>`6` PORT 4 |
+|  다이어그램  |       ![](/assets/images/dxl/jst_b4beha_diagram.png)       |             ![](/assets/images/dxl/molex_5304706_diagram.png)              |
+|    하우징    |  ![](/assets/images/dxl/JST_EHR-4.png)<br />[JST EHR-04]   |    ![](/assets/images/dxl/molex_510210600.png)<br />[MOLEX 51021-0600]     |
+|   PCB 헤더   | ![](/assets/images/dxl/jst_b4beha.png)<br />[JST B4B-EH-A] |    ![](/assets/images/dxl/molex_530470610.png)<br />[MOLEX 53047-0610]     |
+| Crimp 터미널 |                    [JST SEH-001T-P0.6]                     |                             [MOLEX 50079-8100]                             |
 |  Wire Gauge  |                           21 AWG                           |                                   21 AWG                                   |
 
 [JST EHR-04]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
