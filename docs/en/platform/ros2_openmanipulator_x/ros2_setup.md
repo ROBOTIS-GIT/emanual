@@ -24,7 +24,7 @@ sidebar:
 
 ## [Install Ubuntu on PC](#install-ubuntu-on-pc)
 
-Download and install `Ubuntu 16.04` on your PC.
+Download and install `Ubuntu 18.04` on your PC.
 
 - [Download link](https://www.ubuntu.com/download/alternative-downloads)
 
