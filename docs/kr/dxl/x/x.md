@@ -12,7 +12,7 @@ sidebar:
 
 # [다이나믹셀 X](#다이나믹셀-x)
 
-![](/assets/images/dxl/x/dxl_x_productline_kr.jpg)
+![](/assets/images/dxl/x/dxl_x_productline_kr.png)
 
 > 다이나믹셀 X 시리즈 라인업
 
