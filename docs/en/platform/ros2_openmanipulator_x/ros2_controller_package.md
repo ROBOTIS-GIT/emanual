@@ -17,44 +17,17 @@ sidebar:
 
 The OpenMANIPULATOR-X controller provides basic manipulation of OpenMANIPULATOR-X. You can control DYNAMIXEL's of OpenMANIPULATOR-X and check states of OpenMANIPULATOR-X through [messages](/docs/en/platform/ros2_openmanipulator_x/ros_controller_package/#message-list) of the controller.
 
-**NOTE**: This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+**NOTE**: This instruction has been tested on `Ubuntu 18.04` and `ROS2 Dashing Diademata`.
 {: .notice--info}
 
 ## [Launch Controller](#launch-controller)
 
-Before launching the controller, Please check `open_manipulator_controller` launch file in `open_manipulator_controller` package.
+Before launching the controller, Please check `open_manipulator_x_controller` launch file in `open_manipulator_x_controller` package.
 
   ```
-  <launch>
-    <arg name="use_robot_name"         default="open_manipulator"/>
 
-    <arg name="dynamixel_usb_port"     default="/dev/ttyUSB0"/>
-    <arg name="dynamixel_baud_rate"    default="1000000"/>
+<TODO>
 
-    <arg name="control_period"         default="0.010"/>
-
-    <arg name="use_platform"           default="true"/>
-
-    <arg name="use_moveit"             default="false"/>
-    <arg name="planning_group_name"    default="arm"/>
-    <arg name="moveit_sample_duration" default="0.050"/>
-
-    <group if="$(arg use_moveit)">
-      <include file="$(find open_manipulator_controller)/launch/open_manipulator_moveit.launch">
-        <arg name="robot_name"      value="$(arg use_robot_name)"/>
-        <arg name="sample_duration" value="$(arg moveit_sample_duration)"/>
-      </include>
-    </group>
-
-    <node name="$(arg use_robot_name)" pkg="open_manipulator_controller" type="open_manipulator_controller" output="screen" args="$(arg dynamixel_usb_port) $(arg dynamixel_baud_rate)">
-        <param name="using_platform"       value="$(arg use_platform)"/>
-        <param name="using_moveit"         value="$(arg use_moveit)"/>
-        <param name="planning_group_name"  value="$(arg planning_group_name)"/>
-        <param name="control_period"       value="$(arg control_period)"/>
-        <param name="moveit_sample_duration"  value="$(arg moveit_sample_duration)"/>
-    </node>
-
-  </launch>
   ```
 
 **Parameters List** : The following parameters set control environments.
@@ -76,16 +49,10 @@ Before launching the controller, Please check `open_manipulator_controller` laun
 
 After setting the parameters, launch the OpenMANIPULATOR-X controller to start [[ROS] Operation](/docs/en/platform/ros2_openmanipulator_x/ros_operation/#ros-operation).
 
-Please, open Terminal then run roscore along with following command.
+Please, open Terminal then run the following command in Terminal.
 
 ``` bash
-$ roscore
-```
-
-After running roscore, open another Terminal then write the following commands in Terminal.
-
-``` bash
-$ roslaunch open_manipulator_controller open_manipulator_controller.launch
+$ ros2 run open_manipulator_x_controller open_manipulator_x_controller
 ```
 
 {% capture warning_01 %}
@@ -101,31 +68,7 @@ The picture on the below is showing you the ideal pose of OpenMANIPULATOR-X. Ple
 Follwing message will be shown in the Terminal after the process done successfully.  
 
 ```
-SUMMARY
-========
-
-PARAMETERS
- * /open_manipulator/control_period: 0.01
- * /open_manipulator/moveit_sample_duration: 0.05
- * /open_manipulator/planning_group_name: arm
- * /open_manipulator/using_moveit: False
- * /open_manipulator/using_platform: True
- * /rosdistro: kinetic
- * /rosversion: 1.12.14
-
-NODES
-  /
-    open_manipulator (open_manipulator_controller/open_manipulator_controller)
-
-ROS_MASTER_URI=http://localhost:11311
-
-process[open_manipulator-1]: started with pid [23452]
-Joint Dynamixel ID : 11, Model Name : XM430-W350
-Joint Dynamixel ID : 12, Model Name : XM430-W350
-Joint Dynamixel ID : 13, Model Name : XM430-W350
-Joint Dynamixel ID : 14, Model Name : XM430-W350
-Gripper Dynamixel ID : 15, Model Name :XM430-W350
-[ INFO] [1544509070.096942788]: Succeeded to init /open_manipulator
+<ToDo>
 ```
 
 {% capture notice_01 %}
@@ -155,7 +98,7 @@ Even if you can't find any DYNAMIXEL, please check firmware to use ROBOTIS softw
 Publish a topic message to check the OpenMANIPULATOR-X setting.
 
 ``` bash
-$ rostopic pub /open_manipulator/option std_msgs/String "print_open_manipulator_setting"
+$ ros2 toopic pub /open_manipulator/option std_msgs/msg/String "print_open_manipulator_setting"
 ```
 
 <**Manipulator Description**> will be printed on Terminal. 
@@ -441,15 +384,15 @@ This parameter is descripted on open_manipulator.cpp in open_manipulator_libs pa
 
 {% capture notice_01 %}
 **NOTE**:
-- This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-- This instruction is supposed to be run on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
+- This instruction has been tested on `Ubuntu 18.04` and `ROS2 Dashing Diademata`.
+- This instruction is supposed to be run on PC ROS2 packages installed in. Please run the instructions below on your PC ROS packages installed in.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
 Load OpenMANIPULATOR-X on RViz.
 
 ``` bash
-$ roslaunch open_manipulator_description open_manipulator_rviz.launch
+$ ros2 launch open_manipulator_x_description open_manipulator_x_rviz2.launch.py 
 ```
 
 {% capture notice_01 %}
@@ -457,7 +400,7 @@ $ roslaunch open_manipulator_description open_manipulator_rviz.launch
 - If you launched the [OpenMANIPULATOR-X controller](/docs/en/platform/ros2_openmanipulator_x/ros_controller_package/#launch-controller) before launching the open_manipulator_controller file, the robot model on RViz would be synchronized with the actual robot.
 - If users would like to check only model of OpenMANIPULATOR-X without control the actual OpenMANIPULATOR, the user can launch the RViz without the OpenMANIPULATOR-X controller.
 The user can change each joint by GUI, if the user launch only RViz by executing the following command :
-`$ roslaunch open_manipulator_description open_manipulator_rviz.launch use_gui:=true`
+`$ ros2 launch open_manipulator_x_description open_manipulator_x_rviz2.launch use_gui:=true`
 
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
@@ -468,7 +411,7 @@ The user can change each joint by GUI, if the user launch only RViz by executing
 
 {% capture notice_01 %}
 **NOTE**:
-- This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+- This instruction has been tested on `Ubuntu 18.04` and `ROS2 Dashing Diademata`.
 - This instruction is supposed to be run on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
 - Make sure to run the [OpenMANIPULATOR-X controller](/docs/en/platform/ros2_openmanipulator_x/ros_controller_package/#launch-controller) instructions before running the instructions below.
 {% endcapture %}

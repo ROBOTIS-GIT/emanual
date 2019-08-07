@@ -66,7 +66,7 @@ sidebar:
   Launch `open_manipulator_teleop_keyboard` node for simple teleoperation test using the keyboard.
 
   ``` bash
-  $ roslaunch open_manipulator_teleop open_manipulator_teleop_keyboard.launch
+  $ ros2 run open_manipulator_x_teleop open_manipulator_x_teleop_keyboard
   ```
   If the node is successfully launched, the following instruction will appeare in the terminal window.
 
@@ -108,7 +108,7 @@ sidebar:
 Install packages for teleoperation using PS4 joystick.
 
 ``` bash
-$ sudo apt-get install ros-kinetic-joy ros-kinetic-joystick-drivers ros-kinetic-teleop-twist-joy
+$ sudo apt install ros-dashing-joy
 $ sudo pip install ds4drv
 ```
 
@@ -122,9 +122,9 @@ Enter pairing mode with PS4 by pressing and holding Playstation button + share b
 
 ``` bash
 $ export ROS_NAMESPACE=/open_manipulator
-$ roslaunch teleop_twist_joy teleop.launch
+$ ros2 run joy joy_node
 
-$ roslaunch open_manipulator_teleop open_manipulator_teleop_joystick.launch
+$ ros2 run open_manipulator_x_teleop open_manipulator_x_teleop_joystick
 ```
 
 ### [XBOX 360 Joystick](#xbox-360-joystick)
@@ -139,8 +139,9 @@ Connect XBOX 360 joystick to the PC with Wireless Adapter or USB cable, and laun
 ``` bash
 $ sudo xboxdrv --silent
 $ export ROS_NAMESPACE=/open_manipulator
-$ roslaunch teleop_twist_joy teleop.launch
-$ roslaunch open_manipulator_teleop open_manipulator_teleop_joystick.launch
+$ ros2 run joy joy_node
+
+$ ros2 run open_manipulator_x_teleop open_manipulator_x_teleop_joystick
 ```
 
 ## [MoveIt!](#moveit)

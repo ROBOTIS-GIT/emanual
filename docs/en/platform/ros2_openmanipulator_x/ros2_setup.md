@@ -15,7 +15,7 @@ sidebar:
 
 # [[ROS2] Setup](#ros-setup)
 
-**NOTE** : The following instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+**NOTE** : The following instruction has been tested on `Ubuntu 18.04` and `ROS2 Dashing Diademata`.
 {: .notice--info}
 
 **WARNING** : If you would like to control OpenMANIPULATOR-X on OpenCR (Embedded board) instead of using ROS, please set it up as described in [OpenCR Setup](/docs/en/platform/ros2_openmanipulator_x/opencr_setup/#opencr-setup).
@@ -34,22 +34,9 @@ If you need more help with installing Ubuntu, check out the step-by-step guide f
 
 ## [Install ROS on PC](#install-ros-on-pc)
 
-![](/assets/images/platform/turtlebot3/logo_ros.png)
+Please follow the link below.
 
-The following script will allow you to simplify the ROS installation procedure. Run the following commands in a terminal window. The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. The shortcut key to open a terminal is `Ctrl`+`Alt`+`t`. After installing ROS, please reboot PC.
-
-``` bash
-$ sudo apt-get update
-$ sudo apt-get upgrade
-$ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh && chmod 755 ./install_ros_kinetic.sh && bash ./install_ros_kinetic.sh
-```
-
-**NOTE**: In order to check which packages are installed, please check this link out. [install_ros_kinetic.sh](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh)
-{: .notice--info}
-
-If you prefer manual installation, please follow the link below.
-
-- [Manual installation of ROS Kinetic](http://wiki.ros.org/kinetic/Installation/Ubuntu)
+- [Manual Installation of ROS2 Dashing Diademata](https://index.ros.org/doc/ros2/Installation/Dashing/Linux-Install-Binary/)
 
 ## [Install ROS Packages](#install-ros-packages)
 Install dependent packages for OpenMANIPULATOR-X. Run the following commands in a terminal window.
@@ -58,22 +45,17 @@ Install dependent packages for OpenMANIPULATOR-X. Run the following commands in 
 {: .notice--info}
 
 ``` bash
-$ sudo apt-get install ros-kinetic-ros-controllers ros-kinetic-gazebo* ros-kinetic-moveit* ros-kinetic-industrial-core
+$ cd ~/colcon_ws/src/
+$ git clone https://github.com/bponsler/cmake_modules.git -b ros2-devel
+$ git clone https://github.com/ros/joint_state_publisher.git -b ros2-devel
+$ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git -b ros2
+$ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench.git -b ros2
+$ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench-msgs.git -b ros2
+$ git clone https://github.com/ROBOTIS-GIT/robotis_manipulator.git -b ros2
+$ cd ~/colcon_ws && colcon build
 ```
 
-``` bash
-$ cd ~/catkin_ws/src/
-$ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git
-$ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench.git
-$ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench-msgs.git
-$ git clone https://github.com/ROBOTIS-GIT/open_manipulator.git
-$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_msgs.git
-$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_simulations.git
-$ git clone https://github.com/ROBOTIS-GIT/robotis_manipulator.git
-$ cd ~/catkin_ws && catkin_make
-```
-
-If the catkin_make command has been completed without any errors, all the preparations for using OpenMANIPULATOR-X are done.
+If the colcon uild command has been completed without any errors, all the preparations for using OpenMANIPULATOR-X are done.
 
 ## [Communication Converter](#communication-converter)
 
