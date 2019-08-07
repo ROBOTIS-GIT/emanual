@@ -12,7 +12,7 @@ sidebar:
 
 # [DYNAMIXEL X](#dynamixel-x)
 
-![](/assets/images/dxl/x/dxl_x_productline.jpg)
+![](/assets/images/dxl/x/dxl_x_productline.png)
 
 > DYNAMIXEL X Series Lineups
 

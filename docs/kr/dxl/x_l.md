@@ -15,7 +15,7 @@ header:
 
 # 다이나믹셀 XL 시리즈
 
-![](/assets/images/dxl/x/dxl_x_productline_kr.jpg)
+![](/assets/images/dxl/x/dxl_x_productline_kr.png)
 
 # [XL320](xl320)
 
