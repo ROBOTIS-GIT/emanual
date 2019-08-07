@@ -17875,18 +17875,18 @@ rplustask3:
         titlekr: "직접 입력"
         url: /software/rplustask3/task_programming/#
         urlkr: /software/rplustask3/task_programming/#제어기-직접-입력
-    - title: "Dynamixel"
+    - title: "DYNAMIXEL Device"
       titlekr: "다이나믹셀 장치"
-      url: /software/rplustask3/task_programming/#dynamixel
+      url: /software/rplustask3/task_programming/#dynamixel-device
       urlkr: /software/rplustask3/task_programming/#다이나믹셀-장치
       children:
-      - title: ""
+      - title: "DYNAMIXEL"
         titlekr: "다이나믹셀"
-        url: /software/rplustask3/task_programming/#
+        url: /software/rplustask3/task_programming/#dynamixel
         urlkr: /software/rplustask3/task_programming/#다이나믹셀
-      - title: ""
+      - title: "SyncWrite"
         titlekr: "SyncWrite"
-        url: /software/rplustask3/task_programming/#
+        url: /software/rplustask3/task_programming/#syncwrite
         urlkr: /software/rplustask3/task_programming/#syncwrite
       - title: ""
         titlekr: "적외선 센서 어레이"
