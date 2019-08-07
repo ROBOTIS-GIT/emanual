@@ -1,21 +1,33 @@
 ---
 layout: archive
 lang: en
-ref: ros2_openmanipulator_x_getting_started
+ref: openmanipulator_ros2_overview_to_assembly
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/ros2_openmanipulator_x/getting_started/
+permalink: /docs/en/platform/ros2_openmanipulator_x/overview_to_assembly/
 sidebar:
   title: "[ROS2] OpenMANIPULATOR-X"
   nav: "ros2_openmanipulator_x"
 ---
 
-<div style="counter-reset: h1 2"></div>
+<div style="counter-reset: h1 0"></div>
+
+# [Overview](#overview)
+
+ ROS-enabled OpenMANIPULATOR-X (RM-X52-TNM) is a fully open robot platform consisting of OpenSoftware​, OpenHardware and OpenCR(Embedded board)​.  
+ Please refer to an associated link below then get more details about \[ROS2] OpenMANIPULATOR-X.     
+  - [Overview of OpenMANIPULATOR-X](/docs/en/platform/openmanipulator_x/overview/#overview)
+
+# [Specification](#Specification)
+
+You can refer to [Hardware Specification and Dimension](/docs/en/platform/openmanipulator_x/specification/#specification) as \[ROS2] OpenMANIPULATOR-X has the same hardware as OpenMANIPULATOR-X. 
 
 # [Getting Started](#getting-started)
-This chapter is for users who are new to OpenMANIPULATOR-X. The manual has an enormous amount of content, but this chapter explains how information is divided.
 
+This chapter is for beginner of OpenMANIPULATOR-X. Its manual contains an enormous amount of content, but in this chapter, you can get brief contents of OpenMANIPULATOR-X.
+
+The whole contents of e-Manual about OpenMANIPULATOR-X contains a number of infomation, so that it might cause confusion or pressure for you. In this chapter, you can get breif information of OpenMANIPULATOR-X. 
 
 ## [About OpenMANIPULATOR-X](#about-OpenMANIPULATOR-x)
 <!-- <img src="/assets/images/platform/OpenMANIPULATOR_x/OpenMANIPULATOR2.png" width="1200"> -->
@@ -24,7 +36,8 @@ ROS-enabled OpenMANIPULATOR-X is a full open robot platform consisting of **Open
 
 
 ## [OpenMANIPULATOR-X Setup](#openmanipulator_x-setup)
-When you have enough understanding about OpenMANIPULATOR-X from above step, it is recommended to proceed in the following order.
+
+Once you get familiar with the previous steps, proceed the follwing orders.   
 
 ### [Hardware Setup](#hardware-setup)
 
@@ -32,7 +45,7 @@ When you have enough understanding about OpenMANIPULATOR-X from above step, it i
 Please check [the part list page](/docs/en/platform/ros2_openmanipulator_x/assembly/#part-lists), prepare the every requaired parts.
 The [SMPS 12V5A](http://en.robotis.com/shop_en/item.php?it_id=903-0124-200) is necessary to supply the 12V power to the dynamixels of OpenMANIPULATOR-X. The [Base Plate-02](http://en.robotis.com/shop_en/item.php?it_id=905-0026-000)
 is used to secure the OpenMANIPULATOR-X to the workspace. 
-The controller or communication board you need to prepare depends on your development environment. If you want to develop on an embedded system, prepare [OpenCR](http://en.robotis.com/shop_en/item.php?it_id=903-0257-000) and PC. To use the ROS, prepare your PC and either the [U2D2](http://en.robotis.com/shop_en/item.php?it_id=902-0132-000) + [U2D2 Power Hub Board](http://en.robotis.com/shop_en/item.php?it_id=902-0145-000) or [OpenCR](http://en.robotis.com/shop_en/item.php?it_id=903-0257-000).  
+You need to prepare a controller or communication board for your development environment. If you want to develop on an embedded system, prepare [OpenCR](http://en.robotis.com/shop_en/item.php?it_id=903-0257-000) and PC. To use the ROS or ROS2, prepare your PC and either the [U2D2](http://en.robotis.com/shop_en/item.php?it_id=902-0132-000) + [U2D2 Power Hub Board](http://en.robotis.com/shop_en/item.php?it_id=902-0145-000) or [OpenCR](http://en.robotis.com/shop_en/item.php?it_id=903-0257-000).  
 To summarize, the parts to prepare are shown in the table below.
 
 2. `Assembly` : The OpenMANIPULATOR-X is provided as a non-assembled part to the box. Assemble the OpenMANIPULATOR-X according to the instructions of [Assembly Manual](/docs/en/platform/ros2_openmanipulator_x/assembly/#assembly-manual). 
@@ -49,7 +62,7 @@ To summarize, the parts to prepare are shown in the table below.
 
 ### [Board Connection](#board-connection)
 To set up the software on the OpenMANIPULATOR-X and run it, you need to connect your PC and the OpenMANIPULATOR-X to the electrical board.
-You can use OpenCR alone or U2D2 and U2D2 Power Hub Board, as the electrical board. A simple connection diagram is shown below. Refer to [ROS] setup or [OpenCR] setup page for detailed connection method.
+You can use OpenCR alone or U2D2 and U2D2 Power Hub Board, as the electrical board. A simple connection diagram is shown below. Refer to [ROS2] setup or [OpenCR] setup page for detailed connection method.
 
 <img src="/assets/images/platform/openmanipulator_x/connection.png" width="600">
 
@@ -58,7 +71,7 @@ You can use OpenCR alone or U2D2 and U2D2 Power Hub Board, as the electrical boa
 OpenMANIPULATOR-X surpports bath of ROS develop environment and an embedded system (OpenCR). Choose the development environment you want to run OpenMANIPULATOR-X, and configure the software for the environment.
 
 #### ROS Environment
-In the ROS development environment, you can run OpenMANIPULATOR-X using various packages provided by ROS as well as our ROS package. In this case, all the processes to run OpenMANIPULATOR-X are done in PC, and electric board is used only to convert the digital signal coming from PC into the communication signal used in dynamixel. If you want to run OpenMANIPULATOR-X in ROS environment, please install Linux, ROS and ROS package on PC according to [[ROS] Setup](/docs/en/platform/ros2_openmanipulator_x/ros_setup/#ros-setup) chapter.
+In the ROS development environment, you can run OpenMANIPULATOR-X using various packages provided by ROS as well as our ROS package. In this case, all the processes to run OpenMANIPULATOR-X are done in PC, and electric board is used only to convert the digital signal coming from PC into the communication signal used in dynamixel. If you want to run OpenMANIPULATOR-X in ROS2 environment, please install Linux, ROS2 and ROS2 package on PC according to [[ROS2] Setup](/docs/en/platform/ros2_openmanipulator_x/ros_setup/#ros-setup) chapter.
 
 <!-- <img src="/assets/images/platform/openmanipulator_x/ros_enabled.png" width="150" border="0"> -->
 
@@ -133,10 +146,6 @@ Modify the hardware(DOF, structure) and software(kinematics, trajectory) of Open
 
 <img src="/assets/images/platform/openmanipulator_x/OpenManipulator_friends.png" width="760">
 
+# [Assembly](#assembly)
 
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/4PK3I1JfSzc" frameborder="0" allowfullscreen></iframe> -->
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/WR9_1AheOok" frameborder="0" allowfullscreen></iframe> -->
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/UtFnywz4hdY" frameborder="0" allowfullscreen></iframe> -->
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/vFyphQwdV6I" frameborder="0" allowfullscreen></iframe> -->
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/9YUWLAm24yA" frameborder="0" allowfullscreen></iframe> -->
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/3FumPqbOs5k" frameborder="0" allowfullscreen></iframe> -->
+You can refer to [Assembly](/docs/en/platform/openmanipulator_x/assembly/#assembly) section at this link.
