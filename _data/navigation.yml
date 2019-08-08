@@ -14219,18 +14219,18 @@ kit1:
         titlekr: "SPI"
         url: /edu/engineer/kit1/#spi
         urlkr: /edu/engineer/kit1/#spi
-    - title: "Robot Configuration"
+    - title: "Setting Up the Robot"
       titlekr: "로봇 설정하기"
-      url: /edu/engineer/kit1/#robot-configuration
+      url: /edu/engineer/kit1/#setting-up-the-robot
       urlkr: /edu/engineer/kit1/#로봇-설정하기
       children:
-      - title: "Assembly Inspection"
+      - title: "Check DYNAMIXEL Assembly"
         titlekr: "모터 조립확인"
-        url: /edu/engineer/kit1/#assembly-inspection
+        url: /edu/engineer/kit1/#check-dynamixel-assembly
         urlkr: /edu/engineer/kit1/#모터-조립확인
-      - title: "Offset Setting"
+      - title: "DYNAMIXEL Offset"
         titlekr : "모터 오프셋 설정"
-        url: /edu/engineer/kit1/#offset-setting
+        url: /edu/engineer/kit1/#dynamixel-offset
         urlkr: /edu/engineer/kit1/#모터-오프셋-설정
   - title: "Tutorials"
     titlekr: "튜토리얼"
@@ -14241,9 +14241,9 @@ kit1:
       titlekr: "머신러닝 기반의 사물인식"
       url: /edu/engineer/kit1/#machine-learning-object-recognition
       urlkr: /edu/engineer/kit1/#머신러닝-기반의-사물인식
-  - title: "Lecture Materials"
+  - title: "Study Materials"
     titlekr: "교육자료 다운로드"
-    url: /edu/engineer/kit1/#lecture-materials
+    url: /edu/engineer/kit1/#study-materials
     urlkr: /edu/engineer/kit1/#교육자료-다운로드
   - title: "Download Softwares"
     titlekr: "소프트웨어 다운로드"

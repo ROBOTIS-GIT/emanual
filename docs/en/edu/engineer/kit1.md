@@ -441,34 +441,34 @@ Select the menu button on the top right corner of the app for app configuration.
 ### [Dr.R](#drr)
 
 #### 감정 표현  
-Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정이 나타납니다. 로봇을 터치하거나 이벤트가 발생하면 표정 변화, 움직이기, 말하기 등의 다양한 감정 표현을 합니다.  
+Selecting Dr.R example from R+ Engineer app will display robot face on the screen. Touch robot or trigger events to change the emotion of the robot with facial expressions, motions and speeches.
 
 ![](/assets/images/edu/engineer/kit1/engineer_app_emotion_1.png)
 
 #### 모드 선택하기
 
-오른쪽 아래 `Mode` 버튼을 터치하면 아래와 같이 모드 변경 메뉴가 나타납니다. 5개의 모드와 2개의 옵션 메뉴가 있습니다.
+Press the `Mode` button to display supported modes and options.
 
 ![](/assets/images/edu/engineer/kit1/engineer_app_emotion_3.png)
 
-##### 모드 메뉴
+##### Mode Menu
 
-|                        아이콘                         | 모드 설명                                                                                                                                                       |
-|:-----------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|  ![](/assets/images/edu/engineer/kit1/icon_demo.png)  | **DEMO : 감성인식 모드**<br>기본 데모 모드로 스마트 기기 화면을 통해 감정상태를 표현합니다.<br>로봇이나 스마트 기기를 터치하면 다양한 반응을 합니다.            |
-|  ![](/assets/images/edu/engineer/kit1/icon_face.png)  | **FACE : 얼굴인식 모드**<br>스마트 기기의 카메라로 얼굴을 인식하고 추적하는 모드입니다.<br>AR 기술을 적용해 추적하는 얼굴 위에 스티커를 입힙니다.               |
-| ![](/assets/images/edu/engineer/kit1/icon_object.png) | **OBJECT : 객체인식 모드**<br>사전에 등록된 물건을 카메라로 인식하고 말하는 모드입니다.<br>바나나, 볼펜, 차 열쇠, 지갑, 지폐 등 12종의 물건을 말할 수 있습니다. |
-| ![](/assets/images/edu/engineer/kit1/icon_voice.png)  | **VOICE : 음성인식 모드**<br>등록된 음성 명령을 인식하고 실행하는 모드입니다.<br>모드 변경 및 옵션 메뉴 실행, 종료 등의 명령을 인식합니다.                      |
-|  ![](/assets/images/edu/engineer/kit1/icon_clap.png)  | **CLAP : 박수감지 모드**<br>제어기의 마이크 센서를 통해 박수소리를 인식하는 모드입니다.<br>인식한 박수소리의 숫자만큼 Dr.R이 따라서 박수를 칩니다.              |
+|                         Icon                          | Mode Description                                                                                                                                                                                                    |
+|:-----------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  ![](/assets/images/edu/engineer/kit1/icon_demo.png)  | **DEMO : Emotion Recognition**<br>This default demo mode expresses Dr.R’s emotion on the smart device screen.<br>Touch the robot or smart device will affect to Dr.R’s emotion and behavior.                        |
+|  ![](/assets/images/edu/engineer/kit1/icon_face.png)  | **FACE : Face Recognition**<br>The robot detects and tracks the face with the camera of the smart device.<br>AR technology will overlay an image on the detected face.                                              |
+| ![](/assets/images/edu/engineer/kit1/icon_object.png) | **OBJECT : Object Recognition**<br>The robot recognizes machine learned objects with the smart device camera.<br>Dr.R can distinguish 12 different objects including banana, pen, car key, wallet, paper money etc. |
+| ![](/assets/images/edu/engineer/kit1/icon_voice.png)  | **VOICE : Voice Recognition**<br>The robot recognizes registered voice commands.<br>Commands such as mode change, option menu execution, and termination are registered.                                            |
+|  ![](/assets/images/edu/engineer/kit1/icon_clap.png)  | **CLAP : Clap Detection**<br>The robot detects clapping sound with the controller microphone.<br>Dr.R will clap as many as perceived claps.                                                                         |
 
-##### 옵션메뉴
+##### Option Menu
 
-|                        아이콘                         | 옵션 설명                                                                                    |
-|:-----------------------------------------------------:|:---------------------------------------------------------------------------------------------|
-| ![](/assets/images/edu/engineer/kit1/icon_motor.png)  | **MOTOR : 다이나믹셀 점검**<br>로봇의 다이나믹셀 상태를 각각 테스트해 볼 수 있는 메뉴입니다. |
-| ![](/assets/images/edu/engineer/kit1/icon_offset.png) | **OFFSET : 모션오프셋**<br>모션 동작시 각 관절의 기본 위치를 설정하는 기능입니다.            |
+|                         Icon                          | Option Description                                                                                          |
+|:-----------------------------------------------------:|:------------------------------------------------------------------------------------------------------------|
+| ![](/assets/images/edu/engineer/kit1/icon_motor.png)  | **MOTOR : DYNAMIXEL Inspection**<br>This feature inspects each joint of the robot.                          |
+| ![](/assets/images/edu/engineer/kit1/icon_offset.png) | **OFFSET : Motion Offset**<br>This feature calibrates the offset position of each joint for proper motions. |
 
-**참고** : 옵션 메뉴는 모든 예제에 포함되어 있으며 세부 설정 방법은 [로봇 설정하기](#로봇-설정하기)를 참고하세요.
+**NOTE** : The Option Menu is available in all examples. Please refer to [로봇 설정하기](#로봇-설정하기) for more details.
 {: .notice--info}
 
 ### [MAX-E1](#max-e1)
@@ -477,19 +477,19 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
 
 ![](/assets/images/edu/engineer/kit1/max_controller.png)
 
-`조종 모드` : MAX-E1의 조종 모드를 일반/전투/축구모드로 변경할 수 있습니다.  
-`조종 버튼` : 전/후/좌/우 이동 및 속도 설정 버튼으로 로봇을 조종할 수 있습니다  
-`모션 버튼` : 각 조종 모드에 따라 각각 등록된 모션을 실행하는 버튼입니다.  
-`토크 설정` : 로봇의 다이나믹셀 토크를 켜거나 끌 수 있는 버튼입니다.  
-`메뉴 버튼` : MAX-E1 로봇의 특수 기능 메뉴를 불러오는 버튼입니다.  
+`Control Modes` : Select Normal / Fight / Soccer mode for MAX-E1.  
+`Control Buttons` : Control robot’s motion speed and moving directions.  
+`Motion Buttons` : Registered motions of MAX-E1 can be played.  
+`Torque Button` : DYNAMIXEL Torque On/Off switch.  
+`Menu Button` : Open additional menu for MAX-E1.  
 
-#### 메뉴 화면
+#### Mode Menu
 
-|                         아이콘                         | 메뉴 설명                                                                    |
-|:------------------------------------------------------:|:-----------------------------------------------------------------------------|
-| ![](/assets/images/edu/engineer/kit1/icon_remote.png)  | **REMOTE** : 기본 조종 모드 화면을 불러오는 버튼입니다.                      |
-| ![](/assets/images/edu/engineer/kit1/icon_gesture.png) | **GESTURE** : 등록된 스마트 기기의 동작 제스처로 로봇을 조종하는 기능입니다. |
-|  ![](/assets/images/edu/engineer/kit1/icon_clap.png)   | **CLAP** : 박수소리를 감지하고 감지한 횟수만큼 MAX-E1이 박수를 칩니다.       |
+|                          Icon                          | Mode Description                                                                             |
+|:------------------------------------------------------:|:---------------------------------------------------------------------------------------------|
+| ![](/assets/images/edu/engineer/kit1/icon_remote.png)  | **REMOTE** : Use smart device as a remote controller.                                        |
+| ![](/assets/images/edu/engineer/kit1/icon_gesture.png) | **GESTURE** : Use registered gestures in the smart device to control the robot.              |
+|  ![](/assets/images/edu/engineer/kit1/icon_clap.png)   | **CLAP** : The robot detects clapping sound and MAX-E1 will clap as many as perceived claps. |
 
 ### [SPI](#spi)
 
@@ -497,58 +497,58 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
 
 ![](/assets/images/edu/engineer/kit1/spi_controller.png)
 
-`조종 버튼` : 전/후/좌/우 이동 및 속도 설정 버튼으로 로봇을 조종할 수 있습니다.  
-`모션 버튼` : SPI 로봇에 등록된 모션을 실행하는 버튼입니다.  
-`토크 설정` : SPI 로봇의 다이나믹셀 토크를 켜거나 풀 수 있는 버튼입니다.  
-`메뉴 버튼` : SPI 로봇의 특수 기능 메뉴를 불러오는 버튼입니다.  
+`Control Buttons` : Control robot’s motion speed and moving directions.  
+`Motion Buttons` : Registered motions of SPI can be played.  
+`Torque Button` : DYNAMIXEL Torque On/Off switch.  
+`Menu Button` : Open additional menu for SPI.  
 
-#### 메뉴 화면
+#### Mode Menu
 
-|                        아이콘                         | 메뉴 설명                                                            |
-|:-----------------------------------------------------:|:---------------------------------------------------------------------|
-| ![](/assets/images/edu/engineer/kit1/icon_remote.png) | **REMOTE** : 기본 조종 모드 화면을 불러오는 버튼입니다.              |
-| ![](/assets/images/edu/engineer/kit1/icon_music.png)  | **GESTURE** : 스마트 기기를 통해 로봇과 함께 연주를 하는 기능입니다. |
-|  ![](/assets/images/edu/engineer/kit1/icon_clap.png)  | **CLAP** : 박수소리를 감지하고 감지한 횟수만큼 SPI가 움직입니다.     |
+|                         Icon                          | Mode Description                                                                          |
+|:-----------------------------------------------------:|:------------------------------------------------------------------------------------------|
+| ![](/assets/images/edu/engineer/kit1/icon_remote.png) | **REMOTE** : Use smart device as a remote controller.                                     |
+| ![](/assets/images/edu/engineer/kit1/icon_music.png)  | **MUSIC** : SPI and smart device play music together.                                     |
+|  ![](/assets/images/edu/engineer/kit1/icon_clap.png)  | **CLAP** : The robot detects clapping sound and SPI will clap as many as perceived claps. |
 
-## [로봇 설정하기](#로봇-설정하기)
+## [Setting Up the Robot](#setting-up-the-robot)
 
-### [모터 조립확인](#모터-조립확인)
-로보티즈 엔지니어에 사용된 다이나믹셀 ID 확인 및 작동 상태를 체크하는 기능입니다.
+### [Check DYNAMIXEL Assembly](#check-dynamixel-assembly)
+This function checks DYNAMIXEL ID and status of the ROBOTIS ENGINEER Kit.
 
-1. 각 예제를 선택한 후 메뉴의 옵션에서 `MOTOR`를 선택하여 점검합니다  
+1.  Launch the robot example from the main screen, and select `MOTOR` from the option menu.  
   ![](/assets/images/edu/engineer/kit1/engineer_app_motor.png)
 
-2. 화면에서 ID 번호를 선택하면 선택된 ID의 LED가 켜지고 중심 위치에서 좌우로 조금씩 움직입니다.  
+2. Select the joint ID from the screen. Check if the selected joint flinches while LED is turned on.  
   ![](/assets/images/edu/engineer/kit1/engineer_app_motor_2.png)
 
 
-### [모터 오프셋 설정](#모터-오프셋-설정)
-로보티즈 엔지니어에 사용된 다이나믹셀의 자세나 위치 값의 보정이 필요할 때 사용하는 기능입니다.  
-오프셋 기능을 통해 보정된 값은 로봇의 전원을 끄더라도 저장됩니다.  
-오프셋 기능을 숙지한 상태에서 미세하게 조정해야 하며 잘못된 값을 사용시 예제 동작이 잘 안되거나 로봇이 파손될 수 있습니다.
+### [DYNAMIXEL Offset](#dynamixel-offset)
+This function is used to adjust the pose of robot by calibrating offset values of DYNAMIXEL used in the ROBOTIS ENGINEERING KIT. Configured offset value will be saved in each DYNAMIXELs.  
+Please perform offset adjustment with a thorough understanding as it may cause unstable motions or hardware damages when improperly configured.
 
-1. 각 예제를 선택한 후 메뉴의 옵션에서 `OFFSET`을 선택합니다.  
+1. Launch the robot example from the main screen, and select `OFFSET` from the option menu.  
   ![](/assets/images/edu/engineer/kit1/engineer_app_motor_offset.png)
 
-2. 오프셋 값을 보정하려는 ID를 선택하면 아래와 같은 팝업창이 나타납니다.  
+2.  Select the joint ID to adjust offset from the screen and adjust menu will appear.  
   ![](/assets/images/edu/engineer/kit1/engineer_app_motor_offset_2.png)
 
-    - `+ / -` : ID 값을 증가시키거나 감소시킴  
-    - `Torque On / Off` : 다이나믹셀의 토크를 켜거나 끄기  
-    - `OK / CANCEL` : 오프셋 조정 값을 저장하거나 취소하기
+    - `+ / -` : Increase / Decrease the offset value.  
+    - `Torque On / Off` : Toggle the torque of the selected joint.  
+    - `OK / CANCEL` : Save / Cancel the changes in offset.
 
-3. `OK`를 눌러 저장하면 아래와 같은 확인 창이 나타납니다. 한 번 더 `OK`를 누르면 값이 저장되고 로봇에 반영됩니다.  
+3. Select `OK` to save the offset value. The confirmation message will appear.  
+  Select `OK` once again to save the offset value to robot.  
   ![](/assets/images/edu/engineer/kit1/engineer_app_motor_offset_3.png)
 
-4. 오프셋을 초기화 하거나 저장된 값을 불러오는 기능을 사용할 수 있습니다.
+4. Below buttons will reset or reload offset values of each joint.
     ![](/assets/images/edu/engineer/kit1/engineer_app_motor_offset_4.png)
 
-    - `Reset Offset` : 선택시 팝업창이 나타나며 `OK`를 클릭하면 모든 ID의 오프셋을 `0`으로 초기화 합니다.  
-    - `Initial Pose` : 최근에 저장된 오프셋 값을 불러오는 명령입니다. 관절을 잘못된 값으로 조정하였을 경우 저장된 값을 불러옵니다.
+    - `Reset Offset` : When selected, the confirmation window will appear. Select [OK] to reset the offset value of all joint.  
+    - `Initial Pose` : This button will reload the saved offset value. Incorrectly configured offset may be recovered with this button.
 
-# [튜토리얼](#튜토리얼)
+# [Tutorials](#tutorials)
 
-## [머신러닝 기반의 사물인식](#머신러닝-기반의-사물인식)
+## [[Machine Learning] Object Recognition](#machine-learning-object-recognition)
 로보티즈 엔지니어는 머신러닝(Tensor Flow)기반의 사물학습 및 객체인식 기능을 사용할 수 있습니다.  
 아래의 과정을 따라하며 머신러닝을 쉽게 시작해보세요.
 
@@ -764,29 +764,29 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
 <div class="notice--info">{{ retrain | markdownify }}</div>
 
 
-# [교육자료 다운로드](#교육자료-다운로드)
+# [Study Materials](#study-materials)
 
 {% capture edu_application %}
-아래의 링크에서 로보티즈 엔지니어 키트의 다양한 교육자료를 받을 수 있습니다.
+Additional course materials can be downloaded from below link.
 
-- [**교육자료 신청하기**](https://www.robotis.com/pdf_project/register.php)
+- [**Request Additional Course Materials**](https://www.robotis.com/pdf_project/register.php)
 {% endcapture %}
 <div class="notice--info">{{ edu_application | markdownify }}</div>
 
 ![](/assets/images/edu/engineer/kit1/engineer_edu_metarials.png)
 
-# [소프트웨어 다운로드](#소프트웨어-다운로드)
+# [Download Softwares](#download-softwares)
 
-- 로보티즈 엔지니어는 [R+ Task 3.0]을 지원합니다.
-- [R+ Task 3.0]은 기존의 [R+ Task 2.0]과 [로보플러스 모션 2.0]이 통합된 프로그램입니다.
-- 태스크 코드를 작성하여, 로봇을 원하는대로 명령으로 구동할 수 있습니다.
-- 모션파일로 로봇의 행동을 직접 만들어 줄 수 있습니다.
+- ROBOTIS ENGINEER supports [R+ Task 3.0].
+- [R+ Task 3.0] is an integrated software of [R+ Task 2.0] and [R+ Motion 2.0].
+- Write the task code to operate the robot.
+- Create various motions to vitalize the robot.
 
 <div class="notice--success">{{ app_install | markdownify }}</div>
 
-# [참고자료](#참고자료)
+# [References](#references)
 
-## [제어기 BLE 신호 세기 설정](#제어기-ble-신호-세기-설정)
+## [BLE Signal Setting](#ble-signal-setting)
 
 CM-550에 내장된 BLE 슬레이브 모듈의 신호의 세기가 약하거나 간섭이 발생할 경우 통신이 불안정할 수 있습니다.  
 이러한 경우 로보플러스 매니저 2.0을 사용하여 BLE 신호세기를 알맞게 설정할 수 있습니다.
@@ -909,9 +909,9 @@ CM-550에 내장된 BLE 슬레이브 모듈의 신호의 세기가 약하거나 
 {% include kr/parts/controller/fuse_cm-550.md %}
 
 
-[CM-550 매뉴얼 바로가기]: /docs/kr/parts/controller/cm-550/
-[2XL430-W250 매뉴얼 바로가기]: /docs/kr/dxl/x/2xl430-w250/
-[R+ Task 3.0]: /docs/kr/software/rplustask3/
-[R+ Task 2.0]: /docs/kr/software/rplus2/task/
-[로보플러스 모션 2.0]: /docs/kr/software/rplus2/motion/
-[동작 모드]: /docs/kr/parts/controller/cm-550/#동작-모드
+[CM-550 eManual]: /docs/en/parts/controller/cm-550/
+[2XL430-W250 eManual]: /docs/en/dxl/x/2xl430-w250/
+[R+ Task 3.0]: /docs/en/software/rplustask3/
+[R+ Task 2.0]: /docs/en/software/rplus2/task/
+[R+ Motion 2.0]: /docs/en/software/rplus2/motion/
+[동작 모드]: /docs/en/parts/controller/cm-550/#동작-모드
