@@ -12,7 +12,7 @@ sidebar:
 
 # [다이나믹셀 X](#다이나믹셀-x)
 
-![](/assets/images/dxl/x/dxl_x_productline_kr.jpg)
+![](/assets/images/dxl/x/dxl_x_productline_kr.png)
 
 > 다이나믹셀 X 시리즈 라인업
 
@@ -43,3 +43,7 @@ sidebar:
 - [XL320](/docs/kr/dxl/x/xl320/)
 - [XL430-W250](/docs/kr/dxl/x/xl430-w250/)
 - [2XL430-W250](/docs/kr/dxl/x/2xl430-w250/)
+
+## [XC 모델](#xc-모델)
+- [XC430-W150](/docs/kr/dxl/x/xc430-w150/)
+- [XC430-W240](/docs/kr/dxl/x/xc430-w240/)

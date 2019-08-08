@@ -9,6 +9,8 @@ permalink: /docs/en/platform/thormang3/introduction/
 sidebar:
   title: THORMANG3
   nav: "thormang3"
+product_group: thormang3
+page_number: 1
 ---
 
 # [Introduction](#introduction)
@@ -92,16 +94,16 @@ Recommended Component Specifications
 
 ### Hardware
 
-|Feature|Description|
-|:---:|:---:|
-|DOF|29|
-|Actuator|200W ([H54P-200-S500-R]) x 10 <br /> 100W ([H54P-100-S500-R]) x 11 <br /> 20W ([H42P-020-S300-R]) x 8|
-|Computer|Intel® NUC with Intel® Core™ i5 Processor<br />(DDR4 RAM 8GB / M.2 SSD 128GB) x2|
-|Wireless router|Dlink DIR-806A x 1|
-|Sensor|Logitech C920 HD Camera x 1<br />Intel Realsense(Option) x 1<br />Hokuyo UTM-30LX-EW(Option) x 1<br />F/T: ATi Mini58-SI-2800-120 x 2<br />IMU: MicroSrain 3DM-GX4-25 x 1|
-|Battery|22V, 22000mA x 1<br />18.5V, 11000mA x 1|
-|Height|137.5cm|
-|Weight|42Kg|
+|     Feature     |                                                                                Description                                                                                |
+|:---------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+|       DOF       |                                                                                    29                                                                                     |
+|    Actuator     |                                   200W ([H54P-200-S500-R]) x 10 <br /> 100W ([H54P-100-S500-R]) x 11 <br /> 20W ([H42P-020-S300-R]) x 8                                   |
+|    Computer     |                                             Intel® NUC with Intel® Core™ i5 Processor<br />(DDR4 RAM 8GB / M.2 SSD 128GB) x2                                              |
+| Wireless router |                                                                            Dlink DIR-806A x 1                                                                             |
+|     Sensor      | Logitech C920 HD Camera x 1<br />Intel Realsense(Option) x 1<br />Hokuyo UTM-30LX-EW(Option) x 1<br />F/T: ATi Mini58-SI-2800-120 x 2<br />IMU: MicroSrain 3DM-GX4-25 x 1 |
+|     Battery     |                                                                 22V, 22000mA x 1<br />18.5V, 11000mA x 1                                                                  |
+|     Height      |                                                                                  137.5cm                                                                                  |
+|     Weight      |                                                                                   42Kg                                                                                    |
 
 ### Software
 

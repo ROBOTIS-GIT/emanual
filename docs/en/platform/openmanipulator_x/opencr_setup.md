@@ -9,6 +9,8 @@ permalink: /docs/en/platform/openmanipulator_x/opencr_setup/
 sidebar:
   title: OpenMANIPULATOR-X
   nav: "openmanipulator_x"
+product_group: openmanipulator_x
+page_number: 10
 ---
 
 <div style="counter-reset: h1 9"></div>

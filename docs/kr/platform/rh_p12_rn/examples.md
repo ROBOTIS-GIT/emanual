@@ -9,6 +9,8 @@ permalink: /docs/kr/platform/rh_p12_rn/examples/
 sidebar:
   title: RH-P12-RN
   nav: "rh_p12_rn"
+product_group: rh_p12_rn
+page_number: 2
 ---
 
 <div style="counter-reset: h1 5"></div>

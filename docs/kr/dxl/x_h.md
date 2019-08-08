@@ -13,9 +13,9 @@ header:
     - excerpt: 'DYNAMIXEL XH Series'
 ---
 
-# 다이나믹셀 X 시리즈
+# 다이나믹셀 XH 시리즈
 
-![](/assets/images/dxl/x/dxl_x_productline_kr.jpg)
+![](/assets/images/dxl/x/dxl_x_productline_kr.png)
 
 # [XH430-W210](#xh430-w210)
 

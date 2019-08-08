@@ -15,6 +15,12 @@ sidebar:
 
 # [[ROS2] Applications](#ros-applications)
 
+{% capture comming_soon_01 %}
+`[ROS2] Applications` for \[ROS2] OpenMANIPULATOR-X has not been disclosed yet. 
+{% endcapture %}
+<div class="notice--info">{{ comming_soon_01 | markdownify }}</div>
+
+<!--
 ## [Camera Application](#camera-application)
 
 {% capture notice_01 %}
@@ -586,6 +592,8 @@ There are four control modes. Please enter that number in the terminal.
 3. Stop Recording Trajectory: Ends the recording.
 4. Play Recorded Trajectory: The trajectory recorded in the 2nd mode is reproduced only by the slave robot.
 
+
+-->
 
 [OpenCR]: /docs/en/parts/controller/opencr10/
 [OpenCR Manual]: /docs/en/parts/controller/opencr10/

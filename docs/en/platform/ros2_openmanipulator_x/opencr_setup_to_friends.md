@@ -15,7 +15,7 @@ sidebar:
 
 # [[OpenCR] Operation](#opencr-operation)
 
-Please refer to [[OpenCR] Operation](docs/en/platform/openmanipulator_x/opencr_operation/) section.
+Please refer to [[OpenCR] Operation](/docs/en/platform/openmanipulator_x/opencr_operation/) section.
 
 # [[OpenCR] Setup](#opencr-setup)
 

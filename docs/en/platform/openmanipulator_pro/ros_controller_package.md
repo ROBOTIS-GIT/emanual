@@ -9,6 +9,8 @@ permalink: /docs/en/platform/openmanipulator_pro/ros_controller_package/
 sidebar:
   title: OpenMANIPULATOR-PRO
   nav: "openmanipulator_pro"
+product_group: openmanipulator_pro
+page_number: 5
 ---
 
 <div style="counter-reset: h1 4"></div>
@@ -598,7 +600,7 @@ $ rqt
 ![](/assets/images/platform/openmanipulator_pro/rqt1.png)  
 
 
-**TIP**: If rqt is not displayed, select the `plugin` -> `Topic Monitor` -> ` OpenMANIPULATOR-PRO`.
+**TIP**: If rqt is not displayed, select the `plugin` -> `Topic Monitor` -> `OpenMANIPULATOR-PRO`.
 {: .notice--success}
 
 Topics without a check mark will not be monitored. To monitor topics, click the checkboxes next. 

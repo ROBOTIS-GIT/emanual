@@ -15,6 +15,12 @@ sidebar:
 
 # [[ROS2] Simulation](#ros-simulation)
 
+{% capture coming_soon_01 %}
+`[ROS2] Simulation` for \[ROS2] OpenMANIPULATOR-X has not been disclosed yet.
+{% endcapture %}
+<div class="notice">{{ coming_soon_01 | markdownify }}</div>
+<!--
+
 {% capture notice_01 %}
 **NOTE**:
 - This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
@@ -104,6 +110,7 @@ Joint Dynamixel ID : 13, Model Name : XM430-W350
 Joint Dynamixel ID : 14, Model Name : XM430-W350  
 Gripper Dynamixel ID : 15, Model Name :XM430-W350
 {: .notice--info}
+-->
 
 [OpenCR]: /docs/en/parts/controller/opencr10/
 [OpenCR Manual]: /docs/en/parts/controller/opencr10/

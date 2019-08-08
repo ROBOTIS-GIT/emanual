@@ -22,7 +22,7 @@ product_group: 2xl430-w250
 - 단계별 로봇교육과정 및 표준 커리큘럼 제공
 - 3D프린팅 지원
 - 로보플러스 엔지니어, 로보플러스 태스크 3.0 등 다용도 소프트웨어 사용가능
-- Raspberry Pi 와 카메라 확장가능
+- 라즈베리 파이와 카메라 확장가능
 
 
 ## [부품 목록](#부품-목록)
@@ -31,18 +31,18 @@ product_group: 2xl430-w250
 
 ### [CM-550 제어기](#cm-550-제어기)
 
-#### [제품 사양](#제품-사양)  
+#### [제품 사양](#제품-사양)
 
-|     항목      |                                                           사양                                                        |
-|:-------------:|:--------------------------------------------------------------------------------------------------------------------:|
-|     무게      |                                                            58.8g                                                        |
-|      MCU      |                                   ARM Cortex-M4 (168 [MHz], 32Bit)                                                   |
-|   동작 전압   |충전지 : 허용범위 6.5V ~ 15V, 권장 전압 11.1V (Li-PO 3cell)<br />SMPS : 허용범위 6.5V ~ 15V, 권장 전압 12.0V<br />Micro USB : 허용범위 4.75V ~ 5.25V, 권장 전압 5.0V|
-|  소모 전류량  | 대기시 : 50mA<br />포트 1 ~ 2 I/O 최대전류 : 0.5A<br />포트 3 ~ 5 I/O 최대전류 : 0.02A<br />전체 최대 전류 : 10A (Fuse)  |
-|   동작 온도   |                                                    -5&deg;C ~ 70&deg;C                                                |
-|   통신 모듈   |                                                    BLE Slave 모듈 내장                                                 |
-| 내부 I/O 장치 | 버튼 : 2 개 (MODE 1, START 1)<br />마이크 (소리 감지) : 1<br />부저 : 1<br />전압 센서 : 1<br />자이로 가속도 센서 : 1<br />RGB LED : 1 |
-| 외부 I/O 장치 |       로보티즈 5핀 포트 : 5<br />(서보모터/IR센서/온습도센서 : 1, 2번 포트 사용)<br />X 시리즈 다이나믹셀 포트 : 6       |
+|     항목      |                                                                                              사양                                                                                               |
+|:-------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+|     무게      |                                                                                            58.8 [g]                                                                                             |
+|      MCU      |                                                                               ARM Cortex-M4 (168 [MHz], 32 [Bit])                                                                               |
+|   동작 전압   | 충전지 : 허용범위 6.5 ~ 15 [V], **권장 전압 11.1 [V] (Li-PO 3cell)**<br />SMPS : 허용범위 6.5 ~ 15 [V], **권장 전압 12.0 [V]**<br />Micro USB : 허용범위 4.75 ~ 5.25 [V], **권장 전압 5.0 [V]** |
+|  소모 전류량  |                               대기시 : 50 [mA]<br />포트 1 ~ 2 I/O 최대전류 : 0.5 [A]<br />포트 3 ~ 5 I/O 최대전류 : 0.02 [A]<br />전체 최대 전류 : 10 [A] (Fuse)                               |
+|   동작 온도   |                                                                                        -5 ~ 70 [&deg;C]                                                                                         |
+|   통신 모듈   |                                                                                       BLE Slave 모듈 내장                                                                                       |
+| 내부 I/O 장치 |                                버튼 : 2 (MODE, START)<br />마이크 (소리 감지) : 1<br />부저 : 1<br />전압 센서 : 1<br />자이로 가속도 센서 : 1<br />온도 센서 : 1<br />RGB LED : 3                                 |
+| 외부 I/O 장치 |                                             로보티즈 5핀 포트 : 5 (서보모터/IR센서/온습도센서 : 1, 2번 포트 사용)<br />X 시리즈 다이나믹셀 포트 : 6                                             |
 
 
 #### [CM-550 각 부 명칭](#cm-550-각-부-명칭)  
@@ -141,17 +141,17 @@ product_group: 2xl430-w250
 
 {% capture eng_kit1_danger3 %}  
 ![](/assets/images/icon_warning.png)  
-1. 로봇을 통해서는 충전되지 않으며, 전용충전기를 사용하여 충전해야 합니다.
-2. 충전기나 충전지를 분해 또는 떨어뜨리거나 충격을 가하면 안됩니다.
-3. 충전지에 열을 가하거나 불, 물, 또는 기타 액체류에 접촉하면 안됩니다.
-4. 전자레인지, 세탁기, 또는 세탁물 건조기에 전지를 넣으면 안됩니다.
-5. 손상된 충전지를 사용하면 안됩니다. (부풀어 오른 것, 변형된 것, 외관이 손상된 것 등)
-6. 충전지 양극과 음극을 단락시키면 안됩니다.
-7. 충전지를 충전하기 전에 올바른 극에 연결되었는지 확인하고 충전합니다.
-8. 충전지가 뜨거워진 상태에서 충전하면 안됩니다. 차가워진 후 충전합니다.
-9. 온도나 습도가 높은 곳에 보관하면 안됩니다.
-10. 충전기에 2셀, 3셀을 동시에 충전하면 안됩니다.
-11. 충전기에 전원을 연결하지않고, 배터리만 연결하면 안됩니다.
+1. 충전지는 로봇의 제어기로 충전되지 않으며, 반드시 제품에 포함된 전용충전기를 사용하여 충전해야 합니다.
+2. 충전기나 충전지를 분해 또는 떨어뜨리거나 충격을 가하지 마십시오.
+3. 충전지에 열을 가하거나 불, 물, 또는 기타 액체류에 접촉하지 마십시오.
+4. 전자레인지, 냉장고, 세탁기, 또는 세탁물 건조기에 충전지를 넣지 마십시오.
+5. 손상된 충전지를 사용하지 마십시오. (부풀어 오른 것, 변형된 것, 외관이 손상된 것 등)
+6. 충전지의 양극과 음극을 단락시키지 마십시오.
+7. 충전지를 충전하기 전에 올바른 극에 연결되었는지 확인하고 충전하십시오.
+8. 충전지가 뜨거워진 상태에서 충전하지 마십시오. 충전지가 상온의 온도일 때 충전하십시오.
+9. 온도나 습도가 높은 곳에 보관하지 마십시오.
+10. 충전기에 여러개의 충전지를 동시에 연결하지 마십시오.
+11. 충전기에 전원을 연결하지 않은 상태에서 배터리만 연결하지 마십시오.
 {% endcapture %}
 <div class="notice--danger">{{ eng_kit1_danger3 | markdownify }}</div>
 
@@ -159,7 +159,7 @@ product_group: 2xl430-w250
 
 #### [다이나믹셀 조립](#다이나믹셀_조립)
 
-- 2축 다이나믹셀을 제어하기 위해 혼마다 고유의 ID가 부여되어 있습니다.  
+- 2축 다이나믹셀을 제어하기 위해 각 축마다 중복되지 않는 고유의 ID가 부여되어 있습니다.  
 - 혼의 맞은편 ID, 상태 LED로 다이나믹셀의 상태를 확인할 수 있습니다  
 - 로보티즈 엔지니어에서는 주요 관절 부위의 견고한 조립을 위해 나사를 사용합니다.  
 (표시된 부분이 나사를 조립하는 부분입니다)  
@@ -181,8 +181,8 @@ product_group: 2xl430-w250
 
 {% capture warning_01 %}  
 **주의**  
-- 케이스의 중앙 위치와 출력혼의 위치가 일치한 상태가 중앙 값입니다.  
-- 재조립 등으로 인하여 다이나믹셀 혼 위치가 변경되었을 경우 드라이버를 이용하여 혼 중앙의 볼트를 오른쪽방향으로 돌리면 혼이 회전합니다. 볼트를 왼쪽 방향으로 돌리지 않도록 주의해주세요.  
+- 케이스 중앙의 표식과 혼의 표식이 일치한 상태가 중앙 값입니다.  
+- 재조립 등으로 인하여 다이나믹셀 혼 위치가 변경되었을 경우 드라이버를 이용하여 혼 중앙의 나사를 시계방향으로 천천히 돌리면 혼이 회전합니다. 나사를 반시계 방향으로 돌리면 나사가 풀어지므로 주의해주세요.  
 {% endcapture %}
 <div class="notice--warning">{{ warning_01 | markdownify }}</div>
 
@@ -204,17 +204,17 @@ product_group: 2xl430-w250
 
 ##### 배선연결
 
-양쪽의 커넥터 중 한 곳만 연결하면 구동되며, 커넥터별로 구분은 필요없습니다. 로봇의 배선에 유리한 방향으로 연결하세요.
+두 개의 커넥터 중 한 개만 연결해도 전원 공급이 되며 통신이 가능합니다. 로봇의 배선에 유리한 커넥터를 사용하세요.
 
 ![](/assets/images/edu/engineer/kit1/cable_assembly_1.png)
 
-##### 아이들러캡을 통한 중공형 결합 방법
+##### 아이들러 캡을 통한 중공형 배선
 
 ![](/assets/images/edu/engineer/kit1/cable_assembly_2.png)
 
 **참고**  
 중공형 배선 연결은 케이블의 내구성을 더 높이거나 미관상의 케이블 정리를 위해 사용하는 결합 방법입니다.  
-반드시 사용해야 하는 것은 아니며 아이들러 캡 결합 후 부득이 케이블을 교체 시 일반적인 조립방법보다 시간이 더 소요될 수도 있습니다.  
+반드시 사용해야 하는 것은 아니며 아이들러 캡 결합 후 케이블을 교체시 일반적인 조립방법보다 시간이 더 소요될 수도 있습니다.
 {: .notice--info}
 
 
@@ -223,8 +223,11 @@ product_group: 2xl430-w250
 ## [앱 설치하기](#앱-설치하기)
 
 {% capture app_install %}
-**로보플러스 엔지니어 : [안드로이드 앱 다운로드](https://play.google.com/store/apps/details?id=com.robotis.robotisEngineer&hl=ko)**  
-**로보플러스 태스크 3.0 : [안드로이드 앱 다운로드](http://www.robotis.com/service/download.php?no=1772)**  
+![](/assets/images/edu/engineer/kit1/icon_engineer_48.png)  
+**로보플러스 엔지니어 : [안드로이드 앱 다운로드](https://play.google.com/store/apps/details?id=com.robotis.robotisEngineer)**  
+
+![](/assets/images/edu/engineer/kit1/icon_task_48.png)  
+**로보플러스 태스크 3.0 : [안드로이드 앱 다운로드](https://play.google.com/store/apps/details?id=com.robotis.task3)**  
 **로보플러스 태스크 3.0 : [윈도우용 설치파일 다운로드](http://www.robotis.com/service/download.php?no=1774)**  
 
 **참고** : [인터넷에서 다운로드 받은 앱 설치하기]{: .popup}
@@ -236,10 +239,10 @@ product_group: 2xl430-w250
 1. 스마트폰 또는 태블릿에서 `플레이 스토어` 또는 `앱 스토어`를 실행합니다.  
   ![](/assets/images/edu/engineer/kit1/app_installation_01_kr.png)
 
-2. `플레이 스토어` 또는 `앱 스토어` 검색창에 **로보티즈** 를 입력합니다.  
+2. `플레이 스토어` 또는 `앱 스토어` 검색창에 **로보티즈** 또는 **R+ ENGINEER** 를 입력합니다.  
   ![](/assets/images/edu/engineer/kit1/app_installation_02_kr.png)
 
-3. 검색된 목록에서 `ROBOTIS ENGINEER`를 찾아 `설치`를 선택합니다.  
+3. 검색된 목록에서 `R+ ENGINEER`를 찾아 `설치`를 선택합니다.  
   ![](/assets/images/edu/engineer/kit1/app_installation_03_kr.png)
 
 4. 아래와 같은 화면이 나타나면 `동의`를 눌러 설치를 진행합니다.  
@@ -288,17 +291,17 @@ product_group: 2xl430-w250
 
 
 {% capture opening_exam %}
-[로보플러스 태스크 3.0에서 태스크 예제 파일 열기](/docs/kr/software/rplustask3/#태스크-예제-열기)  
+[로보플러스 태스크 3.0에서 태스크 예제 파일 열기](/docs/kr/software/rplustask3/task_programming/#태스크-예제-열기)  
 [CM-550 제어기에 태스크 다운로드 하기](#태스크-다운로드-pc)  
 
-[로보플러스 태스크 3.0에서 모션 예제 파일 열기](/docs/kr/software/rplustask3/#모션-예제-열기)  
+[로보플러스 태스크 3.0에서 모션 예제 파일 열기](/docs/kr/software/rplustask3/motion_programming/#모션-예제-열기)  
 [CM-550 제어기에 모션 다운로드 하기](#모션-다운로드-pc)
 {% endcapture %}
 <div class="notice">{{opening_exam | markdownify}}</div>
 
 ### [PC에서 예제 다운로드](#pc에서-예제-다운로드)
 
-- Micro USB 포트를 이용하여, PC와 직접 연결하여 태스크(.tsk3) 및 모션(.mtn3) 파일을 원격으로 다운로드 받을 수 있습니다.
+- CM-550의 Micro USB 포트를 이용하면 PC와 직접 연결하여 태스크(.tsk3) 및 모션(.mtn3) 파일을 업로드 할 수 있습니다.
 - CM-550에 내장된 BLE 슬레이브 모듈과 BT-410 동글을 페어링하면 PC에서 원격으로 예제를 업로드 할 수 있습니다.
 
 1. CM-550에 전원을 연결합니다.
@@ -318,7 +321,7 @@ product_group: 2xl430-w250
 
 7. 연결 버튼을 클릭하여, PC와 제어기를 연결시켜 주세요.   
 
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_04.png)     
+    ![](/assets/images/edu/engineer/kit1/remote_pairing_04.png)  
 
 8. 연결이 성공적으로 완료되면 '삐비빅' 소리가 납니다.  
 
@@ -326,15 +329,15 @@ product_group: 2xl430-w250
 
 {% capture pairing_01 %}
 **참고** :
-- 첫 페어링 시 제어기의 `MODE` 버튼쪽으로 BT-410 동글을 가까이 가져가면 자동으로 페어링됩니다.
-- 페어링이 완료된 후에는 로봇과 PC의 거리가 멀어져도 통신이 끊어지지 않습니다.
-- 페어링이 한번 설정되면, 이후 멀리서도 자동으로 페어링이 됩니다.  
+- 첫 페어링시 제어기의 `MODE` 버튼쪽으로 BT-410 동글을 가까이 가져가면 자동으로 페어링됩니다.
+- 페어링이 완료된 후에는 블루투스의 통신거리 이내에서 로봇과 PC가 멀어져도 연결이 유지됩니다.
+- 페어링이 한번 설정되면, 재시작할 때 블루투스의 통신거리 이내에서 자동으로 페어링이 됩니다.  
 {% endcapture %}
 <div class="notice--info">{{ pairing_01 | markdownify}}</div>
 
 #### [태스크 다운로드 (PC)](#태스크-다운로드-pc)
 
-제어기에 태스크(.tsk3)를 다운로드 하는 방법입니다.   
+제어기에 태스크(.tsk3)를 다운로드하는 방법입니다.   
 
 1. 제어기와 PC가 연결된 상태에서, 제품에 맞는 태스크 예제를 선택합니다.
 
@@ -342,8 +345,8 @@ product_group: 2xl430-w250
 
 2. 오른쪽 상단의 `프로그램 다운로드` 버튼을 클릭합니다.
 
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_07.png)    
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_08.png)   
+    ![](/assets/images/edu/engineer/kit1/remote_pairing_07.png)  
+    ![](/assets/images/edu/engineer/kit1/remote_pairing_08.png)  
 
 #### [모션 다운로드 (PC)](#모션-다운로드-pc)
 
@@ -351,7 +354,7 @@ product_group: 2xl430-w250
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_09.png)  
 
-2. 다운로드 하려는 모션예제를 선택합니다.
+2. 다운로드 하려는 모션 예제를 선택합니다.
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_10.png)  
 
@@ -359,13 +362,13 @@ product_group: 2xl430-w250
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_11.png)  
 
-4. 모션 다운로드 탭에서는, 모션 그룹을 선택할 수 있습니다. 원하는 모션을 선택하여 제어기에 다운로드 해주세요.
+4. 모션 다운로드 탭에서는, 모션 그룹을 선택할 수 있습니다. 원하는 모션을 선택하여 제어기에 다운로드하세요.
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_12.png)
 
 ### [스마트 기기에서 예제 다운로드](#스마트-기기에서-예제-다운로드)
 
-로보플러스 태스크 3.0 앱을 이용하여 제어기에 파일을 다운로드 받는 방법입니다.
+로보플러스 태스크 3.0 앱을 이용하여 제어기에 파일을 업로드 하려면 스마트 기기와 CM-550이 블루투스로 연결되어야 합니다.
 
 1. 로보플러스 태스크 3.0 앱을 스마트 기기에서 실행 후, 이미지에서 빨간색 박스로 표시된 버튼을 클릭해주세요.
 
@@ -375,35 +378,35 @@ product_group: 2xl430-w250
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_02.png)  
 
-3. 제어기에 표시된 문자 (마지막 두자리)를 확인합니다.  
+3. 제어기에 표시된 주소의 마지막 두자리를 확인합니다.  
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_02_1.png)
 
-4. 확인한 문자를 입력해주세요.
+4. 제어기 주소의 마지막 두자리 문자를 입력해주세요.
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_03.png)  
 
-5. 연결할 블루투스를 검색후 활성화된 시리얼포트를 선택하여 제어기와 연결해주세요.
+5. 블루투스 검색결과에서 제어기 주소와 일치하는 포트를 선택하여 연결해주세요.
 
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_04.png)    
+    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_04.png)  
     ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_05.png)  
 
 #### [태스크 다운로드 (스마트 기기)](#태스크-다운로드-스마트-기기)
 
-원격으로 스마트 기기에서, 제어기로 태스크파일(.tsk3)을 다운로드 할 수 있습니다.  
+원격으로 스마트 기기에서 제어기로 태스크 파일(.tsk3)을 업로드할 수 있습니다.  
 
-1. 제어기가 스마트 기기에 연결된 상태에서, 홈탭의 **태스크 예제** 를 클릭하여 제품을 선택 해주세요.
+1. 제어기가 스마트 기기와 연결된 상태에서, 로보플러스 태스크 3앱의 홈 탭에서 **태스크 예제** 를 터치해서 제품을 선택해주세요.
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_06.png)
 
-2. 빨간색 박스가 그려져 있는곳을 클릭하여, 제어기에 태스크 파일을 다운로드 해주세요.  
+2. 다운로드 버튼을 터치하면 블루투스 연결을 확인한 다음 제어기에 태스크 파일을 업로드합니다.  
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_07.png)  
 
 
 #### [모션 다운로드 (스마트기기)](#모션-다운로드-스마트기기)
 
-1. 제어기가 스마트 기기에 연결된 상태에서, 홈 탭의 **모션 예제** 를 클릭하여 제품을 선택해주세요.
+1. 제어기가 스마트 기기에 연결된 상태에서, 홈 탭의 **모션 예제** 를 터치해서 제품을 선택해주세요.
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_08.png)  
 
@@ -411,7 +414,7 @@ product_group: 2xl430-w250
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_09.png)  
 
-3. 이미지에서 빨간색 박스로 표시된 메뉴 버튼을 선택해주세요.
+3. 화면 왼쪽 상단의 메뉴 버튼을 선택해주세요.
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_10.png)  
 
@@ -425,14 +428,14 @@ product_group: 2xl430-w250
 
 ## [예제 실행하기](#예제-실행하기)
 
-`ROBOTIS ENGINEER` 앱을 실행하고 조립된 로봇 예제와 같은 예제 메뉴를 선택하면 해당 예제에 맞는 다양한 기능들을 사용할 수 있습니다.    
+`ROBOTIS ENGINEER` 앱을 실행하고 조립된 로봇 예제를 선택하면 해당 예제에 맞는 다양한 기능들을 사용할 수 있습니다.    
 
 ![](/assets/images/edu/engineer/kit1/engineer_app_1.png)
 
 **주의** : 조립된 로봇과 다른 예제를 선택할 경우 로봇이 정상적으로 작동하지 않습니다.
 {: .notice--warning}
 
-앱 화면의 우측 상단의 메뉴버튼을 눌러 환경 설정을 할 수 있습니다.
+앱 화면 우측 상단의 메뉴버튼을 눌러 환경 설정을 할 수 있습니다.
 
 ![](/assets/images/edu/engineer/kit1/engineer_app_configuration.png)
 
@@ -443,22 +446,16 @@ product_group: 2xl430-w250
 `미디어 스캔` : 파일이 PC에서 보이지 않을 때 사용하는 기능입니다.  
 `버전 정보` : 현재 앱의 버전을 확인하는 기능입니다.  
 
-**참고** : `ENGINEER 실험실`의 자료 및 각종 기능은 예고 없이 변경될 수 있습니다.  
-{: .notice--info}
-
-
 ### [Dr.R](#drr)
 
 #### 감정 표현  
-Dr.R 예제를 선택하면 스마트 기기에 왼쪽과 같은 표정 화면이 나타납니다. 로봇을 터치하거나 지정된 이벤트가 발생하면 표정 변화, 움직이기, 말하기 등의 다양한 감정 표현을 합니다.  
+Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정이 나타납니다. 로봇을 터치하거나 이벤트가 발생하면 표정 변화, 움직이기, 말하기 등의 다양한 감정 표현을 합니다.  
 
 ![](/assets/images/edu/engineer/kit1/engineer_app_emotion_1.png)
 
-![](/assets/images/edu/engineer/kit1/engineer_app_emotion_2.png)
-
 #### 모드 선택하기
 
-오른쪽 아래 `Mode`버튼을 터치하면 아래와 같이 모드 변경 메뉴가 나타납니다. 5개의 모드와 2개의 옵션 메뉴가 있습니다
+오른쪽 아래 `Mode` 버튼을 터치하면 아래와 같이 모드 변경 메뉴가 나타납니다. 5개의 모드와 2개의 옵션 메뉴가 있습니다.
 
 ![](/assets/images/edu/engineer/kit1/engineer_app_emotion_3.png)
 
@@ -474,12 +471,12 @@ Dr.R 예제를 선택하면 스마트 기기에 왼쪽과 같은 표정 화면�
 
 ##### 옵션메뉴
 
-|                        아이콘                         | 옵션 설명                                                                       |
-|:-----------------------------------------------------:|:---------------  ------------------------------------------------------------|
+|                        아이콘                         | 옵션 설명                                                                                    |
+|:-----------------------------------------------------:|:---------------------------------------------------------------------------------------------|
 | ![](/assets/images/edu/engineer/kit1/icon_motor.png)  | **MOTOR : 다이나믹셀 점검**<br>로봇의 다이나믹셀 상태를 각각 테스트해 볼 수 있는 메뉴입니다. |
-| ![](/assets/images/edu/engineer/kit1/icon_offset.png) | **OFFSET : 모션오프셋**<br>모션 동작시 각 관절의 기본 위치를 설정하는 기능입니다.         |
+| ![](/assets/images/edu/engineer/kit1/icon_offset.png) | **OFFSET : 모션오프셋**<br>모션 동작시 각 관절의 기본 위치를 설정하는 기능입니다.            |
 
-**참고** : 해당 옵션은 모든 예제에 동일하게 적용되며 세부 설정 방법은 [로봇 설정하기](#로봇-설정하기)를 참고하세요
+**참고** : 옵션 메뉴는 모든 예제에 포함되어 있으며 세부 설정 방법은 [로봇 설정하기](#로봇-설정하기)를 참고하세요.
 {: .notice--info}
 
 ### [MAX-E1](#max-e1)
@@ -529,60 +526,64 @@ Dr.R 예제를 선택하면 스마트 기기에 왼쪽과 같은 표정 화면�
 1. 각 예제를 선택한 후 메뉴의 옵션에서 `MOTOR`를 선택하여 점검합니다  
   ![](/assets/images/edu/engineer/kit1/engineer_app_motor.png)
 
-2. 화면에서 ID 번호를 선택하면 해당 ID의 LED가 켜지고 중심 위치를 기준으로 조금씩 움직여 해당 ID 상태를 확인할 수 있습니다.  
+2. 화면에서 ID 번호를 선택하면 선택된 ID의 LED가 켜지고 중심 위치에서 좌우로 조금씩 움직입니다.  
   ![](/assets/images/edu/engineer/kit1/engineer_app_motor_2.png)
 
 
 ### [모터 오프셋 설정](#모터-오프셋-설정)
 로보티즈 엔지니어에 사용된 다이나믹셀의 자세나 위치 값의 보정이 필요할 때 사용하는 기능입니다.  
-오프셋 기능을 통해 보정된 값은 재실행 이후에도 지속적으로 적용됩니다.  
-전문적인 지식을 토대로 미세하게 조정해야 하며 과도한 값을 사용시 예제 동작이 잘 안될 수 있습니다.
+오프셋 기능을 통해 보정된 값은 로봇의 전원을 끄더라도 저장됩니다.  
+오프셋 기능을 숙지한 상태에서 미세하게 조정해야 하며 잘못된 값을 사용시 예제 동작이 잘 안되거나 로봇이 파손될 수 있습니다.
 
 1. 각 예제를 선택한 후 메뉴의 옵션에서 `OFFSET`을 선택합니다.  
   ![](/assets/images/edu/engineer/kit1/engineer_app_motor_offset.png)
 
-2. 값 보정을 원하는 ID를 선택하면 아래와 같은 팝업창이 나타납니다.  
+2. 오프셋 값을 보정하려는 ID를 선택하면 아래와 같은 팝업창이 나타납니다.  
   ![](/assets/images/edu/engineer/kit1/engineer_app_motor_offset_2.png)
 
-    `+ / -` : ID 값을 증가시키거나 감소시킴  
-    `Torque On / Off` : 다이나믹셀의 토크를 켜기 / 끄기  
-    `OK / CANCEL` : 오프셋 조정 값 저장 / 취소  
+    - `+ / -` : ID 값을 증가시키거나 감소시킴  
+    - `Torque On / Off` : 다이나믹셀의 토크를 켜거나 끄기  
+    - `OK / CANCEL` : 오프셋 조정 값을 저장하거나 취소하기
 
-3. `OK`를 눌러 저장하면 아래와 같은 확인 창이 나타납니다. 한번 더 `OK`를 누르면 값이 저장되고 로봇에 반영됩니다.  
+3. `OK`를 눌러 저장하면 아래와 같은 확인 창이 나타납니다. 한 번 더 `OK`를 누르면 값이 저장되고 로봇에 반영됩니다.  
   ![](/assets/images/edu/engineer/kit1/engineer_app_motor_offset_3.png)
 
-    `Reset Offset` : 선택 시 SAVE 창이 나타나며 `OK`를 클릭 시 전체 모션의 오프셋을 `0`으로 초기화 합니다.  
-    `Initial Pose` : 최근에 저장된 모션 오프셋 값을 불러오는 명령입니다. 관절을 조정중에 잘못 조정하였을 경우 초기위치로 되돌아 가도록 합니다.
-
+4. 오프셋을 초기화 하거나 저장된 값을 불러오는 기능을 사용할 수 있습니다.
     ![](/assets/images/edu/engineer/kit1/engineer_app_motor_offset_4.png)
+
+    - `Reset Offset` : 선택시 팝업창이 나타나며 `OK`를 클릭하면 모든 ID의 오프셋을 `0`으로 초기화 합니다.  
+    - `Initial Pose` : 최근에 저장된 오프셋 값을 불러오는 명령입니다. 관절을 잘못된 값으로 조정하였을 경우 저장된 값을 불러옵니다.
 
 # [튜토리얼](#튜토리얼)
 
 ## [머신러닝 기반의 사물인식](#머신러닝-기반의-사물인식)
-로보티즈 엔지니어는 머신러닝(Tensor Flow)기반의 사물학습 및 객체인식 기능을 사용할 수 있습니다. 아래의 매뉴얼을 따라하며 머신러닝에 쉽게 접근해보세요.
+로보티즈 엔지니어는 머신러닝(Tensor Flow)기반의 사물학습 및 객체인식 기능을 사용할 수 있습니다.  
+아래의 과정을 따라하며 머신러닝을 쉽게 시작해보세요.
 
 {% capture info_01 %}
-- 사물학습 및 객체인식을 사용하기 위해서는, 카메라가 장착된 스마트 기기가 있어야합니다.
-- 스마트 기기에 **[로보플러스 엔지니어 앱](#소프트웨어-다운로드)** 설치가 필요합니다.
+- 사물학습 및 객체인식을 사용하기 위해서는, 카메라가 장착된 스마트 기기가 있어야 합니다.
+- 스마트 기기에 **[로보플러스 엔지니어 앱](#소프트웨어-다운로드)** 을 설치해야 합니다.
 {% endcapture %}
 <div class="notice--info">{{ info_01 | markdownify}}</div>
 
 ### [윈도우즈](#윈도우즈)
+
 {% capture info_02 %}
-**아나콘다 다운로드**  
-TensorFlow 이미지 학습을 하기 위해서 사용하는 PC에 `Anaconda3-4.2.0` 설치가 필요합니다.  
-- [윈도우즈 32bit](https://repo.continuum.io/archive/Anaconda3-4.2.0-Windows-x86.exe)  
-- [윈도우즈 64bit](https://repo.continuum.io/archive/Anaconda3-4.2.0-Windows-x86_64.exe)  
+**아나콘다** : 기계 학습, 대규모 데이터 처리를 위한 모듈과 파이썬이 포함된 프로그램입니다.  
+텐서플로우를 이용한 머신러닝 이미지 학습을 하기 위해서는 PC에 `아나콘다3 4.2.0`가 설치되어 있어야 합니다.  
+- [윈도우 64비트용 아나콘다3-4.2.0](https://repo.continuum.io/archive/Anaconda3-4.2.0-Windows-x86_64.exe)  
+- [윈도우 32비트용 아나콘다3-4.2.0](https://repo.continuum.io/archive/Anaconda3-4.2.0-Windows-x86.exe)  
 {% endcapture %}
 <div class="notice">{{ info_02 | markdownify}}</div>
 
-#### [pip패키지 업그레이드](#pip패키지-업그레이드)
+#### [pip 패키지 업그레이드](#pip-패키지-업그레이드)
 
-1. 관리자 권한으로 명령 프롬프트를 실행해 주세요. (Ctrl +Shift를 누른상태에서 명령프롬프트를 클릭하셔도 됩니다.)
+1. `WIN` + `S` 키를 눌러 나타난 검색창에 **cmd** 를 검색한 다음 관리자 권한으로 명령 프롬프트를 실행합니다.  
+`Ctrl` + `Shift` 를 누른 상태에서 `명령 프롬프트` 를 클릭해도 됩니다.
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_cmd_01.png)
 
-2. 실행하면 아래와 같은 화면이 나옵니다.
+2. 명령 프롬프트가 실행되면 아래와 같은 화면이 나타납니다.
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_cmd_02.png)
 
@@ -594,13 +595,12 @@ TensorFlow 이미지 학습을 하기 위해서 사용하는 PC에 `Anaconda3-4.
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_cmd_03.png)
 
-4. pip패키지가 성공적으로 업그레이드 된다면 아래와 같이 표시됩니다.
+4. pip패키지가 성공적으로 업그레이드되면 아래와 같이 표시됩니다.
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_cmd_04.png)
 
-
- pip패키지가 업그레이드 되지않는 다면, 아나콘다의 다운로드 경로가 `C 드라이브` 가 맞는지 확인해주세요.
- {:.notice--info}
+    pip 패키지가 업그레이드되지 않는다면, 아나콘다가 `C 드라이브` 에 정상적으로 설치되었는지 확인해주세요.
+    {: .notice--warning}
 
 #### [폴더생성](#폴더생성)
 
@@ -608,29 +608,30 @@ TensorFlow 이미지 학습을 하기 위해서 사용하는 PC에 `Anaconda3-4.
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_mkdir_01.png)
 
-- 설치경로는, `D 드라이브` 또는 `C 드라이브` 등 상관없습니다. 매뉴얼에서는 `D 드라이브` 기준으로 설치하겠습니다.
-- 폴더이름은 사용자의 임의로 변경가능합니다. 매뉴얼에서는 `!R+Smart` 기준으로 설치하겠습니다.
-{: .notice--info}
+    - 폴더 위치는 `D 드라이브` 또는 `C 드라이브` 등 상관없습니다. 매뉴얼에서는 `D 드라이브` 기준으로 설명합니다.
+    - 폴더 이름은 사용자가 임의로 변경할 수 있습니다. 매뉴얼에서는 `!R+Smart` 기준으로 설명합니다.
+    {: .notice--info}
 
-2. 현재 드라이브가 `C 드라이브` 이므로, 아래의 명령어를 입력하여 디렉토리를 변경해주세요.
+2. `!R+Smart` 폴더가 생성된 위치로 이동해야 합니다. 현재 드라이브가 `C 드라이브` 이므로, 아래의 명령어를 입력하여 `D 드라이브`로 이동합니다.
+
     ``` posh
-    cd D:!R+Smart
+    d:
     ```
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_mkdir_02.png)
 
 
-3. 아래의 명령어를 입력하여, 명령 프롬프트의 경로를 `D 드라이브` 로 이동후, 디렉토리를 변경해주세요
+3. 아래의 명령어를 입력하여, `!R+Smart` 폴더로 이동합니다.
 
     ``` posh
-    d:
+    cd !R+Smart
     ```
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_mkdir_03.png)
 
 #### [아나콘다 가상실행 환경 만들기](#아나콘다-가상실행-환경-만들기)
 
-1. 아래의 명령어를 입력해서, 가상실행 환경을 구축해주세요.
+1. 아래의 명령어를 입력해서 아나콘다 가상실행 환경을 만들어주세요.
 
     ``` posh
     conda create -n tensorflow python=3.5
@@ -638,7 +639,7 @@ TensorFlow 이미지 학습을 하기 위해서 사용하는 PC에 `Anaconda3-4.
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_01.png)
 
-2. 설치여부를 묻습니다. `y` 입력후, `Enter Key`를 눌러 패키지 설치에 동의해주세요.
+2. 진행여부를 묻습니다. `y` 입력후, `Enter Key`를 눌러 패키지 설치를 진행합니다.
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_02.png)
 
@@ -646,53 +647,56 @@ TensorFlow 이미지 학습을 하기 위해서 사용하는 PC에 `Anaconda3-4.
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_03.png)
 
-#### [TensorFlow 설치하기](tensorflw-설치하기)
+#### [텐서플로우 설치하기](텐서플로우-설치하기)
 
-머신러닝을 구동 시키기 위해, TensorFlow를 설치합니다.
+머신러닝을 구동시키기 위해 텐서플로우를 설치합니다.
 
-1. 아래의 명령어를 입력하여, 앞서 구축했던 가상실행 환경(아나콘다)에 TensorFlow를 활성화 시킬 수 있습니다.
+1. 아래의 명령어를 입력하여, 미리 구축했던 아나콘다 가상실행 환경에 텐서플로우를 활성화시킵니다.
 
-    ```posh
+    ``` posh
     activate tensorflow
     ```
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_04.png)
 
-2. 마지막으로 아래의 명령어로 TensorFlow를 설치 해 주세요.
+2. 마지막으로 아래의 명령어를 입력해서 텐서플로우를 설치합니다.
 
-    ```posh
+    ``` posh
     pip install tensorflow
     ```
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_05.png)
 
-#### [필요 파일 및 폴더 생성](#필요-파일-및-폴더-생성)
+#### [파일과 폴더 생성](#파일과-폴더-생성)
 
-1. `retrain.py` 파일을 다운로드 받아주세요. - [retrain.py 다운로드](http://www.robotis.com/service/download.php?no=1778)
+1. `retrain.py` 파일을 다운로드합니다.
 
-2. `!R+Smart`폴더에, 다운로드 받은 `retrain.py` 파일을 복사후, 객체 추가를 위한 `photos` 폴더를 만들어 주세요.
+    [retrain.py 다운로드](http://www.robotis.com/service/download.php?no=1778)
+    {: .notice}
+
+2. `!R+Smart` 폴더에 다운로드받은 `retrain.py` 파일을 복사한 다음, 객체 추가를 위한 `photos` 폴더를 만듭니다.
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_retrain.png)
 
-3. `photos` 폴더 안에 `001 dummy`, `002 banana` 그리고 `003 pineapple`과 같이 객체 이미지를 추가할 폴더를 만들고 필요한 이미지를 각각 폴더에 맞게 추가 해주세요.
+3. `photos` 폴더 안에 `001 dummy`, `002 banana` 그리고 `003 pineapple`과 같이 객체 이미지를 추가할 하위 폴더를 만들고 객체와 관련된 이미지를 각각의 폴더에 추가합니다.
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_image_01.png)
 
  {% capture notice_01 %}
   **참고** :
   - `001 dummy` 폴더는 지정해둔 객체 이외의 이미지에 반응하기 위해 만들어 주세요. 더미 폴더는 객체인식 오류를 줄여줄수가 있습니다.  
-  - 여러 이미지를 반복해서 트레이닝 시켜주어야 하기 때문에, 이미지 수는 많을 수록 좋습니다.
-  - 카메라의 객체 인식률을 높일려면 이미지를 100개 이상 각 객체폴더에 저장하는것을 추천드립니다.  
-  - 폴더명을 `001`, `002` 와 같은 숫자로 시작하면, 추가한 아이템번호가 순서대로 정렬 됩니다.
+  - 여러 이미지를 반복해서 학습시키기 때문에, 이미지가 많을수록 학습효과가 높아집니다.
+  - 카메라의 객체 인식률을 높이기 위해 100개 이상의 이미지를 사용하는 것을 추천합니다.
+  - 폴더명을 `001`, `002` 와 같은 숫자로 작성하면, 추가한 아이템번호가 순서대로 정렬됩니다.
  {% endcapture %}
  <div class="notice--info">{{notice_01 | markdownify}}</div>
 
-  **주의** : 폴더 및 이미지 파일명은 반드시 영문으로 작성 해주세요.
+  **주의** : 폴더와 파일 이름은 반드시 영문으로 작성해주세요.
   {: .notice--warning}
 
 #### [이미지 학습](#이미지-학습)
 
-1. 아래의 명령어를 입력하여, `photos`폴더에 추가한 객체 이미지들을 학습 시킬수 있습니다.
+1. 아래의 명령어를 입력하여, `photos` 폴더에 추가한 객체 이미지들을 학습시킬 수 있습니다.
 
     ```posh
     python retrain.py --bottleneck_dir=./bottlenecks --model_dir=./inception  --output_graph=./Smart_OC.pb --output_labels=./Smart_OC.txt --image_dir ./photos --architecture mobilenet_1.0_224 --how_many_training_steps 1000
@@ -700,54 +704,54 @@ TensorFlow 이미지 학습을 하기 위해서 사용하는 PC에 `Anaconda3-4.
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_img_learning_01.png)
 
-  위의 명령어에서 `how_many_training_steps`은 이미지 학습의 횟수를 결정합니다. 횟수는 1000회 정도가 적당합니다. 위의 명령어는 1000회로 학습합니다.
-  {: .notice--info}
+    학습 명령어에서 `how_many_training_steps` 옵션은 이미지 학습의 횟수를 나타냅니다. 횟수는 1000회 정도가 적당하며, 예시의 명령어는 1000회로 학습합니다.
+    {: .notice--info}
 
-  **주의** : 폴더 및 이미지 파일의 이름은 반드시 영문이어야 합니다. 한글 사용시 에러가 발생합니다.
-  {: .notice--warning}
+    **주의** : 폴더와 파일의 이름은 반드시 영문이어야 합니다. 한글 이름을 사용할 경우 오류가 발생합니다.
+    {: .notice--warning}
 
-2. 학습이 완료되면 아래와 같이 `Smart_OC.txt` 와 `Smart_OC.pb` 파일이 `!R+Smart` 폴더에 생성됩니다.
+2. 학습이 완료되면 아래와 같이 ***Smart_OC.txt*** 와 ***Smart_OC.pb*** 파일이 `!R+Smart` 폴더에 생성됩니다.
 
    ![](/assets/images/edu/engineer/kit1/obj_classification_oc.png)
 
-#### [프로젝트에 학습 파일 적용하기](#프로젝트에-학습파일-적용하기)
+#### [프로젝트에 학습파일 적용하기](#프로젝트에-학습파일-적용하기)
 
-1. ROBOTIS ENGINEER가 설치된 스마트 기기를 PC와 연결해주세요.
+1. ROBOTIS ENGINEER가 설치된 스마트 기기를 PC와 연결합니다.
 
-2. 연결된 스마트 기기의 폴더로 접근한뒤, `RoboPlus` -> `ROBOTIS ENGINEER` > `CUSTOM` 폴더를 찾아 더블클릭해주세요.
+2. 스마트 기기의 저장공간에서 `RoboPlus` > `ROBOTIS ENGINEER` > `CUSTOM` 폴더를 찾아 들어갑니다.
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_application_01.png)  
     ![](/assets/images/edu/engineer/kit1/obj_classification_application_02.png)  
     ![](/assets/images/edu/engineer/kit1/obj_classification_application_03.png)
 
-3. 원하는 프로젝트 이름으로 폴더를 생성해주세요. 아래에서는 `Project 1`을 생성하겠습니다.
+3. 프로젝트 폴더를 생성합니다. 여기에서는 `Project 1`을 프로젝트 폴더로 생성합니다.
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_application_04.png)
 
-    **참고** : 이미 사용중인 프로젝트가 있다면, **3번 단계**는 건너뛰셔도 됩니다.
+    **참고** : 이미 사용중인 프로젝트가 있다면, 프로젝트 폴더를 생성하는 3번 과정은 건너뛸 수 있습니다.
     {: .notice--info}
 
-4. 데이터베이스를 사용하기 위해서 `Db` 폴더를 생성해주세요.
+4. 데이터베이스를 사용하기 위해서 `Db` 폴더를 생성합니다.
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_application_05.png)
 
-5. `!R+Smart` 에서 생성된 학습파일(`Smart_OC.txt` 와 `Smart_OC.pb`)을 `Db` 폴더에 복사 해주세요.  
+5. `!R+Smart` 에서 생성된 학습파일인 ***Smart_OC.txt*** 와 ***Smart_OC.pb*** 을 `Db` 폴더에 복사합니다.  
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_application_06.png)
 
-6. 휴대폰을 PC에서 분리후, `ROBOTIS ENGINEER` 앱을 실행합니다.
+6. 스마트 기기를 PC에서 분리한 다음 `ROBOTIS ENGINEER` 앱을 실행합니다.
 
     ![](/assets/images/edu/engineer/kit1/engineer_app_1.png)
 
-7. `User Tab` 으로 이동합니다.
+7. `User` 탭으로 이동합니다.
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_test_01.png)
 
-8. 생성한 사용자 폴더의 `설정` 버튼을 클릭합니다.   
+8. 3번 단계에서 생성한 `Project 1` 프로젝트 폴더의 `설정` 아이콘을 클릭합니다.   
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_test_02.png)
 
-9. `비전` > `객체 분류` 로 들어갑니다.
+9. `비전` > `객체 분류` 를 선택합니다.
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_test_03.png)
 
@@ -760,9 +764,10 @@ TensorFlow 이미지 학습을 하기 위해서 사용하는 PC에 `Anaconda3-4.
     ![](/assets/images/edu/engineer/kit1/obj_classification_test_05.png)   
 
 {% capture retrain %}
-**참고** : 기존 학습파일(`Smart_OC.txt` 와 `Smart_OC.pb`)에 새로운 데이터를 추가할 수 없습니다. 원하는 객체를 추가하려면, 사용하시는 객체 이미지폴더에 이미지 추가후, 새로운 학습파일을 만들어 주세요.
-- [필요 파일 및 폴더 생성](#필요-파일-및-폴더-생성)
-- [이미지 학습](#이미지-학습)
+**참고** : 이미 생성된 학습파일인 ***Smart_OC.txt*** 와 ***Smart_OC.pb*** 에는 새로운 데이터를 추가할 수 없습니다.  
+원하는 객체를 추가하려면 객체 이미지 폴더에 이미지를 추가한 다음, 새로운 학습파일을 만들어야 합니다.
+- [파일과 폴더 생성 방법](#파일과-폴더-생성)
+- [이미지 학습 방법](#이미지-학습)
 {% endcapture %}
 <div class="notice--info">{{ retrain | markdownify }}</div>
 
@@ -772,7 +777,7 @@ TensorFlow 이미지 학습을 하기 위해서 사용하는 PC에 `Anaconda3-4.
 {% capture edu_application %}
 아래의 링크에서 로보티즈 엔지니어 키트의 다양한 교육자료를 받을 수 있습니다.
 
-[**교육자료 신청하기**](https://www.robotis.com/pdf_project/register.php)
+- [**교육자료 신청하기**](https://www.robotis.com/pdf_project/register.php)
 {% endcapture %}
 <div class="notice--info">{{ edu_application | markdownify }}</div>
 
@@ -786,8 +791,11 @@ TensorFlow 이미지 학습을 하기 위해서 사용하는 PC에 `Anaconda3-4.
 - 모션파일로 로봇의 행동을 직접 만들어 줄 수 있습니다.
 
 {% capture app_install %}  
-**로보플러스 엔지니어 : [안드로이드 앱 다운로드](https://play.google.com/store/apps/details?id=com.robotis.robotisEngineer&hl=ko)**  
-**로보플러스 태스크 3.0 : [안드로이드 앱 다운로드](http://www.robotis.com/service/download.php?no=1772)**  
+![](/assets/images/edu/engineer/kit1/icon_engineer_48.png)  
+**로보플러스 엔지니어 : [안드로이드 앱 다운로드](https://play.google.com/store/apps/details?id=com.robotis.robotisEngineer)**  
+
+![](/assets/images/edu/engineer/kit1/icon_task_48.png)  
+**로보플러스 태스크 3.0 : [안드로이드 앱 다운로드](https://play.google.com/store/apps/details?id=com.robotis.task3)**  
 **로보플러스 태스크 3.0 : [윈도우용 설치파일 다운로드](http://www.robotis.com/service/download.php?no=1774)**  
 
 **참고** : [인터넷에서 다운로드 받은 앱 설치하기]{: .popup}
@@ -798,10 +806,33 @@ TensorFlow 이미지 학습을 하기 위해서 사용하는 PC에 `Anaconda3-4.
 
 # [참고자료](#참고자료)
 
-## [제어기 BLE 신호세기 설정](#제어기-ble-신호세기-설정)
+## [제어기 BLE 신호 세기 설정](#제어기-ble-신호-세기-설정)
+
+CM-550에 내장된 BLE 슬레이브 모듈의 신호의 세기가 약하거나 간섭이 발생할 경우 통신이 불안정할 수 있습니다.  
+이러한 경우 로보플러스 매니저 2.0을 사용하여 BLE 신호세기를 알맞게 설정할 수 있습니다.
+
+아래 표는 여러개의 CM-550를 한 공간에서 사용할 때 BLE 신호 세기를 설정하는 방법입니다.
+
+{% capture ble_setting %}  
+
+| 나의 CM-550 | 주변의 CM-550 | BLE 신호 세기 |
+|:-----------:|:-------------:|:-------------:|
+| 통신 불안정 |   통신 안정   |     올림      |
+| 통신 불안정 |  통신 불안정  |     올림      |
+|  통신 안정  |  통신 불안정  |     내림      |
+|  통신 안정  |   통신 안정   |  설정 불필요  |
+
+- 한 개의 제어기만을 사용하는 환경에서 통신이 불안정하다면, 신호의 세기가 약할 수 있습니다. **BLE 신호 세기를 높여주세요**.
+- 같은 공간에서 여러 개의 제어기를 사용할 때 통신이 불안정하다면, 제어기의 BLE 신호가 서로 간섭을 줄 수 있습니다. **통신이 불안정한 제어기의 BLE 신호세기를 높이거나 주변 제어기의 BLE 신호 세기를 낮춰주세요**.
+- 모든 제어기의 통신이 잘 유지된다면 신호의 세기가 충분하고, 다른 제어기에 의해서 간섭이 발생하지 않는 경우입니다. **BLE 신호 세기를 유지시켜 주세요**.
+{% endcapture %}
+<div class="notice">{{ ble_setting | markdownify }}</div>
+
+**참고** : 주변 환경과 사용하는 기기의 수에 따라서, BLE 신호 세기 및 간섭의 정도가 달라질 수 있습니다.
+{: .notice}
 
 1. CM-550의 BLE와 연결되어 있는 BT-410 마스터 모듈 또는 BT-410 동글의 전원이 꺼져있는지 확인합니다.  
-  (만일 전원이 켜져 있는 경우 CM-550을 켜는 순간 서로 페어링 되기 때문에 BLE 신호 확인 및 설정을 할 수 없습니다)
+  (만일 전원이 켜져있는 경우 CM-550을 켜는 순간 서로 페어링되기 때문에 BLE 신호 확인 및 설정을 할 수 없습니다)
 
 2. CM-550의 전원을 켜고 USB 케이블로 PC에 연결합니다 (외부 전원 없이 USB 케이블로 제어기에 충분한 전원공급이 가능합니다).
 
@@ -811,7 +842,7 @@ TensorFlow 이미지 학습을 하기 위해서 사용하는 PC에 `Anaconda3-4.
 
     ![](/assets/images/edu/engineer/kit1/BLE_signal_power_01_kr.png)
 
-5. `업데이트 검사` 를 클릭한 다음, 로보플러스 매니저 2.0이 최신버전인지 확인합니다.
+5. `업데이트 검사` 를 클릭한 다음, 로보플러스 매니저 2.0이 최신 버전인지 확인합니다.
 
     ![](/assets/images/edu/engineer/kit1/BLE_signal_power_02_kr.png)  
     ![](/assets/images/edu/engineer/kit1/BLE_signal_power_03_kr.png)
@@ -832,11 +863,11 @@ TensorFlow 이미지 학습을 하기 위해서 사용하는 PC에 `Anaconda3-4.
 
     ![](/assets/images/edu/engineer/kit1/BLE_signal_power_07_kr.png)
 
-10. 연결된 제어기의 포트를 선택합니다.
+10. 제어기가 연결된 포트를 선택합니다.
 
     ![](/assets/images/edu/engineer/kit1/BLE_signal_power_08_kr.png)
 
-11. 제어기와 PC의 통신속도를 선택합니다.
+11. 제어기와 PC의 통신속도를 선택합니다 (기본 통신속도는 57600 bps로 고정되어 있습니다).
 
     ![](/assets/images/edu/engineer/kit1/BLE_signal_power_09_kr.png)
 
@@ -844,20 +875,20 @@ TensorFlow 이미지 학습을 하기 위해서 사용하는 PC에 `Anaconda3-4.
 
     ![](/assets/images/edu/engineer/kit1/BLE_signal_power_10_kr.png)
 
-13. `다음` 을 클릭합니다.
+13. 제어기와 연결된 부품의 펌웨어가 모두 최신 버전이라면 `다음` 을 클릭하거나, 업데이트가 필요한 경우 화면의 안내에 따라 펌웨어 업데이트를 진행합니다.
 
     ![](/assets/images/edu/engineer/kit1/BLE_signal_power_11_kr.png)
 
-14. 제어기와 PC가 성공적으로 연결이 되면, 아래 이미지와 같이 컨트롤 테이블이 표시됩니다.
+14. 제어기와 PC가 성공적으로 연결이 되면, 아래 그림과 같이 컨트롤 테이블이 표시됩니다.
 
     ![](/assets/images/edu/engineer/kit1/BLE_signal_power_12_kr.png)
 
-15. 컨트롤 테이블을 스크롤해서 `BLE Signal Power (139)` 를 찾습니다.
+15. 컨트롤 테이블을 스크롤해서 `139`번 주소의 `BLE Signal Power` 를 찾습니다.
 
     ![](/assets/images/edu/engineer/kit1/BLE_signal_power_13_kr.png)
 
 16. 화면 오른쪽의 `BLE Signal Power` 에서 값을 선택 후 저장합니다.  
-  큰 값을 선택할수록 신호가 강해지며, 다른 장치와 간섭이 발생할 경우 신호를 줄여주세요.  
+  큰 값을 선택할수록 신호가 강해지며, 통신이 불안정할 경우 신호 세기를 높여주세요.  
 
     ![](/assets/images/edu/engineer/kit1/BLE_signal_power_14_kr.png)
 
@@ -883,58 +914,19 @@ TensorFlow 이미지 학습을 하기 위해서 사용하는 PC에 `Anaconda3-4.
   > 로봇의 조립 방법 및 [다이나믹셀 ID](#다이나믹셀-id확인)를 확인해 보세요.  
 
 5. 어댑터로는 동작하는데 충전지로 동작하지 않아요.  
-  > 제어기의 퓨즈 상태를 확인하고 필요 시 교체합니다. [퓨즈 교체하기](#퓨즈-교체하기)를 참고하세요.    
+  > 제어기의 퓨즈 상태를 확인하고 필요시 교체합니다. [퓨즈 교체하기](#퓨즈-교체하기)를 참고하세요.    
 
 ## [배터리 충전하기](#배터리-충전하기)
 
-**주의** :  
-반드시 제공된 충전기와 충전지(리튬폴리머 배터리)만 사용하십시오.  
-처음 사용시 반드시 충전지를 충전해 주세요.
-{: .notice--warning}
-
-1. 제품에 포함되어 있는 충전지(리튬폴리머 배터리)를 준비합니다.  
-  ![](/assets/images/edu/engineer/kit1/battery_charging_1_kr.png)  
-
-2. 그림과 같이 충전지를 충전기와 연결합니다.  
-  ![](/assets/images/edu/engineer/kit1/battery_charging_2_kr.png)  
-
-3. 그림과 같이 빨간색 LED가 표시되면 충전 중인 상태이며, 녹색 LED가 표시되면 충전이 완료된 상태입니다.  
-  ![](/assets/images/edu/engineer/kit1/battery_charging_3_kr.png)  
-
-4. SMPS를 제어기에 직접 연결하면 외부전원으로 로봇을 구동할 수 있습니다.  
-  ![](/assets/images/edu/engineer/kit1/battery_charging_4_kr.png)  
-
-5. 충전지는 충전용 커넥터와 로봇 작동용 커넥터가 연결되어 있습니다. 배터리를 충전할 때에는 반드시 `로봇 작동용` 커넥터를 분리해 주세요.  
-  ![](/assets/images/edu/engineer/kit1/battery_charging_5_kr.png)  
+{% include kr/edu/engineer/battery_charge.md %}
 
 ## [충전지 잔량 확인하기](#충전지-잔량-확인하기)
 
-![](/assets/images/edu/engineer/kit1/battery_check.png)  
-
-충전지 잔량에 따라 CM-550의 상태 LED가 다음과 같은 색상으로 표시됩니다.
-- 파란색 : 70% 이상  
-- 녹 색 : 30% ~ 70%  
-- 빨간색 : 30% 이하(저전압 경고음이 발생합니다.)  
-
-**참고** : 제어기의 블루투스 장치가 연결되지 않았을 때에는 상태 LED가 깜빡거립니다. 따라서, 상태 LED의 깜빡거림은 충전지 잔량과는 관계가 없습니다.
-{: .notice--info}
-
-**주의** : 충전이 완료되면 반드시 충전기와 충전지를 분리하여 보관해주시고, 충전중인 배터리를 사용해서 로봇을 구동하지 않도록 주의하세요.
-{: .notice--warning}
+{% include kr/edu/engineer/charge_level.md %}
 
 ## [퓨즈 교체하기](#퓨즈-교체하기)
 
-CM-550에는 과전류가 흘러서 회로가 손상되는 것을 방지하기 위한 퓨즈(Fuse)가 있습니다.  
-만약 CM-550이 배터리로는 전원이 켜지지 않고 SMPS로만 전원이 켜진다면 퓨즈가 끊어진 것이니 교체해 주어야 합니다.
-
-![](/assets/images/edu/engineer/kit1/charger_fuse_1.png)
-
-![](/assets/images/edu/engineer/kit1/charger_fuse_2.png)
-
-제어기와 연결된 전원을 모두 분리하고 제어기 바닥면의 퓨즈를 핀셋으로 꺼낸 다음 새 퓨즈로 교체합니다.  
-
-**경고** : 반드시 어댑터와 충전지를 연결하지 않은 상태로 퓨즈를 교체해야 합니다.  
-{: .notice--danger}
+{% include kr/parts/controller/fuse_cm-550.md %}
 
 
 [CM-550 매뉴얼 바로가기]: /docs/kr/parts/controller/cm-550/

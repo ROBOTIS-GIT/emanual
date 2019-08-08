@@ -9,7 +9,8 @@ permalink: /docs/en/platform/openmanipulator_pro/ros_operation/
 sidebar:
   title: OpenMANIPULATOR-PRO
   nav: "openmanipulator_pro"
-
+product_group: openmanipulator_pro
+page_number: 6
 ---
 
 <div style="counter-reset: h1 5"></div>

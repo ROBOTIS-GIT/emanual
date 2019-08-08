@@ -9,6 +9,8 @@ permalink: /docs/en/platform/turtlebot3/overview/
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
+product_group: turtlebot3
+page_number: 1
 ---
 
 <div style="counter-reset: h1 0"></div>
@@ -55,9 +57,9 @@ If you are interested in partnership with us to realize open source robotics, pl
 \* Each collaboration member's web page can be found [here][partners].
 
 ### TurtleBot3 Map
-
+<div>
 <script type="text/javascript" src="https://embed.githubusercontent.com/view/geojson/turtlebot/map/master/Distributors.geojson"></script>
-
+</div>
 
 [turtlebot]: https://www.turtlebot.com/
 [ros]: http://www.ros.org/about-ros/

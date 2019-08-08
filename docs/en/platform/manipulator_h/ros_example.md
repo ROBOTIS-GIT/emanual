@@ -9,11 +9,13 @@ permalink: /docs/en/platform/manipulator_h/ros_example/
 sidebar:
   title: MANIPULATOR-H
   nav: "manipulator_h"
+product_group: manipulator_h
+page_number: 7
 ---
 
 <div style="counter-reset: h1 6"></div>
 
-# [ROS example](#ros-example)
+# [ROS Example](#ros-example)
 
 {% capture notice_01 %}
 **NOTE**:
@@ -25,7 +27,7 @@ sidebar:
 **NOTE**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`+`Alt`+`t`.
 {: .notice--info}
 
-## [Manipulator manager](#manipulator-manager)
+## [Manipulator Manager](#manipulator-manager)
 
 ### Bring up the robot in Rviz
 ```
@@ -79,7 +81,7 @@ process[manipulator_h_manager-1]: started with pid [19408]
 {% endcapture %}
 <div class="notice--success">{{ notice_01 | markdownify }}</div>
 
-## [GUI program](#gui-program)
+## [GUI Program](#gui-program)
 
 ### Run GUI program
 You can use the GUI program to manipulate the Manipulator-H.
