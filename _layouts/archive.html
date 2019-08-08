@@ -36,8 +36,8 @@ layout: default
     </a>
     {{ content }}
 
-    {% assign page_numbers=site.pages | where:"product_group", page.product_group | sort: 'page_number' %}
-    {% if page_numbers==null %}{% else %}
+    {% if page.product_group==null and page.page_number==null %}{% else %}
+      {% assign page_numbers=site.pages | where:"product_group", page.product_group | sort: 'page_number' %}
       {% assign page_numbers=page_numbers | where:"lang", page.lang %}
       {% assign previous_page = page.page_number | minus: 1 %}
       {% assign next_page = page.page_number | plus: 1 %}
