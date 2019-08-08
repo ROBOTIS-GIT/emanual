@@ -16,7 +16,7 @@ sidebar:
 # [[ROS2] Simulation](#ros-simulation)
 
 {% capture coming_soon_01 %}
-`[ROS2] Simulation` for \[ROS2] OpenMANIPULATOR-X has not been disclosed yet.
+`[ROS2] Simulation` for `ROS2 Dashing Diademata` will be released soon!
 {% endcapture %}
 <div class="notice">{{ coming_soon_01 | markdownify }}</div>
 <!--
