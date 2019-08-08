@@ -209,13 +209,13 @@ Both connectors are linked to supply power and communication to the module. Plea
 
 ![](/assets/images/edu/engineer/kit1/cable_assembly_1.png)
 
-##### Through-hole wiring via Idler Cap
+##### Wiring through Idler Cap
 
 ![](/assets/images/edu/engineer/kit1/cable_assembly_2.png)
 
-**NOTE**  
-중공형 배선 연결은 케이블의 내구성을 더 높이거나 미관상의 케이블 정리를 위해 사용하는 결합 방법입니다.  
-반드시 사용해야 하는 것은 아니며 아이들러 캡 결합 후 케이블을 교체시 일반적인 조립방법보다 시간이 더 소요될 수도 있습니다.
+**NOTE** :  
+Through hole wiring method helps to increase the durability of cable and to simplify cable assembly.  
+It is not a mandatory and it may require more time to replace the cable afterward.
 {: .notice--info}
 
 
@@ -225,227 +225,218 @@ Both connectors are linked to supply power and communication to the module. Plea
 
 {% capture app_install %}
 ![](/assets/images/edu/engineer/kit1/icon_engineer_48.png)  
-**로보플러스 엔지니어 : [안드로이드 앱 다운로드](https://play.google.com/store/apps/details?id=com.robotis.robotisEngineer)**  
+**R+ ENGINEER : [Android App Download](https://play.google.com/store/apps/details?id=com.robotis.robotisEngineer)**  
 
 ![](/assets/images/edu/engineer/kit1/icon_task_48.png)  
-**로보플러스 태스크 3.0 : [안드로이드 앱 다운로드](https://play.google.com/store/apps/details?id=com.robotis.task3)**  
-**로보플러스 태스크 3.0 : [윈도우용 설치파일 다운로드](http://www.robotis.com/service/download.php?no=1774)**  
-
-**참고** : [인터넷에서 다운로드 받은 앱 설치하기]{: .popup}
-
-[인터넷에서 다운로드 받은 앱 설치하기]: /docs/kr/popup/apk_install
+**R+ Task 3.0 : [Android App Download](https://play.google.com/store/apps/details?id=com.robotis.task3)**  
+**R+ Task 3.0 : [Windows Installer Download](http://www.robotis.com/service/download.php?no=1774)**  
 {% endcapture %}
 <div class="notice--success">{{ app_install | markdownify }}</div>
 
-1. 스마트폰 또는 태블릿에서 `플레이 스토어` 또는 `앱 스토어`를 실행합니다.  
+1. Open `Play Store` or `App Store` from the smart device.  
   ![](/assets/images/edu/engineer/kit1/app_installation_01_kr.png)
 
-2. `플레이 스토어` 또는 `앱 스토어` 검색창에 **로보티즈** 또는 **R+ ENGINEER** 를 입력합니다.  
+2. Search for **ROBOTIS** or **R+ ENGINEER** from the store.  
   ![](/assets/images/edu/engineer/kit1/app_installation_02_kr.png)
 
-3. 검색된 목록에서 `R+ ENGINEER`를 찾아 `설치`를 선택합니다.  
+3. Select `R+ ENGINEER` from the list and press the `Install` button.  
   ![](/assets/images/edu/engineer/kit1/app_installation_03_kr.png)
 
-4. 아래와 같은 화면이 나타나면 `동의`를 눌러 설치를 진행합니다.  
+4. Press the `Agree` button to proceed installation.  
   ![](/assets/images/edu/engineer/kit1/app_installation_04_kr.png)
 
 
 ## [블루투스 연결하기](#블루투스-연결하기)
 
-1. CM-550 제어기의 스위치를 눌러 전원을 켭니다.  
+1. Turn on the CM-550 controller with power switch.  
   ![](/assets/images/edu/engineer/kit1/bluetooth_connection_1.png)
 
-2. 제어기의 `MODE` 버튼을 눌러 녹색이 점멸하도록 합니다.  
+2. Press the `MODE` button until green light flashes.  
   ![](/assets/images/edu/engineer/kit1/bluetooth_connection_2.png)
 
-    **참고** : `MODE` 버튼이 녹색으로 점멸할 경우 태스크 프로그램의 실행을 대기하는 모드입니다.
+    **NOTE** : The `MODE` button flashes in green when the controller is ready to run the task program.
     {: .notice--info}
 
-3. 제어기의 `START` 버튼을 누릅니다.  
+3. Press the `START` button.  
   ![](/assets/images/edu/engineer/kit1/bluetooth_connection_3.png)
 
-    **참고** : `MODE` 버튼이 녹색으로 점멸할 때 `START` 버튼을 누르면 `MODE` 버튼이 녹색으로 고정되며 태스크 프로그램이 실행됩니다.
+    **NOTE** : While the `MODE` button flashes in green, pressing `START` button will run the task program.
     {: .notice--info}
 
-4. 스마트 기기에서 `ROBOTIS ENGINEER`앱을 실행하고 화면에 표시된 블루투스 아이콘을 누릅니다.  
+4. Launch the `ROBOTIS ENGINEER` app from the smart device and press the Bluetooth icon.  
   ![](/assets/images/edu/engineer/kit1/bluetooth_connection_4.png)
 
-5. 제어기에 표시된 문자(마지막 두자리)를 확인합니다.  
+5. Find the Bluetooth address on the CM-550 controller.  
   ![](/assets/images/edu/engineer/kit1/bluetooth_connection_5.png)
 
-6. 확인한 숫자를 왼쪽 상자에 입력한 후 `검색` 을 누릅니다.  
+6. Enter the last two characters of CM-550 BLE address in the left box and press `Search` icon.  
   ![](/assets/images/edu/engineer/kit1/bluetooth_connection_6.png)
 
-7. 검색된 목록을 찾아 선택하면 블루투스 통신 연결이 완료되고, 로봇이 실행됩니다.  
+7. Select the CM-550 BLE address from the search list.  
   ![](/assets/images/edu/engineer/kit1/bluetooth_connection_7.png)
 
 ## [예제 다운로드](#예제-다운로드)
-- CM-550 제어기에는 최초 출하시 KIT 1 타입에 맞는 프로그램이 기본적으로 다운로드되어 있습니다.  
-- 종합예제는 `Dr.R`, `MAX-E1`, `SPI` 세가지 로봇이 모두 포함된 예제입니다.
+- CM-550 controller is initially programmed with Kit1 example.  
+- The `Complete Example` includes `Dr.R`, `MAX-E1`, `SPI` examples.
 
-| 예제명    |                                 태스크 파일                                  |                                 모션 파일                                 |
-|:----------|:----------------------------------------------------------------------------:|:-------------------------------------------------------------------------:|
-| 종합 예제 | [태스크 파일 다운로드](http://www.robotis.com/service/download.php?no=1779 ) | [모션 파일 다운로드](http://www.robotis.com/service/download.php?no=1787) |
-| Dr.R      | [태스크 파일 다운로드](http://www.robotis.com/service/download.php?no=1780)  | [모션 파일 다운로드](http://www.robotis.com/service/download.php?no=1788) |
-| MAX-E1    | [태스크 파일 다운로드](http://www.robotis.com/service/download.php?no=1781)  | [모션 파일 다운로드](http://www.robotis.com/service/download.php?no=1789) |
-| SPI       | [태스크 파일 다운로드](http://www.robotis.com/service/download.php?no=1782)  | [모션 파일 다운로드](http://www.robotis.com/service/download.php?no=1790) |
+| Example          |                                  Task Files                                   |                                 Motion Files                                  |
+|:-----------------|:-----------------------------------------------------------------------------:|:-----------------------------------------------------------------------------:|
+| Complete Example | [01_ENG1_TOTAL_EN.tsk3](http://www.robotis.com/service/download.php?no=1779 ) | [01_ENG1_TOTAL_EN.mtn3](http://www.robotis.com/service/download.php?no=1787)  |
+| Dr.R             |  [02_ENG1_DR_R_EN.tsk3](http://www.robotis.com/service/download.php?no=1780)  |  [02_ENG1_DR_R_EN.mtn3](http://www.robotis.com/service/download.php?no=1788)  |
+| MAX-E1           | [03_ENG1_MAX_E1_EN.tsk3](http://www.robotis.com/service/download.php?no=1781) | [03_ENG1_MAX_E1_EN.mtn3](http://www.robotis.com/service/download.php?no=1789) |
+| SPI              |  [04_ENG1_SPI_EN.tsk3](http://www.robotis.com/service/download.php?no=1782)   |  [04_ENG1_SPI_EN.mtn3](http://www.robotis.com/service/download.php?no=1790)   |
 
 
 {% capture opening_exam %}
-[로보플러스 태스크 3.0에서 태스크 예제 파일 열기](/docs/kr/software/rplustask3/task_programming/#태스크-예제-열기)  
-[CM-550 제어기에 태스크 다운로드 하기](#태스크-다운로드-pc)  
+[How to open tsk3 file in R+ Task 3.0](/docs/en/software/rplustask3/task_programming/#태스크-예제-열기)  
+[How to download task program to CM-550 controller](#task-download-pc)  
 
-[로보플러스 태스크 3.0에서 모션 예제 파일 열기](/docs/kr/software/rplustask3/motion_programming/#모션-예제-열기)  
-[CM-550 제어기에 모션 다운로드 하기](#모션-다운로드-pc)
+[How to open mtn3 file in R+ Task 3.0](/docs/en/software/rplustask3/motion_programming/#모션-예제-열기)  
+[How to download motion to CM-550 controller](#motion-download-pc)
 {% endcapture %}
 <div class="notice">{{opening_exam | markdownify}}</div>
 
 ### [PC에서 예제 다운로드](#pc에서-예제-다운로드)
 
-- CM-550의 Micro USB 포트를 이용하면 PC와 직접 연결하여 태스크(.tsk3) 및 모션(.mtn3) 파일을 업로드 할 수 있습니다.
-- CM-550에 내장된 BLE 슬레이브 모듈과 BT-410 동글을 페어링하면 PC에서 원격으로 예제를 업로드 할 수 있습니다.
+#### Connect with USB Cable
+The CM-550 can be connected to the PC via Micro USB port to download task(.tsk3) and motion(.mtn3) files.
 
-1. CM-550에 전원을 연결합니다.
-2. PC의 USB 포트에, BT-410 동글을 연결합니다.
-3. CM-550의 `MODE` 버튼 부분을 BT-410 동글에 가까이 가져가면, 페어링이 완료됩니다.
-4. 로보플러스 태스크 3.0을 실행시킨 후, 왼쪽 하단의 `연결`버튼을 클릭 해주세요.
+1. Connect USB cable to PC.
+2. Connect the other side of Micro USB cable to CM-550 controller. The controller will be powered by USB and turned on automatically.
+3. Luanch R+ Task 3.0 and press the `Connect` icon on the bottom left corner.  
+  ![](/assets/images/edu/engineer/kit1/remote_pairing_01.png)
 
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_01.png)  
+4. Select the serial port to use.  
+  ![](/assets/images/edu/engineer/kit1/remote_pairing_03.png)  
 
-5. BT-410 동글을 사용할 경우 반드시 `Use USB Dongle` 옵션을 선택해주세요.
+5. Press the `Connect` icon.  
+  ![](/assets/images/edu/engineer/kit1/remote_pairing_04.png)  
 
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_02.png)  
+6. CM-550 will be connected to the PC with 3 beeps.  
+  ![](/assets/images/edu/engineer/kit1/remote_pairing_05.png)  
 
-6. 사용할 시리얼 포트를 선택해 주세요.
+#### Connect with Bluetooth
+The BLE module in CM-550 can be also paired with BT-410 Dongle to connect the PC, but wireless connection will be slower than wired connection when downloading.
 
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_03.png)  
+1. Turn on the CM-550.
+2. Connect BT-410 Dongle to the USB port of the PC.
+3. Bring the `MODE` button of CM-550 closer to the BT-410 Dongle to pair automatically.
+4. Luanch R+ Task 3.0 and press the `Connect` icon on the bottom left corner.  
+  ![](/assets/images/edu/engineer/kit1/remote_pairing_01.png)  
 
-7. 연결 버튼을 클릭하여, PC와 제어기를 연결시켜 주세요.   
+5. Make sure to check on `Use USB Dongle` option when using BT-410 Dongle.  
+  ![](/assets/images/edu/engineer/kit1/remote_pairing_02.png)  
 
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_04.png)  
+6. Select the serial port to use.  
+  ![](/assets/images/edu/engineer/kit1/remote_pairing_03.png)  
 
-8. 연결이 성공적으로 완료되면 '삐비빅' 소리가 납니다.  
+7. Press the `Connect` icon.  
+  ![](/assets/images/edu/engineer/kit1/remote_pairing_04.png)  
 
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_05.png)  
+8. CM-550 will be connected to the PC with 3 beeps.  
+  ![](/assets/images/edu/engineer/kit1/remote_pairing_05.png)  
 
 {% capture pairing_01 %}
-**참고** :
-- 첫 페어링시 제어기의 `MODE` 버튼쪽으로 BT-410 동글을 가까이 가져가면 자동으로 페어링됩니다.
-- 페어링이 완료된 후에는 블루투스의 통신거리 이내에서 로봇과 PC가 멀어져도 연결이 유지됩니다.
-- 페어링이 한번 설정되면, 재시작할 때 블루투스의 통신거리 이내에서 자동으로 페어링이 됩니다.  
+**NOTE** :
+- Bring the `MODE` button of CM-550 closer to the BT-410 Dongle to pair automatically.
+- Once BT-410 Dongle is paired successfully, the connection will be maintained within the range of Bluetooth signal.
+- Once BT-410 Dongle is paired successfully, paired device will be automatically connected within the range of Bluetooth signal.
 {% endcapture %}
 <div class="notice--info">{{ pairing_01 | markdownify}}</div>
 
-#### [태스크 다운로드 (PC)](#태스크-다운로드-pc)
+#### [Task Download (PC)](#task-download-pc)
 
-제어기에 태스크(.tsk3)를 다운로드하는 방법입니다.   
+Please follow the instruction below to download the task(.tsk3) file to CM-550 controller.  
 
-1. 제어기와 PC가 연결된 상태에서, 제품에 맞는 태스크 예제를 선택합니다.
+1. Connect the controller to PC and select the assembled task example.  
+  ![](/assets/images/edu/engineer/kit1/remote_pairing_06.png)  
 
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_06.png)  
+2. Click the `Program Download` button in the menu.  
+  ![](/assets/images/edu/engineer/kit1/remote_pairing_07.png)  
+  ![](/assets/images/edu/engineer/kit1/remote_pairing_08.png)  
 
-2. 오른쪽 상단의 `프로그램 다운로드` 버튼을 클릭합니다.
+#### [Motion Download (PC)](#motion-download-pc)
 
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_07.png)  
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_08.png)  
+Please follow the instruction below to download the motion(.mtn3) file to CM-550 controller.  
 
-#### [모션 다운로드 (PC)](#모션-다운로드-pc)
+1. Connect the controller to PC and select the assembled motion example.  
+  ![](/assets/images/edu/engineer/kit1/remote_pairing_09.png)  
 
-1. 제어기와 PC가 연결된 상태에서, 제품과 예제를 선택합니다.
+2. Select the motion example to download.  
+  ![](/assets/images/edu/engineer/kit1/remote_pairing_10.png)  
 
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_09.png)  
+3. Click the `Motion Download` tab in the menu.  
+  ![](/assets/images/edu/engineer/kit1/remote_pairing_11.png)  
 
-2. 다운로드 하려는 모션 예제를 선택합니다.
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_10.png)  
-
-3. 오른쪽 상단의 `모션 다운로드` 탭을 클릭합니다.
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_11.png)  
-
-4. 모션 다운로드 탭에서는, 모션 그룹을 선택할 수 있습니다. 원하는 모션을 선택하여 제어기에 다운로드하세요.
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_12.png)
+4. Select the motion group to download from the left column and click the `Download` button.  
+  ![](/assets/images/edu/engineer/kit1/remote_pairing_12.png)
 
 ### [스마트 기기에서 예제 다운로드](#스마트-기기에서-예제-다운로드)
 
-로보플러스 태스크 3.0 앱을 이용하여 제어기에 파일을 업로드 하려면 스마트 기기와 CM-550이 블루투스로 연결되어야 합니다.
+In order to upload an example to CM-550 controller with R+ Task 3.0 app, the smart device and CM-550 must be paired with Bluetooth.
 
-1. 로보플러스 태스크 3.0 앱을 스마트 기기에서 실행 후, 이미지에서 빨간색 박스로 표시된 버튼을 클릭해주세요.
+1. Launch the R+ Task 3.0 app from the smart device and press the button in the red box.  
+  ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_01.png)  
 
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_01.png)  
+2. When `Connect Robot` window pops up, press the Bluetooth search button in the red box.  
+  ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_02.png)  
 
-2. 로봇 연결하기 창이 활성화되면, 이미지에서 빨간색 박스로 표시된 블루투스 검색 버튼을 클릭해주세요.
+3. Find the Bluetooth address on the CM-550 controller.  
+  ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_02_1.png)
 
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_02.png)  
+4. Enter the last two characters of CM-550 BLE address in the left box.  
+  ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_03.png)  
 
-3. 제어기에 표시된 주소의 마지막 두자리를 확인합니다.  
+5. Select the CM-550 BLE address from the search list.  
+  ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_04.png)  
+  ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_05.png)  
 
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_02_1.png)
+#### [Task Download (Smart Device)](#task-download-smart-device)
 
-4. 제어기 주소의 마지막 두자리 문자를 입력해주세요.
+The task file(.tsk3) can be uploaded to CM-550 controller wirelessly.
 
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_03.png)  
+1. While CM-550 controller is connected to the R+ Task 3.0 app, go to **Task Examples** tab and select the example to upload.  
+  ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_06.png)
 
-5. 블루투스 검색결과에서 제어기 주소와 일치하는 포트를 선택하여 연결해주세요.
+2. Press `Download` button to start uploading the task to CM-550 controller.  
+  ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_07.png)  
 
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_04.png)  
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_05.png)  
+#### [Motion Download (Smart Device)](#motion-download-smart-device)
 
-#### [태스크 다운로드 (스마트 기기)](#태스크-다운로드-스마트-기기)
+1. While CM-550 controller is connected to the R+ Task 3.0 app, go to **Motion Examples** tab and select the example to upload.  
+  ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_08.png)  
 
-원격으로 스마트 기기에서 제어기로 태스크 파일(.tsk3)을 업로드할 수 있습니다.  
+2. Select the example file in the **Select the Example** window.  
+  ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_09.png)  
 
-1. 제어기가 스마트 기기와 연결된 상태에서, 로보플러스 태스크 3앱의 홈 탭에서 **태스크 예제** 를 터치해서 제품을 선택해주세요.
+3. Press the menu button on the top left corner of the screen.  
+  ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_10.png)  
 
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_06.png)
+4. Select **Motion Download** tab.  
+  ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_11.png)  
 
-2. 다운로드 버튼을 터치하면 블루투스 연결을 확인한 다음 제어기에 태스크 파일을 업로드합니다.  
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_07.png)  
-
-
-#### [모션 다운로드 (스마트기기)](#모션-다운로드-스마트기기)
-
-1. 제어기가 스마트 기기에 연결된 상태에서, 홈 탭의 **모션 예제** 를 터치해서 제품을 선택해주세요.
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_08.png)  
-
-2. **예제 선택하기** 창이 활성화되면, 원하는 예제를 선택해주세요.
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_09.png)  
-
-3. 화면 왼쪽 상단의 메뉴 버튼을 선택해주세요.
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_10.png)  
-
-4. 오른쪽 상단의 모션 다운로드 탭을 선택해주세요.
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_11.png)  
-
-5. 오른쪽 하단의 빨간색 `모션 다운로드` 버튼을 누르면, 모션파일을 제어기에 다운로드 할 수 있습니다.
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_12.png)
+5. Press the `Motion Download` button in the red box, selected motion file will be uploaded to CM-550 controller.  
+  ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_12.png)
 
 ## [예제 실행하기](#예제-실행하기)
 
-`ROBOTIS ENGINEER` 앱을 실행하고 조립된 로봇 예제를 선택하면 해당 예제에 맞는 다양한 기능들을 사용할 수 있습니다.    
+Launch the `R+ ENGINEER` app and select the assembled robot example to operate the robot.
 
 ![](/assets/images/edu/engineer/kit1/engineer_app_1.png)
 
-**주의** : 조립된 로봇과 다른 예제를 선택할 경우 로봇이 정상적으로 작동하지 않습니다.
+**CAUTION** : Selecting wrong example may result in malfunction of the robot.
 {: .notice--warning}
 
-앱 화면 우측 상단의 메뉴버튼을 눌러 환경 설정을 할 수 있습니다.
+Select the menu button on the top right corner of the app for app configuration.
 
 ![](/assets/images/edu/engineer/kit1/engineer_app_configuration.png)
 
-`연결할 장치 선택` : 연결할 블루투스 장치를 선택합니다.  
-`예제 초기화` : 선택한 예제를 초기화 하는 기능입니다.  
-`제스처 오차 범위 설정` : 제스처의 허용 오차 범위를 설정합니다.  
-`갤러리에 예제 이미지 표시` : 스마트기기의 갤러리에 예제 이미지를 표시합니다.  
-`미디어 스캔` : 파일이 PC에서 보이지 않을 때 사용하는 기능입니다.  
-`버전 정보` : 현재 앱의 버전을 확인하는 기능입니다.  
+`Connect to Robot` : Select Bluetooth device to connect.  
+`Reset Example` : Reset selected examples.  
+`Range of Gesture Error Setting` : Configure the error margin of the gesture.  
+`Display Example Image on Gallery` : Show example images in the smart device gallery.  
+`Scanning Media` : Refresh the smart device files/folders when not detected from PC.  
+`Version Information` : Display the current app version.  
 
 ### [Dr.R](#drr)
 
@@ -563,7 +554,7 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
 
 {% capture info_01 %}
 - 사물학습 및 객체인식을 사용하기 위해서는, 카메라가 장착된 스마트 기기가 있어야 합니다.
-- 스마트 기기에 **[로보플러스 엔지니어 앱](#소프트웨어-다운로드)** 을 설치해야 합니다.
+- 스마트 기기에 **[R+ ENGINEER 앱](#소프트웨어-다운로드)** 을 설치해야 합니다.
 {% endcapture %}
 <div class="notice--info">{{ info_01 | markdownify}}</div>
 
@@ -786,23 +777,11 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
 
 # [소프트웨어 다운로드](#소프트웨어-다운로드)
 
-- 로보티즈 엔지니어는 [로보플러스 태스크 3.0]을 지원합니다.
-- [로보플러스 태스크 3.0]은 기존의 [로보플러스 태스크 2.0]과 [로보플러스 모션 2.0]이 통합된 프로그램입니다.
+- 로보티즈 엔지니어는 [R+ Task 3.0]을 지원합니다.
+- [R+ Task 3.0]은 기존의 [R+ Task 2.0]과 [로보플러스 모션 2.0]이 통합된 프로그램입니다.
 - 태스크 코드를 작성하여, 로봇을 원하는대로 명령으로 구동할 수 있습니다.
 - 모션파일로 로봇의 행동을 직접 만들어 줄 수 있습니다.
 
-{% capture app_install %}  
-![](/assets/images/edu/engineer/kit1/icon_engineer_48.png)  
-**로보플러스 엔지니어 : [안드로이드 앱 다운로드](https://play.google.com/store/apps/details?id=com.robotis.robotisEngineer)**  
-
-![](/assets/images/edu/engineer/kit1/icon_task_48.png)  
-**로보플러스 태스크 3.0 : [안드로이드 앱 다운로드](https://play.google.com/store/apps/details?id=com.robotis.task3)**  
-**로보플러스 태스크 3.0 : [윈도우용 설치파일 다운로드](http://www.robotis.com/service/download.php?no=1774)**  
-
-**참고** : [인터넷에서 다운로드 받은 앱 설치하기]{: .popup}
-
-[인터넷에서 다운로드 받은 앱 설치하기]: /docs/kr/popup/apk_install
-{% endcapture %}
 <div class="notice--success">{{ app_install | markdownify }}</div>
 
 # [참고자료](#참고자료)
@@ -932,7 +911,7 @@ CM-550에 내장된 BLE 슬레이브 모듈의 신호의 세기가 약하거나 
 
 [CM-550 매뉴얼 바로가기]: /docs/kr/parts/controller/cm-550/
 [2XL430-W250 매뉴얼 바로가기]: /docs/kr/dxl/x/2xl430-w250/
-[로보플러스 태스크 3.0]: /docs/kr/software/rplustask3/
-[로보플러스 태스크 2.0]: /docs/kr/software/rplus2/task/
+[R+ Task 3.0]: /docs/kr/software/rplustask3/
+[R+ Task 2.0]: /docs/kr/software/rplus2/task/
 [로보플러스 모션 2.0]: /docs/kr/software/rplus2/motion/
 [동작 모드]: /docs/kr/parts/controller/cm-550/#동작-모드
