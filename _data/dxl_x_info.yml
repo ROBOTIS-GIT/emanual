@@ -7,6 +7,7 @@ common_x_specs:
   backlash_x:         &backlash_x     "15 [arcmin] (0.25 [&deg;])"
   mode:               &mode           "전류 제어 모드<br />속도 제어 모드<br />위치 제어 모드 (0 ~ 360 [&deg;])<br />확장 위치 제어 모드 (멀티턴)<br />전류기반 위치 제어 모드<br />PWM 제어 모드 (Voltage Control Mode)"
   mode_en:            &mode_en        "Current Control Mode<br />Velcoity Control Mode<br />Position Control Mode (0 ~ 360 [&deg;])<br />Extended Position Control Mode (Multi-turn)<br />Current-based Position Control Mode<br />PWM Control Mode (Voltage Control Mode)"
+  motor:              &motor          "Coreless(Maxon)"
   weight_430:         &weight_430     "82 [g]"
   weight_540:         &weight_540     "165 [g]"
   dimension_430:      &dimension_430  "28.5 x 46.5 x 34 [mm]"
@@ -38,7 +39,7 @@ xl320:
 xh430-v210:
   mcu:                *mcu
   encoder:            *encoder
-  motor:              "Coreless(Maxon)"
+  motor:              *motor
   baudrate:           *baudrate
   control:            *control
   resolution:         *resolution
@@ -67,7 +68,7 @@ xh430-v210:
 xh430-v350:
   mcu:                *mcu
   encoder:            *encoder
-  motor:              "Coreless(Maxon)"
+  motor:              *motor
   baudrate:           *baudrate
   control:            *control
   resolution:         *resolution
@@ -96,7 +97,7 @@ xh430-v350:
 xh430-w210:
   mcu:                *mcu
   encoder:            *encoder
-  motor:              "Coreless(Maxon)"
+  motor:              *motor
   baudrate:           *baudrate
   control:            *control
   resolution:         *resolution
@@ -125,7 +126,7 @@ xh430-w210:
 xh430-w350:
   mcu:                *mcu
   encoder:            *encoder
-  motor:              "Coreless(Maxon)"
+  motor:              *motor
   baudrate:           *baudrate
   control:            *control
   resolution:         *resolution
@@ -210,7 +211,7 @@ xl430-w250:
   standbycurrent:     "49 [mA]"
 
 xc430-w240:
-  mcu:                "ST CORTEX-M3 (STM32F103C8 @ 72 [Mhz], 32Bit)"
+  mcu:                *mcu
   encoder:            "Contactless absolute encoder (12Bit, 360 [&deg;])<br />Maker : ams(www.ams.com), Part No : AS5601"
   motor:              "Coreless"
   baudrate:           "9,600 [bps] ~ 4.5 [Mbps]"
@@ -268,7 +269,7 @@ xc430-w240:
   standbycurrent:     "49 [mA]"
 
 xc430-w150:
-  mcu:                "ST CORTEX-M3 (STM32F103C8 @ 72 [Mhz], 32Bit)"
+  mcu:                *mcu
   encoder:            "Contactless absolute encoder (12Bit, 360 [&deg;])<br />Maker : ams(www.ams.com), Part No : AS5601"
   motor:              "Coreless"
   baudrate:           "9,600 [bps] ~ 4.5 [Mbps]"
@@ -357,7 +358,7 @@ xm430-w350:
 xh540-v270:
   mcu:                *mcu
   encoder:            *encoder
-  motor:              "Maxon"
+  motor:              *motor
   baudrate:           *baudrate
   control:            *control
   resolution:         *resolution
@@ -386,7 +387,7 @@ xh540-v270:
 xh540-v150:
   mcu:                *mcu
   encoder:            *encoder
-  motor:              "Maxon"
+  motor:              *motor
   baudrate:           *baudrate
   control:            *control
   resolution:         *resolution
@@ -415,7 +416,7 @@ xh540-v150:
 xh540-w150:
   mcu:                *mcu
   encoder:            *encoder
-  motor:              "Maxon"
+  motor:              *motor
   baudrate:           *baudrate
   control:            *control
   resolution:         *resolution
@@ -444,7 +445,7 @@ xh540-w150:
 xh540-w270:
   mcu:                *mcu
   encoder:            *encoder
-  motor:              "Maxon"
+  motor:              *motor
   baudrate:           *baudrate
   control:            *control
   resolution:         *resolution

@@ -3900,6 +3900,30 @@ mx-106-2:
       - title: "Communication Circuit"
         url: /dxl/mx/mx-106-2/#communication-circuit
 
+
+#X-Series Main sidebar
+dxl_x_main:
+  - title: "DYNAMIXEL X"
+    titlekr: "다이나믹셀 X"
+    url: /dxl/x/#dynamixel-x
+    urlkr: /dxl/x/#다이나믹셀-x
+  - title: "XH Models"
+    titlekr: "XH 모델"
+    url: /dxl/x/#xh-models
+    urlkr: /dxl/x/#xh-모델
+  - title: "XM Models"
+    titlekr: "XM 모델"
+    url: /dxl/x/#xm-models
+    urlkr: /dxl/x/#xm-모델
+  - title: "XC Models"
+    titlekr: "XC 모델"
+    url: /dxl/x/#xc-models
+    urlkr: /dxl/x/#xc-모델
+  - title: "XL Models"
+    titlekr: "XL 모델"
+    url: /dxl/x/#xl-models
+    urlkr: /dxl/x/#xl-모델
+    
 #XH430-V210 sidebar
 xh430-v210:
   - title: "Specifications"
