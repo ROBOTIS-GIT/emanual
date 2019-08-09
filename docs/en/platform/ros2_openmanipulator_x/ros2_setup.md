@@ -52,6 +52,7 @@ $ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git -b ros2
 $ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench.git -b ros2
 $ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench-msgs.git -b ros2
 $ git clone https://github.com/ROBOTIS-GIT/robotis_manipulator.git -b ros2
+$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_msgs.git -b ros2
 $ cd ~/colcon_ws && colcon build
 ```
 
@@ -72,16 +73,10 @@ Connect micro USB (connected to PC), DYNAMIXEL's(OpenMANIPULATOR-X), and 12V Pow
 #### USE Latency Timer Setting
 In linux(ubuntu) environment, USB latency time is set to 16ms by default. Follow the steps below to set the communication latency time to the lowest value (1ms) between DYNAMIXEL's and PC connected via USB.
 
-Open a terminal window and run the roscore.
+Open a terminal window and run the following command to set usb latency time.
 
 ``` bash
-$ roscore
-```
-
-With the roscore running, open a new terminal window and enter the following command to set usb latency time.
-
-``` bash
-$ rosrun open_manipulator_controller create_udev_rules
+$ ros2 run open_manipulator_x_controller create_udev_rules
 ```
 
 **TIP**: This entered command set USB latency timer to **1 ms**. If you would like to see the setting, run the following command in a terminal.  

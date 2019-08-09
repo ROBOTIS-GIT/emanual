@@ -52,7 +52,7 @@ After setting the parameters, launch the OpenMANIPULATOR-X controller to start [
 Please, open Terminal then run the following command in Terminal.
 
 ``` bash
-$ ros2 run open_manipulator_x_controller open_manipulator_x_controller
+$ ros2 run open_manipulator_x_controller open_manipulator_x_controller 
 ```
 
 {% capture warning_01 %}
