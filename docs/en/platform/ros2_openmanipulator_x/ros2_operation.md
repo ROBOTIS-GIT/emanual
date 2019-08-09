@@ -20,7 +20,7 @@ sidebar:
 ## [GUI Program](#gui-program)
 
 {% capture coming_soon_01 %}
-`GUI Program` for \[ROS2] OpenMANIPULATOR-X has not been disclosed yet.  
+`GUI Program` for `ROS2 Dashing Diademata` will be released soon!  
 {% endcapture %}
 <div class="notice">{{ coming_soon_01 | markdownify }}</div>
 
@@ -124,7 +124,7 @@ $ ros2 run open_manipulator_x_teleop open_manipulator_x_teleop_joystick
 ## [MoveIt!](#moveit)
 
 {% capture coming_soon_01 %}
-`Move it` for \[ROS2] OpenMANIPULATOR-X has not been disclosed yet.  
+`Move it` for `ROS2 Dashing Diademata` will be released soon!  
 {% endcapture %}
 <div class="notice">{{ coming_soon_01 | markdownify }}</div>
 

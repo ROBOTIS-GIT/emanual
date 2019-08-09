@@ -16,9 +16,9 @@ sidebar:
 # [[ROS2] Applications](#ros-applications)
 
 {% capture comming_soon_01 %}
-`[ROS2] Applications` for \[ROS2] OpenMANIPULATOR-X has not been disclosed yet. 
+`[ROS2] Applications` for `ROS2 Dashing Diademata` will be released soon!
 {% endcapture %}
-<div class="notice--info">{{ comming_soon_01 | markdownify }}</div>
+<div class="notice">{{ comming_soon_01 | markdownify }}</div>
 
 <!--
 ## [Camera Application](#camera-application)
