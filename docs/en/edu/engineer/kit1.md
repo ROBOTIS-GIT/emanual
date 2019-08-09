@@ -788,14 +788,14 @@ Additional course materials can be downloaded from below link.
 
 ## [BLE Signal Setting](#ble-signal-setting)
 
-CM-550에 내장된 BLE 슬레이브 모듈의 신호의 세기가 약하거나 간섭이 발생할 경우 통신이 불안정할 수 있습니다.  
-이러한 경우 로보플러스 매니저 2.0을 사용하여 BLE 신호세기를 알맞게 설정할 수 있습니다.
+The Bluetooth communication could be unstable if the signal strength of BLE slave module in the CM-550 is weak or interfered.  
+The BLE signal strength can be adjusted by R+ Manager 2.0 in this case.
 
-아래 표는 여러개의 CM-550를 한 공간에서 사용할 때 BLE 신호 세기를 설정하는 방법입니다.
+Please refer to the method to adjust CM-550 BLE signal strength for various situations.
 
 {% capture ble_setting %}  
 
-| 나의 CM-550 | 주변의 CM-550 | BLE 신호 세기 |
+| My CM-550 | Other CM-550 | BLE Signal Strength |
 |:-----------:|:-------------:|:-------------:|
 | 통신 불안정 |   통신 안정   |     올림      |
 | 통신 불안정 |  통신 불안정  |     올림      |
