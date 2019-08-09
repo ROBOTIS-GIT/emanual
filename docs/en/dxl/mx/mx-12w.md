@@ -27,7 +27,7 @@ product_group: dxl_mx
 | Resolution             | 0.088&deg;                                                                                    |
 | Running Degree         | 0&deg; ~ 360&deg;<br />Endless Turn                                                           |
 | Weight                 | 54.6g                                                                                         |
-| Dimensions (W x H x D) | 32mm x 50mm x 40mm                                                                            |
+| Dimensions (W x H x D) | 32 x 50 x 40 [mm]                                                                            |
 | Gear Ratio             | 32 : 1                                                                                        |
 | No Load Speed          | 470rpm (at 12V)                                                                               |
 | Operating Temperature  | -5&deg;C ~ +70&deg;C                                                                          |
