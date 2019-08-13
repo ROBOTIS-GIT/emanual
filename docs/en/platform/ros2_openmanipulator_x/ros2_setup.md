@@ -45,7 +45,7 @@ Install dependent packages for OpenMANIPULATOR-X. Run the following commands in 
 {: .notice--info}
 
 ``` bash
-$ cd ~/colcon_ws/src/
+$ mkdir -p ~/colcon_ws/src/ && cd ~/colcon_ws/src/
 $ git clone https://github.com/bponsler/cmake_modules.git -b ros2-devel
 $ git clone https://github.com/ros/joint_state_publisher.git -b ros2-devel
 $ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git -b ros2
@@ -56,7 +56,7 @@ $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_msgs.git -b ros2
 $ cd ~/colcon_ws && colcon build
 ```
 
-If the colcon uild command has been completed without any errors, all the preparations for using OpenMANIPULATOR-X are done.
+If the colcon build command has been completed without any errors, all the preparations for using OpenMANIPULATOR-X are done.
 
 ## [Communication Converter](#communication-converter)
 
