@@ -16332,7 +16332,7 @@ openmanipulator_pro:
         url: /platform/openmanipulator_pro/ros_operation/#teleoperation
       - title: "MoveIt!"
         url: /platform/openmanipulator_pro/ros_operation/#moveit
-    - title: "[ROS] Simulation"
+  - title: "[ROS] Simulation"
     url: /platform/openmanipulator_pro/ros_simulation/#ros-simulation
     children:
       - title: "Launch gazebo"
