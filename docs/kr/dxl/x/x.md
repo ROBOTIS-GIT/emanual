@@ -5,7 +5,7 @@ ref: dxl_x
 permalink: /docs/kr/dxl/x/
 sidebar:
   title: 다이나믹셀 X
-  nav: ""
+  nav: "dxl_x_main"
 ---
 
 ![](/assets/images/dxl/x/x_series_product.png)
@@ -21,9 +21,7 @@ sidebar:
 - 외형 디자인 단순화로 사용성 개선
 - 케이스에 볼트체결용 탭이 있어 너트 사용 없앰
 - 중공형 설계로 배선 꼬임 및 피로하중 최소화
-- 케이블 커버를 채택하여 케이블 이탈 방지
-
-## [XH 모델](#xh-모델)
+- 케이블 커버를 채택하여 케이블 이탈 방지## [XH 모델](#xh-모델)
 - [XH430-W210](/docs/kr/dxl/x/xh430-w210/)
 - [XH430-W350](/docs/kr/dxl/x/xh430-w350/)
 - [XH430-V210](/docs/kr/dxl/x/xh430-v210/)
@@ -47,3 +45,4 @@ sidebar:
 ## [XC 모델](#xc-모델)
 - [XC430-W150](/docs/kr/dxl/x/xc430-w150/)
 - [XC430-W240](/docs/kr/dxl/x/xc430-w240/)
+<<<<<<< HEAD
