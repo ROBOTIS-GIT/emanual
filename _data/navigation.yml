@@ -14274,6 +14274,10 @@ kit1:
       titlekr: "퓨즈 교체하기"
       url: /edu/engineer/kit1/#fuse-replacement
       urlkr: /edu/engineer/kit1/#퓨즈-교체하기
+    - title: "How to Reset"
+      titlekr: "초기화 하기"
+      url: /edu/engineer/kit1/#how-to-reset
+      urlkr: /edu/engineer/kit1/#초기화-하기
 
 #ROBOTIS MINI sidebar
 mini:
@@ -20534,7 +20538,9 @@ cm-550:
       urlkr: /parts/controller/cm-550/#시작
     - titlekr: "종료"
       urlkr: /parts/controller/cm-550/#종료
-    - titlekr: "동작 모드"
+    - title: "Operating Mode"
+      titlekr: "동작 모드"
+      url: /parts/controller/cm-550/#operating-mode
       urlkr: /parts/controller/cm-550/#동작-모드
       children:
       - titlekr: "MANAGE"
@@ -20564,7 +20570,9 @@ cm-550:
     titlekr: "충전하기"
     url: /parts/controller/cm-550/#charging
     urlkr: /parts/controller/cm-550/#충전하기
-  - titlekr: "충전지 잔량 확인하기"
+  - title: "Battery Level Check"
+    titlekr: "충전지 잔량 확인하기"
+    url: /parts/controller/cm-550/#battery-level-check
     urlkr: /parts/controller/cm-550/#충전지-잔량-확인하기
   - title: "Fuse Replacement"
     titlekr: "퓨즈 교체하기"

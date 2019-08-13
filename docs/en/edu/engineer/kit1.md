@@ -29,20 +29,20 @@ product_group: 2xl430-w250
 
 ![](/assets/images/edu/engineer/kit1/parts_list.png)
 
-### [CM-550 제어기](#cm-550-제어기)
+### [CM-550 Controller](#cm-550-controller)
 
-#### [제품 사양](#제품-사양)
+#### [Specifications](#specifications)
 
-|     Item      |                                                                                   Specifications                                                                                          |
-|:-------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-|     무게      |                                                                                            58.8 [g]                                                                                       |
-|      MCU     |                                                                               ARM Cortex-M4 (168 [MHz], 32 [Bit])                                                                          |
-|   동작 전압   | 충전지 : 허용범위 6.5 ~ 15 [V], **권장 전압 11.1 [V] (Li-PO 3cell)**<br />SMPS : 허용범위 6.5 ~ 15 [V], **권장 전압 12.0 [V]**<br />Micro USB : 허용범위 4.75 ~ 5.25 [V], **권장 전압 5.0 [V]** |
-|  소모 전류량  |                               대기시 : 50 [mA]<br />포트 1 ~ 2 I/O 최대전류 : 0.5 [A]<br />포트 3 ~ 5 I/O 최대전류 : 0.02 [A]<br />전체 최대 전류 : 10 [A] (Fuse)                              |
-|   동작 온도   |                                                                                        -5 ~ 70 [&deg;C]                                                                                    |
-|   통신 모듈   |                                                                                       BLE Slave 모듈 내장                                                                                   |
-| 내부 I/O 장치 |                                버튼 : 2 (MODE, START)<br />마이크 (소리 감지) : 1<br />부저 : 1<br />전압 센서 : 1<br />자이로 가속도 센서 : 1<br />온도 센서 : 1<br />RGB LED : 3              |
-| 외부 I/O 장치 |                                             로보티즈 5핀 포트 : 5 (서보모터/IR센서/온습도센서 : 1, 2번 포트 사용)<br />X 시리즈 다이나믹셀 포트 : 6                                              |
+|         Item          |                                                                               Specifications                                                                                |
+|:---------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+|        Weight         |                                                                                  58.8 [g]                                                                                   |
+|          MCU          |                                                                     ARM Cortex-M4 (168 [MHz], 32 [Bit])                                                                     |
+|   Operating Voltage   | Battery : 6.5 ~ 15 [V], **Recommended 11.1 [V] (Li-PO 3cell)**<br />SMPS : 6.5 ~ 15 [V], **Recommended 12.0 [V]**<br />Micro USB : 4.75 ~ 5.25 [V], **Recommended 5.0 [V]** |
+|  Current Consumption  |                              Standby : 50 [mA]<br />Port 1 ~ 2 I/O Max : 0.5 [A]<br />Port 3 ~ 5 I/O Max : 0.02 [A]<br />Total : 10 [A] (Fuse)                              |
+| Operating Temperature |                                                                              -5 ~ 70 [&deg;C]                                                                               |
+| Communication Module  |                                                                              BLE Slave Module                                                                               |
+| Internal I/O Devices  |  Buttons : 2 (MODE, START)<br />Mic (Sound Detection) : 1<br />Buzzer : 1<br />Voltage Sensor : 1<br />Gyro Accelerometer : 1<br />Temperature Sensor : 1<br />RGB LED : 3  |
+| External I/O Devices  |                    ROBOTIS 5 Pin Port : 5 (Servo Motor / IR Sensor / Temperature & Humidity Sensor : Use Port 1 or 2)<br />X series DYNAMIXEL Ports : 6                     |
 
 
 #### [CM-550 Layout](#cm-550-layout)
@@ -51,23 +51,23 @@ product_group: 2xl430-w250
 
 ![](/assets/images/edu/engineer/kit1/cm550_2_kr.png)
 
-- `USB` Micro USB Port : 마이크로 USB 케이블로 CM-550를 PC의 USB 포트와 연결할 수 있습니다.
-- `UART` Communication Port : BT-210, BT-410, LN-101, 적외선 수신기 등의 무선 통신용 모듈이나 외부 장치와의 통신용으로 사용되는 포트입니다.
-- `BAT` Battery Socket : 배터리를 연결하는 소켓입니다.
-- `12VDC` DC Input : 전원 공급기(SMPS)의 전원잭을 연결하는 소켓입니다.
-- `POWER` Power Switch : 제어기의 전원을 켜거나 끌 때 사용하는 스위치입니다.
-- Status LED : 전원과 무선기기의 상태에 따라 다양한 색상과 표현으로 알려주는 RGB LED입니다.
-- `MODE` MODE LED : CM-550의 동작 모드를 표시하는 RGB LED입니다. CM-550의 [동작 모드] 설명을 참고하세요.
-- `START` START LED : CM-550의 [동작 모드] 설명을 참고하세요.
-- `MODE` MODE Button : 제어기의 동작 모드를 변경하기 위한 버튼입니다. CM-550의 [동작 모드] 설명을 참고하세요.
-- `START` START Button : 현재 선택된 모드를 실행하기 위한 버튼입니다. CM-550의 [동작 모드] 설명을 참고하세요.
-- `DXL` DYNAMIXEL X Series Port : 다이나믹셀 X 시리즈를 연결하기 위한 포트입니다.
-- `PORT` ROBOTIS 5 Pin Port : DMS, 접촉 센서, 적외선 센서 등의 주변장치를 연결하기 위한 5개의 포트입니다.  
-  그 중 서보모터, 적외선센서, 온습도센서는 1, 2번 포트에만 연결할 수 있습니다. 각 포트마다 번호가 표시되어 있습니다.
-- `MIC` Internal Microphone : 박수 소리를 감지할 수 있는 마이크가 기본으로 내장되어 있습니다.
-- `FUSE` Fuse : 10A 퓨즈가 내장되어 있습니다.
+- `USB` Micro USB Port : The 5 pin micro USB cable can be used to connect to the USB port of the PC.
+- `UART` Communication Port : BT-210, BT-410, LN-101, IR receiver or other communication modules can be connected.
+- `BAT` Battery Socket : Provided Li-Po battery can be connected.
+- `12VDC` DC Input : The DC barrel jack of provided SMPS can be connected.
+- `POWER` Power Switch : Controls the power supply of the controller.
+- Status LED : Displays voltage level and wireless device connection status with RGB LED.
+- `MODE` MODE LED : This RGB LED displays the operating mode of CM-550. Please refer to the [Operating Mode] of CM-550.
+- `START` START LED : Please refer to the [Operating Mode] of CM-550.
+- `MODE` MODE Button : The operating mode can be changed with this button. Please refer to the [Operating Mode] of CM-550.
+- `START` START Button : This button runs selected operating mode. Please refer to the [Operating Mode] of CM-550.
+- `DXL` DYNAMIXEL X Series Port : DYNAMIXEL X series can be connected in any of these ports.
+- `PORT` ROBOTIS 5 Pin Port : Sensors such as DMS, Touch sensor, IR sensor can be connected.  
+  Servo motor, IR array sensor, Temperature & Humidity sensor can only be connected to Port 1 or 2.
+- `MIC` Internal Microphone : The integrated microphone detects clapping sound.
+- `FUSE` Fuse : 10A fuse protects electric damage.
 
-**주의** : CM-550 제어기의 USB 포트는 PC와의 통신용이므로 스마트 기기나 다른 장치와 연결하지 마세요. 제어기 고장의 원인이 될 수 있습니다.  
+**CAUTION** : The USB port on CM-550 is designed to be connected with the PC. Please do **NOT** connect other USB devices, or it may cause damage to the controller.
 {: .notice--warning}
 
 **[CM-550 eManual]{: .blank}**
@@ -81,37 +81,36 @@ product_group: 2xl430-w250
 
 The usage is identical to other DYNAMIXELs, but be aware that Firmware Recovery will reset both axis to factory settings.
 
-
-| 항목             | 내용                                                              |
-|:-----------------|:------------------------------------------------------------------|
-| MCU              | {{ site.data.dxl_x_info[page.product_group].mcu }}                |
-| 위치 센서        | {{ site.data.dxl_x_info[page.product_group].encoder }}            |
-| 모터             | {{ site.data.dxl_x_info[page.product_group].motor }}              |
-| 통신속도         | {{ site.data.dxl_x_info[page.product_group].baudrate }}           |
-| 제어 알고리즘    | {{ site.data.dxl_x_info[page.product_group].control }}            |
-| 해상도           | {{ site.data.dxl_x_info[page.product_group].resolution }}         |
-| 동작 모드        | {{ site.data.dxl_x_info[page.product_group].mode }}               |
-| 무게             | {{ site.data.dxl_x_info[page.product_group].weight }}             |
-| 크기 (W x H x D) | {{ site.data.dxl_x_info[page.product_group].dimensions }}         |
-| 기어비           | {{ site.data.dxl_x_info[page.product_group].gearratio }}          |
-| 정지 토크        | {{ site.data.dxl_x_info[page.product_group].stalltorque }}        |
-| 무부하 속도      | {{ site.data.dxl_x_info[page.product_group].noloadspeed }}        |
-| 동작 온도        | {{ site.data.dxl_x_info[page.product_group].temperature }}        |
-| 사용 전압        | {{ site.data.dxl_x_info[page.product_group].voltage }}            |
-| 제어 명령        | {{ site.data.dxl_x_info[page.product_group].command }}            |
-| 프로토콜 타입    | {{ site.data.dxl_x_info[page.product_group].protocoltype }}       |
-| 통신 연결        | {{ site.data.dxl_x_info[page.product_group].physicalconnection }} |
-| ID               | {{ site.data.dxl_x_info[page.product_group].id }}                 |
-| 피드백           | {{ site.data.dxl_x_info[page.product_group].feedback }}           |
-| 재질             | {{ site.data.dxl_x_info[page.product_group].material }}           |
-| 대기 전류        | {{ site.data.dxl_x_info[page.product_group].standbycurrent }}     |
+| Item                   | Specifications                                                    |
+|:-----------------------|:------------------------------------------------------------------|
+| MCU                    | {{ site.data.dxl_x_info[page.product_group].mcu }}                |
+| Position Sensor        | {{ site.data.dxl_x_info[page.product_group].encoder }}            |
+| Motor                  | {{ site.data.dxl_x_info[page.product_group].motor }}              |
+| Baud Rate              | {{ site.data.dxl_x_info[page.product_group].baudrate }}           |
+| Control Algorithm      | {{ site.data.dxl_x_info[page.product_group].control }}            |
+| Resolution             | {{ site.data.dxl_x_info[page.product_group].resolution }}         |
+| Operating Modes        | {{ site.data.dxl_x_info[page.product_group].mode }}               |
+| Weight                 | {{ site.data.dxl_x_info[page.product_group].weight }}             |
+| Dimensions (W x H x D) | {{ site.data.dxl_x_info[page.product_group].dimensions }}         |
+| Gear Ratio             | {{ site.data.dxl_x_info[page.product_group].gearratio }}          |
+| Stall Torque           | {{ site.data.dxl_x_info[page.product_group].stalltorque }}        |
+| No Load Speed          | {{ site.data.dxl_x_info[page.product_group].noloadspeed }}        |
+| Operating Temperature  | {{ site.data.dxl_x_info[page.product_group].temperature }}        |
+| Input Voltage          | {{ site.data.dxl_x_info[page.product_group].voltage }}            |
+| Command Signal         | {{ site.data.dxl_x_info[page.product_group].command }}            |
+| Protocol Type          | {{ site.data.dxl_x_info[page.product_group].protocoltype }}       |
+| Physical Connection    | {{ site.data.dxl_x_info[page.product_group].physicalconnection }} |
+| ID                     | {{ site.data.dxl_x_info[page.product_group].id }}                 |
+| Feedback               | {{ site.data.dxl_x_info[page.product_group].feedback }}           |
+| Part Material          | {{ site.data.dxl_x_info[page.product_group].material }}           |
+| Standby Current        | {{ site.data.dxl_x_info[page.product_group].standbycurrent }}     |
 
 **[2XL430-W250 eManual]{: .blank}**
 {: .notice}
 
 ## [Cautions](#cautions)
 
-### [안전에 대한 주의사항](#안전에-대한-주의사항)
+### [Safety Precautions](#safety-precautions)
 
 {% capture eng_kit1_danger1 %}  
 ![](/assets/images/icon_warning.png)  
@@ -128,7 +127,7 @@ The usage is identical to other DYNAMIXELs, but be aware that Firmware Recovery 
 <div class="notice--danger">{{ eng_kit1_danger1 | markdownify }}</div>
 
 
-### [사용상 주의사항](#사용상-주의사항)
+### [Precautions on Use](#precautions-on-use)
 
 {% capture eng_kit1_danger2 %}  
 1. Use provided screwdriver(PH 1) in the kit for tightening screws.
@@ -139,7 +138,7 @@ The usage is identical to other DYNAMIXELs, but be aware that Firmware Recovery 
 {% endcapture %}
 <div class="notice--warning">{{ eng_kit1_danger2 | markdownify }}</div>
 
-### [충전기/충전지 사용시 주의사항](#충전기충전지-사용시-주의사항)
+### [Precautions on Battery](#precautions-on-battery)
 
 {% capture eng_kit1_danger3 %}  
 ![](/assets/images/icon_warning.png)  
@@ -157,9 +156,9 @@ The usage is identical to other DYNAMIXELs, but be aware that Firmware Recovery 
 {% endcapture %}
 <div class="notice--danger">{{ eng_kit1_danger3 | markdownify }}</div>
 
-### [조립시 주의사항](#조립시-주의사항)
+### [Assembly Precautions](#assembly-precautions)
 
-#### [다이나믹셀 조립](#다이나믹셀_조립)
+#### [DYNAMIXEL Assembly](#dynamixel-assembly)
 
 - In order to control 2 axis at the same time, each axle is assigned with different ID while sharing an identical Baudrate.  
 - The ID and Status LED is located on the opposite side of the output horn.  
@@ -172,11 +171,11 @@ The usage is identical to other DYNAMIXELs, but be aware that Firmware Recovery 
 **CAUTION** : Please use the designated screw driver(PH 1) when assembling bolts.
 {: .notice--warning}
 
-##### [다이나믹셀 ID확인](#다이나믹셀-id확인)
+##### [Check DYNAMIXEL ID](#check-dynamixel-id)
 
 ![](/assets/images/edu/engineer/kit1/2xl430_id.png)
 
-##### [다이나믹셀 혼 위치 확인](#다이나믹셀-혼-위치-확인)
+##### [Check DYNAMIXEL Horn Position](#check-dynamixel-horn-position)
 
 ![](/assets/images/edu/engineer/kit1/2xl430_horn.png)  
 
@@ -189,14 +188,14 @@ The usage is identical to other DYNAMIXELs, but be aware that Firmware Recovery 
 
 #### [Rivet Assembly](#rivet-assembly)
 
-##### 6mm 리벳
+##### 6mm Rivet
 
 ![](/assets/images/edu/engineer/kit1/rivet_assembly_6mm_kr.png)  
 
-**CAUTION** : When using a used rivet, pull the pin from the pinhole and insert the pinhole to the plate then push the pin down (The pin in the used rivet cannot be extracted from the pin-hole).
+**CAUTION** : When reusing rivets, the pin hole must be inserted first. Used rivet will not be separated into pin and pinhole.
 {: .notice--warning}
 
-##### 12mm 리벳
+##### 12mm Rivet
 
 ![](/assets/images/edu/engineer/kit1/rivet_assembly_12mm_kr.png)
 
@@ -219,9 +218,9 @@ It is not a mandatory and it may require more time to replace the cable afterwar
 {: .notice--info}
 
 
-# [작동하기](#작동하기)
+# [Quick Start](#quick-start)
 
-## [앱 설치하기](#앱-설치하기)
+## [App Installation](#app-installation)
 
 {% capture app_install %}
 ![](/assets/images/edu/engineer/kit1/icon_engineer_48.png)  
@@ -246,7 +245,7 @@ It is not a mandatory and it may require more time to replace the cable afterwar
   ![](/assets/images/edu/engineer/kit1/app_installation_04_kr.png)
 
 
-## [블루투스 연결하기](#블루투스-연결하기)
+## [Pairing Bluetooth](#pairing-bluetooth)
 
 1. Turn on the CM-550 controller with power switch.  
   ![](/assets/images/edu/engineer/kit1/bluetooth_connection_1.png)
@@ -275,7 +274,7 @@ It is not a mandatory and it may require more time to replace the cable afterwar
 7. Select the CM-550 BLE address from the search list.  
   ![](/assets/images/edu/engineer/kit1/bluetooth_connection_7.png)
 
-## [예제 다운로드](#예제-다운로드)
+## [Download Examples](#download-examples)
 - CM-550 controller is initially programmed with Kit1 example.  
 - The `Complete Example` includes `Dr.R`, `MAX-E1`, `SPI` examples.
 
@@ -296,7 +295,7 @@ It is not a mandatory and it may require more time to replace the cable afterwar
 {% endcapture %}
 <div class="notice">{{opening_exam | markdownify}}</div>
 
-### [PC에서 예제 다운로드](#pc에서-예제-다운로드)
+### [Download from PC](#download-from-pc)
 
 #### Connect with USB Cable
 The CM-550 can be connected to the PC via Micro USB port to download task(.tsk3) and motion(.mtn3) files.
@@ -371,7 +370,7 @@ Please follow the instruction below to download the motion(.mtn3) file to CM-550
 4. Select the motion group to download from the left column and click the `Download` button.  
   ![](/assets/images/edu/engineer/kit1/remote_pairing_12.png)
 
-### [스마트 기기에서 예제 다운로드](#스마트-기기에서-예제-다운로드)
+### [Download from Smart Device](#download-from-smart-device)
 
 In order to upload an example to CM-550 controller with R+ Task 3.0 app, the smart device and CM-550 must be paired with Bluetooth.
 
@@ -418,7 +417,7 @@ The task file(.tsk3) can be uploaded to CM-550 controller wirelessly.
 5. Press the `Motion Download` button in the red box, selected motion file will be uploaded to CM-550 controller.  
   ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_12.png)
 
-## [예제 실행하기](#예제-실행하기)
+## [Run Examples](#run-examples)
 
 Launch the `R+ ENGINEER` app and select the assembled robot example to operate the robot.
 
@@ -440,12 +439,12 @@ Select the menu button on the top right corner of the app for app configuration.
 
 ### [Dr.R](#drr)
 
-#### 감정 표현  
+#### Emotion  
 Selecting Dr.R example from R+ Engineer app will display robot face on the screen. Touch robot or trigger events to change the emotion of the robot with facial expressions, motions and speeches.
 
 ![](/assets/images/edu/engineer/kit1/engineer_app_emotion_1.png)
 
-#### 모드 선택하기
+#### Select Mode
 
 Press the `Mode` button to display supported modes and options.
 
@@ -468,12 +467,12 @@ Press the `Mode` button to display supported modes and options.
 | ![](/assets/images/edu/engineer/kit1/icon_motor.png)  | **MOTOR : DYNAMIXEL Inspection**<br>This feature inspects each joint of the robot.                          |
 | ![](/assets/images/edu/engineer/kit1/icon_offset.png) | **OFFSET : Motion Offset**<br>This feature calibrates the offset position of each joint for proper motions. |
 
-**NOTE** : The Option Menu is available in all examples. Please refer to [로봇 설정하기](#로봇-설정하기) for more details.
+**NOTE** : The Option Menu is available in all examples. Please refer to [Setting Up the Robot](#setting-up-the-robot) for more details.
 {: .notice--info}
 
 ### [MAX-E1](#max-e1)
 
-#### 리모컨 화면
+#### Remote Controller Screen
 
 ![](/assets/images/edu/engineer/kit1/max_controller.png)
 
@@ -493,7 +492,7 @@ Press the `Mode` button to display supported modes and options.
 
 ### [SPI](#spi)
 
-#### 리모컨 화면  
+#### Remote Controller Screen
 
 ![](/assets/images/edu/engineer/kit1/spi_controller.png)
 
@@ -534,7 +533,7 @@ Please perform offset adjustment with a thorough understanding as it may cause u
 
     - `+ / -` : Increase / Decrease the offset value.  
     - `Torque On / Off` : Toggle the torque of the selected joint.  
-    - `OK / CANCEL` : Save / Cancel the changes in offset.
+    - `OK / CANCEL` : Save / Cancel the changes in offset value.
 
 3. Select `OK` to save the offset value. The confirmation message will appear.  
   Select `OK` once again to save the offset value to robot.  
@@ -795,116 +794,115 @@ Please refer to the method to adjust CM-550 BLE signal strength for various situ
 
 {% capture ble_setting %}  
 
-| My CM-550 | Other CM-550 | BLE Signal Strength |
-|:-----------:|:-------------:|:-------------:|
-| 통신 불안정 |   통신 안정   |     올림      |
-| 통신 불안정 |  통신 불안정  |     올림      |
-|  통신 안정  |  통신 불안정  |     내림      |
-|  통신 안정  |   통신 안정   |  설정 불필요  |
+|   My CM-550   | Other CM-550  | BLE Signal Strength |
+|:-------------:|:-------------:|:-------------------:|
+| Unstable Link |  Stable Link  |      Increase       |
+| Unstable Link | Unstable Link |      Increase       |
+|  Stable Link  | Unstable Link |      Decrease       |
+|  Stable Link  |  Stable Link  |      No Change      |
 
-- 한 개의 제어기만을 사용하는 환경에서 통신이 불안정하다면, 신호의 세기가 약할 수 있습니다. **BLE 신호 세기를 높여주세요**.
-- 같은 공간에서 여러 개의 제어기를 사용할 때 통신이 불안정하다면, 제어기의 BLE 신호가 서로 간섭을 줄 수 있습니다. **통신이 불안정한 제어기의 BLE 신호세기를 높이거나 주변 제어기의 BLE 신호 세기를 낮춰주세요**.
-- 모든 제어기의 통신이 잘 유지된다면 신호의 세기가 충분하고, 다른 제어기에 의해서 간섭이 발생하지 않는 경우입니다. **BLE 신호 세기를 유지시켜 주세요**.
+- If communication is unstable when using one CM-550 controller in the room, the signal strength might be weak. **Increase the BLE signal strength**.
+- If communication is unstable when using multiple CM-550 controllers in the room, BLE signals could interrupt each other. **Increase the BLE signal strength of the unstable CM-550 or decrease the BLE signal strength of other stable CM-550**.
+- If all CM-550 in the room are stable, **Maintain the BLE signal strength**.
 {% endcapture %}
 <div class="notice">{{ ble_setting | markdownify }}</div>
 
-**참고** : 주변 환경과 사용하는 기기의 수에 따라서, BLE 신호 세기 및 간섭의 정도가 달라질 수 있습니다.
+**NOTE** : The BLE signal strength and noise may differ by environment and the number of devices nearby.
 {: .notice}
 
-1. CM-550의 BLE와 연결되어 있는 BT-410 마스터 모듈 또는 BT-410 동글의 전원이 꺼져있는지 확인합니다.  
-  (만일 전원이 켜져있는 경우 CM-550을 켜는 순간 서로 페어링되기 때문에 BLE 신호 확인 및 설정을 할 수 없습니다)
+1. Turn off the BT-410 master or BT-410 Dongle that is paired to CM-550 BLE.  
+  (BLE signal strength cannot be configured while CM-550 BLE is connected to the paired device)
 
-2. CM-550의 전원을 켜고 USB 케이블로 PC에 연결합니다 (외부 전원 없이 USB 케이블로 제어기에 충분한 전원공급이 가능합니다).
+2. Connect the USB cable from PC to CM-550 (5V USB will automatically turn on the controller even if the power switch is off).
 
-3. CM-550의 `MODE` 버튼이 깜박이는 것을 확인합니다.
+3. Wait until the `MODE` button of CM-550 flickers every second.
 
-4. 로보플러스 매니저 2.0 을 실행합니다.
+4. Run R+ Manager 2.0.
 
-    ![](/assets/images/edu/engineer/kit1/BLE_signal_power_01_kr.png)
+    ![](/assets/images/edu/engineer/kit1/BLE_signal_power_01.png)
 
-5. `업데이트 검사` 를 클릭한 다음, 로보플러스 매니저 2.0이 최신 버전인지 확인합니다.
+5. Click the `Check for Updates` button to install the latest updates.
 
-    ![](/assets/images/edu/engineer/kit1/BLE_signal_power_02_kr.png)  
-    ![](/assets/images/edu/engineer/kit1/BLE_signal_power_03_kr.png)
+    ![](/assets/images/edu/engineer/kit1/BLE_signal_power_02.png)  
 
-6. `모든제품` 탭을 선택합니다.
+6. Go to `ALL PRODUCTS` tab or use shortcut key(`Ctrl` + `A`).
 
-    ![](/assets/images/edu/engineer/kit1/BLE_signal_power_04_kr.png)
+    ![](/assets/images/edu/engineer/kit1/BLE_signal_power_04.png)
 
-7. 제품 중에서 CM-550을 선택 후 `확인` 을 클릭합니다.
+7. Select `CM-550` from the product list.
 
-    ![](/assets/images/edu/engineer/kit1/BLE_signal_power_05_kr.png)
+    ![](/assets/images/edu/engineer/kit1/BLE_signal_power_05.png)
 
-8.  `업데이트 & 테스트` 를 클릭합니다.
+8.  Click `Update & Test` button.
 
-    ![](/assets/images/edu/engineer/kit1/BLE_signal_power_06_kr.png)
+    ![](/assets/images/edu/engineer/kit1/BLE_signal_power_06.png)
 
-9. `다음` 을 클릭합니다.
+9. Click `Next` button.
 
-    ![](/assets/images/edu/engineer/kit1/BLE_signal_power_07_kr.png)
+    ![](/assets/images/edu/engineer/kit1/BLE_signal_power_07.png)
 
-10. 제어기가 연결된 포트를 선택합니다.
+10. Select the port where the controller is connected to.
 
-    ![](/assets/images/edu/engineer/kit1/BLE_signal_power_08_kr.png)
+    ![](/assets/images/edu/engineer/kit1/BLE_signal_power_08.png)
 
-11. 제어기와 PC의 통신속도를 선택합니다 (기본 통신속도는 57600 bps로 고정되어 있습니다).
+11. Confirm the Baudrate (The default baudrate is fixed to 57600 bps).
 
-    ![](/assets/images/edu/engineer/kit1/BLE_signal_power_09_kr.png)
+    ![](/assets/images/edu/engineer/kit1/BLE_signal_power_09.png)
 
-12. 제어기 검색이 완료되면 `다음` 을 클릭합니다.
+12. Once CM-550 controller is detected, click `Next`.
 
-    ![](/assets/images/edu/engineer/kit1/BLE_signal_power_10_kr.png)
+    ![](/assets/images/edu/engineer/kit1/BLE_signal_power_10.png)
 
-13. 제어기와 연결된 부품의 펌웨어가 모두 최신 버전이라면 `다음` 을 클릭하거나, 업데이트가 필요한 경우 화면의 안내에 따라 펌웨어 업데이트를 진행합니다.
+13. If the controller has the latest firmware, click `Next`, or else follow the update instruction on the screen to download the latest firmware.
 
-    ![](/assets/images/edu/engineer/kit1/BLE_signal_power_11_kr.png)
+    ![](/assets/images/edu/engineer/kit1/BLE_signal_power_11.png)
 
-14. 제어기와 PC가 성공적으로 연결이 되면, 아래 그림과 같이 컨트롤 테이블이 표시됩니다.
+14. Upon the successful connection, below control table will appear on the screen.
 
-    ![](/assets/images/edu/engineer/kit1/BLE_signal_power_12_kr.png)
+    ![](/assets/images/edu/engineer/kit1/BLE_signal_power_12.png)
 
-15. 컨트롤 테이블을 스크롤해서 `139`번 주소의 `BLE Signal Power` 를 찾습니다.
+15. Scroll down until to find `BLE Signal Power` in the address `139`.
 
-    ![](/assets/images/edu/engineer/kit1/BLE_signal_power_13_kr.png)
+    ![](/assets/images/edu/engineer/kit1/BLE_signal_power_13.png)
 
-16. 화면 오른쪽의 `BLE Signal Power` 에서 값을 선택 후 저장합니다.  
-  큰 값을 선택할수록 신호가 강해지며, 통신이 불안정할 경우 신호 세기를 높여주세요.  
+16. Select the `BLE Signal Power` on the right section of the control table and click `Save` button.  
+  The bigger value will increase the signal strength.  
 
-    ![](/assets/images/edu/engineer/kit1/BLE_signal_power_14_kr.png)
+    ![](/assets/images/edu/engineer/kit1/BLE_signal_power_14.png)
 
-    `BLE Signal Power` 값이 `UNKNOWN(0)`인 경우 1번 단계로 돌아가서 BT-410 마스터 또는 BT-410 동글의 전원이 꺼져있는지 확인하시기 바랍니다.
+    If the value of `BLE Signal Power` is marked on `UNKNOWN(0)`, please go back to step 1 and check if BT-410 Master or BT-410 Dongle module is turned off.
     {: .notice}
 
-17. 마지막으로, `BLE Signal Power` 의 값이 저장되었는지 확인해주세요.
+17. Confirm the changed `BLE Signal Power` value.
 
-    ![](/assets/images/edu/engineer/kit1/BLE_signal_power_15_kr.png)
+    ![](/assets/images/edu/engineer/kit1/BLE_signal_power_15.png)
 
-## [점검 및 자가진단](#점검-및-자가진단)
+## [Self Checklist](#self-checklist)
 
-1. 로봇의 전원이 켜지지 않아요.  
-  > 충전지의 연결 및 충전상태를 점검해 보세요.  
+1. Why the robot does not turn on?  
+  > Please check the battery level and connection.  
 
-2. 충전지 잔량을 확인하고 싶어요.  
-  > [충전지 잔량 확인 하기](#충전지-잔량-확인하기)를 참조하세요.
+2. How can I check the battery level?  
+  > Please refer to [Battery Level Check](#battery-level-check) section.
 
-3. 로봇이 작동 중에 경고음이 들려요.  
-  > 충전지의 잔량이 부족해서 나는 경고음입니다. [배터리를 충전](#배터리-충전하기)해 주세요.
+3. I keep hearing the alarm from the robot.  
+  > If the battery level is too low, battery warning alarm sounds. Please refer to [Charging Battery](#charging-battery) section.
 
-4. 로봇이 정상적으로 작동하지 않아요.  
-  > 로봇의 조립 방법 및 [다이나믹셀 ID](#다이나믹셀-id확인)를 확인해 보세요.  
+4. The robot motion seems awkward.  
+  > The robot may not assembled properly. Please check the robot assembly and [Check DYNAMIXEL Assembly](#check-dynamixel-assembly) section.
 
-5. 어댑터로는 동작하는데 충전지로 동작하지 않아요.  
-  > 제어기의 퓨즈 상태를 확인하고 필요시 교체합니다. [퓨즈 교체하기](#퓨즈-교체하기)를 참고하세요.    
+5. The robot turns on with the adapter, but not with the battery.  
+  > Please check the Fuse on the bottom of CM-550 controller. Please refer to [Fuse Replacement](#fuse-replacement) section.
 
-## [배터리 충전하기](#배터리-충전하기)
+## [Charging Battery](#charging-battery)
 
 {% include kr/edu/engineer/battery_charge.md %}
 
-## [충전지 잔량 확인하기](#충전지-잔량-확인하기)
+## [Battery Level Check](#battery-level-check)
 
 {% include kr/edu/engineer/charge_level.md %}
 
-## [퓨즈 교체하기](#퓨즈-교체하기)
+## [Fuse Replacement](#fuse-replacement)
 
 {% include kr/parts/controller/fuse_cm-550.md %}
 
@@ -914,4 +912,4 @@ Please refer to the method to adjust CM-550 BLE signal strength for various situ
 [R+ Task 3.0]: /docs/en/software/rplustask3/
 [R+ Task 2.0]: /docs/en/software/rplus2/task/
 [R+ Motion 2.0]: /docs/en/software/rplus2/motion/
-[동작 모드]: /docs/en/parts/controller/cm-550/#동작-모드
+[Operating Mode]: /docs/en/parts/controller/cm-550/#operating-mode
