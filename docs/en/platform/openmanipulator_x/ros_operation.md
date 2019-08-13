@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_x/ros_operation/
 sidebar:
-  title: OpenMANIPULATOR-X
+  title: "[ROS] OpenMANIPULATOR-X"
   nav: "openmanipulator_x"
 product_group: openmanipulator_x
 page_number: 7
@@ -25,7 +25,7 @@ page_number: 7
 **NOTE**:
 - This instructions has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - This instructions are supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
-- Make sure to run the [OpenMANIPULATOR-X controller](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) instructions before running the instruction below.
+- Make sure to run the [[ROS] OpenMANIPULATOR-X controller](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) instructions before running the instruction below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -34,7 +34,7 @@ page_number: 7
   ``` bash
   $ roslaunch open_manipulator_control_gui open_manipulator_control_gui.launch
   ```
-  To controll OpenMANIPULATOR-X, first click the `Timer Start` button.  
+  To control OpenMANIPULATOR-X, first click the `Timer Start` button.  
   ![](/assets/images/platform/openmanipulator_x/OpenManipulator_GUI.png)  
 
   Check the status of the OpenMANIPULATOR-X (joint states, kinematics pose).  
@@ -54,7 +54,7 @@ page_number: 7
 **NOTE**:
 - This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - This instruction is supposed to be run on PC with ROS packages installed in. Please run the instruction below on your PC ROS packages installed in.
-- Make sure to run [OpenMANIPULATOR controller](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) instructions before running the instructions below.
+- Make sure to run [[ROS] OpenMANIPULATOR-X controller](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) instructions before running the instructions below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -201,14 +201,14 @@ After setting all the parameters, launch the open_manipulator_pro_controller.
   $ roslaunch open_manipulator_controller open_manipulator_controller.launch use_moveit:=true
   ```
 
-**WARNING** : When launching the controller to use MoveIt!, [OpenMANIPULATOR-X launch file](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) must be turned off.  
+**WARNING** : When launching the controller to use MoveIt!, [[ROS] OpenMANIPULATOR-X launch file](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) must be turned off.  
 {: .notice--warning}
 
 {% capture warning_01 %}
 
 **WARNING** :  
 Please check each joint position before running OpenMANIPULATOR-X. It might stop operation because of joint position out of range.  
-The picture on the below is showing you the ideal pose of OpenMANIPULATOR-X. Please adjust each joints along with the following picture when DYNAMIXEL torque isn't enabled.  
+The following picture is showing you the ideal pose of OpenMANIPULATOR-X. Please adjust each joints along with the following picture when DYNAMIXEL torque isn't enabled.  
   
 <img src="/assets/images/platform/openmanipulator_x/open_manipulator_start_pose.png" width="250">
 {% endcapture %}

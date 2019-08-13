@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_x/tool_modification/
 sidebar:
-  title: OpenMANIPULATOR-X
+  title: "[ROS] OpenMANIPULATOR-X"
   nav: "openmanipulator_x"
 product_group: openmanipulator_x
 page_number: 12
@@ -48,7 +48,7 @@ Set vacuum gripper system referring [Instrucables page](https://www.instructable
 | .                        | NEBV-Z4WA2L-P-E-2.5-N-LE2-S1 (Cable for Valve) | 1        | [shop Link](https://www.festo.com/cat/en-us_us/products_NEBV_V?CurrentIDCode1=NEBV-Z4WA2L-P-E-2.5-N-LE2&CurrentPartNo=8003577)                                                                                                                                               |
 
 ### Software Setup
-Please refer the detailed description of [[OpenCR] Setup](/docs/en/platform/OpenMANIPULATOR_x/opencr_setup/#opencr-setup)      
+Please refer the detailed description of [[OpenCR] Setup](/docs/en/platform/openmanipulator_x/opencr_setup/#opencr-setup)      
 Download Arduino IDE and load OpenCR board on it
 
 - [Arduino IDE for using OpenCR](/docs/en/parts/controller/opencr10/#arduino-ide)

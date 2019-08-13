@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_x/getting_started/
 sidebar:
-  title: OpenMANIPULATOR-X
+  title: "[ROS] OpenMANIPULATOR-X"
   nav: "openmanipulator_x"
 product_group: openmanipulator_x
 page_number: 3

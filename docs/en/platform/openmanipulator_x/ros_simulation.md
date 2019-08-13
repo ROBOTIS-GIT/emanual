@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_x/ros_simulation/
 sidebar:
-  title: OpenMANIPULATOR-X
+  title: "[ROS] OpenMANIPULATOR-X"
   nav: "openmanipulator_x"
 product_group: openmanipulator_x
 page_number: 8
@@ -57,7 +57,7 @@ Enter `rostopic list` to list up the activated topics.
   /rosout
   /rosout_agg
   ```
-Open an [open_manipulator_control_gui](/docs/en/platform/openmanipulator_x/ros_operation/#gui-program)
+Open [OpenManipulator control GUI](/docs/en/platform/openmanipulator_x/ros_operation/#gui-program)
 
   ![](/assets/images/platform/openmanipulator_x/OpenManipulator_Chain_gazebo_2.png)
 

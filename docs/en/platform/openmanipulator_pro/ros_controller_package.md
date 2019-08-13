@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_pro/ros_controller_package/
 sidebar:
-  title: OpenMANIPULATOR-PRO
+  title: "[ROS] OpenMANIPULATOR-PRO"
   nav: "openmanipulator_pro"
 product_group: openmanipulator_pro
 page_number: 5
@@ -79,7 +79,7 @@ Before launching the controller, please check `open_manipulator_pro_controller` 
 `dynamixel_usb_port` is a parameter to set USB port to connect with DYNAMIXEL of OpenMANIPULATOR-PRO. If you use U2D2, it should be set **/dev/ttyUSB@**. If you use OpenCR, it should be set **/dev/ttyACM@** (@ indicates the port number connected to the DYNAMIXEL).  
 `dynamixel_baud_rate` is a parameter to set baud rate of DYNAMIXEL. default baud rate of DYNAMIXEL used in OpenMANIPULATOR-PRO is 1000000.  
 `control_period` is a parameter to set communication period between DYNAMIXEL and PC (control loop time).  
-`use_platform` is a parameter that sets whether to use the actual OpenMANIPULATOR-PRO or OpenMANIPULATOR-PRO simulation. please refer [ROS Simulation](/docs/en/platform/openmanipulator_pro/ros_simulation/#ros-simulation) chapter.  
+`use_platform` is a parameter that sets whether to use the actual OpenMANIPULATOR-PRO or OpenMANIPULATOR-PRO simulation. please refer [[ROS] Simulation](/docs/en/platform/openmanipulator_pro/ros_simulation/#ros-simulation) chapter.  
 `use_moveit`, `planning_group_name` and `moveit_sample_duration` are parameters to load [move_group](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/move_group_interface/move_group_interface_tutorial.html) package. please refer to [MoveIt!](/docs/en/platform/openmanipulator_pro/ros_operation/#moveit) chapter.
 
 After setting those parameters, launch the OpenMANIPULATOR-PRO controller to start [[ROS] Operation](/docs/en/platform/openmanipulator_pro/ros_operation/#ros-operation).

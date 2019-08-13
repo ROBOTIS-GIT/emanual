@@ -246,11 +246,11 @@ main:
       - title: "*Manipulator-H"
         titlekr: "*Manipulator-H"
         url: /platform/manipulator_h/introduction/
-      - title: "OpenMANIPULATOR-PRO"
-        titlekr: "OpenMANIPULATOR-PRO"
+      - title: "[ROS] OpenMANIPULATOR-PRO"
+        titlekr: "[ROS] OpenMANIPULATOR-PRO"
         url: /platform/openmanipulator_pro/overview/
-      - title: "OpenMANIPULATOR-X"
-        titlekr: "OpenMANIPULATOR-X"
+      - title: "[ROS] OpenMANIPULATOR-X"
+        titlekr: "[ROS] OpenMANIPULATOR-X"
         url: /platform/openmanipulator_x/overview/
       - title: "[ROS2] OpenMANIPULATOR-PRO"
         titlekr: "[ROS2] OpenMANIPULATOR-PRO"
@@ -258,7 +258,6 @@ main:
       - title: "[ROS2] OpenMANIPULATOR-X"
         titlekr: "[ROS2] OpenMANIPULATOR-X"
         url: /platform/ros2_openmanipulator_x/overview_to_assembly/
-        urlkr: /platform/ros2_openmanipulator_x/overview/
   - title: "STEAM"
     titlekr: "교육키트"
     children:
@@ -16333,7 +16332,7 @@ openmanipulator_pro:
         url: /platform/openmanipulator_pro/ros_operation/#teleoperation
       - title: "MoveIt!"
         url: /platform/openmanipulator_pro/ros_operation/#moveit
-  - title: "[ROS] Simulation"
+    - title: "[ROS] Simulation"
     url: /platform/openmanipulator_pro/ros_simulation/#ros-simulation
     children:
       - title: "Launch gazebo"

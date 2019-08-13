@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_x/ros_setup/
 sidebar:
-  title: OpenMANIPULATOR-X
+  title: "[ROS] OpenMANIPULATOR-X"
   nav: "openmanipulator_x"
 product_group: openmanipulator_x
 page_number: 5
@@ -54,7 +54,7 @@ If you prefer manual installation, please follow the link below.
 - [Manual installation of ROS Kinetic](http://wiki.ros.org/kinetic/Installation/Ubuntu)
 
 ## [Install ROS Packages](#install-ros-packages)
-Install dependent packages for OpenMANIPULATOR-X. Run the following commands in a terminal window.
+Install dependent packages for \[ROS] OpenMANIPULATOR-X. Run the following commands in a terminal window.
 
 **NOTE**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`+`Alt`+`t`.
 {: .notice--info}
@@ -75,7 +75,7 @@ $ git clone https://github.com/ROBOTIS-GIT/robotis_manipulator.git
 $ cd ~/catkin_ws && catkin_make
 ```
 
-If the catkin_make command has been completed without any errors, all the preparations for using OpenMANIPULATOR-X are done.
+If the catkin_make command has been completed without any errors, all the preparations for using \[ROS] OpenMANIPULATOR-X are done.
 
 ## [Communication Converter](#communication-converter)
 
