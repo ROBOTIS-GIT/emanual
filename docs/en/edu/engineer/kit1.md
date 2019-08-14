@@ -265,7 +265,7 @@ It is not a mandatory and it may require more time to replace the cable afterwar
 4. Launch the `ROBOTIS ENGINEER` app from the smart device and press the Bluetooth icon.  
   ![](/assets/images/edu/engineer/kit1/bluetooth_connection_4.png)
 
-5. Find the Bluetooth address on the CM-550 controller.  
+5. Find the address on the CM-550 controller.  
   ![](/assets/images/edu/engineer/kit1/bluetooth_connection_5.png)
 
 6. Enter the last two characters of CM-550 BLE address in the left box and press `Search` icon.  
