@@ -56,7 +56,7 @@ $ wget https://raw.githubusercontent.com/ROBOTIS-GIT/open_manipulator/ros2/insta
 If you prefer manual installation, please follow the link below.
 
 ``` bash
-$ mkdir -p ~/robotis_ws/src/ && cd ~/robotis_ws/src/
+$ cd ~/robotis_ws/src/
 $ git clone https://github.com/bponsler/cmake_modules.git -b ros2-devel
 $ git clone https://github.com/ros/joint_state_publisher.git -b ros2-devel
 $ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git -b ros2
