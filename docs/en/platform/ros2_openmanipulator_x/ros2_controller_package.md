@@ -22,7 +22,7 @@ The OpenMANIPULATOR-X controller provides basic manipulation of OpenMANIPULATOR-
 
 ## [Launch Controller](#launch-controller)
 
-Before launching the controller, Please check `open_manipulator_x_controller` launch file in `open_manipulator_x_controller` package.
+<!-- Before launching the controller, Please check `open_manipulator_x_controller` launch file in `open_manipulator_x_controller` package.
 
   ```
 
@@ -47,7 +47,7 @@ Before launching the controller, Please check `open_manipulator_x_controller` la
 `use_platform` is a parameter that sets whether to use the actual OpenMANIPULATOR-X or OpenMANIPULATOR-X simulation. please refer [ROS Simulation](/docs/en/platform/ros2_openmanipulator_x/ros_simulation/#ros-simulation) chapter.  
 `use_moveit`, `planning_group_name` and `moveit_sample_duration` are parameters to load [move_group](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/move_group_interface/move_group_interface_tutorial.html) package. please refer to [MoveIt!](/docs/en/platform/ros2_openmanipulator_x/ros-operation/#moveit) chapter.
 
-After setting the parameters, launch the OpenMANIPULATOR-X controller to start [[ROS] Operation](/docs/en/platform/ros2_openmanipulator_x/ros_operation/#ros-operation).
+After setting the parameters, launch the OpenMANIPULATOR-X controller to start [[ROS] Operation](/docs/en/platform/ros2_openmanipulator_x/ros_operation/#ros-operation). -->
 
 Please, open Terminal then run the following command in Terminal.
 
@@ -68,7 +68,13 @@ The picture on the below is showing you the ideal pose of OpenMANIPULATOR-X. Ple
 Follwing message will be shown in the Terminal after the process done successfully.  
 
 ```
-<ToDo>
+port_name and baud_rate are set to /dev/ttyUSB0, 1000000 
+Joint Dynamixel ID : 11, Model Name : XM430-W350
+Joint Dynamixel ID : 12, Model Name : XM430-W350
+Joint Dynamixel ID : 13, Model Name : XM430-W350
+Joint Dynamixel ID : 14, Model Name : XM430-W350
+Gripper Dynamixel ID : 15, Model Name :XM430-W350
+[INFO] Succeeded to Initialise OpenManipulator-X Controller
 ```
 
 {% capture notice_01 %}
@@ -104,7 +110,7 @@ $ ros2 toopic pub /open_manipulator/option std_msgs/msg/String "print_open_manip
 <**Manipulator Description**> will be printed on Terminal. 
 Launch the open_manipulator_controller. It is shown that present states of the OpenMANIPULATOR-X.  
 This parameter is descripted on open_manipulator.cpp in open_manipulator_libs package.  
-`~/catkin_ws/src/open_manipulator/open_manipulator_libs/src/open_manipulator.cpp`
+`~/colcon_ws/src/open_manipulator_x/open_manipulator_x_libs/src/open_manipulator_x.cpp`
 
 ```
     ----------<Manipulator Description>----------

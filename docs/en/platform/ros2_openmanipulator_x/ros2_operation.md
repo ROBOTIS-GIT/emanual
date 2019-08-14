@@ -98,9 +98,7 @@ $ sudo ds4drv
 Enter pairing mode with PS4 by pressing and holding Playstation button + share button for 10 sec. If the light on PS4 turns blue, enter the following commands in terminal and control OpenMANIPULATOR-X.
 
 ``` bash
-$ export ROS_NAMESPACE=/open_manipulator
 $ ros2 run joy joy_node
-
 $ ros2 run open_manipulator_x_teleop open_manipulator_x_teleop_joystick
 ```
 
@@ -109,15 +107,13 @@ $ ros2 run open_manipulator_x_teleop open_manipulator_x_teleop_joystick
 Install packages for teleoperation using XBOX 360 joystick.
 
 ``` bash
-$ sudo apt-get install xboxdrv ros-kinetic-joy
+$ sudo apt-get install xboxdrv ros-dashing-joy
 ```
 Connect XBOX 360 joystick to the PC with Wireless Adapter or USB cable, and launch teleoperation packages for XBOX 360 joystick.
 
 ``` bash
 $ sudo xboxdrv --silent
-$ export ROS_NAMESPACE=/open_manipulator
 $ ros2 run joy joy_node
-
 $ ros2 run open_manipulator_x_teleop open_manipulator_x_teleop_joystick
 ```
 
