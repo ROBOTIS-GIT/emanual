@@ -27,7 +27,7 @@ sidebar:
 ## [Teleoperation](#teleoperation)
 {% capture notice_01 %}
 **NOTE**:
-- This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+- This instruction has been tested on `Ubuntu 18.04` and `ROS2 Dashing Diademata`.
 - This instruction is supposed to be run on PC with ROS packages installed in. Please run the instruction below on your PC ROS packages installed in.
 - Make sure to run [OpenMANIPULATOR controller](/docs/en/platform/ros2_openmanipulator_x/ros_controller_package/#launch-controller) instructions before running the instructions below.
 {% endcapture %}
@@ -40,7 +40,7 @@ sidebar:
 **TIP**: Terminal can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for Terminal is `Ctrl`+`Alt`+`t`.
 {: .notice--success}
 
-  Launch `open_manipulator_teleop_keyboard` node for simple teleoperation test using the keyboard.
+  Launch `open_manipulator_x_teleop_keyboard` node for simple teleoperation test using the keyboard.
 
   ``` bash
   $ ros2 run open_manipulator_x_teleop open_manipulator_x_teleop_keyboard

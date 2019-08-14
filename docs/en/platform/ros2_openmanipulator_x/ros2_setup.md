@@ -36,7 +36,7 @@ If you need more help with installing Ubuntu, check out the step-by-step guide f
 
 Please follow the link below.
 
-- [Manual Installation of ROS2 Dashing Diademata](https://index.ros.org/doc/ros2/Installation/Dashing/Linux-Install-Binary/)
+- [Manual Installation of ROS2 Dashing Diademata](https://index.ros.org/doc/ros2/Installation/Dashing/Linux-Install-Debians/)
 
 ## [Install ROS Packages](#install-ros-packages)
 Install dependent packages for OpenMANIPULATOR-X. Run the following commands in a terminal window.
@@ -45,7 +45,18 @@ Install dependent packages for OpenMANIPULATOR-X. Run the following commands in 
 {: .notice--info}
 
 ``` bash
-$ mkdir -p ~/colcon_ws/src/ && cd ~/colcon_ws/src/
+$ sudo apt-get update
+$ sudo apt-get upgrade
+$ wget https://raw.githubusercontent.com/ROBOTIS-GIT/open_manipulator/ros2/install_ros_dashing.sh && chmod 755 ./install_ros_dashing.sh && bash ./install_ros_dashing.sh
+```
+
+**NOTE**: In order to check which packages are installed, please check this link out. [install_ros_dashing.sh](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh)
+{: .notice--info}
+
+If you prefer manual installation, please follow the link below.
+
+``` bash
+$ mkdir -p ~/robotis_ws/src/ && cd ~/robotis_ws/src/
 $ git clone https://github.com/bponsler/cmake_modules.git -b ros2-devel
 $ git clone https://github.com/ros/joint_state_publisher.git -b ros2-devel
 $ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git -b ros2
@@ -54,8 +65,7 @@ $ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench-msgs.git -b ros2
 $ git clone https://github.com/ROBOTIS-GIT/robotis_manipulator.git -b ros2
 $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_msgs.git -b ros2
 $ git clone https://github.com/ROBOTIS-GIT/open_manipulator.git -b ros2
-$ cd ~/colcon_ws && colcon build
-$ source ~/colcon_ws/install/setup.bash
+$ cd ~/robotis_ws && colcon build --symlink-install
 ```
 
 If the colcon build command has been completed without any errors, all the preparations for using OpenMANIPULATOR-X are done.
