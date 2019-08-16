@@ -5,13 +5,15 @@ ref: ros2_openmanipulator_x_applications
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/ros2_openmanipulator_x/ros_applications/
+permalink: /docs/en/platform/openmanipulator_x/ros2_applications/
 sidebar:
-  title: "[ROS2] OpenMANIPULATOR-X"
-  nav: "ros2_openmanipulator_x"
+  title: "OpenMANIPULATOR-X"
+  nav: "openmanipulator_x"
+product_group: openmanipulator_x
+page_number: 14
 ---
 
-<div style="counter-reset: h1 8"></div>
+<div style="counter-reset: h1 13"></div>
 
 # [[ROS2] Applications](#ros-applications)
 

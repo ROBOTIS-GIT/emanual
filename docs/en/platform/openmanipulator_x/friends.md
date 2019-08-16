@@ -7,13 +7,13 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_x/friends/
 sidebar:
-  title: "[ROS] OpenMANIPULATOR-X"
+  title: "OpenMANIPULATOR-X"
   nav: "openmanipulator_x"
 product_group: openmanipulator_x
-page_number: 14
+page_number: 19
 ---
 
-<div style="counter-reset: h1 13"></div>
+<div style="counter-reset: h1 18"></div>
 
 # [Friends](#friends)
 
@@ -53,24 +53,25 @@ page_number: 14
 
 #### Part Lists
 
-|                   | Part Name              | Quantity | Link                                                                                                                      |
-|:------------------|:-----------------------|:-------------------------------------------------------------------------------------------------------------------------------------|
-| **Chassis Parts** | BASE FRAME             | 1|[Download Link](https://www.thingiverse.com/thing:3069581)                                                                         |
-| .                 | PEN HOLDER             | 1|[Download Link](https://www.thingiverse.com/thing:3069581)                                                                         |
-| .                 | FRM BASE               | 1|[Download Link](https://www.thingiverse.com/thing:3069581)                                                                         |
-| .                 | TAP HOLDER             | 1|[Download Link](https://www.thingiverse.com/thing:3069581)                                                                         |
-| .                 | FR12_H101_K            | 4|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2768&GC=GD0B0001)                                            |
-| .                 | FR12_S102_K            | 3|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2766&GC=GD0B0001)                                            |
-| .                 | HN12_I101              | 4|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2759&GC=GD0B0006)                                            |
-| **Actuators**     | Dynamixel XM430-W350-T | 4|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2923&GC=GD080101)                                            |
-| **Cables**        | CABLE_3P_130MM         | 3|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2347&GC=GD0B0105&page=2)                                     |
-| .                 | CABLE_3P_240MM         | 1|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2926&GC=GD0B0105&page=3)                                     |
-| **Miscellaneous** | WB_M2X03               | 24|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/?Inch=0&CategorySpec=00000070644%3A%3A2%0900000070373%3A%3A3)      |
-| .                 | WB_M2_5X4              | 14|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/?Inch=0&CategorySpec=00000070644%3A%3A2.5%0900000070373%3A%3A8)    |
-| .                 | WB_M2_5X06             | 8|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/?Inch=0&CategorySpec=00000070644%3A%3A2.5%0900000070373%3A%3A3%2C6) |
-| .                 | WB_M2_5X12             | 2|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/?Inch=0&CategorySpec=00000070644%3A%3A2.5%0900000070373%3A%3A8)     |
-| .                 | FHS_M2_5X14            | 12|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3A%3A2.5%0900000071552%3)         |
-| .                 | NUT_M2_5(0.45P)        | 8|[Shop Link](https://us.misumi-ec.com/vona2/detail/110300250540/?Inch=0&CategorySpec=00000070281%3A%3A2.5)                          |
+|                   | Part Name              | Quantity | Link                                                                                                                               |
+|:------------------|:-----------------------|:---------|:-----------------------------------------------------------------------------------------------------------------------------------|
+| **Chassis Parts** | BASE FRAME             | 1        | [Download Link](https://www.thingiverse.com/thing:3069581)                                                                         |
+| .                 | PEN HOLDER             | 1        | [Download Link](https://www.thingiverse.com/thing:3069581)                                                                         |
+| .                 | FRM BASE               | 1        | [Download Link](https://www.thingiverse.com/thing:3069581)                                                                         |
+| .                 | TAP HOLDER             | 1        | [Download Link](https://www.thingiverse.com/thing:3069581)                                                                         |
+| .                 | FR12_H101_K            | 4        | [Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2768&GC=GD0B0001)                                            |
+| .                 | FR12_S102_K            | 3        | [Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2766&GC=GD0B0001)                                            |
+| .                 | HN12_I101              | 4        | [Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2759&GC=GD0B0006)                                            |
+| **Actuators**     | Dynamixel XM430-W350-T | 4        | [Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2923&GC=GD080101)                                            |
+| **Cables**        | CABLE_3P_130MM         | 3        | [Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2347&GC=GD0B0105&page=2)                                     |
+| .                 | CABLE_3P_240MM         | 1        | [Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2926&GC=GD0B0105&page=3)                                     |
+| **Miscellaneous** | WB_M2X03               | 24       | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/?Inch=0&CategorySpec=00000070644%3A%3A2%0900000070373%3A%3A3)       |
+| .                 | WB_M2_5X4              | 14       | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/?Inch=0&CategorySpec=00000070644%3A%3A2.5%0900000070373%3A%3A8)     |
+| .                 | WB_M2_5X06             | 8        | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/?Inch=0&CategorySpec=00000070644%3A%3A2.5%0900000070373%3A%3A3%2C6) |
+| .                 | WB_M2_5X12             | 2        | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/?Inch=0&CategorySpec=00000070644%3A%3A2.5%0900000070373%3A%3A8)     |
+| .                 | FHS_M2_5X14            | 12       | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3A%3A2.5%0900000071552%3)          |
+| .                 | NUT_M2_5(0.45P)        | 8        | [Shop Link](https://us.misumi-ec.com/vona2/detail/110300250540/?Inch=0&CategorySpec=00000070281%3A%3A2.5)                          |
+
 
 For more information, please refer to [BOM](https://docs.google.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit#gid=1200068410).
 

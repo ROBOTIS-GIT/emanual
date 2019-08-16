@@ -5,13 +5,15 @@ ref: ros2_openmanipulator_x_ros_controller_package
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/ros2_openmanipulator_x/ros_controller_package/
+permalink: /docs/en/platform/openmanipulator_x/ros2_controller_package/
 sidebar:
-  title: "[ROS2] OpenMANIPULATOR-X"
-  nav: "ros2_openmanipulator_x"
+  title: "OpenMANIPULATOR-X"
+  nav: "openmanipulator_x"
+product_group: openmanipulator_x
+page_number: 11
 ---
 
-<div style="counter-reset: h1 5"></div>
+<div style="counter-reset: h1 10"></div>
 
 # [[ROS2] Controller Package](#ros-controller-package)
 
@@ -409,7 +411,7 @@ The user can change each joint by GUI, if the user launch only RViz by executing
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-![](/assets/images/platform/openmanipulator_x/OpenManipulator_rviz.png)
+![](/assets/images/platform/openmanipulator_x/ros2_OpenManipulator_rviz.png)
 
 ## [Message List](#message-list)
 

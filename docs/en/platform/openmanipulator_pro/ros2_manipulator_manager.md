@@ -5,9 +5,9 @@ ref: ros2_openmanipulator_pro_ros_manipulator_manager
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/ros2_openmanipulator_pro/ros_manipulator_manager/
+permalink: /docs/en/platform/ros_openmanipulator_pro/ros2_manipulator_manager/
 sidebar:
-  title: "[ROS2] OpenMANIPULATOR-PRO"
+  title: "OpenMANIPULATOR-PRO"
   nav: "ros2_openmanipulator_pro"
 ---
 

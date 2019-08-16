@@ -7,13 +7,13 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_x/opencr_setup/
 sidebar:
-  title: "[ROS] OpenMANIPULATOR-X"
+  title: "OpenMANIPULATOR-X"
   nav: "openmanipulator_x"
 product_group: openmanipulator_x
-page_number: 10
+page_number: 15
 ---
 
-<div style="counter-reset: h1 9"></div>
+<div style="counter-reset: h1 14"></div>
 
 # [[OpenCR] Setup](#opencr-setup)
 

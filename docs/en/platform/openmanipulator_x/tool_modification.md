@@ -7,13 +7,13 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_x/tool_modification/
 sidebar:
-  title: "[ROS] OpenMANIPULATOR-X"
+  title: "OpenMANIPULATOR-X"
   nav: "openmanipulator_x"
 product_group: openmanipulator_x
-page_number: 12
+page_number: 17
 ---
 
-<div style="counter-reset: h1 11"></div>
+<div style="counter-reset: h1 16"></div>
 
 
 # [Tool Modification](#tool-modification)
