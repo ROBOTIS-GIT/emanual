@@ -1,42 +1,50 @@
 ---
-layout: splash
+layout: archive
 lang: kr
 ref: mx-series
 permalink: /docs/kr/dxl/mx/
-header:
-  overlay_color:
-  overlay_image:
-  cta_label:
-  cta_url:
-  caption:
-  intro:
-    - excerpt: 'DYNAMIXEL MX Series'
+sidebar: 
+  title: DYNAMIXEL MX Series
+  nav: "dxl_mx_main"  
 ---
 
+# [특징](#특징)
 
-# [모델](#모델)
+|                   MX-106T/R                   |                 MX-64T/R/AT/AR                 |                 MX-28T/R/AT/AR                 |                    MX-12W                    |
+|:----------------------------------------------:|:----------------------------------------------:|:----------------------------------------------:|:--------------------------------------------:|
+| ![](/assets/images/dxl/mx/mx-106t_product.jpg) | ![](/assets/images/dxl/mx/mx-64ar_product.png) | ![](/assets/images/dxl/mx/mx-28ar_product.jpg) | ![](/assets/images/dxl/mx/mx-12_product.jpg) |
 
-|                    MX-12W                    |                  MX-28 Series                  |                  MX-64 Series                  |                 MX-106 Series                  |
-|:--------------------------------------------:|:----------------------------------------------:|:----------------------------------------------:|:----------------------------------------------:|
-| ![](/assets/images/dxl/mx/mx-12_product.jpg) | ![](/assets/images/dxl/mx/mx-28ar_product.jpg) | ![](/assets/images/dxl/mx/mx-64ar_product.png) | ![](/assets/images/dxl/mx/mx-106t_product.jpg) |
+- 비접촉식 앱솔루트 엔코더를 적용하여 내구성, 정밀도, 제어 범위 증가.
 
-## [MX 시리즈 (Protocol 1.0)](#mx-시리즈-protocol-1.0)
+- 데드 구간없이 360° 전 영역의 위치제어 가능.
 
-|       모델       |               MCU               |      모터       |      해상도      |                   무게                   |    크기 (W X H X D )    | 기어비  |                  사용 전압                  |
-|:----------------:|:-------------------------------:|:---------------:|:----------------:|:----------------------------------------:|:-----------------------:|:-------:|:-------------------------------------------:|
-|   [MX-106T/R]    | ARM CORTEX-M3 (72 \[MHz], 32Bit) | Coreless(Maxon) | 4096 \[pulse/rev] |                 165 \[g]                  |  40.2 x 65.1 x 46 \[mm]  | 225 : 1 | 10.0 ~ 14.8 \[V]<br>(Recommended : 12.0 \[V]) |
-| [MX-64T/R/AT/AR] | ARM CORTEX-M3 (72 \[MHz], 32Bit) | Coreless(Maxon) | 4096 \[pulse/rev] |                 165 \[g]                  |  40.2 x 61.1 x 41 \[mm]  | 200 : 1 | 10.0 ~ 14.8 \[V]<br>(Recommended : 12.0 \[V]) |
-| [MX-28T/R/AT/AR] | ARM CORTEX-M3 (72 \[MHz], 32Bit) | Coreless(Maxon) | 4096 \[pulse/rev] | MX-28AR/AT : 77 \[g]<br>MX-28R/T : 72 \[g] | 35.6 x 50.6 x 35.5 \[mm] | 193 : 1 | 10.0 ~ 14.8 \[V]<br>(Recommended : 12.0 \[V]) |
-|     [MX-12W]     | ARM CORTEX-M3 (72 \[MHz], 32Bit) |      Cored      |    0.088&deg;    |                  54.6g                   |   32mm x 50mm x 40mm    | 32 : 1  | 10.0 ~ 14.8 \[V]<br>(Recommended : 12.0 \[V]) |
+- 360°를 0.088° 단위로 4096단계에 걸쳐 제어 가능.
 
-## [MX 시리즈 (Protocol 2.0)](#mx-시리즈-protocol-2.0)
+- Endless Turn Mode에서 속도 제어 가능.
 
-|         모델          |               MCU               |      모터       |      해상도      |                   무게                   |    크기 (W X H X D )    | 기어비  |                  사용 전압                  |
-|:---------------------:|:-------------------------------:|:---------------:|:----------------:|:----------------------------------------:|:-----------------------:|:-------:|:-------------------------------------------:|
-|   [MX-106T/R(2.0)]    | ARM CORTEX-M3 (72 \[MHz], 32Bit) | Coreless(Maxon) | 4096 \[pulse/rev] |                 165 \[g]                  |  40.2 x 65.1 x 46 \[mm]  | 225 : 1 | 10.0 ~ 14.8 \[V]<br>(Recommended : 12.0 \[V]) |
-| [MX-64T/R/AT/AR(2.0)] | ARM CORTEX-M3 (72 \[MHz], 32Bit) | Coreless(Maxon) | 4096 \[pulse/rev] |                 165 \[g]                  |  40.2 x 61.1 x 41 \[mm]  | 200 : 1 | 10.0 ~ 14.8 \[V]<br>(Recommended : 12.0 \[V]) |
-| [MX-28T/R/AT/AR(2.0)] | ARM CORTEX-M3 (72 \[MHz], 32Bit) | Coreless(Maxon) | 4096 \[pulse/rev] | MX-28AR/AT : 77 \[g]<br>MX-28R/T : 72 \[g] | 35.6 x 50.6 x 35.5 \[mm] | 193 : 1 | 10.0 ~ 14.8 \[V]<br>(Recommended : 12.0 \[V]) |
+- PID 제어를 통해 위치제어 신뢰성 및 정확성 증가.
 
+- 4.5Mbps의 고속 통신을 지원.
+
+- (MX-64 / MX-106) 전류 센싱을 통한 토크 제어.
+
+- (MX-106) 마스터 / 슬레이브 방식의 듀얼 모드 지원.
+
+# [MX 시리즈](#mx-시리즈)
+
+**공통 사양**  
+- MCU : ARM CORTEX-M3 (72 \[MHz], 32Bit)  
+- 해상도 : 4096 \[pulse/rev]  
+- 모터 :
+  - MX-28/64/106 : Coreless(Maxon)
+  - MX-12: Cored
+
+| 프로토콜 1.0     | 프로토콜 2.0          | Stall Torque                                                                                           | 무부하 속도                                                                        |
+|:-----------------|:----------------------|:-------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------|
+| [MX-106T/R]      | [MX-106T/R(2.0)]      | 8.0 [N.m] (at 11.1 [V], 4.8 [A])<br>8.4 [N.m] (at 12[V], 5.2 [A])<br>10.0 [N.m] (at 14.8 [V], 6.3 [A]) | 41 [rev/min] (at 11.1 [V])<br>45 [rev/min] (at 12 [V])<br>55 [rev/min] (at 14.8 [V]) |
+| [MX-64T/R/AT/AR] | [MX-64T/R/AT/AR(2.0)] | 5.5 [N.m] (at 11.1 [V], 3.9 [A])<br>6.0 [N.m] (at 12 [V], 4.1 [A])<br>7.3 [N.m] (at 14.8 [V], 5.2 [A]) | 58 [rev/min] (at 11.1 [V])<br>63 [rev/min] (at 12 [V])<br>78 [rev/min] (at 14.8 [V]) |
+| [MX-28T/R/AT/AR] | [MX-28T/R/AT/AR(2.0)] | 2.3 [N.m] (at 11.1 [V], 1.3 [A])<br>2.5 [N.m] (at 12 [V], 1.4 [A])<br>3.1 [N.m] (at 14.8 [V], 1.7 [A]) | 50 [rev/min] (at 11.1 [V])<br>55 [rev/min] (at 12 [V])<br>67 [rev/min] (at 14.8 [V]) |
+| [MX-12W]         | -                     | -                                                                                                      | 470 [rev/min] (at 12 [V])                                                               |
 
 [MX-12W]: /docs/kr/dxl/mx/mx-12w/         
 [MX-28T/R/AT/AR]: /docs/kr/dxl/mx/mx-28-2/
