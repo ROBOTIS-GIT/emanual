@@ -86,8 +86,10 @@ Gripper Dynamixel ID : 15, Model Name :XM430-W350
 {% endcapture %}
 <div class="notice--success">{{ notice_01 | markdownify }}</div>
 
-**NOTE**: OpenMANIPULATOR-X controller is compatible with [Protocol 2.0](/docs/en/dxl/protocol2/). [Protocol 1.0](/docs/en/dxl/protocol1/) doesn't support SyncRead instructions that access to multiple DYNAMIXEL's simultaneously. Protocol 2.0 supports `MX 2.0`, `X` and `Pro` series, but it does not support `AX`, `RX` and `EX`.
-{: .notice--info}
+{% capture notice_02 %}
+**NOTE**: OpenMANIPULATOR-X controller is compatible with [Protocol 2.0](/docs/en/dxl/protocol2/) which supports `MX 2.0`, `X` and `Pro` series. [Protocol 1.0](/docs/en/dxl/protocol1/) does not support SyncRead instructions to access to multiple DYNAMIXEL's simultaneously.  
+{% endcapture %}
+<div class="notice--info">{{ notice_02 | markdownify}}</div>
 
 ## [Check Setting](#check-setting)
 

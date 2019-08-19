@@ -5,32 +5,48 @@ ref: mx-series
 permalink: /docs/en/dxl/mx/
 sidebar:
   title: DYNAMIXEL MX Series
-  nav: ""
+  nav: "dxl_mx_main"
 ---
 
 
-# [Models](#modles)
+# [Features](#features)
 
-|                    MX-12W                    |                  MX-28 Series                  |                  MX-64 Series                  |                 MX-106 Series                  |
-|:--------------------------------------------:|:----------------------------------------------:|:----------------------------------------------:|:----------------------------------------------:|
-| ![](/assets/images/dxl/mx/mx-12_product.jpg) | ![](/assets/images/dxl/mx/mx-28ar_product.jpg) | ![](/assets/images/dxl/mx/mx-64ar_product.png) | ![](/assets/images/dxl/mx/mx-106t_product.jpg) |
 
-## [MX Series with Protocol 1.0](#mx-series-with-protocol-1.0)
+|                   MX-106T/R                   |                 MX-64T/R/AT/AR                 |                 MX-28T/R/AT/AR                 |                    MX-12W                    |
+|:----------------------------------------------:|:----------------------------------------------:|:----------------------------------------------:|:--------------------------------------------:|
+| ![](/assets/images/dxl/mx/mx-106t_product.jpg) | ![](/assets/images/dxl/mx/mx-64ar_product.png) | ![](/assets/images/dxl/mx/mx-28ar_product.jpg) | ![](/assets/images/dxl/mx/mx-12_product.jpg) |
 
-|      Models      |               MCU               |      Motor      |    Resolution    |                  Weight                  | Dimention (W X H X D )  | Gear Ratio |                Input Voltage                |
-|:----------------:|:-------------------------------:|:---------------:|:----------------:|:----------------------------------------:|:-----------------------:|:----------:|:-------------------------------------------:|
-|   [MX-106T/R]    | ARM CORTEX-M3 (72 \[MHz], 32Bit) | Coreless(Maxon) | 4096 \[pulse/rev] |                 165 \[g]                  |  40.2 x 65.1 x 46 \[mm]  |  225 : 1   | 10.0 ~ 14.8 \[V]<br>(**Recommended** : 12.0 \[V]) |
-| [MX-64T/R/AT/AR] | ARM CORTEX-M3 (72 \[MHz], 32Bit) | Coreless(Maxon) | 4096 \[pulse/rev] |                 165 \[g]                  |  40.2 x 61.1 x 41 \[mm]  |  200 : 1   | 10.0 ~ 14.8 \[V]<br>(**Recommended** : 12.0 \[V]) |
-| [MX-28T/R/AT/AR] | ARM CORTEX-M3 (72 \[MHz], 32Bit) | Coreless(Maxon) | 4096 \[pulse/rev] | MX-28AR/AT : 77 \[g]<br>MX-28R/T : 72 \[g] | 35.6 x 50.6 x 35.5 \[mm] |  193 : 1   | 10.0 ~ 14.8 \[V]<br>(**Recommended** : 12.0 \[V]) |
-|     [MX-12W]     | ARM CORTEX-M3 (72 \[MHz], 32Bit) |      Cored      |      0.088&deg;      |                  54.6g                   |   32mm x 50mm x 40mm    |   32 : 1   | 10.0 ~ 14.8 \[V]<br>(**Recommended** : 12.0 \[V]) |
+- Advanced durability, degree of precision, and wider control zone were achieved thanks to the newly applied CONTACTLESS ABSOLUTE ENCODER.
 
-## [MX Series with Protocol 2.0](#mx-series-with-protocol-2.0)
+- 360 degrees POSITION CONTROL without dead zone.
 
-|        Models         |               MCU               |      Motor      |    Resolution    |                  Weight                  | Dimention (W X H X D )  | Gear Ratio |                Input Voltage                |
-|:---------------------:|:-------------------------------:|:---------------:|:----------------:|:----------------------------------------:|:-----------------------:|:----------:|:-------------------------------------------:|
-|   [MX-106T/R(2.0)]    | ARM CORTEX-M3 (72 \[MHz], 32Bit) | Coreless(Maxon) | 4096 \[pulse/rev] |                 165 \[g]                  |  40.2 x 65.1 x 46 \[mm]  |  225 : 1   | 10.0 ~ 14.8 \[V]<br>(**Recommended** : 12.0 \[V]) |
-| [MX-64T/R/AT/AR(2.0)] | ARM CORTEX-M3 (72 \[MHz], 32Bit) | Coreless(Maxon) | 4096 \[pulse/rev] |                 165 \[g]                  |  40.2 x 61.1 x 41 \[mm]  |  200 : 1   | 10.0 ~ 14.8 \[V]<br>(**Recommended** : 12.0 \[V]) |
-| [MX-28T/R/AT/AR(2.0)] | ARM CORTEX-M3 (72 \[MHz], 32Bit) | Coreless(Maxon) | 4096 \[pulse/rev] | MX-28AR/AT : 77 \[g]<br>MX-28R/T : 72 \[g] | 35.6 x 50.6 x 35.5 \[mm] |  193 : 1   | 10.0 ~ 14.8 \[V]<br>(**Recommended** : 12.0 \[V]) |
+- 4,096 PRECISE RESOLUTION by 0.088 degrees.
+
+- SPEED CONTROL at ENDLESS TURN MODE.
+
+- Reliability and accuracy were advanced in the position control through PID CONTROL.
+
+- High baud rate up to 4.5Mbps.
+
+- (MX-64 / MX-106) Torque control via current sensing.
+
+- (MX-106) Supports dual mode for master/slave method.
+
+# [MX Series](#mx-series)
+
+**Common Specifications**  
+- MCU : ARM CORTEX-M3 (72 \[MHz], 32Bit)  
+- Resolution : 4096 \[pulse/rev]  
+- Motor :
+  - MX-28/64/106 : Coreless(Maxon)
+  - MX-12: Cored
+  
+| Protocol 1.0     | Protocol 2.0          | Stall Torque                                                                                           | No Load Speed                                                                        |
+|:-----------------|:----------------------|:-------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------|
+| [MX-106T/R]      | [MX-106T/R(2.0)]      | 8.0 [N.m] (at 11.1 [V], 4.8 [A])<br>8.4 [N.m] (at 12[V], 5.2 [A])<br>10.0 [N.m] (at 14.8 [V], 6.3 [A]) | 41 [rev/min] (at 11.1 [V])<br>45 [rev/min] (at 12 [V])<br>55 [rev/min] (at 14.8 [V]) |
+| [MX-64T/R/AT/AR] | [MX-64T/R/AT/AR(2.0)] | 5.5 [N.m] (at 11.1 [V], 3.9 [A])<br>6.0 [N.m] (at 12 [V], 4.1 [A])<br>7.3 [N.m] (at 14.8 [V], 5.2 [A]) | 58 [rev/min] (at 11.1 [V])<br>63 [rev/min] (at 12 [V])<br>78 [rev/min] (at 14.8 [V]) |
+| [MX-28T/R/AT/AR] | [MX-28T/R/AT/AR(2.0)] | 2.3 [N.m] (at 11.1 [V], 1.3 [A])<br>2.5 [N.m] (at 12 [V], 1.4 [A])<br>3.1 [N.m] (at 14.8 [V], 1.7 [A]) | 50 [rev/min] (at 11.1 [V])<br>55 [rev/min] (at 12 [V])<br>67 [rev/min] (at 14.8 [V]) |
+| [MX-12W]         | -                     | -                                                                                                      | 470 [rev/min] (at 12 [V])                                                            |
 
 
 [MX-12W]: /docs/en/dxl/mx/mx-12w/        

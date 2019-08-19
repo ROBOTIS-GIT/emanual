@@ -2519,6 +2519,18 @@ rx-64:
         url: /dxl/rx/rx-64/#communication-circuit
         urlkr: /dxl/rx/rx-64/#통신-회로
 
+
+#MX-Series Main sidebar
+dxl_mx_main:
+  - title: "Features"
+    titlekr: "특징"
+    url: /dxl/mx/#features
+    urlkr: /dxl/mx/#특징
+  - title: "MX Series"
+    titlekr: "MX 시리즈"
+    url: /dxl/mx/#mx-series
+    urlkr: /dxl/mx/#mx-시리즈
+
 #MX-12W sidebar
 mx-12w:
   - title: "Specifications"
@@ -3903,26 +3915,31 @@ mx-106-2:
 
 #X-Series Main sidebar
 dxl_x_main:
+  - title: "Feature"
+    titlekr: "특징"
+    url: /dxl/x/#features
+    urlkr: /dxl/x/#특징
   - title: "DYNAMIXEL X"
     titlekr: "다이나믹셀 X"
     url: /dxl/x/#dynamixel-x
     urlkr: /dxl/x/#다이나믹셀-x
-  - title: "XH Models"
-    titlekr: "XH 모델"
-    url: /dxl/x/#xh-models
-    urlkr: /dxl/x/#xh-모델
-  - title: "XM Models"
-    titlekr: "XM 모델"
-    url: /dxl/x/#xm-models
-    urlkr: /dxl/x/#xm-모델
-  - title: "XC Models"
-    titlekr: "XC 모델"
-    url: /dxl/x/#xc-models
-    urlkr: /dxl/x/#xc-모델
-  - title: "XL Models"
-    titlekr: "XL 모델"
-    url: /dxl/x/#xl-models
-    urlkr: /dxl/x/#xl-모델
+    children:
+      - title: "XH Series"
+        titlekr: "XH-시리즈"
+        url: /dxl/x/#xh-series
+        urlkr: /dxl/x/#xh-시리즈
+      - title: "XM Series"
+        titlekr: "XM-시리즈"
+        url: /dxl/x/#xm-series
+        urlkr: /dxl/x/#xm-시리즈
+      - title: "XC Series"
+        titlekr: "XC-시리즈"
+        url: /dxl/x/#xc-series
+        urlkr: /dxl/x/#xc-시리즈
+      - title: "XL Series"
+        titlekr: "XL-시리즈"
+        url: /dxl/x/#xl-series
+        urlkr: /dxl/x/#xl-시리즈
     
 #XH430-V210 sidebar
 xh430-v210:
