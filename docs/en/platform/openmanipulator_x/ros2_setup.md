@@ -17,7 +17,8 @@ page_number: 10
 
 # [[ROS2] Setup](#ros-setup)
 
-**NOTE** : The following instruction has been tested on `Ubuntu 18.04` and `ROS2 Dashing Diademata`.
+**NOTE** : 
+- The following instruction has been tested on `Ubuntu 18.04` and `ROS2 Dashing Diademata`.
 {: .notice--info}
 
 **WARNING** : If you would like to control OpenMANIPULATOR-X on OpenCR (Embedded board) instead of using ROS, please set it up as described in [OpenCR Setup](/docs/en/platform/ros2_openmanipulator_x/opencr_setup/#opencr-setup).

@@ -24,7 +24,11 @@ page_number: 9
 
 ## [Install Ubuntu on PC](#install-ubuntu-on-pc)
 
+<<<<<<< HEAD
 Download and install `Ubuntu 18.04` on your PC. Tutoral guide will be helpful for you.
+=======
+Download and install `Ubuntu 18.04` on your PC.
+>>>>>>> 54c6d60531836aa64635f0c8f881051c7932c581
 
 - [Download Ubuntu](https://www.ubuntu.com/download/alternative-downloads)
 
@@ -32,6 +36,7 @@ Download and install `Ubuntu 18.04` on your PC. Tutoral guide will be helpful fo
 
 ## [Install ROS2 on PC](#install-ros2-on-pc)
 
+<<<<<<< HEAD
 ![](/assets/images/platform/openmanipulator_pro/logo_ros.png)
  
 As OpenMANIPULATOR-X operates on Ronbot Operating System(ROS), it requies to intall `ROS2 Dashing Diademata`. Following link guides you how to install ROS2 on your PC.
@@ -39,6 +44,13 @@ As OpenMANIPULATOR-X operates on Ronbot Operating System(ROS), it requies to int
 - [Manual Installation of ROS2 Dashing Diademata](https://index.ros.org/doc/ros2/Installation/Dashing/Linux-Install-Debians/)
 
 ## [Install ROS2 Package](#install-ros2-package)
+=======
+Please follow the link below.
+
+- [Manual Installation of ROS2 Dashing Diademata](https://index.ros.org/doc/ros2/Installation/Dashing/Linux-Install-Debians/)
+
+## [Install ROS Package](#install-ros-package)
+>>>>>>> 54c6d60531836aa64635f0c8f881051c7932c581
 
 Install dependent packages for OpenMANIPULATOR-PRO. Run the following commands in a terminal window.
 
@@ -53,6 +65,11 @@ $ wget https://raw.githubusercontent.com/ROBOTIS-GIT/open_manipulator/ros2/insta
 
 **NOTE**: In order to check which packages are installed, please check this link out. [install_ros_dashing.sh](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh)
 {: .notice--info}
+<<<<<<< HEAD
+=======
+
+If you prefer manual installation, please follow the link below.
+>>>>>>> 54c6d60531836aa64635f0c8f881051c7932c581
 
 ``` bash
 $ cd ~/robotis_ws/src/
@@ -65,3 +82,8 @@ $ git clone https://github.com/ROBOTIS-GIT/robotis_manipulator.git -b ros2
 $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_msgs.git -b ros2
 $ cd ~/robotis_ws && colcon build --symlink-install
 ```
+<<<<<<< HEAD
+=======
+
+If the colcon build command has been completed without any errors, all the preparations for using OpenMANIPULATOR-PRO are done.
+>>>>>>> 54c6d60531836aa64635f0c8f881051c7932c581

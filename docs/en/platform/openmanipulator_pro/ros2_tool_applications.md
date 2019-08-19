@@ -20,6 +20,7 @@ page_number: 13
 `[ROS2] Tool Applications` for `ROS2 Dashing Diademata` will be released soon!
 {: .notice}
 
+
 <!-- ## [RH-P12-RN Gripper](#rh-p12-rn-gripper)
 
 ### [Parts List](#parts-list)
