@@ -5,14 +5,15 @@ ref: ros2_openmanipulator_pro_ros_operation
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/ros_openmanipulator_pro/ros2_operation/
+permalink: /docs/en/platform/openmanipulator_pro/ros2_operation/
 sidebar:
   title: "OpenMANIPULATOR-PRO"
-  nav: "ros2_openmanipulator_pro"
-
+  nav: "openmanipulator_pro"
+product_group: openmanipulator_pro
+page_number: 11
 ---
 
-<div style="counter-reset: h1 5"></div>
+<div style="counter-reset: h1 10"></div>
 
 # [[ROS2] Operation](#ros-operation)
 

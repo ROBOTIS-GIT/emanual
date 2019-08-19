@@ -49,7 +49,6 @@ page_number: 8
 
     ![](/assets/images/platform/openmanipulator_pro/open_manipulator_gripper_assembly_04.png)
 
-
 ### [Operation](#operation)
 
 {% capture notice_01 %}

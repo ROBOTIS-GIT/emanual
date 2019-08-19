@@ -8,15 +8,16 @@ author_profile: false
 permalink: /docs/en/platform/openmanipulator_pro/ros2_controller_package/
 sidebar:
   title: "OpenMANIPULATOR-PRO"
-  nav: "ros2_openmanipulator_pro"
+  nav: "openmanipulator_pro"
+product_group: openmanipulator_pro
+page_number: 10
 ---
 
-<div style="counter-reset: h1 4"></div>
+<div style="counter-reset: h1 9"></div>
 
 # [[ROS2] Controller Package](#ros-controller-package)
 
 The OpenMANIPULATOR-PRO controller provides basic manipulation of OpenMANIPULATOR-PRO. You can control DYNAMIXEL's of OpenMANIPULATOR-PRO and check states of OpenMANIPULATOR-PRO through [messages](/docs/en/platform/ros2_openmanipulator_pro/ros_controller_package/#message-list) of the controller.  
- 
 
 {% capture notice_01 %}
 **NOTE** :  

@@ -5,13 +5,15 @@ ref: ros2_openmanipulator_pro_ros_setup
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/ros_openmanipulator_pro/ros2_setup/
+permalink: /docs/en/platform/openmanipulator_pro/ros2_setup/
 sidebar:
   title: "OpenMANIPULATOR-PRO"
-  nav: "ros2_openmanipulator_pro"
+  nav: "openmanipulator_pro"
+product_group: openmanipulator_pro
+page_number: 9
 ---
 
-<div style="counter-reset: h1 3"></div>
+<div style="counter-reset: h1 8"></div>
 
 # [[ROS2] Setup](#ros-setup)
 
@@ -22,7 +24,7 @@ sidebar:
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-## [Install Ubuntu on a PC](#install-ubuntu-on-pc)
+## [Install Ubuntu on PC](#install-ubuntu-on-pc)
 
 Download and install `Ubuntu 16.04` or `Ubuntu 18.04` on your a PC.
 

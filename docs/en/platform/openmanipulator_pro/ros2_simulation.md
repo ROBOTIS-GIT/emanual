@@ -5,13 +5,15 @@ ref: ros2_openmanipulator_pro_ros_simulation
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/ros_openmanipulator_pro/ros2_simulation/
+permalink: /docs/en/platform/openmanipulator_pro/ros2_simulation/
 sidebar:
   title: "OpenMANIPULATOR-PRO"
-  nav: "ros2_openmanipulator_pro"
+  nav: "openmanipulator_pro"
+product_group: openmanipulator_pro
+page_number: 12
 ---
 
-<div style="counter-reset: h1 6"></div>
+<div style="counter-reset: h1 11"></div>
 
 # [[ROS2] Simulation](#ros-simulation)
 
