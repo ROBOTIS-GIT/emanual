@@ -21,10 +21,8 @@ page_number: 12
 
 ## [GUI Program](#gui-program)
 
-{% capture coming_soon_01 %}
 `GUI Program` for `ROS2 Dashing Diademata` will be released soon!  
-{% endcapture %}
-<div class="notice">{{ coming_soon_01 | markdownify }}</div>
+{: .notice}
 
 ## [Teleoperation](#teleoperation)
 {% capture notice_01 %}
@@ -121,10 +119,8 @@ $ ros2 run open_manipulator_x_teleop open_manipulator_x_teleop_joystick
 
 ## [MoveIt!](#moveit)
 
-{% capture coming_soon_01 %}
 `Move it` for `ROS2 Dashing Diademata` will be released soon!  
-{% endcapture %}
-<div class="notice">{{ coming_soon_01 | markdownify }}</div>
+{: .notice}
 
 
 

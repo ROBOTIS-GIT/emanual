@@ -17,6 +17,12 @@ page_number: 12
 
 # [[ROS2] Simulation](#ros-simulation)
 
+
+`[ROS2] Simulation` for `ROS2 Dashing Diademata` will be released soon!
+{: .notice}
+ 
+<!--
+ 
 {% capture notice_01 %}
 **NOTE**:
 - This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
@@ -106,6 +112,8 @@ Joint Dynamixel ID : 6, Model Name : PRO-PLUS-H42P-020-S300-R
 {: .notice--info}
 
 Open an [open_manipulator_pro_control_gui](/docs/en/platform/ros2_openmanipulator_pro/ros_operation/#gui-program) to control OpenMANIPULATOR-PRO
+
+-->
 
 [OpenCR]: /docs/en/parts/controller/opencr10/
 [OpenCR Manual]: /docs/en/parts/controller/opencr10/

@@ -73,7 +73,6 @@ After running **roscore**, open another Terminal then write the following comman
 $ roslaunch open_manipulator_pro_controller open_manipulator_pro_controller.launch with_gripper:=true
 ```
 
-
 #### [GUI Program](#gui-program)
 
 Launch `open_manipulator_pro_control_gui node`. This program shows the status of and allows users to control OpenMANIPULATOR-PRO.
@@ -93,7 +92,7 @@ To activate RH-P12-RN (Gripper), Click the `Gripper open` button.
 ![](/assets/images/platform/openmanipulator_pro/open_manipulator_gripper_operation_02.png)
 
 
-- [GUI Program e-Manual](/docs/en/platform/ros2_openmanipulator_pro/ros_operation/#ros-operation)  
+- [GUI Program e-Manual](/docs/en/platform/openmanipulator_pro/ros2_operation/#ros-operation)  
 
 #### [Teleoperation](#teleoperation)
 
@@ -112,14 +111,14 @@ $ roslaunch teleop_twist_joy teleop.launch
 $ roslaunch open_manipulator_pro_teleop open_manipulator_pro_teleop_joystick.launch with_gripper:=true
 ```
 
-- [Teleoperation e-Manual](/docs/en/platform/ros2_openmanipulator_pro/ros_operation/#teleoperation)
+- [Teleoperation e-Manual](/docs/en/platform/openmanipulator_pro/ros2_operation/#teleoperation)
 
 #### [MoveIt!](#moveit)
 
 ```bash 
 $ roslaunch open_manipulator_pro_controller open_manipulator_pro_controller.launch use_moveit:=true with_gripper:=true
 ```
-- [MoveIt! e-Manual](/docs/en/platform/ros2_openmanipulator_pro/ros_operation/#moveit)
+- [MoveIt! e-Manual](/docs/en/platform/openmanipulator_pro/ros2_operation/#moveit)
 
 ### [Simulation](#simulation)
 
@@ -139,7 +138,7 @@ Load OpenManipulator-PRO on Gazebo simulator
 $ roslaunch open_manipulator_pro_gazebo open_manipulator_pro_gazebo.launch with_gripper:=true
 ```
 
-- [Launch Gazebo e-Manual](/docs/en/platform/ros2_openmanipulator_pro/ros_simulation/#launch-gazebo)
+- [Launch Gazebo e-Manual](/docs/en/platform/openmanipulator_pro/ros2_simulation/#launch-gazebo)
 
 #### [Controller for Gazebo](#controller-for-gazebo)
 
@@ -148,4 +147,4 @@ Launch the open_manipulator_pro_controller for gazebo simulation.
 ```bash
 $ roslaunch open_manipulator_pro_controller open_manipulator_pro_controller.launch use_platform:=false with_gripper:=true
 ```
-- [Controller for Gazebo e-Manual](/docs/en/platform/ros2_openmanipulator_pro/ros_simulation/#controller-for-gazebo)
+- [Controller for Gazebo e-Manual](/docs/en/platform/openmanipulator_pro/ros2_simulation/#controller-for-gazebo)

@@ -114,7 +114,7 @@ Connect micro USB (connected to PC), Dynamixel's(OpenMANIPULATOR-X), and 12V Pow
 
 Please refer to the following pages to install the Arduino IDE and enable the OpenCR board in the Arduino IDE environment.
 
-- [Arduino IDE for using OpenCR](/docs/en/platform/ros2_openmanipulator_x/opencr_setup/#arduino-ide-setup)
+- [Arduino IDE for using OpenCR](/docs/en/platform/openmanipulator_x/opencr_setup/#arduino-ide-setup)
 
 After completing all the above settings, open the Arduino IDE and open `usb to dxl` example source code as shown below.
 Go to `Examples` → `OpenCR` → `10.Etc` → `usb_to_dxl` on Arduino IDE for OpenCR.
