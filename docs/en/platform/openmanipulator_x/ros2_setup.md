@@ -17,7 +17,8 @@ page_number: 10
 
 # [[ROS2] Setup](#ros-setup)
 
-**NOTE** : The following instruction has been tested on `Ubuntu 18.04` and `ROS2 Dashing Diademata`.
+**NOTE** : 
+- The following instruction has been tested on `Ubuntu 18.04` and `ROS2 Dashing Diademata`.
 {: .notice--info}
 
 **WARNING** : If you would like to control OpenMANIPULATOR-X on OpenCR (Embedded board) instead of using ROS, please set it up as described in [OpenCR Setup](/docs/en/platform/ros2_openmanipulator_x/opencr_setup/#opencr-setup).
@@ -41,6 +42,7 @@ Please follow the link below.
 - [Manual Installation of ROS2 Dashing Diademata](https://index.ros.org/doc/ros2/Installation/Dashing/Linux-Install-Debians/)
 
 ## [Install ROS Packages](#install-ros-packages)
+
 Install dependent packages for OpenMANIPULATOR-X. Run the following commands in a terminal window.
 
 **NOTE**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`+`Alt`+`t`.
@@ -59,8 +61,8 @@ If you prefer manual installation, please follow the link below.
 
 ``` bash
 $ cd ~/robotis_ws/src/
-$ git clone https://github.com/bponsler/cmake_modules.git -b ros2-devel
-$ git clone https://github.com/ros/joint_state_publisher.git -b ros2-devel
+$ git clone https://github.com/rjshim/cmake_modules.git -b ros2-devel
+$ git clone https://github.com/rjshim/joint_state_publisher.git -b ros2-devel
 $ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git -b ros2
 $ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench.git -b ros2
 $ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench-msgs.git -b ros2
