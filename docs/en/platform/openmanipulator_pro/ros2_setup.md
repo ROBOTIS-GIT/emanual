@@ -18,107 +18,50 @@ page_number: 9
 # [[ROS2] Setup](#ros-setup)
 
 {% capture notice_01 %}
-**NOTE** : 
-- This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-- This instruction has been tested on `Ubuntu 18.04` and `ROS Melodic Morenia`.
+**NOTE** : The following instruction has been tested on `Ubuntu 18.04` and `ROS2 Dashing Diademata`.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
 ## [Install Ubuntu on PC](#install-ubuntu-on-pc)
 
-Download and install `Ubuntu 16.04` or `Ubuntu 18.04` on your a PC.
+Download and install `Ubuntu 18.04` on your PC. Tutoral guide will be helpful for you.
 
-- [Download link](https://www.ubuntu.com/download/alternative-downloads)
+- [Download Ubuntu](https://www.ubuntu.com/download/alternative-downloads)
 
-If you need more help with installing Ubuntu, check out the step-by-step guide from the link below.
+- [Tutorial - Install Ubuntu Desktop](https://www.ubuntu.com/download/desktop/install-ubuntu-desktop)
 
-- [Install ubuntu desktop](https://www.ubuntu.com/download/desktop/install-ubuntu-desktop)
-
-## [Install ROS on PC](#install-ros-on-pc)
+## [Install ROS2 on PC](#install-ros2-on-pc)
 
 ![](/assets/images/platform/openmanipulator_pro/logo_ros.png)
+ 
+As OpenMANIPULATOR-X operates on Ronbot Operating System(ROS), it requies to intall `ROS2 Dashing Diademata`. Following link guides you how to install ROS2 on your PC.
+  
+- [Manual Installation of ROS2 Dashing Diademata](https://index.ros.org/doc/ros2/Installation/Dashing/Linux-Install-Debians/)
 
-The following script will allow you to simplify the ROS installation procedure. Run the following commands in a terminal window. The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. The shortcut key to open a terminal is `Ctrl`+`Alt`+`t`. After installing ROS, please reboot PC.
-
-**WARNING** : Install either of `ROS Kinetic Kame` or `ROS Melodic Morenia` on your PC. 
-{: .notice--warning}
-
-### [ROS Kinetic Kame](#ros-kinetic-kame)
-
-``` bash
-$ sudo apt-get update
-$ sudo apt-get upgrade
-$ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh && chmod 755 ./install_ros_kinetic.sh && bash ./install_ros_kinetic.sh
-```
-
-If you prefer manual installation, please follow the link below.
-
-- [Manual installation of ROS Kinetic](http://wiki.ros.org/kinetic/Installation/Ubuntu)
-
-**NOTE**: In order to check which packages are installed, please check this link out. [install_ros_kinetic.sh](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh)
-{: .notice--info}
-
-
-### [ROS Melodic Morenia](#ros-melodic-morenia)
-
-``` bash
-$ sudo apt-get update
-$ sudo apt-get upgrade
-$ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_melodic.sh && chmod 755 ./install_ros_melodic.sh && bash ./install_ros_melodic.sh
-```
-If you prefer manual installation, please follow the link below.
-
-- [Manual installation of ROS Melodic](http://wiki.ros.org/melodic/Installation/Ubuntu)
-
-**NOTE**: In order to check which packages are installed, please check this link out. [install_ros_melodic.sh](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_melodic.sh)
-{: .notice--info}
-
-
-## [Install ROS Package](#install-ros-package)
+## [Install ROS2 Package](#install-ros2-package)
 
 Install dependent packages for OpenMANIPULATOR-PRO. Run the following commands in a terminal window.
 
 **NOTE**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`+`Alt`+`t`.
 {: .notice--info} 
 
-**WARNING** : Install either of `ROS Kinetic Kame` or `ROS Melodic Morenia` on your PC. 
-{: .notice--warning}
-
-
-### [ROS Kinetic Kame Package](#ros-kinetic-kame-package)
-
 ``` bash
-$ sudo apt-get install ros-kinetic-ros-controllers ros-kinetic-gazebo* ros-kinetic-moveit* ros-kinetic-industrial-core
+$ sudo apt-get update
+$ sudo apt-get upgrade
+$ wget https://raw.githubusercontent.com/ROBOTIS-GIT/open_manipulator/ros2/install_ros_dashing.sh && chmod 755 ./install_ros_dashing.sh && bash ./install_ros_dashing.sh
 ```
 
-``` bash
-$ cd ~/catkin_ws/src/
-$ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git
-$ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench.git
-$ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench-msgs.git
-$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_pro.git
-$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_msgs.git
-$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_pro_simulations.git
-$ git clone https://github.com/ROBOTIS-GIT/robotis_manipulator.git
-$ cd ~/catkin_ws && catkin_make
-```
-
-### [ROS Melodic Morenia Package](#ros-melodic-morenia-package)
+**NOTE**: In order to check which packages are installed, please check this link out. [install_ros_dashing.sh](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh)
+{: .notice--info}
 
 ``` bash
-$ sudo apt-get install ros-melodic-ros-controllers ros-melodic-gazebo* ros-melodic-moveit* ros-melodic-industrial-core
+$ cd ~/robotis_ws/src/
+$ git clone https://github.com/rjshim/cmake_modules.git -b ros2-devel
+$ git clone https://github.com/rjshim/joint_state_publisher.git -b ros2-devel
+$ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git -b ros2
+$ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench.git -b ros2
+$ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench-msgs.git -b ros2
+$ git clone https://github.com/ROBOTIS-GIT/robotis_manipulator.git -b ros2
+$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_msgs.git -b ros2
+$ cd ~/robotis_ws && colcon build --symlink-install
 ```
-
-``` bash
-$ cd ~/catkin_ws/src/
-$ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git
-$ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench.git
-$ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench-msgs.git
-$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_pro.git
-$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_msgs.git
-$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_pro_simulations.git
-$ git clone https://github.com/ROBOTIS-GIT/robotis_manipulator.git
-$ cd ~/catkin_ws && catkin_make
-```
-
-If the catkin_make command has been completed without any errors, all the preparations for using OpenMANIPULATOR-PRO are done.

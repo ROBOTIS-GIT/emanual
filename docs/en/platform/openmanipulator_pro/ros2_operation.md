@@ -25,8 +25,7 @@ page_number: 11
 ## [Teleoperation](#teleoperation)
 {% capture notice_01 %}
 **NOTE**:
-- This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-- This instruction has been tested on `Ubuntu 18.04` and `ROS Melodic Morenia`. 
+- This instruction has been tested on `Ubuntu 18.04` and `ROS2 Dashing Diademata`.
 - This instruction is supposed to be run on PC with ROS packages installed in. Please run the instruction below on your PC ROS packages installed in.
 - Make sure to run [OpenMANIPULATOR-PRO controller](/docs/en/platform/ros2_openmanipulator_pro/ros-controller-package/#launch-controller) instructions before running the instructions below.
 {% endcapture %}
@@ -87,7 +86,7 @@ Present Kinematics Position X: 0.000 Y: 0.000 Z: 0.000
 Install packages for teleoperation using PS4 joystick.
 
 ``` bash
-$ sudo apt-get install ros-kinetic-joy ros-kinetic-joystick-drivers ros-kinetic-teleop-twist-joy
+$ sudo apt install ros-dashing-joy
 $ sudo pip install ds4drv
 ```
 
@@ -100,9 +99,8 @@ $ sudo ds4drv
 Enter pairing mode with PS4 by pressing and holding Playstation button + share button for 10 sec. If the light on PS4 turns blue, enter the following commands in terminal and control OpenMANIPULATOR-PRO.
 
 ``` bash
-$ export ROS_NAMESPACE=/open_manipulator_pro
-$ roslaunch teleop_twist_joy teleop.launch
-$ roslaunch open_manipulator_pro_teleop open_manipulator_pro_teleop_joystick.launch
+$ ros2 run joy joy_node
+$ ros2 run open_manipulator_pro_teleop open_manipulator_pro_teleop_joystick
 ```
 
 ### [XBOX 360 Joystick](#xbox-360-joystick)
@@ -110,15 +108,14 @@ $ roslaunch open_manipulator_pro_teleop open_manipulator_pro_teleop_joystick.lau
 Install packages for teleoperation using XBOX 360 joystick.
 
 ``` bash
-$ sudo apt-get install xboxdrv ros-kinetic-joy ros-kinetic-joystick-drivers ros-kinetic-teleop-twist-joy
+$ sudo apt install xboxdrv ros-dashing-joy
 ```
 Connect XBOX 360 joystick to the PC with Wireless Adapter or USB cable, and launch teleoperation packages for XBOX 360 joystick.
 
 ``` bash
 $ sudo xboxdrv --silent
-$ export ROS_NAMESPACE=/open_manipulator_pro
-$ roslaunch teleop_twist_joy teleop.launch
-$ roslaunch open_manipulator_pro_teleop open_manipulator_pro_teleop_joystick.launch
+$ ros2 run joy joy_node
+$ ros2 run open_manipulator_pro_teleop open_manipulator_pro_teleop_joystick
 ```
 
 ## [MoveIt!](#moveit)

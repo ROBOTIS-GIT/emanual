@@ -16108,10 +16108,10 @@ openmanipulator_x:
     children:
       - title: "Install Ubuntu on PC"
         url: /platform/openmanipulator_x/ros2_setup/#install-ubuntu-on-pc
-      - title: "Install ROS on PC"
-        url: /platform/openmanipulator_x/ros2_setup/#install-ros-on-pc
-      - title: "Install ROS Packages"
-        url: /platform/openmanipulator_x/ros2_setup/#install-ros-packages
+      - title: "Install ROS2 on PC"
+        url: /platform/openmanipulator_x/ros2_setup/#install-ros2-on-pc
+      - title: "Install ROS2 Packages"
+        url: /platform/openmanipulator_x/ros2_setup/#install-ros2-packages
       - title: "Communication Converter"
         url: /platform/openmanipulator_x/ros2_setup/#communication-converter
         children:
@@ -16348,20 +16348,10 @@ openmanipulator_pro:
     children:
       - title: "Install Ubuntu on PC"
         url: /platform/openmanipulator_pro/ros2_setup/#install-ubuntu-on-pc
-      - title: "Install ROS on PC"
-        url: /platform/openmanipulator_pro/ros2_setup/#install-ros-on-pc
-        children:
-          - title: "ROS Kinetic Kame"
-            url: /platform/openmanipulator_pro/ros2_setup/#ros-kinetic-kame
-          - title: "ROS Melodic Morenia"
-            url: /platform/openmanipulator_pro/ros2_setup/#ros-melodic-morenia
-      - title: "Install ROS Packages"
-        url: /platform/openmanipulator_pro/ros2_setup/#install-ros-package
-        children:
-          - title: "ROS Kinetic Kame Package"
-            url: /platform/openmanipulator_pro/ros2_setup/#ros-kinetic-kame-package
-          - title: "ROS Melodic Morenia Package"
-            url: /platform/openmanipulator_pro/ros2_setup/#ros-melodic-morenia-package
+      - title: "Install ROS2 on PC"
+        url: /platform/openmanipulator_pro/ros2_setup/#install-ros2-on-pc
+      - title: "Install ROS2 Packages"
+        url: /platform/openmanipulator_pro/ros2_setup/#install-ros2-package
   - title: "[ROS2] Controller Package"
     url: /platform/openmanipulator_pro/ros2_controller_package/#ros-controller-package
     children:
@@ -16390,11 +16380,11 @@ openmanipulator_pro:
         url: /platform/openmanipulator_pro/ros2_operation/#moveit
   - title: "[ROS2] Simulation"
     url: /platform/openmanipulator_pro/ros2_simulation/#ros-simulation
-    children:
-      - title: "Launch gazebo"
-        url: /platform/openmanipulator_pro/ros2_simulation/#launch-gazebo
-      - title: "Controller for gazebo"
-        url: /platform/openmanipulator_pro/ros2_simulation/#controller-for-gazebo
+  #  children:
+  #    - title: "Launch gazebo"
+  #      url: /platform/openmanipulator_pro/ros2_simulation/#launch-gazebo
+  #    - title: "Controller for gazebo"
+  #      url: /platform/openmanipulator_pro/ros2_simulation/#controller-for-gazebo
   - title: "[ROS2] Tool Applications"
     url: /platform/openmanipulator_pro/ros2_tool_applications
     children:

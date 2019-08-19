@@ -26,21 +26,22 @@ page_number: 10
 
 ## [Install Ubuntu on PC](#install-ubuntu-on-pc)
 
-Download and install `Ubuntu 18.04` on your PC.
+Download and install `Ubuntu 18.04` on your PC. Tutoral guide will be helpful for you.
 
-- [Download link](https://www.ubuntu.com/download/alternative-downloads)
+- [Download Ubuntu](https://www.ubuntu.com/download/alternative-downloads)
 
-If you need more help with installing Ubuntu, check out the step-by-step guide from the link below.
+- [Tutorial - Install Ubuntu Desktop](https://www.ubuntu.com/download/desktop/install-ubuntu-desktop)
 
-- [Install ubuntu desktop](https://www.ubuntu.com/download/desktop/install-ubuntu-desktop)
+## [Install ROS2 on PC](#install-ros2-on-pc)
 
-## [Install ROS on PC](#install-ros-on-pc)
-
-Please follow the link below.
-
+![](/assets/images/platform/openmanipulator_pro/logo_ros.png)
+ 
+As OpenMANIPULATOR-X operates on Ronbot Operating System(ROS), it requies to intall `ROS2 Dashing Diademata`. Following link guides you how to install ROS2 on your PC.
+  
 - [Manual Installation of ROS2 Dashing Diademata](https://index.ros.org/doc/ros2/Installation/Dashing/Linux-Install-Debians/)
 
-## [Install ROS Packages](#install-ros-packages)
+## [Install ROS2 Packages](#install-ros2-packages)
+
 Install dependent packages for OpenMANIPULATOR-X. Run the following commands in a terminal window.
 
 **NOTE**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`+`Alt`+`t`.
@@ -55,12 +56,10 @@ $ wget https://raw.githubusercontent.com/ROBOTIS-GIT/open_manipulator/ros2/insta
 **NOTE**: In order to check which packages are installed, please check this link out. [install_ros_dashing.sh](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh)
 {: .notice--info}
 
-If you prefer manual installation, please follow the link below.
-
 ``` bash
 $ cd ~/robotis_ws/src/
-$ git clone https://github.com/bponsler/cmake_modules.git -b ros2-devel
-$ git clone https://github.com/ros/joint_state_publisher.git -b ros2-devel
+$ git clone https://github.com/rjshim/cmake_modules.git -b ros2-devel
+$ git clone https://github.com/rjshim/joint_state_publisher.git -b ros2-devel
 $ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git -b ros2
 $ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench.git -b ros2
 $ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench-msgs.git -b ros2
@@ -69,8 +68,6 @@ $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_msgs.git -b ros2
 $ git clone https://github.com/ROBOTIS-GIT/open_manipulator.git -b ros2
 $ cd ~/robotis_ws && colcon build --symlink-install
 ```
-
-If the colcon build command has been completed without any errors, all the preparations for using OpenMANIPULATOR-X are done.
 
 ## [Communication Converter](#communication-converter)
 

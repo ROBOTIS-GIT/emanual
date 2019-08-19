@@ -21,15 +21,14 @@ The OpenMANIPULATOR-PRO controller provides basic manipulation of OpenMANIPULATO
 
 {% capture notice_01 %}
 **NOTE** :  
-- This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-- This instruction has been tested on `Ubuntu 18.04` and `ROS Melodic Morenia`.  
+- This instruction has been tested on `Ubuntu 18.04` and `ROS2 Dashing Diademata`.
 - This instruction is supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
 ## [Launch Controller](#launch-controller)
 
-Before launching the controller, please check `open_manipulator_pro_controller` launch file in `open_manipulator_pro_controller` package.  
+<!-- Before launching the controller, please check `open_manipulator_pro_controller` launch file in `open_manipulator_pro_controller` package.  
 
 ```
 <launch>
@@ -81,18 +80,12 @@ Before launching the controller, please check `open_manipulator_pro_controller` 
 `use_platform` is a parameter that sets whether to use the actual OpenMANIPULATOR-PRO or OpenMANIPULATOR-PRO simulation. please refer [[ROS2] Simulation](/docs/en/platform/ros2_openmanipulator_pro/ros_simulation/#ros-simulation) chapter.  
 `use_moveit`, `planning_group_name` and `moveit_sample_duration` are parameters to load [move_group](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/move_group_interface/move_group_interface_tutorial.html) package. please refer to [MoveIt!](/docs/en/platform/ros2_openmanipulator_pro/ros_operation/#moveit) chapter.
 
-After setting those parameters, launch the OpenMANIPULATOR-PRO controller to start [[ROS2] Operation](/docs/en/platform/ros2_openmanipulator_pro/ros_operation/#ros-operation).
+After setting those parameters, launch the OpenMANIPULATOR-PRO controller to start [[ROS2] Operation](/docs/en/platform/ros2_openmanipulator_pro/ros_operation/#ros-operation). -->
 
 Please, open the Terminal then run roscore along with following command.
 
 ``` bash
-$ roscore
-```
-
-After running roscore, open  another Terminal then wrtie the following commands in Terminal.  
-
-``` bash
-$ roslaunch open_manipulator_pro_controller open_manipulator_pro_controller.launch
+$ ros2 run open_manipulator_pro_controller open_manipulator_pro_controller 
 ```
 
 **WARNING**: It is recommended to place OpenMANIPULATOR-PRO at the following pose and start the controller so that each component of OpenMANIPULATOR-PRO does not conflict.  
@@ -104,32 +97,14 @@ $ roslaunch open_manipulator_pro_controller open_manipulator_pro_controller.laun
 Follwing message will be shown in the Terminal after the process done successfully.  
 
 ```
-SUMMARY
-========
-
-PARAMETERS
- * /open_manipulator_pro/control_period: 0.01
- * /open_manipulator_pro/moveit_sample_duration: 0.05
- * /open_manipulator_pro/planning_group_name: arm
- * /open_manipulator_pro/using_moveit: False
- * /open_manipulator_pro/using_platform: True
- * /rosdistro: kinetic
- * /rosversion: 1.12.14
-
-NODES
-  /
-    open_manipulator_pro (open_manipulator_pro_controller/open_manipulator_pro_controller)
-
-ROS_MASTER_URI=http://192.168.3.149:11311
-
-process[open_manipulator_pro-1]: started with pid [12510]
+port_name and baud_rate are set to /dev/ttyUSB0, 1000000 
 Joint Dynamixel ID : 1, Model Name : PRO-PLUS-H54P-200-S500-R
 Joint Dynamixel ID : 2, Model Name : PRO-PLUS-H54P-200-S500-R
 Joint Dynamixel ID : 3, Model Name : PRO-PLUS-H54P-100-S500-R
 Joint Dynamixel ID : 4, Model Name : PRO-PLUS-H54P-100-S500-R
 Joint Dynamixel ID : 5, Model Name : PRO-PLUS-H42P-020-S300-R
 Joint Dynamixel ID : 6, Model Name : PRO-PLUS-H42P-020-S300-R
-[INFO] Succeeded to init /open_manipulator_pro
+[INFO] Succeeded to Initialise OpenManipulator-PRO Controller
 ```
 
 {% capture notice_01 %}
@@ -160,12 +135,12 @@ if DYNAMIXEL aren't recoginized, please check firmware with ROBOTIS software ([R
 Publish a topic message to check the OpenMANIPULATOR-PRO setting.
 
 ``` bash
-$ rostopic pub /open_manipulator_pro/option std_msgs/String "print_open_manipulator_prp_setting"
+$ ros2 topic pub /open_manipulator_pro/option std_msgs/msg/String "print_open_manipulator_pro_setting"
 ```
 <**Manipulator Description**> will be printed on Terminal.  
 Launch the open_manipulator_controller. It is shown that present states of the OpenMANIPULATOR-PRO.  
 This parameter is descripted on OpenMANIPULATOR.cpp in open_manipulator_libs package.  
-`~/catkin_ws/src/open_manipulator_pro/open_manipulator_pro_libs/src/open_manipulator_pro.cpp`
+`~/robotis_ws/src/open_manipulator_pro/open_manipulator_pro_libs/src/open_manipulator_pro.cpp`
 
 ```
 ----------<Manipulator Description>----------
@@ -545,8 +520,7 @@ Active Joint
 
 {% capture notice_01 %}
 **NOTE**:  
-- This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-- This instruction has been tested on `Ubuntu 18.04` and `ROS Melodic Morenia`.  
+- This instruction has been tested on `Ubuntu 18.04` and `ROS2 Dashing Diademata`.
 - This instruction is supposed to be run on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
@@ -562,7 +536,7 @@ $ roslaunch open_manipulator_pro_description open_manipulator_pro_rviz.launch
 - If you launched the [OpenMANIPULATOR-PRO controller](/docs/en/platform/ros2_openmanipulator_pro/ros_controller_package/#launch-controller) before launching the open_manipulator_pro_controller file, the robot model on RViz would be synchronized with the actual robot.
 - If users would like to check only model of OpenMANIPULATOR-PRO without OpenMANIPULATOR-PRO, the user can launch the RViz without the OpenMANIPULATOR-PRO controller.  
 The user can change each joint by GUI, if the user launch only RViz by executing the following command :
-`$ roslaunch open_manipulator_pro_description open_manipulator_pro_rviz.launch use_gui:=true`
+`$ ros2 launch open_manipulator_pro_description open_manipulator_pro_rviz.launch.py use_gui:=true`
 
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
@@ -575,8 +549,7 @@ The user can change each joint by GUI, if the user launch only RViz by executing
 
 {% capture notice_01 %}
 **NOTE**:  
-- This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-- This instruction has been tested on `Ubuntu 18.04` and `ROS Melodic Morenia`.   
+- This instruction has been tested on `Ubuntu 18.04` and `ROS2 Dashing Diademata`.
 - This instruction is supposed to be run on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.  
 - Make sure to run the [OpenMANIPULATOR-PRO controller](/docs/en/platform/ros2_openmanipulator_pro/ros_controller_package/#launch-controller) instructions before running the instructions below.  
 {% endcapture %}
