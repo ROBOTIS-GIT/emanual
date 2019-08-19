@@ -17,7 +17,9 @@ page_number: 13
 
 # [[ROS2] Tool Applications](#ros-tool-application)
 
-## [RH-P12-RN Gripper](#rh-p12-rn-gripper)
+`[ROS2] Simulation` for `ROS2 Dashing Diademata` will be released soon!
+
+<!-- ## [RH-P12-RN Gripper](#rh-p12-rn-gripper)
 
 ### [Parts List](#parts-list)
 
@@ -147,4 +149,4 @@ Launch the open_manipulator_pro_controller for gazebo simulation.
 ```bash
 $ roslaunch open_manipulator_pro_controller open_manipulator_pro_controller.launch use_platform:=false with_gripper:=true
 ```
-- [Controller for Gazebo e-Manual](/docs/en/platform/openmanipulator_pro/ros2_simulation/#controller-for-gazebo)
+- [Controller for Gazebo e-Manual](/docs/en/platform/openmanipulator_pro/ros2_simulation/#controller-for-gazebo) -->
