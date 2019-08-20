@@ -58,7 +58,7 @@ Install dependent packages for OpenMANIPULATOR-PRO. Run the following commands i
 {: .notice--info} 
 
 ``` bash
-$ sudo apt update && sudo apt-get upgrade
+$ sudo apt update && sudo apt upgrade
 $ wget https://raw.githubusercontent.com/ROBOTIS-GIT/open_manipulator/ros2/install_ros_dashing.sh && chmod 755 ./install_ros_dashing.sh && bash ./install_ros_dashing.sh
 ```
 
@@ -70,9 +70,8 @@ $ wget https://raw.githubusercontent.com/ROBOTIS-GIT/open_manipulator/ros2/insta
 If you prefer manual installation, please follow the link below.
 >>>>>>> 54c6d60531836aa64635f0c8f881051c7932c581
 
-if you haven't installed git, (move this line to warning or smth)
 ``` bash
-$ sudo apt install git
+$ sudo apt install ros-dashing-python* ros-dashing-rqt*
 ```
 
 ``` bash
@@ -83,7 +82,7 @@ $ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git -b ros2
 $ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench.git -b ros2
 $ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench-msgs.git -b ros2
 $ git clone https://github.com/ROBOTIS-GIT/robotis_manipulator.git -b ros2
-$ git clone https://github.com/ROBOTIS-GIT/open_manipulator.git -b ros2
+$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_pro.git -b ros2
 $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_msgs.git -b ros2
 $ cd ~/robotis_ws && colcon build --symlink-install
 ```

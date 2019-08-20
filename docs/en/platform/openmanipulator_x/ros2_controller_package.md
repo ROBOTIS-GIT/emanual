@@ -25,6 +25,12 @@ The OpenMANIPULATOR-X controller provides basic manipulation of OpenMANIPULATOR-
 
 ## [Launch Controller](#launch-controller)
 
+
+``` bash
+$ ros2 run open_manipulator_x_controller create_udev_rules 
+```
+
+
 <!-- Before launching the controller, Please check `open_manipulator_x_controller` launch file in `open_manipulator_x_controller` package.
 
   ```
@@ -409,7 +415,7 @@ $ ros2 launch open_manipulator_x_description open_manipulator_x_rviz2.launch.py
 - If you launched the [OpenMANIPULATOR-X controller](/docs/en/platform/ros2_openmanipulator_x/ros_controller_package/#launch-controller) before launching the open_manipulator_controller file, the robot model on RViz would be synchronized with the actual robot.
 - If users would like to check only model of OpenMANIPULATOR-X without control the actual OpenMANIPULATOR, the user can launch the RViz without the OpenMANIPULATOR-X controller.
 The user can change each joint by GUI, if the user launch only RViz by executing the following command :
-`$ ros2 launch open_manipulator_x_description open_manipulator_x_rviz2.launch.py use_gui:=true`
+`$ ros2 launch open_manipulator_x_description open_manipulator_x_rviz.launch.py use_gui:=true`
 
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>

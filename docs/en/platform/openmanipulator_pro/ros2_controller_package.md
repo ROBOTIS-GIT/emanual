@@ -28,6 +28,10 @@ The OpenMANIPULATOR-PRO controller provides basic manipulation of OpenMANIPULATO
 
 ## [Launch Controller](#launch-controller)
 
+``` bash
+$ ros2 run open_manipulator_pro_controller create_udev_rules 
+```
+
 <!-- Before launching the controller, please check `open_manipulator_pro_controller` launch file in `open_manipulator_pro_controller` package.  
 
 ```
@@ -525,7 +529,7 @@ Active Joint
 Load OpenMANIPULATOR-PRO on RViz.
 
 ``` bash
-$ ros2 launch open_manipulator_pro_description open_manipulator_pro_rviz.launch.py
+$ ros2 launch open_manipulator_pro_description open_manipulator_pro_rviz2.launch.py
 ```
 
 {% capture notice_01 %}
@@ -533,7 +537,7 @@ $ ros2 launch open_manipulator_pro_description open_manipulator_pro_rviz.launch.
 - If you launched the [OpenMANIPULATOR-PRO controller](/docs/en/platform/ros2_openmanipulator_pro/ros_controller_package/#launch-controller) before launching the open_manipulator_pro_controller file, the robot model on RViz would be synchronized with the actual robot.
 - If users would like to check only model of OpenMANIPULATOR-PRO without OpenMANIPULATOR-PRO, the user can launch the RViz without the OpenMANIPULATOR-PRO controller.  
 The user can change each joint by GUI, if the user launch only RViz by executing the following command :
-`$ ros2 launch open_manipulator_pro_description open_manipulator_pro_rviz2.launch.py use_gui:=true`
+`$ ros2 launch open_manipulator_pro_description open_manipulator_pro_rviz.launch.py use_gui:=true`
 
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>

@@ -46,8 +46,7 @@ The following script will allow you to simplify the ROS installation procedure. 
 ### [ROS Kinetic Kame](#ros-kinetic-kame)
 
 ``` bash
-$ sudo apt-get update
-$ sudo apt-get upgrade
+$ sudo apt-get update && sudo apt-get upgrade
 $ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh && chmod 755 ./install_ros_kinetic.sh && bash ./install_ros_kinetic.sh
 ```
 

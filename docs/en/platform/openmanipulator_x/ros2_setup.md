@@ -49,13 +49,16 @@ Install dependent packages for OpenMANIPULATOR-X. Run the following commands in 
 {: .notice--info}
 
 ``` bash
-$ sudo apt-get update
-$ sudo apt-get upgrade
+$ sudo apt update && sudo apt upgrade
 $ wget https://raw.githubusercontent.com/ROBOTIS-GIT/open_manipulator/ros2/install_ros_dashing.sh && chmod 755 ./install_ros_dashing.sh && bash ./install_ros_dashing.sh
 ```
 
 **NOTE**: In order to check which packages are installed, please check this link out. [install_ros_dashing.sh](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh)
 {: .notice--info}
+
+``` bash
+$ sudo apt install ros-dashing-python* ros-dashing-rqt*
+```
 
 ``` bash
 $ cd ~/robotis_ws/src/
