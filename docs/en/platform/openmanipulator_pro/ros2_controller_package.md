@@ -82,7 +82,7 @@ The OpenMANIPULATOR-PRO controller provides basic manipulation of OpenMANIPULATO
 
 After setting those parameters, launch the OpenMANIPULATOR-PRO controller to start [[ROS2] Operation](/docs/en/platform/ros2_openmanipulator_pro/ros_operation/#ros-operation). -->
 
-Please, open the Terminal then run roscore along with following command.
+Please, open the Terminal then run the following command.
 
 ``` bash
 $ ros2 run open_manipulator_pro_controller open_manipulator_pro_controller 
@@ -109,9 +109,7 @@ Joint Dynamixel ID : 6, Model Name : PRO-PLUS-H42P-020-S300-R
 
 {% capture notice_01 %}
 **TIP**:  
-- If you can't load DYNAMIXEL, please check your DYNAMIXEL settings by using the following command from the DYNAMIXEL-Workbench packages.   
-`rosrun dynamixel_workbench_controllers find_dynamixel /dev/ttyUSB0`  
-if DYNAMIXEL aren't recoginized, please check firmware with ROBOTIS software ([R+ Manager 2.0](/docs/en/software/rplus2/manager/) or [DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/#firmware-update))
+- if DYNAMIXEL aren't recoginized, please check firmware with ROBOTIS software ([R+ Manager 2.0](/docs/en/software/rplus2/manager/) or [DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/#firmware-update))
 - If you would like to change Dynamixel ID, please check [`open_manipulator_pro.cpp`](https://github.com/ROBOTIS-GIT/open_manipulator/blob/be2859a0506b4e941a19435c0a07562b41768a27/open_manipulator_pro_libs/src/OpenManipulator.cpp#L40) in the open_manipulator_pro_lib folder. The default ID is **11, 12, 13, 14 ,15 and 16** for joints.
 {% endcapture %}
 <div class="notice--success">{{ notice_01 | markdownify }}</div>
@@ -125,8 +123,7 @@ if DYNAMIXEL aren't recoginized, please check firmware with ROBOTIS software ([R
 
 {% capture notice_01 %}
 **NOTE**:  
-- This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-- This instruction has been tested on `Ubuntu 18.04` and `ROS Melodic Morenia`.
+- This instruction has been tested on `Ubuntu 18.04` and `ROS2 Dashing Diademata`.
 - This instruction is supposed to be run on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.  
 - Make sure to run the [OpenMANIPULATOR-PRO controller](/docs/en/platform/ros2_openmanipulator_pro/ros_controller_package/#launch-controller) instructions before running the instructions below.  
 {% endcapture %}
@@ -135,7 +132,7 @@ if DYNAMIXEL aren't recoginized, please check firmware with ROBOTIS software ([R
 Publish a topic message to check the OpenMANIPULATOR-PRO setting.
 
 ``` bash
-$ ros2 topic pub /open_manipulator_pro/option std_msgs/msg/String "print_open_manipulator_pro_setting"
+$ ros2 topic pub /open_manipulator_pro/option std_msgs/msg/String "data: print_open_manipulator_pro_setting"
 ```
 <**Manipulator Description**> will be printed on Terminal.  
 Launch the open_manipulator_controller. It is shown that present states of the OpenMANIPULATOR-PRO.  
@@ -528,7 +525,7 @@ Active Joint
 Load OpenMANIPULATOR-PRO on RViz.
 
 ``` bash
-$ roslaunch open_manipulator_pro_description open_manipulator_pro_rviz.launch
+$ ros2 launch open_manipulator_pro_description open_manipulator_pro_rviz.launch.py
 ```
 
 {% capture notice_01 %}
@@ -536,7 +533,7 @@ $ roslaunch open_manipulator_pro_description open_manipulator_pro_rviz.launch
 - If you launched the [OpenMANIPULATOR-PRO controller](/docs/en/platform/ros2_openmanipulator_pro/ros_controller_package/#launch-controller) before launching the open_manipulator_pro_controller file, the robot model on RViz would be synchronized with the actual robot.
 - If users would like to check only model of OpenMANIPULATOR-PRO without OpenMANIPULATOR-PRO, the user can launch the RViz without the OpenMANIPULATOR-PRO controller.  
 The user can change each joint by GUI, if the user launch only RViz by executing the following command :
-`$ ros2 launch open_manipulator_pro_description open_manipulator_pro_rviz.launch.py use_gui:=true`
+`$ ros2 launch open_manipulator_pro_description open_manipulator_pro_rviz2.launch.py use_gui:=true`
 
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>

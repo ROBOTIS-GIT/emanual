@@ -40,7 +40,7 @@ Launch `open_manipulator_pro_teleop_keyboard` node for simple teleoperation test
 
 
 ``` bash
-$ roslaunch open_manipulator_pro_teleop open_manipulator_pro_teleop_keyboard.launch
+$ ros2 run open_manipulator_pro_teleop open_manipulator_pro_teleop_keyboard
 ```
 If the node is successfully launched, the following instruction will appear in the terminal window.  
 

@@ -79,6 +79,7 @@ $ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git -b ros2
 $ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench.git -b ros2
 $ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench-msgs.git -b ros2
 $ git clone https://github.com/ROBOTIS-GIT/robotis_manipulator.git -b ros2
+$ git clone https://github.com/ROBOTIS-GIT/open_manipulator.git -b ros2
 $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_msgs.git -b ros2
 $ cd ~/robotis_ws && colcon build --symlink-install
 ```

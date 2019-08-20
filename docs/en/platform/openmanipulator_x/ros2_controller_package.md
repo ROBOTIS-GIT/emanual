@@ -107,7 +107,7 @@ Gripper Dynamixel ID : 15, Model Name :XM430-W350
 Publish a topic message to check the OpenMANIPULATOR-X setting.
 
 ``` bash
-$ ros2 topic pub /open_manipulator_x/option std_msgs/msg/String "print_open_manipulator_x_setting"
+$ ros2 topic pub /open_manipulator_x/option std_msgs/msg/String "data: print_open_manipulator_x_setting"
 ```
 
 <**Manipulator Description**> will be printed on Terminal. 
