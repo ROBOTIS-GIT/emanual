@@ -15770,7 +15770,7 @@ turtlebot3:
       url: /platform/turtlebot3/machine_learning/#set-parameters
     - title: "Run Machine Learning"
       url: /platform/turtlebot3/machine_learning/#run-machine-learning
-  - title: "ROS2"
+  - title: "ROS 2"
     url: /platform/turtlebot3/ros2/#ros2
     children:
     - title: "Setup"
