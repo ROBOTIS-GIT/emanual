@@ -13,7 +13,7 @@ product_group: rplustask3
 page_number: 1
 ---
 
-# [개요](#개요)
+# [Introduction](#introduction)
 
 ![](/assets/images/sw/rplus_task3/task3_001.png)
 
@@ -44,7 +44,7 @@ In order to make the robot move, the correct Motion project file must exist for 
 The Motion files are not backward compatible, but lower version files can be converted to mtn3 with R+ Task 3.0.
 
 
-## [호환 제어기](#호환-제어기)
+## [Compatible Controllers](#compatible-controllers)
 
 - [CM-5]
 - [CM-50]
@@ -61,14 +61,14 @@ The Motion files are not backward compatible, but lower version files can be con
 **[제어기 호환표]**
 {: .notice}
 
-# [시작하기](#시작하기)
+# [Getting Started](#getting-started)
 
-## [소프트웨어 다운로드](#소프트웨어-다운로드)
+## [Software Download](#software-download)
 
-- [로보플러스 태스크 3.0 윈도우 설치파일 다운로드](http://www.robotis.com/service/download.php?no=1774)
-- [로보플러스 태스크 3.0 안드로이드 앱 다운로드](https://play.google.com/store/apps/details?id=com.robotis.task3)
+- [R+Task 3.0 Windows Installer](http://www.robotis.com/service/download.php?no=1774)
+- [R+Task 3.0 Android App](https://play.google.com/store/apps/details?id=com.robotis.task3)
 
-## [메뉴 설명](#메뉴-설명)
+## [Menu Descriptions](#menu-descriptions)
 
 1. Home Tab  
   The following image is the initial screen at start up, which includes default examples, file and settings menu.
@@ -102,15 +102,15 @@ The Motion files are not backward compatible, but lower version files can be con
     ![](/assets/images/sw/rplus_task3/task3_007.png)
 
 
-[제어기 호환표]: /docs/kr/parts/controller/controller_compatibility/
-[CM-50]: /docs/kr/parts/controller/cm-100/
-[CM-100]: /docs/kr/parts/controller/cm-100/
-[CM-150]: /docs/kr/parts/controller/cm-150/
-[CM-200]: /docs/kr/parts/controller/cm-200/
-[CM-5]: /docs/kr/parts/controller/cm-5/
-[CM-510]: /docs/kr/parts/controller/cm-510/
-[CM-530]: /docs/kr/parts/controller/cm-530/
-[CM-550]: /docs/kr/parts/controller/cm-550/
-[CM-700]: /docs/kr/parts/controller/cm-700/
-[OpenCM7.0]: /docs/kr/parts/controller/opencm7/
-[OpenCM9.04]: /docs/kr/parts/controller/opencm904/
+[Controller Compatibility Table]: /docs/en/parts/controller/controller_compatibility/
+[CM-50]: /docs/en/parts/controller/cm-100/
+[CM-100]: /docs/en/parts/controller/cm-100/
+[CM-150]: /docs/en/parts/controller/cm-150/
+[CM-200]: /docs/en/parts/controller/cm-200/
+[CM-5]: /docs/en/parts/controller/cm-5/
+[CM-510]: /docs/en/parts/controller/cm-510/
+[CM-530]: /docs/en/parts/controller/cm-530/
+[CM-550]: /docs/en/parts/controller/cm-550/
+[CM-700]: /docs/en/parts/controller/cm-700/
+[OpenCM7.0]: /docs/en/parts/controller/opencm7/
+[OpenCM9.04]: /docs/en/parts/controller/opencm904/

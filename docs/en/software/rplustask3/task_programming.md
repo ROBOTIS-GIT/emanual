@@ -20,146 +20,134 @@ page_number: 2
 <![end dummy Header 1]-->
 
 
-# [태스크 프로그래밍](#태스크-프로그래밍)
+# [Task Programming](#task-programming)
 
-## [새 파일 만들기](#새-파일-만들기)
+## [Create New File](#create-new-file)
 
-1. 홈 탭으로 이동합니다 (프로그램 시작시 홈 탭에서 시작됩니다).
-2. `새로 만들기` 버튼을 클릭합니다.
+1. Move to Home Tab (Home Tab is the default screen at start up).
+2. Click the `New` button.  
+  ![](/assets/images/sw/rplus_task3/task3_008.png)
 
-    ![](/assets/images/sw/rplus_task3/task3_008.png)
+3. Choose the controller and Protocol Version.
+4. Click `Confirm` button to create a new Task file.  
+  ![](/assets/images/sw/rplus_task3/task3_009.png)
 
-3. 프로토콜 버전과 제어기를 선택합니다.
-4. `확인` 버튼을 클릭하면 새로운 태스크 파일이 생성됩니다.
+## [Open Task File](#open-task-file)
 
-    ![](/assets/images/sw/rplus_task3/task3_009.png)
+1. Move to Home Tab (Home Tab is the default screen at start up).
+2. Click the `Example` button.
+3. Select the product and example.
+4. Click `Confirm` button to open the Task file.  
+  ![](/assets/images/sw/rplus_task3/task3_010.png)
 
-## [태스크 예제 열기](#태스크-예제-열기)
+## [Insert/Change Instruction](#insertchange-instruction)
 
-1. 홈 탭으로 이동합니다 (프로그램 시작 시 홈 탭에서 시작됩니다).
-2. `예제` 버튼을 클릭합니다.
-3. 원하는 제품과 단계, 예제 명을 선택합니다.
-4. `확인` 버튼을 클릭합니다.
+1. Click the `Instructions` tab on the right (or double-click the location you wish to insert the instruction).
+2. Select the instruction.
+3. Double click the item or
+4. Drag and drop the item into the code.  
+  ![](/assets/images/sw/rplus_task3/task3_011.png)
 
-    ![](/assets/images/sw/rplus_task3/task3_010.png)
+## [Select Multiple Lines](#select-multiple-lines)
 
-## [명령어 삽입/변경](#명령어-삽입변경)
+1. Multiple lines can be selected by dragging the line numbers on the left.  
+  ![](/assets/images/sw/rplus_task3/task3_012.png)
 
-1. 우측의 `명령어` 탭을 클릭합니다 (혹은 명령어를 삽입할 위치를 더블 클릭합니다).
-2. 삽입할 명령어의 종류를 선택합니다.
-3. 사용하고자 하는 세부 명령어를 더블클릭하거나
-4. 세부 명령어를 드래그하여 원하는 위치에 드롭합니다.
+2. Click on the source code to cancel the selection.  
+  ![](/assets/images/sw/rplus_task3/task3_013.png)
 
-    ![](/assets/images/sw/rplus_task3/task3_011.png)
+## [Insert/Delete Line](#insertdelete-line)
 
-## [여러 줄 선택](#여러-줄-선택)
+1. Select the code where to insert (or delete) the line. Click the right mouse button to show the option menu.
+2. Click `Insert Line` to insert a new line above the selected line (keyboard shortcut : `Space`)
+3. Click `Delete Line` to delete the selected line (keyboard shortcut : `Delete`)
+4. Click `Erase Line` to erase the code and keep the line (keyboard shortcut : `Backspace`)  
+  ![](/assets/images/sw/rplus_task3/task3_014.png)
 
-1. 줄 번호를 드래그(drag)하여 여러 줄을 선택합니다.
+## [Enable/Disable Line](#enabledisable-line)
 
-    ![](/assets/images/sw/rplus_task3/task3_012.png)
+1. Select the line which you wish to enable/disable with the left mouse button.
+2. Click `Enable/Disable` to switch the enabled/disabled status of the selected line (keyboard shortcut : `Ctrl` + `E`)  
+  ![](/assets/images/sw/rplus_task3/task3_015.png)
 
-2. 소스코드를 직접 클릭하면 라인선택이 취소됩니다.
+3. Disabled code will be shown in gray text and will be excluded from compilation.  
+  ![](/assets/images/sw/rplus_task3/task3_016.png)
 
-    ![](/assets/images/sw/rplus_task3/task3_013.png)
+## [Copy/Cut/Paste](#copycutpaste)
 
-## [줄 삽입/지우기](#줄-삽입지우기)
+1. Select the line to copy (or cut).
+2. Click `Copy` (or `Cut`) to copy the code into the clipboard.  
+  `Cut` option will copy the code into the clipboard and delete the code line.
 
-1. 줄 삽입(혹은 줄 지우기)를 실행할 위치를 선택하고 마우스 오른쪽 버튼을 클릭하면 추가 메뉴가 나타납니다.
-2. `줄 삽입`을 선택하면 선택된 줄의 위쪽에 새로운 줄이 삽입됩니다. (단축키 : `Space`)  
-  `줄 지우기`를 선택하면 선택된 줄이 삭제됩니다. (단축키 : `Delete`)  
-  `줄 내용 지우기`를 선택하면 줄을 남겨두고 코드만 삭제됩니다. (단축키 : `Backspace`)
+3. `Copy` (or `Cut`) buttons from the toolbar on top can be used (keyboard shortcut : `Ctrl` + `C`, `Ctrl` + `X`)  
+  ![](/assets/images/sw/rplus_task3/task3_017.png)
 
-    ![](/assets/images/sw/rplus_task3/task3_014.png)
+4. Right click on the line to paste the code to show the option menu.
+5. Select `Paste` to place the code in the clipboard.
+6. `Paste` button from the toolbar on top can be used (keyboard shortcut : `Ctrl` + `V`)  
+  ![](/assets/images/sw/rplus_task3/task3_018.png)
 
-## [줄 활성/비활성](#줄-활성비활성)
+7. The code will be inserted as shown below.  
+  ![](/assets/images/sw/rplus_task3/task3_019.png)
 
-1. 활성/비활성을 실행할 위치를 선택하고 마우스 오른쪽 버튼을 클릭하면 추가 메뉴가 나타납니다.
-2. `줄 활성/비활성`을 클릭하면 선택된 줄의 활성/비활성 상태가 전환됩니다. (단축키 : `Ctrl` + `E`)
+## [Undo/Redo](#undoredo)
 
-    ![](/assets/images/sw/rplus_task3/task3_015.png)
+1. Select `Undo` from the option menu or
+2. Click the `Undo` button from the toolbar to revert the last change in the code (keyboard shortcut : `Ctrl` + `Z`)  
+  ![](/assets/images/sw/rplus_task3/task3_020.png)
 
-3. 비활성화된 코드는 주석처리되어 회색으로 표시되며 컴파일시 제외됩니다.
+3. Select `Redo` from the option menu or
+4. Click the `Redo` button from the toolbar to cancel the reverted change (keyboard shortcut : `Ctrl` + `Shift` + `Z`)  
+  ![](/assets/images/sw/rplus_task3/task3_021.png)
 
-    ![](/assets/images/sw/rplus_task3/task3_016.png)
+## [Download Task Code](#download-task-code)
 
-## [복사/잘라내기/붙여넣기](#복사잘라내기붙여넣기)
+1. Click `Device` button. (keyboard shortcut : `Shift` + `F5`)
+2. Select the port that is connected to the robot and click `Connect` button.
+3. If the robot is connected, click `Download` button to download the task code to the robot controller.  
+  ![](/assets/images/sw/rplus_task3/task3_022.png)
 
-1. 복사(또는 잘라내기)를 실행할 줄을 선택하고 마우스 오른쪽 버튼을 클릭하면 추가 메뉴가 나타납니다.
-2. `복사(또는 잘라내기)`를 선택하면 선택된 줄이 클립보드에 복사됩니다.  
-  `잘라내기`를 선택한 경우 선택된 줄이 삭제되며 클립보드에 복사됩니다.
+4. When download is completed, the controller will execute the task (some controllers may be turned off instead of executing the task).  
+  ![](/assets/images/sw/rplus_task3/task3_023.png)
 
-3. 상단 툴바의 `잘라내기`, `복사` 버튼을 사용할 수도 있습니다. (단축키 : `Ctrl` + `C`, `Ctrl` + `X`)
-
-    ![](/assets/images/sw/rplus_task3/task3_017.png)
-
-4. 붙여넣기를 진행할 줄을 선택하고 마우스 오른쪽 버튼을 클릭하면 추가 메뉴가 나타납니다.
-5. `붙여넣기`를 선택하면 클립보드에 복사된 내용이 선택된 줄에 복사됩니다.
-6. 상단 툴바의 `붙여넣기` 버튼을 사용할 수도 있습니다. (단축키 : `Ctrl` + `V`)
-
-    ![](/assets/images/sw/rplus_task3/task3_018.png)
-
-7. 그림과 같이 복사한 코드가 삽입됩니다.
-
-    ![](/assets/images/sw/rplus_task3/task3_019.png)
-
-## [실행취소/다시실행](#실행취소다시실행)
-
-1. 추가 메뉴에서 `실행취소`를 선택하거나
-2. 상단 툴바의 `실행취소` 버튼을 클릭하면 한 단계 이전으로 되돌릴 수 있습니다. (단축키 : `Ctrl` + `Z`)
-
-    ![](/assets/images/sw/rplus_task3/task3_020.png)
-
-3. 추가 메뉴의 `다시실행`을 선택하거나
-4. 상단 툴바의 `다시실행` 버튼을 클릭하면 되돌린 코드를 다시 실행할 수 있습니다. (단축키 : `Ctrl` + `Shift` + `Z`)
-
-    ![](/assets/images/sw/rplus_task3/task3_021.png)
-
-## [태스크 다운로드 하기](#태스크-다운로드-하기)
-
-1. `장치 선택` 버튼을 클릭합니다. (단축키 : `Shift` + `F5`)
-2. 로봇 연결하기 창이 나타나면 로봇이 연결된 포트 종류와 포트 번호를 더블클릭합니다.
-3. 제어기에 연결이 완료되고 창이 닫히면 `다운로드` 버튼으로 프로그램을 제어기로 다운로드합니다.
-
-    ![](/assets/images/sw/rplus_task3/task3_022.png)
-
-4. 다운로드가 완료되면 제어기가 다운로드된 태스크를 실행합니다 (일부 제어기의 경우 다운로드가 완료되면 제어기가 종료됩니다).
-
-    ![](/assets/images/sw/rplus_task3/task3_023.png)
-
-## [프로그램 출력보기](#프로그램-출력보기)
-
-1. 디버깅 탭으로 이동합니다.
-2. `장치 선택` 버튼을 클릭합니다. (단축키 : `Shift` + `F5`)
-3. 로봇 연결하기 창이 나타나면 로봇이 연결된 포트 종류와 포트 번호를 더블클릭합니다.
-4. 제어기에 연결이 완료되고 창이 닫히면 `터미널 시작 / 정지` 버튼을 클릭합니다. (단축키 : `Ctrl` + `F6`)
-
-    ![](/assets/images/sw/rplus_task3/task3_024.png)
-
-6. 로봇이 연결되면 `출력 모니터`와 `가상 리모컨`이 활성화 됩니다.
-
-    ![](/assets/images/sw/rplus_task3/task3_025.png)
+## [Print Output](#print-output)
 
 
-# [태스크 명령어](#태스크-명령어)
+Select the device connected to the robot
+Click the Confirm button
+When the window closes, click the “Start” button
 
-## [시작과 끝](#시작과-끝)
+1. Move to Debugging Tab.
+2. Click the `Device` button. (keyboard shortcut : `Shift` + `F5`)
+3. Select the port that is connected to the robot and click `Connect` button.
+4. If the robot is connected, click `Terminal Start / Stop` button (keyboard shortcut : `Ctrl` + `F6`).  
+  ![](/assets/images/sw/rplus_task3/task3_024.png)
 
-프로그램의 기본적인 시작과 끝, 명령어의 유효 구간을 설정하는 명령어입니다. 자세한 설명은 하위 항목을 참고하세요.
+5. If the robot is connected, `Output Monitor` and `Virtual Remote Controller` is enabled.  
+  ![](/assets/images/sw/rplus_task3/task3_025.png)
+
+
+# [Task Instructions](#task-instructions)
+
+## [Start/End](#startend)
+
+This instruction establishes the overall beginning and end of a program, and the valid block for the instruction.
 
 ![](/assets/images/sw/rplus_task3/task3_026.png)
 
-### [프로그램 시작](#프로그램-시작)
+### [Start Program](#start-program)
 
-- 프로그램 시작 명령은 줄 번호와 상관 없이 실행됩니다.
-- 한 프로그램에 두 개 이상의 프로그램 시작이 있을 수 없습니다.
-- 명령 묶음 구간이 반드시 필요합니다.
-- 프로그램 시작 명령 구간의 끝을 만나면 프로그램이 종료됩니다.
-- C언어의 main()함수와 같은 기능을 합니다.
-- 아래는 내부가 비어있는 프로그램 시작 함수입니다.
+- The Start Program instruction is executed regardless of the line number.
+- There cannot be more than one Start Program instruction in one program.
+- The Start Program instruction must be enclosed with a set of opening and closing brackets properly.
+- When program reaches at the end of the Start Program instruction, the program will be terminated.
+- The Start Program instruction can be compared to the main() function in C programming language.
+
+The following image is an empty Start Program instruction.
 
 ![](/assets/images/sw/rplus_task3/task3_027.png)
 
-### [프로그램 끝](#프로그램-끝)
+### [End Program](#end-program)
 
 - 프로그램을 끝내고 싶은 지점을 수동으로 지정합니다.
 - 사용하지 않을 경우 프로그램 시작의 구간을 모두 수행한 후 자연 종료 됩니다.

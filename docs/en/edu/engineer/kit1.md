@@ -25,7 +25,7 @@ product_group: 2xl430-w250
 - Upgrade to Raspberry Pi and Camera
 
 
-## [Part List](#part-list)
+## [Parts List](#parts-list)
 
 ![](/assets/images/edu/engineer/kit1/parts_list.png)
 
@@ -42,7 +42,7 @@ product_group: 2xl430-w250
 | Operating Temperature |                                                                              -5 ~ 70 [&deg;C]                                                                               |
 | Communication Module  |                                                                              BLE Slave Module                                                                               |
 | Internal I/O Devices  |  Buttons : 2 (MODE, START)<br />Mic (Sound Detection) : 1<br />Buzzer : 1<br />Voltage Sensor : 1<br />Gyro Accelerometer : 1<br />Temperature Sensor : 1<br />RGB LED : 3  |
-| External I/O Devices  |                    ROBOTIS 5 Pin Port : 5 (Servo Motor / IR Sensor / Temperature & Humidity Sensor : Use Port 1 or 2)<br />X series DYNAMIXEL Ports : 6                     |
+| External I/O Devices  |                                   ROBOTIS 5 Pin Port : 5 (SM-10 / IR Array / TMS-10 : Use Port 1 or 2)<br />X series DYNAMIXEL Ports : 6                                    |
 
 
 #### [CM-550 Layout](#cm-550-layout)
@@ -235,13 +235,13 @@ It is not a mandatory and it may require more time to replace the cable afterwar
 1. Open `Play Store` or `App Store` from the smart device.  
   ![](/assets/images/edu/engineer/kit1/app_installation_01_kr.png)
 
-2. Search for **ROBOTIS** or **R+ ENGINEER** from the store.  
-  ![](/assets/images/edu/engineer/kit1/app_installation_02_kr.png)
+2. Search for **ROBOTIS** or **ROBOTIS ENGINEER** from the store.  
+  ![](/assets/images/edu/engineer/kit1/app_installation_02.png)
 
-3. Select `R+ ENGINEER` from the list and press the `Install` button.  
-  ![](/assets/images/edu/engineer/kit1/app_installation_03_kr.png)
+3. Select `R+ ENGINEER` from the list and press the `Get` or `Install` button.  
+  ![](/assets/images/edu/engineer/kit1/app_installation_03.png)
 
-4. Press the `Agree` button to proceed installation.  
+4. **Android** : Press the `Agree` button to proceed installation.  
   ![](/assets/images/edu/engineer/kit1/app_installation_04_kr.png)
 
 
@@ -265,25 +265,25 @@ It is not a mandatory and it may require more time to replace the cable afterwar
 4. Launch the `ROBOTIS ENGINEER` app from the smart device and press the Bluetooth icon.  
   ![](/assets/images/edu/engineer/kit1/bluetooth_connection_4.png)
 
-5. Find the address on the CM-550 controller.  
+5. Find the BLE MAC address of the CM-550 controller.  
   ![](/assets/images/edu/engineer/kit1/bluetooth_connection_5.png)
 
-6. Enter the last two characters of CM-550 BLE address in the left box and press `Search` icon.  
+6. Enter the last two characters of BLE MAC address in the left box and press `Search` icon.  
   ![](/assets/images/edu/engineer/kit1/bluetooth_connection_6.png)
 
-7. Select the CM-550 BLE address from the search list.  
+7. Select the BLE MAC address from the search list.  
   ![](/assets/images/edu/engineer/kit1/bluetooth_connection_7.png)
 
 ## [Download Examples](#download-examples)
 - CM-550 controller is initially programmed with Kit1 example.  
 - The `Complete Example` includes `Dr.R`, `MAX-E1`, `SPI` examples.
 
-| Example          |                                  Task Files                                   |                                 Motion Files                                  |
-|:-----------------|:-----------------------------------------------------------------------------:|:-----------------------------------------------------------------------------:|
-| Complete Example | [01_ENG1_TOTAL_EN.tsk3](http://www.robotis.com/service/download.php?no=1779 ) | [01_ENG1_TOTAL_EN.mtn3](http://www.robotis.com/service/download.php?no=1787)  |
-| Dr.R             |  [02_ENG1_DR_R_EN.tsk3](http://www.robotis.com/service/download.php?no=1780)  |  [02_ENG1_DR_R_EN.mtn3](http://www.robotis.com/service/download.php?no=1788)  |
-| MAX-E1           | [03_ENG1_MAX_E1_EN.tsk3](http://www.robotis.com/service/download.php?no=1781) | [03_ENG1_MAX_E1_EN.mtn3](http://www.robotis.com/service/download.php?no=1789) |
-| SPI              |  [04_ENG1_SPI_EN.tsk3](http://www.robotis.com/service/download.php?no=1782)   |  [04_ENG1_SPI_EN.mtn3](http://www.robotis.com/service/download.php?no=1790)   |
+|     Example      |                                  Task Files                                   |                                 Motion Files                                  |
+|:----------------:|:-----------------------------------------------------------------------------:|:-----------------------------------------------------------------------------:|
+| Complete Example | [01_ENG1_TOTAL_EN.tsk3](http://www.robotis.com/service/download.php?no=1779)  | [01_ENG1_TOTAL_EN.mtn3](http://www.robotis.com/service/download.php?no=1787)  |
+|       Dr.R       |  [02_ENG1_DR_R_EN.tsk3](http://www.robotis.com/service/download.php?no=1780)  |  [02_ENG1_DR_R_EN.mtn3](http://www.robotis.com/service/download.php?no=1788)  |
+|      MAX-E1      | [03_ENG1_MAX_E1_EN.tsk3](http://www.robotis.com/service/download.php?no=1781) | [03_ENG1_MAX_E1_EN.mtn3](http://www.robotis.com/service/download.php?no=1789) |
+|       SPI        |  [04_ENG1_SPI_EN.tsk3](http://www.robotis.com/service/download.php?no=1782)   |  [04_ENG1_SPI_EN.mtn3](http://www.robotis.com/service/download.php?no=1790)   |
 
 
 {% capture opening_exam %}
@@ -380,13 +380,13 @@ In order to upload an example to CM-550 controller with R+ Task 3.0 app, the sma
 2. When `Connect Robot` window pops up, press the Bluetooth search button in the red box.  
   ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_02.png)  
 
-3. Find the Bluetooth address on the CM-550 controller.  
+3. Find the BLE MAC address of the CM-550 controller.  
   ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_02_1.png)
 
-4. Enter the last two characters of CM-550 BLE address in the left box.  
+4. Enter the last two characters of BLE MAC address in the left box.  
   ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_03.png)  
 
-5. Select the CM-550 BLE address from the search list.  
+5. Select the BLE MAC address from the search list.  
   ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_04.png)  
   ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_05.png)  
 
@@ -814,56 +814,40 @@ Please refer to the method to adjust CM-550 BLE signal strength for various situ
   (BLE signal strength cannot be configured while CM-550 BLE is connected to the paired device)
 
 2. Connect the USB cable from PC to CM-550 (5V USB will automatically turn on the controller even if the power switch is off).
-
 3. Wait until the `MODE` button of CM-550 flickers every second.
-
 4. Run R+ Manager 2.0.
+5. Click the `Check for Updates` button to install the latest updates.  
+  ![](/assets/images/edu/engineer/kit1/BLE_signal_power_02.png)  
 
-    ![](/assets/images/edu/engineer/kit1/BLE_signal_power_01.png)
+6. Go to `ALL PRODUCTS` tab or use shortcut key(`Ctrl` + `A`).  
+  ![](/assets/images/edu/engineer/kit1/BLE_signal_power_04.png)
 
-5. Click the `Check for Updates` button to install the latest updates.
+7. Select `CM-550` from the product list.  
+  ![](/assets/images/edu/engineer/kit1/BLE_signal_power_05.png)
 
-    ![](/assets/images/edu/engineer/kit1/BLE_signal_power_02.png)  
+8.  Click `Update & Test` button.  
+  ![](/assets/images/edu/engineer/kit1/BLE_signal_power_06.png)
 
-6. Go to `ALL PRODUCTS` tab or use shortcut key(`Ctrl` + `A`).
+9. Click `Next` button.  
+  ![](/assets/images/edu/engineer/kit1/BLE_signal_power_07.png)
 
-    ![](/assets/images/edu/engineer/kit1/BLE_signal_power_04.png)
+10. Select the port where the controller is connected to.  
+  ![](/assets/images/edu/engineer/kit1/BLE_signal_power_08.png)
 
-7. Select `CM-550` from the product list.
+11. Confirm the Baudrate (The default baudrate is fixed to 57600 bps).  
+  ![](/assets/images/edu/engineer/kit1/BLE_signal_power_09.png)
 
-    ![](/assets/images/edu/engineer/kit1/BLE_signal_power_05.png)
+12. Once CM-550 controller is detected, click `Next`.  
+  ![](/assets/images/edu/engineer/kit1/BLE_signal_power_10.png)
 
-8.  Click `Update & Test` button.
+13. If the controller has the latest firmware, click `Next`, or else follow the update instruction on the screen to download the latest firmware.  
+  ![](/assets/images/edu/engineer/kit1/BLE_signal_power_11.png)
 
-    ![](/assets/images/edu/engineer/kit1/BLE_signal_power_06.png)
+14. Upon the successful connection, below control table will appear on the screen.  
+  ![](/assets/images/edu/engineer/kit1/BLE_signal_power_12.png)
 
-9. Click `Next` button.
-
-    ![](/assets/images/edu/engineer/kit1/BLE_signal_power_07.png)
-
-10. Select the port where the controller is connected to.
-
-    ![](/assets/images/edu/engineer/kit1/BLE_signal_power_08.png)
-
-11. Confirm the Baudrate (The default baudrate is fixed to 57600 bps).
-
-    ![](/assets/images/edu/engineer/kit1/BLE_signal_power_09.png)
-
-12. Once CM-550 controller is detected, click `Next`.
-
-    ![](/assets/images/edu/engineer/kit1/BLE_signal_power_10.png)
-
-13. If the controller has the latest firmware, click `Next`, or else follow the update instruction on the screen to download the latest firmware.
-
-    ![](/assets/images/edu/engineer/kit1/BLE_signal_power_11.png)
-
-14. Upon the successful connection, below control table will appear on the screen.
-
-    ![](/assets/images/edu/engineer/kit1/BLE_signal_power_12.png)
-
-15. Scroll down until to find `BLE Signal Power` in the address `139`.
-
-    ![](/assets/images/edu/engineer/kit1/BLE_signal_power_13.png)
+15. Scroll down until to find `BLE Signal Power` in the address `139`.  
+  ![](/assets/images/edu/engineer/kit1/BLE_signal_power_13.png)
 
 16. Select the `BLE Signal Power` on the right section of the control table and click `Save` button.  
   The bigger value will increase the signal strength.  
@@ -873,9 +857,8 @@ Please refer to the method to adjust CM-550 BLE signal strength for various situ
     If the value of `BLE Signal Power` is marked on `UNKNOWN(0)`, please go back to step 1 and check if BT-410 Master or BT-410 Dongle module is turned off.
     {: .notice}
 
-17. Confirm the changed `BLE Signal Power` value.
-
-    ![](/assets/images/edu/engineer/kit1/BLE_signal_power_15.png)
+17. Confirm the changed `BLE Signal Power` value.  
+  ![](/assets/images/edu/engineer/kit1/BLE_signal_power_15.png)
 
 ## [Self Checklist](#self-checklist)
 
@@ -896,15 +879,15 @@ Please refer to the method to adjust CM-550 BLE signal strength for various situ
 
 ## [Charging Battery](#charging-battery)
 
-{% include kr/edu/engineer/battery_charge.md %}
+{% include en/edu/engineer/battery_charge.md %}
 
 ## [Battery Level Check](#battery-level-check)
 
-{% include kr/edu/engineer/charge_level.md %}
+{% include en/edu/engineer/charge_level.md %}
 
 ## [Fuse Replacement](#fuse-replacement)
 
-{% include kr/parts/controller/fuse_cm-550.md %}
+{% include en/parts/controller/fuse_cm-550.md %}
 
 
 [CM-550 eManual]: /docs/en/parts/controller/cm-550/

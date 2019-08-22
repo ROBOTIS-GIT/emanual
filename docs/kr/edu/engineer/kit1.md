@@ -269,13 +269,13 @@ product_group: 2xl430-w250
 4. 스마트 기기에서 `ROBOTIS ENGINEER`앱을 실행하고 화면에 표시된 블루투스 아이콘을 누릅니다.  
   ![](/assets/images/edu/engineer/kit1/bluetooth_connection_4.png)
 
-5. 제어기에 표시된 문자(마지막 두자리)를 확인합니다.  
+5. 제어기에 표시된 MAC 주소의 마지막 두자리를 확인합니다.  
   ![](/assets/images/edu/engineer/kit1/bluetooth_connection_5.png)
 
-6. 확인한 숫자를 왼쪽 상자에 입력한 후 `검색` 을 누릅니다.  
+6. 확인한 문자를 왼쪽 상자에 입력한 후 `검색` 을 누릅니다.  
   ![](/assets/images/edu/engineer/kit1/bluetooth_connection_6.png)
 
-7. 검색된 목록을 찾아 선택하면 블루투스 통신 연결이 완료되고, 로봇이 실행됩니다.  
+7. 검색된 목록 중 제어기의 주소와 일치하는 항목을 선택하면 블루투스 통신 연결이 완료되고, 로봇이 실행됩니다.  
   ![](/assets/images/edu/engineer/kit1/bluetooth_connection_7.png)
 
 ## [예제 다운로드](#예제-다운로드)
@@ -378,15 +378,15 @@ product_group: 2xl430-w250
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_02.png)  
 
-3. 제어기에 표시된 주소의 마지막 두자리를 확인합니다.  
+3. 제어기에 표시된 MAC 주소의 마지막 두자리를 확인합니다.  
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_02_1.png)
 
-4. 제어기 주소의 마지막 두자리 문자를 입력해주세요.
+4. 제어기 MAC 주소의 마지막 두자리 문자를 입력해주세요.
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_03.png)  
 
-5. 블루투스 검색결과에서 제어기 주소와 일치하는 포트를 선택하여 연결해주세요.
+5. 검색된 목록 중 제어기의 주소와 일치하는 항목을 선택하여 연결해주세요.
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_04.png)  
     ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_05.png)  

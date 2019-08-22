@@ -370,9 +370,11 @@ main:
       - title: "ROBOTIS GP"
         titlekr: "ROBOTIS GP"
         url: /edu/bioloid/gp/
-    - titlekr: "로보티즈 엔지니어"
+    - title: "ROBOTIS ENGINEER"
+      titlekr: "로보티즈 엔지니어"
       children:
-      - titlekr: "키트 1"
+      - title: "Kit 1"
+        titlekr: "키트 1"
         url: /edu/engineer/kit1/
     - title: "ROBOTIS MINI"
       titlekr: "로보티즈 미니"
@@ -439,7 +441,8 @@ main:
       - title: "R+ Scratch"
         titlekr: "로보플러스 스크래치"
         url: /software/rplus2/scratch/
-    - titlekr: "로보플러스 태스크 3.0"
+    - title: "R+ Task 3.0"
+      titlekr: "로보플러스 태스크 3.0"
       url: /software/rplustask3/
     - title: "R+ Mobile"
       titlekr: "로보플러스 모바일"
@@ -508,7 +511,8 @@ main:
       - title: "CM-530"
         titlekr: "CM-530"
         url: /parts/controller/cm-530/
-      - titlekr: "CM-550"
+      - title: "CM-550"
+        titlekr: "CM-550"
         url: /parts/controller/cm-550/
       - title: "CM-700"
         titlekr: "CM-700"
@@ -14142,9 +14146,9 @@ kit1:
     url: /edu/engineer/kit1/#introduction
     urlkr: /edu/engineer/kit1/#개요
     children:
-    - title: "Part List"
+    - title: "Parts List"
       titlekr: "부품 목록"
-      url: /edu/engineer/kit1/#part-list
+      url: /edu/engineer/kit1/#parts-list
       urlkr: /edu/engineer/kit1/#부품-목록
       children:
       - title: "CM-550 Controller"
@@ -17697,7 +17701,7 @@ rplustask3:
     url: /software/rplustask3/#introduction
     urlkr: /software/rplustask3/#개요
     children:
-    - title: "Compatible Products"
+    - title: "Compatible Controllers"
       titlekr: "호환 제어기"
       url: /software/rplustask3/#compatible-controllers
       urlkr: /software/rplustask3/#호환-제어기
