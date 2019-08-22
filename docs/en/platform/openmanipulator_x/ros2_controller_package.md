@@ -17,19 +17,16 @@ page_number: 11
 
 # [[ROS2] Controller Package](#ros-controller-package)
 
-The OpenMANIPULATOR-X controller provides basic manipulation of OpenMANIPULATOR-X. You can control DYNAMIXEL's of OpenMANIPULATOR-X and check states of OpenMANIPULATOR-X through [messages](/docs/en/platform/ros2_openmanipulator_x/ros_controller_package/#message-list) of the controller.
+OpenMANIPULATOR-X controller provides basic manipulation of OpenMANIPULATOR-X. You can control DYNAMIXEL's of OpenMANIPULATOR-X and check states of OpenMANIPULATOR-X through [messages](/docs/en/platform/ros2_openmanipulator_x/ros_controller_package/#message-list) of the controller.
 
-**NOTE**: 
-- This instruction has been tested on `Ubuntu 18.04` and `ROS2 Dashing Diademata`.
+**NOTE**: This instruction has been tested on `Ubuntu 18.04` and `ROS2 Dashing Diademata`.
 {: .notice--info}
 
 ## [Launch Controller](#launch-controller)
 
-
 ``` bash
 $ ros2 run open_manipulator_x_controller create_udev_rules 
 ```
-
 
 <!-- Before launching the controller, Please check `open_manipulator_x_controller` launch file in `open_manipulator_x_controller` package.
 
@@ -58,7 +55,7 @@ $ ros2 run open_manipulator_x_controller create_udev_rules
 
 After setting the parameters, launch the OpenMANIPULATOR-X controller to start [[ROS] Operation](/docs/en/platform/ros2_openmanipulator_x/ros_operation/#ros-operation). -->
 
-Please, open Terminal then run the following command in Terminal.
+Please, open a terminal then run the following command in the terminal.
 
 ``` bash
 $ ros2 run open_manipulator_x_controller open_manipulator_x_controller 
@@ -116,7 +113,7 @@ Publish a topic message to check the OpenMANIPULATOR-X setting.
 $ ros2 topic pub /open_manipulator_x/option std_msgs/msg/String "data: print_open_manipulator_x_setting"
 ```
 
-<**Manipulator Description**> will be printed on Terminal. 
+<**Manipulator Description**> will be printed on a terminal. 
 Launch the open_manipulator_controller. It is shown that present states of the OpenMANIPULATOR-X.  
 This parameter is descripted on open_manipulator_x.cpp in open_manipulator_x_libs package.  
 `~/robotis_ws/src/open_manipulator_x/open_manipulator_x_libs/src/open_manipulator_x.cpp`
@@ -412,8 +409,8 @@ $ ros2 launch open_manipulator_x_description open_manipulator_x_rviz2.launch.py
 
 {% capture notice_01 %}
 **NOTE**:
-- If you launched the [OpenMANIPULATOR-X controller](/docs/en/platform/ros2_openmanipulator_x/ros_controller_package/#launch-controller) before launching the open_manipulator_controller file, the robot model on RViz would be synchronized with the actual robot.
-- If users would like to check only model of OpenMANIPULATOR-X without control the actual OpenMANIPULATOR, the user can launch the RViz without the OpenMANIPULATOR-X controller.
+- If you launched the [OpenMANIPULATOR-X controller](/docs/en/platform/openmanipulator_x/ros2_controller_package/#launch-controller) before launching the open_manipulator_controller file, the robot model on RViz would be synchronized with the actual robot.
+- If you would like to check only model of OpenMANIPULATOR-X without control the actual OpenMANIPULATOR, the user can launch the RViz without the OpenMANIPULATOR-X controller.
 The user can change each joint by GUI, if the user launch only RViz by executing the following command :
 `$ ros2 launch open_manipulator_x_description open_manipulator_x_rviz.launch.py use_gui:=true`
 
@@ -424,6 +421,10 @@ The user can change each joint by GUI, if the user launch only RViz by executing
 
 ## [Message List](#message-list)
 
+`Message List` for `ROS2 Dashing Diademata` will be released soon!
+{: .notice}
+
+<!--
 {% capture notice_01 %}
 **NOTE**:
 - This instruction has been tested on `Ubuntu 18.04` and `ROS2 Dashing Diademata`.
@@ -474,15 +475,15 @@ A list of topics that the open_manipulator_controller publishes.
 
 `/open_manipulator/joint_states`([sensor_msgs/msg/JointState]{: .popup}) is a message indicating the states of joints of OpenMANIPULATOR-X. **"name"** indicates joint component names.  **"effort"** shows currents of the joint DYNAMIXEL. **"position"** and **"velocity"** indicates angles and angular velocities of joints.
 
- <!-- <img src="/assets/images/platform/openmanipulator_x/rqt_joint_states.png" width="1000"> -->
+ <img src="/assets/images/platform/openmanipulator_x/rqt_joint_states.png" width="1000"> 
 
 `/open_manipulator/gripper/kinematics_pose`([open_manipulator_msgs/msg/KinematicsPose]{: .popup}) is a message indicating pose (position and orientation) in [task space]{: .popup}. **"position"** indicates the x, y and z values of the center of the end-effector (tool). **"Orientation"** indicates the direction of the end-effector (tool) as quaternion.
 
- <!-- <img src="/assets/images/platform/openmanipulator_x/rqt_kinematic_pose.png" width="1000"> -->
+ <img src="/assets/images/platform/openmanipulator_x/rqt_kinematic_pose.png" width="1000"> 
 
 `/open_manipulator/states`([open_manipulator_msgs/msg/OpenManipulatorState]{: .popup}) is a message indicating the status of OpenMANIPULATOR. **"open_manipulator_actuator_state"** indicates whether actuators (DYNAMIXEL) are enabled ("ACTUATOR_ENABLE") or disabled ("ACTUATOR_DISABLE"). **"open_manipulator_moving_state"** indicates whether OpenMANIPULATOR-X is moving along the trajectory ("IS_MOVING") or stopped ("STOPPED").
 
- <!-- <img src="/assets/images/platform/openmanipulator_x/rqt_states.png" width="1000"> -->
+ <img src="/assets/images/platform/openmanipulator_x/rqt_states.png" width="1000"> 
 
 `/open_manipulator/*joint_name*_position/command`([std_msgs/msg/Float64]{: .popup}) are the messages to publish goal position of each joint to gazebo simulation node. `*joint_name*` shows the name of each joint. The messages will only be published if you run the controller package with the `use_platform` parameter set to `false`.
 
@@ -502,7 +503,7 @@ A list of topics that the open_manipulator_controller subscribes.
 
 `/open_manipulator/option`([std_msgs/msg/String]{: .popup}) is used to set OpenMANIPULATOR-X options. **"print_open_manipulator_setting"** : is to request the open_manipulator_controller to display "Manipulator Description".
 
- <!-- <img src="/assets/images/platform/openmanipulator_x/rqt_option.png" width="1000"> -->
+  <img src="/assets/images/platform/openmanipulator_x/rqt_option.png" width="1000"> 
 
 `/open_manipulator/option`([moveit_msgs/msg/DisplayTrajectory]{: .popup}) is used to subscribe a planned joint trajectory published from moveit!
 
@@ -580,6 +581,8 @@ This service is used when using moveit! The user can use this service to create 
 
 - `/moveit/set_kinematics_pose` ([open_manipulator_msgs/srv/SetKinematicsPose]{: .popup})  
 This service is used when using moveit! The user can use this service to create a trajectory in the [task space]{: .popup} by move_group. The user inputs the kinematics pose of the OpenMANIPULATOR-X end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
+
+-->
 
 [open_manipulator_msgs/GetJointPosition]: /docs/en/popup/open_manipulator_msgs_GetJointPosition/
 [open_manipulator_msgs/GetKinematicsPose]: /docs/en/popup/open_manipulator_msgs_GetKinematicsPose/

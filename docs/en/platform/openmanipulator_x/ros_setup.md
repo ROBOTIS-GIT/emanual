@@ -24,8 +24,7 @@ page_number: 5
 {: .notice--warning}
 
 ## [Install Ubuntu on PC](#install-ubuntu-on-pc)
-
-Download and install `Ubuntu 16.04` on your PC. Tutoral guide will be helpful for you.
+Download and install `Ubuntu 16.04` on your PC. Tutoral guide will be helpful for you to install Ubuntu Desktop.
 
 - [Download Ubuntu](https://www.ubuntu.com/download/alternative-downloads)
 - [Tutorial - Install Ubuntu Desktop](https://www.ubuntu.com/download/desktop/install-ubuntu-desktop)
@@ -49,7 +48,7 @@ If you prefer manual installation, please follow the link below.
 - [Manual installation of ROS Kinetic](http://wiki.ros.org/kinetic/Installation/Ubuntu)
 
 ## [Install ROS Packages](#install-ros-packages)
-Install dependent packages for \[ROS] OpenMANIPULATOR-X. Run the following commands in a terminal window.
+Install dependent packages for OpenMANIPULATOR-X. Run the following commands in a terminal window.
 
 **NOTE**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`+`Alt`+`t`.
 {: .notice--info}
@@ -70,8 +69,6 @@ $ git clone https://github.com/ROBOTIS-GIT/robotis_manipulator.git
 $ cd ~/catkin_ws && catkin_make
 ```
 
-If the catkin_make command has been completed without any errors, all the preparations for using \[ROS] OpenMANIPULATOR-X are done.
-
 ## [Communication Converter](#communication-converter)
 
 ### [U2D2](#u2d2)
@@ -81,11 +78,11 @@ Connect micro USB (connected to PC), DYNAMIXEL's(OpenMANIPULATOR-X), and 12V Pow
 
 <img src="/assets/images/platform/openmanipulator_x/OpenManipulator_u2d2_setup2.png" width="800">
 
-**NOTE** : Please refer to [U2D2 e-manual](/docs/en/parts/interface/u2d2/) and [U2D2 power hub board e-manual](/docs/en/parts/interface/u2d2_power_hub/) for detailed connection of U2D2 and U2D2 power hub board.
+**NOTE** : Please refer to [U2D2 e-Manual](/docs/en/parts/interface/u2d2/) and [U2D2 power hub board e-manual](/docs/en/parts/interface/u2d2_power_hub/) for detailed connection of U2D2 and U2D2 power hub board.
 {: .notice--info}
 
 #### USB Latency Timer Setting
-In linux(ubuntu) environment, USB latency time is set to 16ms by default. Follow the steps below to set the communication latency time to the lowest value (1ms) between DYNAMIXEL's and PC connected via USB.
+In Linux(Ubuntu platform) environment, USB latency time is set to 16ms by default. Follow the steps below to set the communication latency time to the lowest value (1ms) between DYNAMIXEL's and PC connected via USB.
 
 Open a terminal window and run the roscore.
 
@@ -113,7 +110,7 @@ Connect micro USB (connected to PC), Dynamixel's(OpenMANIPULATOR-X), and 12V Pow
 
 <img src="/assets/images/platform/openmanipulator_x/OpenManipulator_opencr_setup2.png" width="800">
 
-**NOTE** : Please refer the detailed description of [OpenCR](http://emanual.robotis.com/docs/en/parts/controller/opencr10/).
+**NOTE** : Please refer to the detailed description of [OpenCR](http://emanual.robotis.com/docs/en/parts/controller/opencr10/).
 {: .notice--info}
 
 #### Upload Source code

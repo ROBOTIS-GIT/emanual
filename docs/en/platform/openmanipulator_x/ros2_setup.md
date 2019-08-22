@@ -17,17 +17,15 @@ page_number: 10
 
 # [[ROS2] Setup](#ros-setup)
 
-**NOTE** : 
-- The following instruction has been tested on `Ubuntu 18.04` and `ROS2 Dashing Diademata`.
+**NOTE** : The following instruction has been tested on `Ubuntu 18.04` and `ROS2 Dashing Diademata`.
 {: .notice--info}
 
 **WARNING** : If you would like to control OpenMANIPULATOR-X on OpenCR (Embedded board) instead of using ROS, please set it up as described in [OpenCR Setup](/docs/en/platform/ros2_openmanipulator_x/opencr_setup/#opencr-setup).
 {: .notice--warning}
 
-
 ## [Install Ubuntu on PC](#install-ubuntu-on-pc)
 
-Download and install `Ubuntu 18.04` on your PC. Tutoral guide will be helpful for you.
+Download and install `Ubuntu 18.04` on your PC. Tutoral guide will be helpful for you to install Ubuntu Desktop.
 
 - [Download Ubuntu](https://www.ubuntu.com/download/alternative-downloads)
 
@@ -82,11 +80,11 @@ Connect micro USB (connected to PC), DYNAMIXEL's(OpenMANIPULATOR-X), and 12V Pow
 
 <img src="/assets/images/platform/openmanipulator_x/OpenManipulator_u2d2_setup2.png" width="800">
 
-**NOTE** : Please refer to [U2D2 e-manual](/docs/en/parts/interface/u2d2/) and [U2D2 power hub board e-manual](/docs/en/parts/interface/u2d2_power_hub/) for detailed connection of U2D2 and U2D2 power hub board.
+**NOTE** : Please refer to [U2D2 e-Manual](/docs/en/parts/interface/u2d2/) and [U2D2 power hub board e-manual](/docs/en/parts/interface/u2d2_power_hub/) for detailed connection of U2D2 and U2D2 power hub board.
 {: .notice--info}
 
-#### USE Latency Timer Setting
-In linux(ubuntu) environment, USB latency time is set to 16ms by default. Follow the steps below to set the communication latency time to the lowest value (1ms) between DYNAMIXEL's and PC connected via USB.
+#### USB Latency Timer Setting
+In Linux(Ubuntu platform) environment, USB latency time is set to 16ms by default. Follow the steps below to set the communication latency time to the lowest value (1ms) between DYNAMIXEL's and PC connected via USB.
 
 Open a terminal window and run the following command to set usb latency time.
 
@@ -108,7 +106,7 @@ Connect micro USB (connected to PC), Dynamixel's(OpenMANIPULATOR-X), and 12V Pow
 
 <img src="/assets/images/platform/openmanipulator_x/OpenManipulator_opencr_setup2.png" width="800">
 
-**NOTE** : Please refer the detailed description of [OpenCR](http://emanual.robotis.com/docs/en/parts/controller/opencr10/).
+**NOTE** : Please refer to the detailed description of [OpenCR](http://emanual.robotis.com/docs/en/parts/controller/opencr10/).
 {: .notice--info}
 
 #### Upload Source code

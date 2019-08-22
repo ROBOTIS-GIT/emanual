@@ -17,14 +17,14 @@ page_number: 6
 
 # [[ROS] Controller Package](#ros-controller-package)
 
-The OpenMANIPULATOR-X controller provides basic manipulation of OpenMANIPULATOR-X. You can control DYNAMIXEL's of OpenMANIPULATOR-X and check states of OpenMANIPULATOR-X through [messages](/docs/en/platform/openmanipulator_x/ros_controller_package/#message-list) of the controller.
+OpenMANIPULATOR-X controller provides basic manipulation of OpenMANIPULATOR-X. You can control DYNAMIXEL's of OpenMANIPULATOR-X and check states of OpenMANIPULATOR-X through [messages](/docs/en/platform/openmanipulator_x/ros_controller_package/#message-list) of the controller.
 
 **NOTE**: This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 {: .notice--info}
 
 ## [Launch Controller](#launch-controller)
 
-Before launching the controller, Please check `open_manipulator_controller` launch file in `open_manipulator_controller` package.
+Before launching the controller, please check `open_manipulator_controller` launch file in `open_manipulator_controller` package.
 
   ```
   <launch>
@@ -78,7 +78,7 @@ Before launching the controller, Please check `open_manipulator_controller` laun
 
 After setting the parameters, launch the OpenMANIPULATOR-X controller to start [[ROS] Operation](/docs/en/platform/openmanipulator_x/ros_operation/#ros-operation).
 
-Please, open Terminal then run roscore along with following command.
+Please, open a terminal then run roscore along with a following command.
 
 ``` bash
 $ roscore
@@ -456,8 +456,8 @@ $ roslaunch open_manipulator_description open_manipulator_rviz.launch
 
 {% capture notice_01 %}
 **NOTE**:
-- If you launched the [[ROS]OpenMANIPULATOR-X controller](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) before launching the open_manipulator_controller file, the robot model on RViz would be synchronized with the actual robot.
-- If you would like to check only model of [ROS] OpenMANIPULATOR-X without controling the actual OpenMANIPULATOR, you can launch the RViz without the OpenMANIPULATOR-X controller.
+- If you launched the [OpenMANIPULATOR-X controller](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) before launching the open_manipulator_controller file, the robot model on RViz would be synchronized with the actual robot.
+- If you would like to check only model of OpenMANIPULATOR-X without controling the actual OpenMANIPULATOR, you can launch the RViz without the OpenMANIPULATOR-X controller.
 You can change each joint by GUI, if the user launch only RViz by executing the following command :
 `$ roslaunch open_manipulator_description open_manipulator_rviz.launch use_gui:=true`
 
