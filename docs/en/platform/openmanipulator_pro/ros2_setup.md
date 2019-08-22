@@ -27,7 +27,6 @@ page_number: 9
 Download and install `Ubuntu 18.04` on your PC. Tutoral guide will be helpful for you.
 
 - [Download Ubuntu](https://www.ubuntu.com/download/alternative-downloads)
-
 - [Tutorial - Install Ubuntu Desktop](https://www.ubuntu.com/download/desktop/install-ubuntu-desktop)
 
 ## [Install ROS2 on PC](#install-ros2-on-pc)

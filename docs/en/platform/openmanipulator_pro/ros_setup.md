@@ -28,19 +28,16 @@ page_number: 4
 
 Download and install `Ubuntu 16.04` or `Ubuntu 18.04` on your a PC.
 
-- [Download link](https://www.ubuntu.com/download/alternative-downloads)
-
-If you need more help with installing Ubuntu, check out the step-by-step guide from the link below.
-
-- [Install ubuntu desktop](https://www.ubuntu.com/download/desktop/install-ubuntu-desktop)
+- [Download Ubuntu](https://www.ubuntu.com/download/alternative-downloads)
+- [Tutorial - Install Ubuntu Desktop](https://www.ubuntu.com/download/desktop/install-ubuntu-desktop)
 
 ## [Install ROS on PC](#install-ros-on-pc)
 
 ![](/assets/images/platform/openmanipulator_pro/logo_ros.png)
 
-The following script will allow you to simplify the ROS installation procedure. Run the following commands in a terminal window. The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. The shortcut key to open a terminal is `Ctrl`+`Alt`+`t`. After installing ROS, please reboot PC.
+The following script will allow you to simplify the ROS installation procedure. Run the following commands in a terminal window. The terminal application can be found with the Ubuntu search icon on the left side of the corner on a screen. The shortcut key to open a terminal is `Ctrl`+`Alt`+`t`. After installing ROS, please reboot PC.
 
-**WARNING** : Install either of `ROS Kinetic Kame` or `ROS Melodic Morenia` on your PC. 
+**WARNING** : Install either `ROS Kinetic Kame` or `ROS Melodic Morenia` on your PC. 
 {: .notice--warning}
 
 ### [ROS Kinetic Kame](#ros-kinetic-kame)

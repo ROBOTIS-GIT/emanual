@@ -17,7 +17,7 @@ page_number: 10
 
 # [[ROS2] Controller Package](#ros-controller-package)
 
-The OpenMANIPULATOR-PRO controller provides basic manipulation of OpenMANIPULATOR-PRO. You can control DYNAMIXEL's of OpenMANIPULATOR-PRO and check states of OpenMANIPULATOR-PRO through [messages](/docs/en/platform/ros2_openmanipulator_pro/ros_controller_package/#message-list) of the controller.  
+OpenMANIPULATOR-PRO controller provides basic manipulation of OpenMANIPULATOR-PRO. You can control DYNAMIXEL's of OpenMANIPULATOR-PRO and check states of OpenMANIPULATOR-PRO through [messages](/docs/en/platform/ros2_openmanipulator_pro/ros_controller_package/#message-list) of the controller.  
 
 {% capture notice_01 %}
 **NOTE** :  
@@ -96,7 +96,6 @@ $ ros2 run open_manipulator_pro_controller open_manipulator_pro_controller
 <img src="/assets/images/platform/openmanipulator_pro/open_manipulator_start_pose.png" width="250">
 <!-- ![](/assets/images/platform/openmanipulator_x/open_manipulator_start_pose.png) -->
 {: .notice--warning}
-
 
 Follwing message will be shown in the Terminal after the process done successfully.  
 
