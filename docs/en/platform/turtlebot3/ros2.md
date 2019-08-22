@@ -96,50 +96,52 @@ $ source ~/.bashrc
 
 {% capture notice_02 %}
 **NOTE**:
-Documents below will be helpful for you to fix the problem of any build errors or warnings from dependencies files.
-- [Related document for Cartographer](https://google-cartographer.readthedocs.io/en/latest/)
-- [Related document for Cartographer_ros](https://google-cartographer-ros.readthedocs.io/en/latest/)
-- [Related document for Navigation2](https://github.com/ros-planning/navigation2/blob/master/README.md)
+Related documents will be helpful for you to fix the problem of any build errors or warnings from dependencies files.  
+**ROS related documents** :  
+- [Cartographer](https://google-cartographer.readthedocs.io/en/latest/)
+- [Cartographer_ros](https://google-cartographer-ros.readthedocs.io/en/latest/)
+- [Navigation2](https://github.com/ros-planning/navigation2/blob/master/README.md)
 {% endcapture %}
 <div class="notice--info">{{ notice_02 | markdownify }}</div>
 
 ### [SBC setup](#sbc-setup)
 
-#### Download and Install Ubuntu Image
+#### Download and Install Ubuntu Image File
 
-**WARNING** : Do not proceed to this instruction with SBC in TurtleBot3. Please follow steps with **Remote PC**.
+**WARNING** : Do not proceed to this instruction on SBC in TurtleBot3. Please follow steps with **Remote PC**.
 {: .notice--warning}
 
 1. Go on [Ubuntu releases](http://cdimage.ubuntu.com/ubuntu/releases/bionic/release) to download an image file.
-1. Download `Raspberry Pi 3 (64-bit ARM) preinstalled server image` on **remote PC**
-1. Burn the image file to a microSD card.
+2. Download `Raspberry Pi 3 (64-bit ARM) preinstalled server image` on **remote PC**
+3. Burn the image file to a microSD card.
 
 **TIP** : You can use `GNOME Disks` to burn `Ubuntu Server 18.04 image` to microSD.
 {: .notice}
 
 #### Initialization Process for Raspberry Pi 3
 
-**WARNING** : Do not proceed to this instruction with **remote PC**. Please follow steps with **SBC in TurtleBot3**.
+**WARNING** : Do not proceed to this instruction on **remote PC**. Please follow steps with **SBC in TurtleBot3**.
 {: .notice--warning}
 
-To communicate between **remote PC** and **TurtleBot3**, please install Ubuntu on Raspberry Pi 3.
-1. Boot up Raspberry Pi 3 after insert a microSD card into a microSD card slot on SBC in TurtleBot3.
-  (You can connect HDMI cable, keyboard and mouse into the robot)
-1. Log in with default username(`ubuntu`) and password(`ubuntu`).
+To communicate between **remote PC** and **TurtleBot3**, install `Ubuntu Server 18.04 image` file on Raspberry Pi 3.
+1. Boot up Raspberry Pi 3 after insert a microSD card which has the image file into a microSD card slot on SBC in TurtleBot3.  
+  (You can connect HDMI cable, keyboard and mouse into the TurtleBot3)
+2. Log in with default username(`ubuntu`) and password(`ubuntu`).  
   (After log in, system will ask you whether you change the password or not)
-1. You can configure WiFi network setting by utilizing a [netplan](https://netplan.io/). Refer to [Example for Netwrok Configuration](#example-for-network-configuration) below
+3. You can configure WiFi network setting by utilizing a [netplan](https://netplan.io/). Refer to [Example for Netwrok Configuration](#example-for-network-configuration).
 
-**NOTE** : The TurtleBot3 is a mobile robot to run [SLAM](/docs/en/platform/turtlebot3/slam/#slam) and [Navigation](/docs/en/platform/turtlebot3/navigation/#navigation) using wireless network, so that connecting TurtleBot3 to WIFI is recommanded.
+**NOTE** : TurtleBot3 is a mobile robot to run [SLAM](/docs/en/platform/turtlebot3/slam/#slam) and [Navigation](/docs/en/platform/turtlebot3/navigation/#navigation) using wireless network, so that connecting TurtleBot3 to WIFI is recommanded.
 {: .notice}
 
 #### Example for Network Configuration
+
 
 1. Create a folder, and then open it with the following commands.
   ```bash
   $ sudo touch /etc/netplan/01-netcfg.yaml
   $ sudo nano /etc/netplan/01-netcfg.yaml
   ```
-1. After opening the file, configure a network setting. Refer to the network setting below.
+2. After opening the file, configure a network setting. Refer to the network setting below.
 ```yaml
 network:
     version: 2
@@ -158,26 +160,63 @@ network:
             password: "your-wifi-password"
 ```
 
-1. After Configuration, remote PC can connect to a SBC in TurtleBot3 by following steps.
+3. After Configuration, remote PC can connect to a SBC in TurtleBot3 by following steps.
 
-1. Apply all configuration for the renderers, and then restart Raspberry Pi 3.
+4. Apply all configuration for the renderers, and then restart Raspberry Pi 3.
 ```bash
 $ sudo netplan apply
 ```
 
-1. Set the systemed to prevent boot-up delay even if there is no network at startup. Run a command below to set mask the systemd process using the following command.
+5. Set the systemed to prevent boot-up delay even if there is no network at startup. Run a command below to set mask the systemd process using the following command.
 ```bash
 $ systemctl mask systemd-networkd-wait-online.service
 ```
 
-1. From now, you can use SSH. If you want remote PC to connect to SBC and to install ROS and TurtleBot3 software, run a command below.
+6. From now, you can use SSH. If you want remote PC to connect to SBC and to install ROS and TurtleBot3 software, run a command below.
 ```bash
 $ ssh ubuntu@<NETWORK IP of Raspberry PI>
 ```
 
+#### Add swap space
+
+1. Create a file while it will be used for swap
+```bash
+$ sudo fallocate -l 1G /swapfile
+```
+
+2. Give `read` and `write` permissions to the file
+```bash
+$ sudo chmod 600 /swapfile
+```
+
+3. Use `mkswap` to set up a Linux swap area. 
+```bash
+$ sudo mkswap /swapfile
+```
+
+4. After creating a file, activate the file to start using it. 
+```bash
+$ sudo swapon /swapfile
+```
+
+5. Open `/etc/fstab` file with `nano` command, as swap areas are listed in `/etc/fastab`.
+```bash
+$ sudo nano /etc/fstab
+```
+
+6. Copy a sentence below, then paste it the file you opened.
+```
+/swapfile swap swap defaults 0 0
+```
+
+7. Verify swap area with `free` syntax whether it is allocated. It will present a table consisting of six colums and three rows of data. 
+```bash
+$ sudo free -h
+```
+
 #### Intall ROS 2 Dashing Diademata
 
-**WARNING** : Do not proceed to this instruction with **remote PC**. Please follow steps with **SBC in TurtleBot3**.
+**WARNING** : Do not proceed to this instruction on **remote PC**. Please follow steps with **SBC in TurtleBot3**.
 {: .notice--warning}
 
 As TurtleBot3 operates on Robot Operating System(ROS), it requies to intall `ROS 2 Dashing Diademata` on Ubuntu platform installed in **PC (Raspberry Pi 3) of TurtleBot3**. Following link will guide you for installing ROS 2.
@@ -208,7 +247,7 @@ $ sudo apt install ros-dashing-ros-base
 
 #### Install TurtleBot3 Packages
 
-**WARNING** : Do not proceed to this instruction with remote PC. Please follow steps with **SBC in TurtleBot3**.
+**WARNING** : Do not proceed to this instruction on remote PC. Please follow steps with **SBC in TurtleBot3**.
 {: .notice--warning}
 
 ```bash
@@ -227,29 +266,41 @@ $ colcon build --symlink-install --parallel-workers 1
 
 #### Environment Setup
 
-In DDS communication, `ROS_DOMAIN_ID` must be matched between **remote PC** and **TurtleBot3** for wireless communication under same network environment.  Following commands shows how to assign a `ROS_DOMAIN_ID` to remote PC.
-- A default ID of **remote PC** is set as `0`, but **TurtleBot3** is set as `30`.
-- To configure the `ROS_DOMAIN_ID` of Remote PC to `30` is recommendable.
+##### Domain ID Allocation
+In DDS communication, `ROS_DOMAIN_ID` must be matched between **remote PC** and **TurtleBot3** for wireless communication under the same network environment. Following commands shows how to assign a `ROS_DOMAIN_ID` to SBC in TurtleBot3.
+- A default ID of **TurtleBot3** is set as `0`.  
+- To configure the `ROS_DOMAIN_ID` of Remote PC and SBC in TurtleBot3 to `30` is recommendable.  
 
 ```bash
 $ echo 'source ~/turtlebot3_ws/install/setup.bash' >> ~/.bashrc
 $ echo 'export ROS_DOMAIN_ID=30 #TURTLEBOT3' >> ~/.bashrc
 $ source ~/.bashrc
 ```
-**WARNING** : Do not **OVERLAP** any IDs between you and other users. It will cause a conflict of communication under same network environment.
+**WARNING** : Do not **OVERLAP** any IDs between you and other users. It will cause a conflict of communication between users under the same network environment.
 {: .notice--warning}
 
+##### OpenCR Port Set up
+
+Following commands show how to assign OpenCR port authorization to TurtleBot3.
+```bash
+$ cd ~/turtlebot3_ws/src/turtlebot3/turtlebot3/turtlebot3_bringup 
+$ sudo cp ./99-turtlebot3-cdc.rules /etc/udev/rules.d/ 
+$ sudo udevadm control --reload-rules 
+$ sudo udevadm trigger
+```
 
 #### [References](#references)
+
 [https://wiki.ubuntu.com/ARM/RaspberryPi](https://wiki.ubuntu.com/ARM/RaspberryPi)  
 [https://discourse.ros.org/t/setting-up-the-turtlebot3-with-ros2-on-ubuntu-server-iot-18-04/10090](https://discourse.ros.org/t/setting-up-the-turtlebot3-with-ros2-on-ubuntu-server-iot-18-04/10090)  
 [https://netplan.io](https://netplan.io)  
 [https://index.ros.org/doc/ros2/Installation/Dashing/Linux-Install-Debians/](https://index.ros.org/doc/ros2/Installation/Dashing/Linux-Install-Debians/)  
 [https://index.ros.org/doc/ros2/Tutorials/Colcon-Tutorial/](https://index.ros.org/doc/ros2/Tutorials/Colcon-Tutorial/)  
+[https://linuxize.com/post/how-to-add-swap-space-on-ubuntu-18-04/](https://linuxize.com/post/how-to-add-swap-space-on-ubuntu-18-04/)
 
 ### [OpenCR setup](#opencr-setup)
 
-**WARNING** : Do not proceed to this instruction with remote PC. Please follow steps with **PC (Raspberry Pi 3) in TurtleBot3**.
+**WARNING** : Do not proceed to this instruction on remote PC. Please follow steps with **PC (Raspberry Pi 3) in TurtleBot3**.
 {: .notice--warning}
 
 #### Install dependencies to run 32bit executables.
@@ -300,13 +351,13 @@ Reset OpenCR using RESET button.
 
 ![](/assets/images/parts/controller/opencr10/bootloader_19.png)
 
-After seconds, you can hear a sound
+After few seconds, particular sound will be played. 
 
 ## [Bringup](#bringup)
 
 ### Bringup TurtleBot3
 
-**WARNING** : Do not proceed to this instruction with SBC in TurtleBot3. Please follow steps with **Remote PC**.
+**WARNING** : Do not proceed to this instruction on SBC in TurtleBot3. Please follow steps with **Remote PC**.
 {: .notice--warning}
 
 1. Launch a model of your TurtleBot3 including node of robot_state_publisher and turtlebot3_node.
@@ -454,11 +505,11 @@ $ ros2 run turtlebot3_teleop teleop_keyboard
     ```
 
 ## [Cartographer](#cartographer)
+**Cartographe related documents** :
+- [Cartographer](https://google-cartographer.readthedocs.io/en/latest/)
+- [Cartographer_ros](https://google-cartographer-ros.readthedocs.io/en/latest/)
 
-- [Related document for Cartographer](https://google-cartographer.readthedocs.io/en/latest/)
-- [Related document for Cartographer_ros](https://google-cartographer-ros.readthedocs.io/en/latest/)
-
-**WARNING** : Do not proceed to this instruction with SBC in TurtleBot3. Please follow steps with **Remote PC**.
+**WARNING** : Do not proceed to this instruction on SBC in TurtleBot3. Please follow steps with **Remote PC**.
 {: .notice--warning}
 
 **SLAM (Simultaneous Localization And Mapping)** is a technique to draw a map by estimating current location in an arbitrary space. The SLAM is a well-known feature of TurtleBot from its predecessors. The video here shows you how accurately TurtleBot3 can draw a map with its compact and affordable platform.
@@ -480,7 +531,8 @@ $ ros2 run nav2_map_server map_saver -f ~/map
 
 **Navigation** enables a robot to move from the current pose to the designated goal pose on the map by using the map, robot’s encoder, IMU sensor, and distance sensor. The procedure for performing this task is as follows.
 
-- [Related document for Navigation2](https://github.com/ros-planning/navigation2/blob/master/README.md)
+**Naviagation2 related document** :  
+- [Naviagation2](https://github.com/ros-planning/navigation2/blob/master/README.md)
 
 ### [Run Navigation2 Nodes](#run-navigation-nodes)
 
@@ -501,7 +553,7 @@ $ ros2 launch turtlebot3_navigation2 navigation2.launch.py map:=$HOME/map.yaml
 
 ## [Simulation](#simulation)
 
-**WARNING** : Do not proceed to this instruction with SBC in TurtleBot3. Please follow steps with **Remote PC**.
+**WARNING** : Do not proceed to this instruction on SBC in TurtleBot3. Please follow steps with **Remote PC**.
 {: .notice--warning}
 
 1. Add GAZEBO_MODEL_PATH.
