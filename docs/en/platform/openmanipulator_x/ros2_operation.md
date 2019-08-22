@@ -45,7 +45,7 @@ page_number: 12
   ``` bash
   $ ros2 run open_manipulator_x_teleop open_manipulator_x_teleop_keyboard
   ```
-  If the node is successfully launched, the following instruction will appeare in the terminal window.
+  If the node is successfully launched, the following instruction will appear in the terminal window.
 
   ```
   ---------------------------
@@ -105,7 +105,7 @@ $ ros2 run open_manipulator_x_teleop open_manipulator_x_teleop_joystick
 
 Install packages for teleoperation using XBOX 360 joystick.
 
-Connect XBOX 360 joystick to the PC with Wireless Adapter or USB cable, and launch teleoperation packages for XBOX 360 joystick.
+Connect XBOX 360 joystick to the PC with wireless adapter or USB cable, and launch teleoperation packages for XBOX 360 joystick.
 
 ``` bash
 *$ ros2 run joy joy_node

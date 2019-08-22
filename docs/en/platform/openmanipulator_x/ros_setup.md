@@ -23,16 +23,12 @@ page_number: 5
 **WARNING** : If you would like to control OpenMANIPULATOR-X on OpenCR (Embedded board) instead of using ROS, please set it up as described in [OpenCR Setup](/docs/en/platform/openmanipulator_x/opencr_setup/#opencr-setup).
 {: .notice--warning}
 
-
 ## [Install Ubuntu on PC](#install-ubuntu-on-pc)
 
-Download and install `Ubuntu 16.04` on your PC.
+Download and install `Ubuntu 16.04` on your PC. Tutoral guide will be helpful for you.
 
-- [Download link](https://www.ubuntu.com/download/alternative-downloads)
-
-If you need more help with installing Ubuntu, check out the step-by-step guide from the link below.
-
-- [Install ubuntu desktop](https://www.ubuntu.com/download/desktop/install-ubuntu-desktop)
+- [Download Ubuntu](https://www.ubuntu.com/download/alternative-downloads)
+- [Tutorial - Install Ubuntu Desktop](https://www.ubuntu.com/download/desktop/install-ubuntu-desktop)
 
 ## [Install ROS on PC](#install-ros-on-pc)
 

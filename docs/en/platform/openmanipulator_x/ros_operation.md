@@ -25,29 +25,29 @@ page_number: 7
 **NOTE**:
 - This instructions has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - This instructions are supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
-- Make sure to run the [[ROS] OpenMANIPULATOR-X controller](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) instructions before running the instruction below.
+- Make sure to run the [OpenMANIPULATOR-X controller](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) instructions before running the instruction below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-  You can use the GUI program to manipulate OpenMANIPULATOR-X. Launch `open_manipulator_control_gui` node.  This program shows the status of and allows users to control OpenMANIPULATOR-X.
+You can use the GUI program to manipulate OpenMANIPULATOR-X. Launch `open_manipulator_control_gui` node.  This program shows the status of and allows users to control OpenMANIPULATOR-X.
 
-  ``` bash
-  $ roslaunch open_manipulator_control_gui open_manipulator_control_gui.launch
-  ```
-  To control OpenMANIPULATOR-X, first click the `Timer Start` button.  
-  ![](/assets/images/platform/openmanipulator_x/OpenManipulator_GUI.png)  
+``` bash
+$ roslaunch open_manipulator_control_gui open_manipulator_control_gui.launch
+```
+To control OpenMANIPULATOR-X, first click the `Timer Start` button.  
+![](/assets/images/platform/openmanipulator_x/OpenManipulator_GUI.png)  
 
-  Check the status of the OpenMANIPULATOR-X (joint states, kinematics pose).  
-  ![](/assets/images/platform/openmanipulator_x/OpenManipulator_GUI2.png)  
+Check the status of OpenMANIPULATOR-X (joint states, kinematics pose).  
+![](/assets/images/platform/openmanipulator_x/OpenManipulator_GUI2.png)  
 
-  To manipulate the OpenMANIPULATOR-X in the [joint space]{: .popup}. Enter the joint angles and total time of the trajectory. Then click the `send` button.  
-  ![](/assets/images/platform/openmanipulator_x/OpenManipulator_GUI3.png)  
+To manipulate OpenMANIPULATOR-X in the [joint space]{: .popup}. Enter the joint angles and total time of the trajectory. Then click the `send` button.  
+![](/assets/images/platform/openmanipulator_x/OpenManipulator_GUI3.png)  
 
-  To manipulate the OpenMANIPULATOR-X in the [task space]{: .popup}. Enter the kinematics pose of the OpenMANIPULATOR-X end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory. Then click the `send` button.  
-  ![](/assets/images/platform/openmanipulator_x/OpenManipulator_GUI4.png)  
+To manipulate OpenMANIPULATOR-X in the [task space]{: .popup}. Enter the kinematics pose of the OpenMANIPULATOR-X end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory. Then click the `send` button.  
+![](/assets/images/platform/openmanipulator_x/OpenManipulator_GUI4.png)  
 
-  To create a drawing trajectory with OpenMANIPULATOR-X. First, choose the drawing trajectory type(line, circle, rhombus, heart). And enter the parameters according to the drawing trajectory type and the total time of the drawing trajectory. Then click the `send` button.  
-  ![](/assets/images/platform/openmanipulator_x/OpenManipulator_GUI5.png)  
+To create a drawing trajectory with OpenMANIPULATOR-X. First, choose the drawing trajectory type(line, circle, rhombus, heart). And enter the parameters according to the drawing trajectory type and the total time of the drawing trajectory. Then click the `send` button.  
+![](/assets/images/platform/openmanipulator_x/OpenManipulator_GUI5.png)  
 
 ## [Teleoperation](#teleoperation)
 {% capture notice_01 %}
@@ -70,7 +70,7 @@ page_number: 7
   ``` bash
   $ roslaunch open_manipulator_teleop open_manipulator_teleop_keyboard.launch
   ```
-  If the node is successfully launched, the following instruction will appeare in the terminal window.
+  If the node is successfully launched, the following instruction will appear in the terminal window.
 
   ```
   ---------------------------
@@ -136,7 +136,7 @@ Install packages for teleoperation using XBOX 360 joystick.
 ``` bash
 $ sudo apt-get install xboxdrv ros-kinetic-joy ros-kinetic-joystick-drivers ros-kinetic-teleop-twist-joy
 ```
-Connect XBOX 360 joystick to the PC with Wireless Adapter or USB cable, and launch teleoperation packages for XBOX 360 joystick.
+Connect XBOX 360 joystick to the PC with wireless adapter or USB cable, and launch teleoperation packages for XBOX 360 joystick.
 
 ``` bash
 $ sudo xboxdrv --silent
@@ -201,7 +201,7 @@ After setting all the parameters, launch the open_manipulator_pro_controller.
   $ roslaunch open_manipulator_controller open_manipulator_controller.launch use_moveit:=true
   ```
 
-**WARNING** : When launching the controller to use MoveIt!, [[ROS] OpenMANIPULATOR-X launch file](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) must be turned off.  
+**WARNING** : When launching the controller to use MoveIt!, [OpenMANIPULATOR-X launch file](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) must be turned off.  
 {: .notice--warning}
 
 {% capture warning_01 %}
