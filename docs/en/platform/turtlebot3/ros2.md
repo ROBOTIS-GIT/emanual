@@ -489,7 +489,7 @@ $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ ros2 launch turtlebot3_navigation2 navigation2.launch.py map:=$HOME/map.yaml
 ```
 
-- Click `2D Pose Estimate` button in a menu bar, and then point and point exact pose of turtlebot3 on a map.
+- Click `2D Pose Estimate` button in a menu bar, and then point exact pose of turtlebot3 on a map.
 
 ![](/assets/images/platform/turtlebot3/ros2/tb3_navigation2_rviz_1.png)
 > 2D Pose Estimate
@@ -544,7 +544,7 @@ You should set some parameters to use simulation time.
 If you need futher information about it, go on [navigation2 repo](https://github.com/ros-planning/navigation2/tree/master/nav2_bringup)
 {: .notice--info}
 
-6.Lastly, export the model of TurtleBot3 and then, launch Navigation2 with following commands.
+6.Export the model of TurtleBot3, then launch Navigation2 with following commands.
 ```bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=True map:=$HOME/map.yaml
@@ -552,7 +552,7 @@ $ ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=True ma
 **NOTE**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `burger`, `waffle`, `waffle_pi`. If you want to permanently set the export settings, please refer to [Export TURTLEBOT3_MODEL][export_turtlebot3_model]{: .popup} page.
 {: .notice}
 
-- Click `2D Pose Estimate` button in a menu bar, and then point and point exact pose of turtlebot3 on a map.
+- Click `2D Pose Estimate` button in a menu bar, and then point exact pose of turtlebot3 on a map.
 - If TurtleBot3 is close to a costmap or nearby the map, click `Navigation2 Goal` button in a menu bar, and then point goal pose on the map.
 
 ![](/assets/images/platform/turtlebot3/ros2/gazebo_navigation2.png)
