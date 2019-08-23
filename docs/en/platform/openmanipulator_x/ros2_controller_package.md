@@ -21,8 +21,8 @@ OpenMANIPULATOR-X controller provides basic manipulation of OpenMANIPULATOR-X. Y
 
 {% capture notice_01 %}
 **NOTE**:
-- This instruction has been tested on `Ubuntu 18.04` and `ROS 2 Dashing Diademata`.
-- Make sure that ROS 2 Packages must be installed on your PC before following an instruction. - [Install ROS 2 Packages](/docs/en/platform/openmanipulator_x/ros2_setup/#install-ros-2-packages)
+- The test is done on `ROS 2 Dashing Diademata` installed in `Ubuntu 18.04`.
+- Make sure ROS dependencies are installed before performing these instructions. - [Install ROS 2 Packages](/docs/en/platform/openmanipulator_x/ros2_setup/#install-ros-2-packages)
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -74,8 +74,8 @@ Gripper Dynamixel ID : 15, Model Name :XM430-W350
 
 {% capture notice_01 %}
 **NOTE**:
-- This instruction has been tested on `Ubuntu 18.04` and `ROS 2 Dashing Diademata`.
-- Make sure that ROS 2 Packages must be installed on your PC before following an instruction. - [Install ROS 2 Packages](/docs/en/platform/openmanipulator_x/ros2_setup/#install-ros2-packages).
+- The test is done on `ROS 2 Dashing Diademata` installed in `Ubuntu 18.04`.
+- Make sure ROS dependencies are installed before performing these instructions. - [Install ROS 2 Packages](/docs/en/platform/openmanipulator_x/ros2_setup/#install-ros-2-packages)
 - Make sure to run the [OpenMANIPULATOR-X controller](/docs/en/platform/openmanipulator_x/ros2_controller_package/#launch-controller) instructions before running the instructions below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
@@ -369,8 +369,8 @@ This parameter is descripted on open_manipulator_x.cpp in open_manipulator_x_lib
 
 {% capture notice_01 %}
 **NOTE**:
-- This instruction has been tested on `Ubuntu 18.04` and `ROS 2 Dashing Diademata`.
-- Make sure that ROS 2 Packages must be installed on your PC before following an instruction. - [Install ROS 2 Packages](/docs/en/platform/openmanipulator_x/ros2_setup/#install-ros-2-packages)
+- The test is done on `ROS 2 Dashing Diademata` installed in `Ubuntu 18.04`.
+- Make sure ROS dependencies are installed before performing these instructions. - [Install ROS 2 Packages](/docs/en/platform/openmanipulator_x/ros2_setup/#install-ros-2-packages)
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 

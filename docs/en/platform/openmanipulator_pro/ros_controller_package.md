@@ -22,9 +22,9 @@ You can control each joint of OpenMANIPULATOR-PRO and check states of OpenMANIPU
 
 {% capture notice_01 %}
 **NOTE** :  
-- This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-- This instruction has been tested on `Ubuntu 18.04` and `ROS Melodic Morenia`.  
-- Make sure that ROS Packages must be installed on your PC before following an instruction. - [Install ROS Packages](/docs/en/platform/openmanipulator_pro/ros_setup/#install-ros-packages)
+- The test is done on `ROS Kinetic Kame` installed in `Ubuntu 16.04`.
+- The test is done on `ROS Melodic Morenia`installed in `Ubuntu 18.04`.
+- Make sure ROS dependencies are installed before performing these instructions - [Install ROS Packages](/docs/en/platform/openmanipulator_pro/ros_setup/#install-ros-packages)
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -151,9 +151,9 @@ if DYNAMIXEL aren't recoginized, please check firmware with ROBOTIS software ([R
 
 {% capture notice_01 %}
 **NOTE**:  
-- This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-- This instruction has been tested on `Ubuntu 18.04` and `ROS Melodic Morenia`.
-- Make sure that ROS Packages must be installed on your PC before following an instruction. - [Install ROS Packages](/docs/en/platform/openmanipulator_pro/ros_setup/#install-ros-packages) 
+- The test is done on `ROS Kinetic Kame` installed in `Ubuntu 16.04`.
+- The test is done on `ROS Melodic Morenia`installed in `Ubuntu 18.04`.
+- Make sure ROS dependencies are installed before performing these instructions - [Install ROS Packages](/docs/en/platform/openmanipulator_pro/ros_setup/#install-ros-packages)
 - Make sure to run the [OpenMANIPULATOR-PRO controller](/docs/en/platform/openmanipulator_pro/ros_controller_package/#launch-controller) instructions before running the instructions below.  
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
@@ -546,9 +546,9 @@ Active Joint
 
 {% capture notice_01 %}
 **NOTE**:  
-- This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-- This instruction has been tested on `Ubuntu 18.04` and `ROS Melodic Morenia`.  
-- Make sure that ROS Packages must be installed on your PC before following an instruction. - [Install ROS Packages](/docs/en/platform/openmanipulator_pro/ros_setup/#install-ros-packages)
+- The test is done on `ROS Kinetic Kame` installed in `Ubuntu 16.04`.
+- The test is done on `ROS Melodic Morenia`installed in `Ubuntu 18.04`.
+- Make sure ROS dependencies are installed before performing these instructions - [Install ROS Packages](/docs/en/platform/openmanipulator_pro/ros_setup/#install-ros-packages)
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -577,9 +577,9 @@ The user can change each joint by GUI, if the user launch only RViz by executing
 
 {% capture notice_01 %}
 **NOTE**:  
-- This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-- This instruction has been tested on `Ubuntu 18.04` and `ROS Melodic Morenia`.   
-- Make sure that ROS Packages must be installed on your PC before following an instruction. - [Install ROS Packages](/docs/en/platform/openmanipulator_pro/ros_setup/#install-ros-packages)  
+- The test is done on `ROS Kinetic Kame` installed in `Ubuntu 16.04`.
+- The test is done on `ROS Melodic Morenia`installed in `Ubuntu 18.04`.
+- Make sure ROS dependencies are installed before performing these instructions - [Install ROS Packages](/docs/en/platform/openmanipulator_pro/ros_setup/#install-ros-packages) 
 - Make sure to run the [OpenMANIPULATOR-PRO controller](/docs/en/platform/openmanipulator_pro/ros_controller_package/#launch-controller) instructions before running the instructions below.  
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
