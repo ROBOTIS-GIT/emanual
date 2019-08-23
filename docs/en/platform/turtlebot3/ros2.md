@@ -252,7 +252,7 @@ $ sudo apt install ros-dashing-ros-base
 
 ```bash
 $ sudo apt install python3-argcomplete python3-colcon-common-extensions libboost-system-dev
-$ mkdir -p ~/turtlebot_ws/src && cd ~/turtlebot_ws/src
+$ mkdir -p ~/turtlebot3_ws/src && cd ~/turtlebot3_ws/src
 $ git clone -b ros2 https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
 $ git clone -b ros2 https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
 $ git clone -b ros2 https://github.com/ROBOTIS-GIT/turtlebot3.git
@@ -283,7 +283,7 @@ $ source ~/.bashrc
 
 Following commands show how to assign OpenCR port authorization to TurtleBot3.
 ```bash
-$ cd ~/turtlebot3_ws/src/turtlebot3/turtlebot3/turtlebot3_bringup 
+$ cd ~/turtlebot3_ws/src/turtlebot3/turtlebot3_bringup 
 $ sudo cp ./99-turtlebot3-cdc.rules /etc/udev/rules.d/ 
 $ sudo udevadm control --reload-rules 
 $ sudo udevadm trigger
