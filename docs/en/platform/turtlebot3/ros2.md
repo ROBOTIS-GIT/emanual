@@ -252,7 +252,7 @@ $ sudo apt install ros-dashing-ros-base
 
 ```bash
 $ sudo apt install python3-argcomplete python3-colcon-common-extensions libboost-system-dev
-$ mkdir -p ~/turtlebot_ws/src && cd ~/turtlebot_ws/src
+$ mkdir -p ~/turtlebot3_ws/src && cd ~/turtlebot3_ws/src
 $ git clone -b ros2 https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
 $ git clone -b ros2 https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
 $ git clone -b ros2 https://github.com/ROBOTIS-GIT/turtlebot3.git
@@ -283,7 +283,7 @@ $ source ~/.bashrc
 
 Following commands show how to assign OpenCR port authorization to TurtleBot3.
 ```bash
-$ cd ~/turtlebot3_ws/src/turtlebot3/turtlebot3/turtlebot3_bringup 
+$ cd ~/turtlebot3_ws/src/turtlebot3/turtlebot3_bringup 
 $ sudo cp ./99-turtlebot3-cdc.rules /etc/udev/rules.d/ 
 $ sudo udevadm control --reload-rules 
 $ sudo udevadm trigger
@@ -357,12 +357,12 @@ After few seconds, particular sound will be played.
 
 ### Bringup TurtleBot3
 
-**WARNING** : Do not proceed to this instruction on SBC in TurtleBot3. Please follow steps with **Remote PC**.
-{: .notice--warning}
-
 1. Launch a model of your TurtleBot3 including node of robot_state_publisher and turtlebot3_node.
 
     **NOTE**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `burger`, `waffle`, `waffle_pi`. If you want to permanently set the export settings, please refer to [Export TURTLEBOT3_MODEL][export_turtlebot3_model]{: .popup} page.
+    {: .notice}
+    
+    **NOTE**: Please follow steps with **SBC in TurtleBot3**.
     {: .notice}
 
     ```bash
@@ -471,6 +471,9 @@ $ ros2 service list
 ```
 
 ### Rviz2
+
+**WARNING** : Do not proceed to this instruction on SBC in TurtleBot3. Please follow steps with **Remote PC**.
+{: .notice--warning}
 
 1. Run Rviz2 on **remote PC**
 ```bash
