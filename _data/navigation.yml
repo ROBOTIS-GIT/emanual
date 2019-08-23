@@ -16109,9 +16109,9 @@ openmanipulator_x:
       - title: "Install Ubuntu on PC"
         url: /platform/openmanipulator_x/ros2_setup/#install-ubuntu-on-pc
       - title: "Install ROS 2 on PC"
-        url: /platform/openmanipulator_x/ros2_setup/#install-ros2-on-pc
+        url: /platform/openmanipulator_x/ros2_setup/#install-ros-2-on-pc
       - title: "Install ROS 2 Packages"
-        url: /platform/openmanipulator_x/ros2_setup/#install-ros2-packages
+        url: /platform/openmanipulator_x/ros2_setup/#install-ros-2-packages
       - title: "Communication Converter"
         url: /platform/openmanipulator_x/ros2_setup/#communication-converter
         children:
@@ -16133,11 +16133,6 @@ openmanipulator_x:
             url: /platform/openmanipulator_x/ros2_controller_package/#rviz
       - title: "Message List"
         url: /platform/openmanipulator_x/ros2_controller_package/#message-list
-        children:
-          - title: "Topic"
-            url: /platform/openmanipulator_x/ros2_controller_package/#topic
-          - title: "Service"
-            url: /platform/openmanipulator_x/ros2_controller_package/#service
   - title: "[ROS 2] Operation"
     url: /platform/openmanipulator_x/ros2_operation/#ros-operation
     children:
@@ -16354,9 +16349,9 @@ openmanipulator_pro:
       - title: "Install Ubuntu on PC"
         url: /platform/openmanipulator_pro/ros2_setup/#install-ubuntu-on-pc
       - title: "Install ROS 2 on PC"
-        url: /platform/openmanipulator_pro/ros2_setup/#install-ros2-on-pc
+        url: /platform/openmanipulator_pro/ros2_setup/#install-ros-2-on-pc
       - title: "Install ROS 2 Packages"
-        url: /platform/openmanipulator_pro/ros2_setup/#install-ros2-package
+        url: /platform/openmanipulator_pro/ros2_setup/#install-ros-2-packages
       - title: "Communication Converter"
         url: /platform/openmanipulator_pro/ros2_setup/#communication-converter
         children:
