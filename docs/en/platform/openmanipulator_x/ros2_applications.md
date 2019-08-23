@@ -1,22 +1,28 @@
 ---
 layout: archive
 lang: en
-ref: openmanipulator_x_ros_applications
+ref: ros2_openmanipulator_x_applications
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/openmanipulator_x/ros_applications/
+permalink: /docs/en/platform/openmanipulator_x/ros2_applications/
 sidebar:
   title: "OpenMANIPULATOR-X"
   nav: "openmanipulator_x"
 product_group: openmanipulator_x
-page_number: 9
+page_number: 14
 ---
 
-<div style="counter-reset: h1 8"></div>
+<div style="counter-reset: h1 13"></div>
 
-# [[ROS] Applications](#ros-applications)
+# [[ROS 2] Applications](#ros-applications)
 
+{% capture comming_soon_01 %}
+`[ROS 2] Applications` for `ROS 2 Dashing Diademata` will be released soon!
+{% endcapture %}
+<div class="notice">{{ comming_soon_01 | markdownify }}</div>
+
+<!--
 ## [Camera Application](#camera-application)
 
 {% capture notice_01 %}
@@ -217,7 +223,7 @@ $ roslaunch roslaunch open_manipulator_camera raspicam.launch
 **NOTE**:
 - This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - The `open_manipulator_perceptions` package requires [`ar_track_alvar`](http://wiki.ros.org/ar_track_alvar) package.
-- Make sure to run the [Openmanipulator controller](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) instructions before running the instructions below.
+- Make sure to run the [OpenMANIPULATOR-PRO controller](/docs/en/platform/openmanipulator_pro/ros2_controller_package/#launch-controller) instructions before running the instructions below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -319,8 +325,8 @@ Download the .stl file in the path below and output it to the 3D printer.
 {% capture notice_01 %}
 **NOTE**:
 - This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-- Make sure to run the [OpenManipulator controller](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) instructions before running the instructions below.
-- Proceed from [Install Camera Package](/docs/en/platform/openmanipulator_x/ros_applications/#install-camera-package) and [Install AR Marker Package](/docs/en/platform/openmanipulator_x/ros_applications/#install-ar-marker-package).
+- Make sure to run the [OpenMANIPULATOR-PRO controller](/docs/en/platform/openmanipulator_pro/ros2_controller_package/#launch-controller) instructions before running the instructions below.
+- Proceed from [Install Camera Package](/docs/en/platform/ros2_openmanipulator_x/ros_applications/#install-camera-package) and [Install AR Marker Package](/docs/en/platform/ros2_openmanipulator_x/ros_applications/#install-ar-marker-package).
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -588,6 +594,8 @@ There are four control modes. Please enter that number in the terminal.
 3. Stop Recording Trajectory: Ends the recording.
 4. Play Recorded Trajectory: The trajectory recorded in the 2nd mode is reproduced only by the slave robot.
 
+
+-->
 
 [OpenCR]: /docs/en/parts/controller/opencr10/
 [OpenCR Manual]: /docs/en/parts/controller/opencr10/

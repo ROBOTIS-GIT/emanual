@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_pro/ros_tool_applications/
 sidebar:
-  title: OpenMANIPULATOR-PRO
+  title: "OpenMANIPULATOR-PRO"
   nav: "openmanipulator_pro"
 product_group: openmanipulator_pro
 page_number: 8
@@ -49,14 +49,13 @@ page_number: 8
 
     ![](/assets/images/platform/openmanipulator_pro/open_manipulator_gripper_assembly_04.png)
 
-
 ### [Operation](#operation)
 
 {% capture notice_01 %}
 **NOTE** :  
 - This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - This instruction has been tested on `Ubuntu 18.04` and `ROS Melodic Morenia`.  
-- This instruction is supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
+- Make sure that ROS Packages must be installed on your PC before following an instruction. - [Install ROS Packages](/docs/en/platform/openmanipulator_pro/ros_setup/#install-ros-packages)
 - Make sure to run the [OpenMANIPULATOR-PRO controller](/docs/en/platform/openmanipulator_pro/ros_controller_package/#launch-controller) instructions before running the instruction below
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
@@ -127,7 +126,7 @@ $ roslaunch open_manipulator_pro_controller open_manipulator_pro_controller.laun
 **NOTE** :  
 - This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - This instruction has been tested on `Ubuntu 18.04` and `ROS Melodic Morenia`.
-- This instruction is supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
+- Make sure that ROS Packages must be installed on your PC before following an instruction. - [Install ROS Packages](/docs/en/platform/openmanipulator_pro/ros_setup/#install-ros-packages)
 {% endcapture %}
 <div class="notice--info">{{ notice_02 | markdownify }}</div>
 

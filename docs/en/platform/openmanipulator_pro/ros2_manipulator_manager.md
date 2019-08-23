@@ -1,19 +1,17 @@
 ---
 layout: archive
 lang: en
-ref: openmanipulator_pro_ros_manipulator_manager
+ref: ros2_openmanipulator_pro_ros_manipulator_manager
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/openmanipulator_pro/ros_manipulator_manager/
+permalink: /docs/en/platform/openmanipulator_pro/ros2_manipulator_manager/
 sidebar:
   title: "OpenMANIPULATOR-PRO"
   nav: "openmanipulator_pro"
 ---
 
-<div style="counter-reset: h1 4"></div>
-
-# [[ROS] Manipulator Manager](#ros-manipulator-manager)
+# [[ROS 2] Manipulator Manager](#ros-manipulator-manager)
 
 {% capture notice_01 %}
 **NOTE**:

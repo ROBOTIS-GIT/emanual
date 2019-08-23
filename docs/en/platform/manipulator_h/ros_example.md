@@ -105,7 +105,7 @@ To move the manipulator in the joint space. Enter the joint angles. Then click t
 {% capture notice_01 %}
 **NOTE**:
 - This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-- This instruction is supposed to be run on PC with ROS packages installed in.
+- Make sure that ROS Packages must be installed on your PC before following an instruction - [Install ROS Packages](/docs/en/platform/openmanipulator_x/ros_setup/#install-ros-packages)
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 

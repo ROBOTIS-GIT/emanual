@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_pro/ros_simulation/
 sidebar:
-  title: OpenMANIPULATOR-PRO
+  title: "OpenMANIPULATOR-PRO"
   nav: "openmanipulator_pro"
 product_group: openmanipulator_pro
 page_number: 7
@@ -21,7 +21,7 @@ page_number: 7
 **NOTE**:
 - This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - This instruction has been tested on `Ubuntu 18.04` and `ROS Melodic`.
-- This instruction is supposed to be run on PC with ROS packages installed in.
+- Make sure that ROS Packages must be installed on your PC before following an instruction. - [Install ROS Packages](/docs/en/platform/openmanipulator_pro/ros_setup/#install-ros-packages)
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 

@@ -2,7 +2,7 @@
 layout: popup
 ---
 
-# Task SPACE
+# Task Space
 
 **Task space** is the cartesian coordinate space where the operation of the manipulator is required.  
 It has position (X,Y and Z) and orientation (Roll, Pitch and Yaw) about each axes.  

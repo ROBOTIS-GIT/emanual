@@ -15,6 +15,7 @@ page_number: 26
 
 <div style="counter-reset: h1 14"></div>
 
+
 # [ROS 2](#ros-2)
 
 {% capture notice_01 %}
@@ -29,6 +30,7 @@ page_number: 26
 {: .notice--success}
 
 This chapter shows demos using TurtleBot3 with **ROS 2** and **Gazebo 9**. In order to implement them, you need to install some packages.
+
 
 ## [Setup](#setup)
 
