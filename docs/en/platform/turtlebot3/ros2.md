@@ -15,11 +15,11 @@ page_number: 26
 
 <div style="counter-reset: h1 14"></div>
 
-# [ROS2](#ros2)
+# [ROS 2](#ros2)
 
 {% capture notice_01 %}
 **NOTE**:
-- This instructions were tested on `Ubuntu 18.04` and `ROS2 Dashing Diademata`.
+- This instructions were tested on `Ubuntu 18.04` and `ROS 2 Dashing Diademata`.
 - This instructions are supposed to be running on the remote PC. Please run the instructions below on your **[Remote PC]**. However, the part marked **[TurtleBot]** is the content that runs on SBC of TurtleBot3.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
@@ -27,27 +27,27 @@ page_number: 26
 **TIP**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. The shortcut key for running the terminal is `Ctrl`-`Alt`-`T`.
 {: .notice--success}
 
-This chapter shows some demos using TurtleBot3 with **ROS2** and **Gazebo9**. In order to implement these demos, you have to install some packages.
+This chapter shows some demos using TurtleBot3 with **ROS 2** and **Gazebo9**. In order to implement these demos, you have to install some packages.
 
-<!-- **NOTE**: This application must be set ROS2 firmware version `1.0.0` or higher and must be used only `ROS2` not ROS.
+<!-- **NOTE**: This application must be set ROS 2 firmware version `1.0.0` or higher and must be used only `ROS 2` not ROS.
 {: .notice--info} -->
 
 ## [Setup](#setup)
 
 ### [PC setup](#pc-setup)
 
-**NOTE**: All demos have been tested in `Ubuntu 18.04` installed `ROS2 Dashing Diademata`.
+**NOTE**: All demos have been tested in `Ubuntu 18.04` installed `ROS 2 Dashing Diademata`.
 If you got stuck during installation, please following [ROS Answers][ROS Answers].
 {: .notice--info}
 
 #### Install Ubuntu on Remote PC
 - [Ubuntu 18.04](http://releases.ubuntu.com/18.04/)
 
-#### Install ROS2 on Remote PC
-- [ROS2 Installation](https://index.ros.org/doc/ros2/Installation/Dashing/)
+#### Install ROS 2 on Remote PC
+- [ROS 2 Installation](https://index.ros.org/doc/ros2/Installation/Dashing/)
 
-#### Install TurtleBot3 ROS2 Packages
-**[Remote PC]** Download turtlebot3 packages and install some dependencies for ROS2
+#### Install TurtleBot3 ROS 2 Packages
+**[Remote PC]** Download turtlebot3 packages and install some dependencies for ROS 2
 
 ```bash
 # Install Cartographer dependencies
@@ -108,8 +108,8 @@ If you get any build errors or warnings from dependencies, please refer to below
 1. The following instructions show how to set sbc directly without burning the image.
 
 ```bash
-$ export ROS2_DISTRO=dashing    #distro you want
-$ cd && wget https://github.com/ROBOTIS-GIT/turtlebot3/raw/ros2/turtlebot3_sbc_settings/$ROS2_DISTRO/tb3_sbc_settings.tar.bz2
+$ export ROS 2_DISTRO=dashing    #distro you want
+$ cd && wget https://github.com/ROBOTIS-GIT/turtlebot3/raw/ros2/turtlebot3_sbc_settings/$ROS 2_DISTRO/tb3_sbc_settings.tar.bz2
 $ tar -xjf tb3_sbc_settings.tar.bz2
 $ cd tb3_sbc_settings
 $ ./install.sh
@@ -118,12 +118,12 @@ If the installation is completed normally, the message "Complete!" Is displayed.
 
 {% capture notice_03 %}
 **NOTE**: 
-This instruction only supports a specific version of ROS2.
+This instruction only supports a specific version of ROS 2.
 You can modify the script(.sh) to suit your tastes. But we do not have a guarantee for this.
 
 Most of the errors are due to the dependency of each software.
 Therefore, if you need detailed information on interdependency, please refer to the following documents.
-- [Related a document for ROS2](https://index.ros.org/doc/ros2/Releases/#distribution-details)
+- [Related a document for ROS 2](https://index.ros.org/doc/ros2/Releases/#distribution-details)
 - [Related a document for FastRTPS](https://github.com/ros2/rmw_fastrtps)
 - [Related a document for Micro-XRCE-DDS](https://github.com/eProsima/Micro-XRCE-DDS)
 - [Related a document for ros2arduino](https://github.com/ROBOTIS-GIT/ros2arduino)
@@ -133,7 +133,7 @@ Therefore, if you need detailed information on interdependency, please refer to 
 
 ### [OpenCR setup](#opencr-setup)
 
-**[TurtleBot]** Upload firmware for ROS2.
+**[TurtleBot]** Upload firmware for ROS 2.
 
 ```bash
 $ export OPENCR_PORT=/dev/ttyACM0   #OpenCR port
@@ -169,9 +169,9 @@ opencr_ld_main
 This is also possible through the following instructions.
 
 ```bash
-$ export ROS2_DISTRO=dashing        #distro you want
+$ export ROS 2_DISTRO=dashing        #distro you want
 $ rm -rf opencr_update.tar.bz2
-$ wget https://github.com/ROBOTIS-GIT/OpenCR-Binaries/raw/master/turtlebot3/ROS2/$ROS2_DISTRO/opencr_update.tar.bz2
+$ wget https://github.com/ROBOTIS-GIT/OpenCR-Binaries/raw/master/turtlebot3/ROS 2/$ROS 2_DISTRO/opencr_update.tar.bz2
 $ tar -xjf ./opencr_update.tar.bz2
 $ cd opencr_update
 $ export OPENCR_PORT=/dev/ttyACM0   #OpenCR port
@@ -439,6 +439,6 @@ $ ros2 param set /local_costmap/local_costmap use_sim_time True
 <iframe width="560" height="315" src="https://www.youtube.com/embed/aQh8JqSrmCs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 [ROS Answers]: https://answers.ros.org/questions/
-[ROS2 Issue]: https://github.com/ros2/ros2/issues
+[ROS 2 Issue]: https://github.com/ros2/ros2/issues
 [How to set sbc for turtlebot3 with ros2]: /docs/en/popup/turtlebot3_ros2_sbc_setting
 [export_turtlebot3_model]: /docs/en/platform/turtlebot3/export_turtlebot3_model

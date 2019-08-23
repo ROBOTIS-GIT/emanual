@@ -15,49 +15,18 @@ page_number: 11
 
 <div style="counter-reset: h1 10"></div>
 
-# [[ROS2] Controller Package](#ros-controller-package)
+# [[ROS 2] Controller Package](#ros-controller-package)
 
 OpenMANIPULATOR-X controller provides basic manipulation of OpenMANIPULATOR-X. You can control DYNAMIXEL's of OpenMANIPULATOR-X and check states of OpenMANIPULATOR-X through [messages](/docs/en/platform/openmanipulator_x/ros2_controller_package/#message-list) of the controller.
 
 {% capture notice_01 %}
 **NOTE**:
-- This instruction has been tested on `Ubuntu 18.04` and `ROS2 Dashing Diademata`.
-- Make sure that ROS2 Packages must be installed on your PC before following an instruction. - [Install ROS2 Packages](/docs/en/platform/openmanipulator_x/ros2_setup/#install-ros2-packages)
+- This instruction has been tested on `Ubuntu 18.04` and `ROS 2 Dashing Diademata`.
+- Make sure that ROS 2 Packages must be installed on your PC before following an instruction. - [Install ROS 2 Packages](/docs/en/platform/openmanipulator_x/ros2_setup/#install-ros2-packages)
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
 ## [Launch Controller](#launch-controller)
-
-``` bash
-$ ros2 run open_manipulator_x_controller create_udev_rules 
-```
-
-<!-- Before launching the controller, Please check `open_manipulator_x_controller` launch file in `open_manipulator_x_controller` package.
-
-  ```
-
-<TODO>
-
-  ```
-
-**Parameters List** : The following parameters set control environments.
-- `use_robot_name`
-- `dynamixel_usb_port`
-- `dynamixel_baud_rate`
-- `control_period`
-- `use_platform`
-- `use_moveit`
-- `planning_group_name`
-- `moveit_sample_duration`
-
-`use_robot_name` is a parameter to set manipulator name(namespace of ROS messages).  
-`dynamixel_usb_port` is a parameter to set USB port to connect with DYNAMIXEL of OpenMANIPULATOR-X. If you use U2D2, it should be set **/dev/ttyUSB@**. If you use OpenCR, it should be set **/dev/ttyACM@** (@ indicates the port number connected to the DYNAMIXEL).  
-`dynamixel_baud_rate` is a parameter to set baud rate of DYNAMIXEL. default baud rate of DYNAMIXEL used in OpenMANIPULATOR-X is 1000000.  
-`control_period` is a parameter to set communication period between DYNAMIXEL and PC (control loop time).  
-`use_platform` is a parameter that sets whether to use the actual OpenMANIPULATOR-X or OpenMANIPULATOR-X simulation. please refer [ROS Simulation](/docs/en/platform/ros2_openmanipulator_x/ros_simulation/#ros-simulation) chapter.  
-`use_moveit`, `planning_group_name` and `moveit_sample_duration` are parameters to load [move_group](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/move_group_interface/move_group_interface_tutorial.html) package. please refer to [MoveIt!](/docs/en/platform/ros2_openmanipulator_x/ros-operation/#moveit) chapter.
-
-After setting the parameters, launch the OpenMANIPULATOR-X controller to start [[ROS] Operation](/docs/en/platform/ros2_openmanipulator_x/ros_operation/#ros-operation). -->
 
 Please, open a terminal then run the following command in the terminal.
 
@@ -105,8 +74,8 @@ Gripper Dynamixel ID : 15, Model Name :XM430-W350
 
 {% capture notice_01 %}
 **NOTE**:
-- This instruction has been tested on `Ubuntu 18.04` and `ROS2 Dashing Diademata`.
-- Make sure that ROS2 Packages must be installed on your PC before following an instruction. - [Install ROS2 Packages](/docs/en/platform/openmanipulator_x/ros2_setup/#install-ros2-packages).
+- This instruction has been tested on `Ubuntu 18.04` and `ROS 2 Dashing Diademata`.
+- Make sure that ROS 2 Packages must be installed on your PC before following an instruction. - [Install ROS 2 Packages](/docs/en/platform/openmanipulator_x/ros2_setup/#install-ros2-packages).
 - Make sure to run the [OpenMANIPULATOR-X controller](/docs/en/platform/openmanipulator_x/ros2_controller_package/#launch-controller) instructions before running the instructions below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
@@ -400,8 +369,8 @@ This parameter is descripted on open_manipulator_x.cpp in open_manipulator_x_lib
 
 {% capture notice_01 %}
 **NOTE**:
-- This instruction has been tested on `Ubuntu 18.04` and `ROS2 Dashing Diademata`.
-- Make sure that ROS2 Packages must be installed on your PC before following an instruction. - [Install ROS2 Packages](/docs/en/platform/openmanipulator_x/ros2_setup/#install-ros2-packages)
+- This instruction has been tested on `Ubuntu 18.04` and `ROS 2 Dashing Diademata`.
+- Make sure that ROS 2 Packages must be installed on your PC before following an instruction. - [Install ROS 2 Packages](/docs/en/platform/openmanipulator_x/ros2_setup/#install-ros2-packages)
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -425,7 +394,7 @@ The user can change each joint by GUI, if the user launch only RViz by executing
 
 ## [Message List](#message-list)
 
-`Message List` for `ROS2 Dashing Diademata` will be released soon!
+`Message List` for `ROS 2 Dashing Diademata` will be released soon!
 {: .notice}
 
 [open_manipulator_msgs/GetJointPosition]: /docs/en/popup/open_manipulator_msgs_GetJointPosition/

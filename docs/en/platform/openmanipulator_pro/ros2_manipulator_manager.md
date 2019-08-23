@@ -11,7 +11,7 @@ sidebar:
   nav: "openmanipulator_pro"
 ---
 
-# [[ROS2] Manipulator Manager](#ros-manipulator-manager)
+# [[ROS 2] Manipulator Manager](#ros-manipulator-manager)
 
 {% capture notice_01 %}
 **NOTE**:

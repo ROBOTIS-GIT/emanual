@@ -1,4 +1,4 @@
----
+ROS 2---
 layout: archive
 lang: en
 ref: ros2_openmanipulator_pro_ros_tool_applications
@@ -15,9 +15,9 @@ page_number: 13
 
 <div style="counter-reset: h1 12"></div>
 
-# [[ROS2] Tool Applications](#ros-tool-application)
+# [[ROS 2] Tool Applications](#ros-tool-application)
 
-`[ROS2] Tool Applications` for `ROS2 Dashing Diademata` will be released soon!
+`[ROS 2] Tool Applications` for `ROS 2 Dashing Diademata` will be released soon!
 {: .notice}
 
 
@@ -60,7 +60,7 @@ page_number: 13
 **NOTE** :  
 - This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - This instruction has been tested on `Ubuntu 18.04` and `ROS Melodic Morenia`.  
-- Make sure that ROS2 Packages must be installed on your PC before following an instruction. - [Install ROS2 Packages](/docs/en/platform/openmanipulator_pro/ros2_setup/#install-ros2-packages).
+- Make sure that ROS 2 Packages must be installed on your PC before following an instruction. - [Install ROS 2 Packages](/docs/en/platform/openmanipulator_pro/ros2_setup/#install-ros2-packages).
 - Make sure to run the [OpenMANIPULATOR-PRO controller](/docs/en/platform/openmanipulator_pro/ros_controller_package/#launch-controller) instructions before running the instruction below
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
@@ -130,7 +130,7 @@ $ roslaunch open_manipulator_pro_controller open_manipulator_pro_controller.laun
 **NOTE** :  
 - This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - This instruction has been tested on `Ubuntu 18.04` and `ROS Melodic Morenia`.
-- Make sure that ROS2 Packages must be installed on your PC before following an instruction. - [Install ROS2 Packages](/docs/en/platform/openmanipulator_pro/ros2_setup/#install-ros2-packages).
+- Make sure that ROS 2 Packages must be installed on your PC before following an instruction. - [Install ROS 2 Packages](/docs/en/platform/openmanipulator_pro/ros2_setup/#install-ros2-packages).
 {% endcapture %}
 <div class="notice--info">{{ notice_02 | markdownify }}</div>
 

@@ -15770,7 +15770,7 @@ turtlebot3:
       url: /platform/turtlebot3/machine_learning/#set-parameters
     - title: "Run Machine Learning"
       url: /platform/turtlebot3/machine_learning/#run-machine-learning
-  - title: "ROS2"
+  - title: "ROS 2"
     url: /platform/turtlebot3/ros2/#ros2
     children:
     - title: "Setup"
@@ -16103,14 +16103,14 @@ openmanipulator_x:
             url: /platform/openmanipulator_x/ros_applications/#install-package
           - title: "Execute Example"
             url: /platform/openmanipulator_x/ros_applications/#execute-example
-  - title: "[ROS2] Setup"
+  - title: "[ROS 2] Setup"
     url: /platform/openmanipulator_x/ros2_setup/#ros-setup
     children:
       - title: "Install Ubuntu on PC"
         url: /platform/openmanipulator_x/ros2_setup/#install-ubuntu-on-pc
-      - title: "Install ROS2 on PC"
+      - title: "Install ROS 2 on PC"
         url: /platform/openmanipulator_x/ros2_setup/#install-ros2-on-pc
-      - title: "Install ROS2 Packages"
+      - title: "Install ROS 2 Packages"
         url: /platform/openmanipulator_x/ros2_setup/#install-ros2-packages
       - title: "Communication Converter"
         url: /platform/openmanipulator_x/ros2_setup/#communication-converter
@@ -16119,7 +16119,7 @@ openmanipulator_x:
             url: /platform/openmanipulator_x/ros2_setup/#u2d2
           - title: "OpenCR"
             url: /platform/openmanipulator_x/ros2_setup/#opencr
-  - title: "[ROS2] Controller Package"
+  - title: "[ROS 2] Controller Package"
     url: /platform/openmanipulator_x/ros2_controller_package/#ros-controller-package
     children:
       - title: "Launch Controller"
@@ -16138,7 +16138,7 @@ openmanipulator_x:
             url: /platform/openmanipulator_x/ros2_controller_package/#topic
           - title: "Service"
             url: /platform/openmanipulator_x/ros2_controller_package/#service
-  - title: "[ROS2] Operation"
+  - title: "[ROS 2] Operation"
     url: /platform/openmanipulator_x/ros2_operation/#ros-operation
     children:
       - title: "GUI Program"
@@ -16154,14 +16154,14 @@ openmanipulator_x:
             url: /platform/openmanipulator_x/ros2_operation/#xbox-360-joystick
       - title: "MoveIt!"
         url: /platform/openmanipulator_x/ros2_operation/#moveit
-  - title: "[ROS2] Simulation"
+  - title: "[ROS 2] Simulation"
     url: /platform/openmanipulator_x/ros2_simulation/#ros-simulation
     #children:
     #  - title: "Launch gazebo"
     #    url: /platform/openmanipulator_x/ros2_simulation/#launch-gazebo
     #  - title: "Controller for gazebo"
     #    url: /platform/openmanipulator_x/ros2_simulation/#controller-for-gazebo
-  - title: "[ROS2] Applications"
+  - title: "[ROS 2] Applications"
     url: /platform/openmanipulator_x/ros2_applications/#ros-applications
     #children:
     #  - title: "Camera Application"
@@ -16277,6 +16277,11 @@ openmanipulator_pro:
             url: /platform/openmanipulator_pro/ros_setup/#ros-kinetic-kame
           - title: "ROS Melodic Morenia"
             url: /platform/openmanipulator_pro/ros_setup/#ros-melodic-morenia
+      - title: "Communication Converter"
+        url: /platform/openmanipulator_pro/ros_setup/#communication-converter
+        children:
+          - title: "U2D2"
+            url: /platform/openmanipulator_pro/ros_setup/#u2d2
       - title: "Install ROS Packages"
         url: /platform/openmanipulator_pro/ros_setup/#install-ros-package
         children:
@@ -16343,16 +16348,21 @@ openmanipulator_pro:
                 url: /platform/openmanipulator_pro/ros_tool_applications/#launch-gazebo
               - title: "Controller for Gazebo"
                 url: /platform/openmanipulator_pro/ros_tool_applications/#controller-for-gazebo
-  - title: "[ROS2] Setup"
+  - title: "[ROS 2] Setup"
     url: /platform/openmanipulator_pro/ros2_setup/#ros-setup
     children:
       - title: "Install Ubuntu on PC"
         url: /platform/openmanipulator_pro/ros2_setup/#install-ubuntu-on-pc
-      - title: "Install ROS2 on PC"
+      - title: "Install ROS 2 on PC"
         url: /platform/openmanipulator_pro/ros2_setup/#install-ros2-on-pc
-      - title: "Install ROS2 Packages"
+      - title: "Install ROS 2 Packages"
         url: /platform/openmanipulator_pro/ros2_setup/#install-ros2-package
-  - title: "[ROS2] Controller Package"
+      - title: "Communication Converter"
+        url: /platform/openmanipulator_pro/ros2_setup/#communication-converter
+        children:
+          - title: "U2D2"
+            url: /platform/openmanipulator_pro/ros2_setup/#u2d2
+  - title: "[ROS 2] Controller Package"
     url: /platform/openmanipulator_pro/ros2_controller_package/#ros-controller-package
     children:
       - title: "Launch Controller"
@@ -16369,7 +16379,7 @@ openmanipulator_pro:
             url: /platform/openmanipulator_pro/ros2_controller_package/#topic
           - title: "Service"
             url: /platform/openmanipulator_pro/ros2_controller_package/#service
-  - title: "[ROS2] Operation"
+  - title: "[ROS 2] Operation"
     url: /platform/openmanipulator_pro/ros2_operation/#ros-operation
     children:
       - title: "GUI Program"
@@ -16378,14 +16388,14 @@ openmanipulator_pro:
         url: /platform/openmanipulator_pro/ros2_operation/#teleoperation
       - title: "MoveIt!"
         url: /platform/openmanipulator_pro/ros2_operation/#moveit
-  - title: "[ROS2] Simulation"
+  - title: "[ROS 2] Simulation"
     url: /platform/openmanipulator_pro/ros2_simulation/#ros-simulation
   #  children:
   #    - title: "Launch gazebo"
   #      url: /platform/openmanipulator_pro/ros2_simulation/#launch-gazebo
   #    - title: "Controller for gazebo"
   #      url: /platform/openmanipulator_pro/ros2_simulation/#controller-for-gazebo
-  - title: "[ROS2] Tool Applications"
+  - title: "[ROS 2] Tool Applications"
     url: /platform/openmanipulator_pro/ros2_tool_applications
     children:
       - title: "RH-P12-RN Gripper"

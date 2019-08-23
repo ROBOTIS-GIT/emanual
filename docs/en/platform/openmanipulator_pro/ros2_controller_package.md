@@ -15,22 +15,19 @@ page_number: 10
 
 <div style="counter-reset: h1 9"></div>
 
-# [[ROS2] Controller Package](#ros-controller-package)
+# [[ROS 2] Controller Package](#ros-controller-package)
 
 OpenMANIPULATOR-PRO controller provides basic manipulation of OpenMANIPULATOR-PRO. You can control DYNAMIXEL's of OpenMANIPULATOR-PRO and check states of OpenMANIPULATOR-PRO through [messages](/docs/en/platform/openmanipulator_pro/ros2_controller_package/#message-list) of the controller.  
 
 {% capture notice_01 %}
 **NOTE** :  
-- This instruction has been tested on `Ubuntu 18.04` and `ROS2 Dashing Diademata`.
-- Make sure that ROS2 Packages must be installed on your PC before following an instruction. - [Install ROS2 Packages](/docs/en/platform/openmanipulator_pro/ros2_setup/#install-ros2-packages)
+- This instruction has been tested on `Ubuntu 18.04` and `ROS 2 Dashing Diademata`.
+- Make sure that ROS 2 Packages must be installed on your PC before following an instruction. - [Install ROS 2 Packages](/docs/en/platform/openmanipulator_pro/ros2_setup/#install-ros2-packages)
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
 ## [Launch Controller](#launch-controller)
 
-``` bash
-$ ros2 run open_manipulator_pro_controller create_udev_rules 
-```
 Please, open the Terminal then run the following command.
 ``` bash
 $ ros2 run open_manipulator_pro_controller open_manipulator_pro_controller 
@@ -70,8 +67,8 @@ Joint Dynamixel ID : 6, Model Name : PRO-PLUS-H42P-020-S300-R
 
 {% capture notice_01 %}
 **NOTE**:  
-- This instruction has been tested on `Ubuntu 18.04` and `ROS2 Dashing Diademata`.
-- Make sure that ROS2 Packages must be installed on your PC before following an instruction. - [Install ROS2 Packages](/docs/en/platform/openmanipulator_pro/ros2_setup/#install-ros2-packages)
+- This instruction has been tested on `Ubuntu 18.04` and `ROS 2 Dashing Diademata`.
+- Make sure that ROS 2 Packages must be installed on your PC before following an instruction. - [Install ROS 2 Packages](/docs/en/platform/openmanipulator_pro/ros2_setup/#install-ros2-packages)
 - Make sure to run the [OpenMANIPULATOR-PRO controller](/docs/en/platform/openmanipulator_pro/ros2_controller_package/#launch-controller) instructions before running the instructions below.  
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
@@ -464,8 +461,8 @@ Active Joint
 
 {% capture notice_01 %}
 **NOTE**:  
-- This instruction has been tested on `Ubuntu 18.04` and `ROS2 Dashing Diademata`.
-- Make sure that ROS2 Packages must be installed on your PC before following an instruction. - [Install ROS2 Packages](/docs/en/platform/openmanipulator_pro/ros2_setup/#install-ros2-packages)
+- This instruction has been tested on `Ubuntu 18.04` and `ROS 2 Dashing Diademata`.
+- Make sure that ROS 2 Packages must be installed on your PC before following an instruction. - [Install ROS 2 Packages](/docs/en/platform/openmanipulator_pro/ros2_setup/#install-ros2-packages)
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -490,7 +487,7 @@ The user can change each joint by GUI, if the user launch only RViz by executing
 
 ## [Message List](#message-list) 
 
-`Message List` for `ROS2 Dashing Diademata` will be released soon!
+`Message List` for `ROS 2 Dashing Diademata` will be released soon!
 {: .notice}
 
 [open_manipulator_msgs/GetJointPosition]: /docs/en/popup/open_manipulator_msgs_GetJointPosition/

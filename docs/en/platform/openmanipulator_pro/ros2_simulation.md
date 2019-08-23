@@ -15,10 +15,10 @@ page_number: 12
 
 <div style="counter-reset: h1 11"></div>
 
-# [[ROS2] Simulation](#ros-simulation)
+# [[ROS 2] Simulation](#ros-simulation)
 
 
-`[ROS2] Simulation` for `ROS2 Dashing Diademata` will be released soon!
+`[ROS 2] Simulation` for `ROS 2 Dashing Diademata` will be released soon!
 {: .notice}
  
 <!--
@@ -27,7 +27,7 @@ page_number: 12
 **NOTE**:
 - This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - This instruction has been tested on `Ubuntu 18.04` and `ROS Melodic`.
-- Make sure that ROS2 Packages must be installed on your PC before following an instruction. - [Install ROS2 Packages](/docs/en/platform/openmanipulator_pro/ros2_setup/#install-ros2-packages).
+- Make sure that ROS 2 Packages must be installed on your PC before following an instruction. - [Install ROS 2 Packages](/docs/en/platform/openmanipulator_pro/ros2_setup/#install-ros2-packages).
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 

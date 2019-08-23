@@ -15,10 +15,10 @@ page_number: 14
 
 <div style="counter-reset: h1 13"></div>
 
-# [[ROS2] Applications](#ros-applications)
+# [[ROS 2] Applications](#ros-applications)
 
 {% capture comming_soon_01 %}
-`[ROS2] Applications` for `ROS2 Dashing Diademata` will be released soon!
+`[ROS 2] Applications` for `ROS 2 Dashing Diademata` will be released soon!
 {% endcapture %}
 <div class="notice">{{ comming_soon_01 | markdownify }}</div>
 

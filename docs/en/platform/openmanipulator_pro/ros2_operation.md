@@ -15,18 +15,18 @@ page_number: 11
 
 <div style="counter-reset: h1 10"></div>
 
-# [[ROS2] Operation](#ros-operation)
+# [[ROS 2] Operation](#ros-operation)
 
 ## [GUI Program](#gui-program)
 
-`GUI Program` for `ROS2 Dashing Diademata` will be released soon!  
+`GUI Program` for `ROS 2 Dashing Diademata` will be released soon!  
 {: .notice}
 
 ## [Teleoperation](#teleoperation)
 {% capture notice_01 %}
 **NOTE**:
-- This instruction has been tested on `Ubuntu 18.04` and `ROS2 Dashing Diademata`.
-- Make sure that ROS2 Packages must be installed on your PC before following an instruction. - [Install ROS2 Packages](/docs/en/platform/openmanipulator_pro/ros2_setup/#install-ros2-packages).
+- This instruction has been tested on `Ubuntu 18.04` and `ROS 2 Dashing Diademata`.
+- Make sure that ROS 2 Packages must be installed on your PC before following an instruction. - [Install ROS 2 Packages](/docs/en/platform/openmanipulator_pro/ros2_setup/#install-ros2-packages).
 - Make sure to run the [OpenMANIPULATOR-PRO controller](/docs/en/platform/openmanipulator_pro/ros2_controller_package/#launch-controller) instructions before running the instructions below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
@@ -115,7 +115,7 @@ $ ros2 run open_manipulator_pro_teleop open_manipulator_pro_teleop_joystick
 
 ## [MoveIt!](#moveit)
 
-`Move it` for `ROS2 Dashing Diademata` will be released soon!  
+`Move it` for `ROS 2 Dashing Diademata` will be released soon!  
 {: .notice}
 
 

@@ -15,9 +15,9 @@ page_number: 13
 
 <div style="counter-reset: h1 12"></div>
 
-# [[ROS2] Simulation](#ros-simulation)
+# [[ROS 2] Simulation](#ros-simulation)
 
-`[ROS2] Simulation` for `ROS2 Dashing Diademata` will be released soon!
+`[ROS 2] Simulation` for `ROS 2 Dashing Diademata` will be released soon!
 {: .notice}
 
 [OpenCR]: /docs/en/parts/controller/opencr10/

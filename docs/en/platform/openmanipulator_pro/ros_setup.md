@@ -119,3 +119,32 @@ $ cd ~/catkin_ws && catkin_make
 ```
 
 If the catkin_make command has been completed without any errors, all the preparations for using OpenMANIPULATOR-PRO are done.
+
+## [Communication Converter](#communication-converter)
+
+### [U2D2](#u2d2)
+
+#### Connection
+Connect micro USB (connected to PC), DYNAMIXEL's(OpenMANIPULATOR-PRO), and 12V Power to U2D2 and U2D2 power hub board as shown below.
+
+**NOTE** : Please refer to [U2D2 e-Manual](/docs/en/parts/interface/u2d2/) and [U2D2 power hub board e-manual](/docs/en/parts/interface/u2d2_power_hub/) for detailed connection of U2D2 and U2D2 power hub board.
+{: .notice--info}
+
+#### USB Latency Timer Setting
+In Linux(Ubuntu platform) environment, USB latency time is set to 16ms by default. Follow the steps below to set the communication latency time to the lowest value (1ms) between DYNAMIXEL's and PC connected via USB.
+
+Open a terminal window and run the roscore.
+
+``` bash
+$ roscore
+```
+
+With the roscore running, open a new terminal window and enter the following command to set usb latency time.
+
+``` bash
+$ rosrun open_manipulator_controller create_udev_rules
+```
+
+**TIP**: This entered command set USB latency timer to **1 ms**. If you would like to see the setting, run the following command in a terminal.  
+`cat /sys/bus/usb-serial/devices/ttyUSB0/latency_timer`
+{: .notice--success}

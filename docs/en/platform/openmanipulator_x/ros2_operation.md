@@ -15,20 +15,20 @@ page_number: 12
 
 <div style="counter-reset: h1 11"></div>
 
-# [[ROS2] Operation](#ros-operation)
+# [[ROS 2] Operation](#ros-operation)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iZuZZk27Y84" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## [GUI Program](#gui-program)
 
-`GUI Program` for `ROS2 Dashing Diademata` will be released soon!  
+`GUI Program` for `ROS 2 Dashing Diademata` will be released soon!  
 {: .notice}
 
 ## [Teleoperation](#teleoperation)
 {% capture notice_01 %}
 **NOTE**:
-- This instruction has been tested on `Ubuntu 18.04` and `ROS2 Dashing Diademata`.
-- Make sure that ROS2 Packages must be installed on your PC before following an instruction. - [Install ROS2 Packages](/docs/en/platform/openmanipulator_x/ros2_setup/#install-ros2-packages).
+- This instruction has been tested on `Ubuntu 18.04` and `ROS 2 Dashing Diademata`.
+- Make sure that ROS 2 Packages must be installed on your PC before following an instruction. - [Install ROS 2 Packages](/docs/en/platform/openmanipulator_x/ros2_setup/#install-ros2-packages).
 - Make sure to run [OpenMANIPULATOR controller](/docs/en/platform/openmanipulator_x/ros2_controller_package/#launch-controller) instructions before running the instructions below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
@@ -108,13 +108,13 @@ Install packages for teleoperation using XBOX 360 joystick.
 Connect XBOX 360 joystick to the PC with wireless adapter or USB cable, and launch teleoperation packages for XBOX 360 joystick.
 
 ``` bash
-*$ ros2 run joy joy_node
+$ ros2 run joy joy_node
 $ ros2 run open_manipulator_x_teleop open_manipulator_x_teleop_joystick
 ```
 
 ## [MoveIt!](#moveit)
 
-`Move it` for `ROS2 Dashing Diademata` will be released soon!  
+`Move it` for `ROS 2 Dashing Diademata` will be released soon!  
 {: .notice}
 
 
