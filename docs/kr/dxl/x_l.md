@@ -13,9 +13,9 @@ header:
     - excerpt: 'DYNAMIXEL XL Series'
 ---
 
-# 다이나믹셀 X 시리즈
+# 다이나믹셀 XL 시리즈
 
-![](/assets/images/dxl/x/dxl_x_productline_kr.jpg)
+![](/assets/images/dxl/x/dxl_x_productline_kr.png)
 
 # [XL320](xl320)
 
@@ -24,3 +24,7 @@ header:
 # [XL430-W250](#xl430-w250)
 
 [![](/assets/images/dxl/x/xl430_product.png)](/docs/kr/dxl/x/xl430-w250/)
+
+# [2XL430-W250](#2xl430-w250)
+
+[![](/assets/images/dxl/x/2xl/2xl430_product.png)](/docs/kr/dxl/x/2xl430-w250/)

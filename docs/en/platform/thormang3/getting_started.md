@@ -9,6 +9,8 @@ permalink: /docs/en/platform/thormang3/getting_started/
 sidebar:
   title: THORMANG3
   nav: "thormang3"
+product_group: thormang3
+page_number: 3
 ---
 
 <div style="counter-reset: h1 2"></div>
@@ -231,15 +233,16 @@ This section introduces how to install the ROBOTIS ROS Package for THORMANG3.
 ### [MPC Installation](#mpc-installation)
 
 Install the ROBOTIS ROS Package from the MPC. The ROS Package is installed by default.  
-{% capture package_warning %}  
-![](/assets/images/icon_warning.png)  
+{% capture package_warning %}   
 **CAUTION** : The packages to download differ depending on the version of ROBOTIS THORMANG3.  
 {% endcapture %}
 <div class="notice--warning">{{ package_warning | markdownify }}</div> 
 
-1. Download Packages from GitHub to the source folder in the catkin workspace.
-    **NOTE** : DXL Pro Ver.
-    {: .notice}  
+
+#### [THORMANG3 WITH DYNAMIXEL PRO](#thormang3-with-dynimixel-pro)
+1. Download Packages from GitHub to the source folder in the catkin workspace.  
+  
+
     ```
     $ cd ~/catkin_ws/src
     $ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git
@@ -252,9 +255,22 @@ Install the ROBOTIS ROS Package from the MPC. The ROS Package is installed by de
     $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-THORMANG-msgs.git
     $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-THORMANG-Tools.git
     ```  
+    
+    
+2. After installing all dependent packages, go to the workspace and build.  
+    ```
+    $ cd ~/catkin_ws
+    $ catkin_make
+    ```
+    
+3. Find *ft_calibration_data.yaml* and *ft_data.yaml* from provided USB and copy them to the proper folder.  
+    
+    `thormang3_manager/config/`  
 
-    **NOTE** : DXL Pro+ Ver.
-    {: .notice}
+#### [THORMANG3 WITH DYNAMIXEL PRO+](#thormang3-with-dynimixel-proplus)
+  
+1. Download Packages from GitHub to the source folder in the catkin workspace.    
+
     ```
     $ cd ~/catkin_ws/src
     $ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git
@@ -269,18 +285,14 @@ Install the ROBOTIS ROS Package from the MPC. The ROS Package is installed by de
     ```  
 
 2. After installing all dependent packages, go to the workspace and build.  
+    
     ```
     $ cd ~/catkin_ws
     $ catkin_make
     ```
 
 3. Find *ft_calibration_data.yaml* and *ft_data.yaml* from provided USB and copy them to the proper folder.  
-    **NOTE** : DXL Pro Ver.
-    {: .notice}  
-    `thormang3_manager/config/`  
-   
-    **NOTE** : DXL Pro+ Ver.  
-    {: .notice}  
+
     `thormang3_p_manager/config/`  
 
 ### [PPC Installation](#ppc-installation)
@@ -318,9 +330,6 @@ Install the ROBOTIS ROS Package from the OPC.
 
 2. After installing all dependent packages, go to the workspace and build.   
 
-    **NOTE** : Dependencies : qt-ros, map_server, nav_msgs, humanoid_nav_msgs, sbpl, octomap-ros
-    {: .notice}
-
     ```
     $ sudo apt install ros-kinetic-sbpl
     $ sudo apt install ros-kinetic-map-server
@@ -333,10 +342,17 @@ Install the ROBOTIS ROS Package from the OPC.
     $ catkin_make  
     ```
 
-3. Troubling Shot for `libGL` in 64bit Ubuntu
+- Dependencies Package contains ..  
+  - qt-ros  
+  - map_server   
+  - nav_msgs  
+  - humanoid_nav_msgs  
+  - sbpl  
+  - octomap-ros  
+    
+**INFO** : If  `libGL` in 64bit Ubuntu has a problem, refer to [Trouble Shooting](http://techtidings.blogspot.kr/2012/01/problem-with-libglso-on-64-bit-ubuntu.html).
+{: .notice--info}
 
-    `Reference` : [Link]
-    {: .notice}
 
 
 ### [Update](#update)
@@ -399,7 +415,7 @@ $ sudo apt install madplay mpg321
 [Environment Setting Reference]: http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment
 [ROS Network Setup Reference]: http://wiki.ros.org/ROS/NetworkSetup
 [sbpl install instruction]: https://github.com/sbpl/sbpl
-[Link]: http://techtidings.blogspot.kr/2012/01/problem-with-libglso-on-64-bit-ubuntu.html
+
 [http://wiki.ros.org/urg_node]:http://wiki.ros.org/urg_node
 [http://wiki.ros.org/RealSense]:http://wiki.ros.org/RealSense
 [http://wiki.ros.org/uvc_camera]:http://wiki.ros.org/uvc_camera

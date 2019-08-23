@@ -9,20 +9,22 @@ permalink: /docs/en/platform/openmanipulator_x/ros_controller_package/
 sidebar:
   title: OpenMANIPULATOR-X
   nav: "openmanipulator_x"
+product_group: openmanipulator_x
+page_number: 6
 ---
 
 <div style="counter-reset: h1 5"></div>
 
 # [[ROS] Controller Package](#ros-controller-package)
 
-The OpenMANIPULATOR-X controller provides basic manipulation of OpenMANIPULATOR. You can control the dynamixel of OpenMANIPULATOR-X and check states of OpenMANIPULATOR-X through [messages](/docs/en/platform/openmanipulator_x/ros_controller_package/#message-list) of the controller.
+The OpenMANIPULATOR-X controller provides basic manipulation of OpenMANIPULATOR-X. You can control DYNAMIXEL's of OpenMANIPULATOR-X and check states of OpenMANIPULATOR-X through [messages](/docs/en/platform/openmanipulator_x/ros_controller_package/#message-list) of the controller.
 
 **NOTE**: This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 {: .notice--info}
 
 ## [Launch Controller](#launch-controller)
 
-Before you launch controller, let's check `open_manipulator_controller` launch file in `open_manipulator_controller` package.
+Before launching the controller, Please check `open_manipulator_controller` launch file in `open_manipulator_controller` package.
 
   ```
   <launch>
@@ -57,7 +59,7 @@ Before you launch controller, let's check `open_manipulator_controller` launch f
   </launch>
   ```
 
-**Parameters List** : The parameters list is used to set control environments.
+**Parameters List** : The following parameters set control environments.
 - `use_robot_name`
 - `dynamixel_usb_port`
 - `dynamixel_baud_rate`
@@ -68,21 +70,21 @@ Before you launch controller, let's check `open_manipulator_controller` launch f
 - `moveit_sample_duration`
 
 `use_robot_name` is a parameter to set manipulator name(namespace of ROS messages).  
-`dynamixel_usb_port` is a parameter to set use port to connected with Dynamixel of OpenMANIPULATOR. If you use U2D2, it should be set **/dev/ttyUSB@**. If you use OpenCR, it should be set **/dev/ttyACM@** (@ indicates the port number connected to the Dynamixel).  
-`dynamixel_baud_rate` is a parameter to set baud rate of dynamixel. default baud rate of dynamixel used in OpenMANIPULATOR-X is 1000000.  
-`control_period` is a parameter to set communication period between dynamixel and PC (control loop time).  
+`dynamixel_usb_port` is a parameter to set USB port to connect with DYNAMIXEL of OpenMANIPULATOR-X. If you use U2D2, it should be set **/dev/ttyUSB@**. If you use OpenCR, it should be set **/dev/ttyACM@** (@ indicates the port number connected to the DYNAMIXEL).  
+`dynamixel_baud_rate` is a parameter to set baud rate of DYNAMIXEL. default baud rate of DYNAMIXEL used in OpenMANIPULATOR-X is 1000000.  
+`control_period` is a parameter to set communication period between DYNAMIXEL and PC (control loop time).  
 `use_platform` is a parameter that sets whether to use the actual OpenMANIPULATOR-X or OpenMANIPULATOR-X simulation. please refer [ROS Simulation](/docs/en/platform/openmanipulator_x/ros_simulation/#ros-simulation) chapter.  
-`use_moveit`, `planning_group_name` and `moveit_sample_duration` are parameters supposed to set loading [move_group](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/move_group_interface/move_group_interface_tutorial.html) package. please refer [MoveIt!](/docs/en/platform/openmanipulator_x/ros-operation/#moveit) chapter.
+`use_moveit`, `planning_group_name` and `moveit_sample_duration` are parameters to load [move_group](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/move_group_interface/move_group_interface_tutorial.html) package. please refer to [MoveIt!](/docs/en/platform/openmanipulator_x/ros-operation/#moveit) chapter.
 
-After set the parameters, launch the OpenMANIPULATOR-X controller to start [[ROS] Operation](/docs/en/platform/openmanipulator_x/ros_operation/#ros-operation).
+After setting the parameters, launch the OpenMANIPULATOR-X controller to start [[ROS] Operation](/docs/en/platform/openmanipulator_x/ros_operation/#ros-operation).
 
-Please, open the terminal window, run roscore as entering following command.
+Please, open Terminal then run roscore along with following command.
 
 ``` bash
 $ roscore
 ```
 
-After run roscore, open the other terminal window and enter the following commands in the terminal.
+After running roscore, open another Terminal then write the following commands in Terminal.
 
 ``` bash
 $ roslaunch open_manipulator_controller open_manipulator_controller.launch
@@ -98,7 +100,7 @@ The picture on the below is showing you the ideal pose of OpenMANIPULATOR-X. Ple
 {% endcapture %}
 <div class="notice--warning">{{ warning_01 | markdownify }}</div>
 
-If the OpenMANIPULATOR-X controller has been launched successfully, the terminal will show the following message.
+Follwing message will be shown in the Terminal after the process done successfully.  
 
 ```
 SUMMARY
@@ -130,14 +132,14 @@ Gripper Dynamixel ID : 15, Model Name :XM430-W350
 
 {% capture notice_01 %}
 **TIP**:
-- If you can't load Dynamixels, please check your Dynamixels settings using the following command from the Dynamixel-Workbench packages.   
+- If you can't load DYNAMIXEL, please check your DYNAMIXEL settings using the following command from the DYNAMIXEL-Workbench packages.   
 `rosrun dynamixel_workbench_controllers find_dynamixel /dev/ttyUSB0`  
-Even if you can't find any Dynamixels, please check firmware to use ROBOTIS software ([R+ Manager 2.0](http://emanual.robotis.com/docs/en/software/rplus2/manager/) or [R+ Manager 1.0](http://emanual.robotis.com/docs/en/software/rplus2/manager/))
-- If you would like to change Dynamixel ID, please check [`OpenManipulator.cpp`](https://github.com/ROBOTIS-GIT/open_manipulator/blob/be2859a0506b4e941a19435c0a07562b41768a27/open_manipulator_libs/src/OpenManipulator.cpp#L40) in the open_manipulator_lib folder. The default ID is **11, 12, 13, 14** for joints and **15** for the gripper
+Even if you can't find any DYNAMIXEL, please check firmware to use ROBOTIS software ([R+ Manager 2.0](http://emanual.robotis.com/docs/en/software/rplus2/manager/) or [DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/#firmware-update))
+- If you would like to change Dynamixel ID, please check [`open_manipulator.cpp`](https://github.com/ROBOTIS-GIT/open_manipulator/blob/be2859a0506b4e941a19435c0a07562b41768a27/open_manipulator_libs/src/OpenManipulator.cpp#L40) in the open_manipulator_lib folder. The default ID is **11, 12, 13, 14** for joints and **15** for the gripper
 {% endcapture %}
 <div class="notice--success">{{ notice_01 | markdownify }}</div>
 
-**NOTE**: open_manipulator_controller is compatible with [Protocol 2.0](/docs/en/dxl/protocol2/). Since [Protocol 1.0](/docs/en/dxl/protocol1/) doesn't support SyncRead instructions that has access to multiple Dynamixels simultaneously. Protocol 2.0 supports [`MX2`](/docs/en/dxl/mx/mx-64-2/), `X` and `Pro` series, but it does not support `AX`, `RX` and `EX`.
+**NOTE**: OpenMANIPULATOR-X controller is compatible with [Protocol 2.0](/docs/en/dxl/protocol2/). [Protocol 1.0](/docs/en/dxl/protocol1/) doesn't support SyncRead instructions that access to multiple DYNAMIXEL's simultaneously. Protocol 2.0 supports `MX 2.0`, `X` and `Pro` series, but it does not support `AX`, `RX` and `EX`.
 {: .notice--info}
 
 ## [Check Setting](#check-setting)
@@ -147,8 +149,8 @@ Even if you can't find any Dynamixels, please check firmware to use ROBOTIS soft
 {% capture notice_01 %}
 **NOTE**:
 - The below instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-- This instruction is supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
-- Make sure to run the [OpenMANIPULATOR controller](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) instructions before running the instructions below.
+- This instruction is supposed to be run on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
+- Make sure to run the [OpenMANIPULATOR-X controller](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) instructions before running the instructions below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -158,9 +160,10 @@ Publish a topic message to check the OpenMANIPULATOR-X setting.
 $ rostopic pub /open_manipulator/option std_msgs/String "print_open_manipulator_setting"
 ```
 
-<**Manipulator Description**> will be printed on the terminal launch the open_manipulator_controller. It is shown that present states of the OpenMANIPULATOR.  
-This parameter is descripted on OpenMANIPULATOR.cpp in open_manipulator_libs package.  
-`~/catkin_ws/src/open_manipulator/open_manipulator_libs/src/OpenManipulator.cpp`
+<**Manipulator Description**> will be printed on Terminal. 
+Launch the open_manipulator_controller. It is shown that present states of the OpenMANIPULATOR-X.  
+This parameter is descripted on open_manipulator.cpp in open_manipulator_libs package.  
+`~/catkin_ws/src/open_manipulator/open_manipulator_libs/src/open_manipulator.cpp`
 
 ```
     ----------<Manipulator Description>----------
@@ -453,8 +456,8 @@ $ roslaunch open_manipulator_description open_manipulator_rviz.launch
 
 {% capture notice_01 %}
 **NOTE**:
-- If you launched the [OpenMANIPULATOR controller](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) before launching the open_manipulator_controller file, the robot model on RViz would be synchronized with the actual robot.
-- If the user would like to check only model of OpenMANIPULATOR-X without control the actual OpenMANIPULATOR, the user can launch the RViz without the OpenMANIPULATOR-X controller.
+- If you launched the [OpenMANIPULATOR-X controller](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) before launching the open_manipulator_controller file, the robot model on RViz would be synchronized with the actual robot.
+- If users would like to check only model of OpenMANIPULATOR-X without control the actual OpenMANIPULATOR, the user can launch the RViz without the OpenMANIPULATOR-X controller.
 The user can change each joint by GUI, if the user launch only RViz by executing the following command :
 `$ roslaunch open_manipulator_description open_manipulator_rviz.launch use_gui:=true`
 
@@ -468,12 +471,12 @@ The user can change each joint by GUI, if the user launch only RViz by executing
 {% capture notice_01 %}
 **NOTE**:
 - This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-- This instruction is supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
-- Make sure to run the [OpenMANIPULATOR controller](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) instructions before running the instructions below.
+- This instruction is supposed to be run on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
+- Make sure to run the [OpenMANIPULATOR-X controller](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) instructions before running the instructions below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-OpenMANIPULATOR Controller provides **topic** and **service** messages to control manipulator and check the states of manipulator.
+OpenMANIPULATOR-X Controller provides **topic** and **service** messages to control manipulator and check the states of manipulator.
 
 ### [Topic](#topic)
 
@@ -487,14 +490,14 @@ $ rqt
 ```
  <img src="/assets/images/platform/openmanipulator_x/rqt_om.png" width="1000">
 
-**TIP**: If rqt is not displayed, select the `plugin` -> `Topics` -> `OpenMANIPULATOR`.
+**TIP**: If rqt is not displayed, select the `plugin` -> `Topic Monitor` -> `OpenMANIPULATOR`.
 {: .notice--success}
 
-Topics without their checkboxes clicked will not be monitored. To monitor topics, click on the checkboxes next to topic names.
+Topics without a check mark will not be monitored. To monitor topics, click the checkbox next.  
 
  <img src="/assets/images/platform/openmanipulator_x/rqt_1.png" width="1000">
 
-If you would like to see more detail topic message, click the `▶` button next to each checkbox.
+If you would like to see more details about topic message, click the `▶` button next to each checkbox.  
 
  <img src="/assets/images/platform/openmanipulator_x/rqt_2.png" width="1000">
 
@@ -513,7 +516,7 @@ A list of topics that the open_manipulator_controller publishes.
 **NOTE**: These topics are messages for checking the status of the robot regardless of the robot's motion.
 {: .notice--info}
 
-`/open_manipulator/joint_states`([sensor_msgs/JointState]{: .popup}) is a message indicating the states of joints of OpenMANIPULATOR. **"name"** indicates joint component names.  **"effort"** shows currents of the joint Dynamixels. **"position"** and **"velocity"** indicates angles and angular velocities of joints.
+`/open_manipulator/joint_states`([sensor_msgs/JointState]{: .popup}) is a message indicating the states of joints of OpenMANIPULATOR-X. **"name"** indicates joint component names.  **"effort"** shows currents of the joint DYNAMIXEL. **"position"** and **"velocity"** indicates angles and angular velocities of joints.
 
  <!-- <img src="/assets/images/platform/openmanipulator_x/rqt_joint_states.png" width="1000"> -->
 
@@ -521,7 +524,7 @@ A list of topics that the open_manipulator_controller publishes.
 
  <!-- <img src="/assets/images/platform/openmanipulator_x/rqt_kinematic_pose.png" width="1000"> -->
 
-`/open_manipulator/states`([open_manipulator_msgs/OpenManipulatorState]{: .popup}) is a message indicating the status of OpenMANIPULATOR. **"open_manipulator_actuator_state"** indicates whether actuators (Dynamixels) are enabled ("ACTUATOR_ENABLE") or disabled ("ACTUATOR_DISABLE"). **"open_manipulator_moving_state"** indicates whether OpenMANIPULATOR-X is moving along the trajectory ("IS_MOVING") or stopped ("STOPPED").
+`/open_manipulator/states`([open_manipulator_msgs/OpenManipulatorState]{: .popup}) is a message indicating the status of OpenMANIPULATOR. **"open_manipulator_actuator_state"** indicates whether actuators (DYNAMIXEL) are enabled ("ACTUATOR_ENABLE") or disabled ("ACTUATOR_DISABLE"). **"open_manipulator_moving_state"** indicates whether OpenMANIPULATOR-X is moving along the trajectory ("IS_MOVING") or stopped ("STOPPED").
 
  <!-- <img src="/assets/images/platform/openmanipulator_x/rqt_states.png" width="1000"> -->
 
@@ -541,7 +544,7 @@ A list of topics that the open_manipulator_controller subscribes.
 **NOTE**: These topics are messages for checking the status of the robot regardless of the robot's motion.
 {: .notice--info}
 
-`/open_manipulator/option`([std_msgs/String]{: .popup}) is used to set OpenMANIPULATOR-X options. **"print_open_manipulator_setting"** : request the open_manipulator_controller controller to display "Manipulator Description".
+`/open_manipulator/option`([std_msgs/String]{: .popup}) is used to set OpenMANIPULATOR-X options. **"print_open_manipulator_setting"** : is to request the open_manipulator_controller to display "Manipulator Description".
 
  <!-- <img src="/assets/images/platform/openmanipulator_x/rqt_option.png" width="1000"> -->
 
@@ -559,7 +562,7 @@ In addition, you can monitor topics through rqt whenever you have a topic added 
 
 #### [Service Server List](#service-server-list)
 
-**NOTE**: These services are messages to operate OpenMANIPULATOR-X or to change the status of the Dynamixels of OpenMANIPULATOR.
+**NOTE**: These services are messages to operate OpenMANIPULATOR-X or to change the status of the DYNAMIXEL of OpenMANIPULATOR.
 {: .notice--info}
 
 

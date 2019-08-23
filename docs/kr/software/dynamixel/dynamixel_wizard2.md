@@ -11,9 +11,17 @@ sidebar:
   nav: "dynamixel_wizard2"
 ---
 
+
+![](/assets/images/sw/dynamixel/wizard2/wizard2_main_003.png)
+
 # [개요](#개요)
 
 ![](/assets/images/sw/dynamixel/wizard2/wizard2_main_000.jpg)
+
+**소프트웨어 다운로드**  
+[윈도우 (v2.0.3)](http://www.robotis.com/service/download.php?no=1670)  
+[리눅스 (v2.0.3)](http://www.robotis.com/service/download.php?no=1671)  
+[맥 (v2.0.3)](http://www.robotis.com/service/download.php?no=1760)  
 
 ## [다이나믹셀 위자드 2.0](#다이나믹셀-위자드-20)
 
@@ -73,45 +81,22 @@ sidebar:
 | **ETC**          | [RH-P12-RN]                    | [RH-P12-RN(A)]                 |                                |                                |                 |
 
 
-# [메뉴 설명](#메뉴-설명)
-
-## [메인 화면](#메인-화면)
-
-프로그램의 메인화면은 검색된 제품을 통신포트, 통신속도, 모델명에 따라 분류하여 나타내며, 컨트롤 테이블 값을 변경하여 테스트할 수 있습니다.
-
-![](/assets/images/sw/dynamixel/wizard2/wizard2_main_002_kr.png)
-
-## [그래프 창](#그래프-창)
-
-표시항목을 설정하면 실시간으로 변화되는 값을 확인할 수 있습니다. 그래프 표시 항목 설정 방법은 [기본 기능 - 그래프]를 참고하세요
-
-![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_001_kr.png)
-
-## [패킷 창](#패킷-창)
-
-선택한 프로토콜 버전의 Instruction패킷을 직접 생성하여 전송해볼 수 있습니다. 또한 패킷통신목록에서 항목을 선택하면 상세정보를 확인할 수 있습니다.
-
-![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_001_kr.png)
-
 # [다이나믹셀 위자드 2.0 설치](#다이나믹셀-위자드-20-설치)
-
-**소프트웨어 다운로드**
-  - [윈도우즈](http://www.robotis.com/service/download.php?no=1670)
-  - [리눅스](http://www.robotis.com/service/download.php?no=1671)
-  - [맥 OS](http://www.robotis.com/service/download.php?no=1760)
 
 ## [윈도우에서 설치하기](#윈도우에서-설치하기)
 
-1. 다운받은 설치파일을 실행합니다.  
+1. 윈도우즈 전용 패키지를 다운로드 합니다.  
+  - [윈도우즈 소프트웨어 다운로드 (v2.0.3)](http://www.robotis.com/service/download.php?no=1670)
+2. 다운받은 설치파일을 실행합니다.  
 
-2. 안내에 따라 `Next`버튼을 눌러 설치를 진행합니다.
+3. 안내에 따라 `Next`버튼을 눌러 설치를 진행합니다.
 
 ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_win_01.png)
 
 ## [리눅스에서 설치하기](#리눅스에서-설치하기)
 
-1. 리눅스용 설치파일을 다운로드합니다.
-
+1. 리눅스 설치패키지를 다운로드합니다.  
+  - [리눅스 소프트웨어 다운로드 (v2.0.3)](http://www.robotis.com/service/download.php?no=1671)  
 2. 다음의 명령어를 수행하여 설치파일의 실행권한을 변경합니다.
 
     ```c
@@ -128,7 +113,8 @@ sidebar:
 
 ## [맥에서 설치하기](#맥에서-설치하기)
 
-1. 설치 패키지를 다운로드 합니다.  
+1. 맥 OS 설치 패키지를 다운로드 합니다.  
+  - [맥 소프트웨어 다운로드 (v2.0.3)](http://www.robotis.com/service/download.php?no=1760)
 2. 다운로드가 완료된 dmg 파일을 오른쪽 클릭하고 `Open(열기)`를 선택합니다.  
   ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_mac_01.png)
 3. `DynamixelWizard2Setup_x64` 파일을 실행합니다.  
@@ -155,6 +141,32 @@ sidebar:
 2. `Remove all components`를 선택하고 `Next`버튼을 눌러 제거를 진행합니다.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_linux_03.png)
+
+## [맥에서 제거하기](#맥에서-제거하기)
+
+1. 어플리케이션에서 `DYNAMIXEL2Wizard`를 선택합니다.
+2. DYNAMIXEL2Wizard 폴더 내의 `maintenancetool`을 실행합니다.
+3. `Remove all components`를 선택하고 `Next`버튼을 눌러 제거를 진행합니다.
+
+# [메뉴 설명](#메뉴-설명)
+
+## [메인 화면](#메인-화면)
+
+프로그램의 메인화면은 검색된 제품을 통신포트, 통신속도, 모델명에 따라 분류하여 나타내며, 컨트롤 테이블 값을 변경하여 테스트할 수 있습니다.
+
+![](/assets/images/sw/dynamixel/wizard2/wizard2_main_002_kr.png)
+
+## [그래프 창](#그래프-창)
+
+표시항목을 설정하면 실시간으로 변화되는 값을 확인할 수 있습니다. 그래프 표시 항목 설정 방법은 [기본 기능 > 그래프]를 참고하세요
+
+![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_001_kr.png)
+
+## [패킷 창](#패킷-창)
+
+선택한 프로토콜 버전의 Instruction패킷을 직접 생성하여 전송해볼 수 있습니다. 또한 패킷통신목록에서 항목을 선택하면 상세정보를 확인할 수 있습니다.
+
+![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_001_kr.png)
 
 # [기본 기능](#기본-기능)
 
@@ -575,7 +587,7 @@ sidebar:
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_007_kr.png)
 
 
-[기본 기능 - 그래프]: #그래프
+[기본 기능 > 그래프]: #그래프
 [Protocol 1.0]: /docs/kr/dxl/protocol1/
 [Protocol 2.0]: /docs/kr/dxl/protocol2/
 [AX-12W]: /docs/kr/dxl/ax/ax-12w/

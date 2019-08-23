@@ -132,7 +132,7 @@ $ roslaunch open_manipulator_pro_bringup open_manipulator_pro.launch with_grippe
 `/robotis/base/get_kinematics_pose` ([manipulator_manipulation_module_msgs/GetKinematicsPose]{: .popup})   
 &emsp;&emsp; Service to read current end effector's pose
 
-
+[BOM]: /docs/en/popup/turtlbot3_bom/
 [std_msgs/String]: /docs/en/popup/std_msgs_string/
 [std_msgs/Float64]: /docs/en/popup/std_msgs_Float64_msg/
 [geometry_msgs/Pose]: /docs/en/popup/geometry_msgs_Pose_msg/

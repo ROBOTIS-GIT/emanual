@@ -9,6 +9,8 @@ permalink: /docs/en/platform/turtlebot3/locomotion/
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
+product_group: turtlebot3
+page_number: 27
 ---
 
 <div style="counter-reset: h1 15"></div>
@@ -19,9 +21,10 @@ In the video, watch how TurtleBot3 can be assembled and reassembled with a few a
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/o9d7NVC0A1Y" frameborder="0" allowfullscreen></iframe>
 
-With this openended component, handful of TurtleBot3 friends with various characteristics could be built. You can create a totally new robot that is never seen before. Create a variety of robots based on open hardware and try out the new Locomotion.
+With this openended component, handful of TurtleBot3 friends with various characteristics could be built. You can create a totally new robot that is never seen before. Create a variety of robots based on open hardware and try out the new Locomotion.  
 
-- `TurtleBot3 Friends List`
+**TurtleBot3 Friends List**
+ 
 - [TurtleBot3 Friends: Car](#turtlebot3-friends-car)
 - [TurtleBot3 Friends: OpenManipulator](#turtlebot3-friends-openmanipulator)
 - [TurtleBot3 Friends: Segway](#turtlebot3-friends-segway)
@@ -33,11 +36,33 @@ With this openended component, handful of TurtleBot3 friends with various charac
 - [TurtleBot3 Friends: Bike](#turtlebot3-friends-bike)
 - [TurtleBot3 Friends: Road Train](#turtlebot3-friends-road-train)
 - [TurtleBot3 Friends: Real TurtleBot](#turtlebot3-friends-real-turtlebot)
-- [TurtleBot3 Friends: Carrier](#turtlebot3-friends-carrier)
+- [TurtleBot3 Friends: Carrier](#turtlebot3-friends-carrier)  
 
+**Components List ( BOM )**  
 
-- `Components List File`
-- [BOM](https://goo.gl/XPgJkZ)
+| Single Item                                                 | Quantity | Set Item                  | Quantity | Purchase Links                                                                                                                                                                         |
+|:------------------------------------------------------------|:---------|:--------------------------|:---------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| XL430-W250-T ([e-Manual](/docs/en/dxl/x/xl430-w250/))       | 2        | XL430-W250-T              | 2        | [ROBOTIS SHOP](http://en.robotis.com/shop_en/item.php?it_id=902-0135-000)                                                                                                              |
+| ROBOT CABLE-X4P 240mm                                       | 2        | ROBOT CABLE-X4P 240mm     | 2        | [ROBOTIS SHOP](http://en.robotis.com/shop_en/item.php?it_id=903-0245-000)                                                                                                              |
+| OpenCR1.0 ([e-Manual](/docs/en/parts/controller/opencr10/)) | 1        | OpenCR1.0                 | 1        | [ROBOTIS SHOP](http://en.robotis.com/shop_en/item.php?it_id=903-0257-000)                                                                                                              |
+| TB3 Waffle Plate-IPL-01                                     | 6        | TB3 Waffle Plate-IPL-01   | 1        | [ROBOTIS SHOP](http://en.robotis.com/shop_en/item.php?it_id=903-0259-000)                                                                                                              |
+| TB3 PCB Support-IBB-01                                      | 4        | TB3 PCB Support-IBB-01    | 1        | [ROBOTIS SHOP](http://en.robotis.com/shop_en/item.php?it_id=903-0261-000)                                                                                                              |
+| Rivet-Mg(n)                                                 | 4        | Rivet-Mg(n)               | 4        | [ROBOTIS SHOP](http://en.robotis.com/shop_en/item.php?it_id=913-3002-000)                                                                                                              |
+| TB3 Wheel/Tire                                              | 2        | TB3 Wheel/Tire Set-ISW-01 | 1        | [ROBOTIS SHOP](http://en.robotis.com/shop_en/item.php?it_id=903-0260-000)                                                                                                              |
+| PHS M3x8mm                                                  | 20       | None                      | None     | [Online Store](https://us.misumi-ec.com/vona2/detail/110302280810/?HissuCode=NKJ3-8&PNSearch=NKJ3-8&KWSearch=NKJ3-8&searchFlow=results2type)                                           |
+| PHS M2.5x8mm                                                | 4        | None                      | None     | [Online Store](https://us.misumi-ec.com/vona2/detail/110302280810/?HissuCode=NKJ2.5-8&PNSearch=NKJ2.5-8&KWSearch=NKJ2.5-8&searchFlow=results2type)                                     |
+| PHS M2.5x12mm                                               | 16       | None                      | None     | [Online Store](https://us.misumi-ec.com/vona2/detail/221000802128/?HissuCode=00000000-M2.5X12-SUS&PNSearch=00000000-M2.5X12-SUS&KWSearch=00000000-M2.5X12-SUS&searchFlow=results2type) |
+| WB_M2x4mm                                                   | 8        | None                      | None     | [Online Store](https://us.misumi-ec.com/vona2/detail/221000551286/?HissuCode=CSH-ST-M2-4&PNSearch=CSH-ST-M2-4&KWSearch=CSH-ST-M2-4&searchFlow=results2type)                            |
+| WB_M2.5x20mm                                                | 8        | None                      | None     | [Online Store](https://us.misumi-ec.com/vona2/detail/221000551286/?HissuCode=CSH-ST-M2.5-20&PNSearch=CSH-ST-M2.5-20&KWSearch=CSH-ST-M2.5-20&searchFlow=results2type)                   |
+| NUT_M2.5                                                    | 4        | None                      | None     | [Online Store](https://us.misumi-ec.com/vona2/detail/110300250540/?HissuCode=SLBNR2.5&PNSearch=SLBNR2.5&KWSearch=SLBNR2.5&searchFlow=results2type)                                     |
+| NUT_M3                                                      | 8        | None                      | None     | [Online Store](https://us.misumi-ec.com/vona2/detail/110300250540/?HissuCode=SLBNR3&PNSearch=SLBNR3&KWSearch=SLBNR3&searchFlow=results2type)                                           |
+| SB-S3-45                                                    | 4        | None                      | None     | [Online Store](https://us.misumi-ec.com/vona2/detail/110500137950/?HissuCode=SB-O3-45&searchFlow=results2similartn)                                                                    |
+| SB-S3-35                                                    | 2        | None                      | None     | [Online Store](https://us.misumi-ec.com/vona2/detail/110500137950/?HissuCode=SB-O3-35&searchFlow=results2similartn)                                                                    |
+| 3D printing parts(HV Converter)                             | 4        | None                      | None     | [Onshape](https://cad.onshape.com/documents/f369a265c003df3767a37472/w/42e27bfc98b5e204f5a483fe/e/5b993b12303647b7aa5484f2)                                                            |
+
+[BOM spreadsheets](https://docs.google.com/spreadsheets/d/1vbIFMRJMbyOd2D6BtwV1Ow_yBc9xRHktqZhTTmwI_l4/edit#gid=368658157)  
+ 
+
 
 ![](/assets/images/platform/turtlebot3/friends/All_friends.jpg)
 
@@ -73,7 +98,7 @@ With this openended component, handful of TurtleBot3 friends with various charac
 - **Features**: Compatible with TurtleBot3 Waffle Pi and it has linear gripper for pick and place.
 - **Components**: Four Dynamixel X 430 Series (Four for joints, one for gripper), an OpenCR1.0 Board, 3D printed chassis.
 - **BOM**: Please refer to the [Parts of OpenManipulator](https://docs.google.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit#gid=490107710)
-- **DIY Manual**: Please refer to the [link](https://docs.google.com/document/d/1c5U0v2dQhYiulqiWI0VQMameG82WCc-4rl6J6zlQejA/edit?usp=sharing)
+<!-- - **DIY Manual**: Please refer to the [link](https://docs.google.com/document/d/1c5U0v2dQhYiulqiWI0VQMameG82WCc-4rl6J6zlQejA/edit?usp=sharing)-->
 - Hardware for TurtleBot3 Waffle Pi + OpenManipulator ([Onshape](https://cad.onshape.com/documents/1535c2d7f05d4986e5ab539c/w/72b49bd8c74a47b010391012/e/454b64d637f42073514486f4), [Thingiverse](https://www.thingiverse.com/thing:3081010))
 - Hardware for OpenManipulator ([Onshape](http://www.robotis.com/service/download.php?no=690), [Thingiverse](https://www.thingiverse.com/thing:3069574))
 - [Software](https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3) (We are preparing for OpenCR Example)
@@ -242,3 +267,6 @@ With this openended component, handful of TurtleBot3 friends with various charac
   <iframe width="560" height="315" src="https://www.youtube.com/embed/5NYdgnzxykc" frameborder="0" allowfullscreen></iframe>
 
   <iframe width="560" height="315" src="https://www.youtube.com/embed/u7qb8xiSiNg" frameborder="0" allowfullscreen></iframe>
+
+
+[BOM]: /docs/en/popup/turtlebot3_bom

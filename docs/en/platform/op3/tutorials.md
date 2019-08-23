@@ -9,6 +9,8 @@ permalink: /docs/en/platform/op3/tutorials/
 sidebar:
   title: ROBOTIS OP3
   nav: "op3"
+product_group: op3
+page_number: 5
 ---
 
 <div style="counter-reset: h1 4"></div>

@@ -9,6 +9,8 @@ permalink: /docs/en/platform/turtlebot3/getting_started/
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
+product_group: turtlebot3
+page_number: 5
 ---
 
 <div style="counter-reset: h1 4"></div>

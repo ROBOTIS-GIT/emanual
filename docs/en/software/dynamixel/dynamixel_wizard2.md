@@ -11,9 +11,17 @@ sidebar:
   nav: "dynamixel_wizard2"
 ---
 
+![](/assets/images/sw/dynamixel/wizard2/wizard2_main_003.png)
+
+
 # [Introduction](#introduction)
 
 ![](/assets/images/sw/dynamixel/wizard2/wizard2_main_000.jpg)
+
+**Software Download(v2.0.3)**  
+[Windows](http://www.robotis.com/service/download.php?no=1670)  
+[Linux](http://www.robotis.com/service/download.php?no=1671)  
+[Mac](http://www.robotis.com/service/download.php?no=1760)  
 
 ## [DYNAMIXEL Wizard 2.0](#dynamixel-wizard-20)
 
@@ -77,49 +85,21 @@ Although almost all ROBOTIS products are shipped with preinstalled firmwares, ne
 
 
 
-
-
-# [Menu Description](#menu-description)
-
-## [Main Screen](#main-screen)
-
-The main screen of software classifies the detected DYNAMIXELs according to communication ports, baudrates, and products.
-Detected DYNAMIXELs can be tested by modifying control table values.
-
-![](/assets/images/sw/dynamixel/wizard2/wizard2_main_002.png)
-
-## [Graph Window](#graph-window)
-
-By selecting control table items to be plotted, values of the selected items will be drawn in the graph window in real time.
-Please refer to [Basic Feature > Graph] section for more details about selecting control table items.
-
-![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_001.png)
-
-## [Packet Window](#packet-window)
-
-User can manually generate an Instruction packet for the selected protocol version.
-Detailed packet data can be loaded by selecting a packet in the packet history.
-
-![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_001.png)
-
 # [Software Installation](#software-installation)
-
-**Download Software**
-  - [for Windows](http://www.robotis.com/service/download.php?no=1670)
-  - [for Linux](http://www.robotis.com/service/download.php?no=1671)
-  - [for Mac](http://www.robotis.com/service/download.php?no=1760)
 
 ## [Install: Windows](#install-windows)
 
-1. Execute downloaded installation file.
-2. Click on `Next` button to proceed installation.
+1. Download the package file.
+- [Windows Software Download(v2.0.3)](http://www.robotis.com/service/download.php?no=1670)  
+2. Execute downloaded installation file.  
+3. Click on `Next` button to proceed installation.
 
 ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_win_01.png)
 
 ## [Install: Linux](#install-linux)
 
-1. Download the installation file.
-
+1. Download the package file.  
+- [Linux Software Download(v2.0.3)](http://www.robotis.com/service/download.php?no=1671)  
 2. Enter the following command to change the permission.
 
     ```c
@@ -137,6 +117,7 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 ## [Install: Mac](#install-mac)
 
 1. Download the package file.  
+- [Mac Software Download(v2.0.3)](http://www.robotis.com/service/download.php?no=1760)
 2. Right click on the downloaded dmg file and select `Open` from the mene.  
   ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_mac_01.png)
 3. Launch the `DynamixelWizard2Setup_x64` file.  
@@ -169,6 +150,35 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 2. Select `Remove all components` and click `Next` to proceed.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_linux_03.png)
+
+## [Uninstall: Mac](#uninstall-mac)
+
+1. Go to `DYNAMIXEL2Wizard` from `Applications`.
+2. Execute `maintenancetool` in DYNAMIXEL2Wizard folder.
+3. Select `Remove all components` and click `Next` to proceed.
+
+# [Menu Description](#menu-description)
+
+## [Main Screen](#main-screen)
+
+The main screen of software classifies the detected DYNAMIXELs according to communication ports, baudrates, and products.
+Detected DYNAMIXELs can be tested by modifying control table values.
+
+![](/assets/images/sw/dynamixel/wizard2/wizard2_main_002.png)
+
+## [Graph Window](#graph-window)
+
+By selecting control table items to be plotted, values of the selected items will be drawn in the graph window in real time.
+Please refer to [Basic Features > Graph] section for more details about selecting control table items.
+
+![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_001.png)
+
+## [Packet Window](#packet-window)
+
+User can manually generate an Instruction packet for the selected protocol version.
+Detailed packet data can be loaded by selecting a packet in the packet history.
+
+![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_001.png)
 
 # [Basic Features](#basic-features)
 
@@ -589,7 +599,7 @@ In order to use the minimum communication interval(1 [ms]), please follow the in
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_007.png)
 
-[Basic Feature > Graph]: #graph
+[Basic Features > Graph]: #graph
 [Protocol 1.0]: /docs/en/dxl/protocol1/
 [Protocol 2.0]: /docs/en/dxl/protocol2/
 [AX-12W]: /docs/en/dxl/ax/ax-12w/

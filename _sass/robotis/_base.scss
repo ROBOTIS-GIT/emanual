@@ -24,6 +24,7 @@ html {
 
 body {
   counter-reset: h1;
+  top: 0px !important; 
   margin: 0;
   padding: 0;
   color: $text-color;
@@ -104,6 +105,7 @@ h1, h2, h3, h4, h5, h6 {
     iframe {
       margin-left: 1em;
       margin-top: 0.1em;
+      display: block;
     }
   }
 }
@@ -147,6 +149,7 @@ h1, h2, h3, h4, h5, h6 {
     iframe {
       margin-left: 2em;
       margin-top: 0.1em;
+      display: block;
     }
   }
 }
@@ -190,6 +193,7 @@ h1, h2, h3, h4, h5, h6 {
     iframe {
       margin-left: 3.3em;
       margin-top: 0.1em;
+      display: block;
     }
   }
 }
@@ -232,6 +236,7 @@ h1, h2, h3, h4, h5, h6 {
     iframe {
       margin-left: 4.5em;
       margin-top: 0.1em;
+      display: block;
     }
   }
 }
@@ -269,6 +274,7 @@ h1, h2, h3, h4, h5, h6 {
     iframe {
       margin-left: 6em;
       margin-top: 0.1em;
+      display: block;
     }
   }
 }
@@ -305,8 +311,13 @@ h1, h2, h3, h4, h5, h6 {
     iframe {
       margin-left: 7em;
       margin-top: 0.1em;
+      display: block;
     }
   }
+}
+
+.page_flipper {
+  margin: 3em 1em;
 }
 
 a {

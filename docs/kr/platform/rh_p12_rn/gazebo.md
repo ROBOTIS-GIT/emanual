@@ -9,6 +9,8 @@ permalink: /docs/kr/platform/rh_p12_rn/gazebo/
 sidebar:
   title: RH-P12-RN
   nav: "rh_p12_rn"
+product_group: rh_p12_rn
+page_number: 3
 ---
 
 <div style="counter-reset: h1 6"></div>

@@ -132,8 +132,20 @@ Green dot indicates the robot is connected to the program.
 
 - [More PLAY 700 Youtube Tutorials]{: .blank}
 
+# [Reference](#reference)
+
+## [Straightness Tuning](#straightness-tuning)
+
+If the robot dosen’t move straight and keep steering to the right or left, the straightness can be tuned under Tuning Mode.  
+
+Please refer to [Straightness Tuning](/docs/en/parts/controller/cm-50/#straightness-tuning) instruction from CM-50 manual. 
+{: .notice--info}
+
+
 [R+TASK]: /docs/en/software/rplus2/task/
 [SCRATCH]: /docs/en/software/rplus2/scratch/
+[RC-100]: /docs/en/parts/communication/rc-100/
+[BT-210]: /docs/en/parts/communication/bt-210/
 [BT-410]: /docs/en/parts/communication/bt-410/
 [BT-410 Dongle]: /docs/en/parts/communication/bt-410-dongle/
 [iOS]: https://itunes.apple.com/us/app/r-m-design-robotis/id975779539

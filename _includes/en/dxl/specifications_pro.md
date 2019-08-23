@@ -1,6 +1,7 @@
 
 | Item                    | Specifications                                            |
 |:------------------------|:----------------------------------------------------------|
+| MCU                     | {{ site.data.dxl_pro_info[page.ref].mcu }}                 |
 | Motor                   | {{ site.data.dxl_pro_info[page.ref].motor }}              |
 | Baud Rate               | {{ site.data.dxl_pro_info[page.ref].baudrate }}           |
 | Operating Modes         | {{ site.data.dxl_pro_info[page.ref].opmode_en }}          |

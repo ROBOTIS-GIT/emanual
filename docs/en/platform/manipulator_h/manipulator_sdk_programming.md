@@ -9,11 +9,17 @@ permalink: /docs/en/platform/manipulator_h/manipulator_sdk_programming/
 sidebar:
   title: MANIPULATOR-H
   nav: "manipulator_h"
+product_group: manipulator_h
+page_number: 3
 ---
 
 <div style="counter-reset: h1 2"></div>
 
 # [Manipulator SDK Programming](#manipulator-sdk-programming)
+
+**ROBOTIS Manipulator SDK Download**  
+[Manipulator H-32bit (zip)](http://en.robotis.com/service/download.php?no=58)  
+[Manipulator L-32bit (zip)](http://en.robotis.com/service/download.php?no=59)  
 
 ## [Manipulator SDK](#manipulator-sdk)
 

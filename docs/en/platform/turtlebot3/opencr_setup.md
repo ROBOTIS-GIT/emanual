@@ -9,6 +9,8 @@ permalink: /docs/en/platform/turtlebot3/opencr_setup/
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
+product_group: turtlebot3
+page_number: 11
 ---
 
 <div style="counter-reset: h1 6"></div>
@@ -35,7 +37,7 @@ sidebar:
 
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-#### [Shell Script](#shell-script)
+#### [(Recommended) Shell Script](#recommended-shell-script)
   
 This instruction was tested on `Ubuntu 16.04`, `Ubuntu Mate`, `Linux Mint` and `Raspbian`. You can use the following command after connecting OpenCR to remote PC (your desktop or laptop PC) or connect OpenCR to your TurtleBot PC (`Intel® Joule™`, `Raspberry Pi 3`) and execute the following command.
 
@@ -65,7 +67,7 @@ When firmware upload is completed, `jump_to_fw` text string will be printed on t
 
 When firmware upload is completed, `jump_to_fw` text string will be printed on the terminal.
 
-#### [Arduino IDE](#arduino-ide)
+#### [(Alternative) Arduino IDE](#alternative-arduino-ide)
 
 **WARNING**: The contents in this chapter corresponds to the `Remote PC` (your desktop or laptop PC) which will control TurtleBot3. Do **NOT** apply this instruction to your TurtleBot3.
 {: .notice--warning}

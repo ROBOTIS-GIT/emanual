@@ -16,8 +16,8 @@ This function gets present PWM value of DYNAMIXEL.
 
 - **id** : ID of a specific DYNAMIXEL. Data type : unsigned int8
 - **unit** : Types of value. Data type : unsigned int8
-- For raw value : UNIT_RAW (default)
-- For Percentage value : UNIT_PERCENT
+  - For raw value : UNIT_RAW (default)
+  - For Percentage value : UNIT_PERCENT
 
 
 ## Returns

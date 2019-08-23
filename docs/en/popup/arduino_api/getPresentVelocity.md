@@ -16,9 +16,9 @@ This function gets present velocity(wheel mode speed) of DYNAMIXEL.
 
 - **id** : ID of a specific DYNAMIXEL. Data type : unsigned int8
 - **unit** : Types of value. Data type : unsigned int8
-- For raw value : UNIT_RAW (default)
-- For RPM value : UNIT_RPM
-- For Percentage value : UNIT_PERCENT
+  - For raw value : UNIT_RAW (default)
+  - For RPM value : UNIT_RPM
+  - For Percentage value : UNIT_PERCENT
 
 
 ## Returns

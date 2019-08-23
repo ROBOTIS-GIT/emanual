@@ -9,6 +9,8 @@ permalink: /docs/en/platform/turtlebot3/raspberry_pi_3_setup/
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
+product_group: turtlebot3
+page_number: 9
 ---
 
 <div style="counter-reset: h1 6"></div>
@@ -48,7 +50,6 @@ sidebar:
 
 **[Remote PC]** Download `Ubuntu MATE 16.04` image for the Raspberry Pi 3 on your remote PC from the link below.
 
-- [Download page](https://ubuntu-mate.org/download/) (Choose ... > Raspberry Pi > 16.04.2 (Xenial) > Download Links)
 - [Direct download link](https://ubuntu-mate.org/raspberry-pi/ubuntu-mate-16.04.2-desktop-armhf-raspberry-pi.img.xz)
 
 **[Remote PC]** In order to write an Ubuntu MATE image to microSD, it is recommended using `GNOME Disks` with `Restore Disk Image...` option, which natively supports XZ compressed image.
@@ -194,7 +195,7 @@ We provide the Linux distro image based on Raspbian. They are pre-installed with
   - Run Etcher and select the Linux image you downloaded on your computer or laptop.
   - Select the SD card drive.
   - Click Burn to transfer the image to the SD card.
-- (other methods to burn) You can use 'dd' command in Linux or use application 'win32diskimager' in Windows. For a complete guide, take a look [here](https://elinux.org/RPi_Easy_SD_Card_Setup#Using_the_Linux_command_line) (for Linux users) and [here](elinux.org/RPi_Easy_SD_Card_Setup#Using_the_Win32DiskImager_program) (for Windows users)
+- (other methods to burn) You can use 'dd' command in Linux or use application 'win32 Disk Imager' in Windows. For a complete guide, take a look [here](https://elinux.org/RPi_Easy_SD_Card_Setup#Using_the_Linux_command_line) (for Linux users) and [here](https://elinux.org/RPi_Easy_SD_Card_Setup#Using_the_Win32DiskImager_program) (for Windows users)
 
 ##### TurtleBot PC
 - After the installation, you can login with username **pi** and password **turtlebot**. In this case, you have to connect your Raspberry Pi to your monitor using an HDMI cable, and connect your keyboard and mouse to the Raspberry Pi.

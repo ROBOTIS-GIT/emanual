@@ -9,6 +9,8 @@ permalink: /docs/en/platform/turtlebot3/simulation/
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
+product_group: turtlebot3
+page_number: 22
 ---
 
 <div style="counter-reset: h1 10"></div>
@@ -114,6 +116,9 @@ $ roslaunch turtlebot3_gazebo turtlebot3_world.launch
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ roslaunch turtlebot3_gazebo turtlebot3_house.launch
 ```
+
+**NOTE** : If `TurtleBot3 House` is excuted for the first time, downloading the map file takes a couple of minutes or more depending on download speed.
+{: .notice}
 
 ![](/assets/images/platform/turtlebot3/simulation/turtlebot3_house.png)
 

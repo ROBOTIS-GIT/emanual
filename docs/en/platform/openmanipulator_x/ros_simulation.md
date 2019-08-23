@@ -9,6 +9,8 @@ permalink: /docs/en/platform/openmanipulator_x/ros_simulation/
 sidebar:
   title: OpenMANIPULATOR-X
   nav: "openmanipulator_x"
+product_group: openmanipulator_x
+page_number: 8
 ---
 
 <div style="counter-reset: h1 7"></div>
@@ -69,7 +71,7 @@ Launch the open_manipulator_controller for gazebo simulation.
 {% capture notice_01 %}
 **NOTE**:
 - To control the OpenMANIPULATOR-X in the Gazebo environment using the OpenMANIPULATOR-X Controller, the controller must set the **use_platform** parameter to **false** because it needs to send messages to gazebo instead of Platform.
-- If you want to manipulate the OpenMANIPULATOR-X using Moveit within the Gazebo simulator, you should also convert the **use_moveit** to **ture** in open_manipulator_controller launch file.
+- If you want to manipulate the OpenMANIPULATOR-X using Moveit within the Gazebo simulator, you should also convert the **use_moveit** to **true** in open_manipulator_controller launch file.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -97,7 +99,7 @@ ROS_MASTER_URI=http://localhost:11311
 process[open_manipulator-1]: started with pid [9820]
 [ INFO] [1544506914.862653563]: Ready to simulate /open_manipulator on Gazebo
 ```
-**NOTE** : In OpenMANIPULATOR-X controller for gazebo simulation, Joint and Gripper Dynamixel are not enable, following messages will not display :  
+**NOTE** : In OpenMANIPULATOR-X controller for gazebo simulation, Joint and Gripper Dynamixel are not enable, following messages will not be displayed :  
 Joint Dynamixel ID : 11, Model Name : XM430-W350  
 Joint Dynamixel ID : 12, Model Name : XM430-W350  
 Joint Dynamixel ID : 13, Model Name : XM430-W350  

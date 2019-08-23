@@ -14,7 +14,7 @@
 4. PI 제어기는 목표 속도 궤적을 기반으로 모터에 인가할 PWM 출력을 계산합니다.
 5. [Goal PWM(100)]은 계산된 PWM 출력을 제한하여 최종 PWM값을 결정합니다.
 6. 최종 PWM값은 Inverter를 통해 모터에 적용되고 장치의 Horn이 구동됩니다.
-7. 구동 결과는 [Present Position(132)], [Present Velocity(128)] [Present PWM(124)], {% if page.product_group=='dxl_xl430' %}[Present Load(126)]{% else %}[Present Current(126)]{% endif %}에 표기됩니다.
+7. 구동 결과는 [Present Position(132)], [Present Velocity(128)], [Present PWM(124)], {% if page.product_group=='dxl_xl430' %}[Present Load(126)]{% else %}[Present Current(126)]{% endif %}에 표기됩니다.
 
 ![](/assets/images/dxl/velocity_controller_pi_gain.jpg)
 

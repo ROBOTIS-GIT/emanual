@@ -9,6 +9,8 @@ permalink: /docs/en/platform/thormang3/thormang3_operation/
 sidebar:
   title: THORMANG3
   nav: "thormang3"
+product_group: thormang3
+page_number: 5
 ---
 
 <div style="counter-reset: h1 4">
@@ -64,6 +66,9 @@ sidebar:
       ```
 
 ### roscore (PPC)
+
+**CAUTION** : If `roscore` is terminated while it is running, relaunch `roscore`, `thormang3 sensors` and `thormang3 manager`.
+{: .notice--warning}
 1. Connect to the **PPC**
     - via ssh  
       1. Run below command on the terminal.  
@@ -78,11 +83,10 @@ sidebar:
 
 2. Launch [roscore]  
   Execute below command on the Terminal  
-  ```bash
-  $ roscore
-  ```
+```bash
+$ roscore
+```
 
-    - If `roscore` is terminated while it is running, relaunch `roscore`, `thormang3 sensors` and `thormang3 manager`.
 
 ### thormang3 sensors (PPC)
 1. Connect to the **PPC**  
@@ -122,8 +126,7 @@ Simple demo of the [thormang3_manipulation_module]
 
 #### Install & Build
 
-  **NOTE** : Reference : [PPC Installation]
-  {: .notice}
+> Reference : [PPC Installation]
 
 #### Usage
 
@@ -172,8 +175,7 @@ Simple demo of the [thormang3_walking_module]
 
 #### Install & Build
 
-**NOTE** : Reference : [PPC Installation]
-{: .notice}
+> Reference : [PPC Installation]
 
 #### Usage
 
@@ -236,7 +238,7 @@ Operating PC is used to control the robot from the outside.
   - [ROBOTIS-THORMANG-Common]
 
 #### OPC Network setting  
-- `Reference` [Example Setting for OPC]  
+> Reference : [Example Setting for OPC]  
 
 - IP Address : Static IP address is recommended  
   > ex )
@@ -366,8 +368,8 @@ Instructions about how to calibrate FT Sensors on THORMANG3's feet. Balance Algo
 
 #### Install & Build
 
-  **NOTE** : Reference : [OPC Installation]
-  {: .notice}
+>Reference : [OPC Installation]
+
 
 #### Run
 > Reference : [How to execute OPC's GUI program]
@@ -507,8 +509,8 @@ Structure looks like the below figure.
 
 ##### Install & Build
 
-  **NOTE** : Reference : [OPC Installation]
-  {: .notice}
+> Reference : [OPC Installation]
+  
 
 ##### Run
 > Reference : [How to execute OPC's GUI program]
@@ -561,8 +563,8 @@ A walking example that follows StepData using [footstep_planner].
 
 ##### Install & Build
 
-  **NOTE** : Reference : [OPC Installation]
-  {: .notice}
+> Reference : [OPC Installation]
+
 
 ##### Run
 - Execute [thormang3_demo] as below.

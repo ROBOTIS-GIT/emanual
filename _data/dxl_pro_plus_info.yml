@@ -1,4 +1,5 @@
 common_pro_plus_specs:
+  mcu:                &mcu                "ARM CORTEX-M4 (168 [MHz], 32Bit)"  
   baudrate:           &baudrate           "9,600 [bps] ~ 10.5 [Mbps]"
   opmode:             &opmode             "토크 제어모드<br />속도 제어모드<br />위치 제어모드<br />확장 위치 제어모드<br />PWM 제어모드(전압 제어모드)"
   opmode_en:          &opmode_en          "Torque Control Mode<br />Velocity Control Mode<br />Position Control Mode<br />Extended Position Control Mode<br />PWM Control Mode(Voltage Control Mode)"
@@ -21,6 +22,7 @@ common_pro_plus_specs:
   standbycurrent_54:  &standbycurrent_54  "40 [mA]"
 
 h42p-020-s300-r:
+  mcu:                *mcu
   motor:              "Coreless (Maxon)"
   baudrate:           *baudrate
   opmode_en:          *opmode_en
@@ -50,6 +52,7 @@ h42p-020-s300-r:
   standbycurrent:     *standbycurrent_42
 
 h54p-100-s500-r:
+  mcu:                *mcu
   motor:              "BLDC (Maxon)"
   baudrate:           *baudrate
   opmode_en:          *opmode_en
@@ -79,6 +82,7 @@ h54p-100-s500-r:
   standbycurrent:     *standbycurrent_54
 
 h54p-200-s500-r:
+  mcu:                *mcu
   motor:              "BLDC (Maxon)"
   baudrate:           *baudrate
   opmode_en:          *opmode_en
@@ -108,6 +112,7 @@ h54p-200-s500-r:
   standbycurrent:     *standbycurrent_54
 
 m42p-010-s260-r:
+  mcu:                *mcu
   motor:              "Coreless"
   baudrate:           *baudrate
   opmode_en:          *opmode_en
@@ -137,6 +142,7 @@ m42p-010-s260-r:
   standbycurrent:     *standbycurrent_42
 
 m54p-040-s250-r:
+  mcu:                *mcu
   motor:              "BLDC"
   baudrate:           *baudrate
   opmode_en:          *opmode_en
@@ -166,6 +172,7 @@ m54p-040-s250-r:
   standbycurrent:     *standbycurrent_54
 
 m54p-060-s250-r:
+  mcu:                *mcu
   motor:              "BLDC"
   baudrate:           *baudrate
   opmode_en:          *opmode_en

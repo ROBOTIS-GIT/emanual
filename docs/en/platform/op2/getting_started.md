@@ -9,6 +9,8 @@ permalink: /docs/en/platform/op2/getting_started/
 sidebar:
   title: ROBOTIS OP2
   nav: "op2"
+product_group: op2
+page_number: 1
 ---
 
 # [Introduction](#introduction)

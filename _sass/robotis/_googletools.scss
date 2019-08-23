@@ -27,6 +27,10 @@
   opacity: 0.8;
 }
 
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
 .google_tools {
   position: fixed;
   background-color: #e73a3e;

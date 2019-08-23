@@ -25,7 +25,7 @@ sidebar:
 **[로보티즈 다운로드 센터]** 에서도 다양한 자료를 제공합니다.
 {: .notice--success}
 
-## [다이나믹셀]
+## 다이나믹셀
 
 ### 프로토콜
 - [프로토콜 1.0](/docs/kr/dxl/protocol1/)
@@ -71,6 +71,9 @@ sidebar:
     <option selected disabled hidden>X 시리즈</option>
     <option value="/docs/kr/dxl/x/xl320/#eeprom-영역">XL-320</option>
     <option value="/docs/kr/dxl/x/xl430-w250/#eeprom-영역">XL430-W250</option>
+    <option value="/docs/kr/dxl/x/2xl430-w250/#eeprom-영역">2XL430-W250</option>
+    <option value="/docs/kr/dxl/x/xc430-w150/#eeprom-영역">XC430-W150</option>
+    <option value="/docs/kr/dxl/x/xc430-w240/#eeprom-영역">XC430-W240</option>
     <option value="/docs/kr/dxl/x/xm430-w210/#eeprom-영역">XM430-W210</option>
     <option value="/docs/kr/dxl/x/xm430-w350/#eeprom-영역">XM430-W350</option>
     <option value="/docs/kr/dxl/x/xm540-w150/#eeprom-영역">XM540-W150</option>
@@ -122,7 +125,7 @@ sidebar:
 - [S/W Setup](/docs/en/platform/openmanipulator/#software-setup)
 - [Bringup](/docs/en/platform/openmanipulator/#software-setup)
 
-### [터틀봇3](#터틀봇3)
+### [터틀봇3](#터틀봇3) 바로가기
 <select id="turtlebot3_select" onchange="window.location.href=this.value;">
     <option value="/docs/en/platform/turtlebot3/setup/#setup">Setup</option>
     <option value="/docs/en/platform/turtlebot3/bringup/#bringup">Bring Up</option>
@@ -137,7 +140,7 @@ sidebar:
 </select>
 
 ## 제어기
-
+- [CM-550](/docs/kr/parts/controller/cm-550/)
 - [OpenCR 1.0](/docs/kr/parts/controller/opencr10/)
 - [OpenCM 9.04](/docs/kr/parts/controller/opencm904/) & [OpenCM 485 EXP](/docs/kr/parts/controller/opencm485exp/)
 - [호환성 가이드](/docs/kr/parts/controller/controller_compatibility/)
@@ -184,5 +187,4 @@ sidebar:
 [L54-30-S400-R]: /docs/kr/dxl/pro/l54-30-s400-r/#eeprom-영역
 [L42-10-S300-R]: /docs/kr/dxl/pro/l42-10-s300-r/#eeprom-영역
 [포럼]: http://www.robotis.com/service/forum.php
-[기존 e-Manual]: http://support.robotis.com
 [로보티즈 다운로드 센터]: http://www.robotis.com/service/downloadcenter.php

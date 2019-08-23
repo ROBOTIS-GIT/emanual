@@ -9,6 +9,8 @@ permalink: /docs/en/platform/openmanipulator_x/getting_started/
 sidebar:
   title: OpenMANIPULATOR-X
   nav: "openmanipulator_x"
+product_group: openmanipulator_x
+page_number: 3
 ---
 
 <div style="counter-reset: h1 2"></div>
@@ -29,13 +31,13 @@ When you have enough understanding about OpenMANIPULATOR-X from above step, it i
 ### [Hardware Setup](#hardware-setup)
 
 1. `Check the Part List` : The OpenMANIPULATOR-X only contains the parts required to configure the OpenMANIPULATOR-X body. For controlling and operating the OpenMANIPULATOR-X, the optional parts is necessary. 
-Please check [the part list page](/docs/en/platform/OpenMANIPULATOR_x/assembly/#part-list), prepare the every requaired parts.
+Please check [the part list page](/docs/en/platform/openmanipulator_x/assembly/#part-lists), prepare the every requaired parts.
 The [SMPS 12V5A](http://en.robotis.com/shop_en/item.php?it_id=903-0124-200) is necessary to supply the 12V power to the dynamixels of OpenMANIPULATOR-X. The [Base Plate-02](http://en.robotis.com/shop_en/item.php?it_id=905-0026-000)
 is used to secure the OpenMANIPULATOR-X to the workspace. 
 The controller or communication board you need to prepare depends on your development environment. If you want to develop on an embedded system, prepare [OpenCR](http://en.robotis.com/shop_en/item.php?it_id=903-0257-000) and PC. To use the ROS, prepare your PC and either the [U2D2](http://en.robotis.com/shop_en/item.php?it_id=902-0132-000) + [U2D2 Power Hub Board](http://en.robotis.com/shop_en/item.php?it_id=902-0145-000) or [OpenCR](http://en.robotis.com/shop_en/item.php?it_id=903-0257-000).  
 To summarize, the parts to prepare are shown in the table below.
 
-2. `Assembly` : The OpenMANIPULATOR-X is provided as a non-assembled part to the box. Assemble the OpenMANIPULATOR-X according to the instructions of [Assembly Manual](/docs/en/platform/Openmanipulator/assembly/#assembly-manual). 
+2. `Assembly` : The OpenMANIPULATOR-X is provided as a non-assembled part to the box. Assemble the OpenMANIPULATOR-X according to the instructions of [Assembly Manual](/docs/en/platform/openmanipulator_x/assembly/#assembly-manual). 
 
 - **Parts**
 

@@ -9,6 +9,8 @@ permalink: /docs/en/platform/openmanipulator_x/ros_setup/
 sidebar:
   title: OpenMANIPULATOR-X
   nav: "openmanipulator_x"
+product_group: openmanipulator_x
+page_number: 5
 ---
 
 <div style="counter-reset: h1 4"></div>
@@ -18,7 +20,7 @@ sidebar:
 **NOTE** : The following instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 {: .notice--info}
 
-**WARNING** : If you would like to control OpenMANIPULATOR-X on OpenCR (Embedded board) instead of using ROS, please set it up as described in [[OpenCR] Setup](/docs/en/platform/openmanipulator_x/opencr_setup/#opencr-setup).
+**WARNING** : If you would like to control OpenMANIPULATOR-X on OpenCR (Embedded board) instead of using ROS, please set it up as described in [OpenCR Setup](/docs/en/platform/openmanipulator_x/opencr_setup/#opencr-setup).
 {: .notice--warning}
 
 
@@ -36,7 +38,7 @@ If you need more help with installing Ubuntu, check out the step-by-step guide f
 
 ![](/assets/images/platform/turtlebot3/logo_ros.png)
 
-The following script will allow you to simplify the ROS installation procedure. Run the following command in a terminal window. The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. The shortcut key to open a terminal is `Ctrl`+`Alt`+`t`. After installing ROS, please reboot PC.
+The following script will allow you to simplify the ROS installation procedure. Run the following commands in a terminal window. The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. The shortcut key to open a terminal is `Ctrl`+`Alt`+`t`. After installing ROS, please reboot PC.
 
 ``` bash
 $ sudo apt-get update
@@ -47,12 +49,12 @@ $ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/instal
 **NOTE**: In order to check which packages are installed, please check this link out. [install_ros_kinetic.sh](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh)
 {: .notice--info}
 
-If you prefer manual installation, please following the link below.
+If you prefer manual installation, please follow the link below.
 
 - [Manual installation of ROS Kinetic](http://wiki.ros.org/kinetic/Installation/Ubuntu)
 
 ## [Install ROS Packages](#install-ros-packages)
-Install dependent packages for OpenMANIPULATOR. Run the following command in a terminal window.
+Install dependent packages for OpenMANIPULATOR-X. Run the following commands in a terminal window.
 
 **NOTE**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`+`Alt`+`t`.
 {: .notice--info}
@@ -80,15 +82,15 @@ If the catkin_make command has been completed without any errors, all the prepar
 ### [U2D2](#u2d2)
 
 #### Connection
-Connect micro USB (connected to PC), Dynamixel(OpenMANIPULATOR), and 12V Power to U2D2 and U2D2 power hub board as shown below.
+Connect micro USB (connected to PC), DYNAMIXEL's(OpenMANIPULATOR-X), and 12V Power to U2D2 and U2D2 power hub board as shown below.
 
 <img src="/assets/images/platform/openmanipulator_x/OpenManipulator_u2d2_setup2.png" width="800">
 
 **NOTE** : Please refer to [U2D2 e-manual](/docs/en/parts/interface/u2d2/) and [U2D2 power hub board e-manual](/docs/en/parts/interface/u2d2_power_hub/) for detailed connection of U2D2 and U2D2 power hub board.
-{: .notice}
+{: .notice--info}
 
-#### USE Latency Timer Setting
-In linux(ubuntu) environment, USB latency time is set to 16ms by default. Follow the steps below to set the communication latency time to the lowest value (1ms) between Dynamixel and PC connected via USB.
+#### USB Latency Timer Setting
+In linux(ubuntu) environment, USB latency time is set to 16ms by default. Follow the steps below to set the communication latency time to the lowest value (1ms) between DYNAMIXEL's and PC connected via USB.
 
 Open a terminal window and run the roscore.
 
@@ -107,17 +109,17 @@ $ rosrun open_manipulator_controller create_udev_rules
 {: .notice--success}
 
 ### [OpenCR](#opencr)
-This section explains how to set up OpenCR as a communication board between **ROS Packages** of PC and DYNAMIXEL of OpenMANIPULATOR-X.  
-If you want to operate OpenMANIPULATOR-X on embedded system (OpenCR) without ROS, please refer [[OpenCR] Setup](/docs/en/platform/openmanipulator_x/opencr-setup/#opencr-setup).
+This section explains how to set up OpenCR as a communication board between **ROS Packages** of PC and DYNAMIXEL's of OpenMANIPULATOR-X.  
+If you want to operate OpenMANIPULATOR-X on embedded system (OpenCR) without ROS, please refer [OpenCR Setup](/docs/en/platform/openmanipulator_x/opencr-setup/#opencr-setup).
 
 #### Connection
 
-Connect micro USB (connected to PC), Dynamixel(OpenMANIPULATOR), and 12V Power to OpenCR as shown below.
+Connect micro USB (connected to PC), Dynamixel's(OpenMANIPULATOR-X), and 12V Power to OpenCR as shown below.
 
 <img src="/assets/images/platform/openmanipulator_x/OpenManipulator_opencr_setup2.png" width="800">
 
 **NOTE** : Please refer the detailed description of [OpenCR](http://emanual.robotis.com/docs/en/parts/controller/opencr10/).
-{: .notice}
+{: .notice--info}
 
 #### Upload Source code
 

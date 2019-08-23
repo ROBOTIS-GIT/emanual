@@ -9,6 +9,8 @@ permalink: /docs/en/platform/turtlebot3/contact_us/
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
+product_group: turtlebot3
+page_number: 42
 ---
 
 <div style="counter-reset: h1 24"></div>

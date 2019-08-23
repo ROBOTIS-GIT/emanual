@@ -1,5 +1,5 @@
 Dynamixel can protect itself by detecting errors occur during the operation.
-The errors can be set are as the table below.
+The errors can be set as the table below.
 
 |Bit   | Item     | Description     |
 | :-------------: | :-------------: | :------------- |

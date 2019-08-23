@@ -31,7 +31,7 @@ product_group: rh_p12_rna
 | Operating Mode         | Current Control Mode<br />Current based Position Control Mode                                  |
 | Weight                 | 500g                                                                                           |
 | Stroke                 | 0 ~ 109mm                                                                                      |
-| Gear Ratio             | 1181 : 1                                                                                     |
+| Gear Ratio             | 1181 : 1                                                                                       |
 | Maximum Gripping Force | 170N                                                                                           |
 | Recommended Payload    | 5kg                                                                                            |
 | Operating Temperature  | -5&deg;C ~ 55&deg;C                                                                            |
@@ -51,83 +51,84 @@ product_group: rh_p12_rna
 
 ## [Control Table of EEPROM Area](#control-table-of-eeprom-area)
 
-| Address | Size<br>(Byte) | Data Name                                   | Access | Initial<br />Value |     Range     |      Unit      |
-|:-------:|:--------------:|:--------------------------------------------|:------:|:------------------:|:-------------:|:--------------:|
-|    0    |       2        | [Model Number](#model-number)               |   R    |       35,074       |       -       |       -        |
-|    2    |       4        | [Model Information](#model-information)     |   R    |         -          |       -       |       -        |
-|    6    |       1        | [Firmware Version](#firmware-version)       |   R    |         -          |       -       |       -        |
-|    7    |       1        | [ID](#id)                                   |   RW   |         1          |    0 ~ 252    |       -        |
-|    8    |       1        | [Baud Rate](#baud-rate)                     |   RW   |         1          |     0 ~ 9     |       -        |
-|    9    |       1        | [Return Delay Time](#return-delay-time)     |   RW   |        250         |    0 ~ 255    |    2 [μsec]    |
-|   11    |       1        | [Operating Mode](#operating-mode)           |   RW   |         5          |     0, 5      |       -        |
-|   12    |       1        | [Sencondary ID](#secondary-id)              |   RW   |        255         |    0 ~ 255    |       -        |
-|   20    |       4        | [Homing Offset](#homing-offset)             |   RW   |         0          |   0 ~ 1,150   |   1 [pulse]    |
-|   24    |       4        | [Moving Threshold](#moving-threshold)       |   RW   |         80         |   0 ~ 2,970   | 0.01 [rev/min] |
-|   31    |       1        | [Temperature Limit](#temperature-limit)     |   RW   |         80         |    0 ~ 100    |     1 [&deg;C]      |
-|   32    |       2        | [Max Voltage Limit](#max-voltage-limit)     |   RW   |        350         |    0 ~ 350    |    0.1 [V]     |
-|   34    |       2        | [Min Voltage Limit](#min-voltage-limit)     |   RW   |        150         |    0 ~ 350    |    0.1 [V]     |
-|   36    |       2        | [PWM Limit](#pwm-limit)                     |   RW   |       2,009        |   0 ~ 2,009   |       -        |
-|   38    |       2        | [Current Limit](#current-limit)             |   RW   |       1,984        |   0 ~ 1,984   |     1 [mA]     |
-|   40    |       4        | [Acceleration Limit](#acceleration-limit)   |   RW   |       3,447        | 0 ~ 1,378,788 |  1 [rev/min<sup>2</sup>]  |
-|   44    |       4        | [Velocity Limit](#velocity-limit)           |   RW   |       2,970        |   0 ~ 2,970   | 0.01 [rev/min] |
-|   48    |       4        | [Max Position Limit](#max-position-limit)   |   RW   |       1,150        |   0 ~ 1,150   |   1 [pulse]    |
-|   52    |       4        | [Min Position Limit](#min-position-limit)   |   RW   |         0          |   0 ~ 1,150   |   1 [pulse]    |
-|   56    |       1        | [External Port Mode 1](#external-port-mode) |   RW   |         3          |     0 ~ 3     |       -        |
-|   57    |       1        | [External Port Mode 2](#external-port-mode) |   RW   |         3          |     0 ~ 3     |       -        |
-|   58    |       1        | [External Port Mode 3](#external-port-mode) |   RW   |         3          |     0 ~ 3     |       -        |
-|   59    |       1        | [External Port Mode 4](#external-port-mode) |   RW   |         3          |     0 ~ 3     |       -        |
-|   63    |       1        | [Shutdown](#shutdown)                       |   RW   |         52         |    0 ~ 255    |       -        |
-|   168   |       2        | [Indirect Address 1](#indirect-address)     |   RW   |        634         |  512 ~ 1,023  |       -        |
-|   170   |       2        | [Indirect Address 2](#indirect-address)     |   RW   |        635         |  512 ~ 1,023  |       -        |
-|   172   |       2        | [Indirect Address 3](#indirect-address)     |   RW   |        636         |  512 ~ 1,023  |       -        |
-|   ...   |      ...       | ...                                         |  ...   |        ...         |      ...      |      ...       |
-|   422   |       2        | [Indirect Address 128](#indirect-address)   |   RW   |        761         |  512 ~ 1,023  |       -        |
+| Address | Size<br>(Byte) | Data Name                                   | Access | Initial<br />Value |     Range     |          Unit           |
+|:-------:|:--------------:|:--------------------------------------------|:------:|:------------------:|:-------------:|:-----------------------:|
+|    0    |       2        | [Model Number](#model-number)               |   R    |       35,074       |       -       |            -            |
+|    2    |       4        | [Model Information](#model-information)     |   R    |         -          |       -       |            -            |
+|    6    |       1        | [Firmware Version](#firmware-version)       |   R    |         -          |       -       |            -            |
+|    7    |       1        | [ID](#id)                                   |   RW   |         1          |    0 ~ 252    |            -            |
+|    8    |       1        | [Baud Rate](#baud-rate)                     |   RW   |         1          |     0 ~ 9     |            -            |
+|    9    |       1        | [Return Delay Time](#return-delay-time)     |   RW   |        250         |    0 ~ 255    |        2 [μsec]         |
+|   11    |       1        | [Operating Mode](#operating-mode)           |   RW   |         5          |     0, 5      |            -            |
+|   12    |       1        | [Sencondary ID](#secondary-id)              |   RW   |        255         |    0 ~ 255    |            -            |
+|   20    |       4        | [Homing Offset](#homing-offset)             |   RW   |         0          |   0 ~ 1,150   |        1 [pulse]        |
+|   24    |       4        | [Moving Threshold](#moving-threshold)       |   RW   |         80         |   0 ~ 2,970   |     0.01 [rev/min]      |
+|   31    |       1        | [Temperature Limit](#temperature-limit)     |   RW   |         80         |    0 ~ 100    |       1 [&deg;C]        |
+|   32    |       2        | [Max Voltage Limit](#max-voltage-limit)     |   RW   |        350         |   150 ~ 350   |         0.1 [V]         |
+|   34    |       2        | [Min Voltage Limit](#min-voltage-limit)     |   RW   |        150         |   150 ~ 350   |         0.1 [V]         |
+|   36    |       2        | [PWM Limit](#pwm-limit)                     |   RW   |       2,009        |   0 ~ 2,009   |            -            |
+|   38    |       2        | [Current Limit](#current-limit)             |   RW   |       1,984        |   0 ~ 1,984   |         1 [mA]          |
+|   40    |       4        | [Acceleration Limit](#acceleration-limit)   |   RW   |       3,447        | 0 ~ 1,378,788 | 1 [rev/min<sup>2</sup>] |
+|   44    |       4        | [Velocity Limit](#velocity-limit)           |   RW   |       2,970        |   0 ~ 2,970   |     0.01 [rev/min]      |
+|   48    |       4        | [Max Position Limit](#max-position-limit)   |   RW   |       1,150        |   0 ~ 1,150   |        1 [pulse]        |
+|   52    |       4        | [Min Position Limit](#min-position-limit)   |   RW   |         0          |   0 ~ 1,150   |        1 [pulse]        |
+|   56    |       1        | [External Port Mode 1](#external-port-mode) |   RW   |         3          |     0 ~ 3     |            -            |
+|   57    |       1        | [External Port Mode 2](#external-port-mode) |   RW   |         3          |     0 ~ 3     |            -            |
+|   58    |       1        | [External Port Mode 3](#external-port-mode) |   RW   |         3          |     0 ~ 3     |            -            |
+|   59    |       1        | [External Port Mode 4](#external-port-mode) |   RW   |         3          |     0 ~ 3     |            -            |
+|   63    |       1        | [Shutdown](#shutdown)                       |   RW   |         52         |    0 ~ 255    |            -            |
+|   168   |       2        | [Indirect Address 1](#indirect-address)     |   RW   |        634         |  512 ~ 1,023  |            -            |
+|   170   |       2        | [Indirect Address 2](#indirect-address)     |   RW   |        635         |  512 ~ 1,023  |            -            |
+|   172   |       2        | [Indirect Address 3](#indirect-address)     |   RW   |        636         |  512 ~ 1,023  |            -            |
+|   ...   |      ...       | ...                                         |  ...   |        ...         |      ...      |           ...           |
+|   422   |       2        | [Indirect Address 128](#indirect-address)   |   RW   |        761         |  512 ~ 1,023  |            -            |
+
 
 ## [Control Table of RAM Area](#control-table-of-ram-area)
 
-| Address | Size<br>(Byte) | Data Name                                         | Access | Initial<br />Value |                        Range                        |      Unit      |
-|:-------:|:--------------:|:--------------------------------------------------|:------:|:------------------:|:---------------------------------------------------:|:--------------:|
-|   512   |       1        | [Torque Enable](#torque-enable)                   |   RW   |         0          |                        0 ~ 1                        |       -        |
-|   513   |       1        | [LED Red](#led-red)                               |   RW   |         0          |                       0 ~ 255                       |       -        |
-|   514   |       1        | [LED Green](#led-green)                           |   RW   |         0          |                       0 ~ 255                       |       -        |
-|   515   |       1        | [LED Blue](#led-blue)                             |   RW   |         0          |                       0 ~ 255                       |       -        |
-|   516   |       1        | [Status Return Level](#status-return-level)       |   RW   |         2          |                        0 ~ 2                        |       -        |
-|   517   |       1        | [Registered Instruction](#registered-instruction) |   R    |         0          |                          -                          |       -        |
-|   518   |       1        | [Hardware Error Status](#hardware-error-status)   |   R    |         0          |                          -                          |       -        |
-|   524   |       2        | [Velocity I Gain](#velocity-i-gain)               |   RW   |         -          |                     0 ~ 32,767                      |       -        |
-|   526   |       2        | [Velocity P Gain](#velocity-i-gain)               |   RW   |         -          |                     0 ~ 32,767                      |       -        |
-|   528   |       2        | [Position D Gain](#position-p-gain)               |   RW   |         -          |                     0 ~ 32,767                      |       -        |
-|   532   |       2        | [Position P Gain](#position-p-gain)               |   RW   |         -          |                     0 ~ 32,767                      |       -        |
-|   530   |       2        | [Position I Gain](#position-p-gain)               |   RW   |         -          |                     0 ~ 32,767                      |       -        |
-|   536   |       2        | [Feedforward 2nd Gain](#feedforward-2nd-gain)     |   RW   |         -          |                     0 ~ 32,767                      |       -        |
-|   538   |       2        | [Feedforward 1st Gain](#feedforward-1st-gain)     |   RW   |         -          |                     0 ~ 32,767                      |       -        |
-|   546   |       1        | [Bus Watchdog](#bus-watchdog)                     |   RW   |         -          |                       0 ~ 127                       |   20 [msec]    |
-|   548   |       2        | [Goal PWM](#goal-pwm)                             |   RW   |         -          |         -PWM Limit(36) ~<br> PWM Limit(36)          |       -        |
-|   550   |       2        | [Goal Current](#goal-current)                     |   RW   |         0          |     -Current Limit(38) ~<br> Current Limit(38)      |     1 [mA]     |
-|   552   |       4        | [Goal Velocity](#goal-velocity)                   |   RW   |         0          |    -Velocity Limit(44) ~<br> Velocity Limit(44)     | 0.01 [rev/min] |
-|   556   |       4        | [Profile Acceleration](#profile-acceleration)     |   RW   |         0          |           0 ~<br> Acceleration Limit(40)            |  1 [rev/min<sup>2</sup>]  |
-|   560   |       4        | [Profile Velocity](#profile-velocity)             |   RW   |         0          |             0 ~<br> Velocity Limit(44)              | 0.01 [rev/min] |
-|   564   |       4        | [Goal Position](#goal-position)                   |   RW   |         -          | Min Position Limit(52) ~<br> Max Position Limit(48) |    1[pulse]    |
-|   568   |       2        | [Realtime Tick](#realtime-tick)                   |   R    |         -          |                     0 ~ 32,767                      |    1 [msec]    |
-|   570   |       1        | [Moving](#moving)                                 |   R    |         -          |                          -                          |       -        |
-|   571   |       1        | [Moving Status](#moving-status)                   |   R    |         -          |                          -                          |       -        |
-|   572   |       2        | [Present PWM](#present-pwm)                       |   R    |         -          |                          -                          |       -        |
-|   574   |       2        | [Present Current](#present-current)               |   R    |         -          |                          -                          |     1 [mA]     |
-|   576   |       4        | [Present Velocity](#present-velocity)             |   R    |         -          |                          -                          | 0.01 [rev/min] |
-|   580   |       4        | [Present Position](#present-position)             |   R    |         -          |                          -                          |   1 [pulse]    |
-|   584   |       4        | [Velocity Trajectory](#velocity-trajectory)       |   R    |         -          |                          -                          | 0.01 [rev/min] |
-|   588   |       4        | [Position Trajectory](#position-trajectory)       |   R    |         -          |                          -                          |   1 [pulse]    |
-|   592   |       2        | [Present Input Voltage](#present-input-voltage)   |   R    |         -          |                          -                          |    0.1 [V]     |
-|   594   |       1        | [Present Temperature](#present-temperature)       |   R    |         -          |                          -                          |     1 [&deg;C]      |
-|   600   |       2        | [External Port Data 1](#external-port-data)       |  R/RW  |         0          |                      0 ~ 4,095                       |       -        |
-|   602   |       2        | [External Port Data 2](#external-port-data)       |  R/RW  |         0          |                      0 ~ 4,095                       |       -        |
-|   604   |       2        | [External Port Data 3](#external-port-data)       |  R/RW  |         0          |                      0 ~ 4,095                       |       -        |
-|   606   |       2        | [External Port Data 4](#external-port-data)       |  R/RW  |         0          |                      0 ~ 4,095                       |       -        |
-|   634   |       1        | [Indirect Data 1](#indirect-data)                 |   RW   |         0          |                       0 ~ 255                       |       -        |
-|   635   |       1        | [Indirect Data 2](#indirect-data)                 |   RW   |         0          |                       0 ~ 255                       |       -        |
-|   636   |       1        | [Indirect Data 3](#indirect-data)                 |   RW   |         0          |                       0 ~ 255                       |       -        |
-|   ...   |      ...       | ...                                               |  ...   |        ...         |                         ...                         |      ...       |
-|   761   |       1        | [Indirect Data 128](#indirect-data)               |   RW   |         0          |                       0 ~ 255                       |       -        |
+| Address | Size<br>(Byte) | Data Name                                         | Access | Initial<br />Value |                        Range                        |          Unit           |
+|:-------:|:--------------:|:--------------------------------------------------|:------:|:------------------:|:---------------------------------------------------:|:-----------------------:|
+|   512   |       1        | [Torque Enable](#torque-enable)                   |   RW   |         0          |                        0 ~ 1                        |            -            |
+|   513   |       1        | [LED Red](#led-red)                               |   RW   |         0          |                       0 ~ 255                       |            -            |
+|   514   |       1        | [LED Green](#led-green)                           |   RW   |         0          |                       0 ~ 255                       |            -            |
+|   515   |       1        | [LED Blue](#led-blue)                             |   RW   |         0          |                       0 ~ 255                       |            -            |
+|   516   |       1        | [Status Return Level](#status-return-level)       |   RW   |         2          |                        0 ~ 2                        |            -            |
+|   517   |       1        | [Registered Instruction](#registered-instruction) |   R    |         0          |                          -                          |            -            |
+|   518   |       1        | [Hardware Error Status](#hardware-error-status)   |   R    |         0          |                          -                          |            -            |
+|   524   |       2        | [Velocity I Gain](#velocity-i-gain)               |   RW   |         -          |                     0 ~ 32,767                      |            -            |
+|   526   |       2        | [Velocity P Gain](#velocity-i-gain)               |   RW   |         -          |                     0 ~ 32,767                      |            -            |
+|   528   |       2        | [Position D Gain](#position-p-gain)               |   RW   |         -          |                     0 ~ 32,767                      |            -            |
+|   532   |       2        | [Position P Gain](#position-p-gain)               |   RW   |         -          |                     0 ~ 32,767                      |            -            |
+|   530   |       2        | [Position I Gain](#position-p-gain)               |   RW   |         -          |                     0 ~ 32,767                      |            -            |
+|   536   |       2        | [Feedforward 2nd Gain](#feedforward-2nd-gain)     |   RW   |         -          |                     0 ~ 32,767                      |            -            |
+|   538   |       2        | [Feedforward 1st Gain](#feedforward-1st-gain)     |   RW   |         -          |                     0 ~ 32,767                      |            -            |
+|   546   |       1        | [Bus Watchdog](#bus-watchdog)                     |   RW   |         -          |                       0 ~ 127                       |        20 [msec]        |
+|   548   |       2        | [Goal PWM](#goal-pwm)                             |   RW   |         -          |         -PWM Limit(36) ~<br> PWM Limit(36)          |            -            |
+|   550   |       2        | [Goal Current](#goal-current)                     |   RW   |         0          |     -Current Limit(38) ~<br> Current Limit(38)      |         1 [mA]          |
+|   552   |       4        | [Goal Velocity](#goal-velocity)                   |   RW   |         0          |    -Velocity Limit(44) ~<br> Velocity Limit(44)     |     0.01 [rev/min]      |
+|   556   |       4        | [Profile Acceleration](#profile-acceleration)     |   RW   |         0          |           0 ~<br> Acceleration Limit(40)            | 1 [rev/min<sup>2</sup>] |
+|   560   |       4        | [Profile Velocity](#profile-velocity)             |   RW   |         0          |             0 ~<br> Velocity Limit(44)              |     0.01 [rev/min]      |
+|   564   |       4        | [Goal Position](#goal-position)                   |   RW   |         -          | Min Position Limit(52) ~<br> Max Position Limit(48) |        1[pulse]         |
+|   568   |       2        | [Realtime Tick](#realtime-tick)                   |   R    |         -          |                     0 ~ 32,767                      |        1 [msec]         |
+|   570   |       1        | [Moving](#moving)                                 |   R    |         -          |                          -                          |            -            |
+|   571   |       1        | [Moving Status](#moving-status)                   |   R    |         -          |                          -                          |            -            |
+|   572   |       2        | [Present PWM](#present-pwm)                       |   R    |         -          |                          -                          |            -            |
+|   574   |       2        | [Present Current](#present-current)               |   R    |         -          |                          -                          |         1 [mA]          |
+|   576   |       4        | [Present Velocity](#present-velocity)             |   R    |         -          |                          -                          |     0.01 [rev/min]      |
+|   580   |       4        | [Present Position](#present-position)             |   R    |         -          |                          -                          |        1 [pulse]        |
+|   584   |       4        | [Velocity Trajectory](#velocity-trajectory)       |   R    |         -          |                          -                          |     0.01 [rev/min]      |
+|   588   |       4        | [Position Trajectory](#position-trajectory)       |   R    |         -          |                          -                          |        1 [pulse]        |
+|   592   |       2        | [Present Input Voltage](#present-input-voltage)   |   R    |         -          |                          -                          |         0.1 [V]         |
+|   594   |       1        | [Present Temperature](#present-temperature)       |   R    |         -          |                          -                          |       1 [&deg;C]        |
+|   600   |       2        | [External Port Data 1](#external-port-data)       |  R/RW  |         0          |                      0 ~ 4,095                      |            -            |
+|   602   |       2        | [External Port Data 2](#external-port-data)       |  R/RW  |         0          |                      0 ~ 4,095                      |            -            |
+|   604   |       2        | [External Port Data 3](#external-port-data)       |  R/RW  |         0          |                      0 ~ 4,095                      |            -            |
+|   606   |       2        | [External Port Data 4](#external-port-data)       |  R/RW  |         0          |                      0 ~ 4,095                      |            -            |
+|   634   |       1        | [Indirect Data 1](#indirect-data)                 |   RW   |         0          |                       0 ~ 255                       |            -            |
+|   635   |       1        | [Indirect Data 2](#indirect-data)                 |   RW   |         0          |                       0 ~ 255                       |            -            |
+|   636   |       1        | [Indirect Data 3](#indirect-data)                 |   RW   |         0          |                       0 ~ 255                       |            -            |
+|   ...   |      ...       | ...                                               |  ...   |        ...         |                         ...                         |           ...           |
+|   761   |       1        | [Indirect Data 128](#indirect-data)               |   RW   |         0          |                       0 ~ 255                       |            -            |
 
 
 ## [Control Table Description](#control-table-description)
@@ -141,9 +142,9 @@ product_group: rh_p12_rna
 ### <a name="model-number"></a>**[Model Number(0)](#model-number0)**
 This address stores model number of the device.
 
-|    Model Name    |  Model Number   |
-|:----------------:|:---------------:|
-| RH-P12-RN(A)  | 35,074 (0x8902) |
+|  Model Name  |  Model Number   |
+|:------------:|:---------------:|
+| RH-P12-RN(A) | 35,074 (0x8902) |
 
 ### <a name="firmware-version"></a>**[Firmware Version(6)](#firmware-version6)**
 {% include en/dxl/pro_plus/control_table_6_firmware_version.md %}
@@ -175,14 +176,14 @@ Present Position(580) = Actual Position + Homing Offset(20).
 
 |   Unit    | Value Range |
 |:---------:|:-----------:|
-| 1 [pulse] |   0 ~ 1150  |
+| 1 [pulse] |  0 ~ 1150   |
 
 ### <a name="moving-threshold"></a>**[Moving Threshold(24)](#moving-threshold24)**
 {% include en/dxl/pro_plus/control_table_24_moving_threshold.md %}
 
-|     Unit       |    Value Range    |
-| :------------: | :---------------: |
-| 0.01 [rev/min] |     0 ~ 2,970     |
+|      Unit      | Value Range |
+|:--------------:|:-----------:|
+| 0.01 [rev/min] |  0 ~ 2,970  |
 
 ### <a name="temperature-limit"></a>**[Temperature Limit(31)](#temperature-limit31)**
 {% include en/dxl/pro_plus/control_table_31_temperature_limit.md %}
@@ -205,8 +206,8 @@ Goal Current(550) cannot be configured with any values exceeding Current Limit(3
 This value indicates the maximum acceleration limit.  
 Profile Acceleration(556) cannot be configured with any values exceeding Acceleration Limit(40). Attempting to write an invalid value will fail and set the Limit Error Bit in the error field of the Status Packet.
 
-|     Unit     |  Value Range  |
-|:------------:|:-------------:|
+|          Unit           |  Value Range  |
+|:-----------------------:|:-------------:|
 | 1 [rev/min<sup>2</sup>] | 0 ~ 1,378,788 |
 
 ### <a name="velocity-limit"></a>**[Velocity Limit(44)](#velocity-limit44)**
@@ -254,13 +255,13 @@ These values indicate Gains of Current based Position Control. Position P Gain o
 
 |                           |  Controller Gain  |   Range    |          Description          |
 |:-------------------------:|:-----------------:|:----------:|:-----------------------------:|
-| Velocity I Gain(524) | K<sub>V</sub>I | 0 ~ 32,767 | Velocity Integral Gain |
-| Velocity P Gain(526) | K<sub>V</sub>P | 0 ~ 32,767 | Velocity Proportion Gain |
-| Position D Gain(528) | K<sub>P</sub>D | 0 ~ 32,767 | Position Differential Gain |
-| Position I Gain(530) | K<sub>P</sub>I | 0 ~ 32,767 | Position Integral Gain |
-| Position P Gain(532) | K<sub>P</sub>P | 0 ~ 32,767 | Position Proportion Gain |
+|   Velocity I Gain(524)    |  K<sub>V</sub>I   | 0 ~ 32,767 |    Velocity Integral Gain     |
+|   Velocity P Gain(526)    |  K<sub>V</sub>P   | 0 ~ 32,767 |   Velocity Proportion Gain    |
+|   Position D Gain(528)    |  K<sub>P</sub>D   | 0 ~ 32,767 |  Position Differential Gain   |
+|   Position I Gain(530)    |  K<sub>P</sub>I   | 0 ~ 32,767 |    Position Integral Gain     |
+|   Position P Gain(532)    |  K<sub>P</sub>P   | 0 ~ 32,767 |   Position Proportion Gain    |
 | Feedforward 2nd Gain(536) | K<sub>FF1st</sub> | 0 ~ 32,767 | Feedforward Acceleration Gain |
-| Feedforward 1st Gain(538) | K<sub>FF1st</sub> | 0 ~ 32,767 | Feedforward Velocity Gain |
+| Feedforward 1st Gain(538) | K<sub>FF1st</sub> | 0 ~ 32,767 |   Feedforward Velocity Gain   |
 
 Below figure is a block diagram describing the position controller in Current-based Position Control Mode. When the instruction is received by the device, it takes following steps until driving the device.
 
@@ -354,8 +355,8 @@ Acceleration time(t<sub>1</sub>) can be calculated as below equation.
 Desired position can be set with Goal Position(564).  
 This value must be in between Min Position Limit(52) and Max Position Limit(48).
 
-| Model Name | Goal Position = 0 | Goal Position = 740 |
-| :--------: | :---------------: | :-----------------: |
+| Model Name |                         Goal Position = 0                          |                         Goal Position = 740                         |
+|:----------:|:------------------------------------------------------------------:|:-------------------------------------------------------------------:|
 | RH-P12-RN  | ![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_open.png) | ![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_close.png) |
 
 ### <a name="realtime-tick"></a>**[Realtime Tick(568)](#realtime-tick568)**
@@ -390,9 +391,9 @@ This value provides additional information about the movement. In-Position Bit(0
 ### <a name="present-position"></a>**[Present Position(580)](#present-position580)**
 This value represents present position of the device.
 
-| Model Name | Goal Position = 0 | Goal Position = 740 |
-| :--------: | :---------------: | :-----------------: |
-| RH-P12-RN  |![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_open.png)|![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_close.png)|
+| Model Name |                         Goal Position = 0                          |                         Goal Position = 740                         |
+|:----------:|:------------------------------------------------------------------:|:-------------------------------------------------------------------:|
+| RH-P12-RN  | ![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_open.png) | ![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_close.png) |
 
 ### <a name="velocity-trajectory"></a>**[Velocity Trajectory(584)](#velocity-trajectory584)**
 This is a desired velocity trajectory created by Profile. For more details, please refer to the [Profile Velocity(560)].

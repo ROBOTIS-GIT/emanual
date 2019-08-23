@@ -4,6 +4,6 @@ To control the Dynamixel actuators, the main controller needs to convert its UAR
 ### TTL Communication
 ![](/assets/images/dxl/ttl_circuit.png)
 
-{% if page.ref=='2xl430-w250' %} ![](/assets/images/dxl/x/2xl/2x_series_ttl_pin.png) {% else %}![](/assets/images/dxl/x/x_series_ttl_pin.png) {% endif %} 
+{% if page.ref=='2xl430-w250' or page.ref== '2xc430-w250'%} ![](/assets/images/dxl/x/2xl/2x_series_ttl_pin.png) {% else %}![](/assets/images/dxl/x/x_series_ttl_pin.png) {% endif %}
 
 {% include en/dxl/pinout_warning.md %}

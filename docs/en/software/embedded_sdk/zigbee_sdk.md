@@ -778,4 +778,4 @@ The source above is to receive data before the set TIMEOUT. zgb_rx_check and  zg
 Zigbee SDK for CM-510/700 is included in Embedded C.  
 Please refer to [RC100/ZigBee]
 
-[RC100/ZigBee]: /docs/kr/software/embedded_sdk/embedded_c_cm510/#rc-100zigbee
+[RC100/ZigBee]: /docs/en/software/embedded_sdk/embedded_c_cm510/#rc-100zigbee
