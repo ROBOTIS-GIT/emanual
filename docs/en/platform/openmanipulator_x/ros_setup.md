@@ -19,8 +19,8 @@ page_number: 5
 
 {% capture notice_01 %}
 **NOTE** : 
-- The following instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-- Make sure that ROS Packages must be installed on your PC before following an instruction. - [Install ROS Packages](/docs/en/platform/openmanipulator_x/ros_setup/#install-ros-packages)
+- The test is done on `ROS Kinetic Kame` installed in `Ubuntu 16.04`.
+- Make sure ROS dependencies are installed before performing these instructions. - [Install ROS Packages](/docs/en/platform/openmanipulator_x/ros_setup/#install-ros-packages)
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 

@@ -53,9 +53,9 @@ page_number: 8
 
 {% capture notice_01 %}
 **NOTE** :  
-- This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-- This instruction has been tested on `Ubuntu 18.04` and `ROS Melodic Morenia`.  
-- Make sure that ROS Packages must be installed on your PC before following an instruction. - [Install ROS Packages](/docs/en/platform/openmanipulator_pro/ros_setup/#install-ros-packages)
+- The test is done on `ROS Kinetic Kame` installed in `Ubuntu 16.04`.
+- The test is done on `ROS Melodic Morenia`installed in `Ubuntu 18.04`.
+- Make sure ROS dependencies are installed before performing these instructions - [Install ROS Packages](/docs/en/platform/openmanipulator_pro/ros_setup/#install-ros-packages)
 - Make sure to run the [OpenMANIPULATOR-PRO controller](/docs/en/platform/openmanipulator_pro/ros_controller_package/#launch-controller) instructions before running the instruction below
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
@@ -124,9 +124,9 @@ $ roslaunch open_manipulator_pro_controller open_manipulator_pro_controller.laun
 
 {% capture notice_02 %}
 **NOTE** :  
-- This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-- This instruction has been tested on `Ubuntu 18.04` and `ROS Melodic Morenia`.
-- Make sure that ROS Packages must be installed on your PC before following an instruction. - [Install ROS Packages](/docs/en/platform/openmanipulator_pro/ros_setup/#install-ros-packages)
+- The test is done on `ROS Kinetic Kame` installed in `Ubuntu 16.04`.
+- The test is done on `ROS Melodic Morenia`installed in `Ubuntu 18.04`.
+- Make sure ROS dependencies are installed before performing these instructions - [Install ROS Packages](/docs/en/platform/openmanipulator_pro/ros_setup/#install-ros-packages)
 {% endcapture %}
 <div class="notice--info">{{ notice_02 | markdownify }}</div>
 

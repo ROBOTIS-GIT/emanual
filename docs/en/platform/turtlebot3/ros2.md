@@ -20,8 +20,8 @@ page_number: 26
 
 {% capture notice_01 %}
 **NOTE**:
-- This instructions was tested on `Ubuntu 18.04` and `ROS 2 Dashing Diademata`.
-- This instructions are supposed to be running on a remote PC and SBC in TurtleBot.
+- The test is done on `Ubuntu 18.04` and `ROS 2 Dashing Diademata`.
+- these instructions are supposed to be performed with a remote PC and SBC in TurtleBot.
 - You can ask any questions on [ROS Answers](https://answers.ros.org/questions/) if you are in touble to follow the instruction.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
