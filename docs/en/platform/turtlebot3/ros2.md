@@ -119,6 +119,12 @@ Related documents will be helpful for you to fix the problem of any build errors
 
 **TIP** : You can use `GNOME Disks` to burn `Ubuntu Server 18.04 image` to microSD.
 {: .notice}
+```bash
+$ sudo apt install gddrescue xz-utils
+$ cd ~/Downloads
+$ unxz ubuntu-18.04.3-preinstalled-server-arm64+raspi3.img.xz
+$ sudo ddrescue -D --force ubuntu-18.04.3-preinstalled-server-arm64+raspi3.img /dev/<DEVICE NAME of Raspberry Pi SD card>
+```
 
 #### Initialization Process for Raspberry Pi 3
 
@@ -135,49 +141,67 @@ To communicate between **remote PC** and **TurtleBot3**, install `Ubuntu Server 
 **NOTE** : TurtleBot3 is a mobile robot to run [SLAM](/docs/en/platform/turtlebot3/slam/#slam) and [Navigation](/docs/en/platform/turtlebot3/navigation/#navigation) using wireless network, so that connecting TurtleBot3 to WIFI is recommanded.
 {: .notice}
 
-#### Example for Network Configuration
+#### Example for Static Network Configuration using Netplan for WPA2 Personal
+1. Update and upgrade the fresh system, reboot.
+```bash
+$ sudo apt update
+$ sudo apt full-upgrade
+$ sudo reboot
+```
+2. Check existing interface names.
+```bash
+$ ip link show
+```
+3. Depending on the existing netplan initialization file name, create a backup before configuring the network.
+```bash
+$ cd /etc/netplan
+$ ls -l
 
-
-1. Create a folder, and then open it with the following commands.
-  ```bash
-  $ sudo touch /etc/netplan/01-netcfg.yaml
-  $ sudo nano /etc/netplan/01-netcfg.yaml
-  ```
-2. After opening the file, configure a network setting. Refer to the network setting below.
+$ cp 50-cloud-init.yaml 50-cloud-init.yaml.bak
+$ sudo nano 50-cloud-init.yaml
+```
+4. Add on the wifi interface and specify the IP addresses, NETMASK, gateway, nameserver addresses, wifi access name and password. For more information o
 ```yaml
 network:
     version: 2
-    renderer: networkd
     ethernets:
-      eth0:
-        dhcp4: yes
-        dhcp6: yes
-        optional: true
+        eth0:
+            dhcp4: true
+            match:
+                macaddress: b8:27:eb:41:fa:fb
+            set-name: eth0
     wifis:
-      wlan0:
-        dhcp4: yes
-        dhcp6: yes
-        access-points:
-          "your-wifi-name":
-            password: "your-wifi-password"
+        <WIFI INTERFACE NAME>:
+            dhcp4: false
+            dhcp6: false
+            optional: true
+            addresses: [<STATIC IP ADDRESS>/<NETWORK MASK CIDR NOTATION>]
+            gateway4: <GATEWAY>
+            nameservers:
+                addresses: [<NAMESERVER ADDRESSES>]
+            access-points:
+                "<WIFI NAME>":
+                    password: "<PASSWORD>"
 ```
-
-3. After Configuration, remote PC can connect to a SBC in TurtleBot3 by following steps.
-
-4. Apply all configuration for the renderers, and then restart Raspberry Pi 3.
+- [Reference](https://raspberrypi.stackexchange.com/questions/98598/how-to-setup-the-raspberry-pi-3-onboard-wifi-for-ubuntu-server-18-04-with-netpla)
+- [Network Mask CIDR notation](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)
+- [Gateway IP](https://wiki.amahi.org/index.php/Find_Your_Gateway_IP)
+- [Nameserver address](https://www.techrepublic.com/article/how-to-set-dns-nameservers-in-ubuntu-server-18-04/)
+5. Try, generate and apply the configuration for the renderers. Any errors will imply an incorrect configuration file.
 ```bash
-$ sudo netplan apply
+sudo netplan --debug try
+sudo netplan --debug generate
+sudo netplan --debug apply
 ```
-
-5. Set the systemed to prevent boot-up delay even if there is no network at startup. Run a command below to set mask the systemd process using the following command.
+6. Set the systemed to prevent boot-up delay even if there is no network at startup. Run a command below to set mask the systemd process using the following command.
 ```bash
-$ systemctl mask systemd-networkd-wait-online.service
+$ sudo systemctl mask systemd-networkd-wait-online.service
 ```
-
-6. From now, you can use SSH. If you want remote PC to connect to SBC and to install ROS and TurtleBot3 software, run a command below.
+7. From now, you can use SSH. If you want remote PC to connect to SBC and to install ROS and TurtleBot3 software, run a command below on a terminal on the remote PC.
 ```bash
-$ ssh ubuntu@<NETWORK IP of Raspberry PI>
+$ ssh ubuntu@<STATIC IP ADDRESS of Raspberry PI>
 ```
+8. If however your Raspberry PI does not have access to the internet, even though the remote PC is able to SSH into it, after making sure that your remote PC is able to access the internet, consider looking into the `GATEWAY` and `NAMESERVER ADDRESSES` that have been inserted.
 
 #### Add swap space
 
