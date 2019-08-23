@@ -223,7 +223,7 @@ $ roslaunch roslaunch open_manipulator_camera raspicam.launch
 **NOTE**:
 - This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - The `open_manipulator_perceptions` package requires [`ar_track_alvar`](http://wiki.ros.org/ar_track_alvar) package.
-- Make sure to run the [Openmanipulator controller](/docs/en/platform/ros2_openmanipulator_x/ros_controller_package/#launch-controller) instructions before running the instructions below.
+- Make sure to run the [OpenMANIPULATOR-PRO controller](/docs/en/platform/openmanipulator_pro/ros2_controller_package/#launch-controller) instructions before running the instructions below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -325,7 +325,7 @@ Download the .stl file in the path below and output it to the 3D printer.
 {% capture notice_01 %}
 **NOTE**:
 - This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-- Make sure to run the [OpenManipulator controller](/docs/en/platform/ros2_openmanipulator_x/ros_controller_package/#launch-controller) instructions before running the instructions below.
+- Make sure to run the [OpenMANIPULATOR-PRO controller](/docs/en/platform/openmanipulator_pro/ros2_controller_package/#launch-controller) instructions before running the instructions below.
 - Proceed from [Install Camera Package](/docs/en/platform/ros2_openmanipulator_x/ros_applications/#install-camera-package) and [Install AR Marker Package](/docs/en/platform/ros2_openmanipulator_x/ros_applications/#install-ar-marker-package).
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>

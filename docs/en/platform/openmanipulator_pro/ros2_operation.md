@@ -26,8 +26,8 @@ page_number: 11
 {% capture notice_01 %}
 **NOTE**:
 - This instruction has been tested on `Ubuntu 18.04` and `ROS2 Dashing Diademata`.
-- This instruction is supposed to be run on PC with ROS packages installed in. Please run the instruction below on your PC ROS packages installed in.
-- Make sure to run [OpenMANIPULATOR-PRO controller](/docs/en/platform/ros2_openmanipulator_pro/ros-controller-package/#launch-controller) instructions before running the instructions below.
+- Make sure that ROS2 Packages must be installed on your PC before following an instruction. - [Install ROS2 Packages](/docs/en/platform/openmanipulator_pro/ros2_setup/#install-ros2-packages).
+- Make sure to run the [OpenMANIPULATOR-PRO controller](/docs/en/platform/openmanipulator_pro/ros2_controller_package/#launch-controller) instructions before running the instructions below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 

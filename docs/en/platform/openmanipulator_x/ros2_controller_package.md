@@ -17,10 +17,14 @@ page_number: 11
 
 # [[ROS2] Controller Package](#ros-controller-package)
 
-OpenMANIPULATOR-X controller provides basic manipulation of OpenMANIPULATOR-X. You can control DYNAMIXEL's of OpenMANIPULATOR-X and check states of OpenMANIPULATOR-X through [messages](/docs/en/platform/ros2_openmanipulator_x/ros_controller_package/#message-list) of the controller.
+OpenMANIPULATOR-X controller provides basic manipulation of OpenMANIPULATOR-X. You can control DYNAMIXEL's of OpenMANIPULATOR-X and check states of OpenMANIPULATOR-X through [messages](/docs/en/platform/openmanipulator_x/ros2_controller_package/#message-list) of the controller.
 
-**NOTE**: This instruction has been tested on `Ubuntu 18.04` and `ROS2 Dashing Diademata`.
-{: .notice--info}
+{% capture notice_01 %}
+**NOTE**:
+- This instruction has been tested on `Ubuntu 18.04` and `ROS2 Dashing Diademata`.
+- Make sure that ROS2 Packages must be installed on your PC before following an instruction. - [Install ROS2 Packages](/docs/en/platform/openmanipulator_x/ros2_setup/#install-ros2-packages)
+{% endcapture %}
+<div class="notice--info">{{ notice_01 | markdownify }}</div>
 
 ## [Launch Controller](#launch-controller)
 
@@ -64,8 +68,8 @@ $ ros2 run open_manipulator_x_controller open_manipulator_x_controller
 {% capture warning_01 %}
 
 **WARNING** :  
-Please check each joint position before running OpenMANIPULATOR-X. It might stop operation because of joint position out of range.  
-The picture on the below is showing you the ideal pose of OpenMANIPULATOR-X. Please adjust each joints along with the following picture when DYNAMIXEL torque isn't enabled.    
+Please check each joint position before running OpenMANIPULATOR-X. If joints are set inappropriately, OpenMANIPULATOR-X might not start operating.
+The picture of OpenMANIPULATOR-X below is showing you the ideal pose of OpenMANIPULATOR-X. Please adjust each joints along with the following picture when DYNAMIXEL torque isn't enabled.    
         
 <img src="/assets/images/platform/openmanipulator_x/open_manipulator_start_pose.png" width="250">
 {% endcapture %}
@@ -102,8 +106,8 @@ Gripper Dynamixel ID : 15, Model Name :XM430-W350
 {% capture notice_01 %}
 **NOTE**:
 - This instruction has been tested on `Ubuntu 18.04` and `ROS2 Dashing Diademata`.
-- This instruction is supposed to be run on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
-- Make sure to run the [OpenMANIPULATOR-X controller](/docs/en/platform/ros2_openmanipulator_x/ros_controller_package/#launch-controller) instructions before running the instructions below.
+- Make sure that ROS2 Packages must be installed on your PC before following an instruction. - [Install ROS2 Packages](/docs/en/platform/openmanipulator_x/ros2_setup/#install-ros2-packages).
+- Make sure to run the [OpenMANIPULATOR-X controller](/docs/en/platform/openmanipulator_x/ros2_controller_package/#launch-controller) instructions before running the instructions below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -397,7 +401,7 @@ This parameter is descripted on open_manipulator_x.cpp in open_manipulator_x_lib
 {% capture notice_01 %}
 **NOTE**:
 - This instruction has been tested on `Ubuntu 18.04` and `ROS2 Dashing Diademata`.
-- This instruction is supposed to be run on PC ROS2 packages installed in. Please run the instructions below on your PC ROS packages installed in.
+- Make sure that ROS2 Packages must be installed on your PC before following an instruction. - [Install ROS2 Packages](/docs/en/platform/openmanipulator_x/ros2_setup/#install-ros2-packages)
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -423,166 +427,6 @@ The user can change each joint by GUI, if the user launch only RViz by executing
 
 `Message List` for `ROS2 Dashing Diademata` will be released soon!
 {: .notice}
-
-<!--
-{% capture notice_01 %}
-**NOTE**:
-- This instruction has been tested on `Ubuntu 18.04` and `ROS2 Dashing Diademata`.
-- This instruction is supposed to be run on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
-- Make sure to run the [OpenMANIPULATOR-X controller](/docs/en/platform/ros2_openmanipulator_x/ros_controller_package/#launch-controller) instructions before running the instructions below.
-{% endcapture %}
-<div class="notice--info">{{ notice_01 | markdownify }}</div>
-
-OpenMANIPULATOR-X Controller provides **topic** and **service** messages to control manipulator and check the states of manipulator.
-
-### [Topic](#topic)
-
-#### [Topic Monitor](#topic-monitor)
-
-In order to check the topics of OpenMANIPULATOR-X controller, you can use [rqt][rqt] provided by ROS. Rqt is a Qt-based framework for GUI development for ROS. Rqt allows users to easily see topic status by displaying all topics on a topic list. You can see topic name, type, bandwidth, Hz and value on rqt.
-
-Run rqt.
-``` bash
-$ rqt
-```
- <img src="/assets/images/platform/openmanipulator_x/rqt_om.png" width="1000">
-
-**TIP**: If rqt is not displayed, select the `plugin` -> `Topic Monitor` -> `OpenMANIPULATOR`.
-{: .notice--success}
-
-Topics without a check mark will not be monitored. To monitor topics, click the checkbox next.  
-
- <img src="/assets/images/platform/openmanipulator_x/rqt_1.png" width="1000">
-
-If you would like to see more details about topic message, click the `▶` button next to each checkbox.  
-
- <img src="/assets/images/platform/openmanipulator_x/rqt_2.png" width="1000">
-
-[rqt]: http://wiki.ros.org/rqt
-
-#### [Published Topic List](#published-topic-list)
-
-**Published Topic List** :
-A list of topics that the open_manipulator_controller publishes.
-- `/open_manipulator/states`
-- `/open_manipulator/joint_states`
-- `/open_manipulator/gripper/kinematics_pose`
-- `/open_manipulator/*joint_name*_position/command`
-- `/open_manipulator/rviz/moveit/update_start_state`
-
-**NOTE**: These topics are messages for checking the status of the robot regardless of the robot's motion.
-{: .notice--info}
-
-`/open_manipulator/joint_states`([sensor_msgs/msg/JointState]{: .popup}) is a message indicating the states of joints of OpenMANIPULATOR-X. **"name"** indicates joint component names.  **"effort"** shows currents of the joint DYNAMIXEL. **"position"** and **"velocity"** indicates angles and angular velocities of joints.
-
- <img src="/assets/images/platform/openmanipulator_x/rqt_joint_states.png" width="1000"> 
-
-`/open_manipulator/gripper/kinematics_pose`([open_manipulator_msgs/msg/KinematicsPose]{: .popup}) is a message indicating pose (position and orientation) in [task space]{: .popup}. **"position"** indicates the x, y and z values of the center of the end-effector (tool). **"Orientation"** indicates the direction of the end-effector (tool) as quaternion.
-
- <img src="/assets/images/platform/openmanipulator_x/rqt_kinematic_pose.png" width="1000"> 
-
-`/open_manipulator/states`([open_manipulator_msgs/msg/OpenManipulatorState]{: .popup}) is a message indicating the status of OpenMANIPULATOR. **"open_manipulator_actuator_state"** indicates whether actuators (DYNAMIXEL) are enabled ("ACTUATOR_ENABLE") or disabled ("ACTUATOR_DISABLE"). **"open_manipulator_moving_state"** indicates whether OpenMANIPULATOR-X is moving along the trajectory ("IS_MOVING") or stopped ("STOPPED").
-
- <img src="/assets/images/platform/openmanipulator_x/rqt_states.png" width="1000"> 
-
-`/open_manipulator/*joint_name*_position/command`([std_msgs/msg/Float64]{: .popup}) are the messages to publish goal position of each joint to gazebo simulation node. `*joint_name*` shows the name of each joint. The messages will only be published if you run the controller package with the `use_platform` parameter set to `false`.
-
-`/rviz/moveit/update_start_state`([std_msgs/msg/Empty]{: .popup}) is a message to update start state of moveit! trajectory. This message will only be published if you run the controller package with the `use_moveit` parameter set to `true`.
-
-#### [Subscribed Topic List](#published-topic-list)
-
-**Subscribed Topic List**:
-A list of topics that the open_manipulator_controller subscribes.
-- `/open_manipulator/option`
-- `/open_manipulator/move_group/display_planned_path`
-- `/open_manipulator/move_group/goal`
-- `/open_manipulator/execute_trajectory/goal`
-
-**NOTE**: These topics are messages for checking the status of the robot regardless of the robot's motion.
-{: .notice--info}
-
-`/open_manipulator/option`([std_msgs/msg/String]{: .popup}) is used to set OpenMANIPULATOR-X options. **"print_open_manipulator_setting"** : is to request the open_manipulator_controller to display "Manipulator Description".
-
-  <img src="/assets/images/platform/openmanipulator_x/rqt_option.png" width="1000"> 
-
-`/open_manipulator/option`([moveit_msgs/msg/DisplayTrajectory]{: .popup}) is used to subscribe a planned joint trajectory published from moveit!
-
-`/move_group/goal`([moveit_msgs/msg/MoveGroupActionGoal]{: .popup}) is used to subscribe a planning option data published from moveit!
-
-`/move_group/execute_trajectory/goal`([moveit_msgs/msg/ExecuteTrajectoryActionGoal]{: .popup}) is used to subscribe states of trajectory execution published from moveit!
-
-In addition, you can monitor topics through rqt whenever you have a topic added in your controller.
-
-
-### [Service](#service)
-
-
-#### [Service Server List](#service-server-list)
-
-**NOTE**: These services are messages to operate OpenMANIPULATOR-X or to change the status of the DYNAMIXEL of OpenMANIPULATOR.
-{: .notice--info}
-
-
-**Service Server List** :
-A list of service servers that open_manipulator_controller has.
-
-- `/open_manipulator/goal_joint_space_path` ([open_manipulator_msgs/srv/SetJointPosition]{: .popup})  
-The user can use this service to create a trajectory in the [joint space]{: .popup}. The user inputs the angle of the target joint and the total time of the trajectory.
-
-- `/open_manipulator/goal_joint_space_path_to_kinematics_pose` ([open_manipulator_msgs/srv/SetKinematicsPose]{: .popup})  
-The user can use this service to create a trajectory in the [joint space]{: .popup}. The user inputs the kinematics pose of the OpenMANIPULATOR-X end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
-
-- `/open_manipulator/goal_joint_space_path_to_kinematics_position` ([open_manipulator_msgs/srv/SetKinematicsPose]{: .popup})  
-The user can use this service to create a trajectory in the [joint space]{: .popup}. The user inputs the kinematics pose(position only) of the OpenMANIPULATOR-X end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
-
-- `/open_manipulator/goal_joint_space_path_to_kinematics_orientation` ([open_manipulator_msgs/srv/SetKinematicsPose]{: .popup})  
-The user can use this service to create a trajectory in the [joint space]{: .popup}. The user inputs the kinematics pose(orientation only) of the OpenMANIPULATOR-X end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
-
-- `/open_manipulator/goal_task_space_path` ([open_manipulator_msgs/srv/SetKinematicsPose]{: .popup})  
-The user can use this service to create a trajectory in the [task space]{: .popup}. The user inputs the kinematics pose of the OpenMANIPULATOR-X end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
-
-- `/open_manipulator/goal_task_space_path_position_only` ([open_manipulator_msgs/srv/SetKinematicsPose]{: .popup})  
-The user can use this service to create a trajectory in the [task space]{: .popup}. The user inputs the kinematics pose(position only) of the OpenMANIPULATOR-X end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
-
-- `/open_manipulator/goal_task_space_path_orientation_only` ([open_manipulator_msgs/srv/SetKinematicsPose]{: .popup})  
-The user can use this service to create a trajectory in the [task space]{: .popup}. The user inputs the kinematics pose(orientation only) of the OpenMANIPULATOR-X end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
-
-- `/open_manipulator/goal_joint_space_path_from_present` ([open_manipulator_msgs/srv/SetJointPosition]{: .popup})  
-The user can use this service to create a trajectory from present joint angle in the [joint space]{: .popup}. The user inputs the angle of the target joint to be changed and the total time of the trajectory.
-
-- `/open_manipulator/goal_task_space_path_from_present` ([open_manipulator_msgs/srv/SetKinematicsPose]{: .popup})  
-The user can use this service to create a trajectory from present kinematics pose in the task space. The user inputs the kinematics pose to be changed of the OpenMANIPULATOR-X end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
-
-- `/open_manipulator/goal_task_space_path_from_present_position_only` ([open_manipulator_msgs/srv/SetKinematicsPose]{: .popup})  
-The user can use this service to create a trajectory from present kinematics pose in the [task space]{: .popup}. The user inputs the kinematics pose(position only) of the OpenMANIPULATOR-X end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
-
-- `/open_manipulator/goal_task_space_path_from_present_orientation_only` ([open_manipulator_msgs/srv/SetKinematicsPose]{: .popup})  
-The user can use this service to create a trajectory from present kinematics pose in the [task space]{: .popup}. The user inputs the kinematics pose(orientation only) of the OpenMANIPULATOR-X end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
-
-- `/open_manipulator/goal_tool_control` ([open_manipulator_msgs/srv/SetJointPosition]{: .popup})  
-The user can use this service to move the tool of OpenMANIPULATOR.
-
-- `/open_manipulator/set_actuator_state` ([open_manipulator_msgs/srv/SetActuatorState]{: .popup})  
-The user can use this service to control the state of actucators.   
-If the user set true at set_actuator_state valuable, the actuator will be enabled.  
-If the user set false at set_actuator_state valuable, the actuator will be disabled.
-
-- `/open_manipulator/goal_drawing_trajectory` ([open_manipulator_msgs/srv/SetDrawingTrajectory]{: .popup})  
-The user can use this service to create a drawing trajectory. The user can create the circle, the rhombus, the heart, and the straight line trajectory.
-
-- `/moveit/get_joint_position` ([open_manipulator_msgs/srv/GetJointPosition]{: .popup})  
-This service is used when using moveit! The user can use this service to receives a joint position which is calculated by move_group.
-
-- `/moveit/get_kinematics_pose` ([open_manipulator_msgs/srv/GetKinematicsPose]{: .popup})  
-This service is used when using moveit! The user can use this service to receives a kinematics pose which is calculated by move_group.
-
-- `/moveit/set_joint_position` ([open_manipulator_msgs/srv/SetJointPosition]{: .popup})  
-This service is used when using moveit! The user can use this service to create a trajectory in the [joint space]{: .popup} by move_group. The user inputs the angle of the target joint and the total time of the trajectory.
-
-- `/moveit/set_kinematics_pose` ([open_manipulator_msgs/srv/SetKinematicsPose]{: .popup})  
-This service is used when using moveit! The user can use this service to create a trajectory in the [task space]{: .popup} by move_group. The user inputs the kinematics pose of the OpenMANIPULATOR-X end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
-
--->
 
 [open_manipulator_msgs/GetJointPosition]: /docs/en/popup/open_manipulator_msgs_GetJointPosition/
 [open_manipulator_msgs/GetKinematicsPose]: /docs/en/popup/open_manipulator_msgs_GetKinematicsPose/

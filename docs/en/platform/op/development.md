@@ -148,7 +148,7 @@ You may also update the source code via Subversion with the command "svn up" fro
 
 ### [Terminate Demo Program](#terminate-demo-program)
 
-- If you wish to run other programs, such as the tools, customization, continue running DARwIn-OP without the preinstalled demo program; then you need to terminate the demo program.
+- If you wish to run other programs, such as the tools, customization, continue running DARwIn-OP without the installed demo program; then you need to terminate the demo program.
 
 - The operating chapter mentions the "RESET" button and its function exclusively for the sub controller. However, the camera and executable program (the demo program) are not controlled by the sub controller; therefore, whenever you press the reset button the camera and program will remain unaffected and continue running.
 

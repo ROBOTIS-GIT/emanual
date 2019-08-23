@@ -27,7 +27,7 @@ page_number: 12
 **NOTE**:
 - This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - This instruction has been tested on `Ubuntu 18.04` and `ROS Melodic`.
-- This instruction is supposed to be run on PC with ROS packages installed in.
+- Make sure that ROS2 Packages must be installed on your PC before following an instruction. - [Install ROS2 Packages](/docs/en/platform/openmanipulator_pro/ros2_setup/#install-ros2-packages).
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -111,7 +111,7 @@ Joint Dynamixel ID : 5, Model Name : PRO-PLUS-H42P-020-S300-R
 Joint Dynamixel ID : 6, Model Name : PRO-PLUS-H42P-020-S300-R  
 {: .notice--info}
 
-Open an [open_manipulator_pro_control_gui](/docs/en/platform/ros2_openmanipulator_pro/ros_operation/#gui-program) to control OpenMANIPULATOR-PRO
+Open an [open_manipulator_pro_control_gui](/docs/en/platform/openmanipulator_pro/ros_operation/#gui-program) to control OpenMANIPULATOR-PRO
 
 -->
 

@@ -21,6 +21,7 @@ page_number: 4
 **NOTE** : 
 - This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - This instruction has been tested on `Ubuntu 18.04` and `ROS Melodic Morenia`.
+- Make sure that ROS Packages must be installed on your PC before following an instruction. - [Install ROS Packages](/docs/en/platform/openmanipulator_pro/ros_setup/#install-ros-packages)
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -70,7 +71,7 @@ If you prefer manual installation, please follow the link below.
 {: .notice--info}
 
 
-## [Install ROS Package](#install-ros-package)
+## [Install ROS Packages](#install-ros-packages)
 
 Install dependent packages for OpenMANIPULATOR-PRO. Run the following commands in a terminal window.
 

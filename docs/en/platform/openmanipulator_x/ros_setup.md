@@ -17,8 +17,12 @@ page_number: 5
 
 # [[ROS] Setup](#ros-setup)
 
-**NOTE** : The following instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-{: .notice--info}
+{% capture notice_01 %}
+**NOTE** : 
+- The following instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+- Make sure that ROS Packages must be installed on your PC before following an instruction. - [Install ROS Packages](/docs/en/platform/openmanipulator_x/ros_setup/#install-ros-packages)
+{% endcapture %}
+<div class="notice--info">{{ notice_01 | markdownify }}</div>
 
 **WARNING** : If you would like to control OpenMANIPULATOR-X on OpenCR (Embedded board) instead of using ROS, please set it up as described in [OpenCR Setup](/docs/en/platform/openmanipulator_x/opencr_setup/#opencr-setup).
 {: .notice--warning}

@@ -17,14 +17,14 @@ page_number: 5
 
 # [[ROS] Controller Package](#ros-controller-package)
 
-The OpenMANIPULATOR-PRO controller provides basic manipulation of OpenMANIPULATOR-PRO. You can control DYNAMIXEL's of OpenMANIPULATOR-PRO and check states of OpenMANIPULATOR-PRO through [messages](/docs/en/platform/openmanipulator_pro/ros_controller_package/#message-list) of the controller.  
+You can control each joint of OpenMANIPULATOR-PRO and check states of OpenMANIPULATOR-PRO through [messages](/docs/en/platform/openmanipulator_pro/ros_controller_package/#message-list) by utilizing an exclusive controller program.
  
 
 {% capture notice_01 %}
 **NOTE** :  
 - This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - This instruction has been tested on `Ubuntu 18.04` and `ROS Melodic Morenia`.  
-- This instruction is supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
+- Make sure that ROS Packages must be installed on your PC before following an instruction. - [Install ROS Packages](/docs/en/platform/openmanipulator_pro/ros_setup/#install-ros-packages)
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -84,7 +84,7 @@ Before launching the controller, please check `open_manipulator_pro_controller` 
 
 After setting those parameters, launch the OpenMANIPULATOR-PRO controller to start [[ROS] Operation](/docs/en/platform/openmanipulator_pro/ros_operation/#ros-operation).
 
-Please, open the Terminal then run roscore along with following command.
+Please, open a terminal then run roscore along with following command.
 
 ``` bash
 $ roscore
@@ -102,7 +102,7 @@ $ roslaunch open_manipulator_pro_controller open_manipulator_pro_controller.laun
 {: .notice--warning}
 
 
-Follwing message will be shown in the Terminal after the process done successfully.  
+Follwing message will be shown in a terminal after the process is done successfully.  
 
 ```
 SUMMARY
@@ -153,7 +153,7 @@ if DYNAMIXEL aren't recoginized, please check firmware with ROBOTIS software ([R
 **NOTE**:  
 - This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - This instruction has been tested on `Ubuntu 18.04` and `ROS Melodic Morenia`.
-- This instruction is supposed to be run on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.  
+- Make sure that ROS Packages must be installed on your PC before following an instruction. - [Install ROS Packages](/docs/en/platform/openmanipulator_pro/ros_setup/#install-ros-packages) 
 - Make sure to run the [OpenMANIPULATOR-PRO controller](/docs/en/platform/openmanipulator_pro/ros_controller_package/#launch-controller) instructions before running the instructions below.  
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
@@ -548,7 +548,7 @@ Active Joint
 **NOTE**:  
 - This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - This instruction has been tested on `Ubuntu 18.04` and `ROS Melodic Morenia`.  
-- This instruction is supposed to be run on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
+- Make sure that ROS Packages must be installed on your PC before following an instruction. - [Install ROS Packages](/docs/en/platform/openmanipulator_pro/ros_setup/#install-ros-packages)
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -565,6 +565,7 @@ $ roslaunch open_manipulator_pro_description open_manipulator_pro_rviz.launch
 The user can change each joint by GUI, if the user launch only RViz by executing the following command :
 `$ roslaunch open_manipulator_pro_description open_manipulator_pro_rviz.launch use_gui:=true`
 
+
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -578,7 +579,7 @@ The user can change each joint by GUI, if the user launch only RViz by executing
 **NOTE**:  
 - This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - This instruction has been tested on `Ubuntu 18.04` and `ROS Melodic Morenia`.   
-- This instruction is supposed to be run on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.  
+- Make sure that ROS Packages must be installed on your PC before following an instruction. - [Install ROS Packages](/docs/en/platform/openmanipulator_pro/ros_setup/#install-ros-packages)  
 - Make sure to run the [OpenMANIPULATOR-PRO controller](/docs/en/platform/openmanipulator_pro/ros_controller_package/#launch-controller) instructions before running the instructions below.  
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>

@@ -3,7 +3,7 @@ layout: redirect
 lang: en
 ref: redirect_ros2_openmanipulator
 permalink: /openmanipulator_pro_ros2/
-redirecturl: /docs/en/platform/ros2_openmanipulator_pro/overview/
+redirecturl: /docs/en/platform/openmanipulator_pro/overview/
 ---
 
 <br><br><br><br><br><br>

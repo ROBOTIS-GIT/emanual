@@ -18,7 +18,9 @@ page_number: 9
 # [[ROS2] Setup](#ros-setup)
 
 {% capture notice_01 %}
-**NOTE** : The following instruction has been tested on `Ubuntu 18.04` and `ROS2 Dashing Diademata`.
+**NOTE** :  
+- This instruction has been tested on `Ubuntu 18.04` and `ROS2 Dashing Diademata`.
+- Make sure that ROS2 Packages must be installed on your PC before following an instruction. - [Install ROS2 Packages](/docs/en/platform/openmanipulator_pro/ros2_setup/#install-ros2-packages).
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -32,22 +34,23 @@ Download and install `Ubuntu 18.04` on your PC. Tutoral guide will be helpful fo
 ## [Install ROS2 on PC](#install-ros2-on-pc)
 
 ![](/assets/images/platform/openmanipulator_pro/logo_ros.png)
- 
-As OpenMANIPULATOR-X operates on Ronbot Operating System(ROS), it requies to intall `ROS2 Dashing Diademata`. Following link guides you how to install ROS2 on your PC.
-  
-- [Manual Installation of ROS2 Dashing Diademata](https://index.ros.org/doc/ros2/Installation/Dashing/Linux-Install-Debians/)
 
-## [Install ROS Package](#install-ros-package)
-
-Install dependent packages for OpenMANIPULATOR-PRO. Run the following commands in a terminal window.
+As OpenMANIPULATOR-PRO operates on Ronbot Operating System(ROS), it requies to intall `ROS2 Dashing Diademata`.
+The following script will allow you to simplify the ROS2 installation procedure. Run the following commands in a terminal window. After installing ROS2, please reboot PC.
 
 **NOTE**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`+`Alt`+`t`.
 {: .notice--info} 
-
 ``` bash
 $ sudo apt update && sudo apt upgrade
 $ wget https://raw.githubusercontent.com/ROBOTIS-GIT/open_manipulator/ros2/install_ros_dashing.sh && chmod 755 ./install_ros_dashing.sh && bash ./install_ros_dashing.sh
 ```
+
+If you prefer a manual installation, following link guides you how to install ROS2 on your PC,
+- [Manual Installation of ROS2 Dashing Diademata](https://index.ros.org/doc/ros2/Installation/Dashing/Linux-Install-Debians/)
+
+## [Install ROS2 Packages](#install-ros2-packages)
+
+Install dependent packages for OpenMANIPULATOR-PRO. Run the following commands in a terminal window.
 
 **NOTE**: In order to check which packages are installed, please check this link out. [install_ros_dashing.sh](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh)
 {: .notice--info}

@@ -17,10 +17,14 @@ page_number: 6
 
 # [[ROS] Controller Package](#ros-controller-package)
 
-OpenMANIPULATOR-X controller provides basic manipulation of OpenMANIPULATOR-X. You can control DYNAMIXEL's of OpenMANIPULATOR-X and check states of OpenMANIPULATOR-X through [messages](/docs/en/platform/openmanipulator_x/ros_controller_package/#message-list) of the controller.
+You can control each joint of OpenMANIPULATOR-X and check states of OpenMANIPULATOR-X through [messages](/docs/en/platform/openmanipulator_x/ros_controller_package/#message-list) by utilizing an exclusive controller program.
 
-**NOTE**: This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-{: .notice--info}
+{% capture notice_01 %}
+**NOTE**: 
+- This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+- Make sure that ROS Packages must be installed on your PC before following an instruction. - [Install ROS Packages](/docs/en/platform/openmanipulator_x/ros_setup/#install-ros-packages)
+{% endcapture %}
+<div class="notice--info">{{ notice_01 | markdownify }}</div>
 
 ## [Launch Controller](#launch-controller)
 
@@ -149,7 +153,7 @@ Even if you can't find any DYNAMIXEL, please check firmware to use ROBOTIS softw
 {% capture notice_01 %}
 **NOTE**:
 - The below instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-- This instruction is supposed to be run on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
+- Make sure that ROS Packages must be installed on your PC before following an instruction. - [Install ROS Packages](/docs/en/platform/openmanipulator_x/ros_setup/#install-ros-packages).
 - Make sure to run the [OpenMANIPULATOR-X controller](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) instructions before running the instructions below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
@@ -444,7 +448,7 @@ This parameter is descripted on open_manipulator.cpp in open_manipulator_libs pa
 {% capture notice_01 %}
 **NOTE**:
 - This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-- This instruction is supposed to be run on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
+- Make sure that ROS Packages must be installed on your PC before following an instruction. - [Install ROS Packages](/docs/en/platform/openmanipulator_x/ros_setup/#install-ros-packages).
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -471,8 +475,8 @@ You can change each joint by GUI, if the user launch only RViz by executing the 
 {% capture notice_01 %}
 **NOTE**:
 - This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-- This instruction is supposed to be run on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
-- Make sure to run the [[ROS] OpenMANIPULATOR-X controller](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) instructions before running the instructions below.
+- Make sure that ROS Packages must be installed on your PC before following an instruction. - [Install ROS Packages](/docs/en/platform/openmanipulator_x/ros_setup/#install-ros-packages).
+- Make sure to run the [OpenMANIPULATOR-X controller](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) instructions before running the instructions below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
