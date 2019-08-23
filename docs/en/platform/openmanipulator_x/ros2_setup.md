@@ -20,7 +20,7 @@ page_number: 10
 {% capture notice_01 %}
 **NOTE** :  
 - This instruction has been tested on `Ubuntu 18.04` and `ROS 2 Dashing Diademata`.
-- Make sure that ROS 2 Packages must be installed on your PC before following an instruction. - [Install ROS 2 Packages](/docs/en/platform/openmanipulator_x/ros2_setup/#install-ros2-packages).
+- Make sure that ROS 2 Packages must be installed on your PC before following an instruction. - [Install ROS 2 Packages](/docs/en/platform/openmanipulator_x/ros2_setup/#install-ros-2-packages).
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -56,7 +56,7 @@ $ wget https://raw.githubusercontent.com/ROBOTIS-GIT/open_manipulator/ros2/insta
 If you prefer a manual installation，following link guides you how to install ROS 2 on your PC
 - [Manual Installation of ROS 2 Dashing Diademata](https://index.ros.org/doc/ros2/Installation/Dashing/Linux-Install-Debians/)
 
-## [Install ROS 2 Packages](#install-ros2-packages)
+## [Install ROS 2 Packages](#install-ros-2-packages)
 
 Install dependent packages for OpenMANIPULATOR-X. Run the following commands in a terminal window.
 

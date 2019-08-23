@@ -16374,11 +16374,6 @@ openmanipulator_pro:
             url: /platform/openmanipulator_pro/ros2_controller_package/#rviz
       - title: "Message List"
         url: /platform/openmanipulator_pro/ros2_controller_package/#message-list
-        children:
-          - title: "Topic"
-            url: /platform/openmanipulator_pro/ros2_controller_package/#topic
-          - title: "Service"
-            url: /platform/openmanipulator_pro/ros2_controller_package/#service
   - title: "[ROS 2] Operation"
     url: /platform/openmanipulator_pro/ros2_operation/#ros-operation
     children:
@@ -16396,31 +16391,7 @@ openmanipulator_pro:
   #    - title: "Controller for gazebo"
   #      url: /platform/openmanipulator_pro/ros2_simulation/#controller-for-gazebo
   - title: "[ROS 2] Tool Applications"
-    url: /platform/openmanipulator_pro/ros2_tool_applications
-    children:
-      - title: "RH-P12-RN Gripper"
-        url: /platform/openmanipulator_pro/ros2_tool_applications/#rh-p12-rn-gripper
-        children:
-          - title: "Parts List"
-            url: /platform/openmanipulator_pro/ros2_tool_applications/#parts-list
-          - title: "Assembly Manual"
-            url: /platform/openmanipulator_pro/ros2_tool_applications/#assembly-manual
-          - title: "Operation"
-            url: /platform/openmanipulator_pro/ros2_tool_applications/#operation
-            children:
-              - title: "GUI Program"
-                url: /platform/openmanipulator_pro/ros2_tool_applications/#gui-program
-              - title: "Teleoperation"
-                url: /platform/openmanipulator_pro/ros2_tool_applications/#teleoperation
-              - title: "Moveit!"
-                url: /platform/openmanipulator_pro/ros2_tool_applications/#moveit
-          - title: "Simulation"
-            url: /platform/openmanipulator_pro/ros2_tool_applications/#simulation
-            children:
-              - title: "Launch Gazebo"
-                url: /platform/openmanipulator_pro/ros2_tool_applications/#launch-gazebo
-              - title: "Controller for Gazebo"
-                url: /platform/openmanipulator_pro/ros2_tool_applications/#controller-for-gazebo        
+    url: /platform/openmanipulator_pro/ros2_tool_applications    
 #Manipulator-H
 manipulator_h:
   - title: "Introduction"
