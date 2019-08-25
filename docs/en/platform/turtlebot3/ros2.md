@@ -568,7 +568,6 @@ $ ros2 launch turtlebot3_navigation2 navigation2.launch.py map:=$HOME/map.yaml
 
 1. Add GAZEBO_MODEL_PATH.
 ```bash
-$ echo '# Add gazebo model path' >> ~/.bashrc
 $ echo 'export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/turtlebot3_ws/src/turtlebot3/turtlebot3_simulations/turtlebot3_gazebo/models' >> ~/.bashrc
 $ source ~/.bashrc
 ```
