@@ -310,9 +310,9 @@ $ sudo udevadm trigger
 
 #### Install dependencies to run 32bit executables.
 ```bash
-sudo dpkg --add-architecture armhf
-sudo apt-get update
-sudo apt-get install libc6:armhf
+$ sudo dpkg --add-architecture armhf
+$ sudo apt-get update
+$ sudo apt-get install libc6:armhf
 ```
 
 #### Download OpenCR binaries & tools for uploading.
@@ -324,8 +324,10 @@ $ tar -xjf ./opencr_update.tar.bz2
 
 #### Upload TurtleBot3 ROS 2 firmware to OpenCR.
 ```bash
-$ export OPENCR_PORT=/dev/ttyACM0   #OpenCR port
-$ export OPENCR_MODEL=burger        #tb3 model you are using
+# Set port for OpenCR 
+$ export OPENCR_PORT=/dev/ttyACM0
+# Set model of TurtleBot3 you are using
+$ export OPENCR_MODEL=burger
 $ cd ~/opencr_update && ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr
 ```
 
