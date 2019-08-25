@@ -82,6 +82,7 @@ page_number: 2
   - 07/22/2019 [Top 10 ROS-based robotics companies in 2019, The Robot Report
 ](https://www.therobotreport.com/top-10-ros-based-robotics-companies-2019/)
   - 12/10/2018 [Robot Gift Guide 2018, IEEE Spectrum](https://spectrum.ieee.org/automaton/robotics/home-robots/robot-gift-guide-2018)
+  - 11/26/2018 [AWS RoboMaker – Develop, Test, Deploy, and Manage Intelligent Robotics Apps, AWS News Blog](https://aws.amazon.com/blogs/aws/aws-robomaker-develop-test-deploy-and-manage-intelligent-robotics-apps/)
   - 10/01/2018 [Microsoft Announces Experimental Release of ROS for Windows 10, IEEE Spectrum](https://spectrum.ieee.org/automaton/robotics/robotics-software/microsoft-announces-experimental-release-of-ros-for-windows-10)
   - 09/29/2018 "XEL Network : modular H/W ecosystem using ROS2" on ROSCon2018, [PDF](https://roscon.ros.org/2018/presentations/ROSCon2018_Lightning1_11.pdf), [Video](https://vimeo.com/292710106)
   - 09/14/2018 "Introduction of Open Robot Platform: mobile robot, manipulator, humanoid, hand" on ROSCon JP 2018, [PDF](https://roscon.ros.org/jp/2018/presentations/ROSCon_JP_2018_presentation_4.pdf), [Video](https://vimeo.com/292071289)
