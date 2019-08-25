@@ -20,7 +20,6 @@ page_number: 2
 ![](/assets/images/platform/turtlebot3/overview/turtlebot3_flyer_front_ver1806.png)
 
 ## [Publish](#publish)
-OpenMANIPULATOR
   - 07/03/2018 [TurtleBot3 AutoRace with Gazebo](https://discourse.ros.org/t/tb3-turtlebot3-autorace-with-gazebo/5261)
   - 05/25/2018 [Announcing TurtleBot3 Software(v1.0.0) and Firmware(v1.2.0) Update](https://discourse.ros.org/t/announcing-turtlebot3-software-v1-0-0-and-firmware-v1-2-0-update/4888)
   - 05/21/2018 [Reinforcement Learning with TB3!](https://discourse.ros.org/t/tb3-reinforcement-learning-with-tb3/4842)
