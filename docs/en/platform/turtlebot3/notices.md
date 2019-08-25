@@ -21,6 +21,8 @@ page_number: 2
 
 ## [Publish](#publish)
   - 08/21/2019 [ROS 2 Dashing Release](https://discourse.ros.org/t/tb3-ros-2-dashing-release/10364)
+  - 08/20/2019 [Navigation2 Dashing release - demo video](https://discourse.ros.org/t/navigation2-dashing-release-demo-video/10349)
+  - 02/01/2019 [Announcing new packages for TurtleBot3 in ROS2 (including Cartographer and Navigation2)](https://discourse.ros.org/t/announcing-new-packages-for-turtlebot3-in-ros2-including-cartographer-and-navigation2/7694)
   - 12/17/2018 [ros2arduino released: Arduino library for communicating with ROS 2](https://discourse.ros.org/t/ros2arduino-0-0-1-released-arduino-library-for-communicating-with-ros2-dds/7147)
   - 09/21/2018 [XEL Network first application + Distributing XEL devices 100 set for free in ROScon2018!](https://discourse.ros.org/t/xel-network-first-application-distributing-xel-devices-100-set-for-free-in-roscon2018/6115)
   - 09/13/2018 [Introducing the XEL Network : Modular H/W ecosystem over ROS2](https://discourse.ros.org/t/introducing-the-xel-network-modular-h-w-ecosystem-over-ros2/6050)
