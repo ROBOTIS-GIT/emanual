@@ -82,7 +82,7 @@ $ sudo apt install python3-vcstool
 
 #### Install TurtleBot3 ROS 2 Packages
 
-Download turtlebot3 packages and install turtlebot3 and ROS 2 dependency packages on **Remote PC**.
+Download `turtlebot3` packages and install `turtlebot3` packages and ROS 2 dependency packages on **Remote PC**.
 
 ```bash
 $ mkdir -p ~/turtlebot3_ws/src
@@ -324,9 +324,9 @@ $ tar -xjf ./opencr_update.tar.bz2
 
 #### Upload TurtleBot3 ROS 2 firmware to OpenCR.
 ```bash
-# Set port for OpenCR 
+# Set a port for OpenCR 
 $ export OPENCR_PORT=/dev/ttyACM0
-# Set model of TurtleBot3 you are using
+# Set a model of TurtleBot3 you are using
 $ export OPENCR_MODEL=burger
 $ cd ~/opencr_update && ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr
 ```
@@ -364,7 +364,7 @@ After few seconds, particular sound will be played.
 
 ### Bringup TurtleBot3
 
-1. Launch a model of your TurtleBot3 including node of robot_state_publisher and turtlebot3_node.
+1. Launch a model of your TurtleBot3 including node of `robot_state_publisher` and `turtlebot3_node`.
 
     **NOTE**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `burger`, `waffle`, `waffle_pi`. If you want to permanently set the export settings, please refer to [Export TURTLEBOT3_MODEL][export_turtlebot3_model]{: .popup} page.
     {: .notice}
@@ -482,7 +482,7 @@ $ ros2 service list
 **WARNING** : Do not proceed to this instruction on SBC in TurtleBot3. Please follow steps with **Remote PC**.
 {: .notice--warning}
 
-1. Run Rviz2 on **remote PC**
+1. Run `RViz2` on **remote PC**
 ```bash
 $ ros2 launch turtlebot3_bringup rviz2.launch.py
 ```
@@ -551,7 +551,7 @@ $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ ros2 launch turtlebot3_navigation2 navigation2.launch.py map:=$HOME/map.yaml
 ```
 
-- Click `2D Pose Estimate` button in a menu bar, and then point exact pose of turtlebot3 on a map.
+- Click `2D Pose Estimate` button in a menu bar, and then point exact pose of TurtleBot3 on a map.
 
 ![](/assets/images/platform/turtlebot3/ros2/tb3_navigation2_rviz_1.png)
 > 2D Pose Estimate
