@@ -171,7 +171,7 @@ $ sudo apt-get install ros-kinetic-image-transport ros-kinetic-cv-bridge ros-kin
     $ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_camera_pi.launch
     ```
 
-3. `TurtleBot SBC` Open new terminal, then enter
+3. `Remote PC` Open new terminal, then enter
 
     ``` bash
     $ export AUTO_IN_CALIB=action
@@ -217,7 +217,7 @@ $ sudo apt-get install ros-kinetic-image-transport ros-kinetic-cv-bridge ros-kin
     $ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_camera_pi.launch
     ```
 
-3. `TurtleBot SBC` Open new terminal, then enter
+3. `Remote PC` Open new terminal, then enter
 
     ``` bash
     $ export AUTO_IN_CALIB=action
@@ -433,7 +433,7 @@ $ sudo apt-get install ros-kinetic-image-transport ros-kinetic-cv-bridge ros-kin
     $ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_camera_pi.launch
     ```
 
-5. `TurtleBot SBC` Open new terminal, then enter
+5. `Remote PC` Open new terminal, then enter
 
     ``` bash
     $ export AUTO_IN_CALIB=action
