@@ -413,7 +413,7 @@ Refer to the following figure for details.
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_056.gif)
 
-- You can choose from Add(+), Subtract(-), Multiply(x), And(&), Or(|).
+- You can choose from Add(+), Subtract(-), Multiply(\*), And(&), Or(\|).
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_057.gif)
 
@@ -427,24 +427,23 @@ Refer to the following figure for details.
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_059.gif)
 
-- This instruction is used when reading/writing a variable’s value.
-- The following is an example of writing a value to the variable “speed”, and then reading this variable’s value to apply it to the Geared Motor.
+- This instruction is used when reading/writing value to a variable or an instruction.
+- The following is an example of writing a value to the variable `Acceleration`, and then reading the variable from the Geared Motor.
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_060.jpg)
 
 - This instruction is used when reading/writing a device’s value.
-- The following is an example of setting the speed value of a Geared Motor connected to Port number 1.
+- The following is an example of setting the speed value of a Geared Motor connected to Port 1.
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_061.jpg)
 
 ### Lable/Jump
 
-- These instructions are used for branching of the program.
-- Label determines the location of the branching.
-- Using Jump you can execute a predesignated label first.
-- It is the same concept as ‘label / goto’ commands in C programming language
+- These instructions are used for branching the program.
+- Lable indicates the branch of the program.
+- Jump instruction skips to the designated Lable and run the code.
 
-- The figures below show how the program branches by using Jump
+The figures below show how the program branches by using Jump.
 - The figure on the left shows the program jumping to Mode1 and executing only the code from Mode1.
 - The figure on the right shows the program jumping to Mode2 and executing only the code from Mode2.
 
@@ -464,13 +463,16 @@ This instruction controls the flow of program based on the True/False result of 
 
 - A conditional clause gives the result of a computation as either true or false.
 
-- Below are the comparison operators that can be used inside the parenthesis().
-  - == : check if left and right values are the same
-  - != : check if left and right values are not the same
-  - &gt; : check if left value is greater than the right value
-  - &gt;= : check if left value is greater or equal to the right value
-  - &lt; : check if right value is greater than the left value
-  - &lt;= : check if right value is greater or equal to the left value
+- Below are the comparison operators that can be used inside the parenthesis.
+
+| Operators | Description                                                                     |
+|:---------:|:--------------------------------------------------------------------------------|
+|    ==     | The value on the left hand side is equal to the right hand side                 |
+|    !=     | The value on the left hand side is not equal to the right hand side             |
+|    \>     | The value on the left hand side is greater than the right hand side             |
+|    \>=    | The value on the left hand side is greater than or equal to the right hand side |
+|     <     | The value on the left hand side is less than the right hand side                |
+|    <=     | The value on the left hand side is less than or equal to the right hand side    |
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_065.jpg)
 
@@ -487,10 +489,10 @@ This instruction controls the flow of program based on the True/False result of 
 
 ### If
 
-- If the result of the conditional clause is true, then it executes the code inside the block.
-- It is the same concept as the ‘If’ statement in C programming language.
+- If the conditional clause is true, the code inside the `IF` block is executed.
+- It is the same concept as the **If** statement in C programming language.
 
-- The following in an example of using If to check whether a variable’s value is 100.
+- The following is an example of turning the LED on if the variable in the `IF` statement is equal to 100.
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_068.jpg)
 
@@ -500,11 +502,11 @@ This instruction controls the flow of program based on the True/False result of 
 
 ### Else If
 
-- This is used to check another conditional clause following an If statement.
-- An If statement must be used prior to Else If statement
+- This is used to examine another conditional clause when `IF` or `ELSE IF` statement is false.
+- `ELSE IF` block must be used after `IF` block or another `ELSE IF` block.
 - It is the same concept as the ‘Else If’ statement in C programming language.
 
-- The following in an example of using If to check whether a variable’s value is 100, and the using Else If to check whether the variable’s value is 50.
+- The following is an example of using If to check whether a variable’s value is 100, and the using Else If to check whether the variable’s value is 50.
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_070.jpg)
 
@@ -518,7 +520,7 @@ This instruction controls the flow of program based on the True/False result of 
 - An If statement must be used prior to Else statement
 - It is the same concept as the ‘Else’ statement in C programming language.
 
-- The following in an example of using If to check whether a variable’s value is 100, and if the result is false then running the Else statement that follows.
+- The following is an example of using If to check whether a variable’s value is 100, and if the result is false then running the Else statement that follows.
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_072.jpg)
 

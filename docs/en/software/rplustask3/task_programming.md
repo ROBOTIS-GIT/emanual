@@ -3,7 +3,7 @@ layout: archive
 lang: en
 ref: task_programming
 read_time: true
-share: true
+share: false
 author_profile: false
 permalink: /docs/en/software/rplustask3/task_programming/
 sidebar:
@@ -61,7 +61,7 @@ page_number: 2
 1. Select the code where to insert (or delete) the line. Click the right mouse button to show the option menu.
 2. Click `Insert Line` to insert a new line above the selected line (keyboard shortcut : `Space`)
 3. Click `Delete Line` to delete the selected line (keyboard shortcut : `Delete`)
-4. Click `Erase Line` to erase the code and keep the line (keyboard shortcut : `Backspace`)  
+4. Click `Clear Line` to erase the code and keep the line (keyboard shortcut : `Backspace`)  
   ![](/assets/images/sw/rplus_task3/task3_014.png)
 
 ## [Enable/Disable Line](#enabledisable-line)
@@ -102,7 +102,7 @@ page_number: 2
 
 ## [Download Task Code](#download-task-code)
 
-1. Click `Device` button. (keyboard shortcut : `Shift` + `F5`)
+1. Click `Select Port` button. (keyboard shortcut : `Shift` + `F5`)
 2. Select the port that is connected to the robot and click `Connect` button.
 3. If the robot is connected, click `Download` button to download the task code to the robot controller.  
   ![](/assets/images/sw/rplus_task3/task3_022.png)
@@ -118,12 +118,12 @@ Click the Confirm button
 When the window closes, click the “Start” button
 
 1. Move to Debugging Tab.
-2. Click the `Device` button. (keyboard shortcut : `Shift` + `F5`)
+2. Click the `Select Port` button. (keyboard shortcut : `Shift` + `F5`)
 3. Select the port that is connected to the robot and click `Connect` button.
 4. If the robot is connected, click `Terminal Start / Stop` button (keyboard shortcut : `Ctrl` + `F6`).  
   ![](/assets/images/sw/rplus_task3/task3_024.png)
 
-5. If the robot is connected, `Output Monitor` and `Virtual Remote Controller` is enabled.  
+5. If the robot is connected, `Program Output Monitor` and `Virtual Remote Controller` is enabled.  
   ![](/assets/images/sw/rplus_task3/task3_025.png)
 
 
@@ -149,183 +149,181 @@ The following image is an empty Start Program instruction.
 
 ### [End Program](#end-program)
 
-- 프로그램을 끝내고 싶은 지점을 수동으로 지정합니다.
-- 사용하지 않을 경우 프로그램 시작의 구간을 모두 수행한 후 자연 종료 됩니다.
-- 아래는 프로그램 시작의 구간을 모두 수행하여 “자연 종료”되는 경우 입니다.
+- This instruction sets the location where the program terminates.
+- If End Program does not exist, program will run through the code until the last line.
+
+The following is the code that terminates when it reaches to the end.
 
 ![](/assets/images/sw/rplus_task3/task3_028.png)
 
-- 아래는 프로그램 끝을 만나 “강제 종료”되는 경우입니다.
+The following is the code that force terminates at `END PROGRAM` line.
 
 ![](/assets/images/sw/rplus_task3/task3_029.png)
 
-### [구간 시작/구간 끝](#구간-시작구간-끝)
+### [Begin Block / End Block](#begin-block--end-block)
 
-- 구간이란 여러 개의 명령문을 묶어놓은 것을 의미합니다.
-- 구간의 시작과 끝은 항상 짝이 맞아야 합니다.
-- 만약 실행문이 한줄일 경우에는 구간기호가 생략될 수 있습니다.
-- C언어의 ‘{‘, ‘}’와 같은 기능을 합니다.
-- 아래는 “프로그램 시작”, “무조건 반복”의 구간을 나타낸 그림입니다.
+- A block is an enclosed set of multiple lines of instructions.
+- The beginning and end of a block must be paired.
+- If there is only one instruction code in the block, Begin / End Blocks can be omitted.
+
+The following code shows `START PROGRAM` and `ENDLESS LOOP` blocks.
 
 ![](/assets/images/sw/rplus_task3/task3_030.png)
 
-- 아래는 “프로그램 시작”, “만약”의 구간을 나타낸 그림입니다.
+The following code shows `START PROGRAM` and `IF` blocks.
 
 ![](/assets/images/sw/rplus_task3/task3_031.png)
 
-- 아래 그림과 같이 실행문이 한줄일 경우에는 구간기호가 생략될 수 있습니다.
+The following code shows when the blocks can be omitted.
 
 ![](/assets/images/sw/rplus_task3/task3_032.png)
 
-### [주석](#주석)
+### [Comment](#comment)
 
-- 프로그램의 설명이 필요한 경우 해당 줄에 주석(메모)을 추가할 수 있습니다.
-- "//" 기호가 삽입되면 더블 클릭하여 내용을 수정할 수 있습니다.
-- 주석을 작성하던 도중에 “취소”(혹은 ESC)버튼을 클릭하면 입력 전의 내용으로 복구됩니다.
-- 아래는 코드에 주석을 추가해 해석을 돕는 예제입니다.
+- If an explanation needs to be added, you can add a comment(memo) in the line.
+- By inserting the `//` symbol, you can double-click it to modify the content that follows.
+- While you are modifying a comment, you can click the ESC key to restore to the previous state of the comment.
+
+The following is an example of inserting a comment to make the source code easier to understand.
 
 ![](/assets/images/sw/rplus_task3/task3_033.png)
 
-## [실행문](#실행문)
+## [Execute](#execute)
 
-장치에 명령을 내리거나 수학적인 계산을 수행하는 명령어입니다. 자세한 설명은 하위 항목을 참고하세요.
+This is an instruction for giving a command to the device or performing a mathematical calculation.
+Refer to the following figure for details.
 
 ![](/assets/images/sw/rplus_task3/task3_034.png)
 
-### [계산](#계산)
+### Compute
 
-- 두 값을 연산하여 하나의 결과를 내는 명령어입니다. (C = A + B)
+- This instruction computes two values to give one result. (C = A + B)
 
-![](/assets/images/sw/rplus_task3/task3_035.png)
+  ![](/assets/images/sw/rplus_task3/task3_035.png)
 
-- 덧셈( + ), 뺄셈( - ), 곱셈( * ), 나눗셈( / ), MOD(%), AND( & ), OR( \| )을 선택할 수 있습니다.
+- Add(+), Subtract(-), Multiply(\*), Divide(/), Modulo(%), And(&), Or(\|) can be used.  
+  ![](/assets/images/sw/rplus_task3/task3_036.png)  
+    - Add( + ) : Adds two numbers.
+    - Subtract( - ) : Take the second number away from the first number.
+    - Multiply( \* ) : Multiply two numbers.
+    - Divide( / ) : Divide the first number by the second number and return the quotient (The remainder will be ignored).
+    - Modulo( % ) : Divide the first number by the second number and return the remainder (The quotient will be ignored).
+    - AND( & ) : Use bitwise AND operation for two values. Both values must be true for the result to be true.
+    - OR( \| ) : Use bitwise OR operation for two values. Either value must be true for the result to be true.
 
-![](/assets/images/sw/rplus_task3/task3_036.png)
-
-  - 덧셈( + ) : 두 값을 더합니다.
-  - 뺄셈( - ) : 앞에서 뒤의 값을 뺍니다.
-  - 곱셈( * ) : 두 값을 곱합니다.
-  - 나눗셈( / ) : 앞에서 뒤의 값을 나눈 몫을 나타냅니다. (나머지는 사라지고 몫만 결과로 나옵니다.)
-  - MOD( % ) : 앞에서 뒤에 값을 나눈 나머지를 나타냅니다. (몫은 사라지고 나머지만 결과로 나옵니다.)
-  - AND( & ) : 두 비트를 AND연산 합니다.
-  - OR( \| ) : 두 비트를 OR연산 합니다.
-
-- 아래는 계산 명령어를 사용한 예제입니다.
+The following is an example of using the Compute instruction.
 
 ![](/assets/images/sw/rplus_task3/task3_037.png)
 
-### [로드](#로드)
+### [Load](#load)
 
-- 하나의 값을 다른 하나로 대입하는 명령어입니다.
+- This instruction substitutes a value with another one.
+- This instruction is used when reading or writing a value to a variable or an instruction.
+- This instruction is used when reading or writing a value to a device.
 
-![](/assets/images/sw/rplus_task3/task3_038.png)
+  ![](/assets/images/sw/rplus_task3/task3_038.png)
 
-- 변수의 값을 읽거나 쓸 때 사용합니다.
-- 아래는 “속도”라는 변수에 값을 쓰고, 변수 값을 읽어 감속모터에 설정하는 예제 입니다.
+The following is an example of writing a value to the variable `Acceleration`, and then reading the variable from the Geared Motor.
 
 ![](/assets/images/sw/rplus_task3/task3_039.png)
 
-- 장치의 값을 읽거나 쓸 때 사용합니다.
-- 아래는 포트2번에 연결된 감속모터에 속도 값을 설정하는 예제입니다.
+The following is an example of setting the speed value of Geared Motor connected to Port 2.
 
 ![](/assets/images/sw/rplus_task3/task3_040.png)
 
-### [다중 수식](#다중-수식)
+### [Multi Compute](#multi-compute)
 
-- 복잡한 계산식을 실행할 때 사용하는 명령어입니다.
-- 수식 내부에서는 변수 또는 상수만 사용이 가능하며, 아래 그림과 같이 그 밖의 값은 변수에 대입하여 사용해야 합니다.
+- This instruction is used when calculating an expression with multiple operators.
+- Variables and constants can only be used in the expression.
 
+  ![](/assets/images/sw/rplus_task3/multiple_expression_1.png)
 
-![](/assets/images/sw/rplus_task3/multiple_expression_1.png)
+- The Multi Compute creates invisible temporary variables in the controller that consumes variable memory area.
 
+  ![](/assets/images/sw/rplus_task3/multiple_expression_2.png)
 
-- 다중 수식을 사용하게 되면 제어기 내부에 임시 변수가 생성되기 때문에 태스크에서 사용된 변수와 문법 검사 결과의 변수 갯수가 다를 수 있습니다.
+- Using an invalid expression will return the error message.
 
-![](/assets/images/sw/rplus_task3/multiple_expression_2.png)
-
-- 잘못된 수식을 입력하면 오류창이 나타납니다.
-
-![](/assets/images/sw/rplus_task3/multiple_expression_3.png)
+  ![](/assets/images/sw/rplus_task3/multiple_expression_3.png)
 
 
+### [Lable/Jump](#lablejump)
 
-### [레이블/점프](#레이블점프)
+- These instructions are used for branching the program.
+- Lable indicates the branch of the program.
+- Jump instruction skips to the designated Lable and run the code.
 
-- 프로그램의 분기를 위해 사용되는 명령어입니다.
-- 레이블은 분기할 위치를 지정합니다.
-- 점프를 통해 미리 지정한 레이블부터 실행할 수 있습니다.
-- C언어의 label / goto문과 같은 개념입니다.
-- 아래는 점프할 대상에 따라 프로그램이 분기되는 예제입니다.
-- 왼쪽 그림은 “작동모드1”로 점프하여 “작동모드2”에 해당하는 코드만 실행됩니다.
-- 오른쪽 그림은 “작동모드2”로 점프하여 “작동모드2”에 해당하는 코드만 실행됩니다.
+The following examples show how Lable and Jump can be used.
+- The left example will run the Mode1 only and skip the Mode2.
+- The right example will run the Mode2 only and skip the Mode1.
 
-![](/assets/images/sw/rplus_task3/task3_041.png)
+  ![](/assets/images/sw/rplus_task3/task3_041.png)
 
-- 레이블과 점프는 반드시 하나의 함수 구간 내에 존재해야 합니다.
+- Label and Jump must exist inside the same function block.
 
-![](/assets/images/sw/rplus_task3/task3_042.png)
+  ![](/assets/images/sw/rplus_task3/task3_042.png)
 
 
-## [조건문](#조건문)
+## [Condition](#condition)
 
-조건절의 결과가 참이냐 거짓이냐에 따라 프로그램의 흐름을 분기하는 명령어입니다. 자세한 설명은 하위 항목을 참고하세요.
+This instruction controls the flow of program based on the True/False result of Conditional Clause.
 
 ![](/assets/images/sw/rplus_task3/task3_043.png)
 
-### [조건절이란?](#조건절이란)
+### Conditional Clause
 
-- 조건절이란 연산의 결과가 반드시 참 또는 거짓을 내는 수식입니다.
-- 괄호( ) 안에서 사용할 수 있는 비교 연산자는 다음과 같습니다.
+- A conditional clause returns the computation result as either true or false.
+- Below are the comparison operators that can be used inside the parenthesis.
 
-| 비교연산자 |            설명             |
-|:----------:|:---------------------------:|
-|     ==     |     좌변과 우변이 같다      |
-|     !=     |    좌변과 우변이 다르다     |
-|     \>     |    좌변이 우변보다 크다     |
-|    \>=     | 좌변이 우변보다 크거나 같다 |
-|     <      |    좌변이 우변보다 작다     |
-|     <=     | 좌변이 우변보다 작거나 같다 |
+| Operators | Description                                                                     |
+|:---------:|:--------------------------------------------------------------------------------|
+|    ==     | The value on the left hand side is equal to the right hand side                 |
+|    !=     | The value on the left hand side is not equal to the right hand side             |
+|    \>     | The value on the left hand side is greater than the right hand side             |
+|    \>=    | The value on the left hand side is greater than or equal to the right hand side |
+|     <     | The value on the left hand side is less than the right hand side                |
+|    <=     | The value on the left hand side is less than or equal to the right hand side    |
 
-- 여러 개의 조건을 만족해야 하는 경우 아래 그림과 같이 복합 조건절을 사용할 수 있습니다.
+More than one condition can be examined as shown below.
 
 ![](/assets/images/sw/rplus_task3/task3_044.png)
 
-- 복합 조건절 사용시 사용할 수 있는 논리 연산자는 다음과 같습니다.
+- When using multiple conditional clauses, the following logical operators can be used.
 
-| 논리연산자 |                            설명                             |
-|:----------:|:-----------------------------------------------------------:|
-|    then    | 아무 조건절도 연결하지 않습니다. 하나의 조건절만 사용합니다 |
-|     &&     |                 두 조건절을 AND연산 합니다                  |
-|     \      |    |                           두 조건절을 OR연산 합니다    |
+| Logical Operators |                                              Description                                              |
+|:-----------------:|:-----------------------------------------------------------------------------------------------------:|
+|       then        |                               Do not use additional conditional clause.                               |
+|        &&         | Use logical AND operation for two conditions. Both conditions must be true for the result to be true. |
+|         \         | Use logical OR operation for two conditions. Either condition must be true for the result to be true. |
 
 ![](/assets/images/sw/rplus_task3/task3_045.png)
 
-### [만약](#만약)
+### [If](#if)
 
-- 조건절의 내용이 참이면 해당 구문을 실행합니다.
-- C언어의 if문과 같은 개념입니다.
-- 아래는 만약을 사용하여 “변수 값이 100과 같으면?”을 판단하는 예제입니다.
+- If the conditional clause is true, the code inside the `IF` block is executed.
+
+The following is an example of turning the LED on if the variable in the `IF` statement is equal to 100.
 
 ![](/assets/images/sw/rplus_task3/task3_046.png)
 
-- 그림과 같이 실행할 코드가 한 줄일 경우 구간 기호를 생략할 수 있습니다.
+Begin / End Blocks can be omitted when there's only one instruction in the block.
 
 ![](/assets/images/sw/rplus_task3/task3_047.png)
 
-### [아니면 만약](#아니면-만약)
+### [Else If](#else-if)
 
-- “만약”에 이어서 또 다른 조건을 검사할 때 사용합니다.
-- 반드시 처음 조건으로 "만약" 구문이 존재해야 합니다.
-- C언어의 else if와 같은 개념입니다.
-- 아래는 만약과 아니면 만약을 사용하여 “변수 값이 100과 같으면?”과 “변수 값이 50과 같으면?”을 모두 판단하는 예제입니다.
+- This is used to examine another conditional clause when `IF` statement is false.
+- `ELSE IF` block must be used after `IF` block or another `ELSE IF` block.
+
+The following is an example of using `IF` and `ELSE IF` statements.
 
 ![](/assets/images/sw/rplus_task3/task3_048.png)
 
-- 그림과 같이 실행할 코드가 한 줄일 경우 구간 기호를 생략할 수 있습니다.
+Begin / End Blocks can be omitted when there's only one instruction in the block.
 
 ![](/assets/images/sw/rplus_task3/task3_049.png)
 
-### [아니면](#아니면)
+### [else](#else)
 
 - “만약”과 “아니면 만약”의 조건 어디에도 해당되지 않을 경우 실행합니다.
 - 반드시 처음 조건으로 만약 구문이 존재해야 합니다.

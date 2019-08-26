@@ -3,7 +3,7 @@ layout: archive
 lang: en
 ref: kit1
 read_time: true
-share: true
+share: false
 author_profile: false
 permalink: /docs/en/edu/engineer/kit1/
 sidebar:

@@ -17784,7 +17784,7 @@ rplustask3:
       - title: "Begin Block / End Block"
         titlekr: "구간 시작 / 구간 끝"
         url: /software/rplustask3/task_programming/#begin-block--end-block
-        urlkr: /software/rplustask3/task_programming/#구간-시작구간-끝
+        urlkr: /software/rplustask3/task_programming/#구간-시작--구간-끝
       - title: "Comment"
         titlekr: "주석"
         url: /software/rplustask3/task_programming/#comment
@@ -17802,9 +17802,9 @@ rplustask3:
         titlekr: "로드"
         url: /software/rplustask3/task_programming/#load
         urlkr: /software/rplustask3/task_programming/#로드
-      - title: "Math Expression"
+      - title: "Multi Compute"
         titlekr: "다중 수식"
-        url: /software/rplustask3/task_programming/#math-expression
+        url: /software/rplustask3/task_programming/#multi-compute
         urlkr: /software/rplustask3/task_programming/#다중-수식
       - title: "Lable/Jump"
         titlekr: "레이블/점프"
@@ -17815,7 +17815,7 @@ rplustask3:
       url: /software/rplustask3/task_programming/#condition
       urlkr: /software/rplustask3/task_programming/#조건문
       children:
-      - title: "Conditional Clause?"
+      - title: "Conditional Clause"
         titlekr: "조건절이란?"
         url: /software/rplustask3/task_programming/#conditional-clause
         urlkr: /software/rplustask3/task_programming/#조건절이란

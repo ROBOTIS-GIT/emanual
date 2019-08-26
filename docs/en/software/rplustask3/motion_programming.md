@@ -3,7 +3,7 @@ layout: archive
 lang: en
 ref: motion_programming
 read_time: true
-share: true
+share: false
 author_profile: false
 permalink: /docs/en/software/rplustask3/motion_programming/
 sidebar:
