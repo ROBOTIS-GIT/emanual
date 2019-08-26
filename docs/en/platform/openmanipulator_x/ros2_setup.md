@@ -50,7 +50,8 @@ After installing ROS 2, please reboot PC.
 $ sudo apt update && sudo apt upgrade
 $ wget https://raw.githubusercontent.com/ROBOTIS-GIT/open_manipulator/ros2/install_ros_dashing.sh && chmod 755 ./install_ros_dashing.sh && bash ./install_ros_dashing.sh
 ```
-**NOTE**: In order to check which packages are installed, please check this link out. [install_ros_dashing.sh](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh)
+
+**NOTE**: In order to check which packages are installed, please check this link out. [install_ros_dashing.sh](https://raw.githubusercontent.com/ROBOTIS-GIT/open_manipulator/ros2/install_ros_dashing.sh)
 {: .notice--info}
 
 If you prefer a manual installation，following link guides you how to install ROS 2 on your PC
