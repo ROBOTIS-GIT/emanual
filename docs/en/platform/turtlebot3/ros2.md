@@ -21,7 +21,7 @@ page_number: 26
 {% capture notice_01 %}
 **NOTE**:
 - The test is done on `Ubuntu 18.04` and `ROS 2 Dashing Diademata`.
-- these instructions are supposed to be performed with a remote PC and SBC in TurtleBot.
+- These instructions are supposed to be performed with a remote PC and SBC in TurtleBot.
 - You can ask any questions on [ROS Answers](https://answers.ros.org/questions/) if you are in touble to follow the instruction.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
@@ -47,13 +47,13 @@ To set ROS (Robot Operating System) on **romote PC**, please install Ubuntu 18.0
 
 ![](/assets/images/platform/turtlebot3/logo_ros.png)
 
-As TurtleBot3 operates on Robot Operating System(ROS), it requies to intall `ROS 2 Dashing Diademata` on Ubuntu platform installed in **remote PC**. Following link will guide you for installing ROS 2.
+As TurtleBot3 operates on Robot Operating System(ROS), it requies to intall `ros-dashing-desktop` debian packages for `ROS 2 Dashing Diademata` on Ubuntu platform installed in **remote PC**. Following link will guide you for installing ROS 2.
 
 - [ROS 2 Installation Guide](https://index.ros.org/doc/ros2/Installation/Dashing/)
 
-#### Install TurtleBot3 ROS 2 Packages
+#### Install ROS 2 Dependency Packages
 
-Download turtlebot3 packages and install ROS 2 dependencies on **Remote PC**.
+Install ROS 2 dependency packages on **Remote PC**.
 
 ```bash
 # Install Cartographer dependencies
@@ -80,7 +80,10 @@ $ sudo apt install ros-dashing-nav2-bringup
 $ sudo apt install python3-vcstool
 ```
 
-#### Install TurtleBot3 ROS 2 Workspace
+#### Install TurtleBot3 ROS 2 Packages
+
+Download `turtlebot3` packages and install `turtlebot3` packages and ROS 2 dependency packages on **Remote PC**.
+
 ```bash
 $ mkdir -p ~/turtlebot3_ws/src
 $ cd ~/turtlebot3_ws
@@ -221,7 +224,7 @@ $ sudo free -h
 **WARNING** : Do not proceed to this instruction on **remote PC**. Please follow steps with **SBC in TurtleBot3**.
 {: .notice--warning}
 
-As TurtleBot3 operates on Robot Operating System(ROS), it requies to intall `ROS 2 Dashing Diademata` on Ubuntu platform installed in **PC (Raspberry Pi 3) of TurtleBot3**. Following link will guide you for installing ROS 2.
+As TurtleBot3 operates on Robot Operating System(ROS), it requies to intall `ROS 2 Dashing Diademata` on Ubuntu installed in **SBC of TurtleBot3**. Following link will guide you for installing ROS 2.
 
 - [ROS 2 Installation Guide](https://index.ros.org/doc/ros2/Installation/Dashing/Linux-Install-Debians/)
 
@@ -302,14 +305,14 @@ $ sudo udevadm trigger
 
 ### [OpenCR setup](#opencr-setup)
 
-**WARNING** : Do not proceed to this instruction on remote PC. Please follow steps with **PC (Raspberry Pi 3) in TurtleBot3**.
+**WARNING** : Do not proceed to this instruction on remote PC. Please follow steps with **SBC in TurtleBot3**.
 {: .notice--warning}
 
 #### Install dependencies to run 32bit executables.
 ```bash
-sudo dpkg --add-architecture armhf
-sudo apt-get update
-sudo apt-get install libc6:armhf
+$ sudo dpkg --add-architecture armhf
+$ sudo apt-get update
+$ sudo apt-get install libc6:armhf
 ```
 
 #### Download OpenCR binaries & tools for uploading.
@@ -321,8 +324,10 @@ $ tar -xjf ./opencr_update.tar.bz2
 
 #### Upload TurtleBot3 ROS 2 firmware to OpenCR.
 ```bash
-$ export OPENCR_PORT=/dev/ttyACM0   #OpenCR port
-$ export OPENCR_MODEL=burger        #tb3 model you are using
+# Set a port for OpenCR 
+$ export OPENCR_PORT=/dev/ttyACM0
+# Set a model of TurtleBot3 you are using
+$ export OPENCR_MODEL=burger
 $ cd ~/opencr_update && ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr
 ```
 
@@ -359,7 +364,7 @@ After few seconds, particular sound will be played.
 
 ### Bringup TurtleBot3
 
-1. Launch a model of your TurtleBot3 including node of robot_state_publisher and turtlebot3_node.
+1. Launch a model of your TurtleBot3 including node of `robot_state_publisher` and `turtlebot3_node`.
 
     **NOTE**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `burger`, `waffle`, `waffle_pi`. If you want to permanently set the export settings, please refer to [Export TURTLEBOT3_MODEL][export_turtlebot3_model]{: .popup} page.
     {: .notice}
@@ -477,7 +482,7 @@ $ ros2 service list
 **WARNING** : Do not proceed to this instruction on SBC in TurtleBot3. Please follow steps with **Remote PC**.
 {: .notice--warning}
 
-1. Run Rviz2 on **remote PC**
+1. Run `RViz2` on **remote PC**
 ```bash
 $ ros2 launch turtlebot3_bringup rviz2.launch.py
 ```
@@ -546,7 +551,7 @@ $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ ros2 launch turtlebot3_navigation2 navigation2.launch.py map:=$HOME/map.yaml
 ```
 
-- Click `2D Pose Estimate` button in a menu bar, and then point exact pose of turtlebot3 on a map.
+- Click `2D Pose Estimate` button in a menu bar, and then point exact pose of TurtleBot3 on a map.
 
 ![](/assets/images/platform/turtlebot3/ros2/tb3_navigation2_rviz_1.png)
 > 2D Pose Estimate
@@ -563,7 +568,6 @@ $ ros2 launch turtlebot3_navigation2 navigation2.launch.py map:=$HOME/map.yaml
 
 1. Add GAZEBO_MODEL_PATH.
 ```bash
-$ echo '# Add gazebo model path' >> ~/.bashrc
 $ echo 'export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/turtlebot3_ws/src/turtlebot3/turtlebot3_simulations/turtlebot3_gazebo/models' >> ~/.bashrc
 $ source ~/.bashrc
 ```
