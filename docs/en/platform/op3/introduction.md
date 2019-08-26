@@ -9,6 +9,8 @@ permalink: /docs/en/platform/op3/introduction/
 sidebar:
   title: ROBOTIS OP3
   nav: "op3"
+product_group: op3
+page_number: 1
 ---
 
 # [Introduction](#introduction)

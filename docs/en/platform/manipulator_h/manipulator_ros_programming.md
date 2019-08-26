@@ -9,11 +9,13 @@ permalink: /docs/en/platform/manipulator_h/manipulator_ros_programming/
 sidebar:
   title: MANIPULATOR-H
   nav: "manipulator_h"
+product_group: manipulator_h
+page_number: 6
 ---
 
 <div style="counter-reset: h1 5"></div>
 
-# [ROBOTIS manipulator ROS](#robotis-manipulator-ros)
+# [ROBOTIS Manipulator ROS](#robotis-manipulator-ros)
 
 ## [PC Setup](#pc-setup)
 
@@ -48,7 +50,7 @@ If you prefer manual installation, please following the link below.
 
 - [Manual installation of ROS Kinetic](http://wiki.ros.org/kinetic/Installation/Ubuntu)
 
-## [Install ROS package](#install-ros-package)
+## [Install ROS Package](#install-ros-package)
 
 Install dependent packages for ROBOTIS manipulator ROS program. Run the following command in a terminal window.
 
@@ -70,5 +72,3 @@ $ cd ~/catkin_ws && catkin_make
 ```
 
 If the catkin_make command has been completed without any errors, all the preparations for using Manipulator-H are done.
-
-

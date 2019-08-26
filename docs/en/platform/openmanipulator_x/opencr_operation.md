@@ -7,11 +7,13 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_x/opencr_operation/
 sidebar:
-  title: OpenMANIPULATOR-X
+  title: "OpenMANIPULATOR-X"
   nav: "openmanipulator_x"
+product_group: openmanipulator_x
+page_number: 16
 ---
 
-<div style="counter-reset: h1 10"></div>
+<div style="counter-reset: h1 15"></div>
 
 # [[OpenCR] Operation](#opencr-operation)
 

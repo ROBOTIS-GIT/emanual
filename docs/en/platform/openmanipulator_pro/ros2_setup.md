@@ -44,6 +44,7 @@ The following script will allow you to simplify the ROS 2 installation procedure
 $ sudo apt update && sudo apt upgrade
 $ wget https://raw.githubusercontent.com/ROBOTIS-GIT/open_manipulator/ros2/install_ros_dashing.sh && chmod 755 ./install_ros_dashing.sh && bash ./install_ros_dashing.sh
 ```
+
 **NOTE**: In order to check which packages are installed, please check this link out. [install_ros_dashing.sh](https://raw.githubusercontent.com/ROBOTIS-GIT/open_manipulator/ros2/install_ros_dashing.sh)
 {: .notice--info}
 

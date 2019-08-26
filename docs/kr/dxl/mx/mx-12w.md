@@ -18,28 +18,28 @@ product_group: dxl_mx
 
 # [주요 사양](#주요-사양)
 
-| 항목          | 내용                                                                                        |
-|:--------------|:--------------------------------------------------------------------------------------------|
-| MCU           | ARM CORTEX-M3 (72 [MHz], 32Bit)                                                             |
+| 항목          | 내용                                                                                           |
+|:--------------|:-----------------------------------------------------------------------------------------------|
+| MCU           | ARM CORTEX-M3 (72 [MHz], 32Bit)                                                                |
 | 위치 센서     | Contactless absolute encoder (12BIT, 360 [°])<br />Maker : ams (www.ams.com), Part No : AS5045 |
-| 모터          | Cored                                                                                       |
-| 통신속도      | 8,000 [bps] ~ 4.5 [Mbps]                                                                    |
-| 제어 알고리즘 | PID CONTROL                                                                                 |
-| 최소 제어각   | 0.088 [&deg;]                                                                               |
-| 동작 모드     | 관절 모드 (0 ~ 360 [°]) / 바퀴 모드 (무한 회전)                                             |
-| 무게          | 54.6 [g]                                                                                    |
-| 크기          | 32 x 50 x 40 [mm]                                                                           |
-| 기어비        | 32 : 1                                                                                      |
-| 무부하 속도   | 470 [rev/min] (at 12V)                                                                      |
-| 동작 온도     | -5 ~ +70 [&deg;C]                                                                           |
-| 사용 전압     | 10 ~ 14.8 [V] (**권장 전압 : 12 [V]**)                                                      |
-| 제어 명령     | Digital Packet                                                                              |
-| 프로토콜 타입 | Half Duplex Asynchronous Serial Communication<br />(8bit, 1stop, No Parity)                 |
-| 통신 연결     | TTL Level Multidrop Bus(Daisy Chain Type Connector)                                         |
-| ID            | 254 ID (0 ~ 253)                                                                            |
-| 피드백        | Position, Temperature, Load, Input Voltage 등                                               |
-| 재질          | Engineering Plastic                                                                         |
-| 대기 전류     | 60 [mA]                                                                                     |
+| 모터          | Cored                                                                                          |
+| 통신속도      | 8,000 [bps] ~ 4.5 [Mbps]                                                                       |
+| 제어 알고리즘 | PID CONTROL                                                                                    |
+| 해상도   | 4096 \[pulse/rev]                                                                                  |
+| 동작 모드     | 관절 모드 (0 ~ 360 [°]) / 바퀴 모드 (무한 회전)                                                |
+| 무게          | 54.6 [g]                                                                                       |
+| 크기          | 32 x 50 x 40 [mm]                                                                              |
+| 기어비        | 32 : 1                                                                                         |
+| 무부하 속도   | 470 [rev/min] (at 12 [V])                                                                         |
+| 동작 온도     | -5 ~ +70 [&deg;C]                                                                              |
+| 사용 전압     | 10 ~ 14.8 [V] (**권장 전압 : 12 [V]**)                                                         |
+| 제어 명령     | Digital Packet                                                                                 |
+| 프로토콜 타입 | Half Duplex Asynchronous Serial Communication<br />(8bit, 1stop, No Parity)                    |
+| 통신 연결     | TTL Level Multidrop Bus(Daisy Chain Type Connector)                                            |
+| ID            | 254 ID (0 ~ 253)                                                                               |
+| 피드백        | Position, Temperature, Load, Input Voltage 등                                                  |
+| 재질          | Engineering Plastic                                                                            |
+| 대기 전류     | 60 [mA]                                                                                        |
 
 {% include kr/dxl/warning.md %}
 
@@ -109,11 +109,11 @@ product_group: dxl_mx
 
 Value 값이 250 이상인 경우 :
 
-| Value | Baud Rate |   오차    |
-|:-----:|:---------:|:---------:|
-|  250  | 2,250,000 | 0.000 [%] |
-|  251  | 2,500,000 | 0.000 [%] |
-|  252  | 3,000,000 | 0.000 [%] |
+| 값  | 통신속도(bps) |  오차율   |
+|:---:|:-------------:|:---------:|
+| 250 |   2,250,000   | 0.000 [%] |
+| 251 |   2,500,000   | 0.000 [%] |
+| 252 |   3,000,000   | 0.000 [%] |
 
 ### <a name="return-delay-time"></a>**[Return Delay Time (5)](#return-delay-time-5)**
 {% include kr/dxl/control_table_return_delay_time.md %}

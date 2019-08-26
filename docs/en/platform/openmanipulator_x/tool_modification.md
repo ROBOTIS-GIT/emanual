@@ -7,11 +7,13 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_x/tool_modification/
 sidebar:
-  title: OpenMANIPULATOR-X
+  title: "OpenMANIPULATOR-X"
   nav: "openmanipulator_x"
+product_group: openmanipulator_x
+page_number: 17
 ---
 
-<div style="counter-reset: h1 11"></div>
+<div style="counter-reset: h1 16"></div>
 
 
 # [Tool Modification](#tool-modification)
@@ -32,21 +34,21 @@ Set vacuum gripper system referring [Instrucables page](https://www.instructable
 
 - Part List
 
-  |                          | Part Name                                      | Quantity | Link                                                                                                                                                                                                                                                                         |
-  |:-------------------------|:-----------------------------------------------|:---------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-  | **3D Printed Tool Part** | Vacuum Holder                                  | 1        | [Download Link](https://www.thingiverse.com/thing:3069574)                                                                                                                                                                                                                   |
-  | **Vacuum System**        | ARDUINO 4 RELAYS SHIELD                        | 1        | [shop Link](https://store.arduino.cc/usa/arduino-4-relays-shield)                                                                                                                                                                                                            |
-  | .                        | 12V Air Pump Motor                             | 1        | [shop Link](https://www.amazon.com/dp/B00DYA21PU/ref=sxbs_sxwds-stppvp_1?pf_rd_p=d45777d6-4c64-4117-8332-1659db52e64f&pd_rd_wg=4GrxM&pf_rd_r=B6N50VB3NHQT92HY91GK&pd_rd_i=B00DYA21PU&pd_rd_w=hP7Ev&pd_rd_r=f1ca7704-2522-4488-a625-16e3a8803027&ie=UTF8&qid=1547619718&sr=1) |
-  | .                        | UD0640-20-C (Air Tube 6Ø)                      | 1        | [shop Link](https://us.misumi-ec.com/vona2/detail/221000039579/?HissuCode=UD0640-20-C&PNSearch=UD0640-20-C&KWSearch=UD0640-20-C&searchFlow=results2type)                                                                                                                     |
-  | .                        | UD0860-20-C (Air Tube 8Ø)                      | 1        | [shop Link](https://us.misumi-ec.com/vona2/detail/221000039579/?HissuCode=UD0860-20-C&PNSearch=UD0860-20-C&KWSearch=UD0860-20-C&searchFlow=results2type)                                                                                                                     |
-  | .                        | MSCNL6-1 (Coupling 6Ø)                         | 1        | [shop Link](https://us.misumi-ec.com/vona2/detail/110300335060/?HissuCode=MSCNL6-1&PNSearch=MSCNL6-1&KWSearch=MSCNL6-1&searchFlow=results2type)                                                                                                                              |
-  | .                        | MSCNL8-1 (Coupling 8Ø)                         | 2        | [shop Link](https://us.misumi-ec.com/vona2/detail/110300335060/?HissuCode=MSCNL8-1&PNSearch=MSCNL8-1&KWSearch=MSCNL8-1&searchFlow=results2type)                                                                                                                              |
-  | .                        | MVPKE8 (Suction Cup)                           | 1        | [shop Link](https://us.misumi-ec.com/vona2/detail/110300346620/?HissuCode=MVPKE8&PNSearch=MVPKE8&KWSearch=MVPKE8&searchFlow=results2type)                                                                                                                                    |
-  | .                        | MHE3-M1H-3/2G-1/8 (Control Valve)              | 1        | [shop Link](https://www.festo.com/cat/en-us_us/products_MH2?CurrentIDCode1=MHE3-M1H-3%2F2G-1%2F8&CurrentPartNo=525146)                                                                                                                                                       |
-  | .                        | NEBV-Z4WA2L-P-E-2.5-N-LE2-S1 (Cable for Valve) | 1        | [shop Link](https://www.festo.com/cat/en-us_us/products_NEBV_V?CurrentIDCode1=NEBV-Z4WA2L-P-E-2.5-N-LE2&CurrentPartNo=8003577)                                                                                                                                               |
+|                          | Part Name                                      | Quantity | Link                                                                                                                                                                                                                                                                         |
+|:-------------------------|:-----------------------------------------------|:---------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **3D Printed Tool Part** | Vacuum Holder                                  | 1        | [Download Link](https://www.thingiverse.com/thing:3069574)                                                                                                                                                                                                                   |
+| **Vacuum System**        | ARDUINO 4 RELAYS SHIELD                        | 1        | [shop Link](https://store.arduino.cc/usa/arduino-4-relays-shield)                                                                                                                                                                                                            |
+| .                        | 12V Air Pump Motor                             | 1        | [shop Link](https://www.amazon.com/dp/B00DYA21PU/ref=sxbs_sxwds-stppvp_1?pf_rd_p=d45777d6-4c64-4117-8332-1659db52e64f&pd_rd_wg=4GrxM&pf_rd_r=B6N50VB3NHQT92HY91GK&pd_rd_i=B00DYA21PU&pd_rd_w=hP7Ev&pd_rd_r=f1ca7704-2522-4488-a625-16e3a8803027&ie=UTF8&qid=1547619718&sr=1) |
+| .                        | UD0640-20-C (Air Tube 6Ø)                      | 1        | [shop Link](https://us.misumi-ec.com/vona2/detail/221000039579/?HissuCode=UD0640-20-C&PNSearch=UD0640-20-C&KWSearch=UD0640-20-C&searchFlow=results2type)                                                                                                                     |
+| .                        | UD0860-20-C (Air Tube 8Ø)                      | 1        | [shop Link](https://us.misumi-ec.com/vona2/detail/221000039579/?HissuCode=UD0860-20-C&PNSearch=UD0860-20-C&KWSearch=UD0860-20-C&searchFlow=results2type)                                                                                                                     |
+| .                        | MSCNL6-1 (Coupling 6Ø)                         | 1        | [shop Link](https://us.misumi-ec.com/vona2/detail/110300335060/?HissuCode=MSCNL6-1&PNSearch=MSCNL6-1&KWSearch=MSCNL6-1&searchFlow=results2type)                                                                                                                              |
+| .                        | MSCNL8-1 (Coupling 8Ø)                         | 2        | [shop Link](https://us.misumi-ec.com/vona2/detail/110300335060/?HissuCode=MSCNL8-1&PNSearch=MSCNL8-1&KWSearch=MSCNL8-1&searchFlow=results2type)                                                                                                                              |
+| .                        | MVPKE8 (Suction Cup)                           | 1        | [shop Link](https://us.misumi-ec.com/vona2/detail/110300346620/?HissuCode=MVPKE8&PNSearch=MVPKE8&KWSearch=MVPKE8&searchFlow=results2type)                                                                                                                                    |
+| .                        | MHE3-M1H-3/2G-1/8 (Control Valve)              | 1        | [shop Link](https://www.festo.com/cat/en-us_us/products_MH2?CurrentIDCode1=MHE3-M1H-3%2F2G-1%2F8&CurrentPartNo=525146)                                                                                                                                                       |
+| .                        | NEBV-Z4WA2L-P-E-2.5-N-LE2-S1 (Cable for Valve) | 1        | [shop Link](https://www.festo.com/cat/en-us_us/products_NEBV_V?CurrentIDCode1=NEBV-Z4WA2L-P-E-2.5-N-LE2&CurrentPartNo=8003577)                                                                                                                                               |
 
 ### Software Setup
-Please refer the detailed description of [[OpenCR] Setup](/docs/en/platform/OpenMANIPULATOR_x/opencr_setup/#opencr-setup)      
+Please refer the detailed description of [[OpenCR] Setup](/docs/en/platform/openmanipulator_x/opencr_setup/#opencr-setup)      
 Download Arduino IDE and load OpenCR board on it
 
 - [Arduino IDE for using OpenCR](/docs/en/parts/controller/opencr10/#arduino-ide)
@@ -81,9 +83,9 @@ Remove normal gripper of OpenMANIPULATOR-X and install a pen holder. You can dow
 
 - Part List
 
-  |                          | Part Name  | Quantity | Link                                                       |
-  |:-------------------------|:-----------|:---------|:-----------------------------------------------------------|
-  | **3D Printed Tool Part** | Pen Holder | 1        | [Download Link](https://www.thingiverse.com/thing:3069574) |
+|                          | Part Name  | Quantity | Link                                                       |
+|:-------------------------|:-----------|:---------|:-----------------------------------------------------------|
+| **3D Printed Tool Part** | Pen Holder | 1        | [Download Link](https://www.thingiverse.com/thing:3069574) |
 
 ### Software Setup
 Please refer the detailed description of [[OpenCR] Setup](/docs/en/platform/OpenMANIPULATOR_x/opencr_setup/#opencr-setup)    

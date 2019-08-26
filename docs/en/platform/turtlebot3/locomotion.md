@@ -9,6 +9,8 @@ permalink: /docs/en/platform/turtlebot3/locomotion/
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
+product_group: turtlebot3
+page_number: 27
 ---
 
 <div style="counter-reset: h1 15"></div>
@@ -96,7 +98,7 @@ With this openended component, handful of TurtleBot3 friends with various charac
 - **Features**: Compatible with TurtleBot3 Waffle Pi and it has linear gripper for pick and place.
 - **Components**: Four Dynamixel X 430 Series (Four for joints, one for gripper), an OpenCR1.0 Board, 3D printed chassis.
 - **BOM**: Please refer to the [Parts of OpenManipulator](https://docs.google.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit#gid=490107710)
-- **DIY Manual**: Please refer to the [link](https://docs.google.com/document/d/1c5U0v2dQhYiulqiWI0VQMameG82WCc-4rl6J6zlQejA/edit?usp=sharing)
+<!-- - **DIY Manual**: Please refer to the [link](https://docs.google.com/document/d/1c5U0v2dQhYiulqiWI0VQMameG82WCc-4rl6J6zlQejA/edit?usp=sharing)-->
 - Hardware for TurtleBot3 Waffle Pi + OpenManipulator ([Onshape](https://cad.onshape.com/documents/1535c2d7f05d4986e5ab539c/w/72b49bd8c74a47b010391012/e/454b64d637f42073514486f4), [Thingiverse](https://www.thingiverse.com/thing:3081010))
 - Hardware for OpenManipulator ([Onshape](http://www.robotis.com/service/download.php?no=690), [Thingiverse](https://www.thingiverse.com/thing:3069574))
 - [Software](https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3) (We are preparing for OpenCR Example)

@@ -7,8 +7,10 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_pro/getting_started/
 sidebar:
-  title: OpenMANIPULATOR-PRO
+  title: "OpenMANIPULATOR-PRO"
   nav: "openmanipulator_pro"
+product_group: openmanipulator_pro
+page_number: 3
 ---
 
 <div style="counter-reset: h1 2"></div>

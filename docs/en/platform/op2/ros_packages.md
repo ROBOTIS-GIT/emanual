@@ -9,6 +9,8 @@ permalink: /docs/en/platform/op2/ros_package/
 sidebar:
   title: ROBOTIS OP2
   nav: "op2"
+product_group: op2
+page_number: 2
 ---
 
 <div style="counter-reset: h1 5"></div>

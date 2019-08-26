@@ -9,6 +9,8 @@ permalink: /docs/en/platform/manipulator_h/manipulator_sdk_programming/
 sidebar:
   title: MANIPULATOR-H
   nav: "manipulator_h"
+product_group: manipulator_h
+page_number: 3
 ---
 
 <div style="counter-reset: h1 2"></div>

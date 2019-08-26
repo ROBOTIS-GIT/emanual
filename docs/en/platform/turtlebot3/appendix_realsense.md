@@ -9,6 +9,8 @@ permalink: /docs/en/platform/turtlebot3/appendix_realsense/
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
+product_group: turtlebot3
+page_number: 38
 ---
 
 <div style="counter-reset: h1 22"></div>
@@ -30,31 +32,31 @@ sidebar:
 
 #### [Technical Specifications](#technical-specifications)
 
-| Items                    | Specifications                                                     |
-|--------------------------|--------------------------------------------------------------------|
-| RGB Video Resolution     | 1920 x 1280, 2M                                                    |
-| IR Depth Resolution      | 640 x 480, VGA                                                     |
-| Laser Projector          | Class 1 IR Laser Projector (IEC 60825-1:2007 Edition 2)            |
-| Frame Rate               | 30 fps (RGB), 60 fps (IR depth)                                    |
-| FOV (Field-of-View)      | 77° (RGB), 70° (IR depth), Diagonal Field of View                  |
-| Range                    | 0.3m ~ 4.0m                                                        |
-| Operating Supply Voltage | 5V (via USB port)                                                  |
-| USB Port                 | USB 3.0                                                            |
-| Dimensions               | 101.56mm length x 9.55mm height x 3.8mm width                      |
-| Mass                     | Under 35g                                                          |
+| Items                    | Specifications                                          |
+|:-------------------------|:--------------------------------------------------------|
+| RGB Video Resolution     | 1920 x 1280, 2M                                         |
+| IR Depth Resolution      | 640 x 480, VGA                                          |
+| Laser Projector          | Class 1 IR Laser Projector (IEC 60825-1:2007 Edition 2) |
+| Frame Rate               | 30 fps (RGB), 60 fps (IR depth)                         |
+| FOV (Field-of-View)      | 77° (RGB), 70° (IR depth), Diagonal Field of View       |
+| Range                    | 0.3m ~ 4.0m                                             |
+| Operating Supply Voltage | 5V (via USB port)                                       |
+| USB Port                 | USB 3.0                                                 |
+| Dimensions               | 101.56mm length x 9.55mm height x 3.8mm width           |
+| Mass                     | Under 35g                                               |
 
 #### [Minimum System Requirements](#minimum-system-requirements)
 
-| Items                    | Specifications                                                     |
-|--------------------------|--------------------------------------------------------------------|
-| Processors               | 4th Generation and future Intel® Core™ processors                  |
-| Disk Storage             | 1GB                                                                |
-| Memory                   | 2GB                                                                |
-| Interface                | USB 3.0                                                            |
-|                          | Ubuntu 14.04 and 16.04 LTS (GCC 4.9 toolchain)                     |
-| Operating System         | Windows 8.1 and Windows 10 (Visual Studio 2015 Update 2)           |
-| for SDK                  | Mac OS X 10.7+ (Clang toolchain)                                   |
-|                          | Ostro                                                              |
+| Items            | Specifications                                           |
+|:-----------------|:---------------------------------------------------------|
+| Processors       | 4th Generation and future Intel® Core™ processors        |
+| Disk Storage     | 1GB                                                      |
+| Memory           | 2GB                                                      |
+| Interface        | USB 3.0                                                  |
+|                  | Ubuntu 14.04 and 16.04 LTS (GCC 4.9 toolchain)           |
+| Operating System | Windows 8.1 and Windows 10 (Visual Studio 2015 Update 2) |
+| for SDK          | Mac OS X 10.7+ (Clang toolchain)                         |
+|                  | Ostro                                                    |
 
 Here is the detail specification document: [Intel® RealSense™ Datasheet](https://software.intel.com/sites/default/files/managed/d7/a9/realsense-camera-r200-product-datasheet.pdf)
 
@@ -75,10 +77,10 @@ The TurtleBot3 Waffle uses Intel® RealSense™ Camera R200 as a default vision 
 
 [Intel® RealSense™ packages](http://wiki.ros.org/RealSense) enable the use of Intel® RealSense™ R200, F200, SR300 and ZR300 cameras with ROS. Below table describes packages required to operate Intel® RealSense™. You will be guided to install these packaged in the next section.
 
-| Package                                                  | Description                                                               |
-|----------------------------------------------------------|:-------------------------------------------------------------------------:|
+| Package                                                  |                                Description                                |
+|:---------------------------------------------------------|:-------------------------------------------------------------------------:|
 | [librealsense](http://wiki.ros.org/librealsense)         | Underlying library driver for communicating with Intel® RealSense™ camera |
-| [realsense_camera](http://wiki.ros.org/realsense_camera) | ROS Intel® RealSense™ camera node for publishing camera                   |
+| [realsense_camera](http://wiki.ros.org/realsense_camera) |          ROS Intel® RealSense™ camera node for publishing camera          |
 
 #### [Installation](#installation)
 

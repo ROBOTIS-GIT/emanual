@@ -9,11 +9,25 @@ permalink: /docs/en/platform/turtlebot3/faq/
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
+product_group: turtlebot3
+page_number: 41
 ---
 
 <div style="counter-reset: h1 23"></div>
 
 # [FAQ](#faq)
+
+1. [Enable **SSH Server** in Raspberry Pi](#enable-ssh-server-in-raspberry-pi)
+2. [**Timesync** between TurtleBot3 and Remote PC](#timesync-between-turtlebot3-and-remote-pc)
+3. [**Setup DYNAMIXELs** for TurtleBot3](#setup-dynamixels-for-turtlebot3)
+4. [Can I **Charge the Battery** when the Battery is Connected to TurtleBot3?](#can-i-charge-the-battery-when-the-battery-is-connected-to-turtlebot3)
+5. [How to Download the **STL files** of TurtleBot3](#how-to-download-the-stl-files-of-turtlebot3)
+6. [**Intel® Joule™** USB-C Port is not Recognized on Windows 10](#intel-joule-usb-c-port-is-not-recognized-on-windows-10)
+7. [**Intel® Joule™** Freezes while Booting/Installation](#intel-joule-freezes-while-bootinginstallation)
+8. [How to **Update Software**](#how-to-update-software)
+9. [How to **Update Firmware**](#how-to-update-firmware)
+
+---
 
 ## [Enable SSH Server in Raspberry Pi](#enable-ssh-server-in-raspberry-pi)
 
@@ -35,7 +49,7 @@ $ sudo service ssh start
 $ sudo ufw allow ssh
 ```
 
-Before start to connect SSH, you need to check `host name`. Redbox in below image shows it.
+Before starting to connect SSH, you need to check `host name`. Redbox in below image shows it.
 
 ![](/assets/images/platform/turtlebot3/faq/computer_name.png)
 
@@ -60,46 +74,60 @@ $ sudo apt-get install ntpdate
 $ sudo ntpdate ntp.ubuntu.com
 ```
 
-## [Setup Dynamixels for TurtleBot3](#setup-dynamixels-for-turtlebot3)
+## [Setup DYNAMIXELs for TurtleBot3](#setup-dynamixels-for-turtlebot3)
 
-**WARNING**: Please connect only **single** Dynamixel with OpenCR.
+**WARNING**: Please connect only **ONE** DYNAMIXEL with OpenCR.
 {: .notice--warning}
 
-### Download Setup Firmware
+1. **Upload Setup Firmware to OpenCR**  
+As shown in the below image, find `Examples` > `turtlebot3` > `turtlebot3_setup` > `turtlebot3_setup_motor` and open the example.  
 
-As shown in below image, from the example menu, go to `turtlebot3` → `turtlebot3_setup` → `turtlebot3_setup_motor`, download the firmware to OpenCR board, and proceed with setting process. 
+    ![](/assets/images/platform/turtlebot3/faq/dynamixel_setup_1.png)
 
-After completing the setup, download the proper TurtleBot3 firmware to OpenCR.
+2. **Click the Upload button on the Arduino IDE.**  
+If example upload to the OpenCR is completed, connect **ONE** DYNAMIXEL to the OpenCR.  
+Click the `Serial Monitor` icon in the upper right corner as shown in the below image.  
 
-![](/assets/images/platform/turtlebot3/faq/dynamixel_setup_1.png)
+    ![](/assets/images/platform/turtlebot3/faq/dynamixel_setup_2.png)
 
-Click the `Upload` button on the Arduino IDE to download and once download is completed, Click the `Serial Monitor` icon on the upper right corner of the application as shown in next image.
+3. **Reset OpenCR**  
+Press the `RESET` button if the example does not run properly.
 
-Connect the Dynamixel to the OpenCR. Note that this firmware only works with one Dynamixel, so you have to connect only one Dynamixel at a time.
+    ![](/assets/images/parts/controller/opencr10/bootloader_19.png)
 
-![](/assets/images/platform/turtlebot3/faq/dynamixel_setup_2.png)
+4. **Select an Option**  
+When the `Serial Monitor` is running, menu for the DYNAMIXEL setup will be displayed as shown below.  
+TurtleBot3 consists of two DYNAMIXEL actuators for the left and right wheels, so select the proper option based on the assembled position.  
+For example, to set up the left side DYNAMIXEL, enter `1` to the input textbox.
 
-### Change Dynamixel Setting
+    ![](/assets/images/platform/turtlebot3/faq/dynamixel_setup_3.png)
 
-When the `Serial Monitor` is executed, a menu for the Dynamixel setup is displayed as shown in below image. TurtleBot3 consists of two Dynamixel actuators on the left and right respectively, so select the Dynamixel based on the assembly position. To set up the left motor, enter `1`.
+5. **Confirmation**  
+To prevent any mistakes, a confirmation will be required.  
+To proceed the configuration, enter `Y` to the input textbox.
 
-![](/assets/images/platform/turtlebot3/faq/dynamixel_setup_3.png)
+    ![](/assets/images/platform/turtlebot3/faq/dynamixel_setup_4.png)
 
-To prevent input mistakes, a confirmation menu is displayed once again. To proceed with the changes, enter `Y`.
+6. **Configure DYNAMIXEL**  
+The setup tool starts searching the connected DYNAMIXEL using different IDs and Baudrates.  
+If DYNAMIXEL is detected, it will be automatically set up for TurtleBot3.  
+When the setup is completed, `OK` message is printed on the screen.
 
-![](/assets/images/platform/turtlebot3/faq/dynamixel_setup_4.png)
+    ![](/assets/images/platform/turtlebot3/faq/dynamixel_setup_5.png)
 
-If you enter `Y`, the setup tool starts to search the connected Dynamixel using different baudrates, and ID. If a Dynamixel is found, it will be reset for the TurtleBot3 configuration. When the setup is completed, `OK` message is printed.
+7. **Test DYNAMIXEL**  
+Complete the setup procedure and verify if the change has been properly made.  
+If you select one of the test menu for the DYNAMIXEL, the selected DYNAMIXEL will begin to rotate in the clockwise and counterclockwise.  
+To end the test, press the `Enter`.  
+For example, to test the left DYNAMIXEL, enter `3` as shown in below and enter `4` for the right DYNAMIXEL.
 
-![](/assets/images/platform/turtlebot3/faq/dynamixel_setup_5.png)
+    ![](/assets/images/platform/turtlebot3/faq/dynamixel_setup_6.png)
 
-### Dynamixel Test
+8. **Upload TurtleBot3 Core**  
+If DYNAMIXEL setup is completed, TurtleBot3 Core example should be uploaded to OpenCR.  
+Please find proper core example from `Examples` > `tutlebot3` > `turtlebot3_burger` or `turtlebot3_waffle` > `turtlebot3_core` and upload the example to OpenCR.
 
-Complete the setup procedure and verify if the change has been properly made. If you select one of the test menu for the motor, the connected Dynamixel with correct configuration will iterate the rotation in the clockwise and counterclockwise. To end the test, press the Enter key again. To test the left Dynamixel, enter `3` as shown in below image and enter `4` for the right Dynamixel.
-
-![](/assets/images/platform/turtlebot3/faq/dynamixel_setup_6.png)
-
-## [Can I charge the battery when the battery is connected to TurtleBot3?](#can-i-charge-the-battery-when-the-battery-is-connected-to-turtlebot3)
+## [Can I Charge the Battery when the Battery is Connected to TurtleBot3?](#can-i-charge-the-battery-when-the-battery-is-connected-to-turtlebot3)
 
 Charging and discharging the battery at the same is **NOT** recommended and this may void the warranty of the product. If TurtleBot3 needs to be turned on while charging/replacing battery, please follow below procedure:
 
@@ -109,13 +137,13 @@ Charging and discharging the battery at the same is **NOT** recommended and this
 4. Connect the fully charged battery to OpenCR
 5. Disconnect SMPS 12V 5A from OpenCR
 
-## [How to download the STL files of TurtleBot3](#how-to-download-the-stl-files-of-turtlebot3)
+## [How to Download the STL Files of TurtleBot3](#how-to-download-the-stl-files-of-turtlebot3)
 
 You can download it in the following way.
 
 We released the TurtleBot3 Friends hardware design file at the link below.
 
-- [Locomotion (TurtleBot3 Friends)](http://emanual.robotis.com/docs/en/platform/turtlebot3/friends/#turtlebot3-friends-car)
+- [Locomotion (TurtleBot3 Friends)](/docs/en/platform/turtlebot3/locomotion/#turtlebot3-friends-car)
 
 So, you can download the STL files directly from each Onshape address as shown in the following figures.
 
@@ -131,7 +159,7 @@ So, you can download the STL files directly from each Onshape address as shown i
 ![](/assets/images/platform/turtlebot3/faq/download_the_stl_files_02.png)
 
 
-## [Intel® Joule™ USB-C port is not recognized on Windows 10](#intel-joule-usb-c-port-is-not-recognized-on-windows-10)
+## [Intel® Joule™ USB-C Port is not Recognized on Windows 10](#intel-joule-usb-c-port-is-not-recognized-on-windows-10)
 
 Some users have reported that the USB-C port is not recognized on Windows 10 when they were trying to update BIOS. Please check below link that describes the solution that worked out (Thanks for ***Rknlhrqy*** and ***VRAORESEARCH***).
 
@@ -139,7 +167,7 @@ Some users have reported that the USB-C port is not recognized on Windows 10 whe
 1. [Intel Communities](https://communities.intel.com/thread/109766)
 
 
-## [Intel® Joule™ freezes while booting/installation](#intel-joule-freezes-while-booting-installation)
+## [Intel® Joule™ Freezes while Booting/Installation](#intel-joule-freezes-while-bootinginstallation)
 
 If BIOS firmware is not properly installed, this might happen. Please burn the BIOS firmware 193 release version again.
 
@@ -150,7 +178,7 @@ If BIOS firmware is not properly installed, this might happen. Please burn the B
 
 ![](/assets/images/platform/turtlebot3/faq/nvstorage.png)
 
-## [How to update software](#how-to-update-software)
+## [How to Update Software](#how-to-update-software)
 
 **[TurtleBot3]**
 
@@ -179,7 +207,7 @@ $ rm -rf build/ devel/
 $ cd ~/catkin_ws && catkin_make
 ```
 
-## [How to update firmware](#how-to-update-firmware)
+## [How to Update Firmware](#how-to-update-firmware)
 
 **[TurtleBot3]**
 

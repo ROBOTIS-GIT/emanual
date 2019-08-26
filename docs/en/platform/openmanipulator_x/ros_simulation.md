@@ -7,8 +7,10 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_x/ros_simulation/
 sidebar:
-  title: OpenMANIPULATOR-X
+  title: "OpenMANIPULATOR-X"
   nav: "openmanipulator_x"
+product_group: openmanipulator_x
+page_number: 8
 ---
 
 <div style="counter-reset: h1 7"></div>
@@ -17,8 +19,8 @@ sidebar:
 
 {% capture notice_01 %}
 **NOTE**:
-- This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-- This instruction is supposed to be run on PC with ROS packages installed in.
+- The test is done on `ROS Kinetic Kame` installed in `Ubuntu 16.04`.
+- Make sure ROS dependencies are installed before performing these instructions - [Install ROS Packages](/docs/en/platform/openmanipulator_x/ros_setup/#install-ros-packages)
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -55,7 +57,7 @@ Enter `rostopic list` to list up the activated topics.
   /rosout
   /rosout_agg
   ```
-Open an [open_manipulator_control_gui](/docs/en/platform/openmanipulator_x/ros_operation/#gui-program)
+Open [OpenManipulator control GUI](/docs/en/platform/openmanipulator_x/ros_operation/#gui-program)
 
   ![](/assets/images/platform/openmanipulator_x/OpenManipulator_Chain_gazebo_2.png)
 

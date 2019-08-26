@@ -21,7 +21,7 @@ product_group: 2xl430-w250
 - 다양한 움직임을 구현하는 관절형 구조
 - 단계별 로봇교육과정 및 표준 커리큘럼 제공
 - 3D프린팅 지원
-- 로보티즈 엔지니어, 로보플러스 태스크 3.0 등 다용도 소프트웨어 사용가능
+- 로보플러스 엔지니어, 로보플러스 태스크 3.0 등 다용도 소프트웨어 사용가능
 - 라즈베리 파이와 카메라 확장가능
 
 
@@ -224,7 +224,7 @@ product_group: 2xl430-w250
 
 {% capture app_install %}
 ![](/assets/images/edu/engineer/kit1/icon_engineer_48.png)  
-**로보티즈 엔지니어 : [안드로이드 앱 다운로드](https://play.google.com/store/apps/details?id=com.robotis.robotisEngineer)**  
+**로보플러스 엔지니어 : [안드로이드 앱 다운로드](https://play.google.com/store/apps/details?id=com.robotis.robotisEngineer)**  
 
 ![](/assets/images/edu/engineer/kit1/icon_task_48.png)  
 **로보플러스 태스크 3.0 : [안드로이드 앱 다운로드](https://play.google.com/store/apps/details?id=com.robotis.task3)**  
@@ -239,10 +239,10 @@ product_group: 2xl430-w250
 1. 스마트폰 또는 태블릿에서 `플레이 스토어` 또는 `앱 스토어`를 실행합니다.  
   ![](/assets/images/edu/engineer/kit1/app_installation_01_kr.png)
 
-2. `플레이 스토어` 또는 `앱 스토어` 검색창에 **로보티즈** 또는 **로보티즈 엔지니어** 를 입력합니다.  
+2. `플레이 스토어` 또는 `앱 스토어` 검색창에 **로보티즈** 또는 **R+ ENGINEER** 를 입력합니다.  
   ![](/assets/images/edu/engineer/kit1/app_installation_02_kr.png)
 
-3. 검색된 목록에서 `ROBOTIS ENGINEER`를 찾아 `설치`를 선택합니다.  
+3. 검색된 목록에서 `R+ ENGINEER`를 찾아 `설치`를 선택합니다.  
   ![](/assets/images/edu/engineer/kit1/app_installation_03_kr.png)
 
 4. 아래와 같은 화면이 나타나면 `동의`를 눌러 설치를 진행합니다.  
@@ -291,10 +291,10 @@ product_group: 2xl430-w250
 
 
 {% capture opening_exam %}
-[로보플러스 태스크 3.0에서 태스크 예제 파일 열기](/docs/kr/software/rplustask3/#태스크-예제-열기)  
+[로보플러스 태스크 3.0에서 태스크 예제 파일 열기](/docs/kr/software/rplustask3/task_programming/#태스크-예제-열기)  
 [CM-550 제어기에 태스크 다운로드 하기](#태스크-다운로드-pc)  
 
-[로보플러스 태스크 3.0에서 모션 예제 파일 열기](/docs/kr/software/rplustask3/#모션-예제-열기)  
+[로보플러스 태스크 3.0에서 모션 예제 파일 열기](/docs/kr/software/rplustask3/motion_programming/#모션-예제-열기)  
 [CM-550 제어기에 모션 다운로드 하기](#모션-다운로드-pc)
 {% endcapture %}
 <div class="notice">{{opening_exam | markdownify}}</div>
@@ -446,10 +446,6 @@ product_group: 2xl430-w250
 `미디어 스캔` : 파일이 PC에서 보이지 않을 때 사용하는 기능입니다.  
 `버전 정보` : 현재 앱의 버전을 확인하는 기능입니다.  
 
-**참고** : `ENGINEER 실험실`의 자료 및 각종 기능은 예고없이 변경될 수 있습니다.  
-{: .notice--info}
-
-
 ### [Dr.R](#drr)
 
 #### 감정 표현  
@@ -519,7 +515,7 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
 |                        아이콘                         | 메뉴 설명                                                            |
 |:-----------------------------------------------------:|:---------------------------------------------------------------------|
 | ![](/assets/images/edu/engineer/kit1/icon_remote.png) | **REMOTE** : 기본 조종 모드 화면을 불러오는 버튼입니다.              |
-| ![](/assets/images/edu/engineer/kit1/icon_music.png)  | **GESTURE** : 스마트 기기를 통해 로봇과 함께 연주를 하는 기능입니다. |
+| ![](/assets/images/edu/engineer/kit1/icon_music.png)  | **MUSIC** : 스마트 기기를 통해 로봇과 함께 연주를 하는 기능입니다. |
 |  ![](/assets/images/edu/engineer/kit1/icon_clap.png)  | **CLAP** : 박수소리를 감지하고 감지한 횟수만큼 SPI가 움직입니다.     |
 
 ## [로봇 설정하기](#로봇-설정하기)
@@ -566,7 +562,7 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
 
 {% capture info_01 %}
 - 사물학습 및 객체인식을 사용하기 위해서는, 카메라가 장착된 스마트 기기가 있어야 합니다.
-- 스마트 기기에 **[로보티즈 엔지니어 앱](#소프트웨어-다운로드)** 을 설치해야 합니다.
+- 스마트 기기에 **[로보플러스 엔지니어 앱](#소프트웨어-다운로드)** 을 설치해야 합니다.
 {% endcapture %}
 <div class="notice--info">{{ info_01 | markdownify}}</div>
 
@@ -796,7 +792,7 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
 
 {% capture app_install %}  
 ![](/assets/images/edu/engineer/kit1/icon_engineer_48.png)  
-**로보티즈 엔지니어 : [안드로이드 앱 다운로드](https://play.google.com/store/apps/details?id=com.robotis.robotisEngineer)**  
+**로보플러스 엔지니어 : [안드로이드 앱 다운로드](https://play.google.com/store/apps/details?id=com.robotis.robotisEngineer)**  
 
 ![](/assets/images/edu/engineer/kit1/icon_task_48.png)  
 **로보플러스 태스크 3.0 : [안드로이드 앱 다운로드](https://play.google.com/store/apps/details?id=com.robotis.task3)**  

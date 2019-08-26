@@ -13,9 +13,9 @@ header:
     - excerpt: 'DYNAMIXEL XM Series'
 ---
 
-# 다이나믹셀 X 시리즈
+# 다이나믹셀 XM 시리즈
 
-![](/assets/images/dxl/x/dxl_x_productline_kr.jpg)
+![](/assets/images/dxl/x/dxl_x_productline_kr.png)
 
 # [XM430-W210](#xm430-w210)
 

@@ -7,8 +7,10 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_x/specification/
 sidebar:
-  title: OpenMANIPULATOR-X
+  title: "OpenMANIPULATOR-X"
   nav: "openmanipulator_x"
+product_group: openmanipulator_x
+page_number: 2
 ---
 
 <div style="counter-reset: h1 1"></div>

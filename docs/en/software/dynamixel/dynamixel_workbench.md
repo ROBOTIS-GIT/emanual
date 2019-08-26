@@ -90,10 +90,20 @@ $ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git
 - Downloads [Arduino IDE](http://emanual.robotis.com/docs/en/software/arduino_ide/) for uploding firmware to OpenCR and OpenCM
 
 #### OpenCR Arduino IDE
+
 ![](/assets/images/sw/dynamixel/dynamixel_workbench/opencr_arduino_setup.png)
 
+In order to use Exameples for OpenCM 9.04 in Arduino, Porting OpenCM9.04 Board to Arduino IDE is required.  
+
+- [Porting the OpenCR1.0 board to the Arduino IDE](/docs/en/parts/controller/opencr10/#porting-to-arduino-idelinux)
+
 #### OpenCM Arduino IDE
+
 ![](/assets/images/sw/dynamixel/dynamixel_workbench/opencm_arduino_setup.png)
+
+In order to use Exameples for OpenCM 9.04 in Arduino, Porting OpenCM9.04 Board to Arduino IDE is required.  
+
+- [Porting the OpenCM9.04 board to the Arduino IDE](docs/en/parts/controller/opencm904/#porting-the-opencm904-board-to-the-arduino-ide)
 
 ## [Linux and macOS](#linux-and-macos)
 

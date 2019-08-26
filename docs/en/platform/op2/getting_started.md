@@ -9,6 +9,8 @@ permalink: /docs/en/platform/op2/getting_started/
 sidebar:
   title: ROBOTIS OP2
   nav: "op2"
+product_group: op2
+page_number: 1
 ---
 
 # [Introduction](#introduction)
@@ -207,7 +209,7 @@ We strongly suggest you to practice the included tutorial programs installed at 
 
 ## [Recovery Software](#recovery-software)
 
-The supplied USB thumb drive contains the same software that comes preinstalled with ROBOTIS
+The supplied USB thumb drive contains the same software that comes installed with ROBOTIS
 OP2.  
 You may obtain updates softwares at the link below.  
 [https://sourceforge.net/projects/darwinop/files/Software/Main%20Controller/Recovery%20USB/](https://sourceforge.net/projects/darwinop/files/Software/Main%20Controller/Recovery%20USB/)

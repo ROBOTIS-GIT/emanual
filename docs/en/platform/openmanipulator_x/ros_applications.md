@@ -7,8 +7,10 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_x/ros_applications/
 sidebar:
-  title: OpenMANIPULATOR-X
+  title: "OpenMANIPULATOR-X"
   nav: "openmanipulator_x"
+product_group: openmanipulator_x
+page_number: 9
 ---
 
 <div style="counter-reset: h1 8"></div>
@@ -440,24 +442,24 @@ Since you need to control two OpenManipulators on one PC, use two U2D2s and two 
 #### Master OpenManipulator
 Master OpenManipulator-X is a robot that is controlled by the user. This is easy to move because no torque is applied to dynamixel. Dynamixel of master OpenManipulator-X sets the ID as below and the baudrate as 1000000bps.
 
-| Name    | Dynamixel ID |
+|  Name   | Dynamixel ID |
 |:-------:|:------------:|
-| Joint 1 | 1            |
-| Joint 2 | 2            |
-| Joint 3 | 3            |
-| Joint 4 | 4            |
-| Gripper | 5            |
+| Joint 1 |      1       |
+| Joint 2 |      2       |
+| Joint 3 |      3       |
+| Joint 4 |      4       |
+| Gripper |      5       |
 
 #### Slave OpenManipulator
 Slave OpenManipulator-X moves synchronously with Master OpenManipulator. Dynamixel of slave OpenManipulator-X sets the ID as below and the baudrate as 1000000bps. This is the same as the default OpenManipulator-X setting.
 
-| Name    | Dynamixel ID |
+|  Name   | Dynamixel ID |
 |:-------:|:------------:|
-| Joint 1 | 11           |
-| Joint 2 | 12           |
-| Joint 3 | 13           |
-| Joint 4 | 14           |
-| Gripper | 15           |
+| Joint 1 |      11      |
+| Joint 2 |      12      |
+| Joint 3 |      13      |
+| Joint 4 |      14      |
+| Gripper |      15      |
 
 ### [Install Package](#install-package)
 Run the following command in a terminal window.

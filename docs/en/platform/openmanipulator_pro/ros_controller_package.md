@@ -7,22 +7,24 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_pro/ros_controller_package/
 sidebar:
-  title: OpenMANIPULATOR-PRO
+  title: "OpenMANIPULATOR-PRO"
   nav: "openmanipulator_pro"
+product_group: openmanipulator_pro
+page_number: 5
 ---
 
 <div style="counter-reset: h1 4"></div>
 
 # [[ROS] Controller Package](#ros-controller-package)
 
-The OpenMANIPULATOR-PRO controller provides basic manipulation of OpenMANIPULATOR-PRO. You can control DYNAMIXEL's of OpenMANIPULATOR-PRO and check states of OpenMANIPULATOR-PRO through [messages](/docs/en/platform/openmanipulator_pro/ros_controller_package/#message-list) of the controller.  
+You can control each joint of OpenMANIPULATOR-PRO and check states of OpenMANIPULATOR-PRO through [messages](/docs/en/platform/openmanipulator_pro/ros_controller_package/#message-list) by utilizing an exclusive controller program.
  
 
 {% capture notice_01 %}
 **NOTE** :  
-- This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-- This instruction has been tested on `Ubuntu 18.04` and `ROS Melodic Morenia`.  
-- This instruction is supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
+- The test is done on `ROS Kinetic Kame` installed in `Ubuntu 16.04`.
+- The test is done on `ROS Melodic Morenia`installed in `Ubuntu 18.04`.
+- Make sure ROS dependencies are installed before performing these instructions - [Install ROS Packages](/docs/en/platform/openmanipulator_pro/ros_setup/#install-ros-packages)
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -77,12 +79,12 @@ Before launching the controller, please check `open_manipulator_pro_controller` 
 `dynamixel_usb_port` is a parameter to set USB port to connect with DYNAMIXEL of OpenMANIPULATOR-PRO. If you use U2D2, it should be set **/dev/ttyUSB@**. If you use OpenCR, it should be set **/dev/ttyACM@** (@ indicates the port number connected to the DYNAMIXEL).  
 `dynamixel_baud_rate` is a parameter to set baud rate of DYNAMIXEL. default baud rate of DYNAMIXEL used in OpenMANIPULATOR-PRO is 1000000.  
 `control_period` is a parameter to set communication period between DYNAMIXEL and PC (control loop time).  
-`use_platform` is a parameter that sets whether to use the actual OpenMANIPULATOR-PRO or OpenMANIPULATOR-PRO simulation. please refer [ROS Simulation](/docs/en/platform/openmanipulator_pro/ros_simulation/#ros-simulation) chapter.  
+`use_platform` is a parameter that sets whether to use the actual OpenMANIPULATOR-PRO or OpenMANIPULATOR-PRO simulation. please refer [[ROS] Simulation](/docs/en/platform/openmanipulator_pro/ros_simulation/#ros-simulation) chapter.  
 `use_moveit`, `planning_group_name` and `moveit_sample_duration` are parameters to load [move_group](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/move_group_interface/move_group_interface_tutorial.html) package. please refer to [MoveIt!](/docs/en/platform/openmanipulator_pro/ros_operation/#moveit) chapter.
 
 After setting those parameters, launch the OpenMANIPULATOR-PRO controller to start [[ROS] Operation](/docs/en/platform/openmanipulator_pro/ros_operation/#ros-operation).
 
-Please, open the Terminal then run roscore along with following command.
+Please, open a terminal then run roscore along with following command.
 
 ``` bash
 $ roscore
@@ -100,7 +102,7 @@ $ roslaunch open_manipulator_pro_controller open_manipulator_pro_controller.laun
 {: .notice--warning}
 
 
-Follwing message will be shown in the Terminal after the process done successfully.  
+Follwing message will be shown in a terminal after the process is done successfully.  
 
 ```
 SUMMARY
@@ -149,9 +151,9 @@ if DYNAMIXEL aren't recoginized, please check firmware with ROBOTIS software ([R
 
 {% capture notice_01 %}
 **NOTE**:  
-- This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-- This instruction has been tested on `Ubuntu 18.04` and `ROS Melodic Morenia`.
-- This instruction is supposed to be run on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.  
+- The test is done on `ROS Kinetic Kame` installed in `Ubuntu 16.04`.
+- The test is done on `ROS Melodic Morenia`installed in `Ubuntu 18.04`.
+- Make sure ROS dependencies are installed before performing these instructions - [Install ROS Packages](/docs/en/platform/openmanipulator_pro/ros_setup/#install-ros-packages)
 - Make sure to run the [OpenMANIPULATOR-PRO controller](/docs/en/platform/openmanipulator_pro/ros_controller_package/#launch-controller) instructions before running the instructions below.  
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
@@ -544,9 +546,9 @@ Active Joint
 
 {% capture notice_01 %}
 **NOTE**:  
-- This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-- This instruction has been tested on `Ubuntu 18.04` and `ROS Melodic Morenia`.  
-- This instruction is supposed to be run on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
+- The test is done on `ROS Kinetic Kame` installed in `Ubuntu 16.04`.
+- The test is done on `ROS Melodic Morenia`installed in `Ubuntu 18.04`.
+- Make sure ROS dependencies are installed before performing these instructions - [Install ROS Packages](/docs/en/platform/openmanipulator_pro/ros_setup/#install-ros-packages)
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -563,6 +565,7 @@ $ roslaunch open_manipulator_pro_description open_manipulator_pro_rviz.launch
 The user can change each joint by GUI, if the user launch only RViz by executing the following command :
 `$ roslaunch open_manipulator_pro_description open_manipulator_pro_rviz.launch use_gui:=true`
 
+
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -574,9 +577,9 @@ The user can change each joint by GUI, if the user launch only RViz by executing
 
 {% capture notice_01 %}
 **NOTE**:  
-- This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-- This instruction has been tested on `Ubuntu 18.04` and `ROS Melodic Morenia`.   
-- This instruction is supposed to be run on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.  
+- The test is done on `ROS Kinetic Kame` installed in `Ubuntu 16.04`.
+- The test is done on `ROS Melodic Morenia`installed in `Ubuntu 18.04`.
+- Make sure ROS dependencies are installed before performing these instructions - [Install ROS Packages](/docs/en/platform/openmanipulator_pro/ros_setup/#install-ros-packages) 
 - Make sure to run the [OpenMANIPULATOR-PRO controller](/docs/en/platform/openmanipulator_pro/ros_controller_package/#launch-controller) instructions before running the instructions below.  
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
@@ -598,7 +601,7 @@ $ rqt
 ![](/assets/images/platform/openmanipulator_pro/rqt1.png)  
 
 
-**TIP**: If rqt is not displayed, select the `plugin` -> `Topic Monitor` -> ` OpenMANIPULATOR-PRO`.
+**TIP**: If rqt is not displayed, select the `plugin` -> `Topic Monitor` -> `OpenMANIPULATOR-PRO`.
 {: .notice--success}
 
 Topics without a check mark will not be monitored. To monitor topics, click the checkboxes next. 

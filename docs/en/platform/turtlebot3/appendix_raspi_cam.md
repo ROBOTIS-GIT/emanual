@@ -9,6 +9,8 @@ permalink: /docs/en/platform/turtlebot3/appendix_raspi_cam/
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
+product_group: turtlebot3
+page_number: 39
 ---
 
 <div style="counter-reset: h1 22"></div>
@@ -34,7 +36,7 @@ The Camera Module can be used to take high-definition video, as well as stills p
 #### [Hardware Specifications](#hardware-specifications)
 
 | Items                          | Specifications                                                                            |
-| ------------------------------ | ----------------------------------------------------------------------------------------- |
+|:-------------------------------|:------------------------------------------------------------------------------------------|
 | Net price                      | $25                                                                                       |
 | Size                           | Around 25 × 24 × 9 mm                                                                     |
 | Weight                         | 3g                                                                                        |
@@ -63,7 +65,7 @@ The Camera Module can be used to take high-definition video, as well as stills p
 #### [Hardware features](#hardware-features)
 
 | Available                                                                       | Implemented                                                                                |
-| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+|:--------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------|
 | Chief ray angle correction                                                      | Yes                                                                                        |
 | Global and rolling shutter                                                      | Rolling shutter                                                                            |
 | Automatic exposure control (AEC)                                                | No - done by ISP instead                                                                   |
@@ -93,7 +95,7 @@ The Camera Module can be used to take high-definition video, as well as stills p
 
 
 | Software features             |                                                                                                                                                    |
-| ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+|:------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------|
 | Picture formats               | JPEG (accelerated), JPEG + RAW, GIF, BMP, PNG, YUV420, RGB888                                                                                      |
 | Video formats                 | raw h.264 (accelerated)                                                                                                                            |
 | Effects                       | negative, solarise, posterize, whiteboard, blackboard, sketch, denoise, emboss, oilpaint, hatch, gpen, pastel, watercolour, film, blur, saturation |
@@ -133,8 +135,8 @@ The TurtleBot3 Waffle Pi uses Raspberry Pi Camera Module v2 as a default vision 
 [Raspberry Pi Camera packages](https://github.com/UbiquityRobotics/raspicam_node) enable the use of Raspberry Pi Camera Module v1.x and v2.x with ROS. Below table describes packages required to operate Raspberry Pi Camera. You will be guided to install these packaged in the next section.
 
 
-| Package                                                                  | Description                                                          |
-| ------------------------------------------------------------------------ | :------------------------------------------------------------------: |
+| Package                                                                  |                             Description                              |
+|:-------------------------------------------------------------------------|:--------------------------------------------------------------------:|
 | [Raspberry Pi Camera](https://github.com/UbiquityRobotics/raspicam_node) | Underlying library driver for communicating with Raspberry Pi Camera |
 
 

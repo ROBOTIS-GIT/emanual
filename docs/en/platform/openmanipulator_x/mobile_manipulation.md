@@ -7,11 +7,13 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_x/mobile_manipulation/
 sidebar:
-  title: OpenMANIPULATOR-X
+  title: "OpenMANIPULATOR-X"
   nav: "openmanipulator_x"
+product_group: openmanipulator_x
+page_number: 18
 ---
 
-<div style="counter-reset: h1 12"></div>
+<div style="counter-reset: h1 17"></div>
 
 # [Mobile Manipulation](#mobile-manipulation)
 

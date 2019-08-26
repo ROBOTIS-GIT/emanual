@@ -9,13 +9,15 @@ permalink: /docs/en/platform/manipulator_h/ros_reference/
 sidebar:
   title: MANIPULATOR-H
   nav: "manipulator_h"
+product_group: manipulator_h
+page_number: 8
 ---
 
 <div style="counter-reset: h1 7"></div>
 
 # [ROS Reference](#ros-reference)
 
-## [ROS package description](#ros-package-description)
+## [ROS Package Description](#ros-package-description)
 
 ### manipulator_h_base_module
 This package describes basic function to control ROBOTIS MANIPULATOR-H. This module is based on position control.
@@ -55,7 +57,7 @@ Additionally, there are some function to calculate kinematics and dynamics.
 This package describes robot manager to execute manipulator_h_base_module.
 
 
-## [ROS message type](#ros-message-type)
+## [ROS Message Type](#ros-message-type)
 
 ### ROS Message Type
 * JointPose.msg   

@@ -24,12 +24,12 @@ product_group: dxl_mx
 | Position Sensor        | Contactless absolute encoder (12Bit, 360 [°])<br />Maker : ams(www.ams.com), Part No : AS5045 |
 | Motor                  | Cored                                                                                         |
 | Baud Rate              | 8000 bps ~ 4.5 Mbps                                                                           |
-| Resolution             | 0.088&deg;                                                                                    |
+| Resolution             | 4096 \[pulse/rev]                                                                                    |
 | Running Degree         | 0&deg; ~ 360&deg;<br />Endless Turn                                                           |
 | Weight                 | 54.6g                                                                                         |
-| Dimensions (W x H x D) | 32mm x 50mm x 40mm                                                                            |
+| Dimensions (W x H x D) | 32 x 50 x 40 [mm]                                                                            |
 | Gear Ratio             | 32 : 1                                                                                        |
-| No Load Speed          | 470rpm (at 12V)                                                                               |
+| No Load Speed          | 470 [rev/min] (at 12 [V])                                                                               |
 | Operating Temperature  | -5&deg;C ~ +70&deg;C                                                                          |
 | Input Voltage          | 10 ~ 14.8V (**Recommended : 12V**)                                                            |
 | Standby Current        | 60mA                                                                                          |
@@ -103,26 +103,7 @@ product_group: dxl_mx
 {% include en/dxl/control_table_id.md %}
 
 ### <a name="baud-rate"></a>**[Baud Rate (4)](#baud-rate-4)**
-Baud Rate determines serial communication speed between a controller and DYNAMIXELs.
-
-|   Value    | Baud Rate(bps) | Margin of Error |
-|:----------:|:--------------:|:---------------:|
-| 1(Default) |       1M       |     0.000%      |
-|     3      |    500,000     |     0.000%      |
-|     4      |    400,000     |     0.000%      |
-|     7      |    250,000     |     0.000%      |
-|     9      |    200,000     |     0.000%      |
-|     16     |     115200     |     -2.124%     |
-|     34     |     57600      |     0.794%      |
-|    103     |     19200      |     -0.160%     |
-|    207     |      9600      |     -0.160%     |
-
-**NOTE** : Less than 3% of the baud rate error margin will not affect to UART communication.
-{: .notice}
-
-**NOTE** : For the stable communication with higher baudrate, configure USB Latency value to the lower.  
-[USB Latency Setting](/docs/en/software/dynamixel/dynamixel_wizard2/#usb-latency-setting) 
-{: .notice}
+{% include en/dxl/control_table_baudrate.md %}
 
 For BPS over 250 values :
 

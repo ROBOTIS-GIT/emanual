@@ -86,6 +86,12 @@ main:
       - title: "2XL430-W250"
         titlekr: "2XL430-W250"
         url: /dxl/x/2xl430-w250/
+      - title: "XC430-W150"
+        titlekr: "XC430-W150"
+        url: /dxl/x/xc430-w150/
+      - title: "XC430-W240"
+        titlekr: "XC430-W240"
+        url: /dxl/x/xc430-w240/
       - title: "XM430-W210"
         titlekr: "XM430-W210"
         url: /dxl/x/xm430-w210/
@@ -2513,6 +2519,18 @@ rx-64:
         url: /dxl/rx/rx-64/#communication-circuit
         urlkr: /dxl/rx/rx-64/#통신-회로
 
+
+#MX-Series Main sidebar
+dxl_mx_main:
+  - title: "Features"
+    titlekr: "특징"
+    url: /dxl/mx/#features
+    urlkr: /dxl/mx/#특징
+  - title: "MX Series"
+    titlekr: "MX 시리즈"
+    url: /dxl/mx/#mx-series
+    urlkr: /dxl/mx/#mx-시리즈
+
 #MX-12W sidebar
 mx-12w:
   - title: "Specifications"
@@ -3894,6 +3912,35 @@ mx-106-2:
       - title: "Communication Circuit"
         url: /dxl/mx/mx-106-2/#communication-circuit
 
+
+#X-Series Main sidebar
+dxl_x_main:
+  - title: "Feature"
+    titlekr: "특징"
+    url: /dxl/x/#features
+    urlkr: /dxl/x/#특징
+  - title: "DYNAMIXEL X"
+    titlekr: "다이나믹셀 X"
+    url: /dxl/x/#dynamixel-x
+    urlkr: /dxl/x/#다이나믹셀-x
+    children:
+      - title: "XH Series"
+        titlekr: "XH-시리즈"
+        url: /dxl/x/#xh-series
+        urlkr: /dxl/x/#xh-시리즈
+      - title: "XM Series"
+        titlekr: "XM-시리즈"
+        url: /dxl/x/#xm-series
+        urlkr: /dxl/x/#xm-시리즈
+      - title: "XC Series"
+        titlekr: "XC-시리즈"
+        url: /dxl/x/#xc-series
+        urlkr: /dxl/x/#xc-시리즈
+      - title: "XL Series"
+        titlekr: "XL-시리즈"
+        url: /dxl/x/#xl-series
+        urlkr: /dxl/x/#xl-시리즈
+    
 #XH430-V210 sidebar
 xh430-v210:
   - title: "Specifications"
@@ -5191,9 +5238,9 @@ xc430-w150:
           - title: "Secondary(Shadow) ID(12)"
             titlekr: "Secondary(Shadow) ID(12)"
             url: /dxl/x/xc430-w150/#secondaryshadow-id12
-          - title: "Protocol Version(13)"
-            titlekr: "Protocol Version(13)"
-            url: /dxl/x/xc430-w150/#protocol-version13
+          - title: "Protocol Type(13)"
+            titlekr: "Protocol Type(13)"
+            url: /dxl/x/xc430-w150/#protocol-type13
           - title: "Homing Offset(20)"
             titlekr: "Homing Offset(20)"
             url: /dxl/x/xc430-w150/#homing-offset20
@@ -5312,15 +5359,15 @@ xc430-w150:
         titlekr: "옵션프레임 조립"
         url: /dxl/x/xc430-w150/#option-frame-assembly
         urlkr: /dxl/x/xc430-w150/#옵션프레임-조립
-  - title: "Maintenance"
-    titlekr: "유지보수"
-    url: /dxl/x/xc430-w150/#maintenance
-    urlkr: /dxl/x/xc430-w150/#유지보수
-    children:
-      - title: "Horn, Gear Replacement"
-        titlekr: "혼과 기어 교체"
-        url: /dxl/x/xc430-w150/#horn-and-gear-replacement
-        urlkr: /dxl/x/xc430-w150/#혼과-기어-교체
+#  - title: "Maintenance"
+#    titlekr: "유지보수"
+#    url: /dxl/x/xc430-w150/#maintenance
+#    urlkr: /dxl/x/xc430-w150/#유지보수
+#    children:
+#      - title: "Horn, Gear Replacement"
+#        titlekr: "혼과 기어 교체"
+#        url: /dxl/x/xc430-w150/#horn-and-gear-replacement
+#        urlkr: /dxl/x/xc430-w150/#혼과-기어-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/x/xc430-w150/#reference
@@ -5421,9 +5468,9 @@ xc430-w240:
           - title: "Secondary(Shadow) ID(12)"
             titlekr: "Secondary(Shadow) ID(12)"
             url: /dxl/x/xc430-w240/#secondaryshadow-id12
-          - title: "Protocol Version(13)"
-            titlekr: "Protocol Version(13)"
-            url: /dxl/x/xc430-w240/#protocol-version13
+          - title: "Protocol Type(13)"
+            titlekr: "Protocol Type(13)"
+            url: /dxl/x/xc430-w240/#protocol-type13
           - title: "Homing Offset(20)"
             titlekr: "Homing Offset(20)"
             url: /dxl/x/xc430-w240/#homing-offset20
@@ -5542,15 +5589,15 @@ xc430-w240:
         titlekr: "옵션프레임 조립"
         url: /dxl/x/xc430-w240/#option-frame-assembly
         urlkr: /dxl/x/xc430-w240/#옵션프레임-조립
-  - title: "Maintenance"
-    titlekr: "유지보수"
-    url: /dxl/x/xc430-w240/#maintenance
-    urlkr: /dxl/x/xc430-w240/#유지보수
-    children:
-      - title: "Horn, Gear Replacement"
-        titlekr: "혼과 기어 교체"
-        url: /dxl/x/xc430-w240/#horn-and-gear-replacement
-        urlkr: /dxl/x/xc430-w240/#혼과-기어-교체
+#  - title: "Maintenance"
+#    titlekr: "유지보수"
+#    url: /dxl/x/xc430-w240/#maintenance
+#    urlkr: /dxl/x/xc430-w240/#유지보수
+#    children:
+#      - title: "Horn, Gear Replacement"
+#        titlekr: "혼과 기어 교체"
+#        url: /dxl/x/xc430-w240/#horn-and-gear-replacement
+#        urlkr: /dxl/x/xc430-w240/#혼과-기어-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/x/xc430-w240/#reference
@@ -5651,9 +5698,9 @@ xc430-w240:
           - title: "Secondary(Shadow) ID(12)"
             titlekr: "Secondary(Shadow) ID(12)"
             url: /dxl/x/2xl430-w250/#secondaryshadow-id12
-          - title: "Protocol Version(13)"
-            titlekr: "Protocol Version(13)"
-            url: /dxl/x/2xl430-w250/#protocol-version13
+          - title: "Protocol Type(13)"
+            titlekr: "Protocol Type(13)"
+            url: /dxl/x/2xl430-w250/#protocol-type13
           - title: "Homing Offset(20)"
             titlekr: "Homing Offset(20)"
             url: /dxl/x/2xl430-w250/#homing-offset20
@@ -5798,6 +5845,228 @@ xc430-w240:
         url: /dxl/x/2xl430-w250/#drawings
         urlkr: /dxl/x/2xl430-w250/#도면
 
+#2XC430-W250 sidebar
+2xc430-w250:
+  - title: "Specifications"
+    titlekr: "주요 사양"
+    url: /dxl/x/2xc430-w250/#specifications
+    urlkr: /dxl/x/2xc430-w250/#주요-사양
+    children:
+      - title: "Performance Graph"
+        titlekr: "성능 그래프"
+        url: /dxl/x/2xc430-w250/#performance-graph
+        urlkr: /dxl/x/2xc430-w250/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/x/2xc430-w250/#control-table
+    urlkr: /dxl/x/2xc430-w250/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/x/2xc430-w250/#control-table-data-address
+        urlkr: /dxl/x/2xc430-w250/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
+            url: /dxl/x/2xc430-w250/#area-eeprom-ram
+            urlkr: /dxl/x/2xc430-w250/#영역-eeprom-ram
+          - title: "Size"
+            titlekr: "크기"
+            url: /dxl/x/2xc430-w250/#size
+            urlkr: /dxl/x/2xc430-w250/#크기
+          - title: "Access"
+            titlekr: "접근권한"
+            url: /dxl/x/2xc430-w250/#access
+            urlkr: /dxl/x/2xc430-w250/#접근권한
+          - title: "Initial Value"
+            titlekr: "초기값"
+            url: /dxl/x/2xc430-w250/#initial-value
+            urlkr: /dxl/x/2xc430-w250/#초기값
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/x/2xc430-w250/#control-table-of-eeprom-area
+        urlkr: /dxl/x/2xc430-w250/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/x/2xc430-w250/#control-table-of-ram-area
+        urlkr: /dxl/x/2xc430-w250/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/x/2xc430-w250/#control-table-description
+        urlkr: /dxl/x/2xc430-w250/#컨트롤-테이블-설명
+        children:
+          - title: "Model Number(0)"
+            titlekr: "Model Number(0)"
+            url: /dxl/x/2xc430-w250/#model-number0
+          - title: "Firmware Version(6)"
+            titlekr: "Firmware Version(6)"
+            url: /dxl/x/2xc430-w250/#firmware-version6
+          - title: "ID(7)"
+            titlekr: "ID(7)"
+            url: /dxl/x/2xc430-w250/#id7
+          - title: "Baud Rate(8)"
+            titlekr: "Baud Rate(8)"
+            url: /dxl/x/2xc430-w250/#baud-rate8
+          - title: "Return Delay Time(9)"
+            titlekr: "Return Delay Time(9)"
+            url: /dxl/x/2xc430-w250/#return-delay-time9
+          - title: "Drive Mode(10)"
+            titlekr: "Drive Mode(10)"
+            url: /dxl/x/2xc430-w250/#drive-mode10
+          - title: "Operating Mode(11)"
+            titlekr: "Operating Mode(11)"
+            url: /dxl/x/2xc430-w250/#operating-mode11
+          - title: "Secondary(Shadow) ID(12)"
+            titlekr: "Secondary(Shadow) ID(12)"
+            url: /dxl/x/2xc430-w250/#secondaryshadow-id12
+          - title: "Protocol Type(13)"
+            titlekr: "Protocol Type(13)"
+            url: /dxl/x/2xc430-w250/#protocol-type13
+          - title: "Homing Offset(20)"
+            titlekr: "Homing Offset(20)"
+            url: /dxl/x/2xc430-w250/#homing-offset20
+          - title: "Moving Threshold(24)"
+            titlekr: "Moving Threshold(24)"
+            url: /dxl/x/2xc430-w250/#moving-threshold24
+          - title: "Temperature Limit(31)"
+            titlekr: "Temperature Limit(31)"
+            url: /dxl/x/2xc430-w250/#temperature-limit31
+          - title: "Min/Max Voltage Limit(32,34)"
+            titlekr: "Min/Max Voltage Limit(32,34)"
+            url: /dxl/x/2xc430-w250/#minmax-voltage-limit32-34
+          - title: "PWM Lmit(36)"
+            titlekr: "PWM Limit(36)"
+            url: /dxl/x/2xc430-w250/#pwm-limit36
+          - title: "Velocity Limit(44)"
+            titlekr: "Velocity Limit(44)"
+            url: /dxl/x/2xc430-w250/#velocity-limit44
+          - title: "Min/Max Position Limit(48, 52)"
+            titlekr: "Min/Max Position Limit(48, 52)"
+            url: /dxl/x/2xc430-w250/#minmax-position-limit48-52
+          - title: "Shutdown(63)"
+            titlekr: "Shutdown(63)"
+            url: /dxl/x/2xc430-w250/#shutdown63
+          - title: "Torque Enable(64)"
+            titlekr: "Torque Enable(64)"
+            url: /dxl/x/2xc430-w250/#torque-enable64
+          - title: "LED(65)"
+            titlekr: "LED(65)"
+            url: /dxl/x/2xc430-w250/#led65
+          - title: "Status Return Level(68)"
+            titlekr: "Status Return Level(68)"
+            url: /dxl/x/2xc430-w250/#status-return-level68
+          - title: "Registered Instruction(69)"
+            titlekr: "Registered Instruction(69)"
+            url: /dxl/x/2xc430-w250/#registered-instruction69
+          - title: "Hardware Error Status(70)"
+            titlekr: "Hardware Error Status(70)"
+            url: /dxl/x/2xc430-w250/#hardware-error-status70
+          - title: "Velocity PI Gain(76, 78)"
+            titlekr: "Velocity PI Gain(76, 78)"
+            url: /dxl/x/2xc430-w250/#velocity-pi-gain76-78
+          - title: "Position PID Gain(80, 82, 84)"
+            titlekr: "Position PID Gain(80, 82, 84)"
+            url: /dxl/x/2xc430-w250/#position-pid-gain80-82-84
+          - title: "Feedforward 1st/2nd Gains(88, 90)"
+            titlekr: "Feedforward 1st/2nd Gains(88, 90)"
+            url: /dxl/x/2xc430-w250/#feedforward-1st2nd-gains88-90
+          - title: "BUS Watchdog(98)"
+            titlekr: "BUS Watchdog(98)"
+            url: /dxl/x/2xc430-w250/#bus-watchdog98
+          - title: "Goal PWM(100)"
+            titlekr: "Goal PWM(100)"
+            url: /dxl/x/2xc430-w250/#goal-pwm100
+          - title: "Goal Velocity(104)"
+            titlekr: "Goal Velocity(104)"
+            url: /dxl/x/2xc430-w250/#goal-velocity104
+          - title: "Profile Acceleration(108)"
+            titlekr: "Profile Acceleration(108)"
+            url: /dxl/x/2xc430-w250/#profile-acceleration108
+          - title: "Profile Velocity(112)"
+            titlekr: "Profile Velocity(112)"
+            url: /dxl/x/2xc430-w250/#profile-velocity112
+          - title: "Goal Position(116)"
+            titlekr: "Goal Position(116)"
+            url: /dxl/x/2xc430-w250/#goal-position116
+          - title: "Realtime Tick(120)"
+            titlekr: "Realtime Tick(120)"
+            url: /dxl/x/2xc430-w250/#realtime-tick120
+          - title: "Moving(122)"
+            titlekr: "Moving(122)"
+            url: /dxl/x/2xc430-w250/#moving122
+          - title: "Moving Status(123)"
+            titlekr: "Moving Status(123)"
+            url: /dxl/x/2xc430-w250/#moving-status123
+          - title: "Present PWM(124)"
+            titlekr: "Present PWM(124)"
+            url: /dxl/x/2xc430-w250/#present-pwm124
+          - title: "Present Load(126)"
+            titlekr: "Present Load(126)"
+            url: /dxl/x/2xc430-w250/#present-load126
+          - title: "Present Velocity(128)"
+            titlekr: "Present Velocity(128)"
+            url: /dxl/x/2xc430-w250/#present-velocity128
+          - title: "Present Position(132)"
+            titlekr: "Present Position(132)"
+            url: /dxl/x/2xc430-w250/#present-position132
+          - title: "Velocity Trajectory(136)"
+            titlekr: "Velocity Trajectory(136)"
+            url: /dxl/x/2xc430-w250/#velocity-trajectory136
+          - title: "Position Trajectory(140)"
+            titlekr: "Position Trajectory(140)"
+            url: /dxl/x/2xc430-w250/#position-trajectory140
+          - title: "Present Input Voltage(144)"
+            titlekr: "Present Input Voltage(144)"
+            url: /dxl/x/2xc430-w250/#present-input-voltage144
+          - title: "Present Temperature(146)"
+            titlekr: "Present Temperature(146)"
+            url: /dxl/x/2xc430-w250/#present-temperature146
+          - title: "Indirect Address"
+            titlekr: "Indirect Address"
+            url: /dxl/x/2xc430-w250/#indirect-address
+          - title: "Indirect Data"
+            titlekr: "Indirect Data"
+            url: /dxl/x/2xc430-w250/#indirect-data
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/x/2xc430-w250/#how-to-assemble
+    urlkr: /dxl/x/2xc430-w250/#조립-예시
+    children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/2xc430-w250/#wiring-through-back-case
+        urlkr: /dxl/x/2xc430-w250/#배선-예시
+    #  - title: "Option Frame Assembly"
+    #    titlekr: "옵션프레임 조립"
+    #    url: /dxl/x/2xc430-w250/#option-frame-assembly
+    #    urlkr: /dxl/x/2xc430-w250/#옵션프레임-조립
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/x/2xc430-w250/#reference
+    urlkr: /dxl/x/2xc430-w250/#참고자료
+    children:
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/x/2xc430-w250/#certifications
+        urlkr: /dxl/x/2xc430-w250/#인증-획득
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/x/2xc430-w250/#quick-start
+        urlkr: /dxl/x/2xc430-w250/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/x/2xc430-w250/#connector-information
+        urlkr: /dxl/x/2xc430-w250/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/x/2xc430-w250/#communication-circuit
+        urlkr: /dxl/x/2xc430-w250/#통신-회로
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/x/2xc430-w250/#drawings
+        urlkr: /dxl/x/2xc430-w250/#도면
+
+
 #XM430-W210 sidebar
 xm430-w210:
   - title: "Specifications"
@@ -5872,9 +6141,9 @@ xm430-w210:
         - title: "Secondary(Shadow) ID(12)"
           titlekr: "Secondary(Shadow) ID(12)"
           url: /dxl/x/xm430-w210/#secondaryshadow-id12
-        - title: "Protocol Version(13)"
-          titlekr: "Protocol Version(13)"
-          url: /dxl/x/xm430-w210/#protocol-version13
+        - title: "Protocol Type(13)"
+          titlekr: "Protocol Type(13)"
+          url: /dxl/x/xm430-w210/#protocol-type13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
           url: /dxl/x/xm430-w210/#homing-offset20
@@ -15118,7 +15387,7 @@ thormang3:
         url: /platform/thormang3/thormang3_ros_packages/#thormang3_balance_control
       - title: "imu-3dm-gx4"
         url: /platform/thormang3/thormang3_ros_packages/#imu-3dm-gx4
-      - title: "imu-3dm-gx5"
+      - title: "microstrain_3dm_gx5_45"
         url: /platform/thormang3/thormang3_ros_packages/#microstrain-3dm-gx5-45
     - title: "PPC Packages"
       url: /platform/thormang3/thormang3_ros_packages/#ppc-packages
@@ -15501,7 +15770,7 @@ turtlebot3:
       url: /platform/turtlebot3/machine_learning/#set-parameters
     - title: "Run Machine Learning"
       url: /platform/turtlebot3/machine_learning/#run-machine-learning
-  - title: "ROS2"
+  - title: "ROS 2"
     url: /platform/turtlebot3/ros2/#ros2
     children:
     - title: "Setup"
@@ -15710,7 +15979,8 @@ openmanipulator:
     url: /platform/openmanipulator_main/#openmanipulator-x
   - title : "OpenMANIPULATOR-PRO"
     url: /platform/openmanipulator_main/#openmanipulator-pro
-#OpenMANIPULATOR-X
+    
+#OpenMANIPULATOR-X sidebar
 openmanipulator_x:
   - title: "Overview"
     url: /platform/openmanipulator_x/overview/#overview
@@ -15732,8 +16002,6 @@ openmanipulator_x:
         url: /platform/openmanipulator_x/specification/#hardware-specification
       - title: "Dimension"
         url: /platform/openmanipulator_x/specification/#dimension
-#      - title: "Repeatability"
-#        url: /platform/openmanipulator_x/specification/#repeatability
   - title: "Getting Started"
     url: /platform/openmanipulator_x/getting_started/#getting-started
     children:
@@ -15835,6 +16103,80 @@ openmanipulator_x:
             url: /platform/openmanipulator_x/ros_applications/#install-package
           - title: "Execute Example"
             url: /platform/openmanipulator_x/ros_applications/#execute-example
+  - title: "[ROS 2] Setup"
+    url: /platform/openmanipulator_x/ros2_setup/#ros-setup
+    children:
+      - title: "Install Ubuntu on PC"
+        url: /platform/openmanipulator_x/ros2_setup/#install-ubuntu-on-pc
+      - title: "Install ROS 2 on PC"
+        url: /platform/openmanipulator_x/ros2_setup/#install-ros-2-on-pc
+      - title: "Install ROS 2 Packages"
+        url: /platform/openmanipulator_x/ros2_setup/#install-ros-2-packages
+      - title: "Communication Converter"
+        url: /platform/openmanipulator_x/ros2_setup/#communication-converter
+        children:
+          - title: "U2D2"
+            url: /platform/openmanipulator_x/ros2_setup/#u2d2
+          - title: "OpenCR"
+            url: /platform/openmanipulator_x/ros2_setup/#opencr
+  - title: "[ROS 2] Controller Package"
+    url: /platform/openmanipulator_x/ros2_controller_package/#ros-controller-package
+    children:
+      - title: "Launch Controller"
+        url: /platform/openmanipulator_x/ros2_controller_package/#launch-controller
+      - title: "Check Setting"
+        url: /platform/openmanipulator_x/ros2_controller_package/#check-setting
+        children:
+          - title: "Manipulator Description"
+            url: /platform/openmanipulator_x/ros2_controller_package/#manipulator-description
+          - title: "RViz"
+            url: /platform/openmanipulator_x/ros2_controller_package/#rviz
+      - title: "Message List"
+        url: /platform/openmanipulator_x/ros2_controller_package/#message-list
+  - title: "[ROS 2] Operation"
+    url: /platform/openmanipulator_x/ros2_operation/#ros-operation
+    children:
+      - title: "GUI Program"
+        url: /platform/openmanipulator_x/ros2_operation/#gui-program
+      - title: "Teleoperation"
+        url: /platform/openmanipulator_x/ros2_operation/#teleoperation
+        children:
+          - title: "Keyboard"
+            url: /platform/openmanipulator_x/ros2_operation/#keyboard
+          - title: "PS4 Joystick"
+            url: /platform/openmanipulator_x/ros2_operation/#ps4-joystick
+          - title: "XBOX 360 Joystick"
+            url: /platform/openmanipulator_x/ros2_operation/#xbox-360-joystick
+      - title: "MoveIt!"
+        url: /platform/openmanipulator_x/ros2_operation/#moveit
+  - title: "[ROS 2] Simulation"
+    url: /platform/openmanipulator_x/ros2_simulation/#ros-simulation
+    #children:
+    #  - title: "Launch gazebo"
+    #    url: /platform/openmanipulator_x/ros2_simulation/#launch-gazebo
+    #  - title: "Controller for gazebo"
+    #    url: /platform/openmanipulator_x/ros2_simulation/#controller-for-gazebo
+  - title: "[ROS 2] Applications"
+    url: /platform/openmanipulator_x/ros2_applications/#ros-applications
+    #children:
+    #  - title: "Camera Application"
+    #    url: /platform/openmanipulator_x/ros2_applications/#camera-application
+    #    children:
+    #      - title: "Install Camera Package"
+    #        url: /platform/openmanipulator_x/ros2_applications/#install-camera-package
+    #      - title: "Install AR Marker Package"
+    #        url: /platform/openmanipulator_x/ros2_applications/#install-ar-marker-package
+    #      - title: "Pick and Place Example"
+    #        url: /platform/openmanipulator_x/ros2_applications/#pick-and-place-example
+    #  - title: "Master Slave"
+    #    url: /platform/openmanipulator_x/ros2_applications/#master-slave
+    #    children:
+    #      - title: "Setup of OpenMANIPULATOR-X"
+    #        url: /platform/openmanipulator_x/ros2_applications/#setup-of-openmanipulator-x
+    #      - title: "Install Package"
+    #        url: /platform/openmanipulator_x/ros2_applications/#install-package
+    #      - title: "Execute Example"
+    #        url: /platform/openmanipulator_x/ros2_applications/#execute-example
   - title: "[OpenCR] Setup"
     url: /platform/openmanipulator_x/opencr_setup/#opencr-setup
     children:
@@ -15882,7 +16224,7 @@ openmanipulator_x:
         url: /platform/openmanipulator_x/friends/#openmanipulator-stewart
       - title: "OpenMANIPULATOR Linear"
         url: /platform/openmanipulator_x/friends/#openmanipulator-linear
-
+        
 #OpenManipulator-PRO
 openmanipulator_pro:
   - title: "Overview"
@@ -15930,6 +16272,11 @@ openmanipulator_pro:
             url: /platform/openmanipulator_pro/ros_setup/#ros-kinetic-kame
           - title: "ROS Melodic Morenia"
             url: /platform/openmanipulator_pro/ros_setup/#ros-melodic-morenia
+      - title: "Communication Converter"
+        url: /platform/openmanipulator_pro/ros_setup/#communication-converter
+        children:
+          - title: "U2D2"
+            url: /platform/openmanipulator_pro/ros_setup/#u2d2
       - title: "Install ROS Packages"
         url: /platform/openmanipulator_pro/ros_setup/#install-ros-package
         children:
@@ -15996,7 +16343,50 @@ openmanipulator_pro:
                 url: /platform/openmanipulator_pro/ros_tool_applications/#launch-gazebo
               - title: "Controller for Gazebo"
                 url: /platform/openmanipulator_pro/ros_tool_applications/#controller-for-gazebo
-
+  - title: "[ROS 2] Setup"
+    url: /platform/openmanipulator_pro/ros2_setup/#ros-setup
+    children:
+      - title: "Install Ubuntu on PC"
+        url: /platform/openmanipulator_pro/ros2_setup/#install-ubuntu-on-pc
+      - title: "Install ROS 2 on PC"
+        url: /platform/openmanipulator_pro/ros2_setup/#install-ros-2-on-pc
+      - title: "Install ROS 2 Packages"
+        url: /platform/openmanipulator_pro/ros2_setup/#install-ros-2-packages
+      - title: "Communication Converter"
+        url: /platform/openmanipulator_pro/ros2_setup/#communication-converter
+        children:
+          - title: "U2D2"
+            url: /platform/openmanipulator_pro/ros2_setup/#u2d2
+  - title: "[ROS 2] Controller Package"
+    url: /platform/openmanipulator_pro/ros2_controller_package/#ros-controller-package
+    children:
+      - title: "Launch Controller"
+        url: /platform/openmanipulator_pro/ros2_controller_package/#launch-controller
+      - title: "Check Setting"
+        url: /platform/openmanipulator_pro/ros2_controller_package/#check-setting
+        children:
+          - title: "RViz"
+            url: /platform/openmanipulator_pro/ros2_controller_package/#rviz
+      - title: "Message List"
+        url: /platform/openmanipulator_pro/ros2_controller_package/#message-list
+  - title: "[ROS 2] Operation"
+    url: /platform/openmanipulator_pro/ros2_operation/#ros-operation
+    children:
+      - title: "GUI Program"
+        url: /platform/openmanipulator_pro/ros2_operation/#gui-program
+      - title: "Teleoperation"
+        url: /platform/openmanipulator_pro/ros2_operation/#teleoperation
+      - title: "MoveIt!"
+        url: /platform/openmanipulator_pro/ros2_operation/#moveit
+  - title: "[ROS 2] Simulation"
+    url: /platform/openmanipulator_pro/ros2_simulation/#ros-simulation
+  #  children:
+  #    - title: "Launch gazebo"
+  #      url: /platform/openmanipulator_pro/ros2_simulation/#launch-gazebo
+  #    - title: "Controller for gazebo"
+  #      url: /platform/openmanipulator_pro/ros2_simulation/#controller-for-gazebo
+  - title: "[ROS 2] Tool Applications"
+    url: /platform/openmanipulator_pro/ros2_tool_applications    
 #Manipulator-H
 manipulator_h:
   - title: "Introduction"
@@ -17430,310 +17820,418 @@ rplustask3:
     urlkr: /software/rplustask3/#개요
     children:
     - title: "Compatible Products"
-      titlekr: "호환 제품"
-      url: /software/rplustask3/#compatible-products
-      urlkr: /software/rplustask3/#호환-제품
+      titlekr: "호환 제어기"
+      url: /software/rplustask3/#compatible-controllers
+      urlkr: /software/rplustask3/#호환-제어기
   - title: "Getting Started"
     titlekr: "시작하기"
     url: /software/rplustask3/#getting-started
     urlkr: /software/rplustask3/#시작하기
     children:
-#    - title: "Software Install"
-#      titlekr: "소프트웨어 설치"
-#      url: /software/rplustask3/#software-install
-#      urlkr: /software/rplustask3/#소프트웨어-설치
+    - title: "Software Download"
+      titlekr: "소프트웨어 다운로드"
+      url: /software/rplustask3/#software-download
+      urlkr: /software/rplustask3/#소프트웨어-다운로드
     - title: "Menu Descriptions"
       titlekr: "메뉴 설명"
       url: /software/rplustask3/#menu-descriptions
       urlkr: /software/rplustask3/#메뉴-설명
   - title: "Task Programming"
     titlekr: "태스크 프로그래밍"
-    url: /software/rplustask3/#task-programming
-    urlkr: /software/rplustask3/#태스크-프로그래밍
+    url: /software/rplustask3/task_programming/#task-programming
+    urlkr: /software/rplustask3/task_programming/#태스크-프로그래밍
     children:
     - title: "Create New File"
       titlekr: "새 파일 만들기"
-      url: /software/rplustask3/#create-new-file
-      urlkr: /software/rplustask3/#새-파일-만들기
+      url: /software/rplustask3/task_programming/#create-new-file
+      urlkr: /software/rplustask3/task_programming/#새-파일-만들기
     - title: "Open Task File"
       titlekr: "태스크 예제 열기"
-      url: /software/rplustask3/#open-task-file
-      urlkr: /software/rplustask3/#태스크-예제-열기
+      url: /software/rplustask3/task_programming/#open-task-file
+      urlkr: /software/rplustask3/task_programming/#태스크-예제-열기
     - title: "Insert/Change Instruction"
       titlekr: "명령어 삽입/변경"
-      url: /software/rplustask3/#insertchange-instruction
-      urlkr: /software/rplustask3/#명령어-삽입변경
+      url: /software/rplustask3/task_programming/#insertchange-instruction
+      urlkr: /software/rplustask3/task_programming/#명령어-삽입변경
     - title: "Select Multiple Lines"
       titlekr: "여러 줄 선택"
-      url: /software/rplustask3/#select-multiple-lines
-      urlkr: /software/rplustask3/#여러-줄-선택
+      url: /software/rplustask3/task_programming/#select-multiple-lines
+      urlkr: /software/rplustask3/task_programming/#여러-줄-선택
     - title: "Insert/Delete Line"
       titlekr: "줄 삽입/지우기"
-      url: /software/rplustask3/#insertdelete-line
-      urlkr: /software/rplustask3/#줄-삽입지우기
+      url: /software/rplustask3/task_programming/#insertdelete-line
+      urlkr: /software/rplustask3/task_programming/#줄-삽입지우기
     - title: "Enable/Disable Line"
       titlekr: "줄 활성/비활성"
-      url: /software/rplustask3/#enabledisable-line
-      urlkr: /software/rplustask3/#줄-활성비활성
+      url: /software/rplustask3/task_programming/#enabledisable-line
+      urlkr: /software/rplustask3/task_programming/#줄-활성비활성
     - title: "Copy/Cut/Paste"
       titlekr: "복사/잘라내기/붙여넣기"
-      url: /software/rplustask3/#copycutpaste
-      urlkr: /software/rplustask3/#복사잘라내기붙여넣기
+      url: /software/rplustask3/task_programming/#copycutpaste
+      urlkr: /software/rplustask3/task_programming/#복사잘라내기붙여넣기
     - title: "Undo/Redo"
       titlekr: "실행취소/다시실행"
-      url: /software/rplustask3/#undoredo
-      urlkr: /software/rplustask3/#실행취소다시실행
+      url: /software/rplustask3/task_programming/#undoredo
+      urlkr: /software/rplustask3/task_programming/#실행취소다시실행
     - title: "Download Task Code"
       titlekr: "태스크 다운로드 하기"
-      url: /software/rplustask3/#download-task-code
-      urlkr: /software/rplustask3/#태스크-다운로드-하기
+      url: /software/rplustask3/task_programming/#download-task-code
+      urlkr: /software/rplustask3/task_programming/#태스크-다운로드-하기
     - title: "Print Output"
       titlekr: "프로그램 출력보기"
-      url: /software/rplustask3/#print-output
-      urlkr: /software/rplustask3/#프로그램-출력보기
+      url: /software/rplustask3/task_programming/#print-output
+      urlkr: /software/rplustask3/task_programming/#프로그램-출력보기
   - title: "Task Instructions"
     titlekr: "태스크 명령어"
-    url: /software/rplustask3/#task-instructions
-    urlkr: /software/rplustask3/#태스크-명령어
+    url: /software/rplustask3/task_programming/#task-instructions
+    urlkr: /software/rplustask3/task_programming/#태스크-명령어
     children:
     - title: "Start/End"
       titlekr: "시작과 끝"
-      url: /software/rplustask3/#startend
-      urlkr: /software/rplustask3/#시작과-끝
+      url: /software/rplustask3/task_programming/#startend
+      urlkr: /software/rplustask3/task_programming/#시작과-끝
       children:
       - title: "Start Program"
         titlekr: "프로그램 시작"
-        url: /software/rplustask3/#start-program
-        urlkr: /software/rplustask3/#프로그램-시작
+        url: /software/rplustask3/task_programming/#start-program
+        urlkr: /software/rplustask3/task_programming/#프로그램-시작
       - title: "End Program"
         titlekr: "프로그램 끝"
-        url: /software/rplustask3/#end-program
-        urlkr: /software/rplustask3/#프로그램-끝
+        url: /software/rplustask3/task_programming/#end-program
+        urlkr: /software/rplustask3/task_programming/#프로그램-끝
       - title: "Begin Block / End Block"
         titlekr: "구간 시작 / 구간 끝"
-        url: /software/rplustask3/#begin-block--end-block
-        urlkr: /software/rplustask3/#구간-시작구간-끝
+        url: /software/rplustask3/task_programming/#begin-block--end-block
+        urlkr: /software/rplustask3/task_programming/#구간-시작구간-끝
       - title: "Comment"
         titlekr: "주석"
-        url: /software/rplustask3/#comment
-        urlkr: /software/rplustask3/#주석
+        url: /software/rplustask3/task_programming/#comment
+        urlkr: /software/rplustask3/task_programming/#주석
     - title: "Execute"
       titlekr: "실행문"
-      url: /software/rplustask3/#execute
-      urlkr: /software/rplustask3/#실행문
+      url: /software/rplustask3/task_programming/#execute
+      urlkr: /software/rplustask3/task_programming/#실행문
       children:
       - title: "Compute"
         titlekr: "계산"
-        url: /software/rplustask3/#compute
-        urlkr: /software/rplustask3/#계산
+        url: /software/rplustask3/task_programming/#compute
+        urlkr: /software/rplustask3/task_programming/#계산
       - title: "Load"
         titlekr: "로드"
-        url: /software/rplustask3/#load
-        urlkr: /software/rplustask3/#로드
+        url: /software/rplustask3/task_programming/#load
+        urlkr: /software/rplustask3/task_programming/#로드
       - title: "Math Expression"
         titlekr: "다중 수식"
-        url: /software/rplustask3/#math-expression
-        urlkr: /software/rplustask3/#다중-수식
+        url: /software/rplustask3/task_programming/#math-expression
+        urlkr: /software/rplustask3/task_programming/#다중-수식
       - title: "Lable/Jump"
         titlekr: "레이블/점프"
-        url: /software/rplustask3/#lablejump
-        urlkr: /software/rplustask3/#레이블점프
+        url: /software/rplustask3/task_programming/#lablejump
+        urlkr: /software/rplustask3/task_programming/#레이블점프
     - title: "Condition"
       titlekr: "조건문"
-      url: /software/rplustask3/#condition
-      urlkr: /software/rplustask3/#조건문
+      url: /software/rplustask3/task_programming/#condition
+      urlkr: /software/rplustask3/task_programming/#조건문
       children:
       - title: "Conditional Clause?"
         titlekr: "조건절이란?"
-        url: /software/rplustask3/#conditional-clause
-        urlkr: /software/rplustask3/#조건절이란
+        url: /software/rplustask3/task_programming/#conditional-clause
+        urlkr: /software/rplustask3/task_programming/#조건절이란
       - title: "If"
         titlekr: "만약"
-        url: /software/rplustask3/#if
-        urlkr: /software/rplustask3/#만약
+        url: /software/rplustask3/task_programming/#if
+        urlkr: /software/rplustask3/task_programming/#만약
       - title: "Else If"
         titlekr: "아니면 만약"
-        url: /software/rplustask3/#else-if
-        urlkr: /software/rplustask3/#아니면-만약
+        url: /software/rplustask3/task_programming/#else-if
+        urlkr: /software/rplustask3/task_programming/#아니면-만약
       - title: "Else"
         titlekr: "아니면"
-        url: /software/rplustask3/#else
-        urlkr: /software/rplustask3/#아니면
+        url: /software/rplustask3/task_programming/#else
+        urlkr: /software/rplustask3/task_programming/#아니면
     - title: "Loop"
       titlekr: "반복문"
-      url: /software/rplustask3/#loop
-      urlkr: /software/rplustask3/#반복문
+      url: /software/rplustask3/task_programming/#loop
+      urlkr: /software/rplustask3/task_programming/#반복문
       children:
       - title: "Endless Loop"
         titlekr: "무조건 반복"
-        url: /software/rplustask3/#endless-loop
-        urlkr: /software/rplustask3/#무조건-반복
+        url: /software/rplustask3/task_programming/#endless-loop
+        urlkr: /software/rplustask3/task_programming/#무조건-반복
       - title: "Loop While"
         titlekr: "조건 반복"
-        url: /software/rplustask3/#loop-while
-        urlkr: /software/rplustask3/#조건-반복
+        url: /software/rplustask3/task_programming/#loop-while
+        urlkr: /software/rplustask3/task_programming/#조건-반복
       - title: "Loop For"
         titlekr: "횟수 반복"
-        url: /software/rplustask3/#loop-for
-        urlkr: /software/rplustask3/#횟수-반복
+        url: /software/rplustask3/task_programming/#loop-for
+        urlkr: /software/rplustask3/task_programming/#횟수-반복
       - title: "Wait While"
         titlekr: "조건 대기"
-        url: /software/rplustask3/#wait-while
-        urlkr: /software/rplustask3/#조건-대기
+        url: /software/rplustask3/task_programming/#wait-while
+        urlkr: /software/rplustask3/task_programming/#조건-대기
       - title: "Break Loop"
         titlekr: "반복 끝내기"
-        url: /software/rplustask3/#break-loop
-        urlkr: /software/rplustask3/#반복-끝내기
+        url: /software/rplustask3/task_programming/#break-loop
+        urlkr: /software/rplustask3/task_programming/#반복-끝내기
     - title: "Function(Sub-Routine)"
       titlekr: "함수(서브루틴)"
-      url: /software/rplustask3/#functionsub-routine
-      urlkr: /software/rplustask3/#함수서브루틴
+      url: /software/rplustask3/task_programming/#functionsub-routine
+      urlkr: /software/rplustask3/task_programming/#함수서브루틴
       children:
       - title: "Function/Call"
         titlekr: "함수/호출"
-        url: /software/rplustask3/#functioncall
-        urlkr: /software/rplustask3/#함수호출
+        url: /software/rplustask3/task_programming/#functioncall
+        urlkr: /software/rplustask3/task_programming/#함수호출
       - title: "Return"
         titlekr: "복귀"
-        url: /software/rplustask3/#return
-        urlkr: /software/rplustask3/#복귀
+        url: /software/rplustask3/task_programming/#return
+        urlkr: /software/rplustask3/task_programming/#복귀
       - title: "Callback"
         titlekr: "콜백"
-        url: /software/rplustask3/#callback
-        urlkr: /software/rplustask3/#콜백
+        url: /software/rplustask3/task_programming/#callback
+        urlkr: /software/rplustask3/task_programming/#콜백
   - title: "Task Parameters"
     titlekr: "태스크 파라미터"
-    url: /software/rplustask3/#task-parameters
-    urlkr: /software/rplustask3/#태스크-파라미터
+    url: /software/rplustask3/task_programming/#task-parameters
+    urlkr: /software/rplustask3/task_programming/#태스크-파라미터
     children:
     - title: "Port Nickname"
       titlekr: "포트 닉네임 변경"
-      url: /software/rplustask3/#port-nickname
-      urlkr: /software/rplustask3/#포트-닉네임-변경
+      url: /software/rplustask3/task_programming/#port-nickname
+      urlkr: /software/rplustask3/task_programming/#포트-닉네임-변경
     - title: "Controllers"
       titlekr: "제어기 장치"
-      url: /software/rplustask3/#controllers
-      urlkr: /software/rplustask3/#제어기-장치
-    - title: "Dynamixel"
+      url: /software/rplustask3/task_programming/#controllers
+      urlkr: /software/rplustask3/task_programming/#제어기-장치
+      children:
+      - title: ""
+        titlekr: "주변 장치"
+        url: /software/rplustask3/task_programming/#
+        urlkr: /software/rplustask3/task_programming/#주변-장치
+      - title: ""
+        titlekr: "모션 제어"
+        url: /software/rplustask3/task_programming/#
+        urlkr: /software/rplustask3/task_programming/#모션-제어
+      - title: ""
+        titlekr: "내장 센서"
+        url: /software/rplustask3/task_programming/#
+        urlkr: /software/rplustask3/task_programming/#내장-센서
+      - title: ""
+        titlekr: "버저"
+        url: /software/rplustask3/task_programming/#
+        urlkr: /software/rplustask3/task_programming/#버저
+      - title: ""
+        titlekr: "리모컨"
+        url: /software/rplustask3/task_programming/#
+        urlkr: /software/rplustask3/task_programming/#리모컨
+      - title: ""
+        titlekr: "타이머"
+        url: /software/rplustask3/task_programming/#
+        urlkr: /software/rplustask3/task_programming/#타이머
+      - title: ""
+        titlekr: "기타"
+        url: /software/rplustask3/task_programming/#
+        urlkr: /software/rplustask3/task_programming/#제어기-기타
+      - title: ""
+        titlekr: "직접 입력"
+        url: /software/rplustask3/task_programming/#
+        urlkr: /software/rplustask3/task_programming/#제어기-직접-입력
+    - title: "DYNAMIXEL Device"
       titlekr: "다이나믹셀 장치"
-      url: /software/rplustask3/#dynamixel
-      urlkr: /software/rplustask3/#다이나믹셀-장치
+      url: /software/rplustask3/task_programming/#dynamixel-device
+      urlkr: /software/rplustask3/task_programming/#다이나믹셀-장치
+      children:
+      - title: "DYNAMIXEL"
+        titlekr: "다이나믹셀"
+        url: /software/rplustask3/task_programming/#dynamixel
+        urlkr: /software/rplustask3/task_programming/#다이나믹셀
+      - title: "SyncWrite"
+        titlekr: "SyncWrite"
+        url: /software/rplustask3/task_programming/#syncwrite
+        urlkr: /software/rplustask3/task_programming/#syncwrite
+      - title: ""
+        titlekr: "적외선 센서 어레이"
+        url: /software/rplustask3/task_programming/#
+        urlkr: /software/rplustask3/task_programming/#적외선-센서-어레이
+      - title: ""
+        titlekr: "직접 입력"
+        url: /software/rplustask3/task_programming/#
+        urlkr: /software/rplustask3/task_programming/#다이나믹셀-장치-직접-입력
     - titlekr: "스마트 장치"
-      urlkr: /software/rplustask3/#스마트-장치
+      urlkr: /software/rplustask3/task_programming/#스마트-장치
+      children:
+      - title: ""
+        titlekr: "카메라"
+        url: /software/rplustask3/task_programming/#
+        urlkr: /software/rplustask3/task_programming/#카메라
+      - title: ""
+        titlekr: "비전"
+        url: /software/rplustask3/task_programming/#
+        urlkr: /software/rplustask3/task_programming/#비전
+      - title: ""
+        titlekr: "표시"
+        url: /software/rplustask3/task_programming/#
+        urlkr: /software/rplustask3/task_programming/#표시
+      - title: ""
+        titlekr: "멀티미디어"
+        url: /software/rplustask3/task_programming/#
+        urlkr: /software/rplustask3/task_programming/#멀티미디어
+      - title: ""
+        titlekr: "센서"
+        url: /software/rplustask3/task_programming/#
+        urlkr: /software/rplustask3/task_programming/#센서
+      - title: ""
+        titlekr: "기타"
+        url: /software/rplustask3/task_programming/#
+        urlkr: /software/rplustask3/task_programming/#스마트-장치-기타
+      - title: ""
+        titlekr: "사용자 데이터"
+        url: /software/rplustask3/task_programming/#
+        urlkr: /software/rplustask3/task_programming/#사용자-데이터
+      - title: ""
+        titlekr: "직접 입력"
+        url: /software/rplustask3/task_programming/#
+        urlkr: /software/rplustask3/task_programming/#스마트-장치-직접-입력
     - title: "Common"
       titlekr: "공통"
-      url: /software/rplustask3/#common
-      urlkr: /software/rplustask3/#공통
+      url: /software/rplustask3/task_programming/#common
+      urlkr: /software/rplustask3/task_programming/#공통
+      children:
+      - title: ""
+        titlekr: "변수"
+        url: /software/rplustask3/task_programming/#
+        urlkr: /software/rplustask3/task_programming/#변수
+      - title: ""
+        titlekr: "숫자"
+        url: /software/rplustask3/task_programming/#
+        urlkr: /software/rplustask3/task_programming/#숫자
+      - title: ""
+        titlekr: "참/거짓"
+        url: /software/rplustask3/task_programming/#
+        urlkr: /software/rplustask3/task_programming/#참거짓
+      - title: ""
+        titlekr: "2진수 숫자"
+        url: /software/rplustask3/task_programming/#
+        urlkr: /software/rplustask3/task_programming/#2진수-숫자
+      - title: ""
+        titlekr: "모터 모드"
+        url: /software/rplustask3/task_programming/#
+        urlkr: /software/rplustask3/task_programming/#모터-모드
+    - title: ""
+      titlekr: "모션 목록"
+      url: /software/rplustask3/task_programming/#
+      urlkr: /software/rplustask3/task_programming/#모션-목록
   - title: "Motion Programming"
     titlekr: "모션 프로그래밍"
-    url: /software/rplustask3/#motion-programming
-    urlkr: /software/rplustask3/#모션-프로그래밍
+    url: /software/rplustask3/motion_programming/#motion-programming
+    urlkr: /software/rplustask3/motion_programming/#모션-프로그래밍
     children:
     - title: "Open Motion File"
       titlekr: "모션 예제 열기"
-      url: /software/rplustask3/#open-motion-file
-      urlkr: /software/rplustask3/#모션-예제-열기
+      url: /software/rplustask3/motion_programming/#open-motion-file
+      urlkr: /software/rplustask3/motion_programming/#모션-예제-열기
     - title: ""
       titlekr: "로봇 연결하기"
-      url: /software/rplustask3/#
-      urlkr: /software/rplustask3/#로봇-연결하기
+      url: /software/rplustask3/motion_programming/#
+      urlkr: /software/rplustask3/motion_programming/#로봇-연결하기
     - title: ""
       titlekr: "새 모션 유닛 만들기"
-      url: /software/rplustask3/#
-      urlkr: /software/rplustask3/#새-모션-유닛-만들기
+      url: /software/rplustask3/motion_programming/#
+      urlkr: /software/rplustask3/motion_programming/#새-모션-유닛-만들기
     - title: ""
       titlekr: "모션 유닛 편집하기"
-      url: /software/rplustask3/#
-      urlkr: /software/rplustask3/#모션-유닛-편집하기
+      url: /software/rplustask3/motion_programming/#
+      urlkr: /software/rplustask3/motion_programming/#모션-유닛-편집하기
     - title: ""
       titlekr: "새 모션 만들기"
-      url: /software/rplustask3/#
-      urlkr: /software/rplustask3/#새-모션-만들기
+      url: /software/rplustask3/motion_programming/#
+      urlkr: /software/rplustask3/motion_programming/#새-모션-만들기
     - title: ""
       titlekr: "모션 편집하기"
-      url: /software/rplustask3/#
-      urlkr: /software/rplustask3/#모션-편집하기
+      url: /software/rplustask3/motion_programming/#
+      urlkr: /software/rplustask3/motion_programming/#모션-편집하기
     - title: ""
       titlekr: "모션 그룹 만들기"
-      url: /software/rplustask3/#
-      urlkr: /software/rplustask3/#모션-그룹-만들기
+      url: /software/rplustask3/motion_programming/#
+      urlkr: /software/rplustask3/motion_programming/#모션-그룹-만들기
     - title: ""
       titlekr: "모션 다운로드 하기"
-      url: /software/rplustask3/#
-      urlkr: /software/rplustask3/#모션-다운로드-하기
+      url: /software/rplustask3/motion_programming/#
+      urlkr: /software/rplustask3/motion_programming/#모션-다운로드-하기
     - title: ""
       titlekr: "모션 저장하기"
-      url: /software/rplustask3/#
-      urlkr: /software/rplustask3/#모션-저장하기
+      url: /software/rplustask3/motion_programming/#
+      urlkr: /software/rplustask3/motion_programming/#모션-저장하기
   - title: "Useful Tips"
     titlekr: "유용한 정보"
-    url: /software/rplustask3/#useful-tips
-    urlkr: /software/rplustask3/#유용한-정보
+    url: /software/rplustask3/useful_tips/#useful-tips
+    urlkr: /software/rplustask3/useful_tips/#유용한-정보
     children:
     - title: "Search Variables/Functions"
       titlekr: "변수, 함수 참조 찾기"
-      url: /software/rplustask3/#search-variablesfunctions
-      urlkr: /software/rplustask3/#변수-함수-참조-찾기
+      url: /software/rplustask3/useful_tips/#search-variablesfunctions
+      urlkr: /software/rplustask3/useful_tips/#변수-함수-참조-찾기
     - title: "Search Keyword"
       titlekr: "키워드 찾기"
-      url: /software/rplustask3/#search-keyword
-      urlkr: /software/rplustask3/#키워드-찾기
+      url: /software/rplustask3/useful_tips/#search-keyword
+      urlkr: /software/rplustask3/useful_tips/#키워드-찾기
     - title: "Grammar/Compile Check"
       titlekr: "문법검사/컴파일 결과 확인하기"
-      url: /software/rplustask3/#grammarcompile-check
-      urlkr: /software/rplustask3/#문법검사컴파일-결과-확인하기
+      url: /software/rplustask3/useful_tips/#grammarcompile-check
+      urlkr: /software/rplustask3/useful_tips/#문법검사컴파일-결과-확인하기
     - title: ""
       titlekr: "키프레임"
-      url: /software/rplustask3/#
-      urlkr: /software/rplustask3/#키프레임
+      url: /software/rplustask3/useful_tips/#
+      urlkr: /software/rplustask3/useful_tips/#키프레임
     - title: ""
       titlekr: "음원재생"
-      url: /software/rplustask3/#
-      urlkr: /software/rplustask3/#음원-재생
+      url: /software/rplustask3/useful_tips/#
+      urlkr: /software/rplustask3/useful_tips/#음원-재생
     - title: ""
       titlekr: "자유 형태 로봇 생성"
-      url: /software/rplustask3/#
-      urlkr: /software/rplustask3/#자유-형태-로봇-생성
+      url: /software/rplustask3/useful_tips/#
+      urlkr: /software/rplustask3/useful_tips/#자유-형태-로봇-생성
     - title: ""
       titlekr: "3D 로봇 변경"
-      url: /software/rplustask3/#
-      urlkr: /software/rplustask3/#3d-로봇-변경
+      url: /software/rplustask3/useful_tips/#
+      urlkr: /software/rplustask3/useful_tips/#3d-로봇-변경
     - title: ""
       titlekr: "포즈 미러링"
-      url: /software/rplustask3/#
-      urlkr: /software/rplustask3/#포즈-미러링
+      url: /software/rplustask3/useful_tips/#
+      urlkr: /software/rplustask3/useful_tips/#포즈-미러링
     - title: ""
       titlekr: "모션 호출 번호 수정"
-      url: /software/rplustask3/#
-      urlkr: /software/rplustask3/#모션-호출-번호-수정
+      url: /software/rplustask3/useful_tips/#
+      urlkr: /software/rplustask3/useful_tips/#모션-호출-번호-수정
     - title: ""
       titlekr: "모션 파일간 데이터 복사"
-      url: /software/rplustask3/#
-      urlkr: /software/rplustask3/#모션-파일간-데이터-복사
+      url: /software/rplustask3/useful_tips/#
+      urlkr: /software/rplustask3/useful_tips/#모션-파일간-데이터-복사
     - title: ""
       titlekr: "오프셋 편집"
-      url: /software/rplustask3/#
-      urlkr: /software/rplustask3/#오프셋-편집
+      url: /software/rplustask3/useful_tips/#
+      urlkr: /software/rplustask3/useful_tips/#오프셋-편집
     - title: ""
       titlekr: "구 버전 파일 변환하기"
-      url: /software/rplustask3/#
-      urlkr: /software/rplustask3/#구-버전-파일mtn-변환하기
+      url: /software/rplustask3/useful_tips/#
+      urlkr: /software/rplustask3/useful_tips/#구-버전-파일mtn-변환하기
     - title: ""
       titlekr: "3D 카메라 조작"
-      url: /software/rplustask3/#
-      urlkr: /software/rplustask3/#3d-카메라-조작
+      url: /software/rplustask3/useful_tips/#
+      urlkr: /software/rplustask3/useful_tips/#3d-카메라-조작
     - title: ""
       titlekr: "화면에 각도 출력하기"
-      url: /software/rplustask3/#
-      urlkr: /software/rplustask3/#화면에-각도-출력하기
+      url: /software/rplustask3/useful_tips/#
+      urlkr: /software/rplustask3/useful_tips/#화면에-각도-출력하기
     - title: ""
       titlekr: "배경이미지 지정"
-      url: /software/rplustask3/#
-      urlkr: /software/rplustask3/#배경이미지-지정
+      url: /software/rplustask3/useful_tips/#
+      urlkr: /software/rplustask3/useful_tips/#배경이미지-지정
     - title: ""
       titlekr: "초기위치 이동"
-      url: /software/rplustask3/#
-      urlkr: /software/rplustask3/#초기위치-이동
+      url: /software/rplustask3/useful_tips/#
+      urlkr: /software/rplustask3/useful_tips/#초기위치-이동
 
 
 #R+ Motion 2.0 sidebar
@@ -19784,6 +20282,55 @@ embedded_c_cm530:
         url: /software/embedded_sdk/embedded_c_cm530/#rc-100zigbee
         urlkr: /software/embedded_sdk/embedded_c_cm530/#rc100과-zigbee
 
+#Controller Compatibility sidebar
+controller_compatibility:
+  - title: "Supported Baudrates for DYNAMIXEL"
+    titlekr: "다이나믹셀을 지원하는 통신속도"
+    url: /parts/controller/controller_compatibility/#supported-baudrates-for-dynamixel
+    urlkr: /parts/controller/controller_compatibility/#다이나믹셀을-지원하는-통신속도
+  - title: "Compatibility Table"
+    titlekr: "호환표"
+    url: /parts/controller/controller_compatibility/#compatibility-table
+    urlkr: /parts/controller/controller_compatibility/#호환표
+    children:
+    - title: "DYNAMIXEL"
+      titlekr: "다이나믹셀 호환표"
+      url: /parts/controller/controller_compatibility/#dynamixel
+      urlkr: /parts/controller/controller_compatibility/#다이나믹셀-호환표
+    - title: "Parts"
+      titlekr: "부품 호환표"
+      url: /parts/controller/controller_compatibility/#parts
+      urlkr: /parts/controller/controller_compatibility/#부품-호환표
+    - title: "Software"
+      titlekr: "소프트웨어 호환표"
+      url: /parts/controller/controller_compatibility/#software
+      urlkr: /parts/controller/controller_compatibility/#소프트웨어-호환표
+      children:
+      - title: "R+ 1.0"
+        titlekr: "로보플러스 1.0"      
+        url: /parts/controller/controller_compatibility/#r-10
+        urlkr: /parts/controller/controller_compatibility/#로보플러스-10
+      - title: "R+ 2.0"
+        titlekr: "로보플러스 2.0"
+        url: /parts/controller/controller_compatibility/#r-20
+        urlkr: /parts/controller/controller_compatibility/#로보플러스-20
+      - title: "R+ 3.0"
+        titlekr: "로보플러스 3.0"
+        url: /parts/controller/controller_compatibility/#r-30
+        urlkr: /parts/controller/controller_compatibility/#로보플러스-30
+      - title: "R+Mobile"
+        titlekr: "로보플러스 모바일"
+        url: /parts/controller/controller_compatibility/#r-mobile
+        urlkr: /parts/controller/controller_compatibility/#로보플러스-모바일
+      - title: "R+ Mobile (STEAM KIT)"
+        titlekr: "로보플러스 모바일 (교육키트)"
+        url: /parts/controller/controller_compatibility/#r-mobile-steam-kit
+        urlkr: /parts/controller/controller_compatibility/#로보플러스-모바일-교육키트
+      - titlekr: "etc"
+        titlekr: "기타 소프트웨어"
+        url: /parts/controller/controller_compatibility/#etc
+        urlkr: /parts/controller/controller_compatibility/#기타-소프트웨어
+          
 #CM-50 Controller sidebar
 cm-50:
   - title: "Introduction"
@@ -21470,7 +22017,7 @@ faq:
 #FAQ Protocol Compatibility Table
 faq_protocol_compatibility_table:
   - title: "Protocol Compatibitily"
-    url: /docs/en/faq/faq_protocol_compatibility_table
+    url: /faq/faq_protocol_compatibility_table
 
 #FAQ Platform
 faq_platform:

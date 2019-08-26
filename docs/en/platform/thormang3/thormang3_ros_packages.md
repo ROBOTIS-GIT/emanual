@@ -9,6 +9,8 @@ permalink: /docs/en/platform/thormang3/thormang3_ros_packages/
 sidebar:
   title: THORMANG3
   nav: "thormang3"
+product_group: thormang3
+page_number: 4
 ---
 
 <div style="counter-reset: h1 3"></div>
@@ -2022,17 +2024,17 @@ It is strongly advised that when user tests user’s own newly-created or edited
 The below table shows the contents of the default action file.  
 
 | page number | page title | brief description of page                             | number of pages |
-|:-----------:|:----------:|-------------------------------------------------------|:---------------:|
+|:-----------:|:----------:|:------------------------------------------------------|:---------------:|
 |      1      | walki_init | initial standing pose                                 |        1        |
-|      2      |    hello   | greeting                                              |        1        |
-|      3      |  thank_you | Thank you                                             |        1        |
-|      4      |     yes    | yes                                                   |        1        |
-|      5      |      no    | no                                                    |        1        |
+|      2      |   hello    | greeting                                              |        1        |
+|      3      | thank_you  | Thank you                                             |        1        |
+|      4      |    yes     | yes                                                   |        1        |
+|      5      |     no     | no                                                    |        1        |
 |      6      |  fighting  | fighting                                              |        1        |
 |      7      |    clap    | clap                                                  |        2        |
 |      9      |   S_H_RE   | ready for shaking hands                               |        1        |
-|     10      |     S_H    | shaking hands                                         |        1        |
-|     11      |   S_H_END  | move to initialpose fram ready pose for shaking hands |        1        |
+|     10      |    S_H     | shaking hands                                         |        1        |
+|     11      |  S_H_END   | move to initialpose fram ready pose for shaking hands |        1        |
 |     12      |  scanning  | looking around                                        |        1        |
 |     13      |  ceremony  | ceremony                                              |        1        |
 
