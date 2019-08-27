@@ -17,7 +17,11 @@ page_number: 29
 
 # [Learn](#learn)
 
+<<<<<<< HEAD
 ## [AWS RoboMaker with Turtlebot3](#aws-robomaker-with-turtlebot3)
+=======
+## [AWS RoboMaker with Turtlebot3](#turtlebot3-aws-robomaker)
+>>>>>>> 631cb700795a8f2bdf91c306f7d0901e3ebe9edb
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/U1ukEpzKCYY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
