@@ -17,6 +17,23 @@ page_number: 29
 
 # [Learn](#learn)
 
+## [AWS RoboMaker with Turtlebot3](#turtlebot3-aws-robomaker)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/U1ukEpzKCYY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[AWS RoboMaker][aws_robomaker] is a service that makes it easy to develop, test, and deploy intelligent robotics applications at scale. RoboMaker extends the most widely used open-source robotics software framework, Robot Operating System (ROS), with connectivity to cloud services. This includes AWS machine learning services, monitoring services, and analytics services that enable a robot to stream data, navigate, communicate, comprehend, and learn. RoboMaker provides a robotics development environment for application development, a robotics simulation service to accelerate application testing, and a robotics fleet management service for remote application deployment, update, and management.  
+  
+| [Developer Guide][aws_robomaker_dev_guide]  
+
+### AWS RoboMaker example with Turtlebot3  
+[AWS RoboMaker – Develop, Test, Deploy, and Manage Intelligent Robotics Apps][aws_robomaker_example]  
+
+![](/assets/images/platform/turtlebot3/projects/robo_library_gazebo_1.gif)
+
+### AWS RoboMaker Reinforcement Learning example with Turtlebot3
+[How to Train a Robot Using Reinforcement Learning][aws_robomaker_ml_example]
+
+
 ## [The Construct](#the-construct)
 
 This **MASTERING WITH ROS: TurtleBot3** lecture is made by [the Construct](http://www.theconstructsim.com/). Within this Course, you are going to learn how you can start working with the TurtleBot3 robot, explore its functionalitities, and how to build interesting ROS applications. If you want to learn more about ROS, please check the [ROBOT IGNITE ACADEMY](http://www.theconstructsim.com/construct-learn-develop-robots-using-ros/robotigniteacademy_learnros/) that contains series of online ROS tutorials tied to online simulations, giving you the tools and knowledge to understand and create any ROS based robotics development.
@@ -92,3 +109,8 @@ From the basic concept to practical robot application programming!
 - [ROS Robot Programming (Chinese, Free PDF)](http://community.robotsource.org/t/download-the-ros-robot-programming-book-for-free/51)
 - [ROS Robot Programming (Japanese)](http://amzn.asia/79RXhOi)
 - [ROS Robot Programming (Korean)](http://book.naver.com/bookdb/book_detail.nhn?bid=12443870)
+
+[aws_robomaker]: https://aws.amazon.com/robomaker/?nc1=h_ls
+[aws_robomaker_example]: https://aws.amazon.com/blogs/aws/aws-robomaker-develop-test-deploy-and-manage-intelligent-robotics-apps/
+[aws_robomaker_ml_example]: https://aws.amazon.com/robomaker/resources/train-a-robot-using-reinforcement-learning-project/
+[aws_robomaker_dev_guide]: https://docs.aws.amazon.com/robomaker/latest/dg/what-is-robomaker.html

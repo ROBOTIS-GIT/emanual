@@ -4,4 +4,4 @@ If Input Voltage Error Bit(0x10) is configured in the [Shutdown(63)], [Torque En
 
 |     Unit      | Value Range |
 |:-------------:|:-----------:|
-| about 0.1 [V] |   0 ~ 350   |
+| about 0.1 [V] |  150 ~ 350  |

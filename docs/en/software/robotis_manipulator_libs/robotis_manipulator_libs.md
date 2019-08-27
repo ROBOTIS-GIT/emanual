@@ -21,7 +21,7 @@ The robotis_manipulator package is supported in ROS and OpenCR environments. Use
 
 ## [ROS Package](#ros-package)
 
-**NOTE** : The following instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+**NOTE** : The test is done on `ROS Kinetic Kame` installed in `Ubuntu 16.04`.
 {: .notice--info}
 
 ### [Install Ubuntu on PC](#install-ubuntu-on-pc)

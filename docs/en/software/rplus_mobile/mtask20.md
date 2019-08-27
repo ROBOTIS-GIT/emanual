@@ -390,7 +390,7 @@ When try downloading or tapping `Error` button will perform the procedure automa
 
 Task files written in the PC can be copied into Android devices.
 
-1. Use USB cable to connect Android device to PC (Proper Android drivers have to be preinstalled on PC).
+1. Use USB cable to connect Android device to PC (Proper Android drivers have to be installed on PC).
 2. Go to file explorer and open the Android Device.
 3. Open the `RoboPlus` folder. (If `RoboPlus` folder does not exist, create the folder manually.)
 4. Copy the task file(\*.tsk) into the `RoboPlus` folder.
@@ -404,7 +404,7 @@ Task files written in the PC can be copied into Android devices.
 
 Task files written in the PC can be copied into iOS devices.
 
-1. Use USB cable to connect iOS device to PC (Proper drivers have to be preinstalled on PC).
+1. Use USB cable to connect iOS device to PC (Proper drivers have to be installed on PC).
 2. Launch iTunes on PC.
 
     ![](/assets/images/sw/rplus_mobile/r+m_task2_54_kr.gif)

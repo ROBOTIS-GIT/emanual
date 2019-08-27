@@ -53,7 +53,7 @@ The following features are provided with DYNAMIXEL Wizard 2.0.
 
 Firmware is a fundamental program to operate the hardware device.
 It is recommended to keep the firmware updated because it contains various communication regulations to exchange data with other devices such as computers or smartphones.
-Although almost all ROBOTIS products are shipped with preinstalled firmwares, new firmwares can be released for updated features or bug fixes.
+Although almost all ROBOTIS products are shipped with installed firmwares, new firmwares can be released for updated features or bug fixes.
 
 ## [Importance of Firmware Update](#importance-of-firmware-update)
 

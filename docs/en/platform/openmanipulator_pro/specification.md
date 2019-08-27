@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_pro/specification/
 sidebar:
-  title: OpenMANIPULATOR-PRO
+  title: "[ROS1] OpenMANIPULATOR-PRO"
   nav: "openmanipulator_pro"
 product_group: openmanipulator_pro
 page_number: 2
