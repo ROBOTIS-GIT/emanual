@@ -17882,34 +17882,34 @@ rplustask3:
       titlekr: "포트 닉네임 변경"
       url: /software/rplustask3/task_programming/#port-nickname
       urlkr: /software/rplustask3/task_programming/#포트-닉네임-변경
-    - title: "Controllers"
+    - title: "Controller Device"
       titlekr: "제어기 장치"
-      url: /software/rplustask3/task_programming/#controllers
+      url: /software/rplustask3/task_programming/#controller-device
       urlkr: /software/rplustask3/task_programming/#제어기-장치
       children:
-      - title: ""
+      - title: "Accessory Device"
         titlekr: "주변 장치"
-        url: /software/rplustask3/task_programming/#
+        url: /software/rplustask3/task_programming/#accessory-device
         urlkr: /software/rplustask3/task_programming/#주변-장치
-      - title: ""
+      - title: "Motion Control"
         titlekr: "모션 제어"
-        url: /software/rplustask3/task_programming/#
+        url: /software/rplustask3/task_programming/#motion-control
         urlkr: /software/rplustask3/task_programming/#모션-제어
-      - title: ""
+      - title: "Built-in Sensor"
         titlekr: "내장 센서"
-        url: /software/rplustask3/task_programming/#
+        url: /software/rplustask3/task_programming/#built-in-sensor
         urlkr: /software/rplustask3/task_programming/#내장-센서
-      - title: ""
+      - title: "Buzzer"
         titlekr: "버저"
-        url: /software/rplustask3/task_programming/#
+        url: /software/rplustask3/task_programming/#buzzer
         urlkr: /software/rplustask3/task_programming/#버저
-      - title: ""
+      - title: "Remote Controller"
         titlekr: "리모컨"
-        url: /software/rplustask3/task_programming/#
+        url: /software/rplustask3/task_programming/#remote-controller
         urlkr: /software/rplustask3/task_programming/#리모컨
-      - title: ""
+      - title: "Timer"
         titlekr: "타이머"
-        url: /software/rplustask3/task_programming/#
+        url: /software/rplustask3/task_programming/#timer
         urlkr: /software/rplustask3/task_programming/#타이머
       - title: ""
         titlekr: "기타"

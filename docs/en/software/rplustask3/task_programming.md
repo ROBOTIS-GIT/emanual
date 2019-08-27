@@ -270,7 +270,7 @@ This instruction controls the flow of program based on the True/False result of 
 
 ![](/assets/images/sw/rplus_task3/task3_043.png)
 
-### Conditional Clause
+### [Conditional Clause](#conditional-clause)
 
 - A conditional clause returns the computation result as either true or false.
 - Below are the comparison operators that can be used inside the parenthesis.
@@ -323,472 +323,525 @@ Begin / End Blocks can be omitted when there's only one instruction in the block
 
 ![](/assets/images/sw/rplus_task3/task3_049.png)
 
-### [else](#else)
+### [Else](#else)
 
-- “만약”과 “아니면 만약”의 조건 어디에도 해당되지 않을 경우 실행합니다.
-- 반드시 처음 조건으로 만약 구문이 존재해야 합니다.
-- C언어의 else와 같은 개념입니다.
-- 아래는 만약과 아니면 을 사용하여 “변수 값이 100과 같으면?”과 “변수 값이 100과 다르면”을 모두 판단하는 예제입니다.
+- If neither `IF` nor `ELSE IF` statement are true, `ELSE` block will be executed.
+- The `ELSE` block must be used after `IF` or `ELSE IF` block.
 
-  ![](/assets/images/sw/rplus_task3/task3_050.png)
+The following is an example of using `IF`, `ELSE IF`, and `ELSE` blocks.
 
-- 그림과 같이 실행할 코드가 한 줄일 경우 구간 기호를 생략할 수 있습니다.
+![](/assets/images/sw/rplus_task3/task3_050.png)
 
-  ![](/assets/images/sw/rplus_task3/task3_051.png)
+Begin / End Blocks can be omitted when there's only one instruction in the block.
 
-## [반복문](#반복문)
+![](/assets/images/sw/rplus_task3/task3_051.png)
 
-프로그램에서 여러 번 반복적인 수행이 필요한 경우 사용하는 명령어입니다. 반복 구간과 반복 조건을 설정하여 다양한 방법으로 반복을 설정할 수 있습니다. 자세한 설명은 하위 항목을 참고하세요.
+## [Loop](#loop)
+
+This instruction is used when the program needs to repeat a specific behavior or to run an instruction multiple times.  
+The Loop blocks can be configured in various ways by setting a specific condition.
 
 ![](/assets/images/sw/rplus_task3/task3_052.png)
 
-### [무조건 반복](#무조건-반복)
+### [Endless Loop](#endless-loop)
 
-- 무조건 반복의 구간 시작과 끝 사이를 계속해서 반복 실행합니다.
-- “반복 끝내기”를 사용하여 반복 도중에 빠져나올 수 있습니다.
-- C언어의 while(1)과 같은 개념입니다.
-- 아래는 무조건 반복을 사용하여 화면에 숫자 100을 출력하는 예제입니다. 무조건 반복의 구간 내에서 화면 출력을 진행하기 때문에 멈추지 않고 실행됩니다.
+- The code in the `ENDLESS LOOP` block will repeatedly be executed.
+- The `BREAK LOOP` instruction can be used to end the repetition.
 
-  ![](/assets/images/sw/rplus_task3/task3_053.png)
+The following is an example of using Endless Loop to print the number 100 on the screen. The `Print Screen with Line` command is placed in the `ENDLESS LOOP` block.
 
-- 그림과 같이 실행할 코드가 한 줄일 경우 구간 기호를 생략할 수 있습니다.
+![](/assets/images/sw/rplus_task3/task3_053.png)
 
-  ![](/assets/images/sw/rplus_task3/task3_054.png)
+Begin / End Blocks can be omitted when there's only one instruction in the block.
 
-### [조건 반복](#조건-반복)
+![](/assets/images/sw/rplus_task3/task3_054.png)
 
-- 조건절이 만족하는 동안 구간 시작과 끝 사이를 반복 실행합니다.
-- 조건절에는 조건문과 마찬가지로 복합 조건절을 사용할 수 있습니다.
-- “반복 끝내기”를 사용하여 반복 도중에 빠져나올 수 있습니다.
-- C언어의 while(조건절)과 같은 개념입니다.
-- 아래는 조건 반복을 활용하여 1.024초 동안만 화면에 숫자 100을 출력하는 예제입니다.
+### [Loop While](#loop-while)
 
-  ![](/assets/images/sw/rplus_task3/task3_055.png)
+- The code in the `LOOP WHILE` block will repeatedly be executed as long as the condition meets.
+- Just like the `Condition` instructions, multiple conditional clauses can be combined.
+- The `BREAK LOOP` instruction can be used to end the repetition.
 
-- 아래는 조건 반복과 변수를 활용하여 10회 동안만 화면에 숫자 100을 출력하는 예제입니다.
+The following is an example of using `LOOP WHILE` to print the number 100 on the screen for 1.024 seconds.
 
-  ![](/assets/images/sw/rplus_task3/task3_056.png)
+![](/assets/images/sw/rplus_task3/task3_055.png)
 
-### [횟수 반복](#횟수-반복)
+The following is an example of using `LOOP WHILE` and a variable to print the number 100 for 10 times.
 
-- 구간 시작과 끝 사이를 정해진 횟수만큼 반복 실행합니다.
-- 구간의 끝에 도달할 때마다 설정한 변수의 값이 1씩 증가됩니다.
-- “반복 끝내기”를 사용하여 반복 도중에 빠져나올 수 있습니다.
-- 반복 횟수 수식 : 반복 횟수 = 끝 값 – 시작 값 + 1
-- C언어의 for와 같은 개념입니다.
-- 아래는 횟수 반복을 사용하여 10번동안 화면에 숫자를 출력하는 예제입니다.
+![](/assets/images/sw/rplus_task3/task3_056.png)
 
-  ![](/assets/images/sw/rplus_task3/task3_057.png)
+### [Loop For](#loop-for)
 
-- 아래는 횟수 반복에 사용한 변수를 실행구간 내부에서 사용한 예제입니다. 반복횟수가 1부터 10까지 증가함에 따라 화면 출력 값이 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000으로 변경됩니다.
+- This instruction will execute the `LOOP FOR` block for a specified number of times.
+- Each time the program runs through the block, the variable will be increased by 1.
+- The `BREAK LOOP` instruction can be used to end the repetition.
+- The condition can be described as **( Repeat counter variable = Starting Value ~ End Value )**. Therefore, the block will be repeated for **End Value - Starting Value + 1** times.
 
-  ![](/assets/images/sw/rplus_task3/task3_058.png)
+The following is an example of using Loop For to print the number 100 on the screen 10 times.
 
-### [조건 대기](#조건-대기)
+![](/assets/images/sw/rplus_task3/task3_057.png)
 
-- 조건절이 만족하는 동안 프로그램 수행을 멈춥니다.
-- C언어의 내부가 비어있는 while(조건절)과 같은 개념입니다.
-- 아래는 조건 대기와 타이머를 사용하여 1.024초 동안 대기하는 예제입니다.
+The following is an example of multiplying the **Repeat counter variable** by 100 and print on the screen. As the Repeat counter variable increases, the printed value will also be increased by 100; 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000.
 
-  ![](/assets/images/sw/rplus_task3/task3_059.png)
+![](/assets/images/sw/rplus_task3/task3_058.png)
 
-- 아래는 조건 대기를 사용하여 재생되는 모션이 끝날 때까지 기다리는 예제입니다.
+### [Wait While](#wait-while)
 
-  ![](/assets/images/sw/rplus_task3/task3_060.png)
+- This instruction will stop running the code while the specific condition meets.
 
-- 아래는 조건 대기를 사용하여 재생되는 멜로디가 끝날 때까지 기다리는 예제입니다.
+The following is an example of using `WAIT WHILE` with a **Timer** to hold the program running for 1.024 seconds.
 
-  ![](/assets/images/sw/rplus_task3/task3_061.png)
+![](/assets/images/sw/rplus_task3/task3_059.png)
 
-### [반복 끝내기](#반복-끝내기)
+The following is an example of using `WAIT WHILE` with a **Motion Status** to wait until the motion completes.
 
-- 반복문이 수행되는 도중에 반복을 멈추고 싶을 때 사용합니다.
-- 무조건 반복, 조건 반복, 횟수 반복의 구간 내에서만 사용할 수 있습니다.
-- C언어의 break와 같은 개념입니다.
-- 아래는 무조건 반복에서 무선데이터가 도착하면 구문을 빠져 나오는 예제입니다. 무조건 반복에서 빠져나오면 바로 다음 구문이 실행됩니다.
+![](/assets/images/sw/rplus_task3/task3_060.png)
 
-  ![](/assets/images/sw/rplus_task3/task3_062.png)
+The following is an example of using `WAIT WHILE` with a **Buzzer Timer** to wait until the melody plays.
 
-## [함수(서브루틴)](#함수서브루틴)
+![](/assets/images/sw/rplus_task3/task3_061.png)
 
-동일한 코드가 반복되거나 특정 코드 영역을 역할 단위로 구분하여 표기하고 싶을 경우, 그 내용을 하나의 덩어리로 묶을 수 있으며 이를 함수라고 부릅니다. 자세한 설명은 하위 항목을 참고하세요.
+### [Break Loop](#break-loop)
+
+- This instruction will exit the loop block.
+- This instruction can only be used within `ENDLESS LOOP`, `LOOP WHILE`, and `LOOP FOR` blocks.
+
+The following is an example of using `BREAK LOOP` to exit the loop when the remote controller data is arrived. After exiting the block, followed by code will be executed.
+
+![](/assets/images/sw/rplus_task3/task3_062.png)
+
+## [Function(Sub-Routine)](#functionsub-routine)
+
+If a specific code is used repeatedly, or if you wish to classify an area of code as a unit that performs a specific behavior, you can group the lines of code as a Function.
+Refer to the following figure for details.
 
 ![](/assets/images/sw/rplus_task3/task3_063.png)
 
-### [함수/호출](#함수호출)
+### [Function/Call](#functioncall)
 
-- 동일한 코드가 중복 사용되거나 특정 코드 영역을 역할 단위로 구분하여 표기하고 싶을 경우, 그 내용을 “함수”로 만들어 사용합니다.
-- 적절한 함수 사용은 코드를 간결하고 읽기 편하게 만들어줍니다.
-- 작성한 함수는 필요할 시에 “호출”을 통해 사용할 수 있습니다.
-- 함수는 반드시 메인 프로그램 루틴 밖에 작성하여야 합니다.
-- 태스크에서 함수는 입력 인자와 출력 인자를 설정할 수 없습니다.
-- C언어의 함수와 같은 개념입니다.
-- 아래는 LED를 깜박이는 기능을 함수로 만들어 사용한 예제입니다.
+- When the same code is used in different locations in the program, such code can be defined within a `FUNCTION` block.
+- An adequate use of functions will make the code concise and easy to read.
+- A function that has been created can be used with “Call” instruction when needed.
+- Functions must be written outside of the main program routine.
+- In task, functions cannot configure input or output arguments
 
-  ![](/assets/images/sw/rplus_task3/task3_064.png)
+The following is an example of making the action of blinking the LED as a function and using it.
 
-- 아래는 함수를 사용하기 위해 호출할 함수를 선택하는 과정입니다
+![](/assets/images/sw/rplus_task3/task3_064.png)
 
-  ![](/assets/images/sw/rplus_task3/task3_065.png)
+The following is the process of selecting a function to call.
 
-- 함수 내에서 자기 자신을 호출할 수 없습니다.
+![](/assets/images/sw/rplus_task3/task3_065.png)
 
-  ![](/assets/images/sw/rplus_task3/task3_066.png)
+Functions cannot call itself within the same function.
 
-### [복귀](#복귀)
+![](/assets/images/sw/rplus_task3/task3_066.png)
 
-- 함수가 실행되는 도중에 실행하던 함수를 빠져나가는 기능을 합니다.
-- 일반 함수와 콜백 함수의 내부에서만 사용할 수 있습니다.
-- C언어의 return과 같은 개념입니다.
-- 아래는 “복귀”를 사용하지 않고 함수를 끝까지 실행한 예제입니다.
+### [Return](#return)
 
-  ![](/assets/images/sw/rplus_task3/task3_067.png)
+- This instruction is used for exiting a function while it is being executed.
+- It can only be used inside a regular function and callback function.
 
-- 아래는 “복귀”를 사용하여 함수가 실행되는 도중에 복귀한 예제입니다.
+The following is an example of a function being executed until the end without using Return.
 
-  ![](/assets/images/sw/rplus_task3/task3_068.png)
+![](/assets/images/sw/rplus_task3/task3_067.png)
 
-### [콜백](#콜백)
+The following is an example of a function being executed but encountering Return in the middle of executing the function, which will make the program exit the function.
 
-- 메인 프로그램 루틴과 독립적으로 동작하는 함수로 일정한 시간마다 스스로 실행됩니다.
-- 콜백은 반드시 메인 프로그램 루틴 밖에 작성하여야 합니다.
-- 과도한 실행 시간을 요하는 코드를 넣을 수 없어, 콜백 내에서는 반복문 사용 / 변수 사용량 / 파라미터 호출 횟수 / 코드 용량의 제한이 있습니다.
-- 콜백 함수 사용시 다음과 같은 제한사항을 지켜야 합니다.
-  - 반복문, 레이블, 점프, 호출을 사용할 수 없습니다.
-  - 외부 장치와의 통신 횟수가 최대 2회로 제약이 있습니다.
-  - 콜백 함수의 작성에 있어 코드크기가 512bytes를 넘을 수 없습니다.
+![](/assets/images/sw/rplus_task3/task3_068.png)
 
-- 아래는 콜백 함수를 사용하여 받은 무선 데이터를 “수신데이터” 변수에 저장하는 예제입니다.
+### [Callback](#callback)
 
-  ![](/assets/images/sw/rplus_task3/task3_069.png)
+- This function is executed independently from the main program routine, executing itself periodically
+- Callback functions must be written outside of the main program routine.
+- Because it is not allowed to write code within a callback that takes too much time to execute, callback has restrictions in the use of Loops / Variables / Parameter Calls / volume of code.
+- The following restrictions must be met when using a callback function.
+  - Loops, Labels, Jumps, Calls are not allowed
+  - Communication with an external device is limited to a maximum of 2 times
+  - The code size of callback function cannot exceed 512 bytes
+
+The following is an example of using the callback function to receive wireless data and save it to the variable “received data”.
+
+![](/assets/images/sw/rplus_task3/task3_069.png)
 
 
-# [태스크 파라미터](#태스크-파라미터)
+# [Task Parameters](#task-parameters)
 
-R+ Task 3.0에서 사용하는 파라미터를 설명합니다. 각 장치에 따라 사용할 수 있는 파라미터를 분류하여 설명합니다. 자세한 사용법은 각 항목의 설명과 예제 코드를 참고하세요.
+This section explains parameters used in R+ Task 3.0. It classifies the parameters that can be used by each device. Refer to the explanation and example codes of each item for details.
 
-## [포트 닉네임 변경](#포트-닉네임-변경)
+## [Port Nickname](#port-nickname)
 
-제어기의 주변장치 포트에 연결되는 장치의 별명을 지정할 수 있습니다.
+A nickname can be assigned to accessory devices that can be connected to the ROBOTIS 5-pin port.
 
   ![](/assets/images/sw/rplus_task3/port_nickname_01.png)  
 
-아래는 포트 닉네임이 적용된 예제입니다.  
+The following is an example of using the Port Nickname.  
 
   ![](/assets/images/sw/rplus_task3/port_nickname_02.png)  
   ![](/assets/images/sw/rplus_task3/port_nickname_03.png)
 
-## [제어기 장치](#제어기-장치)
+## [Controller Device](#controller-device)
 
-### [주변 장치](#주변-장치)
+### [Accessory Device](#accessory-device)
 
-#### 감속모터
-- 제어기에 연결된 감속모터를 제어하기 위해 사용합니다.
-- 제어기마다 연결할 수 있는 장치가 다릅니다. 제어기 호환표를 참고하세요. [제어기 호환표]
-- 방향 : CW(Clock Wise : 시계 방향), CCW(Counter Clock Wise : 반시계 방향)
-- 출력 : 값 범위는 0~1023이며, 0일 때 정지, 1023일 때 100% 출력으로 설정됩니다.  
+#### Geared Motor
+- This is used to control the geared motor connected to the controller.
+- Each Controller model has a different set of devices that can be connected to it. Please refer to the Controller Functionality Comparison for more detail. Controller Functionality Comparison
+- **Direction** : CW (Clock Wise), CCW (Counter Clock Wise)
+- **Power** : The value ranges from 0 to 1023, where 0 means stop and 1023 is 100% power capacity.  
   ![](/assets/images/sw/rplus_task3/task3_070.png)
 
-- 아래는 감속 모터를 제어하는 예제입니다.  
-  ![](/assets/images/sw/rplus_task3/task3_071.png)
+The following example is controlling the geared motor.
 
-- 아래는 감속 모터를 사용하여 로봇을 전진 시키는 예제입니다.  
-  ![](/assets/images/sw/rplus_task3/task3_072.png)
+![](/assets/images/sw/rplus_task3/task3_071.png)
 
-#### 서보모터 속도/위치
+The following example is using the geared motor to move the robot forward.
 
-- 제어기에 연결된 서보모터를 제어하기 위해 사용합니다.
-- 제어기마다 연결할 수 있는 장치가 다릅니다. 제어기 호환표를 참고하세요. [제어기 호환표]
-- 서보모터 동작모드 : 속도모드와 관절모드를 선택할 수 있습니다.  
+![](/assets/images/sw/rplus_task3/task3_072.png)
+
+#### Servo Motor (Speed, Position)
+
+- This is used to control the servo motor connected to the controller.
+- Each Controller model has a different set of devices that can be connected to it. Please refer to the [Controller Compatibility] for more detail.
+
+- Servo Mode : The Servo Motor can be set as Wheel or Joint mode.  
   ![](/assets/images/sw/rplus_task3/servo_mode_selection.png)
 
-- 속도모드 : 서보모터의 이동속도를 설정할 수 있습니다.  
-  ![](/assets/images/sw/rplus_task3/task3_073.png)
+  - Wheel Mode : Set the speed of the servo motor.  
+    ![](/assets/images/sw/rplus_task3/task3_073.png)
 
-- 관절모드 : 서보모터의 위치를 설정할 수 있습니다.  
-  ![](/assets/images/sw/rplus_task3/task3_074.png)
+  - Joint Mode : Set the position of the servo motor.  
+    ![](/assets/images/sw/rplus_task3/task3_074.png)
 
-- 아래는 서보모터를 바퀴형태로 제어하는 예제입니다.  
-  ![](/assets/images/sw/rplus_task3/servo_velocity.png)
+The following is an example of controlling the servo motor with Wheel Mode.
 
-- 아래는 서보모터를 관절형태로 제어하는 예제입니다.  
-  ![](/assets/images/sw/rplus_task3/servo_joint.png)
+![](/assets/images/sw/rplus_task3/servo_velocity.png)
 
-- CM-550은 서보모터를 속도모드와 관절모드로 선택해서 사용할 수 있습니다. 그러므로 다른 제어기와 같이 동작모드에 속도모드 또는 관절모드를 지정해줄 필요없이 바로 사용가능합니다.  
-  ![](/assets/images/sw/rplus_task3/cm550_servo_selection.png)  
-  ![](/assets/images/sw/rplus_task3/cm550_servo_ex.png)
+The following is an example of controlling the servo motor with Joint Mode.
+
+![](/assets/images/sw/rplus_task3/servo_joint.png)
+
+CM-550 doesn't require to set the Servo Mode as wheel control value or joint control value can be used in the option.  
+![](/assets/images/sw/rplus_task3/cm550_servo_selection.png)  
+![](/assets/images/sw/rplus_task3/cm550_servo_ex.png)
 
 
-#### LED 모듈
+#### LED Module
 
-- 제어기에 연결된 LED 모듈을 제어하기 위해 사용합니다.
-- 제어기마다 연결할 수 있는 장치가 다릅니다. 제어기 호환표를 참고하세요. [제어기 호환표]
-- LED 모듈의 오른쪽 LED와 왼쪽 LED를 켜거나 끌 수 있습니다.  
+- This is used to control the LED module connected to the controller.
+- Each Controller model has a different set of devices that can be connected to it. Please refer to the [Controller Compatibility] for more detail. Controller Functionality Comparison
+- User can turn on/off the Right LED or Left LED.
+
   ![](/assets/images/sw/rplus_task3/task3_077.png)
 
-- 아래는 LED 모듈을 제어하는 예제입니다.  
-  ![](/assets/images/sw/rplus_task3/task3_078.png)
+The following is an example of controlling the LED module.
 
-#### 여러가지 센서
+![](/assets/images/sw/rplus_task3/task3_078.png)
 
-제어기에 연결된 여러 센서를 제어하기 위해 사용합니다. 제어기마다 연결할 수 있는 장치가 다릅니다. 제어기 호환표를 참고하세요. [제어기 호환표]
+#### Various Sensors
 
-##### 접촉센서
-접촉센서의 접촉 여부를 읽어오기 위해 사용합니다. (True일 때 접촉됨, False일 때 접촉되지 않음)
-- [접촉 센서 부품 정보]
-- 아래는 접촉 센서를 사용한 예제입니다.  
+- This is used to control the various sensors connected to the controller.
+- Each Controller model has a different set of sensors that can be connected to it. Please refer to the [Controller Compatibility] for more detail.
+
+##### Touch Sensor
+Detects whether there is contact with the touch sensor. (Returns True for contact, False for no contact)
+- [Touch Sensor Component Information]
+- The following is an example of using the touch sensor.
+
   ![](/assets/images/sw/rplus_task3/task3_079.png)
 
-##### 적외선 센서
-물체와의 거리를 읽어오기 위해 사용합니다. (값 범위 0 ~ 1023, 값이 0에 가까울수록 물체와의 거리가 멉니다.)
-- [적외선 센서 부품 정보]
-- 아래는 적외선 센서를 사용한 예제입니다.  
+##### Infrared Sensor
+Measures the distance to the object (The value ranges from 0 to 1023, where the value increases from 0 as the object gets closer.)
+- [Infrared Sensor Component Information]
+- The following is an example of using the infrared sensor.
+
   ![](/assets/images/sw/rplus_task3/task3_080.png)
 
-##### 절대 거리 센서
-물체와의 거리를 읽어오기 위해 사용합니다.  (값 범위 0~ 1023, 값이 0에 가까울수록 물체와의 거리가 멉니다.)
-- [절대 거리 센서 부품 정보]
-- 아래는 절대 거리 센서를 사용한 예제입니다.  
+##### Distance Measurement Sensor
+Measures the distance to the object (The value ranges from 0 to 1023, where the value increases from 0 as the object gets closer.)
+- [Distance Measurement Sensor Component Information]
+- The following is an example of using the distance measurement sensor.
+
   ![](/assets/images/sw/rplus_task3/task3_081.png)
 
-##### 컬러 센서
-물체의 색상을 읽어오기 위해 사용합니다.
-- 컬러 센서가 감지하는 색은 아래와 같습니다.  
+##### Color Sensor
+Detects the color of an object.
+- The list of colors that the color sensor detects is as follows
+
   ![](/assets/images/sw/rplus_task3/task3_082.png)
 
-- [컬러 센서 부품 정보]
-- 아래는 컬러 센서를 사용한 예제입니다.  
+- [Color Sensor Component Information]
+- The following is an example of using the color sensor.
+
   ![](/assets/images/sw/rplus_task3/task3_083.png)
 
-##### 자석 센서
-자석이나 물체의 자력을 읽어오기 위해 사용합니다. (True일 때 자석이 감지됨, False일 때 자석이 감지되지 않음)
-- [자석 센서 부품 정보]
-- 아래는 자석 센서를 사용한 예제입니다.  
+##### Magnetic Sensor
+Detects magnetic materials near the sensor head (Returns True when magnetic property detected, False when not detected).
+- [Magnetic Sensor Component Information]
+- The following is an example of using the magnetic sensor.
+
   ![](/assets/images/sw/rplus_task3/task3_084.png)
 
-##### 온도 센서
-물체의 온도를 읽어오기 위해 사용합니다. (온도 범위 : -20~120&deg;C)
-- [온도 센서 부품 정보]
-- 아래는 온도 센서를 사용한 예제입니다.  
+##### Temperature Sensor
+Measures the temperature of an object (Temperature Range : -20 ~ 120 &deg;C)
+- [Temperature Sensor Component Information]
+- The following is an example of using the temperature sensor.
+
   ![](/assets/images/sw/rplus_task3/task3_085.png)
 
-##### 동작감지 센서
-물체의 움직임을 감지하기 위해 사용합니다.
-- [동작감지 센서 부품 정보]
-- 아래는 동작감지 센서를 사용한 예제입니다.  
+##### Motion Detection (Passive infrared) Sensor
+Detects the motion of an object.
+- [Motion Detecting Sensor Component Information]
+- The following is an example of using the motion detection sensor.
+
   ![](/assets/images/sw/rplus_task3/task3_086.png)
 
-##### 온습도 센서
-물체의 온도와 습도를 읽어오기 위해 사용합니다. (온도 범위 : -20~120&deg;C, 습도 범위 : 0~100%)
-- [온습도 센서 부품 정보]
-- 아래는 온습도 센서를 사용한 예제입니다.
+##### Temperature & Humidity (Thermo-hygro) Sensor
+Measures the temperature and humidity of an object. (temperature range : -20 ~ 120 &deg;C, humidity range : 0 ~ 100 %)
+- The following is an example of using the temperature and humidity sensor.
 
   ![](/assets/images/sw/rplus_task3/task3_087.png)
 
-##### 조도 센서
-장소의 밝기를 감지하기 위해 사용합니다. (값 범위 0~ 1023, 값이 0에 가까울수록 주위가 어둡습니다.)
-- [조도 센서 부품 정보]
-- 아래는 조도 센서를 사용한 예제입니다.  
+##### Illuminance Sensor (CDS)
+Measures the brightness of the surroundings (The value ranges from 0 to 1023, where the value increases from 0 as the surroundings gets brighter).
+- The following is an example of using the illuminance sensor.
+
   ![](/assets/images/sw/rplus_task3/task3_088.png)
 
-##### 사용자 장치
-사용자가 제작한 센서의 값을 읽어오거나 쓸 때 사용합니다.
-- [사용자 센서 제작]
-- 아래는 사용자 장치를 사용한 예제입니다.  
+##### User Device
+Reads the output value of the user-created sensor.
+- [Building a User Device]
+- The following is an example of using the user device.
+
   ![](/assets/images/sw/rplus_task3/task3_089.png)
 
-### [모션 제어](#모션-제어)
-- 제어기에 다운로드된 모션을 실행하기 위한 파라미터입니다.
-- 특정 제어기에서만 사용할 수 있습니다.  
-  (지원 제어기 : [CM-200], [CM-5], [CM-510], [CM-530], [CM-550], [CM-700], [OpenCM 9.04])
+### [Motion Control](#motion-control)
 
-#### 모션 호출 번호
-모션의 호출 번호를 쓰면 해당 모션이 실행됩니다.  
-모션이 실행되는 도중이라면 현재 실행 중인 모션 번호를 읽어올 수 있습니다. 모션의 번호를 호출할 때, 해당 모션이름을 확인하며 넣어줄 수 있습니다.
+- This section describes specific parameters for executing motions downloaded on controller via R+ Motion.
+- Only specific controllers support motion control. (Supported controllers : [CM-200], [CM-5], [CM-510], [CM-530], [CM-550], [CM-700], [OpenCM 9.04])
+
+#### Motion Index Number
+Executes a motion by calling the corresponding Motion index number. If the Motion is being executed, you can read the current Motion index number.
 
 ![](/assets/images/sw/rplus_task3/motion_control_namelist.png)
 
-- 아래는 모션 호출 번호를 이용한 예제입니다.  
-  ![](/assets/images/sw/rplus_task3/task3_090.png)
+The following is an example of using the Motion index number.
 
-#### 모션 상태
-모션이 실행되고 있으면 True, 모션이 실행되고 있지 않으면 False값을 반환합니다.
-- 아래는 모션 상태를 이용하여 모션이 종료될 때까지 대기하는 예제입니다.  
-  ![](/assets/images/sw/rplus_task3/task3_091.png)
+![](/assets/images/sw/rplus_task3/task3_090.png)
 
-#### 관절 오프셋
-모션이 실행될 때 -255~255 값을 모든 관절에 더해줍니다.  
-관절 오프셋이 -50이고 모션 데이터의 위치 값이 300 -> 400 -> 500으로 설정된 경우라면, 250 -> 350 -> 450으로 변경되어 실행됩니다.
-- 아래는 특정 관절에 오프셋 값을 적용하는 예제입니다.  
-  ![](/assets/images/sw/rplus_task3/task3_092.png)
+#### Motion Status
+Returns True if motion is being executed, returns False if motion is not being executed.
 
-- 아래는 특정 관절에 모션 데이터 값의 영향을 받지 않도록 설정하는 예제입니다.  
-  ![](/assets/images/sw/rplus_task3/task3_093.png)
+The following is an example of using the Motion status to wait until the motion finishes.
 
-#### 관절 LED 자동 켜기
-모션이 실행되는 동안 다이나믹셀의 LED를 켜거나 끌 수 있습니다. (True일 때 RGB LED 사용, False일 때 RGB LED 사용안함)  
-해당 기능은 OpenCM 9.04에서만 지원합니다.
-- 아래는 모션 실행 시 “관절 LED 자동 켜기” 기능을 활용하는 예제입니다.  
-  ![](/assets/images/sw/rplus_task3/task3_094.png)
+![](/assets/images/sw/rplus_task3/task3_091.png)
 
-- 아래는 제어기에 저장된 모션을 실행하는 예제입니다. 리모컨 버튼 눌림에 따라 해당하는 모션이 실행됩니다.  
-  ![](/assets/images/sw/rplus_task3/task3_095.png)
+#### Joint Offset
+When a motion is executed, it adds a value between -255~255 to every joint. For instance, if the joint offset is -50 and the location values for the motion data have been set to 300 -> 400 -> 500, the location values will be changed to 250 -> 350 -> 450 and then executed.
 
-### [내장 센서](#내장-센서)
-제어기에 내장된 각종 센서를 사용할 수 있습니다.
+The following is an example of applying an offset values to a specific joint.
 
-#### 시작 버튼 눌림 횟수
-최초 제어기를 켤 때 연속적으로 시작버튼을 누른 횟수를 읽어올 때 사용합니다. 시작 버튼 눌림 횟수의 값의 범위는 0 ~ 255 입니다.
-- 지원 제어기 : [CM-5], [CM-50], [CM-100A], [CM-150], [CM-200], [CM-510], [CM-530], [CM-700], [OpenCM 7.0], [OpenCM 9.04]
-- 아래는 시작 버튼 눌림 횟수를 사용하는 예제입니다.  
-  ![](/assets/images/sw/rplus_task3/task3_099.png)
+![](/assets/images/sw/rplus_task3/task3_092.png)
 
-#### 제어기 버튼 / 버튼
-제어기의 버튼 상태를 읽어올 때 사용합니다. 제어기에 따라 사용할 수 있는 버튼이 달라집니다.
-- 지원 제어기 : [CM-5], [CM-50], [CM-100A], [CM-150], [CM-200], [CM-510], [CM-530], [CM-700], [OpenCM 7.0], [OpenCM 9.04]
-- 아래는 CM-5, CM-510, CM-530 제어기의 버튼을 사용하는 예제입니다.  
-  ![](/assets/images/sw/rplus_task3/task3_100.png)
+The following is an example of configuring a specific joint to not be affected by the Motion data values.
 
-- 아래는 OpenCM9.04의 버튼을 사용하는 예제입니다.  
-  ![](/assets/images/sw/rplus_task3/task3_101.png)
+![](/assets/images/sw/rplus_task3/task3_093.png)
 
-#### 컨트롤러 버튼 릴리즈 이벤트
-CM-550 제어기의 시작버튼이 눌렸다가 떨어질 때 1(True)이 되며, 값을 읽으면 0(False)으로 리셋됩니다.
+#### Joint LED Auto ON
 
-#### 버튼 눌림 시간
-CM-550 제어기의 버튼을 누르고 있으면 버튼 눌림 시간이 ms 단위로 증가합니다.
+Turns on/off the DYNAMIXEL LED while a Motion is being executed. This feature is only supported in OpenCM 9.04
 
-#### 버튼 눌림 1초 타이머
-CM-550 제어기의 버튼을 누르고 있으면 버튼 눌림 시간이 1초 단위로 증가합니다.
+The following is an example of using the “turn on joint LED automatically” function when executing a Motion.
 
-#### 최종 소리 감지 횟수
-제어기에 내장된 마이크를 사용하여 일정 수준 이상의 큰 소리가 날 경우 1회씩 카운트하는 기능입니다. 대표적인 예로 박수 소리를 카운트하여 로봇을 동작시킬 때 많이 사용합니다.  
-감지된 소리 횟수를 누적하여 카운트합니다. 초기화가 필요한 경우 0값을 직접 입력해야 합니다.  
-제어기마다 지원하는 센서의 종류가 다릅니다. 각 제어기의 매뉴얼을 참고하세요.
-- 지원 제어기 : [CM-5], [CM-50], [CM-100A], [CM-150], [CM-200], [CM-510], [CM-530], [CM-550], [CM-700], [OpenCM 7.0], [OpenCM 9.04]
-- 아래는 최종 소리감지 횟수를 이용한 예제입니다.  
-  ![](/assets/images/sw/rplus_task3/task3_096.png)
+![](/assets/images/sw/rplus_task3/task3_094.png)
 
-#### 실시간 소리 감지 횟수
-제어기에 내장된 마이크를 사용하여 일정 수준 이상의 큰 소리가 날 경우 1회씩 카운트하는 기능입니다. 대표적인 예로 박수 소리를 카운트하여 로봇을 동작시킬 때 많이 사용합니다.  
-실시간으로 감지된 소리 횟수를 카운트합니다. 0.8초간 소리가 입력되지 않으면 0으로 초기화 됩니다.
-- 아래는 실시간 소리감지 횟수를 이용한 예제입니다.  
-  ![](/assets/images/sw/rplus_task3/task3_097.png)
+Pressing different buttons on the Remote Controller will execute their corresponding Motions.
 
-#### 적외선 센서
-- 제어기에 내장된 적외선 센서 값을 읽어오기 위해 사용합니다.
-- 적외선 센서의 값 범위는 0 ~ 1,023 입니다. 물체와의 거리가 가까울수록 큰 값을 가지며, 거리가 멀수록 작은 값을 가집니다.
-- 제어기마다 내장된 센서의 종류가 다릅니다. 각 제어기의 매뉴얼을 참고하세요.
-  - 지원 제어기 : [CM-5], [CM-50], [CM-100A], [CM-150], [CM-200]
+![](/assets/images/sw/rplus_task3/task3_095.png)
 
-- 아래는 제어기의 적외선 센서 값을 사용하는 예제입니다.  
-  ![](/assets/images/sw/rplus_task3/task3_098.png)
+### [Built-in Sensor](#built-in-sensor)
+This option allows to access various sensors and features built in the controller.
 
-##### 왼쪽 적외선 센서
-제어기 왼쪽 하단에 위치한 적외선 센서의 값을 읽어올 때 사용합니다.
+#### Start Button Counter
+Reads the number of `START` button click while the Controller is turning on. The value of the `Start Button Counter` ranges from 0 to 255.  
+Supported Controllers : [CM-5], [CM-50], [CM-100A], [CM-150], [CM-200], [CM-510], [CM-530], [CM-700], [OpenCM 7.0], [OpenCM 9.04]
 
-##### 중앙 적외선 센서
-제어기 전면 중앙에 위치한 적외선 센서의 값을 읽어올 때 사용합니다.
+The following is an example of using the Start button counter.
 
-##### 오른쪽 적외선 센서
-제어기 오른쪽 하단에 위치한 적외선 센서의 값을 읽어올 때 사용합니다.
+![](/assets/images/sw/rplus_task3/task3_099.png)
 
-#### 현재 입력 전압
-제어기에 입력되는 전압을 읽어오기 위해 사용합니다.
+#### Controller Button / Button
 
-#### 제어기 온도
-CM-550 제어기의 현재 온도를 측정하기 위해 사용합니다.
+Reads the status of the Controller’s buttons. Each Controller may have different buttons that can be used.
 
-#### 제어기 IMU 방향
-CM-550 제어기의 장착 상태에 따라 제어기에 내장된 IMU 센서의 방향을 설정해 주어야 합니다.
-제어기를 세워서 사용하거나 눕혀서 사용할 경우에 따라 아래와 같이 설정합니다.
+Supported Controllers : [CM-5], [CM-50], [CM-100A], [CM-150], [CM-200], [CM-510], [CM-530], [CM-550], [CM-700], [OpenCM 7.0], [OpenCM 9.04]
 
-|  제어기 장착 상태   | 설정값 |
-|:----------------:|:----:|
-| 수직으로 세워서 장착 |   0  |
-| 수평으로 눕혀서 장착 |   1  |
+The following is an example of using buttons for CM-5, CM-510, CM-530.
+
+![](/assets/images/sw/rplus_task3/task3_100.png)
+
+The following is an example of using buttons for OpenCM9.04.
+
+![](/assets/images/sw/rplus_task3/task3_101.png)
+
+#### Controller Button Released Event
+When the START button of CM-550 is released, this value is updated to 1(True), and the value will be reset to 0(False) after the data is read.
+
+#### Button Pressed Timer(ms)
+Button Pressed Timer counts up in millisecond while pressing the button of CM-550.
+
+#### Button Pressed Timer(s)
+Button Pressed Timer counts up in second while pressing the button of CM-550.
+
+#### Detected Clap Count
+This function uses the Controller’s embedded mic to save the detected clap count. If you want to reset the counter, write `0` to the address.
+
+Supported Controllers : [CM-5], [CM-50], [CM-100A], [CM-150], [CM-200], [CM-510], [CM-530], [CM-550], [CM-700], [OpenCM 7.0], [OpenCM 9.04]
+
+The following is an example of using the Detected Clap Count.
+
+![](/assets/images/sw/rplus_task3/task3_096.png)
+
+#### Clap Counter
+This function counts the number of claps. If next clap is not detected within 0.8 seconds, the counter will be reset to 0.
+
+The following is an example of using the Clap Counter.
+
+![](/assets/images/sw/rplus_task3/task3_097.png)
+
+#### Infrared Sensors
+
+- This function is used to read the value of the infrared sensor embedded in the Controller.
+- The value of the infrared sensor ranges from 0 to 1023, where the value increases from 0 as the object gets closer.
+- Each Controller model supports different types of sensors. Please refer to each Controller’s manual for more detail. (Supported Controllers : [CM-5], [CM-50], [CM-100A], [CM-150], [CM-200])
+
+The following is an example of using the values of the infrared sensors of the Controller.
+
+![](/assets/images/sw/rplus_task3/task3_098.png)
+
+##### Left Infrared Sensor
+Reads the value of the infrared sensor located at the bottom left side of the Controller.
+
+##### Center Infrared Sensor
+Reads the value of the infrared sensor located at the front and center of the Controller.
+
+##### Right Infrared Sensor
+Reads the value of the infrared sensor located at the bottom right side of the Controller.
+
+#### Present Input Voltage
+Reads the supplied voltage of the controller.
+
+#### Controller Temperature
+Reads present temperature of the CM-550.
+
+#### Controller IMU Direction
+Based on the assembly of CM-550, configure the orientation of CM-550 controller. Vertical and horizontal orientations can be defined as below.
+
+| Controller Orientation | Value |
+|:----------------------:|:-----:|
+|        Vertical        |   0   |
+|       Horizontal       |   1   |
 
 #### Roll X / Pitch Y / Yaw Z
-CM-550 제어기에 내장된 IMU 센서의 Roll / Pitch / Yaw 축 데이터를 읽어올 때 사용합니다. (단위 : 0.01&deg;)
+Read Roll / Pitch / Yaw data from the IMU in CM-550 controller. (Unit : 0.01 &deg;)
 
 #### Gyro X / Y / Z
-CM-550 제어기에 내장된 IMU 센서의 자이로 X / Y / Z 축 데이터를 읽어올 때 사용합니다. (단위 : 0.01&deg;/s)
+Read Gyro X / Y / Z data from the IMU in CM-550 controller. (Unit : 0.01 &deg;/s)
 
 #### Accel X / Y / Z
-CM-550 제어기에 내장된 IMU 센서의 가속도계 X / Y / Z 축 데이터를 읽어올 때 사용합니다. (단위 : 0.001G)
+Read Accelerometer X / Y / Z data from the IMU in CM-550 controller. (Unit : 0.001 G)
 
-### [버저](#버저)
+### [Buzzer](#buzzer)
 
-#### 버저 종류 / 버저 울림 시간
+#### Buzzer Index / Buzzer Timer
 
-- 제어기에 내장된 버저를 통해 음계나 멜로디를 연주할 때 사용합니다.
-- 버저 울림 시간을 먼저 설정한 후 버저 종류를 설정해야 설정에 맞게 소리가 납니다.
-- 아래는 버저 종류를 설정하는 그림입니다.  
-  ![](/assets/images/sw/rplus_task3/task3_102.png)
+- This is used to play a musical scale or a melody using the Buzzer embedded in the Controller.
+- The **Buzzer Timer** should be configured first before selecting the **Buzzer Index** in order for the Buzzer to sound properly.
 
-- 아래는 제어기의 음계를 연주하는 예제입니다. 음계 연주 시 “버저 울림 시간”을 0~5초로 설정할 수 있습니다.  
-  ![](/assets/images/sw/rplus_task3/task3_103.png)
+The following figure shows the screens to select the type of buzzer.
 
-- 아래는 제어기의 멜로디를 연주하는 예제입니다. 멜로디 연주 시 “버저 울림 시간”을 멜로디 연주 시간(특수 멜로디 연주)으로 설정해야 합니다.  
-  ![](/assets/images/sw/rplus_task3/task3_104.png)
+![](/assets/images/sw/rplus_task3/task3_102.png)
 
-### [리모컨](#리모컨)
+The following is an example of playing a musical scale from the Controller. When playing a musical scale, the **Buzzer Timer** can be set between 0 ~ 5 seconds.
 
-#### 받은 무선 데이터, 보낼 무선 데이터 / 무선 ID / RC-100채널
+![](/assets/images/sw/rplus_task3/task3_103.png)
 
-- 제어기에 연결된 무선 통신 모듈(블루투스, 적외선, 지그비)을 통해 외부와 데이터를 주고 받는 파라미터입니다.
-- 일반적으로 RC-100, 스마트폰 가상 리모컨으로 로봇을 조종할 때 사용되며, 그 외에 사용자가 만든 임의의 SW와 통신을 위해 사용될 수 있습니다.
-- 주고 받는 데이터의 값 범위는 0~65535로 제한됩니다. (2bytes)
-- 받은 무선 데이터 : 제어기가 외부로부터 데이터를 전달받을 때 사용합니다.  
-  ![](/assets/images/sw/rplus_task3/task3_105.png)
+The following is an example of playing a melody from the Controller. When playing a melody, the **Buzzer Timer** should be set with `Play special melody` option.
 
-##### 보낼 무선 데이터
-제어기가 외부로 데이터를 내보낼 때 사용합니다.  
+![](/assets/images/sw/rplus_task3/task3_104.png)
+
+### [Remote Controller](#remote-controller)
+
+- These are the parameters that send and receive data with external devices using the wireless communication module (Bluetooth, IR, ZIGBee) connected to the Controller.
+- It is generally used when controlling a robot with the RC-100 or smartphone virtual remote controller, but it can also be used to communicate with a user developed software.
+- The data is restricted to 2 Byte value (0 ~ 65,535 or 0x0000 ~ 0xFFFF).
+
+#### Remocon RXD
+This function is used to read the received value of the Controller.
+
+![](/assets/images/sw/rplus_task3/task3_105.png)
+
+#### Remocon TXD
+This function is used when the Controller transmits data to other devices.
+
 ![](/assets/images/sw/rplus_task3/task3_106.png)
 
-##### 새 무선 데이터 도착
-제어기에 외부로부터 데이터가 전달되었을 때 값이 True가 됩니다.  
+#### Remocon Data Arrived
+If the Controller receives data, this address is updated to True.
+
 ![](/assets/images/sw/rplus_task3/task3_107.png)
 
-##### 내 로봇 무선 ID
-지그비를 사용할 때 지그비 ID를 확인합니다.  
+#### My ID
+This address configures the ZIGBee ID of the controller.
+
 ![](/assets/images/sw/rplus_task3/task3_108.png)
 
-##### 상대로봇 무선 ID
-지그비를 사용할 때 패어링할 지그비의 ID를 설정합니다.  
+#### Remocon ID
+This address configures the ZIGBee ID of the remote controller.  
+
 ![](/assets/images/sw/rplus_task3/task3_109.png)
 
-##### RC-100 채널
-적외선 수신기를 사용할 때 채널 값을 설정합니다. (값이 255일경우 블루투스/지그비 모드로 동작합니다.)  
+#### RC-100 Channel
+Configures the IR receiver channel when using an infrared receiver (If this address is set to 255, RC-100 will operate as Bluetooth or ZIGBee).
+
 ![](/assets/images/sw/rplus_task3/task3_110.png)
 
-- 아래는 제어기에서 받은 무선 데이터를 처리하는 예제입니다.
-  ![](/assets/images/sw/rplus_task3/task3_111.png)
+The following is an example of processing a wireless data received from the Controller.
 
-- 아래는 제어기가 외부로 데이터를 내보내는 예제입니다.
-  ![](/assets/images/sw/rplus_task3/task3_112.png)
+![](/assets/images/sw/rplus_task3/task3_111.png)
+
+The following is an example of the Controller sending data to the outside.
+
+![](/assets/images/sw/rplus_task3/task3_112.png)
 
 
-### [타이머](#타이머)
-- 타이머와 정밀 타이머는 제어기에 자동으로 카운트 다운 되는 타이머의 값을 설정할 때 사용합니다.
+### [Timer](#timer)
+**Timer** and **High-resolution Timer** are used to set the time to count-down.
 
-#### 타이머
-제어기에 자동으로 카운트 다운 되는 타이머의 값을 사용할 때 설정합니다. 타이머의 값 범위는 0~255이며, 단위는 0.128초 입니다.  
-- 아래는 타이머를 사용하여 약 1초(1.024초)만큼 대기하는 예제입니다.
-  ![](/assets/images/sw/rplus_task3/task3_113.png)
+#### Timer
+This is used to set the time of the Controller to count-down. The value of the Timer ranges from 0 to 255, and the unit is 0.128 second.
 
-#### 정밀 타이머
-타이머와 같은 기능을 하며 시간을 더 정밀하게 카운트 합니다. 정밀 타이머의 값 범위는 0 ~ 65,535이며, 단위는 0.001초 입니다.  
-- 아래는 정밀 타이머를 사용하여 정확히 1초(1.000초)만큼 대기하는 예제입니다.
-  ![](/assets/images/sw/rplus_task3/task3_114.png)
+The following is an example of using Timer to wait approximately 1 second (1.024 seconds).
 
-#### 딜레이
-CM-550에서는 타이머와 조건대기가 결합된 딜레이 기능을 사용할수 있습니다.  
-![](/assets/images/sw/rplus_task3/cm550_delay_01.png)  
+![](/assets/images/sw/rplus_task3/task3_113.png)
+
+#### High-resolution Timer
+This has the same function as Timer but counts the time more precisely. The value of the Timer ranges from 0 to 65,535, and the unit is 0.001 second.
+
+The following is an example of using Precision Timer to wait exactly 1 second (1.000 second).
+
+![](/assets/images/sw/rplus_task3/task3_114.png)
+
+#### Delay
+CM-550 supports `Delay` function that can simplifies the combined usage of `Timer` and `WAIT WHILE`.
+
+![](/assets/images/sw/rplus_task3/cm550_delay_01.png)
+
 ![](/assets/images/sw/rplus_task3/cm550_delay_02.png)  
 
-- 아래 태스크 코드 중 우측의 코드는 CM-550에서 딜레이를 간단하게 사용할 수 있는 예시입니다.  
-  ![](/assets/images/sw/rplus_task3/cm550_delay_03.png)
+The following is an example of replacing `Timer` and `WAIT WHILE` with `Delay` function with CM-550.
+
+![](/assets/images/sw/rplus_task3/cm550_delay_03.png)
 
 #### 자동꺼짐 타이머
 제어기의 절전 모드 기능을 사용할 때 설정합니다.
@@ -1348,7 +1401,7 @@ SM-10 서보모터의 속도모드, 관절모드를 전환할 경우 사용합�
 모션 예제가 열려있지 않은 경우 이 항목은 메뉴에 표시되지 않습니다.  
 ![](/assets/images/sw/rplus_task3/task3_218.png)
 
-[제어기 호환표]: /docs/kr/parts/controller/controller_compatibility/
+[Controller Compatibility]: /docs/en/parts/controller/controller_compatibility/
 [접촉 센서 부품 정보]: /docs/kr/parts/sensor/ts-10/
 [적외선 센서 부품 정보]: /docs/kr/parts/sensor/irss-10/
 [컬러 센서 부품 정보]: /docs/kr/parts/sensor/cs-10/
@@ -1358,7 +1411,7 @@ SM-10 서보모터의 속도모드, 관절모드를 전환할 경우 사용합�
 [조도 센서 부품 정보]: /docs/kr/parts/sensor/cds-10/
 [온습도 센서 부품 정보]: /docs/kr/parts/sensor/tms-10/
 [동작감지 센서 부품 정보]: /docs/kr/parts/sensor/pir-10/
-[사용자 센서 제작]: /docs/kr/edu/bioloid/premium/#사용자-센서-제작
+[Building a User Device]: /docs/en/edu/bioloid/premium/#make-your-own-sensor
 [CM-50]: /docs/kr/parts/controller/cm-100/
 [CM-100A]: /docs/kr/parts/controller/cm-100/
 [CM-150]: /docs/kr/parts/controller/cm-150/
