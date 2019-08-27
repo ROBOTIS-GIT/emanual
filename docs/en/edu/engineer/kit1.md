@@ -3,7 +3,7 @@ layout: archive
 lang: en
 ref: kit1
 read_time: true
-share: false
+share: true
 author_profile: false
 permalink: /docs/en/edu/engineer/kit1/
 sidebar:
@@ -547,38 +547,40 @@ Please perform offset adjustment with a thorough understanding as it may cause u
 
 # [Tutorials](#tutorials)
 
-## [[Machine Learning] Object Recognition](#machine-learning-object-recognition)
-로보티즈 엔지니어는 머신러닝(Tensor Flow)기반의 사물학습 및 객체인식 기능을 사용할 수 있습니다.  
-아래의 과정을 따라하며 머신러닝을 쉽게 시작해보세요.
+## [[Machine Learning] Object Detection](#machine-learning-object-detection)
+Get started to learn a machine learning with your **ROBOTIS ENGINNER** and Tensor Flow developed by Google Brain.  
+Tensor Flow is a machine learning application to ease the process of acquiring data and training models.
+Once you finish this instruction, you will have the ability to utilize an object detection which is one of the part of a machine learning.
+Explore following simple steps and train your robot to detect your custom objects.  
 
 {% capture info_01 %}
-- 사물학습 및 객체인식을 사용하기 위해서는, 카메라가 장착된 스마트 기기가 있어야 합니다.
-- 스마트 기기에 **[R+ ENGINEER 앱](#소프트웨어-다운로드)** 을 설치해야 합니다.
+- Use a smart device with a camera to utilize the object detection. 
+- Install **[R+ ENGINEER](#)** in the smart device. 
 {% endcapture %}
 <div class="notice--info">{{ info_01 | markdownify}}</div>
 
-### [윈도우즈](#윈도우즈)
+### [Windows](#windows)
 
 {% capture info_02 %}
-**아나콘다** : 기계 학습, 대규모 데이터 처리를 위한 모듈과 파이썬이 포함된 프로그램입니다.  
-텐서플로우를 이용한 머신러닝 이미지 학습을 하기 위해서는 PC에 `아나콘다3 4.2.0`가 설치되어 있어야 합니다.  
-- [윈도우 64비트용 아나콘다3-4.2.0](https://repo.continuum.io/archive/Anaconda3-4.2.0-Windows-x86_64.exe)  
-- [윈도우 32비트용 아나콘다3-4.2.0](https://repo.continuum.io/archive/Anaconda3-4.2.0-Windows-x86.exe)  
+**Anaconda** is the easiest way to perform a machine learning and a large-scale data processing on Linux, Windows, and Mac OS X. To utilize an object detection with **ROBOTIS ENGINEER**, install Anaconda3 4.2.0 for Windows (64/32 bit) on your PC to build your own image classifier using Tensor Flow.
+- [Download Anaconda3-4.2.0 for Windows 64 bit](https://repo.continuum.io/archive/Anaconda3-4.2.0-Windows-x86_64.exe)  
+- [Download Anaconda3-4.2.0 for Windows 32 bit](https://repo.continuum.io/archive/Anaconda3-4.2.0-Windows-x86.exe)  
 {% endcapture %}
 <div class="notice">{{ info_02 | markdownify}}</div>
 
-#### [pip 패키지 업그레이드](#pip-패키지-업그레이드)
+#### [Upgrade pip Packages](#upgrade-pip-packages)
 
-1. `WIN` + `S` 키를 눌러 나타난 검색창에 **cmd** 를 검색한 다음 관리자 권한으로 명령 프롬프트를 실행합니다.  
-`Ctrl` + `Shift` 를 누른 상태에서 `명령 프롬프트` 를 클릭해도 됩니다.
+1. Open a Command Prompt as an administrator
+  - Press `WIN` + `S` on your keyboard to open a Windows search box 
+  - Type **CMD** into the Windows search box and click the resulting “Command Prompt” as an administrator. 
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_cmd_01.png)
 
-2. 명령 프롬프트가 실행되면 아래와 같은 화면이 나타납니다.
+2. Command Prompt will be popped if you get access to CMD in the administrator mode.   
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_cmd_02.png)
 
-3. 명령 프롬프트에서 아래의 명령어를 입력해주세요.
+3. Copy the following command and paste it into Command Prompt.
 
     ``` posh
     python -m pip install --upgrade pip
@@ -586,24 +588,25 @@ Please perform offset adjustment with a thorough understanding as it may cause u
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_cmd_03.png)
 
-4. pip패키지가 성공적으로 업그레이드되면 아래와 같이 표시됩니다.
+4. As shown in the picture below, new pip package will be installed.
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_cmd_04.png)
 
-    pip 패키지가 업그레이드되지 않는다면, 아나콘다가 `C 드라이브` 에 정상적으로 설치되었는지 확인해주세요.
+    If there are issues with pip upgrade, check download path if it was proper location. As software is installed on `C Drive` by default, move a folder of Anaconda3 installed into `C Drive` then upgrade pip package. 
     {: .notice--warning}
 
-#### [폴더생성](#폴더생성)
+#### [Create Folder](#create-folder)
 
-1. `D 드라이브`에 `!R+Smart` 폴더를 만들어 주세요.
+1. Create Folder named `!R+Smart`
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_mkdir_01.png)
 
-    - 폴더 위치는 `D 드라이브` 또는 `C 드라이브` 등 상관없습니다. 매뉴얼에서는 `D 드라이브` 기준으로 설명합니다.
-    - 폴더 이름은 사용자가 임의로 변경할 수 있습니다. 매뉴얼에서는 `!R+Smart` 기준으로 설명합니다.
+    - You can create the folder in any location on your PC, but make sure a path in Command Prompt must coincide with the location of its folder properly.
+    - You can change a folder name, but make sure the name in Command Prompt must coincide with the actual folder name. 
+    - In this instruction, the folder name is `!R+Smart`, and the path is `C Drive`. 
     {: .notice--info}
 
-2. `!R+Smart` 폴더가 생성된 위치로 이동해야 합니다. 현재 드라이브가 `C 드라이브` 이므로, 아래의 명령어를 입력하여 `D 드라이브`로 이동합니다.
+2. Change your path in Command Prompt into `D Drive` where `!R+Smart` folder exists as your current location in Command Prompt is `C Drive`.
 
     ``` posh
     d:
@@ -612,7 +615,7 @@ Please perform offset adjustment with a thorough understanding as it may cause u
     ![](/assets/images/edu/engineer/kit1/obj_classification_mkdir_02.png)
 
 
-3. 아래의 명령어를 입력하여, `!R+Smart` 폴더로 이동합니다.
+3. Copy the following command and paste it in Commad Prompt to move into `!R+Smart` from `D drive`.
 
     ``` posh
     cd !R+Smart
@@ -620,9 +623,9 @@ Please perform offset adjustment with a thorough understanding as it may cause u
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_mkdir_03.png)
 
-#### [아나콘다 가상실행 환경 만들기](#아나콘다-가상실행-환경-만들기)
+#### [Create Virtual Environment](#create-virtual-environment)
 
-1. 아래의 명령어를 입력해서 아나콘다 가상실행 환경을 만들어주세요.
+1. Copy the following command and paste it in Command Prompt to create a virtual environment for your project.
 
     ``` posh
     conda create -n tensorflow python=3.5
@@ -630,19 +633,19 @@ Please perform offset adjustment with a thorough understanding as it may cause u
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_01.png)
 
-2. 진행여부를 묻습니다. `y` 입력후, `Enter Key`를 눌러 패키지 설치를 진행합니다.
+2. It will ask you if you want to proceed to the next step. Press `y`, and then press `Enter` key to install the Python version and new packages.
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_02.png)
 
-3. 성공적으로 설치되면 아래의 사진과 같이 나옵니다.
+3. As shown in the picture, you can see all the packages are successfully installed.  
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_03.png)
 
-#### [텐서플로우 설치하기](텐서플로우-설치하기)
+#### [Install Tensor Flow](instal-tensor-flow)
 
-머신러닝을 구동시키기 위해 텐서플로우를 설치합니다.
+Tensor Flow installation can be done in two simple steps.  
 
-1. 아래의 명령어를 입력하여, 미리 구축했던 아나콘다 가상실행 환경에 텐서플로우를 활성화시킵니다.
+1. Copy the following command and paste it in Command Prompt to activate newly created virtual environment of Tensor Flow.
 
     ``` posh
     activate tensorflow
@@ -650,7 +653,7 @@ Please perform offset adjustment with a thorough understanding as it may cause u
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_04.png)
 
-2. 마지막으로 아래의 명령어를 입력해서 텐서플로우를 설치합니다.
+2. Lastly, Copy the following command and paste it in Command Prompt to install Tensor Flow.
 
     ``` posh
     pip install tensorflow
@@ -658,36 +661,32 @@ Please perform offset adjustment with a thorough understanding as it may cause u
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_05.png)
 
-#### [파일과 폴더 생성](#파일과-폴더-생성)
+#### [Create a file and a folder](#create-a-file-and-a-folder)
 
-1. `retrain.py` 파일을 다운로드합니다.
+1. Go on the associated link to download a `retrain.py` file.
 
-    [retrain.py 다운로드](http://www.robotis.com/service/download.php?no=1778)
+    [Download retrain.py](http://www.robotis.com/service/download.php?no=1778)
     {: .notice}
 
-2. `!R+Smart` 폴더에 다운로드받은 `retrain.py` 파일을 복사한 다음, 객체 추가를 위한 `photos` 폴더를 만듭니다.
+2. Move the downloaded file `retrain.py` in `!R+Smart` folder. Create a `photos` folder in `!R+Smart` to add images for an object detection.  
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_retrain.png)
 
-3. `photos` 폴더 안에 `001 dummy`, `002 banana` 그리고 `003 pineapple`과 같이 객체 이미지를 추가할 하위 폴더를 만들고 객체와 관련된 이미지를 각각의 폴더에 추가합니다.
+3. Create subfolders named `001 dummy`, `002 banana` and `003 pineapple` or something like that, which contains images matching a detected object characteristic for an object detection.  
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_image_01.png)
 
  {% capture notice_01 %}
-  **참고** :
-  - `001 dummy` 폴더는 지정해둔 객체 이외의 이미지에 반응하기 위해 만들어 주세요. 더미 폴더는 객체인식 오류를 줄여줄수가 있습니다.  
-  - 여러 이미지를 반복해서 학습시키기 때문에, 이미지가 많을수록 학습효과가 높아집니다.
-  - 카메라의 객체 인식률을 높이기 위해 100개 이상의 이미지를 사용하는 것을 추천합니다.
-  - 폴더명을 `001`, `002` 와 같은 숫자로 작성하면, 추가한 아이템번호가 순서대로 정렬됩니다.
+ **NOTICE** :  
+  - To reduce errors of recognizing objects, `001 dummy` folder will be useful to scan unspecified objects.
+  - Train your **ROBOTIS ENGINEER** with sufficient images. The more it is, the better performance it is. (Collecting 100 images will be enough for recognizing objectes)
+  -  To organize folders in order, specify them with a number `001`, `002`, `etc..`
  {% endcapture %}
  <div class="notice--info">{{notice_01 | markdownify}}</div>
 
-  **주의** : 폴더와 파일 이름은 반드시 영문으로 작성해주세요.
-  {: .notice--warning}
+#### [Train models](#train-models)
 
-#### [이미지 학습](#이미지-학습)
-
-1. 아래의 명령어를 입력하여, `photos` 폴더에 추가한 객체 이미지들을 학습시킬 수 있습니다.
+1. Copy the following command and paste it in Command Prompt to train models of objects.
 
     ```posh
     python retrain.py --bottleneck_dir=./bottlenecks --model_dir=./inception  --output_graph=./Smart_OC.pb --output_labels=./Smart_OC.txt --image_dir ./photos --architecture mobilenet_1.0_224 --how_many_training_steps 1000
@@ -695,70 +694,66 @@ Please perform offset adjustment with a thorough understanding as it may cause u
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_img_learning_01.png)
 
-    학습 명령어에서 `how_many_training_steps` 옵션은 이미지 학습의 횟수를 나타냅니다. 횟수는 1000회 정도가 적당하며, 예시의 명령어는 1000회로 학습합니다.
+    In the command line, the option `how_many_training_steps` is the count of steps of training models. The enough steps for training models are 1000 times.  
     {: .notice--info}
 
-    **주의** : 폴더와 파일의 이름은 반드시 영문이어야 합니다. 한글 이름을 사용할 경우 오류가 발생합니다.
-    {: .notice--warning}
-
-2. 학습이 완료되면 아래와 같이 ***Smart_OC.txt*** 와 ***Smart_OC.pb*** 파일이 `!R+Smart` 폴더에 생성됩니다.
+2. After completion of training,  `Smart_OC.txt` and  `Smart_OC.pb` files will be created in the `!R+Smart` folder.
 
    ![](/assets/images/edu/engineer/kit1/obj_classification_oc.png)
 
-#### [프로젝트에 학습파일 적용하기](#프로젝트에-학습파일-적용하기)
+#### [Apply training file to your prject](#apply-training-file-to-your-project)
 
-1. ROBOTIS ENGINEER가 설치된 스마트 기기를 PC와 연결합니다.
+1. Connect your smart device in which `R+ ENGINEER` app installed to your PC. 
 
-2. 스마트 기기의 저장공간에서 `RoboPlus` > `ROBOTIS ENGINEER` > `CUSTOM` 폴더를 찾아 들어갑니다.
+2. Enter  `RoboPlus` > `ROBOTIS ENGINEER` > `CUSTOM` of your device folder. 
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_application_01.png)  
     ![](/assets/images/edu/engineer/kit1/obj_classification_application_02.png)  
     ![](/assets/images/edu/engineer/kit1/obj_classification_application_03.png)
 
-3. 프로젝트 폴더를 생성합니다. 여기에서는 `Project 1`을 프로젝트 폴더로 생성합니다.
+3. Create a folder named `Project 1` in the `CUSTOM` folder. 
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_application_04.png)
 
-    **참고** : 이미 사용중인 프로젝트가 있다면, 프로젝트 폴더를 생성하는 3번 과정은 건너뛸 수 있습니다.
+    **NOTICE** : If there is your own project, you can skip 3rd step of this instruction. 
     {: .notice--info}
 
-4. 데이터베이스를 사용하기 위해서 `Db` 폴더를 생성합니다.
+4. Create a `Db` folder to store training files.  
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_application_05.png)
 
-5. `!R+Smart` 에서 생성된 학습파일인 ***Smart_OC.txt*** 와 ***Smart_OC.pb*** 을 `Db` 폴더에 복사합니다.  
+5. Copy `Smart_OC.txt` and `Smart_OC.pb` files from `!R+Smart` and then paste them into the `Db` folder.   
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_application_06.png)
 
-6. 스마트 기기를 PC에서 분리한 다음 `ROBOTIS ENGINEER` 앱을 실행합니다.
+6. Disconnect the smart device from the PC, and then launch the `ROBOTIS ENGINEER` app on your smart device. 
 
     ![](/assets/images/edu/engineer/kit1/engineer_app_1.png)
 
-7. `User` 탭으로 이동합니다.
+7. Clic `User` tab.
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_test_01.png)
 
-8. 3번 단계에서 생성한 `Project 1` 프로젝트 폴더의 `설정` 아이콘을 클릭합니다.   
+8. Click a configuration icon of a folder `Project 1`.    
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_test_02.png)
 
-9. `비전` > `객체 분류` 를 선택합니다.
+9. Select `Object Classifier` at `Vision` section.
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_test_03.png)
 
-10. 이미지 폴더가 추가되었는지 확인합니다.
+10. To test object detection, select your custom object in the list.
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_test_04.png)
 
-11. 객체를 놓고, 카메라를 통해 사물인식이 잘 되는지 확인합니다.
+11. Detect objects in real time.  
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_test_05.png)   
 
 {% capture retrain %}
-**참고** : 이미 생성된 학습파일인 ***Smart_OC.txt*** 와 ***Smart_OC.pb*** 에는 새로운 데이터를 추가할 수 없습니다.  
-원하는 객체를 추가하려면 객체 이미지 폴더에 이미지를 추가한 다음, 새로운 학습파일을 만들어야 합니다.
-- [파일과 폴더 생성 방법](#파일과-폴더-생성)
-- [이미지 학습 방법](#이미지-학습)
+**NOTE** : It is not possible to add new object datas to `Smart_OC.txt` and `Smart_OC.pb`, which have been already configured. To add new data into them, please add a new object image to the subfolders created in `!R+Smart` .
+- [Create a file and a folder](#create-a-file-and-a-folder)
+- [Train models](#train-models)
 {% endcapture %}
 <div class="notice--info">{{ retrain | markdownify }}</div>
 
