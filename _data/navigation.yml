@@ -15836,7 +15836,7 @@ turtlebot3:
     url: /platform/turtlebot3/learn/#learn
     children:
     - title: "AWS RoboMaker with TurtleBot3"
-      url: /platform/turtlebot3/learn/#turtlebot3-aws-robomaker
+      url: /platform/turtlebot3/learn/#aws-robomaker-with-turtlebot3
     - title: "The Construct"
       url: /platform/turtlebot3/learn/#the-construct
     - title: "TurtleBot3 Blockly"
