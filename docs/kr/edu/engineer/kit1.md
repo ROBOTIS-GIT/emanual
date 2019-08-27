@@ -710,7 +710,7 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
     **주의** : 폴더와 파일의 이름은 반드시 영문이어야 합니다. 한글 이름을 사용할 경우 오류가 발생합니다.
     {: .notice--warning}
 
-2. 학습이 완료되면 아래와 같이 ***Smart_OC.txt*** 와 ***Smart_OC.pb*** 파일이 `!R+Smart` 폴더에 생성됩니다.
+2. 학습이 완료되면 아래와 같이 `Smart_OC.txt` 와 `Smart_OC.pb` 파일이 `!R+Smart` 폴더에 생성됩니다.
 
    ![](/assets/images/edu/engineer/kit1/obj_classification_oc.png)
 
@@ -735,7 +735,7 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_application_05.png)
 
-5. `!R+Smart` 에서 생성된 학습파일인 ***Smart_OC.txt*** 와 ***Smart_OC.pb*** 을 `Db` 폴더에 복사합니다.  
+5. `!R+Smart` 에서 생성된 학습파일인 `Smart_OC.txt` 와 `Smart_OC.pb` 을 `Db` 폴더에 복사합니다.  
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_application_06.png)
 
@@ -764,7 +764,7 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
     ![](/assets/images/edu/engineer/kit1/obj_classification_test_05.png)   
 
 {% capture retrain %}
-**참고** : 이미 생성된 학습파일인 ***Smart_OC.txt*** 와 ***Smart_OC.pb*** 에는 새로운 데이터를 추가할 수 없습니다.  
+**참고** : 이미 생성된 학습파일인 `Smart_OC.txt` 와 `Smart_OC.pb` 에는 새로운 데이터를 추가할 수 없습니다.  
 원하는 객체를 추가하려면 객체 이미지 폴더에 이미지를 추가한 다음, 새로운 학습파일을 만들어야 합니다.
 - [파일과 폴더 생성 방법](#파일과-폴더-생성)
 - [이미지 학습 방법](#이미지-학습)

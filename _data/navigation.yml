@@ -14241,9 +14241,9 @@ kit1:
     url: /edu/engineer/kit1/#tutorials
     urlkr: /edu/engineer/kit1/#튜토리얼
     children:
-    - title: "[Machine Learning] Object Recognition"
+    - title: "[Machine Learning] Object Detection"
       titlekr: "머신러닝 기반의 사물인식"
-      url: /edu/engineer/kit1/#machine-learning-object-recognition
+      url: /edu/engineer/kit1/#machine-learning-object-detection
       urlkr: /edu/engineer/kit1/#머신러닝-기반의-사물인식
   - title: "Study Materials"
     titlekr: "교육자료 다운로드"
