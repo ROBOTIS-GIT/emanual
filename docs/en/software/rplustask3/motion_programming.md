@@ -10,14 +10,10 @@ sidebar:
   title: R+ Task 3.0
   nav: "rplustask3"
 product_group: rplustask3
-page_number: 3
+page_number: 5
 ---
 
 <div style="counter-reset: h1 5"></div>
-
-<!--[dummy Header 1]>
-  <h1 id="rplustask3"><a href="#rplustask3">rplustask3</a></h1>
-<![end dummy Header 1]-->
 
 # [모션 프로그래밍](#모션-프로그래밍)
 

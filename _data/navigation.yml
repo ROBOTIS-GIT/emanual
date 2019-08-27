@@ -17765,245 +17765,243 @@ rplustask3:
       urlkr: /software/rplustask3/task_programming/#프로그램-출력보기
   - title: "Task Instructions"
     titlekr: "태스크 명령어"
-    url: /software/rplustask3/task_programming/#task-instructions
-    urlkr: /software/rplustask3/task_programming/#태스크-명령어
+    url: /software/rplustask3/task_instructions/#task-instructions
+    urlkr: /software/rplustask3/task_instructions/#태스크-명령어
     children:
     - title: "Start/End"
       titlekr: "시작과 끝"
-      url: /software/rplustask3/task_programming/#startend
-      urlkr: /software/rplustask3/task_programming/#시작과-끝
+      url: /software/rplustask3/task_instructions/#startend
+      urlkr: /software/rplustask3/task_instructions/#시작과-끝
       children:
       - title: "Start Program"
         titlekr: "프로그램 시작"
-        url: /software/rplustask3/task_programming/#start-program
-        urlkr: /software/rplustask3/task_programming/#프로그램-시작
+        url: /software/rplustask3/task_instructions/#start-program
+        urlkr: /software/rplustask3/task_instructions/#프로그램-시작
       - title: "End Program"
         titlekr: "프로그램 끝"
-        url: /software/rplustask3/task_programming/#end-program
-        urlkr: /software/rplustask3/task_programming/#프로그램-끝
+        url: /software/rplustask3/task_instructions/#end-program
+        urlkr: /software/rplustask3/task_instructions/#프로그램-끝
       - title: "Begin Block / End Block"
         titlekr: "구간 시작 / 구간 끝"
-        url: /software/rplustask3/task_programming/#begin-block--end-block
-        urlkr: /software/rplustask3/task_programming/#구간-시작--구간-끝
+        url: /software/rplustask3/task_instructions/#begin-block--end-block
+        urlkr: /software/rplustask3/task_instructions/#구간-시작--구간-끝
       - title: "Comment"
         titlekr: "주석"
-        url: /software/rplustask3/task_programming/#comment
-        urlkr: /software/rplustask3/task_programming/#주석
+        url: /software/rplustask3/task_instructions/#comment
+        urlkr: /software/rplustask3/task_instructions/#주석
     - title: "Execute"
       titlekr: "실행문"
-      url: /software/rplustask3/task_programming/#execute
-      urlkr: /software/rplustask3/task_programming/#실행문
+      url: /software/rplustask3/task_instructions/#execute
+      urlkr: /software/rplustask3/task_instructions/#실행문
       children:
       - title: "Compute"
         titlekr: "계산"
-        url: /software/rplustask3/task_programming/#compute
-        urlkr: /software/rplustask3/task_programming/#계산
+        url: /software/rplustask3/task_instructions/#compute
+        urlkr: /software/rplustask3/task_instructions/#계산
       - title: "Load"
         titlekr: "로드"
-        url: /software/rplustask3/task_programming/#load
-        urlkr: /software/rplustask3/task_programming/#로드
+        url: /software/rplustask3/task_instructions/#load
+        urlkr: /software/rplustask3/task_instructions/#로드
       - title: "Multi Compute"
         titlekr: "다중 수식"
-        url: /software/rplustask3/task_programming/#multi-compute
-        urlkr: /software/rplustask3/task_programming/#다중-수식
+        url: /software/rplustask3/task_instructions/#multi-compute
+        urlkr: /software/rplustask3/task_instructions/#다중-수식
       - title: "Lable/Jump"
         titlekr: "레이블/점프"
-        url: /software/rplustask3/task_programming/#lablejump
-        urlkr: /software/rplustask3/task_programming/#레이블점프
+        url: /software/rplustask3/task_instructions/#lablejump
+        urlkr: /software/rplustask3/task_instructions/#레이블점프
     - title: "Condition"
       titlekr: "조건문"
-      url: /software/rplustask3/task_programming/#condition
-      urlkr: /software/rplustask3/task_programming/#조건문
+      url: /software/rplustask3/task_instructions/#condition
+      urlkr: /software/rplustask3/task_instructions/#조건문
       children:
       - title: "Conditional Clause"
         titlekr: "조건절이란?"
-        url: /software/rplustask3/task_programming/#conditional-clause
-        urlkr: /software/rplustask3/task_programming/#조건절이란
+        url: /software/rplustask3/task_instructions/#conditional-clause
+        urlkr: /software/rplustask3/task_instructions/#조건절이란
       - title: "If"
         titlekr: "만약"
-        url: /software/rplustask3/task_programming/#if
-        urlkr: /software/rplustask3/task_programming/#만약
+        url: /software/rplustask3/task_instructions/#if
+        urlkr: /software/rplustask3/task_instructions/#만약
       - title: "Else If"
         titlekr: "아니면 만약"
-        url: /software/rplustask3/task_programming/#else-if
-        urlkr: /software/rplustask3/task_programming/#아니면-만약
+        url: /software/rplustask3/task_instructions/#else-if
+        urlkr: /software/rplustask3/task_instructions/#아니면-만약
       - title: "Else"
         titlekr: "아니면"
-        url: /software/rplustask3/task_programming/#else
-        urlkr: /software/rplustask3/task_programming/#아니면
+        url: /software/rplustask3/task_instructions/#else
+        urlkr: /software/rplustask3/task_instructions/#아니면
     - title: "Loop"
       titlekr: "반복문"
-      url: /software/rplustask3/task_programming/#loop
-      urlkr: /software/rplustask3/task_programming/#반복문
+      url: /software/rplustask3/task_instructions/#loop
+      urlkr: /software/rplustask3/task_instructions/#반복문
       children:
       - title: "Endless Loop"
         titlekr: "무조건 반복"
-        url: /software/rplustask3/task_programming/#endless-loop
-        urlkr: /software/rplustask3/task_programming/#무조건-반복
+        url: /software/rplustask3/task_instructions/#endless-loop
+        urlkr: /software/rplustask3/task_instructions/#무조건-반복
       - title: "Loop While"
         titlekr: "조건 반복"
-        url: /software/rplustask3/task_programming/#loop-while
-        urlkr: /software/rplustask3/task_programming/#조건-반복
+        url: /software/rplustask3/task_instructions/#loop-while
+        urlkr: /software/rplustask3/task_instructions/#조건-반복
       - title: "Loop For"
         titlekr: "횟수 반복"
-        url: /software/rplustask3/task_programming/#loop-for
-        urlkr: /software/rplustask3/task_programming/#횟수-반복
+        url: /software/rplustask3/task_instructions/#loop-for
+        urlkr: /software/rplustask3/task_instructions/#횟수-반복
       - title: "Wait While"
         titlekr: "조건 대기"
-        url: /software/rplustask3/task_programming/#wait-while
-        urlkr: /software/rplustask3/task_programming/#조건-대기
+        url: /software/rplustask3/task_instructions/#wait-while
+        urlkr: /software/rplustask3/task_instructions/#조건-대기
       - title: "Break Loop"
         titlekr: "반복 끝내기"
-        url: /software/rplustask3/task_programming/#break-loop
-        urlkr: /software/rplustask3/task_programming/#반복-끝내기
+        url: /software/rplustask3/task_instructions/#break-loop
+        urlkr: /software/rplustask3/task_instructions/#반복-끝내기
     - title: "Function(Sub-Routine)"
       titlekr: "함수(서브루틴)"
-      url: /software/rplustask3/task_programming/#functionsub-routine
-      urlkr: /software/rplustask3/task_programming/#함수서브루틴
+      url: /software/rplustask3/task_instructions/#functionsub-routine
+      urlkr: /software/rplustask3/task_instructions/#함수서브루틴
       children:
       - title: "Function/Call"
         titlekr: "함수/호출"
-        url: /software/rplustask3/task_programming/#functioncall
-        urlkr: /software/rplustask3/task_programming/#함수호출
+        url: /software/rplustask3/task_instructions/#functioncall
+        urlkr: /software/rplustask3/task_instructions/#함수호출
       - title: "Return"
         titlekr: "복귀"
-        url: /software/rplustask3/task_programming/#return
-        urlkr: /software/rplustask3/task_programming/#복귀
+        url: /software/rplustask3/task_instructions/#return
+        urlkr: /software/rplustask3/task_instructions/#복귀
       - title: "Callback"
         titlekr: "콜백"
-        url: /software/rplustask3/task_programming/#callback
-        urlkr: /software/rplustask3/task_programming/#콜백
+        url: /software/rplustask3/task_instructions/#callback
+        urlkr: /software/rplustask3/task_instructions/#콜백
   - title: "Task Parameters"
     titlekr: "태스크 파라미터"
-    url: /software/rplustask3/task_programming/#task-parameters
-    urlkr: /software/rplustask3/task_programming/#태스크-파라미터
+    url: /software/rplustask3/task_parameters/#task-parameters
+    urlkr: /software/rplustask3/task_parameters/#태스크-파라미터
     children:
-    - title: "Port Nickname"
-      titlekr: "포트 닉네임 변경"
-      url: /software/rplustask3/task_programming/#port-nickname
-      urlkr: /software/rplustask3/task_programming/#포트-닉네임-변경
     - title: "Controller Device"
       titlekr: "제어기 장치"
-      url: /software/rplustask3/task_programming/#controller-device
-      urlkr: /software/rplustask3/task_programming/#제어기-장치
+      url: /software/rplustask3/task_parameters/#controller-device
+      urlkr: /software/rplustask3/task_parameters/#제어기-장치
       children:
       - title: "Accessory Device"
         titlekr: "주변 장치"
-        url: /software/rplustask3/task_programming/#accessory-device
-        urlkr: /software/rplustask3/task_programming/#주변-장치
+        url: /software/rplustask3/task_parameters/#accessory-device
+        urlkr: /software/rplustask3/task_parameters/#주변-장치
       - title: "Motion Control"
         titlekr: "모션 제어"
-        url: /software/rplustask3/task_programming/#motion-control
-        urlkr: /software/rplustask3/task_programming/#모션-제어
+        url: /software/rplustask3/task_parameters/#motion-control
+        urlkr: /software/rplustask3/task_parameters/#모션-제어
       - title: "Built-in Sensor"
         titlekr: "내장 센서"
-        url: /software/rplustask3/task_programming/#built-in-sensor
-        urlkr: /software/rplustask3/task_programming/#내장-센서
+        url: /software/rplustask3/task_parameters/#built-in-sensor
+        urlkr: /software/rplustask3/task_parameters/#내장-센서
       - title: "Buzzer"
         titlekr: "버저"
-        url: /software/rplustask3/task_programming/#buzzer
-        urlkr: /software/rplustask3/task_programming/#버저
+        url: /software/rplustask3/task_parameters/#buzzer
+        urlkr: /software/rplustask3/task_parameters/#버저
       - title: "Remote Controller"
         titlekr: "리모컨"
-        url: /software/rplustask3/task_programming/#remote-controller
-        urlkr: /software/rplustask3/task_programming/#리모컨
+        url: /software/rplustask3/task_parameters/#remote-controller
+        urlkr: /software/rplustask3/task_parameters/#리모컨
       - title: "Timer"
         titlekr: "타이머"
-        url: /software/rplustask3/task_programming/#timer
-        urlkr: /software/rplustask3/task_programming/#타이머
-      - title: ""
+        url: /software/rplustask3/task_parameters/#timer
+        urlkr: /software/rplustask3/task_parameters/#타이머
+      - title: "Miscellaneous"
         titlekr: "기타"
-        url: /software/rplustask3/task_programming/#
-        urlkr: /software/rplustask3/task_programming/#제어기-기타
-      - title: ""
+        url: /software/rplustask3/task_parameters/#controller-miscellenous
+        urlkr: /software/rplustask3/task_parameters/#제어기-기타
+      - title: "Custom"
         titlekr: "직접 입력"
-        url: /software/rplustask3/task_programming/#
-        urlkr: /software/rplustask3/task_programming/#제어기-직접-입력
+        url: /software/rplustask3/task_parameters/#controller-custom
+        urlkr: /software/rplustask3/task_parameters/#제어기-직접-입력
     - title: "DYNAMIXEL Device"
       titlekr: "다이나믹셀 장치"
-      url: /software/rplustask3/task_programming/#dynamixel-device
-      urlkr: /software/rplustask3/task_programming/#다이나믹셀-장치
+      url: /software/rplustask3/task_parameters/#dynamixel-device
+      urlkr: /software/rplustask3/task_parameters/#다이나믹셀-장치
       children:
       - title: "DYNAMIXEL"
         titlekr: "다이나믹셀"
-        url: /software/rplustask3/task_programming/#dynamixel
-        urlkr: /software/rplustask3/task_programming/#다이나믹셀
+        url: /software/rplustask3/task_parameters/#dynamixel
+        urlkr: /software/rplustask3/task_parameters/#다이나믹셀
       - title: "SyncWrite"
         titlekr: "SyncWrite"
-        url: /software/rplustask3/task_programming/#syncwrite
-        urlkr: /software/rplustask3/task_programming/#syncwrite
-      - title: ""
-        titlekr: "적외선 센서 어레이"
-        url: /software/rplustask3/task_programming/#
-        urlkr: /software/rplustask3/task_programming/#적외선-센서-어레이
-      - title: ""
+        url: /software/rplustask3/task_parameters/#syncwrite
+        urlkr: /software/rplustask3/task_parameters/#syncwrite
+      - title: "IR Array Sensor"
+        titlekr: "적외선 어레이 센서"
+        url: /software/rplustask3/task_parameters/#ir-array-sensor
+        urlkr: /software/rplustask3/task_parameters/#적외선-어레이-센서
+      - title: "Custom"
         titlekr: "직접 입력"
-        url: /software/rplustask3/task_programming/#
-        urlkr: /software/rplustask3/task_programming/#다이나믹셀-장치-직접-입력
-    - titlekr: "스마트 장치"
-      urlkr: /software/rplustask3/task_programming/#스마트-장치
+        url: /software/rplustask3/task_parameters/#dynamixel-custom
+        urlkr: /software/rplustask3/task_parameters/#다이나믹셀-장치-직접-입력
+    - title: "Smart Device"
+      titlekr: "스마트 장치"
+      url: /software/rplustask3/task_parameters/#smart-device
+      urlkr: /software/rplustask3/task_parameters/#스마트-장치
       children:
-      - title: ""
+      - title: "Camera"
         titlekr: "카메라"
-        url: /software/rplustask3/task_programming/#
-        urlkr: /software/rplustask3/task_programming/#카메라
+        url: /software/rplustask3/task_parameters/#camera
+        urlkr: /software/rplustask3/task_parameters/#카메라
       - title: ""
         titlekr: "비전"
-        url: /software/rplustask3/task_programming/#
-        urlkr: /software/rplustask3/task_programming/#비전
+        url: /software/rplustask3/task_parameters/#
+        urlkr: /software/rplustask3/task_parameters/#비전
       - title: ""
         titlekr: "표시"
-        url: /software/rplustask3/task_programming/#
-        urlkr: /software/rplustask3/task_programming/#표시
+        url: /software/rplustask3/task_parameters/#
+        urlkr: /software/rplustask3/task_parameters/#표시
       - title: ""
         titlekr: "멀티미디어"
-        url: /software/rplustask3/task_programming/#
-        urlkr: /software/rplustask3/task_programming/#멀티미디어
+        url: /software/rplustask3/task_parameters/#
+        urlkr: /software/rplustask3/task_parameters/#멀티미디어
       - title: ""
         titlekr: "센서"
-        url: /software/rplustask3/task_programming/#
-        urlkr: /software/rplustask3/task_programming/#센서
+        url: /software/rplustask3/task_parameters/#
+        urlkr: /software/rplustask3/task_parameters/#센서
       - title: ""
         titlekr: "기타"
-        url: /software/rplustask3/task_programming/#
-        urlkr: /software/rplustask3/task_programming/#스마트-장치-기타
+        url: /software/rplustask3/task_parameters/#
+        urlkr: /software/rplustask3/task_parameters/#스마트-장치-기타
       - title: ""
         titlekr: "사용자 데이터"
-        url: /software/rplustask3/task_programming/#
-        urlkr: /software/rplustask3/task_programming/#사용자-데이터
+        url: /software/rplustask3/task_parameters/#
+        urlkr: /software/rplustask3/task_parameters/#사용자-데이터
       - title: ""
         titlekr: "직접 입력"
-        url: /software/rplustask3/task_programming/#
-        urlkr: /software/rplustask3/task_programming/#스마트-장치-직접-입력
+        url: /software/rplustask3/task_parameters/#
+        urlkr: /software/rplustask3/task_parameters/#스마트-장치-직접-입력
     - title: "Common"
       titlekr: "공통"
-      url: /software/rplustask3/task_programming/#common
-      urlkr: /software/rplustask3/task_programming/#공통
+      url: /software/rplustask3/task_parameters/#common
+      urlkr: /software/rplustask3/task_parameters/#공통
       children:
       - title: ""
         titlekr: "변수"
-        url: /software/rplustask3/task_programming/#
-        urlkr: /software/rplustask3/task_programming/#변수
+        url: /software/rplustask3/task_parameters/#
+        urlkr: /software/rplustask3/task_parameters/#변수
       - title: ""
         titlekr: "숫자"
-        url: /software/rplustask3/task_programming/#
-        urlkr: /software/rplustask3/task_programming/#숫자
+        url: /software/rplustask3/task_parameters/#
+        urlkr: /software/rplustask3/task_parameters/#숫자
       - title: ""
         titlekr: "참/거짓"
-        url: /software/rplustask3/task_programming/#
-        urlkr: /software/rplustask3/task_programming/#참거짓
+        url: /software/rplustask3/task_parameters/#
+        urlkr: /software/rplustask3/task_parameters/#참거짓
       - title: ""
         titlekr: "2진수 숫자"
-        url: /software/rplustask3/task_programming/#
-        urlkr: /software/rplustask3/task_programming/#2진수-숫자
+        url: /software/rplustask3/task_parameters/#
+        urlkr: /software/rplustask3/task_parameters/#2진수-숫자
       - title: ""
         titlekr: "모터 모드"
-        url: /software/rplustask3/task_programming/#
-        urlkr: /software/rplustask3/task_programming/#모터-모드
+        url: /software/rplustask3/task_parameters/#
+        urlkr: /software/rplustask3/task_parameters/#모터-모드
     - title: ""
       titlekr: "모션 목록"
-      url: /software/rplustask3/task_programming/#
-      urlkr: /software/rplustask3/task_programming/#모션-목록
+      url: /software/rplustask3/task_parameters/#
+      urlkr: /software/rplustask3/task_parameters/#모션-목록
   - title: "Motion Programming"
     titlekr: "모션 프로그래밍"
     url: /software/rplustask3/motion_programming/#motion-programming

@@ -961,11 +961,11 @@ When playing a melody, the Buzzer timer should be set as the melody’s run time
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_141.jpg)
 
-## [Dynamixel](#dynamixel)
+## [DYNAMIXEL](#dynamixel)
 
-These are the parameters for reading/writing the values of the Dynamixel control table. Please refer to the Dynamixel's Control Table for more detail. Dynamixel
+These are the parameters for reading or writing values in the DYNAMIXEL Control Table. Please refer to the DYNAMIXEL Control Table for more details.
 
-### Dynamixel actuator
+### DYNAMIXEL actuator
 
 - **Turn Torque On/Off** : used to turn the Dynamixel Torque on/off
    Torque is turned on when True, Torque is turned off when False.
@@ -985,15 +985,15 @@ These are the parameters for reading/writing the values of the Dynamixel control
    There are a total of seven phases which the value can be set to, and the representative values of each phase are set as in the table below.  
    Please refer to the Dynamixel Control Table for more detail.
 
-|Level|Real Data Value|Representative Data Value|
-|:---:|:---:|:---:|
-|1|0 (0x00) ~ 3(0x03)|2 (0x02)|
-|2|4(0x04) ~ 7(0x07)|4 (0x04)|
-|3|8(0x08)~15(0x0F)|8 (0x08)|
-|4|16(0x10)~31(0x1F)|16 (0x10)|
-|5|32(0x20)~63(0x3F)|32 (0x20)|
-|6|64(0x40)~127(0x7F)|64 (0x40)|
-|7|128(0x80)~254(0xFE)|128 (0x80)|
+| Level |   Real Data Value   | Representative Data Value |
+|:-----:|:-------------------:|:-------------------------:|
+|   1   | 0 (0x00) ~ 3(0x03)  |         2 (0x02)          |
+|   2   |  4(0x04) ~ 7(0x07)  |         4 (0x04)          |
+|   3   |  8(0x08)~15(0x0F)   |         8 (0x08)          |
+|   4   |  16(0x10)~31(0x1F)  |         16 (0x10)         |
+|   5   |  32(0x20)~63(0x3F)  |         32 (0x20)         |
+|   6   | 64(0x40)~127(0x7F)  |         64 (0x40)         |
+|   7   | 128(0x80)~254(0xFE) |        128 (0x80)         |
 
 - **P gain / I gain/ D gain** : used to read/configure the Dynamixel PID values  
    P gain refers to Proportional Gain, for which the smaller the value is the larger the clearance gets, and the power level decreases near the target location.  
@@ -1030,10 +1030,10 @@ These are the parameters for reading/writing the values of the Dynamixel control
 
 - **Infrared detection standard value (numbers 1~7)** : used as the standard values for the infrared sensor array to determine whether the color is white or black.
 
-||Black detection|LED|
-|:----:|:---:|:---:|
-|Sensor value <= set value|BIT 1|ON|
-|Sensor value > set value| BIT 0|OFF|
+|                           | Black detection | LED |
+|:-------------------------:|:---------------:|:---:|
+| Sensor value <= set value |      BIT 1      | ON  |
+| Sensor value > set value  |      BIT 0      | OFF |
 
 - **Buzzer index** : used to configure the type of Buzzer for the infrared sensor array
 - **Buzzer timer** : used to configure the duration of the Buzzer sound in the case that the infrared sensor array’s Buzzer is used.  
@@ -1043,15 +1043,15 @@ These are the parameters for reading/writing the values of the Dynamixel control
 
 - **Infrared object detection result** : used to read whether an object has been detection in the infrared sensor array
 
-|Binary value|Decimal value|Black detection|
-|:---:|:---:|:---:|
-|0000001|1|Black detection for IR sensor #1|
-|0000010|2|Black detection for IR sensor #2|
-|0000100|4|Black detection for IR sensor #3|
-|0001000|8|Black detection for IR sensor #4|
-|0010000|16|Black detection for IR sensor #5|
-|0100000|32|Black detection for IR sensor #6|
-|1000000|64|Black detection for IR sensor #7|  
+| Binary value | Decimal value |         Black detection          |
+|:------------:|:-------------:|:--------------------------------:|
+|   0000001    |       1       | Black detection for IR sensor #1 |
+|   0000010    |       2       | Black detection for IR sensor #2 |
+|   0000100    |       4       | Black detection for IR sensor #3 |
+|   0001000    |       8       | Black detection for IR sensor #4 |
+|   0010000    |      16       | Black detection for IR sensor #5 |
+|   0100000    |      32       | Black detection for IR sensor #6 |
+|   1000000    |      64       | Black detection for IR sensor #7 |
 
 Use can check the value while looking at the screen as shown below.
 
