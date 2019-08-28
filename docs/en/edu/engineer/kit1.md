@@ -49,7 +49,7 @@ product_group: 2xl430-w250
 
 ![](/assets/images/edu/engineer/kit1/cm550_1.png)
 
-![](/assets/images/edu/engineer/kit1/cm550_2_kr.png)
+![](/assets/images/edu/engineer/kit1/cm550_2.png)
 
 - `USB` Micro USB Port : The 5 pin micro USB cable can be used to connect to the USB port of the PC.
 - `UART` Communication Port : BT-210, BT-410, LN-101, IR receiver or other communication modules can be connected.
@@ -190,14 +190,14 @@ The usage is identical to other DYNAMIXELs, but be aware that Firmware Recovery 
 
 ##### 6mm Rivet
 
-![](/assets/images/edu/engineer/kit1/rivet_assembly_6mm_kr.png)  
+![](/assets/images/edu/engineer/kit1/rivet_assembly_6mm.png)  
 
 **CAUTION** : When reusing rivets, the pin hole must be inserted first. Used rivet will not be separated into pin and pinhole.
 {: .notice--warning}
 
 ##### 12mm Rivet
 
-![](/assets/images/edu/engineer/kit1/rivet_assembly_12mm_kr.png)
+![](/assets/images/edu/engineer/kit1/rivet_assembly_12mm.png)
 
 
 #### [Cable Assemlby](#cable-assembly)
@@ -242,7 +242,7 @@ It is not a mandatory and it may require more time to replace the cable afterwar
   ![](/assets/images/edu/engineer/kit1/app_installation_03.png)
 
 4. **Android** : Press the `Agree` button to proceed installation.  
-  ![](/assets/images/edu/engineer/kit1/app_installation_04_kr.png)
+  ![](/assets/images/edu/engineer/kit1/app_installation_04.png)
 
 
 ## [Pairing Bluetooth](#pairing-bluetooth)

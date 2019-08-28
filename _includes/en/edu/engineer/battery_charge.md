@@ -11,13 +11,13 @@
   ![](/assets/images/edu/engineer/kit1/battery_charging_1_kr.png)
 
 2. Connect the battery to the charger as shown below.  
-  ![](/assets/images/edu/engineer/kit1/battery_charging_2_kr.png)
+  ![](/assets/images/edu/engineer/kit1/battery_charging_2.png)
 
 3. When fully charged, the LED will emit a solid green light.  
-  ![](/assets/images/edu/engineer/kit1/battery_charging_3_kr.png)
+  ![](/assets/images/edu/engineer/kit1/battery_charging_3.png)
 
 4. The robot and controller can also be powered by the SMPS without the battery.  
   ![](/assets/images/edu/engineer/kit1/battery_charging_4_kr.png)
 
 5. The battery has separate connectors for the charger and the robot. Please disconnect the `Robot Connector` from the robot when charging the battery.  
-  ![](/assets/images/edu/engineer/kit1/battery_charging_5_kr.png)
+  ![](/assets/images/edu/engineer/kit1/battery_charging_5.png)
