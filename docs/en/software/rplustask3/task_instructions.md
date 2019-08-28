@@ -135,13 +135,13 @@ The following is an example of setting the speed value of Geared Motor connected
   ![](/assets/images/sw/rplus_task3/multiple_expression_3.png)
 
 
-### [Lable/Jump](#lablejump)
+### [Label/Jump](#labeljump)
 
 - These instructions are used for branching the program.
-- Lable indicates the branch of the program.
-- Jump instruction skips to the designated Lable and run the code.
+- Label indicates the branch of the program.
+- Jump instruction skips to the designated Label and run the code.
 
-The following examples show how Lable and Jump can be used.
+The following examples show how Label and Jump can be used.
 - The left example will run the Mode1 only and skip the Mode2.
 - The right example will run the Mode2 only and skip the Mode1.
 
@@ -343,8 +343,8 @@ The following is an example of a function being executed but encountering Return
 - This function is executed independently from the main program routine, executing itself periodically
 - Callback functions must be written outside of the main program routine.
 - Because it is not allowed to write code within a callback that takes too much time to execute, callback has restrictions in the use of Loops / Variables / Parameter Calls / volume of code.
-- The following restrictions must be met when using a callback function.
-  - Loops, Labels, Jumps, Calls are not allowed
+- The following restrictions must be applied when using a callback function.
+  - Loops, Labels, Jumps, Calls are not allowed in the Callback
   - Communication with an external device is limited to a maximum of 2 times
   - The code size of callback function cannot exceed 512 bytes
 

@@ -437,11 +437,11 @@ Refer to the following figure for details.
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_061.jpg)
 
-### Lable/Jump
+### Label/Jump
 
 - These instructions are used for branching the program.
-- Lable indicates the branch of the program.
-- Jump instruction skips to the designated Lable and run the code.
+- Label indicates the branch of the program.
+- Jump instruction skips to the designated Label and run the code.
 
 The figures below show how the program branches by using Jump.
 - The figure on the left shows the program jumping to Mode1 and executing only the code from Mode1.
@@ -968,32 +968,32 @@ These are the parameters for reading or writing values in the DYNAMIXEL Control 
 ### DYNAMIXEL actuator
 
 - **Turn Torque On/Off** : used to turn the Dynamixel Torque on/off
-   Torque is turned on when True, Torque is turned off when False.
+  Torque is turned on when True, Torque is turned off when False.
 
 - The following is an example of turning on the Torque of Dynamixel with ID number 1 when the Controller’s button is pressed.
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_142.jpg)
 
 - **LED** : used to turn the Dynamixel LED on/off  
-   LED is turned on when True, LED is turned off when False.
+  LED is turned on when True, LED is turned off when False.
 
 - **CW margin / CCW margin** : used to read/configure the Dynamixel Margin value  
-   The range of the value is from 0 to 255, but it is recommended not to change the default value (1).  
-   Please refer to the Dynamixel Control Table for more detail.
+  The range of the value is from 0 to 255, but it is recommended not to change the default value (1).  
+  Please refer to the Dynamixel Control Table for more detail.
 
 - **CW slope / CCW slope** : used to read/configure the Dynamixel Slope value  
-   There are a total of seven phases which the value can be set to, and the representative values of each phase are set as in the table below.  
-   Please refer to the Dynamixel Control Table for more detail.
+  There are a total of seven phases which the value can be set to, and the representative values of each phase are set as in the table below.  
+  Please refer to the Dynamixel Control Table for more detail.
 
-| Level |   Real Data Value   | Representative Data Value |
-|:-----:|:-------------------:|:-------------------------:|
-|   1   | 0 (0x00) ~ 3(0x03)  |         2 (0x02)          |
-|   2   |  4(0x04) ~ 7(0x07)  |         4 (0x04)          |
-|   3   |  8(0x08)~15(0x0F)   |         8 (0x08)          |
-|   4   |  16(0x10)~31(0x1F)  |         16 (0x10)         |
-|   5   |  32(0x20)~63(0x3F)  |         32 (0x20)         |
-|   6   | 64(0x40)~127(0x7F)  |         64 (0x40)         |
-|   7   | 128(0x80)~254(0xFE) |        128 (0x80)         |
+  | Level |    Real Data Value    | Representative Data Value |
+  |:-----:|:---------------------:|:-------------------------:|
+  |   1   |  0 (0x00) ~ 3(0x03)   |         2 (0x02)          |
+  |   2   |   4(0x04) ~ 7(0x07)   |         4 (0x04)          |
+  |   3   |  8(0x08) ~ 15(0x0F)   |         8 (0x08)          |
+  |   4   |  16(0x10) ~ 31(0x1F)  |         16 (0x10)         |
+  |   5   |  32(0x20) ~ 63(0x3F)  |         32 (0x20)         |
+  |   6   | 64(0x40) ~ 127(0x7F)  |         64 (0x40)         |
+  |   7   | 128(0x80) ~ 254(0xFE) |        128 (0x80)         |
 
 - **P gain / I gain/ D gain** : used to read/configure the Dynamixel PID values  
    P gain refers to Proportional Gain, for which the smaller the value is the larger the clearance gets, and the power level decreases near the target location.  
@@ -1004,7 +1004,7 @@ These are the parameters for reading or writing values in the DYNAMIXEL Control 
 
    ![](/assets/images/sw/rplus2/task/roboplus_task2_143.jpg)
 
-- Moving speed : used to read/configure the Dynamixel speed  
+- **Moving speed** : used to read/configure the Dynamixel speed  
    The “motor control value” control can be used to designate the rotation direction and power value as shown below.
 
    ![](/assets/images/sw/rplus2/task/roboplus_task2_144.jpg)

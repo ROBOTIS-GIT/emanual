@@ -9,7 +9,6 @@ permalink: /docs/en/edu/engineer/kit1/
 sidebar:
   title: ENGINEER Kit1
   nav: "kit1"
-product_group: 2xl430-w250
 ---
 
 # [Introduction](#introduction)
@@ -81,29 +80,29 @@ product_group: 2xl430-w250
 
 The usage is identical to other DYNAMIXELs, but be aware that Firmware Recovery will reset both axis to factory settings.
 
-| Item                   | Specifications                                                    |
-|:-----------------------|:------------------------------------------------------------------|
-| MCU                    | {{ site.data.dxl_x_info[page.product_group].mcu }}                |
-| Position Sensor        | {{ site.data.dxl_x_info[page.product_group].encoder }}            |
-| Motor                  | {{ site.data.dxl_x_info[page.product_group].motor }}              |
-| Baud Rate              | {{ site.data.dxl_x_info[page.product_group].baudrate }}           |
-| Control Algorithm      | {{ site.data.dxl_x_info[page.product_group].control }}            |
-| Resolution             | {{ site.data.dxl_x_info[page.product_group].resolution }}         |
-| Operating Modes        | {{ site.data.dxl_x_info[page.product_group].mode }}               |
-| Weight                 | {{ site.data.dxl_x_info[page.product_group].weight }}             |
-| Dimensions (W x H x D) | {{ site.data.dxl_x_info[page.product_group].dimensions }}         |
-| Gear Ratio             | {{ site.data.dxl_x_info[page.product_group].gearratio }}          |
-| Stall Torque           | {{ site.data.dxl_x_info[page.product_group].stalltorque }}        |
-| No Load Speed          | {{ site.data.dxl_x_info[page.product_group].noloadspeed }}        |
-| Operating Temperature  | {{ site.data.dxl_x_info[page.product_group].temperature }}        |
-| Input Voltage          | {{ site.data.dxl_x_info[page.product_group].voltage }}            |
-| Command Signal         | {{ site.data.dxl_x_info[page.product_group].command }}            |
-| Protocol Type          | {{ site.data.dxl_x_info[page.product_group].protocoltype }}       |
-| Physical Connection    | {{ site.data.dxl_x_info[page.product_group].physicalconnection }} |
-| ID                     | {{ site.data.dxl_x_info[page.product_group].id }}                 |
-| Feedback               | {{ site.data.dxl_x_info[page.product_group].feedback }}           |
-| Part Material          | {{ site.data.dxl_x_info[page.product_group].material }}           |
-| Standby Current        | {{ site.data.dxl_x_info[page.product_group].standbycurrent }}     |
+| Item                   | Specifications                                             |
+|:-----------------------|:-----------------------------------------------------------|
+| MCU                    | {{ site.data.dxl_x_info._2xl430-w250.mcu }}                |
+| Position Sensor        | {{ site.data.dxl_x_info._2xl430-w250.encoder }}            |
+| Motor                  | {{ site.data.dxl_x_info._2xl430-w250.motor }}              |
+| Baud Rate              | {{ site.data.dxl_x_info._2xl430-w250.baudrate }}           |
+| Control Algorithm      | {{ site.data.dxl_x_info._2xl430-w250.control }}            |
+| Resolution             | {{ site.data.dxl_x_info._2xl430-w250.resolution }}         |
+| Operating Modes        | {{ site.data.dxl_x_info._2xl430-w250.mode }}               |
+| Weight                 | {{ site.data.dxl_x_info._2xl430-w250.weight }}             |
+| Dimensions (W x H x D) | {{ site.data.dxl_x_info._2xl430-w250.dimensions }}         |
+| Gear Ratio             | {{ site.data.dxl_x_info._2xl430-w250.gearratio }}          |
+| Stall Torque           | {{ site.data.dxl_x_info._2xl430-w250.stalltorque }}        |
+| No Load Speed          | {{ site.data.dxl_x_info._2xl430-w250.noloadspeed }}        |
+| Operating Temperature  | {{ site.data.dxl_x_info._2xl430-w250.temperature }}        |
+| Input Voltage          | {{ site.data.dxl_x_info._2xl430-w250.voltage }}            |
+| Command Signal         | {{ site.data.dxl_x_info._2xl430-w250.command }}            |
+| Protocol Type          | {{ site.data.dxl_x_info._2xl430-w250.protocoltype }}       |
+| Physical Connection    | {{ site.data.dxl_x_info._2xl430-w250.physicalconnection }} |
+| ID                     | {{ site.data.dxl_x_info._2xl430-w250.id }}                 |
+| Feedback               | {{ site.data.dxl_x_info._2xl430-w250.feedback }}           |
+| Part Material          | {{ site.data.dxl_x_info._2xl430-w250.material }}           |
+| Standby Current        | {{ site.data.dxl_x_info._2xl430-w250.standbycurrent }}     |
 
 **[2XL430-W250 eManual]{: .blank}**
 {: .notice}
@@ -548,10 +547,10 @@ Please perform offset adjustment with a thorough understanding as it may cause u
 # [Tutorials](#tutorials)
 
 ## [[Machine Learning] Object Detection](#machine-learning-object-detection)
-Get started to learn a machine learning with your **ROBOTIS ENGINNER** and Tensor Flow developed by Google Brain.  
-Tensor Flow is a machine learning application to ease the process of acquiring data and training models.
-Once you finish this instruction, you will have the ability to utilize an object detection which is one of the part of a machine learning.
-Explore following simple steps and train your robot to detect your custom objects.  
+Get started to learn a machine learning with **ROBOTIS ENGINNER** and Tensor Flow developed by Google Brain.  
+Tensor Flow is a machine learning application to ease the process of acquiring data and training models.  
+Once you finish this instruction, you will understand how to utilize the object detection which is one of the part of a machine learning.
+Explore following simple steps and train your robot to recognize your custom objects.  
 
 {% capture info_01 %}
 - Use a smart device with a camera to utilize the object detection. 

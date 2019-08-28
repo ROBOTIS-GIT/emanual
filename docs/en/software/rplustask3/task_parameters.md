@@ -234,7 +234,7 @@ The following is an example of using buttons for OpenCM9.04.
 
 ![](/assets/images/sw/rplus_task3/task3_101.png)
 
-#### Controller Button Released Event
+#### Button Released Event
 When the START button of CM-550 is released, this value is updated to 1(True), and the value will be reset to 0(False) after the data is read.
 
 #### Button Pressed Timer(ms)
@@ -284,7 +284,7 @@ Reads the supplied voltage of the controller.
 #### Controller Temperature
 Reads present temperature of the CM-550.
 
-#### Controller IMU Direction
+#### IMU Orientation
 Based on the assembly of CM-550, configure the orientation of CM-550 controller. Vertical and horizontal orientations can be defined as below.
 
 | Controller Orientation | Value |
@@ -458,137 +458,134 @@ These are the parameters for reading or writing values in the DYNAMIXEL Control 
 
 ### [DYNAMIXEL](#dynamixel)
 
-- DX / RX / AX supported parameters  
-  토크 켜기 / 끄기, LED, CW margin / CCW margin, CW slope / CCW slope, 목표 위치, 이동 속도, 토크 한계, 현재 위치, 현재 속도, 현재 하중, 현재 전압, 현재 온도, 움직임 유무,
-- MX 시리즈에서 사용 가능한 파라미터  
-  토크 켜기 / 끄기, LED, PID gain, 목표 위치, 이동 속도, 토크 한계, 현재 위치, 현재 속도, 현재 하중, 현재 전압, 현재 온도, 움직임 유무
-- X 시리즈에서 사용 가능한 파라미터(XL 라인업은 일부 파라미터 미적용)  
-  토크 켜기 / 끄기, LED, PID gain, 목표 위치, 목표 속도, 목표 전류, 목표 PWM, 프로파일 가속도, 프로파일 속도, 토크 한계, 현재 위치, 현재 속도, 현재 전류, 현재 PWM, 현재 하중, 현재 전압, 현재 온도, 움직임 유무
+- DX / RX / AX supported parameters :  
+  [Torque On/Off](#torque-onoff), [LED](#led), [CW margin / CCW margin](#cw-margin--ccw-margin), [CW slope / CCW slope](#cw-slope--ccw-slope), [Goal Position](#goal-position), Goal Velocity, Goal Torque, Present Position, Present Velocity, Present Load, Present Input Voltage, Present Temperature, Is Moving
+- MX supported parameters :  
+  [Torque On/Off](#torque-onoff), [LED](#led), [PID Gains](#pid-gains), [Goal Position](#goal-position), Goal Velocity, Goal Torque, Present Position, Present Velocity, Present Load, Present Input Voltage, Present Temperature, Is Moving, Sensed Current, Torque Control Mode, Goal Acceleration
+- X supported parameters :  
+  [Operating Mode](#operating-mode), [Torque On/Off](#torque-onoff), [LED](#led), [Velocity PI gain](#pid-gains), [Position PID Gains](#pid-gains), Goal PWM, Goal Current, Goal Velocity, Profile Acceleration, Profile Velocity, [Goal Position](#goal-position), Is Moving, Present PWM, Present Current, Present Position, Present Velocity, Present Input Voltage, Present Temperature
 
-#### 작동 모드
-다이나믹셀의 동작 모드를 설정합니다. 자세한 내용은 다이나믹셀의 Operating Mode를 참고하세요.  
+#### [Operating Mode](#operating-mode)
+Configure the Operating Mode of DYNAMIXEL. Please refer to Operating Mode of each DYNAMIXEL.  
 ![](/assets/images/sw/rplus_task3/task3_216.png)
 
-#### 토크 켜기 / 끄기
-다이나믹셀의 토크를 켜거나 끄기 위해 사용합니다. True일 때 토크 켜짐, False일 때 토크 꺼짐으로 동작합니다.  
-- 아래는 제어기의 버튼을 누르면 ID가 1인 다이나믹셀의 토크를 켜는 예제입니다.  
-  ![](/assets/images/sw/rplus_task3/task3_120.png)
+#### [Torque On/Off](#torque-onoff)
+Turn the DYNAMIXEL Torque on/off. Torque is turned on when True, Torque is turned off when False.
 
-#### LED
-다이나믹셀의 LED를 켜거나 끄기 위해 사용합니다. True일 때 LED 켜짐, False일 때 LED 꺼짐으로 동작합니다.
+The following is an example of turning on the Torque of DYNAMIXEL with ID number 1 when the Controller’s button is pressed.  
+![](/assets/images/sw/rplus_task3/task3_120.png)
 
-#### CW margin / CCW margin
-다이나믹셀의 Margin 설정값을 읽어오거나 설정하기 위해 사용합니다. 값 범위는 0~ 254이며 가급적 기본값(1)을 바꾸지 않는 것이 좋습니다.  
-자세한 설명은 해당 다이나믹셀의 컨트롤 테이블을 참고하세요.
+#### [LED](#led)
+Turn the DYNAMIXEL LED on/off. LED is turned on when True, LED is turned off when False.
 
-#### CW slope / CCW slope
-다이나믹셀의 Slope 설정값을 읽어오거나 설정하기 위해 사용합니다. 총 7단계로 설정가능하며 아래 표에 따라 대표값이 설정됩니다.  
-자세한 설명은 해당 다이나믹셀의 컨트롤 테이블을 참고하세요.
+#### [CW margin / CCW margin](#cw-margin--ccw-margin)
+Read or write the DYNAMIXEL Margin value. The range of the value is from 0 to 255, but it is recommended not to change the default value (1).  
+Please refer to the DYNAMIXEL Control Table for more detail.
 
-| 단계 |       Data 값       | Data 대표 값 |
-|:----:|:-------------------:|:------------:|
-|  1   | 0 (0x00) ~ 3(0x03)  |   2 (0x02)   |
-|  2   |  4(0x04) ~ 7(0x07)  |   4 (0x04)   |
-|  3   |  8(0x08)~15(0x0F)   |   8 (0x08)   |
-|  4   |  16(0x10)~31(0x1F)  |  16 (0x10)   |
-|  5   |  32(0x20)~63(0x3F)  |  32 (0x20)   |
-|  6   | 64(0x40)~127(0x7F)  |  64 (0x40)   |
-|  7   | 128(0x80)~254(0xFE) |  128 (0x80)  |
+#### [CW slope / CCW slope](#cw-slope--ccw-slope)
+Read or write the DYNAMIXEL Slope value. There are a total of seven phases which the value can be set to, and the representative values of each phase are set as in the table below.  
+Please refer to the DYNAMIXEL Control Table for more detail.
 
-#### PID Gains
-다이나믹셀의 PID 설정값을 읽어오거나 설정하기 위해 사용합니다.  
-P gain은 Proportional Gain으로 작은 값일수록 유격이 커지고, 목표위치 근처에서의 출력정도가 약해집니다.  
-I gain은 Integral Gain 이며, D gain은 Derivative Gain 입니다.
+| Level |    Real Data Value    | Representative Data Value |
+|:-----:|:---------------------:|:-------------------------:|
+|   1   |  0 (0x00) ~ 3(0x03)   |         2 (0x02)          |
+|   2   |   4(0x04) ~ 7(0x07)   |         4 (0x04)          |
+|   3   |  8(0x08) ~ 15(0x0F)   |         8 (0x08)          |
+|   4   |  16(0x10) ~ 31(0x1F)  |         16 (0x10)         |
+|   5   |  32(0x20) ~ 63(0x3F)  |         32 (0x20)         |
+|   6   | 64(0x40) ~ 127(0x7F)  |         64 (0x40)         |
+|   7   | 128(0x80) ~ 254(0xFE) |        128 (0x80)         |
 
-#### 목표 위치
-다이나믹셀의 목표 위치값을 읽어오거나 설정하기 위해 사용합니다.  
-- 아래 그림과 같이 `모터 위치 값` 컨트롤을 사용하여 각도 위치를 설정할 수 있습니다.  
+#### [PID Gains](#pid-gains)
+Read or write the DYNAMIXEL PID values.  
+P gain refers to Proportional Gain, for which the smaller the value is the larger the clearance gets, and the power level decreases near the target location.  
+I gain refers to Integral Gain, and D gain refers to Derivative Gain.
+
+#### [Goal Position](#goal-position)
+Read or write the DYNAMIXEL Goal Position.  
+The `Position Value` control can be used to designate the angle position as shown below.  
   ![](/assets/images/sw/rplus_task3/task3_121.png)
 
-#### 목표 속도
-다이나믹셀의 이동 속도를 읽어오거나 설정하기 위해 사용합니다.  
-- 아래 그림과 같이 `모터 제어 값` 컨트롤을 사용하여 회전 방향과 출력 값을 설정할 수 있습니다.  
+#### Goal Velocity
+Read or write the DYNAMIXEL Goal Velocity.  
+The `Speed Value` control can be used to designate the rotation direction and power value as shown below.  
   ![](/assets/images/sw/rplus_task3/task3_122.png)
 
-#### 프로파일 가속도
-다이나믹셀 X 시리즈에서 프로파일의 가속도를 설정합니다. 자세한 내용은 X 시리즈의 [Profile Acceleration(108)](/docs/kr/dxl/x/xm430-w210/#profile-acceleration)을 참고하세요.  
+#### Profile Acceleration
+Read or write the Profile Acceleration of DYNAMIXEL X series.  
+Please refer to [Profile Acceleration(108)](/docs/en/dxl/x/xm430-w210/#profile-acceleration).  
 ![](/assets/images/sw/rplus_task3/task3_214.png)
 
-#### 프로파일 속도
-다이나믹셀 X 시리즈가 Position Control 또는 Extended Position Control 모드일 때 프로파일의 최대 속도를 설정합니다. 자세한 내용은 X 시리즈의 [Profile Velocity(112)](/docs/kr/dxl/x/xm430-w210/#profile-velocity)을 참고하세요.  
+#### Profile Velocity
+Configure the maximum velocity of the profile when DYNAMIXEL X series is running under Position Control mode or Extended Position Control mode.  
+Please refer to [Profile Velocity(112)](/docs/en/dxl/x/xm430-w210/#profile-velocity).  
 ![](/assets/images/sw/rplus_task3/task3_215.png)
 
-#### 목표 전류 / 토크
-다이나믹셀의 전류 / 토크 한계를 설정하기 위해 사용합니다.  
+#### Goal Current / Goal Torque
+Configure the current or torque limit of DYNAMIXEL.  
 ![](/assets/images/sw/rplus_task3/task3_207.png)
 
-#### 현재 위치
-다이나믹셀의 현재 위치를 읽어오기 위해 사용합니다.  
+#### Present Position
+Read the Present Position of DYNAMIXEL.  
 ![](/assets/images/sw/rplus_task3/task3_208.png)
 
-#### 현재 속도
-다이나믹셀의 현재 속도를 읽어오기 위해 사용합니다.  
+#### Present Velocity
+Read the Present Velocity of DYNAMIXEL.  
 ![](/assets/images/sw/rplus_task3/task3_209.png)
 
-#### 현재 하중
-다이나믹셀의 출력축이 받고있는 하중값과 하중의 방향을 읽어오기 위해 사용합니다.  
+#### Present Load
+Read the direction and amount of load currently applied to DYNAMIXEL.  
 ![](/assets/images/sw/rplus_task3/task3_210.png)
 
-#### 현재 입력 전압
-다이나믹셀의 내부 전압을 읽어오기 위해 사용합니다.  
+#### Present Input Voltage
+Read the present voltage supplied to DYNAMIXEL.  
 ![](/assets/images/sw/rplus_task3/task3_211.png)
 
-#### 현재 온도
-다이나믹셀의 내부 온도를 읽어오기 위해 사용합니다.  
+#### Present Temperature
+Read the present temperature of DYNAMIXEL.  
 ![](/assets/images/sw/rplus_task3/task3_212.png)
 
-#### 움직임 유무
-다이나믹셀의 움직임 유무를 읽어오기 위해 사용합니다. True일 때 움직이는 상태, False일 때 움직이지 않는 상태를 나타냅니다.  
+#### Is Moving
+Identify if DYNAMIXEL is in motion. Returns True while in motion.  
 ![](/assets/images/sw/rplus_task3/task3_213.png)
 
 ### [SyncWrite](#syncwrite)
-
-CM-550 제어기를 사용할 경우 [프로토콜 2.0 - SyncWrite](/docs/kr/dxl/protocol2/#sync-write) 명령어를 사용할 수 있습니다.
+CM-550 supports [Protocol 2.0 - SyncWrite](/docs/en/dxl/protocol2/#sync-write).
 
 #### SyncWrite Command
+Use SyncWrite Command to build and transmit the packet. Please refer below table for details.
 
-SyncWrite 명령어를 사용합니다. 아래와 같이 지정된 파라미터에 따른 동작을 합니다.
-
-| 파라미터 |          동작           |                         예시                         |
-|:--------:|:-----------------------:|:----------------------------------------------------:|
-|    0     | SyncWrite 패킷 시작하기 | ![](/assets/images/sw/rplus_task3/sync_write_01.png) |
-|    1     | SyncWrite 패킷 입력하기 | ![](/assets/images/sw/rplus_task3/sync_write_02.png) |
-|    2     | SyncWrite 패킷 전송하기 | ![](/assets/images/sw/rplus_task3/sync_write_03.png) |
+| Parameter |          Command          |                       Example                        |
+|:---------:|:-------------------------:|:----------------------------------------------------:|
+|     0     |  Start SyncWrite Packet   | ![](/assets/images/sw/rplus_task3/sync_write_01.png) |
+|     1     |  Build SyncWrite Packet   | ![](/assets/images/sw/rplus_task3/sync_write_02.png) |
+|     2     | Transmit SyncWrite Packet | ![](/assets/images/sw/rplus_task3/sync_write_03.png) |
 
 #### SyncWrite Address
-
-데이터가 전송될 주소를 나타냅니다.
+Specify the DYNAMIXEL address to write the data.
 
 ![](/assets/images/sw/rplus_task3/sync_write_04.png)  
-> 데이터가 전송될 시작주소를 116번지로 설정합니다.
+> Define the starting address to 116.
 
 #### SyncWrite Length
-
-전송될 데이터의 길이를 나타냅니다.
+Specify the length of data.
 
 ![](/assets/images/sw/rplus_task3/sync_write_05.png)  
-> 전송될 데이터의 길이를 4바이트로 설정합니다.
+> Use 4 byte data.
 
 #### SyncWrite ID
-
-데이터가 적용될 ID를 나타냅니다.
+Specify the DYNAMIXEL ID to write.
 
 ![](/assets/images/sw/rplus_task3/sync_write_06.png)  
-> 데이터를 수신받을 다이나믹셀의 ID를 2로 설정합니다.
+> ID 2 DYNAMIXEL will receive the data.
 
 #### SyncWrite Data
-
-전송될 데이터를 나타냅니다.
+Specify the data value to transmit.
 
 ![](/assets/images/sw/rplus_task3/sync_write_07.png)  
-> 10진수 값 2048을 전송할 데이터로 설정합니다.
+> Use 2048 as the data value.
 
-#### SyncWrite 사용 예
+#### SyncWrite Example
 
 다음은 SyncWrite 명령어를 이용해서 다이나믹셀 ID 2번과 3번의 116번 주소에 각각 2048의 값을 전달하는 방법입니다.
 
@@ -959,35 +956,33 @@ SM-10 서보모터의 속도모드, 관절모드를 전환할 경우 사용합�
 ![](/assets/images/sw/rplus_task3/task3_218.png)
 
 [Controller Compatibility]: /docs/en/parts/controller/controller_compatibility/
-[접촉 센서 부품 정보]: /docs/kr/parts/sensor/ts-10/
-[적외선 센서 부품 정보]: /docs/kr/parts/sensor/irss-10/
-[컬러 센서 부품 정보]: /docs/kr/parts/sensor/cs-10/
-[자석 센서 부품 정보]: /docs/kr/parts/sensor/mgss-10/
-[온도 센서 부품 정보]: /docs/kr/parts/sensor/tps-10/
-[절대 거리 센서 부품 정보]: /docs/kr/parts/sensor/dms-80/
-[조도 센서 부품 정보]: /docs/kr/parts/sensor/cds-10/
-[온습도 센서 부품 정보]: /docs/kr/parts/sensor/tms-10/
-[동작감지 센서 부품 정보]: /docs/kr/parts/sensor/pir-10/
+[Touch Sensor Component Information]: /docs/en/parts/sensor/ts-10/
+[Infrared Sensor Component Information]: /docs/en/parts/sensor/irss-10/
+[Color Sensor Component Information]: /docs/en/parts/sensor/cs-10/
+[Magnetic Sensor Component Information]: /docs/en/parts/sensor/mgss-10/
+[Temperature Sensor Component Information]: /docs/en/parts/sensor/tps-10/
+[Distance Measurement Sensor Component Information]: /docs/en/parts/sensor/dms-80/
+[Motion Detecting Sensor Component Information]: /docs/en/parts/sensor/pir-10/
 [Building a User Device]: /docs/en/edu/bioloid/premium/#make-your-own-sensor
-[CM-50]: /docs/kr/parts/controller/cm-100/
-[CM-100A]: /docs/kr/parts/controller/cm-100/
-[CM-150]: /docs/kr/parts/controller/cm-150/
-[CM-200]: /docs/kr/parts/controller/cm-200/
-[CM-5]: /docs/kr/parts/controller/cm-5/
-[CM-510]: /docs/kr/parts/controller/cm-510/
-[CM-530]: /docs/kr/parts/controller/cm-530/
-[CM-550]: /docs/kr/parts/controller/cm-550/
-[CM-700]: /docs/kr/parts/controller/cm-700/
-[OpenCM 7.0]: /docs/kr/parts/controller/opencm7/
-[R+ Smart 컨트롤 테이블]: /docs/kr/software/mobile_app/rplussmart/#r-smart-control-table
-[ROBOTIS DREAM]: /docs/kr/edu/dream/dream1-1/
-[ROBOTIS SMART]: /docs/kr/edu/smart/smart1-1/
-[ROBOTIS STEM]: /docs/kr/edu/bioloid/stem/
-[ROBOTIS PREMIUM]: /docs/kr/edu/bioloid/premium/
-[ROBOTIS GP]: /docs/kr/edu/bioloid/gp/
-[ROBOTIS MINI]: /docs/kr/edu/mini/
-[OpenCM 9.04]: /docs/kr/parts/controller/opencm904/
-[BT-110]: /docs/kr/parts/communication/bt-110/
-[BT-210]: /docs/kr/parts/communication/bt-210/
-[BT-410]: /docs/kr/parts/communication/bt-410/
-[제어기펌웨어 업데이트]: /docs/kr/software/rplus2/manager/getting_started/#펌웨어-업데이트
+[CM-50]: /docs/en/parts/controller/cm-100/
+[CM-100A]: /docs/en/parts/controller/cm-100/
+[CM-150]: /docs/en/parts/controller/cm-150/
+[CM-200]: /docs/en/parts/controller/cm-200/
+[CM-5]: /docs/en/parts/controller/cm-5/
+[CM-510]: /docs/en/parts/controller/cm-510/
+[CM-530]: /docs/en/parts/controller/cm-530/
+[CM-550]: /docs/en/parts/controller/cm-550/
+[CM-700]: /docs/en/parts/controller/cm-700/
+[OpenCM 7.0]: /docs/en/parts/controller/opencm7/
+[R+ Smart 컨트롤 테이블]: /docs/en/software/mobile_app/rplussmart/#r-smart-control-table
+[ROBOTIS DREAM]: /docs/en/edu/dream/dream1-1/
+[ROBOTIS SMART]: /docs/en/edu/smart/smart1-1/
+[ROBOTIS STEM]: /docs/en/edu/bioloid/stem/
+[ROBOTIS PREMIUM]: /docs/en/edu/bioloid/premium/
+[ROBOTIS GP]: /docs/en/edu/bioloid/gp/
+[ROBOTIS MINI]: /docs/en/edu/mini/
+[OpenCM 9.04]: /docs/en/parts/controller/opencm904/
+[BT-110]: /docs/en/parts/communication/bt-110/
+[BT-210]: /docs/en/parts/communication/bt-210/
+[BT-410]: /docs/en/parts/communication/bt-410/
+[제어기펌웨어 업데이트]: /docs/en/software/rplus2/manager/getting_started/#펌웨어-업데이트

@@ -17586,9 +17586,9 @@ rplustask2:
         titlekr: "로드"
         url: /software/rplus2/task/#load
         urlkr: /software/rplus2/task/#로드
-      - title: "Lable/Jump"
+      - title: "Label/Jump"
         titlekr: "레이블/점프"
-        url: /software/rplus2/task/#lablejump
+        url: /software/rplus2/task/#labeljump
         urlkr: /software/rplus2/task/#레이블점프
     - title: "Condition"
       titlekr: "조건문"
@@ -17806,9 +17806,9 @@ rplustask3:
         titlekr: "다중 수식"
         url: /software/rplustask3/task_instructions/#multi-compute
         urlkr: /software/rplustask3/task_instructions/#다중-수식
-      - title: "Lable/Jump"
+      - title: "Label/Jump"
         titlekr: "레이블/점프"
-        url: /software/rplustask3/task_instructions/#lablejump
+        url: /software/rplustask3/task_instructions/#labeljump
         urlkr: /software/rplustask3/task_instructions/#레이블점프
     - title: "Condition"
       titlekr: "조건문"
