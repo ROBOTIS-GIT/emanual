@@ -580,11 +580,11 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
 1. `WIN` + `S` 키를 눌러 나타난 검색창에 **cmd** 를 검색한 다음 관리자 권한으로 명령 프롬프트를 실행합니다.  
 `Ctrl` + `Shift` 를 누른 상태에서 `명령 프롬프트` 를 클릭해도 됩니다.
 
-    ![](/assets/images/edu/engineer/kit1/obj_classification_cmd_01.png)
+    ![](/assets/images/edu/engineer/kit1/obj_classification_cmd_01_kr.png)
 
 2. 명령 프롬프트가 실행되면 아래와 같은 화면이 나타납니다.
 
-    ![](/assets/images/edu/engineer/kit1/obj_classification_cmd_02.png)
+    ![](/assets/images/edu/engineer/kit1/obj_classification_cmd_02_kr.png)
 
 3. 명령 프롬프트에서 아래의 명령어를 입력해주세요.
 
@@ -592,11 +592,11 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
     python -m pip install --upgrade pip
     ```
 
-    ![](/assets/images/edu/engineer/kit1/obj_classification_cmd_03.png)
+    ![](/assets/images/edu/engineer/kit1/obj_classification_cmd_03_kr.png)
 
 4. pip패키지가 성공적으로 업그레이드되면 아래와 같이 표시됩니다.
 
-    ![](/assets/images/edu/engineer/kit1/obj_classification_cmd_04.png)
+    ![](/assets/images/edu/engineer/kit1/obj_classification_cmd_04_kr.png)
 
     pip 패키지가 업그레이드되지 않는다면, 아나콘다가 `C 드라이브` 에 정상적으로 설치되었는지 확인해주세요.
     {: .notice--warning}
@@ -605,7 +605,7 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
 
 1. `D 드라이브`에 `!R+Smart` 폴더를 만들어 주세요.
 
-    ![](/assets/images/edu/engineer/kit1/obj_classification_mkdir_01.png)
+    ![](/assets/images/edu/engineer/kit1/obj_classification_mkdir_01_kr.png)
 
     - 폴더 위치는 `D 드라이브` 또는 `C 드라이브` 등 상관없습니다. 매뉴얼에서는 `D 드라이브` 기준으로 설명합니다.
     - 폴더 이름은 사용자가 임의로 변경할 수 있습니다. 매뉴얼에서는 `!R+Smart` 기준으로 설명합니다.
@@ -617,7 +617,7 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
     d:
     ```
 
-    ![](/assets/images/edu/engineer/kit1/obj_classification_mkdir_02.png)
+    ![](/assets/images/edu/engineer/kit1/obj_classification_mkdir_02_kr.png)
 
 
 3. 아래의 명령어를 입력하여, `!R+Smart` 폴더로 이동합니다.
@@ -626,7 +626,7 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
     cd !R+Smart
     ```
 
-    ![](/assets/images/edu/engineer/kit1/obj_classification_mkdir_03.png)
+    ![](/assets/images/edu/engineer/kit1/obj_classification_mkdir_03_kr.png)
 
 #### [아나콘다 가상실행 환경 만들기](#아나콘다-가상실행-환경-만들기)
 
@@ -636,15 +636,15 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
     conda create -n tensorflow python=3.5
     ```
 
-    ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_01.png)
+    ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_01_kr.png)
 
 2. 진행여부를 묻습니다. `y` 입력후, `Enter Key`를 눌러 패키지 설치를 진행합니다.
 
-    ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_02.png)
+    ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_02_kr.png)
 
 3. 성공적으로 설치되면 아래의 사진과 같이 나옵니다.
 
-    ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_03.png)
+    ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_03_kr.png)
 
 #### [텐서플로우 설치하기](텐서플로우-설치하기)
 
@@ -656,7 +656,7 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
     activate tensorflow
     ```
 
-    ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_04.png)
+    ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_04_kr.png)
 
 2. 마지막으로 아래의 명령어를 입력해서 텐서플로우를 설치합니다.
 
@@ -664,7 +664,7 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
     pip install tensorflow
     ```
 
-    ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_05.png)
+    ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_05_kr.png)
 
 #### [파일과 폴더 생성](#파일과-폴더-생성)
 
@@ -675,11 +675,11 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
 
 2. `!R+Smart` 폴더에 다운로드받은 `retrain.py` 파일을 복사한 다음, 객체 추가를 위한 `photos` 폴더를 만듭니다.
 
-    ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_retrain.png)
+    ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_retrain_kr.png)
 
 3. `photos` 폴더 안에 `001 dummy`, `002 banana` 그리고 `003 pineapple`과 같이 객체 이미지를 추가할 하위 폴더를 만들고 객체와 관련된 이미지를 각각의 폴더에 추가합니다.
 
-    ![](/assets/images/edu/engineer/kit1/obj_classification_image_01.png)
+    ![](/assets/images/edu/engineer/kit1/obj_classification_image_01_kr.png)
 
  {% capture notice_01 %}
   **참고** :
@@ -701,7 +701,7 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
     python retrain.py --bottleneck_dir=./bottlenecks --model_dir=./inception  --output_graph=./Smart_OC.pb --output_labels=./Smart_OC.txt --image_dir ./photos --architecture mobilenet_1.0_224 --how_many_training_steps 1000
     ```
 
-    ![](/assets/images/edu/engineer/kit1/obj_classification_img_learning_01.png)
+    ![](/assets/images/edu/engineer/kit1/obj_classification_img_learning_01_kr.png)
 
     학습 명령어에서 `how_many_training_steps` 옵션은 이미지 학습의 횟수를 나타냅니다. 횟수는 1000회 정도가 적당하며, 예시의 명령어는 1000회로 학습합니다.
     {: .notice--info}
@@ -711,7 +711,7 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
 
 2. 학습이 완료되면 아래와 같이 `Smart_OC.txt` 와 `Smart_OC.pb` 파일이 `!R+Smart` 폴더에 생성됩니다.
 
-   ![](/assets/images/edu/engineer/kit1/obj_classification_oc.png)
+   ![](/assets/images/edu/engineer/kit1/obj_classification_oc_kr.png)
 
 #### [프로젝트에 학습파일 적용하기](#프로젝트에-학습파일-적용하기)
 
@@ -719,9 +719,9 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
 
 2. 스마트 기기의 저장공간에서 `RoboPlus` > `ROBOTIS ENGINEER` > `CUSTOM` 폴더를 찾아 들어갑니다.
 
-    ![](/assets/images/edu/engineer/kit1/obj_classification_application_01.png)  
-    ![](/assets/images/edu/engineer/kit1/obj_classification_application_02.png)  
-    ![](/assets/images/edu/engineer/kit1/obj_classification_application_03.png)
+    ![](/assets/images/edu/engineer/kit1/obj_classification_application_01_kr.png)  
+    ![](/assets/images/edu/engineer/kit1/obj_classification_application_02_kr.png)  
+    ![](/assets/images/edu/engineer/kit1/obj_classification_application_03_kr.png)
 
 3. 프로젝트 폴더를 생성합니다. 여기에서는 `Project 1`을 프로젝트 폴더로 생성합니다.
 
@@ -732,35 +732,35 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
 
 4. 데이터베이스를 사용하기 위해서 `Db` 폴더를 생성합니다.
 
-    ![](/assets/images/edu/engineer/kit1/obj_classification_application_05.png)
+    ![](/assets/images/edu/engineer/kit1/obj_classification_application_05_kr.png)
 
 5. `!R+Smart` 에서 생성된 학습파일인 `Smart_OC.txt` 와 `Smart_OC.pb` 을 `Db` 폴더에 복사합니다.  
 
-    ![](/assets/images/edu/engineer/kit1/obj_classification_application_06.png)
+    ![](/assets/images/edu/engineer/kit1/obj_classification_application_06_kr.png)
 
 6. 스마트 기기를 PC에서 분리한 다음 `ROBOTIS ENGINEER` 앱을 실행합니다.
 
-    ![](/assets/images/edu/engineer/kit1/engineer_app_1.png)
+    ![](/assets/images/edu/engineer/kit1/engineer_app_1_kr.png)
 
 7. `User` 탭으로 이동합니다.
 
-    ![](/assets/images/edu/engineer/kit1/obj_classification_test_01.png)
+    ![](/assets/images/edu/engineer/kit1/obj_classification_test_01_kr.png)
 
 8. 3번 단계에서 생성한 `Project 1` 프로젝트 폴더의 `설정` 아이콘을 클릭합니다.   
 
-    ![](/assets/images/edu/engineer/kit1/obj_classification_test_02.png)
+    ![](/assets/images/edu/engineer/kit1/obj_classification_test_02_kr.png)
 
 9. `비전` > `객체 분류` 를 선택합니다.
 
-    ![](/assets/images/edu/engineer/kit1/obj_classification_test_03.png)
+    ![](/assets/images/edu/engineer/kit1/obj_classification_test_03_kr.png)
 
 10. 이미지 폴더가 추가되었는지 확인합니다.
 
-    ![](/assets/images/edu/engineer/kit1/obj_classification_test_04.png)
+    ![](/assets/images/edu/engineer/kit1/obj_classification_test_04_kr.png)
 
 11. 객체를 놓고, 카메라를 통해 사물인식이 잘 되는지 확인합니다.
 
-    ![](/assets/images/edu/engineer/kit1/obj_classification_test_05.png)   
+    ![](/assets/images/edu/engineer/kit1/obj_classification_test_05_kr.png)   
 
 {% capture retrain %}
 **참고** : 이미 생성된 학습파일인 `Smart_OC.txt` 와 `Smart_OC.pb` 에는 새로운 데이터를 추가할 수 없습니다.  
