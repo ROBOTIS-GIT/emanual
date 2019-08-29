@@ -78,7 +78,7 @@ With this openended component, handful of TurtleBot3 friends with various charac
 
 - **Type**: RC Car
 - **Features**: About 1:2 gear ratio, differential gears want to make Car be in the Formula E!
-- **Components**: Two Dynamixel X 430 Series (One for steering, one for driving), an OpenCR1.0 Board, a RC100 Remote Controller with BT410 master-slave Bluetooth modules, TurtleBot3 Chassis and Battery, OLLO plastic frames.
+- **Components**: Two Dynamixel X 430 Series (One for steering, one for driving), an OpenCR1.0 Board, a RC100 Remote Controller with BT410 master-slave Bluetooth modules, TurtleBot3 Chassis and Battery, 6 mm plastic frames.
 - **Hardware**: Due to the complex hardware configuration, it will be released as a later improved version. :)
 - **Software**: `Examples` → `turtlebot3` → `turtlebot3_friends` → `turtlebot3_car`
 - **Video**:
