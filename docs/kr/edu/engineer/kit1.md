@@ -273,10 +273,10 @@ product_group: 2xl430-w250
   ![](/assets/images/edu/engineer/kit1/bluetooth_connection_5.png)
 
 6. 확인한 문자를 왼쪽 상자에 입력한 후 `검색` 을 누릅니다.  
-  ![](/assets/images/edu/engineer/kit1/bluetooth_connection_6.png)
+  ![](/assets/images/edu/engineer/kit1/bluetooth_connection_6_kr.png)
 
 7. 검색된 목록 중 제어기의 주소와 일치하는 항목을 선택하면 블루투스 통신 연결이 완료되고, 로봇이 실행됩니다.  
-  ![](/assets/images/edu/engineer/kit1/bluetooth_connection_7.png)
+  ![](/assets/images/edu/engineer/kit1/bluetooth_connection_7_kr.png)
 
 ## [예제 다운로드](#예제-다운로드)
 - CM-550 제어기에는 최초 출하시 KIT 1 타입에 맞는 프로그램이 기본적으로 다운로드되어 있습니다.  
