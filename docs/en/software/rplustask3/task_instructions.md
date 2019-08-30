@@ -83,7 +83,7 @@ Refer to the following figure for details.
 
 ![](/assets/images/sw/rplus_task3/task3_034.png)
 
-### Compute
+### [Compute](#compute)
 
 - This instruction computes two values to give one result. (C = A + B)
 
@@ -119,7 +119,7 @@ The following is an example of setting the speed value of Geared Motor connected
 
 ![](/assets/images/sw/rplus_task3/task3_040.png)
 
-### [Multi Compute](#multi-compute)
+### [Polynomial](#polynomial)
 
 - This instruction is used when calculating an expression with multiple operators.
 - Variables and constants can only be used in the expression.

@@ -418,7 +418,7 @@ The following is an example of using Powersave Timer to configure sleep mode for
 ![](/assets/images/sw/rplus_task3/task3_115.png)
 
 
-### [Controller: Miscellaneous](#controller-miscellenous)
+### [Controller: Miscellaneous](#controller-miscellaneous)
 
 #### Random Number
 Generate a random number between 0 and a maximum value. You can set a number as the maximum value. The valid value is from 0 to 255
@@ -587,372 +587,369 @@ Specify the data value to transmit.
 
 #### SyncWrite Example
 
-다음은 SyncWrite 명령어를 이용해서 다이나믹셀 ID 2번과 3번의 116번 주소에 각각 2048의 값을 전달하는 방법입니다.
+The following is an example of SyncWrite instruction to transmit the value 2048 to the target address 116(Goal Position) of DYNAMIXEL ID 2 and 3.
 
 ![](/assets/images/sw/rplus_task3/sync_write_example.png)
 
 ### [IR Array Sensor](#ir-array-sensor)
 
-- 적외선 센서 값 (1~7번) : 적외선 센서 어레이의 적외선 센서 값을 읽어오기 위해 사용합니다. 벽이나 물체의 표면 색, 질감에 따라 측정값에 차이가 생길 수 있으며, 해당 센서는 0~5cm 이내에서 사용하도록 최적화 되었습니다.
-- 적외선 감지 기준 값 (1~7번) : 적외선 센서 어레이가 흰색/검정색을 판단하는 기준 값입니다.
+- **Infrared sensor value (numbers 1~7)** : Read the infrared sensor value from the infrared sensor array.  
+  The measured value can vary depending on the color or texture of the wall or object, and the sensor is optimized for use within 0 to 5 cm.
+- **Infrared detection standard value (numbers 1~7)** : These values are used as reference values for the infrared sensor array to determine whether the color is black or white.
 
-|                  | 검은색 감지 유무 | LED |
-|:----------------:|:----------------:|:---:|
-| 센서값 <= 기준값 |    해당 BIT 1    | ON  |
-| 센서값 > 기준값  |    해당 BIT 0    | OFF |
+|                           | Black detection | LED |
+|:-------------------------:|:---------------:|:---:|
+| Sensor value <= set value |      BIT 1      | ON  |
+| Sensor value > set value  |      BIT 0      | OFF |
 
-- 버저 종류 : 적외선 센서 어레이의 버저 종류를 설정하기 위해 사용합니다.
-- 버저 울림 시간 : 적외선 센서 어레이의 버저 사용시 소리가 지속될 시간을 설정하는데 사용합니다. 저 울림 시간을 먼저 설정한 후 버저 종류를 설정해야 설정에 맞게 소리가 납니다.
-- 감지 기준 값 자동 설정 : 검정색 감지 기준값 자동 찾기의 시작과 마침을 결정하는데 사용합니다. 자세한 사용법은 아래 예제를 참고하세요.
-- 적외선 물체 감지 유무 : 적외선 센서 어레이에 물체가 감지되었는지를 읽어오기 위해 사용합니다.
+- **Buzzer index** : Configure the type of Buzzer for the infrared sensor array
+- **Buzzer timer** : Configure the duration of the Buzzer sound in the case that the infrared sensor array’s Buzzer is used.  
+ The Buzzer timer should be configured first and then the type of Buzzer (or Buzzer index) configured afterwards for the Buzzer to work properly.
+- **Auto configuration of detection standard value** : Define the beginning and end of auto-searching the detection standard values of the color black Refer to the example below for more detail.
+- **Infrared object detection result** : Read whether an object has been detection in the infrared sensor array
 
-| 2 진수 값 | 10 진수 값 |        검은색 감지 유무        |
-|:---------:|:----------:|:------------------------------:|
-|  0000001  |     1      | 1번 적외선 센서에 검은 색 감지 |
-|  0000010  |     2      | 2번 적외선 센서에 검은 색 감지 |
-|  0000100  |     4      | 3번 적외선 센서에 검은 색 감지 |
-|  0001000  |     8      | 4번 적외선 센서에 검은 색 감지 |
-|  0010000  |     16     | 5번 적외선 센서에 검은 색 감지 |
-|  0100000  |     32     | 6번 적외선 센서에 검은 색 감지 |
-|  1000000  |     64     | 7번 적외선 센서에 검은 색 감지 |
+| Binary value | Decimal value |         Black detection          |
+|:------------:|:-------------:|:--------------------------------:|
+|   0000001    |       1       | Black detection for IR sensor #1 |
+|   0000010    |       2       | Black detection for IR sensor #2 |
+|   0000100    |       4       | Black detection for IR sensor #3 |
+|   0001000    |       8       | Black detection for IR sensor #4 |
+|   0010000    |      16       | Black detection for IR sensor #5 |
+|   0100000    |      32       | Black detection for IR sensor #6 |
+|   1000000    |      64       | Black detection for IR sensor #7 |
 
-아래 그림과 같이 그림을 보며 값을 체크할 수 있습니다.
+Use can check the value while looking at the screen as shown below.
 
 ![](/assets/images/sw/rplus_task3/task3_123.png)
 
 ### [DYNAMIXEL: Custom](#dynamixel-custom)
 
-- 다이나믹셀 등의 외부 장치의 주소를 직접 접근하여 읽기와 쓰기 작업을 진행할 수 있습니다.
-- 사용자가 지정한 주소를 Byte(1바이트), Word(2바이트), DWord(4바이트) 단위로 선택하여 읽거나 씁니다.
-- 각 다이나믹셀 매뉴얼 내의 컨트롤 테이블을 참고하세요.  
+- User can access the address of an external device such as a DYNAMIXEL directly to perform read/write tasks.
+- User can read/write by selecting the specified address in units of Byte, Word, or DWord.Write or read in Byte or DWORD variable to write/read on user accessed address
+- Please refer to the DYNAMIXEL Control Table for more detail.
+
 ![](/assets/images/sw/rplus_task3/task3_217.png)
 
 ## [Smart Device](#smart-device)
 
-제어기와 블루투스로 연결된 앱(R+ Smart, R+ IoT, R+ ENGINEER)의 컨트롤 테이블 값을 읽거나 쓰기 위한 파라미터 입니다.
+This parameter grants access to the control table of the Apps(R+ Smart, R+ IoT, R+ ENGINEER) connected to controllers.
 
 ### [Camera](#camera)
 
-스마트 기기의 카메라 기능을 사용하기 위한 파라미터입니다.
+This parameter can access the camera of smart device.
 
-#### 카메라 선택
-스마트 기기에 내장된 카메라 중 사용할 카메라를 선택합니다. 아래 예제는 후면 카메라와 전면 카메라를 번갈아 선택하는 예제입니다.  
+#### Camera Selection
+Select which camera to use in the smart device. The following example shows switching between front and rear camera.  
 ![](/assets/images/sw/rplus_task3/task3_124.png)  
 ![](/assets/images/sw/rplus_task3/task3_125.png)
 
-#### 카메라 확대
-스마트 기기의 카메라를 확대할 때 사용합니다 (값의 범위는 0~255 입니다).  
-아래는 카메라를 1.024초에 한번씩 확대하는 예제입니다.  
+#### Camera Zoom
+Select zoom level of the camera (Value range : 0 ~ 255).  
+The following example increases zoom level every 1.024 second.  
 ![](/assets/images/sw/rplus_task3/task3_126.png)  
 ![](/assets/images/sw/rplus_task3/task3_127.png)![](/assets/images/sw/rplus_task3/task3_128.png)
 
-#### 카메라 센서
-스마트 기기의 카메라를 센서모드로 동작시키기 위해 사용합니다.  
+#### Camera Sensor
+Use the smart device camera as a sensor.  
 ![](/assets/images/sw/rplus_task3/task3_129.png)
 
-**참고**: 카메라 센서의 자세한 사용법은 [비전](#비전)을 참고하세요.
+**NOTE**: Please refer to [Vision](#vision) for more details.
 {: .notice}
 
-#### 사진 촬영
-스마트 기기의 카메라로 사진을 촬영할 때 사용합니다. (True일 때 촬영, False일 때 촬영정지)  
-아래는 스마트 기기의 후면 카메라를 이용하여 사진을 촬영하는 예제입니다.  
+#### Take Picture
+Take a picture with the camera of smart device. (Take pictures when True, stop when False)  
+The following is an example of taking pictures with rear camera.  
 ![](/assets/images/sw/rplus_task3/task3_130.png)  
 ![](/assets/images/sw/rplus_task3/task3_131.png)
 
-### [비전](#비전)
+### [Vision](#vision)
 
-스마트 기기의 카메라를 “카메라 센서”로 설정시 사용하는 파라미터입니다.
+This parameter use the camera of smart device as various vision sensors.
 
-#### 감지된 색상
-“카메라 센서”의 “색상 감지 모드”를 사용하는 경우, 화면 가운데 부분에 표시되는 색상을 확인하기 위해 사용합니다.  
-아래는 감지된 색상 값을 사용하는 예제입니다.  
+#### Detected Color
+Identify the color from the center of screen. The following is an example of detecting the color.  
 ![](/assets/images/sw/rplus_task3/task3_132.png)
 
-#### 감지할 라인 색상
-“카메라 센서”의 “라인 감지 모드”를 사용하는 경우, 감지할 라인의 색상을 설정하기 위해 사용합니다.
+#### Tracking Color(Line-Tracer)
+Select the color from the screen to detect.
 
-#### 라인 감지 영역
-“카메라 센서”의 “라인 감지 모드”를 사용하는 경우, 감지된 라인의 위치를 확인하기 위해 사용합니다.  
-아래는 녹색 라인이 감지되면 해당 라인에 빨간색 원을 표시하는 예제입니다.  
+#### Line Detection Area
+Identify the location of detected line. The following is an example of displaying a red circle over the detected green line.  
 ![](/assets/images/sw/rplus_task3/task3_133.png)  
 ![](/assets/images/sw/rplus_task3/task3_134.png)
 
-#### 얼굴 감지 영역
-“카메라 센서”의 “얼굴 감지 모드”를 사용하는 경우, 감지된 얼굴의 위치를 확인하기 위해 사용합니다.  
-아래는 얼굴이 감지되면 해당 위치에 빨간색 원을 표시하는 예제입니다.  
+#### Face Detection Area
+When the face is detected from the camera screen, the detected area is marked. The red dot is marked on the detected face in the following example.  
 ![](/assets/images/sw/rplus_task3/task3_135.png)  
 ![](/assets/images/sw/rplus_task3/task3_136.png)
 
-#### 동작 감지 영역
-“카메라 센서”의 “동작 감지 모드”를 사용하는 경우, 감지된 동작의 위치를 확인하기 위해 사용합니다.  
-아래는 동작이 감지되면 해당 위치에 빨간색 원을 표시하는 예제입니다.  
+#### Motion Detection Area
+When a motion is detected from the camera screen, the detected area is marked. The red dot is marked on the motion detected area in the following example.  
 ![](/assets/images/sw/rplus_task3/task3_137.png)  
 ![](/assets/images/sw/rplus_task3/task3_138.png)
 
-### [표시](#표시)
+### [Display](#display)
 
-스마트 기기의 화면에 배경, 그림, 도형, 문자, 숫자를 표시하기 위해 사용합니다.
+This parameter is used to display images, shapes, characters, and numbers on the screen of the smart device.
 
-#### 화면 회전
-스마트 기기의 화면 방향을 설정할 때 사용합니다.  
-아래는 스마트 기기의 화면 방향을 1.024초마다 번갈아 변경하는 예제입니다.  
+#### Screen Rotation
+This parameter sets the orientation of the smart device.  
+The following example changes the orientation of the screen every 1.024 second.  
 ![](/assets/images/sw/rplus_task3/task3_139.png)  
 ![](/assets/images/sw/rplus_task3/task3_140.png)![](/assets/images/sw/rplus_task3/task3_141.png)
 
-#### 배경 표시
-스마트 기기의 화면에 그림 배경을 설정할 때 사용합니다.(스마트 기기 앱에 미리 등록해놓은 배경만 사용할 수 있습니다.)  
-아래는 스마트 기기의 그림 배경을 아이템1로 설정하는 예제입니다.  
+#### Background Image
+This parameter sets the image on the background of the screen. (Registered images in the app can be used).  
+The following is an example of setting `Image Item 1` to background image.  
 ![](/assets/images/sw/rplus_task3/task3_142.png)  
 ![](/assets/images/sw/rplus_task3/task3_143.png)
 
-#### 그림 표시
-스마트 기기의 화면에 그림을 배치할 때 사용합니다.(스마트 기기 앱에 미리 등록해놓은 그림만 사용할 수 있습니다.)  
-아래는 스마트 기기의 위치2,3과 위치 4,3에 그림을 표시하는 예제입니다.  
+#### Foreground Image
+This parameter sets the image on the screen. (Registered images in the app can be used).  
+The following is an example of displaying `Image Item 1` and `Image Item 2` at location (2, 3) and (4, 3).  
 ![](/assets/images/sw/rplus_task3/task3_144.png)  
 ![](/assets/images/sw/rplus_task3/task3_145.png)
 
-#### 감지된 얼굴 그림 표시
-“카메라 센서”의 “얼굴 감지 모드”를 사용할 경우, 감지된 얼굴에 덮어씌울 그림을 설정할 때 사용합니다. (스마트 기기 앱에 미리 등록해놓은 그림만 사용할 수 있습니다.)  
-아래는 스마트 기기의 카메라를 이용하여 얼굴을 감지한 후 감지된 얼굴 위에 그림을 표시하는 예제입니다.  
+#### Mask Image (Face Detection)
+When using Face Detection mode, a masking image can be overlayed on the detected face. (Registered images in the app can be used).  
+The following is an example of overlaying `Image Item 2` on the detected face.  
 ![](/assets/images/sw/rplus_task3/task3_146.png)  
 ![](/assets/images/sw/rplus_task3/task3_147.png)
 
-#### 도형 표시
-스마트 기기의 화면에 도형을 배치할 때 사용합니다. (1 : 원, 2 : 사각형, 3 : 삼각형)  
-아래는 위치3,3에 파란색 원형과 회색 삼각형을 번갈아 표시하는 예제입니다.  
+#### Shape Display
+Insert shapes on the screen (1: Circle, 2: Rectangle, 3: Triangle)  
+The following is an example of displaying blue circle and gray triangle sequentially.  
 ![](/assets/images/sw/rplus_task3/task3_148.png)  
 ![](/assets/images/sw/rplus_task3/task3_149.png)![](/assets/images/sw/rplus_task3/task3_150.png)
 
-#### 문자 표시
-스마트 기기의 화면에 문자를 배치할 때 사용합니다. (스마트 기기 앱에 미리 등록해놓은 문자만 사용할 수 있습니다.)  
-아래는 위치1,3~5,3에 차례로 문자를 표시했다가 지우는 예제입니다.  
+#### Text Display
+Insert text or character on the screen (Registered text in the app can be used).  
+The following is an example of displaying and erasing a character through location (1, 3) and (5, 3).  
 ![](/assets/images/sw/rplus_task3/task3_151.png)  
 ![](/assets/images/sw/rplus_task3/task3_152.png)
 ![](/assets/images/sw/rplus_task3/task3_153.png)
 ![](/assets/images/sw/rplus_task3/task3_154.png)
 ![](/assets/images/sw/rplus_task3/task3_155.png)
 
-#### 숫자 표시
-스마트 기기의 화면에 숫자를 배치할 때 사용합니다. (별도의 문자 등록 없이 0~255 사이의 숫자를 사용할 수 있습니다.)  
-아래는 위치3,3에 숫자를 증가하며 표시하는 예제입니다.  
+#### Number Display
+Insert a number on the screen (Numbers between 0 ~ 255 can be used).  
+The following is an example of displaying a number that increases every 1.024 second at location (3, 3).  
 ![](/assets/images/sw/rplus_task3/task3_156.png)  
 ![](/assets/images/sw/rplus_task3/task3_157.png)![](/assets/images/sw/rplus_task3/task3_158.png)
 
-### [멀티미디어](#멀티미디어)
+### [Multimedia](#multimedia)
 
-스마트 기기의 화면과 스피커를 사용하여 영상을 출력하거나, 소리를 출력하기 위해 사용합니다.
+Play video and sound from the smart device.
 
-#### 문자음성 자동변환(TTS)
-스마트 기기의 문자음성 자동변환 서비스를 활용할 때 사용합니다. (스마트 기기 앱에 미리 등록해놓은 문자만 사용할 수 있습니다.)  
-아래는 문자아이템2, 문자아이템3을 번갈아 음성으로 변환하여 출력하는 예제입니다.  
+#### Text to Speech (TTS)
+Use TTS feature of the smart device (Registered sentences can be used).  
+The following is an example of using TTS for Text Item 1 and Item 2.  
 ![](/assets/images/sw/rplus_task3/task3_159.png)
 
-#### 악기 연주
-스마트 기기로 악기 소리를 낼 때 사용합니다.  
-아래는 어쿠스틱 피아노로 도, 레, 미를 반복해서 출력하는 예제입니다.  
+#### Play Instruments
+Use smart device to play various instruments.  
+The following is an example of playing Do, Re, Mi with Acoustic Grand Piano.  
 ![](/assets/images/sw/rplus_task3/task3_160.png)
 
-#### 오디오 재생
-스마트 기기의 오디오 파일을 재생할 때 사용합니다.  
-오디오 재생1과 오디오 재생2는 독립적으로 동작합니다. (스마트 기기 앱에 미리 등록해놓은 오디오 파일만 사용할 수 있습니다.)
+#### Play Audio
+Play audio files in the smart device. The Audio 1 and Audio 2 are independent to each other (Registered audio files in the app can be played).
 
-#### 볼륨
-스마트 기기의 사운드 볼륨을 설정할 때 사용합니다.  
-값 범위는 0~255이며, 값이 클수록 볼륨이 커집니다. 기기에 따라 값의 범위가 다를 수 있습니다.  
-아래는 오디오 재생1, 오디오 재생2, 볼륨을 이용하여 스마트 기기의 음원을 재생하는 예제입니다.  
+#### Volume
+Configures the sound volume of the smart device.  
+The value range is 0 ~ 255, and larger number will increase the volume. The effective value range may differ by devices.  
+The following is an example of playing an `Audio Item 1` and `Audio Item 2`.  
 ![](/assets/images/sw/rplus_task3/task3_161.png)
 
-#### 동영상 재생
-스마트 기기의 동영상 파일을 재생할 때 사용합니다. (스마트 기기 앱에 미리 등록해놓은 동영상만 사용할 수 있습니다.)
+#### Play Video
+Play video files in the smart device. (Registered video files in the app can be played).
 
-#### 동영상 일시정지
-스마트 기기에서 동영상 파일이 재생되고 있을 때 일시 정지하기 위해 사용합니다.  
-아래는 동영상 재생과 동영상 일시정지를 사용하여 화면을 터치하고 있는 동안 동영상 재생을 일시정지하는 예제입니다.  
+#### Pause Video
+Stop playing the video file for a moment.  
+The following is an example of pausig the `Video Item 1` while touching the screen.  
 ![](/assets/images/sw/rplus_task3/task3_162.png)
 
-### [센서](#센서)
+### [Sensors](#sensors)
 
-스마트 기기에 내장된 여러 가지 센서를 활용하기 위해 사용합니다.
+This parameter grants access to various sensors in the smart device.
 
-#### 흔들림 센서
-스마트 기기의 흔들림 센서를 활용하기 위해 사용합니다. 스마트 기기의 흔들림 정도에 따라 0~255사이 값이 출력됩니다.  
-아래는 스마트 기기의 흔들림 정도를 읽어 값이 80이상일 때 화면에 표시한 도형의 색상을 바꾸는 예제입니다.  
+#### Impact
+Read the impact of smart device. Depending on the extent of impact, the value between 0 and 255 is displayed.  
+The following is an example of reading impact and changing the color of the shape.  
 ![](/assets/images/sw/rplus_task3/task3_163.png)  
 ![](/assets/images/sw/rplus_task3/task3_164.png)![](/assets/images/sw/rplus_task3/task3_165.png)
 
-#### 기울기 센서
-스마트 기기의 기울기 센서를 활용하기 위해 사용합니다. (왼쪽), (오른쪽), (위쪽), (아래쪽)의 기울기를 각각 0~90도로 출력됩니다.  
-아래는 스마트 기기의 기울기에 따라 화면에 기울어진 방향에 원을 표시하는 예제입니다.  
+#### Gyro Sensor
+Read the Gyro sensor of smart device. Degree of rotation for (Left), (Right), (Up), (Down) directions are displayed between 0 ~ 90&deg;.  
+The following is an example of displaying a circle based on the Gyro values.  
 ![](/assets/images/sw/rplus_task3/task3_166.png)  
 ![](/assets/images/sw/rplus_task3/task3_167.png)![](/assets/images/sw/rplus_task3/task3_168.png)![](/assets/images/sw/rplus_task3/task3_169.png)
 
-#### 조도 센서
-스마트 기기의 조도 센서를 활용하기 위해 사용합니다. 주위 밝기에 따라 0~65535의 값이 출력됩니다. 기기에 따라 값의 범위가 다를 수 있습니다.  
-아래는 조도를 측정하여 주위가 어두우면 회색 원을, 주위가 밝으면 흰색 원을 화면에 표시하는 예제입니다.  
+#### Illuminance Sensor
+Read the environment brightness of smart device. Depending on the brightness, the value between 0 and 65,535 is displayed. The effective value range may differ by devices.  
+The following is an example of using the Illuminance sensor to change the color of the shape.  
 ![](/assets/images/sw/rplus_task3/task3_170.png)  
 ![](/assets/images/sw/rplus_task3/task3_171.png)![](/assets/images/sw/rplus_task3/task3_172.png)
 
-#### 자기장 센서
-스마트 기기의 자기장 센서를 활용하기 위해 사용합니다. 주위 자기장에 따라 0~65535의 값이 출력됩니다.  
-아래는 스마트 기기 주위의 자기장을 측정하여 값을 화면에 표시하는 예제입니다.  
+#### Magnetic Field Sensor
+Read the magnetic field near the smart device. The value between 0 and 65,535 is displayed.  
+The following is an example of using the Magnetic Field Sensor.  
 ![](/assets/images/sw/rplus_task3/task3_173.png)  
 ![](/assets/images/sw/rplus_task3/task3_174.png)![](/assets/images/sw/rplus_task3/task3_175.png)
 
-#### 방향 센서
-스마트 기기의 방향 센서를 활용하기 위해 사용합니다. 방향에 따라 각도 단위로 0~359 사이의 값을 출력합니다. (0:북, 90:동, 180:남, 270:서)  
-아래는 스마트 기기의 방향 값을 10으로 나누어 화면에 표시하는 예제입니다.  
+#### Direction (Angle)
+Read the orientation of smart device. The value betwee 0 and 359 is diplayed based on the heading of smart device (0: North, 90: East, 180: South, 270: West).  
+The following is an example of reading Direction.  
 ![](/assets/images/sw/rplus_task3/task3_176.png)  
 ![](/assets/images/sw/rplus_task3/task3_177.png)
 
-#### 소음 센서
-스마트 기기의 소음 센서를 활용하기 위해 사용합니다. 소음에 따라 dB 단위로 0~255 사이의 값을 출력합니다.  
-아래는 소음의 크기에 따라 도형을 표시하는 예제입니다.  
+#### Noise (dB)
+Read the noise level near the smart device. The value between 0 ~ 255 is displayed.  
+The following is an example of reading noise level.  
 ![](/assets/images/sw/rplus_task3/task3_178.png)  
 ![](/assets/images/sw/rplus_task3/task3_179.png)![](/assets/images/sw/rplus_task3/task3_180.png)
 
-#### 음성 인식
-스마트 기기의 음성 인식 기능을 켜거나 끄기 위해 사용합니다. True일 때 “음성 인식 시작”, False일 때 “음성 인식 정지”로 동작합니다.  
+#### Speech Recognition
+Switch the speech recognition of smart device. If set to `Ture`, speech recognition will be enabled.  
 
-#### 음성 인식 결과
-“음성 인식”기능을 사용할 때, 인식된 결과를 확인하기 위해 사용합니다.  
-인식된 결과가 숫자로 표시됩니다. 0일 때 “결과값 없음”, 1~199일 때 해당 문자아이템과 일치.  
-아래는 음성 인식과 음성 인식 결과를 사용하여 화면을 터치했을 때 음성을 인식하여 인식된 결과를 화면 중앙에 표시하는 예제입니다.  
+#### Result of Speech Recognition
+When `Speech Recognition` is enabled, this parameter will return the result of recognition.  
+If the speech is properly recognized, the result will return a value of matching sentence number between 1 and 199. If the speech is not matching any of the sentences, it will return 0.  
+The following is an example of speech recognition.  
 ![](/assets/images/sw/rplus_task3/task3_181.png)  
 ![](/assets/images/sw/rplus_task3/task3_182.png)![](/assets/images/sw/rplus_task3/task3_183.png)
 
-#### 터치 위치
-스마트 기기의 화면 터치 위치를 활용하기 위해 사용합니다. 터치 위치1은 첫 번째로 터치된 손가락을 의미하며 터치 위치2는 두 번째로 터치된 손가락을 의미합니다.  
-아래는 터치한 위치에 도형을 표시하는 예제입니다.  
+#### Touch Area
+Read the location of touched coordinate of smart device. `Touch Area 2` can used when more than one touch inputs are required.  
+The following is an example of reading `Touch Area 1` and `Touch Area 2` to display circles at touched coordinates.  
 ![](/assets/images/sw/rplus_task3/task3_184.png)  
 ![](/assets/images/sw/rplus_task3/task3_185.png)![](/assets/images/sw/rplus_task3/task3_186.png)
 
-#### 제스처 인식
-스마트 기기의 제스처 인식 기능을 활용하기 위해 사용합니다.  
-아래는 제스처를 인식하여 해당 제스처의 번호를 화면에 출력하는 예제입니다.  
+#### Gesture Recognition
+Use the gesture recognition of smart device.  
+The following is an example of recognizing gestures.  
 ![](/assets/images/sw/rplus_task3/task3_187.png)  
 ![](/assets/images/sw/rplus_task3/task3_188.png)![](/assets/images/sw/rplus_task3/task3_189.png)
 
-### [스마트 장치: 기타](#스마트-장치-기타)
-스마트 기기의 부가 기능을 활용하기 위해 사용합니다.
+### [Smart Device: Miscellaneous](#smart-device-miscellaneous)
+Use additional features of smart device.
 
-#### 디버그 정보 표시
-스마트 기기의 주요기능들의 값을 화면에 표시하여 확인하기 위해 사용합니다.  
-하위 비트(우측)부터 1로 설정 시 다음의 정보를 스마트 기기의 화면에 표시할 수 있습니다.
+#### Display Debug Info
+Display information regarding specific feature of smart device.  
+Setting each bit to `1` will display below information on the screen.
 
-|  비트(Bit)  | 정보                                             |
-|:-----------:|:-------------------------------------------------|
-| 1번째 비트  | 비전 관련 위치, 색상 표시 (정수 입력 시 : 1)     |
-| 2번째 비트  | 흔들림 값 표시 (정수 입력 시 : 2)                |
-| 3번째 비트  | 기울기 상하좌우 값 표시 (정수 입력 시 : 4)       |
-| 4번째 비트  | 조도 값 표시 (정수 입력 시 : 8)                  |
-| 5번째 비트  | 자기장 값 표시 (정수 입력 시 : 16)               |
-| 6번째 비트  | 방향 값 표시 (정수 입력 시 : 32)                 |
-| 7번째 비트  | 소음 값 표시 (정수 입력 시 : 64)                 |
-| 8번째 비트  | 터치 위치 1, 2값 표시 (정수 입력 시 : 128)       |
-| 9번째 비트  | 음성입력 결과 값 표시 (정수 입력 시 : 256)       |
-| 10번째 비트 | SMS 관련 전화번호, 내용 표시(정수 입력 시 : 512) |
+|   Bit    | Equivalent Decimal Value | Information                                  |
+|:--------:|:------------------------:|:---------------------------------------------|
+| 1st Bit  |            1             | Debug coordinate and color related to Vision |
+| 2nd Bit  |            2             | Debug Impact value                           |
+| 3rd Bit  |            4             | Debug Gyro values                            |
+| 4th Bit  |            8             | Debug Illuminance value                      |
+| 5th Bit  |            16            | Debug Magnetic Field value                   |
+| 6th Bit  |            32            | Debug Direction value                        |
+| 7th Bit  |            64            | Debug Noise value                            |
+| 8th Bit  |           128            | Debug Touch Area 1 and 2 values              |
+| 9th Bit  |           256            | Debug Speech Recognition result value        |
+| 10th Bit |           512            | Debug SMS number and message                 |
 
-아래는 디버그 정보 표시 기능을 이용하는 예제입니다.  
+The following is an example of debugging information.  
 ![](/assets/images/sw/rplus_task3/task3_190.png)  
 ![](/assets/images/sw/rplus_task3/task3_191.png)
 
-#### 화면 출력
-태스크 코드에서 특정 값을 눈으로 확인하고 싶을 때 사용합니다. (스마트 앱 화면에 표시됩니다.)
+#### Print Screen
+Print the specific value on terminal window or output monitor.
 
-#### 화면 출력 후 줄바꿈
-태스크 코드에서 특정 값을 눈으로 확인하고 싶을 때 사용합니다. 출력 후 자동으로 다음 줄로 변경됩니다. (스마트 앱 화면에 표시됩니다.)  
-아래는 스마트 기기의 화면출력 예제입니다.  
+#### Print Screen with Line
+Print the specific value on terminal window or output monitor. New line will be inserted after printing values.  
+The following is an example of using Print Screen with Line.  
 ![](/assets/images/sw/rplus_task3/task3_192.png)
 
-#### 스마트 타이머
-스마트 기기의 타이머를 설정하기 위해 사용합니다.
+#### Smart Timer
+Sets timer on smart device.
 
-#### 진동 시간
-스마트 기기의 진동 기능을 켤 때 사용합니다.
-
-#### 진동 상태
-스마트 기기가 현재 진동 중인지 확인하기 위해 사용합니다.  
-아래는 스마트 타이머와 진동 시간을 이용하여 10초마다 1초 진동하는 예제입니다.  
+#### Vibration Time
+Sets time to vibrate the smart device.
+The following is an example of vibrating smart device for 1 second in every 10 seconds.  
 ![](/assets/images/sw/rplus_task3/task3_193.png)
 
-#### 현재 시간
-스마트 기기로부터 현재시간을 읽어오기 위해 사용합니다.  
-아래는 현재시간을 화면에 표시하는 예제입니다.  
+#### Vibration Status
+Check if smart device is vibrating.  
+
+#### Present Time
+Read the present time from smart device.  
+The following is an example of displaying current time on screen.  
 ![](/assets/images/sw/rplus_task3/task3_194.png)  
 ![](/assets/images/sw/rplus_task3/task3_195.png)
 
-#### 플래시 LED
-스마트 기기의 카메라 플래시 LED를 켜거나 끄기 위해 사용합니다.  
-아래는 조도센서로 주위 밝기를 측정하여 어두우면 플래시 LED를 켜는 예제입니다.  
+#### Flash LED
+Controls the LED on smart device.  
+The following is an example of turning the LED on with the illuminance sensor value.  
 ![](/assets/images/sw/rplus_task3/task3_196.png)
 
-#### 앱 실행하기
-스마트 기기에 설치된 앱을 실행하기 위해 사용합니다.  
-아래는 화면을 터치하면 등록된 앱을 실행하는 예제입니다.  
+#### Launch App
+Launch other app installed on the smart device.  
+The following is an example of running registered app when touching screen.  
 ![](/assets/images/sw/rplus_task3/task3_197.png)
 
-#### E-Mail 기능
-촬영한 사진이나 동영상을 E-Mail로 발송하기 위해 사용합니다.
+#### E-Mail Function
+Send pictures or videos taken from the smart device via e-mail.
 
-#### E-Mail 전송 상태
-현재 E-Mail이 전송 중인지 확인하기 위해 사용합니다.  
-아래는 E-Mail 전송 기능과 E-Mail 전송 상태를 사용하여 촬영된 사진을 메일로 보내는 예제입니다.  
+#### E-Mail Send Status
+Check if e-mail is being delivered.  
+The following example shows how to use E-Mail function to send a picture.  
 ![](/assets/images/sw/rplus_task3/task3_202.png)
 
-#### 화면 넓이 / 화면 높이
-스마트 기기 화면의 넓이와 높이를 읽기 위해 사용합니다.
+#### Screen Width / Height
+Gets the width and height of the smart device screen resolution.
 
-### [사용자 데이터](#사용자-데이터)
-스마트 기기의 특정 주소영역에 사용자의 데이터를 읽거나 쓸 수 있습니다.  
+### [SmartUserData](#smartuserdata)
+Access to a User Data area of the smart device for reading and writing user data.  
 
-### [스마트 장치: 직접 입력](#스마트-장치-직접-입력)
+### [Smart Device: Custom](#smart-device-custom)
 
-- 스마트 기기의 주소를 직접 접근하여 읽기와 쓰기 작업을 진행할 수 있습니다.
-- 사용자가 지정한 주소를 Byte 또는 Word, DWord 단위로 선택하여 읽거나 씁니다.
-- 제품과 함께 사용되는 앱의 컨트롤 테이블을 참고하세요. [R+ Smart 컨트롤 테이블]
+- Access a specific memory area to read or write data.
+- Write Byte(1 byte), Word(2 bytes), DWord(4 bytes) data on a specific address in smart device.
+- Please refer to the control table of the app.
 
-## [공통](#공통)
+## [Common](#common)
 
-모든 장치에서 사용할 수 있는 기본적인 변수와 상수입니다.
+Variables and constants can be manipulated.
 
-### [변수](#변수)
+### [Variable](#variable)
 
-- 프로그램 내부의 저장공간으로 여러 가지 데이터를 저장하거나 읽을 수 있습니다.
-- 숫자를 기억하고 있어야 하는 경우나 공통된 값을 한꺼번에 변경해야 하는 경우 변수를 사용하면 유용합니다.
-- 아래는 변수를 사용하는 예제입니다.
+- Variables are assigned in certain memory area of the program to read or write data.
+- The following is an example of using a variable.
 
-![](/assets/images/sw/rplus_task3/task3_203.png)
+  ![](/assets/images/sw/rplus_task3/task3_203.png)
 
-### [숫자](#숫자)
+### [Number](#number)
 
-- 프로그램 내부에서 숫자를 직접 입력해야 하는 경우 사용합니다.
-- 대체로 조건절에서 값을 비교할 때 사용합니다.
-- 값 범위는 -2,147,483,648 ~ 4,294,967,295 입니다.
+- Number can be used to assign a number in the code.
+- The valid value range is -2,147,483,648 ~ 4,294,967,295.
 
-![](/assets/images/sw/rplus_task3/task3_204.png)
+  ![](/assets/images/sw/rplus_task3/task3_204.png)
 
-### [참/거짓](#참거짓)
+### [True/False](#truefalse)
 
-- 프로그램 내부에서 참 / 거짓(True / False)를 직접 입력해야 하는 경우 사용합니다.
-- 대체로 조건절에서 상태를 비교할 때 사용합니다.
-- 값 범위는 0~1 입니다. False일 때 0, True일 때 1.
+- Boolean expression can be used to assign a variable or to compare expression.
+- True/False is useful when testing the conditional statments.
+- False: 0, True: 1.
 
-![](/assets/images/sw/rplus_task3/task3_205.png)
+  ![](/assets/images/sw/rplus_task3/task3_205.png)
 
-### [2진수 숫자](#2진수-숫자)
+### [Binary Number](#binary-number)
 
-- 프로그램 내부에서 숫자를 직접 입력해야 하는 경우 사용합니다.
-- 대체로 비트 연산을 해야한 경우 사용되며, 2진수로 표기됩니다.
-- 값 범위는 0 ~ 4,294,967,295 입니다. (Hex : 00 00 00 00 ~ FF FF FF FF)  
-![](/assets/images/sw/rplus_task3/task3_206.png)
+- Binary Number is useful to enter a binary value in the code.
+- Binary Number can be used where bit operation is required.
+- The valid value range is 0 ~ 4,294,967,295 (Hex : 00 00 00 00 ~ FF FF FF FF).
 
-### [모터 모드](#모터-모드)
-SM-10 서보모터의 속도모드, 관절모드를 전환할 경우 사용합니다.  
+  ![](/assets/images/sw/rplus_task3/task3_206.png)
+
+### [Motor Mode](#motor-mode)
+This parameter is used to switch the SM-10 operating mode between Wheel mode and Joint mode.  
 ![](/assets/images/sw/rplus_task3/task3_219.png)
 
-## [모션 목록](#모션-목록)
-모션 예제가 열려있는 경우 해당 예제의 모션 목록이 여기에 나타납니다.  
-모션 예제가 열려있지 않은 경우 이 항목은 메뉴에 표시되지 않습니다.  
+## [Motion List](#motion-list)
+If motion project is opened and avilable, the motion will be listed in this section.  
+Motion List menu will not be shown if motion example is not opened.  
 ![](/assets/images/sw/rplus_task3/task3_218.png)
 
 [Controller Compatibility]: /docs/en/parts/controller/controller_compatibility/
@@ -974,15 +971,4 @@ SM-10 서보모터의 속도모드, 관절모드를 전환할 경우 사용합�
 [CM-550]: /docs/en/parts/controller/cm-550/
 [CM-700]: /docs/en/parts/controller/cm-700/
 [OpenCM 7.0]: /docs/en/parts/controller/opencm7/
-[R+ Smart 컨트롤 테이블]: /docs/en/software/mobile_app/rplussmart/#r-smart-control-table
-[ROBOTIS DREAM]: /docs/en/edu/dream/dream1-1/
-[ROBOTIS SMART]: /docs/en/edu/smart/smart1-1/
-[ROBOTIS STEM]: /docs/en/edu/bioloid/stem/
-[ROBOTIS PREMIUM]: /docs/en/edu/bioloid/premium/
-[ROBOTIS GP]: /docs/en/edu/bioloid/gp/
-[ROBOTIS MINI]: /docs/en/edu/mini/
 [OpenCM 9.04]: /docs/en/parts/controller/opencm904/
-[BT-110]: /docs/en/parts/communication/bt-110/
-[BT-210]: /docs/en/parts/communication/bt-210/
-[BT-410]: /docs/en/parts/communication/bt-410/
-[제어기펌웨어 업데이트]: /docs/en/software/rplus2/manager/getting_started/#펌웨어-업데이트
