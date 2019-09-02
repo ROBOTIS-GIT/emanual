@@ -20,7 +20,17 @@ page_number: 2
 ![](/assets/images/platform/turtlebot3/overview/turtlebot3_flyer_front_ver1806.png)
 
 ## [Publish](#publish)
-OpenMANIPULATOR
+  - 08/21/2019 [ROS 2 Dashing Release](https://discourse.ros.org/t/tb3-ros-2-dashing-release/10364)
+  - 08/20/2019 [Navigation2 Dashing release - demo video](https://discourse.ros.org/t/navigation2-dashing-release-demo-video/10349)
+  - 02/01/2019 [Announcing new packages for TurtleBot3 in ROS2 (including Cartographer and Navigation2)](https://discourse.ros.org/t/announcing-new-packages-for-turtlebot3-in-ros2-including-cartographer-and-navigation2/7694)
+  - 12/17/2018 [ros2arduino released: Arduino library for communicating with ROS 2](https://discourse.ros.org/t/ros2arduino-0-0-1-released-arduino-library-for-communicating-with-ros2-dds/7147)
+  - 09/21/2018 [XEL Network first application + Distributing XEL devices 100 set for free in ROScon2018!](https://discourse.ros.org/t/xel-network-first-application-distributing-xel-devices-100-set-for-free-in-roscon2018/6115)
+  - 09/13/2018 [Introducing the XEL Network : Modular H/W ecosystem over ROS2](https://discourse.ros.org/t/introducing-the-xel-network-modular-h-w-ecosystem-over-ros2/6050)
+  - 09/05/2018 [Introducing ROS2 Tutorials](https://discourse.ros.org/t/tb3-introducing-ros2-tutorials/5959)
+  - 08/08/2018 [Machine Learning tutorial](https://discourse.ros.org/t/tb3-machine-learning-tutorial/5659)
+  - 08/08/2018 [TurtleBot3 AutoRace in ROS Development Studio](https://discourse.ros.org/t/tb3-turtlebot3-autorace-in-ros-development-studio/5660)
+  - 08/07/2018 [Tutorial for Task Mission in ROS Development Studio](https://discourse.ros.org/t/tb3-tutorial-for-task-mission-in-ros-development-studio/5651)
+  - 07/18/2018 [New ROS Online Course for Beginner](https://discourse.ros.org/t/new-ros-online-course-for-beginner/5320)
   - 07/03/2018 [TurtleBot3 AutoRace with Gazebo](https://discourse.ros.org/t/tb3-turtlebot3-autorace-with-gazebo/5261)
   - 05/25/2018 [Announcing TurtleBot3 Software(v1.0.0) and Firmware(v1.2.0) Update](https://discourse.ros.org/t/announcing-turtlebot3-software-v1-0-0-and-firmware-v1-2-0-update/4888)
   - 05/21/2018 [Reinforcement Learning with TB3!](https://discourse.ros.org/t/tb3-reinforcement-learning-with-tb3/4842)
@@ -69,6 +79,13 @@ OpenMANIPULATOR
   - 10/13/2016 [Announcing TurtleBot3](https://discourse.ros.org/t/announcing-turtlebot3/623)
 
 ## [News](#news)
+  - 07/22/2019 [Top 10 ROS-based robotics companies in 2019, The Robot Report
+](https://www.therobotreport.com/top-10-ros-based-robotics-companies-2019/)
+  - 12/10/2018 [Robot Gift Guide 2018, IEEE Spectrum](https://spectrum.ieee.org/automaton/robotics/home-robots/robot-gift-guide-2018)
+  - 11/26/2018 [AWS RoboMaker – Develop, Test, Deploy, and Manage Intelligent Robotics Apps, AWS News Blog](https://aws.amazon.com/blogs/aws/aws-robomaker-develop-test-deploy-and-manage-intelligent-robotics-apps/)
+  - 10/01/2018 [Microsoft Announces Experimental Release of ROS for Windows 10, IEEE Spectrum](https://spectrum.ieee.org/automaton/robotics/robotics-software/microsoft-announces-experimental-release-of-ros-for-windows-10)
+  - 09/29/2018 "XEL Network : modular H/W ecosystem using ROS2" on ROSCon2018, [PDF](https://roscon.ros.org/2018/presentations/ROSCon2018_Lightning1_11.pdf), [Video](https://vimeo.com/292710106)
+  - 09/14/2018 "Introduction of Open Robot Platform: mobile robot, manipulator, humanoid, hand" on ROSCon JP 2018, [PDF](https://roscon.ros.org/jp/2018/presentations/ROSCon_JP_2018_presentation_4.pdf), [Video](https://vimeo.com/292071289)
   - 07/06/2018 [Video Friday: Roboy, AI Ethics, and Big Clapper](https://spectrum.ieee.org/automaton/robotics/robotics-hardware/video-friday-roboy-ai-ethics-big-clapper)
   - 02/02/2018 [Video Friday: Waffle Robots, Laser vs. Drone, and TurtleBot Tutorials, IEEE Spectrum](https://spectrum.ieee.org/automaton/robotics/robotics-hardware/video-friday-waffle-robots-laser-vs-drone-turtlebot-tutorials)
   - 11/30/2017 [Robot Gift Guide 2017, IEEE Spectrum](https://spectrum.ieee.org/automaton/robotics/home-robots/robot-gift-guide-2017)
