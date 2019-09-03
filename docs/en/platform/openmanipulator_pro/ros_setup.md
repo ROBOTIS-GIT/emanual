@@ -142,7 +142,7 @@ $ roscore
 With the roscore running, open a new terminal window and enter the following command to set usb latency time.
 
 ``` bash
-$ rosrun open_manipulator_controller create_udev_rules
+$ rosrun open_manipulator_pro_controller create_udev_rules
 ```
 
 **TIP**: This entered command set USB latency timer to **1 ms**. If you would like to see the setting, run the following command in a terminal.  
