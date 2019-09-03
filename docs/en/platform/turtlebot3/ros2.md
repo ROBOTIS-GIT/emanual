@@ -600,7 +600,7 @@ $ ros2 run nav2_map_server map_saver -f ~/map
 ```
     ![](/assets/images/platform/turtlebot3/ros2/gazebo_cartographer.png)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/PUr9k8CRNE0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pJNSxDodhDk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **NOTE** :
 You should set some parameters to use simulation time.
@@ -620,6 +620,6 @@ $ ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=True ma
 
 ![](/assets/images/platform/turtlebot3/ros2/gazebo_navigation2.png)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/aQh8JqSrmCs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VtyqUuuZAFA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 [export_turtlebot3_model]: /docs/en/platform/turtlebot3/export_turtlebot3_model
