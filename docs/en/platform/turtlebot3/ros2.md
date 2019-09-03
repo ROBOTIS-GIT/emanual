@@ -177,7 +177,9 @@ $ sudo netplan apply
 $ systemctl mask systemd-networkd-wait-online.service
 ```
 
-6. From now, you can use SSH. If you want remote PC to connect to SBC and to install ROS and TurtleBot3 software, run a command below.
+**NOTE** : From now, you can use SSH. If you want remote PC to connect to SBC and to install ROS and TurtleBot3 software, run a command below.
+{: .notice}
+
 ```bash
 $ ssh ubuntu@<NETWORK IP of Raspberry PI>
 ```
