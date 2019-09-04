@@ -563,6 +563,8 @@ $ ros2 run turtlebot3_teleop teleop_keyboard
 
 **SLAM (Simultaneous Localization And Mapping)** is a technique to draw a map by estimating current location in an arbitrary space. The SLAM is a well-known feature of TurtleBot from its predecessors. The video here shows you how accurately TurtleBot3 can draw a map with its compact and affordable platform.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pJNSxDodhDk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 1. Lauch `turtlebot3_cartographer cartographer.launch.py`
 ```bash
 $ ros2 launch turtlebot3_cartographer cartographer.launch.py
@@ -572,7 +574,6 @@ $ ros2 launch turtlebot3_cartographer cartographer.launch.py
 ```bash
 $ ros2 run nav2_map_server map_saver -f ~/map
 ```
-<iframe width="560" height="315" src="https://www.youtube.com/embed/wzz54a8ppxI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## [Navigation2](#navigation2)
 
@@ -582,6 +583,8 @@ $ ros2 run nav2_map_server map_saver -f ~/map
 
 **Naviagation2 related document** :  
 - [Naviagation2](https://github.com/ros-planning/navigation2/blob/master/README.md)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VtyqUuuZAFA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### [Run Navigation2 Nodes](#run-navigation-nodes)
 
@@ -637,8 +640,6 @@ $ ros2 run nav2_map_server map_saver -f ~/map
 ```
     ![](/assets/images/platform/turtlebot3/ros2/gazebo_cartographer.png)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pJNSxDodhDk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 **NOTE** :
 You should set some parameters to use simulation time.
 If you need futher information about it, go on [navigation2 repo](https://github.com/ros-planning/navigation2/tree/master/nav2_bringup)
@@ -656,7 +657,5 @@ $ ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=True ma
 - If TurtleBot3 is close to a costmap or nearby the map, click `Navigation2 Goal` button in a menu bar, and then point goal pose on the map.
 
 ![](/assets/images/platform/turtlebot3/ros2/gazebo_navigation2.png)
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VtyqUuuZAFA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 [export_turtlebot3_model]: /docs/en/platform/turtlebot3/export_turtlebot3_model
