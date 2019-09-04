@@ -324,73 +324,76 @@ $ wget https://github.com/ROBOTIS-GIT/OpenCR-Binaries/raw/master/turtlebot3/ROS2
 $ tar -xjf ./opencr_update.tar.bz2
 ```
 
-#### Upload TurtleBot3 ROS 2 firmware to OpenCR.
+#### Upload ROS 2 firmware of TurtleBot3 to OpenCR.
 
-- TurtleBot3 Burger
+##### For TurtleBot3 Burger.
+```bash
+# Set a port for OpenCR 
+$ export OPENCR_PORT=/dev/ttyACM0
+# Set a model of TurtleBot3 you are using
+$ export OPENCR_MODEL=burger
+$ cd ~/opencr_update && ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr
+```
 
-  ```bash
-  # Set a port for OpenCR 
-  $ export OPENCR_PORT=/dev/ttyACM0
-  # Set a model of TurtleBot3 you are using
-  $ export OPENCR_MODEL=burger
-  $ cd ~/opencr_update && ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr
-  ```
+The following window shows you the result of a firmware upload of TurtleBot3 Burger to OpenCR.  
+Make sure `jump_to_fw` message is displayed on the bottom of the window. 
 
-  If uploading the firmware succeeds, some messages will be displayed in the terminal like below. Check if the message `jump_to_fw` is displayed!
-  ```bash
-  aarch64
-  arm
-  OpenCR Update Start..
-  opencr_ld_shell ver 1.0.0
-  opencr_ld_main
-  [  ] file name   	: burger.opencr
-  [  ] file size   	: 168 KB
-  [  ] fw_name     	: burger
-  [  ] fw_ver      	: V180903R1
-  [OK] Open port   	: /dev/ttyACM0
-  [  ]
-  [  ] Board Name  	: OpenCR R1.0
-  [  ] Board Ver   	: 0x17020800
-  [  ] Board Rev   	: 0x00000000
-  [OK] flash_erase 	: 0.96s
-  [OK] flash_write 	: 1.92s
-  [OK] CRC Check   	: 10E28C8 10E28C8 , 0.006000 sec
-  [OK] Download
-  [OK] jump_to_fw
-  ```
+```bash
+aarch64
+arm
+OpenCR Update Start..
+opencr_ld_shell ver 1.0.0
+opencr_ld_main
+[  ] file name   	: burger.opencr
+[  ] file size   	: 168 KB
+[  ] fw_name     	: burger
+[  ] fw_ver      	: V180903R1
+[OK] Open port   	: /dev/ttyACM0
+[  ]
+[  ] Board Name  	: OpenCR R1.0
+[  ] Board Ver   	: 0x17020800
+[  ] Board Rev   	: 0x00000000
+[OK] flash_erase 	: 0.96s
+[OK] flash_write 	: 1.92s
+[OK] CRC Check   	: 10E28C8 10E28C8 , 0.006000 sec
+[OK] Download
+[OK] jump_to_fw
+```
 
-- TurtleBot3 Waffle or Waffle Pi
-  
-  ```bash
-  # Set a port for OpenCR 
-  $ export OPENCR_PORT=/dev/ttyACM0
-  # Set a model of TurtleBot3 you are using
-  $ export OPENCR_MODEL=waffle
-  $ cd ~/opencr_update && ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr
-  ``` 
+##### For TurtleBot3 Waffle and Waffle Pi.
 
-  If uploading the firmware succeeds, some messages will be displayed in the terminal like below. Check if the message `jump_to_fw` is displayed!
-  ```bash
-  aarch64
-  arm
-  OpenCR Update Start..
-  opencr_ld_shell ver 1.0.0
-  opencr_ld_main
-  [  ] file name   	: burger.opencr
-  [  ] file size   	: 168 KB
-  [  ] fw_name     	: burger
-  [  ] fw_ver      	: V180903R1
-  [OK] Open port   	: /dev/ttyACM0
-  [  ]
-  [  ] Board Name  	: OpenCR R1.0
-  [  ] Board Ver   	: 0x17020800
-  [  ] Board Rev   	: 0x00000000
-  [OK] flash_erase 	: 0.96s
-  [OK] flash_write 	: 1.92s
-  [OK] CRC Check   	: 10E28C8 10E28C8 , 0.006000 sec
-  [OK] Download
-  [OK] jump_to_fw
-  ```
+```bash
+# Set a port for OpenCR 
+$ export OPENCR_PORT=/dev/ttyACM0
+# Set a model of TurtleBot3 you are using
+$ export OPENCR_MODEL=waffle
+$ cd ~/opencr_update && ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr
+```
+
+The following window shows you the result of a firmware upload of TurtleBot3 Waffle/Waffle Pi to OpenCR.  
+Make sure `jump_to_fw` message is displayed on the bottom of the window.  
+
+```bash
+aarch64
+arm
+OpenCR Update Start..
+opencr_ld_shell ver 1.0.0
+opencr_ld_main
+[  ] file name   	: waffle.opencr
+[  ] file size   	: 168 KB
+[  ] fw_name     	: waffle
+[  ] fw_ver      	: V180903R1
+[OK] Open port   	: /dev/ttyACM0
+[  ]
+[  ] Board Name  	: OpenCR R1.0
+[  ] Board Ver   	: 0x17020800
+[  ] Board Rev   	: 0x00000000
+[OK] flash_erase 	: 0.96s
+[OK] flash_write 	: 1.92s
+[OK] CRC Check   	: 10E28C8 10E28C8 , 0.006000 sec
+[OK] Download
+[OK] jump_to_fw
+```
 
 Reset OpenCR using RESET button.
 
