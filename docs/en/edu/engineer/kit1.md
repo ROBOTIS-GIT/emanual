@@ -569,8 +569,8 @@ Explore following simple steps and train your robot to recognize your custom obj
 
 #### [Upgrade pip Packages](#upgrade-pip-packages)
 
-1. Open a Command Prompt as an administrator
-  - Press `WIN` + `S` on your keyboard to open a Windows search box 
+1. Open a Command Prompt as an administrator.
+  - Press `WIN` + `S` on your keyboard to open a Windows search box. 
   - Type **CMD** into the Windows search box and click the resulting “Command Prompt” as an administrator. 
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_cmd_01.png)
