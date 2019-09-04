@@ -565,12 +565,15 @@ $ ros2 run turtlebot3_teleop teleop_keyboard
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pJNSxDodhDk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-1. Lauch `turtlebot3_cartographer cartographer.launch.py`
+### [Run SLAM Nodes](#run-slam-nodes)
+
 ```bash
 $ ros2 launch turtlebot3_cartographer cartographer.launch.py
 ```
     ![](/assets/images/platform/turtlebot3/ros2/platform_cartographer.png)
-2. Save the map
+
+### [Save the map](#save-the-map)
+
 ```bash
 $ ros2 run nav2_map_server map_saver -f ~/map
 ```
@@ -586,7 +589,7 @@ $ ros2 run nav2_map_server map_saver -f ~/map
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VtyqUuuZAFA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### [Run Navigation2 Nodes](#run-navigation-nodes)
+### [Run Navigation2 Nodes](#run-navigation2-nodes)
 
 ```bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
