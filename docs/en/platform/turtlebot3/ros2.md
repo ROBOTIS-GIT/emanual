@@ -525,7 +525,6 @@ $ ros2 service list
 ```bash
 $ ros2 launch turtlebot3_bringup rviz2.launch.py
 ```
-
 ![](/assets/images/platform/turtlebot3/ros2/platform_teleop.png)
 
 ## [Teleoperation](#teleoperation)
@@ -570,7 +569,8 @@ $ ros2 run turtlebot3_teleop teleop_keyboard
 ```bash
 $ ros2 launch turtlebot3_cartographer cartographer.launch.py
 ```
-    ![](/assets/images/platform/turtlebot3/ros2/platform_cartographer.png)
+    
+![](/assets/images/platform/turtlebot3/ros2/platform_cartographer.png)
 
 ### [Save the Map](#save-the-map)
 
