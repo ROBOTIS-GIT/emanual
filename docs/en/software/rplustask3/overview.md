@@ -15,7 +15,7 @@ page_number: 1
 
 # [Introduction](#introduction)
 
-![](/assets/images/sw/rplus_task3/task3_001.png)
+![](/assets/images/sw/rplus_task3_en/task3_001.png)
 
 R+ Task 3.0 is an integrated software tool that combines R+ Task 2.0 and R+ Motion 2.0.
 
@@ -73,33 +73,33 @@ The Motion files are not backward compatible, but lower version files can be con
 1. Home Tab  
   The following image is the initial screen at start up, which includes default examples, file and settings menu.
 
-    ![](/assets/images/sw/rplus_task3/task3_002.png)
+    ![](/assets/images/sw/rplus_task3_en/task3_002.png)
 
 2. Programming Tab
   The following image shows the task code programming screen, which provides programming toolbar, source view, outline menu, device and download menu.
 
-    ![](/assets/images/sw/rplus_task3/task3_003.png)
+    ![](/assets/images/sw/rplus_task3_en/task3_003.png)
 
 3. Debugging Tab
   The following image shows task code debugging screen, which provides the output monitor and virtual remote controller functions.
 
-    ![](/assets/images/sw/rplus_task3/task3_004.png)
+    ![](/assets/images/sw/rplus_task3_en/task3_004.png)
 
 4. Motion Unit Tab
   User can select the example motion or create custom motion in User Robot Project.
 
-    ![](/assets/images/sw/rplus_task3/task3_002.png)  
-    ![](/assets/images/sw/rplus_task3/task3_005.png)
+    ![](/assets/images/sw/rplus_task3_en/task3_002.png)  
+    ![](/assets/images/sw/rplus_task3_en/task3_005.png)
 
 5. Motion Tab
   User can select motion units play them.
 
-    ![](/assets/images/sw/rplus_task3/task3_006.png)
+    ![](/assets/images/sw/rplus_task3_en/task3_006.png)
 
 6. Motion Download Tab
   Selected motions can be downloaded to the controllers in this tab.
 
-    ![](/assets/images/sw/rplus_task3/task3_007.png)
+    ![](/assets/images/sw/rplus_task3_en/task3_007.png)
 
 
 [Controller Compatibility Table]: /docs/en/parts/controller/controller_compatibility/
