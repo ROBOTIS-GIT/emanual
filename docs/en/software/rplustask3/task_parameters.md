@@ -3,7 +3,7 @@ layout: archive
 lang: en
 ref: task_parameters
 read_time: true
-share: false
+share: true
 author_profile: false
 permalink: /docs/en/software/rplustask3/task_parameters/
 sidebar:
@@ -174,7 +174,8 @@ Reads the output value of the user-created sensor.
 Executes a motion by calling the corresponding Motion index number. If the Motion is being executed, you can read the current Motion index number.
 
 ![](/assets/images/sw/rplus_task3_en/motion_control_namelist.png)
-![](/assets/images/sw/rplus_task3_en/motion_control_namelist.png)
+
+![](/assets/images/sw/rplus_task3_en/motion_control_namelist_2.png)
 
 The following is an example of using the Motion index number.
 

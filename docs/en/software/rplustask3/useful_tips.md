@@ -3,7 +3,7 @@ layout: archive
 lang: en
 ref: useful_tips
 read_time: true
-share: false
+share: true
 author_profile: false
 permalink: /docs/en/software/rplustask3/useful_tips/
 sidebar:

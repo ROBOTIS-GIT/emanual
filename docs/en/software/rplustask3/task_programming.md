@@ -3,7 +3,7 @@ layout: archive
 lang: en
 ref: task_programming
 read_time: true
-share: false
+share: true
 author_profile: false
 permalink: /docs/en/software/rplustask3/task_programming/
 sidebar:

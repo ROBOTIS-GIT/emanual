@@ -3,7 +3,7 @@ layout: archive
 lang: en
 ref: task_instructions
 read_time: true
-share: false
+share: true
 author_profile: false
 permalink: /docs/en/software/rplustask3/task_instructions/
 sidebar:
