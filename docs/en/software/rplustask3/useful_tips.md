@@ -66,14 +66,13 @@ Combine `Ctrl` key when using `Insert` or `Delete` key to keep the time between 
 
 The following shows how to keep the time between keyframes by using `Ctrl` key with `Insert` key.  
 
-![](/assets/images/sw/rplus_task3/motion_keyframe_insert_kr.png)
+![](/assets/images/sw/rplus_task3_en/motion_keyframe_insert.png)
 
 ### [Delete Keyframe](#delete-keyframe)
 
 The following shows how to keep the time between keyframes by using `Ctrl` key with `Delete` key.  
 
-![](/assets/images/sw/rplus_task3/motion_keyframe_delete_kr.png)
-
+![](/assets/images/sw/rplus_task3_en/motion_keyframe_delete.png)
 
 ### [Selective Keyframe Play](#selective-keyframe-play)
 
@@ -227,23 +226,23 @@ In order to use \*.mtn or \*.mtnx files in R+ Task 3.0, they have to be converte
 
 1. Run R+ Task 3.0 and click `Open` button.  
 
-    ![](/assets/images/sw/rplus_task3/motion_trans_01.png)
+    ![](/assets/images/sw/rplus_task3_en/motion_trans_01.png)
 
 2. Select the mtn or mtnx file to convert.
 
-   ![](/assets/images/sw/rplus_task3/motion_trans_02.png)
+   ![](/assets/images/sw/rplus_task3_en/motion_trans_02.png)
 
 3. The below message will appear to confirm the file conversion. Click `OK`.
 
-    ![](/assets/images/sw/rplus_task3/motion_trans_03.png)
+    ![](/assets/images/sw/rplus_task3_en/motion_trans_03.png)
 
 4. Select the 3D robot to use the motion file and click `OK`.
 
-    ![](/assets/images/sw/rplus_task3/motion_trans_04.png)
+    ![](/assets/images/sw/rplus_task3_en/motion_trans_04.png)
 
 5. Save the converted mtn3 file.
 
-    ![](/assets/images/sw/rplus_task3/motion_trans_05.png)
+    ![](/assets/images/sw/rplus_task3_en/motion_trans_05.png)
 
 ## [Control 3D Camera](#control-3d-camera)
 
@@ -272,23 +271,23 @@ In order to use \*.mtn or \*.mtnx files in R+ Task 3.0, they have to be converte
 
 Click the `Angle Value` button to display the angle of each joint.
 
-![](/assets/images/sw/rplus_task3/motion_anglemark_01.png)  
-![](/assets/images/sw/rplus_task3/motion_anglemark_02.png)
+![](/assets/images/sw/rplus_task3_en/motion_anglemark_01.png)  
+![](/assets/images/sw/rplus_task3_en/motion_anglemark_02.png)
 
 ## [Background Image](#background-image)
 
 When creating a `User Robot Project`, a background image can be displayed in order to deploy DYNAMIXEL.  
 
-1. Click the `Insert Background Image` button and select the file to apply.  
-  ![](/assets/images/sw/rplus_task3/motion_background_01.png)  
+1. Click the `Insert landscape` button and select the file to apply.  
+  ![](/assets/images/sw/rplus_task3_en/motion_background_01.png)  
 
 2. DYNAMIXEL can be deployed over the image to help identifying joint.  
-  ![](/assets/images/sw/rplus_task3/motion_background_02.png)  
+  ![](/assets/images/sw/rplus_task3_en/motion_background_02.png)  
 
 3. Click the `DYNAMIXEL Relocation` icon to hold DYNAMIXEL at current location.  
-  ![](/assets/images/sw/rplus_task3/motion_background_03.png)  
+  ![](/assets/images/sw/rplus_task3_en/motion_background_03.png)  
 
 ## [Initial Pose](#initial-pose)
 
 Click the `Set Initial Pose` button to set all joint to initial position.  
-![](/assets/images/sw/rplus_task3/motion_position_init.png)
+![](/assets/images/sw/rplus_task3_en/motion_position_init.png)

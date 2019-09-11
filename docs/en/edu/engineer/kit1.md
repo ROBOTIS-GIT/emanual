@@ -88,14 +88,14 @@ The usage is identical to other DYNAMIXELs, but be aware that Firmware Recovery 
 | Baud Rate              | {{ site.data.dxl_x_info._2xl430-w250.baudrate }}           |
 | Control Algorithm      | {{ site.data.dxl_x_info._2xl430-w250.control }}            |
 | Resolution             | {{ site.data.dxl_x_info._2xl430-w250.resolution }}         |
-| Operating Modes        | {{ site.data.dxl_x_info._2xl430-w250.mode }}               |
+| Operating Modes        | {{ site.data.dxl_x_info._2xl430-w250.mode_en }}               |
 | Weight                 | {{ site.data.dxl_x_info._2xl430-w250.weight }}             |
 | Dimensions (W x H x D) | {{ site.data.dxl_x_info._2xl430-w250.dimensions }}         |
 | Gear Ratio             | {{ site.data.dxl_x_info._2xl430-w250.gearratio }}          |
 | Stall Torque           | {{ site.data.dxl_x_info._2xl430-w250.stalltorque }}        |
 | No Load Speed          | {{ site.data.dxl_x_info._2xl430-w250.noloadspeed }}        |
 | Operating Temperature  | {{ site.data.dxl_x_info._2xl430-w250.temperature }}        |
-| Input Voltage          | {{ site.data.dxl_x_info._2xl430-w250.voltage }}            |
+| Input Voltage          | {{ site.data.dxl_x_info._2xl430-w250.voltage_en }}            |
 | Command Signal         | {{ site.data.dxl_x_info._2xl430-w250.command }}            |
 | Protocol Type          | {{ site.data.dxl_x_info._2xl430-w250.protocoltype }}       |
 | Physical Connection    | {{ site.data.dxl_x_info._2xl430-w250.physicalconnection }} |
@@ -309,7 +309,6 @@ The CM-550 can be connected to the PC via Micro USB port to download task(.tsk3)
 
 5. Press the `Connect` icon.  
   ![](/assets/images/edu/engineer/kit1/remote_pairing_04.png)  
-
 6. CM-550 will be connected to the PC with 3 beeps.  
   ![](/assets/images/edu/engineer/kit1/remote_pairing_05.png)  
 
@@ -377,17 +376,17 @@ In order to upload an example to CM-550 controller with R+ Task 3.0 app, the sma
   ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_01.png)  
 
 2. When `Connect Robot` window pops up, press the Bluetooth search button in the red box.  
-  ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_02.png)  
+  ![](/assets/images/edu/engineer/kit1/bluetooth_connection_6_2.png)  
 
 3. Find the BLE MAC address of the CM-550 controller.  
-  ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_02_1.png)
+  ![](/assets/images/edu/engineer/kit1/bluetooth_connection_5.png)
 
 4. Enter the last two characters of BLE MAC address in the left box.  
-  ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_03.png)  
+  ![](/assets/images/edu/engineer/kit1/bluetooth_connection_6_3.png)  
 
 5. Select the BLE MAC address from the search list.  
-  ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_04.png)  
-  ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_05.png)  
+  ![](/assets/images/edu/engineer/kit1/bluetooth_connection_6_4.png)  
+  ![](/assets/images/edu/engineer/kit1/bluetooth_connection_6_5.png)  
 
 #### [Task Download (Smart Device)](#task-download-smart-device)
 
@@ -538,8 +537,8 @@ Please perform offset adjustment with a thorough understanding as it may cause u
   Select `OK` once again to save the offset value to robot.  
   ![](/assets/images/edu/engineer/kit1/engineer_app_motor_offset_3.png)
 
-4. Below buttons will reset or reload offset values of each joint.
-    ![](/assets/images/edu/engineer/kit1/engineer_app_motor_offset_4.png)
+4. Below buttons will reset or reload offset values of each joint.  
+  ![](/assets/images/edu/engineer/kit1/engineer_app_motor_offset_4.png)
 
     - `Reset Offset` : When selected, the confirmation window will appear. Select [OK] to reset the offset value of all joint.  
     - `Initial Pose` : This button will reload the saved offset value. Incorrectly configured offset may be recovered with this button.

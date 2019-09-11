@@ -24,33 +24,33 @@ The motion file includes position data of each joint to move the robot, and the 
 1. Key-Frame  
 It is a combination of pose and time on timeline, to express WHAT (pose) to show WHEN (time). For example, if a `Hello` pose is saved at the Key-Frame on 13 second in the timeline, the robot will start to move into the `Hello` pose as the timeline approaches 13 seconds.
 
-![](/assets/images/sw/rplus_task3_en/motion_keyframe_01.png)
+    ![](/assets/images/sw/rplus_task3_en/motion_keyframe_01.png)
 
 2. Motion Unit  
 It is a group of Key-Frames placed in the timeline to show a continuous movement.  
 As seen on the image below the `Salute` motion unit has the `Salute Start` Key-Frame on 11.2 second, and `Salute End` Key-Frame on 13.2 second. The continuous movement (Motion Unit) will be a Salute motion.
 
-![](/assets/images/sw/rplus_task3_en/motion_keyframe_02.png)
+    ![](/assets/images/sw/rplus_task3_en/motion_keyframe_02.png)
 
 3. Motion  
 Motion is a group of Motion Units to express long movements, such a dancing motions.  
 As seen in the image below, the `MartialArt` Motion is a link (group) of the Motion Units `MartialArtReady`, `MartialArt`, and `InitPose`.
 
-![](/assets/images/sw/rplus_task3_en/motion_keyframe_03.png)
+    ![](/assets/images/sw/rplus_task3_en/motion_keyframe_03.png)
 
 4. Motion Group  
 Users must select the specific Motions to download to the robot, while checking the available space on the robot.  
 The list comprised of the selected Motions is called the **Motion Group**. The bar on the right displays the amount of space the Motion Group will take up on the robot’s controller.  
 On the image below, the `main` Motion Group takes up 12.6% of the controller memory space.
 
-![](/assets/images/sw/rplus_task3_en/motion_keyframe_04.png)
+    ![](/assets/images/sw/rplus_task3_en/motion_keyframe_04.png)
 
 5. 3D Robot  
 The 3D robot is the simulator which motion data can be applied to. It is also active even when an actual robot is not connected, so users can easily check and playback the motion they are creating.  
 Users are required to select a 3D robot when creating a motion file, and may also use the `Change 3D Robot` menu.  
 The image below is an example showing the same motion data opened on different 3D robots.
 
-![](/assets/images/sw/rplus_task3_en/motion_keyframe_05.png)
+    ![](/assets/images/sw/rplus_task3_en/motion_keyframe_05.png)
 
 ## [Open Project](#open-project)
 

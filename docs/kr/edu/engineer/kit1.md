@@ -308,23 +308,23 @@ sidebar:
 3. CM-550의 `MODE` 버튼 부분을 BT-410 동글에 가까이 가져가면, 페어링이 완료됩니다.
 4. 로보플러스 태스크 3.0을 실행시킨 후, 왼쪽 하단의 `연결`버튼을 클릭 해주세요.
 
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_01.png)  
+    ![](/assets/images/edu/engineer/kit1/remote_pairing_01_kr.png)  
 
 5. BT-410 동글을 사용할 경우 반드시 `Use USB Dongle` 옵션을 선택해주세요.
 
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_02.png)  
+    ![](/assets/images/edu/engineer/kit1/remote_pairing_02_kr.png)  
 
 6. 사용할 시리얼 포트를 선택해 주세요.
 
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_03.png)  
+    ![](/assets/images/edu/engineer/kit1/remote_pairing_03_kr.png)  
 
 7. 연결 버튼을 클릭하여, PC와 제어기를 연결시켜 주세요.   
 
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_04.png)  
+    ![](/assets/images/edu/engineer/kit1/remote_pairing_04_kr.png)  
 
 8. 연결이 성공적으로 완료되면 '삐비빅' 소리가 납니다.  
 
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_05.png)  
+    ![](/assets/images/edu/engineer/kit1/remote_pairing_05_kr.png)  
 
 {% capture pairing_01 %}
 **참고** :
@@ -396,11 +396,11 @@ sidebar:
 
 1. 제어기가 스마트 기기와 연결된 상태에서, 로보플러스 태스크 3앱의 홈 탭에서 **태스크 예제** 를 터치해서 제품을 선택해주세요.
 
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_06.png)
+    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_06_kr.png)
 
 2. 다운로드 버튼을 터치하면 블루투스 연결을 확인한 다음 제어기에 태스크 파일을 업로드합니다.  
 
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_07.png)  
+    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_07_kr.png)  
 
 
 #### [모션 다운로드 (스마트기기)](#모션-다운로드-스마트기기)
@@ -436,7 +436,7 @@ sidebar:
 
 앱 화면 우측 상단의 메뉴버튼을 눌러 환경 설정을 할 수 있습니다.
 
-![](/assets/images/edu/engineer/kit1/engineer_app_configuration.png)
+![](/assets/images/edu/engineer/kit1/engineer_app_configuration_kr.png)
 
 `연결할 장치 선택` : 연결할 블루투스 장치를 선택합니다.  
 `예제 초기화` : 선택한 예제를 초기화 하는 기능입니다.  
@@ -740,7 +740,7 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
 
 6. 스마트 기기를 PC에서 분리한 다음 `ROBOTIS ENGINEER` 앱을 실행합니다.
 
-    ![](/assets/images/edu/engineer/kit1/engineer_app_1_kr.png)
+    ![](/assets/images/edu/engineer/kit1/engineer_app_1.png)
 
 7. `User` 탭으로 이동합니다.
 
@@ -760,7 +760,7 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
 
 11. 객체를 놓고, 카메라를 통해 사물인식이 잘 되는지 확인합니다.
 
-    ![](/assets/images/edu/engineer/kit1/obj_classification_test_05_kr.png)   
+    ![](/assets/images/edu/engineer/kit1/obj_classification_test_05.png)   
 
 {% capture retrain %}
 **참고** : 이미 생성된 학습파일인 `Smart_OC.txt` 와 `Smart_OC.pb` 에는 새로운 데이터를 추가할 수 없습니다.  
