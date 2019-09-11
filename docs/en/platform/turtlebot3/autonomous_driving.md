@@ -462,7 +462,7 @@ $ sudo apt-get install ros-kinetic-image-transport ros-kinetic-cv-bridge ros-kin
 
 ## [TurtleBot3 AutoRace Online Competition](#turtlebot3-autorace-online-competition)
 
-![](/assets/images/platform/turtlebot3/competition/competition_autorace.png)
+![](/assets/images/platform/turtlebot3/challenges/competition_autorace.png)
 
 - [TurtleBot3 AutoRace](http://emanual.robotis.com/docs/en/platform/turtlebot3/challenges/#online-competition-on-rds)
 
@@ -527,7 +527,20 @@ $ sudo apt-get install ros-kinetic-image-transport ros-kinetic-cv-bridge ros-kin
 
 ## [AutoRace RBIZ Challenge 2018](#autorace-rbiz-challenge-2018)
 
-- (Coming Soon!)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6t6cyFiGLvs?start=100" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+| Place | Team             | Source link                                                               |
+|:------|:-----------------|:--------------------------------------------------------------------------|
+| 1     | ROBIT            | [Github](https://github.com/developer0hye/2018-Turtlebot3-Autorace-ROBIT) |
+| 2     | Au-Di            | [Github](https://github.com/taening/AuDi-GIT-turtlebot3_autorace)         |
+| 3     | ROBIT2           | will be released soon                                                     |
+| 4     | Wang Bam Ppang   | [Github](https://github.com/Seunghooon/Turtlebot3_autorace_2018)          |
+| 5     | Four Leaf Clover | will be released soon                                                     |
+| 6     | AuTURBO          | [Github](https://github.com/YeongJunKim/2018-turtlebot3-autorace)         |
+| 7     | MATLABurger      | will be released soon                                                     |
+| 8     | Eung Chang Ho    | [Github](https://github.com/engcang/Turtlebot3Autorace_Eungchangho_Team)  |
+| 9     | ZETIN            | will be released soon                                                     |
+| 10    | ROSMASTER        | will be released soon                                                     |
 
 [lane_detection]: #tutorials-41-lane-detection
 [turtlebot3_autorace]: https://github.com/ROBOTIS-GIT/turtlebot3_autorace
@@ -543,7 +556,7 @@ The AutoRace is provided by Gazebo. We created a environment TurtleBot3 AutoRace
 | Storage | 20Gb of free hard drive space                  |
 | GPU     | NVIDIA GeForce GTX 9 series                    |
 
-**WARNING**: Don't confuse your real camera calibration configure files and Gazebo calibration configure files.
+**WARNING**: Do not confuse your real camera calibration configure files and Gazebo calibration configure files.
 {: .notice--warning}
 
 **NOTE**: The `turtlebot3_autorace` package requires `turtlebot3_simulations` package as a prerequisite. If you did not install it in the [Installation TurtleBot3 Simulations](#simulation), install it first.
