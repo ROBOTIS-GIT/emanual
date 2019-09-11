@@ -128,6 +128,7 @@ sidebar:
 |                   모델                   | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[485 EXP]) | [OpenCM 7.0] | [OpenCR] |
 |:----------------------------------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:----------------------------:|:------------:|:--------:|
 | [로보플러스 SMART] <br> ( I / II / III ) |   X    |    X    |    X     |    X     |    O     |    X     |    X     |    X     |    X     |    X     |              X               |      X       |    X     |
+|             [로보플러스 블록]             |   X    |    O  |    X     |    O     |    X     |    X     |    X     |    X     |    X     |    X     |              X               |      O       |    X     |
 |             [로보플러스 IoT]             |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              X               |      O       |    X     |
 |             [로보티즈 미니]              |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              O(X)              |      X       |    X     |
 |           로보플러스 Play 700            |   X    |    O    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              X               |      X       |    X     |
@@ -140,13 +141,15 @@ sidebar:
 |              모델              | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[485 EXP]) | [OpenCM 7.0] | [OpenCR] |
 |:------------------------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:----------------------------:|:------------:|:--------:|
 |     [로보플러스 스크래치]      |   X    |    O    |    X     |    O     |    X     |    X     |    X     |    X     |    X     |    X     |              X               |      O       |    X     |
-|          [OpenCM IDE]          |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |             O(X)               |      X       |    X     |
-|        [다이나믹셀 SDK]        |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              O(X)               |      X       |    O     |
-|     [다이나믹셀 워크벤치]      |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              O(X)               |      X       |    O     |
-|     [다이나믹셀 위자드2.0]     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              X               |      X       |    X     |
+|          [OpenCM IDE]          |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |             O(X)             |      X       |    X     |
+|        [다이나믹셀 SDK]        |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |             O(X)             |      X       |    O     |
+|     [다이나믹셀 워크벤치]      |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |             O(X)             |      X       |    O     |
+|     [다이나믹셀 위자드]     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              X               |      X       |    X     |
+|     [다이나믹셀 위자드 2.0]     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              X               |      X       |    X     |
 | [ROBOTIS Manipulator library]  |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              X               |      X       |    O     |
 | [임베디드 SDK(CM-510/530/700)] |   X    |    X    |    X     |    X     |    X     |    O     |    O     |    X     |    O     |    X     |              X               |      X       |    X     |
-|          아두이노 IDE          |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              O(X)               |      O       |    O     |
+|          아두이노 IDE          |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |             O(X)             |      O       |    O     |
+
 
 {% capture etc %}
 - ROBOTIS Manipulator library는 사용자가 매니퓰레이터를 직접 제작할수 있도록 제공하는 API(Application Programming Interface)입니다. 
@@ -172,12 +175,12 @@ sidebar:
 [로보플러스 태스크 1.0]: /docs/kr/software/rplus1/task/getting_started/
 [로보플러스 매니저 1.0]: /docs/kr/software/rplus1/manager/
 [로보플러스 모션  1.0]: /docs/kr/software/rplus1/motion/
-[로보플러스 위자드 1.0]: /docs/kr/software/rplus1/dynamixel_wizard/
 [로보플러스 태스크 2.0]: /docs/kr/software/rplus2/task/
 [로보플러스 매니저 2.0]: /docs/kr/software/rplus2/manager/
 [로보플러스 모션 2.0]: /docs/kr/software/rplus2/motion/
 [로보플러스 태스크 3.0]: /docs/kr/software/rplustask3/
 [로보플러스 IoT]: /docs/kr/software/mobile_app/rplusiot/
+[로보플러스 블록]: /docs/kr/software/rplus2/rplus2_block/
 [R+ m.Task]: /docs/kr/software/rplus_mobile/mtask/
 [R+ m.Task 2.0]: /docs/kr/software/rplus_mobile/mtask20/
 [R+ m.Mtion 2.0]: /docs/kr/software/rplus_mobile/mmotion/
@@ -188,6 +191,7 @@ sidebar:
 [OpenCM IDE]: /docs/kr/software/opencm_ide/getting_started/              
 [다이나믹셀 SDK]: /docs/kr/software/dynamixel/dynamixel_sdk/overview/
 [다이나믹셀 워크벤치]: /docs/kr/software/dynamixel/dynamixel_workbench/
-[다이나믹셀 위자드2.0]: /docs/kr/software/dynamixel/dynamixel_wizard2/
+[다이나믹셀 위자드]: /docs/kr/software/rplus1/dynamixel_wizard/
+[다이나믹셀 위자드 2.0]: /docs/kr/software/dynamixel/dynamixel_wizard2/
 [임베디드 SDK(CM-510/530/700)]: /docs/kr/software/embedded_sdk/
 [ROBOTIS Manipulator library]: /docs/kr/software/robotis_manipulator_libs/
