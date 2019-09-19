@@ -14279,6 +14279,8 @@ kit1:
       urlkr: /edu/engineer/kit1/#충전지-잔량-확인하기
     - titlekr: "퓨즈 교체하기"
       urlkr: /edu/engineer/kit1/#퓨즈-교체하기
+    - titlekr: "도면"
+      urlkr: /edu/engineer/kit1/#도면
 
 #ROBOTIS MINI sidebar
 mini:
