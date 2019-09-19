@@ -162,7 +162,7 @@ Each option is identical to the [Windows Example]
 
 Create real-time scheduling priority (rtprio) for USER_GROUP (your user group)  
 ```
-$ sudo bash –c ‘echo “@USER_GROUP – rtprio 99” > /etc/security/limits.d/robotis-rtprio.conf’
+$ sudo bash -c 'echo "@USER_GROUP - rtprio 99" > /etc/security/limits.d/robotis-rtprio.conf'
 ```
 
 Below command will register USER_ID (your user ID) to dialout group in order to gain access to /dev/ttyUSB0
