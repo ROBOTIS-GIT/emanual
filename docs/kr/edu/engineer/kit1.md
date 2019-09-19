@@ -41,7 +41,7 @@ product_group: 2xl430-w250
 |  소모 전류량  |                               대기시 : 50 [mA]<br />포트 1 ~ 2 I/O 최대전류 : 0.5 [A]<br />포트 3 ~ 5 I/O 최대전류 : 0.02 [A]<br />전체 최대 전류 : 10 [A] (Fuse)                               |
 |   동작 온도   |                                                                                        -5 ~ 70 [&deg;C]                                                                                         |
 |   통신 모듈   |                                                                                       BLE Slave 모듈 내장                                                                                       |
-| 내부 I/O 장치 |                                버튼 : 2 (MODE, START)<br />마이크 (소리 감지) : 1<br />부저 : 1<br />전압 센서 : 1<br />자이로 가속도 센서 : 1<br />온도 센서 : 1<br />RGB LED : 3                                 |
+| 내부 I/O 장치 |                       버튼 : 2 (MODE, START)<br />마이크 (소리 감지) : 1<br />부저 : 1<br />전압 센서 : 1<br />자이로 가속도 센서 : 1<br />온도 센서 : 1<br />RGB LED : 3                       |
 | 외부 I/O 장치 |                                             로보티즈 5핀 포트 : 5 (서보모터/IR센서/온습도센서 : 1, 2번 포트 사용)<br />X 시리즈 다이나믹셀 포트 : 6                                             |
 
 
@@ -512,11 +512,11 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
 
 #### 메뉴 화면
 
-|                        아이콘                         | 메뉴 설명                                                            |
-|:-----------------------------------------------------:|:---------------------------------------------------------------------|
-| ![](/assets/images/edu/engineer/kit1/icon_remote.png) | **REMOTE** : 기본 조종 모드 화면을 불러오는 버튼입니다.              |
+|                        아이콘                         | 메뉴 설명                                                          |
+|:-----------------------------------------------------:|:-------------------------------------------------------------------|
+| ![](/assets/images/edu/engineer/kit1/icon_remote.png) | **REMOTE** : 기본 조종 모드 화면을 불러오는 버튼입니다.            |
 | ![](/assets/images/edu/engineer/kit1/icon_music.png)  | **MUSIC** : 스마트 기기를 통해 로봇과 함께 연주를 하는 기능입니다. |
-|  ![](/assets/images/edu/engineer/kit1/icon_clap.png)  | **CLAP** : 박수소리를 감지하고 감지한 횟수만큼 SPI가 움직입니다.     |
+|  ![](/assets/images/edu/engineer/kit1/icon_clap.png)  | **CLAP** : 박수소리를 감지하고 감지한 횟수만큼 SPI가 움직입니다.   |
 
 ## [로봇 설정하기](#로봇-설정하기)
 
@@ -928,6 +928,10 @@ CM-550에 내장된 BLE 슬레이브 모듈의 신호의 세기가 약하거나 
 
 {% include kr/parts/controller/fuse_cm-550.md %}
 
+## [도면](#도면)
+
+엔지니어 키트의 도면자료는 **[로보티즈 다운로드 센터](http://www.robotis.com/service/downloadpage.php?ca_id=70g0)** 에서 제공됩니다. 
+{: .notice--success}
 
 [CM-550 매뉴얼 바로가기]: /docs/kr/parts/controller/cm-550/
 [2XL430-W250 매뉴얼 바로가기]: /docs/kr/dxl/x/2xl430-w250/

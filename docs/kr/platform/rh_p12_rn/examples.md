@@ -169,7 +169,7 @@ $ ./rh-p12-rn_example
 아래 커맨드를 통해, 유저그룹(USER_GROUP)의 real-time scheduling priority(rtprio)을 설정.
   
 ```
-$ sudo bash –c ‘echo “@USER_GROUP – rtprio 99” > /etc/security/limits.d/robotis-rtprio.conf’
+$ sudo bash -c 'echo "@USER_GROUP - rtprio 99" > /etc/security/limits.d/robotis-rtprio.conf'
 ```
 
 /dev/ttyUSB0 의 접근 권한을 얻기 위해 아래 명령을 입력 (USER_ID 를 dialout 그룹에 등록하는 명령)
