@@ -73,6 +73,7 @@ $ curl -sSL http://get.gazebosim.org | sh
 $ sudo apt install ros-dashing-gazebo-*
 # Install Cartographer
 $ sudo apt install ros-dashing-cartographer
+$ sudo apt install ros-dashing-cartographer-ros
 # Install Navigation2
 $ sudo apt install ros-dashing-navigation2
 $ sudo apt install ros-dashing-nav2-bringup
