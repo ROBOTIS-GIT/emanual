@@ -16,13 +16,15 @@ sidebar:
 로보플러스 블록은 구글 블로클리(Blockly) 방식의 블록형 코딩이 가능하도록 개발된 코딩 교육용 플랫폼입니다.
 
 ## [지원 제품 목록](#지원-제품-목록)
-- ROBOTIS OLLO K
-- ROBOTIS PLAY 700
+- ROBOTIS OLLO K.
+- ROBOTIS PLAY 700.
+- ROBOTIS DREAM.
 
 ## [지원 부품 목록](#지원-부품-목록)
 
 ### [제어기](#제어기)
 - CM-50
+- CM-150
 
 ### [통신 모듈](#통신-모듈)
 - [BT-210]

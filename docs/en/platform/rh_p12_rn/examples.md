@@ -160,10 +160,15 @@ Each option is identical to the [Windows Example]
 
 ## [ROS GUI Example](#ros-gui-example)
 
-Below command will register USER_ID to dialout group in order to gain access to /dev/ttyUSB0
+Create real-time scheduling priority (rtprio) for USER_GROUP (your user group)  
+```
+$ sudo bash -c 'echo "@USER_GROUP - rtprio 99" > /etc/security/limits.d/robotis-rtprio.conf'
+```
+
+Below command will register USER_ID (your user ID) to dialout group in order to gain access to /dev/ttyUSB0
 
 ```
-$ sudo usermod -aG dialout USER_ID
+$ sudo usermod –aG dialout USER_ID
 ```
 
 Restart or log out and log in to validate the change.

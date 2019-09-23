@@ -2523,6 +2523,18 @@ rx-64:
         url: /dxl/rx/rx-64/#communication-circuit
         urlkr: /dxl/rx/rx-64/#통신-회로
 
+
+#MX-Series Main sidebar
+dxl_mx_main:
+  - title: "Features"
+    titlekr: "특징"
+    url: /dxl/mx/#features
+    urlkr: /dxl/mx/#특징
+  - title: "MX Series"
+    titlekr: "MX 시리즈"
+    url: /dxl/mx/#mx-series
+    urlkr: /dxl/mx/#mx-시리즈
+
 #MX-12W sidebar
 mx-12w:
   - title: "Specifications"
@@ -3904,6 +3916,35 @@ mx-106-2:
       - title: "Communication Circuit"
         url: /dxl/mx/mx-106-2/#communication-circuit
 
+
+#X-Series Main sidebar
+dxl_x_main:
+  - title: "Feature"
+    titlekr: "특징"
+    url: /dxl/x/#features
+    urlkr: /dxl/x/#특징
+  - title: "DYNAMIXEL X"
+    titlekr: "다이나믹셀 X"
+    url: /dxl/x/#dynamixel-x
+    urlkr: /dxl/x/#다이나믹셀-x
+    children:
+      - title: "XH Series"
+        titlekr: "XH-시리즈"
+        url: /dxl/x/#xh-series
+        urlkr: /dxl/x/#xh-시리즈
+      - title: "XM Series"
+        titlekr: "XM-시리즈"
+        url: /dxl/x/#xm-series
+        urlkr: /dxl/x/#xm-시리즈
+      - title: "XC Series"
+        titlekr: "XC-시리즈"
+        url: /dxl/x/#xc-series
+        urlkr: /dxl/x/#xc-시리즈
+      - title: "XL Series"
+        titlekr: "XL-시리즈"
+        url: /dxl/x/#xl-series
+        urlkr: /dxl/x/#xl-시리즈
+    
 #XH430-V210 sidebar
 xh430-v210:
   - title: "Specifications"
@@ -14139,6 +14180,12 @@ bioloid-gp:
       urlkr: /edu/bioloid/gp/#사용자-센서-제작
 
 
+kit1_main:
+  - title: "English"
+    url: /edu/engineer/kit1_main/#english
+  - title: "Korea"
+    url: /edu/engineer/kit1_main/#korea
+    
 #ROBOTIS ENGINEER KIT sidebar
 kit1:
   - title: "Introduction"
@@ -14278,11 +14325,8 @@ kit1:
       titlekr: "퓨즈 교체하기"
       url: /edu/engineer/kit1/#fuse-replacement
       urlkr: /edu/engineer/kit1/#퓨즈-교체하기
-  
-  #  - title: "How to Reset"
-  #    titlekr: "초기화 하기"
-  #    url: /edu/engineer/kit1/#how-to-reset
-  #    urlkr: /edu/engineer/kit1/#초기화-하기
+    - titlekr: "도면"
+      urlkr: /edu/engineer/kit1/#도면
 
 #ROBOTIS MINI sidebar
 mini:
@@ -15774,7 +15818,7 @@ turtlebot3:
       url: /platform/turtlebot3/machine_learning/#set-parameters
     - title: "Run Machine Learning"
       url: /platform/turtlebot3/machine_learning/#run-machine-learning
-  - title: "ROS2"
+  - title: "ROS 2"
     url: /platform/turtlebot3/ros2/#ros2
     children:
     - title: "Setup"
@@ -15839,6 +15883,8 @@ turtlebot3:
   - title: "Learn"
     url: /platform/turtlebot3/learn/#learn
     children:
+    - title: "AWS RoboMaker with TurtleBot3"
+      url: /platform/turtlebot3/learn/#aws-robomaker-with-turtlebot3
     - title: "The Construct"
       url: /platform/turtlebot3/learn/#the-construct
     - title: "TurtleBot3 Blockly"
@@ -15863,8 +15909,6 @@ turtlebot3:
       url: /platform/turtlebot3/projects/#turtlebot3-collaboration-project
     - title: "TurtleBot3 Awesome Projects"
       url: /platform/turtlebot3/projects/#turtlebot3-awesome-projects
-    - title: "AWS RoboMaker with TurtleBot3"
-      url: /platform/turtlebot3/projects_aws_robomaker/#turtlebot3-aws-robomaker
   - title: "Challenges"
     url: /platform/turtlebot3/challenges/#challenges
     children:
@@ -15983,7 +16027,8 @@ openmanipulator:
     url: /platform/openmanipulator_main/#openmanipulator-x
   - title : "OpenMANIPULATOR-PRO"
     url: /platform/openmanipulator_main/#openmanipulator-pro
-#OpenMANIPULATOR-X
+    
+#OpenMANIPULATOR-X sidebar
 openmanipulator_x:
   - title: "Overview"
     url: /platform/openmanipulator_x/overview/#overview
@@ -16005,8 +16050,6 @@ openmanipulator_x:
         url: /platform/openmanipulator_x/specification/#hardware-specification
       - title: "Dimension"
         url: /platform/openmanipulator_x/specification/#dimension
-#      - title: "Repeatability"
-#        url: /platform/openmanipulator_x/specification/#repeatability
   - title: "Getting Started"
     url: /platform/openmanipulator_x/getting_started/#getting-started
     children:
@@ -16108,6 +16151,80 @@ openmanipulator_x:
             url: /platform/openmanipulator_x/ros_applications/#install-package
           - title: "Execute Example"
             url: /platform/openmanipulator_x/ros_applications/#execute-example
+  - title: "[ROS 2] Setup"
+    url: /platform/openmanipulator_x/ros2_setup/#ros-setup
+    children:
+      - title: "Install Ubuntu on PC"
+        url: /platform/openmanipulator_x/ros2_setup/#install-ubuntu-on-pc
+      - title: "Install ROS 2 on PC"
+        url: /platform/openmanipulator_x/ros2_setup/#install-ros-2-on-pc
+      - title: "Install ROS 2 Packages"
+        url: /platform/openmanipulator_x/ros2_setup/#install-ros-2-packages
+      - title: "Communication Converter"
+        url: /platform/openmanipulator_x/ros2_setup/#communication-converter
+        children:
+          - title: "U2D2"
+            url: /platform/openmanipulator_x/ros2_setup/#u2d2
+          - title: "OpenCR"
+            url: /platform/openmanipulator_x/ros2_setup/#opencr
+  - title: "[ROS 2] Controller Package"
+    url: /platform/openmanipulator_x/ros2_controller_package/#ros-controller-package
+    children:
+      - title: "Launch Controller"
+        url: /platform/openmanipulator_x/ros2_controller_package/#launch-controller
+      - title: "Check Setting"
+        url: /platform/openmanipulator_x/ros2_controller_package/#check-setting
+        children:
+          - title: "Manipulator Description"
+            url: /platform/openmanipulator_x/ros2_controller_package/#manipulator-description
+          - title: "RViz"
+            url: /platform/openmanipulator_x/ros2_controller_package/#rviz
+      - title: "Message List"
+        url: /platform/openmanipulator_x/ros2_controller_package/#message-list
+  - title: "[ROS 2] Operation"
+    url: /platform/openmanipulator_x/ros2_operation/#ros-operation
+    children:
+      - title: "GUI Program"
+        url: /platform/openmanipulator_x/ros2_operation/#gui-program
+      - title: "Teleoperation"
+        url: /platform/openmanipulator_x/ros2_operation/#teleoperation
+        children:
+          - title: "Keyboard"
+            url: /platform/openmanipulator_x/ros2_operation/#keyboard
+          - title: "PS4 Joystick"
+            url: /platform/openmanipulator_x/ros2_operation/#ps4-joystick
+          - title: "XBOX 360 Joystick"
+            url: /platform/openmanipulator_x/ros2_operation/#xbox-360-joystick
+      - title: "MoveIt!"
+        url: /platform/openmanipulator_x/ros2_operation/#moveit
+  - title: "[ROS 2] Simulation"
+    url: /platform/openmanipulator_x/ros2_simulation/#ros-simulation
+    #children:
+    #  - title: "Launch gazebo"
+    #    url: /platform/openmanipulator_x/ros2_simulation/#launch-gazebo
+    #  - title: "Controller for gazebo"
+    #    url: /platform/openmanipulator_x/ros2_simulation/#controller-for-gazebo
+  - title: "[ROS 2] Applications"
+    url: /platform/openmanipulator_x/ros2_applications/#ros-applications
+    #children:
+    #  - title: "Camera Application"
+    #    url: /platform/openmanipulator_x/ros2_applications/#camera-application
+    #    children:
+    #      - title: "Install Camera Package"
+    #        url: /platform/openmanipulator_x/ros2_applications/#install-camera-package
+    #      - title: "Install AR Marker Package"
+    #        url: /platform/openmanipulator_x/ros2_applications/#install-ar-marker-package
+    #      - title: "Pick and Place Example"
+    #        url: /platform/openmanipulator_x/ros2_applications/#pick-and-place-example
+    #  - title: "Master Slave"
+    #    url: /platform/openmanipulator_x/ros2_applications/#master-slave
+    #    children:
+    #      - title: "Setup of OpenMANIPULATOR-X"
+    #        url: /platform/openmanipulator_x/ros2_applications/#setup-of-openmanipulator-x
+    #      - title: "Install Package"
+    #        url: /platform/openmanipulator_x/ros2_applications/#install-package
+    #      - title: "Execute Example"
+    #        url: /platform/openmanipulator_x/ros2_applications/#execute-example
   - title: "[OpenCR] Setup"
     url: /platform/openmanipulator_x/opencr_setup/#opencr-setup
     children:
@@ -16155,7 +16272,7 @@ openmanipulator_x:
         url: /platform/openmanipulator_x/friends/#openmanipulator-stewart
       - title: "OpenMANIPULATOR Linear"
         url: /platform/openmanipulator_x/friends/#openmanipulator-linear
-
+        
 #OpenManipulator-PRO
 openmanipulator_pro:
   - title: "Overview"
@@ -16203,6 +16320,11 @@ openmanipulator_pro:
             url: /platform/openmanipulator_pro/ros_setup/#ros-kinetic-kame
           - title: "ROS Melodic Morenia"
             url: /platform/openmanipulator_pro/ros_setup/#ros-melodic-morenia
+      - title: "Communication Converter"
+        url: /platform/openmanipulator_pro/ros_setup/#communication-converter
+        children:
+          - title: "U2D2"
+            url: /platform/openmanipulator_pro/ros_setup/#u2d2
       - title: "Install ROS Packages"
         url: /platform/openmanipulator_pro/ros_setup/#install-ros-package
         children:
@@ -16269,7 +16391,50 @@ openmanipulator_pro:
                 url: /platform/openmanipulator_pro/ros_tool_applications/#launch-gazebo
               - title: "Controller for Gazebo"
                 url: /platform/openmanipulator_pro/ros_tool_applications/#controller-for-gazebo
-
+  - title: "[ROS 2] Setup"
+    url: /platform/openmanipulator_pro/ros2_setup/#ros-setup
+    children:
+      - title: "Install Ubuntu on PC"
+        url: /platform/openmanipulator_pro/ros2_setup/#install-ubuntu-on-pc
+      - title: "Install ROS 2 on PC"
+        url: /platform/openmanipulator_pro/ros2_setup/#install-ros-2-on-pc
+      - title: "Install ROS 2 Packages"
+        url: /platform/openmanipulator_pro/ros2_setup/#install-ros-2-packages
+      - title: "Communication Converter"
+        url: /platform/openmanipulator_pro/ros2_setup/#communication-converter
+        children:
+          - title: "U2D2"
+            url: /platform/openmanipulator_pro/ros2_setup/#u2d2
+  - title: "[ROS 2] Controller Package"
+    url: /platform/openmanipulator_pro/ros2_controller_package/#ros-controller-package
+    children:
+      - title: "Launch Controller"
+        url: /platform/openmanipulator_pro/ros2_controller_package/#launch-controller
+      - title: "Check Setting"
+        url: /platform/openmanipulator_pro/ros2_controller_package/#check-setting
+        children:
+          - title: "RViz"
+            url: /platform/openmanipulator_pro/ros2_controller_package/#rviz
+      - title: "Message List"
+        url: /platform/openmanipulator_pro/ros2_controller_package/#message-list
+  - title: "[ROS 2] Operation"
+    url: /platform/openmanipulator_pro/ros2_operation/#ros-operation
+    children:
+      - title: "GUI Program"
+        url: /platform/openmanipulator_pro/ros2_operation/#gui-program
+      - title: "Teleoperation"
+        url: /platform/openmanipulator_pro/ros2_operation/#teleoperation
+      - title: "MoveIt!"
+        url: /platform/openmanipulator_pro/ros2_operation/#moveit
+  - title: "[ROS 2] Simulation"
+    url: /platform/openmanipulator_pro/ros2_simulation/#ros-simulation
+  #  children:
+  #    - title: "Launch gazebo"
+  #      url: /platform/openmanipulator_pro/ros2_simulation/#launch-gazebo
+  #    - title: "Controller for gazebo"
+  #      url: /platform/openmanipulator_pro/ros2_simulation/#controller-for-gazebo
+  - title: "[ROS 2] Tool Applications"
+    url: /platform/openmanipulator_pro/ros2_tool_applications    
 #Manipulator-H
 manipulator_h:
   - title: "Introduction"
@@ -20168,6 +20333,55 @@ embedded_c_cm530:
         url: /software/embedded_sdk/embedded_c_cm530/#rc-100zigbee
         urlkr: /software/embedded_sdk/embedded_c_cm530/#rc100과-zigbee
 
+#Controller Compatibility sidebar
+controller_compatibility:
+  - title: "Supported Baudrates for DYNAMIXEL"
+    titlekr: "다이나믹셀을 지원하는 통신속도"
+    url: /parts/controller/controller_compatibility/#supported-baudrates-for-dynamixel
+    urlkr: /parts/controller/controller_compatibility/#다이나믹셀을-지원하는-통신속도
+  - title: "Compatibility Table"
+    titlekr: "호환표"
+    url: /parts/controller/controller_compatibility/#compatibility-table
+    urlkr: /parts/controller/controller_compatibility/#호환표
+    children:
+    - title: "DYNAMIXEL"
+      titlekr: "다이나믹셀 호환표"
+      url: /parts/controller/controller_compatibility/#dynamixel
+      urlkr: /parts/controller/controller_compatibility/#다이나믹셀-호환표
+    - title: "Parts"
+      titlekr: "부품 호환표"
+      url: /parts/controller/controller_compatibility/#parts
+      urlkr: /parts/controller/controller_compatibility/#부품-호환표
+    - title: "Software"
+      titlekr: "소프트웨어 호환표"
+      url: /parts/controller/controller_compatibility/#software
+      urlkr: /parts/controller/controller_compatibility/#소프트웨어-호환표
+      children:
+      - title: "R+ 1.0"
+        titlekr: "로보플러스 1.0"      
+        url: /parts/controller/controller_compatibility/#r-10
+        urlkr: /parts/controller/controller_compatibility/#로보플러스-10
+      - title: "R+ 2.0"
+        titlekr: "로보플러스 2.0"
+        url: /parts/controller/controller_compatibility/#r-20
+        urlkr: /parts/controller/controller_compatibility/#로보플러스-20
+      - title: "R+ 3.0"
+        titlekr: "로보플러스 3.0"
+        url: /parts/controller/controller_compatibility/#r-30
+        urlkr: /parts/controller/controller_compatibility/#로보플러스-30
+      - title: "R+Mobile"
+        titlekr: "로보플러스 모바일"
+        url: /parts/controller/controller_compatibility/#r-mobile
+        urlkr: /parts/controller/controller_compatibility/#로보플러스-모바일
+      - title: "R+ Mobile (STEAM KIT)"
+        titlekr: "로보플러스 모바일 (교육키트)"
+        url: /parts/controller/controller_compatibility/#r-mobile-steam-kit
+        urlkr: /parts/controller/controller_compatibility/#로보플러스-모바일-교육키트
+      - titlekr: "etc"
+        titlekr: "기타 소프트웨어"
+        url: /parts/controller/controller_compatibility/#etc
+        urlkr: /parts/controller/controller_compatibility/#기타-소프트웨어
+          
 #CM-50 Controller sidebar
 cm-50:
   - title: "Introduction"
@@ -21886,7 +22100,7 @@ faq:
 #FAQ Protocol Compatibility Table
 faq_protocol_compatibility_table:
   - title: "Protocol Compatibitily"
-    url: /docs/en/faq/faq_protocol_compatibility_table
+    url: /faq/faq_protocol_compatibility_table
 
 #FAQ Platform
 faq_platform:

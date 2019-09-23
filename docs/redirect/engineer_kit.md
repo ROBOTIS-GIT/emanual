@@ -3,7 +3,7 @@ layout: redirect
 lang: kr
 ref: redirect_engineer_kit
 permalink: /engineer/
-redirecturl: /docs/kr/edu/engineer/kit1/
+redirecturl: /docs/en/edu/engineer/kit1_main
 ---
 
 <br><br><br><br><br><br>
