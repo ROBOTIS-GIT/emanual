@@ -119,19 +119,20 @@ R+ Manager 1.0 only supports a firmware update or restore of controllers, but it
 
 |      Model       | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[485 EXP]) | [OpenCM7.0] | [OpenCR] |
 |:----------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:----------------------------:|:-----------:|:--------:|
-|   [R+ m.Task]    |   O    |    O    |    O     |    O     |    O     |    O     |    O     |    X     |    O     |    X     |              O(X)              |      O      |    X     |
-| [R+ m.Task 2.0]  |   O    |    O    |    X     |    O     |    O     |    O     |    O     |    X     |    X     |    X     |              O(X)              |      O      |    X     |
-| [R+ m.Mtion 2.0] |   O    |    X    |    X     |    X     |    O     |    O     |    O     |    X     |    O     |    X     |              O(X)              |      X      |    X     |
-|  [R+ m.Design]   |   O    |    X    |    O     |    O     |    O     |    O     |    O     |    X     |    X     |    X     |              O(X)              |      X      |    X     |
+|   [R+ m.Task]    |   O    |    O    |    O     |    O     |    O     |    O     |    O     |    X     |    O     |    X     |             O(X)             |      O      |    X     |
+| [R+ m.Task 2.0]  |   O    |    O    |    X     |    O     |    O     |    O     |    O     |    X     |    X     |    X     |             O(X)             |      O      |    X     |
+| [R+ m.Mtion 2.0] |   O    |    X    |    X     |    X     |    O     |    O     |    O     |    X     |    O     |    X     |             O(X)             |      X      |    X     |
+|  [R+ m.Design]   |   O    |    X    |    O     |    O     |    O     |    O     |    O     |    X     |    X     |    X     |             O(X)             |      X      |    X     |
 
 ### [R+ Mobile (STEAM KIT)](#r-mobile-steam-kit)
 
 |             Model              | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[485 EXP]) | [OpenCM7.0] | [OpenCR] |
 |:------------------------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:----------------------------:|:-----------:|:--------:|
 | R+ SMART <br> ( I / II / III ) |   X    |    X    |    X     |    X     |    O     |    X     |    X     |    X     |    X     |    X     |              X               |      X      |    X     |
+|           [R+ Blcok]           |   X    |    O    |    X     |    O     |    X     |    X     |    X     |    X     |    X     |    X     |              X               |      O      |    X     |
 |             R+ IoT             |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              X               |      O      |    X     |
 |         [R+ Play 700]          |   X    |    O    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              X               |      X      |    X     |
-|         [ROBOTIS MINI]         |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              O(X)               |      X      |    X     |
+|         [ROBOTIS MINI]         |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |             O(X)             |      X      |    X     |
 
 R+ SMART and R+IoT aren't released yet.
 {: .notice--info}
@@ -145,6 +146,7 @@ R+ SMART and R+IoT aren't released yet.
 |         [OpenCM IDE]          |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              O               |      X      |    X     |
 |        [DYNAMIXEL SDK]        |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              O               |      X      |    O     |
 |     [DYNAMIXEL Workbench]     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              O               |      X      |    O     |
+|      [Dynamixel Wizard]       |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              X               |      X      |    X     |
 |    [DYNAMIXEL Wizard 2.0]     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              X               |      X      |    X     |
 | [ROBOTIS Manipulator library] |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              X               |      X      |    O     |
 | [Embeded SDK(CM-510/530/700)] |   X    |    X    |    X     |    X     |    X     |    O     |    O     |    X     |    O     |    X     |              X               |      X      |    X     |
@@ -174,12 +176,12 @@ R+ SMART and R+IoT aren't released yet.
 [R+ Task 1.0]: /docs/en/software/rplus1/task/getting_started/
 [R+ Manager 1.0]: /docs/en/software/rplus1/manager/
 [R+ Motion  1.0]: /docs/en/software/rplus1/motion/
-[로보플러스 위자드 1.0]: /docs/en/software/rplus1/dynamixel_wizard/
 [R+ Task 2.0]: /docs/en/software/rplus2/task/
 [R+ Manager 2.0]: /docs/en/software/rplus2/manager/
 [R+ Motion 2.0]: /docs/en/software/rplus2/motion/
 [R+ Task 3.0]: /docs/en/software/rplustask3/
 [R+ IoT]: /docs/kr/software/mobile_app/rplusiot/
+[R+ Blcok]: /docs/en/software/rplus2/rplus2_block/
 [R+ m.Task]: /docs/en/software/rplus_mobile/mtask/
 [R+ m.Task 2.0]: /docs/en/software/rplus_mobile/mtask20/
 [R+ m.Mtion 2.0]: /docs/en/software/rplus_mobile/mmotion/
@@ -191,6 +193,7 @@ R+ SMART and R+IoT aren't released yet.
 [OpenCM IDE]: /docs/en/software/opencm_ide/getting_started/              
 [DYNAMIXEL SDK]: /docs/en/software/dynamixel/dynamixel_sdk/overview/
 [DYNAMIXEL Workbench]: /docs/en/software/dynamixel/dynamixel_workbench/
+[Dynamixel Wizard]: /docs/en/software/rplus1/dynamixel_wizard/
 [DYNAMIXEL Wizard 2.0]: /docs/en/software/dynamixel/dynamixel_wizard2/
 [Embeded SDK(CM-510/530/700)]: /docs/en/software/embedded_sdk/
 [ROBOTIS Manipulator library]: /docs/en/software/robotis_manipulator_libs/

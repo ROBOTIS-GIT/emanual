@@ -16,13 +16,15 @@ sidebar:
 Roboplus Block is a coding education platform that inherits block coding method of Google's Blockly.
 
 ## [Supported Products](#supported-products)
-- ROBOTIS OLLO K
-- ROBOTIS PLAY 700
+- ROBOTIS OLLO K.
+- ROBOTIS PLAY 700.
+- ROBOTIS DREAM.
 
 ## [Supported Parts](#supported-parts)
 
 ### [Controllers](#controllers)
 - CM-50
+- CM-150
 
 ### [Communication Modules](#communication-modules)
 - [BT-210]

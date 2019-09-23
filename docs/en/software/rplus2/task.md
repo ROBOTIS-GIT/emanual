@@ -413,7 +413,7 @@ Refer to the following figure for details.
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_056.gif)
 
-- You can choose from Add(+), Subtract(-), Multiply(x), And(&), Or(|).
+- You can choose from Add(+), Subtract(-), Multiply(\*), And(&), Or(\|).
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_057.gif)
 
@@ -427,24 +427,23 @@ Refer to the following figure for details.
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_059.gif)
 
-- This instruction is used when reading/writing a variable’s value.
-- The following is an example of writing a value to the variable “speed”, and then reading this variable’s value to apply it to the Geared Motor.
+- This instruction is used when reading/writing value to a variable or an instruction.
+- The following is an example of writing a value to the variable `Acceleration`, and then reading the variable from the Geared Motor.
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_060.jpg)
 
 - This instruction is used when reading/writing a device’s value.
-- The following is an example of setting the speed value of a Geared Motor connected to Port number 1.
+- The following is an example of setting the speed value of a Geared Motor connected to Port 1.
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_061.jpg)
 
-### Lable/Jump
+### Label/Jump
 
-- These instructions are used for branching of the program.
-- Label determines the location of the branching.
-- Using Jump you can execute a predesignated label first.
-- It is the same concept as ‘label / goto’ commands in C programming language
+- These instructions are used for branching the program.
+- Label indicates the branch of the program.
+- Jump instruction skips to the designated Label and run the code.
 
-- The figures below show how the program branches by using Jump
+The figures below show how the program branches by using Jump.
 - The figure on the left shows the program jumping to Mode1 and executing only the code from Mode1.
 - The figure on the right shows the program jumping to Mode2 and executing only the code from Mode2.
 
@@ -460,17 +459,20 @@ This instruction controls the flow of program based on the True/False result of 
 
 ![](/assets/images/sw/rplus2/task/roboplus_task2_064.jpg)
 
-### Conditional Clause?
+### [Conditional Clause](#conditional-clause)
 
 - A conditional clause gives the result of a computation as either true or false.
 
-- Below are the comparison operators that can be used inside the parenthesis().
-  - == : check if left and right values are the same
-  - != : check if left and right values are not the same
-  - &gt; : check if left value is greater than the right value
-  - &gt;= : check if left value is greater or equal to the right value
-  - &lt; : check if right value is greater than the left value
-  - &lt;= : check if right value is greater or equal to the left value
+- Below are the comparison operators that can be used inside the parenthesis.
+
+| Operators | Description                                                                     |
+|:---------:|:--------------------------------------------------------------------------------|
+|    ==     | The value on the left hand side is equal to the right hand side                 |
+|    !=     | The value on the left hand side is not equal to the right hand side             |
+|    \>     | The value on the left hand side is greater than the right hand side             |
+|    \>=    | The value on the left hand side is greater than or equal to the right hand side |
+|     <     | The value on the left hand side is less than the right hand side                |
+|    <=     | The value on the left hand side is less than or equal to the right hand side    |
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_065.jpg)
 
@@ -485,12 +487,12 @@ This instruction controls the flow of program based on the True/False result of 
 
     ![](/assets/images/sw/rplus2/task/roboplus_task2_067.jpg)
 
-### If
+### [If](#if)
 
-- If the result of the conditional clause is true, then it executes the code inside the block.
-- It is the same concept as the ‘If’ statement in C programming language.
+- If the conditional clause is true, the code inside the `IF` block is executed.
+- It is the same concept as the **If** statement in C programming language.
 
-- The following in an example of using If to check whether a variable’s value is 100.
+- The following is an example of turning the LED on if the variable in the `IF` statement is equal to 100.
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_068.jpg)
 
@@ -498,13 +500,13 @@ This instruction controls the flow of program based on the True/False result of 
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_069.jpg)
 
-### Else If
+### [Else If](#else-if)
 
-- This is used to check another conditional clause following an If statement.
-- An If statement must be used prior to Else If statement
+- This is used to examine another conditional clause when `IF` or `ELSE IF` statement is false.
+- `ELSE IF` block must be used after `IF` block or another `ELSE IF` block.
 - It is the same concept as the ‘Else If’ statement in C programming language.
 
-- The following in an example of using If to check whether a variable’s value is 100, and the using Else If to check whether the variable’s value is 50.
+- The following is an example of using If to check whether a variable’s value is 100, and the using Else If to check whether the variable’s value is 50.
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_070.jpg)
 
@@ -512,13 +514,13 @@ This instruction controls the flow of program based on the True/False result of 
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_071.jpg)
 
-### Else
+### [Else](#else)
 
-- This statement will execute its code block if none of the If or Else If statements were executed.
-- An If statement must be used prior to Else statement
+- If neither `IF` nor `ELSE IF` statement are true, `ELSE` block will be executed.
+- The `ELSE` block must be used after `IF` or `ELSE IF` block.
 - It is the same concept as the ‘Else’ statement in C programming language.
 
-- The following in an example of using If to check whether a variable’s value is 100, and if the result is false then running the Else statement that follows.
+- The following is an example of using If to check whether a variable’s value is 100, and if the result is false then running the Else statement that follows.
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_072.jpg)
 
@@ -533,13 +535,13 @@ By setting the repetition block and repetition condition, loop can be applied in
 
 ![](/assets/images/sw/rplus2/task/roboplus_task2_074.jpg)
 
-### Endless Loop
+### [Endless Loop](#endless-loop)
 
-- This statement will repeatedly execute from the beginning to the end of the code block endlessly
-- You can come out of the loop by using the “End Loop” command.
+- The code in the `ENDLESS LOOP` block will repeatedly be executed.
+- The `BREAK LOOP` instruction can be used to end the repetition.
 - It is the same concept as ‘while(1)’  in C programming language.
 
-- The following is an example of using Endless Loop to print the number 100 on the screen. The printing command is within the Endless Loop block so it is repeatedly executed with no end.
+- The following is an example of using Endless Loop to print the number 100 on the screen. The `Print Screen with Line` command is placed in the `ENDLESS LOOP` block.
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_075.jpg)
 
@@ -547,7 +549,7 @@ By setting the repetition block and repetition condition, loop can be applied in
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_076.jpg)
 
-### Loop While
+### [Loop While](#loop-while)
 
 - This statement will repeatedly execute from the beginning to the end of the code block as long as the conditional clause is satisfied.
 - Just as in Condition instructions, multiple conditional clauses can be used together.
@@ -562,46 +564,46 @@ By setting the repetition block and repetition condition, loop can be applied in
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_078.jpg)
 
-### Loop For
+### [Loop For](#loop-for)
 
-- This statement will execute from the beginning to the end of the code block a specified number of times.
-- Every time the program reaches the end of the block, the value of a specified variable will increase by 1.
-- You can come out of the loop by using the “End Loop” command.
-- Repeat count formula : Repeat count = End value – Starting Value + 1
+- This instruction will execute the `LOOP FOR` block for a specified number of times.
+- Each time the program runs through the block, the variable will be increased by 1.
+- The `BREAK LOOP` instruction can be used to end the repetition.
+- The condition can be described as **( Repeat counter variable = Starting Value ~ End Value )**. Therefore, the block will be repeated for **End Value - Starting Value + 1** times.
 - It is the same concept as ‘for’ in C programming language.
 
 - The following is an example of using Loop For to print the number 100 on the screen 10 times.
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_079.jpg)
 
-- The following is an example of taking the variable from Loop For and using it within the execution block. As the repeat count increases from 1 to 10, the value printed on the screen changes to 100, 200,300,400,500,600,700,800,900,1000.
+- The following is an example of multiplying the **Repeat counter variable** by 100 and print on the screen. As the Repeat counter variable increases, the printed value will also be increased by 100; 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000.
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_080.jpg)
 
-### Wait While
+### [Wait While](#wait-while)
 
-- This statement will stop execution of the program as long as the conditional clause is satisfied.
+- This instruction will stop running the code while the specific condition meets.
 - It is the same concept as ‘while(conditional clause)’ with an empty code block in C programming language.
 
-- The following is an example of using Wait While and a timer to make the program wait for 1.024 seconds.
+- The following is an example of using `WAIT WHILE` with a **Timer** to hold the program running for 1.024 seconds.
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_081.jpg)
 
-- The following is an example of using Wait While to make the program wait until the motion being performed finishes.
+- The following is an example of using `WAIT WHILE` with a **Motion Status** to wait until the motion completes.
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_082.jpg)
 
-- The following is an example of using Wait While to make the program wait until the melody being played finishes.
+- The following is an example of using `WAIT WHILE` with a **Buzzer Timer** to wait until the melody plays.
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_083.jpg)
 
-### Break Loop
+### [Break Loop](#break-loop)
 
-- This command is used when you wish to break from a loop.
-- This command can only be used within Endless Loop, Loop While, and Loop For statement.
+- This instruction will exit the loop block.
+- This instruction can only be used within `ENDLESS LOOP`, `LOOP WHILE`, and `LOOP FOR` blocks.
 - It is the same concept as ‘break’ in C programming language.
 
-- The following is an example of using Break Loop when a wireless data arrives in order to break from the loop. When the program breaks from the loop, whichever code that follows is executed.
+- The following is an example of using `BREAK LOOP` to exit the loop when the remote controller data is arrived. After exiting the block, followed by code will be executed.
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_084.jpg)
 
@@ -612,7 +614,7 @@ Refer to the following figure for details.
 
 ![](/assets/images/sw/rplus2/task/roboplus_task2_085.jpg)
 
-### Function/Call
+### [Function/Call](#functioncall)
 
 - If a specific code is used repeatedly, or if you wish to classify an area of code as a unit that performs a specific behavior, you can group the lines of code as a Function.
 - An adequate use of functions will make the code concise and easy to read.
@@ -633,9 +635,9 @@ Refer to the following figure for details.
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_088.jpg)
 
-### Return
+### [Return](#return)
 
-- This is an instruction used for exiting a function while it is being executed.
+- This instruction is used for exiting a function while it is being executed.
 - It can only be used inside a regular function and callback function.
 - It is the same concept as ‘return’ in C programming language.
 
@@ -647,9 +649,9 @@ Refer to the following figure for details.
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_090.jpg)
 
-### Callback
+### [Callback](#callback)
 
-- This is a function that is executed independently from the main program routine, executing itself periodically
+- This function is executed independently from the main program routine, executing itself periodically
 - Callback functions must be written outside of the main program routine.
 - Because it is not allowed to write code within a callback that takes too much time to execute, callback has restrictions in the use of Loops / Variables / Parameter Calls / volume of code.
 - The following restrictions must be met when using a callback function.
@@ -671,7 +673,7 @@ This section explains parameters used in R+ Task 2.0. It classifies the paramete
 ### Accessory Device [Geared motor]
 
 - This is used to control the geared motor connected to the controller.
-- Each Controller model has a different set of devices that can be connected to it. Please refer to the Controller Functionality Comparison for more detail. Controller Functionality Comparison
+- Each Controller model has a different set of devices that can be connected to it. Please refer to the [Controller Compatibility] for more detail.
 - **Direction** : CW (Clock Wise), CCW (Counter Clock Wise)
 - **Power** : The value ranges from 0 to 1023, where 0 means stop and 1023 is 100% power capacity.
 
@@ -688,7 +690,7 @@ This section explains parameters used in R+ Task 2.0. It classifies the paramete
 ### Accessory Device [Servo motor : drive mode, speed, location]
 
 - This is used to control the servo motor connected to the controller.
-- Each Controller model has a different set of devices that can be connected to it. Please refer to the Controller Functionality Comparison for more detail. Controller Functionality Comparison
+- Each Controller model has a different set of devices that can be connected to it. Please refer to the [Controller Compatibility] for more detail.
 - **Servo motor drive mode** : When the value is True, you can configure the servo motor’s location to situate it at a specific angle. When the value is False, you can configure the servo motor’s speed to rotate it at a specific speed.
 - **Servo motor speed** : Configures the speed of the servo motor.
 
@@ -709,7 +711,7 @@ This section explains parameters used in R+ Task 2.0. It classifies the paramete
 ### Accessory Device : LED Module
 
 - This is used to control the LED module connected to the controller.
-- Each Controller model has a different set of devices that can be connected to it. Please refer to the Controller Functionality Comparison for more detail. Controller Functionality Comparison
+- Each Controller model has a different set of devices that can be connected to it. Please refer to the [Controller Compatibility] for more detail.
 - User can turn on/off the Right LED or Left LED.
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_099.jpg)
@@ -721,20 +723,16 @@ This section explains parameters used in R+ Task 2.0. It classifies the paramete
 ### Accessory Devices : Various sensors
 
 - This is used to control the various sensors connected to the controller.
-- Each Controller model has a different set of sensors that can be connected to it. Please refer to the Controller Functionality Comparison for more detail. Controller Functionality Comparison
+- Each Controller model has a different set of sensors that can be connected to it. Please refer to the [Controller Compatibility] for more detail.
 - **Touch sensor** : used to detect whether there is contact with the touch sensor. (Returns True for contact, False for no contact)
 - [Touch Sensor Component Information]
 - The following is an example of using the touch sensor.
 
-[Touch Sensor Component Information]: /docs/en/parts/sensor/ts-10/
-
   ![](/assets/images/sw/rplus2/task/roboplus_task2_101.jpg)
 
-- **Infrared sensor** : used to measure the distance with an object (The value ranges from 0 to 1023, where the value increases from 0 as the object gets closer.)
+- **Infrared sensor** : used to measure the distance to the object (The value ranges from 0 to 1023, where the value increases from 0 as the object gets closer.)
 - [Infrared Sensor Component Information]
 - The following is an example of using the infrared sensor.
-
-[Infrared Sensor Component Information]: /docs/en/parts/sensor/irss-10/
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_102.jpg)
 
@@ -742,8 +740,6 @@ This section explains parameters used in R+ Task 2.0. It classifies the paramete
   (The value ranges from 0 to 1023, where the value increases from 0 as the object gets closer.)
 - [Distance Measurement Sensor Component Information]
 - The following is an example of using the distance measurement sensor.
-
-[Distance Measurement Sensor Component Information]: /docs/en/parts/sensor/dms-80/
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_103.jpg)
 
@@ -755,15 +751,11 @@ This section explains parameters used in R+ Task 2.0. It classifies the paramete
 - [Color Sensor Component Information]
 - The following is an example of using the color sensor.
 
-[Color Sensor Component Information]: /docs/en/parts/sensor/cs-10/
-
   ![](/assets/images/sw/rplus2/task/roboplus_task2_105.jpg)
 
-- **Magnetic sensor** : used to detect whether there is a magnetic property for an objest.(Returns True for magnetic property detected, False for no magnetic property detected)
+- **Magnetic sensor** : used to detect magnetic materials near the sensor head (Returns True when magnetic property detected, False when not detected).
 - [Magnetic Sensor Component Information]
 - The following is an example of using the magnetic sensor.
-
-[Magnetic Sensor Component Information]: /docs/en/parts/sensor/mgss-10/
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_106.jpg)
 
@@ -771,15 +763,11 @@ This section explains parameters used in R+ Task 2.0. It classifies the paramete
 - [Temperature Sensor Component Information]
 - The following is an example of using the temperature sensor.
 
-[Temperature Sensor Component Information]: /docs/en/parts/sensor/tps-10/
-
   ![](/assets/images/sw/rplus2/task/roboplus_task2_107.jpg)
 
 - **Motion detection (Passive infrared) sensor** : used to detect the motion of an object
 - [Motion Detecting Sensor Component Information]
 - The following is an example of using the motion detection sensor.
-
-[Motion Detecting Sensor Component Information]: /docs/en/parts/sensor/pir-10/
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_108.jpg)
 
@@ -795,7 +783,7 @@ This section explains parameters used in R+ Task 2.0. It classifies the paramete
   ![](/assets/images/sw/rplus2/task/roboplus_task2_110.jpg)
 
 - **User device** : used to read the result value of the user-created sensor
-- Building a User Device
+- [Building a User Device]
 - The following is an example of using the user device.
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_111.jpg)
@@ -823,7 +811,7 @@ This section explains parameters used in R+ Task 2.0. It classifies the paramete
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_115.jpg)
 
-- **Turn on joint LED automatically** : used to turn on/off the dynamic cell’s LED while a Motion is being executed. This feature is only supported in OpenCM 9.04
+- **Turn on joint LED automatically** : used to turn on/off the DYNAMIXEL LED while a Motion is being executed. This feature is only supported in OpenCM 9.04
 - The following is an example of using the “turn on joint LED automatically” function when executing a Motion.
 - The following is an example of executing a Motion that is saved in the Controller.
 
@@ -895,7 +883,7 @@ When playing a melody, the Buzzer timer should be set as the melody’s run time
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_126.jpg)
 
-### Remote controller [Received wireless data, Wireless data to send / Wireless ID / RC-100 channel]
+### Remote Controller [Received wireless data, Wireless data to send / Wireless ID / RC-100 channel]
 
 - These are the parameters that send and receive data with external devices using the wireless communication module (Bluetooth, infrared, ZigBee) connected to the Controller.
 - It is generally used when controlling a robot with theRC-100 or smartphone virtual remote controller, but it can also be used to communicate with a user developed software.
@@ -904,7 +892,7 @@ When playing a melody, the Buzzer timer should be set as the melody’s run time
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_127.jpg)
 
-- **Wireless data to send** : used when the Controller sends data to the outside
+- **Wireless data to send** : used when the Controller transmits data to other devices
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_128.jpg)
 
@@ -973,39 +961,39 @@ When playing a melody, the Buzzer timer should be set as the melody’s run time
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_141.jpg)
 
-## [Dynamixel](#dynamixel)
+## [DYNAMIXEL](#dynamixel)
 
-These are the parameters for reading/writing the values of the Dynamixel control table. Please refer to the Dynamixel's Control Table for more detail. Dynamixel
+These are the parameters for reading or writing values in the DYNAMIXEL Control Table. Please refer to the DYNAMIXEL Control Table for more details.
 
-### Dynamixel actuator
+### DYNAMIXEL actuator
 
 - **Turn Torque On/Off** : used to turn the Dynamixel Torque on/off
-   Torque is turned on when True, Torque is turned off when False.
+  Torque is turned on when True, Torque is turned off when False.
 
 - The following is an example of turning on the Torque of Dynamixel with ID number 1 when the Controller’s button is pressed.
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_142.jpg)
 
 - **LED** : used to turn the Dynamixel LED on/off  
-   LED is turned on when True, LED is turned off when False.
+  LED is turned on when True, LED is turned off when False.
 
 - **CW margin / CCW margin** : used to read/configure the Dynamixel Margin value  
-   The range of the value is from 0 to 255, but it is recommended not to change the default value (1).  
-   Please refer to the Dynamixel Control Table for more detail.
+  The range of the value is from 0 to 255, but it is recommended not to change the default value (1).  
+  Please refer to the Dynamixel Control Table for more detail.
 
 - **CW slope / CCW slope** : used to read/configure the Dynamixel Slope value  
-   There are a total of seven phases which the value can be set to, and the representative values of each phase are set as in the table below.  
-   Please refer to the Dynamixel Control Table for more detail.
+  There are a total of seven phases which the value can be set to, and the representative values of each phase are set as in the table below.  
+  Please refer to the Dynamixel Control Table for more detail.
 
-|Level|Real Data Value|Representative Data Value|
-|:---:|:---:|:---:|
-|1|0 (0x00) ~ 3(0x03)|2 (0x02)|
-|2|4(0x04) ~ 7(0x07)|4 (0x04)|
-|3|8(0x08)~15(0x0F)|8 (0x08)|
-|4|16(0x10)~31(0x1F)|16 (0x10)|
-|5|32(0x20)~63(0x3F)|32 (0x20)|
-|6|64(0x40)~127(0x7F)|64 (0x40)|
-|7|128(0x80)~254(0xFE)|128 (0x80)|
+  | Level |    Real Data Value    | Representative Data Value |
+  |:-----:|:---------------------:|:-------------------------:|
+  |   1   |  0 (0x00) ~ 3(0x03)   |         2 (0x02)          |
+  |   2   |   4(0x04) ~ 7(0x07)   |         4 (0x04)          |
+  |   3   |  8(0x08) ~ 15(0x0F)   |         8 (0x08)          |
+  |   4   |  16(0x10) ~ 31(0x1F)  |         16 (0x10)         |
+  |   5   |  32(0x20) ~ 63(0x3F)  |         32 (0x20)         |
+  |   6   | 64(0x40) ~ 127(0x7F)  |         64 (0x40)         |
+  |   7   | 128(0x80) ~ 254(0xFE) |        128 (0x80)         |
 
 - **P gain / I gain/ D gain** : used to read/configure the Dynamixel PID values  
    P gain refers to Proportional Gain, for which the smaller the value is the larger the clearance gets, and the power level decreases near the target location.  
@@ -1016,7 +1004,7 @@ These are the parameters for reading/writing the values of the Dynamixel control
 
    ![](/assets/images/sw/rplus2/task/roboplus_task2_143.jpg)
 
-- Moving speed : used to read/configure the Dynamixel speed  
+- **Moving speed** : used to read/configure the Dynamixel speed  
    The “motor control value” control can be used to designate the rotation direction and power value as shown below.
 
    ![](/assets/images/sw/rplus2/task/roboplus_task2_144.jpg)
@@ -1042,10 +1030,10 @@ These are the parameters for reading/writing the values of the Dynamixel control
 
 - **Infrared detection standard value (numbers 1~7)** : used as the standard values for the infrared sensor array to determine whether the color is white or black.
 
-||Black detection|LED|
-|:----:|:---:|:---:|
-|Sensor value <= set value|BIT 1|ON|
-|Sensor value > set value| BIT 0|OFF|
+|                           | Black detection | LED |
+|:-------------------------:|:---------------:|:---:|
+| Sensor value <= set value |      BIT 1      | ON  |
+| Sensor value > set value  |      BIT 0      | OFF |
 
 - **Buzzer index** : used to configure the type of Buzzer for the infrared sensor array
 - **Buzzer timer** : used to configure the duration of the Buzzer sound in the case that the infrared sensor array’s Buzzer is used.  
@@ -1055,15 +1043,15 @@ These are the parameters for reading/writing the values of the Dynamixel control
 
 - **Infrared object detection result** : used to read whether an object has been detection in the infrared sensor array
 
-|Binary value|Decimal value|Black detection|
-|:---:|:---:|:---:|
-|0000001|1|Black detection for IR sensor #1|
-|0000010|2|Black detection for IR sensor #2|
-|0000100|4|Black detection for IR sensor #3|
-|0001000|8|Black detection for IR sensor #4|
-|0010000|16|Black detection for IR sensor #5|
-|0100000|32|Black detection for IR sensor #6|
-|1000000|64|Black detection for IR sensor #7|  
+| Binary value | Decimal value |         Black detection          |
+|:------------:|:-------------:|:--------------------------------:|
+|   0000001    |       1       | Black detection for IR sensor #1 |
+|   0000010    |       2       | Black detection for IR sensor #2 |
+|   0000100    |       4       | Black detection for IR sensor #3 |
+|   0001000    |       8       | Black detection for IR sensor #4 |
+|   0010000    |      16       | Black detection for IR sensor #5 |
+|   0100000    |      32       | Black detection for IR sensor #6 |
+|   1000000    |      64       | Black detection for IR sensor #7 |
 
 Use can check the value while looking at the screen as shown below.
 
@@ -1180,3 +1168,13 @@ In order to download the task code to the controller, it must go through a gramm
 
 6. I do not want to see the help animation any more. What should I do?
   > Go to Home Tab -> Settings Menu and uncheck the option "Tutorials" and the help animation will not appear anymore.
+
+[Controller Compatibility]: /docs/en/parts/controller/controller_compatibility/
+[Touch Sensor Component Information]: /docs/en/parts/sensor/ts-10/
+[Infrared Sensor Component Information]: /docs/en/parts/sensor/irss-10/
+[Distance Measurement Sensor Component Information]: /docs/en/parts/sensor/dms-80/
+[Color Sensor Component Information]: /docs/en/parts/sensor/cs-10/
+[Magnetic Sensor Component Information]: /docs/en/parts/sensor/mgss-10/
+[Temperature Sensor Component Information]: /docs/en/parts/sensor/tps-10/
+[Motion Detecting Sensor Component Information]: /docs/en/parts/sensor/pir-10/
+[Building a User Device]: /docs/en/edu/bioloid/premium/#make-your-own-sensor
