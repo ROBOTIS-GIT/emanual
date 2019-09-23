@@ -14176,6 +14176,12 @@ bioloid-gp:
       urlkr: /edu/bioloid/gp/#사용자-센서-제작
 
 
+kit1_main:
+  - title: "English"
+    url: /edu/engineer/kit1_main/#english
+  - title: "Korea"
+    url: /edu/engineer/kit1_main/#korea
+    
 #ROBOTIS ENGINEER KIT sidebar
 kit1:
   - titlekr: "개요"
