@@ -10,14 +10,10 @@ sidebar:
   title: R+ Task 3.0
   nav: "rplustask3"
 product_group: rplustask3
-page_number: 4
+page_number: 6
 ---
 
 <div style="counter-reset: h1 6"></div>
-
-<!--[dummy Header 1]>
-  <h1 id="rplustask3"><a href="#rplustask3">rplustask3</a></h1>
-<![end dummy Header 1]-->
 
 # [유용한 정보](#유용한-정보)
 

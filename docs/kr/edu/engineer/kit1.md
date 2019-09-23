@@ -9,7 +9,6 @@ permalink: /docs/kr/edu/engineer/kit1/
 sidebar:
   title: 엔지니어 키트 1
   nav: "kit1"
-product_group: 2xl430-w250
 ---
 
 # [개요](#개요)
@@ -27,7 +26,7 @@ product_group: 2xl430-w250
 
 ## [부품 목록](#부품-목록)
 
-![](/assets/images/edu/engineer/kit1/parts_list.png)
+![](/assets/images/edu/engineer/kit1/parts_list_kr.png)
 
 ### [CM-550 제어기](#cm-550-제어기)
 
@@ -80,29 +79,29 @@ product_group: 2xl430-w250
 2XL430-W250은 2축 제어가 가능한 새로운 다이나믹셀입니다.
 
 
-| 항목             | 내용                                                              |
-|:-----------------|:------------------------------------------------------------------|
-| MCU              | {{ site.data.dxl_x_info[page.product_group].mcu }}                |
-| 위치 센서        | {{ site.data.dxl_x_info[page.product_group].encoder }}            |
-| 모터             | {{ site.data.dxl_x_info[page.product_group].motor }}              |
-| 통신속도         | {{ site.data.dxl_x_info[page.product_group].baudrate }}           |
-| 제어 알고리즘    | {{ site.data.dxl_x_info[page.product_group].control }}            |
-| 해상도           | {{ site.data.dxl_x_info[page.product_group].resolution }}         |
-| 동작 모드        | {{ site.data.dxl_x_info[page.product_group].mode }}               |
-| 무게             | {{ site.data.dxl_x_info[page.product_group].weight }}             |
-| 크기 (W x H x D) | {{ site.data.dxl_x_info[page.product_group].dimensions }}         |
-| 기어비           | {{ site.data.dxl_x_info[page.product_group].gearratio }}          |
-| 정지 토크        | {{ site.data.dxl_x_info[page.product_group].stalltorque }}        |
-| 무부하 속도      | {{ site.data.dxl_x_info[page.product_group].noloadspeed }}        |
-| 동작 온도        | {{ site.data.dxl_x_info[page.product_group].temperature }}        |
-| 사용 전압        | {{ site.data.dxl_x_info[page.product_group].voltage }}            |
-| 제어 명령        | {{ site.data.dxl_x_info[page.product_group].command }}            |
-| 프로토콜 타입    | {{ site.data.dxl_x_info[page.product_group].protocoltype }}       |
-| 통신 연결        | {{ site.data.dxl_x_info[page.product_group].physicalconnection }} |
-| ID               | {{ site.data.dxl_x_info[page.product_group].id }}                 |
-| 피드백           | {{ site.data.dxl_x_info[page.product_group].feedback }}           |
-| 재질             | {{ site.data.dxl_x_info[page.product_group].material }}           |
-| 대기 전류        | {{ site.data.dxl_x_info[page.product_group].standbycurrent }}     |
+| 항목             | 내용                                                       |
+|:-----------------|:-----------------------------------------------------------|
+| MCU              | {{ site.data.dxl_x_info._2xl430-w250.mcu }}                |
+| 위치 센서        | {{ site.data.dxl_x_info._2xl430-w250.encoder }}            |
+| 모터             | {{ site.data.dxl_x_info._2xl430-w250.motor }}              |
+| 통신속도         | {{ site.data.dxl_x_info._2xl430-w250.baudrate }}           |
+| 제어 알고리즘    | {{ site.data.dxl_x_info._2xl430-w250.control }}            |
+| 해상도           | {{ site.data.dxl_x_info._2xl430-w250.resolution }}         |
+| 동작 모드        | {{ site.data.dxl_x_info._2xl430-w250.mode }}               |
+| 무게             | {{ site.data.dxl_x_info._2xl430-w250.weight }}             |
+| 크기 (W x H x D) | {{ site.data.dxl_x_info._2xl430-w250.dimensions }}         |
+| 기어비           | {{ site.data.dxl_x_info._2xl430-w250.gearratio }}          |
+| 정지 토크        | {{ site.data.dxl_x_info._2xl430-w250.stalltorque }}        |
+| 무부하 속도      | {{ site.data.dxl_x_info._2xl430-w250.noloadspeed }}        |
+| 동작 온도        | {{ site.data.dxl_x_info._2xl430-w250.temperature }}        |
+| 사용 전압        | {{ site.data.dxl_x_info._2xl430-w250.voltage }}            |
+| 제어 명령        | {{ site.data.dxl_x_info._2xl430-w250.command }}            |
+| 프로토콜 타입    | {{ site.data.dxl_x_info._2xl430-w250.protocoltype }}       |
+| 통신 연결        | {{ site.data.dxl_x_info._2xl430-w250.physicalconnection }} |
+| ID               | {{ site.data.dxl_x_info._2xl430-w250.id }}                 |
+| 피드백           | {{ site.data.dxl_x_info._2xl430-w250.feedback }}           |
+| 재질             | {{ site.data.dxl_x_info._2xl430-w250.material }}           |
+| 대기 전류        | {{ site.data.dxl_x_info._2xl430-w250.standbycurrent }}     |
 
 **[2XL430-W250 매뉴얼 바로가기]{: .blank}**
 {: .notice}
@@ -269,14 +268,14 @@ product_group: 2xl430-w250
 4. 스마트 기기에서 `ROBOTIS ENGINEER`앱을 실행하고 화면에 표시된 블루투스 아이콘을 누릅니다.  
   ![](/assets/images/edu/engineer/kit1/bluetooth_connection_4.png)
 
-5. 제어기에 표시된 문자(마지막 두자리)를 확인합니다.  
+5. 제어기에 표시된 MAC 주소의 마지막 두자리를 확인합니다.  
   ![](/assets/images/edu/engineer/kit1/bluetooth_connection_5.png)
 
-6. 확인한 숫자를 왼쪽 상자에 입력한 후 `검색` 을 누릅니다.  
-  ![](/assets/images/edu/engineer/kit1/bluetooth_connection_6.png)
+6. 확인한 문자를 왼쪽 상자에 입력한 후 `검색` 을 누릅니다.  
+  ![](/assets/images/edu/engineer/kit1/bluetooth_connection_6_kr.png)
 
-7. 검색된 목록을 찾아 선택하면 블루투스 통신 연결이 완료되고, 로봇이 실행됩니다.  
-  ![](/assets/images/edu/engineer/kit1/bluetooth_connection_7.png)
+7. 검색된 목록 중 제어기의 주소와 일치하는 항목을 선택하면 블루투스 통신 연결이 완료되고, 로봇이 실행됩니다.  
+  ![](/assets/images/edu/engineer/kit1/bluetooth_connection_7_kr.png)
 
 ## [예제 다운로드](#예제-다운로드)
 - CM-550 제어기에는 최초 출하시 KIT 1 타입에 맞는 프로그램이 기본적으로 다운로드되어 있습니다.  
@@ -309,23 +308,23 @@ product_group: 2xl430-w250
 3. CM-550의 `MODE` 버튼 부분을 BT-410 동글에 가까이 가져가면, 페어링이 완료됩니다.
 4. 로보플러스 태스크 3.0을 실행시킨 후, 왼쪽 하단의 `연결`버튼을 클릭 해주세요.
 
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_01.png)  
+    ![](/assets/images/edu/engineer/kit1/remote_pairing_01_kr.png)  
 
 5. BT-410 동글을 사용할 경우 반드시 `Use USB Dongle` 옵션을 선택해주세요.
 
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_02.png)  
+    ![](/assets/images/edu/engineer/kit1/remote_pairing_02_kr.png)  
 
 6. 사용할 시리얼 포트를 선택해 주세요.
 
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_03.png)  
+    ![](/assets/images/edu/engineer/kit1/remote_pairing_03_kr.png)  
 
 7. 연결 버튼을 클릭하여, PC와 제어기를 연결시켜 주세요.   
 
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_04.png)  
+    ![](/assets/images/edu/engineer/kit1/remote_pairing_04_kr.png)  
 
 8. 연결이 성공적으로 완료되면 '삐비빅' 소리가 납니다.  
 
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_05.png)  
+    ![](/assets/images/edu/engineer/kit1/remote_pairing_05_kr.png)  
 
 {% capture pairing_01 %}
 **참고** :
@@ -378,15 +377,15 @@ product_group: 2xl430-w250
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_02.png)  
 
-3. 제어기에 표시된 주소의 마지막 두자리를 확인합니다.  
+3. 제어기에 표시된 MAC 주소의 마지막 두자리를 확인합니다.  
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_02_1.png)
 
-4. 제어기 주소의 마지막 두자리 문자를 입력해주세요.
+4. 제어기 MAC 주소의 마지막 두자리 문자를 입력해주세요.
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_03.png)  
 
-5. 블루투스 검색결과에서 제어기 주소와 일치하는 포트를 선택하여 연결해주세요.
+5. 검색된 목록 중 제어기의 주소와 일치하는 항목을 선택하여 연결해주세요.
 
     ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_04.png)  
     ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_05.png)  
@@ -397,11 +396,11 @@ product_group: 2xl430-w250
 
 1. 제어기가 스마트 기기와 연결된 상태에서, 로보플러스 태스크 3앱의 홈 탭에서 **태스크 예제** 를 터치해서 제품을 선택해주세요.
 
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_06.png)
+    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_06_kr.png)
 
 2. 다운로드 버튼을 터치하면 블루투스 연결을 확인한 다음 제어기에 태스크 파일을 업로드합니다.  
 
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_07.png)  
+    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_07_kr.png)  
 
 
 #### [모션 다운로드 (스마트기기)](#모션-다운로드-스마트기기)
@@ -437,7 +436,7 @@ product_group: 2xl430-w250
 
 앱 화면 우측 상단의 메뉴버튼을 눌러 환경 설정을 할 수 있습니다.
 
-![](/assets/images/edu/engineer/kit1/engineer_app_configuration.png)
+![](/assets/images/edu/engineer/kit1/engineer_app_configuration_kr.png)
 
 `연결할 장치 선택` : 연결할 블루투스 장치를 선택합니다.  
 `예제 초기화` : 선택한 예제를 초기화 하는 기능입니다.  
@@ -457,7 +456,7 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
 
 오른쪽 아래 `Mode` 버튼을 터치하면 아래와 같이 모드 변경 메뉴가 나타납니다. 5개의 모드와 2개의 옵션 메뉴가 있습니다.
 
-![](/assets/images/edu/engineer/kit1/engineer_app_emotion_3.png)
+![](/assets/images/edu/engineer/kit1/engineer_app_emotion_3_kr.png)
 
 ##### 모드 메뉴
 
@@ -483,7 +482,7 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
 
 #### 리모컨 화면
 
-![](/assets/images/edu/engineer/kit1/max_controller.png)
+![](/assets/images/edu/engineer/kit1/max_controller_kr.png)
 
 `조종 모드` : MAX-E1의 조종 모드를 일반/전투/축구모드로 변경할 수 있습니다.  
 `조종 버튼` : 전/후/좌/우 이동 및 속도 설정 버튼으로 로봇을 조종할 수 있습니다  
@@ -503,7 +502,7 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
 
 #### 리모컨 화면  
 
-![](/assets/images/edu/engineer/kit1/spi_controller.png)
+![](/assets/images/edu/engineer/kit1/spi_controller_kr.png)
 
 `조종 버튼` : 전/후/좌/우 이동 및 속도 설정 버튼으로 로봇을 조종할 수 있습니다.  
 `모션 버튼` : SPI 로봇에 등록된 모션을 실행하는 버튼입니다.  
@@ -581,11 +580,11 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
 1. `WIN` + `S` 키를 눌러 나타난 검색창에 **cmd** 를 검색한 다음 관리자 권한으로 명령 프롬프트를 실행합니다.  
 `Ctrl` + `Shift` 를 누른 상태에서 `명령 프롬프트` 를 클릭해도 됩니다.
 
-    ![](/assets/images/edu/engineer/kit1/obj_classification_cmd_01.png)
+    ![](/assets/images/edu/engineer/kit1/obj_classification_cmd_01_kr.png)
 
 2. 명령 프롬프트가 실행되면 아래와 같은 화면이 나타납니다.
 
-    ![](/assets/images/edu/engineer/kit1/obj_classification_cmd_02.png)
+    ![](/assets/images/edu/engineer/kit1/obj_classification_cmd_02_kr.png)
 
 3. 명령 프롬프트에서 아래의 명령어를 입력해주세요.
 
@@ -593,11 +592,11 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
     python -m pip install --upgrade pip
     ```
 
-    ![](/assets/images/edu/engineer/kit1/obj_classification_cmd_03.png)
+    ![](/assets/images/edu/engineer/kit1/obj_classification_cmd_03_kr.png)
 
 4. pip패키지가 성공적으로 업그레이드되면 아래와 같이 표시됩니다.
 
-    ![](/assets/images/edu/engineer/kit1/obj_classification_cmd_04.png)
+    ![](/assets/images/edu/engineer/kit1/obj_classification_cmd_04_kr.png)
 
     pip 패키지가 업그레이드되지 않는다면, 아나콘다가 `C 드라이브` 에 정상적으로 설치되었는지 확인해주세요.
     {: .notice--warning}
@@ -606,7 +605,7 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
 
 1. `D 드라이브`에 `!R+Smart` 폴더를 만들어 주세요.
 
-    ![](/assets/images/edu/engineer/kit1/obj_classification_mkdir_01.png)
+    ![](/assets/images/edu/engineer/kit1/obj_classification_mkdir_01_kr.png)
 
     - 폴더 위치는 `D 드라이브` 또는 `C 드라이브` 등 상관없습니다. 매뉴얼에서는 `D 드라이브` 기준으로 설명합니다.
     - 폴더 이름은 사용자가 임의로 변경할 수 있습니다. 매뉴얼에서는 `!R+Smart` 기준으로 설명합니다.
@@ -618,7 +617,7 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
     d:
     ```
 
-    ![](/assets/images/edu/engineer/kit1/obj_classification_mkdir_02.png)
+    ![](/assets/images/edu/engineer/kit1/obj_classification_mkdir_02_kr.png)
 
 
 3. 아래의 명령어를 입력하여, `!R+Smart` 폴더로 이동합니다.
@@ -627,7 +626,7 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
     cd !R+Smart
     ```
 
-    ![](/assets/images/edu/engineer/kit1/obj_classification_mkdir_03.png)
+    ![](/assets/images/edu/engineer/kit1/obj_classification_mkdir_03_kr.png)
 
 #### [아나콘다 가상실행 환경 만들기](#아나콘다-가상실행-환경-만들기)
 
@@ -637,15 +636,15 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
     conda create -n tensorflow python=3.5
     ```
 
-    ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_01.png)
+    ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_01_kr.png)
 
 2. 진행여부를 묻습니다. `y` 입력후, `Enter Key`를 눌러 패키지 설치를 진행합니다.
 
-    ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_02.png)
+    ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_02_kr.png)
 
 3. 성공적으로 설치되면 아래의 사진과 같이 나옵니다.
 
-    ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_03.png)
+    ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_03_kr.png)
 
 #### [텐서플로우 설치하기](텐서플로우-설치하기)
 
@@ -657,7 +656,7 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
     activate tensorflow
     ```
 
-    ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_04.png)
+    ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_04_kr.png)
 
 2. 마지막으로 아래의 명령어를 입력해서 텐서플로우를 설치합니다.
 
@@ -665,7 +664,7 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
     pip install tensorflow
     ```
 
-    ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_05.png)
+    ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_05_kr.png)
 
 #### [파일과 폴더 생성](#파일과-폴더-생성)
 
@@ -676,11 +675,11 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
 
 2. `!R+Smart` 폴더에 다운로드받은 `retrain.py` 파일을 복사한 다음, 객체 추가를 위한 `photos` 폴더를 만듭니다.
 
-    ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_retrain.png)
+    ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_retrain_kr.png)
 
 3. `photos` 폴더 안에 `001 dummy`, `002 banana` 그리고 `003 pineapple`과 같이 객체 이미지를 추가할 하위 폴더를 만들고 객체와 관련된 이미지를 각각의 폴더에 추가합니다.
 
-    ![](/assets/images/edu/engineer/kit1/obj_classification_image_01.png)
+    ![](/assets/images/edu/engineer/kit1/obj_classification_image_01_kr.png)
 
  {% capture notice_01 %}
   **참고** :
@@ -702,7 +701,7 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
     python retrain.py --bottleneck_dir=./bottlenecks --model_dir=./inception  --output_graph=./Smart_OC.pb --output_labels=./Smart_OC.txt --image_dir ./photos --architecture mobilenet_1.0_224 --how_many_training_steps 1000
     ```
 
-    ![](/assets/images/edu/engineer/kit1/obj_classification_img_learning_01.png)
+    ![](/assets/images/edu/engineer/kit1/obj_classification_img_learning_01_kr.png)
 
     학습 명령어에서 `how_many_training_steps` 옵션은 이미지 학습의 횟수를 나타냅니다. 횟수는 1000회 정도가 적당하며, 예시의 명령어는 1000회로 학습합니다.
     {: .notice--info}
@@ -710,9 +709,9 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
     **주의** : 폴더와 파일의 이름은 반드시 영문이어야 합니다. 한글 이름을 사용할 경우 오류가 발생합니다.
     {: .notice--warning}
 
-2. 학습이 완료되면 아래와 같이 ***Smart_OC.txt*** 와 ***Smart_OC.pb*** 파일이 `!R+Smart` 폴더에 생성됩니다.
+2. 학습이 완료되면 아래와 같이 `Smart_OC.txt` 와 `Smart_OC.pb` 파일이 `!R+Smart` 폴더에 생성됩니다.
 
-   ![](/assets/images/edu/engineer/kit1/obj_classification_oc.png)
+   ![](/assets/images/edu/engineer/kit1/obj_classification_oc_kr.png)
 
 #### [프로젝트에 학습파일 적용하기](#프로젝트에-학습파일-적용하기)
 
@@ -720,9 +719,9 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
 
 2. 스마트 기기의 저장공간에서 `RoboPlus` > `ROBOTIS ENGINEER` > `CUSTOM` 폴더를 찾아 들어갑니다.
 
-    ![](/assets/images/edu/engineer/kit1/obj_classification_application_01.png)  
-    ![](/assets/images/edu/engineer/kit1/obj_classification_application_02.png)  
-    ![](/assets/images/edu/engineer/kit1/obj_classification_application_03.png)
+    ![](/assets/images/edu/engineer/kit1/obj_classification_application_01_kr.png)  
+    ![](/assets/images/edu/engineer/kit1/obj_classification_application_02_kr.png)  
+    ![](/assets/images/edu/engineer/kit1/obj_classification_application_03_kr.png)
 
 3. 프로젝트 폴더를 생성합니다. 여기에서는 `Project 1`을 프로젝트 폴더로 생성합니다.
 
@@ -733,11 +732,11 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
 
 4. 데이터베이스를 사용하기 위해서 `Db` 폴더를 생성합니다.
 
-    ![](/assets/images/edu/engineer/kit1/obj_classification_application_05.png)
+    ![](/assets/images/edu/engineer/kit1/obj_classification_application_05_kr.png)
 
-5. `!R+Smart` 에서 생성된 학습파일인 ***Smart_OC.txt*** 와 ***Smart_OC.pb*** 을 `Db` 폴더에 복사합니다.  
+5. `!R+Smart` 에서 생성된 학습파일인 `Smart_OC.txt` 와 `Smart_OC.pb` 을 `Db` 폴더에 복사합니다.  
 
-    ![](/assets/images/edu/engineer/kit1/obj_classification_application_06.png)
+    ![](/assets/images/edu/engineer/kit1/obj_classification_application_06_kr.png)
 
 6. 스마트 기기를 PC에서 분리한 다음 `ROBOTIS ENGINEER` 앱을 실행합니다.
 
@@ -745,26 +744,26 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
 
 7. `User` 탭으로 이동합니다.
 
-    ![](/assets/images/edu/engineer/kit1/obj_classification_test_01.png)
+    ![](/assets/images/edu/engineer/kit1/obj_classification_test_01_kr.png)
 
 8. 3번 단계에서 생성한 `Project 1` 프로젝트 폴더의 `설정` 아이콘을 클릭합니다.   
 
-    ![](/assets/images/edu/engineer/kit1/obj_classification_test_02.png)
+    ![](/assets/images/edu/engineer/kit1/obj_classification_test_02_kr.png)
 
 9. `비전` > `객체 분류` 를 선택합니다.
 
-    ![](/assets/images/edu/engineer/kit1/obj_classification_test_03.png)
+    ![](/assets/images/edu/engineer/kit1/obj_classification_test_03_kr.png)
 
 10. 이미지 폴더가 추가되었는지 확인합니다.
 
-    ![](/assets/images/edu/engineer/kit1/obj_classification_test_04.png)
+    ![](/assets/images/edu/engineer/kit1/obj_classification_test_04_kr.png)
 
 11. 객체를 놓고, 카메라를 통해 사물인식이 잘 되는지 확인합니다.
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_test_05.png)   
 
 {% capture retrain %}
-**참고** : 이미 생성된 학습파일인 ***Smart_OC.txt*** 와 ***Smart_OC.pb*** 에는 새로운 데이터를 추가할 수 없습니다.  
+**참고** : 이미 생성된 학습파일인 `Smart_OC.txt` 와 `Smart_OC.pb` 에는 새로운 데이터를 추가할 수 없습니다.  
 원하는 객체를 추가하려면 객체 이미지 폴더에 이미지를 추가한 다음, 새로운 학습파일을 만들어야 합니다.
 - [파일과 폴더 생성 방법](#파일과-폴더-생성)
 - [이미지 학습 방법](#이미지-학습)
@@ -781,7 +780,7 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
 {% endcapture %}
 <div class="notice--info">{{ edu_application | markdownify }}</div>
 
-![](/assets/images/edu/engineer/kit1/engineer_edu_metarials.png)
+![](/assets/images/edu/engineer/kit1/engineer_edu_metarials_kr.png)
 
 # [소프트웨어 다운로드](#소프트웨어-다운로드)
 
