@@ -75,28 +75,28 @@ The Motion files are not backward compatible, but lower version files can be con
 
     ![](/assets/images/sw/rplus_task3_en/task3_002.png)
 
-2. Programming Tab
+2. Programming Tab  
   The following image shows the task code programming screen, which provides programming toolbar, source view, outline menu, device and download menu.
 
     ![](/assets/images/sw/rplus_task3_en/task3_003.png)
 
-3. Debugging Tab
+3. Debugging Tab  
   The following image shows task code debugging screen, which provides the output monitor and virtual remote controller functions.
 
     ![](/assets/images/sw/rplus_task3_en/task3_004.png)
 
-4. Motion Unit Tab
+4. Motion Unit Tab  
   User can select the example motion or create custom motion in User Robot Project.
 
     ![](/assets/images/sw/rplus_task3_en/task3_002.png)  
     ![](/assets/images/sw/rplus_task3_en/task3_005.png)
 
-5. Motion Tab
+5. Motion Tab  
   User can select motion units play them.
 
     ![](/assets/images/sw/rplus_task3_en/task3_006.png)
 
-6. Motion Download Tab
+6. Motion Download Tab  
   Selected motions can be downloaded to the controllers in this tab.
 
     ![](/assets/images/sw/rplus_task3_en/task3_007.png)

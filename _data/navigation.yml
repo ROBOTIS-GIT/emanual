@@ -14278,10 +14278,11 @@ kit1:
       titlekr: "퓨즈 교체하기"
       url: /edu/engineer/kit1/#fuse-replacement
       urlkr: /edu/engineer/kit1/#퓨즈-교체하기
-    - title: "How to Reset"
-      titlekr: "초기화 하기"
-      url: /edu/engineer/kit1/#how-to-reset
-      urlkr: /edu/engineer/kit1/#초기화-하기
+  
+  #  - title: "How to Reset"
+  #    titlekr: "초기화 하기"
+  #    url: /edu/engineer/kit1/#how-to-reset
+  #    urlkr: /edu/engineer/kit1/#초기화-하기
 
 #ROBOTIS MINI sidebar
 mini:
