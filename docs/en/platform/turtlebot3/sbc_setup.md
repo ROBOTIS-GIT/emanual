@@ -30,8 +30,6 @@ page_number: 8
 
 ### [Raspberry Pi 3](#raspberry-pi-3)
 
-### [Raspberry Pi 3](#raspberry-pi-3)
-
 {% capture info_01 %}
 **NOTE**: Use either of 3 ways to install Linux and ROS on Raspberry Pi 3
 1. For Ubuntu Mate installation, read `Install Linux (Ubuntu MATE)` guide. Be sure to install ROS and dependency packages after installing the Linux images on SBC of TurtleBot. The instruction takes about 1 hour to install ROS and related packages for TurtleBot3.
@@ -41,8 +39,7 @@ page_number: 8
 <div class="notice--info">{{ info_01 | markdownify }}</div>
 
 {% capture info_02 %}
-**NOTE**: Raspberry Pi 3 B+ is available in TurtleBot3 Burger and Waffle Pi. If you use Raspberry Pi 3 B+, please refer to the following.  
-- For Ubuntu MATE, it does not support the Raspberry Pi B+. So the first method described above can not be used. Instead, we recommend using a second method `Install Linux based on Raspbian` below.
+**NOTE**: Raspberry Pi 3 B+ is available in TurtleBot3 Burger and Waffle Pi. If you use Raspberry Pi 3 B+, please refer to the following.
 {% endcapture %}
 <div class="notice--info">{{ info_02 | markdownify }}</div>
 
