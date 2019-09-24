@@ -41,7 +41,8 @@ page_number: 8
 <div class="notice--info">{{ info_01 | markdownify }}</div>
 
 {% capture info_02 %}
-**NOTE**: Raspberry Pi 3 B+ is available in TurtleBot3 Burger and Waffle Pi. If you use Raspberry Pi 3 B+, please refer to the following.
+**NOTE**: Raspberry Pi 3 B+ is available in TurtleBot3 Burger and Waffle Pi. If you use Raspberry Pi 3 B+, please refer to the following.  
+- For Ubuntu MATE, it does not support the Raspberry Pi B+. So the first method described above can not be used. Instead, we recommend using a second method `Install Linux based on Raspbian` below.
 {% endcapture %}
 <div class="notice--info">{{ info_02 | markdownify }}</div>
 
