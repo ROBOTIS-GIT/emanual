@@ -31,9 +31,10 @@ page_number: 8
 ### [Raspberry Pi 3](#raspberry-pi-3)
 
 {% capture info_01 %}
-**NOTE**: There are two ways to install Linux and ROS to Raspberry Pi 3. 
+**NOTE**: There are three ways to install Linux and ROS to Raspberry Pi 3. 
 - First method: If you prefer Ubuntu MATE, please take the first method `Install Linux (Ubuntu MATE)` below. This method should install the ROS and dependency packages after installing the Linux images. This instruction takes about 1 hours to install ROS and related packages for TurtleBot3.
-- Second method: We provide the Linux distro image based on Raspbian. They are pre-installed with ROS and ROS-packages related TurtleBot3. It is available immediately without additional installation. If you want to use it, please take the second method `Install Linux based on Raspbian` below. 
+- Second method: We provide the Linux distro image based on Raspbian. They are pre-installed with ROS and ROS-packages related TurtleBot3. It is available immediately without additional installation. If you want to use it, please take the second method `Install Linux (Raspbian)` below. 
+- Third method: If you want to use the `webOS Robotics Platform`, please refer to the `Install Linux (webOS Robotics Platform)` below. When using webOS Robotics Platform, there is no need to compile packages natively on the TurtleBot 3. Instead, they are cross-compiled using OpenEmbedded on a higher performing PC running Ubuntu 18.04 and an image file created from them.
 {% endcapture %}
 <div class="notice--info">{{ info_01 | markdownify }}</div>
 
@@ -43,9 +44,11 @@ page_number: 8
 {% endcapture %}
 <div class="notice--info">{{ info_02 | markdownify }}</div>
 
-  - [Install Linux (Ubuntu MATE)][install_linux_ubuntu_mate]
+  - [1. Install Linux (Ubuntu MATE)][install_linux_ubuntu_mate]
 
-  - [Install Linux based on Raspbian][install_linux_based_on_raspbian]
+  - [2. Install Linux (Raspbian)][install_linux_based_on_raspbian]
+
+  - [3. Install Linux (webOS Robotics Platform)](https://github.com/ros/meta-ros/wiki/OpenEmbedded-Build-Instructions)
 
 ### [Intel Joule 570x](#intel-joule-570x)
 
