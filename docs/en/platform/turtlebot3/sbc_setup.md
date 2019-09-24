@@ -42,7 +42,6 @@ page_number: 8
 
 {% capture info_02 %}
 **NOTE**: Raspberry Pi 3 B+ is available in TurtleBot3 Burger and Waffle Pi. If you use Raspberry Pi 3 B+, please refer to the following.
-- As Ubuntu MATE does not support the Raspberry Pi B+, do not follow `Install Linux (Ubuntu MATE)` guide. Instead, we recommend to follow `Install Linux based on Raspbian` guide.
 {% endcapture %}
 <div class="notice--info">{{ info_02 | markdownify }}</div>
 
