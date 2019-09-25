@@ -67,7 +67,7 @@ $ pip install --ignore-installed --upgrade https://storage.googleapis.com/tensor
 [Keras](https://keras.io/) is a high-level neural networks API, written in Python and capable of running on top of TensorFlow.
 
 ``` bash
-$ pip install keras
+$ pip install keras==2.1.5
 ```
 
 ### [Machine Learning packages](#machine-learning-packages)
