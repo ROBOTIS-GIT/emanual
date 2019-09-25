@@ -19,7 +19,7 @@ page_number: 5
 
 모션 파일에는 로봇을 움직이고 다운로드하기 위한 여러 정보가 포함되며 데이터 구조는 아래 그림과 같습니다.
 
-![](/assets/images/sw/rplus2/motion/motion_5.gif)
+![](/assets/images/sw/rplus_task3_kr/motion_construction.png)
 
 1. 키-프레임  
 기존의 모션 스텝(Motion Step)과 유사한 개념으로 로봇의 연속적인 움직임을 표현하기 위해 특징적인 자세를 재생하고 싶은 시점에 저장한 단위를 말합니다.  

@@ -5,7 +5,7 @@ ref: kit1_main
 read_time: true
 share: true
 author_profile: false
-permalink: /engineer
+permalink: /docs/en/edu/engineer/kit1_main
 sidebar:
   title: "ENGINEER KIT1"
   nav: "kit1_main"

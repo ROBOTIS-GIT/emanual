@@ -19,7 +19,7 @@ page_number: 5
 
 The motion file includes position data of each joint to move the robot, and the data structure of a motion file is described in the image below.
 
-![](/assets/images/sw/rplus_task3/motion_5_en.png)
+![](/assets/images/sw/rplus_task3/motion_construction.png)
 
 1. Key-Frame  
 It is a combination of pose and time on timeline, to express WHAT (pose) to show WHEN (time). For example, if a `Hello` pose is saved at the Key-Frame on 13 second in the timeline, the robot will start to move into the `Hello` pose as the timeline approaches 13 seconds.
