@@ -15,7 +15,7 @@ page_number: 1
 
 # [개요](#개요)
 
-![](/assets/images/sw/rplus_task3/task3_001.png)
+![](/assets/images/sw/rplus_task3_kr/task3_001.png)
 
 - **태스크**
   어떤 일을 처리하기 위한 행동들의 집합을 태스크(Task)라고 합니다. 로봇이 해야 할 태스크를 프로그래밍 한 소스를 로보플러스(RoboPlus)에서는 태스크 코드(Task Code)라고 합니다. 로봇은 사용자가 작성한 태스크 코드에 따라 동작하게 되며, 이러한 태스크 코드를 쉽게 작성할 수 있도록 도와주는 것이 로보플러스 태스크(RoboPlus Task) 프로그램입니다. 태스크 코드 파일은 PC(혹은 스마트폰)에서 .tsk3라는 확장자를 가집니다 
@@ -54,34 +54,34 @@ page_number: 1
 1. 홈 탭  
   프로그램 시작 시 첫 화면으로 기본 예제, 파일 관련 메뉴, 업데이트, 설정 메뉴를 포함합니다.
 
-    ![](/assets/images/sw/rplus_task3/task3_002.png)
+    ![](/assets/images/sw/rplus_task3_kr/task3_002.png)
 
 2. 프로그래밍 탭  
   태스크 소스 코드를 편집하는 영역으로 프로그래밍 툴바, 소스뷰, 아웃라인 메뉴, 다운로드 기능을 제공합니다.
 
-    ![](/assets/images/sw/rplus_task3/task3_003.png)
+    ![](/assets/images/sw/rplus_task3_kr/task3_003.png)
 
 3. 디버깅 탭  
   태스크 코드를 디버깅하기 위한 영역으로 출력 모니터, 가상리모컨 기능을 제공합니다. (사용자 편의를 위해 자동 연결기능이 추가되었습니다.)
 
-    ![](/assets/images/sw/rplus_task3/task3_004.png)
+    ![](/assets/images/sw/rplus_task3_kr/task3_004.png)
 
 4. 모션유닛 탭  
   모션 예제를 선택하거나 자유 형태 로봇 모션을 만들 수 있는 화면입니다.
 
-    ![](/assets/images/sw/rplus_task3/task3_002.png)  
+    ![](/assets/images/sw/rplus_task3_kr/task3_002.png)  
 
-    ![](/assets/images/sw/rplus_task3/task3_005.png)
+    ![](/assets/images/sw/rplus_task3_kr/task3_005.png)
 
 5. 모션 탭  
   모션 유닛을 선택해서 재생해 볼 수 있는 화면입니다.
 
-    ![](/assets/images/sw/rplus_task3/task3_006.png)
+    ![](/assets/images/sw/rplus_task3_kr/task3_006.png)
 
 6. 모션 다운로드 탭  
   저장된 모션을 선택적으로 다운로드 할 수 있는 화면입니다.
 
-    ![](/assets/images/sw/rplus_task3/task3_007.png)
+    ![](/assets/images/sw/rplus_task3_kr/task3_007.png)
 
 
 [제어기 호환표]: /docs/kr/parts/controller/controller_compatibility/
