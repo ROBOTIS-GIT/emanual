@@ -761,7 +761,7 @@ Tensor Flow installation can be done in two simple steps.
 {% capture edu_application %}
 Additional course materials can be downloaded from below link.
 
-- [**Request Additional Course Materials**](https://www.robotis.com/pdf_project/register.php)
+- [**Request Additional Course Materials**](http://en.robotis.com/pdf_project/register.php)
 {% endcapture %}
 <div class="notice--info">{{ edu_application | markdownify }}</div>
 
