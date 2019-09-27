@@ -150,7 +150,7 @@ R+ SMART and R+IoT aren't released yet.
 |    [DYNAMIXEL Wizard 2.0]     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              X               |      X      |    X     |
 | [ROBOTIS Manipulator library] |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              X               |      X      |    O     |
 | [Embeded SDK(CM-510/530/700)] |   X    |    X    |    X     |    X     |    X     |    O     |    O     |    X     |    O     |    X     |              X               |      X      |    X     |
-|          Arduino IDE          |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              O               |      O      |    O     |
+|          Arduino IDE          |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              O               |      X      |    O     |
 
 {% capture etc %}
 - Users can build their own manipulator with ROBOTIS Manipulator library offerd by ROBOTIS.
