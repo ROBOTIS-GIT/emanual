@@ -426,5 +426,5 @@ Please follow the procedure below to recover or update the ROBOTIS MINI’s cont
 ![](/assets/images/edu/mini/mini_027.jpg)
 
 
-[OpenCM9.04]: /docs/en/parts/controller/opencm904/
-[XL-320]: /docs/en/dxl/x/xl320/
+[OpenCM9.04]: /docs/en/parts/controller/opencm904.md
+[XL-320]: /docs/en/dxl/x/xl320.md
