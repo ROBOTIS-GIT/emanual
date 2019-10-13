@@ -377,7 +377,7 @@ This parameter is descripted on open_manipulator_x.cpp in open_manipulator_x_lib
 Load OpenMANIPULATOR-X on RViz.
 
 ``` bash
-$ ros2 launch open_manipulator_x_description open_manipulator_x_rviz2.launch.py 
+$ ros2 launch open_manipulator_x_description open_manipulator_x_rviz.launch.py 
 ```
 
 {% capture notice_01 %}
