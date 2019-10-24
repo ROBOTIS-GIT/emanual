@@ -24,8 +24,8 @@ page_number: 2
 * ID = 1
 * Baudrate = 2 Mbps
 
-장치의 컨트롤 테이블 값을 변경하기 위해서는 윈도우의 경우 [R+ Manager 2.0](http://emanual.robotis.com/docs/en/software/rplus2/manager/) 을
-사용할 수 있으며, 리눅스의 경우 Dynamixel SDK 에 예제 중 [DXL Monitor](http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/sample_code/cpp_dxl_monitor/#cpp-dxl-monitor) 를 사용할 수 있음.
+**팁** : 장치의 컨트롤 테이블 값을 변경하기 위해서, [R+ Manager 2.0] (윈도우) 또는 [다이나믹셀 위자드 2.0] (윈도우, 리눅스, 맥OS)을 사용하세요.
+{: .notice--success}
 
 ## [통신포트 설정](#통신포트-설정)
 윈도우의 경우 예제의 통신 포트가 기본값으로 "**COM4**"로 되어 있음.  
@@ -213,3 +213,6 @@ $ rosrun rh_p12_rn_gui rh_p12_rn_gui
 ![img](/assets/images/platform/rh_p12_rn/ros_example_current_mode.png)
 
 각 입력란의 동작은 윈도우/리눅스 예제와 동일함.
+
+[R+ Manager 2.0]: /docs/kr/software/rplus2/manager/
+[다이나믹셀 위자드 2.0]: /docs/kr/software/dynamixel/dynamixel_wizard2/

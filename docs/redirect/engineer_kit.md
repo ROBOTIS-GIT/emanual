@@ -9,7 +9,7 @@ sidebar:
 ---
 
 # [English](#english)
-English version is available [here](/docs/en/edu/engineer/kit1/).
+English version is available at [here](/docs/en/edu/engineer/kit1/).
 {: .notice--success}
 
 # [Korea](#korea)
