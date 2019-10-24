@@ -675,7 +675,7 @@ Tensor Flow installation can be done in two simple steps.
     ![](/assets/images/edu/engineer/kit1/obj_classification_image_01.png)
 
  {% capture notice_01 %}
- **NOTICE** :  
+ **NOTE** :  
   - To reduce errors of recognizing objects, `001 dummy` folder will be useful to scan unspecified objects.
   - Train your **ROBOTIS ENGINEER** with sufficient images. The more it is, the better performance it is. (Collecting 100 images will be enough for recognizing objectes)
   -  To organize folders in order, specify them with a number `001`, `002`, `etc..`
@@ -713,7 +713,7 @@ Tensor Flow installation can be done in two simple steps.
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_application_04.png)
 
-    **NOTICE** : If there is your own project, you can skip 3rd step of this instruction. 
+    **NOTE** : If there is your own project, you can skip 3rd step of this instruction. 
     {: .notice--info}
 
 4. Create a `Db` folder to store training files.  

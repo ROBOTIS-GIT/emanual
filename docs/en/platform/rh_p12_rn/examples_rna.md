@@ -1,15 +1,15 @@
 ---
 layout: archive
 lang: en
-ref: rh_p12_rn_examples
+ref: rh_p12_rna_examples
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/rh_p12_rn/examples/
+permalink: /docs/en/platform/rh_p12_rna/examples/
 sidebar:
-  title: RH-P12-RN
-  nav: "rh_p12_rn"
-product_group: rh_p12_rn
+  title: RH-P12-RN(A)
+  nav: "rh_p12_rna"
+product_group: rh_p12_rna
 page_number: 2
 ---
 
@@ -17,9 +17,9 @@ page_number: 2
 
 # [Examples](#examples)
 
-## [Device Setup(RH-P12-RN)](#device-setuprh-p12-rn)
+## [Device Setup(RH-P12-RN(A))](#device-setuprh-p12-rna)
 
-In order to run the example, RH-P12-RN should be set as belows.
+In order to run the example, RH-P12-RN(A) should be set as belows.
 * ID = 1
 * Baudrate = 2 Mbps
 
