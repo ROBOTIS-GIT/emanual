@@ -28,7 +28,7 @@ It is a combination of pose and time on timeline, to express WHAT (pose) to show
 
 2. Motion Unit  
 It is a group of Key-Frames placed in the timeline to show a continuous movement.  
-As seen on the image below the `Salute` motion unit has the `Salute Start` Key-Frame on 11.2 second, and `Salute End` Key-Frame on 13.2 second. The continuous movement (Motion Unit) will be a Salute motion.
+As seen on the image below the `Salute` motion unit has the `Salute` Key-Frame on 11.2 second, and `Salute End` Key-Frame on 13.2 second. The continuous movement (Motion Unit) will be a Salute motion.
 
     ![](/assets/images/sw/rplus_task3/motion_keyframe_02.png)
 
@@ -37,6 +37,12 @@ Motion is a group of Motion Units to express long movements, such a dancing moti
 As seen in the image below, the `MartialArt` Motion is a link (group) of the Motion Units `MartialArtReady`, `MartialArt`, and `InitPose`.
 
     ![](/assets/images/sw/rplus_task3/motion_keyframe_03.png)
+
+
+    - `Green Arrow` is the button to insert another **Motion Unit** to be played back after the current Motion Unit.  
+    - `Red Arrow` is the button to insert a **Exit Motion Unit** that is played when a current Motion Unit is interrupted by a particular command, parameter or etc.  
+    - More information is available at [Edit Motion](#edit-motion)
+    {: .notice--success}
 
 4. Motion Group  
 Users must select the specific Motions to download to the robot, while checking the available space on the robot.  
@@ -179,7 +185,7 @@ This section will describe how to insert the Motion Units in an empty Motion, an
 
 5. Double-click on the inserted Motion Unit to change it into a different Motion Unit, or change the Play Parameters.
 6. Double-click on the `Green Arrow` to insert another Motion Unit to be played back after the current Motion Unit.
-7. Double-click on the `Red Arrow` to insert a Motion Unit to be played where there is an interruption.
+7. Double-click on the `Red Arrow` to insert a Exit Motion Unit that is played when a current Motion Unit is interrupted by a particular command, parameter or etc.
 
     ![](/assets/images/sw/rplus_task3/motion_edit_05.png)
 

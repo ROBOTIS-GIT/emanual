@@ -131,6 +131,11 @@ The data structure of a motion file is described in the image below.
 
     ![](/assets/images/sw/rplus2/motion/roboplus_motion_011.gif)
 
+    - `Green Arrow` is the button to insert another **Motion Unit** to be played back after the current Motion Unit.  
+    - `Pink Arrow` is the button to insert a **Exit Motion Unit** that is played when a current Motion Unit is interrupted by a particular command, parameter or etc.  
+    - More information is available at [Edit Motion](#edit-motion)
+    {: .notice--success}
+
 4. Motion Group  
     File size is unlimited in Motion 2.0. So, when downloading to the robot, users must select the specific Motions they want to download to the robot, while checking the space available on the robot.  
     The list comprised of the selected Motions is called the “Motion Group”. The bar on the right displays the amount of space the Motion Group will take up on the robot’s controller.  
@@ -337,8 +342,8 @@ This section will describe how to insert the Motion Units in an empty Motion, an
     ![](/assets/images/sw/rplus2/motion/roboplus_motion_044.gif)
 
 5. Double-click on the inserted Motion Unit to change it into a different Motion Unit, or change the Play Parameters.
-6. Double-click on the “Green Arrow” to insert another Motion Unit to be played back after the current Motion Unit.
-7. Double-click on the “Pink Arrow” to insert a Motion Unit to be played where there is an interruption.
+6. Double-click on the `Green Arrow` to insert another Motion Unit to be played back after the current Motion Unit.
+7. Double-click on the `Pink Arrow` to insert a **Exit Motion Unit** that is played when a current Motion Unit is interrupted by a particular command, parameter or etc.
 
     ![](/assets/images/sw/rplus2/motion/roboplus_motion_045.gif)
 

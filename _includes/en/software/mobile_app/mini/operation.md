@@ -20,6 +20,14 @@ Below are the functions of each button.
 **NOTE** : When the robot is playing a motion, all other motions except the `Stop Motion` will be ignored.
 {: .notice}
 
+{% capture mini_button_01 %}
+**TIP** : You can create (or edit) the motion button using the follow Motion Index Number. 
+- Motion Index Number number **0** only plays a current Motion Unit. 
+- Motion Index Number number **-1** stops a current Motion Unit in Motion and plays an Exit Motion Unit.
+- More information on Key-Frame, Motion Unit and Motion is available at [Motion Data](/docs/en/software/rplus2/motion//#motion-data)
+{% endcapture %}
+<div class="notice--success">{{ mini_button_01 | markdownify }}</div>
+
 ### Control with Buttons
 In order to Add/Edit/Delete/Arrange buttons, use the `Edit` tab.
 
