@@ -171,15 +171,23 @@ Reads the output value of the user-created sensor.
 - Only specific controllers support motion control. (Supported controllers : [CM-200], [CM-5], [CM-510], [CM-530], [CM-550], [CM-700], [OpenCM 9.04])
 
 #### Motion Index Number
-Executes a motion by calling the corresponding Motion index number. If the Motion is being executed, you can read the current Motion index number.
+Executes a motion by calling the corresponding Motion Index Number. If the Motion is being executed, you can read the current Motion Index Number.
 
 ![](/assets/images/sw/rplus_task3/motion_control_namelist.png)
 
 ![](/assets/images/sw/rplus_task3/motion_control_namelist_2.png)
 
-The following is an example of using the Motion index number.
+The following is an example of using the Motion Index Number.
 
 ![](/assets/images/sw/rplus_task3/task3_090.png)
+
+- Motion Index Number number **0** only plays a current Motion Unit. 
+- Motion Index Number number **-1** stops a current Motion Unit in Motion and plays an Exit Motion Unit.  
+- Motion Index Number number **-2** plays a next Key-Frame in Motion Unit after a current Key-Frame runs (Only [CM-550]). 
+- Motion Index Number number **-3** stops a current Key-Frame immediately (Only [CM-550]). 
+ 
+The more information on Key-Frame, Motion Unit and Motion is avilable at [Motion Programming](/docs/en/software/rplustask3/motion_programming/#motion-programming)
+{: .notice}
 
 #### Motion Status
 Returns True if motion is being executed, returns False if motion is not being executed.
