@@ -744,7 +744,7 @@ Use **reset all** command.
 
 ### <a name="clonezilla-recovery"></a>[Clonezilla Recovery](#clonezilla-recovery)
 
-You can recover the operating system in DARWIN-OP via Clonezilla. The recovery software is the same as the factory-default preinstalled with DARWIN-OP.
+You can recover the operating system in DARWIN-OP via Clonezilla. The recovery software is the same as the factory-default installed with DARWIN-OP.
 
 **NOTE** : Download the recovery image from [here](http://sourceforge.net/projects/darwinop/files/Software/Main%20Controller/Recovery%20USB/)
 {: .notice}

@@ -1,11 +1,17 @@
 ---
-layout: redirect
-lang: kr
-ref: redirect_engineer_kit
+layout: archive
+lang: en
+ref: kit1_main
 permalink: /engineer/
-redirecturl: /docs/kr/edu/engineer/kit1/
+sidebar:
+  title: "ENGINEER KIT1"
+  nav: "kit1_main"
 ---
 
-<br><br><br><br><br><br>
-# 페이지 이동
-브라우저가 자동으로 페이지 이동하지 않는 경우 [여기]({{ page.redirecturl }})를 누르시면 이동합니다.
+# [English](#english)
+English version is available [here](/docs/en/edu/engineer/kit1/).
+{: .notice--success}
+
+# [Korea](#korea)
+한국어 사용자는 [한글 매뉴얼](/docs/kr/edu/engineer/kit1/)을 참조하세요.
+{: .notice--success}

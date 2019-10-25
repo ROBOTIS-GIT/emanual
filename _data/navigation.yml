@@ -370,9 +370,11 @@ main:
       - title: "ROBOTIS GP"
         titlekr: "ROBOTIS GP"
         url: /edu/bioloid/gp/
-    - titlekr: "로보티즈 엔지니어"
+    - title: "ROBOTIS ENGINEER"
+      titlekr: "로보티즈 엔지니어"
       children:
-      - titlekr: "키트 1"
+      - title: "Kit 1"
+        titlekr: "키트 1"
         url: /edu/engineer/kit1/
     - title: "ROBOTIS MINI"
       titlekr: "로보티즈 미니"
@@ -439,7 +441,8 @@ main:
       - title: "R+ Scratch"
         titlekr: "로보플러스 스크래치"
         url: /software/rplus2/scratch/
-    - titlekr: "로보플러스 태스크 3.0"
+    - title: "R+ Task 3.0"
+      titlekr: "로보플러스 태스크 3.0"
       url: /software/rplustask3/
     - title: "R+ Mobile"
       titlekr: "로보플러스 모바일"
@@ -508,7 +511,8 @@ main:
       - title: "CM-530"
         titlekr: "CM-530"
         url: /parts/controller/cm-530/
-      - titlekr: "CM-550"
+      - title: "CM-550"
+        titlekr: "CM-550"
         url: /parts/controller/cm-550/
       - title: "CM-700"
         titlekr: "CM-700"
@@ -14176,109 +14180,153 @@ bioloid-gp:
       urlkr: /edu/bioloid/gp/#사용자-센서-제작
 
 
+kit1_main:
+  - title: "English"
+    url: /edu/engineer/kit1_main/#english
+  - title: "Korea"
+    url: /edu/engineer/kit1_main/#korea
+    
 #ROBOTIS ENGINEER KIT sidebar
 kit1:
-  - titlekr: "개요"
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /edu/engineer/kit1/#introduction
     urlkr: /edu/engineer/kit1/#개요
     children:
-    - titlekr: "부품 목록"
+    - title: "Parts List"
+      titlekr: "부품 목록"
+      url: /edu/engineer/kit1/#parts-list
       urlkr: /edu/engineer/kit1/#부품-목록
       children:
-      - titlekr: "CM-550 제어기"
+      - title: "CM-550 Controller"
+        titlekr: "CM-550 제어기"
+        url: /edu/engineer/kit1/#cm-550-controller
         urlkr: /edu/engineer/kit1/#cm-550-제어기
-      - titlekr: "2XL430 다이나믹셀"
+      - title: "2XL430-W250 DYNAMIXEL"
+        titlekr: "2XL430-W250 다이나믹셀"
+        url: /edu/engineer/kit1/#2xl430-w250-dynamixel
         urlkr: /edu/engineer/kit1/#2xl430-다이나믹셀
-    - titlekr: "주의사항"
+    - title: "Cautions"
+      titlekr: "주의사항"
+      url: /edu/engineer/kit1/#cautions
       urlkr: /edu/engineer/kit1/#주의사항
       children:
-      - titlekr: "안전에 대한 주의사항"
+      - title: "Safety Precautions"
+        titlekr: "안전에 대한 주의사항"
+        url: /edu/engineer/kit1/#safety-precautions
         urlkr: /edu/engineer/kit1/#안전에-대한-주의사항
-      - titlekr: "사용상 주의사항"
+      - title: "Precautions on Use"
+        titlekr: "사용상 주의사항"
+        url: /edu/engineer/kit1/#precautions-on-use
         urlkr: /edu/engineer/kit1/#사용상-주의사항
-      - titlekr: "충전기/충전지 사용시 주의사항"
+      - title: "Precautions on Battery"
+        titlekr: "충전기/충전지 사용시 주의사항"
+        url: /edu/engineer/kit1/#precautions-on-battery
         urlkr: /edu/engineer/kit1/#충전기충전지-사용시-주의사항
-      - titlekr: "조립시 주의사항"
+      - title: "Assembly Precautions"
+        titlekr: "조립시 주의사항"
+        url: /edu/engineer/kit1/#assembly-precautions
         urlkr: /edu/engineer/kit1/#조립시-주의사항
-  - titlekr: "작동하기"
+  - title: "Quick Start"
+    titlekr: "작동하기"
+    url: /edu/engineer/kit1/#quick-start
     urlkr: /edu/engineer/kit1/#작동하기
     children:
-    - titlekr: "앱 설치하기"
+    - title: "App Installation"
+      titlekr: "앱 설치하기"
+      url: /edu/engineer/kit1/#app-installation
       urlkr: /edu/engineer/kit1/#앱-설치하기
-    - titlekr: "블루투스 연결하기"
+    - title: "Pairing Bluetooth"
+      titlekr: "블루투스 연결하기"
+      url: /edu/engineer/kit1/#pairing-bluetooth
       urlkr: /edu/engineer/kit1/#블루투스-연결하기
-    - titlekr: "예제 다운로드"
+    - title: "Download Examples"
+      titlekr: "예제 다운로드"
+      url: /edu/engineer/kit1/#download-examples
       urlkr: /edu/engineer/kit1/#예제-다운로드
       children:
-      - titlekr: "PC에서 예제 다운로드"
+      - title: "Download from PC"
+        titlekr: "PC에서 예제 다운로드"
+        url: /edu/engineer/kit1/#download-from-pc
         urlkr: /edu/engineer/kit1/#pc에서-예제-다운로드
-        children:
-          - titlekr: "태스크 다운로드 (PC)"
-            urlkr: /edu/engineer/kit1/#태스크-다운로드-pc
-          - titlekr: "모션 다운로드 (PC)"
-            urlkr: /edu/engineer/kit1/#모션-다운로드-pc
-      - titlekr: "스마트 기기에서 예제 다운로드"
+      - title: "Download from Smart Device"
+        titlekr: "스마트 기기에서 예제 다운로드"
+        url: /edu/engineer/kit1/#download-from-smart-device
         urlkr: /edu/engineer/kit1/#스마트-기기에서-예제-다운로드
-        children:
-          - titlekr: "태스크 다운로드 (스마트 기기)"
-            urlkr: /edu/engineer/kit1/#태스크-다운로드-스마트-기기
-          - titlekr: "모션 다운로드 (스마트 기기)"
-            urlkr: /edu/engineer/kit1/#모션-다운로드-스마트-기기
-    - titlekr: "예제 실행하기"
+    - title: "Run Examples"
+      titlekr: "예제 실행하기"
+      url: /edu/engineer/kit1/#run-examples
       urlkr: /edu/engineer/kit1/#예제-실행하기
       children:
-      - titlekr: "Dr.R"
+      - title: "Dr.R"
+        titlekr: "Dr.R"
+        url: /edu/engineer/kit1/#drr
         urlkr: /edu/engineer/kit1/#drr
-      - titlekr: "MAX-E1"
+      - title: "MAX-E1"
+        titlekr: "MAX-E1"
+        url: /edu/engineer/kit1/#max-e1
         urlkr: /edu/engineer/kit1/#max-e1
-      - titlekr: "SPI"
+      - title: "SPI"
+        titlekr: "SPI"
+        url: /edu/engineer/kit1/#spi
         urlkr: /edu/engineer/kit1/#spi
-    - titlekr: "로봇 설정하기"
+    - title: "Setting Up the Robot"
+      titlekr: "로봇 설정하기"
+      url: /edu/engineer/kit1/#setting-up-the-robot
       urlkr: /edu/engineer/kit1/#로봇-설정하기
       children:
-      - titlekr: "모터 조립확인"
+      - title: "Check DYNAMIXEL Assembly"
+        titlekr: "모터 조립확인"
+        url: /edu/engineer/kit1/#check-dynamixel-assembly
         urlkr: /edu/engineer/kit1/#모터-조립확인
-      - titlekr : "모터 오프셋 설정"
+      - title: "DYNAMIXEL Offset"
+        titlekr : "모터 오프셋 설정"
+        url: /edu/engineer/kit1/#dynamixel-offset
         urlkr: /edu/engineer/kit1/#모터-오프셋-설정
-  - titlekr: "튜토리얼"
+  - title: "Tutorials"
+    titlekr: "튜토리얼"
+    url: /edu/engineer/kit1/#tutorials
     urlkr: /edu/engineer/kit1/#튜토리얼
     children:
-      - titlekr: "머신러닝 기반의 사물인식"
-        urlkr: /edu/engineer/kit1/#머신러닝-기반의-사물인식
-        children:
-          - titlekr: "윈도우즈"
-            urlkr: /edu/engineer/kit1/#윈도우즈
-            children:
-            - titlekr: "pip패키지 업그레이드"
-              urlkr: /edu/engineer/kit1/#pip패키지-업그레이드
-            - titlekr: "폴더생성"
-              urlkr: /edu/engineer/kit1/#폴더생성
-            - titlekr: "아나콘다 가상실행 환경 만들기"
-              urlkr: /edu/engineer/kit1/#아나콘다-가상실행-환경-만들기
-            - titlekr: "TensorFlow 설치하기"
-              urlkr: /edu/engineer/kit1/#tensorflw-설치하기
-            - titlekr: "필요 파일 및 폴더 생성"
-              urlkr: /edu/engineer/kit1/#필요-파일-및-폴더-생성
-            - titlekr: "이미지 학습"
-              urlkr: /edu/engineer/kit1/#이미지-학습
-            - titlekr: "프로젝트에 학습 파일 적용하기"
-              urlkr: /edu/engineer/kit1/#프로젝트에-학습파일-적용하기
-  - titlekr: "교육자료 다운로드"
+    - title: "[Machine Learning] Object Detection"
+      titlekr: "머신러닝 기반의 사물인식"
+      url: /edu/engineer/kit1/#machine-learning-object-detection
+      urlkr: /edu/engineer/kit1/#머신러닝-기반의-사물인식
+  - title: "Study Materials"
+    titlekr: "교육자료 다운로드"
+    url: /edu/engineer/kit1/#study-materials
     urlkr: /edu/engineer/kit1/#교육자료-다운로드
-  - titlekr: "소프트웨어 다운로드"
+  - title: "Download Softwares"
+    titlekr: "소프트웨어 다운로드"
+    url: /edu/engineer/kit1/#download-softwares
     urlkr: /edu/engineer/kit1/#소프트웨어-다운로드
-  - titlekr: "참고자료"
+  - title: "References"
+    titlekr: "참고자료"
+    url: /edu/engineer/kit1/#references
     urlkr: /edu/engineer/kit1/#참고자료
     children:
-    - titlekr: "제어기 BLE 신호 세기 설정"
+    - title: "BLE Signal Setting"
+      titlekr: "제어기 BLE 신호 세기 설정"
+      url: /edu/engineer/kit1/#ble-signal-setting
       urlkr: /edu/engineer/kit1/#제어기-ble-신호-세기-설정
-    - titlekr: "점검 및 자가진단"
+    - title: "Self Checklist"
+      titlekr: "점검 및 자가진단"
+      url: /edu/engineer/kit1/#self-checklist
       urlkr: /edu/engineer/kit1/#점검-및-자가진단
-    - titlekr: "배터리 충전하기"
+    - title: "Charging Battery"
+      titlekr: "배터리 충전하기"
+      url: /edu/engineer/kit1/#charging-battery
       urlkr: /edu/engineer/kit1/#배터리-충전하기
-    - titlekr: "충전지 잔량 확인하기"
+    - title: "Battery Level Check"
+      titlekr: "충전지 잔량 확인하기"
+      url: /edu/engineer/kit1/#battery-level-check
       urlkr: /edu/engineer/kit1/#충전지-잔량-확인하기
-    - titlekr: "퓨즈 교체하기"
+    - title: "Fuse Replacement"
+      titlekr: "퓨즈 교체하기"
+      url: /edu/engineer/kit1/#fuse-replacement
       urlkr: /edu/engineer/kit1/#퓨즈-교체하기
+    - titlekr: "도면"
+      urlkr: /edu/engineer/kit1/#도면
 
 #ROBOTIS MINI sidebar
 mini:
@@ -15835,6 +15883,8 @@ turtlebot3:
   - title: "Learn"
     url: /platform/turtlebot3/learn/#learn
     children:
+    - title: "AWS RoboMaker with TurtleBot3"
+      url: /platform/turtlebot3/learn/#aws-robomaker-with-turtlebot3
     - title: "The Construct"
       url: /platform/turtlebot3/learn/#the-construct
     - title: "TurtleBot3 Blockly"
@@ -15859,8 +15909,6 @@ turtlebot3:
       url: /platform/turtlebot3/projects/#turtlebot3-collaboration-project
     - title: "TurtleBot3 Awesome Projects"
       url: /platform/turtlebot3/projects/#turtlebot3-awesome-projects
-    - title: "AWS RoboMaker with TurtleBot3"
-      url: /platform/turtlebot3/projects_aws_robomaker/#turtlebot3-aws-robomaker
   - title: "Challenges"
     url: /platform/turtlebot3/challenges/#challenges
     children:
@@ -15979,7 +16027,8 @@ openmanipulator:
     url: /platform/openmanipulator_main/#openmanipulator-x
   - title : "OpenMANIPULATOR-PRO"
     url: /platform/openmanipulator_main/#openmanipulator-pro
-#OpenMANIPULATOR-X
+    
+#OpenMANIPULATOR-X sidebar
 openmanipulator_x:
   - title: "Overview"
     url: /platform/openmanipulator_x/overview/#overview
@@ -16001,8 +16050,6 @@ openmanipulator_x:
         url: /platform/openmanipulator_x/specification/#hardware-specification
       - title: "Dimension"
         url: /platform/openmanipulator_x/specification/#dimension
-#      - title: "Repeatability"
-#        url: /platform/openmanipulator_x/specification/#repeatability
   - title: "Getting Started"
     url: /platform/openmanipulator_x/getting_started/#getting-started
     children:
@@ -16104,6 +16151,80 @@ openmanipulator_x:
             url: /platform/openmanipulator_x/ros_applications/#install-package
           - title: "Execute Example"
             url: /platform/openmanipulator_x/ros_applications/#execute-example
+  - title: "[ROS 2] Setup"
+    url: /platform/openmanipulator_x/ros2_setup/#ros-setup
+    children:
+      - title: "Install Ubuntu on PC"
+        url: /platform/openmanipulator_x/ros2_setup/#install-ubuntu-on-pc
+      - title: "Install ROS 2 on PC"
+        url: /platform/openmanipulator_x/ros2_setup/#install-ros-2-on-pc
+      - title: "Install ROS 2 Packages"
+        url: /platform/openmanipulator_x/ros2_setup/#install-ros-2-packages
+      - title: "Communication Converter"
+        url: /platform/openmanipulator_x/ros2_setup/#communication-converter
+        children:
+          - title: "U2D2"
+            url: /platform/openmanipulator_x/ros2_setup/#u2d2
+          - title: "OpenCR"
+            url: /platform/openmanipulator_x/ros2_setup/#opencr
+  - title: "[ROS 2] Controller Package"
+    url: /platform/openmanipulator_x/ros2_controller_package/#ros-controller-package
+    children:
+      - title: "Launch Controller"
+        url: /platform/openmanipulator_x/ros2_controller_package/#launch-controller
+      - title: "Check Setting"
+        url: /platform/openmanipulator_x/ros2_controller_package/#check-setting
+        children:
+          - title: "Manipulator Description"
+            url: /platform/openmanipulator_x/ros2_controller_package/#manipulator-description
+          - title: "RViz"
+            url: /platform/openmanipulator_x/ros2_controller_package/#rviz
+      - title: "Message List"
+        url: /platform/openmanipulator_x/ros2_controller_package/#message-list
+  - title: "[ROS 2] Operation"
+    url: /platform/openmanipulator_x/ros2_operation/#ros-operation
+    children:
+      - title: "GUI Program"
+        url: /platform/openmanipulator_x/ros2_operation/#gui-program
+      - title: "Teleoperation"
+        url: /platform/openmanipulator_x/ros2_operation/#teleoperation
+        children:
+          - title: "Keyboard"
+            url: /platform/openmanipulator_x/ros2_operation/#keyboard
+          - title: "PS4 Joystick"
+            url: /platform/openmanipulator_x/ros2_operation/#ps4-joystick
+          - title: "XBOX 360 Joystick"
+            url: /platform/openmanipulator_x/ros2_operation/#xbox-360-joystick
+      - title: "MoveIt!"
+        url: /platform/openmanipulator_x/ros2_operation/#moveit
+  - title: "[ROS 2] Simulation"
+    url: /platform/openmanipulator_x/ros2_simulation/#ros-simulation
+    #children:
+    #  - title: "Launch gazebo"
+    #    url: /platform/openmanipulator_x/ros2_simulation/#launch-gazebo
+    #  - title: "Controller for gazebo"
+    #    url: /platform/openmanipulator_x/ros2_simulation/#controller-for-gazebo
+  - title: "[ROS 2] Applications"
+    url: /platform/openmanipulator_x/ros2_applications/#ros-applications
+    #children:
+    #  - title: "Camera Application"
+    #    url: /platform/openmanipulator_x/ros2_applications/#camera-application
+    #    children:
+    #      - title: "Install Camera Package"
+    #        url: /platform/openmanipulator_x/ros2_applications/#install-camera-package
+    #      - title: "Install AR Marker Package"
+    #        url: /platform/openmanipulator_x/ros2_applications/#install-ar-marker-package
+    #      - title: "Pick and Place Example"
+    #        url: /platform/openmanipulator_x/ros2_applications/#pick-and-place-example
+    #  - title: "Master Slave"
+    #    url: /platform/openmanipulator_x/ros2_applications/#master-slave
+    #    children:
+    #      - title: "Setup of OpenMANIPULATOR-X"
+    #        url: /platform/openmanipulator_x/ros2_applications/#setup-of-openmanipulator-x
+    #      - title: "Install Package"
+    #        url: /platform/openmanipulator_x/ros2_applications/#install-package
+    #      - title: "Execute Example"
+    #        url: /platform/openmanipulator_x/ros2_applications/#execute-example
   - title: "[OpenCR] Setup"
     url: /platform/openmanipulator_x/opencr_setup/#opencr-setup
     children:
@@ -16151,7 +16272,7 @@ openmanipulator_x:
         url: /platform/openmanipulator_x/friends/#openmanipulator-stewart
       - title: "OpenMANIPULATOR Linear"
         url: /platform/openmanipulator_x/friends/#openmanipulator-linear
-
+        
 #OpenManipulator-PRO
 openmanipulator_pro:
   - title: "Overview"
@@ -16199,6 +16320,11 @@ openmanipulator_pro:
             url: /platform/openmanipulator_pro/ros_setup/#ros-kinetic-kame
           - title: "ROS Melodic Morenia"
             url: /platform/openmanipulator_pro/ros_setup/#ros-melodic-morenia
+      - title: "Communication Converter"
+        url: /platform/openmanipulator_pro/ros_setup/#communication-converter
+        children:
+          - title: "U2D2"
+            url: /platform/openmanipulator_pro/ros_setup/#u2d2
       - title: "Install ROS Packages"
         url: /platform/openmanipulator_pro/ros_setup/#install-ros-package
         children:
@@ -16265,7 +16391,50 @@ openmanipulator_pro:
                 url: /platform/openmanipulator_pro/ros_tool_applications/#launch-gazebo
               - title: "Controller for Gazebo"
                 url: /platform/openmanipulator_pro/ros_tool_applications/#controller-for-gazebo
-
+  - title: "[ROS 2] Setup"
+    url: /platform/openmanipulator_pro/ros2_setup/#ros-setup
+    children:
+      - title: "Install Ubuntu on PC"
+        url: /platform/openmanipulator_pro/ros2_setup/#install-ubuntu-on-pc
+      - title: "Install ROS 2 on PC"
+        url: /platform/openmanipulator_pro/ros2_setup/#install-ros-2-on-pc
+      - title: "Install ROS 2 Packages"
+        url: /platform/openmanipulator_pro/ros2_setup/#install-ros-2-packages
+      - title: "Communication Converter"
+        url: /platform/openmanipulator_pro/ros2_setup/#communication-converter
+        children:
+          - title: "U2D2"
+            url: /platform/openmanipulator_pro/ros2_setup/#u2d2
+  - title: "[ROS 2] Controller Package"
+    url: /platform/openmanipulator_pro/ros2_controller_package/#ros-controller-package
+    children:
+      - title: "Launch Controller"
+        url: /platform/openmanipulator_pro/ros2_controller_package/#launch-controller
+      - title: "Check Setting"
+        url: /platform/openmanipulator_pro/ros2_controller_package/#check-setting
+        children:
+          - title: "RViz"
+            url: /platform/openmanipulator_pro/ros2_controller_package/#rviz
+      - title: "Message List"
+        url: /platform/openmanipulator_pro/ros2_controller_package/#message-list
+  - title: "[ROS 2] Operation"
+    url: /platform/openmanipulator_pro/ros2_operation/#ros-operation
+    children:
+      - title: "GUI Program"
+        url: /platform/openmanipulator_pro/ros2_operation/#gui-program
+      - title: "Teleoperation"
+        url: /platform/openmanipulator_pro/ros2_operation/#teleoperation
+      - title: "MoveIt!"
+        url: /platform/openmanipulator_pro/ros2_operation/#moveit
+  - title: "[ROS 2] Simulation"
+    url: /platform/openmanipulator_pro/ros2_simulation/#ros-simulation
+  #  children:
+  #    - title: "Launch gazebo"
+  #      url: /platform/openmanipulator_pro/ros2_simulation/#launch-gazebo
+  #    - title: "Controller for gazebo"
+  #      url: /platform/openmanipulator_pro/ros2_simulation/#controller-for-gazebo
+  - title: "[ROS 2] Tool Applications"
+    url: /platform/openmanipulator_pro/ros2_tool_applications    
 #Manipulator-H
 manipulator_h:
   - title: "Introduction"
@@ -16893,9 +17062,9 @@ rplustask1:
         urlkr: /software/rplus1/task/task_misc/#화면출력-화면출력-후-줄바꿈읽기
       - titlekr: "제스처 인식(읽기/쓰기)"
         urlkr: /software/rplus1/task/task_misc/#제스처-인식읽기쓰기
-  - title: "Miscellenous"
+  - title: "Miscellaneous"
     titlekr: "기타 정보"
-    url: /software/rplus1/task/task_misc/#miscellenous
+    url: /software/rplus1/task/task_misc/#miscellaneous
     urlkr: /software/rplus1/task/task_misc/#기타-정보
     children:
     - title: "Select Controller"
@@ -17583,9 +17752,9 @@ rplustask2:
         titlekr: "로드"
         url: /software/rplus2/task/#load
         urlkr: /software/rplus2/task/#로드
-      - title: "Lable/Jump"
+      - title: "Label/Jump"
         titlekr: "레이블/점프"
-        url: /software/rplus2/task/#lablejump
+        url: /software/rplus2/task/#labeljump
         urlkr: /software/rplus2/task/#레이블점프
     - title: "Condition"
       titlekr: "조건문"
@@ -17698,7 +17867,7 @@ rplustask3:
     url: /software/rplustask3/#introduction
     urlkr: /software/rplustask3/#개요
     children:
-    - title: "Compatible Products"
+    - title: "Compatible Controllers"
       titlekr: "호환 제어기"
       url: /software/rplustask3/#compatible-controllers
       urlkr: /software/rplustask3/#호환-제어기
@@ -17762,285 +17931,288 @@ rplustask3:
       urlkr: /software/rplustask3/task_programming/#프로그램-출력보기
   - title: "Task Instructions"
     titlekr: "태스크 명령어"
-    url: /software/rplustask3/task_programming/#task-instructions
-    urlkr: /software/rplustask3/task_programming/#태스크-명령어
+    url: /software/rplustask3/task_instructions/#task-instructions
+    urlkr: /software/rplustask3/task_instructions/#태스크-명령어
     children:
     - title: "Start/End"
       titlekr: "시작과 끝"
-      url: /software/rplustask3/task_programming/#startend
-      urlkr: /software/rplustask3/task_programming/#시작과-끝
+      url: /software/rplustask3/task_instructions/#startend
+      urlkr: /software/rplustask3/task_instructions/#시작과-끝
       children:
       - title: "Start Program"
         titlekr: "프로그램 시작"
-        url: /software/rplustask3/task_programming/#start-program
-        urlkr: /software/rplustask3/task_programming/#프로그램-시작
+        url: /software/rplustask3/task_instructions/#start-program
+        urlkr: /software/rplustask3/task_instructions/#프로그램-시작
       - title: "End Program"
         titlekr: "프로그램 끝"
-        url: /software/rplustask3/task_programming/#end-program
-        urlkr: /software/rplustask3/task_programming/#프로그램-끝
+        url: /software/rplustask3/task_instructions/#end-program
+        urlkr: /software/rplustask3/task_instructions/#프로그램-끝
       - title: "Begin Block / End Block"
         titlekr: "구간 시작 / 구간 끝"
-        url: /software/rplustask3/task_programming/#begin-block--end-block
-        urlkr: /software/rplustask3/task_programming/#구간-시작구간-끝
+        url: /software/rplustask3/task_instructions/#begin-block--end-block
+        urlkr: /software/rplustask3/task_instructions/#구간-시작--구간-끝
       - title: "Comment"
         titlekr: "주석"
-        url: /software/rplustask3/task_programming/#comment
-        urlkr: /software/rplustask3/task_programming/#주석
+        url: /software/rplustask3/task_instructions/#comment
+        urlkr: /software/rplustask3/task_instructions/#주석
     - title: "Execute"
       titlekr: "실행문"
-      url: /software/rplustask3/task_programming/#execute
-      urlkr: /software/rplustask3/task_programming/#실행문
+      url: /software/rplustask3/task_instructions/#execute
+      urlkr: /software/rplustask3/task_instructions/#실행문
       children:
       - title: "Compute"
         titlekr: "계산"
-        url: /software/rplustask3/task_programming/#compute
-        urlkr: /software/rplustask3/task_programming/#계산
+        url: /software/rplustask3/task_instructions/#compute
+        urlkr: /software/rplustask3/task_instructions/#계산
       - title: "Load"
         titlekr: "로드"
-        url: /software/rplustask3/task_programming/#load
-        urlkr: /software/rplustask3/task_programming/#로드
-      - title: "Math Expression"
+        url: /software/rplustask3/task_instructions/#load
+        urlkr: /software/rplustask3/task_instructions/#로드
+      - title: "Polynomial"
         titlekr: "다중 수식"
-        url: /software/rplustask3/task_programming/#math-expression
-        urlkr: /software/rplustask3/task_programming/#다중-수식
-      - title: "Lable/Jump"
+        url: /software/rplustask3/task_instructions/#polynomial
+        urlkr: /software/rplustask3/task_instructions/#다중-수식
+      - title: "Label/Jump"
         titlekr: "레이블/점프"
-        url: /software/rplustask3/task_programming/#lablejump
-        urlkr: /software/rplustask3/task_programming/#레이블점프
+        url: /software/rplustask3/task_instructions/#labeljump
+        urlkr: /software/rplustask3/task_instructions/#레이블점프
     - title: "Condition"
       titlekr: "조건문"
-      url: /software/rplustask3/task_programming/#condition
-      urlkr: /software/rplustask3/task_programming/#조건문
+      url: /software/rplustask3/task_instructions/#condition
+      urlkr: /software/rplustask3/task_instructions/#조건문
       children:
-      - title: "Conditional Clause?"
+      - title: "Conditional Clause"
         titlekr: "조건절이란?"
-        url: /software/rplustask3/task_programming/#conditional-clause
-        urlkr: /software/rplustask3/task_programming/#조건절이란
+        url: /software/rplustask3/task_instructions/#conditional-clause
+        urlkr: /software/rplustask3/task_instructions/#조건절이란
       - title: "If"
         titlekr: "만약"
-        url: /software/rplustask3/task_programming/#if
-        urlkr: /software/rplustask3/task_programming/#만약
+        url: /software/rplustask3/task_instructions/#if
+        urlkr: /software/rplustask3/task_instructions/#만약
       - title: "Else If"
         titlekr: "아니면 만약"
-        url: /software/rplustask3/task_programming/#else-if
-        urlkr: /software/rplustask3/task_programming/#아니면-만약
+        url: /software/rplustask3/task_instructions/#else-if
+        urlkr: /software/rplustask3/task_instructions/#아니면-만약
       - title: "Else"
         titlekr: "아니면"
-        url: /software/rplustask3/task_programming/#else
-        urlkr: /software/rplustask3/task_programming/#아니면
+        url: /software/rplustask3/task_instructions/#else
+        urlkr: /software/rplustask3/task_instructions/#아니면
     - title: "Loop"
       titlekr: "반복문"
-      url: /software/rplustask3/task_programming/#loop
-      urlkr: /software/rplustask3/task_programming/#반복문
+      url: /software/rplustask3/task_instructions/#loop
+      urlkr: /software/rplustask3/task_instructions/#반복문
       children:
       - title: "Endless Loop"
         titlekr: "무조건 반복"
-        url: /software/rplustask3/task_programming/#endless-loop
-        urlkr: /software/rplustask3/task_programming/#무조건-반복
+        url: /software/rplustask3/task_instructions/#endless-loop
+        urlkr: /software/rplustask3/task_instructions/#무조건-반복
       - title: "Loop While"
         titlekr: "조건 반복"
-        url: /software/rplustask3/task_programming/#loop-while
-        urlkr: /software/rplustask3/task_programming/#조건-반복
+        url: /software/rplustask3/task_instructions/#loop-while
+        urlkr: /software/rplustask3/task_instructions/#조건-반복
       - title: "Loop For"
         titlekr: "횟수 반복"
-        url: /software/rplustask3/task_programming/#loop-for
-        urlkr: /software/rplustask3/task_programming/#횟수-반복
+        url: /software/rplustask3/task_instructions/#loop-for
+        urlkr: /software/rplustask3/task_instructions/#횟수-반복
       - title: "Wait While"
         titlekr: "조건 대기"
-        url: /software/rplustask3/task_programming/#wait-while
-        urlkr: /software/rplustask3/task_programming/#조건-대기
+        url: /software/rplustask3/task_instructions/#wait-while
+        urlkr: /software/rplustask3/task_instructions/#조건-대기
       - title: "Break Loop"
         titlekr: "반복 끝내기"
-        url: /software/rplustask3/task_programming/#break-loop
-        urlkr: /software/rplustask3/task_programming/#반복-끝내기
+        url: /software/rplustask3/task_instructions/#break-loop
+        urlkr: /software/rplustask3/task_instructions/#반복-끝내기
     - title: "Function(Sub-Routine)"
       titlekr: "함수(서브루틴)"
-      url: /software/rplustask3/task_programming/#functionsub-routine
-      urlkr: /software/rplustask3/task_programming/#함수서브루틴
+      url: /software/rplustask3/task_instructions/#functionsub-routine
+      urlkr: /software/rplustask3/task_instructions/#함수서브루틴
       children:
       - title: "Function/Call"
         titlekr: "함수/호출"
-        url: /software/rplustask3/task_programming/#functioncall
-        urlkr: /software/rplustask3/task_programming/#함수호출
+        url: /software/rplustask3/task_instructions/#functioncall
+        urlkr: /software/rplustask3/task_instructions/#함수호출
       - title: "Return"
         titlekr: "복귀"
-        url: /software/rplustask3/task_programming/#return
-        urlkr: /software/rplustask3/task_programming/#복귀
+        url: /software/rplustask3/task_instructions/#return
+        urlkr: /software/rplustask3/task_instructions/#복귀
       - title: "Callback"
         titlekr: "콜백"
-        url: /software/rplustask3/task_programming/#callback
-        urlkr: /software/rplustask3/task_programming/#콜백
+        url: /software/rplustask3/task_instructions/#callback
+        urlkr: /software/rplustask3/task_instructions/#콜백
   - title: "Task Parameters"
     titlekr: "태스크 파라미터"
-    url: /software/rplustask3/task_programming/#task-parameters
-    urlkr: /software/rplustask3/task_programming/#태스크-파라미터
+    url: /software/rplustask3/task_parameters/#task-parameters
+    urlkr: /software/rplustask3/task_parameters/#태스크-파라미터
     children:
-    - title: "Port Nickname"
-      titlekr: "포트 닉네임 변경"
-      url: /software/rplustask3/task_programming/#port-nickname
-      urlkr: /software/rplustask3/task_programming/#포트-닉네임-변경
-    - title: "Controllers"
+    - title: "Controller Device"
       titlekr: "제어기 장치"
-      url: /software/rplustask3/task_programming/#controllers
-      urlkr: /software/rplustask3/task_programming/#제어기-장치
+      url: /software/rplustask3/task_parameters/#controller-device
+      urlkr: /software/rplustask3/task_parameters/#제어기-장치
       children:
-      - title: ""
+      - title: "Accessory Device"
         titlekr: "주변 장치"
-        url: /software/rplustask3/task_programming/#
-        urlkr: /software/rplustask3/task_programming/#주변-장치
-      - title: ""
+        url: /software/rplustask3/task_parameters/#accessory-device
+        urlkr: /software/rplustask3/task_parameters/#주변-장치
+      - title: "Motion Control"
         titlekr: "모션 제어"
-        url: /software/rplustask3/task_programming/#
-        urlkr: /software/rplustask3/task_programming/#모션-제어
-      - title: ""
+        url: /software/rplustask3/task_parameters/#motion-control
+        urlkr: /software/rplustask3/task_parameters/#모션-제어
+      - title: "Built-in Sensor"
         titlekr: "내장 센서"
-        url: /software/rplustask3/task_programming/#
-        urlkr: /software/rplustask3/task_programming/#내장-센서
-      - title: ""
+        url: /software/rplustask3/task_parameters/#built-in-sensor
+        urlkr: /software/rplustask3/task_parameters/#내장-센서
+      - title: "Buzzer"
         titlekr: "버저"
-        url: /software/rplustask3/task_programming/#
-        urlkr: /software/rplustask3/task_programming/#버저
-      - title: ""
+        url: /software/rplustask3/task_parameters/#buzzer
+        urlkr: /software/rplustask3/task_parameters/#버저
+      - title: "Remote Controller"
         titlekr: "리모컨"
-        url: /software/rplustask3/task_programming/#
-        urlkr: /software/rplustask3/task_programming/#리모컨
-      - title: ""
+        url: /software/rplustask3/task_parameters/#remote-controller
+        urlkr: /software/rplustask3/task_parameters/#리모컨
+      - title: "Timer"
         titlekr: "타이머"
-        url: /software/rplustask3/task_programming/#
-        urlkr: /software/rplustask3/task_programming/#타이머
-      - title: ""
+        url: /software/rplustask3/task_parameters/#timer
+        urlkr: /software/rplustask3/task_parameters/#타이머
+      - title: "Miscellaneous"
         titlekr: "기타"
-        url: /software/rplustask3/task_programming/#
-        urlkr: /software/rplustask3/task_programming/#제어기-기타
-      - title: ""
+        url: /software/rplustask3/task_parameters/#controller-miscellaneous
+        urlkr: /software/rplustask3/task_parameters/#제어기-기타
+      - title: "Custom"
         titlekr: "직접 입력"
-        url: /software/rplustask3/task_programming/#
-        urlkr: /software/rplustask3/task_programming/#제어기-직접-입력
+        url: /software/rplustask3/task_parameters/#controller-custom
+        urlkr: /software/rplustask3/task_parameters/#제어기-직접-입력
     - title: "DYNAMIXEL Device"
       titlekr: "다이나믹셀 장치"
-      url: /software/rplustask3/task_programming/#dynamixel-device
-      urlkr: /software/rplustask3/task_programming/#다이나믹셀-장치
+      url: /software/rplustask3/task_parameters/#dynamixel-device
+      urlkr: /software/rplustask3/task_parameters/#다이나믹셀-장치
       children:
       - title: "DYNAMIXEL"
         titlekr: "다이나믹셀"
-        url: /software/rplustask3/task_programming/#dynamixel
-        urlkr: /software/rplustask3/task_programming/#다이나믹셀
+        url: /software/rplustask3/task_parameters/#dynamixel
+        urlkr: /software/rplustask3/task_parameters/#다이나믹셀
       - title: "SyncWrite"
         titlekr: "SyncWrite"
-        url: /software/rplustask3/task_programming/#syncwrite
-        urlkr: /software/rplustask3/task_programming/#syncwrite
-      - title: ""
-        titlekr: "적외선 센서 어레이"
-        url: /software/rplustask3/task_programming/#
-        urlkr: /software/rplustask3/task_programming/#적외선-센서-어레이
-      - title: ""
+        url: /software/rplustask3/task_parameters/#syncwrite
+        urlkr: /software/rplustask3/task_parameters/#syncwrite
+      - title: "IR Array Sensor"
+        titlekr: "적외선 어레이 센서"
+        url: /software/rplustask3/task_parameters/#ir-array-sensor
+        urlkr: /software/rplustask3/task_parameters/#적외선-어레이-센서
+      - title: "Custom"
         titlekr: "직접 입력"
-        url: /software/rplustask3/task_programming/#
-        urlkr: /software/rplustask3/task_programming/#다이나믹셀-장치-직접-입력
-    - titlekr: "스마트 장치"
-      urlkr: /software/rplustask3/task_programming/#스마트-장치
+        url: /software/rplustask3/task_parameters/#dynamixel-custom
+        urlkr: /software/rplustask3/task_parameters/#다이나믹셀-장치-직접-입력
+    - title: "Smart Device"
+      titlekr: "스마트 장치"
+      url: /software/rplustask3/task_parameters/#smart-device
+      urlkr: /software/rplustask3/task_parameters/#스마트-장치
       children:
-      - title: ""
+      - title: "Camera"
         titlekr: "카메라"
-        url: /software/rplustask3/task_programming/#
-        urlkr: /software/rplustask3/task_programming/#카메라
-      - title: ""
+        url: /software/rplustask3/task_parameters/#camera
+        urlkr: /software/rplustask3/task_parameters/#카메라
+      - title: "Vision"
         titlekr: "비전"
-        url: /software/rplustask3/task_programming/#
-        urlkr: /software/rplustask3/task_programming/#비전
-      - title: ""
+        url: /software/rplustask3/task_parameters/#vision
+        urlkr: /software/rplustask3/task_parameters/#비전
+      - title: "Display"
         titlekr: "표시"
-        url: /software/rplustask3/task_programming/#
-        urlkr: /software/rplustask3/task_programming/#표시
-      - title: ""
+        url: /software/rplustask3/task_parameters/#display
+        urlkr: /software/rplustask3/task_parameters/#표시
+      - title: "Multimedia"
         titlekr: "멀티미디어"
-        url: /software/rplustask3/task_programming/#
-        urlkr: /software/rplustask3/task_programming/#멀티미디어
-      - title: ""
+        url: /software/rplustask3/task_parameters/#multimedia
+        urlkr: /software/rplustask3/task_parameters/#멀티미디어
+      - title: "Sensors"
         titlekr: "센서"
-        url: /software/rplustask3/task_programming/#
-        urlkr: /software/rplustask3/task_programming/#센서
-      - title: ""
+        url: /software/rplustask3/task_parameters/#sensors
+        urlkr: /software/rplustask3/task_parameters/#센서
+      - title: "Miscellaneous"
         titlekr: "기타"
-        url: /software/rplustask3/task_programming/#
-        urlkr: /software/rplustask3/task_programming/#스마트-장치-기타
-      - title: ""
+        url: /software/rplustask3/task_parameters/#smart-device-miscellaneous
+        urlkr: /software/rplustask3/task_parameters/#스마트-장치-기타
+      - title: "SmartUserData"
         titlekr: "사용자 데이터"
-        url: /software/rplustask3/task_programming/#
-        urlkr: /software/rplustask3/task_programming/#사용자-데이터
-      - title: ""
+        url: /software/rplustask3/task_parameters/#smartuserdata
+        urlkr: /software/rplustask3/task_parameters/#사용자-데이터
+      - title: "Custom"
         titlekr: "직접 입력"
-        url: /software/rplustask3/task_programming/#
-        urlkr: /software/rplustask3/task_programming/#스마트-장치-직접-입력
+        url: /software/rplustask3/task_parameters/#smart-device-custom
+        urlkr: /software/rplustask3/task_parameters/#스마트-장치-직접-입력
     - title: "Common"
       titlekr: "공통"
-      url: /software/rplustask3/task_programming/#common
-      urlkr: /software/rplustask3/task_programming/#공통
+      url: /software/rplustask3/task_parameters/#common
+      urlkr: /software/rplustask3/task_parameters/#공통
       children:
-      - title: ""
+      - title: "Variable"
         titlekr: "변수"
-        url: /software/rplustask3/task_programming/#
-        urlkr: /software/rplustask3/task_programming/#변수
-      - title: ""
+        url: /software/rplustask3/task_parameters/#variable
+        urlkr: /software/rplustask3/task_parameters/#변수
+      - title: "Number"
         titlekr: "숫자"
-        url: /software/rplustask3/task_programming/#
-        urlkr: /software/rplustask3/task_programming/#숫자
-      - title: ""
+        url: /software/rplustask3/task_parameters/#number
+        urlkr: /software/rplustask3/task_parameters/#숫자
+      - title: "True/False"
         titlekr: "참/거짓"
-        url: /software/rplustask3/task_programming/#
-        urlkr: /software/rplustask3/task_programming/#참거짓
-      - title: ""
+        url: /software/rplustask3/task_parameters/#truefalse
+        urlkr: /software/rplustask3/task_parameters/#참거짓
+      - title: "Binary Number"
         titlekr: "2진수 숫자"
-        url: /software/rplustask3/task_programming/#
-        urlkr: /software/rplustask3/task_programming/#2진수-숫자
-      - title: ""
+        url: /software/rplustask3/task_parameters/#binary-number
+        urlkr: /software/rplustask3/task_parameters/#2진수-숫자
+      - title: "Motor Mode"
         titlekr: "모터 모드"
-        url: /software/rplustask3/task_programming/#
-        urlkr: /software/rplustask3/task_programming/#모터-모드
-    - title: ""
+        url: /software/rplustask3/task_parameters/#motor-mode
+        urlkr: /software/rplustask3/task_parameters/#모터-모드
+    - title: "Motion List"
       titlekr: "모션 목록"
-      url: /software/rplustask3/task_programming/#
-      urlkr: /software/rplustask3/task_programming/#모션-목록
+      url: /software/rplustask3/task_parameters/#motion-list
+      urlkr: /software/rplustask3/task_parameters/#모션-목록
   - title: "Motion Programming"
     titlekr: "모션 프로그래밍"
     url: /software/rplustask3/motion_programming/#motion-programming
     urlkr: /software/rplustask3/motion_programming/#모션-프로그래밍
     children:
-    - title: "Open Motion File"
+    - title: "Open Project"
       titlekr: "모션 예제 열기"
-      url: /software/rplustask3/motion_programming/#open-motion-file
+      url: /software/rplustask3/motion_programming/#open-project
       urlkr: /software/rplustask3/motion_programming/#모션-예제-열기
-    - title: ""
+    - title: "Connect to Robot"
       titlekr: "로봇 연결하기"
-      url: /software/rplustask3/motion_programming/#
+      url: /software/rplustask3/motion_programming/#connect-to-robot
       urlkr: /software/rplustask3/motion_programming/#로봇-연결하기
-    - title: ""
+    - title: "Create New Motion Unit"
       titlekr: "새 모션 유닛 만들기"
-      url: /software/rplustask3/motion_programming/#
+      url: /software/rplustask3/motion_programming/#create-new-motion-unit
       urlkr: /software/rplustask3/motion_programming/#새-모션-유닛-만들기
-    - title: ""
+    - title: "Edit Motion Unit"
       titlekr: "모션 유닛 편집하기"
-      url: /software/rplustask3/motion_programming/#
+      url: /software/rplustask3/motion_programming/#edit-motion-unit
       urlkr: /software/rplustask3/motion_programming/#모션-유닛-편집하기
-    - title: ""
+      children:
+      - title: "Using 3D Robot"
+        url: /software/rplustask3/motion_programming/#using-3d-robot
+      - title: "Using Actual Robot"
+        url: /software/rplustask3/motion_programming/#using-actual-robot
+    - title: "Create New Motion Group"
       titlekr: "새 모션 만들기"
-      url: /software/rplustask3/motion_programming/#
+      url: /software/rplustask3/motion_programming/#create-new-motion-group
       urlkr: /software/rplustask3/motion_programming/#새-모션-만들기
-    - title: ""
+    - title: "Edit Motion"
       titlekr: "모션 편집하기"
-      url: /software/rplustask3/motion_programming/#
+      url: /software/rplustask3/motion_programming/#edit-motion
       urlkr: /software/rplustask3/motion_programming/#모션-편집하기
-    - title: ""
+    - title: "Create New Motion Group"
       titlekr: "모션 그룹 만들기"
-      url: /software/rplustask3/motion_programming/#
+      url: /software/rplustask3/motion_programming/#create-new-motion-group
       urlkr: /software/rplustask3/motion_programming/#모션-그룹-만들기
-    - title: ""
+    - title: "Download Motion"
       titlekr: "모션 다운로드 하기"
-      url: /software/rplustask3/motion_programming/#
+      url: /software/rplustask3/motion_programming/#download-motion
       urlkr: /software/rplustask3/motion_programming/#모션-다운로드-하기
-    - title: ""
+    - title: "Save Motion"
       titlekr: "모션 저장하기"
-      url: /software/rplustask3/motion_programming/#
+      url: /software/rplustask3/motion_programming/#save-motion
       urlkr: /software/rplustask3/motion_programming/#모션-저장하기
   - title: "Useful Tips"
     titlekr: "유용한 정보"
@@ -18059,57 +18231,57 @@ rplustask3:
       titlekr: "문법검사/컴파일 결과 확인하기"
       url: /software/rplustask3/useful_tips/#grammarcompile-check
       urlkr: /software/rplustask3/useful_tips/#문법검사컴파일-결과-확인하기
-    - title: ""
+    - title: "Keyframe"
       titlekr: "키프레임"
-      url: /software/rplustask3/useful_tips/#
+      url: /software/rplustask3/useful_tips/#keyframe
       urlkr: /software/rplustask3/useful_tips/#키프레임
-    - title: ""
+    - title: "Play Music"
       titlekr: "음원재생"
-      url: /software/rplustask3/useful_tips/#
+      url: /software/rplustask3/useful_tips/#play-music
       urlkr: /software/rplustask3/useful_tips/#음원-재생
-    - title: ""
+    - title: "Create Custom Robot"
       titlekr: "자유 형태 로봇 생성"
-      url: /software/rplustask3/useful_tips/#
+      url: /software/rplustask3/useful_tips/#create-custom-robot
       urlkr: /software/rplustask3/useful_tips/#자유-형태-로봇-생성
-    - title: ""
+    - title: "Change 3D Robot"
       titlekr: "3D 로봇 변경"
-      url: /software/rplustask3/useful_tips/#
+      url: /software/rplustask3/useful_tips/#change-3d-robot
       urlkr: /software/rplustask3/useful_tips/#3d-로봇-변경
-    - title: ""
+    - title: "Pose Mirroring"
       titlekr: "포즈 미러링"
-      url: /software/rplustask3/useful_tips/#
+      url: /software/rplustask3/useful_tips/#pose-mirroring
       urlkr: /software/rplustask3/useful_tips/#포즈-미러링
-    - title: ""
+    - title: "Edit Motion Index Number"
       titlekr: "모션 호출 번호 수정"
-      url: /software/rplustask3/useful_tips/#
+      url: /software/rplustask3/useful_tips/#edit-motion-index-number
       urlkr: /software/rplustask3/useful_tips/#모션-호출-번호-수정
-    - title: ""
+    - title: "Copy Motion Data"
       titlekr: "모션 파일간 데이터 복사"
-      url: /software/rplustask3/useful_tips/#
+      url: /software/rplustask3/useful_tips/#copy-motion-data
       urlkr: /software/rplustask3/useful_tips/#모션-파일간-데이터-복사
-    - title: ""
+    - title: "Edit Offset"
       titlekr: "오프셋 편집"
-      url: /software/rplustask3/useful_tips/#
+      url: /software/rplustask3/useful_tips/#edit-offset
       urlkr: /software/rplustask3/useful_tips/#오프셋-편집
-    - title: ""
+    - title: "Convert Files"
       titlekr: "구 버전 파일 변환하기"
-      url: /software/rplustask3/useful_tips/#
+      url: /software/rplustask3/useful_tips/#convert-files
       urlkr: /software/rplustask3/useful_tips/#구-버전-파일mtn-변환하기
-    - title: ""
+    - title: "Control 3D Camera"
       titlekr: "3D 카메라 조작"
-      url: /software/rplustask3/useful_tips/#
+      url: /software/rplustask3/useful_tips/#control-3d-camera
       urlkr: /software/rplustask3/useful_tips/#3d-카메라-조작
-    - title: ""
+    - title: "Display Angle"
       titlekr: "화면에 각도 출력하기"
-      url: /software/rplustask3/useful_tips/#
+      url: /software/rplustask3/useful_tips/#display-angle
       urlkr: /software/rplustask3/useful_tips/#화면에-각도-출력하기
-    - title: ""
+    - title: "Background Image"
       titlekr: "배경이미지 지정"
-      url: /software/rplustask3/useful_tips/#
+      url: /software/rplustask3/useful_tips/#background-image
       urlkr: /software/rplustask3/useful_tips/#배경이미지-지정
-    - title: ""
+    - title: "Initial Pose"
       titlekr: "초기위치 이동"
-      url: /software/rplustask3/useful_tips/#
+      url: /software/rplustask3/useful_tips/#initial-pose
       urlkr: /software/rplustask3/useful_tips/#초기위치-이동
 
 
@@ -20565,13 +20737,21 @@ cm-550:
     url: /parts/controller/cm-550/#layout
     urlkr: /parts/controller/cm-550/#각-부-명칭
     children:
-    - titlekr: "전원 포트"
+    - title: "Battery Socket"
+      titlekr: "전원 포트"
+      url: /parts/controller/cm-550/#battery-socket
       urlkr: /parts/controller/cm-550/#전원-포트
-    - titlekr: "로보티즈 5핀 포트"
+    - title: "ROBOTIS 5 Pin Ports"
+      titlekr: "로보티즈 5핀 포트"
+      url: /parts/controller/cm-550/#robotis-5-pin-ports
       urlkr: /parts/controller/cm-550/#로보티즈-5핀-포트
-    - titlekr: "외부통신 포트"
+    - title: "Communication Port"
+      titlekr: "외부통신 포트"
+      url: /parts/controller/cm-550/#communication-port
       urlkr: /parts/controller/cm-550/#외부통신-포트
-    - titlekr: "다이나믹셀 포트"
+    - title: "DYNAMIXEL Port"
+      titlekr: "다이나믹셀 포트"
+      url: /parts/controller/cm-550/#dynamixel-port
       urlkr: /parts/controller/cm-550/#다이나믹셀-포트
   - title: "Connecting Power"
     titlekr: "전원 연결"
@@ -20582,29 +20762,51 @@ cm-550:
     url: /parts/controller/cm-550/#how-to-operate
     urlkr: /parts/controller/cm-550/#작동-방법
     children:
-    - titlekr: "전원 켜기"
+    - title: "Power Up"
+      titlekr: "전원 켜기"
+      url: /parts/controller/cm-550/#power-up
       urlkr: /parts/controller/cm-550/#전원-켜기
-    - titlekr: "시작"
+    - title: "Start"
+      titlekr: "시작"
+      url: /parts/controller/cm-550/#start
       urlkr: /parts/controller/cm-550/#시작
-    - titlekr: "종료"
+    - title: "Quit"
+      titlekr: "종료"
+      url: /parts/controller/cm-550/#quit
       urlkr: /parts/controller/cm-550/#종료
-    - titlekr: "동작 모드"
+    - title: "Operating Mode"
+      titlekr: "동작 모드"
+      url: /parts/controller/cm-550/#operating-mode
       urlkr: /parts/controller/cm-550/#동작-모드
       children:
-      - titlekr: "MANAGE"
+      - title: "MANAGE"
+        titlekr: "MANAGE"
+        url: /parts/controller/cm-550/#manage
         urlkr: /parts/controller/cm-550/#manage
-      - titlekr: "PLAY"
+      - title: "PLAY"
+        titlekr: "PLAY"
+        url: /parts/controller/cm-550/#play
         urlkr: /parts/controller/cm-550/#play
-      - titlekr: "BOOT LOADER"
+      - title: "BOOT LOADER"
+        titlekr: "BOOT LOADER"
+        url: /parts/controller/cm-550/#boot-loader
         urlkr: /parts/controller/cm-550/#boot-loader
-    - titlekr: "펌웨어 복구"
+    - title: "Firmware Recovery"
+      titlekr: "펌웨어 복구"
+      url: /parts/controller/cm-550/#firmware-recovery
       urlkr: /parts/controller/cm-550/#펌웨어-복구
-  - titlekr: "호환 소프트웨어"
+  - title: "Compatible Software"
+    titlekr: "호환 소프트웨어"
+    url: /parts/controller/cm-550/#compatible-software
     urlkr: /parts/controller/cm-550/#호환-소프트웨어
     children:
-    - titlekr: "로보플러스 매니저 2.0"
+    - title: "R+ Manager 2.0"
+      titlekr: "로보플러스 매니저 2.0"
+      url: /parts/controller/cm-550/#r-manager-20
       urlkr: /parts/controller/cm-550/#로보플러스-매니저-20
-    - titlekr: "로보플러스 태스크 3.0"
+    - title: "R+ Task 3.0"
+      titlekr: "로보플러스 태스크 3.0"
+      url: /parts/controller/cm-550/#r-task-30
       urlkr: /parts/controller/cm-550/#로보플러스-태스크-30
   - title: "Connect to PC"
     titlekr: "PC 연결"
@@ -20614,11 +20816,13 @@ cm-550:
     titlekr: "스마트 기기 연결"
     url: /parts/controller/cm-550/#connect-to-smart-device
     urlkr: /parts/controller/cm-550/#스마트-기기-연결
-  - title: "Charging"
+  - title: "Charging Battery"
     titlekr: "충전하기"
-    url: /parts/controller/cm-550/#charging
+    url: /parts/controller/cm-550/#charging-battery
     urlkr: /parts/controller/cm-550/#충전하기
-  - titlekr: "충전지 잔량 확인하기"
+  - title: "Battery Level Check"
+    titlekr: "충전지 잔량 확인하기"
+    url: /parts/controller/cm-550/#battery-level-check
     urlkr: /parts/controller/cm-550/#충전지-잔량-확인하기
   - title: "Fuse Replacement"
     titlekr: "퓨즈 교체하기"

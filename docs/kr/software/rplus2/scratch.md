@@ -84,7 +84,7 @@ sidebar:
 3. 추가한 블루투스는 다음과 같이 목록에 “Bluetooth Serial Port” 로 표시됩니다.  
   ![](/assets/images/sw/rplus2/scratch/r+scratch_6.jpg)
 
-## [스크래치 2.0 오프라인 에디터 설치](#스크래치-20-오프라인-에디터-설치)
+# [스크래치 2.0 오프라인 에디터 설치](#스크래치-20-오프라인-에디터-설치)
 
 스크래치 2.0 오프라인 에디터 다운로드 페이지 ([https://scratch.mit.edu/download/scratch2](https://scratch.mit.edu/download/scratch2))에서 Windows용 [스크래치 오프라인 에디터](https://scratch.mit.edu/scratchr2/static/sa/Scratch-461.exe)를 다운받아 설치합니다.
 
