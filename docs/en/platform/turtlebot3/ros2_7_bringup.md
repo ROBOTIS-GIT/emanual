@@ -27,6 +27,7 @@ page_number: 27
     **NOTE**: Please follow steps with **SBC in TurtleBot3**.
     {: .notice}
 
+    [TB3 PC]
     ```bash
     $ export TURTLEBOT3_MODEL=${TB3_MODEL}
     $ ros2 launch turtlebot3_bringup robot.launch.py
@@ -83,6 +84,7 @@ urdf_file_name : turtlebot3_burger.urdf
 [turtlebot3_ros-3] [INFO] [diff_drive_controller]: Run!
 ```
 3. After then, you can check topic and service list as shown below  
+
 **Topic**
 ```bash
 $ ros2 topic list
@@ -101,6 +103,7 @@ $ ros2 topic list
 /tf_static
 ```
 **Service List**
+
 ```bash
 $ ros2 service list
 /diff_drive_controller/describe_parameters
@@ -138,6 +141,8 @@ $ ros2 service list
 {: .notice--warning}
 
 1. Run `RViz2` on **remote PC**
+
+[TB3 PC]
 ```bash
 $ ros2 launch turtlebot3_bringup rviz2.launch.py
 ```
