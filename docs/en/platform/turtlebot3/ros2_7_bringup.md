@@ -19,21 +19,22 @@ page_number: 27
 
 ## [Bringup TurtleBot3](#bringup-turtlebot3)
 
-1. Launch a model of your TurtleBot3 including node of `robot_state_publisher` and `turtlebot3_node`.
+Launch a model of your TurtleBot3 including node of `robot_state_publisher` and `turtlebot3_node`.
 
-    **NOTE**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `burger`, `waffle`, `waffle_pi`. If you want to permanently set the export settings, please refer to [Export TURTLEBOT3_MODEL][export_turtlebot3_model]{: .popup} page.
-    {: .notice}
-    
-    **NOTE**: Please follow steps with **SBC in TurtleBot3**.
-    {: .notice}
+**NOTE**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `burger`, `waffle`, `waffle_pi`. If you want to permanently set the export settings, please refer to [Export TURTLEBOT3_MODEL][export_turtlebot3_model]{: .popup} page.
+{: .notice}
 
-    [TB3 PC]
-    ```bash
-    $ export TURTLEBOT3_MODEL=${TB3_MODEL}
-    $ ros2 launch turtlebot3_bringup robot.launch.py
-    ```
+**NOTE**: Please follow steps with **SBC in TurtleBot3**.
+{: .notice}
 
-2. If the node is successfully launched, the following instruction will appeared on the terminal window.
+**[TB3 PC]**
+```bash
+$ export TURTLEBOT3_MODEL=${TB3_MODEL}
+$ ros2 launch turtlebot3_bringup robot.launch.py
+```
+
+If the node is successfully launched, the following instruction will appeared on the terminal window.
+
 ```bash
 [INFO] [launch]: All log files can be found below /home/ubuntu/.ros/log/2019-08-19-01-24-19-009803-ubuntu-15310
 [INFO] [launch]: Default logging verbosity is set to INFO
@@ -83,7 +84,8 @@ urdf_file_name : turtlebot3_burger.urdf
 [turtlebot3_ros-3] [INFO] [diff_drive_controller]: Init Odometry
 [turtlebot3_ros-3] [INFO] [diff_drive_controller]: Run!
 ```
-3. After then, you can check topic and service list as shown below  
+
+After then, you can check topic and service list as shown below  
 
 **Topic**
 ```bash
@@ -135,14 +137,23 @@ $ ros2 service list
 /turtlebot3_node/set_parameters_atomically
 ```
 
-## [RViz2](#rviz2)
+## [Load a TurtleBot3 on Rviz2](#load-a-turtlebot3-on-rviz2)
 
-**WARNING** : Do not proceed to this instruction on SBC in TurtleBot3. Please follow steps with **Remote PC**.
+**[Remote PC]** Launch robot state publisher and Run RViz.
 {: .notice--warning}
 
-1. Run `RViz2` on **remote PC**
+**TIP**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `burger`, `waffle`, `waffle_pi`. If you want to permanently set the export settings, please refer to [Export TURTLEBOT3_MODEL][export_turtlebot3_model]{: .popup} page.
+{: .notice--success}
 
-[TB3 PC]
+Launch bringup on **TurtleBot3**
+
+``` bash
+$ export TURTLEBOT3_MODEL=${TB3_MODEL}
+$ roslaunch turtlebot3_bringup turtlebot3_remote.launch
+```
+
+Run `RViz2` on **remote PC**
+
 ```bash
 $ ros2 launch turtlebot3_bringup rviz2.launch.py
 ```

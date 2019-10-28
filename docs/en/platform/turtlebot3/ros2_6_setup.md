@@ -143,7 +143,7 @@ To communicate between **Remote PC** and **TurtleBot3**, install `Ubuntu Server 
 
 ### Example for Network Configuration
 
-[TB3 PC]
+**[TB3 PC]**
 1. Create a folder, and then open it with the following commands.
   ```bash
   $ sudo touch /etc/netplan/01-netcfg.yaml
@@ -151,7 +151,8 @@ To communicate between **Remote PC** and **TurtleBot3**, install `Ubuntu Server 
   ```
 
 2. After opening the file, configure a network setting. Refer to the network setting below.
-[TB3 PC]
+
+**[TB3 PC]**
 ```yaml
 network:
     version: 2
@@ -173,14 +174,17 @@ network:
 3. After configuration, remote PC can connect to a SBC in TurtleBot3 by following steps.
 
 4. Apply all configuration for the renderers, and then restart Raspberry Pi 3.
-[TB3 PC]
+
+**[TB3 PC]**
 ```bash
 $ sudo netplan apply
 $ reboot
 ```
 
 5. Set the `systemd` to prevent boot-up delay even if there is no network at startup. Run a command below to set mask the `systemd` process using the following command.
-[TB3 PC]
+
+**[TB3 PC]**
+
 ```bash
 $ systemctl mask systemd-networkd-wait-online.service
 ```
@@ -192,7 +196,8 @@ $ ssh ubuntu@<NETWORK IP of Raspberry PI>
 ```
 
 ### Add Swap Space
-[TB3 PC]
+
+**[TB3 PC]**
 1. Create a file while it will be used for swap
 ```bash
 $ sudo fallocate -l 1G /swapfile
@@ -237,7 +242,7 @@ As TurtleBot3 operates on Robot Operating System(ROS), it requies to intall `ROS
 
 - [ROS 2 Installation Guide](https://index.ros.org/doc/ros2/Installation/Dashing/Linux-Install-Debians/)
 
-[TB3 PC]
+**[TB3 PC]**
 1. Update and upgrade your software
 ```bash
 $ sudo apt update && sudo apt upgrade
@@ -265,7 +270,7 @@ $ sudo apt install ros-dashing-ros-base
 **WARNING** : Do not proceed to this instruction on remote PC. Please follow steps with **SBC in TurtleBot3**.
 {: .notice--warning}
 
-[TB3 PC]
+**[TB3 PC]**
 ```bash
 $ sudo apt install python3-argcomplete python3-colcon-common-extensions libboost-system-dev
 $ mkdir -p ~/turtlebot3_ws/src && cd ~/turtlebot3_ws/src
@@ -287,7 +292,7 @@ In DDS communication, `ROS_DOMAIN_ID` must be matched between **Remote PC** and 
 - A default ID of **TurtleBot3** is set as `0`.  
 - To configure the `ROS_DOMAIN_ID` of Remote PC and SBC in TurtleBot3 to `30` is recommendable.  
 
-[TB3 PC]
+**[TB3 PC]**
 ```bash
 $ echo 'source ~/turtlebot3_ws/install/setup.bash' >> ~/.bashrc
 $ echo 'export ROS_DOMAIN_ID=30 #TURTLEBOT3' >> ~/.bashrc
@@ -298,8 +303,9 @@ $ source ~/.bashrc
 
 #### OpenCR Port Setup
 
-Following commands show how to assign OpenCR port authorization to TurtleBot3.
-[TB3 PC]
+- Following commands show how to assign OpenCR port authorization to TurtleBot3.
+
+**[TB3 PC]**
 ```bash
 $ cd ~/turtlebot3_ws/src/turtlebot3/turtlebot3_bringup 
 $ sudo cp ./99-turtlebot3-cdc.rules /etc/udev/rules.d/ 
@@ -322,7 +328,9 @@ $ sudo udevadm trigger
 {: .notice--warning}
 
 ### Install Dependencies to Run 32bit Executables.
-[TB3 PC]
+
+**[TB3 PC]**
+
 ```bash
 $ sudo dpkg --add-architecture armhf
 $ sudo apt-get update
@@ -330,7 +338,9 @@ $ sudo apt-get install libc6:armhf
 ```
 
 ### Download OpenCR Binaries & Tools for Uploading.
-[TB3 PC]
+
+**[TB3 PC]**
+
 ```bash
 $ cd && rm -rf opencr_update.tar.bz2
 $ wget https://github.com/ROBOTIS-GIT/OpenCR-Binaries/raw/master/turtlebot3/ROS2/latest/opencr_update.tar.bz2
@@ -340,7 +350,9 @@ $ tar -xjf ./opencr_update.tar.bz2
 ### Upload ROS 2 Firmware of TurtleBot3 to OpenCR.
 
 #### For TurtleBot3 Burger.
-[TB3 PC]
+
+**[TB3 PC]**
+
 ```bash
 # Set a port for OpenCR 
 $ export OPENCR_PORT=/dev/ttyACM0
@@ -375,7 +387,9 @@ opencr_ld_main
 ```
 
 #### For TurtleBot3 Waffle and Waffle Pi.
-[TB3 PC]
+
+**[TB3 PC]**
+
 ```bash
 # Set a port for OpenCR 
 $ export OPENCR_PORT=/dev/ttyACM0
