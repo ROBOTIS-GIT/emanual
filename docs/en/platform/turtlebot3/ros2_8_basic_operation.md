@@ -188,7 +188,7 @@ $ ros2 run turtlebot3_teleop teleop_keyboard /cmd_vel:=/cmd_vel_raw
 $ ros2 launch turtlebot3_example turtlebot3_obstacle_detection
 ```
 
-### [Point Operation](#point-operation)
+### [Position Control](#position-control)
 
 TurtleBot3 can be position controlled using this package.
 
@@ -236,3 +236,7 @@ radius: circle radius (unit: m)
 
 Input radius: 1  (input a value and press enter)
 ```
+
+## [Additional Sensors](#additional_sensors)
+
+To be added soon...
