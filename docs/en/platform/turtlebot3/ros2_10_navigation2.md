@@ -38,9 +38,13 @@ page_number: 30
 ## [Run Navigation2 Nodes](#run-navigation2-nodes)
 
 **[TurtleBot]** Bring up basic packages to start TurtleBot3 applications.
-
+  
+**NOTE**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `burger`, `waffle`, `waffle_pi`. If you want to permanently set the export settings, please refer to [Export TURTLEBOT3_MODEL][export_turtlebot3_model]{: .popup} page.
+{: .notice}  
+    
 ``` bash
-$ ros2 launch □□□□□□□□□□□□□□□□□□□□
+$ export TURTLEBOT3_MODEL=${TB3_MODEL}
+$ ros2 launch turtlebot3_bringup robot.launch.py
 ```
 
 **[Remote PC]** Launch the navigation file.
@@ -71,7 +75,7 @@ Then move the robot back and forth with tools like the `turtlebot3_teleop_keyboa
 
 ``` bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
-$ ros2 launch □□□□□□□□□□□□□□□□□□□□
+$ ros2 run turtlebot3_teleop teleop_keyboard
 ```
 
 When this process is completed, the robot estimates its actual position and orientation by using the position and orientation specified by the green arrow as the initial pose. Every green arrow stands for an expected position of TurtleBot3. The laser scanner will draw approximate figures of wall on the map. If the drawing doesn't show the figures incorrectly, repeat localizing the TurtleBot3 from clicking `2D Pose Estimate` button above.
