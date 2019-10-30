@@ -127,7 +127,11 @@ To be added soon.
 
 #### [Execute RViz](#execute-rviz)
 
-To be added soon.
+RViz visualizes published topics while simulation is running. You can launch RViz in a new terminal window by entering below command.
+
+``` bash
+$ ros2 launch turtlebot3_bringup rviz2.launch.py
+``` 
 
 #### [Virtual SLAM with TurtleBot3](#virtual-slam-with-turtlebot3)
 
@@ -202,8 +206,3 @@ $ ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=True ma
 - If TurtleBot3 is close to a costmap or nearby the map, click `Navigation2 Goal` button in a menu bar, and then point goal pose on the map.
 
 ![](/assets/images/platform/turtlebot3/ros2/gazebo_navigation2.png)
-
-
-#### [Virtual SLAM by Multiple TurtleBot3s](#virtual-slam-by-multiple-turtlebot3s)
-
-To be added soon.
