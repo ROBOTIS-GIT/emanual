@@ -63,6 +63,8 @@ Install ROS 2 dependency packages.
 **[Remote PC]**
 
 ```bash
+# Install Colcon
+$ sudo apt install python3-colcon-common-extensions
 # Install Cartographer dependencies
 $ sudo apt install -y \
     google-mock \
