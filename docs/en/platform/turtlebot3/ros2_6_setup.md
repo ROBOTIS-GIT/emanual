@@ -18,11 +18,13 @@ page_number: 26
 # [Setup](#setup)
 
 ## [ROS1 and ROS2 Comparison](#ros1_ros2_comparison)
-- Support multi-robot systems involving unreliable networks
+- Support for multi-robot systems involving unreliable networks
 - Support for small embedded platforms
 - Support for real-time control
 - DDS (Data Distribution Service)
 - Cross-platform support - Linux, macOS, Windows
+
+Please refer to [the official ROS webpage](https://index.ros.org/doc/ros2/) for more details.
 
 ## [PC Setup](#pc-setup)
 
@@ -56,7 +58,9 @@ As TurtleBot3 operates on Robot Operating System(ROS), it requies to intall `ros
 
 ### Install ROS 2 Dependency Packages
 
-Install ROS 2 dependency packages on **Remote PC**.
+Install ROS 2 dependency packages. 
+
+**[Remote PC]**
 
 ```bash
 # Install Cartographer dependencies
@@ -85,7 +89,9 @@ $ sudo apt install python3-vcstool
 
 ### Install TurtleBot3 ROS 2 Packages
 
-Download `turtlebot3` packages and install `turtlebot3` packages and ROS 2 dependency packages on **Remote PC**.
+Download `turtlebot3` packages and install `turtlebot3` packages and ROS 2 dependency packages.
+
+**[Remote PC]**
 
 ```bash
 $ mkdir -p ~/turtlebot3_ws/src
@@ -96,6 +102,9 @@ $ colcon build --symlink-install
 ```
 
 ### Save Bash Command for Setup
+
+**[Remote PC]**
+
 ```bash
 $ echo 'source ~/turtlebot3_ws/install/setup.bash' >> ~/.bashrc
 $ echo 'export ROS_DOMAIN_ID=30 #TURTLEBOT3' >> ~/.bashrc
@@ -188,9 +197,12 @@ $ reboot
 ```bash
 $ systemctl mask systemd-networkd-wait-online.service
 ```
-    **NOTE** : From now, you can use SSH. If you want remote PC to connect to SBC and to install ROS and TurtleBot3 software, run a command below.
-    {: .notice}
-[REMOTE PC]
+
+**NOTE** : From now, you can use SSH. If you want remote PC to connect to SBC and to install ROS and TurtleBot3 software, run a command below.
+{: .notice}
+
+**[REMOTE PC]**
+
 ```bash
 $ ssh ubuntu@<NETWORK IP of Raspberry PI>
 ```
