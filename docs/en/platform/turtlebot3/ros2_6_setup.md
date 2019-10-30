@@ -245,6 +245,9 @@ $ sudo nano /etc/fstab
 7. Verify swap area with `free` syntax whether it is allocated. It will present a table consisting of six colums and three rows of data. 
 ```bash
 $ sudo free -h
+                 total        used        free      shared  buff/cache   available
+Mem:           912M         97M        263M        4.4M        550M        795M
+Swap:          1.0G          0B        1.0G
 ```
 
 ### Intall ROS 2 Dashing Diademata
@@ -295,7 +298,8 @@ $ git clone -b ros2 https://github.com/ROBOTIS-GIT/DynamixelSDK.git
 $ cd ~/turtlebot3_ws/src/turtlebot3
 $ rm -r turtlebot3_cartographer turtlebot3_navigation2
 $ cd ~/turtlebot3_ws/
-$ source /opt/ros/dashing/setup.bash
+$ echo 'source ~/opt/ros/dashing/setup.bash' >> ~/.bashrc
+$ source ~/.bashrc
 $ colcon build --symlink-install --parallel-workers 1
 ```
 
