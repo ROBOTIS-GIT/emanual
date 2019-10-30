@@ -99,6 +99,10 @@ $ roslaunch open_manipulator_with_tb3_description open_manipulator_with_tb3_rviz
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
+**WARNING** : **MAKE SURE THAT ALL DYNAMIXEL IS CONNECTED TO OpenCR**, before proceeding to OpenCR Setup. Otherwise, the raspberry pi board may have **an unexpected issue**. 
+{: .notice--warning}
+
+
 ### [Shell Script](#shell-script)
 **[TurtleBot3]**
 ```bash
