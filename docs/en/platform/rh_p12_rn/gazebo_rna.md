@@ -28,7 +28,7 @@ Enter below command in order to download the Gazebo package for RH-P12-RN(A).
 
 ```
 $ cd catkin_ws/src
-$ git clone https://github.com/ROBOTIS-GIT/RH-P12-RN
+$ git clone https://github.com/ROBOTIS-GIT/RH-P12-RN-A
 ```
 
 ### Install Additional Packages
@@ -50,7 +50,7 @@ Since running Gazebo from the controller PC, the realtime factor could be affect
 Enter below command in order to run RH-P12-RN(A) from Gazebo simulator.
 
 ```
-$ roslaunch rh_p12_rn_gazebo rh_p12_rn_gazebo.launch
+$ roslaunch rh_p12_rn_a_gazebo rh_p12_rn_a_gazebo.launch
 ```
 
 Click the `Play` button from Gazebo.  
@@ -62,11 +62,11 @@ In order to control the gripper, use below commands in a new terminal window.
 - Open the grippers
 
   ```
-  $ rostopic pub -1 /rh_p12_rn/rh_p12_rn_position/command std_msgs/Float64 "data: 0.0"
+  $ rostopic pub -1 /rh_p12_rn_a/rh_p12_rn_a_position/command std_msgs/Float64 "data: 0.0"
   ```
 
 - Close the grippers
 
   ```
-  $ rostopic pub -1 /rh_p12_rn/rh_p12_rn_position/command std_msgs/Float64 "data: 1.1"
+  $ rostopic pub -1 /rh_p12_rn_a/rh_p12_rn_a_position/command std_msgs/Float64 "data: 1.1"
   ```

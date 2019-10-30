@@ -33,8 +33,6 @@ page_number: 2
 리눅스의 경우 예제의 통신 포트가 "**/dev/ttyUSB0**"로 되어 있음.  
 연결된 통신 장치가 /dev/ttyUSB0 가 아닐 경우 소스 상에서 DEVICE_NAME 값을 변경해야 함.
 
-> RH-P12-RN_Example/rh-p12-rn.cpp
-
 ```cpp
 ...
 
@@ -46,50 +44,48 @@ page_number: 2
 
 ...
 ```
+> RH-P12-RN_Example/rh-p12-rna.cpp
 
 ## [윈도우즈 예제](#윈도우즈-예제)
 
-### 다운로드
+### [다운로드](#다운로드)
+
 GIT client 프로그램으로 [https://github.com/ROBOTIS-GIT/RH-P12-RN_Example](https://github.com/ROBOTIS-GIT/RH-P12-RN_Example) 다운로드 혹은
 [https://github.com/ROBOTIS-GIT/RH-P12-RN_Example/archive/master.zip](https://github.com/ROBOTIS-GIT/RH-P12-RN_Example/archive/master.zip) 파일 다운로드 후 압축 해제
 
-### 빌드 및 실행
-윈도우 예제는 Visual Studio 2017 로 작성되었음.  
-Visual Studio 를 설치하고, RH-P12-RN_Example\win64\RH-P12-RN-Example.sln 파일을 더블클릭하여 솔루션을 열고, 솔루션 빌드 후 실행.
+### [빌드 및 실행](#빌드-및-실행)
 
-Windows SDK 버전이 달라서 아래와 같은 에러가 발생할 경우
+1. Visual Studio 프로그램 설치.
+  
+    윈도우즈 예제는 **Visual Studio 2017**을 기반으로 테스트 되었음.
+    {: .notice}
+  
+2. RH-P12-RN_Example\win64\RH-P12-RN-Example.sln 파일을 더블클릭하여 솔루션 열기.
+3. 솔루션 빌드 후 실행.
 
-```
-error MSB8036: Windows SDK 버전 10.0.14393.0을(를) 찾을 수 없습니다.  
-필요한 버전의 Windows SDK를 설치하거나,  
-솔루션을 마우스 오른쪽 단추로 클릭하고 [솔루션 대상 변경]을 선택하거나  
-프로젝트 속성 페이지에서 SDK 버전을 변경하세요.
-```
+  - Windows SDK 버전이 달라서 아래의 **에러메세지가 발생**한 경우  
+    ```
+    error MSB8036: Windows SDK 버전 10.0.14393.0을(를) 찾을 수 없습니다.  
+    필요한 버전의 Windows SDK를 설치하거나,  
+    솔루션을 마우스 오른쪽 단추로 클릭하고 [솔루션 대상 변경]을 선택하거나  
+    프로젝트 속성 페이지에서 SDK 버전을 변경하세요.
+    ```
+    프로젝트의 속성 페이지에서 아래와 같이 **Windows SDK 버전을 설치된 버전으로 변경** 후 다시 빌드 후 실행.  
+    ![img](/assets/images/platform/rh_p12_rn/windows_sdk_ver.png)  
 
-프로젝트의 속성 페이지에서 아래와 같이 Windows SDK 버전을 설치된 버전으로 변경 후 다시 빌드 후 실행.  
+  - **실행에 실패**했을 경우 실패 메시지를 확인하고, [장치 설정](#장치-설정rh-p12-rna) 혹은 [통신 포트 설정](#통신포트-설정) 변경 할것. 
 
-![img](/assets/images/platform/rh_p12_rn/windows_sdk_ver.png)
+### [실행 화면](#실행-화면)
+  
+- **연결후 실행화면** : 포트이름 및 Baudrate 정보 표시. 키보드의 아무키를 누르면, 제어모드 화면으로 넘어감.  
+    ![img](/assets/images/platform/rh_p12_rn/rh_p12_rna/windows_example_execute.png)  
+- **전류기반 위치 제어 모드** 실행화면  
+    ![img](/assets/images/platform/rh_p12_rn/rh_p12_rna/windows_example_position_mode.png)  
+- **전류제어 모드** 실행화면  
+    ![img](/assets/images/platform/rh_p12_rn/rh_p12_rna/windows_example_current_mode.png)
 
-
-윈도우 예제를 실행하면 아래와 같이 연결된 장치의 포트 이름과 Baudrate 가 표시되며 실행 됨.  
-실행에 실패할 경우 실패 메시지를 확인하고, 장치 설정 혹은 통신 포트 설정을 변경해야 함.  
-
-![img](/assets/images/platform/rh_p12_rn/windows_example_execute.png)
-
-장치(RH-P12-RN)가 전류기반 위치 제어 모드로 실행 중일 경우 아래와 같은 화면이 표시 됨.  
-
-![img](/assets/images/platform/rh_p12_rn/windows_example_position_mode.png)
-
-장치가 전류제어 모드로 실행 중일 경우 아래와 같은 화면이 표시 됨.  
-
-![img](/assets/images/platform/rh_p12_rn/windows_example_current_mode.png)
-
-* 위/아래 `방향 커서` 키를 이용하여 입력란을 이동할 수 있음.  
-* `스페이스` 키를 이용하여 MODE / TORQUE / CONTROL 을 체크/언체크 할 수 있음.  
-* ( ) 안의 단축키를 누르면 해당 위치에서 `스페이스` 키를 누른 것과 동일하게 동작 함.  
-* PARAMETERS 값을 변경하기 위해서는 `[` 키와 `]` 키를 이용하여 1 씩 값을 증감시킬 수 있으며, `{` 키와 `}` 키를 이용하여 10 씩 값을 증감시킬 수 있음.  
-
-각 입력란의 동작은 아래와 같음.
+#### [동작](#동작)
+[실행화면](#실행화면)의 이미지(전류기반 위치 제어모드 및 전류제어 모드)를 참고.
 
 `++ MODE ++`
 * (C) current control mode : 체크 시 전류제어 모드로 동작
@@ -105,33 +101,39 @@ error MSB8036: Windows SDK 버전 10.0.14393.0을(를) 찾을 수 없습니다.
 * (G) go to goal position : 체크 시 PARAMETERS 의 goal position 값이 변경되면 즉시 반영 됨.
 
 `++ PARAMETERS ++`
+* goal PWM : 값이 변경되면 장치의 goal PWM 에 해당 값을 write 함.
 * goal current : 값이 변경되면 장치의 goal current 에 해당 값을 write 함.
 * goal velocity : 값이 변경되면 장치의 goal velocity 에 해당 값을 write 함.
-* goal acceleration : 값이 변경되면 장치의 goal acceleration 에 해당 값을 write 함.
 * goal position : 위 (G) go to goal position 이 체크되어 있을 경우 값이 변경되면 장치의 goal position 에 해당 값을 write 함.
 
+#### [입력방법](#입력방법)
+* 위/아래 `방향 커서` 키를 이용하여 입력란을 이동할 수 있음.  
+* `스페이스` 키를 이용하여 MODE / TORQUE / CONTROL 을 체크/언체크 할 수 있음.  
+* ( ) 안의 단축키를 누르면 해당 위치에서 `스페이스` 키를 누른 것과 동일하게 동작 함.  
+* PARAMETERS 값을 변경하기 위해서는 `[` 키와 `]` 키를 이용하여 1 씩 값을 증감시킬 수 있으며, `{` 키와 `}` 키를 이용하여 10 씩 값을 증감시킬 수 있음.  
 
 ## [리눅스 예제](#리눅스-예제)
 
-### 준비
-Dynamixel SDK 가 설치되어 있어야 함. 아래와 같이 다운로드 받아 설치할 것.
+리눅스에서 RH-P12-RN(A)의 예제를 사용하기위한 과정을 다룸. 터미널을 실행하여,각 단계에서 **제공되는 커맨드를 입력** 할것.
 
+### 준비
+
+1. Dynamixel SDK 설치.
 ```
 $ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK
 $ cd DynamixelSDK/c++/build/linux64
 $ sudo make install
 ```
+- [Dynamixel SDK e-Manaul](/docs/en/software/dynamixel/dynamixel_sdk/overview/)
 
-/dev/ttyUSB0 의 접근 권한을 얻기 위해 아래 명령을 입력 (USER_ID 를 dialout 그룹에 등록하는 명령)
-
+2. USER_ID 를 dialout 그룹에 등록하여 **포트권한(/dev/ttyUSB0) 설정**  
 ```
 $ sudo usermod -aG dialout USER_ID  
 ```
 
-이제 리눅스를 재시작하거나 로그아웃 후 다시 로그인 하면 USER_ID 가 dialout 그룹에 등록되어 /dev/ttyUSB0 의 접근 권한을 얻게 됨.
+3. 리눅스를 **재시작** 또는 **로그아웃** 후 다시 로그인 하면, USER_ID 가 dialout 그룹에 등록되어 포트(/dev/ttyUSB0)에 접근가능한 권한을 얻게 됨.
 
 ### 다운로드
-
 ```
 $ git clone https://github.com/ROBOTIS-GIT/RH-P12-RN_Example
 ```
@@ -144,40 +146,37 @@ $ make
 
 ### 실행
 ```
-$ ./rh-p12-rn_example
+$ ./rh-p12-rna_example
 ```
+### 실행화면
+  
+실행에 실패할 경우 실패 메시지를 확인하고, [장치 설정](#장치-설정rh-p12-rna) 혹은 [통신 포트 설정](#통신-포트-설정)을 변경해야 함.  
+- **연결후 실행화면** : 포트이름 및 Baudrate 정보 표시. 키보드의 아무키를 누르면, 제어모드 화면으로 넘어감.  
+    ![img](/assets/images/platform/rh_p12_rn/rh_p12_rna/linux_example_execute.png)
+- **전류기반 위치 제어 모드** 실행화면  
+    ![img](/assets/images/platform/rh_p12_rn/rh_p12_rna/linux_example_position_mode.png)
+- **전류제어 모드** 실행 화면  
+    ![img](/assets/images/platform/rh_p12_rn/rh_p12_rna/linux_example_current_mode.png)
 
-리눅스 예제를 실행하면 아래와 같이 연결된 장치의 포트 이름과 Baudrate 가 표시되며 실행 됨.  
-실행에 실패할 경우 실패 메시지를 확인하고, 장치 설정 혹은 통신 포트 설정을 변경해야 함.  
-
-![img](/assets/images/platform/rh_p12_rn/linux_example_execute.png)
-
-장치(RH-P12-RN(A))가 전류기반 위치 제어 모드로 실행 중일 경우 아래와 같은 화면이 표시 됨.  
-
-![img](/assets/images/platform/rh_p12_rn/linux_example_position_mode.png)
-
-장치가 전류제어 모드로 실행 중일 경우 아래와 같은 화면이 표시 됨.  
-
-![img](/assets/images/platform/rh_p12_rn/linux_example_current_mode.png)
-
-각 입력란의 입력 방법 및 동작은 윈도우 예제와 동일함.
-
+각 입력란의 **동작 및 입력 방법은 윈도우 예제를 참고**
+- [동작](#동작)
+- [입력방법](#입력방법)
 
 ## [ROS GUI 예제](#ROS-GUI-예제)
 
+예제를 사용하기위한 과정을 다룸. 터미널을 실행하여,각 단계에서 **제공되는 커맨드를 입력** 할것. 
+
 ### 준비
 
-아래 커맨드를 통해, 유저그룹(USER_GROUP)의 real-time scheduling priority(rtprio)을 설정.
-  
-```
-$ sudo bash -c 'echo "@USER_GROUP - rtprio 99" > /etc/security/limits.d/robotis-rtprio.conf'
-```
-
-/dev/ttyUSB0 의 접근 권한을 얻기 위해 아래 명령을 입력 (USER_ID 를 dialout 그룹에 등록하는 명령)
-```
-$ sudo usermod -aG dialout USER_ID
-```
-이제 리눅스를 재시작하거나 로그아웃 후 다시 로그인 하면 USER_ID 가 dialout 그룹에 등록되어 /dev/ttyUSB0 의 접근 권한을 얻게 됨.
+1. 아래 커맨드를 통해, 유저그룹(USER_GROUP)의 real-time scheduling priority(rtprio)을 설정.  
+  ```
+  $ sudo bash -c 'echo "@USER_GROUP - rtprio 99" > /etc/security/limits.d/robotis-rtprio.conf'
+  ```
+2. USER_ID 를 dialout 그룹에 등록하여 **포트권한(/dev/ttyUSB0) 설정**
+  ```
+  $ sudo usermod -aG dialout USER_ID
+  ```
+3. 리눅스를 **재시작** 또는 **로그아웃** 후 다시 로그인 하면, USER_ID 가 dialout 그룹에 등록되어 포트(/dev/ttyUSB0)에 접근가능한 권한을 얻게 됨.
 
 ### 다운로드
 ```
@@ -185,7 +184,7 @@ $ cd ~/catkin_ws/src
 $ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK
 $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-Framework
 $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-Framework-msgs
-$ git clone https://github.com/ROBOTIS-GIT/RH-P12-RN
+$ git clone https://github.com/ROBOTIS-GIT/RH-P12-RN-A
 ```
 
 ### 빌드
@@ -196,21 +195,23 @@ $ catkin_make
 
 ### 실행
 터미널을 띄워 아래 명령으로 manager 실행
+
 ```
-$ roslaunch rh_p12_rn_manager rh_p12_rn_manager.launch
+$ roslaunch rh_p12_rn_a_manager rh_p12_rn_a_manager.launch
 ```
 새로운 터미널을 띄워 아래 명령으로 GUI 예제 실행
+
 ```
-$ rosrun rh_p12_rn_gui rh_p12_rn_gui
+$ rosrun rh_p12_rn_a_gui rh_p12_rn_a_gui
 ```
 
 장치가 전류기반 위치 제어 모드로 실행 중일 경우 ROS GUI 예제 화면은 아래와 같음.  
 
-![img](/assets/images/platform/rh_p12_rn/ros_example_position_mode.png)
+![img](/assets/images/platform/rh_p12_rn/rh_p12_rna/ros_example_position_mode.png)
 
 장치가 전류제어 모드로 실행 중일 경우 ROS GUI 예제 화면은 아래와 같음.  
 
-![img](/assets/images/platform/rh_p12_rn/ros_example_current_mode.png)
+![img](/assets/images/platform/rh_p12_rn/rh_p12_rna/ros_example_current_mode.png)
 
 각 입력란의 동작은 윈도우/리눅스 예제와 동일함.
 

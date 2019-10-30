@@ -32,7 +32,7 @@ Please change the Serial COM Port to COM4 in the Device Manager or modify the DE
 In case of Linux example, the communication port is set as "**/dev/ttyUSB0**".  
 If other communication port is used, the DEVICE_NAME in the example source code should be modified properly.
 
-> RH-P12-RN_Example/rh-p12-rn.cpp
+> RH-P12-RN_Example/rh-p12-rna.cpp
 
 ```cpp
 ...
@@ -53,7 +53,7 @@ Download from [https://github.com/ROBOTIS-GIT/RH-P12-RN_Example](https://github.
 
 ### Build and Run
 Windows example is written on Visual Studio 2017.  
-Install Visual Studio and open the solution with `RH-P12-RN_Example\win64\RH-P12-RN-Example.sln`. Then build solution and run.  
+Install Visual Studio and open the solution with `RH-P12-RN_Example\win64\RH-P12-RN(A)-Example.sln`. Then build solution and run.  
 
 Below error message might appear due to the difference of Windows SDK version.
 
@@ -71,15 +71,15 @@ In order to resolve the above error, open the property page from the project and
 Upon successful execution of the Windows example, the communication port and the baudrate of connected device are listed as shown in the below image.  
 If execution fails, confirm the error message to configure the device or communication port properly.
 
-![img](/assets/images/platform/rh_p12_rn/windows_example_execute.png)
+![img](/assets/images/platform/rh_p12_rn/rh_p12_rna/windows_example_execute.png)
 
 If RH-P12-RN is configured as **Current-based Position Control Mode**, below image will be displayed.  
 
-![img](/assets/images/platform/rh_p12_rn/windows_example_position_mode.png)
+![img](/assets/images/platform/rh_p12_rn/rh_p12_rna/windows_example_position_mode.png)
 
 If RH-P12-RN is configured as **Current Control Mode**, below image will be displayed.  
 
-![img](/assets/images/platform/rh_p12_rn/windows_example_current_mode.png)
+![img](/assets/images/platform/rh_p12_rn/rh_p12_rna/windows_example_current_mode.png)
 
 * The Up/Down `Cursor` keys can be used to move the cursor in the menu.  
 * `Space` key will check/uncheck options in the MODE / TORQUE / CONTROL menu.  
@@ -102,11 +102,10 @@ Each option is described as belows.
 * (G) go to goal position : goal position in the PARAMETERS will be applied immediately when checked.
 
 `++ PARAMETERS ++`
-* goal current : Setting value will be written in the goal current address of the RH-P12-RN.
+* goal PWM : Setting value will be written in the goal PWM address of the RH-P12-RN.
+* goal current : Setting value will be written in the goal PWM address of the RH-P12-RN.
 * goal velocity : Setting value will be written in the goal velocity address of the RH-P12-RN.
-* goal acceleration : Setting value will be written in the goal acceleration address of the RH-P12-RN.
 * goal position : Setting value will be written in the goal position address of the RH-P12-RN when **(G) go to goal position** is checked.
-
 
 ## [Linux Example](#linux-example)
 
@@ -140,21 +139,21 @@ $ make
 
 ### Run
 ```
-$ ./rh-p12-rn_example
+$ ./rh-p12-rna_example
 ```
 
 Upon successful execution of the Linux example, the communication port and the baudrate of connected device are listed as shown in the below image.  
 If execution fails, confirm the error message to configure the device or communication port properly.  
 
-![img](/assets/images/platform/rh_p12_rn/linux_example_execute.png)
+![img](/assets/images/platform/rh_p12_rn/rh_p12_rna/linux_example_execute.png)
 
-If RH-P12-RN is configured as **Current-based Position Control Mode**, below image will be displayed.  
+If RH-P12-RN(A) is configured as **Current-based Position Control Mode**, below image will be displayed.  
 
-![img](/assets/images/platform/rh_p12_rn/linux_example_position_mode.png)
+![img](/assets/images/platform/rh_p12_rn/rh_p12_rna/linux_example_position_mode.png)
 
-If RH-P12-RN is configured as **Current Control Mode**, below image will be displayed.  
+If RH-P12-RN(A) is configured as **Current Control Mode**, below image will be displayed.  
 
-![img](/assets/images/platform/rh_p12_rn/linux_example_current_mode.png)
+![img](/assets/images/platform/rh_p12_rn/rh_p12_rna/linux_example_current_mode.png)
 
 Each option is identical to the [Windows Example]
 
@@ -179,7 +178,7 @@ $ cd ~/catkin_ws/src
 $ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK
 $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-Framework
 $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-Framework-msgs
-$ git clone https://github.com/ROBOTIS-GIT/RH-P12-RN
+$ git clone https://github.com/ROBOTIS-GIT/RH-P12-RN-A
 ```
 
 ### Build
@@ -192,21 +191,21 @@ $ catkin_make
 
 Open the new terminal and run manager with below command.
 ```
-$ roslaunch rh_p12_rn_manager rh_p12_rn_manager.launch
+$ roslaunch rh_p12_rn_a_manager rh_p12_rn_a_manager.launch
 ```
 
 Open the new terminal and run GUI example with below command.
 ```
-$ rosrun rh_p12_rn_gui rh_p12_rn_gui
+$ rosrun rh_p12_rn_a_gui rh_p12_rn_a_gui
 ```
 
 If RH-P12-RN is configured as **Current-based Position Control Mode**, below GUI window will be displayed.  
 
-![img](/assets/images/platform/rh_p12_rn/ros_example_position_mode.png)
+![img](/assets/images/platform/rh_p12_rn/rh_p12_rna/ros_example_position_mode.png)
 
 If RH-P12-RN is configured as **Current Control Mode**, below GUI window will be displayed.  
 
-![img](/assets/images/platform/rh_p12_rn/ros_example_current_mode.png)
+![img](/assets/images/platform/rh_p12_rn/rh_p12_rna/ros_example_current_mode.png)
 
 Each option is identical to the [Windows Example]
 
