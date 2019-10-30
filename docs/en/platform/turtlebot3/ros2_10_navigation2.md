@@ -84,7 +84,7 @@ When this process is completed, the robot estimates its actual position and orie
 ![](/assets/images/platform/temp.png)  
 > 2D Pose Estimate
 
-**TIP**: The `turtlebot3_teleop_keyboard` node used for `Estimate Initial Pose` should be terminated after use. If it does not, the robot will behave strangely because the topic overlaps with the `◁◁◁◁◁◁◁◁◁◁◁◁◁◁◁◁◁◁◁◁  /cmd_vel  ▷▷▷▷▷▷▷▷▷▷▷▷▷▷▷▷▷▷▷▷` topic from the navigation node of the next step.
+**TIP**: The `turtlebot3_teleop_keyboard` node used for `Estimate Initial Pose` should be terminated after use. If it does not, the robot will behave strangely because the topic overlaps with the `/cmd_vel` topic from the navigation node of the next step.
 {: .notice--success}
 
   
