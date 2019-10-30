@@ -36,39 +36,36 @@ In order to check the topics of TurtleBot3, we will use [rqt][rqt] provided by R
 ``` bash
 $ rqt
 ```
-![](/assets/images/platform/turtlebot3/example/rqt_1.png)
+![](/assets/images/platform/turtlebot3/ros2/rqt_1.png)
 
 **TIP**: If rqt is not displayed, select the `plugin` -> `Topics` -> `Topic Monitor`.
 {: .notice--info}
 
 When rqt is first run, the topic values are not monitored. To monitor the topic, click the checkbox next to each topic.
 
-![](/assets/images/platform/turtlebot3/example/rqt_2.png)
+![](/assets/images/platform/turtlebot3/ros2/rqt_2.png)
 
 If you want to see more detail topic message, click the `▶` button next to each checkbox.
 
-![](/assets/images/platform/turtlebot3/example/rqt_3.png)
+![](/assets/images/platform/turtlebot3/ros2/rqt_3.png)
 
 
 - `/battery_state` indicates a message relating to the battery condition, such as the current battery voltage and remaining capacity.
 
-![](/assets/images/platform/turtlebot3/example/rqt_4.png)
+![](/assets/images/platform/turtlebot3/ros2/rqt_4.png)
 
-- `/diagnostics` indicates a message the status of the components connected to the TurtleBot3, such as a MPU9250, a DYNAMIXEL X, a HLS-LFCD-LDS, a battery and a OpenCR.
-
-![](/assets/images/platform/turtlebot3/example/rqt_5.png)
 
 - `/odom` indicates a message the odometry of the TurtleBot3. This topic has orientation and position by the encoder data.  
 
-![](/assets/images/platform/turtlebot3/example/rqt_6.png)
+![](/assets/images/platform/turtlebot3/ros2/rqt_5.png)
 
 - `/sensor_state` indicates a message the encoder values, battery and torque.
 
-![](/assets/images/platform/turtlebot3/example/rqt_7.png)
+![](/assets/images/platform/turtlebot3/ros2/rqt_6.png)
 
 - `/scan` indicates a message all of the LDS data, such as angle_max and min, range_max and min, indicates, ranges.
 
-![](/assets/images/platform/turtlebot3/example/rqt_8.png)
+![](/assets/images/platform/turtlebot3/ros2/rqt_7.png)
 
 In addition, you can monitor topics through rqt whenever you have a topic added.
 
@@ -99,28 +96,30 @@ TurtleBot3 can be teleoperated by various devices. It is tested with several wir
 **TIP**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `burger`, `waffle`, `waffle_pi`. If you want to permanently set the export settings, please refer to [Export TURTLEBOT3_MODEL][export_turtlebot3_model]{: .popup} page.
 {: .notice--success}
 
-1. Run teleoperation node on **remote PC**
+**[Remote PC]** Run teleoperation node
+
 ```bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ ros2 run turtlebot3_teleop teleop_keyboard
 ```
 
-2. If the node is successfully run, the following instruction will be appeared to the terminal window.  
-    ```bash
-    Control Your TurtleBot3!
-    ---------------------------
-    Moving around:
-            w
-       a    s    d
-            x
+**[Remote PC]** If the node is successfully run, the following instruction will be appeared to the terminal window.  
 
-    w/x : increase/decrease linear velocity (Burger : ~ 0.22, Waffle and Waffle Pi : ~ 0.26)
-    a/d : increase/decrease angular velocity (Burger : ~ 2.84, Waffle and Waffle Pi : ~ 1.82)
+```bash
+Control Your TurtleBot3!
+---------------------------
+Moving around:
+        w
+    a    s    d
+        x
 
-    space key, s : force stop
+w/x : increase/decrease linear velocity (Burger : ~ 0.22, Waffle and Waffle Pi : ~ 0.26)
+a/d : increase/decrease angular velocity (Burger : ~ 2.84, Waffle and Waffle Pi : ~ 1.82)
 
-    CTRL-C to quit
-    ```
+space key, s : force stop
+
+CTRL-C to quit
+```
 
 ### [RC100](#rc100)
 
@@ -198,6 +197,8 @@ $ ros2 run turtlebot3_example turtlebot3_position_control
 ```
 
 Type input values and press enter for x, y and theta respectively. TurtleBot3 will move to a pose (x, y, theta) from the current pose.
+
+**[Remote PC]**
 
 ``` bash
 Turtlebot3 Position Control
