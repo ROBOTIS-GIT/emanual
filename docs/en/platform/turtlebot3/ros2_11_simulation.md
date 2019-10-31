@@ -123,7 +123,19 @@ $ ros2 run turtlebot3_teleop teleop_keyboard
 
 ##### 2) Collision Avoidance
 
-To be added soon.
+In order to autonomously drive a TurtleBot3 around the **TurtleBot3 world**, open a new terminal window and enter below command.
+
+``` bash
+$ export TURTLEBOT3_MODEL=${TB3_MODEL}
+$ ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
+```
+
+Open a new terminal window and enter below command.
+
+``` bash
+$ export TURTLEBOT3_MODEL=${TB3_MODEL}
+$ ros2 run turtlebot3_gazebo turtlebot3_drive
+```
 
 #### [Execute RViz](#execute-rviz)
 
