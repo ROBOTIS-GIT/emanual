@@ -169,20 +169,20 @@ To communicate between **Remote PC** and **TurtleBot3**, install `Ubuntu Server 
 
 ```yaml
 network:
-    version: 2
-    renderer: networkd
-    ethernets:
-      eth0:
-        dhcp4: yes
-        dhcp6: yes
-        optional: true
-    wifis:
-      wlan0:
-        dhcp4: yes
-        dhcp6: yes
-        access-points:
-          "your-wifi-name":
-            password: "your-wifi-password"
+  version: 2
+  renderer: networkd
+  ethernets:
+    eth0:
+      dhcp4: yes
+      dhcp6: yes
+      optional: true
+  wifis:
+    wlan0:
+      dhcp4: yes
+      dhcp6: yes
+      access-points:
+        "your-wifi-name":
+          password: "your-wifi-password"
 ```
 
 3. After configuration, remote PC can connect to a SBC in TurtleBot3 by following steps.
