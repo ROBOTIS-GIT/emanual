@@ -134,11 +134,11 @@ _**POSE_GRAPH.optimize_every_n_nodes**_
   
 _**POSE_GRAPH.constraint_builder.min_score**_ 
 - `turtlebot3_cartographer/config/turtlebot3_lds_2d.lua`
-- **Global SLAM** : Criteria for judging whether to fed into a Ceres Scan Matcher to refine the pose.
+- **Global SLAM** : Threshold for the scan match score below which a match is not considered. Low scores indicate that the scan and map do not look similar.
   
 _**POSE_GRAPH.constraint_builder.global_localization_min_score**_ 
 - `turtlebot3_cartographer/config/turtlebot3_lds_2d.lua`
-- **Global SLAM** :  
+- **Global SLAM** : Threshold below which global localizations are not trusted.
   
 **NOTE**: Constraints can be visualized in RViz, it is very handy to tune global SLAM. One can also toggle POSE_GRAPH.constraint_builder.log_matches to get regular reports of the constraints builder formatted as histograms.  
 {: .notice}  

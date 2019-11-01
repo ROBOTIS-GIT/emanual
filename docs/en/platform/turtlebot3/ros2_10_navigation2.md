@@ -61,7 +61,7 @@ $ ros2 launch turtlebot3_navigation2 navigation2.launch.py map:=$HOME/map.yaml
 {: .notice--success}
 
 ``` bash
-$ rviz2 □□□□□□□□□□□□□□□□□□□□
+$ rviz2 -d `ros2 pkg prefix turtlebot3_navigation2`/share/turtlebot3_navigation2/rviz/tb3_navigation2.rviz
 ```
 
 ## [Estimate Initial Pose](#estimate-initial-pose)
@@ -103,9 +103,7 @@ The robot will create a path to avoid obstacles to its destination based on the 
   
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VtyqUuuZAFA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-◁◁◁◁◁◁◁◁◁◁◁◁◁◁◁◁◁◁◁◁    
 Setting a goal position might fail if the path to the goal position cannot be created. If you wish to stop the robot before it reaches to the goal position, set the current position of TurtleBot3 as a goal position.  
-▷▷▷▷▷▷▷▷▷▷▷▷▷▷▷▷▷▷▷▷    
      
 ## [Tuning Guide](#tuning-guide)  
 ◁◁◁◁◁◁◁◁◁◁◁◁◁◁◁◁◁◁◁◁    
