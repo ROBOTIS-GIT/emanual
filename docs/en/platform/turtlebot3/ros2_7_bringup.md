@@ -27,7 +27,8 @@ Launch a model of your TurtleBot3 including node of `robot_state_publisher` and 
 **NOTE**: Please follow steps with **SBC in TurtleBot3**.
 {: .notice}
 
-**[TB3 PC]**
+**[TurtleBot]**
+
 ```bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ ros2 launch turtlebot3_bringup robot.launch.py
@@ -147,7 +148,7 @@ $ ros2 service list
 
 Launch bringup.
 
-**[TB3 PC]**
+**[TurtleBot]**
 
 ``` bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
