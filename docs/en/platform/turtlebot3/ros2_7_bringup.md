@@ -151,7 +151,7 @@ Launch bringup.
 
 ``` bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
-$ roslaunch turtlebot3_bringup turtlebot3_remote.launch
+$ ros2 launch turtlebot3_bringup robot.launch.py
 ```
 
 Run `RViz2`

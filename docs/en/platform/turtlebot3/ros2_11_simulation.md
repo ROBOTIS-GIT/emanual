@@ -123,11 +123,27 @@ $ ros2 run turtlebot3_teleop teleop_keyboard
 
 ##### 2) Collision Avoidance
 
-To be added soon.
+In order to autonomously drive a TurtleBot3 around the **TurtleBot3 world**, open a new terminal window and enter below command.
+
+``` bash
+$ export TURTLEBOT3_MODEL=${TB3_MODEL}
+$ ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
+```
+
+Open a new terminal window and enter below command.
+
+``` bash
+$ export TURTLEBOT3_MODEL=${TB3_MODEL}
+$ ros2 run turtlebot3_gazebo turtlebot3_drive
+```
 
 #### [Execute RViz](#execute-rviz)
 
-To be added soon.
+RViz visualizes published topics while simulation is running. You can launch RViz in a new terminal window by entering below command.
+
+``` bash
+$ ros2 launch turtlebot3_bringup rviz2.launch.py
+``` 
 
 #### [Virtual SLAM with TurtleBot3](#virtual-slam-with-turtlebot3)
 
@@ -202,8 +218,3 @@ $ ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=True ma
 - If TurtleBot3 is close to a costmap or nearby the map, click `Navigation2 Goal` button in a menu bar, and then point goal pose on the map.
 
 ![](/assets/images/platform/turtlebot3/ros2/gazebo_navigation2.png)
-
-
-#### [Virtual SLAM by Multiple TurtleBot3s](#virtual-slam-by-multiple-turtlebot3s)
-
-To be added soon.
