@@ -85,10 +85,20 @@ The image below is an example showing the same motion data opened on different 3
 
 Motion Unit is the link of poses placed on the timeline, to create a motion. The links between the poses are interpolated, like a fade in/out function.
 
-1. Select the Motion Unit tab, and click on the Motion Unit list on the toolbar.  
-2. Click the “New Motion Unit” button.
-3. Name the new Motion Unit and click the “Apply” button.
-4. Select the newly created Motion Unit and click the “Apply” button.  
+1. Select the Motion Examples tab.  
+  ![](/assets/images/sw/rplus_task3/motion_ex_01.png)
+
+2. Select the desired product from the Product tab.   
+  ![](/assets/images/sw/rplus_task3/motion_ex_02.png)
+
+3. Click the Motion Unit list.  
+  ![](/assets/images/sw/rplus_task3/motion_ex_03.png)
+
+4. Name the new Motion Unit and click the “Apply” button.  
+  ![](/assets/images/sw/rplus_task3/motion_ex_04.png)
+  
+5. Select the newly created Motion Unit and click the “Apply” button.  
+  ![](/assets/images/sw/rplus_task3/motion_ex_05.png)
 
 ## [Edit Motion Unit](#edit-motion-unit)
 

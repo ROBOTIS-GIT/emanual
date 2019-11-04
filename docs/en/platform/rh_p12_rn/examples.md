@@ -23,8 +23,8 @@ In order to run the example, RH-P12-RN should be set as belows.
 * ID = 1
 * Baudrate = 2 Mbps
 
-To modify the control table values in Windows, [R+ Manager 2.0](http://emanual.robotis.com/docs/en/software/rplus2/manager/) can be used.
-In case of Linux, [DXL Monitor](http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/sample_code/cpp_dxl_monitor/#cpp-dxl-monitor) in Dynamixel SDK example can be used to access control table.
+**TIP**: To change the values of the control table, use [R+ Manager 2.0] (in Windows) or [DYNAMIXEL Wizard 2.0] (in Windows, Linux or Mac OS.)
+{: .notice--success}
 
 ## [Communication Port Setup](#communication-port-setup)
 The Serial COM Port for Windows example is set as "**COM4**".  
@@ -195,7 +195,7 @@ Open the new terminal and run manager with below command.
 $ roslaunch rh_p12_rn_manager rh_p12_rn_manager.launch
 ```
 
-OPen the new terminal and run GUI example with below command.
+Open the new terminal and run GUI example with below command.
 ```
 $ rosrun rh_p12_rn_gui rh_p12_rn_gui
 ```
@@ -211,3 +211,5 @@ If RH-P12-RN is configured as **Current Control Mode**, below GUI window will be
 Each option is identical to the [Windows Example]
 
 [Windows Example]: #windows-example
+[R+ Manager 2.0]: /docs/en/software/rplus2/manager/
+[DYNAMIXEL Wizard 2.0]: /docs/en/software/dynamixel/dynamixel_wizard2/

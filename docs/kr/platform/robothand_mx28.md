@@ -16,7 +16,10 @@ sidebar:
 ![img](/assets/images/platform/hand/3fingerhand_mx-28_01.jpg)
 ![img](/assets/images/platform/hand/3fingerhand_mx-28_02.jpg)
 
-> Robot Hand (3 FINGER HAND PHN-33C_R/L)
+> 로봇핸드 (3 FINGER HAND PHN-33C_R/L)
+
+**주의** : 로봇핸드(MX-28)는 현재 단종되어 더 이상 판매되지 않습니다.
+{: .notice--warning}
 
 # [주요 사양](#주요-사양)
 
