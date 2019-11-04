@@ -15,18 +15,9 @@ page_number: 1
 
 # [개요](#개요)
 
-![](/assets/images/platform/rh_p12_rn/rh-p12-rn_product_new.png)
-
-> New RH_P12_RN(A) (2019년 4분기 출시)
-
 ![](/assets/images/platform/rh_p12_rn/rh-p12-rn_product_old.png)
 
-> Old RH_P12_RN(A) (이 제품은 더이상 판매되지 않습니다.)
-
-| 타입 |                              이미지                              |   스트로크   |
-|:----:|:---------------------------------------------------------------:|:----------:|
-| 신형  | ![](/assets/images/platform/rh_p12_rn/rh-p12-rn_finger_new.png) | 0 ~ 109 mm |
-| 구형  | ![](/assets/images/platform/rh_p12_rn/rh-p12-rn_finger_old.png) | 0 ~ 106 mm |
+> RH_P12_RN
 
 ## [RH-P12-RN](#rh-p12-rn)
 - 구 버전 펌웨어를 사용합니다.
@@ -45,7 +36,6 @@ page_number: 1
 {% endcapture %}
 <div class="notice">{{ info_01 | markdownify }}</div>
 
-
 # [주요 사양](#주요-사양)
 
 | 항목                | 사양                                                                                           |
@@ -58,7 +48,7 @@ page_number: 1
 | 정밀도              | 0.088&deg;                                                                                     |
 | 동작 모드           | 전류제어 모드<br />전류기반 위치제어 모드                                                      |
 | 무게                | 500 g                                                                                           |
-| 스트로크            | 0 ~ 106 mm                                                                                      |
+| 스트로크            | 0 ~ 109 mm                                                                                      |
 | 감속비              | 1181 : 1                                                                                       |
 | 최대 파지력         | 170 N                                                                                           |
 | 권장 가반하중       | 5 kg                                                                                            |

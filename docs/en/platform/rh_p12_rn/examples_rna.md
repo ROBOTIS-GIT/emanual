@@ -49,41 +49,55 @@ If other communication port is used, the DEVICE_NAME in the example source code 
 ## [Windows Example](#windows-example)
 
 ### Download
-Download from [https://github.com/ROBOTIS-GIT/RH-P12-RN_Example](https://github.com/ROBOTIS-GIT/RH-P12-RN_Example) with GIT client software or directly download source code at [https://github.com/ROBOTIS-GIT/RH-P12-RN_Example/archive/master.zip](https://github.com/ROBOTIS-GIT/RH-P12-RN_Example/archive/master.zip) and decompress the zip file.
+
+1. Install **Git Client** at Git official website.
+2. Run Git Client.
+2. Download the repository using provided URL: [https://github.com/ROBOTIS-GIT/RH-P12-RN_Example](https://github.com/ROBOTIS-GIT/RH-P12-RN_Example).
+
+**NOTE**: Direct Download Link(.zip) is available at [RH-P12-RN_Example-master.zip](https://github.com/ROBOTIS-GIT/RH-P12-RN_Example/archive/master.zip).
+{: .notice}
 
 ### Build and Run
-Windows example is written on Visual Studio 2017.  
-Install Visual Studio and open the solution with `RH-P12-RN_Example\win64\RH-P12-RN(A)-Example.sln`. Then build solution and run.  
 
-Below error message might appear due to the difference of Windows SDK version.
+1. Install Visual Studio program.
 
-```
-error MSB8036: The Windows SDK version 10.0.14393.0 was not found.  
-Install the required version of Windows SDK or change the SDK version  
-in the project property pages or by right-clicking the solution  
-and selecting "Retarget solution".
-```
+    The Windows example is tested on Visual Studio 2017
+    {: .notice} 
 
-In order to resolve the above error, open the property page from the project and select installed Windows SDK version, then rebuild the code.
+2. Open the solution with `RH-P12-RN_Example\win64\RH-P12-RN-Example.sln` file.
 
-![img](/assets/images/platform/rh_p12_rn/windows_sdk_ver_en.png)
+3. Build solution and run.    
+  - Below error message might appear due to the difference of Windows SDK version.
+    ```
+    error MSB8036: The Windows SDK version 10.0.14393.0 was not found.  
+    Install the required version of Windows SDK or change the SDK version  
+    in the project property pages or by right-clicking the solution  
+    and selecting "Retarget solution".
+    ```
+    In order to resolve the error, open the property page from the project and select **installed Windows SDK version**, then rebuild the code.  
+    ![img](/assets/images/platform/rh_p12_rn/windows_sdk_ver_en.png)
 
-Upon successful execution of the Windows example, the communication port and the baudrate of connected device are listed as shown in the below image.  
-If execution fails, confirm the error message to configure the device or communication port properly.
 
-![img](/assets/images/platform/rh_p12_rn/rh_p12_rna/windows_example_execute.png)
+### [Execution Screen](#execution-screen)
 
-If RH-P12-RN is configured as **Current-based Position Control Mode**, below image will be displayed.  
+If execution fails, confirm the error message and proceed to [Device Setup(RH-P12-RN(A))](#device-setuprh-p12-rna) or [Communication Port Setup](#communication-port-setup) properly.
 
-![img](/assets/images/platform/rh_p12_rn/rh_p12_rna/windows_example_position_mode.png)
+- Upon successful execution of the Windows example, the communication port and the baudrate of connected device are listed as shown in the below image. 
+  ![img](/assets/images/platform/rh_p12_rn/windows_example_execute.png)
 
-If RH-P12-RN is configured as **Current Control Mode**, below image will be displayed.  
+- If RH-P12-RN is configured as **Current-based Position Control Mode**, below image will be displayed.  
+  ![img](/assets/images/platform/rh_p12_rn/windows_example_position_mode.png)
 
-![img](/assets/images/platform/rh_p12_rn/rh_p12_rna/windows_example_current_mode.png)
+- If RH-P12-RN is configured as **Current Control Mode**, below image will be displayed.  
+  ![img](/assets/images/platform/rh_p12_rn/windows_example_current_mode.png)
 
-* The Up/Down `Cursor` keys can be used to move the cursor in the menu.  
-* `Space` key will check/uncheck options in the MODE / TORQUE / CONTROL menu.  
-* Shortcut keys in the parenthesis can check/uncheck options.
+#### [Operation](#operation)
+
+Refer to the images (Current-based Position Control Mode and Current Control Mode) at [Execution Screen](#execution-screen).
+
+* Use `↑` / `↓` key of your keyboard to move a previous/next option.
+* Use `Space` key to check/uncheck options in the MODE / TORQUE / CONTROL menu.  
+* Shortcut keys in the parenthesis(`C`,`P`,`T`,`O`,`L`,`A`) can check/uncheck options.
 * In order to change PARAMETERS value, `[` and `]` keys increase/decrease by 1 whereas `{` and `}` keys increase/decrease by 10.  
 
 Each option is described as belows.
@@ -109,22 +123,24 @@ Each option is described as belows.
 
 ## [Linux Example](#linux-example)
 
-### Preperation
-Dynamixel SDK should be installed in advance. Please enter below commands to install Dynamixel SDK.
+Follow the steps to operate RH-P12-RN(A) by using Linux Example. **Enter the given commands** using Terminal.
 
+### Preperation
+
+1. Install Dynamixel SDK. 
 ```
 $ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK
 $ cd DynamixelSDK/c++/build/linux64
 $ sudo make install
 ```
+- [Dynamixel SDK e-Manaul](/docs/en/software/dynamixel/dynamixel_sdk/overview/)
 
-Below command will register USER_ID to dialout group in order to gain access to /dev/ttyUSB0
-
+2. Register USER_ID to dialout group.
 ```
 $ sudo usermod -aG dialout USER_ID  
 ```
 
-Restart or log out and log in to validate the change.
+3. Restart or log out, and log in to validate the change in order to gain access to **/dev/ttyUSB0**
 
 ### Download
 ```
@@ -142,35 +158,38 @@ $ make
 $ ./rh-p12-rna_example
 ```
 
-Upon successful execution of the Linux example, the communication port and the baudrate of connected device are listed as shown in the below image.  
-If execution fails, confirm the error message to configure the device or communication port properly.  
+### Execution Screen
 
-![img](/assets/images/platform/rh_p12_rn/rh_p12_rna/linux_example_execute.png)
+If execution fails, confirm the error message and proceed to [Device Setup(RH-P12-RN(A))](#device-setuprh-p12-rna) or [Communication Port Setup](#communication-port-setup) properly.
 
-If RH-P12-RN(A) is configured as **Current-based Position Control Mode**, below image will be displayed.  
+- Upon successful execution of the Windows example, the communication port and the baudrate of connected device are listed as shown in the below image. 
+    ![img](/assets/images/platform/rh_p12_rn/rh_p12_rna/linux_example_execute.png)
 
-![img](/assets/images/platform/rh_p12_rn/rh_p12_rna/linux_example_position_mode.png)
+- If RH-P12-RN(A) is configured as **Current-based Position Control Mode**, below image will be displayed.  
+    ![img](/assets/images/platform/rh_p12_rn/rh_p12_rna/linux_example_position_mode.png)
 
-If RH-P12-RN(A) is configured as **Current Control Mode**, below image will be displayed.  
+- If RH-P12-RN(A) is configured as **Current Control Mode**, below image will be displayed.  
+    ![img](/assets/images/platform/rh_p12_rn/rh_p12_rna/linux_example_current_mode.png)
 
-![img](/assets/images/platform/rh_p12_rn/rh_p12_rna/linux_example_current_mode.png)
-
-Each option is identical to the [Windows Example]
+- Each option is identical to the [Operation](#operation) of Windows Example 
 
 ## [ROS GUI Example](#ros-gui-example)
 
-Create real-time scheduling priority (rtprio) for USER_GROUP (your user group)  
+Follow the steps to operate RH-P12-RN(A) by using Linux Example. **Enter the given commands** using Terminal.
+
+### Preperation
+
+1. Create real-time scheduling priority (rtprio) for USER_GROUP (your user group)  
 ```
 $ sudo bash -c 'echo "@USER_GROUP - rtprio 99" > /etc/security/limits.d/robotis-rtprio.conf'
 ```
 
-Below command will register USER_ID (your user ID) to dialout group in order to gain access to /dev/ttyUSB0
-
+2. Register USER_ID (your user ID) to dialout group in order to gain access to **/dev/ttyUSB0**
 ```
 $ sudo usermod –aG dialout USER_ID
 ```
 
-Restart or log out and log in to validate the change.
+3. Restart or log out, and log in to validate the change in order to gain access to **/dev/ttyUSB0**
 
 ### Download
 ```
@@ -189,26 +208,24 @@ $ catkin_make
 
 ### Run
 
-Open the new terminal and run manager with below command.
+1. Open the new terminal and run manager.
 ```
 $ roslaunch rh_p12_rn_a_manager rh_p12_rn_a_manager.launch
 ```
 
-Open the new terminal and run GUI example with below command.
+2. Open the new terminal and run GUI example.
 ```
 $ rosrun rh_p12_rn_a_gui rh_p12_rn_a_gui
 ```
 
-If RH-P12-RN is configured as **Current-based Position Control Mode**, below GUI window will be displayed.  
+- If RH-P12-RN is configured as **Current-based Position Control Mode**, below GUI window will be displayed.  
+    ![img](/assets/images/platform/rh_p12_rn/rh_p12_rna/ros_example_position_mode.png)
 
-![img](/assets/images/platform/rh_p12_rn/rh_p12_rna/ros_example_position_mode.png)
-
-If RH-P12-RN is configured as **Current Control Mode**, below GUI window will be displayed.  
-
-![img](/assets/images/platform/rh_p12_rn/rh_p12_rna/ros_example_current_mode.png)
-
-Each option is identical to the [Windows Example]
-
+- If RH-P12-RN is configured as **Current Control Mode**, below GUI window will be displayed.  
+    ![img](/assets/images/platform/rh_p12_rn/rh_p12_rna/ros_example_current_mode.png)
+    
+- Each option is identical to the [Operation](#operation) of Windows Example 
+    
 [Windows Example]: #windows-example
 [R+ Manager 2.0]: /docs/en/software/rplus2/manager/
 [DYNAMIXEL Wizard 2.0]: /docs/en/software/dynamixel/dynamixel_wizard2/

@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/kr/platform/rh_p12_rna/gazebo/
 sidebar:
-  title: RH-P12-RN
+  title: RH-P12-RN(A)
   nav: "rh_p12_rna"
 product_group: rh_p12_rna
 page_number: 3
@@ -17,14 +17,14 @@ page_number: 3
 
 # [Gazebo Simulation](gazebo-simulation)
 
-## [Gazebo 설치](gazebo-설치)
-ROS-Gazebo 패키지 설치
+## [Gazebo 설치](#gazebo-설치)
+ROS-Gazebo 패키지를 설치.
 
 ### Gazebo with ROS
 - Reference : [Gazebo Tutorials](http://gazebosim.org/tutorials?cat=connect_ros)
 
 ### RH-P12-RN 패키지 설치
-RH-P12-RN(A) 의 Gazebo 패키지를 받기 위해 아래의 명령어를 입력합니다.
+RH-P12-RN(A) 의 Gazebo 패키지를 받기 위해 아래의 명령어를 입력하세요.
 
 ```
 $ cd catkin_ws/src
@@ -32,7 +32,7 @@ $ git clone https://github.com/ROBOTIS-GIT/RH-P12-RN-A
 ```
 
 ### 추가 설치
-ros-kinetic-desktop-full 로 ROS 를 설치했다면 다음 패키지들을 설치해야 합니다.
+ros-kinetic-desktop-full 로 ROS 를 설치했다면 다음 패키지들을 설치하세요.
 
 ```
 $ sudo apt install ros-kinetic-ros-control
@@ -53,11 +53,11 @@ Gazebo 에서 RH-P12-RN(A) 를 불러오기 위한 명령
 $ roslaunch rh_p12_rn_a_gazebo rh_p12_rn_a_gazebo.launch
 ```
 
-Gazebo 의 Play 버튼을 누릅니다.  
+Gazebo 의 Play 버튼을 누르세요. 
 
 ![](/assets/images/platform/rh_p12_rn/gazebo_play_button.png)  
 
-움직임을 확인하기 위해 터미널을 열고 아래의 명령을 입력합니다.  
+움직임을 확인하기 위해 터미널을 열고 아래의 명령을 입력하세요.  
 
 - 손가락을 열린 상태로 보내는 명령
 

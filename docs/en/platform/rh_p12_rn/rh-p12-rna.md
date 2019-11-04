@@ -17,22 +17,13 @@ page_number: 1
 
 ![](/assets/images/platform/rh_p12_rn/rh-p12-rn_product_new.png)
 
-> New RH_P12_RN(A) (Released on 2019 4rd quarter)
+> RH_P12_RN(A)
 
-![](/assets/images/platform/rh_p12_rn/rh-p12-rn_product_old.png)
-
-> Old RH_P12_RN(A) (This type has been discontinued)
-
-| Type |                              Image                              |   Stroke   |
-|:----:|:---------------------------------------------------------------:|:----------:|
-| New  | ![](/assets/images/platform/rh_p12_rn/rh-p12-rn_finger_new.png) | 0 ~ 109 mm |
-| Old  | ![](/assets/images/platform/rh_p12_rn/rh-p12-rn_finger_old.png) | 0 ~ 106 mm |
-
-### RH-P12-RN(A)
+## [RH-P12-RN(A)](#rh-p12-rna)
 - It uses improved firmware version compared to RH-P12-RN.
 - It has the similar control table structure to **DYNAMIXEL-PRO(A)** and **PRO+** series, so that they can be used together.
 
-### RH-P12-RN
+## [RH-P12-RN](#rh-p12-rn)
 - It uses old firmware version.
 - It has the similar control table structure to **DYNAMIXEL-PRO** series, so that they can be used together.
 - More information is available at [RH-P12-RN](/docs/en/platform/rh_p12_rn/) manual.  
@@ -42,30 +33,39 @@ You can choose the desired firmware version by using **Firmware Recovery** of [R
 **NOTE** : As DYNAMIXEL-PRO series is discontinued, using RH-P12-RN(A) Firmware version is recommended. 
 {: .notice}
 
+## [Hardware Revision History](#hardware-revision-history)
+
+| Rev |                              Image                              |   Stroke   |      Date      |
+|:---:|:---------------------------------------------------------------:|:----------:|:--------------:|
+|  0  | ![](/assets/images/platform/rh_p12_rn/rh-p12-rn_finger_old.png) | 0 ~ 106 mm |       .        |
+|  1  | ![](/assets/images/platform/rh_p12_rn/rh-p12-rn_finger_new.png) | 0 ~ 109 mm | Nov 11th, 2019 |
+
+
+
 # [Specifications](#specifications)
 
-| Item                   | Specifications                                                                                 |
-|:-----------------------|:-----------------------------------------------------------------------------------------------|
-| MCU                    | ST CORTEX-M4 (STM32F405 @ 168 Mhz, 32 bit)                                                       |
+| Item                   | Specifications                                                                                  |
+|:-----------------------|:------------------------------------------------------------------------------------------------|
+| MCU                    | ST CORTEX-M4 (STM32F405 @ 168 Mhz, 32 bit)                                                      |
 | Position Sensor        | Contactless Absolute Encoder (12 bit, 360&deg;)<br />Maker : ams(www.ams.com), Part No : AS5045 |
-| Motor                  | Coreless                                                                                       |
-| Baud Rate              | 9,600 bps ~ 10.5 Mbps                                                                          |
-| Control Algorithm      | PID Control                                                                                    |
-| Degree of Precision    | 0.088&deg;                                                                                     |
-| Operating Mode         | Current Control Mode<br />Current based Position Control Mode                                  |
+| Motor                  | Coreless                                                                                        |
+| Baud Rate              | 9,600 bps ~ 10.5 Mbps                                                                           |
+| Control Algorithm      | PID Control                                                                                     |
+| Degree of Precision    | 0.088&deg;                                                                                      |
+| Operating Mode         | Current Control Mode<br />Current based Position Control Mode                                   |
 | Weight                 | 500 g                                                                                           |
 | Stroke                 | 0 ~ 106 mm                                                                                      |
-| Gear Ratio             | 1181 : 1                                                                                       |
+| Gear Ratio             | 1181 : 1                                                                                        |
 | Maximum Gripping Force | 170 N                                                                                           |
 | Recommended Payload    | 5 kg                                                                                            |
-| Operating Temperature  | -5&deg;C ~ 55&deg;C                                                                            |
+| Operating Temperature  | -5&deg;C ~ 55&deg;C                                                                             |
 | Nominal Voltage        | 24 V                                                                                            |
-| Command Signal         | Digital Packet                                                                                 |
-| Protocol Type          | RS485 Asynchronous Serial Communication<br />(8bit, 1stop, No Parity)                          |
-| Physical Connection    | RS485 Multidrop Bus                                                                            |
-| ID                     | 0 ~ 252                                                                                        |
-| Feedback               | Position, Velocity, Current, Temperature, Input Voltage, etc                                   |
-| Material               | Full Metal Gear, Metal Body                                                                    |
+| Command Signal         | Digital Packet                                                                                  |
+| Protocol Type          | RS485 Asynchronous Serial Communication<br />(8bit, 1stop, No Parity)                           |
+| Physical Connection    | RS485 Multidrop Bus                                                                             |
+| ID                     | 0 ~ 252                                                                                         |
+| Feedback               | Position, Velocity, Current, Temperature, Input Voltage, etc                                    |
+| Material               | Full Metal Gear, Metal Body                                                                     |
 | Standby Current        | 30 mA                                                                                           |
 | Peak Current           | 3.33 A                                                                                          |
 
