@@ -37,8 +37,8 @@ You can choose the desired firmware version by using **Firmware Recovery** of [R
 
 | Rev |                              Image                              |   Stroke   |      Date      |
 |:---:|:---------------------------------------------------------------:|:----------:|:--------------:|
-|  0  | ![](/assets/images/platform/rh_p12_rn/rh-p12-rn_finger_old.png) | 0 ~ 106 mm |       .        |
-|  1  | ![](/assets/images/platform/rh_p12_rn/rh-p12-rn_finger_new.png) | 0 ~ 109 mm | Nov 11th, 2019 |
+|  0  | ![](/assets/images/platform/rh_p12_rn/rh-p12-rn_finger_old.png) | 0 ~ 109 mm |       .        |
+|  1  | ![](/assets/images/platform/rh_p12_rn/rh-p12-rn_finger_new.png) | 0 ~ 106 mm | Nov 04th, 2019 |
 
 
 

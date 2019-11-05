@@ -214,8 +214,8 @@ main:
   - title: "PLATFORM"
     titlekr: "플랫폼"
     children:
-    - title: "*ROBOTIS OP"
-      titlekr: "*로보티즈 OP"
+    - title: "ROBOTIS OP"
+      titlekr: "로보티즈 OP"
       url: /platform/op/getting_started/
       children:  
       - title: "*ROBOTIS OP"
@@ -233,6 +233,9 @@ main:
       - title: "RH-P12-RN(A)"
         titlekr: "RH-P12-RN(A)"
         url: /platform/rh_p12_rna/
+      - title: "RH-P12-RN-UR"
+        titlekr: "RH-P12-RN-UR"
+        url: /platform/rh_p12_rn_ur/
       - titlekr: "*로봇핸드 RX28"
         url: /platform/robothand_rx28/
       - titlekr: "*로봇핸드 MX28"
