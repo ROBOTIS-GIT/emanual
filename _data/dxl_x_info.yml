@@ -181,7 +181,7 @@ xl430-w250:
   material:           "Engineering Plastic"
   standbycurrent:     "52 [mA]"
 
-_2xl430-w250:
+2xl430-w250:
   mcu:                *mcu
   encoder:            "Contactless absolute encoder (12Bit, 360 [&deg;])<br />Maker : ams(www.ams.com), Part No : AS5601"
   motor:              "Cored"
