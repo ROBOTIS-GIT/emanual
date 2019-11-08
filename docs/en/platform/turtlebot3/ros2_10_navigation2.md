@@ -80,8 +80,7 @@ $ ros2 run turtlebot3_teleop teleop_keyboard
 
 When this process is completed, the robot estimates its actual position and orientation by using the position and orientation specified by the green arrow as the initial pose. Every green arrow stands for an expected position of TurtleBot3. The laser scanner will draw approximate figures of wall on the map. If the drawing doesn't show the figures incorrectly, repeat localizing the TurtleBot3 from clicking `2D Pose Estimate` button above.
 
-![](/assets/images/platform/turtlebot3/ros2/tb3_navigation2_rviz_1.png)
-![](/assets/images/platform/temp.png)  
+![](/assets/images/platform/turtlebot3/ros2/tb3_navigation2_rviz_01.png)
 > 2D Pose Estimate
 
 **TIP**: The `turtlebot3_teleop_keyboard` node used for `Estimate Initial Pose` should be terminated after use. If it does not, the robot will behave strangely because the topic overlaps with the `/cmd_vel` topic from the navigation node of the next step.
@@ -97,8 +96,7 @@ When this process is completed, the robot estimates its actual position and orie
 
 The robot will create a path to avoid obstacles to its destination based on the map. Then, the robot moves along the path. At this time, even if an obstacle is suddenly detected, the robot moves to the target point avoiding the obstacle.
 
-![](/assets/images/platform/turtlebot3/ros2/tb3_navigation2_rviz_2.png)
-![](/assets/images/platform/temp.png)  
+![](/assets/images/platform/turtlebot3/ros2/tb3_navigation2_rviz_02.png)
 > Navigation2 Goal
   
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VtyqUuuZAFA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -106,75 +104,106 @@ The robot will create a path to avoid obstacles to its destination based on the 
 Setting a goal position might fail if the path to the goal position cannot be created. If you wish to stop the robot before it reaches to the goal position, set the current position of TurtleBot3 as a goal position.  
      
 ## [Tuning Guide](#tuning-guide)  
-◁◁◁◁◁◁◁◁◁◁◁◁◁◁◁◁◁◁◁◁    
-Navigation stack has many parameters to change performances for different robots. You can get an information about it in [ROS Wiki](http://wiki.ros.org/navigation) or refer chapter 11 in [ROS Robot Programming](https://community.robotsource.org/t/download-the-ros-robot-programming-book-for-free/51) book.
+Navigation2 stack has many parameters to change performances for different robots. It's similar with ROS1 navigation. You can get an information about it in [ROS Navigation Wiki](http://wiki.ros.org/navigation) or refer chapter 11 in [ROS Robot Programming](https://community.robotsource.org/t/download-the-ros-robot-programming-book-for-free/51) book.
 
 This tuning guide give some tips for you to configue important parameters. If you want to change performances depends on your environments, this tips might be help you and save your time.
-
-_**inflation_radius**_
-- `turtlebot3_navigation/param/costmap_common_param_$(model).yaml`
+  
+### local_costmap(global_cost_map)  
+  
+_**inflation_layer.inflation_radius**_
+- `turtlebot3_navigation2/param/$(model).yaml`
 - This parameter makes inflation area from the obstacle. Path would be planned in order that it don't across this area. It is safe that to set this to be bigger than robot radius. For more information about it please following [page of costmap_2d wiki](http://wiki.ros.org/costmap_2d#Inflation). 
 
 ![](/assets/images/platform/turtlebot3/navigation/tuning_inflation_radius.png)
 
-_**cost_scaling_factor**_ 
-- `turtlebot3_navigation/param/costmap_common_param_$(model).yaml`
+_**inflation_layer.cost_scaling_factor**_ 
+- `turtlebot3_navigation2/param/$(model).yaml`
 - This factor is multiplied by cost value. Because it is an reciprocal propotion, this parameter is increased, the cost is decreased. 
 
 ![](/assets/images/platform/turtlebot3/navigation/tuning_cost_scaling_factor.png)
 
   The best path is for the robot to pass through a center of between obstacles. Set this factor to be smaller in order to far from obstacles.
-
+  
+### dwb_controller 
+  
 _**max_vel_x**_ 
-- `turtlebot3_navigation/param/dwa_local_planner_params_$(model).yaml`
+- `turtlebot3_navigation2/param/$(model).yaml`
 - This factor is set the maximum value of translational velocity. 
 
 _**min_vel_x**_ 
-- `turtlebot3_navigation/param/dwa_local_planner_params_$(model).yaml`
+- `turtlebot3_navigation2/param/$(model).yaml`
 - This factor is set the minimum value of translational velocity. If set this negative, the robot can move backwards.
 
-_**max_trans_vel**_
-- `turtlebot3_navigation/param/dwa_local_planner_params_$(model).yaml`
-- Actual value of the maximum translational velocity. The robot can not be faster than this.
+_**max_vel_y**_
+- `turtlebot3_navigation2/param/$(model).yaml`
+- The maximum y velocity for the robot in m/s.
 
-_**min_trans_vel**_
-- `turtlebot3_navigation/param/dwa_local_planner_params_$(model).yaml`
-- Actual value of the minimum translational velocity. The robot can not be slower than this.
-
-_**max_rot_vel**_
-- `turtlebot3_navigation/param/dwa_local_planner_params_$(model).yaml`
+_**min_vel_y**_
+- `turtlebot3_navigation2/param/$(model).yaml`
+- The minimum y velocity for the robot in m/s.  
+  
+_**max_vel_theta**_  
+- `turtlebot3_navigation2/param/$(model).yaml`
 - Actual value of the maximum rotational velocity. The robot can not be faster than this.
 
-_**min_rot_vel**_
-- `turtlebot3_navigation/param/dwa_local_planner_params_$(model).yaml`
-- Actual value of the minimum rotational velocity. The robot can not be slower than this.
+_**min_speed_theta**_
+- `turtlebot3_navigation2/param/$(model).yaml`
+- Actual value of the minimum rotational speed. The robot can not be slower than this.
 
+_**max_speed_xy**_
+- `turtlebot3_navigation2/param/$(model).yaml`
+- The absolute value of the maximum translational velocity for the robot in m/s.
+
+_**min_speed_xy**_
+- `turtlebot3_navigation2/param/$(model).yaml`
+- The absolute value of the minimum translational velocity for the robot in m/s.  
+   
 _**acc_lim_x**_
-- `turtlebot3_navigation/param/dwa_local_planner_params_$(model).yaml`
-- Actual value of the translational acceleration limit.
+- `turtlebot3_navigation2/param/$(model).yaml`
+- The x acceleration limit of the robot in meters/sec^2.
+
+_**acc_lim_y**_
+- `turtlebot3_navigation2/param/$(model).yaml`
+- The y acceleration limit of the robot in meters/sec^2.
 
 _**acc_lim_theta**_
-- `turtlebot3_navigation/param/dwa_local_planner_params_$(model).yaml`
-- Actual value of the rotational acceleration limit.
+- `turtlebot3_navigation2/param/$(model).yaml`
+- The rotational acceleration limit of the robot in radians/sec^2.
+
+_**decel_lim_x**_
+- `turtlebot3_navigation2/param/$(model).yaml`
+- The deceleration limit of the robot in the x direction in m/s^2.
+
+_**decel_lim_y**_
+- `turtlebot3_navigation2/param/$(model).yaml`
+- The deceleration limit of the robot in the y direction in m/s^2.
+
+_**decel_lim_theta**_
+- `turtlebot3_navigation2/param/$(model).yaml`
+- The deceleration limit of the robot in the theta direction in rad/s^2.
 
 _**xy_goal_tolerance**_
-- `turtlebot3_navigation/param/dwa_local_planner_params_$(model).yaml`
+- `turtlebot3_navigation2/param/$(model).yaml`
 - The x,y distance allowed when the robot reaches its goal pose.
 
 _**yaw_goal_tolerance**_
-- `turtlebot3_navigation/param/dwa_local_planner_params_$(model).yaml`
+- `turtlebot3_navigation2/param/$(model).yaml`
 - The yaw angle allowed when the robot reaches its goal pose.
 
+_**transform_tolerance**_
+- `turtlebot3_navigation2/param/$(model).yaml`
+- It allows the latency for tf messages.
+  
 _**sim_time**_
-- `turtlebot3_navigation/param/dwa_local_planner_params_$(model).yaml`
+- `turtlebot3_navigation2/param/$(model).yaml`
 - This factor is set forward simulation in seconds. Too low value is in sufficient time to pass narrow area and too high value is not allowed rapidly rotates. You can watch defferences of length of the yellow line in below image.
 
 ![](/assets/images/platform/turtlebot3/navigation/tuning_sim_time.png)  
-▷▷▷▷▷▷▷▷▷▷▷▷▷▷▷▷▷▷▷▷    
-  
+    
 ## [References](#references)
-- [Naviagation2]
+- [Navigation2]
 - [ROS Navigation Tuning Guide by Kaiyu Zheng]
+- [Navigation]
 
 
 
@@ -184,4 +213,5 @@ _**sim_time**_
 
 [Basic Navigation Tuning Guide (ROS Wiki)]: http://wiki.ros.org/navigation/Tutorials/Navigation%20Tuning%20Guide
 [ROS Navigation Tuning Guide by Kaiyu Zheng]: http://kaiyuzheng.me/documents/navguide.pdf
-[Naviagation2]: https://github.com/ros-planning/navigation2/blob/master/README.md
+[Navigation2]: https://ros-planning.github.io/navigation2/
+[Navigation]: http://wiki.ros.org/navigation
