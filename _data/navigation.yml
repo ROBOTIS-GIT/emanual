@@ -214,25 +214,32 @@ main:
   - title: "PLATFORM"
     titlekr: "플랫폼"
     children:
-    - title: "*ROBOTIS OP"
-      titlekr: "*로보티즈 OP"
+    - title: "ROBOTIS OP"
+      titlekr: "로보티즈 OP"
       url: /platform/op/getting_started/
-    - title: "ROBOTIS OP2"
-      titlekr: "로보티즈 OP2"
-      url: /platform/op2/getting_started/
-    - title: "ROBOTIS OP3"
-      titlekr: "로보티즈 OP3"
-      url: /platform/op3/introduction/
-    - title: "RH-P12-RN(A)"
-      titlekr: "RH-P12-RN(A)"
-      url: /platform/rh_p12_rna/
-    - title: "RH-P12-RN"
-      titlekr: "RH-P12-RN"
-      url: /platform/rh_p12_rn/
-    - titlekr: "로봇핸드 RX28"
-      url: /platform/robothand_rx28/
-    - titlekr: "로봇핸드 MX28"
-      url: /platform/robothand_mx28/
+      children:  
+      - title: "*ROBOTIS OP"
+        titlekr: "*로보티즈 OP"
+        url: /platform/op/getting_started/
+      - title: "ROBOTIS OP2"
+        titlekr: "로보티즈 OP2"
+        url: /platform/op2/getting_started/
+      - title: "ROBOTIS OP3"
+        titlekr: "로보티즈 OP3"
+        url: /platform/op3/introduction/
+    - title: "Robot Hands"
+      titlekr: "로봇핸드"
+      children:
+      - title: "RH-P12-RN(A)"
+        titlekr: "RH-P12-RN(A)"
+        url: /platform/rh_p12_rna/
+      - title: "RH-P12-RN-UR"
+        titlekr: "RH-P12-RN-UR"
+        url: /platform/rh_p12_rn_ur/
+      - titlekr: "*로봇핸드 RX28"
+        url: /platform/robothand_rx28/
+      - titlekr: "*로봇핸드 MX28"
+        url: /platform/robothand_mx28/
     - title: "THORMANG3"
       titlekr: "똘망3"
       url: /platform/thormang3/introduction/
@@ -15287,6 +15294,44 @@ rh_p12_rna:
       titlekr: "인증 획득"
       url: /platform/rh_p12_rna/#certifications
       urlkr: /platform/rh_p12_rna/#인증-획득
+  - title: "Examples"
+    titlekr: "예제"
+    url: /platform/rh_p12_rna/examples/#examples
+    urlkr: /platform/rh_p12_rna/examples/#예제
+    children:
+    - title: "Device Setup(RH-P12-RN(A))"
+      titlekr: "장치 설정(RH-P12-RN(A))"
+      url: /platform/rh_p12_rna/examples/#device-setuprh-p12-rna
+      urlkr: /platform/rh_p12_rna/examples/#장치-설정rh-p12-rna
+    - title: "Communication Port Setup"
+      titlekr: "통신포트 설정"
+      url: /platform/rh_p12_rna/examples/#communication-port-setup
+      urlkr: /platform/rh_p12_rna/examples/#통신포트-설정
+    - title: "Windows Example"
+      titlekr: "윈도우즈 예제"
+      url: /platform/rh_p12_rna/examples/#windows-example
+      urlkr: /platform/rh_p12_rna/examples/#윈도우즈-예제
+    - title: "Linux Example"
+      titlekr: "리눅스 예제"
+      url: /platform/rh_p12_rna/examples/#linux-example
+      urlkr: /platform/rh_p12_rna/examples/#리눅스-예제
+    - title: "ROS GUI Example"
+      titlekr: "ROS GUI 예제"
+      url: /platform/rh_p12_rna/examples/#ros-gui-example
+      urlkr: /platform/rh_p12_rna/examples/#ros-gui-예제
+  - title: "Gazebo Simulation"
+    titlekr: "Gazebo 시뮬레이션"
+    url: /platform/rh_p12_rna/gazebo/#gazebo-simulation
+    urlkr: /platform/rh_p12_rna/gazebo/#gazebo-시뮬레이션
+    children:
+    - title: "Gazebo Install"
+      titlekr: "Gazebo 설치"
+      url: /platform/rh_p12_rna/gazebo/#gazebo-simulation
+      urlkr: /platform/rh_p12_rna/gazebo/#gazebo-시뮬레이션
+    - title: "Run Simulator"
+      titlekr: "시뮬레이터 실행"
+      url: /platform/rh_p12_rna/gazebo/#run-simulator
+      urlkr: /platform/rh_p12_rna/gazebo/#시뮬레이터-실행
 
 robothand_rx28:
   - titlekr: "개요"

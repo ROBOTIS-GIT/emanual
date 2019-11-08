@@ -10,40 +10,66 @@ sidebar:
   title: RH-P12-RN(A)
   nav: "rh_p12_rna"
 product_group: rh_p12_rna
+page_number: 1
 ---
 
 # [개요](#개요)
 
-![](/assets/images/platform/rh_p12_rn/rh-p12-rn_product.png)
+![](/assets/images/platform/rh_p12_rn/rh-p12-rn_product_new.png)
 
-> RH_P12_RN(A)
+>  RH_P12_RN(A) 
+
+## [RH-P12-RN(A)](#rh-p12-rna)
+- 개선된 펌웨어를 사용합니다.
+- **다이나믹셀 PRO(A)** 및 **다이나믹셀 PRO+**와 유사한 컨트롤 테이블을 사용합니다. 
+
+## [RH-P12-RN](#rh-p12-rn)
+- 구 버전 펌웨어를 사용합니다.
+- **다이나믹셀 PRO**와 유사한 컨트롤 테이블을 사용합니다.
+- 자세한 내용은 [RH-P12-RN](/docs/kr/platform/rh_p12_rn/) 매뉴얼을 참조 해주세요.  
+
+{% capture info_01 %}
+**참조** : 
+펌웨어 복구를 이용하여, 로봇핸드의 펌웨어를 변경할수있습니다. **RH-P12-RN(A) 펌웨어 사용을 권장합니다.**  
+[로보플러스 매니저 2.0](/docs/kr/software/rplus2/manager/#펌웨어-복구)으로 펌웨어 복구하기.  
+[다이나믹셀 위자드 2.0](/docs/kr/software/dynamixel/dynamixel_wizard2/#펌웨어-복구)으로 펌웨어 복구하기.
+{% endcapture %}
+<div class="notice">{{ info_01 | markdownify }}</div>
+
+## [하드웨어 변경이력](#하드웨어-변경이력)
+
+| Rev |                             이미지                              |  스트로크  |  변경날짜  |
+|:---:|:---------------------------------------------------------------:|:----------:|:----------:|
+|  0  | ![](/assets/images/platform/rh_p12_rn/rh-p12-rn_finger_old.png) | 0 ~ 109 mm |     .      |
+|  1  | ![](/assets/images/platform/rh_p12_rn/rh-p12-rn_finger_new.png) | 0 ~ 106 mm | 2019.11.04 |
+
 
 # [주요 사양](#주요-사양)
 
-| 항목                | 사양                                                                                           |
-|:--------------------|:-----------------------------------------------------------------------------------------------|
-| MCU                 | ST CORTEX-M4 (STM32F405 @ 168Mhz, 32bit)                                                       |
-| 위치 센서           | Contactless Absolute Encoder (12bit, 360&deg;)<br />Maker : ams(www.ams.com), Part No : AS5045 |
-| 모터                | Coreless                                                                                       |
-| 통신 속도           | 9,600 bps ~ 10.5 Mbps                                                                          |
-| 제어 알고리즘       | PID Control                                                                                    |
-| 정밀도              | 0.088&deg;                                                                                     |
-| 동작 모드           | 전류제어 모드<br />전류기반 위치제어 모드                                                      |
-| 무게                | 500g                                                                                           |
-| 스트로크            | 0 ~ 109mm                                                                                      |
-| 감속비              | 1181 : 1                                                                                       |
-| 최대 파지력         | 170N                                                                                           |
-| 권장 가반하중       | 5kg                                                                                            |
-| 동작 온도           | -5&deg;C ~ 55&deg;C                                                                            |
-| 사용 전압           | 24V                                                                                            |
-| Command Signal      | Digital Packet                                                                                 |
-| Protocol Type       | RS485 Asynchronous Serial Communication<br />(8bit, 1stop, No Parity)                          |
-| Physical Connection | RS485 Multidrop Bus                                                                            |
-| ID                  | 0 ~ 252                                                                                        |
-| Feedback            | Position, Velocity, Current, Temperature, Input Voltage, etc                                   |
-| Material            | Full Metal Gear, Metal Body                                                                    |
-| Standby Current     | 30mA                                                                                           |
-| Peak Current        | 3.33A                                                                                          |
+| 항목                | 사양                                                                                            |
+|:--------------------|:------------------------------------------------------------------------------------------------|
+| MCU                 | ST CORTEX-M4 (STM32F405 @ 168 Mhz, 32 bit)                                                      |
+| 위치 센서           | Contactless Absolute Encoder (12 bit, 360&deg;)<br />Maker : ams(www.ams.com), Part No : AS5045 |
+| 모터                | Coreless                                                                                        |
+| 통신 속도           | 9,600 bps ~ 10.5 Mbps                                                                           |
+| 제어 알고리즘       | PID Control                                                                                     |
+| 정밀도              | 0.088&deg;                                                                                      |
+| 동작 모드           | 전류제어 모드<br />전류기반 위치제어 모드                                                       |
+| 무게                | 500 g                                                                                           |
+| 스트로크            | 0 ~ 106 mm                                                                                      |
+| 감속비              | 1181 : 1                                                                                        |
+| 최대 파지력         | 170 N                                                                                           |
+| 권장 가반하중       | 5 kg                                                                                            |
+| 동작 온도           | -5&deg;C ~ 55&deg;C                                                                             |
+| 사용 전압           | 24 V                                                                                            |
+| Command Signal      | Digital Packet                                                                                  |
+| Protocol Type       | RS485 Asynchronous Serial Communication<br />(8 bit, 1stop, No Parity)                          |
+| Physical Connection | RS485 Multidrop Bus                                                                             |
+| ID                  | 0 ~ 252                                                                                         |
+| Feedback            | Position, Velocity, Current, Temperature, Input Voltage, etc                                    |
+| Material            | Full Metal Gear, Metal Body                                                                     |
+| Standby Current     | 30 mA                                                                                           |
+| Peak Current        | 3.33 A                                                                                          |
 
 {% include kr/dxl/warning.md %}
 
@@ -64,8 +90,8 @@ product_group: rh_p12_rna
 |  20  |       4        | [Homing Offset](#homing-offset)             |  RW  |   0    |   0 ~ 1,150   |        1 [pulse]        |
 |  24  |       4        | [Moving Threshold](#moving-threshold)       |  RW  |   80   |   0 ~ 2,970   |     0.01 [rev/min]      |
 |  31  |       1        | [Temperature Limit](#temperature-limit)     |  RW  |   80   |    0 ~ 100    |       1 [&deg;C]        |
-|  32  |       2        | [Max Voltage Limit](#max-voltage-limit)     |  RW  |  350   |    150 ~ 350    |         0.1 [V]         |
-|  34  |       2        | [Min Voltage Limit](#min-voltage-limit)     |  RW  |  150   |    150 ~ 350    |         0.1 [V]         |
+|  32  |       2        | [Max Voltage Limit](#max-voltage-limit)     |  RW  |  350   |   150 ~ 350   |         0.1 [V]         |
+|  34  |       2        | [Min Voltage Limit](#min-voltage-limit)     |  RW  |  150   |   150 ~ 350   |         0.1 [V]         |
 |  36  |       2        | [PWM Limit](#pwm-limit)                     |  RW  | 2,009  |   0 ~ 2,009   |            -            |
 |  38  |       2        | [Current Limit](#current-limit)             |  RW  | 1,984  |   0 ~ 1,984   |         1 [mA]          |
 |  40  |       4        | [Acceleration Limit](#acceleration-limit)   |  RW  | 3,447  | 0 ~ 1,378,788 | 1 [rev/min<sup>2</sup>] |
