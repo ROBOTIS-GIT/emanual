@@ -226,14 +226,27 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 
 3. Click the `Torque` button to enable DYNAMIXEL Torque.
 
-4. Select `Goal Position` item in the control table in the middle column.
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_torque_on.png)  
+
+4. Select `Goal Position` or `Goal Velocity` item in the control table in the middle column.
+
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_004_kr.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_004_velocity_mode_kr.png)      
 
 5. Position controlling interface will appear on the buttom right corner of the program.
 
     **WARNING** : Please be cautious when changing values as DYNAMIXEL can rotate or move.
     {: .notice--warning}
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_004.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_004.png)  
+    - When selecting `Position control` from Operation Mode, you can use a virtual dial controller 
+    - Control a horn of DYNAMIXEL by using the controller.
+    - Input values into the input window.  
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_004_velocity_mode.png)
+    - When selecting `Velocitiy control`/`Current control`/`PWM control` from Operation Mode, you can use a virtual joypad. 
+    - Move a horn to CW / CCW by using the controller. 
+    - Input values into the input window to increase (or decrease) the speed of a horn of DYNAMIXEL.
+    - More information on the virtual controller is available at [Modifying Control Value](#modifying-control-values) 
 
 6. `Communication Status` on the buttom left corner represents communication status between PC and DYNAMIXELs.
 
@@ -340,12 +353,17 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 6. Transmit the assembled packet with `Send` button.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_006.png)
-
+    
 7. Select a received packet from the packet list to see the detail information.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_007.png)
 
-## [Firmware Update](#firmware-update)
+## [Firmware Update](#firmware-update) 
+
+Update firmware version of DYNAMIXEL, if you see its model name with a special charactor (\*), on the device list, in light grey.  
+When positioning a mouse cursor on its model name, **Firmware update is available** will be shown up.  
+  
+![](/assets/images/sw/dynamixel/wizard2/wizard2_update_notification.png)
 
 1. Go to `Tools` > `Firmware Update`
 
@@ -372,11 +390,11 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_016.png)
 
-2. Confirm all DYNAMIXEL is correctly detected in the list, then click `Next` button.
+2. Select all or desired DYNAMIXELs, then click `Next` button.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_update_all_001.png)
 
-3. Among detected DYNAMIXELs, devices with outdated firmwares are updated.
+3. Firmware of selected DYNAMIXELs are updated.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_update_all_002.png)
 
@@ -398,25 +416,28 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_002.png)
 
-4. The proper communication port that is connected to DYNAMIXEL has to be selected manually. If the port is in use, it has to be released first.
+4. Select a desired firmware version. 
+    
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_003.png) 
+
+5. The proper communication port that is connected to DYNAMIXEL has to be selected manually. If the port is in use, it has to be released first.
 
     **WARNING** : Only one DYNAMIXEL should be connected to the port when recoverying the DYNAMIXEL firmware.
     {: .notice--warning}
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_003.png)
-
-5. Toggle the power of DYNAMIXEL to be detected from the DYNAMIXEL Wizard 2.0.
-
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_004.png)
 
-6. If DYNAMIXEL is successfully detected, wizard begins firmware recovery. Please do **NOT** disconnect or turn off the DYNAMIXEL.
+6. Toggle the power of DYNAMIXEL to be detected from the DYNAMIXEL Wizard 2.0.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_005.png)
 
-7. Confirm the firmware recovery result.
+7. If DYNAMIXEL is successfully detected, wizard begins firmware recovery. Please do **NOT** disconnect or turn off the DYNAMIXEL.
+    
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_006.png)
+
+8. Confirm the firmware recovery result.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_007.png)
-
 
 # [Advanced Features](#advanced-features)
 
