@@ -31,7 +31,7 @@ OpenMANIPULATOR-X controller provides basic manipulation of OpenMANIPULATOR-X. Y
 Please, open a terminal then run the following command in the terminal.
 
 ``` bash
-$ ros2 run open_manipulator_x_controller open_manipulator_x_controller 
+$ ros2 launch open_manipulator_x_controller open_manipulator_x_controller.launch.py  
 ```
 
 {% capture warning_01 %}

@@ -82,11 +82,11 @@ sidebar:
 - 로봇이 기본 자세를 취할 때, 로봇의 타입과 해당 멜로디가 일치하지 않습니다.
   > 모터의 ID 7, 8, 9, 10번을 정해진 위치에 제대로 조립했는지, 배선이 빠져 있지 않은지 확인하세요.
 
-|로봇 타입|"도" |"도레"|"도레미"|"도레미" 반복|
-| :---: | :---: | :---: | :---: |
-|TYPE A|O<bR/>(올바르게 조립 됨)|ID 9, 10의 배선을 확인|ID 7, 8의 배선을 확인|일부 모터의 케이블이 빠져 있습니다. 조립서를 보고 배선을 다시 확인하세요.|
-|TYPE B|-|O<BR/>(올바르게 조립 됨)|ID 9, 10번 모터를 연결해야 할 곳에 7, 8이 잘못 연결됨|일부 모터의 케이블이 빠져 있습니다. 조립서를 보고 배선을 다시 확인하세요.|
-|TYPE C|-|ID 7, 8번 모터를 연결해야 할 곳에 9, 10이 잘못 연결 됨|O<BR/>(올바르게 조립 됨)|일부 모터의 케이블이 빠져 있습니다. 조립서를 보고 배선을 다시 확인하세요.|
+| 로봇 타입 |           "도"           |                         "도레"                         |                                                     "도레미"|"도레미" 반복                                                      |
+|:---------:|:------------------------:|:------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------:|
+|  TYPE A   | O<bR/>(올바르게 조립 됨) |                 ID 9, 10의 배선을 확인                 |                 ID 7, 8의 배선을 확인|일부 모터의 케이블이 빠져 있습니다. 조립서를 보고 배선을 다시 확인하세요.                 |
+|  TYPE B   |            -             |                O<BR/>(올바르게 조립 됨)                | ID 9, 10번 모터를 연결해야 할 곳에 7, 8이 잘못 연결됨|일부 모터의 케이블이 빠져 있습니다. 조립서를 보고 배선을 다시 확인하세요. |
+|  TYPE C   |            -             | ID 7, 8번 모터를 연결해야 할 곳에 9, 10이 잘못 연결 됨 |               O<BR/>(올바르게 조립 됨)|일부 모터의 케이블이 빠져 있습니다. 조립서를 보고 배선을 다시 확인하세요.                |
 
 ### 로봇 조종하기
 로봇을 켜고 PLAY 모드를 실행 한 후, R / D / L / U 버튼을 누르면 다음 모드가 실행 됩니다.
@@ -118,52 +118,52 @@ sidebar:
 
 ##### 보행 ( 방향 버튼 : U / L / D / R )
 
-|Buttons|Motion|
-|:---:|:---:|
-|U|앞으로 가기|
-|D|뒤로 가기|
-|L|왼쪽으로 회전|
-|R|오른쪽으로 회전|
-|U + L|전진하며 왼쪽으로 회전|
-|D + L|왼쪽 옆걸음|
-|U + R|전진하며 오른쪽으로 회전|
-|D + R|오른쪽 옆걸음|
+| Buttons |          Motion          |
+|:-------:|:------------------------:|
+|    U    |       앞으로 가기        |
+|    D    |        뒤로 가기         |
+|    L    |      왼쪽으로 회전       |
+|    R    |     오른쪽으로 회전      |
+|  U + L  |  전진하며 왼쪽으로 회전  |
+|  D + L  |       왼쪽 옆걸음        |
+|  U + R  | 전진하며 오른쪽으로 회전 |
+|  D + R  |      오른쪽 옆걸음       |
 
 ##### 자세 바꿈 ( 1 + 방향 버튼 )
 
-|Buttons|Motion|
-|:---:|:---:|
-|1 + U|엎드려 일어나기(등을 보이고 넘어졌을 때)|
-|1 + D|누워 일어나기(가슴을 보이고 넘어졌을 때)|
-|1 + L|팔굽혀 펴기|
-|1 + R|물구나무 서기|
+| Buttons |                  Motion                  |
+|:-------:|:----------------------------------------:|
+|  1 + U  | 엎드려 일어나기(등을 보이고 넘어졌을 때) |
+|  1 + D  | 누워 일어나기(가슴을 보이고 넘어졌을 때) |
+|  1 + L  |               팔굽혀 펴기                |
+|  1 + R  |              물구나무 서기               |
 
 ##### 데모 동작 ( 2 + 방향 버튼 )
 
-|Buttons|Motion|
-|:---:|:---:|
-|2 + U|가슴 치기|
-|2 + D|머리 긁기|
-|2 + L|두 손 올려 환호하기|
-|2 + R|허리 숙여 인사하기|
+| Buttons |       Motion        |
+|:-------:|:-------------------:|
+|  2 + U  |      가슴 치기      |
+|  2 + D  |      머리 긁기      |
+|  2 + L  | 두 손 올려 환호하기 |
+|  2 + R  | 허리 숙여 인사하기  |
 
 ##### 축구 동작 ( 3 + 방향 버튼 )
 
-|Buttons|Motion|
-|:---:|:---:|
-|3 + U|오른쪽 막기 (눌렀다가 떼면 동작 원위치)|
-|3 + D|왼쪽 막기 (눌렀다가 떼면 동작 원위치)|
-|3 + L|왼발 슛|
-|3 + R|오른발 슛|
+| Buttons |                 Motion                  |
+|:-------:|:---------------------------------------:|
+|  3 + U  | 오른쪽 막기 (눌렀다가 떼면 동작 원위치) |
+|  3 + D  |  왼쪽 막기 (눌렀다가 떼면 동작 원위치)  |
+|  3 + L  |                 왼발 슛                 |
+|  3 + R  |                오른발 슛                |
 
 ##### 격투 동작 ( 4 + 방향 버튼 )
 
-|Buttons|Motion|
-|:---:|:---:|
-|4 + U|전방 공격|
-|4 + D|방어 (눌렀다가 떼면 동작 원위치)|
-|4 + L|왼쪽 공격|
-|4 + R|오른쪽 공격|
+| Buttons |              Motion              |
+|:-------:|:--------------------------------:|
+|  4 + U  |            전방 공격             |
+|  4 + D  | 방어 (눌렀다가 떼면 동작 원위치) |
+|  4 + L  |            왼쪽 공격             |
+|  4 + R  |           오른쪽 공격            |
 
 로봇의 관절 동작 범위에 따라 동작이 제한될 수 있습니다.
 {: .notice}
@@ -171,18 +171,18 @@ sidebar:
 ##### CM-530 IR 채널 설정 ( Start + U, L, D, R )
 조종모드에서 CM-530에 IR수신기를 장착하고 RC-100으로 조종할 때, 제어기의 Aux 버튼을 눌러 다음과 같이 리모콘의 채널을 설정할 수 있습니다. 채널을 바꾸면, RC-100의 채널도 같이 바꿔 주어야 합니다. RC-100의 채널 변경은 RC-100의 채널 변경 방법을 참고하세요.
 
-|Buttons|Motion|
-|:---:|:---:|
-|Start + U|RC-100 채널 1로 설정|
-|Start + D|RC-100 채널 3로 설정|
-|Start + L|RC-100 채널 2로 설정|
-|Start + R|RC-100 채널 4로 설정|
+|  Buttons  |        Motion        |
+|:---------:|:--------------------:|
+| Start + U | RC-100 채널 1로 설정 |
+| Start + D | RC-100 채널 3로 설정 |
+| Start + L | RC-100 채널 2로 설정 |
+| Start + R | RC-100 채널 4로 설정 |
 
 - 일정 시간 동안 로봇을 조종하지 않으면, 로봇은 앉은 자세에서 대기합니다.
 
-|![](/assets/images/edu/bioloid/bp_act_3_3_kr.jpg)|![](/assets/images/edu/bioloid/bp_act_3_4_kr.jpg)|
-|:---:|:---:|
-|리모컨으로 로봇을 조종함|앉아서 리모컨 신호를 기다림|
+| ![](/assets/images/edu/bioloid/bp_act_3_3_kr.jpg) | ![](/assets/images/edu/bioloid/bp_act_3_4_kr.jpg) |
+|:-------------------------------------------------:|:-------------------------------------------------:|
+|             리모컨으로 로봇을 조종함              |            앉아서 리모컨 신호를 기다림            |
 
 ##### 리모컨 조종이 잘 되지 않습니다.
 - 리모컨 조종 모드로 설정하세요.
@@ -200,9 +200,9 @@ sidebar:
 
 박수를 쳐 주면, 로봇은 그 횟수만큼 박수를 따라 칩니다. DMS센서에 물체가 감지되면 인사를 합니다. 일정시간 소리나 물체가 감지되지 않으면 로봇은 스스로 움직이며 여러 가지 동작을 보여줍니다.
 
-|![](/assets/images/edu/bioloid/bp_act_4_3_KR.jpg)|![](/assets/images/edu/bioloid/bp_act_4_4_KR.jpg)|
-|:---:|:---:|
-|박수를 따라 침|다양한 동작을 보여 줌|
+| ![](/assets/images/edu/bioloid/bp_act_4_3_KR.jpg) | ![](/assets/images/edu/bioloid/bp_act_4_4_KR.jpg) |
+|:-------------------------------------------------:|:-------------------------------------------------:|
+|                  박수를 따라 침                   |               다양한 동작을 보여 줌               |
 
 #### 자율 보행 모드
 
@@ -256,21 +256,21 @@ sidebar:
 #### 보행 모션 파일에 작성되어 있는 보행 패턴
 보행 머신에 사용되는 보행 모션 파일에는 다음과 같은 16가지 보행 패턴이 포함되어 있습니다.
 
-|전진|후진|제자리 좌회전|제자리 우회전|
-|:---:|:---:|:---:|:---:|
-|![](/assets/images/edu/bioloid/premium_tutorial_02.png)|![](/assets/images/edu/bioloid/premium_tutorial_03.png)|![](/assets/images/edu/bioloid/premium_tutorial_04.png)|![](/assets/images/edu/bioloid/premium_tutorial_05.png)|
+|                          전진                           |                          후진                           |                      제자리 좌회전                      |                      제자리 우회전                      |
+|:-------------------------------------------------------:|:-------------------------------------------------------:|:-------------------------------------------------------:|:-------------------------------------------------------:|
+| ![](/assets/images/edu/bioloid/premium_tutorial_02.png) | ![](/assets/images/edu/bioloid/premium_tutorial_03.png) | ![](/assets/images/edu/bioloid/premium_tutorial_04.png) | ![](/assets/images/edu/bioloid/premium_tutorial_05.png) |
 
-|왼쪽 옆걸음|오른쪽 옆걸음|전진하며 좌회전|전진하며 우회전|
-|:---:|:---:|:---:|:---:|
-|![](/assets/images/edu/bioloid/premium_tutorial_06.png)|![](/assets/images/edu/bioloid/premium_tutorial_07.png)|![](/assets/images/edu/bioloid/premium_tutorial_08.png)|![](/assets/images/edu/bioloid/premium_tutorial_09.png)|
+|                       왼쪽 옆걸음                       |                      오른쪽 옆걸음                      |                     전진하며 좌회전                     |                     전진하며 우회전                     |
+|:-------------------------------------------------------:|:-------------------------------------------------------:|:-------------------------------------------------------:|:-------------------------------------------------------:|
+| ![](/assets/images/edu/bioloid/premium_tutorial_06.png) | ![](/assets/images/edu/bioloid/premium_tutorial_07.png) | ![](/assets/images/edu/bioloid/premium_tutorial_08.png) | ![](/assets/images/edu/bioloid/premium_tutorial_09.png) |
 
-|후진하며 좌회전|후진하며 우회전|좌로 회피|우로 회피|
-|:---:|:---:|:---:|:---:|
-|![](/assets/images/edu/bioloid/premium_tutorial_10.png)|![](/assets/images/edu/bioloid/premium_tutorial_11.png)|![](/assets/images/edu/bioloid/premium_tutorial_12.png)|![](/assets/images/edu/bioloid/premium_tutorial_13.png)|
+|                     후진하며 좌회전                     |                     후진하며 우회전                     |                        좌로 회피                        |                        우로 회피                        |
+|:-------------------------------------------------------:|:-------------------------------------------------------:|:-------------------------------------------------------:|:-------------------------------------------------------:|
+| ![](/assets/images/edu/bioloid/premium_tutorial_10.png) | ![](/assets/images/edu/bioloid/premium_tutorial_11.png) | ![](/assets/images/edu/bioloid/premium_tutorial_12.png) | ![](/assets/images/edu/bioloid/premium_tutorial_13.png) |
 
-|좌측 대각선 전진|우측 대각선 전진|좌측 대각선 후진|우측 대각선 후진|
-|:---:|:---:|:---:|:---:|
-|![](/assets/images/edu/bioloid/premium_tutorial_14.png)|![](/assets/images/edu/bioloid/premium_tutorial_15.png)|![](/assets/images/edu/bioloid/premium_tutorial_16.png)|![](/assets/images/edu/bioloid/premium_tutorial_17.png)|
+|                    좌측 대각선 전진                     |                    우측 대각선 전진                     |                    좌측 대각선 후진                     |                    우측 대각선 후진                     |
+|:-------------------------------------------------------:|:-------------------------------------------------------:|:-------------------------------------------------------:|:-------------------------------------------------------:|
+| ![](/assets/images/edu/bioloid/premium_tutorial_14.png) | ![](/assets/images/edu/bioloid/premium_tutorial_15.png) | ![](/assets/images/edu/bioloid/premium_tutorial_16.png) | ![](/assets/images/edu/bioloid/premium_tutorial_17.png) |
 
 ### 보행 머신 태스크 코드 살펴보기
 보행 머신 태스크 코드에는 `보행초기화` 함수와 `보행실행` 함수가 포함되어 있으며, 이 두 가지 함수를 사용하여 리모컨으로 로봇을 조종하는 예제가 들어 있습니다.
@@ -288,12 +288,12 @@ sidebar:
 
 #### 보행명령 번호
 
-|번호|보행 패턴|번호|보행 패턴|번호|보행 패턴|번호|보행 패턴|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|1|전진	|2|후진	|3|제자리 좌회전	|4|제자리 우회전|
-|5|왼쪽 옆걸음	|6|오른쪽 옆걸음	|7|전진하며 좌회전	|8|전진하며 우회전|
-|9|후진하며 좌회전	|10|후진하며 우회전	|11|좌로 회피	|12|우로 회피|
-|13|좌측 대각선 전진	|14|우측 대각선 전진	|15|좌측 대각선 후진	|16|우측 대각선 후진|
+| 번호 |    보행 패턴     | 번호 |    보행 패턴     | 번호 |    보행 패턴     | 번호 |    보행 패턴     |
+|:----:|:----------------:|:----:|:----------------:|:----:|:----------------:|:----:|:----------------:|
+|  1   |       전진       |  2   |       후진       |  3   |  제자리 좌회전   |  4   |  제자리 우회전   |
+|  5   |   왼쪽 옆걸음    |  6   |  오른쪽 옆걸음   |  7   | 전진하며 좌회전  |  8   | 전진하며 우회전  |
+|  9   | 후진하며 좌회전  |  10  | 후진하며 우회전  |  11  |    좌로 회피     |  12  |    우로 회피     |
+|  13  | 좌측 대각선 전진 |  14  | 우측 대각선 전진 |  15  | 좌측 대각선 후진 |  16  | 우측 대각선 후진 |
 
 #### 프로그램 시작
 리모컨으로 보행 조종 시 `보행초기화` 함수와 `보행실행` 함수를 사용하여 각 보행 패턴간의 전환을 이어주는 방법에 대해 간단한 `프로그램 시작` 예제를 작성해 봅시다.
@@ -376,10 +376,10 @@ sidebar:
 - 학습 목표 : RoboPlus Motion 을 사용하여 모션 추가하기
 RoboPlus Motion 프로그램을 사용하여 아래와 같은 4 가지 모션을 추가하는 방법을 학습해 봅시다.
 
-|모션 페이지 번호|동작 설명|모션 페이지 번호|동작 설명|
-|:---:|:---:|:---:|:---:|
-|14|오른쪽 공 막기	|27|엎드려 일어나기|
-|16|왼쪽 공 막기	|28|누워 일어나기|
+| 모션 페이지 번호 |   동작 설명    | 모션 페이지 번호 |    동작 설명    |
+|:----------------:|:--------------:|:----------------:|:---------------:|
+|        14        | 오른쪽 공 막기 |        27        | 엎드려 일어나기 |
+|        16        |  왼쪽 공 막기  |        28        |  누워 일어나기  |
 
 - `다운로드` 모션 파일 : [BIO_PRM_UserMotionExam_KR.mtn]
 
@@ -583,12 +583,12 @@ RoboPlus Motion 프로그램을 사용하여 아래와 같은 4 가지 모션을
 
 - 로보플러스 모션 1.0의 [모션 다운로드](/docs/kr/software/rplus1/motion/#모션-다운로드)를 참고하세요.
 
-|타입|파일 종류|다운로드|
-|:---:|
-|조립서|PDF 파일|[Download][BIO_PRM_Humanoid_ASM.pdf]|
-|A 타입|휴머노이드 기본 태스크 코드<br />휴머노이드 기본 모션 파일|[Download][BIO_PRM_HumanoidTypeA_KR.tsk]<br />[Download][BIO_PRM_HumanoidTypeA_KR.mtn]|
-|B 타입|휴머노이드 기본 태스크 코드<br />휴머노이드 기본 모션 파일|[Download][BIO_PRM_HumanoidTypeB_KR.tsk]<br />[Download][BIO_PRM_HumanoidTypeB_KR.mtn]|
-|C 타입|휴머노이드 기본 태스크 코드<br />휴머노이드 기본 모션 파일|[Download][BIO_PRM_HumanoidTypeC_KR.tsk]<br />[Download][BIO_PRM_HumanoidTypeC_KR.mtn]|
+|                                                                 타입|파일 종류|다운로드                                                                  |
+|:--------------------------------------------------------------------------------------------------------------------------------------------------------:|
+|                                                   조립서|PDF 파일|[Download][BIO_PRM_Humanoid_ASM.pdf]                                                   |
+| A 타입|휴머노이드 기본 태스크 코드<br />휴머노이드 기본 모션 파일|[Download][BIO_PRM_HumanoidTypeA_KR.tsk]<br />[Download][BIO_PRM_HumanoidTypeA_KR.mtn] |
+| B 타입|휴머노이드 기본 태스크 코드<br />휴머노이드 기본 모션 파일|[Download][BIO_PRM_HumanoidTypeB_KR.tsk]<br />[Download][BIO_PRM_HumanoidTypeB_KR.mtn] |
+| C 타입|휴머노이드 기본 태스크 코드<br />휴머노이드 기본 모션 파일|[Download][BIO_PRM_HumanoidTypeC_KR.tsk]<br />[Download][BIO_PRM_HumanoidTypeC_KR.mtn] |
 
 ### 휴머노이드 활용 예제
 기본예제로 로보티즈 프리미엄에 제공되는 보행 속도의 2배 이상의 속도를 내는 보행 동작과 격투 경기용 동작이 포함되어 있습니다.
@@ -601,54 +601,54 @@ A타입에만 적용 가능하며, B와 C타입에 적용시에는, [로보플�
 
 #### 휴머노이드 격투 예제 파일
 
-|타입|파일 종류|다운로드|
-|:---:|
-|A 타입|휴머노이드 격투 태스크 파일|[Download][BIO_PRM_FightTypeA_KR.tsk]|
-|A 타입|휴머노이드 격투 모션 파일|[Download][BIO_PRM_FightTypeA_KR.mtn]|
+|                         타입|파일 종류|다운로드                          |
+|:------------------------------------------------------------------------:|
+| A 타입|휴머노이드 격투 태스크 파일|[Download][BIO_PRM_FightTypeA_KR.tsk] |
+|  A 타입|휴머노이드 격투 모션 파일|[Download][BIO_PRM_FightTypeA_KR.mtn]  |
 
 #### 로봇 조종하기
 로봇을 작동하기 위한  키 정보 입니다.
 
 ##### 보행 ( 방향 버튼 : U / L / D / R )
 
-|Buttons|Motion|Buttons|Motion|
-|:---:|:---:|:---:|:---:|
-|U|앞으로 가기|U + L|전진하며 왼쪽으로 회전|
-|L|왼쪽으로 회전|U + R|전진하며 오른쪽으로 회전|
-|D|왼쪽 공격|L + 5|좌 이동|
-|R|오른쪽으로 회전|L + 5 + 6|빠른 좌 이동|
-|L + U + 5|좌 이동하며 앞으로|R + 5 + 6|빠른 우 이동|
-|L + D + 5|좌 이동하며 뒤로|R + U + 5|우 이동하며 앞으로|
-|R + 5|우 이동|R + D + 5|우  이동 하며 뒤로|
+|  Buttons  |       Motion       |  Buttons  |          Motion          |
+|:---------:|:------------------:|:---------:|:------------------------:|
+|     U     |    앞으로 가기     |   U + L   |  전진하며 왼쪽으로 회전  |
+|     L     |   왼쪽으로 회전    |   U + R   | 전진하며 오른쪽으로 회전 |
+|     D     |     왼쪽 공격      |   L + 5   |         좌 이동          |
+|     R     |  오른쪽으로 회전   | L + 5 + 6 |       빠른 좌 이동       |
+| L + U + 5 | 좌 이동하며 앞으로 | R + 5 + 6 |       빠른 우 이동       |
+| L + D + 5 |  좌 이동하며 뒤로  | R + U + 5 |    우 이동하며 앞으로    |
+|   R + 5   |      우 이동       | R + D + 5 |    우  이동 하며 뒤로    |
 
 ##### 공격 ( 키 + 키)
 
-|Buttons|Motion|Buttons|Motion|
-|:---:|:---:|:---:|:---:|
-|1 + L|왼쪽 대각선 공격|6 + 2|좌 공격 (강)|
-|1 + R|오른쪽 대각선 공격|6 + 4|우 공격 (강)|
-|2 + U|전 공격|6 + 1|전 공격 (강)|
-|2 + L|좌 공격|4 + U|잡기|
-|2 + R|우 공격|4 + D|잡기 2|
-|3|양쪽 공격|4 + L|잡기|
-|-|-|4 + R|잡기 2|
+| Buttons |       Motion       | Buttons |    Motion    |
+|:-------:|:------------------:|:-------:|:------------:|
+|  1 + L  |  왼쪽 대각선 공격  |  6 + 2  | 좌 공격 (강) |
+|  1 + R  | 오른쪽 대각선 공격 |  6 + 4  | 우 공격 (강) |
+|  2 + U  |      전 공격       |  6 + 1  | 전 공격 (강) |
+|  2 + L  |      좌 공격       |  4 + U  |     잡기     |
+|  2 + R  |      우 공격       |  4 + D  |    잡기 2    |
+|    3    |     양쪽 공격      |  4 + L  |     잡기     |
+|    -    |         -          |  4 + R  |    잡기 2    |
 
 ##### 기타 ( 키 + 키)
 
-|Buttons|Motion|Buttons|Motion|
-|:---:|:---:|:---:|:---:|
-|5+6+D+3|토크 오프|5+6+U+1|토크 온|
-|1 + U|앞으로 일어나기|1 + D|뒤로 일어나기|
+| Buttons |     Motion      | Buttons |    Motion     |
+|:-------:|:---------------:|:-------:|:-------------:|
+| 5+6+D+3 |    토크 오프    | 5+6+U+1 |    토크 온    |
+|  1 + U  | 앞으로 일어나기 |  1 + D  | 뒤로 일어나기 |
 
 **참고**: 4+U 와 4+L 은 같은 동작입니다.  마찬가지로 4+D와 4+R은 같은 동작입니다.
 {: .notice}
 
 ### [휴머노이드 축구](#휴머노이드-축구)
 
-|타입|파일 종류|다운로드|
-|:---:|
-|A 타입|휴머노이드 축구 태스크 파일|[Download][BIO_PRM_SoccerTypeA_KR.tsk]|
-|A 타입|휴머노이드 축구 모션 파일|[Download][BIO_PRM_SoccerTypeA_KR.mtn]|
+|                          타입|파일 종류|다운로드                          |
+|:-------------------------------------------------------------------------:|
+| A 타입|휴머노이드 축구 태스크 파일|[Download][BIO_PRM_SoccerTypeA_KR.tsk] |
+|  A 타입|휴머노이드 축구 모션 파일|[Download][BIO_PRM_SoccerTypeA_KR.mtn]  |
 
 #### 로봇 조종하기
 
@@ -656,40 +656,40 @@ A타입에만 적용 가능하며, B와 C타입에 적용시에는, [로보플�
 
 ##### 보행 ( 방향 버튼 : U / L / D / R )
 
-|Buttons|Motion|Buttons|Motion|
-|:---:|:---:|:---:|:---:|
-|U|앞으로 가기|D|뒤로 가기|
-|L|왼쪽으로 회전|R|오른쪽으로 회전|
-|U + L|전진하며 왼쪽으로 회전|U + R|전진하며 오른쪽으로 회전|
-|L + 5|좌 이동|R + 5|우 이동|
-|L + 5 + 6|빠른 좌 이동|R + 5 + 6|빠른 우 이동|
-|L + U + 5|좌 이동하며 앞으로|R + U + 5|우 이동하며 앞으로|
-|L + D + 5|좌 이동하며 뒤로|R + D + 5|우  이동 하며 뒤로|
+|  Buttons  |         Motion         |  Buttons  |          Motion          |
+|:---------:|:----------------------:|:---------:|:------------------------:|
+|     U     |      앞으로 가기       |     D     |        뒤로 가기         |
+|     L     |     왼쪽으로 회전      |     R     |     오른쪽으로 회전      |
+|   U + L   | 전진하며 왼쪽으로 회전 |   U + R   | 전진하며 오른쪽으로 회전 |
+|   L + 5   |        좌 이동         |   R + 5   |         우 이동          |
+| L + 5 + 6 |      빠른 좌 이동      | R + 5 + 6 |       빠른 우 이동       |
+| L + U + 5 |   좌 이동하며 앞으로   | R + U + 5 |    우 이동하며 앞으로    |
+| L + D + 5 |    좌 이동하며 뒤로    | R + D + 5 |    우  이동 하며 뒤로    |
 
 ##### 공격 ( 키 + 키)
 
-|Buttons|Motion|Buttons|Motion|
-|:---:|:---:|:---:|:---:|
-|2 + U|앞으로 차기 (왼발)|2 + D|뒤로 차기|
-|2 + L|왼쪽으로 차기|2 + R|오른쪽으로 차기|
-|2 + 6 + U|앞으로 세게 차기|4 + 6 + U|앞으로 세게 차기|
-|4 + U|앞으로 차기 (오른발)|4 + D|뒤로 차기|
-|4 + L|왼쪽으로 차기|4 + R|오른쪽으로 차기|
+|  Buttons  |        Motion        |  Buttons  |      Motion      |
+|:---------:|:--------------------:|:---------:|:----------------:|
+|   2 + U   |  앞으로 차기 (왼발)  |   2 + D   |    뒤로 차기     |
+|   2 + L   |    왼쪽으로 차기     |   2 + R   | 오른쪽으로 차기  |
+| 2 + 6 + U |   앞으로 세게 차기   | 4 + 6 + U | 앞으로 세게 차기 |
+|   4 + U   | 앞으로 차기 (오른발) |   4 + D   |    뒤로 차기     |
+|   4 + L   |    왼쪽으로 차기     |   4 + R   | 오른쪽으로 차기  |
 
 ##### 수비 ( 키 + 키)
 
-|Buttons|Motion|Buttons|Motion|
-|:---:|:---:|:---:|:---:|
-|3|막기 준비|3 + U|전방 막기|
-|3 + L|좌측 공 막기|3 + R|우측 공 막기|
+| Buttons |    Motion    | Buttons |    Motion    |
+|:-------:|:------------:|:-------:|:------------:|
+|    3    |  막기 준비   |  3 + U  |  전방 막기   |
+|  3 + L  | 좌측 공 막기 |  3 + R  | 우측 공 막기 |
 
 ##### 기타  ( 키 + 키)
 
-|Buttons|Motion|Buttons|Motion|
-|:---:|:---:|:---:|:---:|
-|5+6+D+3|토크 오프|5+6+U+1|토크 온|
-|1 + U|앞으로 일어나기|1 + D|뒤로 일어나기|
-|1 + L|가슴 치기|1 + R|환호|
+| Buttons |     Motion      | Buttons |    Motion     |
+|:-------:|:---------------:|:-------:|:-------------:|
+| 5+6+D+3 |    토크 오프    | 5+6+U+1 |    토크 온    |
+|  1 + U  | 앞으로 일어나기 |  1 + D  | 뒤로 일어나기 |
+|  1 + L  |    가슴 치기    |  1 + R  |     환호      |
 
 ## [예제](#예제)
 
@@ -698,50 +698,50 @@ A타입에만 적용 가능하며, B와 C타입에 적용시에는, [로보플�
 각 로봇의 조립서는 인터넷이 연결되어 있어야 다운로드 받으실 수 있습니다.
 {:. notice}
 
-|Examples|Description|
-|:---:|:---|
-|1. 차단바 <br />![](/assets/images/edu/bioloid/prm_crossinggate_kr.jpg)| [Download][BIO_PRM_CrossingGate_ASM.pdf] 조립서<br />[Download][BIO_PRM_CrossingGate_KR.tsk] 데모용 태스크 코드<br />[Download](https://www.dropbox.com/s/r3j2ozjljrdmog3/BIO_PRM_CrossingGate.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1), AX-12+(1)<br />`다이나믹셀 설정 값` AX-12+ ID[1] : 관절모드<br />`RoboPlus 문법`	함수, 호출, 로드, 무조건 반복, 만약, 조건 대기<br />`알고리즘`	제어기의 버튼으로 다이나믹셀 위치 제어<br />`동작 방법`<br />- 제어기의 U 버튼을 누르면 차단바가 열립니다.<br />- 제어기 의 D 버튼을 누르면 차단바가 닫힙니다.|
-|2. 다목적 계기판  <br />![](/assets/images/edu/bioloid/prm_universalgauge_kr.jpg)|[Download][BIO_PRM_Universalgauge_ASM.pdf] 조립서<br />[Download][BIO_PRM_Universalgauge_KR.tsk] 데모용 태스크 코드<br />[Download](https://www.dropbox.com/s/2ymcu5boposrkx0/BIO_PRM_UniversalGauge.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1) , AX-12+(1)<br />`다이나믹셀 설정 값` AX-12+ ID[1] : 관절모드<br />`RoboPlus 문법`	함수, 호출, 복귀, 로드, 계산, 무조건 반복, 만약, 아니면 만약<br />`알고리즘`	제어기의 버튼으로 다이나믹셀 속도 제어<br />`동작 방법`<br />- 제어기의 U 버튼을 누르고 있으면, 게이지의 속도가 점점 빨라집니다.<br />- 제어기의 D 버튼을 누르고 있으면, 게이지의 속도가 점점 느려집니다.|
-|3. 악어 입  <br />![](/assets/images/edu/bioloid/prm_crocodilemouth_kr.jpg)|  [Download][BIO_PRM_CrocodileMouth_ASM.pdf] 조립서<br />[Download][BIO_PRM_CrocodileMouth_KR.tsk] 데모용 태스크 코드<br />[Download](https://www.dropbox.com/s/5amlfqbs8bp111n/BIO_PRM_CrocodileMouth.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1) , AX-12+(1), 적외선 센서(1)<br />`다이나믹셀 설정 값` AX-12+ ID[1] : 관절모드<br />`RoboPlus 문법`	함수, 호출, 로드, 무조건 반복, 만약, 아니면 만약, 조건 대기<br />`알고리즘`	적외선 센서와 타이머 값에 따라 다이나믹셀 위치 및 버저 제어<br />`동작 방법`<br />- 센서의 전방에 손을 대면 입을 벌리고, 손을 떼면 입을 다뭅니다.<br />- 만약, 입을 다물 때 입 사이에 물체가 있으면, 다시 입을 벌립니다.<br/>10초 동안 물체가 감지되지 않으면 멜로디 소리를 냅니다.|
-|4. 팬틸트 장치  <br />![](/assets/images/edu/bioloid/prm_pantilt_kr.jpg)| [Download][BIO_PRM_Pantilt_ASM.pdf] 조립서 <br />[Download][BIO_PRM_Pantilt_KR.tsk] 데모용 태스크 코드<br />[Download](https://www.dropbox.com/s/z5jxto4zdwnsefx/BIO_PRM_PanTilt.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1), AX-12+(2)(1)<br />`다이나믹셀 설정 값` AX-12+ ID[1], ID[2] : 관절모드<br />`RoboPlus 문법`	함수, 호출, 로드, 계산, 무조건 반복, 만약, 아니면 만약, 조건 대기<br />`알고리즘`	제어기 버튼으로 팬틸트 제어<br />`동작 방법`<br />- 제어기의 U 버튼을 누르면 틸트(위,아래) 관절이 위로 움직입니다.<br />- 제어기의 D 버튼을 누르면 틸트(위,아래) 관절이 아래로 움직입니다.<br/>제어기의 R 버튼을 누르면 팬(좌,우) 관절이 우로 움직입니다.<br/>제어기의 L 버튼을 누르면 팬(좌,우) 관절이 좌로 움직입니다.|
-|5. 차량 출입 통제기   <br />![](/assets/images/edu/bioloid/prm_parkinggate_kr.jpg)| [Download][BIO_PRM_Parkinggate_ASM.pdf] 조립서 <br />[Download][BIO_PRM_Parkinggate_KR.tsk] 데모용 태스크 코드<br />[Download](https://www.dropbox.com/s/sn6li7gu68jw0es/BIO_PRM_ParkingGate.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1), AX-12+(2), 적외선 센서(1)<br />`다이나믹셀 설정 값` AX-12+ ID[1], ID[2] : 관절모드<br />`RoboPlus 문법`	함수, 호출, 로드, 계산, 무조건 반복, 만약, 아니면 만약, 조건 대기<br />`알고리즘`	적외선 센서와 다이나믹셀 하중 값에 따라 다이나믹셀 위치 제어<br />`동작 방법`<br />- 센서에 물체가 감지되면, 차단바가 수직으로 열립니다.<br />- 센서에 물체가 감지되고 동시에 차단바가 밀리면, 차단바가 수평으로 열립니다.<br/>센서에 물체가 감지되지 않으면, 차단바가 닫힙니다.|
-|6.스마트카  <br />![](/assets/images/edu/bioloid/prm_smartcar_kr.jpg)|  [Download][BIO_PRM_Smartcar_ASM.pdf] 조립서 <br />[Download][BIO_PRM_Smartcar_KR.tsk] 데모용 태스크 코드<br />[Download](https://www.dropbox.com/s/pa6u6brs4nhebud/BIO_PRM_SmartCar.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1), AX-12+(4), 적외선 센서(2)<br />`다이나믹셀 설정 값` AX-12+ ID[1]~ ID[4] : 바퀴모드<br />`RoboPlus 문법`	함수, 호출, 로드, 계산, 점프, 레이블, 무조건 반복, 만약, 아니면 만약, 조건 대기<br />`알고리즘`	제어기의 버튼에 따라 모드 설정을 하고, 버튼과 센서 값에 따라 다이나믹셀 회전 방향 제어<br />`동작 방법`<br />- 제어기의 스타트버튼과 U버튼을 누르면 조종모드로 됩니다.<br />- 제어기의 스타트버튼과 D버튼을 누르면 자율모드로 됩니다.<br/>조종모드시 L버튼을 누르면 전진, R버튼을 누르면 후진, U버튼을 누르면 우회전, D버튼을 누르면 좌회전을 합니다. 움직일때마다 멜로디가 나옵니다.<br/>자율모드시 전방센서가 감지되면 우회합니다. 하단센서가 감지되면 낭떠러지를 피해 우회합니다.|
-|7. 박수치는 꽃게    <br />![](/assets/images/edu/bioloid/prm_clappingcrab_kr.jpg)|  [Download][BIO_PRM_ClappingCrab_ASM.pdf] 조립서 <br />[Download][BIO_PRM_ClappingCrab_KR.tsk] 데모용 태스크 코드<br />[Download](https://www.dropbox.com/s/k8vlerjsmw80fse/BIO_PRM_ClappingCrab.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1), AX-12+(2)<br />`다이나믹셀 설정 값` AX-12+ ID[1],  ID[2] : 관절모드<br />`RoboPlus 문법`	로드, 계산, 무조건 반복, 만약, 횟수만큼 반복, 조건 대기<br />`알고리즘`	마이크 센서 소리 감지 횟수에 따라 다이나믹셀 위치 제어<br />`동작 방법`<br />- 로봇은 팔을 벌린채 대기합니다.<br/>소리감지시 감지 횟수 만큼 박수를 따라칩니다.|
-|8.공격하는 오리     <br />![](/assets/images/edu/bioloid/prm_attackingduck_kr.jpg)|  [Download][BIO_PRM_AttackingDuck_ASM.pdf] 조립서 <br />[Download][BIO_PRM_AttackingDuck_KR.tsk] 데모용 태스크 코드<br />[Download](https://www.dropbox.com/s/ogfmctvc2zcnjs5/BIO_PRM_AttackingDuck.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1), AX-12+(3), 적외선 센서(2)<br />`다이나믹셀 설정 값` AX-12+ ID[1]~ ID[3] : 관절모드<br />`RoboPlus 문법`	함수, 호출, 로드, 무조건 반복, 만약, 조건 반복, 조건 대기<br />`알고리즘`	센서 감지에 따라 다이나믹셀 제어<br />`동작 방법`<br />- 로봇은 좌우 이동을 반복하며 감시합니다.<br/>센서감지기 감지된 센서 방향쪽으로 따라가고 두개의 센서가 모두 감지시 공격을 합니다.|
-|9.거리측정기 <br />![](/assets/images/edu/bioloid/prm_distancelevelmeter_kr.jpg)|  [Download][BIO_PRM_DistanceLevelMeter_ASM.pdf] 조립서 <br />[Download][BIO_PRM_DistanceLevelMeter_KR.tsk] 데모용 태스크 코드<br />[Download](https://www.dropbox.com/s/g4z6ucy58pr28cg/BIO_PRM_DistanceLevelMeter.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1), AX-12+(1), 거리 센서(1)<br />`다이나믹셀 설정 값` AX-12+ ID[1] : 관절모드<br />`RoboPlus 문법`	함수, 호출, 로드, 계산, 무조건 반복<br />`알고리즘`	센서 감지 거리에 따라 다이나믹셀 위치 제어<br />`동작 방법`<br />- 센서의 감지거리에 따라 높이바가 움직입니다.|
-|10.라인트레이서     <br />![](/assets/images/edu/bioloid/prm_linetracer_kr.jpg)|  [Download][BIO_PRM_Linetracer_ASM.pdf] 조립서 <br />[Download][BIO_PRM_Linetracer_KR.tsk] 데모용 태스크 코드<br />[Download](https://www.dropbox.com/s/bi4c81e79hup3vu/BIO_PRM_LineTracer.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1), AX-12+(2), 적외선 센서(2)<br />`다이나믹셀 설정 값` AX-12+ ID[1],  ID[2] : 바퀴모드<br />`RoboPlus 문법`	함수, 호출, 로드, 계산, 무조건 반복, 만약, 아니면 만약, 아니면, 조건 대기<br />`알고리즘`	센서 감지 값에 따라 라인트레이서 제어<br />`동작 방법`<br />- 로봇은 검은색 라인을 따라 주행합니다.|
-|11. 보행드로이드         <br />![](/assets/images/edu/bioloid/prm_walkingdroid_kr.jpg)|  [Download][BIO_PRM_WalkingDroid_ASM.pdf] 조립서 <br />[Download][BIO_PRM_WalkingDroid_KR.tsk] 데모용 태스크 코드<br />[Download][BIO_PRM_WalkingDroid_KR.mtn] 데모용 모션 파일<br/>[Download](https://www.dropbox.com/s/v2ujjwfd5zsvkpx/BIO_PRM_WalkingDroid.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1), AX-12+(4), 적외선 센서(1)<br />`다이나믹셀 설정 값` AAX-12+ ID[1]~ ID[4] : 관절모드<br />`RoboPlus 문법`	함수, 호출, 로드, 무조건 반복, 만약, 조건 반복, 조건 대기<br />`알고리즘`	적외선 센서 값에 따라 다양한 모션 제어<br />`동작 방법`<br />- 보행 경로 상에 장애물을 설치해 놓고 보행 드로이드를 작동시킵니다.<br/>장애물을 피해가면서 보행하는 것을 확인합니다.|
+|                                        Examples                                        | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+|:--------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|        1. 차단바 <br />![](/assets/images/edu/bioloid/prm_crossinggate_kr.jpg)         | [Download][BIO_PRM_CrossingGate_ASM.pdf] 조립서<br />[Download][BIO_PRM_CrossingGate_KR.tsk] 데모용 태스크 코드<br />[Download](https://www.dropbox.com/s/r3j2ozjljrdmog3/BIO_PRM_CrossingGate.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1), AX-12+(1)<br />`다이나믹셀 설정 값` AX-12+ ID[1] : 관절모드<br />`RoboPlus 문법`	함수, 호출, 로드, 무조건 반복, 만약, 조건 대기<br />`알고리즘`	제어기의 버튼으로 다이나믹셀 위치 제어<br />`동작 방법`<br />- 제어기의 U 버튼을 누르면 차단바가 열립니다.<br />- 제어기 의 D 버튼을 누르면 차단바가 닫힙니다.                                                                                                                                                                                                                                                                                                                                                                    |
+|   2. 다목적 계기판  <br />![](/assets/images/edu/bioloid/prm_universalgauge_kr.jpg)    | [Download][BIO_PRM_Universalgauge_ASM.pdf] 조립서<br />[Download][BIO_PRM_Universalgauge_KR.tsk] 데모용 태스크 코드<br />[Download](https://www.dropbox.com/s/2ymcu5boposrkx0/BIO_PRM_UniversalGauge.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1) , AX-12+(1)<br />`다이나믹셀 설정 값` AX-12+ ID[1] : 관절모드<br />`RoboPlus 문법`	함수, 호출, 복귀, 로드, 계산, 무조건 반복, 만약, 아니면 만약<br />`알고리즘`	제어기의 버튼으로 다이나믹셀 속도 제어<br />`동작 방법`<br />- 제어기의 U 버튼을 누르고 있으면, 게이지의 속도가 점점 빨라집니다.<br />- 제어기의 D 버튼을 누르고 있으면, 게이지의 속도가 점점 느려집니다.                                                                                                                                                                                                                                                                                                    |
+|      3. 악어 입  <br />![](/assets/images/edu/bioloid/prm_crocodilemouth_kr.jpg)       | [Download][BIO_PRM_CrocodileMouth_ASM.pdf] 조립서<br />[Download][BIO_PRM_CrocodileMouth_KR.tsk] 데모용 태스크 코드<br />[Download](https://www.dropbox.com/s/5amlfqbs8bp111n/BIO_PRM_CrocodileMouth.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1) , AX-12+(1), 적외선 센서(1)<br />`다이나믹셀 설정 값` AX-12+ ID[1] : 관절모드<br />`RoboPlus 문법`	함수, 호출, 로드, 무조건 반복, 만약, 아니면 만약, 조건 대기<br />`알고리즘`	적외선 센서와 타이머 값에 따라 다이나믹셀 위치 및 버저 제어<br />`동작 방법`<br />- 센서의 전방에 손을 대면 입을 벌리고, 손을 떼면 입을 다뭅니다.<br />- 만약, 입을 다물 때 입 사이에 물체가 있으면, 다시 입을 벌립니다.<br/>10초 동안 물체가 감지되지 않으면 멜로디 소리를 냅니다.                                                                                                                                                                                                           |
+|        4. 팬틸트 장치  <br />![](/assets/images/edu/bioloid/prm_pantilt_kr.jpg)        | [Download][BIO_PRM_Pantilt_ASM.pdf] 조립서 <br />[Download][BIO_PRM_Pantilt_KR.tsk] 데모용 태스크 코드<br />[Download](https://www.dropbox.com/s/z5jxto4zdwnsefx/BIO_PRM_PanTilt.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1), AX-12+(2)(1)<br />`다이나믹셀 설정 값` AX-12+ ID[1], ID[2] : 관절모드<br />`RoboPlus 문법`	함수, 호출, 로드, 계산, 무조건 반복, 만약, 아니면 만약, 조건 대기<br />`알고리즘`	제어기 버튼으로 팬틸트 제어<br />`동작 방법`<br />- 제어기의 U 버튼을 누르면 틸트(위,아래) 관절이 위로 움직입니다.<br />- 제어기의 D 버튼을 누르면 틸트(위,아래) 관절이 아래로 움직입니다.<br/>제어기의 R 버튼을 누르면 팬(좌,우) 관절이 우로 움직입니다.<br/>제어기의 L 버튼을 누르면 팬(좌,우) 관절이 좌로 움직입니다.                                                                                                                                                                                           |
+|   5. 차량 출입 통제기   <br />![](/assets/images/edu/bioloid/prm_parkinggate_kr.jpg)   | [Download][BIO_PRM_Parkinggate_ASM.pdf] 조립서 <br />[Download][BIO_PRM_Parkinggate_KR.tsk] 데모용 태스크 코드<br />[Download](https://www.dropbox.com/s/sn6li7gu68jw0es/BIO_PRM_ParkingGate.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1), AX-12+(2), 적외선 센서(1)<br />`다이나믹셀 설정 값` AX-12+ ID[1], ID[2] : 관절모드<br />`RoboPlus 문법`	함수, 호출, 로드, 계산, 무조건 반복, 만약, 아니면 만약, 조건 대기<br />`알고리즘`	적외선 센서와 다이나믹셀 하중 값에 따라 다이나믹셀 위치 제어<br />`동작 방법`<br />- 센서에 물체가 감지되면, 차단바가 수직으로 열립니다.<br />- 센서에 물체가 감지되고 동시에 차단바가 밀리면, 차단바가 수평으로 열립니다.<br/>센서에 물체가 감지되지 않으면, 차단바가 닫힙니다.                                                                                                                                                                                                          |
+|         6.스마트카  <br />![](/assets/images/edu/bioloid/prm_smartcar_kr.jpg)          | [Download][BIO_PRM_Smartcar_ASM.pdf] 조립서 <br />[Download][BIO_PRM_Smartcar_KR.tsk] 데모용 태스크 코드<br />[Download](https://www.dropbox.com/s/pa6u6brs4nhebud/BIO_PRM_SmartCar.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1), AX-12+(4), 적외선 센서(2)<br />`다이나믹셀 설정 값` AX-12+ ID[1]~ ID[4] : 바퀴모드<br />`RoboPlus 문법`	함수, 호출, 로드, 계산, 점프, 레이블, 무조건 반복, 만약, 아니면 만약, 조건 대기<br />`알고리즘`	제어기의 버튼에 따라 모드 설정을 하고, 버튼과 센서 값에 따라 다이나믹셀 회전 방향 제어<br />`동작 방법`<br />- 제어기의 스타트버튼과 U버튼을 누르면 조종모드로 됩니다.<br />- 제어기의 스타트버튼과 D버튼을 누르면 자율모드로 됩니다.<br/>조종모드시 L버튼을 누르면 전진, R버튼을 누르면 후진, U버튼을 누르면 우회전, D버튼을 누르면 좌회전을 합니다. 움직일때마다 멜로디가 나옵니다.<br/>자율모드시 전방센서가 감지되면 우회합니다. 하단센서가 감지되면 낭떠러지를 피해 우회합니다. |
+|   7. 박수치는 꽃게    <br />![](/assets/images/edu/bioloid/prm_clappingcrab_kr.jpg)    | [Download][BIO_PRM_ClappingCrab_ASM.pdf] 조립서 <br />[Download][BIO_PRM_ClappingCrab_KR.tsk] 데모용 태스크 코드<br />[Download](https://www.dropbox.com/s/k8vlerjsmw80fse/BIO_PRM_ClappingCrab.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1), AX-12+(2)<br />`다이나믹셀 설정 값` AX-12+ ID[1],  ID[2] : 관절모드<br />`RoboPlus 문법`	로드, 계산, 무조건 반복, 만약, 횟수만큼 반복, 조건 대기<br />`알고리즘`	마이크 센서 소리 감지 횟수에 따라 다이나믹셀 위치 제어<br />`동작 방법`<br />- 로봇은 팔을 벌린채 대기합니다.<br/>소리감지시 감지 횟수 만큼 박수를 따라칩니다.                                                                                                                                                                                                                                                                                                                                                  |
+|   8.공격하는 오리     <br />![](/assets/images/edu/bioloid/prm_attackingduck_kr.jpg)   | [Download][BIO_PRM_AttackingDuck_ASM.pdf] 조립서 <br />[Download][BIO_PRM_AttackingDuck_KR.tsk] 데모용 태스크 코드<br />[Download](https://www.dropbox.com/s/ogfmctvc2zcnjs5/BIO_PRM_AttackingDuck.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1), AX-12+(3), 적외선 센서(2)<br />`다이나믹셀 설정 값` AX-12+ ID[1]~ ID[3] : 관절모드<br />`RoboPlus 문법`	함수, 호출, 로드, 무조건 반복, 만약, 조건 반복, 조건 대기<br />`알고리즘`	센서 감지에 따라 다이나믹셀 제어<br />`동작 방법`<br />- 로봇은 좌우 이동을 반복하며 감시합니다.<br/>센서감지기 감지된 센서 방향쪽으로 따라가고 두개의 센서가 모두 감지시 공격을 합니다.                                                                                                                                                                                                                                                                                                    |
+|    9.거리측정기 <br />![](/assets/images/edu/bioloid/prm_distancelevelmeter_kr.jpg)    | [Download][BIO_PRM_DistanceLevelMeter_ASM.pdf] 조립서 <br />[Download][BIO_PRM_DistanceLevelMeter_KR.tsk] 데모용 태스크 코드<br />[Download](https://www.dropbox.com/s/g4z6ucy58pr28cg/BIO_PRM_DistanceLevelMeter.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1), AX-12+(1), 거리 센서(1)<br />`다이나믹셀 설정 값` AX-12+ ID[1] : 관절모드<br />`RoboPlus 문법`	함수, 호출, 로드, 계산, 무조건 반복<br />`알고리즘`	센서 감지 거리에 따라 다이나믹셀 위치 제어<br />`동작 방법`<br />- 센서의 감지거리에 따라 높이바가 움직입니다.                                                                                                                                                                                                                                                                                                                                                                                              |
+|    10.라인트레이서     <br />![](/assets/images/edu/bioloid/prm_linetracer_kr.jpg)     | [Download][BIO_PRM_Linetracer_ASM.pdf] 조립서 <br />[Download][BIO_PRM_Linetracer_KR.tsk] 데모용 태스크 코드<br />[Download](https://www.dropbox.com/s/bi4c81e79hup3vu/BIO_PRM_LineTracer.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1), AX-12+(2), 적외선 센서(2)<br />`다이나믹셀 설정 값` AX-12+ ID[1],  ID[2] : 바퀴모드<br />`RoboPlus 문법`	함수, 호출, 로드, 계산, 무조건 반복, 만약, 아니면 만약, 아니면, 조건 대기<br />`알고리즘`	센서 감지 값에 따라 라인트레이서 제어<br />`동작 방법`<br />- 로봇은 검은색 라인을 따라 주행합니다.                                                                                                                                                                                                                                                                                                                                                                                 |
+| 11. 보행드로이드         <br />![](/assets/images/edu/bioloid/prm_walkingdroid_kr.jpg) | [Download][BIO_PRM_WalkingDroid_ASM.pdf] 조립서 <br />[Download][BIO_PRM_WalkingDroid_KR.tsk] 데모용 태스크 코드<br />[Download][BIO_PRM_WalkingDroid_KR.mtn] 데모용 모션 파일<br/>[Download](https://www.dropbox.com/s/v2ujjwfd5zsvkpx/BIO_PRM_WalkingDroid.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1), AX-12+(4), 적외선 센서(1)<br />`다이나믹셀 설정 값` AAX-12+ ID[1]~ ID[4] : 관절모드<br />`RoboPlus 문법`	함수, 호출, 로드, 무조건 반복, 만약, 조건 반복, 조건 대기<br />`알고리즘`	적외선 센서 값에 따라 다양한 모션 제어<br />`동작 방법`<br />- 보행 경로 상에 장애물을 설치해 놓고 보행 드로이드를 작동시킵니다.<br/>장애물을 피해가면서 보행하는 것을 확인합니다.                                                                                                                                                                                                                                               |
 
 ### [중급 응용 로봇](#중급-응용-로봇)
 
 각 로봇의 조립서는 인터넷이 연결되어 있어야 다운로드 받으실 수 있습니다.
 {: .notice}
 
-|Examples|Description|
-|:---:|:---|
-|1.집게탐사차  <br />![](/assets/images/edu/bioloid/prm_provingrobot_kr.jpg)|  [Download][BIO_PRM_ProbingRobot_ASM.pdf] 조립서 <br />[Download][BIO_PRM_ProbingRobot_KR.tsk] 데모용 태스크 코드<br />[Download](https://www.dropbox.com/s/nb5zqfhfcfr1hqq/BIO_PRM_ProvingRobot.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1), AX-12+(7), 적외선 센서(1), 거리 센서(1)<br />`다이나믹셀 설정 값` AX-12+ ID[1]~ ID[4] : 바퀴모드<br />AX-12+ ID[5]~ ID[7] : 관절모드<Br/>`RoboPlus 문법`	함수, 호출, 복귀, 로드, 계산, 무조건 반복, 만약, 아니면, 조건 대기, 반복 끝내기<br />`알고리즘`	적외선 센서와 거리 센서 값에 따라 장애물 인식 및 처리<br />`동작 방법`<br />- 제어기의 U 버튼을 누르면 차단바가 열립니다.<br />- 주행 경로 상에 여러 크기의  장애물을 설치해 놓고 집게 탐사차를 작동시킵니다.<br/>장애물이 너무 크면 피해서 주행하는 것을 확인합니다.<br/>장애물이 적당한 크기면 들어서 옆으로 치워 놓고 주행하는 것을 확인합니다.|
-|2.포크레인   <br />![](/assets/images/edu/bioloid/prm_excavator_kr.jpg)|  [Download][BIO_PRM_Excavator_ASM.pdf] 조립서 <br />[Download][BIO_PRM_Excavator_KR.tsk] 데모용 태스크 코드<br />[Download][BIO_PRM_Excavator_KR.mtn] 데모용 모션 파일<br/>[Download](https://www.dropbox.com/s/mvw9ng07h7qpsq2/BIO_PRM_Excavator.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1), AX-12+(8), 적외선 센서(1), 거리 센서(1)<br />`RoboPlus 문법`	함수, 호출, 로드, 계산, 무조건 반복, 만약, 아니면, 조건 대기<br />`알고리즘`	적외선 센서와 거리 센서 값에 따라 다이나믹셀 위치 제어<br />`동작 방법`<br />- 주행 경로 상에 장애물을 설치해 놓고 포크레인을 작동시킵니다.<br />- 전방에 물체가 감지되면 굴삭 작업을 하는 것을 확인합니다.<br/>물체를 든 상태에서 센서에 장애물이 감지되면, 감지된 방향으로 회전한 후 물체를 내려놓는 것을 확인합니다.|
-|3.로봇꽃    <br />![](/assets/images/edu/bioloid/prm_robotflower_kr.jpg)|  [Download][BIO_PRM_RobotFlower_ASM.pdf] 조립서 <br />[Download][BIO_PRM_RobotFlower_KR.tsk] 데모용 태스크 코드<br />[Download][BIO_PRM_RobotFlower_KR.mtn] 데모용 모션 파일<br/>[Download](https://www.dropbox.com/s/pkcxzr2vckeqph0/BIO_PRM_RobotFlower.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1), AX-12+(6)<br />`RoboPlus 문법`	함수, 호출, 로드, 무조건 반복, 만약, 아니면, 조건 대기  <br />`알고리즘`	소리 감지 횟수에 따라 모션 제어<br />`동작 방법`<br />- 전원을 켜면 꽃잎을 펴고 춤추듯이 천천히 움직입니다.<br />- 박수 소리가 한번나면 꽃입을 천천히 오므립니다.<br/>박수 소리가 여러번나면 꽃입을 빨리 오므립니다.|
-|4.아기사슴   <br />![](/assets/images/edu/bioloid/prm_fawn_kr.jpg)|  [Download][BIO_PRM_Fawn_ASM.pdf] 조립서 <br />[Download][BIO_PRM_Fawn_KR.tsk] 데모용 태스크 코드<br/>[Download][BIO_PRM_Fawn_KR.mtn] 데모용 모션 파일<br />[Download](https://www.dropbox.com/s/fo4kmsk7hk8p1oi/BIO_PRM_Fawn.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1), AX-12+(7), 적외선 센서(1)<br />`다이나믹셀 설정 값` AX-12+ ID[1]~ ID[7] : 관절모드<br />`RoboPlus 문법`	함수, 호출, 로드, 무조건 반복, 만약, 아니면 만약, 아니면, 조건 대기<br />`알고리즘`	적외선 센서 값에 따라 물체 인식<br />`동작 방법`<br />- 아무 변화가 없을 때, 아기 사슴은 앉아서 두리번거립니다.<br />- 얼굴에 물체를 대면, 그 물체를 계속 쫓아옵니다.|
-|5.거북이    <br />![](/assets/images/edu/bioloid/prm_tuttle_kr.jpg)|  [Download][BIO_PRM_Turtle_ASM.pdf] 조립서 <br />[Download][BIO_PRM_Turtle_KR.tsk] 데모용 태스크 코드<br/>[Download][BIO_PRM_Turtle_KR.mtn] 데모용 모션 파일<br />[Download](https://www.dropbox.com/s/fwco6p5wifs41vm/BIO_PRM_Turtle.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1), AX-12+(8), 적외선 센서(2), 거리 센서(1)<br />`다이나믹셀 설정 값`AX-12+ ID[1]~ ID[8] : 관절모드<br />`RoboPlus 문법`	함수, 호출, 로드, 무조건 반복, 만약, 아니면 만약, 아니면, 조건 대기<br />`알고리즘`	적외선 센서와 거리 센서 값에 따라 장애물 회피<br />`동작 방법`<br />- 보행 경로 상에 장애물을 설치해 놓고 거북이를 작동시킵니다.<br />- 거북이가 기어가다가 전방에 장애물을 만나면 피해가는 것을 확인합니다.|
-|6.거웍(GerWalk)     <br />![](/assets/images/edu/bioloid/prm_gerwalk_kr.jpg)|  [Download][BIO_PRM_GerWalk_ASM.pdf] 조립서 <br />[Download][BIO_PRM_GerWalk_KR.tsk] 데모용 태스크 코드<br/>[Download][BIO_PRM_GerWalk_KR.mtn] 데모용 모션 파일<br />[Download](https://www.dropbox.com/s/wnv2kuu0y1lj0ia/BIO_PRM_GerWalk.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1), AX-12+(7), 적외선 센서(2), 거리 센서(1)<br />`다이나믹셀 설정 값`AX-12+ ID[1]~ ID[7] : 관절모드<br />`RoboPlus 문법`	함수, 호출, 로드, 무조건 반복, 만약, 아니면 만약, 아니면, 조건 반복<br />`알고리즘`	적외선 센서와 거리 센서 값에 따라 새의 보행 패턴 제어<br />`동작 방법`<br />- 보행 경로 상에 장애물을 설치해 놓고 거웍을 작동시킵니다.<br />- 보행 중 전방 및 좌우에 장애물이 감지되면 피해갑니다.|
-|7. 배틀드로이드      <br />![](/assets/images/edu/bioloid/prm_battledroid_kr.jpg)|  [Download][BIO_PRM_BattleDroid_ASM.pdf] 조립서 <br />[Download][BIO_PRM_BattleDroid_KR.tsk] 데모용 태스크 코드<br/>[Download][BIO_PRM_BattleDroid_KR.mtn] 데모용 모션 파일<br />[Download](https://www.dropbox.com/s/e39178yae2wo4wh/BIO_PRM_BattleDroid.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1), AX-12+(8), 적외선 센서(1)<br />`다이나믹셀 설정 값`AX-12+ ID[1]~ ID[8] : 관절모드<br />`RoboPlus 문법`	변수, 함수, 호출, 로드, 계산, 무조건 반복, 만약, 아니면 만약, 아니면, 조건 대기<br />`알고리즘`	적외선 센서 값에 따라 다이나믹셀 제어<br />`동작 방법`<br />- 보행 경로 상에 장애물을 설치해 놓고 배틀 드로이드를 작동시킵니다.<br />- 보행 중에 장애물을 만나면 양 팔로 공격합니다.<br/>배틀 드로이드가 넘어졌을 때 전, 후면을 구분하여 스스로 일어납니다.|
-|8.4족로봇       <br />![](/assets/images/edu/bioloid/prm_quadrupedwalkingrobot_kr.jpg)|  [Download][BIO_PRM_QuadrupedWalkingRobot_ASM.pdf] 조립서 <br />[Download][BIO_PRM_QuadrupedWalkingRobot_KR.tsk.tsk] 데모용 태스크 코드<br/>[Download][BIO_PRM_QuadrupedWalkingRobot_KR.mtn] 데모용 모션 파일<br />[Download](https://www.dropbox.com/s/i15yq60h7en23n1/BIO_PRM_QuadrupedWalkingRobot.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1), AX-12+(8), 적외선 센서(1), 거리 센서(1)`다이나믹셀 설정 값`AX-12+ ID[1]~ ID[8] : 관절모드<br />`RoboPlus 문법`	함수, 호출, 로드, 무조건 반복, 만약, 조건 대기<br />`알고리즘`	적외선 센서와 거리 센서 값에 따라 4족 보행 제어<br />`동작 방법`<br />- 보행 경로 상에 장애물을 설치해 놓고 4족로봇을 작동시킵니다.<br />- 보행 중 전방에 장애물이 감지되면 피해갑니다.|
-|9.보행머신        <br />![](/assets/images/edu/bioloid/prm_bipedwalkingrobot_kr.jpg)|  [Download][BIO_PRM_BipedWalkingRobot_ASM.pdf] 조립서 <br />[Download][BIO_PRM_BipedWalkingRobot_KR.tsk] 데모용 태스크 코드<br/>[Download][BIO_PRM_BipedWalkingRobot_KR.mtn] 데모용 모션 파일<br />[Download](https://www.dropbox.com/s/vvkgnrvj6kmbf3s/BIO_PRM_BipedWalkingRobot.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1), AX-12+(8), 적외선 센서(1), 거리 센서(1)`다이나믹셀 설정 값`AX-12+ ID[11]~ ID[18] : 관절모드<br />`RoboPlus 문법`	함수, 호출, 로드, 무조건 반복, 만약, 아니면 만약, 아니면, 조건 대기, 조건 반복<br />`알고리즘`	적외선 센서와 거리 센서 값에 따라 2족 보행 제어<br />`동작 방법`<br />- 보행 경로 상에 장애물을 설치해 놓고 보행머신을 작동시킵니다.<br />- 보행 중 전방 및 좌우에 장애물이 감지되면 피해갑니다.|
-|10.로봇팔        <br />![](/assets/images/edu/bioloid/prm_robotarm_kr.jpg)|  [Download][BIO_PRM_RobotArm_ASM.pdf] 조립서 <br />[Download][BIO_PRM_RobotArm_KR.tsk.tsk] 데모용 태스크 코드<br />[Download](https://www.dropbox.com/s/pqxbqhq1mb4b0dk/BIO_PRM_RobotArm.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1), AX-12+(8)<br/>`다이나믹셀 설정 값`AX-12+ ID[1]~ ID[8] : 관절모드<br />`RoboPlus 문법`	함수, 호출, 로드, 계산, 무조건 반복, 만약, 아니면, 조건 반복<br />`알고리즘`	다이나믹셀간 위치값 통신<br />`동작 방법`<br />- 제어 모터를 움직이면 반응모터가 따라 움직이는지 확인 합니다.|
+|                                        Examples                                        | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+|:--------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|      1.집게탐사차  <br />![](/assets/images/edu/bioloid/prm_provingrobot_kr.jpg)       | [Download][BIO_PRM_ProbingRobot_ASM.pdf] 조립서 <br />[Download][BIO_PRM_ProbingRobot_KR.tsk] 데모용 태스크 코드<br />[Download](https://www.dropbox.com/s/nb5zqfhfcfr1hqq/BIO_PRM_ProvingRobot.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1), AX-12+(7), 적외선 센서(1), 거리 센서(1)<br />`다이나믹셀 설정 값` AX-12+ ID[1]~ ID[4] : 바퀴모드<br />AX-12+ ID[5]~ ID[7] : 관절모드<Br/>`RoboPlus 문법`	함수, 호출, 복귀, 로드, 계산, 무조건 반복, 만약, 아니면, 조건 대기, 반복 끝내기<br />`알고리즘`	적외선 센서와 거리 센서 값에 따라 장애물 인식 및 처리<br />`동작 방법`<br />- 제어기의 U 버튼을 누르면 차단바가 열립니다.<br />- 주행 경로 상에 여러 크기의  장애물을 설치해 놓고 집게 탐사차를 작동시킵니다.<br/>장애물이 너무 크면 피해서 주행하는 것을 확인합니다.<br/>장애물이 적당한 크기면 들어서 옆으로 치워 놓고 주행하는 것을 확인합니다. |
+|        2.포크레인   <br />![](/assets/images/edu/bioloid/prm_excavator_kr.jpg)         | [Download][BIO_PRM_Excavator_ASM.pdf] 조립서 <br />[Download][BIO_PRM_Excavator_KR.tsk] 데모용 태스크 코드<br />[Download][BIO_PRM_Excavator_KR.mtn] 데모용 모션 파일<br/>[Download](https://www.dropbox.com/s/mvw9ng07h7qpsq2/BIO_PRM_Excavator.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1), AX-12+(8), 적외선 센서(1), 거리 센서(1)<br />`RoboPlus 문법`	함수, 호출, 로드, 계산, 무조건 반복, 만약, 아니면, 조건 대기<br />`알고리즘`	적외선 센서와 거리 센서 값에 따라 다이나믹셀 위치 제어<br />`동작 방법`<br />- 주행 경로 상에 장애물을 설치해 놓고 포크레인을 작동시킵니다.<br />- 전방에 물체가 감지되면 굴삭 작업을 하는 것을 확인합니다.<br/>물체를 든 상태에서 센서에 장애물이 감지되면, 감지된 방향으로 회전한 후 물체를 내려놓는 것을 확인합니다.                                                                                          |
+|        3.로봇꽃    <br />![](/assets/images/edu/bioloid/prm_robotflower_kr.jpg)        | [Download][BIO_PRM_RobotFlower_ASM.pdf] 조립서 <br />[Download][BIO_PRM_RobotFlower_KR.tsk] 데모용 태스크 코드<br />[Download][BIO_PRM_RobotFlower_KR.mtn] 데모용 모션 파일<br/>[Download](https://www.dropbox.com/s/pkcxzr2vckeqph0/BIO_PRM_RobotFlower.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1), AX-12+(6)<br />`RoboPlus 문법`	함수, 호출, 로드, 무조건 반복, 만약, 아니면, 조건 대기  <br />`알고리즘`	소리 감지 횟수에 따라 모션 제어<br />`동작 방법`<br />- 전원을 켜면 꽃잎을 펴고 춤추듯이 천천히 움직입니다.<br />- 박수 소리가 한번나면 꽃입을 천천히 오므립니다.<br/>박수 소리가 여러번나면 꽃입을 빨리 오므립니다.                                                                                                                                                                                                                       |
+|           4.아기사슴   <br />![](/assets/images/edu/bioloid/prm_fawn_kr.jpg)           | [Download][BIO_PRM_Fawn_ASM.pdf] 조립서 <br />[Download][BIO_PRM_Fawn_KR.tsk] 데모용 태스크 코드<br/>[Download][BIO_PRM_Fawn_KR.mtn] 데모용 모션 파일<br />[Download](https://www.dropbox.com/s/fo4kmsk7hk8p1oi/BIO_PRM_Fawn.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1), AX-12+(7), 적외선 센서(1)<br />`다이나믹셀 설정 값` AX-12+ ID[1]~ ID[7] : 관절모드<br />`RoboPlus 문법`	함수, 호출, 로드, 무조건 반복, 만약, 아니면 만약, 아니면, 조건 대기<br />`알고리즘`	적외선 센서 값에 따라 물체 인식<br />`동작 방법`<br />- 아무 변화가 없을 때, 아기 사슴은 앉아서 두리번거립니다.<br />- 얼굴에 물체를 대면, 그 물체를 계속 쫓아옵니다.                                                                                                                                                                                                              |
+|          5.거북이    <br />![](/assets/images/edu/bioloid/prm_tuttle_kr.jpg)           | [Download][BIO_PRM_Turtle_ASM.pdf] 조립서 <br />[Download][BIO_PRM_Turtle_KR.tsk] 데모용 태스크 코드<br/>[Download][BIO_PRM_Turtle_KR.mtn] 데모용 모션 파일<br />[Download](https://www.dropbox.com/s/fwco6p5wifs41vm/BIO_PRM_Turtle.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1), AX-12+(8), 적외선 센서(2), 거리 센서(1)<br />`다이나믹셀 설정 값`AX-12+ ID[1]~ ID[8] : 관절모드<br />`RoboPlus 문법`	함수, 호출, 로드, 무조건 반복, 만약, 아니면 만약, 아니면, 조건 대기<br />`알고리즘`	적외선 센서와 거리 센서 값에 따라 장애물 회피<br />`동작 방법`<br />- 보행 경로 상에 장애물을 설치해 놓고 거북이를 작동시킵니다.<br />- 거북이가 기어가다가 전방에 장애물을 만나면 피해가는 것을 확인합니다.                                                                                                                                                  |
+|      6.거웍(GerWalk)     <br />![](/assets/images/edu/bioloid/prm_gerwalk_kr.jpg)      | [Download][BIO_PRM_GerWalk_ASM.pdf] 조립서 <br />[Download][BIO_PRM_GerWalk_KR.tsk] 데모용 태스크 코드<br/>[Download][BIO_PRM_GerWalk_KR.mtn] 데모용 모션 파일<br />[Download](https://www.dropbox.com/s/wnv2kuu0y1lj0ia/BIO_PRM_GerWalk.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1), AX-12+(7), 적외선 센서(2), 거리 센서(1)<br />`다이나믹셀 설정 값`AX-12+ ID[1]~ ID[7] : 관절모드<br />`RoboPlus 문법`	함수, 호출, 로드, 무조건 반복, 만약, 아니면 만약, 아니면, 조건 반복<br />`알고리즘`	적외선 센서와 거리 센서 값에 따라 새의 보행 패턴 제어<br />`동작 방법`<br />- 보행 경로 상에 장애물을 설치해 놓고 거웍을 작동시킵니다.<br />- 보행 중 전방 및 좌우에 장애물이 감지되면 피해갑니다.                                                                                                                                                        |
+|   7. 배틀드로이드      <br />![](/assets/images/edu/bioloid/prm_battledroid_kr.jpg)    | [Download][BIO_PRM_BattleDroid_ASM.pdf] 조립서 <br />[Download][BIO_PRM_BattleDroid_KR.tsk] 데모용 태스크 코드<br/>[Download][BIO_PRM_BattleDroid_KR.mtn] 데모용 모션 파일<br />[Download](https://www.dropbox.com/s/e39178yae2wo4wh/BIO_PRM_BattleDroid.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1), AX-12+(8), 적외선 센서(1)<br />`다이나믹셀 설정 값`AX-12+ ID[1]~ ID[8] : 관절모드<br />`RoboPlus 문법`	변수, 함수, 호출, 로드, 계산, 무조건 반복, 만약, 아니면 만약, 아니면, 조건 대기<br />`알고리즘`	적외선 센서 값에 따라 다이나믹셀 제어<br />`동작 방법`<br />- 보행 경로 상에 장애물을 설치해 놓고 배틀 드로이드를 작동시킵니다.<br />- 보행 중에 장애물을 만나면 양 팔로 공격합니다.<br/>배틀 드로이드가 넘어졌을 때 전, 후면을 구분하여 스스로 일어납니다.                                                                                 |
+| 8.4족로봇       <br />![](/assets/images/edu/bioloid/prm_quadrupedwalkingrobot_kr.jpg) | [Download][BIO_PRM_QuadrupedWalkingRobot_ASM.pdf] 조립서 <br />[Download][BIO_PRM_QuadrupedWalkingRobot_KR.tsk] 데모용 태스크 코드<br/>[Download][BIO_PRM_QuadrupedWalkingRobot_KR.mtn] 데모용 모션 파일<br />[Download](https://www.dropbox.com/s/i15yq60h7en23n1/BIO_PRM_QuadrupedWalkingRobot.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1), AX-12+(8), 적외선 센서(1), 거리 센서(1)`다이나믹셀 설정 값`AX-12+ ID[1]~ ID[8] : 관절모드<br />`RoboPlus 문법`	함수, 호출, 로드, 무조건 반복, 만약, 조건 대기<br />`알고리즘`	적외선 센서와 거리 센서 값에 따라 4족 보행 제어<br />`동작 방법`<br />- 보행 경로 상에 장애물을 설치해 놓고 4족로봇을 작동시킵니다.<br />- 보행 중 전방에 장애물이 감지되면 피해갑니다.                                                                                                                                      |
+|  9.보행머신        <br />![](/assets/images/edu/bioloid/prm_bipedwalkingrobot_kr.jpg)  | [Download][BIO_PRM_BipedWalkingRobot_ASM.pdf] 조립서 <br />[Download][BIO_PRM_BipedWalkingRobot_KR.tsk] 데모용 태스크 코드<br/>[Download][BIO_PRM_BipedWalkingRobot_KR.mtn] 데모용 모션 파일<br />[Download](https://www.dropbox.com/s/vvkgnrvj6kmbf3s/BIO_PRM_BipedWalkingRobot.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1), AX-12+(8), 적외선 센서(1), 거리 센서(1)`다이나믹셀 설정 값`AX-12+ ID[11]~ ID[18] : 관절모드<br />`RoboPlus 문법`	함수, 호출, 로드, 무조건 반복, 만약, 아니면 만약, 아니면, 조건 대기, 조건 반복<br />`알고리즘`	적외선 센서와 거리 센서 값에 따라 2족 보행 제어<br />`동작 방법`<br />- 보행 경로 상에 장애물을 설치해 놓고 보행머신을 작동시킵니다.<br />- 보행 중 전방 및 좌우에 장애물이 감지되면 피해갑니다.                                                                                                           |
+|       10.로봇팔        <br />![](/assets/images/edu/bioloid/prm_robotarm_kr.jpg)       | [Download][BIO_PRM_RobotArm_ASM.pdf] 조립서 <br />[Download][BIO_PRM_RobotArm_KR.tsk] 데모용 태스크 코드<br />[Download](https://www.dropbox.com/s/pqxbqhq1mb4b0dk/BIO_PRM_RobotArm.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1), AX-12+(8)<br/>`다이나믹셀 설정 값`AX-12+ ID[1]~ ID[8] : 관절모드<br />`RoboPlus 문법`	함수, 호출, 로드, 계산, 무조건 반복, 만약, 아니면, 조건 반복<br />`알고리즘`	다이나믹셀간 위치값 통신<br />`동작 방법`<br />- 제어 모터를 움직이면 반응모터가 따라 움직이는지 확인 합니다.                                                                                                                                                                                                                                                                                                                                    |
 
 ### [고급 응용 로봇](#고급-응용-로봇)
 
 각 로봇의 조립서는 인터넷이 연결되어 있어야 다운로드 받으실 수 있습니다.
 {: .notice}
 
-|Examples|Description|
-|:---:|:---|
-|1.공룡   <br />![](/assets/images/edu/bioloid/prm_dinosaur_kr.jpg)|  [Download][BIO_PRM_Dinosaur_ASM.pdf] 조립서 <br />[Download][BIO_PRM_Dinosaur_KR.tsk] 데모용 태스크 코드<br />[Download][BIO_PRM_Dinosaur_KR.mtn] 데모용 모션 파일<br/>[Download](https://www.dropbox.com/s/wf4vg932jsg63g6/BIO_PRM_Dinosaur.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1), AX-12+(15), 적외선 센서(1)<br />`다이나믹셀 설정 값` AX-12+ ID[1]~ ID[15] : 관절모드<Br/>`RoboPlus 문법`	함수, 호출, 복귀, 로드, 계산, 무조건 반복, 만약, 아니면, 조건 대기, 반복 끝내기<br />`알고리즘`	적외선 센서 값에 따라 장애물 감지 및 모션 제어<br />`동작 방법`<br />- 보행 경로 상에 장애물을 설치해 놓고 공룡 로봇을 작동시킵니다.<br />- 공룡 로봇이 장애물을 공격하는 것을 확인합니다.<br/>장애물이 너무 크면 피해서 주행하는 것을 확인합니다.<br/>장애물이 없어지면 계속 걸어 갑니다.|
-|2.강아지   <br />![](/assets/images/edu/bioloid/prm_puppy_kr.jpg)|  [Download][BIO_PRM_Puppy_ASM.pdf] 조립서 <br />[Download][BIO_PRM_Puppy_KR.tsk] 데모용 태스크 코드<br />[Download][BIO_PRM_Puppy_KR.mtn] 데모용 모션 파일<br/>[Download](https://www.dropbox.com/s/z844sld7e55xqjr/BIO_PRM_Puppy.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1), AX-12+(17), 적외선 센서(1)<br />`다이나믹셀 설정 값` AX-12+ ID[1]~ ID[17] : 관절모드<Br/>`RoboPlus 문법`	함수, 호출, 로드, 레이블, 점프, 만약, 아니면 만약, 조건 대기<br />`알고리즘`	적외선 센서와 타이머, 소리감지에 따라 4족 응용 모션 제어<br />`동작 방법`<br />- 보행 경로 상에 장애물을 설치해 놓고 강아지를 작동시킵니다.<br />- 소리가 나면 장애물을 피해가면서 보행하는 것을 확인합니다.<br/>입을 만져주면 재롱을 부립니다.<br/>(박수 소리 횟수에 따라 재롱이 달라집니다.)<br/>일정 시간이 지나도록 아무 변화가 없으면 앉아서 잠을 잡니다.|
-|3.킹스파이더    <br />![](/assets/images/edu/bioloid/prm_kingspider_kr.jpg)|  [Download][BIO_PRM_KingSpider_ASM.pdf] 조립서 <br />[Download][BIO_PRM_KingSpider_KR.tsk] 데모용 태스크 코드<br />[Download][BIO_PRM_KingSpider_KR.mtn] 데모용 모션 파일<br/>[Download](https://www.dropbox.com/s/cqiku4w55jfsu8w/BIO_PRM_KingSpider.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1), AX-12+(18), 적외선 센서(2)<br />`다이나믹셀 설정 값` AX-12+ ID[1]~ ID[18] : 관절모드<Br/>`RoboPlus 문법`	함수, 호출, 로드, 레이블, 점프, 만약, 조건 대기<br />`알고리즘`	적외선 센서와 타이머에 따라 6족 응용 모션 제어<br />`동작 방법`<br />- 보행 중 장애물을 만나면 피해서 돌아다닙니다.<br />- 전방에 가까운 곳에서 물체가 감지되면 공격합니다.<br/>-위쪽에서 물체가 접근하면 몸을 움츠립니다.<br/>-일정 시간 동안 아무 변화가 없으면 잠을 잡니다.|
-|4.전갈     <br />![](/assets/images/edu/bioloid/prm_scorpion_kr.jpg)|  [Download][BIO_PRM_Scorpion_ASM.pdf] 조립서 <br />[Download][BIO_PRM_Scorpion_KR.tsk] 데모용 태스크 코드<br />[Download][BIO_PRM_Scorpion_KR.mtn] 데모용 모션 파일<br/>[Download](https://www.dropbox.com/s/xi794k7suepm72q/BIO_PRM_Scorpion.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1), AX-12+(18), 거리 센서(1)<br />`다이나믹셀 설정 값` AX-12+ ID[1]~ ID[18] : 관절모드<Br/>`RoboPlus 문법`	함수, 호출, 로드, 레이블, 점프, 만약, 아니면 만약, 횟수만큼 반복, 조건 대기<br />`알고리즘`	소리 감지 횟수와 거리 센서 값에 따라 6족 응용 모션 제어<br />`동작 방법`<br />- 시작하면 잠을 잡니다.<br />- 박수를 치면 깨어납니다.<br/>-센서에 손을 가까이 가져가면 꼬리로 위협합니다.<br/>-센서에 손을 더 가까이 가져가면 공격합니다.|
-|5.도마뱀   <br />![](/assets/images/edu/bioloid/premium_lizard.jpg)|  [Download][BIO_PRM_Lizard_ASM.pdf] 조립서 <br />[Download][BIO_PRM_Lizard_KR.tsk] 데모용 태스크 코드<br />[Download][BIO_PRM_Lizard_KR.mtn] 데모용 모션 파일<br/>[Download](https://www.dropbox.com/s/za3th47u4gyei4d/BIO_PRM_Lizard.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1), AX-12+(14), 적외선 센서(1), 거리 센서(1)<br />`다이나믹셀 설정 값` AX-12+ ID[1]~ ID[14] : 관절모드<Br/>`RoboPlus 문법`	함수, 호출, 로드, 계산, 무조건 반복, 만약, 아니면 만약, 아니면, 조건 대기<br />`알고리즘`	적외선 센서와 거리 센서 값에 따라 4족 장애물 회피 모션 제어<br />`동작 방법`<br />- 시작하면 기어가다가 전방에 장애물을 만나면 잠시 멈추었다가  피해갑니다.<br />- 꼬리를 잡히면 도망가려 합니다.|
+|                                  Examples                                   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|:---------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     1.공룡   <br />![](/assets/images/edu/bioloid/prm_dinosaur_kr.jpg)      | [Download][BIO_PRM_Dinosaur_ASM.pdf] 조립서 <br />[Download][BIO_PRM_Dinosaur_KR.tsk] 데모용 태스크 코드<br />[Download][BIO_PRM_Dinosaur_KR.mtn] 데모용 모션 파일<br/>[Download](https://www.dropbox.com/s/wf4vg932jsg63g6/BIO_PRM_Dinosaur.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1), AX-12+(15), 적외선 센서(1)<br />`다이나믹셀 설정 값` AX-12+ ID[1]~ ID[15] : 관절모드<Br/>`RoboPlus 문법`	함수, 호출, 복귀, 로드, 계산, 무조건 반복, 만약, 아니면, 조건 대기, 반복 끝내기<br />`알고리즘`	적외선 센서 값에 따라 장애물 감지 및 모션 제어<br />`동작 방법`<br />- 보행 경로 상에 장애물을 설치해 놓고 공룡 로봇을 작동시킵니다.<br />- 공룡 로봇이 장애물을 공격하는 것을 확인합니다.<br/>장애물이 너무 크면 피해서 주행하는 것을 확인합니다.<br/>장애물이 없어지면 계속 걸어 갑니다.                                      |
+|      2.강아지   <br />![](/assets/images/edu/bioloid/prm_puppy_kr.jpg)      | [Download][BIO_PRM_Puppy_ASM.pdf] 조립서 <br />[Download][BIO_PRM_Puppy_KR.tsk] 데모용 태스크 코드<br />[Download][BIO_PRM_Puppy_KR.mtn] 데모용 모션 파일<br/>[Download](https://www.dropbox.com/s/z844sld7e55xqjr/BIO_PRM_Puppy.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1), AX-12+(17), 적외선 센서(1)<br />`다이나믹셀 설정 값` AX-12+ ID[1]~ ID[17] : 관절모드<Br/>`RoboPlus 문법`	함수, 호출, 로드, 레이블, 점프, 만약, 아니면 만약, 조건 대기<br />`알고리즘`	적외선 센서와 타이머, 소리감지에 따라 4족 응용 모션 제어<br />`동작 방법`<br />- 보행 경로 상에 장애물을 설치해 놓고 강아지를 작동시킵니다.<br />- 소리가 나면 장애물을 피해가면서 보행하는 것을 확인합니다.<br/>입을 만져주면 재롱을 부립니다.<br/>(박수 소리 횟수에 따라 재롱이 달라집니다.)<br/>일정 시간이 지나도록 아무 변화가 없으면 앉아서 잠을 잡니다. |
+| 3.킹스파이더    <br />![](/assets/images/edu/bioloid/prm_kingspider_kr.jpg) | [Download][BIO_PRM_KingSpider_ASM.pdf] 조립서 <br />[Download][BIO_PRM_KingSpider_KR.tsk] 데모용 태스크 코드<br />[Download][BIO_PRM_KingSpider_KR.mtn] 데모용 모션 파일<br/>[Download](https://www.dropbox.com/s/cqiku4w55jfsu8w/BIO_PRM_KingSpider.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1), AX-12+(18), 적외선 센서(2)<br />`다이나믹셀 설정 값` AX-12+ ID[1]~ ID[18] : 관절모드<Br/>`RoboPlus 문법`	함수, 호출, 로드, 레이블, 점프, 만약, 조건 대기<br />`알고리즘`	적외선 센서와 타이머에 따라 6족 응용 모션 제어<br />`동작 방법`<br />- 보행 중 장애물을 만나면 피해서 돌아다닙니다.<br />- 전방에 가까운 곳에서 물체가 감지되면 공격합니다.<br/>-위쪽에서 물체가 접근하면 몸을 움츠립니다.<br/>-일정 시간 동안 아무 변화가 없으면 잠을 잡니다.                                                                          |
+|    4.전갈     <br />![](/assets/images/edu/bioloid/prm_scorpion_kr.jpg)     | [Download][BIO_PRM_Scorpion_ASM.pdf] 조립서 <br />[Download][BIO_PRM_Scorpion_KR.tsk] 데모용 태스크 코드<br />[Download][BIO_PRM_Scorpion_KR.mtn] 데모용 모션 파일<br/>[Download](https://www.dropbox.com/s/xi794k7suepm72q/BIO_PRM_Scorpion.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1), AX-12+(18), 거리 센서(1)<br />`다이나믹셀 설정 값` AX-12+ ID[1]~ ID[18] : 관절모드<Br/>`RoboPlus 문법`	함수, 호출, 로드, 레이블, 점프, 만약, 아니면 만약, 횟수만큼 반복, 조건 대기<br />`알고리즘`	소리 감지 횟수와 거리 센서 값에 따라 6족 응용 모션 제어<br />`동작 방법`<br />- 시작하면 잠을 잡니다.<br />- 박수를 치면 깨어납니다.<br/>-센서에 손을 가까이 가져가면 꼬리로 위협합니다.<br/>-센서에 손을 더 가까이 가져가면 공격합니다.                                                                                              |
+|     5.도마뱀   <br />![](/assets/images/edu/bioloid/premium_lizard.jpg)     | [Download][BIO_PRM_Lizard_ASM.pdf] 조립서 <br />[Download][BIO_PRM_Lizard_KR.tsk] 데모용 태스크 코드<br />[Download][BIO_PRM_Lizard_KR.mtn] 데모용 모션 파일<br/>[Download](https://www.dropbox.com/s/za3th47u4gyei4d/BIO_PRM_Lizard.wmv?dl=0) 동영상<br />`사용된 장치` CM-510/CM-530(1), AX-12+(14), 적외선 센서(1), 거리 센서(1)<br />`다이나믹셀 설정 값` AX-12+ ID[1]~ ID[14] : 관절모드<Br/>`RoboPlus 문법`	함수, 호출, 로드, 계산, 무조건 반복, 만약, 아니면 만약, 아니면, 조건 대기<br />`알고리즘`	적외선 센서와 거리 센서 값에 따라 4족 장애물 회피 모션 제어<br />`동작 방법`<br />- 시작하면 기어가다가 전방에 장애물을 만나면 잠시 멈추었다가  피해갑니다.<br />- 꼬리를 잡히면 도망가려 합니다.                                                                                                                               |
 
 
 # [참고자료](#참고자료)
@@ -769,10 +769,10 @@ A타입에만 적용 가능하며, B와 C타입에 적용시에는, [로보플�
 가슴 부분 전용 스킨을 도색하여 꾸민 샘플 사진들 입니다.
 
 
-|![](/assets/images/edu/bioloid/pre_skin_1_kr.jpg)|![](/assets/images/edu/bioloid/pre_skin_2_kr.jpg)|
-|:---:|
-|![](/assets/images/edu/bioloid/pre_skin_3_kr.jpg)|![](/assets/images/edu/bioloid/pre_skin_4_kr.jpg)|
-|![](/assets/images/edu/bioloid/pre_skin_5_kr.jpg)|![](/assets/images/edu/bioloid/pre_skin_6_kr.jpg)|
+| ![](/assets/images/edu/bioloid/pre_skin_1_kr.jpg)|![](/assets/images/edu/bioloid/pre_skin_2_kr.jpg) |
+|:---------------------------------------------------------------------------------------------------:|
+| ![](/assets/images/edu/bioloid/pre_skin_3_kr.jpg)|![](/assets/images/edu/bioloid/pre_skin_4_kr.jpg) |
+| ![](/assets/images/edu/bioloid/pre_skin_5_kr.jpg)|![](/assets/images/edu/bioloid/pre_skin_6_kr.jpg) |
 
 #### 로봇 머리 부분 스킨 샘플
 로봇 머리 부분을 도색하여 꾸민 샘플 사진 입니다.

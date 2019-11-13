@@ -30,7 +30,7 @@ OpenMANIPULATOR-PRO controller provides basic manipulation of OpenMANIPULATOR-PR
 
 Please, open the Terminal then run the following command.
 ``` bash
-$ ros2 run open_manipulator_pro_controller open_manipulator_pro_controller 
+$ ros2 launch open_manipulator_pro_controller open_manipulator_pro_controller.launch.py
 ```
 
 **WARNING**: It is recommended to place OpenMANIPULATOR-PRO at the following pose and start the controller so that each component of OpenMANIPULATOR-PRO does not conflict.  

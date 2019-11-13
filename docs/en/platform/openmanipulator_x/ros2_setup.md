@@ -67,16 +67,14 @@ $ sudo apt install ros-dashing-python* ros-dashing-rqt*
 ```
 
 ``` bash
-$ cd ~/robotis_ws/src/
-$ git clone https://github.com/rjshim/cmake_modules.git -b ros2-devel
-$ git clone https://github.com/rjshim/joint_state_publisher.git -b ros2-devel
-$ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git -b ros2
-$ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench.git -b ros2
-$ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench-msgs.git -b ros2
-$ git clone https://github.com/ROBOTIS-GIT/robotis_manipulator.git -b ros2
-$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_msgs.git -b ros2
-$ git clone https://github.com/ROBOTIS-GIT/open_manipulator.git -b ros2
-$ cd ~/robotis_ws && colcon build --symlink-install
+$ cd ~/robotis_ws/src/  
+$ git clone -b ros2 https://github.com/ROBOTIS-GIT/DynamixelSDK.git  
+$ git clone -b ros2 https://github.com/ROBOTIS-GIT/dynamixel-workbench.git  
+$ git clone -b ros2 https://github.com/ROBOTIS-GIT/open_manipulator.git  
+$ git clone -b ros2 https://github.com/ROBOTIS-GIT/open_manipulator_msgs.git  
+$ git clone -b ros2 https://github.com/ROBOTIS-GIT/open_manipulator_dependencies.git  
+$ git clone -b ros2 https://github.com/ROBOTIS-GIT/robotis_manipulator.git  
+$ cd ~/robotis_ws && colcon build --symlink-install  
 ```
 
 ## [Communication Converter](#communication-converter)
