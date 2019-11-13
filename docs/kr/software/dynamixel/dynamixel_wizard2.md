@@ -221,8 +221,7 @@ sidebar:
    **참고** : 다이나믹셀 모델 및 동작모드(Operation Mode)에 따라 항목은 달라질수 있습니다. **관련 다이나믹셀의 컨트롤 테이블을 반드시 확인하세요.**
     {: .notice}
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_004_kr.png)
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_004_velocity_mode_kr.png)  
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_004_kr.png) 
     
 6. 우측 하단의 위치 또는 속도 값 컨트롤을 사용하여 모터를 움직여봅니다.
 
@@ -263,25 +262,49 @@ sidebar:
 
 2. 설정창의 좌측 목록에서 `그래프` 항목을 선택하면 그래프 설정이 나타납니다.
 
-3. 아래 그림에 표시된 `추가` 버튼을 클릭하면 항목 추가 상자가 나타납니다.
-
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_002_kr.png)
 
-4. 항목 추가 상자에서 순서대로 표시항목과 선 색깔, 스케일값, 보조축 사용 여부를 설정하고 `확인` 버튼을 클릭합니다.
+3. 아래 그림에 표시된 `>>` 버튼을 눌러 항목을 추가 합니다. (`<<` 버튼으로 항목을 제거할 수 있습니다.)
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_003_kr.png)
 
-5. 통신주기(Interval)는 1~1000ms로 설정가능합니다. 통신주기가 작을수록 더 세밀한 그래프가 표현됩니다.
+4. 추가된 항목의 색깔을 클릭하면 항목 추가 상자가 나타납니다.
+    
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004_kr.png)
+
+5. 항목 추가 상자에서 색깔, 비율, 보조 Y축을 설정할 수 있습니다.    
+
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004_1_kr.png)
+    
+    - Y축: 선택된 항목의 Y축을 그래프에 표시합니다. 총 10개의 Y축을 그래프에 나타낼 수 있습니다.
+      
+        ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004_y_axis_01_kr.png)
+        
+        ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004_y_axis_02_kr.png)
+        
+    - 비율: 그래프에서 선택된 항목의 Y축 값에 비율을 곱해서 나타냅니다. 
+    
+        ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004_scale_01_kr.png)
+        
+        ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004_scale_02_kr.png)
+        
+    - 오프셋: 선택된 항목에 오프셋 값을 더하여 표시합니다. `Present Position` 과 `Goal Position` 같이 유사한 값을 가진 그래프를 분리하고 싶을 때 사용하세요. 
+
+        ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004_offset_01_kr.png)
+        
+        ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004_offset_02_kr.png)
+        
+6. 통신주기(Interval)는 1~1000ms로 설정가능합니다. 통신주기가 작을수록 더 세밀한 그래프가 표현됩니다.
 
     **참고** : 실제 통신주기는 통신속도와 PC사양에 따라 달라질 수 있습니다.  
     {: .notice}  
 
-6. 속도 최적화 사용여부를 설정합니다. 설정하면 선택한 항목만 읽어오므로 통신이 빨라집니다.
+7. 속도 최적화 사용여부를 설정합니다. 설정하면 선택한 항목만 읽어오므로 통신이 빨라집니다.
 
     **참고** : 속도 최적화를 사용하면 컨트롤 테이블의 일부 항목들이 자동으로 갱신되지않습니다.  
     {: .notice}  
 
-7. 설정창의 `확인` 버튼을 클릭합니다.
+8. 설정창의 `확인` 버튼을 클릭합니다.
 
 ### [그래프 시작](#그래프-시작)
 
@@ -289,35 +312,46 @@ sidebar:
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_013_kr.png)
 
-3. 그래프창의 `시작` 버튼을 클릭하면 그래프가 동작을 시작합니다.
+2. 그래프창의 `시작` 버튼을 클릭하면 그래프가 동작을 시작합니다.
 
     **참고** : 선택된 장치가 없으면 해당 메뉴가 비활성화된 상태입니다. 검색 후 다이나믹셀이 연결된 상태에서 진행해 주세요.  
     {: .notice}
 
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_start_001_kr.png)
+
 3. 컨트롤 테이블에서 `Goal Position` 항목의 값을 변경하면 실시간으로 변경되는 `Present Position` 을 확인할 수 있습니다.
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004_kr.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_start_005_kr.png) 
+    
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_start_006_kr.png)  
 
-4. 다음의 메뉴를 통해 그래프를 제어할 수 있습니다.
+4. 그래프의 우측에서 항목을 클릭하여, 그래프를 비활성화 시킬수 있습니다.  
 
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_start_004.png)
+
+5. 다음의 메뉴를 통해 그래프를 제어할 수 있습니다.
+
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_start_002_kr.png)  
+    
     - 시작/정지 : 그래프 시작/정지
     - 리셋 : 줌화면에서 원래화면으로 복귀
     - 캡처 : 그래프를 이미지로 저장
     - 저장 : 데이터를 CSV파일로 저장
+    - 열기 : 저장한 그래프 이미지 열기.
     - 항목 표시 설정 : 그래프 우측에 있는 항목을 클릭하여 표시 여부 설정
     - 확대/축소 : 마우스 드래그로 줌영역을 선택
       - `Shift` + 드래그 : y축 고정, x축 확대
       - `Ctrl` + 드래그 : x축 고정, y축 확대
       - 마우스 휠로 이전 줌, 다음 줌으로 이동
     - 그래프 동작시 Ctrl과 마우스휠로 시간축을 1~10초로 1초단위로 조절
-
+    
 ## [패킷](#패킷)
 
 1. 메인 메뉴에서 `보기` > `패킷` 를 선택하면 패킷창이 나타납니다.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_014_kr.png)
 
-1. 통신포트와 통신속도를 설정하고 `열기` 버튼을 클릭합니다.  
+2. 통신포트와 통신속도를 설정하고 `열기` 버튼을 클릭합니다.  
   열기에 성공하면 해당 포트의 다이나믹셀 프로토콜 통신 모니터링을 시작합니다.
 
     **참고** : 만약, 해당 통신 포트에 연결을 실패하면 사용중인 프로그램을 찾아 사용을 해제해야합니다.  
@@ -325,12 +359,15 @@ sidebar:
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_002_kr.png)
 
-2. 우측 메뉴에서 통신할 프로토콜 버전과 Instruction을 설정할 수 있습니다.  
+3. 우측 메뉴에서 통신할 프로토콜 버전과 Instruction을 설정할 수 있습니다.  
   프로토콜 버전을 `2.0` 으로 Instruction을 `Write` 로 설정합니다.  
+  
+    **참고** : 각 다이나믹셀은 지원하는 프로토콜 버전이 다릅니다. **관련 다이나믹셀의 [프로토콜 버전](/docs/kr/popup/faq_protocol_compatibility_table){: .popup}을 반드시 확인하세요.**
+    {: .notice}
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_003_kr.png)
 
-3. Instuction에 대한 상세설정을 할 수 있습니다.  
+4. Instuction에 대한 상세설정을 할 수 있습니다.  
   다음과 같이 LED 켜기의 패킷을 설정합니다.  
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_004_kr.png)
@@ -339,17 +376,14 @@ sidebar:
     - LED 항목의 컨트롤 테이블 길이[Byte] : 1
     - LED On에 대한 데이타 : 1
 
-4. 설정된 값에 따라 변화되는 패킷정보를 하단에 있는 `패킷상세정보` 에서 확인할 수 있습니다.  
+5. 설정된 값에 따라 변화되는 패킷정보를 하단에 있는 `패킷상세정보` 에서 확인할 수 있습니다.  
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_005_kr.png)
 
-5. `전송` 버튼을 클릭하여 패킷을 전송합니다.  
+6. `전송` 버튼을 클릭하여 패킷을 전송합니다.  
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_006_kr.png)
 
-6. 패킷목록에서 응답패킷을 클릭하면 패킷상세정보를 확인할 수 있습니다.  
-
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_007_kr.png)
 
 ## [펌웨어 업데이트](#펌웨어-업데이트)
 

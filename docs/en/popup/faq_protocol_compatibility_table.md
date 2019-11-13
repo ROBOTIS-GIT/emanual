@@ -10,44 +10,98 @@ layout: popup
 Compatibility Key: O= Yes ; X= No ; * = User Action Required
 {: .notice --info}
 
-| Product              |        [Protocol 1.0]        |        [Protocol 2.0]         |
+# AX-Series
+
+| Model  | Protocol 1.0 | Protocol 2.0 |
+|:-------|:-------------|:-------------|
+| AX-12W | O            | X            |
+| AX-12A | O            | X            |
+| AX-18A | O            | X            |
+
+# MX-Series
+
+| Model  | Protocol 1.0 | Protocol 2.0 |
+|:-------|:-------------|:-------------|
+| MX-12W | O            | X            |
+| MX-28  | O            | O*           |
+| MX-64  | O            | O*           |
+| MX-106 | O            | O*           |
+
+{% capture notice_01 %}
+**NOTE** : 
+- Proceed to Firmware Recovery of a particular software to use Protocol 2.0 with MX-Series: [DYNAMIXEL Wizard 2.0](/docs/kr/software/dynamixel/dynamixel_wizard2/#firmware-recovery), [R+ Manager 2.0](/docs/en/software/rplus2/manager/#firmware-recovery)
+- Protocol 2.0 is available with v39 Firmware Version (or above): [DYNAMIXEL Wizard 2.0](/docs/kr/software/dynamixel/dynamixel_wizard2/#firmware-update), [R+ Manager 2.0](/docs/en/software/rplus2/manager/#firmware-recovery)
+- Protocol 2.0 supports various Operating Modes, Secondary ID, Drive Mode, Bus Watchdog, etc.
+{% endcapture %}
+<div class="notice">{{ notice_01| markdownify }}</div>
+
+{% capture info_01 %}
+**INFO** : 
+- MX(2.0) Firmware is different from MX series control table and address.
+- MX(2.0) Firmware inherits Dynamixel X’s function.
+{% endcapture %}
+<div class="notice--info">{{ info_01| markdownify }}</div>
+
+# X-Series
+
+| Model       | Protocol 1.0            | Protocol 2.0 |
+|:------------|:------------------------|:-------------|
+| XL-320      | X                       | O            |
+| XL430-W250  | O* <br>(F/W address 13) | O            |
+| 2XL430-W250 | O* <br>(F/W address 13) | O            |
+| XC430-W150  | O* <br>(F/W address 13) | O            |
+| XC430-W240  | O* <br>(F/W address 13) | O            |
+| XM430-W210  | O* <br>(F/W address 13) | O            |
+| XM430-W350  | O* <br>(F/W address 13) | O            |
+| XH430-W210  | O* <br>(F/W address 13) | O            |
+| XH430-W350  | O* <br>(F/W address 13) | O            |
+| XH430-V210  | O* <br>(F/W address 13) | O            |
+| XH430-V350  | O* <br>(F/W address 13) | O            |
+| XM540-W150  | O* <br>(F/W address 13) | O            |
+| XM540-W270  | O* <br>(F/W address 13) | O            |
+| XH540-W150  | O* <br>(F/W address 13) | O            |
+| XH540-W270  | O* <br>(F/W address 13) | O            |
+| XH540-V150  | O* <br>(F/W address 13) | O            |
+| XH540-V270  | O* <br>(F/W address 13) | O            |
+
+{% capture notice_01 %}
+**NOTE** : 
+- X-series can switch Protocol 2.0 into Protocol 1.0 aside from [XL320](/docs/en/dxl/x/xl320/)
+- Refer to Protocol Type(13) in control table of model of its DYNAMIXEL. 
+{% endcapture %}
+<div class="notice">{{ notice_01| markdownify }}</div>
+
+# PRO-Series
+
+| Model         | Protocol 1.0 | Protocol 2.0 |
+|:--------------|:-------------|:-------------|
+| M42-10-S260   | X            | O            |
+| M54-40-S250   | X            | O            |
+| M54-60-S250   | X            | O            |
+| H42-20-S300   | X            | O            |
+| H54-100-S500  | X            | O            |
+| H54-200-S500  | X            | O            |
+| L54-50-S500-R | X            | O            |
+| L54-50-S290-R | X            | O            |
+| L54-30-S500-R | X            | O            |
+| L54-30-S400-R | X            | O            |
+| L42-10-S300-R | X            | O            |
+
+# PRO+ Series
+
+| Model           | Protocol 1.0 | Protocol 2.0 |
+|:----------------|:-------------|:-------------|
+| H54P-200-S500-R | X            | O            |
+| H54P-100-S500-R | X            | O            |
+| H42P-020-S300-R | X            | O            |
+| M54P-060-S250-R | X            | O            |
+| M54P-040-S250-R | X            | O            |
+| M42P-010-S260-R | X            | O            |
+
+# ETC
+
+| Model                |         Protocol 1.0         |         Protocol 2.0          |
 |:---------------------|:----------------------------:|:-----------------------------:|
-| AX-12W               |              O               |               X               |
-| AX-12A               |              O               |               X               |
-| AX-18A               |              O               |               X               |
-| MX-12W               |              O               |               X               |
-| MX-28                |              O               |              O*               |
-| MX-64                |              O               |              O*               |
-| MX-106               |              O               |              O*               |
-| XL-320               |              X               |               O               |
-| XL430-W250           |   O* <br>(F/W address 13)    |               O               |
-| 2XL430-W250          |   O* <br>(F/W address 13)    |               O               |
-| XC430-W150           |   O* <br>(F/W address 13)    |               O               |
-| XC430-W240           |   O* <br>(F/W address 13)    |               O               |
-| XM430-W210           |   O* <br>(F/W address 13)    |               O               |
-| XM430-W350           |   O* <br>(F/W address 13)    |               O               |
-| XH430-W210           |   O* <br>(F/W address 13)    |               O               |
-| XH430-W350           |   O* <br>(F/W address 13)    |               O               |
-| XH430-V210           |   O* <br>(F/W address 13)    |               O               |
-| XH430-V350           |   O* <br>(F/W address 13)    |               O               |
-| XM540-W150           |   O* <br>(F/W address 13)    |               O               |
-| XM540-W270           |   O* <br>(F/W address 13)    |               O               |
-| XH540-W150           |   O* <br>(F/W address 13)    |               O               |
-| XH540-W270           |   O* <br>(F/W address 13)    |               O               |
-| XH540-V150           |   O* <br>(F/W address 13)    |               O               |
-| XH540-V270           |   O* <br>(F/W address 13)    |               O               |
-| M42-10-S260          |              X               |               O               |
-| M54-40-S250          |              X               |               O               |
-| M54-60-S250          |              X               |               O               |
-| H42-20-S300          |              X               |               O               |
-| H54-100-S500         |              X               |               O               |
-| H54-200-S500         |              X               |               O               |
-| H54P-200-S500-R      |              X               |               O               |
-| H54P-100-S500-R      |              X               |               O               |
-| H42P-020-S300-R      |              X               |               O               |
-| M54P-060-S250-R      |              X               |               O               |
-| M54P-040-S250-R      |              X               |               O               |
-| M42P-010-S260-R      |              X               |               O               |
 | RoboPlus 1.0 Suite   |              o               |   X* (XL-320 and PRO only)    |
 | R+ Manager 2.0       |              O               |               O               |
 | R+ Task 2.0          |              O               |               O               |
@@ -70,21 +124,6 @@ Compatibility Key: O= Yes ; X= No ; * = User Action Required
 | OpenCM9.04           |  O*<br>(Library-dependent)   |   O*<br>(Library-dependent)   |
 | OpenCM485 EXP        | O <br>(Controller-dependent) |  O<br>(Controller-dependent)  |
 | OpenCR1.0            |  O*<br>(Library-dependent)   |   O*<br>(Library-dependent)   |
-
-
-
-
-**NOTE** :
-- X-series can switch [protocol 2.0] into [protocol 1.0] aside from [XL320](/docs/en/dxl/x/xl320/).
-- Except MX-12W, MX-series can be upgraded to [protocol 2.0] by updating firmware to V39 or above.
-{: .notice--info}
-
-**WARNING** : MX(2.0) Firmware is different from MX series control table and address.
-Please check the control table address before usage.
-MX(2.0) Firmware inherits Dynamixel X’s function.
-Therefore, it supports Protocol 1.0 and Protocol 2.0, and various Operating Modes, Secondary ID, Drive Mode, Bus Watchdog, etc.
-Please refer to the control table for more details.
-{: .notice--warning}
 
 
 [Protocol 1.0]: /docs/en/dxl/protocol1/
