@@ -27,10 +27,16 @@ page_number: 7
 **WARNING**: The contents in this chapter corresponds to the `Remote PC` (your desktop or laptop PC) which will control TurtleBot3. Do **NOT** apply this instruction to your TurtleBot3.
 {: .notice--warning}
 
-**NOTE**: This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+**NOTE**: This instruction was tested on Linux with `Ubuntu 16.04` and `ROS Kinetic Kame`, and Windows with `Windows 10` and ROS `Melodic Moreana`
 {: .notice--info}
 
-### [Install Ubuntu on Remote PC](#install-ubuntu-on-remote)
+Select which Operating System you'd like to use for the remote PC:
+- [Linux][install-linux-on-remote]
+- [Windows][install-windows-on-remote]
+
+
+### [Linux Install Instructions](#install-linux-on-remote)
+#### [Install Ubuntu on Remote PC](#install-ubuntu-on-remote)
 
 Download and install the `Ubuntu 16.04` on the `Remote PC (your desktop or laptop PC)` from the following link.
 
@@ -40,7 +46,7 @@ If you need more help for installing Ubuntu, check out the step-by-step guide fr
 
 - [Install ubuntu desktop](https://www.ubuntu.com/download/desktop/install-ubuntu-desktop)
 
-### [Install ROS on Remote PC](#install-ros-on-remote-pc)
+#### [Install ROS on Remote PC](#install-ros-on-remote-pc)
 
 ![](/assets/images/platform/turtlebot3/logo_ros.png)
 

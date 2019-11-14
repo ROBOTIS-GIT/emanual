@@ -81,6 +81,10 @@ page_number: 4
   - TurtleBot3 Burger, Waffle Pi (Applied from products shipped in 2019)
 - [Intel® Joule™ 570x](http://ark.intel.com/products/96414/Intel-Joule-570x-Developer-Kit)
   - TurtleBot3 Waffle
+- [Latte Panda Alpha™ by DF Robot](https://www.dfrobot.com/product-1727.html)
+  - Latte Panda Alpha™ by DF Robot
+  - For use with ROS on Windows
+
 
 ### [Sensors](#sensors)
 
@@ -90,6 +94,9 @@ page_number: 4
   - TurtleBot3 Waffle
 - [The Raspberry Pi Camera Module v2.1](https://www.raspberrypi.org/products/camera-module-v2/)
   - TurtleBot3 Waffle Pi
+- [Microsoft Azure Kinect DK](https://azure.microsoft.com/en-us/services/kinect-dk/)
+  - For use with the Latte Panda Alpha™ by DF Robot
+
 
 ### [Embedded Board](#Embedded-board)
 
