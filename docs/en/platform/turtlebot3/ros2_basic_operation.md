@@ -19,62 +19,58 @@ page_number: 28
 
 ## [Topic Monitor](#topic_monitor)
 
-**WARNING**: Be careful when running the robot on the table as the robot might fall.
+**CAUTION**: Place the robot on a level surface to ensure that it can not fall down from a table.
 {: .notice--warning}
 
 {% capture notice_01 %}
 **NOTE**: 
 - This instructions were tested on `Ubuntu 18.04` and `ROS 2 Dashing Diatamata`.
 - This instructions are supposed to be running on the remote PC. Please run the instructions below on your **Remote PC**.
-- Make sure to run the [Bringup](/docs/en/platform/turtlebot3/bringup/#bringup) instructions before running the instructions below.
+- Make sure to run [Bringup](/docs/en/platform/turtlebot3/ros2_bringup/#bringup) before running the instructions below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-In order to check the topics of TurtleBot3, we will use [rqt][rqt] provided by ROS. The rqt is a Qt-based framework for GUI development for ROS. The rqt is a tool that allows users to easily see the topic status by displaying all the topics in the topic list. There are topic names, types, bandwidth, Hz, value in GUI.
+In order to check topics of TurtleBot3, Use [rqt][rqt] provided by ROS, which is a Qt-based framework for GUI development for ROS. It is a tool displaying all topics of TurtleBot3 with a topic name, type, bandwidth, Hz, and value.
 
-**[Remote PC]** Run the rqt.
-``` bash
-$ rqt
-```
-![](/assets/images/platform/turtlebot3/ros2/rqt_1.png)
+- Run **rqt**.
+  ``` bash
+  $ rqt
+  ```
+  ![](/assets/images/platform/turtlebot3/ros2/rqt_1.png)
 
-**TIP**: If rqt is not displayed, select the `plugin` -> `Topics` -> `Topic Monitor`.
-{: .notice--info}
+  **TIP**: If rqt is not displayed, select the `plugin` -> `Topics` -> `Topic Monitor`.
+  {: .notice--info}
 
-When rqt is first run, the topic values are not monitored. To monitor the topic, click the checkbox next to each topic.
+  - Click on the checkbox of the topic to monitor the topic, 
 
-![](/assets/images/platform/turtlebot3/ros2/rqt_2.png)
+    ![](/assets/images/platform/turtlebot3/ros2/rqt_2.png)
 
-If you want to see more detail topic message, click the `▶` button next to each checkbox.
+  - Click on the `▶` button next to the checkbox for more details of topic message,.
 
-![](/assets/images/platform/turtlebot3/ros2/rqt_3.png)
+    ![](/assets/images/platform/turtlebot3/ros2/rqt_3.png)
 
+  - `/battery_state` indicates a message relating to the battery condition, such as the current battery voltage and remaining capacity.
 
-- `/battery_state` indicates a message relating to the battery condition, such as the current battery voltage and remaining capacity.
+    ![](/assets/images/platform/turtlebot3/ros2/rqt_4.png)
 
-![](/assets/images/platform/turtlebot3/ros2/rqt_4.png)
+  - `/odom` indicates a message the odometry of the TurtleBot3. This topic has orientation and position by the encoder data.  
 
+    ![](/assets/images/platform/turtlebot3/ros2/rqt_5.png)
 
-- `/odom` indicates a message the odometry of the TurtleBot3. This topic has orientation and position by the encoder data.  
+  - `/sensor_state` indicates a message the encoder values, battery and torque.
 
-![](/assets/images/platform/turtlebot3/ros2/rqt_5.png)
+    ![](/assets/images/platform/turtlebot3/ros2/rqt_6.png)
 
-- `/sensor_state` indicates a message the encoder values, battery and torque.
+  - `/scan` indicates a message all of the LDS data, such as angle_max and min, range_max and min, indicates, ranges.
 
-![](/assets/images/platform/turtlebot3/ros2/rqt_6.png)
-
-- `/scan` indicates a message all of the LDS data, such as angle_max and min, range_max and min, indicates, ranges.
-
-![](/assets/images/platform/turtlebot3/ros2/rqt_7.png)
+    ![](/assets/images/platform/turtlebot3/ros2/rqt_7.png)
 
 In addition, you can monitor topics through rqt whenever you have a topic added.
 
-[bringup]: /docs/en/platform/turtlebot3/bringup/#bringup
+[bringup]: /docs/en/platform/turtlebot3/ros2_bringup/#bringup
 [rqt]: http://wiki.ros.org/rqt
 
 ## [Teleoperation](#teleoperation)
-
-![](/assets/images/platform/turtlebot3/software/remote_pc_and_turtlebot.png)
 
 {% capture notice_01 %}
 **NOTE**: 
@@ -83,84 +79,85 @@ In addition, you can monitor topics through rqt whenever you have a topic added.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-**WARNING**: Make sure to run the [Bringup][bringup] instruction before performing this examples, and be careful when testing the robot on the table as the robot might fall.
+**CAUTION**: Place the robot on a level surface to ensure that it can not fall down from a table.
 {: .notice--warning}
 
-TurtleBot3 can be teleoperated by various devices. It is tested with several wireless devices such as PS3, XBOX 360, ROBOTIS RC100 and etc. The examples explained here can be launched by ROS 2 on Ubuntu 18.04 with Raspberry Pi 3 and OpenCR that controls DYNAMIXELs.
+**WARNING**: Make sure to run the [Bringup][bringup] instruction before performing this examples.
+{: .notice--warning}
+
+![](/assets/images/platform/turtlebot3/software/remote_pc_and_turtlebot.png)
+
+TurtleBot3 can be teleoperated by various devices. It is tested with several wireless devices such as **PS3, XBOX 360, RC-100 controller and etc**. 
+Examples of TurtleBot3 can be launched by ROS 2 on Ubuntu 18.04 with Raspberry Pi 3 and OpenCR that controls DYNAMIXELs.
 
 ### [Keyboard](#keyboard)
 
-**TIP**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`-`Alt`-`T`.
-{: .notice--info}
+Run teleoperation node on Remote PC
+  ```bash
+  $ export TURTLEBOT3_MODEL=${TB3_MODEL}
+  $ ros2 run turtlebot3_teleop teleop_keyboard
+  ```
+    
+{% include en/platform/turtlebot3/turtlebot_model_export.md %}
 
-**TIP**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `burger`, `waffle`, `waffle_pi`. If you want to permanently set the export settings, please refer to [Export TURTLEBOT3_MODEL][export_turtlebot3_model]{: .popup} page.
-{: .notice--success}
+The virtual controller will appear in the terminal.  
+  
+    ```bash
+    Control Your TurtleBot3!
+    ---------------------------
+    Moving around:
+            w
+        a   s    d
+            x
 
-**[Remote PC]** Run teleoperation node
+    w/x : increase/decrease linear velocity (Burger : ~ 0.22, Waffle and Waffle Pi : ~ 0.26)
+    a/d : increase/decrease angular velocity (Burger : ~ 2.84, Waffle and Waffle Pi : ~ 1.82)
 
-```bash
-$ export TURTLEBOT3_MODEL=${TB3_MODEL}
-$ ros2 run turtlebot3_teleop teleop_keyboard
-```
+    space key, s : force stop
 
-**[Remote PC]** If the node is successfully run, the following instruction will be appeared to the terminal window.  
+    CTRL-C to quit
+  ```
 
-```bash
-Control Your TurtleBot3!
----------------------------
-Moving around:
-        w
-    a    s    d
-        x
+### [RC-100](#rc100)
 
-w/x : increase/decrease linear velocity (Burger : ~ 0.22, Waffle and Waffle Pi : ~ 0.26)
-a/d : increase/decrease angular velocity (Burger : ~ 2.84, Waffle and Waffle Pi : ~ 1.82)
+It will be released soon ! 
+{: .notice}
 
-space key, s : force stop
-
-CTRL-C to quit
-```
-
-### [RC100](#rc100)
-
-To be tested soon.
-
-The settings for [ROBOTIS RC-100B][rc100] controller is included in the OpenCR firmware for TurtleBot3 Burger, Waffle and Waffle Pi. This controller can be used with the Bluetooth module [BT410][bt410]. The TurtleBot3 Waffle Pi includes this controller and Bluetooth modules. When using RC-100, it is not necessary to execute a specific node because `turtlebot_core` node creates a `/cmd_vel` topic in the firmware directly connected to OpeCR.
+The settings for [ROBOTIS RC-100B][rc100] is included in an OpenCR firmware for TurtleBot3. It can be used with the Bluetooth module [BT410][bt410]. TurtleBot3 Waffle Pi includes this controller and Bluetooth modules. When using RC-100B, it is not necessary to execute a specific node because `turtlebot_core` node creates a `/cmd_vel` topic in the firmware directly connected to OpeCR.
 
 ![](/assets/images/platform/turtlebot3/example/rc100b_with_bt410.png)
 
+[rc100]: /docs/en/parts/communication/rc-100/
+[bt410]: /docs/en/parts/communication/bt-410/
+
 ### [PS3 Joystick](#ps3-joystick)
 
-**[Remote PC]** Connect PS3 Joystick to the remote PC via Bluetooth or with USB cable.
+1. Connect PS3 Joystick to the Remote PC via either Bluetooth or USB cable.
 
-**[Remote PC]** Install packages for teleoperation using PS3 joystick.
+2. Install ds4drv packages by using pip.
+  ```bash
+  $ sudo pip install ds4drv
+  ```
 
-```bash
-$ sudo pip install ds4drv
-```
-
-**[Remote PC]** Run teleoperation packages for PS3 joystick.
-
-```bash
-$ sudo ds4drv
-$ ros2 run joy joy_node
-$ ros2 run teleop_twist_joy teleop_node
-```
+3. Run teleoperation packages.  
+  ```bash
+  $ sudo ds4drv
+  $ ros2 run joy joy_node
+  $ ros2 run teleop_twist_joy teleop_node
+  ```
+  
 
 ### [XBOX 360 Joystick](#xbox-360-joystick)
-**[Remote PC]** Connect XBOX 360 Joystick to the remote PC with Wireless Adapter or USB cable.
 
-**[Remote PC]** Run teleoperation packages for XBOX 360 joystick.
+1. Connect XBOX 360 Joystick to the Remote PC via either Wireless Adapter or USB cable.
 
-```bash
-$ ros2 run joy joy_node
-$ ros2 run teleop_twist_joy teleop_node
-```
+2. Run teleoperation packages.
+  ```bash
+  $ ros2 run joy joy_node
+  $ ros2 run teleop_twist_joy teleop_node
+  ```
 
 ## [Basic Examples](#basic-examples)
-
-**WARNING**: Make sure to run the [Bringup][bringup] instruction before performing this examples, and be careful when testing the robot on the table as the robot might fall.
-{: .notice--warning}
 
 {% capture notice_01 %}
 **NOTE**:
@@ -169,75 +166,82 @@ $ ros2 run teleop_twist_joy teleop_node
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
+**CAUTION**: Place the robot on a level surface to ensure that it can not fall down from a table.
+{: .notice--warning}
+
+**WARNING**: Make sure to run the [Bringup][bringup] instruction before performing this examples.
+{: .notice--warning}
+
 ### [Move using Interactive Markers](#move-using-interactive-markers)
 
-To be added soon.
+It will be released soon ! 
+{: .notice}
 
 ### [Obstacle Detection](#obstacle-detection)
 
-The TurtleBot3 can be moved by sending a /cmd_vel_raw topic. When the TurtleBot3 moves, it stops when it detects an obstacle nearby using LDS data.
+TurtleBot3 can moves with receiving a certain topic: **/cmd_vel_raw** from obstacle detection node. Using LDS data and detecting obstacles, the robot can stop moving.  
 
-**[Remote PC]** Run the teleoperation keyboard.
-``` bash
-$ ros2 run turtlebot3_teleop teleop_keyboard /cmd_vel:=/cmd_vel_raw
-```
+1. Run the teleoperation keyboard.
+  ``` bash
+  $ ros2 run turtlebot3_teleop teleop_keyboard /cmd_vel:=/cmd_vel_raw
+  ```
 
-**[Remote PC]** Launch the obstacle detection.
-``` bash
-$ ros2 launch turtlebot3_example turtlebot3_obstacle_detection
-```
+2. Launch the obstacle detection.
+  ``` bash
+  $ ros2 launch turtlebot3_example turtlebot3_obstacle_detection
+  ```
 
 ### [Position Control](#position-control)
 
 TurtleBot3 can be position controlled using this package.
 
-**[Remote PC]** launch the pointop file.
-``` bash
-$ ros2 run turtlebot3_example turtlebot3_position_control
-```
+1. Launch the pointop file.
+  ``` bash
+  $ ros2 run turtlebot3_example turtlebot3_position_control
+  ```
 
-Type input values and press enter for x, y and theta respectively. TurtleBot3 will move to a pose (x, y, theta) from the current pose.
+2. Type input values and press enter for `x`, `y` and `theta` respectively. TurtleBot3 will move to a pose (`x`, `y`, `theta`) from the current pose.
 
-**[Remote PC]**
+    ``` bash
+    Turtlebot3 Position Control
+    ------------------------------------------------------
+    From the current pose,
+    x: goal position x (unit: m)
+    y: goal position y (unit: m)
+    theta: goal orientation (range: -180 ~ 180, unit: deg)
+    ------------------------------------------------------
 
-``` bash
-Turtlebot3 Position Control
-------------------------------------------------------
-From the current pose,
-x: goal position x (unit: m)
-y: goal position y (unit: m)
-theta: goal orientation (range: -180 ~ 180, unit: deg)
-------------------------------------------------------
-
-Input x: 1  (input a value and press enter)
-Input y: 1  (input a value and press enter)
-Input theta: 10  (input a value and press enter)
-```
+    Input x: 1  (input a value and press enter)
+    Input y: 1  (input a value and press enter)
+    Input theta: 10  (input a value and press enter)
+    ```
 
 ### [Patrol](#patrol)
 
 This example uses action topic. The action client translates patrol data(radius) to action server. Then, the action server translates `cmd_vel` to TurtleBot3. 
 
-**[Remote PC]** Launch the patrol server file.
-``` bash
-$ ros2 run turtlebot3_example turtlebot3_patrol_server
-```
-**[Remote PC]** Launch the patrol client file.
-``` bash
-$ ros2 run turtlebot3_example turtlebot3_patrol_client
-```
+1. Launch the patrol server file.
+  ``` bash
+  $ ros2 run turtlebot3_example turtlebot3_patrol_server
+  ```
+  
+2. Launch the patrol client file.
+  ``` bash
+  $ ros2 run turtlebot3_example turtlebot3_patrol_client
+  ```
 
-Type a input value and press enter. TurtleBot3 will draw a circle of the typed radius.
+3. Type a input value and press enter. TurtleBot3 will draw a circle of the typed radius.
 
-``` bash
-TurtleBot3 Circle Patrol
-------------------------------------------------------
-radius: circle radius (unit: m)
-------------------------------------------------------
+    ``` bash
+    TurtleBot3 Circle Patrol
+    ------------------------------------------------------
+    radius: circle radius (unit: m)
+    ------------------------------------------------------
 
-Input radius: 1  (input a value and press enter)
-```
+    Input radius: 1  (input a value and press enter)
+    ```
 
 ## [Additional Sensors](#additional_sensors)
 
-To be added soon...
+It will be released soon ! 
+{: .notice}

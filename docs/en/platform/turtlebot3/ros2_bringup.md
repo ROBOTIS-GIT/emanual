@@ -19,20 +19,17 @@ page_number: 27
 
 ## [Bringup TurtleBot3](#bringup-turtlebot3)
 
+**WARNING** :Do not apply this instruction to Remote PC. Use SBC. 
+{: .notice--warning}
+
 Launch a model of your TurtleBot3 including node of `robot_state_publisher` and `turtlebot3_node`.
-
-**NOTE**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `burger`, `waffle`, `waffle_pi`. If you want to permanently set the export settings, please refer to [Export TURTLEBOT3_MODEL][export_turtlebot3_model]{: .popup} page.
-{: .notice}
-
-**NOTE**: Please follow steps with **SBC in TurtleBot3**.
-{: .notice}
-
-**[TurtleBot]**
 
 ```bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ ros2 launch turtlebot3_bringup robot.launch.py
 ```
+
+{% include en/platform/turtlebot3/turtlebot_model_export.md %}
 
 If the node is successfully launched, the following instruction will appeared on the terminal window.
 
@@ -138,31 +135,11 @@ $ ros2 service list
 /turtlebot3_node/set_parameters_atomically
 ```
 
-## [Load a TurtleBot3 on Rviz2](#load-a-turtlebot3-on-rviz2)
+## [Load TurtleBot3 on Rviz2](#load-a-turtlebot3-on-rviz2)
 
-**[Remote PC]** Launch robot state publisher and Run RViz.
-{: .notice--warning}
-
-**TIP**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `burger`, `waffle`, `waffle_pi`. If you want to permanently set the export settings, please refer to [Export TURTLEBOT3_MODEL][export_turtlebot3_model]{: .popup} page.
-{: .notice--success}
-
-Launch bringup.
-
-**[TurtleBot]**
-
-``` bash
-$ export TURTLEBOT3_MODEL=${TB3_MODEL}
-$ ros2 launch turtlebot3_bringup robot.launch.py
-```
-
-Run `RViz2`
-
-**[Remote PC]**
-
-```bash
-$ ros2 launch turtlebot3_bringup rviz2.launch.py
-```
-![](/assets/images/platform/turtlebot3/ros2/platform_teleop.png)
-
-
-[export_turtlebot3_model]: /docs/en/platform/turtlebot3/export_turtlebot3_model
+1. [Bring up TurtleBot3](#bringup-turtlebot3)
+2. Launch robot state publisher and Run RViz on the Remote PC.
+  ```bash
+  $ ros2 launch turtlebot3_bringup rviz2.launch.py
+  ```
+  ![](/assets/images/platform/turtlebot3/ros2/platform_teleop.png)

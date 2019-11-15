@@ -15863,6 +15863,19 @@ turtlebot3:
       url: /platform/turtlebot3/machine_learning/#set-parameters
     - title: "Run Machine Learning"
       url: /platform/turtlebot3/machine_learning/#run-machine-learning
+  - title: "[ROS] Applications"
+    url: /platform/turtlebot3/applications/#applications
+    children:
+    - title: "TurtleBot Follower Demo"
+      url: /platform/turtlebot3/applications/#turtlebot-follower-demo
+    - title: "TurtleBot Panorama Demo"
+      url: /platform/turtlebot3/applications/#turtlebot-panorama-demo
+    - title: "Automatic Parking"
+      url: /platform/turtlebot3/applications/#automatic-parking
+    - title: "Automatic Parking Vision"
+      url: /platform/turtlebot3/applications/#automatic-parking-vision
+    - title: "Load Multiple TurtleBot3s"
+      url: /platform/turtlebot3/applications/#load-multiple-turtlebot3s
   - title: "[ROS 2] Setup"
     url: /platform/turtlebot3/ros2_setup
     children:
@@ -15893,6 +15906,14 @@ turtlebot3:
     url: /platform/turtlebot3/ros2_navigation2/#navigation2
   - title: "[ROS 2] Simulation"
     url: /platform/turtlebot3/ros2_simulation/#simulation
+  - title: "[ROS2] Manipulation"
+    url: /platform/turtlebot3/ros2_manipulation/
+  - title: "[ROS2] Autonomous Driving"
+    url: /platform/turtlebot3/ros2_manipulation/
+  - title: "[ROS2] Machine Learning"
+    url: /platform/turtlebot3/ros2_machine_learning/
+  - title: "[ROS2] Applications"
+    url: /platform/turtlebot3/ros2_applications/
   - title: "Locomotion"
     url: /platform/turtlebot3/locomotion/#locomotion
     children:
@@ -15920,19 +15941,6 @@ turtlebot3:
       url: /platform/turtlebot3/locomotion/#turtlebot3-friends-real-turtlebot
     - title: "TurtleBot3 Friends: Carrier"
       url: /platform/turtlebot3/locomotion/#turtlebot3-friends-carrier
-  - title: "Applications"
-    url: /platform/turtlebot3/applications/#applications
-    children:
-    - title: "TurtleBot Follower Demo"
-      url: /platform/turtlebot3/applications/#turtlebot-follower-demo
-    - title: "TurtleBot Panorama Demo"
-      url: /platform/turtlebot3/applications/#turtlebot-panorama-demo
-    - title: "Automatic Parking"
-      url: /platform/turtlebot3/applications/#automatic-parking
-    - title: "Automatic Parking Vision"
-      url: /platform/turtlebot3/applications/#automatic-parking-vision
-    - title: "Load Multiple TurtleBot3s"
-      url: /platform/turtlebot3/applications/#load-multiple-turtlebot3s
   - title: "Learn"
     url: /platform/turtlebot3/learn/#learn
     children:
