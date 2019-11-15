@@ -28,6 +28,9 @@ page_number: 8
 **NOTE**: We are offering three models of TurtleBot3. TurtleBot3 Burger and Waffle Pi use Raspberry Pi 3 B and B+, and TurtleBot3 Waffle uses Intel Joule 570x. Choose from the following pages according to the SBC used in your model.
 {: .notice--info}
 
+**NOTE**: If you would like to use Windows on your Turtlebot3, you'll need to separately acquire a Windows 10 Enterprise compatible Single Board Computer, and adapt it to the turtlebot power supply.
+{: .notice--info}
+
 ### [Raspberry Pi 3](#raspberry-pi-3)
 
 {% capture info_01 %}
@@ -56,3 +59,17 @@ page_number: 8
 [install_linux_ubuntu_mate]: /docs/en/platform/turtlebot3/raspberry_pi_3_setup/#install-linux-ubuntu-mate
 [install_linux_based_on_raspbian]: /docs/en/platform/turtlebot3/raspberry_pi_3_setup/#install-linux-based-on-raspbian
 [install_ubuntu]: /docs/en/platform/turtlebot3/joule_setup/#install-linux-ubuntu
+
+### [Windows 10 Single board computer](#windows-10-single-board-computer)
+
+1. You can download a trial of Windows 10 IoT Enterprise Long Term Service (LTSC) from the following link:
+   - [Download link][windows_download_link]
+
+   [windows_download_link]: https://www.microsoft.com/en-us/evalcenter/evaluate-windows-10-enterprise
+
+2. Please refer to the [ROS Wiki instructions](https://wiki.ros.org/Installation/Windows) for installing ROS on Windows.
+3. Please install the [CP2102 Driver from SI Labs](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers) in order to communicate with the Lidar.
+
+
+
+

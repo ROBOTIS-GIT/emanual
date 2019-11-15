@@ -27,7 +27,7 @@ page_number: 14
 {% endcapture %}
 <div class="notice--warning">{{ notice_01 | markdownify }}</div>
 
-**NOTE**: This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+**NOTE**: This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame` and on `Windows 10` with `ROS Melodic Morena`.
 {: .notice--info}
 
 ## [Run roscore](#run-roscore)
@@ -42,6 +42,24 @@ $ roscore
 ```
 
 ## [Bringup a TurtleBot3](#bringup-a-turtlebot3)
+
+{% capture notice_01 %}
+Before starting to work with turtlebot3 with a Windows 10 Single Board Computer, you'll need to identify which COM port the lidar and OpenCR board are mounted on. To do this, visit the Device Manager, and add one device at a time to see which COM port each represents. 
+
+Then modify the following files:
+
+`turtlebot3_bringup/launch/turtlebot3_core-win.launch`
+``` xml
+<node pkg="rosserial_python" type="serial_node.py" name="turtlebot3_core" output="screen">
+    <param name="port" value="COMx"/>
+```
+
+`turtlebot3_bringup/launch/turtlebot3_lidar-win.launch`
+``` xml
+ <node pkg="hls_lfcd_lds_driver" type="hlds_laser_publisher" name="turtlebot3_lds" output="screen">
+    <param name="port" value="COMy"/>
+```
+{% endcapture %}
 
 **[TurtleBot]** Bring up basic packages to start TurtleBot3 applications.
 
