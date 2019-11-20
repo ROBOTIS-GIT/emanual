@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: ros_2
+ref: ros2_simulation
 read_time: true
 share: true
 author_profile: false
@@ -10,52 +10,62 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 31
+page_number: 32
 ---
 
-<div style="counter-reset: h1 19"></div>
+<div style="counter-reset: h1 20"></div>
 
 # [Simulation](#simulation)
-
-{% capture notice_01 %}
-**NOTE**:
-- This instructions were tested on `Ubuntu 18.04` and `ROS 2 Dashing Diatamata`.
-- This instructions are supposed to be running on the remote PC. Please run the instructions below on your **Remote PC**.
-{% endcapture %}
-<div class="notice--info">{{ notice_01 | markdownify }}</div>
 
 {% capture notice_02 %}
 {% include en/platform/turtlebot3/ros_book_info.md %}
 {% endcapture %}
 <div class="notice--success">{{ notice_02 | markdownify }}</div>
 
-TurtleBot3 supports development environment that can be programmed and developed with a virtual robot in the simulation. There are two development environments to do this, one is using fake node and 3D visualization tool RViz and the other is using the 3D robot simulator Gazebo.
+{% capture notice_01 %}
+**NOTE**: This instructions were tested on `Ubuntu 18.04` and `ROS 2 Dashing Diatamata`.
+{% endcapture %}
+<div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-The fake node method is suitable for testing with the robot model and movement, but it can not use sensors. If you need to test SLAM and Navigation, we recommend using Gazebo, which can use sensors such as IMU, LDS, and camera in the simulation.
+TurtleBot3 supports a development enviroment which can be programed and developed with a virtual robot in the simulation 
+
+There are two development enviroments: **Fake Node** and **Gazebo**. 
+
+**Fake Node**:
+- You can use Fake Node and RViz that is 3D visualization tool.
+- It is used for testing a model of TurtleBot3 and movement of the robot
+- It does not support using sensor data, so that **SLAM** and **Navigation** is not supported.
+
+**Gazebo**:
+- Gazebo allows Turtlebot3 to use virtual sensor data in simulator: IMU, LDS, and camera information. 
+- Use Gazabo to simulate TurtleBot3 with **SLAM** or **Navigation**.
 
 ## [TurtleBot3 Simulation using Fake Node](#turtlebot3-simulation-using-fake-node)
 
-To launch the virtual robot, execute the `turtlebot3_fake_node.launch.py` file in the `turtlebot3_fake_node` package as shown below. The `turtlebot3_fake_node` is a very simple simulation node that can be run without having an actual robot. You can even control the virtual TurtleBot3 in RViz with a teleoperation node.
+To use a virtual TurtleBot3, execute `turtlebot3_fake_node.launch.py` in a `turtlebot3_fake_node` package that is simple simulation node.
+Follow the instructions to bring TurtleBot3 into the virtual world using Fake Node.
 
-**TIP**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `burger`, `waffle`, `waffle_pi`. If you want to permanently set the export settings, please refer to [Export TURTLEBOT3_MODEL][export_turtlebot3_model]{: .popup} page.
-{: .notice--success}
+1. Execute `turtlebot3_fake_node.launch.py` file
+  ``` bash
+  $ export TURTLEBOT3_MODEL=${TB3_MODEL}
+  $ ros2 launch turtlebot3_fake_node turtlebot3_fake_node.launch.py
+  ```
 
-``` bash
-$ export TURTLEBOT3_MODEL=${TB3_MODEL}
-$ ros2 launch turtlebot3_fake_node turtlebot3_fake_node.launch.py
-```
+    **NOTE**: Specify `${TB3_MODEL}`: `burger`, `waffle`, `waffle_pi` before excuting the command. Set the permanent export setting by following [Export TURTLEBOT3_MODEL](/docs/en/platform/turtlebot3/export_turtlebot3_model){: .popup} instruction.
+    {: .notice--info}
 
-``` bash
-$ export TURTLEBOT3_MODEL=${TB3_MODEL}
-$ ros2 run turtlebot3_teleop teleop_keyboard
-```
+    - You can control the virtual TurtleBot3 by using [Teleoperation](/docs/en/platform/turtlebot3/ros2_basic_operation/#basic_operation/#teleoperation)
+      ``` bash
+      $ export TURTLEBOT3_MODEL=${TB3_MODEL}
+      $ ros2 run turtlebot3_teleop teleop_keyboard
+      ```
 
 ## [TurtleBot3 Simulation using Gazebo](#turtlebot3-simulation-using-gazebo)
 
-There are two ways to simulate using Gazebo. first method is to use with ROS through `turtlebot3_gazebo` package and second method is to use only gazebo and `turtlebot3_gazebo_plugin` plugin without using ROS.
+In order to use Gazebo, choose either of two options:
 
-**WARNING** : Do not proceed to this instruction on SBC in TurtleBot3. Please follow steps with **Remote PC**.
-{: .notice--warning}
+1. Use `turtlebot3_gazebo` package via ROS. 
+2. Use `turtlebot3_gazebo_plugin` plugin without running ROS.  
 
 ### [ROS packages for Gazebo](#ros-packages-for-gazebo)
 
@@ -65,24 +75,26 @@ Add GAZEBO_MODEL_PATH.
 $ echo 'export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/turtlebot3_ws/src/turtlebot3/turtlebot3_simulations/turtlebot3_gazebo/models' >> ~/.bashrc
 $ source ~/.bashrc
 ```
-**NOTE**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `burger`, `waffle`, `waffle_pi`. If you want to permanently set the export settings, please refer to [Export TURTLEBOT3_MODEL][export_turtlebot3_model]{: .popup} page.
-{: .notice}
+**NOTE**: Specify `${TB3_MODEL}`: `burger`, `waffle`, `waffle_pi` before excuting the command. Set the permanent export setting by following [Export TURTLEBOT3_MODEL](/docs/en/platform/turtlebot3/export_turtlebot3_model){: .popup} instruction.
+{: .notice--info}
 
 #### [Simulate in Various World](#simulate-in-various-world)
 
 ##### 1) Empty World
 
-The following command can be used to test the virtual TurtleBot3 on the `empty world` of the gazebo default environment.
+Test the virtual TurtleBot3 on the `empty world` of the gazebo default environment.
 
-**TIP**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `burger`, `waffle`, `waffle_pi`. If you want to permanently set the export settings, please refer to [Export TURTLEBOT3_MODEL][export_turtlebot3_model]{: .popup} page.
-{: .notice--success}
-
+1. Open a terminal on **Remote PC**
+2. Bring Empty World using the following command.
 ``` bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ ros2 launch turtlebot3_gazebo empty_world.launch.py
 ```
+  
+    **NOTE**: Specify `${TB3_MODEL}`: `burger`, `waffle`, `waffle_pi` before excuting the command. Set the permanent export setting by following [Export TURTLEBOT3_MODEL](/docs/en/platform/turtlebot3/export_turtlebot3_model){: .popup} instruction.
+    {: .notice--info}
 
-![](/assets/images/platform/turtlebot3/simulation/turtlebot3_empty_world.png)
+    ![](/assets/images/platform/turtlebot3/simulation/turtlebot3_empty_world.png)
 
 2. Load TurtleBot3 on TurtleBot3 world.
 
@@ -90,92 +102,115 @@ $ ros2 launch turtlebot3_gazebo empty_world.launch.py
 
 `TurtleBot3 world` is a map consists of simple objects that makes up the shape of TurtleBot3 symbol. TurtleBot3 world is mainly used for testing such as SLAM and Navigation.
  
+1. Open a terminal on **Remote PC**
+2. Bring Empty World using the following command.
 ``` bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
 ```
-
-![](/assets/images/platform/turtlebot3/ros2/gazebo_world.png)
+    
+    **NOTE**: Specify `${TB3_MODEL}`: `burger`, `waffle`, `waffle_pi` before excuting the command. Set the permanent export setting by following [Export TURTLEBOT3_MODEL](/docs/en/platform/turtlebot3/export_turtlebot3_model){: .popup} instruction.
+    {: .notice--info}
+    
+    ![](/assets/images/platform/turtlebot3/ros2/gazebo_world.png)
 
 ##### 3) TurtleBot3 House
 
 `TurtleBot3 House` is a map made with house drawings. It is suitable for testing related to more complex task performance.
 
+1. Open a terminal on **Remote PC**
+2. Bring TurtleBot3 House using the following command.
 ``` bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ ros2 launch turtlebot3_gazebo turtlebot3_house.launch.py
 ```
+    
+    **NOTE**: Specify `${TB3_MODEL}`: `burger`, `waffle`, `waffle_pi` before excuting the command. Set the permanent export setting by following [Export TURTLEBOT3_MODEL](/docs/en/platform/turtlebot3/export_turtlebot3_model){: .popup} instruction.
+    {: .notice--info}
+    
+    ![](/assets/images/platform/turtlebot3/simulation/turtlebot3_house.png)
 
-![](/assets/images/platform/turtlebot3/simulation/turtlebot3_house.png)
-
-![](/assets/images/platform/turtlebot3/simulation/turtlebot3_house1.png)
+    ![](/assets/images/platform/turtlebot3/simulation/turtlebot3_house1.png)
 
 #### [Drive TurtleBot3](#drive-turtlebot3)
 
 ##### 1) Teleoperation on Gazebo
 
-In order to control a TurtleBot3 with a keyboard, please launch teleoperation feature with below command in a new terminal window.
+In order to control TurtleBot3 using a keyboard, launch a teleoperation node.
 
+1. Open a terminal on **Remote PC**
+2. Run teleoperation node.
 ``` bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ ros2 run turtlebot3_teleop teleop_keyboard
 ```
 
+    **NOTE**: Specify `${TB3_MODEL}`: `burger`, `waffle`, `waffle_pi` before excuting the command. Set the permanent export setting by following [Export TURTLEBOT3_MODEL](/docs/en/platform/turtlebot3/export_turtlebot3_model){: .popup} instruction.
+    {: .notice--info}
+
 ##### 2) Collision Avoidance
 
-In order to autonomously drive a TurtleBot3 around the **TurtleBot3 world**, open a new terminal window and enter below command.
+In order to autonomously drive a TurtleBot3 around the **TurtleBot3 world**, open a terminal window and enter below command.
 
+1. Open a terminal on **Remote PC**
+2. Bring Empty World.
 ``` bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
 ```
+    **NOTE**: Specify `${TB3_MODEL}`: `burger`, `waffle`, `waffle_pi` before excuting the command. Set the permanent export setting by following [Export TURTLEBOT3_MODEL](/docs/en/platform/turtlebot3/export_turtlebot3_model){: .popup} instruction.
+    {: .notice--info}
 
-Open a new terminal window and enter below command.
-
+3. Open a new terminal on **Remote PC**
+4. Run the command below.
 ``` bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ ros2 run turtlebot3_gazebo turtlebot3_drive
 ```
+    **NOTE**: Specify `${TB3_MODEL}`: `burger`, `waffle`, `waffle_pi` before excuting the command. Set the permanent export setting by following [Export TURTLEBOT3_MODEL](/docs/en/platform/turtlebot3/export_turtlebot3_model){: .popup} instruction.
+    {: .notice--info}
 
-#### [Execute RViz](#execute-rviz)
+#### [Execute RViz2](#execute-rviz2)
 
-RViz visualizes published topics while simulation is running. You can launch RViz in a new terminal window by entering below command.
+RViz visualizes published topics while simulation is running. Launch RViz by using a command below.
 
+1. Open a terminal on **Remote PC**
+2. Execute RViz2.
 ``` bash
 $ ros2 launch turtlebot3_bringup rviz2.launch.py
-``` 
+```
 
 #### [Virtual SLAM with TurtleBot3](#virtual-slam-with-turtlebot3)
 
-For virtual SLAM in Gazebo, instead of running the actual robot, you can select the various environments and robot models mentioned above, and the SLAM-related commands will use the ROS packages used in the [SLAM][slam] section.
+Use SLAM for a virtual robot in Gazebo. 
+
+- You can select a model of the virtual robot and a desired a map of a virtual world. 
+
+- ROS Packages are needed in order to use [SLAM](slam) for the virtual robot in Gazebo.
 
 ##### Virtual SLAM Execution Procedure
 
-The following commands are examples of using the TurtleBot3 Waffle Pi model and the turtlebot3_world environment.
+The following commands are examples for **TurtleBot3 Waffle Pi** in a turtlebot3_world.
 
-- Launch Gazebo
-
+1. Launch Gazebo
 ``` bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
 ```
 
-- Launch Cartographer SLAM
-
+2. Launch Cartographer SLAM
 ```bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ ros2 launch turtlebot3_cartographer cartographer.launch.py use_sim_time:=True
 ```
 
-- Remotely Control TurtleBot3
-
+3. Remotely Control TurtleBot3
 ```bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ ros2 run turtlebot3_teleop teleop_keyboard
 ```
 
-- Save the Map
-
+4. Save the Map
 ```bash
 $ ros2 run nav2_map_server map_saver -f ~/map
 ```
@@ -198,23 +233,28 @@ For virtual Navigation in Gazebo, instead of running the actual robot, you can s
 Terminate all applications that were executed during the virtual SLAM practice and execute
 related packages in the following instruction, the robot will appear on the previously generated map. After setting the initial position of the robot on the map, set the destination to run the navigation as shown in figure below. The initial position only needs to be set once.
 
-- Execute Gazebo
-
+1. Execute Gazebo
 ``` bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
 ```
 
-- Execute Navigation
+    **NOTE**: Specify `${TB3_MODEL}`: `burger`, `waffle`, `waffle_pi` before excuting the command. Set the permanent export setting by following [Export TURTLEBOT3_MODEL](/docs/en/platform/turtlebot3/export_turtlebot3_model){: .popup} instruction.
+    {: .notice--info}
 
+2. Execute Navigation
 ```bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=True map:=$HOME/map.yaml
 ```
-**NOTE**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `burger`, `waffle`, `waffle_pi`. If you want to permanently set the export settings, please refer to [Export TURTLEBOT3_MODEL][export_turtlebot3_model]{: .popup} page.
-{: .notice}
 
-- Click `2D Pose Estimate` button in a menu bar, and then point exact pose of turtlebot3 on a map.
-- If TurtleBot3 is close to a costmap or nearby the map, click `Navigation2 Goal` button in a menu bar, and then point goal pose on the map.
+    **NOTE**: Specify `${TB3_MODEL}`: `burger`, `waffle`, `waffle_pi` before excuting the command. Set the permanent export setting by following [Export TURTLEBOT3_MODEL](/docs/en/platform/turtlebot3/export_turtlebot3_model){: .popup} instruction.
+    {: .notice--info}
 
-![](/assets/images/platform/turtlebot3/ros2/gazebo_navigation2.png)
+    - Click `2D Pose Estimate` button in a menu bar, and then point exact pose of turtlebot3 on a map.
+    - If TurtleBot3 is close to a costmap or nearby the map, click `Navigation2 Goal` button in a menu bar, and then point goal pose on the map.
+
+    ![](/assets/images/platform/turtlebot3/ros2/gazebo_navigation2.png)
+
+[slam]: /docs/en/platform/turtlebot3/ros2_slam/#slam
+[navigation]: /docs/en/platform/turtlebot3/ros2_navigation2/#navigation2

@@ -10,83 +10,85 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 29
+page_number: 30
 ---
 
-<div style="counter-reset: h1 17"></div>
+<div style="counter-reset: h1 18"></div>
 
 # [SLAM](#slam)
-  
-**WARNING**: Be careful when running the robot on the table as the robot might fall.
-{: .notice--warning}
   
 {% capture notice_01 %}
 **NOTE**: 
 - This instructions were tested on `Ubuntu 18.04` and `ROS2 Dashing Diademata`.
 - This instructions are supposed to be running on the remote PC. Please run the instructions below on your **Remote PC**.
-- The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. The shortcut key for running the terminal is `Ctrl`-`Alt`-`T`.
 - Make sure to run the [ROS2 Bringup](/docs/en/platform/turtlebot3/ros2_bringup/#bringup) instructions before running the instructions below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
-  
-  
-**TIP**: It is recommended to use a joystick pad instead of the keyboard for easier control. For more information on remote control, Please refer to [Teleoperation] page.
-{: .notice--success}
-  
-## [Cartographer](#cartographer)
-  
-
-**WARNING** : Do not proceed to this instruction on SBC in TurtleBot3. Please follow steps with **Remote PC**.
+      
+**CAUTION**: Place the robot on a level surface, and ensure that it can not fall off an table or desk during a test.
 {: .notice--warning}
 
-**SLAM (Simultaneous Localization And Mapping)** is a technique to draw a map by estimating current location in an arbitrary space. The SLAM is a well-known feature of TurtleBot from its predecessors. The video here shows you how accurately TurtleBot3 can draw a map with its compact and affordable platform.
+## [Cartographer](#cartographer)
+
+**SLAM (Simultaneous Localization And Mapping)** is a technique of drawing a map by estimating its current location in an arbitrary space: it is a well-known feature of its predecessors of TurtleBot.  
+
+Watch the video and see how accurate TurtleBot3 draws a map.  
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pJNSxDodhDk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## [Run SLAM Nodes](#run-slam-nodes)
   
-**[TurtleBot]** Bring up basic packages to start TurtleBot3 applications.  
-  
-**NOTE**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `burger`, `waffle`, `waffle_pi`. If you want to permanently set the export settings, please refer to [Export TURTLEBOT3_MODEL][export_turtlebot3_model]{: .popup} page.
-{: .notice}  
-    
+1. Open a terminal on **Turtlebot3**. 
+
+2. bring up basic packages to start its applications .    
 ``` bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ ros2 launch turtlebot3_bringup robot.launch.py
-```  
-    
-**[Remote PC]** Open a new terminal and launch the SLAM file.  
+```
+    **NOTE**: Specify `${TB3_MODEL}`: `burger`, `waffle`, `waffle_pi` before excuting the command. Set the permanent export setting by following [Export TURTLEBOT3_MODEL](/docs/en/platform/turtlebot3/export_turtlebot3_model){: .popup} instruction.
+    {: .notice--info}
+      
+3. Open a new terminal on **Remote PC** 
+
+4. Launch the SLAM file.  
 ```bash
 $ ros2 launch turtlebot3_cartographer cartographer.launch.py
 ```
-    
-![](/assets/images/platform/turtlebot3/ros2/platform_cartographer.png)
+    ![](/assets/images/platform/turtlebot3/ros2/platform_cartographer.png)
 
 ## [Run Teleoperation Node](#run-teleoperation-node)
+ 
+In order to achieve a high level accuracy for A mapping, you need to repeat SLAM several times manually in a given place. Use the following package (Teleoperation Node) for a manual operation.  
+Refer to a picture of the mapping process, which shows how the robot draws a map using SLAM.   
 
-**[Remote PC]** Open a new terminal and run the teleoperation node. The following command allows the user to control the robot to perform SLAM operation manually. It is important to avoid vigorous movements such as changing the speed too quickly or rotating too fast. When building a map using the robot, the robot should scan every corner of the environment to be measured. It requires some experiences to build a clean map, so let’s practice SLAM multiple times to build up know how. The mapping process is shown in figure below.
+1. Open a terminal **on Remote PC**
 
+2. Run Teleoperation Node.
 ``` bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ ros2 run turtlebot3_teleop teleop_keyboard
 ```
+    **NOTE**: Specify `${TB3_MODEL}`: `burger`, `waffle`, `waffle_pi` before excuting the command. Set the permanent export setting by following [Export TURTLEBOT3_MODEL](/docs/en/platform/turtlebot3/export_turtlebot3_model){: .popup} instruction.
+    {: .notice--info}
+  
+3. Use the controller.  
 
-``` bash
-  Control Your TurtleBot3!
-  ---------------------------
-  Moving around:
-          w
-     a    s    d
-          x
+    ``` bash
+      Control Your TurtleBot3!
+      ---------------------------
+      Moving around:
+              w
+         a    s    d
+              x
 
-  w/x : increase/decrease linear velocity
-  a/d : increase/decrease angular velocity
-  space key, s : force stop
+      w/x : increase/decrease linear velocity
+      a/d : increase/decrease angular velocity
+      space key, s : force stop
 
-  CTRL-C to quit
-```
+      CTRL-C to quit
+    ```
 
-![](/assets/images/platform/turtlebot3/slam/slam_running_for_mapping.png)
+    ![](/assets/images/platform/turtlebot3/slam/slam_running_for_mapping.png)
 
 ## [Tuning Guide](#tuning-guide)  
 > Reference : Cartographer ROS
@@ -145,20 +147,36 @@ _**POSE_GRAPH.constraint_builder.global_localization_min_score**_
 
 ## [Save the Map](#save-the-map)
 
-**[Remote PC]** Now that you have all the work done, let's run the `map_saver` node to create a map file. The map is drawn based on the robot's odometry, tf information, and scan information of the sensor when the robot moves. These data can be seen in the RViz from the previous example video. The created map is saved in the directory in which `map_saver` is runnig. Unless you specify the file name, it is stored as `map.pgm` and `map.yaml` file which contains map information.
-  
+Use **map_saver** node to save a drawn map by SLAM.  
+The map is drawn by collected data of the robot: odometry, tf and scan information of sensors, which you can monitor using RViz.  
+The name of the map files is `map.pgm` and `map.yaml` as a default, which are saved in a directory where **map_saver** is running.
+
+**Related Document:**
+- [tf](http://wiki.ros.org/tf)
+- [odometry](https://en.wikipedia.org/wiki/Odometry)
+
+1. Open a new terminal on **Remote PC** 
+
+2. Run map_saver node
+
 ```bash
 $ ros2 run nav2_map_server map_saver -f ~/map
-```  
- 
-The `-f` option refers to the folder and file name where the map file is saved. If `~/map` is used as an option, `map.pgm` and `map.yaml` will be saved in the map folder of user’s home folder `~/` ($HOME directory : `/home/<username>`).
+```
+-  The `-f` option refers to a folder and to a file name where the map file is saved. If `~/map` is used as an option, `map.pgm` and `map.yaml` will be saved in the map folder located at `~/` ($ HOME directory : `/home/<username>`).
+
 ## [Map](#map)
 
-We will use the two-dimensional `Occupancy Grid Map (OGM)`, which is commonly used in the ROS community. The map obtained from the previous [Save the Map](#save-the-map) section as shown in figure below, **white** is the free area in which the robot can move, **black** is the occupied area in which the robot can not move, and **gray** is the unknown area. This map is used in [ROS2 Navigation][navigation2].
+**Occupancy Grid Map (OGM)** is a two-dimensional space, commonly used in ROS community. The space is composed of data of a saved map file, [Save the Map](#save-the-map).  
+The White cells represent **free space**; the robot can move around, black represents **ocupied space**; obstacles are set, gray represents **unknown space**.
 
 ![](/assets/images/platform/turtlebot3/slam/map.png)
 
-The figure below shows the result of creating a large map using TurtleBot3. It took about an hour to create a map with a travel distance of about 350 meters.
+> Occupancy Grid Map (OGM)
+
+The figure shows the result of creating a large map using TurtleBot3. 
+
+The time for creating a map requires 55 minutes: the estimation of a travel distance is 351 m.
+
 
 ![](/assets/images/platform/turtlebot3/slam/large_map.png)
   

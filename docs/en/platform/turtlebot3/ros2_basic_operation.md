@@ -10,10 +10,10 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 28
+page_number: 29
 ---
 
-<div style="counter-reset: h1 16"></div>
+<div style="counter-reset: h1 17"></div>
 
 # [Basic Operation](#basic_operation)
 
@@ -31,17 +31,18 @@ page_number: 28
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
 In order to check topics of TurtleBot3, Use [rqt][rqt] provided by ROS, which is a Qt-based framework for GUI development for ROS. It is a tool displaying all topics of TurtleBot3 with a topic name, type, bandwidth, Hz, and value.
+1. Open a terminal on **Remote PC**.
+2. Run **rqt**.
+``` bash
+$ rqt
+```
+  
+    ![](/assets/images/platform/turtlebot3/ros2/rqt_1.png)
 
-- Run **rqt**.
-  ``` bash
-  $ rqt
-  ```
-  ![](/assets/images/platform/turtlebot3/ros2/rqt_1.png)
+    **TIP**: If rqt is not displayed, select the `plugin` > `Topics` > `Topic Monitor`.
+    {: .notice--info}
 
-  **TIP**: If rqt is not displayed, select the `plugin` -> `Topics` -> `Topic Monitor`.
-  {: .notice--info}
-
-  - Click on the checkbox of the topic to monitor the topic, 
+  - Click on the checkbox to monitor the topic, 
 
     ![](/assets/images/platform/turtlebot3/ros2/rqt_2.png)
 
@@ -79,7 +80,7 @@ In addition, you can monitor topics through rqt whenever you have a topic added.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-**CAUTION**: Place the robot on a level surface to ensure that it can not fall down from a table.
+**CAUTION**: Place the robot on a level surface during a test, and ensure that it can not fall off an table or desk.
 {: .notice--warning}
 
 **WARNING**: Make sure to run the [Bringup][bringup] instruction before performing this examples.
@@ -92,15 +93,17 @@ Examples of TurtleBot3 can be launched by ROS 2 on Ubuntu 18.04 with Raspberry P
 
 ### [Keyboard](#keyboard)
 
-Run teleoperation node on Remote PC
+1. Open a terminal on **Remote PC**.
+2. Run teleoperation node 
   ```bash
   $ export TURTLEBOT3_MODEL=${TB3_MODEL}
   $ ros2 run turtlebot3_teleop teleop_keyboard
   ```
     
-{% include en/platform/turtlebot3/turtlebot_model_export.md %}
+    **NOTE**: Specify `${TB3_MODEL}`: `burger`, `waffle`, `waffle_pi` before excuting the command. Set the permanent export setting by following [Export TURTLEBOT3_MODEL](/docs/en/platform/turtlebot3/export_turtlebot3_model){: .popup} instruction.
+    {: .notice--info}
 
-The virtual controller will appear in the terminal.  
+3. The virtual controller will appear in the terminal.  
   
     ```bash
     Control Your TurtleBot3!
@@ -132,14 +135,16 @@ The settings for [ROBOTIS RC-100B][rc100] is included in an OpenCR firmware for 
 
 ### [PS3 Joystick](#ps3-joystick)
 
-1. Connect PS3 Joystick to the Remote PC via either Bluetooth or USB cable.
+1. Connect PS3 Joystick to **Remote PC** via either Bluetooth or USB cable.
 
-2. Install ds4drv packages by using pip.
+2. Open a terminal on **Remote PC**.
+
+3. Install `ds4drv` packages by using pip.
   ```bash
   $ sudo pip install ds4drv
   ```
 
-3. Run teleoperation packages.  
+4. Run teleoperation packages.  
   ```bash
   $ sudo ds4drv
   $ ros2 run joy joy_node
@@ -151,7 +156,9 @@ The settings for [ROBOTIS RC-100B][rc100] is included in an OpenCR firmware for 
 
 1. Connect XBOX 360 Joystick to the Remote PC via either Wireless Adapter or USB cable.
 
-2. Run teleoperation packages.
+2. Open a terminal on **Remote PC**.
+
+3. Run teleoperation packages.
   ```bash
   $ ros2 run joy joy_node
   $ ros2 run teleop_twist_joy teleop_node
@@ -181,12 +188,14 @@ It will be released soon !
 
 TurtleBot3 can moves with receiving a certain topic: **/cmd_vel_raw** from obstacle detection node. Using LDS data and detecting obstacles, the robot can stop moving.  
 
-1. Run the teleoperation keyboard.
+1. Open a terminal on **Remote PC**.
+
+2. Run the teleoperation keyboard.
   ``` bash
   $ ros2 run turtlebot3_teleop teleop_keyboard /cmd_vel:=/cmd_vel_raw
   ```
 
-2. Launch the obstacle detection.
+3. Launch the obstacle detection.
   ``` bash
   $ ros2 launch turtlebot3_example turtlebot3_obstacle_detection
   ```
@@ -195,15 +204,17 @@ TurtleBot3 can moves with receiving a certain topic: **/cmd_vel_raw** from obsta
 
 TurtleBot3 can be position controlled using this package.
 
-1. Launch the pointop file.
+1. Open a terminal on **Remote PC**.
+
+2. Launch the pointop file.
   ``` bash
   $ ros2 run turtlebot3_example turtlebot3_position_control
   ```
 
-2. Type input values and press enter for `x`, `y` and `theta` respectively. TurtleBot3 will move to a pose (`x`, `y`, `theta`) from the current pose.
+3. Type input values and press enter for `x`, `y` and `theta` respectively. TurtleBot3 will move to a pose (`x`, `y`, `theta`) from the current pose.
 
     ``` bash
-    Turtlebot3 Position Control
+    TurtleBot3 Position Control
     ------------------------------------------------------
     From the current pose,
     x: goal position x (unit: m)
@@ -220,17 +231,19 @@ TurtleBot3 can be position controlled using this package.
 
 This example uses action topic. The action client translates patrol data(radius) to action server. Then, the action server translates `cmd_vel` to TurtleBot3. 
 
-1. Launch the patrol server file.
+1. Open a terminal on **Remote PC**.
+
+2. Launch the patrol server file.
   ``` bash
   $ ros2 run turtlebot3_example turtlebot3_patrol_server
   ```
   
-2. Launch the patrol client file.
+3. Launch the patrol client file.
   ``` bash
   $ ros2 run turtlebot3_example turtlebot3_patrol_client
   ```
 
-3. Type a input value and press enter. TurtleBot3 will draw a circle of the typed radius.
+4. Type a input value and press enter. TurtleBot3 will draw a circle of the typed radius.
 
     ``` bash
     TurtleBot3 Circle Patrol
