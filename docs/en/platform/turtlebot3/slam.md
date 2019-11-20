@@ -22,7 +22,7 @@ page_number: 20
 
 {% capture notice_01 %}
 **NOTE**: 
-- This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+- This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame` and on `Windows 10` with `ROS Melodic Morena`
 - This instructions are supposed to be running on the remote PC. Please run the instructions below on your **Remote PC**.
 - The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. The shortcut key for running the terminal is `Ctrl`-`Alt`-`T`.
 - Make sure to run the [Bringup](/docs/en/platform/turtlebot3/bringup/#bringup) instruction before use of the instruction.
@@ -80,6 +80,14 @@ $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
 **[Remote PC]** Open a new terminal and launch the SLAM file.
 
 **TIP**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `burger`, `waffle`, `waffle_pi`. If you want to permanently set the export settings, please refer to [Export TURTLEBOT3_MODEL][export_turtlebot3_model]{: .popup} page.
+
+{% capture slam_tip %}
+**TIP**: When running these commands on `Windows 10`,  replace `export TURTLEBOT3_MODEL=${TB3_MODEL}` with `set TURTLEBOT3_MODEL=${TB3_MODEL}` like this:
+``` bash
+$ set TURTLEBOT3_MODEL=burger
+```
+{% endcapture %}
+
 {: .notice--success}
 
 ``` bash
@@ -104,6 +112,7 @@ $ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
 **NOTE**: Support for various SLAM methods
 - TurtleBot3 supports Gmapping, Cartographer, Hector, and Karto among various SLAM methods. You can do this by changing the `slam_methods:=xxxxx` option.
 - The `slam_methods` options include `gmapping`, `cartographer`, `hector`, `karto`, `frontier_exploration`, and you can choose one of them.
+- For Windows 10, Google Cartographer has been enabled. OpenKarto is coming soon.
 - For example, to use Karto, you can use the following:
 - $ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=karto
 {% endcapture %}
@@ -112,22 +121,26 @@ $ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
 {% capture notice_04 %}
 **NOTE**: Install dependency packages for SLAM packages
 - For `Gmapping`:
-- Packages related to Gmapping have already been installed on [PC Setup](/docs/en/platform/turtlebot3/pc_setup/#install-dependent-ros-packages) page.
+  - Packages related to Gmapping have already been installed on [PC Setup](/docs/en/platform/turtlebot3/pc_setup/#install-dependent-ros-packages) page.
 - For `Cartographer`:
-- sudo apt-get install ros-kinetic-cartographer ros-kinetic-cartographer-ros ros-kinetic-cartographer-ros-msgs ros-kinetic-cartographer-rviz
+  - Ubuntu
+    - sudo apt-get install ros-kinetic-cartographer ros-kinetic-cartographer-ros ros-kinetic-cartographer-ros-msgs ros-kinetic-cartographer-rviz
+  - Windows
+    - choco upgrade ros-melodic-cartographer_ros -y
 - For `Hector Mapping`:
-- sudo apt-get install ros-kinetic-hector-mapping
+  - sudo apt-get install ros-kinetic-hector-mapping
 - For `Karto`:
-- sudo apt-get install ros-kinetic-slam-karto
+  - sudo apt-get install ros-kinetic-slam-karto
 - For `Frontier Exploration`:
 - Frontier Exploration uses gmapping, and the following packages should be installed.
-- sudo apt-get install ros-kinetic-frontier-exploration ros-kinetic-navigation-stage
+  - sudo apt-get install ros-kinetic-frontier-exploration ros-kinetic-navigation-stage
 {% endcapture %}
 <div class="notice--info">{{ notice_04 | markdownify }}</div>
 
 **TIP**: We tested on cartographer version 0.3.0. The Cartographer package developed by Google supports 0.3.0 version in ROS Melodic, but 0.2.0 version in ROS Kinetic. So if you need to work on ROS Kinetic, instead of downloading the binaries files, you should download and build the source code as follows. Please refer to [official wiki page](https://google-cartographer-ros.readthedocs.io/en/latest/#building-installation) for more detailed installation instructions.
 {: .notice--success}
 
+### Ubuntu
 ```sh
 $ sudo apt-get install ninja-build libceres-dev libprotobuf-dev protobuf-compiler libprotoc-dev
 $ cd ~/catkin_ws/src
@@ -143,6 +156,13 @@ $ catkin_make_isolated --install --use-ninja
 ```sh
 $ source ~/catkin_ws/install_isolated/setup.bash
 $ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=cartographer
+```
+
+### Windows
+``` bash
+c:\ws\turtlebot3\devel\setup.bat
+set TURTLEBOT3_MODEL=waffle
+roslaunch turtlebot3_gazebo turtlebot3_gazebo_cartographer_demo.launch
 ```
 
 ## [Run Teleoperation Node](#run-teleoperation-node)

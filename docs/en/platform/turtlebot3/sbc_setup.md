@@ -70,6 +70,23 @@ page_number: 8
 2. Please refer to the [ROS Wiki instructions](https://wiki.ros.org/Installation/Windows) for installing ROS on Windows.
 3. Please install the [CP2102 Driver from SI Labs](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers) in order to communicate with the Lidar.
 
+Before starting to work with turtlebot3 with a Windows 10 Single Board Computer, you'll need to identify which COM port the lidar and OpenCR board are mounted on. To do this, visit the Device Manager, and add one device at a time to see which COM port each represents. 
+
+Then modify the following files:
+
+`turtlebot3_bringup/launch/turtlebot3_core-win.launch`
+``` xml
+<node pkg="rosserial_python" type="serial_node.py" name="turtlebot3_core" output="screen">
+    <param name="port" value="COMx"/>
+```
+
+`turtlebot3_bringup/launch/turtlebot3_lidar-win.launch`
+``` xml
+ <node pkg="hls_lfcd_lds_driver" type="hlds_laser_publisher" name="turtlebot3_lds" output="screen">
+    <param name="port" value="COMy"/>
+```
+
+
 
 
 
