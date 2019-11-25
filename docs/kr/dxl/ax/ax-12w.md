@@ -142,7 +142,7 @@ Baudrate(BPS) = 2,000,000 / (Value + 1)
 {% include kr/dxl/control_table_status_return_lv.md %}
 
 ### <a name="alarm-led"></a><a name="shutdown"></a>**[Alarm LED(17), Shutdown(18)](#alarm-led17-shutdown18)**
-{% include kr/dxl/control_table_alarm_shutdown.md %}
+{% include kr/dxl/control_table_shutdown.md %}
 
 ### <a name="torque-enable"></a>**[Torque Enable (24)](#torque-enable-24)**
 {% include kr/dxl/control_table_torque_enable.md %}

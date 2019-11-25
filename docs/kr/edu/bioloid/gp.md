@@ -21,7 +21,7 @@ sidebar:
 - 휴머노이드 격투, 축구 및 다양한 기본 모션 제공  
 - 자이로 센서를 기반으로 한 자세 보정 기능  
 - 미션 수행이 가능한 그리퍼 세트 및 센서 기본 포함  
-- 무선 리모컨 포함(지그비 기본 내장)  
+- 무선 리모컨 포함(BT-410 Set 내장)  
 - 업그레이드된 전용 프로그래밍 소프트웨어 [로보플러스] 제공  
 - 디지털 패킷통신 제어 및 Daisy Chain 방식의 간단한 배선 정리
 
@@ -156,6 +156,9 @@ sidebar:
 #### 여러 대의 로봇으로 축구 경기나 로봇 격투를 하고 싶어요.
 - 여러 대의 로봇을 혼선 없이 안정적으로 조종하려면 지그비 무선 모듈([ZIG-110 세트])을 장착해야 합니다.
 
+BT-410 사용자는 [BT-410 e-Manual]을 참조해주세요. 
+{: .notice--warning}
+
 ## [충전하기](#충전하기)
 
 {% include kr/edu/bioloid/stem_charge.md %}
@@ -204,6 +207,8 @@ sidebar:
 {% include kr/parts/communication/zigbee_control.md %}
 
 #### ZIG-110A Set 장착 방법(GP)
+BT-410 사용자는 [BT-410 e-Manual]을 참조해주세요. 
+{: .notice--warning}
 
 ![](/assets/images/edu/bioloid/1_kr.png)
 
@@ -307,3 +312,4 @@ RoboPlus Task에서 사용자 장치 OUT 포트에 High신호를 주는 방법�
 [접촉 센서]: /docs/kr/parts/sensor/ts-10/
 [절대 거리 센서]: /docs/kr/parts/sensor/dms-80/
 [5핀 케이블]: http://www.robotis.com/shop/list.php?ca_id=302090
+[BT-410 e-Manual]: /docs/kr/parts/communication/bt-410/
