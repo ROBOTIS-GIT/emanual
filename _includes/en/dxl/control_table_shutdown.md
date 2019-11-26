@@ -1,8 +1,8 @@
 The Dynamixel can protect itself by detecting dangerous situations that could occur during the operation.  
 Each Bit is inclusively processed with the ‘OR’ logic, therefore, multiple options can be generated.  
-For instance, when ‘0x05’ (binary : 00000101) is defined in {% if page.product_group=='dxl_ax' or page.product_group=='dxl_dx' or page.product_group=='dxl_ex' or page.product_group=='dxl_rx' or page.product_group=='dxl_mx' or page.product_group=='dxl_mx2' %} [Shutdown(18)], {% elsif page.product_group=='dxl_pro' %} [Shutdown(48)], {% else %} [Shutdown(63)], {% endif %} Dynamixel can detect both Input Voltage Error(binary : 00000001) and Overheating Error(binary : 00000100).  
-If those errors are detected, {% if page.product_group=='dxl_ax' or page.product_group=='dxl_dx' or page.product_group=='dxl_ex' or page.product_group=='dxl_rx' or page.product_group=='dxl_mx' or page.product_group=='dxl_mx2' %} [Torque Enable(24)] {% elsif page.product_group=='dxl_pro_a' or page.product_group=='dxl_pro_plus' %} [Torque Enable(512)] {% elsif page.product_group=='dxl_pro' %} [Torque Enable(562)] {% else %} [Torque Enable(64)] {% endif %} is cleared to ‘0’ and the motor output becomes 0 [%].  
-REBOOT is the only method to reset {% if page.product_group=='dxl_ax' or page.product_group=='dxl_dx' or page.product_group=='dxl_ex' or page.product_group=='dxl_rx' or page.product_group=='dxl_mx' or page.product_group=='dxl_mx2' %} [Torque Enable(24)] {% elsif page.product_group=='dxl_pro_a' or page.product_group=='dxl_pro_plus' %} [Torque Enable(512)] {% elsif page.product_group=='dxl_pro' %} [Torque Enable(562)] {% else %} [Torque Enable(64)] {% endif %} to ‘1’(Torque ON) after the shutdown.  
+For instance, when ‘0x05’ (binary : 00000101) is defined in {% if page.product_group=='dxl_ax' or page.product_group=='dxl_dx' or page.product_group=='dxl_ex' or page.product_group=='dxl_rx' or page.product_group=='dxl_mx' %} [Shutdown(18)], {% elsif page.product_group=='dxl_pro' %} [Shutdown(48)], {% else %} [Shutdown(63)], {% endif %} Dynamixel can detect both Input Voltage Error(binary : 00000001) and Overheating Error(binary : 00000100).  
+If those errors are detected, {% if page.product_group=='dxl_ax' or page.product_group=='dxl_dx' or page.product_group=='dxl_ex' or page.product_group=='dxl_rx' or page.product_group=='dxl_mx' %} [Torque Enable(24)] {% elsif page.product_group=='dxl_pro_a' or page.product_group=='dxl_pro_plus' %} [Torque Enable(512)] {% elsif page.product_group=='dxl_pro' %} [Torque Enable(562)] {% else %} [Torque Enable(64)] {% endif %} is cleared to ‘0’ and the motor output becomes 0 [%].  
+REBOOT is the only method to reset {% if page.product_group=='dxl_ax' or page.product_group=='dxl_dx' or page.product_group=='dxl_ex' or page.product_group=='dxl_rx' or page.product_group=='dxl_mx' %} [Torque Enable(24)] {% elsif page.product_group=='dxl_pro_a' or page.product_group=='dxl_pro_plus' %} [Torque Enable(512)] {% elsif page.product_group=='dxl_pro' %} [Torque Enable(562)] {% else %} [Torque Enable(64)] {% endif %} to ‘1’(Torque ON) after the shutdown.  
 {% if page.product_group=='dxl_ax' or page.product_group=='dxl_dx' or page.product_group=='dxl_ex' or page.product_group=='dxl_rx' or page.product_group=='dxl_mx' %}{% else %} Check Hardware Error Bit(0x80) in a error field of Status Packet or a present status via {% if page.product_group=='dxl_pro' %} [Hardware Error Status(892)] {% elsif page.product_group=='dxl_pro_a' or page.product_group=='dxl_pro_plus' %} [Hardware Error Status(518)] {% else %} [Hardware Error Status(70)] {% endif %} {% endif %} The followings are detectable situations. 
 
 {% if page.product_group=='dxl_ax' or page.product_group=='dxl_dx' or page.product_group=='dxl_ex' or page.product_group=='dxl_rx' or page.product_group=='dxl_mx' %}
@@ -62,6 +62,6 @@ REBOOT is the only method to reset {% if page.product_group=='dxl_ax' or page.pr
 [Torque Enable(64)]: #torque-enable
 [Torque Enable(512)]: #torque-enable
 [Torque Enable(562)]: #torque-enable
-[Hardware Error Status(70)]: #hardware-error-status70
-[Hardware Error Status(518)]: #hardware-error-status518
-[Hardware Error Status(892)]: #hardware-error-status892
+[Hardware Error Status(70)]: #hardware-error-status
+[Hardware Error Status(518)]: #hardware-error-status
+[Hardware Error Status(892)]: #hardware-error-status
