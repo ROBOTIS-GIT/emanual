@@ -84,8 +84,8 @@ sidebar:
     <option value="/docs/kr/dxl/x/xh430-v350/#eeprom-영역">XH430-V350</option>
     <option value="/docs/kr/dxl/x/xh540-w150/#eeprom-영역">XH540-W150</option>
     <option value="/docs/kr/dxl/x/xh540-w270/#eeprom-영역">XH540-W270</option>
-    <option value="/docs/kr/dxl/x/xh540-v150/#eeprom-영역">XH540-v150</option>
-    <option value="/docs/kr/dxl/x/xh540-v270/#eeprom-영역">XH540-v270</option>
+    <option value="/docs/kr/dxl/x/xh540-v150/#eeprom-영역">XH540-V150</option>
+    <option value="/docs/kr/dxl/x/xh540-v270/#eeprom-영역">XH540-V270</option>
 </select>
 
 -

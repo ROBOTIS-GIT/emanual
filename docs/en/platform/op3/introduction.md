@@ -153,7 +153,17 @@ Check your ROBOTIS OP3 package for the following items.
 
 ## [Charging Battery](#charging-battery)
 
-Please charge the battery pack according to the following procedure.
+This section describes how to charge a battery using the provided charger.
+
+Use either of instructions depending on a provided charger.   
+
+### [Using LBC-010](#using-lbc-010)
+
+{% include en/faq/charging_battery.md %}
+
+### [Using IMAX B6MINI CHARGER](#using-imax-b6mini-charger)
+
+Follow the next instruction and learn how to charge a battery using IMAX B6MINI CHARGER.
 
 ![](/assets/images/platform/op3/op3_008.png)
 

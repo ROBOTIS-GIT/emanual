@@ -265,7 +265,7 @@ xc430-w240:
   physicalconnection: *ttl_connection
   id:                 *id
   feedback:           "Position, Velocity, Load, Realtime tick, Trajectory, Temperature, Input Voltage, etc"
-  material:           "Engineering Plastic"
+  material:           "Full Metal Gear <br />Engineering Plastic(Front, Middle, Back)"
   standbycurrent:     "49 [mA]"
 
 xc430-w150:

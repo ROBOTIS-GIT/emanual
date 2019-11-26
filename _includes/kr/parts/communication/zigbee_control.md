@@ -4,8 +4,12 @@
 
 [ZIG-100/110]은 로봇용 무선 통신 장치로서 ZIGBee 방식을 사용합니다. ZIGBee 는 Bluetooth 와 같이 PAN(Personal Area Network) 통신에 많이 사용되는 통신 기술입니다. 적외선 방식에 비해서 통신 품질이 매우 좋고, 여러 명이 동시에 조종하여도 각자 자신의 로봇을 조종할 수 있는 장점이 있습니다.
 
-구매한 제품에 지그비 모듈이 포함되지 않을 수 있습니다. 이 경우에는 별도로 구매해야 합니다. BT-210과 사용법이 동일 합니다.
-{: .notice--warning}
+{% capture zigbee_discontinue %}
+구매한 제품에 지그비 모듈이 포함되지 않을 수 있습니다. 이 경우에는 별도로 구매해야 합니다. BT-210 또는 BT-410 사용자는 관련 e-Manual을 참조하세요.
+- [BT-210 e-Manual](/docs/kr/parts/communication/bt-210/)
+- [BT-410 e-Manual](/docs/kr/parts/communication/bt-410/)
+{% endcapture %}
+<div class="notice--warning">{{ zigbee_discontinue | markdownify %}}</div>
 
 ### 제어기와 지그비
 RC-100 을 이용한 올로와 바이올로이드의 조종은 기본적으로 적외선 방식의 무선 통신을 이용하도록 되어 있습니다. 이것을 ZIGBee 방식의 무선 통신을 이용하도록 하기 위해서는 [ZIG-110 set] 를 별도로 구매하여 [RC-100] 에 ZIG-100 을 장착하고, [제어기]에 ZIG-110 을 장착해야 합니다.  (자세한 장착 방법은 각 부품의 설명 페이지를 참고하세요.)

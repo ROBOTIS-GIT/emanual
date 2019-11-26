@@ -21,7 +21,7 @@ sidebar:
 - Basic humanoid motions such as combat and soccer modes provided
 - Self-position-correcting using Gyro sensor
 - Gripper set and sensors included for various missions
-- Wireless remote included (Zigbee installed)
+- Wireless remote included (BT-410 installed)
 - Up-to-date version of RoboPlus- programming software- included
 - Digital Packet communication and simple Daisy Chain cable arrangement
 

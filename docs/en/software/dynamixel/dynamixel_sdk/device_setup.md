@@ -122,29 +122,27 @@ Recent Linux releases include the kernel which contains the FT232RL driver for t
 
 ## [Dynamixel](#dynamixel)
 
-![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/dynamixel_image.jpg)
-
 The SDK and SDK examples were developed based on the MX-28 and H54-200 PRO Dynamixels. 
 
 SDK examples were tested with the following Dynamixels: 
 
-|              | AX  | EX  | RX  | MX  | MX  |  X  |  X  | PRO |
-|:------------:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| **Protocol** | 1.0 | 1.0 | 1.0 | 1.0 | 2.0 | 1.0 | 2.0 | 2.0 |
-|              |     |     |     |     |     |     |     |     |
-|  **Series**  |     |     |     |     |     |     |     |     |
-|      12      |  O  |  -  |  -  |     |     |  -  |  -  |  -  |
-|      18      |     |  -  |  -  |     |     |  -  |  -  |  -  |
-|      24      |  -  |  -  |  O  |  O  |  O  |  -  |  -  |  -  |
-|      28      |  -  |  -  |  O  |  O  |  O  |  -  |  -  |  -  |
-|      64      |  -  |  -  |  O  |  O  |  O  |  -  |  -  |  -  |
-|     106      |  -  |  O  |  -  |  O  |  O  |  -  |  -  |  -  |
-|     320      |  -  |  -  |  -  |  -  |  -  |  -  |  O  |  -  |
-|     430      |  -  |  -  |  -  |  -  |  -  |  O  |  O  |  -  |
-|     540      |  -  |  -  |  -  |  -  |  -  |  O  |  O  |  -  |
-|              |     |     |     |     |     |     |     |     |
-|      42      |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  O  |
-|      54      |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  O  |
+|              | AX  | EX  | RX  | MX  | MX  |  X  |  X  | PRO | PRO+ |
+|:------------:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:----:|
+| **Protocol** | 1.0 | 1.0 | 1.0 | 1.0 | 2.0 | 1.0 | 2.0 | 2.0 | 2.0  |
+|              |     |     |     |     |     |     |     |     |      |
+|  **Series**  |     |     |     |     |     |     |     |     |      |
+|      12      |  O  |  -  |  -  |     |     |  -  |  -  |  -  |  -   |
+|      18      |     |  -  |  -  |     |     |  -  |  -  |  -  |  -   |
+|      24      |  -  |  -  |  O  |  O  |  O  |  -  |  -  |  -  |  -   |
+|      28      |  -  |  -  |  O  |  O  |  O  |  -  |  -  |  -  |  -   |
+|      64      |  -  |  -  |  O  |  O  |  O  |  -  |  -  |  -  |  -   |
+|     106      |  -  |  O  |  -  |  O  |  O  |  -  |  -  |  -  |  -   |
+|     320      |  -  |  -  |  -  |  -  |  -  |  -  |  O  |  -  |  -   |
+|     430      |  -  |  -  |  -  |  -  |  -  |  O  |  O  |  -  |  -   |
+|     540      |  -  |  -  |  -  |  -  |  -  |  O  |  O  |  -  |  -   |
+|              |     |     |     |     |     |     |     |     |      |
+|      42      |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  O  |  O   |
+|      54      |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  O  |  O   |
 
 > O : Compatible  
 > X : Incompatible  
