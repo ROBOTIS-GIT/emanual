@@ -17,7 +17,7 @@ header:
 
 ![](/assets/images/dxl/x/dxl_x_productline_kr.png)
 
-# [XL320](xl320)
+# [XL320](#xl320)
 
 [![](/assets/images/dxl/x/xl320_product.jpg)](/docs/kr/dxl/x/xl320/)
 
