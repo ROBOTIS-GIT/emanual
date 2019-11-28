@@ -138,7 +138,7 @@ Joint Dynamixel ID : 6, Model Name : PRO-PLUS-H42P-020-S300-R
 - If you can't load DYNAMIXEL, please check your DYNAMIXEL settings by using the following command from the DYNAMIXEL-Workbench packages.   
 `rosrun dynamixel_workbench_controllers find_dynamixel /dev/ttyUSB0`  
 if DYNAMIXEL aren't recoginized, please check firmware with ROBOTIS software ([R+ Manager 2.0](/docs/en/software/rplus2/manager/) or [DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/#firmware-update))
-- If you would like to change Dynamixel ID, please check [`open_manipulator_pro.cpp`](https://github.com/ROBOTIS-GIT/open_manipulator/blob/be2859a0506b4e941a19435c0a07562b41768a27/open_manipulator_pro_libs/src/OpenManipulator.cpp#L40) in the open_manipulator_pro_lib folder. The default ID is **11, 12, 13, 14 ,15 and 16** for joints.
+- If you would like to change Dynamixel ID, please check [`open_manipulator_pro.cpp`](https://github.com/ROBOTIS-GIT/open_manipulator_pro/blob/master/open_manipulator_pro_libs/src/open_manipulator_pro.cpp) in the open_manipulator_pro_lib folder. The default ID is **11, 12, 13, 14 ,15 and 16** for joints.
 {% endcapture %}
 <div class="notice--success">{{ notice_01 | markdownify }}</div>
 
