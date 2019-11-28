@@ -17,19 +17,15 @@ product_group: turtlebot3
 {% capture notice_01 %}
 **NOTE**:
 - This instructions were tested on `Ubuntu 18.04` and `ROS 2 Dashing Diademata`.
-- If you want more specfic information about OpenMANIPULATOR, please refer to the [OpenMANIPULATOR e-Manual](/docs/en/platform/openmanipulator/).
+- More information on OpenMANIPULATOR-X is availabe at [OpenMANIPULATOR e-Manual](/docs/en/platform/openmanipulator/).
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
-
-**TIP**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. The shortcut key for running the terminal is `Ctrl`-`Alt`-`T`.
-{: .notice--success}
 
 ## [TurtleBot3 with OpenMANIPULATOR](#turtlebot3-with-openmanipulator)
 
 ![](/assets/images/platform/turtlebot3/manipulation/tb3_with_opm_logo.png)
 
 The OpenMANIPULATOR by ROBOTIS is one of the manipulators that support ROS, and has the advantage of being able to easily manufacture at a low cost by using Dynamixel actuators with 3D printed parts.
-
 The OpenMANIPULATOR has the advantage of being compatible with TurtleBot3 Waffle and Waffle Pi. Through this compatibility can compensate for the lack of freedom and can have greater completeness as a service robot with the the SLAM and Navigation capabilities that the TurtleBot3 has. TurtleBot3 and OpenMANIPULATOR can be used as a `mobile manipulator` and can do things like the following videos.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Qhvk5cnX2hM" frameborder="0" allowfullscreen></iframe>
@@ -40,37 +36,44 @@ The OpenMANIPULATOR has the advantage of being compatible with TurtleBot3 Waffle
 
 ## [Software Setup](#software-setup)
 
-**NOTE**: Before you install `open_manipulator_with_tb3` packages, please make sure `turtlebot3` and `open_manipulator` packages have been installed previously in RemotePC.
+**NOTE**: Be sure to install `turtlebot3` and `open_manipulator` packages, before installation of `open_manipulator_with_tb3` packages.
 {: .notice--info}
 
 - Install dependent packages for the OpenMANIPULATOR with TurtleBot3.
 
 **[TurtleBot3]**
-```bash
-$ cd ~/turtlebot3_ws/src/
-$ git clone -b ros2 https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3.git
-$ cd ~/turtlebot3_ws && colcon build --symlink-install
-```
+
+1. Open a terminal on **TurtleBot3**. 
+2. Install dependent packages using the following commands.
+  ```bash
+  $ cd ~/turtlebot3_ws/src/
+  $ git clone -b ros2 https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3.git
+  $ cd ~/turtlebot3_ws && colcon build --symlink-install
+  ```
 
 **[Remote PC]**
-```bash
-$ cd ~/robotis_ws/src/
-$ git clone -b ros2 https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3.git
-$ cd ~/robotis_ws && colcon build --symlink-install
-```
 
-- If `colcon build` command is completed without any errors, the preparation for OpenMANIPULATOR is done. Then load a TurtleBot3 Waffle or Waffle Pi with OpenMANIPULATOR on RViz.
+1. Open a terminal on **Remote PC**. 
+2. Install dependent packages using the following commands.
+  ```bash
+  $ cd ~/robotis_ws/src/
+  $ git clone -b ros2 https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3.git
+  $ cd ~/robotis_ws && colcon build --symlink-install
+  ```
+  - If `colcon build` command is complete without any errors, go to the step 3.  
+  
+3. Load TurtleBot3 Waffle (or Waffle Pi) with OpenMANIPULATOR on RViz.
+    - Open a terminal on **Remote PC**.
+    - Execute RViz using the following command. 
+      ```bash
+      $ ros2 launch turtlebot3_manipulation_description turtlebot3_manipulation_rviz.launch.py
+      ```
 
-**[RemotePC]**
-```bash
-$ ros2 launch turtlebot3_manipulation_description turtlebot3_manipulation_rviz.launch.py
-```
-
-![](/assets/images/platform/turtlebot3/manipulation/TurtleBot3_with_Open_Manipulator.png)
+      ![](/assets/images/platform/turtlebot3/manipulation/TurtleBot3_with_Open_Manipulator.png)
 
 ## [Hardware Setup](#hardware-setup)
 
-- [CAD files](http://www.robotis.com/service/download.php?no=767) (TurtleBot3 Waffle Pi + OpenMANIPULATOR)
+[CAD files](http://www.robotis.com/service/download.php?no=767) (TurtleBot3 Waffle Pi + OpenMANIPULATOR)
 
 ![](/assets/images/platform/turtlebot3/manipulation/hardware_setup.png)
 
@@ -85,10 +88,16 @@ $ ros2 launch turtlebot3_manipulation_description turtlebot3_manipulation_rviz.l
 
 ## [Bringup](#bringup)
 
-**[TurtleBot3]** Launch turtlebot3_manipulation_controller.
-```bash
-$ ros2 launch turtlebot3_manipulation_controller turtlebot3_manipulation_controller.launch.py
-```
+Be sure to read [Bringup](/docs/en/platform/turtlebot3/ros2_bringup/#bringup) manual before use of the following instruction.
+{: .notice--warning}
+
+**[TurtleBot3]** 
+
+1. Open a terminal on **TurtleBot3**. 
+2. Launch turtlebot3_manipulation_controller using the following command.
+  ```bash
+  $ ros2 launch turtlebot3_manipulation_controller turtlebot3_manipulation_controller.launch.py
+  ```
 <!-- 
 **[TurtleBot3]** Launch rpicamera node
 ```bash
@@ -97,34 +106,53 @@ $ ROS_NAMESPACE=om_with_tb3 roslaunch turtlebot3_bringup turtlebot3_rpicamera.la
 
 ## [SLAM](#slam)
 
-**[Remote PC]** Launch slam node
+Be sure to read [SLAM](http://emanual.robotis.com/docs/en/platform/turtlebot3/ros2_slam/#slam) manual before use of the following instruction.
+{: .notice--warning}
+
+### [Run SLAM Nodes](#run_slam_nodes)
+
+**[Remote PC]** 
+
+1. Open a terminal on **Remote PC**. 
+2. Launch **slam node** using the following command.
 ```bash
 $ ros2 launch turtlebot3_cartographer cartographer.launch.py
 ```
 
-**[Remote PC]** Launch teleop node
+### [Run Teleoperation Nodes](#run_teleoperation_nodes)
+
+**[Remote PC]** 
+
+1. Open a terminal on **Remote PC**. 
+2. Launch **teleop node** using the following command.
 ```bash
 $ ros2 run turtlebot3_manipulation_teleop turtlebot3_manipulation_teleop_keyboard
 ```
 
-**[Remote PC]** Launch map_saver node
+### [Save the Map](#save_the_map)
+
+**[Remote PC]** 
+
+1. Open a terminal on **Remote PC**. 
+2. Launch **map_saver node** using the following command.
 ```bash
 $ ros2 run nav2_map_server map_saver -f ~/map
 ```
 
-Please refer to the [TB3 SLAM](http://emanual.robotis.com/docs/en/platform/turtlebot3/ros2_slam/#slam)
-
-![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_slam.png)
+    ![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_slam.png)
 
 ## [Navigation](#navigation)
 
+Be sure to read [Navigation](/docs/en/platform/turtlebot3/ros2_navigation2/#navigation2) manual before use of the following instruction.
+{: .notice--warning}
+
+1. Open a terminal on **Remote PC**. 
+2. Launch the navigation file using the following command.
 ```bash
 $ ros2 launch turtlebot3_navigation2 navigation2.launch.py map:=$HOME/map.yaml
 ```
 
-Please refer to the [TB3 Navigation](http://emanual.robotis.com/docs/en/platform/turtlebot3/ros2_navigation2/#navigation2)
-
-![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_navigation.png)
+    ![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_navigation.png)
 
 ## [Simulation](#simulation)
 
@@ -234,4 +262,3 @@ $ roslaunch open_manipulator_with_tb3_tools task_controller.launch
 ![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_pick.png)
 
 ![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_place.png) -->
-
