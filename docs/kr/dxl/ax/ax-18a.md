@@ -68,7 +68,6 @@ product_group: dxl_ax
 | 17   | 1          | [Alarm LED](#alarm-led)                     | 알람용 LED 기능                   | RW   | 36     |
 | 18   | 1          | [Shutdown](#shutdown)                       | 알람용 셧 다운(Shut down) 기능    | RW   | 36     |
 
-
 ## [RAM 영역](#ram-영역)
 
 | 주소 | 크기(Byte) | 명칭                                            | 의미                       | 접근 | 초기값     |
@@ -91,7 +90,6 @@ product_group: dxl_ax
 | 46   | 1          | [Moving](#moving)                               | 움직임 유무                | R    | 0          |
 | 47   | 1          | [Lock](#lock)                                   | EEPROM 잠금                | RW   | 0          |
 | 48   | 2          | [Punch](#punch)                                 | Punch 값의 바이트          | RW   | 32         |
-
 
 ## [컨트롤 테이블 설명](#컨트롤-테이블-설명)
 
@@ -147,7 +145,7 @@ Baudrate(BPS) = 2,000,000 / (Value + 1)
 {% include kr/dxl/control_table_status_return_lv.md %}
 
 ### <a name="alarm-led"></a><a name="shutdown"></a>**[Alarm LED(17), Shutdown(18)](#alarm-led17-shutdown18)**
-{% include kr/dxl/control_table_alarm_shutdown.md %}
+{% include kr/dxl/control_table_shutdown.md %}
 
 ### <a name="torque-enable"></a>**[Torque Enable (24)](#torque-enable-24)**
 {% include kr/dxl/control_table_torque_enable.md %}

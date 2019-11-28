@@ -10,10 +10,10 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 27
+page_number: 28
 ---
 
-<div style="counter-reset: h1 15"></div>
+<div style="counter-reset: h1 16"></div>
 
 # [Bringup](#bringup)
 
@@ -22,17 +22,17 @@ page_number: 27
 **WARNING** :Do not apply this instruction to Remote PC. Use SBC. 
 {: .notice--warning}
 
-Launch a model of your TurtleBot3 including node of `robot_state_publisher` and `turtlebot3_node`.
+1. Open a terminal on **TurtleBot3**.
 
+2. Launch a model of your TurtleBot3 including node of `robot_state_publisher` and `turtlebot3_node`.
 ```bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ ros2 launch turtlebot3_bringup robot.launch.py
 ```
+    **NOTE**: Specify `${TB3_MODEL}`: `burger`, `waffle`, `waffle_pi` before excuting the command. Set the permanent export setting by following [Export TURTLEBOT3_MODEL](/docs/en/platform/turtlebot3/export_turtlebot3_model){: .popup} instruction.
+    {: .notice--info}
 
-{% include en/platform/turtlebot3/turtlebot_model_export.md %}
-
-If the node is successfully launched, the following instruction will appeared on the terminal window.
-
+2. The following will appear on the terminal window.
 ```bash
 [INFO] [launch]: All log files can be found below /home/ubuntu/.ros/log/2019-08-19-01-24-19-009803-ubuntu-15310
 [INFO] [launch]: Default logging verbosity is set to INFO
@@ -83,62 +83,60 @@ urdf_file_name : turtlebot3_burger.urdf
 [turtlebot3_ros-3] [INFO] [diff_drive_controller]: Run!
 ```
 
-After then, you can check topic and service list as shown below  
-
-**Topic**
-```bash
-$ ros2 topic list
-/battery_state
-/cmd_vel
-/imu
-/joint_states
-/magnetic_field
-/odom
-/parameter_events
-/robot_description
-/rosout
-/scan
-/sensor_state
-/tf
-/tf_static
-```
-**Service List**
-
-```bash
-$ ros2 service list
-/diff_drive_controller/describe_parameters
-/diff_drive_controller/get_parameter_types
-/diff_drive_controller/get_parameters
-/diff_drive_controller/list_parameters
-/diff_drive_controller/set_parameters
-/diff_drive_controller/set_parameters_atomically
-/hlds_laser_publisher/describe_parameters
-/hlds_laser_publisher/get_parameter_types
-/hlds_laser_publisher/get_parameters
-/hlds_laser_publisher/list_parameters
-/hlds_laser_publisher/set_parameters
-/hlds_laser_publisher/set_parameters_atomically
-/launch_ros/describe_parameters
-/launch_ros/get_parameter_types
-/launch_ros/get_parameters
-/launch_ros/list_parameters
-/launch_ros/set_parameters
-/launch_ros/set_parameters_atomically
-/motor_power
-/reset
-/sound
-/turtlebot3_node/describe_parameters
-/turtlebot3_node/get_parameter_types
-/turtlebot3_node/get_parameters
-/turtlebot3_node/list_parameters
-/turtlebot3_node/set_parameters
-/turtlebot3_node/set_parameters_atomically
-```
+3. After then, you can check topic and service list as shown below  
+  **Topic**
+  ```bash
+  $ ros2 topic list
+  /battery_state
+  /cmd_vel
+  /imu
+  /joint_states
+  /magnetic_field
+  /odom
+  /parameter_events
+  /robot_description
+  /rosout
+  /scan
+  /sensor_state
+  /tf
+  /tf_static
+  ```
+  **Service List**
+  ```bash
+  $ ros2 service list
+  /diff_drive_controller/describe_parameters
+  /diff_drive_controller/get_parameter_types
+  /diff_drive_controller/get_parameters
+  /diff_drive_controller/list_parameters
+  /diff_drive_controller/set_parameters
+  /diff_drive_controller/set_parameters_atomically
+  /hlds_laser_publisher/describe_parameters
+  /hlds_laser_publisher/get_parameter_types
+  /hlds_laser_publisher/get_parameters
+  /hlds_laser_publisher/list_parameters
+  /hlds_laser_publisher/set_parameters
+  /hlds_laser_publisher/set_parameters_atomically
+  /launch_ros/describe_parameters
+  /launch_ros/get_parameter_types
+  /launch_ros/get_parameters
+  /launch_ros/list_parameters
+  /launch_ros/set_parameters
+  /launch_ros/set_parameters_atomically
+  /motor_power
+  /reset
+  /sound
+  /turtlebot3_node/describe_parameters
+  /turtlebot3_node/get_parameter_types
+  /turtlebot3_node/get_parameters
+  /turtlebot3_node/list_parameters
+  /turtlebot3_node/set_parameters
+  /turtlebot3_node/set_parameters_atomically
+  ```
 
 ## [Load TurtleBot3 on Rviz2](#load-a-turtlebot3-on-rviz2)
 
 1. [Bring up TurtleBot3](#bringup-turtlebot3)
-2. Launch robot state publisher and Run RViz on the Remote PC.
+2. Launch robot state publisher and Run RViz on **Remote PC**.
   ```bash
   $ ros2 launch turtlebot3_bringup rviz2.launch.py
   ```

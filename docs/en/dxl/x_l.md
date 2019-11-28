@@ -9,7 +9,7 @@ sidebar:
 ---
 
 
-# [XL320](xl320)
+# [XL320](#xl320)
 
 [![](/assets/images/dxl/x/xl320_product.jpg)](/docs/en/dxl/x/xl320/)
 

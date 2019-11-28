@@ -10,10 +10,10 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 26
+page_number: 27
 ---
 
-<div style="counter-reset: h1 14"></div>
+<div style="counter-reset: h1 15"></div>
 
 # [Setup](#setup)
 
@@ -25,13 +25,11 @@ page_number: 26
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-**TIP**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. The shortcut key for running the terminal is `Ctrl`-`Alt`-`T`.
-{: .notice--success}
-## [PC Setup](#pc-setup)
+## PC Setup
 
 ### Install Ubuntu
 
-To setup ROS (Robot Operating System) on Remote PC, install Ubuntu 18.04 on Remote PC.
+To setup ROS (Robot Operating System) on Remote PC, install Ubuntu 18.04 on **Remote PC**.
 
 - [Download Ubuntu 18.04](http://releases.ubuntu.com/18.04/)
 - [Tutorial - Install Ubuntu Desktop](https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-desktop#0)
@@ -45,7 +43,8 @@ As TurtleBot3 operates on ROS, it requies to install `ros-dashing-desktop` debia
 - [ROS 2 Installation Guide](https://index.ros.org/doc/ros2/Installation/Dashing/)
 
 ### Install ROS 2 Dependent Packages
-
+1. Open a terminal on **Remote PC**.
+2. Use the following commands.
 ```bash
 # Install Colcon
 $ sudo apt install python3-colcon-common-extensions
@@ -75,7 +74,6 @@ $ sudo apt install python3-vcstool
 ```
 
 ### Install TurtleBot3 Packages 
-
 ```bash
 $ mkdir -p ~/turtlebot3_ws/src
 $ cd ~/turtlebot3_ws
@@ -85,7 +83,6 @@ $ colcon build --symlink-install
 ```
 
 ### Save Bash Command for Setup
-
 ```bash
 $ echo 'source ~/turtlebot3_ws/install/setup.bash' >> ~/.bashrc
 $ echo 'export ROS_DOMAIN_ID=30 #TURTLEBOT3' >> ~/.bashrc
@@ -103,12 +100,12 @@ Following documents will be helpful for you to fix the problem of any build erro
 
 ## [SBC Setup](#sbc-setup)
 
-**WARNING** :Do not apply this instruction to Remote PC. Use SBC. 
+**WARNING** : Do not apply this instruction to Remote PC. Use SBC.
 {: .notice--warning}
 
 ### Download and Install Ubuntu Image File
 
-1. Download an image file at [Ubuntu releases](http://cdimage.ubuntu.com/ubuntu/releases/bionic/release) .
+1. Go on [Ubuntu releases](http://cdimage.ubuntu.com/ubuntu/releases/bionic/release) .
 2. Download `Raspberry Pi 3 (64-bit ARM) preinstalled server image` on **Remote PC**
 3. Burn the Ubuntu image file to a microSD card.
 
@@ -117,8 +114,8 @@ Following documents will be helpful for you to fix the problem of any build erro
 
 ### Initialization Process for Raspberry Pi 3
 
-To communicate between **Remote PC** and **TurtleBot3**, install `Ubuntu Server 18.04 image` file on Raspberry Pi 3.
-1. Boot up Raspberry Pi 3 after insert a microSD card which has the image file into a microSD card slot on SBC in TurtleBot3.  
+To communicate between **Remote PC** and **TurtleBot3**, you need to install `Ubuntu Server 18.04 image` file on Raspberry Pi 3.
+1. Boot up Raspberry Pi 3 after inserting a microSD card which has the image file into a microSD card slot on SBC in TurtleBot3.  
   (You can connect HDMI cable, keyboard and mouse into the TurtleBot3)
 2. Log in with default username(`ubuntu`) and password(`ubuntu`).  
   (After log in, system will ask you whether you change the password or not)
@@ -129,84 +126,88 @@ To communicate between **Remote PC** and **TurtleBot3**, install `Ubuntu Server 
 
 ### Example for Network Configuration
 
-1. Create a folder, and then open it with the following commands.
-  ```bash
-  $ sudo touch /etc/netplan/01-netcfg.yaml
-  $ sudo nano /etc/netplan/01-netcfg.yaml
-  ```
+1. Open a terminal on **SBC**
 
-2. After opening the file, configure a network setting. Refer to the network setting below.
-  ```yaml
-  network:
-    version: 2
-    renderer: networkd
-    ethernets:
-      eth0:
-        dhcp4: yes
-        dhcp6: yes
-        optional: true
-    wifis:
-      wlan0:
-        dhcp4: yes
-        dhcp6: yes
-        access-points:
-          "your-wifi-name":
-            password: "your-wifi-password"
-  ```
+2. Create a folder, and then open it using the following commands.
+```bash
+$ sudo touch /etc/netplan/01-netcfg.yaml
+$ sudo nano /etc/netplan/01-netcfg.yaml
+```
 
-3. After configuration, remote PC can connect to a SBC in TurtleBot3 by following steps.
+3. After opening the file, configure a network setting. Refer to the network setting below.
+```yaml
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    eth0:
+      dhcp4: yes
+      dhcp6: yes
+      optional: true
+  wifis:
+    wlan0:
+      dhcp4: yes
+      dhcp6: yes
+      access-points:
+        "your-wifi-name":
+          password: "your-wifi-password"
+```
 
-4. Apply all configuration for the renderers, and then restart Raspberry Pi 3.
-  ```bash
-  $ sudo netplan apply
-  $ reboot
-  ```
+4. After configuration, the remote PC can connect to a SBC in TurtleBot3 by following steps.
 
-5. Set the `systemd` to prevent boot-up delay even if there is no network at startup. Run the command below to set mask the `systemd` process using the following command.
-  ```bash
-  $ systemctl mask systemd-networkd-wait-online.service
-  ```
-    **NOTE** : From now, you can use SSH. If you want remote PC to connect to SBC and to install ROS and TurtleBot3 software, run the command below.
-    {: .notice--info}
+5. Apply all configuration for the renderers, and then restart Raspberry Pi 3.
+```bash
+$ sudo netplan apply
+$ reboot
+```
 
-    **[REMOTE PC]**
-      ```bash
-      $ ssh ubuntu@<NETWORK IP of Raspberry PI>
-      ```
+6. Set the `systemd` to prevent boot-up delay even if there is no network at startup. Run the command below to set mask the `systemd` process using the following command.
+```bash
+$ systemctl mask systemd-networkd-wait-online.service
+```
+    From now, you can use SSH. If you want remote PC to connect to SBC and to install ROS and TurtleBot3 software, run the command below. 
+    
+    1. Open a terminal on **Remote PC**
+    2. Use the following command.
+    ```bash
+    $ ssh ubuntu@<NETWORK IP of Raspberry PI>
+    ```
 
 ### Add Swap Space
 
-1. Create a file while it will be used for swap
+1. Open a terminal on **SBC**
+
+2. Create a file while it will be used for swap.
 ```bash
 $ sudo fallocate -l 1G /swapfile
 ```
 
-2. Give `read` and `write` permissions to the file
+3. Give `read` and `write` permissions to the file.
 ```bash
 $ sudo chmod 600 /swapfile
 ```
 
-3. Use `mkswap` to set up a Linux swap area. 
+4. Use `mkswap` to set up a Linux swap area. 
 ```bash
 $ sudo mkswap /swapfile
 ```
 
-4. After creating a file, activate the file to start using it. 
+5. After creating a file, activate the file to start using it. 
 ```bash
 $ sudo swapon /swapfile
 ```
 
-5. Open `/etc/fstab` file with `nano` command, as swap areas are listed in `/etc/fastab`.
+6. Open `/etc/fstab` file with `nano` command, as swap areas are listed in `/etc/fastab`.
 ```bash
 $ sudo nano /etc/fstab
 ```
 
-6. Copy a sentence below, then paste it the file you opened.
+7. Copy the sentence below, then paste it into the file you opened.
 ```
 /swapfile swap swap defaults 0 0
 ```
 
-7. Verify swap area with `free` syntax whether it is allocated. It will present a table consisting of six colums and three rows of data. 
+8. Verify swap area with `free` syntax whether it is allocated. It will present a table consisting of six colums and three rows of data. 
 ```bash
 $ sudo free -h
                  total        used        free      shared  buff/cache   available
@@ -220,23 +221,25 @@ As TurtleBot3 operates on ROS, it requies to install ROS 2 (Dashing Diademata) o
 
 - [ROS 2 Installation Guide](https://index.ros.org/doc/ros2/Installation/Dashing/Linux-Install-Debians/)
 
-1. Update and upgrade your software
+1. Open a terminal on **SBC**
+
+2. Update and upgrade your software
 ```bash
 $ sudo apt update && sudo apt upgrade
 ```
-1. Setup locale
+3. Setup locale
 ```bash
 $ sudo locale-gen en_US en_US.UTF-8
 $ sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
 $ export LANG=en_US.UTF-8
 ```
-1. Setup sources
+4. Setup sources
 ```bash
 $ sudo apt update && sudo apt install curl gnupg2 lsb-release
 $ curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
 $ sudo sh -c 'echo "deb [arch=amd64,arm64] http://packages.ros.org/ros2/ubuntu `lsb_release -cs` main" > /etc/apt/sources.list.d/ros2-latest.list'
 ```
-1. Install ROS 2 packages
+5. Install ROS 2 packages
 ```bash
 $ sudo apt update
 $ sudo apt install ros-dashing-ros-base
@@ -266,17 +269,22 @@ In DDS communication, `ROS_DOMAIN_ID` must be matched between **Remote PC** and 
 - A default ID of **TurtleBot3** is set as `0`.  
 - To configure the `ROS_DOMAIN_ID` of Remote PC and SBC in TurtleBot3 to `30` is recommendable.  
 
+1. Open a terminal on **SBC**
+2. Use the following commands.
 ```bash
 $ echo 'source ~/turtlebot3_ws/install/setup.bash' >> ~/.bashrc
 $ echo 'export ROS_DOMAIN_ID=30 #TURTLEBOT3' >> ~/.bashrc
 $ source ~/.bashrc
 ```
-**WARNING** : Do not **OVERLAP** any IDs between you and other users. It will cause a conflict of communication between users under the same network environment.
-{: .notice--warning}
+
+    **WARNING** : Do not **OVERLAP** any IDs between you and other users. It will cause a conflict of communication between users under the same network environment.
+    {: .notice--warning}
 
 #### OpenCR Port Setup
 
 Following commands show how to assign OpenCR port authorization to TurtleBot3.
+1. Open a terminal on **SBC**
+2. Use the following commands.
 ```bash
 $ cd ~/turtlebot3_ws/src/turtlebot3/turtlebot3_bringup 
 $ sudo cp ./99-turtlebot3-cdc.rules /etc/udev/rules.d/ 

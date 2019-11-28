@@ -254,7 +254,7 @@ Therefore, Goal Position(564) should not exceed the limit range. Attempting to w
 {% include en/dxl/pro_plus/control_table_56_external_port.md %}
 
 ### <a name="shutdown"></a>**[Shutdown(63)](#shutdown63)**
-{% include en/dxl/pro_plus/control_table_63_shutdown.md %}
+{% include en/dxl/control_table_shutdown.md %}
 
 ### <a name="indirect-address"></a><a name="indirect-data"></a>**[Indirect Address](#indirect-address)**, **[Indirect Data](#indirect-data)**
 {% include en/dxl/pro_plus/control_table_168_indirect.md %}

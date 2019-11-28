@@ -125,7 +125,7 @@ product_group: dxl_rx
 {% include en/dxl/control_table_status_return_lv.md %}
 
 ### <a name="alarm-led"></a><a name="shutdown"></a>**[Alarm LED(17), Shutdown(18)](#alarm-led17-shutdown18)**
-{% include en/dxl/control_table_alarm_shutdown.md %}
+{% include en/dxl/control_table_shutdown.md %}
 
 ### <a name="torque-enable"></a>**[Torque Enable (24)](#torque-enable-24)**
 {% include en/dxl/control_table_torque_enable.md %}
