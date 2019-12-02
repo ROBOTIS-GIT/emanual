@@ -161,7 +161,7 @@ Select Tools → Port → /dev/ttyACM0.
 [Click here to open the API Reference manual]: /docs/en/software/robotis_manipulator_libs/doxygen/html/index.html
 
 # [Usage Tutorials](#usage-tutorials)
-<!-- The robotis_manipulator는 매니퓰레이터를 제어하기 위해 필요한 정보를 저장하고, 운동학, 경로생성, 액추에이터 통신등을 수행해주는 라이브러리입니다. 이 튜토리얼에서는 robotis_manipulator의 사용법에 대해 설명합니다. -->
+<!-- The robotis_manipulator는 매니퓰레이터를 제어하기 위해 필요한 정보를 저장하고, 운동학, 경로생성, 액츄에이터 통신등을 수행해주는 라이브러리입니다. 이 튜토리얼에서는 robotis_manipulator의 사용법에 대해 설명합니다. -->
 <!-- 이 튜토리얼에서는 OpenMANIPULATOR-X RM-X52-TNM를 제어하기 위해 작성된 open_manipulator_libs를 예로 들어 설명할 것입니다. -->
 The robotis_manipulator is a library that stores parameters needed to control a manipulator, and performs kinematics solving, trajectory generation, and actuator communication. This tutorial describes how to use the robotis_manipulator.
 In this tutorial, we will use `open_manipulator_libs` created to control **OpenMANIPULATOR-X RM-X52-TNM**, as an example.
@@ -514,7 +514,7 @@ void RobotisManipulator::addJoint(Name my_name,
                                   Eigen::Matrix3d inertia_tensor = Eigen::Matrix3d::Identity(),
                                   Eigen::Vector3d center_of_mass = Eigen::Vector3d::Zero());
 ```
-<!-- 매니퓰레이터의 a joint component를 추가합니다. The Joint component는 매니퓰레이터의 액추에이터의 유무에 관계없이 가동되는 모든 조인트의 component를 칭합니다. 매니퓰레이터의 말단에 위치한 end-effectors는 the joint component에서 제외됩니다. the joint component의 위치와 자세는 구동축(joint)이 위치한 component 좌표축의 위치와 자세를 의미합니다. -->
+<!-- 매니퓰레이터의 a joint component를 추가합니다. The Joint component는 매니퓰레이터의 액츄에이터의 유무에 관계없이 가동되는 모든 조인트의 component를 칭합니다. 매니퓰레이터의 말단에 위치한 end-effectors는 the joint component에서 제외됩니다. the joint component의 위치와 자세는 구동축(joint)이 위치한 component 좌표축의 위치와 자세를 의미합니다. -->
 Add a *joint component* of the manipulator. The *Joint component* refers to the components of all joints that run with or without an actuator. The end-effectors located at the end of the manipulator are excluded from the *joint component*. The *position* and *orientation* of the joint component refers to the *position* and *orientation* of the *rotation axis* coordinates where the joint is located.
 
 - **my_name** : 
@@ -536,7 +536,7 @@ Specifies the *relative orientation* of the joint coordinates from the coordinat
 <!-- the joint component의 a joint 회전축을 지정합니다. 회전축은 relative_position와 relative_orientation로 설정된 좌표축에 대한 회전축을 의미합니다. -->
 Specify the *rotation axis* of the *joint component*. The *rotation axis* is in the coordinates set by *relative_position* and *relative_orientation*.
 - **joint_actuator_id** : 
-<!-- the joint에 사용된 액추에이터의 id를 지정합니다. id는 0이상의 자연수로 설정할 수 있으며, 여러 조인트에 중복적으로 사용할 수 없습니다. id를 -1로 설정할 경우 the joint는 액추에이터가 부착되지 않은 패시브 조인트로 지정됩니다. -->
+<!-- the joint에 사용된 액츄에이터의 id를 지정합니다. id는 0이상의 자연수로 설정할 수 있으며, 여러 조인트에 중복적으로 사용할 수 없습니다. id를 -1로 설정할 경우 the joint는 액츄에이터가 부착되지 않은 패시브 조인트로 지정됩니다. -->
 Specifies the *id* of the actuator used for this joint. *id* can be set to a natural number greater than or equal to 0, and can not be used redundantly on plural joints. If *id* is set to *-1*, the joint is specified as a passive joint with no actuator attached.
 - **max_position_limit** : 
 <!-- the joint의 가동범위의 상한을 지정합니다. -->
@@ -587,7 +587,7 @@ Specifies the *relative position* of the tool coordinates from the coordinates o
 <!-- a parent component의 좌표축으로부터의 the tool coordinates의 상대적인 자세를 the rotation matrix형식으로 지정합니다. -->
 Specifies the *relative orientation* of the joint coordinates from the coordinates of the parent component in a rotation matrix format.
 - **tool_id** : 
-<!-- the tool에 사용된 액추에이터의 id를 지정합니다. id는 0이상의 자연수로 설정할 수 있으며, 여러 components에 중복적으로 사용할 수 없습니다. id를 -1로 설정할 경우 the tool는 액추에이터가 부착되지 않은 패시브 end-effector로 지정됩니다. -->
+<!-- the tool에 사용된 액츄에이터의 id를 지정합니다. id는 0이상의 자연수로 설정할 수 있으며, 여러 components에 중복적으로 사용할 수 없습니다. id를 -1로 설정할 경우 the tool는 액츄에이터가 부착되지 않은 패시브 end-effector로 지정됩니다. -->
 Specifies the *id* of the actuator used in the tool. *id* can be set to a natural number greater than or equal to 0, and can not be used redundantly with plural components. If *id* is set to -1, the tool is specified as a passive end-effector with no actuator attached.
 - **max_position_limit** : 
 <!-- the end-effector의 가동범위의 상한을 지정합니다. -->
@@ -768,7 +768,7 @@ if(using_actual_robot_state)
 
 <!-- 각 Joint를 위한 Actuator는 `addJointActuator()`함수를 이용해 추가되었고, Tool을 위한 actuator는 `addToolActuator()`함수를 이용해 추가되었다.
 두 클래스의 기본 설정은 `setJointActuatorMode()`와 `setToolActuatorMode()`를 이용해 설정되었다.
-`JointDynamixel`과 `GripperDynamixel` 클래스는 다이나믹셀을 이용하는 경우 사용할 수 있으며, 그 외의 경우 자신의 액추에이터에 맞게 JointActuator와 ToolActuator를 작성 하여야 한다.
+`JointDynamixel`과 `GripperDynamixel` 클래스는 다이나믹셀을 이용하는 경우 사용할 수 있으며, 그 외의 경우 자신의 액츄에이터에 맞게 JointActuator와 ToolActuator를 작성 하여야 한다.
 하나의 매니퓰레이터에 다양한 종류의 actuator를 사용할 경우 여러개의 `JointDynamixel`과 `GripperDynamixel` 클래스를 추가할 수 있다. -->
 The actuator class for joints were added using the `addJointActuator` function, and the actuator class for a tool were added using the `addToolActuator` function.
 The control mode settings for both classes were set using `setJointActuatorMode` and `setToolActuatorMode` functions.
@@ -858,26 +858,26 @@ Configure each `virtual` function to do the following:
 <!-- 이 클래스에서 사용될 `actuator_id`를 `std::vector<uint8_t>` 형식으로 설정하고, 그외의 설정 값을 `arg`로 설정합니다. `actuator_id`의 값은 [Set Robot Parameter](/docs/en/software/robotis_manipulator_libs/#set-robot-parameter)에서 설정한 값과 동일합니다. -->
 Configure the function to set the `std::vector<uint8_t>` *actuator_id* of the actuator to be used in this class and to be able to set the other required setting parameters using `const void*` *arg*. The value of `actuator_id` is the same as the value set in [Set Robot Parameter](/docs/en/software/robotis_manipulator_libs/#set-robot-parameter).
 - **setMode** : 
-<!-- `actuator_id`를 가진 액추에이터들을 `arg`값으로 설정합니다. 액추에이터의 종류에 따라서는 필요 없을 수 있습니다. -->
+<!-- `actuator_id`를 가진 액츄에이터들을 `arg`값으로 설정합니다. 액츄에이터의 종류에 따라서는 필요 없을 수 있습니다. -->
 Set the mode of the actuators setted to `std::vector<uint8_t>` *actuator_id* to the value of `const void*` *arg*. Depending on the type of actuator, it may not be necessary.
 - **getId** : 
 <!-- `init()`함수에서 설정된 `actuator_id`를 리턴합니다. 여러개의 `JointAcuator` 클래스를 추가했을 경우, 이 객체에 포함된 actuator의 id를 판단하기 위해 사용된다. -->
 Configure to returns the `std::vector<uint8_t>` *actuator_id* set by the `init` function. If several `JointAcuator` classes are added, they are used to determine the *id* of the actuator contained in this object.
 - **enable** : 
-<!-- 이 클래스에 사용된 actuator를 enable 하기 위해 사용된다. actuator가 disable되어 있을경우, `sendJointActuatorValue()`를 실행하더라도, 액추에이터는 움직이지 않는다. -->
+<!-- 이 클래스에 사용된 actuator를 enable 하기 위해 사용된다. actuator가 disable되어 있을경우, `sendJointActuatorValue()`를 실행하더라도, 액츄에이터는 움직이지 않는다. -->
 It is used to *enable* the actuators controlled by this class. To getting the enabled state by the `getEnabledState` function, set member parameter *enabled_state_* to *true* in this function.
 - **disable** : 
-<!-- 이 클래스에 사용된 actuator를 disable 하기 위해 사용된다. actuator가 disable되어 있을경우, `sendJointActuatorValue()`를 실행하더라도, 액추에이터는 움직이지 않는다. -->
+<!-- 이 클래스에 사용된 actuator를 disable 하기 위해 사용된다. actuator가 disable되어 있을경우, `sendJointActuatorValue()`를 실행하더라도, 액츄에이터는 움직이지 않는다. -->
 It is used to *disable* the actuators controlled by this class. If actuator is disabled, the actuated will not move even if `sendJointActuatorValue` is executed. To getting the enabled state by the `getEnabledState` function, set member parameter *enabled_state_* to *false* in this function.
 
 - **sendJointActuatorValue** : 
-<!-- `actuator_id`를 가진 액추에이터를 `value_vector`로 보내기 위해 사용된다. 이때의 `value_vector`값은 joint의 `JointValue`가 아니라 감속기등을 거치지않은 `ActuatorValue`이다. `value_vector`는 각 액추에이터의 `position`, `velocity`, `acceleration`, `effort`를 포함한다. 액추에이터에 따라서는 `position`값만 채우고, 나머지 값은 비워서 보내는 것도 가능하다. -->
+<!-- `actuator_id`를 가진 액츄에이터를 `value_vector`로 보내기 위해 사용된다. 이때의 `value_vector`값은 joint의 `JointValue`가 아니라 감속기등을 거치지않은 `ActuatorValue`이다. `value_vector`는 각 액츄에이터의 `position`, `velocity`, `acceleration`, `effort`를 포함한다. 액츄에이터에 따라서는 `position`값만 채우고, 나머지 값은 비워서 보내는 것도 가능하다. -->
 Configure the function the `std::vector<uint8_t>` *actuator_id* actuators move to `std::vector<robotis_manipulator::ActuatorValue>` *value_vector*, when the function is executed.
 In this case, *value_vector* is not `JointValue` of the joint but `ActuatorValue` which does not go through the decelerator. *value_vector* contains *position*, *velocity*, *acceleration*, and *effort* for each actuator. Depending on the actuator, it is also possible to fill only the *position* values and leave the remaining values ​​empty.
 
 - **receiveJointActuatorValue** : 
-<!-- `actuator_id`를 가진 액추에이터의 현재 값을 받기위해 사용된다. `robotis_manipulator::ActuatorValue`는 각 액추에이터의 `position`, `velocity`, `acceleration`, `effort`를 포함하며, `JointValue`가 아니라 감속기등을 거치지않은 `ActuatorValue`이다. 이 값은 추후에 [Set Robot Parameter](/docs/en/software/robotis_manipulator_libs/#set-robot-parameter)에서 설정한 coefficient값을 곱한 값으로서 파라미터에 저장된다.
-액추에이터에 따라서는 `position`값만 채우고, 나머지 값은 비워서 리턴하는 것도 가능하지만, `velocity`, `acceleration`를 함께 리턴함으로써 각 component의 `dynamic.pose`의 값을 계산하는데 사용할 수 있다. -->
+<!-- `actuator_id`를 가진 액츄에이터의 현재 값을 받기위해 사용된다. `robotis_manipulator::ActuatorValue`는 각 액츄에이터의 `position`, `velocity`, `acceleration`, `effort`를 포함하며, `JointValue`가 아니라 감속기등을 거치지않은 `ActuatorValue`이다. 이 값은 추후에 [Set Robot Parameter](/docs/en/software/robotis_manipulator_libs/#set-robot-parameter)에서 설정한 coefficient값을 곱한 값으로서 파라미터에 저장된다.
+액츄에이터에 따라서는 `position`값만 채우고, 나머지 값은 비워서 리턴하는 것도 가능하지만, `velocity`, `acceleration`를 함께 리턴함으로써 각 component의 `dynamic.pose`의 값을 계산하는데 사용할 수 있다. -->
 Configure to receive the `std::vector<robotis_manipulator::ActuatorValue>` *present actuator values* of the actuators. `ActuatorValue` includes* position*, *velocity*, *acceleration*, and *effort* of each actuator. This values are stored in the manipulator parameters after the values are multiplied by the *coefficient* value set in [Set Robot Parameter](/docs/en/software/robotis_manipulator_libs/#set-robot-parameter). In the other word, it is not `JointValue` but `ActuatorValue` which does not go through decelerator. Depending on the actuator, it is possible to fill only the *position* value and leave the rest of the value blank, but it can be used to calculate the *dynamic.pose* value of each component by returning with *velocity* and *acceleration*.
 
 #### Tool Actuator Class
@@ -957,26 +957,26 @@ In order to use all API functions of `robotis_manipulator`, the following every 
 <!-- 각각의 (virtual) 함수는 다음의 기능을 하도록 구성하십시오. -->
 Configure each `virtual` function to do the following:
 - **init** : 
-<!-- 이 클래스에서 사용될 `actuator_id`를 설정하고, 그외의 설정 값을 `arg`로 설정합니다. `actuator_id`의 값은 [Set Robot Parameter](/docs/en/software/robotis_manipulator_libs/#set-robot-parameter)에서 설정한 값과 동일합니다. 하나의 `ToolActuator`는 하나의 툴 액추에이터만을 제어합니다. 매니퓰레이터에 2개이상의 Tool을 설정할 경우, 또 다른 `ToolActuator` 클래스를 만들어 `addToolActuator()`함수를 통해 추가하십시오. -->
+<!-- 이 클래스에서 사용될 `actuator_id`를 설정하고, 그외의 설정 값을 `arg`로 설정합니다. `actuator_id`의 값은 [Set Robot Parameter](/docs/en/software/robotis_manipulator_libs/#set-robot-parameter)에서 설정한 값과 동일합니다. 하나의 `ToolActuator`는 하나의 툴 액츄에이터만을 제어합니다. 매니퓰레이터에 2개이상의 Tool을 설정할 경우, 또 다른 `ToolActuator` 클래스를 만들어 `addToolActuator()`함수를 통해 추가하십시오. -->
 Configure the function to set the `uint8_t` *actuator_id* of the actuator to be used in this class and to be able to set the other required setting parameters using `const void*` *arg*. The value of `actuator_id` is the same as the value set in [Set Robot Parameter](/docs/en/software/robotis_manipulator_libs/#set-robot-parameter). A single `ToolActuator` class controls only one tool actuator. If you set up more than one tool on the manipulator, create another `ToolActuator` class and add it through the `addToolActuator` function.
 - **setMode** : 
-<!-- `actuator_id`를 가진 액추에이터들을 `arg`값으로 설정합니다. 액추에이터의 종류에 따라서는 필요 없을 수 있습니다. -->
+<!-- `actuator_id`를 가진 액츄에이터들을 `arg`값으로 설정합니다. 액츄에이터의 종류에 따라서는 필요 없을 수 있습니다. -->
 Set the mode of the actuators setted to `uint8_t` *actuator_id* to the value of `const void*` *arg*. Depending on the type of actuator, it may not be necessary.
 - **getId** : 
 <!-- `init()`함수에서 설정된 `actuator_id`를 리턴합니다. 여러개의 `ToolAcuator` 클래스를 추가했을 경우, 이 객체에 포함된 actuator의 id를 판단하기 위해 사용된다. -->
 Configure to returns the `uint8_t` *actuator_id* set by the `init` function. If several `ToolAcuator` classes are added, they are used to determine the *id* of the actuator contained in this object.
 - **enable** : 
-<!-- 이 클래스에 사용된 actuator를 enable 하기 위해 사용된다. actuator가 disable되어 있을경우, `sendToolActuatorValue()`를 실행하더라도, 액추에이터는 움직이지 않도록 하십시오. -->
+<!-- 이 클래스에 사용된 actuator를 enable 하기 위해 사용된다. actuator가 disable되어 있을경우, `sendToolActuatorValue()`를 실행하더라도, 액츄에이터는 움직이지 않도록 하십시오. -->
 It is used to *enable* the actuator controlled by this class. To getting the enabled state by the `getEnabledState` function, set member parameter *enabled_state_* to *true* in this function.
 - **disable** : 
-<!-- 이 클래스에 사용된 actuator를 disable 하기 위해 사용된다. actuator가 disable되어 있을경우, `sendJointActuatorValue()`를 실행하더라도, 액추에이터는 움직이지 않는다. -->
+<!-- 이 클래스에 사용된 actuator를 disable 하기 위해 사용된다. actuator가 disable되어 있을경우, `sendJointActuatorValue()`를 실행하더라도, 액츄에이터는 움직이지 않는다. -->
 It is used to *disable* the actuator controlled by this class. If actuator is disabled, the actuated will not move even if `sendToolActuatorValue` is executed. To getting the enabled state by the `getEnabledState` function, set member parameter *enabled_state_* to *false* in this function.
 - **sendToolActuatorValue**
-<!-- 액추에이터를 `value`로 보내기 위해 사용된다. 이때의 `value`는 tool의 `ToolValue`가 아니라 감속기등을 거치지않은 `ActuatorValue`이다. `value`는 각 액추에이터의 `position`, `velocity`, `acceleration`, `effort`를 포함한다. 액추에이터에 따라서는 `position`값만 채우고, 나머지 값은 비워서 보내는 것도 가능하다. -->
+<!-- 액츄에이터를 `value`로 보내기 위해 사용된다. 이때의 `value`는 tool의 `ToolValue`가 아니라 감속기등을 거치지않은 `ActuatorValue`이다. `value`는 각 액츄에이터의 `position`, `velocity`, `acceleration`, `effort`를 포함한다. 액츄에이터에 따라서는 `position`값만 채우고, 나머지 값은 비워서 보내는 것도 가능하다. -->
 Configure the function the `uint8_t` *actuator_id* actuator move to `robotis_manipulator::ActuatorValue` *value*, when the function is executed.
 In this case, *value* is not `ToolValue` of the tool but `ActuatorValue` which does not go through the decelerator. *value* contains *position*, *velocity*, *acceleration*, and *effort* for the actuator. Depending on the actuator, it is also possible to fill only the *position* values and leave the remaining values ​​empty.
 - **receiveToolActuatorValue**
-<!-- 액추에이터의 현재 값을 받기위해 사용된다. `robotis_manipulator::ActuatorValue`는 각 액추에이터의 `position`, `velocity`, `acceleration`, `effort`를 포함하며, `ToolValue`가 아니라 감속기등을 거치지않은 `ActuatorValue`이다. 이 값은 추후에 [Set Robot Parameter](/docs/en/software/robotis_manipulator_libs/#set-robot-parameter)에서 설정한 coefficient값을 곱한 값으로서 파라미터에 저장된다. 액추에이터에 따라서는 `position`값만 채우고, 나머지 값은 비워서 리턴하는 것도 가능하지만, `velocity`, `acceleration`를 함께 리턴함으로써 각 Tool component의 `dynamic.pose`의 값을 계산하는데 사용할 수 있다. -->
+<!-- 액츄에이터의 현재 값을 받기위해 사용된다. `robotis_manipulator::ActuatorValue`는 각 액츄에이터의 `position`, `velocity`, `acceleration`, `effort`를 포함하며, `ToolValue`가 아니라 감속기등을 거치지않은 `ActuatorValue`이다. 이 값은 추후에 [Set Robot Parameter](/docs/en/software/robotis_manipulator_libs/#set-robot-parameter)에서 설정한 coefficient값을 곱한 값으로서 파라미터에 저장된다. 액츄에이터에 따라서는 `position`값만 채우고, 나머지 값은 비워서 리턴하는 것도 가능하지만, `velocity`, `acceleration`를 함께 리턴함으로써 각 Tool component의 `dynamic.pose`의 값을 계산하는데 사용할 수 있다. -->
 Configure to receive the `robotis_manipulator::ActuatorValue` *present actuator value* of the tool actuator. `ActuatorValue` includes* position*, *velocity*, *acceleration*, and *effort* of the actuator. This values are stored in the manipulator parameters after the values are multiplied by the *coefficient* value set in [Set Robot Parameter](/docs/en/software/robotis_manipulator_libs/#set-robot-parameter). In the other word, it is not `ToolValue` but `ActuatorValue` which does not go through decelerator. Depending on the actuator, it is possible to fill only the *position* value and leave the rest of the value blank, but it can be used to calculate the *dynamic.pose* value of each component by returning with *velocity* and *acceleration*.
 
 
@@ -1108,11 +1108,11 @@ void OpenManipulator::processOpenManipulator(double present_time)
 
 <!-- 1. `getJointGoalValueFromTrajectory()`와 `getToolGoalValue()`를 통해 make Trajectory 함수들이 실행되어 만들어진 Trajectory에서 `goal_joint_value`와 `goal_tool_value`값을 리턴받아 옵니다. `makeTaskTrajectory()`함수를 사용했을경우, 내부에서 inverse kinematics를 풉니다. -->
 1. The `goal_joint_value` and` goal_tool_value` values are returned from the trajectory calculated by the *make trajectory* functions through `getJointGoalValueFromTrajectory` and `getToolGoalValue`. If you used the `makeTaskTrajectory` function, the inverse kinematics is solved inside of the `getJointGoalValueFromTrajectory` function.
-<!-- 2. `receiveAllJointActuatorValue()`, `receiveAllToolActuatorValue()`를 통해 액추에이터로 부터 현재의 액추에이터 값을 받아 옵니다. 이 값은 `RobotisManipulator` 클래스의 맴버변수인 `manipulator_`에 저장됩니다. -->
+<!-- 2. `receiveAllJointActuatorValue()`, `receiveAllToolActuatorValue()`를 통해 액츄에이터로 부터 현재의 액츄에이터 값을 받아 옵니다. 이 값은 `RobotisManipulator` 클래스의 맴버변수인 `manipulator_`에 저장됩니다. -->
 2. *present joint values* and *tool value* are returned through the `receiveAllJointActuatorValue` and `receiveAllToolActuatorValue`. These values are stored in the `manipulator_` member variable of the` RobotisManipulator` class.
-<!-- 3. `sendAllJointActuatorValue()`와 `sendAllToolActuatorValue()`를 통해 `getJointGoalValueFromTrajectory`와 `getToolGoalValue`에서 받아온 `goal_joint_value`와 `goal_tool_value` 값을 액추에이터 컨트롤러에 보냅니다. 이를 통해 액추에이터가 움직여 매니퓰레이터가 목표위치에 도달 할 것입니다. -->
+<!-- 3. `sendAllJointActuatorValue()`와 `sendAllToolActuatorValue()`를 통해 `getJointGoalValueFromTrajectory`와 `getToolGoalValue`에서 받아온 `goal_joint_value`와 `goal_tool_value` 값을 액츄에이터 컨트롤러에 보냅니다. 이를 통해 액츄에이터가 움직여 매니퓰레이터가 목표위치에 도달 할 것입니다. -->
 3. Send the `goal_joint_value` and `goal_tool_value` values got ​​from `getJointGoalValueFromTrajectory` and `getToolGoalValue` to the actuator controller through `sendAllJointActuatorValue` and `sendAllToolActuatorValue` functions. This will move the actuator to reach the target position.
-<!-- 4. `receiveAllJointActuatorValue()`, `receiveAllToolActuatorValue()`를 통해 받아와서 `manipulator_`에 저장되어있는 현재의 액추에이터 값을 토대로 forward kinematics를 풀고, manipulator의 components의 pose값을 계산합니다. -->
+<!-- 4. `receiveAllJointActuatorValue()`, `receiveAllToolActuatorValue()`를 통해 받아와서 `manipulator_`에 저장되어있는 현재의 액츄에이터 값을 토대로 forward kinematics를 풀고, manipulator의 components의 pose값을 계산합니다. -->
 4. Solve the forward kinematics based on the *present joint values* received through `receiveAllJointActuatorValue`, `receiveAllToolActuatorValue` and stored the pose value of components calculated to the *manipulator_*.
 
 ## [Step4 Use it](#step4.-use-it)
