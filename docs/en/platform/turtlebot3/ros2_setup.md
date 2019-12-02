@@ -43,6 +43,9 @@ As TurtleBot3 operates on ROS, it requies to install `ros-dashing-desktop` debia
 - [ROS 2 Installation Guide](https://index.ros.org/doc/ros2/Installation/Dashing/)
 
 ### Install ROS 2 Dependent Packages
+
+**[Remote PC]**
+
 1. Open a terminal on **Remote PC**.
 2. Use the following commands.
 ```bash
@@ -74,6 +77,9 @@ $ sudo apt install python3-vcstool
 ```
 
 ### Install TurtleBot3 Packages 
+
+**[Remote PC]**
+
 ```bash
 $ mkdir -p ~/turtlebot3_ws/src
 $ cd ~/turtlebot3_ws
@@ -83,6 +89,9 @@ $ colcon build --symlink-install
 ```
 
 ### Save Bash Command for Setup
+
+**[Remote PC]**
+
 ```bash
 $ echo 'source ~/turtlebot3_ws/install/setup.bash' >> ~/.bashrc
 $ echo 'export ROS_DOMAIN_ID=30 #TURTLEBOT3' >> ~/.bashrc
@@ -105,6 +114,8 @@ Following documents will be helpful for you to fix the problem of any build erro
 
 ### Download and Install Ubuntu Image File
 
+**[TurtleBot3]**
+
 1. Go on [Ubuntu releases](http://cdimage.ubuntu.com/ubuntu/releases/bionic/release) .
 2. Download `Raspberry Pi 3 (64-bit ARM) preinstalled server image` on **Remote PC**
 3. Burn the Ubuntu image file to a microSD card.
@@ -115,6 +126,9 @@ Following documents will be helpful for you to fix the problem of any build erro
 ### Initialization Process for Raspberry Pi 3
 
 To communicate between **Remote PC** and **TurtleBot3**, you need to install `Ubuntu Server 18.04 image` file on Raspberry Pi 3.
+
+**[TurtleBot3]**
+
 1. Boot up Raspberry Pi 3 after inserting a microSD card which has the image file into a microSD card slot on SBC in TurtleBot3.  
   (You can connect HDMI cable, keyboard and mouse into the TurtleBot3)
 2. Log in with default username(`ubuntu`) and password(`ubuntu`).  
@@ -125,6 +139,8 @@ To communicate between **Remote PC** and **TurtleBot3**, you need to install `Ub
 {: .notice--info}
 
 ### Example for Network Configuration
+
+**[TurtleBot3]**
 
 1. Open a terminal on **SBC**
 
@@ -165,15 +181,25 @@ $ reboot
 ```bash
 $ systemctl mask systemd-networkd-wait-online.service
 ```
-    From now, you can use SSH. If you want remote PC to connect to SBC and to install ROS and TurtleBot3 software, run the command below. 
-    
-    1. Open a terminal on **Remote PC**
-    2. Use the following command.
-    ```bash
-    $ ssh ubuntu@<NETWORK IP of Raspberry PI>
-    ```
+
+7. From now, you can use SSH. Refer to [Connect Remote PC to SBC](#connect-remote-pc-to-sbc)
+
+#### [Connect Remote PC to SBC](#connect-remote-pc-to-sbc)
+
+Be sure to read [Example for Network Configuration](#example-for-network-configuration) before proceeding to the following steps. 
+{: .notice--warning}
+
+**[Remote PC]**
+
+1. Open a terminal on **Remote PC**
+2. Use the following command.
+```bash
+$ ssh ubuntu@<NETWORK IP of Raspberry PI>
+```
 
 ### Add Swap Space
+
+**[TurtleBot3]**
 
 1. Open a terminal on **SBC**
 
@@ -221,6 +247,8 @@ As TurtleBot3 operates on ROS, it requies to install ROS 2 (Dashing Diademata) o
 
 - [ROS 2 Installation Guide](https://index.ros.org/doc/ros2/Installation/Dashing/Linux-Install-Debians/)
 
+**[TurtleBot3]**
+
 1. Open a terminal on **SBC**
 
 2. Update and upgrade your software
@@ -247,6 +275,8 @@ $ sudo apt install ros-dashing-ros-base
 
 ### Install TurtleBot3 Packages
 
+**[TurtleBot3]**
+
 ```bash
 $ sudo apt install python3-argcomplete python3-colcon-common-extensions libboost-system-dev
 $ mkdir -p ~/turtlebot3_ws/src && cd ~/turtlebot3_ws/src
@@ -269,6 +299,8 @@ In DDS communication, `ROS_DOMAIN_ID` must be matched between **Remote PC** and 
 - A default ID of **TurtleBot3** is set as `0`.  
 - To configure the `ROS_DOMAIN_ID` of Remote PC and SBC in TurtleBot3 to `30` is recommendable.  
 
+**[TurtleBot3]**
+
 1. Open a terminal on **SBC**
 2. Use the following commands.
 ```bash
@@ -283,6 +315,9 @@ $ source ~/.bashrc
 #### OpenCR Port Setup
 
 Following commands show how to assign OpenCR port authorization to TurtleBot3.
+
+**[TurtleBot3]**
+
 1. Open a terminal on **SBC**
 2. Use the following commands.
 ```bash

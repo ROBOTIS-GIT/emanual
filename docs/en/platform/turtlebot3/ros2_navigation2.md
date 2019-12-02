@@ -43,7 +43,6 @@ $ ros2 launch turtlebot3_bringup robot.launch.py
 ```
     **NOTE**: Specify `${TB3_MODEL}`: `burger`, `waffle`, `waffle_pi` before excuting the command. Set the permanent export setting by following [Export TURTLEBOT3_MODEL](/docs/en/platform/turtlebot3/export_turtlebot3_model){: .popup} instruction.
     {: .notice--info}
-
 3. Open a terminal on **Remote PC**
 4. Launch the navigation file.
 ```bash

@@ -20,7 +20,6 @@ page_number: 30
 {% capture notice_01 %}
 **NOTE**: 
 - This instructions were tested on `Ubuntu 18.04` and `ROS2 Dashing Diademata`.
-- This instructions are supposed to be running on the remote PC. Please run the instructions below on your **Remote PC**.
 - Make sure to run the [ROS2 Bringup](/docs/en/platform/turtlebot3/ros2_bringup/#bringup) instructions before running the instructions below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
@@ -37,7 +36,9 @@ Watch the video and see how accurate TurtleBot3 draws a map.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pJNSxDodhDk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## [Run SLAM Nodes](#run-slam-nodes)
-  
+
+**[TurtleBot3]**
+
 1. Open a terminal on **Turtlebot3**. 
 
 2. bring up basic packages to start its applications .    
@@ -47,7 +48,9 @@ $ ros2 launch turtlebot3_bringup robot.launch.py
 ```
     **NOTE**: Specify `${TB3_MODEL}`: `burger`, `waffle`, `waffle_pi` before excuting the command. Set the permanent export setting by following [Export TURTLEBOT3_MODEL](/docs/en/platform/turtlebot3/export_turtlebot3_model){: .popup} instruction.
     {: .notice--info}
-      
+
+**[Remote PC]**
+
 3. Open a new terminal on **Remote PC** 
 
 4. Launch the SLAM file.  
@@ -61,7 +64,9 @@ $ ros2 launch turtlebot3_cartographer cartographer.launch.py
 In order to achieve a high level accuracy for A mapping, you need to repeat SLAM several times manually in a given place. Use the following package (Teleoperation Node) for a manual operation.  
 Refer to a picture of the mapping process, which shows how the robot draws a map using SLAM.   
 
-1. Open a terminal **on Remote PC**
+**[Remote PC]**
+
+1. Open a terminal on **Remote PC**
 
 2. Run Teleoperation Node.
 ``` bash
@@ -155,6 +160,8 @@ The name of the map files is `map.pgm` and `map.yaml` as a default, which are sa
 - [tf](http://wiki.ros.org/tf)
 - [odometry](https://en.wikipedia.org/wiki/Odometry)
 
+**[Remote PC]**
+
 1. Open a new terminal on **Remote PC** 
 
 2. Run map_saver node
@@ -167,7 +174,7 @@ $ ros2 run nav2_map_server map_saver -f ~/map
 ## [Map](#map)
 
 **Occupancy Grid Map (OGM)** is a two-dimensional space, commonly used in ROS community. The space is composed of data of a saved map file, [Save the Map](#save-the-map).  
-The White cells represent **free space**; the robot can move around, black represents **ocupied space**; obstacles are set, gray represents **unknown space**.
+The White cells represent **free space**, black celss represents **ocupied space**, and gray represents **unknown space**.
 
 ![](/assets/images/platform/turtlebot3/slam/map.png)
 
