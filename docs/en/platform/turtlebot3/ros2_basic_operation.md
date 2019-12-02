@@ -25,12 +25,14 @@ page_number: 29
 {% capture notice_01 %}
 **NOTE**: 
 - This instructions were tested on `Ubuntu 18.04` and `ROS 2 Dashing Diatamata`.
-- This instructions are supposed to be running on the remote PC. Please run the instructions below on your **Remote PC**.
 - Make sure to run [Bringup](/docs/en/platform/turtlebot3/ros2_bringup/#bringup) before running the instructions below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
 In order to check topics of TurtleBot3, Use [rqt][rqt] provided by ROS, which is a Qt-based framework for GUI development for ROS. It is a tool displaying all topics of TurtleBot3 with a topic name, type, bandwidth, Hz, and value.
+
+**[Remote PC]**
+
 1. Open a terminal on **Remote PC**.
 2. Run **rqt**.
 ``` bash
@@ -93,6 +95,8 @@ Examples of TurtleBot3 can be launched by ROS 2 on Ubuntu 18.04 with Raspberry P
 
 ### [Keyboard](#keyboard)
 
+**[Remote PC]**
+
 1. Open a terminal on **Remote PC**.
 2. Run teleoperation node 
   ```bash
@@ -135,6 +139,8 @@ The settings for [ROBOTIS RC-100B][rc100] is included in an OpenCR firmware for 
 
 ### [PS3 Joystick](#ps3-joystick)
 
+**[Remote PC]**
+
 1. Connect PS3 Joystick to **Remote PC** via either Bluetooth or USB cable.
 
 2. Open a terminal on **Remote PC**.
@@ -153,6 +159,8 @@ The settings for [ROBOTIS RC-100B][rc100] is included in an OpenCR firmware for 
   
 
 ### [XBOX 360 Joystick](#xbox-360-joystick)
+
+**[Remote PC]**
 
 1. Connect XBOX 360 Joystick to the Remote PC via either Wireless Adapter or USB cable.
 
@@ -188,6 +196,8 @@ It will be released soon !
 
 TurtleBot3 can moves with receiving a certain topic: **/cmd_vel_raw** from obstacle detection node. Using LDS data and detecting obstacles, the robot can stop moving.  
 
+**[Remote PC]**
+
 1. Open a terminal on **Remote PC**.
 
 2. Run the teleoperation keyboard.
@@ -203,6 +213,8 @@ TurtleBot3 can moves with receiving a certain topic: **/cmd_vel_raw** from obsta
 ### [Position Control](#position-control)
 
 TurtleBot3 can be position controlled using this package.
+
+**[Remote PC]**
 
 1. Open a terminal on **Remote PC**.
 
@@ -230,6 +242,8 @@ TurtleBot3 can be position controlled using this package.
 ### [Patrol](#patrol)
 
 This example uses action topic. The action client translates patrol data(radius) to action server. Then, the action server translates `cmd_vel` to TurtleBot3. 
+
+**[Remote PC]**
 
 1. Open a terminal on **Remote PC**.
 

@@ -22,6 +22,8 @@ page_number: 28
 **WARNING** :Do not apply this instruction to Remote PC. Use SBC. 
 {: .notice--warning}
 
+**[TurtleBot3]**
+
 1. Open a terminal on **TurtleBot3**.
 
 2. Launch a model of your TurtleBot3 including node of `robot_state_publisher` and `turtlebot3_node`.
