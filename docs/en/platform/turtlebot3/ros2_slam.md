@@ -35,6 +35,9 @@ Watch the video and see how accurate TurtleBot3 draws a map.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pJNSxDodhDk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+The contents in e-Manual may differ from contents of a provided video in e-Manaul as e-Manual is updated on a regular basis.
+{: .notice--warning} 
+
 ## [Run SLAM Nodes](#run-slam-nodes)
 
 **[TurtleBot3]**

@@ -16,11 +16,15 @@ page_number: 25
 <div style="counter-reset: h1 13"></div>
 
 # [Machine Learning](#machine-learning)
+
 Machine learning is a data analysis technique that teaches computers to recognize what is natural for people and animals - learning through experience. There are three types of machine learning: supervised learning, unsupervised learning, reinforcement learning.
 
 This application is reinforcement learning with DQN (Deep Q-Learning). The reinforcement learning is concerned with how software agents ought to take actions in an environment so as to maximize some notion of cumulative reward.
 
 <iframe width="854" height="480" src="https://www.youtube.com/embed/WADmP0wzLxs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+The contents in e-Manual may differ from contents of a provided video in e-Manaul as e-Manual is updated on a regular basis.
+{: .notice--warning} 
 
 This shows reinforcement learning with TurtleBot3 in gazebo.
 This reinforcement learning is applied DQN(Deep Q-Learning) algorithm with LDS.  
@@ -85,6 +89,9 @@ The goal of DQN Agent is to get the TurtleBot3 to the goal avoiding obstacles. W
 The episode ends when the TurtleBot3 crashes on an obstacle or after a certain period of time. During the episode, TurtleBot3 gets a big  positive reward when it gets to the goal, and TurtleBot3 gets a big negative reward when it crashes on an obstacle.
 
 <iframe width="1236" height="695" src="https://www.youtube.com/embed/807_cByUBSI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+The contents in e-Manual may differ from contents of a provided video in e-Manaul as e-Manual is updated on a regular basis.
+{: .notice--warning} 
 
 ### [Set state](#set-state)
 State is an observation of environment and describes the current situation. Here, `state_size` is 26 and has 24 LDS values, distance to goal, and angle to goal.

@@ -21,7 +21,7 @@ The **ROBOTIS Dynamixel SDK** is a software development kit that provides Dynami
 
 ## [Supported Dynamixels](#supported-dynamixels)
 
-The Dynamixel SDK supports **all Dynamixel series** developed by ROBOTIS. For example, all series such as AX, RX, EX, MX, XL, XM, XH, PRO-L, PRO-M, PRO-H and PRO+ are supported by packet communication. For information on each Dynamixel model, please refer to the Dynamixel section of the following manual.
+The Dynamixel SDK supports **all Dynamixel series** developed by ROBOTIS. For example, all series such as AX, RX, EX, MX, XL, XC, XM, XH, PRO-L, PRO-M, PRO-H and PRO+ are supported by packet communication. For information on each Dynamixel model, please refer to the Dynamixel section of the following manual.
 
 - http://emanual.robotis.com/
 

@@ -39,14 +39,23 @@ sidebar:
 
 ## [지원 프로토콜](#지원-프로토콜)
 
-- [Protocol 1.0]
-- [Protocol 2.0]
+- [프로토콜 1.0]
+- [프로토콜 2.0]
 
 ## [지원 운영체제](#지원-운영체제)
 
-- Windows 7 / 8 / 10
-- Ubuntu 16 / 18
-- Mac OS X (10.11 El Capitan or above)
+- 윈도우 7 / 8.1 / 10 (32 bit and 64 bit)
+- 리눅스 
+  - 우분투 18.04 (64 bit)
+  - 우분투 16.04 (64 bit)
+- 맥 OS 10.12 / 10.13 / 10.14 (64bit)
+
+{% capture supported_platform %}
+**경고**: 
+- 다이나믹셀 위자드 2.0은 노트북 및 데스크탑 환경에서만 테스트 되었습니다.
+- x86기반 플랫폼에서 다이나믹셀 위자드 2.0을 사용 해주세요.
+{% endcapture %}
+<div class="notice--warning">{{ supported_platform | markdownify }}</div>
 
 ## [펌웨어 정의](#펌웨어-정의)
 
@@ -650,8 +659,8 @@ sidebar:
 
 
 [기본 기능 > 그래프]: #그래프
-[Protocol 1.0]: /docs/kr/dxl/protocol1/
-[Protocol 2.0]: /docs/kr/dxl/protocol2/
+[프로토콜 1.0]: /docs/kr/dxl/protocol1/
+[프로토콜 2.0]: /docs/kr/dxl/protocol2/
 [AX-12W]: /docs/kr/dxl/ax/ax-12w/
 [AX-12+/12A]: /docs/kr/dxl/ax/ax-12a/
 [AX-18F/18A]: /docs/kr/dxl/ax/ax-18a/

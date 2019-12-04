@@ -106,6 +106,9 @@ Follow the instruction below.
   
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VtyqUuuZAFA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+The contents in e-Manual may differ from contents of a provided video in e-Manaul as e-Manual is updated on a regular basis.
+{: .notice--warning} 
+
 {% capture warning_01 %}
 **WARNING**:  
 - Goal position may not be set when a path is failed to be created. 

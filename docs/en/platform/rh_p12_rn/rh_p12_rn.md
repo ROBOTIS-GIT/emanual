@@ -46,6 +46,7 @@ You can choose the desired firmware version by using **Firmware Recovery** of [R
 | Operating Mode         | Current Control Mode<br />Current based Position Control Mode                                   |
 | Weight                 | 500 g                                                                                           |
 | Stroke                 | 0 ~ 109 mm                                                                                      |
+| Max Closing Speed      | 75 mm/s                                                                                         |
 | Gear Ratio             | 1181 : 1                                                                                        |
 | Maximum Gripping Force | 170 N                                                                                           |
 | Recommended Payload    | 5 kg                                                                                            |

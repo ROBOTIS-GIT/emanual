@@ -44,10 +44,18 @@ The following features are provided with DYNAMIXEL Wizard 2.0.
 
 ## [Supported OS](#supported-os)
 
-- Windows 7 / 8 / 10
-- Ubuntu 16 / 18
-- Mac OS X (10.11 El Capitan or above)
+- Windows 7 / 8.1 / 10 (32 bit and 64 bit)
+- Linux 
+  - Ubuntu 18.04 (64 bit)
+  - Ubuntu 16.04 (64 bit)
+- MacOS 10.12 / 10.13 / 10.14 (64bit)
 
+{% capture supported_platform %}
+**WARNING**:
+- DYNAMIXEL Wizard 2.0 is tested with a desktop and laptop only.
+- Only x86 architectures support DYNAMIXEL Wizard 2.0.
+{% endcapture %}
+<div class="notice--warning">{{ supported_platform | markdownify }}</div>
 
 ## [Definition of Firmware](#definition-of-firmware)
 

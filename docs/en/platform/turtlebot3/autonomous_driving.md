@@ -22,6 +22,9 @@ page_number: 24
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
+The contents in e-Manual may differ from contents of a provided video in e-Manaul as e-Manual is updated on a regular basis.
+{: .notice--warning} 
+
 We are currently doing several projects related with the keywords: Autonomous Driving and TurtleBot3s.
 
 ## [TurtleBot3 AutoRace](#turtlebot3-autorace)

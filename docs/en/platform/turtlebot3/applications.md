@@ -262,6 +262,8 @@ $ roslaunch turtlebot3_automatic_parking_vision turtlebot3_automatic_parking_vis
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dvpWdrD3bVs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
+The contents in e-Manual may differ from contents of a provided video in e-Manaul as e-Manual is updated on a regular basis.
+{: .notice--warning} 
 
 ## [Load Multiple TurtleBot3s](#load-multiple-turtlebot3s)
 

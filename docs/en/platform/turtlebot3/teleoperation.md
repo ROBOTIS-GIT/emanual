@@ -38,6 +38,9 @@ The TurtleBot3 can be teleoperated by various devices. It is tested with several
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Z4s18hlazb4" frameborder="0" allowfullscreen></iframe>
 
+The contents in e-Manual may differ from contents of a provided video in e-Manaul as e-Manual is updated on a regular basis.
+{: .notice--warning} 
+
 ### [Keyboard](#keyboard)
 
 **TIP**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`-`Alt`-`T`.
@@ -174,7 +177,8 @@ $ rosrun leap_motion sender.py
 
 ### [Myo](#myo)
 
-(TODO)
+We are developing its contents ! 
+{: .notice--info}
 
 [bringup]: /docs/en/platform/turtlebot3/bringup/#bringup
 [rc100]: /docs/en/parts/communication/rc-100/

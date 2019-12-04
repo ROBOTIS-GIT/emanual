@@ -5,7 +5,7 @@ ref: matlab_macos
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/software/dynamixel/dynamixel_sdk/library_setup/matlab_macos/
+permalink: /docs/en/software/dynamixel/dynamixel_sdk/library_setup/matlab_macos/dummy_dummy_dummy
 sidebar:
   title: DynamixelSDK
   nav: "dynamixel_sdk"
