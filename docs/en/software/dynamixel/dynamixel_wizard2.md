@@ -48,10 +48,14 @@ The following features are provided with DYNAMIXEL Wizard 2.0.
 - Linux 
   - Ubuntu 18.04 (64 bit)
   - Ubuntu 16.04 (64 bit)
-- macOS 10.12, 10.13, 10.14 (64bit)
+- MacOS 10.12 / 10.13 / 10.14 (64bit)
 
-**WARNING**: Any OS installed on ARM CPU, such as Raspberry Pi, is not supported.
-{: .notice--warning}
+{% capture supported_platform %}
+**WARNING**:
+- DYNAMIXEL Wizard 2.0 is tested with a desktop and laptop only.
+- Only x86 architectures support DYNAMIXEL Wizard 2.0.
+{% endcapture %}
+<div class="notice--warning">{{ supported_platform | markdownify }}</div>
 
 ## [Definition of Firmware](#definition-of-firmware)
 

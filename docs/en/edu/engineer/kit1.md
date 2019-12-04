@@ -728,7 +728,7 @@ Tensor Flow installation can be done in two simple steps.
 
     ![](/assets/images/edu/engineer/kit1/engineer_app_1.png)
 
-7. Clic `User` tab.
+7. Click `User` tab.
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_test_01.png)
 
