@@ -13,6 +13,7 @@ product_group: turtlebot3
 page_number: 33
 ---
 
+<div style="counter-reset: h1 21"></div>
 
 # [Manipulation](#manipulation)
 
@@ -28,13 +29,16 @@ page_number: 33
 ![](/assets/images/platform/turtlebot3/manipulation/tb3_with_opm_logo.png)
 
 The OpenMANIPULATOR by ROBOTIS is one of the manipulators that support ROS, and has the advantage of being able to easily manufacture at a low cost by using Dynamixel actuators with 3D printed parts.
-The OpenMANIPULATOR has the advantage of being compatible with TurtleBot3 Waffle and Waffle Pi. Through this compatibility can compensate for the lack of freedom and can have greater completeness as a service robot with the the SLAM and Navigation capabilities that the TurtleBot3 has. TurtleBot3 and OpenMANIPULATOR can be used as a `mobile manipulator` and can do things like the following videos.
-
+The OpenMANIPULATOR has the advantage of being compatible with TurtleBot3 Waffle and Waffle Pi. Through fdsfsdthis compatibility can compensate for the lack of freedom and can have greater completeness as a service robot with the the SLAM and Navigation capabilities that the TurtleBot3 has. TurtleBot3 and OpenMANIPULATOR can be used as a `mobile manipulator` and can do things like the following videos.
+fds
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Qhvk5cnX2hM" frameborder="0" allowfullscreen></iframe>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/P82pZsqpBg0" frameborder="0" allowfullscreen></iframe>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/DLOq8yNcCoE" frameborder="0" allowfullscreen></iframe>
+
+The contents in e-Manual may differ from contents of a provided video in e-Manaul as e-Manual is updated on a regular basis.
+{: .notice--warning} 
 
 ## [Software Setup](#software-setup)
 
@@ -158,7 +162,8 @@ $ ros2 launch turtlebot3_navigation2 navigation2.launch.py map:=$HOME/map.yaml
 
 ## [Simulation](#simulation)
 
-It will be released soon ! 
+It will be released soon !
+{: .notice--info} 
 
 <!-- - Load TurtleBot3 with OpenMANIPULATOR on Gazebo simulator and click `Play` button
 
@@ -242,6 +247,7 @@ $ rostopic pub /om_with_tb3/joint4_position/command std_msgs/Float64 "data: -0.2
 ## [Pick and Place](#pick-and-place)
 
 It will be released soon ! 
+{: .notice--info}
 
 <!-- ```bash
 

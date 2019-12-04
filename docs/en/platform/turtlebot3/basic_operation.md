@@ -30,6 +30,9 @@ page_number: 15
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Z4s18hlazb4" frameborder="0" allowfullscreen></iframe>
 
+The contents in e-Manual may differ from contents of a provided video in e-Manaul as e-Manual is updated on a regular basis.
+{: .notice--warning} 
+
 ## [Basic Examples](#basic-examples)
 - [Basic Examples][basic_examples]: It contains various basic examples such as the following.
   - Move using Interative Marker on RViz
@@ -38,6 +41,9 @@ page_number: 15
   - Move to custom routes
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Xg1pKFQY5p4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+The contents in e-Manual may differ from contents of a provided video in e-Manaul as e-Manual is updated on a regular basis.
+{: .notice--warning} 
 
 ## [Additional Sensors](#additional-sensors)
 - [Additional Sensors][additional_sensors]: Let's use IR sensor, ultrasonic sensor, switch, etc. in OpenCR of TurtleBot3.

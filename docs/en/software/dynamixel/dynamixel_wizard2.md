@@ -44,10 +44,14 @@ The following features are provided with DYNAMIXEL Wizard 2.0.
 
 ## [Supported OS](#supported-os)
 
-- Windows 7 / 8 / 10
-- Ubuntu 16 / 18
-- Mac OS X (10.11 El Capitan or above)
+- Windows 7 / 8.1 / 10 (32 bit and 64 bit)
+- Linux 
+  - Ubuntu 18.04 (64 bit)
+  - Ubuntu 16.04 (64 bit)
+- macOS 10.12, 10.13, 10.14 (64bit)
 
+**WARNING**: Any OS installed on ARM CPU, such as Raspberry Pi, is not supported.
+{: .notice--warning}
 
 ## [Definition of Firmware](#definition-of-firmware)
 

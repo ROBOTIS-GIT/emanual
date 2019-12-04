@@ -44,9 +44,14 @@ sidebar:
 
 ## [지원 운영체제](#지원-운영체제)
 
-- Windows 7 / 8 / 10
-- Ubuntu 16 / 18
-- Mac OS X (10.11 El Capitan or above)
+- Windows 7 / 8.1 / 10 (32 bit and 64 bit)
+- Linux 
+  - Ubuntu 18.04 (64 bit)
+  - Ubuntu 16.04 (64 bit)
+- macOS 10.12, 10.13, 10.14 (64bit)
+
+**경고**: 라즈베리파이 및 ARM 기반의 CPU는 다이나믹셀 위자드 2.0을 지원하지않습니다.
+{: .notice--warning}
 
 ## [펌웨어 정의](#펌웨어-정의)
 

@@ -17,6 +17,9 @@ page_number: 37
 
 # [Locomotion](#locomotion)
 
+The contents in e-Manual may differ from contents of a provided video in e-Manaul as e-Manual is updated on a regular basis.
+{: .notice--warning} 
+
 In the video, watch how TurtleBot3 can be assembled and reassembled with a few additional parts. The waffle plate which is the biggest part among TurtleBot3 components can be assembled in various sizes and shapes, thanks to its diverse holes for bolts and nuts.
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/o9d7NVC0A1Y" frameborder="0" allowfullscreen></iframe>
@@ -61,8 +64,6 @@ With this openended component, handful of TurtleBot3 friends with various charac
 | 3D printing parts(HV Converter)                             | 4        | None                      | None     | [Onshape](https://cad.onshape.com/documents/f369a265c003df3767a37472/w/42e27bfc98b5e204f5a483fe/e/5b993b12303647b7aa5484f2)                                                            |
 
 [BOM spreadsheets](https://docs.google.com/spreadsheets/d/1vbIFMRJMbyOd2D6BtwV1Ow_yBc9xRHktqZhTTmwI_l4/edit#gid=368658157)  
- 
-
 
 ![](/assets/images/platform/turtlebot3/friends/All_friends.jpg)
 
@@ -74,7 +75,6 @@ With this openended component, handful of TurtleBot3 friends with various charac
 
   **NOTE**: Any suggestions and ideas for TurtleBot3 Friends Project are always welcomed. Tell us about your creative TurtleBot3 Friends. We can introduce your friend to the world through this wiki page! E-Mail: ost@robotis.com :)
   {: .notice--info}
-
 
 ## [TurtleBot3 Friends: Car](#turtlebot3-friends-car)
 
@@ -88,7 +88,6 @@ With this openended component, handful of TurtleBot3 friends with various charac
   <iframe width="640" height="360" src="https://www.youtube.com/embed/IkPexspUgKk" frameborder="0" allowfullscreen></iframe>
 
   <iframe width="640" height="360" src="https://www.youtube.com/embed/1V33iEu4ylw" frameborder="0" allowfullscreen></iframe>
-
 
 ## [TurtleBot3 Friends: OpenManipulator](#turtlebot3-friends-openmanipulator)
 
@@ -164,7 +163,6 @@ With this openended component, handful of TurtleBot3 friends with various charac
 
   <iframe width="640" height="360" src="https://www.youtube.com/embed/UqdwGLH1-cA" frameborder="0" allowfullscreen></iframe>
 
-
 ## [TurtleBot3 Friends: Tank](#turtlebot3-friends-tank)
 
 ![](/assets/images/platform/turtlebot3/friends/friends_tank.png)
@@ -178,7 +176,6 @@ With this openended component, handful of TurtleBot3 friends with various charac
 - **Video**:
 
   <iframe width="640" height="360" src="https://www.youtube.com/embed/vndnwpVEpVE" frameborder="0" allowfullscreen></iframe>
-
 
 ## [TurtleBot3 Friends: Omni](#turtlebot3-friends-omni)
 
@@ -194,7 +191,6 @@ With this openended component, handful of TurtleBot3 friends with various charac
 
   <iframe width="640" height="360" src="https://www.youtube.com/embed/r8wRACM_ZbE" frameborder="0" allowfullscreen></iframe>
 
-
 ## [TurtleBot3 Friends: Mecanum](#turtlebot3-friends-mecanum)
 
 ![](/assets/images/platform/turtlebot3/friends/friends_mecanum.png)
@@ -207,7 +203,6 @@ With this openended component, handful of TurtleBot3 friends with various charac
 - **Software**: `Examples` → `turtlebot3` → `turtlebot3_friends` → `turtlebot3_mechanum`
 - **Video**: See in the video [TurtleBot3 Friends: Omni](#turtlebot3-friends-omni) above.
 
-
 ## [TurtleBot3 Friends: Bike](#turtlebot3-friends-bike)
 
 ![](/assets/images/platform/turtlebot3/friends/friends_bike.png)
@@ -219,7 +214,6 @@ With this openended component, handful of TurtleBot3 friends with various charac
 - Hardware ([Onshape](http://www.robotis.com/service/download.php?no=686), [Thingiverse](https://www.thingiverse.com/thing:3069817))
 - **Software**: `Examples` → `turtlebot3` → `turtlebot3_friends` → `turtlebot3_bike`
 - **Video**: See in the videos [TurtleBot3 Friends: Car](#turtlebot3-friends-car) and [TurtleBot3 Friends: monster](#turtlebot3-friends-monster) above.
-
 
 ## [TurtleBot3 Friends: Road Train](#turtlebot3-friends-road-train)
 
@@ -234,7 +228,6 @@ With this openended component, handful of TurtleBot3 friends with various charac
 - **Video**:
 
   <iframe width="640" height="360" src="https://www.youtube.com/embed/uhkq1w4YoEE" frameborder="0" allowfullscreen></iframe>
-
 
 ## [TurtleBot3 Friends: Real TurtleBot](#turtlebot3-friends-real-turtlebot)
 
@@ -267,6 +260,5 @@ With this openended component, handful of TurtleBot3 friends with various charac
   <iframe width="560" height="315" src="https://www.youtube.com/embed/5NYdgnzxykc" frameborder="0" allowfullscreen></iframe>
 
   <iframe width="560" height="315" src="https://www.youtube.com/embed/u7qb8xiSiNg" frameborder="0" allowfullscreen></iframe>
-
 
 [BOM]: /docs/en/popup/turtlebot3_bom

@@ -16,6 +16,10 @@ page_number: 25
 <div style="counter-reset: h1 13"></div>
 
 # [Machine Learning](#machine-learning)
+
+The contents in e-Manual may differ from contents of a provided video in e-Manaul as e-Manual is updated on a regular basis.
+{: .notice--warning} 
+
 Machine learning is a data analysis technique that teaches computers to recognize what is natural for people and animals - learning through experience. There are three types of machine learning: supervised learning, unsupervised learning, reinforcement learning.
 
 This application is reinforcement learning with DQN (Deep Q-Learning). The reinforcement learning is concerned with how software agents ought to take actions in an environment so as to maximize some notion of cumulative reward.
