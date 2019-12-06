@@ -136,7 +136,7 @@ $ ros2 run turtlebot3_manipulation_teleop turtlebot3_manipulation_teleop_keyboar
 ```
 
 3. Manipulate OpenMANIPULATOR-X on TurtleBot3 using the virtual controller. 
-
+  - You can simply type the keys without using an **Enter** key. 
     ```bash
     ---------------------------
     Control TurtleBot3 + OpenManipulatorX
