@@ -108,7 +108,7 @@ Be sure to read [Bringup](/docs/en/platform/turtlebot3/ros2_bringup/#bringup) ma
 **[TurtleBot3]** Launch rpicamera node
 ```bash
 $ ROS_NAMESPACE=om_with_tb3 roslaunch turtlebot3_bringup turtlebot3_rpicamera.launch
-``` -->
+``` -->/docs/en/platform/turtlebot3/ros2_manipulation/
 
 ## [SLAM](#slam)
 
@@ -135,8 +135,8 @@ $ ros2 launch turtlebot3_cartographer cartographer.launch.py
 $ ros2 run turtlebot3_manipulation_teleop turtlebot3_manipulation_teleop_keyboard
 ```
 
-3. Manipulate OpenMANIPULATOR-X on TurtleBot3 using the virtual controller. 
-  - You can simply type the keys without using an **Enter** key. 
+3. Manipulate OpenMANIPULATOR-X on TurtleBot3 using the virtual controller. Simply type the keys without using an **Enter** key. 
+    
     ```bash
     ---------------------------
     Control TurtleBot3 + OpenManipulatorX
