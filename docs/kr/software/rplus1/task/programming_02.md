@@ -106,9 +106,9 @@ sidebar:
 0 ~ 최대값 (최대값은 사용자가 0 ~ 255 사이의 값으로 설정할 수 있음) 사이의 임의의 숫자를 생성합니다.
 
 #### 사용 가능 제어기
-- [CM-150](/docs/kr/parts/controller/cm-150.md)
-- [CM-200](/docs/kr/parts/controller/cm-200.md)
-- [OpenCm9.04](/docs/kr/parts/controller/opencm9.04.md)
+- [CM-150](/docs/kr/parts/controller/cm-150)
+- [CM-200](/docs/kr/parts/controller/cm-200)
+- [OpenCm9.04](/docs/kr/parts/controller/opencm9.04)
 
 #### 파라미터 특성
 - 0 ~ 최대값 사이의 임의의 숫자를 생성합니다.
@@ -1799,16 +1799,16 @@ LED 모듈의 왼쪽과 오른쪽 LED 를 ON/OFF 하거나 현재 상태를 읽�
 숫자를 기억하고 있어야 하는 경우나 특정 상황에 따라 값을 바꾸어야 하는 경우, 혹은 공통된 값을 한꺼번에 변경해야 할 경우에 유용합니다.
 
 [서보모터 부품]: /docs/kr/parts/motor/servo_motor/
-[CM-100]: /docs/kr/parts/controller/cm-100.md
-[CM-100A]: /docs/kr/parts/controller/cm-100.md
-[CM-150]: /docs/kr/parts/controller/cm-150.md
-[CM-200]: /docs/kr/parts/controller/cm-200.md
-[CM-5]: /docs/kr/parts/controller/cm-5.md
-[CM-510]: /docs/kr/parts/controller/cm-510.md
-[CM-530]: /docs/kr/parts/controller/cm-530.md
-[CM-700]: /docs/kr/parts/controller/cm-700.md
-[CM-700]: /docs/kr/parts/controller/cm-700.md
-[OpenCm9.04]: /docs/kr/parts/controller/opencm9.04.md
+[CM-100]: /docs/kr/parts/controller/cm-100
+[CM-100A]: /docs/kr/parts/controller/cm-100
+[CM-150]: /docs/kr/parts/controller/cm-150
+[CM-200]: /docs/kr/parts/controller/cm-200
+[CM-5]: /docs/kr/parts/controller/cm-5
+[CM-510]: /docs/kr/parts/controller/cm-510
+[CM-530]: /docs/kr/parts/controller/cm-530
+[CM-700]: /docs/kr/parts/controller/cm-700
+[CM-700]: /docs/kr/parts/controller/cm-700
+[OpenCm9.04]: /docs/kr/parts/controller/opencm9.04
 [제어기별 연결장치]: /docs/kr/parts/controller/controller_compatibility/
 
 [code]: /assets/images/sw/rplus1/task/roboplus_task_014.png

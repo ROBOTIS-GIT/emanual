@@ -1792,13 +1792,13 @@ RoboPlus Task를 이용하여 코드를 작성하고 화면 출력 기능으로 
 [제스처 인식 예제 3]: /assets/images/sw/rplus1/task/parameter_37.gif
 [select_controller]: /assets/images/sw/rplus1/task/controler_select.png
 
-[CM-100]: /docs/kr/parts/controller/cm-100.md
-[CM-100A]: /docs/kr/parts/controller/cm-100.md
-[CM-150]: /docs/kr/parts/controller/cm-150.md
-[CM-200]: /docs/kr/parts/controller/cm-200.md
-[CM-5]: /docs/kr/parts/controller/cm-5.md
-[CM-510]: /docs/kr/parts/controller/cm-510.md
-[CM-530]: /docs/kr/parts/controller/cm-530.md
-[CM-700]: /docs/kr/parts/controller/cm-700.md
-[CM-700]: /docs/kr/parts/controller/cm-700.md
-[OpenCm9.04]: /docs/kr/parts/controller/opencm9.04.md
+[CM-100]: /docs/kr/parts/controller/cm-100
+[CM-100A]: /docs/kr/parts/controller/cm-100
+[CM-150]: /docs/kr/parts/controller/cm-150
+[CM-200]: /docs/kr/parts/controller/cm-200
+[CM-5]: /docs/kr/parts/controller/cm-5
+[CM-510]: /docs/kr/parts/controller/cm-510
+[CM-530]: /docs/kr/parts/controller/cm-530
+[CM-700]: /docs/kr/parts/controller/cm-700
+[CM-700]: /docs/kr/parts/controller/cm-700
+[OpenCm9.04]: /docs/kr/parts/controller/opencm9.04
