@@ -242,7 +242,7 @@ xc430-w240:
 2xc430-w250:
   mcu:                *mcu
   encoder:            "Contactless absolute encoder (12Bit, 360 [&deg;])<br />Maker : ams(www.ams.com), Part No : AS5601"
-  motor:              "Cored"
+  motor:              "Coreless"
   baudrate:           *baudrate
   control:            *control
   resolution:         *resolution
