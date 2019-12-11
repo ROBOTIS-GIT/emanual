@@ -16,12 +16,9 @@ sidebar:
 ## Overview
 This chapter explains installation and configuration of Robot Operating System(ROS) for ROBOTIS-OP3. Also, common ROS Packages and developed ROS Packages will be introduced.  
 
-
-
 ## [What is ROS?]
 
 ![](/assets/images/platform/op3/ros_image.png)
-
 
 ## How to install ROS
  - version : Kinetic  
@@ -38,7 +35,6 @@ This chapter explains installation and configuration of Robot Operating System(R
       ```
       in the step of [`Setup your sources.list`]
 
-
 ## SetUp
 ### ROS Environment Setting
 > Reference : [http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment]
@@ -54,15 +50,15 @@ This chapter explains installation and configuration of Robot Operating System(R
 
   2. Append below contents at the end of the `.bashrc` file.  
      ```bash    
-      Set ROS Kinetic
+     # Set ROS Kinetic
      source /opt/ros/kinetic/setup.bash
      source ~/catkin_ws/devel/setup.bash
 
      #### Set ROS Network ####
-      ROS Master(localhost)
+     # ROS Master(localhost)
      export ROS_MASTER_URI=http://10.41.0.1:11311
 
-      local ROS IP
+     # local ROS IP
      export ROS_IP=10.41.0.1
      ```
 
@@ -87,7 +83,7 @@ This chapter explains installation and configuration of Robot Operating System(R
  7. [ROBOTIS-OP3-Demo]  
  8. [ROBOTIS-OP3-msgs]  
  9. [ROBOTIS-OP3-Tools]  
- 10. ROBOTIS-Utility
+ 10. [ROBOTIS-Utility]
 
 
 ## Additional ROS Package
@@ -129,6 +125,7 @@ This chapter explains installation and configuration of Robot Operating System(R
 [ROBOTIS-OP3-msgs]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-msgs
 [ROBOTIS-OP3-Tools]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-tools
 [ROBOTIS-OP3-Common]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-common
+[ROBOTIS-Utility]: https://github.com/ROBOTIS-GIT/ROBOTIS-Utility
 [http://wiki.ros.org/robot_upstart]: http://wiki.ros.org/robot_upstart
 [How to setup auto start]: OP3-How-to-kill-the-demo-program#31-start-demo-program-on-start
 [http://wiki.ros.org/usb_cam]: http://wiki.ros.org/usb_cam
