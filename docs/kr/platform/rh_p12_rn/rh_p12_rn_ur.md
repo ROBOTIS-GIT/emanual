@@ -20,7 +20,7 @@ product_group: rh_p12_rn_ur
 
 {% capture manual_01 %}
 **RH-P12-RN-UR 전용 매뉴얼은 아래의 첨부된 링크에서 다운로드 가능합니다.**
-- [사용자 매뉴얼](http://www.robotis.com/service/download.php?no=1886) 
+- [사용자 매뉴얼](http://www.robotis.com/service/download.php?no=1886)
 {% endcapture %}
 <div class="notice--warning">{{ manual_01 | markdownify }}</div>
 
@@ -28,6 +28,6 @@ product_group: rh_p12_rn_ur
 
 {% capture manual_02 %}
 **RH-P12-RN-UR 소프트웨어는 아래의 첨부된 링크에서 다운로드 가능합니다.**
-- [URCap](http://www.robotis.com/service/download.php?no=1883)
+- [URCap](https://www.robotis.com/service/download.php?no=1904)
 {% endcapture %}
 <div class="notice--warning">{{ manual_02 | markdownify }}</div>
