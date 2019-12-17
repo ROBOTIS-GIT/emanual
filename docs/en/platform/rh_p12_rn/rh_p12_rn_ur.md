@@ -18,13 +18,13 @@ product_group: rh_p12_rn_ur
 ## [User Manual](#user_manual)
 {% capture manual_01 %}
 **Download the User Manual of RH-P12-RN-UR at the direct download link.**
-- [User Manual](http://www.robotis.com/service/download.php?no=1887) 
+- [User Manual](http://www.robotis.com/service/download.php?no=1887)
 {% endcapture %}
 <div class="notice--warning">{{ manual_01 | markdownify }}</div>
 
 ## [Software](#software)
 {% capture manual_02 %}
 **Download the exclusive software of RH-P12-RN-UR at the direct download link.**
-- [URCap](http://www.robotis.com/service/download.php?no=1883)
+- [URCap](https://www.robotis.com/service/download.php?no=1904)
 {% endcapture %}
 <div class="notice--warning">{{ manual_02 | markdownify }}</div>

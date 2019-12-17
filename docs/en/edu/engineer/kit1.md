@@ -654,8 +654,11 @@ Tensor Flow installation can be done in two simple steps.
 2. Lastly, Copy the following command and paste it in Command Prompt to install Tensor Flow.
 
     ``` posh
-    pip install tensorflow
+    pip install tensorflow==1.13.1
     ```
+    
+    **WARNING:** Be sure to install tensorflow 1.13.1. Otherwise, it may cause unexpected errors.  
+    {: .notice--warning}
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_05.png)
 
