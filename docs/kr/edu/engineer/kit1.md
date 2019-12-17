@@ -661,8 +661,11 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
 2. 마지막으로 아래의 명령어를 입력해서 텐서플로우를 설치합니다.
 
     ``` posh
-    pip install tensorflow
+    pip install tensorflow==1.13.1
     ```
+    
+    **주의**: 명시된 버전과 다른 버전을 사용하면, 오류가 발생할 수 있습니다. **1.13.1 버전을 설치하세요.** 
+    {: .notice--warning}
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_05_kr.png)
 
