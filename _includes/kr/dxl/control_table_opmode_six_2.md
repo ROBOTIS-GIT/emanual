@@ -1,5 +1,4 @@
-
-장치의 제어 모드를 설정합니다. 각 제어 모드마다 특성이 다르기 때문에, 구현하려는 시스템에 적합한 제어 모드를 설정하시기 바랍니다.
+장치의 동작 모드를 설정합니다. 각 동작 모드마다 특성이 다르기 때문에, 구현하려는 시스템에 적합한 동작 모드를 설정하시기 바랍니다.
 
 |값|동작 모드| 세부 설명     |
 | :---- | :------------------------------ | :------------------------------------------- |
@@ -12,7 +11,7 @@
 
 
 {% capture group_notice_01 %}
-**참고** : 제어 모드가 변경될 때 제어기의Gain(PID, Feedforward)은 제어 모드에 적합하게 초기화 됩니다. 또한 프로파일 생성기와 제한값들 역시 초기화 됩니다.
+**참고** : 동작 모드가 변경될 때 제어기의Gain(PID, Feedforward)은 동작 모드에 적합하게 초기화 됩니다. 또한 프로파일 생성기와 제한값들 역시 초기화 됩니다.
 1. [Profile Velocity(112)](#profile-velocity112), [Profile Acceleration(108)](#profile-acceleration108) : '0'으로 초기화
 2. [Goal PWM(100)](#goal-pwm100), [Goal Current(102)](#goal-current102) : [PWM Limit(36)](#pwm-limit36), [Current Limit(38)](#current-limit38)으로 초기화
 3. 전류기반 위치 제어 모드 : 별도의 Position Gain(PID)과 [PWM Limit(36)](#pwm-limit36) 값으로 재설정 됩니다.  
@@ -26,3 +25,5 @@
 
 **참고** : PWM이란 Pulse Width Modulation(펄스 폭 변조)의 약자로 펄스의 폭(PWM Duty)을 변경시키는 변조방식을 뜻합니다. 모터 제어 분야에서는 펄스의 폭을 변경하여 모터에 공급되는 평균 전압을 제어하는 용도로 폭넓게 사용되고 있습니다. 따라서 PWM 제어 모드는 [Goal PWM(100)]을 이용하여 모터에 공급되는 전압을 제어하는 제어 방식을 뜻합니다. PWM 모드는 다이나믹셀 AX, RX 시리즈의 바퀴모드와 유사합니다.
 {: .notice}
+
+{% include kr/dxl/control_table_opmode_note.md %}

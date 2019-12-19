@@ -17,3 +17,5 @@ Goal Position(116)을 통해 목표위치를 설정할 수 있습니다. 모든 
 위치 제어 모드의 경우, Goal Position(116)이 업데이트되면 Profile Velocity(112)와 [Profile Acceleration(108)]에 의해서 프로파일이 생성됩니다.  
 속도 제어 모드의 경우, Goal Velocity(104)가 업데이트되면, [Profile Acceleration(108)]에 의해서 프로파일이 생성됩니다.
 {: .notice}
+
+{% include kr/dxl/control_table_opmode_note.md %}

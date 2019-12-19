@@ -12,3 +12,5 @@ Homing Offset(20)에 의해 초기화 되는 값은 변경될 수 있습니다.
 <div class="notice">
   {{ present_pos_notice_01 | markdownify }}
 </div>
+
+{% include kr/dxl/control_table_opmode_note.md %}

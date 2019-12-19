@@ -11,3 +11,5 @@ Reset [Present Position(132)](#present-position132) value can be affected by [Ho
 <div class="notice">
   {{ present_pos_notice_01 | markdownify }}
 </div>
+
+{% include en/dxl/control_table_opmode_note.md %}

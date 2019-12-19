@@ -16,3 +16,8 @@ Desired position can be set with Goal Position(116). From the front view of Dyna
 In Position Control Mode, Profile Velocity(112) and [Profile Acceleration(108)] are used to create a new profile when Goal Position(116) is updated.  
 In Velocity Control Mode, [Profile Acceleration(108)] is used to create a new profile when Goal Velocity(104) is updated.
 {: .notice}
+
+**NOTE** : When turning off the power supply or changing Operation Mode on Extended Position Control Mode, the value of Present Position is reset to the absolute position value of single turn .
+{: .notice}
+
+{% include en/dxl/control_table_opmode_note.md %}

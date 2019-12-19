@@ -1,5 +1,5 @@
 
-장치의 제어 모드를 설정합니다. 각 제어 모드마다 특성이 다르기 때문에, 구현하려는 시스템에 적합한 제어 모드를 설정하시기 바랍니다.
+장치의 동작 모드를 설정합니다. 각 동작 모드마다 특성이 다르기 때문에, 구현하려는 시스템에 적합한 동작 모드를 설정하시기 바랍니다.
 
 |값|동작모드|설명|
 | :---: | :---: | :--- |
@@ -9,7 +9,7 @@
 |16|PWM 제어 모드<br />(Voltage Control Mode)|PWM 출력을 직접 제어합니다. (Voltage Control Mode)|
 
 {% capture opmode_notice_01 %}
-**참고** : 제어 모드가 변경될 때 제어기의Gain(PID, Feedforward)은 제어 모드에 적합하게 초기화 됩니다. 또한 프로파일 생성기와 제한값들 역시 초기화 됩니다.
+**참고** : 동작 모드가 변경될 때 제어기의Gain(PID, Feedforward)은 동작 모드에 적합하게 초기화 됩니다. 또한 프로파일 생성기와 제한값들 역시 초기화 됩니다.
 1. [Profile Velocity(112)](#profile-velocity112), [Profile Acceleration(108)](#profile-acceleration108) : '0'으로 초기화
 2. [Goal PWM(100)](#goal-pwm100) : [PWM Limit(36)](#pwm-limit36)으로 초기화
 {% endcapture %}
@@ -26,3 +26,5 @@
 <div class="notice">
   {{ opmode_notice_02 | markdownify }}
 </div>
+
+{% include kr/dxl/control_table_opmode_note.md %}
