@@ -12,3 +12,5 @@ Reset value of Present Position(580) can be affected by Homing Offset(20).
 {% endcapture %}
 
 <div class="notice">{{ present_pos_notice_01 | markdownify }}</div>
+
+{% include en/dxl/control_table_opmode_note.md %}

@@ -27,3 +27,5 @@ The PWM Control Mode changes pulse width to control average supply voltage to th
 Therefore, PWM Control Mode uses [Goal PWM(100)] value to control supply voltage for DYNAMIXEL.  
 PWM Control Mode is similar to the Wheel Mode of DYNAMIXEL AX and RX series.
 {: .notice}
+
+{% include en/dxl/control_table_opmode_note.md %}
