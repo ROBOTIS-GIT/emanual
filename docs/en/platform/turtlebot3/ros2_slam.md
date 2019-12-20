@@ -20,7 +20,12 @@ page_number: 30
 {% capture notice_01 %}
 **NOTE**: 
 - This instructions were tested on `Ubuntu 18.04` and `ROS2 Dashing Diademata`.
+<<<<<<< Updated upstream
 - Make sure to run the [ROS2 Bringup](/docs/en/platform/turtlebot3/ros2_bringup/#bringup) instructions before running the instructions below.
+=======
+- This instructions are supposed to be running on the remote PC. Please run the instructions below on your **Remote PC**.
+- Make sure to run the [ROS2 Bringup](/docs/en/platform/turtlebot3/ros2_bringup/#bringup) instruction before use of the instruction.
+>>>>>>> Stashed changes
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
       

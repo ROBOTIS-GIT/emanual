@@ -154,7 +154,7 @@ Even if you can't find any DYNAMIXEL, please check firmware to use ROBOTIS softw
 **NOTE**:
 - The below instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - Make sure ROS dependencies are installed before performing these instructions. - [Install ROS Packages](/docs/en/platform/openmanipulator_x/ros_setup/#install-ros-packages).
-- Make sure to run the [OpenMANIPULATOR-X controller](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) instructions before running the instructions below.
+- Make sure to run the [OpenMANIPULATOR-X controller](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) instructions before use of the instruction
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -476,7 +476,7 @@ You can change each joint by GUI, if the user launch only RViz by executing the 
 **NOTE**:
 - The test is done on `ROS Kinetic Kame` installed in `Ubuntu 16.04`.
 - Make sure ROS dependencies are installed before performing these instructions - [Install ROS Packages](/docs/en/platform/openmanipulator_x/ros_setup/#install-ros-packages)
-- Make sure to run the [OpenMANIPULATOR-X controller](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) instructions before running the instructions below.
+- Make sure to run the [OpenMANIPULATOR-X controller](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) instructions before use of the instruction
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
