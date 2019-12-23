@@ -37,7 +37,9 @@ $ cd ~/robotis_ws/src
 $ git clone https://github.com/ROBOTIS-GIT/turtlebot3_applications.git
 $ cd ~/robotis_ws && colcon build --symlink-install
 ```
+
 <!-- 
+
 ## [TurtleBot Follower Demo](#turtlebot-follower-demo)
 
 {% capture notice_02 %}
@@ -87,7 +89,9 @@ $ ros2 launch turtlebot3_bringup robot.launch.py
 $ ros2 launch turtlebot3_follower turtlebot3_follower.launch.py
 ```
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/w9YTxZVY6yQ" frameborder="0" allowfullscreen></iframe> -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/w9YTxZVY6yQ" frameborder="0" allowfullscreen></iframe> 
+    
+-->
 
 ## [Automatic Parking](#automatic-parking)
 
