@@ -15972,13 +15972,13 @@ turtlebot3:
         children:
           - title: "ROS packages for Gazebo"
             url: /platform/turtlebot3/ros2_simulation/#ros-packages-for-gazebo                                                     
-  - title: "[ROS2] Manipulation"
+  - title: "[ROS 2] Manipulation"
     url: /platform/turtlebot3/ros2_manipulation/
-  - title: "[ROS2] Autonomous Driving"
+  - title: "[ROS 2] Autonomous Driving"
     url: /platform/turtlebot3/ros2_autonomous_driving/
-  - title: "[ROS2] Machine Learning"
+  - title: "[ROS 2] Machine Learning"
     url: /platform/turtlebot3/ros2_machine_learning/
-  - title: "[ROS2] Applications"
+  - title: "[ROS 2] Applications"
     url: /platform/turtlebot3/ros2_applications/
   - title: "Locomotion"
     url: /platform/turtlebot3/locomotion/#locomotion
