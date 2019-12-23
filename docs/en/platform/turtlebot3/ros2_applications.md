@@ -20,11 +20,11 @@ page_number: 36
 {% capture notice_01 %}
 **NOTE**:
 - This instructions were tested on `Ubuntu 18.04` and `ROS 2 Dashing Diademata`.
-- Make sure to run the [Bringup](/docs/en/platform/turtlebot3/bringup/#bringup) instruction before use of the instruction.
+- Make sure to run the [Bringup](/docs/en/platform/turtlebot3/ros2_bringup/#bringup) instruction before use of the instruction.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-This chapter shows some demos using TurtleBot3. In order to implement these demos, install the turtlebot3_applications package.
+This chapter shows some demos using TurtleBot3. In order to implement these demos, install the turtlebot3_applications package by following the given instructions.
 
 **[Remote PC]** 
 
