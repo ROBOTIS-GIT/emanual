@@ -9,7 +9,6 @@
 |  5  |  전류기반 위치제어 모드  |  위치와 전류(토크)를 제어합니다.<br />동작 범위는 총 512회전(-256 ~ 256[rev]) 입니다.<br />위치와 전류를 동시에 제어할 필요가 있는 다관절 로봇이나 그리퍼에 유용합니다.  |
 |  16  |  PWM 제어 모드 (Voltage Control Mode)  |  PWM 출력을 직접 제어합니다. (Voltage Control Mode)  |
 
-
 {% capture group_notice_01 %}
 **참고** : 동작 모드가 변경될 때 제어기의Gain(PID, Feedforward)은 동작 모드에 적합하게 초기화 됩니다. 또한 프로파일 생성기와 제한값들 역시 초기화 됩니다.
 1. [Profile Velocity(112)](#profile-velocity112), [Profile Acceleration(108)](#profile-acceleration108) : '0'으로 초기화
@@ -18,12 +17,13 @@
 
 변경된 Position Gain(PID)과 [PWM Limit(36)](#pwm-limit36) 값은 컨트롤테이블을 통해서 확인할 수 있습니다.
 {% endcapture %}
+<div class="notice">{{ group_notice_01 | markdownify }}</div>
 
-<div class="notice">
-  {{ group_notice_01 | markdownify }}
-</div>
-
-**참고** : PWM이란 Pulse Width Modulation(펄스 폭 변조)의 약자로 펄스의 폭(PWM Duty)을 변경시키는 변조방식을 뜻합니다. 모터 제어 분야에서는 펄스의 폭을 변경하여 모터에 공급되는 평균 전압을 제어하는 용도로 폭넓게 사용되고 있습니다. 따라서 PWM 제어 모드는 [Goal PWM(100)]을 이용하여 모터에 공급되는 전압을 제어하는 제어 방식을 뜻합니다. PWM 모드는 다이나믹셀 AX, RX 시리즈의 바퀴모드와 유사합니다.
-{: .notice}
+{% capture opmode_notice_02 %}
+**참고** : PWM이란 Pulse Width Modulation(펄스 폭 변조)의 약자로 펄스의 폭(PWM Duty)을 변경시키는 변조방식을 뜻합니다. 펄스의 폭을 변경하여 모터에 공급되는 평균 전압을 제어하는 용도로 사용됩니다.
+- PWM 모드는 다이나믹셀 DYNAMIXEL [AX](/docs/kr/dxl/ax/ax-12w/#cw-compliance-margin) 및 [RX](/docs/kr/dxl/rx/rx-10/#moving-speed-32) 시리즈의 바퀴모드와 유사합니다.
+- [Goal PWM(100)](#goal-pwm100)을 이용하여 모터에 공급되는 전압을 제어하세요.
+{% endcapture %}
+<div class="notice">{{ opmode_notice_02 | markdownify }}</div>
 
 {% include kr/dxl/control_table_opmode_note.md %}
