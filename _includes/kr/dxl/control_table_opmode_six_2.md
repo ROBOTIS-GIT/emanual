@@ -21,8 +21,8 @@
 
 {% capture opmode_notice_02 %}
 **참고** : PWM이란 Pulse Width Modulation(펄스 폭 변조)의 약자로 펄스의 폭(PWM Duty)을 변경시키는 변조방식을 뜻합니다. 펄스의 폭을 변경하여 모터에 공급되는 평균 전압을 제어하는 용도로 사용됩니다.
-- PWM 모드는 다이나믹셀 DYNAMIXEL [AX](/docs/kr/dxl/ax/ax-12w/#cw-compliance-margin) 및 [RX](/docs/kr/dxl/rx/rx-10/#moving-speed-32) 시리즈의 바퀴모드와 유사합니다.
-- [Goal PWM(100)](#goal-pwm100)을 이용하여 모터에 공급되는 전압을 제어하세요.
+1. PWM 모드는 다이나믹셀 DYNAMIXEL [AX](/docs/kr/dxl/ax/ax-12w/#cw-compliance-margin) 및 [RX](/docs/kr/dxl/rx/rx-10/#moving-speed-32) 시리즈의 바퀴모드와 유사합니다.
+2. [Goal PWM(100)](#goal-pwm100)을 이용하여 모터에 공급되는 전압을 제어하세요.
 {% endcapture %}
 <div class="notice">{{ opmode_notice_02 | markdownify }}</div>
 
