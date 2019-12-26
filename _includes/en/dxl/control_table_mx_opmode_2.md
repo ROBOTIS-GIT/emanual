@@ -16,8 +16,8 @@
 {% capture group_notice_02 %}
 **NOTE** : PWM is the abbreviation for Pulse Width Modulation that modulates PWM Duty to control motors.  
 It changes pulse width to control average supply voltage to the motor and this technique is widely used in the motor control field.  
-- PWM Control Mode is similar to the Wheel Mode of DYNAMIXEL [AX](/docs/en/dxl/ax/ax-12w/#cw-compliance-margin) and [RX](/docs/en/dxl/rx/rx-10/#moving-speed-32) series.
-- Use [Goal PWM(100)](#goal-pwm100) on PWM Control Mode in order to control supply voltage for DYNAMIXEL.  
+1. PWM Control Mode is similar to the Wheel Mode of DYNAMIXEL [AX](/docs/en/dxl/ax/ax-12w/#cw-compliance-margin) and [RX](/docs/en/dxl/rx/rx-10/#moving-speed-32) series.
+2. Use [Goal PWM(100)](#goal-pwm100) on PWM Control Mode in order to control supply voltage for DYNAMIXEL.  
 {% endcapture %}
 <div class="notice">{{ group_notice_02 | markdownify }}</div>
 
