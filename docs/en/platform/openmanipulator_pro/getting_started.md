@@ -90,7 +90,7 @@ Information appearing in a CAUTION concerns the protection of personnel and equi
 - Joint 1 (labeled as “1st”) connects to U2D2 via 4P Cable.
 - U2D2 connects to PC via USB hub.
 - Dynamixel Pro+ is powered from a a power supply via power expansion hub.
-- Joints 5 and 6 (model: H42P-020-S300-R) are not separately powered; instead power comes from the same 4P Cable.
+- Joints 5 and 6 (model: PH42-020-S300-R) are not separately powered; instead power comes from the same 4P Cable.
 
 ### Power Supply
 The OpenMANIPULATOR-PRO requires 24V for operations. Ensure the power supply is capable of supplying 24V and 15A or higher.
@@ -112,5 +112,5 @@ The power cable supplies power to the OpenMANIPULATOR-PRO.
 
 |Model Name|Relationship between angle(deg) and position value|
 |:---:|:---:|
-|H54P-200-S500-R<br />H54P-100-S500-R|-180 ~ 180 (deg) → -501923 ~ 501923<br />![](/assets/images/platform/openmanipulator_pro/h54p_goal_position.png)<br />![](/assets/images/platform/openmanipulator_pro/h54p_goal_angle.png)|
-|H42P-020-S300-R|-180 ~ 180 (deg) → -303750 ~ 303750<br />![](/assets/images/platform/openmanipulator_pro/h42p_goal_position.png)<br />![](/assets/images/platform/openmanipulator_pro/h42p_goal_angle.png)|
+|PH54-200-S500-R<br />PH54-100-S500-R|-180 ~ 180 (deg) → -501923 ~ 501923<br />![](/assets/images/platform/openmanipulator_pro/h54p_goal_position.png)<br />![](/assets/images/platform/openmanipulator_pro/h54p_goal_angle.png)|
+|PH42-020-S300-R|-180 ~ 180 (deg) → -303750 ~ 303750<br />![](/assets/images/platform/openmanipulator_pro/h42p_goal_position.png)<br />![](/assets/images/platform/openmanipulator_pro/h42p_goal_angle.png)|

@@ -42,12 +42,12 @@ Follwing message will be shown in the Terminal after the process done successful
 
 ```
 port_name and baud_rate are set to /dev/ttyUSB0, 1000000 
-Joint Dynamixel ID : 1, Model Name : PRO-PLUS-H54P-200-S500-R
-Joint Dynamixel ID : 2, Model Name : PRO-PLUS-H54P-200-S500-R
-Joint Dynamixel ID : 3, Model Name : PRO-PLUS-H54P-100-S500-R
-Joint Dynamixel ID : 4, Model Name : PRO-PLUS-H54P-100-S500-R
-Joint Dynamixel ID : 5, Model Name : PRO-PLUS-H42P-020-S300-R
-Joint Dynamixel ID : 6, Model Name : PRO-PLUS-H42P-020-S300-R
+Joint Dynamixel ID : 1, Model Name : PRO-PLUS-PH54-200-S500-R
+Joint Dynamixel ID : 2, Model Name : PRO-PLUS-PH54-200-S500-R
+Joint Dynamixel ID : 3, Model Name : PRO-PLUS-PH54-100-S500-R
+Joint Dynamixel ID : 4, Model Name : PRO-PLUS-PH54-100-S500-R
+Joint Dynamixel ID : 5, Model Name : PRO-PLUS-PH42-020-S300-R
+Joint Dynamixel ID : 6, Model Name : PRO-PLUS-PH42-020-S300-R
 [INFO] Succeeded to Initialise OpenManipulator-PRO Controller
 ```
 

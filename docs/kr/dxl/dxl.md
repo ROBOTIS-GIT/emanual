@@ -85,6 +85,6 @@ sidebar:
 
 # [PRO Plus(+) 시리즈](#pro-plus-시리즈)
 
-|H54P-200-S500-R|H54P-100-S500-R|H42P-020-S300-R|
+|PH54-200-S500-R|PH54-100-S500-R|PH42-020-S300-R|
 |:---:|:---:|:---:|
-|[![](/assets/images/dxl/pro_plus/h54p-200-s500-r.png)](/docs/kr/dxl/pro_plus/h54p-200-s500-r/)|[![](/assets/images/dxl/pro_plus/h54p-100-s500-r.png)](/docs/kr/dxl/pro_plus/h54p-100-s500-r/)|[![](/assets/images/dxl/pro_plus/h42p-020-s300-r.png)](/docs/kr/dxl/pro_plus/h42p-020-s300-r/)|
+|[![](/assets/images/dxl/pro_plus/ph54-200-s500-r.png)](/docs/kr/dxl/pro_plus/ph54-200-s500-r/)|[![](/assets/images/dxl/pro_plus/ph54-100-s500-r.png)](/docs/kr/dxl/pro_plus/ph54-100-s500-r/)|[![](/assets/images/dxl/pro_plus/ph42-020-s300-r.png)](/docs/kr/dxl/pro_plus/ph42-020-s300-r/)|

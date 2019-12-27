@@ -43,8 +43,8 @@ Dynamixel Shield  was created to use RC100 and Dynamixel on arduino board. We pr
 | **PRO L** `1`    | [L42-10-S300-R]                | [L54-30-S500-R]                | [L54-30-S400-R]                | [L54-50-S500-R]                | [L54-50-S290-R] |
 | **PRO H(A)**     | [H42-20-S300-R(A)]             | [H54-100-S500-R(A)]            | [H54-200-S500-R(A)]            |                                |                 |
 | **PRO M(A)**     | [M42-10-S260-R(A)]             | [M54-40-S250-R(A)]             | [M54-60-S250-R(A)]             |                                |                 |
-| **PRO+ H**       | [H42P-020-S300-R]              | [H54P-100-S500-R]              | [H54P-100-S500-R]              |                                |                 |
-| **PRO+ M**       | [M54P-060-S250-R]              | [M54P-040-S250-R]              | [M42P-010-S260-R]              |                                |                 |
+| **PRO+ H**       | [PH42-020-S300-R]              | [PH54-100-S500-R]              | [PH54-100-S500-R]              |                                |                 |
+| **PRO+ M**       | [PM54-060-S250-R]              | [PM54-040-S250-R]              | [PM42-010-S260-R]              |                                |                 |
 
 `1` RX, DX, EX, PRO L series require additional configuration in the source code.
 
@@ -303,12 +303,12 @@ bool syncWriteEnd(void);
 [L54-30-S500-R]: /docs/en/dxl/pro/l54-30-s500-r/
 [L54-30-S400-R]: /docs/en/dxl/pro/l54-30-s400-r/
 [L42-10-S300-R]: /docs/en/dxl/pro/l42-10-s300-r/
-[H42P-020-S300-R]: /docs/en/dxl/pro_plus/h42p-020-s300-r/
-[H54P-100-S500-R]: /docs/en/dxl/pro_plus/h54p-100-s500-r/
-[H54P-200-S500-R]: /docs/en/dxl/pro_plus/h54p-200-s500-r/
-[M54P-060-S250-R]: /docs/en/dxl/pro_plus/m54p-060-s250-r/
-[M54P-040-S250-R]: /docs/en/dxl/pro_plus/m54p-040-s250-r/
-[M42P-010-S260-R]: /docs/en/dxl/pro_plus/m42p-010-s260-r/
+[PH42-020-S300-R]: /docs/en/dxl/pro_plus/ph42-020-s300-r/
+[PH54-100-S500-R]: /docs/en/dxl/pro_plus/ph54-100-s500-r/
+[PH54-200-S500-R]: /docs/en/dxl/pro_plus/ph54-200-s500-r/
+[PM54-060-S250-R]: /docs/en/dxl/pro_plus/pm54-060-s250-r/
+[PM54-040-S250-R]: /docs/en/dxl/pro_plus/pm54-040-s250-r/
+[PM42-010-S260-R]: /docs/en/dxl/pro_plus/pm42-010-s260-r/
 
 [Arduino Official Guide]: https://www.arduino.cc/en/Guide/Libraries
 [GitHub repository]: https://github.com/ROBOTIS-GIT/Dynamixel2Arduino
