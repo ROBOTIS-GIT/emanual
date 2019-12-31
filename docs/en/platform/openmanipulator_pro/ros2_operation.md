@@ -27,7 +27,7 @@ page_number: 11
 **NOTE**:
 - The test is done on `ROS 2 Dashing Diademata` installed in `Ubuntu 18.04`.
 - Make sure ROS dependencies are installed before performing these instructions. - [Install ROS 2 Packages](/docs/en/platform/openmanipulator_pro/ros2_setup/#install-ros-2-packages).
-- Make sure to run the [OpenMANIPULATOR-PRO controller](/docs/en/platform/openmanipulator_pro/ros2_controller_package/#launch-controller) instructions before running the instructions below.
+- Make sure to run the [OpenMANIPULATOR-PRO controller](/docs/en/platform/openmanipulator_pro/ros2_controller_package/#launch-controller) instructions before use of the instruction
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 

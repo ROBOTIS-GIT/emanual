@@ -138,7 +138,9 @@ Joint Dynamixel ID : 6, Model Name : PRO-PLUS-PH42-020-S300-R
 - If you can't load DYNAMIXEL, please check your DYNAMIXEL settings by using the following command from DYNAMIXEL-Workbench packages.   
 `rosrun dynamixel_workbench_controllers find_dynamixel /dev/ttyUSB0`  
 if DYNAMIXEL aren't recoginized, please check firmware with ROBOTIS software ([R+ Manager 2.0](/docs/en/software/rplus2/manager/) or [DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/#firmware-update))
-- If you would like to change DYNAMIXEL ID, please check [`open_manipulator_pro.cpp`](https://github.com/ROBOTIS-GIT/open_manipulator/blob/be2859a0506b4e941a19435c0a07562b41768a27/open_manipulator_pro_libs/src/OpenManipulator.cpp#L40) in the open_manipulator_pro_lib folder. The default ID is **11, 12, 13, 14 ,15 and 16** for joints.
+
+- If you would like to change DYNAMIXEL ID, please check [`open_manipulator_pro.cpp`](https://github.com/ROBOTIS-GIT/open_manipulator_pro/blob/master/open_manipulator_pro_libs/src/open_manipulator_pro.cpp) in the open_manipulator_pro_lib folder. The default ID is **11, 12, 13, 14 ,15 and 16** for joints.
+
 {% endcapture %}
 <div class="notice--success">{{ notice_01 | markdownify }}</div>
 
@@ -154,7 +156,7 @@ if DYNAMIXEL aren't recoginized, please check firmware with ROBOTIS software ([R
 - The test is done on `ROS Kinetic Kame` installed in `Ubuntu 16.04`.
 - The test is done on `ROS Melodic Morenia`installed in `Ubuntu 18.04`.
 - Make sure ROS dependencies are installed before performing these instructions - [Install ROS Packages](/docs/en/platform/openmanipulator_pro/ros_setup/#install-ros-packages)
-- Make sure to run the [OpenMANIPULATOR-PRO controller](/docs/en/platform/openmanipulator_pro/ros_controller_package/#launch-controller) instructions before running the instructions below.  
+- Make sure to run the [OpenMANIPULATOR-PRO controller](/docs/en/platform/openmanipulator_pro/ros_controller_package/#launch-controller) instructions before use of the instruction  
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -580,7 +582,7 @@ The user can change each joint by GUI, if the user launch only RViz by executing
 - The test is done on `ROS Kinetic Kame` installed in `Ubuntu 16.04`.
 - The test is done on `ROS Melodic Morenia`installed in `Ubuntu 18.04`.
 - Make sure ROS dependencies are installed before performing these instructions - [Install ROS Packages](/docs/en/platform/openmanipulator_pro/ros_setup/#install-ros-packages) 
-- Make sure to run the [OpenMANIPULATOR-PRO controller](/docs/en/platform/openmanipulator_pro/ros_controller_package/#launch-controller) instructions before running the instructions below.  
+- Make sure to run the [OpenMANIPULATOR-PRO controller](/docs/en/platform/openmanipulator_pro/ros_controller_package/#launch-controller) instructions before use of the instruction  
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 

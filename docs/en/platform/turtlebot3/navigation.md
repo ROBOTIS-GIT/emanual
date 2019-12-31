@@ -25,7 +25,7 @@ page_number: 21
 - This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - This instructions are supposed to be running on the remote PC. Please run the instructions below on your **Remote PC**.
 - The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. The shortcut key for running the terminal is `Ctrl`-`Alt`-`T`.
-- Make sure to run the [Bringup](/docs/en/platform/turtlebot3/bringup/#bringup) instructions before running the instructions below.
+- Make sure to run the [Bringup](/docs/en/platform/turtlebot3/bringup/#bringup) instructions before use of the instruction
 - The navigation uses the a data created in [SLAM](/docs/en/platform/turtlebot3/slam/#slam). Please make sure to have a map data.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>

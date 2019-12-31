@@ -223,7 +223,7 @@ $ roslaunch roslaunch open_manipulator_camera raspicam.launch
 **NOTE**:
 - This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - The `open_manipulator_perceptions` package requires [`ar_track_alvar`](http://wiki.ros.org/ar_track_alvar) package.
-- Make sure to run the [OpenMANIPULATOR-PRO controller](/docs/en/platform/openmanipulator_pro/ros2_controller_package/#launch-controller) instructions before running the instructions below.
+- Make sure to run the [OpenMANIPULATOR-PRO controller](/docs/en/platform/openmanipulator_pro/ros2_controller_package/#launch-controller) instructions before use of the instruction
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -325,7 +325,7 @@ Download the .stl file in the path below and output it to the 3D printer.
 {% capture notice_01 %}
 **NOTE**:
 - This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-- Make sure to run the [OpenMANIPULATOR-PRO controller](/docs/en/platform/openmanipulator_pro/ros2_controller_package/#launch-controller) instructions before running the instructions below.
+- Make sure to run the [OpenMANIPULATOR-PRO controller](/docs/en/platform/openmanipulator_pro/ros2_controller_package/#launch-controller) instructions before use of the instruction
 - Proceed from [Install Camera Package](/docs/en/platform/ros2_openmanipulator_x/ros_applications/#install-camera-package) and [Install AR Marker Package](/docs/en/platform/ros2_openmanipulator_x/ros_applications/#install-ar-marker-package).
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
@@ -433,6 +433,8 @@ There are three commands. Please enter that number in the terminal.
 2. Pick and Place demo. Start: Start the Pick and Place demonstration.
 3. Pick and Place demo. Stop: Stop the Pick and Place demonstration.
 
+-->
+
 ## [Master Slave](#master-slave)
 
 In this example, if the user is holding the master OpenManipulator, the slave OpenManipulator-X moves like master robot. Recording mode allows you to save the trajectory as you move the master OpenManipulator-X and play it back to the slave OpenManipulator.
@@ -471,26 +473,20 @@ Slave OpenManipulator-X moves synchronously with Master OpenManipulator. DYNAMIX
 Run the following command in a terminal window.
 
 ``` bash
-$ cd ~/catkin_ws/src/
-$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_applications.git
-$ cd ~/catkin_ws && catkin_make
+$ cd ~/robotis_ws/src/
+$ git clone -b ros https://github.com/ROBOTIS-GIT/open_manipulator_applications.git
+$ cd ~/robotis_ws && colcon build --symlink-install  
 ```
 If the catkin_make command has been completed without any errors, all the preparations are done.
 
 ### [Execute Example](#execute-example)
-Please, open the terminal window, run roscore as entering following command.
+
+Run **the controller of slave OpenManipulator**. Open the other terminal window and enter the following command in the terminal.      
+`dynamixel_usb_port` is a parameter to set use port to connected with Dynamixel of slave OpenManipulator. It should be set **/dev/ttyUSB@** and it is different from use port of master OpenManipulator.
 
 ``` bash
-$ roscore
+$ ros2 launch open_manipulator_x_controller open_manipulator_x_controller.launch.py  
 ```
-
-After run roscore, Run **the controller of slave OpenManipulator**. Open the other terminal window and enter the following command in the terminal.      
-`dynamixel_usb_port` is a parameter to set use port to connected with DYNAMIXEL of slave OpenManipulator. It should be set **/dev/ttyUSB@** and it is different from use port of master OpenManipulator.
-
-``` bash
-$ roslaunch open_manipulator_controller open_manipulator_controller.launch dynamixel_usb_port:=/dev/ttyUSB0
-```
-
 
 {% capture warning_01 %}
 
@@ -502,66 +498,32 @@ The picture on the below is showing you the ideal pose of OpenMANIPULATOR-X. Ple
 {% endcapture %}
 <div class="notice--warning">{{ warning_01 | markdownify }}</div>
 
+And Open the other terminal window and enter the following command in the terminal. This command is to run **the controller of master OpenManipulator**.     
+`usb_port` is a parameter to set use port to connected with Dynamixel of master OpenManipulator. It should be set **/dev/ttyUSB@** and it is different from use port of slave OpenManipulator.
+
 If the master OpenManipulator-X controller has been launched successfully, the terminal will show the following message.
 
 ```
-SUMMARY
-========
-
-PARAMETERS
- * /open_manipulator/control_period: 0.01
- * /open_manipulator/moveit_sample_duration: 0.05
- * /open_manipulator/planning_group_name: arm
- * /open_manipulator/using_moveit: False
- * /open_manipulator/using_platform: True
- * /rosdistro: kinetic
- * /rosversion: 1.12.14
-
-NODES
-  /
-    open_manipulator (open_manipulator_controller/open_manipulator_controller)
-
-ROS_MASTER_URI=http://localhost:11311
-
-process[open_manipulator-1]: started with pid [23452]
+port_name and baud_rate are set to /dev/ttyUSB0, 1000000 
 Joint Dynamixel ID : 11, Model Name : XM430-W350
 Joint Dynamixel ID : 12, Model Name : XM430-W350
 Joint Dynamixel ID : 13, Model Name : XM430-W350
 Joint Dynamixel ID : 14, Model Name : XM430-W350
 Gripper Dynamixel ID : 15, Model Name :XM430-W350
-[ INFO] [1544509070.096942788]: Succeeded to init /open_manipulator
+[INFO] Succeeded to Initialise OpenManipulator-X Controller
 ```
 
 And Open the other terminal window and enter the following command in the terminal. This command is to run **the controller of master OpenManipulator**.     
 `usb_port` is a parameter to set use port to connected with DYNAMIXEL of master OpenManipulator. It should be set **/dev/ttyUSB@** and it is different from use port of slave OpenManipulator.
 
 ``` bash
-$ roslaunch open_manipulator_master_slave open_manipulator_master.launch usb_port:=/dev/ttyUSB1
+$ ros2 run open_manipulator_x_master_slave open_manipulator_x_master_slave
 ```
 
 If the slave OpenManipulator-X controller has been launched successfully, the terminal will show the following message.
 
 ```
-SUMMARY
-========
-
-PARAMETERS
- * /open_manipulator/open_manipulator_master/gripper_id: 5
- * /open_manipulator/open_manipulator_master/joint1_id: 1
- * /open_manipulator/open_manipulator_master/joint2_id: 2
- * /open_manipulator/open_manipulator_master/joint3_id: 3
- * /open_manipulator/open_manipulator_master/joint4_id: 4
- * /open_manipulator/open_manipulator_master/service_call_period: 0.01
- * /rosdistro: kinetic
- * /rosversion: 1.12.14
-
-NODES
-  /open_manipulator/
-    open_manipulator_master (open_manipulator_master_slave/open_manipulator_master)
-
-ROS_MASTER_URI=http://localhost:11311
-
-process[open_manipulator/open_manipulator_master-1]: started with pid [32026]
+port_name and baud_rate are set to /dev/ttyUSB1, 1000000 
 Joint Dynamixel ID : 1, Model Name : XM430-W350
 Joint Dynamixel ID : 2, Model Name : XM430-W350
 Joint Dynamixel ID : 3, Model Name : XM430-W350
@@ -595,7 +557,7 @@ There are four control modes. Please enter that number in the terminal.
 4. Play Recorded Trajectory: The trajectory recorded in the 2nd mode is reproduced only by the slave robot.
 
 
--->
+
 
 [OpenCR]: /docs/en/parts/controller/opencr10/
 [OpenCR Manual]: /docs/en/parts/controller/opencr10/

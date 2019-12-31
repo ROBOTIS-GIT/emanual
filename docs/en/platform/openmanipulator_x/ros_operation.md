@@ -54,7 +54,7 @@ To create a drawing trajectory with OpenMANIPULATOR-X. First, choose the drawing
 **NOTE**:
 - The test is done on `ROS Kinetic Kame` installed in `Ubuntu 16.04`.
 - Make sure ROS dependencies are installed before performing these instructions - [Install ROS Packages](/docs/en/platform/openmanipulator_x/ros_setup/#install-ros-packages)
-- Make sure to run [OpenMANIPULATOR-X controller](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) instructions before running the instructions below.
+- Make sure to run [OpenMANIPULATOR-X controller](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) instructions before use of the instruction
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 

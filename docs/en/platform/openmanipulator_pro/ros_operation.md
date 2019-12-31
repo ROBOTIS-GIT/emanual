@@ -60,7 +60,7 @@ $ roslaunch open_manipulator_pro_control_gui open_manipulator_pro_control_gui.la
 - The test is done on `ROS Kinetic Kame` installed in `Ubuntu 16.04`.
 - The test is done on `ROS Melodic Morenia`installed in `Ubuntu 18.04`.
 - Make sure ROS dependencies are installed before performing these instructions - [Install ROS Packages](/docs/en/platform/openmanipulator_pro/ros_setup/#install-ros-packages)
-- Make sure to run [OpenMANIPULATOR-PRO controller](/docs/en/platform/openmanipulator_pro/ros-controller-package/#launch-controller) instructions before running the instructions below.
+- Make sure to run [OpenMANIPULATOR-PRO controller](/docs/en/platform/openmanipulator_pro/ros-controller-package/#launch-controller) instructions before use of the instruction
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
