@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/software/dynamixel/dynamixel_sdk/api_reference/java/java_packethandler/
 sidebar:
-  title: DynamixelSDK
+  title: DYNAMIXEL SDK
   nav: "dynamixel_sdk"
 ---
 
@@ -45,14 +45,14 @@ Base functions for packet construction.
 | **[txPacket](#txpacket)**                             | Transmits the packet                                 |
 | **[rxPacket](#rxpacket)**                             | Receives the packet                                  |
 | **[txRxPacket](#txrxpacket)**                         | Transmits and receives the packet                    |
-| **[ping](#ping)**                                     | ping a Dynamixel                                     |
-| **[pingGetModelNum](#pinggetmodelnum)**               | Ping a Dynamixel and get its model number            |
-| **[broadcastPing](#broadcastping)**                   | ping all connected Dynamixels                        |
-| **[getBroadcastPingResult](#getbroadcastpingresult)** | Get IDs of Dynamixels responded by BroadcastPing2    |
+| **[ping](#ping)**                                     | ping DYNAMIXEL                                     |
+| **[pingGetModelNum](#pinggetmodelnum)**               | Ping DYNAMIXEL and get its model number            |
+| **[broadcastPing](#broadcastping)**                   | ping all connected DYNAMIXEL's                        |
+| **[getBroadcastPingResult](#getbroadcastpingresult)** | Get IDs of DYNAMIXEL's responded by BroadcastPing2    |
 | **[action](#action)**                                 | Commands ‘Run’ the Regwritten                        |
 | **[regWrite](#regwrite)**                             | Writes the packets and wait for the ‘Action’ command |
-| **[reboot](#reboot)**                                 | Reboots Dynamixel                                    |
-| **[factoryReset](#factoryreset)**                     | Resets all Dynamixel settings                        |
+| **[reboot](#reboot)**                                 | Reboots DYNAMIXEL                                    |
+| **[factoryReset](#factoryreset)**                     | Resets all DYNAMIXEL settings                        |
 | **[readTx](#readtx)**                                 | Transmits N byte read instruction packet             |
 | **[readRx](#readrx)**                                 | Receives N byte read status packet                   |
 | **[readTxRx](#readtxrx)**                             | Transmits and receives N byte packet                 |
@@ -302,11 +302,11 @@ void ping (int port_num, int protocol_version, byte id)
 |:-----------------|:-----------------|
 | port_num         | Port number      |
 | protocol_version | Protocol version |
-| id               | Dynamixel ID     |
+| id               | DYNAMIXEL ID     |
 
 - Detailed Description
 
-   This function calls either `ping1` or `ping2` function depending on the `protocol_version`. The function uses `pingGetModelNum` without requesting Dynamixel to send its the model number. The communication result and the hardware error are available when the function is terminated.
+   This function calls either `ping1` or `ping2` function depending on the `protocol_version`. The function uses `pingGetModelNum` without requesting DYNAMIXEL to send its the model number. The communication result and the hardware error are available when the function is terminated.
 
 
 ##### pingGetModelNum
@@ -321,11 +321,11 @@ short pingGetModelNum (int port_num, int protocol_version, int id)
 |:-----------------|:-----------------|
 | port_num         | Port number      |
 | protocol_version | Protocol version |
-| id               | Dynamixel ID     |
+| id               | DYNAMIXEL ID     |
 
 - Detailed Description
 
-   This function calls either `pingGetModelNum1` or `pingGetModelNum2` function depending on the `protocol_version`. The function constructs the transmission packet for ping, and stats `txRxPacket`. Then, the function tries to get the model number of the Dynamixel by `readTxRx` function. When it succeeds to receive the packet, it returns the model number. The communication result and the hardware error are available when the function is terminated.
+   This function calls either `pingGetModelNum1` or `pingGetModelNum2` function depending on the `protocol_version`. The function constructs the transmission packet for ping, and stats `txRxPacket`. Then, the function tries to get the model number of the DYNAMIXEL by `readTxRx` function. When it succeeds to receive the packet, it returns the model number. The communication result and the hardware error are available when the function is terminated.
 
 
 ##### broadcastPing
@@ -358,11 +358,11 @@ Boolean getBroadcastPingResult(int port_num, int protocol_version, int id)
 |:-----------------|:-----------------|
 | port_num         | Port number      |
 | protocol_version | Protocol version |
-| id               | Dynamixel ID     |
+| id               | DYNAMIXEL ID     |
 
 - Detailed Description
 
-   This function calls either `getBroadcastPingResult1` or `getBroadcastPingResult2` function depending on the `protocol_version`. The function returns whether #`id` Dynamixel responded by `broadcastPing` function. The function is unavailable in protocol 1.0.
+   This function calls either `getBroadcastPingResult1` or `getBroadcastPingResult2` function depending on the `protocol_version`. The function returns whether #`id` DYNAMIXEL responded by `broadcastPing` function. The function is unavailable in protocol 1.0.
 
 
 ##### action
@@ -376,7 +376,7 @@ void action(int port_num, int protocol_version, int id)
 |:-----------------|:-----------------|
 | port_num         | Port number      |
 | protocol_version | Protocol version |
-| id               | Dynamixel ID     |
+| id               | DYNAMIXEL ID     |
 
 - Detailed Description
 
@@ -394,12 +394,12 @@ void reboot(int port_num, int protocol_version, byte id)
 |:-----------------|:-----------------|
 | port_num         | Port number      |
 | protocol_version | Protocol version |
-| id               | Dynamixel ID     |
+| id               | DYNAMIXEL ID     |
 
 
 - Detailed Description
 
-   This function calls either `reboot1` or `reboot2` function depending on the `protocol_version`. The function constructs the transmission packet with reboot instruction, and starts `txRxPacket`. The function may perform its role when the Dynamixel stops working caused by hardware error. The communication result and the hardware error are available when the function is terminated. The function is unavailable in protocol 1.0.
+   This function calls either `reboot1` or `reboot2` function depending on the `protocol_version`. The function constructs the transmission packet with reboot instruction, and starts `txRxPacket`. The function may perform its role when the DYNAMIXEL stops working caused by hardware error. The communication result and the hardware error are available when the function is terminated. The function is unavailable in protocol 1.0.
 
 
 ##### factoryReset
@@ -414,12 +414,12 @@ void factoryReset(int port_num, int protocol_version, byte id, byte option)
 |:-----------------|:-----------------|
 | port_num         | Port number      |
 | protocol_version | Protocol version |
-| id               | Dynamixel ID     |
+| id               | DYNAMIXEL ID     |
 | option           | Reset option     |
 
 - Detailed Description
 
-   This function calls either `factoryReset1` or `factoryReset2` function depending on the `protocol_version`. The function constructs the transmission packet for reset Dynamixel, and starts `txRxPacket`. The resets targeted Dynamixel's settings to the factory default settings. The `option` indicates the range of which items on the control table should be reset: `0xFF` for resetting all values, `0x01` for resetting all values except ID, `0x02` for resetting all values except ID and Baudrate. The communication result and the hardware error are available when the function is terminated. In protocol 1.0, `option` is selectable with only full-reset mode `0x00`.
+   This function calls either `factoryReset1` or `factoryReset2` function depending on the `protocol_version`. The function constructs the transmission packet for reset DYNAMIXEL, and starts `txRxPacket`. The resets targeted DYNAMIXEL's settings to the factory default settings. The `option` indicates the range of which items on the control table should be reset: `0xFF` for resetting all values, `0x01` for resetting all values except ID, `0x02` for resetting all values except ID and Baudrate. The communication result and the hardware error are available when the function is terminated. In protocol 1.0, `option` is selectable with only full-reset mode `0x00`.
 
 ##### readTx
 - Syntax
@@ -433,13 +433,13 @@ void readTx(int port_num, int protocol_version, byte id, short address, short le
 |:-----------------|:------------------------------------------|
 | port_num         | Port number                               |
 | protocol_version | Protocol version                          |
-| id               | Dynamixel ID                              |
-| address          | Address on the control table of Dynamixel |
+| id               | DYNAMIXEL ID                              |
+| address          | Address on the control table of DYNAMIXEL |
 | length           | Packet length                             |
 
 - Detailed Description
 
-   This function calls either `readTx1` or `readTx2` function depending on the `protocol_version`. The function constructs the transmission packet with read instruction, and starts `txPacket`. Then the function calls `setPacketTimeout` function when packet transmission succeeds. The function can't control more than one Dynamixel at once. The communication result and the hardware error are available when the function is terminated.
+   This function calls either `readTx1` or `readTx2` function depending on the `protocol_version`. The function constructs the transmission packet with read instruction, and starts `txPacket`. Then the function calls `setPacketTimeout` function when packet transmission succeeds. The function can't control more than one DYNAMIXEL at once. The communication result and the hardware error are available when the function is terminated.
 
 
 ##### readRx
@@ -472,8 +472,8 @@ void readRx(int port_num, int protocol_version, short length)
 |:-----------------|:------------------------------------------|
 | port_num         | Port number                               |
 | protocol_version | Protocol version                          |
-| id               | Dynamixel ID                              |
-| address          | Address on the control table of Dynamixel |
+| id               | DYNAMIXEL ID                              |
+| address          | Address on the control table of DYNAMIXEL |
 | length           | Packet length                             |
 
 
@@ -493,8 +493,8 @@ void read1ByteTx(int port_num, int protocol_version, byte id, short address)
 |:-----------------|:------------------------------------------|
 | port_num         | Port number                               |
 | protocol_version | Protocol version                          |
-| id               | Dynamixel ID                              |
-| address          | Address on the control table of Dynamixel |
+| id               | DYNAMIXEL ID                              |
+| address          | Address on the control table of DYNAMIXEL |
 
 
 - Detailed Description
@@ -529,12 +529,12 @@ byte read1ByteRx(int port_num, int protocol_version)
 |:-----------------|:------------------------------------------|
 | port_num         | Port number                               |
 | protocol_version | Protocol version                          |
-| id               | Dynamixel ID                              |
-| address          | Address on the control table of Dynamixel |
+| id               | DYNAMIXEL ID                              |
+| address          | Address on the control table of DYNAMIXEL |
 
 - Detailed Description
 
-   This function calls either `read1ByteTxRx1` or `read1ByteTxRx2` function depending on the `protocol_version`. The function calls `readTxRx` function to read 1 Byte data from Dynamixel. The communication result and the hardware error are available when the function is terminated.
+   This function calls either `read1ByteTxRx1` or `read1ByteTxRx2` function depending on the `protocol_version`. The function calls `readTxRx` function to read 1 Byte data from DYNAMIXEL. The communication result and the hardware error are available when the function is terminated.
 
 ##### read2ByteTx
 - Syntax
@@ -547,8 +547,8 @@ void read2ByteTx(int port_num, int protocol_version, byte id, short address)
 |:-----------------|:------------------------------------------|
 | port_num         | Port number                               |
 | protocol_version | Protocol version                          |
-| id               | Dynamixel ID                              |
-| address          | Address on the control table of Dynamixel |
+| id               | DYNAMIXEL ID                              |
+| address          | Address on the control table of DYNAMIXEL |
 
 
 - Detailed Description
@@ -585,13 +585,13 @@ void read2ByteTx(int port_num, int protocol_version, byte id, short address)
 |:-----------------|:------------------------------------------|
 | port_num         | Port number                               |
 | protocol_version | Protocol version                          |
-| id               | Dynamixel ID                              |
-| address          | Address on the control table of Dynamixel |
+| id               | DYNAMIXEL ID                              |
+| address          | Address on the control table of DYNAMIXEL |
 
 
 - Detailed Description
 
-   This function calls either `read2ByteTxRx1` or `read2ByteTxRx2` function depending on the `protocol_version`. The function calls `readTxRx` function to read 2 Byte data from Dynamixel. The communication result and the hardware error are available when the function is terminated.
+   This function calls either `read2ByteTxRx1` or `read2ByteTxRx2` function depending on the `protocol_version`. The function calls `readTxRx` function to read 2 Byte data from DYNAMIXEL. The communication result and the hardware error are available when the function is terminated.
 
 
 ##### read4ByteTx
@@ -605,8 +605,8 @@ void read4ByteTx(int port_num, int protocol_version, byte id, short address)
 |:-----------------|:------------------------------------------|
 | port_num         | Port number                               |
 | protocol_version | Protocol version                          |
-| id               | Dynamixel ID                              |
-| address          | Address on the control table of Dynamixel |
+| id               | DYNAMIXEL ID                              |
+| address          | Address on the control table of DYNAMIXEL |
 
 
 - Detailed Description
@@ -642,13 +642,13 @@ int read4ByteTxRx(int port_num, int protocol_version, UIN8_T id, short address)
 |:-----------------|:------------------------------------------|
 | port_num         | Port number                               |
 | protocol_version | Protocol version                          |
-| id               | Dynamixel ID                              |
-| address          | Address on the control table of Dynamixel |
+| id               | DYNAMIXEL ID                              |
+| address          | Address on the control table of DYNAMIXEL |
 
 
 - Detailed Description
 
-   This function calls either `read4ByteTxRx1` or `read4ByteTxRx2` function depending on the `protocol_version`. The function calls `readTxRx` function to read 4 Byte data from Dynamixel. The communication result and the hardware error are available when the function is terminated. The function is unavailable in protocol 1.0.
+   This function calls either `read4ByteTxRx1` or `read4ByteTxRx2` function depending on the `protocol_version`. The function calls `readTxRx` function to read 4 Byte data from DYNAMIXEL. The communication result and the hardware error are available when the function is terminated. The function is unavailable in protocol 1.0.
 
 
 ##### writeTxOnly
@@ -662,8 +662,8 @@ void writeTxOnly(int port_num, int protocol_version, byte id, short address, sho
 |:-----------------|:------------------------------------------|
 | port_num         | Port number                               |
 | protocol_version | Protocol version                          |
-| id               | Dynamixel ID                              |
-| address          | Address on the control table of Dynamixel |
+| id               | DYNAMIXEL ID                              |
+| address          | Address on the control table of DYNAMIXEL |
 | length           | Packet length                             |
 
 
@@ -682,8 +682,8 @@ void writeTxRx(int port_num, int protocol_version, byte id, short address, short
 |:-----------------|:------------------------------------------|
 | port_num         | Port number                               |
 | protocol_version | Protocol version                          |
-| id               | Dynamixel ID                              |
-| address          | Address on the control table of Dynamixel |
+| id               | DYNAMIXEL ID                              |
+| address          | Address on the control table of DYNAMIXEL |
 | length           | Packet length                             |
 
 
@@ -703,8 +703,8 @@ void write1ByteTxOnly(int port_num, int protocol_version, byte id, short address
 |:-----------------|:------------------------------------------|
 | port_num         | Port number                               |
 | protocol_version | Protocol version                          |
-| id               | Dynamixel ID                              |
-| address          | Address on the control table of Dynamixel |
+| id               | DYNAMIXEL ID                              |
+| address          | Address on the control table of DYNAMIXEL |
 | data             | Data for write                            |
 
 
@@ -723,8 +723,8 @@ void write1ByteTxRx(int port_num, int protocol_version, byte id, short address, 
 |:-----------------|:------------------------------------------|
 | port_num         | Port number                               |
 | protocol_version | Protocol version                          |
-| id               | Dynamixel ID                              |
-| address          | Address on the control table of Dynamixel |
+| id               | DYNAMIXEL ID                              |
+| address          | Address on the control table of DYNAMIXEL |
 | data             | Data for write                            |
 
 
@@ -743,8 +743,8 @@ void write2ByteTxOnly(int port_num, int protocol_version, byte id, short address
 |:-----------------|:------------------------------------------|
 | port_num         | Port number                               |
 | protocol_version | Protocol version                          |
-| id               | Dynamixel ID                              |
-| address          | Address on the control table of Dynamixel |
+| id               | DYNAMIXEL ID                              |
+| address          | Address on the control table of DYNAMIXEL |
 | data             | Data for write                            |
 
 
@@ -764,8 +764,8 @@ void write2ByteTxOnly(int port_num, int protocol_version, byte id, short address
 |:-----------------|:------------------------------------------|
 | port_num         | Port number                               |
 | protocol_version | Protocol version                          |
-| id               | Dynamixel ID                              |
-| address          | Address on the control table of Dynamixel |
+| id               | DYNAMIXEL ID                              |
+| address          | Address on the control table of DYNAMIXEL |
 | data             | Data for write                            |
 
 
@@ -785,8 +785,8 @@ void write4ByteTxOnly(int port_num, int protocol_version, byte id, short address
 |:-----------------|:------------------------------------------|
 | port_num         | Port number                               |
 | protocol_version | Protocol version                          |
-| id               | Dynamixel ID                              |
-| address          | Address on the control table of Dynamixel |
+| id               | DYNAMIXEL ID                              |
+| address          | Address on the control table of DYNAMIXEL |
 | data             | Data for write                            |
 
 
@@ -806,8 +806,8 @@ void write4ByteTxRx(int port_num, int protocol_version, byte id, short address)
 |:-----------------|:------------------------------------------|
 | port_num         | Port number                               |
 | protocol_version | Protocol version                          |
-| id               | Dynamixel ID                              |
-| address          | Address on the control table of Dynamixel |
+| id               | DYNAMIXEL ID                              |
+| address          | Address on the control table of DYNAMIXEL |
 
 
 - Detailed Description
@@ -826,14 +826,14 @@ void write4ByteTxRx(int port_num, int protocol_version, byte id, short address)
 |:-----------------|:------------------------------------------|
 | port_num         | Port number                               |
 | protocol_version | Protocol version                          |
-| id               | Dynamixel ID                              |
-| address          | Address on the control table of Dynamixel |
+| id               | DYNAMIXEL ID                              |
+| address          | Address on the control table of DYNAMIXEL |
 | length           | Packet length                             |
 
 
 - Detailed Description
 
-   This function calls either `RegWriteTxOnly1` or `RegWriteTxOnly2` function depending on the `protocol_version`. The function intends simultaneous control of more than one Dynamixel. The function writes the data without requesting an action of Dynamixel. The Dynamixel works when the trigger `action` function is executed. The function needs previous setting of the data to write on the Dynamixel. The communication result and the hardware error are available when the function is terminated.
+   This function calls either `RegWriteTxOnly1` or `RegWriteTxOnly2` function depending on the `protocol_version`. The function intends simultaneous control of more than one DYNAMIXEL. The function writes the data without requesting an action of DYNAMIXEL. The DYNAMIXEL works when the trigger `action` function is executed. The function needs previous setting of the data to write on the DYNAMIXEL. The communication result and the hardware error are available when the function is terminated.
 
 
 ##### regWriteTxRx
@@ -848,14 +848,14 @@ void write4ByteTxRx(int port_num, int protocol_version, byte id, short address)
 |:-----------------|:------------------------------------------|
 | port_num         | Port number                               |
 | protocol_version | Protocol version                          |
-| id               | Dynamixel ID                              |
-| address          | Address on the control table of Dynamixel |
+| id               | DYNAMIXEL ID                              |
+| address          | Address on the control table of DYNAMIXEL |
 | length           | Packet length                             |
 
 
 - Detailed Description
 
-   This function calls either `regWriteTxRx1` or `regWriteTxRx2` function depending on the `protocol_version`. The function intends simultaneous multiple Dynamixel control. The function writes the data without requesting an action of Dynamixel. The Dynamixel works when the trigger `action` function is executed. The function needs previous setting of the data to write on the Dynamixel. The communication result and the hardware error are available when the function is terminated.
+   This function calls either `regWriteTxRx1` or `regWriteTxRx2` function depending on the `protocol_version`. The function intends simultaneous multiple DYNAMIXEL's control. The function writes the data without requesting an action of DYNAMIXEL. The DYNAMIXEL works when the trigger `action` function is executed. The function needs previous setting of the data to write on the DYNAMIXEL. The communication result and the hardware error are available when the function is terminated.
 
 
 ##### syncReadTx
@@ -869,13 +869,13 @@ void syndReadTx(int port_num, int protocol_version, short address, short data_le
 |:-----------------|:------------------------------------------|
 | port_num         | Port number                               |
 | protocol_version | Protocol version                          |
-| address          | Address on the control table of Dynamixel |
+| address          | Address on the control table of DYNAMIXEL |
 | data_length      | Data length                               |
 | param_length     | Parameter length                          |
 
 - Detailed Description
 
-   This function calls either `syncReadTx1` or `syncReadTx2` function depending on the `protocol_version`. The function intends simultanoues multiple Dynamixel control by reading same length of data from the same address on the Dynamixel control table. The function constructs the transmission packet with sync read instruction, and starts 'txPacket2'. Then the function calls `setPacketTimeout` function when `txPacket` succeeds. The communication result and the hardware error are available when the function is terminated. The function is unavailable in protocol 1.0.
+   This function calls either `syncReadTx1` or `syncReadTx2` function depending on the `protocol_version`. The function intends simultanoues multiple DYNAMIXEL's control by reading same length of data from the same address on the DYNAMIXEL control table. The function constructs the transmission packet with sync read instruction, and starts 'txPacket2'. Then the function calls `setPacketTimeout` function when `txPacket` succeeds. The communication result and the hardware error are available when the function is terminated. The function is unavailable in protocol 1.0.
 
 
 ##### syncWriteTxOnly
@@ -889,14 +889,14 @@ void syndReadTx(int port_num, int protocol_version, short address, short data_le
 |:-----------------|:------------------------------------------|
 | port_num         | Port number                               |
 | protocol_version | Protocol version                          |
-| start_address    | Address on the control table of Dynamixel |
+| start_address    | Address on the control table of DYNAMIXEL |
 | data_length      | Data length                               |
 | param_length     | Parameter length                          |
 
 
 - Detailed Description
 
-   This function calls either `syncWriteTxOnly1` or `syncWriteTxOnly2` function depending on the `protocol_version`. The function intends simultaneous multiple Dynamixel control by writing same length of data to the same address on the Dynamixel control table. The function constructs the transmission packet with sync write instruction, and starts `txRxPacket`. The communication result and the hardware error are available when the function is terminated.
+   This function calls either `syncWriteTxOnly1` or `syncWriteTxOnly2` function depending on the `protocol_version`. The function intends simultaneous multiple DYNAMIXEL's control by writing same length of data to the same address on the DYNAMIXEL control table. The function constructs the transmission packet with sync write instruction, and starts `txRxPacket`. The communication result and the hardware error are available when the function is terminated.
 
 
 ##### bulkReadTx
@@ -914,7 +914,7 @@ void syndReadTx(int port_num, int protocol_version, short address, short data_le
 
 - Detailed Description
 
-   This function calls either `bulkReadTx1` or `bulkReadTx2` function depending on the `protocol_version`. The function intends simultaneous multiple Dynamixel control by writing different length of data to the different address on the Dynamixel control table. The function constructs the transmission packet with bulk read instruction, and starts `txPacket`. Then the function calls `setPacketTimeout` function when `txPacket` succeeds. The communication result and the hardware error are available when the function is terminated.
+   This function calls either `bulkReadTx1` or `bulkReadTx2` function depending on the `protocol_version`. The function intends simultaneous multiple DYNAMIXEL's control by writing different length of data to the different address on the DYNAMIXEL control table. The function constructs the transmission packet with bulk read instruction, and starts `txPacket`. Then the function calls `setPacketTimeout` function when `txPacket` succeeds. The communication result and the hardware error are available when the function is terminated.
 
 ##### bulkWriteTxOnly
 - Syntax
@@ -931,4 +931,4 @@ void syndReadTx(int port_num, int protocol_version, short address, short data_le
 
 - Detailed Description
 
-   This function calls either `bulkWriteTxOnly1` or `bulkWriteTxOnly2` function depending on the `protocol_version`. The function intends simultaneous multiple Dynamixel control by writing different length of data from the different address on the Dynamixel control table. The function constructs the transmission packet with bulk write instruction, and starts `TxRxPacket`. The communication result and the hardware error are available when the function is terminated. The function is unavailable in protocol 1.0.
+   This function calls either `bulkWriteTxOnly1` or `bulkWriteTxOnly2` function depending on the `protocol_version`. The function intends simultaneous multiple DYNAMIXEL's control by writing different length of data from the different address on the DYNAMIXEL control table. The function constructs the transmission packet with bulk write instruction, and starts `TxRxPacket`. The communication result and the hardware error are available when the function is terminated. The function is unavailable in protocol 1.0.

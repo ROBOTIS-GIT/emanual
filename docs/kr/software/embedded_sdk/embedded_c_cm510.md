@@ -619,7 +619,7 @@ PC와 제어기가 시리얼 통신을 할 수 있습니다.
 
 ### [다이나믹셀 읽기/쓰기](#다이나믹셀-읽기쓰기)
 
-다이나믹셀의 위치를 읽거나 설정할 수 있습니다. (보다 자세한 사항은 Dynamixel SDK를 확인 하세요)
+다이나믹셀의 위치를 읽거나 설정할 수 있습니다. (보다 자세한 사항은 다이나믹셀 SDK를 확인 하세요)
 
 - 준비물
   - 제어기와 다이나믹셀이 연결된 상태
@@ -684,7 +684,7 @@ PC와 제어기가 시리얼 통신을 할 수 있습니다.
 
 ### [다이나믹셀 동기 제어](#다이나믹셀-동기-제어)
 
-여러개의 다이나믹셀을 동기화하여 제어할 수 있습니다. (보다 자세한 사항은 [Dynamixel SDK]를 확인 하세요)
+여러개의 다이나믹셀을 동기화하여 제어할 수 있습니다. (보다 자세한 사항은 [다이나믹셀 SDK]를 확인 하세요)
 
 - 준비물
   - 제어기와 다이나믹셀이 연결된 상태
@@ -827,7 +827,7 @@ RC-100을 이용하여 제어기를 동작시킬 수 있습니다. (보다 자�
 
 [제어기 포트맵]: #하드웨어-포트맵
 [적외선 센서]: /docs/kr/parts/sensor/irss-10/
-[Dynamixel SDK]: /docs/en/software/dynamixel/dynamixel_sdk/overview/
+[다이나믹셀 SDK]: /docs/en/software/dynamixel/dynamixel_sdk/overview/
 [다이나믹셀 패킷 구조]: /docs/kr/dxl/protocol1/
 [zgb_rx_data()]: /docs/kr/software/embedded_sdk/zigbee_sdk/#zgb-rx-data
 [Zig-100/110]: /docs/kr/parts/communication/zig-110/

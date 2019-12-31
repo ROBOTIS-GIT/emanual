@@ -19,13 +19,13 @@ page_number: 1
 
 # [Introduction](#introduction)
 
-- This manual applies to the Dynamixel PRO based Robotis Manipulator.
+- This manual applies to DYNAMIXEL PRO based Robotis Manipulator.
 - All parameters in this manual are based on default values.
 - The manipulator’s configuration is provided. The ArmSDK is based on Windows7 and Visual Studio 2010.
 - It is strongly recommended with proficiency with C++ language.
 - The units utilized in the ArmSDK are in radians (rad) and millimeters (mm).
 - Modifying the wiring and components or performances not stated on this guide may result on adverse operations.
-- This manual utilizes the term “arm,” “Manipulator,” and “robot” interchangeably to describe product. The guide also may refer to Dynamixel Pro actuators to simply “Dynamixel,” “servo,” “motor,” or “actuator.”
+- This manual utilizes the term “arm,” “Manipulator,” and “robot” interchangeably to describe product. The guide also may refer to DYNAMIXEL Pro actuators to simply “DYNAMIXEL,” “servo,” “motor,” or “actuator.”
 
 `Last Updated` : 15 March, 2019
 
@@ -62,7 +62,7 @@ Information appearing in a WARNING concerns the protection of personnel and equi
 Information appearing in a CAUTION concerns the protection of personnel and equipment, software, and data from hazards that can result in minor personal injury or equipment damage.
 - Keep robot’s workspace clear of object.
 - Ensure wiring is not tangled up on every joint.
-- Make sure USB2Dynamixel and PC does not interfere with the robot’s moving
+- Make sure USB2DYNAMIXEL and PC does not interfere with the robot’s moving
 {% endcapture %}
 
 <div class="notice--warning">{{ manipulator_caution_01 | markdownify }}</div>
@@ -99,9 +99,9 @@ Information appearing in a CAUTION concerns the protection of personnel and equi
 ![](/assets/images/platform/manipulator_h/manipulator_h_003.jpg)
 
 - The diagram above illustrates joints 1~6 connected in daisy-chain (serial) configuration with 4P Cable.
-- Joint 1 (labeled as “1st”) connects to USB2Dynamixel via 4P Cable.
-- USB2Dynamixel connects to PC via USB hub.
-- Dynamixel Pro is powered from a a power supply via power expansion hub.
+- Joint 1 (labeled as “1st”) connects to USB2DYNAMIXEL via 4P Cable.
+- USB2DYNAMIXEL connects to PC via USB hub.
+- DYNAMIXEL Pro is powered from a a power supply via power expansion hub.
 - Joints 5 and 6 (model: L42 - 10 - S300 – R) are not separately powered; instead power comes from the same 4P Cable.
 - You may obtain more 4P or Power Cables via ROBOTIS or see section 2.2 Preparation - ii) Cable.
 - Please refer to “2. Getting started” for more info.
@@ -115,7 +115,7 @@ Information appearing in a CAUTION concerns the protection of personnel and equi
 |            Weight             |                                                                                                                                                                                                     5kg                                                                                                                                                                                                      |
 |       Operating voltage       |                                                                                                                                                                                                     24V                                                                                                                                                                                                      |
 |          Resolution           | Joint 1 : -&pi;(rad) ~ &pi;(rad) , -251,961 ~ 251,961 (pulse)<br />Joint 2 : -&pi;(rad) ~ &pi;(rad) , -251,961 ~ 251,961 (pulse)<br />Joint 3 : -&pi;(rad) ~ &pi;(rad) , -251,961 ~ 251,961 (pulse)<br />Joint 4 : -&pi;(rad) ~ &pi;(rad) , -251,961 ~ 251,961 (pulse)<br />Joint 5 : -&pi;(rad) ~ &pi;(rad) , -151,875 ~ 151,875 (pulse)<br />Joint 6 : -&pi;(rad) ~ &pi;(rad) , -151,875 ~ 151,875 (pulse) |
-| Dynamixel Pro<br />Model Name |                                                                                                                                                         Joint 1, 2 : H54-200-S500-R<br />Joint 3, 4 : H54-100-S500-R<br />Joint 5, 6 : H42-20-S300-R                                                                                                                                                         |
+| DYNAMIXEL Pro<br />Model Name |                                                                                                                                                         Joint 1, 2 : H54-200-S500-R<br />Joint 3, 4 : H54-100-S500-R<br />Joint 5, 6 : H42-20-S300-R                                                                                                                                                         |
 |        Operating Range        |                                                                                 Joint 1 : -&pi;(rad) ~ &pi;(rad)<br />Joint 2 : -&pi;/2(rad) ~ &pi;/2(rad)<br />Joint 3 : -&pi;/2(rad) ~ 3&pi;/4(rad)<br />Joint 4 : -&pi;(rad) ~ &pi;(rad)<br />Joint 5 : -&pi;/2(rad) ~ &pi;/2(rad)<br />Joint 6 : -&pi;(rad) ~ &pi;(rad)                                                                                  |
 |          Default ID           |                                                                                                                                                     Joint 1 (ID:1), Joint 2 (ID:2), Joint 3 (ID:3),<br />Joint 4 (ID:4), Joint 5 (ID:5), Joint 6 (ID:6)                                                                                                                                                      |
 |          Motor type           |                                                                                                                                                                      Brushless DC Servo(H54 Series),<br />Coreless DC Motor(H42 Series)                                                                                                                                                                      |
@@ -139,7 +139,7 @@ Information appearing in a CAUTION concerns the protection of personnel and equi
 
 ## [Home Position](#home-position)
 
-The diagram below shows the “home position” of the Dynamixel PROs from Robotis Manipulator.
+The diagram below shows the “home position” of DYNAMIXEL PROs from Robotis Manipulator.
 
 ![](/assets/images/platform/manipulator_h/manipulator_h_005.jpg)
 

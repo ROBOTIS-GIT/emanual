@@ -6,7 +6,7 @@
 - 태스크 코드 파일을 더블클릭하여 열 수 있습니다.
 - RoboPlus Task 의 파일 열기 기능으로 열 수 있습니다.
 - 마우스를 이용하여 파일을 RoboPlus Task 위로 드래그 앤 드롭(Drag & Drop)을 통해 열 수 있습니다.
-2. [USB2Dynamixel]을 이용하여 PC 와 제어기를 연결합니다.
+2. [USB2DYNAMIXEL]을 이용하여 PC 와 제어기를 연결합니다.
 3. 제어기의 전원을 켭니다. (전원을 켜는 방법은 각 제어기 정보를 참고하세요.)
 
 ![CM-5_to_PC-01](/assets/images/parts/controller/cm-5/cm_5_connect_pc_01.png)
@@ -46,4 +46,4 @@
 
 [CM-5]: /docs/kr/parts/controller/cm-5/
 [펌웨어 업데이트]: /docs/kr/software/rplus1/manager/#펌웨어-업데이트
-[USB2Dynamixel]: /docs/kr/parts/interface/usb2dynamixel/
+[USB2DYNAMIXEL]: /docs/kr/parts/interface/usb2dynamixel/

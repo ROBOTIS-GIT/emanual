@@ -74,7 +74,7 @@ Before launching the controller, please check `open_manipulator_controller` laun
 - `moveit_sample_duration`
 
 `use_robot_name` is a parameter to set manipulator name(namespace of ROS messages).  
-`dynamixel_usb_port` is a parameter to set USB port to connect with DYNAMIXEL of OpenMANIPULATOR-X. If you use U2D2, it should be set **/dev/ttyUSB@**. If you use OpenCR, it should be set **/dev/ttyACM@** (@ indicates the port number connected to the DYNAMIXEL).  
+`dynamixel_usb_port` is a parameter to set USB port to connect with DYNAMIXEL of OpenMANIPULATOR-X. If you use U2D2, it should be set **/dev/ttyUSB@**. If you use OpenCR, it should be set **/dev/ttyACM@** (@ indicates the port number connected to DYNAMIXEL).  
 `dynamixel_baud_rate` is a parameter to set baud rate of DYNAMIXEL. default baud rate of DYNAMIXEL used in OpenMANIPULATOR-X is 1000000.  
 `control_period` is a parameter to set communication period between DYNAMIXEL and PC (control loop time).  
 `use_platform` is a parameter that sets whether to use the actual OpenMANIPULATOR-X or OpenMANIPULATOR-X simulation. please refer [[ROS] Simulation](/docs/en/platform/openmanipulator_x/ros_simulation/#ros-simulation) chapter.  
@@ -136,14 +136,14 @@ Gripper Dynamixel ID : 15, Model Name :XM430-W350
 
 {% capture notice_01 %}
 **TIP**:
-- If you can't load DYNAMIXEL, please check your DYNAMIXEL settings using the following command from the DYNAMIXEL-Workbench packages.   
+- If you can't load DYNAMIXEL, please check your DYNAMIXEL settings using the following command from DYNAMIXEL-Workbench packages.   
 `rosrun dynamixel_workbench_controllers find_dynamixel /dev/ttyUSB0`  
 Even if you can't find any DYNAMIXEL, please check firmware to use ROBOTIS software ([R+ Manager 2.0](http://emanual.robotis.com/docs/en/software/rplus2/manager/) or [DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/#firmware-update))
-- If you would like to change Dynamixel ID, please check [`open_manipulator.cpp`](https://github.com/ROBOTIS-GIT/open_manipulator/blob/be2859a0506b4e941a19435c0a07562b41768a27/open_manipulator_libs/src/OpenManipulator.cpp#L40) in the open_manipulator_lib folder. The default ID is **11, 12, 13, 14** for joints and **15** for the gripper
+- If you would like to change DYNAMIXEL ID, please check [`open_manipulator.cpp`](https://github.com/ROBOTIS-GIT/open_manipulator/blob/be2859a0506b4e941a19435c0a07562b41768a27/open_manipulator_libs/src/OpenManipulator.cpp#L40) in the open_manipulator_lib folder. The default ID is **11, 12, 13, 14** for joints and **15** for the gripper
 {% endcapture %}
 <div class="notice--success">{{ notice_01 | markdownify }}</div>
 
-**NOTE**: OpenMANIPULATOR-X controller is compatible with [Protocol 2.0](/docs/en/dxl/protocol2/). [Protocol 1.0](/docs/en/dxl/protocol1/) does not support SyncRead instructions to access to multiple DYNAMIXEL's simultaneously. Protocol 2.0 supports `MX 2.0`, `X` and `Pro` series, but it does not support `AX`, `RX` and `EX`.
+**NOTE**: OpenMANIPULATOR-X controller is compatible with [Protocol 2.0](/docs/en/dxl/protocol2/). [Protocol 1.0](/docs/en/dxl/protocol1/) does not support SyncRead instructions to access to multiple DYNAMIXEL's's simultaneously. Protocol 2.0 supports `MX 2.0`, `X` and `Pro` series, but it does not support `AX`, `RX` and `EX`.
 {: .notice--info}
 
 ## [Check Setting](#check-setting)
@@ -566,7 +566,7 @@ In addition, you can monitor topics through rqt whenever you have a topic added 
 
 #### [Service Server List](#service-server-list)
 
-**NOTE**: These services are messages to operate OpenMANIPULATOR-X or to change the status of the DYNAMIXEL of OpenMANIPULATOR.
+**NOTE**: These services are messages to operate OpenMANIPULATOR-X or to change the status of DYNAMIXEL of OpenMANIPULATOR.
 {: .notice--info}
 
 

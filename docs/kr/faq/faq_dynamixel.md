@@ -33,7 +33,7 @@ sidebar:
 # 다이나믹셀과 연결하기 위해서는 어떤 장치가 필요한가요?
 1. [U2D2]  
   U2D2는 가장 널리 사용될 뿐만 아니라 PC와 다이나믹셀을 연결하는데 가장 최적화된 인터페이스입니다.
-2. [USB2Dynamixel]  
+2. [USB2DYNAMIXEL]  
   QC 번호를 확인해주세요. 만약 QC번호가 1412 ~ 1502 사이에 있다면 FTDI와 관련된 문제가 있을 수 있습니다. [드라이버 수동 설치]를 참고해주시고 이 방법으로 동작하지 않는다면 교환을 요청해주세요. 
 2. 로보티즈 제어기  
   [OpenCM9.04], [OpenCM9.04] + [OpenCM 485 EXP], [CM-530], [CM-700], [OpenCR1.0]을 사용해서 다이나믹셀을 제어할 수 있습니다.
@@ -45,7 +45,7 @@ sidebar:
 2. **프로토콜 2.0**을 사용하는 다이나믹셀은 [R+ Manager 2.0]혹은 [다이나믹셀 위자드 2.0]를 사용하시기 바랍니다
 
 # 다이나믹셀을 제어하려면 어떤 프로그램을 사용해야 하나요?
-1. 다이나믹셀을 [U2D2] 또는 [USB2Dynamixel]로 연결된 PC로 제어하려면  
+1. 다이나믹셀을 [U2D2] 또는 [USB2DYNAMIXEL]로 연결된 PC로 제어하려면  
   [다이나믹셀 SDK](C, C++, C#, Java, MATLAB, LabVIEW, Python, ROS) 또는 [R+ Task] 또는 [R+ Task 2.0]를 사용할 수 있습니다.
 2. 다이나믹셀을 [OpenCM9.04] 또는 [OpenCR1.0] 로보티즈 제어기로 제어하려면
   [다이나믹셀 SDK]와 [다이나믹셀 워크벤치] 라이브러리를 지원하는 [아두이노 IDE]를 사용할 수 있습니다.
@@ -93,7 +93,7 @@ sidebar:
 [DYNAMIXEL Pro+]: /docs/kr/dxl/#pro-plus-series
 [MX]: /docs/kr/dxl/#mx-series
 [U2D2]: /docs/kr/parts/interface/u2d2/
-[USB2Dynamixel]: /docs/kr/parts/interface/usb2dynamixel/
+[USB2DYNAMIXEL]: /docs/kr/parts/interface/usb2dynamixel/
 [드라이버 수동 설치]: /docs/kr/parts/interface/usb2dynamixel/#드라이버-수동-설치
 [OpenCM9.04]: /docs/kr/parts/controller/opencm904/
 [OpenCM 485 EXP]: /docs/kr/parts/controller/opencm485exp/

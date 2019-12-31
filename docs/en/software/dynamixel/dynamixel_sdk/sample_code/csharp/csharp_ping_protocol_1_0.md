@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/software/dynamixel/dynamixel_sdk/sample_code/csharp_ping_protocol_1_0/
 sidebar:
-  title: DynamixelSDK
+  title: DYNAMIXEL SDK
   nav: "dynamixel_sdk"
 ---
 
@@ -150,7 +150,7 @@ The functions `Console.*` for I/O, are in the example code, and it uses `System`
 using dynamixel_sdk;
 ```
 
-All libraries of Dynamixel SDK are wrapped into the `dynamixel_sdk` namespace.
+All libraries of DYNAMIXEL SDK are wrapped into the `dynamixel_sdk` namespace.
 
 ``` cs
 // Protocol version

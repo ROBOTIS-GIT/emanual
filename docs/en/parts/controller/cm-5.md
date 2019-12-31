@@ -22,14 +22,14 @@ sidebar:
 
 # [Specifications](#specifications)
 
-|Item|Description|
-|:---:|:---:|
-|Weight|125.95g|
-|CPU|ATMega128|
-|Voltage Supply|Range : 7V ~ 12V<br />Recommended : 11.1V (3S1P Li-Po)|
-|Current Consumption|Standby : 50mA<br />Max : 5A(Fuse)|
-|Operation Temperature|-5&deg;C ~ 70&deg;C|
-|External I/O Device|AX/MX Series Dynamixel Connector x 2|
+|         Item          |                      Description                       |
+|:---------------------:|:------------------------------------------------------:|
+|        Weight         |                        125.95g                         |
+|          CPU          |                       ATMega128                        |
+|    Voltage Supply     | Range : 7V ~ 12V<br />Recommended : 11.1V (3S1P Li-Po) |
+|  Current Consumption  |           Standby : 50mA<br />Max : 5A(Fuse)           |
+| Operation Temperature |                  -5&deg;C ~ 70&deg;C                   |
+|  External I/O Device  |          AX/MX Series DYNAMIXEL Connector x 2          |
 
 # [Layout](#layout)
 
@@ -49,8 +49,8 @@ sidebar:
 - AUX : Assigned LED to be used by the user in the program.  It can be turned on or off using task code.
 
 ## [MANAGE]
-- It displays Dynamixel Management Mode is in progress.
-- It is used to set or test the operations of CM-5, AX/MX Dynamixel using [RoboPlus Manager].
+- It displays DYNAMIXEL Management Mode is in progress.
+- It is used to set or test the operations of CM-5, AX/MX DYNAMIXEL using [RoboPlus Manager].
 - It is automatically executed when RoboPlus Manager and CM-5 are connected.
 
 ## [PROGRAM]
@@ -84,7 +84,7 @@ A rechargeable battery is installed in CM-5. If the rechargeable battery is char
 
 **For CM-5, the firmware must be updated to use Roboplus instead of the Behavior Control Programmer(the old version).**  
 **Please refer to [Firmware Update] on how to updated firmware in RoboPlus Manager.**
-- It is used to control Dynamixel and the peripherals, and it can connect Dynamixel(AX/MX Dynamixel... etc.).
+- It is used to control DYNAMIXEL and the peripherals, and it can connect DYNAMIXEL(AX/MX DYNAMIXEL... etc.).
 - Specific motions can be edited and saved through [RoboPlus Motion]. The saved motion (mtn file) can be always executed by [RoboPlus Task], and also the motions of each part can be controlled by writing the task codes for control.
 
 - RoboPlus Motion  
@@ -98,7 +98,7 @@ A rechargeable battery is installed in CM-5. If the rechargeable battery is char
 
 # [Connect to PC](#connect-to-pc)
 
-PC Link(Serial Cable) of CM-5 and Serial Port of PC must be connected using serial cable to communicaiton with PC. If you want to use Bioloid on the laptop without a serial port, you can communicate with PC using USB2Dynamixel.  (The USB2Dynamixel is sold separately.)
+PC Link(Serial Cable) of CM-5 and Serial Port of PC must be connected using serial cable to communicaiton with PC. If you want to use Bioloid on the laptop without a serial port, you can communicate with PC using USB2DYNAMIXEL.  (The USB2DYNAMIXEL is sold separately.)
 
 ![](/assets/images/parts/controller/cm-5/cm-5_07.png)
 

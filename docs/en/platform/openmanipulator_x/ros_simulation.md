@@ -99,7 +99,7 @@ ROS_MASTER_URI=http://localhost:11311
 process[open_manipulator-1]: started with pid [9820]
 [ INFO] [1544506914.862653563]: Ready to simulate /open_manipulator on Gazebo
 ```
-**NOTE** : In OpenMANIPULATOR-X controller for gazebo simulation, Joint and Gripper Dynamixel are not enable, following messages will not be displayed :  
+**NOTE** : In OpenMANIPULATOR-X controller for gazebo simulation, Joint and Gripper DYNAMIXEL are not enable, following messages will not be displayed :  
 Joint Dynamixel ID : 11, Model Name : XM430-W350  
 Joint Dynamixel ID : 12, Model Name : XM430-W350  
 Joint Dynamixel ID : 13, Model Name : XM430-W350  

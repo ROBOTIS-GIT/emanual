@@ -6,7 +6,7 @@ layout: popup
 
 ## Description
 
-This function writes data to specific memory address range of multiple DYNAMIXELs.
+This function writes data to specific memory address range of multiple DYNAMIXEL's.
 
 ## Syntax
 

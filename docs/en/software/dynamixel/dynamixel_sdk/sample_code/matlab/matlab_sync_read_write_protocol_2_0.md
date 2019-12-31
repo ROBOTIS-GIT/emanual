@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/software/dynamixel/dynamixel_sdk/sample_code/matlab_sync_read_write_protocol_2_0/
 sidebar:
-  title: DynamixelSDK
+  title: DYNAMIXEL SDK
   nav: "dynamixel_sdk"
 ---
 
@@ -24,7 +24,7 @@ sidebar:
 
 - Description
 
-  This example writes goal positions to two Dynamixels and repeats to read present positions simultaneously until Dynamixels stop moving. The funtions that are related with the Syncread and Syncwrite handle the number of items which are near each other in the Dynamixel control table on multiple Dynamixels, such as the goal position and the goal velocity.
+  This example writes goal positions to two DYNAMIXEL's and repeats to read present positions simultaneously until DYNAMIXEL stop moving. The funtions that are related with the Syncread and Syncwrite handle the number of items which are near each other in the Dynamixel control table on multiple DYNAMIXEL's, such as the goal position and the goal velocity.
 
 - Available Dynamixel
 
@@ -322,7 +322,7 @@ Here we set some variables to let you freely change them and use them to run the
 
 As the document previously said in [previous chapter](/docs/en/software/dynamixel/dynamixel_sdk/device_setup/#dynamixel), customize Dynamixel control table items, such as `DXL_ID` number, communication `BAUDRATE`, and the `DEVICENAME`, on your own terms of needs. In particular, `BAUDRATE` and `DEVICENAME` have systematical dependencies on your controller, so make clear what kind of communication method you will use.
 
-The example uses two Dynamixels `DXL1_ID`, `DXL2_ID` connected with the port `DEVICENAME`.
+The example uses two DYNAMIXEL's `DXL1_ID`, `DXL2_ID` connected with the port `DEVICENAME`.
 
 Dynamixel basically needs the `TORQUE_ENABLE` to be rotating or give you its internal information. On the other hand, it doesn't need torque enabled if you get your goal, so finally do `TORQUE_DISABLE` to prepare to the next sequence.
 
@@ -447,7 +447,7 @@ end
 
 As mentioned in the document, above code enables each Dynamixel`s torque to set their status as being ready to move.
 
-`write1ByteTxRx()` function orders to the #`DXL1_ID` and #`DXL2_ID` Dynamixels in `PROTOCOL_VERSION` communication protocol through #`port_num` port, writing 1 byte of `TORQUE_ENABLE` value to `ADDR_PRO_TORQUE_ENABLE` address. The function checks Tx/Rx result and receives Hardware error.
+`write1ByteTxRx()` function orders to the #`DXL1_ID` and #`DXL2_ID` DYNAMIXEL in `PROTOCOL_VERSION` communication protocol through #`port_num` port, writing 1 byte of `TORQUE_ENABLE` value to `ADDR_PRO_TORQUE_ENABLE` address. The function checks Tx/Rx result and receives Hardware error.
 `getLastTxRxResult()` function and `getLastRxPacketError()` function get either, and then `printTxRxResult()` function and `printRxPacketError()` function show results on the console window if any communication error or Hardware error has been occurred.
 
 ``` m
@@ -556,7 +556,7 @@ To continue their rotation, press any key except ESC.
 
 `groupSyncReadIsAvailable()` function checks if available data is in the groupsyncread data storage. The function returns false if no data is available in the storage.
 
-`groupSyncReadGetData()` function pop the data received by `groupSyncReadTxRxPacket()` function out. In the example, it stores `LEN_PRO_PRESENT_POSITION` byte data got from `ADDR_PRO_PRESENT_POSITION` address of `DXL1_ID` and`DXL2_ID` Dynamixels.
+`groupSyncReadGetData()` function pop the data received by `groupSyncReadTxRxPacket()` function out. In the example, it stores `LEN_PRO_PRESENT_POSITION` byte data got from `ADDR_PRO_PRESENT_POSITION` address of `DXL1_ID` and`DXL2_ID` DYNAMIXEL.
 
 `groupSyncReadClearParam()` function clears the Dynamixel list of groupsyncread.
 
@@ -582,9 +582,9 @@ elseif getLastRxPacketError(port_num, PROTOCOL_VERSION) ~= 0
 end
 ```
 
-The controller frees the Dynamixels to be idle.
+The controller frees the DYNAMIXEL to be idle.
 
-`write1ByteTxRx()` function orders to the #`DXL1_ID` and #`DXL2_ID` Dynamixels in `PROTOCOL_VERSION` communication protocol through #`port_num` port, writing 1 byte of `TORQUE_DISABLE` value to `ADDR_PRO_TORQUE_ENABLE` address. The function checks Tx/Rx result and receives Hardware error.
+`write1ByteTxRx()` function orders to the #`DXL1_ID` and #`DXL2_ID` DYNAMIXEL in `PROTOCOL_VERSION` communication protocol through #`port_num` port, writing 1 byte of `TORQUE_DISABLE` value to `ADDR_PRO_TORQUE_ENABLE` address. The function checks Tx/Rx result and receives Hardware error.
 `getLastTxRxResult()` function and `getLastRxPacketError()` function get either, and then `printTxRxResult()` function and `printRxPacketError()` function show results on the console window if any communication error or Hardware error has been occurred.
 
 ``` m

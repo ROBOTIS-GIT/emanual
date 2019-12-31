@@ -159,36 +159,36 @@ Unlike "Stop Motion," "Emergency Stop" halts execution immediately.
 
 Things to be aware of before editing motions are introduced here.
 
-## Setting the Dynamixel ID
+## Setting DYNAMIXEL ID
 
-The motion player in the controller can control a total of 26 Dynamixels (from ID 0 to 25). Therefore, to create a motion with RoboPlus Motion, the ID of each Dynamixel must be between 0 and 25.
+The motion player in the controller can control a total of 26 DYNAMIXEL's (from ID 0 to 25). Therefore, to create a motion with RoboPlus Motion, the ID of each DYNAMIXEL must be between 0 and 25.
 
 ## Control Priority
 
-Dynamixels may be controlled by both RoboPlus Motion and RoboPlus Task. Generally, the control priority is as follows:
-1. RoboPlus Motion (ID of Dynamixel is between 0 and 25.)
+DYNAMIXEL's may be controlled by both RoboPlus Motion and RoboPlus Task. Generally, the control priority is as follows:
+1. RoboPlus Motion (ID of DYNAMIXEL is between 0 and 25.)
 2. RoboPlus Task
 
-In other words, once a motion is executed, the Dynamixel will be controlled by only RoboPlus Motion, and RoboPlus Task will have no control over the  Dynamixel. However, this control priority may be changed by users, if so desired.  
+In other words, once a motion is executed, DYNAMIXEL will be controlled by only RoboPlus Motion, and RoboPlus Task will have no control over the  DYNAMIXEL. However, this control priority may be changed by users, if so desired.  
 There are 2 ways to change the control priority:
 - In the motion data : Use [ID Used/Not-Used](#set-id-usage-status) function.
 - In the task code : Use the [Joint Offset Parameter]. The advantage of this method is that the control priority may be changed according to the situation.
 
-## Dynamixel Auto Shutdown Function
+## DYNAMIXEL Auto Shutdown Function
 
-Dynamixels have an Auto Shutdown function. This function prevents Dynamixels from being damaged. The Auto Shutdown function will be triggered in the following situations.  
+DYNAMIXEL's have an Auto Shutdown function. This function prevents DYNAMIXEL's from being damaged. The Auto Shutdown function will be triggered in the following situations.  
 - The motor has overheated due to an increase in internal temperature.
 - The motor has been under too much load for an extensive period of time.
 
 When the Auto Shutdown function is triggered, the following will be seen.  
-- The Dynamixel's LED will blink.
+- The DYNAMIXEL LED will blink.
 - The motor will stop moving, resulting in no torque.
 
 To solve this problem, the following steps must be taken.
 - Resolve what triggered the Auto Shutdown function.
 - If the motor has overheated, let it cool with some rest.  
 - If the motor is under too much load, remove some of the load.
-- Turn off the Dynamixel and turn it back on.
+- Turn off DYNAMIXEL and turn it back on.
 
 When creating a motion, the joint may not move. This is because the Auto Shutdown function has been triggered by the causes listed above.
 
@@ -367,7 +367,7 @@ Before using the pose utility, you must first select the robot. Click the robot'
 
 ##### Control Joints
 
-The number appeared on the robot are the ID of Dynamixel. If you place your mouse on the ID, the color of choosable Dynamixel is changed.
+The number appeared on the robot are the ID of DYNAMIXEL. If you place your mouse on the ID, the color of choosable DYNAMIXEL is changed.
 
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_039.png)
 
@@ -689,7 +689,7 @@ Force is generated between steps. We call this force "inertial force," because i
 
 ### [Joint Softness](#joint-softness)
 
-Joint softness is used to set the compliance of the Dynamixel.
+Joint softness is used to set the compliance of DYNAMIXEL.
 The pros and cons of different joint softness values are as follows:
 - When the joint softness is big
   - Pro: Movement is smooth.  Used for fluid movements, such as dancing.
@@ -780,7 +780,7 @@ Motion Offset files(*.ofs) in the PC can be downloaded to the robot.
 ### [Set Resolution](#set-resolution)
 
 - The monitor's resolution can be set.
-- For the MX and EX series, please set the resolution value as 4096.  For other Dynamixels, 1024 is the recommended value.
+- For the MX and EX series, please set the resolution value as 4096.  For other DYNAMIXEL's, 1024 is the recommended value.
 - EX series have position control of 250 degrees.
 - MX series have position control of 360 degrees.
 
@@ -792,7 +792,7 @@ Motion Offset files(*.ofs) in the PC can be downloaded to the robot.
 
 ### <a name="set-id-usage-status"></a>[Set ID Usage Status](#set-id-usage-status)
 
-- RoboPlus Motion can handle the motions of robots with up to 26 motors. (Dynamixel ID between 0 and 25). Set whether an ID is being used to edit only the necessary ID's.
+- RoboPlus Motion can handle the motions of robots with up to 26 motors. (DYNAMIXEL ID between 0 and 25). Set whether an ID is being used to edit only the necessary ID's.
 
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_094.png)
 
@@ -918,8 +918,8 @@ You can give different "culture" values to show different languages (only for la
 
 #### &lt;Motor&gt;
 
-Input information for the Dynamixels used in robots.
-- id: Dynamixel's ID
+Input information for DYNAMIXEL's used in robots.
+- id: DYNAMIXEL ID
 - model: model type
 - init: position value for when "Initial Pose" button is pressed
 
@@ -954,9 +954,9 @@ Infromation needed for Mirror function. Not necessary if the function is not in 
 
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_108.jpg)
 
-Only use for Dynamixels in symmetric positions. If there is no symmetrically positioned Dynamixles, do not input anything.
-- Right: Dynamixel IDs for devices on the right side
-- Left: Dynamixel IDs for devices on the left side
+Only use for DYNAMIXEL's in symmetric positions. If there is no symmetrically positioned Dynamixles, do not input anything.
+- Right: DYNAMIXEL IDs for devices on the right side
+- Left: DYNAMIXEL IDs for devices on the left side
 
 ```xml
 <Mirror>
@@ -1000,7 +1000,7 @@ In this section, each part's information is included. The relationship between p
 
   ![](/assets/images/sw/rplus1/motion/roboplus_motion_111.png)
 
-- id: Input ID number for Dynamixels.
+- id: Input ID number for DYNAMIXEL's.
 - type: Define what type of motor a part is.
   - If the whole body moves, define the motor's type as "body." (Horn is fixed in this case)
 
@@ -1091,7 +1091,7 @@ Put the mouse cursor on "IInverseKinematics" and right click it. Then select "Im
 
 It's Pose data transferred from and received by RoboPlus Motion. Users must follow the rules shown below.
 - Users create the arrangement of 26 pose data.
-- The index of arrangement are the ID numbers of Dynamixels.
+- The index of arrangement are the ID numbers of DYNAMIXEL's.
 - In order to deliever values to motors, put some number in between 0 ~ 1,023 or 4,096. If not, put -1.
 
 When RoboPlus Motion is in "get" direction, inverse kinematics computing result should be delievered and when it is in "set" direction, endpoints should be calculated and computed using forward kinematics and based on Pose data.

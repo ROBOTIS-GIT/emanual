@@ -446,9 +446,9 @@ Since you need to control two OpenManipulators on one PC, use two U2D2s and two 
 
 ![](/assets/images/platform/openmanipulator_x/OpenManipulator_master_slave.png)
 #### Master OpenManipulator
-Master OpenManipulator-X is a robot that is controlled by the user. This is easy to move because no torque is applied to dynamixel. Dynamixel of master OpenManipulator-X sets the ID as below and the baudrate as 1000000bps.
+Master OpenManipulator-X is a robot that is controlled by the user. This is easy to move because no torque is applied to dynamixel. DYNAMIXEL of master OpenManipulator-X sets the ID as below and the baudrate as 1000000bps.
 
-|  Name   | Dynamixel ID |
+|  Name   | DYNAMIXEL ID |
 |:-------:|:------------:|
 | Joint 1 |      1       |
 | Joint 2 |      2       |
@@ -457,9 +457,9 @@ Master OpenManipulator-X is a robot that is controlled by the user. This is easy
 | Gripper |      5       |
 
 #### Slave OpenManipulator
-Slave OpenManipulator-X moves synchronously with Master OpenManipulator. Dynamixel of slave OpenManipulator-X sets the ID as below and the baudrate as 1000000bps. This is the same as the default OpenManipulator-X setting.
+Slave OpenManipulator-X moves synchronously with Master OpenManipulator. DYNAMIXEL of slave OpenManipulator-X sets the ID as below and the baudrate as 1000000bps. This is the same as the default OpenManipulator-X setting.
 
-|  Name   | Dynamixel ID |
+|  Name   | DYNAMIXEL ID |
 |:-------:|:------------:|
 | Joint 1 |      11      |
 | Joint 2 |      12      |
@@ -485,7 +485,7 @@ $ roscore
 ```
 
 After run roscore, Run **the controller of slave OpenManipulator**. Open the other terminal window and enter the following command in the terminal.      
-`dynamixel_usb_port` is a parameter to set use port to connected with Dynamixel of slave OpenManipulator. It should be set **/dev/ttyUSB@** and it is different from use port of master OpenManipulator.
+`dynamixel_usb_port` is a parameter to set use port to connected with DYNAMIXEL of slave OpenManipulator. It should be set **/dev/ttyUSB@** and it is different from use port of master OpenManipulator.
 
 ``` bash
 $ roslaunch open_manipulator_controller open_manipulator_controller.launch dynamixel_usb_port:=/dev/ttyUSB0
@@ -533,7 +533,7 @@ Gripper Dynamixel ID : 15, Model Name :XM430-W350
 ```
 
 And Open the other terminal window and enter the following command in the terminal. This command is to run **the controller of master OpenManipulator**.     
-`usb_port` is a parameter to set use port to connected with Dynamixel of master OpenManipulator. It should be set **/dev/ttyUSB@** and it is different from use port of slave OpenManipulator.
+`usb_port` is a parameter to set use port to connected with DYNAMIXEL of master OpenManipulator. It should be set **/dev/ttyUSB@** and it is different from use port of slave OpenManipulator.
 
 ``` bash
 $ roslaunch open_manipulator_master_slave open_manipulator_master.launch usb_port:=/dev/ttyUSB1

@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/software/dynamixel/dynamixel_sdk/sample_code/python_reset_protocol_1_0/
 sidebar:
-  title: DynamixelSDK
+  title: DYNAMIXEL SDK
   nav: "dynamixel_sdk"
 ---
 
@@ -79,7 +79,7 @@ else:
 
 os.sys.path.append('../dynamixel_functions_py')             # Path setting
 
-import dynamixel_functions as dynamixel                     # Uses Dynamixel SDK library
+import dynamixel_functions as dynamixel                     # Uses DYNAMIXEL SDK library
 
 # Control table address
 ADDR_MX_BAUDRATE            = 4                             # Control table address is different in Dynamixel model
@@ -225,7 +225,7 @@ else:
 
 os.sys.path.append('../dynamixel_functions_py')             # Path setting
 
-import dynamixel_functions as dynamixel                     # Uses Dynamixel SDK library
+import dynamixel_functions as dynamixel                     # Uses DYNAMIXEL SDK library
 ```
 
 `getch()` gets the input which is for example code control.

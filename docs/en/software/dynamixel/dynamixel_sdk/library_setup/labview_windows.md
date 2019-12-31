@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/software/dynamixel/dynamixel_sdk/library_setup/labview_windows/
 sidebar:
-  title: DynamixelSDK
+  title: DYNAMIXEL SDK
   nav: "dynamixel_sdk"
 ---
 
@@ -30,7 +30,7 @@ sidebar:
 
 ### [Building the Library](#building-the-library)
 
-Note that if following procedure imports the DynamixelSDK c ver. 32bit library, the built library for LabVIEW only can be used by LabVIEW 32bit. Choose the platform target to either 32bit or 64bit, at first.
+Note that if following procedure imports the DYNAMIXEL SDK c ver. 32bit library, the built library for LabVIEW only can be used by LabVIEW 32bit. Choose the platform target to either 32bit or 64bit, at first.
 
 Besides, when some error that are related with `.dll file version is higher than the LabVIEW's version` is appeared, the `.dll` file should be rebuilt in lower version Visual Studio.
 
@@ -42,11 +42,11 @@ Besides, when some error that are related with `.dll file version is higher than
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/labview/windows/library_file/b2.png)
 
-* Set paths to where the `.dll` and `.h` of DynamixelSDK c version is located, then click <kbd>Next</kbd>.
+* Set paths to where the `.dll` and `.h` of DYNAMIXEL SDK c version is located, then click <kbd>Next</kbd>.
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/labview/windows/library_file/b3.png)
 
-* Put some definitions used in DynamixelSDK c version into the Textbox, then click <kbd>Next</kbd>.
+* Put some definitions used in DYNAMIXEL SDK c version into the Textbox, then click <kbd>Next</kbd>.
 
   ```c
   _WIN32;_WIN64;_cplusplus;size_t=unsigned __int64;size_t=unsigned in
@@ -62,7 +62,7 @@ Besides, when some error that are related with `.dll file version is higher than
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/labview/windows/library_file/b6.png)
 
-* The DynamixelSDK functions for the LabVIEW will be structed as the blocks shows. Click <kbd>Next</kbd>.
+* The DYNAMIXEL SDK functions for the LabVIEW will be structed as the blocks shows. Click <kbd>Next</kbd>.
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/labview/windows/library_file/b7.png)
 
@@ -98,9 +98,9 @@ Besides, when some error that are related with `.dll file version is higher than
 
 ### [Building and Running the Sample Code](#building-and-running-the-sample-code)
 
-Dynamixel SDK example code for LabVIEW uses the library files(.dll for Windows) built in C language.
+DYNAMIXEL SDK example code for LabVIEW uses the library files(.dll for Windows) built in C language.
 
-Each released Dynamixel SDK have latest library files in:  
+Each released DYNAMIXEL SDK have latest library files in:  
 `[DynamixelSDK folder]/c/build/[winXX]/output/dxl_xYY_c.dll`
 
 which were built by its own source code.

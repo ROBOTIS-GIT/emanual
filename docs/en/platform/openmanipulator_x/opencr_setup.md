@@ -24,14 +24,14 @@ On the other hands, when operating with OpenCR, the OpenCR becomes a main contro
 {: .notice--danger}
 
 OpenMANIPULATOR-X is compatible with **OpenCR**. We offer API to easily control manipulator.
-This API supports Dynamixel, Dynamixel X including protocol 1.0 and 2.0. Furthermore, this code can be used for Friends of OpenMANIPULATOR.
+This API supports DYNAMIXEL, DYNAMIXEL X including protocol 1.0 and 2.0. Furthermore, this code can be used for Friends of OpenMANIPULATOR.
 User can make thier code in **Arduino IDE** and simulate or control using **Processing** GUI.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fT1Wv6qHknI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## [Connection](#connection)
 
-Connect micro USB (connected to PC), Dynamixel(OpenMANIPULATOR), and 12V Power to OpenCR as shown below.
+Connect micro USB (connected to PC), DYNAMIXEL(OpenMANIPULATOR), and 12V Power to OpenCR as shown below.
 
 <img src="/assets/images/platform/openmanipulator_x/OpenManipulator_opencr_setup.png" width="500">
 

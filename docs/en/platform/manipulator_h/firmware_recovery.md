@@ -17,14 +17,14 @@ page_number: 9
 
 # [Firmware Recovery](#firmware-recovery)
 
-When Dynamixel detection fails ensure is properly wired. If problems persists **restore Dynamixel firmware** (shown below).
+When DYNAMIXEL detection fails ensure is properly wired. If problems persists **restore DYNAMIXEL firmware** (shown below).
 
-**WARNING** : After firmware restoration you will need to set ID and baud rate values again. Always make sure to set USB2Dynamixel switch to “485.”
+**WARNING** : After firmware restoration you will need to set ID and baud rate values again. Always make sure to set USB2DYNAMIXEL switch to “485.”
 {: .notice--warning}
 
 1. Restoring firmware
-  - From Dynamixel Wizard click on the  icon to begin.
-  - Select the corresponding COM port number for USB2Dynamixel.
+  - From DYNAMIXEL Wizard click on the  icon to begin.
+  - Select the corresponding COM port number for USB2DYNAMIXEL.
 
     ![](/assets/images/platform/manipulator_h/manipulator_h_076.jpg)
 
@@ -32,17 +32,17 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
 
     ![](/assets/images/platform/manipulator_h/manipulator_h_077.jpg)
 
-3. Always connect one Dynamixel at a time.
+3. Always connect one DYNAMIXEL at a time.
 
     ![](/assets/images/platform/manipulator_h/manipulator_h_078.jpg)
 
 4. Pick the COM port number
-  - With an incorrect number Dynamixel cannot be automatically detected. Always make sure to get the port number right.
+  - With an incorrect number DYNAMIXEL cannot be automatically detected. Always make sure to get the port number right.
   - Click on Search.
 
     ![](/assets/images/platform/manipulator_h/manipulator_h_079.jpg)
 
-5. Disconnect and connect Dynamixel
+5. Disconnect and connect DYNAMIXEL
   - The Next button should become clickable
 
     ![](/assets/images/platform/manipulator_h/manipulator_h_080.jpg)
@@ -68,3 +68,4 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
     ![](/assets/images/platform/manipulator_h/manipulator_h_086.jpg)
 
 **All Control Table settings are set to default values.**
+DYNAMIXEL

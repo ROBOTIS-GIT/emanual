@@ -13,18 +13,18 @@ layout: popup
 ```
 
 - Description
-This message includes basic information of Dynamixel
+This message includes basic information of DYNAMIXEL
 
   - `DynamixelLoadInfo load_info`([dynamixel_workbench_msgs/DynamixelLoadInfo])
-&emsp;&emsp; Information for loading Dynamixel
+&emsp;&emsp; Information for loading DYNAMIXEL
 
   - `string model_name`
-&emsp;&emsp; Model name of Dynamixel
+&emsp;&emsp; Model name of DYNAMIXEL
 
   - `uint16 model_number`
-&emsp;&emsp; Model number of Dynamixel
+&emsp;&emsp; Model number of DYNAMIXEL
 
   - `uint8 model_id`
-&emsp;&emsp; Model ID of Dynamixel
+&emsp;&emsp; Model ID of DYNAMIXEL
 
 [dynamixel_workbench_msgs/DynamixelLoadInfo]: /docs/en/popup/dynamixel_workbench_msgs_DynamixelLoadInfo/

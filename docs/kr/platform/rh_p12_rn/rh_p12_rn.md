@@ -38,29 +38,29 @@ page_number: 1
 
 # [주요 사양](#주요-사양)
 
-| 항목                | 사양                                                                                           |
-|:--------------------|:-----------------------------------------------------------------------------------------------|
-| MCU                 | ST CORTEX-M4 (STM32F405 @ 168 Mhz, 32 bit)                                                       |
+| 항목                | 사양                                                                                            |
+|:--------------------|:------------------------------------------------------------------------------------------------|
+| MCU                 | ST CORTEX-M4 (STM32F405 @ 168 Mhz, 32 bit)                                                      |
 | 위치 센서           | Contactless Absolute Encoder (12 bit, 360&deg;)<br />Maker : ams(www.ams.com), Part No : AS5045 |
-| 모터                | Coreless                                                                                       |
-| 통신 속도           | 9,600 bps ~ 10.5 Mbps                                                                          |
-| 제어 알고리즘       | PID Control                                                                                    |
-| 정밀도              | 0.088&deg;                                                                                     |
-| 동작 모드           | 전류제어 모드<br />전류기반 위치제어 모드                                                      |
+| 모터                | Coreless                                                                                        |
+| 통신 속도           | 9,600 bps ~ 10.5 Mbps                                                                           |
+| 제어 알고리즘       | PID Control                                                                                     |
+| 정밀도              | 0.088&deg;                                                                                      |
+| 동작 모드           | 전류제어 모드<br />전류기반 위치제어 모드                                                       |
 | 무게                | 500 g                                                                                           |
 | 스트로크            | 0 ~ 109 mm                                                                                      |
 | 최대 닫기 속도      | 75 mm/s                                                                                         |
-| 감속비              | 1181 : 1                                                                                       |
+| 감속비              | 1181 : 1                                                                                        |
 | 최대 파지력         | 170 N                                                                                           |
 | 권장 가반하중       | 5 kg                                                                                            |
-| 동작 온도           | -5&deg;C ~ 55&deg;C                                                                            |
-| 사용 전압           | 24V                                                                                            |
-| Command Signal      | Digital Packet                                                                                 |
+| 동작 온도           | -5&deg;C ~ 55&deg;C                                                                             |
+| 사용 전압           | 24V                                                                                             |
+| Command Signal      | Digital Packet                                                                                  |
 | Protocol Type       | RS485 Asynchronous Serial Communication<br />(8 bit, 1stop, No Parity)                          |
-| Physical Connection | RS485 Multidrop BUS                                                                            |
-| ID                  | 0 ~ 252                                                                                        |
-| Feedback            | Position, Velocity, Current, Temperature, Input Voltage, etc                                   |
-| Material            | Full Metal Gear, Metal Body                                                                    |
+| Physical Connection | RS485 Multidrop BUS                                                                             |
+| ID                  | 0 ~ 252                                                                                         |
+| Feedback            | Position, Velocity, Current, Temperature, Input Voltage, etc                                    |
+| Material            | Full Metal Gear, Metal Body                                                                     |
 | Standby Current     | 30 mA                                                                                           |
 | Peak Current        | 3.33 A                                                                                          |
 
@@ -234,12 +234,12 @@ External Port 의 용도는 External Port Mode (44, 45, 46, 47) 에 의해서 �
 
 {% capture control_table_externalportdata_warning %}
 `경고` External Port 는 전기적으로 절연되어 있지 않기 때문에, 전기적 사양을 준수하시기 바랍니다.  
-전기적 사양을 초과하거나 신호 연결에 문제가 있는 경우, Dynamixel이 손상될 수 있으므로 각별한 주의가 요구됩니다. External Port를 사용할 때 다음 사항들을 주의하시기 바랍니다.
+전기적 사양을 초과하거나 신호 연결에 문제가 있는 경우, 다이나믹셀이 손상될 수 있으므로 각별한 주의가 요구됩니다. External Port를 사용할 때 다음 사항들을 주의하시기 바랍니다.
 - 정전기(ESD), 단락(Short circuit), 단선(Open circuit) 등에 의한 전기적인 충격이 발생하지 않도록 주의해 주십시오.
 - External Port 커넥터로 물이나 먼지가 유입되지 않도록 주의해 주십시오.
 - External Port를 사용하지 않을 때는 케이블을 제거해 주십시오.
 - External Port에 신호를 연결/해제 할 때는 전원이 꺼진 상태에서 진행해 주십시오.
-- External Port 의 GNDext 핀과 Dynamixel 커넥터의 GND핀을 직접 연결하지 마십시오. 전원 노이즈가 External Port로 유입될 수 있습니다.
+- External Port 의 GNDext 핀과 다이나믹셀 커넥터의 GND핀을 직접 연결하지 마십시오. 전원 노이즈가 External Port로 유입될 수 있습니다.
 {% endcapture %}
 
 <div class="notice--warning">{{ control_table_externalportdata_warning | markdownify }}</div>

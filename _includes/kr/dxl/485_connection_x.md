@@ -6,6 +6,6 @@
 
 ![](/assets/images/dxl/x/x_series_485_pin.png)
 
-전원은 Pin1(-), Pin2(+)를 통하여 다이나믹셀로 공급됩니다.(Dynamixel 전용 Controller에는 위의 회로가 내장되어 있습니다.)  
+전원은 Pin1(-), Pin2(+)를 통하여 다이나믹셀로 공급됩니다.(다이나믹셀 전용 Controller에는 위의 회로가 내장되어 있습니다.)  
 
 {% include kr/dxl/pinout_warning.md %}

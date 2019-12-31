@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/software/dynamixel/dynamixel_sdk/library_setup/matlab_linux/
 sidebar:
-  title: DynamixelSDK
+  title: DYNAMIXEL SDK
   nav: "dynamixel_sdk"
 ---
 
@@ -42,9 +42,9 @@ sidebar:
 
 ### [Building and Running the Sample Code](#building-and-running-the-sample-code)
 
-Dynamixel SDK example code for Python uses the library files(.so for Linux) built in C language.
+DYNAMIXEL SDK example code for Python uses the library files(.so for Linux) built in C language.
 
-Each released Dynamixel SDK have latest library files in `[DynamixelSDK folder]/c/build/[linuxXX]/libdxl_xYY_c.so` which should be built by its own source code.
+Each released DYNAMIXEL SDK have latest library files in `[DynamixelSDK folder]/c/build/[linuxXX]/libdxl_xYY_c.so` which should be built by its own source code.
 
 #### Import libraries
 

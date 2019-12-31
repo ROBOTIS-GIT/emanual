@@ -1,4 +1,4 @@
-This value indicates Dynamixel's time.
+This value indicates DYNAMIXEL's time.
 
 |Unit|Value Range|Description|
 | :---: | :---: | :---: |

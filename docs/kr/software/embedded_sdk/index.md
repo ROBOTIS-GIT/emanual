@@ -17,7 +17,7 @@ sidebar:
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |O|O|O|O|O|O|O|O|X|O|O|O|
 
-- [Download Dynamixel SDK](https://github.com/ROBOTIS-GIT/DynamixelSDK/releases)
+- [Download 다이나믹셀 SDK](https://github.com/ROBOTIS-GIT/DynamixelSDK/releases)
 
 # [로보티즈 매니퓰레이터 SDK](#로보티즈-매니퓰레이터-sdk)
 

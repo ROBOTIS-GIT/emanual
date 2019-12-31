@@ -210,19 +210,19 @@ XM/XH 시리즈를 R+Task2.0이나 R+Motion2.0에서 사용하기 위해서는 �
 
   ![](/assets/images/sw/rplus2/manager/rplusmanager2_30_kr.jpg)
 
-### Dynamixel Channel 설정하기
+### 다이나믹셀 Channel 설정하기
 
-1. R+ Manager 2.0을 실행하여 Dynamixel2.0 제품을 선택한 후, 업데이트 & 테스트 메뉴를 실행합니다.
+1. R+ Manager 2.0을 실행하여 DYNAMIXEL 2.0 제품을 선택한 후, 업데이트 & 테스트 메뉴를 실행합니다.
 
     ![](/assets/images/sw/rplus2/manager/rplusmanager2_31_kr.jpg)
 
 2. OpenCM9.04에 LN-101 또는 BT-210(혹은 BT-110)을 사용하여 PC와 연결한 후, OpenCM 485 EXP의 전원을 켭니다.
-3. 안내에 따라 제품을 검색하면 OpenCM9.04가 검색됩니다. (처음에는 OpenCM9.04의 Dynamixel Channel 값이 Default로 설정되어 있어 XM/XH시리즈가 검색되지 않습니다.)
+3. 안내에 따라 제품을 검색하면 OpenCM9.04가 검색됩니다. (처음에는 OpenCM9.04의 DYNAMIXEL Channel 값이 Default로 설정되어 있어 XM/XH시리즈가 검색되지 않습니다.)
 
     ![](/assets/images/sw/rplus2/manager/rplusmanager2_32_kr.jpg)
 
 4. 제품을 업데이트하는 과정을 거치면 컨트롤 테이블이 실행됩니다.
-5. 컨트롤 테이블 항목에서 Dynamixel Channel 값을 EXP Board로 설정한 후 저장합니다.
+5. 컨트롤 테이블 항목에서 DYNAMIXEL Channel 값을 EXP Board로 설정한 후 저장합니다.
 
     ![](/assets/images/sw/rplus2/manager/rplusmanager2_33_kr.jpg)
 
@@ -309,7 +309,7 @@ BT-210, BT-110을 이용하면 무선으로 펌웨어 관리를 진행하실 수
 - [ROBOTIS SMART2]
 - [ROBOTIS IoT]
 - [ROBOTIS MINI]
-- Dynamixel 2.0 시리즈 ([XL-320, XM시리즈, XH시리즈] / [Pro시리즈])
+- 다이나믹셀 2.0 시리즈 ([XL-320, XM시리즈, XH시리즈] / [Pro시리즈] / [PRO+시리즈])
 - 그 외 [CM-150, CM-200, OpenCM9.04, OpenCM7.0]을 사용하여 만든 사용자 로봇
 
 AX시리즈, MX시리즈, RX시리즈, DX시리즈, EX시리즈, CM-530, CM-510, CM-700, CM-100A는 지원하지 않습니다. (V2.0.0 기준)  
@@ -330,13 +330,14 @@ AX시리즈, MX시리즈, RX시리즈, DX시리즈, EX시리즈, CM-530, CM-510,
 
 ### 다이나믹셀이 잘 검색되지 않습니다. 어떻게 해야 하나요?
 
-- USB2Dynamixel의 통신 모드 스위치가 제대로 설정되어 있는지 확인하세요.
+- USB2DYNAMIXEL의 통신 모드 스위치가 제대로 설정되어 있는지 확인하세요.
 - 다이나믹셀의 연결을 하나씩만 제거하며 시도해보세요.
 - 다이나믹셀의 ID가 겹칠 경우 동작이 원활하지 않을 수 있습니다.
 - 더 자세한 사항은 고객지원 또는 Q&A게시판으로 문의바랍니다.
 
 [XL-320, XM시리즈, XH시리즈]: /docs/kr/dxl/x/
 [Pro시리즈]: /docs/kr/dxl/pro/
+[Pro+시리즈]: /docs/kr/dxl/pro_plus/
 [ROBOTIS DREAM]: /docs/kr/edu/
 [ROBOTIS SMART]: /docs/kr/edu/
 [ROBOTIS SMART2]: /docs/kr/edu/

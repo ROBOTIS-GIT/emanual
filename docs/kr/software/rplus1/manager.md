@@ -1023,7 +1023,7 @@ AX-S1에는 버저가 장착되어 있습니다. 버저 울림 시간을 설정�
 로보 플러스 매니저에서 Zig2Serial을 이용하여 Zig-100모듈을 관리할 수 있습니다. 관리 방법은 다음과 같습니다.
 
 1. 먼저 Zig2Serial에 Zig-100을 장착한 후, PC의 시리얼 포트를 Zig2Serial과 연결합니다. ([Zig2Serial - Zig100 연결하기])  
-  다음 그림과 같이 시리얼 포트가 없는 경우 USB2Dynamixel을 이용할 수 있습니다.
+  다음 그림과 같이 시리얼 포트가 없는 경우 USB2DYNAMIXEL을 이용할 수 있습니다.
 
     ![img](/assets/images/sw/rplus1/manager/zig2serial_u2d.png)
 

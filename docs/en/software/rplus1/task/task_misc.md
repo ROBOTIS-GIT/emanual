@@ -247,7 +247,7 @@ The following table provides a list of errors you may see while writing codes an
 
 |Error Code|Description|Output Example|
 | :---: | :--- | :--- |
-|8100|Trying to communicate with an unconnected Dynamixel ID.<br>If it is connected, please check the cable again.|**{[ERROR:8100:0005:03]}**<br>8100 : Error Code<br>0005 : The Dynamixel ID<br>03 : Confidential Information|
+|8100|Trying to communicate with an unconnected DYNAMIXEL ID.<br>If it is connected, please check the cable again.|**{[ERROR:8100:0005:03]}**<br>8100 : Error Code<br>0005 : The DYNAMIXEL ID<br>03 : Confidential Information|
 |0009|Too many consecutive function calls. (More than 6 times)|**{[ERROR:0009:0033:06]}**<br>0009 : Error Code<br>0033 :Confidential Information<br>06 : Confidential Information|
 |8001|Attempting to read an address of the controller designated as "write only".|**{[ERROR:8001:000C:02]}**<br>8001 : Error Code<br>000C : Confidential Information<br>02 : Confidential Information|
 |8002|Attempting to write at an address of the controller designated as "read only".|**{[ERROR:8002:0009:02]}**<br>8002 : Error Code<br>0009 : Confidential Information<br>02 :  Confidential Information|

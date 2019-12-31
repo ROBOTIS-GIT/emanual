@@ -817,7 +817,7 @@ More information on **Key-Frame**, **Motion Unit** and **Motion** is available a
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_115.jpg)
 
-- **Turn on joint LED automatically** : used to turn on/off the DYNAMIXEL LED while a Motion is being executed. This feature is only supported in OpenCM 9.04
+- **Turn on joint LED automatically** : used to turn on/off DYNAMIXEL LED while a Motion is being executed. This feature is only supported in OpenCM 9.04
 - The following is an example of using the “turn on joint LED automatically” function when executing a Motion.
 - The following is an example of executing a Motion that is saved in the Controller.
 
@@ -969,27 +969,27 @@ When playing a melody, the Buzzer timer should be set as the melody’s run time
 
 ## [DYNAMIXEL](#dynamixel)
 
-These are the parameters for reading or writing values in the DYNAMIXEL Control Table. Please refer to the DYNAMIXEL Control Table for more details.
+These are the parameters for reading or writing values in DYNAMIXEL Control Table. Please refer to DYNAMIXEL Control Table for more details.
 
 ### DYNAMIXEL actuator
 
-- **Turn Torque On/Off** : used to turn the Dynamixel Torque on/off
+- **Turn Torque On/Off** : used to turn DYNAMIXEL Torque on/off
   Torque is turned on when True, Torque is turned off when False.
 
-- The following is an example of turning on the Torque of Dynamixel with ID number 1 when the Controller’s button is pressed.
+- The following is an example of turning on the Torque of DYNAMIXEL with ID number 1 when the Controller’s button is pressed.
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_142.jpg)
 
-- **LED** : used to turn the Dynamixel LED on/off  
+- **LED** : used to turn DYNAMIXEL LED on/off  
   LED is turned on when True, LED is turned off when False.
 
-- **CW margin / CCW margin** : used to read/configure the Dynamixel Margin value  
+- **CW margin / CCW margin** : used to read/configure DYNAMIXEL Margin value  
   The range of the value is from 0 to 255, but it is recommended not to change the default value (1).  
-  Please refer to the Dynamixel Control Table for more detail.
+  Please refer to DYNAMIXEL Control Table for more detail.
 
-- **CW slope / CCW slope** : used to read/configure the Dynamixel Slope value  
+- **CW slope / CCW slope** : used to read/configure DYNAMIXEL Slope value  
   There are a total of seven phases which the value can be set to, and the representative values of each phase are set as in the table below.  
-  Please refer to the Dynamixel Control Table for more detail.
+  Please refer to DYNAMIXEL Control Table for more detail.
 
   | Level |    Real Data Value    | Representative Data Value |
   |:-----:|:---------------------:|:-------------------------:|
@@ -1001,27 +1001,27 @@ These are the parameters for reading or writing values in the DYNAMIXEL Control 
   |   6   | 64(0x40) ~ 127(0x7F)  |         64 (0x40)         |
   |   7   | 128(0x80) ~ 254(0xFE) |        128 (0x80)         |
 
-- **P gain / I gain/ D gain** : used to read/configure the Dynamixel PID values  
+- **P gain / I gain/ D gain** : used to read/configure DYNAMIXEL PID values  
    P gain refers to Proportional Gain, for which the smaller the value is the larger the clearance gets, and the power level decreases near the target location.  
    I gain refers to Integral Gain, and D gain refers to Derivative Gain.
 
-- **Target position** : used to read/configure the Dynamixel target position  
+- **Target position** : used to read/configure DYNAMIXEL target position  
    The “motor position value” control can be used to designate the angle position as shown below.
 
    ![](/assets/images/sw/rplus2/task/roboplus_task2_143.jpg)
 
-- **Moving speed** : used to read/configure the Dynamixel speed  
+- **Moving speed** : used to read/configure DYNAMIXEL speed  
    The “motor control value” control can be used to designate the rotation direction and power value as shown below.
 
    ![](/assets/images/sw/rplus2/task/roboplus_task2_144.jpg)
 
-- **Torque limit** : used to read/configure the Dynamixel torque limit
-- **Current position** : used to read the Dynamixel current position
-- **Current speed** : used to read the Dynamixel current speed
-- **Current weight** : used to read the Dynamixel current weight
-- **Current voltage** : used to read the Dynamixel current voltage
-- **Current temperature** : used to read the Dynamixel current temperature
-- **Check movement** : used to read the Dynamixel movement status. Returns True for movement, False for no movement.
+- **Torque limit** : used to read/configure DYNAMIXEL torque limit
+- **Current position** : used to read DYNAMIXEL current position
+- **Current speed** : used to read DYNAMIXEL current speed
+- **Current weight** : used to read DYNAMIXEL current weight
+- **Current voltage** : used to read DYNAMIXEL current voltage
+- **Current temperature** : used to read DYNAMIXEL current temperature
+- **Check movement** : used to read DYNAMIXEL movement status. Returns True for movement, False for no movement.
 
 - **Parameters that can be used for DX/RX/AX series** : Turn torque on/off, LED, CW margin / CCW margin, CW slope / CCW slope, Target position, Moving speed, Torque limit, Current position, Current speed, Current weight, Current voltage, Current temperature, Check movement
 
@@ -1065,11 +1065,11 @@ Use can check the value while looking at the screen as shown below.
 
 ### Custom
 
-- User can access the address of an external device such as a Dynamixel directly to perform read/write tasks.
+- User can access the address of an external device such as DYNAMIXEL directly to perform read/write tasks.
 
 - User can read/write by selecting the specified address in units of Byte, Word, or DWord.Write or read in Byte or DWORD variable to write/read on user accessed address
 
-- Please refer to the Dynamixel Control Table for more detail.
+- Please refer to DYNAMIXEL Control Table for more detail.
 
 ## [Common](#common)
 

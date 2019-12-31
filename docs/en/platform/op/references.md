@@ -43,25 +43,25 @@ page_number: 5
 
 - Main Controller (fit-PC2i)
 
-|Feature|Specifications|
-|:---:|:---:|
-|CPU|Intel Atom Processor: Z530 - 1.6Ghz @533MHz FSB L2-512KB(dynamic sizing),<br />L1-32KB IC, 24KB DC. Intel Deep Power Down(C6) technology support|
-|Chipset|Poulsbo US15 Intel System Controller Hub (INTEL SCH)|
-|Memory|1GB DDR2, 533MHz, 64-bit|
-|Solid State Disk|3.6GB NAND flash disk|
-|Display Interface|SDVO based DVI interface(up to 1920x1080). Hotplug support.|
-|Audio|Realtek ALC260, High Definition Audio, Line Out, shared line-in / mic-in|
-|Ethernet|based on Gigabit PCI-Express controller Realtek RTL8111|
-|WiFi|802.11 b/g/n capabilities, using RaLink RT3070 USB module. Up to 150Mbps, 2.4GHz band.|
-|USB|2 external USB ports|
-|BIOS|Phoenix SecureCore BIOS|
-|SDIO slot|mini SD connector supporting SDIO1.1 and MMC4.1|
-|Active consumption|5-7W depending on CPU load|
-|Dimensions|104 x 96 x 23 mm|
-|MTBF|> 100,000 hours|
-|Operation temperature|0&deg;C to 70&deg;C|
-|Storage temperature|-40&deg;C to 85&deg;C|
-|Relative humidity	|10% to 90% (operation)<br />5% to 95% (storage)|
+|        Feature        |                                                                  Specifications                                                                  |
+|:---------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------:|
+|          CPU          | Intel Atom Processor: Z530 - 1.6Ghz @533MHz FSB L2-512KB(dynamic sizing),<br />L1-32KB IC, 24KB DC. Intel Deep Power Down(C6) technology support |
+|        Chipset        |                                               Poulsbo US15 Intel System Controller Hub (INTEL SCH)                                               |
+|        Memory         |                                                             1GB DDR2, 533MHz, 64-bit                                                             |
+|   Solid State Disk    |                                                              3.6GB NAND flash disk                                                               |
+|   Display Interface   |                                           SDVO based DVI interface(up to 1920x1080). Hotplug support.                                            |
+|         Audio         |                                     Realtek ALC260, High Definition Audio, Line Out, shared line-in / mic-in                                     |
+|       Ethernet        |                                             based on Gigabit PCI-Express controller Realtek RTL8111                                              |
+|         WiFi          |                              802.11 b/g/n capabilities, using RaLink RT3070 USB module. Up to 150Mbps, 2.4GHz band.                              |
+|          USB          |                                                               2 external USB ports                                                               |
+|         BIOS          |                                                             Phoenix SecureCore BIOS                                                              |
+|       SDIO slot       |                                                 mini SD connector supporting SDIO1.1 and MMC4.1                                                  |
+|  Active consumption   |                                                            5-7W depending on CPU load                                                            |
+|      Dimensions       |                                                                 104 x 96 x 23 mm                                                                 |
+|         MTBF          |                                                                 > 100,000 hours                                                                  |
+| Operation temperature |                                                               0&deg;C to 70&deg;C                                                                |
+|  Storage temperature  |                                                              -40&deg;C to 85&deg;C                                                               |
+|   Relative humidity   |                                                 10% to 90% (operation)<br />5% to 95% (storage)                                                  |
 
 You may download CompuLab's reference guide with detailed specifications [here](http://sourceforge.net/projects/darwinop/files/Hardware/Electronics/Main%20Controller/DARwIn-OP_Main%20Controller%20Reference%20Guide.pdf/download).
 You can also get information on the [speaker](http://sourceforge.net/projects/darwinop/files/Hardware/Electronics/Main%20Controller/Datasheets/Sound/DARwIn-OP_Speaker.pdf/download), [microphones](http://sourceforge.net/projects/darwinop/files/Hardware/Electronics/Main%20Controller/Datasheets/Sensor/DARwIn-OP_Mic.pdf/download), and [camera](http://www.logitech.com/en-us/webcam-communications/webcams/devices/6600).
@@ -71,14 +71,14 @@ You can also get information on the [speaker](http://sourceforge.net/projects/da
   - Actuator Interface (TTL or RS-485 (5x) each)
   - Converters (USB-to-Serial, ADC)
 
-- Actuator (Dynamixel [MX-28])
+- Actuator (DYNAMIXEL [MX-28])
   - Stall torque 24kgf.cm @ 12V
   - Maxon RE-Max customized DC motor
   - 193:1 reduction ratio
   - Up to 3Mbps buffered TTL interface
   - User programmable PID Gain
   - Up to 4096 resolution absolute encoder
-  - [Dynamixel Protocol 1.0]
+  - [DYNAMIXEL Protocol 1.0]
 
 - Interface
   - 3 buttons
@@ -127,20 +127,20 @@ For more information on the connector, please refer to the [MX-28 Connector Info
 
 ##### Features
 
-|Feature|Specifications|
-|:---:|:---:|
-|CPU	|STMicroelectronics 32F103RE ARM Cortex 32-bit CPU (clocked @ 72MHz)<br />(512KB Flash, 64KB SRAM )|
-|Interface|5 x LED , 2 x RGB LED, 3 x Button, 1 x Buzzer|
-|External ports|13 x ADC /I/O Ports|
-|Sensor|3-axis gyroscope , 3-axis accelerometer, supply voltage sensor|
-|Communication|USB Port, Serial Port , 5x TTL Ports (for Dynamixel)|
-|Audio & Mic Amp|Audio amp gain : 20, mic amp gain : 2027|
-|ETC|Dynamixel Power Control Unit, Head board port, Interface board port.|
-|External supply voltage|8V ~ 16.8v|
-|Current consumption|Maximum 150mA , Standby 50mA|
-|Dimensions|80.0mm x 75.0mm x 20.0mm|
-|Operation temperature|-65&deg;C to +80&deg;C|
-|Weight|51g|
+|         Feature         |                                           Specifications                                           |
+|:-----------------------:|:--------------------------------------------------------------------------------------------------:|
+|           CPU           | STMicroelectronics 32F103RE ARM Cortex 32-bit CPU (clocked @ 72MHz)<br />(512KB Flash, 64KB SRAM ) |
+|        Interface        |                           5 x LED , 2 x RGB LED, 3 x Button, 1 x Buzzer                            |
+|     External ports      |                                        13 x ADC /I/O Ports                                         |
+|         Sensor          |                   3-axis gyroscope , 3-axis accelerometer, supply voltage sensor                   |
+|      Communication      |                        USB Port, Serial Port , 5x TTL Ports (for DYNAMIXEL)                        |
+|     Audio & Mic Amp     |                              Audio amp gain : 20, mic amp gain : 2027                              |
+|           ETC           |                DYNAMIXEL Power Control Unit, Head board port, Interface board port.                |
+| External supply voltage |                                             8V ~ 16.8v                                             |
+|   Current consumption   |                                    Maximum 150mA , Standby 50mA                                    |
+|       Dimensions        |                                      80.0mm x 75.0mm x 20.0mm                                      |
+|  Operation temperature  |                                       -65&deg;C to +80&deg;C                                       |
+|         Weight          |                                                51g                                                 |
 
 ##### Control Table
 Control Table consists of data regarding the current status and operation of CM-730. The user can control CM-730 by changing data of Control Table via Instruction packet.
@@ -163,70 +163,70 @@ In the Control table, some data share the same name, but they are attached with 
 
 ##### EEPROM Area
 
-|Address|Name|Description|Access|Init Value|
-|:---:|:---:|:---:|:---:|:---:|
-|0 (0X00)|Model Number(L)|model number low byte|R|0(0X00)|
-|1 (0X01)|Model Number(H)|model number high byte|R|115 (0X73)|
-|2 (0X02)|Version of Firmware|firmware version|R|-|
-|3 (0X03)|ID|Dynamixel ID|RW|200 (0XC8)|
-|4 (0X04)|Baud Rate|Dynamixel baud rate|RW|1 (0X01)|
-|5 (0X05)|Return Delay Time|Return Delay Time|RW|0 (0X0)|
-|16 (0X10)|Status Return Level|Status Return Level|RW|2 (0X02)|
+|  Address  |        Name         |      Description       | Access | Init Value |
+|:---------:|:-------------------:|:----------------------:|:------:|:----------:|
+| 0 (0X00)  |   Model Number(L)   | model number low byte  |   R    |  0(0X00)   |
+| 1 (0X01)  |   Model Number(H)   | model number high byte |   R    | 115 (0X73) |
+| 2 (0X02)  | Version of Firmware |    firmware version    |   R    |     -      |
+| 3 (0X03)  |         ID          |      DYNAMIXEL ID      |   RW   | 200 (0XC8) |
+| 4 (0X04)  |      Baud Rate      |  DYNAMIXEL baud rate   |   RW   |  1 (0X01)  |
+| 5 (0X05)  |  Return Delay Time  |   Return Delay Time    |   RW   |  0 (0X0)   |
+| 16 (0X10) | Status Return Level |  Status Return Level   |   RW   |  2 (0X02)  |
 
 ##### RAM Area
 
-|Address|Name|Description|Access|Init Value|
-|:---:|:---:|:---:|:---:|:---:|
-|24 (0X18)|Dynamixel Power|Dynamixel On/Off|RW|0 (0X00)|
-|25 (0X19)|LED Pannel|LED Pannel On/Off|RW|0 (0X00)|
-|26 (0X1A)|LED 5 (L)|LED 5 low byte|RW|0 (0X00)|
-|27 (0X1B)|LED 5 (H)|LED 5 high byte|RW|0 (0X01)|
-|28 (0X1C)|LED 6 (L)|LED 6 low byte|RW|0 (0X00)|
-|29 (0X1D)|LED 6 (H)|LED 6 high byte|RW|0 (0X01)|
-|30 (0X1E)|Button|Button status|R|-|
-|38 (0X26)|Gyro_Z(L)|Gyroscope Z-axis low byte|R|-|
-|39 (0X27)|Gyro_Z(H)|Gyroscope Z-axis high byte|R|-|
-|40 (0X28)|Gyro_Y(L)|Gyroscope Y-axis low byte|R|-|
-|41 (0X29)|Gyro_Y(H)|Gyroscope Y-axis high byte|R|-|
-|42 (0X2A)|Gyro_X(L)|Gyroscope X-axis low byte|R|-|
-|43 (0X2B)|Gyro_X(H)|Gyroscope X-axis high byte|R|-|
-|44 (0X2C)|ACC_X(L)|Accelerometer X-axis low byte|R|-|
-|45 (0X2D)|ACC_X(H)|Accelerometer X-axis high byte|R|-|
-|46 (0X2E)|ACC_Y(L)|Accelerometer Y-axis low byte|R|-|
-|47 (0X2F)|ACC_Y(H)|Accelerometer Y-axis high byte|R|-|
-|48 (0X30)|ACC_Z(L)|Accelerometer Z-axis low byte|R|-|
-|49 (0x31)|ACC_Z(H)|Accelerometer Z-axis high byte|R|-|
-|50 (0X32)|Present Voltage|Current Voltage|R|-|
-|51 (0X33)|MIC 1 (L)|Mic 1 low byte|R|-|
-|52(0x34)|MIC 1 (H)|Mic 1 high byte|R|-|
-|53(0x35)|ADC 2(L)|ADC channel 2 low byte|R|-|
-|54(0x36)|ADC 2(H)|ADC channel 2 high byte|R|-|
-|55(0x37)|ADC 3(L)|ADC channel 3 low byte|R|-|
-|56(0x38)|ADC 3(H)|ADC channel 3 high vyte|R|-|
-|57(0x39)|ADC 4(L)|ADC channel 4 low byte|R|-|
-|58(0x3A)|ADC 4(H)|ADC channel 4 high byte|R|-|
-|59(0x3B)|ADC 5(L)|ADC channel 5 low byte|R|-|
-|60(0x3C)|ADC 5(H)|ADC channel 5 high byte|R|-|
-|61(0x3D)|ADC 6(L)|ADC channel 6 low byte|R|-|
-|62(0x3E)|ADC 6(H)|ADC channel 6 high byte|R|-|
-|63(0x3F)|ADC 7(L)|ADC channel 7 low byte|R|-|
-|64(0x40)|ADC 7(H)|ADC channel 7 high byte|R|-|
-|65(0x41)|ADC 8(L)|ADC channel 8 low byte|R|-|
-|66(0x42)|ADC 8(H)|ADC channel 8 high byte|R|-|
-|67(0x43)|MIC 2 (L)|Mic 2 low byte|R|-|
-|68(0x44)|MIC 2 (H)|Mic 2 high byte|R|-|
-|69(0x45)|ADC 10(L)|ADC channel 10 low byte|R|-|
-|70(0x46)|ADC 10(H)|ADC channel 10 high byte|R|-|
-|71(0x47)|ADC 11(L)|ADC channel 11 low byte|R|-|
-|72(0x48)|ADC 11(H)|ADC channel 11 high byte|R|-|
-|73(0x49)|ADC 12(L)|ADC channel 12 low byte|R|-|
-|74(0x4A)|ADC 12(H)|ADC channel 12 high byte|R|-|
-|75(0x4B)|ADC 13(L)|ADC channel 13 low byte|R|-|
-|76(0x4C)|ADC 13(H)|ADC channel 13 high byte|R|-|
-|77(0x4D)|ADC 14(L)|ADC channel 14 low byte|R|-|
-|78(0x4E)|ADC 14(H)|ADC channel 14 high byte|R|-|
-|79(0x4F)|ADC 15(L)|ADC channel 15 low byte|R|-|
-|80(0x50)|ADC 15(H)|ADC channel 15 high byte|R|-|
+|  Address  |      Name       |          Description           | Access | Init Value |
+|:---------:|:---------------:|:------------------------------:|:------:|:----------:|
+| 24 (0X18) | DYNAMIXEL Power |        DYNAMIXEL On/Off        |   RW   |  0 (0X00)  |
+| 25 (0X19) |   LED Pannel    |       LED Pannel On/Off        |   RW   |  0 (0X00)  |
+| 26 (0X1A) |    LED 5 (L)    |         LED 5 low byte         |   RW   |  0 (0X00)  |
+| 27 (0X1B) |    LED 5 (H)    |        LED 5 high byte         |   RW   |  0 (0X01)  |
+| 28 (0X1C) |    LED 6 (L)    |         LED 6 low byte         |   RW   |  0 (0X00)  |
+| 29 (0X1D) |    LED 6 (H)    |        LED 6 high byte         |   RW   |  0 (0X01)  |
+| 30 (0X1E) |     Button      |         Button status          |   R    |     -      |
+| 38 (0X26) |    Gyro_Z(L)    |   Gyroscope Z-axis low byte    |   R    |     -      |
+| 39 (0X27) |    Gyro_Z(H)    |   Gyroscope Z-axis high byte   |   R    |     -      |
+| 40 (0X28) |    Gyro_Y(L)    |   Gyroscope Y-axis low byte    |   R    |     -      |
+| 41 (0X29) |    Gyro_Y(H)    |   Gyroscope Y-axis high byte   |   R    |     -      |
+| 42 (0X2A) |    Gyro_X(L)    |   Gyroscope X-axis low byte    |   R    |     -      |
+| 43 (0X2B) |    Gyro_X(H)    |   Gyroscope X-axis high byte   |   R    |     -      |
+| 44 (0X2C) |    ACC_X(L)     | Accelerometer X-axis low byte  |   R    |     -      |
+| 45 (0X2D) |    ACC_X(H)     | Accelerometer X-axis high byte |   R    |     -      |
+| 46 (0X2E) |    ACC_Y(L)     | Accelerometer Y-axis low byte  |   R    |     -      |
+| 47 (0X2F) |    ACC_Y(H)     | Accelerometer Y-axis high byte |   R    |     -      |
+| 48 (0X30) |    ACC_Z(L)     | Accelerometer Z-axis low byte  |   R    |     -      |
+| 49 (0x31) |    ACC_Z(H)     | Accelerometer Z-axis high byte |   R    |     -      |
+| 50 (0X32) | Present Voltage |        Current Voltage         |   R    |     -      |
+| 51 (0X33) |    MIC 1 (L)    |         Mic 1 low byte         |   R    |     -      |
+| 52(0x34)  |    MIC 1 (H)    |        Mic 1 high byte         |   R    |     -      |
+| 53(0x35)  |    ADC 2(L)     |     ADC channel 2 low byte     |   R    |     -      |
+| 54(0x36)  |    ADC 2(H)     |    ADC channel 2 high byte     |   R    |     -      |
+| 55(0x37)  |    ADC 3(L)     |     ADC channel 3 low byte     |   R    |     -      |
+| 56(0x38)  |    ADC 3(H)     |    ADC channel 3 high vyte     |   R    |     -      |
+| 57(0x39)  |    ADC 4(L)     |     ADC channel 4 low byte     |   R    |     -      |
+| 58(0x3A)  |    ADC 4(H)     |    ADC channel 4 high byte     |   R    |     -      |
+| 59(0x3B)  |    ADC 5(L)     |     ADC channel 5 low byte     |   R    |     -      |
+| 60(0x3C)  |    ADC 5(H)     |    ADC channel 5 high byte     |   R    |     -      |
+| 61(0x3D)  |    ADC 6(L)     |     ADC channel 6 low byte     |   R    |     -      |
+| 62(0x3E)  |    ADC 6(H)     |    ADC channel 6 high byte     |   R    |     -      |
+| 63(0x3F)  |    ADC 7(L)     |     ADC channel 7 low byte     |   R    |     -      |
+| 64(0x40)  |    ADC 7(H)     |    ADC channel 7 high byte     |   R    |     -      |
+| 65(0x41)  |    ADC 8(L)     |     ADC channel 8 low byte     |   R    |     -      |
+| 66(0x42)  |    ADC 8(H)     |    ADC channel 8 high byte     |   R    |     -      |
+| 67(0x43)  |    MIC 2 (L)    |         Mic 2 low byte         |   R    |     -      |
+| 68(0x44)  |    MIC 2 (H)    |        Mic 2 high byte         |   R    |     -      |
+| 69(0x45)  |    ADC 10(L)    |    ADC channel 10 low byte     |   R    |     -      |
+| 70(0x46)  |    ADC 10(H)    |    ADC channel 10 high byte    |   R    |     -      |
+| 71(0x47)  |    ADC 11(L)    |    ADC channel 11 low byte     |   R    |     -      |
+| 72(0x48)  |    ADC 11(H)    |    ADC channel 11 high byte    |   R    |     -      |
+| 73(0x49)  |    ADC 12(L)    |    ADC channel 12 low byte     |   R    |     -      |
+| 74(0x4A)  |    ADC 12(H)    |    ADC channel 12 high byte    |   R    |     -      |
+| 75(0x4B)  |    ADC 13(L)    |    ADC channel 13 low byte     |   R    |     -      |
+| 76(0x4C)  |    ADC 13(H)    |    ADC channel 13 high byte    |   R    |     -      |
+| 77(0x4D)  |    ADC 14(L)    |    ADC channel 14 low byte     |   R    |     -      |
+| 78(0x4E)  |    ADC 14(H)    |    ADC channel 14 high byte    |   R    |     -      |
+| 79(0x4F)  |    ADC 15(L)    |    ADC channel 15 low byte     |   R    |     -      |
+| 80(0x50)  |    ADC 15(H)    |    ADC channel 15 high byte    |   R    |     -      |
 
 ##### Address Function Help
 
@@ -237,28 +237,28 @@ Represents the Model Number.
 Represents the firmware version.
 
 ###### ID
-Is a unique number to identify Dynamixel.  
+Is a unique number to identify DYNAMIXEL.  
 Values range from 0 (0x00) to 253 (0xFD), Value 254 (0xFE) is used as the Broadcast ID.  
-If the Broadcast ID is used to transmit Instruction Packet, then it can command to all Dynamixels.  
+If the Broadcast ID is used to transmit Instruction Packet, then it can command to all DYNAMIXEL.  
 
-**NOTE** : Please be careful not to duplicate the ID of connected Dynamixels.
+**NOTE** : Please be careful not to duplicate the ID of connected DYNAMIXEL.
 {: .notice}
 
 ###### Baud Rate
 Represents the communication speed. 0 (0x00) to 254 (0xFE) can be used for it. This speed is calculated by using the below formula.  
 Speed(BPS) = 2000000/(Data+1)
 
-|Data|Set BPS|Target BPS|Tolerance|
-|:---:|:---:|:---:|:---:|
-|1|1000000.0|1000000.0|0.000 %|
-|3|500000.0|500000.0|0.000 %|
-|4|400000.0|400000.0|0.000 %|
-|7|250000.0|250000.0|0.000 %|
-|9|200000.0|200000.0|0.000 %|
-|16|117647.1|115200.0|-2.124 %|
-|34|57142.9|57600.0|0.794 %|
-|103|19230.8|19200.0|-0.160 %|
-|207|9615.4|9600.0|-0.160 %|
+| Data |  Set BPS  | Target BPS | Tolerance |
+|:----:|:---------:|:----------:|:---------:|
+|  1   | 1000000.0 | 1000000.0  |  0.000 %  |
+|  3   | 500000.0  |  500000.0  |  0.000 %  |
+|  4   | 400000.0  |  400000.0  |  0.000 %  |
+|  7   | 250000.0  |  250000.0  |  0.000 %  |
+|  9   | 200000.0  |  200000.0  |  0.000 %  |
+|  16  | 117647.1  |  115200.0  | -2.124 %  |
+|  34  |  57142.9  |  57600.0   |  0.794 %  |
+| 103  |  19230.8  |  19200.0   | -0.160 %  |
+| 207  |  9615.4   |   9600.0   | -0.160 %  |
 
 **NOTE** : Maximum Baud Rate error of 3% is within the tolerance of UART communication.
 {: .notice}
@@ -271,27 +271,27 @@ If the data value is delayed by 10, 20 usec the initial value is 250 (0xFA) (i.e
 ###### Status Return Level
 Decides how to return Status packet. There are three possibilities:
 
-|Value|Return of Status Packet|
-|:---:|:---:|
-|0|No return against all commands (Except PING Command)|
-|1|Return only for the READ command|
-|2|Return for all commands|
+| Value |               Return of Status Packet                |
+|:-----:|:----------------------------------------------------:|
+|   0   | No return against all commands (Except PING Command) |
+|   1   |           Return only for the READ command           |
+|   2   |               Return for all commands                |
 
 **NOTE** : When Instruction packet is Broadcast ID, Status packet is not returned regardless of Status return level.
 {: .notice}
 
-###### Dynamixel Power
+###### DYNAMIXEL Power
 
-|Value|Meaning|
-|:---:|:---:|
-|0|Turn off the power of all Dynamixels connected to CM-730.|
-|1|Turn on the power of all Dynamixels connected to CM-730.|
+| Value |                         Meaning                          |
+|:-----:|:--------------------------------------------------------:|
+|   0   | Turn off the power of all DYNAMIXEL connected to CM-730. |
+|   1   | Turn on the power of all DYNAMIXEL connected to CM-730.  |
 
 ###### LED Pannel
 
-|BIT|7 ~ 3 |2|1|0|
-|:---:|:---:|:---:|:---:|:---:|
-|Value|X|LED4|LED3|LED2|
+|  BIT  | 7 ~ 3 |  2   |  1   |  0   |
+|:-----:|:-----:|:----:|:----:|:----:|
+| Value |   X   | LED4 | LED3 | LED2 |
 
 If each bit is SET, applicable LED lights up.  
 If each bit is RESET, applicable LED goes off.  
@@ -299,18 +299,18 @@ EX) When the LED Panel = 3 (00000101), the LED4 and LED2 light up.
 
 ###### LED5 / LED6
 
-|BIT|15|14 ~ 10|9 ~ 5|4 ~ 0|
-|:---:|:---:|:---:|:---:|:---:|
-|Value|X|the value of blue light|the value of green light|the value of red light|
+|  BIT  | 15 |         14 ~ 10         |          9 ~ 5           |         4 ~ 0          |
+|:-----:|:--:|:-----------------------:|:------------------------:|:----------------------:|
+| Value | X  | the value of blue light | the value of green light | the value of red light |
 
 LED HEAD/ LED EYE is 3 color LED. It can represent the value of 32 steps by colors.  
 It can be represent by controling the value of light by colors.
 
 ###### BUTTON STATUS
 
-|BIT|7 ~ 2|1|0|
-|:---:|:---:|:---:|:---:|
-|Value|X|the state value of START button|the state value of MODE button|
+|  BIT  | 7 ~ 2 |                1                |               0                |
+|:-----:|:-----:|:-------------------------------:|:------------------------------:|
+| Value |   X   | the state value of START button | the state value of MODE button |
 
 It is the value which represents the state of buttons.  
 If the bit is SET, it represents that the button is pressed.  
@@ -333,9 +333,9 @@ The Gyroscope and Accelerometer is 10mm distant respectively from the central ax
 
 > Accelerometer
 
-|![](/assets/images/platform/op/op_259.jpg)|![](/assets/images/platform/op/op_260.jpg)|
-|:---:|:---:|
-|The Gyroscope axis in the DARWIN-OP|The Accelerometer axis in DARWIN-OP|
+| ![](/assets/images/platform/op/op_259.jpg) | ![](/assets/images/platform/op/op_260.jpg) |
+|:------------------------------------------:|:------------------------------------------:|
+|    The Gyroscope axis in the DARWIN-OP     |    The Accelerometer axis in DARWIN-OP     |
 
 
 ###### GYRO_X, GYRO_Y, GYRO_Z
@@ -370,20 +370,20 @@ Its range is 0~1023
 
 #### FSR(Force Sensing Resister)
 
-|Feature|Specifications|
-|:---:|:---:|
-|Voltage|9V~12V|
-|Running Temperature|-5&deg;C ~ +80&deg;C|
-|Command Signal|Digital Packet|
-|Protocol Type|Half duplex Asynchronous Serial Communication (8bit,1stop,No Parity)|
-|Link (Physical)|TTL Level Multi Drop (daisy chain type Connector)|
-|ID|254 ID (0~253)|
-|Communication Speed|7,843bps ~ 3 Mbps|
-|Feedback|Position, Temperature, Load, Input Voltage, etc.|
-|Standby current|50 mA|
+|       Feature       |                            Specifications                            |
+|:-------------------:|:--------------------------------------------------------------------:|
+|       Voltage       |                                9V~12V                                |
+| Running Temperature |                         -5&deg;C ~ +80&deg;C                         |
+|   Command Signal    |                            Digital Packet                            |
+|    Protocol Type    | Half duplex Asynchronous Serial Communication (8bit,1stop,No Parity) |
+|   Link (Physical)   |          TTL Level Multi Drop (daisy chain type Connector)           |
+|         ID          |                            254 ID (0~253)                            |
+| Communication Speed |                          7,843bps ~ 3 Mbps                           |
+|      Feedback       |           Position, Temperature, Load, Input Voltage, etc.           |
+|   Standby current   |                                50 mA                                 |
 
 ##### Control Table
-Control Table consists of data regarding the current status and operation of Dynamixel. The user can control Dynamixel by changing data of Control Table via Instruction packet.
+Control Table consists of data regarding the current status and operation of DYNAMIXEL. The user can control DYNAMIXEL by changing data of Control Table via Instruction packet.
 
 ###### EEPROM and RAM
 Data in RAM area is reset to initial values whenever the power is turned on while data in EEPROM area is kept once values are set even if the power is turned off.
@@ -392,7 +392,7 @@ Data in RAM area is reset to initial values whenever the power is turned on whil
 Represents the location of data. To read from or write data to the control table the user should assign the correct address in the Instruction packet.
 
 ###### Access
-Dynamixel has two kinds of data: Read-only data, used mainly for sensing, and read-and-write data used for driving.
+DYNAMIXEL has two kinds of data: Read-only data, used mainly for sensing, and read-and-write data used for driving.
 
 ###### Initial Value
 In case of data in the EEPROM Area, the initial values on the right side of the below Control Table are the factory default settings.  
@@ -403,34 +403,34 @@ In the Control table, some data share the same name, but they are attached with 
 
 ##### EEPROM Area
 
-|Address|Name|Description|Access|Init Value|
-|:---:|:---:|:---:|:---:|:---:|
-|0 (0X00)|Model Number(L)|Lowest byte of model number|R|84 (0X54)|
-|1 (0X01)|Model Number(H)|Highest byte of model number|R|1 (0X01)|
-|2 (0X02)|Version of Firmware|Information on the version of firmware|R|-|
-|3 (0X03)|ID|ID of Dynamixel|RW|100 (0X64)|
-|4 (0X04)|Baud Rate|Baud Rate of Dynamixel|RW|34 (0X22)|
-|5 (0X05)|Return Delay Time|Return Delay Time|RW|250 (0XFA)|
-|16 (0X10)|Status Return Level|Status Return Level|RW|2 (0X02)|
+|  Address  |        Name         |              Description               | Access | Init Value |
+|:---------:|:-------------------:|:--------------------------------------:|:------:|:----------:|
+| 0 (0X00)  |   Model Number(L)   |      Lowest byte of model number       |   R    | 84 (0X54)  |
+| 1 (0X01)  |   Model Number(H)   |      Highest byte of model number      |   R    |  1 (0X01)  |
+| 2 (0X02)  | Version of Firmware | Information on the version of firmware |   R    |     -      |
+| 3 (0X03)  |         ID          |            ID of DYNAMIXEL             |   RW   | 100 (0X64) |
+| 4 (0X04)  |      Baud Rate      |         Baud Rate of DYNAMIXEL         |   RW   | 34 (0X22)  |
+| 5 (0X05)  |  Return Delay Time  |           Return Delay Time            |   RW   | 250 (0XFA) |
+| 16 (0X10) | Status Return Level |          Status Return Level           |   RW   |  2 (0X02)  |
 
 ##### RAM Area
 
-|Address|Name|Description|Access|Init Value|
-|:---:|:---:|:---:|:---:|:---:|
-|25 (0X19)	|LED	|LED On/Off	|RW	|0 (0X00)|
-|26 (0X1A)	|FSR1_L	|Lowest byte of FSR 1 sensor data	|R|	-|
-|27 (0X1B)	|FSR1_H	|Highest byte of FSR 1 sensor data	|R|	-|
-|28 (0X1C)	|FSR2_L	|Lowest byte of FSR 2 sensor data	|R|	-|
-|29 (0X1D)	|FSR2_H	|Highest byte of FSR 2 sensor data	|R|	-|
-|30 (0X1E)	|FSR3_L	|Lowest byte of FSR 3 sensor data	|R|	-|
-|31 (0X1F)	|FSR3_H	|Highest byte of FSR 3 sensor data	|R|	-|
-|32 (0X20)	|FSR4_L	|Lowest byte of FSR 4 sensor data	|R|	-|
-|33 (0X21)	|FSR4_H	|Highest byte of FSR 4 sensor data	|R|	-|
-|34 (0X22)	|FSR_Central_X	|Center point of the X-axis force	|R|	-|
-|35 (0X23)	|FSR_Central_Y	|Center point of the Y-axis force	|R|	-|
-|42 (0X2A)	|Present Voltage	|Current Voltage	|R|	-|
-|44 (0X2C)	|Registered	|Means if Instruction is registered	|R|	0 (0X00)|
-|47 (0X2F)	|Lock	|Locking EEPROM	|RW	|0 (0X00)|
+|  Address  |      Name       |            Description             | Access | Init Value |
+|:---------:|:---------------:|:----------------------------------:|:------:|:----------:|
+| 25 (0X19) |       LED       |             LED On/Off             |   RW   |  0 (0X00)  |
+| 26 (0X1A) |     FSR1_L      |  Lowest byte of FSR 1 sensor data  |   R    |     -      |
+| 27 (0X1B) |     FSR1_H      | Highest byte of FSR 1 sensor data  |   R    |     -      |
+| 28 (0X1C) |     FSR2_L      |  Lowest byte of FSR 2 sensor data  |   R    |     -      |
+| 29 (0X1D) |     FSR2_H      | Highest byte of FSR 2 sensor data  |   R    |     -      |
+| 30 (0X1E) |     FSR3_L      |  Lowest byte of FSR 3 sensor data  |   R    |     -      |
+| 31 (0X1F) |     FSR3_H      | Highest byte of FSR 3 sensor data  |   R    |     -      |
+| 32 (0X20) |     FSR4_L      |  Lowest byte of FSR 4 sensor data  |   R    |     -      |
+| 33 (0X21) |     FSR4_H      | Highest byte of FSR 4 sensor data  |   R    |     -      |
+| 34 (0X22) |  FSR_Central_X  |  Center point of the X-axis force  |   R    |     -      |
+| 35 (0X23) |  FSR_Central_Y  |  Center point of the Y-axis force  |   R    |     -      |
+| 42 (0X2A) | Present Voltage |          Current Voltage           |   R    |     -      |
+| 44 (0X2C) |   Registered    | Means if Instruction is registered |   R    |  0 (0X00)  |
+| 47 (0X2F) |      Lock       |           Locking EEPROM           |   RW   |  0 (0X00)  |
 
 ##### Address Function Help
 
@@ -441,31 +441,31 @@ Represents the Model Number.
 Represents the firmware version.
 
 ###### ID
-Is a unique number to identify Dynamixel.  
+Is a unique number to identify DYNAMIXEL.  
 Values range from 0 (0x00) to 253 (0xFD), Value 254 (0xFE) is used as the Broadcast ID.  
-If the Broadcast ID is used to transmit Instruction Packet, then it can command to all Dynamixels.  
+If the Broadcast ID is used to transmit Instruction Packet, then it can command to all DYNAMIXEL.  
 
 when it's searched as Unknown Device, change the baudrate to 1(1000000).  
 Connect with DARWIN-OP after setting the ID as 111 for the right foot and 112 for the left.
 
-**NOTE** : Please be careful not to duplicate the ID of connected Dynamixels.
+**NOTE** : Please be careful not to duplicate the ID of connected DYNAMIXEL.
 {: .notice}
 
 ###### Baud Rate
 Represents the communication speed. 0 (0x00) to 254 (0xFE) can be used for it. This speed is calculated by using the below formula.  
 Speed(BPS) = 2000000/(Data+1)
 
-|Data|Set BPS|Target BPS|Tolerance|
-|:---:|:---:|:---:|:---:|
-|1|1000000.0|1000000.0|0.000 %|
-|3|500000.0|500000.0|0.000 %|
-|4|400000.0|400000.0|0.000 %|
-|7|250000.0|250000.0|0.000 %|
-|9|200000.0|200000.0|0.000 %|
-|16|117647.1|115200.0|-2.124 %|
-|34|57142.9|57600.0|0.794 %|
-|103|19230.8|19200.0|-0.160 %|
-|207|9615.4|9600.0|-0.160 %|
+| Data |  Set BPS  | Target BPS | Tolerance |
+|:----:|:---------:|:----------:|:---------:|
+|  1   | 1000000.0 | 1000000.0  |  0.000 %  |
+|  3   | 500000.0  |  500000.0  |  0.000 %  |
+|  4   | 400000.0  |  400000.0  |  0.000 %  |
+|  7   | 250000.0  |  250000.0  |  0.000 %  |
+|  9   | 200000.0  |  200000.0  |  0.000 %  |
+|  16  | 117647.1  |  115200.0  | -2.124 %  |
+|  34  |  57142.9  |  57600.0   |  0.794 %  |
+| 103  |  19230.8  |  19200.0   | -0.160 %  |
+| 207  |  9615.4   |   9600.0   | -0.160 %  |
 
 **NOTE** : Maximum Baud Rate error of 3% is within the tolerance of UART communication.
 {: .notice}
@@ -478,25 +478,25 @@ If the data value is delayed by 10, 20 usec the initial value is 250 (0xFA) (i.e
 ###### Status Return Level
 Decides how to return Status packet. There are three possibilities:
 
-|Value|Return of Status Packet|
-|:---:|:---:|
-|0|No return against all commands (Except PING Command)|
-|1|Return only for the READ command|
-|2|Return for all commands|
+| Value |               Return of Status Packet                |
+|:-----:|:----------------------------------------------------:|
+|   0   | No return against all commands (Except PING Command) |
+|   1   |           Return only for the READ command           |
+|   2   |               Return for all commands                |
 
 **NOTE** : When Instruction packet is Broadcast ID, Status packet is not returned regardless of Status return level.
 {: .notice}
 
 ###### LED
 
-|Value|Meaning|
-|:---:|:---:|
-|0|Turns LED off|
-|1|Turns LED on|
+| Value |    Meaning    |
+|:-----:|:-------------:|
+|   0   | Turns LED off |
+|   1   | Turns LED on  |
 
-|![](/assets/images/platform/op/op_fsr.jpg)|
-|:---:|
-|Diagram 1|
+| ![](/assets/images/platform/op/op_fsr.jpg) |
+|:------------------------------------------:|
+|                 Diagram 1                  |
 
 ###### FSR1,FSR2,FSR3,FSR4
 FSR sensor data. `Diagram 1` shows the location of each sensor.  
@@ -516,20 +516,20 @@ Current input voltage. This value is 10 times larger than the actual voltage. Fo
 
 ###### Registered Instruction
 
-|Value|Meaning|
-|:---:|:---:|
-|0|There are no commands transmitted by REG_WRITE|
-|1|There are commands transmitted by REG_WRITE|
+| Value |                    Meaning                     |
+|:-----:|:----------------------------------------------:|
+|   0   | There are no commands transmitted by REG_WRITE |
+|   1   |  There are commands transmitted by REG_WRITE   |
 
 **NOTE** : If **ACTION** command is executed, the value is changed into 0.
 {: .notice}
 
 ###### Lock
 
-|Value|Meaning|
-|:---:|:---:|
-|0|EEPROM area can be modified|
-|1|EEPROM area cannot be modified|
+| Value |            Meaning             |
+|:-----:|:------------------------------:|
+|   0   |  EEPROM area can be modified   |
+|   1   | EEPROM area cannot be modified |
 
 **CAUTION** : If Lock is set to 1, the power must be turned off and then turned on again to change into 0.
 {: .notice--warning}
@@ -737,7 +737,7 @@ CM-730 Firmware source code download : [SourceForge CM730 Firmware](https://sour
 
 ### [MX-28 Firmware Release Note](#mx-28-firmware-release-note)
 
-Dynamixel firmware is **NOT** an open source software.
+DYNAMIXEL firmware is **NOT** an open source software.
 
 #### Ver 30 (0x1E) - 2012.01.05
 
@@ -942,7 +942,7 @@ Please inquire us for information regarding unlisted certifications.
 ### [FCC](#fcc)
 {% include en/dxl/fcc_class_a.md %}
 
-[Dynamixel Monitor]: /docs/en/platform/op/development/#dynamixel-monitor
+[DYNAMIXEL Monitor]: /docs/en/platform/op/development/#dynamixel-monitor
 [Firmware Installer]: /docs/en/platform/op/development/#firmware-installer
 [MX-28]: /docs/en/dxl/mx/mx-28/
-[Dynamixel Protocol 1.0]: /docs/en/dxl/protocol1/
+[DYNAMIXEL Protocol 1.0]: /docs/en/dxl/protocol1/

@@ -2,21 +2,21 @@
 layout: popup
 ---
 
-# [DynamixelWorkbench](#dynamixelworkbench)
+# [DYNAMIXELWorkbench](#dynamixelworkbench)
 
 ## [APIs](#apis)
 
-### Dynamixel Item
-This file has control table of Dynamixel Series (AX, RX, EX, MX, XL, XM, XH, PRO).
+### DYNAMIXEL Item
+This file has control table of DYNAMIXEL Series (AX, RX, EX, MX, XL, XM, XH, PRO).
 
-### Dynamixel tool Class
-This class loads control table and some information in file of Dynamixel item.
+### DYNAMIXEL tool Class
+This class loads control table and some information in file of DYNAMIXEL item.
 
-### Dynamixel Driver Class
-This class includes functions(register, sync and bulk communication) for controlling Dynamixel using [Dynamixel SDK](http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/overview/).
+### DYNAMIXEL Driver Class
+This class includes functions(register, sync and bulk communication) for controlling DYNAMIXEL using [DYNAMIXEL SDK](http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/overview/).
 
-### Dynamixel Workbench Class
-This class helps control Dynamixel with simple functions. It includes many [examples](#workbench-examples) for Dynamixel users.
+### DYNMAIXEL Workbench Class
+This class helps control DYNAMIXEL with simple functions. It includes many [examples](#workbench-examples) for DYNAMIXEL users.
 
 ```c++
 class DynamixelWorkbench
@@ -84,13 +84,13 @@ class DynamixelWorkbench
 
 ### [Workbench Examples](#workbench-examples)
 
-#### [Find Dynamixel](#find-dynamixel)
+#### [Find DYNAMIXEL](#find-dynamixel)
 
-When you get a Dynamixel first, you need to know what ID and Baud rate is.
-This example find out ID and Baud rate of connected Dynamixels.
+When you get DYNAMIXEL first, you need to know what ID and Baud rate is.
+This example find out ID and Baud rate of connected DYNAMIXEL's.
 
-**begin** function set PortHandler and PacketHandler. **scan** function ping all Dynamixels.
-After get Dynamixels, you can check ID and Baudrate of its.
+**begin** function set PortHandler and PacketHandler. **scan** function ping all DYNAMIXEL's.
+After get DYNAMIXEL's, you can check ID and Baudrate of its.
 
 ```c++
 /*******************************************************************************
@@ -159,9 +159,9 @@ void loop()
 ### [Position](#position)
 
 This example shows position control using Dynamixel. You need to set parameters of BAUDRATE and ID.  
-**begin** function set an portHandler and packetHandler. **ping** function get an item of connected Dynamixel.  
+**begin** function set an portHandler and packetHandler. **ping** function get an item of connected DYNAMIXEL.  
 **jointMode** function make joint(position) mode.  
-If Dynamixel is set correctly, **goalPosition** function make it move to position.
+If DYNAMIXEL is set correctly, **goalPosition** function make it move to position.
 
 ```c++
 /*******************************************************************************
@@ -219,10 +219,10 @@ void loop()
 
 ### [Speed](#speed)
 
-This example shows velocity control using Dynamixel. You need to set parameters of BAUDRATE and ID.  
-**begin** function set an portHandler and packetHandler. **ping** function get an item of connected Dynamixel.  
+This example shows velocity control using DYNAMIXEL. You need to set parameters of BAUDRATE and ID.  
+**begin** function set an portHandler and packetHandler. **ping** function get an item of connected DYNAMIXEL.  
 **wheelMode** function make wheel(velocity) mode.  
-If Dynamixel is set correctly, **goalSpeed** function make it turn to position.
+If DYNAMIXEL is set correctly, **goalSpeed** function make it turn to position.
 
 ```c++
 /*******************************************************************************

@@ -74,7 +74,7 @@ Recommended Component Specifications
    ![](/assets/images/platform/thormang3/pc_power_supply.jpg)
 
 3. Power Supply for Actuators
- - Usage : Supplies power to Dynamixel when operating THORMANG3 with an external power source.
+ - Usage : Supplies power to DYNAMIXEL when operating THORMANG3 with an external power source.
  - Requirements : 0 ~ 30V / 100A (at least)
  - Recommended product : Instek PSW 30-108 Multi-Range DC Power Supply  
    ![](/assets/images/platform/thormang3/actuator_power_supply.jpg)

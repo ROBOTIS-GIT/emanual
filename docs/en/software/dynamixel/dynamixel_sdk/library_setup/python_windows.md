@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/software/dynamixel/dynamixel_sdk/library_setup/python_windows/
 sidebar:
-  title: DynamixelSDK
+  title: DYNAMIXEL SDK
   nav: "dynamixel_sdk"
 ---
 
@@ -47,7 +47,7 @@ sidebar:
 
 ### [Building and Running the Sample Code](#building-and-running-the-sample-code)
 
-The Dynamixel SDK example code for Python uses the library files built in previous step.
+The DYNAMIXEL SDK example code for Python uses the library files built in previous step.
 
 #### Run Example
 

@@ -6,7 +6,7 @@ layout: popup
 
 ## Description
 
-This function reads data from specific memory address range of multiple DYNAMIXELs.
+This function reads data from specific memory address range of multiple DYNAMIXEL's.
 
 ## Syntax
 

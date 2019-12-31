@@ -34,14 +34,14 @@ page_number: 4
 | SBC (Single Board Computers)       | Raspberry Pi 3 Model B and B+                                       | Intel® Joule™ 570x                                                  | Raspberry Pi 3 Model B and B+                                       |
 | MCU                                | 32-bit ARM Cortex®-M7 with FPU (216 MHz, 462 DMIPS)                 | 32-bit ARM Cortex®-M7 with FPU (216 MHz, 462 DMIPS)                 | 32-bit ARM Cortex®-M7 with FPU (216 MHz, 462 DMIPS)                 |
 | Remote Controller                  | -                                                                   | -                                                                   | RC-100B + BT-410 Set (Bluetooth 4, BLE)                             |
-| Actuator                           | Dynamixel XL430-W250                                                | Dynamixel XM430-W210                                                | Dynamixel XM430-W210                                                |
+| Actuator                           | DYNAMIXEL XL430-W250                                                | DYNAMIXEL XM430-W210                                                | DYNAMIXEL XM430-W210                                                |
 | LDS(Laser Distance Sensor)         | 360 Laser Distance Sensor LDS-01                                    | 360 Laser Distance Sensor LDS-01                                    | 360 Laser Distance Sensor LDS-01                                    |
 | Camera                             | -                                                                   | Intel® Realsense™ R200                                              | Raspberry Pi Camera Module v2.1                                     |
 | IMU                                | Gyroscope 3 Axis<br />Accelerometer 3 Axis<br />Magnetometer 3 Axis | Gyroscope 3 Axis<br />Accelerometer 3 Axis<br />Magnetometer 3 Axis | Gyroscope 3 Axis<br />Accelerometer 3 Axis<br />Magnetometer 3 Axis |
 | Power connectors                   | 3.3V / 800mA<br />5V / 4A<br />12V / 1A                             | 3.3V / 800mA<br />5V / 4A<br />12V / 1A                             | 3.3V / 800mA<br />5V / 4A<br />12V / 1A                             |
 | Expansion pins                     | GPIO 18 pins<br />Arduino 32 pin                                    | GPIO 18 pins<br />Arduino 32 pin                                    | GPIO 18 pins<br />Arduino 32 pin                                    |
 | Peripheral                         | UART x3, CAN x1, SPI x1, I2C x1, ADC x5, 5pin OLLO x4               | UART x3, CAN x1, SPI x1, I2C x1, ADC x5, 5pin OLLO x4               | UART x3, CAN x1, SPI x1, I2C x1, ADC x5, 5pin OLLO x4               |
-| Dynamixel ports                    | RS485 x 3, TTL x 3                                                  | RS485 x 3, TTL x 3                                                  | RS485 x 3, TTL x 3                                                  |
+| DYNAMIXEL ports                    | RS485 x 3, TTL x 3                                                  | RS485 x 3, TTL x 3                                                  | RS485 x 3, TTL x 3                                                  |
 | Audio                              | Several programmable beep sequences                                 | Several programmable beep sequences                                 | Several programmable beep sequences                                 |
 | Programmable LEDs                  | User LED x 4                                                        | User LED x 4                                                        | User LED x 4                                                        |
 | Status LEDs                        | Board status LED x 1<br />Arduino LED x 1<br />Power LED x 1        | Board status LED x 1<br />Arduino LED x 1<br />Power LED x 1        | Board status LED x 1<br />Arduino LED x 1<br />Power LED x 1        |
@@ -98,7 +98,7 @@ page_number: 4
 
 ### [Actuators](#actuators)
 
-- [Dynamixel XL430](/docs/en/dxl/x/xl430-w250/)
+- [DYNAMIXEL XL430](/docs/en/dxl/x/xl430-w250/)
   - TurtleBot3 Burger
-- [Dynamixel XM430](/docs/en/dxl/x/xm430-w210/)
+- [DYNAMIXEL XM430](/docs/en/dxl/x/xm430-w210/)
   - TurtleBot3 Waffle, Waffle Pi

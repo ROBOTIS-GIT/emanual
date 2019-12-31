@@ -76,7 +76,7 @@ Before you following step, please setup Arduino IDE on your remote PC.
 
   - [Install Arduino IDE for OpenCR][install_arduino_ide_for_opencr]
 
-The OpenCR firmware for TurtleBot3 performs the task of controlling the Dynamixel or acquiring and transmitting the data of the sensors. The firmware is located in OpenCR example which is downloaded by the board manager.
+The OpenCR firmware for TurtleBot3 performs the task of controlling DYNAMIXEL or acquiring and transmitting the data of the sensors. The firmware is located in OpenCR example which is downloaded by the board manager.
 
 If you have TurtleBot3 Burger,
 
@@ -103,7 +103,7 @@ If you have TurtleBot3 Waffle or Waffle Pi,
 
 ![](/assets/images/platform/turtlebot3/opencr/opencr_models.png)
 
-You can use `PUSH SW 1` and `PUSH SW 2` buttons to see whether your robot has been properly assembled. This process tests the left and right DYNAMIXELs and the OpenCR board.
+You can use `PUSH SW 1` and `PUSH SW 2` buttons to see whether your robot has been properly assembled. This process tests the left and right DYNAMIXEL's and the OpenCR board.
 
 1. After assembling TurtleBot3, connect the battery to OpenCR and turn on the power switch. You can see that the `Power LED` of OpenCR turns on.
 2. Place the robot on the floor. For the test, safety radius of 1 meter (about 40 inches) is recommended.

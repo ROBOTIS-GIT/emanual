@@ -18,16 +18,16 @@ layout: popup
 This message includes basic data of dynamixel
 
   - `string model_name`
-&emsp;&emsp; Model name of Dynamixel
+&emsp;&emsp; Model name of DYNAMIXEL
 
   - `uint8 id`
-&emsp;&emsp; ID of Dynamixel
+&emsp;&emsp; ID of DYNAMIXEL
 
   - `int32 present_position`
-&emsp;&emsp; Present position of Dynamixel
+&emsp;&emsp; Present position of DYNAMIXEL
 
   - `int32 present_velocity`
-&emsp;&emsp; Present velocity of Dynamixel
+&emsp;&emsp; Present velocity of DYNAMIXEL
 
   - `uint16 present_current`
-&emsp;&emsp; Present current or load of Dynamixel
+&emsp;&emsp; Present current or load of DYNAMIXEL

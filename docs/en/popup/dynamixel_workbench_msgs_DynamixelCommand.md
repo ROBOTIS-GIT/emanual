@@ -16,14 +16,14 @@ layout: popup
 ```
 
 - Description
-This service passes the command to a Dynamixel
+This service passes the command to DYNAMIXEL
 
   - Request
     * `string command`
 &emsp;&emsp; Single instruction which is not included in control table as ping, reboot, reset
 
     * `uint8 id`
-&emsp;&emsp; ID of Dynamixel
+&emsp;&emsp; ID of DYNAMIXEL
 
     * `string addr_name`
 &emsp;&emsp; Single control table item name as Goal_Position, Present_Position

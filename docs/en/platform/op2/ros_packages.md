@@ -69,7 +69,7 @@ $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Tools
 1. **cm_740_module** : Moved from the ROBOTIS-OP3 repository.
 2. **op2_gui_demo** : Some configuration files and launch file have been modified to run op3_gui_demo on ROBOTIS-OP2.
 3. **op2_kinematics_dynamics** : Only some values such as the joint direction used in the op2_walking_module were modified according to ROBOTIS-OP2.
-4. **op2_manager** : Applied some modifications on motion module and the configuration file for ROBOTIS-OP2. Unlike OpenCR in ROBOTIS-OP3, CM-740 in ROBOTIS-OP2 has Dynamixel Power OFF as default setting. Therefore, modified source code to handle this difference.
+4. **op2_manager** : Applied some modifications on motion module and the configuration file for ROBOTIS-OP2. Unlike OpenCR in ROBOTIS-OP3, CM-740 in ROBOTIS-OP2 has DYNAMIXEL Power OFF as default setting. Therefore, modified source code to handle this difference.
 5. **op2_walking_module** : Modified code for ROBOTIS-OP2 (joint direction, balance gain, etc.)
 
 ### [ROBOTIS-OP2-Common repository](#robotis-op2-common-repository)

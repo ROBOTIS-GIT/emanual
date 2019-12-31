@@ -11,16 +11,16 @@ sidebar:
   nav: "embedded_sdk"
 ---
 
-- [Dynamixel SDK]
+- [DYNAMIXEL SDK]
 - [ZIGBEE SDK]
 
-# [Dynamixel SDK](#dynamixel-sdk)
+# [DYNAMIXEL SDK](#dynamixel-sdk)
 
 |Protocol 1.0|Protocol 2.0|ROS|Windows|Linux|OS X|LabVIEW|MATLAB|VB|C#|C++|Java|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |O|O|O|O|O|O|O|O|X|O|O|O|
 
-- [Download Dynamixel SDK](https://github.com/ROBOTIS-GIT/DynamixelSDK/releases)
+- [Download DYNAMIXEL SDK](https://github.com/ROBOTIS-GIT/DynamixelSDK/releases)
 
 # [ROBOTIS Manipulator SDK](#robotis-manipulator-sdk)
 
@@ -58,7 +58,7 @@ sidebar:
 
 
 [Controller Embedded C]: /docs/en/software/embedded_sdk/embedded_c/
-[Dynamixel SDK]: /docs/en/software/dynamixel/dynamixel_sdk/overview/
+[DYNAMIXEL SDK]: /docs/en/software/dynamixel/dynamixel_sdk/overview/
 [ZIGBEE SDK]: /docs/en/software/embedded_sdk/zigbee_sdk/
 [Download CM-510 SDK]: http://support.robotis.com/en/baggage_files/embeded_c/embeded_c(cm510_v1.02).zip
 [Download CM-530 SDK]: http://support.robotis.com/en/baggage_files/embeded_c/embeddec_c(cm530_v1_02).zip

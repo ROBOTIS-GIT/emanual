@@ -85,9 +85,9 @@ Replace cables whenever the protective coat has a cut leaving the wire(s) expose
 Please ensure that the actuators, main controller and sub controller are free of dust. Although dust may not harm the internal components of both main controller and sub controller under dry condition, humidity may cause static potentially doing costly permanent damage to the controllers.  
 The recommended tools to remove dust, dirt and debris compressed air blower, or a non-metallic soft brush
 
-## [Dynamixel Replacement](#dynamixel-replacement)
+## [DYNAMIXEL Replacement](#dynamixel-replacement)
 
-There may be an instance where you will need to replace a Dynamixel actuator due to failure. The following page will guide you on how to replace a Dynamixel actuator.  
+There may be an instance where you will need to replace DYNAMIXEL actuator due to failure. The following page will guide you on how to replace DYNAMIXEL actuator.  
 To replace an MX-28 on DARWIN-OP you need to complete the following procedures.
 1. Proper installation of horn, bearing set to the new MX-28.
 2. Proper ID and baud rate setting.
@@ -124,17 +124,17 @@ For more information on the bearing set please click [here](http://robotis-shop-
 ### Proper ID and baud rate setting#
 
 #### Method A
-You have USB2Dynamixel and a Robotis dedicated robot controller (CM-5, CM-510, or CM-700)
+You have USB2DYNAMIXEL and a Robotis dedicated robot controller (CM-5, CM-510, or CM-700)
 
 1. Provide power to new MX-28. That is connect one TTL port from the MX-28 to the controller; then power on the controller.
-2. Connect the other TTL port of the MX-28 to the USB2Dynamixel dongle (Make sure to set the switch to "TTL" on the dongle).
-3. Connect the dongle to an open USB port in your PC. Run Dynamixel Wizard.
+2. Connect the other TTL port of the MX-28 to the USB2DYNAMIXEL dongle (Make sure to set the switch to "TTL" on the dongle).
+3. Connect the dongle to an open USB port in your PC. Run DYNAMIXEL Wizard.
 4. Change the ID number from 1 to the proper number.
 5. Change the baud rate from 34 (576000 bps) to 1 (1 Mbps).
 
   ![](/assets/images/platform/op/op_232.jpg)
 
-6. After replacement is done. Run [DXL Monitor] and reset all Dynamixels.
+6. After replacement is done. Run [DXL Monitor] and reset all DYNAMIXEL.
 
 [DXL Monitor]: /docs/en/platform/op/development/#dynamixel-monitor
 
@@ -143,7 +143,7 @@ Click [Dynamixel Wizard] for more information.
 [Dynamixel Wizard]: /docs/en/software/rplus1/dynamixe_wizard/
 
 #### Method B
-You have USB2Dynamixel but do not have a Robotis dedicated robot controller (CM-5, CM-510, or CM-700).
+You have USB2DYNAMIXEL but do not have a Robotis dedicated robot controller (CM-5, CM-510, or CM-700).
 
 Steps 2 through 5 from Method A remains unchanged. Step 1 needs to be modified for proper power supply.  
 You will need 2 separate 3-pin TTL cables (they come supplied with every DARWIN-OP). The following procedure is recommended:
@@ -154,7 +154,7 @@ You will need 2 separate 3-pin TTL cables (they come supplied with every DARWIN-
 
   ![](/assets/images/platform/op/op_233.jpg)
 
-3. Temporarily disconnect ALL currently connected cables. You can choose any TTL port. Do not disconnect the power cable from sub-controller to main controller. Doing so will not allow Dynamixel Wizard proper Dynamixel search.
+3. Temporarily disconnect ALL currently connected cables. You can choose any TTL port. Do not disconnect the power cable from sub-controller to main controller. Doing so will not allow Dynamixel Wizard proper DYNAMIXEL search.
 
   ![](/assets/images/platform/op/op_234.jpg)
 
@@ -162,41 +162,41 @@ You will need 2 separate 3-pin TTL cables (they come supplied with every DARWIN-
 
 4. Connect a spare TTL cable to any open port and the other end to the new MX-28.
 
-5. Connect a second TTL cable to the other port of the MX-28. Connect the other end of the cable to the USB2Dynamixel controller. Afterwards connect USB2Dynamixel to the PC.
+5. Connect a second TTL cable to the other port of the MX-28. Connect the other end of the cable to the USB2DYNAMIXEL controller. Afterwards connect USB2DYNAMIXEL to the PC.
 
   ![](/assets/images/platform/op/op_236.jpg)
 
 6. Turn the switch on on DARWIN-OP and let Ubuntu load (this process may take up to 2 minutes).  
   **NOTE** : The head LED will remain green and will not turn amber. The demo program will not run automatically.
 
-7. Connect to DARWIN-OP and run Dynamixel Monitor.  
-  Once Dynamixel Monitor is running all actuators will show as "fail" even with the new MX-28 connected. Do not exit Dynamixel Monitor. Leave the program running.
+7. Connect to DARWIN-OP and run DYNAMIXEL Monitor.  
+  Once DYNAMIXEL Monitor is running all actuators will show as "fail" even with the new MX-28 connected. Do not exit DYNAMIXEL Monitor. Leave the program running.
 
   ![](/assets/images/platform/op/op_237.jpg)
 
-8. On Windows run Dynamixel Wizard.  
-  Change address 4 (baud rate) from the default value of 34 to 1. You must perform this operation with Dynamixel Wizard as Dynamixel Monitor does not support this function currently. If you do not change the baud rate then Dynamixel Monitor will fail to scan the actuator.
-  Change address 3 (ID) from the default value of 1 to the desired value. You may also use Dynamixel Monitor to change ID as well.
+8. On Windows run DYNAMIXEL Wizard.  
+  Change address 4 (baud rate) from the default value of 34 to 1. You must perform this operation with DYNAMIXEL Wizard as DYNAMIXEL Monitor does not support this function currently. If you do not change the baud rate then DYNAMIXEL Monitor will fail to scan the actuator.
+  Change address 3 (ID) from the default value of 1 to the desired value. You may also use DYNAMIXEL Monitor to change ID as well.
 
   ![](/assets/images/platform/op/op_238.jpg)
 
   **NOTE** : RoboPlus Manager does not currently support the CM-730 controller because it lacks the Serial Connector input.
 
-Once the baud rate value is set to 1 you may return to Dynamixel Monitor and type scan to verify success on baud rate change (the first attempt may show the new actuator as "fail" if so type scan again until "OK" shows on screen).
+Once the baud rate value is set to 1 you may return to DYNAMIXEL Monitor and type scan to verify success on baud rate change (the first attempt may show the new actuator as "fail" if so type scan again until "OK" shows on screen).
 
 ![](/assets/images/platform/op/op_239.jpg)
 
-Once all changes are made you still need to exit Dynamixel Monitor and [Shut down DARWIN-OP] properly.
-Once shut down and powered off replace the Dynamixel actuator and restore all connections.
-Once connections are restored return to [DXL Monitor] and reset all Dynamixels.
+Once all changes are made you still need to exit DYNAMIXEL Monitor and [Shut down DARWIN-OP] properly.
+Once shut down and powered off replace DYNAMIXEL actuator and restore all connections.
+Once connections are restored return to [DXL Monitor] and reset all DYNAMIXEL.
 
 [Shut down DARWIN-OP]: /docs/en/platform/op/getting_started/#shutdown
 
-If you are replacing 2 or more Dynamixel then you must perform this procedure again as Dynamixel Wizard will show errors when multiple Dynamixels with the same ID and same baud rate are connected.  
-Once the actuator has been replaced it is highly recommended that you update the firmware with Firmware Installer so that ALL Dynamixels are matched with the same firmware.
+If you are replacing 2 or more DYNAMIXEL then you must perform this procedure again as Dynamixel Wizard will show errors when multiple DYNAMIXEL's with the same ID and same baud rate are connected.  
+Once the actuator has been replaced it is highly recommended that you update the firmware with Firmware Installer so that ALL DYNAMIXEL are matched with the same firmware.
 
 #### Method C
-You do not have USB2Dynamixel controller nor a Robotis dedicated robot controller (CM-5, CM-510, or CM-700).
+You do not have USB2DYNAMIXEL controller nor a Robotis dedicated robot controller (CM-5, CM-510, or CM-700).
 
 Ensure you perform proper horn installation and proper bearing set installation (if applicable).  
 
@@ -227,7 +227,7 @@ let's say change to 39 so type **wr 3 39**.
 
   ![](/assets/images/platform/op/op_243.jpg)
 
-  > Notice that all actuators fail except ID 1 (remember that the default values on a new Dynamixel is ID 1 and baud rate 34). Notice that ID 39 does not appear anymore. No need to worry this is because ID 39 does not currently have a specific function in DARWIN-OP and the baud rate of said ID is 1 Mbps; whereas the current baud rate between the CM-730 and and MX-28 is 57600 bps.
+  > Notice that all actuators fail except ID 1 (remember that the default values on a new DYNAMIXEL is ID 1 and baud rate 34). Notice that ID 39 does not appear anymore. No need to worry this is because ID 39 does not currently have a specific function in DARWIN-OP and the baud rate of said ID is 1 Mbps; whereas the current baud rate between the CM-730 and and MX-28 is 57600 bps.
 
 7. go to ID 1 by typing **id 1**
 8. The command prompt will change from ID 200 to ID 1
@@ -261,17 +261,17 @@ Repeat the same procedure again if replacing more than 1 actuator.
 ##### Example 2
 Replace the the right elbow (ID 5) with a new actuator with less software manipulation.
 
-Just like Method B disconnect all Dynamixels from the CM-730 but do not disconnect the power from CM-730 to Main Controller.   
+Just like Method B disconnect all DYNAMIXEL from the CM-730 but do not disconnect the power from CM-730 to Main Controller.   
 However in this case instead of the need for 2 3-pin TTL cables you'll only need 1.
 
 1. Connect the new actuator to any TTL port.
-2. Turn DARWIN-OP on and run [DXL Monitor]. Do not worry about setting DARWIN-OP in the kneeling position during this procedure as the demo program will fail to run automatically due to the disconnected Dynamixels. Please set DARWIN-OP in a stable position (either sitting or laying down on its belly).
+2. Turn DARWIN-OP on and run [DXL Monitor]. Do not worry about setting DARWIN-OP in the kneeling position during this procedure as the demo program will fail to run automatically due to the disconnected DYNAMIXEL. Please set DARWIN-OP in a stable position (either sitting or laying down on its belly).
 3. Run **scan** and you will notice that all ID's will fail
 
   ![](/assets/images/platform/op/op_249.jpg)
 
 4. Change the baud rate on ID 200 from 1 Mbps to 57,600 bps by typing **wr 4 34**
-5. Run **scan** again and you'll notice the OK on ID 1 (remember that all new Dynamixels have default values 1 for ID and 34 for baud rate).
+5. Run **scan** again and you'll notice the OK on ID 1 (remember that all new DYNAMIXEL have default values 1 for ID and 34 for baud rate).
 
   ![](/assets/images/platform/op/op_250.jpg)
 
@@ -286,21 +286,21 @@ However in this case instead of the need for 2 3-pin TTL cables you'll only need
 8. Return to ID 1 and make the ID change. In this case change to ID 5 by typing **wr 3 5**
 9. Return to ID 200.
 10. The ID change is done. [Shut down DARWIN-OP] properly, power off. Perform replacement, restore all connections and turn DARWIN-OP on again. Remember to set DARWIN-OP in the kneeling position as all actuators are connected and the demo program will run automatically.
-11. Perform the [killall] procedure to end the demo program. Run [DXL Monitor] and reset all Dynamixels.
+11. Perform the [killall] procedure to end the demo program. Run [DXL Monitor] and reset all DYNAMIXEL.
 
 [killall]: /docs/en/platform/op/development/#terminate-demo-program
 
-For multiple Dynamixels, you may only repeat steps 3 through 9. You can disconnect the actuator after step 9, connect the new Dynamixel and run from step 3 again.
+For multiple DYNAMIXEL's, you may only repeat steps 3 through 9. You can disconnect the actuator after step 9, connect the new DYNAMIXEL and run from step 3 again.
 
-Once done replacing Dynamixel(s) and settings set appropriately run [Firmware Installer]. Select option 2 and you are done. This is an important final step because it sets the angle limits on the joints.  
+Once done replacing DYNAMIXEL(s) and settings set appropriately run [Firmware Installer]. Select option 2 and you are done. This is an important final step because it sets the angle limits on the joints.  
 DARWIN-OP is back to normal again.
 
-`Example 1` requires less hardware work but more programming work, as well as keeping careful track of changes made during programming and repeating the entire process for multiple Dynamixels.  
+`Example 1` requires less hardware work but more programming work, as well as keeping careful track of changes made during programming and repeating the entire process for multiple DYNAMIXEL's.  
 `Example 2` requires more hardware work (unscrewing/screwing disconnecting/connecting), but less on software work.
 
 Pick the method that most convenient for you.
 
-**NOTE** : The reset all procedure at the end is necessary because DXL Monitor will set the angle limits on all Dynamixels. Setting angle limits is a robot safety mechanism to prevent joints from overextending, therefore preventing damage to the robot.
+**NOTE** : The reset all procedure at the end is necessary because DXL Monitor will set the angle limits on all DYNAMIXEL. Setting angle limits is a robot safety mechanism to prevent joints from overextending, therefore preventing damage to the robot.
 {: .notice}
 
 Pressing the reset button on DARWIN-OP will reset settings of the sub-controller CM-730 to default values. For example:
@@ -411,7 +411,7 @@ You may run your own maintenance check should DARWIN-OP have some anomalies.
 
 1. Are cables around the joint worn out?
   - yes
-    > Replace cable(s). Keep in mind due to the nature of the daisy chain (serial) network of Dynamixel some MX-28 may appear as malfunctioning (not working at all).  
+    > Replace cable(s). Keep in mind due to the nature of the daisy chain (serial) network of DYNAMIXEL some MX-28 may appear as malfunctioning (not working at all).  
       The MX-28 connected directly to the CM-730 are "most significant" If any "most significant" MX-28 or connecting TTL cable to said MX-28 go defective then all connected "lesser significant" MX-28(s) will appear malfunctioning as well.  
       The following is the connection order from "most significant" to "least significant"  
         ID1 -> ID3 -> ID5  
@@ -605,7 +605,7 @@ Refer to [Firmware Installer] section.
 
 #### MX-28 settings
 
-Refer to [Dynamixel Monitor] section.
+Refer to [DYNAMIXEL Monitor] section.
 Use **reset all** command.
 
 ### [Recovery(Linux Mint 9)](#recoverylinux-mint-9)
@@ -738,7 +738,7 @@ Refer to [Firmware Installer] section.
 
 #### MX-28 settings
 
-Refer to [Dynamixel Monitor] section.
+Refer to [DYNAMIXEL Monitor] section.
 Use **reset all** command.
 
 
@@ -895,7 +895,7 @@ After boot selection go to the “Exit” tab and select “Exit Saving Changes�
 14. Make sure you remove the USB thumbdrive, and reboot the DARWIN-OP.
 
 
-[Dynamixel Monitor]: /docs/en/platform/op/development/#dynamixel-monitor
+[DYNAMIXEL Monitor]: /docs/en/platform/op/development/#dynamixel-monitor
 [Firmware Installer]: /docs/en/platform/op/development/#firmware-installer
 [MX-28]: /docs/en/dxl/mx/mx-28/
-[Dynamixel Protocol 1.0]: /docs/en/dxl/protocol1/
+[DYNAMIXEL Protocol 1.0]: /docs/en/dxl/protocol1/

@@ -353,7 +353,7 @@ If you do not want to register the location of dll as environment variables, the
  
 ### System Requirements
 - OS : Over Linux Kernel 2.6.21 is recommended
-- USB2Dynamixel and  Zig2Serial are required
+- USB2DYNAMIXEL and  Zig2Serial are required
  
 ### Composing Folder
 
@@ -706,7 +706,7 @@ Linux gcc used for this example.
 
 #### Preparation
 
-Zig2Serial and ZIG-100 must be connected to USB2Dynamixel.  
+Zig2Serial and ZIG-100 must be connected to USB2DYNAMIXEL.  
 Also, there must be the controller or other communication device which can communicatte with ZIG-100 communication module connected to Zig2Serial.
 
 #### Source

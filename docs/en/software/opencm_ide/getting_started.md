@@ -294,20 +294,20 @@ If you run the program the following screen appears.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_039.png)
 
-|Item|Description|
-|:---:|:---:|
-|Menu|You can select from File, Edit, Sketch, Tools, and Help.|
-|Toolbar|You can select from a list of shortcut icons of frequently used functions.|
-|![](/assets/images/sw/opencm_ide/opencm_ide_040.gif)|Executes only the compilation and prints a message on the status bar or console stating whether it was fail or success|
-|![](/assets/images/sw/opencm_ide/opencm_ide_041.gif)|Executes compilation and proceeds to download right away. Make sure the board is connected when using this function|
-|![](/assets/images/sw/opencm_ide/opencm_ide_042.gif)|Creates a new file|
-|![](/assets/images/sw/opencm_ide/opencm_ide_043.gif)|Opens a file|
-|![](/assets/images/sw/opencm_ide/opencm_ide_044.gif)|Saves the current file|
-|![](/assets/images/sw/opencm_ide/opencm_ide_045.gif)|Runs the serial monitor|
-|Editor|This is the field where you edit the source.|
-|Status Bar|This is the field where it shows the progress of the requested function visually.|
-|Console|Shows the current cursor location’s line number and the selected board and COM Port.|
-|Tab Menu|This is the menu that you select when adding or removing a tab.|
+|                         Item                         |                                                      Description                                                       |
+|:----------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------:|
+|                         Menu                         |                                You can select from File, Edit, Sketch, Tools, and Help.                                |
+|                       Toolbar                        |                       You can select from a list of shortcut icons of frequently used functions.                       |
+| ![](/assets/images/sw/opencm_ide/opencm_ide_040.gif) | Executes only the compilation and prints a message on the status bar or console stating whether it was fail or success |
+| ![](/assets/images/sw/opencm_ide/opencm_ide_041.gif) |  Executes compilation and proceeds to download right away. Make sure the board is connected when using this function   |
+| ![](/assets/images/sw/opencm_ide/opencm_ide_042.gif) |                                                   Creates a new file                                                   |
+| ![](/assets/images/sw/opencm_ide/opencm_ide_043.gif) |                                                      Opens a file                                                      |
+| ![](/assets/images/sw/opencm_ide/opencm_ide_044.gif) |                                                 Saves the current file                                                 |
+| ![](/assets/images/sw/opencm_ide/opencm_ide_045.gif) |                                                Runs the serial monitor                                                 |
+|                        Editor                        |                                      This is the field where you edit the source.                                      |
+|                      Status Bar                      |                   This is the field where it shows the progress of the requested function visually.                    |
+|                       Console                        |                  Shows the current cursor location’s line number and the selected board and COM Port.                  |
+|                       Tab Menu                       |                            This is the menu that you select when adding or removing a tab.                             |
 
 ### A Look at Some Examples
 
@@ -869,7 +869,7 @@ If you download to OpenCM9.04 it will make the Status LED repeatedly turn on and
 
 ## [Serial Communication](#serial-communication)
 
-OpenCM9.04 has a total of 4 serial devices. There are Serial1, Serial2, Serial3, and SerialUSB, but Serial1 is assigned exclusively as a Dynamixel communication port so there are restrictions for using it. Serial 2 is for using Bluetooth devices with 4 pin ports such as BT-210 and BT-110A. Serial3 is shown at the back-side of the PCB as TX3(24), RX3(25).
+OpenCM9.04 has a total of 4 serial devices. There are Serial1, Serial2, Serial3, and SerialUSB, but Serial1 is assigned exclusively as DYNAMIXEL communication port so there are restrictions for using it. Serial 2 is for using Bluetooth devices with 4 pin ports such as BT-210 and BT-110A. Serial3 is shown at the back-side of the PCB as TX3(24), RX3(25).
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_107.png)
 
@@ -1184,9 +1184,9 @@ The entire code is shown below.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_114.png)
 
-## [Dynamixel Instructions](#dynamixel-instructions)
+## [DYNAMIXEL Instructions](#dynamixel-instructions)
 
-The Dynamixel used in the example below will be under the premise that ID=1 and the communication speed have all been initialized to 1Mbps. Even though the Dynamixel class has not been defined explicitly, we will assume that is has been predefined as shown below.
+DYNAMIXEL used in the example below will be under the premise that ID=1 and the communication speed have all been initialized to 1Mbps. Even though DYNAMIXEL class has not been defined explicitly, we will assume that is has been predefined as shown below.
 
 ```c
 Dynamixel Dxl(1); // Dynamixel Bus on Serial1(USART1)
@@ -1223,7 +1223,7 @@ SerialUSB.println(temp);
 ```
 
 ### Let us configure the ID as 2 for AX-12.
-We will record 1 byte in the address number 3, which corresponds to the Dynamixel ID, using the method writeByte().
+We will record 1 byte in the address number 3, which corresponds to DYNAMIXEL ID, using the method writeByte().
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_118.png)
 
@@ -1231,7 +1231,7 @@ We will record 1 byte in the address number 3, which corresponds to the Dynamixe
 void setup(){
   Dxl.begin(1);
   delay(1000);  // It is good to give about 1 second of delay.
-  Dxl.writeByte(1, 3, 2); //Changes the ID number 1 of the Dynamixel to ID number 2
+  Dxl.writeByte(1, 3, 2); //Changes the ID number 1 of DYNAMIXEL to ID number 2
 }
 void loop(){
   Dxl.writeByte(2, 25, 1);  //LED Blinking using the changed ID number
@@ -1241,10 +1241,10 @@ void loop(){
 }
 ```
 
-If the change in ID number successfully finishes the Dynamixel’s LED will blink.
+If the change in ID number successfully finishes DYNAMIXEL’s LED will blink.
 
 ### Let us change the Baud Rate to 57600 bps.
-The communication speed of the Dynamixel can be changed by using the Baud rate in address number 4. Similar to change the ID number we will use the writByte() method. If we utilize the Dynamixel speed computation of 57,600bps then the index value comes out as 34. For the Dynamixel 2.0 protocol please refer to the new Baud rate table - for 57600bps the index value will be 1.
+The communication speed of DYNAMIXEL can be changed by using the Baud rate in address number 4. Similar to change the ID number we will use the writByte() method. If we utilize DYNAMIXEL speed computation of 57,600bps then the index value comes out as 34. For DYNAMIXEL 2.0 protocol please refer to the new Baud rate table - for 57600bps the index value will be 1.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_119.png)
 
@@ -1266,7 +1266,7 @@ void loop(){
 
 Since the Baud rate has been modified we need to initialize the Bus again to Dxl.begin(34).
 
-### Let us check whether the Dynamixel for which ID number is 1 has moved or not.
+### Let us check whether DYNAMIXEL for which ID number is 1 has moved or not.
 We can check the current movement status of AX-12A by using the value 46(0x2E) in the Control Table.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_120.png)
@@ -1275,10 +1275,10 @@ We can check the current movement status of AX-12A by using the value 46(0x2E) i
 byte bMoving = Dxl.readByte(1, 46);
 ```
 
-If the Dynamixel with ID number 1 is currently moving then the value 1 will be returned for the variable bMoving, and if it is not moving then the value 0 will be returned.
+If DYNAMIXEL with ID number 1 is currently moving then the value 1 will be returned for the variable bMoving, and if it is not moving then the value 0 will be returned.
 
-### Let us move the AX-12A Dynamixel to a location of 150 degrees.
-To move the Dynamixel to the desired location (150 degrees) we need to input the desired location to the address that corresponds to the Goal Position. It is composed of 2 bytes (a low-order byte and a high-order byte) as shown below, and instead of accesses them individually we recommend recording 2 bytes (1 word) to the low-order byte 30(0x1E) using writeWord().
+### Let us move the AX-12A DYNAMIXEL to a location of 150 degrees.
+To move DYNAMIXEL to the desired location (150 degrees) we need to input the desired location to the address that corresponds to the Goal Position. It is composed of 2 bytes (a low-order byte and a high-order byte) as shown below, and instead of accesses them individually we recommend recording 2 bytes (1 word) to the low-order byte 30(0x1E) using writeWord().
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_121.png)
 
@@ -1298,7 +1298,7 @@ After we finish moving them we will return them all to their original location o
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_123.png)
 
-Let us create a Sync Write packet data that we will send to each Dynamixel. We will create a Sync Write packet data for the 0 location and another packet data to save the goal position and speed.
+Let us create a Sync Write packet data that we will send to each DYNAMIXEL. We will create a Sync Write packet data for the 0 location and another packet data to save the goal position and speed.
 
 ```c
 #define PACKET_LEN 12
@@ -1386,7 +1386,7 @@ if( Dxl.getResult() == COMM_RXSUCCESS ){ // Check if the communication was succe
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_127.png)
 
-Sending packet for the second Dynamixel
+Sending packet for the second DYNAMIXEL
 
 ```c
 Dxl.setTxPacketId(1);
@@ -1401,7 +1401,7 @@ if( Dxl.getResult() == COMM_RXSUCCESS ){ // Check if the communication was succe
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_128.png)
 
-To execute the Instruction that was on standby in the registers of Dynamixels number 0 and 1, send the Packet INST_ACTION.
+To execute the Instruction that was on standby in the registers of DYNAMIXEL number 0 and 1, send the Packet INST_ACTION.
 
 ```c
 Dxl.setTxPacketId(BROADCAST_ID);

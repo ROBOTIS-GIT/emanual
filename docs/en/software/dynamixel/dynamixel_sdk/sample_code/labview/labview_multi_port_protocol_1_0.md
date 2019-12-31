@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/software/dynamixel/dynamixel_sdk/sample_code/labview_multi_port_protocol_1_0/
 sidebar:
-  title: DynamixelSDK
+  title: DYNAMIXEL SDK
   nav: "dynamixel_sdk"
 ---
 
@@ -24,7 +24,7 @@ sidebar:
 
 - Description
 
-  This example writes goal position of Dynamixels connected with two ports, and reads their present position until Dynamixels stop moving.
+  This example writes goal position of DYNAMIXEL connected with two ports, and reads their present position until DYNAMIXEL stop moving.
 
 - Available Dynamixel
 

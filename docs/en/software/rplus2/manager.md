@@ -14,7 +14,7 @@ sidebar:
 # [Introduction](#introduction)
 
 ## [RoboPlus Manager 2.0](#roboplus-manager-20)
-The RoboPlus Manager 2.0 manages the Controller and Dynamixel devices that comprise the robot.
+The RoboPlus Manager 2.0 manages the Controller and DYNAMIXEL devices that comprise the robot.
 By connecting the product, the user can update the product to the latest version and test the Control Table.
 The functions that were previously provided in RoboPlus Manager 1.0 and Wizard 1.0 have been combined in RoboPlus Manager 2.0.
 
@@ -26,23 +26,23 @@ Supported products are limited starting from V2.0.0. For products that are not i
 List of Supported Products
 - Robotis Dream
 - Robotis MINI
-- Dynamixel 2.0 Series (MX-28, MX-64, MX-106, XL-320, XM Series, XH Series, Pro Series)
+- DYNAMIXEL 2.0 Series (MX-28, MX-64, MX-106, XL-320, XM Series, XH Series, Pro Series)
 
 ![](/assets/images/sw/rplus2/manager/roboplus_manager2_02.jpg)
 
 ## [Definition of Firmware](#definition-of-firmware)
 
 Firmware is basic software that is installed on a device to operate the hardware. Firmware contains communication protocols with PC, smartphone, and other devices so it is recommended to keep the firmware to the latest version.  
-All devices (Controller, Dynamixel etc) have firmware installed when first purchased, but new versions can be released if there are additional functions / bug fixes.
+All devices (Controller, DYNAMIXEL etc) have firmware installed when first purchased, but new versions can be released if there are additional functions / bug fixes.
  
 ### Role of Controller Firmware
 - Operates the control program written using RoboPlus Task
 - Interprets the motion data written using RoboPlus Motion
-- Performs packet communication function with PC, smartphone, and Dynamixel
+- Performs packet communication function with PC, smartphone, and DYNAMIXEL
  
-### Role of Dynamixel Firmware
+### Role of DYNAMIXEL Firmware
 - Performs packet communication function with Controller when operating control program or motion on the Controller
-- Performs packet communication function with PC, smartphone, and Dynamixel
+- Performs packet communication function with PC, smartphone, and DYNAMIXEL
 
 ### Importance of Firmware Update
 
@@ -155,7 +155,7 @@ This feature is currently being prepared and will be supported in upcoming updat
 
     ![](/assets/images/sw/rplus2/manager/roboplus_manager2_28.jpg)
 
-## [Dynamixel Control Table](#dynamixel-control-table)
+## [DYNAMIXEL Control Table](#dynamixel-control-table)
 
 1. To begin we will assume the Control Table window is open. (Please refer to the [Firmware Update](#firmware-update) section for the connection process.)
 
@@ -165,12 +165,12 @@ This feature is currently being prepared and will be supported in upcoming updat
 
 3. From the menu on the right, clicking the “Factory Reset” button will restore all settings of the product to their factory default configuration.  
     (The ID and Baud Rate value will not be changed.)  
-    From the menu on the right, clicking the “Rebooting” button will restart the corresponding Dynamixel.  
-    From the menu on the right, click the “Turn On/Off Torque” button will turn the corresponding Dynamixel’s torque on or off.
+    From the menu on the right, clicking the “Rebooting” button will restart the corresponding DYNAMIXEL.  
+    From the menu on the right, click the “Turn On/Off Torque” button will turn the corresponding DYNAMIXEL torque on or off.
 
     ![](/assets/images/sw/rplus2/manager/roboplus_manager2_17.jpg)
  
-4. From the menu on the right, click the “Turn On Torque” button to turn the Dynamixel’s torque on.
+4. From the menu on the right, click the “Turn On Torque” button to turn DYNAMIXEL torque on.
 
 5. In the Control Table list, search and select the “Goal Position” item.
 
@@ -182,17 +182,17 @@ This feature is currently being prepared and will be supported in upcoming updat
     ![](/assets/images/sw/rplus2/manager/roboplus_manager2_18.jpg)
 
 7. You can check if the current communication between the PC and the product is normal through the “Communication Status” LED on the lower left corner. (Green : Normal, Yellow : Time-Out, Red : Data Loss)
-8. You can check the Dynamixel’s response status through the “Response Error” message on the lower left corner.
+8. You can check DYNAMIXEL response status through the “Response Error” message on the lower left corner.
 9. You can check the hardware’s error status through the “Hardware Alarm” message on the lower left corner.
 
     ![](/assets/images/sw/rplus2/manager/roboplus_manager2_19.jpg)
  
-10. Some Dynamixels provide the function to view the Profile Type status.  
-    In a given Operating Mode, the Profile Type is decided by the Profile Acceleration value and the Profile Velocity value. Please refer to the corresponding Dynamixel’s E-Manual for details. (Supported products : XM Series and XH Series)
+10. Some DYNAMIXEL's provide the function to view the Profile Type status.  
+    In a given Operating Mode, the Profile Type is decided by the Profile Acceleration value and the Profile Velocity value. Please refer to the corresponding DYNAMIXEL E-Manual for details. (Supported products : XM Series and XH Series)
 
     ![](/assets/images/sw/rplus2/manager/roboplus_manager2_20.jpg)
 
-**NOTE** : For further information about the Control Table, please refer to each Dynamixel.
+**NOTE** : For further information about the Control Table, please refer to each DYNAMIXEL.
 {: .notice}
 
 ## [Controller Control Table](#controller-control-table)
@@ -262,7 +262,7 @@ This feature is currently being prepared and will be supported in upcoming updat
 ## [Preparation for XM/XH Series](#preparation-for-xmxh-series)
 
 There are two preparations that need to be done for using the XM Series in R+Task2.0 or R+Motion2.0.  
-(Preparing the H/W / Configuring the Dynamixel Channel)
+(Preparing the H/W / Configuring DYNAMIXEL Channel)
  
 ### Preparing the H/W
 
@@ -271,24 +271,24 @@ There are two preparations that need to be done for using the XM Series in R+Tas
 
 ![](/assets/images/sw/rplus2/manager/roboplus_manager2_29.jpg)
 
-### Configuring Dynamixel Channel
+### Configuring DYNAMIXEL Channel
 
-1. Open R+ Manager 2.0 and select the Dynamixel2.0 product, then click on the Update & Test menu.
+1. Open R+ Manager 2.0 and select DYNAMIXEL2.0 product, then click on the Update & Test menu.
 
     ![](/assets/images/sw/rplus2/manager/roboplus_manager2_30.jpg)
  
 2. Connect the OpenCM9.04 to the PC by usingLN-101 or BT-210(or BT-110), then turn on the OpenCM 485EXP.
-3. Follow the instructions below to search the product forOpenCM9.04 (Initially the Dynamixel Channel value of the OpenCM9.04 is set to Default so the XM/XH Series does not appear in the search result).
+3. Follow the instructions below to search the product forOpenCM9.04 (Initially DYNAMIXEL Channel value of the OpenCM9.04 is set to Default so the XM/XH Series does not appear in the search result).
 
     ![](/assets/images/sw/rplus2/manager/roboplus_manager2_31.jpg)
  
 4. After the process of updating the product, the Control Table will open.
-5. From the Control Table list, set the Dynamixel Channel value to EXP Board (Expansion Board)and click Save.
+5. From the Control Table list, set DYNAMIXEL Channel value to EXP Board (Expansion Board)and click Save.
 
     ![](/assets/images/sw/rplus2/manager/roboplus_manager2_32.jpg)
  
 6. When the configuration is finished, close the Control Table window and restart the OpenCM 485 EXP.  
-    (As it is restarted the, the mini TTL bus of the OpenCM9.04 is deactivated, and then Dynamixel bus of the OpenCM 485 EXP is activated.)
+    (As it is restarted the, the mini TTL bus of the OpenCM9.04 is deactivated, and then DYNAMIXEL bus of the OpenCM 485 EXP is activated.)
 7. Open the Update & Test menu again and check that the XM/XH Series is properly detected in the search result.
 
     ![](/assets/images/sw/rplus2/manager/roboplus_manager2_33.jpg)

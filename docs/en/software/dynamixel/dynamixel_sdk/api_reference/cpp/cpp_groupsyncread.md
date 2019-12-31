@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/software/dynamixel/dynamixel_sdk/api_reference/cpp/cpp_groupsyncread/
 sidebar:
-  title: DynamixelSDK
+  title: DYNAMIXEL SDK
   nav: "dynamixel_sdk"
 ---
 
@@ -42,9 +42,9 @@ sidebar:
 | **[addParam](#addparam)**       | Adds parameter storage for read                            |
 | **[removeParam](#removeparam)** | Removes parameter on the storage                           |
 | **[clearParam](#clearparam)**   | Clears parameter storage                                   |
-| **[txPacket](#txpacket)**       | Transmits packet to the number of Dynamixels               |
-| **[rxPacket](#rxpacket)**       | receives packet from the number of Dynamixels              |
-| **[txRxPacket](#txrxpacket)**   | Transmits and receives packet on the number of Dynamixels  |
+| **[txPacket](#txpacket)**       | Transmits packet to the number of DYNAMIXEL's               |
+| **[rxPacket](#rxpacket)**       | receives packet from the number of DYNAMIXEL's              |
+| **[txRxPacket](#txrxpacket)**   | Transmits and receives packet on the number of DYNAMIXEL's  |
 | **[isAvailable](#isavailable)** | Checks whether there is available data in the data storage |
 | **[getData](#getdata)**         | Gets data from received packet                             |
 
@@ -64,11 +64,11 @@ bool addParam(UINT8_T id)
 
 | Parameters | Description  |
 |:-----------|:-------------|
-| id         | Dynamixel ID |
+| id         | DYNAMIXEL ID |
 
 - Detailed Description
 
-   This function pushes id to the Dynamixel ID list, and initializes the parameter storage. It returns false when the class uses Protocol 1.0 or target ID exists already in the ID list, or returns true.
+   This function pushes id to the DYNAMIXEL ID list, and initializes the parameter storage. It returns false when the class uses Protocol 1.0 or target ID exists already in the ID list, or returns true.
 
 
 ##### removeParam
@@ -80,11 +80,11 @@ void removeParam(UINT8_T id)
 
 | Parameters | Description  |
 |:-----------|:-------------|
-| id         | Dynamixel ID |
+| id         | DYNAMIXEL ID |
 
 - Detailed Description
 
-   This function removes target id in the Dynamixel ID list. It returns false when the class uses Protocol 1.0 or target ID does not exists in the ID list, or returns true.
+   This function removes target id in the DYNAMIXEL ID list. It returns false when the class uses Protocol 1.0 or target ID does not exists in the ID list, or returns true.
 
 
 ##### clearParam
@@ -98,7 +98,7 @@ void clearParam()
 
 - Detailed Description
 
-   This function clears the Dynamixel ID list. It returns false when the class uses Protocol 1.0, or returns true.
+   This function clears the DYNAMIXEL ID list. It returns false when the class uses Protocol 1.0, or returns true.
 
 
 ##### txPacket
@@ -151,8 +151,8 @@ bool isAvailable(uint8_t id, uint16_t address, uint16_t data_length)
 
 | Parameters | Description                               |
 |:-----------|:------------------------------------------|
-| id         | Dynamixel ID                              |
-| address    | Address on the control table of Dynamixel |
+| id         | DYNAMIXEL ID                              |
+| address    | Address on the control table of DYNAMIXEL |
 | data       | Packet data                               |
 
 
@@ -169,8 +169,8 @@ uint32_t getData(UINT8_T id, UINT16_T address, UINT16_T data_length)
 
 | Parameters  | Description                               |
 |:------------|:------------------------------------------|
-| id          | Dynamixel ID                              |
-| address     | Address on the control table of Dynamixel |
+| id          | DYNAMIXEL ID                              |
+| address     | Address on the control table of DYNAMIXEL |
 | data length | Data length                               |
 
 

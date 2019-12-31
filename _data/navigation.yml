@@ -13796,7 +13796,7 @@ bioloid-beginner:
       titlekr: "퓨즈 교체하기"
       url: /edu/bioloid/beginner/#replacing-fuse-cm-5
       urlkr: /edu/bioloid/beginner/#퓨즈-교체하기cm-5
-    - title: "Dynamixel Management"
+    - title: "DYNAMIXEL Management"
       titlekr: "다이나믹셀 관리하기"
       url: /edu/bioloid/beginner/#dynamixel-management
       urlkr: /edu/bioloid/beginner/#다이나믹셀-관리하기
@@ -13912,7 +13912,7 @@ bioloid-comprehensive:
       titlekr: "퓨즈 교체하기"
       url: /edu/bioloid/comprehensive/#replacing-fuse-cm-5
       urlkr: /edu/bioloid/comprehensive/#퓨즈-교체하기cm-5
-    - title: "Dynamixel Management"
+    - title: "DYNAMIXEL Management"
       titlekr: "다이나믹셀 관리하기"
       url: /edu/bioloid/comprehensive/#dynamixel-management
       urlkr: /edu/bioloid/comprehensive/#다이나믹셀-관리하기
@@ -13974,7 +13974,7 @@ bioloid-stem:
       titlekr: "퓨즈 교체하기"
       url: /edu/bioloid/stem/#replacing-fuse
       urlkr: /edu/bioloid/stem/#퓨즈-교체하기
-    - title: "Dynamixel Management"
+    - title: "DYNAMIXEL Management"
       titlekr: "다이나믹셀 관리하기"
       url: /edu/bioloid/stem/#dynamixel-management
       urlkr: /edu/bioloid/stem/#다이나믹셀-관리하기
@@ -14087,7 +14087,7 @@ bioloid-premium:
       titlekr: "퓨즈 교체하기"
       url: /edu/bioloid/premium/#replacing-fuse
       urlkr: /edu/bioloid/premium/#퓨즈-교체하기
-    - title: "Dynamixel Management"
+    - title: "DYNAMIXEL Management"
       titlekr: "다이나믹셀 관리하기"
       url: /edu/bioloid/premium/#dynamixel-management
       urlkr: /edu/bioloid/premium/#다이나믹셀-관리하기
@@ -14165,7 +14165,7 @@ bioloid-gp:
       titlekr: "퓨즈 교체하기"
       url: /edu/bioloid/gp/#replacing-fuse
       urlkr: /edu/bioloid/gp/#퓨즈-교체하기
-    - title: "Dynamixel Management"
+    - title: "DYNAMIXEL Management"
       titlekr: "다이나믹셀 관리하기"
       url: /edu/bioloid/gp/#dynamixel-management
       urlkr: /edu/bioloid/gp/#다이나믹셀-관리하기
@@ -14562,7 +14562,7 @@ op:
       url: /platform/op/maintenance/#fuse-replacement
     - title: "Hardware Maintenance"
       url: /platform/op/maintenance/#hardware-maintenance
-    - title: "Dynamixel Replacement"
+    - title: "DYNAMIXEL Replacement"
       url: /platform/op/maintenance/#dynamixel-replacement
     - title: "Controller Connection"
       url: /platform/op/maintenance/#controller-connection
@@ -16053,7 +16053,7 @@ turtlebot3:
         url: /platform/turtlebot3/appendix_dynamixel/#overview
       - title: "Specifications"
         url: /platform/turtlebot3/appendix_dynamixel/#specifications
-      - title: "Dynamixel SDK"
+      - title: "DYNAMIXEL SDK"
         url: /platform/turtlebot3/appendix_dynamixel/#dynamixel-sdk
     - title: "OpenCR1.0"
       url: /platform/turtlebot3/appendix_opencr1_0/#appendix-opencr10
@@ -16166,7 +16166,7 @@ openmanipulator_x:
         url: /platform/openmanipulator_x/overview/#openhardware
       - title: "OpenCR (Embedded board)"
         url: /platform/openmanipulator_x/overview/#opencr-embedded-board
-      - title: "Dynamixel Examples"
+      - title: "DYNAMIXEL Examples"
         url: /platform/openmanipulator_x/overview/#dynamixel-examples
       - title: "Introduction video"
         url: /platform/openmanipulator_x/overview/#introduction-video
@@ -16407,7 +16407,7 @@ openmanipulator_pro:
     children:
       - title: "OpenSoftware"
         url: /platform/openmanipulator_pro/overview/#opensoftware
-      - title: "Dynamixel Examples"
+      - title: "DYNAMIXEL Examples"
         url: /platform/openmanipulator_pro/overview/#dynamixel-examples
       - title: "Introduction video"
         url: /platform/openmanipulator_pro/overview/#introduction-video
@@ -16590,7 +16590,7 @@ manipulator_h:
       url: /platform/manipulator_h/getting_started/#preparation
     - title: "Product Assembly"
       url: /platform/manipulator_h/getting_started/#product-assembly
-    - title: "USB2Dynamixel Setting"
+    - title: "USB2DYNAMIXEL Setting"
       url: /platform/manipulator_h/getting_started/#usb2dynamixel-setting
     - title: "Manipulator Test"
       url: /platform/manipulator_h/getting_started/#manipulator-test
@@ -16929,7 +16929,7 @@ rplustask1:
         titlekr: "사용자 장치"
         url: /software/rplus1/task/programming_02/#user-devices
         urlkr: /software/rplus1/task/programming_02/#사용자-장치
-    - title: "Dynamixel Parameters"
+    - title: "DYNAMIXEL Parameters"
       titlekr: "다이나믹셀 파라미터"
       url: /software/rplus1/task/programming_02/#dynamixel-parameters
       urlkr: /software/rplus1/task/programming_02/#다이나믹셀-파라미터
@@ -17261,7 +17261,7 @@ rplusmanager1:
         titlekr: "CM-700"
         url: /software/rplus1/manager/#cm-700
         urlkr: /software/rplus1/manager/#cm-700
-    - title: "Dynamixel"
+    - title: "DYNAMIXEL"
       titlekr: "다이나믹셀"
       url: /software/rplus1/manager/#dynamixel
       urlkr: /software/rplus1/manager/#다이나믹셀
@@ -17615,13 +17615,13 @@ rplusterminal:
     url: /software/rplus1/terminal/#setting-option
     urlkr: /software/rplus1/terminal/#옵션-설정
 
-#Dynamixel Wizard
+#DYNAMIXEL Wizard
 dynamixel_wizard:
   - title: "Introduction"
     titlekr: "개요"
     url: /software/rplus1/dynamixel_wizard/#introduction
     urlkr: /software/rplus1/dynamixel_wizard/#개요
-  - title: "Connecting Dynamixel"
+  - title: "Connecting DYNAMIXEL"
     titlekr: "다이나믹셀 연결"
     url: /software/rplus1/dynamixel_wizard/#connecting-dynamixel
     urlkr: /software/rplus1/dynamixel_wizard/#다이나믹셀-연결
@@ -17727,7 +17727,7 @@ rplusmanager2:
       titlekr: "펌웨어 복구"
       url: /software/rplus2/manager/#firmware-recovery
       urlkr: /software/rplus2/manager/#펌웨어-복구
-    - title: "Dynamixel Control Table"
+    - title: "DYNAMIXEL Control Table"
       titlekr: "다이나믹셀 컨트롤 테이블"
       url: /software/rplus2/manager/#dynamixel-control-table
       urlkr: /software/rplus2/manager/#다이나믹셀-컨트롤-테이블
@@ -17957,7 +17957,7 @@ rplustask2:
       urlkr: /software/rplus2/task/#제어기-장치
     - titlekr: "스마트 장치"
       urlkr: /software/rplus2/task/#스마트-장치
-    - title: "Dynamixel"
+    - title: "DYNAMIXEL"
       titlekr: "다이나믹셀 장치"
       url: /software/rplus2/task/#dynamixel
       urlkr: /software/rplus2/task/#다이나믹셀-장치
@@ -19257,7 +19257,7 @@ opencmide:
       titlekr: "외부 인터럽트"
       url: /software/opencm_ide/getting_started/#external-interrupt
       urlkr: /software/opencm_ide/getting_started/#외부-인터럽트
-    - title: "Dynamixel Instructions"
+    - title: "DYNAMIXEL Instructions"
       titlekr: "다이나믹셀 사용법"
       url: /software/opencm_ide/getting_started/#dynamixel-instructions
       urlkr: /software/opencm_ide/getting_started/#다이나믹셀-사용법
@@ -19365,8 +19365,8 @@ robotis_framework_packages:
   - title: "ROBOTIS Framework Packages"
     url: /software/robotis_framework_packages/#robotis-framework-packages
     children:
-    - title: "DynamixelSDK"
-      url: /software/robotis_framework_packages/#dynamixelsdk
+    - title: "DYNAMIXELSDK"
+      url: /software/robotis_framework_packages/#dynamixel-sdk
     - title: "Robotis Framework"
       url: /software/robotis_framework_packages/#robotis-framework
       children:
@@ -19443,9 +19443,9 @@ dynamixel_sdk:
   - title: "Overview"
     url: /software/dynamixel/dynamixel_sdk/overview/
     children:
-    - title: "Dynamixel SDK"
+    - title: "DYNAMIXEL SDK"
       url: /software/dynamixel/dynamixel_sdk/overview/#dynamixel-sdk
-    - title: "Supported Dynamixels"
+    - title: "Supported DYNAMIXEL"
       url: /software/dynamixel/dynamixel_sdk/overview/#supported-dynamixels
     - title: "Supported Protocols"
       url: /software/dynamixel/dynamixel_sdk/overview/#supported-protocols
@@ -19467,7 +19467,7 @@ dynamixel_sdk:
     children:
     - title: "Controller"
       url: /software/dynamixel/dynamixel_sdk/device_setup/#controller
-    - title: "Dynamixel"
+    - title: "DYNAMIXEL"
       url: /software/dynamixel/dynamixel_sdk/device_setup/#dynamixel
   - title: "Library Setup"
     url: /software/dynamixel/dynamixel_sdk/library_setup/c_windows/
@@ -19926,11 +19926,11 @@ dynamixel_sdk:
   - title: "FAQ"
     url: /software/dynamixel/dynamixel_sdk/faq/
 
-#Dynamixel Workbench sidebar
+#DYNAMIXEL Workbench sidebar
 dynamixel_workbench:
   - title: "Introduction"
     url: /software/dynamixel/dynamixel_workbench/#introduction
-  - title: "Supported Dynamixels"
+  - title: "Supported DYNAMIXEL"
     url: /software/dynamixel/dynamixel_workbench/#supported-dynamixels
   - title: "Downloads"
     url: /software/dynamixel/dynamixel_workbench/#downloads
@@ -19984,7 +19984,7 @@ dynamixel_workbench:
     - title: "Function Reference"
       url: /software/dynamixel/dynamixel_workbench/#function-reference
 
-#Dynamixel wizard 2.0 sidebar
+#DYNAMIXEL wizard 2.0 sidebar
 dynamixel_wizard2:
   - title: "Introduction"
     titlekr: "개요"
@@ -20241,7 +20241,7 @@ zigbee_sdk:
     urlkr: /software/embedded_sdk/zigbee_sdk/#cm-510710용-zigbee-sdk
 
 embedded_sdk:
-  - title: "Dynamixel SDK"
+  - title: "DYNAMIXEL SDK"
     titlekr: "다이나믹셀 SDK"
     url: /software/embedded_sdk/#dynamixel-sdk
     urlkr: /software/embedded_sdk/#다이나믹셀-sdk
@@ -21077,7 +21077,7 @@ opencm904:
         titlekr: "직렬 배터리 소켓"
         url: /parts/controller/opencm904/#serial-battery-socket
         urlkr: /parts/controller/opencm904/#직렬-배터리-소켓
-      - title: "Dynamixel TTL Socket"
+      - title: "DYNAMIXEL TTL Socket"
         titlekr: "다이나믹셀 TTL 소켓"
         url: /parts/controller/opencm904/#dynamixel-ttl-3-pin
         urlkr: /parts/controller/opencm904/#다이나믹셀-ttl-소켓
@@ -21183,7 +21183,7 @@ opencm904:
       url: /parts/controller/opencm904/#pwm
     - title: "EEPROM"
       url: /parts/controller/opencm904/#eeprom
-    - title: "Dynamixel Workbench"
+    - title: "DYNAMIXEL Workbench"
       url: /parts/controller/opencm904/#dynamixelworkbench
     - title: "Servo"
       url: /parts/controller/opencm904/#servo
@@ -21343,7 +21343,7 @@ opencr10:
         url: /parts/controller/opencr10/#flame-sensor
       - title: "Joystic Sensor"
         url: /parts/controller/opencr10/#joystic-sensor
-    - title: "Dynamixel Workbench"
+    - title: "DYNAMIXEL Workbench"
       url: /parts/controller/opencr10/#dynamixel-workbench
     - title: "OpenMANIPULATOR"
       url: /parts/controller/opencr10/#openmanipulator
@@ -21427,7 +21427,7 @@ dynamixel_shield:
       titlekr: "업로드 스위치"
       url: /parts/interface/dynamixel_shield/#upload-switch
       urlkr: /parts/interface/dynamixel_shield/#업로드-스위치
-    - title: "Dynamixel Power Switch"
+    - title: "DYNAMIXEL Power Switch"
       titlekr: "다이나믹셀 전원 스위치"
       url: /parts/interface/dynamixel_shield/#dynamixel-power-switch
       urlkr: /parts/interface/dynamixel_shield/#다이나믹셀-전원-스위치
@@ -22131,7 +22131,7 @@ ln-101:
     url: /parts/interface/ln-101/#videos
     urlkr: /parts/interface/ln-101/#동영상
 
-#USB2Dynamixel sidebar
+#USB2DYNAMIXEL sidebar
 usb2dynamixel:
   - title: "Introduction"
     titlekr: "개요"

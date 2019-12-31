@@ -143,11 +143,11 @@ These are the parameters used in the Walking Algorithm.
 &emsp;&emsp; Arm swing gain with respect to Step forward/back. If the left foot moves forward then the right arm swings.
 
 * ` float32 pelvis_offset`
-&emsp;&emsp; roll offset (x-coordinate) at the pelvis level. Values are for Dynamixel position values for hip roll joints [rad]  
+&emsp;&emsp; roll offset (x-coordinate) at the pelvis level. Values are for DYNAMIXEL position values for hip roll joints [rad]  
 &emsp;&emsp;
 ![](/assets/images/platform/op3/op3_walking_module_image155.jpg)
 * ` float32 hip_pitch_offset`
-&emsp;&emsp; pitch offset (y-coordinate) at the hip level. Values are for Dynamixel position values for hip pitch joints. [rad]  
+&emsp;&emsp; pitch offset (y-coordinate) at the hip level. Values are for DYNAMIXEL position values for hip pitch joints. [rad]  
 &emsp;&emsp;
 ![](/assets/images/platform/op3/op3_walking_module_image147.jpg)
 

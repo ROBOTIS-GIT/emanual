@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/software/dynamixel/dynamixel_sdk/api_reference/labview/labview_groupbulkwrite/
 sidebar:
-  title: DynamixelSDK
+  title: DYNAMIXEL SDK
   nav: "dynamixel_sdk"
 ---
 
@@ -40,7 +40,7 @@ sidebar:
 | **[groupBulkWriteRemoveParam](#groupbulkwriteremoveparam)** | Removes parameter on the storage                  |
 | **[groupBulkWriteChangeParam](#groupbulkwritechangeparam)** | Changes parameter on the storage                  |
 | **[groupBulkWriteClearParam](#groupbulkwriteclearparam)**   | Clears parameter storage                          |
-| **[groupBulkWriteTxPacket](#groupbulkwritetxpacket)**       | Transmits packet to the number of Dynamixels      |
+| **[groupBulkWriteTxPacket](#groupbulkwritetxpacket)**       | Transmits packet to the number of DYNAMIXEL's      |
 
 - Enumerator
 
@@ -74,7 +74,7 @@ uint8_t groupBulkWriteAddParam(int group_num, uint8_t id, uint16_t start_address
 | Parameters    | Description       |
 |:--------------|:------------------|
 | group_num     | Group number      |
-| id            | Dynamixel ID      |
+| id            | DYNAMIXEL ID      |
 | start_address | Start address     |
 | data_length   | Data length       |
 | data          | Data for write    |
@@ -82,7 +82,7 @@ uint8_t groupBulkWriteAddParam(int group_num, uint8_t id, uint16_t start_address
 
 - Detailed Description
 
-    This function pushes `id` into the Dynamixel ID list, and initializes #`group_num` parameter storage by setting `start_address` and `param_length`. The function deals with 1, 2 or 4 byte data only. The function returns 0(false) when the length of input data exceeds parameter or wrong length, or returns 1(true).   
+    This function pushes `id` into the DYNAMIXEL ID list, and initializes #`group_num` parameter storage by setting `start_address` and `param_length`. The function deals with 1, 2 or 4 byte data only. The function returns 0(false) when the length of input data exceeds parameter or wrong length, or returns 1(true).   
 
 
 ##### groupBulkWriteRemoveParam
@@ -95,11 +95,11 @@ void groupBulkWriteRemoveParam(int group_num, uint8_t id)
 | Parameters | Description  |
 |:-----------|:-------------|
 | group_num  | Group number |
-| id         | Dynamixel ID |
+| id         | DYNAMIXEL ID |
 
 - Detailed Description
 
-   This function removes `id` and its data for write in the #`group_num` Dynamixel ID list. The function returns 0(false) when no data is in the parameter storage, or returns 1(true).
+   This function removes `id` and its data for write in the #`group_num` DYNAMIXEL ID list. The function returns 0(false) when no data is in the parameter storage, or returns 1(true).
 
 
 ##### groupBulkWriteChangeParam
@@ -112,7 +112,7 @@ void groupBulkWriteRemoveParam(int group_num, uint8_t id)
 | Parameters    | Description                |
 |:--------------|:---------------------------|
 | group_num     | Group number               |
-| id            | Dynamixel ID               |
+| id            | DYNAMIXEL ID               |
 | start_address | Start address              |
 | data_length   | Data length                |
 | data          | data for write             |
@@ -136,7 +136,7 @@ void groupBulkWriteClearParam(int group_num)
 
 - Detailed Description
 
-   This function clears #`group_num` Dynamixel ID list.
+   This function clears #`group_num` DYNAMIXEL ID list.
 
 
 ##### groupBulkWriteTxPacket

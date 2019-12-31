@@ -109,8 +109,8 @@ $ rosrun robot_upstart uninstall JOB_NAME
 
 ### When to restart the demo
 - When camera has lost its connection due to electrical or mechanical issue.  
-- When USB2Dynamixel has lost its connection due to electrical or mechanical issue.  
-- When resetting Dynamixel with Reset button due to Dynamixel error.  
+- When USB2DYNAMIXEL has lost its connection due to electrical or mechanical issue.  
+- When resetting DYNAMIXEL with Reset button due to DYNAMIXEL error.  
 
 
 ### How to restart the demo  

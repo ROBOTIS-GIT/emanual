@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/software/dynamixel/dynamixel_sdk/library_setup/csharp_windows/
 sidebar:
-  title: DynamixelSDK
+  title: DYNAMIXEL SDK
   nav: "dynamixel_sdk"
 ---
 
@@ -36,9 +36,9 @@ For C#, only the Windows source is provided.
 
 ### [Building and Running the Sample Code](#building-and-running-the-sample-code)
 
-Dynamixel SDK example code for C# uses the library files(.dll for Windows) built in C language.
+DYNAMIXEL SDK example code for C# uses the library files(.dll for Windows) built in C language.
 
-Each released Dynamixel SDK have latest library files in:
+Each released DYNAMIXEL SDK have latest library files in:
 
 `[DynamixelSDK folder]/c/build/[winXX]/output/dxl_xYY_c.dll`
 

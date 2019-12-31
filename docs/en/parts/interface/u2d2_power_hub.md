@@ -12,7 +12,7 @@ sidebar:
 ---
 
 # [Introduction](#introduction)
-Combined with U2D2, it can supply various kinds of external power supply to supply stable power to Dynamixel.
+Combined with U2D2, it can supply various kinds of external power supply to supply stable power to DYNAMIXEL.
 
 ![](/assets/images/parts/interface/u2d2_power_hub/product_image.png)
 
@@ -52,11 +52,11 @@ Combined with U2D2, it can supply various kinds of external power supply to supp
 
     ![](/assets/images/parts/interface/u2d2_power_hub/u2d2_phb_03.jpg)
 
-4. Connect additional cables that will connect `U2D2` and `DYNAMIXEL` (Depending on the DYNAMIXEL model, converting cables may be required).
+4. Connect additional cables that will connect `U2D2` and `DYNAMIXEL` (Depending on DYNAMIXEL model, converting cables may be required).
 
     ![](/assets/images/parts/interface/u2d2_power_hub/u2d2_phb_04.jpg)
 
-5. Connect the other side of the cable to `DYNAMIXEL` (Depending on the DYNAMIXEL model, converting cables may be required).
+5. Connect the other side of the cable to `DYNAMIXEL` (Depending on DYNAMIXEL model, converting cables may be required).
 
     ![](/assets/images/parts/interface/u2d2_power_hub/u2d2_phb_05.jpg)
 

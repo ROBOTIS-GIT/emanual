@@ -255,7 +255,7 @@ Remove bolts and cover plate to reveal External Port connector.
 
 
 ### <a name="shutdown"></a>**[Shutdown(48)](#shutdown48)**
-The Dynamixel can protect itself by detecting dangerous situations that could occur during the operation. Each Bit is inclusively processed with the ‘OR’ logic, therefore, multiple options can be generated. For instance, when ‘0x05’ (binary : 00000101) is defined as [Shutdown(48)], Dynamixel can detect both Input Voltage Error(binary : 00000001) and Overheating Error(binary : 00000100). If those errors are detected, [Torque Enable(562)] is cleared to ‘0’ and the motor output becomes 0[%]. In order to reuse Dynamixel Pro in shutdown status, REBOOT has to be done. The followings are detectable situations.
+The DYNAMIXEL can protect itself by detecting dangerous situations that could occur during the operation. Each Bit is inclusively processed with the ‘OR’ logic, therefore, multiple options can be generated. For instance, when ‘0x05’ (binary : 00000101) is defined as [Shutdown(48)], DYNAMIXEL can detect both Input Voltage Error(binary : 00000001) and Overheating Error(binary : 00000100). If those errors are detected, [Torque Enable(562)] is cleared to ‘0’ and the motor output becomes 0[%]. In order to reuse DYNAMIXEL Pro in shutdown status, REBOOT has to be done. The followings are detectable situations.
 
 |  Bit  |              Item               | Description                                                                     |
 |:-----:|:-------------------------------:|:--------------------------------------------------------------------------------|
@@ -269,7 +269,7 @@ The Dynamixel can protect itself by detecting dangerous situations that could oc
 | Bit 0 |       Input Voltage Error       | Detect input voltage exceeds the configured operating voltage                   |
 
 {% capture rh_p12_rn_01 %}
-**NOTE** : If Shutdown occurs, use below method to reboot Dynamixels.
+**NOTE** : If Shutdown occurs, use below method to reboot DYNAMIXEL's.
 1. H/W REBOOT : Turn off the power and turn on again
 2. S/W REBOOT : Transmit REBOOT Instruction (For more details, please refer to the [Protocol] section of e-Manual.)
 {% endcapture %}
@@ -327,7 +327,7 @@ If Goal Velocity(600) is set to '0', Profile is disabled and use the maximum RPM
 **NOTE** : The maximum velocity and maximum current of DYNAMIXEL is affected by supplying voltage. Therefore, if supplying voltage changes, so does the maximum velocity. This manual complies with recommended supply voltage(24[V]).
 {: .notice}
 
-**NOTE** : Please check the maximum rpm of the Dynamixel. The motor cannot exceed the maximum rpm with the higher Moving Speed value.
+**NOTE** : Please check the maximum rpm of DYNAMIXEL. The motor cannot exceed the maximum rpm with the higher Moving Speed value.
 {: .notice}
 
 ### <a name="goal-current"></a>**[Goal Current(604)](#goal-current604)**

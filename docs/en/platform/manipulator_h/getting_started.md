@@ -32,7 +32,7 @@ page_number: 2
 The Manipulator requires 24V for operations. Ensure the power supply is capable of supplying 24V and 15A or higher.
 
 ### 4P Cable
-The 4P Cable connects the Manipulator and USB2Dynamixel.
+The 4P Cable connects the Manipulator and USB2DYNAMIXEL.
 
 ![](/assets/images/platform/manipulator_h/manipulator_h_006.jpg)
 
@@ -43,8 +43,8 @@ The power cable supplies power to the Manipulator.
 
 For additional power or 4P cables contact ROBOTIS or obtain them with the specifications listed above. 
 
-### USB2Dynamixel
-The USB2Dynamixel sends ArmSDK commands to the Manipulator. Connect the USB2Dynamixel to the PC via USB hub.
+### USB2DYNAMIXEL
+The USB2DYNAMIXEL sends ArmSDK commands to the Manipulator. Connect the USB2DYNAMIXEL to the PC via USB hub.
 
 ![](/assets/images/platform/manipulator_h/manipulator_h_008.jpg)
 
@@ -77,43 +77,43 @@ The USB2Dynamixel sends ArmSDK commands to the Manipulator. Connect the USB2Dyna
 
 ![](/assets/images/platform/manipulator_h/manipulator_h_016.jpg)
 
-- Connect USB2Dynamixel to the hub with 4P cable; connect another port of the 4P hub to the extension.
+- Connect USB2DYNAMIXEL to the hub with 4P cable; connect another port of the 4P hub to the extension.
 
-**CAUTION** : Connect the USB2Dynamixel to the PC via USB hub. The USB hub acts as an isolator to protect the PC from any possible unexpected surges caused by arm action.
+**CAUTION** : Connect the USB2DYNAMIXEL to the PC via USB hub. The USB hub acts as an isolator to protect the PC from any possible unexpected surges caused by arm action.
 {: .notice--warning}
 
-## [USB2Dynamixel Setting](#usb2dynamixel-setting)
+## [USB2DYNAMIXEL Setting](#usb2dynamixel-setting)
 
 ![](/assets/images/platform/manipulator_h/manipulator_h_017.png)
 
-|Communication|Description|
-|:---:|:---:|
-|TTL|AX, 3-pin MX; communicate with 3-pin Dynamixel|
-|RS485|RX, 4-pin MX and Pro; communicate with 4-pin Dynamixel|
-|RS232|CM-5, CM-510; communicate with these controllers. Communicate with other RS-232 devices|
+| Communication |                                       Description                                       |
+|:-------------:|:---------------------------------------------------------------------------------------:|
+|      TTL      |                     AX, 3-pin MX; communicate with 3-pin DYNAMIXEL                      |
+|     RS485     |                 RX, 4-pin MX and Pro; communicate with 4-pin DYNAMIXEL                  |
+|     RS232     | CM-5, CM-510; communicate with these controllers. Communicate with other RS-232 devices |
 
 **NOTE** : The manipulator is based on RS-485 communications so make sure to set the dongle to 485.
 {: .notice}
 
 ## [Manipulator Test](#manipulator-test)
 
-- Test the arm with Dynamixel Wizard to check for any anomalies. DynamixelWizard is included in RoboPlus suite. RoboPlus can be downloaded from ROBOTIS home page’s Support -> Downloads([http://www.robotis.com/xe/download]).  
+- Test the arm with DYNAMIXEL Wizard to check for any anomalies. DYNAMIXELWizard is included in RoboPlus suite. RoboPlus can be downloaded from ROBOTIS home page’s Support -> Downloads([http://www.robotis.com/xe/download]).  
 
 **CAUTION** : Do NOT download RoboPlus v2.0. Use RoboPlus v1.0 for Manipulator-H.
 {: .notice--warning}
 
   ![](/assets/images/platform/manipulator_h/manipulator_h_018.jpg)
 
-- Install and run RoboPlus; click on Dynamixel Wizard button to start Dynamixel Wizard.
+- Install and run RoboPlus; click on DYNAMIXEL Wizard button to start DYNAMIXEL Wizard.
 
   ![](/assets/images/platform/manipulator_h/manipulator_h_019.jpg)
 
 ### Operating the Manipulator
 
-**DANGER** : Before starting Dynamixel Wizard ensure the arm is fixed to the base plate; then extend the arm. Otherwise; it may cause physical harm.
+**DANGER** : Before starting DYNAMIXEL Wizard ensure the arm is fixed to the base plate; then extend the arm. Otherwise; it may cause physical harm.
 {: .notice--danger}
 
-- USB2Dynamixel to the PC after wiring is complete. From the PC check the COM port number of USB2Dynamixel.
+- USB2DYNAMIXEL to the PC after wiring is complete. From the PC check the COM port number of USB2DYNAMIXEL.
 
   ![](/assets/images/platform/manipulator_h/manipulator_h_020.jpg)
 
@@ -131,7 +131,7 @@ The USB2Dynamixel sends ArmSDK commands to the Manipulator. Connect the USB2Dyna
 
   ![](/assets/images/platform/manipulator_h/manipulator_h_024.jpg)
 
-- The picture on the left is the COM port number of USB2Dynamixel (which should be connected to the arm). Click on the   to continue
+- The picture on the left is the COM port number of USB2DYNAMIXEL (which should be connected to the arm). Click on the   to continue
 
   ![](/assets/images/platform/manipulator_h/manipulator_h_025.jpg)
 
@@ -141,13 +141,13 @@ The USB2Dynamixel sends ArmSDK commands to the Manipulator. Connect the USB2Dyna
 
   ![](/assets/images/platform/manipulator_h/manipulator_h_027.jpg)
 
-- Once search is complete the arm’s components (Dynamixel PROs) are listed on the left. Click on an individual Dynamixel PRO to display the contents of its Control Table.
+- Once search is complete the arm’s components (DYNAMIXEL PROs) are listed on the left. Click on an individual DYNAMIXEL PRO to display the contents of its Control Table.
 
   ![](/assets/images/platform/manipulator_h/manipulator_h_028.jpg)
 
   ![](/assets/images/platform/manipulator_h/manipulator_h_029.jpg)
 
-- Dynamixel Pro will only move (operate) when Torque Mode is on. So always make sure the Torque Mode is on prior to sending moving commands.  
+- DYNAMIXEL Pro will only move (operate) when Torque Mode is on. So always make sure the Torque Mode is on prior to sending moving commands.  
   Torque Enable is located on address number 562. A value of 1 means on and 0 means off.
 
   ![](/assets/images/platform/manipulator_h/manipulator_h_030.jpg)
@@ -163,29 +163,29 @@ The USB2Dynamixel sends ArmSDK commands to the Manipulator. Connect the USB2Dyna
   ![](/assets/images/platform/manipulator_h/manipulator_h_034.jpg)
 
 - Now verify the arm moves properly by changing Goal Position. Move the end effector (joint 6) +90 degrees.  
-  To move joint 6 to +90 degrees set Goal Position of the Dynamixel PRO model H42-20-S300-R to 75938 or L42-10-S300-R to 1024.
+  To move joint 6 to +90 degrees set Goal Position of DYNAMIXEL PRO model H42-20-S300-R to 75938 or L42-10-S300-R to 1024.
 - Once Goal Position has been set visually verify that joint 6 has rotated 90 degrees.
-- To actually get Dynamixel PRO to move to its respective Goal Position, click on the Apply button after setting the value. If there is no movement, make sure Torque Enable is turned on (set to 1).
+- To actually get DYNAMIXEL PRO to move to its respective Goal Position, click on the Apply button after setting the value. If there is no movement, make sure Torque Enable is turned on (set to 1).
 - Set Goal Position back to 0 to set position to its original position.
 
   ![](/assets/images/platform/manipulator_h/manipulator_h_035.jpg)
 
 - Click on ID. Set the Goal Position to 1000 (500 for L42 model).
-- To actually get Dynamixel PRO to move to its respective Goal Position, click on the Apply button after setting the value. If there is no movement, make sure Torque Enable is turned on (set to 1).
+- To actually get DYNAMIXEL PRO to move to its respective Goal Position, click on the Apply button after setting the value. If there is no movement, make sure Torque Enable is turned on (set to 1).
 - Set Goal Position back to 0 to set position to its original position..
 - Do the same procedure for joint 2 through 6.
 
 ### Goal Position Values with Respect to Rotation
 
-- Goal Position value determines the rotational position of Dynamixel PRO.
+- Goal Position value determines the rotational position of DYNAMIXEL PRO.
 
-|Model Name|Relationship between angle(deg) and position value|
-|:---:|:---:|
-|H54-200-S500-R<br />H54-100-S500-R|-180 ~ 180 (deg) → -251000 ~ 251000<br />![](/assets/images/platform/manipulator_h/manipulator_h_036.jpg)<br />![](/assets/images/platform/manipulator_h/manipulator_h_037.gif)|
-|H42-20-S300-R|-180 ~ 180 (deg) → -151875 ~ 151875<br />![](/assets/images/platform/manipulator_h/manipulator_h_038.jpg)<br />![](/assets/images/platform/manipulator_h/manipulator_h_039.gif)|
-|L54-50-S500-R|-180 ~ 180 (deg) → -125700 ~ 125700<br />![](/assets/images/platform/manipulator_h/manipulator_h_040.jpg)<br />![](/assets/images/platform/manipulator_h/manipulator_h_041.gif)|
-|L54-30-S500-R|-180 ~ 180 (deg) → -144180 ~ 144180<br />![](/assets/images/platform/manipulator_h/manipulator_h_042.jpg)<br />![](/assets/images/platform/manipulator_h/manipulator_h_043.gif)|
-|L42-20-S300-R|-180 ~ 180 (deg) → -2048 ~ 2048<br />![](/assets/images/platform/manipulator_h/manipulator_h_044.jpg)<br />![](/assets/images/platform/manipulator_h/manipulator_h_045.gif)|
+|             Model Name             |                                                               Relationship between angle(deg) and position value                                                                |
+|:----------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| H54-200-S500-R<br />H54-100-S500-R | -180 ~ 180 (deg) → -251000 ~ 251000<br />![](/assets/images/platform/manipulator_h/manipulator_h_036.jpg)<br />![](/assets/images/platform/manipulator_h/manipulator_h_037.gif) |
+|           H42-20-S300-R            | -180 ~ 180 (deg) → -151875 ~ 151875<br />![](/assets/images/platform/manipulator_h/manipulator_h_038.jpg)<br />![](/assets/images/platform/manipulator_h/manipulator_h_039.gif) |
+|           L54-50-S500-R            | -180 ~ 180 (deg) → -125700 ~ 125700<br />![](/assets/images/platform/manipulator_h/manipulator_h_040.jpg)<br />![](/assets/images/platform/manipulator_h/manipulator_h_041.gif) |
+|           L54-30-S500-R            | -180 ~ 180 (deg) → -144180 ~ 144180<br />![](/assets/images/platform/manipulator_h/manipulator_h_042.jpg)<br />![](/assets/images/platform/manipulator_h/manipulator_h_043.gif) |
+|           L42-20-S300-R            |   -180 ~ 180 (deg) → -2048 ~ 2048<br />![](/assets/images/platform/manipulator_h/manipulator_h_044.jpg)<br />![](/assets/images/platform/manipulator_h/manipulator_h_045.gif)   |
 
 
 [http://www.robotis.com/xe/download]: http://www.robotis.com/xe/download

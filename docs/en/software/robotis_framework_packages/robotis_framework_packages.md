@@ -13,14 +13,14 @@ sidebar:
 
 # [Robotis Framework Packages](#robotis-framework-packages)
 
-## [DynamixelSDK](#dynamixelsdk)
+## [DYNAMIXEL SDK](#dynamixel-sdk)
 
 ### Overview
 
-Dynamixel SDK is a standard programming libraries to develop the software that controls Dynamixel.
-Please refer to the below link for more information about the Dynamixel SDK.
+DYNAMIXEL SDK is a standard programming libraries to develop the software that controls DYNAMIXEL.
+Please refer to the below link for more information about DYNAMIXEL SDK.
 
-> Reference : [ROBOTIS Dynamixel SDK Documents]
+> Reference : [ROBOTIS DYNAMIXEL SDK Documents]
 
 ## [Robotis Framework](#robotis-framework)
 
@@ -258,7 +258,7 @@ This package defines Messages and Service that are used in the [robotis_controll
 [robotis_controller_msgs/SyncWriteItem]: /docs/en/popup/SyncWriteItem.msg/
 [robotis_controller_msgs/JointCtrlModule]: /docs/en/popup/JointCtrlModule.msg/
 [robotis_controller_msgs/GetJointModule]: /docs/en/popup/GetJointModule.srv/
-[ROBOTIS Dynamixel SDK Documents]: http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/overview/
+[ROBOTIS DYNAMIXEL SDK Documents]: http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/overview/
 [robotis_controller]: /docs/en/software/robotis_framework_packages/#robotis-controller
 [JointCtrlModule.msg]: /docs/en/popup/JointCtrlModule.msg/
 [StatusMsg.msg]: /docs/en/popup/StatusMsg.msg/

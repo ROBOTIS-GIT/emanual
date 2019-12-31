@@ -25,20 +25,20 @@ sidebar:
 
 # [주요사양](#specifications)
 
-| 항목 | 사양|
-|:---:|:----:|
-|무게 | 37g|
-|해상도 | 10bit(1024)|
-|동작 온도|-5&deg;C ~ +85&deg;C|
-|사용 전압|9  ~ 12V (권장 전압 11.1V)|
-|최대 전류|40mA|
-|Command Signal|Digital Packet|
-|Protocol Type|Half duplex Asynchronous Serial Communication(8bit,1stop,No Parity)|
-|Link(Physical)|TTL Level Multi Drop (daisy chain type Connector)|
-|ID|254 ID (0~253)|
-|통신 속도|7843bps ~ 1 Mbps|
-|Feedback| Infra-red Sensor, Internal Mic, Temperature, Input Voltage,  IR Remocon Tx/Rx Data, etc.|
-|Material|Engineering Plastic|
+|      항목      |                                           사양                                           |
+|:--------------:|:----------------------------------------------------------------------------------------:|
+|      무게      |                                           37g                                            |
+|     해상도     |                                       10bit(1024)                                        |
+|   동작 온도    |                                   -5&deg;C ~ +85&deg;C                                   |
+|   사용 전압    |                                9  ~ 12V (권장 전압 11.1V)                                |
+|   최대 전류    |                                           40mA                                           |
+| Command Signal |                                      Digital Packet                                      |
+| Protocol Type  |           Half duplex Asynchronous Serial Communication(8bit,1stop,No Parity)            |
+| Link(Physical) |                    TTL Level Multi Drop (daisy chain type Connector)                     |
+|       ID       |                                      254 ID (0~253)                                      |
+|   통신 속도    |                                     7843bps ~ 1 Mbps                                     |
+|    Feedback    | Infra-red Sensor, Internal Mic, Temperature, Input Voltage,  IR Remocon Tx/Rx Data, etc. |
+|    Material    |                                   Engineering Plastic                                    |
 
 # [통신방법](#how-to-communicate)
 AX-S1의 통신 방법과 통신과 관련된 하드웨어 구성은 다이나믹셀 AX시리즈와 동일합니다.
@@ -54,7 +54,7 @@ Control Table은 다이나믹셀 내부에 존재하는 값으로서 다이나�
 RAM Area의 Data는 전원이 인가될 때마다 다시 초기값으로 설정됩니다. 그러나 EEPROM Area Data의 경우 값을 설정하면 전원이 Off되어도 그 값이 보존됩니다.
 
 ## [Address](#Address)
-Address는Data의 위치 입니다. Dynamixel 에 Data를 쓰거나 읽기 위해서는 Packet에 그 Data가 위치해 있는 Address를 지정해 주어야 합니다.
+Address는Data의 위치 입니다. 다이나믹셀 에 Data를 쓰거나 읽기 위해서는 Packet에 그 Data가 위치해 있는 Address를 지정해 주어야 합니다.
 
 ## [접근](#access)
 다이나믹셀 Data 에는 읽기 전용(R)과 읽고 쓰기가 가능한 것(RW), 두 가지가 있습니다. 읽기 전용(R)은 주로 센싱용으로 사용되는 data 이며 읽고 쓰기 가능한 것(RW)은 구동을 위한 Data 입니다.
@@ -148,11 +148,11 @@ Dynamixel Sensor Module의 조명감지 센서값입니다. 적외선 센서값�
 ### <a name="ir-obstacle"></a>물체감지 유무
 AX-S1의 적외선 거리센서 값이 거리감지 기준값보다 크면 물체가 감지되었다고 판단하여 물체감지 유무값의 특정 Bit을 1로 셋팅해 줍니다. 각 센서가 나타내는 Bit은 아래 표를 참고하십시오.
 
-|Bit   | 명칭|
-|----- | -----------------|
-|Bit 2 | 우측 센서 물체감지/조명감지 됨|
-|Bit 1 | 중앙 센서 물체감지/조명감지 됨|
-|Bit 0 | 좌측 센서 물체감지/조명감지 됨|
+| Bit   | 명칭                           |
+|:------|:-------------------------------|
+| Bit 2 | 우측 센서 물체감지/조명감지 됨 |
+| Bit 1 | 중앙 센서 물체감지/조명감지 됨 |
+| Bit 0 | 좌측 센서 물체감지/조명감지 됨 |
 
 ### <a name="light-detected"></a>조명감지 유무
 AX-S1의 조명밝기 센서값이 빛감지 기준값보다 크면 빛이 감지되었다고 판단하여 조명감지 유무값의 특정 Bit을 1로 셋팅해 줍니다. 각 센서가 나타내는 Bit은 물체감지 유무값의 경우와 동일합니다. (위 Address 0x20을 참고)
@@ -204,10 +204,10 @@ AX-S1의 버저 울림 시간에는 두 가지의 특별한 기능이 있습니�
 
 ### <a name="registered"></a>Registered Instruction
 
-| 값    | 의미                       |
-| ---- | ------------------------ |
-| 0    | REG_WRITE로 전달된 명령이 없습니다. |
-| 1    | REG_WRITE로 전달된 명령이 있습니다. |
+| 값 | 의미                                |
+|:---|:------------------------------------|
+| 0  | REG_WRITE로 전달된 명령이 없습니다. |
+| 1  | REG_WRITE로 전달된 명령이 있습니다. |
 
 **참고**: ACTION 명령을 수행하면 이 값이 0으로 바뀝니다.
 {: .notice}
@@ -221,10 +221,10 @@ AX-S1의 버저 울림 시간에는 두 가지의 특별한 기능이 있습니�
 
 ### <a name="lock"></a>Lock
 
-| 값    | 의미                    |
-| ---- | --------------------- |
-| 0    | EEPROM영역을 수정할 수 있습니다. |
-| 1    | EEPROM영역을 수정하지 못합니다.  |
+| 값 | 의미                             |
+|:---|:---------------------------------|
+| 0  | EEPROM영역을 수정할 수 있습니다. |
+| 1  | EEPROM영역을 수정하지 못합니다.  |
  
 **주의**: Lock이 1로 설정되면 전원을 껐다 켜야 0으로 바꿀 수 있습니다.
  {: notice--warning}

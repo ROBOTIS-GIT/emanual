@@ -32,7 +32,7 @@ sidebar:
 
 | Items               | Unit    | OpenMANIPULATOR-X                                    |
 |:--------------------|:--------|:-----------------------------------------------------|
-| **Actuator**        |         | Dynamixel [XM430-W350-T](/docs/en/dxl/x/xm430-w350/) |
+| **Actuator**        |         | DYNAMIXEL [XM430-W350-T](/docs/en/dxl/x/xm430-w350/) |
 | **Input Voltage**   | V       | 12                                                   |
 | **DOF**             | -       | 5 (4 DOF + 1 DOF Gripper)                            |
 | **Payload**         | g       | 500                                                  |
@@ -42,7 +42,7 @@ sidebar:
 | **Reach**           | mm (in) | 380   (14.9)                                         |
 | **Gripper Stroke**  | mm (in) | 20~75 (0.79~2.95)                                    |
 | **Communication**   | -       | TTL Level Multidrop BUS                              |
-| **Software**        | -       | ROS, Dynamixel SDK, Arduino, Processing              |
+| **Software**        | -       | ROS, DYNAMIXEL SDK, Arduino, Processing              |
 | **Main Controller** | -       | PC, OpenCR                                           |
 
 
@@ -74,7 +74,7 @@ sidebar:
 |            Weight             |                                                                                                                                                                                                     5 kg                                                                                                                                                                                                     |
 |       Operating voltage       |                                                                                                                                                                                                     24 V                                                                                                                                                                                                     |
 |          Resolution           | Joint 1 : -&pi;(rad) ~ &pi;(rad) , -501,923 ~ 501,923 (pulse)<br />Joint 2 : -&pi;(rad) ~ &pi;(rad) , -501,923 ~ 501,923 (pulse)<br />Joint 3 : -&pi;(rad) ~ &pi;(rad) , -501,923 ~ 501,923 (pulse)<br />Joint 4 : -&pi;(rad) ~ &pi;(rad) , -501,923 ~ 501,923 (pulse)<br />Joint 5 : -&pi;(rad) ~ &pi;(rad) , -303,750 ~ 303,750 (pulse)<br />Joint 6 : -&pi;(rad) ~ &pi;(rad) , -303,750 ~ 303,750 (pulse) |
-| Dynamixel Pro<br />Model Name |                                                                              Joint 1, 2 : [PH54-200-S500-R](/docs/en/dxl/pro_plus/ph54-200-s500-r/) (200W)<br />Joint 3, 4 : [PH54-100-S500-R](/docs/en/dxl/pro_plus/ph54-100-s500-r/)(100W)<br />Joint 5, 6 : [PH42-020-S300-R](/docs/en/dxl/pro_plus/ph42-020-s300-r/) (20W)                                                                               |
+| DYNAMIXEL Pro<br />Model Name |                                                                              Joint 1, 2 : [PH54-200-S500-R](/docs/en/dxl/pro_plus/ph54-200-s500-r/) (200W)<br />Joint 3, 4 : [PH54-100-S500-R](/docs/en/dxl/pro_plus/ph54-100-s500-r/)(100W)<br />Joint 5, 6 : [PH42-020-S300-R](/docs/en/dxl/pro_plus/ph42-020-s300-r/) (20W)                                                                               |
 |        Operating Range        |                                                                                 Joint 1 : -&pi;(rad) ~ &pi;(rad)<br />Joint 2 : -&pi;/2(rad) ~ &pi;/2(rad)<br />Joint 3 : -&pi;/2(rad) ~ 3&pi;/4(rad)<br />Joint 4 : -&pi;(rad) ~ &pi;(rad)<br />Joint 5 : -&pi;/2(rad) ~ &pi;/2(rad)<br />Joint 6 : -&pi;(rad) ~ &pi;(rad)                                                                                  |
 |          Default ID           |                                                                                                                                                     Joint 1 (ID:1), Joint 2 (ID:2), Joint 3 (ID:3),<br />Joint 4 (ID:4), Joint 5 (ID:5), Joint 6 (ID:6)                                                                                                                                                      |
 |          Motor type           |                                                                                                                                                                     Brushless DC Servo(H54P Series),<br />Coreless DC Motor(H42P Series)                                                                                                                                                                     |

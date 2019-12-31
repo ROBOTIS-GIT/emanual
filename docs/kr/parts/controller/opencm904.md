@@ -27,7 +27,7 @@ sidebar:
 |       JTAG/SWD       |         X         |         1         |         1         |
 |     Micro B USB      |         X         |         1         |         1         |
 |      5-Pin Port      |         X         |         4         |         4         |
-|  Dynamixel TTL BUS   |         X         |       4`1`        |       4`2`        |
+|  다이나믹셀 TTL BUS  |         X         |       4`1`        |       4`2`        |
 |   4 Pin 통신 포트    |         X         |         1         |         1         |
 
 `1`: [MOLEX 53253-0370] x 2(XL-320 호환), [MOLEX 22-03-5035] x 2(AX 또는 MX 시리즈 호환)  
@@ -199,7 +199,7 @@ USART 1번 채널은 다이나믹셀 TTL Bus에 할당되어 있어서 핀11(TX1
 LBS-04 리튬 이온 배터리 2개를 직렬 연결하는 커넥터 입니다. 배터리를 2개 직렬 연결한 상태에서 충전할 경우 쇼트위험이 있으므로 반드시 보드와 연결을 분리해서 충전해주세요.
 
 ### [다이나믹셀 TTL 소켓](#다이나믹셀-ttl-소켓)
-3핀 케이블(Dynamixel TTL Bus)을 사용하는 다이나믹셀을 Daisy chain으로 연결하기 위한 포트 입니다.
+3핀 케이블(다이나믹셀 TTL Bus)을 사용하는 다이나믹셀을 Daisy chain으로 연결하기 위한 포트 입니다.
 
 {% include kr/dxl/pinout_warning.md %}
 
@@ -445,7 +445,7 @@ OpenCM9.04의 다이나믹셀 TTL 3핀 홀은 기존 다이나믹셀 TTL 3핀과
 
 |                      | [아두이노 IDE] | [OpenCM IDE] |
 |:--------------------:|:--------------:|:------------:|
-|   [Dynamixel SDK]    |       O        |      X       |
+|   [다이나믹셀 SDK]   |       O        |      X       |
 | [DynamixelWorkbench] |       O        |      X       |
 | 아두이노 라이브러리  |       O        |      O       |
 |         OS X         |       O        | O (10.12.2)  |
@@ -755,7 +755,7 @@ Dynamixel2Arduino 클래스는 Master 클래스로부터 다음의 함수를 상
 [BT-110]: /docs/kr/parts/communication/bt-110/
 [BT-210]: /docs/kr/parts/communication/bt-210/
 [BT-410]: /docs/kr/parts/communication/bt-410/
-[Dynamixel SDK]: /docs/kr/software/dynamixel/dynamixel_sdk/overview/
+[다이나믹셀 SDK]: /docs/kr/software/dynamixel/dynamixel_sdk/overview/
 [DynamixelWorkbench]: /docs/kr/software/dynamixel/dynamixel_workbench/
 [컨트롤 테이블 확인하기]: /docs/kr/software/rplus2/manager/#다이나믹셀-컨트롤-테이블
 [OpenCM9.04_manual_ko.zip]: http://www.robotis.com/download/doc/controller/OpenCM9.04_ko/OpenCM9.04_manual_ko.zip

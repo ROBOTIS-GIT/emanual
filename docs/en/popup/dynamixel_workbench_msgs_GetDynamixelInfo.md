@@ -17,6 +17,6 @@ This message is used to get information of dynamixel
 
   - Response
     * `DynamixelInfo dynamixel_info`([dynamixel_workbench_msgs/DynamixelInfo])
-&emsp;&emsp; Basic information of Dynamixel
+&emsp;&emsp; Basic information of DYNAMIXEL
 
 [dynamixel_workbench_msgs/DynamixelInfo]: /docs/en/popup/dynamixel_workbench_msgs_DynamixelInfo/

@@ -30,7 +30,7 @@ The development environment for OpenCR1.0 is wide open from Arduino IDE and Scra
 | Programmer           | ARM Cortex 10pin JTAG/SWD connector<br />USB Device Firmware Upgrade (DFU)<br />Serial                                                                                                                                                    |
 | Digital I/O          | 32 pins (L 14, R 18) *Arduino connectivity<br />5Pin OLLO x 4<br />GPIO x 18 pins<br />PWM x 6<br />I2C x 1<br />SPI x 1                                                                                                                  |
 | Analog INPUT         | ADC Channels (Max 12bit) x 6                                                                                                                                                                                                              |
-| Communication Ports  | USB x 1 (Micro-B USB connector/USB 2.0/Host/Peripheral/OTG)<br />TTL x 3 ([B3B-EH-A] / Dynamixel)<br />RS485 x 3 ([B4B-EH-A] / Dynamixel)<br />UART x 2 ([20010WS-04])<br />CAN x 1 ([20010WS-04])                                        |
+| Communication Ports  | USB x 1 (Micro-B USB connector/USB 2.0/Host/Peripheral/OTG)<br />TTL x 3 ([B3B-EH-A] / DYNAMIXEL)<br />RS485 x 3 ([B4B-EH-A] / DYNAMIXEL)<br />UART x 2 ([20010WS-04])<br />CAN x 1 ([20010WS-04])                                        |
 | LEDs and buttons     | LD2 (red/green) : USB communication<br />User LED x 4 : LD3 (red), LD4 (green), LD5 (blue)<br />User button  x 2<br />Power LED : LD1 (red, 3.3 V power on)<br />Reset button x 1 (for power reset of board)<br />Power on/off switch x 1 |
 | Input Power Sources  | 5 V (USB VBUS), 7-24 V (Battery or SMPS)<br />Default battery : LI-PO 11.1V 1,800mAh 19.98Wh<br />Default SMPS : 12V 4.5A<br />External battery Port for RTC (Real Time Clock) ([Molex 53047-0210])                                       |
 | Output Power Sources | <sup>`*`</sup>12V max 4.5A([SMW250-02])<br /><sup>`*`</sup>5V max 4A([5267-02A]), 3.3V@800mA([20010WS-02])                                                                                                                                |
@@ -180,7 +180,7 @@ void changeDirection_EXIT_0(void){
 | Serial3             | DXL Port     | USART3   |
 | Serial4 (SerialBT2) | UART2        | UART8    |
 
-**CAUTION**: Since Serial3 is used for Dynamixel, its usage differs from other serial. (For more information, please refer to DynamixelWorkbench.)
+**CAUTION**: Since Serial3 is used for DYNAMIXEL, its usage differs from other serial. (For more information, please refer to DYNAMIXELWorkbench.)
 {: .notice--warning}
 
 
@@ -1156,9 +1156,9 @@ void loop()
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7fOIeFTg7bY" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
-## [Dynamixel Workbench](#dynamixel-workbench)
+## [DYNMAIXEL Workbench](#dynamixel-workbench)
 
-- [Dynamixel-Workbench examples](/docs/en/software/dynamixel/dynamixel_workbench/#opencr-and-opencm-tutorials)
+- [DYNAMIXEL-Workbench examples](/docs/en/software/dynamixel/dynamixel_workbench/#opencr-and-opencm-tutorials)
 
 ## [OpenMANIPULATOR](#openmanipulator)
 

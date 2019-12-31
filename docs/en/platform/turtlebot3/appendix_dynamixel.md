@@ -71,15 +71,15 @@ Two different types of DYNAMIXEL is adopted in TurtleBot3 Burger, Waffle and Waf
   - [XL430-W250][xl430_w250] for TurtleBot3 Burger
   - [XM430-W210][xm430_w210] for TurtleBot3 Waffle and Waffle Pi
 
-### [Dynamixel SDK](#dynamixel-sdk)
+### [DYNAMIXEL SDK](#dynamixel-sdk)
 
 ![](/assets/images/sw/sdk/dynamixel_sdk/overview/dynamixel_sdk_concept_logo.jpg)
 
-The ROBOTIS Dynamixel SDK is a software development library that provides Dynamixel control functions for packet communication. The API is designed for Dynamixel actuators and Dynamixel-based platforms. TurtleBot3 uses the Dynamixel SDK in OpenCR to control the actuator.
+The ROBOTIS DYNAMIXEL SDK is a software development library that provides DYNAMIXEL control functions for packet communication. The API is designed for DYNAMIXEL actuators and DYNAMIXEL-based platforms. TurtleBot3 uses DYNAMIXEL SDK in OpenCR to control the actuator.
 
-- More information for Dynamixel SDK can be found at below ROBOTIS e-Manual and GitHub links.
-  - [e-Manual of Dynamixel SDK][dynamixel_sdk]
-  - [GitHub Repository of Dynamixel SDK][dynamixel_sdk_github]
+- More information for DYNAMIXEL SDK can be found at below ROBOTIS e-Manual and GitHub links.
+  - [e-Manual of DYNAMIXEL SDK][dynamixel_sdk]
+  - [GitHub Repository of DYNAMIXEL SDK][dynamixel_sdk_github]
 
 [dynamixel]: http://en.robotis.com/subindex/dxl_en.php
 [xl430_w250]: /docs/en/dxl/x/xl430-w250/

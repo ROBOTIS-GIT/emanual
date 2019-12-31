@@ -36,7 +36,7 @@ page_number: 4
 | .                 | FR12-S102-K            |    2     |
 | .                 | FR12-H101-K            |    2     |
 | .                 | FR12-H104-K            |    1     |
-| **Actuators**     | Dynamixel XM430-W350-T |    5     |
+| **Actuators**     | DYNAMIXEL XM430-W350-T |    5     |
 | **Cables**        | CABLE-X3P-100          |    1     |
 | .                 | CABLE-X3P-180          |    2     |
 | .                 | CABLE-X3P-240          |    2     |

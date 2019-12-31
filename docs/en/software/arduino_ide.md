@@ -15,7 +15,7 @@ sidebar:
 
 Arduino IDE is [OpenCR] and [OpenCM9.04] compatible development tool.  
 [OpenCM IDE] can be replaced with Arduino IDE, and it is recommended to use Arduino IDE if possible.  
-Arduino IDE allows users to apply [Dynamixel SDK] and [Dynamixel Workbench] when writing sketches.  
+Arduino IDE allows users to apply [DYNAMIXEL SDK] and [DYNMAIXEL Workbench] when writing sketches.  
 
 # [Software Installation](#software-installation)
 
@@ -321,7 +321,7 @@ Select Tools → Port → COM1.
 3. [Buzzer]{: .popup}
 4. [PWM]{: .popup}
 5. [EEPROM]{: .popup}
-6. [DynamixelWorkbench]{: .popup}
+6. [DYNAMIXEL Workbench]{: .popup}
 7. [Servo]{: .popup}
 8. [SD Card]{: .popup}
 9. [MS5540S]{: .popup}
@@ -368,15 +368,15 @@ Click `Tools` > `Burn Bootloader` to burn the bootloader.
 [OpenCR]: /docs/en/parts/controller/opencr10/
 [OpenCM9.04]: /docs/en/parts/controller/opencm904/
 [OpenCM IDE]: /docs/en/software/opencm_ide/getting_started/
-[Dynamixel SDK]: /docs/en/software/dynamixel/dynamixel_sdk/overview/
-[Dynamixel Workbench]: /docs/en/software/dynamixel/dynamixel_workbench/
+[DYNAMIXEL SDK]: /docs/en/software/dynamixel/dynamixel_sdk/overview/
+[DYNMAIXEL Workbench]: /docs/en/software/dynamixel/dynamixel_workbench/
 
 [LED]: /docs/en/popup/opencm904_ex_led/
 [Button]: /docs/en/popup/opencm904_ex_button/
 [Buzzer]: /docs/en/popup/opencm904_ex_buzzer/
 [PWM]: /docs/en/popup/opencm904_ex_pwm/
 [EEPROM]: /docs/en/popup/opencm904_ex_eeprom/
-[DynamixelWorkbench]: /docs/en/popup/opencm904_ex_dynamixelworkbench/
+[DYNAMIXEL Workbench]: /docs/en/popup/opencm904_ex_dynamixelworkbench/
 [Servo]: /docs/en/popup/opencm904_ex_servo/
 [SD Card]: /docs/en/popup/opencm904_ex_sdcard/
 [MS5540S]: /docs/en/popup/opencm904_ex_ms5540s/

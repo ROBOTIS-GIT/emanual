@@ -15,12 +15,12 @@ sidebar:
 
 ![](/assets/images/sw/dynamixel/dynamixel_workbench/DYNAMIXEL_WORKBENCH_LOGO.png)
 
-The purpose of Dynamixel-Workbench is **to use more simple and easy to use any Dynamixels**. This library is based on [DynamixelSDK] and supports ROS, Linux, macOS and Arduino. However, this library is not magic stick to operate Dynamixels with any setup. It has some restriction compared with DynamixelSDK but we are continue to upgrade this library for almost everyone loves Dynamixels.
+The purpose of DYNAMIXEL-Workbench is **to use more simple and easy to use any DYNAMIXEL**. This library is based on [DYNAMIXEL SDK] and supports ROS, Linux, macOS and Arduino. However, this library is not magic stick to operate DYNAMIXEL with any setup. It has some restriction compared with DYNAMIXEL SDK but we are continue to upgrade this library for almost everyone loves DYNAMIXEL.
 
 If have any questions or issues, please get a ticket in [github issue](https://github.com/ROBOTIS-GIT/dynamixel-workbench/issues).
   
 
-# [Supported Dynamixels](#supported-dynamixels)
+# [Supported DYNAMIXEL](#supported-dynamixels)
 
 
 | DYNAMIXEL Series |                                |                                |                                |                                |                 |
@@ -41,7 +41,7 @@ If have any questions or issues, please get a ticket in [github issue](https://g
 | **PRO+ H**       | [PH42-020-S300-R]              | [PH54-100-S500-R]              | [PH54-100-S500-R]              |                                |                 |
 
 
-The **Dynamixel Workbench** metapackage contains 3 packages:  **Controllers**, **Operators**, and **Toolbox**. The **Controllers** package introduces how to employ the Dynamixel on different operating mode with Dynamixel Workbench library(**Toolbox**).  In addition, the **Operators** demonstrates some straightforward examples by operating **Controllers**.
+The **DYNMAIXEL Workbench** metapackage contains 3 packages:  **Controllers**, **Operators**, and **Toolbox**. The **Controllers** package introduces how to employ DYNAMIXEL on different operating mode with DYNMAIXEL Workbench library(**Toolbox**).  In addition, the **Operators** demonstrates some straightforward examples by operating **Controllers**.
 
 [ROS WIKI](http://wiki.ros.org/dynamixel_workbench)
 
@@ -116,12 +116,12 @@ In order to use Exameples for OpenCM 9.04 in Arduino, Porting OpenCM9.04 Board t
 $ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git
 $ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench.git
 ```
-### Setup DynamixelSDK library
+### Setup DYNAMIXEL SDK library
 
 - [Linux](http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/library_setup/cpp_linux/#cpp-linux)  
 - [macOS](http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/library_setup/cpp_macos/#cpp-macos)  
 
-### Setup Dynamixel-Workbench library
+### Setup DYNAMIXEL-Workbench library
 
 ``` bash
 $ cd ~/dynamixel-workbench/dynamixel_workbench_toolbox/examples
@@ -243,16 +243,16 @@ Then you can see below texts.
 [ INFO] [1544589841.990120553]: Find 0 Dynamixels
 ```
 
-**TIP**: If you can't find any Dynamixels, please check usb port, power. Even if it can't find anything, please check firmware to use ROBOTIS software ([R+ Manager 2.0](http://emanual.robotis.com/docs/en/software/rplus2/manager/) or [R+ Manager 1.0](http://emanual.robotis.com/docs/en/software/rplus2/manager/))
+**TIP**: If you can't find any DYNAMIXEL, please check usb port, power. Even if it can't find anything, please check firmware to use ROBOTIS software ([R+ Manager 2.0](http://emanual.robotis.com/docs/en/software/rplus2/manager/) or [R+ Manager 1.0](http://emanual.robotis.com/docs/en/software/rplus2/manager/))
 {: .notice--success}
 
 
 ### [Controllers](#controllers)
 
-This package is to control Dynamixels by ROS API. You can load your Dynamixels by simply creating yaml file.  
+This package is to control DYNAMIXEL by ROS API. You can load your DYNAMIXEL by simply creating yaml file.  
 
-The configuration of the yaml file is as follows. `name` is used for joint name of /joint_states topic as well as identifing Dynamixel.  
-When controller is initialized, Dynamixel information is loaded from the file and configures each `Control_Table_Item` with the `value` for each Dynamixel based on `id`.
+The configuration of the yaml file is as follows. `name` is used for joint name of /joint_states topic as well as identifing DYNAMIXEL.  
+When controller is initialized, DYNAMIXEL information is loaded from the file and configures each `Control_Table_Item` with the `value` for each DYNAMIXEL based on `id`.
 
 ```
 [name]:
@@ -272,7 +272,7 @@ When controller is initialized, Dynamixel information is loaded from the file an
   .
 ```
 
-Let's take a look at the `joint_2_0.yaml` file. This file indicates configuration for 2 Dynamixels. The first Dynamixel has the name of 'pan' and id is '1' whereas the second Dynamixel has the name of 'tilt' and id is '2'. Both Dynamixels will be set [Return_Delay_time](http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#return-delay-time9) to zero(0) and [Operating_Mode](http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#operating-mode11) to Position Control Mode(3).
+Let's take a look at the `joint_2_0.yaml` file. This file indicates configuration for 2 DYNAMIXEL. The first DYNAMIXEL has the name of 'pan' and id is '1' whereas the second DYNAMIXEL has the name of 'tilt' and id is '2'. Both DYNAMIXEL will be set [Return_Delay_time](http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#return-delay-time9) to zero(0) and [Operating_Mode](http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#operating-mode11) to Position Control Mode(3).
 
 ```
 pan:
@@ -292,9 +292,9 @@ tilt:
 {: .notice--warning}
   
 **WARNING**:  
-You can find control table of Dynamixel on [e-Manual](http://emanual.robotis.com/#control-table)  
+You can find control table of DYNAMIXEL on [e-Manual](http://emanual.robotis.com/#control-table)  
 Control table item has to follow [Camel_Case](https://en.wikipedia.org/wiki/Camel_case) without a blank.    
-You are supposed to set at least Dynamixel ID.  
+You are supposed to set at least DYNAMIXEL ID.  
 {: .notice--warning}
 
 Let's take a look at the `dynamixel_controller.launch` file
@@ -335,14 +335,14 @@ $ cd ~/catkin_ws && catkin_make
 $ roslaunch dynamixel_workbench_controllers dynamixel_controllers.launch
 ```
 
-If controller load your Dynamixel, you can watch below texts
+If controller load your DYNAMIXEL, you can watch below texts
 
 ```
 [ INFO] [1544595828.276238724]: Name : pan, ID : 1, Model Number : 1020
 [ INFO] [1544595828.316198852]: Name : tilt, ID : 2, Model Number : 1020
 ```
 
-After initialization, Dynamixels will be torque on. If you want to write value to the Dynamixel, you can use ROS service(`/dynamixel_command`).
+After initialization, DYNAMIXEL will be torque on. If you want to write value to DYNAMIXEL, you can use ROS service(`/dynamixel_command`).
 
 Open rqt and `Plugins` -> `Services` -> `Service Caller`
 
@@ -362,7 +362,7 @@ value: 2048"
 USB port name you used
 
 - `dxl_baud_rate`  
-Baud Rate of Dynamixels
+Baud Rate of DYNAMIXEL
 
 - `namespace`  
 Namespace of this package
@@ -374,10 +374,10 @@ YAML file path
 Period of publishing topic (msec)
 
 - `dxl_read_period`  
-Period of reading information of Dynamixel (msec)
+Period of reading information of DYNAMIXEL (msec)
 
 - `dxl_write_period`  
-Period of writing value to Dynamixel (msec)
+Period of writing value to DYNAMIXEL (msec)
 
 - `use_moveit`  
 If you use joint trajectory from calculated by MoveIt!, please set True
@@ -396,17 +396,17 @@ This parameters is valid when `use_cmd_vel_topic` it True
 
 **Topic List** :
 - `/dynamixel_state`([dynamixel_workbench_msgs/DynamixelStateList]{: .popup})  
-Provides states of connected Dynamixels
+Provides states of connected DYNAMIXEL
 
 - `/joint_states`([sensor_msgs/JointState](http://docs.ros.org/melodic/api/sensor_msgs/html/msg/JointState.html))   
-Provides joint information about connected Dynamixels  
+Provides joint information about connected DYNAMIXEL  
 
 - `/joint_trajectory`([trajectory_msgs/JointTrajectory](http://docs.ros.org/melodic/api/trajectory_msgs/html/msg/JointTrajectory.html))  
-Receives joint trajectory to control Dynamixels
+Receives joint trajectory to control DYNAMIXEL
 
 **Service List** :
 - `/dynamixel_command`([dynamixel_workbench_msgs/DynamixelCommand]{: .popup})    
-Receives command to control Dynamixel
+Receives command to control DYNAMIXEL
 
 ### [Operators](#operators)
 
@@ -432,7 +432,7 @@ motion:
   .
 ```
 
-Let's take a look at the `motion.yaml` file. This file indicates load 2 Dynamixels. First Dynamixel has name 'pan' and second Dynamixel has name 'tilt'. In this file, three motion was registered.
+Let's take a look at the `motion.yaml` file. This file indicates load 2 DYNAMIXEL. First DYNAMIXEL has name 'pan' and second DYNAMIXEL has name 'tilt'. In this file, three motion was registered.
 
 ```
 joint:
@@ -462,7 +462,7 @@ $ roslaunch dynamixel_workbench_controllers dynamixel_controllers.launch
 $ roslaunch dynamixel_workbench_operators joint_operator.launch
 ```
 
-If controller load your Dynamixel, you can watch below texts
+If controller load your DYNAMIXEL, you can watch below texts
 
 ```
 [ INFO] [1544595828.276238724]: Name : pan, ID : 1, Model Number : 1020
@@ -484,7 +484,7 @@ If operator launch succeeded, you can watch below texts
 [ INFO] [1544598264.313085881]: For now, you can use publish joint trajectory msgs by triggering service(/execution)
 ```
 
-When you execute command by ROS service, the Dynamixel will rotate.
+When you execute command by ROS service, DYNAMIXEL will rotate.
 
 ```
 $ rosservice call /dynamixel_workbench/execution "{}"
@@ -503,7 +503,7 @@ Trajectory information file path
 
 **Topic List** :
 - `/joint_trajectory`([trajectory_msgs/JointTrajectory](http://docs.ros.org/melodic/api/trajectory_msgs/html/msg/JointTrajectory.html))  
-Send joint trajectory to control Dynamixels
+Send joint trajectory to control DYNAMIXEL
 
 **Service List** :
 - `/execution`([std_srvs/Trigger](http://docs.ros.org/melodic/api/std_srvs/html/srv/Trigger.html))    
@@ -525,7 +525,7 @@ $ roslaunch dynamixel_workbench_operators wheel_operator.launch
 $ roslaunch dynamixel_workbench_controllers dynamixel_controllers.launch use_cmd_vel:=true
 ```
 
-If controller load your Dynamixel, you can watch below texts
+If controller load your DYNAMIXEL, you can watch below texts
 
 ```
 [ INFO] [1544595828.276238724]: Name : pan, ID : 1, Model Number : 1020
@@ -558,11 +558,11 @@ Namespace of this node
 
 **Topic List** :
 - `/cmd_vel`([geometry_msgs/Twist](http://docs.ros.org/melodic/api/geometry_msgs/html/msg/Twist.html))  
-Send command velocity to control Dynamixels
+Send command velocity to control DYNAMIXEL
  
 ## [OpenCR and OpenCM Tutorials](#opencr-and-opencm-tutorials)
 
-Dynamixel-Workbench firmware in OpenCR and OpenCM is completely same. You can select any example what you want and upload it.
+DYNAMIXEL-Workbench firmware in OpenCR and OpenCM is completely same. You can select any example what you want and upload it.
 
 **WARNING**: There are some examples that needs to be openned `Serial Monitor` before it is running. If this code (`while(!Serial)
 `) is activated, please open `Serial Monitor`.
@@ -590,7 +590,7 @@ Dynamixel-Workbench firmware in OpenCR and OpenCM is completely same. You can se
 
     ![](/assets/images/sw/dynamixel/dynamixel_workbench/opencr_example_5.png)  
 
-1. Serial monitor starts to scan and find Dynamixels
+1. Serial monitor starts to scan and find DYNAMIXEL
 
     ![](/assets/images/sw/dynamixel/dynamixel_workbench/opencr_example_6.png)  
 
@@ -636,7 +636,7 @@ Dynamixel-Workbench firmware in OpenCR and OpenCM is completely same. You can se
 
     ![](/assets/images/sw/dynamixel/dynamixel_workbench/opencr_example_11.png)  
 
-1. Type `sync_write 1 2 0 2048 2048` then the Dynamixels will rotate
+1. Type `sync_write 1 2 0 2048 2048` then DYNAMIXEL will rotate
 
     ![](/assets/images/sw/dynamixel/dynamixel_workbench/opencr_example_12.png)  
 
@@ -668,7 +668,7 @@ You can select any example what you want and excute it.
 
 ### [position](#position)
 
-1. Open terminal and go to Dynamixel-Workbench build folder
+1. Open terminal and go to DYNAMIXEL-Workbench build folder
 
     ```
     $ cd ~/dynamixel-workbench/dynamixel_workbench_toolbox/examples/build
@@ -680,7 +680,7 @@ You can select any example what you want and excute it.
     $ ./position /dev/ttyUSB0 57600 1
     ```
 
-1. You can watch below texts and a Dynamixel will rotate 3 times
+1. You can watch below texts and DYNAMIXEL will rotate 3 times
 
     ```
     Succeed to init(57600)
@@ -692,7 +692,7 @@ You can select any example what you want and excute it.
 
 ### [bulk_read_write](#bulk_read_write)
 
-1. Open terminal and go to Dynamixel-Workbench build folder
+1. Open terminal and go to DYNAMIXEL-Workbench build folder
 
     ```
     $ cd ~/dynamixel-workbench/dynamixel_workbench_toolbox/examples/build
@@ -704,7 +704,7 @@ You can select any example what you want and excute it.
     $ ./bulk_read_write /dev/ttyUSB0 57600 1 2
     ```
 
-1. You can watch below texts and a Dynamixel(dynamixel_id_1) will change rotate direction and another Dynamixel(dynamixel_id_2) will change LED status
+1. You can watch below texts and DYNAMIXEL(dynamixel_id_1) will change rotate direction and another DYNAMIXEL(dynamixel_id_2) will change LED status
 
     ```
     Succeed to init(57600)
@@ -903,7 +903,7 @@ Initialization portHandler
 
 **Input**  
 1. `device_name` : Set USB port name
-1. `baud_rate` : Set baud rate of Dynamixel  
+1. `baud_rate` : Set baud rate of DYNAMIXEL  
 
 **Output**  
 If all input is set successfully, return true. If not, return false
@@ -915,7 +915,7 @@ Initialization portHandler
 
 **Input**  
 1. `device_name` : Set USB port name
-1. `baud_rate` : Set baud rate of Dynamixels  
+1. `baud_rate` : Set baud rate of DYNAMIXEL  
 
 **Output**  
 If all input is set successfully, return true. If not, return false  
@@ -932,10 +932,10 @@ If all input is set successfully, return true. If not, return false
 
 ### bool setBaudrate(uint32_t baud_rate, const char **log = NULL)
 **Description**  
-Set Baud rate of Dynamixels  
+Set baud rate of DYNAMIXEL  
 
 **Input**  
-1. `baud_rate` : Set baud rate of Dynamixels  
+1. `baud_rate` : Set baud rate of DYNAMIXEL  
 
 **Output**  
 If all input is set successfully, return true. If not, return false  
@@ -945,7 +945,7 @@ If all input is set successfully, return true. If not, return false
 Set PacketHandler  
 
 **Input**  
-1. `protocol_version` : Set protocol version of Dynamixels  
+1. `protocol_version` : Set protocol version of DYNAMIXEL  
 
 **Output**  
 If all input is set successfully, return true. If not, return false  
@@ -969,40 +969,40 @@ Return baud rate of PortHandler
 
 ### const char * getModelName(uint8_t id, const char **log = NULL)
 **Description**  
-Get model name of a Dynamixel  
+Get model name of DYNAMIXEL  
 
 **Input**  
-1. `id` : Set Dynamixel ID  
+1. `id` : Set DYNAMIXEL ID  
 
 **Output**  
 Return model name  
 
 ### uint16_t getModelNumber(uint8_t id, const char **log = NULL)
 **Description**  
-Get model number of a Dynamixel  
+Get model number of DYNAMIXEL  
 
 **Input**  
-1. `id` : Set Dynamixel ID  
+1. `id` : Set DYNAMIXEL ID  
 
 **Output**  
 Return model number  
 
 ### const ControlItem *getControlTable(uint8_t id, const char **log = NULL)
 **Description**  
-Get control table(including ID, Baud_Rate, Goal_Position, ...) of a Dynamixel  
+Get control table(including ID, Baud_Rate, Goal_Position, ...) of DYNAMIXEL  
 
 **Input**
-1. `id` : Set Dynamixel ID  
+1. `id` : Set DYNAMIXEL ID  
 
 **Output**  
 Return control table  
 
 ### const ControlItem *getItemInfo(uint8_t id, const char *item_name, const char **log = NULL)
 **Description**  
-Get item info in control table of a Dynamixel  
+Get item info in control table of DYNAMIXEL  
 
 **Input**  
-1. `id` : Set Dynamixel ID
+1. `id` : Set DYNAMIXEL ID
 1. `item_name` : Item name in control table  
 
 **Output**  
@@ -1013,17 +1013,17 @@ Return item info
 Get the number of control item  
 
 **Input**  
-1. `id` : Set Dynamixel ID  
+1. `id` : Set DYNAMIXEL ID  
 
 **Output**  
 Return the number of control item  
 
 ### const ModelInfo* getModelInfo(uint8_t id, const char **log = NULL)
 **Description**  
-Get model information(RPM, min/max position, ...) of a Dynamixel  
+Get model information(RPM, min/max position, ...) of DYNAMIXEL  
 
 **Input**  
-1. `id` : Set Dynamixel ID  
+1. `id` : Set DYNAMIXEL ID  
 
 **Output**  
 Return model information   
@@ -1054,7 +1054,7 @@ Return the number of bulk read param
 
 ### bool scan(uint8_t *get_id, uint8_t *get_the_number_of_id, uint8_t range = 253, const char **log = NULL)
 **Description**  
-Ping Dynamixels between ranges. If Ping success, all information about Dynamixel will be saved  
+Ping DYNAMIXEL between ranges. If Ping success, all information on DYNAMIXEL will be saved  
 
 **Input**  
 1. `get_id` : Get found IDs
@@ -1066,7 +1066,7 @@ If ping instruction successfully work, return true. If not, return false
 
 ### bool scan(uint8_t *get_id, uint8_t *get_the_number_of_id, uint8_t start_number, uint8_t end_number, const char **log = NULL)
 **Description**  
-Ping Dynamixels between specific ranges. If Ping success, all information about Dynamixel will be saved  
+Ping DYNAMIXEL between specific ranges. If Ping success, all information on DYNAMIXEL will be saved  
 
 **Input**  
 1. `get_id` : Get found IDs
@@ -1079,18 +1079,18 @@ If ping instruction successfully work, return true. If not, return false
 
 ### bool ping(uint8_t id, uint16_t *get_model_number, const char **log = NULL)
 **Description**  
-Ping a Dynamixel. If Ping success, all information about Dynamixel will be saved  
+Ping DYNAMIXEL. If Ping success, all information on DYNAMIXEL will be saved  
 
 **Input**  
 1. `id` : Set ID
-1. `get_model_number` : Get model number of pinged a Dynamixel  
+1. `get_model_number` : Get model number of pinged DYNAMIXEL  
 
 **Output**  
 If ping instruction successfully work, return true. If not, return false  
 
 ### bool ping(uint8_t id, const char **log = NULL)
 **Description**  
-Ping a Dynamixel. If Ping success, all information about Dynamixel will be saved  
+Ping DYNAMIXEL. If Ping success, all information on DYNAMIXEL will be saved  
 
 **Input**  
 1. `id` : Set ID  
@@ -1130,7 +1130,7 @@ If reset instruction set successfully work, return true. If not, return false
 
 ### bool writeRegister(uint8_t id, uint16_t address, uint16_t length, uint8_t* data, const char **log = NULL)
 **Description**  
-Write data to a Dynamixel and wait the signal include the data are successfully write  
+Write data to DYNAMIXEL and wait the signal include the data are successfully write  
 
 **Input**  
 1. `id` : Set ID
@@ -1143,7 +1143,7 @@ If writeTxRx instruction set successfully work, return true. If not, return fals
 
 ### bool writeRegister(uint8_t id, const char *item_name, int32_t data, const char **log = NULL)
 **Description**  
-Write data to a Dynamixel and wait the signal include the data are successfully write  
+Write data to DYNAMIXEL and wait the signal include the data are successfully write  
 
 **Input**  
 1. `id` : Set ID
@@ -1155,7 +1155,7 @@ If writeTxRx instruction set successfully work, return true. If not, return fals
 
 ### bool writeOnlyRegister(uint8_t id, uint16_t address, uint16_t length, uint8_t *data, const char **log = NULL)
 **Description**  
-Only write data to a Dynamixel. Will not wait any signal  
+Only write data to DYNAMIXEL. Will not wait any signal  
 
 **Input**  
 1. `id` : Set ID
@@ -1168,7 +1168,7 @@ If writeTxOnly instruction set successfully work, return true. If not, return fa
 
 ### bool writeOnlyRegister(uint8_t id, const char *item_name, int32_t data, const char **log = NULL)
 **Description**  
-Only write data to a Dynamixel. Will not wait any signal  
+Only write data to DYNAMIXEL. Will not wait any signal  
 
 **Input**  
 1. `id` : Set ID
@@ -1180,7 +1180,7 @@ If writeTxOnly instruction set successfully work, return true. If not, return fa
 
 ### bool readRegister(uint8_t id, uint16_t address, uint16_t length, uint32_t *data, const char **log = NULL)
 **Description**  
-Read data from a Dynamixel  
+Read data from DYNAMIXEL  
 
 **Input**  
 1. `id` : Set ID
@@ -1193,7 +1193,7 @@ If readTxRx instruction set successfully work, return true. If not, return false
 
 ### bool readRegister(uint8_t id, const char *item_name, int32_t *data, const char **log = NULL)
 **Description**  
-Read data from a Dynamixel  
+Read data from DYNAMIXEL  
 
 **Input**  
 1. `id` : Set ID
@@ -1229,7 +1229,7 @@ If try to add syncWriteHanlder over the max amount(default is 5), return false. 
 Add syncWriteHandler  
 
 **Input**  
-1. `id` : Set Dynamixel ID for reference of control table
+1. `id` : Set DYNAMIXEL ID for reference of control table
 1. `item_name` : Set item name of control table item (ex, Goal_Position, Goal_Velocity,...)  
 
 **Output**  
@@ -1237,7 +1237,7 @@ If try to add syncWriteHanlder over the max amount(default is 5), return false o
 
 ### bool syncWrite(uint8_t index, int32_t *data, const char **log = NULL)
 **Description**  
-Execute sync write to all pinged Dynamixels  
+Execute sync write to all pinged DYNAMIXEL  
 
 **Input**  
 1. `index` : Set index of syncWriteHandler
@@ -1248,7 +1248,7 @@ If addParam or txPacket instruction set successfully work, return true. If not, 
 
 ### bool syncWrite(uint8_t index, uint8_t *id, uint8_t id_num, int32_t *data, uint8_t data_num_for_each_id, const char **log = NULL)
 **Description**  
-Execute sync write to some Dynamixels  
+Execute sync write to some DYNAMIXEL  
 
 **Input**  
 1. `index` : Set index of syncWriteHandler
@@ -1276,7 +1276,7 @@ If try to add syncReadHandler over the max amount(default is 5), return false. I
 Add syncReadHandler  
 
 **Input**  
-1. `id` : Set Dynamixel ID for reference of control table
+1. `id` : Set DYNAMIXEL ID for reference of control table
 1. `item_name` : Set item name of control table item (ex, Goal_Position, Goal_Velocity,...)  
 
 **Output**  
@@ -1284,7 +1284,7 @@ If try to add syncReadHandler over the max amount(default is 5), return false or
 
 ### bool syncRead(uint8_t index, const char **log = NULL)
 **Description**  
-Execute sync read from all pinged Dynamixels  
+Execute sync read from all pinged DYNAMIXEL  
 
 **Input**  
 1. `index` : Set index of syncWriteHandler  
@@ -1294,7 +1294,7 @@ If addParam or txRxPacket instruction set successfully work, return true. If not
 
 ### bool syncRead(uint8_t index, uint8_t *id, uint8_t id_num, const char **log = NULL)
 **Description**  
-Execute sync read from some Dynamixels  
+Execute sync read from some DYNAMIXEL  
 
 **Input**  
 1. `index` : Set index of syncWriteHandler
@@ -1306,7 +1306,7 @@ If addParam or txRxPacket instruction set successfully work, return true. If not
 
 ### bool getSyncReadData(uint8_t index, int32_t *data, const char **log = NULL)
 **Description**  
-Get data read by syncRead function from all pinged Dynamixels  
+Get data read by syncRead function from all pinged DYNAMIXEL  
 
 **Input**  
 1. `index` : Set index of syncWriteHandler
@@ -1317,7 +1317,7 @@ If isAvailable instruction set successfully work, return true. If not, return fa
 
 ### bool getSyncReadData(uint8_t index, uint8_t *id, uint8_t id_num, int32_t *data, const char **log = NULL)
 **Description**    
-Get data read by syncRead function from some Dynamixels  
+Get data read by syncRead function from some DYNAMIXEL  
 
 **Input**  
 1. `index` : Set index of syncWriteHandler
@@ -1330,7 +1330,7 @@ If isAvailable instruction set successfully work, return true. If not, return fa
 
 ### bool getSyncReadData(uint8_t index, uint8_t *id, uint8_t id_num, uint16_t address, uint16_t length, int32_t *data, const char **log = NULL)
 **Description**  
-Get data read by syncRead function from some Dynamixels  
+Get data read by syncRead function from some DYNAMIXEL  
 
 **Input**  
 1. `index` : Set index of syncWriteHandler
@@ -1369,7 +1369,7 @@ If addParam instruction set successfully work, return true. If not, return false
 Add parameter for bulkWrite  
 
 **Input**  
-1. `id` : Set Dynamixel ID for reference of control table
+1. `id` : Set DYNAMIXEL ID for reference of control table
 1. `item_name` : Set item name of control table item (ex, Goal_Position, Goal_Velocity,...)
 1. `data` : Set data  
 
@@ -1410,7 +1410,7 @@ If addParam instruction set successfully work, return true. If not, return false
 Add parameter for bulkRead  
 
 **Input**  
-1. `id` : Set Dynamixel ID for reference of control table
+1. `id` : Set DYNAMIXEL ID for reference of control table
 1. `item_name` : Set item name of control table item (ex, Goal_Position, Goal_Velocity,...)
 1. `data` : Set data  
 
@@ -1427,7 +1427,7 @@ If txRxPacket instruction set successfully work, return true. If not, return fal
 
 ### bool getBulkReadData(int32_t *data, const char **log = NULL)
 **Description**  
-Get data read by bulkRead function from all pinged Dynamixels  
+Get data read by bulkRead function from all pinged DYNAMIXEL  
 
 **Input**  
 1. `data` : Get data  
@@ -1437,7 +1437,7 @@ If isAvailable instruction set successfully work, return true. If not, return fa
 
 ### bool getBulkReadData(uint8_t *id, uint8_t id_num, uint16_t *address, uint16_t *length, int32_t *data, const char **log = NULL)
 **Description**  
-Get data read by bulkRead function from some Dynamixels  
+Get data read by bulkRead function from some DYNAMIXEL  
 
 **Input**  
 1. `id` : Set IDs
@@ -1459,10 +1459,10 @@ If clearParam instruction set successfully work, return true. If not, return fal
 
 ### bool torque(uint8_t id, bool onoff, const char **log = NULL)
 **Description**  
-Set torque to a Dynamixel
+Set torque to DYNAMIXEL
 
 **Input**    
-1. `id` : Set Dynamixel ID
+1. `id` : Set DYNAMIXEL ID
 1. `onoff` : Set true or false
 
 **Output**  
@@ -1470,53 +1470,53 @@ If writeByteTxRx instruction set successfully work, return true. If not, return 
 
 ### bool torqueOn(uint8_t id, const char **log = NULL)
 **Description**  
-Set torque on to a Dynamixel
+Set torque on to DYNAMIXEL
 
 **Input**    
-1. `id` : Set Dynamixel ID
+1. `id` : Set DYNAMIXEL ID
 
 **Output**  
 If writeByteTxRx instruction set successfully work, return true. If not, return false
 
 ### bool torqueOff(uint8_t id, const char **log = NULL)
 **Description**  
-Set torque off to a Dynamixel
+Set torque off to DYNAMIXEL
 
 **Input**    
-1. `id` : Set Dynamixel ID
+1. `id` : Set DYNAMIXEL ID
 
 **Output**  
 If writeByteTxRx instruction set successfully work, return true. If not, return false
 
 ### bool changeID(uint8_t id, uint8_t new_id, const char **log = NULL)
 **Description**  
-Change Dynamixel ID
+Change DYNAMIXEL ID
 
 **Input**    
-1. `id` : Set Dynamixel ID
-1. `new_id` : Set Dynamixel new ID  
+1. `id` : Set DYNAMIXEL ID
+1. `new_id` : Set DYNAMIXEL new ID  
 
 **Output**  
 If writeByteTxRx instruction set successfully work, return true. If not, return false
 
 ### bool changeBaudrate(uint8_t id, uint32_t new_baudrate, const char **log = NULL)
 **Description**  
-Change baud rate of a Dynamixel
+Change baud rate of DYNAMIXEL
 
 **Input**    
-1. `id` : Set Dynamixel ID
-1. `new_baudrate` : Set new baudrate for Dynamixel
+1. `id` : Set DYNAMIXEL ID
+1. `new_baudrate` : Set new baudrate for DYNAMIXEL
 
 **Output**  
 If writeByteTxRx instruction set successfully work, return true. If not, return false
 
 ### bool changeProtocolVersion(uint8_t id, uint8_t version, const char **log = NULL)
 **Description**  
-Change protocol version of a Dynamixel
+Change protocol version of DYNAMIXEL
 
 **Input**    
-1. `id` : Set Dynamixel ID
-1. `version` : Set protocol version for Dynamixel
+1. `id` : Set DYNAMIXEL ID
+1. `version` : Set protocol version for DYNAMIXEL
 
 **Output**  
 If writeByteTxRx instruction set successfully work, return true. If not, return false
@@ -1526,7 +1526,7 @@ If writeByteTxRx instruction set successfully work, return true. If not, return 
 Write data to control table item
 
 **Input**    
-1. `id` : Set Dynamixel ID
+1. `id` : Set DYNAMIXEL ID
 1. `item_name` : Set item name of control table item (ex, Goal_Position, Goal_Velocity,...)  
 1. `data` : Set data  
 
@@ -1538,7 +1538,7 @@ If writeByteTxRx instruction set successfully work, return true. If not, return 
 Read data to control table item  
 
 **Input**    
-1. `id` : Set Dynamixel ID
+1. `id` : Set DYNAMIXEL ID
 1. `item_name` : Set item name of control table item (ex, Goal_Position, Goal_Velocity,...)  
 1. `data` : Get data  
 
@@ -1547,10 +1547,10 @@ If readByteTxRx instruction set successfully work, return true. If not, return f
 
 ### bool led(uint8_t id, bool onoff, const char **log = NULL)
 **Description**  
-Set led on or off to a Dynamixel
+Set led on or off to DYNAMIXEL
 
 **Input**    
-1. `id` : Set Dynamixel ID
+1. `id` : Set DYNAMIXEL ID
 1. `onoff` : Set true or false  
 
 **Output**  
@@ -1558,20 +1558,20 @@ If writeByteTxRx instruction set successfully work, return true. If not, return 
 
 ### bool ledOn(uint8_t id, const char **log = NULL)
 **Description**  
-Set led on to a Dynamixel
+Set led on to DYNAMIXEL
 
 **Input**    
-1. `id` : Set Dynamixel ID  
+1. `id` : Set DYNAMIXEL ID  
 
 **Output**  
 If writeByteTxRx instruction set successfully work, return true. If not, return false
 
 ### bool ledOff(uint8_t id, const char **log = NULL)
 **Description**  
-Set led on or off to a Dynamixel
+Set led on or off to DYNAMIXEL
 
 **Input**    
-1. `id` : Set Dynamixel ID
+1. `id` : Set DYNAMIXEL ID
 1. `onoff` : Set true or false  
 
 **Output**  
@@ -1579,141 +1579,141 @@ If writeByteTxRx instruction set successfully work, return true. If not, return 
 
 ### bool setNormalDirection(uint8_t id, const char **log = NULL)
 **Description**  
-Set a Dynamixel rotate with normal direction(counter clockwise)
+Set DYNAMIXEL rotate with normal direction(counter clockwise)
 
 **Input**    
-1. `id` : Set Dynamixel ID
+1. `id` : Set DYNAMIXEL ID
 
 **Output**  
 If writeByteTxRx instruction set successfully work, return true. If not, return false
 
 ### bool setReverseDirection(uint8_t id, const char **log = NULL)
 **Description**  
-Set a Dynamixel rotate with reverse direction(clockwise)
+Set DYNAMIXEL rotate with reverse direction(clockwise)
 
 **Input**    
-1. `id` : Set Dynamixel ID
+1. `id` : Set DYNAMIXEL ID
 
 **Output**  
 If writeByteTxRx instruction set successfully work, return true. If not, return false
 
 ### bool setVelocityBasedProfile(uint8_t id, const char **log = NULL)
 **Description**  
-Set a Dynamixel will make velocity based profile
+Set DYNAMIXEL will make velocity based profile
 
 **Input**    
-1. `id` : Set Dynamixel ID
+1. `id` : Set DYNAMIXEL ID
 
 **Output**  
 If writeByteTxRx instruction set successfully work, return true. If not, return false
 
 ### bool setTimeBasedProfile(uint8_t id, const char **log = NULL)
 **Description**  
-Set a Dynamixel will make time based profile
+Set DYNAMIXEL will make time based profile
 
 **Input**    
-1. `id` : Set Dynamixel ID
+1. `id` : Set DYNAMIXEL ID
 
 **Output**  
 If writeByteTxRx instruction set successfully work, return true. If not, return false
 
 ### bool setSecondaryID(uint8_t id, uint8_t secondary_id, const char **log = NULL)
 **Description**  
-Set secondary ID to a Dynamixel
+Set secondary ID to DYNAMIXEL
 
 **Input**    
-1. `id` : Set Dynamixel ID
-1. `secondary_id` : Set Dynamixel secondary ID
+1. `id` : Set DYNAMIXEL ID
+1. `secondary_id` : Set DYNAMIXEL secondary ID
 
 **Output**  
 If writeByteTxRx instruction set successfully work, return true. If not, return false
 
 ### bool setCurrentControlMode(uint8_t id, const char **log = NULL)
 **Description**  
-Set current control mode to a Dynamixel
+Set current control mode to DYNAMIXEL
 
 **Input**    
-1. `id` : Set Dynamixel ID
+1. `id` : Set DYNAMIXEL ID
 
 **Output**  
 If writeByteTxRx instruction set successfully work, return true. If not, return false
 
 ### bool setTorqueControlMode(uint8_t id, const char **log = NULL)
 **Description**  
-Set torque control mode to a Dynamixel
+Set torque control mode to DYNAMIXEL
 
 **Input**    
-1. `id` : Set Dynamixel ID
+1. `id` : Set DYNAMIXEL ID
 
 **Output**  
 If writeByteTxRx instruction set successfully work, return true. If not, return false
 
 ### bool setVelocityControlMode(uint8_t id, const char **log = NULL)
 **Description**  
-Set velocity control mode to a Dynamixel
+Set velocity control mode to DYNAMIXEL
 
 **Input**    
-1. `id` : Set Dynamixel ID
+1. `id` : Set DYNAMIXEL ID
 
 **Output**  
 If writeByteTxRx instruction set successfully work, return true. If not, return false
 
 ### bool setPositionControlMode(uint8_t id, const char **log = NULL)
 **Description**  
-Set position control mode to a Dynamixel
+Set position control mode to DYNAMIXEL
 
 **Input**    
-1. `id` : Set Dynamixel ID
+1. `id` : Set DYNAMIXEL ID
 
 **Output**  
 If writeByteTxRx instruction set successfully work, return true. If not, return false
 
 ### bool setExtendedPositionControlMode(uint8_t id, const char **log = NULL)
 **Description**  
-Set extended position control mode to a Dynamixel
+Set extended position control mode to DYNAMIXEL
 
 **Input**    
-1. `id` : Set Dynamixel ID
+1. `id` : Set DYNAMIXEL ID
 
 **Output**  
 If writeByteTxRx instruction set successfully work, return true. If not, return false
 
 ### bool setMultiTurnControlMode(uint8_t id, const char **log = NULL)
 **Description**  
-Set multi-turn control mode to a Dynamixel
+Set multi-turn control mode to DYNAMIXEL
 
 **Input**    
-1. `id` : Set Dynamixel ID
+1. `id` : Set DYNAMIXEL ID
 
 **Output**  
 If writeByteTxRx instruction set successfully work, return true. If not, return false
 
 ### bool setCurrentBasedPositionControlMode(uint8_t id, const char **log = NULL)
 **Description**  
-Set current based position control mode to a Dynamixel
+Set current based position control mode to DYNAMIXEL
 
 **Input**    
-1. `id` : Set Dynamixel ID
+1. `id` : Set DYNAMIXEL ID
 
 **Output**  
 If writeByteTxRx instruction set successfully work, return true. If not, return false
 
 ### bool setPWMControlMode(uint8_t id, const char **log = NULL)
 **Description**  
-Set PWM control mode to a Dynamixel
+Set PWM control mode to DYNAMIXEL
 
 **Input**    
-1. `id` : Set Dynamixel ID
+1. `id` : Set DYNAMIXEL ID
 
 **Output**  
 If writeByteTxRx instruction set successfully work, return true. If not, return false
 
 ### bool setOperatingMode(uint8_t id, uint8_t index, const char **log = NULL)
 **Description**  
-Set operating mode to a Dynamixel
+Set operating mode to DYNAMIXEL
 
 **Input**    
-1. `id` : Set Dynamixel ID
+1. `id` : Set DYNAMIXEL ID
 1. `index` : Choose what you want to set operating mode
 
 - Index list
@@ -1733,11 +1733,11 @@ If writeByteTxRx instruction set successfully work, return true. If not, return 
 
 ### bool jointMode(uint8_t id, int32_t velocity = 0, int32_t acceleration = 0, const char **log = NULL)
 **Description**  
-Set joint mode to a Dynamixel. You can simply set joint mode to any Dynamixel. After joint mode successfully set, torque will be on.
+Set joint mode to DYNAMIXEL. You can simply set joint mode to any DYNAMIXEL. After joint mode successfully set, torque will be on.
 The velocity and acceleration parameters will be used argument to make profile.
 
 **Input**    
-1. `id` : Set Dynamixel ID
+1. `id` : Set DYNAMIXEL ID
 1. `velocity` : Set profile velocity
 1. `acceleration` : Set profile acceleration
 
@@ -1746,11 +1746,11 @@ If writeByteTxRx instruction set successfully work, return true. If not, return 
 
 ### bool wheelMode(uint8_t id, int32_t acceleration = 0, const char **log = NULL)
 **Description**  
-Set wheel mode to a Dynamixel. You can simply set wheel mode to any Dynamixel. After wheel mode successfully set, torque will be on.
+Set wheel mode to DYNAMIXEL. You can simply set wheel mode to any DYNAMIXEL. After wheel mode successfully set, torque will be on.
 The acceleration parameters will be used argument to make profile.
 
 **Input**    
-1. `id` : Set Dynamixel ID
+1. `id` : Set DYNAMIXEL ID
 1. `acceleration` : Set profile acceleration
 
 **Output**  
@@ -1758,11 +1758,11 @@ If writeByteTxRx instruction set successfully work, return true. If not, return 
 
 ### bool currentBasedPositionMode(uint8_t id, int32_t current = 0, const char **log = NULL)
 **Description**  
-Set currrent based position mode to a Dynamixel. You can simply set joint mode controlled by current to Dynamixel X series. After mode successfully set, torque will be on.
+Set currrent based position mode to DYNAMIXEL. You can simply set joint mode controlled by current to DYNAMIXEL X series. After mode successfully set, torque will be on.
 The current parameters will be used argument to make profile.
 
 **Input**    
-1. `id` : Set Dynamixel ID
+1. `id` : Set DYNAMIXEL ID
 1. `current` : Set current limit
 
 **Output**  
@@ -1770,10 +1770,10 @@ If writeByteTxRx instruction set successfully work, return true. If not, return 
 
 ### bool goalPosition(uint8_t id, int32_t value, const char **log = NULL)
 **Description**  
-Set position to a Dynamixel
+Set position to DYNAMIXEL
 
 **Input**    
-1. `id` : Set Dynamixel ID
+1. `id` : Set DYNAMIXEL ID
 1. `value` : Set 32-bit raw value
 
 **Output**  
@@ -1781,10 +1781,10 @@ If writeByteTxRx instruction set successfully work, return true. If not, return 
 
 ### bool goalPosition(uint8_t id, float radian, const char **log = NULL)
 **Description**  
-Set position to a Dynamixel
+Set position to DYNAMIXEL
 
 **Input**    
-1. `id` : Set Dynamixel ID
+1. `id` : Set DYNAMIXEL ID
 1. `radian` : Set position. Unit is radian
 
 **Output**  
@@ -1792,10 +1792,10 @@ If writeByteTxRx instruction set successfully work, return true. If not, return 
 
 ### bool goalVelocity(uint8_t id, int32_t value, const char **log = NULL)
 **Description**  
-Set velocity to a Dynamixel
+Set velocity to DYNAMIXEL
 
 **Input**    
-1. `id` : Set Dynamixel ID
+1. `id` : Set DYNAMIXEL ID
 1. `value` : Set 32-bit raw value
 
 **Output**  
@@ -1803,10 +1803,10 @@ If writeByteTxRx instruction set successfully work, return true. If not, return 
 
 ### bool goalVelocity(uint8_t id, float velocity, const char **log = NULL)
 **Description**  
-Set velocity to a Dynamixel
+Set velocity to DYNAMIXEL
 
 **Input**    
-1. `id` : Set Dynamixel ID
+1. `id` : Set DYNAMIXEL ID
 1. `velocity` : Set velocity. Unit is m/s
 
 **Output**  
@@ -1814,10 +1814,10 @@ If writeByteTxRx instruction set successfully work, return true. If not, return 
 
 ### bool getPresentPositionData(uint8_t id, int32_t* data, const char **log = NULL)
 **Description**  
-Get present position from a Dynamixel
+Get present position from DYNAMIXEL
 
 **Input**    
-1. `id` : Set Dynamixel ID
+1. `id` : Set DYNAMIXEL ID
 1. `data` : Get 32-bit raw data
 
 **Output**  
@@ -1825,10 +1825,10 @@ If writeByteTxRx instruction set successfully work, return true. If not, return 
 
 ### bool getRadian(uint8_t id, float* radian, const char **log = NULL)
 **Description**  
-Get present position from a Dynamixel
+Get present position from DYNAMIXEL
 
 **Input**    
-1. `id` : Set Dynamixel ID
+1. `id` : Set DYNAMIXEL ID
 1. `radian` : Get position. Unit is radian
 
 **Output**  
@@ -1836,10 +1836,10 @@ If writeByteTxRx instruction set successfully work, return true. If not, return 
 
 ### bool getPresentVelocityData(uint8_t id, int32_t* data, const char **log = NULL)
 **Description**  
-Get present velocity from a Dynamixel
+Get present velocity from DYNAMIXEL
 
 **Input**    
-1. `id` : Set Dynamixel ID
+1. `id` : Set DYNAMIXEL ID
 1. `data` : Get 32-bit raw data
 
 **Output**  
@@ -1847,10 +1847,10 @@ If writeByteTxRx instruction set successfully work, return true. If not, return 
 
 ### bool getVelocity(uint8_t id, float* velocity, const char **log = NULL)
 **Description**  
-Get present velocity from a Dynamixel
+Get present velocity from DYNAMIXEL
 
 **Input**    
-1. `id` : Set Dynamixel ID
+1. `id` : Set DYNAMIXEL ID
 1. `velocity` : Get velocity. Unit is m/s
 
 **Output**  
@@ -1861,18 +1861,18 @@ If writeByteTxRx instruction set successfully work, return true. If not, return 
 Convert radian to 32-bit raw data
 
 **Input**    
-1. `id` : Set Dynamixel ID
+1. `id` : Set DYNAMIXEL ID
 1. `radian` : Set position. Unit is radian
 
 **Output**  
-Return 32-bit raw data for Dynamixel
+Return 32-bit raw data for DYNAMIXEL
 
 ### float convertValue2Radian(uint8_t id, int32_t value)
 **Description**  
 Convert 32-bit raw data to radian
 
 **Input**    
-1. `id` : Set Dynamixel ID
+1. `id` : Set DYNAMIXEL ID
 1. `value` : Get 32-bit raw data
 
 **Output**  
@@ -1890,7 +1890,7 @@ Convert radian to 32-bit raw data
 1. `min_radian` : Set min radian
 
 **Output**  
-Return 32-bit raw data for Dynamixel
+Return 32-bit raw data for DYNAMIXEL
 
 ### float convertValue2Radian(int32_t value, int32_t max_position, int32_t min_position, float max_radian, float min_radian)
 **Description**  
@@ -1911,7 +1911,7 @@ Return position. Unit is radian
 Convert velocity to 32-bit raw data
 
 **Input**    
-1. `id` : Set Dynamixel ID
+1. `id` : Set DYNAMIXEL ID
 1. `velocity` : Set velocity. Unit is m/s
 
 **Output**  
@@ -1922,7 +1922,7 @@ Return 32-bit raw data
 Convert 32-bit raw data to velocity
 
 **Input**    
-1. `id` : Set Dynamixel ID
+1. `id` : Set DYNAMIXEL ID
 1. `value` : Set 32-bit raw data
 
 **Output**  
@@ -1966,7 +1966,7 @@ Return load. Unit is %
 [open_manipulator_msgs/SetJointPosition]: /docs/en/popup/open_manipulator_msgs_SetJointPosition/
 [open_manipulator_msgs/SetKinematicsPose]: /docs/en/popup/open_manipulator_msgs_SetKinematicsPose/
 [How to set Industrial filter into joint trajectory]: /docs/en/popup/how_to_set_smoothing_filter/
-[DynamixelSDK]: http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/overview/
+[DYNAMIXEL SDK]: http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/overview/
 [AX-12W]: /docs/en/dxl/ax/ax-12w/
 [AX-12+/12A]: /docs/en/dxl/ax/ax-12a/
 [AX-18F/18A]: /docs/en/dxl/ax/ax-18a/

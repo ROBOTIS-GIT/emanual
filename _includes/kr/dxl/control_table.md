@@ -28,7 +28,7 @@ Control Table은 장치 내부에 존재하는 값으로서 장치의 현재 상
 {% capture mx2_control_table %}
 **주의**
 1. MX(2.0) Firmware는 MX series의 Control table과 주소가 다릅니다. 사용 전에 Control table 주소를 필히 확인해 주세요.
-2. MX(2.0) Firmware는 Dynamixel X의 기능을 상속받습니다. 따라서 [Protocol 1.0](/docs/kr/dxl/protocol1/)과 [Protocol 2.0](/docs/kr/dxl/protocol2/) 및 다양한 Operating Mode와 Secondary ID, Drive Mode, Bus Watchdog 등을 지원합니다. 자세한 사항은 Control table을 참고해주세요.
+2. MX(2.0) Firmware는 다이나믹셀 X의 기능을 상속받습니다. 따라서 [Protocol 1.0](/docs/kr/dxl/protocol1/)과 [Protocol 2.0](/docs/kr/dxl/protocol2/) 및 다양한 Operating Mode와 Secondary ID, Drive Mode, Bus Watchdog 등을 지원합니다. 자세한 사항은 Control table을 참고해주세요.
 {% endcapture %}
 
 <div class="notice--warning">{{ mx2_control_table | markdownify }}</div>

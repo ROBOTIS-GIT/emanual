@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/software/dynamixel/dynamixel_sdk/sample_code/cpp_sync_write_protocol_1_0/
 sidebar:
-  title: DynamixelSDK
+  title: DYNAMIXEL SDK
   nav: "dynamixel_sdk"
 ---
 
@@ -24,7 +24,7 @@ sidebar:
 
 - Description
 
-  This example writes goal positions to two Dynamixels simultaneously and repeats to read each present positions until Dynamixels stop moving. The funtions that are related with the Syncwrite handle the number of items that are near to each other in the Dynamixel control table on multiple Dynamixels, such as the goal position and the goal velocity.
+  This example writes goal positions to two DYNAMIXEL's simultaneously and repeats to read each present positions until DYNAMIXEL stop moving. The funtions that are related with the Syncwrite handle the number of items that are near to each other in the Dynamixel control table on multiple DYNAMIXEL's, such as the goal position and the goal velocity.
 
 - Available Dynamixel
 
@@ -62,7 +62,7 @@ sidebar:
 #include <stdlib.h>
 #include <stdio.h>
 
-#include "dynamixel_sdk.h"                                  // Uses Dynamixel SDK library
+#include "dynamixel_sdk.h"                                  // Uses DYNAMIXEL SDK library
 
 // Control table address
 #define ADDR_MX_TORQUE_ENABLE           24                  // Control table address is different in Dynamixel model
@@ -349,10 +349,10 @@ The function `abs()` is in the example code, and it needs `stdlib.h` to be inclu
 The example shows Dynamixel status in sequence by the function `printf()`. So here `stdio.h` is needed.
 
 ``` cpp
-#include "DynamixelSDK.h"                                   // Uses Dynamixel SDK library
+#include "DynamixelSDK.h"                                   // Uses DYNAMIXEL SDK library
 ```
 
-All libraries of Dynamixel SDK are linked with the header file `dynamixel_sdk.h`.
+All libraries of DYNAMIXEL SDK are linked with the header file `dynamixel_sdk.h`.
 
 ``` cpp
 // Control table address
@@ -394,7 +394,7 @@ Here we set some variables to let you freely change them and use them to run the
 
 As the document previously said in previous chapter, customize Dynamixel control table items, such as `DXL_ID` number, communication `BAUDRATE`, and the `DEVICENAME`, on your own terms of needs. In particular, `BAUDRATE` and `DEVICENAME` have systematical dependencies on your controller, so make clear what kind of communication method you will use.
 
-The example uses two Dynamixels `DXL1_ID`, `DXL2_ID` connected with the port `DEVICENAME`.
+The example uses two DYNAMIXEL's `DXL1_ID`, `DXL2_ID` connected with the port `DEVICENAME`.
 
 Dynamixel basically needs the `TORQUE_ENABLE` to be rotating or give you its internal information. On the other hand, it doesn't need torque enabled if you get your goal, so finally do `TORQUE_DISABLE` to prepare to the next sequence.
 
@@ -877,7 +877,7 @@ At last, it changes their direction to the counter-wise and waits for extra key 
   }
 ```
 
-The controller frees the Dynamixels to be idle.
+The controller frees the DYNAMIXEL to be idle.
 
 `dynamixel::PacketHandler::write1ByteTxRx()` function orders to the #`DXL_ID` Dynamixel through the port which the `portHandler` handles, writing 1 byte of `TORQUE_DISABLE` value to `ADDR_MX_TORQUE_ENABLE` address. Then, it receives the `dxl_error`. The function returns 0 if no communication error has been occurred.
 

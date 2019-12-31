@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/software/dynamixel/dynamixel_sdk/sample_code/c_protocol_combined/
 sidebar:
-  title: DynamixelSDK
+  title: DYNAMIXEL SDK
   nav: "dynamixel_sdk"
 ---
 
@@ -50,7 +50,7 @@ sidebar:
 //
 
 // Be aware that:
-// This example configures two different control tables (especially, if it uses Dynamixel and Dynamixel PRO). It may modify critical Dynamixel parameter on the control table, if Dynamixels have wrong ID.
+// This example configures two different control tables (especially, if it uses Dynamixel and Dynamixel PRO). It may modify critical Dynamixel parameter on the control table, if DYNAMIXEL have wrong ID.
 //
 
 #ifdef __linux__
@@ -63,7 +63,7 @@ sidebar:
 
 #include <stdlib.h>
 #include <stdio.h>
-#include "dynamixel_sdk.h"                                   // Uses Dynamixel SDK library
+#include "dynamixel_sdk.h"                                   // Uses DYNAMIXEL SDK library
 
 // Control table address for Dynamixel MX
 #define ADDR_MX_TORQUE_ENABLE           24                  // Control table address is different in Dynamixel model
@@ -345,10 +345,10 @@ The function `abs()` is in the example code, and it needs `stdlib.h` to be inclu
 The example shows Dynamixel status in sequence by the function `printf()`. So here `stdio.h` is needed.
 
 ```c
-#include "dynamixel_sdk.h"                                   // Uses Dynamixel SDK library
+#include "dynamixel_sdk.h"                                   // Uses DYNAMIXEL SDK library
 ```
 
-All libraries of Dynamixel SDK are linked with the header file `dynamixel_sdk.h`.
+All libraries of DYNAMIXEL SDK are linked with the header file `dynamixel_sdk.h`.
 
 ```c
 // Control table address for Dynamixel MX
@@ -736,7 +736,7 @@ Secondly, the controller sets the communication `BAUDRATE` at #`port_num` port o
 
 As mentioned in the document, above code enables each Dynamixel`s torque to set their status as being ready to move.
 
-`write1ByteTxRx()` function orders to the #`DXL1_ID` and #`DXL2_ID` Dynamixels in each `PROTOCOL_VERSION1` and `PROTOCOL_VERSION2` communication protocol through #`port_num` port, writing 1 byte of `TORQUE_ENABLE` value to `ADDR_MX_TORQUE_ENABLE` and `ADDR_PRO_TORQUE_ENABLE` address. The function checks Tx/Rx result and receives Hardware error.
+`write1ByteTxRx()` function orders to the #`DXL1_ID` and #`DXL2_ID` DYNAMIXEL in each `PROTOCOL_VERSION1` and `PROTOCOL_VERSION2` communication protocol through #`port_num` port, writing 1 byte of `TORQUE_ENABLE` value to `ADDR_MX_TORQUE_ENABLE` and `ADDR_PRO_TORQUE_ENABLE` address. The function checks Tx/Rx result and receives Hardware error.
 `getLastTxRxResult()` function and `getLastRxPacketError()` function get either, and then `printTxRxResult()` function and `printRxPacketError()` function show results on the console window if any communication error or Hardware error has been occurred.
 ```c
   while(1)
@@ -851,9 +851,9 @@ At last, it changes its direction to the counter-wise and waits for extra key in
   }
 ```
 
-The controller frees the Dynamixels to be idle.
+The controller frees the DYNAMIXEL to be idle.
 
-`write1ByteTxRx()` function orders to the #`DXL1_ID` and #`DXL2_ID` Dynamixels in each `PROTOCOL_VERSION1` and `PROTOCOL_VERSION2` communication protocol through #`port_num` port, writing 1 byte of `TORQUE_DISABLE` value to `ADDR_MX_TORQUE_ENABLE` and `ADDR_PRO_TORQUE_ENABLE` address. The function checks Tx/Rx result and receives Hardware error.
+`write1ByteTxRx()` function orders to the #`DXL1_ID` and #`DXL2_ID` DYNAMIXEL in each `PROTOCOL_VERSION1` and `PROTOCOL_VERSION2` communication protocol through #`port_num` port, writing 1 byte of `TORQUE_DISABLE` value to `ADDR_MX_TORQUE_ENABLE` and `ADDR_PRO_TORQUE_ENABLE` address. The function checks Tx/Rx result and receives Hardware error.
 `getLastTxRxResult()` function and `getLastRxPacketError()` function get either, and then `printTxRxResult()` function and `printRxPacketError()` function show results on the console window if any communication error or Hardware error has been occurred.
 
 ```c

@@ -114,7 +114,7 @@ The following robots have less than 4 joints and the robots can be built with Be
 
 {% include en/parts/controller/fuse_cm_5.md %}
 
-## [Dynamixel Management](#dynamixel-management)
+## [DYNAMIXEL Management](#dynamixel-management)
 
 {% include en/edu/bioloid/dynamixel_management.md %}
 

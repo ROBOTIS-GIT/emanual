@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/software/dynamixel/dynamixel_sdk/sample_code/csharp_broadcast_ping_protocol_2_0/
 sidebar:
-  title: DynamixelSDK
+  title: DYNAMIXEL SDK
   nav: "dynamixel_sdk"
 ---
 
@@ -24,7 +24,7 @@ sidebar:
 
 - Description
 
-  This example tries to ping all Dynamixels that are connected to the controller, and shows which Dynamixel is successfully connected. The example is commonly used to check for Dynamixel’s connection at once.
+  This example tries to ping all DYNAMIXEL that are connected to the controller, and shows which Dynamixel is successfully connected. The example is commonly used to check for Dynamixel’s connection at once.
 
 - Available Dynamixel
 
@@ -145,7 +145,7 @@ The functions `Console.*` for I/O, are in the example code, and it uses `System`
 using dynamixel_sdk;
 ```
 
-All libraries of Dynamixel SDK are wrapped into the `dynamixel_sdk` namespace.
+All libraries of DYNAMIXEL SDK are wrapped into the `dynamixel_sdk` namespace.
 
 ``` cs
 // Protocol version
@@ -307,7 +307,7 @@ if ((dxl_comm_result = dynamixel.getLastTxRxResult(port_num, PROTOCOL_VERSION)) 
   dynamixel.printTxRxResult(PROTOCOL_VERSION, dxl_comm_result);
 ```
 
-`broadcastPing()` function shows the connection between controller and each Dynamixels from ID 1 to ID 253 through #`port_num` port.
+`broadcastPing()` function shows the connection between controller and each DYNAMIXEL from ID 1 to ID 253 through #`port_num` port.
 
 ``` cs
 // Close port

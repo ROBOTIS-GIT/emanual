@@ -39,7 +39,7 @@ The contents in e-Manual may differ from contents of a provided video in e-Manau
 
 ![](/assets/images/platform/turtlebot3/manipulation/tb3_with_opm_logo.png)
 
-The OpenMANIPULATOR by ROBOTIS is one of the manipulators that support ROS, and has the advantage of being able to easily manufacture at a low cost by using Dynamixel actuators with 3D printed parts.
+The OpenMANIPULATOR by ROBOTIS is one of the manipulators that support ROS, and has the advantage of being able to easily manufacture at a low cost by using DYNAMIXEL actuators with 3D printed parts.
 
 The OpenMANIPULATOR has the advantage of being compatible with TurtleBot3 Waffle and Waffle Pi. Through this compatibility can compensate for the lack of freedom and can have greater completeness as a service robot with the the SLAM and Navigation capabilities that the TurtleBot3 has. TurtleBot3 and OpenMANIPULATOR can be used as a `mobile manipulator` and can do things like the following videos.
 
@@ -139,7 +139,7 @@ When firmware upload is completed, `jump_to_fw` text string will be printed on t
 **NOTE**: If error occurs while uploading firmware, go to `Tools` → `Port` and check if correct port is selected. Press `Reset` button on the OpenCR and try to upload the firmware again.
 {: .notice--info}
 
-**TIP**: The Dynamixel ids can be changed in [`open_manipulator_driver.h`][manipulator_id] in turtlebot3_with_open_manipulator folder 
+**TIP**: The DYNAMIXEL ids can be changed in [`open_manipulator_driver.h`][manipulator_id] in turtlebot3_with_open_manipulator folder 
 {: .notice--success}
 
 - When firmware upload is completed, `jump_to_fw` text string will be printed on the screen.

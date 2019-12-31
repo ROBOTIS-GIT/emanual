@@ -19,7 +19,7 @@ page_number: 49
 
 1. [Enable **SSH Server** in Raspberry Pi](#enable-ssh-server-in-raspberry-pi)
 2. [**Timesync** between TurtleBot3 and Remote PC](#timesync-between-turtlebot3-and-remote-pc)
-3. [**Setup DYNAMIXELs** for TurtleBot3](#setup-dynamixels-for-turtlebot3)
+3. [**Setup DYNAMIXEL's** for TurtleBot3](#setup-dynamixels-for-turtlebot3)
 4. [Can I **Charge the Battery** when the Battery is Connected to TurtleBot3?](#can-i-charge-the-battery-when-the-battery-is-connected-to-turtlebot3)
 5. [How to Download the **STL files** of TurtleBot3](#how-to-download-the-stl-files-of-turtlebot3)
 6. [**Intel® Joule™** USB-C Port is not Recognized on Windows 10](#intel-joule-usb-c-port-is-not-recognized-on-windows-10)
@@ -74,7 +74,7 @@ $ sudo apt-get install ntpdate
 $ sudo ntpdate ntp.ubuntu.com
 ```
 
-## [Setup DYNAMIXELs for TurtleBot3](#setup-dynamixels-for-turtlebot3)
+## [Setup DYNAMIXEL's for TurtleBot3](#setup-dynamixels-for-turtlebot3)
 
 **WARNING**: Please connect only **ONE** DYNAMIXEL with OpenCR.
 {: .notice--warning}
@@ -96,8 +96,8 @@ Press the `RESET` button if the example does not run properly.
     ![](/assets/images/parts/controller/opencr10/bootloader_19.png)
 
 4. **Select an Option**  
-When the `Serial Monitor` is running, menu for the DYNAMIXEL setup will be displayed as shown below.  
-TurtleBot3 consists of two DYNAMIXEL actuators for the left and right wheels, so select the proper option based on the assembled position.  
+When the `Serial Monitor` is running, menu for DYNAMIXEL setup will be displayed as shown below.  
+TurtleBot3 consists of two DYNAMIXEL's actuators for the left and right wheels, so select the proper option based on the assembled position.  
 For example, to set up the left side DYNAMIXEL, enter `1` to the input textbox.
 
     ![](/assets/images/platform/turtlebot3/faq/dynamixel_setup_3.png)
@@ -117,7 +117,7 @@ When the setup is completed, `OK` message is printed on the screen.
 
 7. **Test DYNAMIXEL**  
 Complete the setup procedure and verify if the change has been properly made.  
-If you select one of the test menu for the DYNAMIXEL, the selected DYNAMIXEL will begin to rotate in the clockwise and counterclockwise.  
+If you select one of the test menu for DYNAMIXEL, the selected DYNAMIXEL will begin to rotate in the clockwise and counterclockwise.  
 To end the test, press the `Enter`.  
 For example, to test the left DYNAMIXEL, enter `3` as shown in below and enter `4` for the right DYNAMIXEL.
 

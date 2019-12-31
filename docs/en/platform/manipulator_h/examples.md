@@ -34,7 +34,7 @@ ArmMonitor allows viewing of a joint current position, target position, end effe
 
 ![](/assets/images/platform/manipulator_h/manipulator_h_050.gif)
 
-You will need to enter the COM port number and baud rate. Simply enter the values and “Succeed to open USB2Dynamixel” should appear onscreen followed by “Press any key to move first pose.” Use the keyboard to move the arm.         
+You will need to enter the COM port number and baud rate. Simply enter the values and “Succeed to open USB2DYNAMIXEL” should appear onscreen followed by “Press any key to move first pose.” Use the keyboard to move the arm.         
 
 ![](/assets/images/platform/manipulator_h/manipulator_h_051.png)
 
@@ -42,14 +42,14 @@ The following table is a list of baud rate values and its corresponding speed; R
 
 The following table is a list of baud rate values and its corresponding speed; Robotis Manipulator default value is 3 (1Mbps).
 
-|Baudrate Number|baudrate|
-|:---:|:---:|
-|0|2,400 bps|
-|1|57,600 bps|
-|2|115,200 bps|
-|3|1,000,000 bps|
-|4|2,000,000 bps|
-|5|3,000,000 bps|
+| Baudrate Number |   baudrate    |
+|:---------------:|:-------------:|
+|        0        |   2,400 bps   |
+|        1        |  57,600 bps   |
+|        2        |  115,200 bps  |
+|        3        | 1,000,000 bps |
+|        4        | 2,000,000 bps |
+|        5        | 3,000,000 bps |
 
 The photo below is the arm in its “arrival” pose.
 
@@ -79,7 +79,7 @@ ArmMonitor02 allows direct control of the end effector. Control the end effector
 ![](/assets/images/platform/manipulator_h/manipulator_h_055.png)
 
 To setup and run ArmMonitor02 follow the same procedure as in ArmMonitor01.  
-As in ArmMonitor01 you will be asked to enter COM port number and baud rate. You should also see “Succeed to open USB2Dynamixel” followed by “Press any key to move first pose.” The arm moves to its initial pose.
+As in ArmMonitor01 you will be asked to enter COM port number and baud rate. You should also see “Succeed to open USB2DYNAMIXEL” followed by “Press any key to move first pose.” The arm moves to its initial pose.
 
 ![](/assets/images/platform/manipulator_h/manipulator_h_056.png)
 
@@ -89,7 +89,7 @@ The photo below is the arm in its “arrival” pose.
 
 ![](/assets/images/platform/manipulator_h/manipulator_h_057.gif)
 
-The different values of the end effector depicted from the red areas with “1” and “2” (from the screen output image above) is due to the difference of Dynamixel Pro’s Goal Position and Present Position values (gear backlash) and DH with the point of origin. **”1” shows the end effector’s pose via calculations from kinematics and “2” the actual pose**.
+The different values of the end effector depicted from the red areas with “1” and “2” (from the screen output image above) is due to the difference of DYNAMIXEL Pro’s Goal Position and Present Position values (gear backlash) and DH with the point of origin. **”1” shows the end effector’s pose via calculations from kinematics and “2” the actual pose**.
 
 ![](/assets/images/platform/manipulator_h/manipulator_h_058.gif)
 
@@ -395,7 +395,7 @@ These 4 functions allows the directional keys to control cursor location.
   gvdGoalDynamixelAngleRad = gvdGoalCalculationAngleRad + gvdAngleGapCalcandDynamixelRad;
   ```
 
-  > First, NextStep gets the current step’s target angles, which are from the D-H Configuration. However, the actual Dynamixel PRO start point and the D-H Configuration’s differ.  
+  > First, NextStep gets the current step’s target angles, which are from the D-H Configuration. However, the actual DYNAMIXEL PRO start point and the D-H Configuration’s differ.  
   This difference is taken into account and each joint Goal Position Value is set again with Rad2Value, the resulting Arm_Set_JointPosition moves the manipulator.  
   If successful, the manipulator’s communications Arm_Set_JointPosition returns a value of 1.
 
@@ -448,7 +448,7 @@ To start Simple P to P follow the same procedure for ArmMonitor. Then press the 
 ![](/assets/images/platform/manipulator_h/manipulator_h_059.jpg)
 
 You will be asked for COM port number and baud rate.  
-If succeeded then you will see a ‘Succeed to open USB2Dynamixel’ followed by ‘Press any key to move first pose.' Press a key to move the arm to its initial pose.  
+If succeeded then you will see a ‘Succeed to open USB2DYNAMIXEL’ followed by ‘Press any key to move first pose.' Press a key to move the arm to its initial pose.  
 Then press a key to begin P2P Motion. The photo below is the arm in its initial pose.
 
 ![](/assets/images/platform/manipulator_h/manipulator_h_060.png)
@@ -539,21 +539,21 @@ MotionPlayer.Set_Time_Period(DEFAULT_Ctrl_TIME_PERIOD);
 
 - EndEffector Pose table
 
-|Control EndEffector|Position -> +5mm<br />orientation -> +(3&pi;/180)rad|Position -> -5mm<br />orientation -> -(3&pi;/180)rad|
-|:---:|:---:|:---:|
-|Position X|q|a|
-|Position Y|w|s|
-|Position Z|e|d|
-|Orientation Roll|r|f|
-|Orientation Pitch|t|g|
-|Orientation Yaw|y|h|
+| Control EndEffector | Position -> +5mm<br />orientation -> +(3&pi;/180)rad | Position -> -5mm<br />orientation -> -(3&pi;/180)rad |
+|:-------------------:|:----------------------------------------------------:|:----------------------------------------------------:|
+|     Position X      |                          q                           |                          a                           |
+|     Position Y      |                          w                           |                          s                           |
+|     Position Z      |                          e                           |                          d                           |
+|  Orientation Roll   |                          r                           |                          f                           |
+|  Orientation Pitch  |                          t                           |                          g                           |
+|   Orientation Yaw   |                          y                           |                          h                           |
 
 ### How to Use Simple IK
 To start Simple IK start a new project just like SimplePtoP. Then press the Ctrl + F5 ekys to begin.
 
 ![](/assets/images/platform/manipulator_h/manipulator_h_062.jpg)
 
-In Simple IK you will be asked for COM port and baud rate numbers. If succeeded you will see a 'Succeed to open USB2Dynamixel' followed by ‘Press any key to move first pose.' Press a key to begin.
+In Simple IK you will be asked for COM port and baud rate numbers. If succeeded you will see a 'Succeed to open USB2DYNAMIXEL' followed by ‘Press any key to move first pose.' Press a key to begin.
 The arm moves to its initial pose as shown below.
 
 ![](/assets/images/platform/manipulator_h/manipulator_h_052.png)
@@ -632,7 +632,7 @@ The sample code from above is broken down below.
 ArmKinematics.ComputeIK(DesiredPose, &angle_rad, angle_rad, &ErrorStatus);
 ```
 
-All joints set to a desired pose by taking input from DesiredPose and angle_rad. Once DesiredPose values go to CurrentPose then the arm moves in X coordinate and DesirePose gets set again. angle_rad is CurrentPose’s consistent joints  angles. IK’s solution for desired pose joint angles and &angle_rad get set. &ErrorStatus is the error sent to Dynamixel.
+All joints set to a desired pose by taking input from DesiredPose and angle_rad. Once DesiredPose values go to CurrentPose then the arm moves in X coordinate and DesirePose gets set again. angle_rad is CurrentPose’s consistent joints  angles. IK’s solution for desired pose joint angles and &angle_rad get set. &ErrorStatus is the error sent to DYNAMIXEL.
 
 ```cpp
 ArmComm.Arm_Set_JointPosition(RobotisArm.Rad2Value(angle_rad + gvdAngleGapCalcandDynamixelRad));
@@ -724,7 +724,7 @@ To start SimpleTorqueOnOffandFK start a new project just like SimplePtoP. Then p
 
 ![](/assets/images/platform/manipulator_h/manipulator_h_067.jpg)
 
-Input the COM port and baud rate numbers. If succeeded you will see a 'Succeed to open USB2Dynamixel;' then torque gets turned off.
+Input the COM port and baud rate numbers. If succeeded you will see a 'Succeed to open USB2DYNAMIXEL;' then torque gets turned off.
 Press the Enter key turn torque on and the arm’s joints pose(rad) and end effector’s pose(rad) will be displayed (joints 1 through 6).
 
 ![](/assets/images/platform/manipulator_h/manipulator_h_068.jpg)
@@ -788,4 +788,4 @@ While the program is running press the Enter key to toggle torque between on and
 
 Press the Esc key then Enter key and the arm remains as is.
 
-The sample code from above is broken down below. The joint angles and Dynamixel angles may not be the same so it must be taken into consideration. **Angle of Dynamixel is the output of the actual angle of Dynamixel**.
+The sample code from above is broken down below. The joint angles and DYNAMIXEL angles may not be the same so it must be taken into consideration. **Angle of DYNAMIXEL is the output of the actual angle of DYNAMIXEL**.

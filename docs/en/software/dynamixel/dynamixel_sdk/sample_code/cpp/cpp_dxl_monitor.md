@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/software/dynamixel/dynamixel_sdk/sample_code/cpp_dxl_monitor/
 sidebar:
-  title: DynamixelSDK
+  title: DYNAMIXEL SDK
   nav: "dynamixel_sdk"
 ---
 
@@ -30,7 +30,7 @@ sidebar:
 
   and type enter. Then, the Dynamixel PRO’s ID would be changed to ID = 2. To see another commands, type “help” or ‘h’, or ‘?’ to show the help.
 
-  Each command is classified by numbering on the end of the command string. For instance, command “wrb2” will “write byte using Protocol 2.0”. On the other hand, command that doesn’t have number at the end, such as “scan”, will “scan and show list of connected Dynamixels and the model number of the Dynamixel, using both protocols”
+  Each command is classified by numbering on the end of the command string. For instance, command “wrb2” will “write byte using Protocol 2.0”. On the other hand, command that doesn’t have number at the end, such as “scan”, will “scan and show list of connected DYNAMIXEL and the model number of the Dynamixel, using both protocols”
 
 - Available Dynamixel
 
@@ -71,7 +71,7 @@ sidebar:
 #include <string.h>
 #include <vector>
 
-#include "dynamixel_sdk.h"                                  // Uses Dynamixel SDK library
+#include "dynamixel_sdk.h"                                  // Uses DYNAMIXEL SDK library
 
 // Protocol version
 #define PROTOCOL_VERSION1               1.0                 // See which protocol version is used in the Dynamixel
@@ -151,7 +151,7 @@ void Help()
   printf("                               ex) baud 2400 (2400 bps) \n");
   printf("                               ex) baud 1000000 (1 Mbps)  \n");
   printf(" exit                        :Exit this program\n");
-  printf(" scan                        :Outputs the current status of all Dynamixels\n");
+  printf(" scan                        :Outputs the current status of all DYNAMIXEL\n");
   printf(" ping [ID] [ID] ...          :Outputs the current status of [ID]s \n");
   printf(" bp                          :Broadcast ping (Dynamixel Protocol 2.0 only)\n");
   printf(" \n");

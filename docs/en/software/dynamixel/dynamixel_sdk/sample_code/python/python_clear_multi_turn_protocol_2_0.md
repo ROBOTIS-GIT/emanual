@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/software/dynamixel/dynamixel_sdk/sample_code/python_clear_multi_turn_protocol_2_0/
 sidebar:
-  title: DynamixelSDK
+  title: DYNAMIXEL SDK
   nav: "dynamixel_sdk"
 ---
 
@@ -90,7 +90,7 @@ else:
 
         return 0
 
-from dynamixel_sdk import *                    # Uses Dynamixel SDK library
+from dynamixel_sdk import *                    # Uses DYNAMIXEL SDK library
 
 # Control table address
 ADDR_OPERATING_MODE         = 11               # Control table address is different in Dynamixel model
@@ -278,7 +278,7 @@ else:
 
         return 0
 
-from dynamixel_sdk import *                    # Uses Dynamixel SDK library
+from dynamixel_sdk import *                    # Uses DYNAMIXEL SDK library
 ```
 
 `getch()` gets the input which is for example code control.

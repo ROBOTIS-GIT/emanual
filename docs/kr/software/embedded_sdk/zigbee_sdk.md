@@ -361,7 +361,7 @@ Linux용 Zigbee SDK를 다운로드 받을 수 있습니다.
 
 ### 시스템 요구 사항
 - OS : Linux Kernel 2.6.21 이상 권장
-- [USB2Dynamixel]과 [Zig2Serial]이 반드시 필요
+- [USB2DYNAMIXEL]과 [Zig2Serial]이 반드시 필요
 
 ### 폴더 구성
 
@@ -723,7 +723,7 @@ Zigbee의 Send / Receive 예제입니다.
 
 #### 준비
 
-USB2Dynamixel에 Zig2Serial과 ZIG-100이 연결 되어 있어야 합니다.  
+USB2DYNAMIXEL에 Zig2Serial과 ZIG-100이 연결 되어 있어야 합니다.  
 또한, Zig2Serial에 연결된  ZIG-100 통신 모듈과 통신할 수 있는 제어기, 혹은 다른 통신 장치가 있어야 합니다.
 
 #### 소스

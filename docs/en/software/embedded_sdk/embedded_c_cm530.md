@@ -872,16 +872,16 @@ int main(void)
 
 ### [Read/Write Dynamixel](#readwrite-dynamixel)
 
-The location of Dynamixel can be set and read. (For more details refer to Dynamixel SDK)
+The location of DYNAMIXEL can be set and read. (For more details refer to DYNAMIXEL SDK)
  
 - Prepare
-  - The controller and Dynamixel are connected.
-  - This example is operated if the Dynamixel ID is 1.
+  - The controller and DYNAMIXEL are connected.
+  - This example is operated if DYNAMIXEL ID is 1.
  
 - Theory
-  - Dynamixel can be controlled by transmitting designated packet. The location of Dynamixel can be controlled using provided library.
-  - The microcontroller and Dynamixel comm are in USART channel 1
-  - the diagram below show a circuit for Dynamixel comm for a half-duplex buffer.
+  - DYNAMIXEL can be controlled by transmitting designated packet. The location of DYNAMIXEL can be controlled using provided library.
+  - The microcontroller and DYNAMIXEL comm are in USART channel 1
+  - the diagram below show a circuit for DYNAMIXEL comm for a half-duplex buffer.
   - Refer to [controller’s port](#hardware-port-map) for port and pin number in 09 DXL READ_WRITE\APP\src\main.c
  
     ![](/assets/images/sw/sdk/embedded_090.png)
@@ -935,20 +935,20 @@ int main(void)
 ```
  
 - Result
-  - Dynamixel is moved back and forth in the disgnated location, and the current location is printed through terminal.
+  - DYNAMIXEL is moved back and forth in the disgnated location, and the current location is printed through terminal.
 
 ### [Dynamixel Sync Control](#dynamixel-sync-control)
 
-Multiple Dynamixels can be controlled by synchronization. (For more details refer to Dynamixel SDK)
+Multiple DYNAMIXEL can be controlled by synchronization. (For more details refer to DYNAMIXEL SDK)
  
 - Prepare
-  - The controller and Dynamixel are connected.
-  - This example is operated when the Dynamixel ID is designated from 1 to 3 in order.
+  - The controller and DYNAMIXEL are connected.
+  - This example is operated when DYNAMIXEL ID is designated from 1 to 3 in order.
  
 - Theory
-  - Dynamixel can be controlled by transmitting designated packet. The location of Dynamixel can be controlled using provided library.
-  - The microcontroller and Dynamixel comm are in USART channel 1
-  - the diagram below show a circuit for Dynamixel comm for a half-duplex buffer.
+  - DYNAMIXEL can be controlled by transmitting designated packet. The location of DYNAMIXEL can be controlled using provided library.
+  - The microcontroller and DYNAMIXEL comm are in USART channel 1
+  - the diagram below show a circuit for DYNAMIXEL comm for a half-duplex buffer.
   - Refer to controller’s port for port and pin number in 10 DXL SYNC WRITE\APP\src\main.c
 
     ![](/assets/images/sw/sdk/embedded_090.png)
@@ -1011,7 +1011,7 @@ int main(void)
 ```
  
 - Result
-  - Multiple Dynamixels are moved back and forth in the designated location, and the current location is printed through terminal.
+  - Multiple DYNAMIXEL are moved back and forth in the designated location, and the current location is printed through terminal.
 
 ### [RC-100/ZIGBEE](#rc-100zigbee)
 

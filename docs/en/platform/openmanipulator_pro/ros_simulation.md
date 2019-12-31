@@ -96,7 +96,7 @@ ROS_MASTER_URI=http://192.168.3.149:11311
 process[open_manipulator_pro-1]: started with pid [4388]
 [INFO] Ready to simulate /open_manipulator_pro on Gazebo
 ```
-**NOTE** : In OpenMAIPULATOR-PRO controller for gazebo simulation, Joint and Gripper Dynamixel are not enable, following messages will not be displayed :  
+**NOTE** : In OpenMAIPULATOR-PRO controller for gazebo simulation, Joint and Gripper DYNAMIXEL are not enable, following messages will not be displayed :  
 Joint Dynamixel ID : 1, Model Name : PRO-PLUS-PH54-200-S500-R  
 Joint Dynamixel ID : 2, Model Name : PRO-PLUS-PH54-200-S500-R  
 Joint Dynamixel ID : 3, Model Name : PRO-PLUS-PH54-100-S500-R  

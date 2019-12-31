@@ -65,10 +65,10 @@ sidebar:
 
 {% capture opencm904_caution_01 %}
 **WARNING**
-- USB power is cannot be used to operate DYNAMIXELs. Separate power supply needs to be provided.  
+- USB power is cannot be used to operate DYNAMIXEL's. Separate power supply needs to be provided.  
   (OpenCM9.04 can operate using power supplied via USB, battery, + - terminal.)
 - Check the operating voltage for peripheral devices when using power supply. DYNAMIXEL or XL-series receives the exact same voltage.
-- XL-320 cannot be used with other DYNAMIXELs due to the difference in operating voltages.
+- XL-320 cannot be used with other DYNAMIXEL's due to the difference in operating voltages.
 {% endcapture %}
 
 <div class="notice--danger">{{ opencm904_caution_01 | markdownify }}</div>
@@ -196,7 +196,7 @@ Connects two LBS-04 Lithium-ion battery.
 {: .notice--warning}
 
 ### [DYNAMIXEL TTL 3 PIN](#dynamixel-ttl-3-pin)
-Port for daisy chaining DYNAMIXELs that use 3-pin cables (DYNAMIXEL TTL Bus).
+Port for daisy chaining DYNAMIXEL's that use 3-pin cables (DYNAMIXEL TTL Bus).
 
 {% include en/dxl/pinout_warning.md %}
 
@@ -345,7 +345,7 @@ All of OpenCM9.04’s GPIO pins can internally “pull-up” or “pull-down” 
 - **D15** : Digital I/O.
 - **VCC(+)** : +voltage of the board. There are 2 VCC(+) pins. Connected to the + terminal of the battery socket.
 - **GND(-)** :-voltage of the board. There are 2 GND(-) pins. Connected to the + terminal of the battery socket.
-- **TTL** : DYNAMIXEL TTL Bus’s Data line. Used to communicate with 3-pin TTL DYNAMIXELs.
+- **TTL** : DYNAMIXEL TTL Bus’s Data line. Used to communicate with 3-pin TTL DYNAMIXEL's.
 - **D** : Relevant to DYNAMIXEL TTL Bus and used to select TX, RX.
 - **X** : DYNAMIXEL TTL Bus’s TX pin.
 - **L** : DYNAMIXEL TTL Bus’s RX pin.
@@ -462,7 +462,7 @@ We recommend using 2 LBS-40 batteries when operating the XL-320.
 
 > LBS-40 battery
 
-We recommend using +- pin to power DYNAMIXELs other than XL-320.
+We recommend using +- pin to power DYNAMIXEL's other than XL-320.
 
 ![](/assets/images/parts/controller/opencm904/opencm904_19.png)
 

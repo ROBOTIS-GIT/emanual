@@ -25,9 +25,9 @@ sidebar:
 
 # [다이나믹셀 연결](#다이나믹셀-연결)
 
-1. 다이나믹셀을 USB2Dynamixel을 통해 PC와 연결합니다.
+1. 다이나믹셀을 USB2DYNAMIXEL을 통해 PC와 연결합니다.
 
-    - 연결 방법은 [USB2Dynamixel 정보]를 참고하세요.
+    - 연결 방법은 [USB2DYNAMIXEL 정보]를 참고하세요.
     - 다이나믹셀에 인가되는 전원선은 따로 연결해 주어야 합니다.
 
 2. 사용할 통신 포트를 선택합니다.
@@ -90,7 +90,7 @@ sidebar:
 
     ![img](/assets/images/sw/rplus1/wizard/dynamixel_wizard_firmware_recovery3.png)
 
-4. 다이나믹셀 연결 포트 선택 펌웨어를 인식하지 못하므로 다이나믹셀을 자동 검색할 수 없습니다. 따라서 사용자가 다이나믹셀이 연결된 포트를 수동으로 설정해 주어야 합니다. 포트가 사용중이면 다이나믹셀을 인식할 수 없으니 다른 프로그램을 종료하고 진행하십시오. USB2Dynamixel이 연결된 포트를 선택하고 찾기 버튼을 누르십시오.
+4. 다이나믹셀 연결 포트 선택 펌웨어를 인식하지 못하므로 다이나믹셀을 자동 검색할 수 없습니다. 따라서 사용자가 다이나믹셀이 연결된 포트를 수동으로 설정해 주어야 합니다. 포트가 사용중이면 다이나믹셀을 인식할 수 없으니 다른 프로그램을 종료하고 진행하십시오. USB2DYNAMIXEL이 연결된 포트를 선택하고 찾기 버튼을 누르십시오.
 
     ![img](/assets/images/sw/rplus1/wizard/dynamixel_wizard_firmware_recovery4.png)
 
@@ -135,11 +135,11 @@ sidebar:
 
 ### MX Series Calibration 방법
 
-1. 하드웨어 연결 USB2Dynamixel 에 MX시리즈를 연결해주세요. 스위치는 통신방식에 따라 TTL 혹은 RS485로 향해 있어야 합니다. 별도의 전원이 공급되어야 하며 Calibration Adapter가 필요합니다.
+1. 하드웨어 연결 USB2DYNAMIXEL 에 MX시리즈를 연결해주세요. 스위치는 통신방식에 따라 TTL 혹은 RS485로 향해 있어야 합니다. 별도의 전원이 공급되어야 하며 Calibration Adapter가 필요합니다.
 
     ![img](/assets/images/sw/rplus1/wizard/dynamixel_wizard_023.jpg)
 
-2. Dynamixel Wizard 를 실행 후 캘리브레이션 아이콘을 클릭합니다. COM 포트가 연결되어 있는 경우 해당 버튼이 비활성화 됩니다. 포트 연결 전 상태에서 캘리브레이션 아이콘을 클릭해주세.요.
+2. 다이나믹셀 위자드 를 실행 후 캘리브레이션 아이콘을 클릭합니다. COM 포트가 연결되어 있는 경우 해당 버튼이 비활성화 됩니다. 포트 연결 전 상태에서 캘리브레이션 아이콘을 클릭해주세.요.
 
     ![img](/assets/images/sw/rplus1/wizard/self_calibration_still028.jpg)
 
@@ -151,7 +151,7 @@ sidebar:
 
     ![img](/assets/images/sw/rplus1/wizard/self_calibration_still030.jpg)
 
-5. 다이나믹셀 연결 포트 선택 펌웨어를 인식하지 못하므로 다이나믹셀을 자동 검색할 수 없습니다. 따라서 사용자가 다이나믹셀이 연결된 포트를 수동으로 설정해 주어야 합니다. 포트가 사용중이면 다이나믹셀을 인식할 수 없으니 다른 프로그램을 종료하고 진행하십시오. USB2Dynamixel이 연결된 포트를 선택하고 찾기 버튼을 누르십시오.
+5. 다이나믹셀 연결 포트 선택 펌웨어를 인식하지 못하므로 다이나믹셀을 자동 검색할 수 없습니다. 따라서 사용자가 다이나믹셀이 연결된 포트를 수동으로 설정해 주어야 합니다. 포트가 사용중이면 다이나믹셀을 인식할 수 없으니 다른 프로그램을 종료하고 진행하십시오. USB2DYNAMIXEL이 연결된 포트를 선택하고 찾기 버튼을 누르십시오.
 
     ![img](/assets/images/sw/rplus1/wizard/self_calibration_still031.jpg)
 

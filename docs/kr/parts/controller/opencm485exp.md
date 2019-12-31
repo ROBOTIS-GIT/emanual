@@ -37,13 +37,13 @@ sidebar:
 ![](/assets/images/parts/controller/opencm904/opencm485exp_01.jpg)
 
 1. **SMPS DC Adapter** : SMPS DC Adapter를 연결해 OpenCM 485 확장보드 보드에 전원을 인가합니다.
-2. **DXL Pro Power** : 다이나믹셀 프로와 동일한 24V 전원 커넥터로 전원을 인가합니다.
+2. **DXL PRO Power** : 다이나믹셀 프로와 동일한 24V 전원 커넥터로 전원을 인가합니다.
 3. **Li-Po battery** : 11.1V Li-Po battery(LBS-10)를 사용하는 커넥터 입니다.
-4. **Dynamixel TTL 3 PIN** : 3핀 케이블(Dynamixel TTL Bus)을 사용하는 다이나믹셀을 Daisy chain으로 연결하기 위한 포트 입니다.
+4. **다이나믹셀 TTL 3 PIN** : 3핀 케이블(다이나믹셀 TTL Bus)을 사용하는 다이나믹셀을 Daisy chain으로 연결하기 위한 포트 입니다.
 5. **User Button** : 사용자가 제어 할 수 있는 스위치 입니다.
 6. **User LED** : 사용자가 제어 할 수있는 LED 입니다.
 7. **I/O header** : OpenCM9.04와 연결하 기 위한 헤더 입니다.(2.54mm pitch)
-8. **Dynamixel 485 4 PIN** : 4핀 케이블(Dynamixel 485 Bus)을 사용하는 다이나믹셀을 Daisy chain으로 연결하기 위한 포트 입니다.
+8. **다이나믹셀 485 4 PIN** : 4핀 케이블(다이나믹셀 485 Bus)을 사용하는 다이나믹셀을 Daisy chain으로 연결하기 위한 포트 입니다.
 9. **Power Switch** : 보드와 다이나믹셀 전원을 on/off하는 스위치 입니다. 단, USB 연결시 보드 전원은 on/off되지 않습니다.
 10. **JP1 Jumper** : OpenCM 485 EXP 보드에  입력된 전압을 OpenCM9.04에도 전압을 입력할지 결정하는 점퍼 입니다.
 
@@ -100,7 +100,7 @@ OpenCM 485 확장보드를 OpenCM9.04와 연결해서 사용하기 위해서는 
 
 2. OpenCM 485 확장보드의 485 Bus는 OpenCM9.04에서 Serial3(USART3)를 통해서 패킷을 주고 받습니다.
 
-    - DynamixelSDK를 사용해서 프로그래밍 하는 경우 아래와 같이 Serial3를 사용하도록 설정해야 합니다.
+    - 다이나믹셀 SDK를 사용해서 프로그래밍 하는 경우 아래와 같이 Serial3를 사용하도록 설정해야 합니다.
 
     ```cpp
     #include <DynamixelSDK.h>
@@ -111,7 +111,7 @@ OpenCM 485 확장보드를 OpenCM9.04와 연결해서 사용하기 위해서는 
     portHandler->openPort();
     ```
 
-    - DynamixelWorkbench를 사용해서 프로그래밍 하는 경우 아래와 같이 Serial3를 사용하도록 설정합니다.
+    - 다이나믹셀 워크벤치를 사용해서 프로그래밍 하는 경우 아래와 같이 Serial3를 사용하도록 설정합니다.
 
     ```cpp
     #include <DynamixelWorkbench.h>
@@ -128,13 +128,13 @@ OpenCM 485 확장보드를 OpenCM9.04와 연결해서 사용하기 위해서는 
 OpenCM 485  확장보드에는 OpenCM9.04의 IO핀과 연결된 버튼 2개와 LED 3개가 제공됩니다.
 각 버튼 및 LED와 연결된 OpenCM9.04의 IO 핀번호는 아래의 표에서 확인할 수 있습니다.
 
-||OpenCM9.04 I/O|
-|:---:|:---:|
-|Button1|16|
-|Button2|17|
-|LED1|18|
-|LED2|19|
-|LED3|20|
+|         | OpenCM9.04 I/O |
+|:-------:|:--------------:|
+| Button1 |       16       |
+| Button2 |       17       |
+|  LED1   |       18       |
+|  LED2   |       19       |
+|  LED3   |       20       |
 
 ![](/assets/images/parts/controller/opencm904/opencm485exp_11.jpg)
 
