@@ -6,7 +6,7 @@ If you want to use RoboPlus program for [CM-5] (the controller used for Bioloid 
   - You can open it by double-clicking the task code file.
   - You can open it using Open File function of RoboPlus Task.
   - You can open it by dragging & dropping on RoboPlus Task.
-2. Connect the PC and the Controller with [USB2Dynamixel].
+2. Connect the PC and the Controller with [USB2DYNAMIXEL].
 3. Turn on the power of the controller.
 
 ![CM-5_to_PC-01](/assets/images/parts/controller/cm-5/cm_5_connect_pc_01.png)
@@ -42,4 +42,4 @@ If you want to use RoboPlus program for [CM-5] (the controller used for Bioloid 
 
 [CM-5]: /docs/en/parts/controller/cm-5/
 [Firmware Update]: /docs/en/software/rplus1/manager/#firmware-update
-[USB2Dynamixel]: /docs/en/parts/interface/usb2dynamixel/
+[USB2DYNAMIXEL]: /docs/en/parts/interface/usb2dynamixel/

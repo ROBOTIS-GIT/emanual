@@ -128,7 +128,7 @@ CM-700에서 동작하는 프로그램을 만들기 위해서는 Atmega2561 개�
 
 ### dynamixel.h, dynamixel.c, dxl_hal.h, dxl_hal.c
 
-이 소스에 대한 정보는 [Dynamixel SDK]에서 보다 자세히 확인할 수 있습니다.
+이 소스에 대한 정보는 [다이나믹셀 SDK]에서 보다 자세히 확인할 수 있습니다.
 
 ### serial.h, serial.c
 
@@ -273,7 +273,7 @@ Hand 데모 프로그램 예제가 구현되어 있습니다.
 [데모 프로그램 설치 방법]: #로봇핸드-프로그래밍
 [로보플러스 터미널]: /docs/kr/software/rplus1/terminal/
 [다이나믹셀과 통신하기 위한 프로토콜]: /docs/kr/dxl/protocol1/
-[Dynamixel SDK]: /docs/en/software/dynamixel/dynamixel_sdk/overview/
+[다이나믹셀 SDK]: /docs/en/software/dynamixel/dynamixel_sdk/overview/
 [컨트롤 테이블]: /docs/kr/dxl/rx/rx-28/#control-table
 [speed]: /docs/kr/dxl/rx/rx-28/#moving-speed-32
 [Moving flag]: /docs/kr/dxl/rx/rx-28/#moving-46

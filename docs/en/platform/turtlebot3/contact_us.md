@@ -76,7 +76,7 @@ There are many answers to this question, but we strive to develop and apply prod
 * Supporter : JangHo Kim, Jinwook Kim, Woosik Yang, OROCA
 * Collaboration Team : Open Robotics, Intel, OROCA, Onshape, OSU
 
-We are **Open Source Team** in ROBOTIS HQ. With open source hardwares and softwares, our robot friends are hoping to enrich our lives. We mainly develop and support Dynamixel SDK, OpenManipulator, OpenCM, OpenCR and OpenAutonomousCar.
+We are **Open Source Team** in ROBOTIS HQ. With open source hardwares and softwares, our robot friends are hoping to enrich our lives. We mainly develop and support DYNAMIXEL SDK, OpenManipulator, OpenCM, OpenCR and OpenAutonomousCar.
 Our favorite platform is ROS! :) We are delighted to be in charge of developing TurtleBot3, the official reference platform for ROS, and in the future we will be the team that can support you to get closer to your robot dreams.
 
 * GitHub : [https://github.com/ROBOTIS-GIT](https://github.com/ROBOTIS-GIT)

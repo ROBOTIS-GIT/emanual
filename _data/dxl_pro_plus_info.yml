@@ -21,7 +21,7 @@ common_pro_plus_specs:
   standbycurrent_42:  &standbycurrent_42  "30 [mA]"
   standbycurrent_54:  &standbycurrent_54  "40 [mA]"
 
-h42p-020-s300-r:
+ph42-020-s300-r:
   mcu:                *mcu
   motor:              "Coreless (Maxon)"
   baudrate:           *baudrate
@@ -51,7 +51,7 @@ h42p-020-s300-r:
   id:                 *id
   standbycurrent:     *standbycurrent_42
 
-h54p-100-s500-r:
+ph54-100-s500-r:
   mcu:                *mcu
   motor:              "BLDC (Maxon)"
   baudrate:           *baudrate
@@ -81,7 +81,7 @@ h54p-100-s500-r:
   id:                 *id
   standbycurrent:     *standbycurrent_54
 
-h54p-200-s500-r:
+ph54-200-s500-r:
   mcu:                *mcu
   motor:              "BLDC (Maxon)"
   baudrate:           *baudrate
@@ -111,7 +111,7 @@ h54p-200-s500-r:
   id:                 *id
   standbycurrent:     *standbycurrent_54
 
-m42p-010-s260-r:
+pm42-010-s260-r:
   mcu:                *mcu
   motor:              "Coreless"
   baudrate:           *baudrate
@@ -141,7 +141,7 @@ m42p-010-s260-r:
   id:                 *id
   standbycurrent:     *standbycurrent_42
 
-m54p-040-s250-r:
+pm54-040-s250-r:
   mcu:                *mcu
   motor:              "BLDC"
   baudrate:           *baudrate
@@ -171,7 +171,7 @@ m54p-040-s250-r:
   id:                 *id
   standbycurrent:     *standbycurrent_54
 
-m54p-060-s250-r:
+pm54-060-s250-r:
   mcu:                *mcu
   motor:              "BLDC"
   baudrate:           *baudrate

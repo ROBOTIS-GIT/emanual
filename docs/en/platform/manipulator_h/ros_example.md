@@ -77,7 +77,7 @@ process[manipulator_h_manager-1]: started with pid [19408]
 ```
 {% capture notice_01 %}
 **TIP**:
-- If you can't load Dynamixels, please check your Dynamixels settings using [this page](/docs/en/platform/manipulator_h/getting_started/#prerequisite).
+- If you can't load DYNAMIXEL's, please check your DYNAMIXEL's settings using [this page](/docs/en/platform/manipulator_h/getting_started/#prerequisite).
 {% endcapture %}
 <div class="notice--success">{{ notice_01 | markdownify }}</div>
 

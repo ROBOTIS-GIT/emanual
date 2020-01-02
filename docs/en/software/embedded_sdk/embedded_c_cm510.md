@@ -108,7 +108,7 @@ The installation procedure is as follows.
 
 If you want to use Embedded C, you must select the basic environment of the installed program.  
 - If Atmel Studio is installed after WinAVR, if it is not an exceptional case, you can do programming using Atmel Studio only.
-- To run the examples Dynamixel(s) or other external devices maybe required in addition to the controller connected to the PC via serial cable.
+- To run the examples DYNAMIXEL or other external devices maybe required in addition to the controller connected to the PC via serial cable.
 
 
 1. Click on Debug - Options and Settings.
@@ -195,16 +195,16 @@ Each port or internal functions can be controlled easily with macro function pro
 
 ![](/assets/images/sw/sdk/embedded_030.png)
 
-|Port Name|Function|
-|:---:|:---:|
-|PORTF1 ~ PORTF6|ADC|
-|PORTD0         |Start Button|
-|PORTD1 ~ PORTD2|Tx, Rx|
-|PORTA2 ~ PORTA7|External Output ( 5 Pin Port)|
-|PORTC0 ~ PORTC6|Controller LED ( Status, Power )|
-|PORTB5	  Buzzer|Control Port|
-|PORTE4 ~ PORTE6|Direction Button (U, D, L, R)|
-|PORTD4 ~ PORTD6|Communication Control Port|
+|    Port Name    |             Function             |
+|:---------------:|:--------------------------------:|
+| PORTF1 ~ PORTF6 |               ADC                |
+|     PORTD0      |           Start Button           |
+| PORTD1 ~ PORTD2 |              Tx, Rx              |
+| PORTA2 ~ PORTA7 |  External Output ( 5 Pin Port)   |
+| PORTC0 ~ PORTC6 | Controller LED ( Status, Power ) |
+| PORTB5	  Buzzer  |           Control Port           |
+| PORTE4 ~ PORTE6 |  Direction Button (U, D, L, R)   |
+| PORTD4 ~ PORTD6 |    Communication Control Port    |
 
 The external port pin composition of CM-510 is as below.  You can check port 1 ~ port 6 by the scale marks on the external port.
 For more information, please refer to [CM-510].
@@ -227,13 +227,13 @@ For more information, please refer to [CM-510].
 
 ![](/assets/images/sw/sdk/embedded_033.png)
 
-|Port Name|Function|
-|:---:|:---:|
-|PORTF1 ~ PORTF6|ADC|
-|PORTD0         |Start Button|
-|PORTD2 ~ PORTD3|Tx, Rx|
-|PORTA2 ~ PORTA7|External Output ( 5 Pin Port)|
-|PORTC0 ~ PORTC6|Controller LED ( Status, Power )|
+|    Port Name    |             Function             |
+|:---------------:|:--------------------------------:|
+| PORTF1 ~ PORTF6 |               ADC                |
+|     PORTD0      |           Start Button           |
+| PORTD2 ~ PORTD3 |              Tx, Rx              |
+| PORTA2 ~ PORTA7 |  External Output ( 5 Pin Port)   |
+| PORTC0 ~ PORTC6 | Controller LED ( Status, Power ) |
 
 The external port pin composition of CM-700 is as below.  You can check port 1 ~ port 6 by the letters written on the bottom of Sub-board.  
 For more information, please refer to [CM-700].
@@ -499,20 +499,20 @@ Buzzer on the controller can be used.
 
     `Time(Sec) =  1 / (Frequency)`
 
-|Octave<br />/Scale|1|2|3|4|5|6|7|8|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|C|32.7032|65.4064|130.8128|261.6256|523.2511|1046.502|2093.005|4186.009|
-|C#|34.6478|69.2957|138.5913|277.1826|554.3653|1108.731|2217.461|4434.922|
-|D|36.7081|73.4162|146.8324|293.6648|587.3295|1174.659|2349.318|4698.636|
-|D#|38.8909|77.7817|155.5635|311.1270|622.2540|1244.508|2489.016|4978.032|
-|E|41.2034|82.4069|164.8138|329.6276|659.2551|1318.510|2637.020|5274.041|
-|F|43.6535|87.3071|174.6141|349.2282|698.4565|1396.913|2793.826|5587.652|
-|F#|46.2493|92.4986|184.9972|369.9944|739.9888|1479.978|2959.955|5919.911|
-|G|48.9994|97.9989|195.9977|391.9954|783.9909|1567.982|3135.963|6271.927|
-|G#|51.9130|103.8262|207.6523|415.3047|830.6094|1661.219|3322.438|6644.875|
-|A|55.0000|110.0000|220.0000|440.0000|880.0000|1760.000|3520.000|7040.000|
-|A#|58.2705|116.5409|233.0819|466.1638|932.3275|1864.655|3729.310|7458.620|
-|G|61.7354|123.4708|246.9417|493.8833|987.7666|1975.533|3951.066|7902.133|
+| Octave<br />/Scale |    1    |    2     |    3     |    4     |    5     |    6     |    7     |    8     |
+|:------------------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
+|         C          | 32.7032 | 65.4064  | 130.8128 | 261.6256 | 523.2511 | 1046.502 | 2093.005 | 4186.009 |
+|         C#         | 34.6478 | 69.2957  | 138.5913 | 277.1826 | 554.3653 | 1108.731 | 2217.461 | 4434.922 |
+|         D          | 36.7081 | 73.4162  | 146.8324 | 293.6648 | 587.3295 | 1174.659 | 2349.318 | 4698.636 |
+|         D#         | 38.8909 | 77.7817  | 155.5635 | 311.1270 | 622.2540 | 1244.508 | 2489.016 | 4978.032 |
+|         E          | 41.2034 | 82.4069  | 164.8138 | 329.6276 | 659.2551 | 1318.510 | 2637.020 | 5274.041 |
+|         F          | 43.6535 | 87.3071  | 174.6141 | 349.2282 | 698.4565 | 1396.913 | 2793.826 | 5587.652 |
+|         F#         | 46.2493 | 92.4986  | 184.9972 | 369.9944 | 739.9888 | 1479.978 | 2959.955 | 5919.911 |
+|         G          | 48.9994 | 97.9989  | 195.9977 | 391.9954 | 783.9909 | 1567.982 | 3135.963 | 6271.927 |
+|         G#         | 51.9130 | 103.8262 | 207.6523 | 415.3047 | 830.6094 | 1661.219 | 3322.438 | 6644.875 |
+|         A          | 55.0000 | 110.0000 | 220.0000 | 440.0000 | 880.0000 | 1760.000 | 3520.000 | 7040.000 |
+|         A#         | 58.2705 | 116.5409 | 233.0819 | 466.1638 | 932.3275 | 1864.655 | 3729.310 | 7458.620 |
+|         G          | 61.7354 | 123.4708 | 246.9417 | 493.8833 | 987.7666 | 1975.533 | 3951.066 | 7902.133 |
 
 > Unit : Hz
 
@@ -628,14 +628,14 @@ Here you can learn how t o use the ADC of external ports. (This example is using
 
 ### [Read/Write Dynamixel](#readwrite-dynamixel)
 
-The location of Dynamixel can be set and read.
+The location of DYNAMIXEL can be set and read.
 
 - Prepare
-  - The controller and Dynamixel are connected.
-  - This example is operated if the Dynamixel ID is 1.
+  - The controller and DYNAMIXEL are connected.
+  - This example is operated if DYNAMIXEL ID is 1.
 
 - Theory
-  - Dynamixel can be controlled by transmitting designated packet.  The location of Dynamixel can be controlled using provided library.
+  - DYNAMIXEL can be controlled by transmitting designated packet.  The location of DYNAMIXEL can be controlled using provided library.
 
 - Source
 
@@ -684,24 +684,24 @@ The location of Dynamixel can be set and read.
     PrintCommStatus(CommStatus);
   ```
 
-  This part describes that Dynamixel is sent to certain location, and the current location is read at the same time.  
+  This part describes that DYNAMIXEL is sent to certain location, and the current location is read at the same time.  
   First of all, if the current movement status has been read, and the motor is not moving, the movement command to the designated location can be carried on by dxl_write_word() function.  
-  The data of dxl_write_word() function are respectively (the ID, address, and position values of connected Dynamixel).  
+  The data of dxl_write_word() function are respectively (the ID, address, and position values of connected DYNAMIXEL).  
   Later, the current location is read and transmitted by serial communication.
 
 - Result
-  - Dynamixel is moved back and forth in the disgnated location, and the current location is printed through terminal.
+  - DYNAMIXEL is moved back and forth in the disgnated location, and the current location is printed through terminal.
 
 ### [Dynamixel Sync Control](#dynamixel-sync-control)
 
-Multiple Dynamixels can be controlled by synchronization.
+Multiple DYNAMIXEL can be controlled by synchronization.
 
 - Prepare
-  - The controller and Dynamixel are connected.
-  - This example is operated when the Dynamixel ID is designated from 1 to 3 in order.
+  - The controller and DYNAMIXEL are connected.
+  - This example is operated when DYNAMIXEL ID is designated from 1 to 3 in order.
 
 - Theory
-  - Dynamixel can be controlled by transmitting designated packet.  The location of Dynamixel can be controlled using provided library.
+  - DYNAMIXEL can be controlled by transmitting designated packet.  The location of DYNAMIXEL can be controlled using provided library.
 
 - Source
 
@@ -737,8 +737,8 @@ Multiple Dynamixels can be controlled by synchronization.
   _delay_ms(1000);
   ```
 
-  This part is for calculation of the initial location and initialization of the location of each Dynamixel.
-  The speed of all Dynamixels is set to the maximum level, and the location is set to the center using dxl_write_word() function.
+  This part is for calculation of the initial location and initialization of the location of each DYNAMIXEL.
+  The speed of all DYNAMIXEL is set to the maximum level, and the location is set to the center using dxl_write_word() function.
 
   ```c
   // Make syncwrite packet
@@ -755,7 +755,7 @@ Multiple Dynamixels can be controlled by synchronization.
     dxl_set_txpacket_parameter(2+3*i+2, dxl_get_highbyte(GoalPos));
   }
   dxl_set_txpacket_length((2+1)*NUM_ACTUATOR+4);
-  This part is for packet creation.  Please refer to Dynamixel Packet Structure.
+  This part is for packet creation.  Please refer to DYNAMIXEL Packet Structure.
   All connected actuator packets are created and transmitted.
 
   printf( "\n" );
@@ -777,7 +777,7 @@ Multiple Dynamixels can be controlled by synchronization.
   If a value exceeds the calculated location boundary value, the increase/decrease direction is changed to the opposite.
 
 - Result
-  - Multiple Dynamixels are moved back and forth in the designated location, and the current location is printed through terminal.
+  - Multiple DYNAMIXEL are moved back and forth in the designated location, and the current location is printed through terminal.
 
 ### [RC-100/ZIGBEE](#rc-100zigbee)
 

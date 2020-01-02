@@ -6,7 +6,7 @@ share: true
 author_profile: false
 permalink: /docs/kr/parts/interface/usb2dynamixel/
 sidebar:
-  title: USB2Dynamixel
+  title: USB2DYNAMIXEL
   nav: "usb2dynamixel"
 ---
 
@@ -14,11 +14,11 @@ sidebar:
 
 ![img](/assets/images/parts/interface/usb2dynamixel_product.jpg)
 
-> USB2Dynamixel
+> USB2DYNAMIXEL
 
-USB2Dynamixel은 PC 에서 다이나믹셀을 직접 구동하기 위해 사용되는 장치입니다. USB2Dynamixel 은 PC 의 USB 포트에 연결되어 사용되며, 각종 다이나믹셀이 연결될 수 있도록 3P 커넥터 및 4P 커넥터가 내장되어 있습니다.  
+USB2DYNAMIXEL은 PC 에서 다이나믹셀을 직접 구동하기 위해 사용되는 장치입니다. USB2DYNAMIXEL 은 PC 의 USB 포트에 연결되어 사용되며, 각종 다이나믹셀이 연결될 수 있도록 3P 커넥터 및 4P 커넥터가 내장되어 있습니다.  
 
-또한 USB2Dynamixel 은 노트북 등 시리얼 포트가 없는 PC 에서 USB 포트를 시리얼 포트로 변환할 때 이용될 수 있습니다. 이 기능은 CM-2, CM-2+, CM-5, CM-510 과 같은 다이나믹셀 전용 제어기를 USB 포트에 연결하여 이용할 경우 또는 로봇을 무선으로 제어하기 위해서 ZIG2Serial 을 USB 포트에 연결하여 이용할 경우 유용하게 사용될 수 있습니다.
+또한 USB2DYNAMIXEL 은 노트북 등 시리얼 포트가 없는 PC 에서 USB 포트를 시리얼 포트로 변환할 때 이용될 수 있습니다. 이 기능은 CM-2, CM-2+, CM-5, CM-510 과 같은 다이나믹셀 전용 제어기를 USB 포트에 연결하여 이용할 경우 또는 로봇을 무선으로 제어하기 위해서 ZIG2Serial 을 USB 포트에 연결하여 이용할 경우 유용하게 사용될 수 있습니다.
 
 ## PC 를 이용한 다이나믹셀 제어
 
@@ -32,7 +32,7 @@ USB2Dynamixel은 PC 에서 다이나믹셀을 직접 구동하기 위해 사용�
 
 ![img](/assets/images/parts/interface/usb2dynamixel_03.png)
 
-**참고**: USB2Dynamixel 통신이 불안정하다면 전압레벨 차이 일수 있습니다. 연결된 장비 및 PC가 그라운드와 연결되어 있는지 확인해주세요.
+**참고**: USB2DYNAMIXEL 통신이 불안정하다면 전압레벨 차이 일수 있습니다. 연결된 장비 및 PC가 그라운드와 연결되어 있는지 확인해주세요.
 {: .notice}
 
 # [각 부 명칭](#각-부-명칭)
@@ -51,7 +51,7 @@ USB2Dynamixel은 PC 에서 다이나믹셀을 직접 구동하기 위해 사용�
 
 ## [핀 배열](#핀-배열)
 
-아래 그림은 USB2Dynamixel 에 사용되는 커넥터 핀들의 용도입니다. 각 핀들을 사용자의 용도에 맞게 이용하고자 하는 경우 각 핀들의 용도를 숙지하신 뒤 사용하시기 바랍니다.
+아래 그림은 USB2DYNAMIXEL 에 사용되는 커넥터 핀들의 용도입니다. 각 핀들을 사용자의 용도에 맞게 이용하고자 하는 경우 각 핀들의 용도를 숙지하신 뒤 사용하시기 바랍니다.
 
 - 4P / 3P 케이블 커넥터의 핀 배치도
 
@@ -63,7 +63,7 @@ USB2Dynamixel은 PC 에서 다이나믹셀을 직접 구동하기 위해 사용�
 
 # [통신모드 선택 방법](#통신모드-선택-방법)
 
-아래 그림과 같이 USB2Dynamixel의 스위치를 변경하여 통신 모드를 선택할 수 있습니다.
+아래 그림과 같이 USB2DYNAMIXEL의 스위치를 변경하여 통신 모드를 선택할 수 있습니다.
 
 ![img](/assets/images/parts/interface/usb2dynamixel_06.png)
 
@@ -73,11 +73,11 @@ USB2Dynamixel은 PC 에서 다이나믹셀을 직접 구동하기 위해 사용�
 
 # [사용 방법](#사용-방법)
 
-- Dynamixel SDK : [Dynamixel SDK]를 이용해 다이나믹셀을 C언어로 직접 제어할 수 있습니다.
+- 다이나믹셀 SDK : [다이나믹셀 SDK]를 이용해 다이나믹셀을 C언어로 직접 제어할 수 있습니다.
 
 # [전원 공급](#전원-공급)
 
-USB2Dynamixel은 다이나믹셀에 전원을 공급하지 않습니다. 따라서 다이나믹셀을 구동시키기 위해서는 아래와 같이 전원을 별도로 공급해 주어야 합니다. 각 다이나믹셀의 모델별 적정 공급 전압은 각 다이나믹셀 설명 페이지를 참고하세요.
+USB2DYNAMIXEL은 다이나믹셀에 전원을 공급하지 않습니다. 따라서 다이나믹셀을 구동시키기 위해서는 아래와 같이 전원을 별도로 공급해 주어야 합니다. 각 다이나믹셀의 모델별 적정 공급 전압은 각 다이나믹셀 설명 페이지를 참고하세요.
 
 {% capture warning_01 %}
 **주의**: **전원 공급시 주의사항**
@@ -93,17 +93,17 @@ USB2Dynamixel은 다이나믹셀에 전원을 공급하지 않습니다. 따라�
 
 PIN Figure 를 참조하여 커넥터의 2번 PIN 에는 플러스(+) 전원을, 커넥터의 1번 PIN 에는 마이너스(-) 전원을 인가하십시오.(다이나믹셀의 커넥터 2개는 동일한 것이므로 둘 중 어떠한 곳에 전원을 인가해도 무방합니다.)
 
-## USB2Dynamixel과 다이나믹셀 사이에 전원 인가
+## USB2DYNAMIXEL과 다이나믹셀 사이에 전원 인가
 
 ![img](/assets/images/parts/interface//usb2dynamixel_10.jpg)
 
-위와 같이 다이나믹셀에 전원을 인가할 수 없는 경우 아래와 같이 USB2Dynamixel 과 다이나믹셀 사이에 전원을 인가하십시오. USB2Dynamixel 커넥터 2번 PIN 에 연결되어 있는 전선을 분리하여 플러스(+) 인가합니다.USB2Dynamixel 커넥터 1번 PIN 에 연결되어 있는 전선에 Y 결선으로 전선을 추가로 연결하여 마이너스(-) 전원을 인가합니다.
+위와 같이 다이나믹셀에 전원을 인가할 수 없는 경우 아래와 같이 USB2DYNAMIXEL 과 다이나믹셀 사이에 전원을 인가하십시오. USB2DYNAMIXEL 커넥터 2번 PIN 에 연결되어 있는 전선을 분리하여 플러스(+) 인가합니다.USB2DYNAMIXEL 커넥터 1번 PIN 에 연결되어 있는 전선에 Y 결선으로 전선을 추가로 연결하여 마이너스(-) 전원을 인가합니다.
 
 # [드라이버 설치 확인](#드라이버-설치-확인)
 
 USB 다운로더 드라이버가 PC에 바르게 설치되었는지 확인하는 방법은 다음과 같습니다.
 
-1. PC 의 USB 포트에 USB 다운로더(LN-101 or USB2Dynamixel) 를 연결합니다.
+1. PC 의 USB 포트에 USB 다운로더(LN-101 or USB2DYNAMIXEL) 를 연결합니다.
 
     ![img](/assets/images/edu/task_download_01.jpg)
 
@@ -121,7 +121,7 @@ USB 다운로더 드라이버가 PC에 바르게 설치되었는지 확인하는
 
 # [드라이버 수동 설치](#드라이버-수동-설치)
 
-로보플러스를 설치하게 되면 자동으로 FTDI Driver (USB2Dynamixel, USB다운로더(LN-101), BT-410 동글 드라이버)가 설치됩니다. 만약 로보플러스를 설치하지 않고, 해당 드라이버를 설치하거나, 로보플러스설치 시 드라이버가 제대로 설치되지 않았을 경우 아래와 같은 방법으로 드라이버를 수동으로 설치하십시오.
+로보플러스를 설치하게 되면 자동으로 FTDI Driver (USB2DYNAMIXEL, USB다운로더(LN-101), BT-410 동글 드라이버)가 설치됩니다. 만약 로보플러스를 설치하지 않고, 해당 드라이버를 설치하거나, 로보플러스설치 시 드라이버가 제대로 설치되지 않았을 경우 아래와 같은 방법으로 드라이버를 수동으로 설치하십시오.
 {: .notice}
 
 1. PC 에 장치를 연결합니다. 드라이버가 설치되어 있지 않을 경우 새 하드웨어 검색 마법사 시작 창이 뜹니다.  
@@ -153,4 +153,4 @@ USB 다운로더 드라이버가 PC에 바르게 설치되었는지 확인하는
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UlD4C1XMsgo" frameborder="0" allowfullscreen></iframe>
 
-[Dynamixel SDK]: /docs/en/software/dynamixel/dynamixel_sdk/overview/
+[다이나믹셀 SDK]: /docs/en/software/dynamixel/dynamixel_sdk/overview/

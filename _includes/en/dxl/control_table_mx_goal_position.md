@@ -4,9 +4,9 @@ If Goal Position is out of the range, Angle Limit Error Bit (Bit1) of Status Pac
 
 ![](/assets/images/dxl/mx/mx_position.png)
 
-> The picture above is the front view of Dynamixel
+> The picture above is the front view of DYNAMIXEL
 
-In multi-turn mode Dynamixel has a range from -28,672 to 28,672 (can turn up to 7 revolutions in either CW or CCW direction).  
+In multi-turn mode DYNAMIXEL has a range from -28,672 to 28,672 (can turn up to 7 revolutions in either CW or CCW direction).  
 When resolution divider is set to a different value revolutions can increase.
 
 **NOTE** : If it is set to Wheel Mode, Goal Position value is not used.

@@ -26,9 +26,9 @@ sidebar:
 
 # How the X-series can communicate with dynamixel with protocol 1.0?
 
-Users can select Dynamixel [Protocol 1.0] and [Protocol 2.0] when using X-series.
+Users can select DYNAMIXEL [Protocol 1.0] and [Protocol 2.0] when using X-series.
 Even if Protocol 1.0 is selected, Protocol 2.0 Control Table will be used.
-It is recommended to use an identical protocol version for multiple Dynamixels.
+It is recommended to use an identical protocol version for multiple DYNAMIXEL's.
 
 **TIP** : MX-series DYNAMIXEL except MX-12W can be upgraded to Control Table 2.0 for the new firmware features, new control table, and "Protocol Version" parameter for Communication Protocol flexibility.
 {: .notice--success}
@@ -61,7 +61,7 @@ RoboPlus is a software to create a customized programming for every ROBOTIS prod
 
 # My robots' joints get loose while I make the motions.
 
- Dynamixels have an [Auto Shutdown function](http://emanual.robotis.com/docs/en/software/rplus1/motion/#dynamixel-auto-shutdown-function). This function prevents Dynamixels from being damaged.
+ DYNAMIXEL's have an [Auto Shutdown function](http://emanual.robotis.com/docs/en/software/rplus1/motion/#dynamixel-auto-shutdown-function). This function prevents DYNAMIXEL's from being damaged.
 
 # How can I develop a firmware for the controller by myself using C Language?
 
@@ -76,9 +76,9 @@ RoboPlus is a software to create a customized programming for every ROBOTIS prod
 
   You can use [Zigbee SDK.](http://emanual.robotis.com/docs/en/software/embedded_sdk/zigbee_sdk/)
 
-# I want to control Dynamixel with PC development environment such as Visual Studio.
+# I want to control DYNAMIXEL with PC development environment such as Visual Studio.
 
-  [Dynamixel SDK] is a standard programming library to develop S/W controls Dynamixel.
+  [DYNAMIXEL SDK] is a standard programming library to develop S/W controls DYNAMIXEL.
 
 # I want to communicate with multiple Zigbees simultaneously.
 
@@ -132,6 +132,6 @@ Please refer to [the page.](http://en.robotis.com/model/board.php?bo_table=robot
   ![](/assets/images/faq/OS_X_fail/osx_all_app_allowance.png)
 
 
-[Dynamixel SDK]: /docs/en/software/dynamixel/dynamixel_sdk/overview/
+[DYNAMIXEL SDK]: /docs/en/software/dynamixel/dynamixel_sdk/overview/
 [Protocol 1.0]: /docs/en/dxl/protocol1/
 [Protocol 2.0]: /docs/en/dxl/protocol2/

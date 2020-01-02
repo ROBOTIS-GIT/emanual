@@ -1,4 +1,4 @@
-Controls the RGB LED on Dynamixel PRO.
+Controls the RGB LED on DYNAMIXEL PRO.
 
 | Address | Color | Range |
 | :-----: | :---: | :---: |

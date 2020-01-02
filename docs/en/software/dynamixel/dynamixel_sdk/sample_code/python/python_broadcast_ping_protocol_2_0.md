@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/software/dynamixel/dynamixel_sdk/sample_code/python_broadcast_ping_protocol_2_0/
 sidebar:
-  title: DynamixelSDK
+  title: DYNAMIXEL SDK
   nav: "dynamixel_sdk"
 ---
 
@@ -24,7 +24,7 @@ sidebar:
 
 - Description
 
-  This example tries to ping all Dynamixels that are connected to the controller, and shows which Dynamixel is successfully connected. The example is commonly used to check for Dynamixel’s connection at once.
+  This example tries to ping all DYNAMIXEL that are connected to the controller, and shows which Dynamixel is successfully connected. The example is commonly used to check for Dynamixel’s connection at once.
 
 - Available Dynamixel
 
@@ -52,7 +52,7 @@ else:
             termios.tcsetattr(fd, termios.TCSADRAIN, old_settings)
         return ch
 
-from dynamixel_sdk import *                 # Uses Dynamixel SDK library
+from dynamixel_sdk import *                 # Uses DYNAMIXEL SDK library
 
 # Protocol version
 PROTOCOL_VERSION        = 2.0               # See which protocol version is used in the Dynamixel
@@ -123,7 +123,7 @@ else:
     def getch():
         return sys.stdin.read(1)
 
-from dynamixel_sdk import *                 # Uses Dynamixel SDK library
+from dynamixel_sdk import *                 # Uses DYNAMIXEL SDK library
 ```
 
 `getch()` gets the input which is for example code control.
@@ -202,7 +202,7 @@ if dxl_comm_result != COMM_SUCCESS:
     print("%s" % packetHandler.getTxRxResult(dxl_comm_result))
 ```
 
-`broadcastPing()` function shows the connection between controller and each Dynamixels from ID 1 to ID 253 through port.
+`broadcastPing()` function shows the connection between controller and each DYNAMIXEL from ID 1 to ID 253 through port.
 
 ``` python
 # Close port

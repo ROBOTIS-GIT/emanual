@@ -111,7 +111,7 @@ Each option is described as belows.
 ## [Linux Example](#linux-example)
 
 ### Preperation
-Dynamixel SDK should be installed in advance. Please enter below commands to install Dynamixel SDK.
+DYNAMIXEL SDK should be installed in advance. Please enter below commands to install DYNAMIXEL SDK.
 
 ```
 $ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK

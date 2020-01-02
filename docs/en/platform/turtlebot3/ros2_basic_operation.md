@@ -96,7 +96,7 @@ In addition, you can monitor topics through rqt whenever you have a topic added.
 ![](/assets/images/platform/turtlebot3/software/remote_pc_and_turtlebot.png)
 
 TurtleBot3 can be teleoperated by various devices. It is tested with several wireless devices such as **PS3, XBOX 360, RC-100 controller and etc**. 
-Examples of TurtleBot3 can be launched by ROS 2 on Ubuntu 18.04 with Raspberry Pi 3 and OpenCR that controls DYNAMIXELs.
+Examples of TurtleBot3 can be launched by ROS 2 on Ubuntu 18.04 with Raspberry Pi 3 and OpenCR that controls DYNAMIXEL's.
 
 ### [Keyboard](#keyboard)
 

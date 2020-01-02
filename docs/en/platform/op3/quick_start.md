@@ -400,7 +400,7 @@ In the Control table, some data share the same name, but they are attached with 
 
 |  Address  |      Name       |          Description           | Access | Init Value |
 |:---------:|:---------------:|:------------------------------:|:------:|:----------:|
-| 24 (0X18) | Dynamixel Power |        Dynamixel On/Off        |   RW   |  0 (0X00)  |
+| 24 (0X18) | DYNAMIXEL Power |        DYNAMIXEL On/Off        |   RW   |  0 (0X00)  |
 | 25 (0X19) |       LED       |       LED Pannel On/Off        |   RW   |  0 (0X00)  |
 | 26 (0X1A) |   LED_RGB(L)    |         LED 5 low byte         |   RW   |  0 (0X00)  |
 | 27 (0X1B) |   LED_RGB(H)    |        LED 5 high byte         |   RW   |  0 (0X00)  |
@@ -437,11 +437,11 @@ Represents the Model Number.
 Represents the firmware version.
 
 #### ID
-Is a unique number to identify Dynamixel.  
+Is a unique number to identify DYNAMIXEL.  
 Values range from 0 (0x00) to 252 (0xFC), Value 254 (0xFE) is used as the Broadcast ID.  
-If the Broadcast ID is used to transmit Instruction Packet, then it can command to all Dynamixels.  
+If the Broadcast ID is used to transmit Instruction Packet, then it can command to all DYNAMIXEL.  
 
-**NOTE** : Do NOT assign an identical ID for DYNAMIXELs in the same network.
+**NOTE** : Do NOT assign an identical ID for DYNAMIXEL in the same network.
 {: .notice}
 
 #### Baud Rate
@@ -482,12 +482,12 @@ If an Instruction Packet has a Broadcast ID, Status Packet will not be returned 
 **NOTE** : When Instruction packet is Broadcast ID, Status packet is not returned regardless of Status return level.
 {: .notice}
 
-#### Dynamixel Power
+#### DYNAMIXEL Power
 
 | Value |                          Meaning                          |
 |:-----:|:---------------------------------------------------------:|
-|   0   | Turn off the power of all Dynamixels connected to OpenCR. |
-|   1   | Turn on the power of all Dynamixels connected to OpenCR.  |
+|   0   | Turn off the power of all DYNAMIXEL connected to OpenCR. |
+|   1   | Turn on the power of all DYNAMIXEL connected to OpenCR.  |
 
 #### LED Pannel
 
@@ -575,7 +575,7 @@ The calculation will take for 2 seconds and then each bit will be reset to 0.
 | PIN_BUTTON_S1 |             Button Input S1             |
 | PIN_BUTTON_S2 |             Button Input S2             |
 | PIN_BUTTON_S3 |             Button Input S3             |
-| PIN_BUTTON_S4 | Button Input S4 (Reset Dynamixel Power) |
+| PIN_BUTTON_S4 | Button Input S4 (Reset DYNAMIXEL Power) |
 
 
 [https://github.com/phil333/face_detection]: https://github.com/phil333/face_detection

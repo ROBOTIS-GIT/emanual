@@ -680,7 +680,7 @@ page_number: 5
 - Returns
   - void
 - Description
-  - Sets Dynamixel comms from portnum and baudnum
+  - Sets DYNAMIXEL comms from portnum and baudnum
 
 #### int DXL_Open();
 - Parameter

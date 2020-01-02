@@ -41,7 +41,7 @@ sidebar:
 |ZIG-100 Connector|It is to connect ZIG-100 to ZIG2Serial.|
 |ZIG-100 Status Display LED|The status of ZIG-100 is displayed.<br />- If it is turned off : ZIG-100 is not connected or in set status.<br />- If it is turned on : It is connected to other ZIG-100 and thecommunication is ready.<br />- If It  flickers : Other ZIG-100 has not been found.|
 |Reset Switch|It is used when ZIG-100 is rebooted.|
-|Power Connector|The power of 5V is needed to operate ZIG2Serial. The user can supply power using this connector. If it is connected to USB2Dynamixel, a separate power supply is not necessary.|
+|Power Connector|The power of 5V is needed to operate ZIG2Serial. The user can supply power using this connector. If it is connected to USB2DYNAMIXEL, a separate power supply is not necessary.|
 |RS232 Connector|It can be connected to RS-232 port of PC.|
 
 # [Pinout](#pinout)
@@ -62,7 +62,7 @@ The power of 5V mus be supplied to operate ZIG2Serial.  The power can be supplie
 
 **Zero ohm resistor** must be attached or connected by soldering on the location of resistor for external power to supply the external power.
  
-If [USB2Dynamixel] products of Robotis are used, those products can be used without supplying separate power since the power is supplied from USB2Dynamixel to ZIG2Serial. 
+If [USB2DYNAMIXEL] products of Robotis are used, those products can be used without supplying separate power since the power is supplied from USB2DYNAMIXEL to ZIG2Serial. 
 
 **WARNING** : If the resistor for external power connection is connected, please use after removing the resistor.
 {: .notice--warning}
@@ -112,5 +112,5 @@ The connection status must be changed to select the channel on the Zig2Serial.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YgebCObXJZg" frameborder="0" allowfullscreen></iframe>
 
 [RoboPlus Manager]: /docs/en/software/rplus1/manager/
-[USB2Dynamixel]: /docs/en/parts/interface/usb2dynamixel/
+[USB2DYNAMIXEL]: /docs/en/parts/interface/usb2dynamixel/
 [Zigbee SDK]: /docs/en/software/embedded_sdk/zigbee_sdk/

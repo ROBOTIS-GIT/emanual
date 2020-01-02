@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/software/dynamixel/dynamixel_sdk/api_reference/c/c_groupsyncread/
 sidebar:
-  title: DynamixelSDK
+  title: DYNAMIXEL SDK
   nav: "dynamixel_sdk"
 ---
 
@@ -36,9 +36,9 @@ sidebar:
 | **[groupSyncReadAddParam](#groupsyncread_addparam)**      | Adds parameter storage for read                            |
 | **[groupSyncReadRemoveParam](#groupsyncreadremoveparam)** | Removes parameter on the storage                           |
 | **[groupSyncReadClearParam](#groupsyncreadclearparam)**   | Clears parameter storage                                   |
-| **[groupSyncReadTxPacket](#groupsyncreadtxpacket)**       | Transmits packet to the number of Dynamixels               |
-| **[groupSyncReadRxPacket](#groupsyncreadrxpacket)**       | receives packet from the number of Dynamixels              |
-| **[groupSyncReadTxRxPacket](#groupsyncreadtxrxpacket)**   | Transmits and receives packet on the number of Dynamixels  |
+| **[groupSyncReadTxPacket](#groupsyncreadtxpacket)**       | Transmits packet to the number of DYNAMIXEL's               |
+| **[groupSyncReadRxPacket](#groupsyncreadrxpacket)**       | receives packet from the number of DYNAMIXEL's              |
+| **[groupSyncReadTxRxPacket](#groupsyncreadtxrxpacket)**   | Transmits and receives packet on the number of DYNAMIXEL's  |
 | **[groupSyncReadIsAvailable](#groupsyncreadisavailable)** | Checks whether there is available data in the data storage |
 | **[groupSyncReadGetData](#groupsyncreadgetdata)**         | Gets data from received packet                             |
 
@@ -76,11 +76,11 @@ uint8_t groupSyncReadAddParam(int group_num, uint8_t id)
 | Parameters | Description  |
 |:-----------|:-------------|
 | group_num  | Group number |
-| id         | Dynamixel ID |
+| id         | DYNAMIXEL ID |
 
 - Detailed Description
 
-   This function pushes id to the Dynamixel ID list, and initializes #`group_num` parameter storage It returns false when the class uses Protocol 1.0, or it returns true.
+   This function pushes id to the DYNAMIXEL ID list, and initializes #`group_num` parameter storage It returns false when the class uses Protocol 1.0, or it returns true.
 
 
 ##### groupSyncReadRemoveParam
@@ -92,11 +92,11 @@ void groupSyncReadRemoveParam(int group_num, uint8_t id)
 | Parameters | Description  |
 |:-----------|:-------------|
 | group_num  | Group number |
-| id         | Dynamixel ID |
+| id         | DYNAMIXEL ID |
 
 - Detailed Description
 
-   This function removes id and its data for write in the #`group_num` Dynamixel ID list. It returns false when the class uses Protocol 1.0 or target ID does not exists in the ID list, or returns true.
+   This function removes id and its data for write in the #`group_num` DYNAMIXEL ID list. It returns false when the class uses Protocol 1.0 or target ID does not exists in the ID list, or returns true.
 
 
 ##### groupSyncReadClearParam
@@ -112,7 +112,7 @@ void groupSyncReadClearParam(int group_num)
 
 - Detailed Description
 
-   This function clears #`group_num` Dynamixel ID list. It returns false when the class uses Protocol 1.0, or returns true.
+   This function clears #`group_num` DYNAMIXEL ID list. It returns false when the class uses Protocol 1.0, or returns true.
 
 
 ##### groupSyncReadTxPacket
@@ -167,8 +167,8 @@ bool groupSyncReadIsAvailable(int group_num, uint8_t id, uint16_t address, uint1
 
 | Parameters | Description                               |
 |:-----------|:------------------------------------------|
-| id         | Dynamixel ID                              |
-| address    | Address on the control table of Dynamixel |
+| id         | DYNAMIXEL ID                              |
+| address    | Address on the control table of DYNAMIXEL |
 | data       | Packet data                               |
 
 
@@ -185,8 +185,8 @@ uint32_t groupSyncReadGetData(int group_num, uint8_t id, uint16_t address, uint1
 | Parameters | Description                               |
 |:-----------|:------------------------------------------|
 | group_num  | Group number                              |
-| id         | Dynamixel ID                              |
-| address    | Address on the control table of Dynamixel |
+| id         | DYNAMIXEL ID                              |
+| address    | Address on the control table of DYNAMIXEL |
 | data       | Packet data                               |
 
 

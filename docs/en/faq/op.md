@@ -16,12 +16,12 @@ You must free up camera resources used by running programs (i.e. the demonstrati
 You may free up the resources by running the killall command (i.e. killall demo)
 refer to How to kill the demo program
 
-# One or more Dynamixel actuators LED constantly blinks.
+# One or more DYNAMIXEL actuators LED constantly blinks.
 
 You can perform any of the following to reset the actuators in question:
 Press "RESET" button, initiate any necessary killall processes, and run program again.
 Run Dymanixel Monitor (located at /darwin/Linux/project/dxl_monitor) and perform the reset procedure.
-The can be an instance that torque on the MX-28 is unexpectedly released. This is a Dynamixel safety mechanism for overloading error. In such case power DARWIN-OP off for a few minutes then turn back on.
+The can be an instance that torque on the MX-28 is unexpectedly released. This is DYNAMIXEL safety mechanism for overloading error. In such case power DARWIN-OP off for a few minutes then turn back on.
 
 # DARWIN-OP gets up too slowly.
 
@@ -36,7 +36,7 @@ Perform the following:
 3. There may be a case that you've interfaced in DARWIN-OP via remote desktop for a while. End the connection via remote desktop and connect again via SSH client.
 4. If you are running several CPU-demanding programs from DARWIN-OP's PC then close those programs.
 
-# Dynamixel MX-28 is not supported by RoboPlus.
+# DYNAMIXEL MX-28 is not supported by RoboPlus.
 
 Please make sure that you are running RoboPlus v1.0.21.0 or higher. You may download RoboPlus software here.
 
@@ -60,6 +60,6 @@ Please note that due to the nature of wireless radio signals operating on the 2.
 
 Reason is that Intel has not provided Ubuntu driver updates for the GMA500 display controller when connecting to an analog display. Instead use a HDMI-capable display of DVI-capable display (through HDMI-DVI adapter).
 
-# I replaced a MX-28 Dynamixel but DXL Monitor cannot detect the new actuator
+# I replaced a MX-28 DYNAMIXEL but DXL Monitor cannot detect the new actuator
 
-Information on replacing a new Dynamixel can be found here.
+Information on replacing a new DYNAMIXEL can be found here.

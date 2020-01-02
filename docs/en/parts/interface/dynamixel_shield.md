@@ -7,14 +7,14 @@ share: true
 author_profile: false
 permalink: /docs/en/parts/interface/dynamixel_shield/
 sidebar:
-  title: Dynamixel Shield
+  title: DYNAMIXEL Shield
   nav: "dynamixel_shield"
 ---
 
 # [Introduction](#introduction)
 ![](/assets/images/parts/interface/dynamixel_shield/with_arduino.png)
 
-Dynamixel Shield  was created to use RC100 and Dynamixel on arduino board. We provide dynamixel library for Dynamixel Shield, it can help you to use Dynamixel easily.
+DYNAMIXEL Shield  was created to use RC100 and DYNAMIXEL on arduino board. We provide dynamixel library for DYNAMIXEL Shield, it can help you to use DYNAMIXEL easily.
 
 **This product does not contain Arduino Uno. Arduino Uno should be purchased separately.**
 {: .notice--warning}
@@ -43,8 +43,8 @@ Dynamixel Shield  was created to use RC100 and Dynamixel on arduino board. We pr
 | **PRO L** `1`    | [L42-10-S300-R]                | [L54-30-S500-R]                | [L54-30-S400-R]                | [L54-50-S500-R]                | [L54-50-S290-R] |
 | **PRO H(A)**     | [H42-20-S300-R(A)]             | [H54-100-S500-R(A)]            | [H54-200-S500-R(A)]            |                                |                 |
 | **PRO M(A)**     | [M42-10-S260-R(A)]             | [M54-40-S250-R(A)]             | [M54-60-S250-R(A)]             |                                |                 |
-| **PRO+ H**       | [H42P-020-S300-R]              | [H54P-100-S500-R]              | [H54P-100-S500-R]              |                                |                 |
-| **PRO+ M**       | [M54P-060-S250-R]              | [M54P-040-S250-R]              | [M42P-010-S260-R]              |                                |                 |
+| **PRO+ H**       | [PH42-020-S300-R]              | [PH54-100-S500-R]              | [PH54-100-S500-R]              |                                |                 |
+| **PRO+ M**       | [PM54-060-S250-R]              | [PM54-040-S250-R]              | [PM42-010-S260-R]              |                                |                 |
 
 `1` RX, DX, EX, PRO L series require additional configuration in the source code.
 
@@ -61,18 +61,18 @@ Dynamixel Shield  was created to use RC100 and Dynamixel on arduino board. We pr
 
 |      Item      |                 Description                 |          Note           |
 |:--------------:|:-------------------------------------------:|:-----------------------:|
-| Dynamixel Port |           TTL, TTL(XL-320), RS485           |       `Caution3`        |
-|  Power Switch  |   Power SW (Dynamixel Port Power Switch)    |            -            |
-|  UART Switch   | UART SW (Upload or Dynamixel Select Switch) |       `Caution1`        |
+| DYNAMIXEL Port |           TTL, TTL(XL-320), RS485           |       `Caution3`        |
+|  Power Switch  |   Power SW (DYNAMIXEL Port Power Switch)    |            -            |
+|  UART Switch   | UART SW (Upload or DYNAMIXEL Select Switch) |       `Caution1`        |
 |   Jumper Cap   |           Power Source Selection            | Read 'Connecting Power' |
 
 -	Arduino pin #0/ #1 : Hardware serial port to control dynamixel
 - Arduino pin #2 : Control pin to select dynamixel direction
-- The hardware serial port is used for Dynamixel control, therefore, the serial communication has to be performed by connecting RC100 or LN101 to the software serial port which is assigned to Arduino pin 7 and 8.
+- The hardware serial port is used for DYNAMIXEL control, therefore, the serial communication has to be performed by connecting RC100 or LN101 to the software serial port which is assigned to Arduino pin 7 and 8.
 
 
 {% capture shield_01 %}
-`Caution1` When uploading firmware using USB port, you should switch the UART SW(SW_2) to Upload mode. When you select the UART SW (SW_2) to Dynamixel mode, you can use Dynamixel but USB port.  
+`Caution1` When uploading firmware using USB port, you should switch the UART SW(SW_2) to Upload mode. When you select the UART SW (SW_2) to DYNAMIXEL mode, you can use DYNAMIXEL but USB port.  
 `Caution2` If you are using a board that does not support SoftwareSerial(like SAMD, etc..), you cannot use pins 7 and 8 for UART purposes.  
 `Caution3` TTL, TTL (XL-320) and RS485 connectors are all connected in parallel in one serial.
 {% endcapture %}
@@ -81,15 +81,15 @@ Dynamixel Shield  was created to use RC100 and Dynamixel on arduino board. We pr
 
 # [Connecting Power](#connecting-power)
 
-|                                Connect VIN                                 |                               Disconnect VIN                               |
-|:--------------------------------------------------------------------------:|:--------------------------------------------------------------------------:|
+|                            Connect VIN                            |                          Disconnect VIN                           |
+|:-----------------------------------------------------------------:|:-----------------------------------------------------------------:|
 | ![](/assets/images/parts/interface/dynamixel_shield/power_01.png) | ![](/assets/images/parts/interface/dynamixel_shield/power_02.png) |
 
 - The power input is divided as follows depending on whether the jumper cap is connected or not.
   1. Connect VIN : Power supply using with Arduino's SMPS connector
-  2. Disconnect VIN : Power supply using Dynamixel shield's power input connector. Can not use power from arduino.
+  2. Disconnect VIN : Power supply using DYNAMIXEL shield's power input connector. Can not use power from arduino.
 
-- Since the Dynamixel power can not be connected to the USB power of the Arduino board, you need to connect the external power.
+- Since DYNAMIXEL power can not be connected to the USB power of the Arduino board, you need to connect the external power.
 -	When using the power input connector, **be sure to check the polarity of the power supply**.
 
   ![](/assets/images/parts/interface/dynamixel_shield/power_polarity.png)
@@ -101,12 +101,12 @@ Dynamixel Shield  was created to use RC100 and Dynamixel on arduino board. We pr
 
 ## [Upload Switch](#upload-switch)
 
--	For Dynamixel control, the hardware serial port of the arduino board is used. Because the downloading is done to the same port, the two ports may collide. Therefore, to download, use serial port switch to move to upload position and download.
-- After the download is completed, the switch must be moved to the Dynamixel position for Dynamixel control. If it is not moved, the Dynamixel will not work.
+-	For DYNAMIXEL control, the hardware serial port of the arduino board is used. Because the downloading is done to the same port, the two ports may collide. Therefore, to download, use serial port switch to move to upload position and download.
+- After the download is completed, the switch must be moved to DYNAMIXEL position for DYNAMIXEL control. If it is not moved, DYNAMIXEL will not work.
 
-## [Dynamixel Power Switch](#dynamixel-power-switch)
+## [DYNAMIXEL Power Switch](#dynamixel-power-switch)
 
--	It is a switch that can turn on / off the power of Dynamixel connector.
+-	It is a switch that can turn on / off the power of DYNAMIXEL connector.
 
 
 # [DYNAMIXEL Shield Libraries](#dynamixel-shield-libraries)
@@ -115,7 +115,7 @@ Dynamixel Shield  was created to use RC100 and Dynamixel on arduino board. We pr
 
 - Compatible to Arduino boards
 -	Support dynamixel protocol 1.0/2.0
-- Up to 16 Dynamixels can be controlled (Typically, each motor(XL-320 or XL430-W250) consumes 0.4 ~ 0.6A of current)
+- Up to 16 DYNAMIXEL's can be controlled (Typically, each motor(XL-320 or XL430-W250) consumes 0.4 ~ 0.6A of current)
 - Support SynWrite function
 - Support RC100 library
 - Serial communication using software serial library
@@ -303,12 +303,12 @@ bool syncWriteEnd(void);
 [L54-30-S500-R]: /docs/en/dxl/pro/l54-30-s500-r/
 [L54-30-S400-R]: /docs/en/dxl/pro/l54-30-s400-r/
 [L42-10-S300-R]: /docs/en/dxl/pro/l42-10-s300-r/
-[H42P-020-S300-R]: /docs/en/dxl/pro_plus/h42p-020-s300-r/
-[H54P-100-S500-R]: /docs/en/dxl/pro_plus/h54p-100-s500-r/
-[H54P-200-S500-R]: /docs/en/dxl/pro_plus/h54p-200-s500-r/
-[M54P-060-S250-R]: /docs/en/dxl/pro_plus/m54p-060-s250-r/
-[M54P-040-S250-R]: /docs/en/dxl/pro_plus/m54p-040-s250-r/
-[M42P-010-S260-R]: /docs/en/dxl/pro_plus/m42p-010-s260-r/
+[PH42-020-S300-R]: /docs/en/dxl/pro_plus/ph42-020-s300-r/
+[PH54-100-S500-R]: /docs/en/dxl/pro_plus/ph54-100-s500-r/
+[PH54-200-S500-R]: /docs/en/dxl/pro_plus/ph54-200-s500-r/
+[PM54-060-S250-R]: /docs/en/dxl/pro_plus/pm54-060-s250-r/
+[PM54-040-S250-R]: /docs/en/dxl/pro_plus/pm54-040-s250-r/
+[PM42-010-S260-R]: /docs/en/dxl/pro_plus/pm42-010-s260-r/
 
 [Arduino Official Guide]: https://www.arduino.cc/en/Guide/Libraries
 [GitHub repository]: https://github.com/ROBOTIS-GIT/Dynamixel2Arduino

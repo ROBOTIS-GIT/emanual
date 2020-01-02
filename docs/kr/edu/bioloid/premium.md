@@ -38,7 +38,7 @@ sidebar:
 - [거리 센서]
 - [적외선 센서]
 - [자이로 센서]
-- [USB2Dynamixel]
+- [USB2DYNAMIXEL]
 
 ## [작동하기](#작동하기)
 ### 프로그램 다운로드
@@ -538,7 +538,7 @@ RoboPlus Motion 프로그램을 사용하여 아래와 같은 4 가지 모션을
   - RoboPlus Task 의 파일 열기 기능으로 열 수 있습니다.
   - 마우스를 이용하여 파일을 RoboPlus Task 위로 드래그 앤 드롭(Drag & Drop)을 통해 열 수 있습니다.
 
-2. USB2Dynamixel을 이용하여 PC 와 제어기를 연결합니다.
+2. USB2DYNAMIXEL을 이용하여 PC 와 제어기를 연결합니다.
 3. 제어기의 전원을 켭니다. (전원을 켜는 방법은 각 제어기 정보를 참고하세요.)
 
     ![](/assets/images/edu/bioloid/cm510_pc.jpg)
@@ -904,7 +904,7 @@ B 타입 로봇에 그리퍼를 장착한 모습입니다.
 [거리 센서]: /docs/kr/parts/sensor/dms-80/
 [적외선 센서]: /docs/kr/parts/sensor/irss-10/
 [자이로 센서]: /docs/kr/parts/sensor/gs-12/
-[USB2Dynamixel]: /docs/kr/parts/interface/usb2dynamixel/
+[USB2DYNAMIXEL]: /docs/kr/parts/interface/usb2dynamixel/
 [기본 프로그램]: #기본-프로그램
 [BT-410 세트]: /docs/kr/parts/communication/bt-410/
 [ZIG-110 세트]: /docs/kr/parts/communication/zig-110/

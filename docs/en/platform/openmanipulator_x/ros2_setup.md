@@ -108,7 +108,7 @@ If you want to operate OpenMANIPULATOR-X on embedded system (OpenCR) without ROS
 
 #### Connection
 
-Connect micro USB (connected to PC), Dynamixel's(OpenMANIPULATOR-X), and 12V Power to OpenCR as shown below.
+Connect micro USB (connected to PC), DYNAMIXEL(OpenMANIPULATOR-X), and 12V Power to OpenCR as shown below.
 
 <img src="/assets/images/platform/openmanipulator_x/OpenManipulator_opencr_setup2.png" width="800">
 

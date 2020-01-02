@@ -36,12 +36,12 @@ sidebar:
 -
 <select id="pro_plus_ctrl_table_select" onchange="window.location.href=this.value;">
     <option selected disabled hidden>PRO+ 시리즈</option>
-    <option value="/docs/kr/dxl/pro_plus/h54p-200-s500-r/#eeprom-영역">H54P-200-S500-R</option>
-    <option value="/docs/kr/dxl/pro_plus/h54p-100-s500-r/#eeprom-영역">H54P-100-S500-R</option>
-    <option value="/docs/kr/dxl/pro_plus/h42p-020-s300-r/#eeprom-영역">H42P-020-S300-R</option>
-    <option value="/docs/kr/dxl/pro_plus/m54p-060-s250-r/#eeprom-영역">M54P-060-S250-R</option>
-    <option value="/docs/kr/dxl/pro_plus/m54p-040-s250-r/#eeprom-영역">M54P-050-S250-R</option>
-    <option value="/docs/kr/dxl/pro_plus/m42p-010-s260-r/#eeprom-영역">M42P-010-S260-R</option>
+    <option value="/docs/kr/dxl/pro_plus/ph54-200-s500-r/#eeprom-영역">PH54-200-S500-R</option>
+    <option value="/docs/kr/dxl/pro_plus/ph54-100-s500-r/#eeprom-영역">PH54-100-S500-R</option>
+    <option value="/docs/kr/dxl/pro_plus/ph42-020-s300-r/#eeprom-영역">PH42-020-S300-R</option>
+    <option value="/docs/kr/dxl/pro_plus/pm54-060-s250-r/#eeprom-영역">PM54-060-S250-R</option>
+    <option value="/docs/kr/dxl/pro_plus/pm54-040-s250-r/#eeprom-영역">M54P-050-S250-R</option>
+    <option value="/docs/kr/dxl/pro_plus/pm42-010-s260-r/#eeprom-영역">PM42-010-S260-R</option>
 </select>
 
 -

@@ -92,10 +92,10 @@ product_group: dxl_rx
 ## [Control Table Description](#control-table-description)
 
 ### <a name="model-number"></a>**[Model Number (0)](#model-number-0)**
- This address stores model number of the DYNAMIXEL.
+ This address stores model number of DYNAMIXEL.
 
 ### <a name="firmware-version"></a>**[Firmware Version (2)](#firmware-version-2)**
- This address stores firmware version of the DYNAMIXEL.
+ This address stores firmware version of DYNAMIXEL.
 
 ### <a name="id"></a>**[ID (3)](#id-3)**
 {% include en/dxl/control_table_id.md %}

@@ -20,7 +20,7 @@ Open Platform Humanoid Project
 
 ![](/assets/images/platform/op3/op3_product_rev2.png)
 
-ROBOTIS OP3 is the latest miniature humanoid robot platform from ROBOTIS that succeeds ROBOTIS OP(aka “DARWIN OP”) and ROBOTIS OP2(aka “DARWIN 2” or “DARWIN OP2”). One of the noticeable changes of ROBOTIS OP3 is made in actuator by replacing MX-28 actuators with XM-430 actuators. Another significant change is also made in internal PC by replacing Atom based SBC(Single Board Computer) with Intel i3 based NUC. With the XM-430 which supports Dynamixel Protocol 2.0, OP3 has improved torque along with current based control and loaded with various functions. Intel NUC allows highly improved computing power that supports 64-bit OS and Bluetooth 4.1. In addition, OP3 is developed under ROS(Robot Operating System) to utilize various packages in ROS ecosystem. All these hardware improvements and ROS support allows developers to focus more on research and development compare to the preceding robots.
+ROBOTIS OP3 is the latest miniature humanoid robot platform from ROBOTIS that succeeds ROBOTIS OP(aka “DARWIN OP”) and ROBOTIS OP2(aka “DARWIN 2” or “DARWIN OP2”). One of the noticeable changes of ROBOTIS OP3 is made in actuator by replacing MX-28 actuators with XM-430 actuators. Another significant change is also made in internal PC by replacing Atom based SBC(Single Board Computer) with Intel i3 based NUC. With the XM-430 which supports DYNAMIXEL Protocol 2.0, OP3 has improved torque along with current based control and loaded with various functions. Intel NUC allows highly improved computing power that supports 64-bit OS and Bluetooth 4.1. In addition, OP3 is developed under ROS(Robot Operating System) to utilize various packages in ROS ecosystem. All these hardware improvements and ROS support allows developers to focus more on research and development compare to the preceding robots.
 
 - Physical Differences from ROBOTIS OP2  
   - ROBOTIS OP3 does not come with a design skin, however, 3D modeling files are provided in order to support 3D print for the default design skin.
@@ -101,7 +101,7 @@ ROBOTIS OP3 is an affordable, miniature humanoid robot platform with advanced co
 |           Battery            |                                         Lipo 3cell 11.1v 1800mA                                          |
 |          IO Device           |                     RGB LED x 1, LED x 3 (Red, Green, Blue), Button x 4, Speaker x 1                     |
 |        Installable OS        |                any Linux release (32-bit/64-bit)<br />any Windows release (32-bit/64-bit)                |
-| Development<br />Environment |                             OS : Linux (64-bit)<br />C++, ROS, Dynamixel SDK                             |
+| Development<br />Environment |                             OS : Linux (64-bit)<br />C++, ROS, DYNAMIXEL SDK                             |
 
 
 ## [Safety Information](#safety-information)

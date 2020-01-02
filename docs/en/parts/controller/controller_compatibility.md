@@ -11,7 +11,7 @@ sidebar:
   nav: "controller_compatibility"
 ---
 
-# [Supported Baudrates for Dynamixel](#supported-baudrates-for-dynamixel)
+# [Supported Baudrates for DYNAMIXEL](#supported-baudrates-for-dynamixel)
 
 | Baudrate(bps) | [CM-5] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04] | [OpenCR] |
 |:-------------:|:------:|:--------:|:--------:|:--------:|:--------:|:--------:|:------------:|:--------:|
@@ -146,7 +146,7 @@ R+ SMART and R+IoT aren't released yet.
 |         [OpenCM IDE]          |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              O               |      X      |    X     |
 |        [DYNAMIXEL SDK]        |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              O               |      X      |    O     |
 |     [DYNAMIXEL Workbench]     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              O               |      X      |    O     |
-|      [Dynamixel Wizard]       |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              X               |      X      |    X     |
+|      [DYNAMIXEL Wizard]       |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              X               |      X      |    X     |
 |    [DYNAMIXEL Wizard 2.0]     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              X               |      X      |    X     |
 | [ROBOTIS Manipulator library] |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              X               |      X      |    O     |
 | [Embeded SDK(CM-510/530/700)] |   X    |    X    |    X     |    X     |    X     |    O     |    O     |    X     |    O     |    X     |              X               |      X      |    X     |
@@ -193,7 +193,7 @@ R+ SMART and R+IoT aren't released yet.
 [OpenCM IDE]: /docs/en/software/opencm_ide/getting_started/              
 [DYNAMIXEL SDK]: /docs/en/software/dynamixel/dynamixel_sdk/overview/
 [DYNAMIXEL Workbench]: /docs/en/software/dynamixel/dynamixel_workbench/
-[Dynamixel Wizard]: /docs/en/software/rplus1/dynamixel_wizard/
+[DYNAMIXEL Wizard]: /docs/en/software/rplus1/dynamixel_wizard/
 [DYNAMIXEL Wizard 2.0]: /docs/en/software/dynamixel/dynamixel_wizard2/
 [Embeded SDK(CM-510/530/700)]: /docs/en/software/embedded_sdk/
 [ROBOTIS Manipulator library]: /docs/en/software/robotis_manipulator_libs/

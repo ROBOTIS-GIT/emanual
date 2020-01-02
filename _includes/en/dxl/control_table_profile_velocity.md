@@ -27,17 +27,17 @@ Profiles are usually selected by the combination of [Profile Velocity(112)] and 
 ![](/assets/images/dxl/x/profile_types.png)
 
 
-When given [Goal Position(116)], Dynamixel's profile creates desired velocity trajectory based on present velocity(initial velocity of the Profile).  
-When Dynamixel receives updated desired position from a new [Goal Position(116)] while it is moving toward the previous [Goal Position(116)], velocity smoothly varies for the new desired velocity trajectory.  
+When given [Goal Position(116)], DYNAMIXEL's profile creates desired velocity trajectory based on present velocity(initial velocity of the Profile).  
+When DYNAMIXEL receives updated desired position from a new [Goal Position(116)] while it is moving toward the previous [Goal Position(116)], velocity smoothly varies for the new desired velocity trajectory.  
 Maintaining velocity continuity while updating desired velocity trajectory is called Velocity Override.  
 For a simple calculation, let's assume that the initial velocity of the Profile is '0'.  
 The following explains how Profile processes [Goal Position(116)] instruction in Position Control mode, Extended Position Control Mode{% if page.product_group!='dxl_xl430' %}, Current-based Position Control Mode{% else %}{% endif %}.
 
-1. An Instruction from the user is transmitted via Dynamixel bus, then registered to [Goal Position(116)] (If Velocity-based Profile is selected).
+1. An Instruction from the user is transmitted via DYNAMIXEL bus, then registered to [Goal Position(116)] (If Velocity-based Profile is selected).
 2. Acceleration time(t1) is calculated from [Profile Velocity(112)] and [Profile Acceleration(108)].
 3. Types of Profile is decided based on [Profile Velocity(112)], [Profile Acceleration(108)] and total travel distance(ΔPos, the distance difference between desired position and present position).
 4. Selected Profile type is stored at [Moving Status(123)].
-5. Dynamixel is driven by the calculated desired trajectory from Profile.
+5. DYNAMIXEL is driven by the calculated desired trajectory from Profile.
 6. desired velocity trajectory and desired position trajectory from Profile are stored at [Velocity Trajectory(136)] and [Position Trajectory(140)] respectively.
 
 | Condition                                                | Types of Profile                         |

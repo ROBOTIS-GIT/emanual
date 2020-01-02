@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/software/dynamixel/dynamixel_sdk/sample_code/c_indirect_address_protocol_2_0/
 sidebar:
-  title: DynamixelSDK
+  title: DYNAMIXEL SDK
   nav: "dynamixel_sdk"
 ---
 
@@ -61,7 +61,7 @@ sidebar:
 
 #include <stdlib.h>
 #include <stdio.h>
-#include "dynamixel_sdk.h"                                           // Uses Dynamixel SDK library
+#include "dynamixel_sdk.h"                                           // Uses DYNAMIXEL SDK library
 
 // Control table address                                            // Control table address is different in Dynamixel model
 #define ADDR_PRO_INDIRECTADDRESS_FOR_WRITE      49                  // EEPROM region
@@ -457,10 +457,10 @@ The function `abs()` is in the example code, and it needs `stdlib.h` to be inclu
 The example shows Dynamixel status in sequence by the function `printf()`. So here `stdio.h` is needed.
 
 ```c
-#include "dynamixel_sdk.h"                                   // Uses Dynamixel SDK library
+#include "dynamixel_sdk.h"                                   // Uses DYNAMIXEL SDK library
 ```
 
-All libraries of Dynamixel SDK are linked with the header file `dynamixel_sdk.h`.
+All libraries of DYNAMIXEL SDK are linked with the header file `dynamixel_sdk.h`.
 
 ```c
 // Control table address

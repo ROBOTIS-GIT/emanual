@@ -772,7 +772,7 @@ if(using_actual_robot_state)
 하나의 매니퓰레이터에 다양한 종류의 actuator를 사용할 경우 여러개의 `JointDynamixel`과 `GripperDynamixel` 클래스를 추가할 수 있다. -->
 The actuator class for joints were added using the `addJointActuator` function, and the actuator class for a tool were added using the `addToolActuator` function.
 The control mode settings for both classes were set using `setJointActuatorMode` and `setToolActuatorMode` functions.
-The `JointDynamixel` and `GripperDynamixel` classes can be used with Dynamixels, otherwise the user will need to create the `JointActuator` and the `ToolActuator` for own actuator.
+The `JointDynamixel` and `GripperDynamixel` classes can be used with DYNAMIXEL, otherwise the user will need to create the `JointActuator` and the `ToolActuator` for own actuator.
 Plural `JointActuator` and `ToolActuator` classes can be added when various kinds of actuators is used in one manipulator.
 
 #### Joint Actuator Class

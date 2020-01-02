@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/software/dynamixel/dynamixel_sdk/library_setup/matlab_windows/
 sidebar:
-  title: DynamixelSDK
+  title: DYNAMIXEL SDK
   nav: "dynamixel_sdk"
 ---
 
@@ -49,9 +49,9 @@ When some error that are related with `.dll file version is higher than the MATL
 
 ### [Building and Running the Sample Code](#building-and-running-the-sample-code)
 
-Dynamixel SDK example code for MATLAB uses the library files(.dll for Windows) built in C language.
+DYNAMIXEL SDK example code for MATLAB uses the library files(.dll for Windows) built in C language.
 
-Each released Dynamixel SDK have latest library files in `[DynamixelSDK folder]/c/build/[winXX]/output/dxl_xYY_c.dll` which were built by its own source code.
+Each released DYNAMIXEL SDK have latest library files in `[DynamixelSDK folder]/c/build/[winXX]/output/dxl_xYY_c.dll` which were built by its own source code.
 
 #### Import libraries
 

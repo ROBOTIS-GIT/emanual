@@ -2,9 +2,9 @@
 |Value|Operating Mode| Description     |
 | :---- | :------------------------------ | :------------------------------------------- |
 | 0 | Current Control Mode | DYNAMIXEL only controls current(torque) regardless of speed and position. This mode is ideal for a gripper or a system that only uses current(torque) control or a system that has additional velocity/position controllers. |
-| 1 | Velocity Control Mode | This mode controls velocity. This mode is identical to the Wheel Mode(endless) from existing DYNAMIXELs. This mode is ideal for wheel-type robots. |
-| 3(Default) | Position Control Mode  |  This mode controls position. This mode is identical to the Joint Mode from existing DYNAMIXELs. Operating position range is limited by Max Position Limit(48) and Min Position Limit(52). This mode is ideal for articulated robots that each joint rotates less than 360 degrees.  |
-|  4  |  Extended Position Control Mode(Multi-turn)  |  This mode controls position. This mode is identical to the Multi-Turn Mode from existing DYNAMIXELs. 512 turns are supported(-256[rev] ~ 256[rev]). This mode is ideal for multi-turn wrists or conveyer systems or a system that requires an additional reduction gear.  |
+| 1 | Velocity Control Mode | This mode controls velocity. This mode is identical to the Wheel Mode(endless) from existing DYNAMIXEL. This mode is ideal for wheel-type robots. |
+| 3(Default) | Position Control Mode  |  This mode controls position. This mode is identical to the Joint Mode from existing DYNAMIXEL. Operating position range is limited by Max Position Limit(48) and Min Position Limit(52). This mode is ideal for articulated robots that each joint rotates less than 360 degrees.  |
+|  4  |  Extended Position Control Mode(Multi-turn)  |  This mode controls position. This mode is identical to the Multi-Turn Mode from existing DYNAMIXEL. 512 turns are supported(-256[rev] ~ 256[rev]). This mode is ideal for multi-turn wrists or conveyer systems or a system that requires an additional reduction gear.  |
 |  5  |  Current-based Position Control Mode  |  This mode controls both position and current(torque). Up to 512 turns are supported(-256[rev] ~ 256[rev]). This mode is ideal for a system that requires both position and current control such as articulated robots or grippers.  |
 |  16  |  PWM Control Mode  (Voltage Control Mode)  |  This mode directly controls PWM output. (Voltage Control Mode)  |
 

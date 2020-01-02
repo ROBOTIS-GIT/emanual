@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/software/dynamixel/dynamixel_sdk/library_setup/c_linux/
 sidebar:
-  title: DynamixelSDK
+  title: DYNAMIXEL SDK
   nav: "dynamixel_sdk"
 ---
 
@@ -131,8 +131,8 @@ sidebar:
 
 ### [Building and Running the Sample Code](#building-and-running-the-sample-code)
 
-The Dynamixel SDK example code for C uses a .so (Linux) library built in C.  
-By doing above, each released Dynamixel SDK have latest library files in `[DynamixelSDK folder]/c/build/[linuxXX]/libdxl_xYY_c.so` which were built by its own source code. 
+The DYNAMIXEL SDK example code for C uses a .so (Linux) library built in C.  
+By doing above, each released DYNAMIXEL SDK have latest library files in `[DynamixelSDK folder]/c/build/[linuxXX]/libdxl_xYY_c.so` which were built by its own source code. 
 
 * Go to the Makefile's directory using `cd`:  
 
@@ -162,7 +162,7 @@ By doing above, each released Dynamixel SDK have latest library files in `[Dynam
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/c/linux/sample_code/exc2.png)
 
-* Access the port you will be using to communicate with Dynamixel: 
+* Access the port you will be using to communicate with DYNAMIXEL: 
 
   ``` bash
   $ sudo chmod a+rw /dev/ttyUSB0

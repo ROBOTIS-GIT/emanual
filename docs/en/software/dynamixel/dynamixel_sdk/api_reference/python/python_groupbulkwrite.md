@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/software/dynamixel/dynamixel_sdk/api_reference/python/python_groupbulkwrite/
 sidebar:
-  title: DynamixelSDK
+  title: DYNAMIXEL SDK
   nav: "dynamixel_sdk"
 ---
 
@@ -40,7 +40,7 @@ sidebar:
 | **[removeParam](#removeparam)**                             | Removes parameter on the storage                  |
 | **[changeParam](#changeparam)**                             | Changes parameter on the storage                  |
 | **[clearParam](#clearparam)**                               | Clears parameter storage                          |
-| **[txPacket](#txpacket)**                                   | Transmits packet to the number of Dynamixels      |
+| **[txPacket](#txpacket)**                                   | Transmits packet to the number of DYNAMIXEL's      |
 
 - Enumerator
 
@@ -73,14 +73,14 @@ addParam(dxl_id, start_address, data_length, data)
 
 | Parameters    | Description                |
 |:--------------|:---------------------------|
-| dxl_id        | Dynamixel ID               |
+| dxl_id        | DYNAMIXEL ID               |
 | start_address | Start address              |
 | data_length   | Data length                |
 | data          | Data for write             |
 
 - Detailed Description
 
-    This function pushes `dxl_id` into the Dynamixel ID list, and initializes parameter storage by setting `start_address` and `param_length`. The function deals with 1, 2 or 4 byte data only. The function returns false when the length of input data exceeds parameter or wrong length, or returns true.   
+    This function pushes `dxl_id` into the DYNAMIXEL ID list, and initializes parameter storage by setting `start_address` and `param_length`. The function deals with 1, 2 or 4 byte data only. The function returns false when the length of input data exceeds parameter or wrong length, or returns true.   
 
 
 ##### removeParam
@@ -92,11 +92,11 @@ removeParam(dxl_id)
 
 | Parameters    | Description                |
 |:--------------|:---------------------------|
-| dxl_id        | Dynamixel ID               |
+| dxl_id        | DYNAMIXEL ID               |
 
 - Detailed Description
 
-   This function removes `dxl_id` and its data for write in the Dynamixel ID list. The function returns false when no data is in the parameter storage, or returns true.
+   This function removes `dxl_id` and its data for write in the DYNAMIXEL ID list. The function returns false when no data is in the parameter storage, or returns true.
 
 
 ##### changeParam
@@ -108,7 +108,7 @@ changeParam(dxl_id, start_address, data_length, data)
 
 | Parameters    | Description                |
 |:--------------|:---------------------------|
-| dxl_id        | Dynamixel ID               |
+| dxl_id        | DYNAMIXEL ID               |
 | start_address | Start address              |
 | data_length   | Data length                |
 | data          | data for write             |
@@ -129,7 +129,7 @@ None
 
 - Detailed Description
 
-   This function clears Dynamixel ID list.
+   This function clears DYNAMIXEL ID list.
 
 
 ##### txPacket

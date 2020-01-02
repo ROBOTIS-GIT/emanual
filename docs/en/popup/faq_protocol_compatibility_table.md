@@ -91,12 +91,12 @@ Compatibility Key: O= Yes ; X= No ; * = User Action Required
 
 | Model           | Protocol 1.0 | Protocol 2.0 |
 |:----------------|:-------------|:-------------|
-| H54P-200-S500-R | X            | O            |
-| H54P-100-S500-R | X            | O            |
-| H42P-020-S300-R | X            | O            |
-| M54P-060-S250-R | X            | O            |
-| M54P-040-S250-R | X            | O            |
-| M42P-010-S260-R | X            | O            |
+| PH54-200-S500-R | X            | O            |
+| PH54-100-S500-R | X            | O            |
+| PH42-020-S300-R | X            | O            |
+| PM54-060-S250-R | X            | O            |
+| PM54-040-S250-R | X            | O            |
+| PM42-010-S260-R | X            | O            |
 
 # ETC
 

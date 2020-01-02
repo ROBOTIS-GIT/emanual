@@ -42,23 +42,23 @@ Follwing message will be shown in the Terminal after the process done successful
 
 ```
 port_name and baud_rate are set to /dev/ttyUSB0, 1000000 
-Joint Dynamixel ID : 1, Model Name : PRO-PLUS-H54P-200-S500-R
-Joint Dynamixel ID : 2, Model Name : PRO-PLUS-H54P-200-S500-R
-Joint Dynamixel ID : 3, Model Name : PRO-PLUS-H54P-100-S500-R
-Joint Dynamixel ID : 4, Model Name : PRO-PLUS-H54P-100-S500-R
-Joint Dynamixel ID : 5, Model Name : PRO-PLUS-H42P-020-S300-R
-Joint Dynamixel ID : 6, Model Name : PRO-PLUS-H42P-020-S300-R
+Joint Dynamixel ID : 1, Model Name : PRO-PLUS-PH54-200-S500-R
+Joint Dynamixel ID : 2, Model Name : PRO-PLUS-PH54-200-S500-R
+Joint Dynamixel ID : 3, Model Name : PRO-PLUS-PH54-100-S500-R
+Joint Dynamixel ID : 4, Model Name : PRO-PLUS-PH54-100-S500-R
+Joint Dynamixel ID : 5, Model Name : PRO-PLUS-PH42-020-S300-R
+Joint Dynamixel ID : 6, Model Name : PRO-PLUS-PH42-020-S300-R
 [INFO] Succeeded to Initialise OpenManipulator-PRO Controller
 ```
 
 {% capture notice_01 %}
 **TIP**:  
 - If DYNAMIXEL aren't recoginized, please check firmware with ROBOTIS software ([R+ Manager 2.0](/docs/en/software/rplus2/manager/) or [DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/#firmware-update))
-- If you would like to change Dynamixel ID, please check [`open_manipulator_pro.cpp`](https://github.com/ROBOTIS-GIT/open_manipulator_pro/blob/ros2/open_manipulator_pro_libs/src/open_manipulator_pro.cpp) in the open_manipulator_pro_lib folder. The default ID is **11, 12, 13, 14 ,15 and 16** for joints.
+- If you would like to change DYNAMIXEL ID, please check [`open_manipulator_pro.cpp`](https://github.com/ROBOTIS-GIT/open_manipulator_pro/blob/ros2/open_manipulator_pro_libs/src/open_manipulator_pro.cpp) in the open_manipulator_pro_lib folder. The default ID is **11, 12, 13, 14 ,15 and 16** for joints.
 {% endcapture %}
 <div class="notice--success">{{ notice_01 | markdownify }}</div>
 
-**NOTE**: OpenMANIPULATOR-PRO controller is compatible with [Protocol 2.0](/docs/en/dxl/protocol2/). [Protocol 1.0](/docs/en/dxl/protocol1/) doesn't support SyncRead instructions that access to multiple DYNAMIXEL simultaneously. Protocol 2.0 supports `MX 2.0`, `X`, `Pro`, `Pro +` series, but it does not support `AX`, `RX` and `EX`.  
+**NOTE**: OpenMANIPULATOR-PRO controller is compatible with [Protocol 2.0](/docs/en/dxl/protocol2/). [Protocol 1.0](/docs/en/dxl/protocol1/) doesn't support SyncRead instructions that access to multiple DYNAMIXEL's simultaneously. Protocol 2.0 supports `MX 2.0`, `X`, `Pro`, `Pro +` series, but it does not support `AX`, `RX` and `EX`.  
 {: .notice--info}
 
 ## [Check Setting](#check-setting)

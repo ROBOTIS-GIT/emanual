@@ -44,8 +44,8 @@ Please refer to the [`App Setting`](#app-setting) section for Server/Client sett
 ### Assembly Check using the App
 Select `Setting` option, then use `Actuator Test` feature to check the assembly. Once your smart device and ROBOTIS MINI are connected, the image of ROBOTIS MINI on the right will appear.
 
-Tap on each ID while Bluetooth is connected. If there is no problems in the assembly, the Dynamixel LED will blink in red, green, then blue.
+Tap on each ID while Bluetooth is connected. If there is no problems in the assembly, the DYNAMIXEL LED will blink in red, green, then blue.
 
-If you tap on an ID but the wrong Dynamixel LED lights up in the actual robot, there is an assembly problem. In this case, change the ID, or reassemble the joint by switching with the correct Dynamixel.
+If you tap on an ID but the wrong DYNAMIXEL LED lights up in the actual robot, there is an assembly problem. In this case, change the ID, or reassemble the joint by switching with the correct DYNAMIXEL.
 
 ![](/assets/images/sw/mobile/mini_app_010.jpg)

@@ -74,7 +74,7 @@ Recommended Component Specifications
    ![](/assets/images/platform/thormang3/pc_power_supply.jpg)
 
 3. Power Supply for Actuators
- - Usage : Supplies power to Dynamixel when operating THORMANG3 with an external power source.
+ - Usage : Supplies power to DYNAMIXEL when operating THORMANG3 with an external power source.
  - Requirements : 0 ~ 30V / 100A (at least)
  - Recommended product : Instek PSW 30-108 Multi-Range DC Power Supply  
    ![](/assets/images/platform/thormang3/actuator_power_supply.jpg)
@@ -97,7 +97,7 @@ Recommended Component Specifications
 |     Feature     |                                                                                Description                                                                                |
 |:---------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 |       DOF       |                                                                                    29                                                                                     |
-|    Actuator     |                                   200W ([H54P-200-S500-R]) x 10 <br /> 100W ([H54P-100-S500-R]) x 11 <br /> 20W ([H42P-020-S300-R]) x 8                                   |
+|    Actuator     |                                   200W ([PH54-200-S500-R]) x 10 <br /> 100W ([PH54-100-S500-R]) x 11 <br /> 20W ([PH42-020-S300-R]) x 8                                   |
 |    Computer     |                                             Intel® NUC with Intel® Core™ i5 Processor<br />(DDR4 RAM 8GB / M.2 SSD 128GB) x2                                              |
 | Wireless router |                                                                            Dlink DIR-806A x 1                                                                             |
 |     Sensor      | Logitech C920 HD Camera x 1<br />Intel Realsense(Option) x 1<br />Hokuyo UTM-30LX-EW(Option) x 1<br />F/T: ATi Mini58-SI-2800-120 x 2<br />IMU: MicroSrain 3DM-GX4-25 x 1 |
@@ -127,6 +127,6 @@ ROBOTIS is not responsible for any damages or losses resulting from any accident
 [thormang3_stp.zip]: http://support.robotis.com/en/baggage_files/thormang3/thormang3_stp.zip
 [sim_for_thormang3_stl.zip]: http://support.robotis.com/en/baggage_files/thormang3/sim_for_thormang3_stl.zip
 [DYNAMIXEL PRO+]: /docs/en/dxl/pro_plus/
-[H54P-200-S500-R]: /docs/en/dxl/pro_plus/h54p-200-s500-r/
-[H54P-100-S500-R]: /docs/en/dxl/pro_plus/h54p-100-s500-r/
-[H42P-020-S300-R]: /docs/en/dxl/pro_plus/h42p-020-s300-r/
+[PH54-200-S500-R]: /docs/en/dxl/pro_plus/ph54-200-s500-r/
+[PH54-100-S500-R]: /docs/en/dxl/pro_plus/ph54-100-s500-r/
+[PH42-020-S300-R]: /docs/en/dxl/pro_plus/ph42-020-s300-r/

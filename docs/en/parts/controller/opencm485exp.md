@@ -24,7 +24,7 @@ sidebar:
 |   Input voltage   |         5 ~ 30V         |
 |       Power       | SMPS, LiPo, DXL PRO 24V |
 |   Power Switch    |            1            |
-|  Dynamixel Port   |   4Pin x 5, 3Pin x 5    |
+|  DYNAMIXEL Port   |   4Pin x 5, 3Pin x 5    |
 |      Button       |            2            |
 |        LED        |            5            |
 |       Size        |     68 mm X 66.5 mm     |
@@ -38,14 +38,14 @@ sidebar:
 ![](/assets/images/parts/controller/opencm904/opencm485exp_01.jpg)
 
 1. **SMPS DC Connector** : For using SMPS DC Adapter to supply power to OpenCM 485 EXP board.
-2. **DXL Pro Power Connector** : Power connector for Dynamixel Pro (24V).
+2. **DXL Pro Power Connector** : Power connector for DYNAMIXEL Pro (24V).
 3. **Li-Po battery Connector** : Connector for 11.1V Li-Po battery(LBS-10).
-4. **Dynamixel TTL 3 -Pin Bus** : Used to connect 3-Pin Cables(Dynamixel TTL Bus) and for daisy chaining Dynamixels.
+4. **DYNAMIXEL TTL 3 -Pin Bus** : Used to connect 3-Pin Cables(DYNAMIXEL TTL Bus) and for daisy chaining DYNAMIXEL's.
 5. **User Button** : Function of these buttons can be assigned by the user.
 6. **User LED** : LED that can be controlled by the user.
 7. **I/O header** : Header pins used to mount OpenCM9.04(2.54mm pitch).
-8. **Dynamixel 485 4-Pin Bus** : Used to connect 4-Pin Cables(Dynamixel TTL Bus) and for daisy chaining Dynamixels.
-9. **Power Switch** : Switch that powers the board and Dynamixel. Note: Does not disconnect the power received via USB cable.
+8. **DYNAMIXEL 485 4-Pin Bus** : Used to connect 4-Pin Cables(DYNAMIXEL TTL Bus) and for daisy chaining DYNAMIXEL's.
+9. **Power Switch** : Switch that powers the board and DYNAMIXEL. Note: Does not disconnect the power received via USB cable.
 10. **JP1 Jumper** : Jumper that determines whether the power inputted onto OpenCM 485 EXP will be supplied to OpenCM9.04 board or not.
 
 {% include en/dxl/pinout_warning.md %}
@@ -67,7 +67,7 @@ sidebar:
 
     ![](/assets/images/parts/controller/opencm904/opencm485exp_04.jpg)
 
-4. Connect Dynamixel and 12V SMPS adapter onto OpenCM 485 EXP board.
+4. Connect DYNAMIXEL and 12V SMPS adapter onto OpenCM 485 EXP board.
 
     ![](/assets/images/parts/controller/opencm904/opencm485exp_05.jpg)
 
@@ -81,9 +81,9 @@ OpenCM 485 EXP supplies 5V from OpenCM9.04 as default. JP1 can be used to determ
 
 > OpenCM 485 EXP Power Connection
 
-OpenCM 485 EXP’s Dynamixel 485 bus operates as a Dynamixel bus using OpenCM9.04’s USART3(Serial3).
+OpenCM 485 EXP’s DYNAMIXEL 485 bus operates as DYNAMIXEL bus using OpenCM9.04’s USART3(Serial3).
 
-**NOTE** : OpenCM9.04’s Dynamixel TTL BUS is connected to USART1(Serial1).
+**NOTE** : OpenCM9.04’s DYNAMIXEL TTL BUS is connected to USART1(Serial1).
 {: .notice}
 
 ![](/assets/images/parts/controller/opencm904/opencm485exp_07.gif)
@@ -99,10 +99,10 @@ In order to use OpenCM 485 EXP board with OpenCM9.04, please use Arduino IDE.
 
 2. OpenCM 485 EXP’s 485 Bus sends and receives communication packets via OpenCM9.04’s Serial3(USART3).  
 
-    - In case of programming with DynamixelSDK, please set Serial3 port as shown below.
+    - In case of programming with DYNAMIXEL SDK, please set Serial3 port as shown below.
 
     ```cpp
-    #include <DynamixelSDK.h>
+    #include <DYNAMIXEL SDK.h>
 
     #define DEVICENAME      "3"   //Use Serial3 port
 
@@ -110,15 +110,15 @@ In order to use OpenCM 485 EXP board with OpenCM9.04, please use Arduino IDE.
     portHandler->openPort();
     ```
 
-    - In case of programming with DynamixelWorkbench, please set Serial3 port as shown below.
+    - In case of programming with DYNAMIXELWorkbench, please set Serial3 port as shown below.
 
     ```cpp
-    #include <DynamixelWorkbench.h>
+    #include <DYNAMIXELWorkbench.h>
 
     #define DEVICENAME      "3"   //Use Serial3 port
     #define BAUDRATE        57600
 
-    DynamixelWorkbench dxl_wb;
+    DYNAMIXELWorkbench dxl_wb;
     dxl_wb.begin(DEVICE_NAME, BAUDRATE);
     ```
 
@@ -127,13 +127,13 @@ In order to use OpenCM 485 EXP board with OpenCM9.04, please use Arduino IDE.
 OpenCM 485 EXP board has 2 buttons and 3 LED’s that are connected to OpenCM9.04 I/O pins.  
 The OpenCM9.04 I/O pin numbers for the buttons and LED’s are indicated below.
 
-||OpenCM9.04 I/O|
-|:---:|:---:|
-|Button1|16|
-|Button2|17|
-|LED1|18|
-|LED2|19|
-|LED3|20|
+|         | OpenCM9.04 I/O |
+|:-------:|:--------------:|
+| Button1 |       16       |
+| Button2 |       17       |
+|  LED1   |       18       |
+|  LED2   |       19       |
+|  LED3   |       20       |
 
 ![](/assets/images/parts/controller/opencm904/opencm485exp_11.jpg)
 

@@ -39,7 +39,7 @@ Please refer to [CW/CCW Angle Limit](#cwccw-angle-limit6-8) for configuring Oper
 
 {% if page.product_group=='dxl_x540' or page.product_group=='dxl_ex' or page.ref=='mx-106-2' or page.ref=='mx-106' %}
 #### Dual Mode
-Dual Mode is intended to combine two DYNAMIXELs into a single joint to enhance the performance.  
+Dual Mode is intended to combine two DYNAMIXEL into a single joint to enhance the performance.  
 In order to use Dual Mode, Slave DYNAMIXEL should be connected to Master DYNAMIXEL with the Sync Cable.  
 
 Please note that the Slave DYNAMIXEL is directly controlled only by the PWM signal from the Master DYNAMIXEL through the Sync Cable.  
@@ -57,12 +57,12 @@ The twisted sync cable will actuate the Slave DYNAMIXEL to the opposite directio
 
 |     Sync Cable     | Description                                                                                                                                                |
 |:------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Regular Sync Cable | Slave DYNAMIXEL is controlled by the `PWM Signal` from the Master DYNAMIXEL.<br>Master and Slave DYNAMIXELs rotate in the **same direction**.              |
-| Twisted Sync Cable | Slave DYNAMIXEL is controlled by the `Inverted PWM Signal` from the Master DYNAMIXEL.<br>Master and Slave DYNAMIXELs rotate in the **opposite direction**. |
+| Regular Sync Cable | Slave DYNAMIXEL is controlled by the `PWM Signal` from the Master DYNAMIXEL.<br>Master and Slave DYNAMIXEL rotate in the **same direction**.              |
+| Twisted Sync Cable | Slave DYNAMIXEL is controlled by the `Inverted PWM Signal` from the Master DYNAMIXEL.<br>Master and Slave DYNAMIXEL rotate in the **opposite direction**. |
 
 {% capture dual_frame %}
-**CAUTION** : If Master and Slave are not physically connected by frame, both DYNAMIXELs may not perfectly synchronized due to the load applied on each DYNAMIXEL.  
-Please use appropriate frame to connect DYNAMIXELs in Dual Mode.
+**CAUTION** : If Master and Slave are not physically connected by frame, both DYNAMIXEL may not perfectly synchronized due to the load applied on each DYNAMIXEL.  
+Please use appropriate frame to connect DYNAMIXEL in Dual Mode.
 {% if page.product_group=='dxl_x540' %}
 ![](/assets/images/dxl/x/x-series_dual_joint_frame.png)
 {% else %}

@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/software/dynamixel/dynamixel_sdk/api_reference/c/c_groupsyncwrite/
 sidebar:
-  title: DynamixelSDK
+  title: DYNAMIXEL SDK
   nav: "dynamixel_sdk"
 ---
 
@@ -37,7 +37,7 @@ sidebar:
 | **[groupSyncWriteRemoveParam](#groupsyncwrite_removeparam)** | Removes parameter on the storage                  |
 | **[groupSyncWriteChangeParam](#groupsyncwrite_changeparam)** | Changes parameter on the storage                  |
 | **[groupSyncWriteClearParam](#groupsyncwrite_clearparam)**   | Clears parameter storage                          |
-| **[groupSyncWriteTxPacket](#groupsyncwrite_txpacket)**       | Transmits packet to the number of Dynamixels      |
+| **[groupSyncWriteTxPacket](#groupsyncwrite_txpacket)**       | Transmits packet to the number of DYNAMIXEL's      |
 
 
 
@@ -74,13 +74,13 @@ uint8_t groupSyncWriteAddParam(int group_num, uint8_t id, uint32_t data, uint16_
 | Parameters   | Description       |
 |:-------------|:------------------|
 | group_num    | Group number      |
-| id           | Dynamixel ID      |
+| id           | DYNAMIXEL ID      |
 | data         | Data for write    |
 | input_length | Input data length |
 
 - Detailed Description
 
-   This function pushes `id` to the Dynamixel ID list, and initializes #`group_num` parameter storage by adding `input_length` bytes `data`. The function deals with 1, 2 or 4 byte data only. The function returns false when the length of input data exceeds parameter or wrong length, or returns true.
+   This function pushes `id` to the DYNAMIXEL ID list, and initializes #`group_num` parameter storage by adding `input_length` bytes `data`. The function deals with 1, 2 or 4 byte data only. The function returns false when the length of input data exceeds parameter or wrong length, or returns true.
 
 
 ##### groupSyncWriteRemoveParam
@@ -92,11 +92,11 @@ void groupSyncWriteRemoveParam(int group_num, uint8_t id)
 | Parameters | Description  |
 |:-----------|:-------------|
 | group_num  | Group number |
-| id         | Dynamixel ID |
+| id         | DYNAMIXEL ID |
 
 - Detailed Description
 
-   This function removes `id` and its data for write in the #`group_num` Dynamixel ID list. The function returns false when no data is in the parameter storage, or returns true.
+   This function removes `id` and its data for write in the #`group_num` DYNAMIXEL ID list. The function returns false when no data is in the parameter storage, or returns true.
 
 
 ##### groupSyncWriteChangeParam
@@ -108,7 +108,7 @@ uint8_t groupSyncWriteChangeParam(int group_num, uint8_t id, uint32_t data, uint
 | Parameters   | Description                |
 |:-------------|:---------------------------|
 | group_num    | Group number               |
-| id           | Dynamixel ID               |
+| id           | DYNAMIXEL ID               |
 | data         | Data for write             |
 | input_length | Input data length          |
 | data_pos     | Data position in the array |
@@ -129,7 +129,7 @@ void groupSyncWriteClearParam(int group_num)
 
 - Detailed Description
 
-   This function clears #`group_num` Dynamixel ID list.
+   This function clears #`group_num` DYNAMIXEL ID list.
 
 
 ##### groupSyncWriteTxPacket

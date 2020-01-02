@@ -75,9 +75,9 @@ The field that defines the type of command.
 
 # [Status Packet](#status-packet)
 
-|Header1|Header2|Header3|Reserved|Packet ID|Length1|Length2|Instruction|ERR|PARAM|PARAM|PARAM|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|ID|Len_L|Len_H|Instruction|Error|Param 1|...|Param N|CRC_L|CRC_H|
+| Header1 | Header2 | Header3 | Reserved | Packet ID | Length1 | Length2 | Instruction |  ERR  |  PARAM  | PARAM |  PARAM  | CRC1  | CRC2  |
+|:-------:|:-------:|:-------:|:--------:|:---------:|:-------:|:-------:|:-----------:|:-----:|:-------:|:-----:|:-------:|:-----:|:-----:|
+|  0xFF   |  0xFF   |  0xFD   |   0x00   |    ID     |  Len_L  |  Len_H  | Instruction | Error | Param 1 |  ...  | Param N | CRC_L | CRC_H |
 
 ## Instruction
 Instruction of the Status Packet is designated to 0x55 (Status)
@@ -85,22 +85,22 @@ Instruction of the Status Packet is designated to 0x55 (Status)
 ## [Error](#error)
 The field that indicates the processing result of Instruction Packet
 
-|Bit 7|Bit 6 ~ Bit 0|
-|:---:|:---:|
-|Alert|Error Number|
+| Bit 7 | Bit 6 ~ Bit 0 |
+|:-----:|:-------------:|
+| Alert | Error Number  |
 
   - Alert : When there has been a problem in the Device, this field is set as 1. Checking the Hardware error status value of the Control Table can indicate the cause of the problem.
   - Error Number : When there has been an Error in the processing of the Instruction Packet.
 
-|Value|Error            |Description|
-|:---:|:---:            |:---------:|
-|0x01|Result Fail       |Failed to process the sent Instruction Packet|
-|0x02|Instruction Error |Undefined Instruction has been used<br />Action has been used without Reg Write|
-|0x03|CRC Error         |CRC of the sent Packet does not match|
-|0x04|Data Range Error  |Data to be written in the corresponding Address is outside the range of the minimum/maximum value|
-|0x05|Data Length Error |Attempt to write Data that is shorter than the data length of the corresponding Address<br />(ex: when you attempt to only use 2 bytes of a item that has been defined as 4 bytes)|
-|0x06|Data Limit Error  |Data to be written in the corresponding Address is outside of the Limit value|
-|0x07|Access Errer      |Attempt to write a value in an Address that is Read Only or has not been defined<br />Attempt to read a value in an Address that is Write Only or has not been defined<br />Attempt to write a value in the ROM domain while in a state of Torque Enable(ROM Lock)|
+| Value |       Error       |                                                                                                                            Description                                                                                                                             |
+|:-----:|:-----------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| 0x01  |    Result Fail    |                                                                                                           Failed to process the sent Instruction Packet                                                                                                            |
+| 0x02  | Instruction Error |                                                                                          Undefined Instruction has been used<br />Action has been used without Reg Write                                                                                           |
+| 0x03  |     CRC Error     |                                                                                                               CRC of the sent Packet does not match                                                                                                                |
+| 0x04  | Data Range Error  |                                                                                 Data to be written in the corresponding Address is outside the range of the minimum/maximum value                                                                                  |
+| 0x05  | Data Length Error |                                         Attempt to write Data that is shorter than the data length of the corresponding Address<br />(ex: when you attempt to only use 2 bytes of a item that has been defined as 4 bytes)                                         |
+| 0x06  | Data Limit Error  |                                                                                           Data to be written in the corresponding Address is outside of the Limit value                                                                                            |
+| 0x07  |   Access Errer    | Attempt to write a value in an Address that is Read Only or has not been defined<br />Attempt to read a value in an Address that is Write Only or has not been defined<br />Attempt to write a value in the ROM domain while in a state of Torque Enable(ROM Lock) |
 
 ## Parameter
 
@@ -137,11 +137,11 @@ The field that indicates the processing result of Instruction Packet
 **NOTE** : Status Packet is received from each Device.
 {: .notice}
 
-|Status Packet|Description|
-|:---:|:---:|
-|Parameter 1| Model Number LSB |
-|Parameter 2|Model Number MSB|
-|Parameter 3|Version of Firmware|
+| Status Packet |     Description     |
+|:-------------:|:-------------------:|
+|  Parameter 1  |  Model Number LSB   |
+|  Parameter 2  |  Model Number MSB   |
+|  Parameter 3  | Version of Firmware |
 
 ### Example 1
 #### Conditions
@@ -150,15 +150,15 @@ The field that indicates the processing result of Instruction Packet
 
 #### Ping Instruction Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0x01|0x03|0x00|0x01|0x19|0x4E|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x03 | 0x00 | 0x01 | 0x19 | 0x4E |
 
 #### ID 1 Status Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|ERR|PARAM1|PARAM2|PARAM3|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0x01|0x07|0x00|0x55|0x00|0x06|0x04|0x26|0x65|0x5D|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | PARAM1 | PARAM2 | PARAM3 | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:------:|:------:|:------:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x07 | 0x00 | 0x55 | 0x00 |  0x06  |  0x04  |  0x26  | 0x65 | 0x5D |
 
 ### Example 2
 #### Conditions
@@ -168,21 +168,21 @@ The field that indicates the processing result of Instruction Packet
 
 #### Ping Instruction Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0xFE|0x03|0x00|0x01|0x31|0x42|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0xFE | 0x03 | 0x00 | 0x01 | 0x31 | 0x42 |
 
 #### ID 1 Status Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|ERR|PARAM1|PARAM2|PARAM3|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0x01|0x07|0x00|0x55|0x00|0x06|0x04|0x26|0x65|0x5D|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | PARAM1 | PARAM2 | PARAM3 | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:------:|:------:|:------:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x07 | 0x00 | 0x55 | 0x00 |  0x06  |  0x04  |  0x26  | 0x65 | 0x5D |
 
 #### ID 2 Status Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|ERR|PARAM1|PARAM2|PARAM3|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0x02|0x07|0x00|0x55|0x00|0x06|0x04|0x26|0x6F|0x6D|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | PARAM1 | PARAM2 | PARAM3 | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:------:|:------:|:------:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x02 | 0x07 | 0x00 | 0x55 | 0x00 |  0x06  |  0x04  |  0x26  | 0x6F | 0x6D |
 
 ## [Read](#read)
 
@@ -192,19 +192,19 @@ The field that indicates the processing result of Instruction Packet
 
 ### Packet Parameters
 
-|Instruction Packet|Description|
-|:---:|:---:|
-|Parameter 1|Low-order byte from the starting address|
-|Parameter 2|High-order byte from the starting address|
-|Parameter 3|Low-order byte from the data length (X)|
-|Parameter 4|High-order byte from the data length (X)|
+| Instruction Packet |                Description                |
+|:------------------:|:-----------------------------------------:|
+|    Parameter 1     | Low-order byte from the starting address  |
+|    Parameter 2     | High-order byte from the starting address |
+|    Parameter 3     |  Low-order byte from the data length (X)  |
+|    Parameter 4     | High-order byte from the data length (X)  |
 
-|Status Packet|Description|
-|:---:|:---:|
-|Parameter 1|First Byte|
-|Parameter 2|Second Byte|
-|...|...|
-|Parameter X|X-th Byte|
+| Status Packet | Description |
+|:-------------:|:-----------:|
+|  Parameter 1  | First Byte  |
+|  Parameter 2  | Second Byte |
+|      ...      |     ...     |
+|  Parameter X  |  X-th Byte  |
 
 ### Example
 
@@ -213,15 +213,15 @@ The field that indicates the processing result of Instruction Packet
 
 #### Read Instruction Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|PARAM1|PARAM2|PARAM3|PARAM4|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0x01|0x07|0x00|0x02|0x84|0x00|0x04|0x00|0x1D|0x15|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | PARAM1 | PARAM2 | PARAM3 | PARAM4 | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:------:|:------:|:------:|:------:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x07 | 0x00 | 0x02 |  0x84  |  0x00  |  0x04  |  0x00  | 0x1D | 0x15 |
 
 #### ID 1 Status Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|ERR|PARAM1|PARAM2|PARAM3|PARAM4|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0x01|0x08|0x00|0x55|0x00|0xA6|0x00|0x00|0x00|0x8C|0xC0|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | PARAM1 | PARAM2 | PARAM3 | PARAM4 | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:------:|:------:|:------:|:------:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x08 | 0x00 | 0x55 | 0x00 |  0xA6  |  0x00  |  0x00  |  0x00  | 0x8C | 0xC0 |
 
 ## [Write](#write)
 
@@ -231,14 +231,14 @@ The field that indicates the processing result of Instruction Packet
 
 ### Packet Parameters
 
-|Instruction Packet|Description|
-|:---:|:---:|
-|Parameter 1|Low-order byte from the starting address|
-|Parameter 2|High-order byte from the starting address|
-|Parameter 2+1|First Byte|
-|Parameter 2+2|Second Byte|
-|...|...|
-|Parameter 2+X|X-th Byte|
+| Instruction Packet |                Description                |
+|:------------------:|:-----------------------------------------:|
+|    Parameter 1     | Low-order byte from the starting address  |
+|    Parameter 2     | High-order byte from the starting address |
+|   Parameter 2+1    |                First Byte                 |
+|   Parameter 2+2    |                Second Byte                |
+|        ...         |                    ...                    |
+|   Parameter 2+X    |                 X-th Byte                 |
 
 ### Example
 
@@ -247,15 +247,15 @@ The field that indicates the processing result of Instruction Packet
 
 #### Write Instruction Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|P1|P2|P3|P4|P5|P6|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0x01|0x09|0x00|0x03|0x74|0x00|0x00|0x02|0x00|0x00|0xCA|0x89|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  |  P2  |  P3  |  P4  |  P5  |  P6  | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x09 | 0x00 | 0x03 | 0x74 | 0x00 | 0x00 | 0x02 | 0x00 | 0x00 | 0xCA | 0x89 |
 
 #### ID 1 Status Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|ERR|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0x01|0x04|0x00|0x55|0x00|0xA1|0x0C|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | CRC1|CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:---------:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1|0x0C |
 
 ## [Reg Write](#reg-write)
 
@@ -267,14 +267,14 @@ The field that indicates the processing result of Instruction Packet
 
 ### Packet Parameters
 
-|Instruction Packet|Description|
-|:---:|:---:|
-|Parameter 1|Low-order byte from the starting address|
-|Parameter 2|High-order byte from the starting address|
-|Parameter 2+1|First Byte|
-|Parameter 2+2|Second Byte|
-|...|...|
-|Parameter 2+X|X-th Byte|
+| Instruction Packet |                Description                |
+|:------------------:|:-----------------------------------------:|
+|    Parameter 1     | Low-order byte from the starting address  |
+|    Parameter 2     | High-order byte from the starting address |
+|   Parameter 2+1    |                First Byte                 |
+|   Parameter 2+2    |                Second Byte                |
+|        ...         |                    ...                    |
+|   Parameter 2+X    |                 X-th Byte                 |
 
 ### Example
 
@@ -283,15 +283,15 @@ The field that indicates the processing result of Instruction Packet
 
 #### Reg Write Instruction Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|P1|P2|P3|P4|P5|P6|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0x01|0x09|0x00|0x04|0x68|0x00|0xC8|0x00|0x00|0x00|0xAE|0x8E|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  |  P2  |  P3  |  P4  |  P5  |  P6  | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x09 | 0x00 | 0x04 | 0x68 | 0x00 | 0xC8 | 0x00 | 0x00 | 0x00 | 0xAE | 0x8E |
 
 #### ID 1 Status Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|ERR|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0x01|0x04|0x00|0x55|0x00|0xA1|0x0C|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1 | 0x0C |
 
 ## [Action](#action)
 
@@ -307,15 +307,15 @@ The field that indicates the processing result of Instruction Packet
 
 #### Action Instruction Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0x01|0x03|0x00|0x05|0x02|0xCE|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x03 | 0x00 | 0x05 | 0x02 | 0xCE |
 
 #### ID 1 Status Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|ERR|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0x01|0x04|0x00|0x55|0x00|0xA1|0x0C|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1 | 0x0C |
 
 ## [Factory Reset](#factory-reset)
 
@@ -326,9 +326,9 @@ The field that indicates the processing result of Instruction Packet
 
 ### Parameters
 
-|Instruction Packet| Description|
-|:---:|:---|
-|Parameter 1|0xFF : Reset all<br />0x01 : Reset all except ID<br />0x02 : Reset all except ID and Baudrate|
+| Instruction Packet | Description                                                                                   |
+|:------------------:|:----------------------------------------------------------------------------------------------|
+|    Parameter 1     | 0xFF : Reset all<br />0x01 : Reset all except ID<br />0x02 : Reset all except ID and Baudrate |
 
 ### Example
 
@@ -337,15 +337,15 @@ The field that indicates the processing result of Instruction Packet
 
 #### Factory Reset Instruction Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|P1|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0x01|0x04|0x00|0x06|0x01|0xA1|0xE6|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x04 | 0x00 | 0x06 | 0x01 | 0xA1 | 0xE6 |
 
 #### ID 1 Status Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|P1|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0x01|0x04|0x00|0x55|0x00|0xA1|0x0C|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1 | 0x0C |
 
 ## [Reboot](#reboot)
 
@@ -359,27 +359,27 @@ The field that indicates the processing result of Instruction Packet
 
 #### Reboot Instruction Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0x01|0x03|0x00|0x08|0x2F|0x4E|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x03 | 0x00 | 0x08 | 0x2F | 0x4E |
 
 #### ID 1 Status Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|P1|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0x01|0x04|0x00|0x55|0x00|0xA1|0x0C|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1 | 0x0C |
 
 ## [Clear](#clear)
 
 ### Description
-- This instruction resets certain information of Dynamixel
-- Applied Products : MX with Protocol 2.0 (Firmware v42 or above), Dynamixel X-series (Firmware v42 or above)
+- This instruction resets certain information of DYNAMIXEL
+- Applied Products : MX with Protocol 2.0 (Firmware v42 or above), DYNAMIXEL X-series (Firmware v42 or above)
 
 ### Parameters
 
 |  P1  | P2 ~ P5                                 | Description                                                                                                                                                                                                  |
-|:----:|:----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0x01 | Fixed Values<br />(0x44 0x58 0x4C 0x22) | Resets multi turn information to 1st rotation.<br />This can be only applied when Dynamixel is not operating<br />During an operation, Result Fail(0x01) will be set in the Error field of the Status Packet |
+|:----:|:----------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 0x01 | Fixed Values<br />(0x44 0x58 0x4C 0x22) | Resets multi turn information to 1st rotation.<br />This can be only applied when DYNAMIXEL is not operating<br />During an operation, Result Fail(0x01) will be set in the Error field of the Status Packet |
 | 0x02 | -                                       | Reserved                                                                                                                                                                                                     |
 | ...  | -                                       | Reserved                                                                                                                                                                                                     |
 | 0xFF | -                                       | Reserved                                                                                                                                                                                                     |
@@ -411,26 +411,26 @@ The field that indicates the processing result of Instruction Packet
 
 ### Parameters
 
-|Instruction Packet|Description|
-|:---:|:---:|
-|Parameter 1|Low-order byte from the starting address|
-|Parameter 2|High-order byte from the starting address|
-|Parameter 3|Low-order byte from the data length(X)|
-|Parameter 4|High-order byte from the data length(X)|
-|Parameter 4+1|ID of the 1st Device|
-|Parameter 4+2|ID of the 2nd Device|
-|...|...|
-|Parameter 4+X|ID of the X-th Device|
+| Instruction Packet |                Description                |
+|:------------------:|:-----------------------------------------:|
+|    Parameter 1     | Low-order byte from the starting address  |
+|    Parameter 2     | High-order byte from the starting address |
+|    Parameter 3     |  Low-order byte from the data length(X)   |
+|    Parameter 4     |  High-order byte from the data length(X)  |
+|   Parameter 4+1    |           ID of the 1st Device            |
+|   Parameter 4+2    |           ID of the 2nd Device            |
+|        ...         |                    ...                    |
+|   Parameter 4+X    |           ID of the X-th Device           |
 
 **NOTE** : Status Packet is received from each Device.
 {: .notice}
 
-|Status Packet|Description|
-|:---:|:---:|
-|Parameter 1|Frist Byte|
-|Parameter 2|Second Byte|
-|...|...|
-|Parameter X|X-th Byte|
+| Status Packet | Description |
+|:-------------:|:-----------:|
+|  Parameter 1  | Frist Byte  |
+|  Parameter 2  | Second Byte |
+|      ...      |     ...     |
+|  Parameter X  |  X-th Byte  |
 
 ### Example
 
@@ -440,21 +440,21 @@ The field that indicates the processing result of Instruction Packet
 
 #### Sync Read Instruction Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|P1|P2|P3|P4|P5|P6|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0xFE|0x09|0x00|0x82|0x84|0x00|0x04|0x00|0x01|0x02|0xCE|0xFA|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  |  P2  |  P3  |  P4  |  P5  |  P6  | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0xFE | 0x09 | 0x00 | 0x82 | 0x84 | 0x00 | 0x04 | 0x00 | 0x01 | 0x02 | 0xCE | 0xFA |
 
 #### ID 1 Status Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|ERR|PARAM1|PARAM2|PARAM3|PARAM4|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0x01|0x08|0x00|0x55|0x00|0xA6|0x00|0x00|0x00|0x8C|0xC0|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | PARAM1 | PARAM2 | PARAM3 | PARAM4 | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:------:|:------:|:------:|:------:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x08 | 0x00 | 0x55 | 0x00 |  0xA6  |  0x00  |  0x00  |  0x00  | 0x8C | 0xC0 |
 
 #### ID 2 Status Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|ERR|PARAM1|PARAM2|PARAM3|PARAM4|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0x02|0x08|0x00|0x55|0x00|0x1F|0x08|0x00|0x00|0xBA|0xBE|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | PARAM1 | PARAM2 | PARAM3 | PARAM4 | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:------:|:------:|:------:|:------:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x02 | 0x08 | 0x00 | 0x55 | 0x00 |  0x1F  |  0x08  |  0x00  |  0x00  | 0xBA | 0xBE |
 
 ## [Sync Write](#sync-write)
 
@@ -466,23 +466,23 @@ The field that indicates the processing result of Instruction Packet
 
 ### Parameters
 
-|Instruction Packet|Description|
-|:---:|:---|
-|Parameter 1|Low-order byte from the starting address|
-|Parameter 2|High-order byte from the starting address|
-|Parameter 3|Low-order byte from the data length(X)|
-|Parameter 4|High-order byte from the data length(X)|
-|Parameter 5|[1st Device] ID|
-|Parameter 5+1|[1st Device] 1st Byte|
-|Parameter 5+2|[1st Device] 2nd Byte|
-|...|[1st Device]...|
-|Parameter 6+X|[2nd Device] X-th Byte|
-|Parameter 6|[2nd Device] ID|
-|Parameter 6+1|[2nd Device] 1st Byte|
-|Parameter 6+2|[2nd Device] 2nd Byte|
-|...|[2nd Device]...|
-|Parameter 6+X|[2nd Device] X-th Byte|
-|...|...|
+| Instruction Packet | Description                               |
+|:------------------:|:------------------------------------------|
+|    Parameter 1     | Low-order byte from the starting address  |
+|    Parameter 2     | High-order byte from the starting address |
+|    Parameter 3     | Low-order byte from the data length(X)    |
+|    Parameter 4     | High-order byte from the data length(X)   |
+|    Parameter 5     | [1st Device] ID                           |
+|   Parameter 5+1    | [1st Device] 1st Byte                     |
+|   Parameter 5+2    | [1st Device] 2nd Byte                     |
+|        ...         | [1st Device]...                           |
+|   Parameter 6+X    | [2nd Device] X-th Byte                    |
+|    Parameter 6     | [2nd Device] ID                           |
+|   Parameter 6+1    | [2nd Device] 1st Byte                     |
+|   Parameter 6+2    | [2nd Device] 2nd Byte                     |
+|        ...         | [2nd Device]...                           |
+|   Parameter 6+X    | [2nd Device] X-th Byte                    |
+|        ...         | ...                                       |
 
 ### Example
 
@@ -492,13 +492,13 @@ The field that indicates the processing result of Instruction Packet
 
 #### Sync Write Instruction Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|P1|P2|P3|P4|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0xFE|0x11|0x00|0x83|0x74|0x00|0x04|0x00|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  |  P2  |  P3  |  P4  |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0xFE | 0x11 | 0x00 | 0x83 | 0x74 | 0x00 | 0x04 | 0x00 |
 
-|P5|P6|P7|P8|P9|P10|P11|P12|P13|P14|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0x01|0x96|0x00|0x00|0x00|0x02|0xAA|0x00|0x00|0x00|0x82|0x87|
+|  P5  |  P6  |  P7  |  P8  |  P9  | P10  | P11  | P12  | P13  | P14  | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0x01 | 0x96 | 0x00 | 0x00 | 0x00 | 0x02 | 0xAA | 0x00 | 0x00 | 0x00 | 0x82 | 0x87 |
 
 ## [Bulk Read](#bulk-read)
 
@@ -511,29 +511,29 @@ The field that indicates the processing result of Instruction Packet
 
 ### Parameters
 
-|Instruction Packet|Description|
-|:---:|:---|
-|Parameter 1|[1st Device] ID|
-|Parameter 2|[1st Device] Low-order byte from the starting address|
-|Parameter 3|[1st Device] High-order byte from the starting address|
-|Parameter 4|[1st Device] Low-order byte from the data|
-|Parameter 5|[1st Device] High-order byte from the data|
-|Parameter 6|[2nd Device] ID|
-|Parameter 7|[2nd Device] Low-order byte from the starting address|
-|Parameter 8|[2nd Device] High-order byte from the starting address|
-|Parameter 9|[2nd Device] Low-order byte from the data|
-|Parameter 10|[2nd Device] High-order byte from the data|
-|...|...|
+| Instruction Packet | Description                                            |
+|:------------------:|:-------------------------------------------------------|
+|    Parameter 1     | [1st Device] ID                                        |
+|    Parameter 2     | [1st Device] Low-order byte from the starting address  |
+|    Parameter 3     | [1st Device] High-order byte from the starting address |
+|    Parameter 4     | [1st Device] Low-order byte from the data              |
+|    Parameter 5     | [1st Device] High-order byte from the data             |
+|    Parameter 6     | [2nd Device] ID                                        |
+|    Parameter 7     | [2nd Device] Low-order byte from the starting address  |
+|    Parameter 8     | [2nd Device] High-order byte from the starting address |
+|    Parameter 9     | [2nd Device] Low-order byte from the data              |
+|    Parameter 10    | [2nd Device] High-order byte from the data             |
+|        ...         | ...                                                    |
 
 **NOTE** : Status Packet is received from each Device.
 {: .notice}
 
-|Status Packet|Description|
-|:---:|:---:|
-|Parameter 1|1st Byte|
-|Parameter 2|2nd Byte|
-|...|...
-|Parameter X|X-th Byte|
+| Status Packet | Description |
+|:-------------:|:-----------:|
+|  Parameter 1  |  1st Byte   |
+|  Parameter 2  |  2nd Byte   |
+|      ...      |     ...     |
+|  Parameter X  |  X-th Byte  |
 
 ### Example
 
@@ -543,25 +543,25 @@ The field that indicates the processing result of Instruction Packet
 
 #### Bulk Read Instruction Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|P1|P2|P3|P4|P5|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0xFE|0x0D|0x00|0x92|0x01|0x90|0x00|0x02|0x00|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  |  P2  |  P3  |  P4  |  P5  |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0xFE | 0x0D | 0x00 | 0x92 | 0x01 | 0x90 | 0x00 | 0x02 | 0x00 |
 
-|P6|P7|P8|P9|P10|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0x02|0x92|0x00|0x01|0x00|0x1A|0x05|
+|  P6  |  P7  |  P8  |  P9  | P10  | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0x02 | 0x92 | 0x00 | 0x01 | 0x00 | 0x1A | 0x05 |
 
 #### ID 1 Status Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|ERR|PARAM1|PARAM2|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0x01|0x06|0x00|0x55|0x00|0x77|0x00|0xC3|0x69|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | PARAM1 | PARAM2 | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:------:|:------:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x06 | 0x00 | 0x55 | 0x00 |  0x77  |  0x00  | 0xC3 | 0x69 |
 
 #### ID 2 Status Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|ERR|PARAM1|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0x02|0x05|0x00|0x55|0x00|0x24|0x8B|0xA9|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | PARAM1 | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:------:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x02 | 0x05 | 0x00 | 0x55 | 0x00 |  0x24  | 0x8B | 0xA9 |
 
 ## [Bulk Write](#bulk-write)
 
@@ -574,27 +574,27 @@ The field that indicates the processing result of Instruction Packet
 
 ### Parameters
 
-|Instruction Packet|Description|
-|:---:|:---|
-|Parameter 1|[1st Device] ID|
-|Parameter 2|[1st Device] Low-order byte from the starting address|
-|Parameter 3|[1st Device] High-order byte from the starting address|
-|Parameter 4|[1st Device] Low-order byte from the data length(X)|
-|Parameter 5|[1st Device] High-order byte from the data length(X)|
-|Parameter 5+1|[1st Device] 1st Byte|
-|Parameter 5+2|[1st Device] 2nd Byte|
-|...|...|
-|Parameter 5+X|[1st Device] X-th Byte|
-|Parameter 6+X|[2nd Device] ID|
-|Parameter 7+X|[2nd Device] Low-order byte from the starting address|
-|Parameter 8+X|[2nd Device] High-order byte from the starting address|
-|Parameter 9+X|[2nd Device] Low-order byte from the data length(X)|
-|Parameter 10+X|[2nd Device] High-order byte from the data length(X)|
-|Parameter 10+X+1|[2nd Device] 1st Byte|
-|Parameter 10+X+2|[2nd Device] 2nd Byte|
-|...|...|
-|Parameter 10+X+Y|[2nd Device] Y-th Byte|
-|...|...|
+| Instruction Packet | Description                                            |
+|:------------------:|:-------------------------------------------------------|
+|    Parameter 1     | [1st Device] ID                                        |
+|    Parameter 2     | [1st Device] Low-order byte from the starting address  |
+|    Parameter 3     | [1st Device] High-order byte from the starting address |
+|    Parameter 4     | [1st Device] Low-order byte from the data length(X)    |
+|    Parameter 5     | [1st Device] High-order byte from the data length(X)   |
+|   Parameter 5+1    | [1st Device] 1st Byte                                  |
+|   Parameter 5+2    | [1st Device] 2nd Byte                                  |
+|        ...         | ...                                                    |
+|   Parameter 5+X    | [1st Device] X-th Byte                                 |
+|   Parameter 6+X    | [2nd Device] ID                                        |
+|   Parameter 7+X    | [2nd Device] Low-order byte from the starting address  |
+|   Parameter 8+X    | [2nd Device] High-order byte from the starting address |
+|   Parameter 9+X    | [2nd Device] Low-order byte from the data length(X)    |
+|   Parameter 10+X   | [2nd Device] High-order byte from the data length(X)   |
+|  Parameter 10+X+1  | [2nd Device] 1st Byte                                  |
+|  Parameter 10+X+2  | [2nd Device] 2nd Byte                                  |
+|        ...         | ...                                                    |
+|  Parameter 10+X+Y  | [2nd Device] Y-th Byte                                 |
+|        ...         | ...                                                    |
 
 ### Example
 
@@ -604,13 +604,13 @@ The field that indicates the processing result of Instruction Packet
 
 #### Bulk Write Instruction Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|P1|P2|P3|P4|P5|P6|P7|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0xFE|0x10|0x00|0x93|0x01|0x20|0x00|0x02|0x00|0xA0|0x00|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  |  P2  |  P3  |  P4  |  P5  |  P6  |  P7  |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0xFE | 0x10 | 0x00 | 0x93 | 0x01 | 0x20 | 0x00 | 0x02 | 0x00 | 0xA0 | 0x00 |
 
-|P8|P9|P10|P11|P12|P13|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0x02|0x1F|0x00|0x01|0x00|0x50|0xB7|0x68|
+|  P8  |  P9  | P10  | P11  | P12  | P13  | CRC1 | CRC2 |  |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|::|
+| 0x02 | 0x1F | 0x00 | 0x01 | 0x00 | 0x50 | 0xB7 | 0x68 |  |
 
 
 

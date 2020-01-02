@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/software/dynamixel/dynamixel_sdk/library_setup/java_macos/dummy_dummy_dummy
 sidebar:
-  title: DynamixelSDK
+  title: DYNAMIXEL SDK
   nav: "dynamixel_sdk"
 ---
 
@@ -75,9 +75,9 @@ sidebar:
 
 ### [Building and Running the Sample Code](#building-and-running-the-sample-code)
 
-The Dynamixel SDK example code for Java uses the library files(.dylib for Mac) built in C language.
+The DYNAMIXEL SDK example code for Java uses the library files(.dylib for Mac) built in C language.
 
-Each released Dynamixel SDK have latest library files in `[DynamixelSDK folder]/c/build/mac/libdxl_mac_c.dylib` which should be built by its own source code.
+Each released DYNAMIXEL SDK have latest library files in `[DynamixelSDK folder]/c/build/mac/libdxl_mac_c.dylib` which should be built by its own source code.
 
 #### Make Java Project
 

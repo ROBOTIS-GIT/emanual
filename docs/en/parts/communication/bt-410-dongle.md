@@ -185,7 +185,7 @@ How to check whether the BT-410 Dongle driver is installed correctly is as follo
 
 # [Install Driver Manually](#install-driver-manually)
 
-If you installed RoboPlus, FTDI Driver (USB2Dynamixel, USB Downloader (LN-101) driver, BT-410 Dongle) is installed together automatically. If you didn't install the RoboPlus yet, or if the driver is not installed appropriately, please install it manually according to following procedures.
+If you installed RoboPlus, FTDI Driver (USB2DYNAMIXEL, USB Downloader (LN-101) driver, BT-410 Dongle) is installed together automatically. If you didn't install the RoboPlus yet, or if the driver is not installed appropriately, please install it manually according to following procedures.
 {: .notice}
 
 1. Connect a device to PC. If the driver is not installed yet, Found New Hardware Wizard will be popped up. Install from a list or specific location (Advanced)(S) -> Next(N)

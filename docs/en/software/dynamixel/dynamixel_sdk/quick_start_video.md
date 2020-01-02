@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/software/dynamixel/dynamixel_sdk/quick_start_video/
 sidebar:
-  title: DynamixelSDK
+  title: DYNAMIXEL SDK
   nav: "dynamixel_sdk"
 ---
 
@@ -15,7 +15,7 @@ sidebar:
 
 # [Quick Start Video](#quick-start-video)
 
-* [Episode 1-Introduction to the Dynamixel SDK, the Dynamixel SDK Wiki, and the Issues Section](https://youtu.be/F-sXbIAM0jc)
+* [Episode 1-Introduction to the DYNAMIXEL SDK, the DYNAMIXEL SDK Wiki, and the Issues Section](https://youtu.be/F-sXbIAM0jc)
 
 * [Episode 2-Hardware Setup](https://youtu.be/RLnpps8eh6U)
 
@@ -42,7 +42,7 @@ sidebar:
 * [MATLAB Episode 3: ReadWrite MATLAB Example Multi-Port Control - Windows](https://youtu.be/eGG-RIVKtrs)
 
 
-## Episode 1-Introduction to the Dynamixel SDK, the Dynamixel SDK Wiki, and the Issues Section
+## Episode 1-Introduction to the DYNAMIXEL SDK, the DYNAMIXEL SDK Wiki, and the Issues Section
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/F-sXbIAM0jc" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 

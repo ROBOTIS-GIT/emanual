@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/software/dynamixel/dynamixel_sdk/sample_code/c_read_write_protocol_1_0/
 sidebar:
-  title: DynamixelSDK
+  title: DYNAMIXEL SDK
   nav: "dynamixel_sdk"
 ---
 
@@ -23,9 +23,9 @@ sidebar:
 
   This example writes Goal Position to Dynamixel and reads Present Position of Dynamixel until it stops moving. The functions that are related with the Read and the Write handle the number of items which are near each other in the Dynamixel control table, such as the goal position and the goal velocity.
 
-* Supported Dynamixels
+* Supported DYNAMIXEL
 
-  Protocol 1.0 Dynamixels
+  Protocol 1.0 DYNAMIXEL
 
 #### Sample code
 
@@ -58,7 +58,7 @@ sidebar:
 
   #include <stdlib.h>
   #include <stdio.h>
-  #include "dynamixel_sdk.h"                                   // Uses Dynamixel SDK library
+  #include "dynamixel_sdk.h"                                   // Uses DYNAMIXEL SDK library
 
   // Control table address
   #define ADDR_MX_TORQUE_ENABLE           24                  // Control table address is different in Dynamixel model
@@ -280,10 +280,10 @@ The function `abs()` is in the example code, and it needs `stdlib.h` to be inclu
 The example shows Dynamixel status in sequence by the function `printf()`. So here `stdio.h` is needed.
 
 ```c
-#include "dynamixel_sdk.h"                                   // Uses Dynamixel SDK library
+#include "dynamixel_sdk.h"                                   // Uses DYNAMIXEL SDK library
 ```
 
-All libraries of Dynamixel SDK are linked with the header file `dynamixel_sdk.h`.
+All libraries of DYNAMIXEL SDK are linked with the header file `dynamixel_sdk.h`.
 
 ```c
 // Control table address

@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/software/dynamixel/dynamixel_sdk/sample_code/c_broadcast_ping_protocol_2_0/
 sidebar:
-  title: DynamixelSDK
+  title: DYNAMIXEL SDK
   nav: "dynamixel_sdk"
 ---
 
@@ -24,7 +24,7 @@ sidebar:
 
 - Description
 
-  This example tries to ping all Dynamixels that are connected to the controller, and shows which Dynamixel is successfully connected. The example is commonly used to check for Dynamixel’s connection at once.
+  This example tries to ping all DYNAMIXEL that are connected to the controller, and shows which Dynamixel is successfully connected. The example is commonly used to check for Dynamixel’s connection at once.
 
 - Available Dynamixel
 
@@ -59,7 +59,7 @@ sidebar:
 #endif
 
 #include <stdio.h>
-#include "dynamixel_sdk.h"                                   // Uses Dynamixel SDK library
+#include "dynamixel_sdk.h"                                   // Uses DYNAMIXEL SDK library
 
 // Protocol version
 #define PROTOCOL_VERSION                2.0                 // See which protocol version is used in the Dynamixel
@@ -196,10 +196,10 @@ int main()
 > The example shows Dynamixel status in sequence by the function `printf()`. So here `stdio.h` is needed.
 
 ```c
-#include "dynamixel_sdk.h"                                   // Uses Dynamixel SDK library
+#include "dynamixel_sdk.h"                                   // Uses DYNAMIXEL SDK library
 ```
 
-> All libraries of Dynamixel SDK are linked with the header file `dynamixel_sdk.h`.
+> All libraries of DYNAMIXEL SDK are linked with the header file `dynamixel_sdk.h`.
 
 ```c
 // Protocol version
@@ -400,7 +400,7 @@ if ((dxl_comm_result = getLastTxRxResult(port_num, PROTOCOL_VERSION)) != COMM_SU
   printTxRxResult(PROTOCOL_VERSION, dxl_comm_result);
 ```
 
-> `broadcastPing()` function shows the connection between controller and each Dynamixels from ID 1 to ID 253 through #`port_num` port.
+> `broadcastPing()` function shows the connection between controller and each DYNAMIXEL from ID 1 to ID 253 through #`port_num` port.
 
 ```c
 // Close port

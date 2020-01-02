@@ -1,4 +1,4 @@
-Baud Rate determines serial communication speed between a controller and DYNAMIXELs.
+Baud Rate determines serial communication speed between a controller and DYNAMIXEL.
 Available value range is 0 ~ 254(0xFE), and below is the equation for BPS calculation.  
 **Baudrate(BPS) = 2,000,000 / (Value + 1)**
 

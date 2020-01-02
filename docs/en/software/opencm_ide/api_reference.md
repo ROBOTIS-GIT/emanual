@@ -2078,7 +2078,7 @@ lowByte(x)
 - The low byte’s value (this will be between 0 and 255).
  
 #### Example
-This example uses lowByte, highByte to send 1 byte (at a time) to the Goal position address on the Dynamixel control table.
+This example uses lowByte, highByte to send 1 byte (at a time) to the Goal position address on DYNAMIXEL control table.
  
 ```c
 Dynamixel Dxl(1);
@@ -2110,7 +2110,7 @@ highByte(x)
 - Second lowest byte in x
  
 #### Example
-This example uses lowByte, highByte to send 1 byte (at a time) to the Goal position address on the Dynamixel control table.
+This example uses lowByte, highByte to send 1 byte (at a time) to the Goal position address on DYNAMIXEL control table.
  
 ```c
 Dynamixel Dxl(1);

@@ -42,7 +42,7 @@ sidebar:
 |  ZIG-100 커넥터       | ZIG2Serial 에 ZIG-100 을 연결하기 위한 커넥터 입니다.  |
 |  ZIG-100 상태 표시 LED | ZIG-100 의 상태를 표시합니다.꺼져 있는 경우 : ZIG-100 이 연결되지 않았거나 설정 상태일 경우입니다.켜져 있는 경우 : 상대 ZIG-100 과 연결되어 통신 준비가 된 상태입니다.깜빡거리는 경우 : 상대 ZIG-100 을 찾지 못한 상태입니다. |
 |  리셋 스위치            | ZIG-100 을 재부팅 시킬 때 사용합니다.                |
-|  전원 커넥터            | ZIG2Serial 이 동작하기 위해서는 5V 전원이 필요합니다. 사용자는 이 커넥터를 이용해서 전원을 공급할 수 있습니다. USB2Dynamixel 에 연결하여 사용하는 경우는 별도 전원 공급이 필요 없습니다. |
+|  전원 커넥터            | ZIG2Serial 이 동작하기 위해서는 5V 전원이 필요합니다. 사용자는 이 커넥터를 이용해서 전원을 공급할 수 있습니다. USB2DYNAMIXEL 에 연결하여 사용하는 경우는 별도 전원 공급이 필요 없습니다. |
 |  RS232 커넥터         | PC 의 RS-232 포트에 연결할 수 있습니다.              |
 
 # [핀 배열](#핀-배열)
@@ -63,7 +63,7 @@ ZIG2Serial이 동작하기 위해서는 5V 전원을 공급해야 합니다. ZIG
 
 **외부 전원 연결용 저항** 위치에는 `0옴 저항`을 달아주거나 `납으로 연결`시켜 주어야 외부 전원이 공급됩니다.
 
-당사의 [USB2Dynamixel] 제품을 사용할 경우 USB2Dynamixel 에서 ZIG2Serial 에 전원을 공급해 주어 별도의 전원 공급 없이 사용할 수 있습니다.
+당사의 [USB2DYNAMIXEL] 제품을 사용할 경우 USB2DYNAMIXEL 에서 ZIG2Serial 에 전원을 공급해 주어 별도의 전원 공급 없이 사용할 수 있습니다.
 
 **WARNING** : **외부 전원 연결용 저항을 연결한 경우 반드시 제거 후 사용해 주세요!**
 {: .notice-warning}
@@ -121,5 +121,5 @@ ZIG-100은 CHANNEL_SEL 1,2 핀을 이용해서 Broadcast 채널을 선택할 수
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YgebCObXJZg" frameborder="0" allowfullscreen></iframe>
 
 [로보플러스 매니저]: /docs/kr/software/rplus1/manager/
-[USB2Dynamixel]: /docs/kr/parts/interface/usb2dynamixel/
+[USB2DYNAMIXEL]: /docs/kr/parts/interface/usb2dynamixel/
 [Zigbee SDK]: /docs/kr/software/embedded_sdk/zigbee_sdk/

@@ -119,13 +119,13 @@ page_number: 2
 
 ### 준비
 
-1. Dynamixel SDK를 설치하세요.
+1. 다이나믹셀 SDK를 설치하세요.
 ```
 $ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK
 $ cd DynamixelSDK/c++/build/linux64
 $ sudo make install
 ```
-- [Dynamixel SDK e-Manaul](/docs/en/software/dynamixel/dynamixel_sdk/overview/)
+- [다이나믹셀 SDK e-Manaul](/docs/en/software/dynamixel/dynamixel_sdk/overview/)
 
 2. USER_ID 를 dialout 그룹에 등록하세요.   
 ```

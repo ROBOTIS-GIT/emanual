@@ -26,11 +26,11 @@ product_group: dxl_pro
 
   ![](/assets/images/dxl/pro/dxl_pro_intro.gif)
 
-- **Strong and durable reduction cycloid gearing**: Dynamixel PRO implements removable reduction cycloid gears. Small and lightweight cycloids allow a high-ratio reduction gear device. Also cycloid gears are more resistant to vibrations and impacts resulting in minimal backlash.
+- **Strong and durable reduction cycloid gearing**: DYNAMIXEL PRO implements removable reduction cycloid gears. Small and lightweight cycloids allow a high-ratio reduction gear device. Also cycloid gears are more resistant to vibrations and impacts resulting in minimal backlash.
 
-- **Variety of models**: Dynamixel PRO motor, redactor, reduction ratio, communications type, etc have been accommodated to meet various price ranges. The user is able to choose the most proper Dynamixel PRO model necessary for the robot.
+- **Variety of models**: DYNAMIXEL PRO motor, redactor, reduction ratio, communications type, etc have been accommodated to meet various price ranges. The user is able to choose the most proper DYNAMIXEL PRO model necessary for the robot.
 
-- **Variety of control algorithms**: Dynamixel PRO position, velocity, and electrical current can be controlled via algorithms. The user can control these 3 aspects in any combination and properly tune the robot. Dynamixel PRO provides a graph illustrating the relationship between electrical current and torque. This feature is useful for torque control via current control.
+- **Variety of control algorithms**: DYNAMIXEL PRO position, velocity, and electrical current can be controlled via algorithms. The user can control these 3 aspects in any combination and properly tune the robot. DYNAMIXEL PRO provides a graph illustrating the relationship between electrical current and torque. This feature is useful for torque control via current control.
 
 - **Precision control**: with a maximum of 502,000 units per revolution the user can control 0.0007 degrees per unit allowing for high-precision control..
 
@@ -58,4 +58,4 @@ product_group: dxl_pro
 
 ## [Confirmation of Connection](#confirmation-of-connection)
 
-The LED of Dynamixel pro flickers once if the power is supplied to Dynamixel pro properly via wiring.
+The LED of DYNAMIXEL pro flickers once if the power is supplied to DYNAMIXEL pro properly via wiring.

@@ -34,12 +34,12 @@ product_group: dxl_pro_plus
 
 |                           Model                           | Dimensions(mm) | Weight | Resolution |      Motor       |
 |:---------------------------------------------------------:|:--------------:|:------:|:----------:|:----------------:|
-| [H54P-200-S500-R](/docs/en/dxl/pro_plus/h54p-200-s500-r/) | 54 x 126 x 54  |  855g  | 1,003,846  |   BLDC (Maxon)   |
-| [H54P-100-S500-R](/docs/en/dxl/pro_plus/h54p-100-s500-r/) | 54 x 108 x 54  |  740g  | 1,003,846  |   BLDC (Maxon)   |
-| [H42P-020-S300-R](/docs/en/dxl/pro_plus/h42p-020-s300-r/) |  42 x 84 x 42  |  340g  |  607,500   | Coreless (Maxon) |
-| [M54P-060-S250-R](/docs/en/dxl/pro_plus/m54p-060-s250-r/) | 54 x 126 x 54  |  855g  |  502,834   |       BLCD       |
-| [M54P-040-S250-R](/docs/en/dxl/pro_plus/m54p-040-s250-r/) | 54 x 108 x 54  |  710g  |  502,834   |       BLCD       |
-| [M42P-010-S260-R](/docs/en/dxl/pro_plus/m42p-010-s260-r/) |  42 x 72 x 42  |  270g  |  526,374   |     Coreless     |
+| [PH54-200-S500-R](/docs/en/dxl/pro_plus/ph54-200-s500-r/) | 54 x 126 x 54  |  855g  | 1,003,846  |   BLDC (Maxon)   |
+| [PH54-100-S500-R](/docs/en/dxl/pro_plus/ph54-100-s500-r/) | 54 x 108 x 54  |  740g  | 1,003,846  |   BLDC (Maxon)   |
+| [PH42-020-S300-R](/docs/en/dxl/pro_plus/ph42-020-s300-r/) |  42 x 84 x 42  |  340g  |  607,500   | Coreless (Maxon) |
+| [PM54-060-S250-R](/docs/en/dxl/pro_plus/pm54-060-s250-r/) | 54 x 126 x 54  |  855g  |  502,834   |       BLCD       |
+| [PM54-040-S250-R](/docs/en/dxl/pro_plus/pm54-040-s250-r/) | 54 x 108 x 54  |  710g  |  502,834   |       BLCD       |
+| [PM42-010-S260-R](/docs/en/dxl/pro_plus/pm42-010-s260-r/) |  42 x 72 x 42  |  270g  |  526,374   |     Coreless     |
 
 # [Communication Circuitry](#communication-circuitry)
 

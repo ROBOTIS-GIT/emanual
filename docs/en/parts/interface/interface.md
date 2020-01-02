@@ -12,7 +12,7 @@ sidebar:
 
 [![](/assets/images/parts/interface/ln101.jpg)](/docs/en/parts/interface/ln-101/)
 
-# [USB2Dynamixel](#usb2dynamixel)
+# [USB2DYNAMIXEL](#usb2dynamixel)
 
 [![](/assets/images/parts/interface/usb2dynamixel_product.jpg)](/docs/en/parts/interface/usb2dynamixel/)
 

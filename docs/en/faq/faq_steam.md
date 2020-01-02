@@ -212,20 +212,20 @@ It is recommended to use **R+Task 2.0**([Windows](http://en.robotis.com/service/
 
   - Check QC number. If it's in the range of 1412-1502, there may be an FTDI issue. Try the solution [here](/docs/en/parts/interface/usb2dynamixel/#install-driver-manually) or return the controller for replacement.
 
-## **Dynamixel is not recognized in R+ Manager.**
+## **DYNAMIXEL is not recognized in R+ Manager.**
 
-  1. Connect one Dynamixel at a time and make sure that there are no duplicate IDs.
-  2. Check the Dynamixel cable is properly and securely connected.
-  3. Check the Dynamixel cable is not damaged.
-  4. Confirm Dynamixel baud rate by clicking Dynamixel Search in RoboPlus Manager(R+ 1.0).
-  5. Recover firmware in [Dynamixel Wizard](/docs/en/software/rplus1/dynamixel_wizard/#firmware-recovery)(included in Roboplus Manager(R+ 1.0)) one Dynamixel at a time with USB2Dynamixel. [(Video Tutorial)](https://www.youtube.com/watch?v=PRVtfENb3Ok)
+  1. Connect one DYNAMIXEL at a time and make sure that there are no duplicate IDs.
+  2. Check DYNAMIXEL cable is properly and securely connected.
+  3. Check DYNAMIXEL cable is not damaged.
+  4. Confirm DYNAMIXEL baud rate by clicking DYNAMIXEL Search in RoboPlus Manager(R+ 1.0).
+  5. Recover firmware in [DYNAMIXEL Wizard](/docs/en/software/rplus1/dynamixel_wizard/#firmware-recovery)(included in Roboplus Manager(R+ 1.0)) one DYNAMIXEL at a time with USB2DYNAMIXEL. [(Video Tutorial)](https://www.youtube.com/watch?v=PRVtfENb3Ok)
 
-## **How can I manage connected Dynamixels / sensors?**
+## **How can I manage connected DYNAMIXEL's / sensors?**
   Please use [RoboPlus Manager](/docs/en/software/rplus1/manager/#dynamixel).
 
-## **Controller is making a warning sound / Dynamixel LED is flashing red and torque is disabled.**
+## **Controller is making a warning sound / DYNAMIXEL LED is flashing red and torque is disabled.**
   - Is the battery charged?
-  - Make sure that the robot is assembled correctly : Dynamixel horn orientation, cabling and connections. [(Assembly Check)](/docs/en/edu/bioloid/stem/#assembly-check)
+  - Make sure that the robot is assembled correctly : DYNAMIXEL horn orientation, cabling and connections. [(Assembly Check)](/docs/en/edu/bioloid/stem/#assembly-check)
 
 ## **Where can I find IR sensor information?**
   Please refer to IR Sensor array information page. [(Link)](/docs/en/parts/sensor/irss-10/)
@@ -251,7 +251,7 @@ It is recommended to use **R+Task 2.0**([Windows](http://en.robotis.com/service/
   - ZIG-100 connects to [RC-100A / RC-100B]{: .blank}.
   - ZIG-110A connects to controller.
   - ZigBee can be used to control robot.
-  - ZIG-100 + [ZIG2Serial](/docs/en/parts/communication/zig2serial/) + USB2Dynamixel connects to PC.
+  - ZIG-100 + [ZIG2Serial](/docs/en/parts/communication/zig2serial/) + USB2DYNAMIXEL connects to PC.
   - ZIG-110A connects to controller.
 
   [BT-210]{: .blank} / [BT-410]{: .blank}
@@ -331,7 +331,7 @@ It is recommended to use **R+Task 2.0**([Windows](http://en.robotis.com/service/
     - ZIG-100 connects to [RC-100A / RC-100B]{: .blank}.
     - ZIG-110A connects to controller.
     - ZigBee can be used to control robot.
-      i) ZIG-100 + [ZIG2Serial](/docs/en/parts/communication/zig2serial/) + USB2Dynamixel connects to PC.
+      i) ZIG-100 + [ZIG2Serial](/docs/en/parts/communication/zig2serial/) + USB2DYNAMIXEL connects to PC.
       ii) ZIG-110A connects to controller.
   [BT-210]{: .blank} / [BT-410]{: .blank}
     - BT-210 / BT-410 connects to controller.
@@ -423,10 +423,10 @@ It is recommended to use **R+Task 2.0**([Windows](http://en.robotis.com/service/
 ## **How can I update or restore the firmware of controller?**
   Please use **RoboPlus Manager(R+ 1.0)** to update / restore controller firmware.
 
-## **How can I update or restore the firmware of Dynamixel?**
+## **How can I update or restore the firmware of DYNAMIXEL?**
   Please use [DYNAMIXEL Wizard](/docs/en/software/rplus1/dynamixel_wizard/#firmware-update)(included in RoboPlus Manager(R+ 1.0)) to update / restore DYNAMIXEL firmware.
 
-## **Controller is making a warning sound / Dynamixel LED is flashing red and torque is disabled.**
+## **Controller is making a warning sound / DYNAMIXEL LED is flashing red and torque is disabled.**
   Is the battery charged?
   Make sure that the robot is assembled correctly : DYNAMIXEL horn orientation, cabling and connections.
 

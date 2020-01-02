@@ -611,7 +611,7 @@ RoboPlus Motion 2.0 (R+ Motion 2.0) can also open the old RoboPlus Motion 1.0 fi
   > All example robots of the products supported (listed above)
 
 3. How many joints are supported?
-  > If using DYNAMIXELs, 26 joints can be used, from ID 0~25.
+  > If using DYNAMIXEL's, 26 joints can be used, from ID 0~25.
   > If using CM-200, 8 joints can be used, from ID 3~10.
 
 4. Can other 3D models be added?

@@ -14,8 +14,8 @@ sidebar:
 
 # [Communication Overview](#communication-overview)
 
-To control Dynamixel, communication should be established according to the protocol of Dynamixel.  Dynamixel is driven by receiving binary data. Examples of programs for the transmission of this kind of data are described in detail in the User’s Manual of the Dynamixel-only controller or the USB2Dynamixel.
-Thus, this manual describes only the method and protocol of communication used in Dynamixel on the assumption that Main Controller can transfer binary data.
+To control DYNAMIXEL, communication should be established according to the protocol of DYNAMIXEL.  DYNAMIXEL is driven by receiving binary data. Examples of programs for the transmission of this kind of data are described in detail in the User’s Manual of DYNAMIXEL-only controller or the USB2DYNAMIXEL.
+Thus, this manual describes only the method and protocol of communication used in DYNAMIXEL on the assumption that Main Controller can transfer binary data.
 
 **TIP** : Users can refer to ROBOTIS Protocol [Compatibility Table]{: .popup} with reference.
 {: .notice--success}
@@ -23,25 +23,25 @@ Thus, this manual describes only the method and protocol of communication used i
 
 ## [Packet](#packet)
 
-Main Controller and Dynamixel communicate each other by sending and receiving data called Packet. Packet has two kinds: Instruction Packet, which Main Controller sends to control Dynamixel, and Status Packet, which Dynamixel responses to Main Controller.
+Main Controller and DYNAMIXEL communicate each other by sending and receiving data called Packet. Packet has two kinds: Instruction Packet, which Main Controller sends to control DYNAMIXEL, and Status Packet, which DYNAMIXEL responses to Main Controller.
 
 ## [ID](#id)
 
-ID is a specific number for distinction of each Dynamixel when several Dynamixels are linked to one bus.
-By giving IDs to Instruction and Status Packets, Main Controller can control only the Dynamixel that you want to control
+ID is a specific number for distinction of each DYNAMIXEL when several DYNAMIXEL's are linked to one bus.
+By giving IDs to Instruction and Status Packets, Main Controller can control only DYNAMIXEL that you want to control
 
 ## [Protocol](#protocol)
 
-Dynamixel does the Asynchronous Serial Communication with 8 bit, 1 Stop bit, and None Parity.
+DYNAMIXEL does the Asynchronous Serial Communication with 8 bit, 1 Stop bit, and None Parity.
 
-If Dynamixel with the same ID is connected, packet will collide and network problem will occur. Thus, set ID as such that there is no Dynamixel with the same ID.
+If DYNAMIXEL with the same ID is connected, packet will collide and network problem will occur. Thus, set ID as such that there is no DYNAMIXEL with the same ID.
 
-ID of Dynamixel is changeable.
-For this change, please refer to [Changing IDs of Dynamixel]. The factory default setting ID is 1.
+ID of DYNAMIXEL is changeable.
+For this change, please refer to [Changing IDs of DYNAMIXEL]. The factory default setting ID is 1.
 
 ## [Half Duplex](#half-duplex)
 
-Half duplex UART is a serial communication protocol where both TxD and RxD cannot be used at the same time. This method is generally used when many devices need to be connected to a single bus. Since more than one device are connected to the same bus, all the other devices need to be in input mode while one device is transmitting. The Main Controller that controllers the Dynamixel actuators sets the communication direction to input mode, and only when it is transmitting an Instruction Packet, it changes the direction to output mode.
+Half duplex UART is a serial communication protocol where both TxD and RxD cannot be used at the same time. This method is generally used when many devices need to be connected to a single bus. Since more than one device are connected to the same bus, all the other devices need to be in input mode while one device is transmitting. The Main Controller that controllers DYNAMIXEL actuators sets the communication direction to input mode, and only when it is transmitting an Instruction Packet, it changes the direction to output mode.
 
 ![](/assets/images/dxl/halfduplex.png)
 
@@ -84,16 +84,16 @@ EnableInterrupt(); // enable interrupt again
 
 ## [Byte to Byte Time](#byte-to-byte-time)
 
-The delay time between bytes when sending an instruction packet. If the delay time is over 100ms, then the Dynamixel actuator recognizes this as a communication problem and waits for the next header (0xff 0xff) of a packet again.
+The delay time between bytes when sending an instruction packet. If the delay time is over 100ms, then DYNAMIXEL actuator recognizes this as a communication problem and waits for the next header (0xff 0xff) of a packet again.
 
 ![](/assets/images/dxl/byte2bytetime.png)
 
 # [Instruction Packet](#instruction-packet)
 Instruction Packet is the command data sent to the Device.
 
-|Header1|Header2|ID|Length|Instruction|Param 1|...|Param N|Checksum|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|ID|Length|Instruction|Param 1|...|Param N|CHKSUM|
+| Header1 | Header2 | ID | Length | Instruction | Param 1 | ... | Param N | Checksum |  |
+|:-------:|:-------:|:--:|:------:|:-----------:|:-------:|:---:|:-------:|:--------:|::|
+|  0xFF   |  0xFF   | ID | Length | Instruction | Param 1 | ... | Param N |  CHKSUM  |  |
 
 ## [Header](#header)
 The field indicates the start of the Packet.
@@ -111,17 +111,17 @@ Length = number of Parameters + 2
 ## [Instruction](#instruction)
 The field that defines the type of instruction.
 
-| Value | Instructions  |                                                          Description                                                           |
-|:-----:|:-------------:|:------------------------------------------------------------------------------------------------------------------------------:|
-| 0x01  |     Ping      |                Instruction that checks whether the Packet has arrived to a device with the same ID as Packet ID                |
-| 0x02  |     Read      |                                            Instruction to read data from the Device                                            |
-| 0x03  |     Write     |                                            Instruction to write data on the Device                                             |
-| 0x04  |   Reg Write   | Instruction that registers the Instruction Packet to a standby status; Packet is later executed through the Action instruction |
-| 0x05  |    Action     |                      Instruction that executes the Packet that was registered beforehand using Reg Write                       |
-| 0x06  | Factory Reset |                       Instruction that resets the Control Table to its initial factory default settings                        |
-| 0x08  | Reboot        |                       Instruction that reboots Dynamixel(See applied products in the description)                             |
-| 0x83  |  Sync Write   |                For multiple devices, Instruction to write data on the same Address with the same length at once                |
-| 0x92  |   Bulk Read   |             For multiple devices, Instruction to write data on different Addresses with different lengths at once<br />This command can only be used with MX series.              |
+| Value | Instructions  |                                                                       Description                                                                        |
+|:-----:|:-------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| 0x01  |     Ping      |                             Instruction that checks whether the Packet has arrived to a device with the same ID as Packet ID                             |
+| 0x02  |     Read      |                                                         Instruction to read data from the Device                                                         |
+| 0x03  |     Write     |                                                         Instruction to write data on the Device                                                          |
+| 0x04  |   Reg Write   |              Instruction that registers the Instruction Packet to a standby status; Packet is later executed through the Action instruction              |
+| 0x05  |    Action     |                                   Instruction that executes the Packet that was registered beforehand using Reg Write                                    |
+| 0x06  | Factory Reset |                                    Instruction that resets the Control Table to its initial factory default settings                                     |
+| 0x08  |    Reboot     |                                       Instruction that reboots DYNAMIXEL(See applied products in the description)                                        |
+| 0x83  |  Sync Write   |                             For multiple devices, Instruction to write data on the same Address with the same length at once                             |
+| 0x92  |   Bulk Read   | For multiple devices, Instruction to write data on different Addresses with different lengths at once<br />This command can only be used with MX series. |
 
 ## [Parameters](#parameters)
 Parameters are used when additional data is required for an instruction.
@@ -150,30 +150,30 @@ Thus, Instruction Packet should be 0xFF, 0xFF, 0x01, 0x05, 0x03, 0x0C, 0x64, 0xA
 
 # [Status Packet(Return Packet)](#status-packetreturn-packet)
 
-|Header1|Header2|ID|Length|Error|Param 1|...|Param N|Checksum|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|ID|Length|Error|Param 1|...|Param N|CHKSUM|
+| Header1 | Header2 | ID | Length | Error | Param 1 | ... | Param N | Checksum |  |
+|:-------:|:-------:|:--:|:------:|:-----:|:-------:|:---:|:-------:|:--------:|::|
+|  0xFF   |  0xFF   | ID | Length | Error | Param 1 | ... | Param N |  CHKSUM  |  |
 
 ## [Error](#error)
-This field displays the error status occurred during the operation of Dynamixel.
+This field displays the error status occurred during the operation of DYNAMIXEL.
 
-|Bit|Error|Description|
-|:---:|:---:|:---:|
-|Bit 7|0|-|
-|Bit 6|Instruction Error|In case of sending an undefined instruction or delivering the action instruction without the reg_write instruction, it is set as 1|
-|Bit 5|Overload Error|When the current load cannot be controlled by the set Torque, it is set as 1|
-|Bit 4|Checksum Error|When the Checksum of the transmitted Instruction Packet is incorrect, it is set as 1|
-|Bit 3|Range Error|When an instruction is out of the range for use, it is set as 1|
-|Bit 2|Overheating Error|When internal temperature of Dynamixel is out of the range of operating temperature set in the Control table, it is set as 1|
-|Bit 1|Angle Limit Error|When Goal Position is written out of the range from CW Angle Limit to CCW Angle Limit , it is set as 1|
-|Bit 0|Input Voltage Error|When the applied voltage is out of the range of operating voltage set in the Control table, it is as 1|
+|  Bit  |        Error        |                                                            Description                                                             |
+|:-----:|:-------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|
+| Bit 7 |          0          |                                                                 -                                                                  |
+| Bit 6 |  Instruction Error  | In case of sending an undefined instruction or delivering the action instruction without the reg_write instruction, it is set as 1 |
+| Bit 5 |   Overload Error    |                            When the current load cannot be controlled by the set Torque, it is set as 1                            |
+| Bit 4 |   Checksum Error    |                        When the Checksum of the transmitted Instruction Packet is incorrect, it is set as 1                        |
+| Bit 3 |     Range Error     |                                  When an instruction is out of the range for use, it is set as 1                                   |
+| Bit 2 |  Overheating Error  |    When internal temperature of DYNAMIXEL is out of the range of operating temperature set in the Control table, it is set as 1    |
+| Bit 1 |  Angle Limit Error  |               When Goal Position is written out of the range from CW Angle Limit to CCW Angle Limit , it is set as 1               |
+| Bit 0 | Input Voltage Error |               When the applied voltage is out of the range of operating voltage set in the Control table, it is as 1               |
 
 For example, when Status Packet is returned as below
 
 0xFF 0xFF 0x01 0x02 0x24 0xD8
-It means that the error of 0x24 occurs from Dynamixel whose ID is 01. Since 0x24 is 00100100 as binary, Bit5 and Bit2 become 1. In order words, Overload and Overheating Errors have occurred.
+It means that the error of 0x24 occurs from DYNAMIXEL whose ID is 01. Since 0x24 is 00100100 as binary, Bit5 and Bit2 become 1. In order words, Overload and Overheating Errors have occurred.
 
-**NOTE** : The error types on the table above are related to actuators, and the contents may vary depending on the type of Dynamixel.
+**NOTE** : The error types on the table above are related to actuators, and the contents may vary depending on the type of DYNAMIXEL.
 {: .notice}
 
 ## [Status Checksum](#status-checksum)
@@ -186,11 +186,11 @@ Status Checksum is calculated according to the following formula.
 # [Instruction Details](#instruction-details)
 
 ## [Ping](#ping)
-This instruction requests the Status Packet from a specific ID. Even if Status Return Level(16) is 0, Dynamixel returns Status Packet all the time for Ping Instruction.
+This instruction requests the Status Packet from a specific ID. Even if Status Return Level(16) is 0, DYNAMIXEL returns Status Packet all the time for Ping Instruction.
 
-|Length|Instruction|Parameter|
-|:---:|:---:|:---:|
-|0x02|0x01|-|
+| Length | Instruction | Parameter |
+|:------:|:-----------:|:---------:|
+|  0x02  |    0x01     |     -     |
 
 ### Example
 #### Conditions
@@ -198,22 +198,22 @@ This instruction requests the Status Packet from a specific ID. Even if Status R
 
 #### Ping Instruction Packet
 
-|H1|H2|ID|LEN|INST|CKSM|
-|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0x01|0x02|0x01|0xFB|
+|  H1  |  H2  |  ID  | LEN  | INST | CKSM |
+|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0x01 | 0x02 | 0x01 | 0xFB |
 
 #### ID 1 Status Packet
 
-|H1|H2|ID|LEN|ERR|CKSM|
-|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0x01|0x02|0x00|0xFC|
+|  H1  |  H2  |  ID  | LEN  | ERR  | CKSM |
+|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0x01 | 0x02 | 0x00 | 0xFC |
 
 ## [Read](#read)
-This instruction is to read data in the Control Table of Dynamixel.
+This instruction is to read data in the Control Table of DYNAMIXEL.
 
-|Length|Instruction|Param 1|Param 2|
-|:---:|:---:|:---:|:---:|
-|0x04|0x02|Starting Address of the Data|Length of Data to read|
+| Length | Instruction |           Param 1            |        Param 2         |
+|:------:|:-----------:|:----------------------------:|:----------------------:|
+|  0x04  |    0x02     | Starting Address of the Data | Length of Data to read |
 
 ### Example
 #### Conditions
@@ -221,32 +221,32 @@ This instruction is to read data in the Control Table of Dynamixel.
 
 #### Read Instruction Packet
 
-|H1|H2|ID|LEN|INST|P1|P2|CKSM|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0x01|0x04|0x02|0x2B|0x01|0xCC|
+|  H1  |  H2  |  ID  | LEN  | INST |  P1  |  P2  | CKSM |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0x01 | 0x04 | 0x02 | 0x2B | 0x01 | 0xCC |
 
 #### ID 1 Status Packet
 
-|H1|H2|ID|LEN|ERR|P1|CKSM|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0x01|0x03|0x00|0x20|0xDB|
+|  H1  |  H2  |  ID  | LEN  | ERR  |  P1  | CKSM |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0x01 | 0x03 | 0x00 | 0x20 | 0xDB |
 
 ## [Write](#write)
 This instruction is to write data to the Control Table of DYNAMIXEL
 
-|Length|Instruction|Param 1|Param 2|Param 3|Param N+1|
-|:---:|:---:|:---:|:---:|:---:|:---:|
-|N + 3|0x03|Starting Address of the Data|1st Byte|2nd Byte|Nth Byte|
+| Length | Instruction |           Param 1            | Param 2  | Param 3  | Param N+1 |
+|:------:|:-----------:|:----------------------------:|:--------:|:--------:|:---------:|
+| N + 3  |    0x03     | Starting Address of the Data | 1st Byte | 2nd Byte | Nth Byte  |
 
 ### Example
 #### Conditions
-- ID broadcast(RX-64) : Set the unknwon Dynamixel's ID as "1" by writing 1 to ID(3)
+- ID broadcast(RX-64) : Set the unknwon DYNAMIXEL's ID as "1" by writing 1 to ID(3)
 
 #### Write Instruction Packet
 
-|H1|H2|ID|LEN|INST|P1|P2|CKSM|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFE|0x04|0x03|0x03|0x01|0xF6|
+|  H1  |  H2  |  ID  | LEN  | INST |  P1  |  P2  | CKSM |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFE | 0x04 | 0x03 | 0x03 | 0x01 | 0xF6 |
 
 **NOTE** : Status Packet will not be returned if Broadcast ID(0xFE) is used.
 {: .notice}
@@ -257,9 +257,9 @@ This instruction is to write data to the Control Table of DYNAMIXEL
   - Reg Write Instruction registers the Instruction Packet to a standby status, and sets Control table Registered Instruction to ‘1’.
   - When an Action Instruction is received, the registered Packet is executed, and sets Control Table Registered Instruction to ‘0’.
 
-|Length|Instruction|Param 1|Param 2|Param N+1|
-|:---:|:---:|:---:|:---:|:---:|
-|N+3|0x04|Starting Address of the Data|1st Byte|Nth Byte|
+| Length | Instruction |           Param 1            | Param 2  | Param N+1 |
+|:------:|:-----------:|:----------------------------:|:--------:|:---------:|
+|  N+3   |    0x04     | Starting Address of the Data | 1st Byte | Nth Byte  |
 
 ### Example
 #### Conditions
@@ -267,38 +267,38 @@ This instruction is to write data to the Control Table of DYNAMIXEL
 
 #### Reg Write Instruction Packet
 
-|H1|H2|ID|LEN|INST|P1|P2|P3|CKSM|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0x01|0x05|0x04|0x1E|0xF4|0x01|0xE2|
+|  H1  |  H2  |  ID  | LEN  | INST |  P1  |  P2  |  P3|CKSM  |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:---------:|
+| 0xFF | 0xFF | 0x01 | 0x05 | 0x04 | 0x1E | 0xF4 | 0x01|0xE2 |
 
 #### ID 1 Status Packet
 
-|H1|H2|ID|LEN|ERR|CKSM|
-|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0x01|0x02|0x00|0xFC|
+|  H1  |  H2  |  ID  | LEN  | ERR  | CKSM |
+|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0x01 | 0x02 | 0x00 | 0xFC |
 
 ## [Action](#action)
-This instruction is to execute the registered Reg Write instruction. The Action instruction is useful when multiple Dynamixels are required to start moving at the same time. When several devices are controlled via communication, there is a minor time difference between enabling the first and last device. Dynamixel has resolved this problem by using Action instruction.
+This instruction is to execute the registered Reg Write instruction. The Action instruction is useful when multiple DYNAMIXEL's are required to start moving at the same time. When several devices are controlled via communication, there is a minor time difference between enabling the first and last device. DYNAMIXEL has resolved this problem by using Action instruction.
 
-|Length|Instruction|Parameter|
-|:---:|:---:|:---:|
-|0x02|0x05|-|
+| Length | Instruction | Parameter |
+|:------:|:-----------:|:---------:|
+|  0x02  |    0x05     |     -     |
 
 ### Example
 #### Conditions
-- All Dynamixels have received Reg Write instructions.
+- All DYNAMIXEL's have received Reg Write instructions.
 
 #### Action Instruction Packet
 
-|H1|H2|ID|LEN|INST|CKSM|
-|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFE|0x02|0x05|0xFA|
+|  H1  |  H2  |  ID  | LEN  | INST | CKSM |
+|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFE | 0x02 | 0x05 | 0xFA |
 
 **NOTE** : Status Packet will not be returned if Broadcast ID(0xFE) is used.
 {: .notice}
 
 ## [Factory Reset](#factory-reset)
-This instruction is to reset the Control Table of Dynamixel to the factory default values.
+This instruction is to reset the Control Table of DYNAMIXEL to the factory default values.
 
 {% capture reset_warning_01 %}
 **CAUTION** : Please be careful as Reset instruction will overwrite factory reset values in the EEPROM.
@@ -309,34 +309,34 @@ This instruction is to reset the Control Table of Dynamixel to the factory defau
 
 <div class="notice--warning">{{ reset_warning_01 | markdownify }}</div>
 
-|Length|Instruction|Parameter|
-|:---:|:---:|:---:|
-|0x02|0x06|-|
+| Length | Instruction | Parameter |
+|:------:|:-----------:|:---------:|
+|  0x02  |    0x06     |     -     |
 
 ### Example
 #### Conditions
-- ID 0(RX-64) : Factory Reset the Dynamixel
+- ID 0(RX-64) : Factory Reset DYNAMIXEL
 
 #### Factory Reset Instruction Packet
 
-|H1|H2|ID|LEN|INST|CKSM|
-|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0x00|0x02|0x06|0xF7|
+|  H1  |  H2  |  ID  | LEN  | INST | CKSM |
+|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0x00 | 0x02 | 0x06 | 0xF7 |
 
 #### ID 0 Status Packet
 
-|H1|H2|ID|LEN|ERR|CKSM|
-|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0x00|0x02|0x00|0xFD|
+|  H1  |  H2  |  ID  | LEN  | ERR  | CKSM |
+|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0x00 | 0x02 | 0x00 | 0xFD |
 
 ## [Reboot](#reboot)
-This instruction restarts Dynamixel.
+This instruction restarts DYNAMIXEL.
 - Applied Products : MX-12W(V41), MX-28(V40), MX-64(V40), MX-106(V40), X-Series(except XL-320), MX series with Protocol 2.0
 
 ### Example
 
 #### Conditions
-- ID 1(XM430-W210) : Reboot ID 1 Dynamixel
+- ID 1(XM430-W210) : Reboot ID 1 DYNAMIXEL
 
 #### Reboot Instruction Packet
 
@@ -351,24 +351,24 @@ This instruction restarts Dynamixel.
 | 0xFF | 0xFF | 0x01 | 0x02 | 0x00 | 0xFC |
 
 ## [Sync Write](#sync-write)
-This instruction is used to control multiple Dynamixels simultaneously with a single Instruction Packet transmission. When this instruction is used, several instructions can be transmitted at once, so that the communication time is reduced when multiple Dynamixels are connected in a single channel. However, the SYNC WRITE instruction can only be used to a single address with an identical length of data over connected Dynamixels. ID should be transmitted as Broadcasting ID.
+This instruction is used to control multiple DYNAMIXEL's simultaneously with a single Instruction Packet transmission. When this instruction is used, several instructions can be transmitted at once, so that the communication time is reduced when multiple DYNAMIXEL's are connected in a single channel. However, the SYNC WRITE instruction can only be used to a single address with an identical length of data over connected DYNAMIXEL's. ID should be transmitted as Broadcasting ID.
 
-|Item|Description|
-|:---:|:---|
-|Instruction|0x83|
-|Length|((L + 1) * N) + 4, L:Data Length, N:Number of Dynamixel|
-|Parameter 1|Starting address|
-|Parameter 2|Length of Data to write|
-|Parameter 3|[1st Device] ID|
-|Parameter 4|[1st Device] 1st Byte|
-|Parameter 5|[1st Device] 2nd Byte|
-|...|...|
-|Parameter L+3|[1st Device] L-th Byte|
-|Parameter L+4|[2nd Device] ID|
-|Parameter L+5|[2nd Device] 1st Byte|
-|Parameter L+6|[2nd Device] 2nd Byte|
-|...|...|
-|Parameter 2L+4|[2nd Device] L-th Byte|
+|      Item      | Description                                             |
+|:--------------:|:--------------------------------------------------------|
+|  Instruction   | 0x83                                                    |
+|     Length     | ((L + 1) * N) + 4, L:Data Length, N:Number of DYNAMIXEL |
+|  Parameter 1   | Starting address                                        |
+|  Parameter 2   | Length of Data to write                                 |
+|  Parameter 3   | [1st Device] ID                                         |
+|  Parameter 4   | [1st Device] 1st Byte                                   |
+|  Parameter 5   | [1st Device] 2nd Byte                                   |
+|      ...       | ...                                                     |
+| Parameter L+3  | [1st Device] L-th Byte                                  |
+| Parameter L+4  | [2nd Device] ID                                         |
+| Parameter L+5  | [2nd Device] 1st Byte                                   |
+| Parameter L+6  | [2nd Device] 2nd Byte                                   |
+|      ...       | ...                                                     |
+| Parameter 2L+4 | [2nd Device] L-th Byte                                  |
 
 ### Example
 #### Conditions
@@ -377,28 +377,28 @@ This instruction is used to control multiple Dynamixels simultaneously with a si
 
 #### Sync Write Instruction Packet
 
-|H1|H2|ID|LEN|INST|P1|P2|P3|P4|P5|P6|P7|P8|P9|P10|P11|P12|CKSM|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFE|0x0E|0x83|0x1E|0x04|0x00|0x10|0x00|0x50|0x01|0x01|0x20|0x02|0x60|0x03|0x67|
+|  H1  |  H2  |  ID  | LEN  | INST |  P1  |  P2  |  P3  |  P4  |  P5  |  P6  |  P7  |  P8  |  P9  | P10  | P11  | P12  | CKSM |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFE | 0x0E | 0x83 | 0x1E | 0x04 | 0x00 | 0x10 | 0x00 | 0x50 | 0x01 | 0x01 | 0x20 | 0x02 | 0x60 | 0x03 | 0x67 |
 
 **NOTE** : Status Packet will not be returned if Broadcast ID(0xFE) is used.
 {: .notice}
 
 ## [Bulk Read](#bulk-read)
-This instruction is used for reading values of multiple `MX series` DYNAMIXELs simultaneously by sending a single Instruction Packet. The packet length is shortened compared to sending multiple READ commands, and the idle time between the status packets being returned is also shortened to save communication time. However, this cannot be used to read a single module. If an identical ID is designated multiple times, only the first designated parameter will be processed.
+This instruction is used for reading values of multiple `MX series` DYNAMIXEL's simultaneously by sending a single Instruction Packet. The packet length is shortened compared to sending multiple READ commands, and the idle time between the status packets being returned is also shortened to save communication time. However, this cannot be used to read a single module. If an identical ID is designated multiple times, only the first designated parameter will be processed.
 
-|Item|Description|
-|:---:|:---|
-|Instruction|0x92|
-|Length|3N + 3|
-|Parameter 1|0x00|
-|Parameter 2|[1st Device] Length of Data to read|
-|Parameter 3|[1st Device] ID|
-|Parameter 4|[1st Device] Starting address|
-|...|...|
-|Parameter 3N+2|[Nth Device] Length of Data to read|
-|Parameter 3N+3|[Nth Device] ID|
-|Parameter 3N+4|[Nth Device] Starting address|
+|      Item      | Description                         |
+|:--------------:|:------------------------------------|
+|  Instruction   | 0x92                                |
+|     Length     | 3N + 3                              |
+|  Parameter 1   | 0x00                                |
+|  Parameter 2   | [1st Device] Length of Data to read |
+|  Parameter 3   | [1st Device] ID                     |
+|  Parameter 4   | [1st Device] Starting address       |
+|      ...       | ...                                 |
+| Parameter 3N+2 | [Nth Device] Length of Data to read |
+| Parameter 3N+3 | [Nth Device] ID                     |
+| Parameter 3N+4 | [Nth Device] Starting address       |
 
 ### Example
 #### Conditions
@@ -407,23 +407,23 @@ This instruction is used for reading values of multiple `MX series` DYNAMIXELs s
 
 #### Bulk Read Instruction Packet
 
-|H1|H2|ID|LEN|INST|P1|P2|P3|P4|P5|P6|P7|CKSM|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFE|0x09|0x92|0x00|0x02|0x01|0x1E|0x02|0x02|0x24|0x1D|
+|  H1  |  H2  |  ID  | LEN  | INST |  P1  |  P2  |  P3  |  P4  |  P5  |  P6  |  P7  | CKSM |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFE | 0x09 | 0x92 | 0x00 | 0x02 | 0x01 | 0x1E | 0x02 | 0x02 | 0x24 | 0x1D |
 
-When Bulk Read instruction is received, Dynamixel with ID 2 monitors the status packet being sent from ID 1 of the data bus (the preceeding device ID), and when device ID 1’s status packet transmission is completed, ID 2 sends its own status packet.
+When Bulk Read instruction is received, DYNAMIXEL with ID 2 monitors the status packet being sent from ID 1 of the data bus (the preceeding device ID), and when device ID 1’s status packet transmission is completed, ID 2 sends its own status packet.
 
 #### ID 1 Status Packet
 
-|H1|H2|ID|LEN|ERR|P1|P2|CKSM|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0x01|0x04|0x00|0x00|0x80|0x7A|
+|  H1  |  H2  |  ID  | LEN  | ERR  |  P1  |  P2  | CKSM |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0x01 | 0x04 | 0x00 | 0x00 | 0x80 | 0x7A |
 
 #### ID 2 Status Packet
 
-|H1|H2|ID|LEN|ERR|P1|P2|CKSM|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0x02|0x04|0x00|0x00|0x80|0x79|
+|  H1  |  H2  |  ID  | LEN  | ERR  |  P1  |  P2  | CKSM |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0x02 | 0x04 | 0x00 | 0x00 | 0x80 | 0x79 |
 
 # [More Packet Examples](#more-packet-examples)
 
@@ -458,7 +458,7 @@ When Bulk Read instruction is received, Dynamixel with ID 2 monitors the status 
 ![](/assets/images/dxl/protocol1/protocol1_example_21.png)
 
 
-[Changing IDs of Dynamixel]: /docs/en/software/rplus1/manager/#id-setup
+[Changing IDs of DYNAMIXEL]: /docs/en/software/rplus1/manager/#id-setup
 
 
 

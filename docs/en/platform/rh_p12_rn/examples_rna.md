@@ -127,13 +127,13 @@ Follow the steps to operate RH-P12-RN(A) by using Linux Example. **Enter the giv
 
 ### Preperation
 
-1. Install Dynamixel SDK. 
+1. Install DYNAMIXEL SDK. 
 ```
 $ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK
 $ cd DynamixelSDK/c++/build/linux64
 $ sudo make install
 ```
-- [Dynamixel SDK e-Manaul](/docs/en/software/dynamixel/dynamixel_sdk/overview/)
+- [DYNAMIXEL SDK e-Manaul](/docs/en/software/dynamixel/dynamixel_sdk/overview/)
 
 2. Register USER_ID to dialout group.
 ```

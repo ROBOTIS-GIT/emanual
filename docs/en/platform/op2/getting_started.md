@@ -324,9 +324,9 @@ You can also get information about the  [gyroscope](http://sourceforge.net/proje
 |        Interface        |                                        1x LED , 1 x Buzzer                                         |
 |     External ports      |                                         3 x ADC /I/O Ports                                         |
 |         Sensor          |                   3-axis gyroscope , 3-axis accelerometer, supply voltage sensor                   |
-|      Communication      |                        USB Port, Serial Port , 5x TTL Ports (for Dynamixel)                        |
+|      Communication      |                        USB Port, Serial Port , 5x TTL Ports (for DYNAMIXEL)                        |
 |     Audio & Mic Amp     |                              Audio amp gain : 20, mic amp gain : 2027                              |
-|           ETC           |                Dynamixel Power Control Unit, Head board port, Interface board port.                |
+|           ETC           |                DYNAMIXEL Power Control Unit, Head board port, Interface board port.                |
 | External supply voltage |                                             8V ~ 14.8v                                             |
 |   Current consumption   |                                   Maximum 200mA , Standby 130mA                                    |
 |       Dimensions        |                                      80.0mm x 43.0mm x 20.0mm                                      |
@@ -359,8 +359,8 @@ In the Control table, some data share the same name, but they are attached with 
 | 0 (0X00)  |   Model Number(L)   | model number low byte  |   R    |  0(0X00)   |
 | 1 (0X01)  |   Model Number(H)   | model number high byte |   R    | 116 (0X74) |
 | 2 (0X02)  | Version of Firmware |    firmware version    |   R    |     -      |
-| 3 (0X03)  |         ID          |      Dynamixel ID      |   RW   | 200 (0XC8) |
-| 4 (0X04)  |      Baud Rate      |  Dynamixel baud rate   |   RW   |  1 (0X01)  |
+| 3 (0X03)  |         ID          |      DYNAMIXEL ID      |   RW   | 200 (0XC8) |
+| 4 (0X04)  |      Baud Rate      |  DYNAMIXEL baud rate   |   RW   |  1 (0X01)  |
 | 5 (0X05)  |  Return Delay Time  |   Return Delay Time    |   RW   |  0 (0X0)   |
 | 16 (0X10) | Status Return Level |  Status Return Level   |   RW   |  2 (0X02)  |
 
@@ -368,7 +368,7 @@ In the Control table, some data share the same name, but they are attached with 
 
 |  Address  |      Name       |          Description           | Access | Init Value |
 |:---------:|:---------------:|:------------------------------:|:------:|:----------:|
-| 24 (0X18) | Dynamixel Power |        Dynamixel On/Off        |   RW   |  0 (0X00)  |
+| 24 (0X18) | DYNAMIXEL Power |        DYNAMIXEL On/Off        |   RW   |  0 (0X00)  |
 | 25 (0X19) |   LED Pannel    |       LED Pannel On/Off        |   RW   |  0 (0X00)  |
 | 26 (0X1A) |    LED 5 (L)    |         LED 5 low byte         |   RW   |  0 (0X00)  |
 | 27 (0X1B) |    LED 5 (H)    |        LED 5 high byte         |   RW   |  0 (0X01)  |
@@ -428,11 +428,11 @@ Represents the Model Number.
 Represents the firmware version.
 
 ### ID
-Is a unique number to identify Dynamixel.  
+Is a unique number to identify DYNAMIXEL.  
 Values range from 0 (0x00) to 253 (0xFD), Value 254 (0xFE) is used as the Broadcast ID.  
-If the Broadcast ID is used to transmit Instruction Packet, then it can command to all Dynamixels.  
+If the Broadcast ID is used to transmit Instruction Packet, then it can command to all DYNAMIXEL's.  
 
-**NOTE** : Please be careful not to duplicate the ID of connected Dynamixels.
+**NOTE** : Please be careful not to duplicate the ID of connected DYNAMIXEL's.
 {: .notice}
 
 ### Baud Rate
@@ -471,12 +471,12 @@ Decides how to return Status packet. There are three possibilities:
 **NOTE** : When Instruction packet is Broadcast ID, Status packet is not returned regardless of Status return level.
 {: .notice}
 
-### Dynamixel Power
+### DYNAMIXEL Power
 
 | Value |                          Meaning                          |
 |:-----:|:---------------------------------------------------------:|
-|   0   | Turn off the power of all Dynamixels connected to CM-740. |
-|   1   | Turn on the power of all Dynamixels connected to CM-740.  |
+|   0   | Turn off the power of all DYNAMIXEL's connected to CM-740. |
+|   1   | Turn on the power of all DYNAMIXEL's connected to CM-740.  |
 
 ### LED Pannel
 

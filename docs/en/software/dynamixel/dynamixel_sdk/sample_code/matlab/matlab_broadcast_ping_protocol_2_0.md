@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/software/dynamixel/dynamixel_sdk/sample_code/matlab_broadcast_ping_protocol_2_0/
 sidebar:
-  title: DynamixelSDK
+  title: DYNAMIXEL SDK
   nav: "dynamixel_sdk"
 ---
 
@@ -24,7 +24,7 @@ sidebar:
 
 - Description
 
-  This example tries to ping all Dynamixels that are connected to the controller, and shows which Dynamixel is successfully connected. The example is commonly used to check for Dynamixel’s connection at once.
+  This example tries to ping all DYNAMIXEL that are connected to the controller, and shows which Dynamixel is successfully connected. The example is commonly used to check for Dynamixel’s connection at once.
 
 - Available Dynamixel
 
@@ -230,7 +230,7 @@ if getLastTxRxResult(port_num, PROTOCOL_VERSION) ~= COMM_SUCCESS
 end
 ```
 
-`broadcastPing()` function shows the connection between controller and each Dynamixels from ID 1 to ID 253 through #`port_num` port.
+`broadcastPing()` function shows the connection between controller and each DYNAMIXEL from ID 1 to ID 253 through #`port_num` port.
 
 ``` m
 % Close port

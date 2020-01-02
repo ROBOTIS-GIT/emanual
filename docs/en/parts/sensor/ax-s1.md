@@ -41,14 +41,14 @@ sidebar:
 
 # [How to Communicate](#how-to-communicate)
 
-The communication method and the hardware composition related to the communication of AX-S1 are the same as Dynamixel AX series.
+The communication method and the hardware composition related to the communication of AX-S1 are the same as DYNAMIXEL AX series.
 
-- Please refer to [Dynamixel Communication] on the communication method and the packet composition.
+- Please refer to [DYNAMIXEL Communication] on the communication method and the packet composition.
 - Please refer to [Communication Hardware Composition] of AX-Series on the communication hardware.
 
 # [Control Table](#control-table)
 
-Control Table consists of data regarding the current status and operation, which exists inside of Dynamixel. The user can control Dynamixel by changing data of Control Table via Instruction Packet.
+Control Table consists of data regarding the current status and operation, which exists inside of DYNAMIXEL. The user can control DYNAMIXEL by changing data of Control Table via Instruction Packet.
 
 ## [EEPROM and RAM](#eeprom-and-ram)
 Data in RAM area is reset to the initial value whenever the power is turned on while data in EEPROM area is kept once the value is set even if the power is turned off.
@@ -57,7 +57,7 @@ Data in RAM area is reset to the initial value whenever the power is turned on w
 It represents the location of data. To read from or write data to Control Table, the user should assign the correct address in the Instruction Packet.
 
 ## [Access](#access)
-Dynamixel has two kinds of data: Read-only data, which is mainly used for sensing, and Read-and-Write data, which is used for driving.
+DYNAMIXEL has two kinds of data: Read-only data, which is mainly used for sensing, and Read-and-Write data, which is used for driving.
 
 ## [Initial Value](#initial-value)
 In case of data in the EEPROM Area, the initial values on the right side of the below Control Table are the factory default settings. In case of data in the RAM Area, the initial values on the right side of the above Control Tables are the ones when the power is turned on.
@@ -110,10 +110,10 @@ In the Control table, some data share the same name, but they are attached with 
 ## [Control Table Description](#control-table-description)
 
 ### <a name="model-number"></a>Model Number (0)
- This address stores model number of the DYNAMIXEL.
+ This address stores model number of DYNAMIXEL.
 
 ### <a name="firmware-version"></a>Firmware Version (2)
- This address stores firmware version of the DYNAMIXEL.
+ This address stores firmware version of DYNAMIXEL.
 
 ### <a name="id"></a>ID (3)
 {% include en/dxl/control_table_id.md %}
@@ -128,19 +128,19 @@ In the Control table, some data share the same name, but they are attached with 
 {% include en/dxl/control_table_status_return_lv.md %}
 
 ### <a name="ir-reference"></a>IR Obstacle Detect Compare Value
-The reference value is set in the estimated place where an object exists on the direction of the sensor in the IR sensor value of Dynamixel Sensor Module.  If the sensor value is greater than the reference value, the bit which belongs to the sensor of IR Obstacle Detected (Address 0x20) is set to '1' because the object is located within a certain distance; if the sensor value is less than the reference value, the bit is set to '0' since the object is not located within a certain distance.
+The reference value is set in the estimated place where an object exists on the direction of the sensor in the IR sensor value of DYNAMIXEL Sensor Module.  If the sensor value is greater than the reference value, the bit which belongs to the sensor of IR Obstacle Detected (Address 0x20) is set to '1' because the object is located within a certain distance; if the sensor value is less than the reference value, the bit is set to '0' since the object is not located within a certain distance.
 IR Obstacle Detect Compare Value is assigned to two places: ROM(Address 0x14) and RAM(Address 0x34), and when the power is turned on, the value of EEPROM is copied to RAM.
  
 ### <a name="brightness-reference"></a>Light Detect Compare Value
-The reference value is set in the estimated place where a light is turned on in the light-brightness sensor of Dynamixel Sensor Module. If the sensor value is grater than the reference value, the bit which belongs to Light Detected is set to '1' because the light is brighter than a certain brightness; if the sensor value is less than the reference value, the bit is set to '0' since the light is not brighter than a certain brightness.
+The reference value is set in the estimated place where a light is turned on in the light-brightness sensor of DYNAMIXEL Sensor Module. If the sensor value is grater than the reference value, the bit which belongs to Light Detected is set to '1' because the light is brighter than a certain brightness; if the sensor value is less than the reference value, the bit is set to '0' since the light is not brighter than a certain brightness.
 Light Detect Compare Value is assigned to two places: ROM(Address 0x15) and RAM(Address 0x35), and when the power is turned on, the value of EEPROM is copied to RAM.
  
 ### <a name="distance-data"></a>IR Distance Sensor Value (Left/Center/Right)
-It is the IR sensor value of Dynamixel Sensor Module for distance measurement.  If the infrared rays are emitted from the IR-emitting part of AX-S1, the emitted infrared rays are reflected after hitting walls or objects.  The amount of the reflected rays is measured by the IR-receiving part of AX-S1, and the higher value is acquired, the closer walls and objects are located.  The measured values have the range of 0~255; only 255 may be appeared if any object or wall is located within a certain distance.
+It is the IR sensor value of DYNAMIXEL Sensor Module for distance measurement.  If the infrared rays are emitted from the IR-emitting part of AX-S1, the emitted infrared rays are reflected after hitting walls or objects.  The amount of the reflected rays is measured by the IR-receiving part of AX-S1, and the higher value is acquired, the closer walls and objects are located.  The measured values have the range of 0~255; only 255 may be appeared if any object or wall is located within a certain distance.
 Since it is an IR-mesurement type, reflection ratio may vary depending on the color and the surface texture of walls and objects; the measured value can be different from the expected value.
  
 ### <a name="brightness-data"></a>Light Brightness Sensor Value (Left/Center/Right)
-It is the light detection sensor value of Dynamixel Sensor Module. The concept of this sensor is similar to IR sensor value's, but it is measured without turning on the IR-emitting part; it can measure only infrared rays from a light.  For that reason, the light brightness sensor value can be measured from the light which emits a lot of infrared rays such as lightbulb, and also lights from a lighter or candles can be measurede.  The measured value has the range of 0~255.
+It is the light detection sensor value of DYNAMIXEL Sensor Module. The concept of this sensor is similar to IR sensor value's, but it is measured without turning on the IR-emitting part; it can measure only infrared rays from a light.  For that reason, the light brightness sensor value can be measured from the light which emits a lot of infrared rays such as lightbulb, and also lights from a lighter or candles can be measurede.  The measured value has the range of 0~255.
  
 ### <a name="ir-obstacle"></a>IR Obstacle Detected
 If IR Distance Sensor value of AX-S1 is greater than the reference value, a certain bit of object detection value is set to '1', judging an object is detected.
@@ -252,5 +252,5 @@ The types of AX-S1 option frames are as follows. The frame of AX-S1 is compatibl
 
 ![](/assets/images/parts/sensors/ax-s1_09.png)
 
-[Dynamixel Communication]: /docs/en/dxl/protocol1/#communication-overview
+[DYNAMIXEL Communication]: /docs/en/dxl/protocol1/#communication-overview
 [Communication Hardware Composition]: /docs/en/dxl/ax/ax-12w/#pin-assignment

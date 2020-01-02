@@ -91,7 +91,7 @@ Press `Reset Button` of OpenCR1.0 to enable torque for OpenMANIPULATOR-X.
 
 2. Turn on the OpenCR1.0 switch.
 
-3. Press `Reset Button` of OpenCR1.0 and check DYNAMIXELs of OpenMANIPULATOR-X are torque enabled.
+3. Press `Reset Button` of OpenCR1.0 and check DYNAMIXEL's of OpenMANIPULATOR-X are torque enabled.
 
 4. Search downloaded processing file from **Folder where you downloaded the source code** > `open_manipulator_processing` > `Chain` > `Chain.pde` and open it on Processing IDE.
 

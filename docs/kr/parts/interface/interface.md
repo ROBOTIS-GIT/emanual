@@ -17,7 +17,7 @@ header:
 
 [![](/assets/images/parts/interface/ln101.jpg)](/docs/kr/parts/interface/ln-101/)
 
-# [USB2Dynamixel](#usb2dynamixel)
+# [USB2DYNAMIXEL](#usb2dynamixel)
 
 [![](/assets/images/parts/interface/usb2dynamixel_product.jpg)](/docs/kr/parts/interface/usb2dynamixel/)
 

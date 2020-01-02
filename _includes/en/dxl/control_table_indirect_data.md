@@ -11,7 +11,7 @@ If specific address is allocated to Indirect Address, Indirect Address inherits 
 2. Indirect Address 3(172) : change the value to '117' which is the second address of Goal Position.
 3. Indirect Address 4(174) : change the value to '118' which is the third address of Goal Position.
 4. Indirect Address 5(176) : change the value to '119' which is the fourth address of Goal Position.
-5. Set 4 byte value '1,024' to Indirect Data 2 : Goal Position(116) also becomes '1024' and Dynamixel moves.
+5. Set 4 byte value '1,024' to Indirect Data 2 : Goal Position(116) also becomes '1024' and DYNAMIXEL moves.
 
 | Indirect Address Range | Description     |
 | :------------- | :------------- |

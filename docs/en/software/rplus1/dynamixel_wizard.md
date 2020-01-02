@@ -23,8 +23,8 @@ The main roles of the program are as follows:
 
 # [Connecting Dynamixel](#connecting-dynamixel)
 
-1. Connect Dynamixel to PC through [USB2Dynamixel].
-  - Please refer to [USB2Dynamixel] for how to connect.
+1. Connect Dynamixel to PC through [USB2DYNAMIXEL].
+  - Please refer to [USB2DYNAMIXEL] for how to connect.
   - The appropriate power cable for Dynamixel must be connected separately.
  
 2. Select the communication port.  
@@ -44,7 +44,6 @@ The main roles of the program are as follows:
 5. Start the management. (Please refer to how to manage for each Dynamixel.)
 
     ![](/assets/images/sw/rplus1/wizard/dynamixel_wizard_005.png)
-
 
 # [Firmware Update](#firmware-update)
 
@@ -81,7 +80,7 @@ If any problems occur in Dynamixel firmware, Dynamixel Wizard can restore the fi
  
 {% capture wizard_warning_01 %}
 **CAUTION** : Every data value will be initialized after the firmware restoration. Please check once again the ID and Baud rate before executing the program if you restored the firmware.  
-Please check the mode on the USB2Dynamixel. 3 pin cables should be set to TTL and 4 pin cables should be set to the RS485 switch.
+Please check the mode on the USB2DYNAMIXEL. 3 pin cables should be set to TTL and 4 pin cables should be set to the RS485 switch.
 {% endcapture %}
 
 <div class="notice--warning">{{ wizard_warning_01 | markdownify }}</div>
@@ -104,7 +103,7 @@ Please check the mode on the USB2Dynamixel. 3 pin cables should be set to TTL an
  
 4. Select Dynamixel Connection Port  
     Dynamixel cannot be searched automatically because the firmware is not recognized. Therefore, the users must set the Dynamixel connected port manually.  Since Dynamixel cannot be recognized if the port is in use, finish other programs, and then continue the procedure.  
-    Select USB2Dynamixel-connected port and press "Search" button.
+    Select USB2DYNAMIXEL-connected port and press "Search" button.
 
     ![](/assets/images/sw/rplus1/wizard/dynamixel_wizard_015.png)
  
@@ -157,7 +156,7 @@ If during gear replacement the horn’s position becomes misaligned position can
 ## MX Series Calibration Procedure
 
 1. Connect hardware  
-    Connect the MX hardware to USB2Dynamixel. Select the switch to either TTL or RS485.  
+    Connect the MX hardware to USB2DYNAMIXEL. Select the switch to either TTL or RS485.  
     Use a separate power supply for the calibration adapter.
 
     ![](/assets/images/sw/rplus1/wizard/dynamixel_wizard_023.jpg)
@@ -224,4 +223,4 @@ If during gear replacement the horn’s position becomes misaligned position can
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mAm_9C1MoAs" frameborder="0" allowfullscreen></iframe>
 
-[USB2Dynamixel]: /docs/en/parts/interface/usb2dynamixel/
+[USB2DYNAMIXEL]: /docs/en/parts/interface/usb2dynamixel/

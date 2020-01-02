@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/software/dynamixel/dynamixel_sdk/library_setup/python_macos/dummy_dummy_dummy
 sidebar:
-  title: DynamixelSDK
+  title: DYNAMIXEL SDK
   nav: "dynamixel_sdk"
 ---
 
@@ -50,11 +50,11 @@ sidebar:
 
 ### [Building and Running the Sample Code](#building-and-running-the-sample-code)
 
-The Dynamixel SDK example code for Python uses the library files built in previous step.
+The DYNAMIXEL SDK example code for Python uses the library files built in previous step.
 
 #### Run Example
 
-* Open `python` folder with `Atom`. Modify the settings that is needed for the Dynamixel control. 
+* Open `python` folder with `Atom`. Modify the settings that is needed for the DYNAMIXEL control. 
 <!--
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/python/linux/sample_code/py5.png)
 -->

@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/software/dynamixel/dynamixel_sdk/api_reference/cpp/cpp_groupbulkwrite/
 sidebar:
-  title: DynamixelSDK
+  title: DYNAMIXEL SDK
   nav: "dynamixel_sdk"
 ---
 
@@ -43,7 +43,7 @@ sidebar:
 | **[removeParam](#removeparam)** | Removes parameter on the storage             |
 | **[changeParam](#changeparam)** | Changes parameter on the storage             |
 | **[clearParam](#clearparam)**   | Clears parameter storage                     |
-| **[txPacket](#txpacket)**       | Transmits packet to the number of Dynamixels |
+| **[txPacket](#txpacket)**       | Transmits packet to the number of DYNAMIXEL's |
 
 
 
@@ -62,14 +62,14 @@ bool addParam(UINT8_T id, UINT16_T start_address, UINT16_T data_length, UINT8_T 
 
 | Parameters    | Description    |
 |:--------------|:---------------|
-| id            | Dynamixel ID   |
+| id            | DYNAMIXEL ID   |
 | start_address | Start address  |
 | data_length   | Data length    |
 | data          | Data for write |
 
 - Detailed Description
 
-   This function pushes id to the Dynamixel ID list, and initializes the parameter storage by setting `start_address` and `data_length`. It returns false when the target ID exists already in the ID list, or returns true.
+   This function pushes id to the DYNAMIXEL ID list, and initializes the parameter storage by setting `start_address` and `data_length`. It returns false when the target ID exists already in the ID list, or returns true.
 
 
 ##### removeParam
@@ -81,11 +81,11 @@ void removeParam(UINT8_T id)
 
 | Parameters | Description  |
 |:-----------|:-------------|
-| id         | Dynamixel ID |
+| id         | DYNAMIXEL ID |
 
 - Detailed Description
 
-   This function removes target id in the Dynamixel ID list.
+   This function removes target id in the DYNAMIXEL ID list.
 
 
 ##### changeParam
@@ -97,7 +97,7 @@ void removeParam(UINT8_T id)
 
 | Parameters    | Description    |
 |:--------------|:---------------|
-| id            | Dynamixel ID   |
+| id            | DYNAMIXEL ID   |
 | start_address | Start address  |
 | data_length   | Data length    |
 | data          | data for write |
@@ -118,7 +118,7 @@ void clearParam()
 
 - Detailed Description
 
-   This function clears the Dynamixel ID list.
+   This function clears the DYNAMIXEL ID list.
 
 
 ##### txPacket
@@ -132,4 +132,4 @@ int txPacket()
 
 - Detailed Description
 
-   This function transmits the packet by using `bulkWriteTxOnly()` function. It returns `COMM_NOT_AVAILABLE` when the class uses Protocol 1.0 or there is no item on the Dynamixel ID list, or returns communication result.
+   This function transmits the packet by using `bulkWriteTxOnly()` function. It returns `COMM_NOT_AVAILABLE` when the class uses Protocol 1.0 or there is no item on the DYNAMIXEL ID list, or returns communication result.

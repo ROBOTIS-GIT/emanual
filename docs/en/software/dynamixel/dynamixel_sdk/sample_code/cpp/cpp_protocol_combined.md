@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/software/dynamixel/dynamixel_sdk/sample_code/cpp_protocol_combined/
 sidebar:
-  title: DynamixelSDK
+  title: DYNAMIXEL SDK
   nav: "dynamixel_sdk"
 ---
 
@@ -51,7 +51,7 @@ sidebar:
 //
 
 // Be aware that:
-// This example configures two different control tables (especially, if it uses Dynamixel and Dynamixel PRO). It may change critical Dynamixel parameter on the control table, if Dynamixels have wrong ID.
+// This example configures two different control tables (especially, if it uses Dynamixel and Dynamixel PRO). It may change critical Dynamixel parameter on the control table, if DYNAMIXEL have wrong ID.
 //
 
 #ifdef __linux__
@@ -65,7 +65,7 @@ sidebar:
 #include <stdlib.h>
 #include <stdio.h>
 
-#include "dynamixel_sdk.h"                                  // Uses Dynamixel SDK library
+#include "dynamixel_sdk.h"                                  // Uses DYNAMIXEL SDK library
 
 // Control table address for Dynamixel MX
 #define ADDR_MX_TORQUE_ENABLE           24                  // Control table address is different in Dynamixel model
@@ -349,10 +349,10 @@ The function `abs()` is in the example code, and it needs `stdlib.h` to be inclu
 The example shows Dynamixel status in sequence by the function `printf()`. So here `stdio.h` is needed.
 
 ``` cpp
-#include "dynamixel_sdk.h"                                   // Uses Dynamixel SDK library
+#include "dynamixel_sdk.h"                                   // Uses DYNAMIXEL SDK library
 ```
 
-All libraries of Dynamixel SDK are linked with the header file `dynamixel_sdk.h`.
+All libraries of DYNAMIXEL SDK are linked with the header file `dynamixel_sdk.h`.
 
 ``` cpp
 // Control table address for Dynamixel MX

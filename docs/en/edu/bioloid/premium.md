@@ -36,7 +36,7 @@ sidebar:
 - [DMS Sensor]
 - [IR Sensor]
 - [Gyro Sensor]
-- [USB2Dynamixel]
+- [USB2DYNAMIXEL]
 
 ## [Operating](#operating)
 
@@ -82,11 +82,11 @@ If the robot has been incorrectly assembled to an extent where it may be severel
 #### The robot type and melody do not match.
 - Check whether the motors with ID 7 ~ 10 are assembled properly. Check for loose connections
 
-|Robot Type|"Do"|"Do Re"|"Do Re Mi"|Repeat "Do Re Mi"|
-|:---:|:---:|:---:|:---:|:---:|
-|TYPE A|O(Correctly Assembled)|Check cables for ID 9~10|Check cables for ID 7~8|Some of the cables have not been connected properly. Please refer to the Assembly Manual and check again.|
-|TYPE B|-|O(Correctly Assembled)|ID 9 and10 connected where ID 7 and 8 should be connected|Some of the cables have not been connected properly. Please refer to the Assembly Manual and check again.|
-|TYPE C|-|ID 7 and 8 connected where  ID 9 and 10 should be connected|O(Correctly Assembled)|Some of the cables have not been connected properly. Please refer to the Assembly Manual and check again.|
+| Robot Type |          "Do"          |                           "Do Re"                           |                        "Do Re Mi"                         |                                             Repeat "Do Re Mi"                                             |
+|:----------:|:----------------------:|:-----------------------------------------------------------:|:---------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------:|
+|   TYPE A   | O(Correctly Assembled) |                  Check cables for ID 9~10                   |                  Check cables for ID 7~8                  | Some of the cables have not been connected properly. Please refer to the Assembly Manual and check again. |
+|   TYPE B   |           -            |                   O(Correctly Assembled)                    | ID 9 and10 connected where ID 7 and 8 should be connected | Some of the cables have not been connected properly. Please refer to the Assembly Manual and check again. |
+|   TYPE C   |           -            | ID 7 and 8 connected where  ID 9 and 10 should be connected |                  O(Correctly Assembled)                   | Some of the cables have not been connected properly. Please refer to the Assembly Manual and check again. |
 
 ### Robot in Action
 
@@ -116,64 +116,64 @@ The RC-100 is used to control the robot.
 
 ##### Walking Motions
 
-|Buttons| Motion |
-|:---:|:---:|
-|U|Forward|
-|D|Backward|
-|L|Turn Left|
-|R|Turn Right|
-|U + L|Walk Forward + Left|
-|D + L|Walk Left Sideways|
-|U + R|Walk Forward + Right|
-|D + R|Walk Right Sideways|
+| Buttons |        Motion        |
+|:-------:|:--------------------:|
+|    U    |       Forward        |
+|    D    |       Backward       |
+|    L    |      Turn Left       |
+|    R    |      Turn Right      |
+|  U + L  | Walk Forward + Left  |
+|  D + L  |  Walk Left Sideways  |
+|  U + R  | Walk Forward + Right |
+|  D + R  | Walk Right Sideways  |
 
 ##### Change Postures
 
-|Buttons| Motion |
-|:---:|:---:|
-|1 + U|Getting up Backward (When lying on stomach)|
-|1 + D|Getting up Forward (When lying on back)|
-|1 + L|Push-up|
-|1 + R|Handstand|
-|2 + U|Pound Chest|
-|2 + D|Scratch Head|
-|2 + L|Cheer|
-|2 + R|Bow|
+| Buttons |                   Motion                    |
+|:-------:|:-------------------------------------------:|
+|  1 + U  | Getting up Backward (When lying on stomach) |
+|  1 + D  |   Getting up Forward (When lying on back)   |
+|  1 + L  |                   Push-up                   |
+|  1 + R  |                  Handstand                  |
+|  2 + U  |                 Pound Chest                 |
+|  2 + D  |                Scratch Head                 |
+|  2 + L  |                    Cheer                    |
+|  2 + R  |                     Bow                     |
 
 ##### Soccer Motions
 
-|Buttons| Motion |
-|:---:|:---:|
-|3 + U|Block Right (Release button to return to normal position)|
-|3 + D|Block Left (Release button to return to normal position)|
-|3 + L|Shoot with left foot|
-|3 + R|Shoot with right foot|
+| Buttons |                          Motion                           |
+|:-------:|:---------------------------------------------------------:|
+|  3 + U  | Block Right (Release button to return to normal position) |
+|  3 + D  | Block Left (Release button to return to normal position)  |
+|  3 + L  |                   Shoot with left foot                    |
+|  3 + R  |                   Shoot with right foot                   |
 
 ##### Battle Motions
 
-|Buttons| Motion |
-|:---:|:---:|
-|4 + U|Attack|
-|4 + D|Defend (Release button to return to normal position)|
-|4 + L|Attack Left|
-|4 + R|Attack Right|
+| Buttons |                        Motion                        |
+|:-------:|:----------------------------------------------------:|
+|  4 + U  |                        Attack                        |
+|  4 + D  | Defend (Release button to return to normal position) |
+|  4 + L  |                     Attack Left                      |
+|  4 + R  |                     Attack Right                     |
 
 ##### Setting the CM-530 IR Channels
 
 After mounting the IR receiver on CM-530 under control mode, you can set the channels to control it remotely by pressing the Aux button. If you change the channel of the controller, you must also change the channel of RC-100. On how to change the channel of RC-100, please refer to Changing RC-100's Channel.
 
-|Buttons| Motion |
-|:---:|:---:|
-|Start + U|Set the RC-100 channel as 1|
-|Start + D|Set the RC-100 channel as 3|
-|Start + L|Set the RC-100 channel as 2|
-|Start + R|Set the RC-100 channel as 4|
+|  Buttons  |           Motion            |
+|:---------:|:---------------------------:|
+| Start + U | Set the RC-100 channel as 1 |
+| Start + D | Set the RC-100 channel as 3 |
+| Start + L | Set the RC-100 channel as 2 |
+| Start + R | Set the RC-100 channel as 4 |
 
 - If the robot does not receive commends for a period of time, it will standby in a seated position.
 
-|![](/assets/images/edu/bioloid/premium_operation_05.jpg)|![](/assets/images/edu/bioloid/premium_operation_06.jpg)|![](/assets/images/edu/bioloid/premium_operation_07.jpg)|
-|:---:|:---:|:---:|
-|When being controlled||Seated in a standby position|
+| ![](/assets/images/edu/bioloid/premium_operation_05.jpg) | ![](/assets/images/edu/bioloid/premium_operation_06.jpg) | ![](/assets/images/edu/bioloid/premium_operation_07.jpg) |
+|:--------------------------------------------------------:|:--------------------------------------------------------:|:--------------------------------------------------------:|
+|                  When being controlled                   |                                                          |               Seated in a standby position               |
 
 ##### My remote controller does not work properly.
 - Set to control mode.
@@ -193,9 +193,9 @@ The robot will clap depending on how many times you clap.
 When DMS senor detects an object, the robot greets the user.
 If the robot does not sense any sound or object for a while, it performs various motions on its own.
 
-|![](/assets/images/edu/bioloid/premium_operation_08.jpg)|![](/assets/images/edu/bioloid/premium_operation_06.jpg)|![](/assets/images/edu/bioloid/premium_operation_09.jpg)|
-|:---:|:---:|:---:|
-|Claps depending on how many times you clap||Shows various movements|
+| ![](/assets/images/edu/bioloid/premium_operation_08.jpg) | ![](/assets/images/edu/bioloid/premium_operation_06.jpg) | ![](/assets/images/edu/bioloid/premium_operation_09.jpg) |
+|:--------------------------------------------------------:|:--------------------------------------------------------:|:--------------------------------------------------------:|
+|        Claps depending on how many times you clap        |                                                          |                 Shows various movements                  |
 
 #### Autonomous Walking Mode
 
@@ -251,21 +251,21 @@ The walking motion files used in the Walking Machine can be found on pages 31~22
 
 The walking motion files used in the Walking Machine contain 16 different walking patterns shown below.
 
-|Forward|Backward|Left Turn|Right Turn|
-|:---:|:---:|:---:|:---:|
-|![](/assets/images/edu/bioloid/premium_tutorial_02.png)|![](/assets/images/edu/bioloid/premium_tutorial_03.png)|![](/assets/images/edu/bioloid/premium_tutorial_04.png)|![](/assets/images/edu/bioloid/premium_tutorial_05.png)|
+|                         Forward                         |                        Backward                         |                        Left Turn                        |                       Right Turn                        |
+|:-------------------------------------------------------:|:-------------------------------------------------------:|:-------------------------------------------------------:|:-------------------------------------------------------:|
+| ![](/assets/images/edu/bioloid/premium_tutorial_02.png) | ![](/assets/images/edu/bioloid/premium_tutorial_03.png) | ![](/assets/images/edu/bioloid/premium_tutorial_04.png) | ![](/assets/images/edu/bioloid/premium_tutorial_05.png) |
 
-|Walk Sideways + Left|Walk Sideways + Right|Turn Left + Forward|Turn Right + Forward|
-|:---:|:---:|:---:|:---:|
-|![](/assets/images/edu/bioloid/premium_tutorial_06.png)|![](/assets/images/edu/bioloid/premium_tutorial_07.png)|![](/assets/images/edu/bioloid/premium_tutorial_08.png)|![](/assets/images/edu/bioloid/premium_tutorial_09.png)|
+|                  Walk Sideways + Left                   |                  Walk Sideways + Right                  |                   Turn Left + Forward                   |                  Turn Right + Forward                   |
+|:-------------------------------------------------------:|:-------------------------------------------------------:|:-------------------------------------------------------:|:-------------------------------------------------------:|
+| ![](/assets/images/edu/bioloid/premium_tutorial_06.png) | ![](/assets/images/edu/bioloid/premium_tutorial_07.png) | ![](/assets/images/edu/bioloid/premium_tutorial_08.png) | ![](/assets/images/edu/bioloid/premium_tutorial_09.png) |
 
-|Backward + Left|Backward + Right|Avoid Left|Avoid Right|
-|:---:|:---:|:---:|:---:|
-|![](/assets/images/edu/bioloid/premium_tutorial_10.png)|![](/assets/images/edu/bioloid/premium_tutorial_11.png)|![](/assets/images/edu/bioloid/premium_tutorial_12.png)|![](/assets/images/edu/bioloid/premium_tutorial_13.png)|
+|                     Backward + Left                     |                    Backward + Right                     |                       Avoid Left                        |                       Avoid Right                       |
+|:-------------------------------------------------------:|:-------------------------------------------------------:|:-------------------------------------------------------:|:-------------------------------------------------------:|
+| ![](/assets/images/edu/bioloid/premium_tutorial_10.png) | ![](/assets/images/edu/bioloid/premium_tutorial_11.png) | ![](/assets/images/edu/bioloid/premium_tutorial_12.png) | ![](/assets/images/edu/bioloid/premium_tutorial_13.png) |
 
-|Forward + Left Diagonally|Forward + Right Diagonally|Backward + Left Diagonally|Backward + Right Diagonally|
-|:---:|:---:|:---:|:---:|
-|![](/assets/images/edu/bioloid/premium_tutorial_14.png)|![](/assets/images/edu/bioloid/premium_tutorial_15.png)|![](/assets/images/edu/bioloid/premium_tutorial_16.png)|![](/assets/images/edu/bioloid/premium_tutorial_17.png)|
+|                Forward + Left Diagonally                |               Forward + Right Diagonally                |               Backward + Left Diagonally                |               Backward + Right Diagonally               |
+|:-------------------------------------------------------:|:-------------------------------------------------------:|:-------------------------------------------------------:|:-------------------------------------------------------:|
+| ![](/assets/images/edu/bioloid/premium_tutorial_14.png) | ![](/assets/images/edu/bioloid/premium_tutorial_15.png) | ![](/assets/images/edu/bioloid/premium_tutorial_16.png) | ![](/assets/images/edu/bioloid/premium_tutorial_17.png) |
 
 ### Task Code Overview
 
@@ -285,12 +285,12 @@ The `WalkExecute` function executes each walking pattern and smoothly joins the 
 
 #### Walk Command No.
 
-|No.|Walking Pattern|No.|Walking Pattern|No.|Walking Pattern|No.|Walking Pattern|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|1|Forward	|2|Backward	|3|Left Turn	|4|Right Turn|
-|5|Walk Sideways + Left	|6|Walk Sideways + Right	|7|Turn Left + Forward	|8|Turn Right + Forward|
-|9|Backward + Left	|10|Backward + Right	|11|Avoid Left	|12|Avoid Right|
-|13|Forward + Left Diagonally	|14|Forward + Right Diagonally	|15|Backward + Left Diagonally|16|Backward + Right Diagonally|
+| No. |      Walking Pattern      | No. |      Walking Pattern       | No. |      Walking Pattern       | No. |       Walking Pattern       |
+|:---:|:-------------------------:|:---:|:--------------------------:|:---:|:--------------------------:|:---:|:---------------------------:|
+|  1  |          Forward          |  2  |          Backward          |  3  |         Left Turn          |  4  |         Right Turn          |
+|  5  |   Walk Sideways + Left    |  6  |   Walk Sideways + Right    |  7  |    Turn Left + Forward     |  8  |    Turn Right + Forward     |
+|  9  |      Backward + Left      | 10  |      Backward + Right      | 11  |         Avoid Left         | 12  |         Avoid Right         |
+| 13  | Forward + Left Diagonally | 14  | Forward + Right Diagonally | 15  | Backward + Left Diagonally | 16  | Backward + Right Diagonally |
 
 #### Start Program
 
@@ -383,10 +383,10 @@ Objective for this tutorial is to add a new motion using RoboPlus Motion.
 
 Let’s learn how to add 4 motions below using the RoboPlus Motion program.
 
-|Motion Page No|Movement Description|Motion Page No|Movement Description|
-|:---:|:---:|:---:|:---:|
-|14|Block ball on the right|27|Get up while lying on stomach|
-|16|Block ball on the left|28|Get up while lying on back|
+| Motion Page No |  Movement Description   | Motion Page No |     Movement Description      |
+|:--------------:|:-----------------------:|:--------------:|:-----------------------------:|
+|       14       | Block ball on the right |       27       | Get up while lying on stomach |
+|       16       | Block ball on the left  |       28       |  Get up while lying on back   |
 
 [Download](http://support.robotis.com/en/baggage_files/bioloid/bio_prm_usermotionexam_en.mtn) Motion File(BIO_PRM_UserMotionExam_EN.mtn)
 
@@ -554,115 +554,115 @@ Please refer to the [Gripper Assembly].
 - [How to Download of task code]
 - [How to Download motion file]
 
-|Robot Type|File Type|Download|
-|:---:|:---:|:---:|
-|Assembly Manual|PDF File|[Download][premium_file_01]|
-|A Type|Task Code|[Download][premium_file_02]|
-|A Type|Motion File|[Download][premium_file_03]|
-|B Type|Task Code|[Download][premium_file_04]|
-|B Type|Motion File|[Download][premium_file_05]|
-|C Type|Task Code|[Download][premium_file_06]|
-|C Type|Motion File|[Download][premium_file_07]|
+|   Robot Type    |  File Type  |          Download           |
+|:---------------:|:-----------:|:---------------------------:|
+| Assembly Manual |  PDF File   | [Download][premium_file_01] |
+|     A Type      |  Task Code  | [Download][premium_file_02] |
+|     A Type      | Motion File | [Download][premium_file_03] |
+|     B Type      |  Task Code  | [Download][premium_file_04] |
+|     B Type      | Motion File | [Download][premium_file_05] |
+|     C Type      |  Task Code  | [Download][premium_file_06] |
+|     C Type      | Motion File | [Download][premium_file_07] |
 
 ### [Humanoid Fight](#humanoid-fight)
 
-|Robot Type|File Type|Download|
-|:---:|:---:|:---:|
-|A Type|Humanoid Fight Task Code|[Download][premium_file_08]|
-|A Type|Humanoid Fight Motion File|[Download][premium_file_09]|
+| Robot Type |         File Type          |          Download           |
+|:----------:|:--------------------------:|:---------------------------:|
+|   A Type   |  Humanoid Fight Task Code  | [Download][premium_file_08] |
+|   A Type   | Humanoid Fight Motion File | [Download][premium_file_09] |
 
 #### Walking
 
-|Buttons| Motion |Buttons| Motion |
-|:---:|:---:|:---:|:---:|
-|U|Move Forward|D|Move Backward|
-|L|Turn Left|R|Turn Right|
-|U + L|Move Forward and Turn Left|U + R|Move Forward and Turn Right|
-|L + 5|Move Leftward|L + 5 + 6|Move Leftward Quickly|
-|L + U + 5|Move Forward and Leftward|L + D + 5|Move Backward and Leftward|
-|R + 5|Move Rightward|R + 5 + 6|Move Rightward Quickly|
-|R + U + 5|Move Forward and Rightward|R + D + 5|Move Backward and Rightward|
+|  Buttons  |           Motion           |  Buttons  |           Motion            |
+|:---------:|:--------------------------:|:---------:|:---------------------------:|
+|     U     |        Move Forward        |     D     |        Move Backward        |
+|     L     |         Turn Left          |     R     |         Turn Right          |
+|   U + L   | Move Forward and Turn Left |   U + R   | Move Forward and Turn Right |
+|   L + 5   |       Move Leftward        | L + 5 + 6 |    Move Leftward Quickly    |
+| L + U + 5 | Move Forward and Leftward  | L + D + 5 | Move Backward and Leftward  |
+|   R + 5   |       Move Rightward       | R + 5 + 6 |   Move Rightward Quickly    |
+| R + U + 5 | Move Forward and Rightward | R + D + 5 | Move Backward and Rightward |
 
 #### Attack
 
-|Buttons| Motion |Buttons| Motion |
-|:---:|:---:|:---:|:---:|
-|1 + L|Attack Diagonal Left|6 + 2|Strong Left Attack|
-|1 + R|Attack Diagonal Right|6 + 4|Strong Right Attack|
-|2 + U|Attack Front|6 + 1|Strong Front Attack|
-|2 + L|Attack Left|4 + U(4 + L)|Grab 1|
-|2 + R|Attack Right|4 + D(4 + R)|Grab 2|
-|3|Attack Left and Right|-|-|
+| Buttons |        Motion         |   Buttons    |       Motion        |
+|:-------:|:---------------------:|:------------:|:-------------------:|
+|  1 + L  | Attack Diagonal Left  |    6 + 2     | Strong Left Attack  |
+|  1 + R  | Attack Diagonal Right |    6 + 4     | Strong Right Attack |
+|  2 + U  |     Attack Front      |    6 + 1     | Strong Front Attack |
+|  2 + L  |      Attack Left      | 4 + U(4 + L) |       Grab 1        |
+|  2 + R  |     Attack Right      | 4 + D(4 + R) |       Grab 2        |
+|    3    | Attack Left and Right |      -       |          -          |
 
 #### ETC
 
-|Buttons| Motion |Buttons| Motion |
-|:---:|:---:|:---:|:---:|
-|5+6+D+3|Torque Off|5+6+U+1|Torque On|
-|1 + U|Stand Up from face down|1 + D|Stand Up from back down|
+| Buttons |         Motion          | Buttons |         Motion          |
+|:-------:|:-----------------------:|:-------:|:-----------------------:|
+| 5+6+D+3 |       Torque Off        | 5+6+U+1 |        Torque On        |
+|  1 + U  | Stand Up from face down |  1 + D  | Stand Up from back down |
 
 ### [Humanoid Soccer](#humanoid-soccer)
 
-|Robot Type|File Type|Download|
-|:---:|:---:|:---:|
-|A Type|Humanoid Soccer Task Code|[Download][premium_file_10]|
-|A Type|Humanoid Soccer Motion File|[Download][premium_file_11]|
+| Robot Type |          File Type          |          Download           |
+|:----------:|:---------------------------:|:---------------------------:|
+|   A Type   |  Humanoid Soccer Task Code  | [Download][premium_file_10] |
+|   A Type   | Humanoid Soccer Motion File | [Download][premium_file_11] |
 
 #### Walking
 
-|Buttons| Motion |Buttons| Motion |
-|:---:|:---:|:---:|:---:|
-|U|Move Forward|D|Move Backward|
-|L|Turn Left|R|Turn Right|
-|U + L|Move Forward and Turn Left|U + R|Move Forward and Turn Right|
-|L + 5|Move Leftward|L + 5 + 6|Move Leftward Quickly|
-|L + U + 5|Move Forward and Leftward|L + D + 5|Move Backward and Leftward|
-|R + 5|Move Rightward|R + 5 + 6|Move Rightward Quickly|
-|R + U + 5|Move Forward and Rightward|R + D + 5|Move Backward and Rightward|
+|  Buttons  |           Motion           |  Buttons  |           Motion            |
+|:---------:|:--------------------------:|:---------:|:---------------------------:|
+|     U     |        Move Forward        |     D     |        Move Backward        |
+|     L     |         Turn Left          |     R     |         Turn Right          |
+|   U + L   | Move Forward and Turn Left |   U + R   | Move Forward and Turn Right |
+|   L + 5   |       Move Leftward        | L + 5 + 6 |    Move Leftward Quickly    |
+| L + U + 5 | Move Forward and Leftward  | L + D + 5 | Move Backward and Leftward  |
+|   R + 5   |       Move Rightward       | R + 5 + 6 |   Move Rightward Quickly    |
+| R + U + 5 | Move Forward and Rightward | R + D + 5 | Move Backward and Rightward |
 
 #### Offense
 
-|Buttons| Motion |Buttons| Motion |
-|:---:|:---:|:---:|:---:|
-|2 + U|Left Kick Forward|4 + U|Right Kick Forward|
-|2 + 6 + U|Strong Left Kick Forward|4 + 6 + U|Strong Right Kick Forward|
-|2 + D|Kick Backward|4 + D|Kick Backward|
-|2 + L|Kick Left|4 + L|Kick Left|
-|2 + R|Kick Right|4 + R|Kick Right|
+|  Buttons  |          Motion          |  Buttons  |          Motion           |
+|:---------:|:------------------------:|:---------:|:-------------------------:|
+|   2 + U   |    Left Kick Forward     |   4 + U   |    Right Kick Forward     |
+| 2 + 6 + U | Strong Left Kick Forward | 4 + 6 + U | Strong Right Kick Forward |
+|   2 + D   |      Kick Backward       |   4 + D   |       Kick Backward       |
+|   2 + L   |        Kick Left         |   4 + L   |         Kick Left         |
+|   2 + R   |        Kick Right        |   4 + R   |        Kick Right         |
 
 #### Defense
 
-|Buttons| Motion |Buttons| Motion |
-|:---:|:---:|:---:|:---:|
-|3|Prepare for Blocking|3 + L|Block Left|
-|3 + U|Block Front|3 + R|Block Right|
+| Buttons |        Motion        | Buttons |   Motion    |
+|:-------:|:--------------------:|:-------:|:-----------:|
+|    3    | Prepare for Blocking |  3 + L  | Block Left  |
+|  3 + U  |     Block Front      |  3 + R  | Block Right |
 
 #### ETC
 
-|Buttons| Motion |Buttons| Motion |
-|:---:|:---:|:---:|:---:|
-|5+6+D+3|Torque Off|5+6+U+1|Torque On|
-|1 + U|Stand Up from face down|1 + D|Stand Up from back down|
-|1 + L|Chest Beat|1 + R|Cheer|
+| Buttons |         Motion          | Buttons |         Motion          |
+|:-------:|:-----------------------:|:-------:|:-----------------------:|
+| 5+6+D+3 |       Torque Off        | 5+6+U+1 |        Torque On        |
+|  1 + U  | Stand Up from face down |  1 + D  | Stand Up from back down |
+|  1 + L  |       Chest Beat        |  1 + R  |          Cheer          |
 
 
 ## [Examples](#examples)
 
 ### [Beginner](#beginner)
 
-|Examples|Description|
-|:---:|:---|
-|1. Crossing Gate<br />![Ex_01][img_ex_beginner_01]|[Download][ex_beginner_1-1] Assembly Manual<br />[Download][ex_beginner_1-2] Task Code<br />[Download][ex_beginner_1-3] Video<br />`Devices` CM-530(x1), AX-12+(x1)<br />`Dynamixel Setting` AX-12+ ID[1]: Joint Mode<br />`RoboPlus Language`	Function, Call, Load, Endless Loop, If, Wait While<br />`Algorithm`	Control the Dynamixel's position using the buttons on the CM-530<br />`Operation Guide`<br />- Press the `U` button on the CM-530 to open the bar.<br />- Press the `D` button on the CM-530 to lower the bar.|
-|2. Universal Gauge<br />![Ex_02][img_ex_beginner_02]|[Download][ex_beginner_2-1] Assembly Manual<br />[Download][ex_beginner_2-2] Task Code<br />[Download][ex_beginner_2-3] Video<br />`Devices` CM-530(x1), AX-12+(x1)<br />`Dynamixel Setting`: AX-12+ ID[1]: Joint Mode<br />`RoboPlus Language`	Function, Call, Return, Load, Calculate, Endless Loop, If, Else if<br />`Algorithm`	Control the Dynamixel's speed using the buttons on the CM-530<br />`Operation Guide`<br />- Press the `U` button on the CM-530 to increase the gauge's speed.<br />- Press the `D` button on the CM-530 to decrease the gauge's speed.|
-|3. Crocodile Mouth<br />![Ex_03][img_ex_beginner_03]|[Download][ex_beginner_3-1] Assembly Manual<br />[Download][ex_beginner_3-2] Task Code<br />[Download][ex_beginner_3-3] Video<br />`Devices` CM-530(x1), AX-12+(x1), IR Sensor(x1)<br />`Dynamixel Setting`: AX-12+ ID[1]: Joint Mode<br />`RoboPlus Language`	Function, Call, Load, Endless Loop, If, Else If, Wait While<br />`Algorithm` Control the Dynamixel position and Buzzer with the value from the IR Sensor and Timer<br />`Operation Guide`<br />- The mouth opens when the front sensor detects something, and close when nothing is detected.<br />- It will open its mouth when it detects something.<br />- A melody will activate if nothing is detected for 10 seconds.|
-|4. Pan Tilt<br />![Ex_04][img_ex_beginner_04]|[Download][ex_beginner_4-1] Assembly Manual<br />[Download][ex_beginner_4-2] Task Code<br />[Download][ex_beginner_4-3] Video<br />`Devices` CM-530(x1), AX-12+(x2)<br />`Dynamixel Setting`: AX-12+ ID[1, 2]: Joint Mode<br />`RoboPlus Language`	Function, Call, Load, Calculate,Endless Loop,If, Else If, Wait While<br />`Algorithm`	Control the Pan Tilt using the buttons on the CM-530<br />`Operation Guide`<br />- Press the `U` button on the CM-530 to move  the tilt actuator (Up, Down) up.<br />- Press the `D` button on the CM-530 to move  the tilt actuator (Up, Down) down.<br />- Press the `R` button on the CM-530 to turn  the pan actuator (Sideways)  right.<br />- Press the `L` button on the CM-530 to turn  the pan actuator (Sideways) left.|
-|5. Parking Gate<br />![Ex_05][img_ex_beginner_05]|[Download][ex_beginner_5-1] Assembly Manual<br />[Download][ex_beginner_5-2] Task Code<br />[Download][ex_beginner_5-3] Video<br />`Devices` CM-530(x1), AX-12+(x2), IR Sensor(x1)<br />`Dynamixel Setting`: AX-12+ ID[1, 2]: Joint Mode<br />`RoboPlus Language` Function, Call, Load, Endless Loop, If, Else If, Wait While, Break Loop<br />`Algorithm`	Control the Dynamixel's position using the IR Sensor and Dynamixel's load value.<br />`Operation Guide`<br />- When an object is detected, the parking gate opens perpendicularly.<br />- When an object is detected and the bar is pushed, the parking gate opens horizontally.<br />- When an object is not detected, the parking gate closes.|
-|6. Smart Car<br />![Ex_06][img_ex_beginner_06]|[Download][ex_beginner_6-1] Assembly Manual<br />[Download][ex_beginner_6-2] Task Code<br />[Download][ex_beginner_6-3] Video<br />`Devices` CM-530(x1), AX-12+(x4), IR sensor(x2)<br />`Dynamixel Setting`: AX-12+ ID[1 ~ 4]: Wheel Mode<br />`RoboPlus Language` Function, Call, Load, Calculate, Jump, Lable, Endless Loop, If, Else If, Wait While<br />`Algorithm` Use the CM-530's buttons to set the mode and use the buttons and sensor value to control the rotation direction.<br />`Operation Guide`<br />- Press the `U` button together with the START button on the CM-530 to change to CONTROL mode.<br />- Press the `D` button together with the START button on the CM-530 to change to FREE mode.<br />- When you press the `L` button in CONTROL mode, it moves forward. The `R` button moves backward, `U` button moves rights, and the `D` button moves left. A melody will play each time it moves.<br />- When front sensor detects an object in FREE mode, it will turn right. When the lower sensor detects something, it will avoid the edge and turn right.|
-|7. Clapping Crab<br />![Ex_07][img_ex_beginner_07]|[Download][ex_beginner_7-1] Assembly Manual<br />[Download][ex_beginner_7-2] Task Code<br />[Download][ex_beginner_7-3] Video<br />`Devices` CM-530(x1), AX-12+(x2)<br />`Dynamixel Setting`: AX-12+ ID[1, 2]: Joint Mode<br />`RoboPlus Language` Load, Calculate, Endless Loop, If, Wait While<br />`Algorithm` Control the Dynamixel position using the number of times the MIC detects a sound.<br />`Operation Guide`<br />- The robot will standby with its arm open.<br />- The robot the number of time it detects a sound.|
-|8. Attacking Duck<br />![Ex_08][img_ex_beginner_08]|[Download][ex_beginner_8-1] Assembly Manual<br />[Download][ex_beginner_8-2] Task Code<br />[Download][ex_beginner_8-3] Video<br />`Devices` CM-530(x1), AX-12+(x3), IR Sensor(x2)<br />`Dynamixel Setting`: AX-12+ ID[1, 2, 3]: Joint Mode<br />`RoboPlus Language` Function, Call, Load, Endless Loop, If, Loop While, Wait While<br />`Algorithm`	Use the sensor detecting to control the Dynamixels<br />`Operation Guide`<br />- The robot moves sideways continuously and watches for objects.<br />- The robot follows the direction in which an object is detected then attacks when both sensors detect an object.|
-|9. Distance Level Meter<br />![Ex_09][img_ex_beginner_09]|[Download][ex_beginner_9-1] Assembly Manual<br />[Download][ex_beginner_9-2] Task Code<br />[Download][ex_beginner_9-3] Video<br />`Devices` CM-530(x1), AX-12+(x1), DMS Sensor(x1)<br />`Dynamixel Setting`: AX-12+ ID[1]: Joint Mode<br />`RoboPlus Language` Function, Call, Load, Calculate, Endless Loop<br />`Algorithm`	Control the Dynamixel position using the distance detected by the sensor.<br />`Operation Guide` The bar moves depending on the distance detected by the sensor.|
-|10. Line Tracer<br />![Ex_10][img_ex_beginner_10]|[Download][ex_beginner_10-1] Assembly Manual<br />[Download][ex_beginner_10-2] Task Code<br />[Download][ex_beginner_10-3] Video<br />`Devices` CM-530(x1), AX-12+(x2), IR Sensor(x2)<br />`Dynamixel Setting`: AX-12+ ID[1, 2]: Wheel Mode<br />`RoboPlus Language` Function, Call, Load, Calculate, Endless Loop, If, Else If, Else, Wait While<br />`Algorithm` Control the line tracer using the sensor's detection value.<br />`Operation Guide` The robot traces the black line.|
-|11. Walking Droid<br />![Ex_11][img_ex_beginner_11]|[Download][ex_beginner_11-1] Assembly Manual<br />[Download][ex_beginner_11-2] Task Code<br />[Download][ex_beginner_11-3] Motion File<br />[Download][ex_beginner_11-4] Video<br />`Devices` CM-530(x1), AX-12+(x4), IR Sensor(x1)<br />`Dynamixel Setting`: AX-12+ ID[1 ~ 4]: Joint Mode<br />`RoboPlus Language` Function, Call, Load, Endless Loop, If, Loop While, Wait While<br />`Algorithm`	Control various motions using the IR Sensor's value.<br />`Operation Guide`<br />- Place an object in the robot's path and start your robot.<br />- Checks whether the robot avoids obstacles while walking.|
+|                         Examples                          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+|:---------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    1. Crossing Gate<br />![Ex_01][img_ex_beginner_01]     | [Download][ex_beginner_1-1] Assembly Manual<br />[Download][ex_beginner_1-2] Task Code<br />[Download][ex_beginner_1-3] Video<br />`Devices` CM-530(x1), AX-12+(x1)<br />`DYNAMIXEL Setting` AX-12+ ID[1]: Joint Mode<br />`RoboPlus Language`	Function, Call, Load, Endless Loop, If, Wait While<br />`Algorithm`	Control DYNAMIXEL's position using the buttons on the CM-530<br />`Operation Guide`<br />- Press the `U` button on the CM-530 to open the bar.<br />- Press the `D` button on the CM-530 to lower the bar.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|   2. Universal Gauge<br />![Ex_02][img_ex_beginner_02]    | [Download][ex_beginner_2-1] Assembly Manual<br />[Download][ex_beginner_2-2] Task Code<br />[Download][ex_beginner_2-3] Video<br />`Devices` CM-530(x1), AX-12+(x1)<br />`DYNAMIXEL Setting`: AX-12+ ID[1]: Joint Mode<br />`RoboPlus Language`	Function, Call, Return, Load, Calculate, Endless Loop, If, Else if<br />`Algorithm`	Control DYNAMIXEL's speed using the buttons on the CM-530<br />`Operation Guide`<br />- Press the `U` button on the CM-530 to increase the gauge's speed.<br />- Press the `D` button on the CM-530 to decrease the gauge's speed.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|   3. Crocodile Mouth<br />![Ex_03][img_ex_beginner_03]    | [Download][ex_beginner_3-1] Assembly Manual<br />[Download][ex_beginner_3-2] Task Code<br />[Download][ex_beginner_3-3] Video<br />`Devices` CM-530(x1), AX-12+(x1), IR Sensor(x1)<br />`DYNAMIXEL Setting`: AX-12+ ID[1]: Joint Mode<br />`RoboPlus Language`	Function, Call, Load, Endless Loop, If, Else If, Wait While<br />`Algorithm` Control DYNAMIXEL position and Buzzer with the value from the IR Sensor and Timer<br />`Operation Guide`<br />- The mouth opens when the front sensor detects something, and close when nothing is detected.<br />- It will open its mouth when it detects something.<br />- A melody will activate if nothing is detected for 10 seconds.                                                                                                                                                                                                                                                                                                                                                                                               |
+|       4. Pan Tilt<br />![Ex_04][img_ex_beginner_04]       | [Download][ex_beginner_4-1] Assembly Manual<br />[Download][ex_beginner_4-2] Task Code<br />[Download][ex_beginner_4-3] Video<br />`Devices` CM-530(x1), AX-12+(x2)<br />`DYNAMIXEL Setting`: AX-12+ ID[1, 2]: Joint Mode<br />`RoboPlus Language`	Function, Call, Load, Calculate,Endless Loop,If, Else If, Wait While<br />`Algorithm`	Control the Pan Tilt using the buttons on the CM-530<br />`Operation Guide`<br />- Press the `U` button on the CM-530 to move  the tilt actuator (Up, Down) up.<br />- Press the `D` button on the CM-530 to move  the tilt actuator (Up, Down) down.<br />- Press the `R` button on the CM-530 to turn  the pan actuator (Sideways)  right.<br />- Press the `L` button on the CM-530 to turn  the pan actuator (Sideways) left.                                                                                                                                                                                                                                                                                                                |
+|     5. Parking Gate<br />![Ex_05][img_ex_beginner_05]     | [Download][ex_beginner_5-1] Assembly Manual<br />[Download][ex_beginner_5-2] Task Code<br />[Download][ex_beginner_5-3] Video<br />`Devices` CM-530(x1), AX-12+(x2), IR Sensor(x1)<br />`DYNAMIXEL Setting`: AX-12+ ID[1, 2]: Joint Mode<br />`RoboPlus Language` Function, Call, Load, Endless Loop, If, Else If, Wait While, Break Loop<br />`Algorithm`	Control DYNAMIXEL's position using the IR Sensor and DYNAMIXEL's load value.<br />`Operation Guide`<br />- When an object is detected, the parking gate opens perpendicularly.<br />- When an object is detected and the bar is pushed, the parking gate opens horizontally.<br />- When an object is not detected, the parking gate closes.                                                                                                                                                                                                                                                                                                                                                                              |
+|      6. Smart Car<br />![Ex_06][img_ex_beginner_06]       | [Download][ex_beginner_6-1] Assembly Manual<br />[Download][ex_beginner_6-2] Task Code<br />[Download][ex_beginner_6-3] Video<br />`Devices` CM-530(x1), AX-12+(x4), IR sensor(x2)<br />`DYNAMIXEL Setting`: AX-12+ ID[1 ~ 4]: Wheel Mode<br />`RoboPlus Language` Function, Call, Load, Calculate, Jump, Lable, Endless Loop, If, Else If, Wait While<br />`Algorithm` Use the CM-530's buttons to set the mode and use the buttons and sensor value to control the rotation direction.<br />`Operation Guide`<br />- Press the `U` button together with the START button on the CM-530 to change to CONTROL mode.<br />- Press the `D` button together with the START button on the CM-530 to change to FREE mode.<br />- When you press the `L` button in CONTROL mode, it moves forward. The `R` button moves backward, `U` button moves rights, and the `D` button moves left. A melody will play each time it moves.<br />- When front sensor detects an object in FREE mode, it will turn right. When the lower sensor detects something, it will avoid the edge and turn right. |
+|    7. Clapping Crab<br />![Ex_07][img_ex_beginner_07]     | [Download][ex_beginner_7-1] Assembly Manual<br />[Download][ex_beginner_7-2] Task Code<br />[Download][ex_beginner_7-3] Video<br />`Devices` CM-530(x1), AX-12+(x2)<br />`DYNAMIXEL Setting`: AX-12+ ID[1, 2]: Joint Mode<br />`RoboPlus Language` Load, Calculate, Endless Loop, If, Wait While<br />`Algorithm` Control DYNAMIXEL position using the number of times the MIC detects a sound.<br />`Operation Guide`<br />- The robot will standby with its arm open.<br />- The robot the number of time it detects a sound.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+|    8. Attacking Duck<br />![Ex_08][img_ex_beginner_08]    | [Download][ex_beginner_8-1] Assembly Manual<br />[Download][ex_beginner_8-2] Task Code<br />[Download][ex_beginner_8-3] Video<br />`Devices` CM-530(x1), AX-12+(x3), IR Sensor(x2)<br />`DYNAMIXEL Setting`: AX-12+ ID[1, 2, 3]: Joint Mode<br />`RoboPlus Language` Function, Call, Load, Endless Loop, If, Loop While, Wait While<br />`Algorithm`	Use the sensor detecting to control DYNAMIXEL's<br />`Operation Guide`<br />- The robot moves sideways continuously and watches for objects.<br />- The robot follows the direction in which an object is detected then attacks when both sensors detect an object.                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| 9. Distance Level Meter<br />![Ex_09][img_ex_beginner_09] | [Download][ex_beginner_9-1] Assembly Manual<br />[Download][ex_beginner_9-2] Task Code<br />[Download][ex_beginner_9-3] Video<br />`Devices` CM-530(x1), AX-12+(x1), DMS Sensor(x1)<br />`DYNAMIXEL Setting`: AX-12+ ID[1]: Joint Mode<br />`RoboPlus Language` Function, Call, Load, Calculate, Endless Loop<br />`Algorithm`	Control DYNAMIXEL position using the distance detected by the sensor.<br />`Operation Guide` The bar moves depending on the distance detected by the sensor.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+|     10. Line Tracer<br />![Ex_10][img_ex_beginner_10]     | [Download][ex_beginner_10-1] Assembly Manual<br />[Download][ex_beginner_10-2] Task Code<br />[Download][ex_beginner_10-3] Video<br />`Devices` CM-530(x1), AX-12+(x2), IR Sensor(x2)<br />`DYNAMIXEL Setting`: AX-12+ ID[1, 2]: Wheel Mode<br />`RoboPlus Language` Function, Call, Load, Calculate, Endless Loop, If, Else If, Else, Wait While<br />`Algorithm` Control the line tracer using the sensor's detection value.<br />`Operation Guide` The robot traces the black line.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+|    11. Walking Droid<br />![Ex_11][img_ex_beginner_11]    | [Download][ex_beginner_11-1] Assembly Manual<br />[Download][ex_beginner_11-2] Task Code<br />[Download][ex_beginner_11-3] Motion File<br />[Download][ex_beginner_11-4] Video<br />`Devices` CM-530(x1), AX-12+(x4), IR Sensor(x1)<br />`DYNAMIXEL Setting`: AX-12+ ID[1 ~ 4]: Joint Mode<br />`RoboPlus Language` Function, Call, Load, Endless Loop, If, Loop While, Wait While<br />`Algorithm`	Control various motions using the IR Sensor's value.<br />`Operation Guide`<br />- Place an object in the robot's path and start your robot.<br />- Checks whether the robot avoids obstacles while walking.                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 
 [img_ex_beginner_01]: /assets/images/edu/bioloid/premium_crossinggate.jpg
 [img_ex_beginner_02]: /assets/images/edu/bioloid/premium_universalgauge.jpg
@@ -713,18 +713,18 @@ Please refer to the [Gripper Assembly].
 
 ### [Intermediate](#intermediate)
 
-|Examples|Description|
-|:---:|:---|
-|1. Probing Robot<br />![Ex_01][img_ex_intermediate_01]|[Download][ex_intermediate_1-1] Assembly Manual<br />[Download][ex_intermediate_1-2] Task Code<br />[Download][ex_intermediate_1-3] Video<br />`Devices` CM-530(1), AX-12+(7),IR Sensor(1), DMS Sensor(1)<br />`Dynamixel Setting` AX-12+ ID[1~4] : Wheel Mode, AX-12+ ID[5~7] : Joint Mode<br />`RoboPlus Language`	Function, Call, Return, Load, Calculate, Endless Loop, If, Else, Wait While, Break Loop<br />`Algorithm` Object sensing and processing depending on IR Sensor's and DMS Sensor's value<br />`Operation Guide`<br />- Place objects of various sizes in the robot's path, then turn the robot on.<br />- If the obstacle is too big, it will avoid it.<br />- If the obstacle is not too big, it will move it then proceed going its way.|
-|2. Excavator<br />![Ex_02][img_ex_intermediate_02]|[Download][ex_intermediate_2-1] Assembly Manual<br />[Download][ex_intermediate_2-2] Task Code<br />[Download][ex_intermediate_2-3] Motion File<br />[Download][ex_intermediate_2-4] Video<br />`Devices` CM-530(1), AX-12+(8), IR Sensor(1), DMS Sensor(1)<br />`Dynamixel Setting` AX-12+ ID[1~4] : Wheel Mode, AX-12+ ID[5~8] : Joint Mode<br />`RoboPlus Language`	Function, Call, Load, Calculate, Endless Loop, If, Else, Wait While<br />`Algorithm`	Dynamixel Position control depending on IR Sensor's and DMS Sensor's value.<br />`Operation Guide`<br />- Place an object in the robot's path, then turn the robot on.<br />- When an object is detected in front of it, it will begin excavating.<br />- If an object is detected while carrying an object, the robot will turn in that direction and put the object it was carrying down.|
-|3. Robot Flower<br />![Ex_03][img_ex_intermediate_03]|[Download][ex_intermediate_3-1] Assembly Manual<br />[Download][ex_intermediate_3-2] Task Code<br />[Download][ex_intermediate_3-3] Motion File<br />[Download][ex_intermediate_3-4] Video<br />`Devices` CM-530(1)(Sound Detection), AX-12+(6)<br />`Dynamixel Setting` AX-12+ ID[1~6] : Joint Mode<br />`RoboPlus Language`	Function, Call, Load,Endless Loop, If, Else, Wait While<br />`Algorithm` 	Motion control depending on the number of time sound is detected.<br />`Operation Guide`<br />- When the power is turned on, the flower blooms and moves as though it is dancing.<br />- If one clap is detected, the petals will pucker up slowly.<br />- If several claps are detected, the petals will pucker up quickly.|
-|4. Fawn<br />![Ex_04][img_ex_intermediate_04]|[Download][ex_intermediate_4-1] Assembly Manual<br />[Download][ex_intermediate_4-2] Task Code<br />[Download][ex_intermediate_4-3] Motion File<br />[Download][ex_intermediate_4-4] Video<br />`Devices` CM-530(1)(Sound Detection), AX-12+(7), IR Sensor(1)<br />`Dynamixel Setting` AX-12+ ID[1~7] : Joint Mode<br />`RoboPlus Language`	Function, Call, Load, Endless Loop, If, Else If, Else, Wait While<br />`Algorithm`		Object sensing using IR Sensor's value.<br />`Operation Guide`<br />- When no change is detected, the fawn sits down and looks around.<br />- If an object is detected in front of the face, the fawn will follow the object.|
-|5. Turtle<br />![Ex_05][img_ex_intermediate_05]|[Download][ex_intermediate_5-1] Assembly Manual<br />[Download][ex_intermediate_5-2] Task Code<br />[Download][ex_intermediate_5-3] Motion File<br />[Download][ex_intermediate_5-4] Video<br />`Devices` CM-530(1), AX-12+(8), IR Sensor(2), DMS Sensor(1)<br />`Dynamixel Setting` AX-12+ ID[1~8] : Joint Mode<br />`RoboPlus Language` Function, Call, Load, Endless Loop, If, Else If, Else, Wait While<br />`Algorithm`		Avoids obstacles depending on the IR Sensor and DMS Sensor value.<br />`Operation Guide`<br />- Place an obstacle in the robots path and turn the robot on.<br />- The turtle avoids obstacles in front of it.|
-|6. GerWalk<br />![Ex_06][img_ex_intermediate_06]|[Download][ex_intermediate_6-1] Assembly Manual<br />[Download][ex_intermediate_6-2] Task Code<br />[Download][ex_intermediate_6-3] Motion File<br />[Download][ex_intermediate_6-4] Video<br />`Devices` CM-530(1), AX-12+(7), IR Sensor(2), DMS Sensor(1)<br />`Dynamixel Setting` AX-12+ ID[1~7] : Joint Mode<br />`RoboPlus Language` Function, Call, Load, Endless Loop, If, Else If, Else, Loop While<br />`Algorithm` Control the Bird's walking pattern using the IR Sensor and DMS Sensor value.<br />`Operation Guide`<br />- Place an obstacle in the robots path and turn the gerwalk robot on.<br />- The robot avoids obstacles in front of it and on the sides.|
-|7. Battle Droid<br />![Ex_07][img_ex_intermediate_07]|[Download][ex_intermediate_7-1] Assembly Manual<br />[Download][ex_intermediate_7-2] Task Code<br />[Download][ex_intermediate_7-3] Motion File<br />[Download][ex_intermediate_7-4] Video<br />`Devices` CM-530(1), AX-12+(8), IR Sensor(1)<br />`Dynamixel Setting` AX-12+ ID[1~8] : Joint Mode<br />`RoboPlus Language` Variables, Function, Call, Load, Calculate, Endless Loop, If, Else If, Else, Wait While<br />`Algorithm` Dynamixel control using the IR Sensor's value<br />`Operation Guide`<br />- Place an obstacle in the robots path and turn the battle droid robot on.<br />- When the robot detects an object while walking, it will attack with both arms.<br />- When battle droid falls down, it will know which side it has fallen up and get up on its own.|
-|8. Quadruped Robot<br />![Ex_08][img_ex_intermediate_08]|[Download][ex_intermediate_8-1] Assembly Manual<br />[Download][ex_intermediate_8-2] Task Code<br />[Download][ex_intermediate_8-3] Motion File<br />[Download][ex_intermediate_8-4] Video<br />`Devices` CM-530(1), AX-12+(8), IR Sensor(1), DMS Sensor(1)<br />`Dynamixel Setting` AX-12+ ID[1~8] : Joint Mode<br />`RoboPlus Language` Function, Call, Load, Endless Loop, If, Wait While<br />`Algorithm`	Control the walking using the IR Sensor and DMS Sensor value<br />`Operation Guide`<br />- Place an obstacle in the robots path and turn the quadruped robot on.<br />- The robot avoids obstacles in front of it.|
-|9. Biped Walking Robot<br />![Ex_09][img_ex_intermediate_09]|[Download][ex_intermediate_9-1] Assembly Manual<br />[Download][ex_intermediate_9-2] Task Code<br />[Download][ex_intermediate_9-3] Motion File<br />[Download][ex_intermediate_9-4] Video<br />`Devices` CM-530(1), AX-12+(8), IR Sensor(1), DMS Sensor(1)<br />`Dynamixel Setting` AX-12+ ID[11~18] : Joint Mode<br />`RoboPlus Language` Function, Call, Load, Endless Loop, If, Else If, Else, Wait While, Loop While<br />`Algorithm` Control the walking using the IR Sensor and DMS Sensor value<br />`Operation Guide`<br />- Place an obstacle in the robots path and turn the robot on.<br />- The robot avoids obstacles in front of it and on the sides.|
-|10. Robot Arm<br />![Ex_10][img_ex_intermediate_10]|[Download][ex_intermediate_10-1] Assembly Manual<br />[Download][ex_intermediate_10-2] Task Code<br />[Download][ex_intermediate_10-3] Video<br />`Devices` CM-530(1), AX-12+(8)<br />`Dynamixel Setting` AX-12+ ID[1~8] : Joint Mode<br />`RoboPlus Language` Function, Call, Load, Calculate, Endless Loop, If, Else, Loop While<br />`Algorithm` Dynamixel Communication for Position Value<br />`Operation Guide` Check whether the responding motor reacts to the control motor's movement.|
+|                           Examples                           | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|:------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    1. Probing Robot<br />![Ex_01][img_ex_intermediate_01]    | [Download][ex_intermediate_1-1] Assembly Manual<br />[Download][ex_intermediate_1-2] Task Code<br />[Download][ex_intermediate_1-3] Video<br />`Devices` CM-530(1), AX-12+(7),IR Sensor(1), DMS Sensor(1)<br />`DYNAMIXEL Setting` AX-12+ ID[1~4] : Wheel Mode, AX-12+ ID[5~7] : Joint Mode<br />`RoboPlus Language`	Function, Call, Return, Load, Calculate, Endless Loop, If, Else, Wait While, Break Loop<br />`Algorithm` Object sensing and processing depending on IR Sensor's and DMS Sensor's value<br />`Operation Guide`<br />- Place objects of various sizes in the robot's path, then turn the robot on.<br />- If the obstacle is too big, it will avoid it.<br />- If the obstacle is not too big, it will move it then proceed going its way.                                                                                          |
+|      2. Excavator<br />![Ex_02][img_ex_intermediate_02]      | [Download][ex_intermediate_2-1] Assembly Manual<br />[Download][ex_intermediate_2-2] Task Code<br />[Download][ex_intermediate_2-3] Motion File<br />[Download][ex_intermediate_2-4] Video<br />`Devices` CM-530(1), AX-12+(8), IR Sensor(1), DMS Sensor(1)<br />`DYNAMIXEL Setting` AX-12+ ID[1~4] : Wheel Mode, AX-12+ ID[5~8] : Joint Mode<br />`RoboPlus Language`	Function, Call, Load, Calculate, Endless Loop, If, Else, Wait While<br />`Algorithm`	DYNAMIXEL Position control depending on IR Sensor's and DMS Sensor's value.<br />`Operation Guide`<br />- Place an object in the robot's path, then turn the robot on.<br />- When an object is detected in front of it, it will begin excavating.<br />- If an object is detected while carrying an object, the robot will turn in that direction and put the object it was carrying down. |
+|    3. Robot Flower<br />![Ex_03][img_ex_intermediate_03]     | [Download][ex_intermediate_3-1] Assembly Manual<br />[Download][ex_intermediate_3-2] Task Code<br />[Download][ex_intermediate_3-3] Motion File<br />[Download][ex_intermediate_3-4] Video<br />`Devices` CM-530(1)(Sound Detection), AX-12+(6)<br />`DYNAMIXEL Setting` AX-12+ ID[1~6] : Joint Mode<br />`RoboPlus Language`	Function, Call, Load,Endless Loop, If, Else, Wait While<br />`Algorithm` 	Motion control depending on the number of time sound is detected.<br />`Operation Guide`<br />- When the power is turned on, the flower blooms and moves as though it is dancing.<br />- If one clap is detected, the petals will pucker up slowly.<br />- If several claps are detected, the petals will pucker up quickly.                                                                                                                    |
+|        4. Fawn<br />![Ex_04][img_ex_intermediate_04]         | [Download][ex_intermediate_4-1] Assembly Manual<br />[Download][ex_intermediate_4-2] Task Code<br />[Download][ex_intermediate_4-3] Motion File<br />[Download][ex_intermediate_4-4] Video<br />`Devices` CM-530(1)(Sound Detection), AX-12+(7), IR Sensor(1)<br />`DYNAMIXEL Setting` AX-12+ ID[1~7] : Joint Mode<br />`RoboPlus Language`	Function, Call, Load, Endless Loop, If, Else If, Else, Wait While<br />`Algorithm`		Object sensing using IR Sensor's value.<br />`Operation Guide`<br />- When no change is detected, the fawn sits down and looks around.<br />- If an object is detected in front of the face, the fawn will follow the object.                                                                                                                                                                                            |
+|       5. Turtle<br />![Ex_05][img_ex_intermediate_05]        | [Download][ex_intermediate_5-1] Assembly Manual<br />[Download][ex_intermediate_5-2] Task Code<br />[Download][ex_intermediate_5-3] Motion File<br />[Download][ex_intermediate_5-4] Video<br />`Devices` CM-530(1), AX-12+(8), IR Sensor(2), DMS Sensor(1)<br />`DYNAMIXEL Setting` AX-12+ ID[1~8] : Joint Mode<br />`RoboPlus Language` Function, Call, Load, Endless Loop, If, Else If, Else, Wait While<br />`Algorithm`		Avoids obstacles depending on the IR Sensor and DMS Sensor value.<br />`Operation Guide`<br />- Place an obstacle in the robots path and turn the robot on.<br />- The turtle avoids obstacles in front of it.                                                                                                                                                                                                            |
+|       6. GerWalk<br />![Ex_06][img_ex_intermediate_06]       | [Download][ex_intermediate_6-1] Assembly Manual<br />[Download][ex_intermediate_6-2] Task Code<br />[Download][ex_intermediate_6-3] Motion File<br />[Download][ex_intermediate_6-4] Video<br />`Devices` CM-530(1), AX-12+(7), IR Sensor(2), DMS Sensor(1)<br />`DYNAMIXEL Setting` AX-12+ ID[1~7] : Joint Mode<br />`RoboPlus Language` Function, Call, Load, Endless Loop, If, Else If, Else, Loop While<br />`Algorithm` Control the Bird's walking pattern using the IR Sensor and DMS Sensor value.<br />`Operation Guide`<br />- Place an obstacle in the robots path and turn the gerwalk robot on.<br />- The robot avoids obstacles in front of it and on the sides.                                                                                                                                                                        |
+|    7. Battle Droid<br />![Ex_07][img_ex_intermediate_07]     | [Download][ex_intermediate_7-1] Assembly Manual<br />[Download][ex_intermediate_7-2] Task Code<br />[Download][ex_intermediate_7-3] Motion File<br />[Download][ex_intermediate_7-4] Video<br />`Devices` CM-530(1), AX-12+(8), IR Sensor(1)<br />`DYNAMIXEL Setting` AX-12+ ID[1~8] : Joint Mode<br />`RoboPlus Language` Variables, Function, Call, Load, Calculate, Endless Loop, If, Else If, Else, Wait While<br />`Algorithm` DYNAMIXEL control using the IR Sensor's value<br />`Operation Guide`<br />- Place an obstacle in the robots path and turn the battle droid robot on.<br />- When the robot detects an object while walking, it will attack with both arms.<br />- When battle droid falls down, it will know which side it has fallen up and get up on its own.                                                                   |
+|   8. Quadruped Robot<br />![Ex_08][img_ex_intermediate_08]   | [Download][ex_intermediate_8-1] Assembly Manual<br />[Download][ex_intermediate_8-2] Task Code<br />[Download][ex_intermediate_8-3] Motion File<br />[Download][ex_intermediate_8-4] Video<br />`Devices` CM-530(1), AX-12+(8), IR Sensor(1), DMS Sensor(1)<br />`DYNAMIXEL Setting` AX-12+ ID[1~8] : Joint Mode<br />`RoboPlus Language` Function, Call, Load, Endless Loop, If, Wait While<br />`Algorithm`	Control the walking using the IR Sensor and DMS Sensor value<br />`Operation Guide`<br />- Place an obstacle in the robots path and turn the quadruped robot on.<br />- The robot avoids obstacles in front of it.                                                                                                                                                                                                                       |
+| 9. Biped Walking Robot<br />![Ex_09][img_ex_intermediate_09] | [Download][ex_intermediate_9-1] Assembly Manual<br />[Download][ex_intermediate_9-2] Task Code<br />[Download][ex_intermediate_9-3] Motion File<br />[Download][ex_intermediate_9-4] Video<br />`Devices` CM-530(1), AX-12+(8), IR Sensor(1), DMS Sensor(1)<br />`DYNAMIXEL Setting` AX-12+ ID[11~18] : Joint Mode<br />`RoboPlus Language` Function, Call, Load, Endless Loop, If, Else If, Else, Wait While, Loop While<br />`Algorithm` Control the walking using the IR Sensor and DMS Sensor value<br />`Operation Guide`<br />- Place an obstacle in the robots path and turn the robot on.<br />- The robot avoids obstacles in front of it and on the sides.                                                                                                                                                                                  |
+|     10. Robot Arm<br />![Ex_10][img_ex_intermediate_10]      | [Download][ex_intermediate_10-1] Assembly Manual<br />[Download][ex_intermediate_10-2] Task Code<br />[Download][ex_intermediate_10-3] Video<br />`Devices` CM-530(1), AX-12+(8)<br />`DYNAMIXEL Setting` AX-12+ ID[1~8] : Joint Mode<br />`RoboPlus Language` Function, Call, Load, Calculate, Endless Loop, If, Else, Loop While<br />`Algorithm` DYNAMIXEL Communication for Position Value<br />`Operation Guide` Check whether the responding motor reacts to the control motor's movement.                                                                                                                                                                                                                                                                                                                                                      |
 
 [img_ex_intermediate_01]: /assets/images/edu/bioloid/premium_probingrobot.jpg
 [img_ex_intermediate_02]: /assets/images/edu/bioloid/premium_excavator.jpg
@@ -779,13 +779,13 @@ Please refer to the [Gripper Assembly].
 
 ### [Advanced](#advanced)
 
-|Examples|Description|
-|:---:|:---|
-|1. Dinosaur<br />![Ex_01][img_ex_advanced_01]|[Download][ex_advanced_1-1] Assembly Manual<br />[Download][ex_advanced_1-2] Task Code<br />[Download][ex_advanced_1-3] Motion File<br />[Download][ex_advanced_1-4] Video<br />`Devices` CM-530(1), AX-12+(15), IR Sensor(1)<br />`Dynamixel Setting` AX-12+ ID[1~15] : Joint Mode<br />`RoboPlus Language` Function, Call, Load, Lable, Jump, If, Else If, Else, Wait While<br />`Algorithm` Object detection and motion control using IR Sensor value.<br />`Operation Guide`<br />- Place an obstacle in the robots path and turn the dinosaur robot on.<br />- The dinosaur robot attacks.<br />- When the obstacle disappears, it continues walking.<br />- When nothing is detected for a while, it will sleep.|
-|2. Puppy<br />![Ex_02][img_ex_advanced_02]|[Download][ex_advanced_2-1] Assembly Manual<br />[Download][ex_advanced_2-2] Task Code<br />[Download][ex_advanced_2-3] Motion File<br />[Download][ex_advanced_2-4] Video<br />`Devices` CM-530(1)(Sound Detection, Timer), AX-12+(17), IR Sensor(1)<br />`Dynamixel Setting` AX-12+ ID[1~17] : Joint Mode<br />`RoboPlus Language`	Function, Call, Load, Lable, Jump, If, Else If, Wait While<br />`Algorithm`	Motion control depending on the sound detection of the IR Sensor and Timer.<br />`Operation Guide`<br />- Place an obstacle in the robots path and turn the puppy robot on.<br />- When a sound is detected, it will walk avoiding obstacles.<br />- If you touch its mouth, it will do cute things.<br />- It will do different things depending on the number of claps.<br />- When nothing is detected for a while, it will sleep.|
-|3. King Spider<br />![Ex_03][img_ex_advanced_03]|[Download][ex_advanced_3-1] Assembly Manual<br />[Download][ex_advanced_3-2] Task Code<br />[Download][ex_advanced_3-3] Motion File<br />[Download][ex_advanced_3-4] Video<br />`Devices` CM-530(1)(Timer), AX-12+(18), IR Sensor(2)<br />`Dynamixel Setting` AX-12+ ID[1~18] : Joint Mode<br />`RoboPlus Language`	Function, Call, Load, Lable, Jump, If, Wait While<br />`Algorithm` Application motion control depending on the sound detection of the IR Sensor and Timer.<br />`Operation Guide`<br />- When it detects an object while walking, it will avoid it.<br />- It will attack when something is detected near the front.<br />- When an object is detected above it, it will crumple up its body.<br />- When nothing is detected for a while, it will sleep.|
-|4. Scorpion<br />![Ex_04][img_ex_advanced_04]|[Download][ex_advanced_4-1] Assembly Manual<br />[Download][ex_advanced_4-2] Task Code<br />[Download][ex_advanced_4-3] Motion File<br />[Download][ex_advanced_4-4] Video<br />`Devices` CM-530(1)(Sound detection), AX-12+(18), DMS Sensor(1)<br />`Dynamixel Setting` AX-12+ ID[1~18] : Joint Mode<br />`RoboPlus Language` Function, Call, Load, Lable, Jump, If, Else If, Loop For, Wait While<br />`Algorithm`	Application motion control depending on the number of sounds detected and DMS Sensor value.<br />`Operation Guide`<br />- The robot sleeps when you first turn it on.<br />- The robot will awake when you clap.<br />- If you clap twice when the robot is awake, it will run away.<br />- The closer your hand gets to the sensor, the tail will rise to threaten you.<br />- If you get too close, it will attack.|
-|5. Lizard<br />![Ex_05][img_ex_advanced_05]|[Download][ex_advanced_5-1] Assembly Manual<br />[Download][ex_advanced_5-2] Task Code<br />[Download][ex_advanced_5-3] Motion File<br />[Download][ex_advanced_5-4] Video<br />`Devices` CM-530(1), AX-12+(14), IR Sensor(1),DMS Sensor(1)<br />`Dynamixel Setting` AX-12+ ID[1~14] : Joint Mode<br />`RoboPlus Language` Function, Call, Load, Calculate, Endless Loop, If, Else If, Else, Wait  While<br />`Algorithm` Obstacle avoidance motion control using the IR Sensor and DMS Sensor value.<br />`Operation Guide`<br />- It will being crawling once turned on, and will stop when it detects an object then avoid it.<br />- When the tail is caught, it will try to escape.|
+|                     Examples                     | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+|:------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  1. Dinosaur<br />![Ex_01][img_ex_advanced_01]   | [Download][ex_advanced_1-1] Assembly Manual<br />[Download][ex_advanced_1-2] Task Code<br />[Download][ex_advanced_1-3] Motion File<br />[Download][ex_advanced_1-4] Video<br />`Devices` CM-530(1), AX-12+(15), IR Sensor(1)<br />`DYNAMIXEL Setting` AX-12+ ID[1~15] : Joint Mode<br />`RoboPlus Language` Function, Call, Load, Lable, Jump, If, Else If, Else, Wait While<br />`Algorithm` Object detection and motion control using IR Sensor value.<br />`Operation Guide`<br />- Place an obstacle in the robots path and turn the dinosaur robot on.<br />- The dinosaur robot attacks.<br />- When the obstacle disappears, it continues walking.<br />- When nothing is detected for a while, it will sleep.                                                                                                                               |
+|    2. Puppy<br />![Ex_02][img_ex_advanced_02]    | [Download][ex_advanced_2-1] Assembly Manual<br />[Download][ex_advanced_2-2] Task Code<br />[Download][ex_advanced_2-3] Motion File<br />[Download][ex_advanced_2-4] Video<br />`Devices` CM-530(1)(Sound Detection, Timer), AX-12+(17), IR Sensor(1)<br />`DYNAMIXEL Setting` AX-12+ ID[1~17] : Joint Mode<br />`RoboPlus Language`	Function, Call, Load, Lable, Jump, If, Else If, Wait While<br />`Algorithm`	Motion control depending on the sound detection of the IR Sensor and Timer.<br />`Operation Guide`<br />- Place an obstacle in the robots path and turn the puppy robot on.<br />- When a sound is detected, it will walk avoiding obstacles.<br />- If you touch its mouth, it will do cute things.<br />- It will do different things depending on the number of claps.<br />- When nothing is detected for a while, it will sleep. |
+| 3. King Spider<br />![Ex_03][img_ex_advanced_03] | [Download][ex_advanced_3-1] Assembly Manual<br />[Download][ex_advanced_3-2] Task Code<br />[Download][ex_advanced_3-3] Motion File<br />[Download][ex_advanced_3-4] Video<br />`Devices` CM-530(1)(Timer), AX-12+(18), IR Sensor(2)<br />`DYNAMIXEL Setting` AX-12+ ID[1~18] : Joint Mode<br />`RoboPlus Language`	Function, Call, Load, Lable, Jump, If, Wait While<br />`Algorithm` Application motion control depending on the sound detection of the IR Sensor and Timer.<br />`Operation Guide`<br />- When it detects an object while walking, it will avoid it.<br />- It will attack when something is detected near the front.<br />- When an object is detected above it, it will crumple up its body.<br />- When nothing is detected for a while, it will sleep.                                                                         |
+|  4. Scorpion<br />![Ex_04][img_ex_advanced_04]   | [Download][ex_advanced_4-1] Assembly Manual<br />[Download][ex_advanced_4-2] Task Code<br />[Download][ex_advanced_4-3] Motion File<br />[Download][ex_advanced_4-4] Video<br />`Devices` CM-530(1)(Sound detection), AX-12+(18), DMS Sensor(1)<br />`DYNAMIXEL Setting` AX-12+ ID[1~18] : Joint Mode<br />`RoboPlus Language` Function, Call, Load, Lable, Jump, If, Else If, Loop For, Wait While<br />`Algorithm`	Application motion control depending on the number of sounds detected and DMS Sensor value.<br />`Operation Guide`<br />- The robot sleeps when you first turn it on.<br />- The robot will awake when you clap.<br />- If you clap twice when the robot is awake, it will run away.<br />- The closer your hand gets to the sensor, the tail will rise to threaten you.<br />- If you get too close, it will attack.            |
+|   5. Lizard<br />![Ex_05][img_ex_advanced_05]    | [Download][ex_advanced_5-1] Assembly Manual<br />[Download][ex_advanced_5-2] Task Code<br />[Download][ex_advanced_5-3] Motion File<br />[Download][ex_advanced_5-4] Video<br />`Devices` CM-530(1), AX-12+(14), IR Sensor(1),DMS Sensor(1)<br />`DYNAMIXEL Setting` AX-12+ ID[1~14] : Joint Mode<br />`RoboPlus Language` Function, Call, Load, Calculate, Endless Loop, If, Else If, Else, Wait  While<br />`Algorithm` Obstacle avoidance motion control using the IR Sensor and DMS Sensor value.<br />`Operation Guide`<br />- It will being crawling once turned on, and will stop when it detects an object then avoid it.<br />- When the tail is caught, it will try to escape.                                                                                                                                                             |
 
 [img_ex_advanced_01]: /assets/images/edu/bioloid/premium_dinosaur.jpg
 [img_ex_advanced_02]: /assets/images/edu/bioloid/premium_puppy.jpg
@@ -820,7 +820,7 @@ Please refer to the [Gripper Assembly].
 
 {% include en/parts/controller/fuse_cm510_530.md %}
 
-## [Dynamixel Management](#dynamixel-management)
+## [DYNAMIXEL Management](#dynamixel-management)
 
 {% include en/edu/bioloid/dynamixel_management.md %}
 
@@ -838,10 +838,10 @@ Use the semi-transparent skins provided only in the Premium Kit to make your hum
 
 Samples of customized chest skins
 
-|![](/assets/images/edu/bioloid/premium_skin_01.jpg)|![](/assets/images/edu/bioloid/premium_skin_02.jpg)|
-|:---:|:---:|
-|![](/assets/images/edu/bioloid/premium_skin_03.jpg)|![](/assets/images/edu/bioloid/premium_skin_04.jpg)|
-|![](/assets/images/edu/bioloid/premium_skin_05.jpg)|![](/assets/images/edu/bioloid/premium_skin_06.jpg)|
+| ![](/assets/images/edu/bioloid/premium_skin_01.jpg) | ![](/assets/images/edu/bioloid/premium_skin_02.jpg) |
+|:---------------------------------------------------:|:---------------------------------------------------:|
+| ![](/assets/images/edu/bioloid/premium_skin_03.jpg) | ![](/assets/images/edu/bioloid/premium_skin_04.jpg) |
+| ![](/assets/images/edu/bioloid/premium_skin_05.jpg) | ![](/assets/images/edu/bioloid/premium_skin_06.jpg) |
 
 Samples of customized head skins
 
@@ -851,9 +851,9 @@ Samples of customized head skins
 
 Samples of robots with customized skins
 
-|![](/assets/images/edu/bioloid/premium_skin_09.jpg)|![](/assets/images/edu/bioloid/premium_skin_10.jpg)|![](/assets/images/edu/bioloid/premium_skin_11.jpg)|
-|:---:|:---:|:---:|
-|![](/assets/images/edu/bioloid/premium_skin_12.jpg)|![](/assets/images/edu/bioloid/premium_skin_13.jpg)|![](/assets/images/edu/bioloid/premium_skin_14.jpg)|
+| ![](/assets/images/edu/bioloid/premium_skin_09.jpg) | ![](/assets/images/edu/bioloid/premium_skin_10.jpg) | ![](/assets/images/edu/bioloid/premium_skin_11.jpg) |
+|:---------------------------------------------------:|:---------------------------------------------------:|:---------------------------------------------------:|
+| ![](/assets/images/edu/bioloid/premium_skin_12.jpg) | ![](/assets/images/edu/bioloid/premium_skin_13.jpg) | ![](/assets/images/edu/bioloid/premium_skin_14.jpg) |
 
 ## [Adding Sensors](#adding-sensors)
 
@@ -977,7 +977,7 @@ AX-12+ #9 was used for the right gripper and AX-12+ #10 was used for the left.
 [IR Sensor]: /docs/en/parts/sensor/irss-10/
 [Touch Sensor]: /docs/en/parts/sensor/ts-10/
 [Gyro Sensor]: /docs/en/parts/sensor/gs-12/
-[USB2Dynamixel]: /docs/en/parts/interface/usb2dynamixel/
+[USB2DYNAMIXEL]: /docs/en/parts/interface/usb2dynamixel/
 [Controller]: /docs/en/parts/controller/controller_compatibility/
 [RC-100]: /docs/en/parts/communication/rc-100/
 [ZIG-110]: /docs/en/parts/communication/zig-100_110/

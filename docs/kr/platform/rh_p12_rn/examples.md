@@ -113,7 +113,7 @@ error MSB8036: Windows SDK 버전 10.0.14393.0을(를) 찾을 수 없습니다.
 ## [리눅스 예제](#리눅스-예제)
 
 ### 준비
-Dynamixel SDK 가 설치되어 있어야 함. 아래와 같이 다운로드 받아 설치할 것.
+다이나믹셀 SDK 가 설치되어 있어야 함. 아래와 같이 다운로드 받아 설치할 것.
 
 ```
 $ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK

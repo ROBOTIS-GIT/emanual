@@ -97,12 +97,12 @@ This method utilizes BT-210 Bluetooth module or ZigBee (ZIG-110A Set + ZIG2Seria
 5. Click on “Auto Search” to automatically detect the Controller or manually select the COM Port by double clicking on “Bluetooth Serial Port.”
 6. Click “Connect” to begin communicating between robot and PC.
 
-#### ZigBee (ZIG-110A Set, ZIG2Serial, and USB2Dynamixel Required)
+#### ZigBee (ZIG-110A Set, ZIG2Serial, and USB2DYNAMIXEL Required)
 
 ![](/assets/images/sw/rplus2/scratch/roboplus_scratch_05.png)
 
 1. Connect the ZIG-110A to the Controller.
-2. Connect the ZIG-100 + ZIG2Serial + USB2Dynamixel setup to your PC.
+2. Connect the ZIG-100 + ZIG2Serial + USB2DYNAMIXEL setup to your PC.
 3. Click on the “Port Selection” button to see the list of connected devices.
 4. Click on “Auto Search” to automatically detect the Controller or manually select the COM Port by double clicking on “USB Serial Port.”
 5. Click “Connect” to begin communicating between robot and PC.  

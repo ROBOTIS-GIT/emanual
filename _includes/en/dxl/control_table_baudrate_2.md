@@ -1,4 +1,4 @@
-Baud Rate determines serial communication speed between a controller and DYNAMIXELs.
+Baud Rate determines serial communication speed between a controller and DYNAMIXEL.
 
 | Value     | Baud Rate     | Margin of Error     |
 | :------------: | :------------: | :------------: |

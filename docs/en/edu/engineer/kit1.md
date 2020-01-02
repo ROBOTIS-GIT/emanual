@@ -78,7 +78,7 @@ sidebar:
 
 **2XL430-W250** is a ground breaking DYNAMIXEL that allows to control **2 axis(2 DOF)** with a single module. In order to control 2 axis at the same time, each axle is assigned with different ID while sharing an identical Baudrate. Since the Control Table for each axle is separated except the Baudrate, 2XL can be applied in various applications.  
 
-The usage is identical to other DYNAMIXELs, but be aware that Firmware Recovery will reset both axis to factory settings.
+The usage is identical to other DYNAMIXEL's, but be aware that Firmware Recovery will reset both axis to factory settings.
 
 | Item                   | Specifications                                             |
 |:-----------------------|:-----------------------------------------------------------|
@@ -520,7 +520,7 @@ This function checks DYNAMIXEL ID and status of the ROBOTIS ENGINEER Kit.
 
 
 ### [DYNAMIXEL Offset](#dynamixel-offset)
-This function is used to adjust the pose of robot by calibrating offset values of DYNAMIXEL used in the ROBOTIS ENGINEERING KIT. Configured offset value will be saved in each DYNAMIXELs.  
+This function is used to adjust the pose of robot by calibrating offset values of DYNAMIXEL used in the ROBOTIS ENGINEERING KIT. Configured offset value will be saved in each DYNAMIXEL's.  
 Please perform offset adjustment with a thorough understanding as it may cause unstable motions or hardware damages when improperly configured.
 
 1. Launch the robot example from the main screen, and select `OFFSET` from the option menu.  

@@ -74,7 +74,7 @@ This chapter explains installation and configuration of Robot Operating System(R
      ```
 
 ## ROBOTIS ROS Packages for ROBOTIS-OP3  
- 1. [DynamixelSDK] : SDK for Dynamixel  
+ 1. [DYNAMIXEL SDK] : SDK for DYNAMIXEL  
  2. [ROBOTIS-Framerowk] : The packages to use ROS (Robot Operating System) for robots assembled with ROBOTIS products.  
  3. [ROBOTIS-Framerowk-msgs] : Messages used in the ROBOTIS-Framework.  
  4. [ROBOTIS-Math] : Basic calculation related to transformation and trajectory functions.  
@@ -116,7 +116,7 @@ This chapter explains installation and configuration of Robot Operating System(R
 [`Setup your sources.list`]: http://wiki.ros.org/kinetic/Installation/Ubuntu#Installation.2BAC8-Ubuntu.2BAC8-Sources.Setup_your_sources.list
 [http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment]: http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment
 [ROS Network Setup]: http://wiki.ros.org/ROS/NetworkSetup
-[DynamixelSDK]: /docs/en/software/robotis_framework_packages/#dynamixelsdk
+[DYNAMIXEL SDK]: /docs/en/software/robotis_framework_packages/#dynamixelsdk
 [ROBOTIS-Framerowk]: /docs/en/software/robotis_framework_packages/#robotis-framework
 [ROBOTIS-Framerowk-msgs]: /docs/en/software/robotis_framework_packages/#robotis-framework-msgs
 [ROBOTIS-Math]: /docs/en/platform/common/robotis_math/#robotis-math

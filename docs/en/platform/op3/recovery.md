@@ -202,7 +202,7 @@ This chapter explains how to install software and configure ROBOTIS OP3.
 #### [Installing ROBOTIS ROS Packages](#installing-robotis-ros-packages)  
 
  - ROBOTIS ROS Packages
-   -  [DynamixelSDK] : SDK for Dynamixel  
+   -  [DYNAMIXEL SDK] : SDK for DYNAMIXEL  
    -  [ROBOTIS-Framerowk] : The package to use ROS (Robot Operating System) for robots assembled with ROBOTIS products.  
    -  [ROBOTIS-Framerowk-msgs] : Messages used in the ROBOTIS-Framework  
    -  [ROBOTIS-Math] : basic calculation related to transformation and trajectory functions  
@@ -361,7 +361,7 @@ Clonezilla is used to recover ROBOTIS-OP3 with the image file in the provided US
 [e-manual]: /docs/en/platform/op3/recovery/#recovery-of-robotis-op3
 [sourceforge.net]: https://sourceforge.net/projects/darwinop/files/Software/Main%20Controller/Recovery%20USB/
 
-[DynamixelSDK]: /docs/en/software/robotis_framework_packages/#dynamixelsdk
+[DYNAMIXEL SDK]: /docs/en/software/robotis_framework_packages/#dynamixelsdk
 [ROBOTIS-Framerowk]: /docs/en/software/robotis_framework_packages/#robotis-framework
 [ROBOTIS-Framerowk-msgs]: /docs/en/software/robotis_framework_packages/#robotis-framework-msgs
 [ROBOTIS-Math]: /docs/en/platform/common/robotis_math/#robotis-math

@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/software/dynamixel/dynamixel_sdk/sample_code/c_reset_protocol_1_0/
 sidebar:
-  title: DynamixelSDK
+  title: DYNAMIXEL SDK
   nav: "dynamixel_sdk"
 ---
 
@@ -26,9 +26,9 @@ sidebar:
 
   This example resets all Dynamixel settings to factory defaults, including rate ID (1) and baud rate (57600 bps):
 
-* Supported Dynamixels
+* Supported DYNAMIXEL
 
-  Protocol 1.0 Dynamixels
+  Protocol 1.0 DYNAMIXEL
 
 #### Sample code
 
@@ -64,7 +64,7 @@ sidebar:
 #endif
 
 #include <stdio.h>
-#include "dynamixel_sdk.h"                                   // Uses Dynamixel SDK library
+#include "dynamixel_sdk.h"                                   // Uses DYNAMIXEL SDK library
 
 // Control table address
 #define ADDR_MX_BAUDRATE                4                   // Control table address is different in Dynamixel model
@@ -310,10 +310,10 @@ This source includes above to get key input interruption while the example is ru
 The example shows Dynamixel status in sequence by the function `printf()`. So here `stdio.h` is needed.
 
 ```c
-#include "dynamixel_sdk.h"                                   // Uses Dynamixel SDK library
+#include "dynamixel_sdk.h"                                   // Uses DYNAMIXEL SDK library
 ```
 
-All libraries of Dynamixel SDK are linked with the header file `dynamixel_sdk.h`.
+All libraries of DYNAMIXEL SDK are linked with the header file `dynamixel_sdk.h`.
 
 ```c
 // Control table address

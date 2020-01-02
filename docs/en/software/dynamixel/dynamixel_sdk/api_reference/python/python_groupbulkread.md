@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/software/dynamixel/dynamixel_sdk/api_reference/python/python_groupbulkread/
 sidebar:
-  title: DynamixelSDK
+  title: DYNAMIXEL SDK
   nav: "dynamixel_sdk"
 ---
 
@@ -38,9 +38,9 @@ sidebar:
 | **[addParam](#addparam)**                                 | Adds parameter storage for read                            |
 | **[removeParam](#removeparam)**                           | Removes parameter on the storage                           |
 | **[clearParam](#clearparam)**                             | Clears parameter storage                                   |
-| **[txPacket](#txpacket)**                                 | Transmits packet to the number of Dynamixels               |
-| **[rxPacket](#rxpacket)**                                 | receives packet from the number of Dynamixels              |
-| **[txRxPacket](#txrxpacket)**                             | Transmits and receives packet on the number of Dynamixels  |
+| **[txPacket](#txpacket)**                                 | Transmits packet to the number of DYNAMIXEL's               |
+| **[rxPacket](#rxpacket)**                                 | receives packet from the number of DYNAMIXEL's              |
+| **[txRxPacket](#txrxpacket)**                             | Transmits and receives packet on the number of DYNAMIXEL's  |
 | **[isAvailable](#isavailable)**                           | Checks whether there is available data in the data storage |
 | **[getData](#getdata)**                                   | Gets data from received packet                             |
 
@@ -78,14 +78,14 @@ addParam(dxl_id, start_address, data_length)
 
 | Parameters    | Description   |
 |:--------------|:--------------|
-| dxl_id            | Dynamixel ID  |
+| dxl_id            | DYNAMIXEL ID  |
 | start_address | Start address |
 | data_length   | Data length   |
 
 
 - Detailed Description
 
-   This function pushes `dxl_id` to the Dynamixel ID list, and initializes the parameter storage by `setting start_address` and `data_length`.
+   This function pushes `dxl_id` to the DYNAMIXEL ID list, and initializes the parameter storage by `setting start_address` and `data_length`.
 
 
 ##### removeParam
@@ -97,11 +97,11 @@ removeParam(dxl_id)
 
 | Parameters  | Description                               |
 |:------------|:------------------------------------------|
-| dxl_id      | Dynamixel ID                              |
+| dxl_id      | DYNAMIXEL ID                              |
 
 - Detailed Description
 
-   This function removes target list of `dxl_id` from Dynamixel ID list. It returns false when the class uses Protocol 1.0 .
+   This function removes target list of `dxl_id` from DYNAMIXEL ID list. It returns false when the class uses Protocol 1.0 .
 
 
 ##### clearParam
@@ -115,7 +115,7 @@ None
 
 - Detailed Description
 
-   This function clears Dynamixel ID list. It returns false when the class uses Protocol 1.0, or returns true.
+   This function clears DYNAMIXEL ID list. It returns false when the class uses Protocol 1.0, or returns true.
 
 
 ##### txPacket
@@ -168,8 +168,8 @@ isAvailable(dxl_id, address, data_length)
 
 | Parameters  | Description                               |
 |:------------|:------------------------------------------|
-| dxl_id      | Dynamixel ID                              |
-| address     | Address on the control table of Dynamixel |
+| dxl_id      | DYNAMIXEL ID                              |
+| address     | Address on the control table of DYNAMIXEL |
 | data_length | data length                               |
 
 
@@ -186,8 +186,8 @@ getData(dxl_id, address, data_length)
 
 | Parameters  | Description                               |
 |:------------|:------------------------------------------|
-| dxl_id      | Dynamixel ID                              |
-| address     | Address on the control table of Dynamixel |
+| dxl_id      | DYNAMIXEL ID                              |
+| address     | Address on the control table of DYNAMIXEL |
 | data_length | data length                               |
 
 

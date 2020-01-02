@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/software/dynamixel/dynamixel_sdk/api_reference/cpp/cpp_groupbulkread/
 sidebar:
-  title: DynamixelSDK
+  title: DYNAMIXEL SDK
   nav: "dynamixel_sdk"
 ---
 
@@ -42,9 +42,9 @@ sidebar:
 | **[addParam](#addparam)**       | Adds parameter storage for read                            |
 | **[removeParam](#removeparam)** | Removes parameter on the storage                           |
 | **[clearParam](#clearparam)**   | Clears parameter storage                                   |
-| **[txPacket](#txpacket)**       | Transmits packet to the number of Dynamixels               |
-| **[rxPacket](#rxpacket)**       | receives packet from the number of Dynamixels              |
-| **[txRxPacket](#txrxpacket)**   | Transmits and receives packet on the number of Dynamixels  |
+| **[txPacket](#txpacket)**       | Transmits packet to the number of DYNAMIXEL's               |
+| **[rxPacket](#rxpacket)**       | receives packet from the number of DYNAMIXEL's              |
+| **[txRxPacket](#txrxpacket)**   | Transmits and receives packet on the number of DYNAMIXEL's  |
 | **[isAvailable](#isavailable)** | Checks whether there is available data in the data storage |
 | **[getData](#getdata)**         | Gets data from received packet                             |
 
@@ -64,8 +64,8 @@ bool addParam(uint8_t id, uint16_t start_address, uint16_t data_length)
 
 | Parameters    | Description                                |
 |:--------------|:-------------------------------------------|
-| id            | Dynamixel ID                               |
-| start_address | Address on the control table of Dynamixel| |
+| id            | DYNAMIXEL ID                               |
+| start_address | Address on the control table of DYNAMIXEL| |
 | data_length   | data_length                                |
 
 - Detailed Description
@@ -82,11 +82,11 @@ void removeParam(UINT8_T id)
 
 | Parameters | Description  |
 |:-----------|:-------------|
-| id         | Dynamixel ID |
+| id         | DYNAMIXEL ID |
 
 - Detailed Description
 
-   This function removes target id in the Dynamixel ID list.
+   This function removes target id in the DYNAMIXEL ID list.
 
 
 ##### clearParam
@@ -100,7 +100,7 @@ void clearParam()
 
 - Detailed Description
 
-   This function clears the Dynamixel ID list.
+   This function clears the DYNAMIXEL ID list.
 
 
 ##### txPacket
@@ -154,8 +154,8 @@ bool isAvailable(uint8_t id, uint16_t address, uint16_t data_length)
 
 | Parameters | Description                               |
 |:-----------|:------------------------------------------|
-| id         | Dynamixel ID                              |
-| address    | Address on the control table of Dynamixel |
+| id         | DYNAMIXEL ID                              |
+| address    | Address on the control table of DYNAMIXEL |
 | data       | Packet data                               |
 
 
@@ -172,8 +172,8 @@ uint32_t getData(uint8_t id, uint16_t address, uint16_t data_length)
 
 | Parameters  | Description                               |
 |:------------|:------------------------------------------|
-| id          | Dynamixel ID                              |
-| address     | Address on the control table of Dynamixel |
+| id          | DYNAMIXEL ID                              |
+| address     | Address on the control table of DYNAMIXEL |
 | data_length | data length                               |
 
 

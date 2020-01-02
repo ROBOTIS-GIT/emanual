@@ -595,7 +595,7 @@ Set the servo motor at Port 3 in joint mode and move it to location 500 with max
 #### Tips
 
 - Make sure the motor is connected to the correct port.
-- The servo motor is not suitable for detailed control, as it lacks the precision and torque of a Dynamixel motor.
+- The servo motor is not suitable for detailed control, as it lacks the precision and torque of DYNAMIXEL motor.
 
 **WARNING** : If a program that controls LED modules is executed while another module (servo motor, IR module, etc.) is connected to the port, the module may be damaged.
 {: .notice--warning}
@@ -703,7 +703,7 @@ After setting the user's device at Port 3 as 1 (high), if the value read value f
 
 ![User Device Example][img_user_device_example]
 
-## [Dynamixel Parameters](#dynamixel-parameters)
+## [DYNAMIXEL Parameters](#dynamixel-parameters)
 
 ### [Torque Enable](#torque-enable)
 This parameter is used to turn the motor's torque on or off. It can also be used to determine whether the motor's torque is currently on or off.
@@ -720,7 +720,7 @@ When the R button of the controller is pressed, the actuator with ID 1 will turn
 
 ### [LED](#led)
 
-This parameter is used to set or read the Dynamixel's LED status.
+This parameter is used to set or read DYNAMIXEL LED status.
 
 The value is either TRUE or FALSE.
 - TRUE (1) : When set to TRUE,  the LED turns on. When the parameter is read, a value of TRUE signifies that the LED is on.
@@ -758,15 +758,15 @@ These parameters are used to set or read the actuator's slope value.
 - Even if you set the higher value, it will resist with more and more power if it is strayed too much from target position.
 - Compliance Slope will be changed into 7 Data representative values according to the input Data. In other words, if you input 25, in real operation, 16 -the representative value of 25-, will be used.
 
-|Level|Real Data Value|Representative Data Value|
-| :---: | :---: | :---: |
-|1|0 (0x00) ~ 3(0x03)|2 (0x02)|
-|2|4(0x04) ~ 7(0x07)|4 (0x04)|
-|3|8(0x08)~15(0x0F)|8 (0x08)|
-|4|16(0x10)~31(0x1F)|16 (0x10)|
-|5|32(0x20)~63(0x3F)|32 (0x20)|
-|6|64(0x40)~127(0x7F)|64 (0x40)|
-|7|128(0x80)~254(0xFE)|128 (0x80)|
+| Level |   Real Data Value   | Representative Data Value |
+|:-----:|:-------------------:|:-------------------------:|
+|   1   | 0 (0x00) ~ 3(0x03)  |         2 (0x02)          |
+|   2   |  4(0x04) ~ 7(0x07)  |         4 (0x04)          |
+|   3   |  8(0x08)~15(0x0F)   |         8 (0x08)          |
+|   4   |  16(0x10)~31(0x1F)  |         16 (0x10)         |
+|   5   |  32(0x20)~63(0x3F)  |         32 (0x20)         |
+|   6   | 64(0x40)~127(0x7F)  |         64 (0x40)         |
+|   7   | 128(0x80)~254(0xFE) |        128 (0x80)         |
 
 - Appropriate Compliance Slope, Power control, and the Compliance Margin values will make it possible to create smoother movement.
 
@@ -881,26 +881,26 @@ Prints the present load of the actuator with ID 1 on the screen.
 
 ### [Voltage](#voltage)
 
-This parameter is used to read the Dynamixel's current voltage.
+This parameter is used to read DYNAMIXEL current voltage.
 
-- The current voltage of the Dynamixel is read.
+- The current voltage of DYNAMIXEL is read.
 - The actual voltage is 1/10 of the read value. For example, if the returned value is 115, the actual voltage is 11.5V.
 
 #### Example
 
-Prints the current voltage of the Dynamixel with ID 1 on the screen.
+Prints the current voltage of DYNAMIXEL with ID 1 on the screen.
 
 ![Voltage Example][img_voltage_example]
 
 ### [Temperature](#temperature)
 
-This parameter is used to read the Dynamixel's current temperature.
+This parameter is used to read DYNAMIXEL current temperature.
 
-- The current temperature of the Dynamixel is read.
+- The current temperature of DYNAMIXEL is read.
 
 #### Example
 
-Prints the present temperature of the Dynamixel with ID 1 on the screen.
+Prints the present temperature of DYNAMIXEL with ID 1 on the screen.
 
 ![Temperature Example][img_temperature_example]
 
@@ -979,16 +979,16 @@ This parameter is used to determine whether an object is detected within a certa
 
 ![Object Detected][img_object_detected]
 
-|Binary value|Decimal value||Meaning in `Object Detected` Commands|
-| :---: | :---: | :---: |
-|000|0|Not detected|
-|001|1|Detected by left sensor|
-|010|2|Detected by center sensor|
-|011|3|Detected by left and center sensors|
-|100|4|Detected by right sensor|
-|101|5|Detected by right and left sensors|
-|110|6|Detected by right and center sensors|
-|111|7|Detected by every sensor|
+| Binary value | Decimal value | |Meaning in `Object Detected` Commands |
+|:------------:|:-------------:|:--------------------------------------:|
+|     000      |       0       |              Not detected              |
+|     001      |       1       |        Detected by left sensor         |
+|     010      |       2       |       Detected by center sensor        |
+|     011      |       3       |  Detected by left and center sensors   |
+|     100      |       4       |        Detected by right sensor        |
+|     101      |       5       |   Detected by right and left sensors   |
+|     110      |       6       |  Detected by right and center sensors  |
+|     111      |       7       |        Detected by every sensor        |
 
 #### Example
 
@@ -1006,16 +1006,16 @@ Compatible Controller
 
   ![Light Detected][img_light_detected]
 
-|Binary value|Decimal value|Meaning in `Light Detection` Commands|
-| :---: | :---: | :---: |
-|000|0|Not detected|
-|001|1|Detected by left sensor|
-|010|2|Detected by center sensor|
-|011|3|Detected by left and center sensors|
-|100|4|Detected by right sensor|
-|101|5|Detected by right and left sensors|
-|110|6|Detected by right and center sensors|
-|111|7|Detected by every sensor|
+| Binary value | Decimal value | Meaning in `Light Detection` Commands |
+|:------------:|:-------------:|:-------------------------------------:|
+|     000      |       0       |             Not detected              |
+|     001      |       1       |        Detected by left sensor        |
+|     010      |       2       |       Detected by center sensor       |
+|     011      |       3       |  Detected by left and center sensors  |
+|     100      |       4       |       Detected by right sensor        |
+|     101      |       5       |  Detected by right and left sensors   |
+|     110      |       6       | Detected by right and center sensors  |
+|     111      |       7       |       Detected by every sensor        |
 
 #### Example
 
@@ -1321,15 +1321,15 @@ Paramenters to determine IR array obstacle values
 
 - In the IR array if each IR sensor detected black value is lower than the set black valuethe values will be assigned as shown below; the LED turns on.
 
-|Binary value|Decimal Value|Black Detection|
-| :---: | :---: | :---: |
-|0000001|1|Black detection for IR sensor #1|
-|0000010|2|Black detection for IR sensor #2|
-|0000100|4|Black detection for IR sensor #3|
-|0001000|8|Black detection for IR sensor #4|
-|0010000|16|Black detection for IR sensor #5|
-|0100000|32|Black detection for IR sensor #6|
-|1000000|64|Black detection for IR sensor #7|
+| Binary value | Decimal Value |         Black Detection          |
+|:------------:|:-------------:|:--------------------------------:|
+|   0000001    |       1       | Black detection for IR sensor #1 |
+|   0000010    |       2       | Black detection for IR sensor #2 |
+|   0000100    |       4       | Black detection for IR sensor #3 |
+|   0001000    |       8       | Black detection for IR sensor #4 |
+|   0010000    |      16       | Black detection for IR sensor #5 |
+|   0100000    |      32       | Black detection for IR sensor #6 |
+|   1000000    |      64       | Black detection for IR sensor #7 |
 
 - From the diagram you may check binary values.
 
@@ -1348,10 +1348,10 @@ Reference black/white for the IR array
 - Determines white/black set values.
 - sensor and set black values
 
-||Black Detection|LED|
-| :---: | :---: | :---: |
-|Sensor value <= set value|BIT 1|ON|
-|Sensor value > set value|BIT 0|OFF|
+|                           | Black Detection | LED |
+|:-------------------------:|:---------------:|:---:|
+| Sensor value <= set value |      BIT 1      | ON  |
+| Sensor value > set value  |      BIT 0      | OFF |
 
 #### Example
 
@@ -1361,7 +1361,7 @@ Set sensor #1 to 100; when sensor #1 detects black do a specified action.
 
 ### [Direct Access](#direct-access)
 
-The address of peripheral devices such as Dynamixels can be accessed directly and read from or written to.
+The address of peripheral devices such as DYNAMIXEL's can be accessed directly and read from or written to.
 
 **NOTE** : Compatiable Controllers : [CM-5], [CM-510], [CM-700]
 {: .notice}
@@ -1370,11 +1370,11 @@ The address of peripheral devices such as Dynamixels can be accessed directly an
 
 #### Example
 
-Write 0 at word address 25 of the Dynamixel with ID 105.
+Write 0 at word address 25 of DYNAMIXEL with ID 105.
 
 ![Direct Access 01][img_direct_access_01]
 
-Print the value stored in the word address 25 of the Dynamixel with ID 105.
+Print the value stored in the word address 25 of DYNAMIXEL with ID 105.
 
   ![Direct Access 02][img_direct_access_02]
 

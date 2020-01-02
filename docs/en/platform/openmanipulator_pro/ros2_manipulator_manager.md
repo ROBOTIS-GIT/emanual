@@ -55,12 +55,12 @@ ROS_MASTER_URI=http://localhost:11311
 process[open_manipulator_pro_manager-1]: started with pid [19408]
 [ INFO] [1552279834.24ro20783]: manager->init
 /dev/ttyUSB0 added. (baudrate: 1000000)
-(/dev/ttyUSB0) [ID:  1] H54P-200-S500-R added.
-(/dev/ttyUSB0) [ID:  2] H54P-200-S500-R added.
-(/dev/ttyUSB0) [ID:  3] H54P-100-S500-R added.
-(/dev/ttyUSB0) [ID:  4] H54P-100-S500-R added.
-(/dev/ttyUSB0) [ID:  5] H42P-020-S300-R added.
-(/dev/ttyUSB0) [ID:  6] H42P-020-S300-R added.
+(/dev/ttyUSB0) [ID:  1] PH54-200-S500-R added.
+(/dev/ttyUSB0) [ID:  2] PH54-200-S500-R added.
+(/dev/ttyUSB0) [ID:  3] PH54-100-S500-R added.
+(/dev/ttyUSB0) [ID:  4] PH54-100-S500-R added.
+(/dev/ttyUSB0) [ID:  5] PH42-020-S300-R added.
+(/dev/ttyUSB0) [ID:  6] PH42-020-S300-R added.
 [ INFO] [1552279834.361381084]: Load offsets...
 ```
 

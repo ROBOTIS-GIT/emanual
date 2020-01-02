@@ -17,7 +17,7 @@ sidebar:
 
 - Awarded the “Good Design”
 - Compatible with the 6mm grid OLLO `ROBOTIS DREAM` frames
-- Applies the small Dynamixel XL-320 for various motion functions
+- Applies the small DYNAMIXEL XL-320 for various motion functions
 - Offers the ROBOTIS-MINI exclusive App (Touch, Gesture, Voice Recognition, Messenger)
 - Supports various functions for the user’s convenience (battery percentage, offset setting, etc)
 - Supports R+ Task and R+ Motion
@@ -48,7 +48,7 @@ Please be aware of your own safety as you assemble. ROBOTIS CO., LTD is not resp
 - Do not use excessive force on nuts, bolts, or robotics parts.
 - Avoid activating the robot on desks/tables to avoid from falling.
 - Damages caused from falling are not covered under warranty.
-- The gears in the Dynamixel XL-320 are subject to wear. Prolonged use, improper modification, excessive force, and damages will increase the gear backlash.
+- The gears in DYNAMIXEL XL-320 are subject to wear. Prolonged use, improper modification, excessive force, and damages will increase the gear backlash.
 
 ### [Precautions During Use](#precautions-during-use)
 
@@ -58,7 +58,7 @@ Please be aware of your own safety as you assemble. ROBOTIS CO., LTD is not resp
 
 ![](/assets/images/edu/mini/mini_001.jpg)
 
-#### Frame Assembly for Dynamixel XL-320
+#### Frame Assembly for DYNAMIXEL XL-320
 
 There are two different marks on the horn. Top marked and the bottom marked Before assembly, make sure the marks are in their proper position.
 
@@ -93,13 +93,13 @@ The controller checks the battery voltage when the power is turned on.
 |    Good     | All LEDs blink in RED 1 time  |
 | Low Battery | All LEDs blink in RED 5 times |
 
-**NOTE** : The controller acquires voltage from a specific Dynamixel(ID 3) so ID 3 should be connected properly.
+**NOTE** : The controller acquires voltage from a specific DYNAMIXEL(ID 3) so ID 3 should be connected properly.
 {: .notice}
 
 {% capture mini_warning_01 %}
 **WARNING** : Please immediately turn off the power and contact ROBOTIS when you encounter any of the following symptoms.
 - When you see smoke from the product.
-- When the LED on the Dynamixel XL-320 does not blink during the [`Actuator Test`](/docs/en/edu/mini/).
+- When the LED on DYNAMIXEL XL-320 does not blink during the [`Actuator Test`](/docs/en/edu/mini/).
 - When the robot has been exposed to water or any debris has gone into the parts.
 - When you feel odd smell from the product.
 - When the robot is damaged.

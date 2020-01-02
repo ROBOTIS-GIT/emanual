@@ -209,7 +209,7 @@ The following is an example of configuring a specific joint to not be affected b
 
 #### Joint LED Auto ON
 
-Turns on/off the DYNAMIXEL LED while a Motion is being executed. This feature is only supported in OpenCM 9.04
+Turns on/off DYNAMIXEL LED while a Motion is being executed. This feature is only supported in OpenCM 9.04
 
 The following is an example of using the “turn on joint LED automatically” function when executing a Motion.
 
@@ -457,14 +457,14 @@ The following is an example of using Print Screen and Print Screen with Line to 
 
 ### [Controller: Custom](#controller-custom)
 
-- Directly read from or write to the address of an external device such as a DYNAMIXEL.
+- Directly read from or write to the address of an external device such as DYNAMIXEL.
 - User can read/write by selecting the specified address in units of Byte, Word, or DWord. Write or read in Byte or DWORD variable to write/read on user accessed address
-- Please refer to the DYNAMIXEL Control Table for more detail.
+- Please refer to DYNAMIXEL Control Table for more detail.
 
 
 ## [DYNAMIXEL Device](#dynamixel-device)
 
-These are the parameters for reading or writing values in the DYNAMIXEL Control Table. Please refer to the DYNAMIXEL Control Table for more details.
+These are the parameters for reading or writing values in DYNAMIXEL Control Table. Please refer to DYNAMIXEL Control Table for more details.
 
 ### [DYNAMIXEL](#dynamixel)
 
@@ -480,21 +480,21 @@ Configure the Operating Mode of DYNAMIXEL. Please refer to Operating Mode of eac
 ![](/assets/images/sw/rplus_task3/task3_216.png)
 
 #### [Torque On/Off](#torque-onoff)
-Turn the DYNAMIXEL Torque on/off. Torque is turned on when True, Torque is turned off when False.
+Turn DYNAMIXEL Torque on/off. Torque is turned on when True, Torque is turned off when False.
 
 The following is an example of turning on the Torque of DYNAMIXEL with ID number 1 when the Controller’s button is pressed.  
 ![](/assets/images/sw/rplus_task3/task3_120.png)
 
 #### [LED](#led)
-Turn the DYNAMIXEL LED on/off. LED is turned on when True, LED is turned off when False.
+Turn DYNAMIXEL LED on/off. LED is turned on when True, LED is turned off when False.
 
 #### [CW margin / CCW margin](#cw-margin--ccw-margin)
-Read or write the DYNAMIXEL Margin value. The range of the value is from 0 to 255, but it is recommended not to change the default value (1).  
-Please refer to the DYNAMIXEL Control Table for more detail.
+Read or write DYNAMIXEL Margin value. The range of the value is from 0 to 255, but it is recommended not to change the default value (1).  
+Please refer to DYNAMIXEL Control Table for more detail.
 
 #### [CW slope / CCW slope](#cw-slope--ccw-slope)
-Read or write the DYNAMIXEL Slope value. There are a total of seven phases which the value can be set to, and the representative values of each phase are set as in the table below.  
-Please refer to the DYNAMIXEL Control Table for more detail.
+Read or write DYNAMIXEL Slope value. There are a total of seven phases which the value can be set to, and the representative values of each phase are set as in the table below.  
+Please refer to DYNAMIXEL Control Table for more detail.
 
 | Level |    Real Data Value    | Representative Data Value |
 |:-----:|:---------------------:|:-------------------------:|
@@ -507,17 +507,17 @@ Please refer to the DYNAMIXEL Control Table for more detail.
 |   7   | 128(0x80) ~ 254(0xFE) |        128 (0x80)         |
 
 #### [PID Gains](#pid-gains)
-Read or write the DYNAMIXEL PID values.  
+Read or write DYNAMIXEL PID values.  
 P gain refers to Proportional Gain, for which the smaller the value is the larger the clearance gets, and the power level decreases near the target location.  
 I gain refers to Integral Gain, and D gain refers to Derivative Gain.
 
 #### [Goal Position](#goal-position)
-Read or write the DYNAMIXEL Goal Position.  
+Read or write DYNAMIXEL Goal Position.  
 The `Position Value` control can be used to designate the angle position as shown below.  
   ![](/assets/images/sw/rplus_task3/task3_121.png)
 
 #### Goal Velocity
-Read or write the DYNAMIXEL Goal Velocity.  
+Read or write DYNAMIXEL Goal Velocity.  
 The `Speed Value` control can be used to designate the rotation direction and power value as shown below.  
   ![](/assets/images/sw/rplus_task3/task3_122.png)
 
@@ -565,14 +565,14 @@ CM-550 supports [Protocol 2.0 - SyncWrite](/docs/en/dxl/protocol2/#sync-write).
 #### SyncWrite Command
 Use SyncWrite Command to build and transmit the packet. Please refer below table for details.
 
-| Parameter |          Command          |                       Example                        |
-|:---------:|:-------------------------:|:----------------------------------------------------:|
+| Parameter |          Command          |                         Example                         |
+|:---------:|:-------------------------:|:-------------------------------------------------------:|
 |     0     |  Start SyncWrite Packet   | ![](/assets/images/sw/rplus_task3_kr/sync_write_01.png) |
 |     1     |  Build SyncWrite Packet   | ![](/assets/images/sw/rplus_task3_kr/sync_write_02.png) |
 |     2     | Transmit SyncWrite Packet | ![](/assets/images/sw/rplus_task3_kr/sync_write_03.png) |
 
 #### SyncWrite Address
-Specify the DYNAMIXEL address to write the data.
+Specify DYNAMIXEL address to write the data.
 
 ![](/assets/images/sw/rplus_task3_kr/sync_write_04.png)  
 > Define the starting address to 116.
@@ -584,7 +584,7 @@ Specify the length of data.
 > Use 4 byte data.
 
 #### SyncWrite ID
-Specify the DYNAMIXEL ID to write.
+Specify DYNAMIXEL ID to write.
 
 ![](/assets/images/sw/rplus_task3_kr/sync_write_06.png)  
 > ID 2 DYNAMIXEL will receive the data.
@@ -634,9 +634,9 @@ Use can check the value while looking at the screen as shown below.
 
 ### [DYNAMIXEL: Custom](#dynamixel-custom)
 
-- User can access the address of an external device such as a DYNAMIXEL directly to perform read/write tasks.
+- User can access the address of an external device such as DYNAMIXEL directly to perform read/write tasks.
 - User can read/write by selecting the specified address in units of Byte, Word, or DWord.Write or read in Byte or DWORD variable to write/read on user accessed address
-- Please refer to the DYNAMIXEL Control Table for more detail.
+- Please refer to DYNAMIXEL Control Table for more detail.
 
 ![](/assets/images/sw/rplus_task3/task3_217.png)
 

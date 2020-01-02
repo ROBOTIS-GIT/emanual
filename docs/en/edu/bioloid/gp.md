@@ -15,7 +15,7 @@ sidebar:
 
 ![](/assets/images/edu/bioloid/gp_product.jpg)
 
-- Best humanoid robot with high-quality Dynamixel AX-18F (legs)
+- Best humanoid robot with high-quality DYNAMIXEL AX-18F (legs)
 - Strong, lightweight aluminum frames
 - Excellent mobility such as turning during walking or high-speed walking
 - Basic humanoid motions such as combat and soccer modes provided
@@ -164,11 +164,11 @@ After mounting the IR receiver on CM-530 under control mode, you can set the cha
 
 # [Download](#download)
 
-|File Type|Download|
-|:---:|:---:|
-|Humanoid Task Code|[Download](http://support.robotis.com/en/baggage_files/bioloid/bio_gp_humanoid_en.tsk)|
-|Humanoid Basic Motion File|[Download](http://support.robotis.com/en/baggage_files/bioloid/bio_gp_humanoid_kr.mtn)|
-|QuickStart Guide PDF File|[Download](http://www.robotis.com/download/doc/BIO_GP_Humanoid_ASM_EN.pdf)|
+|         File Type          |                                        Download                                        |
+|:--------------------------:|:--------------------------------------------------------------------------------------:|
+|     Humanoid Task Code     | [Download](http://support.robotis.com/en/baggage_files/bioloid/bio_gp_humanoid_en.tsk) |
+| Humanoid Basic Motion File | [Download](http://support.robotis.com/en/baggage_files/bioloid/bio_gp_humanoid_kr.mtn) |
+| QuickStart Guide PDF File  |       [Download](http://www.robotis.com/download/doc/BIO_GP_Humanoid_ASM_EN.pdf)       |
 
 # [References](#references)
 
@@ -176,7 +176,7 @@ After mounting the IR receiver on CM-530 under control mode, you can set the cha
 
 {% include en/parts/controller/fuse_cm510_530.md %}
 
-## [Dynamixel Management](#dynamixel-management)
+## [DYNAMIXEL Management](#dynamixel-management)
 
 {% include en/edu/bioloid/dynamixel_management.md %}
 
@@ -293,7 +293,7 @@ Most of the sensors used in robots, such as IR sensors and distance sensors, sup
 [IR Sensor]: /docs/en/parts/sensor/irss-10/
 [Touch Sensor]: /docs/en/parts/sensor/ts-10/
 [Gyro Sensor]: /docs/en/parts/sensor/gs-12/
-[USB2Dynamixel]: /docs/en/parts/interface/usb2dynamixel/
+[USB2DYNAMIXEL]: /docs/en/parts/interface/usb2dynamixel/
 [Controller]: /docs/en/parts/controller/controller_compatibility/
 [RC-100]: /docs/en/parts/communication/rc-100/
 [ZIG-110]: /docs/en/parts/communication/zig-110/

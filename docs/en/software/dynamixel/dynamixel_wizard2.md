@@ -25,7 +25,7 @@ sidebar:
 
 ## [DYNAMIXEL Wizard 2.0](#dynamixel-wizard-20)
 
-DYNAMIXEL Wizard 2.0 is an optimized tool for managing DYNAMIXELs from various operating systems.
+DYNAMIXEL Wizard 2.0 is an optimized tool for managing DYNAMIXEL's from various operating systems.
 The following features are provided with DYNAMIXEL Wizard 2.0.
 
 - DYNAMIXEL Firmware Update
@@ -87,8 +87,8 @@ Although almost all ROBOTIS products are shipped with installed firmwares, new f
 | **PRO L**        | [L42-10-S300-R]                | [L54-30-S500-R]                | [L54-30-S400-R]                | [L54-50-S500-R]                | [L54-50-S290-R] |
 | **PRO H(A)**     | [H42-20-S300-R(A)]             | [H54-100-S500-R(A)]            | [H54-200-S500-R(A)]            |                                |                 |
 | **PRO M(A)**     | [M42-10-S260-R(A)]             | [M54-40-S250-R(A)]             | [M54-60-S250-R(A)]             |                                |                 |
-| **PRO+ H**       | [H42P-020-S300-R]              | [H54P-100-S500-R]              | [H54P-100-S500-R]              |                                |                 |
-| **PRO+ M**       | [M54P-060-S250-R]              | [M54P-040-S250-R]              | [M42P-010-S260-R]              |                                |                 |
+| **PRO+ H**       | [PH42-020-S300-R]              | [PH54-100-S500-R]              | [PH54-100-S500-R]              |                                |                 |
+| **PRO+ M**       | [PM54-060-S250-R]              | [PM54-040-S250-R]              | [PM42-010-S260-R]              |                                |                 |
 | **ETC**          | [RH-P12-RN]                    | [RH-P12-RN(A)]                 |                                |                                |                 |
 
 
@@ -153,7 +153,7 @@ Although almost all ROBOTIS products are shipped with installed firmwares, new f
 
 ## [Uninstall: Linux](#uninstall-linux)
 
-1. From the folder where Dynamixel Wizard 2.0 is installed, execute `maintenancetool`.
+1. From the folder where DYNAMIXEL Wizard is installed, execute `maintenancetool`.
 
 2. Select `Remove all components` and click `Next` to proceed.
 
@@ -169,8 +169,8 @@ Although almost all ROBOTIS products are shipped with installed firmwares, new f
 
 ## [Main Screen](#main-screen)
 
-The main screen of software classifies the detected DYNAMIXELs according to communication ports, baudrates, and products.
-Detected DYNAMIXELs can be tested by modifying control table values.
+The main screen of software classifies the detected DYNAMIXEL's according to communication ports, baudrates, and products.
+Detected DYNAMIXEL's can be tested by modifying control table values.
 
 ![](/assets/images/sw/dynamixel/wizard2/wizard2_main_002.png)
 
@@ -207,25 +207,25 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 
 ### [Scan DYNAMIXEL](#scan-dynamixel)
 
-1. Go to `Device` > `Scan` to start searching connected DYNAMIXELs.
+1. Go to `Device` > `Scan` to start searching connected DYNAMIXEL's.
 
     **NOTE** : If Open failed is shown up, please check whether communication port is connected at the **Main Toolbar** or not, then button `Disconnect` to avoid port collision.
     {: .notice}
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_012.png)
 
-2. Detected DYNAMIXELs are listed on the left column.
+2. Detected DYNAMIXEL's are listed on the left column.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_001.png)
 
 ## [DYNAMIXEL Control Table](#dynamixel-control-table)
 
-1. Detected DYNAMIXELs are classified according to communication ports, baudrates, and products. Select a group or device to run the test.
+1. Detected DYNAMIXEL's are classified according to communication ports, baudrates, and products. Select a group or device to run the test.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_002.png)
 
-2. `Factory Reset` button in the Sub Menu on the right column will reset the DYNAMIXEL to factory status(ID and Baudrate will not be reset).  
-  `Reboot` button will soft reset the DYNAMIXEL.  
+2. `Factory Reset` button in the Sub Menu on the right column will reset DYNAMIXEL to factory status(ID and Baudrate will not be reset).  
+  `Reboot` button will soft reset DYNAMIXEL.  
   `Torque` switch will toggle the Torque of DYNAMIXEL.  
   `LED` switch will toggle the LED of DYNAMIXEL.  
 
@@ -256,7 +256,7 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
     - Input values into the input window to increase (or decrease) the speed of a horn of DYNAMIXEL.
     - More information on the virtual controller is available at [Modifying Control Value](#modifying-control-values) 
 
-6. `Communication Status` on the buttom left corner represents communication status between PC and DYNAMIXELs.
+6. `Communication Status` on the buttom left corner represents communication status between PC and DYNAMIXEL's.
 
 7. The `Packet Status` section indicates the status of responded packet from DYNAMIXEL.
 
@@ -415,11 +415,11 @@ When positioning a mouse cursor on its model name, **Firmware update is availabl
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_015.png)
 
-2. Firmware update will begin with a breif instruction. Please do NOT disconnect or turn off the DYNAMIXEL.
+2. Firmware update will begin with a breif instruction. Please do NOT disconnect or turn off DYNAMIXEL.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_update_001.png)
 
-3. Click `Next` to begin firmware update. Be careful not to disconnect or turn off the DYNAMIXEL.
+3. Click `Next` to begin firmware update. Be careful not to disconnect or turn off DYNAMIXEL.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_update_002.png)
 
@@ -433,11 +433,11 @@ When positioning a mouse cursor on its model name, **Firmware update is availabl
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_016.png)
 
-2. Select all or desired DYNAMIXELs, then click `Next` button.
+2. Select all or desired DYNAMIXEL's, then click `Next` button.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_update_all_001.png)
 
-3. Firmware of selected DYNAMIXELs are updated.
+3. Firmware of selected DYNAMIXEL's are updated.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_update_all_002.png)
 
@@ -451,7 +451,7 @@ When positioning a mouse cursor on its model name, **Firmware update is availabl
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_017.png)
 
-2. Firmware recovery will begin with a breif instruction. Please do **NOT** disconnect or turn off the DYNAMIXEL.
+2. Firmware recovery will begin with a breif instruction. Please do **NOT** disconnect or turn off DYNAMIXEL.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_001.png)
 
@@ -465,16 +465,16 @@ When positioning a mouse cursor on its model name, **Firmware update is availabl
 
 5. The proper communication port that is connected to DYNAMIXEL has to be selected manually. If the port is in use, it has to be released first.
 
-    **WARNING** : Only one DYNAMIXEL should be connected to the port when recoverying the DYNAMIXEL firmware.
+    **WARNING** : Only one DYNAMIXEL should be connected to the port when recoverying DYNAMIXEL firmware.
     {: .notice--warning}
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_004.png)
 
-6. Toggle the power of DYNAMIXEL to be detected from the DYNAMIXEL Wizard 2.0.
+6. Toggle the power of DYNAMIXEL to be detected from DYNAMIXEL Wizard 2.0.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_005.png)
 
-7. If DYNAMIXEL is successfully detected, wizard begins firmware recovery. Please do **NOT** disconnect or turn off the DYNAMIXEL.
+7. If DYNAMIXEL is successfully detected, wizard begins firmware recovery. Please do **NOT** disconnect or turn off DYNAMIXEL.
     
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_006.png)
 
@@ -535,16 +535,16 @@ If the horn is misaligned after gear set replacement or reassembly, please perfo
 
 4. The proper communication port that is connected to DYNAMIXEL has to be selected manually. If the port is in use, it has to be released first.
 
-    **WARNING** : Only one DYNAMIXEL has to be connected to the port when calibrating the DYNAMIXEL.
+    **WARNING** : Only one DYNAMIXEL has to be connected to the port when calibrating DYNAMIXEL.
     {: .notice--warning}
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_004.png)
 
-5. Toggle the power of DYNAMIXEL to be detected from the DYNAMIXEL Wizard 2.0.
+5. Toggle the power of DYNAMIXEL to be detected from DYNAMIXEL Wizard 2.0.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_005.png)
 
-6. If DYNAMIXEL is successfully detected, calibration firmware is installed. Please do NOT disconnect or turn off the DYNAMIXEL.
+6. If DYNAMIXEL is successfully detected, calibration firmware is installed. Please do NOT disconnect or turn off DYNAMIXEL.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_006.png)
 
@@ -715,12 +715,12 @@ In order to use the minimum communication interval(1 [ms]), please follow the in
 [L54-30-S500-R]: /docs/en/dxl/pro/l54-30-s500-r/
 [L54-30-S400-R]: /docs/en/dxl/pro/l54-30-s400-r/
 [L42-10-S300-R]: /docs/en/dxl/pro/l42-10-s300-r/
-[H42P-020-S300-R]: /docs/en/dxl/pro_plus/h42p-020-s300-r/
-[H54P-100-S500-R]: /docs/en/dxl/pro_plus/h54p-100-s500-r/
-[H54P-200-S500-R]: /docs/en/dxl/pro_plus/h54p-200-s500-r/
-[M54P-060-S250-R]: /docs/en/dxl/pro_plus/m54p-060-s250-r/
-[M54P-040-S250-R]: /docs/en/dxl/pro_plus/m54p-040-s250-r/
-[M42P-010-S260-R]: /docs/en/dxl/pro_plus/m42p-010-s260-r/
+[PH42-020-S300-R]: /docs/en/dxl/pro_plus/ph42-020-s300-r/
+[PH54-100-S500-R]: /docs/en/dxl/pro_plus/ph54-100-s500-r/
+[PH54-200-S500-R]: /docs/en/dxl/pro_plus/ph54-200-s500-r/
+[PM54-060-S250-R]: /docs/en/dxl/pro_plus/pm54-060-s250-r/
+[PM54-040-S250-R]: /docs/en/dxl/pro_plus/pm54-040-s250-r/
+[PM42-010-S260-R]: /docs/en/dxl/pro_plus/pm42-010-s260-r/
 [RH-P12-RN]: /docs/en/platform/rh_p12_rn/
 [RH-P12-RN(A)]: /docs/en/platform/rh_p12_rna/
 [Compatibility Table]: /docs/en/popup/faq_protocol_compatibility_table/

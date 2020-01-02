@@ -362,11 +362,11 @@ Class platform porting is necessary for proper functionality.
 
 ###### Communication Result
 
-Output message of during link between Dynamixel and CM730.
+Output message of during link between DYNAMIXEL and CM730.
 
 |    Name    |                             Description                             |
 |:----------:|:-------------------------------------------------------------------:|
-|  SUCCESS   |              Successful communicationa with Dynamixel               |
+|  SUCCESS   |              Successful communicationa with DYNAMIXEL               |
 | TX_CORRUPT |                  Problems with Instruction Packet                   |
 |  TX_FAIL   |            Port error, failed to send Instruction Packet            |
 |  RX_FAIL   |             Port error, failed to receive Status Packet             |
@@ -409,7 +409,7 @@ Control Table Address
 |     P_BAUD_RATE     |  4 (0x4)  |           Baud Rate of CM730           |
 | P_RETURN_DELAY_TIME |  5 (0x5)  |           Retrun Delay Time            |
 |   P_RETURN_LEVEL    | 16 (0x10) |          Status Return Level           |
-|     P_DXL_POWER     | 24 (0x18) |            Dynamixel Power             |
+|     P_DXL_POWER     | 24 (0x18) |            DYNAMIXEL Power             |
 |    P_LED_PANNEL     | 25 (0x19) |           LED of back pannel           |
 |    P_LED_HEAD_L     | 26 (0x1A) |          Low byte of Head LED          |
 |    P_LED_HEAD_H     | 27 (0x1B) |         High byte of Head LED          |
@@ -486,12 +486,12 @@ Releases CM-730.
 
 ###### int Ping( int id, int *error )
 
-Check the existance of Dynamixel with selected id.
+Check the existance of DYNAMIXEL with selected id.
 - Arguments
 
 | Name  | Type |        Description        |
 |:-----:|:----:|:-------------------------:|
-|  id   | int  | Dynamixel ID for checking |
+|  id   | int  | DYNAMIXEL ID for checking |
 | error | int* |    Status packet error    |
 
 - Return : Communication Result
@@ -516,7 +516,7 @@ Reads unit byte from CM-730 Control Table value
 
 |  Name   | Type |      Description      |
 |:-------:|:----:|:---------------------:|
-|   id    | int  |     Dynamixel ID      |
+|   id    | int  |     DYNAMIXEL ID      |
 | address | int  | Control Table address |
 | pValue  | int* |   saves read values   |
 |  error  | int* |  Status packet error  |
@@ -545,7 +545,7 @@ Reads 2 bytes from CM-730 Control Table value
 
 |  Name   | Type |      Description      |
 |:-------:|:----:|:---------------------:|
-|   id    | int  |     Dynamixel ID      |
+|   id    | int  |     DYNAMIXEL ID      |
 | address | int  | Control Table address |
 | pValue  | int* |   saves read values   |
 |  error  | int* |  Status packet error  |
@@ -574,7 +574,7 @@ Reads CM-730 Control Table value from start_addr to end_addr
 
 |    Name    |      Type      |         Description         |
 |:----------:|:--------------:|:---------------------------:|
-|     id     |      int       |        Dynamixel ID         |
+|     id     |      int       |        DYNAMIXEL ID         |
 | start_addr |      int       | Control table start address |
 |  end_addr  |      int       |  Control table end address  |
 |   table    | unsigned char* |      Read data buffer       |
@@ -603,7 +603,7 @@ Writes unit byte to CM-730 Control Table
 
 |  Name   | Type |      Description      |
 |:-------:|:----:|:---------------------:|
-|   id    | int  |     Dynamixel ID      |
+|   id    | int  |     DYNAMIXEL ID      |
 | address | int  | Control Table address |
 |  value  | int  |      write value      |
 |  error  | int* |  Status packet error  |
@@ -631,7 +631,7 @@ Writes 2 bytes to CM-730 Control Table
 
 |  Name   | Type |      Description      |
 |:-------:|:----:|:---------------------:|
-|   id    | int  |     Dynamixel ID      |
+|   id    | int  |     DYNAMIXEL ID      |
 | address | int  | Control Table address |
 |  value  | int  |      write value      |
 |  error  | int* |  Status packet error  |
@@ -1178,7 +1178,7 @@ Motion Class shares data between classes
 
 ###### Joint ID
 
-- Joint ID is the same as Dynamixel ID
+- Joint ID is the same as DYNAMIXEL ID
 
 ![](/assets/images/platform/op/op_id_map.jpg)
 
@@ -3241,7 +3241,7 @@ root@darwin:/darwin/Linux/project/tutorial/read_write# ./read_write
   CM730 cm730(&linux_cm730);
   ```
 
-2. Call connect() function to open port and turn on the Dynamixel power.
+2. Call connect() function to open port and turn on DYNAMIXEL power.
 
   ```
   if(cm730.Connect() == false)
@@ -3261,7 +3261,7 @@ root@darwin:/darwin/Linux/project/tutorial/read_write# ./read_write
   printf("---");
   ```
 
-4. Read 2 bytes value(Present position) from Dynamixel control table and write the mirroring value.
+4. Read 2 bytes value(Present position) from DYNAMIXEL control table and write the mirroring value.
 
   ```
   printf(" ID[%d]:", JointData::ID_R_SHOULDER_PITCH);
@@ -3512,7 +3512,7 @@ tracker.LoadINISettings(ini);
 httpd::ball_finder = &tracker.finder;
 ```
 
-Create Dynamixel control CM730 class and Head class initializes MotionManager class.
+Create DYNAMIXEL control CM730 class and Head class initializes MotionManager class.
 
 ```
 LinuxCM730 linux_cm730(U2D_DEV_NAME);
@@ -3560,7 +3560,7 @@ Once running the tutorial you will see the following
 ![](/assets/images/platform/op/op_070.jpg)
 
 DARWIN-OP's head LED will change from green to amber.
-- DARWIN-OP tracks the red ball. However, the body remains still and only the head moves (Dynamixel ID 19 and 20).
+- DARWIN-OP tracks the red ball. However, the body remains still and only the head moves (DYNAMIXEL ID 19 and 20).
 - To get DARWIN-OP track the ball place the ball at a distance approximately 1 to 1.5 feet away from the head. Placing the ball too close to DARWIN-OP will cause the head to move out of control.
 
 You may also change the color DArwIn-OP tracks by opening our web browser.  
@@ -3823,7 +3823,7 @@ LinuxCM730 linux_cm730(U2D_DEV_NAME);
 CM730 cm730(&linux_cm730);
 ```
 
-Call connect() function to open port and turn on the Dynamixel power.
+Call connect() function to open port and turn on DYNAMIXEL power.
 
 ```
 if(MotionManager::GetInstance()->Initialize(&cm730) == false)
@@ -4096,7 +4096,7 @@ The menu options are very extensive so you may not be able to memorize every com
 - **i [index]**: inserts data from STP7 to STP[index]. Moves data from STP[index] to STP[index + 1] if any.
 - **m [index] [index2]**: moves data from [index2] to [index].
 - **d [index]**: deletes data from STP[index]. Moves data from STP[index] to STP[index - 1].
-- **on/off**: turns on/off torque from all Dynamixels.
+- **on/off**: turns on/off torque from all DYNAMIXEL's.
 - **on/off [index1] [index2] [index3] ...**: turns torque on/off from ID[index1] ID[index2] ID[index3]. For example off 20 releases torque from ID20. Notice that STP7 for ID20 will read [????]. Typing on 20 turns torque from ID20 on again and the screen outputs the current position data of ID20.
 
   ![](/assets/images/platform/op/op_090.jpg)
@@ -4113,7 +4113,7 @@ The menu options are very extensive so you may not be able to memorize every com
 
 ##### Example motion editing with Action Editor
 
-Let's modify DARWIN-OP's pose when kneeling. Let's change the position of the left arm during kneeling. Dynamixels for the left arm are ID 2, 4, and 6.
+Let's modify DARWIN-OP's pose when kneeling. Let's change the position of the left arm during kneeling. DYNAMIXEL's for the left arm are ID 2, 4, and 6.
 
 `Tip` Before you begin you may want to make a copy of "motion_4096.bin" file and save it elsewhere. If you don't like with the changes you've made you can always revert back to the original data by overwriting the file.
 {: .notice}
@@ -4133,7 +4133,7 @@ Let's modify DARWIN-OP's pose when kneeling. Let's change the position of the le
 
   ![](/assets/images/platform/op/op_095.jpg)
 
-4. Once on page 15 edit the values on ID 2, 4, 6. One of the easiest ways to edit values is to release the torque on Dynamixels from the left arm.
+4. Once on page 15 edit the values on ID 2, 4, 6. One of the easiest ways to edit values is to release the torque on DYNAMIXEL's from the left arm.
 5. release the torque on ID 2, 4, and 6 by typing **off 2 4 6**
 
   ![](/assets/images/platform/op/op_096.jpg)
@@ -4149,7 +4149,7 @@ Let's modify DARWIN-OP's pose when kneeling. Let's change the position of the le
 
 8. Type **save** if you want this pose to be new sitting pose whenever DARWIN-OP is kneeling (sit down).
 
-### <a name="dynamixel-monitor"></a>[Dynamixel Monitor](#dynamixel-monitor)
+### <a name="dynamixel-monitor"></a>[DYNAMIXEL Monitor](#dynamixel-monitor)
 
 You may be able to reset the MX-28 actuators should you encounter an error in motion, actuator(s) is(are) malfunctioning, or perceive that actuator(s) is(are) malfunctioning.
 
@@ -4164,22 +4164,22 @@ To exit the program type **exit**
 
 After inputting help the screen outputs the offered option.
 - **exit**: exits the program. After exiting the program press the "RESET" button on DArwIn-OP.
-- **scan**: outputs the current status of all Dynamixels.
-- **id [ID]**: go to Dynamixel ID:[ID]. The default ID is ID:200 (CM-730 controller). For example, if you wish to go to ID20 (head tilt) then type id 20.
+- **scan**: outputs the current status of all DYNAMIXEL's.
+- **id [ID]**: go to DYNAMIXEL ID:[ID]. The default ID is ID:200 (CM-730 controller). For example, if you wish to go to ID20 (head tilt) then type id 20.
 
 ![](/assets/images/platform/op/op_100.jpg)
 
 Now the current working ID is ID20.
-- **d**: displays the current control table of the CM-730 and all Dynamixels. Use this option if there is(are) any anomaly(anomalies) with DARWIN-OP.
-- **reset**: defaults the value of current Dynamixel. Use this option if the current actuator has an operating error or is malfunctioning.
-- **reset all**: defaults the value of all Dynamixels. Use this option if the current(s) or all Dymanixel(s) has(have) operating error(s) or is(are) malfunctioning.
-- **wr [ADDR] [VALUE]**: writes value [VALUE] to address [ADDR] of current Dynamixel. For further information on Dynamixel addresses and values click here. For example, go to ID18 (left ankle roll) and type wr 25 1. This means that address 25 (LED) has been turned on (1). You will notice that the actuator on DARWIN-OP left foot LED is turned on. To turn the LED off type wr 25 0.
+- **d**: displays the current control table of the CM-730 and all DYNAMIXEL's. Use this option if there is(are) any anomaly(anomalies) with DARWIN-OP.
+- **reset**: defaults the value of current DYNAMIXEL. Use this option if the current actuator has an operating error or is malfunctioning.
+- **reset all**: defaults the value of all DYNAMIXEL's. Use this option if the current(s) or all Dymanixel(s) has(have) operating error(s) or is(are) malfunctioning.
+- **wr [ADDR] [VALUE]**: writes value [VALUE] to address [ADDR] of current DYNAMIXEL. For further information on DYNAMIXEL addresses and values click here. For example, go to ID18 (left ankle roll) and type wr 25 1. This means that address 25 (LED) has been turned on (1). You will notice that the actuator on DARWIN-OP left foot LED is turned on. To turn the LED off type wr 25 0.
 
 ![](/assets/images/platform/op/op_101.jpg)
 
 If all goes well you will see "Success to write!"
-- on/off: turns torque on/off off current Dynamixel.
-- on/off all: turns torque on/off of all Dynamixels.
+- on/off: turns torque on/off off current DYNAMIXEL.
+- on/off all: turns torque on/off of all DYNAMIXEL's.
 
 To check the currently operating angle resolution perform the following:
 1. Select an eactuator by typeing id (ID number). For example id 3
@@ -4188,8 +4188,8 @@ To check the currently operating angle resolution perform the following:
 There may be an occasion that a given actuator may display values of 1023 or lower but you may not be sure whether the resolution is either 1024 or 4096. In such case make verifications on several actuators.  
 If all the verified values are 1023 or lower, then the resolution is 1024.  
 If any of the values display larger than 1023 then the resolution is 4096.  
-4. ALL Dynamixel actuators installed in DARWIN-OP are set to either 1024 or 4096 resolution. Some actuators being set at 1024 and others at 4096 is not allowed. in such case the demo program will not run.
-5. To ensure all Dynamixel actuators installed in DARWIN-OP are at the same resolution please refer to the firmware installer procedure.
+4. ALL DYNAMIXEL actuators installed in DARWIN-OP are set to either 1024 or 4096 resolution. Some actuators being set at 1024 and others at 4096 is not allowed. in such case the demo program will not run.
+5. To ensure all DYNAMIXEL actuators installed in DARWIN-OP are at the same resolution please refer to the firmware installer procedure.
 
 ![](/assets/images/platform/op/op_102.jpg)
 
@@ -4201,7 +4201,7 @@ This illustration indicates a resolution of 4096.
 
 ### [RoboPlus](#robotplus)
 
-For DARWIN-OP support with RoboPlus Motion and Dynamixel's MX-28 at 4096-resolution you need version 1.0.23.0
+For DARWIN-OP support with RoboPlus Motion and DYNAMIXEL's MX-28 at 4096-resolution you need version 1.0.23.0
 
 ![](/assets/images/platform/op/op_104.jpg)
 
@@ -4367,7 +4367,7 @@ Hold the `shift key` and press `[` or `]` to decrease or increase values by 10x.
 
   ![](/assets/images/platform/op/op_120.gif)
 
-- **Hip pitch offset (motor)**: DARWIN-OP's pitch offset (y-coordinate) at the hip level. Values are for Dynamixel position values for ID11 and ID12.
+- **Hip pitch offset (motor)**: DARWIN-OP's pitch offset (y-coordinate) at the hip level. Values are for DYNAMIXEL position values for ID11 and ID12.
 
   ![](/assets/images/platform/op/op_121.jpg)
 
@@ -4408,7 +4408,7 @@ Hold the `shift key` and press `[` or `]` to decrease or increase values by 10x.
 
   ![](/assets/images/platform/op/op_130.jpg)
 
-- **Pelvis offset (motor)**: DARWIN-OP's roll offset (x-coordinate) at the pelvis level. Values are for Dynamixel position values for ID9 and ID10.
+- **Pelvis offset (motor)**: DARWIN-OP's roll offset (x-coordinate) at the pelvis level. Values are for DYNAMIXEL position values for ID9 and ID10.
 
   ![](/assets/images/platform/op/op_131.jpg)
 
@@ -4557,7 +4557,7 @@ To download firmware software into the sub controller or actuator at the directo
 
   ![](/assets/images/platform/op/op_145.jpg)
 
-  > Install the CM-730 firmware by selecting the first option. This option also includes installation firmware for the MX-28 actuators. Please note that Dynamixel firmware will only be installed into the controller.
+  > Install the CM-730 firmware by selecting the first option. This option also includes installation firmware for the MX-28 actuators. Please note that DYNAMIXEL firmware will only be installed into the controller.
 
 6. Press the CM-730's "**RESET**" button.
 
@@ -4628,10 +4628,10 @@ Afterwards the following window appears
 
 ![](/assets/images/platform/op/op_150.jpg)
 
-- **GOAL**: is the value set for the Dynamixel ID. For more information about Goal refer to dxl_monitor. If you modify this value MODVAL value will modify automatically. For example if you decrease ID 11 by 13 units then MODVAL from ID 11 will automatically decrease its value by 13 units. Changes made here will not be saved.
-- **OFFSET**: is the value set for the Dynamixel offset. to change poses edit Offset value(s). This is the difference between MODVAL and GOAL. You may edit this value directly or via MODVAL. Changes made here can be saved
+- **GOAL**: is the value set for DYNAMIXEL ID. For more information about Goal refer to dxl_monitor. If you modify this value MODVAL value will modify automatically. For example if you decrease ID 11 by 13 units then MODVAL from ID 11 will automatically decrease its value by 13 units. Changes made here will not be saved.
+- **OFFSET**: is the value set for DYNAMIXEL offset. to change poses edit Offset value(s). This is the difference between MODVAL and GOAL. You may edit this value directly or via MODVAL. Changes made here can be saved
 - **MODVAL**: This is the "new" goal position. This is the modified value. You may edit this value directly or via OFFSET. Changes made here can only be saved as OFFSET values
-- **PRSPOS**: is current position of the Dynamixel ID. This PRSPOS may change after a screen refresh or running the program at a different time. This is the current position value.
+- **PRSPOS**: is current position of DYNAMIXEL ID. This PRSPOS may change after a screen refresh or running the program at a different time. This is the current position value.
 - **ERRORS**: is the difference between PRSPOS and MODVAL.
 - **P_GAIN**: is the value set for P (proportional) gain. You can modify the P gain value in this program but cannot save changes.
 - **I_GAIN**: is the value set for I (Integral) gain. You can modify the P gain value in this program but cannot save changes.
@@ -4644,11 +4644,11 @@ type **help** and the following window appears
 - **exit**: exits the program. After exiting the program press the "RESET" button on DARwin-OP.
 - **re**: refreshes the screen.
 - **set [value]**: sets position value on chosen actuator. You may set the offset on OFFSET of the new value in MODVAL. If change value in MODVAL OFFSET value will automatically change and viceversa. Use the directional arrows to select the value you wish to change.
-- **pgain [value]**: sets the P (proportional) parameters on all Dynamixels.
-- **igain [value]**: sets the P (integral) parameters on all Dynamixels.
-- **dgain [value]**: sets the P (differential) parameters on all Dynamixels.
+- **pgain [value]**: sets the P (proportional) parameters on all DYNAMIXEL's.
+- **igain [value]**: sets the P (integral) parameters on all DYNAMIXEL's.
+- **dgain [value]**: sets the P (differential) parameters on all DYNAMIXEL's.
 - **save**: saves any changes you've made ( /darwin/Data/config.ini ). The config.ini file only contain changes made in OFFSET (either directly or via MODVAL).
-- **on/off**: turns on/off torque from all Dynamixels.
+- **on/off**: turns on/off torque from all DYNAMIXEL's.
 - **on/off [index1] [index2] [index3] ...**: turns torque on/off from ID[index1] ID[index2]ID[index3]. For example if you type off 13 16 19 then torque from ID 13, 16, and 19 will be released.
 - Pressing the `[` key will decrease value by 1 unit. Holding the `shift key + [` will decrease value by 10 units. Use the directional arrows to select the value you wish to change.
 - Pressing the `]` key will increase value by 1 unit. Holding the `shift key + ]` will increase value by 10 units. Use the directional arrows to select the value you wish to change.

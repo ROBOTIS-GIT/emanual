@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/software/dynamixel/dynamixel_sdk/library_setup/cpp_linux/
 sidebar:
-  title: DynamixelSDK
+  title: DYNAMIXEL SDK
   nav: "dynamixel_sdk"
 ---
 
@@ -131,7 +131,7 @@ sidebar:
 
 ### [Building and Running the Sample Code](#building-and-running-the-sample-code)
 
-The Dynamixel SDK sample code for CPP uses the library files(.so for Linux) built in CPP language.
+The DYNAMIXEL SDK sample code for CPP uses the library files(.so for Linux) built in CPP language.
 
 You should build library files in `[DynamixelSDK folder]/c++/build/[linuxXX]/libdxl_xYY_cpp.so` with its own source code as shown above. 
 

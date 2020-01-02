@@ -76,7 +76,7 @@ Before launching the controller, please check `open_manipulator_pro_controller` 
 - `moveit_sample_duration`
 
 `use_robot_name` is a parameter to set manipulator name(namespace of ROS messages).  
-`dynamixel_usb_port` is a parameter to set USB port to connect with DYNAMIXEL of OpenMANIPULATOR-PRO. If you use U2D2, it should be set **/dev/ttyUSB@**. If you use OpenCR, it should be set **/dev/ttyACM@** (@ indicates the port number connected to the DYNAMIXEL).  
+`dynamixel_usb_port` is a parameter to set USB port to connect with DYNAMIXEL of OpenMANIPULATOR-PRO. If you use U2D2, it should be set **/dev/ttyUSB@**. If you use OpenCR, it should be set **/dev/ttyACM@** (@ indicates the port number connected to DYNAMIXEL).  
 `dynamixel_baud_rate` is a parameter to set baud rate of DYNAMIXEL. default baud rate of DYNAMIXEL used in OpenMANIPULATOR-PRO is 1000000.  
 `control_period` is a parameter to set communication period between DYNAMIXEL and PC (control loop time).  
 `use_platform` is a parameter that sets whether to use the actual OpenMANIPULATOR-PRO or OpenMANIPULATOR-PRO simulation. please refer [[ROS] Simulation](/docs/en/platform/openmanipulator_pro/ros_simulation/#ros-simulation) chapter.  
@@ -124,25 +124,27 @@ NODES
 ROS_MASTER_URI=http://192.168.3.149:11311
 
 process[open_manipulator_pro-1]: started with pid [12510]
-Joint Dynamixel ID : 1, Model Name : PRO-PLUS-H54P-200-S500-R
-Joint Dynamixel ID : 2, Model Name : PRO-PLUS-H54P-200-S500-R
-Joint Dynamixel ID : 3, Model Name : PRO-PLUS-H54P-100-S500-R
-Joint Dynamixel ID : 4, Model Name : PRO-PLUS-H54P-100-S500-R
-Joint Dynamixel ID : 5, Model Name : PRO-PLUS-H42P-020-S300-R
-Joint Dynamixel ID : 6, Model Name : PRO-PLUS-H42P-020-S300-R
+Joint Dynamixel ID : 1, Model Name : PRO-PLUS-PH54-200-S500-R
+Joint Dynamixel ID : 2, Model Name : PRO-PLUS-PH54-200-S500-R
+Joint Dynamixel ID : 3, Model Name : PRO-PLUS-PH54-100-S500-R
+Joint Dynamixel ID : 4, Model Name : PRO-PLUS-PH54-100-S500-R
+Joint Dynamixel ID : 5, Model Name : PRO-PLUS-PH42-020-S300-R
+Joint Dynamixel ID : 6, Model Name : PRO-PLUS-PH42-020-S300-R
 [INFO] Succeeded to init /open_manipulator_pro
 ```
 
 {% capture notice_01 %}
 **TIP**:  
-- If you can't load DYNAMIXEL, please check your DYNAMIXEL settings by using the following command from the DYNAMIXEL-Workbench packages.   
+- If you can't load DYNAMIXEL, please check your DYNAMIXEL settings by using the following command from DYNAMIXEL-Workbench packages.   
 `rosrun dynamixel_workbench_controllers find_dynamixel /dev/ttyUSB0`  
 if DYNAMIXEL aren't recoginized, please check firmware with ROBOTIS software ([R+ Manager 2.0](/docs/en/software/rplus2/manager/) or [DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/#firmware-update))
-- If you would like to change Dynamixel ID, please check [`open_manipulator_pro.cpp`](https://github.com/ROBOTIS-GIT/open_manipulator_pro/blob/master/open_manipulator_pro_libs/src/open_manipulator_pro.cpp) in the open_manipulator_pro_lib folder. The default ID is **11, 12, 13, 14 ,15 and 16** for joints.
+
+- If you would like to change DYNAMIXEL ID, please check [`open_manipulator_pro.cpp`](https://github.com/ROBOTIS-GIT/open_manipulator_pro/blob/master/open_manipulator_pro_libs/src/open_manipulator_pro.cpp) in the open_manipulator_pro_lib folder. The default ID is **11, 12, 13, 14 ,15 and 16** for joints.
+
 {% endcapture %}
 <div class="notice--success">{{ notice_01 | markdownify }}</div>
 
-**NOTE**: OpenMANIPULATOR-PRO controller is compatible with [Protocol 2.0](/docs/en/dxl/protocol2/). [Protocol 1.0](/docs/en/dxl/protocol1/) doesn't support SyncRead instructions that access to multiple DYNAMIXEL simultaneously. Protocol 2.0 supports `MX 2.0`, `X`, `Pro`, `Pro +` series, but it does not support `AX`, `RX` and `EX`.  
+**NOTE**: OpenMANIPULATOR-PRO controller is compatible with [Protocol 2.0](/docs/en/dxl/protocol2/). [Protocol 1.0](/docs/en/dxl/protocol1/) doesn't support SyncRead instructions that access to multiple DYNAMIXEL's simultaneously. Protocol 2.0 supports `MX 2.0`, `X`, `Pro`, `Pro +` series, but it does not support `AX`, `RX` and `EX`.  
 {: .notice--info}
 
 ## [Check Setting](#check-setting)
@@ -674,7 +676,7 @@ In addition, you can monitor topics through rqt whenever you have a topic added 
 
 #### [Service Server List](#service-server-list)
 
-**NOTE**: These services are messages to operate OpenMANIPULATOR-PRO or to change the status of the DYNAMIXEL of OpenMANIPULATOR-PRO.
+**NOTE**: These services are messages to operate OpenMANIPULATOR-PRO or to change the status of DYNAMIXEL of OpenMANIPULATOR-PRO.
 {: .notice--info}
 
 

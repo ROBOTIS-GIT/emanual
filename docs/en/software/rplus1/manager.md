@@ -328,15 +328,15 @@ If the controller's firmware version is older than that of RoboPlus Manager, it 
 
 {% include en/software/rplus1/ext_io_device.md %}
 
-## [Dynamixel](#dynamixel)
+## [DYNAMIXEL](#dynamixel)
 
-In the program as shown below, users can set up and test Dynamixels.
+In the program as shown below, users can set up and test DYNAMIXEL.
 
 ![](/assets/images/sw/rplus1/manager/roboplus_manager_021.png)
 
-- Dynamixels found using the "Scan" or "Search" function are listed.  All devices connected to the controller, including sensors such as AX-S1, are detected.  .
+- DYNAMIXEL found using the "Scan" or "Search" function are listed.  All devices connected to the controller, including sensors such as AX-S1, are detected.  .
 - Choose an actuator to manage from the list on the left.
-- Parameters that can be set and tested for each device are shown in the table.  Clicking on a Dynamixel Name/ID  will call a subwindow to set or test the parameter. The subwindow simplifies the process of setting the parameter for the user.  
+- Parameters that can be set and tested for each device are shown in the table.  Clicking on DYNAMIXEL Name/ID  will call a subwindow to set or test the parameter. The subwindow simplifies the process of setting the parameter for the user.  
 - The image above is a screen shot of RoboPlus manager when the "Goal Position" parameter is clicked.  A subwindow is shown on the lower right hand corner when any row is clicked.  However, no subwindow will be displayed if only values need to be shown.
 
 **NOTE** : When an actuator with an ID in ① is double clicked, the actuator is selected and its LED will blink for a moment. This is used to check where the actuator is located.
@@ -347,14 +347,14 @@ In the program as shown below, users can set up and test Dynamixels.
 
 ### [ID Setup](#id-setup)
 
-Each Dynamixel has its own ID, and the controller manages each Dynamixel using its ID.  This parameter is used to manage the Dynamixel's ID.  
-(Please refer to [Dynamixel Management] for more information about changing ID)
+Each DYNAMIXEL has its own ID, and the controller manages each DYNAMIXEL using its ID.  This parameter is used to manage DYNAMIXEL ID.  
+(Please refer to [DYNAMIXEL Management] for more information about changing ID)
 
 #### Characteristics
 
 - Once this value is set, it will be saved, even when the power is turned off.
 - Click on the ID list to see a list of ID's that can be changed.
-- Values not shown in the ID list are being used by other Dynamixels.
+- Values not shown in the ID list are being used by other DYNAMIXEL.
 - An ID may be any number between 0 and 253, except 200, which is reserved for the controller.
 
 
@@ -392,7 +392,7 @@ Tis parameter is used to set the drive mode of EX actuators.  Depending on the d
 
 ### [Temperature Setting](#temperature-setting)
 
-This parameter is used to set the temperature limit for Dynamixel movement.
+This parameter is used to set the temperature limit for DYNAMIXEL movement.
 
 #### Characteristics
 
@@ -403,11 +403,11 @@ This parameter is used to set the temperature limit for Dynamixel movement.
 
 ### [Temperature](#temperature)
 
-This parameter is used to read the Dynamixel's current temperature.
+This parameter is used to read DYNAMIXEL current temperature.
 
 #### Characteristic
 
-- The Dynamixel's temperature is returned in real-time.
+- The DYNAMIXEL temperature is returned in real-time.
 
 #### Corresponding RoboPlus Task Command
 
@@ -415,7 +415,7 @@ This parameter is used to read the Dynamixel's current temperature.
 
 ### [Voltage Setting](#voltage-setting)
 
-This parameter is used to set the voltage limit for Dynamixel movement.
+This parameter is used to set the voltage limit for DYNAMIXEL movement.
 
 #### Characteristics
 
@@ -427,11 +427,11 @@ This parameter is used to set the voltage limit for Dynamixel movement.
 
 ### [Voltage](#voltage)
 
-This parameter is used to read the Dynamixel's current voltage.
+This parameter is used to read DYNAMIXEL current voltage.
 
 #### Characteristic
 
-- The Dynamixel's voltage is returned in real-time.
+- The DYNAMIXEL voltage is returned in real-time.
 
 #### Corresponding RoboPlus Task Command
 
@@ -445,7 +445,7 @@ The LED alarm or shutdown operation can be set for specific cases.
 
 - Once this value is set, it will be saved even when the power is turned off.
 - The actuator can be set to automatically stop its movements using the shutdown operation.
-- By using the shutdown operation, Dynamixels can be protected from problematic situations, such as current overloads, overheating, and abnormal movements.
+- By using the shutdown operation, DYNAMIXEL can be protected from problematic situations, such as current overloads, overheating, and abnormal movements.
 - The LED alarm or shutdown operation can be triggered by the following errors.  
   - Instruction Error : A wrong command is received.
   - Overload Error : The current load is larger than the limit.
@@ -472,7 +472,7 @@ This parameter is used to turn the actuator on or off.
 
 ### [LED](#led)
 
-This parameter is used to turn the Dynamixel's LED on or off.
+This parameter is used to turn DYNAMIXEL LED on or off.
 
 #### Characteristics
 
@@ -895,7 +895,7 @@ For `IR Sensor Array` Determine set values for black and white for the IR array.
 Follow these steps to manage the Zig-100 module through RoboPlus Manager using Zig2Serial.
 
 1. Attach Zig-100 to Zig2Serial and connect Zig2Serial to the PC's serial port.(Please refer to [ZIG2Serial] for connection)  
-    If your PC does not have a serial port, you may use USB2Dynamixel, as in the picture below.
+    If your PC does not have a serial port, you may use USB2DYNAMIXEL, as in the picture below.
 
     ![](/assets/images/sw/rplus1/manager/roboplus_manager_024.png)
 
@@ -937,7 +937,7 @@ Follow these steps to manage the Zig-100 module through RoboPlus Manager using Z
 [managing information of each controller]: /docs/en/software/rplus1/manager/#controllers
 [controller information]: /docs/en/parts/controller/controller_compatibility/
 [ID Setup]: /docs/en/software/rplus1/manager/#id-setup
-[Dynamixel Management]: /docs/en/edu/bioloid/beginner/#dynamixel-management
+[DYNAMIXEL Management]: /docs/en/edu/bioloid/beginner/#dynamixel-management
 [Changing the Movement Mode]: /docs/en/edu/bioloid/beginner/#dynamixel-management
 [Temperature]: /docs/en/software/rplus1/task/programming_02/#temperature
 [Voltage]: /docs/en/software/rplus1/task/programming_02/#voltage
