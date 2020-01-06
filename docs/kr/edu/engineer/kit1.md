@@ -79,29 +79,29 @@ sidebar:
 2XL430-W250은 2축 제어가 가능한 새로운 다이나믹셀입니다.
 
 
-| 항목             | 내용                                                       |
-|:-----------------|:-----------------------------------------------------------|
-| MCU              | {{ site.data.dxl_x_info._2xl430-w250.mcu }}                |
-| 위치 센서        | {{ site.data.dxl_x_info._2xl430-w250.encoder }}            |
-| 모터             | {{ site.data.dxl_x_info._2xl430-w250.motor }}              |
-| 통신속도         | {{ site.data.dxl_x_info._2xl430-w250.baudrate }}           |
-| 제어 알고리즘    | {{ site.data.dxl_x_info._2xl430-w250.control }}            |
-| 해상도           | {{ site.data.dxl_x_info._2xl430-w250.resolution }}         |
-| 동작 모드        | {{ site.data.dxl_x_info._2xl430-w250.mode }}               |
-| 무게             | {{ site.data.dxl_x_info._2xl430-w250.weight }}             |
-| 크기 (W x H x D) | {{ site.data.dxl_x_info._2xl430-w250.dimensions }}         |
-| 기어비           | {{ site.data.dxl_x_info._2xl430-w250.gearratio }}          |
-| 정지 토크        | {{ site.data.dxl_x_info._2xl430-w250.stalltorque }}        |
-| 무부하 속도      | {{ site.data.dxl_x_info._2xl430-w250.noloadspeed }}        |
-| 동작 온도        | {{ site.data.dxl_x_info._2xl430-w250.temperature }}        |
-| 사용 전압        | {{ site.data.dxl_x_info._2xl430-w250.voltage }}            |
-| 제어 명령        | {{ site.data.dxl_x_info._2xl430-w250.command }}            |
-| 프로토콜 타입    | {{ site.data.dxl_x_info._2xl430-w250.protocoltype }}       |
-| 통신 연결        | {{ site.data.dxl_x_info._2xl430-w250.physicalconnection }} |
-| ID               | {{ site.data.dxl_x_info._2xl430-w250.id }}                 |
-| 피드백           | {{ site.data.dxl_x_info._2xl430-w250.feedback }}           |
-| 재질             | {{ site.data.dxl_x_info._2xl430-w250.material }}           |
-| 대기 전류        | {{ site.data.dxl_x_info._2xl430-w250.standbycurrent }}     |
+| 항목             | 내용                                                      |
+|:-----------------|:----------------------------------------------------------|
+| MCU              | {{ site.data.dxl_x_info.2xl430-w250.mcu }}                |
+| 위치 센서        | {{ site.data.dxl_x_info.2xl430-w250.encoder }}            |
+| 모터             | {{ site.data.dxl_x_info.2xl430-w250.motor }}              |
+| 통신속도         | {{ site.data.dxl_x_info.2xl430-w250.baudrate }}           |
+| 제어 알고리즘    | {{ site.data.dxl_x_info.2xl430-w250.control }}            |
+| 해상도           | {{ site.data.dxl_x_info.2xl430-w250.resolution }}         |
+| 동작 모드        | {{ site.data.dxl_x_info.2xl430-w250.mode }}               |
+| 무게             | {{ site.data.dxl_x_info.2xl430-w250.weight }}             |
+| 크기 (W x H x D) | {{ site.data.dxl_x_info.2xl430-w250.dimensions }}         |
+| 기어비           | {{ site.data.dxl_x_info.2xl430-w250.gearratio }}          |
+| 정지 토크        | {{ site.data.dxl_x_info.2xl430-w250.stalltorque }}        |
+| 무부하 속도      | {{ site.data.dxl_x_info.2xl430-w250.noloadspeed }}        |
+| 동작 온도        | {{ site.data.dxl_x_info.2xl430-w250.temperature }}        |
+| 사용 전압        | {{ site.data.dxl_x_info.2xl430-w250.voltage }}            |
+| 제어 명령        | {{ site.data.dxl_x_info.2xl430-w250.command }}            |
+| 프로토콜 타입    | {{ site.data.dxl_x_info.2xl430-w250.protocoltype }}       |
+| 통신 연결        | {{ site.data.dxl_x_info.2xl430-w250.physicalconnection }} |
+| ID               | {{ site.data.dxl_x_info.2xl430-w250.id }}                 |
+| 피드백           | {{ site.data.dxl_x_info.2xl430-w250.feedback }}           |
+| 재질             | {{ site.data.dxl_x_info.2xl430-w250.material }}           |
+| 대기 전류        | {{ site.data.dxl_x_info.2xl430-w250.standbycurrent }}     |
 
 **[2XL430-W250 매뉴얼 바로가기]{: .blank}**
 {: .notice}
