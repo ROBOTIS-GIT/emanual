@@ -35,7 +35,7 @@ sidebar:
 
 -
 <select id="pro_plus_ctrl_table_select" onchange="window.location.href=this.value;">
-    <option selected disabled hidden>PRO+ 시리즈</option>
+    <option selected disabled hidden>P 시리즈</option>
     <option value="/docs/kr/dxl/pro_plus/ph54-200-s500-r/#eeprom-영역">PH54-200-S500-R</option>
     <option value="/docs/kr/dxl/pro_plus/ph54-100-s500-r/#eeprom-영역">PH54-100-S500-R</option>
     <option value="/docs/kr/dxl/pro_plus/ph42-020-s300-r/#eeprom-영역">PH42-020-S300-R</option>
@@ -44,6 +44,7 @@ sidebar:
     <option value="/docs/kr/dxl/pro_plus/pm42-010-s260-r/#eeprom-영역">PM42-010-S260-R</option>
 </select>
 
+<!-- 
 -
 <select id="pro_ctrl_table_select" onchange="window.location.href=this.value;">
     <option selected disabled hidden>PRO 시리즈</option>
@@ -65,6 +66,7 @@ sidebar:
     <option value="/docs/kr/dxl/pro/l54-30-s400-r/#eeprom-영역">L54-30-S400-R</option>
     <option value="/docs/kr/dxl/pro/l42-10-s300-r/#eeprom-영역">L42-10-S300-R</option>
 </select>
+ -->
 
 -
 <select id="x_ctrl_table_select" onchange="window.location.href=this.value;">
@@ -126,6 +128,8 @@ sidebar:
 - [Bringup](/docs/en/platform/openmanipulator/#software-setup)
 
 ### [터틀봇3](#터틀봇3) 바로가기
+
+#### ROS
 <select id="turtlebot3_select" onchange="window.location.href=this.value;">
     <option value="/docs/en/platform/turtlebot3/setup/#setup">Setup</option>
     <option value="/docs/en/platform/turtlebot3/bringup/#bringup">Bring Up</option>
@@ -136,8 +140,24 @@ sidebar:
     <option value="/docs/en/platform/turtlebot3/manipulation/#manipulation">MANIPULATION</option>
     <option value="/docs/en/platform/turtlebot3/autonomous_driving/#autonomous-driving">AUTONOMOUS DRIVING</option>
     <option value="/docs/en/platform/turtlebot3/machine_learning/#machine-learning">MACHINE LEARNING</option>
+    <option value="/docs/en/platform/turtlebot3/applications/#applications">Applications</option>
     <option value="/docs/en/platform/turtlebot3/learn/#learn">Lectures(Learn)</option>
 </select>
+
+#### ROS 2
+<select id="turtlebot3_select_ros2" onchange="window.location.href=this.value;">
+    <option value="/docs/en/platform/turtlebot3/ros2_setup/#setup">Setup</option>
+    <option value="/docs/en/platform/turtlebot3/ros2_bringup/#bringup">Bring Up</option>
+    <option value="/docs/en/platform/turtlebot3/ros2_basic_operation/#basic-operation">Basic Operation</option>
+    <option value="/docs/en/platform/turtlebot3/ros2_slam/#slam">SLAM</option>
+    <option value="/docs/en/platform/turtlebot3/ros2_navigation/#navigation">NAVIGATION</option>
+    <option value="/docs/en/platform/turtlebot3/ros2_simulation/#simulation">SIMULATION</option>
+    <option value="/docs/en/platform/turtlebot3/ros2_manipulation/#manipulation">MANIPULATION</option>
+    <option value="/docs/en/platform/turtlebot3/ros2_autonomous_driving/#autonomous-driving">AUTONOMOUS DRIVING</option>
+    <option value="/docs/en/platform/turtlebot3/ros2_machine_learning/#machine-learning">MACHINE LEARNING</option>
+    <option value="/docs/en/platform/turtlebot3/applications/#ros2_applications">Applications</option>
+</select>
+
 
 ## 제어기
 - [CM-550](/docs/kr/parts/controller/cm-550/)

@@ -28,10 +28,10 @@ Compatibility Key: O= Yes ; X= No ; * = User Action Required
 | MX-106 | O            | O*           |
 
 {% capture notice_01 %}
-**NOTE** : 
-- Proceed to Firmware Recovery of a particular software to use Protocol 2.0 with MX-Series: [DYNAMIXEL Wizard 2.0](/docs/kr/software/dynamixel/dynamixel_wizard2/#firmware-recovery), [R+ Manager 2.0](/docs/en/software/rplus2/manager/#firmware-recovery)
-- Protocol 2.0 is available with v39 Firmware Version (or above): [DYNAMIXEL Wizard 2.0](/docs/kr/software/dynamixel/dynamixel_wizard2/#firmware-update), [R+ Manager 2.0](/docs/en/software/rplus2/manager/#firmware-recovery)
-- Protocol 2.0 supports various Operating Modes, Secondary ID, Drive Mode, Bus Watchdog, etc.
+**NOTE**: Read the following to ensure proper use.
+- In order to use Protocol 2.0 firmware version with MX series, proceed to **Firmware Recovery** via [DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/#firmware-recovery) or [R+ Manager 2.0](/docs/en/software/rplus2/manager/#firmware-recovery).
+- Protocol 2.0 is available with v39 Firmware version (or above). Proceed to **Firmware Update** via [DYNAMIXEL Wizard 2.0](/docs/kr/software/dynamixel/dynamixel_wizard2/#firmware-update) or [R+ Manager 2.0](/docs/en/software/rplus2/manager/#firmware-recovery).
+- Protocol 2.0 supports various Operating Modes, Secondary ID, Drive Mode, Bus Watchdog and etc.
 {% endcapture %}
 <div class="notice">{{ notice_01| markdownify }}</div>
 

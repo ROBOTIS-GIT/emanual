@@ -134,7 +134,7 @@ DYNAMIXEL Pro is CE/FCC certified. For more information, please search ROBOTIS [
 [MX]: /docs/en/dxl/#mx-series
 [DYNAMIXEL X]: /docs/en/dxl/#x-series
 [DYNAMIXEL Pro]: /docs/en/dxl/#pro-series
-[DYNAMIXEL Pro+]: /docs/en/dxl/#pro-plus-series
+[DYNAMIXEL-P]: /docs/en/dxl/#pro-plus-series
 [MX]: /docs/en/dxl/#mx-series
 [U2D2]: /docs/en/parts/interface/u2d2/
 [USB2DYNAMIXEL]: /docs/en/parts/interface/usb2dynamixel/

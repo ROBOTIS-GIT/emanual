@@ -12,7 +12,7 @@ layout: popup
 
 # AX-시리즈
 
-| 모델  | 프로토콜 1.0 | 프로토콜 2.0 |
+| 모델   | 프로토콜 1.0 | 프로토콜 2.0 |
 |:-------|:------------:|:------------:|
 | AX-12W |      O       |      X       |
 | AX-12A |      O       |      X       |
@@ -20,7 +20,7 @@ layout: popup
 
 # MX-시리즈
 
-| 모델  | 프로토콜 1.0 | 프로토콜 2.0 |
+| 모델   | 프로토콜 1.0 | 프로토콜 2.0 |
 |:-------|:-------------|:------------:|
 | MX-12W | O            |      X       |
 | MX-28  | O            |      O*      |
@@ -37,7 +37,7 @@ layout: popup
 
 # X-시리즈
 
-| 모델       |      프로토콜 1.0       | 프로토콜 2.0 |
+| 모델        |      프로토콜 1.0       | 프로토콜 2.0 |
 |:------------|:-----------------------:|:------------:|
 | XL-320      |            X            |      O       |
 | XL430-W250  | O* <br>(F/W address 13) |      O       |
@@ -59,14 +59,14 @@ layout: popup
 
 {% capture notice_01 %}
 **참조** : 
-- 다이나믹셀 X는 Protocol Type(13)을 변경할 수 있습니다. 각 모델의 컨트롤 테이블 Protocol Type(13)을 참조하세요.
+- 다이나믹셀-X는 Protocol Type(13)을 변경할 수 있습니다. 각 모델의 컨트롤 테이블 Protocol Type(13)을 참조하세요.
 - **XL-320은 프로토콜 1.0으로 변경할 수 없습니다.**
 {% endcapture %}
 <div class="notice">{{ notice_01| markdownify }}</div>
 
-# PRO-시리즈
+# 다이나믹셀 PRO
 
-| 모델         | 프로토콜 1.0 | 프로토콜 2.0 |
+| 모델          | 프로토콜 1.0 | 프로토콜 2.0 |
 |:--------------|:------------:|:------------:|
 | M42-10-S260   |      X       |      O       |
 | M54-40-S250   |      X       |      O       |
@@ -80,9 +80,9 @@ layout: popup
 | L54-30-S400-R |      X       |      O       |
 | L42-10-S300-R |      X       |      O       |
 
-# PRO+ 시리즈
+#  다이나믹셀-P
 
-| 모델           | 프로토콜 1.0 | 프로토콜 2.0 |
+| 모델            | 프로토콜 1.0 | 프로토콜 2.0 |
 |:----------------|:------------:|:------------:|
 | PH54-200-S500-R |      X       |      O       |
 | PH54-100-S500-R |      X       |      O       |
@@ -93,33 +93,32 @@ layout: popup
 
 # 기타 
 
-| 모델                  |        프로토콜 1.0          |        프로토콜 2.0           |
-|:---------------------|:----------------------------:|:-----------------------------:|
-| RoboPlus 1.0 Suite   |              o               |   X* (XL-320 and PRO only)    |
-| R+ Manager 2.0       |              O               |               O               |
-| R+ Task 2.0          |              O               |               O               |
-| R+ Motion 2.0        |              O               |               O               |
-| R+ Design            |              O               |               O               |
-| DYNAMIXEL Wizard 2.0 |              O               |               O               |
-| ROBOTIS OP2          |              O               | O* <br>(Requires F/W Upgrade) |
-| ROBOTIS OP3          |              X               |               O               |
-| ROBOTIS STEM         |              O               |               X               |
-| BIOLOID Premium      |              O               |               X               |
-| TurtleBot3 Burger    |    O*<br>(F/W address 13)    |               O               |
-| TurtleBot3 WafflePi  |    O*<br>(F/W address 13)    |               O               |
-| RH-P12-RN            |              X               |               O               |
-| Manipulator-H        |              X               |               O               |
-| THORMANG3            |              X               |               O               |
-| OpenManipulator-X    |    O*<br>(F/W address 13)    |               O               |
-| CM-530               |              O               |               X               |
-| CM-550               |              X               |               O               |
-| CM-700               |              O               |               X               |
-| OpenCM9.04           |  O*<br>(Library-dependent)   |   O*<br>(Library-dependent)   |
-| OpenCM485 EXP        | O <br>(Controller-dependent) |  O<br>(Controller-dependent)  |
-| OpenCR1.0            |  O*<br>(Library-dependent)   |   O*<br>(Library-dependent)   |
+| 모델                  |         프로토콜 1.0         |         프로토콜 2.0          |
+|:----------------------|:----------------------------:|:-----------------------------:|
+| RoboPlus 1.0 Suite    |              o               |   X* (XL-320 and PRO only)    |
+| 로보플러스 매니저 2.0        |              O               |               O               |
+| 로보플러스 태스크 2.0           |              O               |               O               |
+| 로보플러스 모션 2.0         |              O               |               O               |
+| 로보플러스 디자인             |              O               |               O               |
+| 다이나믹셀 위자드 2.0 |              O               |               O               |
+| 로보티즈 OP2           |              O               | O* <br>(Requires F/W Upgrade) |
+| 로보티즈 OP3           |              X               |               O               |
+| 로보티즈 STEM          |              O               |               X               |
+| 바이올로이드 Premium       |              O               |               X               |
+| 터틀봇3 버거     |    O*<br>(F/W address 13)    |               O               |
+| 터틀봇3 와플파이   |    O*<br>(F/W address 13)    |               O               |
+| RH-P12-RN             |              X               |               O               |
+| Manipulator-H         |              X               |               O               |
+| 똘망3             |              X               |               O               |
+| OpenManipulator-X     |    O*<br>(F/W address 13)    |               O               |
+| CM-530                |              O               |               X               |
+| CM-550                |              X               |               O               |
+| CM-700                |              O               |               X               |
+| OpenCM9.04            |  O*<br>(Library-dependent)   |   O*<br>(Library-dependent)   |
+| OpenCM485 EXP         | O <br>(Controller-dependent) |  O<br>(Controller-dependent)  |
+| OpenCR1.0             |  O*<br>(Library-dependent)   |   O*<br>(Library-dependent)   |
 
 
 [프로토콜 1.0]: /docs/kr/dxl/protocol1/
 [프로토콜 2.0]: /docs/kr/dxl/protocol2/
 [다이나믹셀 위자드 2.0]: /docs/kr/software/dynamixel/dynamixel_wizard2/
-[로보플러스 매니저 2.0]: 

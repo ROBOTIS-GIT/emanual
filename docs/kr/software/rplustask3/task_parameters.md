@@ -463,11 +463,11 @@ I gain은 Integral Gain 이며, D gain은 Derivative Gain 입니다.
   ![](/assets/images/sw/rplus_task3_kr/task3_122.png)
 
 #### 프로파일 가속도
-다이나믹셀 X 시리즈에서 프로파일의 가속도를 설정합니다. 자세한 내용은 X 시리즈의 [Profile Acceleration(108)](/docs/kr/dxl/x/xm430-w210/#profile-acceleration)을 참고하세요.  
+다이나믹셀-X 시리즈에서 프로파일의 가속도를 설정합니다. 자세한 내용은 X 시리즈의 [Profile Acceleration(108)](/docs/kr/dxl/x/xm430-w210/#profile-acceleration)을 참고하세요.  
 ![](/assets/images/sw/rplus_task3_kr/task3_214.png)
 
 #### 프로파일 속도
-다이나믹셀 X 시리즈가 Position Control 또는 Extended Position Control 모드일 때 프로파일의 최대 속도를 설정합니다. 자세한 내용은 X 시리즈의 [Profile Velocity(112)](/docs/kr/dxl/x/xm430-w210/#profile-velocity)을 참고하세요.  
+다이나믹셀-X 시리즈가 Position Control 또는 Extended Position Control 모드일 때 프로파일의 최대 속도를 설정합니다. 자세한 내용은 X 시리즈의 [Profile Velocity(112)](/docs/kr/dxl/x/xm430-w210/#profile-velocity)을 참고하세요.  
 ![](/assets/images/sw/rplus_task3_kr/task3_215.png)
 
 #### 목표 전류 / 토크

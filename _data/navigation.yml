@@ -3,76 +3,6 @@ main:
   - title: "DYNAMIXEL"
     titlekr: "다이나믹셀"
     children:
-    - title: "AX Series"
-      titlekr: "AX 시리즈"
-      children:
-      - title: "AX-12W"
-        titlekr: "AX-12W"
-        url: /dxl/ax/ax-12w/
-      - title: "AX-12/12+/12A"
-        titlekr: "AX-12/12+/12A"
-        url: /dxl/ax/ax-12a/
-      - title: "AX-18F/18A"
-        titlekr: "AX-18F/18A"
-        url: /dxl/ax/ax-18a/
-    - title: "*EX Series"
-      titlekr: "*EX 시리즈"
-      children:
-      - title: "*EX-106+"
-        titlekr: "*EX-106+"
-        url: /dxl/ex/ex-106+/
-    - title: "*DX Series"
-      titlekr: "*DX 시리즈"
-      children:
-      - title: "*DX-113"
-        titlekr: "*DX-113"
-        url: /dxl/dx/dx-113/
-      - title: "*DX-116"
-        titlekr: "*DX-116"
-        url: /dxl/dx/dx-116/
-      - title: "*DX-117"
-        titlekr: "*DX-117"
-        url: /dxl/dx/dx-117/
-    - title: "*RX Series"
-      titlekr: "*RX 시리즈"
-      children:
-      - title: "*RX-10"
-        titlekr: "*RX-10"
-        url: /dxl/rx/rx-10/
-      - title: "*RX-24F"
-        titlekr: "*RX-24F"
-        url: /dxl/rx/rx-24f/
-      - title: "*RX-28"
-        titlekr: "*RX-28"
-        url: /dxl/rx/rx-28/
-      - title: "*RX-64"
-        titlekr: "*RX-64"
-        url: /dxl/rx/rx-64/
-    - title: "MX Series"
-      titlekr: "MX 시리즈"
-      url: /dxl/mx/
-      children:
-      - title: "MX-12W"
-        titlekr: "MX-12W"
-        url: /dxl/mx/mx-12w/
-      - title: "MX-28T/R/AT/AR"
-        titlekr: "MX-28T/R/AT/AR"
-        url: /dxl/mx/mx-28/
-      - title: "MX-64T/R/AT/AR"
-        titlekr: "MX-64T/R/AT/AR"
-        url: /dxl/mx/mx-64/
-      - title: "MX-106T/R"
-        titlekr: "MX-106T/R"
-        url: /dxl/mx/mx-106/
-      - title: "MX-28T/R/AT/AR(2.0)"
-        titlekr: "MX-28T/R/AT/AR(2.0)"
-        url: /dxl/mx/mx-28-2/
-      - title: "MX-64T/R/AT/AR(2.0)"
-        titlekr: "MX-64T/R/AT/AR(2.0)"
-        url: /dxl/mx/mx-64-2/
-      - title: "MX-106T/R(2.0)"
-        titlekr: "MX-106T/R(2.0)"
-        url: /dxl/mx/mx-106-2/
     - title: "X Series"
       titlekr: "X 시리즈"
       url: /dxl/x/
@@ -128,6 +58,98 @@ main:
       - title: "XH540-V270"
         titlekr: "XH540-V270"
         url: /dxl/x/xh540-v270/
+    - title: "P Series (PRO+)"
+      titlekr: "P 시리즈 (PRO+)"
+      url: /dxl/pro_plus/
+      children:
+      - title: "PH42-020-S300-R (H42P)"
+        titlekr: "PH42-020-S300-R (H42P)"
+        url: /dxl/pro_plus/ph42-020-s300-r/
+      - title: "PH54-100-S500-R (H54P)"
+        titlekr: "PH54-100-S500-R (H54P)"
+        url: /dxl/pro_plus/ph54-100-s500-r/
+      - title: "PH54-200-S500-R (H54P)"
+        titlekr: "PH54-200-S500-R (H54P)"
+        url: /dxl/pro_plus/ph54-200-s500-r/
+      - title: "PM42-010-S260-R (M42P)"
+        titlekr: "PM42-010-S260-R (M42P)"
+        url: /dxl/pro_plus/pm42-010-s260-r/
+      - title: "PM54-040-S250-R (M54P)"
+        titlekr: "PM54-040-S250-R (M54P)"
+        url: /dxl/pro_plus/pm54-040-s250-r/
+      - title: "PM54-060-S250-R (M54P)"
+        titlekr: "PM54-060-S250-R (M54P)"
+        url: /dxl/pro_plus/pm54-060-s250-r/
+    - title: "MX Series"
+      titlekr: "MX 시리즈"
+      url: /dxl/mx/
+      children:
+      - title: "MX-12W"
+        titlekr: "MX-12W"
+        url: /dxl/mx/mx-12w/
+      - title: "MX-28T/R/AT/AR"
+        titlekr: "MX-28T/R/AT/AR"
+        url: /dxl/mx/mx-28/
+      - title: "MX-64T/R/AT/AR"
+        titlekr: "MX-64T/R/AT/AR"
+        url: /dxl/mx/mx-64/
+      - title: "MX-106T/R"
+        titlekr: "MX-106T/R"
+        url: /dxl/mx/mx-106/
+      - title: "MX-28T/R/AT/AR(2.0)"
+        titlekr: "MX-28T/R/AT/AR(2.0)"
+        url: /dxl/mx/mx-28-2/
+      - title: "MX-64T/R/AT/AR(2.0)"
+        titlekr: "MX-64T/R/AT/AR(2.0)"
+        url: /dxl/mx/mx-64-2/
+      - title: "MX-106T/R(2.0)"
+        titlekr: "MX-106T/R(2.0)"
+        url: /dxl/mx/mx-106-2/
+    - title: "AX Series"
+      titlekr: "AX 시리즈"
+      children:
+      - title: "AX-12W"
+        titlekr: "AX-12W"
+        url: /dxl/ax/ax-12w/
+      - title: "AX-12/12+/12A"
+        titlekr: "AX-12/12+/12A"
+        url: /dxl/ax/ax-12a/
+      - title: "AX-18F/18A"
+        titlekr: "AX-18F/18A"
+        url: /dxl/ax/ax-18a/
+    - title: "*EX Series"
+      titlekr: "*EX 시리즈"
+      children:
+      - title: "*EX-106+"
+        titlekr: "*EX-106+"
+        url: /dxl/ex/ex-106+/
+    - title: "*DX Series"
+      titlekr: "*DX 시리즈"
+      children:
+      - title: "*DX-113"
+        titlekr: "*DX-113"
+        url: /dxl/dx/dx-113/
+      - title: "*DX-116"
+        titlekr: "*DX-116"
+        url: /dxl/dx/dx-116/
+      - title: "*DX-117"
+        titlekr: "*DX-117"
+        url: /dxl/dx/dx-117/
+    - title: "*RX Series"
+      titlekr: "*RX 시리즈"
+      children:
+      - title: "*RX-10"
+        titlekr: "*RX-10"
+        url: /dxl/rx/rx-10/
+      - title: "*RX-24F"
+        titlekr: "*RX-24F"
+        url: /dxl/rx/rx-24f/
+      - title: "*RX-28"
+        titlekr: "*RX-28"
+        url: /dxl/rx/rx-28/
+      - title: "*RX-64"
+        titlekr: "*RX-64"
+        url: /dxl/rx/rx-64/
     - title: "*PRO Series"
       titlekr: "*PRO 시리즈"
       url: /dxl/pro/
@@ -183,28 +205,6 @@ main:
       - title: "*L42-10-S300-R"
         titlekr: "*L42-10-S300-R"
         url: /dxl/pro/l42-10-s300-r/
-    - title: "PRO+ Series"
-      titlekr: "PRO+ 시리즈"
-      url: /dxl/pro_plus/
-      children:
-      - title: "PH54-200-S500-R"
-        titlekr: "PH54-200-S500-R"
-        url: /dxl/pro_plus/ph54-200-s500-r/
-      - title: "PH54-100-S500-R"
-        titlekr: "PH54-100-S500-R"
-        url: /dxl/pro_plus/ph54-100-s500-r/
-      - title: "PH42-020-S300-R"
-        titlekr: "PH42-020-S300-R"
-        url: /dxl/pro_plus/ph42-020-s300-r/
-      - title: "PM54-060-S250-R"
-        titlekr: "PM54-060-S250-R"
-        url: /dxl/pro_plus/pm54-060-s250-r/
-      - title: "PM54-040-S250-R"
-        titlekr: "PM54-040-S250-R"
-        url: /dxl/pro_plus/pm54-040-s250-r/
-      - title: "PM42-010-S260-R"
-        titlekr: "PM42-010-S260-R"
-        url: /dxl/pro_plus/pm42-010-s260-r/
     - title: "Procotol 1.0"
       titlekr: "프로토콜 1.0"
       url: /dxl/protocol1/
@@ -661,38 +661,82 @@ main:
         url: /faq/
 
 all-dynamixel:
-  - title: "AX Series"
-    titlekr: "AX Series"
-    url: /dxl/#ax-series
-    urlkr: /dxl/#ax-시리즈
-  - title: "EX Series"
-    titlekr: "EX Series"
-    url: /dxl/#ex-series
-    urlkr: /dxl/#ex-시리즈
-  - title: "DX Series"
-    titlekr: "DX Series"
-    url: /dxl/#dx-series
-    urlkr: /dxl/#dx-시리즈
-  - title: "RX Series"
-    titlekr: "RX Series"
-    url: /dxl/#rx-series
-    urlkr: /dxl/#rx-시리즈
-  - title: "MX Series"
-    titlekr: "MX Series"
-    url: /dxl/#mx-series
-    urlkr: /dxl/#mx-시리즈
-  - title: "X Series"
-    titlekr: "X Series"
-    url: /dxl/#x-series
-    urlkr: /dxl/#x-시리즈
-  - title: "PRO Series"
-    titlekr: "PRO Series"
-    url: /dxl/#pro-series
-    urlkr: /dxl/#pro-시리즈
-  - title: "PRO+ Series"
-    titlekr: "PRO+ Series"
-    url: /dxl/#pro-plus-series
-    urlkr: /dxl/#pro-plus-시리즈
+  - title: "DYNAMIXEL"
+    titlekr: "다이나믹셀 "
+    url: /dxl/#dynamixel-
+    urlkr: /dxl/#다이나믹셀-
+    children:
+      - title: "AX Series"
+        titlekr: "AX 시리즈"
+        url: /dxl/#ax-series
+        urlkr: /dxl/#ax-시리즈 
+      - title: "EX Series"
+        titlekr: "EX 시리즈"
+        url: /dxl/#ex-series
+        urlkr: /dxl/#ex-시리즈
+      - title: "DX Series"
+        titlekr: "DX 시리즈"
+        url: /dxl/#dx-시리즈
+        urlkr: /dxl/#dx-시리즈
+      - title: "RX Series"
+        titlekr: "RX 시리즈"
+        url: /dxl/#rx-series
+        urlkr: /dxl/#rx-시리즈
+      - title: "MX Series"
+        titlekr: "MX 시리즈"
+        url: /dxl/#mx-series
+        urlkr: /dxl/#mx-시리즈
+  - title: "DYNAMIXEL-X"
+    titlekr: "다이나믹셀-X"
+    url: /dxl/#dynamixel-x
+    urlkr: /dxl/#다이나믹셀-x
+    children:
+      - title: "XL Series"
+        titlekr: "XL 시리즈"
+        url: /dxl/#xl-series
+        urlkr: /dxl/#xl-시리즈
+      - title: "XC Series"
+        titlekr: "XC 시리즈"
+        url: /dxl/#xc-series
+        urlkr: /dxl/#xc-시리즈
+      - title: "XM Series"
+        titlekr: "XM 시리즈"
+        url: /dxl/#xm-series
+        urlkr: /dxl/#xm-시리즈
+      - title: "XH Series"
+        titlekr: "XH 시리즈"
+        url: /dxl/#xh-series
+        urlkr: /dxl/#xh-시리즈                       
+  - title: "DYNAMIXEL PRO"
+    titlekr: "다이나믹셀 PRO"
+    url: /dxl/#dynamixel-pro
+    urlkr: /dxl/#다이나믹셀-pro
+    children:
+      - title: "L Series"
+        titlekr: "L 시리즈"
+        url: /dxl/#l-series
+        urlkr: /dxl/#l-시리즈
+      - title: "M Series"
+        titlekr: "M 시리즈"
+        url: /dxl/#m-series
+        urlkr: /dxl/#m-시리즈
+      - title: "H Series"
+        titlekr: "H 시리즈"
+        url: /dxl/#h-series
+        urlkr: /dxl/#h-시리즈                
+  - title: "DYNAMIXEL-P"
+    titlekr: "다이나믹셀-P"
+    url: /dxl/#dynamixel-p
+    urlkr: /dxl/#다이나믹셀-p
+    children:
+      - title: "PH Seriese"
+        titlekr: "PH 시리즈"
+        url: /dxl/#ph-series
+        urlkr: /dxl/#ph-시리즈
+      - title: "PM Seriese"
+        titlekr: "PM 시리즈"
+        url: /dxl/#pm-series
+        urlkr: /dxl/#pm-시리즈        
 
 dynamixel_pro:
   - title: "Product Lineup"
@@ -708,7 +752,7 @@ dynamixel_pro:
     url: /dxl/pro/#communication-circuitry
     urlkr: /dxl/pro/#통신-회로
 
-dynamixel_pro_plus:
+dynamixel_p:
   - title: "Product Lineup"
     titlekr: "제품 라인업"
     url: /dxl/pro_plus/#product-lineup
@@ -3324,8 +3368,8 @@ mx-28-2:
         - title: "Secondary(Shadow) ID(12)"
           titlekr: "Secondary(Shadow) ID(12)"
           url: /dxl/mx/mx-28-2/#secondaryshadow-id12
-        - title: "Protocol Version(13)"
-          titlekr: "Protocol Version(13)"
+        - title: "Protocol Type(13)"
+          titlekr: "Protocol Type(13)"
           url: /dxl/mx/mx-28-2/#protocol-version13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
@@ -3545,8 +3589,8 @@ mx-64-2:
         - title: "Secondary(Shadow) ID(12)"
           titlekr: "Secondary(Shadow) ID(12)"
           url: /dxl/mx/mx-64-2/#secondaryshadow-id12
-        - title: "Protocol Version(13)"
-          titlekr: "Protocol Version(13)"
+        - title: "Protocol Type(13)"
+          titlekr: "Protocol Type(13)"
           url: /dxl/mx/mx-64-2/#protocol-version13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
@@ -3773,8 +3817,8 @@ mx-106-2:
         - title: "Secondary(Shadow) ID(12)"
           titlekr: "Secondary(Shadow) ID(12)"
           url: /dxl/mx/mx-106-2/#secondaryshadow-id12
-        - title: "Protocol Version(13)"
-          titlekr: "Protocol Version(13)"
+        - title: "Protocol Type(13)"
+          titlekr: "Protocol Type(13)"
           url: /dxl/mx/mx-106-2/#protocol-version13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
@@ -4026,8 +4070,8 @@ xh430-v210:
         - title: "Secondary(Shadow) ID(12)"
           titlekr: "Secondary(Shadow) ID(12)"
           url: /dxl/x/xh430-v210/#secondaryshadow-id12
-        - title: "Protocol Version(13)"
-          titlekr: "Protocol Version(13)"
+        - title: "Protocol Type(13)"
+          titlekr: "Protocol Type(13)"
           url: /dxl/x/xh430-v210/#protocol-version13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
@@ -4262,8 +4306,8 @@ xh430-v350:
         - title: "Secondary(Shadow) ID(12)"
           titlekr: "Secondary(Shadow) ID(12)"
           url: /dxl/x/xh430-v350/#secondaryshadow-id12
-        - title: "Protocol Version(13)"
-          titlekr: "Protocol Version(13)"
+        - title: "Protocol Type(13)"
+          titlekr: "Protocol Type(13)"
           url: /dxl/x/xh430-v350/#protocol-version13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
@@ -4498,8 +4542,8 @@ xh430-w210:
         - title: "Secondary(Shadow) ID(12)"
           titlekr: "Secondary(Shadow) ID(12)"
           url: /dxl/x/xh430-w210/#secondaryshadow-id12
-        - title: "Protocol Version(13)"
-          titlekr: "Protocol Version(13)"
+        - title: "Protocol Type(13)"
+          titlekr: "Protocol Type(13)"
           url: /dxl/x/xh430-w210/#protocol-version13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
@@ -4734,8 +4778,8 @@ xh430-w350:
         - title: "Secondary(Shadow) ID(12)"
           titlekr: "Secondary(Shadow) ID(12)"
           url: /dxl/x/xh430-w350/#secondaryshadow-id12
-        - title: "Protocol Version(13)"
-          titlekr: "Protocol Version(13)"
+        - title: "Protocol Type(13)"
+          titlekr: "Protocol Type(13)"
           url: /dxl/x/xh430-w350/#protocol-version13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
@@ -5032,8 +5076,8 @@ xl430-w250:
           - title: "Secondary(Shadow) ID(12)"
             titlekr: "Secondary(Shadow) ID(12)"
             url: /dxl/x/xl430-w250/#secondaryshadow-id12
-          - title: "Protocol Version(13)"
-            titlekr: "Protocol Version(13)"
+          - title: "Protocol Type(13)"
+            titlekr: "Protocol Type(13)"
             url: /dxl/x/xl430-w250/#protocol-version13
           - title: "Homing Offset(20)"
             titlekr: "Homing Offset(20)"
@@ -5158,6 +5202,10 @@ xl430-w250:
     url: /dxl/x/xl430-w250/#reference
     urlkr: /dxl/x/xl430-w250/#참고자료
     children:
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/x/xl430-w250/#certifications
+        urlkr: /dxl/x/xl430-w250/#인증-획득
       - title: "Quick Start"
         titlekr: "퀵스타트"
         url: /dxl/x/xl430-w250/#quick-start
@@ -6388,8 +6436,8 @@ xm430-w350:
         - title: "Secondary(Shadow) ID(12)"
           titlekr: "Secondary(Shadow) ID(12)"
           url: /dxl/x/xm430-w350/#secondaryshadow-id12
-        - title: "Protocol Version(13)"
-          titlekr: "Protocol Version(13)"
+        - title: "Protocol Type(13)"
+          titlekr: "Protocol Type(13)"
           url: /dxl/x/xm430-w350/#protocol-version13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
@@ -6624,8 +6672,8 @@ xm540-w150:
         - title: "Secondary(Shadow) ID(12)"
           titlekr: "Secondary(Shadow) ID(12)"
           url: /dxl/x/xm540-w150/#secondaryshadow-id12
-        - title: "Protocol Version(13)"
-          titlekr: "Protocol Version(13)"
+        - title: "Protocol Type(13)"
+          titlekr: "Protocol Type(13)"
           url: /dxl/x/xm540-w150/#protocol-version13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
@@ -6866,8 +6914,8 @@ xm540-w270:
         - title: "Secondary(Shadow) ID(12)"
           titlekr: "Secondary(Shadow) ID(12)"
           url: /dxl/x/xm540-w270/#secondaryshadow-id12
-        - title: "Protocol Version(13)"
-          titlekr: "Protocol Version(13)"
+        - title: "Protocol Type(13)"
+          titlekr: "Protocol Type(13)"
           url: /dxl/x/xm540-w270/#protocol-version13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
@@ -7108,8 +7156,8 @@ xh540-w150:
         - title: "Secondary(Shadow) ID(12)"
           titlekr: "Secondary(Shadow) ID(12)"
           url: /dxl/x/xh540-w150/#secondaryshadow-id12
-        - title: "Protocol Version(13)"
-          titlekr: "Protocol Version(13)"
+        - title: "Protocol Type(13)"
+          titlekr: "Protocol Type(13)"
           url: /dxl/x/xh540-w150/#protocol-version13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
@@ -7350,8 +7398,8 @@ xh540-w270:
         - title: "Secondary(Shadow) ID(12)"
           titlekr: "Secondary(Shadow) ID(12)"
           url: /dxl/x/xh540-w270/#secondaryshadow-id12
-        - title: "Protocol Version(13)"
-          titlekr: "Protocol Version(13)"
+        - title: "Protocol Type(13)"
+          titlekr: "Protocol Type(13)"
           url: /dxl/x/xh540-w270/#protocol-version13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
@@ -7592,8 +7640,8 @@ xh540-v150:
         - title: "Secondary(Shadow) ID(12)"
           titlekr: "Secondary(Shadow) ID(12)"
           url: /dxl/x/xh540-v150/#secondaryshadow-id12
-        - title: "Protocol Version(13)"
-          titlekr: "Protocol Version(13)"
+        - title: "Protocol Type(13)"
+          titlekr: "Protocol Type(13)"
           url: /dxl/x/xh540-v150/#protocol-version13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
@@ -7830,8 +7878,8 @@ xh540-v270:
         - title: "Secondary(Shadow) ID(12)"
           titlekr: "Secondary(Shadow) ID(12)"
           url: /dxl/x/xh540-v270/#secondaryshadow-id12
-        - title: "Protocol Version(13)"
-          titlekr: "Protocol Version(13)"
+        - title: "Protocol Type(13)"
+          titlekr: "Protocol Type(13)"
           url: /dxl/x/xh540-v270/#protocol-version13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"

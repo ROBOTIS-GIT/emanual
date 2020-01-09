@@ -1,5 +1,5 @@
 This address can switch between DYNAMIXEL Protocol and Modbus-RTU Protocol.  
-Modbus-RTU is supported DYNAMIXEL PRO+ Firmware V11 or above.
+Modbus-RTU is supported DYNAMIXEL-P series Firmware V11 or above.
 
 | Value |  Protocol   | Description                                                                                           |
 |:-----:|:-----------:|:------------------------------------------------------------------------------------------------------|
@@ -9,7 +9,7 @@ Modbus-RTU is supported DYNAMIXEL PRO+ Firmware V11 or above.
 [DYNAMIXEL Protocol 2.0]: /docs/en/dxl/protocol2/
 [Industrial Standard Protocol]: http://modbus.org/docs/PI_MBUS_300.pdf
 
-**WARNING** : In order to change the Protocol Type of PRO+, please use [DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/) as R+ Manager 2.0 does not support Modbus.
+**WARNING** : In order to change the Protocol Type of DYNAMIXEL-P series, please use [DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/) as R+ Manager 2.0 does not support Modbus.
 {: .notice--warning}
 
 {% capture warn01 %}

@@ -4,8 +4,8 @@ lang: kr
 ref: dxl_pro_plus
 permalink: /docs/kr/dxl/pro_plus/
 sidebar:
-  title: DYNAMIXEL PRO+
-  nav: "dynamixel_pro_plus"
+  title: 다이나믹셀-P
+  nav: "dynamixel_p"
 ---
 
 ![](/assets/images/dxl/pro_plus/pro-plus.png)

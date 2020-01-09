@@ -4,29 +4,29 @@ lang: en
 ref: dxl_pro_plus
 permalink: /docs/en/dxl/pro_plus/
 sidebar:
-  title: DYNAMIXEL PRO+
+  title: DYNAMIXEL-P
   nav: "dynamixel_pro_plus"
 product_group: dxl_pro_plus
 ---
 
 ![](/assets/images/dxl/pro_plus/pro-plus.png)
-> DYNAMIXEL PRO+
+> DYNAMIXEL-P
 
 # [Product Lineup](#product-lineup)
 
 ![](/assets/images/dxl/pro_plus/dynamixel_pro_plus_lineup_table.jpg)
 
-> DYNAMIXEL PRO+ Lineup
+> DYNAMIXEL-P Lineup
 
 - **Integrated robot-driving device** : Contains all necessary features for robot joints integrated into a single module.
 
   ![](/assets/images/dxl/pro/dxl_pro_intro.gif)
 
-- **Strong and durable reduction cycloid gearing** : DYNAMIXEL PRO+ implements removable reduction cycloid gears. Small and lightweight cycloids allow a high-ratio reduction gear device. Also cycloid gears are more resistant to vibrations and impacts resulting in minimal backlash.
+- **Strong and durable reduction cycloid gearing** : DYNAMIXEL-P implements removable reduction cycloid gears. Small and lightweight cycloids allow a high-ratio reduction gear device. Also cycloid gears are more resistant to vibrations and impacts resulting in minimal backlash.
 
-- **Variety of models** : DYNAMIXEL PRO+ motor, reduction ratio, communications type, etc have been accommodated to meet various price ranges. The user is able to choose the most proper DYNAMIXEL PRO+ model necessary for the robot.
+- **Variety of models** : DYNAMIXEL-P motor, reduction ratio, communications type, etc have been accommodated to meet various price ranges. The user is able to choose the most proper DYNAMIXEL-P model necessary for the robot.
 
-- **Variety of control algorithms** : DYNAMIXEL PRO+ adopts position, velocity, and electrical current control algorithms. The user can control these 3 aspects in any combination and properly tune the robot. DYNAMIXEL PRO+ provides a graph illustrating the relationship between electrical current and torque. This feature is useful for torque control via current control.
+- **Variety of control algorithms** : DYNAMIXEL-P adopts position, velocity, and electrical current control algorithms. The user can control these 3 aspects in any combination and properly tune the robot. DYNAMIXEL-P provides a graph illustrating the relationship between electrical current and torque. This feature is useful for torque control via current control.
 
 - **Precision control** : With a maximum of 1,003,846 resolution, users can control about 0.0004 degrees per unit allowing for high-precision control.
 

@@ -4,7 +4,7 @@ lang: kr
 ref: dxl_pro
 permalink: /docs/kr/dxl/pro/
 sidebar:
-  title: DYNAMIXEL PRO
+  title: 다이나믹셀 PRO
   nav: "dynamixel_pro"
 ---
 

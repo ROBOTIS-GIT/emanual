@@ -28,7 +28,7 @@ V2.0.0 기준으로 지원 제품이 한정됩니다. 지원 제품 목록에 �
 - 로보티즈 스마트(스마트2)
 - 로보티즈 IoT
 - 로보티즈 미니
-- 다이나믹셀 2.0 시리즈 (MX-28, MX-64, MX-106, XL-320, XM시리즈, XH시리즈, Pro시리즈)
+- 다이나믹셀 2.0 시리즈 (MX-28, MX-64, MX-106, XL-320, XM시리즈, XH시리즈, PRO시리즈)
 
 ![](/assets/images/sw/rplus2/manager/rplusmanager2_02_kr.jpg)
 
@@ -309,7 +309,7 @@ BT-210, BT-110을 이용하면 무선으로 펌웨어 관리를 진행하실 수
 - [ROBOTIS SMART2]
 - [ROBOTIS IoT]
 - [ROBOTIS MINI]
-- 다이나믹셀 2.0 시리즈 ([XL-320, XM시리즈, XH시리즈] / [Pro시리즈] / [PRO+시리즈])
+- 다이나믹셀 2.0 시리즈 ([XL-320, XM시리즈, XH시리즈] / [PRO시리즈] / [PRO+시리즈])
 - 그 외 [CM-150, CM-200, OpenCM9.04, OpenCM7.0]을 사용하여 만든 사용자 로봇
 
 AX시리즈, MX시리즈, RX시리즈, DX시리즈, EX시리즈, CM-530, CM-510, CM-700, CM-100A는 지원하지 않습니다. (V2.0.0 기준)  
@@ -336,8 +336,8 @@ AX시리즈, MX시리즈, RX시리즈, DX시리즈, EX시리즈, CM-530, CM-510,
 - 더 자세한 사항은 고객지원 또는 Q&A게시판으로 문의바랍니다.
 
 [XL-320, XM시리즈, XH시리즈]: /docs/kr/dxl/x/
-[Pro시리즈]: /docs/kr/dxl/pro/
-[Pro+시리즈]: /docs/kr/dxl/pro_plus/
+[PRO시리즈]: /docs/kr/dxl/pro/
+[PRO+시리즈]: /docs/kr/dxl/pro_plus/
 [ROBOTIS DREAM]: /docs/kr/edu/
 [ROBOTIS SMART]: /docs/kr/edu/
 [ROBOTIS SMART2]: /docs/kr/edu/

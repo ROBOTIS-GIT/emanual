@@ -5,12 +5,12 @@ The Control Table is a structure of data implemented in the device. Users can re
 {% assign data_size= "1 ~ 4" %}
 
 {% if page.product_group=='dxl_pro_plus' %}
-**WARNING** : PRO+ series use different Control Table from PRO series. Please pay attention when replacing PRO with PRO+.
+**WARNING** : DYNAMIXEL-P series use different Control Table from DYNAMIXEL PRO series. Please pay attention when replacing DYNAMIXEL PRO with DYNAMIXEL-P series.
 {: .notice--warning}
 {% assign torque_enable= "512" %}
 
 {% elsif page.product_group=='dxl_pro_a' %}
-**WARNING** : PRO(A) series use different Control Table from PRO series. Please pay attention when upgrading PRO to PRO(A).
+**WARNING** : PRO(A) series use different Control Table from DYNAMIXEL PRO series. Please pay attention when upgrading DYNAMIXEL PRO to PRO(A).
 {: .notice--warning}
 {% assign torque_enable= "512" %}
 

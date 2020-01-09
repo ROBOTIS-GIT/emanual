@@ -4,48 +4,87 @@ lang: en
 ref: all-dynamixel
 permalink: /docs/en/dxl/
 sidebar:
-  title: DYNAMIXEL
+  title: Actuator
   nav: "all-dynamixel"
 ---
 
-# [AX Series](#ax-series)
+# [DYNAMIXEL ](#DYNAMIXEL-)
+
+## [AX Series](#ax-series)
 
 |                                  AX-12W                                  |                              AX-12/12+/12A                               |                                AX-18F/18A                                |
 |:------------------------------------------------------------------------:|:------------------------------------------------------------------------:|:------------------------------------------------------------------------:|
 | [![](/assets/images/dxl/ax/ax-12w_product.jpg)](/docs/en/dxl/ax/ax-12w/) | [![](/assets/images/dxl/ax/ax-12a_product.png)](/docs/en/dxl/ax/ax-12a/) | [![](/assets/images/dxl/ax/ax-18a_product.png)](/docs/en/dxl/ax/ax-18a/) |
 
-# [EX Series](#ex-series)
+## [EX Series](#ex-series)
 
 |                                  EX-106+                                  |
 |:-------------------------------------------------------------------------:|
 | [![](/assets/images/dxl/ex/ex-106_product.png)](/docs/en/dxl/ex/ex-106+/) |
 
-# [DX Series](#dx-series)
+## [DX Series](#dx-series)
 
 |                                  DX-113                                  |                                  DX-116                                  |                                  DX-117                                  |
 |:------------------------------------------------------------------------:|:------------------------------------------------------------------------:|:------------------------------------------------------------------------:|
 | [![](/assets/images/dxl/dx/dx-113_product.png)](/docs/en/dxl/dx/dx-113/) | [![](/assets/images/dxl/dx/dx-116_product.png)](/docs/en/dxl/dx/dx-116/) | [![](/assets/images/dxl/dx/dx-117_product.png)](/docs/en/dxl/dx/dx-117/) |
 
-# [RX Series](#rx-series)
+## [RX Series](#rx-series)
 
 |                                 RX-10                                  |                                  RX-24F                                  |                                 RX-28                                  |                                 RX-64                                  |
 |:----------------------------------------------------------------------:|:------------------------------------------------------------------------:|:----------------------------------------------------------------------:|:----------------------------------------------------------------------:|
 | [![](/assets/images/dxl/rx/rx-10_product.png)](/docs/en/dxl/rx/rx-10/) | [![](/assets/images/dxl/rx/rx-24f_product.png)](/docs/en/dxl/rx/rx-24f/) | [![](/assets/images/dxl/rx/rx-28_product.png)](/docs/en/dxl/rx/rx-28/) | [![](/assets/images/dxl/rx/rx-64_product.png)](/docs/en/dxl/rx/rx-64/) |
 
-# [MX Series](#mx-series)
+## [MX Series](#mx-series)
 
-|                                 MX-12W                                  |                                   MX-28T/R/AT/AR                                   |                                   MX-64T/R/AT/AR                                   |                                      MX-106T/R                                       |
-|:-----------------------------------------------------------------------:|:----------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------:|
-| [![](/assets/images/dxl/mx/mx-12_product.jpg)](/docs/en/dxl/mx/mx-12w/) |                   ![](/assets/images/dxl/mx/mx-28ar_product.jpg)                   |                   ![](/assets/images/dxl/mx/mx-64ar_product.png)                   |                    ![](/assets/images/dxl/mx/mx-106t_product.jpg)                    |
-|                                    -                                    | [Protocol 1.0](/docs/en/dxl/mx/mx-28/)<br>[Protocol 2.0](/docs/en/dxl/mx/mx-28-2/) | [Protocol 1.0](/docs/en/dxl/mx/mx-64/)<br>[Protocol 2.0](/docs/en/dxl/mx/mx-64-2/) | [Protocol 1.0](/docs/en/dxl/mx/mx-106/)<br>[Protocol 2.0](/docs/en/dxl/mx/mx-106-2/) |
+|                                 MX-12W                                  |                     MX-28                      |                     MX-64                      |                     MX-106                     |
+|:-----------------------------------------------------------------------:|:----------------------------------------------:|:----------------------------------------------:|:----------------------------------------------:|
+| [![](/assets/images/dxl/mx/mx-12_product.jpg)](/docs/en/dxl/mx/mx-12w/) | ![](/assets/images/dxl/mx/mx-28ar_product.jpg) | ![](/assets/images/dxl/mx/mx-64ar_product.png) | ![](/assets/images/dxl/mx/mx-106t_product.jpg) |
+|                                    -                                    |    [MX-28T/R/AT/AR](/docs/en/dxl/mx/mx-28/)    |    [MX-64T/R/AT/AR](/docs/en/dxl/mx/mx-64/)    |      [MX-106T/R](/docs/en/dxl/mx/mx-106/)      |
 
-# [X Series](#x-series)
+T/R/AT/AR represents protocol types as following:
+- T: TTL.
+- R: RS485.
+- AT/AR: Aluminum front case applied. 
+
+### MX Series (2.0)
+
+MX series can use Protocol 2.0 by using a particular firmware version.
+
+- [MX-28T/R/AT/AR(2.0)](/docs/en/dxl/mx/mx-28-2/)
+- [MX-64T/R/AT/AR(2.0)](/docs/en/dxl/mx/mx-64-2/)
+- [MX-106T/R(2.0)](/docs/en/dxl/mx/mx-106-2/)
+
+{% capture notice_01 %}
+**NOTE**: Read the following to ensure proper use of MX series(2.0).
+- In order to use Protocol 2.0 firmware version with MX series, proceed to **Firmware Recovery** via [DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/#firmware-recovery) or [R+ Manager 2.0](/docs/en/software/rplus2/manager/#firmware-recovery).
+- Protocol 2.0 is available with v39 Firmware version (or above). Proceed to **Firmware Update** via [DYNAMIXEL Wizard 2.0](/docs/kr/software/dynamixel/dynamixel_wizard2/#firmware-update) or [R+ Manager 2.0](/docs/en/software/rplus2/manager/#firmware-recovery).
+- Protocol 2.0 supports various Operating Modes, Secondary ID, Drive Mode, Bus Watchdog and etc.
+{% endcapture %}
+<div class="notice">{{ notice_01| markdownify }}</div>
+
+# [DYNAMIXEL-X](#DYNAMIXEL-x)
+
+{% capture notice_01 %}
+**NOTE** : 
+- X-series can switch Protocol 2.0 into Protocol 1.0 aside from [XL320](/docs/en/dxl/x/xl320/)
+- Refer to Protocol Type(13) in control table of model of its DYNAMIXEL. 
+{% endcapture %}
+<div class="notice">{{ notice_01| markdownify }}</div>
 
 ## [XL Series](#xl-series)
 
-|                                XL320                                 |                                  XL430-W250                                   |
-|:--------------------------------------------------------------------:|:-----------------------------------------------------------------------------:|
-| [![](/assets/images/dxl/x/xl320_product.jpg)](/docs/en/dxl/x/xl320/) | [![](/assets/images/dxl/x/xl430_product_new.png)](/docs/en/dxl/x/xl430-w250/) |
+|                    XL320                    |                      XL430                      |                       2XL                        |
+|:-------------------------------------------:|:-----------------------------------------------:|:------------------------------------------------:|
+| ![](/assets/images/dxl/x/xl320_product.jpg) | ![](/assets/images/dxl/x/xl430_product_new.png) | ![](/assets/images/dxl/x/2xl/2xl430_product.png) |
+|       [XL320](/docs/en/dxl/x/xl320/)        |    [XL430-W250](/docs/en/dxl/x/xl430-w250/)     |    [2XL430-W250](/docs/en/dxl/x/2xl430-w250/)    |
+
+## [XC Series](#xc-series)
+
+|                                        XC430                                         |
+|:------------------------------------------------------------------------------------:|
+|                     ![](/assets/images/dxl/x/xc430_product.png)                      |
+| [XC430-W150](/docs/en/dxl/x/xc430-w150/)<br>[XC430-W240](/docs/en/dxl/x/xc430-w240/) |
+
 
 ## [XM Series](#xm-series)
 
@@ -61,36 +100,61 @@ sidebar:
 |                                                                ![](/assets/images/dxl/x/x_series_product.png)                                                                |                                                              ![](/assets/images/dxl/x/x540-series_product.png)                                                               |
 | [XH430-W210](/docs/en/dxl/x/xh430-w210/)<br>[XH430-W350](/docs/en/dxl/x/xh430-w350/)<br>[XH430-V210](/docs/en/dxl/x/xh430-v210/)<br>[XH430-V350](/docs/en/dxl/x/xh430-v350/) | [XH540-W150](/docs/en/dxl/x/xh540-w150/)<br>[XH540-W270](/docs/en/dxl/x/xh540-w270/)<br>[XH540-V150](/docs/en/dxl/x/xh540-v150/)<br>[XH540-V270](/docs/en/dxl/x/xh540-v270/) |
 
-# [PRO Series](#pro-series)
+# [DYNAMIXEL PRO](#DYNAMIXEL-pro)
 
-## [PRO L Series](#pro-l-series)
+## [L Series](#l-series)
 
-|                                       L54-50-S500-R                                       |                                       L54-50-S290-R                                       |                                       L54-30-S500-R                                       |                                       L54-30-S400-R                                       |                                      L42-10-S300-R                                       |
-|:-----------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------:|
-| [![](/assets/images/dxl/pro/h54-100-s500-r_product.jpg)](/docs/en/dxl/pro/l54-50-s500-r/) | [![](/assets/images/dxl/pro/h54-100-s500-r_product.jpg)](/docs/en/dxl/pro/l54-50-s290-r/) | [![](/assets/images/dxl/pro/h54-100-s500-r_product.jpg)](/docs/en/dxl/pro/l54-30-s500-r/) | [![](/assets/images/dxl/pro/h54-100-s500-r_product.jpg)](/docs/en/dxl/pro/l54-30-s400-r/) | [![](/assets/images/dxl/pro/m42-10-s260-r_product.jpg)](/docs/en/dxl/pro/l42-10-s300-r/) |
+|                                                                                                     L54                                                                                                      |                          L42                          |
+|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------:|
+|                                                                            ![](/assets/images/dxl/pro/h54-100-s500-r_product.jpg)                                                                            | ![](/assets/images/dxl/pro/m42-10-s260-r_product.jpg) |
+| [L54-30-S400-R](/docs/en/dxl/pro/l54-30-s400-r/)<br>[L54-30-S500-R](/docs/en/dxl/pro/l54-30-s500-r/)<br>[L54-50-S290-R](/docs/en/dxl/pro/l54-50-s290-r/)<br>[L54-50-S500-R](/docs/en/dxl/pro/l54-50-s500-r/) |   [L42-10-S300-R](/docs/en/dxl/pro/l42-10-s300-r/)    |
 
-## [PRO M Series](#pro-m-series)
+## [M Series](#m-series)
 
-|                                              M54-60-S250-R                                               |                                              M54-40-S250-R                                               |                                              M42-10-S260-R                                               |
-|:--------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------:|
-|                          ![](/assets/images/dxl/pro/h54-200-s500-r_product.jpg)                          |                          ![](/assets/images/dxl/pro/h54-100-s500-r_product.jpg)                          |                          ![](/assets/images/dxl/pro/m42-10-s260-r_product.jpg)                           |
-| [M54-60-S250-R](/docs/en/dxl/pro/m54-60-s250-r/)<br>[M54-60-S250-R(A)](/docs/en/dxl/pro/m54-60-s250-ra/) | [M54-40-S250-R](/docs/en/dxl/pro/m54-40-s250-r/)<br>[M54-40-S250-R(A)](/docs/en/dxl/pro/m54-40-s250-ra/) | [M42-10-S260-R](/docs/en/dxl/pro/m42-10-s260-r/)<br>[M42-10-S260-R(A)](/docs/en/dxl/pro/m42-10-s260-ra/) |
+|                                                 M54                                                  |                          M42                          |
+|:----------------------------------------------------------------------------------------------------:|:-----------------------------------------------------:|
+|                        ![](/assets/images/dxl/pro/h54-200-s500-r_product.jpg)                        | ![](/assets/images/dxl/pro/m42-10-s260-r_product.jpg) |
+| [M54-40-S250-R](/docs/en/dxl/pro/m54-40-s250-r/)<br>[M54-60-S250-R](/docs/en/dxl/pro/m54-60-s250-r/) |   [M42-10-S260-R](/docs/en/dxl/pro/m42-10-s260-r/)    |
 
-## [PRO H Series](#pro-h-series)
+### A Firmware with DYNAMIXEL PRO
 
-|                                                H54-200-S500-R                                                |                                                H54-100-S500-R                                                |                                              H42-20-S300-R                                               |
-|:------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------:|
-|                            ![](/assets/images/dxl/pro/h54-200-s500-r_product.jpg)                            |                            ![](/assets/images/dxl/pro/h54-100-s500-r_product.jpg)                            |                          ![](/assets/images/dxl/pro/h42-20-s300-r_product.jpg)                           |
-| [H54-200-S500-R](/docs/en/dxl/pro/h54-200-s500-r/)<br>[H54-200-S500-R(A)](/docs/en/dxl/pro/h54-200-s500-ra/) | [H54-100-S500-R](/docs/en/dxl/pro/h54-100-s500-r/)<br>[H54-100-S500-R(A)](/docs/en/dxl/pro/h54-100-s500-ra/) | [H42-20-S300-R](/docs/en/dxl/pro/h42-20-s300-r/)<br>[H42-20-S300-R(A)](/docs/en/dxl/pro/h42-20-s300-ra/) |
+This is A firmware version (Advanced firmware) of DYNAMIXEL PRO.  
+- [M54-40-S250-R(A)](/docs/en/dxl/pro/m54-40-s250-ra/)
+- [M54-60-S250-R(A)](/docs/en/dxl/pro/m54-60-s250-ra/)
+- [M42-10-S260-R(A)](/docs/en/dxl/pro/m42-10-s260-ra/)
 
-# [PRO Plus(+) Series](#pro-plus-series)
+**NOTE**: In order to update DYNAMIXEL PRO model to A Firmware version, use [Firmware Recovery](/docs/en/software/dynamixel/dynamixel_wizard2/#firmware-recovery) of DYNAMIXEL Wizard 2.0.  
+{: .notice}
 
-|                                        PH54-200-S500-R                                         |                                        PH54-100-S500-R                                         |                                        PH42-020-S300-R                                         |
-|:----------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------:|
-| [![](/assets/images/dxl/pro_plus/ph54-200-s500-r.png)](/docs/en/dxl/pro_plus/ph54-200-s500-r/) | [![](/assets/images/dxl/pro_plus/ph54-100-s500-r.png)](/docs/en/dxl/pro_plus/ph54-100-s500-r/) | [![](/assets/images/dxl/pro_plus/ph42-020-s300-r.png)](/docs/en/dxl/pro_plus/ph42-020-s300-r/) |
+## [H Series](#h-series)
 
+|                                                   H54                                                    |                          H42                          |
+|:--------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------:|
+|                          ![](/assets/images/dxl/pro/h54-200-s500-r_product.jpg)                          | ![](/assets/images/dxl/pro/h42-20-s300-r_product.jpg) |
+| [H54-100-S500-R](/docs/en/dxl/pro/h54-100-s500-r/)<br>[H54-200-S500-R](/docs/en/dxl/pro/h54-200-s500-r/) |   [H42-20-S300-R](/docs/en/dxl/pro/h42-20-s300-r/)    |
 
+### A Firmware with DYNAMIXEL PRO
 
- |                    PM54-060-S250-R                    |                   PM54-040-S250-R                    |                    PM42-010-S260-R                    |
- |:-----------------------------------------------------:|:----------------------------------------------------:|:-----------------------------------------------------:|
- |[![](/assets/images/dxl/pro_plus/pm54-040-s250-r.png)](/docs/en/dxl/pro_plus/pm54-060-s250-r/) | [![](/assets/images/dxl/pro_plus/pm54-060-s250-r.png)](http://localhost:4000/docs/en/dxl/pro_plus/pm54-040-s250-r/) | [![](/assets/images/dxl/pro_plus/pm42-010-s260-r.png)](/docs/en/dxl/pro_plus/pm42-010-s260-r/) |
+This is A firmware version (Advanced firmware) of DYNAMIXEL PRO.
+- [H54-100-S500-R(A)](/docs/en/dxl/pro/h54-100-s500-ra/) 
+- [H54-200-S500-R(A)](/docs/en/dxl/pro/h54-200-s500-ra/)
+- [H42-20-S300-R(A)](/docs/en/dxl/pro/h42-20-s300-ra/)
+
+**NOTE**: In order to update DYNAMIXEL PRO model to A Firmware version, use [Firmware Recovery](/docs/en/software/dynamixel/dynamixel_wizard2/#firmware-recovery) of DYNAMIXEL Wizard 2.0.  
+{: .notice}
+
+# [DYNAMIXEL-P](#DYNAMIXEL-p)
+
+## [PH Series](#ph-series)
+
+|                                                         PH54                                                          |                           PH42                           |
+|:---------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------:|
+|                                 ![](/assets/images/dxl/pro_plus/ph54-200-s500-r.png)                                  |   ![](/assets/images/dxl/pro_plus/ph42-020-s300-r.png)   |
+| [PH54-200-S500-R](/docs/en/dxl/pro_plus/ph54-200-s500-r)<br>[PH54-100-S500-R](/docs/en/dxl/pro_plus/ph54-100-s500-r/) | [PH42-020-S300-R](/docs/en/dxl/pro_plus/ph42-020-s300-r) |
+
+## [PM Series](#pm-series)
+
+|                                                          PM54                                                          |                           PM42                            |
+|:----------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------:|
+|                                  ![](/assets/images/dxl/pro_plus/pm54-040-s250-r.png)                                  |   ![](/assets/images/dxl/pro_plus/pm42-010-s260-r.png)    |
+| [PM54-060-S250-R](/docs/en/dxl/pro_plus/pm54-060-s250-r/)<br>[PM54-040-S250-R](/docs/en/dxl/pro_plus/pm54-040-s250-r/) | [PM42-010-S260-R](/docs/en/dxl/pro_plus/pm42-010-s260-r/) |

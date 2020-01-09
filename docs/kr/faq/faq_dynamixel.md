@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/kr/faq/faq_dynamixel/
 sidebar:
-  title: FAQ DYNAMIXEL
+  title: FAQ 다이나믹셀
   nav: "faq_dynamixel"
 ---
 
@@ -25,7 +25,7 @@ sidebar:
 [DX], [AX], [RX], [EX] 시리즈와 프로토콜 1.0 펌웨어가 업로드 된 일부 [MX] 시리즈(MX-28/64/106)가 프토토콜 1.0과 호환됩니다.
 
 # 어떤 다이나믹셀이 프로토콜 2.0을 사용하나요? 
-[DYNAMIXEL X], [DYNAMIXEL Pro], [DYNAMIXEL Pro+] 시리즈와 프로토콜 2.0 펌웨어가 업로드 된 일부 [MX] 시리즈(MX-28/64/106)가 프로토콜 2.0과 호환됩니다.
+[다이나믹셀-X], [다이나믹셀 PRO], [다이나믹셀-P] 시리즈와 프로토콜 2.0 펌웨어가 업로드 된 일부 [MX] 시리즈(MX-28/64/106)가 프로토콜 2.0과 호환됩니다.
 
 # 다이나믹셀에는 어떤 커넥터와 케이블을 사용할 수 있나요?
 각 다이나믹셀 매뉴얼의 **커넥터 정보** 항목을 참고하시기 바랍니다.
@@ -88,9 +88,9 @@ sidebar:
 [RX]: /docs/kr/dxl/#rx-series
 [EX]: /docs/kr/dxl/#ex-series
 [MX]: /docs/kr/dxl/#mx-series
-[DYNAMIXEL X]: /docs/kr/dxl/#x-series
-[DYNAMIXEL Pro]: /docs/kr/dxl/#pro-series
-[DYNAMIXEL Pro+]: /docs/kr/dxl/#pro-plus-series
+[다이나믹셀-X]: /docs/kr/dxl/#x-series
+[다이나믹셀 PRO]: /docs/kr/dxl/#pro-series
+[다이나믹셀-P]: /docs/kr/dxl/#pro-plus-series
 [MX]: /docs/kr/dxl/#mx-series
 [U2D2]: /docs/kr/parts/interface/u2d2/
 [USB2DYNAMIXEL]: /docs/kr/parts/interface/usb2dynamixel/

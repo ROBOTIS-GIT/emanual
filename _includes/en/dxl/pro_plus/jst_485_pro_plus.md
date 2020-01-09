@@ -10,7 +10,7 @@
 
 {% include en/dxl/pinout_warning.md %}
 
-**WARNING**: Before operating PRO and PRO+, please supply power through 24V power port.
+**WARNING**: Before operating DYNAMIXEL PRO and DYNAMIXEL-P series, please supply power through 24V power port.
 {: .notice--warning}
 
 [JST EHR-4]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf

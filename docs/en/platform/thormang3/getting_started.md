@@ -267,7 +267,7 @@ Install the ROBOTIS ROS Package from the MPC. The ROS Package is installed by de
     
     `thormang3_manager/config/`  
 
-#### [THORMANG3 WITH DYNAMIXEL PRO+](#thormang3-with-dynimixel-proplus)
+#### [THORMANG3 WITH DYNAMIXEL-P](#thormang3-with-dynimixel-proplus)
   
 1. Download Packages from GitHub to the source folder in the catkin workspace.    
 

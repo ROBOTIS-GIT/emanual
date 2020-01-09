@@ -89,7 +89,7 @@ Information appearing in a CAUTION concerns the protection of personnel and equi
 - The diagram above illustrates joints 1~6 connected in daisy-chain (serial) configuration with 4P Cable.
 - Joint 1 (labeled as “1st”) connects to U2D2 via 4P Cable.
 - U2D2 connects to PC via USB hub.
-- DYNAMIXEL Pro+ is powered from a a power supply via power expansion hub.
+- DYNAMIXEL-P is powered from a a power supply via power expansion hub.
 - Joints 5 and 6 (model: PH42-020-S300-R) are not separately powered; instead power comes from the same 4P Cable.
 
 ### Power Supply
@@ -108,7 +108,7 @@ The power cable supplies power to the OpenMANIPULATOR-PRO.
 
 ### Goal Position Values with Respect to Rotation
 
-- Goal Position value determines the rotational position of DYNAMIXEL PRO+.
+- Goal Position value determines the rotational position of DYNAMIXEL-P.
 
 |              Model Name              |                                                                     Relationship between angle(deg) and position value                                                                     |
 |:------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
