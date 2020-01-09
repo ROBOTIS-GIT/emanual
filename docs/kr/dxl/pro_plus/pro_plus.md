@@ -9,13 +9,13 @@ sidebar:
 ---
 
 ![](/assets/images/dxl/p/pro-plus.png)
-> 다이나믹셀 PRO+
+> 다이나믹셀-P
 
 # [제품 라인업](#제품-라인업)
 
 ![](/assets/images/dxl/p/dynamixel_pro_plus_lineup_table_kr.jpg)
 
-> 다이나믹셀 PRO+ 라인업
+> 다이나믹셀-P 라인업
 
 - **일체형 로봇 구동장치** : 로봇의 관절에 필요한 기능을 하나의 모듈로 만들었습니다.
 

@@ -5,7 +5,7 @@ ref: dxl_pro_plus
 permalink: /docs/en/dxl/p/
 sidebar:
   title: DYNAMIXEL-P
-  nav: "dynamixel_pro_plus"
+  nav: "dynamixel_p"
 product_group: dxl_pro_plus
 ---
 
