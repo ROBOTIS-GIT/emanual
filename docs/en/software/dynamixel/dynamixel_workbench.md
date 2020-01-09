@@ -15,7 +15,7 @@ sidebar:
 
 ![](/assets/images/sw/dynamixel/dynamixel_workbench/DYNAMIXEL_WORKBENCH_LOGO.png)
 
-The purpose of DYNAMIXEL-Workbench is **to use more simple and easy to use any DYNAMIXEL**. This library is based on [DYNAMIXEL SDK] and supports ROS, Linux, macOS and Arduino. However, this library is not magic stick to operate DYNAMIXEL with any setup. It has some restriction compared with DYNAMIXEL SDK but we are continue to upgrade this library for almost everyone loves DYNAMIXEL.
+The purpose of DYNAMIXEL Workbench is **to use more simple and easy to use any DYNAMIXEL**. This library is based on [DYNAMIXEL SDK] and supports ROS, Linux, macOS and Arduino. However, this library is not magic stick to operate DYNAMIXEL with any setup. It has some restriction compared with DYNAMIXEL SDK but we are continue to upgrade this library for almost everyone loves DYNAMIXEL.
 
 If have any questions or issues, please get a ticket in [github issue](https://github.com/ROBOTIS-GIT/dynamixel-workbench/issues).
   
@@ -42,9 +42,9 @@ If have any questions or issues, please get a ticket in [github issue](https://g
 
 
 
-The **DYNMAIXEL Workbench** metapackage contains 3 packages:  **Controllers**, **Operators**, and **Toolbox**. The **Controllers** package introduces how to employ DYNAMIXEL on different operating mode with DYNMAIXEL Workbench library(**Toolbox**).  In addition, the **Operators** demonstrates some straightforward examples by operating **Controllers**.
+**DYNMAIXEL Workbench** metapackage contains 3 packages:  **Controllers**, **Operators**, and **Toolbox**. The **Controllers** package introduces how to employ DYNAMIXEL on different operating mode with DYNMAIXEL Workbench library(Toolbox).  In addition, the Operators demonstrates some straightforward examples by operating Controllers.
 
-[ROS WIKI](http://wiki.ros.org/dynamixel_workbench)
+- [ROS WIKI](http://wiki.ros.org/dynamixel_workbench)
 
 # [Downloads](#downloads)
 
@@ -122,7 +122,7 @@ $ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench.git
 - [Linux](http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/library_setup/cpp_linux/#cpp-linux)  
 - [macOS](http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/library_setup/cpp_macos/#cpp-macos)  
 
-### Setup DYNAMIXEL-Workbench library
+### Setup DYNAMIXEL Workbench library
 
 ``` bash
 $ cd ~/dynamixel-workbench/dynamixel_workbench_toolbox/examples
@@ -563,7 +563,7 @@ Send command velocity to control DYNAMIXEL
  
 ## [OpenCR and OpenCM Tutorials](#opencr-and-opencm-tutorials)
 
-DYNAMIXEL-Workbench firmware in OpenCR and OpenCM is completely same. You can select any example what you want and upload it.
+DYNAMIXEL Workbench firmware in OpenCR and OpenCM is completely same. You can select any example what you want and upload it.
 
 **WARNING**: There are some examples that needs to be openned `Serial Monitor` before it is running. If this code (`while(!Serial)
 `) is activated, please open `Serial Monitor`.
@@ -669,7 +669,7 @@ You can select any example what you want and excute it.
 
 ### [position](#position)
 
-1. Open terminal and go to DYNAMIXEL-Workbench build folder
+1. Open terminal and go to DYNAMIXEL Workbench build folder
 
     ```
     $ cd ~/dynamixel-workbench/dynamixel_workbench_toolbox/examples/build
@@ -693,7 +693,7 @@ You can select any example what you want and excute it.
 
 ### [bulk_read_write](#bulk_read_write)
 
-1. Open terminal and go to DYNAMIXEL-Workbench build folder
+1. Open terminal and go to DYNAMIXEL Workbench build folder
 
     ```
     $ cd ~/dynamixel-workbench/dynamixel_workbench_toolbox/examples/build
@@ -1759,7 +1759,7 @@ If writeByteTxRx instruction set successfully work, return true. If not, return 
 
 ### bool currentBasedPositionMode(uint8_t id, int32_t current = 0, const char **log = NULL)
 **Description**  
-Set currrent based position mode to DYNAMIXEL. You can simply set joint mode controlled by current to DYNAMIXEL X series. After mode successfully set, torque will be on.
+Set currrent based position mode to DYNAMIXEL. You can simply set joint mode controlled by current to DYNAMIXEL-X series. After mode successfully set, torque will be on.
 The current parameters will be used argument to make profile.
 
 **Input**    
@@ -2014,9 +2014,9 @@ Return load. Unit is %
 [L54-30-S500-R]: /docs/en/dxl/pro/l54-30-s500-r/
 [L54-30-S400-R]: /docs/en/dxl/pro/l54-30-s400-r/
 [L42-10-S300-R]: /docs/en/dxl/pro/l42-10-s300-r/
-[PH42-020-S300-R]: /docs/en/dxl/pro_plus/ph42-020-s300-r/
-[PH54-100-S500-R]: /docs/en/dxl/pro_plus/ph54-100-s500-r/
-[PH54-200-S500-R]: /docs/en/dxl/pro_plus/ph54-200-s500-r/
-[PM54-060-S250-R]: /docs/en/dxl/pro_plus/pm54-060-s250-r/
-[PM54-040-S250-R]: /docs/en/dxl/pro_plus/pm54-040-s250-r/
-[PM42-010-S260-R]: /docs/en/dxl/pro_plus/pm42-010-s260-r/
+[PH42-020-S300-R]: /docs/en/dxl/p/ph42-020-s300-r/
+[PH54-100-S500-R]: /docs/en/dxl/p/ph54-100-s500-r/
+[PH54-200-S500-R]: /docs/en/dxl/p/ph54-200-s500-r/
+[PM54-060-S250-R]: /docs/en/dxl/p/pm54-060-s250-r/
+[PM54-040-S250-R]: /docs/en/dxl/p/pm54-040-s250-r/
+[PM42-010-S260-R]: /docs/en/dxl/p/pm42-010-s260-r/

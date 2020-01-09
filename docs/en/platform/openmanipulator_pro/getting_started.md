@@ -99,7 +99,7 @@ The OpenMANIPULATOR-PRO requires 24V for operations. Ensure the power supply is 
 The 4P Cable connects the OpenMANIPULATOR-PRO and U2D2.     
 The power cable supplies power to the OpenMANIPULATOR-PRO.
 
-{% include en/dxl/pro_plus/jst_485_pro_plus.md %}
+{% include en/dxl/p/jst_485_pro_plus.md %}
 
 ### U2D2
 [U2D2](/docs/en/parts/interface/u2d2/) is a small size USB communication converter that enables to control and operate DYNAMIXEL with PC. Connect the [U2D2](/docs/en/parts/interface/u2d2/) to the PC via USB hub.

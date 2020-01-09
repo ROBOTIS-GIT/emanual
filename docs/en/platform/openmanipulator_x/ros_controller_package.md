@@ -136,7 +136,7 @@ Gripper Dynamixel ID : 15, Model Name :XM430-W350
 
 {% capture notice_01 %}
 **TIP**:
-- If you can't load DYNAMIXEL, please check your DYNAMIXEL settings using the following command from DYNAMIXEL-Workbench packages.   
+- If you can't load DYNAMIXEL, please check your DYNAMIXEL settings using the following command from DYNAMIXEL Workbench packages.   
 `rosrun dynamixel_workbench_controllers find_dynamixel /dev/ttyUSB0`  
 Even if you can't find any DYNAMIXEL, please check firmware to use ROBOTIS software ([R+ Manager 2.0](http://emanual.robotis.com/docs/en/software/rplus2/manager/) or [DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/#firmware-update))
 - If you would like to change DYNAMIXEL ID, please check [`open_manipulator.cpp`](https://github.com/ROBOTIS-GIT/open_manipulator/blob/be2859a0506b4e941a19435c0a07562b41768a27/open_manipulator_libs/src/OpenManipulator.cpp#L40) in the open_manipulator_lib folder. The default ID is **11, 12, 13, 14** for joints and **15** for the gripper

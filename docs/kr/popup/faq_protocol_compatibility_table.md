@@ -10,7 +10,7 @@ layout: popup
 **범례** O= 호환 ; X= 미호환 ; *= 특정 조건에서 사용가능.
 {: .notice --info}
 
-# AX-시리즈
+# AX 시리즈
 
 | 모델   | 프로토콜 1.0 | 프로토콜 2.0 |
 |:-------|:------------:|:------------:|
@@ -18,7 +18,7 @@ layout: popup
 | AX-12A |      O       |      X       |
 | AX-18A |      O       |      X       |
 
-# MX-시리즈
+# MX 시리즈
 
 | 모델   | 프로토콜 1.0 | 프로토콜 2.0 |
 |:-------|:-------------|:------------:|
@@ -29,13 +29,13 @@ layout: popup
 
 {% capture notice_01 %}
 **참조** : 
-- MX-시리즈는 펌웨어 복구 통해 프로토콜 2.0을 사용할 수 있습니다. 복구 방법은 [다이나믹셀 위자드 2.0](/docs/kr/software/dynamixel/dynamixel_wizard2/#펌웨어-복구) 또는 [로보플러스 매니저 2.0](/docs/kr/software/rplus2/manager/#펌웨어-복구)의 펌웨어 복구를 참조하세요.
-- MX-시리즈의 프로토콜 2.0은 펌웨어 버전(v39 이상)부터 지원됩니다. 업데이트 방법은 [다이나믹셀 위자드 2.0](/docs/kr/software/dynamixel/dynamixel_wizard2/#펌웨어-업데이트) 또는 [로보플러스 매니저 2.0](/docs/kr/software/rplus2/manager/#펌웨어-업데이트)의 펌웨어 업데이트를 참조하세요.
+- MX 시리즈는 펌웨어 복구 통해 프로토콜 2.0을 사용할 수 있습니다. 복구 방법은 [다이나믹셀 위자드 2.0](/docs/kr/software/dynamixel/dynamixel_wizard2/#펌웨어-복구) 또는 [로보플러스 매니저 2.0](/docs/kr/software/rplus2/manager/#펌웨어-복구)의 펌웨어 복구를 참조하세요.
+- MX 시리즈의 프로토콜 2.0은 펌웨어 버전(v39 이상)부터 지원됩니다. 업데이트 방법은 [다이나믹셀 위자드 2.0](/docs/kr/software/dynamixel/dynamixel_wizard2/#펌웨어-업데이트) 또는 [로보플러스 매니저 2.0](/docs/kr/software/rplus2/manager/#펌웨어-업데이트)의 펌웨어 업데이트를 참조하세요.
 - 프로토콜 2.0으로 변경시, Secondary ID, Drive Mode, Bus Watchdog등의 기능을 사용할 수 있습니다.
 {% endcapture %}
 <div class="notice">{{ notice_01| markdownify }}</div>
 
-# X-시리즈
+# X 시리즈
 
 | 모델        |      프로토콜 1.0       | 프로토콜 2.0 |
 |:------------|:-----------------------:|:------------:|

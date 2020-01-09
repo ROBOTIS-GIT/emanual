@@ -60,7 +60,7 @@ sidebar:
 - `START` START LED : Please refer to the [Operating Mode] of CM-550.
 - `MODE` MODE Button : The operating mode can be changed with this button. Please refer to the [Operating Mode] of CM-550.
 - `START` START Button : This button runs selected operating mode. Please refer to the [Operating Mode] of CM-550.
-- `DXL` DYNAMIXEL X Series Port : DYNAMIXEL X series can be connected in any of these ports.
+- `DXL` DYNAMIXEL-X Series Port : DYNAMIXEL-X series can be connected in any of these ports.
 - `PORT` ROBOTIS 5 Pin Port : Sensors such as DMS, Touch sensor, IR sensor can be connected.  
   Servo motor, IR array sensor, Temperature & Humidity sensor can only be connected to Port 1 or 2.
 - `MIC` Internal Microphone : The integrated microphone detects clapping sound.
@@ -80,22 +80,22 @@ sidebar:
 
 The usage is identical to other DYNAMIXEL's, but be aware that Firmware Recovery will reset both axis to factory settings.
 
-| Item                   | Specifications                                             |
-|:-----------------------|:-----------------------------------------------------------|
+| Item                   | Specifications                                            |
+|:-----------------------|:----------------------------------------------------------|
 | MCU                    | {{ site.data.dxl_x_info.2xl430-w250.mcu }}                |
 | Position Sensor        | {{ site.data.dxl_x_info.2xl430-w250.encoder }}            |
 | Motor                  | {{ site.data.dxl_x_info.2xl430-w250.motor }}              |
 | Baud Rate              | {{ site.data.dxl_x_info.2xl430-w250.baudrate }}           |
 | Control Algorithm      | {{ site.data.dxl_x_info.2xl430-w250.control }}            |
 | Resolution             | {{ site.data.dxl_x_info.2xl430-w250.resolution }}         |
-| Operating Modes        | {{ site.data.dxl_x_info.2xl430-w250.mode_en }}               |
+| Operating Modes        | {{ site.data.dxl_x_info.2xl430-w250.mode_en }}            |
 | Weight                 | {{ site.data.dxl_x_info.2xl430-w250.weight }}             |
 | Dimensions (W x H x D) | {{ site.data.dxl_x_info.2xl430-w250.dimensions }}         |
 | Gear Ratio             | {{ site.data.dxl_x_info.2xl430-w250.gearratio }}          |
 | Stall Torque           | {{ site.data.dxl_x_info.2xl430-w250.stalltorque }}        |
 | No Load Speed          | {{ site.data.dxl_x_info.2xl430-w250.noloadspeed }}        |
 | Operating Temperature  | {{ site.data.dxl_x_info.2xl430-w250.temperature }}        |
-| Input Voltage          | {{ site.data.dxl_x_info.2xl430-w250.voltage_en }}            |
+| Input Voltage          | {{ site.data.dxl_x_info.2xl430-w250.voltage_en }}         |
 | Command Signal         | {{ site.data.dxl_x_info.2xl430-w250.command }}            |
 | Protocol Type          | {{ site.data.dxl_x_info.2xl430-w250.protocoltype }}       |
 | Physical Connection    | {{ site.data.dxl_x_info.2xl430-w250.physicalconnection }} |

@@ -21,46 +21,46 @@ page_number: 4
 
 - Necessary Parts
 
-|                   | Part Name              | Quantity |
-|:------------------|:-----------------------|:--------:|
-| **Chassis Parts** | LINK FRAME(LONG)       |    1     |
-| .                 | LINK FRAME(SHORT)      |    1     |
-| .                 | RAIL BRACKET(LEFT)     |    1     |
-| .                 | RAIL BRACKET(RIGHT)    |    1     |
-| .                 | PALM GRIPPER           |    2     |
-| .                 | LINK ROD               |    2     |
-| .                 | FLANGE BUSH            |    4     |
-| .                 | CRANK ARM              |    1     |
-| .                 | RAIL BLOCK             |    2     |
-| .                 | FR12-S101-K            |    1     |
-| .                 | FR12-S102-K            |    2     |
-| .                 | FR12-H101-K            |    2     |
-| .                 | FR12-H104-K            |    1     |
-| **Actuators**     | DYNAMIXEL XM430-W350-T |    5     |
-| **Cables**        | CABLE-X3P-100          |    1     |
-| .                 | CABLE-X3P-180          |    2     |
-| .                 | CABLE-X3P-240          |    2     |
-| **Tools**         | Screw Driver           |    1     |
-| .                 | Wrench-1.5             |    1     |
-| .                 | Wrench-2.0             |    1     |
-| .                 | Wrench-2.5             |    1     |
-| **Miscellaneous** | X-SP                   |    24    |
-| .                 | NUT-M2.5               |    16    |
-| .                 | NUT-M3                 |    4     |
-| .                 | FHS-M2.5x14            |    12    |
-| .                 | WB-M2x3                |    38    |
-| .                 | WB-M2x4                |    4     |
-| .                 | WB-M2.5x4              |    4     |
-| .                 | WB-M2.5x6              |    8     |
-| .                 | WB-M2.5x8              |    16    |
-| .                 | WB-M2.5x12             |    4     |
-| .                 | WB-M2.5x17             |    4     |
-| .                 | WB-M2.5x20             |    4     |
-| .                 | WB-M3x10               |    4     |
-| .                 | DC12-IDLER             |    3     |
-| .                 | DC12-IDLER-CAP         |    3     |
-| .                 | DC12-P-BEARING         |    3     |
-| .                 | RUBBER PAD             |    2     |
+|                   | Part Name           | Quantity |
+|:------------------|:--------------------|:--------:|
+| **Chassis Parts** | LINK FRAME(LONG)    |    1     |
+| .                 | LINK FRAME(SHORT)   |    1     |
+| .                 | RAIL BRACKET(LEFT)  |    1     |
+| .                 | RAIL BRACKET(RIGHT) |    1     |
+| .                 | PALM GRIPPER        |    2     |
+| .                 | LINK ROD            |    2     |
+| .                 | FLANGE BUSH         |    4     |
+| .                 | CRANK ARM           |    1     |
+| .                 | RAIL BLOCK          |    2     |
+| .                 | FR12-S101-K         |    1     |
+| .                 | FR12-S102-K         |    2     |
+| .                 | FR12-H101-K         |    2     |
+| .                 | FR12-H104-K         |    1     |
+| **Actuators**     | XM430-W350-T        |    5     |
+| **Cables**        | CABLE-X3P-100       |    1     |
+| .                 | CABLE-X3P-180       |    2     |
+| .                 | CABLE-X3P-240       |    2     |
+| **Tools**         | Screw Driver        |    1     |
+| .                 | Wrench-1.5          |    1     |
+| .                 | Wrench-2.0          |    1     |
+| .                 | Wrench-2.5          |    1     |
+| **Miscellaneous** | X-SP                |    24    |
+| .                 | NUT-M2.5            |    16    |
+| .                 | NUT-M3              |    4     |
+| .                 | FHS-M2.5x14         |    12    |
+| .                 | WB-M2x3             |    38    |
+| .                 | WB-M2x4             |    4     |
+| .                 | WB-M2.5x4           |    4     |
+| .                 | WB-M2.5x6           |    8     |
+| .                 | WB-M2.5x8           |    16    |
+| .                 | WB-M2.5x12          |    4     |
+| .                 | WB-M2.5x17          |    4     |
+| .                 | WB-M2.5x20          |    4     |
+| .                 | WB-M3x10            |    4     |
+| .                 | DC12-IDLER          |    3     |
+| .                 | DC12-IDLER-CAP      |    3     |
+| .                 | DC12-P-BEARING      |    3     |
+| .                 | RUBBER PAD          |    2     |
 
 - Optional Parts
 

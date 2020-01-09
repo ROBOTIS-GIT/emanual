@@ -1002,7 +1002,7 @@ void loop() {
 
 ## [DYNAMIXELWorkbench](#dynamixelworkbench)
 
-- [DYNAMIXEL-Workbench examples](/docs/en/software/dynamixel/dynamixel_workbench/#opencr-and-opencm-tutorials)
+- [DYNAMIXEL Workbench examples](/docs/en/software/dynamixel/dynamixel_workbench/#opencr-and-opencm-tutorials)
 
 ## [Servo](#servo)
 

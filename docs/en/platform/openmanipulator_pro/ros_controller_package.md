@@ -135,7 +135,7 @@ Joint Dynamixel ID : 6, Model Name : PRO-PLUS-PH42-020-S300-R
 
 {% capture notice_01 %}
 **TIP**:  
-- If you can't load DYNAMIXEL, please check your DYNAMIXEL settings by using the following command from DYNAMIXEL-Workbench packages.   
+- If you can't load DYNAMIXEL, please check your DYNAMIXEL settings by using the following command from DYNAMIXEL Workbench packages.   
 `rosrun dynamixel_workbench_controllers find_dynamixel /dev/ttyUSB0`  
 if DYNAMIXEL aren't recoginized, please check firmware with ROBOTIS software ([R+ Manager 2.0](/docs/en/software/rplus2/manager/) or [DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/#firmware-update))
 

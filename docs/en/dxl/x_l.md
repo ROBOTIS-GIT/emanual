@@ -4,7 +4,7 @@ lang: en
 ref: xl-series
 permalink: /docs/en/dxl/x_l/
 sidebar:
-  title: DYNAMIXEL XL Series
+  title: XL Series
   nav: ""
 ---
 

@@ -49,7 +49,6 @@ T/R/AT/AR represents protocol types as following:
 ### MX Series (2.0)
 
 MX series can use Protocol 2.0 by using a particular firmware version.
-
 - [MX-28T/R/AT/AR(2.0)](/docs/en/dxl/mx/mx-28-2/)
 - [MX-64T/R/AT/AR(2.0)](/docs/en/dxl/mx/mx-64-2/)
 - [MX-106T/R(2.0)](/docs/en/dxl/mx/mx-106-2/)

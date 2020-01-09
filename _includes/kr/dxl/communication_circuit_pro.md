@@ -15,11 +15,11 @@ Main Controller를 직접 제작하여 {% if page.product_group=='dxl_pro_plus' 
 커넥터의 핀 배열은 아래 그림과 같습니다. {% if page.product_group=='dxl_pro_plus' %}다이나믹셀-P 시리즈{% else %}다이나믹셀 PRO 시리즈{% endif %}에 있는 두 개의 4P 커넥터는 내부에서 서로 연결되어 있으므로 두 개 중 어떠한 커넥터에 연결해도 {% if page.product_group=='dxl_pro_plus' %}다이나믹셀-P 시리즈{% else %}다이나믹셀 PRO{% endif %} 시리즈를 구동시킬 수 있습니다. 또한, 2Pin 커넥터는 파워 커넥터 전용으로, 높은 전류를 사용할 때에는, 이 커넥터를 통해서 전원을 공급해주는 것을 권장합니다.
 
 {% if page.product_group=='dxl_pro_plus' %}
-![](/assets/images/dxl/pro_plus/pin_name.png)
+![](/assets/images/dxl/p/pin_name.png)
 
-![](/assets/images/dxl/pro_plus/connection.png)
+![](/assets/images/dxl/p/connection.png)
 
-![](/assets/images/dxl/pro_plus/wiring.png)
+![](/assets/images/dxl/p/wiring.png)
 {% else %}
 ![](/assets/images/dxl/pro/clip_image003.png)
 

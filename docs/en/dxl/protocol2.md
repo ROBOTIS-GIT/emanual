@@ -373,7 +373,7 @@ The field that indicates the processing result of Instruction Packet
 
 ### Description
 - This instruction resets certain information of DYNAMIXEL
-- Applied Products : MX with Protocol 2.0 (Firmware v42 or above), DYNAMIXEL X-series (Firmware v42 or above)
+- Applied Products : MX with Protocol 2.0 (Firmware v42 or above), DYNAMIXEL-X series (Firmware v42 or above)
 
 ### Parameters
 

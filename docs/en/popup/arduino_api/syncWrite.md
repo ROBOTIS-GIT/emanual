@@ -52,7 +52,7 @@ void setup() {
   dxl.begin(1000000);
   dxl.scan();
 
-  sync_write_param.addr = 104; //Goal Velocity of DYNAMIXEL X series
+  sync_write_param.addr = 104; //Goal Velocity of DYNAMIXEL-X series
   sync_write_param.length = 4;
   sync_write_param.xel[0].id = 1;
   sync_write_param.xel[1].id = 3;

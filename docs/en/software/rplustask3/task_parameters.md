@@ -522,12 +522,12 @@ The `Speed Value` control can be used to designate the rotation direction and po
   ![](/assets/images/sw/rplus_task3/task3_122.png)
 
 #### Profile Acceleration
-Read or write the Profile Acceleration of DYNAMIXEL X series.  
+Read or write the Profile Acceleration of DYNAMIXEL-X series.  
 Please refer to [Profile Acceleration(108)](/docs/en/dxl/x/xm430-w210/#profile-acceleration).  
 ![](/assets/images/sw/rplus_task3/task3_214.png)
 
 #### Profile Velocity
-Configure the maximum velocity of the profile when DYNAMIXEL X series is running under Position Control mode or Extended Position Control mode.  
+Configure the maximum velocity of the profile when DYNAMIXEL-X series is running under Position Control mode or Extended Position Control mode.  
 Please refer to [Profile Velocity(112)](/docs/en/dxl/x/xm430-w210/#profile-velocity).  
 ![](/assets/images/sw/rplus_task3/task3_215.png)
 

@@ -43,7 +43,7 @@ Adjust the signal interface so that you can communicate with your DYNAMIXEL by f
 **NOTE** : The X-Series' connector is different than the USB2DYNAMIXEL's connector. Please check [the connector types of X-Series](http://emanual.robotis.com/docs/en/dxl/x/xm430-w210/#connector-information).
 {: .notice}
 
-The SDK also supports the recently released [U2D2](http://emanual.robotis.com/docs/en/parts/interface/u2d2/). This interface features a small size and automatic conversion of TTL and RS485. We are using the same model connector as the latest DYNAMIXEL X-series, so we recommend this U2D2 to use the latest model DYNAMIXEL.
+The SDK also supports the recently released [U2D2](http://emanual.robotis.com/docs/en/parts/interface/u2d2/). This interface features a small size and automatic conversion of TTL and RS485. We are using the same model connector as the latest DYNAMIXEL-X series, so we recommend this U2D2 to use the latest model DYNAMIXEL.
 
 ![](/assets/images/parts/interface/u2d2_product.jpg)
 

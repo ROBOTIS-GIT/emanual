@@ -10,7 +10,7 @@ header:
   cta_url:
   caption:
   intro:
-    - excerpt: 'DYNAMIXEL XH Series'
+    - excerpt: 'XH Series'
 ---
 
 # 다이나믹셀 XH 시리즈

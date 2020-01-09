@@ -18,11 +18,11 @@ In this arrangement there's no priority in the connector order and {% if page.pr
 Additionally there is a 2-pin connector dedicated for power input for high-current operations.
 
 {% if page.product_group=='dxl_pro_plus' %}
-![](/assets/images/dxl/pro_plus/pin_name.png)
+![](/assets/images/dxl/p/pin_name.png)
 
-![](/assets/images/dxl/pro_plus/connection.png)
+![](/assets/images/dxl/p/connection.png)
 
-![](/assets/images/dxl/pro_plus/wiring.png)
+![](/assets/images/dxl/p/wiring.png)
 {% else %}
 ![](/assets/images/dxl/pro/clip_image003.png)
 

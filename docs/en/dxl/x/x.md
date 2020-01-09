@@ -4,7 +4,7 @@ lang: en
 ref: dxl_x
 permalink: /docs/en/dxl/x/
 sidebar:
-  title: DYNAMIXEL X
+  title: DYNAMIXEL-X
   nav: "dxl_x_main"
 ---
 
@@ -14,7 +14,7 @@ sidebar:
 
 ![](/assets/images/dxl/x/dxl_x_productline.png)
 
-> DYNAMIXEL X Series Lineups
+> DYNAMIXEL-X Series Lineups
 
 ## Basic Feature
 - Improved Torque, Compact Size.
@@ -37,7 +37,7 @@ sidebar:
   - PWM Control (Voltage Control Mode).
 
 
-# [DYNAMIXEL X](#dynamixel-x)
+# [DYNAMIXEL-X](#dynamixel-x)
 **Common Specifications**  
 - MCU : ARM CORTEX-M3 (72 \[MHz], 32Bit)  
 - Resolution : 4096 \[pulse/rev]  

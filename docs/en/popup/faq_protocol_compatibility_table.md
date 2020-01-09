@@ -38,7 +38,7 @@ Compatibility Key: O= Yes ; X= No ; * = User Action Required
 {% capture info_01 %}
 **INFO** : 
 - MX(2.0) Firmware is different from MX series control table and address.
-- MX(2.0) Firmware inherits Dynamixel X’s function.
+- MX(2.0) Firmware inherits DYNAMIXEL-X function.
 {% endcapture %}
 <div class="notice--info">{{ info_01| markdownify }}</div>
 

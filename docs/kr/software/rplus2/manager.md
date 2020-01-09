@@ -337,7 +337,7 @@ AX시리즈, MX시리즈, RX시리즈, DX시리즈, EX시리즈, CM-530, CM-510,
 
 [XL-320, XM시리즈, XH시리즈]: /docs/kr/dxl/x/
 [PRO시리즈]: /docs/kr/dxl/pro/
-[PRO+시리즈]: /docs/kr/dxl/pro_plus/
+[PRO+시리즈]: /docs/kr/dxl/p/
 [ROBOTIS DREAM]: /docs/kr/edu/
 [ROBOTIS SMART]: /docs/kr/edu/
 [ROBOTIS SMART2]: /docs/kr/edu/

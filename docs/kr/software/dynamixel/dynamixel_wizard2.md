@@ -710,11 +710,11 @@ sidebar:
 [L54-30-S500-R]: /docs/kr/dxl/pro/l54-30-s500-r/
 [L54-30-S400-R]: /docs/kr/dxl/pro/l54-30-s400-r/
 [L42-10-S300-R]: /docs/kr/dxl/pro/l42-10-s300-r/
-[PH42-020-S300-R]: /docs/kr/dxl/pro_plus/ph42-020-s300-r/
-[PH54-100-S500-R]: /docs/kr/dxl/pro_plus/ph54-100-s500-r/
-[PH54-200-S500-R]: /docs/kr/dxl/pro_plus/ph54-200-s500-r/
-[PM54-060-S250-R]: /docs/kr/dxl/pro_plus/pm54-060-s250-r/
-[PM54-040-S250-R]: /docs/kr/dxl/pro_plus/pm54-040-s250-r/
-[PM42-010-S260-R]: /docs/kr/dxl/pro_plus/pm42-010-s260-r/
+[PH42-020-S300-R]: /docs/kr/dxl/p/ph42-020-s300-r/
+[PH54-100-S500-R]: /docs/kr/dxl/p/ph54-100-s500-r/
+[PH54-200-S500-R]: /docs/kr/dxl/p/ph54-200-s500-r/
+[PM54-060-S250-R]: /docs/kr/dxl/p/pm54-060-s250-r/
+[PM54-040-S250-R]: /docs/kr/dxl/p/pm54-040-s250-r/
+[PM42-010-S260-R]: /docs/kr/dxl/p/pm42-010-s260-r/
 [RH-P12-RN]: /docs/kr/platform/rh_p12_rn/
 [RH-P12-RN(A)]: /docs/kr/platform/rh_p12_rna/

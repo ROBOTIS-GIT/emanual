@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_pro/specification/
 sidebar:
-  title: "[ROS1] OpenMANIPULATOR-PRO"
+  title: "[ROS] OpenMANIPULATOR-PRO"
   nav: "openmanipulator_pro"
 product_group: openmanipulator_pro
 page_number: 2
@@ -29,15 +29,13 @@ page_number: 2
 |            Weight             |                                                                                                                                                                                                     5 kg                                                                                                                                                                                                     |
 |       Operating voltage       |                                                                                                                                                                                                     24 V                                                                                                                                                                                                     |
 |          Resolution           | Joint 1 : -&pi;(rad) ~ &pi;(rad) , -501,923 ~ 501,923 (pulse)<br />Joint 2 : -&pi;(rad) ~ &pi;(rad) , -501,923 ~ 501,923 (pulse)<br />Joint 3 : -&pi;(rad) ~ &pi;(rad) , -501,923 ~ 501,923 (pulse)<br />Joint 4 : -&pi;(rad) ~ &pi;(rad) , -501,923 ~ 501,923 (pulse)<br />Joint 5 : -&pi;(rad) ~ &pi;(rad) , -303,750 ~ 303,750 (pulse)<br />Joint 6 : -&pi;(rad) ~ &pi;(rad) , -303,750 ~ 303,750 (pulse) |
-| DYNAMIXEL Pro<br />Model Name |                                                                              Joint 1, 2 : [PH54-200-S500-R](/docs/en/dxl/pro_plus/ph54-200-s500-r/) (200W)<br />Joint 3, 4 : [PH54-100-S500-R](/docs/en/dxl/pro_plus/ph54-100-s500-r/)(100W)<br />Joint 5, 6 : [PH42-020-S300-R](/docs/en/dxl/pro_plus/ph42-020-s300-r/) (20W)                                                                               |
+| DYNAMIXEL Pro<br />Model Name |                                                                                         Joint 1, 2 : [PH54-200-S500-R](/docs/en/dxl/p/ph54-200-s500-r/) (200W)<br />Joint 3, 4 : [PH54-100-S500-R](/docs/en/dxl/p/ph54-100-s500-r/)(100W)<br />Joint 5, 6 : [PH42-020-S300-R](/docs/en/dxl/p/ph42-020-s300-r/) (20W)                                                                                         |
 |        Operating Range        |                                                                                 Joint 1 : -&pi;(rad) ~ &pi;(rad)<br />Joint 2 : -&pi;/2(rad) ~ &pi;/2(rad)<br />Joint 3 : -&pi;/2(rad) ~ 3&pi;/4(rad)<br />Joint 4 : -&pi;(rad) ~ &pi;(rad)<br />Joint 5 : -&pi;/2(rad) ~ &pi;/2(rad)<br />Joint 6 : -&pi;(rad) ~ &pi;(rad)                                                                                  |
 |          Default ID           |                                                                                                                                                     Joint 1 (ID:1), Joint 2 (ID:2), Joint 3 (ID:3),<br />Joint 4 (ID:4), Joint 5 (ID:5), Joint 6 (ID:6)                                                                                                                                                      |
 |          Motor type           |                                                                                                                                                                     Brushless DC Servo(H54P Series),<br />Coreless DC Motor(H42P Series)                                                                                                                                                                     |
 |     Position sensor type      |                                                                                                                                                                     Absolute Encoder(for Homing),<br />Incremental Encoder(for Control)                                                                                                                                                                      |
 |        Communications         |                                                                                                                                                                                                    RS485                                                                                                                                                                                                     |
 |    Communication Baudrate     |                                                                                                                                                                                                 1000000 bps                                                                                                                                                                                                  |
-
-
 
 ## [Dimension](#dimension)
 ![](/assets/images/platform/openmanipulator_pro/dimension.png)
@@ -51,13 +49,11 @@ If you have a gripper([RH-P12-RN(A)](/docs/en/platform/rh_p12_rna/)), see below.
   
 ![](/assets/images/platform/openmanipulator_pro/ws2.png)  
 
-
 ## [Home Position](#home-position)
 
 The diagram below shows the “home position” of DYNAMIXEL-P from OpenMANIPULATOR-PRO.
 
 ![](/assets/images/platform/openmanipulator_pro/home_position.jpg)
-
 
 ## [D-H Configuration](#d-h-configuration)
 ![](/assets/images/platform/openmanipulator_pro/d_h_configuration.jpg)
