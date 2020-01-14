@@ -86,5 +86,5 @@ product_group: rh_p12_rn
 
 # [Compatible Products](#compatible-products)
 
-- [OpenMANIPULATOR-PRO](/docs/en/platform/openmanipulator_pro/ros_tool_applications/#ros-tool-application)  
+- [OpenMANIPULATOR-P](/docs/en/platform/openmanipulator_p/ros_tool_applications/#ros-tool-application)  
 - [OpenMANIPULATOR-H](/docs/en/platform/manipulator_h/introduction/)

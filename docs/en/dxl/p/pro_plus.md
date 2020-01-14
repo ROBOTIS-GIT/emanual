@@ -18,6 +18,8 @@ product_group: dxl_pro_plus
 
 > DYNAMIXEL-P Lineup
 
+{% include en/dxl/p/dxl_p_notice.md %}
+
 - **Integrated robot-driving device** : Contains all necessary features for robot joints integrated into a single module.
 
   ![](/assets/images/dxl/pro/dxl_pro_intro.gif)
@@ -49,10 +51,10 @@ product_group: dxl_pro_plus
 
 ## [Confirmation of Connection](#confirmation-of-connection)
 
-The LED of DYNAMIXEL pro flickers once if the power is supplied to DYNAMIXEL pro properly via wiring.
+The LED of DYNAMIXEL-P flickers once if the power is supplied to DYNAMIXEL-P properly via wiring.
 
 # [Drawing](#drawing)
-The output horn has been redesigned. Please refer to below comparisons between PRO and PRO+.
+The output horn has been redesigned. Please refer to below comparisons between DYNAMIXEL PRO and DYNAMIXEL-P series.
 
 ![](/assets/images/dxl/p/h54p_drawing.png)
 

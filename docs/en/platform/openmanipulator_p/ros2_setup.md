@@ -1,15 +1,15 @@
 ---
 layout: archive
 lang: en
-ref: ros2_openmanipulator_pro_ros_setup
+ref: ros2_openmanipulator_p_ros_setup
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/openmanipulator_pro/ros2_setup/
+permalink: /docs/en/platform/openmanipulator_p/ros2_setup/
 sidebar:
-  title: "OpenMANIPULATOR-PRO"
-  nav: "openmanipulator_pro"
-product_group: openmanipulator_pro
+  title: "OpenMANIPULATOR-P"
+  nav: "openmanipulator_p"
+product_group: openmanipulator_p
 page_number: 9
 ---
 
@@ -20,7 +20,7 @@ page_number: 9
 {% capture notice_01 %}
 **NOTE** :  
 - The test is done on `ROS 2 Dashing Diademata` installed in `Ubuntu 18.04`.
-- Make sure ROS dependencies are installed before performing these instructions. - [Install ROS 2 Packages](/docs/en/platform/openmanipulator_pro/ros2_setup/#install-ros-2-packages).
+- Make sure ROS dependencies are installed before performing these instructions. - [Install ROS 2 Packages](/docs/en/platform/openmanipulator_p/ros2_setup/#install-ros-2-packages).
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -33,9 +33,9 @@ Download and install `Ubuntu 18.04` on your PC. Tutoral guide will be helpful fo
 
 ## [Install ROS 2 on PC](#install-ros2-on-pc)
 
-![](/assets/images/platform/openmanipulator_pro/logo_ros.png)
+![](/assets/images/platform/openmanipulator_p/logo_ros.png)
 
-As OpenMANIPULATOR-PRO operates on Ronbot Operating System(ROS), it requies to intall `ROS 2 Dashing Diademata`.
+As OpenMANIPULATOR-P operates on Robot Operating System(ROS), it requies to intall `ROS 2 Dashing Diademata`.
 The following script will allow you to simplify the ROS 2 installation procedure. Run the following commands in a terminal window. After installing ROS 2, please reboot PC.
 
 **NOTE**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`+`Alt`+`t`.
@@ -53,7 +53,7 @@ If you prefer a manual installation, following link guides you how to install RO
 
 ## [Install ROS 2 Packages](#install-ros-2-packages)
 
-Install dependent packages for OpenMANIPULATOR-PRO. Run the following commands in a terminal window.
+Install dependent packages for OpenMANIPULATOR-P. Run the following commands in a terminal window.
 
 
 ``` bash
@@ -76,7 +76,7 @@ $ cd ~/robotis_ws && colcon build --symlink-install
 ### [U2D2](#u2d2)
 
 #### Connection
-Connect micro USB (connected to PC), DYNAMIXEL's(OpenMANIPULATOR-PRO), and 12V Power to U2D2 and U2D2 power hub board as shown below.
+Connect micro USB (connected to PC), DYNAMIXEL's(OpenMANIPULATOR-P), and 12V Power to U2D2 and U2D2 power hub board as shown below.
 
 **NOTE** : Please refer to [U2D2 e-Manual](/docs/en/parts/interface/u2d2/) and [U2D2 power hub board e-manual](/docs/en/parts/interface/u2d2_power_hub/) for detailed connection of U2D2 and U2D2 power hub board.
 {: .notice--info}

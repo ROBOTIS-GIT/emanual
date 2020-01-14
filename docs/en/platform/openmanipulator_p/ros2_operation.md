@@ -1,15 +1,15 @@
 ---
 layout: archive
 lang: en
-ref: ros2_openmanipulator_pro_ros_operation
+ref: ros2_openmanipulator_p_ros_operation
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/openmanipulator_pro/ros2_operation/
+permalink: /docs/en/platform/openmanipulator_p/ros2_operation/
 sidebar:
-  title: "OpenMANIPULATOR-PRO"
-  nav: "openmanipulator_pro"
-product_group: openmanipulator_pro
+  title: "OpenMANIPULATOR-P"
+  nav: "openmanipulator_p"
+product_group: openmanipulator_p
 page_number: 11
 ---
 
@@ -26,8 +26,8 @@ page_number: 11
 {% capture notice_01 %}
 **NOTE**:
 - The test is done on `ROS 2 Dashing Diademata` installed in `Ubuntu 18.04`.
-- Make sure ROS dependencies are installed before performing these instructions. - [Install ROS 2 Packages](/docs/en/platform/openmanipulator_pro/ros2_setup/#install-ros-2-packages).
-- Make sure to run the [OpenMANIPULATOR-PRO controller](/docs/en/platform/openmanipulator_pro/ros2_controller_package/#launch-controller) instructions before use of the instruction
+- Make sure ROS dependencies are installed before performing these instructions. - [Install ROS 2 Packages](/docs/en/platform/openmanipulator_p/ros2_setup/#install-ros-2-packages).
+- Make sure to run the [OpenMANIPULATOR-P controller](/docs/en/platform/openmanipulator_p/ros2_controller_package/#launch-controller) instructions before use of the instruction
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -95,7 +95,7 @@ Connect PS4 joystick to the PC via Bluetooth using the following command
 $ sudo ds4drv
 ```
 
-Enter pairing mode with PS4 by pressing and holding Playstation button + share button for 10 sec. If the light on PS4 turns blue, enter the following commands in terminal and control OpenMANIPULATOR-PRO.
+Enter pairing mode with PS4 by pressing and holding Playstation button + share button for 10 sec. If the light on PS4 turns blue, enter the following commands in terminal and control OpenMANIPULATOR-P.
 
 ``` bash
 $ ros2 run joy joy_node

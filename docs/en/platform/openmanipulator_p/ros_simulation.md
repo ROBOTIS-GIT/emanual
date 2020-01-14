@@ -1,15 +1,15 @@
 ---
 layout: archive
 lang: en
-ref: openmanipulator_pro_ros_simulation
+ref: openmanipulator_p_ros_simulation
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/openmanipulator_pro/ros_simulation/
+permalink: /docs/en/platform/openmanipulator_p/ros_simulation/
 sidebar:
-  title: "OpenMANIPULATOR-PRO"
-  nav: "openmanipulator_pro"
-product_group: openmanipulator_pro
+  title: "OpenMANIPULATOR-P"
+  nav: "openmanipulator_p"
+product_group: openmanipulator_p
 page_number: 7
 ---
 
@@ -21,7 +21,7 @@ page_number: 7
 **NOTE**:
 - The test is done on `ROS Kinetic Kame` installed in `Ubuntu 16.04`.
 - The test is done on `ROS Melodic Morenia`installed in `Ubuntu 18.04`.
-- Make sure ROS dependencies are installed before performing these instructions - [Install ROS Packages](/docs/en/platform/openmanipulator_pro/ros_setup/#install-ros-packages)
+- Make sure ROS dependencies are installed before performing these instructions - [Install ROS Packages](/docs/en/platform/openmanipulator_p/ros_setup/#install-ros-packages)
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -33,7 +33,7 @@ Load OpenManipulator-PRO on Gazebo simulator and click on Play `▶` button.
   $ roslaunch open_manipulator_pro_gazebo open_manipulator_pro_gazebo.launch
   ```
 
-  ![](/assets/images/platform/openmanipulator_pro/launch_gazebo.png)
+  ![](/assets/images/platform/openmanipulator_p/launch_gazebo.png)
 
 Enter `rostopic list` to list up the activated topics.
 
@@ -105,7 +105,7 @@ Joint Dynamixel ID : 5, Model Name : PRO-PLUS-PH42-020-S300-R
 Joint Dynamixel ID : 6, Model Name : PRO-PLUS-PH42-020-S300-R  
 {: .notice--info}
 
-Open an [open_manipulator_pro_control_gui](/docs/en/platform/openmanipulator_pro/ros_operation/#gui-program) to control OpenMANIPULATOR-PRO
+Open an [open_manipulator_pro_control_gui](/docs/en/platform/openmanipulator_p/ros_operation/#gui-program) to control OpenMANIPULATOR-P
 
 [OpenCR]: /docs/en/parts/controller/opencr10/
 [OpenCR Manual]: /docs/en/parts/controller/opencr10/

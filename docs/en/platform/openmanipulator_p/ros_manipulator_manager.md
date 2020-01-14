@@ -1,17 +1,19 @@
 ---
 layout: archive
 lang: en
-ref: ros2_openmanipulator_pro_ros_manipulator_manager
+ref: openmanipulator_p_ros_manipulator_manager
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/openmanipulator_pro/ros2_manipulator_manager/
+permalink: /docs/en/platform/openmanipulator_p/ros_manipulator_manager/
 sidebar:
-  title: "OpenMANIPULATOR-PRO"
-  nav: "openmanipulator_pro"
+  title: "OpenMANIPULATOR-P"
+  nav: "openmanipulator_p"
 ---
 
-# [[ROS 2] Manipulator Manager](#ros-manipulator-manager)
+<div style="counter-reset: h1 4"></div>
+
+# [[ROS] Manipulator Manager](#ros-manipulator-manager)
 
 {% capture notice_01 %}
 **NOTE**:
@@ -82,7 +84,7 @@ If you have a gripper([RH-P12-RN(A)](/docs/en/platform/rh_p12_rna/)), see below.
 ```
 $ roslaunch open_manipulator_pro_bringup open_manipulator_pro.launch with_gripper:=true
 ```
-![](/assets/images/platform/openmanipulator_pro/rviz.png)
+![](/assets/images/platform/openmanipulator_p/rviz.png)
 
 ## [Message List](#message-list)
 ### [Topic](#topic)

@@ -87,8 +87,8 @@ product_group: rh_p12_rn
 
 # [호환 제품](#호환-제품)
 
-- [OpenMANIPULATOR-PRO](/docs/en/platform/openmanipulator_pro/ros_tool_applications/#ros-tool-application)  
+- [OpenMANIPULATOR-P](/docs/en/platform/openmanipulator_p/ros_tool_applications/#ros-tool-application)  
 - [OpenMANIPULATOR-H](/docs/en/platform/manipulator_h/introduction/)
 
-**참고** : OpenMANIPULATOR-H, OpenMANIPULATOR-PRO 는 영문 e-Manual만 지원됩니다.
+**참고** : OpenMANIPULATOR-H, OpenMANIPULATOR-P 는 영문 e-Manual만 지원됩니다.
 {: .notice--info}

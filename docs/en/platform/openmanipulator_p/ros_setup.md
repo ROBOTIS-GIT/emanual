@@ -1,15 +1,15 @@
 ---
 layout: archive
 lang: en
-ref: openmanipulator_pro_ros_setup
+ref: openmanipulator_p_ros_setup
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/openmanipulator_pro/ros_setup/
+permalink: /docs/en/platform/openmanipulator_p/ros_setup/
 sidebar:
-  title: "OpenMANIPULATOR-PRO"
-  nav: "openmanipulator_pro"
-product_group: openmanipulator_pro
+  title: "OpenMANIPULATOR-P"
+  nav: "openmanipulator_p"
+product_group: openmanipulator_p
 page_number: 4
 ---
 
@@ -21,7 +21,7 @@ page_number: 4
 **NOTE** : 
 - The test is done on `ROS Kinetic Kame` installed in `Ubuntu 16.04`.
 - The test is done on `ROS Melodic Morenia`installed in `Ubuntu 18.04`.
-- Make sure ROS dependencies are installed before performing these instructions - [Install ROS Packages](/docs/en/platform/openmanipulator_pro/ros_setup/#install-ros-packages)
+- Make sure ROS dependencies are installed before performing these instructions - [Install ROS Packages](/docs/en/platform/openmanipulator_p/ros_setup/#install-ros-packages)
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -34,7 +34,7 @@ Download and install `Ubuntu 16.04` or `Ubuntu 18.04` on your a PC.
 
 ## [Install ROS on PC](#install-ros-on-pc)
 
-![](/assets/images/platform/openmanipulator_pro/logo_ros.png)
+![](/assets/images/platform/openmanipulator_p/logo_ros.png)
 
 The following script will allow you to simplify the ROS installation procedure. Run the following commands in a terminal window. The terminal application can be found with the Ubuntu search icon on the left side of the corner on a screen. The shortcut key to open a terminal is `Ctrl`+`Alt`+`t`. After installing ROS, please reboot PC.
 
@@ -73,7 +73,7 @@ If you prefer manual installation, please follow the link below.
 
 ## [Install ROS Packages](#install-ros-packages)
 
-Install dependent packages for OpenMANIPULATOR-PRO. Run the following commands in a terminal window.
+Install dependent packages for OpenMANIPULATOR-P. Run the following commands in a terminal window.
 
 **NOTE**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`+`Alt`+`t`.
 {: .notice--info} 
@@ -118,17 +118,20 @@ $ git clone https://github.com/ROBOTIS-GIT/robotis_manipulator.git
 $ cd ~/catkin_ws && catkin_make
 ```
 
-If the catkin_make command has been completed without any errors, all the preparations for using OpenMANIPULATOR-PRO are done.
+If the catkin_make command has been completed without any errors, all the preparations for using OpenMANIPULATOR-P are done.
 
 ## [Communication Converter](#communication-converter)
 
 ### [U2D2](#u2d2)
 
-#### Connection
-Connect micro USB (connected to PC), DYNAMIXEL's(OpenMANIPULATOR-PRO), and 12V Power to U2D2 and U2D2 power hub board as shown below.
+U2D2 is a small size USB communication converter that enables to control and operate DYNAMIXEL with PC.
 
-**NOTE** : Please refer to [U2D2 e-Manual](/docs/en/parts/interface/u2d2/) and [U2D2 power hub board e-manual](/docs/en/parts/interface/u2d2_power_hub/) for detailed connection of U2D2 and U2D2 power hub board.
-{: .notice--info}
+#### Connection
+
+In order to connect a PC to DYNAMIXEL, use U2D2. Be sure to read the following instruction for the right use of the product. 
+
+- [U2D2](/docs/en/parts/interface/u2d2/)
+- [U2D2 power hub board](/docs/en/parts/interface/u2d2_power_hub/)
 
 #### USB Latency Timer Setting
 In Linux(Ubuntu platform) environment, USB latency time is set to 16ms by default. Follow the steps below to set the communication latency time to the lowest value (1ms) between DYNAMIXEL's and PC connected via USB.

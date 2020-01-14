@@ -1,15 +1,15 @@
 ---
 layout: archive
 lang: en
-ref: ros2_openmanipulator_pro_ros_simulation
+ref: ros2_openmanipulator_p_ros_simulation
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/openmanipulator_pro/ros2_simulation/
+permalink: /docs/en/platform/openmanipulator_p/ros2_simulation/
 sidebar:
-  title: "OpenMANIPULATOR-PRO"
-  nav: "openmanipulator_pro"
-product_group: openmanipulator_pro
+  title: "OpenMANIPULATOR-P"
+  nav: "openmanipulator_p"
+product_group: openmanipulator_p
 page_number: 12
 ---
 

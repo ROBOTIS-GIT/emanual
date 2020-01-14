@@ -18,6 +18,8 @@ product_group: dxl_pro_plus
 
 > 다이나믹셀-P 라인업
 
+{% include kr/dxl/p/dxl_p_notice.md %}
+
 - **일체형 로봇 구동장치** : 로봇의 관절에 필요한 기능을 하나의 모듈로 만들었습니다.
 
   ![](/assets/images/dxl/pro/dxl_pro_intro_kr.gif)

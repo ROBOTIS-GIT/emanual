@@ -1,15 +1,15 @@
 ---
 layout: archive
 lang: en
-ref: openmanipulator_pro_ros_operation
+ref: openmanipulator_p_ros_operation
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/openmanipulator_pro/ros_operation/
+permalink: /docs/en/platform/openmanipulator_p/ros_operation/
 sidebar:
-  title: "OpenMANIPULATOR-PRO"
-  nav: "openmanipulator_pro"
-product_group: openmanipulator_pro
+  title: "OpenMANIPULATOR-P"
+  nav: "openmanipulator_p"
+product_group: openmanipulator_p
 page_number: 6
 ---
 
@@ -23,44 +23,44 @@ page_number: 6
 **NOTE**:
 - The test is done on `ROS Kinetic Kame` installed in `Ubuntu 16.04`.
 - The test is done on `ROS Melodic Morenia`installed in `Ubuntu 18.04`.
-- Make sure ROS dependencies are installed before performing these instructions - [Install ROS Packages](/docs/en/platform/openmanipulator_pro/ros_setup/#install-ros-packages)
-- Make sure to run the [OpenMANIPULATOR-PRO controller](/docs/en/platform/openmanipulator_pro/ros_controller_package/#launch-controller) instructions before running the instruction below.
+- Make sure ROS dependencies are installed before performing these instructions - [Install ROS Packages](/docs/en/platform/openmanipulator_p/ros_setup/#install-ros-packages)
+- Make sure to run the [OpenMANIPULATOR-P controller](/docs/en/platform/openmanipulator_p/ros_controller_package/#launch-controller) instructions before running the instruction below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-You can use the GUI program to manipulate OpenMANIPULATOR-PRO. Launch `open_manipulator_pro_control_gui` node. This program shows the status of and allows users to control OpenMANIPULATOR-PRO.
+You can use the GUI program to manipulate OpenMANIPULATOR-P. Launch `open_manipulator_pro_control_gui` node. This program shows the status of and allows users to control OpenMANIPULATOR-P.
 
 ```bash
 $ roslaunch open_manipulator_pro_control_gui open_manipulator_pro_control_gui.launch
 ```
 
-  To controll OpenMANIPULATOR-PRO, first click the `Timer Start` button.  
+  To controll OpenMANIPULATOR-P, first click the `Timer Start` button.  
   
-  ![](/assets/images/platform/openmanipulator_pro/OpenManipulator_GUI.png) 
+  ![](/assets/images/platform/openmanipulator_p/OpenManipulator_GUI.png) 
 
-  Check the status of the OpenMANIPULATOR-PRO (joint states, kinematics pose).  
+  Check the status of the OpenMANIPULATOR-P (joint states, kinematics pose).  
   
-  ![](/assets/images/platform/openmanipulator_pro/OpenManipulator_GUI2.png) 
+  ![](/assets/images/platform/openmanipulator_p/OpenManipulator_GUI2.png) 
   
-  To manipulate the OpenMANIPULATOR-PRO in the [joint space]{: .popup}. Enter the joint angles and total time of the trajectory. Then click the `send` button.  
+  To manipulate the OpenMANIPULATOR-P in the [joint space]{: .popup}. Enter the joint angles and total time of the trajectory. Then click the `send` button.  
   
-  ![](/assets/images/platform/openmanipulator_pro/OpenManipulator_GUI3.png)  
+  ![](/assets/images/platform/openmanipulator_p/OpenManipulator_GUI3.png)  
 
-  To manipulate the OpenMANIPULATOR-PRO in the [task space]{: .popup}. Enter the kinematics pose of the OpenMANIPULATOR-PRO end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory. Then click the `send` button.  
+  To manipulate the OpenMANIPULATOR-P in the [task space]{: .popup}. Enter the kinematics pose of the OpenMANIPULATOR-P end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory. Then click the `send` button.  
   
-  ![](/assets/images/platform/openmanipulator_pro/OpenManipulator_GUI4.png)    
+  ![](/assets/images/platform/openmanipulator_p/OpenManipulator_GUI4.png)    
 
-  To create a drawing trajectory with OpenMANIPULATOR-PRO. First, choose the drawing trajectory type(line, circle, rhombus, heart). And enter the parameters according to the drawing trajectory type and the total time of the drawing trajectory. Then click the `send` button.  
+  To create a drawing trajectory with OpenMANIPULATOR-P. First, choose the drawing trajectory type(line, circle, rhombus, heart). And enter the parameters according to the drawing trajectory type and the total time of the drawing trajectory. Then click the `send` button.  
     
-  ![](/assets/images/platform/openmanipulator_pro/OpenManipulator_GUI5.png) 
+  ![](/assets/images/platform/openmanipulator_p/OpenManipulator_GUI5.png) 
 
 ## [Teleoperation](#teleoperation)
 {% capture notice_01 %}
 **NOTE**:
 - The test is done on `ROS Kinetic Kame` installed in `Ubuntu 16.04`.
 - The test is done on `ROS Melodic Morenia`installed in `Ubuntu 18.04`.
-- Make sure ROS dependencies are installed before performing these instructions - [Install ROS Packages](/docs/en/platform/openmanipulator_pro/ros_setup/#install-ros-packages)
-- Make sure to run [OpenMANIPULATOR-PRO controller](/docs/en/platform/openmanipulator_pro/ros-controller-package/#launch-controller) instructions before use of the instruction
+- Make sure ROS dependencies are installed before performing these instructions - [Install ROS Packages](/docs/en/platform/openmanipulator_p/ros_setup/#install-ros-packages)
+- Make sure to run [OpenMANIPULATOR-P controller](/docs/en/platform/openmanipulator_p/ros-controller-package/#launch-controller) instructions before use of the instruction
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -129,7 +129,7 @@ Connect PS4 joystick to the PC via Bluetooth using the following command
 $ sudo ds4drv
 ```
 
-Enter pairing mode with PS4 by pressing and holding Playstation button + share button for 10 sec. If the light on PS4 turns blue, enter the following commands in terminal and control OpenMANIPULATOR-PRO.
+Enter pairing mode with PS4 by pressing and holding Playstation button + share button for 10 sec. If the light on PS4 turns blue, enter the following commands in terminal and control OpenMANIPULATOR-P.
 
 ``` bash
 $ export ROS_NAMESPACE=/open_manipulator_pro
@@ -211,10 +211,10 @@ After setting all the parameters, launch the open_manipulator_pro_controller.
   ```
 
 **Warning!**     
-When launching the controller to use MoveIt!, [OpenMANIPULATOR-PRO launch file](/docs/en/platform/openmanipulator_pro/ros_controller_package/#launch-controller) must be turned off.
+When launching the controller to use MoveIt!, [OpenMANIPULATOR-P launch file](/docs/en/platform/openmanipulator_p/ros_controller_package/#launch-controller) must be turned off.
 {: .notice--warning}
 
-  ![](/assets/images/platform/openmanipulator_pro/moveit_launch.png)  
+  ![](/assets/images/platform/openmanipulator_p/moveit_launch.png)  
   
 **Service Server List** :
 A list of MoveIt!-related service server that open_manipulator_pro_controller has.
@@ -229,7 +229,7 @@ The user can use this service to receive a kinematics pose which is calculated b
 The user can use this service to create a trajectory in the [joint space]{: .popup} by move_group. The user inputs the angle of the target joint and the total time of the trajectory.
 
 - `/open_manipulator_pro/moveit/set_kinematics_pose` ([open_manipulator_pro_msgs/SetKinematicsPose]{: .popup})  
-The user can use this service to create a trajectory in the [task space]{: .popup} by move_group. The user inputs the kinematics pose(orientation only) of the OpenMANIPULATOR-PRO end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
+The user can use this service to create a trajectory in the [task space]{: .popup} by move_group. The user inputs the kinematics pose(orientation only) of the OpenMANIPULATOR-P end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
 
 **TIP**: If you would like to use inverse kinematics with `position_only`, check `open_manipulator_pro_moveit` -> `config` -> `kinematics.yaml` and set `position_only_ik` parameter to **True**.
 {: .notice--success}

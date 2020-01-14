@@ -11,8 +11,6 @@ sidebar:
   nav: "openmanipulator"
 ---
 
-
-
 # 오픈매니퓰레이터-X
 
 ![](/assets/images/platform/openmanipulator_x/OpenManipulator.resized.png)
@@ -42,22 +40,22 @@ sidebar:
 | **Software**        | -       | ROS, 다이나믹셀 SDK, Arduino, Processing              |
 | **Main Controller** | -       | PC, OpenCR                                            |
 
-# 오픈매니퓰레이터-PRO
+# 오픈매니퓰레이터-P
 
-![](/assets/images/platform/openmanipulator_pro/logo.png)  
+![](/assets/images/platform/openmanipulator_p/logo.png)  
 
-<img src="/assets/images/platform/openmanipulator_pro/product_img.png" width="1250">  
+<img src="/assets/images/platform/openmanipulator_p/product_img.png" width="1250">  
 
 
-OpenMANIPULATOR-PRO는 현재 영문으로만 지원되고 있습니다. [영문 e매뉴얼의 OpenMANIPULATOR-PRO]를 이용하시기 바랍니다.
+OpenMANIPULATOR-P는 현재 영문으로만 지원되고 있습니다. [영문 e매뉴얼의 OpenMANIPULATOR-P]를 이용하시기 바랍니다.
 {: .notice--warning}
 
-[영문 e매뉴얼의 오픈매니퓰레이터-PRO]: /docs/en/platform/openmanipulator_pro/overview/
+[영문 e매뉴얼의 오픈매니퓰레이터-P]: /docs/en/platform/openmanipulator_p/overview/
 
 
 ## 주요 사양
 
-|              Item              |                                                                                                                                                                                        OpenMANIPULATOR-PRO RM-P60-RNH                                                                                                                                                                                        |
+|              Item              |                                                                                                                                                                                        OpenMANIPULATOR-P(RM-P60-RNH)                                                                                                                                                                                        |
 |:------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 |              DOF               |                                                                                                                                                                                                      6                                                                                                                                                                                                       |
 |            Payload             |                                                                                                                                                                                                     3 kg                                                                                                                                                                                                     |
