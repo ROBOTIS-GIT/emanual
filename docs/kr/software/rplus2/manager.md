@@ -30,6 +30,9 @@ V2.0.0 기준으로 지원 제품이 한정됩니다. 지원 제품 목록에 �
 - 로보티즈 미니
 - 다이나믹셀 2.0 시리즈 (MX-28, MX-64, MX-106, XL-320, XM시리즈, XH시리즈, PRO시리즈)
 
+**참고**: [다이나믹셀 위자드 2.0]은 모든 다이나믹셀을 지원합니다. 다이나믹셀 설정 또는 펌웨어 복구 및 업데이트시, 다이나믹셀 위자드 2.0을 사용하세요.
+{: .notice}
+
 ![](/assets/images/sw/rplus2/manager/rplusmanager2_02_kr.jpg)
 
 ## [펌웨어 정의](#펌웨어-정의)
@@ -309,7 +312,7 @@ BT-210, BT-110을 이용하면 무선으로 펌웨어 관리를 진행하실 수
 - [ROBOTIS SMART2]
 - [ROBOTIS IoT]
 - [ROBOTIS MINI]
-- 다이나믹셀 2.0 시리즈 ([XL-320, XM시리즈, XH시리즈] / [PRO시리즈] / [PRO+시리즈])
+- 다이나믹셀 2.0 시리즈 ([XL-320, XM 시리즈, XH 시리즈] / [PRO 시리즈] / [P 시리즈])
 - 그 외 [CM-150, CM-200, OpenCM9.04, OpenCM7.0]을 사용하여 만든 사용자 로봇
 
 AX시리즈, MX시리즈, RX시리즈, DX시리즈, EX시리즈, CM-530, CM-510, CM-700, CM-100A는 지원하지 않습니다. (V2.0.0 기준)  
@@ -335,9 +338,9 @@ AX시리즈, MX시리즈, RX시리즈, DX시리즈, EX시리즈, CM-530, CM-510,
 - 다이나믹셀의 ID가 겹칠 경우 동작이 원활하지 않을 수 있습니다.
 - 더 자세한 사항은 고객지원 또는 Q&A게시판으로 문의바랍니다.
 
-[XL-320, XM시리즈, XH시리즈]: /docs/kr/dxl/x/
-[PRO시리즈]: /docs/kr/dxl/pro/
-[PRO+시리즈]: /docs/kr/dxl/p/
+[XL-320, XM 시리즈, XH 시리즈]: /docs/kr/dxl/x/
+[PRO 시리즈]: /docs/kr/dxl/pro/
+[P 시리즈]: /docs/kr/dxl/p/
 [ROBOTIS DREAM]: /docs/kr/edu/
 [ROBOTIS SMART]: /docs/kr/edu/
 [ROBOTIS SMART2]: /docs/kr/edu/
@@ -346,3 +349,4 @@ AX시리즈, MX시리즈, RX시리즈, DX시리즈, EX시리즈, CM-530, CM-510,
 [CM-150, CM-200, OpenCM9.04, OpenCM7.0]: /docs/kr/parts/controller/controller_compatibility/
 [USB 드라이버 설치]: /docs/kr/popup/usb_driver_install/
 [LN-101 드라이버 설치]: /docs/kr/parts/interface/ln-101/#드라이버-설치-확인
+[다이나믹셀 위자드 2.0]: /docs/kr/software/dynamixel/dynamixel_wizard2/

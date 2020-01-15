@@ -13,9 +13,9 @@ sidebar:
 
 # [개요](#개요)
 
-- 프로토콜 2.0을 지원하는 다이나믹셀: MX-28, MX-64, MX-106(펌웨어 v39 이상), X 시리즈, PRO 시리즈
-- 프로토콜 2.0을 지원하는 제어기: CM-150, CM-200, OpenCM9.04, OpenCR
-- 프로토콜 2.0을 지원하는 소프트웨어: 로보플러스 스마트 앱, 로보플러스 2.0
+- 프로토콜 2.0을 지원하는 다이나믹셀: MX-28, MX-64, MX-106(펌웨어 v39 이상), X 시리즈, PRO 시리즈, P 시리즈.
+- 프로토콜 2.0을 지원하는 제어기: CM-50, CM-150, CM-200, OpenCM7.0, OpenCM9.04, CM-550, OpenCR
+- 프로토콜 2.0을 지원하는 소프트웨어: 로보플러스 스마트 앱, 로보플러스 2.0, 로보플러스 3.0
 
 # [Instruction Packet](#instruction-packet)
 Instruction Packet은 Main Controller가 장치(Device)로 보내는 명령 데이터 입니다.

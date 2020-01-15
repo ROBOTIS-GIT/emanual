@@ -27,6 +27,8 @@ page_number: 4
 {% endcapture %}
 <div class="notice--warning">{{ package_warning | markdownify }}</div>  
 
+{% include en/dxl/p/dxl_p_notice.md %}
+
 ### [thormang3_manager](#thormang3-manager)
 
 `thormang3_manager` is a package to apply ROBOTIS Framework to THORMANG3. Refer to the below link to create a new robot manager.

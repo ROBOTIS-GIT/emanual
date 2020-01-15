@@ -25,7 +25,7 @@ page_number: 1
 
 ## [RH-P12-RN(A)](#rh-p12-rna)
 - It uses improved firmware version compared to RH-P12-RN.
-- It has the similar control table structure to **DYNAMIXEL-PRO(A)** and **PRO+** series, so that they can be used together.
+- It has the similar control table structure to **DYNAMIXEL-PRO(A)** and **DYNAMIXEL-P** series, so that they can be used together.
 - More information is available at [RH-P12-RN(A)](/docs/en/platform/rh_p12_rna/) manual. 
 
 You can choose the desired firmware version by using **Firmware Recovery** of [R+Manager 2.0](/docs/en/software/rplus2/manager/#firmware-recovery) or [DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/#firmware-recovery)

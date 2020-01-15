@@ -133,6 +133,9 @@ ROBOTIS recommends users to connect with THROMANG3 via SSH client.
 **CAUTION** : The command differs depending on the version of ROBOTIS THORMANG3.  
 {% endcapture %}
 <div class="notice--warning">{{ package_warning | markdownify }}</div>  
+
+{% include en/dxl/p/dxl_p_notice.md %}
+
 1. Connect to the MPC with SSH client program (IP: 10.17.3.30)  
     ```
     $ ssh 10.17.3.30 -l robotis
@@ -218,6 +221,9 @@ Please check the IMU version and the `thormang3 manager.launch` file before runn
 **CAUTION** : The command differs depending on the version of ROBOTIS THORMANG3.  
 {% endcapture %}
 <div class="notice--warning">{{ package_warning | markdownify }}</div>  
+
+{% include en/dxl/p/dxl_p_notice.md %}
+
 1. Connect to the MPC with SSH client program (IP: 10.17.3.30)  
     ```
     $ ssh 10.17.3.30 -l robotis

@@ -13,8 +13,8 @@ sidebar:
 
 # [Introduction](#introduction)
 
-- Protocol 2.0 supported devices: MX-28, MX-64, MX-106(MX Series with Firmware V39 or above), X Series, DYNAMIXEL Pro
-- Protocol 2.0 supported controllers: CM-150, CM-200, OpenCM9.04, OpenCR
+- Protocol 2.0 supported devices: MX-28, MX-64, MX-106(MX Series with Firmware V39 or above), X Series, PRO Series, P Series. 
+- Protocol 2.0 supported controllers: CM-50, CM-150, CM-200, OpenCM7.0, OpenCM9.04, CM-550, OpenCR
 - Other: 2.0 protocol from R+ Smart app
 
 **TIP** : Users can refer to ROBOTIS Protocol [Compatibility Table]{: .popup} with reference.

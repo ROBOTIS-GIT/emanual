@@ -142,18 +142,18 @@ This is A firmware version (Advanced firmware) of DYNAMIXEL PRO.
 **NOTE**: In order to update DYNAMIXEL PRO model to A Firmware version, use [Firmware Recovery](/docs/en/software/dynamixel/dynamixel_wizard2/#firmware-recovery) of DYNAMIXEL Wizard 2.0.  
 {: .notice}
 
-# [DYNAMIXEL-P](#DYNAMIXEL-p)
+# [DYNAMIXEL-P](#dynamixel-p)
 
 ## [PH Series](#ph-series)
 
 |                                                         PH54                                                          |                           PH42                           |
 |:---------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------:|
-|                                 ![](/assets/images/dxl/pro_plus/ph54-200-s500-r.png)                                  |   ![](/assets/images/dxl/pro_plus/ph42-020-s300-r.png)   |
+|                                     ![](/assets/images/dxl/p/ph54-200-s500-r.png)                                     |      ![](/assets/images/dxl/p/ph42-020-s300-r.png)       |
 | [PH54-200-S500-R](/docs/en/dxl/pro_plus/ph54-200-s500-r)<br>[PH54-100-S500-R](/docs/en/dxl/pro_plus/ph54-100-s500-r/) | [PH42-020-S300-R](/docs/en/dxl/pro_plus/ph42-020-s300-r) |
 
 ## [PM Series](#pm-series)
 
 |                                                          PM54                                                          |                           PM42                            |
 |:----------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------:|
-|                                  ![](/assets/images/dxl/pro_plus/pm54-040-s250-r.png)                                  |   ![](/assets/images/dxl/pro_plus/pm42-010-s260-r.png)    |
+|                                     ![](/assets/images/dxl/p/pm54-040-s250-r.png)                                      |       ![](/assets/images/dxl/p/pm42-010-s260-r.png)       |
 | [PM54-060-S250-R](/docs/en/dxl/pro_plus/pm54-060-s250-r/)<br>[PM54-040-S250-R](/docs/en/dxl/pro_plus/pm54-040-s250-r/) | [PM42-010-S260-R](/docs/en/dxl/pro_plus/pm42-010-s260-r/) |

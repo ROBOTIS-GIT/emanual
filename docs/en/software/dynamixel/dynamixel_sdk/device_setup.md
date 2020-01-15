@@ -126,7 +126,7 @@ The SDK and SDK examples were developed based on the MX-28 and H54-200 PRO DYNAM
 
 SDK examples were tested with the following DYNAMIXEL's: 
 
-|              | AX  | EX  | RX  | MX  | MX  |  X  |  X  | PRO | PRO+ |
+|              | AX  | EX  | RX  | MX  | MX  |  X  |  X  | PRO | P |
 |:------------:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:----:|
 | **Protocol** | 1.0 | 1.0 | 1.0 | 1.0 | 2.0 | 1.0 | 2.0 | 2.0 | 2.0  |
 |              |     |     |     |     |     |     |     |     |      |

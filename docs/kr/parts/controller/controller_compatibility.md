@@ -29,25 +29,28 @@ sidebar:
 
 ## [다이나믹셀 호환표](#다이나믹셀-호환표)
 
-|       모델       | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[485 EXP]) | [OpenCM 7.0] | [OpenCR] |
-|:----------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:----------------------------:|:------------:|:--------:|
-|    AX Series     |   O    |    X    |    X     |    X     |    X     |    O     |    O     |    X     |    O     |    O     |             X(O)             |      X       |    O     |
-|    DX Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    O     |             X(O)             |      X       |    O     |
-|    RX Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    O     |             X(O)             |      X       |    O     |
-|    EX Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    O     |             X(O)             |      X       |    O     |
-|  MX Series(TTL)  |   O    |    X    |    X     |    X     |    X     |    O     |    O     |    X     |    O     |    O     |             X(O)             |      X       |    O     |
-| MX Series(RS485) |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    O     |             X(O)             |      X       |    O     |
-|      XL-320      |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    O     |             O(X)             |      X       |    X     |
-|    2XL Series    |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |             X(O)             |      X       |    O     |
-|    XL Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |             X(O)             |      X       |    O     |
-|    XM Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |             X(O)             |      X       |    O     |
-|    XH Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |             X(O)             |      X       |    O     |
-|    PRO Series    |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    X     |             X(O)             |      X       |    O     |
+|       모델       | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[OpenCM 485 확장보드]) | [OpenCM 7.0] | [OpenCR] |
+|:----------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:----------------------------------------:|:------------:|:--------:|
+|    AX Series     |   O    |    X    |    X     |    X     |    X     |    O     |    O     |    X     |    O     |    O     |                   X(O)                   |      X       |    O     |
+|    DX Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    O     |                   X(O)                   |      X       |    O     |
+|    RX Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    O     |                   X(O)                   |      X       |    O     |
+|    EX Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    O     |                   X(O)                   |      X       |    O     |
+|  MX Series(TTL)  |   O    |    X    |    X     |    X     |    X     |    O     |    O     |    X     |    O     |    O     |                   X(O)                   |      X       |    O     |
+| MX Series(RS485) |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    O     |                   X(O)                   |      X       |    O     |
+|      XL-320      |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    O     |                   O(X)                   |      X       |    X     |
+|    2XL Series    |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |                   X(O)                   |      X       |    O     |
+|    XL Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |                   X(O)                   |      X       |    O     |
+|    XM Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |                   X(O)                   |      X       |    O     |
+|    XH Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |                   X(O)                   |      X       |    O     |
+|    PRO Series    |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                   X(O)                   |      X       |    O     |
+
+**참고**: OpenCM9.04을 OpenCM 485 확장보드와 함께 사용하면, 모든 다이나믹셀을 제어할수 있습니다.
+{: .notice}
 
 
 ## [부품 호환표](#부품-호환표)
 
-|              모델              | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[485 EXP]) | [OpenCM 7.0] | [OpenCR] |
+|              모델              | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[OpenCM 485 확장보드]) | [OpenCM 7.0] | [OpenCR] |
 |:------------------------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:----------------------------:|:------------:|:--------:|
 |      Bioloid Serial Cable      |   O    |    X    |    X     |    X     |    X     |    O     |    X     |    X     |    X     |    X     |              X               |      X       |    X     |
 |            Mini USB            |   X    |    X    |    X     |    X     |    X     |    X     |    O     |    X     |    X     |    X     |              X               |      X       |    X     |
@@ -90,18 +93,23 @@ sidebar:
 
 ### [로보플러스 1.0](#로보플러스-10)
 
-|          모델           | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[485 EXP]) | [OpenCM 7.0] | [OpenCR] |
+|          모델           | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[OpenCM 485 확장보드]) | [OpenCM 7.0] | [OpenCR] |
 |:-----------------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:----------------------------:|:------------:|:--------:|
 | [로보플러스 태스크 1.0] |   O    |    X    |    O     |    O     |    O     |    O     |    O     |    X     |    O     |    X     |             O(X)             |      X       |    X     |
 | [로보플러스 매니저 1.0] |   O    |    X    |    O     |    O     |    O     |    O     |    O     |    X     |    O     |    X     |             O(X)             |      X       |    X     |
 | [로보플러스 모션  1.0]  |   O    |    X    |    X     |    O     |    O     |    O     |    O     |    X     |    O     |    X     |             O(X)             |      X       |    X     |
 
-로보플러스 매니저 1.0은 펌웨어 복구만 가능하고, 제어기의 컨트롤 테이블 확인은 불가능 합니다.
-{: .notice--info}
+  {% capture notice_01 %}
+  **참고:** 
+  - 로보플러스 매니저 1.0은 펌웨어 복구만 가능하고, 제어기의 컨트롤 테이블 확인은 불가능 합니다.
+  - 로포플러스 매니저 2.0은 펌웨어 복구 및 제어기의 컨트롤 테이블을 확인할 수 있습니다.
+    - 호환하지 않는 제어기는 로보플러스 매니저 1.0을 사용하세요.
+  {% endcapture %}
+  <div class="notice">{{ notice_01 | markdownify}}</div>
 
 ### [로보플러스 2.0](#로보플러스-20)
 
-|          모델           | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[485 EXP]) | [OpenCM 7.0] | [OpenCR] |
+|          모델           | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[OpenCM 485 확장보드]) | [OpenCM 7.0] | [OpenCR] |
 |:-----------------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:----------------------------:|:------------:|:--------:|
 | [로보플러스 태스크 2.0] |   O    |    X    |    X     |    O     |    O     |    O     |    O     |    X     |    O     |    X     |             O(X)             |      X       |    X     |
 | [로보플러스 매니저 2.0] |   O    |    X    |    X     |    O     |    O     |    O     |    O     |    X     |    O     |    X     |             O(X)             |      X       |    X     |
@@ -109,53 +117,54 @@ sidebar:
 
 ### [로보플러스 3.0](#로보플러스-30)
 
-|          모델           | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[485 EXP]) | [OpenCM 7.0] | [OpenCR] |
+|          모델           | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[OpenCM 485 확장보드]) | [OpenCM 7.0] | [OpenCR] |
 |:-----------------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:----------------------------:|:------------:|:--------:|
 | [로보플러스 태스크 3.0] |   O    |    O    |    O     |    O     |    O     |    O     |    O     |    O     |    O     |    X     |             O(X)             |      O       |    X     |
 
 
 ### [로보플러스 모바일](#로보플러스-모바일)
 
-|       모델       | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[485 EXP]) | [OpenCM 7.0] | [OpenCR] |
+|       모델       | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[OpenCM 485 확장보드]) | [OpenCM 7.0] | [OpenCR] |
 |:----------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:----------------------------:|:------------:|:--------:|
-|   [R+ m.Task]    |   O    |    O    |    O     |    O     |    O     |    O     |    O     |    X     |    O     |    X     |              O(X)               |      O       |    X     |
-| [R+ m.Task 2.0]  |   O    |    O    |    X     |    O     |    O     |    O     |    O     |    X     |    X     |    X     |              O(X)              |      O       |    X     |
-| [R+ m.Mtion 2.0] |   O    |    X    |    X     |    X     |    O     |    O     |    O     |    X     |    O     |    X     |              O(X)               |      X       |    X     |
-|  [R+ m.Design]   |   O    |    X    |    O     |    O     |    O     |    O     |    O     |    X     |    X     |    X     |              O(X)               |      X       |    X     |
+|   [R+ m.Task]    |   O    |    O    |    O     |    O     |    O     |    O     |    O     |    X     |    O     |    X     |             O(X)             |      O       |    X     |
+| [R+ m.Task 2.0]  |   O    |    O    |    X     |    O     |    O     |    O     |    O     |    X     |    X     |    X     |             O(X)             |      O       |    X     |
+| [R+ m.Mtion 2.0] |   O    |    X    |    X     |    X     |    O     |    O     |    O     |    X     |    O     |    X     |             O(X)             |      X       |    X     |
+|  [R+ m.Design]   |   O    |    X    |    O     |    O     |    O     |    O     |    O     |    X     |    X     |    X     |             O(X)             |      X       |    X     |
 
 ### [로보플러스 모바일 (교육키트)](#로보플러스-모바일-교육키트)
 
-|                   모델                   | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[485 EXP]) | [OpenCM 7.0] | [OpenCR] |
+|                   모델                   | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[OpenCM 485 확장보드]) | [OpenCM 7.0] | [OpenCR] |
 |:----------------------------------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:----------------------------:|:------------:|:--------:|
 | [로보플러스 SMART] <br> ( I / II / III ) |   X    |    X    |    X     |    X     |    O     |    X     |    X     |    X     |    X     |    X     |              X               |      X       |    X     |
-|             [로보플러스 블록]             |   X    |    O  |    X     |    O     |    X     |    X     |    X     |    X     |    X     |    X     |              X               |      O       |    X     |
+|            [로보플러스 블록]             |   X    |    O    |    X     |    O     |    X     |    X     |    X     |    X     |    X     |    X     |              X               |      O       |    X     |
 |             [로보플러스 IoT]             |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              X               |      O       |    X     |
-|             [로보티즈 미니]              |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              O(X)              |      X       |    X     |
+|             [로보티즈 미니]              |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |             O(X)             |      X       |    X     |
 |           로보플러스 Play 700            |   X    |    O    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              X               |      X       |    X     |
 
-로보플러스 Play 700은 글로벌 전용제품 소프트웨어 입니다. 
-{: .notice--info} 
+  **참고**: 로보플러스 Play 700은 글로벌 전용제품 소프트웨어 입니다. 
+  {: .notice} 
 
 ### [기타 소프트웨어](#기타-소프트웨어)
 
-|              모델              | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[485 EXP]) | [OpenCM 7.0] | [OpenCR] |
-|:------------------------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:----------------------------:|:------------:|:--------:|
-|     [로보플러스 스크래치]      |   X    |    O    |    X     |    O     |    X     |    X     |    X     |    X     |    X     |    X     |              X               |      O       |    X     |
-|          [OpenCM IDE]          |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |             O(X)             |      X       |    X     |
-|        [다이나믹셀 SDK]        |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |             O(X)             |      X       |    O     |
-|     [다이나믹셀 워크벤치]      |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |             O(X)             |      X       |    O     |
-|     [다이나믹셀 위자드]     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              X               |      X       |    X     |
-|     [다이나믹셀 위자드 2.0]     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              X               |      X       |    X     |
-| [ROBOTIS Manipulator library]  |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              X               |      X       |    O     |
-| [임베디드 SDK(CM-510/530/700)] |   X    |    X    |    X     |    X     |    X     |    O     |    O     |    X     |    O     |    X     |              X               |      X       |    X     |
-|          아두이노 IDE          |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |             O(X)             |      X       |    O     |
+|              모델              | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[OpenCM 485 확장보드]) | [OpenCM 7.0] | [OpenCR] |
+|:------------------------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:----------------------------------------:|:------------:|:--------:|
+|     [로보플러스 스크래치]      |   X    |    O    |    X     |    O     |    X     |    X     |    X     |    X     |    X     |    X     |                    X                     |      O       |    X     |
+|          [OpenCM IDE]          |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                    O                     |      X       |    X     |
+|        [다이나믹셀 SDK]        |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                    O                     |      X       |    O     |
+|     [다이나믹셀 워크벤치]      |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                    O                     |      X       |    O     |
+|      [다이나믹셀 위자드]       |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                    X                     |      X       |    X     |
+|    [다이나믹셀 위자드 2.0]     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                    X                     |      X       |    X     |
+| [ROBOTIS Manipulator library]  |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                    X                     |      X       |    O     |
+| [임베디드 SDK(CM-510/530/700)] |   X    |    X    |    X     |    X     |    X     |    O     |    O     |    X     |    O     |    X     |                    X                     |      X       |    X     |
+|          아두이노 IDE          |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                    O                     |      X       |    O     |
 
 
-{% capture etc %}
-- ROBOTIS Manipulator library는 사용자가 매니퓰레이터를 직접 제작할수 있도록 제공하는 API(Application Programming Interface)입니다. 
-- 임베디드 SDK는 사용자가 직접 제어기 펌웨어를 개발할 수 있는 솔루션입니다.
-{% endcapture %}
-<div class="notice--info">{{ etc | markdownify }}</div>
+  {% capture etc %}
+  **참고**:
+  - ROBOTIS Manipulator library는 사용자가 매니퓰레이터를 직접 제작할수 있도록 제공하는 API(Application Programming Interface)입니다. 
+  - 임베디드 SDK는 사용자가 직접 제어기 펌웨어를 개발할 수 있는 솔루션입니다.
+  {% endcapture %}
+  <div class="notice--info">{{ etc | markdownify }}</div>
 
 [ln-101]: /docs/kr/parts/interface/ln-101/
 [CM-5]: /docs/kr/parts/controller/cm-5/
@@ -170,7 +179,7 @@ sidebar:
 [CM-900]: /docs/kr/parts/controller/cm-900/
 [OpenCM9.04]: /docs/kr/parts/controller/opencm904/
 [OpenCM 7.0]: /docs/kr/parts/controller/opencm7/
-[485 EXP]: /docs/kr/parts/controller/opencm485exp/
+[OpenCM 485 확장보드]: /docs/kr/parts/controller/opencm485exp/
 [OpenCR]: /docs/en/parts/controller/opencr10/
 [로보플러스 태스크 1.0]: /docs/kr/software/rplus1/task/getting_started/
 [로보플러스 매니저 1.0]: /docs/kr/software/rplus1/manager/
@@ -195,3 +204,5 @@ sidebar:
 [다이나믹셀 위자드 2.0]: /docs/kr/software/dynamixel/dynamixel_wizard2/
 [임베디드 SDK(CM-510/530/700)]: /docs/kr/software/embedded_sdk/
 [ROBOTIS Manipulator library]: /docs/kr/software/robotis_manipulator_libs/
+
+[XL-320]: /docs/kr/dxl/x/xl320/

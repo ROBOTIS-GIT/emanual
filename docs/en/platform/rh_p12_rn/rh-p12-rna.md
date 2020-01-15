@@ -21,7 +21,7 @@ page_number: 1
 
 ## [RH-P12-RN(A)](#rh-p12-rna)
 - It uses improved firmware version compared to RH-P12-RN.
-- It has the similar control table structure to **DYNAMIXEL-PRO(A)** and **PRO+** series, so that they can be used together.
+- It has the similar control table structure to **DYNAMIXEL-PRO(A)** and **DYNAMIXEL-P** series, so that they can be used together.
 
 ## [RH-P12-RN](#rh-p12-rn)
 - It uses old firmware version.

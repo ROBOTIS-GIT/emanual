@@ -676,7 +676,7 @@ all-dynamixel:
         urlkr: /dxl/#ex-시리즈
       - title: "DX Series"
         titlekr: "DX 시리즈"
-        url: /dxl/#dx-시리즈
+        url: /dxl/#dx-series
         urlkr: /dxl/#dx-시리즈
       - title: "RX Series"
         titlekr: "RX 시리즈"
@@ -19979,7 +19979,7 @@ dynamixel_workbench:
   - title: "Introduction"
     url: /software/dynamixel/dynamixel_workbench/#introduction
   - title: "Supported DYNAMIXEL"
-    url: /software/dynamixel/dynamixel_workbench/#supported-dynamixels
+    url: /software/dynamixel/dynamixel_workbench/#supported-dynamixel
   - title: "Downloads"
     url: /software/dynamixel/dynamixel_workbench/#downloads
     children:
