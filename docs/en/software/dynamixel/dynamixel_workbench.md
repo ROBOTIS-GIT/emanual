@@ -27,10 +27,11 @@ If have any questions or issues, please get a ticket in [github issue](https://g
 | DYNAMIXEL Series |                                |                                |                                |                                |                 |
 |:-----------------|:-------------------------------|:-------------------------------|:-------------------------------|:-------------------------------|:----------------|
 | **AX**           | [AX-12W]                       | [AX-12+/12A]                   | [AX-18F/18A]                   |                                |                 |
-| **RX**           | [RX-10]                        | [RX-24F]                       | [RX-28]                        | [RX-64]                        |                 |
 | **EX**           | [EX-106+]                      |                                |                                |                                |                 |
+| **RX**           | [RX-10]                        | [RX-24F]                       | [RX-28]                        | [RX-64]                        |                 |
 | **MX**           | [MX-12W]                       | [MX-28], [MX-28(2.0)]          | [MX-64], [MX-64(2.0)]          | [MX-106], [MX-106(2.0)]        |                 |
 | **XL**           | [XL320]                        | [XL430-W250]<br/>[2XL430-W250] |                                |                                |                 |
+| **XC**           | [XC430-W150]                   | [XC430-W240]                   |                                |                                |                 |
 | **XM**           | [XM430-W210]                   | [XM430-W350]                   | [XM540-W150]                   | [XM540-W270]                   |                 |
 | **XH**           | [XH430-W210]<br/> [XH430-W350] | [XH430-V210]<br/> [XH430-V350] | [XH540-W150]<br/> [XH540-W270] | [XH540-V150]<br/> [XH540-V270] |                 |
 | **PRO L**        | [L42-10-S300-R]                | [L54-30-S500-R]                | [L54-30-S400-R]                | [L54-50-S500-R]                | [L54-50-S290-R] |
@@ -39,7 +40,7 @@ If have any questions or issues, please get a ticket in [github issue](https://g
 | **PRO M(A)**     | [M42-10-S260-R(A)]             | [M54-40-S250-R(A)]             | [M54-60-S250-R(A)]             |                                |                 |
 | **PRO H(A)**     | [H42-20-S300-R(A)]             | [H54-100-S500-R(A)]            | [H54-200-S500-R(A)]            |                                |                 |
 | **PM**           | [PM54-060-S250-R]              | [PM54-040-S250-R]              | [PM42-010-S260-R]              |                                |                 |
-| **PH**           | [PH42-020-S300-R]              | [PH54-100-S500-R]              | [PH54-100-S500-R]              |                                |                 |
+| **PH**           | [PH42-020-S300-R]              | [PH54-100-S500-R]              | [PH54-200-S500-R]              |                                |                 |
 
 
 **DYNMAIXEL Workbench** metapackage contains 3 packages:  **Controllers**, **Operators**, and **Toolbox**. The **Controllers** package introduces how to employ DYNAMIXEL on different operating mode with DYNMAIXEL Workbench library(Toolbox).  In addition, the Operators demonstrates some straightforward examples by operating Controllers.
@@ -248,7 +249,6 @@ Then you can see below texts.
 **TIP**: If you can't find any DYNAMIXEL, please check usb port, power. Even if it can't find anything, please check firmware to use ROBOTIS software ([R+ Manager 2.0](http://emanual.robotis.com/docs/en/software/rplus2/manager/) or [R+ Manager 1.0](http://emanual.robotis.com/docs/en/software/rplus2/manager/))
 {: .notice--success}
 
-
 ### [Controllers](#controllers)
 
 This package is to control DYNAMIXEL by ROS API. You can load your DYNAMIXEL by simply creating yaml file.  
@@ -290,14 +290,15 @@ tilt:
   Profile_Acceleration: 0
   Profile_Velocity: 0
 ```
-**WARNING**: `Torque_Enable` isn't supposed to be set by users, but it's enabled by itself during initialization.  
-{: .notice--warning}
-  
-**WARNING**:  
-You can find control table of DYNAMIXEL on [e-Manual](http://emanual.robotis.com/#control-table)  
-Control table item has to follow [Camel_Case](https://en.wikipedia.org/wiki/Camel_case) without a blank.    
-You are supposed to set at least DYNAMIXEL ID.  
-{: .notice--warning}
+{% capture notice_02 %}
+**WARNING**: Be sure to keep the following for right use of the package.  
+-`Torque Enable`, which is the data of [Control Table](/docs/en/faq/faq_dynamixel/) of DYNAMIXEL, is not supposed to be set by users, but it's enabled by itself during initialization.  
+- Control Table item has to follow [Camel_Case](https://en.wikipedia.org/wiki/Camel_case) without a blank.    
+- Be sure to set DYNAMIXEL ID before use of this package. Use 
+- 2XL430-W250 does not support this package (**Controllers**). By using this package with 2XL430-W250, one of Torque Enable (64) of a detected ID from two axles of 2XL430-W250 is automatically set as '1' (Torque on).  
+In this case, EEPROM of the other axle is deactivated, and the package can not access to the EEPROM field, which cause a connection error when you use the package.
+{% endcapture %}
+<div class="notice--info">{{ notice_02 | markdownify }}</div>
 
 Let's take a look at the `dynamixel_controller.launch` file
 
@@ -1989,6 +1990,8 @@ Return load. Unit is %
 [XL320]: /docs/en/dxl/x/xl320/
 [XL430-W250]: /docs/en/dxl/x/xl430-w250/
 [2XL430-W250]: /docs/en/dxl/x/2xl430-w250/
+[XC430-W150]: /docs/en/dxl/x/xc430-w150/
+[XC430-W240]: /docs/en/dxl/x/xc430-w240/
 [XM430-W210]: /docs/en/dxl/x/xm430-w210/
 [XM430-W350]: /docs/en/dxl/x/xm430-w350/
 [XH430-W210]: /docs/en/dxl/x/xh430-w210/
