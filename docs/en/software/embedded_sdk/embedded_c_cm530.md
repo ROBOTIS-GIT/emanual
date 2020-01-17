@@ -36,8 +36,18 @@ It makes the users possible to develop their own firmware. The characteristics a
 
 ## [Getting Started](#getting-started)
 
-**NOTE** : If an error occurs during installation in Windows 8.1.10, click [HERE]. Once downloading and unzipping are completed, copy the files to C:\WinARM\utils\bin. (You can replace the existing file.) (EX error :/usr/bin/sh: fork: Resource temporarily unavailable)
-{: .notice}
+{% capture warning_error %}
+**WARNING**: You may encounter following errors during installation:  
+
+- EX error :/usr/bin/sh: fork: Resource temporarily unavailable
+- make: \*\*\* \[CM530.lss] Error 128
+
+**Solution to the installtion errors:**
+1. Download a file - [msys-1.0-vista64.zip](http://www.madwizard.org/download/electronics/msys-1.0-vista64.zip)
+2. Extract the file.
+3. Copy and paste the extracted file into **C:\WinARM\utils\bin**. 
+{% endcapture %}
+<div class="notice--warning">{{ warning_error | markdownify }}</div>
 
 ### [Install JRE](#install-jre)
 
@@ -139,8 +149,18 @@ If progress is not as shown below then check the working development environment
 
 ![](/assets/images/sw/sdk/embedded_065.png)
 
-`Note `If an error occurs during installation in Windows 8.1.10, click [HERE]. Once downloading and unzipping are completed, copy the files to C:￦WinARM￦utils￦bin. (You can replace the existing file.) (EX error :/usr/bin/sh: fork: Resource temporarily unavailable)
-{: .notice}
+{% capture warning_error %}
+**WARNING**: You may encounter following errors during installation:  
+
+- EX error :/usr/bin/sh: fork: Resource temporarily unavailable
+- make: \*\*\* \[CM530.lss] Error 128
+
+**Solution to the installtion errors:**
+1. Download a file - [msys-1.0-vista64.zip](http://www.madwizard.org/download/electronics/msys-1.0-vista64.zip)
+2. Extract the file.
+3. Copy and paste the extracted file into **C:\WinARM\utils\bin**. 
+{% endcapture %}
+<div class="notice--warning">{{ warning_error | markdownify }}</div>
 
 ### [Restore RoboPlus](#restore-roboplus)
 
@@ -161,72 +181,72 @@ Macros and libraries for the STM32F10X ports and internal functionalities are pr
  
 ![](/assets/images/sw/sdk/embedded_067.png)
  
-|Pin #|Pin Name|NET NAME|Description|
-|:---:|:---:|:---:|:---:|
-|1|Vbat|VCC_33L|3.3V power supply|
-|2|PC13|LED0|LED POWER|
-|3|PC14|LED_TX|LED TX|
-|4|PC15|LED_RX|LED RX|
-|5|OSC_IN|XTAL1|X-TAL INPUT|
-|6|OSC_OUT|XTAL2|X-TAL OUTPUT|
-|7|NRST|RESET|RESET|
-|8|PC0|SIG_ADC0|ADC0 INPUT|
-|9|PC1|ADC_SELECT0|ANALOG MUX SELECT0|
-|10|PC2|ADC_SELECT1|ANALOG MUX SELECT1|
-|11|PC3|VDD_VOLT|input voltage  ADC|
-|12|VSSA|VSSA|ADC reference voltage  3.3V|
-|13|VDDA|VDDA|ADC reference voltage  0V|
-|14|PA0|SIG_MOT1+|#1 external port  OUPUT|
-|15|PA1|SIG_MOT1-|1 external port  OUPUT|
-|16|A2|SIG_MOT2+|#2 external port  OUPUT|
-|17|PA3|SIG_MOT2-|#2 external port  OUPUT|
-|18|VSS4|GND|0V reference voltage|
-|19|VDD4|VCC_33L|3.3V reference voltage|
-|20|PA4| NC|RESERVED|
-|21|PA5|SIG_ADC1|ADC1 INPUT|
-|22|PA6|SIG_BUZZER|Buzzer OUTPUT|
-|23|PA7|NC|RESERVED|
-|24|PC4|SIG_MIC|MIC Signal INPUT|
-|25|PC5|NC|RESERVED|
-|26|PB0|NC|RESERVED|
-|27|PB1|NC|RESERVED|
-|28|PB2|BOOT1|RESERVED|
-|29|PB10|PC_TXD|PC transmit|
-|30|PB11|PC_RXD|PC receive|
-|31|VSS1|GND|0V reference voltage|
-|32|VDD1|VCC_33L|3.3V reference voltage|
-|33|PB12|LED3|LED AUX|
-|34|PB13|LED4|LED MANAGE|
-|35|PB14|LED5|LED PROGRAM|
-|36|PB15|LED6|LED PLAY|
-|37|PC6|SIG_MOT3+|#3 external port  OUPUT|
-|38|PC7|SIG_MOT3-|#3 external port  OUPUT|
-|39|PC8|SIG_MOT4+|#4 external port  OUPUT|
-|40|PC9|SIG_MOT4-|#4 external port  OUPUT|
-|41|PA8|SIG_MOT5+|#5 external port  OUPUT|
-|42|PA9| NC|RESERVED|
-|43|PA10| NC|RESERVED|
-|44|PA11|SIG_MOT5-|#5 external port OUPUT|
-|45|PA12|ZIGBEE_RESET|Zigbee ENABLE|
-|46|PA13|USB_SLEEP|USB connections|
-|47|VSS2|GND|0V reference voltage|
-|48|VDD2|VCC_33L|3.3V reference voltage|
-|49|PA14|SW_RT|R Button|
-|50|PA15|SW_LF|L Button|
-|51|PC10|SW_DN|D Button|
-|52|PC11|SW_UP|U Button|
-|53|PC12|ZIGBEE_TXD|Zigbee transmit|
-|54|PD2|ZIGBEE_RXD|Zigbee receive|
-|55|PB3|SW_START|START Button|
-|56|PB4|ENABLE_TX|Dynamixel transmit  ENABLE|
-|57|PB5|ENABLE_RX|Dynamixel receive ENABLE|
-|58|PB6|DXL_TXD|Dynamixel transmit|
-|59|PB7|DXL_RXD|Dynamixel receive|
-|60|BOOT0|BOOT0|RESERVED|
-|61|PB8|SIG_MOT6+|#6 external port OUPUT|
-|62|PB9|SIG_MOT6-|#6 external port OUPUT|
-|63|VSS3|GND|0V reference voltage|
-|64|VDD3|VCC_33L|3.3V reference voltage|  
+| Pin # | Pin Name |   NET NAME   |         Description         |
+|:-----:|:--------:|:------------:|:---------------------------:|
+|   1   |   Vbat   |   VCC_33L    |      3.3V power supply      |
+|   2   |   PC13   |     LED0     |          LED POWER          |
+|   3   |   PC14   |    LED_TX    |           LED TX            |
+|   4   |   PC15   |    LED_RX    |           LED RX            |
+|   5   |  OSC_IN  |    XTAL1     |         X-TAL INPUT         |
+|   6   | OSC_OUT  |    XTAL2     |        X-TAL OUTPUT         |
+|   7   |   NRST   |    RESET     |            RESET            |
+|   8   |   PC0    |   SIG_ADC0   |         ADC0 INPUT          |
+|   9   |   PC1    | ADC_SELECT0  |     ANALOG MUX SELECT0      |
+|  10   |   PC2    | ADC_SELECT1  |     ANALOG MUX SELECT1      |
+|  11   |   PC3    |   VDD_VOLT   |     input voltage  ADC      |
+|  12   |   VSSA   |     VSSA     | ADC reference voltage  3.3V |
+|  13   |   VDDA   |     VDDA     |  ADC reference voltage  0V  |
+|  14   |   PA0    |  SIG_MOT1+   |   #1 external port  OUPUT   |
+|  15   |   PA1    |  SIG_MOT1-   |   1 external port  OUPUT    |
+|  16   |    A2    |  SIG_MOT2+   |   #2 external port  OUPUT   |
+|  17   |   PA3    |  SIG_MOT2-   |   #2 external port  OUPUT   |
+|  18   |   VSS4   |     GND      |    0V reference voltage     |
+|  19   |   VDD4   |   VCC_33L    |   3.3V reference voltage    |
+|  20   |   PA4    |      NC      |          RESERVED           |
+|  21   |   PA5    |   SIG_ADC1   |         ADC1 INPUT          |
+|  22   |   PA6    |  SIG_BUZZER  |        Buzzer OUTPUT        |
+|  23   |   PA7    |      NC      |          RESERVED           |
+|  24   |   PC4    |   SIG_MIC    |      MIC Signal INPUT       |
+|  25   |   PC5    |      NC      |          RESERVED           |
+|  26   |   PB0    |      NC      |          RESERVED           |
+|  27   |   PB1    |      NC      |          RESERVED           |
+|  28   |   PB2    |    BOOT1     |          RESERVED           |
+|  29   |   PB10   |    PC_TXD    |         PC transmit         |
+|  30   |   PB11   |    PC_RXD    |         PC receive          |
+|  31   |   VSS1   |     GND      |    0V reference voltage     |
+|  32   |   VDD1   |   VCC_33L    |   3.3V reference voltage    |
+|  33   |   PB12   |     LED3     |           LED AUX           |
+|  34   |   PB13   |     LED4     |         LED MANAGE          |
+|  35   |   PB14   |     LED5     |         LED PROGRAM         |
+|  36   |   PB15   |     LED6     |          LED PLAY           |
+|  37   |   PC6    |  SIG_MOT3+   |   #3 external port  OUPUT   |
+|  38   |   PC7    |  SIG_MOT3-   |   #3 external port  OUPUT   |
+|  39   |   PC8    |  SIG_MOT4+   |   #4 external port  OUPUT   |
+|  40   |   PC9    |  SIG_MOT4-   |   #4 external port  OUPUT   |
+|  41   |   PA8    |  SIG_MOT5+   |   #5 external port  OUPUT   |
+|  42   |   PA9    |      NC      |          RESERVED           |
+|  43   |   PA10   |      NC      |          RESERVED           |
+|  44   |   PA11   |  SIG_MOT5-   |   #5 external port OUPUT    |
+|  45   |   PA12   | ZIGBEE_RESET |        Zigbee ENABLE        |
+|  46   |   PA13   |  USB_SLEEP   |       USB connections       |
+|  47   |   VSS2   |     GND      |    0V reference voltage     |
+|  48   |   VDD2   |   VCC_33L    |   3.3V reference voltage    |
+|  49   |   PA14   |    SW_RT     |          R Button           |
+|  50   |   PA15   |    SW_LF     |          L Button           |
+|  51   |   PC10   |    SW_DN     |          D Button           |
+|  52   |   PC11   |    SW_UP     |          U Button           |
+|  53   |   PC12   |  ZIGBEE_TXD  |       Zigbee transmit       |
+|  54   |   PD2    |  ZIGBEE_RXD  |       Zigbee receive        |
+|  55   |   PB3    |   SW_START   |        START Button         |
+|  56   |   PB4    |  ENABLE_TX   | Dynamixel transmit  ENABLE  |
+|  57   |   PB5    |  ENABLE_RX   |  Dynamixel receive ENABLE   |
+|  58   |   PB6    |   DXL_TXD    |     Dynamixel transmit      |
+|  59   |   PB7    |   DXL_RXD    |      Dynamixel receive      |
+|  60   |  BOOT0   |    BOOT0     |          RESERVED           |
+|  61   |   PB8    |  SIG_MOT6+   |   #6 external port OUPUT    |
+|  62   |   PB9    |  SIG_MOT6-   |   #6 external port OUPUT    |
+|  63   |   VSS3   |     GND      |    0V reference voltage     |
+|  64   |   VDD3   |   VCC_33L    |   3.3V reference voltage    |
  
 The external ports of the CM-530 are listed below from 1 to 6. Please refer to [CM-530] controller for reference regarding ports.
 
@@ -1081,5 +1101,3 @@ int main(void)
 [RoboPlus Terminal]: /docs/en/software/rplus1/task/terminal/
 [CM-510]: /docs/en/parts/controller/cm-510/
 [CM-700]: /docs/en/parts/controller/cm-700/
-[Download CM-530 SDK]: http://support.robotis.com/en/baggage_files/embeded_c/embeddec_c(cm530_v1_02).zip
-[HERE]: http://www.madwizard.org/download/electronics/msys-1.0-vista64.zip
