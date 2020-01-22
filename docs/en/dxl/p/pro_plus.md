@@ -22,7 +22,7 @@ product_group: dxl_pro_plus
 
 - **Integrated robot-driving device** : Contains all necessary features for robot joints integrated into a single module.
 
-  ![](/assets/images/dxl/pro/dxl_pro_intro.gif)
+  ![](/assets/images/dxl/pro/dxl_pro_intro.jpg)
 
 - **Strong and durable reduction cycloid gearing** : DYNAMIXEL-P implements removable reduction cycloid gears. Small and lightweight cycloids allow a high-ratio reduction gear device. Also cycloid gears are more resistant to vibrations and impacts resulting in minimal backlash.
 
