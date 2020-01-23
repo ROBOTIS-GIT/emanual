@@ -5,12 +5,12 @@ The Control Table is a structure of data implemented in the device. Users can re
 {% assign data_size= "1 ~ 4" %}
 
 {% if page.product_group=='dxl_pro_plus' %}
-**WARNING** : PRO+ series use different Control Table from PRO series. Please pay attention when replacing PRO with PRO+.
+**WARNING** : DYNAMIXEL-P series use different Control Table from DYNAMIXEL PRO series. Please pay attention when replacing DYNAMIXEL PRO with DYNAMIXEL-P series.
 {: .notice--warning}
 {% assign torque_enable= "512" %}
 
 {% elsif page.product_group=='dxl_pro_a' %}
-**WARNING** : PRO(A) series use different Control Table from PRO series. Please pay attention when upgrading PRO to PRO(A).
+**WARNING** : PRO(A) series use different Control Table from DYNAMIXEL PRO series. Please pay attention when upgrading DYNAMIXEL PRO to PRO(A).
 {: .notice--warning}
 {% assign torque_enable= "512" %}
 
@@ -26,7 +26,7 @@ The Control Table is a structure of data implemented in the device. Users can re
 {% capture mx2_control_table %}
 **CAUTION**
 1. MX(2.0) Firmware is different from MX series' control table and address. Please check the control table address before usage.
-2. MX(2.0) Firmware inherits DYNAMIXEL X's function. Therefore, it supports [Protocol 1.0](/docs/en/dxl/protocol1/) and [Protocol 2.0](/docs/en/dxl/protocol2/), and various Operating Modes, Secondary ID, Drive Mode, Bus Watchdog, etc. Please refer to the control table for more details.
+2. MX(2.0) Firmware inherits DYNAMIXEL-X function. Therefore, it supports [Protocol 1.0](/docs/en/dxl/protocol1/) and [Protocol 2.0](/docs/en/dxl/protocol2/), and various Operating Modes, Secondary ID, Drive Mode, Bus Watchdog, etc. Please refer to the control table for more details.
 {% endcapture %}
 
 <div class="notice--warning">{{ mx2_control_table | markdownify }}</div>

@@ -21,7 +21,7 @@ page_number: 1
 
 ## [RH-P12-RN(A)](#rh-p12-rna)
 - 개선된 펌웨어를 사용합니다.
-- **다이나믹셀 PRO(A)** 및 **다이나믹셀 PRO+**와 유사한 컨트롤 테이블을 사용합니다. 
+- **다이나믹셀 PRO(A)** 및 **다이나믹셀-P**와 유사한 컨트롤 테이블을 사용합니다. 
 
 ## [RH-P12-RN](#rh-p12-rn)
 - 구 버전 펌웨어를 사용합니다.
@@ -173,16 +173,16 @@ RH-P12-RN(A)의 모델 번호입니다.
 | RH-P12-RN(A) | 35,074 (0x8902) |
 
 ### <a name="firmware-version"></a>**[Firmware Version(6)](#firmware-version6)**
-{% include kr/dxl/pro_plus/control_table_6_firmware_version.md %}
+{% include kr/dxl/p/control_table_6_firmware_version.md %}
 
 ### <a name="id"></a>**[ID(7)](#id7)**
-{% include kr/dxl/pro_plus/control_table_7_id.md %}
+{% include kr/dxl/p/control_table_7_id.md %}
 
 ### <a name="baud-rate"></a>**[Baud Rate(8)](#baud-rate8)**
-{% include kr/dxl/pro_plus/control_table_8_baud_rate.md %}
+{% include kr/dxl/p/control_table_8_baud_rate.md %}
 
 ### <a name="return-delay-time"></a>**[Return Delay Time(9)](#return-delay-time9)**
-{% include kr/dxl/pro_plus/control_table_9_return_delay_time.md %}
+{% include kr/dxl/p/control_table_9_return_delay_time.md %}
 
 ### <a name="operating-mode"></a>**[Operating Mode(11)](#operating-mode11)**
 장치의 제어 모드를 설정합니다. 각 제어 모드마다 특성이 다르기 때문에, 구현하려는 시스템에 적합한 제어 모드를 설정하시기 바랍니다.
@@ -194,7 +194,7 @@ RH-P12-RN(A)의 모델 번호입니다.
 | 5(Default) | 전류기반 위치제어 모드 | 위치와 전류를 제어합니다.                       |
 
 ### <a name="secondary-id"></a>**[Secondary ID(12)](#secondary-id12)**
-{% include kr/dxl/pro_plus/control_table_12_secondary_id.md %}
+{% include kr/dxl/p/control_table_12_secondary_id.md %}
 
 ### <a name="homing-offset"></a>**[Homing Offset(20)](#homing-offset20)**
 0점의 위치를 조절 할 수 있습니다. 이 값은 Present Position(580)에 더해지게 됩니다.
@@ -205,20 +205,20 @@ Present Position = 실제 위치 + Homing offset(20) 이 됩니다.
 | 1 [pulse] | 0 ~ 1150  |
 
 ### <a name="moving-threshold"></a>**[Moving Threshold(24)](#moving-threshold24)**
-{% include kr/dxl/pro_plus/control_table_24_moving_threshold.md %}
+{% include kr/dxl/p/control_table_24_moving_threshold.md %}
 
 |      단위      | 값의 범위 |
 |:--------------:|:---------:|
 | 0.01 [rev/min] | 0 ~ 2,970 |
 
 ### <a name="temperature-limit"></a>**[Temperature Limit(31)](#temperature-limit31)**
-{% include kr/dxl/pro_plus/control_table_31_temperature_limit.md %}
+{% include kr/dxl/p/control_table_31_temperature_limit.md %}
 
 ### <a name="max-voltage-limit"></a><a name="min-voltage-limit"></a>**[Max/Min Voltage Limit(32, 34)](#maxmin-voltage-limit32-34)**
-{% include kr/dxl/pro_plus/control_table_32_voltage_limit.md %}
+{% include kr/dxl/p/control_table_32_voltage_limit.md %}
 
 ### <a name="pwm-limit"></a>**[PWM Limit(36)](#pwm-limit36)**
-{% include kr/dxl/pro_plus/control_table_36_pwm_limit.md %}
+{% include kr/dxl/p/control_table_36_pwm_limit.md %}
 
 ### <a name="current-limit"></a>**[Current Limit(38)](#current-limit38)**
 목표 전류 값의 한계 값입니다. Goal Current(550)은 이 값보다 큰 값을 쓸 수 없습니다. 이 값보다 큰 값을 쓰려 하면, 값이 써지지 않고, Status packet의 error 에 Limit error bit가 set 됩니다.
@@ -250,28 +250,28 @@ Present Position = 실제 위치 + Homing offset(20) 이 됩니다.
 | 1 [pulse] | 0 ~ 1,150 |
 
 ### <a name="external-port-mode"></a><a name="external-port-data"></a>**[External Port Mode](#external-port-mode)**, **[External Port Data](#external-port-data)**
-{% include kr/dxl/pro_plus/control_table_56_external_port.md %}
+{% include kr/dxl/p/control_table_56_external_port.md %}
 
 ### <a name="shutdown"></a>**[Shutdown(63)](#shutdown63)**
-{% include kr/dxl/pro_plus/control_table_63_shutdown.md %}
+{% include kr/dxl/p/control_table_63_shutdown.md %}
 
 ### <a name="indirect-address"></a><a name="indirect-data"></a>**[Indirect Address](#indirect-address)**, **[Indirect Data](#indirect-data)**
-{% include kr/dxl/pro_plus/control_table_168_indirect.md %}
+{% include kr/dxl/p/control_table_168_indirect.md %}
 
 ### <a name="torque-enable"></a>**[Torque Enable(512)](#torque-enable512)**
 {% include kr/dxl/control_table_torque_enable.md %}
 
 ### <a name="led"></a>**[RGB LED](#rgb-led)**
-{% include kr/dxl/pro_plus/control_table_513_led.md %}
+{% include kr/dxl/p/control_table_513_led.md %}
 
 ### <a name="status-return-level"></a>**[Status Return Level(516)](#status-return-level516)**
-{% include kr/dxl/pro_plus/control_table_516_status_return_level.md %}
+{% include kr/dxl/p/control_table_516_status_return_level.md %}
 
 ### <a name="registered-instruction"></a>**[Registered Instruction(517)](#registered-instruction517)**
-{% include kr/dxl/pro_plus/control_table_517_registered_instruction.md %}
+{% include kr/dxl/p/control_table_517_registered_instruction.md %}
 
 ### <a name="hardware-error-status"></a>**[Hardware Error Status(518)](#hardware-error-status518)**
-{% include kr/dxl/pro_plus/control_table_518_hardware_error_status.md %}
+{% include kr/dxl/p/control_table_518_hardware_error_status.md %}
 
 ### <a name="velocity-i-gain"><a name="position-p-gain"></a><a name="feedforward-2nd-gain"></a><a name="feedforward-1st-gain"></a>**[Velocity PI Gain(524, 526), Position PID Gain(528,530,532), Feedforward 2nd Gains(536), Feedforward 1st Gains(538)](#velocity-pi-gain524-526, #position-pid-gain528-530-532, Feedforward 2nd Gains536, Feedforward 1st Gains538)**
 전류기반 위치 제어 모드에서 동작하는 위치 제어기의 Gain입니다. 편의상 장치 내부 제어기의 Position P Gain을 K<sub>P</sub>P로 표기하고 Control Table의 Gain은 K<sub>P</sub>P<sub>(TBL)</sub>로 표기합니다.
@@ -302,10 +302,10 @@ Present Position = 실제 위치 + Homing offset(20) 이 됩니다.
 {: .notice}
 
 ### <a name="bus-watchdog"></a>**[Bus Watchdog(546)](#bus-watchdog546)**
-{% include kr/dxl/pro_plus/control_table_546_bus_watchdog.md %}
+{% include kr/dxl/p/control_table_546_bus_watchdog.md %}
 
 ### <a name="goal-pwm"></a>**[Goal PWM(548)](#goal-pwm548)**
-{% include kr/dxl/pro_plus/control_table_548_goal_pwm.md %}
+{% include kr/dxl/p/control_table_548_goal_pwm.md %}
 
 ### <a name="goal-current"></a>**[Goal Current(550)](#goal-current550)**
 전류 제어 모드에서는 목표 전류값으로 동작하고, 전류기반 위치 제어 모드에서는 전류 제어기 입력(전류)의 제한값으로 동작됩니다.
@@ -338,7 +338,7 @@ Profile이란 모터 구동 시 급격하게 변하는 속도와 가속도를 �
 기본적으로 Profile의 선택은 Profile Velocity(560)와 Profile Acceleration(556)의 조합에 의해서 결정됩니다.  
 예외적으로 Trapezoidal Profile은 총 이동거리(ΔPos, 목표위치와 현재위치의 차이)가 추가로 고려되어 선택됩니다.  
 
-![](/assets/images/dxl/pro_plus/profile_types.png)
+![](/assets/images/dxl/p/profile_types.png)
 
 
 장치의 Profile은 Goal Position(564)이 주어졌을 때, 현재 속도(Profile의 시작속도)를 기반으로 목표 속도 궤적을 생성합니다.  
@@ -362,7 +362,7 @@ Profile이란 모터 구동 시 급격하게 변하는 속도와 가속도를 �
 | (Profile Velocity(560) ≠ 0) & (Profile Acceleration(556) = 0) | 사각 프로파일              |
 | (Profile Velocity(560) ≠ 0) & (Profile Acceleration(556) ≠ 0) | 사다리꼴 프로파일          |
 
-![](/assets/images/dxl/pro_plus/velocity_profile.png)
+![](/assets/images/dxl/p/velocity_profile.png)
 
 
 {% capture group_notice_03 %}
@@ -386,10 +386,10 @@ Velocity Override 기능은 동일하게 동작합니다.
 | RH-P12-RN | ![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_open.png) | ![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_close.png) |
 
 ### <a name="realtime-tick"></a>**[Realtime Tick(568)](#realtime-tick568)**
-{% include kr/dxl/pro_plus/control_table_568_realtime_tick.md %}
+{% include kr/dxl/p/control_table_568_realtime_tick.md %}
 
 ### <a name="moving"></a>**[Moving(570)](#moving570)**
-{% include kr/dxl/pro_plus/control_table_570_moving.md %}
+{% include kr/dxl/p/control_table_570_moving.md %}
 
 ### <a name="moving-status"></a>**[Moving Status(571)](#moving-status571)**
 움직임에 대한 추가적인 정보를 제공합니다. In-Position Bit(0x01)은 전류기반 위치 제어 모드에서만 동작합니다.
@@ -406,13 +406,13 @@ Velocity Override 기능은 동일하게 동작합니다.
 
 
 ### <a name="present-pwm"></a>**[Present PWM(572)](#present-pwm572)**
-{% include kr/dxl/pro_plus/control_table_572_present_pwm.md %}
+{% include kr/dxl/p/control_table_572_present_pwm.md %}
 
 ### <a name="present-current"></a>**[Present Current(574)](#present-current574)**
-{% include kr/dxl/pro_plus/control_table_574_present_current.md %}
+{% include kr/dxl/p/control_table_574_present_current.md %}
 
 ### <a name="present-velocity"></a>**[Present Velocity(576)](#present-velocity576)**
-{% include kr/dxl/pro_plus/control_table_576_present_velocity.md %}
+{% include kr/dxl/p/control_table_576_present_velocity.md %}
 
 ### <a name="present-position"></a>**[Present Position(580)](#present-position580)**
 장치의 현재 위치 값입니다.
@@ -432,10 +432,10 @@ Profile에 의해 생성된 목표 위치 궤적입니다. 전류기반 위치 �
 
 
 ### <a name="present-input-voltage"></a>**[Present Input Voltage(592)](#present-input-voltage592)**
-{% include kr/dxl/pro_plus/control_table_592_present_input_voltage.md %}
+{% include kr/dxl/p/control_table_592_present_input_voltage.md %}
 
 ### <a name="present-temperature"></a>**[Present Temperature(594)](#present-temperature594)**
-{% include kr/dxl/pro_plus/control_table_594_present_temperature.md %}
+{% include kr/dxl/p/control_table_594_present_temperature.md %}
 
 # [조립 예시](#조립-예시)
 

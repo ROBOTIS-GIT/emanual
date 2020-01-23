@@ -4,7 +4,7 @@ lang: kr
 ref: dxl_pro
 permalink: /docs/kr/dxl/pro/
 sidebar:
-  title: DYNAMIXEL PRO
+  title: 다이나믹셀 PRO
   nav: "dynamixel_pro"
 ---
 
@@ -26,7 +26,7 @@ sidebar:
 
 - **일체형 로봇 구동장치** : 로봇의 관절에 필요한 기능을 하나의 모듈로 만들었습니다.
 
-  ![](/assets/images/dxl/pro/dxl_pro_intro_kr.gif)
+  ![](/assets/images/dxl/pro/dxl_pro_intro_kr.jpg)
 
 - **힘세고 단단한 사이클로이드 감속기**: 다이나믹셀 PRO는 탈부착이 가능한 사이클로이드 감속기를 사용합니다. 싸이클로이드 방식을 사용함으로서 작고 가벼우면서도 감속비가 높은 감속 장치를 실현하였습니다. 또한 싸이클로이드 감속기는 진동 충격에 강한 내구성과 작은 백래쉬를 자랑합니다.
 

@@ -34,7 +34,7 @@ Remove bolts and cover plate to reveal External Port connector.
 
 ![](/assets/images/dxl/pro/pro_external_port.png)
 
-![](/assets/images/dxl/pro_plus/external_port_pinout.png)
+![](/assets/images/dxl/p/external_port_pinout.png)
 
 |Pin 1|Pin 2|Pin 3|Pin 4|Pin 5|Pin 6|
 | :---: | :---: | :---: | :---: | :---: | :---: |

@@ -37,9 +37,9 @@ Download and install `Ubuntu 18.04` on your PC. Tutoral guide will be helpful fo
 
 ## [Install ROS 2 on PC](#install-ros2-on-pc)
 
-![](/assets/images/platform/openmanipulator_pro/logo_ros.png)
+![](/assets/images/platform/openmanipulator_p/logo_ros.png)
  
-As OpenMANIPULATOR-PRO operates on Ronbot Operating System(ROS), it requies to intall `ROS 2 Dashing Diademata`.
+As OpenMANIPULATOR-P operates on Robot Operating System(ROS), it requies to intall `ROS 2 Dashing Diademata`.
 The following script will allow you to simplify the ROS 2 installation procedure. Run the following commands in a terminal window.
 After installing ROS 2, please reboot PC.
   

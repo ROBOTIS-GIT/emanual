@@ -89,7 +89,7 @@ Each DYNAMIXEL has different power requirements. Please refer to the manual page
 Do not exceed the operating voltage range as it will damage the internal components.
 DYNAMIXEL Pro is highly recommended to use with DC 24V.
 
-# Why DYNAMIXEL X-series doesn't work with other DYNAMIXEL series?
+# Why DYNAMIXEL-X Series doesn't work with other DYNAMIXEL series?
 1. To communicate with any DYNAMIXEL, users must utilize the communication protocol accepted by DYNAMIXEL as well as the [correct logic level (buffer circuit)](http://emanual.robotis.com/docs/en/dxl/x/xl430-w250/#ttl-communication). The [XL430-W250-T](/docs/en/dxl/x/xl430-w250/) utilizes Communication [Protocol 2.0] for packet structure and instructions.
 
 2. The third-party software solution you linked likely did not work due to being based on Communication [Protocol 1.0]. However, ROBOTIS does not recommend operating DYNAMIXEL's without the appropriate communication circuit.
@@ -132,9 +132,9 @@ DYNAMIXEL Pro is CE/FCC certified. For more information, please search ROBOTIS [
 [RX]: /docs/en/dxl/#rx-series
 [EX]: /docs/en/dxl/#ex-series
 [MX]: /docs/en/dxl/#mx-series
-[DYNAMIXEL X]: /docs/en/dxl/#x-series
+[DYNAMIXEL-X]: /docs/en/dxl/#x-series
 [DYNAMIXEL Pro]: /docs/en/dxl/#pro-series
-[DYNAMIXEL Pro+]: /docs/en/dxl/#pro-plus-series
+[DYNAMIXEL-P]: /docs/en/dxl/#pro-plus-series
 [MX]: /docs/en/dxl/#mx-series
 [U2D2]: /docs/en/parts/interface/u2d2/
 [USB2DYNAMIXEL]: /docs/en/parts/interface/usb2dynamixel/

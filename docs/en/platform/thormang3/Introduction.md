@@ -31,8 +31,8 @@ THOR (Tactical Hazardous Operations Robot) is an affordable, full size humanoid 
 computational power, sophisticated sensors, high payload capacity, and dynamic motion abilities to enable many exciting researches and educational activities.   
 
 {% capture package_info_01 %}    
-**NOTE** : ROBOTIS THORMANG3 has been renewed with new actuator DYNAMIXEL PRO+ from DYNAMIXEL PRO since June 2019.   
-- [DYNAMIXEL PRO+](/docs/en/dxl/pro_plus/)
+**NOTE** : ROBOTIS THORMANG3 has been renewed with new actuator DYNAMIXEL-P from DYNAMIXEL PRO since June 2019.   
+- [DYNAMIXEL-P](/docs/en/dxl/p/)
 {% endcapture %}
 <div class="notice">{{ package_info_01 | markdownify }}</div>
 
@@ -126,7 +126,7 @@ ROBOTIS is not responsible for any damages or losses resulting from any accident
 
 [thormang3_stp.zip]: http://support.robotis.com/en/baggage_files/thormang3/thormang3_stp.zip
 [sim_for_thormang3_stl.zip]: http://support.robotis.com/en/baggage_files/thormang3/sim_for_thormang3_stl.zip
-[DYNAMIXEL PRO+]: /docs/en/dxl/pro_plus/
-[PH54-200-S500-R]: /docs/en/dxl/pro_plus/ph54-200-s500-r/
-[PH54-100-S500-R]: /docs/en/dxl/pro_plus/ph54-100-s500-r/
-[PH42-020-S300-R]: /docs/en/dxl/pro_plus/ph42-020-s300-r/
+[DYNAMIXEL-P]: /docs/en/dxl/p/
+[PH54-200-S500-R]: /docs/en/dxl/p/ph54-200-s500-r/
+[PH54-100-S500-R]: /docs/en/dxl/p/ph54-100-s500-r/
+[PH42-020-S300-R]: /docs/en/dxl/p/ph42-020-s300-r/

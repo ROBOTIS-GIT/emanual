@@ -13,16 +13,16 @@ sidebar:
 
 # [개요](#개요)
 
-- 프로토콜 2.0을 지원하는 다이나믹셀: MX-28, MX-64, MX-106(펌웨어 v39 이상), X 시리즈, Pro 시리즈
-- 프로토콜 2.0을 지원하는 제어기: CM-150, CM-200, OpenCM9.04, OpenCR
-- 프로토콜 2.0을 지원하는 소프트웨어: 로보플러스 스마트 앱, 로보플러스 2.0
+- 프로토콜 2.0을 지원하는 다이나믹셀: MX-28, MX-64, MX-106(펌웨어 v39 이상), X 시리즈, PRO 시리즈, P 시리즈.
+- 프로토콜 2.0을 지원하는 제어기: CM-50, CM-150, CM-200, OpenCM7.0, OpenCM9.04, CM-550, OpenCR
+- 프로토콜 2.0을 지원하는 소프트웨어: 로보플러스 스마트 앱, 로보플러스 2.0, 로보플러스 3.0
 
 # [Instruction Packet](#instruction-packet)
 Instruction Packet은 Main Controller가 장치(Device)로 보내는 명령 데이터 입니다.
 
-|Header1|Header2|Header3|Reserved|Packet ID|Length1|Length2|Instruction|Param|Param|Param|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|ID|Len_L|Len_H|Instruction|Param 1|...|Param N|CRC_L|CRC_H|
+| Header1 | Header2 | Header3 | Reserved | Packet ID | Length1 | Length2 | Instruction |  Param  | Param |  Param  | CRC1  | CRC2  |
+|:-------:|:-------:|:-------:|:--------:|:---------:|:-------:|:-------:|:-----------:|:-------:|:-----:|:-------:|:-----:|:-----:|
+|  0xFF   |  0xFF   |  0xFD   |   0x00   |    ID     |  Len_L  |  Len_H  | Instruction | Param 1 |  ...  | Param N | CRC_L | CRC_H |
 
 ## [Header](#header)
 Packet의 시작을 나타내는 필드
@@ -44,21 +44,21 @@ Packet Length 이후의 길이(Instruction, Parameter, CRC 필드)
 ## [Instruction](#instruction)
 Packet의 용도를 정의하는 필드
 
-|값|명령|상세 설명|
-|:---:|:---:|:---:|
-|0x01|Ping|Packet ID와 동일한 ID를 갖은 장치에 Packet이 도달했는지 여부 확인을 위한 Instruction|
-|0x02|Read|장치로부터 데이터를 읽어오기 위한 Instruction|
-|0x03|Write|장치에 데이터를 쓰기 위한 Instruction|
-|0x04|Reg Write|Instruction Packet을 대기 상태로 등록하는 Instruction, Action 명령에 의해 실행됨|
-|0x05|Action|Reg Write 로 미리 등록한 Packet을 실행하는 Instruction|
-|0x06|Factory Reset|컨트롤테이블을 공장 출하 상태의 초기값으로 되돌리는 Instruction|
-|0x08|Reboot|장치를 재부팅 시키는 Instruction|
-|0x10|Clear|장치의 특정 상태를 해제하는 Instruction|
-|0x55|Status(Return)|Instruction Packet 에 대한 Return Instruction|
-|0x82|Sync Read|다수의 장치에 대해서, 동일한 Address에서 동일한 길이의 데이터를 한 번에 읽기 위한 Instruction|
-|0x83|Sync Write|다수의 장치에 대해서, 동일한 Address에 동일한 길이의 데이터를 한 번에 쓰기 위한 Instruction|
-|0x92|Bulk Read|다수의 장치에 대해서, 서로 다른 Address에서 서로 다른 길이의 데이터를 한 번에 읽기 위한 Instruction|
-|0x93|Bulk Write|다수의 장치에 대해서, 서로 다른 Address에 서로 다른 길이의 데이터를 한번에 쓰기 위한 Instruction|
+|  값  |      명령      |                                              상세 설명                                              |
+|:----:|:--------------:|:---------------------------------------------------------------------------------------------------:|
+| 0x01 |      Ping      |        Packet ID와 동일한 ID를 갖은 장치에 Packet이 도달했는지 여부 확인을 위한 Instruction         |
+| 0x02 |      Read      |                            장치로부터 데이터를 읽어오기 위한 Instruction                            |
+| 0x03 |     Write      |                                장치에 데이터를 쓰기 위한 Instruction                                |
+| 0x04 |   Reg Write    |          Instruction Packet을 대기 상태로 등록하는 Instruction, Action 명령에 의해 실행됨           |
+| 0x05 |     Action     |                       Reg Write 로 미리 등록한 Packet을 실행하는 Instruction                        |
+| 0x06 | Factory Reset  |                   컨트롤테이블을 공장 출하 상태의 초기값으로 되돌리는 Instruction                   |
+| 0x08 |     Reboot     |                                  장치를 재부팅 시키는 Instruction                                   |
+| 0x10 |     Clear      |                               장치의 특정 상태를 해제하는 Instruction                               |
+| 0x55 | Status(Return) |                            Instruction Packet 에 대한 Return Instruction                            |
+| 0x82 |   Sync Read    |    다수의 장치에 대해서, 동일한 Address에서 동일한 길이의 데이터를 한 번에 읽기 위한 Instruction    |
+| 0x83 |   Sync Write   |     다수의 장치에 대해서, 동일한 Address에 동일한 길이의 데이터를 한 번에 쓰기 위한 Instruction     |
+| 0x92 |   Bulk Read    | 다수의 장치에 대해서, 서로 다른 Address에서 서로 다른 길이의 데이터를 한 번에 읽기 위한 Instruction |
+| 0x93 |   Bulk Write   |  다수의 장치에 대해서, 서로 다른 Address에 서로 다른 길이의 데이터를 한번에 쓰기 위한 Instruction   |
 
 ## [Parameters](#parameters)
 
@@ -73,9 +73,9 @@ Packet의 용도를 정의하는 필드
 # [Status Packet](#status-packet)
 기본구성(Header, Reserved, Packet ID, Packet Length, 16bit CRC) : Instruction Packet 과 동일
 
-|Header1|Header2|Header3|Reserved|Packet ID|Length1|Length2|Instruction|ERR|PARAM|PARAM|PARAM|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|ID|Len_L|Len_H|Instruction|Error|Param 1|...|Param N|CRC_L|CRC_H|
+| Header1 | Header2 | Header3 | Reserved | Packet ID | Length1 | Length2 | Instruction |  ERR  |  PARAM  | PARAM |  PARAM  | CRC1  | CRC2  |
+|:-------:|:-------:|:-------:|:--------:|:---------:|:-------:|:-------:|:-----------:|:-----:|:-------:|:-----:|:-------:|:-----:|:-----:|
+|  0xFF   |  0xFF   |  0xFD   |   0x00   |    ID     |  Len_L  |  Len_H  | Instruction | Error | Param 1 |  ...  | Param N | CRC_L | CRC_H |
 
 ## Instruction
 Status Packet의 Instruction은 0x55 (Status) 로 고정
@@ -83,22 +83,22 @@ Status Packet의 Instruction은 0x55 (Status) 로 고정
 ## [Error](#error)
 Instruction Packet 의 처리 결과를 나타냄
 
-|Bit 7|Bit 6 ~ Bit 0|
-|:---:|:---:|
-|Alert|Error Number|
+| Bit 7 | Bit 6 ~ Bit 0 |
+|:-----:|:-------------:|
+| Alert | Error Number  |
 
   - Alert : 장치에 문제가 발생한 경우 1 로 Setting 됨. 이 경우 Control Table 의 Hardware error status 값을 읽어 보면 문제의 원인을 알 수 있음.
   - Error Number : Instruction Packet 의 처리에 Error 가 발생한 경우
 
-|Value|Error           |설명|
-|:---:|:---            |:---------|
-|0x01|Result Fail       |전송된 Instruction Packet 을 처리하는데 실패한 경우|
-|0x02|Instruction Error |정의되지 않은 Instruction 을 사용한 경우<br />Reg Write 없이 Action 을 사용한 경우|
-|0x03|CRC Error         |전송된 Packet 의 CRC 값이 맞지 않는 경우|
-|0x04|Data Range Error  |해당 Address 에 쓰려는 Data 가 최소/최대값의 범위를 벗어난 경우|
-|0x05|Data Length Error |해당 Address 의 데이터 길이보다 짧은 데이터를 적으려고 한 경우<br />(예: 4 byte로 정의된 항목의 2 byte 만 쓰려고 하는 경우)|
-|0x06|Data Limit Error  |해당 Address 에 쓰려는 Data 가 Limit 값을 벗어난 경우|
-|0x07|Access Errer      |Read Only 혹은 정의되지 않은 Address 에 값을 쓰려고 한 경우<br />Write Only 혹은 정의되지 않은 Address 에 값을 읽으려고 한 경우<br />Torque Enable(ROM Lock) 상태에서 ROM 영역에 값을 쓰려고 한 경우|
+| Value | Error             | 설명                                                                                                                                                                                                 |
+|:-----:|:------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 0x01  | Result Fail       | 전송된 Instruction Packet 을 처리하는데 실패한 경우                                                                                                                                                  |
+| 0x02  | Instruction Error | 정의되지 않은 Instruction 을 사용한 경우<br />Reg Write 없이 Action 을 사용한 경우                                                                                                                   |
+| 0x03  | CRC Error         | 전송된 Packet 의 CRC 값이 맞지 않는 경우                                                                                                                                                             |
+| 0x04  | Data Range Error  | 해당 Address 에 쓰려는 Data 가 최소/최대값의 범위를 벗어난 경우                                                                                                                                      |
+| 0x05  | Data Length Error | 해당 Address 의 데이터 길이보다 짧은 데이터를 적으려고 한 경우<br />(예: 4 byte로 정의된 항목의 2 byte 만 쓰려고 하는 경우)                                                                          |
+| 0x06  | Data Limit Error  | 해당 Address 에 쓰려는 Data 가 Limit 값을 벗어난 경우                                                                                                                                                |
+| 0x07  | Access Errer      | Read Only 혹은 정의되지 않은 Address 에 값을 쓰려고 한 경우<br />Write Only 혹은 정의되지 않은 Address 에 값을 읽으려고 한 경우<br />Torque Enable(ROM Lock) 상태에서 ROM 영역에 값을 쓰려고 한 경우 |
 
 ## Parameter
 
@@ -135,11 +135,11 @@ Instruction Packet 의 처리 결과를 나타냄
 **주의**: Status Packet is received from each Device.
 {: .notice}
 
-|Status Packet|상세 설명|
-|:---:|:---:|
-|Parameter 1|모델번호 LSB |
-|Parameter 2|모델번호 MSB|
-|Parameter 3|펌웨어 Version|
+| Status Packet |   상세 설명    |
+|:-------------:|:--------------:|
+|  Parameter 1  |  모델번호 LSB  |
+|  Parameter 2  |  모델번호 MSB  |
+|  Parameter 3  | 펌웨어 Version |
 
 ### 예제 1
 #### 예제 설명
@@ -148,15 +148,15 @@ Instruction Packet 의 처리 결과를 나타냄
 
 #### Ping Instruction Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0x01|0x03|0x00|0x01|0x19|0x4E|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x03 | 0x00 | 0x01 | 0x19 | 0x4E |
 
 #### ID 1 Status Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|ERR|PARAM1|PARAM2|PARAM3|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0x01|0x07|0x00|0x55|0x00|0x06|0x04|0x26|0x65|0x5D|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | PARAM1 | PARAM2 | PARAM3 | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:------:|:------:|:------:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x07 | 0x00 | 0x55 | 0x00 |  0x06  |  0x04  |  0x26  | 0x65 | 0x5D |
 
 ### 예제 2
 #### 예제 설명
@@ -166,21 +166,21 @@ Instruction Packet 의 처리 결과를 나타냄
 
 #### Ping Instruction Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0xFE|0x03|0x00|0x01|0x31|0x42|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0xFE | 0x03 | 0x00 | 0x01 | 0x31 | 0x42 |
 
 #### ID 1 Status Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|ERR|PARAM1|PARAM2|PARAM3|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0x01|0x07|0x00|0x55|0x00|0x06|0x04|0x26|0x65|0x5D|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | PARAM1 | PARAM2 | PARAM3 | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:------:|:------:|:------:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x07 | 0x00 | 0x55 | 0x00 |  0x06  |  0x04  |  0x26  | 0x65 | 0x5D |
 
 #### ID 2 Status Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|ERR|PARAM1|PARAM2|PARAM3|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0x02|0x07|0x00|0x55|0x00|0x06|0x04|0x26|0x6F|0x6D|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | PARAM1 | PARAM2 | PARAM3 | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:------:|:------:|:------:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x02 | 0x07 | 0x00 | 0x55 | 0x00 |  0x06  |  0x04  |  0x26  | 0x6F | 0x6D |
 
 ## [Read](#read)
 
@@ -190,19 +190,19 @@ Instruction Packet 의 처리 결과를 나타냄
 
 ### Packet Parameters
 
-|Instruction Packet|상세 설명|
-|:---:|:---:|
-|Parameter 1| 시작 주소의 하위 바이트|
-|Parameter 2|시작 주소의 상위 바이트|
-|Parameter 3|데이터 길이(X)의 하위 바이트|
-|Parameter 4|데이터 길이(X)의 상위 바이트|
+| Instruction Packet |          상세 설명           |
+|:------------------:|:----------------------------:|
+|    Parameter 1     |   시작 주소의 하위 바이트    |
+|    Parameter 2     |   시작 주소의 상위 바이트    |
+|    Parameter 3     | 데이터 길이(X)의 하위 바이트 |
+|    Parameter 4     | 데이터 길이(X)의 상위 바이트 |
 
-|Status Packet|상세 설명|
-|:---:|:---:|
-|Parameter 1|첫 번째 바이트|
-|Parameter 2|두 번째 바이트|
-|...|...|
-|Parameter X|X 번째 바이트|
+| Status Packet |   상세 설명    |
+|:-------------:|:--------------:|
+|  Parameter 1  | 첫 번째 바이트 |
+|  Parameter 2  | 두 번째 바이트 |
+|      ...      |      ...       |
+|  Parameter X  | X 번째 바이트  |
 
 ### 예제
 
@@ -211,15 +211,15 @@ Instruction Packet 의 처리 결과를 나타냄
 
 #### Read Instruction Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|PARAM1|PARAM2|PARAM3|PARAM4|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0x01|0x07|0x00|0x02|0x84|0x00|0x04|0x00|0x1D|0x15|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | PARAM1 | PARAM2 | PARAM3 | PARAM4 | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:------:|:------:|:------:|:------:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x07 | 0x00 | 0x02 |  0x84  |  0x00  |  0x04  |  0x00  | 0x1D | 0x15 |
 
 #### ID 1 Status Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|ERR|PARAM1|PARAM2|PARAM3|PARAM4|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0x01|0x08|0x00|0x55|0x00|0xA6|0x00|0x00|0x00|0x8C|0xC0|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | PARAM1 | PARAM2 | PARAM3 | PARAM4 | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:------:|:------:|:------:|:------:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x08 | 0x00 | 0x55 | 0x00 |  0xA6  |  0x00  |  0x00  |  0x00  | 0x8C | 0xC0 |
 
 ## [Write](#write)
 
@@ -229,14 +229,14 @@ Instruction Packet 의 처리 결과를 나타냄
 
 ### Packet Parameters
 
-|Instruction Packet|상세 설명|
-|:---:|:---:|
-|Parameter 1|시작 주소의 하위 바이트|
-|Parameter 2|시작 주소의 상위 바이트|
-|Parameter 2+1|첫번째 바이트|
-|Parameter 2+2|두번째 바이트|
-|...|...|
-|Parameter 2+X|X번째 바이트|
+| Instruction Packet |        상세 설명        |
+|:------------------:|:-----------------------:|
+|    Parameter 1     | 시작 주소의 하위 바이트 |
+|    Parameter 2     | 시작 주소의 상위 바이트 |
+|   Parameter 2+1    |      첫번째 바이트      |
+|   Parameter 2+2    |      두번째 바이트      |
+|        ...         |           ...           |
+|   Parameter 2+X    |      X번째 바이트       |
 
 ### 예제
 
@@ -245,15 +245,15 @@ Instruction Packet 의 처리 결과를 나타냄
 
 #### Write Instruction Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|P1|P2|P3|P4|P5|P6|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0x01|0x09|0x00|0x03|0x74|0x00|0x00|0x02|0x00|0x00|0xCA|0x89|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  |  P2  |  P3  |  P4  |  P5  |  P6  | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x09 | 0x00 | 0x03 | 0x74 | 0x00 | 0x00 | 0x02 | 0x00 | 0x00 | 0xCA | 0x89 |
 
 #### ID 1 Status Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|ERR|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0x01|0x04|0x00|0x55|0x00|0xA1|0x0C|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | CRC1|CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:---------:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1|0x0C |
 
 ## [Reg Write](#reg-write)
 
@@ -265,14 +265,14 @@ Instruction Packet 의 처리 결과를 나타냄
 
 ### Packet Parameters
 
-|Instruction Packet|상세 설명|
-|:---:|:---:|
-|Parameter 1|시작 주소의 하위 바이트|
-|Parameter 2|시작 주소의 상위 바이트|
-|Parameter 2+1|첫번째 바이트|
-|Parameter 2+2|두번째 바이트|
-|...|...|
-|Parameter 2+X|X번째 바이트|
+| Instruction Packet |        상세 설명        |
+|:------------------:|:-----------------------:|
+|    Parameter 1     | 시작 주소의 하위 바이트 |
+|    Parameter 2     | 시작 주소의 상위 바이트 |
+|   Parameter 2+1    |      첫번째 바이트      |
+|   Parameter 2+2    |      두번째 바이트      |
+|        ...         |           ...           |
+|   Parameter 2+X    |      X번째 바이트       |
 
 ### 예제
 
@@ -281,15 +281,15 @@ Instruction Packet 의 처리 결과를 나타냄
 
 #### Reg Write Instruction Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|P1|P2|P3|P4|P5|P6|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0x01|0x09|0x00|0x04|0x68|0x00|0xC8|0x00|0x00|0x00|0xAE|0x8E|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  |  P2  |  P3  |  P4  |  P5  |  P6  | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x09 | 0x00 | 0x04 | 0x68 | 0x00 | 0xC8 | 0x00 | 0x00 | 0x00 | 0xAE | 0x8E |
 
 #### ID 1 Status Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|ERR|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0x01|0x04|0x00|0x55|0x00|0xA1|0x0C|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1 | 0x0C |
 
 ## [Action](#action)
 
@@ -305,28 +305,28 @@ Instruction Packet 의 처리 결과를 나타냄
 
 #### Action Instruction Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0x01|0x03|0x00|0x05|0x02|0xCE|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x03 | 0x00 | 0x05 | 0x02 | 0xCE |
 
 #### ID 1 Status Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|ERR|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0x01|0x04|0x00|0x55|0x00|0xA1|0x0C|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1 | 0x0C |
 
 ## [Factory Reset](#factory-reset)
 
 ### 설명
 - Control Table 을 공장 출하 시의 초기값으로 되돌리는 Instruction
 - Packet ID가 Broadcast ID(0xFE)이고 Option이 Reset all value(0xFF)일 경우, Factory Reset Instruction(0x06)은 동작하지 않음
-  - MX(2.0) FW42, 다이나믹셀 X 시리즈 FW42 이상부터 적용
+  - MX(2.0) FW42, 다이나믹셀-X 시리즈 FW42 이상부터 적용
 
 ### Parameters
 
-|Instruction Packet| 상세 설명|
-|:---:|:---|
-|Parameter 1|0xFF : 모든 값 초기화<br />0x01 : ID를 제외한 모든 값 초기화<br />0x02 : ID와 통신속도를 제외한 모든 값 초기화|
+| Instruction Packet | 상세 설명                                                                                                      |
+|:------------------:|:---------------------------------------------------------------------------------------------------------------|
+|    Parameter 1     | 0xFF : 모든 값 초기화<br />0x01 : ID를 제외한 모든 값 초기화<br />0x02 : ID와 통신속도를 제외한 모든 값 초기화 |
 
 ### 예제
 
@@ -335,15 +335,15 @@ Instruction Packet 의 처리 결과를 나타냄
 
 #### Factory Reset Instruction Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|P1|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0x01|0x04|0x00|0x06|0x01|0xA1|0xE6|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x04 | 0x00 | 0x06 | 0x01 | 0xA1 | 0xE6 |
 
 #### ID 1 Status Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|P1|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0x01|0x04|0x00|0x55|0x00|0xA1|0x0C|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1 | 0x0C |
 
 ## [Reboot](#reboot)
 
@@ -357,26 +357,26 @@ Instruction Packet 의 처리 결과를 나타냄
 
 #### Reboot Instruction Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0x01|0x03|0x00|0x08|0x2F|0x4E|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x03 | 0x00 | 0x08 | 0x2F | 0x4E |
 
 #### ID 1 Status Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|P1|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0x01|0x04|0x00|0x55|0x00|0xA1|0x0C|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1 | 0x0C |
 
 ## [Clear](#clear)
 
 ### 설명
 - 장치의 특정 상태를 해제하는 Instruction
-- 특이사항 : MX(2.0) FW42 이상, 다이나믹셀 X 시리즈 FW42 이상부터 지원
+- 특이사항 : MX(2.0) FW42 이상, 다이나믹셀-X 시리즈 FW42 이상부터 지원
 
 ### Parameters
 
 |  P1  | P2 ~ P5                           | 설명                                                                                                                                                                       |
-|:----:|:----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|:----:|:----------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0x01 | 고정값<br />(0x44 0x58 0x4C 0x22) | 현재 위치의 다수 회전(멀티턴)을 1회전(싱글턴)으로 변경<br />정지된 상태에서만 사용이 가능<br />구동중인 경우, Status packet은 Error 필드를 통해서 Result Fail(0x01)을 전송 |
 | 0x02 | -                                 | 사용하지 않음                                                                                                                                                              |
 | ...  | -                                 | 사용하지 않음                                                                                                                                                              |
@@ -409,24 +409,24 @@ Instruction Packet 의 처리 결과를 나타냄
 
 ### Parameters
 
-|Instruction Packet|상세 설명|
-|:---:|:---:|
-|Parameter 1|시작 주소의 하위 바이트|
-|Parameter 2|시작 주소의 상위 바이트|
-|Parameter 3|데이터 길이(X)의 하위 바이트|
-|Parameter 4|데이터 길이(X)의 상위 바이트|
-|Parameter 4+1|첫번째 장치의 ID|
-|Parameter 4+2|두번째 장치의 ID|
-|...|...|
-|Parameter 4+X|X번째 장치의 ID|
+| Instruction Packet |          상세 설명           |
+|:------------------:|:----------------------------:|
+|    Parameter 1     |   시작 주소의 하위 바이트    |
+|    Parameter 2     |   시작 주소의 상위 바이트    |
+|    Parameter 3     | 데이터 길이(X)의 하위 바이트 |
+|    Parameter 4     | 데이터 길이(X)의 상위 바이트 |
+|   Parameter 4+1    |       첫번째 장치의 ID       |
+|   Parameter 4+2    |       두번째 장치의 ID       |
+|        ...         |             ...              |
+|   Parameter 4+X    |       X번째 장치의 ID        |
 
 
-|Status Packet|상세 설명|
-|:---:|:---:|
-|Parameter 1|Frist Byte|
-|Parameter 2|Second Byte|
-|...|...|
-|Parameter X|X번째 바이트|
+| Status Packet |  상세 설명   |
+|:-------------:|:------------:|
+|  Parameter 1  |  Frist Byte  |
+|  Parameter 2  | Second Byte  |
+|      ...      |     ...      |
+|  Parameter X  | X번째 바이트 |
 
 ### 예제
 
@@ -436,21 +436,21 @@ Instruction Packet 의 처리 결과를 나타냄
 
 #### Sync Read Instruction Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|P1|P2|P3|P4|P5|P6|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0xFE|0x09|0x00|0x82|0x84|0x00|0x04|0x00|0x01|0x02|0xCE|0xFA|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  |  P2  |  P3  |  P4  |  P5  |  P6  | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0xFE | 0x09 | 0x00 | 0x82 | 0x84 | 0x00 | 0x04 | 0x00 | 0x01 | 0x02 | 0xCE | 0xFA |
 
 #### ID 1 Status Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|ERR|PARAM1|PARAM2|PARAM3|PARAM4|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0x01|0x08|0x00|0x55|0x00|0xA6|0x00|0x00|0x00|0x8C|0xC0|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | PARAM1 | PARAM2 | PARAM3 | PARAM4 | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:------:|:------:|:------:|:------:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x08 | 0x00 | 0x55 | 0x00 |  0xA6  |  0x00  |  0x00  |  0x00  | 0x8C | 0xC0 |
 
 #### ID 2 Status Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|ERR|PARAM1|PARAM2|PARAM3|PARAM4|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0x02|0x08|0x00|0x55|0x00|0x1F|0x08|0x00|0x00|0xBA|0xBE|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | PARAM1 | PARAM2 | PARAM3 | PARAM4 | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:------:|:------:|:------:|:------:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x02 | 0x08 | 0x00 | 0x55 | 0x00 |  0x1F  |  0x08  |  0x00  |  0x00  | 0xBA | 0xBE |
 
 ## [Sync Write](#sync-write)
 
@@ -462,23 +462,23 @@ Instruction Packet 의 처리 결과를 나타냄
 
 ### Parameters
 
-|Instruction Packet|상세 설명|
-|:---:|:---|
-|Parameter 1|시작 주소의 하위 바이트|
-|Parameter 2|시작 주소의 상위 바이트|
-|Parameter 3|데이터 길이(X)의 하위 바이트|
-|Parameter 4|데이터 길이(X)의 상위 바이트|
-|Parameter 5|`첫번째 장치` ID|
-|Parameter 5+1|`첫번째 장치` 첫번째 바이트|
-|Parameter 5+2|`첫번째 장치` 두번째 바이트|
-|...|`첫번째 장치`...|
-|Parameter 6+X|`두번째 장치` X번째 바이트|
-|Parameter 6|`두번째 장치` ID|
-|Parameter 6+1|`두번째 장치` 첫번째 바이트|
-|Parameter 6+2|`두번째 장치` 두번째 바이트|
-|...|`두번째 장치`...|
-|Parameter 6+X|`두번째 장치` X번째 바이트|
-|...|...|
+| Instruction Packet | 상세 설명                    |
+|:------------------:|:-----------------------------|
+|    Parameter 1     | 시작 주소의 하위 바이트      |
+|    Parameter 2     | 시작 주소의 상위 바이트      |
+|    Parameter 3     | 데이터 길이(X)의 하위 바이트 |
+|    Parameter 4     | 데이터 길이(X)의 상위 바이트 |
+|    Parameter 5     | `첫번째 장치` ID             |
+|   Parameter 5+1    | `첫번째 장치` 첫번째 바이트  |
+|   Parameter 5+2    | `첫번째 장치` 두번째 바이트  |
+|        ...         | `첫번째 장치`...             |
+|   Parameter 6+X    | `두번째 장치` X번째 바이트   |
+|    Parameter 6     | `두번째 장치` ID             |
+|   Parameter 6+1    | `두번째 장치` 첫번째 바이트  |
+|   Parameter 6+2    | `두번째 장치` 두번째 바이트  |
+|        ...         | `두번째 장치`...             |
+|   Parameter 6+X    | `두번째 장치` X번째 바이트   |
+|        ...         | ...                          |
 
 ### 예제
 
@@ -488,13 +488,13 @@ Instruction Packet 의 처리 결과를 나타냄
 
 #### Sync Write Instruction Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|P1|P2|P3|P4|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0xFE|0x11|0x00|0x83|0x74|0x00|0x04|0x00|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  |  P2  |  P3  |  P4  |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0xFE | 0x11 | 0x00 | 0x83 | 0x74 | 0x00 | 0x04 | 0x00 |
 
-|P5|P6|P7|P8|P9|P10|P11|P12|P13|P14|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0x01|0x96|0x00|0x00|0x00|0x02|0xAA|0x00|0x00|0x00|0x82|0x87|
+|  P5  |  P6  |  P7  |  P8  |  P9  | P10  | P11  | P12  | P13  | P14  | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0x01 | 0x96 | 0x00 | 0x00 | 0x00 | 0x02 | 0xAA | 0x00 | 0x00 | 0x00 | 0x82 | 0x87 |
 
 ## [Bulk Read](#bulk-read)
 
@@ -507,27 +507,27 @@ Instruction Packet 의 처리 결과를 나타냄
 
 ### Parameters
 
-|Instruction Packet|상세 설명|
-|:---:|:---|
-|Parameter 1|`첫번째 장치` ID|
-|Parameter 2|`첫번째 장치` 시작 주소 하위 바이트|
-|Parameter 3|`첫번째 장치` 시작 주소 상위 바이트|
-|Parameter 4|`첫번째 장치` 데이터 길이 하위 바이트|
-|Parameter 5|`첫번째 장치` 데이터 길이 상위 바이트|
-|Parameter 6|`두번째 장치` ID|
-|Parameter 7|`두번째 장치` 시작 주소 하위 바이트|
-|Parameter 8|`두번째 장치` 시작 주소 상위 바이트|
-|Parameter 9|`두번째 장치` 데이터 길이 하위 바이트|
-|Parameter 10|`두번째 장치` 데이터 길이 상위 바이트|
-|...|...|
+| Instruction Packet | 상세 설명                             |
+|:------------------:|:--------------------------------------|
+|    Parameter 1     | `첫번째 장치` ID                      |
+|    Parameter 2     | `첫번째 장치` 시작 주소 하위 바이트   |
+|    Parameter 3     | `첫번째 장치` 시작 주소 상위 바이트   |
+|    Parameter 4     | `첫번째 장치` 데이터 길이 하위 바이트 |
+|    Parameter 5     | `첫번째 장치` 데이터 길이 상위 바이트 |
+|    Parameter 6     | `두번째 장치` ID                      |
+|    Parameter 7     | `두번째 장치` 시작 주소 하위 바이트   |
+|    Parameter 8     | `두번째 장치` 시작 주소 상위 바이트   |
+|    Parameter 9     | `두번째 장치` 데이터 길이 하위 바이트 |
+|    Parameter 10    | `두번째 장치` 데이터 길이 상위 바이트 |
+|        ...         | ...                                   |
 
 
-|Status Packet|상세 설명|
-|:---:|:---:|
-|Parameter 1|첫번째 바이트|
-|Parameter 2|두번째 바이트|
-|...|...
-|Parameter X|X번째 바이트|
+| Status Packet |   상세 설명   |
+|:-------------:|:-------------:|
+|  Parameter 1  | 첫번째 바이트 |
+|  Parameter 2  | 두번째 바이트 |
+|      ...      |      ...      |
+|  Parameter X  | X번째 바이트  |
 
 ### 예제
 
@@ -537,25 +537,25 @@ Instruction Packet 의 처리 결과를 나타냄
 
 #### Bulk Read Instruction Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|P1|P2|P3|P4|P5|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0xFE|0x0D|0x00|0x92|0x01|0x90|0x00|0x02|0x00|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  |  P2  |  P3  |  P4  |  P5  |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0xFE | 0x0D | 0x00 | 0x92 | 0x01 | 0x90 | 0x00 | 0x02 | 0x00 |
 
-|P6|P7|P8|P9|P10|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0x02|0x92|0x00|0x01|0x00|0x1A|0x05|
+|  P6  |  P7  |  P8  |  P9  | P10  | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0x02 | 0x92 | 0x00 | 0x01 | 0x00 | 0x1A | 0x05 |
 
 #### ID 1 Status Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|ERR|PARAM1|PARAM2|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0x01|0x06|0x00|0x55|0x00|0x77|0x00|0xC3|0x69|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | PARAM1 | PARAM2 | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:------:|:------:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x06 | 0x00 | 0x55 | 0x00 |  0x77  |  0x00  | 0xC3 | 0x69 |
 
 #### ID 2 Status Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|ERR|PARAM1|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0x02|0x05|0x00|0x55|0x00|0x24|0x8B|0xA9|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | PARAM1 | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:------:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x02 | 0x05 | 0x00 | 0x55 | 0x00 |  0x24  | 0x8B | 0xA9 |
 
 ## [Bulk Write](#bulk-write)
 
@@ -568,27 +568,27 @@ Instruction Packet 의 처리 결과를 나타냄
 
 ### Parameters
 
-|Instruction Packet|상세 설명|
-|:---:|:---|
-|Parameter 1|`첫번째 장치` ID|
-|Parameter 2|`첫번째 장치` 시작 주소 하위 바이트|
-|Parameter 3|`첫번째 장치` 시작 주소 상위 바이트|
-|Parameter 4|`첫번째 장치` 데이터 길이 하위 바이트|
-|Parameter 5|`첫번째 장치` 데이터 길이 상위 바이트|
-|Parameter 5+1|`첫번째 장치` 첫번째 바이트|
-|Parameter 5+2|`첫번째 장치` 두번째 바이트|
-|...|...|
-|Parameter 5+X|`첫번째 장치` X번째 바이트|
-|Parameter 6+X|`두번째 장치` ID|
-|Parameter 7+X|`두번째 장치` 시작 주소 하위 바이트|
-|Parameter 8+X|`두번째 장치` 시작 주소 상위 바이트|
-|Parameter 9+X|`두번째 장치` 데이터 길이 하위 바이트|
-|Parameter 10+X|`두번째 장치` 데이터 길이 상위 바이트|
-|Parameter 10+X+1|`두번째 장치` 첫번째 바이트|
-|Parameter 10+X+2|`두번째 장치` 두번째 바이트|
-|...|...|
-|Parameter 10+X+Y|`두번째 장치` Y번째 바이트|
-|...|...|
+| Instruction Packet | 상세 설명                             |
+|:------------------:|:--------------------------------------|
+|    Parameter 1     | `첫번째 장치` ID                      |
+|    Parameter 2     | `첫번째 장치` 시작 주소 하위 바이트   |
+|    Parameter 3     | `첫번째 장치` 시작 주소 상위 바이트   |
+|    Parameter 4     | `첫번째 장치` 데이터 길이 하위 바이트 |
+|    Parameter 5     | `첫번째 장치` 데이터 길이 상위 바이트 |
+|   Parameter 5+1    | `첫번째 장치` 첫번째 바이트           |
+|   Parameter 5+2    | `첫번째 장치` 두번째 바이트           |
+|        ...         | ...                                   |
+|   Parameter 5+X    | `첫번째 장치` X번째 바이트            |
+|   Parameter 6+X    | `두번째 장치` ID                      |
+|   Parameter 7+X    | `두번째 장치` 시작 주소 하위 바이트   |
+|   Parameter 8+X    | `두번째 장치` 시작 주소 상위 바이트   |
+|   Parameter 9+X    | `두번째 장치` 데이터 길이 하위 바이트 |
+|   Parameter 10+X   | `두번째 장치` 데이터 길이 상위 바이트 |
+|  Parameter 10+X+1  | `두번째 장치` 첫번째 바이트           |
+|  Parameter 10+X+2  | `두번째 장치` 두번째 바이트           |
+|        ...         | ...                                   |
+|  Parameter 10+X+Y  | `두번째 장치` Y번째 바이트            |
+|        ...         | ...                                   |
 
 ### 예제
 
@@ -598,10 +598,10 @@ Instruction Packet 의 처리 결과를 나타냄
 
 #### Bulk Write Instruction Packet
 
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|P1|P2|P3|P4|P5|P6|P7|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0xFE|0x10|0x00|0x93|0x01|0x20|0x00|0x02|0x00|0xA0|0x00|
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  |  P2  |  P3  |  P4  |  P5  |  P6  |  P7  |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0xFE | 0x10 | 0x00 | 0x93 | 0x01 | 0x20 | 0x00 | 0x02 | 0x00 | 0xA0 | 0x00 |
 
-|P8|P9|P10|P11|P12|P13|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0x02|0x1F|0x00|0x01|0x00|0x50|0xB7|0x68|
+|  P8  |  P9  | P10  | P11  | P12  | P13  | CRC1 | CRC2 |  |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|::|
+| 0x02 | 0x1F | 0x00 | 0x01 | 0x00 | 0x50 | 0xB7 | 0x68 |  |

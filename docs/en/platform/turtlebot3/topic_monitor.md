@@ -57,7 +57,7 @@ If you want to see more detail topic message, click the `▶` button next to eac
 
 ![](/assets/images/platform/turtlebot3/example/rqt_4.png)
 
-- `/diagnostics` indicates a message the status of the components connected to the TurtleBot3, such as a MPU9250, DYNAMIXEL X, a HLS-LFCD-LDS, a battery and a OpenCR.
+- `/diagnostics` indicates a message the status of the components connected to the TurtleBot3, such as a MPU9250, DYNAMIXEL-X, a HLS-LFCD-LDS, a battery and a OpenCR.
 
 ![](/assets/images/platform/turtlebot3/example/rqt_5.png)
 

@@ -60,7 +60,7 @@ void setup() {
   dxl.begin(1000000);
   dxl.scan();
 
-  sync_read_param.addr = 128; //Present Velocity of DYNAMIXEL X series
+  sync_read_param.addr = 128; //Present Velocity of DYNAMIXEL-X series
   sync_read_param.length = 4;
   sync_read_param.xel[0].id = 1;
   sync_read_param.xel[1].id = 3;

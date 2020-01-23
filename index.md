@@ -49,17 +49,7 @@ Please also checkout **[ROBOTIS Download Center]** for useful resources.
 
 ### Control Table
 
--
-<select id="pro_plus_ctrl_table_select" onchange="window.location.href=this.value;">
-    <option selected disabled hidden>PRO+ Series</option>
-    <option value="/docs/en/dxl/pro_plus/h54p-200-s500-r/#control-table-of-eeprom-area">H54P-200-S500-R</option>
-    <option value="/docs/en/dxl/pro_plus/h54p-100-s500-r/#control-table-of-eeprom-area">H54P-100-S500-R</option>
-    <option value="/docs/en/dxl/pro_plus/h42p-020-s300-r/#control-table-of-eeprom-area">H42P-020-S300-R</option>
-    <option value="/docs/en/dxl/pro_plus/m54p-060-s250-r/#control-table-of-eeprom-area">M54P-060-S250-R</option>
-    <option value="/docs/en/dxl/pro_plus/m54p-040-s250-r/#control-table-of-eeprom-area">M54P-050-S250-R</option>
-    <option value="/docs/en/dxl/pro_plus/m42p-010-s260-r/#control-table-of-eeprom-area">M42P-010-S260-R</option>
-</select>
-
+<!-- 
 -
 <select id="pro_ctrl_table_select" onchange="window.location.href=this.value;">
     <option selected disabled hidden>PRO Series</option>
@@ -80,7 +70,8 @@ Please also checkout **[ROBOTIS Download Center]** for useful resources.
     <option value="/docs/en/dxl/pro/l54-30-s500-r/#control-table-of-eeprom-area">L54-30-S500-R</option>
     <option value="/docs/en/dxl/pro/l54-30-s400-r/#control-table-of-eeprom-area">L54-30-S400-R</option>
     <option value="/docs/en/dxl/pro/l42-10-s300-r/#control-table-of-eeprom-area">L42-10-S300-R</option>
-</select>
+</select> 
+-->
 
 -
 <select id="x_ctrl_table_select" onchange="window.location.href=this.value;">
@@ -102,6 +93,17 @@ Please also checkout **[ROBOTIS Download Center]** for useful resources.
     <option value="/docs/en/dxl/x/xh540-w270/#control-table-of-eeprom-area">XH540-W270</option>
     <option value="/docs/en/dxl/x/xh540-v150/#control-table-of-eeprom-area">XH540-V150</option>
     <option value="/docs/en/dxl/x/xh540-v270/#control-table-of-eeprom-area">XH540-V270</option>
+</select>
+
+-
+<select id="pro_plus_ctrl_table_select" onchange="window.location.href=this.value;">
+    <option selected disabled hidden>P Series</option>
+    <option value="/docs/en/dxl/pro_plus/ph54-200-s500-r/#control-table-of-eeprom-area">PH54-200-S500-R</option>
+    <option value="/docs/en/dxl/pro_plus/ph54-100-s500-r/#control-table-of-eeprom-area">PH54-100-S500-R</option>
+    <option value="/docs/en/dxl/pro_plus/ph42-020-s300-r/#control-table-of-eeprom-area">PH42-020-S300-R</option>
+    <option value="/docs/en/dxl/pro_plus/pm54-060-s250-r/#control-table-of-eeprom-area">PM54-060-S250-R</option>
+    <option value="/docs/en/dxl/pro_plus/pm54-040-s250-r/#control-table-of-eeprom-area">PM54-040-S250-R</option>
+    <option value="/docs/en/dxl/pro_plus/pm42-010-s260-r/#control-table-of-eeprom-area">PM42-010-S260-R</option>
 </select>
 
 -
@@ -142,6 +144,8 @@ Please also checkout **[ROBOTIS Download Center]** for useful resources.
 - [Bringup](/docs/en/platform/openmanipulator/#software-setup)
 
 ### TurtleBot3
+
+#### ROS
 <select id="turtlebot3_select" onchange="window.location.href=this.value;">
     <option value="/docs/en/platform/turtlebot3/setup/#setup">Setup</option>
     <option value="/docs/en/platform/turtlebot3/bringup/#bringup">Bring Up</option>
@@ -152,7 +156,22 @@ Please also checkout **[ROBOTIS Download Center]** for useful resources.
     <option value="/docs/en/platform/turtlebot3/manipulation/#manipulation">MANIPULATION</option>
     <option value="/docs/en/platform/turtlebot3/autonomous_driving/#autonomous-driving">AUTONOMOUS DRIVING</option>
     <option value="/docs/en/platform/turtlebot3/machine_learning/#machine-learning">MACHINE LEARNING</option>
+    <option value="/docs/en/platform/turtlebot3/applications/#applications">Applications</option>
     <option value="/docs/en/platform/turtlebot3/learn/#learn">Lectures(Learn)</option>
+</select>
+
+#### ROS 2
+<select id="turtlebot3_select_ros2" onchange="window.location.href=this.value;">
+    <option value="/docs/en/platform/turtlebot3/ros2_setup/#setup">Setup</option>
+    <option value="/docs/en/platform/turtlebot3/ros2_bringup/#bringup">Bring Up</option>
+    <option value="/docs/en/platform/turtlebot3/ros2_basic_operation/#basic-operation">Basic Operation</option>
+    <option value="/docs/en/platform/turtlebot3/ros2_slam/#slam">SLAM</option>
+    <option value="/docs/en/platform/turtlebot3/ros2_navigation/#navigation">NAVIGATION</option>
+    <option value="/docs/en/platform/turtlebot3/ros2_simulation/#simulation">SIMULATION</option>
+    <option value="/docs/en/platform/turtlebot3/ros2_manipulation/#manipulation">MANIPULATION</option>
+    <option value="/docs/en/platform/turtlebot3/ros2_autonomous_driving/#autonomous-driving">AUTONOMOUS DRIVING</option>
+    <option value="/docs/en/platform/turtlebot3/ros2_machine_learning/#machine-learning">MACHINE LEARNING</option>
+    <option value="/docs/en/platform/turtlebot3/applications/#ros2_applications">Applications</option>
 </select>
 
 

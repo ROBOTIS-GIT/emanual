@@ -7,12 +7,12 @@ Control Table은 장치 내부에 존재하는 값으로서 장치의 현재 상
 {% assign data_size= "1 ~ 4" %}
 
 {% if page.product_group=='dxl_pro_plus' %}
-**주의** : PRO+ 시리즈는 PRO와 다른 별개의 컨트롤 테이블을 사용합니다. PRO를 PRO+로 교체하는 경우 주의하시기 바랍니다.
+**주의** : 다이나믹셀-P 시리즈는 다이나믹셀 PRO 시리즈와 다른 별개의 컨트롤 테이블을 사용합니다. 다이나믹셀 PRO 시리즈를 다이나믹셀-P 시리즈로 교체하는 경우 주의하시기 바랍니다.
 {: .notice--warning}
 {% assign torque_enable= "512" %}
 
 {% elsif page.product_group=='dxl_pro_a' %}
-**주의** : PRO(A) 시리즈는 PRO와 다른 별개의 컨트롤 테이블을 사용합니다. PRO(A) 펌웨어로 변경하는 경우 주의하시기 바랍니다.
+**주의** : PRO(A) 시리즈는 PRO 시리즈와 다른 별개의 컨트롤 테이블을 사용합니다. PRO(A) 펌웨어로 변경하는 경우 주의하시기 바랍니다.
 {: .notice--warning}
 {% assign torque_enable= "512" %}
 
@@ -27,8 +27,8 @@ Control Table은 장치 내부에 존재하는 값으로서 장치의 현재 상
 {% elsif page.product_group=='dxl_mx2' %}
 {% capture mx2_control_table %}
 **주의**
-1. MX(2.0) Firmware는 MX series의 Control table과 주소가 다릅니다. 사용 전에 Control table 주소를 필히 확인해 주세요.
-2. MX(2.0) Firmware는 다이나믹셀 X의 기능을 상속받습니다. 따라서 [Protocol 1.0](/docs/kr/dxl/protocol1/)과 [Protocol 2.0](/docs/kr/dxl/protocol2/) 및 다양한 Operating Mode와 Secondary ID, Drive Mode, Bus Watchdog 등을 지원합니다. 자세한 사항은 Control table을 참고해주세요.
+1. MX(2.0) Firmware는 MX series의 Control table과 주소가 다릅니다. 사용 전에 Control Table 주소를 필히 확인해 주세요.
+2. MX(2.0) Firmware는 다이나믹셀-X의 기능을 상속받습니다. 따라서 [Protocol 1.0](/docs/kr/dxl/protocol1/)과 [Protocol 2.0](/docs/kr/dxl/protocol2/) 및 다양한 Operating Mode와 Secondary ID, Drive Mode, Bus Watchdog 등을 지원합니다. 자세한 사항은 Control table을 참고해주세요.
 {% endcapture %}
 
 <div class="notice--warning">{{ mx2_control_table | markdownify }}</div>

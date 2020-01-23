@@ -221,7 +221,7 @@ This section introduces how to install the ROBOTIS ROS Package for THORMANG3.
 - ROBOTIS-Framework-msgs : ROS Messages used in the ROBOTIS-Framework
 - ROBOTIS-Math : Math library for THORMANG3
 - ROBOTIS-THORMANG-MPC : ROS Packages for the Motion PC of THORMANG3(DXL PRO Ver.)
-- ROBOTIS-THORMANG-P-MPC : ROS Packages for the Motion PC of THORMANG3(DXL PRO+ Ver.)
+- ROBOTIS-THORMANG-P-MPC : ROS Packages for the Motion PC of THORMANG3(DXL P Ver.)
 - ROBOTIS-THORMANG-MPC-SENSORs : ROS Packages of sensors that is controled the Motion PC of THORMANG3 
 - ROBOTIS-THORMANG-PPC : ROS Packages for the Perception PC of THORMANG3
 - ROBOTIS-THORMANG-OPC : ROS Packages for the Operating PC of THORMANG3
@@ -267,7 +267,7 @@ Install the ROBOTIS ROS Package from the MPC. The ROS Package is installed by de
     
     `thormang3_manager/config/`  
 
-#### [THORMANG3 WITH DYNAMIXEL PRO+](#thormang3-with-dynimixel-proplus)
+#### [THORMANG3 WITH DYNAMIXEL-P](#thormang3-with-dynimixel-proplus)
   
 1. Download Packages from GitHub to the source folder in the catkin workspace.    
 

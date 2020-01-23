@@ -1,9 +1,11 @@
 <!-- 
 AX,EX,DX,RX Series : Shutdown [18], Torque Enable [24]
 X-Series: Shutdown [63], Torque Enable [64]
-Pro-Series: Shutdown [48], Torque Enable [562]
-Pro+ Series: Shutdown [63], Torque Enable [512]
+PRO-Series: Shutdown [48], Torque Enable [562]
+PRO+ Series: Shutdown [63], Torque Enable [512]
+Revision: PRO+ > DYNAMIXEL-P.
 -->
+
 
 장치는 동작 중에 발생하는 위험 상황을 감지하여 스스로를 보호할 수 있습니다.  
 각 Bit의 기능은 ‘OR’의 논리로 적용되기 때문에 중복 설정이 가능합니다.  

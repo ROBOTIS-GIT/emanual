@@ -4,7 +4,7 @@ lang: en
 ref: xh-series
 permalink: /docs/en/dxl/x_h/
 sidebar:
-  title: DYNAMIXEL XH Series
+  title: XH Series
   nav: ""
 ---
 

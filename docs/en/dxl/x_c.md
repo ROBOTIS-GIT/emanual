@@ -4,7 +4,7 @@ lang: en
 ref: xc-series
 permalink: /docs/en/dxl/x_c/
 sidebar:
-  title: DYNAMIXEL XC Series
+  title: XC Series
   nav: ""
 ---
 

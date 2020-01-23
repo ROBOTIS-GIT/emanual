@@ -22,7 +22,7 @@ page_number: 4
 ## [Hardware Specifications](#hardware-specifications)
 
 | Items                              | Burger                                                              | Waffle (Discontinued)                                               | Waffle Pi                                                           |
-| :--------------------------------- | :------------------------------------------------------------------ | :------------------------------------------------------------------ | :------------------------------------------------------------------ |
+|:-----------------------------------|:--------------------------------------------------------------------|:--------------------------------------------------------------------|:--------------------------------------------------------------------|
 | Maximum translational velocity     | 0.22 m/s                                                            | 0.26 m/s                                                            | 0.26 m/s                                                            |
 | Maximum rotational velocity        | 2.84 rad/s (162.72 deg/s)                                           | 1.82 rad/s (104.27 deg/s)                                           | 1.82 rad/s (104.27 deg/s)                                           |
 | Maximum payload                    | 15kg                                                                | 30kg                                                                | 30kg                                                                |
@@ -34,7 +34,7 @@ page_number: 4
 | SBC (Single Board Computers)       | Raspberry Pi 3 Model B and B+                                       | Intel® Joule™ 570x                                                  | Raspberry Pi 3 Model B and B+                                       |
 | MCU                                | 32-bit ARM Cortex®-M7 with FPU (216 MHz, 462 DMIPS)                 | 32-bit ARM Cortex®-M7 with FPU (216 MHz, 462 DMIPS)                 | 32-bit ARM Cortex®-M7 with FPU (216 MHz, 462 DMIPS)                 |
 | Remote Controller                  | -                                                                   | -                                                                   | RC-100B + BT-410 Set (Bluetooth 4, BLE)                             |
-| Actuator                           | DYNAMIXEL XL430-W250                                                | DYNAMIXEL XM430-W210                                                | DYNAMIXEL XM430-W210                                                |
+| Actuator                           | XL430-W250                                                          | XM430-W210                                                          | XM430-W210                                                          |
 | LDS(Laser Distance Sensor)         | 360 Laser Distance Sensor LDS-01                                    | 360 Laser Distance Sensor LDS-01                                    | 360 Laser Distance Sensor LDS-01                                    |
 | Camera                             | -                                                                   | Intel® Realsense™ R200                                              | Raspberry Pi Camera Module v2.1                                     |
 | IMU                                | Gyroscope 3 Axis<br />Accelerometer 3 Axis<br />Magnetometer 3 Axis | Gyroscope 3 Axis<br />Accelerometer 3 Axis<br />Magnetometer 3 Axis | Gyroscope 3 Axis<br />Accelerometer 3 Axis<br />Magnetometer 3 Axis |
@@ -98,7 +98,7 @@ page_number: 4
 
 ### [Actuators](#actuators)
 
-- [DYNAMIXEL XL430](/docs/en/dxl/x/xl430-w250/)
+- [XL430](/docs/en/dxl/x/xl430-w250/)
   - TurtleBot3 Burger
-- [DYNAMIXEL XM430](/docs/en/dxl/x/xm430-w210/)
+- [XM430](/docs/en/dxl/x/xm430-w210/)
   - TurtleBot3 Waffle, Waffle Pi

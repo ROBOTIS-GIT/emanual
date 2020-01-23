@@ -3,76 +3,6 @@ main:
   - title: "DYNAMIXEL"
     titlekr: "다이나믹셀"
     children:
-    - title: "AX Series"
-      titlekr: "AX 시리즈"
-      children:
-      - title: "AX-12W"
-        titlekr: "AX-12W"
-        url: /dxl/ax/ax-12w/
-      - title: "AX-12/12+/12A"
-        titlekr: "AX-12/12+/12A"
-        url: /dxl/ax/ax-12a/
-      - title: "AX-18F/18A"
-        titlekr: "AX-18F/18A"
-        url: /dxl/ax/ax-18a/
-    - title: "*EX Series"
-      titlekr: "*EX 시리즈"
-      children:
-      - title: "*EX-106+"
-        titlekr: "*EX-106+"
-        url: /dxl/ex/ex-106+/
-    - title: "*DX Series"
-      titlekr: "*DX 시리즈"
-      children:
-      - title: "*DX-113"
-        titlekr: "*DX-113"
-        url: /dxl/dx/dx-113/
-      - title: "*DX-116"
-        titlekr: "*DX-116"
-        url: /dxl/dx/dx-116/
-      - title: "*DX-117"
-        titlekr: "*DX-117"
-        url: /dxl/dx/dx-117/
-    - title: "*RX Series"
-      titlekr: "*RX 시리즈"
-      children:
-      - title: "*RX-10"
-        titlekr: "*RX-10"
-        url: /dxl/rx/rx-10/
-      - title: "*RX-24F"
-        titlekr: "*RX-24F"
-        url: /dxl/rx/rx-24f/
-      - title: "*RX-28"
-        titlekr: "*RX-28"
-        url: /dxl/rx/rx-28/
-      - title: "*RX-64"
-        titlekr: "*RX-64"
-        url: /dxl/rx/rx-64/
-    - title: "MX Series"
-      titlekr: "MX 시리즈"
-      url: /dxl/mx/
-      children:
-      - title: "MX-12W"
-        titlekr: "MX-12W"
-        url: /dxl/mx/mx-12w/
-      - title: "MX-28T/R/AT/AR"
-        titlekr: "MX-28T/R/AT/AR"
-        url: /dxl/mx/mx-28/
-      - title: "MX-64T/R/AT/AR"
-        titlekr: "MX-64T/R/AT/AR"
-        url: /dxl/mx/mx-64/
-      - title: "MX-106T/R"
-        titlekr: "MX-106T/R"
-        url: /dxl/mx/mx-106/
-      - title: "MX-28T/R/AT/AR(2.0)"
-        titlekr: "MX-28T/R/AT/AR(2.0)"
-        url: /dxl/mx/mx-28-2/
-      - title: "MX-64T/R/AT/AR(2.0)"
-        titlekr: "MX-64T/R/AT/AR(2.0)"
-        url: /dxl/mx/mx-64-2/
-      - title: "MX-106T/R(2.0)"
-        titlekr: "MX-106T/R(2.0)"
-        url: /dxl/mx/mx-106-2/
     - title: "X Series"
       titlekr: "X 시리즈"
       url: /dxl/x/
@@ -128,6 +58,98 @@ main:
       - title: "XH540-V270"
         titlekr: "XH540-V270"
         url: /dxl/x/xh540-v270/
+    - title: "P Series (PRO+)"
+      titlekr: "P 시리즈 (PRO+)"
+      url: /dxl/p/
+      children:
+      - title: "PH42-020-S300-R (H42P)"
+        titlekr: "PH42-020-S300-R (H42P)"
+        url: /dxl/p/ph42-020-s300-r/
+      - title: "PH54-100-S500-R (H54P)"
+        titlekr: "PH54-100-S500-R (H54P)"
+        url: /dxl/p/ph54-100-s500-r/
+      - title: "PH54-200-S500-R (H54P)"
+        titlekr: "PH54-200-S500-R (H54P)"
+        url: /dxl/p/ph54-200-s500-r/
+      - title: "PM42-010-S260-R (M42P)"
+        titlekr: "PM42-010-S260-R (M42P)"
+        url: /dxl/p/pm42-010-s260-r/
+      - title: "PM54-040-S250-R (M54P)"
+        titlekr: "PM54-040-S250-R (M54P)"
+        url: /dxl/p/pm54-040-s250-r/
+      - title: "PM54-060-S250-R (M54P)"
+        titlekr: "PM54-060-S250-R (M54P)"
+        url: /dxl/p/pm54-060-s250-r/
+    - title: "MX Series"
+      titlekr: "MX 시리즈"
+      url: /dxl/mx/
+      children:
+      - title: "MX-12W"
+        titlekr: "MX-12W"
+        url: /dxl/mx/mx-12w/
+      - title: "MX-28T/R/AT/AR"
+        titlekr: "MX-28T/R/AT/AR"
+        url: /dxl/mx/mx-28/
+      - title: "MX-64T/R/AT/AR"
+        titlekr: "MX-64T/R/AT/AR"
+        url: /dxl/mx/mx-64/
+      - title: "MX-106T/R"
+        titlekr: "MX-106T/R"
+        url: /dxl/mx/mx-106/
+      - title: "MX-28T/R/AT/AR(2.0)"
+        titlekr: "MX-28T/R/AT/AR(2.0)"
+        url: /dxl/mx/mx-28-2/
+      - title: "MX-64T/R/AT/AR(2.0)"
+        titlekr: "MX-64T/R/AT/AR(2.0)"
+        url: /dxl/mx/mx-64-2/
+      - title: "MX-106T/R(2.0)"
+        titlekr: "MX-106T/R(2.0)"
+        url: /dxl/mx/mx-106-2/
+    - title: "AX Series"
+      titlekr: "AX 시리즈"
+      children:
+      - title: "AX-12W"
+        titlekr: "AX-12W"
+        url: /dxl/ax/ax-12w/
+      - title: "AX-12/12+/12A"
+        titlekr: "AX-12/12+/12A"
+        url: /dxl/ax/ax-12a/
+      - title: "AX-18F/18A"
+        titlekr: "AX-18F/18A"
+        url: /dxl/ax/ax-18a/
+    - title: "*EX Series"
+      titlekr: "*EX 시리즈"
+      children:
+      - title: "*EX-106+"
+        titlekr: "*EX-106+"
+        url: /dxl/ex/ex-106+/
+    - title: "*DX Series"
+      titlekr: "*DX 시리즈"
+      children:
+      - title: "*DX-113"
+        titlekr: "*DX-113"
+        url: /dxl/dx/dx-113/
+      - title: "*DX-116"
+        titlekr: "*DX-116"
+        url: /dxl/dx/dx-116/
+      - title: "*DX-117"
+        titlekr: "*DX-117"
+        url: /dxl/dx/dx-117/
+    - title: "*RX Series"
+      titlekr: "*RX 시리즈"
+      children:
+      - title: "*RX-10"
+        titlekr: "*RX-10"
+        url: /dxl/rx/rx-10/
+      - title: "*RX-24F"
+        titlekr: "*RX-24F"
+        url: /dxl/rx/rx-24f/
+      - title: "*RX-28"
+        titlekr: "*RX-28"
+        url: /dxl/rx/rx-28/
+      - title: "*RX-64"
+        titlekr: "*RX-64"
+        url: /dxl/rx/rx-64/
     - title: "*PRO Series"
       titlekr: "*PRO 시리즈"
       url: /dxl/pro/
@@ -183,28 +205,6 @@ main:
       - title: "*L42-10-S300-R"
         titlekr: "*L42-10-S300-R"
         url: /dxl/pro/l42-10-s300-r/
-    - title: "PRO+ Series"
-      titlekr: "PRO+ 시리즈"
-      url: /dxl/pro_plus/
-      children:
-      - title: "PH54-200-S500-R"
-        titlekr: "PH54-200-S500-R"
-        url: /dxl/pro_plus/ph54-200-s500-r/
-      - title: "PH54-100-S500-R"
-        titlekr: "PH54-100-S500-R"
-        url: /dxl/pro_plus/ph54-100-s500-r/
-      - title: "PH42-020-S300-R"
-        titlekr: "PH42-020-S300-R"
-        url: /dxl/pro_plus/ph42-020-s300-r/
-      - title: "PM54-060-S250-R"
-        titlekr: "PM54-060-S250-R"
-        url: /dxl/pro_plus/pm54-060-s250-r/
-      - title: "PM54-040-S250-R"
-        titlekr: "PM54-040-S250-R"
-        url: /dxl/pro_plus/pm54-040-s250-r/
-      - title: "PM42-010-S260-R"
-        titlekr: "PM42-010-S260-R"
-        url: /dxl/pro_plus/pm42-010-s260-r/
     - title: "Procotol 1.0"
       titlekr: "프로토콜 1.0"
       url: /dxl/protocol1/
@@ -253,9 +253,9 @@ main:
       - title: "*Manipulator-H"
         titlekr: "*Manipulator-H"
         url: /platform/manipulator_h/introduction/
-      - title: "OpenMANIPULATOR-PRO"
-        titlekr: "OpenMANIPULATOR-PRO"
-        url: /platform/openmanipulator_pro/overview/
+      - title: "OpenMANIPULATOR-P"
+        titlekr: "OpenMANIPULATOR-P"
+        url: /platform/openmanipulator_p/overview/
       - title: "OpenMANIPULATOR-X"
         titlekr: "OpenMANIPULATOR-X"
         url: /platform/openmanipulator_x/overview/
@@ -661,38 +661,82 @@ main:
         url: /faq/
 
 all-dynamixel:
-  - title: "AX Series"
-    titlekr: "AX Series"
-    url: /dxl/#ax-series
-    urlkr: /dxl/#ax-시리즈
-  - title: "EX Series"
-    titlekr: "EX Series"
-    url: /dxl/#ex-series
-    urlkr: /dxl/#ex-시리즈
-  - title: "DX Series"
-    titlekr: "DX Series"
-    url: /dxl/#dx-series
-    urlkr: /dxl/#dx-시리즈
-  - title: "RX Series"
-    titlekr: "RX Series"
-    url: /dxl/#rx-series
-    urlkr: /dxl/#rx-시리즈
-  - title: "MX Series"
-    titlekr: "MX Series"
-    url: /dxl/#mx-series
-    urlkr: /dxl/#mx-시리즈
-  - title: "X Series"
-    titlekr: "X Series"
-    url: /dxl/#x-series
-    urlkr: /dxl/#x-시리즈
-  - title: "PRO Series"
-    titlekr: "PRO Series"
-    url: /dxl/#pro-series
-    urlkr: /dxl/#pro-시리즈
-  - title: "PRO+ Series"
-    titlekr: "PRO+ Series"
-    url: /dxl/#pro-plus-series
-    urlkr: /dxl/#pro-plus-시리즈
+  - title: "DYNAMIXEL"
+    titlekr: "다이나믹셀 "
+    url: /dxl/#dynamixel-
+    urlkr: /dxl/#다이나믹셀-
+    children:
+      - title: "AX Series"
+        titlekr: "AX 시리즈"
+        url: /dxl/#ax-series
+        urlkr: /dxl/#ax-시리즈 
+      - title: "EX Series"
+        titlekr: "EX 시리즈"
+        url: /dxl/#ex-series
+        urlkr: /dxl/#ex-시리즈
+      - title: "DX Series"
+        titlekr: "DX 시리즈"
+        url: /dxl/#dx-series
+        urlkr: /dxl/#dx-시리즈
+      - title: "RX Series"
+        titlekr: "RX 시리즈"
+        url: /dxl/#rx-series
+        urlkr: /dxl/#rx-시리즈
+      - title: "MX Series"
+        titlekr: "MX 시리즈"
+        url: /dxl/#mx-series
+        urlkr: /dxl/#mx-시리즈
+  - title: "DYNAMIXEL-X"
+    titlekr: "다이나믹셀-X"
+    url: /dxl/#dynamixel-x
+    urlkr: /dxl/#다이나믹셀-x
+    children:
+      - title: "XL Series"
+        titlekr: "XL 시리즈"
+        url: /dxl/#xl-series
+        urlkr: /dxl/#xl-시리즈
+      - title: "XC Series"
+        titlekr: "XC 시리즈"
+        url: /dxl/#xc-series
+        urlkr: /dxl/#xc-시리즈
+      - title: "XM Series"
+        titlekr: "XM 시리즈"
+        url: /dxl/#xm-series
+        urlkr: /dxl/#xm-시리즈
+      - title: "XH Series"
+        titlekr: "XH 시리즈"
+        url: /dxl/#xh-series
+        urlkr: /dxl/#xh-시리즈                       
+  - title: "DYNAMIXEL PRO"
+    titlekr: "다이나믹셀 PRO"
+    url: /dxl/#dynamixel-pro
+    urlkr: /dxl/#다이나믹셀-pro
+    children:
+      - title: "L Series"
+        titlekr: "L 시리즈"
+        url: /dxl/#l-series
+        urlkr: /dxl/#l-시리즈
+      - title: "M Series"
+        titlekr: "M 시리즈"
+        url: /dxl/#m-series
+        urlkr: /dxl/#m-시리즈
+      - title: "H Series"
+        titlekr: "H 시리즈"
+        url: /dxl/#h-series
+        urlkr: /dxl/#h-시리즈                
+  - title: "DYNAMIXEL-P"
+    titlekr: "다이나믹셀-P"
+    url: /dxl/#dynamixel-p
+    urlkr: /dxl/#다이나믹셀-p
+    children:
+      - title: "PH Seriese"
+        titlekr: "PH 시리즈"
+        url: /dxl/#ph-series
+        urlkr: /dxl/#ph-시리즈
+      - title: "PM Seriese"
+        titlekr: "PM 시리즈"
+        url: /dxl/#pm-series
+        urlkr: /dxl/#pm-시리즈        
 
 dynamixel_pro:
   - title: "Product Lineup"
@@ -708,23 +752,23 @@ dynamixel_pro:
     url: /dxl/pro/#communication-circuitry
     urlkr: /dxl/pro/#통신-회로
 
-dynamixel_pro_plus:
+dynamixel_p:
   - title: "Product Lineup"
     titlekr: "제품 라인업"
-    url: /dxl/pro_plus/#product-lineup
-    urlkr: /dxl/pro_plus/#제품-라인업
+    url: /dxl/p/#product-lineup
+    urlkr: /dxl/p/#제품-라인업
   - title: "Key Specifications"
     titlekr: "주요 사양"
-    url: /dxl/pro_plus/#key-specifications
-    urlkr: /dxl/pro_plus/#주요-사양
+    url: /dxl/p/#key-specifications
+    urlkr: /dxl/p/#주요-사양
   - title: "Communication Circuitry"
     titlekr: "통신 회로"
-    url: /dxl/pro_plus/#communication-circuitry
-    urlkr: /dxl/pro_plus/#통신-회로
+    url: /dxl/p/#communication-circuitry
+    urlkr: /dxl/p/#통신-회로
   - title: "Drawing"
     titlekr: "기구 도면"
-    url: /dxl/pro_plus/#drawing
-    urlkr: /dxl/pro_plus/#기구-도면
+    url: /dxl/p/#drawing
+    urlkr: /dxl/p/#기구-도면
 
 #AX-12W sidebar
 ax-12w:
@@ -3324,8 +3368,8 @@ mx-28-2:
         - title: "Secondary(Shadow) ID(12)"
           titlekr: "Secondary(Shadow) ID(12)"
           url: /dxl/mx/mx-28-2/#secondaryshadow-id12
-        - title: "Protocol Version(13)"
-          titlekr: "Protocol Version(13)"
+        - title: "Protocol Type(13)"
+          titlekr: "Protocol Type(13)"
           url: /dxl/mx/mx-28-2/#protocol-version13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
@@ -3545,8 +3589,8 @@ mx-64-2:
         - title: "Secondary(Shadow) ID(12)"
           titlekr: "Secondary(Shadow) ID(12)"
           url: /dxl/mx/mx-64-2/#secondaryshadow-id12
-        - title: "Protocol Version(13)"
-          titlekr: "Protocol Version(13)"
+        - title: "Protocol Type(13)"
+          titlekr: "Protocol Type(13)"
           url: /dxl/mx/mx-64-2/#protocol-version13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
@@ -3773,8 +3817,8 @@ mx-106-2:
         - title: "Secondary(Shadow) ID(12)"
           titlekr: "Secondary(Shadow) ID(12)"
           url: /dxl/mx/mx-106-2/#secondaryshadow-id12
-        - title: "Protocol Version(13)"
-          titlekr: "Protocol Version(13)"
+        - title: "Protocol Type(13)"
+          titlekr: "Protocol Type(13)"
           url: /dxl/mx/mx-106-2/#protocol-version13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
@@ -3930,8 +3974,8 @@ dxl_x_main:
     titlekr: "특징"
     url: /dxl/x/#features
     urlkr: /dxl/x/#특징
-  - title: "DYNAMIXEL X"
-    titlekr: "다이나믹셀 X"
+  - title: "DYNAMIXEL-X"
+    titlekr: "다이나믹셀-X"
     url: /dxl/x/#dynamixel-x
     urlkr: /dxl/x/#다이나믹셀-x
     children:
@@ -4026,8 +4070,8 @@ xh430-v210:
         - title: "Secondary(Shadow) ID(12)"
           titlekr: "Secondary(Shadow) ID(12)"
           url: /dxl/x/xh430-v210/#secondaryshadow-id12
-        - title: "Protocol Version(13)"
-          titlekr: "Protocol Version(13)"
+        - title: "Protocol Type(13)"
+          titlekr: "Protocol Type(13)"
           url: /dxl/x/xh430-v210/#protocol-version13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
@@ -4262,8 +4306,8 @@ xh430-v350:
         - title: "Secondary(Shadow) ID(12)"
           titlekr: "Secondary(Shadow) ID(12)"
           url: /dxl/x/xh430-v350/#secondaryshadow-id12
-        - title: "Protocol Version(13)"
-          titlekr: "Protocol Version(13)"
+        - title: "Protocol Type(13)"
+          titlekr: "Protocol Type(13)"
           url: /dxl/x/xh430-v350/#protocol-version13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
@@ -4498,8 +4542,8 @@ xh430-w210:
         - title: "Secondary(Shadow) ID(12)"
           titlekr: "Secondary(Shadow) ID(12)"
           url: /dxl/x/xh430-w210/#secondaryshadow-id12
-        - title: "Protocol Version(13)"
-          titlekr: "Protocol Version(13)"
+        - title: "Protocol Type(13)"
+          titlekr: "Protocol Type(13)"
           url: /dxl/x/xh430-w210/#protocol-version13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
@@ -4734,8 +4778,8 @@ xh430-w350:
         - title: "Secondary(Shadow) ID(12)"
           titlekr: "Secondary(Shadow) ID(12)"
           url: /dxl/x/xh430-w350/#secondaryshadow-id12
-        - title: "Protocol Version(13)"
-          titlekr: "Protocol Version(13)"
+        - title: "Protocol Type(13)"
+          titlekr: "Protocol Type(13)"
           url: /dxl/x/xh430-w350/#protocol-version13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
@@ -5032,8 +5076,8 @@ xl430-w250:
           - title: "Secondary(Shadow) ID(12)"
             titlekr: "Secondary(Shadow) ID(12)"
             url: /dxl/x/xl430-w250/#secondaryshadow-id12
-          - title: "Protocol Version(13)"
-            titlekr: "Protocol Version(13)"
+          - title: "Protocol Type(13)"
+            titlekr: "Protocol Type(13)"
             url: /dxl/x/xl430-w250/#protocol-version13
           - title: "Homing Offset(20)"
             titlekr: "Homing Offset(20)"
@@ -5158,6 +5202,10 @@ xl430-w250:
     url: /dxl/x/xl430-w250/#reference
     urlkr: /dxl/x/xl430-w250/#참고자료
     children:
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/x/xl430-w250/#certifications
+        urlkr: /dxl/x/xl430-w250/#인증-획득
       - title: "Quick Start"
         titlekr: "퀵스타트"
         url: /dxl/x/xl430-w250/#quick-start
@@ -6388,8 +6436,8 @@ xm430-w350:
         - title: "Secondary(Shadow) ID(12)"
           titlekr: "Secondary(Shadow) ID(12)"
           url: /dxl/x/xm430-w350/#secondaryshadow-id12
-        - title: "Protocol Version(13)"
-          titlekr: "Protocol Version(13)"
+        - title: "Protocol Type(13)"
+          titlekr: "Protocol Type(13)"
           url: /dxl/x/xm430-w350/#protocol-version13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
@@ -6624,8 +6672,8 @@ xm540-w150:
         - title: "Secondary(Shadow) ID(12)"
           titlekr: "Secondary(Shadow) ID(12)"
           url: /dxl/x/xm540-w150/#secondaryshadow-id12
-        - title: "Protocol Version(13)"
-          titlekr: "Protocol Version(13)"
+        - title: "Protocol Type(13)"
+          titlekr: "Protocol Type(13)"
           url: /dxl/x/xm540-w150/#protocol-version13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
@@ -6866,8 +6914,8 @@ xm540-w270:
         - title: "Secondary(Shadow) ID(12)"
           titlekr: "Secondary(Shadow) ID(12)"
           url: /dxl/x/xm540-w270/#secondaryshadow-id12
-        - title: "Protocol Version(13)"
-          titlekr: "Protocol Version(13)"
+        - title: "Protocol Type(13)"
+          titlekr: "Protocol Type(13)"
           url: /dxl/x/xm540-w270/#protocol-version13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
@@ -7108,8 +7156,8 @@ xh540-w150:
         - title: "Secondary(Shadow) ID(12)"
           titlekr: "Secondary(Shadow) ID(12)"
           url: /dxl/x/xh540-w150/#secondaryshadow-id12
-        - title: "Protocol Version(13)"
-          titlekr: "Protocol Version(13)"
+        - title: "Protocol Type(13)"
+          titlekr: "Protocol Type(13)"
           url: /dxl/x/xh540-w150/#protocol-version13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
@@ -7350,8 +7398,8 @@ xh540-w270:
         - title: "Secondary(Shadow) ID(12)"
           titlekr: "Secondary(Shadow) ID(12)"
           url: /dxl/x/xh540-w270/#secondaryshadow-id12
-        - title: "Protocol Version(13)"
-          titlekr: "Protocol Version(13)"
+        - title: "Protocol Type(13)"
+          titlekr: "Protocol Type(13)"
           url: /dxl/x/xh540-w270/#protocol-version13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
@@ -7592,8 +7640,8 @@ xh540-v150:
         - title: "Secondary(Shadow) ID(12)"
           titlekr: "Secondary(Shadow) ID(12)"
           url: /dxl/x/xh540-v150/#secondaryshadow-id12
-        - title: "Protocol Version(13)"
-          titlekr: "Protocol Version(13)"
+        - title: "Protocol Type(13)"
+          titlekr: "Protocol Type(13)"
           url: /dxl/x/xh540-v150/#protocol-version13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
@@ -7830,8 +7878,8 @@ xh540-v270:
         - title: "Secondary(Shadow) ID(12)"
           titlekr: "Secondary(Shadow) ID(12)"
           url: /dxl/x/xh540-v270/#secondaryshadow-id12
-        - title: "Protocol Version(13)"
-          titlekr: "Protocol Version(13)"
+        - title: "Protocol Type(13)"
+          titlekr: "Protocol Type(13)"
           url: /dxl/x/xh540-v270/#protocol-version13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
@@ -11535,1376 +11583,1376 @@ m54-60-s250-ra:
 ph54-200-s500-r:
 - title: "Specifications"
   titlekr: "주요 사양"
-  url: /dxl/pro_plus/ph54-200-s500-r/#specifications
-  urlkr: /dxl/pro_plus/ph54-200-s500-r/#주요-사양
+  url: /dxl/p/ph54-200-s500-r/#specifications
+  urlkr: /dxl/p/ph54-200-s500-r/#주요-사양
   children:
     - title: "Performance Graph"
       titlekr: "성능 그래프"
-      url: /dxl/pro_plus/ph54-200-s500-r/#performance-graph
-      urlkr: /dxl/pro_plus/ph54-200-s500-r/#성능-그래프
+      url: /dxl/p/ph54-200-s500-r/#performance-graph
+      urlkr: /dxl/p/ph54-200-s500-r/#성능-그래프
 - title: "Control Table"
   titlekr: "컨트롤 테이블"
-  url: /dxl/pro_plus/ph54-200-s500-r/#control-table
-  urlkr: /dxl/pro_plus/ph54-200-s500-r/#컨트롤-테이블
+  url: /dxl/p/ph54-200-s500-r/#control-table
+  urlkr: /dxl/p/ph54-200-s500-r/#컨트롤-테이블
   children:
     - title: "Control Table, Data, Address"
       titlekr: "컨트롤 테이블, 데이터, 주소"
-      url: /dxl/pro_plus/ph54-200-s500-r/#control-table-data-address
-      urlkr: /dxl/pro_plus/ph54-200-s500-r/#컨트롤-테이블-데이터-주소
+      url: /dxl/p/ph54-200-s500-r/#control-table-data-address
+      urlkr: /dxl/p/ph54-200-s500-r/#컨트롤-테이블-데이터-주소
       children:
         - title: "Area(EEPROM, RAM)"
           titlekr: "영역 (EEPROM, RAM)"
-          url: /dxl/pro_plus/ph54-200-s500-r/#area-eeprom-ram
-          urlkr: /dxl/pro_plus/ph54-200-s500-r/#영역-eeprom-ram
+          url: /dxl/p/ph54-200-s500-r/#area-eeprom-ram
+          urlkr: /dxl/p/ph54-200-s500-r/#영역-eeprom-ram
         - title: "Size"
           titlekr: "크기"
-          url: /dxl/pro_plus/ph54-200-s500-r/#size
-          urlkr: /dxl/pro_plus/ph54-200-s500-r/#크기
+          url: /dxl/p/ph54-200-s500-r/#size
+          urlkr: /dxl/p/ph54-200-s500-r/#크기
         - title: "Access"
           titlekr: "접근권한"
-          url: /dxl/pro_plus/ph54-200-s500-r/#access
-          urlkr: /dxl/pro_plus/ph54-200-s500-r/#접근권한
+          url: /dxl/p/ph54-200-s500-r/#access
+          urlkr: /dxl/p/ph54-200-s500-r/#접근권한
         - title: "Initial Value"
           titlekr: "초기값"
-          url: /dxl/pro_plus/ph54-200-s500-r/#initial-value
-          urlkr: /dxl/pro_plus/ph54-200-s500-r/#초기값
+          url: /dxl/p/ph54-200-s500-r/#initial-value
+          urlkr: /dxl/p/ph54-200-s500-r/#초기값
     - title: "EEPROM Area"
       titlekr: "EEPROM 영역"
-      url: /dxl/pro_plus/ph54-200-s500-r/#control-table-of-eeprom-area
-      urlkr: /dxl/pro_plus/ph54-200-s500-r/#eeprom-영역
+      url: /dxl/p/ph54-200-s500-r/#control-table-of-eeprom-area
+      urlkr: /dxl/p/ph54-200-s500-r/#eeprom-영역
     - title: "RAM Area"
       titlekr: "RAM 영역"
-      url: /dxl/pro_plus/ph54-200-s500-r/#control-table-of-ram-area
-      urlkr: /dxl/pro_plus/ph54-200-s500-r/#ram-영역
+      url: /dxl/p/ph54-200-s500-r/#control-table-of-ram-area
+      urlkr: /dxl/p/ph54-200-s500-r/#ram-영역
     - title: "Control Table Description"
       titlekr: "컨트롤 테이블 설명"
-      url: /dxl/pro_plus/ph54-200-s500-r/#control-table-description
-      urlkr: /dxl/pro_plus/ph54-200-s500-r/#컨트롤-테이블-설명
+      url: /dxl/p/ph54-200-s500-r/#control-table-description
+      urlkr: /dxl/p/ph54-200-s500-r/#컨트롤-테이블-설명
       children:
         - title: "Model Number(0)"
           titlekr: "Model Number(0)"
-          url: /dxl/pro_plus/ph54-200-s500-r/#model-number0
+          url: /dxl/p/ph54-200-s500-r/#model-number0
         - title: "Firmware Version(6)"
           titlekr: "Firmware Version(6)"
-          url: /dxl/pro_plus/ph54-200-s500-r/#firmware-version6
+          url: /dxl/p/ph54-200-s500-r/#firmware-version6
         - title: "ID(7)"
           titlekr: "ID(7)"
-          url: /dxl/pro_plus/ph54-200-s500-r/#id7
+          url: /dxl/p/ph54-200-s500-r/#id7
         - title: "Baud Rate(8)"
           titlekr: "Baud Rate(8)"
-          url: /dxl/pro_plus/ph54-200-s500-r/#baud-rate8
+          url: /dxl/p/ph54-200-s500-r/#baud-rate8
         - title: "Return Delay Time(9)"
           titlekr: "Return Delay Time(9)"
-          url: /dxl/pro_plus/ph54-200-s500-r/#return-delay-time9
+          url: /dxl/p/ph54-200-s500-r/#return-delay-time9
         - title: "Operating Mode(11)"
           titlekr: "Operating Mode(11)"
-          url: /dxl/pro_plus/ph54-200-s500-r/#operating-mode11
+          url: /dxl/p/ph54-200-s500-r/#operating-mode11
         - title: "Secondary ID(12)"
           titlekr: "Secondary ID(12)"
-          url: /dxl/pro_plus/ph54-200-s500-r/#secondary-id12
+          url: /dxl/p/ph54-200-s500-r/#secondary-id12
         - title: "Protocol Type(13)"
           titlekr: "Protocol Type(13)"
-          url: /dxl/pro_plus/ph54-200-s500-r/#protocol-type13
+          url: /dxl/p/ph54-200-s500-r/#protocol-type13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
-          url: /dxl/pro_plus/ph54-200-s500-r/#homing-offset20
+          url: /dxl/p/ph54-200-s500-r/#homing-offset20
         - title: "Moving Threshold(24)"
           titlekr: "Moving Threshold(24)"
-          url: /dxl/pro_plus/ph54-200-s500-r/#moving-threshold24
+          url: /dxl/p/ph54-200-s500-r/#moving-threshold24
         - title: "Temperature Limit(31)"
           titlekr: "Temperature Limit(31)"
-          url: /dxl/pro_plus/ph54-200-s500-r/#temperature-limit31
+          url: /dxl/p/ph54-200-s500-r/#temperature-limit31
         - title: "Max/Min Voltage Limit(32, 34)"
           titlekr: "Max/Min Voltage Limit(32, 34)"
-          url: /dxl/pro_plus/ph54-200-s500-r/#maxmin-voltage-limit32-34
+          url: /dxl/p/ph54-200-s500-r/#maxmin-voltage-limit32-34
         - title: "PWM Limit(36)"
           titlekr: "PWM Limit(36)"
-          url: /dxl/pro_plus/ph54-200-s500-r/#pwm-limit36
+          url: /dxl/p/ph54-200-s500-r/#pwm-limit36
         - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
-          url: /dxl/pro_plus/ph54-200-s500-r/#current-limit38
+          url: /dxl/p/ph54-200-s500-r/#current-limit38
         - title: "Acceleration Limit(40)"
           titlekr: "Acceleration Limit(40)"
-          url: /dxl/pro_plus/ph54-200-s500-r/#acceleration-limit40
+          url: /dxl/p/ph54-200-s500-r/#acceleration-limit40
         - title: "Velocity Limit(44)"
           titlekr: "Velocity Limit(44)"
-          url: /dxl/pro_plus/ph54-200-s500-r/#velocity-limit44
+          url: /dxl/p/ph54-200-s500-r/#velocity-limit44
         - title: "Max/Min Position Limit(48, 52)"
           titlekr: "Max/Min Position Limit(48, 52)"
-          url: /dxl/pro_plus/ph54-200-s500-r/#maxmin-position-limit48-52
+          url: /dxl/p/ph54-200-s500-r/#maxmin-position-limit48-52
         - title: "External Port Mode"
           titlekr: "External Port Mode"
-          url: /dxl/pro_plus/ph54-200-s500-r/#external-port-mode-external-port-data
+          url: /dxl/p/ph54-200-s500-r/#external-port-mode-external-port-data
         - title: "Shutdown(63)"
           titlekr: "Shutdown(63)"
-          url: /dxl/pro_plus/ph54-200-s500-r/#shutdown63
+          url: /dxl/p/ph54-200-s500-r/#shutdown63
         - title: "Indirect Address"
           titlekr: "Indirect Address/Data"
-          url: /dxl/pro_plus/ph54-200-s500-r/#indirect-address-indirect-data
+          url: /dxl/p/ph54-200-s500-r/#indirect-address-indirect-data
         - title: "Torque Enable(512)"
           titlekr: "Torque Enable(512)"
-          url: /dxl/pro_plus/ph54-200-s500-r/#torque-enable512
+          url: /dxl/p/ph54-200-s500-r/#torque-enable512
         - title: "RGB LED(513)"
           titlekr: "RGB LED(513)"
-          url: /dxl/pro_plus/ph54-200-s500-r/#rgb-led513
+          url: /dxl/p/ph54-200-s500-r/#rgb-led513
         - title: "Status Return Level(516)"
           titlekr: "Status Return Level(516)"
-          url: /dxl/pro_plus/ph54-200-s500-r/#status-return-level516
+          url: /dxl/p/ph54-200-s500-r/#status-return-level516
         - title: "Registered Instruction(517)"
           titlekr: "Registered Instruction(517)"
-          url: /dxl/pro_plus/ph54-200-s500-r/#registered-instruction517
+          url: /dxl/p/ph54-200-s500-r/#registered-instruction517
         - title: "Hardware Error Status(518)"
           titlekr: "Hardware Error Status(518)"
-          url: /dxl/pro_plus/ph54-200-s500-r/#hardware-error-status518
+          url: /dxl/p/ph54-200-s500-r/#hardware-error-status518
         - title: "Velocity PI Gain(524, 526)"
           titlekr: "Velocity PI Gain(524, 526)"
-          url: /dxl/pro_plus/ph54-200-s500-r/#velocity-pi-gain524-526-feedforward-2nd-gains536
+          url: /dxl/p/ph54-200-s500-r/#velocity-pi-gain524-526-feedforward-2nd-gains536
         - title: "Feedforward 2nd Gain(536)"
           titlekr: "Feedforward 2nd Gain(536)"
-          url: /dxl/pro_plus/ph54-200-s500-r/#velocity-pi-gain524-526-feedforward-2nd-gains536
+          url: /dxl/p/ph54-200-s500-r/#velocity-pi-gain524-526-feedforward-2nd-gains536
         - title: "Position PID Gain(528, 530, 532)"
           titlekr: "Position PID Gain(528, 530, 532)"
-          url: /dxl/pro_plus/ph54-200-s500-r/#position-pid-gain528-530-532-feedforward-1st-gains538
+          url: /dxl/p/ph54-200-s500-r/#position-pid-gain528-530-532-feedforward-1st-gains538
         - title: "Feedforward 1st Gain(538)"
           titlekr: "Feedforward 1st Gain(538)"
-          url: /dxl/pro_plus/ph54-200-s500-r/#position-pid-gain528-530-532-feedforward-1st-gains538
+          url: /dxl/p/ph54-200-s500-r/#position-pid-gain528-530-532-feedforward-1st-gains538
         - title: "Bus Watchdog(546)"
           titlekr: "Bus Watchdog(546)"
-          url: /dxl/pro_plus/ph54-200-s500-r/#bus-watchdog546
+          url: /dxl/p/ph54-200-s500-r/#bus-watchdog546
         - title: "Goal PWM(548)"
           titlekr: "Goal PWM(548)"
-          url: /dxl/pro_plus/ph54-200-s500-r/#goal-pwm548
+          url: /dxl/p/ph54-200-s500-r/#goal-pwm548
         - title: "Goal Current(550)"
           titlekr: "Goal Current(550)"
-          url: /dxl/pro_plus/ph54-200-s500-r/#goal-current550
+          url: /dxl/p/ph54-200-s500-r/#goal-current550
         - title: "Goal Velocity(552)"
           titlekr: "Goal Velocity(552)"
-          url: /dxl/pro_plus/ph54-200-s500-r/#goal-velocity552
+          url: /dxl/p/ph54-200-s500-r/#goal-velocity552
         - title: "Profile Acceleration(556)"
           titlekr: "Profile Acceleration(556)"
-          url: /dxl/pro_plus/ph54-200-s500-r/#profile-acceleration556
+          url: /dxl/p/ph54-200-s500-r/#profile-acceleration556
         - title: "Profiel Velocity(560)"
           titlekr: "Profiel Velocity(560)"
-          url: /dxl/pro_plus/ph54-200-s500-r/#profile-velocity560
+          url: /dxl/p/ph54-200-s500-r/#profile-velocity560
         - title: "Goal Position(564)"
           titlekr: "Goal Position(564)"
-          url: /dxl/pro_plus/ph54-200-s500-r/#goal-position564
+          url: /dxl/p/ph54-200-s500-r/#goal-position564
         - title: "Realtime Tick(568)"
           titlekr: "Realtime Tick(568)"
-          url: /dxl/pro_plus/ph54-200-s500-r/#realtime-tick568
+          url: /dxl/p/ph54-200-s500-r/#realtime-tick568
         - title: "Moving(570)"
           titlekr: "Moving(570)"
-          url: /dxl/pro_plus/ph54-200-s500-r/#moving570
+          url: /dxl/p/ph54-200-s500-r/#moving570
         - title: "Moving Status(571)"
           titlekr: "Moving Status(571)"
-          url: /dxl/pro_plus/ph54-200-s500-r/#moving-status571
+          url: /dxl/p/ph54-200-s500-r/#moving-status571
         - title: "Present PWM(572)"
           titlekr: "Present PWM(572)"
-          url: /dxl/pro_plus/ph54-200-s500-r/#present-pwm572
+          url: /dxl/p/ph54-200-s500-r/#present-pwm572
         - title: "Present Current(574)"
           titlekr: "Present Current(574)"
-          url: /dxl/pro_plus/ph54-200-s500-r/#present-current574
+          url: /dxl/p/ph54-200-s500-r/#present-current574
         - title: "Present Velocity(576)"
           titlekr: "Present Velocity(576)"
-          url: /dxl/pro_plus/ph54-200-s500-r/#present-velocity576
+          url: /dxl/p/ph54-200-s500-r/#present-velocity576
         - title: "Present Position(580)"
           titlekr: "Present Position(580)"
-          url: /dxl/pro_plus/ph54-200-s500-r/#present-position580
+          url: /dxl/p/ph54-200-s500-r/#present-position580
         - title: "Velocity Trajectory(584)"
           titlekr: "Velocity Trajectory(584)"
-          url: /dxl/pro_plus/ph54-200-s500-r/#velocity-trajectory584
+          url: /dxl/p/ph54-200-s500-r/#velocity-trajectory584
         - title: "Position Trajectory(588)"
           titlekr: "Position Trajectory(588)"
-          url: /dxl/pro_plus/ph54-200-s500-r/#position-trajectory588
+          url: /dxl/p/ph54-200-s500-r/#position-trajectory588
         - title: "Present Input Voltage(592)"
           titlekr: "Present Input Voltage(592)"
-          url: /dxl/pro_plus/ph54-200-s500-r/#present-input-voltage592
+          url: /dxl/p/ph54-200-s500-r/#present-input-voltage592
         - title: "Present Temperature(594)"
           titlekr: "Present Temperature(594)"
-          url: /dxl/pro_plus/ph54-200-s500-r/#present-temperature594
+          url: /dxl/p/ph54-200-s500-r/#present-temperature594
 - title: "How to Assemble"
   titlekr: "조립 예시"
-  url: /dxl/pro_plus/ph54-200-s500-r/#how-to-assemble
-  urlkr: /dxl/pro_plus/ph54-200-s500-r/#조립-예시
+  url: /dxl/p/ph54-200-s500-r/#how-to-assemble
+  urlkr: /dxl/p/ph54-200-s500-r/#조립-예시
   children:
     - title: "Option Frame Assembly"
       titlekr: "옵션프레임 조립"
-      url: /dxl/pro_plus/ph54-200-s500-r/#option-frame-assembly
-      urlkr: /dxl/pro_plus/ph54-200-s500-r/#옵션프레임-조립
+      url: /dxl/p/ph54-200-s500-r/#option-frame-assembly
+      urlkr: /dxl/p/ph54-200-s500-r/#옵션프레임-조립
 - title: "Maintenance"
   titlekr: "유지보수"
-  url: /dxl/pro_plus/ph54-200-s500-r/#maintenance
-  urlkr: /dxl/pro_plus/ph54-200-s500-r/#유지보수
+  url: /dxl/p/ph54-200-s500-r/#maintenance
+  urlkr: /dxl/p/ph54-200-s500-r/#유지보수
 - title: "Reference"
   titlekr: "참고자료"
-  url: /dxl/pro_plus/ph54-200-s500-r/#reference
-  urlkr: /dxl/pro_plus/ph54-200-s500-r/#참고자료
+  url: /dxl/p/ph54-200-s500-r/#reference
+  urlkr: /dxl/p/ph54-200-s500-r/#참고자료
   children:
     - title: "Certifications"
       titlekr: "인증 획득"
-      url: /dxl/pro_plus/ph54-200-s500-r/#certifications
-      urlkr: /dxl/pro_plus/ph54-200-s500-r/#인증-획득
+      url: /dxl/p/ph54-200-s500-r/#certifications
+      urlkr: /dxl/p/ph54-200-s500-r/#인증-획득
     - title: "Connector Information"
       titlekr: "커넥터 정보"
-      url: /dxl/pro_plus/ph54-200-s500-r/#connector-information
-      urlkr: /dxl/pro_plus/ph54-200-s500-r/#커넥터-정보
+      url: /dxl/p/ph54-200-s500-r/#connector-information
+      urlkr: /dxl/p/ph54-200-s500-r/#커넥터-정보
     - title: "Communication Circuit"
       titlekr: "통신 회로"
-      url: /dxl/pro_plus/ph54-200-s500-r/#communication-circuit
-      urlkr: /dxl/pro_plus/ph54-200-s500-r/#통신-회로
+      url: /dxl/p/ph54-200-s500-r/#communication-circuit
+      urlkr: /dxl/p/ph54-200-s500-r/#통신-회로
     - title: "Pin Arrangement"
       titlekr: "핀 배열"
-      url: /dxl/pro_plus/ph54-200-s500-r/#pin-arrangement
-      urlkr: /dxl/pro_plus/ph54-200-s500-r/#핀-배열
+      url: /dxl/p/ph54-200-s500-r/#pin-arrangement
+      urlkr: /dxl/p/ph54-200-s500-r/#핀-배열
     - title: "Drawings"
       titlekr: "도면"
-      url: /dxl/pro_plus/ph54-200-s500-r/#drawings
-      urlkr: /dxl/pro_plus/ph54-200-s500-r/#도면
+      url: /dxl/p/ph54-200-s500-r/#drawings
+      urlkr: /dxl/p/ph54-200-s500-r/#도면
 
 ph54-100-s500-r:
 - title: "Specifications"
   titlekr: "주요 사양"
-  url: /dxl/pro_plus/ph54-100-s500-r/#specifications
-  urlkr: /dxl/pro_plus/ph54-100-s500-r/#주요-사양
+  url: /dxl/p/ph54-100-s500-r/#specifications
+  urlkr: /dxl/p/ph54-100-s500-r/#주요-사양
   children:
     - title: "Performance Graph"
       titlekr: "성능 그래프"
-      url: /dxl/pro_plus/ph54-100-s500-r/#performance-graph
-      urlkr: /dxl/pro_plus/ph54-100-s500-r/#성능-그래프
+      url: /dxl/p/ph54-100-s500-r/#performance-graph
+      urlkr: /dxl/p/ph54-100-s500-r/#성능-그래프
 - title: "Control Table"
   titlekr: "컨트롤 테이블"
-  url: /dxl/pro_plus/ph54-100-s500-r/#control-table
-  urlkr: /dxl/pro_plus/ph54-100-s500-r/#컨트롤-테이블
+  url: /dxl/p/ph54-100-s500-r/#control-table
+  urlkr: /dxl/p/ph54-100-s500-r/#컨트롤-테이블
   children:
     - title: "Control Table, Data, Address"
       titlekr: "컨트롤 테이블, 데이터, 주소"
-      url: /dxl/pro_plus/ph54-100-s500-r/#control-table-data-address
-      urlkr: /dxl/pro_plus/ph54-100-s500-r/#컨트롤-테이블-데이터-주소
+      url: /dxl/p/ph54-100-s500-r/#control-table-data-address
+      urlkr: /dxl/p/ph54-100-s500-r/#컨트롤-테이블-데이터-주소
       children:
         - title: "Area(EEPROM, RAM)"
           titlekr: "영역 (EEPROM, RAM)"
-          url: /dxl/pro_plus/ph54-100-s500-r/#area-eeprom-ram
-          urlkr: /dxl/pro_plus/ph54-100-s500-r/#영역-eeprom-ram
+          url: /dxl/p/ph54-100-s500-r/#area-eeprom-ram
+          urlkr: /dxl/p/ph54-100-s500-r/#영역-eeprom-ram
         - title: "Size"
           titlekr: "크기"
-          url: /dxl/pro_plus/ph54-100-s500-r/#size
-          urlkr: /dxl/pro_plus/ph54-100-s500-r/#크기
+          url: /dxl/p/ph54-100-s500-r/#size
+          urlkr: /dxl/p/ph54-100-s500-r/#크기
         - title: "Access"
           titlekr: "접근권한"
-          url: /dxl/pro_plus/ph54-100-s500-r/#access
-          urlkr: /dxl/pro_plus/ph54-100-s500-r/#접근권한
+          url: /dxl/p/ph54-100-s500-r/#access
+          urlkr: /dxl/p/ph54-100-s500-r/#접근권한
         - title: "Initial Value"
           titlekr: "초기값"
-          url: /dxl/pro_plus/ph54-100-s500-r/#initial-value
-          urlkr: /dxl/pro_plus/ph54-100-s500-r/#초기값
+          url: /dxl/p/ph54-100-s500-r/#initial-value
+          urlkr: /dxl/p/ph54-100-s500-r/#초기값
     - title: "EEPROM Area"
       titlekr: "EEPROM 영역"
-      url: /dxl/pro_plus/ph54-100-s500-r/#control-table-of-eeprom-area
-      urlkr: /dxl/pro_plus/ph54-100-s500-r/#eeprom-영역
+      url: /dxl/p/ph54-100-s500-r/#control-table-of-eeprom-area
+      urlkr: /dxl/p/ph54-100-s500-r/#eeprom-영역
     - title: "RAM Area"
       titlekr: "RAM 영역"
-      url: /dxl/pro_plus/ph54-100-s500-r/#control-table-of-ram-area
-      urlkr: /dxl/pro_plus/ph54-100-s500-r/#ram-영역
+      url: /dxl/p/ph54-100-s500-r/#control-table-of-ram-area
+      urlkr: /dxl/p/ph54-100-s500-r/#ram-영역
     - title: "Control Table Description"
       titlekr: "컨트롤 테이블 설명"
-      url: /dxl/pro_plus/ph54-100-s500-r/#control-table-description
-      urlkr: /dxl/pro_plus/ph54-100-s500-r/#컨트롤-테이블-설명
+      url: /dxl/p/ph54-100-s500-r/#control-table-description
+      urlkr: /dxl/p/ph54-100-s500-r/#컨트롤-테이블-설명
       children:
         - title: "Model Number(0)"
           titlekr: "Model Number(0)"
-          url: /dxl/pro_plus/ph54-100-s500-r/#model-number0
+          url: /dxl/p/ph54-100-s500-r/#model-number0
         - title: "Firmware Version(6)"
           titlekr: "Firmware Version(6)"
-          url: /dxl/pro_plus/ph54-100-s500-r/#firmware-version6
+          url: /dxl/p/ph54-100-s500-r/#firmware-version6
         - title: "ID(7)"
           titlekr: "ID(7)"
-          url: /dxl/pro_plus/ph54-100-s500-r/#id7
+          url: /dxl/p/ph54-100-s500-r/#id7
         - title: "Baud Rate(8)"
           titlekr: "Baud Rate(8)"
-          url: /dxl/pro_plus/ph54-100-s500-r/#baud-rate8
+          url: /dxl/p/ph54-100-s500-r/#baud-rate8
         - title: "Return Delay Time(9)"
           titlekr: "Return Delay Time(9)"
-          url: /dxl/pro_plus/ph54-100-s500-r/#return-delay-time9
+          url: /dxl/p/ph54-100-s500-r/#return-delay-time9
         - title: "Operating Mode(11)"
           titlekr: "Operating Mode(11)"
-          url: /dxl/pro_plus/ph54-100-s500-r/#operating-mode11
+          url: /dxl/p/ph54-100-s500-r/#operating-mode11
         - title: "Secondary ID(12)"
           titlekr: "Secondary ID(12)"
-          url: /dxl/pro_plus/ph54-100-s500-r/#secondary-id12
+          url: /dxl/p/ph54-100-s500-r/#secondary-id12
         - title: "Protocol Type(13)"
           titlekr: "Protocol Type(13)"
-          url: /dxl/pro_plus/ph54-100-s500-r/#protocol-type13
+          url: /dxl/p/ph54-100-s500-r/#protocol-type13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
-          url: /dxl/pro_plus/ph54-100-s500-r/#homing-offset20
+          url: /dxl/p/ph54-100-s500-r/#homing-offset20
         - title: "Moving Threshold(24)"
           titlekr: "Moving Threshold(24)"
-          url: /dxl/pro_plus/ph54-100-s500-r/#moving-threshold24
+          url: /dxl/p/ph54-100-s500-r/#moving-threshold24
         - title: "Temperature Limit(31)"
           titlekr: "Temperature Limit(31)"
-          url: /dxl/pro_plus/ph54-100-s500-r/#temperature-limit31
+          url: /dxl/p/ph54-100-s500-r/#temperature-limit31
         - title: "Max/Min Voltage Limit(32, 34)"
           titlekr: "Max/Min Voltage Limit(32, 34)"
-          url: /dxl/pro_plus/ph54-100-s500-r/#maxmin-voltage-limit32-34
+          url: /dxl/p/ph54-100-s500-r/#maxmin-voltage-limit32-34
         - title: "PWM Limit(36)"
           titlekr: "PWM Limit(36)"
-          url: /dxl/pro_plus/ph54-100-s500-r/#pwm-limit36
+          url: /dxl/p/ph54-100-s500-r/#pwm-limit36
         - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
-          url: /dxl/pro_plus/ph54-100-s500-r/#current-limit38
+          url: /dxl/p/ph54-100-s500-r/#current-limit38
         - title: "Acceleration Limit(40)"
           titlekr: "Acceleration Limit(40)"
-          url: /dxl/pro_plus/ph54-100-s500-r/#acceleration-limit40
+          url: /dxl/p/ph54-100-s500-r/#acceleration-limit40
         - title: "Velocity Limit(44)"
           titlekr: "Velocity Limit(44)"
-          url: /dxl/pro_plus/ph54-100-s500-r/#velocity-limit44
+          url: /dxl/p/ph54-100-s500-r/#velocity-limit44
         - title: "Max/Min Position Limit(48, 52)"
           titlekr: "Max/Min Position Limit(48, 52)"
-          url: /dxl/pro_plus/ph54-100-s500-r/#maxmin-position-limit48-52
+          url: /dxl/p/ph54-100-s500-r/#maxmin-position-limit48-52
         - title: "External Port Mode"
           titlekr: "External Port Mode"
-          url: /dxl/pro_plus/ph54-100-s500-r/#external-port-mode-external-port-data
+          url: /dxl/p/ph54-100-s500-r/#external-port-mode-external-port-data
         - title: "Shutdown(63)"
           titlekr: "Shutdown(63)"
-          url: /dxl/pro_plus/ph54-100-s500-r/#shutdown63
+          url: /dxl/p/ph54-100-s500-r/#shutdown63
         - title: "Indirect Address"
           titlekr: "Indirect Address/Data"
-          url: /dxl/pro_plus/ph54-100-s500-r/#indirect-address-indirect-data
+          url: /dxl/p/ph54-100-s500-r/#indirect-address-indirect-data
         - title: "Torque Enable(512)"
           titlekr: "Torque Enable(512)"
-          url: /dxl/pro_plus/ph54-100-s500-r/#torque-enable512
+          url: /dxl/p/ph54-100-s500-r/#torque-enable512
         - title: "RGB LED(513)"
           titlekr: "RGB LED(513)"
-          url: /dxl/pro_plus/ph54-100-s500-r/#rgb-led513
+          url: /dxl/p/ph54-100-s500-r/#rgb-led513
         - title: "Status Return Level(516)"
           titlekr: "Status Return Level(516)"
-          url: /dxl/pro_plus/ph54-100-s500-r/#status-return-level516
+          url: /dxl/p/ph54-100-s500-r/#status-return-level516
         - title: "Registered Instruction(517)"
           titlekr: "Registered Instruction(517)"
-          url: /dxl/pro_plus/ph54-100-s500-r/#registered-instruction517
+          url: /dxl/p/ph54-100-s500-r/#registered-instruction517
         - title: "Hardware Error Status(518)"
           titlekr: "Hardware Error Status(518)"
-          url: /dxl/pro_plus/ph54-100-s500-r/#hardware-error-status518
+          url: /dxl/p/ph54-100-s500-r/#hardware-error-status518
         - title: "Velocity PI Gain(524, 526)"
           titlekr: "Velocity PI Gain(524, 526)"
-          url: /dxl/pro_plus/ph54-100-s500-r/#velocity-pi-gain524-526-feedforward-2nd-gains536
+          url: /dxl/p/ph54-100-s500-r/#velocity-pi-gain524-526-feedforward-2nd-gains536
         - title: "Feedforward 2nd Gain(536)"
           titlekr: "Feedforward 2nd Gain(536)"
-          url: /dxl/pro_plus/ph54-100-s500-r/#velocity-pi-gain524-526-feedforward-2nd-gains536
+          url: /dxl/p/ph54-100-s500-r/#velocity-pi-gain524-526-feedforward-2nd-gains536
         - title: "Position PID Gain(528, 530, 532)"
           titlekr: "Position PID Gain(528, 530, 532)"
-          url: /dxl/pro_plus/ph54-100-s500-r/#position-pid-gain528-530-532-feedforward-1st-gains538
+          url: /dxl/p/ph54-100-s500-r/#position-pid-gain528-530-532-feedforward-1st-gains538
         - title: "Feedforward 1st Gain(538)"
           titlekr: "Feedforward 1st Gain(538)"
-          url: /dxl/pro_plus/ph54-100-s500-r/#position-pid-gain528-530-532-feedforward-1st-gains538
+          url: /dxl/p/ph54-100-s500-r/#position-pid-gain528-530-532-feedforward-1st-gains538
         - title: "Bus Watchdog(546)"
           titlekr: "Bus Watchdog(546)"
-          url: /dxl/pro_plus/ph54-100-s500-r/#bus-watchdog546
+          url: /dxl/p/ph54-100-s500-r/#bus-watchdog546
         - title: "Goal PWM(548)"
           titlekr: "Goal PWM(548)"
-          url: /dxl/pro_plus/ph54-100-s500-r/#goal-pwm548
+          url: /dxl/p/ph54-100-s500-r/#goal-pwm548
         - title: "Goal Current(550)"
           titlekr: "Goal Current(550)"
-          url: /dxl/pro_plus/ph54-100-s500-r/#goal-current550
+          url: /dxl/p/ph54-100-s500-r/#goal-current550
         - title: "Goal Velocity(552)"
           titlekr: "Goal Velocity(552)"
-          url: /dxl/pro_plus/ph54-100-s500-r/#goal-velocity552
+          url: /dxl/p/ph54-100-s500-r/#goal-velocity552
         - title: "Profile Acceleration(556)"
           titlekr: "Profile Acceleration(556)"
-          url: /dxl/pro_plus/ph54-100-s500-r/#profile-acceleration556
+          url: /dxl/p/ph54-100-s500-r/#profile-acceleration556
         - title: "Profiel Velocity(560)"
           titlekr: "Profiel Velocity(560)"
-          url: /dxl/pro_plus/ph54-100-s500-r/#profile-velocity560
+          url: /dxl/p/ph54-100-s500-r/#profile-velocity560
         - title: "Goal Position(564)"
           titlekr: "Goal Position(564)"
-          url: /dxl/pro_plus/ph54-100-s500-r/#goal-position564
+          url: /dxl/p/ph54-100-s500-r/#goal-position564
         - title: "Realtime Tick(568)"
           titlekr: "Realtime Tick(568)"
-          url: /dxl/pro_plus/ph54-100-s500-r/#realtime-tick568
+          url: /dxl/p/ph54-100-s500-r/#realtime-tick568
         - title: "Moving(570)"
           titlekr: "Moving(570)"
-          url: /dxl/pro_plus/ph54-100-s500-r/#moving570
+          url: /dxl/p/ph54-100-s500-r/#moving570
         - title: "Moving Status(571)"
           titlekr: "Moving Status(571)"
-          url: /dxl/pro_plus/ph54-100-s500-r/#moving-status571
+          url: /dxl/p/ph54-100-s500-r/#moving-status571
         - title: "Present PWM(572)"
           titlekr: "Present PWM(572)"
-          url: /dxl/pro_plus/ph54-100-s500-r/#present-pwm572
+          url: /dxl/p/ph54-100-s500-r/#present-pwm572
         - title: "Present Current(574)"
           titlekr: "Present Current(574)"
-          url: /dxl/pro_plus/ph54-100-s500-r/#present-current574
+          url: /dxl/p/ph54-100-s500-r/#present-current574
         - title: "Present Velocity(576)"
           titlekr: "Present Velocity(576)"
-          url: /dxl/pro_plus/ph54-100-s500-r/#present-velocity576
+          url: /dxl/p/ph54-100-s500-r/#present-velocity576
         - title: "Present Position(580)"
           titlekr: "Present Position(580)"
-          url: /dxl/pro_plus/ph54-100-s500-r/#present-position580
+          url: /dxl/p/ph54-100-s500-r/#present-position580
         - title: "Velocity Trajectory(584)"
           titlekr: "Velocity Trajectory(584)"
-          url: /dxl/pro_plus/ph54-100-s500-r/#velocity-trajectory584
+          url: /dxl/p/ph54-100-s500-r/#velocity-trajectory584
         - title: "Position Trajectory(588)"
           titlekr: "Position Trajectory(588)"
-          url: /dxl/pro_plus/ph54-100-s500-r/#position-trajectory588
+          url: /dxl/p/ph54-100-s500-r/#position-trajectory588
         - title: "Present Input Voltage(592)"
           titlekr: "Present Input Voltage(592)"
-          url: /dxl/pro_plus/ph54-100-s500-r/#present-input-voltage592
+          url: /dxl/p/ph54-100-s500-r/#present-input-voltage592
         - title: "Present Temperature(594)"
           titlekr: "Present Temperature(594)"
-          url: /dxl/pro_plus/ph54-100-s500-r/#present-temperature594
+          url: /dxl/p/ph54-100-s500-r/#present-temperature594
 - title: "How to Assemble"
   titlekr: "조립 예시"
-  url: /dxl/pro_plus/ph54-100-s500-r/#how-to-assemble
-  urlkr: /dxl/pro_plus/ph54-100-s500-r/#조립-예시
+  url: /dxl/p/ph54-100-s500-r/#how-to-assemble
+  urlkr: /dxl/p/ph54-100-s500-r/#조립-예시
   children:
     - title: "Option Frame Assembly"
       titlekr: "옵션프레임 조립"
-      url: /dxl/pro_plus/ph54-100-s500-r/#option-frame-assembly
-      urlkr: /dxl/pro_plus/ph54-100-s500-r/#옵션프레임-조립
+      url: /dxl/p/ph54-100-s500-r/#option-frame-assembly
+      urlkr: /dxl/p/ph54-100-s500-r/#옵션프레임-조립
 - title: "Maintenance"
   titlekr: "유지보수"
-  url: /dxl/pro_plus/ph54-100-s500-r/#maintenance
-  urlkr: /dxl/pro_plus/ph54-100-s500-r/#유지보수
+  url: /dxl/p/ph54-100-s500-r/#maintenance
+  urlkr: /dxl/p/ph54-100-s500-r/#유지보수
 - title: "Reference"
   titlekr: "참고자료"
-  url: /dxl/pro_plus/ph54-100-s500-r/#reference
-  urlkr: /dxl/pro_plus/ph54-100-s500-r/#참고자료
+  url: /dxl/p/ph54-100-s500-r/#reference
+  urlkr: /dxl/p/ph54-100-s500-r/#참고자료
   children:
     - title: "Certifications"
       titlekr: "인증 획득"
-      url: /dxl/pro_plus/ph54-100-s500-r/#certifications
-      urlkr: /dxl/pro_plus/ph54-100-s500-r/#인증-획득
+      url: /dxl/p/ph54-100-s500-r/#certifications
+      urlkr: /dxl/p/ph54-100-s500-r/#인증-획득
     - title: "Connector Information"
       titlekr: "커넥터 정보"
-      url: /dxl/pro_plus/ph54-100-s500-r/#connector-information
-      urlkr: /dxl/pro_plus/ph54-100-s500-r/#커넥터-정보
+      url: /dxl/p/ph54-100-s500-r/#connector-information
+      urlkr: /dxl/p/ph54-100-s500-r/#커넥터-정보
     - title: "Communication Circuit"
       titlekr: "통신 회로"
-      url: /dxl/pro_plus/ph54-100-s500-r/#communication-circuit
-      urlkr: /dxl/pro_plus/ph54-100-s500-r/#통신-회로
+      url: /dxl/p/ph54-100-s500-r/#communication-circuit
+      urlkr: /dxl/p/ph54-100-s500-r/#통신-회로
     - title: "Pin Arrangement"
       titlekr: "핀 배열"
-      url: /dxl/pro_plus/ph54-100-s500-r/#pin-arrangement
-      urlkr: /dxl/pro_plus/ph54-100-s500-r/#핀-배열
+      url: /dxl/p/ph54-100-s500-r/#pin-arrangement
+      urlkr: /dxl/p/ph54-100-s500-r/#핀-배열
     - title: "Drawings"
       titlekr: "도면"
-      url: /dxl/pro_plus/ph54-100-s500-r/#drawings
-      urlkr: /dxl/pro_plus/ph54-100-s500-r/#도면
+      url: /dxl/p/ph54-100-s500-r/#drawings
+      urlkr: /dxl/p/ph54-100-s500-r/#도면
 
 ph42-020-s300-r:
 - title: "Specifications"
   titlekr: "주요 사양"
-  url: /dxl/pro_plus/ph42-020-s300-r/#specifications
-  urlkr: /dxl/pro_plus/ph42-020-s300-r/#주요-사양
+  url: /dxl/p/ph42-020-s300-r/#specifications
+  urlkr: /dxl/p/ph42-020-s300-r/#주요-사양
   children:
     - title: "Performance Graph"
       titlekr: "성능 그래프"
-      url: /dxl/pro_plus/ph42-020-s300-r/#performance-graph
-      urlkr: /dxl/pro_plus/ph42-020-s300-r/#성능-그래프
+      url: /dxl/p/ph42-020-s300-r/#performance-graph
+      urlkr: /dxl/p/ph42-020-s300-r/#성능-그래프
 - title: "Control Table"
   titlekr: "컨트롤 테이블"
-  url: /dxl/pro_plus/ph42-020-s300-r/#control-table
-  urlkr: /dxl/pro_plus/ph42-020-s300-r/#컨트롤-테이블
+  url: /dxl/p/ph42-020-s300-r/#control-table
+  urlkr: /dxl/p/ph42-020-s300-r/#컨트롤-테이블
   children:
     - title: "Control Table, Data, Address"
       titlekr: "컨트롤 테이블, 데이터, 주소"
-      url: /dxl/pro_plus/ph42-020-s300-r/#control-table-data-address
-      urlkr: /dxl/pro_plus/ph42-020-s300-r/#컨트롤-테이블-데이터-주소
+      url: /dxl/p/ph42-020-s300-r/#control-table-data-address
+      urlkr: /dxl/p/ph42-020-s300-r/#컨트롤-테이블-데이터-주소
       children:
         - title: "Area(EEPROM, RAM)"
           titlekr: "영역 (EEPROM, RAM)"
-          url: /dxl/pro_plus/ph42-020-s300-r/#area-eeprom-ram
-          urlkr: /dxl/pro_plus/ph42-020-s300-r/#영역-eeprom-ram
+          url: /dxl/p/ph42-020-s300-r/#area-eeprom-ram
+          urlkr: /dxl/p/ph42-020-s300-r/#영역-eeprom-ram
         - title: "Size"
           titlekr: "크기"
-          url: /dxl/pro_plus/ph42-020-s300-r/#size
-          urlkr: /dxl/pro_plus/ph42-020-s300-r/#크기
+          url: /dxl/p/ph42-020-s300-r/#size
+          urlkr: /dxl/p/ph42-020-s300-r/#크기
         - title: "Access"
           titlekr: "접근권한"
-          url: /dxl/pro_plus/ph42-020-s300-r/#access
-          urlkr: /dxl/pro_plus/ph42-020-s300-r/#접근권한
+          url: /dxl/p/ph42-020-s300-r/#access
+          urlkr: /dxl/p/ph42-020-s300-r/#접근권한
         - title: "Initial Value"
           titlekr: "초기값"
-          url: /dxl/pro_plus/ph42-020-s300-r/#initial-value
-          urlkr: /dxl/pro_plus/ph42-020-s300-r/#초기값
+          url: /dxl/p/ph42-020-s300-r/#initial-value
+          urlkr: /dxl/p/ph42-020-s300-r/#초기값
     - title: "EEPROM Area"
       titlekr: "EEPROM 영역"
-      url: /dxl/pro_plus/ph42-020-s300-r/#control-table-of-eeprom-area
-      urlkr: /dxl/pro_plus/ph42-020-s300-r/#eeprom-영역
+      url: /dxl/p/ph42-020-s300-r/#control-table-of-eeprom-area
+      urlkr: /dxl/p/ph42-020-s300-r/#eeprom-영역
     - title: "RAM Area"
       titlekr: "RAM 영역"
-      url: /dxl/pro_plus/ph42-020-s300-r/#control-table-of-ram-area
-      urlkr: /dxl/pro_plus/ph42-020-s300-r/#ram-영역
+      url: /dxl/p/ph42-020-s300-r/#control-table-of-ram-area
+      urlkr: /dxl/p/ph42-020-s300-r/#ram-영역
     - title: "Control Table Description"
       titlekr: "컨트롤 테이블 설명"
-      url: /dxl/pro_plus/ph42-020-s300-r/#control-table-description
-      urlkr: /dxl/pro_plus/ph42-020-s300-r/#컨트롤-테이블-설명
+      url: /dxl/p/ph42-020-s300-r/#control-table-description
+      urlkr: /dxl/p/ph42-020-s300-r/#컨트롤-테이블-설명
       children:
         - title: "Model Number(0)"
           titlekr: "Model Number(0)"
-          url: /dxl/pro_plus/ph42-020-s300-r/#model-number0
+          url: /dxl/p/ph42-020-s300-r/#model-number0
         - title: "Firmware Version(6)"
           titlekr: "Firmware Version(6)"
-          url: /dxl/pro_plus/ph42-020-s300-r/#firmware-version6
+          url: /dxl/p/ph42-020-s300-r/#firmware-version6
         - title: "ID(7)"
           titlekr: "ID(7)"
-          url: /dxl/pro_plus/ph42-020-s300-r/#id7
+          url: /dxl/p/ph42-020-s300-r/#id7
         - title: "Baud Rate(8)"
           titlekr: "Baud Rate(8)"
-          url: /dxl/pro_plus/ph42-020-s300-r/#baud-rate8
+          url: /dxl/p/ph42-020-s300-r/#baud-rate8
         - title: "Return Delay Time(9)"
           titlekr: "Return Delay Time(9)"
-          url: /dxl/pro_plus/ph42-020-s300-r/#return-delay-time9
+          url: /dxl/p/ph42-020-s300-r/#return-delay-time9
         - title: "Operating Mode(11)"
           titlekr: "Operating Mode(11)"
-          url: /dxl/pro_plus/ph42-020-s300-r/#operating-mode11
+          url: /dxl/p/ph42-020-s300-r/#operating-mode11
         - title: "Secondary ID(12)"
           titlekr: "Secondary ID(12)"
-          url: /dxl/pro_plus/ph42-020-s300-r/#secondary-id12
+          url: /dxl/p/ph42-020-s300-r/#secondary-id12
         - title: "Protocol Type(13)"
           titlekr: "Protocol Type(13)"
-          url: /dxl/pro_plus/ph42-020-s300-r/#protocol-type13
+          url: /dxl/p/ph42-020-s300-r/#protocol-type13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
-          url: /dxl/pro_plus/ph42-020-s300-r/#homing-offset20
+          url: /dxl/p/ph42-020-s300-r/#homing-offset20
         - title: "Moving Threshold(24)"
           titlekr: "Moving Threshold(24)"
-          url: /dxl/pro_plus/ph42-020-s300-r/#moving-threshold24
+          url: /dxl/p/ph42-020-s300-r/#moving-threshold24
         - title: "Temperature Limit(31)"
           titlekr: "Temperature Limit(31)"
-          url: /dxl/pro_plus/ph42-020-s300-r/#temperature-limit31
+          url: /dxl/p/ph42-020-s300-r/#temperature-limit31
         - title: "Max/Min Voltage Limit(32, 34)"
           titlekr: "Max/Min Voltage Limit(32, 34)"
-          url: /dxl/pro_plus/ph42-020-s300-r/#maxmin-voltage-limit32-34
+          url: /dxl/p/ph42-020-s300-r/#maxmin-voltage-limit32-34
         - title: "PWM Limit(36)"
           titlekr: "PWM Limit(36)"
-          url: /dxl/pro_plus/ph42-020-s300-r/#pwm-limit36
+          url: /dxl/p/ph42-020-s300-r/#pwm-limit36
         - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
-          url: /dxl/pro_plus/ph42-020-s300-r/#current-limit38
+          url: /dxl/p/ph42-020-s300-r/#current-limit38
         - title: "Acceleration Limit(40)"
           titlekr: "Acceleration Limit(40)"
-          url: /dxl/pro_plus/ph42-020-s300-r/#acceleration-limit40
+          url: /dxl/p/ph42-020-s300-r/#acceleration-limit40
         - title: "Velocity Limit(44)"
           titlekr: "Velocity Limit(44)"
-          url: /dxl/pro_plus/ph42-020-s300-r/#velocity-limit44
+          url: /dxl/p/ph42-020-s300-r/#velocity-limit44
         - title: "Max/Min Position Limit(48, 52)"
           titlekr: "Max/Min Position Limit(48, 52)"
-          url: /dxl/pro_plus/ph42-020-s300-r/#maxmin-position-limit48-52
+          url: /dxl/p/ph42-020-s300-r/#maxmin-position-limit48-52
         - title: "External Port Mode"
           titlekr: "External Port Mode"
-          url: /dxl/pro_plus/ph42-020-s300-r/#external-port-mode-external-port-data
+          url: /dxl/p/ph42-020-s300-r/#external-port-mode-external-port-data
         - title: "Shutdown(63)"
           titlekr: "Shutdown(63)"
-          url: /dxl/pro_plus/ph42-020-s300-r/#shutdown63
+          url: /dxl/p/ph42-020-s300-r/#shutdown63
         - title: "Indirect Address"
           titlekr: "Indirect Address/Data"
-          url: /dxl/pro_plus/ph42-020-s300-r/#indirect-address-indirect-data
+          url: /dxl/p/ph42-020-s300-r/#indirect-address-indirect-data
         - title: "Torque Enable(512)"
           titlekr: "Torque Enable(512)"
-          url: /dxl/pro_plus/ph42-020-s300-r/#torque-enable512
+          url: /dxl/p/ph42-020-s300-r/#torque-enable512
         - title: "RGB LED(513)"
           titlekr: "RGB LED(513)"
-          url: /dxl/pro_plus/ph42-020-s300-r/#rgb-led513
+          url: /dxl/p/ph42-020-s300-r/#rgb-led513
         - title: "Status Return Level(516)"
           titlekr: "Status Return Level(516)"
-          url: /dxl/pro_plus/ph42-020-s300-r/#status-return-level516
+          url: /dxl/p/ph42-020-s300-r/#status-return-level516
         - title: "Registered Instruction(517)"
           titlekr: "Registered Instruction(517)"
-          url: /dxl/pro_plus/ph42-020-s300-r/#registered-instruction517
+          url: /dxl/p/ph42-020-s300-r/#registered-instruction517
         - title: "Hardware Error Status(518)"
           titlekr: "Hardware Error Status(518)"
-          url: /dxl/pro_plus/ph42-020-s300-r/#hardware-error-status518
+          url: /dxl/p/ph42-020-s300-r/#hardware-error-status518
         - title: "Velocity PI Gain(524, 526)"
           titlekr: "Velocity PI Gain(524, 526)"
-          url: /dxl/pro_plus/ph42-020-s300-r/#velocity-pi-gain524-526-feedforward-2nd-gains536
+          url: /dxl/p/ph42-020-s300-r/#velocity-pi-gain524-526-feedforward-2nd-gains536
         - title: "Feedforward 2nd Gain(536)"
           titlekr: "Feedforward 2nd Gain(536)"
-          url: /dxl/pro_plus/ph42-020-s300-r/#velocity-pi-gain524-526-feedforward-2nd-gains536
+          url: /dxl/p/ph42-020-s300-r/#velocity-pi-gain524-526-feedforward-2nd-gains536
         - title: "Position PID Gain(528, 530, 532)"
           titlekr: "Position PID Gain(528, 530, 532)"
-          url: /dxl/pro_plus/ph42-020-s300-r/#position-pid-gain528-530-532-feedforward-1st-gains538
+          url: /dxl/p/ph42-020-s300-r/#position-pid-gain528-530-532-feedforward-1st-gains538
         - title: "Feedforward 1st Gain(538)"
           titlekr: "Feedforward 1st Gain(538)"
-          url: /dxl/pro_plus/ph42-020-s300-r/#position-pid-gain528-530-532-feedforward-1st-gains538
+          url: /dxl/p/ph42-020-s300-r/#position-pid-gain528-530-532-feedforward-1st-gains538
         - title: "Bus Watchdog(546)"
           titlekr: "Bus Watchdog(546)"
-          url: /dxl/pro_plus/ph42-020-s300-r/#bus-watchdog546
+          url: /dxl/p/ph42-020-s300-r/#bus-watchdog546
         - title: "Goal PWM(548)"
           titlekr: "Goal PWM(548)"
-          url: /dxl/pro_plus/ph42-020-s300-r/#goal-pwm548
+          url: /dxl/p/ph42-020-s300-r/#goal-pwm548
         - title: "Goal Current(550)"
           titlekr: "Goal Current(550)"
-          url: /dxl/pro_plus/ph42-020-s300-r/#goal-current550
+          url: /dxl/p/ph42-020-s300-r/#goal-current550
         - title: "Goal Velocity(552)"
           titlekr: "Goal Velocity(552)"
-          url: /dxl/pro_plus/ph42-020-s300-r/#goal-velocity552
+          url: /dxl/p/ph42-020-s300-r/#goal-velocity552
         - title: "Profile Acceleration(556)"
           titlekr: "Profile Acceleration(556)"
-          url: /dxl/pro_plus/ph42-020-s300-r/#profile-acceleration556
+          url: /dxl/p/ph42-020-s300-r/#profile-acceleration556
         - title: "Profiel Velocity(560)"
           titlekr: "Profiel Velocity(560)"
-          url: /dxl/pro_plus/ph42-020-s300-r/#profile-velocity560
+          url: /dxl/p/ph42-020-s300-r/#profile-velocity560
         - title: "Goal Position(564)"
           titlekr: "Goal Position(564)"
-          url: /dxl/pro_plus/ph42-020-s300-r/#goal-position564
+          url: /dxl/p/ph42-020-s300-r/#goal-position564
         - title: "Realtime Tick(568)"
           titlekr: "Realtime Tick(568)"
-          url: /dxl/pro_plus/ph42-020-s300-r/#realtime-tick568
+          url: /dxl/p/ph42-020-s300-r/#realtime-tick568
         - title: "Moving(570)"
           titlekr: "Moving(570)"
-          url: /dxl/pro_plus/ph42-020-s300-r/#moving570
+          url: /dxl/p/ph42-020-s300-r/#moving570
         - title: "Moving Status(571)"
           titlekr: "Moving Status(571)"
-          url: /dxl/pro_plus/ph42-020-s300-r/#moving-status571
+          url: /dxl/p/ph42-020-s300-r/#moving-status571
         - title: "Present PWM(572)"
           titlekr: "Present PWM(572)"
-          url: /dxl/pro_plus/ph42-020-s300-r/#present-pwm572
+          url: /dxl/p/ph42-020-s300-r/#present-pwm572
         - title: "Present Current(574)"
           titlekr: "Present Current(574)"
-          url: /dxl/pro_plus/ph42-020-s300-r/#present-current574
+          url: /dxl/p/ph42-020-s300-r/#present-current574
         - title: "Present Velocity(576)"
           titlekr: "Present Velocity(576)"
-          url: /dxl/pro_plus/ph42-020-s300-r/#present-velocity576
+          url: /dxl/p/ph42-020-s300-r/#present-velocity576
         - title: "Present Position(580)"
           titlekr: "Present Position(580)"
-          url: /dxl/pro_plus/ph42-020-s300-r/#present-position580
+          url: /dxl/p/ph42-020-s300-r/#present-position580
         - title: "Velocity Trajectory(584)"
           titlekr: "Velocity Trajectory(584)"
-          url: /dxl/pro_plus/ph42-020-s300-r/#velocity-trajectory584
+          url: /dxl/p/ph42-020-s300-r/#velocity-trajectory584
         - title: "Position Trajectory(588)"
           titlekr: "Position Trajectory(588)"
-          url: /dxl/pro_plus/ph42-020-s300-r/#position-trajectory588
+          url: /dxl/p/ph42-020-s300-r/#position-trajectory588
         - title: "Present Input Voltage(592)"
           titlekr: "Present Input Voltage(592)"
-          url: /dxl/pro_plus/ph42-020-s300-r/#present-input-voltage592
+          url: /dxl/p/ph42-020-s300-r/#present-input-voltage592
         - title: "Present Temperature(594)"
           titlekr: "Present Temperature(594)"
-          url: /dxl/pro_plus/ph42-020-s300-r/#present-temperature594
+          url: /dxl/p/ph42-020-s300-r/#present-temperature594
 - title: "How to Assemble"
   titlekr: "조립 예시"
-  url: /dxl/pro_plus/ph42-020-s300-r/#how-to-assemble
-  urlkr: /dxl/pro_plus/ph42-020-s300-r/#조립-예시
+  url: /dxl/p/ph42-020-s300-r/#how-to-assemble
+  urlkr: /dxl/p/ph42-020-s300-r/#조립-예시
   children:
     - title: "Option Frame Assembly"
       titlekr: "옵션프레임 조립"
-      url: /dxl/pro_plus/ph42-020-s300-r/#option-frame-assembly
-      urlkr: /dxl/pro_plus/ph42-020-s300-r/#옵션프레임-조립
+      url: /dxl/p/ph42-020-s300-r/#option-frame-assembly
+      urlkr: /dxl/p/ph42-020-s300-r/#옵션프레임-조립
 - title: "Maintenance"
   titlekr: "유지보수"
-  url: /dxl/pro_plus/ph42-020-s300-r/#maintenance
-  urlkr: /dxl/pro_plus/ph42-020-s300-r/#유지보수
+  url: /dxl/p/ph42-020-s300-r/#maintenance
+  urlkr: /dxl/p/ph42-020-s300-r/#유지보수
 - title: "Reference"
   titlekr: "참고자료"
-  url: /dxl/pro_plus/ph42-020-s300-r/#reference
-  urlkr: /dxl/pro_plus/ph42-020-s300-r/#참고자료
+  url: /dxl/p/ph42-020-s300-r/#reference
+  urlkr: /dxl/p/ph42-020-s300-r/#참고자료
   children:
     - title: "Certifications"
       titlekr: "인증 획득"
-      url: /dxl/pro_plus/ph42-020-s300-r/#certifications
-      urlkr: /dxl/pro_plus/ph42-020-s300-r/#인증-획득
+      url: /dxl/p/ph42-020-s300-r/#certifications
+      urlkr: /dxl/p/ph42-020-s300-r/#인증-획득
     - title: "Connector Information"
       titlekr: "커넥터 정보"
-      url: /dxl/pro_plus/ph42-020-s300-r/#connector-information
-      urlkr: /dxl/pro_plus/ph42-020-s300-r/#커넥터-정보
+      url: /dxl/p/ph42-020-s300-r/#connector-information
+      urlkr: /dxl/p/ph42-020-s300-r/#커넥터-정보
     - title: "Communication Circuit"
       titlekr: "통신 회로"
-      url: /dxl/pro_plus/ph42-020-s300-r/#communication-circuit
-      urlkr: /dxl/pro_plus/ph42-020-s300-r/#통신-회로
+      url: /dxl/p/ph42-020-s300-r/#communication-circuit
+      urlkr: /dxl/p/ph42-020-s300-r/#통신-회로
     - title: "Pin Arrangement"
       titlekr: "핀 배열"
-      url: /dxl/pro_plus/ph42-020-s300-r/#pin-arrangement
-      urlkr: /dxl/pro_plus/ph42-020-s300-r/#핀-배열
+      url: /dxl/p/ph42-020-s300-r/#pin-arrangement
+      urlkr: /dxl/p/ph42-020-s300-r/#핀-배열
     - title: "Drawings"
       titlekr: "도면"
-      url: /dxl/pro_plus/ph42-020-s300-r/#drawings
-      urlkr: /dxl/pro_plus/ph42-020-s300-r/#도면
+      url: /dxl/p/ph42-020-s300-r/#drawings
+      urlkr: /dxl/p/ph42-020-s300-r/#도면
 
 pm42-010-s260-r:
 - title: "Specifications"
   titlekr: "주요 사양"
-  url: /dxl/pro_plus/pm42-010-s260-r/#specifications
-  urlkr: /dxl/pro_plus/pm42-010-s260-r/#주요-사양
+  url: /dxl/p/pm42-010-s260-r/#specifications
+  urlkr: /dxl/p/pm42-010-s260-r/#주요-사양
   children:
     - title: "Performance Graph"
       titlekr: "성능 그래프"
-      url: /dxl/pro_plus/pm42-010-s260-r/#performance-graph
-      urlkr: /dxl/pro_plus/pm42-010-s260-r/#성능-그래프
+      url: /dxl/p/pm42-010-s260-r/#performance-graph
+      urlkr: /dxl/p/pm42-010-s260-r/#성능-그래프
 - title: "Control Table"
   titlekr: "컨트롤 테이블"
-  url: /dxl/pro_plus/pm42-010-s260-r/#control-table
-  urlkr: /dxl/pro_plus/pm42-010-s260-r/#컨트롤-테이블
+  url: /dxl/p/pm42-010-s260-r/#control-table
+  urlkr: /dxl/p/pm42-010-s260-r/#컨트롤-테이블
   children:
     - title: "Control Table, Data, Address"
       titlekr: "컨트롤 테이블, 데이터, 주소"
-      url: /dxl/pro_plus/pm42-010-s260-r/#control-table-data-address
-      urlkr: /dxl/pro_plus/pm42-010-s260-r/#컨트롤-테이블-데이터-주소
+      url: /dxl/p/pm42-010-s260-r/#control-table-data-address
+      urlkr: /dxl/p/pm42-010-s260-r/#컨트롤-테이블-데이터-주소
       children:
         - title: "Area(EEPROM, RAM)"
           titlekr: "영역 (EEPROM, RAM)"
-          url: /dxl/pro_plus/pm42-010-s260-r/#area-eeprom-ram
-          urlkr: /dxl/pro_plus/pm42-010-s260-r/#영역-eeprom-ram
+          url: /dxl/p/pm42-010-s260-r/#area-eeprom-ram
+          urlkr: /dxl/p/pm42-010-s260-r/#영역-eeprom-ram
         - title: "Size"
           titlekr: "크기"
-          url: /dxl/pro_plus/pm42-010-s260-r/#size
-          urlkr: /dxl/pro_plus/pm42-010-s260-r/#크기
+          url: /dxl/p/pm42-010-s260-r/#size
+          urlkr: /dxl/p/pm42-010-s260-r/#크기
         - title: "Access"
           titlekr: "접근권한"
-          url: /dxl/pro_plus/pm42-010-s260-r/#access
-          urlkr: /dxl/pro_plus/pm42-010-s260-r/#접근권한
+          url: /dxl/p/pm42-010-s260-r/#access
+          urlkr: /dxl/p/pm42-010-s260-r/#접근권한
         - title: "Initial Value"
           titlekr: "초기값"
-          url: /dxl/pro_plus/pm42-010-s260-r/#initial-value
-          urlkr: /dxl/pro_plus/pm42-010-s260-r/#초기값
+          url: /dxl/p/pm42-010-s260-r/#initial-value
+          urlkr: /dxl/p/pm42-010-s260-r/#초기값
     - title: "EEPROM Area"
       titlekr: "EEPROM 영역"
-      url: /dxl/pro_plus/pm42-010-s260-r/#control-table-of-eeprom-area
-      urlkr: /dxl/pro_plus/pm42-010-s260-r/#eeprom-영역
+      url: /dxl/p/pm42-010-s260-r/#control-table-of-eeprom-area
+      urlkr: /dxl/p/pm42-010-s260-r/#eeprom-영역
     - title: "RAM Area"
       titlekr: "RAM 영역"
-      url: /dxl/pro_plus/pm42-010-s260-r/#control-table-of-ram-area
-      urlkr: /dxl/pro_plus/pm42-010-s260-r/#ram-영역
+      url: /dxl/p/pm42-010-s260-r/#control-table-of-ram-area
+      urlkr: /dxl/p/pm42-010-s260-r/#ram-영역
     - title: "Control Table Description"
       titlekr: "컨트롤 테이블 설명"
-      url: /dxl/pro_plus/pm42-010-s260-r/#control-table-description
-      urlkr: /dxl/pro_plus/pm42-010-s260-r/#컨트롤-테이블-설명
+      url: /dxl/p/pm42-010-s260-r/#control-table-description
+      urlkr: /dxl/p/pm42-010-s260-r/#컨트롤-테이블-설명
       children:
         - title: "Model Number(0)"
           titlekr: "Model Number(0)"
-          url: /dxl/pro_plus/pm42-010-s260-r/#model-number0
+          url: /dxl/p/pm42-010-s260-r/#model-number0
         - title: "Firmware Version(6)"
           titlekr: "Firmware Version(6)"
-          url: /dxl/pro_plus/pm42-010-s260-r/#firmware-version6
+          url: /dxl/p/pm42-010-s260-r/#firmware-version6
         - title: "ID(7)"
           titlekr: "ID(7)"
-          url: /dxl/pro_plus/pm42-010-s260-r/#id7
+          url: /dxl/p/pm42-010-s260-r/#id7
         - title: "Baud Rate(8)"
           titlekr: "Baud Rate(8)"
-          url: /dxl/pro_plus/pm42-010-s260-r/#baud-rate8
+          url: /dxl/p/pm42-010-s260-r/#baud-rate8
         - title: "Return Delay Time(9)"
           titlekr: "Return Delay Time(9)"
-          url: /dxl/pro_plus/pm42-010-s260-r/#return-delay-time9
+          url: /dxl/p/pm42-010-s260-r/#return-delay-time9
         - title: "Operating Mode(11)"
           titlekr: "Operating Mode(11)"
-          url: /dxl/pro_plus/pm42-010-s260-r/#operating-mode11
+          url: /dxl/p/pm42-010-s260-r/#operating-mode11
         - title: "Secondary ID(12)"
           titlekr: "Secondary ID(12)"
-          url: /dxl/pro_plus/pm42-010-s260-r/#secondary-id12
+          url: /dxl/p/pm42-010-s260-r/#secondary-id12
         - title: "Protocol Type(13)"
           titlekr: "Protocol Type(13)"
-          url: /dxl/pro_plus/pm42-010-s260-r/#protocol-type13
+          url: /dxl/p/pm42-010-s260-r/#protocol-type13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
-          url: /dxl/pro_plus/pm42-010-s260-r/#homing-offset20
+          url: /dxl/p/pm42-010-s260-r/#homing-offset20
         - title: "Moving Threshold(24)"
           titlekr: "Moving Threshold(24)"
-          url: /dxl/pro_plus/pm42-010-s260-r/#moving-threshold24
+          url: /dxl/p/pm42-010-s260-r/#moving-threshold24
         - title: "Temperature Limit(31)"
           titlekr: "Temperature Limit(31)"
-          url: /dxl/pro_plus/pm42-010-s260-r/#temperature-limit31
+          url: /dxl/p/pm42-010-s260-r/#temperature-limit31
         - title: "Max/Min Voltage Limit(32, 34)"
           titlekr: "Max/Min Voltage Limit(32, 34)"
-          url: /dxl/pro_plus/pm42-010-s260-r/#maxmin-voltage-limit32-34
+          url: /dxl/p/pm42-010-s260-r/#maxmin-voltage-limit32-34
         - title: "PWM Limit(36)"
           titlekr: "PWM Limit(36)"
-          url: /dxl/pro_plus/pm42-010-s260-r/#pwm-limit36
+          url: /dxl/p/pm42-010-s260-r/#pwm-limit36
         - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
-          url: /dxl/pro_plus/pm42-010-s260-r/#current-limit38
+          url: /dxl/p/pm42-010-s260-r/#current-limit38
         - title: "Acceleration Limit(40)"
           titlekr: "Acceleration Limit(40)"
-          url: /dxl/pro_plus/pm42-010-s260-r/#acceleration-limit40
+          url: /dxl/p/pm42-010-s260-r/#acceleration-limit40
         - title: "Velocity Limit(44)"
           titlekr: "Velocity Limit(44)"
-          url: /dxl/pro_plus/pm42-010-s260-r/#velocity-limit44
+          url: /dxl/p/pm42-010-s260-r/#velocity-limit44
         - title: "Max/Min Position Limit(48, 52)"
           titlekr: "Max/Min Position Limit(48, 52)"
-          url: /dxl/pro_plus/pm42-010-s260-r/#maxmin-position-limit48-52
+          url: /dxl/p/pm42-010-s260-r/#maxmin-position-limit48-52
         - title: "External Port Mode"
           titlekr: "External Port Mode"
-          url: /dxl/pro_plus/pm42-010-s260-r/#external-port-mode-external-port-data
+          url: /dxl/p/pm42-010-s260-r/#external-port-mode-external-port-data
         - title: "Shutdown(63)"
           titlekr: "Shutdown(63)"
-          url: /dxl/pro_plus/pm42-010-s260-r/#shutdown63
+          url: /dxl/p/pm42-010-s260-r/#shutdown63
         - title: "Indirect Address"
           titlekr: "Indirect Address/Data"
-          url: /dxl/pro_plus/pm42-010-s260-r/#indirect-address-indirect-data
+          url: /dxl/p/pm42-010-s260-r/#indirect-address-indirect-data
         - title: "Torque Enable(512)"
           titlekr: "Torque Enable(512)"
-          url: /dxl/pro_plus/pm42-010-s260-r/#torque-enable512
+          url: /dxl/p/pm42-010-s260-r/#torque-enable512
         - title: "RGB LED(513)"
           titlekr: "RGB LED(513)"
-          url: /dxl/pro_plus/pm42-010-s260-r/#rgb-led513
+          url: /dxl/p/pm42-010-s260-r/#rgb-led513
         - title: "Status Return Level(516)"
           titlekr: "Status Return Level(516)"
-          url: /dxl/pro_plus/pm42-010-s260-r/#status-return-level516
+          url: /dxl/p/pm42-010-s260-r/#status-return-level516
         - title: "Registered Instruction(517)"
           titlekr: "Registered Instruction(517)"
-          url: /dxl/pro_plus/pm42-010-s260-r/#registered-instruction517
+          url: /dxl/p/pm42-010-s260-r/#registered-instruction517
         - title: "Hardware Error Status(518)"
           titlekr: "Hardware Error Status(518)"
-          url: /dxl/pro_plus/pm42-010-s260-r/#hardware-error-status518
+          url: /dxl/p/pm42-010-s260-r/#hardware-error-status518
         - title: "Velocity PI Gain(524, 526)"
           titlekr: "Velocity PI Gain(524, 526)"
-          url: /dxl/pro_plus/pm42-010-s260-r/#velocity-pi-gain524-526-feedforward-2nd-gains536
+          url: /dxl/p/pm42-010-s260-r/#velocity-pi-gain524-526-feedforward-2nd-gains536
         - title: "Feedforward 2nd Gain(536)"
           titlekr: "Feedforward 2nd Gain(536)"
-          url: /dxl/pro_plus/pm42-010-s260-r/#velocity-pi-gain524-526-feedforward-2nd-gains536
+          url: /dxl/p/pm42-010-s260-r/#velocity-pi-gain524-526-feedforward-2nd-gains536
         - title: "Position PID Gain(528, 530, 532)"
           titlekr: "Position PID Gain(528, 530, 532)"
-          url: /dxl/pro_plus/pm42-010-s260-r/#position-pid-gain528-530-532-feedforward-1st-gains538
+          url: /dxl/p/pm42-010-s260-r/#position-pid-gain528-530-532-feedforward-1st-gains538
         - title: "Feedforward 1st Gain(538)"
           titlekr: "Feedforward 1st Gain(538)"
-          url: /dxl/pro_plus/pm42-010-s260-r/#position-pid-gain528-530-532-feedforward-1st-gains538
+          url: /dxl/p/pm42-010-s260-r/#position-pid-gain528-530-532-feedforward-1st-gains538
         - title: "Bus Watchdog(546)"
           titlekr: "Bus Watchdog(546)"
-          url: /dxl/pro_plus/pm42-010-s260-r/#bus-watchdog546
+          url: /dxl/p/pm42-010-s260-r/#bus-watchdog546
         - title: "Goal PWM(548)"
           titlekr: "Goal PWM(548)"
-          url: /dxl/pro_plus/pm42-010-s260-r/#goal-pwm548
+          url: /dxl/p/pm42-010-s260-r/#goal-pwm548
         - title: "Goal Current(550)"
           titlekr: "Goal Current(550)"
-          url: /dxl/pro_plus/pm42-010-s260-r/#goal-current550
+          url: /dxl/p/pm42-010-s260-r/#goal-current550
         - title: "Goal Velocity(552)"
           titlekr: "Goal Velocity(552)"
-          url: /dxl/pro_plus/pm42-010-s260-r/#goal-velocity552
+          url: /dxl/p/pm42-010-s260-r/#goal-velocity552
         - title: "Profile Acceleration(556)"
           titlekr: "Profile Acceleration(556)"
-          url: /dxl/pro_plus/pm42-010-s260-r/#profile-acceleration556
+          url: /dxl/p/pm42-010-s260-r/#profile-acceleration556
         - title: "Profiel Velocity(560)"
           titlekr: "Profiel Velocity(560)"
-          url: /dxl/pro_plus/pm42-010-s260-r/#profile-velocity560
+          url: /dxl/p/pm42-010-s260-r/#profile-velocity560
         - title: "Goal Position(564)"
           titlekr: "Goal Position(564)"
-          url: /dxl/pro_plus/pm42-010-s260-r/#goal-position564
+          url: /dxl/p/pm42-010-s260-r/#goal-position564
         - title: "Realtime Tick(568)"
           titlekr: "Realtime Tick(568)"
-          url: /dxl/pro_plus/pm42-010-s260-r/#realtime-tick568
+          url: /dxl/p/pm42-010-s260-r/#realtime-tick568
         - title: "Moving(570)"
           titlekr: "Moving(570)"
-          url: /dxl/pro_plus/pm42-010-s260-r/#moving570
+          url: /dxl/p/pm42-010-s260-r/#moving570
         - title: "Moving Status(571)"
           titlekr: "Moving Status(571)"
-          url: /dxl/pro_plus/pm42-010-s260-r/#moving-status571
+          url: /dxl/p/pm42-010-s260-r/#moving-status571
         - title: "Present PWM(572)"
           titlekr: "Present PWM(572)"
-          url: /dxl/pro_plus/pm42-010-s260-r/#present-pwm572
+          url: /dxl/p/pm42-010-s260-r/#present-pwm572
         - title: "Present Current(574)"
           titlekr: "Present Current(574)"
-          url: /dxl/pro_plus/pm42-010-s260-r/#present-current574
+          url: /dxl/p/pm42-010-s260-r/#present-current574
         - title: "Present Velocity(576)"
           titlekr: "Present Velocity(576)"
-          url: /dxl/pro_plus/pm42-010-s260-r/#present-velocity576
+          url: /dxl/p/pm42-010-s260-r/#present-velocity576
         - title: "Present Position(580)"
           titlekr: "Present Position(580)"
-          url: /dxl/pro_plus/pm42-010-s260-r/#present-position580
+          url: /dxl/p/pm42-010-s260-r/#present-position580
         - title: "Velocity Trajectory(584)"
           titlekr: "Velocity Trajectory(584)"
-          url: /dxl/pro_plus/pm42-010-s260-r/#velocity-trajectory584
+          url: /dxl/p/pm42-010-s260-r/#velocity-trajectory584
         - title: "Position Trajectory(588)"
           titlekr: "Position Trajectory(588)"
-          url: /dxl/pro_plus/pm42-010-s260-r/#position-trajectory588
+          url: /dxl/p/pm42-010-s260-r/#position-trajectory588
         - title: "Present Input Voltage(592)"
           titlekr: "Present Input Voltage(592)"
-          url: /dxl/pro_plus/pm42-010-s260-r/#present-input-voltage592
+          url: /dxl/p/pm42-010-s260-r/#present-input-voltage592
         - title: "Present Temperature(594)"
           titlekr: "Present Temperature(594)"
-          url: /dxl/pro_plus/pm42-010-s260-r/#present-temperature594
+          url: /dxl/p/pm42-010-s260-r/#present-temperature594
 - title: "How to Assemble"
   titlekr: "조립 예시"
-  url: /dxl/pro_plus/pm42-010-s260-r/#how-to-assemble
-  urlkr: /dxl/pro_plus/pm42-010-s260-r/#조립-예시
+  url: /dxl/p/pm42-010-s260-r/#how-to-assemble
+  urlkr: /dxl/p/pm42-010-s260-r/#조립-예시
   children:
     - title: "Option Frame Assembly"
       titlekr: "옵션프레임 조립"
-      url: /dxl/pro_plus/pm42-010-s260-r/#option-frame-assembly
-      urlkr: /dxl/pro_plus/pm42-010-s260-r/#옵션프레임-조립
+      url: /dxl/p/pm42-010-s260-r/#option-frame-assembly
+      urlkr: /dxl/p/pm42-010-s260-r/#옵션프레임-조립
 - title: "Maintenance"
   titlekr: "유지보수"
-  url: /dxl/pro_plus/pm42-010-s260-r/#maintenance
-  urlkr: /dxl/pro_plus/pm42-010-s260-r/#유지보수
+  url: /dxl/p/pm42-010-s260-r/#maintenance
+  urlkr: /dxl/p/pm42-010-s260-r/#유지보수
 - title: "Reference"
   titlekr: "참고자료"
-  url: /dxl/pro_plus/pm42-010-s260-r/#reference
-  urlkr: /dxl/pro_plus/pm42-010-s260-r/#참고자료
+  url: /dxl/p/pm42-010-s260-r/#reference
+  urlkr: /dxl/p/pm42-010-s260-r/#참고자료
   children:
     - title: "Certifications"
       titlekr: "인증 획득"
-      url: /dxl/pro_plus/pm42-010-s260-r/#certifications
-      urlkr: /dxl/pro_plus/pm42-010-s260-r/#인증-획득
+      url: /dxl/p/pm42-010-s260-r/#certifications
+      urlkr: /dxl/p/pm42-010-s260-r/#인증-획득
     - title: "Connector Information"
       titlekr: "커넥터 정보"
-      url: /dxl/pro_plus/pm42-010-s260-r/#connector-information
-      urlkr: /dxl/pro_plus/pm42-010-s260-r/#커넥터-정보
+      url: /dxl/p/pm42-010-s260-r/#connector-information
+      urlkr: /dxl/p/pm42-010-s260-r/#커넥터-정보
     - title: "Communication Circuit"
       titlekr: "통신 회로"
-      url: /dxl/pro_plus/pm42-010-s260-r/#communication-circuit
-      urlkr: /dxl/pro_plus/pm42-010-s260-r/#통신-회로
+      url: /dxl/p/pm42-010-s260-r/#communication-circuit
+      urlkr: /dxl/p/pm42-010-s260-r/#통신-회로
     - title: "Pin Arrangement"
       titlekr: "핀 배열"
-      url: /dxl/pro_plus/pm42-010-s260-r/#pin-arrangement
-      urlkr: /dxl/pro_plus/pm42-010-s260-r/#핀-배열
+      url: /dxl/p/pm42-010-s260-r/#pin-arrangement
+      urlkr: /dxl/p/pm42-010-s260-r/#핀-배열
     - title: "Drawings"
       titlekr: "도면"
-      url: /dxl/pro_plus/pm42-010-s260-r/#drawings
-      urlkr: /dxl/pro_plus/pm42-010-s260-r/#도면
+      url: /dxl/p/pm42-010-s260-r/#drawings
+      urlkr: /dxl/p/pm42-010-s260-r/#도면
 
 pm54-040-s250-r:
 - title: "Specifications"
   titlekr: "주요 사양"
-  url: /dxl/pro_plus/pm54-040-s250-r/#specifications
-  urlkr: /dxl/pro_plus/pm54-040-s250-r/#주요-사양
+  url: /dxl/p/pm54-040-s250-r/#specifications
+  urlkr: /dxl/p/pm54-040-s250-r/#주요-사양
   children:
     - title: "Performance Graph"
       titlekr: "성능 그래프"
-      url: /dxl/pro_plus/pm54-040-s250-r/#performance-graph
-      urlkr: /dxl/pro_plus/pm54-040-s250-r/#성능-그래프
+      url: /dxl/p/pm54-040-s250-r/#performance-graph
+      urlkr: /dxl/p/pm54-040-s250-r/#성능-그래프
 - title: "Control Table"
   titlekr: "컨트롤 테이블"
-  url: /dxl/pro_plus/pm54-040-s250-r/#control-table
-  urlkr: /dxl/pro_plus/pm54-040-s250-r/#컨트롤-테이블
+  url: /dxl/p/pm54-040-s250-r/#control-table
+  urlkr: /dxl/p/pm54-040-s250-r/#컨트롤-테이블
   children:
     - title: "Control Table, Data, Address"
       titlekr: "컨트롤 테이블, 데이터, 주소"
-      url: /dxl/pro_plus/pm54-040-s250-r/#control-table-data-address
-      urlkr: /dxl/pro_plus/pm54-040-s250-r/#컨트롤-테이블-데이터-주소
+      url: /dxl/p/pm54-040-s250-r/#control-table-data-address
+      urlkr: /dxl/p/pm54-040-s250-r/#컨트롤-테이블-데이터-주소
       children:
         - title: "Area(EEPROM, RAM)"
           titlekr: "영역 (EEPROM, RAM)"
-          url: /dxl/pro_plus/pm54-040-s250-r/#area-eeprom-ram
-          urlkr: /dxl/pro_plus/pm54-040-s250-r/#영역-eeprom-ram
+          url: /dxl/p/pm54-040-s250-r/#area-eeprom-ram
+          urlkr: /dxl/p/pm54-040-s250-r/#영역-eeprom-ram
         - title: "Size"
           titlekr: "크기"
-          url: /dxl/pro_plus/pm54-040-s250-r/#size
-          urlkr: /dxl/pro_plus/pm54-040-s250-r/#크기
+          url: /dxl/p/pm54-040-s250-r/#size
+          urlkr: /dxl/p/pm54-040-s250-r/#크기
         - title: "Access"
           titlekr: "접근권한"
-          url: /dxl/pro_plus/pm54-040-s250-r/#access
-          urlkr: /dxl/pro_plus/pm54-040-s250-r/#접근권한
+          url: /dxl/p/pm54-040-s250-r/#access
+          urlkr: /dxl/p/pm54-040-s250-r/#접근권한
         - title: "Initial Value"
           titlekr: "초기값"
-          url: /dxl/pro_plus/pm54-040-s250-r/#initial-value
-          urlkr: /dxl/pro_plus/pm54-040-s250-r/#초기값
+          url: /dxl/p/pm54-040-s250-r/#initial-value
+          urlkr: /dxl/p/pm54-040-s250-r/#초기값
     - title: "EEPROM Area"
       titlekr: "EEPROM 영역"
-      url: /dxl/pro_plus/pm54-040-s250-r/#control-table-of-eeprom-area
-      urlkr: /dxl/pro_plus/pm54-040-s250-r/#eeprom-영역
+      url: /dxl/p/pm54-040-s250-r/#control-table-of-eeprom-area
+      urlkr: /dxl/p/pm54-040-s250-r/#eeprom-영역
     - title: "RAM Area"
       titlekr: "RAM 영역"
-      url: /dxl/pro_plus/pm54-040-s250-r/#control-table-of-ram-area
-      urlkr: /dxl/pro_plus/pm54-040-s250-r/#ram-영역
+      url: /dxl/p/pm54-040-s250-r/#control-table-of-ram-area
+      urlkr: /dxl/p/pm54-040-s250-r/#ram-영역
     - title: "Control Table Description"
       titlekr: "컨트롤 테이블 설명"
-      url: /dxl/pro_plus/pm54-040-s250-r/#control-table-description
-      urlkr: /dxl/pro_plus/pm54-040-s250-r/#컨트롤-테이블-설명
+      url: /dxl/p/pm54-040-s250-r/#control-table-description
+      urlkr: /dxl/p/pm54-040-s250-r/#컨트롤-테이블-설명
       children:
         - title: "Model Number(0)"
           titlekr: "Model Number(0)"
-          url: /dxl/pro_plus/pm54-040-s250-r/#model-number0
+          url: /dxl/p/pm54-040-s250-r/#model-number0
         - title: "Firmware Version(6)"
           titlekr: "Firmware Version(6)"
-          url: /dxl/pro_plus/pm54-040-s250-r/#firmware-version6
+          url: /dxl/p/pm54-040-s250-r/#firmware-version6
         - title: "ID(7)"
           titlekr: "ID(7)"
-          url: /dxl/pro_plus/pm54-040-s250-r/#id7
+          url: /dxl/p/pm54-040-s250-r/#id7
         - title: "Baud Rate(8)"
           titlekr: "Baud Rate(8)"
-          url: /dxl/pro_plus/pm54-040-s250-r/#baud-rate8
+          url: /dxl/p/pm54-040-s250-r/#baud-rate8
         - title: "Return Delay Time(9)"
           titlekr: "Return Delay Time(9)"
-          url: /dxl/pro_plus/pm54-040-s250-r/#return-delay-time9
+          url: /dxl/p/pm54-040-s250-r/#return-delay-time9
         - title: "Operating Mode(11)"
           titlekr: "Operating Mode(11)"
-          url: /dxl/pro_plus/pm54-040-s250-r/#operating-mode11
+          url: /dxl/p/pm54-040-s250-r/#operating-mode11
         - title: "Secondary ID(12)"
           titlekr: "Secondary ID(12)"
-          url: /dxl/pro_plus/pm54-040-s250-r/#secondary-id12
+          url: /dxl/p/pm54-040-s250-r/#secondary-id12
         - title: "Protocol Type(13)"
           titlekr: "Protocol Type(13)"
-          url: /dxl/pro_plus/pm54-040-s250-r/#protocol-type13
+          url: /dxl/p/pm54-040-s250-r/#protocol-type13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
-          url: /dxl/pro_plus/pm54-040-s250-r/#homing-offset20
+          url: /dxl/p/pm54-040-s250-r/#homing-offset20
         - title: "Moving Threshold(24)"
           titlekr: "Moving Threshold(24)"
-          url: /dxl/pro_plus/pm54-040-s250-r/#moving-threshold24
+          url: /dxl/p/pm54-040-s250-r/#moving-threshold24
         - title: "Temperature Limit(31)"
           titlekr: "Temperature Limit(31)"
-          url: /dxl/pro_plus/pm54-040-s250-r/#temperature-limit31
+          url: /dxl/p/pm54-040-s250-r/#temperature-limit31
         - title: "Max/Min Voltage Limit(32, 34)"
           titlekr: "Max/Min Voltage Limit(32, 34)"
-          url: /dxl/pro_plus/pm54-040-s250-r/#maxmin-voltage-limit32-34
+          url: /dxl/p/pm54-040-s250-r/#maxmin-voltage-limit32-34
         - title: "PWM Limit(36)"
           titlekr: "PWM Limit(36)"
-          url: /dxl/pro_plus/pm54-040-s250-r/#pwm-limit36
+          url: /dxl/p/pm54-040-s250-r/#pwm-limit36
         - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
-          url: /dxl/pro_plus/pm54-040-s250-r/#current-limit38
+          url: /dxl/p/pm54-040-s250-r/#current-limit38
         - title: "Acceleration Limit(40)"
           titlekr: "Acceleration Limit(40)"
-          url: /dxl/pro_plus/pm54-040-s250-r/#acceleration-limit40
+          url: /dxl/p/pm54-040-s250-r/#acceleration-limit40
         - title: "Velocity Limit(44)"
           titlekr: "Velocity Limit(44)"
-          url: /dxl/pro_plus/pm54-040-s250-r/#velocity-limit44
+          url: /dxl/p/pm54-040-s250-r/#velocity-limit44
         - title: "Max/Min Position Limit(48, 52)"
           titlekr: "Max/Min Position Limit(48, 52)"
-          url: /dxl/pro_plus/pm54-040-s250-r/#maxmin-position-limit48-52
+          url: /dxl/p/pm54-040-s250-r/#maxmin-position-limit48-52
         - title: "External Port Mode"
           titlekr: "External Port Mode"
-          url: /dxl/pro_plus/pm54-040-s250-r/#external-port-mode-external-port-data
+          url: /dxl/p/pm54-040-s250-r/#external-port-mode-external-port-data
         - title: "Shutdown(63)"
           titlekr: "Shutdown(63)"
-          url: /dxl/pro_plus/pm54-040-s250-r/#shutdown63
+          url: /dxl/p/pm54-040-s250-r/#shutdown63
         - title: "Indirect Address"
           titlekr: "Indirect Address/Data"
-          url: /dxl/pro_plus/pm54-040-s250-r/#indirect-address-indirect-data
+          url: /dxl/p/pm54-040-s250-r/#indirect-address-indirect-data
         - title: "Torque Enable(512)"
           titlekr: "Torque Enable(512)"
-          url: /dxl/pro_plus/pm54-040-s250-r/#torque-enable512
+          url: /dxl/p/pm54-040-s250-r/#torque-enable512
         - title: "RGB LED(513)"
           titlekr: "RGB LED(513)"
-          url: /dxl/pro_plus/pm54-040-s250-r/#rgb-led513
+          url: /dxl/p/pm54-040-s250-r/#rgb-led513
         - title: "Status Return Level(516)"
           titlekr: "Status Return Level(516)"
-          url: /dxl/pro_plus/pm54-040-s250-r/#status-return-level516
+          url: /dxl/p/pm54-040-s250-r/#status-return-level516
         - title: "Registered Instruction(517)"
           titlekr: "Registered Instruction(517)"
-          url: /dxl/pro_plus/pm54-040-s250-r/#registered-instruction517
+          url: /dxl/p/pm54-040-s250-r/#registered-instruction517
         - title: "Hardware Error Status(518)"
           titlekr: "Hardware Error Status(518)"
-          url: /dxl/pro_plus/pm54-040-s250-r/#hardware-error-status518
+          url: /dxl/p/pm54-040-s250-r/#hardware-error-status518
         - title: "Velocity PI Gain(524, 526)"
           titlekr: "Velocity PI Gain(524, 526)"
-          url: /dxl/pro_plus/pm54-040-s250-r/#velocity-pi-gain524-526-feedforward-2nd-gains536
+          url: /dxl/p/pm54-040-s250-r/#velocity-pi-gain524-526-feedforward-2nd-gains536
         - title: "Feedforward 2nd Gain(536)"
           titlekr: "Feedforward 2nd Gain(536)"
-          url: /dxl/pro_plus/pm54-040-s250-r/#velocity-pi-gain524-526-feedforward-2nd-gains536
+          url: /dxl/p/pm54-040-s250-r/#velocity-pi-gain524-526-feedforward-2nd-gains536
         - title: "Position PID Gain(528, 530, 532)"
           titlekr: "Position PID Gain(528, 530, 532)"
-          url: /dxl/pro_plus/pm54-040-s250-r/#position-pid-gain528-530-532-feedforward-1st-gains538
+          url: /dxl/p/pm54-040-s250-r/#position-pid-gain528-530-532-feedforward-1st-gains538
         - title: "Feedforward 1st Gain(538)"
           titlekr: "Feedforward 1st Gain(538)"
-          url: /dxl/pro_plus/pm54-040-s250-r/#position-pid-gain528-530-532-feedforward-1st-gains538
+          url: /dxl/p/pm54-040-s250-r/#position-pid-gain528-530-532-feedforward-1st-gains538
         - title: "Bus Watchdog(546)"
           titlekr: "Bus Watchdog(546)"
-          url: /dxl/pro_plus/pm54-040-s250-r/#bus-watchdog546
+          url: /dxl/p/pm54-040-s250-r/#bus-watchdog546
         - title: "Goal PWM(548)"
           titlekr: "Goal PWM(548)"
-          url: /dxl/pro_plus/pm54-040-s250-r/#goal-pwm548
+          url: /dxl/p/pm54-040-s250-r/#goal-pwm548
         - title: "Goal Current(550)"
           titlekr: "Goal Current(550)"
-          url: /dxl/pro_plus/pm54-040-s250-r/#goal-current550
+          url: /dxl/p/pm54-040-s250-r/#goal-current550
         - title: "Goal Velocity(552)"
           titlekr: "Goal Velocity(552)"
-          url: /dxl/pro_plus/pm54-040-s250-r/#goal-velocity552
+          url: /dxl/p/pm54-040-s250-r/#goal-velocity552
         - title: "Profile Acceleration(556)"
           titlekr: "Profile Acceleration(556)"
-          url: /dxl/pro_plus/pm54-040-s250-r/#profile-acceleration556
+          url: /dxl/p/pm54-040-s250-r/#profile-acceleration556
         - title: "Profiel Velocity(560)"
           titlekr: "Profiel Velocity(560)"
-          url: /dxl/pro_plus/pm54-040-s250-r/#profile-velocity560
+          url: /dxl/p/pm54-040-s250-r/#profile-velocity560
         - title: "Goal Position(564)"
           titlekr: "Goal Position(564)"
-          url: /dxl/pro_plus/pm54-040-s250-r/#goal-position564
+          url: /dxl/p/pm54-040-s250-r/#goal-position564
         - title: "Realtime Tick(568)"
           titlekr: "Realtime Tick(568)"
-          url: /dxl/pro_plus/pm54-040-s250-r/#realtime-tick568
+          url: /dxl/p/pm54-040-s250-r/#realtime-tick568
         - title: "Moving(570)"
           titlekr: "Moving(570)"
-          url: /dxl/pro_plus/pm54-040-s250-r/#moving570
+          url: /dxl/p/pm54-040-s250-r/#moving570
         - title: "Moving Status(571)"
           titlekr: "Moving Status(571)"
-          url: /dxl/pro_plus/pm54-040-s250-r/#moving-status571
+          url: /dxl/p/pm54-040-s250-r/#moving-status571
         - title: "Present PWM(572)"
           titlekr: "Present PWM(572)"
-          url: /dxl/pro_plus/pm54-040-s250-r/#present-pwm572
+          url: /dxl/p/pm54-040-s250-r/#present-pwm572
         - title: "Present Current(574)"
           titlekr: "Present Current(574)"
-          url: /dxl/pro_plus/pm54-040-s250-r/#present-current574
+          url: /dxl/p/pm54-040-s250-r/#present-current574
         - title: "Present Velocity(576)"
           titlekr: "Present Velocity(576)"
-          url: /dxl/pro_plus/pm54-040-s250-r/#present-velocity576
+          url: /dxl/p/pm54-040-s250-r/#present-velocity576
         - title: "Present Position(580)"
           titlekr: "Present Position(580)"
-          url: /dxl/pro_plus/pm54-040-s250-r/#present-position580
+          url: /dxl/p/pm54-040-s250-r/#present-position580
         - title: "Velocity Trajectory(584)"
           titlekr: "Velocity Trajectory(584)"
-          url: /dxl/pro_plus/pm54-040-s250-r/#velocity-trajectory584
+          url: /dxl/p/pm54-040-s250-r/#velocity-trajectory584
         - title: "Position Trajectory(588)"
           titlekr: "Position Trajectory(588)"
-          url: /dxl/pro_plus/pm54-040-s250-r/#position-trajectory588
+          url: /dxl/p/pm54-040-s250-r/#position-trajectory588
         - title: "Present Input Voltage(592)"
           titlekr: "Present Input Voltage(592)"
-          url: /dxl/pro_plus/pm54-040-s250-r/#present-input-voltage592
+          url: /dxl/p/pm54-040-s250-r/#present-input-voltage592
         - title: "Present Temperature(594)"
           titlekr: "Present Temperature(594)"
-          url: /dxl/pro_plus/pm54-040-s250-r/#present-temperature594
+          url: /dxl/p/pm54-040-s250-r/#present-temperature594
 - title: "How to Assemble"
   titlekr: "조립 예시"
-  url: /dxl/pro_plus/pm54-040-s250-r/#how-to-assemble
-  urlkr: /dxl/pro_plus/pm54-040-s250-r/#조립-예시
+  url: /dxl/p/pm54-040-s250-r/#how-to-assemble
+  urlkr: /dxl/p/pm54-040-s250-r/#조립-예시
   children:
     - title: "Option Frame Assembly"
       titlekr: "옵션프레임 조립"
-      url: /dxl/pro_plus/pm54-040-s250-r/#option-frame-assembly
-      urlkr: /dxl/pro_plus/pm54-040-s250-r/#옵션프레임-조립
+      url: /dxl/p/pm54-040-s250-r/#option-frame-assembly
+      urlkr: /dxl/p/pm54-040-s250-r/#옵션프레임-조립
 - title: "Maintenance"
   titlekr: "유지보수"
-  url: /dxl/pro_plus/pm54-040-s250-r/#maintenance
-  urlkr: /dxl/pro_plus/pm54-040-s250-r/#유지보수
+  url: /dxl/p/pm54-040-s250-r/#maintenance
+  urlkr: /dxl/p/pm54-040-s250-r/#유지보수
 - title: "Reference"
   titlekr: "참고자료"
-  url: /dxl/pro_plus/pm54-040-s250-r/#reference
-  urlkr: /dxl/pro_plus/pm54-040-s250-r/#참고자료
+  url: /dxl/p/pm54-040-s250-r/#reference
+  urlkr: /dxl/p/pm54-040-s250-r/#참고자료
   children:
     - title: "Certifications"
       titlekr: "인증 획득"
-      url: /dxl/pro_plus/pm54-040-s250-r/#certifications
-      urlkr: /dxl/pro_plus/pm54-040-s250-r/#인증-획득
+      url: /dxl/p/pm54-040-s250-r/#certifications
+      urlkr: /dxl/p/pm54-040-s250-r/#인증-획득
     - title: "Connector Information"
       titlekr: "커넥터 정보"
-      url: /dxl/pro_plus/pm54-040-s250-r/#connector-information
-      urlkr: /dxl/pro_plus/pm54-040-s250-r/#커넥터-정보
+      url: /dxl/p/pm54-040-s250-r/#connector-information
+      urlkr: /dxl/p/pm54-040-s250-r/#커넥터-정보
     - title: "Communication Circuit"
       titlekr: "통신 회로"
-      url: /dxl/pro_plus/pm54-040-s250-r/#communication-circuit
-      urlkr: /dxl/pro_plus/pm54-040-s250-r/#통신-회로
+      url: /dxl/p/pm54-040-s250-r/#communication-circuit
+      urlkr: /dxl/p/pm54-040-s250-r/#통신-회로
     - title: "Pin Arrangement"
       titlekr: "핀 배열"
-      url: /dxl/pro_plus/pm54-040-s250-r/#pin-arrangement
-      urlkr: /dxl/pro_plus/pm54-040-s250-r/#핀-배열
+      url: /dxl/p/pm54-040-s250-r/#pin-arrangement
+      urlkr: /dxl/p/pm54-040-s250-r/#핀-배열
     - title: "Drawings"
       titlekr: "도면"
-      url: /dxl/pro_plus/pm54-040-s250-r/#drawings
-      urlkr: /dxl/pro_plus/pm54-040-s250-r/#도면
+      url: /dxl/p/pm54-040-s250-r/#drawings
+      urlkr: /dxl/p/pm54-040-s250-r/#도면
 
 pm54-060-s250-r:
 - title: "Specifications"
   titlekr: "주요 사양"
-  url: /dxl/pro_plus/pm54-060-s250-r/#specifications
-  urlkr: /dxl/pro_plus/pm54-060-s250-r/#주요-사양
+  url: /dxl/p/pm54-060-s250-r/#specifications
+  urlkr: /dxl/p/pm54-060-s250-r/#주요-사양
   children:
     - title: "Performance Graph"
       titlekr: "성능 그래프"
-      url: /dxl/pro_plus/pm54-060-s250-r/#performance-graph
-      urlkr: /dxl/pro_plus/pm54-060-s250-r/#성능-그래프
+      url: /dxl/p/pm54-060-s250-r/#performance-graph
+      urlkr: /dxl/p/pm54-060-s250-r/#성능-그래프
 - title: "Control Table"
   titlekr: "컨트롤 테이블"
-  url: /dxl/pro_plus/pm54-060-s250-r/#control-table
-  urlkr: /dxl/pro_plus/pm54-060-s250-r/#컨트롤-테이블
+  url: /dxl/p/pm54-060-s250-r/#control-table
+  urlkr: /dxl/p/pm54-060-s250-r/#컨트롤-테이블
   children:
     - title: "Control Table, Data, Address"
       titlekr: "컨트롤 테이블, 데이터, 주소"
-      url: /dxl/pro_plus/pm54-060-s250-r/#control-table-data-address
-      urlkr: /dxl/pro_plus/pm54-060-s250-r/#컨트롤-테이블-데이터-주소
+      url: /dxl/p/pm54-060-s250-r/#control-table-data-address
+      urlkr: /dxl/p/pm54-060-s250-r/#컨트롤-테이블-데이터-주소
       children:
         - title: "Area(EEPROM, RAM)"
           titlekr: "영역 (EEPROM, RAM)"
-          url: /dxl/pro_plus/pm54-060-s250-r/#area-eeprom-ram
-          urlkr: /dxl/pro_plus/pm54-060-s250-r/#영역-eeprom-ram
+          url: /dxl/p/pm54-060-s250-r/#area-eeprom-ram
+          urlkr: /dxl/p/pm54-060-s250-r/#영역-eeprom-ram
         - title: "Size"
           titlekr: "크기"
-          url: /dxl/pro_plus/pm54-060-s250-r/#size
-          urlkr: /dxl/pro_plus/pm54-060-s250-r/#크기
+          url: /dxl/p/pm54-060-s250-r/#size
+          urlkr: /dxl/p/pm54-060-s250-r/#크기
         - title: "Access"
           titlekr: "접근권한"
-          url: /dxl/pro_plus/pm54-060-s250-r/#access
-          urlkr: /dxl/pro_plus/pm54-060-s250-r/#접근권한
+          url: /dxl/p/pm54-060-s250-r/#access
+          urlkr: /dxl/p/pm54-060-s250-r/#접근권한
         - title: "Initial Value"
           titlekr: "초기값"
-          url: /dxl/pro_plus/pm54-060-s250-r/#initial-value
-          urlkr: /dxl/pro_plus/pm54-060-s250-r/#초기값
+          url: /dxl/p/pm54-060-s250-r/#initial-value
+          urlkr: /dxl/p/pm54-060-s250-r/#초기값
     - title: "EEPROM Area"
       titlekr: "EEPROM 영역"
-      url: /dxl/pro_plus/pm54-060-s250-r/#control-table-of-eeprom-area
-      urlkr: /dxl/pro_plus/pm54-060-s250-r/#eeprom-영역
+      url: /dxl/p/pm54-060-s250-r/#control-table-of-eeprom-area
+      urlkr: /dxl/p/pm54-060-s250-r/#eeprom-영역
     - title: "RAM Area"
       titlekr: "RAM 영역"
-      url: /dxl/pro_plus/pm54-060-s250-r/#control-table-of-ram-area
-      urlkr: /dxl/pro_plus/pm54-060-s250-r/#ram-영역
+      url: /dxl/p/pm54-060-s250-r/#control-table-of-ram-area
+      urlkr: /dxl/p/pm54-060-s250-r/#ram-영역
     - title: "Control Table Description"
       titlekr: "컨트롤 테이블 설명"
-      url: /dxl/pro_plus/pm54-060-s250-r/#control-table-description
-      urlkr: /dxl/pro_plus/pm54-060-s250-r/#컨트롤-테이블-설명
+      url: /dxl/p/pm54-060-s250-r/#control-table-description
+      urlkr: /dxl/p/pm54-060-s250-r/#컨트롤-테이블-설명
       children:
         - title: "Model Number(0)"
           titlekr: "Model Number(0)"
-          url: /dxl/pro_plus/pm54-060-s250-r/#model-number0
+          url: /dxl/p/pm54-060-s250-r/#model-number0
         - title: "Firmware Version(6)"
           titlekr: "Firmware Version(6)"
-          url: /dxl/pro_plus/pm54-060-s250-r/#firmware-version6
+          url: /dxl/p/pm54-060-s250-r/#firmware-version6
         - title: "ID(7)"
           titlekr: "ID(7)"
-          url: /dxl/pro_plus/pm54-060-s250-r/#id7
+          url: /dxl/p/pm54-060-s250-r/#id7
         - title: "Baud Rate(8)"
           titlekr: "Baud Rate(8)"
-          url: /dxl/pro_plus/pm54-060-s250-r/#baud-rate8
+          url: /dxl/p/pm54-060-s250-r/#baud-rate8
         - title: "Return Delay Time(9)"
           titlekr: "Return Delay Time(9)"
-          url: /dxl/pro_plus/pm54-060-s250-r/#return-delay-time9
+          url: /dxl/p/pm54-060-s250-r/#return-delay-time9
         - title: "Operating Mode(11)"
           titlekr: "Operating Mode(11)"
-          url: /dxl/pro_plus/pm54-060-s250-r/#operating-mode11
+          url: /dxl/p/pm54-060-s250-r/#operating-mode11
         - title: "Secondary ID(12)"
           titlekr: "Secondary ID(12)"
-          url: /dxl/pro_plus/pm54-060-s250-r/#secondary-id12
+          url: /dxl/p/pm54-060-s250-r/#secondary-id12
         - title: "Protocol Type(13)"
           titlekr: "Protocol Type(13)"
-          url: /dxl/pro_plus/pm54-060-s250-r/#protocol-type13
+          url: /dxl/p/pm54-060-s250-r/#protocol-type13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
-          url: /dxl/pro_plus/pm54-060-s250-r/#homing-offset20
+          url: /dxl/p/pm54-060-s250-r/#homing-offset20
         - title: "Moving Threshold(24)"
           titlekr: "Moving Threshold(24)"
-          url: /dxl/pro_plus/pm54-060-s250-r/#moving-threshold24
+          url: /dxl/p/pm54-060-s250-r/#moving-threshold24
         - title: "Temperature Limit(31)"
           titlekr: "Temperature Limit(31)"
-          url: /dxl/pro_plus/pm54-060-s250-r/#temperature-limit31
+          url: /dxl/p/pm54-060-s250-r/#temperature-limit31
         - title: "Max/Min Voltage Limit(32, 34)"
           titlekr: "Max/Min Voltage Limit(32, 34)"
-          url: /dxl/pro_plus/pm54-060-s250-r/#maxmin-voltage-limit32-34
+          url: /dxl/p/pm54-060-s250-r/#maxmin-voltage-limit32-34
         - title: "PWM Limit(36)"
           titlekr: "PWM Limit(36)"
-          url: /dxl/pro_plus/pm54-060-s250-r/#pwm-limit36
+          url: /dxl/p/pm54-060-s250-r/#pwm-limit36
         - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
-          url: /dxl/pro_plus/pm54-060-s250-r/#current-limit38
+          url: /dxl/p/pm54-060-s250-r/#current-limit38
         - title: "Acceleration Limit(40)"
           titlekr: "Acceleration Limit(40)"
-          url: /dxl/pro_plus/pm54-060-s250-r/#acceleration-limit40
+          url: /dxl/p/pm54-060-s250-r/#acceleration-limit40
         - title: "Velocity Limit(44)"
           titlekr: "Velocity Limit(44)"
-          url: /dxl/pro_plus/pm54-060-s250-r/#velocity-limit44
+          url: /dxl/p/pm54-060-s250-r/#velocity-limit44
         - title: "Max/Min Position Limit(48, 52)"
           titlekr: "Max/Min Position Limit(48, 52)"
-          url: /dxl/pro_plus/pm54-060-s250-r/#maxmin-position-limit48-52
+          url: /dxl/p/pm54-060-s250-r/#maxmin-position-limit48-52
         - title: "External Port Mode"
           titlekr: "External Port Mode"
-          url: /dxl/pro_plus/pm54-060-s250-r/#external-port-mode-external-port-data
+          url: /dxl/p/pm54-060-s250-r/#external-port-mode-external-port-data
         - title: "Shutdown(63)"
           titlekr: "Shutdown(63)"
-          url: /dxl/pro_plus/pm54-060-s250-r/#shutdown63
+          url: /dxl/p/pm54-060-s250-r/#shutdown63
         - title: "Indirect Address"
           titlekr: "Indirect Address/Data"
-          url: /dxl/pro_plus/pm54-060-s250-r/#indirect-address-indirect-data
+          url: /dxl/p/pm54-060-s250-r/#indirect-address-indirect-data
         - title: "Torque Enable(512)"
           titlekr: "Torque Enable(512)"
-          url: /dxl/pro_plus/pm54-060-s250-r/#torque-enable512
+          url: /dxl/p/pm54-060-s250-r/#torque-enable512
         - title: "RGB LED(513)"
           titlekr: "RGB LED(513)"
-          url: /dxl/pro_plus/pm54-060-s250-r/#rgb-led513
+          url: /dxl/p/pm54-060-s250-r/#rgb-led513
         - title: "Status Return Level(516)"
           titlekr: "Status Return Level(516)"
-          url: /dxl/pro_plus/pm54-060-s250-r/#status-return-level516
+          url: /dxl/p/pm54-060-s250-r/#status-return-level516
         - title: "Registered Instruction(517)"
           titlekr: "Registered Instruction(517)"
-          url: /dxl/pro_plus/pm54-060-s250-r/#registered-instruction517
+          url: /dxl/p/pm54-060-s250-r/#registered-instruction517
         - title: "Hardware Error Status(518)"
           titlekr: "Hardware Error Status(518)"
-          url: /dxl/pro_plus/pm54-060-s250-r/#hardware-error-status518
+          url: /dxl/p/pm54-060-s250-r/#hardware-error-status518
         - title: "Velocity PI Gain(524, 526)"
           titlekr: "Velocity PI Gain(524, 526)"
-          url: /dxl/pro_plus/pm54-060-s250-r/#velocity-pi-gain524-526-feedforward-2nd-gains536
+          url: /dxl/p/pm54-060-s250-r/#velocity-pi-gain524-526-feedforward-2nd-gains536
         - title: "Feedforward 2nd Gain(536)"
           titlekr: "Feedforward 2nd Gain(536)"
-          url: /dxl/pro_plus/pm54-060-s250-r/#velocity-pi-gain524-526-feedforward-2nd-gains536
+          url: /dxl/p/pm54-060-s250-r/#velocity-pi-gain524-526-feedforward-2nd-gains536
         - title: "Position PID Gain(528, 530, 532)"
           titlekr: "Position PID Gain(528, 530, 532)"
-          url: /dxl/pro_plus/pm54-060-s250-r/#position-pid-gain528-530-532-feedforward-1st-gains538
+          url: /dxl/p/pm54-060-s250-r/#position-pid-gain528-530-532-feedforward-1st-gains538
         - title: "Feedforward 1st Gain(538)"
           titlekr: "Feedforward 1st Gain(538)"
-          url: /dxl/pro_plus/pm54-060-s250-r/#position-pid-gain528-530-532-feedforward-1st-gains538
+          url: /dxl/p/pm54-060-s250-r/#position-pid-gain528-530-532-feedforward-1st-gains538
         - title: "Bus Watchdog(546)"
           titlekr: "Bus Watchdog(546)"
-          url: /dxl/pro_plus/pm54-060-s250-r/#bus-watchdog546
+          url: /dxl/p/pm54-060-s250-r/#bus-watchdog546
         - title: "Goal PWM(548)"
           titlekr: "Goal PWM(548)"
-          url: /dxl/pro_plus/pm54-060-s250-r/#goal-pwm548
+          url: /dxl/p/pm54-060-s250-r/#goal-pwm548
         - title: "Goal Current(550)"
           titlekr: "Goal Current(550)"
-          url: /dxl/pro_plus/pm54-060-s250-r/#goal-current550
+          url: /dxl/p/pm54-060-s250-r/#goal-current550
         - title: "Goal Velocity(552)"
           titlekr: "Goal Velocity(552)"
-          url: /dxl/pro_plus/pm54-060-s250-r/#goal-velocity552
+          url: /dxl/p/pm54-060-s250-r/#goal-velocity552
         - title: "Profile Acceleration(556)"
           titlekr: "Profile Acceleration(556)"
-          url: /dxl/pro_plus/pm54-060-s250-r/#profile-acceleration556
+          url: /dxl/p/pm54-060-s250-r/#profile-acceleration556
         - title: "Profiel Velocity(560)"
           titlekr: "Profiel Velocity(560)"
-          url: /dxl/pro_plus/pm54-060-s250-r/#profile-velocity560
+          url: /dxl/p/pm54-060-s250-r/#profile-velocity560
         - title: "Goal Position(564)"
           titlekr: "Goal Position(564)"
-          url: /dxl/pro_plus/pm54-060-s250-r/#goal-position564
+          url: /dxl/p/pm54-060-s250-r/#goal-position564
         - title: "Realtime Tick(568)"
           titlekr: "Realtime Tick(568)"
-          url: /dxl/pro_plus/pm54-060-s250-r/#realtime-tick568
+          url: /dxl/p/pm54-060-s250-r/#realtime-tick568
         - title: "Moving(570)"
           titlekr: "Moving(570)"
-          url: /dxl/pro_plus/pm54-060-s250-r/#moving570
+          url: /dxl/p/pm54-060-s250-r/#moving570
         - title: "Moving Status(571)"
           titlekr: "Moving Status(571)"
-          url: /dxl/pro_plus/pm54-060-s250-r/#moving-status571
+          url: /dxl/p/pm54-060-s250-r/#moving-status571
         - title: "Present PWM(572)"
           titlekr: "Present PWM(572)"
-          url: /dxl/pro_plus/pm54-060-s250-r/#present-pwm572
+          url: /dxl/p/pm54-060-s250-r/#present-pwm572
         - title: "Present Current(574)"
           titlekr: "Present Current(574)"
-          url: /dxl/pro_plus/pm54-060-s250-r/#present-current574
+          url: /dxl/p/pm54-060-s250-r/#present-current574
         - title: "Present Velocity(576)"
           titlekr: "Present Velocity(576)"
-          url: /dxl/pro_plus/pm54-060-s250-r/#present-velocity576
+          url: /dxl/p/pm54-060-s250-r/#present-velocity576
         - title: "Present Position(580)"
           titlekr: "Present Position(580)"
-          url: /dxl/pro_plus/pm54-060-s250-r/#present-position580
+          url: /dxl/p/pm54-060-s250-r/#present-position580
         - title: "Velocity Trajectory(584)"
           titlekr: "Velocity Trajectory(584)"
-          url: /dxl/pro_plus/pm54-060-s250-r/#velocity-trajectory584
+          url: /dxl/p/pm54-060-s250-r/#velocity-trajectory584
         - title: "Position Trajectory(588)"
           titlekr: "Position Trajectory(588)"
-          url: /dxl/pro_plus/pm54-060-s250-r/#position-trajectory588
+          url: /dxl/p/pm54-060-s250-r/#position-trajectory588
         - title: "Present Input Voltage(592)"
           titlekr: "Present Input Voltage(592)"
-          url: /dxl/pro_plus/pm54-060-s250-r/#present-input-voltage592
+          url: /dxl/p/pm54-060-s250-r/#present-input-voltage592
         - title: "Present Temperature(594)"
           titlekr: "Present Temperature(594)"
-          url: /dxl/pro_plus/pm54-060-s250-r/#present-temperature594
+          url: /dxl/p/pm54-060-s250-r/#present-temperature594
 - title: "How to Assemble"
   titlekr: "조립 예시"
-  url: /dxl/pro_plus/pm54-060-s250-r/#how-to-assemble
-  urlkr: /dxl/pro_plus/pm54-060-s250-r/#조립-예시
+  url: /dxl/p/pm54-060-s250-r/#how-to-assemble
+  urlkr: /dxl/p/pm54-060-s250-r/#조립-예시
   children:
     - title: "Option Frame Assembly"
       titlekr: "옵션프레임 조립"
-      url: /dxl/pro_plus/pm54-060-s250-r/#option-frame-assembly
-      urlkr: /dxl/pro_plus/pm54-060-s250-r/#옵션프레임-조립
+      url: /dxl/p/pm54-060-s250-r/#option-frame-assembly
+      urlkr: /dxl/p/pm54-060-s250-r/#옵션프레임-조립
 - title: "Maintenance"
   titlekr: "유지보수"
-  url: /dxl/pro_plus/pm54-060-s250-r/#maintenance
-  urlkr: /dxl/pro_plus/pm54-060-s250-r/#유지보수
+  url: /dxl/p/pm54-060-s250-r/#maintenance
+  urlkr: /dxl/p/pm54-060-s250-r/#유지보수
 - title: "Reference"
   titlekr: "참고자료"
-  url: /dxl/pro_plus/pm54-060-s250-r/#reference
-  urlkr: /dxl/pro_plus/pm54-060-s250-r/#참고자료
+  url: /dxl/p/pm54-060-s250-r/#reference
+  urlkr: /dxl/p/pm54-060-s250-r/#참고자료
   children:
     - title: "Certifications"
       titlekr: "인증 획득"
-      url: /dxl/pro_plus/pm54-060-s250-r/#certifications
-      urlkr: /dxl/pro_plus/pm54-060-s250-r/#인증-획득
+      url: /dxl/p/pm54-060-s250-r/#certifications
+      urlkr: /dxl/p/pm54-060-s250-r/#인증-획득
     - title: "Connector Information"
       titlekr: "커넥터 정보"
-      url: /dxl/pro_plus/pm54-060-s250-r/#connector-information
-      urlkr: /dxl/pro_plus/pm54-060-s250-r/#커넥터-정보
+      url: /dxl/p/pm54-060-s250-r/#connector-information
+      urlkr: /dxl/p/pm54-060-s250-r/#커넥터-정보
     - title: "Communication Circuit"
       titlekr: "통신 회로"
-      url: /dxl/pro_plus/pm54-060-s250-r/#communication-circuit
-      urlkr: /dxl/pro_plus/pm54-060-s250-r/#통신-회로
+      url: /dxl/p/pm54-060-s250-r/#communication-circuit
+      urlkr: /dxl/p/pm54-060-s250-r/#통신-회로
     - title: "Pin Arrangement"
       titlekr: "핀 배열"
-      url: /dxl/pro_plus/pm54-060-s250-r/#pin-arrangement
-      urlkr: /dxl/pro_plus/pm54-060-s250-r/#핀-배열
+      url: /dxl/p/pm54-060-s250-r/#pin-arrangement
+      urlkr: /dxl/p/pm54-060-s250-r/#핀-배열
     - title: "Drawings"
       titlekr: "도면"
-      url: /dxl/pro_plus/pm54-060-s250-r/#drawings
-      urlkr: /dxl/pro_plus/pm54-060-s250-r/#도면
+      url: /dxl/p/pm54-060-s250-r/#drawings
+      urlkr: /dxl/p/pm54-060-s250-r/#도면
 
 #Protocol 1.0 sidebar
 protocol1:
@@ -16152,7 +16200,7 @@ turtlebot3:
 openmanipulator:
   - title : "OpenMANIPULATOR-X"
     url: /platform/openmanipulator_main/#openmanipulator-x
-  - title : "OpenMANIPULATOR-PRO"
+  - title : "OpenMANIPULATOR-P"
     url: /platform/openmanipulator_main/#openmanipulator-pro
     
 #OpenMANIPULATOR-X sidebar
@@ -16401,167 +16449,167 @@ openmanipulator_x:
         url: /platform/openmanipulator_x/friends/#openmanipulator-linear
         
 #OpenManipulator-PRO
-openmanipulator_pro:
+openmanipulator_p:
   - title: "Overview"
-    url: /platform/openmanipulator_pro/overview/#overview
+    url: /platform/openmanipulator_p/overview/#overview
     children:
       - title: "OpenSoftware"
-        url: /platform/openmanipulator_pro/overview/#opensoftware
+        url: /platform/openmanipulator_p/overview/#opensoftware
       - title: "DYNAMIXEL Examples"
-        url: /platform/openmanipulator_pro/overview/#dynamixel-examples
+        url: /platform/openmanipulator_p/overview/#dynamixel-examples
       - title: "Introduction video"
-        url: /platform/openmanipulator_pro/overview/#introduction-video
+        url: /platform/openmanipulator_p/overview/#introduction-video
   - title: "Specification"
-    url: /platform/openmanipulator_pro/specification/#specification
+    url: /platform/openmanipulator_p/specification/#specification
     children:
       - title: "Specifications"
-        url: /platform/openmanipulator_pro/specification/#specifications
+        url: /platform/openmanipulator_p/specification/#specifications
       - title: "Dimension"
-        url: /platform/openmanipulator_pro/specification/#dimension
+        url: /platform/openmanipulator_p/specification/#dimension
       - title: "Workspace"
-        url: /platform/openmanipulator_pro/specification/#workspace
+        url: /platform/openmanipulator_p/specification/#workspace
       - title: "Home Position"
-        url: /platform/openmanipulator_pro/specification/#home-position
+        url: /platform/openmanipulator_p/specification/#home-position
       - title: "D-H Configuration"
-        url: /platform/openmanipulator_pro/specification/#d-h-configuration
+        url: /platform/openmanipulator_p/specification/#d-h-configuration
       - title: "Mass Property"
-        url: /platform/openmanipulator_pro/specification/#mass-property
+        url: /platform/openmanipulator_p/specification/#mass-property
   - title: "Getting Started"
-    url: /platform/openmanipulator_pro/getting_started/#getting-started
+    url: /platform/openmanipulator_p/getting_started/#getting-started
     children:
       - title: "Safety Information"
-        url: /platform/openmanipulator_pro/getting_started/#safety-information
+        url: /platform/openmanipulator_p/getting_started/#safety-information
       - title: "Package Contents"
-        url: /platform/openmanipulator_pro/getting_started/#package-contents
+        url: /platform/openmanipulator_p/getting_started/#package-contents
       - title: "Setup"
-        url: /platform/openmanipulator_pro/getting_started/#setup
+        url: /platform/openmanipulator_p/getting_started/#setup
   - title: "[ROS] Setup"
-    url: /platform/openmanipulator_pro/ros_setup/#ros-setup
+    url: /platform/openmanipulator_p/ros_setup/#ros-setup
     children:
       - title: "Install Ubuntu on PC"
-        url: /platform/openmanipulator_pro/ros_setup/#install-ubuntu-on-pc
+        url: /platform/openmanipulator_p/ros_setup/#install-ubuntu-on-pc
       - title: "Install ROS on PC"
-        url: /platform/openmanipulator_pro/ros_setup/#install-ros-on-pc
+        url: /platform/openmanipulator_p/ros_setup/#install-ros-on-pc
         children:
           - title: "ROS Kinetic Kame"
-            url: /platform/openmanipulator_pro/ros_setup/#ros-kinetic-kame
+            url: /platform/openmanipulator_p/ros_setup/#ros-kinetic-kame
           - title: "ROS Melodic Morenia"
-            url: /platform/openmanipulator_pro/ros_setup/#ros-melodic-morenia
+            url: /platform/openmanipulator_p/ros_setup/#ros-melodic-morenia
       - title: "Communication Converter"
-        url: /platform/openmanipulator_pro/ros_setup/#communication-converter
+        url: /platform/openmanipulator_p/ros_setup/#communication-converter
         children:
           - title: "U2D2"
-            url: /platform/openmanipulator_pro/ros_setup/#u2d2
+            url: /platform/openmanipulator_p/ros_setup/#u2d2
       - title: "Install ROS Packages"
-        url: /platform/openmanipulator_pro/ros_setup/#install-ros-package
+        url: /platform/openmanipulator_p/ros_setup/#install-ros-package
         children:
           - title: "ROS Kinetic Kame Package"
-            url: /platform/openmanipulator_pro/ros_setup/#ros-kinetic-kame-package
+            url: /platform/openmanipulator_p/ros_setup/#ros-kinetic-kame-package
           - title: "ROS Melodic Morenia Package"
-            url: /platform/openmanipulator_pro/ros_setup/#ros-melodic-morenia-package
+            url: /platform/openmanipulator_p/ros_setup/#ros-melodic-morenia-package
   - title: "[ROS] Controller Package"
-    url: /platform/openmanipulator_pro/ros_controller_package/#ros-controller-package
+    url: /platform/openmanipulator_p/ros_controller_package/#ros-controller-package
     children:
       - title: "Launch Controller"
-        url: /platform/openmanipulator_pro/ros_controller_package/#launch-controller
+        url: /platform/openmanipulator_p/ros_controller_package/#launch-controller
       - title: "Check Setting"
-        url: /platform/openmanipulator_pro/ros_controller_package/#check-setting
+        url: /platform/openmanipulator_p/ros_controller_package/#check-setting
         children:
           - title: "RViz"
-            url: /platform/openmanipulator_pro/ros_controller_package/#rviz
+            url: /platform/openmanipulator_p/ros_controller_package/#rviz
       - title: "Message List"
-        url: /platform/openmanipulator_pro/ros_controller_package/#message-list
+        url: /platform/openmanipulator_p/ros_controller_package/#message-list
         children:
           - title: "Topic"
-            url: /platform/openmanipulator_pro/ros_controller_package/#topic
+            url: /platform/openmanipulator_p/ros_controller_package/#topic
           - title: "Service"
-            url: /platform/openmanipulator_pro/ros_controller_package/#service
+            url: /platform/openmanipulator_p/ros_controller_package/#service
   - title: "[ROS] Operation"
-    url: /platform/openmanipulator_pro/ros_operation/#ros-operation
+    url: /platform/openmanipulator_p/ros_operation/#ros-operation
     children:
       - title: "GUI Program"
-        url: /platform/openmanipulator_pro/ros_operation/#gui-program
+        url: /platform/openmanipulator_p/ros_operation/#gui-program
       - title: "Teleoperation"
-        url: /platform/openmanipulator_pro/ros_operation/#teleoperation
+        url: /platform/openmanipulator_p/ros_operation/#teleoperation
       - title: "MoveIt!"
-        url: /platform/openmanipulator_pro/ros_operation/#moveit
+        url: /platform/openmanipulator_p/ros_operation/#moveit
   - title: "[ROS] Simulation"
-    url: /platform/openmanipulator_pro/ros_simulation/#ros-simulation
+    url: /platform/openmanipulator_p/ros_simulation/#ros-simulation
     children:
       - title: "Launch gazebo"
-        url: /platform/openmanipulator_pro/ros_simulation/#launch-gazebo
+        url: /platform/openmanipulator_p/ros_simulation/#launch-gazebo
       - title: "Controller for gazebo"
-        url: /platform/openmanipulator_pro/ros_simulation/#controller-for-gazebo
+        url: /platform/openmanipulator_p/ros_simulation/#controller-for-gazebo
   - title: "[ROS] Tool Applications"
-    url: /platform/openmanipulator_pro/ros_tool_applications
+    url: /platform/openmanipulator_p/ros_tool_applications
     children:
       - title: "RH-P12-RN Gripper"
-        url: /platform/openmanipulator_pro/ros_tool_applications/#rh-p12-rn-gripper
+        url: /platform/openmanipulator_p/ros_tool_applications/#rh-p12-rn-gripper
         children:
           - title: "Parts List"
-            url: /platform/openmanipulator_pro/ros_tool_applications/#parts-list
+            url: /platform/openmanipulator_p/ros_tool_applications/#parts-list
           - title: "Assembly Manual"
-            url: /platform/openmanipulator_pro/ros_tool_applications/#assembly-manual
+            url: /platform/openmanipulator_p/ros_tool_applications/#assembly-manual
           - title: "Operation"
-            url: /platform/openmanipulator_pro/ros_tool_applications/#operation
+            url: /platform/openmanipulator_p/ros_tool_applications/#operation
             children:
               - title: "GUI Program"
-                url: /platform/openmanipulator_pro/ros_tool_applications/#gui-program
+                url: /platform/openmanipulator_p/ros_tool_applications/#gui-program
               - title: "Teleoperation"
-                url: /platform/openmanipulator_pro/ros_tool_applications/#teleoperation
+                url: /platform/openmanipulator_p/ros_tool_applications/#teleoperation
               - title: "Moveit!"
-                url: /platform/openmanipulator_pro/ros_tool_applications/#moveit
+                url: /platform/openmanipulator_p/ros_tool_applications/#moveit
           - title: "Simulation"
-            url: /platform/openmanipulator_pro/ros_tool_applications/#simulation
+            url: /platform/openmanipulator_p/ros_tool_applications/#simulation
             children:
               - title: "Launch Gazebo"
-                url: /platform/openmanipulator_pro/ros_tool_applications/#launch-gazebo
+                url: /platform/openmanipulator_p/ros_tool_applications/#launch-gazebo
               - title: "Controller for Gazebo"
-                url: /platform/openmanipulator_pro/ros_tool_applications/#controller-for-gazebo
+                url: /platform/openmanipulator_p/ros_tool_applications/#controller-for-gazebo
   - title: "[ROS 2] Setup"
-    url: /platform/openmanipulator_pro/ros2_setup/#ros-setup
+    url: /platform/openmanipulator_p/ros2_setup/#ros-setup
     children:
       - title: "Install Ubuntu on PC"
-        url: /platform/openmanipulator_pro/ros2_setup/#install-ubuntu-on-pc
+        url: /platform/openmanipulator_p/ros2_setup/#install-ubuntu-on-pc
       - title: "Install ROS 2 on PC"
-        url: /platform/openmanipulator_pro/ros2_setup/#install-ros-2-on-pc
+        url: /platform/openmanipulator_p/ros2_setup/#install-ros-2-on-pc
       - title: "Install ROS 2 Packages"
-        url: /platform/openmanipulator_pro/ros2_setup/#install-ros-2-packages
+        url: /platform/openmanipulator_p/ros2_setup/#install-ros-2-packages
       - title: "Communication Converter"
-        url: /platform/openmanipulator_pro/ros2_setup/#communication-converter
+        url: /platform/openmanipulator_p/ros2_setup/#communication-converter
         children:
           - title: "U2D2"
-            url: /platform/openmanipulator_pro/ros2_setup/#u2d2
+            url: /platform/openmanipulator_p/ros2_setup/#u2d2
   - title: "[ROS 2] Controller Package"
-    url: /platform/openmanipulator_pro/ros2_controller_package/#ros-controller-package
+    url: /platform/openmanipulator_p/ros2_controller_package/#ros-controller-package
     children:
       - title: "Launch Controller"
-        url: /platform/openmanipulator_pro/ros2_controller_package/#launch-controller
+        url: /platform/openmanipulator_p/ros2_controller_package/#launch-controller
       - title: "Check Setting"
-        url: /platform/openmanipulator_pro/ros2_controller_package/#check-setting
+        url: /platform/openmanipulator_p/ros2_controller_package/#check-setting
         children:
           - title: "RViz"
-            url: /platform/openmanipulator_pro/ros2_controller_package/#rviz
+            url: /platform/openmanipulator_p/ros2_controller_package/#rviz
       - title: "Message List"
-        url: /platform/openmanipulator_pro/ros2_controller_package/#message-list
+        url: /platform/openmanipulator_p/ros2_controller_package/#message-list
   - title: "[ROS 2] Operation"
-    url: /platform/openmanipulator_pro/ros2_operation/#ros-operation
+    url: /platform/openmanipulator_p/ros2_operation/#ros-operation
     children:
       - title: "GUI Program"
-        url: /platform/openmanipulator_pro/ros2_operation/#gui-program
+        url: /platform/openmanipulator_p/ros2_operation/#gui-program
       - title: "Teleoperation"
-        url: /platform/openmanipulator_pro/ros2_operation/#teleoperation
+        url: /platform/openmanipulator_p/ros2_operation/#teleoperation
       - title: "MoveIt!"
-        url: /platform/openmanipulator_pro/ros2_operation/#moveit
+        url: /platform/openmanipulator_p/ros2_operation/#moveit
   - title: "[ROS 2] Simulation"
-    url: /platform/openmanipulator_pro/ros2_simulation/#ros-simulation
+    url: /platform/openmanipulator_p/ros2_simulation/#ros-simulation
   #  children:
   #    - title: "Launch gazebo"
-  #      url: /platform/openmanipulator_pro/ros2_simulation/#launch-gazebo
+  #      url: /platform/openmanipulator_p/ros2_simulation/#launch-gazebo
   #    - title: "Controller for gazebo"
-  #      url: /platform/openmanipulator_pro/ros2_simulation/#controller-for-gazebo
+  #      url: /platform/openmanipulator_p/ros2_simulation/#controller-for-gazebo
   - title: "[ROS 2] Tool Applications"
-    url: /platform/openmanipulator_pro/ros2_tool_applications    
+    url: /platform/openmanipulator_p/ros2_tool_applications    
 #Manipulator-H
 manipulator_h:
   - title: "Introduction"
@@ -19931,7 +19979,7 @@ dynamixel_workbench:
   - title: "Introduction"
     url: /software/dynamixel/dynamixel_workbench/#introduction
   - title: "Supported DYNAMIXEL"
-    url: /software/dynamixel/dynamixel_workbench/#supported-dynamixels
+    url: /software/dynamixel/dynamixel_workbench/#supported-dynamixel
   - title: "Downloads"
     url: /software/dynamixel/dynamixel_workbench/#downloads
     children:

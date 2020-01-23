@@ -10,6 +10,9 @@ sidebar:
   nav: "usb2dynamixel"
 ---
 
+**주의**: USB2DYNAMIXEL은 현재 단종되어 더 이상 판매되지 않습니다.
+{: . notice--warning}
+
 # [개요](#개요)
 
 ![img](/assets/images/parts/interface/usb2dynamixel_product.jpg)
