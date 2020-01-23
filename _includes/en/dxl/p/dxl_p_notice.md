@@ -1,7 +1,6 @@
 {% capture dxl_p_notice_01 %}
-**NOTE**: The name of DYNAMIXEL-PRO is revised to DYNAMIXEL-P
+**NOTE**: DYNAMIXEL PRO+ is renamed as DYNAMIXEL-P.
 - Revised Date: Jan 2th, 2020.
-- Revised Product: DYNAMIXEL PRO+ to DYNAMIXEL-P
 - Revised Model Name: See the following table.
 
   | Previous        | New             |
