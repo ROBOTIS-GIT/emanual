@@ -124,6 +124,7 @@ process[turtlebot3_diagnostics-3]: started with pid [14200]
 **TIP**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `burger`, `waffle`, `waffle_pi`. If you want to permanently set the export settings, please refer to [Export TURTLEBOT3_MODEL][export_turtlebot3_model]{: .popup} page.
 {: .notice--success}
 
+# Ubuntu
 ``` bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ roslaunch turtlebot3_bringup turtlebot3_remote.launch
@@ -134,6 +135,19 @@ Open a new terminal window and enter the below command.
 ```bash
 $ rosrun rviz rviz -d `rospack find turtlebot3_description`/rviz/model.rviz
 ```
+
+# Windows
+``` bash
+> set TURTLEBOT3_MODEL=${TB3_MODEL}
+> roslaunch turtlebot3_bringup turtlebot3_remote.launch
+```
+
+Open a new ROS command window and enter the below command.
+
+```bash
+> rosrun rviz rviz -d "<full path to turtlebot3_description>/rviz/model.rviz"
+```
+
 
 ![](/assets/images/platform/turtlebot3/bringup/run_rviz.jpg)
 

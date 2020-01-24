@@ -122,6 +122,7 @@ $ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
 **NOTE**: Install dependency packages for SLAM packages
 - For `Gmapping`:
   - Packages related to Gmapping have already been installed on [PC Setup](/docs/en/platform/turtlebot3/pc_setup/#install-dependent-ros-packages) page.
+  - Gmapping has not been enabled on Windows
 - For `Cartographer`:
   - Ubuntu
     - sudo apt-get install ros-kinetic-cartographer ros-kinetic-cartographer-ros ros-kinetic-cartographer-ros-msgs ros-kinetic-cartographer-rviz
@@ -129,10 +130,13 @@ $ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
     - choco upgrade ros-melodic-cartographer_ros -y
 - For `Hector Mapping`:
   - sudo apt-get install ros-kinetic-hector-mapping
+  - Hector Mapping has not been enabled on Windows
 - For `Karto`:
   - sudo apt-get install ros-kinetic-slam-karto
+  - Coming soon on Windows
 - For `Frontier Exploration`:
-- Frontier Exploration uses gmapping, and the following packages should be installed.
+  - Frontier Exploration uses gmapping, and the following packages should be installed.
+  - Frontier Exploration has not been enabled on Windows
   - sudo apt-get install ros-kinetic-frontier-exploration ros-kinetic-navigation-stage
 {% endcapture %}
 <div class="notice--info">{{ notice_04 | markdownify }}</div>
@@ -140,7 +144,7 @@ $ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
 **TIP**: We tested on cartographer version 0.3.0. The Cartographer package developed by Google supports 0.3.0 version in ROS Melodic, but 0.2.0 version in ROS Kinetic. So if you need to work on ROS Kinetic, instead of downloading the binaries files, you should download and build the source code as follows. Please refer to [official wiki page](https://google-cartographer-ros.readthedocs.io/en/latest/#building-installation) for more detailed installation instructions.
 {: .notice--success}
 
-### Ubuntu
+*Ubuntu*
 ```sh
 $ sudo apt-get install ninja-build libceres-dev libprotobuf-dev protobuf-compiler libprotoc-dev
 $ cd ~/catkin_ws/src
@@ -158,8 +162,8 @@ $ source ~/catkin_ws/install_isolated/setup.bash
 $ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=cartographer
 ```
 
-### Windows
-``` bash
+*Windows*
+```
 c:\ws\turtlebot3\devel\setup.bat
 set TURTLEBOT3_MODEL=waffle
 roslaunch turtlebot3_gazebo turtlebot3_gazebo_cartographer_demo.launch
@@ -169,9 +173,16 @@ roslaunch turtlebot3_gazebo turtlebot3_gazebo_cartographer_demo.launch
 
 **[Remote PC]** Open a new terminal and run the teleoperation node. The following command allows the user to control the robot to perform SLAM operation manually. It is important to avoid vigorous movements such as changing the speed too quickly or rotating too fast. When building a map using the robot, the robot should scan every corner of the environment to be measured. It requires some experiences to build a clean map, so let’s practice SLAM multiple times to build up know how. The mapping process is shown in figure below.
 
+*Ubuntu*
 ``` bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+```
+
+*Windows*
+``` bash
+> set TURTLEBOT3_MODEL=waffle
+> roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ```
 
 ``` bash
@@ -241,11 +252,17 @@ _**angularUpdate**_
 
 **[Remote PC]** Now that you have all the work done, let's run the `map_saver` node to create a map file. The map is drawn based on the robot's odometry, tf information, and scan information of the sensor when the robot moves. These data can be seen in the RViz from the previous example video. The created map is saved in the directory in which `map_saver` is runnig. Unless you specify the file name, it is stored as `map.pgm` and `map.yaml` file which contains map information.
 
+*Ubuntu*
 ``` bash
 $ rosrun map_server map_saver -f ~/map
 ```
 
-The `-f` option refers to the folder and file name where the map file is saved. If `~/map` is used as an option, `map.pgm` and `map.yaml` will be saved in the map folder of user’s home folder `~/` ($HOME directory : `/home/<username>`).
+*Windows*
+``` bash
+> rosrun map_server map_saver -f %USERPROFILE%\map
+```
+
+The `-f` option refers to the folder and file name where the map file is saved. If `~/map` is used as an option, `map.pgm` and `map.yaml` will be saved in the map folder of user’s home folder `~/` ($HOME directory : `/home/<username>`). On Windows, the user directory is stored in an environment variable `%USERPROFILE%`
 
 ## [Map](#map)
 
