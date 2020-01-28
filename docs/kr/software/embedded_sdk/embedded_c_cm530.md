@@ -24,7 +24,6 @@ sidebar:
 **참고**: 임베디드 C를 사용하게 되면 제어기 펌웨어가 바뀌어서 로보플러스를 사용할 수 없게됩니다. 다시 로보플러스를 사용하기 위해서는 로보플러스 매니저로 펌웨어 복구를 시도해야 합니다.
 {: .notice}
 
-
 # [CM-530](#cm-530)
 
 - `다운로드` [CM-530 SDK]
@@ -40,8 +39,19 @@ sidebar:
 
 ## [시작하기](#시작하기)
 
-**참고**: Windows 8.1,10을 사용중 설치에 error 발생경우 여기를 클릭해 다운로드로와 압축 해제가 끝나면 파일을 C:\WinARM\utils\bin 에 복사하십시요. (기존에 있든 파일을 대체하면 됩니다.) **(EX error :/usr/bin/sh: fork: Resource temporarily unavailable)** 
-{:. notice}
+{% capture warning_error %}
+**주의**: Windows 8.1, 10 사용 시, 설치도중 다음과 같은 오류가 발생 할 수 있습니다.  
+- EX error :/usr/bin/sh: fork: Resource temporarily unavailable
+- make: \*\*\* \[CM530.lss] Error 128
+
+**해결을 위해서, 다음 절차를 참고 하세요.**
+1. 첨부된 압축 파일을 다운로드 하세요. - [파일 다운로드](http://www.madwizard.org/download/electronics/msys-1.0-vista64.zip)
+2. 다운로드 받은 압축 파일을 압축해제 하세요.
+3. 압축해제한 파일을 복사하세요.
+4. C:\WinARM\utils\bin 경로로 이동하세요.
+5. 복사한 파일을 붙여넣어, 기존 파일에 덮어 씌우세요.
+{% endcapture %}
+<div class="notice--warning">{{ warning_error | markdownify }}</div>
 
 ### [JRE 설치](#jre-설치)
 
@@ -149,8 +159,19 @@ Eclipse를 실행시키고 ‘File – New – Makefile Project with Existing Co
 
 ![img](/assets/images/sw/sdk/embedded_065.png)
 
-**참고**: Windows 8.1,10을 사용중 설치에 error 발생경우 여기를 클릭해 다운로드로와 압축 해제가 끝나면 파일을 C:\WinARM\utils\bin 에 복사하십시요. (기존에 있든 파일을 대체하면 됩니다.) **(EX error :/usr/bin/sh: fork: Resource temporarily unavailable)** 
-{: .notice}
+{% capture warning_error %}
+**주의**: Windows 8.1, 10 사용 시, 설치도중 다음과 같은 오류가 발생 할 수 있습니다.  
+- EX error :/usr/bin/sh: fork: Resource temporarily unavailable
+- make: \*\*\* \[CM530.lss] Error 128
+
+**해결을 위해서, 다음 절차를 참고 하세요.**
+1. 첨부된 압축 파일을 다운로드 하세요. - [파일 다운로드](http://www.madwizard.org/download/electronics/msys-1.0-vista64.zip)
+2. 다운로드 받은 압축 파일을 압축해제 하세요.
+3. 압축해제한 파일을 복사하세요.
+4. C:\WinARM\utils\bin 경로로 이동하세요.
+5. 복사한 파일을 붙여넣어, 기존 파일에 덮어 씌우세요.
+{% endcapture %}
+<div class="notice--warning">{{ warning_error | markdownify }}</div>
 
 ### [로보플러스 복구하기](#로보플러스-복구하기)
 

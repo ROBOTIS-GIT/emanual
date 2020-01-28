@@ -1,6 +1,6 @@
 ---
 layout: redirect
-lang: kr
+lang: en
 ref: redirect_h54p-200-s500-r_en
 permalink: /docs/en/dxl/pro_plus/h54p-200-s500-r/
 redirecturl: /docs/en/dxl/p/ph54-200-s500-r/

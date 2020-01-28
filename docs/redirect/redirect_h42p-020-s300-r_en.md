@@ -1,6 +1,6 @@
 ---
 layout: redirect
-lang: kr
+lang: en
 ref: redirect_h42p-020-s300-r_en
 permalink: /docs/en/dxl/pro_plus/h42p-020-s300-r/
 redirecturl: /docs/en/dxl/p/ph42-020-s300-r/
