@@ -34,7 +34,7 @@ page_number: 8
 
 ### [Assembly Manual](#assembly-manual)
 
-1. Fix FRP42_A110K to the tip of OpenMANIPUALTOR-PRO with eight WB_M3X08_NYLOK_K screws.
+1. Fix FRP42_A110K to the tip of OpenMANIPUALTOR-P with eight WB_M3X08_NYLOK_K screws.
  
     ![](/assets/images/platform/openmanipulator_p/open_manipulator_gripper_assembly_02.png)
 
@@ -69,15 +69,15 @@ $ roscore
 After running **roscore**, open another Terminal then write the following commands in Terminal.  
 
 ```bash
-$ roslaunch open_manipulator_pro_controller open_manipulator_pro_controller.launch with_gripper:=true
+$ roslaunch open_manipulator_p_controller open_manipulator_p_controller.launch with_gripper:=true
 ```
 
 #### [GUI Program](#gui-program)
 
-Launch `open_manipulator_pro_control_gui node`. This program shows the status of and allows users to control OpenMANIPULATOR-P.
+Launch `open_manipulator_p_control_gui node`. This program shows the status of and allows users to control OpenMANIPULATOR-P.
 
 ```bash
-$ roslaunch open_manipulator_pro_control_gui open_manipulator_pro_control_gui.launch with_gripper:=true
+$ roslaunch open_manipulator_p_control_gui open_manipulator_p_control_gui.launch with_gripper:=true
 ```
 
 To controll OpenMANIPULATOR-P with RH-P12-RN (Gripper), click the `Timer Start` button.  
@@ -98,16 +98,16 @@ To activate RH-P12-RN (Gripper), Click the `Gripper open` button.
 **Keyboard**  
 
 ```bash
-$ roslaunch open_manipulator_pro_teleop open_manipulator_pro_teleop_keyboard.launch with_gripper:=true
+$ roslaunch open_manipulator_p_teleop open_manipulator_p_teleop_keyboard.launch with_gripper:=true
 ```
 
 **PS4 & XBOX 360 Joystick**  
 You can do Teleoperation with a joystic.
 
 ```bash
-$ export ROS_NAMESPACE=open_manipulator_pro
+$ export ROS_NAMESPACE=open_manipulator_p
 $ roslaunch teleop_twist_joy teleop.launch
-$ roslaunch open_manipulator_pro_teleop open_manipulator_pro_teleop_joystick.launch with_gripper:=true
+$ roslaunch open_manipulator_p_teleop open_manipulator_p_teleop_joystick.launch with_gripper:=true
 ```
 
 - [Teleoperation e-Manual](/docs/en/platform/openmanipulator_p/ros_operation/#teleoperation)
@@ -115,7 +115,7 @@ $ roslaunch open_manipulator_pro_teleop open_manipulator_pro_teleop_joystick.lau
 #### [MoveIt!](#moveit)
 
 ```bash 
-$ roslaunch open_manipulator_pro_controller open_manipulator_pro_controller.launch use_moveit:=true with_gripper:=true
+$ roslaunch open_manipulator_p_controller open_manipulator_p_controller.launch use_moveit:=true with_gripper:=true
 ```
 - [MoveIt! e-Manual](/docs/en/platform/openmanipulator_p/ros_operation/#moveit)
 
@@ -134,16 +134,16 @@ $ roslaunch open_manipulator_pro_controller open_manipulator_pro_controller.laun
 Load OpenManipulator-PRO on Gazebo simulator
 
 ```bash
-$ roslaunch open_manipulator_pro_gazebo open_manipulator_pro_gazebo.launch with_gripper:=true
+$ roslaunch open_manipulator_p_gazebo open_manipulator_p_gazebo.launch with_gripper:=true
 ```
 
 - [Launch Gazebo e-Manual](/docs/en/platform/openmanipulator_p/ros_simulation/#launch-gazebo)
 
 #### [Controller for Gazebo](#controller-for-gazebo)
 
-Launch the open_manipulator_pro_controller for gazebo simulation.
+Launch the open_manipulator_p_controller for gazebo simulation.
 
 ```bash
-$ roslaunch open_manipulator_pro_controller open_manipulator_pro_controller.launch use_platform:=false with_gripper:=true
+$ roslaunch open_manipulator_p_controller open_manipulator_p_controller.launch use_platform:=false with_gripper:=true
 ```
 - [Controller for Gazebo e-Manual](/docs/en/platform/openmanipulator_p/ros_simulation/#controller-for-gazebo)

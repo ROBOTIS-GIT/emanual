@@ -34,7 +34,7 @@ page_number: 13
 
 ### [Assembly Manual](#assembly-manual)
 
-1. Fix FRP42_A110K to the tip of OpenMANIPUALTOR-PRO with eight WB_M3X08_NYLOK_K screws.
+1. Fix FRP42_A110K to the tip of OpenMANIPUALTOR-P with eight WB_M3X08_NYLOK_K screws.
  
     ![](/assets/images/platform/openmanipulator_p/open_manipulator_gripper_assembly_02.png)
 
