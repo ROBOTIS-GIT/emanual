@@ -1,0 +1,3 @@
+{% if page.ref=='2xc430-w250' %}**2XC430-W250**{% else %}**2XL430-W250**{% endif %} is a ground breaking DYNAMIXEL that allows to control **2 axis(2 DOF)** with a single module. In order to control 2 axis at the same time, each axle should be assigned with different ID while sharing an identical [Baud rate(8)](#baud-rate). Since the Control Table for each axle is separated except the Baudrate, {% if page.ref=='2xc430-w250' %}**2XC430-W250**{% else %}**2XL430-W250**{% endif %} can be applied in various applications.  
+The usage is identical to other DYNAMIXEL's, but be aware that Firmware Recovery will reset both axis to factory settings.
+{: .notice--success}

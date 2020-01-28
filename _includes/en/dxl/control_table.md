@@ -56,7 +56,7 @@ The Control Table is a structure that consists of multiple Data fields to store 
 ### [Area (EEPROM, RAM)](#area-eeprom-ram)
 The Control Table is divided into 2 Areas. Data in the RAM Area is reset to initial values when the power is reset(Volatile). On the other hand, data in the EEPROM Area is maintained even when the device is powered off(Non-Volatile).  
 
-**Data in the EEPROM Area can only be written to if Torque Enable({{ torque_enable }}) is cleared to ‘0’(Off).**
+{% if page.ref=='2xc430-w250' or page.ref =='2xl430-w250' %}**Data of [EEPROM Area](#eeprom-area) can only be written when [Torque Enable(64)](#torque-enable) value of the control table for each axle is all set as ‘0’.**{% else %} **Data in the EEPROM Area can only be written to if Torque Enable({{ torque_enable }}) is cleared to ‘0’(Off).**{% endif %}
 {: .notice--warning}
 
 ### [Size](#size)

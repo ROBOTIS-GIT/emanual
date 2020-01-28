@@ -1,6 +1,6 @@
 ---
 layout: redirect
-lang: kr
+lang: en
 ref: redirect_m42p-010-s260-r_en
 permalink: /docs/en/dxl/pro_plus/m42p-010-s260-r/
 redirecturl: /docs/en/dxl/p/pm42-010-s260-r/

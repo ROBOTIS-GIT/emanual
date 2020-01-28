@@ -1,6 +1,6 @@
 ---
 layout: redirect
-lang: kr
+lang: en
 ref: redirect_m54p-040-s250-r_en
 permalink: /docs/en/dxl/pro_plus/m54p-040-s250-r/
 redirecturl: /docs/en/dxl/p/pm54-040-s250-r/
