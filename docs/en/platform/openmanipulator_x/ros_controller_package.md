@@ -17,6 +17,8 @@ page_number: 6
 
 # [[ROS] Controller Package](#ros-controller-package)
 
+You can control each joint of OpenMANIPULATOR-X and check states of OpenMANIPULATOR-X through [messages](/docs/en/platform/openmanipulator_x/ros_controller_package/#message-list) by utilizing an exclusive controller program.
+
 {% capture notice_01 %}
 **NOTE**: 
 - The test is done on `ROS Kinetic Kame` installed in `Ubuntu 16.04`.
@@ -24,7 +26,7 @@ page_number: 6
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-You can control each joint of OpenMANIPULATOR-X and check states of OpenMANIPULATOR-X through [messages](/docs/en/platform/openmanipulator_x/ros_controller_package/#message-list) by utilizing an exclusive controller program.
+## [Launch Controller](#launch-controller)
 
 Before launching the controller, please check `open_manipulator_controller` launch file in `open_manipulator_controller` package.
 
@@ -61,43 +63,33 @@ Before launching the controller, please check `open_manipulator_controller` laun
   </launch>
   ```
 
-**Parameter Description**  
+**Parameters List** : The following parameters set control environments.
+- `use_robot_name`
+- `dynamixel_usb_port`
+- `dynamixel_baud_rate`
+- `control_period`
+- `use_platform`
+- `use_moveit`
+- `planning_group_name`
+- `moveit_sample_duration`
 
-The following patameters are used to set the controls.
-
-`use_robot_name`  
-- Specifies the name of manipulator (namespace of ROS messages)
- 
-`dynamixel_usb_port`  
-- Specifies a USB port. The @ symbol appended at the end of the port name indicates a port number on DYNAMIXEL. 
-   - Port of U2D2: **/dev/ttyUSB@**
-   - Port of OpenCR: **/dev/ttyACM@**  
-    
-`dynamixel_baud_rate`  
-- Specifies baud rate of DYNAMIXEL. The default baud rate is 1000000.
-  
-`control_period`  
-- Specifies a communication period (control loop time) between DYNAMIXEL and PC.
- 
-`use_platform`  
-- Sets to **true/false** to use [Simulation](/docs/en/platform/openmanipulator_x/ros_simulation/#ros-simulation) feature. 
-  - **true** for using an actual robot. 
-  - **false** for using an virtual robot in [Gazebo](/docs/en/platform/openmanipulator_x/ros_simulation/#controller-for-gazebo) (3D robotics simulator).
- 
-`use_moveit`, `planning_group_name` and `moveit_sample_duration`  
-- Load [move_group](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/move_group_interface/move_group_interface_tutorial.html) package. 
-- More information on these parmeters is available at [MoveIt!](/docs/en/platform/openmanipulator_x/ros_operation/#moveit).
-
-## [Launch Controller](#launch-controller)
+`use_robot_name` is a parameter to set manipulator name(namespace of ROS messages).  
+`dynamixel_usb_port` is a parameter to set USB port to connect with DYNAMIXEL of OpenMANIPULATOR-X. If you use U2D2, it should be set **/dev/ttyUSB@**. If you use OpenCR, it should be set **/dev/ttyACM@** (@ indicates the port number connected to DYNAMIXEL).  
+`dynamixel_baud_rate` is a parameter to set baud rate of DYNAMIXEL. default baud rate of DYNAMIXEL used in OpenMANIPULATOR-X is 1000000.  
+`control_period` is a parameter to set communication period between DYNAMIXEL and PC (control loop time).  
+`use_platform` is a parameter that sets whether to use the actual OpenMANIPULATOR-X or OpenMANIPULATOR-X simulation. please refer [[ROS] Simulation](/docs/en/platform/openmanipulator_x/ros_simulation/#ros-simulation) chapter.  
+`use_moveit`, `planning_group_name` and `moveit_sample_duration` are parameters to load [move_group](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/move_group_interface/move_group_interface_tutorial.html) package. please refer to [MoveIt!](/docs/en/platform/openmanipulator_x/ros-operation/#moveit) chapter.
 
 After setting the parameters, launch the OpenMANIPULATOR-X controller to start [[ROS] Operation](/docs/en/platform/openmanipulator_x/ros_operation/#ros-operation).
 
-Open a terminal and then run roscore along with the following command.
+Please, open a terminal then run roscore along with a following command.
+
 ``` bash
 $ roscore
 ```
 
-Open a new terminal and launch the controller package.
+After running roscore, open another Terminal then write the following commands in Terminal.
+
 ``` bash
 $ roslaunch open_manipulator_controller open_manipulator_controller.launch
 ```
@@ -106,7 +98,7 @@ $ roslaunch open_manipulator_controller open_manipulator_controller.launch
 
 **WARNING** :  
 Please check each joint position before running OpenMANIPULATOR-X. It might stop operation because of joint position out of range.  
-The following feature shows you the ideal pose of OpenMANIPULATOR-X. Please adjust each joints along with the following picture when DYNAMIXEL torque isn't enabled.    
+The picture on the below is showing you the ideal pose of OpenMANIPULATOR-X. Please adjust each joints along with the following picture when DYNAMIXEL torque isn't enabled.    
         
 <img src="/assets/images/platform/openmanipulator_x/open_manipulator_start_pose.png" width="250">
 {% endcapture %}
@@ -162,7 +154,7 @@ Even if you can't find any DYNAMIXEL, please check firmware to use ROBOTIS softw
 **NOTE**:
 - The below instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - Make sure ROS dependencies are installed before performing these instructions. - [Install ROS Packages](/docs/en/platform/openmanipulator_x/ros_setup/#install-ros-packages).
-- Make sure to launch the [OpenMANIPULATOR-X controller](#launch-controller) before use of the instruction
+- Make sure to run the [OpenMANIPULATOR-X controller](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) instructions before use of the instruction
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -484,7 +476,7 @@ You can change each joint by GUI, if the user launch only RViz by executing the 
 **NOTE**:
 - The test is done on `ROS Kinetic Kame` installed in `Ubuntu 16.04`.
 - Make sure ROS dependencies are installed before performing these instructions - [Install ROS Packages](/docs/en/platform/openmanipulator_x/ros_setup/#install-ros-packages)
-- Make sure to launch the [OpenMANIPULATOR-X controller](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) before use of the instruction
+- Make sure to run the [OpenMANIPULATOR-X controller](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) instructions before use of the instruction
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 

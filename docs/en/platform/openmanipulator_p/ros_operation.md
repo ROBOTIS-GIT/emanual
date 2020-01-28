@@ -28,10 +28,10 @@ page_number: 6
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-You can use the GUI program to manipulate OpenMANIPULATOR-P. Launch `open_manipulator_p_control_gui` node. This program shows the status of and allows users to control OpenMANIPULATOR-P.
+You can use the GUI program to manipulate OpenMANIPULATOR-P. Launch `open_manipulator_pro_control_gui` node. This program shows the status of and allows users to control OpenMANIPULATOR-P.
 
 ```bash
-$ roslaunch open_manipulator_p_control_gui open_manipulator_p_control_gui.launch
+$ roslaunch open_manipulator_pro_control_gui open_manipulator_pro_control_gui.launch
 ```
 
   To controll OpenMANIPULATOR-P, first click the `Timer Start` button.  
@@ -69,11 +69,11 @@ $ roslaunch open_manipulator_p_control_gui open_manipulator_p_control_gui.launch
 **TIP**: Terminal can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for Terminal is `Ctrl`+`Alt`+`t`.
 {: .notice--success}
 
-Launch `open_manipulator_p_teleop_keyboard` node for simple teleoperation test using the keyboard.  
+Launch `open_manipulator_pro_teleop_keyboard` node for simple teleoperation test using the keyboard.  
 
 
 ``` bash
-$ roslaunch open_manipulator_p_teleop open_manipulator_p_teleop_keyboard.launch
+$ roslaunch open_manipulator_pro_teleop open_manipulator_pro_teleop_keyboard.launch
 ```
 If the node is successfully launched, the following instruction will appear in the terminal window.  
 
@@ -132,9 +132,9 @@ $ sudo ds4drv
 Enter pairing mode with PS4 by pressing and holding Playstation button + share button for 10 sec. If the light on PS4 turns blue, enter the following commands in terminal and control OpenMANIPULATOR-P.
 
 ``` bash
-$ export ROS_NAMESPACE=/open_manipulator_p
+$ export ROS_NAMESPACE=/open_manipulator_pro
 $ roslaunch teleop_twist_joy teleop.launch
-$ roslaunch open_manipulator_p_teleop open_manipulator_p_teleop_joystick.launch
+$ roslaunch open_manipulator_pro_teleop open_manipulator_pro_teleop_joystick.launch
 ```
 
 ### [XBOX 360 Joystick](#xbox-360-joystick)
@@ -148,9 +148,9 @@ Connect XBOX 360 joystick to the PC with Wireless Adapter or USB cable, and laun
 
 ``` bash
 $ sudo xboxdrv --silent
-$ export ROS_NAMESPACE=/open_manipulator_p
+$ export ROS_NAMESPACE=/open_manipulator_pro
 $ roslaunch teleop_twist_joy teleop.launch
-$ roslaunch open_manipulator_p_teleop open_manipulator_p_teleop_joystick.launch
+$ roslaunch open_manipulator_pro_teleop open_manipulator_pro_teleop_joystick.launch
 ```
 
 
@@ -159,11 +159,11 @@ $ roslaunch open_manipulator_p_teleop open_manipulator_p_teleop_joystick.launch
 **TIP**: Terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`+`Alt`+`t`.
 {: .notice--success}
 
-Before you launch controller using MoveIt!, check `open_manipulator_p_controller` launch file in `open_manipulator_p_controller` package.
+Before you launch controller using MoveIt!, check `open_manipulator_pro_controller` launch file in `open_manipulator_pro_controller` package.
 
   ```
   <launch>
-    <arg name="use_robot_name"         default="open_manipulator_p"/>
+    <arg name="use_robot_name"         default="open_manipulator_pro"/>
 
     <arg name="dynamixel_usb_port"     default="/dev/ttyUSB0"/>
     <arg name="dynamixel_baud_rate"    default="1000000"/>
@@ -177,13 +177,13 @@ Before you launch controller using MoveIt!, check `open_manipulator_p_controller
     <arg name="moveit_sample_duration" default="0.050"/>
 
     <group if="$(arg use_moveit)">
-      <include file="$(find open_manipulator_p_controller)/launch/open_manipulator_p_moveit.launch">
+      <include file="$(find open_manipulator_pro_controller)/launch/open_manipulator_pro_moveit.launch">
         <arg name="robot_name"      value="$(arg use_robot_name)"/>
         <arg name="sample_duration" value="$(arg moveit_sample_duration)"/>
       </include>
     </group>
 
-    <node name="$(arg use_robot_name)" pkg="open_manipulator_p_controller" type="open_manipulator_p_controller" output="screen" args="$(arg dynamixel_usb_port) $(arg dynamixel_baud_rate)">
+    <node name="$(arg use_robot_name)" pkg="open_manipulator_pro_controller" type="open_manipulator_pro_controller" output="screen" args="$(arg dynamixel_usb_port) $(arg dynamixel_baud_rate)">
         <param name="using_platform"       value="$(arg use_platform)"/>
         <param name="using_moveit"         value="$(arg use_moveit)"/>
         <param name="planning_group_name"  value="$(arg planning_group_name)"/>
@@ -194,24 +194,20 @@ Before you launch controller using MoveIt!, check `open_manipulator_p_controller
   </launch>
   ```
 
-**Parameters Description**   
-The following parameters are used to load [move_group](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/move_group_interface/move_group_interface_tutorial.html) package.  
+**Parameters List** :
+The below The following parameters can be used to load [move_group](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/move_group_interface/move_group_interface_tutorial.html) package.
+- `use_moveit`
+- `planning_group_name`
+- `moveit_sample_duration`
 
-`use_moveit`  
-- It is parameter to use MoveIt! by setting to **true/false** 
+`use_moveit` is a parameter to set whether to use MoveIt!  
+`planning_group_name` is a parameter to set in [setup_assistant](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/setup_assistant/setup_assistant_tutorial.html#step-4-add-planning-groups)  
+`moveit_sample_duration` is a parameter to set sampling time when joint trajectory is planned from MoveIt!
 
-`planning_group_name`  
-- It is a parameter to set in [setup_assistant](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/setup_assistant/setup_assistant_tutorial.html#step-4-add-planning-groups)
-
-`moveit_sample_duration`  
-- It is a parameter to set sampling time when joint trajectory is planned from MoveIt!
-
-### [Launch MoveIt!](#launch-moviit)
-
-After setting all the parameters properly, launch Moveit! with the following command.
+After setting all the parameters, launch the open_manipulator_pro_controller.
 
   ``` bash
-  $ roslaunch open_manipulator_p_controller open_manipulator_p_controller.launch use_moveit:=true
+  $ roslaunch open_manipulator_pro_controller open_manipulator_pro_controller.launch use_moveit:=true
   ```
 
 **Warning!**     
@@ -221,21 +217,21 @@ When launching the controller to use MoveIt!, [OpenMANIPULATOR-P launch file](/d
   ![](/assets/images/platform/openmanipulator_p/moveit_launch.png)  
   
 **Service Server List** :
-A list of MoveIt!-related service server that open_manipulator_p_controller has.
+A list of MoveIt!-related service server that open_manipulator_pro_controller has.
 
-- `/open_manipulator_p/moveit/get_joint_position` ([open_manipulator_p_msgs/GetJointPosition]{: .popup})  
+- `/open_manipulator_pro/moveit/get_joint_position` ([open_manipulator_pro_msgs/GetJointPosition]{: .popup})  
 The user can use this service to receive a joint position which is calculated by move_group.  
 
-- `/open_manipulator_p/moveit/get_kinematics_pose` ([open_manipulator_p_msgs/GetKinematicsPose]{: .popup})  
+- `/open_manipulator_pro/moveit/get_kinematics_pose` ([open_manipulator_pro_msgs/GetKinematicsPose]{: .popup})  
 The user can use this service to receive a kinematics pose which is calculated by move_group.
 
-- `/open_manipulator_p/moveit/set_joint_position` ([open_manipulator_p_msgs/SetJointPosition]{: .popup})  
+- `/open_manipulator_pro/moveit/set_joint_position` ([open_manipulator_pro_msgs/SetJointPosition]{: .popup})  
 The user can use this service to create a trajectory in the [joint space]{: .popup} by move_group. The user inputs the angle of the target joint and the total time of the trajectory.
 
-- `/open_manipulator_p/moveit/set_kinematics_pose` ([open_manipulator_p_msgs/SetKinematicsPose]{: .popup})  
+- `/open_manipulator_pro/moveit/set_kinematics_pose` ([open_manipulator_pro_msgs/SetKinematicsPose]{: .popup})  
 The user can use this service to create a trajectory in the [task space]{: .popup} by move_group. The user inputs the kinematics pose(orientation only) of the OpenMANIPULATOR-P end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
 
-**TIP**: If you would like to use inverse kinematics with `position_only`, check `open_manipulator_p_moveit` -> `config` -> `kinematics.yaml` and set `position_only_ik` parameter to **True**.
+**TIP**: If you would like to use inverse kinematics with `position_only`, check `open_manipulator_pro_moveit` -> `config` -> `kinematics.yaml` and set `position_only_ik` parameter to **True**.
 {: .notice--success}
 
 [OpenCR]: /docs/en/parts/controller/opencr10/
@@ -243,20 +239,20 @@ The user can use this service to create a trajectory in the [task space]{: .popu
 [rc100]: /docs/en/parts/communication/rc-100/
 [bt410]: /docs/en/parts/communication/bt-410/
 
-[open_manipulator_p_msgs/GetJointPosition]: /docs/en/popup/open_manipulator_p_msgs_GetJointPosition/
-[open_manipulator_p_msgs/GetKinematicsPose]: /docs/en/popup/open_manipulator_p_msgs_GetKinematicsPose/
-[open_manipulator_p_msgs/SetJointPosition]: /docs/en/popup/open_manipulator_p_msgs_SetJointPosition/
-[open_manipulator_p_msgs/SetKinematicsPose]: /docs/en/popup/open_manipulator_p_msgs_SetKinematicsPose/
-[open_manipulator_p_msgs/SetActuatorState]: /docs/en/popup/open_manipulator_p_msgs_SetActuatorState/
-[open_manipulator_p_msgs/SetDrawingTrajectory]: /docs/en/popup/open_manipulator_p_msgs_SetDrawingTrajectory/
+[open_manipulator_pro_msgs/GetJointPosition]: /docs/en/popup/open_manipulator_pro_msgs_GetJointPosition/
+[open_manipulator_pro_msgs/GetKinematicsPose]: /docs/en/popup/open_manipulator_pro_msgs_GetKinematicsPose/
+[open_manipulator_pro_msgs/SetJointPosition]: /docs/en/popup/open_manipulator_pro_msgs_SetJointPosition/
+[open_manipulator_pro_msgs/SetKinematicsPose]: /docs/en/popup/open_manipulator_pro_msgs_SetKinematicsPose/
+[open_manipulator_pro_msgs/SetActuatorState]: /docs/en/popup/open_manipulator_pro_msgs_SetActuatorState/
+[open_manipulator_pro_msgs/SetDrawingTrajectory]: /docs/en/popup/open_manipulator_pro_msgs_SetDrawingTrajectory/
 
 [sensor_msgs/JointState]: /docs/en/popup/sensor_msgs_JointState_msg/
-[_open_manipulator_p_msgs/KinematicsPose]: /docs/en/popup/_open_manipulator_p_msgs_KinematicsPose/
-[_open_manipulator_p_msgs/OpenManipulatorState]: /docs/en/popup/_open_manipulator_p_msgs_OpenManipulatorState/
+[_open_manipulator_pro_msgs/KinematicsPose]: /docs/en/popup/_open_manipulator_pro_msgs_KinematicsPose/
+[_open_manipulator_pro_msgs/OpenManipulatorState]: /docs/en/popup/_open_manipulator_pro_msgs_OpenManipulatorState/
 [std_msgs::String]: /docs/en/popup/std_msgs_string/
 
-[task space]: /docs/en/popup/_open_manipulator_p_coordinates/
-[joint space]: /docs/en/popup/_open_manipulator_p_coordinates/
+[task space]: /docs/en/popup/_open_manipulator_pro_coordinates/
+[joint space]: /docs/en/popup/_open_manipulator_pro_coordinates/
 
 
 

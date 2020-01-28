@@ -36,17 +36,17 @@ page_number: 11
 **TIP**: Terminal can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for Terminal is `Ctrl`+`Alt`+`t`.
 {: .notice--success}
 
-Launch `open_manipulator_p_teleop_keyboard` node for simple teleoperation test using the keyboard.  
+Launch `open_manipulator_pro_teleop_keyboard` node for simple teleoperation test using the keyboard.  
 
 
 ``` bash
-$ ros2 run open_manipulator_p_teleop open_manipulator_p_teleop_keyboard
+$ ros2 run open_manipulator_pro_teleop open_manipulator_pro_teleop_keyboard
 ```
 If the node is successfully launched, the following instruction will appear in the terminal window.  
 
 ```
 ---------------------------------
-Control Your OpenManipulator-P!
+Control Your OpenManipulator-PRO!
 ---------------------------------
 w : increase x axis in task space
 s : decrease x axis in task space
@@ -99,7 +99,7 @@ Enter pairing mode with PS4 by pressing and holding Playstation button + share b
 
 ``` bash
 $ ros2 run joy joy_node
-$ ros2 run open_manipulator_p_teleop open_manipulator_p_teleop_joystick
+$ ros2 run open_manipulator_pro_teleop open_manipulator_pro_teleop_joystick
 ```
 
 ### [XBOX 360 Joystick](#xbox-360-joystick)
@@ -110,7 +110,7 @@ Connect XBOX 360 joystick to the PC with Wireless Adapter or USB cable, and laun
 
 ``` bash
 $ ros2 run joy joy_node
-$ ros2 run open_manipulator_p_teleop open_manipulator_p_teleop_joystick
+$ ros2 run open_manipulator_pro_teleop open_manipulator_pro_teleop_joystick
 ```
 
 ## [MoveIt!](#moveit)
@@ -125,18 +125,18 @@ $ ros2 run open_manipulator_p_teleop open_manipulator_p_teleop_joystick
 [rc100]: /docs/en/parts/communication/rc-100/
 [bt410]: /docs/en/parts/communication/bt-410/
 
-[open_manipulator_p_msgs/GetJointPosition]: /docs/en/popup/open_manipulator_p_msgs_GetJointPosition/
-[open_manipulator_p_msgs/GetKinematicsPose]: /docs/en/popup/open_manipulator_p_msgs_GetKinematicsPose/
-[open_manipulator_p_msgs/SetJointPosition]: /docs/en/popup/open_manipulator_p_msgs_SetJointPosition/
-[open_manipulator_p_msgs/SetKinematicsPose]: /docs/en/popup/open_manipulator_p_msgs_SetKinematicsPose/
-[open_manipulator_p_msgs/SetActuatorState]: /docs/en/popup/open_manipulator_p_msgs_SetActuatorState/
-[open_manipulator_p_msgs/SetDrawingTrajectory]: /docs/en/popup/open_manipulator_p_msgs_SetDrawingTrajectory/
+[open_manipulator_pro_msgs/GetJointPosition]: /docs/en/popup/open_manipulator_pro_msgs_GetJointPosition/
+[open_manipulator_pro_msgs/GetKinematicsPose]: /docs/en/popup/open_manipulator_pro_msgs_GetKinematicsPose/
+[open_manipulator_pro_msgs/SetJointPosition]: /docs/en/popup/open_manipulator_pro_msgs_SetJointPosition/
+[open_manipulator_pro_msgs/SetKinematicsPose]: /docs/en/popup/open_manipulator_pro_msgs_SetKinematicsPose/
+[open_manipulator_pro_msgs/SetActuatorState]: /docs/en/popup/open_manipulator_pro_msgs_SetActuatorState/
+[open_manipulator_pro_msgs/SetDrawingTrajectory]: /docs/en/popup/open_manipulator_pro_msgs_SetDrawingTrajectory/
 [sensor_msgs/JointState]: /docs/en/popup/sensor_msgs_JointState_msg/
-[_open_manipulator_p_msgs/KinematicsPose]: /docs/en/popup/_open_manipulator_p_msgs_KinematicsPose/
-[_open_manipulator_p_msgs/OpenManipulatorState]: /docs/en/popup/_open_manipulator_p_msgs_OpenManipulatorState/
+[_open_manipulator_pro_msgs/KinematicsPose]: /docs/en/popup/_open_manipulator_pro_msgs_KinematicsPose/
+[_open_manipulator_pro_msgs/OpenManipulatorState]: /docs/en/popup/_open_manipulator_pro_msgs_OpenManipulatorState/
 [std_msgs::String]: /docs/en/popup/std_msgs_string/
-[task space]: /docs/en/popup/_open_manipulator_p_coordinates/
-[joint space]: /docs/en/popup/_open_manipulator_p_coordinates/
+[task space]: /docs/en/popup/_open_manipulator_pro_coordinates/
+[joint space]: /docs/en/popup/_open_manipulator_pro_coordinates/
 [std_msgs/String]: /docs/en/popup/std_msgs_string/
 [std_msgs/Float64]: /docs/en/popup/std_msgs_float64_msg/
 [geometry_msgs/Pose]: /docs/en/popup/geometry_msgs_Pose_msg/

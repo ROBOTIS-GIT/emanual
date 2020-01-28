@@ -28,7 +28,7 @@ OpenMANIPULATOR-X controller provides basic manipulation of OpenMANIPULATOR-X. Y
 
 ## [Launch Controller](#launch-controller)
 
-Open a terminal then run the following command in the terminal.
+Please, open a terminal then run the following command in the terminal.
 
 ``` bash
 $ ros2 launch open_manipulator_x_controller open_manipulator_x_controller.launch.py  
@@ -38,7 +38,7 @@ $ ros2 launch open_manipulator_x_controller open_manipulator_x_controller.launch
 
 **WARNING** :  
 Please check each joint position before running OpenMANIPULATOR-X. If joints are set inappropriately, OpenMANIPULATOR-X might not start operating.
-The picture of OpenMANIPULATOR-X below is showing you the ideal pose of OpenMANIPULATOR-X. Please adjust each joints along with the following picture when DYNAMIXEL torque is not enabled.    
+The picture of OpenMANIPULATOR-X below is showing you the ideal pose of OpenMANIPULATOR-X. Please adjust each joints along with the following picture when DYNAMIXEL torque isn't enabled.    
         
 <img src="/assets/images/platform/openmanipulator_x/open_manipulator_start_pose.png" width="250">
 {% endcapture %}

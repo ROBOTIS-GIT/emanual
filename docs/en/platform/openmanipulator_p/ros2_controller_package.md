@@ -28,9 +28,9 @@ OpenMANIPULATOR-P controller provides basic manipulation of OpenMANIPULATOR-P. Y
 
 ## [Launch Controller](#launch-controller)
 
-Open the Terminal then run the following command.
+Please, open the Terminal then run the following command.
 ``` bash
-$ ros2 launch open_manipulator_p_controller open_manipulator_p_controller.launch.py
+$ ros2 launch open_manipulator_pro_controller open_manipulator_pro_controller.launch.py
 ```
 
 **WARNING**: It is recommended to place OpenMANIPULATOR-P at the following pose and start the controller so that each component of OpenMANIPULATOR-P does not conflict.  
@@ -54,11 +54,11 @@ Joint Dynamixel ID : 6, Model Name : PRO-PLUS-PH42-020-S300-R
 {% capture notice_01 %}
 **TIP**:  
 - If DYNAMIXEL aren't recoginized, please check firmware with ROBOTIS software ([R+ Manager 2.0](/docs/en/software/rplus2/manager/) or [DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/#firmware-update))
-- If you would like to change DYNAMIXEL ID, please check [`open_manipulator_p.cpp`](https://github.com/ROBOTIS-GIT/open_manipulator_p/blob/ros2/open_manipulator_p_libs/src/open_manipulator_p.cpp) in the open_manipulator_p_lib folder. The default ID is **11, 12, 13, 14 ,15 and 16** for joints.
+- If you would like to change DYNAMIXEL ID, please check [`open_manipulator_pro.cpp`](https://github.com/ROBOTIS-GIT/open_manipulator_pro/blob/ros2/open_manipulator_pro_libs/src/open_manipulator_pro.cpp) in the open_manipulator_pro_lib folder. The default ID is **11, 12, 13, 14 ,15 and 16** for joints.
 {% endcapture %}
 <div class="notice--success">{{ notice_01 | markdownify }}</div>
 
-**NOTE**: OpenMANIPULATOR-P controller is compatible with [Protocol 2.0](/docs/en/dxl/protocol2/). [Protocol 1.0](/docs/en/dxl/protocol1/) doesn't support SyncRead instructions that access to multiple DYNAMIXEL's simultaneously. Protocol 2.0 supports `MX 2.0`, `X`, `Pro`, `P` series, but it does not support `AX`, `RX` and `EX`.  
+**NOTE**: OpenMANIPULATOR-P controller is compatible with [Protocol 2.0](/docs/en/dxl/protocol2/). [Protocol 1.0](/docs/en/dxl/protocol1/) doesn't support SyncRead instructions that access to multiple DYNAMIXEL's simultaneously. Protocol 2.0 supports `MX 2.0`, `X`, `Pro`, `Pro +` series, but it does not support `AX`, `RX` and `EX`.  
 {: .notice--info}
 
 ## [Check Setting](#check-setting)
@@ -76,12 +76,12 @@ Joint Dynamixel ID : 6, Model Name : PRO-PLUS-PH42-020-S300-R
 Publish a topic message to check the OpenMANIPULATOR-P setting.
 
 ``` bash
-$ ros2 topic pub /open_manipulator_p/option std_msgs/msg/String "data: print_open_manipulator_p_setting"
+$ ros2 topic pub /open_manipulator_pro/option std_msgs/msg/String "data: print_open_manipulator_pro_setting"
 ```
 <**Manipulator Description**> will be printed on Terminal.  
 Launch the open_manipulator_controller. It is shown that present states of the OpenMANIPULATOR-P.  
 This parameter is descripted on OpenMANIPULATOR.cpp in open_manipulator_libs package.  
-`~/robotis_ws/src/open_manipulator_p/open_manipulator_p_libs/src/open_manipulator_p.cpp`
+`~/robotis_ws/src/open_manipulator_pro/open_manipulator_pro_libs/src/open_manipulator_pro.cpp`
 
 ```
 ----------<Manipulator Description>----------
@@ -469,15 +469,15 @@ Active Joint
 Load OpenMANIPULATOR-P on RViz.
 
 ``` bash
-$ ros2 launch open_manipulator_p_description open_manipulator_p_rviz2.launch.py
+$ ros2 launch open_manipulator_pro_description open_manipulator_pro_rviz2.launch.py
 ```
 
 {% capture notice_01 %}
 **NOTE**:
-- If you launched the [OpenMANIPULATOR-P controller](/docs/en/platform/openmanipulator_p/ros2_controller_package/#launch-controller) before launching the open_manipulator_p_controller file, the robot model on RViz would be synchronized with the actual robot.
+- If you launched the [OpenMANIPULATOR-P controller](/docs/en/platform/openmanipulator_p/ros2_controller_package/#launch-controller) before launching the open_manipulator_pro_controller file, the robot model on RViz would be synchronized with the actual robot.
 - If users would like to check only model of OpenMANIPULATOR-P without OpenMANIPULATOR-P, the user can launch the RViz without the OpenMANIPULATOR-P controller.  
 The user can change each joint by GUI, if the user launch only RViz by executing the following command :
-`$ ros2 launch open_manipulator_p_description open_manipulator_p_rviz.launch.py use_gui:=true`
+`$ ros2 launch open_manipulator_pro_description open_manipulator_pro_rviz.launch.py use_gui:=true`
 
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
@@ -530,7 +530,7 @@ If you would like to see more details about topic message, click the `▶` butto
 #### [Published Topic List](#published-topic-list)
 
 **Published Topic List** :
-A list of topics that the open_manipulator_p_controller publishes.
+A list of topics that the open_manipulator_pro_controller publishes.
 - `/open_manipulator/states`
 - `/open_manipulator/joint_states`
 - `/open_manipulator/gripper/kinematics_pose`
@@ -556,14 +556,14 @@ A list of topics that the open_manipulator_p_controller publishes.
 #### [Subscribed Topic List](#published-topic-list)
 
 **Subscribed Topic List**:
-A list of topics that the open_manipulator_p_controller subscribes.
+A list of topics that the open_manipulator_pro_controller subscribes.
 - `/open_manipulator/option`
 - `/open_manipulator/execute_trajectory/goal`
 
 **NOTE**: These topics are messages for checking the status of the robot regardless of the robot's motion.
 {: .notice--info}
 
-`/open_manipulator/option`([std_msgs/String]{: .popup}) is used to set OpenMANIPULATOR-P options. **"print_open_manipulator_setting"** : is to request the open_manipulator_p_controller to display "Manipulator Description".
+`/open_manipulator/option`([std_msgs/String]{: .popup}) is used to set OpenMANIPULATOR-P options. **"print_open_manipulator_setting"** : is to request the open_manipulator_pro_controller to display "Manipulator Description".
 
 <!-- <img src="/assets/images/platform/openmanipulator_p/rqt_option.png" width="1000">  --->
 
@@ -580,7 +580,7 @@ In addition, you can monitor topics through rqt whenever you have a topic added 
 
 
 **Service Server List** :
-A list of service servers that open_manipulator_p_controller has.
+A list of service servers that open_manipulator_pro_controller has.
 
 - `/open_manipulator/goal_joint_space_path` ([open_manipulator_msgs/SetJointPosition]{: .popup})  
 The user can use this service to create a trajectory in the [joint space]{: .popup}. The user inputs the angle of the target joint and the total time of the trajectory.
