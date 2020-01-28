@@ -17,6 +17,8 @@ page_number: 5
 
 # [[ROS] Controller Package](#ros-controller-package)
 
+You can control each joint of OpenMANIPULATOR-P and check states of OpenMANIPULATOR-P through [messages](/docs/en/platform/openmanipulator_p/ros_controller_package/#message-list) by utilizing an exclusive controller program.
+ 
 {% capture notice_01 %}
 **NOTE** :  
 - The test is done on `ROS Kinetic Kame` installed in `Ubuntu 16.04`.
@@ -25,13 +27,13 @@ page_number: 5
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-You can control each joint of OpenMANIPULATOR-P and check states of OpenMANIPULATOR-P through [messages](/docs/en/platform/openmanipulator_p/ros_controller_package/#message-list) by utilizing an exclusive controller program.
+## [Launch Controller](#launch-controller)
 
-Before launching the controller, please check `open_manipulator_p_controller` launch file in `open_manipulator_p_controller` package.  
+Before launching the controller, please check `open_manipulator_pro_controller` launch file in `open_manipulator_pro_controller` package.  
 
 ```
 <launch>
- <arg name="use_robot_name"         default="open_manipulator_p"/>
+ <arg name="use_robot_name"         default="open_manipulator_pro"/>
 
  <arg name="dynamixel_usb_port"     default="/dev/ttyUSB0"/>
  <arg name="dynamixel_baud_rate"    default="1000000"/>
@@ -45,13 +47,13 @@ Before launching the controller, please check `open_manipulator_p_controller` la
  <arg name="moveit_sample_duration" default="0.050"/>
 
  <group if="$(arg use_moveit)">
-   <include file="$(find open_manipulator_p_controller)/launch/open_manipulator_p_moveit.launch">
+   <include file="$(find open_manipulator_pro_controller)/launch/open_manipulator_pro_moveit.launch">
      <arg name="robot_name"      value="$(arg use_robot_name)"/>
      <arg name="sample_duration" value="$(arg moveit_sample_duration)"/>
    </include>
  </group>
 
- <node name="$(arg use_robot_name)" pkg="open_manipulator_p_controller" type="open_manipulator_p_controller" output="screen" args="$(arg dynamixel_usb_port) $(arg dynamixel_baud_rate)">
+ <node name="$(arg use_robot_name)" pkg="open_manipulator_pro_controller" type="open_manipulator_pro_controller" output="screen" args="$(arg dynamixel_usb_port) $(arg dynamixel_baud_rate)">
      <param name="using_platform"       value="$(arg use_platform)"/>
      <param name="using_moveit"         value="$(arg use_moveit)"/>
      <param name="planning_group_name"  value="$(arg planning_group_name)"/>
@@ -62,46 +64,35 @@ Before launching the controller, please check `open_manipulator_p_controller` la
 </launch>
   
 ```
+**Parameters List** : The following parameters set control environments.  
+- `use_robot_name`
+- `dynamixel_usb_port`
+- `dynamixel_baud_rate`
+- `control_period`
+- `use_platform`
+- `use_moveit`
+- `planning_group_name`
+- `moveit_sample_duration`
 
-**Parameter Description**  
+`use_robot_name` is a parameter to set manipulator name(namespace of ROS messages).  
+`dynamixel_usb_port` is a parameter to set USB port to connect with DYNAMIXEL of OpenMANIPULATOR-P. If you use U2D2, it should be set **/dev/ttyUSB@**. If you use OpenCR, it should be set **/dev/ttyACM@** (@ indicates the port number connected to DYNAMIXEL).  
+`dynamixel_baud_rate` is a parameter to set baud rate of DYNAMIXEL. default baud rate of DYNAMIXEL used in OpenMANIPULATOR-P is 1000000.  
+`control_period` is a parameter to set communication period between DYNAMIXEL and PC (control loop time).  
+`use_platform` is a parameter that sets whether to use the actual OpenMANIPULATOR-P or OpenMANIPULATOR-P simulation. please refer [[ROS] Simulation](/docs/en/platform/openmanipulator_p/ros_simulation/#ros-simulation) chapter.  
+`use_moveit`, `planning_group_name` and `moveit_sample_duration` are parameters to load [move_group](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/move_group_interface/move_group_interface_tutorial.html) package. please refer to [MoveIt!](/docs/en/platform/openmanipulator_p/ros_operation/#moveit) chapter.
 
-The following patameters are used to set the controls.
+After setting those parameters, launch the OpenMANIPULATOR-P controller to start [[ROS] Operation](/docs/en/platform/openmanipulator_p/ros_operation/#ros-operation).
 
-`use_robot_name`  
-- Specifies the name of manipulator (namespace of ROS messages)
- 
-`dynamixel_usb_port`  
-- Specifies a USB port. The @ symbol appended at the end of the port name indicates a port number on DYNAMIXEL. 
-   - Port of U2D2: **/dev/ttyUSB@**
-   - Port of OpenCR: **/dev/ttyACM@**  
-    
-`dynamixel_baud_rate`  
-- Specifies baud rate of DYNAMIXEL. The default baud rate is 1000000.
-  
-`control_period`  
-- Specifies a communication period (control loop time) between DYNAMIXEL and PC.
- 
-`use_platform`  
-- Sets to **true/false** to use [Simulation](/docs/en/platform/openmanipulator_p/ros_simulation/#ros-simulation) feature. 
-  - **true** for using an actual robot. 
-  - **false** for using an virtual robot in [Gazebo](/docs/en/platform/openmanipulator_p/ros_simulation/#controller-for-gazebo) (3D robotics simulator).
- 
-`use_moveit`, `planning_group_name` and `moveit_sample_duration`  
-- Load [move_group](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/move_group_interface/move_group_interface_tutorial.html) package. 
-- More information on these parmeters is available at [MoveIt!](/docs/en/platform/openmanipulator_p/ros_operation/#moveit).
+Please, open a terminal then run roscore along with following command.
 
-## [Launch Controller](#launch-controller)
-
-After setting those parameters, launch OpenMANIPULATOR-P controller to start [[ROS] Operation](/docs/en/platform/openmanipulator_p/ros_operation/#ros-operation).
-
-First, open a terminal then run roscore along with following command.
 ``` bash
 $ roscore
 ```
 
-Next, open a new Terminal and launch the controller package along with following command.  
+After running roscore, open  another Terminal then wrtie the following commands in Terminal.  
+
 ``` bash
-$ roslaunch open_manipulator_p_controller open_manipulator_p_controller.launch
+$ roslaunch open_manipulator_pro_controller open_manipulator_pro_controller.launch
 ```
 
 **WARNING**: It is recommended to place OpenMANIPULATOR-P at the following pose and start the controller so that each component of OpenMANIPULATOR-P does not conflict.  
@@ -117,28 +108,28 @@ SUMMARY
 ========
 
 PARAMETERS
- * /open_manipulator_p/control_period: 0.01
- * /open_manipulator_p/moveit_sample_duration: 0.05
- * /open_manipulator_p/planning_group_name: arm
- * /open_manipulator_p/using_moveit: False
- * /open_manipulator_p/using_platform: True
+ * /open_manipulator_pro/control_period: 0.01
+ * /open_manipulator_pro/moveit_sample_duration: 0.05
+ * /open_manipulator_pro/planning_group_name: arm
+ * /open_manipulator_pro/using_moveit: False
+ * /open_manipulator_pro/using_platform: True
  * /rosdistro: kinetic
  * /rosversion: 1.12.14
 
 NODES
   /
-    open_manipulator_p (open_manipulator_p_controller/open_manipulator_p_controller)
+    open_manipulator_pro (open_manipulator_pro_controller/open_manipulator_pro_controller)
 
 ROS_MASTER_URI=http://192.168.3.149:11311
 
-process[open_manipulator_p-1]: started with pid [12510]
+process[open_manipulator_pro-1]: started with pid [12510]
 Joint Dynamixel ID : 1, Model Name : PRO-PLUS-PH54-200-S500-R
 Joint Dynamixel ID : 2, Model Name : PRO-PLUS-PH54-200-S500-R
 Joint Dynamixel ID : 3, Model Name : PRO-PLUS-PH54-100-S500-R
 Joint Dynamixel ID : 4, Model Name : PRO-PLUS-PH54-100-S500-R
 Joint Dynamixel ID : 5, Model Name : PRO-PLUS-PH42-020-S300-R
 Joint Dynamixel ID : 6, Model Name : PRO-PLUS-PH42-020-S300-R
-[INFO] Succeeded to init /open_manipulator_p
+[INFO] Succeeded to init /open_manipulator_pro
 ```
 
 {% capture notice_01 %}
@@ -147,7 +138,7 @@ Joint Dynamixel ID : 6, Model Name : PRO-PLUS-PH42-020-S300-R
 `rosrun dynamixel_workbench_controllers find_dynamixel /dev/ttyUSB0`  
 if DYNAMIXEL aren't recoginized, please check firmware with ROBOTIS software ([R+ Manager 2.0](/docs/en/software/rplus2/manager/) or [DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/#firmware-update))
 
-- If you would like to change DYNAMIXEL ID, please check [`open_manipulator_p.cpp`](https://github.com/ROBOTIS-GIT/open_manipulator_p/blob/master/open_manipulator_p_libs/src/open_manipulator_p.cpp) in the open_manipulator_p_lib folder. The default ID is **11, 12, 13, 14 ,15 and 16** for joints.
+- If you would like to change DYNAMIXEL ID, please check [`open_manipulator_pro.cpp`](https://github.com/ROBOTIS-GIT/open_manipulator_pro/blob/master/open_manipulator_pro_libs/src/open_manipulator_pro.cpp) in the open_manipulator_pro_lib folder. The default ID is **11, 12, 13, 14 ,15 and 16** for joints.
 
 {% endcapture %}
 <div class="notice--success">{{ notice_01 | markdownify }}</div>
@@ -164,19 +155,19 @@ if DYNAMIXEL aren't recoginized, please check firmware with ROBOTIS software ([R
 - The test is done on `ROS Kinetic Kame` installed in `Ubuntu 16.04`.
 - The test is done on `ROS Melodic Morenia`installed in `Ubuntu 18.04`.
 - Make sure ROS dependencies are installed before performing these instructions - [Install ROS Packages](/docs/en/platform/openmanipulator_p/ros_setup/#install-ros-packages)
-- Make sure to launch the [OpenMANIPULATOR-P controller](#launch-controller) before use of the instruction  
+- Make sure to run the [OpenMANIPULATOR-P controller](/docs/en/platform/openmanipulator_p/ros_controller_package/#launch-controller) instructions before use of the instruction  
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
 Publish a topic message to check the OpenMANIPULATOR-P setting.
 
 ``` bash
-$ rostopic pub /open_manipulator_p/option std_msgs/String "print_open_manipulator_prp_setting"
+$ rostopic pub /open_manipulator_pro/option std_msgs/String "print_open_manipulator_prp_setting"
 ```
 <**Manipulator Description**> will be printed on Terminal.  
 Launch the open_manipulator_controller. It is shown that present states of the OpenMANIPULATOR-P.  
 This parameter is descripted on OpenMANIPULATOR.cpp in open_manipulator_libs package.  
-`~/catkin_ws/src/open_manipulator_p/open_manipulator_p_libs/src/open_manipulator_p.cpp`
+`~/catkin_ws/src/open_manipulator_pro/open_manipulator_pro_libs/src/open_manipulator_pro.cpp`
 
 ```
 ----------<Manipulator Description>----------
@@ -565,15 +556,15 @@ Active Joint
 Load OpenMANIPULATOR-P on RViz.
 
 ``` bash
-$ roslaunch open_manipulator_p_description open_manipulator_p_rviz.launch
+$ roslaunch open_manipulator_pro_description open_manipulator_pro_rviz.launch
 ```
 
 {% capture notice_01 %}
 **NOTE**:
-- If you launched the [OpenMANIPULATOR-P controller](/docs/en/platform/openmanipulator_p/ros_controller_package/#launch-controller) before launching the open_manipulator_p_controller file, the robot model on RViz would be synchronized with the actual robot.
+- If you launched the [OpenMANIPULATOR-P controller](/docs/en/platform/openmanipulator_p/ros_controller_package/#launch-controller) before launching the open_manipulator_pro_controller file, the robot model on RViz would be synchronized with the actual robot.
 - If users would like to check only model of OpenMANIPULATOR-P without OpenMANIPULATOR-P, the user can launch the RViz without the OpenMANIPULATOR-P controller.  
 The user can change each joint by GUI, if the user launch only RViz by executing the following command :
-`$ roslaunch open_manipulator_p_description open_manipulator_p_rviz.launch use_gui:=true`
+`$ roslaunch open_manipulator_pro_description open_manipulator_pro_rviz.launch use_gui:=true`
 
 
 {% endcapture %}
@@ -584,16 +575,17 @@ The user can change each joint by GUI, if the user launch only RViz by executing
 
 ## [Message List](#message-list) 
 
+
 {% capture notice_01 %}
 **NOTE**:  
 - The test is done on `ROS Kinetic Kame` installed in `Ubuntu 16.04`.
 - The test is done on `ROS Melodic Morenia`installed in `Ubuntu 18.04`.
 - Make sure ROS dependencies are installed before performing these instructions - [Install ROS Packages](/docs/en/platform/openmanipulator_p/ros_setup/#install-ros-packages) 
-- Make sure to launch the [OpenMANIPULATOR-P controller](/docs/en/platform/openmanipulator_p/ros_controller_package/#launch-controller) before use of the instruction  
+- Make sure to run the [OpenMANIPULATOR-P controller](/docs/en/platform/openmanipulator_p/ros_controller_package/#launch-controller) instructions before use of the instruction  
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-OpenMANIPULATOR-P controller provides **topic** and **service** messages to control manipulator and check the states of manipulator.  
+OpenMANIPULATOR-P Controller provides **topic** and **service** messages to control manipulator and check the states of manipulator.  
 
 
 ### [Topic](#topic)
@@ -627,7 +619,7 @@ If you would like to see more details about topic message, click the `▶` butto
 #### [Published Topic List](#published-topic-list)
 
 **Published Topic List** :
-A list of topics that the open_manipulator_p_controller publishes.
+A list of topics that the open_manipulator_pro_controller publishes.
 - `/open_manipulator/states`
 - `/open_manipulator/joint_states`
 - `/open_manipulator/gripper/kinematics_pose`
@@ -656,7 +648,7 @@ A list of topics that the open_manipulator_p_controller publishes.
 #### [Subscribed Topic List](#published-topic-list)
 
 **Subscribed Topic List**:
-A list of topics that the open_manipulator_p_controller subscribes.
+A list of topics that the open_manipulator_pro_controller subscribes.
 - `/open_manipulator/option`
 - `/open_manipulator/move_group/display_planned_path`
 - `/open_manipulator/move_group/goal`
@@ -665,7 +657,7 @@ A list of topics that the open_manipulator_p_controller subscribes.
 **NOTE**: These topics are messages for checking the status of the robot regardless of the robot's motion.
 {: .notice--info}
 
-`/open_manipulator/option`([std_msgs/String]{: .popup}) is used to set OpenMANIPULATOR-P options. **"print_open_manipulator_setting"** : is to request the open_manipulator_p_controller to display "Manipulator Description".
+`/open_manipulator/option`([std_msgs/String]{: .popup}) is used to set OpenMANIPULATOR-P options. **"print_open_manipulator_setting"** : is to request the open_manipulator_pro_controller to display "Manipulator Description".
 
 <!-- <img src="/assets/images/platform/openmanipulator_p/rqt_option.png" width="1000">  --->
 
@@ -688,7 +680,7 @@ In addition, you can monitor topics through rqt whenever you have a topic added 
 
 
 **Service Server List** :
-A list of service servers that open_manipulator_p_controller has.
+A list of service servers that open_manipulator_pro_controller has.
 
 - `/open_manipulator/goal_joint_space_path` ([open_manipulator_msgs/SetJointPosition]{: .popup})  
 The user can use this service to create a trajectory in the [joint space]{: .popup}. The user inputs the angle of the target joint and the total time of the trajectory.

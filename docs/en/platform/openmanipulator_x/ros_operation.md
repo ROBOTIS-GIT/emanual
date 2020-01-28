@@ -185,21 +185,17 @@ Before you launch controller using MoveIt!, check `open_manipulator_controller` 
   </launch>
   ```
 
-**Parameters Description**   
-The following parameters are used to load [move_group](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/move_group_interface/move_group_interface_tutorial.html) package.  
+**Parameters List** :
+The following parameters can be used to load [move_group](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/move_group_interface/move_group_interface_tutorial.html) package.
+- `use_moveit`
+- `planning_group_name`
+- `moveit_sample_duration`
 
-`use_moveit`  
-- It is a parameter to use MoveIt! by setting to **true/false** 
+`use_moveit` is a parameter to set whether to use MoveIt!  
+`planning_group_name` is a parameter to set in [setup_assistant](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/setup_assistant/setup_assistant_tutorial.html#step-4-add-planning-groups)  
+`moveit_sample_duration` is a parameter to set sampling time when joint trajectory is planned from MoveIt!
 
-`planning_group_name`  
-- It is a parameter to set in [setup_assistant](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/setup_assistant/setup_assistant_tutorial.html#step-4-add-planning-groups)
-
-`moveit_sample_duration`  
-- It is a parameter to set sampling time when joint trajectory is planned from MoveIt!
-
-### [Launch MoveIt!](#launch-moviit) 
-
-After setting all the parameters properly, launch Moveit! with the following command.
+After setting all the parameters, launch the open_manipulator_pro_controller.
 
   ``` bash
   $ roslaunch open_manipulator_controller open_manipulator_controller.launch use_moveit:=true
