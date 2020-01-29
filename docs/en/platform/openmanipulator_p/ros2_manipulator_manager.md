@@ -28,7 +28,7 @@ sidebar:
 ```
 $ sudo bash
 [sudo] password for robotis:   
-# roslaunch open_manipulator_pro_manager open_manipulator_pro_manager.launch   
+# roslaunch open_manipulator_p_manager open_manipulator_p_manager.launch   
 ```
 
 If the manipulator manger has been launched successfully, the terminal will show the following message.
@@ -48,11 +48,11 @@ PARAMETERS
 
 NODES
   /
-    open_manipulator_pro_manager (open_manipulator_pro_manager/open_manipulator_pro_manager)
+    open_manipulator_p_manager (open_manipulator_p_manager/open_manipulator_p_manager)
 
 ROS_MASTER_URI=http://localhost:11311
 
-process[open_manipulator_pro_manager-1]: started with pid [19408]
+process[open_manipulator_p_manager-1]: started with pid [19408]
 [ INFO] [1552279834.24ro20783]: manager->init
 /dev/ttyUSB0 added. (baudrate: 1000000)
 (/dev/ttyUSB0) [ID:  1] PH54-200-S500-R added.
@@ -75,12 +75,12 @@ If you have a gripper([RH-P12-RN(A)](/docs/en/platform/rh_p12_rna/)), Download t
 ## [Check Setting](#check-setting)
 ### [RViz](#rviz)
 ```
-$ roslaunch open_manipulator_pro_bringup open_manipulator_pro.launch
+$ roslaunch open_manipulator_p_bringup open_manipulator_p.launch
 ```
 
 If you have a gripper([RH-P12-RN(A)](/docs/en/platform/rh_p12_rna/)), see below.
 ```
-$ roslaunch open_manipulator_pro_bringup open_manipulator_pro.launch with_gripper:=true
+$ roslaunch open_manipulator_p_bringup open_manipulator_p.launch with_gripper:=true
 ```
 ![](/assets/images/platform/openmanipulator_p/rviz.png)
 
