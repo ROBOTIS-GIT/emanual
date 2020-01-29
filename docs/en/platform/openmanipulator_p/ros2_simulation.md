@@ -27,17 +27,17 @@ page_number: 12
 [rc100]: /docs/en/parts/communication/rc-100/
 [bt410]: /docs/en/parts/communication/bt-410/
 
-[open_manipulator_pro_msgs/GetJointPosition]: /docs/en/popup/open_manipulator_pro_msgs_GetJointPosition/
-[open_manipulator_pro_msgs/GetKinematicsPose]: /docs/en/popup/open_manipulator_pro_msgs_GetKinematicsPose/
-[open_manipulator_pro_msgs/SetJointPosition]: /docs/en/popup/open_manipulator_pro_msgs_SetJointPosition/
-[open_manipulator_pro_msgs/SetKinematicsPose]: /docs/en/popup/open_manipulator_pro_msgs_SetKinematicsPose/
-[open_manipulator_pro_msgs/SetActuatorState]: /docs/en/popup/open_manipulator_pro_msgs_SetActuatorState/
-[open_manipulator_pro_msgs/SetDrawingTrajectory]: /docs/en/popup/open_manipulator_pro_msgs_SetDrawingTrajectory/
+[open_manipulator_p_msgs/GetJointPosition]: /docs/en/popup/open_manipulator_p_msgs_GetJointPosition/
+[open_manipulator_p_msgs/GetKinematicsPose]: /docs/en/popup/open_manipulator_p_msgs_GetKinematicsPose/
+[open_manipulator_p_msgs/SetJointPosition]: /docs/en/popup/open_manipulator_p_msgs_SetJointPosition/
+[open_manipulator_p_msgs/SetKinematicsPose]: /docs/en/popup/open_manipulator_p_msgs_SetKinematicsPose/
+[open_manipulator_p_msgs/SetActuatorState]: /docs/en/popup/open_manipulator_p_msgs_SetActuatorState/
+[open_manipulator_p_msgs/SetDrawingTrajectory]: /docs/en/popup/open_manipulator_p_msgs_SetDrawingTrajectory/
 
 [sensor_msgs/JointState]: /docs/en/popup/sensor_msgs_JointState_msg/
-[open_manipulator_pro_msgs/KinematicsPose]: /docs/en/popup/open_manipulator_pro_msgs_KinematicsPose/
-[open_manipulator_pro_msgs/OpenManipulatorState]: /docs/en/popup/open_manipulator_pro_msgs_OpenManipulatorState/
+[open_manipulator_p_msgs/KinematicsPose]: /docs/en/popup/open_manipulator_p_msgs_KinematicsPose/
+[open_manipulator_p_msgs/OpenManipulatorState]: /docs/en/popup/open_manipulator_p_msgs_OpenManipulatorState/
 [std_msgs::String]: /docs/en/popup/std_msgs_string/
 
-[task space]: /docs/en/popup/open_manipulator_pro_coordinates/
-[joint space]: /docs/en/popup/open_manipulator_pro_coordinates/
+[task space]: /docs/en/popup/open_manipulator_p_coordinates/
+[joint space]: /docs/en/popup/open_manipulator_p_coordinates/

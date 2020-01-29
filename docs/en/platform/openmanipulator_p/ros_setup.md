@@ -27,7 +27,7 @@ page_number: 4
 
 ## [Install Ubuntu on a PC](#install-ubuntu-on-pc)
 
-Download and install `Ubuntu 16.04` or `Ubuntu 18.04` on your a PC.
+Download and install `Ubuntu 16.04` or `Ubuntu 18.04` on your PC.
 
 - [Download Ubuntu](https://www.ubuntu.com/download/alternative-downloads)
 - [Tutorial - Install Ubuntu Desktop](https://www.ubuntu.com/download/desktop/install-ubuntu-desktop)
@@ -70,7 +70,6 @@ If you prefer manual installation, please follow the link below.
 **NOTE**: In order to check which packages are installed, please check this link out. [install_ros_melodic.sh](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_melodic.sh)
 {: .notice--info}
 
-
 ## [Install ROS Packages](#install-ros-packages)
 
 Install dependent packages for OpenMANIPULATOR-P. Run the following commands in a terminal window.
@@ -93,9 +92,9 @@ $ cd ~/catkin_ws/src/
 $ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git
 $ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench.git
 $ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench-msgs.git
-$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_pro.git
+$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_p.git
 $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_msgs.git
-$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_pro_simulations.git
+$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_p_simulations.git
 $ git clone https://github.com/ROBOTIS-GIT/robotis_manipulator.git
 $ cd ~/catkin_ws && catkin_make
 ```
@@ -111,9 +110,9 @@ $ cd ~/catkin_ws/src/
 $ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git
 $ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench.git
 $ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench-msgs.git
-$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_pro.git
+$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_p.git
 $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_msgs.git
-$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_pro_simulations.git
+$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_p_simulations.git
 $ git clone https://github.com/ROBOTIS-GIT/robotis_manipulator.git
 $ cd ~/catkin_ws && catkin_make
 ```
@@ -145,7 +144,7 @@ $ roscore
 With the roscore running, open a new terminal window and enter the following command to set usb latency time.
 
 ``` bash
-$ rosrun open_manipulator_pro_controller create_udev_rules
+$ rosrun open_manipulator_p_controller create_udev_rules
 ```
 
 **TIP**: This entered command set USB latency timer to **1 ms**. If you would like to see the setting, run the following command in a terminal.  

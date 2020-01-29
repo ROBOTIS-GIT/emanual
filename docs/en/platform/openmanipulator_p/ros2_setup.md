@@ -64,7 +64,7 @@ $ sudo apt install ros-dashing-python* ros-dashing-rqt*
 $ cd ~/robotis_ws/src/
 $ git clone -b ros2 https://github.com/ROBOTIS-GIT/DynamixelSDK.git
 $ git clone -b ros2 https://github.com/ROBOTIS-GIT/dynamixel-workbench.git
-$ git clone -b ros2 https://github.com/ROBOTIS-GIT/open_manipulator_pro.git
+$ git clone -b ros2 https://github.com/ROBOTIS-GIT/open_manipulator_p.git
 $ git clone -b ros2 https://github.com/ROBOTIS-GIT/open_manipulator_msgs.git
 $ git clone -b ros2 https://github.com/ROBOTIS-GIT/open_manipulator_dependencies.git
 $ git clone -b ros2 https://github.com/ROBOTIS-GIT/robotis_manipulator.git
@@ -87,7 +87,7 @@ In Linux(Ubuntu platform) environment, USB latency time is set to 16ms by defaul
 Open a terminal window and run the following command to set usb latency time.
 
 ``` bash
-$ ros2 run open_manipulator_pro_controller create_udev_rules
+$ ros2 run open_manipulator_p_controller create_udev_rules
 ```
 
 **TIP**: This entered command set USB latency timer to **1 ms**. If you would like to see the setting, run the following command in a terminal.  
