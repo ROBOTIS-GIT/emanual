@@ -46,8 +46,13 @@ page_number: 1
 
 ## [소프트웨어 다운로드](#소프트웨어-다운로드)
 
-- [로보플러스 태스크 3.0 윈도우 설치파일 다운로드](http://www.robotis.com/service/download.php?no=1774)
-- [로보플러스 태스크 3.0 안드로이드 앱 다운로드](https://play.google.com/store/apps/details?id=com.robotis.task3)
+**PC**  
+- [윈도우즈 설치파일](http://www.robotis.com/service/download.php?no=1774)
+- [맥 OS](https://apps.apple.com/kr/app/r-task3-0/id1490037811?mt=12)
+
+**모바일 기기**  
+- [안드로이드 앱](https://play.google.com/store/apps/details?id=com.robotis.task3)
+- [iOS 앱](https://apps.apple.com/kr/app/r-task3-0/id1482356873)
 
 ## [메뉴 설명](#메뉴-설명)
 

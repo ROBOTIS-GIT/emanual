@@ -65,8 +65,13 @@ The Motion files are not backward compatible, but lower version files can be con
 
 ## [Software Download](#software-download)
 
-- [R+Task 3.0 Windows Installer](http://www.robotis.com/service/download.php?no=1774)
-- [R+Task 3.0 Android App](https://play.google.com/store/apps/details?id=com.robotis.task3)
+**PC**
+- [Windows Installer](http://www.robotis.com/service/download.php?no=1774)
+- [MacOS](https://apps.apple.com/us/app/r-task3-0/id1490037811)
+
+**Smart Device**
+- [Android App](https://play.google.com/store/apps/details?id=com.robotis.task3)
+- [iOS](https://apps.apple.com/us/app/r-task3-0/id1482356873)
 
 ## [Menu Descriptions](#menu-descriptions)
 
