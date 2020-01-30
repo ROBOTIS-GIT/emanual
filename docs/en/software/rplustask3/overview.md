@@ -43,7 +43,6 @@ In order to make the robot move, the correct Motion project file must exist for 
 
 The Motion files are not backward compatible, but lower version files can be converted to mtn3 with R+ Task 3.0.
 
-
 ## [Compatible Controllers](#compatible-controllers)
 
 - [CM-5]
