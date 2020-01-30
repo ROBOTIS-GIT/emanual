@@ -165,7 +165,7 @@ $ ROS_NAMESPACE=om_with_tb3 roslaunch turtlebot3_bringup turtlebot3_rpicamera.la
 
 **[Remote PC]** Launch Launch robot_state_publisher node
 ```bash
-$ ROS_NAMESPACE=om_with_tb3 roslaunch open_manipulator_with_tb3_tools om_with_tb3_robot.launch
+$ ROS_NAMESPACE=om_with_tb3 roslaunch open_manipulator_with_tb3_tools om_with_tb3_remote.launch
 ```
 
 ## [SLAM](#slam)
@@ -268,6 +268,35 @@ path_time: 0.0"
 
 ![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_gripper.png)
 
+
+## [Pick and Place](#pick-and-place)
+
+We provide the pick and place example for mobile manipulation. This example is used [smach][smach](task-level architecture) to send action to robot.
+
+### Bringup gazebo simulator
+
+```bash
+$ roslaunch open_manipulator_with_tb3_gazebo rooms.launch use_platform:=false
+```
+
+### Launch navigation, moveIt!
+
+```bash
+$ roslaunch open_manipulator_with_tb3_tools rooms.launch use_platform:=false
+```
+
+### Launch task controller
+
+```bash
+$ roslaunch open_manipulator_with_tb3_tools task_controller.launch 
+```
+**TIP**: Smach provides state graph. Try to run smach viewer and how to robot can pick and place. `rosrun smach_viewer smach_viewer.py`
+{: .notice--success}
+
+![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_pick.png)
+
+![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_place.png)
+
 ## [Simulation](#simulation)
 
 - Load TurtleBot3 with OpenMANIPULATOR on Gazebo simulator and click `Play` button
@@ -348,35 +377,6 @@ $ rostopic list
 ```bash
 $ rostopic pub /om_with_tb3/joint4_position/command std_msgs/Float64 "data: -0.21" --once
 ```
-
-## [Pick and Place](#pick-and-place)
-
-We provide the pick and place example for mobile manipulation. This example is used [smach][smach](task-level architecture) to send action to robot.
-
-### Bringup gazebo simulator
-
-```bash
-$ roslaunch open_manipulator_with_tb3_gazebo rooms.launch use_platform:=false
-```
-
-### Launch navigation, moveIt!
-
-```bash
-$ roslaunch open_manipulator_with_tb3_tools rooms.launch use_platform:=false
-```
-
-### Launch task controller
-
-```bash
-$ roslaunch open_manipulator_with_tb3_tools task_controller.launch 
-```
-**TIP**: Smach provides state graph. Try to run smach viewer and how to robot can pick and place. `rosrun smach_viewer smach_viewer.py`
-{: .notice--success}
-
-![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_pick.png)
-
-![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_place.png)
-
 
 [export_turtlebot3_model]: /docs/en/platform/turtlebot3/export_turtlebot3_model
 [manipulator_id]: https://github.com/ROBOTIS-GIT/OpenCR/blob/ef4e71be84dd899b03e359703be93c5000c5954a/arduino/opencr_arduino/opencr/libraries/turtlebot3/examples/turtlebot3_with_open_manipulator/turtlebot3_with_open_manipulator_core/open_manipulator_driver.h#L27
