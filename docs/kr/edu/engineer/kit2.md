@@ -1,19 +1,17 @@
 ---
 layout: archive
 lang: kr
-ref: kit1
+ref: kit2
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/kr/edu/engineer/kit1/
+permalink: /docs/kr/edu/engineer/kit2/
 sidebar:
-  title: 엔지니어 키트 1
-  nav: "kit1"
+  title: 엔지니어 키트 2
+  nav: "kit2"
 ---
 
 # [개요](#개요)
-
-![](/assets/images/edu/engineer/kit1/enginner_main.png)
 
 **로보티즈 엔지니어** 는 스마트 기기를 활용한 AI 기술이 적용된 새로운 개념의 차세대 로봇입니다.  
 
@@ -25,7 +23,7 @@ sidebar:
 
 ## [부품 목록](#부품-목록)
 
-![](/assets/images/edu/engineer/kit1/parts_list_kr.png)
+![](/assets/images/edu/engineer/kit2/temp/temp_parts_list_kr.png)
 
 ### [CM-550 제어기](#cm-550-제어기)
 
@@ -41,7 +39,6 @@ sidebar:
 |   통신 모듈   |                                                                                       BLE Slave 모듈 내장                                                                                       |
 | 내부 I/O 장치 |                       버튼 : 2 (MODE, START)<br />마이크 (소리 감지) : 1<br />부저 : 1<br />전압 센서 : 1<br />자이로 가속도 센서 : 1<br />온도 센서 : 1<br />RGB LED : 3                       |
 | 외부 I/O 장치 |                                             로보티즈 5핀 포트 : 5 (서보모터/IR센서/온습도센서 : 1, 2번 포트 사용)<br />X 시리즈 다이나믹셀 포트 : 6                                             |
-
 
 #### [CM-550 각 부 명칭](#cm-550-각-부-명칭)  
 
@@ -59,7 +56,7 @@ sidebar:
 - `START` START LED : CM-550의 [동작 모드] 설명을 참고하세요.
 - `MODE` MODE 버튼 : 제어기의 동작 모드를 변경하기 위한 버튼입니다. CM-550의 [동작 모드] 설명을 참고하세요.
 - `START` START 버튼 : 현재 선택된 모드를 실행하기 위한 버튼입니다. CM-550의 [동작 모드] 설명을 참고하세요.
-- `DXL` 다이나믹셀-X 시리즈 포트 : 다이나믹셀-X 시리즈를 연결하기 위한 포트입니다.
+- `DXL` 다이나믹셀 X 시리즈 포트 : 다이나믹셀 X 시리즈를 연결하기 위한 포트입니다.
 - `PORT` 로보티즈 5핀 포트 : DMS, 접촉 센서, 적외선 센서 등의 주변장치를 연결하기 위한 5개의 포트입니다.  
   그 중 서보모터, 적외선센서, 온습도센서는 1, 2번 포트에만 연결할 수 있습니다. 각 포트마다 번호가 표시되어 있습니다.
 - `MIC` 내장 마이크 : 박수 소리를 감지할 수 있는 마이크가 기본으로 내장되어 있습니다.
@@ -71,37 +68,95 @@ sidebar:
 **[CM-550 매뉴얼 바로가기]{: .blank}**
 {: .notice}
 
-### [2XL430 다이나믹셀](#2xl430-다이나믹셀)
+### [XL430-W250-T](#xl430-w250-t)
+XL430-W250-T는 로봇의 기본관절로 사용되는 액츄에이터입니다.
+
+![](/assets/images/dxl/x/xl430_product_new.png)
+
+{% capture 2xl430 %}
+**XL430-W250-T 매뉴얼 바로가기**
+- [주요사양](/docs/kr/dxl/x/xl430-w250/#주요-사양)
+- [컨트롤 테이블](/docs/kr/dxl/x/xl430-w250/#컨트롤-테이블)
+{% endcapture %}
+<div class='notice'>{{ 2xl430 | markdownify }}</div>
+
+### [서보모터](#서보모터)
+서보모터는 로봇의 관절과 같이 각도 조절이 필요한 곳에 주로 사용되는 모터입니다.  
+바퀴처럼 구동시키는 회전 모드와 각도 및 위치 조절이 가능한 관절 모드를 지원하며 모드를 변경하여 필요에 맞게 사용할 수 있습니다.
+
+![](/assets/images/parts/motor/servo_motor_product.jpg)
+
+**[서보모터 매뉴얼 바로가기]{: .blank}**
+{: .notice}
+
+### [2XL430-W250-T](#2xl430-w250-t)
 2XL430-W250-T는 기존 하나의 축만 가지고있는 액츄에이터와 달리, 2축 제어가 가능한 새로운 다이나믹셀입니다.
 
 ![](/assets/images/edu/engineer/kit1/2xl430_intro.png)
 
-| 항목             | 내용                                                      |
-|:-----------------|:----------------------------------------------------------|
-| MCU              | {{ site.data.dxl_x_info.2xl430-w250.mcu }}                |
-| 위치 센서        | {{ site.data.dxl_x_info.2xl430-w250.encoder }}            |
-| 모터             | {{ site.data.dxl_x_info.2xl430-w250.motor }}              |
-| 통신속도         | {{ site.data.dxl_x_info.2xl430-w250.baudrate }}           |
-| 제어 알고리즘    | {{ site.data.dxl_x_info.2xl430-w250.control }}            |
-| 해상도           | {{ site.data.dxl_x_info.2xl430-w250.resolution }}         |
-| 동작 모드        | {{ site.data.dxl_x_info.2xl430-w250.mode }}               |
-| 무게             | {{ site.data.dxl_x_info.2xl430-w250.weight }}             |
-| 크기 (W x H x D) | {{ site.data.dxl_x_info.2xl430-w250.dimensions }}         |
-| 기어비           | {{ site.data.dxl_x_info.2xl430-w250.gearratio }}          |
-| 정지 토크        | {{ site.data.dxl_x_info.2xl430-w250.stalltorque }}        |
-| 무부하 속도      | {{ site.data.dxl_x_info.2xl430-w250.noloadspeed }}        |
-| 동작 온도        | {{ site.data.dxl_x_info.2xl430-w250.temperature }}        |
-| 사용 전압        | {{ site.data.dxl_x_info.2xl430-w250.voltage }}            |
-| 제어 명령        | {{ site.data.dxl_x_info.2xl430-w250.command }}            |
-| 프로토콜 타입    | {{ site.data.dxl_x_info.2xl430-w250.protocoltype }}       |
-| 통신 연결        | {{ site.data.dxl_x_info.2xl430-w250.physicalconnection }} |
-| ID               | {{ site.data.dxl_x_info.2xl430-w250.id }}                 |
-| 피드백           | {{ site.data.dxl_x_info.2xl430-w250.feedback }}           |
-| 재질             | {{ site.data.dxl_x_info.2xl430-w250.material }}           |
-| 대기 전류        | {{ site.data.dxl_x_info.2xl430-w250.standbycurrent }}     |
+{% capture 2xl430 %}
+**2XL430-W250-T 매뉴얼**
+- [주요사양](/docs/kr/dxl/x/2xl430-w250/#주요-사양)
+- [컨트롤 테이블](/docs/kr/dxl/x/2xl430-w250/#컨트롤-테이블)
+{% endcapture %}
+<div class='notice'>{{ 2xl430 | markdownify }}</div>
 
-**[2XL430-W250 매뉴얼 바로가기]{: .blank}**
-{: .notice}
+### [Raspberry Pi](#raspberry-pi)
+Raspberry Pi는 영국의 라즈베리 파이 재단이 교육 목적으로 개발한 리눅스 운영체제 기반의 싱글보드 컴퓨터입니다.  
+
+#### [Raspberry Pi Zero W](#raspberry-pi-zero-w)
+키트2에서 사용되는 Raspberry Pi Zero는 기존 라즈베리파이의 기능을 유지하면서 크기와 간격을 줄인 초소형 컴퓨터입니다.
+
+![](/assets/images/edu/engineer/kit2/raspberry_pi_zero.png)
+
+#### [Raspberry Pi 카메라](#raspberry-pi-카메라)
+라즈베리파이 카메라는 라즈베리파이와 연결하여 얼굴 및 색상 인식, 라인 감지, 영상 스트리밍 등의 다양한 기능을 수행할 수 있습니다.  
+
+![](/assets/images/edu/engineer/kit2/raspberry_pi_cam_01.png)
+> 라즈베리 파이 카메라 모듈
+
+![](/assets/images/edu/engineer/kit2/raspberry_pi_cam_02.png)
+> 라즈베리파이와 카메라모듈 연결모습
+
+#### [포트 및 기능](#포트-및-기능)
+
+![](/assets/images/edu/engineer/kit2/raspberry_pi_zero_port.png)
+
+- `40 Pin GPIO Port`: 입출력을 담당하는 GPIO(General Purpose Input/Output) 헤더핀입니다. 센서등 외부장치와 통신 및 제어시 사용합니다.
+- `Broadcom BCM2835`: 라즈베리 파이에서 사용되는 프로세서입니다. 
+- `CSI Camera Connector`: 라즈베리파이 카메라 모듈을 연결할수있는 커넥터입니다.
+- `Micro USB 5V Power Input`: 5 V 전원공급 포트입니다.
+- `Micro USB Data Port`: USB 허브와 연결하여, 주변장치 (마우스,키보드등)을 사용할수 있는 포트입니다.
+- `Mini-HDMI 1080P Video & Audio Output`: 모니터 및 오디오 출력을 위한 Mini HDMI 커넥터 입니다.
+- `MicroSD Card`: 이미지 파일(라즈비안 등) 설치 시, 사용하는 마이크로 카드 슬롯입니다.
+
+#### [CM-550에 장착하기](#Raspberry-Pi-Zero-CM-550-제어기에-장착한-모습)
+다음과 같은 모습으로, 제어기(CM-550)에 장착 시켜주세요.
+
+![](/assets/images/edu/engineer/kit2/raspberry_pi_zero_connection.png)
+
+**참고**: 부팅시 60초가 소요됩니다. 부팅이 되면 소리가 나면서 LED가 노랑색으로 변경됩니다.
+{: .notice--info}
+
+### [LED 보드](#led-보드)
+빨강, 파랑, 보라 3가지 색과 빛의 세기를 제어할 수 있는 R/B LED 보드입니다.  
+로봇의 외형에 장착해 화려한 LED 효과를 주거나 대회 등에서 LED 색으로 팀을 구분하는 등의 다양한 용도로 활용할 수 있습니다.
+
+![](/assets/images/edu/engineer/kit2/led_board_01.png)
+> LED 보드
+
+![](/assets/images/edu/engineer/kit2/led_board_02.png)
+> LED 보드 부착용 스티커
+
+![](/assets/images/edu/engineer/kit2/led_board_03.png)
+> MAX-E2 LED 보드 장착모습
+
+### [DMS](#dms)
+
+절대거리 감지센서(DMS : Distance measuring Sensor)는 적외선을 활용해 거리를 감지하는 센서입니다.  
+일반적인 적외선 센서에 비해 DMS는 반사체의 색상에 거의 영향을 받지 않으며 감지 거리도 10 ~ 80 cm까지 측정이 가능합니다.
+
+![](/assets/images/edu/engineer/kit2/dms.png)
 
 ## [주의사항](#주의사항)
 
@@ -120,7 +175,6 @@ sidebar:
 9. 로봇이나 부품에 충격을 가하거나 날카로운 물체로 찌르지 마십시오.
 {% endcapture %}
 <div class="notice--danger">{{ eng_kit1_danger1 | markdownify }}</div>
-
 
 ### [사용상 주의사항](#사용상-주의사항)
 
@@ -195,7 +249,6 @@ sidebar:
 
 ![](/assets/images/edu/engineer/kit1/rivet_assembly_12mm_kr.png)
 
-
 #### [케이블 연결](#케이블-연결)
 
 ##### 배선연결
@@ -212,7 +265,6 @@ sidebar:
 중공형 배선 연결은 케이블의 내구성을 더 높이거나 미관상의 케이블 정리를 위해 사용하는 결합 방법입니다.  
 반드시 사용해야 하는 것은 아니며 아이들러 캡 결합 후 케이블을 교체시 일반적인 조립방법보다 시간이 더 소요될 수도 있습니다.
 {: .notice--info}
-
 
 # [작동하기](#작동하기)
 
@@ -284,7 +336,6 @@ sidebar:
 | Dr.R      | [태스크 파일 다운로드](http://www.robotis.com/service/download.php?no=1780)  | [모션 파일 다운로드](http://www.robotis.com/service/download.php?no=1788) |
 | MAX-E1    | [태스크 파일 다운로드](http://www.robotis.com/service/download.php?no=1781)  | [모션 파일 다운로드](http://www.robotis.com/service/download.php?no=1789) |
 | SPI       | [태스크 파일 다운로드](http://www.robotis.com/service/download.php?no=1782)  | [모션 파일 다운로드](http://www.robotis.com/service/download.php?no=1790) |
-
 
 {% capture opening_exam %}
 [로보플러스 태스크 3.0에서 태스크 예제 파일 열기](/docs/kr/software/rplustask3/task_programming/#태스크-예제-열기)  
@@ -525,7 +576,6 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
 2. 화면에서 ID 번호를 선택하면 선택된 ID의 LED가 켜지고 중심 위치에서 좌우로 조금씩 움직입니다.  
   ![](/assets/images/edu/engineer/kit1/engineer_app_motor_2.png)
 
-
 ### [모터 오프셋 설정](#모터-오프셋-설정)
 로보티즈 엔지니어에 사용된 다이나믹셀의 자세나 위치 값의 보정이 필요할 때 사용하는 기능입니다.  
 오프셋 기능을 통해 보정된 값은 로봇의 전원을 끄더라도 저장됩니다.  
@@ -544,7 +594,7 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
 3. `OK`를 눌러 저장하면 아래와 같은 확인 창이 나타납니다. 한 번 더 `OK`를 누르면 값이 저장되고 로봇에 반영됩니다.  
   ![](/assets/images/edu/engineer/kit1/engineer_app_motor_offset_3.png)
 
-4. 오프셋을 초기화 하거나 저장된 값을 불러오는 기능을 사용할 수 있습니다.
+4. 오프셋을 초기화 하거나 저장된 값을 불러오는 기능을 사용할 수 있습니다.  
     ![](/assets/images/edu/engineer/kit1/engineer_app_motor_offset_4.png)
 
     - `Reset Offset` : 선택시 팝업창이 나타나며 `OK`를 클릭하면 모든 ID의 오프셋을 `0`으로 초기화 합니다.  
@@ -658,11 +708,8 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
 2. 마지막으로 아래의 명령어를 입력해서 텐서플로우를 설치합니다.
 
     ``` posh
-    pip install tensorflow==1.13.1
+    pip install tensorflow
     ```
-    
-    **주의**: 명시된 버전과 다른 버전을 사용하면, 오류가 발생할 수 있습니다. **1.13.1 버전을 설치하세요.** 
-    {: .notice--warning}
 
     ![](/assets/images/edu/engineer/kit1/obj_classification_tensor_05_kr.png)
 
@@ -933,8 +980,10 @@ CM-550에 내장된 BLE 슬레이브 모듈의 신호의 세기가 약하거나 
 {: .notice--success}
 
 [CM-550 매뉴얼 바로가기]: /docs/kr/parts/controller/cm-550/
-[2XL430-W250 매뉴얼 바로가기]: /docs/kr/dxl/x/2xl430-w250/
+[2XL430-W250-T 매뉴얼 바로가기]: /docs/kr/dxl/x/2xl430-w250/
 [로보플러스 태스크 3.0]: /docs/kr/software/rplustask3/
 [로보플러스 태스크 2.0]: /docs/kr/software/rplus2/task/
 [로보플러스 모션 2.0]: /docs/kr/software/rplus2/motion/
 [동작 모드]: /docs/kr/parts/controller/cm-550/#동작-모드
+[XL430-W250-T 매뉴얼 바로가기]: /docs/kr/dxl/x/xl430-w250/
+[서보모터 매뉴얼 바로가기]: /docs/kr/parts/motor/servo_motor/ 
