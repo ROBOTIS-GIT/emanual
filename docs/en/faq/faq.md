@@ -110,9 +110,9 @@ Please refer to [the page.](http://en.robotis.com/model/board.php?bo_table=robot
 - See [Change System Preferences]{: .popup} 
 
 # How to install USB driver for Windows?
-- See [Install a Windows Driver]{: .popup} 
+- See [Windows Driver Installation]{: .popup} 
 
-[Install a Windows Driver]: /docs/en/popup/usb_driver_install/
+[Windows Driver Installation]: /docs/en/popup/usb_driver_install/
 [Change System Preferences]: /docs/en/popup/general/change_system_preference_osx/
 [DYNAMIXEL SDK]: /docs/en/software/dynamixel/dynamixel_sdk/overview/
 [Protocol 1.0]: /docs/en/dxl/protocol1/
