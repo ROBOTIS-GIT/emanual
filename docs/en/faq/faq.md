@@ -11,9 +11,6 @@ sidebar:
   nav: "faq"
 ---
 
-
-
-
 # [Product Compatibility Guide](/docs/en/parts/controller/controller_compatibility/)
 
 # [Download Task Code](/docs/en/faq/download_task_code/)
@@ -21,8 +18,6 @@ sidebar:
 # [Task Rule Check](/docs/en/software/rplus1/task/task_misc/#rule-check)
 
 # [CM 510/530 Fuse Replacement](/docs/en/faq/cm_510_530_fuse/)
-
-
 
 # How the X-series can communicate with dynamixel with protocol 1.0?
 
@@ -106,32 +101,19 @@ Please refer to [the page.](http://en.robotis.com/model/board.php?bo_table=robot
 
 # Software installation for OS X fails with a security warning.
 
-
 ## Minimum System Requirements
 
   OS : Mac OS X 10.5 or higher
   Hardware : Release after October 2007 (64bit)
 
 ## Software installation for OS X fails with a security warning.
+- See [Change System Preferences]{: .popup} 
 
-  1 . **Open System panel from Launchpad or Dock.**
+# How to install USB driver for Windows?
+- See [Install a Windows Driver]{: .popup} 
 
-  ![](/assets/images/faq/OS_X_fail/osx_system_config.png)
-
-  2 . **Click on the Security & Privacy icon.**
-
-  ![](/assets/images/faq/OS_X_fail/osx_security.png)
-
-  3 . **Click the lock icon and enter the password.**
-
-  ![](/assets/images/faq/OS_X_fail/osx_security_mod.png)
-  ![](/assets/images/faq/OS_X_fail/osx_authority.png)
-
-  4 . Select **"Anywhere"** and try installation again.
-
-  ![](/assets/images/faq/OS_X_fail/osx_all_app_allowance.png)
-
-
+[Install a Windows Driver]: /docs/en/popup/usb_driver_install/
+[Change System Preferences]: /docs/en/popup/general/change_system_preference_osx/
 [DYNAMIXEL SDK]: /docs/en/software/dynamixel/dynamixel_sdk/overview/
 [Protocol 1.0]: /docs/en/dxl/protocol1/
 [Protocol 2.0]: /docs/en/dxl/protocol2/

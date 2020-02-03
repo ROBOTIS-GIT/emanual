@@ -21256,8 +21256,8 @@ opencm904:
       titlekr: "펌웨어 복구모드"
       url: /parts/controller/opencm904/#recovery-mode
       urlkr: /parts/controller/opencm904/#펌웨어-복구모드
-    - title: "Install Windows Driver"
-      url: /parts/controller/opencm904/#install-windows-driver
+    - title: "Windows Driver Installation"
+      url: /parts/controller/opencm904/#windows-driver-installation
     - title: "Dimension"
       titlekr: "도면"
       url: /parts/controller/opencm904/#dimension
