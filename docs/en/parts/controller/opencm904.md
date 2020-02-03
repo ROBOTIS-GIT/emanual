@@ -2085,51 +2085,14 @@ void testscrolltext(void) {
 Please refer to [R+Manager 2.0 Firmware Recovery](/docs/en/software/rplus2/manager/#firmware-recovery) or [R+Manager 1.0 Firmware Recovery](/docs/en/software/rplus1/manager/#firmware-recovery) sections.
 {: .notice}
 
-## [Install Windows Driver](#install-windows-driver)
-
-### Download Driver
-- Download the driver from the link below.  
-  [https://github.com/ROBOTIS-GIT/OpenCM9.04/blob/master/arduino/opencm_arduino/tools/driver/opencm_driver.zip](https://github.com/ROBOTIS-GIT/OpenCM9.04/blob/master/arduino/opencm_arduino/tools/driver/opencm_driver.zip)
-
-### Connect OpenCM 9.04 to PC
-- To install the USB driver, connect the PC and OpenCM9.04 via the USB cable as shown below.
-- However, if you connect with multiple USB devices on the USB hub, avoid as much as possible and recommend a direct connection to the PC as possible. Sometimes the download fails if there is not enough current on the hub.
-
-  ![](/assets/images/parts/controller/opencm904/connect_pc.png)
-
-### Install Driver
-
-- For Window 8 or 10, go to "PC settings -> Update and recovery -> Recovery -> Advanced startup -> Troubleshoot -> Advanced options -> Startup Settings -> Restart -> Select 7) Disable driver signature enforcement, and then restart" and then install using Run as administrator.
-- In the previous step, connecting the OpenCM board to the PC will make a device called “ROBOTIS Virtual COM Port” appear in the Device Manager.
-
-  ![](/assets/images/parts/controller/opencm904/opencm904_windows4.png)
-
-- Right-click on that device and select “Update Driver Software”.
-
-  ![](/assets/images/parts/controller/opencm904/opencm_ide_39.png)
-
-- Next select “Browse my computer for driver software”.
-
-  ![](/assets/images/parts/controller/opencm904/opencm_ide_40.png)
-
-- Click on “Browse” and select the directory that you unzipped above(ROBOTIS\drivers).
-
-  ![](/assets/images/parts/controller/opencm904/opencm_ide_41.png)
-
-- Click Next and the installation proceeds.  
-  If the USB driver is installed successfully, a message will appear that says “Windows has successfully updated your driver software” as shown below.
-
-  ![](/assets/images/parts/controller/opencm904/opencm_ide_42.png)
-
-- At this stage it is important to check in the Device Manager what COM Port number the ROBOTIS Virtual COM Port has just been installed as.  
-  Connecting to another USB port may change the COM Port number so if you connected to another port then check again and proceed to download.
-
-  ![](/assets/images/parts/controller/opencm904/opencm_ide_43.png)
+## [Windows Driver Installation](#windows-driver-installation)
+- See [Windows Driver Installation]{: .popup} 
 
 ## [Dimension](#dimension)
 
 ![](/assets/images/parts/controller/opencm904/opencm904_28.png)
 
+[Windows Driver Installation]: /docs/en/popup/usb_driver_install/
 [MOLEX 53253-0370]: https://www.molex.com/molex/products/datasheet.jsp?part=active/0532530370_PCB_HEADERS.xml
 [MOLEX 22-03-5035]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0022035035_PCB_HEADERS.xml
 [RoboPlus Task]: /docs/en/software/rplus1/task/getting_started/
