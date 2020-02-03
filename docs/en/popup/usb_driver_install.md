@@ -80,7 +80,7 @@ If you use Windows Server(2003 or 2008) or your system does not detect COM port,
 
 Open the **Device Manager** and see which COM port is assigned on your system (e.g., COM3)
 
-![](/assets/images/parts/controller/opencm904/opencm_ide_43.png)
+![](/assets/images/faq/driver_installation_en/check_resisterd_port.png)
 
 **NOTE**: ROBOTIS Virtual COM Port may differ depending on a USB port in use.
 {: .notice}
