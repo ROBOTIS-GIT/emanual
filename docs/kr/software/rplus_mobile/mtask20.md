@@ -424,14 +424,7 @@ PC에서 작성한 태스크 파일을 iOS 기기에 복사하여 사용할 수 
 
 ## 지원 가능한 제품 군은?
 
-- [ROBOTIS DREAM]
-- [ROBOTIS SMART]
-- [ROBOTIS STEM]
-- [ROBOTIS PREMIUM]
-- [ROBOTIS GP]
-- [ROBOTIS MINI]
-- [ROBOTIS IoT]
-- 그 외 [CM-150], [CM-200], [CM-510], [CM-530], [CM-700], [OpenCM9.04], OpenCM7.0을 사용하여 만든 사용자 로봇
+- [제어기호환표](/docs/en/parts/controller/controller_compatibility/)를 참고하여, 제공된 제어기와 호환이 되는지 확인 하세요.
 
 ## 기존 태스크 1.0에서 사용하던 TSK파일을 태스크 2.0에서 사용할 수 있나요?
 

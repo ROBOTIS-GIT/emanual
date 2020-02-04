@@ -658,7 +658,7 @@ main:
         url: /faq/faq_parts/
       - title: "GENERAL"
         titlekr: "자주 묻는 질문"
-        url: /faq/
+        url: /faq/general
 
 all-dynamixel:
   - title: "DYNAMIXEL"
@@ -17717,6 +17717,10 @@ download_task_code:
     titlekr: "CM-530"
     url: /faq/download_task_code/#cm-530
     urlkr: /faq/download_task_code/#cm-530
+  - title: "CM-550"
+    titlekr: "CM-550"
+    url: /faq/download_task_code/#cm-550
+    urlkr: /faq/download_task_code/#cm-550    
 - title: "Videos"
   titlekr: "동영상"
   url: /faq/download_task_code/#videos
@@ -22269,7 +22273,7 @@ u2d2:
         urlkr: /parts/interface/u2d2/#인증-획득
 
 #FAQ sidebar
-faq:
+general:
 
 
 #FAQ Protocol Compatibility Table

@@ -5,15 +5,17 @@ ref: faq
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/faq/
+permalink: /docs/en/faq/general
 sidebar:
-  title: FAQ
-  nav: "faq"
+  title: GENERAL
+  nav: "general"
 ---
 
-# [Product Compatibility Guide](/docs/en/parts/controller/controller_compatibility/)
+# What Software, DYNAMIXEL and Parts are compatible with my own controller?
+- See [Product Compatibility Guide](/docs/en/parts/controller/controller_compatibility/)
 
-# [Download Task Code](/docs/en/faq/download_task_code/)
+# How to download Task Code to my controller? 
+- See [Download Task Code](/docs/en/faq/download_task_code/)
 
 # [Task Rule Check](/docs/en/software/rplus1/task/task_misc/#rule-check)
 
@@ -30,23 +32,39 @@ It is recommended to use an identical protocol version for multiple DYNAMIXEL's.
 
 # What is RoboPlus?
 
-RoboPlus is a software to create a customized programming for every ROBOTIS product.
+RoboPlus (1.0 / 2.0 / 3.0), which is also called R+, is software tool to provide diverse functions, such as programming (R+ Task), motion design(R+ Motion), firmware update/recovery (R+ Manager).
 
-  - [RoboPlus 1.0](http://en.robotis.com/model/board.php?bo_table=print_en&wr_id=48)
+**R+ 1.0**
+  - [R+ Task](/docs/en/software/rplus/task/)
+  - [R+ Motion](/docs/en/software/rplus/motion/)
+  - [R+ Manager](/docs/en/software/rplus/manager/)
+  
+**R+ 2.0**
+  - [R+ Task 2.0](/docs/en/software/rplus2/task/)
+  - [R+ Motion 2.0](/docs/en/software/rplus2/motion/)
+  - [R+ Manager 2.0](/docs/en/software/rplus2/manager/)
+  - [R+ Design 2.0](/docs/en/software/rplus2/design/)
+  - [R+ Scratch](/docs/en/software/rplus2/scratch/)
 
-  - [RoboPlus 2.0](http://en.robotis.com/model/board.php?bo_table=print_en&wr_id=47)
-
-  - [Download](http://en.robotis.com/service/downloadpage.php?ca_id=10)
-
-# What is the difference between RoboPlus Task and RoboPlus Motion?
+**R+ 3.0**
+  - [R+ Task 3.0](/docs/en/software/rplustask3/)
+  
+{% capture rplus3 %}
+**NOTE**: 
+- R+ Task 3.0 is software combined with R+ Task 2.0 (A programming tool) and R+ Motion 2.0 (a tool of creating a robot motion)
+- See [Product Compatibility Guide](/docs/en/parts/controller/controller_compatibility/) to use the appropriate software with your controller.
+{% endcapture %}
+<div class="notice">{{ rplus3 | markdownify }}</div>
+  
+# What is the difference between R+ Task and R+ Motion?
 
  To use motions in a task code, the motion file must be downloaded.
 
-  - [RoboPlus Task](http://emanual.robotis.com/docs/en/software/rplus1/task/getting_started/#introduction)
+  - [R+ Task](http://emanual.robotis.com/docs/en/software/rplus1/task/getting_started/#introduction)
 
-  - [RoboPlus Motion](http://emanual.robotis.com/docs/en/software/rplus1/motion/#introduction)
+  - [R+ Motion](http://emanual.robotis.com/docs/en/software/rplus1/motion/#introduction)
 
-# I want to know the meaning of the error code occurs during "RoboPlus Task" program execution.
+# What is the meaning of error codes when I use "RoboPlus Task" program execution.
 
  [Please refer to the page](http://emanual.robotis.com/docs/en/software/rplus1/task/task_misc/#error-messages)
 
@@ -83,6 +101,7 @@ RoboPlus is a software to create a customized programming for every ROBOTIS prod
 
 # Are ROBOTIS products RoHS compliant?
 Please refer to [the page.](http://en.robotis.com/model/board.php?bo_table=robotis_faq_en&wr_id=46&sca=GENERAL)
+
 # Where can I download the drawings for ROBOTIS products?
 Please refer to [the page.](http://en.robotis.com/model/board.php?bo_table=robotis_faq_en&wr_id=35&sca=GENERAL)
 

@@ -1153,12 +1153,7 @@ In order to download the task code to the controller, it must go through a gramm
 ## [FAQ](#faq)
 
 1. Supported Products?
-  > ROBOTIS DREAM  
-  > ROBOTIS STEM  
-  > ROBOTIS PREMIUM  
-  > ROBOTIS GP  
-  > ROBOTIS MINI  
-  > Robots created by the user using CM-150, CM-200, CM-510, CM-530, CM-700, OpenCM9.04C
+  > See [Product Compatibility Guide](/docs/en/parts/controller/controller_compatibility/), and check if your controlelr is compatible with R+Task 2.0
 
 2. Can TSK files that were used in the previous Task 1.0 also be used on Task 2.0?
   > Yes. However, if you load a previous TSK file into Task 2.0 and save it again, it will be converted to a TSKX format so it will no longer be compatible with Task 1.0.
