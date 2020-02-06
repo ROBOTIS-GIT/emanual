@@ -297,130 +297,15 @@ sidebar:
 
 ### [PC에서 예제 다운로드](#pc에서-예제-다운로드)
 
-- CM-550의 Micro USB 포트를 이용하면 PC와 직접 연결하여 태스크(.tsk3) 및 모션(.mtn3) 파일을 업로드 할 수 있습니다.
-- CM-550에 내장된 BLE 슬레이브 모듈과 BT-410 동글을 페어링하면 PC에서 원격으로 예제를 업로드 할 수 있습니다.
-
-1. CM-550에 전원을 연결합니다.
-2. PC의 USB 포트에, BT-410 동글을 연결합니다.
-3. CM-550의 `MODE` 버튼 부분을 BT-410 동글에 가까이 가져가면, 페어링이 완료됩니다.
-4. 로보플러스 태스크 3.0을 실행시킨 후, 왼쪽 하단의 `연결`버튼을 클릭 해주세요.
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_01_kr.png)  
-
-5. BT-410 동글을 사용할 경우 반드시 `Use USB Dongle` 옵션을 선택해주세요.
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_02_kr.png)  
-
-6. 사용할 시리얼 포트를 선택해 주세요.
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_03_kr.png)  
-
-7. 연결 버튼을 클릭하여, PC와 제어기를 연결시켜 주세요.   
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_04_kr.png)  
-
-8. 연결이 성공적으로 완료되면 '삐비빅' 소리가 납니다.  
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_05_kr.png)  
-
-{% capture pairing_01 %}
-**참고** :
-- 첫 페어링시 제어기의 `MODE` 버튼쪽으로 BT-410 동글을 가까이 가져가면 자동으로 페어링됩니다.
-- 페어링이 완료된 후에는 블루투스의 통신거리 이내에서 로봇과 PC가 멀어져도 연결이 유지됩니다.
-- 페어링이 한번 설정되면, 재시작할 때 블루투스의 통신거리 이내에서 자동으로 페어링이 됩니다.  
-{% endcapture %}
-<div class="notice--info">{{ pairing_01 | markdownify}}</div>
-
-#### [태스크 다운로드 (PC)](#태스크-다운로드-pc)
-
-제어기에 태스크(.tsk3)를 다운로드하는 방법입니다.   
-
-1. 제어기와 PC가 연결된 상태에서, 제품에 맞는 태스크 예제를 선택합니다.
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_06.png)  
-
-2. 오른쪽 상단의 `프로그램 다운로드` 버튼을 클릭합니다.
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_07.png)  
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_08.png)  
-
-#### [모션 다운로드 (PC)](#모션-다운로드-pc)
-
-1. 제어기와 PC가 연결된 상태에서, 제품과 예제를 선택합니다.
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_09.png)  
-
-2. 다운로드 하려는 모션 예제를 선택합니다.
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_10.png)  
-
-3. 오른쪽 상단의 `모션 다운로드` 탭을 클릭합니다.
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_11.png)  
-
-4. 모션 다운로드 탭에서는, 모션 그룹을 선택할 수 있습니다. 원하는 모션을 선택하여 제어기에 다운로드하세요.
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_12.png)
+1. [제어기와 PC 연결하기]{: .popup}
+2. [PC에서 태스크 예제 다운로드 하기]{: .popup}
+3. [PC에서 모션 예제 다운로드 하기]{: .popup}
 
 ### [스마트 기기에서 예제 다운로드](#스마트-기기에서-예제-다운로드)
 
-로보플러스 태스크 3.0 앱을 이용하여 제어기에 파일을 업로드 하려면 스마트 기기와 CM-550이 블루투스로 연결되어야 합니다.
-
-1. 로보플러스 태스크 3.0 앱을 스마트 기기에서 실행 후, 이미지에서 빨간색 박스로 표시된 버튼을 클릭해주세요.
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_01.png)  
-
-2. 로봇 연결하기 창이 활성화되면, 이미지에서 빨간색 박스로 표시된 블루투스 검색 버튼을 클릭해주세요.
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_02.png)  
-
-3. 제어기에 표시된 MAC 주소의 마지막 두자리를 확인합니다.  
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_02_1.png)
-
-4. 제어기 MAC 주소의 마지막 두자리 문자를 입력해주세요.
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_03.png)  
-
-5. 검색된 목록 중 제어기의 주소와 일치하는 항목을 선택하여 연결해주세요.
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_04.png)  
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_05.png)  
-
-#### [태스크 다운로드 (스마트 기기)](#태스크-다운로드-스마트-기기)
-
-원격으로 스마트 기기에서 제어기로 태스크 파일(.tsk3)을 업로드할 수 있습니다.  
-
-1. 제어기가 스마트 기기와 연결된 상태에서, 로보플러스 태스크 3앱의 홈 탭에서 **태스크 예제** 를 터치해서 제품을 선택해주세요.
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_06_kr.png)
-
-2. 다운로드 버튼을 터치하면 블루투스 연결을 확인한 다음 제어기에 태스크 파일을 업로드합니다.  
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_07_kr.png)  
-
-
-#### [모션 다운로드 (스마트기기)](#모션-다운로드-스마트기기)
-
-1. 제어기가 스마트 기기에 연결된 상태에서, 홈 탭의 **모션 예제** 를 터치해서 제품을 선택해주세요.
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_08.png)  
-
-2. **예제 선택하기** 창이 활성화되면, 원하는 예제를 선택해주세요.
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_09.png)  
-
-3. 화면 왼쪽 상단의 메뉴 버튼을 선택해주세요.
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_10.png)  
-
-4. 오른쪽 상단의 모션 다운로드 탭을 선택해주세요.
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_11.png)  
-
-5. 오른쪽 하단의 빨간색 `모션 다운로드` 버튼을 누르면, 모션파일을 제어기에 다운로드 할 수 있습니다.
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_12.png)
+1. [제어기와 스마트기기 연결하기]{: .popup}
+2. [스마트기기에서 태스크 예제 다운로드 하기]{: .popup}
+3. [스마트기기에서 모션 예제 다운로드 하기]{: .popup}
 
 ## [예제 실행하기](#예제-실행하기)
 
@@ -938,3 +823,9 @@ CM-550에 내장된 BLE 슬레이브 모듈의 신호의 세기가 약하거나 
 [로보플러스 태스크 2.0]: /docs/kr/software/rplus2/task/
 [로보플러스 모션 2.0]: /docs/kr/software/rplus2/motion/
 [동작 모드]: /docs/kr/parts/controller/cm-550/#동작-모드
+[제어기와 PC 연결하기]: /docs/kr/popup/engineer/connect_controller_pc
+[PC에서 태스크 예제 다운로드 하기]: /docs/kr/popup/engineer/task_download_pc
+[PC에서 모션 예제 다운로드 하기]: /docs/kr/popup/engineer/motion_download_pc
+[제어기와 스마트기기 연결하기]: /docs/kr/popup/engineer/connect_controller_mobile
+[스마트기기에서 태스크 예제 다운로드 하기]: /docs/kr/popup/engineer/task_download_mobile
+[스마트기기에서 모션 예제 다운로드 하기]: /docs/kr/popup/engineer/motion_download_mobile

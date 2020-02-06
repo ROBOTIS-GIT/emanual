@@ -106,7 +106,16 @@ Raspberry Pi는 영국의 라즈베리 파이 재단이 교육 목적으로 개�
 #### [Raspberry Pi Zero W](#raspberry-pi-zero-w)
 키트2에서 사용되는 Raspberry Pi Zero는 기존 라즈베리파이의 기능을 유지하면서 크기와 간격을 줄인 초소형 컴퓨터입니다.
 
-![](/assets/images/edu/engineer/kit2/raspberry_pi_zero.png)
+![](/assets/images/edu/engineer/kit2/raspberry_pi_zero_port.png)
+> 포트 및 기능
+
+- `40 Pin GPIO Port`: 입출력을 담당하는 GPIO(General Purpose Input/Output) 헤더핀입니다. 센서등 외부장치와 통신 및 제어시 사용합니다.
+- `Broadcom BCM2835`: 라즈베리 파이에서 사용되는 프로세서입니다. 
+- `CSI Camera Connector`: 라즈베리파이 카메라 모듈을 연결할수있는 커넥터입니다.
+- `Micro USB 5V Power Input`: 5 V 전원공급 포트입니다.
+- `Micro USB Data Port`: USB 허브와 연결하여, 주변장치 (마우스,키보드등)을 사용할수 있는 포트입니다.
+- `Mini-HDMI 1080P Video & Audio Output`: 모니터 및 오디오 출력을 위한 Mini HDMI 커넥터 입니다.
+- `MicroSD Card`: 제공된 이미지 파일 설치 시, 사용하는 마이크로 카드 슬롯입니다.
 
 #### [Raspberry Pi 카메라](#raspberry-pi-카메라)
 라즈베리파이 카메라는 라즈베리파이와 연결하여 얼굴 및 색상 인식, 라인 감지, 영상 스트리밍 등의 다양한 기능을 수행할 수 있습니다.  
@@ -117,17 +126,13 @@ Raspberry Pi는 영국의 라즈베리 파이 재단이 교육 목적으로 개�
 ![](/assets/images/edu/engineer/kit2/raspberry_pi_cam_02.png)
 > 라즈베리파이와 카메라모듈 연결모습
 
-#### [포트 및 기능](#포트-및-기능)
+**연결방법**
+1. CM-550의 전원을 끄세요.
+2. Raspberry Pi Zero W의 `CSI Camera Connector`에 카메라 모듈을 연결하세요.
+3. 전용 USB 케이블을 사용하여, CM-550를 Raspberry Pi Zero W의 `Micro USB Data Port`에 연결하세요.
 
-![](/assets/images/edu/engineer/kit2/raspberry_pi_zero_port.png)
-
-- `40 Pin GPIO Port`: 입출력을 담당하는 GPIO(General Purpose Input/Output) 헤더핀입니다. 센서등 외부장치와 통신 및 제어시 사용합니다.
-- `Broadcom BCM2835`: 라즈베리 파이에서 사용되는 프로세서입니다. 
-- `CSI Camera Connector`: 라즈베리파이 카메라 모듈을 연결할수있는 커넥터입니다.
-- `Micro USB 5V Power Input`: 5 V 전원공급 포트입니다.
-- `Micro USB Data Port`: USB 허브와 연결하여, 주변장치 (마우스,키보드등)을 사용할수 있는 포트입니다.
-- `Mini-HDMI 1080P Video & Audio Output`: 모니터 및 오디오 출력을 위한 Mini HDMI 커넥터 입니다.
-- `MicroSD Card`: 이미지 파일(라즈비안 등) 설치 시, 사용하는 마이크로 카드 슬롯입니다.
+**주의**: CM-550을 `Micro USB 5V Power Input` 단자에 연결 시, 정상동작 하지 않습니다.
+{: .notice--warning}
 
 #### [CM-550에 장착하기](#Raspberry-Pi-Zero-CM-550-제어기에-장착한-모습)
 다음과 같은 모습으로, 제어기(CM-550)에 장착 시켜주세요.
@@ -268,62 +273,7 @@ Raspberry Pi는 영국의 라즈베리 파이 재단이 교육 목적으로 개�
 # [작동하기](#작동하기)
 
 ## [앱 설치하기](#앱-설치하기)
-
-{% capture app_install %}
-![](/assets/images/edu/engineer/kit1/icon_engineer_48.png)  
-**로보플러스 엔지니어 : [안드로이드 앱 다운로드](https://play.google.com/store/apps/details?id=com.robotis.robotisEngineer)**  
-
-![](/assets/images/edu/engineer/kit1/icon_task_48.png)  
-**로보플러스 태스크 3.0 : [안드로이드 앱 다운로드](https://play.google.com/store/apps/details?id=com.robotis.task3)**  
-**로보플러스 태스크 3.0 : [윈도우용 설치파일 다운로드](http://www.robotis.com/service/download.php?no=1774)**  
-
-**참고** : [인터넷에서 다운로드 받은 앱 설치하기]{: .popup}
-
-[인터넷에서 다운로드 받은 앱 설치하기]: /docs/kr/popup/apk_install
-{% endcapture %}
-<div class="notice--success">{{ app_install | markdownify }}</div>
-
-1. 스마트폰 또는 태블릿에서 `플레이 스토어` 또는 `앱 스토어`를 실행합니다.  
-  ![](/assets/images/edu/engineer/kit1/app_installation_01_kr.png)
-
-2. `플레이 스토어` 또는 `앱 스토어` 검색창에 **로보티즈** 또는 **R+ ENGINEER** 를 입력합니다.  
-  ![](/assets/images/edu/engineer/kit1/app_installation_02_kr.png)
-
-3. 검색된 목록에서 `R+ ENGINEER`를 찾아 `설치`를 선택합니다.  
-  ![](/assets/images/edu/engineer/kit1/app_installation_03_kr.png)
-
-4. 아래와 같은 화면이 나타나면 `동의`를 눌러 설치를 진행합니다.  
-  ![](/assets/images/edu/engineer/kit1/app_installation_04_kr.png)
-
-
-## [블루투스 연결하기](#블루투스-연결하기)
-
-1. CM-550 제어기의 스위치를 눌러 전원을 켭니다.  
-  ![](/assets/images/edu/engineer/kit1/bluetooth_connection_1.png)
-
-2. 제어기의 `MODE` 버튼을 눌러 녹색이 점멸하도록 합니다.  
-  ![](/assets/images/edu/engineer/kit1/bluetooth_connection_2.png)
-
-    **참고** : `MODE` 버튼이 녹색으로 점멸할 경우 태스크 프로그램의 실행을 대기하는 모드입니다.
-    {: .notice--info}
-
-3. 제어기의 `START` 버튼을 누릅니다.  
-  ![](/assets/images/edu/engineer/kit1/bluetooth_connection_3.png)
-
-    **참고** : `MODE` 버튼이 녹색으로 점멸할 때 `START` 버튼을 누르면 `MODE` 버튼이 녹색으로 고정되며 태스크 프로그램이 실행됩니다.
-    {: .notice--info}
-
-4. 스마트 기기에서 `ROBOTIS ENGINEER`앱을 실행하고 화면에 표시된 블루투스 아이콘을 누릅니다.  
-  ![](/assets/images/edu/engineer/kit1/bluetooth_connection_4.png)
-
-5. 제어기에 표시된 MAC 주소의 마지막 두자리를 확인합니다.  
-  ![](/assets/images/edu/engineer/kit1/bluetooth_connection_5.png)
-
-6. 확인한 문자를 왼쪽 상자에 입력한 후 `검색` 을 누릅니다.  
-  ![](/assets/images/edu/engineer/kit1/bluetooth_connection_6_kr.png)
-
-7. 검색된 목록 중 제어기의 주소와 일치하는 항목을 선택하면 블루투스 통신 연결이 완료되고, 로봇이 실행됩니다.  
-  ![](/assets/images/edu/engineer/kit1/bluetooth_connection_7_kr.png)
+- 엔지니어 키트1의 [앱 설치하기](/docs/kr/edu/engineer/kit1/#앱-설치하기)를 따라하세요.  
 
 ## [예제 다운로드](#예제-다운로드)
 - CM-550 제어기에는 최초 출하시 KIT 1 타입에 맞는 프로그램이 기본적으로 다운로드되어 있습니다.  
@@ -345,132 +295,22 @@ Raspberry Pi는 영국의 라즈베리 파이 재단이 교육 목적으로 개�
 {% endcapture %}
 <div class="notice">{{opening_exam | markdownify}}</div>
 
-### [PC에서 예제 다운로드](#pc에서-예제-다운로드)
+### [PC에서 예제 다운로드 하기](#pc에서-예제-다운로드-하기)
 
 - CM-550의 Micro USB 포트를 이용하면 PC와 직접 연결하여 태스크(.tsk3) 및 모션(.mtn3) 파일을 업로드 할 수 있습니다.
 - CM-550에 내장된 BLE 슬레이브 모듈과 BT-410 동글을 페어링하면 PC에서 원격으로 예제를 업로드 할 수 있습니다.
 
-1. CM-550에 전원을 연결합니다.
-2. PC의 USB 포트에, BT-410 동글을 연결합니다.
-3. CM-550의 `MODE` 버튼 부분을 BT-410 동글에 가까이 가져가면, 페어링이 완료됩니다.
-4. 로보플러스 태스크 3.0을 실행시킨 후, 왼쪽 하단의 `연결`버튼을 클릭 해주세요.
+1. [제어기와 PC 연결하기]{: .popup}
+2. [PC에서 태스크 예제 다운로드 하기]{: .popup}
+3. [PC에서 모션 예제 다운로드 하기]{: .popup}
 
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_01_kr.png)  
-
-5. BT-410 동글을 사용할 경우 반드시 `Use USB Dongle` 옵션을 선택해주세요.
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_02_kr.png)  
-
-6. 사용할 시리얼 포트를 선택해 주세요.
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_03_kr.png)  
-
-7. 연결 버튼을 클릭하여, PC와 제어기를 연결시켜 주세요.   
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_04_kr.png)  
-
-8. 연결이 성공적으로 완료되면 '삐비빅' 소리가 납니다.  
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_05_kr.png)  
-
-{% capture pairing_01 %}
-**참고** :
-- 첫 페어링시 제어기의 `MODE` 버튼쪽으로 BT-410 동글을 가까이 가져가면 자동으로 페어링됩니다.
-- 페어링이 완료된 후에는 블루투스의 통신거리 이내에서 로봇과 PC가 멀어져도 연결이 유지됩니다.
-- 페어링이 한번 설정되면, 재시작할 때 블루투스의 통신거리 이내에서 자동으로 페어링이 됩니다.  
-{% endcapture %}
-<div class="notice--info">{{ pairing_01 | markdownify}}</div>
-
-#### [태스크 다운로드 (PC)](#태스크-다운로드-pc)
-
-제어기에 태스크(.tsk3)를 다운로드하는 방법입니다.   
-
-1. 제어기와 PC가 연결된 상태에서, 제품에 맞는 태스크 예제를 선택합니다.
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_06.png)  
-
-2. 오른쪽 상단의 `프로그램 다운로드` 버튼을 클릭합니다.
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_07.png)  
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_08.png)  
-
-#### [모션 다운로드 (PC)](#모션-다운로드-pc)
-
-1. 제어기와 PC가 연결된 상태에서, 제품과 예제를 선택합니다.
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_09.png)  
-
-2. 다운로드 하려는 모션 예제를 선택합니다.
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_10.png)  
-
-3. 오른쪽 상단의 `모션 다운로드` 탭을 클릭합니다.
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_11.png)  
-
-4. 모션 다운로드 탭에서는, 모션 그룹을 선택할 수 있습니다. 원하는 모션을 선택하여 제어기에 다운로드하세요.
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_12.png)
-
-### [스마트 기기에서 예제 다운로드](#스마트-기기에서-예제-다운로드)
+### [스마트 기기에서 예제 다운로드 하기](#스마트-기기에서-예제-다운로드-하기)
 
 로보플러스 태스크 3.0 앱을 이용하여 제어기에 파일을 업로드 하려면 스마트 기기와 CM-550이 블루투스로 연결되어야 합니다.
 
-1. 로보플러스 태스크 3.0 앱을 스마트 기기에서 실행 후, 이미지에서 빨간색 박스로 표시된 버튼을 클릭해주세요.
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_01.png)  
-
-2. 로봇 연결하기 창이 활성화되면, 이미지에서 빨간색 박스로 표시된 블루투스 검색 버튼을 클릭해주세요.
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_02.png)  
-
-3. 제어기에 표시된 MAC 주소의 마지막 두자리를 확인합니다.  
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_02_1.png)
-
-4. 제어기 MAC 주소의 마지막 두자리 문자를 입력해주세요.
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_03.png)  
-
-5. 검색된 목록 중 제어기의 주소와 일치하는 항목을 선택하여 연결해주세요.
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_04.png)  
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_05.png)  
-
-#### [태스크 다운로드 (스마트 기기)](#태스크-다운로드-스마트-기기)
-
-원격으로 스마트 기기에서 제어기로 태스크 파일(.tsk3)을 업로드할 수 있습니다.  
-
-1. 제어기가 스마트 기기와 연결된 상태에서, 로보플러스 태스크 3앱의 홈 탭에서 **태스크 예제** 를 터치해서 제품을 선택해주세요.
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_06_kr.png)
-
-2. 다운로드 버튼을 터치하면 블루투스 연결을 확인한 다음 제어기에 태스크 파일을 업로드합니다.  
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_07_kr.png)  
-
-
-#### [모션 다운로드 (스마트기기)](#모션-다운로드-스마트기기)
-
-1. 제어기가 스마트 기기에 연결된 상태에서, 홈 탭의 **모션 예제** 를 터치해서 제품을 선택해주세요.
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_08.png)  
-
-2. **예제 선택하기** 창이 활성화되면, 원하는 예제를 선택해주세요.
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_09.png)  
-
-3. 화면 왼쪽 상단의 메뉴 버튼을 선택해주세요.
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_10.png)  
-
-4. 오른쪽 상단의 모션 다운로드 탭을 선택해주세요.
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_11.png)  
-
-5. 오른쪽 하단의 빨간색 `모션 다운로드` 버튼을 누르면, 모션파일을 제어기에 다운로드 할 수 있습니다.
-
-    ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_12.png)
+1. [제어기와 스마트기기 연결하기]{: .popup}
+2. [스마트기기에서 태스크 예제 다운로드 하기]{: .popup}
+3. [스마트기기에서 모션 예제 다운로드 하기]{: .popup}
 
 ## [예제 실행하기](#예제-실행하기)
 
@@ -491,6 +331,9 @@ Raspberry Pi는 영국의 라즈베리 파이 재단이 교육 목적으로 개�
 `갤러리에 예제 이미지 표시` : 스마트기기의 갤러리에 예제 이미지를 표시합니다.  
 `미디어 스캔` : 파일이 PC에서 보이지 않을 때 사용하는 기능입니다.  
 `버전 정보` : 현재 앱의 버전을 확인하는 기능입니다.  
+
+## [블루투스 연결하기](#블루투스-연결하기)
+- 엔지니어 키트1의 [블루투스 연결하기](/docs/kr/edu/engineer/kit1/#블루투스-연결하기)를 따라하세요.
 
 ### [Dr.R](#drr)
 
@@ -563,41 +406,6 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
 | ![](/assets/images/edu/engineer/kit1/icon_remote.png) | **REMOTE** : 기본 조종 모드 화면을 불러오는 버튼입니다.            |
 | ![](/assets/images/edu/engineer/kit1/icon_music.png)  | **MUSIC** : 스마트 기기를 통해 로봇과 함께 연주를 하는 기능입니다. |
 |  ![](/assets/images/edu/engineer/kit1/icon_clap.png)  | **CLAP** : 박수소리를 감지하고 감지한 횟수만큼 SPI가 움직입니다.   |
-
-## [로봇 설정하기](#로봇-설정하기)
-
-### [모터 조립확인](#모터-조립확인)
-로보티즈 엔지니어에 사용된 다이나믹셀 ID 확인 및 작동 상태를 체크하는 기능입니다.
-
-1. 각 예제를 선택한 후 메뉴의 옵션에서 `MOTOR`를 선택하여 점검합니다  
-  ![](/assets/images/edu/engineer/kit1/engineer_app_motor.png)
-
-2. 화면에서 ID 번호를 선택하면 선택된 ID의 LED가 켜지고 중심 위치에서 좌우로 조금씩 움직입니다.  
-  ![](/assets/images/edu/engineer/kit1/engineer_app_motor_2.png)
-
-### [모터 오프셋 설정](#모터-오프셋-설정)
-로보티즈 엔지니어에 사용된 다이나믹셀의 자세나 위치 값의 보정이 필요할 때 사용하는 기능입니다.  
-오프셋 기능을 통해 보정된 값은 로봇의 전원을 끄더라도 저장됩니다.  
-오프셋 기능을 숙지한 상태에서 미세하게 조정해야 하며 잘못된 값을 사용시 예제 동작이 잘 안되거나 로봇이 파손될 수 있습니다.
-
-1. 각 예제를 선택한 후 메뉴의 옵션에서 `OFFSET`을 선택합니다.  
-  ![](/assets/images/edu/engineer/kit1/engineer_app_motor_offset.png)
-
-2. 오프셋 값을 보정하려는 ID를 선택하면 아래와 같은 팝업창이 나타납니다.  
-  ![](/assets/images/edu/engineer/kit1/engineer_app_motor_offset_2.png)
-
-    - `+ / -` : ID 값을 증가시키거나 감소시킴  
-    - `Torque On / Off` : 다이나믹셀의 토크를 켜거나 끄기  
-    - `OK / CANCEL` : 오프셋 조정 값을 저장하거나 취소하기
-
-3. `OK`를 눌러 저장하면 아래와 같은 확인 창이 나타납니다. 한 번 더 `OK`를 누르면 값이 저장되고 로봇에 반영됩니다.  
-  ![](/assets/images/edu/engineer/kit1/engineer_app_motor_offset_3.png)
-
-4. 오프셋을 초기화 하거나 저장된 값을 불러오는 기능을 사용할 수 있습니다.  
-    ![](/assets/images/edu/engineer/kit1/engineer_app_motor_offset_4.png)
-
-    - `Reset Offset` : 선택시 팝업창이 나타나며 `OK`를 클릭하면 모든 ID의 오프셋을 `0`으로 초기화 합니다.  
-    - `Initial Pose` : 최근에 저장된 오프셋 값을 불러오는 명령입니다. 관절을 잘못된 값으로 조정하였을 경우 저장된 값을 불러옵니다.
 
 # [튜토리얼](#튜토리얼)
 
@@ -944,6 +752,42 @@ CM-550에 내장된 BLE 슬레이브 모듈의 신호의 세기가 약하거나 
 
     ![](/assets/images/edu/engineer/kit1/BLE_signal_power_15_kr.png)
 
+## [로봇 설정하기](#로봇-설정하기)
+
+### [모터 조립확인](#모터-조립확인)
+로보티즈 엔지니어에 사용된 다이나믹셀 ID 확인 및 작동 상태를 체크하는 기능입니다.
+
+1. 각 예제를 선택한 후 메뉴의 옵션에서 `MOTOR`를 선택하여 점검합니다  
+  ![](/assets/images/edu/engineer/kit1/engineer_app_motor.png)
+
+2. 화면에서 ID 번호를 선택하면 선택된 ID의 LED가 켜지고 중심 위치에서 좌우로 조금씩 움직입니다.  
+  ![](/assets/images/edu/engineer/kit1/engineer_app_motor_2.png)
+
+### [모터 오프셋 설정](#모터-오프셋-설정)
+로보티즈 엔지니어에 사용된 다이나믹셀의 자세나 위치 값의 보정이 필요할 때 사용하는 기능입니다.  
+오프셋 기능을 통해 보정된 값은 로봇의 전원을 끄더라도 저장됩니다.  
+오프셋 기능을 숙지한 상태에서 미세하게 조정해야 하며 잘못된 값을 사용시 예제 동작이 잘 안되거나 로봇이 파손될 수 있습니다.
+
+1. 각 예제를 선택한 후 메뉴의 옵션에서 `OFFSET`을 선택합니다.  
+  ![](/assets/images/edu/engineer/kit1/engineer_app_motor_offset.png)
+
+2. 오프셋 값을 보정하려는 ID를 선택하면 아래와 같은 팝업창이 나타납니다.  
+  ![](/assets/images/edu/engineer/kit1/engineer_app_motor_offset_2.png)
+
+    - `+ / -` : ID 값을 증가시키거나 감소시킴  
+    - `Torque On / Off` : 다이나믹셀의 토크를 켜거나 끄기  
+    - `OK / CANCEL` : 오프셋 조정 값을 저장하거나 취소하기
+
+3. `OK`를 눌러 저장하면 아래와 같은 확인 창이 나타납니다. 한 번 더 `OK`를 누르면 값이 저장되고 로봇에 반영됩니다.  
+  ![](/assets/images/edu/engineer/kit1/engineer_app_motor_offset_3.png)
+
+4. 오프셋을 초기화 하거나 저장된 값을 불러오는 기능을 사용할 수 있습니다.  
+    ![](/assets/images/edu/engineer/kit1/engineer_app_motor_offset_4.png)
+
+    - `Reset Offset` : 선택시 팝업창이 나타나며 `OK`를 클릭하면 모든 ID의 오프셋을 `0`으로 초기화 합니다.  
+    - `Initial Pose` : 최근에 저장된 오프셋 값을 불러오는 명령입니다. 관절을 잘못된 값으로 조정하였을 경우 저장된 값을 불러옵니다.
+
+
 ## [점검 및 자가진단](#점검-및-자가진단)
 
 1. 로봇의 전원이 켜지지 않아요.  
@@ -986,3 +830,9 @@ CM-550에 내장된 BLE 슬레이브 모듈의 신호의 세기가 약하거나 
 [동작 모드]: /docs/kr/parts/controller/cm-550/#동작-모드
 [XL430-W250-T 매뉴얼 바로가기]: /docs/kr/dxl/x/xl430-w250/
 [서보모터 매뉴얼 바로가기]: /docs/kr/parts/motor/servo_motor/ 
+[제어기와 PC 연결하기]: /docs/kr/popup/engineer/connect_controller_pc
+[PC에서 태스크 예제 다운로드 하기]: /docs/kr/popup/engineer/task_download_pc
+[PC에서 모션 예제 다운로드 하기]: /docs/kr/popup/engineer/motion_download_pc
+[제어기와 스마트기기 연결하기]: /docs/kr/popup/engineer/connect_controller_mobile
+[스마트기기에서 태스크 예제 다운로드 하기]: /docs/kr/popup/engineer/task_download_mobile
+[스마트기기에서 모션 예제 다운로드 하기]: /docs/kr/popup/engineer/motion_download_mobile

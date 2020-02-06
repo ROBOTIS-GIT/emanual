@@ -14452,13 +14452,13 @@ kit2:
       urlkr: /edu/engineer/kit2/#예제-다운로드
       children:
       - title: "Download from PC"
-        titlekr: "PC에서 예제 다운로드"
+        titlekr: "PC에서 예제 다운로드 하기"
         url: /edu/engineer/kit2/#download-from-pc
-        urlkr: /edu/engineer/kit2/#pc에서-예제-다운로드
+        urlkr: /edu/engineer/kit2/#pc에서-예제-다운로드-하기
       - title: "Download from Smart Device"
-        titlekr: "스마트 기기에서 예제 다운로드"
+        titlekr: "스마트 기기에서 예제 다운로드 하기"
         url: /edu/engineer/kit2/#download-from-smart-device
-        urlkr: /edu/engineer/kit2/#스마트-기기에서-예제-다운로드
+        urlkr: /edu/engineer/kit2/#스마트-기기에서-예제-다운로드-하기
     - title: "Run Examples"
       titlekr: "예제 실행하기"
       url: /edu/engineer/kit2/#run-examples
@@ -14476,19 +14476,6 @@ kit2:
         titlekr: "SPI"
         url: /edu/engineer/kit2/#spi
         urlkr: /edu/engineer/kit2/#spi
-    - title: "Setting Up the Robot"
-      titlekr: "로봇 설정하기"
-      url: /edu/engineer/kit2/#setting-up-the-robot
-      urlkr: /edu/engineer/kit2/#로봇-설정하기
-      children:
-      - title: "Check DYNAMIXEL Assembly"
-        titlekr: "모터 조립확인"
-        url: /edu/engineer/kit2/#check-dynamixel-assembly
-        urlkr: /edu/engineer/kit2/#모터-조립확인
-      - title: "DYNAMIXEL Offset"
-        titlekr : "모터 오프셋 설정"
-        url: /edu/engineer/kit2/#dynamixel-offset
-        urlkr: /edu/engineer/kit2/#모터-오프셋-설정
   - title: "Tutorials"
     titlekr: "튜토리얼"
     url: /edu/engineer/kit2/#tutorials
@@ -14515,6 +14502,19 @@ kit2:
       titlekr: "제어기 BLE 신호 세기 설정"
       url: /edu/engineer/kit2/#ble-signal-setting
       urlkr: /edu/engineer/kit2/#제어기-ble-신호-세기-설정
+    - title: "Setting Up the Robot"
+      titlekr: "로봇 설정하기"
+      url: /edu/engineer/kit2/#setting-up-the-robot
+      urlkr: /edu/engineer/kit2/#로봇-설정하기
+      children:
+      - title: "Check DYNAMIXEL Assembly"
+        titlekr: "모터 조립확인"
+        url: /edu/engineer/kit2/#check-dynamixel-assembly
+        urlkr: /edu/engineer/kit2/#모터-조립확인
+      - title: "DYNAMIXEL Offset"
+        titlekr : "모터 오프셋 설정"
+        url: /edu/engineer/kit2/#dynamixel-offset
+        urlkr: /edu/engineer/kit2/#모터-오프셋-설정
     - title: "Self Checklist"
       titlekr: "점검 및 자가진단"
       url: /edu/engineer/kit2/#self-checklist
