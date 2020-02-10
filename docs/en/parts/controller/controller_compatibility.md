@@ -107,12 +107,11 @@ sidebar:
 {% endcapture %}
 <div class="notice">{{ notice_01 | markdownify}}</div>
 
-
 ### [R+ 2.0](#r-20)
 
 |      Model       | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[OpenCM 485 EXP]) | [OpenCM7.0] | [OpenCR] |
 |:----------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:----------------------------:|:-----------:|:--------:|
-|  [R+ Task 2.0]   |   O    |    X    |    X     |    O     |    O     |    O     |    O     |    X     |    O     |    X     |             O(X)             |      X      |    X     |
+|  [R+ Task 2.0]   |   O    |    O    |    O     |    O     |    O     |    O     |    O     |    X     |    O     |    X     |             O(X)             |      X      |    X     |
 | [R+ Manager 2.0] |   O    |    X    |    X     |    O     |    O     |    O     |    O     |    X     |    O     |    X     |             O(X)             |      X      |    X     |
 | [R+ Motion 2.0]  |   O    |    X    |    X     |    O     |    O     |    O     |    O     |    X     |    O     |    X     |             O(X)             |      X      |    X     |
 
