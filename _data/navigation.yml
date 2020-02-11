@@ -602,7 +602,7 @@ main:
         titlekr: "적외선 센서(IRSS-10)"
         url: /parts/sensor/irss-10/
       - title: "Distance Sensor(DMS-80)"
-        titlekr: "거리 측정 센서(DMS-80)"
+        titlekr: "절대 거리 센서(DMS-80)"
         url: /parts/sensor/dms-80/
       - title: "Touch Sensor(TS-10)"
         titlekr: "접촉 센서(TS-10)"
@@ -14421,7 +14421,7 @@ kit2:
         url: /edu/engineer/kit2_introduction/#servo-motor
         urlkr: /edu/engineer/kit2_introduction/#서보모터  
       - title: "DMS"
-        titlekr: "DMS"
+        titlekr: "DMS-80"
         url: /edu/engineer/kit2_introduction/#dms
         urlkr: /edu/engineer/kit2_introduction/#dms      
     - title: "Cautions"
