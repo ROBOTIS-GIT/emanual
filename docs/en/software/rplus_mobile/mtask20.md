@@ -434,14 +434,7 @@ Task files written in the PC can be copied into iOS devices.
 
 ## Supported Products?
 
-- [ROBOTIS DREAM]
-- [ROBOTIS SMART]
-- [ROBOTIS STEM]
-- [ROBOTIS PREMIUM]
-- [ROBOTIS GP]
-- [ROBOTIS MINI]
-- [ROBOTIS IoT]
-- Robots created by the user using [CM-150], [CM-200], [CM-510], [CM-530], [CM-700], [OpenCM9.04]
+- See [Product Compatibility Guide](/docs/en/parts/controller/controller_compatibility/), and check if your controlelr is compatible with R+Task 2.0
 
 ## Can TSK files that were used in the previous Task 1.0 also be used on Task 2.0?
 
