@@ -32,7 +32,7 @@ It is recommended to use an identical protocol version for multiple DYNAMIXEL's.
 
 # What is RoboPlus?
 
-RoboPlus (1.0 / 2.0 / 3.0), which is also called R+, is software tool to provide diverse functions, such as programming (R+ Task), motion design(R+ Motion), firmware update/recovery (R+ Manager).
+RoboPlus (1.0 / 2.0 / 3.0), which is also called R+, is software tool to provide diverse features, such as programming (R+ Task), 3D motion design tool (R+ Motion), and product manager tool for a firmware recovery/update and control table (R+ Manager).
 
 **R+ 1.0**
   - [R+ Task](/docs/en/software/rplus/task/)
@@ -51,81 +51,58 @@ RoboPlus (1.0 / 2.0 / 3.0), which is also called R+, is software tool to provide
   
 {% capture rplus3 %}
 **NOTE**: 
-- R+ Task 3.0 is software combined with R+ Task 2.0 (A programming tool) and R+ Motion 2.0 (a tool of creating a robot motion)
-- See [Product Compatibility Guide](/docs/en/parts/controller/controller_compatibility/) to use the appropriate software with your controller.
+- R+ Task 3.0 is software in which R+ Task 2.0 (a programming tool) and R+ Motion 2.0 (3D Motion desgin tool) are integrated.
+- See [Product Compatibility Guide](/docs/en/parts/controller/controller_compatibility/), and choose the right software which is compatible with your controller in use. 
 {% endcapture %}
 <div class="notice">{{ rplus3 | markdownify }}</div>
   
-# What is the difference between R+ Task and R+ Motion?
-
- To use motions in a task code, the motion file must be downloaded.
-
-  - [R+ Task](http://emanual.robotis.com/docs/en/software/rplus1/task/getting_started/#introduction)
-
-  - [R+ Motion](http://emanual.robotis.com/docs/en/software/rplus1/motion/#introduction)
-
-# What is the meaning of error codes when I use "RoboPlus Task" program execution.
-
- [Please refer to the page](http://emanual.robotis.com/docs/en/software/rplus1/task/task_misc/#error-messages)
+# What is the meaning of error codes when I use R+ Task 1.0 
+- See [Error Messages](/docs/en/software/rplus1/task/task_misc/#error-messages).
 
 # What shall I do if the rule check error shows up while I am writing RoboPlus Task code?
+- See [Rule Check](/docs/en/software/rplus1/task/task_misc/#rule-check)
 
- [Please refer to the page](http://emanual.robotis.com/docs/en/software/rplus1/task/task_misc/#rule-check)
-
-# My robots' joints get loose while I make the motions.
-
- DYNAMIXEL's have an [Auto Shutdown function](http://emanual.robotis.com/docs/en/software/rplus1/motion/#dynamixel-auto-shutdown-function). This function prevents DYNAMIXEL's from being damaged.
+# Why joints on the robot in use get loose while I make the motions.
+- See [Auto Shutdown function](http://emanual.robotis.com/docs/en/software/rplus1/motion/#dynamixel-auto-shutdown-function). 
 
 # How can I develop a firmware for the controller by myself using C Language?
-
- For advanced users, Embedded C is offered to develop its own programming.
+- Embedded C can be used to develop its own programming.
 
 | Embeded c                                                                                               | Download                                                                                                      |
 |:--------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------|
 | [CM-510 / 700](http://emanual.robotis.com/docs/en/software/embedded_sdk/embedded_c_cm510/#introduction) | [Downlaod SDK file](http://emanual.robotis.com/docs/en/software/embedded_sdk/embedded_c_cm510/#cm-510-cm-700) |
 | [CM-530](http://emanual.robotis.com/docs/en/software/embedded_sdk/embedded_c_cm530/#introduction)       | [Download SDK file](http://emanual.robotis.com/docs/en/software/embedded_sdk/embedded_c_cm530/#cm-530)        |
 
-# I want to develop a software to communicate with RoboPlus Task code.
+# I want to develop software to communicate with RoboPlus Task code.
+- See [Zigbee SDK.](http://emanual.robotis.com/docs/en/software/embedded_sdk/zigbee_sdk/).
 
-  You can use [Zigbee SDK.](http://emanual.robotis.com/docs/en/software/embedded_sdk/zigbee_sdk/)
+# I want to use DYNAMIXEL with an development environment.
+- [DYNAMIXEL SDK] is a standard programming library to develop S/W controls DYNAMIXEL.
 
-# I want to control DYNAMIXEL with PC development environment such as Visual Studio.
-
-  [DYNAMIXEL SDK] is a standard programming library to develop S/W controls DYNAMIXEL.
-
-# I want to communicate with multiple Zigbees simultaneously.
-
-  [1:N  Communication](http://emanual.robotis.com/docs/en/parts/communication/zig-110/#11-communication)
-
-  [N:N Communication](http://emanual.robotis.com/docs/en/parts/communication/zig-110/#1n-communication)
+# How to use multiple Zigbees communication?
+- [1:N Communication](/docs/en/parts/communication/zig-110/#11-communication).
+- [N:N Communication](/docs/en/parts/communication/zig-110/#1n-communication).
 
 # Are ROBOTIS products RoHS compliant?
-Please refer to [the page.](http://en.robotis.com/model/board.php?bo_table=robotis_faq_en&wr_id=46&sca=GENERAL)
+- See [Are ROBOTIS products ROHS compliant?](http://en.robotis.com/model/board.php?bo_table=robotis_faq_en&wr_id=46&sca=GENERAL).
 
 # Where can I download the drawings for ROBOTIS products?
-Please refer to [the page.](http://en.robotis.com/model/board.php?bo_table=robotis_faq_en&wr_id=35&sca=GENERAL)
+- See [Download Center](http://en.robotis.com/service/downloadpage.php?ca_id=70)
+- A most product manual provides drawings for frame parts, a controller. See its own product e-manual, and download the drawings.
 
 # What is stall torque?
-Please refer to [the page.](http://en.robotis.com/model/board.php?bo_table=robotis_faq_en&wr_id=34&sca=GENERAL)
+- See [What is stall torque?](http://en.robotis.com/model/board.php?bo_table=robotis_faq_en&wr_id=34&sca=GENERAL).
 
 # What is the difference between normal horns and thrust horns?
- Please refer to [the page.](http://en.robotis.com/model/board.php?bo_table=robotis_faq_en&wr_id=32&sca=GENERAL)
+- See [What is the difference between normal horns and thrust horns?](http://en.robotis.com/model/board.php?bo_table=robotis_faq_en&wr_id=32&sca=GENERAL).
 
 # How much is N.m when converted to kgf.cm?
- Please refer to [the page.](http://en.robotis.com/model/board.php?bo_table=robotis_faq_en&wr_id=33&sca=GENERAL)
+- See [How much is N.m when converted to kgf.cm?](http://en.robotis.com/model/board.php?bo_table=robotis_faq_en&wr_id=33&sca=GENERAL).
 
 # I want to check the controller and dynamixel.
-
-  [Selfcheck](http://en.robotis.com/model/selfcheck.php) is offered
+- See [Selfcheck](http://en.robotis.com/model/selfcheck.php).
 
 # Software installation for OS X fails with a security warning.
-
-## Minimum System Requirements
-
-  OS : Mac OS X 10.5 or higher
-  Hardware : Release after October 2007 (64bit)
-
-## Software installation for OS X fails with a security warning.
 - See [Change System Preferences]{: .popup} 
 
 # How to install USB driver for Windows?
