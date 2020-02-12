@@ -208,7 +208,7 @@ $ sudo apt-get install ros-kinetic-image-transport ros-kinetic-cv-bridge ros-kin
 
 #### [Tutorials: 4.4. Settings for Recognition](#tutorials-44-settings-for-recognition)
 
-    Until now, all the preprocess of image must have been tested.
+Until now, all the preprocess of image must have been tested.
 
 1. `Remote PC` Open new terminal, then enter
 
@@ -308,7 +308,7 @@ $ sudo apt-get install ros-kinetic-image-transport ros-kinetic-cv-bridge ros-kin
 
     then, click `/camera/image_compensated` topic in the select box. If everything works fine, the screen should show you the view from the robot.
 
-4. `Remote PC` Take the picture by `alt` + `print screen`, edit the captured with your preferred photo editor. After that, place the picture to `[where the turtlebot3_autorace package you've placed]/turtlebot3_autorace/turtlebot3_autorace_detect/file/detect_sign/` and rename it as you want. (Although, you should change the file name written in the source `detect_sign.py`, if you want to change the default file names.)
+4. `Remote PC` Take the picture by `alt` + `print screen`, edit the captured with your preferred photo editor. After that, place the picture to where the turtlebot3_autorace package you've placed `/turtlebot3_autorace/turtlebot3_autorace_detect/file/detect_sign/` and rename it as you want. (Although, you should change the file name written in the source `detect_sign.py`, if you want to change the default file names.)
 
 5. `Remote PC` Open new terminal, then enter
 
