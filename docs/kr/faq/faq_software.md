@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/kr/faq/faq_software/
 sidebar:
-  title: FAQ Software
+  title: FAQ 소프트웨어
   nav: "faq_software"
 ---
 

@@ -2,9 +2,22 @@
 layout: popup
 ---
 
-# [Windows Driver Installation](#windows-driver-installation)
+# [Windoes Driver Installation](#windows-driver-installation)
 
-This step-by-step instruction describes how to install a driver on your system (Windows 8/10).  
+This step-by-step instruction describes how to install a driver (ROBOTIS Virtual COM Port) on your system (Windows 8/10).  
+
+**Supported Controllers**:  
+
+| Model                  | CM-5 | CM-50 | CM-100 | CM-150 | CM-200 | CM-510 | CM-530 | CM-550 | CM-700 | CM-900 | OpenCM9.04+[485 EXP] | OpenCM7.0 | OpenCR |
+|:-----------------------|:----:|:-----:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:--------------------:|:---------:|:------:|
+| ROBOTIS Virtual Driver |  O   |   O   |   O    |   X    |   O    |   O    |   X    |   O    |   O    |   O    |          X           |     X     |   O    |
+
+{% capture supported_controller %}
+**NOTE**: If your controller does not support the provided driver, use either of following ways.  
+    1. Download a driver from the product manual.  
+    2. If your product manual does not provide a driver information, use FTDI driver solution.
+{% endcapture %}
+<div class="notice">{{ supported_controller | markdownify }}</div>
 
 ## [Download a driver](#download-a-driver)
 Download the driver from the given link, and extract the zipped folder.
@@ -52,7 +65,7 @@ Use either of ways to install it.
 
 If you use Windows Server(2003 or 2008) or your system does not detect COM port, try the following instruction. 
 
-1. [Download a Driver](#download-a-driver)
+1. [Download a driver](#download-a-driver)
 
 2. [Connect your controller to a PC](#connect-your-controller-to-a-pc)
 

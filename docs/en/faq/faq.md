@@ -12,10 +12,10 @@ sidebar:
 ---
 
 # What Software, DYNAMIXEL and Parts are compatible with my own controller?
-- See [Product Compatibility Guide](/docs/en/parts/controller/controller_compatibility/)
+- See [Product Compatibility Guide](/docs/en/parts/controller/controller_compatibility/).
 
 # How to download Task Code to my controller? 
-- See [Download Task Code](/docs/en/faq/download_task_code/)
+- See [Download Task Code](/docs/en/faq/download_task_code/).
 
 # [Task Rule Check](/docs/en/software/rplus1/task/task_misc/#rule-check)
 
@@ -60,7 +60,7 @@ RoboPlus (1.0 / 2.0 / 3.0), which is also called R+, is software tool to provide
 - See [Error Messages](/docs/en/software/rplus1/task/task_misc/#error-messages).
 
 # What shall I do if the rule check error shows up while I am writing RoboPlus Task code?
-- See [Rule Check](/docs/en/software/rplus1/task/task_misc/#rule-check)
+- See [Rule Check](/docs/en/software/rplus1/task/task_misc/#rule-check).
 
 # Why joints on the robot in use get loose while I make the motions.
 - See [Auto Shutdown function](http://emanual.robotis.com/docs/en/software/rplus1/motion/#dynamixel-auto-shutdown-function). 
@@ -84,7 +84,7 @@ RoboPlus (1.0 / 2.0 / 3.0), which is also called R+, is software tool to provide
 - [N:N Communication](/docs/en/parts/communication/zig-110/#1n-communication).
 
 # Are ROBOTIS products RoHS compliant?
-- See [Are ROBOTIS products ROHS compliant?](http://en.robotis.com/model/board.php?bo_table=robotis_faq_en&wr_id=46&sca=GENERAL).
+- See [Are ROBOTIS products ROHS compliant?](http://en.robotis.com/model/board.php?bo_table=robotis_faq_en&wr_id=46&sca=GENERAL)
 
 # Where can I download the drawings for ROBOTIS products?
 - See [Download Center](http://en.robotis.com/service/downloadpage.php?ca_id=70)
@@ -94,21 +94,21 @@ RoboPlus (1.0 / 2.0 / 3.0), which is also called R+, is software tool to provide
 - See [What is stall torque?](http://en.robotis.com/model/board.php?bo_table=robotis_faq_en&wr_id=34&sca=GENERAL).
 
 # What is the difference between normal horns and thrust horns?
-- See [What is the difference between normal horns and thrust horns?](http://en.robotis.com/model/board.php?bo_table=robotis_faq_en&wr_id=32&sca=GENERAL).
+- See [What is the difference between normal horns and thrust horns?](http://en.robotis.com/model/board.php?bo_table=robotis_faq_en&wr_id=32&sca=GENERAL)
 
 # How much is N.m when converted to kgf.cm?
-- See [How much is N.m when converted to kgf.cm?](http://en.robotis.com/model/board.php?bo_table=robotis_faq_en&wr_id=33&sca=GENERAL).
+- See [How much is N.m when converted to kgf.cm?](http://en.robotis.com/model/board.php?bo_table=robotis_faq_en&wr_id=33&sca=GENERAL)
 
 # I want to check the controller and dynamixel.
 - See [Selfcheck](http://en.robotis.com/model/selfcheck.php).
 
 # Software installation for OS X fails with a security warning.
-- See [Change System Preferences]{: .popup} 
+- See [Change System Preferences]{: .popup}.
 
 # How to install USB driver for Windows?
-- See [Windows Driver Installation]{: .popup} 
+- See [How to install ROBOTIS virtual COM port for Windows]{: .popup}. 
 
-[Windows Driver Installation]: /docs/en/popup/usb_driver_install/
+[How to install ROBOTIS virtual COM port for Windows]: /docs/en/popup/usb_driver_install/
 [Change System Preferences]: /docs/en/popup/general/change_system_preference_osx/
 [DYNAMIXEL SDK]: /docs/en/software/dynamixel/dynamixel_sdk/overview/
 [Protocol 1.0]: /docs/en/dxl/protocol1/
