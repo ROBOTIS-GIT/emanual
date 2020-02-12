@@ -7,8 +7,11 @@ share: true
 author_profile: false
 permalink: /docs/kr/faq/faq_platform/
 sidebar:
-  title: FAQ Platform
+  title: FAQ 플랫폼
   nav: "faq_platform"
 ---
 
-# Platform FAQs
+# FAQ
+
+준비중입니다.
+{: .notice}
