@@ -8,15 +8,14 @@ layout: popup
 
 | 모델                   | CM-5 | CM-50 | CM-100 | CM-150 | CM-200 | CM-510 | CM-530 | CM-550 | CM-700 | CM-900 | OpenCM9.04+[485 EXP] | OpenCM7.0 | OpenCR 1.0 |
 |:-----------------------|:----:|:-----:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:--------------------:|:---------:|:----------:|
-| ROBOTIS Virtual Driver |  O   |   O   |   O    |   X    |   O    |   O    |   X    |   X    |   O    |   O    |          X           |     X     |     X      |
+| ROBOTIS Virtual Driver |  X   |   X   |   X    |   O    |   X    |   X    |   O    |   O    |   X    |   X    |          O           |     O     |     X      |
 
 {% capture supported_controller %}
-**참고**: 만일, 사용중인 제어기가 제공된 드라이버와 호환되지 않을시, 다음 중 하나를 참조하세요.
-    1. 사용중인 제어기의 e-Manual에서 드라이버 정보를 찾으세요. OpenCR은 ST 드라이버를 지원합니다.  
+**참고**: 만일, 사용중인 제어기가 제공된 드라이버와 호환되지 않을시, 다음 중 하나를 참조하세요.  
+    1. 사용중인 제어기의 e-Manual에서 드라이버 정보를 찾으세요. OpenCR은 ST 드라이버를 지원합니다.   
     2. e-Manual에서 드라이버 정보를 찾을수 없을경우, FTDI 드라이버 설치를 진행 하세요.
 {% endcapture %}
 <div class="notice">{{ supported_controller | markdownify }}</div>
-
 
 - `다운로드` [Robotis_CDC_drv.zip](http://support.robotis.com/ko/baggage_files/opencm/robotis_cdc_drv.zip)  
   Windows XP, Vista, 7, 8, 8.1 (32비트 및 64비트 지원, 단 서버군 제외)
