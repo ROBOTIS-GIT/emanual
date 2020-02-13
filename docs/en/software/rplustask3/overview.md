@@ -73,6 +73,9 @@ The Motion files are not backward compatible, but lower version files can be con
 - [Android App](https://play.google.com/store/apps/details?id=com.robotis.task3)
 - [iOS](https://apps.apple.com/us/app/r-task3-0/id1482356873)
 
+**WARNING**: Using R+ Task 3.0 with a table PC is not currently available due to resolution issues. It will be fixed in the near future. Please use R+ Task 3.0 with a smart phone or PC. 
+{: .notice--warning}
+
 ## [Menu Descriptions](#menu-descriptions)
 
 1. Home Tab  

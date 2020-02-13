@@ -54,6 +54,9 @@ page_number: 1
 - [안드로이드 앱](https://play.google.com/store/apps/details?id=com.robotis.task3)
 - [iOS 앱](https://apps.apple.com/kr/app/r-task3-0/id1482356873)
 
+**경고**: 현재 태블릿 PC에서는 R+ Task 3.0을 사용 할수 없습니다. 스마트폰을 이용해주세요.
+{: .notice--warning}
+
 ## [메뉴 설명](#메뉴-설명)
 
 1. 홈 탭  

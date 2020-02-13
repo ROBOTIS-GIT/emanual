@@ -10,7 +10,7 @@ This step-by-step instruction describes how to install a driver (ROBOTIS Virtual
 
 | Model                  | CM-5 | CM-50 | CM-100 | CM-150 | CM-200 | CM-510 | CM-530 | CM-550 | CM-700 | CM-900 | OpenCM9.04+[485 EXP] | OpenCM7.0 | OpenCR |
 |:-----------------------|:----:|:-----:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:--------------------:|:---------:|:------:|
-| ROBOTIS Virtual Driver |  O   |   O   |   O    |   X    |   O    |   O    |   X    |   O    |   O    |   O    |          X           |     X     |   O    |
+| ROBOTIS Virtual Driver |  X   |   X   |   X    |   O    |   X    |   X    |   O    |   O    |   X    |   X    |          O           |     O     |     X      |
 
 {% capture supported_controller %}
 **NOTE**: If your controller does not support the provided driver, use either of following ways.  
