@@ -72,6 +72,9 @@ $ pip3 install keras==2.1.5
 ``` bash
 $ cd ~/robotis_ws/src/
 $ git clone https://github.com/ROBOTIS-GIT/turtlebot3_machine_learning.git
+$ cd ~/robotis_ws/src/turtlebot3_machine_learning/
+$ git checkout ros2-devel
+$ cd ~/robotis_ws/
 $ cd ~/robotis_ws && colcon build --symlink-install
 ```
 
