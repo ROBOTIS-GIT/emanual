@@ -471,6 +471,66 @@ xh540-w270:
   material:           *material
   standbycurrent:     *standbycurrent_40
 
+xw540-t150:
+  mcu:                *mcu
+  encoder:            *encoder
+  motor:              *motor
+  baudrate:           *baudrate
+  control:            *control
+  resolution:         *resolution
+  backlash:           *backlash_x
+  mode:               *mode
+  mode_en:            *mode_en
+  weight:             *weight_540
+  dimensions:         *dimension_540
+  gearratio:          "152.3 : 1"
+  stalltorque:        "6.6 [N.m] (at 11.1 [V], 4.5 [A])<br />7.1 [N.m] (at 12.0 [V], 4.9 [A])<br />8.5 [N.m] (at 14.8 [V], 5.9 [A])"
+  noloadspeed:        "66 [rev/min] (at 11.1 [V]<br />70 [rev/min] (at 12.0 [V]<br />86 [rev/min] (at 14.8 [V])"
+  radialload:         *radialload
+  radialload_en:      *radialload_en
+  axialload:          *axialload
+  temperature:        *temperature
+  ip:                 "IP 67"
+  voltage:            *voltage_12
+  voltage_en:         *voltage_12_en
+  command:            *command
+  protocoltype:       *rs485_ttl
+  physicalconnection: *rs485_ttl_conn
+  id:                 *id
+  feedback:           *feedback
+  material:           *material
+  standbycurrent:     *standbycurrent_40
+
+xw540-t270:
+  mcu:                *mcu
+  encoder:            *encoder
+  motor:              *motor
+  baudrate:           *baudrate
+  control:            *control
+  resolution:         *resolution
+  backlash:           *backlash_x
+  mode:               *mode
+  mode_en:            *mode_en
+  weight:             *weight_540
+  dimensions:         *dimension_540
+  gearratio:          "272.5 : 1"
+  stalltorque:        "9.2 [N.m] (at 11.1 [V], 4.5 [A])<br />**9.9 [N.m] (at 12.0 [V], 4.9 [A])**<br />11.7 [N.m] (at 14.8 [V], 5.9 [A])"
+  noloadspeed:        "36 [rev/min] (at 11.1 [V])<br />**39 [rev/min] (at 12.0 [V])**<br />46 [rev/min] (at 14.8 [V])"
+  radialload:         *radialload
+  radialload_en:      *radialload_en
+  axialload:          *axialload
+  temperature:        *temperature
+  ip:                 "IP 67"  
+  voltage:            *voltage_12
+  voltage_en:         *voltage_12_en
+  command:            *command
+  protocoltype:       *rs485_ttl
+  physicalconnection: *rs485_ttl_conn
+  id:                 *id
+  feedback:           *feedback
+  material:           *material
+  standbycurrent:     *standbycurrent_40
+
 xm540-w150:
   mcu:                *mcu
   encoder:            *encoder
