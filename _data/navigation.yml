@@ -15877,31 +15877,25 @@ turtlebot3:
   - title: "[ROS] Autonomous Driving"
     url: /platform/turtlebot3/autonomous_driving/#autonomous-driving
     children:
-    - title: "TurtleBot3 Auto"
-      url: /platform/turtlebot3/autonomous_driving/#turtlebot3-autorace
-    - title: "TurtleBot3 AutoRace Tutorials"
-      url: /platform/turtlebot3/autonomous_driving/#turtlebot3-autorace-tutorials
+    - title: "Autonomous Driving"
+      url: /platform/turtlebot3/autonomous_driving/#autonomous-driving
       children:
-      - title: "Tutorials: 1. Requirements"
-        url: /platform/turtlebot3/autonomous_driving/#tutorials-1-requirements
-      - title: "Tutorials: 2. Install AutoRace Package"
-        url: /platform/turtlebot3/autonomous_driving/#tutorials-2-install-autorace-package
-      - title: "Tutorials: 3. Install Additional Dependent Packages"
-        url: /platform/turtlebot3/autonomous_driving/#tutorials-3-install-additional-dependent-packages
-      - title: "Tutorials: 4. Calibration"
-        url: /platform/turtlebot3/autonomous_driving/#tutorials-4-calibration
-      - title: "Tutorials: 5. Missions"
-        url: /platform/turtlebot3/autonomous_driving/#tutorials-5-missions
-      - title: "Tutorials: 6. Run Autonomous Driving"
-        url: /platform/turtlebot3/autonomous_driving/#tutorials-6-run-autonomous-driving
+      - title: "Autonomous Driving"
+        url: /platform/turtlebot3/autonomous_driving/#autonomous-driving
+      - title: "Autonomous Driving"
+        url: /platform/turtlebot3/autonomous_driving/#autonomous-driving
+      - title: "Autonomous Driving"
+        url: /platform/turtlebot3/autonomous_driving/#autonomous-driving        
+    - title: "TurtleBot3 AutoRace"
+      url: /platform/turtlebot3/autonomous_driving/#turtlebot3-autorace
     - title: "TurtleBot3 AutoRace Online Competition"
-      url: /platform/turtlebot3/autonomous_driving/#turtlebot3-autorace-online-competition
+      url: /platform/turtlebot3/autonomous_driving/online_competition
     - title: "AutoRace RBIZ Challenge 2017"
-      url: /platform/turtlebot3/autonomous_driving/#autorace-rbiz-challenge-2017
+      url: /platform/turtlebot3/autonomous_driving/autorace_rviz_challenge/#autorace-rbiz-challenge-2017
     - title: "AutoRace RBIZ Challenge 2018"
-      url: /platform/turtlebot3/autonomous_driving/#autorace-rbiz-challenge-2018
+      url: /platform/turtlebot3/autonomous_driving/autorace_rviz_challenge/#autorace-rbiz-challenge-2018
     - title: "AutoRace with Gazebo"
-      url: /platform/turtlebot3/autonomous_driving/#autorace-with-gazebo
+      url: /docs/en/platform/turtlebot3/autonomous_driving/autorace_gazenbo/#autorace-with-gazebo
   - title: "[ROS] Machine Learning"
     url: /platform/turtlebot3/machine_learning/#machine-learning
     children:
