@@ -35,7 +35,7 @@ Normal/Reverse Mode는 관절모드와 다중회전 모드에서만 사용가능
 {% else %}{% endif %}
 
 
-{% if page.product_group=='dxl_x540' or page.product_group=='dxl_ex' or page.ref=='mx-106-2' or page.ref=='mx-106' %}
+{% if page.ref!='xw540-t150' and page.ref!='xw540-t270' and page.product_group=='dxl_x540' or page.product_group=='dxl_ex' or page.ref=='mx-106-2' or page.ref=='mx-106' %}
 #### 듀얼 모드
 2개의 다이나믹셀을 결합해서 더욱 강력한 1개의 관절로 제어하기 위한 방법입니다.  
 동기화된 관절을 사용하려면 마스터 모드로 설정된 다이나믹셀과 슬레이브 모드로 설정된 다이나믹셀이 동기화 케이블로 연결되어야 합니다.  

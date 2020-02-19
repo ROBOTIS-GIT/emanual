@@ -37,7 +37,7 @@ Please refer to [CW/CCW Angle Limit](#cwccw-angle-limit6-8) for configuring Oper
 <div class="notice--warning">{{ drivemode | markdownify }}</div>
 {% else %}{% endif %}
 
-{% if page.product_group=='dxl_x540' or page.product_group=='dxl_ex' or page.ref=='mx-106-2' or page.ref=='mx-106' %}
+{% if page.ref!='xw540-t150' and page.ref!='xw540-t270' and page.product_group=='dxl_x540' or page.product_group=='dxl_ex' or page.ref=='mx-106-2' or page.ref=='mx-106' %}
 #### Dual Mode
 Dual Mode is intended to combine two DYNAMIXEL into a single joint to enhance the performance.  
 In order to use Dual Mode, Slave DYNAMIXEL should be connected to Master DYNAMIXEL with the Sync Cable.  

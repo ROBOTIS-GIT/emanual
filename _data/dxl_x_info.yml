@@ -481,8 +481,8 @@ xw540-t150:
   backlash:           *backlash_x
   mode:               *mode
   mode_en:            *mode_en
-  weight:             *weight_540
-  dimensions:         *dimension_540
+  weight:             "185 g"
+  dimensions:         "33.5 x 58.5 x 45.9 mm"
   gearratio:          "152.3 : 1"
   stalltorque:        "6.6 [N.m] (at 11.1 [V], 4.5 [A])<br />7.1 [N.m] (at 12.0 [V], 4.9 [A])<br />8.5 [N.m] (at 14.8 [V], 5.9 [A])"
   noloadspeed:        "66 [rev/min] (at 11.1 [V]<br />70 [rev/min] (at 12.0 [V]<br />86 [rev/min] (at 14.8 [V])"
@@ -490,7 +490,7 @@ xw540-t150:
   radialload_en:      *radialload_en
   axialload:          *axialload
   temperature:        *temperature
-  ip:                 "IP 67"
+  # ip:                 "IP 67"
   voltage:            *voltage_12
   voltage_en:         *voltage_12_en
   command:            *command
@@ -511,8 +511,8 @@ xw540-t270:
   backlash:           *backlash_x
   mode:               *mode
   mode_en:            *mode_en
-  weight:             *weight_540
-  dimensions:         *dimension_540
+  weight:             "185 g"
+  dimensions:         "33.5 x 58.5 x 45.9 mm"
   gearratio:          "272.5 : 1"
   stalltorque:        "9.2 [N.m] (at 11.1 [V], 4.5 [A])<br />**9.9 [N.m] (at 12.0 [V], 4.9 [A])**<br />11.7 [N.m] (at 14.8 [V], 5.9 [A])"
   noloadspeed:        "36 [rev/min] (at 11.1 [V])<br />**39 [rev/min] (at 12.0 [V])**<br />46 [rev/min] (at 14.8 [V])"
@@ -520,7 +520,7 @@ xw540-t270:
   radialload_en:      *radialload_en
   axialload:          *axialload
   temperature:        *temperature
-  ip:                 "IP 67"  
+  # ip:                 "IP 67"  
   voltage:            *voltage_12
   voltage_en:         *voltage_12_en
   command:            *command

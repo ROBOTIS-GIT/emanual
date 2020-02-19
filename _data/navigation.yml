@@ -7267,9 +7267,6 @@ xw540-t150:
         - title: "Present Temperature(146)"
           titlekr: "Present Temperature(146)"
           url: /dxl/x/xw540-t150/#present-temperature146
-        - title: "External Port Data 1,2,3"
-          titlekr: "External Port Data 1,2,3"
-          url: /dxl/x/xw540-t150/#external-port-data-123
         - title: "Indirect Address"
           titlekr: "Indirect Address"
           url: /dxl/x/xw540-t150/#indirect-address
@@ -7509,9 +7506,6 @@ xw540-t270:
         - title: "Present Temperature(146)"
           titlekr: "Present Temperature(146)"
           url: /dxl/x/xw540-t270/#present-temperature146
-        - title: "External Port Data 1,2,3"
-          titlekr: "External Port Data 1,2,3"
-          url: /dxl/x/xw540-t270/#external-port-data-123
         - title: "Indirect Address"
           titlekr: "Indirect Address"
           url: /dxl/x/xw540-t270/#indirect-address
