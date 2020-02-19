@@ -34,7 +34,7 @@ Go to `robotis workspace` directory (/home/(user_name)/robotis_ws/src) and clone
 2. Run the following commands.
 ``` bash
 $ cd ~/robotis_ws/src
-$ git clone https://github.com/ROBOTIS-GIT/turtlebot3_applications.git
+$ git clone -b ros2 https://github.com/ROBOTIS-GIT/turtlebot3_applications.git
 $ cd ~/robotis_ws && colcon build --symlink-install
 ```
 
