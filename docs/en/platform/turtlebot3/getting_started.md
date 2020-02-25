@@ -26,8 +26,8 @@ First of all, collect information from the [Overview][overview], [Notices][notic
 ## [First steps for using TurtleBot3](#first-steps-for-using-turtlebot3)
 When you have enough understanding about TurtleBot3 from above step, here are the software and hardware setups. Be aware that it is a time-saver to set up the SBC and your PC first, rather than assembling the robot. It is recommended to proceed in the following order.
 
-1. [PC Setup][pc_setup]: Install Linux, ROS and application software for TurtleBot3 on your **Remote PC**.
-2. [SBC Setup][sbc_setup]: Install Linux, ROS and hardware related software to control the TurtleBot3 on your **TurtleBot PC**.
+1. [PC Setup][pc_setup]: Install Linux or Windows, ROS and application software for TurtleBot3 on your **Remote PC**.
+2. [SBC Setup][sbc_setup]: Install Linux or Windows, ROS and hardware related software to control the TurtleBot3 on your **TurtleBot PC**.
 3. [OpenCR Setup][opencr_setup]: Upload latest firmware of TurtleBot3 to OpenCR embedded board.
 4. [Hardware Setup][hardware_setup]: TurtleBots3 is delivered as unassembled parts in the box. Follow the instructions to assemble TurtleBot3. Prepared SBC and OpenCR will be mounted on the robot.
 
