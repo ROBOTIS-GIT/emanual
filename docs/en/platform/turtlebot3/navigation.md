@@ -15,7 +15,7 @@ page_number: 21
 
 <div style="counter-reset: h1 9"></div>
 
-# [Navigation](#navigation)
+# [[ROS 1] Navigation](#ros1-navigation)
 
 **WARNING**: Be careful when running the robot on the table as the robot might fall.
 {: .notice--warning}

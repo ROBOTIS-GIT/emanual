@@ -15,16 +15,16 @@ page_number: 31
 
 <div style="counter-reset: h1 19"></div>
 
-# [Navigation2](#navigation2)
+# [[ROS 2] Navigation2](#ros-2-navigation2)
 
 **WARNING**: Be careful when running the robot on the table as the robot might fall.
 {: .notice--warning}
 
 {% capture notice_01 %}
 **NOTE**: 
-- This instructions were tested on `Ubuntu 18.04` and `ROS2 Dashing Diademata`.
-- Make sure to run the [ROS2 Bringup](/docs/en/platform/turtlebot3/ros2_bringup/#bringup) instructions before running this instructions.
-- The navigation uses the a data created in [ROS2 SLAM](/docs/en/platform/turtlebot3/ros2_slam/#slam). Please make sure to have a map data.
+- This instructions were tested on `Ubuntu 18.04` and `ROS Dashing Diademata`.
+- Make sure to run the [Bringup](/docs/en/platform/turtlebot3/ros2_bringup/#bringup) instructions before running this instructions.
+- The navigation uses the a data created in [SLAM](/docs/en/platform/turtlebot3/ros2_slam/#slam). Please make sure to have a map data.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -220,8 +220,8 @@ _**sim_time**_
 - [Navigation]
 
 [export_turtlebot3_model]: /docs/en/platform/turtlebot3/export_turtlebot3_model
-[ROS2 Bringup]: /docs/en/platform/turtlebot3/ros2_bringup/#bringup
-[ROS2 SLAM]: /docs/en/platform/turtlebot3/ros2_slam/#slam
+[Bringup]: /docs/en/platform/turtlebot3/ros2_bringup/#bringup
+[SLAM]: /docs/en/platform/turtlebot3/ros2_slam/#slam
 
 [Basic Navigation Tuning Guide (ROS Wiki)]: http://wiki.ros.org/navigation/Tutorials/Navigation%20Tuning%20Guide
 [ROS Navigation Tuning Guide by Kaiyu Zheng]: http://kaiyuzheng.me/documents/navguide.pdf

@@ -15,7 +15,7 @@ page_number: 24
 
 <div style="counter-reset: h1 12"></div>
 
-# [Autonomous Driving](#autonomous-driving)
+# [[ROS 1] Autonomous Driving](#ros-1-autonomous-driving)
 
 {% capture notice_01 %}
 **NOTE**: This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
@@ -74,99 +74,117 @@ $ sudo apt-get install ros-kinetic-image-transport ros-kinetic-cv-bridge ros-kin
 
 #### [Camera Imaging Calibration](#camera-imaging-calibration)
 
-1. Open terminal and use the following command on `Remote PC`.
+1. Lanuch roscore on `Remote PC`.
 ``` bash
 $ roscore
 ```
 
-2. Open termial and use the following command on `Remote PC`.
+2. Trigger the camera on `SBC`
 ``` bash
-$ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_camera_pi.launch
+$ roslaunch turtlebot3_autorace_${Autorace_Misson}_camera turtlebot3_autorace_camera_pi.launch
 ```
 
-2. Open a new termial and use the following command on `Remote PC`.
+    **WARNING**: Be sure to specify `${Autorace_Misson}` **(i.e, roslaunch turtlebot3_autorace_traffic_light_camera turtlebot3_autorace_camera_pi.launch)**
+    {: .notice--warning}
+
+3. Execute rqt_image_view on `Remote PC`.
 ``` bash
 $ rqt_image_view
 ```
 
-3. Click **/camera/image/compressed** (or **/camera/image/**) topic on the check box.
+4. Click **/camera/image/compressed** (or **/camera/image/**) topic on the check box.
 
-4. Open a new termial and use the following command on `Remote PC`.
+    ![](/assets/images/platform/turtlebot3/autonomous_driving/tb3_clilck_compressed.png)
+
+5. Excute rqt_reconfigure on `Remote PC`.
 ``` bash
 $ rosrun rqt_reconfigure rqt_reconfigure
 ```
 
-5. Click **camera**, and adjust the displayed parameter value to see clear image from a camera mounted on TurtleBot3 Burger.
+6. Click **camera**, and modify parameter value in order to see clear images from the camera. 
 
-6. Overwrite values in **turtlebot3_autorace_camera/calibration/camera_calibration/camera.yaml**, so that the same value will be applied from the next launching.
+    ![](/assets/images/platform/turtlebot3/autonomous_driving/rqt_reconfigure_camera_yaml_edit.png)
+
+7. Open **camera.yaml** file located in **turtlebot3_autorace_[Autorace_Misson]_camera/calibration/camera_calibration** folder. You need to write modified values to the file.
+
+    ![](/assets/images/platform/turtlebot3/autonomous_driving/rqt_reconfigure_camera_yaml_edit_02.png)
 
 #### [Intrinsic Camera Calibration](#tutorials-42-intrinsic-camera-calibration)
 
 Print a checkerboard on A4 size paper. The checkerboard is used for Intrinsic Camera Calibration.
 - The checkerboard is stored at **turtlebot3_autorace_camera/data/checkerboard_for_calibration.pdf**
 - Modify value of parameters in **turtlebot3_autorace_camera/launch/turtlebot3_autorace_intrinsic_camera_calibration.launch**
-- Refer to [Camera Calibration manual](http://wiki.ros.org/camera_calibration) from ROS wiki.
+- For detailed information on the camera calibration, see [Camera Calibration manual](http://wiki.ros.org/camera_calibration) from ROS Wiki.
 
   ![](/assets/images/platform/turtlebot3/autonomous_driving/autorace_checkerboard.png)
   > Checkerboard
 
-1. Open termial and use the following command on `Remote PC`.
+1. Launch roscore on `Remote PC`.
 ``` bash
 $ roscore
 ```
 
-2. Open termial and use the following command on `SBC`.
+2. Trigger the camera on `SBC`.
 ``` bash
-$ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_camera_pi.launch
+$ roslaunch turtlebot3_autorace_${Autorace_Misson}_camera turtlebot3_autorace_camera_pi.launch
 ```
 
-3. Open termial and use the following command on `Remote PC`.
+    **WARNING**: Be sure to specify `${Autorace_Misson}` **(i.e, roslaunch turtlebot3_autorace_traffic_light_camera turtlebot3_autorace_camera_pi.launch)**
+    {: .notice--warning}
+
+3. Execute the calibration window on `Remote PC` .
 ``` bash
 $ export AUTO_IN_CALIB=calibration
 $ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_intrinsic_camera_calibration.launch
 ```
 
-- After finishing intrinsic camera calibration, intrinsic camera calibration file will be saved at **turtlebot3_autorace_camera/calibration/intrinsic_calibration/camerav2_320x240_30fps.yaml** 
+4. Use the checkerboard to calibrate the camera, and click **CALIBRATE**.   
+
+    ![](/assets/images/platform/turtlebot3/autonomous_driving/intrinsic_camera_calibration_test.png)
+
+5. Save the data. The data will be written to **turtlebot3_autorace_camera/calibration/intrinsic_calibration/camerav2_320x240_30fps.yaml** 
+
+    ![](/assets/images/platform/turtlebot3/autonomous_driving/intrinsic_camera_calibration_capture.png)
 
 #### [Extrinsic Camera Calibration](#tutorials-43-extrinsic-camera-calibration)
 
-1. Open termial and use the following command on `Remote PC`.
+1. Launch roscore on `Remote PC`.
 ``` bash
 $ roscore
 ```
 
-2. Open termial and use the following command on `SBC`.
+2. Trigger the camera on `SBC`.
 ``` bash
 $ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_camera_pi.launch
 ```
 
-3. Open termial and use the following command on `Remote PC`.
+3. Open terminal and use the command on `Remote PC`.
 ``` bash
 $ export AUTO_IN_CALIB=action
 $ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_intrinsic_camera_calibration.launch
 ```
 
-4. Open termial and use the following command on `Remote PC`.
+4. Open terminal and use the command on `Remote PC`.
 ``` bash
 $ export AUTO_EX_CALIB=calibration
 $ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_extrinsic_camera_calibration.launch
 ```
 
-5. Open termial and use the following command on `Remote PC`.
+5. Execute rqt on `Remote PC`.
 ```
 $ rqt
 ```
   `What to do with rqt??`
-    1. Click **plugins** > **visualization** > **Image view**; It shows multiple image views.
+    1. Click **plugins** > **visualization** > **Image view**; Multiple windows will be present.
     2. Select both `/camera/image_extrinsic_calib/compressed` and `/camera/image_projected_compensated` topics on two monitors. 
-    3. One of two screens will show an image with a red rectangle box. The other will show the ground projected view (Bird's eye view). 
+    3. One of two screens will show an image with a red rectangle box. The other one shows the ground projected view (Bird's eye view). 
 
-6. Open termial and use the following command on `Remote PC`.
+6. Excute rqt_reconfigure on `Remote PC`.
 ``` bash
 $ rosrun rqt_reconfigure rqt_reconfigure
 ```
 
-7. Adjust parameters in `/camera/image_projection` and `/camera/image_compensation_projection` .
+7. Adjust parameters in `/camera/image_projection` and `/camera/image_compensation_projection`.
   - They carries out visual modifications on the image.
   - `image_projection` changes a red rectangle box of `/camera/image_extrinsic_calib/compressed` image.  
   - Intrinsic camera calibration will transform the image surrounded by the red rectangle, and will show the image that looks from over the lane.
@@ -176,23 +194,23 @@ $ rosrun rqt_reconfigure rqt_reconfigure
 **NOTE**: Be sure to proceed to this instruction after all calibration steps are successfully complete.
 {: .notice}
 
-1. Open termial and use the following command on `Remote PC`.
+1. Launch roscore on `Remote PC`.
 ``` bash
 $ roscore
 ```
 
-2. Open termial and use the following command on `SBC`.
+2. Trigger the camera on `SBC`.
 ``` bash
 $ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_camera_pi.launch
 ```
 
-3. Open termial and use the following command on `Remote PC`.
+3. Open terminal and use the command on `Remote PC`.
 ``` bash
 $ export AUTO_IN_CALIB=action
 $ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_intrinsic_camera_calibration.launch
 ```
 
-4. Open termial and use the following command on `Remote PC`.
+4. Open terminal and use the command on `Remote PC`.
 ``` bash
 $ export AUTO_EX_CALIB=action
 $ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_extrinsic_camera_calibration.launch
@@ -207,33 +225,33 @@ The followings instructions describe how to use the lane detection feature and t
 
 1. Place TurtleBot3 between yellow and white lanes.
     
-    **NOTE**: Be sure that Yellow lane is placed left side of the robot and White lane is placed right side of the robot. 
+    **NOTE**: Be sure that yellow lane is placed left side of the robot and White lane is placed right side of the robot. 
     {: .notice}
 
-2. Open termial and use the following command on `Remote PC`.
+2. Use the command on `Remote PC`.
 ``` bash
 $ export AUTO_DT_CALIB=calibration
 $ roslaunch turtlebot3_autorace_detect turtlebot3_autorace_detect_lane.launch
 ```
 
-3. Open termial and use the following command on `Remote PC`.
+3. Execute rqt on `Remote PC`.
 ```
 $ rqt
 ```
   `What to do with rqt?`
-    1. Click **plugins** > **visualization** > **Image view**; It shows multiple image views.
+    1. Click **plugins** > **visualization** > **Image view**; Multiple windows will be present.
     2. Select three topics: `/detect/image_yellow_lane_marker/compressed`, `/detect/image_lane/compressed`, and `/detect/image_white_lane_marker/compressed`
     - Left (Yellow line) and Right (White line) screen show a filtered image.
     - Center screen is a view of the camera from TurtleBot3. 
 
-4. Use the following command and adjust filter parameters for seeing a clear view. 
+4. Execute rqt_reconfigure on `Remote PC`.
 ``` bash
 $ rosrun rqt_reconfigure rqt_reconfigure
 ```
 
-5. Adjust the value of `/camera/image_projection` and `/camera/image_compensation_projection`.
+5. On the screen, adjust the value of `/camera/image_projection` and `/camera/image_compensation_projection`.
   - They carries out visual modifications on the image.
-  - `/camera/image_projection` changes a red rectangle box of `/camera/image_extrinsic_calib/compressed` image.  
+  - `image_projection` changes the shape of red rectangle box of `/camera/image_extrinsic_calib/compressed` image.  
   - Intrinsic camera calibration will transform the image surrounded by the red rectangle, and will show the image that looks from over the lane.
   - Then, overwrite value on to the `lane.yaml` file in  `turtlebot3_autorace_detect/param/lane/`. This will make the camera set its parameters as you set here from next launching.
 
@@ -242,7 +260,7 @@ $ rosrun rqt_reconfigure rqt_reconfigure
 
 6. Close both **rqt_rconfigure** and **turtlebot3_autorace_detect_lane**.
 
-7. Open termial and use the following command on `Remote PC`.  
+7. Open terminal and use the command on `Remote PC`.  
 ``` bash
 $ export AUTO_DT_CALIB=action
 $ roslaunch turtlebot3_autorace_detect turtlebot3_autorace_detect_lane.launch
@@ -250,12 +268,12 @@ $ roslaunch turtlebot3_autorace_detect turtlebot3_autorace_detect_lane.launch
 
 8. Check if the results come out correctly.
     
-    - Open terminal on `Remote PC`, and use the following command.
+    - Open terminal on `Remote PC`, and use the command.
     ``` bash
     $ roslaunch turtlebot3_autorace_control turtlebot3_autorace_control_lane.launch
     ```
 
-    - Open terminal on `TurtleBot SBC`, and use the following command.  
+    - Open terminal on `TurtleBot SBC`, and use the command.  
     ``` bash
     $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
     ```
@@ -271,22 +289,21 @@ TurtleBot3 can detect traffic signs using a node with `SIFT algorithm`, and perf
 
 1. Take pictures of traffic signs by using TurtleBot3's camera and `rqt_image_view` node.
 2. Edit the pictures using a photo editor that can be used in Linux OS.
-3. Open terminal on `Remote PC`, and use the following command.
+3. Execute rqt_image_view on `Remote PC`.
 ```
 $ rqt_image_view
 ```
 
-4. Click `/camera/image_compensated` topic in the select box. A screen will show the view from TurtleBot3.
-
+4. Click **/camera/image_compensated** topic in the select box. A screen will show the view from TurtleBot3.
 5. Capture the picture from `Remote PC`，and edit it with a photo editor. 
 6. Place the edited picture to turtlebot3_autorace package you've placed `/turtlebot3_autorace/turtlebot3_autorace_detect/file/detect_sign/` and rename it as you want. (Although, you should change the file name written in the source `detect_sign.py`, if you want to change the default file names.)
 
-7. Open terminal on `Remote PC`, and use the following command.
+7. Open terminal on `Remote PC`, and use the command.
 ``` bash
 $ roslaunch turtlebot3_autorace_detect turtlebot3_autorace_detect_sign.launch
 ```
 
-8. Open terminal on `Remote PC`, and use the following command. 
+8. Open terminal on `Remote PC`, and use the command. 
 ```bash
 $ rqt_image_view
 ```
@@ -302,175 +319,174 @@ To provide various conditions for a robot application development, the game prov
 
 ### [AutoRace Missons](#autorace-missions)
 
-**NOTE**: Be sure to read [Autonomous Driving](#autonomous-driving).
+**NOTE**: Be sure to read [Autonomous Driving](#autonomous-driving) in order to start missions.
 {: .notice}
 
 #### [Mission 1: Traffic Light](#mission_1_traffic_light)
 
-1. Open termial and use the following command on 
+1. Open terminal and use the command on 
 ``` bash
 $ export AUTO_IN_CALIB=action
-$ roslaunch turtlebot3_autorace_traffic_light_camera turtlebot3_autorace_intrinsic_camera_calibration.launch 
 ```
 
-2. Open termial and use the following command on
+2. Open terminal and use the command on
 ```bash
 $ roslaunch turtlebot3_autorace_traffic_light_camera turtlebot3_autorace_intrinsic_camera_calibration.launch 
 ```
 
-3. Open termial and use the following command on
+3. Open terminal and use the command on
 ```bash
 $ export AUTO_EX_CALIB=action
 $ export AUTO_DT_CALIB=action
 ```
 
-4. Open termial and use the following command on
+4. Open terminal and use the command on
 ```bash
 $ roslaunch turtlebot3_autorace_traffic_light_core turtlebot3_autorace_core.launch 
 ```
 
-5. Open termial and use the following command on
+5. Open terminal and use the command on
 ```bash
 $ rostopic pub -1 /core/decided_mode std_msgs/UInt8 "data: 3"
 ```
 
 #### [Mission 2: Intersection](#mission_2_intersection)
 
-1. Open termial and use the following command on
+1. Open terminal and use the command on
 ```bash
 $ export AUTO_IN_CALIB=action
 ```
 
-2. Open termial and use the following command on
+2. Open terminal and use the command on
 ```bash
 $ roslaunch turtlebot3_autorace_intersection_camera turtlebot3_autorace_intrinsic_camera_calibration.launch 
 ```
 
-3. Open termial and use the following command on
+3. Open terminal and use the command on
 ```bash
 $ export AUTO_EX_CALIB=action
 $ export AUTO_DT_CALIB=action
 ```
 
-4. Open termial and use the following command on
+4. Open terminal and use the command on
 ```bash
 $ roslaunch turtlebot3_autorace_intersection_core turtlebot3_autorace_core.launch 
 ```
 
-5. Open termial and use the following command on
+5. Open terminal and use the command on
 ```bash
 rostopic pub -1 /core/decided_mode std_msgs/UInt8 "data: 2"
 ```
 
 #### [Mission 3: Construction](#mission_3_parking)
 
-1. Open termial and use the following command on
+1. Open terminal and use the command on //내부 캘리 준비 
 ```bash
 $ export AUTO_IN_CALIB=action
 ```
 
-2. Open termial and use the following command on
+2. Open terminal and use the command on // 내부 카메라 파라미터 캘리 
 ```bash
 $ roslaunch turtlebot3_autorace_construction_camera turtlebot3_autorace_intrinsic_camera_calibration.launch 
 ```
 
-3. Open termial and use the following command on
+3. Open terminal and use the command on
 ```bash
 $ export AUTO_EX_CALIB=action
 $ export AUTO_DT_CALIB=action
 ```
 
-4. Open termial and use the following command on
+4. Open terminal and use the command on
 ```bash
 $ roslaunch turtlebot3_autorace_construction_core turtlebot3_autorace_core.launch 
 ```
 
-5. Open termial and use the following command on
+5. Open terminal and use the command on
 ```bash
 $ rostopic pub -1 /core/decided_mode std_msgs/UInt8 "data: 2"
 ```
 
 #### [Mission 4: Parking](#mission_4_stop_bar)
 
-1. Open termial and use the following command on
+1. Open terminal and use the command on
 ```bash
 $ export AUTO_IN_CALIB=action
 ```
 
-2. Open termial and use the following command on
+2. Open terminal and use the command on
 ```
 $ roslaunch turtlebot3_autorace_parking_camera turtlebot3_autorace_intrinsic_camera_calibration.launch 
 ```
 
-3. Open termial and use the following command on
+3. Open terminal and use the command on
 ```
 $ export AUTO_EX_CALIB=action
 $ export AUTO_DT_CALIB=action
 ```
 
-4. Open termial and use the following command on
+4. Open terminal and use the command on
 ```bash
 $ roslaunch turtlebot3_autorace_parking_core turtlebot3_autorace_core.launch 
 ```
 
-5. Open termial and use the following command on
+5. Open terminal and use the command on
 ```bash
 $ rostopic pub -1 /core/decided_mode std_msgs/UInt8 "data: 2"
 ```
 
 #### [Mission 5: Stop Bar](#mission_5_stop_bar)
 
-1. Open termial and use the following command on
+1. Open terminal and use the command on
 ```bash
 $ export AUTO_IN_CALIB=action
 ```
 
-2. Open termial and use the following command on
+2. Open terminal and use the command on
 ```bash
 $ roslaunch turtlebot3_autorace_stop_bar_camera turtlebot3_autorace_intrinsic_camera_calibration.launch 
 ```
 
-3. Open termial and use the following command on
+3. Open terminal and use the command on
 ```bash
 $ export AUTO_EX_CALIB=action
 $ export AUTO_DT_CALIB=action
 ```
 
-4. Open termial and use the following command on
+4. Open terminal and use the command on
 ```bash
 $ roslaunch turtlebot3_autorace_stop_bar_core turtlebot3_autorace_core.launch 
 ```
 
-5. Open termial and use the following command on
+5. Open terminal and use the command on
 ```bash
-/catkin_ws$ rostopic pub -1 /core/decided_mode std_msgs/UInt8 "data: 2"
+$ rostopic pub -1 /core/decided_mode std_msgs/UInt8 "data: 2"
 ```
 
 #### [Mission 6: Tunnel](#mission_6_tunnel)
 
-1. Open termial and use the following command on
+1. Open terminal and use the command on
 ```bash
 $ export AUTO_IN_CALIB=action
 ```
 
-2. Open termial and use the following command on
+2. Open terminal and use the command on
 ```bash
 $ roslaunch turtlebot3_autorace_tunnel_camera turtlebot3_autorace_intrinsic_camera_calibration.launch 
 ```
 
-3. Open termial and use the following command on
+3. Open terminal and use the command on
 ```bash
 $ export AUTO_EX_CALIB=action
 $ export AUTO_DT_CALIB=action
 $ export TURTLEBOT3_MODEL=burger
 ```
 
-4. Open termial and use the following command on
+4. Open terminal and use the command on
 ``` bash
 $ roslaunch turtlebot3_autorace_tunnel_core turtlebot3_autorace_core.launch 
 ```
 
-5. Open termial and use the following command on
+5. Open terminal and use the command on
 ```bash
 $ rostopic pub -1 /core/decided_mode std_msgs/UInt8 "data: 2"
 ```

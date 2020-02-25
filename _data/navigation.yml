@@ -15717,7 +15717,7 @@ turtlebot3:
       url: /platform/turtlebot3/getting_started/#learn-and-explore-more
     - title: "References and Contacts"
       url: /platform/turtlebot3/getting_started/#references-and-contacts
-  - title: "[ROS] Setup"
+  - title: "[ROS 1] Setup"
     url: /platform/turtlebot3/setup/#setup
     children:
     - title: "PC Setup"
@@ -15725,10 +15725,10 @@ turtlebot3:
       children:
       - title: "Install Ubuntu on Remote PC"
         url: /platform/turtlebot3/pc_setup/#install-ubuntu-on-remote-pc
-      - title: "Install ROS on Remote PC"
-        url: /platform/turtlebot3/pc_setup/#install-ros-on-remote-pc
-      - title: "Install Dependent ROS Packages"
-        url: /platform/turtlebot3/pc_setup/#install-dependent-ros-packages
+      - title: "Install ROS 1 on Remote PC"
+        url: /platform/turtlebot3/pc_setup/#install-ros-1-on-remote-pc
+      - title: "Install Dependent ROS 1 Packages"
+        url: /platform/turtlebot3/pc_setup/#install-dependent-ros-1-packages
       - title: "Network Configuration"
         url: /platform/turtlebot3/pc_setup/#network-configuration
     - title: "SBC Setup"
@@ -15763,8 +15763,8 @@ turtlebot3:
         url: /platform/turtlebot3/compatible_devices/#computer
       - title: "Sensors"
         url: /platform/turtlebot3/compatible_devices/#sensors
-  - title: "[ROS] Bringup"
-    url: /platform/turtlebot3/bringup/#bringup
+  - title: "[ROS 1] Bringup"
+    url: /platform/turtlebot3/bringup/#ros-1-bringup
     children:
     - title: "Run roscore"
       url: /platform/turtlebot3/bringup/#run-roscore
@@ -15772,8 +15772,8 @@ turtlebot3:
       url: /platform/turtlebot3/bringup/#bringup-a-turtlebot3
     - title: "Load a TurtleBot3 on Rviz"
       url: /platform/turtlebot3/bringup/#load-a-turtlebot3-on-rviz
-  - title: "[ROS] Basic Operation"
-    url: /platform/turtlebot3/basic_operation/#basic-operation
+  - title: "[ROS 1] Basic Operation"
+    url: /platform/turtlebot3/basic_operation/#ros-1-basic-operation
     children:
     - title: "Topic Monitor"
       url: /platform/turtlebot3/topic_monitor/#topic-monitor
@@ -15811,8 +15811,8 @@ turtlebot3:
         url: /platform/turtlebot3/basic_examples/#patrol
     - title: "Additional Sensors"
       url: /platform/turtlebot3/additional_sensors/#additional-sensors
-  - title: "[ROS] SLAM"
-    url: /platform/turtlebot3/slam/#slam
+  - title: "[ROS 1] SLAM"
+    url: /platform/turtlebot3/slam/#ros-1-slam
     children:
     - title: "Run SLAM Nodes"
       url: /platform/turtlebot3/slam/#run-slam-nodes
@@ -15826,8 +15826,8 @@ turtlebot3:
       url: /platform/turtlebot3/slam/#map
     - title: "References"
       url: /platform/turtlebot3/slam/#references
-  - title: "[ROS] Navigation"
-    url: /platform/turtlebot3/navigation/#navigation
+  - title: "[ROS 1] Navigation"
+    url: /platform/turtlebot3/navigation/#ros-1-navigation
     children:
     - title: "Run Navigation Nodes"
       url: /platform/turtlebot3/navigation/#run-navigation-nodes
@@ -15839,8 +15839,8 @@ turtlebot3:
       url: /platform/turtlebot3/navigation/#tuning-guide
     - title: "References"
       url: /platform/turtlebot3/navigation/#references
-  - title: "[ROS] Simulation"
-    url: /platform/turtlebot3/simulation/#simulation
+  - title: "[ROS 1] Simulation"
+    url: /platform/turtlebot3/simulation/#ros-1-simulation
     children:
     - title: "TurtleBot3 Simulation using Fake Node"
       url: /platform/turtlebot3/simulation/#turtlebot3-simulation-using-fake-node
@@ -15851,7 +15851,7 @@ turtlebot3:
         url: /platform/turtlebot3/simulation/#ros-packages-for-gazebo
       - title: "Standalone Gazebo Plugin"
         url: /platform/turtlebot3/simulation/#standalone-gazebo-plugin
-  - title: "[ROS] Manipulation"
+  - title: "[ROS 1] Manipulation"
     url: /platform/turtlebot3/manipulation/#manipulation
     children:
     - title: "TurtleBot3 with OpenMANIPULATOR"
@@ -15874,8 +15874,8 @@ turtlebot3:
       url: /platform/turtlebot3/manipulation/#pick-and-place
     - title: "Simulation"
       url: /platform/turtlebot3/manipulation/#simulation      
-  - title: "[ROS] Autonomous Driving"
-    url: /platform/turtlebot3/autonomous_driving/#autonomous-driving
+  - title: "[ROS 1] Autonomous Driving"
+    url: /platform/turtlebot3/autonomous_driving/#ros-1-autonomous-driving
     children:
     - title: "Autonomous Driving"
       url: /platform/turtlebot3/autonomous_driving/#autonomous-driving
@@ -15895,9 +15895,9 @@ turtlebot3:
     - title: "AutoRace RBIZ Challenge 2018"
       url: /platform/turtlebot3/autonomous_driving/autorace_rviz_challenge/#autorace-rbiz-challenge-2018
     - title: "AutoRace with Gazebo"
-      url: /docs/en/platform/turtlebot3/autonomous_driving/autorace_gazenbo/#autorace-with-gazebo
-  - title: "[ROS] Machine Learning"
-    url: /platform/turtlebot3/machine_learning/#machine-learning
+      url: /docs/en/platform/turtlebot3/autonomous_driving/autorace_gazebo
+  - title: "[ROS 1] Machine Learning"
+    url: /platform/turtlebot3/machine_learning/#ros-1-machine-learning
     children:
     - title: "Installation"
       url: /platform/turtlebot3/machine_learning/#installation
@@ -15905,7 +15905,7 @@ turtlebot3:
       url: /platform/turtlebot3/machine_learning/#set-parameters
     - title: "Run Machine Learning"
       url: /platform/turtlebot3/machine_learning/#run-machine-learning
-  - title: "[ROS] Applications"
+  - title: "[ROS 1] Applications"
     url: /platform/turtlebot3/applications/#applications
     children:
     - title: "TurtleBot Follower Demo"
@@ -15939,14 +15939,14 @@ turtlebot3:
       - title: "Open Source Hardware"
         url: /platform/turtlebot3/ros2_setup/#open-source-hardware  
   - title: "[ROS 2] Bringup"
-    url: /platform/turtlebot3/ros2_bringup/#bringup
+    url: /platform/turtlebot3/ros2_bringup/#ros-2-bringup
     children:
     - title: "Bringup TurtleBot3"
       url: /platform/turtlebot3/ros2_bringup/#bringup-turtlebot3
     - title: "Load TurtleBot3 on Rviz2"
       url: /platform/turtlebot3/ros2_bringup/#load-turtlebot3-on-rviz2      
   - title: "[ROS 2] Basic Operation"
-    url: /platform/turtlebot3/ros2_basic_operation/#basic_operation
+    url: /platform/turtlebot3/ros2_basic_operation/#ros-2-basic-operation
     children:
       - title: "Topic Monitor"
         url: /platform/turtlebot3/ros2_basic_operation/#topic-monitor
@@ -15975,7 +15975,7 @@ turtlebot3:
           - title: "Additional Sensors"
             url: /platform/turtlebot3/ros2_basic_operation/#additional-sensors
   - title: "[ROS 2] SLAM"
-    url: /platform/turtlebot3/ros2_slam/#slam
+    url: /platform/turtlebot3/ros2_slam/#ros-2-slam
     children: 
       - title: "Cartographer"
         url: /platform/turtlebot3/ros2_slam/#cartographer
@@ -15992,7 +15992,7 @@ turtlebot3:
       - title: "Reference"
         url: /platform/turtlebot3/ros2_slam/#reference
   - title: "[ROS 2] Navigation2"
-    url: /platform/turtlebot3/ros2_navigation2/#navigation2
+    url: /platform/turtlebot3/ros2_navigation2/#ros-2-navigation2
     children:
       - title: "Run Navigation2 Nodes"
         url: /platform/turtlebot3/ros2_navigation2/#run-navigation2-nodes
@@ -16005,7 +16005,7 @@ turtlebot3:
       - title: "References"
         url: /platform/turtlebot3/ros2_navigation2/#references                  
   - title: "[ROS 2] Simulation"
-    url: /platform/turtlebot3/ros2_simulation/#simulation
+    url: /platform/turtlebot3/ros2_simulation/#ros-2-simulation
     children:
       - title: "TurtleBot3 Simulation using Fake Node"
         url: /platform/turtlebot3/ros2_simulation/#turtlebot3-simulation-using-fake-node
@@ -16020,8 +16020,22 @@ turtlebot3:
     url: /platform/turtlebot3/ros2_autonomous_driving/
   - title: "[ROS 2] Machine Learning"
     url: /platform/turtlebot3/ros2_machine_learning/
+    children:
+    - title: "Install TensorFlow"
+      url: /platform/turtlebot3/ros2_machine_learning/#install-tensorflow
+    - title: "Set Parameters"
+      url: /platform/turtlebot3/ros2_machine_learning/#set-parameters
+    - title: "Run Machine Learning"
+      url: /platform/turtlebot3/ros2_machine_learning/#run-machine-learning    
   - title: "[ROS 2] Applications"
     url: /platform/turtlebot3/ros2_applications/
+    children:
+    - title: "Automatic Parking"
+      url: /platform/turtlebot3/ros2_machine_learning/#automatic-parking
+    - title: "Automatic Parking Vision"
+      url: /platform/turtlebot3/ros2_machine_learning/#automatic-parking-vision
+    - title: "Load Multiple TurtleBot3s"
+      url: /platform/turtlebot3/ros2_machine_learning/#load-multiple-turtlebot3s
   - title: "Locomotion"
     url: /platform/turtlebot3/locomotion/#locomotion
     children:

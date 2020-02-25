@@ -5,7 +5,7 @@ ref: autorace_gazenbo
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/turtlebot3/autonomous_driving/autorace_gazenbo
+permalink: /docs/en/platform/turtlebot3/autonomous_driving/autorace_gazebo
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"

@@ -15,7 +15,7 @@ page_number: 22
 
 <div style="counter-reset: h1 10"></div>
 
-# [Simulation](#simulation)
+# [[ROS 1] Simulation](#ros-1-simulation)
 
 {% capture notice_01 %}
 **NOTE**:
@@ -45,7 +45,7 @@ To use `turtlebot3_fake_node`, you need the `turtlebot3_simulation` metapackage.
 **TIP**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. The shortcut key for running the terminal is `Ctrl`-`Alt`-`T`.
 {: .notice--success}
 
-**NOTE**: The `turtlebot3_simulation` metapackage requires `turtlebot3` metapackage and `turtlebot3_msgs` package as a prerequisite. If you did not install it in the [Install Dependent ROS Packages of PC Setup][pc_setup] section, install it first.
+**NOTE**: The `turtlebot3_simulation` metapackage requires `turtlebot3` metapackage and `turtlebot3_msgs` package as a prerequisite. If you didn't install it in the [Install Dependent ROS Packages of PC Setup][pc_setup] section, install it first.
 {: .notice--info}
 
 ``` bash

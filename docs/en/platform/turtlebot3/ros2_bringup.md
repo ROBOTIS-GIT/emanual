@@ -15,7 +15,7 @@ page_number: 28
 
 <div style="counter-reset: h1 16"></div>
 
-# [Bringup](#bringup)
+# [[ROS 2] Bringup](#ros-2-bringup)
 
 ## [Bringup TurtleBot3](#bringup-turtlebot3)
 

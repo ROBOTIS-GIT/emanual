@@ -15,7 +15,7 @@ page_number: 20
 
 <div style="counter-reset: h1 8"></div>
 
-# [SLAM](#slam)
+# [[ROS 1] SLAM](#ros-1-slam)
 
 **WARNING**: Be careful when running the robot on the table as the robot might fall.
 {: .notice--warning}
