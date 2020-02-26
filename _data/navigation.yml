@@ -544,6 +544,9 @@ main:
       - title: "RC-100A/100B"
         titlekr: "RC-100A/100B"
         url: /parts/communication/rc-100/
+      - title: "RC-200"
+        titlekr: "RC-200"
+        url: /parts/communication/rc-200/            
       - title: "*ZIG-100/110A"
         titlekr: "*ZIG-100/110A"
         url: /parts/communication/zig-110/
@@ -21563,7 +21566,7 @@ opencm7:
     children:
     - titlekr: "인증 획득"
       urlkr: /parts/controller/opencm7/#인증-획득
-
+  
 rc-100:
   - title: "Introduction"
     titlekr: "개요"
@@ -21613,6 +21616,40 @@ rc-100:
     titlekr: "활용 방법"
     url: /parts/communication/rc-100/#tutorials
     urlkr: /parts/communication/rc-100/#활용-방법
+
+
+rc-200:
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /parts/communication/rc-200/#introduction
+    urlkr: /parts/communication/rc-200/#개요
+  - title: "Quick Start"
+    titlekr: "퀵스타트"
+    url: /parts/communication/rc-200/#quick-start
+    url: /parts/communication/rc-200/#퀵스타트
+    children: 
+    - title: "How to Set the Communication Channel"
+      titlekr: "통신 채널 설정 방법"
+      url: /parts/communication/rc-200/#how-to-set-the-communication-channel
+      urlkr: /parts/communication/rc-200/#통신-채널-설정-방법
+    - title: "How to Lock/Unlock the Channel Buttons"
+      titlekr: "채널버튼 잠금/해제 기능"
+      url: /parts/communication/rc-200/#how-to-lock-unlock-the-channel-button
+      urlkr: /parts/communication/rc-200/#채널버튼-잠금해제-기능
+    - title: "How to Check the Communication Channel"
+      titlekr: "통신 채널 확인 방법"
+      url: /parts/communication/rc-200/#how-to-check-the-communication-channel
+      urlkr: /parts/communication/rc-200/#통신-채널-확인-방법    
+    - title: "When to Replace the Battery"
+      titlekr: "건전지 교체 시기"
+      url: /parts/communication/rc-200/#when-to-replace-the-battery
+      urlkr: /parts/communication/rc-200/#건전지-교체-시기
+    - title: "Straightness Tuning for CM-50"
+      titlekr: "CM-50 직진성 보정하기"
+      url: /parts/communication/rc-200/#straightness-tuning-for-cm-50
+      urlkr: /parts/communication/rc-200/#cm-50-직진성-보정하기
+
+
 
 #ZIG-100/110 sidebar
 zig-110:
