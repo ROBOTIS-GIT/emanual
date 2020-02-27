@@ -498,7 +498,7 @@ xw540-t150:
   physicalconnection: *rs485_ttl_conn
   id:                 *id
   feedback:           *feedback
-  material:           *material
+  material:           Full Metal Gear / Full Metal Case
   standbycurrent:     *standbycurrent_40
 
 xw540-t270:
@@ -528,7 +528,7 @@ xw540-t270:
   physicalconnection: *rs485_ttl_conn
   id:                 *id
   feedback:           *feedback
-  material:           *material
+  material:           Full Metal Gear / Full Metal Case
   standbycurrent:     *standbycurrent_40
 
 xm540-w150:
