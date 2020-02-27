@@ -105,7 +105,7 @@ The robot will create a path to avoid obstacles to its destination based on the 
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/VYlMywwYALU" frameborder="0" allowfullscreen></iframe>
 
-The contents in e-Manual may differ from contents of a provided video in e-Manaul as e-Manual is updated on a regular basis.
+The contents in e-Manual can be updated without a previous notice. Therefore, some video may differ from the contents in e-Manual.
 {: .notice--warning} 
 
 Setting a goal position might fail if the path to the goal position cannot be created. If you wish to stop the robot before it reaches to the goal position, set the current position of TurtleBot3 as a goal position.

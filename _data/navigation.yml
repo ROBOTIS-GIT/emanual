@@ -15876,26 +15876,44 @@ turtlebot3:
       url: /platform/turtlebot3/manipulation/#simulation      
   - title: "[ROS 1] Autonomous Driving"
     url: /platform/turtlebot3/autonomous_driving/#ros-1-autonomous-driving
-    children:
-    - title: "Autonomous Driving"
-      url: /platform/turtlebot3/autonomous_driving/#autonomous-driving
+    children: 
+    - title: "What you need for Autonomous Driving"
+      url: /platform/turtlebot3/autonomous_driving/#what-you-need-for-autonomous-driving
+    - title: "Getting Started"
+      url: /platform/turtlebot3/autonomous_driving/#getting-started
       children:
-      - title: "Autonomous Driving"
-        url: /platform/turtlebot3/autonomous_driving/#autonomous-driving
-      - title: "Autonomous Driving"
-        url: /platform/turtlebot3/autonomous_driving/#autonomous-driving
-      - title: "Autonomous Driving"
-        url: /platform/turtlebot3/autonomous_driving/#autonomous-driving        
+      - title: "Install Autorace Packages"
+        url: /platform/turtlebot3/autonomous_driving/#install-autorace-packages
+      - title: "How to Calibrate Camera"
+        url: /platform/turtlebot3/autonomous_driving/#how-to-calibrate-camera
+      - title: "Lane Detection"
+        url: /platform/turtlebot3/autonomous_driving/#lane-detection
+      - title: "Traffic Sign Detection"
+        url: /platform/turtlebot3/autonomous_driving/#traffic-sign-detection
+    - title: "TurtleBot3 AutoRace 2020"
+      url: /platform/turtlebot3/autonomous_driving/#turtlebot3-autorace-2020
+      children:
+      - title: "Mission 1: Traffic Light"
+        url: /platform/turtlebot3/autonomous_driving/#mission-1-traffic-light
+      - title: "Mission 2: Intersection"
+        url: /platform/turtlebot3/autonomous_driving/#mission-2-intersection
+      - title: "Mission 3: Construction"
+        url: /platform/turtlebot3/autonomous_driving/#mission-3-construction
+      - title: "Mission 4: Parking"
+        url: /platform/turtlebot3/autonomous_driving/#mission-4-parking
+      - title: "Mission 5: Stop Bar"
+        url: /platform/turtlebot3/autonomous_driving/#mission-5-stop-bar
+      - title: "Mission 6: Tunnel"
+        url: /platform/turtlebot3/autonomous_driving/#mission-6-tunnel
+      - title: "Run Autonomous Driving"
+        url: /platform/turtlebot3/autonomous_driving/#run-autonomous-driving
     - title: "TurtleBot3 AutoRace"
-      url: /platform/turtlebot3/autonomous_driving/#turtlebot3-autorace
-    - title: "TurtleBot3 AutoRace Online Competition"
-      url: /platform/turtlebot3/autonomous_driving/online_competition
-    - title: "AutoRace RBIZ Challenge 2017"
-      url: /platform/turtlebot3/autonomous_driving/autorace_rviz_challenge/#autorace-rbiz-challenge-2017
-    - title: "AutoRace RBIZ Challenge 2018"
-      url: /platform/turtlebot3/autonomous_driving/autorace_rviz_challenge/#autorace-rbiz-challenge-2018
+      url: /platform/turtlebot3/autonomous_driving_autorace/
+      children: 
+      - title: "TurtleBot3 AutoRace Online Competition"
+        url: "/platform/turtlebot3/autonomous_driving_autorace/#turtlebot3-autorace-online-competition"
     - title: "AutoRace with Gazebo"
-      url: /docs/en/platform/turtlebot3/autonomous_driving/autorace_gazebo
+      url: /platform/turtlebot3/autonomous_driving/autorace_gazebo
   - title: "[ROS 1] Machine Learning"
     url: /platform/turtlebot3/machine_learning/#ros-1-machine-learning
     children:
@@ -16099,6 +16117,13 @@ turtlebot3:
       url: /platform/turtlebot3/challenges/#online-competition-on-rds
     - title: "Offline Competition"
       url: /platform/turtlebot3/challenges/#offline-competition
+    - title: "AutoRace RBIZ Challenge"
+      url: /platform/turtlebot3/autonomous_driving/autorace_rviz_challenge
+      children: 
+      - title: "2018"
+        url: /platform/turtlebot3/autonomous_driving/autorace_rviz_challenge/#autorace-rbiz-challenge-2018
+      - title: "2017"
+        url: /platform/turtlebot3/autonomous_driving/autorace_rviz_challenge/#autorace-rbiz-challenge-2017  
   - title: "Appendixes"
     url: /platform/turtlebot3/appendixes/#appendixes
     children:

@@ -37,7 +37,7 @@ fds
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/DLOq8yNcCoE" frameborder="0" allowfullscreen></iframe>
 
-The contents in e-Manual may differ from contents of a provided video in e-Manaul as e-Manual is updated on a regular basis.
+The contents in e-Manual can be updated without a previous notice. Therefore, some video may differ from the contents in e-Manual.
 {: .notice--warning} 
 
 ## [Software Setup](#software-setup)

@@ -40,7 +40,7 @@ page_number: 20
 The **SLAM (Simultaneous Localization and Mapping)** is a technique to draw a map by estimating current location in an arbitrary space. The SLAM is a well-known feature of TurtleBot from its predecessors. The video here shows you how accurately TurtleBot3 can draw a map with its compact and affordable platform.
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/lkW4-dG2BCY" frameborder="0" allowfullscreen></iframe>
-The contents in e-Manual may differ from contents of a provided video in e-Manaul as e-Manual is updated on a regular basis.
+The contents in e-Manual can be updated without a previous notice. Therefore, some video may differ from the contents in e-Manual.
 {: .notice--warning} 
 
 * Date: 2016.11.29
@@ -52,7 +52,7 @@ The contents in e-Manual may differ from contents of a provided video in e-Manau
 * Distance: Total 351 meters
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/7mEKrT_cKWI" frameborder="0" allowfullscreen></iframe>
-The contents in e-Manual may differ from contents of a provided video in e-Manaul as e-Manual is updated on a regular basis.
+The contents in e-Manual can be updated without a previous notice. Therefore, some video may differ from the contents in e-Manual.
 {: .notice--warning} 
 
 * Date: 2017.04.20

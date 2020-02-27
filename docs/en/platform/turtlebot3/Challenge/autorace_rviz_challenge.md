@@ -64,9 +64,9 @@ product_group: turtlebot3
 
   <iframe width="560" height="315" src="https://www.youtube.com/embed/szhllE1T_cg" frameborder="0" allowfullscreen></iframe>
 
-- Video - Team Sherlotics (Introduction video)
+<!-- - Video - Team Sherlotics (Introduction video)
 
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/dzjsLFj62HE" frameborder="0" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/dzjsLFj62HE" frameborder="0" allowfullscreen></iframe> -->
 
 - TurtleBot3 was tested its driving autonomy under the open source from MIT DuckieTown engineering.
 

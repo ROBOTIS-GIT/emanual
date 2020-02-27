@@ -5,7 +5,7 @@ ref: autonomous_driving
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/turtlebot3/autonomous_driving/
+permalink: /docs/en/platform/turtlebot3/autonomous_driving_autorace/
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
@@ -13,20 +13,8 @@ product_group: turtlebot3
 page_number: 24
 ---
 
-<div style="counter-reset: h1 12"></div>
-
-# [[ROS 1] Autonomous Driving](#ros-1-autonomous-driving)
-
-{% capture notice_01 %}
-**NOTE**: This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-{% endcapture %}
-<div class="notice--info">{{ notice_01 | markdownify }}</div>
-
-The contents in e-Manual may differ from contents of a provided video in e-Manaul as e-Manual is updated on a regular basis.
-{: .notice--warning} 
-
-We are currently doing several projects related with the keywords: Autonomous Driving and TurtleBot3s.
-
+<div style="counter-reset: h1 13"></div>
+<div style="counter-reset: h2 2"></div>
 ## [TurtleBot3 AutoRace](#turtlebot3-autorace)
 
 ![](/assets/images/platform/turtlebot3/autonomous_driving/autorace_rbiz_challenge_2017_robots_1.png)
@@ -34,6 +22,9 @@ We are currently doing several projects related with the keywords: Autonomous Dr
 The AutoRace is a competition for autonomous driving robot platforms. To provide various conditions for robot application development, the game gives as less structural regulation as possible. Entire contents are opened in [software](https://github.com/ROBOTIS-GIT/autorace_referee) (source codes for referee system) wise and [hardware](https://github.com/ROBOTIS-GIT/autorace_track) (stp / dwg files of game map) wise.
 
 Whole robots and even the referee system in the field is run by ROS, so it would support to make many kinds of contents further. Get opened source of what is participated in each competitions!
+
+**WARNING**: Be aware that you are reading the contents made in the pase. If you are joining AutoRace 2020, see [TurtleBot3 AutoRace 2020](/docs/en/platform/turtlebot3/autonomous_driving/#turtlebot3-autorace-2020). 
+{: .notice--warning}
 
 ## [TurtleBot3 AutoRace Tutorials](#turtlebot3-autorace-tutorials)
 
@@ -68,20 +59,16 @@ Whole robots and even the referee system in the field is run by ROS, so it would
 
 - `TurtleBot3 Burger`
   - ROS and dependent ROS packages needs to be installed in the robot
-  - All functions of TurtleBot3 Burger which is described in [TurtleBot3 E-Manual](http://emanual.robotis.com/docs/en/platform/turtlebot3/overview/) needs to be tested before running TurtleBot3 Auto source code
+  - All functions of TurtleBot3 Burger which is described in [TurtleBot3 e-Manual](http://emanual.robotis.com/docs/en/platform/turtlebot3/overview/) needs to be tested before running TurtleBot3 Auto source code
 
 - `Remote PC (Laptop, Desktop, etc.)`
   - ROS and dependent ROS packages needs to be installed in the computer
-  - All functions of TurtleBot3 Burger which is described in [TurtleBot3 E-Manual](http://emanual.robotis.com/docs/en/platform/turtlebot3/overview/) needs to be tested before running TurtleBot3 Auto source code
+  - All functions of TurtleBot3 Burger which is described in [TurtleBot3 e-Manual](http://emanual.robotis.com/docs/en/platform/turtlebot3/overview/) needs to be tested before running TurtleBot3 Auto source code
 
 - `Add-ons on TurtleBot3 Burger`
   - Raspberry Pi Camera Type G (Fisheye Lens) : Available [Here](https://www.waveshare.com/rpi-camera-g.htm)
     - See `Features of 4 screw holes` in the page very carefully before mounting on the frame of any conductive materials
   - Raspberry Pi Camera Mount
-
-<!--
-![Picture of mounted Pi Camera]
--->
 
 - `Track structure and Accessories`, such as Traffic Signs, Traffic Lights, and other objects.
   - Get Sources of AutoRace Referee system from [autorace_referee](https://github.com/ROBOTIS-GIT/autorace_referee)
@@ -469,142 +456,5 @@ Until now, all the preprocess of image must have been tested.
 
 - [TurtleBot3 AutoRace](http://emanual.robotis.com/docs/en/platform/turtlebot3/challenges/#online-competition-on-rds)
 
-## [AutoRace RBIZ Challenge 2017](#autorace-rbiz-challenge-2017)
 
-![](/assets/images/platform/turtlebot3/autonomous_driving/autorace_rbiz_challenge_2017_robots_2.png)
-
-- Official release of TurtleBot3 AutoRace
-
-  - [AutoRace Source Code](http://wiki.ros.org/turtlebot3_autorace)
-  - [AutoRace Track](https://github.com/ROBOTIS-GIT/autorace_track)
-  - [AutoRace Referee System](https://github.com/ROBOTIS-GIT/autorace_referee)
-
-- Participants sources
-
-  | Place | Team              | Source link                                                        |
-  |:------|:------------------|:-------------------------------------------------------------------|
-  | 1     | RealRiceThief     | [Github](https://github.com/KoG-8/Turtlebot_RealRiceThief)         |
-  | 2     | IronHeart         | [Github](https://github.com/kijongGil/Ironheart)                   |
-  | 3     | Robit             | [Github](https://github.com/ROBIT-GIT/turtlebot3_autoRace_2017)    |
-  | 4     | Loading           | [Github](https://github.com/AuTURBO/autorace2017-team-loading)     |
-  | 5     | RunHoney          | [Github](https://github.com/AuTURBO/autorace2017-team-honey)       |
-  | 6     | Sherlotics        | [Github](https://github.com/minbaekkim/turtlebot_autorace)         |
-  | 7     | FastAndFurious    | [Github](https://github.com/kts006/deu_racer)                      |
-  | 8     | BonoBono          | [Github](https://github.com/Gaeul/BonobonoTurtlebot)               |
-  | 9     | BeginAgain        | [Github](https://github.com/yh-na/beginagain)                      |
-  | 10    | Hanzo             | [Github](https://github.com/DeokYun/autorace)                      |
-  | 11    | Codis             | will be released soon                                              |
-  | 12    | Zero              | [Github](https://github.com/dongwan123/zero_turtlebot_competition) |
-  | 13    | CanDynamix        | [Github](https://github.com/candynamix/can_dynamix)                |
-  | 14    | Cena              | retire                                                             |
-  | 15    | TogetherChaChaCha | retire                                                             |
-
-### [TurtleBot3 AutoRace 2017 Teaser](#turtlebot3-autorace-2017-teaser)
-
-- Official Teaser #1
-
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/9Wnu8If1eS4" frameborder="0" allowfullscreen></iframe>
-
-- Official Teaser #2
-
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/47YnSBAssOM" frameborder="0" allowfullscreen></iframe>
-
-- Official Final Video
-
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/DWDBAHHQi_k" frameborder="0" allowfullscreen></iframe>
-
-### [TurtleBot3 AutoRace 2017 Challengers](#turtlebot3-autorace-2017-challengers)
-
-- Video - Team RealRiceThief (1st Place)
-
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/szhllE1T_cg" frameborder="0" allowfullscreen></iframe>
-
-- Video - Team Sherlotics (Introduction video)
-
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/dzjsLFj62HE" frameborder="0" allowfullscreen></iframe>
-
-- TurtleBot3 was tested its driving autonomy under the open source from MIT DuckieTown engineering.
-
-  <iframe width="640" height="360" src="https://www.youtube.com/embed/1V33iEu4ylw" frameborder="0" allowfullscreen></iframe>
-
-
-## [AutoRace RBIZ Challenge 2018](#autorace-rbiz-challenge-2018)
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6t6cyFiGLvs?start=100" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-| Place | Team             | Source link                                                               |
-|:------|:-----------------|:--------------------------------------------------------------------------|
-| 1     | ROBIT            | [Github](https://github.com/developer0hye/2018-Turtlebot3-Autorace-ROBIT) |
-| 2     | Au-Di            | [Github](https://github.com/taening/AuDi-GIT-turtlebot3_autorace)         |
-| 3     | ROBIT2           | will be released soon                                                     |
-| 4     | Wang Bam Ppang   | [Github](https://github.com/Seunghooon/Turtlebot3_autorace_2018)          |
-| 5     | Four Leaf Clover | will be released soon                                                     |
-| 6     | AuTURBO          | [Github](https://github.com/YeongJunKim/2018-turtlebot3-autorace)         |
-| 7     | MATLABurger      | will be released soon                                                     |
-| 8     | Eung Chang Ho    | [Github](https://github.com/engcang/Turtlebot3Autorace_Eungchangho_Team)  |
-| 9     | ZETIN            | will be released soon                                                     |
-| 10    | ROSMASTER        | will be released soon                                                     |
-
-[lane_detection]: #tutorials-41-lane-detection
 [turtlebot3_autorace]: https://github.com/ROBOTIS-GIT/turtlebot3_autorace
-
-
-## [AutoRace with Gazebo](#autorace-with-gazebo)
-The AutoRace is provided by Gazebo. We created a environment TurtleBot3 AutoRace 2017 in R-BIZ Challenge.
-
-- Recommended specification
-
-| CPU     | Intel Core i5 / 2 GHz Dual Core Processor      |
-| RAM     | 4GB                                            |
-| Storage | 20Gb of free hard drive space                  |
-| GPU     | NVIDIA GeForce GTX 9 series                    |
-
-**WARNING**: Do not confuse your real camera calibration configure files and Gazebo calibration configure files.
-{: .notice--warning}
-
-**NOTE**: The `turtlebot3_autorace` package requires `turtlebot3_simulations` package as a prerequisite. If you did not install it in the [Installation TurtleBot3 Simulations](#simulation), install it first.
-{: .notice--info}
-
-1. `Remote PC` Run AutoRace Gazebo. You can see the AutoRace 2017 map in Gazebo.
-
-    ``` bash
-    $ roslaunch turtlebot3_gazebo turtlebot3_autorace.launch
-    ```
-
-    ![](/assets/images/platform/turtlebot3/autonomous_driving/autorace_map.png)
-
-2. `Remote PC` Run Mission launch. You can see `Traffic Light`, `Parked TurtleBot3` and `Toll Gate` in Gazebo. When TurtleBot3 approaches the mission area, they operate automatically.
-
-    ``` bash
-    $ roslaunch turtlebot3_gazebo turtlebot3_autorace_mission.launch
-    ```
-
-    ![](/assets/images/platform/turtlebot3/autonomous_driving/autorace_map_mission.png)
-
-3. `Remote PC` Run AutoRace launch. If you want to run AutoRace in real, you have to calibrate your camera.
-
-    ``` bash
-    $ export GAZEBO_MODE=true
-    $ export AUTO_IN_CALIB=action
-    $ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_intrinsic_camera_calibration.launch
-    ```
-
-4. `Remote PC` Open new terminal, then enter
-
-    ``` bash
-    $ export AUTO_EX_CALIB=action
-    $ export AUTO_DT_CALIB=action
-    $ export TURTLEBOT3_MODEL=burger
-    $ roslaunch turtlebot3_autorace_core turtlebot3_autorace_core.launch
-    ```
-
-5. `Remote PC` Open new terminal, then enter
-
-    ``` bash
-    $ rostopic pub -1 /core/decided_mode std_msgs/UInt8 "data: 2"
-    ```
-
-
-- Video : AutoRace with Gazebo
-
-  <iframe width="640" height="360" src="https://www.youtube.com/embed/5fZmuPxMZz0" frameborder="0" allowfullscreen></iframe>
