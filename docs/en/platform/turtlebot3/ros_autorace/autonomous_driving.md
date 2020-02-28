@@ -90,7 +90,7 @@ $ rqt_image_view
 
 4. Click **/camera/image/compressed** (or **/camera/image/**) topic on the check box.
 
-    ![](/assets/images/platform/turtlebot3/autonomous_driving/tb3_clilck_compressed.png)
+    ![](/assets/images/platform/turtlebot3/autonomous_driving/tb3_click_compressed.png)
 
 5. Excute rqt_reconfigure on `Remote PC`.
 ``` bash
@@ -101,7 +101,7 @@ $ rosrun rqt_reconfigure rqt_reconfigure
 
     ![](/assets/images/platform/turtlebot3/autonomous_driving/rqt_reconfigure_camera_yaml_edit.png)
 
-7. Open **camera.yaml** file located in **turtlebot3_autorace_[Autorace_Misson]_camera/calibration/camera_calibration** folder. You need to write modified values to the file.
+7. Open **camera.yaml** file located in **turtlebot3_autorace_[Autorace_Misson]_camera/calibration/camera_calibration** folder, and write modified values to the file.
 
     ![](/assets/images/platform/turtlebot3/autonomous_driving/rqt_reconfigure_camera_yaml_edit_02.png)
 
@@ -131,6 +131,7 @@ $ roslaunch turtlebot3_autorace_${Autorace_Misson}_camera turtlebot3_autorace_ca
 3. Execute the calibration window on `Remote PC` .
 ``` bash
 $ export AUTO_IN_CALIB=calibration
+$ export GAZEBO_MODE=false
 $ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_intrinsic_camera_calibration.launch
 ```
 
@@ -138,9 +139,12 @@ $ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_intrinsic_camera_cali
 
     ![](/assets/images/platform/turtlebot3/autonomous_driving/intrinsic_camera_calibration_test.png)
 
-5. Save the data. The data will be written to **camerav2_320x240_30fps.yaml** at **turtlebot3_autorace_camera/calibration/intrinsic_calibration** 
+5. Save the data.  
 
     ![](/assets/images/platform/turtlebot3/autonomous_driving/intrinsic_camera_calibration_capture.png)
+
+6. The data will be written to **camerav2_320x240_30fps.yaml** at **turtlebot3_autorace_camera/calibration/intrinsic_calibration**    
+    ![](/assets/images/platform/turtlebot3/autonomous_driving/camerav2_320_240_30fps.png)
 
 #### [Extrinsic Camera Calibration](#tutorials-43-extrinsic-camera-calibration)
 
@@ -157,6 +161,7 @@ $ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_camera_pi.launch
 3. Open terminal and use the command on `Remote PC`.
 ``` bash
 $ export AUTO_IN_CALIB=action
+$ export GAZEBO_MODE=false
 $ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_intrinsic_camera_calibration.launch
 ```
 
@@ -170,10 +175,17 @@ $ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_extrinsic_camera_cali
 ```
 $ rqt
 ```
-  `What to do with rqt??`
-    1. Click **plugins** > **visualization** > **Image view**; Multiple windows will be present.
-    2. Select both `/camera/image_extrinsic_calib/compressed` and `/camera/image_projected_compensated` topics on two monitors. 
-    3. One of two screens will show an image with a red rectangle box. The other one shows the ground projected view (Bird's eye view). 
+    
+6. Click **plugins** > **visualization** > **Image view**; Multiple windows will be present.
+
+7. Select `/camera/image_extrinsic_calib/compressed` and `/camera/image_projected_compensated` topics on each monitors. 
+  - One of two screens will show an image with a red rectangle box. The other one shows the ground projected view (Bird's eye view). 
+  
+    ![](/assets/images/platform/turtlebot3/autonomous_driving/camera_image_extrinsic_calib_compressed.png)
+    > `/camera/image_extrinsic_calib/compressed` topic
+    
+    ![](/assets/images/platform/turtlebot3/autonomous_driving/camera_image_projected_compensated.png)
+    > `/camera/image_projected_compensated` topic
 
 6. Excute rqt_reconfigure on `Remote PC`.
 ``` bash
@@ -181,10 +193,15 @@ $ rosrun rqt_reconfigure rqt_reconfigure
 ```
 
 7. Adjust parameters in `/camera/image_projection` and `/camera/image_compensation_projection`.
-  - They carries out visual modifications on the image.
-  - `image_projection` changes a red rectangle box of `/camera/image_extrinsic_calib/compressed` image.  
+  - Change `/camera/image_projection` parameter value. It affects `/camera/image_extrinsic_calib/compressed` topic.  
   - Intrinsic camera calibration will transform the image surrounded by the red rectangle, and will show the image that looks from over the lane.
-
+    
+    ![](/assets/images/platform/turtlebot3/autonomous_driving/camera_image_projection_compensation_projection.png)
+    > rqt_reconfigure
+  
+    ![](/assets/images/platform/turtlebot3/autonomous_driving/modify_image_projection_image_extrinsic_calib.png)
+    > Result from parameter modification.   
+  
 #### [Settings for Recognition](#settings-for-recognition)
 
 **NOTE**: Be sure to proceed to this instruction after all calibration steps are successfully complete.
@@ -224,7 +241,30 @@ The followings instructions describe how to use the lane detection feature and t
     **NOTE**: Be sure that yellow lane is placed left side of the robot and White lane is placed right side of the robot. 
     {: .notice}
 
-2. Use the command on `Remote PC`.
+2. Launch roscore on `Remote PC`.
+``` bash
+$ roscore
+```
+
+3. Trigger the camera on `SBC`.
+``` bash
+$ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_camera_pi.launch
+```
+
+3. Open terminal and use the command on `Remote PC`.
+``` bash
+$ export AUTO_IN_CALIB=action
+$ export GAZEBO_MODE=false
+$ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_intrinsic_camera_calibration.launch
+```
+
+4. Open terminal and use the command on `Remote PC`.
+``` bash
+$ export AUTO_EX_CALIB=action
+$ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_extrinsic_camera_calibration.launch
+```
+
+5. Use the command on `Remote PC`.
 ``` bash
 $ export AUTO_DT_CALIB=calibration
 $ roslaunch turtlebot3_autorace_detect turtlebot3_autorace_detect_lane.launch
@@ -234,26 +274,41 @@ $ roslaunch turtlebot3_autorace_detect turtlebot3_autorace_detect_lane.launch
 ```
 $ rqt
 ```
-  `What to do with rqt?`
-    1. Click **plugins** > **visualization** > **Image view**; Multiple windows will be present.
-    2. Select three topics: `/detect/image_yellow_lane_marker/compressed`, `/detect/image_lane/compressed`, and `/detect/image_white_lane_marker/compressed`
-    - Left (Yellow line) and Right (White line) screen show a filtered image.
-    - Center screen is a view of the camera from TurtleBot3. 
+
+4. Click **plugins** > **visualization** > **Image view**; Multiple windows will be present.
+  
+5. Select three topics: `/detect/image_yellow_lane_marker/compressed`, `/detect/image_lane/compressed`, and `/detect/image_white_lane_marker/compressed`
+    - Left (Yellow line) and Right (White line) screen show a filtered image.      
+    ![](/assets/images/platform/turtlebot3/autonomous_driving/rqt_yellow_lane_detection.png)  
+    > `/detect/image_yellow_lane_marker/compressed` topic    
+    
+    ![](/assets/images/platform/turtlebot3/autonomous_driving/rqt_white_lane_detection.png)
+    > `/detect/image_white_lane_marker/compressed` topic
+    
+    - Center screen is a view of the camera from TurtleBot3.      
+    ![](/assets/images/platform/turtlebot3/autonomous_driving/rqt_image_lane.png)
+    > `/detect/image_lane/compressed` topic
 
 4. Execute rqt_reconfigure on `Remote PC`.
 ``` bash
 $ rosrun rqt_reconfigure rqt_reconfigure
 ```
+      
+6. Click **Detect Lane** then adjust parameters to do line color filtering.
 
-5. On the screen, adjust the value of `/camera/image_projection` and `/camera/image_compensation_projection`.
-  - They carries out visual modifications on the image.
-  - `image_projection` changes the shape of red rectangle box of `/camera/image_extrinsic_calib/compressed` image.  
-  - Intrinsic camera calibration will transform the image surrounded by the red rectangle, and will show the image that looks from over the lane.
-  - Then, overwrite value on to the `lane.yaml` file in  `turtlebot3_autorace_detect/param/lane/`. This will make the camera set its parameters as you set here from next launching.
-
-    **TIP**: Calibration process of line color filtering is sometimes difficult because of your physical environment which includes the luminance of light in the room, etc. Hence, you should have patience to carry out this procedure. To make everything quickly, put the value of `turtlebot3_autorace_detect/param/lane/lane.yaml` on the reconfiguration parameter, then start calibration. Calibrate hue low - high value at first. (1) Hue value means the color, and every colors, like `yellow`, `white`, have their own region of hue value (refer to hsv map). Then calibrate saturation low - high value. (2) Every colors have also their own field of saturation. Finally, calibrate the lightness low - high value. (3) In the source code, however, have auto-adjustment function, so calibrating lightness low value is meaningless. Just put the lightness high value to 255. Clearly filtered line image will give you clear result of the lane.
+      ![](/assets/images/platform/turtlebot3/autonomous_driving/result_of_ybw_configuration_01.png)  
+      > List of Detect Lane Parameters
+      
+      ![](/assets/images/platform/turtlebot3/autonomous_driving/result_of_ybw_configuration_02.png)
+      > Filtered Image resulted from adjusting parameters at rqt_reconfigure
+    
+    **TIP**: Calibration process of line color filtering is sometimes difficult due to physical environment, such as the luminance of light in the room and etc. To make everything quickly, put the value of **lane.yaml** file located in **turtlebot3_autorace_[Autorace_Misson]_detect/param/lane/** on the reconfiguration parameter, then start calibration. Calibrate hue low - high value at first. (1) Hue value means the color, and every colors, like `yellow`, `white`, have their own region of hue value (refer to hsv map). Then calibrate saturation low - high value. (2) Every colors have also their own field of saturation. Finally, calibrate the lightness low - high value. (3) In the source code, however, have auto-adjustment function, so calibrating lightness low value is meaningless. Just put the lightness high value to 255. Clearly filtered line image will give you clear result of the lane.
     {: .notice--success}
 
+7. Open **lane.yaml** file located in **turtlebot3_autorace_[Autorace_Misson]_detect/param/lane/**. You need to write modified values to the file. This will make the camera set its parameters as you set here from next launching. 
+
+    ![](/assets/images/platform/turtlebot3/autonomous_driving/write_lane_yaml.png)
+    
 6. Close both **rqt_rconfigure** and **turtlebot3_autorace_detect_lane**.
 
 7. Open terminal and use the command on `Remote PC`.  
@@ -264,12 +319,12 @@ $ roslaunch turtlebot3_autorace_detect turtlebot3_autorace_detect_lane.launch
 
 8. Check if the results come out correctly.
     
-    - Open terminal on `Remote PC`, and use the command.
+    - Open terminal and use the command on `Remote PC`.
     ``` bash
     $ roslaunch turtlebot3_autorace_control turtlebot3_autorace_control_lane.launch
     ```
 
-    - Open terminal on `TurtleBot SBC`, and use the command.  
+    - Open terminal and use the command on `Remote PC`. 
     ``` bash
     $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
     ```
@@ -295,16 +350,16 @@ TurtleBot3 can detect traffic signs using a node with `SIFT algorithm`, and perf
 $ rqt_image_view
 ```
 
-4. Click **/camera/image_compensated** topic in the select box. A screen will show the view from TurtleBot3.
+4. Click `/camera/image_compensated` topic in the select box. A screen will show the view from TurtleBot3.
 5. Capture the picture from `Remote PC`，and edit it with a photo editor. 
-6. Place the edited picture to turtlebot3_autorace package you've placed `/turtlebot3_autorace/turtlebot3_autorace_detect/file/detect_sign/` and rename it as you want. (Although, you should change the file name written in the source `detect_sign.py`, if you want to change the default file names.)
+6. Place the edited picture to turtlebot3_autorace package you've placed **/turtlebot3_autorace/turtlebot3_autorace_detect/file/detect_sign/** and rename it as you want. (Although, you should change the file name written in the source **detect_sign.py** file, if you want to change the default file names.)
 
-7. Open terminal on `Remote PC`, and use the command.
+7. Open terminal and use the command on `Remote PC`.
 ``` bash
 $ roslaunch turtlebot3_autorace_detect turtlebot3_autorace_detect_sign.launch
 ```
 
-8. Open terminal on `Remote PC`, and use the command. 
+8. Open terminal and use the command on `Remote PC`.
 ```bash
 $ rqt_image_view
 ```
@@ -327,7 +382,7 @@ To provide various conditions for a robot application development, the game prov
 
 Traffic Light is the first mission of AutoRace. TurtleBot3 should see the sign of traffic lights, perfectly compute the given situation, and then start to drive (or wait until the proper traffic sign)
 
-1. Open terminal and use the command on `Remote PC` 
+1. Open terminal and use the command on `Remote PC`.
 ``` bash
 $ export AUTO_IN_CALIB=action
 ```
