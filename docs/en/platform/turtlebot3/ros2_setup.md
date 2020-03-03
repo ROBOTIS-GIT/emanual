@@ -10,16 +10,16 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 27
+page_number: 29
 ---
 
 <div style="counter-reset: h1 15"></div>
 
-# [Setup](#setup)
+# [[ROS 2] Setup](#ros-2-setup)
 
 {% capture notice_01 %}
 **NOTE**:
-- The test is done on `Ubuntu 18.04` and `ROS 2 Dashing Diademata`.
+- The test is done on `Ubuntu 18.04` and `ROS Dashing Diademata`.
 - These instructions are supposed to be performed with a remote PC and SBC in TurtleBot.
 - You can ask any questions on [ROS Answers](https://answers.ros.org/questions/) if you are in touble to follow the instruction.
 {% endcapture %}
@@ -241,7 +241,7 @@ Mem:           912M         97M        263M        4.4M        550M        795M
 Swap:          1.0G          0B        1.0G
 ```
 
-### Install ROS 2 Dashing Diademata
+### Install ROS Dashing Diademata
 
 As TurtleBot3 operates on ROS, it requies to install ROS 2 (Dashing Diademata) on **SBC of TurtleBot3**. Following link will guide you for installing ROS 2.
 
