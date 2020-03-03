@@ -25,29 +25,27 @@ page_number: 24
 The contents in e-Manual can be updated without a previous notice. Therefore, some video may differ from the contents in e-Manual.
 {: .notice--warning} 
 
-The following instruction describes how to build autonomous driving TurtleBot3 on ROS using AutoRace packages. 
+The following instruction describes how to build the autonomous driving TurtleBot3 on ROS by using AutoRace packages. 
 
 ## [What you need for Autonomous Driving](#what-you-need-for-autonomous-driving)
 
 `TurtleBot3 Burger`  
-- It is the basic model to use Autonomous Driving feature. 
+- It is the basic model to use AutoRace packages for the autonomous driving on ROS. 
 - Provided source codes, AutoRace Packages, are made based on TurtleBot3 Burger.
 
 `Remote PC`  
 - It communicates with an single board computer (SBC) on Turtlebot3.
-- Laptop, desktop, or other devices which run ROS 1, can be used.  
+- Laptop, desktop, or other devices with ROS 1.
 
 `Raspberry Pi camera module with a camera mount`  
-- You can use a different module if it can be used on ROS.
-- Source codes provided to calibrate the camera are made based on ([Fisheye Lens](https://www.waveshare.com/rpi-camera-g.htm)) module.   
+- You can use a different module if ROS supports it.
+- Source codes provided to calibrate the camera are created based on ([Fisheye Lens](https://www.waveshare.com/rpi-camera-g.htm)) module.   
 
 `AutoRace tracks and objects`  
 - Download 3D CAD files for AutoRace tracks, Traffic signs, traffic lights and other objects at [ROBOTIS_GIT/autorace](https://github.com/ROBOTIS-GIT/autorace_track).
 - Download a refree system at [ROBOTIS-GIT/autorace_referee](https://github.com/ROBOTIS-GIT/autorace_referee)
 
-## [Getting Started](#getting-started)
-
-### [Install Autorace Packages](#install-autorace-packages)
+## [Install Autorace Packages](#install-autorace-packages)
 
 The following instructions describes how to install packages and to calibrate camera.
 
@@ -63,19 +61,20 @@ $ cd ~/catkin_ws && catkin_make
 $ sudo apt-get install ros-kinetic-image-transport ros-kinetic-cv-bridge ros-kinetic-vision-opencv python-opencv libopencv-dev ros-kinetic-image-proc
 ```
 
-3. Calibrate Camera.
-    - See [How to Calibrate Camera](#how-to-calibrate-camera) step by step.
+3. You need to [Calibrate a Camera on SBC](#calibrate-a-camera-on-sbc).
 
-### [How to Calibrate Camera](#how-to-calibrate-camera)
+## [Calibrate a Camera on SBC](#calibrate-a-camera-on-sbc)
 
-#### [Camera Imaging Calibration](#camera-imaging-calibration)
+Calibrating the camera is very important for autonomous driving. The following describes how to simply calibrate the camera step by step. 
 
-1. Lanuch roscore on `Remote PC`.
+### [Camera Imaging Calibration](#camera-imaging-calibration)
+
+1. Launch roscore on `Remote PC`.
 ``` bash
 $ roscore
 ```
 
-2. Trigger the camera on `SBC`
+2. Trigger the camera on `SBC`.
 ``` bash
 $ roslaunch turtlebot3_autorace_${Autorace_Misson}_camera turtlebot3_autorace_camera_pi.launch
 ```
@@ -88,7 +87,7 @@ $ roslaunch turtlebot3_autorace_${Autorace_Misson}_camera turtlebot3_autorace_ca
 $ rqt_image_view
 ```
 
-4. Click **/camera/image/compressed** (or **/camera/image/**) topic on the check box.
+4. Select **/camera/image/compressed** (or **/camera/image/**) topic on the check box.
 
     ![](/assets/images/platform/turtlebot3/autonomous_driving/tb3_click_compressed.png)
 
@@ -99,13 +98,15 @@ $ rosrun rqt_reconfigure rqt_reconfigure
 
 6. Click **camera**, and modify parameter value in order to see clear images from the camera. 
 
-    ![](/assets/images/platform/turtlebot3/autonomous_driving/rqt_reconfigure_camera_yaml_edit.png)
+    ![](/assets/images/platform/turtlebot3/autonomous_driving/rqt_reconfigure_camera_yaml_edit_01.png)
 
-7. Open **camera.yaml** file located in **turtlebot3_autorace_[Autorace_Misson]_camera/calibration/camera_calibration** folder, and write modified values to the file.
+7. Open **camera.yaml** file located in **turtlebot3_autorace_[Autorace Misson]_camera/calibration/camera_calibration** folder.
+
+8. Write modified values to the file.
 
     ![](/assets/images/platform/turtlebot3/autonomous_driving/rqt_reconfigure_camera_yaml_edit_02.png)
 
-#### [Intrinsic Camera Calibration](#tutorials-42-intrinsic-camera-calibration)
+### [Intrinsic Camera Calibration](#intrinsic-camera-calibration)
 
 Print a checkerboard on A4 size paper. The checkerboard is used for Intrinsic Camera Calibration.
 - The checkerboard is stored at **turtlebot3_autorace_camera/data/checkerboard_for_calibration.pdf**
@@ -128,25 +129,42 @@ $ roslaunch turtlebot3_autorace_${Autorace_Misson}_camera turtlebot3_autorace_ca
     **WARNING**: Be sure to specify `${Autorace_Misson}` (i.e, **roslaunch turtlebot3_autorace_traffic_light_camera turtlebot3_autorace_camera_pi.launch**)
     {: .notice--warning}
 
-3. Execute the calibration window on `Remote PC` .
+3. Run a intrinsic camera calibration launch file on `Remote PC`.
 ``` bash
 $ export AUTO_IN_CALIB=calibration
 $ export GAZEBO_MODE=false
-$ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_intrinsic_camera_calibration.launch
+$ roslaunch turtlebot3_autorace_${Autorace_Misson}_camera turtlebot3_autorace_intrinsic_camera_calibration.launch
 ```
 
 4. Use the checkerboard to calibrate the camera, and click **CALIBRATE**.   
 
     ![](/assets/images/platform/turtlebot3/autonomous_driving/intrinsic_camera_calibration_test.png)
 
-5. Save the data.  
+5. Click **Save** to save the intrinsic calibration data.  
 
     ![](/assets/images/platform/turtlebot3/autonomous_driving/intrinsic_camera_calibration_capture.png)
 
-6. The data will be written to **camerav2_320x240_30fps.yaml** at **turtlebot3_autorace_camera/calibration/intrinsic_calibration**    
-    ![](/assets/images/platform/turtlebot3/autonomous_driving/camerav2_320_240_30fps.png)
+6. **calibrationdata.tar.gz** folder will be created at **/tmp** folder.   
 
-#### [Extrinsic Camera Calibration](#tutorials-43-extrinsic-camera-calibration)
+    ![](/assets/images/platform/turtlebot3/autonomous_driving/camera_320_240_saved_path_01.png)
+
+7. Extract **calibrationdata.tar.gz** folder, and open **ost.yaml**. 
+    
+    ![](/assets/images/platform/turtlebot3/autonomous_driving/open_ost_yaml.png)  
+    > ost.yaml  
+    
+    ![](/assets/images/platform/turtlebot3/autonomous_driving/ost_yaml.png)  
+    > Intrinsic Calibration Data in ost.yaml
+
+8. Copy and paste the data from **ost.yaml** to **camerav2_320x240_30fps.yaml**.
+    
+    ![](/assets/images/platform/turtlebot3/autonomous_driving/open_320_240_30fps.png)  
+    > camerav2_320x240_30fps.yaml
+    
+    ![](/assets/images/platform/turtlebot3/autonomous_driving/camerav2_320_240_30fps.png)
+    > Intrinsic Calibration Data in camerav2_320x240_30fps.yaml
+
+### [Extrinsic Camera Calibration](#extrinsic-camera-calibration)
 
 1. Launch roscore on `Remote PC`.
 ``` bash
@@ -155,20 +173,23 @@ $ roscore
 
 2. Trigger the camera on `SBC`.
 ``` bash
-$ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_camera_pi.launch
+$ roslaunch turtlebot3_autorace_${Autorace_Misson}_camera turtlebot3_autorace_camera_pi.launch
 ```
 
-3. Open terminal and use the command on `Remote PC`.
+    **WARNING**: Be sure to specify `${Autorace_Misson}` (i.e, **roslaunch turtlebot3_autorace_traffic_light_camera turtlebot3_autorace_camera_pi.launch**)
+    {: .notice--warning}
+
+3. Use the command on `Remote PC`.
 ``` bash
 $ export AUTO_IN_CALIB=action
 $ export GAZEBO_MODE=false
-$ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_intrinsic_camera_calibration.launch
+$ roslaunch turtlebot3_autorace_${Autorace_Misson}_camera turtlebot3_autorace_intrinsic_camera_calibration.launch
 ```
 
-4. Open terminal and use the command on `Remote PC`.
+4. Run the extrinsic camera calibration launch file on `Remote PC`.
 ``` bash
 $ export AUTO_EX_CALIB=calibration
-$ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_extrinsic_camera_calibration.launch
+$ roslaunch turtlebot3_autorace_${Autorace_Misson}_camera turtlebot3_autorace_extrinsic_camera_calibration.launch
 ```
 
 5. Execute rqt on `Remote PC`.
@@ -202,10 +223,10 @@ $ rosrun rqt_reconfigure rqt_reconfigure
     ![](/assets/images/platform/turtlebot3/autonomous_driving/modify_image_projection_image_extrinsic_calib.png)
     > Result from parameter modification.   
   
-#### [Settings for Recognition](#settings-for-recognition)
+### [Settings for Recognition](#settings-for-recognition)
 
-**NOTE**: Be sure to proceed to this instruction after all calibration steps are successfully complete.
-{: .notice}
+When you complete all the camera calibration (Camera Imaging Calibration, Intrinsic Calibration, Extrinsic Calibration), be sure that the calibration is successfully applied to the camera.  
+The following instruction describes settings for recognition. 
 
 1. Launch roscore on `Remote PC`.
 ``` bash
@@ -214,27 +235,30 @@ $ roscore
 
 2. Trigger the camera on `SBC`.
 ``` bash
-$ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_camera_pi.launch
+$ roslaunch turtlebot3_autorace_${Autorace_Misson}_camera turtlebot3_autorace_camera_pi.launch
 ```
 
-3. Open terminal and use the command on `Remote PC`.
+    **WARNING**: Be sure to specify `${Autorace_Misson}` (i.e, **roslaunch turtlebot3_autorace_traffic_light_camera turtlebot3_autorace_camera_pi.launch**)
+    {: .notice--warning}
+
+3. Run a intrinsic camera calibration launch file on `Remote PC`.
 ``` bash
 $ export AUTO_IN_CALIB=action
-$ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_intrinsic_camera_calibration.launch
+$ roslaunch turtlebot3_autorace_${Autorace_Misson}_camera turtlebot3_autorace_intrinsic_camera_calibration.launch
 ```
 
 4. Open terminal and use the command on `Remote PC`.
 ``` bash
 $ export AUTO_EX_CALIB=action
-$ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_extrinsic_camera_calibration.launch
+$ roslaunch turtlebot3_autorace_${Autorace_Misson}_camera turtlebot3_autorace_extrinsic_camera_calibration.launch
 ```
     From now, the following descriptions will mainly adjust `feature detector / color filter` for object recognition. Every adjustment after here is independent to each other's process. However, if you want to adjust each parameters in series, complete every adjustment perfectly, then continue to next.
 
-### [Lane Detection](#lane-detection)
+## [Lane Detection](#lane-detection)
 
 Lane detection package allows Turtlebot3 to drive between two lanes without external influence.  
 
-The followings instructions describe how to use the lane detection feature and to calibrate camera via rqt.
+The following instructions describe how to use the lane detection feature and to calibrate camera via rqt.
 
 1. Place TurtleBot3 between yellow and white lanes.
     
@@ -248,26 +272,29 @@ $ roscore
 
 3. Trigger the camera on `SBC`.
 ``` bash
-$ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_camera_pi.launch
+$ roslaunch turtlebot3_autorace_${Autorace_Misson}_camera turtlebot3_autorace_camera_pi.launch
 ```
 
-3. Open terminal and use the command on `Remote PC`.
+    **WARNING**: Be sure to specify `${Autorace_Misson}` (i.e, **roslaunch turtlebot3_autorace_traffic_light_camera turtlebot3_autorace_camera_pi.launch**)
+    {: .notice--warning}
+
+3. Run a intrinsic camera calibration launch file on `Remote PC`.
 ``` bash
 $ export AUTO_IN_CALIB=action
 $ export GAZEBO_MODE=false
-$ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_intrinsic_camera_calibration.launch
+$ roslaunch turtlebot3_autorace_${Autorace_Misson}_camera turtlebot3_autorace_intrinsic_camera_calibration.launch
 ```
 
-4. Open terminal and use the command on `Remote PC`.
+4. Run a extrinsic camera calibration launch file on `Remote PC`.
 ``` bash
 $ export AUTO_EX_CALIB=action
-$ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_extrinsic_camera_calibration.launch
+$ roslaunch turtlebot3_autorace_${Autorace_Misson}_camera turtlebot3_autorace_extrinsic_camera_calibration.launch
 ```
 
-5. Use the command on `Remote PC`.
+5. Run a lane detection launch file on `Remote PC`
 ``` bash
 $ export AUTO_DT_CALIB=calibration
-$ roslaunch turtlebot3_autorace_detect turtlebot3_autorace_detect_lane.launch
+$ roslaunch turtlebot3_autorace_${Autorace_Misson}_detect turtlebot3_autorace_detect_lane.launch
 ```
 
 3. Execute rqt on `Remote PC`.
@@ -277,17 +304,17 @@ $ rqt
 
 4. Click **plugins** > **visualization** > **Image view**; Multiple windows will be present.
   
-5. Select three topics: `/detect/image_yellow_lane_marker/compressed`, `/detect/image_lane/compressed`, and `/detect/image_white_lane_marker/compressed`
+5. Select three topics at each image view: `/detect/image_yellow_lane_marker/compressed`, `/detect/image_lane/compressed`, `/detect/image_white_lane_marker/compressed`
     - Left (Yellow line) and Right (White line) screen show a filtered image.      
     ![](/assets/images/platform/turtlebot3/autonomous_driving/rqt_yellow_lane_detection.png)  
-    > `/detect/image_yellow_lane_marker/compressed` topic    
+    > Image view of `/detect/image_yellow_lane_marker/compressed` topic    
     
     ![](/assets/images/platform/turtlebot3/autonomous_driving/rqt_white_lane_detection.png)
-    > `/detect/image_white_lane_marker/compressed` topic
+    > Image view of `/detect/image_white_lane_marker/compressed` topic
     
-    - Center screen is a view of the camera from TurtleBot3.      
+    - Center screen is the view of the camera from TurtleBot3.      
     ![](/assets/images/platform/turtlebot3/autonomous_driving/rqt_image_lane.png)
-    > `/detect/image_lane/compressed` topic
+    > Image view of `/detect/image_lane/compressed` topic
 
 4. Execute rqt_reconfigure on `Remote PC`.
 ``` bash
@@ -314,14 +341,14 @@ $ rosrun rqt_reconfigure rqt_reconfigure
 7. Open terminal and use the command on `Remote PC`.  
 ``` bash
 $ export AUTO_DT_CALIB=action
-$ roslaunch turtlebot3_autorace_detect turtlebot3_autorace_detect_lane.launch
+$ roslaunch turtlebot3_autorace_${Autorace_Misson}_detect turtlebot3_autorace_detect_lane.launch
 ```
 
 8. Check if the results come out correctly.
     
     - Open terminal and use the command on `Remote PC`.
     ``` bash
-    $ roslaunch turtlebot3_autorace_control turtlebot3_autorace_control_lane.launch
+    $ roslaunch turtlebot3_autorace_${Autorace_Misson}_control turtlebot3_autorace_control_lane.launch
     ```
 
     - Open terminal and use the command on `Remote PC`. 
@@ -331,7 +358,7 @@ $ roslaunch turtlebot3_autorace_detect turtlebot3_autorace_detect_lane.launch
     
 9. After using the commands, TurtleBot3 will start to run.
 
-### [Traffic Sign Detection](#traffic-sign-detection)
+## [Traffic Sign Detection](#traffic-sign-detection)
 
 TurtleBot3 can detect traffic signs using a node with `SIFT algorithm`, and perform programmed tasks while it drives on a built track. Follow the provided instructions to use Traffic sign detection. 
 
@@ -350,13 +377,13 @@ TurtleBot3 can detect traffic signs using a node with `SIFT algorithm`, and perf
 $ rqt_image_view
 ```
 
-4. Click `/camera/image_compensated` topic in the select box. A screen will show the view from TurtleBot3.
+4. Select `/camera/image_compensated` topic in the select box. A screen will show the view from TurtleBot3.
 5. Capture the picture from `Remote PC`，and edit it with a photo editor. 
 6. Place the edited picture to turtlebot3_autorace package you've placed **/turtlebot3_autorace/turtlebot3_autorace_detect/file/detect_sign/** and rename it as you want. (Although, you should change the file name written in the source **detect_sign.py** file, if you want to change the default file names.)
 
 7. Open terminal and use the command on `Remote PC`.
 ``` bash
-$ roslaunch turtlebot3_autorace_detect turtlebot3_autorace_detect_sign.launch
+$ roslaunch turtlebot3_autorace_${Autorace_Misson}_detect turtlebot3_autorace_detect_sign.launch
 ```
 
 8. Open terminal and use the command on `Remote PC`.
@@ -364,7 +391,7 @@ $ roslaunch turtlebot3_autorace_detect turtlebot3_autorace_detect_sign.launch
 $ rqt_image_view
 ```
 
-9. Click `/detect/image_traffic_sign/compressed` topic in the select box. A screen will show the result of traffic sign detection.
+9. Select `/detect/image_traffic_sign/compressed` topic in the select box. A screen will show the result of traffic sign detection.
 
 ## [TurtleBot3 AutoRace 2020](#turtlebot3-autorace-2020)
 
@@ -373,234 +400,229 @@ $ rqt_image_view
 The AutoRace is a competition for autonomous driving robot platforms.  
 To provide various conditions for a robot application development, the game provide structural regulation as less as possible. Provided open sources are based on ROS, and can be applied to this competition. The contents can be continually updated. Join the competition and show your skill.
 
-### [AutoRace Missons](#autorace-missions)
-
 **NOTE**: Be sure to read [Autonomous Driving](#autonomous-driving) in order to start missions.
 {: .notice}
 
-#### [Mission 1: Traffic Light](#mission-1-traffic-light)
+### [Mission 1: Traffic Light](#mission-1-traffic-light)
 
 Traffic Light is the first mission of AutoRace. TurtleBot3 should see the sign of traffic lights, perfectly compute the given situation, and then start to drive (or wait until the proper traffic sign)
 
+#### [Camera Calibration for Traffic Light](#camera-calibration-for-traffic-lights)
+
 1. Open terminal and use the command on `Remote PC`.
+```bash
+$ export AUTO_DT_CALIB=calibration
+$ roslaunch turtlebot3_autorace_traffic_light_detect turtlebot3_autorace_detect_traffic_light.launch
+```
+
+2. Excute rqt on `Remote PC`.
+```bash
+rqt
+```
+
+3. Select four topics: `/detect/image_red_light`, `/detect/image_yellow_light`, `/detect/image_green_light`, `/detect/image_traffic_light`. 
+
+4. Excute rqt_reconfigure.
+```bash
+$ rosrun rqt_reconfigure rqt_reconfigure
+```
+
+5. Adjust parameters. 
+
+6. Open **traffic_light.yaml** file located at **turtlebot3_autorace_traffic_light_detect/param/traffic_light/**.
+
+7. Write modified values to the file and save.  
+
+8. Open terminal and use the command on `Remote PC`.
+```bash
+$ export AUTO_DT_CALIB=action
+$ roslaunch turtlebot3_autorace_traffic_light_detect turtlebot3_autorace_detect_traffic_light.launch
+```
+
+9. Open terminal and use the command on `Remote PC`.
+```bash
+$ export AUTO_DT_CALIB=action
+$ roslaunch turtlebot3_autorace_traffic_light_detect turtlebot3_autorace_detect_traffic_light.launch
+```
+
+10. Execute rqt_image_view.
+```bash
+$ rqt_image_view
+```
+
+11. See traffic light calibration is successfully applied. 
+
+#### [Run Traffic Light Mission](#run-traffic-light-mission)
+
+Be sure to read [Camera Calibration for Traffic Lights](#camera-calibration-for-traffic-lights) before running the traffic light node.   
+{: .notice}
+
+1. Use the command on `Remote PC`.
 ``` bash
 $ export AUTO_IN_CALIB=action
+$ export GAZEBO_MODE=false
+$ roslaunch turtlebot3_autorace_traffic_light_camera turtlebot3_autorace_intrinsic_camera_calibration.launch
 ```
 
-2. Open terminal and use the command on `Remote PC`
-```bash
-$ roslaunch turtlebot3_autorace_traffic_light_camera turtlebot3_autorace_intrinsic_camera_calibration.launch 
-```
-
-3. Open terminal and use the command on `Remote PC`
+2. Use the command on `Remote PC`.
 ```bash
 $ export AUTO_EX_CALIB=action
 $ export AUTO_DT_CALIB=action
+$ roslaunch turtlebot3_autorace_traffic_light_core turtlebot3_autorace_core.launch
 ```
 
-4. Open terminal and use the command on `Remote PC`
-```bash
-$ roslaunch turtlebot3_autorace_traffic_light_core turtlebot3_autorace_core.launch 
-```
-
-5. Open terminal and use the command on `Remote PC`
+3. Use the command on `Remote PC`.
 ```bash
 $ rostopic pub -1 /core/decided_mode std_msgs/UInt8 "data: 3"
 ```
 
-#### [Mission 2: Intersection](#mission-2-intersection)
+### [Mission 2: Intersection](#mission-2-intersection)
 
 Intersection is the second mission of AutoRace. TurtleBot3 should detect the specific sign (such as a curve sign) and go to the right direction at the intersection course.
 
-1. Open terminal and use the command on `Remote PC`
+#### [How to Run Intersection Mission](#how-to-run-intersection-mission)
+
+1. Use the command on `Remote PC`.
 ```bash
 $ export AUTO_IN_CALIB=action
+$ roslaunch turtlebot3_autorace_intersection_camera turtlebot3_autorace_intrinsic_camera_calibration.launch
 ```
 
-2. Open terminal and use the command on `Remote PC`
-```bash
-$ roslaunch turtlebot3_autorace_intersection_camera turtlebot3_autorace_intrinsic_camera_calibration.launch 
-```
-
-3. Open terminal and use the command on `Remote PC`
+2. Use the command on `Remote PC`.
 ```bash
 $ export AUTO_EX_CALIB=action
 $ export AUTO_DT_CALIB=action
+$ roslaunch turtlebot3_autorace_intersection_core turtlebot3_autorace_core.launch
 ```
 
-4. Open terminal and use the command on `Remote PC`
-```bash
-$ roslaunch turtlebot3_autorace_intersection_core turtlebot3_autorace_core.launch 
-```
-
-5. Open terminal and use the command on `Remote PC`
-```bash
-rostopic pub -1 /core/decided_mode std_msgs/UInt8 "data: 2"
-```
-
-#### [Mission 3: Construction](#mission-3-construction)
-
-Construction is the third mission of AutoRace. TurtleBot3 should avoid constructions on the road. 
-
-1. Open terminal and use the command on `Remote PC` 
-```bash
-$ export AUTO_IN_CALIB=action
-```
-
-2. Open terminal and use the command on `Remote PC`
-```bash
-$ roslaunch turtlebot3_autorace_construction_camera turtlebot3_autorace_intrinsic_camera_calibration.launch 
-```
-
-3. Open terminal and use the command on `Remote PC`
-```bash
-$ export AUTO_EX_CALIB=action
-$ export AUTO_DT_CALIB=action
-```
-
-4. Open terminal and use the command on `Remote PC`
-```bash
-$ roslaunch turtlebot3_autorace_construction_core turtlebot3_autorace_core.launch 
-```
-
-5. Open terminal and use the command on `Remote PC`
+3. Use the command on `Remote PC`.
 ```bash
 $ rostopic pub -1 /core/decided_mode std_msgs/UInt8 "data: 2"
 ```
 
-#### [Mission 4: Parking](#mission-4-parking)
+### [Mission 3: Construction](#mission-3-construction)
 
-Parking is the fourth misson of AutoRace. TurtleBot3 should detect the parking sign, and properly park by oneself at a parking lot on the track.
+Construction is the third mission of AutoRace. TurtleBot3 should avoid constructions when it is running on the track. 
 
-1. Open terminal and use the command on `Remote PC`
+#### [How to Run Construction Mission](#how-to-run-construction-mission)
+
+1. Use the command on `Remote PC`. 
 ```bash
 $ export AUTO_IN_CALIB=action
+$ export GAZEBO_MODE=false
+$ roslaunch turtlebot3_autorace_construction_camera turtlebot3_autorace_intrinsic_camera_calibration.launch
 ```
 
-2. Open terminal and use the command on `Remote PC`
-```
-$ roslaunch turtlebot3_autorace_parking_camera turtlebot3_autorace_intrinsic_camera_calibration.launch 
-```
-
-3. Open terminal and use the command on `Remote PC`
-```
+2. Use the command on `Remote PC`.
+```bash
 $ export AUTO_EX_CALIB=action
 $ export AUTO_DT_CALIB=action
+$ roslaunch turtlebot3_autorace_construction_core turtlebot3_autorace_core.launch
 ```
 
-4. Open terminal and use the command on `Remote PC`
-```bash
-$ roslaunch turtlebot3_autorace_parking_core turtlebot3_autorace_core.launch 
-```
-
-5. Open terminal and use the command on `Remote PC`
+3. Use the command on `Remote PC`.
 ```bash
 $ rostopic pub -1 /core/decided_mode std_msgs/UInt8 "data: 2"
 ```
 
-#### [Mission 5: Stop Bar](#mission-5-stop-bar)
+### [Mission 4: Parking](#mission-4-parking)
 
-Stop Bar is the fifth mission of AutoRace. TurtleBot3 should detect a level crossing on the track while driving, and stop moving until it opens.
+Parking is the fourth mission of AutoRace. TurtleBot3 should detect the parking sign, and park itself at a parking lot.
 
-1. Open terminal and use the command on `Remote PC`
+#### [How to Run Parking Mission](#how-to-run-parking-mission)
+
+1. Use the command on `Remote PC`.
 ```bash
 $ export AUTO_IN_CALIB=action
+$ export GAZEBO_MODE=false
+$ roslaunch turtlebot3_autorace_parking_camera turtlebot3_autorace_intrinsic_camera_calibration.launch
 ```
 
-2. Open terminal and use the command on `Remote PC`
-```bash
-$ roslaunch turtlebot3_autorace_stop_bar_camera turtlebot3_autorace_intrinsic_camera_calibration.launch 
-```
-
-3. Open terminal and use the command on `Remote PC`
+2. Use the command on `Remote PC`.
 ```bash
 $ export AUTO_EX_CALIB=action
 $ export AUTO_DT_CALIB=action
+$ roslaunch turtlebot3_autorace_parking_core turtlebot3_autorace_core.launch
 ```
 
-4. Open terminal and use the command on `Remote PC`
-```bash
-$ roslaunch turtlebot3_autorace_stop_bar_core turtlebot3_autorace_core.launch 
-```
-
-5. Open terminal and use the command on `Remote PC`
+3. Use the command on `Remote PC`.
 ```bash
 $ rostopic pub -1 /core/decided_mode std_msgs/UInt8 "data: 2"
 ```
 
-#### [Mission 6: Tunnel](#mission-6-tunnel)
+### [Mission 5: Level Crossing](#mission-5-level-crossing)
 
-Tunnel is the sixth mission of AutoRace. TurtleBot3 should go in the tunnel at the track, then go through the tunnel successfully.  
+Level Crossing is the fifth mission of AutoRace. When TurtleBot3 meets the level crossing during the drive, it should stop driving and wait until the level crossing opens. 
 
-1. Open terminal and use the command on `Remote PC`
+#### [Camera Calibration for Level Crossing](#camera-calibration-for-level-crossing)
+
+1. Use the command on `Remote PC`.
+```bash
+$ export AUTO_DT_CALIB=calibration
+$ roslaunch turtlebot3_autorace_level_crossing_detect turtlebot3_autorace_detect_level.launch
+```
+
+2. Execute rqt and select two topics: `/detect/image_level_color_filtered`, `/detect/image_level`
+```bash
+$ rqt
+```
+
+3. Run rqt_reconfigure.
+```bash
+$ rosrun rqt_reconfigure rqt_reconfigure
+```
+
+4. Select `/detect_level` and adjust parameters.
+
+5. Run detect level lanuch file.
+```bash
+$ export AUTO_DT_CALIB=action
+$ roslaunch turtlebot3_autorace_detect turtlebot3_autorace_detect_level.launch
+```
+
+#### [How to Run Level Crossing Mission](#how-to-run-level-crossing-mission)
+
+1. Use the command on `Remote PC`.
 ```bash
 $ export AUTO_IN_CALIB=action
+$ export GAZEBO_MODE=false
+$ roslaunch turtlebot3_autorace_level_crossing_camera turtlebot3_autorace_intrinsic_camera_calibration.launch
 ```
 
-2. Open terminal and use the command on `Remote PC`
+2. Use the command on `Remote PC`.
 ```bash
-$ roslaunch turtlebot3_autorace_tunnel_camera turtlebot3_autorace_intrinsic_camera_calibration.launch 
+$ export AUTO_EX_CALIB=action
+$ export AUTO_DT_CALIB=action
+$ roslaunch turtlebot3_autorace_level_crossing_core turtlebot3_autorace_core.launch
 ```
 
-3. Open terminal and use the command on `Remote PC`
+3. Use the command on `Remote PC`.
+```bash
+$ rostopic pub -1 /core/decided_mode std_msgs/UInt8 "data: 2"
+```
+
+### [Mission 6: Tunnel](#mission-6-tunnel)
+
+Tunnel is the sixth mission of AutoRace. TurtleBot3 should pass the tunnel successfully.
+
+#### [How to Run Tunnel Mission](#how-to-run-tunnel-mission)
+
+1. Use the command on `Remote PC`.
+```bash
+$ export AUTO_IN_CALIB=action
+$ export GAZEBO_MODE=false
+$ roslaunch turtlebot3_autorace_tunnel_camera turtlebot3_autorace_intrinsic_camera_calibration.launch
+```
+
+3. Use the command on `Remote PC`.
 ```bash
 $ export AUTO_EX_CALIB=action
 $ export AUTO_DT_CALIB=action
 $ export TURTLEBOT3_MODEL=burger
+$ roslaunch turtlebot3_autorace_tunnel_core turtlebot3_autorace_core.launch
 ```
 
-4. Open terminal and use the command on `Remote PC`
+4. Use the command on `Remote PC`.
 ``` bash
-$ roslaunch turtlebot3_autorace_tunnel_core turtlebot3_autorace_core.launch 
-```
-
-5. Open terminal and use the command on `Remote PC`
-```bash
 $ rostopic pub -1 /core/decided_mode std_msgs/UInt8 "data: 2"
 ```
-
-#### [Run Autonomous Driving](#run-autonomous-driving)
-
-1. From now, all the related nodes will be run in `action mode`. Close all `ROS-related programs` and `terminals` on `Remote PC` and `TurtleBot SBC`, if some were not closed yet. Then, put the robot on the lane correctly.
-
-2. Open new terminal then enter on `Remote PC`. 
-
-    ``` bash
-    $ roscore
-    ```
-
-3. Open new terminal, then enter the command on `TurtleBot SBC`
-
-    ``` bash
-    $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
-    ```
-
-4. Open new terminal, then enter the command on `TurtleBot SBC` 
-
-    ``` bash
-    $ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_camera_pi.launch
-    ```
-
-5. Open new terminal, then enter the command on `Remote PC`
-
-    ``` bash
-    $ export AUTO_IN_CALIB=action
-    $ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_intrinsic_camera_calibration.launch
-    ```
-
-6. Open new terminal, then enter the command on`Remote PC`
-
-    ``` bash
-    $ export AUTO_EX_CALIB=action
-    $ export AUTO_DT_CALIB=action
-    $ export TURTLEBOT3_MODEL=burger
-    $ roslaunch turtlebot3_autorace_core turtlebot3_autorace_core.launch
-    ```
-
-7. Open new terminal, then enter the command on `Remote PC` 
-
-    ``` bash
-    $ rostopic pub -1 /core/decided_mode std_msgs/UInt8 "data: 2"
-    ```
-
-    turtlebot3_autorace_core will control all system in the package (open and close the launch, nodes in the package.)

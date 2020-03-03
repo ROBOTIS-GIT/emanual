@@ -10,11 +10,12 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 24
+page_number: 25
 ---
 
 <div style="counter-reset: h1 13"></div>
-<div style="counter-reset: h2 2"></div>
+<div style="counter-reset: h2 6"></div>
+
 ## [TurtleBot3 AutoRace](#turtlebot3-autorace)
 
 ![](/assets/images/platform/turtlebot3/autonomous_driving/autorace_rbiz_challenge_2017_robots_1.png)

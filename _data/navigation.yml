@@ -15879,17 +15879,23 @@ turtlebot3:
     children: 
     - title: "What you need for Autonomous Driving"
       url: /platform/turtlebot3/autonomous_driving/#what-you-need-for-autonomous-driving
-    - title: "Getting Started"
-      url: /platform/turtlebot3/autonomous_driving/#getting-started
+    - title: "Install Autorace Packages"
+      url: /platform/turtlebot3/autonomous_driving/#install-autorace-packages
+    - title: "Calibrate a Camera on SBC"
+      url: /platform/turtlebot3/autonomous_driving/#calibrate-a-camera-on-sbc
       children:
-      - title: "Install Autorace Packages"
-        url: /platform/turtlebot3/autonomous_driving/#install-autorace-packages
-      - title: "How to Calibrate Camera"
-        url: /platform/turtlebot3/autonomous_driving/#how-to-calibrate-camera
-      - title: "Lane Detection"
-        url: /platform/turtlebot3/autonomous_driving/#lane-detection
-      - title: "Traffic Sign Detection"
-        url: /platform/turtlebot3/autonomous_driving/#traffic-sign-detection
+        - title: "Camera Imaging Calibration"
+          url: /platform/turtlebot3/autonomous_driving/#camera-imaging-calibration
+        - title: "Intrinsic Camera Calibration"
+          url: /platform/turtlebot3/autonomous_driving/#intrinsic-camera-calibration
+        - title: "Extrinsic Camera Calibration"
+          url: /platform/turtlebot3/autonomous_driving/#extrinsic-camera-calibration
+        - title: "Settings for Recognition"
+          url: /platform/turtlebot3/autonomous_driving/#settings-for-recognition
+    - title: "Lane Detection"
+      url: /platform/turtlebot3/autonomous_driving/#lane-detection
+    - title: "Traffic Sign Detection"
+      url: /platform/turtlebot3/autonomous_driving/#traffic-sign-detection
     - title: "TurtleBot3 AutoRace 2020"
       url: /platform/turtlebot3/autonomous_driving/#turtlebot3-autorace-2020
       children:

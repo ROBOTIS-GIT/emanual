@@ -10,10 +10,11 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
+page_number: 26
 ---
 
 <div style="counter-reset: h1 13"></div>
-<div style="counter-reset: h2 6"></div>
+<div style="counter-reset: h2 7"></div>
 
 ## [AutoRace with Gazebo](#autorace-with-gazebo)
 The AutoRace is provided by Gazebo. We created a environment TurtleBot3 AutoRace 2017 in R-BIZ Challenge.
