@@ -15,7 +15,7 @@ page_number: 15
 
 <div style="counter-reset: h1 7"></div>
 
-# [[ROS 1] Basic Operation](#ros-1-basic-operation)
+# [Basic Operation](#basic-operation)
 
 {% capture notice_02 %}
 {% include en/platform/turtlebot3/ros_book_info.md %}
@@ -30,7 +30,7 @@ page_number: 15
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Z4s18hlazb4" frameborder="0" allowfullscreen></iframe>
 
-The contents in e-Manual can be updated without a previous notice. Therefore, some video may differ from the contents in e-Manual.
+The contents in e-Manual may differ from contents of a provided video in e-Manaul as e-Manual is updated on a regular basis.
 {: .notice--warning} 
 
 ## [Basic Examples](#basic-examples)
@@ -42,7 +42,7 @@ The contents in e-Manual can be updated without a previous notice. Therefore, so
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Xg1pKFQY5p4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-The contents in e-Manual can be updated without a previous notice. Therefore, some video may differ from the contents in e-Manual.
+The contents in e-Manual may differ from contents of a provided video in e-Manaul as e-Manual is updated on a regular basis.
 {: .notice--warning} 
 
 ## [Additional Sensors](#additional-sensors)

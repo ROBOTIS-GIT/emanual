@@ -10,11 +10,11 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 36
+page_number: 34
 ---
 
 <div style="counter-reset: h1 22"></div>
 
-# [[ROS 2] Autonomous Driving](#ros-2-autonomous-driving)
+# [Autonomous Driving](#autonomous-driving)
 It will be released soon !
 {: .notice}

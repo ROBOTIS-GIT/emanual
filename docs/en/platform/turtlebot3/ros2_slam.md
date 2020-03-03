@@ -10,18 +10,18 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 32
+page_number: 30
 ---
 
 <div style="counter-reset: h1 18"></div>
 
-# [[ROS 2] SLAM](#ros-2-slam)
+# [SLAM](#slam)
   
 {% capture notice_01 %}
 **NOTE**: 
-- This instructions were tested on `Ubuntu 18.04` and `ROS Dashing Diademata`.
+- This instructions were tested on `Ubuntu 18.04` and `ROS2 Dashing Diademata`.
 - This instructions are supposed to be running on the remote PC. Please run the instructions below on your **Remote PC**.
-- Make sure to run the [Bringup](/docs/en/platform/turtlebot3/ros2_bringup/#bringup) instruction before use of the instruction.
+- Make sure to run the [ROS2 Bringup](/docs/en/platform/turtlebot3/ros2_bringup/#bringup) instruction before use of the instruction.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
       
@@ -36,7 +36,7 @@ Watch the video and see how accurate TurtleBot3 draws a map.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pJNSxDodhDk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-The contents in e-Manual can be updated without a previous notice. Therefore, some video may differ from the contents in e-Manual.
+The contents in e-Manual may differ from contents of a provided video in e-Manaul as e-Manual is updated on a regular basis.
 {: .notice--warning} 
 
 ## [Run SLAM Nodes](#run-slam-nodes)
@@ -198,9 +198,8 @@ The time for creating a map requires 55 minutes: the estimation of a travel dist
 - [Cartographer_ros]
     
 [export_turtlebot3_model]: /docs/en/platform/turtlebot3/export_turtlebot3_model
-
-[Bringup]: /docs/en/platform/turtlebot3/ros2_bringup/#bringup
-
+[ROS2 Bringup]: /docs/en/platform/turtlebot3/ros2_bringup/#bringup
+[ROS2 SLAM]: /docs/en/platform/turtlebot3/ros2_slam/#slam
 [Teleoperation]: /docs/en/platform/turtlebot3/ros2_basic_operation/#teleoperation
 [navigation2]: /docs/en/platform/turtlebot3/ros2_navigation2/#navigation2
 [Cartographer]: https://google-cartographer.readthedocs.io/en/latest/

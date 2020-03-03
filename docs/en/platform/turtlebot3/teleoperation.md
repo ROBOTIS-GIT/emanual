@@ -20,7 +20,7 @@ page_number: 17
   <h1 id="basic-operation"><a href="#basic-operation">Basic Operation</a></h1>
 <![end dummy Header 1]-->
 
-## [Teleoperation](#ros-teleoperation)
+## [Teleoperation](#teleoperation)
 
 ![](/assets/images/platform/turtlebot3/software/remote_pc_and_turtlebot.png)
 
@@ -38,7 +38,7 @@ The TurtleBot3 can be teleoperated by various devices. It is tested with several
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Z4s18hlazb4" frameborder="0" allowfullscreen></iframe>
 
-The contents in e-Manual can be updated without a previous notice. Therefore, some video may differ from the contents in e-Manual.
+The contents in e-Manual may differ from contents of a provided video in e-Manaul as e-Manual is updated on a regular basis.
 {: .notice--warning} 
 
 ### [Keyboard](#keyboard)
