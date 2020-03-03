@@ -10,12 +10,12 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 30
+page_number: 28
 ---
 
 <div style="counter-reset: h1 16"></div>
 
-# [[ROS 2] Bringup](#ros-2-bringup)
+# [Bringup](#bringup)
 
 ## [Bringup TurtleBot3](#bringup-turtlebot3)
 

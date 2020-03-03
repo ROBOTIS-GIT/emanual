@@ -10,16 +10,16 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 38
+page_number: 36
 ---
 
 <div style="counter-reset: h1 24"></div>
 
-# [[ROS 2] Applications](#ros-2-applications)
+# [Applications](#applications)
 
 {% capture notice_01 %}
 **NOTE**:
-- This instructions were tested on `Ubuntu 18.04` and `ROS Dashing Diademata`.
+- This instructions were tested on `Ubuntu 18.04` and `ROS 2 Dashing Diademata`.
 - Make sure to run the [Bringup](/docs/en/platform/turtlebot3/ros2_bringup/#bringup) instruction before use of the instruction.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>

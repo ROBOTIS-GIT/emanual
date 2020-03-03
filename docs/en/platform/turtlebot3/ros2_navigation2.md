@@ -10,21 +10,21 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 33
+page_number: 31
 ---
 
 <div style="counter-reset: h1 19"></div>
 
-# [[ROS 2] Navigation2](#ros-2-navigation2)
+# [Navigation2](#navigation2)
 
 **WARNING**: Be careful when running the robot on the table as the robot might fall.
 {: .notice--warning}
 
 {% capture notice_01 %}
 **NOTE**: 
-- This instructions were tested on `Ubuntu 18.04` and `ROS Dashing Diademata`.
-- Make sure to run the [Bringup](/docs/en/platform/turtlebot3/ros2_bringup/#bringup) instructions before running this instructions.
-- The navigation uses the a data created in [SLAM](/docs/en/platform/turtlebot3/ros2_slam/#slam). Please make sure to have a map data.
+- This instructions were tested on `Ubuntu 18.04` and `ROS2 Dashing Diademata`.
+- Make sure to run the [ROS2 Bringup](/docs/en/platform/turtlebot3/ros2_bringup/#bringup) instructions before running this instructions.
+- The navigation uses the a data created in [ROS2 SLAM](/docs/en/platform/turtlebot3/ros2_slam/#slam). Please make sure to have a map data.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -106,7 +106,7 @@ Follow the instruction below.
   
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VtyqUuuZAFA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-The contents in e-Manual can be updated without a previous notice. Therefore, some video may differ from the contents in e-Manual.
+The contents in e-Manual may differ from contents of a provided video in e-Manaul as e-Manual is updated on a regular basis.
 {: .notice--warning} 
 
 {% capture warning_01 %}
@@ -220,8 +220,8 @@ _**sim_time**_
 - [Navigation]
 
 [export_turtlebot3_model]: /docs/en/platform/turtlebot3/export_turtlebot3_model
-[Bringup]: /docs/en/platform/turtlebot3/ros2_bringup/#bringup
-[SLAM]: /docs/en/platform/turtlebot3/ros2_slam/#slam
+[ROS2 Bringup]: /docs/en/platform/turtlebot3/ros2_bringup/#bringup
+[ROS2 SLAM]: /docs/en/platform/turtlebot3/ros2_slam/#slam
 
 [Basic Navigation Tuning Guide (ROS Wiki)]: http://wiki.ros.org/navigation/Tutorials/Navigation%20Tuning%20Guide
 [ROS Navigation Tuning Guide by Kaiyu Zheng]: http://kaiyuzheng.me/documents/navguide.pdf

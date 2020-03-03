@@ -10,12 +10,12 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 31
+page_number: 29
 ---
 
 <div style="counter-reset: h1 17"></div>
 
-# [[ROS 2] Basic Operation](#ros-2-basic-operation)
+# [Basic Operation](#basic_operation)
 
 ## [Topic Monitor](#topic_monitor)
 
@@ -24,7 +24,7 @@ page_number: 31
 
 {% capture notice_01 %}
 **NOTE**: 
-- This instructions were tested on `Ubuntu 18.04` and `ROS Dashing Diademata`.
+- This instructions were tested on `Ubuntu 18.04` and `ROS 2 Dashing Diatamata`.
 - This instructions are supposed to be running on the remote PC. Please run the instructions below on your **Remote PC**.
 - Make sure to run [Bringup](/docs/en/platform/turtlebot3/ros2_bringup/#bringup) instruction before use of the instruction.
 {% endcapture %}
@@ -78,7 +78,7 @@ In addition, you can monitor topics through rqt whenever you have a topic added.
 
 {% capture notice_01 %}
 **NOTE**: 
-- This instruction was tested on `Ubuntu 18.04` and `ROS Dashing Diademata`.
+- This instruction was tested on `Ubuntu 18.04` and `ROS 2 Dashing Diatamata`.
 - These examples are supposed to be run on the remote PC. Follow the instruction on your **Remote PC**.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
@@ -177,7 +177,7 @@ The settings for [ROBOTIS RC-100B][rc100] is included in an OpenCR firmware for 
 
 {% capture notice_01 %}
 **NOTE**:
-- This instruction was tested on `Ubuntu 18.04` and `ROS Dashing Diademata`.
+- This instruction was tested on `Ubuntu 18.04` and `ROS 2 Dashing Diatamata`.
 - This instruction is supposed to be run on the remote PC. Follow the instruction on your **Remote PC**.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>

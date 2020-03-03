@@ -10,12 +10,12 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 34
+page_number: 32
 ---
 
 <div style="counter-reset: h1 20"></div>
 
-# [[ROS 2] Simulation](#ros-2-simulation)
+# [Simulation](#simulation)
 
 {% capture notice_02 %}
 {% include en/platform/turtlebot3/ros_book_info.md %}
@@ -23,7 +23,7 @@ page_number: 34
 <div class="notice--success">{{ notice_02 | markdownify }}</div>
 
 {% capture notice_01 %}
-**NOTE**: This instructions were tested on `Ubuntu 18.04` and `ROS Dashing Diademata`.
+**NOTE**: This instructions were tested on `Ubuntu 18.04` and `ROS 2 Dashing Diatamata`.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
