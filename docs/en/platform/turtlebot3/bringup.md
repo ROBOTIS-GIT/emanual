@@ -15,7 +15,7 @@ page_number: 14
 
 <div style="counter-reset: h1 6"></div>
 
-# [Bringup](#bringup)
+# [[ROS 1] Bringup](#ros-1-bringup)
 
 ![](/assets/images/platform/turtlebot3/software/remote_pc_and_turtlebot.png)
 

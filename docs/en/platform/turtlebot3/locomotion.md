@@ -10,14 +10,14 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 37
+page_number: 39
 ---
 
 <div style="counter-reset: h1 25"></div>
 
 # [Locomotion](#locomotion)
 
-The contents in e-Manual may differ from contents of a provided video in e-Manaul as e-Manual is updated on a regular basis.
+The contents in e-Manual can be updated without a previous notice. Therefore, some video may differ from the contents in e-Manual.
 {: .notice--warning} 
 
 In the video, watch how TurtleBot3 can be assembled and reassembled with a few additional parts. The waffle plate which is the biggest part among TurtleBot3 components can be assembled in various sizes and shapes, thanks to its diverse holes for bolts and nuts.
