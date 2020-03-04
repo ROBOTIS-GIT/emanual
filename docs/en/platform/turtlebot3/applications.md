@@ -10,12 +10,12 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 26
+page_number: 28
 ---
 
 <div style="counter-reset: h1 14"></div>
 
-# [Applications](#applications)
+# [[ROS 1] Applications](#ros-1-applications)
 
 {% capture notice_01 %}
 **NOTE**:
@@ -262,7 +262,7 @@ $ roslaunch turtlebot3_automatic_parking_vision turtlebot3_automatic_parking_vis
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dvpWdrD3bVs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-The contents in e-Manual may differ from contents of a provided video in e-Manaul as e-Manual is updated on a regular basis.
+The contents in e-Manual can be updated without a previous notice. Therefore, some video may differ from the contents in e-Manual.
 {: .notice--warning} 
 
 ## [Load Multiple TurtleBot3s](#load-multiple-turtlebot3s)
