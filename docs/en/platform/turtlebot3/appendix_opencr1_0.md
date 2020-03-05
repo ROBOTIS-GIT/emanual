@@ -55,9 +55,9 @@ OpenCR will be the best solution for implementing your embedded control design.
 | Powers                 | External input source<br />5 V (USB VBUS), 7-24 V (Battery or SMPS)<br />Default battery : LI-PO 11.1V 1,800mAh 19.98Wh<br />Default SMPS: 12V 5A<br />External output source<br />12V@1A([SMW250-02]), 5V@4A([5267-02A]), 3.3V@800mA([20010WS-02])<br />External battery Port for RTC (Real Time Clock) ([Molex 53047-0210])<br />Power LED: LD1 (red, 3.3 V power on)<br />Reset button x 1 (for power reset of board)<br />Power on/off switch x 1 |
 | Dimensions             | 105(W) X 75(D) mm                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | Mass                   | 60g                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-**NOTE**: ICM-20648 sensor has been replaced with MPU9250, since 2020, as ICM-20648 is discontinued to produce.  
-{: .notice}
 
+**NOTE**: MPU9250 sensor has been replaced with ICM-20648, since 2020, as MPU9250 is discontinued to produce.
+{: .notice}
 
 ### [User Guide](#user-guide)
 
