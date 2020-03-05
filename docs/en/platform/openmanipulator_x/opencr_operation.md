@@ -160,17 +160,15 @@ The user can make the demonstration using hand guiding function.
 
 ## [Teleoperation RC100](#teleoperation-rc100)
 
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/FGHBMJByJ7k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/FGHBMJByJ7k?start=10" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-  The settings for [ROBOTIS RC-100B] controller is included in the OpenCR firmware for OpenMANIPULATOR. This controller can be used with the Bluetooth module [BT410].
+  The settings for [ROBOTIS RC-100B] controller is included in the OpenCR firmware for OpenMANIPULATOR. This controller can be used with the Bluetooth module [BT-410].
   ![](/assets/images/platform/openmanipulator_x/OpenManipulator_chain_processing_teleop.png)
-
-
 
 [OpenCR]: /docs/en/parts/controller/opencr10/
 [OpenCR e-Manual]: /docs/en/parts/controller/opencr10/#firmware-recovery-mode
 [ROBOTIS RC-100B]: /docs/en/parts/communication/rc-100/
-[BT410]: /docs/en/parts/communication/bt-410/
+[BT-410]: /docs/en/parts/communication/bt-410/
 
 [task space]: /docs/en/popup/open_manipulator_coordinates/
 [joint space]: /docs/en/popup/open_manipulator_coordinates/

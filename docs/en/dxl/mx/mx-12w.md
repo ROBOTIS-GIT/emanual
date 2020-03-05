@@ -24,12 +24,12 @@ product_group: dxl_mx
 | Position Sensor        | Contactless absolute encoder (12Bit, 360 [°])<br />Maker : ams(www.ams.com), Part No : AS5045 |
 | Motor                  | Cored                                                                                         |
 | Baud Rate              | 8000 bps ~ 4.5 Mbps                                                                           |
-| Resolution             | 4096 \[pulse/rev]                                                                                    |
-| Running Degree         | 0&deg; ~ 360&deg;<br />Endless Turn                                                           |
+| Resolution             | 4096 \[pulse/rev]                                                                             |
+| Running Degree         | 0&deg; ~ 360&deg;<br />Endless Turn<br />Multi-turn                                           |
 | Weight                 | 54.6g                                                                                         |
-| Dimensions (W x H x D) | 32 x 50 x 40 [mm]                                                                            |
+| Dimensions (W x H x D) | 32 x 50 x 40 [mm]                                                                             |
 | Gear Ratio             | 32 : 1                                                                                        |
-| No Load Speed          | 470 [rev/min] (at 12 [V])                                                                               |
+| No Load Speed          | 470 [rev/min] (at 12 [V])                                                                     |
 | Operating Temperature  | -5&deg;C ~ +70&deg;C                                                                          |
 | Input Voltage          | 10 ~ 14.8V (**Recommended : 12V**)                                                            |
 | Standby Current        | 60mA                                                                                          |
@@ -39,6 +39,7 @@ product_group: dxl_mx
 | ID                     | 0 ~ 253                                                                                       |
 | Feedback               | Position, Temperature, Load, Input Voltage, etc                                               |
 | Material               | Engineering Plastic                                                                           |
+
 
 {% include en/dxl/warning.md %}
 

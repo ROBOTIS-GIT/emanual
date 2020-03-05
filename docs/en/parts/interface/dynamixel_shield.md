@@ -76,8 +76,35 @@ DYNAMIXEL Shield  was created to use RC100 and DYNAMIXEL on arduino board. We pr
 `Caution2` If you are using a board that does not support SoftwareSerial(like SAMD, etc..), you cannot use pins 7 and 8 for UART purposes.  
 `Caution3` TTL, TTL (XL-320) and RS485 connectors are all connected in parallel in one serial.
 {% endcapture %}
-
 <div class="notice--warning">{{ shield_01 | markdownify }}</div>
+
+## [Use of Serial Monitor with DYNAMIXEL Shield](#use-of-serial-monitor-with-dynamixel-shield)
+
+DYNAMIXELShield uses serial pins (0,1) which are the same pins as Arduino Uno / Mega. When using the serial monitor, it may cause unexpected issue with data in the board due to a port conflict.  
+
+In order to prevent the board from the port conflict, be sure to read [How to Use Serial Monitor with DYNAMIXEL Shield](#how-to-use-serial-monitor-with-dynamixel-shield) carefully. 
+
+### [How to Use Serial Monitor with DYNAMIXEL Shield](#how-to-use-serial-monitor-with-dynamixel-shield)
+
+Check the type of your arduino board, and select the either of listed solution to use Serial Monitor with DYNAMIXEL Shield. 
+
+1. **[Recommanded] #define DEBUG_SERIAL**
+- See #define DEBUG_SERIAL in the DynamixelShield Examples in Arduino.
+
+2. **Use UART port of DYNAMIXEL Shield ( AVR 8 bit board including Uno / Mega boards)**
+- AVR 8 bit boards, such as Uno, and Mega, can use the serial monitor by using DYNAMIXEL Shield's pins, which is read UART (See [Layout](#layout))
+
+    **NOTE**: Be sure to use `SoftwareSerial` Library to use the serial port with DYNAMIXEL Shield and AVR 8 bit boards as the port is designed for the use of general pins. Prefered Comunication Modules: [BT-210](/docs/en/parts/communication/bt-410/), [BT-410](/docs/en/parts/communication/bt-210/), [LN-101](/docs/en/parts/interface/ln-101/).
+    {: .notice}
+
+3. **Use USB Port**
+- When you use other arduino boards except Uno and Mega, use the serial monitor via USB port.
+
+4. **Use USB to Serial converter**
+- You can use either SoftwareSerial or HardwareSerial ways. See [Arduino Reference page of Serial](https://www.arduino.cc/reference/en/language/functions/communication/serial/), and determine your board whether or not it support either of ways (SoftwareSerial or HardwareSerial).
+ 
+5. **Use UART Port**
+- DYNAMIXEL Shield contains UART pins: 7(RX), 8(TX). They are only compatible with AVR 8 bit board, such as Uno and Mega boards. In order to use this port, use other HardwareSerial pins instead of 7(RX), 8(TX). To determine wheather boards has HardwareSerial, and its pin numbers see [Arduino Reference page of Comunication] 
 
 # [Connecting Power](#connecting-power)
 

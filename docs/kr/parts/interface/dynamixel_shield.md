@@ -14,7 +14,7 @@ sidebar:
 # [개요](#개요)
 ![](/assets/images/parts/interface/dynamixel_shield/with_arduino.png)
 
-아두이노 보드에서 다이나믹셀과 RC100을 사용하기위한 쉴드 보드이며 다이나믹셀 제어를 위한 라이브러리를 제공함.
+아두이노 보드에서 다이나믹셀과 RC-100을 사용하기위한 쉴드 보드이며 다이나믹셀 제어를 위한 라이브러리를 제공함.
 
 **본 제품은 아두이노 Uno를 포함하지 않습니다. 아두이노 관련 제품은 별도로 구매를 해야합니다.**
 {: .notice--warning}
@@ -43,8 +43,8 @@ sidebar:
 | **PRO L** `1`     | [L42-10-S300-R]                | [L54-30-S500-R]                | [L54-30-S400-R]                | [L54-50-S500-R]                | [L54-50-S290-R] |
 | **PRO H(A)**      | [H42-20-S300-R(A)]             | [H54-100-S500-R(A)]            | [H54-200-S500-R(A)]            |                                |                 |
 | **PRO M(A)**      | [M42-10-S260-R(A)]             | [M54-40-S250-R(A)]             | [M54-60-S250-R(A)]             |                                |                 |
-| **PH**        | [PH42-020-S300-R]              | [PH54-100-S500-R]              | [PH54-100-S500-R]              |                                |                 |
-| **PM**        | [PM54-060-S250-R]              | [PM54-040-S250-R]              | [PM42-010-S260-R]              |                                |                 |
+| **PH**            | [PH42-020-S300-R]              | [PH54-100-S500-R]              | [PH54-100-S500-R]              |                                |                 |
+| **PM**            | [PM54-060-S250-R]              | [PM54-040-S250-R]              | [PM42-010-S260-R]              |                                |                 |
 
 `1` RX, DX, EX, PRO L 시리즈를 사용하려면 소스 코드에서 별도의 설정이 필요합니다.
 
@@ -71,13 +71,42 @@ sidebar:
 -	다이나믹셀 제어를 위해서 하드웨어 시리얼 포트를 사용하기 때문에 아두이노 핀 7/8번을 이용하여 소프트웨어 시리얼로 RC100 혹은 LN101을 연결하여 시리얼 통신 수행
 
 {% capture shield_01 %}
-`주의1` UART SW(SW_2)를 Upload로 세팅해야, 펌웨어를 USB 포트를 통해서 업로드 할 수 있다. 다이나믹셀로 세팅해야만, 다이나믹셀을 활용할 수 있다. 이 때는, USB 포트를 사용하지 못하므로, 펌웨어를 업로드 할 수 없다.  
-`주의2` SoftwareSerial을 지원하지 않는 보드를 사용한다면, 핀 7번과 8번을 UART 통신으로 사용하지 못한다.  
-`주의3` TTL, TTL (XL-430) and RS485 커넥터들은 병렬로 연결되어 하나의 serial을 사용한다.
+`주의1`: UART SW(SW_2)를 Upload로 세팅해야, 펌웨어를 USB 포트를 통해서 업로드 할 수 있다. 다이나믹셀로 세팅해야만, 다이나믹셀을 활용할 수 있다. 이 때는, USB 포트를 사용하지 못하므로, 펌웨어를 업로드 할 수 없다.  
+`주의2`: SoftwareSerial을 지원하지 않는 보드를 사용한다면, 핀 7번과 8번을 UART 통신으로 사용하지 못한다.  
+`주의3`: TTL, TTL (XL-430) and RS485 커넥터들은 병렬로 연결되어 하나의 serial을 사용한다.
 {% endcapture %}
-
 <div class="notice--warning">{{ shield_01 | markdownify }}</div>
 
+## [시리얼 모니터 사용시 주의사항](#시리얼-모니터-사용시-주의사항)
+
+아두이노 보드와 다이나믹셀 쉴드와 함께 Serial Monitor를 사용할 때는 보드에 따라 제약조건이 있다.
+
+UNO 및 Mega (8bit MCU)는 USB에서 사용하는 Serial핀이 다이나믹셀에서 사용하는 핀(0, 1)과 동일하기 때문에, USB로 시리얼 모니터를 사용 시, 다이나믹셀의 포트와 충돌하여 데이터가 손상 될 수 있다. 그에 따라 다이나믹셀 쉴드와 아두이노 보드에서 [시리얼 모니터 사용 방법](#시리얼-모니터-사용-방법)을 아래에 나열한다. 
+
+### [시리얼 모니터 사용 방법](#시리얼-모니터-사용-방법)
+
+해당하는 보드를 확인한뒤, 아래의 방법 중 하나를 택한다. 
+
+1. **[추천] #define DEBUG_SERIAL 사용**
+- DynamixelShield Examples의 코드에 있는 #define DEBUG_SERIAL 정의를 확인 할것.
+
+2. **다이나믹셀 쉴드의 UART 포트 사용 (조건: UNO/Mega시리즈를 포함한 아두이노 AVR 8bit 보드)**
+- UNO와 Mega를 포함한 아두이노 AVR 8bit 보드는 다이나믹셀 쉴드의 UART라고 표기된 핀([각 부 명칭](#각-부-명칭) 참조)을 사용하여 Serial Monitor를 사용할 수 있다.   
+
+    **참고**: 이 포트는 Serial 핀이 아닌 일반 핀을 사용하기때문에, SoftwareSerial 라이브러리를 반드시 사용 해야 한다. UART포트에 사용하기 적합한 통신 모듈은 [BT-210](/docs/kr/parts/communication/bt-410/), [BT-410](/docs/kr/parts/communication/bt-210/), [LN-101](/docs/kr/parts/interface/ln-101/)이 있다.
+    {: .notice}
+
+3. **USB포트 사용**
+- UNO 및 Mega 시리즈를 제외한 나머지 아두이노 보드에서는 USB포트를 통해 시리얼 모니터를 사용 할 것.
+
+4. **USB to Serial 장치 사용**
+- SoftwareSerial을 사용하는 방법과 HardwareSerial을 사용하는 방법이 있다. 각각은 보드에 따라 사용 가능 여부가 다르므로 각 제품의 [관련 링크](https://www.arduino.cc/reference/en/language/functions/communication/serial/)들을 찾아 보길 바란다. 
+ 
+5. **UART 포트 사용**
+- UART로 표기된 포트는 다이나믹셀 쉴드의 7(RX), 8(TX)핀에 연결되어 있다.  
+이 핀들은 UNO/MEGA시리즈와 같은 AVR 8bit 보드에서만 정상 작동하며, 다른 보드에서 이 포트를 사용하기 위해서는 7(RX), 8(TX)핀 대신에 다른 HardwareSerial 핀을 연결해야만 한다.  
+사용 가능한 HardwareSerial이 있는지, 그리고 그 핀 번호를 확인하려면 [관련 링크](https://www.arduino.cc/reference/en/language/functions/communication/serial/)를 참조하라.
+  
 # [전원 연결 방법](#전원-연결-방법)
 
 |                           VIN 전원 공유                           |                           VIN 전원 분리                           |
@@ -93,7 +122,6 @@ sidebar:
 
   ![](/assets/images/parts/interface/dynamixel_shield/power_polarity.png)
 
-
 # [스위치](#스위치)
 
 ![](/assets/images/parts/interface/dynamixel_shield/switches_kr.png)
@@ -107,7 +135,6 @@ sidebar:
 ## [다이나믹셀 전원 스위치](#다이나믹셀-전원-스위치)
 
 -	다이나믹셀 커넥터의 전원을 별도로 On/Off 할수 있는 스위치이다.
-
 
 # [다이나믹셀 쉴드 라이브러리](#다이나믹셀-쉴드-라이브러리)
 
@@ -144,12 +171,11 @@ sidebar:
 
 ![](/assets/images/parts/interface/dynamixel_shield/examples.png)
 
-
 ## [라이브러리 API](#라이브러리-api)
 
 ### [다이나믹셀 쉴드(v0.1.0 이상)](#다이나믹셀-쉴드v010-이상)
 
-**주의** : DYNAMIXEL Shield 라이브러리(v0.1.0 이상)를 사용하기 위해서는 [DYNAMIXEL2Arduino 라이브러리](#라이브러리-설치)를 설치해야 합니다.
+**주의** : 다이나믹셀 쉴드 라이브러리(v0.1.0 이상)를 사용하기 위해서는 [DYNAMIXEL2Arduino 라이브러리](#라이브러리-설치)를 설치해야 합니다.
 {: .notice--warning}
 
 #### [Dynamixel2Arduino 클래스](#dynamixel2arduino-클래스)
@@ -252,7 +278,6 @@ int32_t getCurAngle(uint8_t id);
 bool syncWriteBegin(void);
 bool syncWriteEnd(void);
 ```
-
 
 [AX-12W]: /docs/kr/dxl/ax/ax-12w/
 [AX-12+/12A]: /docs/kr/dxl/ax/ax-12a/
