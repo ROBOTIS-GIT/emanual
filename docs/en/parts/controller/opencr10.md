@@ -38,7 +38,7 @@ The development environment for OpenCR1.0 is wide open from Arduino IDE and Scra
 | Weight               | 60g                                                                                                                                                                                                                                       |
 
 
-**NOTE**: ICM-20648 sensor has been replaced with MPU9250, since 2020, as ICM-20648 is discontinued to produce.
+**NOTE**: MPU9250 sensor has been replaced with ICM-20648, since 2020, as MPU9250 is discontinued to produce.
 {: .notice}
 
 <sup>`*`</sup> 5V power source is supplied from regulated 12V output.
