@@ -52,7 +52,7 @@ The following instructions describes how to install packages and to calibrate ca
 1. Install AutoRace package on both `Remote PC` and `SBC`. 
 ``` bash
 $ cd ~/catkin_ws/src/
-$ git clone https://github.com/ROBOTIS-GIT/turtlebot3_autorace.git
+$ git clone https://github.com/ROBOTIS-GIT/turtlebot3_autorace_2020.git
 $ cd ~/catkin_ws && catkin_make
 ```
 
@@ -407,7 +407,7 @@ To provide various conditions for a robot application development, the game prov
 
 Traffic Light is the first mission of AutoRace. TurtleBot3 should see the sign of traffic lights, perfectly compute the given situation, and then start to drive (or wait until the proper traffic sign)
 
-#### [Camera Calibration for Traffic Light](#camera-calibration-for-traffic-lights)
+#### [Camera Calibration for Traffic Light](#camera-calibration-for-traffic-light)
 
 1. Open terminal and use the command on `Remote PC`.
 ```bash
