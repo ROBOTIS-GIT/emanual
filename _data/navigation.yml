@@ -21193,8 +21193,8 @@ opencm904:
     url: /parts/controller/opencm904/#development-environment
     urlkr: /parts/controller/opencm904/#소프트웨어-개발환경
     children:
-    - title: "Softwares"
-      url: /parts/controller/opencm904/#softwares
+    - title: "Supported Software"
+      url: /parts/controller/opencm904/#supported-software
     - title: "OpenCM IDE"
       titlekr: "OpenCM IDE"
       url: /parts/controller/opencm904/#opencm-ide
@@ -21469,6 +21469,11 @@ dynamixel_shield:
     titlekr: "각 부 명칭"
     url: /parts/interface/dynamixel_shield/#layout
     urlkr: /parts/interface/dynamixel_shield/#각-부-명칭
+    children:
+      - title: "Use of Serial Monitor with DYNAMIXEL Shield"
+        url: /parts/interface/dynamixel_shield/#use-of-serial-monitor-with-dynamixel-shield
+      - titlekr: "시리얼 모니터 사용시 주의사항"
+        url: /parts/interface/dynamixel_shield/#시리얼-모니터-사용시-주의사항        
   - title: "Connecting Power"
     titlekr: "전원 연결 방법"
     url: /parts/interface/dynamixel_shield/#connecting-power

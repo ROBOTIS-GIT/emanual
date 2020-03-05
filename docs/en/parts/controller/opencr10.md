@@ -26,7 +26,7 @@ The development environment for OpenCR1.0 is wide open from Arduino IDE and Scra
 | Items                | Specifications                                                                                                                                                                                                                            |
 |:---------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Microcontroller      | STM32F746ZGT6 / 32-bit ARM Cortex®-M7 with  FPU (216MHz, 462DMIPS)<br />[Reference Manual], [Datasheet]                                                                                                                                   |
-| Sensors              | Gyroscope 3Axis, Accelerometer 3Axis, Magnetometer 3Axis (MPU9250)                                                                                                                                                                        |
+| Sensors              | (**Discontinued**) Gyroscope 3Axis, Accelerometer 3Axis, Magnetometer 3Axis (MPU9250)<br /> (**New**) 3-axis Gyroscope, 3-Axis Accelerometer, A Digital Motion Processor™ (ICM-20648)                                            |
 | Programmer           | ARM Cortex 10pin JTAG/SWD connector<br />USB Device Firmware Upgrade (DFU)<br />Serial                                                                                                                                                    |
 | Digital I/O          | 32 pins (L 14, R 18) *Arduino connectivity<br />5Pin OLLO x 4<br />GPIO x 18 pins<br />PWM x 6<br />I2C x 1<br />SPI x 1                                                                                                                  |
 | Analog INPUT         | ADC Channels (Max 12bit) x 6                                                                                                                                                                                                              |
@@ -36,6 +36,10 @@ The development environment for OpenCR1.0 is wide open from Arduino IDE and Scra
 | Output Power Sources | <sup>`*`</sup>12V max 4.5A([SMW250-02])<br /><sup>`*`</sup>5V max 4A([5267-02A]), 3.3V@800mA([20010WS-02])                                                                                                                                |
 | Dimensions           | 105(W) X 75(D) mm                                                                                                                                                                                                                         |
 | Weight               | 60g                                                                                                                                                                                                                                       |
+
+
+**NOTE**: ICM-20648 sensor has been replaced with MPU9250, since 2020, as ICM-20648 is discontinued to produce.
+{: .notice}
 
 <sup>`*`</sup> 5V power source is supplied from regulated 12V output.
 {: .notice}

@@ -25,12 +25,12 @@ product_group: dxl_mx
 | 모터          | Cored                                                                                          |
 | 통신속도      | 8,000 [bps] ~ 4.5 [Mbps]                                                                       |
 | 제어 알고리즘 | PID CONTROL                                                                                    |
-| 해상도   | 4096 \[pulse/rev]                                                                                  |
-| 동작 모드     | 관절 모드 (0 ~ 360 [°]) / 바퀴 모드 (무한 회전)                                                |
+| 해상도        | 4096 \[pulse/rev]                                                                              |
+| 동작 모드     | 관절 모드 (0 ~ 360 [°]) / 바퀴 모드 (무한 회전) /  다중회전모드                                |
 | 무게          | 54.6 [g]                                                                                       |
 | 크기          | 32 x 50 x 40 [mm]                                                                              |
 | 기어비        | 32 : 1                                                                                         |
-| 무부하 속도   | 470 [rev/min] (at 12 [V])                                                                         |
+| 무부하 속도   | 470 [rev/min] (at 12 [V])                                                                      |
 | 동작 온도     | -5 ~ +70 [&deg;C]                                                                              |
 | 사용 전압     | 10 ~ 14.8 [V] (**권장 전압 : 12 [V]**)                                                         |
 | 제어 명령     | Digital Packet                                                                                 |
@@ -40,6 +40,7 @@ product_group: dxl_mx
 | 피드백        | Position, Temperature, Load, Input Voltage 등                                                  |
 | 재질          | Engineering Plastic                                                                            |
 | 대기 전류     | 60 [mA]                                                                                        |
+
 
 {% include kr/dxl/warning.md %}
 
