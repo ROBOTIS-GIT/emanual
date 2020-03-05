@@ -144,6 +144,7 @@ sidebar:
 R+ SMART and R+IoT aren't released yet.
 {: .notice--info}
 
+[How to install ROBOTIS virtual COM port for Windows]: /docs/en/popup/usb_driver_install/
 
 ### [etc](#etc)
 

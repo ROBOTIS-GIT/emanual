@@ -683,8 +683,7 @@ The value of /dev/ttyACM0 may be different depending on the environment connecte
 To use OpenCM9.04's USB port as a serial port in Windows, you need a USB CDC driver. You can install the USB driver as follows.
 
 - [Install Windows Driver](#install-windows-driver)
-
-#### [Install the Arduino IDE (Windows)](#install-the-arduino-ide-windows)
+- See [Install Windows Driver](#install-windows-driver)
 
 Download the latest version of Arduino IDE from the official arduino homepage, and install it. Currently, the OpenCM 9.04 will be on service in the version 1.6.4 or later.
 
@@ -2086,7 +2085,7 @@ Please refer to [R+Manager 2.0 Firmware Recovery](/docs/en/software/rplus2/manag
 {: .notice}
 
 ## [Windows Driver Installation](#windows-driver-installation)
-- See [Windows Driver Installation]{: .popup} 
+- See [How to install ROBOTIS virtual COM port for Windows]{: .popup} 
 
 ## [Dimension](#dimension)
 
