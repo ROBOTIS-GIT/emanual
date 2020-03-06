@@ -202,7 +202,8 @@ We provide the Linux distro image based on Raspbian. They are pre-installed with
 ##### Remote PC
 - Download the Linux distro image based on Raspbian for TurtleBot3
   - [download link](http://www.robotis.com/service/download.php?no=1738)
-  - SHA256: 7a868c275169b1f02c04617cc0cce9654fd8222623c78b22d0a27c73a9609398
+  - SHA256 (image_rpi_20190429.img.zip) : eb8173f3727db08087990b2c4e2bb211e70bd54644644834771fc8b971856b97
+  - SHA256 (image_rpi_20190429.img): 7a868c275169b1f02c04617cc0cce9654fd8222623c78b22d0a27c73a9609398
 - After download, unzip the downloaded file.
 - Guide to burn the image to SD card
   - Visit [etcher.io](https://etcher.io/) and download and install the Etcher SD card image utility.
