@@ -1,7 +1,7 @@
 ## [Communication Circuit](#communication-circuit)
 To control the DYNAMIXEL actuators, the main controller needs to convert its UART signals to the half duplex type. The recommended circuit diagram for this is shown below.
 
-{% if page.ref!='xw540-t150' and page.ref!='xw540-t270' %}
+{% if page.product_group !='dxl_xw540' %}
 ### TTL Communication
 ![](/assets/images/dxl/ttl_circuit.png)
 
@@ -12,7 +12,7 @@ To control the DYNAMIXEL actuators, the main controller needs to convert its UAR
 ![](/assets/images/dxl/x/x_series_485_circuit.jpg)  
 > RS-485 Circuit 
 
-{% if page.ref=='xw540-t150' or page.ref=='xw540-t270' %}  
+{% if page.product_group=='dxl_xw540' %}  
 
 ![](/assets/images/dxl/x/xw/xw_series_485_pin.png)  
 > XW540-Series Connector.

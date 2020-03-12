@@ -7183,18 +7183,12 @@ xw540-t150:
         - title: "Min/Max Position Limit(48, 52)"
           titlekr: "Min/Max Position Limit(48, 52)"
           url: /dxl/x/xw540-t150/#minmax-position-limit48-52
-        - title: "External Port Mode 1,2,3(56,57,58)"
-          titlekr: "External Port Mode 1,2,3(56,57,58)"
-          url: /dxl/x/xw540-t150/#external-port-mode-123565758
         - title: "Shutdown(63)"
           titlekr: "Shutdown(63)"
           url: /dxl/x/xw540-t150/#shutdown63
         - title: "Torque Enable(64)"
           titlekr: "Torque Enable(64)"
           url: /dxl/x/xw540-t150/#torque-enable64
-        - title: "LED(65)"
-          titlekr: "LED(65)"
-          url: /dxl/x/xw540-t150/#led65
         - title: "Status Return Level(68)"
           titlekr: "Status Return Level(68)"
           url: /dxl/x/xw540-t150/#status-return-level68
@@ -7278,10 +7272,6 @@ xw540-t150:
     url: /dxl/x/xw540-t150/#how-to-assemble
     urlkr: /dxl/x/xw540-t150/#조립-예시
     children:
-      - title: "Wiring through Back Case"
-        titlekr: "배선 예시"
-        url: /dxl/x/xw540-t150/#wiring-through-back-case
-        urlkr: /dxl/x/xw540-t150/#배선-예시
       - title: "Option Frame Assembly"
         titlekr: "옵션프레임 조립"
         url: /dxl/x/xw540-t150/#option-frame-assembly
@@ -7422,18 +7412,12 @@ xw540-t270:
         - title: "Min/Max Position Limit(48, 52)"
           titlekr: "Min/Max Position Limit(48, 52)"
           url: /dxl/x/xw540-t270/#minmax-position-limit48-52
-        - title: "External Port Mode 1,2,3(56,57,58)"
-          titlekr: "External Port Mode 1,2,3(56,57,58)"
-          url: /dxl/x/xw540-t270/#external-port-mode-123565758
         - title: "Shutdown(63)"
           titlekr: "Shutdown(63)"
           url: /dxl/x/xw540-t270/#shutdown63
         - title: "Torque Enable(64)"
           titlekr: "Torque Enable(64)"
           url: /dxl/x/xw540-t270/#torque-enable64
-        - title: "LED(65)"
-          titlekr: "LED(65)"
-          url: /dxl/x/xw540-t270/#led65
         - title: "Status Return Level(68)"
           titlekr: "Status Return Level(68)"
           url: /dxl/x/xw540-t270/#status-return-level68
@@ -7517,10 +7501,6 @@ xw540-t270:
     url: /dxl/x/xw540-t270/#how-to-assemble
     urlkr: /dxl/x/xw540-t270/#조립-예시
     children:
-      - title: "Wiring through Back Case"
-        titlekr: "배선 예시"
-        url: /dxl/x/xw540-t270/#wiring-through-back-case
-        urlkr: /dxl/x/xw540-t270/#배선-예시
       - title: "Option Frame Assembly"
         titlekr: "옵션프레임 조립"
         url: /dxl/x/xw540-t270/#option-frame-assembly

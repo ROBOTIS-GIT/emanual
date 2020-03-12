@@ -8,20 +8,20 @@
 |     Bit 6(0x40)     |                      -              | 미사용, 항상 '0'                                                                                                                                                                                           |
 |     Bit 5(0x20)     |                      -              | 미사용, 항상 '0'                                                                                                                                                                                           |
 |     Bit 4(0x10)     |                      -              | 미사용, 항상 '0'                                                                                                                                                                                           |
-|     Bit 3(0x08)     |                      -              | 미사용, 항상 '0'                                                                                                                                                                                           |{% if page.product_group=='dxl_x430' or page.product_group=='dxl_x540' or page.product_group=='dxl_xl430' or page.ref=='mx-106-2' %}
+|     Bit 3(0x08)     |                      -              | 미사용, 항상 '0'                                                                                                                                                                                           |{% if page.product_group=='dxl_x430' or page.product_group=='dxl_x540' or page.product_group=='dxl_xw540' or page.product_group=='dxl_xl430' or page.ref=='mx-106-2' %}
 |     Bit 2(0x04)     |           Profile Configuration     | **[0]** Velocity-based Profile: 속도를 기준으로 Profile 생성<br />**[1]** Time-based Profile: 시간을 기준으로 Profile 생성<br />※ 자세한 사항은 [Profile Velocity(112)](#profile-velocity112)를 참고하세요. |{% else %}
 |     Bit 2(0x04)     |                      -              | 미사용, 항상 '0'                                                                                                                                                                                           |{% endif %}{% if page.product_group=='dxl_x540' or page.product_group=='dxl_ex' or page.ref=='mx-106-2' or page.ref=='mx-106' %}
 |     Bit 1(0x02)     | Master/Slave Mode<br />(Dual Joint) | **[0]** Master Mode: 마스터 다이나믹셀로 동작합니다.<br />**[1]** Slave Mode: 슬레이브 다이나믹셀로 동작합니다.                                                                                                          |{% else %}
 |     Bit 1(0x02)     |                      -              | 미사용, 항상 '0'                                                                                                                                                                                           |{% endif %}
 |     Bit 0(0x01)     |        Normal/Reverse Mode          | **[0]** Normal Mode: 반시계방향(CCW)이 양수값, 시계방향(CW)이 음수값<br />**[1]** Reverse Mode: 시계방향(CW)이 양수값, 반시계방향(CCW)이 음수값                                                                           |
 
-{% if page.product_group=='dxl_mx2' or page.product_group=='dxl_x540' or page.product_group=='dxl_x430' or page.product_group=='dxl_xl430' %}
+{% if page.product_group=='dxl_mx2' or page.product_group=='dxl_x540' or page.product_group=='dxl_xw540' or page.product_group=='dxl_x430' or page.product_group=='dxl_xl430' %}
 **참고** : Time-based Profile은 펌웨어 V42부터 지원합니다.
 {: .notice}
 {% else %}{% endif %}
 
 **참고** : Drive Mode(10)의 0번 비트(Normal/Reverse Mode)를 설정하면, 다이나믹셀의 기본동작 방향이 반전됩니다.  
-따라서 다이나믹셀의 {% if page.product_group=='dxl_mx2' or page.product_group=='dxl_x540' %}**Position**, **Velocity**, **Current**, **PWM**값{% else %}**Goal Position**, **Present Position**{% endif %}의 방향이 반전됩니다.  
+따라서 다이나믹셀의 {% if page.product_group=='dxl_mx2' or page.product_group=='dxl_x540' or page.product_group=='dxl_xw540' %}**Position**, **Velocity**, **Current**, **PWM**값{% else %}**Goal Position**, **Present Position**{% endif %}의 방향이 반전됩니다.  
 대칭구조의 관절이나 바퀴 구동 시스템을 구성할 때 편리하게 사용할 수 있습니다.
 {: .notice}
 
@@ -35,7 +35,7 @@ Normal/Reverse Mode는 관절모드와 다중회전 모드에서만 사용가능
 {% else %}{% endif %}
 
 
-{% if page.ref!='xw540-t150' and page.ref!='xw540-t270' and page.product_group=='dxl_x540' or page.product_group=='dxl_ex' or page.ref=='mx-106-2' or page.ref=='mx-106' %}
+{% if page.product_group=='dxl_x540' or page.product_group=='dxl_ex' or page.ref=='mx-106-2' or page.ref=='mx-106' %}
 #### 듀얼 모드
 2개의 다이나믹셀을 결합해서 더욱 강력한 1개의 관절로 제어하기 위한 방법입니다.  
 동기화된 관절을 사용하려면 마스터 모드로 설정된 다이나믹셀과 슬레이브 모드로 설정된 다이나믹셀이 동기화 케이블로 연결되어야 합니다.  

@@ -10,9 +10,13 @@ When installing horn, carefully match the align markings on the horn and the whe
 
 Once alignment is properly done, gently push the center of the horn toward the actuator.
 
+{% if page.product_group=='dxl_xw540' %}
+
+{% else %}
 ### Gear Replacement
 
 You may need to replace the internal gear set when gears are worn out or damaged.
 Please follow the gear replacement instruction video.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wKxcZNMrrCQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+{% endif %}

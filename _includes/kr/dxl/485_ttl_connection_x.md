@@ -1,7 +1,7 @@
 ## [통신 회로](#통신-회로)
 다이나믹셀을 제어하기 위해서는 제어기의 UART 신호를 Half duplex type으로 변환시켜 주어야 합니다. 다음은 권장 회로도입니다.
 
-{% if page.ref!='xw540-t150' and page.ref!='xw540-t270' %}
+{% if page.product_group !='dxl_xw540' %}
 ### [TTL 통신](#ttl-통신)
 ![](/assets/images/dxl/ttl_circuit.png)
 
@@ -11,7 +11,7 @@
 ### [RS-485 통신](#rs485-통신)
 ![](/assets/images/dxl/x/x_series_485_circuit.jpg)  
 > RS-485 통신회로 
-{% if page.ref=='xw540-t150' or page.ref=='xw540-t270' %}
+{% if page.product_group=='dxl_xw540' %}
 
 ![](/assets/images/dxl/x/xw/xw_series_485_pin.png)
 > XW540-시리즈 커넥터  

@@ -20,7 +20,7 @@
   {% assign target_file = 'dxl_proa_info' %}
 {% elsif page.product_group=='dxl_pro' %}
   {% assign target_file = 'dxl_pro_info' %}
-{% elsif page.product_group=='dxl_x430' or page.product_group=='dxl_xl430' or page.product_group=='dxl_x540' or page.product_group=='dxl_xl320' %}
+{% elsif page.product_group=='dxl_x430' or page.product_group=='dxl_xl430' or page.product_group=='dxl_x540' or page.product_group=='dxl_xw540' or page.product_group=='dxl_xl320' %}
   {% assign target_file = 'dxl_x_info' %}
 {% elsif page.product_group=='rh_p12_rn' or page.product_group=='rh_p12_rna' %}
   {% assign target_file = 'rh_p12_rn_info' %}

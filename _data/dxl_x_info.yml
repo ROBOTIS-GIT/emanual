@@ -494,8 +494,8 @@ xw540-t150:
   voltage:            *voltage_12
   voltage_en:         *voltage_12_en
   command:            *command
-  protocoltype:       *rs485_ttl
-  physicalconnection: *rs485_ttl_conn
+  protocoltype:       *rs485
+  physicalconnection: *rs485_connection
   id:                 *id
   feedback:           *feedback
   material:           Full Metal Gear / Full Metal Case
@@ -524,8 +524,8 @@ xw540-t270:
   voltage:            *voltage_12
   voltage_en:         *voltage_12_en
   command:            *command
-  protocoltype:       *rs485_ttl
-  physicalconnection: *rs485_ttl_conn
+  protocoltype:       *rs485
+  physicalconnection: *rs485_connection
   id:                 *id
   feedback:           *feedback
   material:           Full Metal Gear / Full Metal Case
