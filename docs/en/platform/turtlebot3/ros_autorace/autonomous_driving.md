@@ -400,14 +400,16 @@ $ rqt_image_view
 The AutoRace is a competition for autonomous driving robot platforms.  
 To provide various conditions for a robot application development, the game provide structural regulation as less as possible. Provided open sources are based on ROS, and can be applied to this competition. The contents can be continually updated. Join the competition and show your skill.
 
-**NOTE**: Be sure to read [Autonomous Driving](#autonomous-driving) in order to start missions.
-{: .notice}
+**WARNING**: Be sure to read [Autonomous Driving](#autonomous-driving) in order to start missions.
+{: .notice--warning}
 
 ### [Mission 1: Traffic Light](#mission-1-traffic-light)
 
-Traffic Light is the first mission of AutoRace. TurtleBot3 should see the sign of traffic lights, perfectly compute the given situation, and then start to drive (or wait until the proper traffic sign)
+Traffic Light is the first mission of AutoRace. TurtleBot3 recognizes the traffic lights and starts the course.
 
-#### [Camera Calibration for Traffic Light](#camera-calibration-for-traffic-light)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JNj_STs3OSg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+#### [Camera Calibration for Traffic Lights](#camera-calibration-for-traffic-lights)
 
 1. Open terminal and use the command on `Remote PC`.
 ```bash
@@ -427,19 +429,16 @@ rqt
 $ rosrun rqt_reconfigure rqt_reconfigure
 ```
 
-5. Adjust parameters. 
+5. Adjust parameters regarding traffic light topics to enhance the detection of traffic signs. The way of adjusting parameters is similar to step 5 at [Lane Detection](#lane-detection). 
 
 6. Open **traffic_light.yaml** file located at **turtlebot3_autorace_traffic_light_detect/param/traffic_light/**.
 
 7. Write modified values to the file and save.  
 
-8. Open terminal and use the command on `Remote PC`.
-```bash
-$ export AUTO_DT_CALIB=action
-$ roslaunch turtlebot3_autorace_traffic_light_detect turtlebot3_autorace_detect_traffic_light.launch
-```
 
-9. Open terminal and use the command on `Remote PC`.
+8. Terminate both running rqt and rqt_reconfigure in order to test, from the next step, the calibration whether or not it is successfully applied.
+
+8. Use the command on `Remote PC`.
 ```bash
 $ export AUTO_DT_CALIB=action
 $ roslaunch turtlebot3_autorace_traffic_light_detect turtlebot3_autorace_detect_traffic_light.launch
@@ -454,8 +453,8 @@ $ rqt_image_view
 
 #### [Run Traffic Light Mission](#run-traffic-light-mission)
 
-Be sure to read [Camera Calibration for Traffic Lights](#camera-calibration-for-traffic-lights) before running the traffic light node.   
-{: .notice}
+**WARNING**: Be sure to read [Camera Calibration for Traffic Lights](#camera-calibration-for-traffic-lights) before running the traffic light node.   
+{: .notice--warning}
 
 1. Use the command on `Remote PC`.
 ``` bash
@@ -478,7 +477,9 @@ $ rostopic pub -1 /core/decided_mode std_msgs/UInt8 "data: 3"
 
 ### [Mission 2: Intersection](#mission-2-intersection)
 
-Intersection is the second mission of AutoRace. TurtleBot3 should detect the specific sign (such as a curve sign) and go to the right direction at the intersection course.
+Intersection is the second mission of AutoRace. TurtleBot3 detects a specific traffic sign (such as a curve sign) at the intersection course, and go to the given direction. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8K4GMbfXFXI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### [How to Run Intersection Mission](#how-to-run-intersection-mission)
 
@@ -502,7 +503,9 @@ $ rostopic pub -1 /core/decided_mode std_msgs/UInt8 "data: 2"
 
 ### [Mission 3: Construction](#mission-3-construction)
 
-Construction is the third mission of AutoRace. TurtleBot3 should avoid constructions when it is running on the track. 
+Construction is the third mission of AutoRace. TurtleBot3 avoids constructions on the track while it is driving.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/88nXiX8UUtw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### [How to Run Construction Mission](#how-to-run-construction-mission)
 
@@ -527,7 +530,9 @@ $ rostopic pub -1 /core/decided_mode std_msgs/UInt8 "data: 2"
 
 ### [Mission 4: Parking](#mission-4-parking)
 
-Parking is the fourth mission of AutoRace. TurtleBot3 should detect the parking sign, and park itself at a parking lot.
+Parking is the fourth mission of AutoRace. TurtleBot3 detects the parking sign, and park itself at a parking lot.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/F3ZG8PlagaA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### [How to Run Parking Mission](#how-to-run-parking-mission)
 
@@ -552,7 +557,9 @@ $ rostopic pub -1 /core/decided_mode std_msgs/UInt8 "data: 2"
 
 ### [Mission 5: Level Crossing](#mission-5-level-crossing)
 
-Level Crossing is the fifth mission of AutoRace. When TurtleBot3 meets the level crossing during the drive, it should stop driving and wait until the level crossing opens. 
+Level Crossing is the fifth mission of AutoRace. When TurtleBot3 encounters the level crossing, it stops driving, and wait until the level crossing opens. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xyBaLeg4Ifk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### [Camera Calibration for Level Crossing](#camera-calibration-for-level-crossing)
 
@@ -562,19 +569,25 @@ $ export AUTO_DT_CALIB=calibration
 $ roslaunch turtlebot3_autorace_level_crossing_detect turtlebot3_autorace_detect_level.launch
 ```
 
-2. Execute rqt and select two topics: `/detect/image_level_color_filtered`, `/detect/image_level`
+2. Execute rqt
 ```bash
 $ rqt
 ```
 
-3. Run rqt_reconfigure.
+3. Select two topics: `/detect/image_level_color_filtered`, `/detect/image_level`
+
+3. Execute rqt_reconfigure.
 ```bash
 $ rosrun rqt_reconfigure rqt_reconfigure
 ```
 
-4. Select `/detect_level` and adjust parameters.
+4. Select `/detect_level` and adjust parameters regarding Level Crossing topics to enhance the detection of the level crossing object. The way of adjusting parameters is similar to step 5 at [Lane Detection](#lane-detection). 
 
-5. Run detect level lanuch file.
+5. Open **level.yaml** located at **turtlebot3_autorace_stop_bar_detect/param/level/**.
+
+6. Write modified values to the file and save. 
+
+5. Run a detect level lanuch file.
 ```bash
 $ export AUTO_DT_CALIB=action
 $ roslaunch turtlebot3_autorace_detect turtlebot3_autorace_detect_level.launch
@@ -603,7 +616,9 @@ $ rostopic pub -1 /core/decided_mode std_msgs/UInt8 "data: 2"
 
 ### [Mission 6: Tunnel](#mission-6-tunnel)
 
-Tunnel is the sixth mission of AutoRace. TurtleBot3 should pass the tunnel successfully.
+Tunnel is the sixth mission of AutoRace. TurtleBot3 passes the tunnel successfully. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QtBx_MKLsPs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### [How to Run Tunnel Mission](#how-to-run-tunnel-mission)
 

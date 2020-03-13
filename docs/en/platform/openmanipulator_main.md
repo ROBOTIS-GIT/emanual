@@ -11,8 +11,6 @@ sidebar:
   nav: "openmanipulator"
 ---
 
-
-
 # [OpenMANIPULATOR-X](#openmanipulator-x)
 
 ![](/assets/images/platform/openmanipulator_x/OpenManipulator.resized.png)
@@ -48,7 +46,7 @@ sidebar:
 
 - [OpenMANIPULATOR-X](/docs/en/platform/openmanipulator_x/overview/) 
 
-# [OpenMANIPULATOR-P](#openmanipulator-pro)
+# [OpenMANIPULATOR-P](#openmanipulator-p)
  
 ![](/assets/images/platform/openmanipulator_p/logo.png)
 

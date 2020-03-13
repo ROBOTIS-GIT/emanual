@@ -15902,16 +15902,16 @@ turtlebot3:
     - title: "TurtleBot3 AutoRace 2020"
       url: /platform/turtlebot3/autonomous_driving/#turtlebot3-autorace-2020
       children:
-      - title: "Mission 1: Traffic Light"
-        url: /platform/turtlebot3/autonomous_driving/#mission-1-traffic-light
+      - title: "Mission 1: Traffic Lights"
+        url: /platform/turtlebot3/autonomous_driving/#mission-1-traffic-lights
       - title: "Mission 2: Intersection"
         url: /platform/turtlebot3/autonomous_driving/#mission-2-intersection
       - title: "Mission 3: Construction"
         url: /platform/turtlebot3/autonomous_driving/#mission-3-construction
       - title: "Mission 4: Parking"
         url: /platform/turtlebot3/autonomous_driving/#mission-4-parking
-      - title: "Mission 5: Stop Bar"
-        url: /platform/turtlebot3/autonomous_driving/#mission-5-stop-bar
+      - title: "Mission 5: Level Crossing"
+        url: /platform/turtlebot3/autonomous_driving/#mission-5-level-crossing
       - title: "Mission 6: Tunnel"
         url: /platform/turtlebot3/autonomous_driving/#mission-6-tunnel
       - title: "Run Autonomous Driving"
@@ -16243,7 +16243,7 @@ openmanipulator:
   - title : "OpenMANIPULATOR-X"
     url: /platform/openmanipulator_main/#openmanipulator-x
   - title : "OpenMANIPULATOR-P"
-    url: /platform/openmanipulator_main/#openmanipulator-pro
+    url: /platform/openmanipulator_main/#openmanipulator-p
     
 #OpenMANIPULATOR-X sidebar
 openmanipulator_x:
