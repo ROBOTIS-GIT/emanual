@@ -47,7 +47,6 @@ sidebar:
 **참고**: OpenCM9.04을 OpenCM 485 확장보드와 함께 사용하면, 모든 다이나믹셀을 제어할수 있습니다.
 {: .notice}
 
-
 ## [부품 호환표](#부품-호환표)
 
 |              모델              | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[OpenCM 485 확장보드]) | [OpenCM 7.0] | [OpenCR] |
@@ -157,7 +156,6 @@ sidebar:
 | [ROBOTIS Manipulator library]  |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                    X                     |      X       |    O     |
 | [임베디드 SDK(CM-510/530/700)] |   X    |    X    |    X     |    X     |    X     |    O     |    O     |    X     |    O     |    X     |                    X                     |      X       |    X     |
 |          아두이노 IDE          |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                    O                     |      X       |    O     |
-
 
   {% capture etc %}
   **참고**:

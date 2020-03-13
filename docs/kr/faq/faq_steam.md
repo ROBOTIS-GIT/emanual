@@ -11,4 +11,7 @@ sidebar:
   nav: "faq_steam"
 ---
 
-# Parts FAQs
+# FAQ
+
+준비중입니다.
+{ :notice}
