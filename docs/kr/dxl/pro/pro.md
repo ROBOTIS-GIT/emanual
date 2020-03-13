@@ -9,9 +9,6 @@ sidebar:
 ---
 
 
-
-
-
 ![](/assets/images/dxl/pro/dynamixelpro_main.jpg)
 > 다이나믹셀 PRO
 

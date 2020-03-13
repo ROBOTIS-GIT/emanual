@@ -39,9 +39,9 @@ product_group: dxl_pro_plus
 | [PH54-200-S500-R](/docs/en/dxl/p/ph54-200-s500-r/) | 54 x 126 x 54  |  855g  | 1,003,846  |   BLDC (Maxon)   |
 | [PH54-100-S500-R](/docs/en/dxl/p/ph54-100-s500-r/) | 54 x 108 x 54  |  740g  | 1,003,846  |   BLDC (Maxon)   |
 | [PH42-020-S300-R](/docs/en/dxl/p/ph42-020-s300-r/) |  42 x 84 x 42  |  340g  |  607,500   | Coreless (Maxon) |
-| [PM54-060-S250-R](/docs/en/dxl/p/pm54-060-s250-r/) | 54 x 126 x 54  |  855g  |  502,834   |       BLCD       |
-| [PM54-040-S250-R](/docs/en/dxl/p/pm54-040-s250-r/) | 54 x 108 x 54  |  710g  |  502,834   |       BLCD       |
-| [PM42-010-S260-R](/docs/en/dxl/p/pm42-010-s260-r/) |  42 x 72 x 42  |  270g  |  526,374   |     Coreless     |
+| [PM54-060-S250-R](/docs/en/dxl/p/pm54-060-s250-r/) | 54 x 126 x 54  |  855g  |  502,834   |   BLDC (Maxon)   |
+| [PM54-040-S250-R](/docs/en/dxl/p/pm54-040-s250-r/) | 54 x 108 x 54  |  710g  |  502,834   |   BLDC (Maxon)   |
+| [PM42-010-S260-R](/docs/en/dxl/p/pm42-010-s260-r/) |  42 x 72 x 42  |  270g  |  526,374   | Coreless (Maxon) |
 
 # [Communication Circuitry](#communication-circuitry)
 
