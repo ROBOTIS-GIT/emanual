@@ -14510,6 +14510,10 @@ kit2:
     url: /edu/engineer/kit2_reference/#references
     urlkr: /edu/engineer/kit2_reference/#참고자료
     children:
+    - title: "How to use a video streaming with Kit2"
+      titlekr: "제어기 BLE 신호 세기 설정"
+      url: /edu/engineer/kit2_reference/#ble-signal-setting
+      urlkr: /edu/engineer/kit2_reference/#제어기-ble-신호-세기-설정
     - title: "BLE Signal Setting"
       titlekr: "제어기 BLE 신호 세기 설정"
       url: /edu/engineer/kit2_reference/#ble-signal-setting

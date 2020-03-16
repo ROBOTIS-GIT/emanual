@@ -17,6 +17,45 @@ page_number: 3
 
 # [참고자료](#참고자료)
 
+## [앱에서 영상 스트리밍 기능 설정하기](#앱에서-영상-스트리밍-기능-설정하기)
+
+스트리밍(Streaming)이란 음성이나 영상, 애니메이션 등을 실시간으로 재생하는 기술을 말합니다.
+ROBOTIS ENGINEER KIT2에서는 Raspberry Pi Camera와 앱을 동일한 와이파이 환경에 연결
+한 후 촬영한 영상을 스트리밍 기능을 통해 바로 확인할 수 있습니다.
+
+1. 제어기의 전원을 켜고 Raspberry Pi가 부팅될 때까지 기다립니다.
+  
+    **참고**: 약 70초 정도가 지나 부팅이 되면 사용자 LED가 노란색으로 켜지고 소리가 납니다.
+    {: .notice}
+
+    ![](/assets/images/edu/engineer/kit2/pi_booting.png)
+
+2. 앱이 설치된 기기에서 와이파이 설정을 선택합니다.
+  
+3. 네크워크 목록에서 Robotis_Rpi_XXXX를 찾아 선택합니다.
+
+    ![](/assets/images/edu/engineer/kit2/kit2_wifi_01.png)
+        
+    **참고**: XXXX는 제어기 MAC 주소 4자리 입니다.
+    {: .notice}
+
+4. 비밀번호 입력창이 나타나면 `robotis0` 을 입력한 후 연결합니다. 
+   
+   ![](/assets/images/edu/engineer/kit2/kit2_wifi_02.png)
+
+5.  ENGINEER 앱을 실행한 후 우측 상단의 블루투스 아이콘을 눌러 제어기와 연결합니다. 제어기가 연결되면, 아이콘이 초록색으로 바뀝니다.
+
+    ![](/assets/images/edu/engineer/kit2/kit2_streaming_bluetooth.png)
+
+6. 스트리밍 기능이 지원되는 MAX-E2 또는 Commando를 선택하여 스트리밍 기능을 실행하면
+아래 화면과 같이 스트리밍 기능을 활용해 로봇을 조종할 수 있습니다.
+
+    ![](/assets/images/edu/engineer/kit2/kit2_streaming_select_example.png)
+    > 예제 선택
+        
+    ![](/assets/images/edu/engineer/kit2/kit2_streaming_select_example_02.png)
+    > 라즈베리파이 카메라와 연결된 스트리밍 화면
+
 ## [제어기 BLE 신호 세기 설정](#제어기-ble-신호-세기-설정)
 
 CM-550에 내장된 BLE 슬레이브 모듈의 신호의 세기가 약하거나 간섭이 발생할 경우 통신이 불안정할 수 있습니다.  

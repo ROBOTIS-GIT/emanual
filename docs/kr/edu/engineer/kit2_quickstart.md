@@ -89,7 +89,7 @@ page_number: 2
 
 `ROBOTIS ENGINEER` 앱을 실행하고 조립된 로봇 예제를 선택하면 해당 예제에 맞는 다양한 기능들을 사용할 수 있습니다.    
 
-![](/assets/images/edu/engineer/kit1/engineer_app_1.png)
+![](/assets/images/edu/engineer/kit2/engineer2_app_execution.png)
 
 **주의** : 조립된 로봇과 다른 예제를 선택할 경우 로봇이 정상적으로 작동하지 않습니다.
 {: .notice--warning}
@@ -108,52 +108,63 @@ page_number: 2
 ### [블루투스 연결하기](#블루투스-연결하기)
 - 엔지니어 키트를 조종하기위해서, CM-550과 엔지니어 키트앱의 무선연결이 필요합니다. 엔지니어 키트1의 [블루투스 연결하기](/docs/kr/edu/engineer/kit1/#블루투스-연결하기)를 따라하세요.
 
-### [Dr.R](#drr)
+### [MAX-E2](#max-e2)
 
-#### 감정 표현  
-Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정이 나타납니다. 로봇을 터치하거나 이벤트가 발생하면 표정 변화, 움직이기, 말하기 등의 다양한 감정 표현을 합니다.  
+#### [조종 화면](#조종-화면)
 
-![](/assets/images/edu/engineer/kit1/engineer_app_emotion_1.png)
+![](/assets/images/edu/engineer/kit2/max2_controller_kr.png)
 
-#### 모드 선택하기
+`메뉴 버튼`: 조종 / 스트리밍 / 얼굴 감지 / 로봇 점검 모드 등을 선택해 변경할 수 있습니다  
+`조종 버튼`: MAX-E2를 조종하기 위한 버튼과 동작의 속도를 변경하는 버튼이 배치되어 있습니다.  
+`모드 선택`: NORMAL / FIGHT / SOCCER / SPECIAL 등의 조종 모드를 변경할 수 있습니다.  
+`모션 버튼`: 선택한 조종 모드에 따라 적합한 다양한 모션 동작들이 각각 설정되어 있습니다.  
+`기능 버튼`: 전체 토크 설정 / LED 보드 색상 변경 / 로봇 일어나기 등의 기능이 설정되어 있습니다.  
 
-오른쪽 아래 `Mode` 버튼을 터치하면 아래와 같이 모드 변경 메뉴가 나타납니다. 5개의 모드와 2개의 옵션 메뉴가 있습니다.
+**참고**: TORQ ON/OFF 버튼을 길게 누르면 전체 다이나믹셀의 토크가 풀리면서 리부트 됩니다.
+{: .notice}
 
-![](/assets/images/edu/engineer/kit1/engineer_app_emotion_3_kr.png)
+#### 모드 메뉴
 
-##### 모드 메뉴
+|                        아이콘                         | 모드 설명                                                                                                                                          |
+|:-----------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------|
+|  ![](/assets/images/edu/engineer/kit2/icon_remote.png)  | **REMOTE : 조종 모드**<br>MAX-E2 로봇을 조종하는 모드이며 FIGHT, SOCCER 등의 모드 변경을 통해 MAX-E2를 다양한 모션으로 조종할 수 있습니다.         |
+|  ![](/assets/images/edu/engineer/kit2/icon_streaming.png) | **STREAMING : 스트리밍 모드**<br>Raspberry Pi 카메라를 활용해 전송되는 영상을 스마트 기기의 화면으로 보면서 버튼을 눌러 로봇을 조종할 수 있습니다. |
+| ![](/assets/images/edu/engineer/kit1/icon_face.png) | **FACE : 얼굴 감지 모드**<br>라즈베리파이 카메라를 활용해 얼굴을 감지하는 모드로 얼굴을 감지하면 인사 등의 지정된 동작을 수행합니다.               |
 
-|                        아이콘                         | 모드 설명                                                                                                                                                       |
-|:-----------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|  ![](/assets/images/edu/engineer/kit1/icon_demo.png)  | **DEMO : 감성인식 모드**<br>기본 데모 모드로 스마트 기기 화면을 통해 감정상태를 표현합니다.<br>로봇이나 스마트 기기를 터치하면 다양한 반응을 합니다.            |
-|  ![](/assets/images/edu/engineer/kit1/icon_face.png)  | **FACE : 얼굴인식 모드**<br>스마트 기기의 카메라로 얼굴을 인식하고 추적하는 모드입니다.<br>AR 기술을 적용해 추적하는 얼굴 위에 스티커를 입힙니다.               |
-| ![](/assets/images/edu/engineer/kit1/icon_object.png) | **OBJECT : 객체인식 모드**<br>사전에 등록된 물건을 카메라로 인식하고 말하는 모드입니다.<br>바나나, 볼펜, 차 열쇠, 지갑, 지폐 등 12종의 물건을 말할 수 있습니다. |
-| ![](/assets/images/edu/engineer/kit1/icon_voice.png)  | **VOICE : 음성인식 모드**<br>등록된 음성 명령을 인식하고 실행하는 모드입니다.<br>모드 변경 및 옵션 메뉴 실행, 종료 등의 명령을 인식합니다.                      |
-|  ![](/assets/images/edu/engineer/kit1/icon_clap.png)  | **CLAP : 박수감지 모드**<br>제어기의 마이크 센서를 통해 박수소리를 인식하는 모드입니다.<br>인식한 박수소리의 숫자만큼 Dr.R이 따라서 박수를 칩니다.              |
-
-##### 옵션메뉴
+#### 옵션메뉴
 
 |                        아이콘                         | 옵션 설명                                                                                    |
 |:-----------------------------------------------------:|:---------------------------------------------------------------------------------------------|
-| ![](/assets/images/edu/engineer/kit1/icon_motor.png)  | **MOTOR : 다이나믹셀 점검**<br>로봇의 다이나믹셀 상태를 각각 테스트해 볼 수 있는 메뉴입니다. |
-| ![](/assets/images/edu/engineer/kit1/icon_offset.png) | **OFFSET : 모션오프셋**<br>모션 동작시 각 관절의 기본 위치를 설정하는 기능입니다.            |
+| ![](/assets/images/edu/engineer/kit1/icon_motor.png)  | **MOTOR : 모터 점검**<br>로봇의 다이나믹셀 상태를 각각 테스트해 볼 수 있는 메뉴입니다. |
+| ![](/assets/images/edu/engineer/kit1/icon_offset.png) | **OFFSET : 모션 오프셋**<br>모션 동작시 각 관절의 기본 위치를 설정하는 기능입니다.            |
+
+![](/assets/images/edu/engineer/kit2/kit2_motor_inspection_layout.png)
+> 모터 점검 실행 화면
+
+![](/assets/images/edu/engineer/kit2/kit2_offset_layout.png)
+> 모션 오프셋 실행 화면
 
 **참고** : 옵션 메뉴는 모든 예제에 포함되어 있으며 세부 설정 방법은 [로봇 설정하기](#로봇-설정하기)를 참고하세요.
 {: .notice--info}
 
-### [MAX-E1](#max-e1)
+### [Commando](#commando)
 
-#### 리모컨 화면
+#### [데모 화면 소개](#데모-화면-소개)
 
-![](/assets/images/edu/engineer/kit1/max_controller_kr.png)
+![](/assets/images/edu/engineer/kit2/commando_demo.png)
 
-`조종 모드` : MAX-E1의 조종 모드를 일반/전투/축구모드로 변경할 수 있습니다.  
-`조종 버튼` : 전/후/좌/우 이동 및 속도 설정 버튼으로 로봇을 조종할 수 있습니다  
+`메뉴 버튼` : 데모 / 조종 / 스트리밍 / 로봇 점검 모드 등을 선택해 변경할 수 있습니다.  
+`모드 버튼` : 전/후/좌/우 이동 및 속도 설정 버튼으로 로봇을 조종할 수 있습니다  
+- `LINE MODE`를 선택하면 Raspberry Pi Camera를 사용해 설정된 색의 라인을 인식하고 이동합니다. `COLOR SELECTION`에서 인식할 라인 색을 선택합니다
+- `MARKER MODE`를 선택하면 Raspberry Pi Camera를 사용해 마커를 순서대로 인식한 후 `START 마커`를 사용해 인식한 마커의 순서에 따라 명령대로 이동합니다. `DEBUGGING MODE`는 동작 사이에 지연 시간이 발생해 동작을 구분할 수 있고 `RUN MODE`는 지연시간 없이 동작과 동작을 연결해서 이동합니다. 
+  **참고**: 마커는 카메라에서 30 CM 이상 떨어진 거리에서 인식시켜야 인식이 잘됩니다..
+  {: .notice}
+  
 `모션 버튼` : 각 조종 모드에 따라 각각 등록된 모션을 실행하는 버튼입니다.  
 `토크 설정` : 로봇의 다이나믹셀 토크를 켜거나 끌 수 있는 버튼입니다.  
 `메뉴 버튼` : MAX-E1 로봇의 특수 기능 메뉴를 불러오는 버튼입니다.  
 
-#### 메뉴 화면
+#### 옵션메뉴
 
 |                         아이콘                         | 메뉴 설명                                                                    |
 |:------------------------------------------------------:|:-----------------------------------------------------------------------------|
@@ -161,7 +172,7 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
 | ![](/assets/images/edu/engineer/kit1/icon_gesture.png) | **GESTURE** : 등록된 스마트 기기의 동작 제스처로 로봇을 조종하는 기능입니다. |
 |  ![](/assets/images/edu/engineer/kit1/icon_clap.png)   | **CLAP** : 박수소리를 감지하고 감지한 횟수만큼 MAX-E1이 박수를 칩니다.       |
 
-### [SPI](#spi)
+### [Scorpi](#scorpi)
 
 #### 리모컨 화면  
 
