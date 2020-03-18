@@ -383,6 +383,9 @@ main:
       - title: "Kit 1"
         titlekr: "키트 1"
         url: /edu/engineer/kit1/
+      - title: "Kit 2"
+        titlekr: "키트 2"
+        url: /edu/engineer/kit2_introduction/        
     - title: "ROBOTIS MINI"
       titlekr: "로보티즈 미니"
       url: /edu/mini/
@@ -14291,28 +14294,28 @@ kit1:
       titlekr: "앱 설치하기"
       url: /edu/engineer/kit1/#app-installation
       urlkr: /edu/engineer/kit1/#앱-설치하기
-    - title: "Pairing Bluetooth"
-      titlekr: "블루투스 연결하기"
-      url: /edu/engineer/kit1/#pairing-bluetooth
-      urlkr: /edu/engineer/kit1/#블루투스-연결하기
     - title: "Download Examples"
       titlekr: "예제 다운로드"
       url: /edu/engineer/kit1/#download-examples
       urlkr: /edu/engineer/kit1/#예제-다운로드
       children:
       - title: "Download from PC"
-        titlekr: "PC에서 예제 다운로드"
+        titlekr: "PC에서 예제 다운로드 받기"
         url: /edu/engineer/kit1/#download-from-pc
-        urlkr: /edu/engineer/kit1/#pc에서-예제-다운로드
+        urlkr: /edu/engineer/kit1/#pc에서-예제-다운로드-받기
       - title: "Download from Smart Device"
-        titlekr: "스마트 기기에서 예제 다운로드"
+        titlekr: "스마트 기기에서 예제 다운로드 받기"
         url: /edu/engineer/kit1/#download-from-smart-device
-        urlkr: /edu/engineer/kit1/#스마트-기기에서-예제-다운로드
+        urlkr: /edu/engineer/kit1/#스마트-기기에서-예제-다운로드-받기
     - title: "Run Examples"
       titlekr: "예제 실행하기"
       url: /edu/engineer/kit1/#run-examples
       urlkr: /edu/engineer/kit1/#예제-실행하기
       children:
+      - title: "Pairing Bluetooth"
+        titlekr: "블루투스 연결하기"
+        url: /edu/engineer/kit1/#pairing-bluetooth
+        urlkr: /edu/engineer/kit1/#블루투스-연결하기
       - title: "Dr.R"
         titlekr: "Dr.R"
         url: /edu/engineer/kit1/#drr
@@ -14351,10 +14354,6 @@ kit1:
     titlekr: "교육자료 다운로드"
     url: /edu/engineer/kit1/#study-materials
     urlkr: /edu/engineer/kit1/#교육자료-다운로드
-  - title: "Download Softwares"
-    titlekr: "소프트웨어 다운로드"
-    url: /edu/engineer/kit1/#download-softwares
-    urlkr: /edu/engineer/kit1/#소프트웨어-다운로드
   - title: "References"
     titlekr: "참고자료"
     url: /edu/engineer/kit1/#references
@@ -14496,11 +14495,6 @@ kit2:
     titlekr: "튜토리얼"
     url: /edu/engineer/kit2_quickstart/#tutorials
     urlkr: /edu/engineer/kit2_quickstart/#튜토리얼
-    children:
-    - title: "[Machine Learning] Object Detection"
-      titlekr: "머신러닝 기반의 사물인식"
-      url: /edu/engineer/kit2_quickstart/#machine-learning-object-detection
-      urlkr: /edu/engineer/kit2_quickstart/#머신러닝-기반의-사물인식
   - title: "Study Materials"
     titlekr: "교육자료 다운로드"
     url: /edu/engineer/kit2_quickstart/#study-materials
@@ -14514,10 +14508,10 @@ kit2:
       titlekr: "제어기 BLE 신호 세기 설정"
       url: /edu/engineer/kit2_reference/#ble-signal-setting
       urlkr: /edu/engineer/kit2_reference/#제어기-ble-신호-세기-설정
-    - title: "BLE Signal Setting"
-      titlekr: "제어기 BLE 신호 세기 설정"
-      url: /edu/engineer/kit2_reference/#ble-signal-setting
-      urlkr: /edu/engineer/kit2_reference/#제어기-ble-신호-세기-설정
+    - title: "How to use a video streaming with Kit2"
+      titlekr: "앱에서 영상 스트리밍 기능 설정하기"
+      url: /edu/engineer/kit2_reference/#how-to-use-a-video-streaming-with-kit2
+      urlkr: /edu/engineer/kit2_reference/#앱에서-영상-스트리밍-기능-설정하기      
     - title: "Setting Up the Robot"
       titlekr: "로봇 설정하기"
       url: /edu/engineer/kit2_reference/#setting-up-the-robot

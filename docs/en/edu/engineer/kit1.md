@@ -243,7 +243,6 @@ It is not a mandatory and it may require more time to replace the cable afterwar
 4. **Android** : Press the `Agree` button to proceed installation.  
   ![](/assets/images/edu/engineer/kit1/app_installation_04.png)
 
-
 ## [Pairing Bluetooth](#pairing-bluetooth)
 
 1. Turn on the CM-550 controller with power switch.  

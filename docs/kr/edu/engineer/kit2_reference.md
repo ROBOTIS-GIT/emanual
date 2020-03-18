@@ -43,18 +43,17 @@ ROBOTIS ENGINEER KIT2에서는 Raspberry Pi Camera와 앱을 동일한 와이파
    
    ![](/assets/images/edu/engineer/kit2/kit2_wifi_02.png)
 
-5.  ENGINEER 앱을 실행한 후 우측 상단의 블루투스 아이콘을 눌러 제어기와 연결합니다. 제어기가 연결되면, 아이콘이 초록색으로 바뀝니다.
+5. ENGINEER 앱을 실행한 후 우측 상단의 블루투스 아이콘을 눌러 제어기와 연결합니다. 제어기가 연결되면, 아이콘이 초록색으로 바뀝니다.
 
     ![](/assets/images/edu/engineer/kit2/kit2_streaming_bluetooth.png)
 
-6. 스트리밍 기능이 지원되는 MAX-E2 또는 Commando를 선택하여 스트리밍 기능을 실행하면
-아래 화면과 같이 스트리밍 기능을 활용해 로봇을 조종할 수 있습니다.
+6. 스트리밍 기능이 지원되는 MAX-E2 또는 Commando를 선택하여 스트리밍 기능을 실행하면 아래 화면과 같이 스트리밍 기능을 활용해 로봇을 조종할 수 있습니다.
 
     ![](/assets/images/edu/engineer/kit2/kit2_streaming_select_example.png)
     > 예제 선택
         
     ![](/assets/images/edu/engineer/kit2/kit2_streaming_select_example_02.png)
-    > 라즈베리파이 카메라와 연결된 스트리밍 화면
+    > 스트리밍 화면
 
 ## [제어기 BLE 신호 세기 설정](#제어기-ble-신호-세기-설정)
 
