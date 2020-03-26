@@ -57,10 +57,16 @@ The contents in e-Manual can be updated without a previous notice. Therefore, so
 **NOTE**: Before you install `open_manipulator_with_tb3` packages, please make sure `turtlebot3` and `open_manipulator` packages have been installed previously in RemotePC and setup [Raspberry Pi 3](/docs/en/platform/turtlebot3/raspberry_pi_3_setup/#raspberry-pi-3-setup).
 {: .notice--info}
 
-- Install dependent packages for the OpenMANIPULATOR with TurtleBot3.
-
-**[Remote PC]**
+1. **[RemotePC]** Download and build the package using the following commands in order to use assembled OpenMANIPULATOR-X.
 ```bash
+$ cd ~/catkin_ws/src/
+$ git clone https://github.com/ROBOTIS-GIT/turtlebot3_manipulation.git
+$ git clone https://github.com/ROBOTIS-GIT/turtlebot3_manipulation_simulations.git
+```
+
+<!-- 
+```bash
+$ cd ~/catkin_ws && catkin_make
 $ cd ~/catkin_ws/src/
 $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3.git
 $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3_msgs.git
@@ -70,18 +76,19 @@ $ sudo apt-get install ros-kinetic-smach* ros-kinetic-ar-track-alvar ros-kinetic
 $ cd ~/catkin_ws && catkin_make
 ```
 
-- If `catkin_make` command is completed without any errors, the preparation for OpenMANIPULATOR is done. Then load a TurtleBot3 Waffle or Waffle Pi with OpenMANIPULATOR on RViz.
+- If `catkin_make` command is completed without any errors, the preparation for OpenMANIPULATOR is done. Then load a TurtleBot3 Waffle or Waffle Pi with OpenMANIPULATOR on RViz. -->
 
-**TIP**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `waffle`, `waffle_pi`. If you want to permanently set the export settings, please refer to [Export TURTLEBOT3_MODEL][export_turtlebot3_model]{: .popup} page.
+<!-- **TIP**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `waffle`, `waffle_pi`. If you want to permanently set the export settings, please refer to [Export TURTLEBOT3_MODEL][export_turtlebot3_model]{: .popup} page.
 {: .notice--success}
 
 **[RemotePC]**
 ```bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ roslaunch open_manipulator_with_tb3_description open_manipulator_with_tb3_rviz.launch
-```
+``` 
 
 ![](/assets/images/platform/turtlebot3/manipulation/TurtleBot3_with_Open_Manipulator.png)
+-->
 
 ## [Hardware Setup](#hardware-setup)
 
@@ -99,29 +106,49 @@ $ roslaunch open_manipulator_with_tb3_description open_manipulator_with_tb3_rviz
 ## [OpenCR Setup](#opencr-setup)
 
 {% capture notice_01 %}
-**NOTE**: You can choose one of methods for uploading firmware. But we highly recommend to use **shell script**. If you need to modify TurtleBot3's firmware, you can use the second method.
-- Method #1: [**Shell Script**](#shell-script), upload the pre-built binary file using the shell script.
-- Method #2: [**Arduino IDE**](#arduino-ide), build the provided source code and upload the generated binary file using the Arduino IDE.
+**NOTE**: In order to upload OpenCR firmwarm, choose either of the way: Shell Script, Arduino IDE.
+- We highly recommend to use **shell script**. 
+- If you need to modify TurtleBot3's firmware, you can use **Arduino IDE**.
+1. [**Shell Script**](#shell-script), upload the pre-built binary file using the shell script.
+2. [**Arduino IDE**](#arduino-ide), build the provided source code and upload the generated binary file using the Arduino IDE.
 {% endcapture %}
-<div class="notice--info">{{ notice_01 | markdownify }}</div>
+<div class="notice--info">{{ notice_01 | markdownify }}</div> 
 
-**WARNING** : **MAKE SURE THAT ALL DYNAMIXEL IS CONNECTED TO OpenCR**, before proceeding to OpenCR Setup. Otherwise, the raspberry pi board may have **an unexpected issue**. 
+**WARNING** : Be sure to connect all DYNAMIXEL's  with OpenCR before OpenCR Setup. Otherwise, the raspberry pi board may have an unexpected issue. 
 {: .notice--warning}
 
-
-### [Shell Script](#shell-script)
+<!-- ### [Shell Script](#shell-script)
 **[TurtleBot3]**
 ```bash
 $ export OPENCR_PORT=/dev/ttyACM0
 $ export OPENCR_MODEL=om_with_tb3
 $ rm -rf ./opencr_update.tar.bz2
 $ wget https://github.com/ROBOTIS-GIT/OpenCR-Binaries/raw/master/turtlebot3/ROS1/latest/opencr_update.tar.bz2 && tar -xvf opencr_update.tar.bz2 && cd ./opencr_update && ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr && cd ..
+``` -->
+
+After OpenMANIPULATOR-x is properly mounted on TurtleBot3 Waffle, you need to change built-in Firmware to control all DYNAMIXEL’s using OpenCR board.
+
+1. **[TurtleBot3 SBC]** Use the following commands to upload OpenCR Firmware into Raspberry Pi on TurtleBot3.
+```bash
+$ export OPENCR_PORT=/dev/ttyACM0
+$ export OPENCR_MODEL=om_with_tb3
+$ rm -rf ./opencr_update.tar.bz2
+$ wget https://github.com/ROBOTIS-GIT/OpenCR-Binaries/raw/master/turtlebot3/ROS1/latest/opencr_update.tar.bz2 
+$ tar -xvf opencr_update.tar.bz2 
+$ cd ./opencr_update && ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr && cd ..
 ```
 
-When firmware upload is completed, `jump_to_fw` text string will be printed on the terminal.
+2. Waiting for a while, new OpenCR Firmware will be uploaded, and `jump_to_fw` text string will be printed at the end of the line of the Terminal.  
+
+{% capture notice_01 %}
+**NOTE**: When OpenCR Firmware succeeds in being loaded, it will be rebooted, and then the pose of OpenMANIPULATOR-X changes to the initial pose.   
+Thus, be sure to make the same pose with the robot as the feature below before updating the new firmware.  
+![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_gazebo_1.png)
+{% endcapture %}
+<div class="notice--info">{{ notice_01 | markdownify }}</div> 
 
 ### [Arduino IDE](#arduino-ide)
-**[Remote PC]**
+<!-- **[Remote PC]**
 - Before you following step, please setup Arduino IDE.
 
 - [Arduino IDE for using OpenCR](/docs/en/parts/controller/opencr10/#arduino-ide)
@@ -142,35 +169,85 @@ When firmware upload is completed, `jump_to_fw` text string will be printed on t
 **TIP**: The DYNAMIXEL ids can be changed in [`open_manipulator_driver.h`][manipulator_id] in turtlebot3_with_open_manipulator folder 
 {: .notice--success}
 
-- When firmware upload is completed, `jump_to_fw` text string will be printed on the screen.
+- When firmware upload is completed, `jump_to_fw` text string will be printed on the screen. -->
 
 ## [Bringup](#bringup)
 
 **NOTE**: Please double check the OpenCR usb port name in [turtlebot3_core.launch][turtlebot3_core]
 {: .notice--info}
-
+<!-- 
 **TIP**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `waffle`, `waffle_pi`. If you want to permanently set the export settings, please refer to [Export TURTLEBOT3_MODEL][export_turtlebot3_model]{: .popup} page.
-{: .notice--success}
+{: .notice--success} -->
 
-**[TurtleBot3]** Launch rosserial and lidar node
+### [Run roscore](#run-roscore)
+
+**[Remote PC]** Run roscore to use ROS 1 with TurtleBot3 with Manipulator.
+```bash
+$ roscore
+```
+
+### [Define TurtleBot3 Model](#define-turtlebot3-model)
+
+**[TurtleBot3 SBC]** Export TurtleBot3 model (Waffle PI) to `.bashrc` file using the following command. 
+```bash
+$ export TURTLEBOT3_MODEL=waffle_pi
+```
+
+**NOTE**: TurtleBot3 Model may differ from the hardware configuration of TurtleBot3 such as `burger` or `waffle`. 
+{: .notice--info}
+
+<!-- 
 ```bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ ROS_NAMESPACE=om_with_tb3 roslaunch turtlebot3_bringup turtlebot3_robot.launch multi_robot_name:=om_with_tb3 set_lidar_frame_id:=om_with_tb3/base_scan
+```  
+-->
+
+### [Launch Bringup](#launch-bringup)
+
+**[TurtleBot3 SBC]** Launch the node to start rosserial and LDS sensor using following commands.
+```bash
+$ roslaunch turtlebot3_bringup turtlebot3_robot.launch
 ```
 
-**[TurtleBot3]** Launch rpicamera node
+<!-- 
 ```bash
 $ ROS_NAMESPACE=om_with_tb3 roslaunch turtlebot3_bringup turtlebot3_rpicamera.launch
-```
+``` 
+-->
 
-**[Remote PC]** Launch Launch robot_state_publisher node
+## [Simulate TurtleBot3 with OpenMANIPULATOR Using Gazebo](#simulate-turtlebot3-with-openmanipulator-using-gazebo)
+
+### [Run Gazebo](#run-gazebo)
+**[Remote PC]** Bring TurtleBot3 with OpenMANIPULATOR into Gazebo world by using the following command. 
+```bash
+$ roslaunch turtlebot3_manipulation_gazebo turtlebot3_manipulation.launch
+```
+![](/assets/images/platform/turtlebot3/manipulation/tb3_omx_gazebo.png)
+
+<!-- **[Remote PC]** Bring model into Gazebo.
+**[Remote PC]** Launch Launch robot_state_publisher node.
 ```bash
 $ ROS_NAMESPACE=om_with_tb3 roslaunch open_manipulator_with_tb3_tools om_with_tb3_remote.launch
+``` -->
+
+## [Run move_group Node](#run-move-group-node)
+
+**[Remote PC]** In order to use Moveit feature, launch **move_group** node. If you press **▶** button in Gazebo to start simulation, use the following command. Later, the following message will be printed: **You can start planning now!**.
+```bash
+$ roslaunch turtlebot3_manipulation_moveit_config move_group.launch
 ```
 
-## [SLAM](#slam)
+## [Run RViz](#run-rviz)
 
-**[Remote PC]** Launch slam node
+**[Remote PC]** Use Moveit feature in RViz by reading `moveit.rviz` file where Moveit enviroment data is configured. You can control the mounted manipulator using Interactive Marker, and simulate the motion of goal position, which feature can prevent a pysical crash in advance.
+```bash
+$ roslaunch turtlebot3_manipulation_moveit_config moveit_rviz.launch
+```
+
+![](/assets/images/platform/turtlebot3/manipulation/tb3_omx_rviz.png)
+<!-- 
+**[Remote PC]** 
 ```bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ roslaunch open_manipulator_with_tb3_tools slam.launch use_platform:=true
@@ -186,16 +263,27 @@ $ ROS_NAMESPACE=om_with_tb3 roslaunch turtlebot3_teleop turtlebot3_teleop_key.la
 $ ROS_NAMESPACE=om_with_tb3 rosrun map_server map_saver -f ~/map
 ```
 
-![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_slam.png)
+![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_slam.png) -->
 
-## [Navigation](#navigation)
+## [Run ROBOTIS GUI Controller](#run-robotis-gui-controller)
+**[Remote PC]** You can use ROBOTIS GUI, but not RViz, to control robot arm with Gazebo. The GUI supports Task Space Control and Joint Space Control. Use one of the control way for your preference.
+- `Task Space Control`: It refers to a valid gripping position (a red hexahedron between the gripper in the task space) from the end-effector of the manipulator.
+- `Joint Space Control`: It refers to each joint angle.
+
+```bash
+$ roslaunch turtlebot3_manipulation_gui turtlebot3_manipulation_gui.launch
+```
+
+![](/assets/images/platform/turtlebot3/manipulation/tb3_omx_gui_controller.png)
+
+<!-- ## [Navigation](#navigation)
 
 ```bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ roslaunch open_manipulator_with_tb3_tools navigation.launch use_platform:=true
 ```
 
-![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_navigation.png)
+![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_navigation.png) -->
 
 ## [MoveIt!](#moveit)
 
