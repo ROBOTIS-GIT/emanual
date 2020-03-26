@@ -91,8 +91,8 @@ page_number: 1
 |  20  |       4        | [Homing Offset](#homing-offset)             |  RW  |   0    |   0 ~ 1,150   |        1 [pulse]        |
 |  24  |       4        | [Moving Threshold](#moving-threshold)       |  RW  |   80   |   0 ~ 2,970   |     0.01 [rev/min]      |
 |  31  |       1        | [Temperature Limit](#temperature-limit)     |  RW  |   80   |    0 ~ 100    |       1 [&deg;C]        |
-|  32  |       2        | [Max Voltage Limit](#max-voltage-limit)     |  RW  |  350   |   150 ~ 350   |         0.1 [V]         |
-|  34  |       2        | [Min Voltage Limit](#min-voltage-limit)     |  RW  |  150   |   150 ~ 350   |         0.1 [V]         |
+|  32  |       2        | [Max Voltage Limit](#max-voltage-limit)     |  RW  |  300   |   150 ~ 300   |         0.1 [V]         |
+|  34  |       2        | [Min Voltage Limit](#min-voltage-limit)     |  RW  |  150   |   150 ~ 300   |         0.1 [V]         |
 |  36  |       2        | [PWM Limit](#pwm-limit)                     |  RW  | 2,009  |   0 ~ 2,009   |            -            |
 |  38  |       2        | [Current Limit](#current-limit)             |  RW  | 1,984  |   0 ~ 1,984   |         1 [mA]          |
 |  40  |       4        | [Acceleration Limit](#acceleration-limit)   |  RW  | 3,447  | 0 ~ 1,378,788 | 1 [rev/min<sup>2</sup>] |
