@@ -154,7 +154,7 @@ Stage 1 is a 4x4 map with no obstacles.
 1. Open a terminal.
 2. Bring the stage 1 in Gazebo map.
 ``` bash
-$ ros2 launch turtlebot3_dqn turtlebot3_dqn_stage1.launch.py
+$ ros2 launch turtlebot3_gazebo turtlebot3_dqn_stage1.launch.py
 $ ros2 run turtlebot3_dqn dqn_gazebo 1
 $ ros2 run turtlebot3_dqn dqn_environment
 $ ros2 run turtlebot3_dqn dqn_agent 1
@@ -173,7 +173,7 @@ Stage 2 is a 4x4 map with four cylinders of static obstacles.
 1. Open a terminal.
 2. Bring the stage 2 in Gazebo map.
 ``` bash
-$ ros2 launch turtlebot3_dqn turtlebot3_dqn_stage2.launch.py
+$ ros2 launch turtlebot3_gazebo turtlebot3_dqn_stage2.launch.py
 $ ros2 run turtlebot3_dqn dqn_gazebo 2
 $ ros2 run turtlebot3_dqn dqn_environment
 $ ros2 run turtlebot3_dqn dqn_agent 2
@@ -192,7 +192,7 @@ Stage 3 is a 4x4 map with four cylinders of moving obstacles.
 1. Open a terminal.
 2. Bring the stage 3 in Gazebo map.
 ``` bash
-$ ros2 launch turtlebot3_dqn turtlebot3_dqn_stage3.launch.py
+$ ros2 launch turtlebot3_gazebo turtlebot3_dqn_stage3.launch.py
 $ ros2 run turtlebot3_dqn dqn_gazebo 3
 $ ros2 run turtlebot3_dqn dqn_environment
 $ ros2 run turtlebot3_dqn dqn_agent 3
@@ -211,7 +211,7 @@ Stage 4 is a 5x5 map with walls and two cylinders of moving obstacles.
 1. Open a terminal.
 2. Bring the stage 4 in Gazebo map.
 ``` bash
-$ ros2 launch turtlebot3_dqn turtlebot3_dqn_stage4.launch.py
+$ ros2 launch turtlebot3_gazebo turtlebot3_dqn_stage4.launch.py
 $ ros2 run turtlebot3_dqn dqn_gazebo 4
 $ ros2 run turtlebot3_dqn dqn_environment
 $ ros2 run turtlebot3_dqn dqn_agent 4
