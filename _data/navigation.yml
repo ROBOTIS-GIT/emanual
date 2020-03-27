@@ -15867,6 +15867,10 @@ turtlebot3:
       url: /platform/turtlebot3/manipulation/#opencr-setup
     - title: "Bringup"
       url: /platform/turtlebot3/manipulation/#bringup
+    - title: "Simulation"
+      url: /platform/turtlebot3/manipulation/#simulation  
+    - title: "Operate the Actual OpenMANIPULATOR"
+      url: /platform/turtlebot3/manipulation/#operate-the-actual-openmanipulator        
     - title: "SLAM"
       url: /platform/turtlebot3/manipulation/#slam
     - title: "Navigation"
@@ -15875,8 +15879,6 @@ turtlebot3:
       url: /platform/turtlebot3/manipulation/#moveit
     - title: "Pick and Place"
       url: /platform/turtlebot3/manipulation/#pick-and-place
-    - title: "Simulation"
-      url: /platform/turtlebot3/manipulation/#simulation      
   - title: "[ROS 1] Autonomous Driving"
     url: /platform/turtlebot3/autonomous_driving/#ros-1-autonomous-driving
     children: 

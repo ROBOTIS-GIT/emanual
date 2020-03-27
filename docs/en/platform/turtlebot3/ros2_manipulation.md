@@ -108,7 +108,7 @@ Be sure to read [Bringup](/docs/en/platform/turtlebot3/ros2_bringup/#bringup) ma
 **[TurtleBot3]** Launch rpicamera node
 ```bash
 $ ROS_NAMESPACE=om_with_tb3 roslaunch turtlebot3_bringup turtlebot3_rpicamera.launch
-``` -->/docs/en/platform/turtlebot3/ros2_manipulation/
+``` -->
 
 ## [SLAM](#slam)
 
