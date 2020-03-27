@@ -73,31 +73,31 @@ sidebar:
 
 <div class="notice--danger">{{ opencm904_caution_01 | markdownify }}</div>
 
-# [Control Table](#control-table)
+# [コントロールテーブル](#control-table)
 
-**CAUTION**  
-The control table of OpenCM9.04 can only be accessed using the default firmware.  
-If other program such as Arduino sketch is downloaded, the control table cannot be used.  
-In order to use the control table and connect to Roboplus softwares, please perform Firmware Recovery from R+Manager 2.0.
+**注意**  
+OpenCM9.04のコントロールテーブルには、デフォルトのファームウェアの場合のみアクセス可能です。  
+Arduinoスケッチ等をダウンロードした場合は、コントロールテーブルにアクセスできません。  
+コントロールテーブルを使用しRoboplusソフトウェアに接続するには、R+Manager2.0からファームウェアリカバリーを実行してください。
 {: .notice--warning}
 
-Control Table consists of data regarding the current status and operation of controller. The user can control controller by changing data of Control Table via Instruction packet.
+コントロールテーブルは、コントローラの現在の状態と操作に関するデータで構成されています。  ユーザーは、インストラクションパケットを介してコントロールテーブルのデータを変更することにより、コントローラを制御できます。
 
-- **EEPROM and RAM**  
-  Data in RAM area is reset to initial values whenever the power is turned on while data in EEPROM area is kept once values are set even if the power is turned off.
+- **EEPROMとRAM**  
+  RAM領域のデータは電源投入時にデフォルト値でリセットされ、EEPROM領域のデータは電源を切っても設定値が保持されます。
 
-- **Address**  
-  Represents the location of data. To read from or write data to the control table the user should assign the correct address in the Instruction packet.
+- **アドレス**  
+  データの位置を示します。コントロールテーブルからデータを読み/書きするには、インストラクションパケットで正しいアドレスを割り当てる必要があります。
 
-- **Access**  
-  Controller has two kinds of data: Read-only data, used mainly for sensing, and read-and-write data used for driving.
+- **アクセス**  
+  コントローラには、主にセンシングに使用される読み取り専用データと、駆動に使用される読み取り/書き込みデータの2種類のデータがあります。
 
-- **Initial Value**  
-  In case of data in the EEPROM Area, the initial values on the right side of the below Control Table are the factory default settings.  
-  In case of data in the RAM Area, the initial values on the right side of the following control table are the ones when the power is turned on.
+- **デフォルト値**  
+  EEPROM領域のデータの場合、下記のコントロールテーブルの右側の値が工場出荷時の設定です。
+   RAM領域のデータの場合、下記の管理表の右側の値が電源投入時の値です。
 
-- **Size**  
-  The Size of data varies from 1 ~ 4 bytes depend on their usage. Please check the size of data when updating the data with an Instruction Packet.
+- **データサイズ**  
+  データサイズは、1〜4バイトでコントロールテーブルのアイテムによって異なります。 インストラクションパケットでデータを更新する場合は、データサイズを確認してください。
 
 ## [EEPROM Area](#eeprom-area)
 
