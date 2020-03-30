@@ -14479,18 +14479,18 @@ kit2:
         titlekr: "블루투스 연결하기"
         url: /edu/engineer/kit2_quickstart/#pairing-bluetooth
         urlkr: /edu/engineer/kit2_quickstart/#블루투스-연결하기
-      - title: "Dr.R"
-        titlekr: "Dr.R"
-        url: /edu/engineer/kit2_quickstart/#drr
-        urlkr: /edu/engineer/kit2_quickstart/#drr
-      - title: "MAX-E1"
-        titlekr: "MAX-E1"
-        url: /edu/engineer/kit2_quickstart/#max-e1
-        urlkr: /edu/engineer/kit2_quickstart/#max-e1
-      - title: "SPI"
-        titlekr: "SPI"
-        url: /edu/engineer/kit2_quickstart/#spi
-        urlkr: /edu/engineer/kit2_quickstart/#spi
+      - title: "MAX-E2"
+        titlekr: "MAX-E2"
+        url: /edu/engineer/kit2_quickstart/#max-e2
+        urlkr: /edu/engineer/kit2_quickstart/#max-e2
+      - title: "Commando"
+        titlekr: "Commando"
+        url: /edu/engineer/kit2_quickstart/#commando
+        urlkr: /edu/engineer/kit2_quickstart/#commando
+      - title: "Scorpi"
+        titlekr: "Scorpi"
+        url: /edu/engineer/kit2_quickstart/#scorpi
+        urlkr: /edu/engineer/kit2_quickstart/#scorpi
   - title: "Tutorials"
     titlekr: "튜토리얼"
     url: /edu/engineer/kit2_quickstart/#tutorials

@@ -2,7 +2,7 @@
   layout: popup
 ---
 
-# [ENGINEER App installation](#engineer-app-installation)
+# [ENGINEER App Installation](#engineer-app-installation)
 
 1. Open `Play Store` or `App Store` from the smart device.  
   ![](/assets/images/edu/engineer/kit1/app_installation_01_kr.png)

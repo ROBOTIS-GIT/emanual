@@ -15,6 +15,8 @@ sidebar:
 
 ## [App Installation](#app-installation)
 
+To install apps, see [App Installation](/docs/en/edu/engineer/kit1/#app-installation)
+
 <!-- 
 {% capture app_install %}
 ![](/assets/images/edu/engineer/kit1/icon_engineer_48.png)  
@@ -54,6 +56,9 @@ sidebar:
 
 ### [Download from Smart Device](#download-from-smart-device)
 
+**NOTE** : Connect CM-550 with your smart device via bluetooth. See [Pairing Bluetooth](#pairing-bluetooth).
+{: .notice}
+
 1. [How to Connect CM-550 Controller to Mobile]{: .popup}
 2. [How to Download Task Example via Mobile]{: .popup}
 3. [How to Download Motion Example via Mobile]{: .popup}
@@ -83,6 +88,109 @@ Select the menu button on the top right corner of the app for app configuration.
 In order to control the robot remotely, connect your smart device via bluetooth to CM-550 controller. See [Pairing Bluetooth](/docs/en/edu/engineer/kit1/#pairing-bluetooth) of ENGINEER Kit 1.
 
 ![](/assets/images/edu/engineer/kit2/kit2_streaming_bluetooth.png)
+
+
+### [MAX-E2](#max-e2)
+
+Run `ROBOTIS ENGINEER` Kit2 App and select **MAX-E2**.
+
+#### [조종 화면](#조종-화면)
+
+![](/assets/images/edu/engineer/kit2/max2_controller_kr.png)
+
+`Menu button`: Control/ Streaming/ Facial Detection/ Robot Inspection Mode
+`Control button`: Control and change the speed of motions of MAX-E2
+`Mode button`: NORMAL/ FIGHT/ SPECIAL modes
+`Motion buttons`: Each relevant motions are set up to each control modes
+`Function button`: All Torque set up/ Led board color change/ Robot stand-up/ etc.
+
+
+{% capture max_notice %}
+**NOTE**: 
+- Pressing TORQ ON/ OFF for an amount of time will reset and reboot all DYNAMIXEL
+- For more detail how to use **Streaming** feature, see [Setting Video Streaming on ROBOTIS ENGINEER App](/docs/en/edu/engineer/kit2_reference/#setting-video-streaming-on-robotis-engineer-app).
+{% endcapture %}
+<div class="notice">{{ max_notice | markdownify }}</div>
+
+#### Mode Menu
+
+|                           Icon                           | Description                                                                                                                      |
+|:--------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------|
+|  ![](/assets/images/edu/engineer/kit2/icon_remote.png)   | **REMOTE**<br> Control and change MAX-E2 to various modes as FIGHT/ SOCCER/ etc.                                                 |
+| ![](/assets/images/edu/engineer/kit2/icon_streaming.png) | **STREAMING**<br>Control the robot by watching videos taken from Raspberry Pi camera on your smart device and selecting buttons. |
+|   ![](/assets/images/edu/engineer/kit1/icon_face.png)    | **FACE**<br>Certain motions as greetings is available by face detection using Raspberry PI camera.                               |
+
+#### Options
+
+|                         Icon                          | Description                                                                  |
+|:-----------------------------------------------------:|:-----------------------------------------------------------------------------|
+| ![](/assets/images/edu/engineer/kit1/icon_motor.png)  | **MOTOR**<br> Check the motor operation of the robot.                        |
+| ![](/assets/images/edu/engineer/kit1/icon_offset.png) | **OFFSET**<br> Alter the DYNAMIXEL's position value, posture of robots, etc. |
+
+![](/assets/images/edu/engineer/kit2/kit2_motor_inspection_layout.png)
+> Motor Inspection
+
+![](/assets/images/edu/engineer/kit2/kit2_offset_layout.png)
+> Adjusting OFFSET  
+
+**NOTE** : See [Setting Up the Robot](#setting-up-the-robot) to change configuration data of motors and its offset.     
+{: .notice--info}
+
+### [Commando](#commando)
+
+`ROBOTIS ENGINEER` 앱을 실행하고, 화면에서 Commando를 선택하세요.
+
+#### [데모 화면 소개](#데모-화면-소개)
+
+![](/assets/images/edu/engineer/kit2/commando_demo.png)
+
+`메뉴 버튼` : 데모 / 조종 / 스트리밍 / 로봇 점검 모드 등을 선택해 변경할 수 있습니다.  
+`모드 버튼` : 전/후/좌/우 이동 및 속도 설정 버튼으로 로봇을 조종할 수 있습니다  
+- `LINE MODE`를 선택하면 Raspberry Pi Camera를 사용해 설정된 색의 라인을 인식하고 이동합니다. `COLOR SELECTION`에서 인식할 라인 색을 선택합니다
+- `MARKER MODE`를 선택하면 Raspberry Pi Camera를 사용해 마커를 순서대로 인식한 후 `START 마커`를 사용해 인식한 마커의 순서에 따라 명령대로 이동합니다. Marker Mode 에서 `DEBUGGING MODE`는 동작 사이에 지연 시간이 발생해 동작을 구분할 수 있습니다. `RUN MODE`는 지연시간 없이 동작과 동작을 연결해서 이동합니다. 
+
+{% capture commando_notice %}
+**참고**: 
+- 스트리밍 사용방법은 [앱에서 영상 스트리밍 기능 설정하기](/docs/kr/edu/engineer/kit2_reference/#앱에서-영상-스트리밍-기능-설정하기) 참조하세요.
+- 마커는 카메라에서 30 CM 이상 떨어진 거리에서 인식시켜야 인식이 잘됩니다.
+{% endcapture %}
+<div class="notice">{{ commando_notice | markdownify }}</div>
+
+#### 옵션메뉴
+
+|                        아이콘                         | 메뉴 설명                                                                                                                                                                                              |
+|:-----------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ![](/assets/images/edu/engineer/kit1/icon_remote.png) | **REMOTE : 조종 모드** <br> Commando 로봇을 조종하는 모드이며 로봇의 이동 및 방향 전환, 카메라 등을 제어하는 명령을 사용할 수 있습니다.<br>WHEEL SPEED를 조정하면 로봇의 이동속도를 변경할 수 있습니다 |
+
+### [Scorpi](#scorpi)
+
+`ROBOTIS ENGINEER` 앱을 실행하고, 화면에서 Scorpi를 선택하세요.
+
+#### [Scorpi 데모 화면 소개](#scorpi-데모-화면-소개)  
+
+![](/assets/images/edu/engineer/kit2/scorpi_demo.png)
+
+`메뉴 버튼` : 조종 / 제스처 / 데모 / 로봇 점검 모드 등을 선택할 수 있습니다.  
+`모드 버튼` :
+  - `NORMAL MODE`를 선택하면 Scorpi 로봇이 일어나 동작하고, 절대거리센서 [DMS-80](/docs/kr/edu/engineer/kit2_introduction/#절대-거리-센서)가 물체를 감지하면 꼬리로 공격합니다.
+  - `GUARD MODE`를 선택하면 Scorpi 로봇이 제자리에서 경계 자세를 취하며, 절대거리센서 [DMS-80](/docs/kr/edu/engineer/kit2_introduction/#절대-거리-센서)에 물체가 감지되면 꼬리를 움직여 공격합니다.
+
+#### [Scorpi 메뉴 기능 소개](#scorpi-메뉴-기능-소개)
+
+|                         아이콘                         | 메뉴 설명                                                                                                                                                             |
+|:------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ![](/assets/images/edu/engineer/kit1/icon_remote.png)  | **REMOTE : 조종 모드** <br>Scorpi 로봇을 조종하는 모드이며 로봇의 이동 및 방향 전환, 속도 변경과 로봇의 꼬리 및 집게를 사용하는 다양한 모션들을 동작시킬 수 있습니다. |
+| ![](/assets/images/edu/engineer/kit2/icon_gesture.png) | **GESTURE : 제스처 모드** <br>스마트기기의 기울기, 흔들림 센서 등을 사용해 기기를 기울이거나 특정 동작을 통해 Scorpi 로봇의 이동 및 공격 등의 명령을 수행합니다.      |
+
+![](/assets/images/edu/engineer/kit2/scorpi_control.png)  
+  > 조종 모드 화면
+
+![](/assets/images/edu/engineer/kit2/scorpi_gesture.png)  
+  > 제스쳐 모드 화면  
+
+
+
+<!-- 
 
 ### [Dr.R](#drr)
 
@@ -156,6 +264,8 @@ Press the `Mode` button to display supported modes and options.
 | ![](/assets/images/edu/engineer/kit1/icon_music.png)  | **MUSIC** : SPI and smart device play music together.                                     |
 |  ![](/assets/images/edu/engineer/kit1/icon_clap.png)  | **CLAP** : The robot detects clapping sound and SPI will clap as many as perceived claps. |
 
+ -->
+
 ## [Setting Up the Robot](#setting-up-the-robot)
 
 ### [Check DYNAMIXEL Assembly](#check-dynamixel-assembly)
@@ -166,7 +276,7 @@ This function checks DYNAMIXEL ID and status of the ROBOTIS ENGINEER Kit.
 
 2. Select the joint ID from the screen. Check if the selected joint flinches while LED is turned on.  
   ![](/assets/images/edu/engineer/kit1/engineer_app_motor_2.png)
-
+ 
 
 ### [DYNAMIXEL Offset](#dynamixel-offset)
 This function is used to adjust the pose of robot by calibrating offset values of DYNAMIXEL used in the ROBOTIS ENGINEERING KIT. Configured offset value will be saved in each DYNAMIXEL's.  

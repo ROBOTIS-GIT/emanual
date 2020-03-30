@@ -13,7 +13,7 @@ sidebar:
 
 # [References](#references)
 
-## [Setting Video Streaming on ROBOTIS ENGINEER App]
+## [Setting Video Streaming on ROBOTIS ENGINEER App](#setting-video-streaming-on-robotis-engineer-app)
 
 1. Turn on the controller and wait for the Raspberry Pi to boot up.
   
