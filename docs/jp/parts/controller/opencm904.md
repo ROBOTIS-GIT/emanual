@@ -166,9 +166,9 @@ Arduinoスケッチ等をダウンロードした場合は、コントロール�
 ID 200は、工場出荷時のファームウェアでOpenCM9.04に割り当てられています。
 {: .notice--warning}
 
-# [Hardware](#hardware)
+# [ハードウェア](#hardware)
 
-## [Memory Map](#memory-map)
+## [メモリマップ](#memory-map)
 
 ![](/assets/images/parts/controller/opencm904/memory_map.png)
 
