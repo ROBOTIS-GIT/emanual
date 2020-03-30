@@ -501,19 +501,19 @@ OpenCM9.04の最大許容電圧は16Vです。16Vを超える電圧入力はボ�
 DYNAMIXELは、USBケーブルから供給される電源では動作しませんが、通信ポートやI/Oヘッダーは正常に動作します。  
 注意：LB-040バッテリーがボードに接続され、ボードがUSBケーブルを介してPCに接続されている間は、LBS-40バッテリーを充電しないでください。
 
-# [Switch Assembly(Type A)](#switch-assemblytype-a)
+# [スイッチアセンブリ(Type A)](#switch-assemblytype-a)
 
-OpenCM9.04 Type A is sold without a power switch and JP1 shorted. To add the power switch, remove the solder connection of JP1 and solder the 2.54mm pitch power switch.  
-Power switch is included in the OpenCM accessory kit or other switches with the similar pitch can be used.  
+OpenCM9.04 Type Aは、電源スイッチとJP1が短絡されていない状態で販売されています。  
+電源スイッチを追加するには、JP1のはんだ接続を取り外し、2.54mmピッチの電源スイッチをはんだ付けします。  
+電源スイッチは、OpenCMアクセサリキットに含まれているものか、同じピッチの他のスイッチを使用できます。  
 
 ![](/assets/images/parts/controller/opencm904/opencm904_25.png)
 
-> JP1& Power Switch schematics : Power is supplied to the board if JP1 is connected even without a switch
+> JP1＆電源スイッチの回路図：スイッチが無くてもJP1が接続されている場合、ボードに電力が供給されます。
 
 ![](/assets/images/parts/controller/opencm904/opencm904_26.png)
 
-> OpenCM9.04 Type A needs to have JP1 disconnected when soldering the switch for it to operate properly
-
+> OpenCM9.04 Type Aが正しく動作するためには、スイッチをはんだ付けする際にJP1を切断する必要があります。
 
 # [Connector Assembly(Type A)](#connector-assemblytype-a)
 
