@@ -101,31 +101,31 @@ Arduinoスケッチ等をダウンロードした場合は、コントロール�
 
 ## [EEPROM領域](#eeprom-area)
 
-| アドレス | サイズ |      アイテム名      | 説明                       | アクセス | デフォルト値 |
-|:-------:|:----:|:-------------------:|:--------------------------:|:------:|:----------:|
-|    0    |  2   |    Model Number     | モデル番号　                 |   R    |    400     |
-|    6    |  1   |  Firmware Version   | ファームウェア バージョン      |   R    |     -      |
-|    7    |  1   |         ID          | コントローラID               |   RW   |    200     |
-|    8    |  1   |      Baud Rate      | 通信ボーレート　　            |   R    |     1      |
-|    9    |  1   |  Return Delay Time  | 応答待ち時間                 |   RW   |     0      |
-|   10    |  1   | Status Return Level | リターンパケットのレベル選択   |   RW   |     2      |
-|   11    |  1   | Bootloader Version  | ブートローダ バージョン　      |   R    |     -      |
-|   12    |  1   |    DXL Baud Rate    | DYNAMIXELとの通信ボーレート   |   RW   |     3      |
-|   16    |  1   |  DYNAMIXEL Channel  | DYNAMIXELとの通信ポート選択　 |   RW   |     0      |
+| アドレス | サイズ |      アイテム名      | 説明                         | アクセス | デフォルト値 |
+|:-------:|:----:|:-------------------:|:---------------------------:|:------:|:----------:|
+|    0    |  2   |    Model Number     | モデル番号                    |   R    |    400     |
+|    6    |  1   |  Firmware Version   | ファームウェア バージョン        |   R    |     -      |
+|    7    |  1   |         ID          | コントローラID                 |   RW   |    200     |
+|    8    |  1   |      Baud Rate      | 通信ボーレート                 |   R    |     1      |
+|    9    |  1   |  Return Delay Time  | 応答待ち時間                   |   RW   |     0      |
+|   10    |  1   | Status Return Level | リターンパケットのレベル選択     |   RW   |     2      |
+|   11    |  1   | Bootloader Version  | ブートローダ バージョン          |   R    |     -      |
+|   12    |  1   |    DXL Baud Rate    | DYNAMIXELとの通信ボーレート     |   RW   |     3      |
+|   16    |  1   |  DYNAMIXEL Channel  | DYNAMIXELとの通信ポート選択     |   RW   |     0      |
 
 ## [RAM領域](#ram-area)
 
 | アドレス | サイズ |              アイテム名          | 説明                            | アクセス | デフォルト値 |
 |:-------:|:----:|:-------------------------------:|:------------------------------:|:------:|:----------:|
-|   21    |  1   |           Mode Number           | 動作モード　                     |   RW   |     -      |
-|   26    |  1   |          Button Status          | スタートボタンの状態              |   R    |     0      |
+|   21    |  1   |           Mode Number           | 動作モード                       |   RW   |     -      |
+|   26    |  1   |          Button Status          | スタートボタンの状態               |   R    |     0      |
 |   66    |  2   |        Motion Play Page         | Motion Play ページ番号           |   RW   |     0      |
 |   68    |  1   |       Motion Play Status        | Motion Play ステータス           |   R    |     -      |
-|   73    |  1   |        128ms Timer Value        | 128ms タイマカウンタ             |   RW   |     0      |
-|   74    |  2   |         1ms Timer Value         | 1ms タイマカウンタ               |   RW   |     0      |
-|   77    |  1   |          Random Number          | 乱数値の生成                     |   RW   |     -      |
-|   79    |  1   |            Green LED            | 緑LEDのステータス                |   RW   |     0      |
-|   82    |  1   |           Motion LED            | Motion LEDのステータス          |   RW   |     0      |
+|   73    |  1   |        128ms Timer Value        | 128ms タイマカウンタ              |   RW   |     0      |
+|   74    |  2   |         1ms Timer Value         | 1ms タイマカウンタ                |   RW   |     0      |
+|   77    |  1   |          Random Number          | 乱数値の生成                      |   RW   |     -      |
+|   79    |  1   |            Green LED            | 緑LEDのステータス                 |   RW   |     0      |
+|   82    |  1   |           Motion LED            | Motion LEDのステータス            |   RW   |     0      |
 |   360   |  2   |     Port 1 IR Sensor Value      | ポート1の赤外線センサ値           |   R    |     -      |
 |   366   |  2   |     Port 4 IR Sensor Value      | ポート4の赤外線センサ値           |   R    |     -      |
 |   368   |  2   |     Port 1 DMS Sensor Value     | ポート1の距離センサ値             |   R    |     -      |
