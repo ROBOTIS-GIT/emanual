@@ -443,62 +443,63 @@ extern const Pin2PortMapArray g_Pin2PortMapArray[]=
 };
 ```
 
-# [Connecting Power](#connecting-power)
+# [電源接続方法](#connecting-power)
 
-OpenCM board can be powered using 3 types of voltage input:
-1. LBS-40 battery socket
-2. Power supplied via +- header pins
-3. Micro-B USB cable
+OpenCM9.04ボードは、3種類の電圧入力で動作します。:
+1. LB-040バッテリーソケット
+2. +/- のヘッダピン
+3. Micro-B USB
 
 ![](/assets/images/parts/controller/opencm904/opencm904_17.png)
 
-We recommend using 2 LBS-40 batteries when operating the XL-320.
+XL-320の動作時には、LB-040バッテリーを2つ使用する事をお勧めします。
 
 ![](/assets/images/parts/controller/opencm904/opencm904_18.png)
 
-> Example: OpenCM9.04, XL-320, and LBS-40(Li-Ion Battery) connection
+> 例：OpenCM9.04, XL-320, LB-040（リチウムイオンバッテリー）を接続
 
 ![](/assets/images/parts/lbs-40_product.jpg)
 
-> LBS-40 battery
+> LB-040 バッテリー
 
-We recommend using +- pin to power DYNAMIXEL's other than XL-320.
+XL-320以外のDYNAMIXELに電源を供給する場合は、+/-ピンを使用する事をお勧めします。
 
 ![](/assets/images/parts/controller/opencm904/opencm904_19.png)
 
-> Example: OpenCM9.04 and AX12 connection
+> 例：OpenCM9.04, AX-12を接続
 
-As displayed in the image below, connect towards the end of both +,- and it can also be connected using other power supply equipment.  
-(If you see the back side of OpenCM9.04, the +,- in the center is connected as displayed in image A. So, please connect as in the image below)
+以下の図のように、+/-ピンの両方端に接続します。他の電源装置を使用して接続する事も可能です。  
+（OpenCM9.04の裏面が見える場合は、中央の+/-ピンが画像Aのように接続されています。以下の画像のように接続してください）
 
 ![](/assets/images/parts/controller/opencm904/opencm904_20.jpg)
 
-> Picture A
+> 画像 A
 
 ![](/assets/images/parts/controller/opencm904/opencm904_21.jpg)
 
-> Example : Power Connection
+> 例:電源接続
 
-- `Example` Power supply cable ([Link](http://www.robotsource.org/bs/bd.php?bt=forum_CM9DeveloperWorld&bt_id=583))
+- `例` 電源接続ケーブル ([Link](http://www.robotsource.org/bs/bd.php?bt=forum_CM9DeveloperWorld&bt_id=583))
 
-Avoid connecting power to the battery socket and +- pin (shown below). Do not connect an
-incorrect battery to the battery socket. Only connect LBS-40 onto the battery socket.
+バッテリーソケットと+/-ピン（下図を参照）に同時に電源を接続しないでください。間違ったバッテリーをバッテリーソケットに接続しないでください。  
+LB-040はバッテリーソケットのみに接続してください。
 
 ![](/assets/images/parts/controller/opencm904/opencm904_22.jpg)
 
-> CAUTION: Remove either the battery connector or +-header-pin power
+> 注意：バッテリーコネクタ、または+/- ヘッダピン電源を取り外します。
 
 ![](/assets/images/parts/controller/opencm904/opencm904_23.jpg)
 
-> CAUTION: Don’t used different types of batteries
+> 注意：種類の異なるバッテリーは、使用しないでください
 
 ![](/assets/images/parts/controller/opencm904/opencm904_24.png)
 
-It is possible to simultaneously connect the USB port, LBS-40 battery, and +- pin.(Built-in protection)  
-We recommend supplying the recommended voltage of the DYNAMIXEL when supplying power via +- pin or battery. Higher voltage usage may reduce the DYNAMIXEL’s lifespan or damage the product.  
-The OpenCM9.04’s maximum tolerable voltage is 16V; voltage input greater than 16V may damage the board.  
-DYNAMIXEL cannot operate using the power supplied via USB cable, but communication ports and I/O headers can be operated normally.  
-CAUTION: do NOT charge the LBS-40 battery while it is connected to the board and the board is connected to the PC via USB cable.
+USBポート、LB-040バッテリー、+/-ピンを同時に接続することが可能です。（保護機能あり）  
++/-ピン、またはバッテリーを介して電力を供給する場合、DYNAMIXELの推奨電圧を供給することをお勧めします。  
+より高い電圧で使用すると、DYNAMIXELの寿命が短くなったり、製品が損傷する可能性があります。  
+OpenCM9.04の最大許容電圧は16Vです。16Vを超える電圧入力はボードを損傷する可能性があります。  
+DYNAMIXELは、USBケーブルから供給される電源では動作しませんが、通信ポートやI/Oヘッダーは正常に動作します。  
+注意：LB-040バッテリーがボードに接続され、ボードがUSBケーブルを介してPCに接続されている間は、LBS-40バッテリーを充電しないでください。
 
 # [Switch Assembly(Type A)](#switch-assemblytype-a)
 
