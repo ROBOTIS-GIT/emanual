@@ -99,71 +99,71 @@ Arduinoスケッチ等をダウンロードした場合は、コントロール�
 - **データサイズ**  
   データサイズは、1〜4バイトでコントロールテーブルのアイテムによって異なります。 インストラクションパケットでデータを更新する場合は、データサイズを確認してください。
 
-## [EEPROM Area](#eeprom-area)
+## [EEPROM領域](#eeprom-area)
 
-| Address | Size |        Name         |            Description            | Access | Init Value |
-|:-------:|:----:|:-------------------:|:---------------------------------:|:------:|:----------:|
-|    0    |  2   |    Model Number     |           Model Number            |   R    |    400     |
-|    6    |  1   |  Firmware Version   |         Firmware Version          |   R    |     -      |
-|    7    |  1   |         ID          |           Controller ID           |   RW   |    200     |
-|    8    |  1   |      Baud Rate      |      Communication Baud Rate      |   R    |     1      |
-|    9    |  1   |  Return Delay Time  |        Response Delay Time        |   RW   |     0      |
-|   10    |  1   | Status Return Level |   Select Types of Status Return   |   RW   |     2      |
-|   11    |  1   | Bootloader Version  |   Indicates Bootloader Version    |   R    |     -      |
-|   12    |  1   |    DXL Baud Rate    | DYNAMIXEL Communication Baud Rate |   RW   |     3      |
-|   16    |  1   |  DYNAMIXEL Channel  |       Select DYNAMIXEL Port       |   RW   |     0      |
+| アドレス | サイズ |      アイテム名      | 説明                       | アクセス | デフォルト値 |
+|:-------:|:----:|:-------------------:|:--------------------------:|:------:|:----------:|
+|    0    |  2   |    Model Number     | モデル番号　                 |   R    |    400     |
+|    6    |  1   |  Firmware Version   | ファームウェア バージョン      |   R    |     -      |
+|    7    |  1   |         ID          | コントローラID               |   RW   |    200     |
+|    8    |  1   |      Baud Rate      | 通信ボーレート　　            |   R    |     1      |
+|    9    |  1   |  Return Delay Time  | 応答待ち時間                 |   RW   |     0      |
+|   10    |  1   | Status Return Level | リターンパケットのレベル選択   |   RW   |     2      |
+|   11    |  1   | Bootloader Version  | ブートローダ バージョン　      |   R    |     -      |
+|   12    |  1   |    DXL Baud Rate    | DYNAMIXELとの通信ボーレート   |   RW   |     3      |
+|   16    |  1   |  DYNAMIXEL Channel  | DYNAMIXELとの通信ポート選択　 |   RW   |     0      |
 
-## [RAM Area](#ram-area)
+## [RAM領域](#ram-area)
 
-| Address | Size |              Name               |            Description             | Access | Init Value |
-|:-------:|:----:|:-------------------------------:|:----------------------------------:|:------:|:----------:|
-|   21    |  1   |           Mode Number           |           Operation Mode           |   RW   |     -      |
-|   26    |  1   |          Button Status          |        Start Button Status         |   R    |     0      |
-|   66    |  2   |        Motion Play Page         |      Motion Play Page Number       |   RW   |     0      |
-|   68    |  1   |       Motion Play Status        |         Motion Play Status         |   R    |     -      |
-|   73    |  1   |        128ms Timer Value        |        128ms Timer Counter         |   RW   |     0      |
-|   74    |  2   |         1ms Timer Value         |         1ms Timer Counter          |   RW   |     0      |
-|   77    |  1   |          Random Number          |       Creating Random Number       |   RW   |     -      |
-|   79    |  1   |            Green LED            |          Green LED Status          |   RW   |     0      |
-|   82    |  1   |           Motion LED            |         Motion LED Status          |   RW   |     0      |
-|   360   |  2   |     Port 1 IR Sensor Value      |     IR Sensor Value on Port 1      |   R    |     -      |
-|   366   |  2   |     Port 4 IR Sensor Value      |     IR Sensor Value on Port 4      |   R    |     -      |
-|   368   |  2   |     Port 1 DMS Sensor Value     |     DMS Sensor Value on Port 1     |   R    |     -      |
-|   370   |  2   |     Port 2 DMS Sensor Value     |     DMS Sensor Value on Port 2     |   R    |     -      |
-|   372   |  2   |     Port 3 DMS Sensor Value     |     DMS Sensor Value on Port 3     |   R    |     -      |
-|   374   |  2   |     Port 4 DMS Sensor Value     |     DMS Sensor Value on Port 4     |   R    |     -      |
-|   376   |  1   |    Port 1 Touch Sensor Value    |    Touch Sensor Value on Port 1    |   R    |     -      |
-|   377   |  1   |    Port 2 Touch Sensor Value    |    Touch Sensor Value on Port 2    |   R    |     -      |
-|   378   |  1   |    Port 3 Touch Sensor Value    |    Touch Sensor Value on Port 3    |   R    |     -      |
-|   379   |  1   |    Port 4 Touch Sensor Value    |    Touch Sensor Value on Port 4    |   R    |     -      |
-|   381   |  1   |     Port 2 LED Module Value     | LED Module Control Value on Port 2 |   RW   |     0      |
-|   382   |  1   |     Port 3 LED Module Value     | LED Module Control Value on Port 3 |   RW   |     0      |
-|   386   |  2   |    Port 2 User Device Value     |    User Device Value on Port 2     |   RW   |     0      |
-|   388   |  2   |    Port 3 User Device Value     |    User Device Value on Port 3     |   RW   |     0      |
-|   392   |  1   | Port 1 Temperature Sensor Value | Temperature Sensor Value on Port 1 |   R    |     -      |
-|   393   |  1   | Port 2 Temperature Sensor Value | Temperature Sensor Value on Port 2 |   R    |     -      |
-|   394   |  1   | Port 3 Temperature Sensor Value | Temperature Sensor Value on Port 3 |   R    |     -      |
-|   395   |  1   | Port 4 Temperature Sensor Value | Temperature Sensor Value on Port 4 |   R    |     -      |
-|   396   |  1   | Port 1 Ultrasonic Sensor Value  | Ultrasonic Sensor Value on Port 1  |   R    |     -      |
-|   397   |  1   | Port 2 Ultrasonic Sensor Value  | Ultrasonic Sensor Value on Port 2  |   R    |     -      |
-|   398   |  1   | Port 3 Ultrasonic Sensor Value  | Ultrasonic Sensor Value on Port 3  |   R    |     -      |
-|   399   |  1   | Port 4 Ultrasonic Sensor Value  | Ultrasonic Sensor Value on Port 4  |   R    |     -      |
-|   400   |  1   |  Port 1 Magnetic Sensor Value   |  Magnetic Sensor Value on Port 1   |   R    |     -      |
-|   401   |  1   |  Port 2 Magnetic Sensor Value   |  Magnetic Sensor Value on Port 2   |   R    |     -      |
-|   402   |  1   |  Port 3 Magnetic Sensor Value   |  Magnetic Sensor Value on Port 3   |   R    |     -      |
-|   403   |  1   |  Port 4 Magnetic Sensor Value   |  Magnetic Sensor Value on Port 4   |   R    |     -      |
-|   404   |  1   |   Port 1 Motion Sensor Value    |   Motion Sensor Value on Port 1    |   R    |     -      |
-|   405   |  1   |   Port 2 Motion Sensor Value    |   Motion Sensor Value on Port 2    |   R    |     -      |
-|   406   |  1   |   Port 3 Motion Sensor Value    |   Motion Sensor Value on Port 3    |   R    |     -      |
-|   407   |  1   |   Port 4 Motion Sensor Value    |   Motion Sensor Value on Port 4    |   R    |     -      |
-|   409   |  1   |    Port 2 Color Sensor Value    |    Color Sensor Value on Port 2    |   R    |     -      |
-|   410   |  1   |    Port 3 Color Sensor Value    |    Color Sensor Value on Port 3    |   R    |     -      |
+| アドレス | サイズ |              アイテム名          | 説明                            | アクセス | デフォルト値 |
+|:-------:|:----:|:-------------------------------:|:------------------------------:|:------:|:----------:|
+|   21    |  1   |           Mode Number           | 動作モード　                     |   RW   |     -      |
+|   26    |  1   |          Button Status          | スタートボタンの状態              |   R    |     0      |
+|   66    |  2   |        Motion Play Page         | Motion Play ページ番号           |   RW   |     0      |
+|   68    |  1   |       Motion Play Status        | Motion Play ステータス           |   R    |     -      |
+|   73    |  1   |        128ms Timer Value        | 128ms タイマカウンタ             |   RW   |     0      |
+|   74    |  2   |         1ms Timer Value         | 1ms タイマカウンタ               |   RW   |     0      |
+|   77    |  1   |          Random Number          | 乱数値の生成                     |   RW   |     -      |
+|   79    |  1   |            Green LED            | 緑LEDのステータス                |   RW   |     0      |
+|   82    |  1   |           Motion LED            | Motion LEDのステータス          |   RW   |     0      |
+|   360   |  2   |     Port 1 IR Sensor Value      | ポート1の赤外線センサ値           |   R    |     -      |
+|   366   |  2   |     Port 4 IR Sensor Value      | ポート4の赤外線センサ値           |   R    |     -      |
+|   368   |  2   |     Port 1 DMS Sensor Value     | ポート1の距離センサ値             |   R    |     -      |
+|   370   |  2   |     Port 2 DMS Sensor Value     | ポート2の距離センサ値             |   R    |     -      |
+|   372   |  2   |     Port 3 DMS Sensor Value     | ポート3の距離センサ値             |   R    |     -      |
+|   374   |  2   |     Port 4 DMS Sensor Value     | ポート4の距離センサ値             |   R    |     -      |
+|   376   |  1   |    Port 1 Touch Sensor Value    | ポート1のタッチセンサ値           |   R    |     -      |
+|   377   |  1   |    Port 2 Touch Sensor Value    | ポート2のタッチセンサ値           |   R    |     -      |
+|   378   |  1   |    Port 3 Touch Sensor Value    | ポート3のタッチセンサ値           |   R    |     -      |
+|   379   |  1   |    Port 4 Touch Sensor Value    | ポート4のタッチセンサ値           |   R    |     -      |
+|   381   |  1   |     Port 2 LED Module Value     | ポート2のLEDモジュール値          |   RW   |     0      |
+|   382   |  1   |     Port 3 LED Module Value     | ポート3のLEDモジュール値          |   RW   |     0      |
+|   386   |  2   |    Port 2 User Device Value     | ポート2のユーザーデバイス値        |   RW   |     0      |
+|   388   |  2   |    Port 3 User Device Value     | ポート3のユーザーデバイス値        |   RW   |     0      |
+|   392   |  1   | Port 1 Temperature Sensor Value | ポート1の温度センサ値             |   R    |     -      |
+|   393   |  1   | Port 2 Temperature Sensor Value | ポート2の温度センサ値             |   R    |     -      |
+|   394   |  1   | Port 3 Temperature Sensor Value | ポート3の温度センサ値             |   R    |     -      |
+|   395   |  1   | Port 4 Temperature Sensor Value | ポート4の温度センサ値             |   R    |     -      |
+|   396   |  1   | Port 1 Ultrasonic Sensor Value  | ポート1の超音波センサ値           |   R    |     -      |
+|   397   |  1   | Port 2 Ultrasonic Sensor Value  | ポート2の超音波センサ値           |   R    |     -      |
+|   398   |  1   | Port 3 Ultrasonic Sensor Value  | ポート3の超音波センサ値           |   R    |     -      |
+|   399   |  1   | Port 4 Ultrasonic Sensor Value  | ポート4の超音波センサ値           |   R    |     -      |
+|   400   |  1   |  Port 1 Magnetic Sensor Value   | ポート1の磁気センサ値             |   R    |     -      |
+|   401   |  1   |  Port 2 Magnetic Sensor Value   | ポート2の磁気センサ値             |   R    |     -      |
+|   402   |  1   |  Port 3 Magnetic Sensor Value   | ポート3の磁気センサ値             |   R    |     -      |
+|   403   |  1   |  Port 4 Magnetic Sensor Value   | ポート4の磁気センサ値             |   R    |     -      |
+|   404   |  1   |   Port 1 Motion Sensor Value    | ポート1のモーションセンサ値        |   R    |     -      |
+|   405   |  1   |   Port 2 Motion Sensor Value    | ポート2のモーションセンサ値        |   R    |     -      |
+|   406   |  1   |   Port 3 Motion Sensor Value    | ポート3のモーションセンサ値        |   R    |     -      |
+|   407   |  1   |   Port 4 Motion Sensor Value    | ポート4のモーションセンサ値        |   R    |     -      |
+|   409   |  1   |    Port 2 Color Sensor Value    | ポート2のカラーセンサ値           |   R    |     -      |
+|   410   |  1   |    Port 3 Color Sensor Value    | ポート3のカラーセンサ値           |   R    |     -      |
 
-**NOTE** : Some Addresses of the Control Table can be tested with R+ Manager 2.0.
+**注釈** : コントロールテーブルの一部のアドレスは、R+Manager2.0を使用してテストが可能です。
 {: .notice}
 
-**WARNING** : DYNAMIXEL should **NOT** use ID 200 when OpenCM9.04 is using factory default firmware recovered with R+Manager.  
-ID 200 will be assigned to OpenCM9.04 in the factory default firmware.
+**警告** : OpenCM9.04をR+Manager2.0で工場出荷時のファームウェアに書き換えた場合、DYNAMIXELでは**ID 200を使用しないでください**。  
+ID 200は、工場出荷時のファームウェアでOpenCM9.04に割り当てられています。
 {: .notice--warning}
 
 # [Hardware](#hardware)
