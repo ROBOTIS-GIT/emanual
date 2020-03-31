@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: autonomous_driving
+ref: autonomous_driving_autorace
 read_time: true
 share: true
 author_profile: false
@@ -15,6 +15,10 @@ page_number: 25
 
 <div style="counter-reset: h1 13"></div>
 <div style="counter-reset: h2 6"></div>
+
+<!--[dummy Header 1]>
+  <h1 id="dummy"><a href="#dummy">Dummy</a></h1>
+<![end dummy Header 1]-->
 
 ## [TurtleBot3 AutoRace](#turtlebot3-autorace)
 

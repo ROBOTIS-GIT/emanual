@@ -5,7 +5,7 @@ ref: autorace_rviz_challenge
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/turtlebot3/autonomous_driving/autorace_rviz_challenge
+permalink: /docs/en/platform/turtlebot3/autorace_rviz_challenge
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
@@ -15,6 +15,12 @@ page_number: 44
 
 <div style="counter-reset: h1 29"></div>
 <div style="counter-reset: h2 3"></div>
+
+
+<!--[dummy Header 1]>
+  <h1 id="dummy"><a href="#dummy">Dummy</a></h1>
+<![end dummy Header 1]-->
+
 ## [AutoRace RBIZ Challenge 2017](#autorace-rbiz-challenge-2017)
 
 ![](/assets/images/platform/turtlebot3/autonomous_driving/autorace_rbiz_challenge_2017_robots_2.png)

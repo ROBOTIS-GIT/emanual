@@ -1,11 +1,11 @@
 ---
 layout: archive
 lang: en
-ref: autorace_gazenbo
+ref: autorace_gazebo
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/turtlebot3/autonomous_driving/autorace_gazebo
+permalink: /docs/en/platform/turtlebot3/autonomous_gazebo/
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
@@ -15,6 +15,10 @@ page_number: 26
 
 <div style="counter-reset: h1 13"></div>
 <div style="counter-reset: h2 7"></div>
+
+<!--[dummy Header 1]>
+  <h1 id="dummy"><a href="#dummy">Dummy</a></h1>
+<![end dummy Header 1]-->
 
 ## [AutoRace with Gazebo](#autorace-with-gazebo)
 The AutoRace is provided by Gazebo. We created a environment TurtleBot3 AutoRace 2017 in R-BIZ Challenge.

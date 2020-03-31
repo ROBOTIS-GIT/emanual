@@ -403,7 +403,7 @@ To provide various conditions for a robot application development, the game prov
 **WARNING**: Be sure to read [Autonomous Driving](#autonomous-driving) in order to start missions.
 {: .notice--warning}
 
-### [Mission 1: Traffic Light](#mission-1-traffic-light)
+### [Mission 1: Traffic Lights](#mission-1-traffic-lights)
 
 Traffic Light is the first mission of AutoRace. TurtleBot3 recognizes the traffic lights and starts the course.
 
