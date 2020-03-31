@@ -38,8 +38,8 @@ sidebar:
 |  MX Series(TTL)  |   O    |    X    |    X     |    X     |    X     |    O     |    O     |    X     |    O     |    O     |             X(O)             |      X      |    O     |
 | MX Series(RS485) |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    O     |             X(O)             |      X      |    O     |
 |      XL-320      |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    O     |             O(X)             |      X      |    X     |
-|    2XL Series    |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |             X(O)             |      X      |    O     |
 |    XL Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |             X(O)             |      X      |    O     |
+|    XC Series    |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |             X(O)             |      X      |    O     |
 |    XM Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |             X(O)             |      X      |    O     |
 |    XH Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |             X(O)             |      X      |    O     |
 |    PRO Series    |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    X     |             X(O)             |      X      |    O     |
