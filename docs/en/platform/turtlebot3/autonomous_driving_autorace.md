@@ -27,7 +27,7 @@ Whole robots and even the referee system in the field is run by ROS, so it would
 **WARNING**: Be aware that you are reading the contents made in the pase. If you are joining AutoRace 2020, see [TurtleBot3 AutoRace 2020](/docs/en/platform/turtlebot3/autonomous_driving/#turtlebot3-autorace-2020). 
 {: .notice--warning}
 
-## [TurtleBot3 AutoRace Tutorials](#turtlebot3-autorace-tutorials)
+### [TurtleBot3 AutoRace Tutorials](#turtlebot3-autorace-tutorials)
 
 - Source code for the AutoRace tutorial: [turtlebot3_autorace packages][turtlebot3_autorace]
 
@@ -451,7 +451,7 @@ Until now, all the preprocess of image must have been tested.
     turtlebot3_autorace_core will control all system in the package (open and close the launch, nodes in the package.)
 
 
-## [TurtleBot3 AutoRace Online Competition](#turtlebot3-autorace-online-competition)
+### [TurtleBot3 AutoRace Online Competition](#turtlebot3-autorace-online-competition)
 
 ![](/assets/images/platform/turtlebot3/challenges/competition_autorace.png)
 

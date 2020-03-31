@@ -15917,8 +15917,6 @@ turtlebot3:
         url: /platform/turtlebot3/autonomous_driving/#mission-5-level-crossing
       - title: "Mission 6: Tunnel"
         url: /platform/turtlebot3/autonomous_driving/#mission-6-tunnel
-      - title: "Run Autonomous Driving"
-        url: /platform/turtlebot3/autonomous_driving/#run-autonomous-driving
     - title: "TurtleBot3 AutoRace"
       url: /platform/turtlebot3/autonomous_driving_autorace/
       children: 
