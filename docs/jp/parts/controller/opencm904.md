@@ -515,14 +515,15 @@ OpenCM9.04 Type Aは、電源スイッチとJP1が短絡されていない状態
 
 > OpenCM9.04 Type Aが正しく動作するためには、スイッチをはんだ付けする際にJP1を切断する必要があります。
 
-# [Connector Assembly(Type A)](#connector-assemblytype-a)
+# [コネクタアセンブリ(Type A)](#connector-assemblytype-a)
 
-OpenCM9.04’s DYNAMIXEL 3-Pin TTL pins are all compatible with DYNAMIXEL 3-pin TTL and XL-320 3-pin TTL(mini-type). Thus, both type of pins can be soldered and used.  
-Both types of 3-pin TTL pins are included in OpenCM Accessory Set.
+OpenCM9.04のDYNAMIXEL 3ピンTTLピンは、DYNAMIXEL 3ピンTTLおよびXL-320 3ピンTTL（ミニタイプ）と互換性があります。
+したがって、両方のタイプのピンをはんだ付けして使用可能です。  
+両方のタイプの3ピンTTLピンがOpenCMアクセサリセットに含まれています。
 
 ![](/assets/images/parts/controller/opencm904/opencm904_27.png)
 
-> OpenCM9.04 Type A can have 2 types of 3-pin connectors soldered onto the board
+> OpenCM9.04 Type Aは、2種類の3ピンコネクタをボードに取り付ける事ができます。
 
 # [Development Environment](#development-environment)
 
