@@ -1,0 +1,8 @@
+<map id="robotis_manipulator::Manipulator::getId" name="robotis_manipulator::Manipulator::getId">
+<area shape="rect" id="node2" href="$classrobotis__manipulator_1_1_robotis_manipulator.html#a1e7fb766c94010660f5d9c6ffa0d898b" title="sendJointActuatorValue " alt="" coords="203,5,371,61"/>
+<area shape="rect" id="node3" href="$classrobotis__manipulator_1_1_robotis_manipulator.html#ad90298397a0c6f9ffa5aa20cce0ab7e2" title="sendMultipleJointActuatorValue " alt="" coords="197,86,377,157"/>
+<area shape="rect" id="node4" href="$classrobotis__manipulator_1_1_robotis_manipulator.html#a0221920a4da676185d166415fc4d2914" title="sendAllJointActuatorValue " alt="" coords="195,181,378,237"/>
+<area shape="rect" id="node5" href="$classrobotis__manipulator_1_1_robotis_manipulator.html#a9ebd6f9d02c16ad41eebf0104a9f69cd" title="receiveJointActuatorValue " alt="" coords="195,261,378,317"/>
+<area shape="rect" id="node6" href="$classrobotis__manipulator_1_1_robotis_manipulator.html#a6affcbccc199ff5fadcf6b827d368c91" title="receiveMultipleJointActuatorValue " alt="" coords="189,342,384,413"/>
+<area shape="rect" id="node7" href="$classrobotis__manipulator_1_1_robotis_manipulator.html#a445c7e5737940b0a560d715d587eadd5" title="receiveAllJointActuatorValue " alt="" coords="188,437,385,493"/>
+</map>

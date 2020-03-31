@@ -1,0 +1,29 @@
+<map id="robotis_manipulator::RobotisManipulator::getTrajectoryJointValue" name="robotis_manipulator::RobotisManipulator::getTrajectoryJointValue">
+<area shape="rect" id="node2" href="$classrobotis__manipulator_1_1_trajectory.html#ad611b4f48e92be9c112c36cc2569bb75" title="checkTrajectoryType " alt="" coords="224,5,443,47"/>
+<area shape="rect" id="node3" href="$classrobotis__manipulator_1_1_trajectory.html#a378a65986082eb2bc125928b7e56889d" title="getJointTrajectory " alt="" coords="233,71,433,112"/>
+<area shape="rect" id="node4" href="$classrobotis__manipulator_1_1_joint_trajectory.html#aef1a0eaac83af6599f2bef674d299f4c" title="getJointWaypoint " alt="" coords="248,135,419,191"/>
+<area shape="rect" id="node5" href="$classrobotis__manipulator_1_1_robotis_manipulator.html#a37a3225fe662919d78e32b860e64e61a" title="checkJointLimit " alt="" coords="262,266,405,322"/>
+<area shape="rect" id="node6" href="$classrobotis__manipulator_1_1_trajectory.html#ae5276de42edf154de107c1f194f6b322" title="getManipulator " alt="" coords="522,208,703,249"/>
+<area shape="rect" id="node8" href="$namespacerobotis__manipulator_1_1log.html#a6a84cb5481107ad244344093086fb557" title="error " alt="" coords="545,339,680,380"/>
+<area shape="rect" id="node9" href="$classrobotis__manipulator_1_1_manipulator.html#af746f90412f3a1f08dee32a855ca177c" title="getAllActiveJointComponentName " alt="" coords="246,397,421,453"/>
+<area shape="rect" id="node11" href="$classrobotis__manipulator_1_1_trajectory.html#a3e05d461f6bdf874a58a6a35ff6ce351" title="removeWaypointDynamicData " alt="" coords="236,477,431,533"/>
+<area shape="rect" id="node12" href="$classrobotis__manipulator_1_1_trajectory.html#a840fce5e4b16eb4ef957ff0aba2bf146" title="getPresentJointWaypoint " alt="" coords="240,557,427,613"/>
+<area shape="rect" id="node13" href="$classrobotis__manipulator_1_1_trajectory.html#a1e4ee32908b244fea91919f1013e2e6a" title="getTaskTrajectory " alt="" coords="233,636,434,677"/>
+<area shape="rect" id="node14" href="$classrobotis__manipulator_1_1_task_trajectory.html#a10718a16244458b0240ec357acfa09bd" title="getTaskWaypoint " alt="" coords="220,701,447,743"/>
+<area shape="rect" id="node21" href="$classrobotis__manipulator_1_1_kinematics.html#a6065cf1bff763854b9a0bd62945a093b" title="solveInverseKinematics " alt="" coords="245,766,422,822"/>
+<area shape="rect" id="node22" href="$classrobotis__manipulator_1_1_trajectory.html#a49ba36b57306d92db3214fdf21db75e5" title="getPresentControlToolName " alt="" coords="233,846,434,902"/>
+<area shape="rect" id="node23" href="$classrobotis__manipulator_1_1_trajectory.html#ac45c691a9fee06027d17ea6e55d688ea" title="getCustomJointTrajectory " alt="" coords="239,926,427,982"/>
+<area shape="rect" id="node24" href="$classrobotis__manipulator_1_1_trajectory.html#acc33565a63cb8d328170bb8486d910b1" title="getPresentCustomTrajectoryName " alt="" coords="231,1006,436,1062"/>
+<area shape="rect" id="node25" href="$classrobotis__manipulator_1_1_trajectory.html#afbfddec6e3015179c30b76d5142f54c3" title="getCustomTaskTrajectory " alt="" coords="239,1086,428,1142"/>
+<area shape="rect" id="node26" href="$classrobotis__manipulator_1_1_trajectory.html#a58b1d4fb60f7e3ed9150d312766debc1" title="setPresentJointWaypoint " alt="" coords="240,1166,427,1222"/>
+<area shape="rect" id="node27" href="$classrobotis__manipulator_1_1_trajectory.html#a05e95f1473723592130f63321664fb0c" title="updatePresentWaypoint " alt="" coords="243,1246,423,1302"/>
+<area shape="rect" id="node7" href="$classrobotis__manipulator_1_1_manipulator.html#a715e5825f289765d1c6ce9687ce6c6e5" title="checkJointLimit " alt="" coords="515,273,711,315"/>
+<area shape="rect" id="node10" href="$classrobotis__manipulator_1_1_manipulator.html#a5b1f27b9cc2875b4e0275e3b88ab1b28" title="checkComponentType " alt="" coords="495,404,731,445"/>
+<area shape="rect" id="node15" href="$namespacerobotis__manipulator_1_1math.html#a4bbc795e8c06dd0472ed25864f6ec886" title="convertRPYToRotationMatrix " alt="" coords="511,614,714,670"/>
+<area shape="rect" id="node19" href="$namespacerobotis__manipulator_1_1math.html#a73d50f3962eeac18f464f879e6a0c8fc" title="convertRPYVelocityToOmega " alt="" coords="520,694,705,750"/>
+<area shape="rect" id="node20" href="$namespacerobotis__manipulator_1_1math.html#a752d1631596538515894f09f210eb17b" title="convertRPYAccelerationToOmegaDot " alt="" coords="507,774,718,830"/>
+<area shape="rect" id="node16" href="$namespacerobotis__manipulator_1_1math.html#a0a45b10176c2a214876aa265ec8e707e" title="convertYawAngleToRotationMatrix " alt="" coords="779,534,1012,590"/>
+<area shape="rect" id="node17" href="$namespacerobotis__manipulator_1_1math.html#aa6112f12db3755d6677f45c9e0806cbf" title="convertPitchAngleToRotationMatrix " alt="" coords="801,614,989,670"/>
+<area shape="rect" id="node18" href="$namespacerobotis__manipulator_1_1math.html#ab7682932090e254cb077badb80fe8667" title="convertRollAngleToRotationMatrix " alt="" coords="805,694,986,750"/>
+<area shape="rect" id="node28" href="$classrobotis__manipulator_1_1_kinematics.html#adfdd3727052c27d12e3fc2209c025317" title="solveForwardKinematics " alt="" coords="522,1246,703,1302"/>
+</map>
