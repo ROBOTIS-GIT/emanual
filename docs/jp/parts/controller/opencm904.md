@@ -19,16 +19,16 @@ sidebar:
 
 - OpenCM9.04タイプパッケージ
 
-|項目|OpenCM9.04タイプA|OpenCM9.04タイプB|OpenCM9.04タイプC|
-|:---:|:---:|:---:|:---:|
-|電源スイッチ|×|1|1|
-|ユーザーボタン|1|1|1|
-|2ピンバッテリー(LBS-40)|×|2|2|
-|JTAG/SWD|×|1|1|
-|マイクロUSBタイプB|×|1|1|
-|5-ピンポート|×|4|4|
-|DYNAMIXEL TTLバス|×|4 `1`|4 `2`|
-|4ピン通信|×|1|1|
+|           項目          | OpenCM9.04タイプA | OpenCM9.04タイプB | OpenCM9.04タイプC |
+|:--------------------:|:-----------------:|:-----------------:|:-----------------:|
+|        電源スイッチ       |         X         |         1         |         1         |
+|      ユーザースイッチ     |         1         |         1         |         1         |
+|2ピンバッテリー<br>(LBS-40)|         X         |         2         |         2         |
+|        JTAG/SWD         |         X         |         1         |         1         |
+|     マイクロUSBタイプB    |         X         |         1         |         1         |
+|       5-ピンポート       |         X         |         4         |         4         |
+|    DYNAMIXEL TTLバス    |         X         |       4 `1`       |       4 `2`       |
+|        4ピン通信         |         X         |         1         |         1         |
 
 `1`: [MOLEX 53253-0370] x 2(for XL-320), [MOLEX 22-03-5035] x 2(for AX/MX-Series)  
 `2`: [MOLEX 53253-0370] x 4(for XL-320)
@@ -37,7 +37,7 @@ sidebar:
 - タイプA、タイプB、タイプCの3つのタイプが使用できます。タイプA、タイプB、タイプCの違いは、コネクタの可用性です。 （上の画像と表を参照してください。）
 （OpenCM9.04アクセサリーセットを購入することで、タイプAからタイプBタイプCへのアップグレードに必要なコネクタをすべて取得することができます。）  [OpenCM9.04 Accessory Set](http://en.robotis.com/shop_en/item.php?it_id=902-0084-030)
 
-**注** : コントローラーの復旧についてはROBOTIS-MINIを参照してください（タイプCのみ）ROBOTIS-MINIコントローラーのファームウェアの更新 [ROBOTIS-MINI Controller Firmware Update]
+**注釈** : コントローラーの復旧についてはROBOTIS-MINIを参照してください（タイプCのみ）ROBOTIS-MINIコントローラーのファームウェアの更新 [ROBOTIS-MINI Controller Firmware Update]
 {: .notice}
 
 **注意** : DYNAMIXELファームウェアの更新または復旧する際は、OpenCM9.04およびOpenCM 485の拡張ボードを**取り外してください**。
@@ -45,23 +45,23 @@ sidebar:
 
 # [仕様表](#specifications)
 
-|項目|説明|
-|:---:|:---:|
-|CPU|STM32F103CB(ARM Cortex-M3)|
-|動作電圧|5V ~ 16V|
-|I/O|GPIO x 26|
-|タイマー|4(16bit)|
-|アナログ入力(ADC)|10(12bit)|
-|フラッシュROM|128kb|
-|SRAM|20kb|
-|クロック|72Mhz|
-|USB|1(2.0 Full Speed)マイクロUSBタイプB|
-|USART|3|
-|SPI|2|
-|I2C(TWI)|2|
-|デバッグ|JTAG & SWD|
-|DYNAMIXEL TTL バス 3ピン|4|
-|寸法|27mm x 66.5mm|
+|           項目          |               説明               |
+|:----------------------:|:-------------------------------:|
+|          CPU           |   STM32F103CB (ARM Cortex-M3)   |
+|         動作電圧        |            5V ~ 16V             |
+|          I/O           |            GPIO x 26            |
+|         タイマー        |            4 (16bit)            |
+|     アナログ入力(ADC)    |           10 (12bit)            |
+|       フラッシュROM      |              128Kb              |
+|          SRAM          |              20Kb               |
+|         クロック        |              72Mhz              |
+|          USB           | 1 (2.0 Full Speed) マイクロUSBタイプB |
+|         USART          |                3                |
+|          SPI           |                2                |
+|        I2C(TWI)        |                2                |
+|         デバッグ        |           JTAG & SWD            |
+| DYNAMIXEL TTL BUS 3pin |                4                |
+|          寸法          |          27mm x 66.5mm          |
 
 {% capture opencm904_caution_01 %}
 **警告**
