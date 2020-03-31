@@ -11,64 +11,65 @@ sidebar:
   nav: "opencm904"
 ---
 
-# [Introduction](#introduction)
+# [イントロダクション](#introduction)
 
 ![](/assets/images/parts/controller/opencm904/opencm904_product.png)
 
 > OpenCM 9.04
 
-- OpenCM9.04 Types Package
+- OpenCM9.04タイプパッケージ
 
-|         Item         | OpenCM9.04 A Type | OpenCM9.04 B Type | OpenCM9.04 C Type |
+|           項目          | OpenCM9.04タイプA | OpenCM9.04タイプB | OpenCM9.04タイプC |
 |:--------------------:|:-----------------:|:-----------------:|:-----------------:|
-|     Power Switch     |         X         |         1         |         1         |
-|     User Button      |         1         |         1         |         1         |
-| 2Pin Battery(LBS-40) |         X         |         2         |         2         |
-|       JTAG/SWD       |         X         |         1         |         1         |
-|     Micro B USB      |         X         |         1         |         1         |
-|      5-Pin Port      |         X         |         4         |         4         |
-|  DYNAMIXEL TTL BUS   |         X         |       4 `1`       |       4 `2`       |
-| 4 Pin Communication  |         X         |         1         |         1         |
+|        電源スイッチ       |         X         |         1         |         1         |
+|      ユーザースイッチ     |         1         |         1         |         1         |
+|2ピンバッテリー<br>(LBS-40)|         X         |         2         |         2         |
+|        JTAG/SWD         |         X         |         1         |         1         |
+|     マイクロUSBタイプB    |         X         |         1         |         1         |
+|       5-ピンポート       |         X         |         4         |         4         |
+|    DYNAMIXEL TTLバス    |         X         |       4 `1`       |       4 `2`       |
+|        4ピン通信         |         X         |         1         |         1         |
 
 `1`: [MOLEX 53253-0370] x 2(for XL-320), [MOLEX 22-03-5035] x 2(for AX/MX-Series)  
 `2`: [MOLEX 53253-0370] x 4(for XL-320)
 
-- OpenCM9.04 is a microcontroller board based on 32bit ARM Cortex-M3. The OpenCM9.04’s schematics and source codes are open-source.
-- 3 types are available: Type A & Type B & Type C. The difference between Type A,Type B, Type C is the availability of the connectors. (Refer to the image and table above.)  
-  (OpenCM9.04 Accessory Set can be purchased to acquire all the necessary connector to upgrade Type A to Type B Type C.)  [OpenCM9.04 Accessory Set](http://en.robotis.com/shop_en/item.php?it_id=902-0084-030)
+- OpenCM9.04は、32ビットARM Cortex-M3に基づくマイクロコントローラーボードです。 OpenCM9.04の回路図とソースコードはオープンソースです。
+- タイプA、タイプB、タイプCの3つのタイプが使用できます。タイプA、タイプB、タイプCの違いは、コネクタの可用性です。 （上の画像と表を参照してください。）
+（OpenCM9.04アクセサリーセットを購入することで、タイプAからタイプBタイプCへのアップグレードに必要なコネクタをすべて取得することができます。）  [OpenCM9.04 Accessory Set](http://en.robotis.com/shop_en/item.php?it_id=902-0084-030)
 
-**NOTE** : Refer to the ROBOTIS-MINI for controller recovery (type C-only) [ROBOTIS-MINI Controller Firmware Update]
+**注釈** : コントローラーの復旧についてはROBOTIS-MINIを参照してください（タイプCのみ）ROBOTIS-MINIコントローラーのファームウェアの更新 [ROBOTIS-MINI Controller Firmware Update]
 {: .notice}
 
-**CAUTION** : Please **DISCONNECT** OpenCM9.04 and OpenCM 485 Expansion board when updating or recovering DYNAMIXEL firmware.
+**注意** : DYNAMIXELファームウェアの更新または復旧する際は、OpenCM9.04およびOpenCM 485の拡張ボードを**取り外してください**。
 {: .notice--warning}
 
-# [Specifications](#specifications)
+# [仕様表](#specifications)
 
-|          Item          |           Description           |
+|           項目          |               説明               |
 |:----------------------:|:-------------------------------:|
 |          CPU           |   STM32F103CB (ARM Cortex-M3)   |
-|   Operation Voltage    |            5V ~ 16V             |
+|         動作電圧        |            5V ~ 16V             |
 |          I/O           |            GPIO x 26            |
-|         Timer          |            4 (16bit)            |
-|   Analog Input(ADC)    |           10 (12bit)            |
-|         Flash          |              128Kb              |
+|         タイマー        |            4 (16bit)            |
+|     アナログ入力(ADC)    |           10 (12bit)            |
+|       フラッシュROM      |              128Kb              |
 |          SRAM          |              20Kb               |
-|         Clock          |              72Mhz              |
-|          USB           | 1 (2.0 Full Speed) Micro B Type |
+|         クロック        |              72Mhz              |
+|          USB           | 1 (2.0 Full Speed) マイクロUSBタイプB |
 |         USART          |                3                |
 |          SPI           |                2                |
 |        I2C(TWI)        |                2                |
-|         Debug          |           JTAG & SWD            |
+|         デバッグ        |           JTAG & SWD            |
 | DYNAMIXEL TTL BUS 3pin |                4                |
-|       Dimensions       |          27mm x 66.5mm          |
+|          寸法          |          27mm x 66.5mm          |
 
 {% capture opencm904_caution_01 %}
-**WARNING**
-- USB power is cannot be used to operate DYNAMIXEL's. Separate power supply needs to be provided.  
+**警告**
+- DYNAMIXELの操作にUSB電源は使用できません。 別電源からの供給が必要です。
+（OpenCM9.04は、USB、バッテリー、+-端子から供給される電力によって動作します。)  
   (OpenCM9.04 can operate using power supplied via USB, battery, + - terminal.)
-- Check the operating voltage for peripheral devices when using power supply. DYNAMIXEL or XL-series receives the exact same voltage.
-- XL-320 cannot be used with other DYNAMIXEL's due to the difference in operating voltages.
+- 電源を使用する際は、周辺機器の動作電圧を確認してください。DYNAMIXELやXLシリーズは全く同じ電圧を受けます。
+- XL-320は動作電圧の違いにより、他のDYNAMIXELとの併用はできません。
 {% endcapture %}
 
 <div class="notice--danger">{{ opencm904_caution_01 | markdownify }}</div>
@@ -172,16 +173,14 @@ ID 200は、工場出荷時のファームウェアでOpenCM9.04に割り当て�
 
 ![](/assets/images/parts/controller/opencm904/memory_map.png)
 
-## [Block Diagram](#block-diagram)
+## [ブロック図](#block-diagram)
 
-OpenCM9.04’s block diagram is shown below. OpenCM9.04’s schematic is based on 32bit Cortex-M3 core STM32F103CB microcontroller.  
-The power schematic is designed to cascade through 5V and 3.3V regulators. 5V is supplied to TTL bus and 3.3V is supplied to microcontrollers, 5-pin port and 4-pin communication port.  
-OpenCM9.04 supports USB2.0 FS. Micro-B connector is used to download the program or perform data communication.  
-Pin 11(TX1) & Pin 12(RX1) cannot be used simultaneously because USART Channel 1 is assigned to DYNAMIXEL TTL Bus.  
-USART channel 1 is registered under DYNAMIXEL TTL Bus and cannot be used simultaneously with pin 11(TX1) & 12(RX1).
-
+OpenCM9.04のブロック図を以下に示します。OpenCM9.04の回路図は、32bit Cortex-M3コアのSTM32F103CBマイクロコントローラに基づいています。  
+電源回路図は、5Vと3.3Vのレギュレータを介してカスケードするように設計されています。5VはTTLバスに、3.3Vはマイクロコントローラ、5ピンポート、4ピン通信ポートに供給されます。  
+OpenCM9.04はUSB2.0 FSに対応しています。Micro-Bコネクタは、プログラムのダウンロードやデータ通信を行うために使われます。  
+USARTチャンネル1はDYNAMIXEL TTLバスに割当てられているため、ピン 11(TX1)とピン 12(RX1)を同時に使用することはできません。  
+USARTチャンネル1はDYNAMIXEL TTLバスに登録されており、ピン11(TX1)と12(RX1)を同時に使用することはできません。
 ![](/assets/images/parts/controller/opencm904/opencm904_01.png)
-
 
 ## [Layout/Pin Map](#layoutpin-map)
 
