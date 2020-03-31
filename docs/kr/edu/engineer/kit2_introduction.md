@@ -97,13 +97,15 @@ Raspberry Pi는 영국의 라즈베리 파이 재단이 교육 목적으로 개�
 ![](/assets/images/edu/engineer/kit2/raspberry_pi_cam_02.png)
 > 라즈베리파이와 카메라모듈 연결모습
 
+<!-- 
 **연결방법**
 1. CM-550의 전원을 끄세요.
 2. Raspberry Pi Zero W의 `CSI Camera Connector`에 카메라 모듈을 연결하세요.
 3. 전용 USB 케이블을 사용하여, CM-550를 Raspberry Pi Zero W의 `Micro USB Data Port`에 연결하세요.
 
 **주의**: CM-550을 `Micro USB 5V Power Input` 단자에 연결 시, 정상동작 하지 않습니다.
-{: .notice--warning}
+{: .notice--warning} 
+-->
 
 #### [CM-550에 장착하기](#CM-550-장착하기)
 다음과 같은 모습으로, 제어기(CM-550)에 장착 시켜주세요.
@@ -121,24 +123,14 @@ XL430-W250-T는 로봇의 기본관절로 사용되는 액츄에이터입니다.
 
 ![](/assets/images/dxl/x/xl430_product_new.png)
 
-{% capture 2xl430 %}
-**XL430-W250-T 매뉴얼 바로가기**
-- [주요사양](/docs/kr/dxl/x/xl430-w250/#주요-사양)
-- [컨트롤 테이블](/docs/kr/dxl/x/xl430-w250/#컨트롤-테이블)
-{% endcapture %}
-<div class='notice'>{{ 2xl430 | markdownify }}</div>
+**XL430-W250-T 매뉴얼 바로가기(/docs/kr/dxl/x/xl430-w250)**
 
 #### [2XL430-W250-T](#2xl430-w250-t)
 2XL430-W250-T는 기존 하나의 축만 가지고있는 액츄에이터와 달리, 2축 제어가 가능한 새로운 다이나믹셀입니다.
 
 ![](/assets/images/edu/engineer/kit1/2xl430_intro.png)
 
-{% capture 2xl430 %}
-**2XL430-W250-T 매뉴얼 바로가기**
-- [주요사양](/docs/kr/dxl/x/2xl430-w250/#주요-사양)
-- [컨트롤 테이블](/docs/kr/dxl/x/2xl430-w250/#컨트롤-테이블)
-{% endcapture %}
-<div class='notice'>{{ 2xl430 | markdownify }}</div>
+**[2XL430-W250-T 매뉴얼 바로가기](/docs/kr/dxl/x/2xl430-w250/)** 
 
 ### [LED 보드](#led-보드)
 빨강, 파랑, 보라 3가지 색과 빛의 세기를 제어할 수 있는 R/B LED 보드입니다.  
@@ -282,4 +274,4 @@ XL430-W250-T는 로봇의 기본관절로 사용되는 액츄에이터입니다.
 [서보모터 매뉴얼 바로가기]: /docs/kr/parts/motor/servo_motor/ 
 [CM-550 매뉴얼 바로가기]: /docs/kr/parts/controller/cm-550/
 [2XL430-W250-T 매뉴얼 바로가기]: /docs/kr/dxl/x/2xl430-w250/
-[절대 거리 센서 DMS-80]: /parts/sensor/dms-80/
+[절대 거리 센서 DMS-80]: /docs/kr/parts/sensor/dms-80/

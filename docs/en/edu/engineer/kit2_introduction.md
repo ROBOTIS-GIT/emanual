@@ -68,42 +68,104 @@ sidebar:
 **CAUTION** : The USB port on CM-550 is designed to be connected with the PC. Please do **NOT** connect other USB devices, or it may cause damage to the controller.
 {: .notice--warning}
 
-**[CM-550 eManual]{: .blank}**
+**[CM-550 e-Manual]{: .blank}**
+{: .notice}
+
+
+### [Raspberry Pi](#raspberry-pi)
+Raspberry Pi is a single board computer based on the Linux operating system developed by the Raspberry Pi Foundation in the UK for educational purposes.  
+
+#### [Raspberry Pi Zero W](#raspberry-pi-zero-w)
+The Raspberry Pi Zero is a compact computer that's smaller in size and lower in price while retaining the functionality of a traditional Raspberry Pi.
+
+![](/assets/images/edu/engineer/kit2/raspberry_pi_zero_port.png)
+> Raspberry Pi Zero W Features
+
+- `40 Pin GPIO Port`: General Purpose Input/Output pins on the Raspberry Pi. 
+- `Broadcom BCM2835`: The Broadcom processor used in Raspberry Pi Zero
+- `CSI Camera Connector`: Connector for the Raspberry Pi camera module.
+- `Micro USB 5V Power Input`: 5 V Power Input via Micro USB cable.
+- `Micro USB Data Port`: Port for a peripheral device (Mouse or Keyboard) using USB HUB.
+- `Mini-HDMI 1080P Video & Audio Output`: Mini-HDMI port is used to output a monitor & audio. 
+- `MicroSD Card`: MicroSD card slot is used to install a provided image file in.
+
+#### [Raspberry Pi Camera Module](#raspberry-pi-camera-module)
+Raspberry Pi Camera can be connected with Raspberry Pi and can perform various functions as face and color recognition, line detection, and video streaming.  
+
+![](/assets/images/edu/engineer/kit2/raspberry_pi_cam_01.png)
+> Raspberry Pi Camera Module
+
+![](/assets/images/edu/engineer/kit2/raspberry_pi_cam_02.png)
+> Raspberry Pi Zero W with the Camera Module.
+
+<!-- 
+**How to connect the camera module to Raspberry Pi Zero W?**
+1. Turn off CM-550.
+2. Connect the camera module to `CSI Camera Connector`.
+3. Use the exclusive USB cable, and 전용 USB 케이블을 사용하여, CM-550를 Raspberry Pi Zero W의 `Micro USB Data Port`에 연결하세요.
+
+**주의**: CM-550을 `Micro USB 5V Power Input` 단자에 연결 시, 정상동작 하지 않습니다.
+{: .notice--warning}
+ -->
+
+#### [How Raspberry Pi Zero can be connected to CM-550 controller?](#how-raspberry-pi-zero-can-be-connected-to-cm-550-controller)
+
+![](/assets/images/edu/engineer/kit2/raspberry_pi_zero_connection.png)
+
+**NOTE**: After you turn on the controller wait for 70 seconds to boot Raspberry Pi. Once booting is
+completed yellow led light is turned on and can hear a sound.
+{: .notice--info}
+
+### [Actuator](#actuator)
+
+#### [XL430-W250-T](#xl430-w250-t)
+The DYNAMIXEL XL430-W250-T is a smart actuator designed for robot applications.
+The XL430-W250-T offers various control modes such as speed, position, extended position(multi-turn) and PWM and is capable of generating 1.4 N.m torque at 11.0 V.
+
+![](/assets/images/dxl/x/xl430_product_new.png)
+
+**[XL430-W250-T e-Manual]{: .blank}**
 {: .notice}
 
 ### [2XL430-W250 DYNAMIXEL](#2xl430-w250-dynamixel)
-
-![](/assets/images/edu/engineer/kit1/2xl430_intro.png)
-
 **2XL430-W250** is a ground breaking DYNAMIXEL that allows to control **2 axis(2 DOF)** with a single module. In order to control 2 axis at the same time, each axle is assigned with different ID while sharing an identical Baudrate. Since the Control Table for each axle is separated except the Baudrate, 2XL can be applied in various applications.  
 
 The usage is identical to other DYNAMIXEL's, but be aware that Firmware Recovery will reset both axis to factory settings.
 
-| Item                   | Specifications                                            |
-|:-----------------------|:----------------------------------------------------------|
-| MCU                    | {{ site.data.dxl_x_info.2xl430-w250.mcu }}                |
-| Position Sensor        | {{ site.data.dxl_x_info.2xl430-w250.encoder }}            |
-| Motor                  | {{ site.data.dxl_x_info.2xl430-w250.motor }}              |
-| Baud Rate              | {{ site.data.dxl_x_info.2xl430-w250.baudrate }}           |
-| Control Algorithm      | {{ site.data.dxl_x_info.2xl430-w250.control }}            |
-| Resolution             | {{ site.data.dxl_x_info.2xl430-w250.resolution }}         |
-| Operating Modes        | {{ site.data.dxl_x_info.2xl430-w250.mode_en }}            |
-| Weight                 | {{ site.data.dxl_x_info.2xl430-w250.weight }}             |
-| Dimensions (W x H x D) | {{ site.data.dxl_x_info.2xl430-w250.dimensions }}         |
-| Gear Ratio             | {{ site.data.dxl_x_info.2xl430-w250.gearratio }}          |
-| Stall Torque           | {{ site.data.dxl_x_info.2xl430-w250.stalltorque }}        |
-| No Load Speed          | {{ site.data.dxl_x_info.2xl430-w250.noloadspeed }}        |
-| Operating Temperature  | {{ site.data.dxl_x_info.2xl430-w250.temperature }}        |
-| Input Voltage          | {{ site.data.dxl_x_info.2xl430-w250.voltage_en }}         |
-| Command Signal         | {{ site.data.dxl_x_info.2xl430-w250.command }}            |
-| Protocol Type          | {{ site.data.dxl_x_info.2xl430-w250.protocoltype }}       |
-| Physical Connection    | {{ site.data.dxl_x_info.2xl430-w250.physicalconnection }} |
-| ID                     | {{ site.data.dxl_x_info.2xl430-w250.id }}                 |
-| Feedback               | {{ site.data.dxl_x_info.2xl430-w250.feedback }}           |
-| Part Material          | {{ site.data.dxl_x_info.2xl430-w250.material }}           |
-| Standby Current        | {{ site.data.dxl_x_info.2xl430-w250.standbycurrent }}     |
+![](/assets/images/edu/engineer/kit1/2xl430_intro.png)
 
-**[2XL430-W250 eManual]{: .blank}**
+**[2XL430-W250 e-Manual]{: .blank}**
+{: .notice}
+
+### [LED Module](#led-module)
+The R / B LED board, which can control colors (red, blue and violet) and light intensity, can be attached to the robot's appearance to give a colorful LED effect or to distinguish teams by LED color in competitions.  
+
+![](/assets/images/edu/engineer/kit2/led_board_01.png)
+> LED Module
+
+![](/assets/images/edu/engineer/kit2/led_board_02.png)
+> Stickers for LED Module
+
+![](/assets/images/edu/engineer/kit2/led_board_03.png)
+> LED Module Equipped for MAX-E2
+
+### [DMS-80](#dms-80)
+DMS-80(Distance Measuring Sensor) is a sensor to detect the distance using infrared sensor.
+Different to the common infrared sensor, the DMS sensor is rarely affected by the color of the
+refelctor and detection distance can be extended up to 10 to 80 cm  
+
+![](/assets/images/edu/engineer/kit2/dms.png)
+
+**[DMS-80 e-Manual]{: .blank}**
+{: .notice}
+
+### [Servo Motor](#servo-motor)
+An Actuator is often used for motion control in applications which require an apparatus to rotate at a certain angle or to move at a specific position. DYNAMIXEL can offer various operating modes, of which the wheel based rotational movement as well as precise position
+for joint movement are the most popular.  
+
+![](/assets/images/parts/motor/servo_motor_product.jpg)
+
+**[Servo Motor e-Manual]{: .blank}**
 {: .notice}
 
 ## [Cautions](#cautions)
@@ -123,7 +185,6 @@ The usage is identical to other DYNAMIXEL's, but be aware that Firmware Recovery
 9. Do not impact or poke the robot with sharp objects.
 {% endcapture %}
 <div class="notice--danger">{{ eng_kit1_danger1 | markdownify }}</div>
-
 
 ### [Precautions on Use](#precautions-on-use)
 
@@ -214,3 +275,9 @@ Both connectors are linked to supply power and communication to the module. Plea
 Through hole wiring method helps to increase the durability of cable and to simplify cable assembly.  
 It is not a mandatory and it may require more time to replace the cable afterward.
 {: .notice--info}
+
+[XL430-W250-T e-Manual]: /docs/en/dxl/x/xl430-w250/
+[CM-550 e-Manual]: /docs/en/parts/controller/cm-550/
+[2XL430-W250 e-Manual]: /docs/en/dxl/x/2xl430-w250/
+[DMS-80 e-Manual]: /docs/en/parts/sensor/dms-80/
+[Servo Motor e-Manual]: /docs/en/parts/motor/servo_motor/ 

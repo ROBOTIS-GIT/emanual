@@ -131,7 +131,7 @@ PC로 작성한 예제 또는 다운로드 받은 예제를 제어기에 다운�
 
 #### [데모 화면 소개](#데모-화면-소개)
 
-![](/assets/images/edu/engineer/kit2/commando_demo.png)
+![](/assets/images/edu/engineer/kit2/commando_demo_kr.png)
 
 `메뉴 버튼` : 데모 / 조종 / 스트리밍 / 로봇 점검 모드 등을 선택해 변경할 수 있습니다.  
 `모드 버튼` : 전/후/좌/우 이동 및 속도 설정 버튼으로 로봇을 조종할 수 있습니다  
@@ -147,9 +147,18 @@ PC로 작성한 예제 또는 다운로드 받은 예제를 제어기에 다운�
 
 #### 옵션메뉴
 
+<!-- 
 |                        아이콘                         | 메뉴 설명                                                                                                                                                                                              |
 |:-----------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ![](/assets/images/edu/engineer/kit1/icon_remote.png) | **REMOTE : 조종 모드** <br> Commando 로봇을 조종하는 모드이며 로봇의 이동 및 방향 전환, 카메라 등을 제어하는 명령을 사용할 수 있습니다.<br>WHEEL SPEED를 조정하면 로봇의 이동속도를 변경할 수 있습니다 |
+| ![](/assets/images/edu/engineer/kit1/icon_remote.png) | **REMOTE : 조종 모드** <br> Commando 로봇을 조종하는 모드이며 로봇의 이동 및 방향 전환, 카메라 등을 제어하는 명령을 사용할 수 있습니다.<br>WHEEL SPEED를 조정하면 로봇의 이동속도를 변경할 수 있습니다 | 
+-->
+
+![](/assets/images/edu/engineer/kit1/icon_remote.png)
+
+**REMOTE : 조종 모드** <br> Commando 로봇을 조종하는 모드이며 로봇의 이동 및 방향 전환, 카메라 등을 제어하는 명령을 사용할 수 있습니다.<br>WHEEL SPEED(바퀴 속도)를 조정하면 로봇의 이동속도를 변경할 수 있습니다
+
+![](/assets/images/edu/engineer/kit2/commando_control_kr.png)
+> Commando 조종 모드 화면
 
 ### [Scorpi](#scorpi)
 
@@ -157,7 +166,7 @@ PC로 작성한 예제 또는 다운로드 받은 예제를 제어기에 다운�
 
 #### [Scorpi 데모 화면 소개](#scorpi-데모-화면-소개)  
 
-![](/assets/images/edu/engineer/kit2/scorpi_demo.png)
+![](/assets/images/edu/engineer/kit2/scorpi_demo_kr.png)
 
 `메뉴 버튼` : 조종 / 제스처 / 데모 / 로봇 점검 모드 등을 선택할 수 있습니다.  
 `모드 버튼` :
@@ -171,47 +180,23 @@ PC로 작성한 예제 또는 다운로드 받은 예제를 제어기에 다운�
 | ![](/assets/images/edu/engineer/kit1/icon_remote.png)  | **REMOTE : 조종 모드** <br>Scorpi 로봇을 조종하는 모드이며 로봇의 이동 및 방향 전환, 속도 변경과 로봇의 꼬리 및 집게를 사용하는 다양한 모션들을 동작시킬 수 있습니다. |
 | ![](/assets/images/edu/engineer/kit2/icon_gesture.png) | **GESTURE : 제스처 모드** <br>스마트기기의 기울기, 흔들림 센서 등을 사용해 기기를 기울이거나 특정 동작을 통해 Scorpi 로봇의 이동 및 공격 등의 명령을 수행합니다.      |
 
-![](/assets/images/edu/engineer/kit2/scorpi_control.png)  
+![](/assets/images/edu/engineer/kit2/scorpi_control_kr.png)  
   > 조종 모드 화면
 
 ![](/assets/images/edu/engineer/kit2/scorpi_gesture.png)  
   > 제스쳐 모드 화면  
 
+## [로봇 설정하기](#로봇-설정하기)
 
 ### [모터 조립확인](#모터-조립확인)
-로보티즈 엔지니어에 사용된 다이나믹셀 ID 확인 및 작동 상태를 체크하는 기능입니다.
-
-1. 각 예제를 선택한 후 메뉴의 옵션에서 `MOTOR`를 선택하여 점검합니다  
-![](/assets/images/edu/engineer/kit1/engineer_app_motor.png)
-
-2. 화면에서 ID 번호를 선택하면 선택된 ID의 LED가 켜지고 중심 위치에서 좌우로 조금씩 움직입니다.  
-![](/assets/images/edu/engineer/kit1/engineer_app_motor_2.png)
-
+로보티즈 엔지니어에 사용된 다이나믹셀 ID 확인 및 작동 상태를 체크하는 기능입니다.  
+이 기능은 엔지니어 키트 1과 동일합니다, 키트 1의 [모터 조립확인](/docs/kr/edu/engineer/kit1/#모터-조립확인)을 참고하세요.
 
 ### [모터 오프셋 설정](#모터-오프셋-설정)
 로보티즈 엔지니어에 사용된 다이나믹셀의 자세나 위치 값의 보정이 필요할 때 사용하는 기능입니다.  
 오프셋 기능을 통해 보정된 값은 로봇의 전원을 끄더라도 저장됩니다.  
-오프셋 기능을 숙지한 상태에서 미세하게 조정해야 하며 잘못된 값을 사용시 예제 동작이 잘 안되거나 로봇이 파손될 수 있습니다.
-
-1. 각 예제를 선택한 후 메뉴의 옵션에서 `OFFSET`을 선택합니다.  
-![](/assets/images/edu/engineer/kit1/engineer_app_motor_offset.png)
-
-2. 오프셋 값을 보정하려는 ID를 선택하면 아래와 같은 팝업창이 나타납니다.  
-![](/assets/images/edu/engineer/kit1/engineer_app_motor_offset_2.png)
-
-  - `+ / -` : ID 값을 증가시키거나 감소시킴  
-  - `Torque On / Off` : 다이나믹셀의 토크를 켜거나 끄기  
-  - `OK / CANCEL` : 오프셋 조정 값을 저장하거나 취소하기
-
-3. `OK`를 눌러 저장하면 아래와 같은 확인 창이 나타납니다. 한 번 더 `OK`를 누르면 값이 저장되고 로봇에 반영됩니다.  
-![](/assets/images/edu/engineer/kit1/engineer_app_motor_offset_3.png)
-
-4. 오프셋을 초기화 하거나 저장된 값을 불러오는 기능을 사용할 수 있습니다.  
-![](/assets/images/edu/engineer/kit1/engineer_app_motor_offset_4.png)
-
-  - `Reset Offset` : 선택시 팝업창이 나타나며 `OK`를 클릭하면 모든 ID의 오프셋을 `0`으로 초기화 합니다.  
-  - `Initial Pose` : 최근에 저장된 오프셋 값을 불러오는 명령입니다. 관절을 잘못된 값으로 조정하였을 경우 저장된 값을 불러옵니다.
-
+오프셋 기능을 숙지한 상태에서 미세하게 조정해야 하며 잘못된 값을 사용시 예제 동작이 잘 안되거나 로봇이 파손될 수 있습니다.  
+이 기능은 엔지니어 키트 1과 동일합니다, 키트 1의 [모터 조립확인](/docs/kr/edu/engineer/kit1/#모터-오프셋-설정)을 참고하세요.
 
 # [튜토리얼](#튜토리얼)
 
