@@ -178,132 +178,129 @@ ID 200 will be assigned to OpenCM9.04 in the factory default firmware.
 OpenCM9.04のブロック図を以下に示します。OpenCM9.04の回路図は、32bit Cortex-M3コアのSTM32F103CBマイクロコントローラに基づいています。  
 電源回路図は、5Vと3.3Vのレギュレータを介してカスケードするように設計されています。5VはTTLバスに、3.3Vはマイクロコントローラ、5ピンポート、4ピン通信ポートに供給されます。  
 OpenCM9.04はUSB2.0 FSに対応しています。Micro-Bコネクタは、プログラムのダウンロードやデータ通信を行うために使われます。  
-USARTチャンネル1はDYNAMIXEL TTLバスに割当てられているため、ピン 11(TX1)とピン 12(RX1)を同時に使用することはできません。  
-USARTチャンネル1はDYNAMIXEL TTLバスに登録されており、ピン11(TX1)と12(RX1)を同時に使用することはできません。
-
+USARTチャンネル1はDYNAMIXEL TTLバスに割当てられているため、ピン 11(TX1)とピン 12(RX1)を併用することはできません。  
+USARTチャンネル1はDYNAMIXEL TTLバスに登録されており、ピン11(TX1)と12(RX1)を併用することはできません。
+ 
 ![](/assets/images/parts/controller/opencm904/opencm904_01.png)
 
 
-## [Layout/Pin Map](#layoutpin-map)
+## [レイアウト/ピン配置](#layoutpin-map)
 
 ![](/assets/images/parts/controller/opencm904/opencm904_02.png)
 
-### [Power Switch](#power-switch)
-Switch used to control the power supplied to the board and DYNAMIXEL on/off. (Note: the board is always powered ON when USB cable is connected.)
-### [Serial Battery Socket](#serial-battery-socket)
-Connects two LBS-04 Lithium-ion battery.
+### [電源スイッチ](#power-switch)
+このスイッチは、ボードへの電源供給とDYNAMIXELのON/OFFを制御するためのスイッチです。(注: USB ケーブルが接続されているときは、ボードの電源は常にオンになっています)  
+### [シリアルバッテリーソケット](#serial-battery-socket)
+LBS-04リチウムイオン電池2本を接続します。  
 
-**CAUTION** : Do NOT charge the battery while its connected to the board because the user will short the circuit. Be sure to disconnect from the board when charging the battery.
-{: .notice--warning}
+**注意** : 回路をショートさせてしまうため、基板に接続されている間はバッテリーを充電しないでください。バッテリーを充電する際には、必ず基板から切り離してください。  
 
-### [DYNAMIXEL TTL 3 PIN](#dynamixel-ttl-3-pin)
-Port for daisy chaining DYNAMIXEL's that use 3-pin cables (DYNAMIXEL TTL Bus).
+### [DYNAMIXEL TTL 3ピン](#dynamixel-ttl-3-pin)
+3ピンケーブル(DYNAMIXEL TTL Bus)を使用するDYNAMIXELをデイジーチェーン接続するためのポートです。  
 
-{% include en/dxl/pinout_warning.md %}
+**警告** : **ピンアウトを確認してください** DYNAMIXELのピンアウトはコネクタメーカーのピンアウトと異なる場合があります。
 
-### [Communication Port](#communication-port)
-Used from wired/wireless communication using peripheral devices (i.e. [BT-410], [BT-210], [BT-110A], [ZIG-110A], [LN-101], etc). OpenCM9.04’s 4-pin communication port uses Serial2(USART2).
+### [通信ポート](#communication-port)
+周辺機器（BT-410、BT-210、BT-110A、ZIG-110A、LN-101など）を使う有線/無線通信から使用します。OpenCM9.04 の 4 ピン通信ポートは、Serial2(USART2)を使用しています。　
 
 ![](/assets/images/parts/controller/opencm904/opencm9.04_1-1.jpg)
 
-> 4-pin communication port pinmap
+> 4ピン通信ポート ピン配置
 
 ![](/assets/images/parts/controller/opencm904/opencm904_04.png)
 
-> Example : Wireless communication between OpenCM9.04 and a smartphone
+> 例：OpenCM9.04とスマートフォン間の無線通信
 
 ![](/assets/images/parts/controller/opencm904/opencm904_05.png)
 
-> Example : Bluetooth communication using OpenCM9.04 and RC100
+> 例：OpenCM9.04とRC100を使用したBluetooth通信  
 
 ![](/assets/images/parts/controller/opencm904/opencm904_06.png)
 
-> Example : Zigbee communication using OpenCM9.04 and RC100
+> 例：OpenCM9.04とRC100を使用したZigbee通信
 
 ![](/assets/images/parts/controller/opencm904/opencm904_07.png)
 
-> Example : Wired communication using OpenCM9.04 and LN-101
+> 例：OpenCM9.04とLN-101を使用した有線通信
 
-### [User Button](#user-button)
-A button that can be controlled/programmed by the user. Can be used as pin 23 or BOARD_BUTTON_PIN. It can be initialized in setup() as pinMode(23, INPUT_PULLDOWN).  
-If OpenCM9.04 does not download the program, connect the USB cable while holding down the “User Button”. Status LED will stay lit and the download will be initiated.
+### [ユーザーボタン](#user-button)
+ユーザが制御/プログラムできるボタンです。ピン23またはBOARD_BUTTON_PINとして使用できます。setup()でpinMode(23, INPUT_PULLDOWN)として初期化することができます。    
+もし、OpenCM9.04がプログラムをダウンロードできない場合は、「ユーザーボタン」を押しながらUSBケーブルを接続してください。ステータスLEDが点灯したままになり、ダウンロードが開始されます。  
 
 ![](/assets/images/parts/controller/opencm904/opencm904_08.png)
 
-> OpenCM9.04 can enter a “Emergency Recovery Mode” by using the “User button”
+> OpenCM9.04では、「ユーザーボタン」を使用して「緊急復旧モード」に入ることができます。
 
 ### [Ext. ADC Ref Jumper](#ext-adc-ref-jumper)
-Analog Reference voltage can be modified. Please refer to [I/O header section](#io-header).
+アナログ基準電圧の変更ができます。I/Oヘッダーの項目を参照してください。 [I/Oヘッダー](#io-header).
 
-### [Micro-B USB](#micro-b-usb)
-Used to download programs onto OpenCM9.04 and used to communicate with other devices via USB while simultaneously supplying 5V to the board.  
-Upon connecting the battery, 5V power from USB is automatically disconnected and power is supplied from the battery.  
-If excessive current is drawn, internal fuse cuts off the current drawn from the 5V USB connection to protect the user’s PC from damage.
+### [マイクロUSBタイプB](#micro-b-usb)
+OpenCM9.04にプログラムをダウンロードし、USB経由で他のデバイスと通信しながら、同時に5Vを基板に供給するために使用します。  
+バッテリーを接続すると、USBからの5V電源は自動的に切断され、バッテリーから電源が供給されます。
+過大な電流が流れた場合は、内部のヒューズが5VのUSB接続からの電流を遮断し、ユーザーのPCを破損から保護します。  
 
 ![](/assets/images/parts/controller/opencm904/opencm904_09.png)
 
-### [Status LED]
-LED used to test OpenCM9.04’s program. The LED turns ON when Pin 14 or BOARD_LED_PIN is HIGH and turns OFF when it’s LOW. PWM control is possible.
+### [ステータスLED]
+OpenCM9.04のプログラムをテストするためのLEDです。14番ピンまたはBOARD_LED_PINがHIGHの時に点灯し、LOWの時に消灯します。PWM制御が可能です。  
 
 ![](/assets/images/parts/controller/opencm904/opencm904_10.png)
 
-> Status LED Position
+> ステータスLEDの位置
 
-### [Reset Button](#reset-button)
-Imitates the CPU to reset.
+### [リセットボタン](#reset-button)
+リセットするCPUを模倣します。 
 
-### [JTAG/SWD 4 PIN](#jtagswd-4-pin)
-Used to connect ST-LINK or other In-Circuit Debugger/Programmer.  
-JTAG/SWD 4-pin port can be used for various developments by advanced users. ST-LINK connection example is shown below.
-
+### [JTAG/SWD 4ピン](#jtagswd-4-pin)
+ST-LINKやその他のインサーキットデバッガ/プログラマとの接続に使用します。  
+JTAG/SWD 4ピンポートは、上級者の方の様々な開発にご利用いただけます。以下にST-LINKの接続例を示します。  
 ![](/assets/images/parts/controller/opencm904/opencm904_11.png)
 
-> Example: ST-LINK and OpenCM9.04 connection
+> 例：ST-LINKとOpenCM9.04の接続
 
-### [ROBOTIS 5-Pin Port](#robotis-5-pin-port)
-Used to connect ROBOTIS 5-pin devices (modules).
+### [ROBOTIS 5-ピンポート](#robotis-5-pin-port)
+ROBOTISの5ピン-デバイス（モジュール）を接続するために使用します。
 
 ![](/assets/images/parts/controller/opencm904/opencm904_12.png)
 
-> 5-pin port number and instructions
+> 5ピン-ポート番号と手順
 
 ![](/assets/images/parts/controller/opencm904/opencm904_13.png)
 
-> 5-pin cable direction
+> 例：5ピンケーブルの方向
 
-|    5-pin Device Type     | Port 1 | Port 2 | Port 3 | Port 4 |
+|    5-ピン デバイスタイプ     | ポート1 | ポート2 | ポート3 | ポート4 |
 |:------------------------:|:------:|:------:|:------:|:------:|
-|        IR Sensor         |   O    |   X    |   X    |   O    |
-|        DMS Sensor        |   O    |   O    |   O    |   O    |
-|       Gyro Sensor        |   O    |   O    |   O    |   O    |
-|       Touch Sensor       |   O    |   O    |   O    |   O    |
-|       Color Sensor       |   X    |   O    |   O    |   X    |
-|     Magnetic Sensor      |   O    |   O    |   O    |   O    |
-|    Temperature Sensor    |   O    |   O    |   O    |   O    |
-| Passive IR Sensor PIR-10 |   O    |   O    |   O    |   O    |
-|        LED Module        |   X    |   O    |   O    |   X    |
+|        IRセンサー         |   O    |   X    |   X    |   O    |
+|        DMSセンサー        |   O    |   O    |   O    |   O    |
+|       ジャイロセンサー     |   O    |   O    |   O    |   O    |
+|       タッチセンサー       |   O    |   O    |   O    |   O    |
+|       カラーセンサー       |   X    |   O    |   O    |   X    |
+|        磁気センサー       |   O    |   O    |   O    |   O    |
+|        温度センサー       |   O    |   O    |   O    |   O    |
+| Passive IRセンサー PIR-10 |   O    |   O    |   O    |   O    |
+|       LED モジュール      |   X    |   O    |   O    |   X    |
 
-> ROBOTIS sense and LED module compatibility list
+> 例：ROBOTISセンスとLEDモジュールの互換性一覧
 
-### [I/O Header](#io-header)
-OpenCM9.04’s CPU **STM32F103CB** can be accessed via GPIO pins.  
-26 GPIO pins (0~25) are digital input/outputs and operates at 3.3V. Digital input either HIGH(3.3V) or LOW(0V).  
-Digital input’s maximum toggle speed is 18Mhz. (With exception of pin 22 & 23, which has a maximum toggle speed of 2Mhz).  
-Digital pins can only tolerate up to 3.3V; any voltage input greater than 3.3V may damage the OpenCM9.04.  
-5V Tolerant Pin : 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21  
-The maximum current these pins can tolerate is 25mA. (exception: pin 22 & 23 can only tolerate 3mA.)  
-All of OpenCM9.04’s GPIO pins can internally “pull-up” or “pull-down” and can be modified via software. “Pull-up” and “pull-up” resistance is 40K&Omega;(Typical).
-
+### [I/Oヘッダー](#io-header)
+OpenCM9.04のCPU STM32F103CBはGPIOピンを介してアクセスできます。  
+26本のGPIOピン(0～25)はデジタルI/Oで、3.3Vで動作します。デジタル入力はHIGH(3.3V)またはLOW(0V)です。  
+デジタル入力の最大トグル速度は18Mhzです。(ピン22と23を除いて、最大トグル速度は2Mhzです)。  
+デジタルピンは3.3Vまでしか許容できません。3.3Vを超える電圧を入力するとOpenCM9.04が破損する可能性があります。  
+5V耐圧ピン : 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21  
+これらのピンが許容できる最大電流は25mAです。(例外：ピン22と23は3mAまでしか許容できません。)  
+OpenCM9.04のすべてのGPIOピンは内部的に"プルアップ"または"プルダウン"が可能で、ソフトウェアによって変更することができます。"プルアップ"と "プルダウン"の抵抗は40KΩ(標準)です。  
 ![](/assets/images/parts/controller/opencm904/opencm904_14.png)
 
-> OpenCM9.04 GPIO PinMap
+> OpenCM9.04 GPIOピン配置
 
-| Name             | Arduino Pin   |          |
+| 名称             | Arduinoピン |          |
 |:-----------------|:--------------|:---------|
-| Serial/SerialUSB | USB Port      |          |
-| Serial1          | D11, D12      | DXL Port |
-| Serial2          | A4,  A5       |          |
-| Serial3          | D24, D25      |          |
+| シリアル/シリアルUSB | USBポート      |          |
+| シリアル1          | D11, D12      | DXLポート |
+| シリアル2          | A4,  A5       |          |
+| シリアル3          | D24, D25      |          |
 | SPI1             | A1, A6, A7    |          |
 | SPI2             | D19, D20, D21 |          |
 | PWM              | A2 ~ D14      |          |
@@ -311,70 +308,69 @@ All of OpenCM9.04’s GPIO pins can internally “pull-up” or “pull-down” 
 | LED              | D14           |          |
 | EXTI             | A0 ~ D25      |          |
 | I2C              | D24, D25      |          |
-| BUTTON           | D23           |          |
-| 5PIN #1          | D2, D6, D7    |          |
-| 5PIN #2          | D3, D8, D9    |          |
-| 5PIN #3          | D0, D10, D11  |          |
-| 5PIN #4          | D1, D12, D13  |          |
-| 4PIN UART        | D1, D12, D13  | Serial2  |
+| ボタン            | D23           |          |
+| 5ピン #1          | D2, D6, D7    |          |
+| 5ピン #2          | D3, D8, D9    |          |
+| 5ピン #3          | D0, D10, D11  |          |
+| 5ピン #4          | D1, D12, D13  |          |
+| 4ピン UART        | D1, D12, D13  | シリアル2  |
 
-- **Serial(USART)** : 11(TX1), 12(RX1), 4(TX2), 5(RX2), 24(TX3), 25(RX3)
-- **PWM** : 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14
-- **SPI** : 0(SS1), 1(SCK1),6(MISO1) ,7(MOSI1), 18(SS2) ,19(SCK2) ,20(MISO2) ,21(MOSI2)
-- **LED** : 14 (BOARD_LED_PIN is defined as 14)
-- **BUTTON** : 23 (BOARD_BUTTON_PIN is defined as 23)
-- **TWI(I2C)** : 24(SCL2), 25(SDA2)
-- **RST** : Pin connect to the CPU Reset signal.
-- **5V** : outputs 5V when the battery is connected to the board. (Does not output 5V when USB only the USB cable is connected.)
-- **3.3V** : outputs 3.3V when the power is supplied to the board via battery or USB cable.
-- **GND** : GROUND(-) terminal.
-- **A0** : Digital I/O and analog input.
-- **A1** : Digital I/O and analog input. Can be used for SPI channel 1’s SCK clock-pin.
-- **A2** : Digital I/O, analog input, & PWM output.
-- **A3** : Digital I/O, analog input, & PWM output.
-- **A4** : Digital I/O, analog input, & PWM output. Used as USART2(Serial2) channel’s TXD pin and connected to 4-pin communication port’s TX2.
-- **A5** : Digital I/O, analog input, & PWM output. Used as USART2(Serial2) channel’s RXD pin and connected to 4-pin communication RX2.
-- **A6** : Digital I/O, analog input, & PWM output. Can be used as SPI channel 1’s MISO pin.
-- **A7** : Digital I/O, analog input, & PWM output. Can be used as SPI channel 1’s MISO pin.
-- **A8** : Digital I/O, analog input, & PWM output.
-- **A9** Digital I/O, analog input, & PWM output.
-- **D10** : Digital I/O & PWM output.
-- **D11** : Digital I/O & PWM output. USART1’s (Serial1) TX pin. Cannot be simultaneously used with the DYNAMIXEL TTL Bus.
-- **D12** : Digital I/O & PWM output. USART1(Serial1)’s RX pin. Cannot be simultaneously used with the DYNAMIXEL TTL Bus.
-- **D13** : Digital I/O & PWM output.
-- **D14** : Digital I/O & PWM output. Pin connected to the Status LED. It’s pre-defined as BOARD_LED_PIN.
-- **D15** : Digital I/O.
-- **VCC(+)** : +voltage of the board. There are 2 VCC(+) pins. Connected to the + terminal of the battery socket.
-- **GND(-)** :-voltage of the board. There are 2 GND(-) pins. Connected to the + terminal of the battery socket.
-- **TTL** : DYNAMIXEL TTL Bus’s Data line. Used to communicate with 3-pin TTL DYNAMIXEL's.
-- **D** : Relevant to DYNAMIXEL TTL Bus and used to select TX, RX.
-- **X** : DYNAMIXEL TTL Bus’s TX pin.
-- **L** : DYNAMIXEL TTL Bus’s RX pin.
-- **D16** : Digital I/O Pin.
-- **D17** : Digital I/O Pin.
-- **D18** : Digital I/O Pin.
-- **D19** : Digital I/O Pin. Can be used for SPI channel 2’s SCK clock pin.
-- **D20** : Digital I/O Pin. Can be used for SPI channel 2’s MOSI pin.
-- **D21** : Digital I/O Pin. Can be used for SPI channel 2’s MOSI pin.
-- **D22** : Digital I/O Pin. Maximum output current is 3mA and maximum toggle speed is 2Mhz.
-- **D23** : Digital I/O Pin. It’s connected to User Button. If the power is supplied while User Button is pressed, the board initiates Emergency Recovery (Download) Mode. Maximum output current is 3mA and maximum toggle speed is 2Mhz.
-- **D24** : Digital I/O Pin. Can be used as I2C channel 2’s SCL pin or USART3(Serial3)’s TX pin.
-- **D25** : Digital I/O Pin. Can be used as I2C channel 2’s SDA pin or USART3(Serial3)’s RX pin.
-- **5V** : 5V output pin. JP2 jumper can be modified to connect to AREF pin and change the default voltage to 5V.
-- **AREF** : Connect to CPU’s Analog Reference pin. Voltage can be modified from 3.3V by changing the JP2 jumper (Maximum 5V). Refer to STM32F103CB datasheet for specifications.)
+- **シリアル(USART)** : 11(TX1), 12(RX1), 4(TX2), 5(RX2), 24(TX3), 25(RX3)  
+- **PWM** : 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14  
+- **SPI** : 0(SS1), 1(SCK1), 6(MISO1), 7(MOSI1), 18(SS2), 19(SCK2), 20(MISO2), 21(MOSI2)  
+- **LED** : 14(BOARD_LED_PINは14として定義されています)  
+- **ボタン** : 23(BOARD_BUTTON_PINは23として定義されています)  
+- **TWI(I2C)** : 24(SCL2), 25(SDA2)  
+- **RST** : CPUのリセット信号に接続するピンです。  
+- **5V** : バッテリーを基板に接続した時に5Vを出力します。(USBケーブルのみを接続した場合は5Vを出力しません)  
+- **3.3V** : バッテリーもしくはUSBケーブルで基板に電源を供給した場合は3.3Vを出力します。  
+- **GND** : GROUND(-)端子です。  
+- **A0** : デジタルI/O、アナログ入力です。  
+- **A1** : デジタルI/O、アナログ入力です。SPIチャンネル1のSCKクロックピンに使用できます。  
+- **A2** : デジタルI/O、アナログ入力、PWM出力です。  
+- **A3** : デジタルI/O、アナログ入力、PWM出力です。  
+- **A4** : デジタルI/O、アナログ入力、PWM出力です。USART2(Serial2)チャンネルのTXDピンとして使用し、4ピン通信ポートのTX2に接続します。  
+- **A5** : デジタルI/O、アナログ入力、PWM出力です。USART2(Serial2)チャンネルのRXDピンとして使用し、4ピン通信RX2に接続されています。  
+- **A6** : デジタルI/O、アナログ入力、PWM出力です。SPIチャンネル1のMISOピンとして使用できます。  
+- **A7** : デジタルI/O、アナログ入力、PWM出力です。SPIチャンネル1のMISOピンとして使用できます。  
+- **A8** : デジタルI/O、アナログ入力、PWM出力です。  
+- **A9** : デジタルI/O、アナログ入力、PWM出力です。  
+- **D10** : デジタルI/O、アナログ入力、PWM出力です。  
+- **D11** : デジタルI/O、PWM出力です。USART1(Serial1)のTXピンです。DYNAMIXEL TTLバスとの併用はできません。  
+- **D12** : デジタルI/O、PWM出力です。USART1(Serial1)のRXピン。DYNAMIXEL TTLバスとの併用はできません。  
+- **D13** : デジタルI/O、PWM出力です。  
+- **D14** : デジタルI/O、PWM出力です。ステータスLEDに接続されているピンです。それは、BOARD_LED_PINとして定義されています。  
+- **D15** : デジタルI/Oです。  
+- **VCC(+)** : 基板の+電圧です。VCC(+)ピンが2つあります。バッテリーソケットの+端子に接続されています。  
+- **GND(-)** : ボードの-電圧です。2本のGND(-)ピンがあります。バッテリーソケットの+端子に接続します。  
+- **TTL** : DYNAMIXEL TTLバスのデータライン。3ピンTTL DYNAMIXELとの通信に使用します。  
+- **D** : DYNAMIXEL TTLバスに関連し、TX、RXを選択するために使用されます。  
+- **X** : DYNAMIXEL TTLバスのTXピン。  
+- **L** : DYNAMIXEL TTLバスのRXピン。 
+- **D16** : デジタルI/Oピンです。  
+- **D17** : デジタルI/Oピンです。  
+- **D18** : デジタルI/Oピンです。  
+- **D19** : デジタルI/Oです。SPIチャンネル2のSCKクロックピンに使用できます。  
+- **D20** : デジタルI/Oピンです。SPIチャンネル2のMOSIピンに使用できます。  
+- **D21** : デジタルI/Oピンです。SPIチャンネル2のMOSIピンに使用できます。  
+- **D22** : デジタルI/O品です。最大出力電流は3mA、最大トグル速度は2Mhzです。  
+- **D23** : デジタルI/Oピンです。ユーザーボタンに接続されています。ユーザーボタンが押されている間に電源が供給されると、ボードは緊急リカバリー(ダウンロード)モードを開始します。最大出力電流は3mAで、最大トグル速度は2Mhzです。  
+- **D24** : デジタルI/Oピンです。I2Cチャンネル2のSCLピンもしくは、USART3(Serial3)のTXピンとして使用できます。  
+- **D25** : デジタルI/Oピンです。I2Cチャンネル2のSDAピンまたはUSART3(Serial3)のRXピンとして使用できます。  
+- **5V** : 5V出力ピンです。JP2ジャンパーを変更してAREFピンに接続し、デフォルトの電圧を5Vに変更することができます。  
+- **AREF** : CPU のアナログリファレンスピンに接続します。JP2ジャンパを変更することで、3.3Vから電圧を変更することができます（最大5V）。仕様はSTM32F103CBのデータシートを参照してください。  
 
 ![](/assets/images/parts/controller/opencm904/opencm904_15.png)
 
-> JP2 jumper location and instructions
+> JP2ジャンパーの位置と手順
 
 ![](/assets/images/parts/controller/opencm904/opencm904_16.png)
 
-> Example: Changing default Analog Reference voltage(AREF) to 5V by modifying JP2
+> 例：JP2を修正してデフォルトのアナログ基準電圧(AREF)を5Vに変更する。
 
-**CAUTION** : Check the pin supporting up to 5V once Analog Reference (AREF) has been modified to 5V.
-{: .notice--warning}
+**注意** : アナログリファレンス(AREF)を5Vに修正した場合は、5Vまで対応しているかどうかを確認してください。
 
-## [Pin Name Definition](#pin-name-definition)
+## [ピンネームの定義](#pin-name-definition)
 
 ```c++
 #define LED_BUILTIN             14
@@ -399,7 +395,7 @@ All of OpenCM9.04’s GPIO pins can internally “pull-up” or “pull-down” 
 #define BOARD_SPI2_SCK_PIN      19  //D27 PB13
 ```
 
-## [Pin Function Definition](#pin-function-definition)
+## [ピン機能の定義](#pin-function-definition)
 
 ```c++
 extern const Pin2PortMapArray g_Pin2PortMapArray[]=
