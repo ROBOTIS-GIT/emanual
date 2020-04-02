@@ -13,8 +13,6 @@ product_group: kit2
 page_number: 1
 ---
 
-<div style="counter-reset: h1 0"></div>
-
 # [개요](#개요)
 
 **로보티즈 엔지니어** 는 스마트 기기를 활용한 AI 기술이 적용된 새로운 개념의 차세대 로봇입니다.  

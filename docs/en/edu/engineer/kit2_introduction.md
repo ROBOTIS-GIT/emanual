@@ -9,11 +9,12 @@ permalink: /docs/en/edu/engineer/kit2_introduction/
 sidebar:
   title: ENGINEER Kit2
   nav: "kit2"
+page_number: 1
 ---
 
 # [Introduction](#introduction)
 
-![](/assets/images/edu/engineer/kit1/enginner_main.png)
+![](/assets/images/edu/engineer/kit2/temp/temp_parts_list_kr.png)
 
 **ROBOTIS ENGINEER** is the next generation robot that adopts AI technology based on smart devices.  
 

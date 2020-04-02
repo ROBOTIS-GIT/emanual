@@ -9,13 +9,16 @@ permalink: /docs/en/edu/engineer/kit2_quickstart/
 sidebar:
   title: ENGINEER Kit2
   nav: "kit2"
+page_number: 2
 ---
+
+<div style="counter-reset: h1 1"></div>
 
 # [Quick Start](#quick-start)
 
 ## [App Installation](#app-installation)
 
-To install apps, see [App Installation](/docs/en/edu/engineer/kit1/#app-installation)
+ENGINEER KIT2 uses the same software (R+Task 3.0) and ENGIEER app as KIT 1's. If these app and software are not installed on your PC or a smart device, see [App Installation](/docs/en/edu/engineer/kit1/#app-installation).
 
 ## [Download Examples](#download-examples)
 - CM-550 controller is initially programmed with Kit1 example.  
@@ -41,6 +44,8 @@ To install apps, see [App Installation](/docs/en/edu/engineer/kit1/#app-installa
 1. [How to Connect CM-550 Controller to PC]{: .popup}
 2. [How to Download Task Example via PC]{: .popup}
 3. [How to Download Motion Example via PC]{: .popup}
+4. [How to Download Python Example Source Code]{: .popup}
+
 
 ### [Download from Smart Device](#download-from-smart-device)
 
@@ -65,10 +70,10 @@ Select the menu button on the top right corner of the app for app configuration.
 ![](/assets/images/edu/engineer/kit1/engineer_app_configuration.png)
 
 `Connect to Robot` : Select Bluetooth device to connect.  
-`Reset Example` : Reset selected examples.  
-`Range of Gesture Error Setting` : Configure the error margin of the gesture.  
-`Display Example Image on Gallery` : Show example images in the smart device gallery.  
-`Scanning Media` : Refresh the smart device files/folders when not detected from PC.  
+`Reset Example` : Modified contents (including code / images) of selected examples will be deleted.
+`Range of Gesture Error Setting` : Set the sensitivity level of the gesture command.  
+`Display Example Image on Gallery` : Some smart devices may not support this feature.
+`Scanning Media` : Update files and folders that are not recognized from the PC. Reconnect PC after the scan. 
 `Version Information` : Display the current app version.  
 
 ## [Pairing Bluetooth](#pairing-bluetooth)
@@ -118,7 +123,7 @@ Run `ROBOTIS ENGINEER` Kit2 App and select **MAX-E2**.
 > MOTOR Inspection
 
 ![](/assets/images/edu/engineer/kit2/kit2_offset_layout.png)
-> Adjusting OFFSET  
+> OFFSET Adjustment  
 
 **NOTE** : See [Setting Up the Robot](#setting-up-the-robot) to change configuration data of motors and its offset.     
 {: .notice--info}
@@ -134,7 +139,7 @@ Run `ROBOTIS ENGINEER` Kit2 App and select **Commando**.
 `Menu Button` : Selecting Demo/ Control/ Streaming/ Robot inspection modes.  
 `Mode Button` :
 - `LINE MODE` identifies the colors of the lines by Raspberry Pi Camera and moves accordingly. Line colors can be choosen from `COLOR SELECTION`.
-- `MARKER MODE` uses Raspberry Pi Camera to identify markers in order then by `START MARKER` the robot moves accordingly. `DEBUGGING MODE` identifies motions by loading time and [RUN MODE]
+- `MARKER MODE` uses Raspberry Pi Camera to identify markers in order then by `START MARKER` the robot moves accordingly. `DEBUGGING MODE` identifies motions by loading time and `RUN MODE`
 connects motions without loading time.
 
 {% capture commando_notice %}
@@ -191,9 +196,13 @@ This function is used to adjust the pose of the robot by calibrating offset valu
 Configured offset value will be saved on each DYNAMIXEL.  
 Please perform an offset adjustment with a thorough understanding as it may be the cause of unstable motions or hardware damages when improperly configured.  
 
-The way of configurating its value is the same as ENGINEER KIT 1's. Refer to ENGINEER kit1's [DYNAMIXEL Offset](/docs/en/edu/engineer/kit2_quickstart/#dynamixel-offset) manual. 
+The way of configuring its value is the same as ENGINEER KIT 1's. Refer to ENGINEER kit1's [DYNAMIXEL Offset](/docs/en/edu/engineer/kit2_quickstart/#dynamixel-offset) manual. 
 
-# [Study Materials](#study-materials)
+# [Advanced Courses](#advanced-courses)
+
+Customize your ROBOTIS ENGINEER KIT with additional resources.
+
+## [Training Materials, Additional Examples, 3D Printing](#training-materials-additional-examples-3d-printing)
 
 {% capture edu_application %}
 Additional course materials can be downloaded from below link.
@@ -202,7 +211,7 @@ Additional course materials can be downloaded from below link.
 {% endcapture %}
 <div class="notice--info">{{ edu_application | markdownify }}</div>
 
-![](/assets/images/edu/engineer/kit1/engineer_edu_metarials.png)
+![](/assets/images/edu/engineer/kit2/engineer_edu_metarials_kit2.png)
 
 [CM-550 eManual]: /docs/en/parts/controller/cm-550/
 [2XL430-W250 eManual]: /docs/en/dxl/x/2xl430-w250/
@@ -216,3 +225,4 @@ Additional course materials can be downloaded from below link.
 [How to Connect CM-550 Controller to Mobile]: /docs/en/popup/engineer/connect_controller_mobile
 [How to Download Task Example via Mobile]: /docs/en/popup/engineer/task_download_mobile
 [How to Download Motion Example via Mobile]: /docs/en/popup/engineer/motion_download_mobile
+[How to download Python Example Source Code]: /docs/en/popup/engineer/python_download_pc

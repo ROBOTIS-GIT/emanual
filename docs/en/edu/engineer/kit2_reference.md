@@ -9,7 +9,10 @@ permalink: /docs/en/edu/engineer/kit2_reference/
 sidebar:
   title: ENGINEER Kit2
   nav: "kit2"
+page_number: 3
 ---
+
+<div style="counter-reset: h1 2"></div>
 
 # [References](#references)
 

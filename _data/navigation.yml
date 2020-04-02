@@ -14443,11 +14443,7 @@ kit2:
       - title: "Assembly Precautions"
         titlekr: "조립시 주의사항"
         url: /edu/engineer/kit2_introduction/#assembly-precautions
-        urlkr: /edu/engineer/kit2_introduction/#조립시-주의사항
-    - title: "Download Software"
-      titlekr: "소프트웨어 다운로드"
-      url: /edu/engineer/kit2_quickstart/#download-software
-      urlkr: /edu/engineer/kit2_quickstart/#소프트웨어-다운로드        
+        urlkr: /edu/engineer/kit2_introduction/#조립시-주의사항     
   - title: "Quick Start"
     titlekr: "작동하기"
     url: /edu/engineer/kit2_quickstart/#quick-start
@@ -14491,20 +14487,16 @@ kit2:
         titlekr: "Scorpi"
         url: /edu/engineer/kit2_quickstart/#scorpi
         urlkr: /edu/engineer/kit2_quickstart/#scorpi
-  - title: "Tutorials"
-    titlekr: "튜토리얼"
-    url: /edu/engineer/kit2_quickstart/#tutorials
-    urlkr: /edu/engineer/kit2_quickstart/#튜토리얼
-  - title: "Study Materials"
+  - title: "Advanced Courses"
     titlekr: "교육자료 다운로드"
-    url: /edu/engineer/kit2_quickstart/#study-materials
+    url: /edu/engineer/kit2_quickstart/#advanced-courses
     urlkr: /edu/engineer/kit2_quickstart/#교육자료-다운로드
   - title: "References"
     titlekr: "참고자료"
     url: /edu/engineer/kit2_reference/#references
     urlkr: /edu/engineer/kit2_reference/#참고자료
     children:
-    - title: "How to use a video streaming with Kit2"
+    - title: "BLE Signal Setting"
       titlekr: "제어기 BLE 신호 세기 설정"
       url: /edu/engineer/kit2_reference/#ble-signal-setting
       urlkr: /edu/engineer/kit2_reference/#제어기-ble-신호-세기-설정

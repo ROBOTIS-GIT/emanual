@@ -34,14 +34,14 @@ ROBOTIS ENGINEER KIT2에서는 Raspberry Pi Camera와 앱을 동일한 와이파
   
 3. 네크워크 목록에서 Robotis_Rpi_XXXX를 찾아 선택합니다.
 
-    ![](/assets/images/edu/engineer/kit2/kit2_wifi_01.png)
+    ![](/assets/images/edu/engineer/kit2/kit2_wifi_01_kr.png)
         
     **참고**: XXXX는 제어기 MAC 주소 4자리 입니다.
     {: .notice}
 
 4. 비밀번호 입력창이 나타나면 `robotis0` 을 입력한 후 연결합니다. 
    
-   ![](/assets/images/edu/engineer/kit2/kit2_wifi_02.png)
+   ![](/assets/images/edu/engineer/kit2/kit2_wifi_02_kr.png)
 
 5. ENGINEER 앱을 실행한 후 우측 상단의 블루투스 아이콘을 눌러 제어기와 연결합니다. 제어기가 연결되면, 아이콘이 초록색으로 바뀝니다.
 
