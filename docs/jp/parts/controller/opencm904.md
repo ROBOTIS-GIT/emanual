@@ -722,28 +722,28 @@ Select Tools > Port > COM1.
 The value of COM1 may be different depending on the environment connected to the PC.
 {: .notice}
 
-## [Library API](#library-api)
+## [ライブラリAPI](#library-api)
 
-There are three ways to add libraries to the Arduino IDE.
+Arduino IDEにライブラリを追加する方法は3つあります。
 
-- Using the Library Manager
-- Importing a .zip Library
-- Manual installation
+- ライブラリマネージャを使用する  
+- .zip ライブラリのインポート  
+- マニュアルインストール  
 
-Each way is described in detail in the [Arduino Official Guide]{: .blank}, so please refer to it if necessary.  
-Below is an example of using the Library Manager.
+それぞれの方法は [Arduino Official Guide]{: .blank}に詳しく記載されていますので、必要に応じて参考にしてください。  
+以下にライブラリマネージャの使用例を示します。 
 
 ![](/assets/images/parts/interface/dynamixel_shield/library_manager_01.png)
 
-Search for `DYNAMIXEL2Arduino` from the Library Manager and install the library.
+ライブラリマネージャから`DYNAMIXEL2Arduino`を検索し、ライブラリをインストールします。
 
 ![](/assets/images/parts/interface/dynamixel_shield/library_manager_02.png)
 
-If the DYNAMIXEL2Arduino library has been successfully installed, useful examples to control DYNAMIXEL can be found under the DYNAMIXEL2Arduino category.
+DYNAMIXEL2Arduinoライブラリが正常にインストールされている場合、DYNAMIXELを制御するために役に立つ例は、DYNAMIXEL2Arduinoカテゴリの下で見つけることができます。
 
-### [Dynamixel2Arduino Library](#dynamixel2arduino-library)
+### [Dynamixel2Arduinoライブラリ](#dynamixel2arduino-library)
 
-#### [Dynamixel2Arduino Class](#dynamixel2arduino-class)
+#### [Dynamixel2Arduinoクラス](#dynamixel2arduino-class)
 
 - [begin()]{: .popup}
 - [getPortBaud()]{: .popup}
@@ -757,7 +757,7 @@ If the DYNAMIXEL2Arduino library has been successfully installed, useful example
 - [torqueOff()]{: .popup}
 - [ledOn()]{: .popup}
 - [ledOff()]{: .popup}
-- [setOperatingMode()]{: .popup}
+- [setOperatingMode()]{: .popup}ボタン
 - [setGoalPosition()]{: .popup}
 - [getPresentPosition()]{: .popup}
 - [setGoalVelocity()]{: .popup}
@@ -769,9 +769,10 @@ If the DYNAMIXEL2Arduino library has been successfully installed, useful example
 - [readControlTableItem()]{: .popup}
 - [writeControlTableItem()]{: .popup}
 
-#### [Master Class](#master-class)
+#### [マスタークラス](#master-class)
 
-Dynamixel2Arduino class inherits below public functions from the Master class.
+Dynamixel2ArduinoクラスはMasterクラスから以下のパブリック関数を継承しています。
+
 
 - [syncRead()]{: .popup}
 - [syncWrite()]{: .popup}
@@ -779,21 +780,21 @@ Dynamixel2Arduino class inherits below public functions from the Master class.
 - [bulkWrite()]{: .popup}
 - [getLastLibErrCode()]{: .popup}
 
-# [Examples](#examples)
+# [例](#examples)
 
 ## [LED](#led)
 
-It is a built-in LED test on the OpenCM9.04 board.
+OpenCM9.04ボードに内蔵されているLEDテストです。  
 
-### [Test Example for LED](#test-example-for-led)
-There are 1 LED available in OpenCM9.04, The LED connected to base 14 of Arduino.  
-When the built-in LED pin is output as High / Low, the LED turns on / off.
+### [LEDのテスト例](#test-example-for-led)
+OpenCM9.04には1個のLEDが用意されており、Arduinoのベース14に接続されています。   
+内蔵のLED端子をHigh/Lowで出力すると、LEDが点灯/消灯します。
 
 ```
 #define BOARD_LED_PIN        14
 ```
 
-It is a code that sequentially turns on and off all the LEDs.
+全てのLEDを順次点灯・消灯するコードです。
 
 ```c++
 int led_pin = 14;
@@ -817,18 +818,18 @@ void loop() {
 }
 ```
 
-## [Button](#button)
+## [ボタン](#button)
 
-It is a built-in BUTTON test on the OpenCM9.04 board.
+これはOpenCM9.04ボードに内蔵されているBUTTONテストです。
 
-### [Test Example for Button](#test-example-for-button)
-There is one Push switche in OpenCM9.04. The pin number is defined as below, so you can see the status of the current button when you input the data of that pin.
+### [ボタンのテスト例](#test-example-for-button)
+OpenCM9.04には押しボタンが1つあります。ピン番号は以下のように定義されており、そのピンのデータを入力すると現在のボタンの状態がわかります。
 
 ```
 #define BOARD_BUTTON_PIN        23  
 ```
 
-It is a code that outputs the button input status in serial. In order to use the built-in buttons, you need to set the port to pull-down.
+ボタンの入力状態をシリアルで出力するコードです。内蔵ボタンを使用するためには、ポートをプルダウンに設定する必要があります。
 
 ```c++
 void setup(){
@@ -849,17 +850,17 @@ void loop(){
 }
 ```
 
-## [Buzzer](#buzzer)
+## [ブザー](#buzzer)
 
-Buzzer can be driven using Arduino tone API. Buzzer-enabled pins are available on all I / O pins in OpenCM 9.04.
+ArduinoトーンAPIを使用してブザーを駆動することができます。ブザー対応のピンは、OpenCM 9.04のすべてのI/Oピンで利用可能です。
 
-### [Connection with Buzzer](#connection-with-buzzer)
+### [ブザーとの接続](#connection-with-buzzer)
 
 ![](/assets/images/parts/controller/opencm904/buzzer_bb.png)
 
 
-### [Arduino code for Buzzer](#arduino-code-for-buzzer)
-The following example shows a change to the Buzzer pin in the basic tone example provided by Arduino, which uses the Buzzer to play the melody.
+### [ブザー用のArduinoコード](#arduino-code-for-buzzer)
+以下の例は、Arduinoが提供する基調の例で、ブザーを使ってメロディを演奏する場合のブザー端子を変更したものです。
 
 ```c++
 #include "pitches.h"
@@ -898,12 +899,13 @@ void setup() {
 
 ## [PWM](#pwm)
 
-This is the PWM output test from the pin of the OpenCM9.04 board.
+OpenCM9.04ボードのピンからのPWM出力テストです。
 
-### [Test Example for PWM](#test-example-for-pwm)
+### [PWMのテスト例](#test-example-for-pwm)
 
-The analogueWrite is used to output the PWM duty ratio to the corresponding ports. The resolution is 8 bits, from 0 to 255, and the frequency is 10 KHz.  
-OpenCM 9.04 has 13 PWM pins in total. This is an example of PWM output on the six pins.
+PWMのデューティ比を対応するポートに出力するために使用するanalogueWriteです。分解能は0から255までの8ビットで、周波数は10KHzです。   
+OpenCM9.04では全部で13本のPWMピンがあります。これは6本のピンにPWMを出力した例です。  
+
 
 ```c++
 /*
