@@ -2054,43 +2054,43 @@ void testscrolltext(void) {
 }
 ```
 
-### [Video](#video)
+### [ビデオ](#video)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0E4cu4GE17k" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
-# [Downloads](#downloads)
+# [ダウンロード](#downloads)
 
-- `Download ZIP` [OpenCM 9.04 Manual]
-- `Download PDF` [PCB Schematic]
-- `Download PDF` [Top Gerber]
-- `Download PDF` [Bottom Gerber]
-- `Download PDF` [Gerber]
-- `Download Software Link` [Arduino IDE]
-- `Download Software Link` [OpenCM IDE]
+- `ZIPダウンロード` [OpenCM 9.04 Manual]
+- `PDFダウンロード` [PCB Schematic]
+- `PDFダウンロード` [Top Gerber]
+- `PDFダウンロード` [Bottom Gerber]
+- `PDFダウンロード` [Gerber]
+- `ソフトウェア ダウンロードリンク` [Arduino IDE]
+- `ソフトウェア ダウンロードリンク` [OpenCM IDE]
 
-# [References](#references)
+# [参考文献](#references)
 
-## [Recovery Mode](#recovery-mode)
+## [リカバリーモード](#recovery-mode)
 
-- If the board does not work due to corrupted firmware, you can force downloading default firmware from Roboplus Manager 1.0 / 2.0. Sketches also can be downloaded from Arduino IDE, OpenCM IDE.
-- Disconnect other power sources and devices from OpenCM9.04. While holding down the User Button of OpenCM9.04, connect the board directly to PC with USB cable.
+- ファームウェアが壊れて動かない場合は、Roboplus Manager 1.0/2.0からデフォルトのファームウェアを強制的にダウンロードすることができます。スケッチは、Arduino IDE, OpenCM IDEからもダウンロードできます。
+- OpenCM9.04から他の電源やデバイスの接続を外します。OpenCM9.04のユーザーボタンを押しながら、USBケーブルでボードとPCを直接接続します。
 
   ![](/assets/images/sw/mobile/mini_firmware_02.jpg)
-  > User Button
+  > ユーザーボタン
 
   ![](/assets/images/parts/controller/opencm904/opencm904_08.png)
 
-- If you enter recovery mode as shown below, the green LED will be turned on. When download is completed normally, the board will be reset and the green LED is turned off.
+- 下記のようにリカバリーモードに入ると、緑色のLEDが点灯します。正常にダウンロードが完了すると、ボードはリセットされ、緑色のLEDが消灯します。
 
   ![](/assets/images/parts/controller/opencm904/recovery_led.jpg)
 
-Please refer to [R+Manager 2.0 Firmware Recovery](/docs/en/software/rplus2/manager/#firmware-recovery) or [R+Manager 1.0 Firmware Recovery](/docs/en/software/rplus1/manager/#firmware-recovery) sections.
+[R+Manager 2.0 Firmware Recovery](/docs/en/software/rplus2/manager/#firmware-recovery) もしくは [R+Manager 1.0 Firmware Recovery](/docs/en/software/rplus1/manager/#firmware-recovery) の項を参照してください。
 {: .notice}
 
-## [Windows Driver Installation](#windows-driver-installation)
-- See [How to install ROBOTIS virtual COM port for Windows]{: .popup} 
+## [Windowsドライバのインストール](#windows-driver-installation)
+- 「Windows用ROBOTIS仮想COMポートのインストール方法」を参照してください。{: .popup} 
 
-## [Dimension](#dimension)
+## [寸法](#dimension)
 
 ![](/assets/images/parts/controller/opencm904/opencm904_28.png)
 
