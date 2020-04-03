@@ -15878,10 +15878,6 @@ turtlebot3:
       url: /platform/turtlebot3/manipulation/#slam
     - title: "Navigation"
       url: /platform/turtlebot3/manipulation/#navigation
-    - title: "MoveIt!"
-      url: /platform/turtlebot3/manipulation/#moveit
-    - title: "Pick and Place"
-      url: /platform/turtlebot3/manipulation/#pick-and-place
   - title: "[ROS 1] Autonomous Driving"
     url: /platform/turtlebot3/autonomous_driving/#ros-1-autonomous-driving
     children: 
@@ -16359,6 +16355,8 @@ openmanipulator_x:
             url: /platform/openmanipulator_x/ros_applications/#install-ar-marker-package
           - title: "Pick and Place Example"
             url: /platform/openmanipulator_x/ros_applications/#pick-and-place-example
+          - title: "Simulation"
+            url: /platform/openmanipulator_x/ros_applications/#simulation
       - title: "Master Slave"
         url: /platform/openmanipulator_x/ros_applications/#master-slave
         children:
@@ -16368,6 +16366,15 @@ openmanipulator_x:
             url: /platform/openmanipulator_x/ros_applications/#install-package
           - title: "Execute Example"
             url: /platform/openmanipulator_x/ros_applications/#execute-example
+      - title: "Gravitiy Compensation"
+        url: /docs/en/platform/openmanipulator_x/ros_applications/#gravity-compensation
+        children: 
+          - title: "Install Packages"
+            url: /docs/en/platform/openmanipulator_x/ros_applications/#install-packages
+          - title: "Set Operating Mode to Current Mode"
+            url: /docs/en/platform/openmanipulator_x/ros_applications/#set-operating-mode-to-current-mode
+          - title: "Run Gravity Compensation Package"
+            url: /docs/en/platform/openmanipulator_x/ros_applications/#run-gravity-compensation-package            
   - title: "[ROS 2] Setup"
     url: /platform/openmanipulator_x/ros2_setup/#ros-setup
     children:

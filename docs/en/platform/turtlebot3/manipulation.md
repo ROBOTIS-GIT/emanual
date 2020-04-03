@@ -438,10 +438,10 @@ Using this interface, you can control OpenMANIPULATOR on TurtleBot3
 $ roslaunch turtlebot3_manipulation_gui turtlebot3_manipulation_gui.launch
 ```
 
-## [MoveIt!](#moveit)
+<!-- ## [MoveIt!](#moveit)
 
 Maintenance for Moveit is in progress.
-{: .notice}
+{: .notice} -->
 
 <!-- 
 - In order to run [MoveIt!](https://moveit.ros.org/), open a new terminal window and enter the command below.
@@ -515,11 +515,11 @@ path_time: 0.0"
 
 -->
 
-
+<!-- 
 ## [Pick and Place](#pick-and-place)
 
 Maintenance for Pick and Place is in progress.
-{: .notice}
+{: .notice} -->
 
 <!-- 
 We provide the pick and place example for mobile manipulation. This example is used [smach][smach](task-level architecture) to send action to robot.
