@@ -311,7 +311,6 @@ Select Tools → Port → COM1.
 **CAUTION** : The value of **COM1** may be different depending on the environment connected to the PC.
 {: .notice--warning}
 
-
 # [Examples](#examples)
 
 ## [OpenCM9.04 Examples](#opencm904-examples)
