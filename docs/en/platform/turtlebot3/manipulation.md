@@ -62,6 +62,7 @@ The contents in e-Manual can be updated without a previous notice. Therefore, so
 $ cd ~/catkin_ws/src/
 $ git clone https://github.com/ROBOTIS-GIT/turtlebot3_manipulation.git
 $ git clone https://github.com/ROBOTIS-GIT/turtlebot3_manipulation_simulations.git
+$ cd ~/catkin_ws && catkin_make
 ```
 
 <!-- 
@@ -348,7 +349,7 @@ $ roslaunch turtlebot3_manipulation_moveit_config moveit_rviz.launch
 ### [Run ROBOTIS GUI Controller](#run-robotis-gui-controller)
 **[Remote PC]** OpenMANIPULATOR can be controlled with using ROBOTIS GUI controller instead of RVIz tool.  
 ```bash
-roslaunch turtlebot3_manipulation_gui turtlebot3_manipulation_gui.launch
+$ roslaunch turtlebot3_manipulation_gui turtlebot3_manipulation_gui.launch
 ```
 
 ## [SLAM](#slam)
@@ -378,12 +379,12 @@ $ roslaunch turtlebot3_slam turtlebot3_manipulation_slam.launch
 ```
 
 ### [Run turtlebot3_teleop_key Node](#run-turtlebot3-teleop-key-node)
-1. Update the map where TurtleBot3 will navigate using turtlebot3_teleop_key node.
+1. **[Remote PC]** Update the map where TurtleBot3 will navigate using turtlebot3_teleop_key node.
 ```bash
 $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ```
 
-2. Once the map is completely updated, run the map_saver node to save the updated map.
+2. **[Remote PC]** Once the map is completely updated, run the map_saver node to save the updated map.
 ```bash
 $ rosrun map_server map_saver -f ~/map
 ```
