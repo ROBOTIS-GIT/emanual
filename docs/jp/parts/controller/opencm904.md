@@ -2068,7 +2068,7 @@ void testscrolltext(void) {
 - `ソフトウェア ダウンロードリンク` [Arduino IDE]
 - `ソフトウェア ダウンロードリンク` [OpenCM IDE]
 
-# [参考文献](#references)
+# [参考](#references)
 
 ## [リカバリーモード](#recovery-mode)
 
