@@ -771,7 +771,7 @@ DYNAMIXEL2Arduinoライブラリが正常にインストールされている場
 
 #### [マスタークラス](#master-class)
 
-Dynamixel2ArduinoクラスはMasterクラスから以下のパブリック関数を継承しています。
+Dynamixel2Arduinoクラスは、Masterクラスから以下のパブリック関数を継承しています。
 
 
 - [syncRead()]{: .popup}
@@ -933,23 +933,25 @@ void loop() {
 
 ## [EEPROM](#eeprom)
 
-It is the EEPROM library test of OpenCM9.04 board.
+OpenCM9.04ボードのEEPROMライブラリテストです。
 
-### [Test](#test)
+### [テスト](#test)
 
-OpenCM9.04 does not have EEPROM memory, so it emulates a part of flash memory built in STM32F103 into EEPROM. The method of emulation was provided by ST as an example.  
-The area used as EEPROM is 0x0801F800 ~ 0x08020000 (2KBytes) as shown below. Two sectors are used.
+OpenCM9.04はEEPROMメモリを持っていないので、STM32F103に内蔵されているフラッシュメモリの一部をEEPROMでエミュレートします。  
+エミュレーションの方法はSTから例として提供されたものです。  
+EEPROMとして使用する領域は、以下のように0x0801F800～0x08020000（2KBytes）です。セクターが2つ使用されています。
+
 
 ![](/assets/images/parts/controller/opencm904/memory_map.png)
 
-32 bits are used to store one data, the lower 16 bits are the data to be stored, and the upper 16 bits indicate the address of the corresponding data. When storing data, it is always stored in the new location. When you use one page while saving the data, only the latest values ​​from the saved page are copied to the new page and the existing page is deleted.
-As a result, the number of flash memory erasures is reduced, thereby increasing the write-through life.
+32ビットは1つのデータを格納するためのもので、下位16ビットは格納するデータ、上位16ビットは対応するデータのアドレスを示しています。データを保存する際には、常に新しい場所に保存されます。データ保存中に１ページを使用した場合、保存したページの最新値のみが新しいページにコピーされ、既存のページは削除されます。  
+その結果、フラッシュメモリの消去回数が減り、書き込み寿命が延びます。
 
 ![](/assets/images/parts/controller/opencm904/ex_eeprom_02.png)
 
 ![](/assets/images/parts/controller/opencm904/ex_eeprom_03.png)
 
-To use the EEPROM library, a header must be added, and the maximum size of the current EEPROM is 512bytes. Since the EEPROM library has ported what is supported in Arduino, the basic usage method is the same as that used in other existing Arduino boards. For more information on how to use it, please refer to the Arduino site.
+EEPROMライブラリを使用するにはヘッダを追加する必要があり、現在のEEPROMの最大サイズは512バイトです。EEPROMライブラリはArduinoでサポートされているものを移植しているため、基本的な使用方法は他の既存のArduinoボードで使用されているものと同じです。詳しい使い方はArduinoのサイトを参照してください。
 
 [https://www.arduino.cc/en/Reference/EEPROM](https://www.arduino.cc/en/Reference/EEPROM)
 
@@ -1002,13 +1004,13 @@ void loop() {
 
 - [DYNAMIXEL Workbench examples](/docs/en/software/dynamixel/dynamixel_workbench/#opencr-and-opencm-tutorials)
 
-## [Servo](#servo)
+## [サーボ](#servo)
 
-- Servo library is used to drive RC servo for RC.
-- RC Servo Library uses OpenCM9.04 hardware timer and can be used by connecting to PWM output pin.
-- A2 to D14 pins are PWM output pins.
-- Be careful when using Servo library because other functions using hardware timer can not be used at the same time.
-- See the list below for the hardware and channels used.
+- サーボライブラリは、RC用のRCサーボを駆動するために使用されます。
+- RCサーボライブラリは、OpenCM9.04のハードウェアタイマを使用しており、PWM出力ピンに接続することで使用することができます。
+- A2～D14ピンはPWM出力ピンです。
+- サーボライブラリを利用する際には、ハードウェアタイマーを利用した他の機能を同時に利用することができないので注意が必要です。
+- 使用しているハードウェアとチャンネルは、以下のリストを参照してください。
 
 ```c++
 {GPIOA, GPIO_PIN_0,   &hADC1,   ADC_CHANNEL_0 , &hTIM2 ,   TIM_CHANNEL_1, 2       },  // 2
@@ -1027,12 +1029,12 @@ void loop() {
 {GPIOB, GPIO_PIN_9,   NULL,     NO_ADC        , &hTIM4 ,   TIM_CHANNEL_4, 14      },  // 14 LED
 ```
 
-### [Connection with Servo](#connection-with-servo)
+### [サーボとの接続](#connection-with-servo)
 
 ![](/assets/images/parts/controller/opencm904/servo_bb.png)
 
-### [Arduino code for servo](#arduino-code-for-servo)
-This is an example of a Servo library and uses the A2 pin of OpenCM9.04. The range of the input value is 0 to 180 degrees.
+### [サーボ用Arduinoコード](#arduino-code-for-servo)
+これは、サーボライブラリの例で、OpenCM9.04のA2ピンを使用しています。入力値の範囲は、0度から180度です。
 
 ```c++
 #include <Servo.h>
@@ -1051,18 +1053,18 @@ void loop() {
 }
 ```
 
-## [SD Card](#sd-card)
+## [SDカード](#sd-card)
 
-The Arduino IDE includes an SD card control library using the SPI library. OpenCM 9.04 supports the default SD library.
+Arduino IDEは、SPIライブラリを使ったSDカード制御ライブラリが含まれています。OpenCM 9.04ではデフォルトのSDライブラリをサポートしています。
 
-### [Connection with SD Card](#connection-with-sd-card)
+### [SDカードとの接続](#connection-with-sd-card)
 
-- SD Card Connection(SPI port)
+- SDカード接続(SPIポート)
 
   ![](/assets/images/parts/controller/opencm904/sdcard_bb.png)
 
-### [Arduino code for SD Card](#arduino-code-for-sd-card)
-The cardInfo example from the SD library and displays the file list after initializing the SD card. OpenCM9.04 SPI1 is used, and CS pin is used as No. 4.
+### [SDカード用Arduinoコード](#arduino-code-for-sd-card)
+SDカードライブラリからのcardInfoの例では、SDカードの初期化後のファイルリストを表示しています。OpenCM9.04のSPI1を使用し、CSピンを4番として使用しています。
 
 ```c++
 // include the SD library:
@@ -1156,9 +1158,9 @@ void loop(void) {
 
 ## [MS5540S](#ms5540s)
 
-The MS5540S is a sensor that can measure water pressure and can calculate the depth in water by measuring the water pressure. SPI communication is used.
+MS5540Sは、水圧を測定できるセンサーで、水圧を測定することで水中の水深を計算することができます。SPI通信を使用しています。
 
-### [Connection with MS5540S](#connection-with-ms5540s)
+### [MS5540Sとの接続](#connection-with-ms5540s)
 
 | MS5540S | OpenCM9.04 | etc       |
 |:--------|:-----------|:----------|
@@ -1169,8 +1171,8 @@ The MS5540S is a sensor that can measure water pressure and can calculate the de
 | DOUT    | A6         | MISO      |
 | SCLK    | A1         | SCK       |
 
-### [Arduino code for MS5540S](#arduino-code-for-ms5540s)
-Use SPI1 of OpenCM9.04 and input the clock of 32.768Khz to MCLK of MS5540S sensor. The analogWriteFreq function, which can adjust the frequency of the PWM pin of OpenCM 9.04, generates a clock of 32.768 KHz.
+### [MS5540S用Arduinoコード](#arduino-code-for-ms5540s)
+OpenCM9.04のSPI1を使用し、MS5540SセンサーのMCLKに32.768Khzのクロックを入力します。OpenCM9.04のPWMピンの周波数を調整できるanalogWriteFreq機能で32.768KHzのクロックを生成します。
 
 ```c++
 #include <SPI.h>
@@ -1475,9 +1477,10 @@ void ms5540s_loop()
 
 ## [MPU6050 DMP](#mpu6050-dmp)
 
-The MPU6050 is a sensor consisting of three axes of acceleration / three axes of gyro. If a dedicated processor called DMP is used in the MPU6050, the MPU6050 performs sensor fusion processing for obtaining Roll / Pitch / Yaw.
+MPU6050は、3軸の加速度/3軸のジャイロで構成されているセンサです。MPU6050にDMPと呼ばれる専用プロセッサを使用した場合、
+MPU6050はロール/ピッチ/ヨーを得るためのセンサフュージョン処理を行います。
 
-### [Connection with MPU6050 DMP](#connection-with-mpu6050-dmp)
+### [MPU6050 DMPとの接続](#connection-with-mpu6050-dmp)
 
 | MPU6050 | OpenCM9.04 | etc  |
 |:--------|:-----------|:-----|
@@ -1487,10 +1490,10 @@ The MPU6050 is a sensor consisting of three axes of acceleration / three axes of
 | SDA     | D25        | I2C2 |
 | INT     | A2         |      |
 
-### [Arduino code for MPU6050 DMP](#arduino-code-for-mpu6050-dmp)
-Enable the DMP function of MPU6050 and output Roll / Pitch / Yaw value in serial every 50ms. The full source code is downloaded from the link below.
+### [MPU6050 DMP用のArduinoコード](#arduino-code-for-mpu6050-dmp)
+MPU6050のDMP機能を有効にして、ロール/ピッチ/ヨーの値を50ミリ秒ごとにシリアルで出力します。ソースコードは以下からダウンロードできます。
 
-- Source code download link
+- ソースコード ダウンロードリンク
   [https://github.com/ROBOTIS-GIT/OpenCM9.04/blob/master/arduino/opencm_arduino/examples/Exam_MPU6050.zip](https://github.com/ROBOTIS-GIT/OpenCM9.04/blob/master/arduino/opencm_arduino/examples/Exam_MPU6050.zip)
 
 ```c++
@@ -1652,11 +1655,11 @@ void dmp_loop() {
 
 ## [0.96" OLED LCD](#096-oled-lcd)
 
-It is a 0.96 inch OLED monochrome LCD. It has 128x64 resolution and is controlled using the Adafruit_GFX_Library library.
+0.96インチの有機ELモノクロ液晶です。解像度は128x64で、Adafruit_GFX_Libraryライブラリを使用して制御します。
 
 ![](/assets/images/parts/controller/opencm904/AD304-2T.jpg)
 
-### [Connection with LCD](#connection-with-lcd)
+### [LCDとの接続](#connection-with-lcd)
 
 | OLED | OpenCM9.04 | etc  |
 |:-----|:-----------|:-----|
@@ -1666,14 +1669,15 @@ It is a 0.96 inch OLED monochrome LCD. It has 128x64 resolution and is controlle
 | SDA  | D25        | I2C2 |
 
 
-### [Arduino code for LCD](#arduino-code-for-lcd)
-Enable the DMP function of MPU6050 and output Roll / Pitch / Yaw value in serial every 50ms. The full source code is downloaded from the link below.
+### [LCD用のArduinoコード](#arduino-code-for-lcd)
+MPU6050のDMP機能を有効にして、ロール/ピッチ/ヨーの値を50ミリ秒ごとにシリアルで出力します。ソースコードは以下からダウンロードできます。
 
-- `Download` Library. Copy the following two libraries into the Document > Arduino > libraries folder and unzip them.
+
+- ライブラリを`ダウンロード`します。以下の2つのライブラリを Document > Arduino > libraries フォルダにコピーして解答します。
   [https://github.com/ROBOTIS-GIT/OpenCM9.04/blob/master/arduino/opencm_arduino/examples/Adafruit_SSD1306/Adafruit_GFX_Library.zip](https://github.com/ROBOTIS-GIT/OpenCM9.04/blob/master/arduino/opencm_arduino/examples/Adafruit_SSD1306/Adafruit_GFX_Library.zip)  
   [https://github.com/ROBOTIS-GIT/OpenCM9.04/blob/master/arduino/opencm_arduino/examples/Adafruit_SSD1306/Adafruit_SSD1306.zip](https://github.com/ROBOTIS-GIT/OpenCM9.04/blob/master/arduino/opencm_arduino/examples/Adafruit_SSD1306/Adafruit_SSD1306.zip)
 
-- `Download` Source Code. Extract downloaded source code and open the code from Arduino IDE with File > Open.
+- ソースコードを`ダウンロード`します。ダウンロードしたソースコードを解凍し、Arduino IDEから File > Open で開きます。
   [https://github.com/ROBOTIS-GIT/OpenCM9.04/blob/master/arduino/opencm_arduino/examples/Adafruit_SSD1306/Exam_ssd1306_128x64_i2c.zip](https://github.com/ROBOTIS-GIT/OpenCM9.04/blob/master/arduino/opencm_arduino/examples/Adafruit_SSD1306/Exam_ssd1306_128x64_i2c.zip)
 
 ```c++
