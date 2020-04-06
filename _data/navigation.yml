@@ -16336,6 +16336,11 @@ openmanipulator_x:
             url: /platform/openmanipulator_x/ros_operation/#xbox-360-joystick
       - title: "MoveIt!"
         url: /platform/openmanipulator_x/ros_operation/#moveit
+        children: 
+          - title: "Install MoveIt Packages"
+            url: /platform/openmanipulator_x/ros_operation/#install-moveit-packages
+          - title: "Launch Moveit!"
+            url: /platform/openmanipulator_x/ros_operation/#launch-moveit                     
   - title: "[ROS] Simulation"
     url: /platform/openmanipulator_x/ros_simulation/#ros-simulation
     children:
@@ -16367,14 +16372,14 @@ openmanipulator_x:
           - title: "Execute Example"
             url: /platform/openmanipulator_x/ros_applications/#execute-example
       - title: "Gravitiy Compensation"
-        url: /docs/en/platform/openmanipulator_x/ros_applications/#gravity-compensation
+        url: /platform/openmanipulator_x/ros_applications/#gravity-compensation
         children: 
           - title: "Install Packages"
-            url: /docs/en/platform/openmanipulator_x/ros_applications/#install-packages
+            url: /platform/openmanipulator_x/ros_applications/#install-packages
           - title: "Set Operating Mode to Current Mode"
-            url: /docs/en/platform/openmanipulator_x/ros_applications/#set-operating-mode-to-current-mode
+            url: /platform/openmanipulator_x/ros_applications/#set-operating-mode-to-current-mode
           - title: "Run Gravity Compensation Package"
-            url: /docs/en/platform/openmanipulator_x/ros_applications/#run-gravity-compensation-package            
+            url: /platform/openmanipulator_x/ros_applications/#run-gravity-compensation-package            
   - title: "[ROS 2] Setup"
     url: /platform/openmanipulator_x/ros2_setup/#ros-setup
     children:
