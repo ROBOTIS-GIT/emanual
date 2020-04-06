@@ -78,6 +78,7 @@ $ sudo apt-get install ros-kinetic-joy ros-kinetic-teleop-twist-joy ros-kinetic-
 $ cd ~/catkin_ws/src/
 $ git clone https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
 $ git clone https://github.com/ROBOTIS-GIT/turtlebot3.git
+$ source /opt/ros/kinetic/setup.bash
 $ cd ~/catkin_ws && catkin_make
 ```
 
