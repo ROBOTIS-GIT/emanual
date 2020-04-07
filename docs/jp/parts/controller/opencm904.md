@@ -555,7 +555,7 @@ sudo udevadm trigger
 ```
 
 #### [Compiler Settings (Linux)](#compiler-settings-linux)
-Since the OpenCM9.04 libraries is built for 32 bit platform, 64 bit PC needs the 32 bit compiler relevants for the ArduinoIDE.
+Since the OpenCM9.04 libraries is built for 32 bit platform, 64 bit PC needs the 32 bit compiler relevants for the Arduino IDE.
 ```
 sudo apt-get install libncurses5-dev:i386
 ```
@@ -2072,7 +2072,7 @@ void testscrolltext(void) {
 
 ## [リカバリーモード](#recovery-mode)
 
-- ファームウェアが壊れて動かない場合は、Roboplus Manager 1.0/2.0からデフォルトのファームウェアを強制的にダウンロードすることができます。スケッチは、Arduino IDE, OpenCM IDEからもダウンロードできます。
+- ファームウェアが壊れて動かない場合は、Roboplus Manager1.0/2.0からデフォルトのファームウェアを強制的にダウンロードすることができます。スケッチは、Arduino IDE, OpenCM IDEからもダウンロードできます。
 - OpenCM9.04から他の電源やデバイスの接続を外します。OpenCM9.04のユーザーボタンを押しながら、USBケーブルでボードとPCを直接接続します。
 
   ![](/assets/images/sw/mobile/mini_firmware_02.jpg)
