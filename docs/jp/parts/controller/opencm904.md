@@ -179,7 +179,6 @@ OpenCM9.04のブロック図を以下に示します。OpenCM9.04の回路図は
 電源回路図は、5Vと3.3Vのレギュレータを介してカスケードするように設計されています。5VはTTLバスに、3.3Vはマイクロコントローラ、5ピンポート、4ピン通信ポートに供給されます。  
 OpenCM9.04はUSB2.0 FSに対応しています。Micro-Bコネクタは、プログラムのダウンロードやデータ通信を行うために使われます。  
 USARTチャンネル1はDYNAMIXEL TTLバスに割当てられているため、ピン 11(TX1)とピン 12(RX1)を併用することはできません。  
-USARTチャンネル1はDYNAMIXEL TTLバスに登録されており、ピン11(TX1)と12(RX1)を併用することはできません。
  
 ![](/assets/images/parts/controller/opencm904/opencm904_01.png)
 
@@ -190,6 +189,7 @@ USARTチャンネル1はDYNAMIXEL TTLバスに登録されており、ピン11(T
 
 ### [電源スイッチ](#power-switch)
 このスイッチは、ボードへの電源供給とDYNAMIXELのON/OFFを制御するためのスイッチです。(注: USB ケーブルが接続されているときは、ボードの電源は常にオンになっています)  
+
 ### [シリアルバッテリーソケット](#serial-battery-socket)
 LBS-04リチウムイオン電池2本を接続します。  
 
@@ -2055,6 +2055,10 @@ void testscrolltext(void) {
 ```
 
 ### [ビデオ](#video)
+152
+|   400   |  1   |  Port 1 Magnetic Sensor Value   | ポート1の磁気センサ値             |   R    |     -      |
+153
+|   401   |  1   |  Port 2 Magnetic Sensor Value   | ポート2の磁気センサ値             |   R    |     -      |
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0E4cu4GE17k" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
