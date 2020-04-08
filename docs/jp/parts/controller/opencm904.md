@@ -757,7 +757,7 @@ DYNAMIXEL2Arduinoライブラリが正常にインストールされている場
 - [torqueOff()]{: .popup}
 - [ledOn()]{: .popup}
 - [ledOff()]{: .popup}
-- [setOperatingMode()]{: .popup}ボタン
+- [setOperatingMode()]{: .popup}
 - [setGoalPosition()]{: .popup}
 - [getPresentPosition()]{: .popup}
 - [setGoalVelocity()]{: .popup}
@@ -2055,10 +2055,6 @@ void testscrolltext(void) {
 ```
 
 ### [ビデオ](#video)
-152
-|   400   |  1   |  Port 1 Magnetic Sensor Value   | ポート1の磁気センサ値             |   R    |     -      |
-153
-|   401   |  1   |  Port 2 Magnetic Sensor Value   | ポート2の磁気センサ値             |   R    |     -      |
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0E4cu4GE17k" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
