@@ -46,32 +46,39 @@ $ bash Anaconda2-x.x.x-Linux-x86_64.sh
 
 After installing Anaconda,
 ``` bash
-$ source ~/.bashrc
-$ python -V
+(base)$ source ~/.bashrc
+(base)$ python -V
 ```
 If Anaconda is installed, you can see `Python 2.7.xx :: Anaconda, Inc.`.
+
+### [Conda environment](#environment)
+Create conda environment
+``` bash
+(base)$ conda create -n tensorflow pip python=2.7
+```
+Activate conda environment
+``` bash
+(tensorflow)$ conda activate tensorflow
+```
 
 ### [ROS dependency packages](#ros-dependency-packages)
 To use ROS and Anaconda together, you must additionally install ROS dependency packages.
 ``` bash
-$ pip install -U rosinstall msgpack empy defusedxml netifaces
+(tensorflow)$ pip install -U rosinstall msgpack empy defusedxml netifaces
 ```
 
 ### [Tensorflow](#tensorflow)
-You can install [TensorFlow](https://www.tensorflow.org/install/).  
-``` bash
-$ conda create -n tensorflow pip python=2.7
-```
+You can install [TensorFlow](https://www.tensorflow.org/install/).
 This tutorial is used python 2.7(CPU only). If you want to use another python version and GPU, please refer to [TensorFlow](https://www.tensorflow.org/install/).
 ``` bash
-$ pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.8.0-cp27-none-linux_x86_64.whl
+(tensorflow)$ pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.8.0-cp27-none-linux_x86_64.whl
 ```
 
 ### [Keras](#keras)
 [Keras](https://keras.io/) is a high-level neural networks API, written in Python and capable of running on top of TensorFlow.
 
 ``` bash
-$ pip install keras==2.1.5
+(tensorflow)$ pip install keras==2.1.5
 ```
 
 ### [Machine Learning packages](#machine-learning-packages)
@@ -156,36 +163,43 @@ Stage 1 is a 4x4 map with no obstacles.
 
 ![](/assets/images/platform/turtlebot3/machine_learning/stage_1.jpg)
 ``` bash
-$ roslaunch turtlebot3_gazebo turtlebot3_stage_1.launch
-$ roslaunch turtlebot3_dqn turtlebot3_dqn_stage_1.launch
+(tensorflow)$ roslaunch turtlebot3_gazebo turtlebot3_stage_1.launch
+(tensorflow)$ roslaunch turtlebot3_dqn turtlebot3_dqn_stage_1.launch
 ```
 ### [Stage 2 (Static Obstacle)](#stage-2-static-obstacle)
 Stage 2 is a 4x4 map with four cylinders of static obstacles.
 
 ![](/assets/images/platform/turtlebot3/machine_learning/stage_2.jpg)
 ``` bash
-$ roslaunch turtlebot3_gazebo turtlebot3_stage_2.launch
-$ roslaunch turtlebot3_dqn turtlebot3_dqn_stage_2.launch
+(tensorflow)$ roslaunch turtlebot3_gazebo turtlebot3_stage_2.launch
+(tensorflow)$ roslaunch turtlebot3_dqn turtlebot3_dqn_stage_2.launch
 ```
 ### [Stage 3 (Moving Obstacle)](#stage-3-moving-obstacle)
 Stage 2 is a 4x4 map with four cylinders of moving obstacles.
 
 ![](/assets/images/platform/turtlebot3/machine_learning/stage_3.jpg)
 ``` bash
-$ roslaunch turtlebot3_gazebo turtlebot3_stage_3.launch
-$ roslaunch turtlebot3_dqn turtlebot3_dqn_stage_3.launch
+(tensorflow)$ roslaunch turtlebot3_gazebo turtlebot3_stage_3.launch
+(tensorflow)$ roslaunch turtlebot3_dqn turtlebot3_dqn_stage_3.launch
 ```
 ### [Stage 4 (Combination Obstacle)](#stage-4-combination-obstacle)
 Stage 4 is a 5x5 map with walls and two cylinders of moving obstacles.
 
 ![](/assets/images/platform/turtlebot3/machine_learning/stage_4.jpg)
 ``` bash
-$ roslaunch turtlebot3_gazebo turtlebot3_stage_4.launch
-$ roslaunch turtlebot3_dqn turtlebot3_dqn_stage_4.launch
+(tensorflow)$ roslaunch turtlebot3_gazebo turtlebot3_stage_4.launch
+(tensorflow)$ roslaunch turtlebot3_dqn turtlebot3_dqn_stage_4.launch
+```
+
+
+### [Show graph](#Show graph)
+Install dependencys
+``` bash
+(tensorflow)$ conda install pyqt5
+(tensorflow)$ conda install qtgraph
 ```
 
 If you want to see graph, launch the graph launch file.
-
 ``` bash
-$ roslaunch turtlebot3_dqn result_graph.launch
+(tensorflow)$ roslaunch turtlebot3_dqn result_graph.launch
 ```
