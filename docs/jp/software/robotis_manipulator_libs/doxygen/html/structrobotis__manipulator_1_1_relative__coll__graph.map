@@ -1,0 +1,4 @@
+<map id="robotis_manipulator::Relative" name="robotis_manipulator::Relative">
+<area shape="rect" id="node2" href="$structrobotis__manipulator_1_1_kinematic_pose.html" title="{robotis_manipulator\l::KinematicPose\n|+ position\l+ orientation\l|}" alt="" coords="5,13,140,119"/>
+<area shape="rect" id="node3" href="$structrobotis__manipulator_1_1_inertia.html" title="{robotis_manipulator\l::Inertia\n|+ mass\l+ inertia_tensor\l+ center_of_mass\l|}" alt="" coords="164,5,299,127"/>
+</map>

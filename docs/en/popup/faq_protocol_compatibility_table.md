@@ -81,6 +81,7 @@ Compatibility Key: O= Yes ; X= No ; * = User Action Required
 |:------------|:------------------------|:-------------|
 | XC430-W150  | O* <br>(F/W address 13) | O            |
 | XC430-W240  | O* <br>(F/W address 13) | O            |
+| 2XC430-W250 | O* <br>(F/W address 13) | O            |
 
 ## [XL Series](#xl-series)
 

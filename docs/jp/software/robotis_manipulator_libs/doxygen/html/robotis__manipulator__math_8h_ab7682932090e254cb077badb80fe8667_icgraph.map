@@ -1,0 +1,4 @@
+<map id="robotis_manipulator::math::convertRollAngleToRotationMatrix" name="robotis_manipulator::math::convertRollAngleToRotationMatrix">
+<area shape="rect" id="node2" href="$robotis__manipulator__math_8h.html#a4bbc795e8c06dd0472ed25864f6ec886" title="convertRPYToRotationMatrix " alt="" coords="235,29,437,85"/>
+<area shape="rect" id="node3" href="$robotis__manipulator__math_8h.html#aa1d5ec03193d986594c03ab884126416" title="convertRPYToQuaternion " alt="" coords="485,37,701,78"/>
+</map>

@@ -1,0 +1,220 @@
+\hypertarget{classrobotis__manipulator_1_1_kinematics}{}\section{robotis\+\_\+manipulator\+:\+:Kinematics Class Reference}
+\label{classrobotis__manipulator_1_1_kinematics}\index{robotis\+\_\+manipulator\+::\+Kinematics@{robotis\+\_\+manipulator\+::\+Kinematics}}
+
+
+The \hyperlink{classrobotis__manipulator_1_1_kinematics}{Kinematics} class.  
+
+
+
+
+{\ttfamily \#include $<$robotis\+\_\+manipulator\+\_\+manager.\+h$>$}
+
+
+
+Collaboration diagram for robotis\+\_\+manipulator\+:\+:Kinematics\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=219pt]{classrobotis__manipulator_1_1_kinematics__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrobotis__manipulator_1_1_kinematics_a3d08da271bc5cce3cafa2d331277cc5d}{Kinematics} ()
+\item 
+virtual \hyperlink{classrobotis__manipulator_1_1_kinematics_a202eda8d94a06263cf5d729dd51e59ab}{$\sim$\+Kinematics} ()
+\item 
+virtual void \hyperlink{classrobotis__manipulator_1_1_kinematics_adc048ff10f7707e3ced3143e583983bc}{set\+Option} (const void $\ast$arg)=0
+\begin{DoxyCompactList}\small\item\em set\+Option \end{DoxyCompactList}\item 
+virtual Eigen\+::\+Matrix\+Xd \hyperlink{classrobotis__manipulator_1_1_kinematics_a8644b348452df2f0a46b00aadc36c218}{jacobian} (\hyperlink{classrobotis__manipulator_1_1_manipulator}{Manipulator} $\ast$manipulator, \hyperlink{namespacerobotis__manipulator_a08c2d25e77a01ad75b9bb740f8ce4765}{Name} tool\+\_\+name)=0
+\begin{DoxyCompactList}\small\item\em jacobian \end{DoxyCompactList}\item 
+virtual void \hyperlink{classrobotis__manipulator_1_1_kinematics_adfdd3727052c27d12e3fc2209c025317}{solve\+Forward\+Kinematics} (\hyperlink{classrobotis__manipulator_1_1_manipulator}{Manipulator} $\ast$manipulator)=0
+\begin{DoxyCompactList}\small\item\em solve\+Forward\+Kinematics \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classrobotis__manipulator_1_1_kinematics_a6065cf1bff763854b9a0bd62945a093b}{solve\+Inverse\+Kinematics} (\hyperlink{classrobotis__manipulator_1_1_manipulator}{Manipulator} $\ast$manipulator, \hyperlink{namespacerobotis__manipulator_a08c2d25e77a01ad75b9bb740f8ce4765}{Name} tool\+\_\+name, \hyperlink{structrobotis__manipulator_1_1_pose}{Pose} target\+\_\+pose, std\+::vector$<$ \hyperlink{namespacerobotis__manipulator_aa0556c98c5294ccf3a96c2d0fe315e40}{Joint\+Value} $>$ $\ast$goal\+\_\+joint\+\_\+position)=0
+\begin{DoxyCompactList}\small\item\em solve\+Inverse\+Kinematics \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classrobotis__manipulator_1_1_kinematics}{Kinematics} class. 
+
+Definition at line 41 of file robotis\+\_\+manipulator\+\_\+manager.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{robotis\+\_\+manipulator\+::\+Kinematics@{robotis\+\_\+manipulator\+::\+Kinematics}!Kinematics@{Kinematics}}
+\index{Kinematics@{Kinematics}!robotis\+\_\+manipulator\+::\+Kinematics@{robotis\+\_\+manipulator\+::\+Kinematics}}
+\subsubsection[{\texorpdfstring{Kinematics()}{Kinematics()}}]{\setlength{\rightskip}{0pt plus 5cm}robotis\+\_\+manipulator\+::\+Kinematics\+::\+Kinematics (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrobotis__manipulator_1_1_kinematics_a3d08da271bc5cce3cafa2d331277cc5d}{}\label{classrobotis__manipulator_1_1_kinematics_a3d08da271bc5cce3cafa2d331277cc5d}
+
+
+Definition at line 44 of file robotis\+\_\+manipulator\+\_\+manager.\+h.
+
+
+\begin{DoxyCode}
+44 \{\}
+\end{DoxyCode}
+\index{robotis\+\_\+manipulator\+::\+Kinematics@{robotis\+\_\+manipulator\+::\+Kinematics}!````~Kinematics@{$\sim$\+Kinematics}}
+\index{````~Kinematics@{$\sim$\+Kinematics}!robotis\+\_\+manipulator\+::\+Kinematics@{robotis\+\_\+manipulator\+::\+Kinematics}}
+\subsubsection[{\texorpdfstring{$\sim$\+Kinematics()}{~Kinematics()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual robotis\+\_\+manipulator\+::\+Kinematics\+::$\sim$\+Kinematics (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classrobotis__manipulator_1_1_kinematics_a202eda8d94a06263cf5d729dd51e59ab}{}\label{classrobotis__manipulator_1_1_kinematics_a202eda8d94a06263cf5d729dd51e59ab}
+
+
+Definition at line 45 of file robotis\+\_\+manipulator\+\_\+manager.\+h.
+
+
+\begin{DoxyCode}
+45 \{\}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrobotis__manipulator_1_1_kinematics_a202eda8d94a06263cf5d729dd51e59ab_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{robotis\+\_\+manipulator\+::\+Kinematics@{robotis\+\_\+manipulator\+::\+Kinematics}!jacobian@{jacobian}}
+\index{jacobian@{jacobian}!robotis\+\_\+manipulator\+::\+Kinematics@{robotis\+\_\+manipulator\+::\+Kinematics}}
+\subsubsection[{\texorpdfstring{jacobian(\+Manipulator $\ast$manipulator, Name tool\+\_\+name)=0}{jacobian(Manipulator *manipulator, Name tool_name)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual Eigen\+::\+Matrix\+Xd robotis\+\_\+manipulator\+::\+Kinematics\+::jacobian (
+\begin{DoxyParamCaption}
+\item[{{\bf Manipulator} $\ast$}]{manipulator, }
+\item[{{\bf Name}}]{tool\+\_\+name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classrobotis__manipulator_1_1_kinematics_a8644b348452df2f0a46b00aadc36c218}{}\label{classrobotis__manipulator_1_1_kinematics_a8644b348452df2f0a46b00aadc36c218}
+
+
+jacobian 
+
+
+\begin{DoxyParams}{Parameters}
+{\em manipulator} & \\
+\hline
+{\em tool\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrobotis__manipulator_1_1_kinematics_a8644b348452df2f0a46b00aadc36c218_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{robotis\+\_\+manipulator\+::\+Kinematics@{robotis\+\_\+manipulator\+::\+Kinematics}!set\+Option@{set\+Option}}
+\index{set\+Option@{set\+Option}!robotis\+\_\+manipulator\+::\+Kinematics@{robotis\+\_\+manipulator\+::\+Kinematics}}
+\subsubsection[{\texorpdfstring{set\+Option(const void $\ast$arg)=0}{setOption(const void *arg)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void robotis\+\_\+manipulator\+::\+Kinematics\+::set\+Option (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{arg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classrobotis__manipulator_1_1_kinematics_adc048ff10f7707e3ced3143e583983bc}{}\label{classrobotis__manipulator_1_1_kinematics_adc048ff10f7707e3ced3143e583983bc}
+
+
+set\+Option 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arg} & \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrobotis__manipulator_1_1_kinematics_adc048ff10f7707e3ced3143e583983bc_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{robotis\+\_\+manipulator\+::\+Kinematics@{robotis\+\_\+manipulator\+::\+Kinematics}!solve\+Forward\+Kinematics@{solve\+Forward\+Kinematics}}
+\index{solve\+Forward\+Kinematics@{solve\+Forward\+Kinematics}!robotis\+\_\+manipulator\+::\+Kinematics@{robotis\+\_\+manipulator\+::\+Kinematics}}
+\subsubsection[{\texorpdfstring{solve\+Forward\+Kinematics(\+Manipulator $\ast$manipulator)=0}{solveForwardKinematics(Manipulator *manipulator)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void robotis\+\_\+manipulator\+::\+Kinematics\+::solve\+Forward\+Kinematics (
+\begin{DoxyParamCaption}
+\item[{{\bf Manipulator} $\ast$}]{manipulator}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classrobotis__manipulator_1_1_kinematics_adfdd3727052c27d12e3fc2209c025317}{}\label{classrobotis__manipulator_1_1_kinematics_adfdd3727052c27d12e3fc2209c025317}
+
+
+solve\+Forward\+Kinematics 
+
+
+\begin{DoxyParams}{Parameters}
+{\em manipulator} & \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrobotis__manipulator_1_1_kinematics_adfdd3727052c27d12e3fc2209c025317_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{robotis\+\_\+manipulator\+::\+Kinematics@{robotis\+\_\+manipulator\+::\+Kinematics}!solve\+Inverse\+Kinematics@{solve\+Inverse\+Kinematics}}
+\index{solve\+Inverse\+Kinematics@{solve\+Inverse\+Kinematics}!robotis\+\_\+manipulator\+::\+Kinematics@{robotis\+\_\+manipulator\+::\+Kinematics}}
+\subsubsection[{\texorpdfstring{solve\+Inverse\+Kinematics(\+Manipulator $\ast$manipulator, Name tool\+\_\+name, Pose target\+\_\+pose, std\+::vector$<$ Joint\+Value $>$ $\ast$goal\+\_\+joint\+\_\+position)=0}{solveInverseKinematics(Manipulator *manipulator, Name tool_name, Pose target_pose, std::vector< JointValue > *goal_joint_position)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool robotis\+\_\+manipulator\+::\+Kinematics\+::solve\+Inverse\+Kinematics (
+\begin{DoxyParamCaption}
+\item[{{\bf Manipulator} $\ast$}]{manipulator, }
+\item[{{\bf Name}}]{tool\+\_\+name, }
+\item[{{\bf Pose}}]{target\+\_\+pose, }
+\item[{std\+::vector$<$ {\bf Joint\+Value} $>$ $\ast$}]{goal\+\_\+joint\+\_\+position}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classrobotis__manipulator_1_1_kinematics_a6065cf1bff763854b9a0bd62945a093b}{}\label{classrobotis__manipulator_1_1_kinematics_a6065cf1bff763854b9a0bd62945a093b}
+
+
+solve\+Inverse\+Kinematics 
+
+
+\begin{DoxyParams}{Parameters}
+{\em manipulator} & \\
+\hline
+{\em tool\+\_\+name} & \\
+\hline
+{\em target\+\_\+pose} & \\
+\hline
+{\em goal\+\_\+joint\+\_\+position} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrobotis__manipulator_1_1_kinematics_a6065cf1bff763854b9a0bd62945a093b_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/robotis\+\_\+manipulator/\hyperlink{robotis__manipulator__manager_8h}{robotis\+\_\+manipulator\+\_\+manager.\+h}\end{DoxyCompactItemize}
