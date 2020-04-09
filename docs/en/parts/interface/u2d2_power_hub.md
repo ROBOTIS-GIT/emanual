@@ -48,7 +48,7 @@ Combined with U2D2, it can supply various kinds of external power supply to supp
 
     ![](/assets/images/parts/interface/u2d2_power_hub/u2d2_phb_07.jpg)
 
-3. Connect `U2D2` and `U2D2 Power Hub Boar`d with 3P or 4P cables (Both 3P and 4P cables can be connected at the same time).
+3. Connect `U2D2` and `U2D2 Power Hub Board` with 3P or 4P cables (Both 3P and 4P cables can be connected at the same time).
 
     ![](/assets/images/parts/interface/u2d2_power_hub/u2d2_phb_03.jpg)
 
@@ -62,7 +62,7 @@ Combined with U2D2, it can supply various kinds of external power supply to supp
 
 6. Connect power to `U2D2 Power Hub Board`.
 
-    **DANGER** : Do NOT use both power inputs at the same time. Select ONLY one of the power source to connect.
+    **DANGER** : Do NOT use multiple power inputs at the same time. Select ONLY one of the power source to connect.
     {: .notice--danger}
 
     **WARNING** : Check the Recommended Voltage for DYNAMIXEL before supplying the power.
