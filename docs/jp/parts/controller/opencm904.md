@@ -522,9 +522,9 @@ OpenCM9.04のDYNAMIXEL 3ピンTTLピンは、DYNAMIXEL 3ピンTTLおよびXL-320
 
 > OpenCM9.04 Type Aは、2種類の3ピンコネクタをボードに取り付ける事ができます。
 
-# [Development Environment](#development-environment)
+# [開発環境](#development-environment)
 
-## [Supported Software](#supported-software)
+## [サポート ソフトウェア](#supported-software)
 
 - [Arduino IDE]
 - [OpenCM IDE]
@@ -539,16 +539,16 @@ OpenCM9.04のDYNAMIXEL 3ピンTTLピンは、DYNAMIXEL 3ピンTTLおよびXL-320
 |       Windows        |       O       |      O       |
 
 ## [OpenCM IDE](#opencm-ide)
-For developers who are using OpenCM IDE, it is recommended to use [Arduino IDE] as OpenCM IDE will not be maintained anymore.
+OpenCM IDEがメンテナンスされなくなるため、OpenCM IDEを使用している開発者は、[Arduino IDE]を使用することをお勧めします。
 
 `e-Manual` [OpenCM IDE]
 
 ## [Arduino IDE](#arduino-ide)
 
-### [Install on Linux](#install-on-linux)
+### [Linuxのインストール](#install-on-linux)
 
-#### [USB port settings (Linux)](#usb-port-settings-linux)
-Make the OpenCM9.04 USB port be able to upload the Arduino IDE program without root permission.
+#### [USBポートの設定 (Linux)](#usb-port-settings-linux)
+OpenCM9.04 USBポートがルート権限なしでArduino IDEプログラムをアップロードできるようにします。
 ```
 wget https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCM9.04/master/99-opencm-cdc.rules
 sudo cp ./99-opencm-cdc.rules /etc/udev/rules.d/
@@ -556,25 +556,26 @@ sudo udevadm control --reload-rules
 sudo udevadm trigger
 ```
 
-#### [Compiler Settings (Linux)](#compiler-settings-linux)
-Since the OpenCM9.04 libraries is built for 32 bit platform, 64 bit PC needs the 32 bit compiler relevants for the Arduino IDE.
+#### [コンパイラの設定 (Linux)](#compiler-settings-linux)
+OpenCM9.04ライブラリは32ビットプラットフォーム用に構築されているため、64ビットPCにはArduino IDEに関連する32ビットコンパイラ関連が必要です。
 ```
 sudo apt-get install libncurses5-dev:i386
 ```
 
-#### [Install the Arduino IDE (Linux)](#install-the-arduino-ide-linux)
+#### [Arduino IDEのインストール (Linux)](#install-the-arduino-ide-linux)
 
-Download the latest version of Arduino IDE from the official arduino homepage, and install it. Currently, the OpenCM9.04 will be on service in the version 1.6.4 or later.
+Arduinoの公式HPから最新版のArduino IDEをダウンロード後、インストールします。 現在、OpenCM9.04はバージョン1.6.4以降で動作します。
 
 [https://www.arduino.cc/en/Main/Software](https://www.arduino.cc/en/Main/Software)
 
-Then, extract the downloaded file to the desired folder and execute the installation file from the terminal. In this case, the example shown below makes the folder tools in the user’s top folder (~/). This folder will act as the Arduino IDE folder.
+次に、ダウンロードしたファイルを目的のフォルダーに展開し、ターミナルからインストールファイルを実行します。 本例では、ユーザーの最上位フォルダー（〜/）にフォルダを作成します。 このフォルダは、Arduino IDEフォルダとして機能します。
 ```
 cd ~/tools/arduino-1.8.3
 ./install.sh
 ```
 
-Set the file path of installed Arduino IDE as an absolute path named PATH in the bashrc file. Here recommends to use gedit editor. (Use another editor, if necessary.) Finally, source it to apply the changes.
+インストールされているArduino IDEのファイルパスを、bashrcファイルのPATHという名前の絶対パスとして設定します。 ここでは、geditエディターの使用を推奨しています。  
+（必要に応じて、別のエディターを使用します。）最後に、変更を適用します。
 ```
 gedit ~/.bashrc
 export PATH=$PATH:$HOME/tools/arduino-1.8.3
@@ -583,44 +584,45 @@ source ~/.bashrc
 
 #### [Run the Arduino IDE (Linux)](#run-the-arduino-ide-linux)
 
-To run the Arduino IDE on Linux platform, type into the terminal as follows.
+LinuxプラットフォームでArduino IDEを実行するには、次のようにターミナルに入力します。
 ```
 arduino
 ```
 
-#### [Porting the OpenCM9.04 board to the Arduino IDE (Linux)](#porting-the-opencm904-board-to-the-arduino-ide-linux)
+#### [Arduino IDE でOpenCM9.04ボードを使用する(Linux)](#porting-the-opencm904-board-to-the-arduino-ide-linux)
 
-##### [Preferences (Linux)](#preferences-linux)
-After Arduino IDE is run, click File → Preferences in the top menu of the IDE. When the Preferences window appears, copy and paste following link to the Additional Boards Manager URLs textbox. (This step may take about 20 min.)
+##### [環境設定 (Linux)](#preferences-linux)
+Arduino IDEの実行後、IDEのトップメニューでFile → Preferencesをクリックします。 Preferencesウィンドウが表示されたら、次のリンクをコピーして、Additional Boards Manager URLsテキストボックスに貼り付けます。  
+（設定に約20分かかる場合があります。）
 
 [https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCM9.04/master/arduino/opencm_release/package_opencm9.04_index.json](https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCM9.04/master/arduino/opencm_release/package_opencm9.04_index.json)
 
 ![](/assets/images/parts/controller/opencm904/opencm9.04_linux_1.png)
 
 
-##### [Install the OpenCM9.04 package via Boards Manager (Linux)](#install-the-opencm904-package-via-boards-manager-linux)
+##### [ボードマネージャー経由でOpenCM9.04パッケージをインストールする(Linux)](#install-the-opencm904-package-via-boards-manager-linux)
 Click Tools → Board → Boards Manager.
 
 ![](/assets/images/parts/controller/opencm904/opencm9.04_linux_2.png)
 
-Type OpenCM9.04 into the textbox to find the OpenCM9.04 by ROBOTIS package. After it finds out, click Install.
+テキストボックスにOpenCM9.04と入力して、ROBOTISパッケージによるOpenCM9.04を検索します。 見つけたら、インストールをクリックします。
 
 ![](/assets/images/parts/controller/opencm904/opencm9.04_linux_3.png)
 
-After the installation, “INSTALLED” will be appeared.
+インストール後、「INSTALLED」が表示されます。
 
 ![](/assets/images/parts/controller/opencm904/opencm9.04_linux_4.png)
 
-See if OpenCM9.04 Board is now on the list of Tools → Board. Click this to import the OpenCM9.04 Board source.
+OpenCM9.04 BoardがTools → Boardのリストにあるかどうかを確認します。 これをクリックしてOpenCM9.04ボードをインポートします。
 
 ![](/assets/images/parts/controller/opencm904/opencm9.04_linux_5.png)
 
-##### [Port setting (Linux)](#port-setting-linux)
-This step shows the port setting for the program uploads. The OpenCM9.04 should be connected to the PC and the OpenCM9.04 via the USB ports.
+##### [ポート設定 (Linux)](#port-setting-linux)
+このステップは、プログラムのアップロード用のポート設定を示しています。 OpenCM9.04は、USBポートを介してPCおよびOpenCM9.04に接続する必要があります。
 
-Select Tools → Port → /dev/ttyACM0.
+Tools → Port → /dev/ttyACM0を選択します。
 
-The value of /dev/ttyACM0 may be different depending on the environment connected to the PC.
+/dev/ttyACM0 の値は、PCに接続されている環境によって異なる場合があります。
 {: .notice}
 
 
