@@ -679,52 +679,52 @@ Tools → Port → /dev/ttyACM0を選択します。
 
 ![](/assets/images/parts/controller/opencm904/opencm9.04_mac_6.png)
 
-### [Install on Windows](#windows-driver-installation)
+### [Windowsのインストール](#windows-driver-installation)
 
-#### [Install Virtual COM Port Driver](#install-virtual-com-port-driver)
-To use OpenCM9.04's USB port as a serial port in Windows, you need a USB CDC driver. You can install the USB driver as follows.
+#### [仮想COMポートドライバのインストール](#install-virtual-com-port-driver)
+WindowsでOpenCM9.04のUSBポートをシリアルポートとして使用するには、USB CDCドライバーが必要です。 USBドライバは次のようにインストールできます。
 
-- [Install Windows Driver](#install-windows-driver)
-- See [Install Windows Driver](#install-windows-driver)
+- [Windows ドライバのインストール](#install-windows-driver)
 
-Download the latest version of Arduino IDE from the official arduino homepage, and install it. Currently, the OpenCM 9.04 will be on service in the version 1.6.4 or later.
+Arduinoの公式HPから最新版のArduino IDEをダウンロード後、インストールします。 現在、OpenCM9.04はバージョン1.6.4以降で動作します。
 
 [https://www.arduino.cc/en/Main/Software](https://www.arduino.cc/en/Main/Software)
 
-The Arduino IDE for Windows is available as an installation version and a compressed version, so you can install it using your preferred method.
+Arduino IDE for Windowsは、インストールバージョンと圧縮バージョンを利用できるので、好みの方法でインストールできます。
 
-#### [Porting the OpenCM 9.04 board to the Arduino IDE (Windows)](#porting-the-opencm-904-board-to-the-arduino-ide-windows)
+#### [Arduino IDE でOpenCM9.04ボードを使用する (Windows)](#porting-the-opencm-904-board-to-the-arduino-ide-windows)
 
-##### [Preferences (Windows)](#preferences-windows)
-After Arduino IDE is run, click File → Preferences in the top menu of the IDE. When the Preferences window appears, copy and paste following link to the Additional Boards Manager URLs textbox. (This step may take about 20 min.)
+##### [環境設定 (Windows)](#preferences-windows)
+Arduino IDEの実行後、IDEのトップメニューでFile → Preferencesをクリックします。 Preferencesウィンドウが表示されたら、次のリンクをコピーして、Additional Boards Manager URLsテキストボックスに貼り付けます。  
+（設定に約20分かかる場合があります。）
 
 [https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCM9.04/master/arduino/opencm_release/package_opencm9.04_index.json](https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCM9.04/master/arduino/opencm_release/package_opencm9.04_index.json)
 
 ![](/assets/images/parts/controller/opencm904/opencm904_win_1.png)
 
-##### [Install the OpenCM9.04 package via Boards Manager (Windows)](#install-the-opencm904-package-via-boards-manager-windows)
-Click Tools → Board → Boards Manager.
+##### [ボードマネージャー経由でOpenCM9.04パッケージをインストールする (Windows)](#install-the-opencm904-package-via-boards-manager-windows)
+Tools → Board → Boards Managerを選択する。
 
 ![](/assets/images/parts/controller/opencm904/opencm904_win_2.png)
 
-Type OpenCM9.04 into the textbox to find the OpenCM9.04 by ROBOTIS package. After it finds out, click Install.
+テキストボックスにOpenCM9.04と入力して、ROBOTISパッケージによるOpenCM9.04を検索します。 見つけたら、インストールをクリックします。
 
 ![](/assets/images/parts/controller/opencm904/opencm904_win_3.png)
 
-After the installation, “INSTALLED” will be appeared.
+インストール後、「INSTALLED」が表示されます。
 
 ![](/assets/images/parts/controller/opencm904/opencm904_win_4.png)
 
-See if OpenCM9.04 Board is now on the list of Tools → Board. Click this to import the OpenCM9.04 Board source.
+OpenCM9.04 BoardがTools → Boardのリストにあるかどうかを確認します。 これをクリックしてOpenCM9.04ボードをインポートします。
 
 ![](/assets/images/parts/controller/opencm904/opencm904_win_5.png)
 
-##### [Port setting (Windows)](#port-setting-windows)
-This step shows the port setting for the program uploads. The OpenCM9.04 should be connected to the PC and the OpenCM9.04 via the USB ports.
+##### [ポート設定 (Windows)](#port-setting-windows)
+このステップは、プログラムのアップロード用のポート設定を示しています。 OpenCM9.04は、USBポートを介してPCおよびOpenCM9.04に接続する必要があります。
 
-Select Tools > Port > COM1.
+Tools → Port → COM1を選択します。
 
-The value of COM1 may be different depending on the environment connected to the PC.
+COM1 の値は、PCに接続されている環境によって異なる場合があります。
 {: .notice}
 
 ## [ライブラリAPI](#library-api)
