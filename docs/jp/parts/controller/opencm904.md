@@ -582,7 +582,7 @@ export PATH=$PATH:$HOME/tools/arduino-1.8.3
 source ~/.bashrc
 ```
 
-#### [Run the Arduino IDE (Linux)](#run-the-arduino-ide-linux)
+#### [Arduino IDEの実行 (Linux)](#run-the-arduino-ide-linux)
 
 LinuxプラットフォームでArduino IDEを実行するには、次のようにターミナルに入力します。
 ```
@@ -601,7 +601,7 @@ Arduino IDEの実行後、IDEのトップメニューでFile → Preferencesを�
 
 
 ##### [ボードマネージャー経由でOpenCM9.04パッケージをインストールする(Linux)](#install-the-opencm904-package-via-boards-manager-linux)
-Click Tools → Board → Boards Manager.
+Tools → Board → Boards Managerを選択する。
 
 ![](/assets/images/parts/controller/opencm904/opencm9.04_linux_2.png)
 
@@ -628,52 +628,53 @@ Tools → Port → /dev/ttyACM0を選択します。
 
 ![](/assets/images/parts/controller/opencm904/opencm9.04_linux_6.png)
 
-### [Install on Mac](#install-on-mac)
+### [Macのインストール](#install-on-mac)
 
-#### [Install the Arduino IDE (Mac)](#install-the-arduino-ide-mac)
+#### [Arduino IDEのインストール (Mac)](#install-the-arduino-ide-mac)
 
-Download the latest version of Arduino IDE from the official arduino homepage, and install it. Currently, the OpenCM9.04 will be on service in the version 1.6.4 or later.
+Arduinoの公式HPから最新版のArduino IDEをダウンロード後、インストールします。 現在、OpenCM9.04はバージョン1.6.4以降で動作します。
 
 [https://www.arduino.cc/en/Main/Software](https://www.arduino.cc/en/Main/Software)
 
-#### [Run the Arduino IDE (Mac)](#run-the-arduino-ide-mac)
+#### [Arduino IDEの実行 (Mac)](#run-the-arduino-ide-mac)
 
-To run the Arduino IDE on Mac platform, click the Arduino IDE icon as follows.
+MacプラットフォームでArduino IDEを実行するには、次のようにArduino IDEアイコンをクリックします。
 
 ![](/assets/images/parts/controller/opencm904/arduino_mac_01.png)
 
 ![](/assets/images/parts/controller/opencm904/arduino_mac_02.png)
 
-#### [Porting the OpenCM9.04 board to the Arduino IDE (Mac)](#porting-the-opencm904-board-to-the-arduino-ide-mac)
+#### [Arduino IDE でOpenCM9.04ボードを使用する (Mac)](#porting-the-opencm904-board-to-the-arduino-ide-mac)
 
-##### [Preferences (Mac)](#preferences-mac)
-After Arduino IDE is run, click File → Preferences in the top menu of the IDE. When the Preferences window appears, copy and paste following link to the Additional Boards Manager URLs textbox. (This step may take about 20 min.)
+##### [環境設定 (Mac)](#preferences-mac)
+Arduino IDEの実行後、IDEのトップメニューでFile → Preferencesをクリックします。 Preferencesウィンドウが表示されたら、次のリンクをコピーして、Additional Boards Manager URLsテキストボックスに貼り付けます。  
+（設定に約20分かかる場合があります。）
 
 [https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCM9.04/master/arduino/opencm_release/package_opencm9.04_index.json](https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCM9.04/master/arduino/opencm_release/package_opencm9.04_index.json)
 
 ![](/assets/images/parts/controller/opencm904/opencm9.04_mac_1.png)
 
-##### [Install the OpenCM9.04 package via Boards Manager (Mac)](#install-the-opencm904-package-via-boards-manager-mac)
-Click Tools → Board → Boards Manager.
+##### [ボードマネージャー経由でOpenCM9.04パッケージをインストールする (Mac)](#install-the-opencm904-package-via-boards-manager-mac)
+Tools → Board → Boards Managerを選択する。
 
 ![](/assets/images/parts/controller/opencm904/opencm9.04_mac_2.png)
 
-Type OpenCM9.04 into the textbox to find the OpenCM9.04 by ROBOTIS package. After it finds out, click Install.
+テキストボックスにOpenCM9.04と入力して、ROBOTISパッケージによるOpenCM9.04を検索します。 見つけたら、インストールをクリックします。
 
 ![](/assets/images/parts/controller/opencm904/opencm9.04_mac_3.png)
 
-After the installation, “INSTALLED” will be appeared.
+インストール後、「INSTALLED」が表示されます。
 
 ![](/assets/images/parts/controller/opencm904/opencm9.04_mac_4.png)
 
-See if OpenCM9.04 Board is now on the list of Tools → Board. Click this to import the OpenCM9.04 Board source.
+OpenCM9.04 BoardがTools → Boardのリストにあるかどうかを確認します。 これをクリックしてOpenCM9.04ボードをインポートします。
 
-##### [Port setting (Mac)](#port-setting-mac)
-This step shows the port setting for the program uploads. The OpenCM9.04 should be connected to the PC and the OpenCM9.04 via the USB ports.
+##### [ポート設定 (Mac)](#port-setting-mac)
+このステップは、プログラムのアップロード用のポート設定を示しています。 OpenCM9.04は、USBポートを介してPCおよびOpenCM9.04に接続する必要があります。
 
-Select Tools → Port → /dev/ttyACM0.
+Tools → Port → /dev/ttyACM0を選択します。
 
-The value of /dev/ttyACM0 may be different depending on the environment connected to the PC.
+/dev/ttyACM0 の値は、PCに接続されている環境によって異なる場合があります。
 {: .notice}
 
 ![](/assets/images/parts/controller/opencm904/opencm9.04_mac_6.png)
