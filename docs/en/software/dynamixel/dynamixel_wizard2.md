@@ -236,7 +236,7 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 
 4. Select `Goal Position` or `Goal Velocity` item in the control table in the middle column.
 
-    **NOTE**: Read a contorl table of your DYNAMIXEL as the item can be different depending on a model and Operation Mode of DYNAMIXEL. 
+    **NOTE**: Read the control table of your DYNAMIXEL as the item can be different depending on the model and Operating Mode of the DYNAMIXEL. 
     {: .notice}
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_004.png)     
