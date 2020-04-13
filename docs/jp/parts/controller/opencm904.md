@@ -190,7 +190,7 @@ USARTチャンネル1はDYNAMIXEL TTLバスに割当てられているため、�
 ### [電源スイッチ](#power-switch)
 このスイッチは、ボードへの電源供給とDYNAMIXELのON/OFFを制御するためのスイッチです。(注: USB ケーブルが接続されているときは、ボードの電源は常にオンになっています)  
 
-### [シリアルバッテリーソケット](#serial-battery-socket)
+### [直列バッテリーソケット](#serial-battery-socket)
 LBS-04リチウムイオン電池2本を接続します。  
 
 **注意** : 回路をショートさせてしまうため、基板に接続されている間はバッテリーを充電しないでください。バッテリーを充電する際には、必ず基板から切り離してください。  
@@ -225,7 +225,7 @@ LBS-04リチウムイオン電池2本を接続します。
 
 ### [ユーザーボタン](#user-button)
 ユーザが制御/プログラムできるボタンです。ピン23またはBOARD_BUTTON_PINとして使用できます。setup()でpinMode(23, INPUT_PULLDOWN)として初期化することができます。    
-もし、OpenCM9.04がプログラムをダウンロードできない場合は、「ユーザーボタン」を押しながらUSBケーブルを接続してください。ステータスLEDが点灯したままになり、ダウンロードが開始されます。  
+OpenCM9.04がプログラムをダウンロードできない場合は、「ユーザーボタン」を押しながらUSBケーブルを接続してください。ステータスLEDが点灯したままになり、ダウンロードが開始されます。  
 
 ![](/assets/images/parts/controller/opencm904/opencm904_08.png)
 
@@ -249,10 +249,10 @@ OpenCM9.04のプログラムをテストするためのLEDです。14番ピン�
 > ステータスLEDの位置
 
 ### [リセットボタン](#reset-button)
-リセットするCPUを模倣します。 
+CPUをリセットします。
 
 ### [JTAG/SWD 4ピン](#jtagswd-4-pin)
-ST-LINKやその他のインサーキットデバッガ/プログラマとの接続に使用します。  
+ST-LINKや、その他のインサーキットデバッガ/プログラマとの接続に使用します。  
 JTAG/SWD 4ピンポートは、上級者の方の様々な開発にご利用いただけます。以下にST-LINKの接続例を示します。  
 ![](/assets/images/parts/controller/opencm904/opencm904_11.png)
 
@@ -271,19 +271,19 @@ ROBOTISの5ピン-デバイス（モジュール）を接続するために使�
 
 |    5-ピン デバイスタイプ     | ポート1 | ポート2 | ポート3 | ポート4 |
 |:------------------------:|:------:|:------:|:------:|:------:|
-|        IRセンサー         |   O    |   X    |   X    |   O    |
-|        DMSセンサー        |   O    |   O    |   O    |   O    |
-|       ジャイロセンサー     |   O    |   O    |   O    |   O    |
-|       タッチセンサー       |   O    |   O    |   O    |   O    |
-|       カラーセンサー       |   X    |   O    |   O    |   X    |
-|        磁気センサー       |   O    |   O    |   O    |   O    |
-|        温度センサー       |   O    |   O    |   O    |   O    |
-| Passive IRセンサー PIR-10 |   O    |   O    |   O    |   O    |
+|        IRセンサ           |   O    |   X    |   X    |   O    |
+|        DMSセンサ          |   O    |   O    |   O    |   O    |
+|       ジャイロセンサ       |   O    |   O    |   O    |   O    |
+|       タッチセンサ         |   O    |   O    |   O    |   O    |
+|       カラーセンサ         |   X    |   O    |   O    |   X    |
+|        磁気センサ         |   O    |   O    |   O    |   O    |
+|        温度センサ         |   O    |   O    |   O    |   O    |
+| Passive IRセンサ PIR-10  |   O    |   O    |   O    |   O    |
 |       LED モジュール      |   X    |   O    |   O    |   X    |
 
-> 例：ROBOTISセンスとLEDモジュールの互換性一覧
+> 例：ROBOTIS センサとLEDモジュールの互換性一覧
 
-### [I/Oヘッダー](#io-header)
+### [I/Oヘッダ](#io-header)
 OpenCM9.04のCPU STM32F103CBはGPIOピンを介してアクセスできます。  
 26本のGPIOピン(0～25)はデジタルI/Oで、3.3Vで動作します。デジタル入力はHIGH(3.3V)またはLOW(0V)です。  
 デジタル入力の最大トグル速度は18Mhzです。(ピン22と23を除いて、最大トグル速度は2Mhzです)。  
@@ -370,7 +370,7 @@ OpenCM9.04のすべてのGPIOピンは内部的に"プルアップ"または"プ
 
 **注意** : アナログリファレンス(AREF)を5Vに修正した場合は、5Vまで対応しているかどうかを確認してください。
 
-## [ピンネームの定義](#pin-name-definition)
+## [ピン名の定義](#pin-name-definition)
 
 ```c++
 #define LED_BUILTIN             14
@@ -548,7 +548,7 @@ OpenCM IDEがメンテナンスされなくなるため、OpenCM IDEを使用し
 ### [Linuxのインストール](#install-on-linux)
 
 #### [USBポートの設定 (Linux)](#usb-port-settings-linux)
-OpenCM9.04 USBポートがルート権限なしでArduino IDEプログラムをアップロードできるようにします。
+OpenCM9.04 USBポートがルート権限無しでArduino IDEプログラムをアップロードできるようにします。
 ```
 wget https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCM9.04/master/99-opencm-cdc.rules
 sudo cp ./99-opencm-cdc.rules /etc/udev/rules.d/
@@ -744,7 +744,7 @@ Arduino IDEにライブラリを追加する方法は3つあります。
 
 ![](/assets/images/parts/interface/dynamixel_shield/library_manager_02.png)
 
-DYNAMIXEL2Arduinoライブラリが正常にインストールされている場合、DYNAMIXELを制御するために役に立つ例は、DYNAMIXEL2Arduinoカテゴリの下で見つけることができます。
+DYNAMIXEL2Arduinoライブラリが正常にインストールされている場合、DYNAMIXELを制御するために役に立つサンプルプログラムは、DYNAMIXEL2Arduinoカテゴリで見つけることができます。
 
 ### [Dynamixel2Arduinoライブラリ](#dynamixel2arduino-library)
 
@@ -776,7 +776,7 @@ DYNAMIXEL2Arduinoライブラリが正常にインストールされている場
 
 #### [マスタークラス](#master-class)
 
-Dynamixel2Arduinoクラスは、Masterクラスから以下のパブリック関数を継承しています。
+Dynamixel2Arduinoクラスは、マスタークラスから以下のパブリック関数を継承しています。
 
 
 - [syncRead()]{: .popup}
@@ -857,7 +857,7 @@ void loop(){
 
 ## [ブザー](#buzzer)
 
-ArduinoトーンAPIを使用してブザーを駆動することができます。ブザー対応のピンは、OpenCM 9.04のすべてのI/Oピンで利用可能です。
+ArduinoトーンAPIを使用してブザーを駆動できます。ブザー対応のピンは、OpenCM 9.04のすべてのI/Oピンで利用可能です。
 
 ### [ブザーとの接続](#connection-with-buzzer)
 
