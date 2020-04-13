@@ -135,7 +135,7 @@ $ make
 # [Device Setup](#device-setup)
 
 **WARNING**: You should check the device setup **over and over again** before you use the library.  
-Please check **power input** and **usb port** once again.
+Please check **power Input** and **usb port** once again.
 {: .notice--warning}
 
 ## [U2D2](#u2d2)
@@ -901,285 +901,287 @@ float convertValue2Load(int16_t value);
 
 ### bool init(const char* device_name = "/dev/ttyUSB0", uint32_t baud_rate = 57600, const char **log = NULL)  
 
-**Description**  
-Initialization portHandler  
+**説明文**  
+portHandlerの初期化を行います。
 
-**Input**  
-1. `device_name` : Set USB port name
-1. `baud_rate` : Set baud rate of DYNAMIXEL  
+**引数**  
+1.　`device_name` : USBポート名を設定します。  
+2.　`baud_rate` : DYNAMIXELのボーレートを設定します。 
 
-**Output**  
-If all input is set successfully, return true. If not, return false
+**戻り値**  
+すべての引数が正常に設定されていれば、trueを返します。そうでない場合はfalseを返します。
 
 ### bool begin(const char* device_name = "/dev/ttyUSB0", uint32_t baud_rate = 57600, const char **log = NULL)  
 
-**Description**  
-Initialization portHandler  
+**説明文**  
+portHandlerの初期化を行います。
 
-**Input**  
-1. `device_name` : Set USB port name
-1. `baud_rate` : Set baud rate of DYNAMIXEL  
+**引数**  
+1.　`device_name` : USBポート名を設定します。  
+2.　`baud_rate` : DYNAMIXELのボーレートを設定します。 
 
-**Output**  
-If all input is set successfully, return true. If not, return false  
+**戻り値**  
+すべての引数が正常に設定されていれば、trueを返します。そうでない場合はfalseを返します。
 
 ### bool setPortHandler(const char *device_name, const char **log = NULL)
-**Description**  
-Set PortHandler  
+**説明文**  
+PortHandlerの設定をします。
 
-**Input**  
-1. `device_name` : Set USB port name  
+**引数**  
+1.　`device_name` : USBポート名を設定します。  
 
-**Output**  
-If all input is set successfully, return true. If not, return false  
+**戻り値**  
+すべての引数が正常に設定されていれば、trueを返します。そうでない場合はfalseを返します。  
 
 ### bool setBaudrate(uint32_t baud_rate, const char **log = NULL)
-**Description**  
-Set baud rate of DYNAMIXEL  
+**説明文**  
+DYNAMIXELのボーレートを設定します。  
 
-**Input**  
-1. `baud_rate` : Set baud rate of DYNAMIXEL  
+**引数**  
+1. `baud_rate` : DYNAMIXELのボーレートを設定します。 
 
-**Output**  
-If all input is set successfully, return true. If not, return false  
+**戻り値**  
+すべての引数が正常に設定されていれば、trueを返します。そうでない場合はfalseを返します。 
+
 
 ### bool setPacketHandler(float protocol_version, const char **log = NULL)
-**Description**  
-Set PacketHandler  
+**説明文**  
+PacketHandlerの設定を行います。  
 
-**Input**  
-1. `protocol_version` : Set protocol version of DYNAMIXEL  
+**引数**  
+1. `protocol_version` : DYNAMIXELのプロトコルバージョンを設定します。  
 
-**Output**  
-If all input is set successfully, return true. If not, return false  
+**戻り値**  
+すべての引数が正常に設定されていれば、trueを返します。そうでない場合はfalseを返します。  
 
 ### float getProtocolVersion(void)
-**Description**  
-Get protocol version of PacketHandler  
+**説明文**  
+PacketHandlerのプロトコルバージョンを取得します。  
 
-**Input**  
+**引数**  
 
-**Output**  
-Return protocol version of PacketHandler  
+**戻り値**  
+PacketHandlerのプロトコルバージョンを返します。  
 
 ### uint32_t getBaudrate(void)
-**Description**  
-Get baud rate of PortHandler  
+**説明文**  
+PortHandlerのボーレートを取得します。  
 
-**Input**  
-**Output**  
-Return baud rate of PortHandler
+**引数**  
+**戻り値**  
+PortHandlerのボーレートを返します。
 
 ### const char * getModelName(uint8_t id, const char **log = NULL)
-**Description**  
-Get model name of DYNAMIXEL  
+**説明文**  
+DYNAMIXELのモデル名を取得します。  
 
-**Input**  
-1. `id` : Set DYNAMIXEL ID  
+**引数**  
+1. `id` : DYNAMIXELのIDを設定します。  
 
-**Output**  
-Return model name  
+**戻り値**  。
+型番を返します。  
 
 ### uint16_t getModelNumber(uint8_t id, const char **log = NULL)
 **Description**  
-Get model number of DYNAMIXEL  
+DYNAMIXELの型番を取得します。  
 
 **Input**  
-1. `id` : Set DYNAMIXEL ID  
+1. `id` : DYNAMIXELのIDを設定します。  
 
-**Output**  
-Return model number  
+**戻り値**  
+型番を返します。  
 
 ### const ControlItem *getControlTable(uint8_t id, const char **log = NULL)
-**Description**  
-Get control table(including ID, Baud_Rate, Goal_Position, ...) of DYNAMIXEL  
+**説明文**  
+DYNAMIXELの制御テーブル(ID、ボーレート、目標位置、...を含む)を取得します。
+ 
 
-**Input**
-1. `id` : Set DYNAMIXEL ID  
+**引数**
+1. `id` : DYNAMIXELのIDを設定します。  
 
-**Output**  
-Return control table  
+**戻り値**  
+制御テーブルを返します。
 
 ### const ControlItem *getItemInfo(uint8_t id, const char *item_name, const char **log = NULL)
-**Description**  
-Get item info in control table of DYNAMIXEL  
+**説明文**  
+DYNAMIXELの制御テーブルのアイテム情報を取得します。
 
-**Input**  
-1. `id` : Set DYNAMIXEL ID
-1. `item_name` : Item name in control table  
+**引数**  
+1. `id` : DYNAMIXELのIDを設定します。
+1. `item_name` : 制御テーブルの項目名です。
 
-**Output**  
-Return item info  
+**戻り値**  
+項目情報を返します。  
 
 ### uint8_t getTheNumberOfControlItem(uint8_t id, const char **log = NULL)
-**Description**  
-Get the number of control item  
+**説明文**  
+制御項目の数を取得します。  
 
-**Input**  
-1. `id` : Set DYNAMIXEL ID  
+**引数**  
+1. `id` : DYNAMIXELのIDを設定します。  
 
-**Output**  
-Return the number of control item  
+**戻り値**  
+制御項目の数を返します。  
 
 ### const ModelInfo* getModelInfo(uint8_t id, const char **log = NULL)
-**Description**  
-Get model information(RPM, min/max position, ...) of DYNAMIXEL  
+**説明文**  
+DYNAMIXELのモデル情報（RPM、最小/最大位置など）を取得します。
 
-**Input**  
-1. `id` : Set DYNAMIXEL ID  
+**引数**  
+1. `id` : DYNAMIXELのIDを設定します。  
 
-**Output**  
-Return model information   
+**戻り値**  
+モデル情報を返します。   
 
 ### uint8_t getTheNumberOfSyncWriteHandler(void)
-**Description**  
-Get the number of sync write handler  
+**説明文**  
+同期書き込みハンドラの数を取得します。  
 
-**Input**  
-**Output**  
-Return the number of sync write handler   
+**引数**  
+**戻り値**  
+同期書き込みハンドラの数を返します。   
 
 ### uint8_t getTheNumberOfSyncReadHandler(void)
-**Description**  
-Get the number of sync read handler  
+**説明文**  
+同期書き込みハンドラの数を取得します。  
 
-**Input**    
-**Output**   
-Return the number of sync read handler    
+**引数**    
+**戻り値**   
+同期書き込みハンドラの数を返します。    
 
 ### uint8_t getTheNumberOfBulkReadParam(void)
-**Description**  
-Get the number of bulk read param  
+**説明文**  
+bulk readパラメーターの数を取得します。  
 
-**Input**   
-**Output**  
-Return the number of bulk read param  
+**引数**   
+**戻り値**  
+bulk readパラメーターの数を返します。  
 
 ### bool scan(uint8_t *get_id, uint8_t *get_the_number_of_id, uint8_t range = 253, const char **log = NULL)
-**Description**  
-Ping DYNAMIXEL between ranges. If Ping success, all information on DYNAMIXEL will be saved  
+**説明文**  
+範囲間でDYNAMIXELをPingします。 Pingが成功した場合、DYNAMIXELの全ての情報が保存されます。
 
-**Input**  
-1. `get_id` : Get found IDs
-1. `get_the_number_of_id` : Get found the number of IDs
-1. `range` : Set scan range (starts to 0)  
+**引数**  
+1. `get_id` : 検出したIDを取得します。
+1. `get_the_number_of_id` : 検出したIDの数を取得します。
+1. `range` : スキャン範囲を設定します。（0から始まる）  
 
-**Output**  
-If ping instruction successfully work, return true. If not, return false  
+**戻り値**  
+ping命令が正常に動作した場合はtrueを返します。そうでない場合はfalseを返します。 
 
 ### bool scan(uint8_t *get_id, uint8_t *get_the_number_of_id, uint8_t start_number, uint8_t end_number, const char **log = NULL)
-**Description**  
-Ping DYNAMIXEL between specific ranges. If Ping success, all information on DYNAMIXEL will be saved  
+**説明文**  
+特定の範囲間でDYNAMIXELをPingします。Pingが成功した場合、DYNAMIXELの全ての情報が保存されます。
 
-**Input**  
-1. `get_id` : Get found IDs
-1. `get_the_number_of_id` : Get found the number of IDs
-1. `start_number` : Set start number for ping
-1. `end_number` : Set end number for ping  
+**引数**  
+1. `get_id` : 検出したIDを取得します。
+1. `get_the_number_of_id` : 検出したIDの数を取得します。
+1. `start_number` : pingの開始番号を設定します。
+1. `end_number` : pingの終了番号を設定します。  
 
-**Output**  
-If ping instruction successfully work, return true. If not, return false  
+**戻り値**  
+ping命令が正常に動作した場合はtrueを返します。そうでない場合はfalseを返します。
 
 ### bool ping(uint8_t id, uint16_t *get_model_number, const char **log = NULL)
-**Description**  
-Ping DYNAMIXEL. If Ping success, all information on DYNAMIXEL will be saved  
+**説明文**  
+DYNAMIXELをPingします。Pingが成功すると、DYNAMIXELのすべての情報が保存されます。  
 
-**Input**  
-1. `id` : Set ID
-1. `get_model_number` : Get model number of pinged DYNAMIXEL  
+**引数**  
+1. `id` : IDを設定する。
+1. `get_model_number` : pingされたDYNAMIXELの型番を取得します。  
 
-**Output**  
-If ping instruction successfully work, return true. If not, return false  
+**戻り値**  
+ping命令が正常に動作した場合はtrueを返します。そうでない場合はfalseを返します。
 
 ### bool ping(uint8_t id, const char **log = NULL)
-**Description**  
-Ping DYNAMIXEL. If Ping success, all information on DYNAMIXEL will be saved  
+**説明文**  
+DYNAMIXELをPingします。Pingが成功すると、DYNAMIXELのすべての情報が保存されます。  
 
-**Input**  
-1. `id` : Set ID  
+**引数**  
+1. `id` : IDを設定する。  
 
-**Output**  
-If ping instruction successfully work, return true. If not, return false  
+**戻り値**  
+ping命令が正常に動作した場合はtrueを返します。そうでない場合はfalseを返します。  
 
 ### bool clearMultiTurn(uint8_t id, const char **log = NULL)
-**Description**  
-Send clearMultiTurn instruction  
+**説明文**  
+クリアマルチターン命令を送信します。
 
-**Input**  
-1. `id` : Set ID  
+**引数**  
+1. `id` : IDを設定します。  
 
-**Output**  
-If clearMultiTurn instruction set successfully work, return true. If not, return false  
+**戻り値**  
+クリアマルチターン命令セットが正常に動作した場合はtrueを返します。そうでない場合はfalseを返します。  
 
 ### bool reboot(uint8_t id, const char **log = NULL)
-**Description**  
-Send reboot instruction  
+**説明文**  
+再起動命令を送信します。  
 
-**Input**  
-1. `id` : Set ID  
+**引数**  
+1. `id` : IDを設定します。  
 
-**Output**  
-If reboot instruction set successfully work, return true. If not, return false  
+**戻り値**  
+再起動命令セットが正常に動作した場合はtrueを返します。そうでない場合はfalseを返します。  
 
 ### bool reset(uint8_t id, const char **log = NULL)
-**Description**  
-Send reset instruction  
+**説明文**  
+リセット命令を送信します。  
 
-**Input**  
-1. `id` : Set ID  
+**引数**  
+1. `id` : IDを設定します。  
 
-**Output**  
-If reset instruction set successfully work, return true. If not, return false  
+**戻り値**  
+リセット命令セットが正常に動作した場合はtrueを返します。そうでない場合はfalseを返します。  
 
 ### bool writeRegister(uint8_t id, uint16_t address, uint16_t length, uint8_t* data, const char **log = NULL)
 **Description**  
-Write data to DYNAMIXEL and wait the signal include the data are successfully write  
+DYNAMIXELにデータを書き込み、正常に書き込まれたデータを含む信号を待ちます。  
 
-**Input**  
-1. `id` : Set ID
-1. `address` : Set address of control table item
-1. `length` : Set length of control table item
-1. `data` : Set data  
+**引数**  
+1. `id` : IDを設定します。
+1. `address` : 制御テーブル項目のアドレスを設定する。
+1. `length` : 制御テーブル項目の長さを設定する。
+1. `data` : データを設定する。  
 
-**Output**  
-If writeTxRx instruction set successfully work, return true. If not, return false  
+**戻り値**  
+writeTxRx命令が正常に動作した場合はtrueを返します。そうでない場合にはfalseを返します。
 
 ### bool writeRegister(uint8_t id, const char *item_name, int32_t data, const char **log = NULL)
 **Description**  
-Write data to DYNAMIXEL and wait the signal include the data are successfully write  
+DYNAMIXELにデータを書き込み、正常に書き込まれたデータを含む信号を待ちます。  
 
-**Input**  
-1. `id` : Set ID
-1. `item_name` : Set item name of control table item (ex, Goal_Position, Goal_Velocity,...)
-1. `data` : Set data  
+**引数**  
+1. `id` : IDを設定する。
+1. `item_name` : 制御テーブルの項目名を設定する。（例：目標位置、目標速度、...)
+1. `data` : データを設定する。  
 
-**Output**  
-If writeTxRx instruction set successfully work, return true. If not, return false  
+**戻り値**  
+writeTxRx命令セットが正常に動作した場合はtrueを返します。そうでない場合はfalseを返します。  
 
 ### bool writeOnlyRegister(uint8_t id, uint16_t address, uint16_t length, uint8_t *data, const char **log = NULL)
-**Description**  
-Only write data to DYNAMIXEL. Will not wait any signal  
+**説明文**  
+DYNAMIXELにデータを書き込むだけです。他の信号を待ちません。
 
-**Input**  
-1. `id` : Set ID
-1. `address` : Set address of control table item
-1. `length` : Set length of control table item
-1. `data` : Set data  
+**引数**  
+1. `id` : IDを設定します。
+1. `address` : 制御テーブル項目のアドレスを設定する。
+1. `length` : 制御テーブル項目の長さを設定する。
+1. `data` : データを設定する。  
 
-**Output**  
-If writeTxOnly instruction set successfully work, return true. If not, return false  
+**戻り値**  
+writeTxOnly命令が正常に動作した場合はtrueを返します。そうでない場合にはfalseを返します。  
 
 ### bool writeOnlyRegister(uint8_t id, const char *item_name, int32_t data, const char **log = NULL)
-**Description**  
-Only write data to DYNAMIXEL. Will not wait any signal  
+**説明文**  
+DYNAMIXELにデータを書き込むだけです。他の信号を待ちません。  
 
-**Input**  
-1. `id` : Set ID
-1. `item_name` : Set item name of control table item (ex, Goal_Position, Goal_Velocity,...)
-1. `data` : Set data  
+**引数**  
+1. `id` : IDを設定する。
+1. `item_name` : 制御テーブルの項目名を設定する。（例：目標位置、目標速度、...)
+1. `data` : データを設定する。  
 
-**Output**  
-If writeTxOnly instruction set successfully work, return true. If not, return false  
+**戻り値**  
+writeTxOnly命令が正常に動作した場合はtrueを返します。そうでない場合にはfalseを返します。  
 
 ### bool readRegister(uint8_t id, uint16_t address, uint16_t length, uint32_t *data, const char **log = NULL)
 **Description**  
