@@ -1151,7 +1151,7 @@ writeTxRx命令が正常に動作した場合はtrueを返します。そうで�
 DYNAMIXELにデータを書き込み、書き込み完了信号を待ちます。  
 
 **引数**  
-1. `id` : IDを設定する。
+1. `id` : IDを設定します。
 1. `item_name` : コントロールテーブルの項目名を設定する。（例：目標位置、目標速度、...)
 1. `data` : データを設定する。  
 
@@ -1184,218 +1184,218 @@ DYNAMIXELにデータを書き込むだけです。他の信号を待ちませ�
 writeTxOnly命令が正常に動作した場合はtrueを返します。そうでない場合にはfalseを返します。  
 
 ### bool readRegister(uint8_t id, uint16_t address, uint16_t length, uint32_t *data, const char **log = NULL)
-**Description**  
-Read data from DYNAMIXEL  
+**説明文**  
+DYNAMIXELからデータを読み出します。  
 
-**Input**  
-1. `id` : Set ID
-1. `address` : Set address of control table item
-1. `length` : Set length of control table item
-1. `data` : Get data  
+**引数**  
+1. `id` : IDを設定します。
+1. `address` : コントロールテーブルの項目名を設定する。
+1. `length` : コントロールテーブル項目の長さを設定する。
+1. `data` : データを取得する。  
 
-**Output**  
-If readTxRx instruction set successfully work, return true. If not, return false  
+**戻り値**  
+readTxRx命令が正常に動作した場合はtrueを返します。そうでない場合にはfalseを返します。  
 
 ### bool readRegister(uint8_t id, const char *item_name, int32_t *data, const char **log = NULL)
-**Description**  
-Read data from DYNAMIXEL  
+**説明文**  
+DYNAMIXELからデータを読み出します。  
 
-**Input**  
-1. `id` : Set ID
-1. `item_name` : Set item name of control table item (ex, Goal_Position, Goal_Velocity,...)
-1. `data` : Get data  
+**引数**  
+1. `id` : IDを設定します。
+1. `item_name` : コントロールテーブルの項目名を設定する（例：目標位置、目標速度、...）
+1. `data` : データを取得する。  
 
-**Output**  
-If readTxRx instruction set successfully work, return true. If not, return false  
+**戻り値**  
+readTxRx命令が正常に動作した場合はtrueを返します。そうでない場合にはfalseを返します。  
 
 ### void getParam(int32_t data, uint8_t *param)
-**Description**  
-Transform 32-bit data to 8-bit parameter  
+**説明文**  
+32ビットデータを8ビットパラメーターに変換します。
 
-**Input**   
-1. `data` : Set 32-bit data
-1. `param` : Get 8-bit parameter  
+**引数**  
+1. `data` : 32ビットのデータを設定する。
+1. `param` : 8ビットのパラメーターを取得する。  
 
-**Output**  
+**戻り値**  
 
 ### bool addSyncWriteHandler(uint16_t address, uint16_t length, const char **log = NULL)
-**Description**   
-Add syncWriteHandler  
+**説明文**   
+syncWriteハンドラを追加します。
 
-**Input**  
-1. `address` : Set address of control table item
-1. `length` : Set lengh of control table item  
+**引数**  
+1. `address` : コントロールテーブル項目のアドレスを設定する。
+1. `length` : コントロールテーブル項目の長さを設定する。  
 
-**Output**  
-If try to add syncWriteHanlder over the max amount(default is 5), return false. If not, return true  
+**戻り値**  
+syncWriteハンドラを最大値（デフォルトは5）を超えて追加しようとした場合はfalseを返します。そうでない場合にはtrueを返します。  
 
 ### bool addSyncWriteHandler(uint8_t id, const char *item_name, const char **log = NULL)
 **Description**  
-Add syncWriteHandler  
+syncWriteハンドラを追加します。  
 
-**Input**  
-1. `id` : Set DYNAMIXEL ID for reference of control table
-1. `item_name` : Set item name of control table item (ex, Goal_Position, Goal_Velocity,...)  
+**引数**  
+1. `id` : コントロールテーブルを参照するためのDYNAMIXELのIDを設定します。
+1. `item_name` : コントロールテーブルの項目名を設定する（例；目標位置、目標速度、...）  
 
-**Output**  
-If try to add syncWriteHanlder over the max amount(default is 5), return false or can't find item name. If not, return true  
+**戻り値**  
+syncWriteハンドラを最大値（デフォルトは5）を超えて追加しようとした場合はfalseを返す、もしくは項目名が見つからなくなります。そうでない場合にはtrueを返します。  
 
 ### bool syncWrite(uint8_t index, int32_t *data, const char **log = NULL)
 **Description**  
-Execute sync write to all pinged DYNAMIXEL  
+全てのpingされたDYNAMIXELに同期書き込みを実行します。  
 
-**Input**  
-1. `index` : Set index of syncWriteHandler
-1. `data` : Set data  
+**引数**  
+1. `index` : syncWriteハンドラのインデックスを設定する。
+1. `data` : データを設定する。  
 
-**Output**  
-If addParam or txPacket instruction set successfully work, return true. If not, return false
-
+**戻り値**  
+addパラメーターまたはtxtパケット命令が正常に動作した場合はtrueを返します。そうでない場合にはfalseを返します。  
+　
 ### bool syncWrite(uint8_t index, uint8_t *id, uint8_t id_num, int32_t *data, uint8_t data_num_for_each_id, const char **log = NULL)
 **Description**  
-Execute sync write to some DYNAMIXEL  
+いくつかのDYNAMIXELへの同期書き込みを実行します。  
 
-**Input**  
-1. `index` : Set index of syncWriteHandler
-1. `id` : Set IDs
-1. `id_num` : Set the number of IDs
-1. `data` : Set data
-1. `data_num_for_each_id` : Set the number of data for each ID  
+**引数**  
+1. `index` : syncWriteハンドラのインデックスを設定する。
+1. `id` : IDを設定する。
+1. `id_num` : IDの数を設定する。
+1. `data` : データを設定する。
+1. `data_num_for_each_id` : 各IDのデータ数を設定する。  
 
-**Output**  
-If addParam or txPacket instruction set successfully work, return true. If not, return false  
+**戻り値**  
+addパラメーターまたはtxtパケット命令が正常に動作した場合はtrueを返します。そうでない場合にはfalseを返します。  
 
 ### bool addSyncReadHandler(uint16_t address, uint16_t length, const char **log = NULL)
-**Description**  
-Add syncReadHandler  
+**説明文**  
+syncReadハンドラを追加します。  
 
-**Input**  
-1. `address` : Set address of control table item
-1. `length` : Set lengh of control table item  
+**引数**  
+1. `address` : コントロールテーブル項目のアドレスを設定する。
+1. `length` : コントロールテーブル項目の長さを設定する  
 
-**Output**  
-If try to add syncReadHandler over the max amount(default is 5), return false. If not, return true   
+**戻り値**  
+syncWriteハンドラを最大値（デフォルトは5）を超えて追加しようとした場合はfalseを返す、もしくは項目名が見つからなくなります。そうでない場合にはtrueを返します。  
 
 ### bool addSyncReadHandler(uint8_t id, const char *item_name, const char **log = NULL)
-**Description**  
-Add syncReadHandler  
+**説明文**  
+syncReadハンドラを追加します。  
 
-**Input**  
-1. `id` : Set DYNAMIXEL ID for reference of control table
-1. `item_name` : Set item name of control table item (ex, Goal_Position, Goal_Velocity,...)  
+**引数**  
+1. `id` : コントロールテーブルを参照するためのDYNAMIXELのIDを設定します。
+1. `item_name` : コントロールテーブルの項目名を設定する（例：目標位置、目標速度、...）  
 
-**Output**  
-If try to add syncReadHandler over the max amount(default is 5), return false or can't find item name. If not, return true  
+**戻り値**  
+syncWriteハンドラを最大値（デフォルトは5）を超えて追加しようとした場合はfalseを返す、もしくは項目名が見つからなくなります。そうでない場合にはtrueを返します。  
 
 ### bool syncRead(uint8_t index, const char **log = NULL)
-**Description**  
-Execute sync read from all pinged DYNAMIXEL  
+**説明文**  
+全てのpingされたDYNAMIXELからの同期読み出しを実行します。  
 
-**Input**  
-1. `index` : Set index of syncWriteHandler  
+**引数**  
+1. `index` : syncWriteハンドラのインデックスを設定します。  
 
-**Output**  
-If addParam or txRxPacket instruction set successfully work, return true. If not, return false  
+**戻り値**  
+addパラメーターまたはtxtパケット命令が正常に動作した場合はtrueを返します。そうでない場合にはfalseを返します。  
 
 ### bool syncRead(uint8_t index, uint8_t *id, uint8_t id_num, const char **log = NULL)
-**Description**  
-Execute sync read from some DYNAMIXEL  
+**説明文**  
+いくつかのDYNAMIXELからの同期読み出しを実行します。  
 
-**Input**  
-1. `index` : Set index of syncWriteHandler
-1. `id` : Set IDs
-1. `id_num` : Set the number of IDs  
+**引数**  
+1. `index` : syncWriteハンドラのインデックスを設定する。
+1. `id` : IDを設定する。
+1. `id_num` : IDの数を設定する。  
 
-**Output**  
-If addParam or txRxPacket instruction set successfully work, return true. If not, return false  
+**戻り値**  
+addパラメーターまたはtxtパケット命令が正常に動作した場合はtrueを返します。そうでない場合にはfalseを返します。  
 
 ### bool getSyncReadData(uint8_t index, int32_t *data, const char **log = NULL)
-**Description**  
-Get data read by syncRead function from all pinged DYNAMIXEL  
+**説明文**    
+全てのpingされたDYNAMIXELに同期書き込みを実行します。  
 
-**Input**  
-1. `index` : Set index of syncWriteHandler
-1. `data` : Get data  
+**引数**  
+1. `index` : syncWriteハンドラのインデックスを設定する。
+1. `data` : データを取得する。  
 
 **Output**  
-If isAvailable instruction set successfully work, return true. If not, return false  
+isAvailable命令が正常に動作した場合はtureを返します。そうでない場合にはfalseを返します。  
 
 ### bool getSyncReadData(uint8_t index, uint8_t *id, uint8_t id_num, int32_t *data, const char **log = NULL)
-**Description**    
-Get data read by syncRead function from some DYNAMIXEL  
+**説明文**    
+いくつかのDYNAMIXELからsyncRead関数で読み込んだデータを取得します。  
 
-**Input**  
-1. `index` : Set index of syncWriteHandler
-1. `id` : Set IDs
-1. `id_num` : Set the number of IDs
-1. `data` : Get data  
+**引数**  
+1. `index` : syncWriteハンドラのインデックスを設定する。
+1. `id` : IDを設定する。
+1. `id_num` : IDの数を設定する。
+1. `data` : データを取得する。  
 
-**Output**  
-If isAvailable instruction set successfully work, return true. If not, return false  
+**戻り値**  
+isAvailable命令が正常に動作した場合はtrueを返します。そうでない場合にはfalseを返します。  
 
 ### bool getSyncReadData(uint8_t index, uint8_t *id, uint8_t id_num, uint16_t address, uint16_t length, int32_t *data, const char **log = NULL)
-**Description**  
-Get data read by syncRead function from some DYNAMIXEL  
+**説明文**  
+いくつかのDYNAMIXELからsyncRead関数で読み込んだデータを取得します。  
 
-**Input**  
-1. `index` : Set index of syncWriteHandler
-1. `id` : Set IDs
-1. `id_num` : Set the number of IDs
-1. `address` : Set address of control table item
-1. `length` : Set lengh of control table item
-1. `data` : Get data  
+**引数**  
+1. `index` : syncWriteハンドラのインデックスを設定する。
+1. `id` : IDを設定する。
+1. `id_num` : IDの数を設定する。
+1. `address` : コントロールテーブル項目のアドレスを設定する。
+1. `length` : コントロールテーブル項目の長さを設定する・
+1. `data` : データを取得する。  
 
-**Output**  
-If isAvailable instruction set successfully work, return true. If not, return false   
+**戻り値**  
+isAvailable命令が正常に動作した場合はtrueを返します。そうでない場合にはfalseを返します。  
 
 ### bool initBulkWrite(const char **log = NULL)
-**Description**  
-Initialization bulkWriteHandler  
+**説明文**  
+bulkWriteハンドラ  
 
-**Input**    
-**Output**  
-If portHanlder and packetHandler is loaded successfully work, return true. If not, return false   
+**引数**    
+**戻り値**  
+ポートハンドラとパケットハンドラが正常に動作した場合はtrueを返します。そうでない場合にはfalseを返します。  
 
 ### bool addBulkWriteParam(uint8_t id, uint16_t address, uint16_t length, int32_t data, const char **log = NULL)
-**Description**  
-Add parameter for bulkWrite  
+**説明文**  
+bulkWrite用のパラメーターを追加します。  
 
-**Input**  
-1. `id` : Set IDs
-1. `address` : Set address of control table item
-1. `length` : Set lengh of control table item
-1. `data` : Set data  
+**引数**  
+1. `id` : IDを設定する。
+1. `address` : コントロールテーブル項目のアドレスを設定する。
+1. `length` : コントロールテーブル項目の長さを設定する。
+1. `data` : データを設定する。  
 
-**Output**  
-If addParam instruction set successfully work, return true. If not, return false   
+**戻り値**  
+addParam命令が正常に動作した場合はtureを返します。そうでない場合にはfalseを返します。  
 
 ### bool addBulkWriteParam(uint8_t id, const char *item_name, int32_t data, const char **log = NULL)
-**Description**  
-Add parameter for bulkWrite  
+**説明文**  
+bulkWrite用のパラメーターを追加します。  
 
-**Input**  
-1. `id` : Set DYNAMIXEL ID for reference of control table
-1. `item_name` : Set item name of control table item (ex, Goal_Position, Goal_Velocity,...)
-1. `data` : Set data  
+**引数**  
+1. `id` : コントロールテーブルを参照するためのDYNAMIXELのIDを設定します。
+1. `item_name` : コントロールテーブルの項目名を設定する（例：目標位置、目標速度、...）
+1. `data` : データを設定する。  
 
-**Output**  
-If addParam instruction set successfully work, return true. If not, return false       
+**戻り値**  
+addParam命令が正常に動作した場合はtureを返します。そうでない場合にはfalseを返します。  
 
 ### bool bulkWrite(const char **log = NULL)
-**Description**  
-Execute bulkWrite  
+**説明文**  
+bulkWriteを実行します。  
 
-**Input**    
-**Output**  
-If txPacket instruction set successfully work, return true. If not, return false   
+**引数**    
+**戻り値**  
+txパケット命令が正常に動作した場合はtureを返します。そうでない場合にはfalseを返します。  
 
 ### bool initBulkRead(const char **log = NULL)
-**Description**  
-Initialization bulkReadHandler  
+**説明文**  
+bulkReadハンドラを初期化します。  
 
-**Input**    
-**Output**  
-If portHanlder and packetHandler is loaded successfully work, return true. If not, return false
+**引数**    
+**戻り値**  
+ポートハンドラとパケットハンドラが正常にロードされた場合はtrueを返します。そうでない場合にはfalseを返します。  
 
 ### bool addBulkReadParam(uint8_t id, uint16_t address, uint16_t length, const char **log = NULL)
 **Description**  
