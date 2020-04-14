@@ -135,7 +135,7 @@ $ make
 # [Device Setup](#device-setup)
 
 **WARNING**: You should check the device setup **over and over again** before you use the library.  
-Please check **power Input** and **usb port** once again.
+Please check **power input** and **usb port** once again.
 {: .notice--warning}
 
 ## [U2D2](#u2d2)
@@ -905,8 +905,8 @@ float convertValue2Load(int16_t value);
 portHandlerの初期化を行います。
 
 **引数**  
-1.　`device_name` : USBポート名を設定します。  
-2.　`baud_rate` : DYNAMIXELのボーレートを設定します。 
+1. `device_name` : USBポート名を設定します。  
+2. `baud_rate` : DYNAMIXELのボーレートを設定します。 
 
 **戻り値**  
 すべての引数が正常に設定されていれば、trueを返します。そうでない場合はfalseを返します。
@@ -917,8 +917,8 @@ portHandlerの初期化を行います。
 portHandlerの初期化を行います。
 
 **引数**  
-1.　`device_name` : USBポート名を設定します。  
-2.　`baud_rate` : DYNAMIXELのボーレートを設定します。 
+1. `device_name` : USBポート名を設定します。  
+2. `baud_rate` : DYNAMIXELのボーレートを設定します。 
 
 **戻り値**  
 すべての引数が正常に設定されていれば、trueを返します。そうでない場合はfalseを返します。
@@ -928,7 +928,7 @@ portHandlerの初期化を行います。
 PortHandlerの設定をします。
 
 **引数**  
-1.　`device_name` : USBポート名を設定します。  
+1. `device_name` : USBポート名を設定します。  
 
 **戻り値**  
 すべての引数が正常に設定されていれば、trueを返します。そうでない場合はfalseを返します。  
@@ -993,22 +993,22 @@ DYNAMIXELの型番を取得します。
 
 ### const ControlItem *getControlTable(uint8_t id, const char **log = NULL)
 **説明文**  
-DYNAMIXELの制御テーブル(ID、ボーレート、目標位置、...を含む)を取得します。
+DYNAMIXELのコントロールテーブル(ID、ボーレート、目標位置、...を含む)を取得します。
  
 
 **引数**
 1. `id` : DYNAMIXELのIDを設定します。  
 
 **戻り値**  
-制御テーブルを返します。
+コントロールテーブルを返します。
 
 ### const ControlItem *getItemInfo(uint8_t id, const char *item_name, const char **log = NULL)
 **説明文**  
-DYNAMIXELの制御テーブルのアイテム情報を取得します。
+DYNAMIXELのコントロールテーブルのアイテム情報を取得します。
 
 **引数**  
 1. `id` : DYNAMIXELのIDを設定します。
-1. `item_name` : 制御テーブルの項目名です。
+1. `item_name` : コントロールテーブルの項目名です。
 
 **戻り値**  
 項目情報を返します。  
@@ -1059,7 +1059,7 @@ bulk readパラメーターの数を返します。
 
 ### bool scan(uint8_t *get_id, uint8_t *get_the_number_of_id, uint8_t range = 253, const char **log = NULL)
 **説明文**  
-範囲間でDYNAMIXELをPingします。 Pingが成功した場合、DYNAMIXELの全ての情報が保存されます。
+指定範囲のDYNAMIXELへPingを送ります。 Pingが成功した場合、DYNAMIXELの全ての情報が保存されます。
 
 **引数**  
 1. `get_id` : 検出したIDを取得します。
@@ -1084,7 +1084,7 @@ ping命令が正常に動作した場合はtrueを返します。そうでない
 
 ### bool ping(uint8_t id, uint16_t *get_model_number, const char **log = NULL)
 **説明文**  
-DYNAMIXELをPingします。Pingが成功すると、DYNAMIXELのすべての情報が保存されます。  
+DYNAMIXELへPingを送ります。Pingが成功すると、DYNAMIXELのすべての情報が保存されます。  
 
 **引数**  
 1. `id` : IDを設定する。
@@ -1095,7 +1095,7 @@ ping命令が正常に動作した場合はtrueを返します。そうでない
 
 ### bool ping(uint8_t id, const char **log = NULL)
 **説明文**  
-DYNAMIXELをPingします。Pingが成功すると、DYNAMIXELのすべての情報が保存されます。  
+DYNAMIXELへPingを送ります。Pingが成功すると、DYNAMIXELのすべての情報が保存されます。  
 
 **引数**  
 1. `id` : IDを設定する。  
@@ -1105,13 +1105,13 @@ ping命令が正常に動作した場合はtrueを返します。そうでない
 
 ### bool clearMultiTurn(uint8_t id, const char **log = NULL)
 **説明文**  
-クリアマルチターン命令を送信します。
+マルチターンのクリア命令を送信します。
 
 **引数**  
 1. `id` : IDを設定します。  
 
 **戻り値**  
-クリアマルチターン命令セットが正常に動作した場合はtrueを返します。そうでない場合はfalseを返します。  
+マルチターンのクリアが正常に動作した場合はtrueを返します。そうでない場合はfalseを返します。  
 
 ### bool reboot(uint8_t id, const char **log = NULL)
 **説明文**  
@@ -1121,7 +1121,7 @@ ping命令が正常に動作した場合はtrueを返します。そうでない
 1. `id` : IDを設定します。  
 
 **戻り値**  
-再起動命令セットが正常に動作した場合はtrueを返します。そうでない場合はfalseを返します。  
+再起動命令が正常に動作した場合はtrueを返します。そうでない場合はfalseを返します。  
 
 ### bool reset(uint8_t id, const char **log = NULL)
 **説明文**  
@@ -1131,16 +1131,16 @@ ping命令が正常に動作した場合はtrueを返します。そうでない
 1. `id` : IDを設定します。  
 
 **戻り値**  
-リセット命令セットが正常に動作した場合はtrueを返します。そうでない場合はfalseを返します。  
+リセット命令が正常に動作した場合はtrueを返します。そうでない場合はfalseを返します。  
 
 ### bool writeRegister(uint8_t id, uint16_t address, uint16_t length, uint8_t* data, const char **log = NULL)
 **Description**  
-DYNAMIXELにデータを書き込み、正常に書き込まれたデータを含む信号を待ちます。  
+DYNAMIXELにデータを書き込み、書き込み完了信号を待ちます。  
 
 **引数**  
 1. `id` : IDを設定します。
-1. `address` : 制御テーブル項目のアドレスを設定する。
-1. `length` : 制御テーブル項目の長さを設定する。
+1. `address` : コントロールテーブル項目のアドレスを設定する。
+1. `length` : コントロールテーブル項目の長さを設定する。
 1. `data` : データを設定する。  
 
 **戻り値**  
@@ -1148,15 +1148,15 @@ writeTxRx命令が正常に動作した場合はtrueを返します。そうで�
 
 ### bool writeRegister(uint8_t id, const char *item_name, int32_t data, const char **log = NULL)
 **Description**  
-DYNAMIXELにデータを書き込み、正常に書き込まれたデータを含む信号を待ちます。  
+DYNAMIXELにデータを書き込み、書き込み完了信号を待ちます。  
 
 **引数**  
 1. `id` : IDを設定する。
-1. `item_name` : 制御テーブルの項目名を設定する。（例：目標位置、目標速度、...)
+1. `item_name` : コントロールテーブルの項目名を設定する。（例：目標位置、目標速度、...)
 1. `data` : データを設定する。  
 
 **戻り値**  
-writeTxRx命令セットが正常に動作した場合はtrueを返します。そうでない場合はfalseを返します。  
+writeTxRx命令が正常に動作した場合はtrueを返します。そうでない場合はfalseを返します。  
 
 ### bool writeOnlyRegister(uint8_t id, uint16_t address, uint16_t length, uint8_t *data, const char **log = NULL)
 **説明文**  
@@ -1164,8 +1164,8 @@ DYNAMIXELにデータを書き込むだけです。他の信号を待ちませ�
 
 **引数**  
 1. `id` : IDを設定します。
-1. `address` : 制御テーブル項目のアドレスを設定する。
-1. `length` : 制御テーブル項目の長さを設定する。
+1. `address` : コントロールテーブル項目のアドレスを設定する。
+1. `length` : コントロールテーブル項目の長さを設定する。
 1. `data` : データを設定する。  
 
 **戻り値**  
@@ -1177,7 +1177,7 @@ DYNAMIXELにデータを書き込むだけです。他の信号を待ちませ�
 
 **引数**  
 1. `id` : IDを設定する。
-1. `item_name` : 制御テーブルの項目名を設定する。（例：目標位置、目標速度、...)
+1. `item_name` : コントロールテーブルの項目名を設定する。（例：目標位置、目標速度、...)
 1. `data` : データを設定する。  
 
 **戻り値**  
