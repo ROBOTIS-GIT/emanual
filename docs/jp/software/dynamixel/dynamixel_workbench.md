@@ -1350,7 +1350,7 @@ isAvailable命令が正常に動作した場合はtrueを返します。そう�
 
 ### bool initBulkWrite(const char **log = NULL)
 **説明文**  
-bulkWriteハンドラ  
+bulkWriteハンドラを初期化します。  
 
 **引数**    
 **戻り値**  
@@ -1398,189 +1398,189 @@ bulkReadハンドラを初期化します。
 ポートハンドラとパケットハンドラが正常にロードされた場合はtrueを返します。そうでない場合にはfalseを返します。  
 
 ### bool addBulkReadParam(uint8_t id, uint16_t address, uint16_t length, const char **log = NULL)
-**Description**  
-Add parameter for bulkRead  
+**説明文**  
+bulkRead用のパラメーターを追加します。  
 
-**Input**  
-1. `id` : Set IDs
-1. `address` : Set address of control table item
-1. `length` : Set lengh of control table item
-1. `data` : Set data  
+**引数**  
+1. `id` : IDを設定する。
+1. `address` : コントロールテーブル項目のアドレスを設定する。
+1. `length` : コントロールテーブル項目の長さを設定する。
+1. `data` : データを設定する。  
 
-**Output**  
-If addParam instruction set successfully work, return true. If not, return false   
+**戻り値**  
+addParam命令が正常に動作した場合はtureを返します。そうでない場合にはfalseを返します。   
 
 ### bool addBulkReadParam(uint8_t id, const char *item_name, const char **log = NULL)
-**Description**  
-Add parameter for bulkRead  
+**説明文**  
+bulkRead用のパラメーターを追加します。  
 
-**Input**  
-1. `id` : Set DYNAMIXEL ID for reference of control table
-1. `item_name` : Set item name of control table item (ex, Goal_Position, Goal_Velocity,...)
-1. `data` : Set data  
+**引数**  
+1. `id` : コントロールテーブルを参照するためのDYNAMIXELのIDを設定します。
+1. `item_name` : コントロールテーブルの項目名を設定する（例：目標位置、目標速度、...）
+1. `data` : データを設定する。  
 
-**Output**  
-If addParam instruction set successfully work, return true. If not, return false  
+**戻り値**  
+addParam命令が正常に動作した場合はtureを返します。そうでない場合にはfalseを返します。   
 
 ### bool bulkRead(const char **log = NULL)
-**Description**  
-Execute bulkRead  
+**説明文**  
+bulkReadを実行します。  
 
-**Input**    
-**Output**  
-If txRxPacket instruction set successfully work, return true. If not, return false   
+**引数**    
+**戻り値**  
+txパケット命令が正常に動作した場合はtureを返します。そうでない場合にはfalseを返します。  
 
 ### bool getBulkReadData(int32_t *data, const char **log = NULL)
-**Description**  
-Get data read by bulkRead function from all pinged DYNAMIXEL  
+**説明文**  
+pingされた全てのDYNAMIXELからbulkRead関数で読み込んだデータを取得します。  
 
-**Input**  
-1. `data` : Get data  
+**引数**  
+1. `data` : データを設定する。  
 
-**Output**  
-If isAvailable instruction set successfully work, return true. If not, return false    
+**戻り値**    
+isAvailable命令が正常に動作した場合はtrueを返します。そうでない場合にはfalseを返します。  
 
 ### bool getBulkReadData(uint8_t *id, uint8_t id_num, uint16_t *address, uint16_t *length, int32_t *data, const char **log = NULL)
-**Description**  
-Get data read by bulkRead function from some DYNAMIXEL  
+**説明文**  
+いくつかのDYNAMIXELからbulkRead関数で読み込んだデータを取得します。  
 
 **Input**  
-1. `id` : Set IDs
-1. `id_num` : Set the number of IDs
-1. `address` : Set address of control table item
-1. `length` : Set lengh of control table item
-1. `data` : Get data  
+1. `id` : IDを設定する。
+1. `id_num` : IDの数を設定する。
+1. `address` : コントロールテーブル項目のアドレスを設定する。
+1. `length` : コントロールテーブル項目の長さを設定する。
+1. `data` : データを取得する。  
 
-**Output**   
-If isAvailable instruction set successfully work, return true. If not, return false  
+**戻り値**   
+isAvailable命令が正常に動作した場合はtrueを返します。そうでない場合にはfalseを返します。  
 
 ### bool clearBulkReadParam(void)
-**Description**  
-Clear every paramter for bulkRead  
+**説明文**  
+bulkRead用の全てのパラメーターをクリアします。  
 
-**Input**    
-**Output**  
-If clearParam instruction set successfully work, return true. If not, return false  
+**引数**    
+**戻り値**  
+パラメーターのクリア命令が正常に動作した場合はtureを返します。そうでない場合にはfalseを返します。  
 
 ### bool torque(uint8_t id, bool onoff, const char **log = NULL)
-**Description**  
-Set torque to DYNAMIXEL
+**説明文**  
+DYNAMIXELにトルクを設定します。  
 
-**Input**    
-1. `id` : Set DYNAMIXEL ID
-1. `onoff` : Set true or false
+**引数**    
+1. `id` : DYNAMIXELのIDを設定する。
+1. `onoff` : trueかfalseかを設定する。
 
-**Output**  
-If writeByteTxRx instruction set successfully work, return true. If not, return false  
+**戻り値**  
+writeByteTxRx命令が正常に動作した場合はtureを返します。そうでない場合にはfalseを返します。  
 
 ### bool torqueOn(uint8_t id, const char **log = NULL)
-**Description**  
-Set torque on to DYNAMIXEL
+**説明文**  
+DYNAMIXELにトルクをかけます。
 
-**Input**    
-1. `id` : Set DYNAMIXEL ID
+**引数**    
+1. `id` : DYNAMIXELのIDを設定する。
 
-**Output**  
-If writeByteTxRx instruction set successfully work, return true. If not, return false
+**戻り値**  
+writeByteTxRx命令が正常に動作した場合はtureを返します。そうでない場合にはfalseを返します。  
 
 ### bool torqueOff(uint8_t id, const char **log = NULL)
-**Description**  
-Set torque off to DYNAMIXEL
+**説明文**  
+DYNAMIXELにかかっているトルクをオフに設定します。  
 
-**Input**    
-1. `id` : Set DYNAMIXEL ID
+**引数**    
+1. `id` : DYNAMIXELのIDを設定する。
 
-**Output**  
-If writeByteTxRx instruction set successfully work, return true. If not, return false
+**戻り値**  
+writeByteTxRx命令が正常に動作した場合はtureを返します。そうでない場合にはfalseを返します。  
 
 ### bool changeID(uint8_t id, uint8_t new_id, const char **log = NULL)
-**Description**  
-Change DYNAMIXEL ID
+**説明文**  
+DYNAMIXELのIDを変更します。
 
-**Input**    
-1. `id` : Set DYNAMIXEL ID
-1. `new_id` : Set DYNAMIXEL new ID  
+**引数**    
+1. `id` : DYNAMIXELのIDを設定する。
+1. `new_id` : DYNAMIXELの新しいIDを設定する。  
 
-**Output**  
-If writeByteTxRx instruction set successfully work, return true. If not, return false
+**戻り値**  
+writeByteTxRx命令が正常に動作した場合はtureを返します。そうでない場合にはfalseを返します。  
 
 ### bool changeBaudrate(uint8_t id, uint32_t new_baudrate, const char **log = NULL)
-**Description**  
-Change baud rate of DYNAMIXEL
+**説明文**  
+DYNAMIXELのボーレートを変更します。
 
-**Input**    
-1. `id` : Set DYNAMIXEL ID
-1. `new_baudrate` : Set new baudrate for DYNAMIXEL
+**引数**    
+1. `id` : DYNAMIXELのIDを設定する。
+1. `new_baudrate` : DYNAMIXELの新しいボーレートを設定する。
 
-**Output**  
-If writeByteTxRx instruction set successfully work, return true. If not, return false
+**戻り値**  
+writeByteTxRx命令が正常に動作した場合はtureを返します。そうでない場合にはfalseを返します。  
 
 ### bool changeProtocolVersion(uint8_t id, uint8_t version, const char **log = NULL)
-**Description**  
-Change protocol version of DYNAMIXEL
+**説明文**  
+DYNAMIXELのプロトコルバージョンを変更します。
 
-**Input**    
-1. `id` : Set DYNAMIXEL ID
-1. `version` : Set protocol version for DYNAMIXEL
+**引数**    
+1. `id` : DYNAMIXELのIDを設定する。
+1. `version` : DYNAMIXELのプロトコルバージョンを設定します。
 
-**Output**  
-If writeByteTxRx instruction set successfully work, return true. If not, return false
+**戻り値**  
+writeByteTxRx命令が正常に動作した場合はtureを返します。そうでない場合にはfalseを返します。  
 
 ### bool itemWrite(uint8_t id, const char *item_name, int32_t data, const char **log = NULL)
-**Description**  
-Write data to control table item
+**説明文**  
+コントロールテーブルの項目にデータを書き込みます。  
 
-**Input**    
-1. `id` : Set DYNAMIXEL ID
-1. `item_name` : Set item name of control table item (ex, Goal_Position, Goal_Velocity,...)  
-1. `data` : Set data  
+**引数**    
+1. `id` : DYNAMIXELのIDを設定する。
+1. `item_name` : コントロールテーブルの項目名を設定する（例：目標位置、目標速度、...）  
+1. `data` : データを設定する。  
 
-**Output**  
-If writeByteTxRx instruction set successfully work, return true. If not, return false
+**戻り値**  
+writeByteTxRx命令が正常に動作した場合はtureを返します。そうでない場合にはfalseを返します。  
 
 ### bool itemRead(uint8_t id, const char *item_name, int32_t *data, const char **log = NULL)
-**Description**  
-Read data to control table item  
+**説明文**  
+コントロールテーブルの項目へデータを読み込みます。  
 
-**Input**    
-1. `id` : Set DYNAMIXEL ID
-1. `item_name` : Set item name of control table item (ex, Goal_Position, Goal_Velocity,...)  
-1. `data` : Get data  
+**引数**    
+1. `id` : DYNAMIXELのIDを設定する。
+1. `item_name` : コントロールテーブルの項目名を設定する（例：目標位置、目標速度、...）  
+1. `data` : データを取得する。  
 
-**Output**  
-If readByteTxRx instruction set successfully work, return true. If not, return false
+**戻り値**  
+writeByteTxRx命令が正常に動作した場合はtureを返します。そうでない場合にはfalseを返します。  
 
 ### bool led(uint8_t id, bool onoff, const char **log = NULL)
-**Description**  
-Set led on or off to DYNAMIXEL
+**説明文**  
+DYNAMIXELのLEDをオンもしくはオフに設定します。  
 
-**Input**    
-1. `id` : Set DYNAMIXEL ID
-1. `onoff` : Set true or false  
+**引数**    
+1. `id` : DYNAMIXELのIDを設定する。
+1. `onoff` : trueもしくはfalseかを設定します。  
 
-**Output**  
-If writeByteTxRx instruction set successfully work, return true. If not, return false
+**戻り値**  
+writeByteTxRx命令が正常に動作した場合はtureを返します。そうでない場合にはfalseを返します。  
 
 ### bool ledOn(uint8_t id, const char **log = NULL)
-**Description**  
-Set led on to DYNAMIXEL
+**説明文**  
+DYNAMIXELのLEDをオンに設定します。
 
-**Input**    
-1. `id` : Set DYNAMIXEL ID  
+**引数**    
+1. `id` : DYNAMIXELのIDを設定する。  
 
-**Output**  
-If writeByteTxRx instruction set successfully work, return true. If not, return false
+**戻り値**  
+writeByteTxRx命令が正常に動作した場合はtureを返します。そうでない場合にはfalseを返します。  
 
 ### bool ledOff(uint8_t id, const char **log = NULL)
-**Description**  
-Set led on or off to DYNAMIXEL
+**説明文**  
+DYNAMIXELのLEDをオンもしくはオフに設定します。  
 
-**Input**    
-1. `id` : Set DYNAMIXEL ID
-1. `onoff` : Set true or false  
+**引数**    
+1. `id` : DYNAMIXELのIDを設定する。
+1. `onoff` : trueもしくはfalseかを設定する。  
 
-**Output**  
-If writeByteTxRx instruction set successfully work, return true. If not, return false
+**戻り値**  
+writeByteTxRx命令が正常に動作した場合はtureを返します。そうでない場合にはfalseを返します。  
 
 ### bool setNormalDirection(uint8_t id, const char **log = NULL)
 **Description**  
