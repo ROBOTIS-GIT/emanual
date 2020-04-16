@@ -105,8 +105,8 @@ $ rosrun open_manipulator_controller create_udev_rules
 {: .notice--success}
 
 ### [OpenCR](#opencr)
-This section explains how to set up OpenCR as a communication board between **ROS Packages** of PC and DYNAMIXEL's of OpenMANIPULATOR-X.  
-If you want to operate OpenMANIPULATOR-X on embedded system (OpenCR) without ROS, please refer [OpenCR Setup](/docs/en/platform/openmanipulator_x/opencr-setup/#opencr-setup).
+This section describes how to set up OpenCR as a communication board between **ROS Packages** of PC and DYNAMIXEL's of OpenMANIPULATOR-X.  
+If you want to operate OpenMANIPULATOR-X on embedded system (OpenCR) without ROS, see [OpenCR Setup](/docs/en/platform/openmanipulator_x/opencr_setup/#opencr-setup).
 
 #### Connection
 
