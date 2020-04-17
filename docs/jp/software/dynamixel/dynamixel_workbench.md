@@ -1230,7 +1230,7 @@ syncWriteハンドラを追加します。
 syncWriteハンドラを最大値（デフォルトは5）を超えて追加しようとした場合はfalseを返します。そうでない場合にはtrueを返します。  
 
 ### bool addSyncWriteHandler(uint8_t id, const char *item_name, const char **log = NULL)
-**Description**  
+**説明文**  
 syncWriteハンドラを追加します。  
 
 **引数**  
@@ -1241,7 +1241,7 @@ syncWriteハンドラを追加します。
 syncWriteハンドラを最大値（デフォルトは5）を超えて追加しようとした場合はfalseを返す、もしくは項目名が見つからなくなります。そうでない場合にはtrueを返します。  
 
 ### bool syncWrite(uint8_t index, int32_t *data, const char **log = NULL)
-**Description**  
+**説明文**  
 全てのpingされたDYNAMIXELに同期書き込みを実行します。  
 
 **引数**  
@@ -1252,7 +1252,7 @@ syncWriteハンドラを最大値（デフォルトは5）を超えて追加し�
 addパラメーターまたはtxtパケット命令が正常に動作した場合はtrueを返します。そうでない場合にはfalseを返します。  
 　
 ### bool syncWrite(uint8_t index, uint8_t *id, uint8_t id_num, int32_t *data, uint8_t data_num_for_each_id, const char **log = NULL)
-**Description**  
+**説明文**  
 いくつかのDYNAMIXELへの同期書き込みを実行します。  
 
 **引数**  
@@ -1584,144 +1584,144 @@ writeByteTxRx命令が正常に動作した場合はtureを返します。そう
 
 ### bool setNormalDirection(uint8_t id, const char **log = NULL)
 **Description**  
-Set DYNAMIXEL rotate with normal direction(counter clockwise)
+DYNAMIXELを通常の方向（反時計回り）に回転するように設定します。  
 
-**Input**    
-1. `id` : Set DYNAMIXEL ID
+**引数**    
+1. `id` : DYNAMIXELのIDを設定する。
 
-**Output**  
-If writeByteTxRx instruction set successfully work, return true. If not, return false
+**戻り値**  
+writeByteTxRx命令が正常に動作した場合はtureを返します。そうでない場合にはfalseを返します。  
 
 ### bool setReverseDirection(uint8_t id, const char **log = NULL)
-**Description**  
-Set DYNAMIXEL rotate with reverse direction(clockwise)
+**説明文**  
+DYNAMIXELを逆回転（時計回り）するように設定します。  
 
-**Input**    
-1. `id` : Set DYNAMIXEL ID
+**引数**    
+1. `id` : DYNAMIXELのIDを設定する。
 
-**Output**  
-If writeByteTxRx instruction set successfully work, return true. If not, return false
+**戻り値**  
+writeByteTxRx命令が正常に動作した場合はtureを返します。そうでない場合にはfalseを返します。  
 
 ### bool setVelocityBasedProfile(uint8_t id, const char **log = NULL)
-**Description**  
-Set DYNAMIXEL will make velocity based profile
+**説明文**  
+DYNAMIXELを設定すると、速度ベースのプロファイルが作成されます。  
 
-**Input**    
-1. `id` : Set DYNAMIXEL ID
+**引数**    
+1. `id` : DYNAMIXELのIDを設定する。
 
-**Output**  
-If writeByteTxRx instruction set successfully work, return true. If not, return false
+**戻り値**  
+writeByteTxRx命令が正常に動作した場合はtureを返します。そうでない場合にはfalseを返します。  
 
 ### bool setTimeBasedProfile(uint8_t id, const char **log = NULL)
-**Description**  
-Set DYNAMIXEL will make time based profile
+**説明文**  
+DYNAMIXELを設定すると、時間ベースのプロファイルが作成されます。  
 
-**Input**    
-1. `id` : Set DYNAMIXEL ID
+**引数**    
+1. `id` : DYNAMIXELのIDを設定する。
 
-**Output**  
-If writeByteTxRx instruction set successfully work, return true. If not, return false
+**戻り値**  
+writeByteTxRx命令が正常に動作した場合はtureを返します。そうでない場合にはfalseを返します。  
 
 ### bool setSecondaryID(uint8_t id, uint8_t secondary_id, const char **log = NULL)
-**Description**  
-Set secondary ID to DYNAMIXEL
+**説明文**  
+セカンダリIDを設定します。  
 
-**Input**    
-1. `id` : Set DYNAMIXEL ID
-1. `secondary_id` : Set DYNAMIXEL secondary ID
+**引数**    
+1. `id` : DYNAMIXELのIDを設定する。
+1. `secondary_id` : DYNAMIXELのセカンダリIDを設定します。  
 
-**Output**  
-If writeByteTxRx instruction set successfully work, return true. If not, return false
+**戻り値**  
+writeByteTxRx命令が正常に動作した場合はtureを返します。そうでない場合にはfalseを返します。  
 
 ### bool setCurrentControlMode(uint8_t id, const char **log = NULL)
-**Description**  
-Set current control mode to DYNAMIXEL
+**説明文**  
+DYNAMIXELに電流制御モードを設定します。  
 
-**Input**    
-1. `id` : Set DYNAMIXEL ID
+**引数**    
+1. `id` : DYNAMIXELのIDを設定する。
 
-**Output**  
-If writeByteTxRx instruction set successfully work, return true. If not, return false
+**戻り値**  
+writeByteTxRx命令が正常に動作した場合はtureを返します。そうでない場合にはfalseを返します。  
 
 ### bool setTorqueControlMode(uint8_t id, const char **log = NULL)
-**Description**  
-Set torque control mode to DYNAMIXEL
+**説明文**  
+DYNAMIXELにトルク制御モードを設定します。  
 
-**Input**    
-1. `id` : Set DYNAMIXEL ID
+**引数**    
+1. `id` : DYNAMIXELのIDを設定する。
 
-**Output**  
-If writeByteTxRx instruction set successfully work, return true. If not, return false
+**戻り値**  
+writeByteTxRx命令が正常に動作した場合はtureを返します。そうでない場合にはfalseを返します。  
 
 ### bool setVelocityControlMode(uint8_t id, const char **log = NULL)
-**Description**  
-Set velocity control mode to DYNAMIXEL
+**説明文**  
+DYNAMIXELに速度制御モードを設定します。  
 
-**Input**    
-1. `id` : Set DYNAMIXEL ID
+**引数**    
+1. `id` : DYNAMIXELのIDを設定する。
 
-**Output**  
-If writeByteTxRx instruction set successfully work, return true. If not, return false
+**戻り値**  
+writeByteTxRx命令が正常に動作した場合はtureを返します。そうでない場合にはfalseを返します。  
 
 ### bool setPositionControlMode(uint8_t id, const char **log = NULL)
-**Description**  
-Set position control mode to DYNAMIXEL
+**説明文**  
+DYNAMIXELに位置制御モードを設定します。  
 
-**Input**    
-1. `id` : Set DYNAMIXEL ID
+**引数**    
+1. `id` : DYNAMIXELのIDを設定する。
 
-**Output**  
-If writeByteTxRx instruction set successfully work, return true. If not, return false
+**戻り値**  
+writeByteTxRx命令が正常に動作した場合はtureを返します。そうでない場合にはfalseを返します。  
 
 ### bool setExtendedPositionControlMode(uint8_t id, const char **log = NULL)
-**Description**  
-Set extended position control mode to DYNAMIXEL
+**説明文**  
+DYNAMIXELに拡張位置制御モードに設定します。  
 
-**Input**    
-1. `id` : Set DYNAMIXEL ID
+**引数**    
+1. `id` : DYNAMIXELのIDを設定する。
 
-**Output**  
-If writeByteTxRx instruction set successfully work, return true. If not, return false
+**戻り値**  
+writeByteTxRx命令が正常に動作した場合はtureを返します。そうでない場合にはfalseを返します。  
 
 ### bool setMultiTurnControlMode(uint8_t id, const char **log = NULL)
-**Description**  
-Set multi-turn control mode to DYNAMIXEL
+**説明文**  
+DYNAMIXELにマルチターン制御モードを設定します。  
 
-**Input**    
-1. `id` : Set DYNAMIXEL ID
+**引数**    
+1. `id` : DYNAMIXELのIDを設定する。
 
-**Output**  
-If writeByteTxRx instruction set successfully work, return true. If not, return false
+**戻り値**  
+writeByteTxRx命令が正常に動作した場合はtureを返します。そうでない場合にはfalseを返します。  
 
 ### bool setCurrentBasedPositionControlMode(uint8_t id, const char **log = NULL)
-**Description**  
-Set current based position control mode to DYNAMIXEL
+**説明文**  
+DYNAMIXELに電流による位置制御モードを設定します。  
 
-**Input**    
-1. `id` : Set DYNAMIXEL ID
+**引数**    
+1. `id` : DYNAMIXELのIDを設定する。
 
-**Output**  
-If writeByteTxRx instruction set successfully work, return true. If not, return false
+**戻り値**  
+writeByteTxRx命令が正常に動作した場合はtureを返します。そうでない場合にはfalseを返します。  
 
 ### bool setPWMControlMode(uint8_t id, const char **log = NULL)
-**Description**  
-Set PWM control mode to DYNAMIXEL
+**説明文**  
+DYNAMIXELにPWM制御モードを設定します。  
 
-**Input**    
-1. `id` : Set DYNAMIXEL ID
+**引数**    
+1. `id` : DYNAMIXELのIDを設定する。
 
-**Output**  
-If writeByteTxRx instruction set successfully work, return true. If not, return false
+**戻り値**  
+writeByteTxRx命令が正常に動作した場合はtureを返します。そうでない場合にはfalseを返します。  
 
 ### bool setOperatingMode(uint8_t id, uint8_t index, const char **log = NULL)
-**Description**  
-Set operating mode to DYNAMIXEL
+**説明文**  
+DYNAMIXELに動作モードを設定します。  
 
-**Input**    
-1. `id` : Set DYNAMIXEL ID
-1. `index` : Choose what you want to set operating mode
+**引数**    
+1. `id` : DYNAMIXELのIDを設定する。
+1. `index` : 設定したい動作モードを選択する。
 
-- Index list
+- インデックス一覧
 ```c++
 static const uint8_t CURRENT_CONTROL_MODE                  = 0;
 static const uint8_t VELOCITY_CONTROL_MODE                 = 1;
@@ -1733,133 +1733,133 @@ static const uint8_t TORQUE_CONTROL_MODE                   = 100;
 static const uint8_t MULTI_TURN_MODE                       = 101;
 ```
 
-**Output**  
-If writeByteTxRx instruction set successfully work, return true. If not, return false
+**戻り値**  
+writeByteTxRx命令が正常に動作した場合はtureを返します。そうでない場合にはfalseを返します。  
 
 ### bool jointMode(uint8_t id, int32_t velocity = 0, int32_t acceleration = 0, const char **log = NULL)
-**Description**  
-Set joint mode to DYNAMIXEL. You can simply set joint mode to any DYNAMIXEL. After joint mode successfully set, torque will be on.
-The velocity and acceleration parameters will be used argument to make profile.
+**説明文**  
+DYNAMIXELにジョイントモードを設定します。任意のDYNAMIXELにジョイントモードを簡単に設定することができます。ジョイントモードが正常に設定されると、トルクがオンになります。
+速度と加速度のパラメーターは、プロファイルを作成する際の引数として使用されます。  
 
-**Input**    
-1. `id` : Set DYNAMIXEL ID
-1. `velocity` : Set profile velocity
-1. `acceleration` : Set profile acceleration
+**引数**    
+1. `id` : DYNAMIXELのIDを設定する。
+1. `velocity` : プロファイル速度を設定する、
+1. `acceleration` : プロファイルの加速度を設定する。  
 
-**Output**  
-If writeByteTxRx instruction set successfully work, return true. If not, return false
+**戻り値**  
+writeByteTxRx命令が正常に動作した場合はtureを返します。そうでない場合にはfalseを返します。  
 
 ### bool wheelMode(uint8_t id, int32_t acceleration = 0, const char **log = NULL)
-**Description**  
-Set wheel mode to DYNAMIXEL. You can simply set wheel mode to any DYNAMIXEL. After wheel mode successfully set, torque will be on.
-The acceleration parameters will be used argument to make profile.
+**説明文**  
+DYNAMIXELに車輪モードを設定します。任意のDYNAMIXELに車輪モードを簡単に設定することができます。車輪モードが正常に設定されると、トルクがオンになります。
+加速度のパラメーターは、プロファイルを作成する際の引数として使用されます。  
 
-**Input**    
-1. `id` : Set DYNAMIXEL ID
-1. `acceleration` : Set profile acceleration
+**引数**    
+1. `id` : DYNAMIXELのIDを設定する。
+1. `acceleration` : プロファイルの加速度を設定する。  
 
-**Output**  
-If writeByteTxRx instruction set successfully work, return true. If not, return false
+**戻り値**  
+writeByteTxRx命令が正常に動作した場合はtureを返します。そうでない場合にはfalseを返します。  
 
 ### bool currentBasedPositionMode(uint8_t id, int32_t current = 0, const char **log = NULL)
-**Description**  
-Set currrent based position mode to DYNAMIXEL. You can simply set joint mode controlled by current to DYNAMIXEL-X series. After mode successfully set, torque will be on.
-The current parameters will be used argument to make profile.
+**説明文**  
+DYNAMIXELに電流による位置制御モードを設定します。DYNAMIXEL-Xシリーズに電流によって制御されるジョイントモードを簡単に設定することができます。モードが正常に設定されると、トルクがオンになります。
+プロファイルを作成する際には、電流のパラメーターが引数として使用されます。  
 
-**Input**    
-1. `id` : Set DYNAMIXEL ID
-1. `current` : Set current limit
+**引数**    
+1. `id` : DYNAMIXELのIDを設定する。
+1. `current` : 電流の制限を設定する。  
 
-**Output**  
-If writeByteTxRx instruction set successfully work, return true. If not, return false
+**戻り値**  
+writeByteTxRx命令が正常に動作した場合はtureを返します。そうでない場合にはfalseを返します。  
 
 ### bool goalPosition(uint8_t id, int32_t value, const char **log = NULL)
-**Description**  
-Set position to DYNAMIXEL
+**説明文**  
+DYNAMIXELに位置を設定します。  
 
-**Input**    
-1. `id` : Set DYNAMIXEL ID
-1. `value` : Set 32-bit raw value
+**引数**    
+1. `id` : DYNAMIXELのIDを設定する。
+1. `value` : 32ビットのraw値を設定する。  
 
-**Output**  
-If writeByteTxRx instruction set successfully work, return true. If not, return false
+**戻り値**  
+writeByteTxRx命令が正常に動作した場合はtureを返します。そうでない場合にはfalseを返します。  
 
 ### bool goalPosition(uint8_t id, float radian, const char **log = NULL)
-**Description**  
-Set position to DYNAMIXEL
+**説明文**  
+DYNAMIXELに位置を設定します。  
 
-**Input**    
-1. `id` : Set DYNAMIXEL ID
-1. `radian` : Set position. Unit is radian
+**引数**    
+1. `id` : DYNAMIXELのIDを設定する。
+1. `radian` : 位置を設定する。単位はラジアン  
 
-**Output**  
-If writeByteTxRx instruction set successfully work, return true. If not, return false
+**戻り値**  
+writeByteTxRx命令が正常に動作した場合はtureを返します。そうでない場合にはfalseを返します。  
 
 ### bool goalVelocity(uint8_t id, int32_t value, const char **log = NULL)
-**Description**  
-Set velocity to DYNAMIXEL
+**説明文**  
+DYNAMIXELに速度を設定します。  
 
-**Input**    
-1. `id` : Set DYNAMIXEL ID
-1. `value` : Set 32-bit raw value
+**引数**    
+1. `id` : DYNAMIXELのIDを設定する。
+1. `value` : 3232ビットのraw値を設定する。
 
-**Output**  
-If writeByteTxRx instruction set successfully work, return true. If not, return false
+**戻り値**  
+writeByteTxRx命令が正常に動作した場合はtureを返します。そうでない場合にはfalseを返します。  
 
 ### bool goalVelocity(uint8_t id, float velocity, const char **log = NULL)
-**Description**  
-Set velocity to DYNAMIXEL
+**説明文**  
+DYNAMIXELに速度を設定します。  
 
-**Input**    
-1. `id` : Set DYNAMIXEL ID
-1. `velocity` : Set velocity. Unit is m/s
+**引数**    
+1. `id` : DYNAMIXELのIDを設定する。
+1. `velocity` : 速度を設定する。単位はm/s  
 
-**Output**  
-If writeByteTxRx instruction set successfully work, return true. If not, return false
+**戻り値**  
+writeByteTxRx命令が正常に動作した場合はtureを返します。そうでない場合にはfalseを返します。  
 
 ### bool getPresentPositionData(uint8_t id, int32_t* data, const char **log = NULL)
-**Description**  
-Get present position from DYNAMIXEL
+**説明文**  
+DYNAMIXELから現在の位置を取得します。  
 
-**Input**    
-1. `id` : Set DYNAMIXEL ID
-1. `data` : Get 32-bit raw data
+**引数**    
+1. `id` : DYNAMIXELのIDを設定する。
+1. `data` : 32ビットのraw値を取得する。  
 
-**Output**  
-If writeByteTxRx instruction set successfully work, return true. If not, return false
+**戻り**  
+writeByteTxRx命令が正常に動作した場合はtureを返します。そうでない場合にはfalseを返します。  
 
 ### bool getRadian(uint8_t id, float* radian, const char **log = NULL)
-**Description**  
-Get present position from DYNAMIXEL
+**説明文**  
+DYNAMIXELから現在の位置を取得します。  
 
-**Input**    
-1. `id` : Set DYNAMIXEL ID
-1. `radian` : Get position. Unit is radian
+**引数**    
+1. `id` : DYNAMIXELのIDを設定する。
+1. `radian` : 位置を設定する。単位はラジアン  
 
-**Output**  
-If writeByteTxRx instruction set successfully work, return true. If not, return false
+**戻り値**  
+writeByteTxRx命令が正常に動作した場合はtureを返します。そうでない場合にはfalseを返します。  
 
 ### bool getPresentVelocityData(uint8_t id, int32_t* data, const char **log = NULL)
-**Description**  
-Get present velocity from DYNAMIXEL
+**説明文**  
+DYNAMIXELから現在の位置を取得します。  
 
-**Input**    
-1. `id` : Set DYNAMIXEL ID
-1. `data` : Get 32-bit raw data
+**引数**    
+1. `id` : DYNAMIXELのIDを設定する。
+1. `data` : 32ビットのraw値を取得する。  
 
-**Output**  
-If writeByteTxRx instruction set successfully work, return true. If not, return false
+**戻り値**  
+writeByteTxRx命令が正常に動作した場合はtureを返します。そうでない場合にはfalseを返します。  
 
 ### bool getVelocity(uint8_t id, float* velocity, const char **log = NULL)
-**Description**  
-Get present velocity from DYNAMIXEL
+**説明文**  
+DYNAMIXELから現在の位置を取得します。  
 
-**Input**    
-1. `id` : Set DYNAMIXEL ID
-1. `velocity` : Get velocity. Unit is m/s
+**引数**    
+1. `id` : DYNAMIXELのIDを設定する。
+1. `velocity` : 速度を設定する。単位はm/s  
 
-**Output**  
-If writeByteTxRx instruction set successfully work, return true. If not, return false
+**戻り値**  
+writeByteTxRx命令が正常に動作した場合はtureを返します。そうでない場合にはfalseを返します。  
 
 ### int32_t convertRadian2Value(uint8_t id, float radian)
 **Description**  
