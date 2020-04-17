@@ -375,7 +375,7 @@ roslaunch turtlebot3_bringup turtlebot3_robot.launch
 ### [Run SLAM Node](#run-slam-node)
 **[Remote PC]** Run SLAM node for updating an unknown map with TurtleBot3. This node utilizes gmapping package.
 ```bash
-$ roslaunch turtlebot3_slam turtlebot3_manipulation_slam.launch
+$ roslaunch turtlebot3_manipulation_slam slam.launch
 ```
 
 ### [Run turtlebot3_teleop_key Node](#run-turtlebot3-teleop-key-node)
