@@ -1862,106 +1862,106 @@ DYNAMIXELから現在の位置を取得します。
 writeByteTxRx命令が正常に動作した場合はtureを返します。そうでない場合にはfalseを返します。  
 
 ### int32_t convertRadian2Value(uint8_t id, float radian)
-**Description**  
-Convert radian to 32-bit raw data
+**説明文**  
+ラジアンを32ビットのraw値に変換します。  
 
-**Input**    
-1. `id` : Set DYNAMIXEL ID
-1. `radian` : Set position. Unit is radian
+**引数**    
+1. `id` : DYNAMIXELのIDを設定する。
+1. `radian` : 位置を設定する。単位はラジアン  
 
-**Output**  
-Return 32-bit raw data for DYNAMIXEL
+**戻り値**  
+DYNAMIXEL用の32ビットのraw値を返します。  
 
 ### float convertValue2Radian(uint8_t id, int32_t value)
-**Description**  
-Convert 32-bit raw data to radian
+**説明文**  
+ラジアンを32ビットのraw値に変換します。  
 
-**Input**    
-1. `id` : Set DYNAMIXEL ID
-1. `value` : Get 32-bit raw data
+**引数**    
+1. `id` : DYNAMIXELのIDを設定する。
+1. `value` : 32ビットのraw値を取得する。  
 
-**Output**  
-Return position. Unit is radian
+**戻り値**  
+位置を返します。単位はラジアン  
 
 ### int32_t convertRadian2Value(float radian, int32_t max_position, int32_t min_position, float max_radian, float min_radian)
-**Description**  
-Convert radian to 32-bit raw data
+**説明文**  
+ラジアンを32ビットのraw値に変換します。  
 
-**Input**    
-1. `radian` : Set position. Unit is radian
-1. `max_position` : Set max position. Unit is 32-bit raw data
-1. `min_position` : Set min position. Unit is 32-bit raw data
-1. `max_radian` : Set max radian
-1. `min_radian` : Set min radian
+**引数**    
+1. `radian` : 位置を設定する。単位はラジアンです。
+1. `max_position` : 最大位置を設定する。単位は32ビットraw値
+1. `min_position` : 最小位置を設定する。単位は32ビットraw値
+1. `max_radian` : 最大ラジアンを設定する。
+1. `min_radian` : 最小ラジアンを設定する。  
 
-**Output**  
-Return 32-bit raw data for DYNAMIXEL
+**戻り値**  
+ラジアンを32ビットのraw値に変換します。  
 
 ### float convertValue2Radian(int32_t value, int32_t max_position, int32_t min_position, float max_radian, float min_radian)
-**Description**  
-Convert 32-bit raw data to radian
+**説明文**  
+32ビットのraw値をラジアンに変換します。  
 
-**Input**    
-1. `value` : Set 32-bit raw data
-1. `max_position` : Set max position. Unit is 32-bit raw data
-1. `min_position` : Set min position. Unit is 32-bit raw data
-1. `max_radian` : Set max radian
-1. `min_radian` : Set min radian
+**引数**    
+1. `value` : 32ビットのraw値を設定する。
+1. `max_position` : 最大位置を設定する。単位は32ビットraw値
+1. `min_position` : 最小位置を設定する。単位は32ビットraw値
+1. `max_radian` : 最大ラジアンを設定する。
+1. `min_radian` : 最小ラジアンを設定する。  
 
-**Output**  
-Return position. Unit is radian
+**戻り値**  
+位置を返します。単位はラジアンです。
 
 ### int32_t convertVelocity2Value(uint8_t id, float velocity)
-**Description**  
-Convert velocity to 32-bit raw data
+**説明文**  
+速度を32ビットのraw値に変換します。  
 
-**Input**    
-1. `id` : Set DYNAMIXEL ID
-1. `velocity` : Set velocity. Unit is m/s
+**引数**    
+1. `id` : DYNAMIXELのIDを設定する。
+1. `velocity` : 速度を設定する。単位はm/s  
 
-**Output**  
-Return 32-bit raw data
+**戻り値**  
+32ビットのraw値を返します。  
 
 ### float convertValue2Velocity(uint8_t id, int32_t value)
-**Description**  
-Convert 32-bit raw data to velocity
+**説明文**  
+32ビットのraw値を速度に変換します。  
 
-**Input**    
-1. `id` : Set DYNAMIXEL ID
-1. `value` : Set 32-bit raw data
+**引数**    
+1. `id` : DYNAMIXELのIDを設定する。
+1. `value` : 32ビットのraw値を設定する。  
 
-**Output**  
-Return velocity. Unit is m/s
+**戻り値**  
+速度を返します。単位はm/sです。  
 
 ### int16_t convertCurrent2Value(float current)
-**Description**  
-Convert current to 16-bit raw data.
+**説明文**  
+電流を16ビットのraw値に変換します。  
 
-**Input**    
-1. `current` : Set current. Unit is m/A
+**引数**    
+1. `current` : 電流を設定する。単位はm/A  
 
-**Output**  
-Return 16-bit raw data
+**戻り値**  
+16ビットのraw値を返します。  
 
 ### float convertValue2Current(int16_t value)
-**Description**  
-Convert 16-bit raw data to current
+**説明文**  
+16ビットのraw値を電流に変換します。  
 
-**Input**    
-1. `value` : Set 16-bit raw data
+**引数**    
+1. `value` : 16ビットのraw値を設定する。  
 
-**Output**  
-Return current. Unit is m/A
+**戻り値**  
+電流を返します。単位はm/Aです。  
 
 ### float convertValue2Load(int16_t value)
-**Description**  
-Convert 16-bit raw data to load
+**説明文**  
+16ビットのraw値をロードに変換します。  
 
-**Input**    
-1. `value` : Set 16-bit raw data
+**引数**    
+1. `value` : 16ビットのraw値を設定する。  
 
-**Output**  
-Return load. Unit is %
+**戻り値**  
+ロードを返します。単位は%です。  
 
 [dynamixel_workbench_msgs/DynamixelInfo]: /docs/en/popup/dynamixel_workbench_msgs_DynamixelInfo/
 [dynamixel_workbench_msgs/DynamixelCommand]: /docs/en/popup/dynamixel_workbench_msgs_DynamixelCommand/
