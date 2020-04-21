@@ -10,10 +10,10 @@ sidebar:
   title: 엔지니어 키트 2
   nav: "kit2"
 product_group: kit2
-page_number: 3
+page_number: 4
 ---
 
-<div style="counter-reset: h1 2"></div>
+<div style="counter-reset: h1 3"></div>
 
 # [참고자료](#참고자료)
 
@@ -55,6 +55,54 @@ ROBOTIS ENGINEER KIT2에서는 Raspberry Pi Camera와 앱을 동일한 와이파
     ![](/assets/images/edu/engineer/kit2/kit2_streaming_select_example_02.png)
     > 스트리밍 화면
 
+## [Raspberry Pi 업데이트 및 복구](#raspberry-pi-업데이트-및-복구)
+
+만약 라즈베리파이가 부팅시 문제가 있다면 키트전용 라즈비안을 다시 설치하여 해결할수 있습니다.
+
+1. 압축된 키트전용 [Release.zip](https://www.robotis.com/service/download.php?no=1923) (라즈비안 이미지 압축 파일) 을 다운로드 받으세요. 
+
+2. 파일압축을 해제하세요. 압축해제시 **rpi_eng_image_ver_1.img**이 선택한 폴더에 생성됩니다.
+
+3. 압축해제한 이미지 파일을 [Win32 Disk Imager](https://sourceforge.net/projects/win32diskimager/)와 같은 Imager 프로그램을 사용하여 저장매체에 넣어줘야 합니다. 본 매뉴얼에서는 Win32 Disk Imager를 사용합니다. 
+
+4. 설치한 Imager를 실행하세요.
+
+    ![](/assets/images/edu/engineer/kit2/run_win32diskimager.png)
+
+5. 2번 에서 압축해제한 **rpi_eng_image_ver_1.img**를 선택하세요.
+
+    ![](/assets/images/edu/engineer/kit2/select_rpi_image_extracted_01.png)
+
+    ![](/assets/images/edu/engineer/kit2/select_rpi_image_extracted_02.png)
+
+6. 선택한 이미지를 저장할 저장매체를 선택하세요.
+    
+    ![](/assets/images/edu/engineer/kit2/select_sdcard_drive.png)
+
+7. **Write**를 클릭하고, 키트 전용 라즈비안이 저장매체에 Writing이 완료될때까지 기다립니다.
+
+8. Write가 완료되면 win32diskimager를 종료하고, SD카드를 컴퓨터에서 분리 합니다.
+
+9. 분리한 SD 카드를 CM-550에 결합된 라즈베리파이 슬롯에 삽입합니다.
+
+10. CM-550의 전원을 켜고 부팅이 완료될때까지 기다립니다. 처음 SD 카드 삽입시 자동으로 부팅이 여러번 이루어지며, 완료시 마다 사용자 버튼이 노란색으로 켜지면서 "삐" 소리가 납니다.
+  
+    **참고**: 부팅시 약 3분정도 소요됩니다. 
+    {: .notice}
+
+11. 부팅 후, 스마트기기로 네트워크 목록 검색시, CM-550의 맥 주소와 동일한 이름이 검색 되면 업데이트가 성공적으로 완료된 것입니다.
+
+    **참고**: 맥 주소는 CM-550의 전원 버튼 옆에 표시되어 있습니다.
+    {: .notice} 
+
+    ![](/assets/images/edu/engineer/kit2/rpi_wifi_scan_01.png)  
+      > 부팅 완료 전 와이파이 검색 결과 
+    
+    ![](/assets/images/edu/engineer/kit2/rpi_wifi_scan_02.png)  
+      > 부팅 완료 후 와이파이 검색 결과
+
+12. 검색된 네트워크를 클릭하고, 비밀번호 입력창이 나타나면 `robotis0`를 입력 후 기기와 연결 해주세요. 
+      
 ## [제어기 BLE 신호 세기 설정](#제어기-ble-신호-세기-설정)
 
 CM-550에 내장된 BLE 슬레이브 모듈의 신호의 세기가 약하거나 간섭이 발생할 경우 통신이 불안정할 수 있습니다.  
@@ -183,6 +231,42 @@ CM-550에 내장된 BLE 슬레이브 모듈의 신호의 세기가 약하거나 
     - `Reset Offset` : 선택시 팝업창이 나타나며 `OK`를 클릭하면 모든 ID의 오프셋을 `0`으로 초기화 합니다.  
     - `Initial Pose` : 최근에 저장된 오프셋 값을 불러오는 명령입니다. 관절을 잘못된 값으로 조정하였을 경우 저장된 값을 불러옵니다.
 
+## [다운로드](#다운로드)
+엔지니어 키트 사용에 필요한 앱 및 소프트웨어, 조립서, MARKER를 아래에서 다운로드 받을 수 있습니다.
+
+### [앱 설치하기](#앱-설치하기)
+엔지니어 키트2 는 엔지니어 키트 1와 동일한 소프트웨어(R+Task 3.0) 및 앱(로보티즈 엔지니어) 을 사용합니다. 다음과 같은 소프트웨어 및 앱을 설치 하지 경우, [앱 설치하기](/docs/kr/edu/engineer/kit1/#작동하기)를 참고하세요
+
+### [로봇 예제 다운로드 하기](#로봇-예제-다운로드-하기)
+- CM-550 제어기에는 최초 출하시 KIT2 타입에 맞는 프로그램이 기본적으로 다운로드되어 있습니다.  
+- 종합예제는 `MAX-E2`, `Commando`, `Scorpi` 세가지 로봇이 모두 포함된 예제입니다.
+
+| 기본 예제 |                                  파이썬 (.py)                                  |                                  모션 (.mtn3)                                  |
+|:---------:|:------------------------------------------------------------------------------:|:------------------------------------------------------------------------------:|
+|  MAX-E2   |  [01_ENG2_Max_E2_PY.py](https://www.robotis.com/service/download.php?no=1915)  | [01_ENG2_Max_E2_MO.mtn3](https://www.robotis.com/service/download.php?no=1916) |
+| Commando  | [02_ENG2_Commando_PY.py](https://www.robotis.com/service/download.php?no=1917) |                                   포함 안됨                                    |
+|  Scorpi   |  [03_ENG2_Scorpi_PY.py](https://www.robotis.com/service/download.php?no=1919)  | [03_ENG2_Scorpi_MO.mtn3](https://www.robotis.com/service/download.php?no=1918) |
+
+| 추가 예제 |                                 파이썬 (.py)                                  |                                  모션 (.mtn3)                                   |
+|:---------:|:-----------------------------------------------------------------------------:|:-------------------------------------------------------------------------------:|
+|  AutoBot  | [04_ENG2_Autobot_PY.py](https://www.robotis.com/service/download.php?no=1920) | [04_ENG2_Autobot_MO.mtn3](https://www.robotis.com/service/download.php?no=1921) |
+|  Strider  | [05_ENG2_Strider_PY.py](https://www.robotis.com/service/download.php?no=1922) |                                    포함 안됨                                    |
+
+### [조립서 다운로드 받기](#조립서-다운로드-받기)
+
+아래의 표에서 필요한 조립서를 다운로드 받으세요.
+
+|  Model   | Download |
+|:--------:|:---------|
+|  MAX-E2  |          |
+| Commando |          |
+|  Scorpi  |          |
+
+### [Commando Marker 다운로드 받기](#commando-marker-다운로드-받기)
+
+- [Commando MARKER] 다운로드.
+
+![](/assets/images/edu/engineer/kit2/marker_for_commando.png)
 
 ## [점검 및 자가진단](#점검-및-자가진단)
 
@@ -196,7 +280,7 @@ CM-550에 내장된 BLE 슬레이브 모듈의 신호의 세기가 약하거나 
   > 충전지의 잔량이 부족해서 나는 경고음입니다. [배터리를 충전](#배터리-충전하기)해 주세요.
 
 4. 로봇이 정상적으로 작동하지 않아요.  
-  > 로봇의 조립 방법 및 [다이나믹셀 ID](#다이나믹셀-id확인)를 확인해 보세요.  
+  > 로봇의 조립 방법 및 [다이나믹셀 ID](/docs/kr/edu/engineer/kit2_introduction/#다이나믹셀-id확인)를 확인해 보세요.  
 
 5. 어댑터로는 동작하는데 충전지로 동작하지 않아요.  
   > 제어기의 퓨즈 상태를 확인하고 필요시 교체합니다. [퓨즈 교체하기](#퓨즈-교체하기)를 참고하세요.    
@@ -215,5 +299,4 @@ CM-550에 내장된 BLE 슬레이브 모듈의 신호의 세기가 약하거나 
 
 ## [도면](#도면)
 
-엔지니어 키트의 도면자료는 **[로보티즈 다운로드 센터](http://www.robotis.com/service/downloadpage.php?ca_id=70g0)** 에서 제공됩니다. 
-{: .notice--success}
+{% include kr/dxl/download_center_notice.md %}

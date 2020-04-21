@@ -14411,18 +14411,18 @@ kit2:
         titlekr: "다이나믹셀"
         url: /edu/engineer/kit2_introduction/#dynamixel-
         urlkr: /edu/engineer/kit2_introduction/#다이나믹셀-
-      - title: "LED Board"
+      - title: "LED Module"
         titlekr: "LED 보드"
-        url: /edu/engineer/kit2_introduction/#led-board
+        url: /edu/engineer/kit2_introduction/#led-module
         urlkr: /edu/engineer/kit2_introduction/#led-보드
       - title: "Servo Motor"
         titlekr: "서보모터"
         url: /edu/engineer/kit2_introduction/#servo-motor
         urlkr: /edu/engineer/kit2_introduction/#서보모터  
-      - title: "DMS"
+      - title: "DMS-80"
         titlekr: "DMS-80"
-        url: /edu/engineer/kit2_introduction/#dms
-        urlkr: /edu/engineer/kit2_introduction/#dms      
+        url: /edu/engineer/kit2_introduction/#dms-80
+        urlkr: /edu/engineer/kit2_introduction/#dms-80     
     - title: "Cautions"
       titlekr: "주의사항"
       url: /edu/engineer/kit2_introduction/#cautions
@@ -14489,21 +14489,25 @@ kit2:
         urlkr: /edu/engineer/kit2_quickstart/#scorpi
   - title: "Advanced Courses"
     titlekr: "교육자료 다운로드"
-    url: /edu/engineer/kit2_quickstart/#advanced-courses
-    urlkr: /edu/engineer/kit2_quickstart/#교육자료-다운로드
+    url: /edu/engineer/kit2_advanced_course/#advanced-courses
+    urlkr: /edu/engineer/kit2_advanced_course/#교육자료-다운로드
   - title: "References"
     titlekr: "참고자료"
     url: /edu/engineer/kit2_reference/#references
     urlkr: /edu/engineer/kit2_reference/#참고자료
     children:
+    - title: "Setting Video Streaming on ROBOTIS ENGINEER App"
+      titlekr: "앱에서 영상 스트리밍 기능 설정하기"
+      url: /edu/engineer/kit2_reference/#setting-video-streaming-on-robotis-engineer-app
+      urlkr: /edu/engineer/kit2_reference/#앱에서-영상-스트리밍-기능-설정하기 
+    - title: "Raspberry Pi Update and Recovery"
+      titlekr: "Raspberry Pi 업데이트 및 복구"
+      url: /edu/engineer/kit2_reference/#raspberry-pi-update-and-recovery
+      urlkr: /edu/engineer/kit2_reference/#raspberry-pi-업데이트-및-복구
     - title: "BLE Signal Setting"
       titlekr: "제어기 BLE 신호 세기 설정"
       url: /edu/engineer/kit2_reference/#ble-signal-setting
-      urlkr: /edu/engineer/kit2_reference/#제어기-ble-신호-세기-설정
-    - title: "How to use a video streaming with Kit2"
-      titlekr: "앱에서 영상 스트리밍 기능 설정하기"
-      url: /edu/engineer/kit2_reference/#how-to-use-a-video-streaming-with-kit2
-      urlkr: /edu/engineer/kit2_reference/#앱에서-영상-스트리밍-기능-설정하기      
+      urlkr: /edu/engineer/kit2_reference/#제어기-ble-신호-세기-설정     
     - title: "Setting Up the Robot"
       titlekr: "로봇 설정하기"
       url: /edu/engineer/kit2_reference/#setting-up-the-robot
@@ -14517,6 +14521,27 @@ kit2:
         titlekr : "모터 오프셋 설정"
         url: /edu/engineer/kit2_reference/#dynamixel-offset
         urlkr: /edu/engineer/kit2_reference/#모터-오프셋-설정
+    - title: "Download"
+      titlekr: "다운로드"
+      url: /edu/engineer/kit2_reference/#download
+      urlkr: /edu/engineer/kit2_reference/#다운로드
+      children:
+      - title: "Download App"
+        titlekr: "앱 설치하기"
+        url: /edu/engineer/kit2_reference/#download-app
+        urlkr: /edu/engineer/kit2_reference/#앱-설치하기
+      - title: "Download Robot Examples"
+        titlekr: "로봇 예제 다운로드 하기"
+        url: /edu/engineer/kit2_reference/#download-robot-examples
+        urlkr: /edu/engineer/kit2_reference/#로봇-예제-다운로드-하기
+      - title: "Download Assembly Manual"
+        titlekr: "조립서 다운로드 받기"
+        url: /edu/engineer/kit2_reference/#download-assembly-manual
+        urlkr:  /edu/engineer/kit2_reference/#조립서-다운로드-받기
+      - title: "Download a MARKER for Commando"
+        titlekr: "Commando Marker 다운로드 받기"
+        url: /edu/engineer/kit2_reference/#download-a-marker-for-commando
+        urlkr: /edu/engineer/kit2_reference/#commando-marker-다운로드-받기               
     - title: "Self Checklist"
       titlekr: "점검 및 자가진단"
       url: /edu/engineer/kit2_reference/#self-checklist
@@ -14533,7 +14558,9 @@ kit2:
       titlekr: "퓨즈 교체하기"
       url: /edu/engineer/kit2_reference/#fuse-replacement
       urlkr: /edu/engineer/kit2_reference/#퓨즈-교체하기
-    - titlekr: "도면"
+    - title: "Drawings"
+      titlekr: "도면"
+      url: /edu/engineer/kit2_reference/#drawings
       urlkr: /edu/engineer/kit2_reference/#도면
 
 

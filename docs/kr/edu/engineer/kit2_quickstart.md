@@ -18,25 +18,22 @@ page_number: 2
 # [작동하기](#작동하기)
 
 ## [앱 설치하기](#앱-설치하기)
-엔지니어 키트 2 는 엔지니어 키트 1와 동일한 소프트웨어(R+Task 3.0) 및 앱(로보티즈 엔지니어) 을 사용합니다. 다음과 같은 소프트웨어 및 앱이 설치가 되어있지않다면, [앱 설치하기](/docs/kr/edu/engineer/kit1/#작동하기)를 참조하세요
+엔지니어 키트2 는 엔지니어 키트 1와 동일한 소프트웨어(R+Task 3.0) 및 앱(로보티즈 엔지니어) 을 사용합니다. 다음과 같은 소프트웨어 및 앱이 설치가 되어있지않다면, [앱 설치하기](/docs/kr/edu/engineer/kit1/#작동하기)를 참조하세요
 
 ## [예제 다운로드 하기](#예제-다운로드-하기)
-- CM-550 제어기에는 최초 출하시 KIT 1 타입에 맞는 프로그램이 기본적으로 다운로드되어 있습니다.  
-- 종합예제는 `MAX-E2`, `Commando`, `Scorpi` 세가지 로봇이 모두 포함된 예제입니다.
+아래 표에서 예제를 다운로드 받을수 있습니다. 예제를 다운로드 받은후, 스마트 기기 또는 PC를 이용하여 제어기에 저장해주세요.
+- CM-550 제어기에는 최초 출하시 KIT2 타입에 맞는 프로그램(`MAX-E2`, `Commando`, `Scorpi`)이 기본적으로 다운로드되어 있습니다.  
+- `AutoBot`, `Strider`는 제어기에 프로그램이 기본적으로 포함되어 있지않는 추가예제 입니다.
+- 예제를 PC에서 다운로드 받고 제어기에 저장하는 방법은 [PC에서 예제 다운로드 받기](#pc에서-예제-다운로드-받기)를 따라 하세요.
+- 예제를 스마트 디바이스에서 다운로드 받고 제어기에 저장하는 방법은 [스마트 기기에서 예제 다운로드 받기](#스마트-기기에서-예제-다운로드-받기)를 따라하세요.
 
-| 기본 예제 |                                 태스크 파일                                  |                                 모션 파일                                 |
-|:----------|:----------------------------------------------------------------------------:|:-------------------------------------------------------------------------:|
-| 종합 예제 | [태스크 파일 다운로드](http://www.robotis.com/service/download.php?no=1779 ) | [모션 파일 다운로드](http://www.robotis.com/service/download.php?no=1787) |
-| MAX-E2    | [태스크 파일 다운로드](http://www.robotis.com/service/download.php?no=1780)  | [모션 파일 다운로드](http://www.robotis.com/service/download.php?no=1788) |
-| Commando  | [태스크 파일 다운로드](http://www.robotis.com/service/download.php?no=1781)  | [모션 파일 다운로드](http://www.robotis.com/service/download.php?no=1789) |
-| Scorpi    | [태스크 파일 다운로드](http://www.robotis.com/service/download.php?no=1782)  | [모션 파일 다운로드](http://www.robotis.com/service/download.php?no=1790) |
-
-| 추가 예제  |                                 태스크 파일                                  |                                 모션 파일                                 |
-|:-----------|:----------------------------------------------------------------------------:|:-------------------------------------------------------------------------:|
-| 종합 예제  | [태스크 파일 다운로드](http://www.robotis.com/service/download.php?no=1779 ) | [모션 파일 다운로드](http://www.robotis.com/service/download.php?no=1787) |
-| 추가 예제1 | [태스크 파일 다운로드](http://www.robotis.com/service/download.php?no=1780)  | [모션 파일 다운로드](http://www.robotis.com/service/download.php?no=1788) |
-| 추가 예제2 | [태스크 파일 다운로드](http://www.robotis.com/service/download.php?no=1781)  | [모션 파일 다운로드](http://www.robotis.com/service/download.php?no=1789) |
-| 추가 예제3 | [태스크 파일 다운로드](http://www.robotis.com/service/download.php?no=1782)  | [모션 파일 다운로드](http://www.robotis.com/service/download.php?no=1790) |
+| 기본 예제           | 파이썬 (.py)                                                                   | 모션 (.mtn3)                                                                    |
+|:--------------------|:-------------------------------------------------------------------------------|:--------------------------------------------------------------------------------|
+| MAX-E2              | [01_ENG2_Max_E2_PY.py](https://www.robotis.com/service/download.php?no=1915)   | [01_ENG2_Max_E2_MO.mtn3](https://www.robotis.com/service/download.php?no=1916)  |
+| Commando            | [02_ENG2_Commando_PY.py](https://www.robotis.com/service/download.php?no=1917) | 파이썬 예제만 사용                                                              |
+| Scorpi              | [03_ENG2_Scorpi_PY.py](https://www.robotis.com/service/download.php?no=1919)   | [03_ENG2_Scorpi_MO.mtn3](https://www.robotis.com/service/download.php?no=1918)  |
+| AutoBot (추가 예제) | [04_ENG2_Autobot_PY.py](https://www.robotis.com/service/download.php?no=1920)  | [04_ENG2_Autobot_MO.mtn3](https://www.robotis.com/service/download.php?no=1921) |
+| Strider (추가 예제) | [05_ENG2_Strider_PY.py](https://www.robotis.com/service/download.php?no=1922)  | 파이썬 예제만 사용                                                              |
 
 ### [PC에서 예제 다운로드 받기](#pc에서-예제-다운로드-받기)
 PC로 작성한 예제 또는 다운로드 받은 예제를 제어기에 다운로드 하는 방법입니다.
@@ -85,7 +82,7 @@ PC로 작성한 예제 또는 다운로드 받은 예제를 제어기에 다운�
 
 `ROBOTIS ENGINEER` 앱을 실행하고, 화면에서 MAX-E2를 선택하세요.
 
-#### [조종 화면](#조종-화면)
+#### [MAX-E2 조종 화면](#max-e2-조종-화면)
 
 ![](/assets/images/edu/engineer/kit2/max2_controller_kr.png)
 
@@ -102,7 +99,7 @@ PC로 작성한 예제 또는 다운로드 받은 예제를 제어기에 다운�
 {% endcapture %}
 <div class="notice">{{ max_notice | markdownify }}</div>
 
-#### 모드 메뉴
+#### [MAX-E2 모드 메뉴](#max-e2-모드-메뉴)
 
 |                          아이콘                          | 모드 설명                                                                                                                                          |
 |:--------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -110,7 +107,7 @@ PC로 작성한 예제 또는 다운로드 받은 예제를 제어기에 다운�
 | ![](/assets/images/edu/engineer/kit2/icon_streaming.png) | **STREAMING : 스트리밍 모드**<br>Raspberry Pi 카메라를 활용해 전송되는 영상을 스마트 기기의 화면으로 보면서 버튼을 눌러 로봇을 조종할 수 있습니다. |
 |   ![](/assets/images/edu/engineer/kit1/icon_face.png)    | **FACE : 얼굴 감지 모드**<br>라즈베리파이 카메라를 활용해 얼굴을 감지하는 모드로 얼굴을 감지하면 인사 등의 지정된 동작을 수행합니다.               |
 
-#### 옵션메뉴
+#### [MAX-E2 옵션메뉴](#max-e2-옵션메뉴)
 
 |                        아이콘                         | 옵션 설명                                                                              |
 |:-----------------------------------------------------:|:---------------------------------------------------------------------------------------|
@@ -123,14 +120,14 @@ PC로 작성한 예제 또는 다운로드 받은 예제를 제어기에 다운�
 ![](/assets/images/edu/engineer/kit2/kit2_offset_layout.png)
 > 모션 오프셋 실행 화면
 
-**참고** : 옵션 메뉴는 모든 예제에 포함되어 있으며 세부 설정 방법은 [로봇 설정하기](#로봇-설정하기)를 참고하세요.
+**참고** : 옵션 메뉴는 모든 예제에 포함되어 있으며 세부 설정 방법은 [로봇 설정하기](/docs/kr/edu/engineer/kit2_reference/#로봇-설정하기)를 참고하세요.
 {: .notice--info}
 
 ### [Commando](#commando)
 
 `ROBOTIS ENGINEER` 앱을 실행하고, 화면에서 Commando를 선택하세요.
 
-#### [데모 화면 소개](#데모-화면-소개)
+#### [Commando 데모 화면](#commando-데모-화면)
 
 ![](/assets/images/edu/engineer/kit2/commando_demo_kr.png)
 
@@ -146,17 +143,11 @@ PC로 작성한 예제 또는 다운로드 받은 예제를 제어기에 다운�
 {% endcapture %}
 <div class="notice">{{ commando_notice | markdownify }}</div>
 
-#### 옵션메뉴
-
-<!-- 
-|                        아이콘                         | 메뉴 설명                                                                                                                                                                                              |
-|:-----------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ![](/assets/images/edu/engineer/kit1/icon_remote.png) | **REMOTE : 조종 모드** <br> Commando 로봇을 조종하는 모드이며 로봇의 이동 및 방향 전환, 카메라 등을 제어하는 명령을 사용할 수 있습니다.<br>WHEEL SPEED를 조정하면 로봇의 이동속도를 변경할 수 있습니다 | 
--->
+#### [Commando 옵션메뉴](#commando-옵션메뉴)
 
 ![](/assets/images/edu/engineer/kit1/icon_remote.png)
 
-**REMOTE : 조종 모드** <br> Commando 로봇을 조종하는 모드이며 로봇의 이동 및 방향 전환, 카메라 등을 제어하는 명령을 사용할 수 있습니다.<br>WHEEL SPEED(바퀴 속도)를 조정하면 로봇의 이동속도를 변경할 수 있습니다
+**REMOTE : 조종 모드** <br> Commando 로봇을 조종하는 모드이며 로봇의 이동 및 방향 전환, 카메라 등을 제어하는 명령을 사용할 수 있습니다. 조종모드에서 WHEEL SPEED(바퀴 속도)를 조정하면 로봇의 이동속도를 변경할 수 있습니다
 
 ![](/assets/images/edu/engineer/kit2/commando_control_kr.png)
 > Commando 조종 모드 화면
@@ -171,7 +162,7 @@ PC로 작성한 예제 또는 다운로드 받은 예제를 제어기에 다운�
 
 `메뉴 버튼` : 조종 / 제스처 / 데모 / 로봇 점검 모드 등을 선택할 수 있습니다.  
 `모드 버튼` :
-  - `NORMAL MODE`를 선택하면 Scorpi 로봇이 일어나 동작하고, 절대거리센서 [DMS-80](/docs/kr/edu/engineer/kit2_introduction/#절대-거리-센서)가 물체를 감지하면 꼬리로 공격합니다.
+  - `NORMAL MODE`를 선택하면 Scorpi 로봇이 일어나 동작하고, 절대거리센서 [DMS-80](/docs/kr/edu/engineer/kit2_introduction/#절대-거리-센서)에 물체가 감지되면 꼬리를 움직여 공격합니다.
   - `GUARD MODE`를 선택하면 Scorpi 로봇이 제자리에서 경계 자세를 취하며, 절대거리센서 [DMS-80](/docs/kr/edu/engineer/kit2_introduction/#절대-거리-센서)에 물체가 감지되면 꼬리를 움직여 공격합니다.
 
 #### [Scorpi 메뉴 기능 소개](#scorpi-메뉴-기능-소개)
@@ -187,6 +178,8 @@ PC로 작성한 예제 또는 다운로드 받은 예제를 제어기에 다운�
 ![](/assets/images/edu/engineer/kit2/scorpi_gesture.png)  
   > 제스쳐 모드 화면  
 
+<!-- 
+
 ## [로봇 설정하기](#로봇-설정하기)
 
 ### [모터 조립확인](#모터-조립확인)
@@ -197,13 +190,8 @@ PC로 작성한 예제 또는 다운로드 받은 예제를 제어기에 다운�
 로보티즈 엔지니어에 사용된 다이나믹셀의 자세나 위치 값의 보정이 필요할 때 사용하는 기능입니다.  
 오프셋 기능을 통해 보정된 값은 로봇의 전원을 끄더라도 저장됩니다.  
 오프셋 기능을 숙지한 상태에서 미세하게 조정해야 하며 잘못된 값을 사용시 예제 동작이 잘 안되거나 로봇이 파손될 수 있습니다.  
-이 기능은 엔지니어 키트 1과 동일합니다, 키트 1의 [모터 조립확인](/docs/kr/edu/engineer/kit1/#모터-오프셋-설정)을 참고하세요.
-
-# [교육자료 다운로드](#교육자료-다운로드)
-
-- [추가 예제 조립서 다운로드](드롭다운 주소)
-
-![](/assets/images/edu/engineer/kit2/engineer_edu_metarials_kit2.png)
+이 기능은 엔지니어 키트 1과 동일합니다, 키트 1의 [모터 조립확인](/docs/kr/edu/engineer/kit1/#모터-오프셋-설정)을 참고하세요. 
+-->
 
 [로보플러스 태스크 3.0]: /docs/kr/software/rplustask3/
 [로보플러스 태스크 2.0]: /docs/kr/software/rplus2/task/

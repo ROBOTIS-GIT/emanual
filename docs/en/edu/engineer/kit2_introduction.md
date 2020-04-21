@@ -9,24 +9,24 @@ permalink: /docs/en/edu/engineer/kit2_introduction/
 sidebar:
   title: ENGINEER Kit2
   nav: "kit2"
+product_group: kit2
 page_number: 1
 ---
 
 # [Introduction](#introduction)
 
-![](/assets/images/edu/engineer/kit2/temp/temp_parts_list_kr.png)
+![](/assets/images/edu/engineer/kit2/kit2_main.png)
 
 **ROBOTIS ENGINEER** is the next generation robot that adopts AI technology based on smart devices.  
-
-- ROBOTIS ENGINEER Kit offers standardized curriculum for multi level robotics educational courses
-- Joint structure allows diverse motions for versatile robots
-- Supports 3D part designing and printing
-- Compatible with R+ ENGINEER(Smart device app), R+ Task 3.0(PC software)
-- Upgrade to Raspberry Pi and Camera
+- Provides standardized curriculum for multi level robotics educational courses.
+- Joint structure allows diverse motions for versatile robots.
+- Supports 3D part designing and printing.
+- Provides an exclusive app (R+ ENGINEER) and software (R+ Task 3.0).
+- Supports Raspberry Pi and Camera.
 
 ## [Parts List](#parts-list)
 
-![](/assets/images/edu/engineer/kit1/parts_list.png)
+![](/assets/images/edu/engineer/kit2/kit2_parts_list.png)
 
 ### [CM-550 Controller](#cm-550-controller)
 
@@ -113,11 +113,11 @@ Raspberry Pi Camera can be connected with Raspberry Pi and can perform various f
 
 ![](/assets/images/edu/engineer/kit2/raspberry_pi_zero_connection.png)
 
-**NOTE**: After you turn on the controller wait for 70 seconds to boot Raspberry Pi. Once booting is
-completed yellow led light is turned on and can hear a sound.
-{: .notice--info}
+**NOTE**: After turning on the controller, wait for 70 seconds to boot Raspberry Pi. Once booting is
+completed, the yellow LED will light on with beep sound.
+{: .notice}
 
-### [Actuator](#actuator)
+### [DYNAMIXEL ](#dynamixel-)
 
 #### [XL430-W250-T](#xl430-w250-t)
 The DYNAMIXEL XL430-W250-T is a smart actuator designed for robot applications.
@@ -128,7 +128,7 @@ The XL430-W250-T offers various control modes such as speed, position, extended 
 **[XL430-W250-T e-Manual]{: .blank}**
 {: .notice}
 
-### [2XL430-W250 DYNAMIXEL](#2xl430-w250-dynamixel)
+### [2XL430-W250](#2xl430-w250)
 **2XL430-W250** is a ground breaking DYNAMIXEL that allows to control **2 axis(2 DOF)** with a single module. In order to control 2 axis at the same time, each axle is assigned with different ID while sharing an identical Baudrate. Since the Control Table for each axle is separated except the Baudrate, 2XL can be applied in various applications.  
 
 The usage is identical to other DYNAMIXEL's, but be aware that Firmware Recovery will reset both axis to factory settings.
@@ -150,16 +150,6 @@ The R / B LED board, which can control colors (red, blue and violet) and light i
 ![](/assets/images/edu/engineer/kit2/led_board_03.png)
 > LED Module Equipped for MAX-E2
 
-### [DMS-80](#dms-80)
-DMS-80(Distance Measuring Sensor) is a sensor to detect the distance using infrared sensor.
-Different to the common infrared sensor, the DMS sensor is rarely affected by the color of the
-refelctor and detection distance can be extended up to 10 to 80 cm  
-
-![](/assets/images/edu/engineer/kit2/dms.png)
-
-**[DMS-80 e-Manual]{: .blank}**
-{: .notice}
-
 ### [Servo Motor](#servo-motor)
 An Actuator is often used for motion control in applications which require an apparatus to rotate at a certain angle or to move at a specific position. DYNAMIXEL can offer various operating modes, of which the wheel based rotational movement as well as precise position
 for joint movement are the most popular.  
@@ -167,6 +157,16 @@ for joint movement are the most popular.
 ![](/assets/images/parts/motor/servo_motor_product.jpg)
 
 **[Servo Motor e-Manual]{: .blank}**
+{: .notice}
+
+### [DMS-80](#dms-80)
+DMS-80(Distance Measuring Sensor) is a sensor to detect the distance using infrared sensor.
+Different to the common infrared sensor, the DMS sensor is rarely affected by the color of the
+refelctor and detection distance can be extended up to 10 to 80 cm.
+
+![](/assets/images/edu/engineer/kit2/dms.png)
+
+**[DMS-80 e-Manual]{: .blank}**
 {: .notice}
 
 ## [Cautions](#cautions)
@@ -275,10 +275,11 @@ Both connectors are linked to supply power and communication to the module. Plea
 **NOTE** :  
 Through hole wiring method helps to increase the durability of cable and to simplify cable assembly.  
 It is not a mandatory and it may require more time to replace the cable afterward.
-{: .notice--info}
+{: .notice}
 
 [XL430-W250-T e-Manual]: /docs/en/dxl/x/xl430-w250/
 [CM-550 e-Manual]: /docs/en/parts/controller/cm-550/
 [2XL430-W250 e-Manual]: /docs/en/dxl/x/2xl430-w250/
 [DMS-80 e-Manual]: /docs/en/parts/sensor/dms-80/
 [Servo Motor e-Manual]: /docs/en/parts/motor/servo_motor/ 
+[Operating Mode]: /docs/en/parts/controller/cm-550/#operating-mode

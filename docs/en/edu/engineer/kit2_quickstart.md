@@ -9,6 +9,7 @@ permalink: /docs/en/edu/engineer/kit2_quickstart/
 sidebar:
   title: ENGINEER Kit2
   nav: "kit2"
+product_group: kit2
 page_number: 2
 ---
 
@@ -18,26 +19,22 @@ page_number: 2
 
 ## [App Installation](#app-installation)
 
-ENGINEER KIT2 uses the same software (R+Task 3.0) and ENGIEER app as KIT 1's. If these app and software are not installed on your PC or a smart device, see [App Installation](/docs/en/edu/engineer/kit1/#app-installation).
+The ENGINEER KIT2 shares R+Task 3.0 and ENGIEER app with the ENGINEER KIT 1. If these app and software are not installed on your PC or a smart device, see [App Installation](/docs/en/edu/engineer/kit1/#app-installation) and install the app and software.
 
 ## [Download Examples](#download-examples)
-- CM-550 controller is initially programmed with Kit1 example.  
-- The `Complete Example` includes `Dr.R`, `MAX-E1`, `SPI` examples.
+Download Kit2 Examples (.py and .mth) into the CM-550 controller. 
+- CM-550 controller is initially programmed with Kit2 example (`MAX-E2`, `Commando`, `Scorpi`).  
+- `AutoBot` and `Strider` are the additional examples which are not included in the controller with a factory status.
+- In order to download examples into the controller using PC, see [Download from PC](#download-from-pc).
+- In order to download examples into the controller using a smart device, see [Download from Smart Device](#download-from-smart-device).
 
-|     Example      |                                  Task Files                                   |                                 Motion Files                                  |
-|:----------------:|:-----------------------------------------------------------------------------:|:-----------------------------------------------------------------------------:|
-| Complete Example | [01_ENG1_TOTAL_EN.tsk3](http://www.robotis.com/service/download.php?no=1779)  | [01_ENG1_TOTAL_EN.mtn3](http://www.robotis.com/service/download.php?no=1787)  |
-|       Dr.R       |  [02_ENG1_DR_R_EN.tsk3](http://www.robotis.com/service/download.php?no=1780)  |  [02_ENG1_DR_R_EN.mtn3](http://www.robotis.com/service/download.php?no=1788)  |
-|      MAX-E1      | [03_ENG1_MAX_E1_EN.tsk3](http://www.robotis.com/service/download.php?no=1781) | [03_ENG1_MAX_E1_EN.mtn3](http://www.robotis.com/service/download.php?no=1789) |
-|       SPI        |  [04_ENG1_SPI_EN.tsk3](http://www.robotis.com/service/download.php?no=1782)   |  [04_ENG1_SPI_EN.mtn3](http://www.robotis.com/service/download.php?no=1790)   |
-
-
-| 추가 예제  |                                 태스크 파일                                  |                                 모션 파일                                 |
-|:-----------|:----------------------------------------------------------------------------:|:-------------------------------------------------------------------------:|
-| 종합 예제  | [태스크 파일 다운로드](http://www.robotis.com/service/download.php?no=1779 ) | [모션 파일 다운로드](http://www.robotis.com/service/download.php?no=1787) |
-| 추가 예제1 | [태스크 파일 다운로드](http://www.robotis.com/service/download.php?no=1780)  | [모션 파일 다운로드](http://www.robotis.com/service/download.php?no=1788) |
-| 추가 예제2 | [태스크 파일 다운로드](http://www.robotis.com/service/download.php?no=1781)  | [모션 파일 다운로드](http://www.robotis.com/service/download.php?no=1789) |
-| 추가 예제3 | [태스크 파일 다운로드](http://www.robotis.com/service/download.php?no=1782)  | [모션 파일 다운로드](http://www.robotis.com/service/download.php?no=1790) |
+| Examples                       | Python (.py)                                                                   | Motion (.mtn)                                                                   |
+|:-------------------------------|:-------------------------------------------------------------------------------|:--------------------------------------------------------------------------------|
+| MAX-E2                         | [01_ENG2_Max_E2_PY.py](https://www.robotis.com/service/download.php?no=1915)   | [01_ENG2_Max_E2_MO.mtn3](https://www.robotis.com/service/download.php?no=1916)  |
+| Commando                       | [02_ENG2_Commando_PY.py](https://www.robotis.com/service/download.php?no=1917) | Only Python File is used                                                        |
+| Scorpi                         | [03_ENG2_Scorpi_PY.py](https://www.robotis.com/service/download.php?no=1919)   | [03_ENG2_Scorpi_MO.mtn3](https://www.robotis.com/service/download.php?no=1918)  |
+| AutoBot  (Additional Eaxmples) | [04_ENG2_Autobot_PY.py](https://www.robotis.com/service/download.php?no=1920)  | [04_ENG2_Autobot_MO.mtn3](https://www.robotis.com/service/download.php?no=1921) |
+| Strider  (Additional Eaxmples) | [05_ENG2_Strider_PY.py](https://www.robotis.com/service/download.php?no=1922)  | Only Python File is used                                                        |
 
 ### [Download from PC](#download-from-pc)
 
@@ -45,7 +42,6 @@ ENGINEER KIT2 uses the same software (R+Task 3.0) and ENGIEER app as KIT 1's. If
 2. [How to Download Task Example via PC]{: .popup}
 3. [How to Download Motion Example via PC]{: .popup}
 4. [How to Download Python Example Source Code]{: .popup}
-
 
 ### [Download from Smart Device](#download-from-smart-device)
 
@@ -70,18 +66,17 @@ Select the menu button on the top right corner of the app for app configuration.
 ![](/assets/images/edu/engineer/kit1/engineer_app_configuration.png)
 
 `Connect to Robot` : Select Bluetooth device to connect.  
-`Reset Example` : Modified contents (including code / images) of selected examples will be deleted.
+`Reset Example` : Modified contents (including code / images) of selected examples will be deleted.  
 `Range of Gesture Error Setting` : Set the sensitivity level of the gesture command.  
-`Display Example Image on Gallery` : Some smart devices may not support this feature.
-`Scanning Media` : Update files and folders that are not recognized from the PC. Reconnect PC after the scan. 
+`Display Example Image on Gallery` : Some smart devices may not support this feature.  
+`Scanning Media` : Update files and folders that are not recognized from the PC. Reconnect PC after the scan.  
 `Version Information` : Display the current app version.  
 
-## [Pairing Bluetooth](#pairing-bluetooth)
+### [Pairing Bluetooth](#pairing-bluetooth)
 
 In order to control the robot remotely, connect your smart device via bluetooth to CM-550 controller. See [Pairing Bluetooth](/docs/en/edu/engineer/kit1/#pairing-bluetooth) of ENGINEER Kit 1.
 
 ![](/assets/images/edu/engineer/kit2/kit2_streaming_bluetooth.png)
-
 
 ### [MAX-E2](#max-e2)
 
@@ -104,7 +99,7 @@ Run `ROBOTIS ENGINEER` Kit2 App and select **MAX-E2**.
 {% endcapture %}
 <div class="notice">{{ max_notice | markdownify }}</div>
 
-#### Mode Menu
+#### [MAX-E2 Mode Menu](#max-e2-mode-menu)
 
 |                           Icon                           | Description                                                                                                                      |
 |:--------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------|
@@ -112,7 +107,7 @@ Run `ROBOTIS ENGINEER` Kit2 App and select **MAX-E2**.
 | ![](/assets/images/edu/engineer/kit2/icon_streaming.png) | **STREAMING**<br>Control the robot by watching videos taken from Raspberry Pi camera on your smart device and selecting buttons. |
 |   ![](/assets/images/edu/engineer/kit1/icon_face.png)    | **FACE**<br>Certain motions as greetings is available by face detection using Raspberry PI camera.                               |
 
-#### Options
+#### [MAX-E2 Options](#max-e2-options)
 
 |                         Icon                          | Description                                                                  |
 |:-----------------------------------------------------:|:-----------------------------------------------------------------------------|
@@ -125,22 +120,21 @@ Run `ROBOTIS ENGINEER` Kit2 App and select **MAX-E2**.
 ![](/assets/images/edu/engineer/kit2/kit2_offset_layout.png)
 > OFFSET Adjustment  
 
-**NOTE** : See [Setting Up the Robot](#setting-up-the-robot) to change configuration data of motors and its offset.     
+**NOTE** : See [Setting Up the Robot](/docs/en/edu/engineer/kit2_reference/#setting-up-the-robot) to change configuration data of motors and its offset.     
 {: .notice--info}
 
 ### [Commando](#commando)
 
 Run `ROBOTIS ENGINEER` Kit2 App and select **Commando**.
 
-#### [Demo Screen](#demo-screen) 
+#### [Commando Demo Screen](#commando-demo-screen) 
 
 ![](/assets/images/edu/engineer/kit2/commando_demo.png)
 
 `Menu Button` : Selecting Demo/ Control/ Streaming/ Robot inspection modes.  
-`Mode Button` :
+`Mode Button` : See the description below.
 - `LINE MODE` identifies the colors of the lines by Raspberry Pi Camera and moves accordingly. Line colors can be choosen from `COLOR SELECTION`.
-- `MARKER MODE` uses Raspberry Pi Camera to identify markers in order then by `START MARKER` the robot moves accordingly. `DEBUGGING MODE` identifies motions by loading time and `RUN MODE`
-connects motions without loading time.
+- `MARKER MODE` uses Raspberry Pi Camera to identify markers in order then by `START MARKER` the robot moves accordingly. `DEBUGGING MODE` identifies motions by loading time and `RUN MODE` connects motions without loading time.
 
 {% capture commando_notice %}
 **NOTE**: 
@@ -149,11 +143,11 @@ connects motions without loading time.
 {% endcapture %}
 <div class="notice">{{ commando_notice | markdownify }}</div>
 
-#### [Mode Menu](#mode-menu)
+#### [Commando Mode Menu](#commando-mode-menu)
 
 ![](/assets/images/edu/engineer/kit1/icon_remote.png)
 
-**REMOTE**: Controlling and ordering motions, directions, cameras, etc. Selecting **WHEEL SPEED** is to change the speed of the robot.
+**REMOTE**: Controlling and ordering motions, directions, cameras, etc. Selecting **WHEEL SPEED** is to change the speed of the robot on the REMOTE mode.
 
 ![](/assets/images/edu/engineer/kit2/commando_control.png)
 > Commando REMOTE Mode Screen
@@ -162,16 +156,16 @@ connects motions without loading time.
 
 Run `ROBOTIS ENGINEER` Kit2 App and select **Scorpi**.
 
-#### [Demo Screen](#demo-screen)  
+#### [Scorpi Demo Screen](#scorpi-demo-screen)  
 
 ![](/assets/images/edu/engineer/kit2/scorpi_demo.png)
 
 `Menu Button` : Control/ Gesture/ Deme/ Robot inspection mode.  
-`Mode Button` :
+`Mode Button` : See the description below.
   - `NORMAL MODE` Scorpi Robot stands up and moves, and when [DMS-80](/docs/en/edu/engineer/kit2_introduction/#dms-80) detects objects, it attacks with it's tail.  
-  - `GUARD MODE`Scorpi robot is on guard pose, and when [DMS-80](/docs/en/edu/engineer/kit2_introduction/#dms-80) detects objects, it attacks with it's tail.
+  - `GUARD MODE` Scorpi robot is on guard pose, and when [DMS-80](/docs/en/edu/engineer/kit2_introduction/#dms-80) detects objects, it attacks with it's tail.
 
-#### [Mode Menu](#mode-menu)
+#### [Scorpi Mode Menu](#scorpi-mode-menu)
 
 |                         아이콘                         | 메뉴 설명                                                                                                                                                                                                              |
 |:------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -184,34 +178,19 @@ Run `ROBOTIS ENGINEER` Kit2 App and select **Scorpi**.
 ![](/assets/images/edu/engineer/kit2/scorpi_gesture.png)  
   > GESTURE Mode Screen  
 
+<!-- 
 ## [Setting Up the Robot](#setting-up-the-robot)
 
 ### [Check DYNAMIXEL Assembly](#check-dynamixel-assembly)
 This function checks DYNAMIXEL ID and status of the ROBOTIS ENGINEER Kit2.  
-
-The way of checking DYNAMIXEL assembly is the same as ENGINEER KIT 1's. Refer to ENGINEER kit1's [DYNAMIXEL Assembly](/docs/en/edu/engineer/kit2_quickstart/#quick-start) manual.
+- To check DYNAMIXEL assembly status, see the ENGINEER kit1's [DYNAMIXEL Assembly](/docs/en/edu/engineer/kit1/#quick-start) instruction.
 
 ### [DYNAMIXEL Offset](#dynamixel-offset)
 This function is used to adjust the pose of the robot by calibrating offset values of the DYNAMIXEL used in the ROBOTIS ENGINEER KIT.  
 Configured offset value will be saved on each DYNAMIXEL.  
 Please perform an offset adjustment with a thorough understanding as it may be the cause of unstable motions or hardware damages when improperly configured.  
-
-The way of configuring its value is the same as ENGINEER KIT 1's. Refer to ENGINEER kit1's [DYNAMIXEL Offset](/docs/en/edu/engineer/kit2_quickstart/#dynamixel-offset) manual. 
-
-# [Advanced Courses](#advanced-courses)
-
-Customize your ROBOTIS ENGINEER KIT with additional resources.
-
-## [Training Materials, Additional Examples, 3D Printing](#training-materials-additional-examples-3d-printing)
-
-{% capture edu_application %}
-Additional course materials can be downloaded from below link.
-
-- [**Request Additional Course Materials**](http://en.robotis.com/pdf_project/register.php)
-{% endcapture %}
-<div class="notice--info">{{ edu_application | markdownify }}</div>
-
-![](/assets/images/edu/engineer/kit2/engineer_edu_metarials_kit2.png)
+- To configure its value, see the ENGINEER kit1's [DYNAMIXEL Offset](/docs/en/edu/engineer/kit1/#dynamixel-offset) manual.
+-   -->
 
 [CM-550 eManual]: /docs/en/parts/controller/cm-550/
 [2XL430-W250 eManual]: /docs/en/dxl/x/2xl430-w250/

@@ -15,6 +15,8 @@ page_number: 1
 
 # [개요](#개요)
 
+![](/assets/images/edu/engineer/kit2/kit2_main.png)
+
 **로보티즈 엔지니어** 는 스마트 기기를 활용한 AI 기술이 적용된 새로운 개념의 차세대 로봇입니다.  
 - 다양한 움직임을 구현하는 관절형 구조
 - 단계별 로봇교육과정 및 표준 커리큘럼 제공
@@ -24,7 +26,7 @@ page_number: 1
 
 ## [부품 목록](#부품-목록)
 
-![](/assets/images/edu/engineer/kit2/temp/temp_parts_list_kr.png)
+![](/assets/images/edu/engineer/kit2/kit2_parts_list.png)
 
 ### [CM-550 제어기](#cm-550-제어기)
 
@@ -95,16 +97,6 @@ Raspberry Pi는 영국의 라즈베리 파이 재단이 교육 목적으로 개�
 ![](/assets/images/edu/engineer/kit2/raspberry_pi_cam_02.png)
 > 라즈베리파이와 카메라모듈 연결모습
 
-<!-- 
-**연결방법**
-1. CM-550의 전원을 끄세요.
-2. Raspberry Pi Zero W의 `CSI Camera Connector`에 카메라 모듈을 연결하세요.
-3. 전용 USB 케이블을 사용하여, CM-550를 Raspberry Pi Zero W의 `Micro USB Data Port`에 연결하세요.
-
-**주의**: CM-550을 `Micro USB 5V Power Input` 단자에 연결 시, 정상동작 하지 않습니다.
-{: .notice--warning} 
--->
-
 #### [CM-550에 장착하기](#CM-550-장착하기)
 다음과 같은 모습으로, 제어기(CM-550)에 장착 시켜주세요.
 
@@ -114,21 +106,22 @@ Raspberry Pi는 영국의 라즈베리 파이 재단이 교육 목적으로 개�
 {: .notice--info}
 
 ### [다이나믹셀 ](#다이나믹셀-)
-로봇 전용 구동장치 입니다. 
 
 #### [XL430-W250-T](#xl430-w250-t)
 XL430-W250-T는 로봇의 기본관절로 사용되는 액츄에이터입니다.
 
 ![](/assets/images/dxl/x/xl430_product_new.png)
 
-**XL430-W250-T 매뉴얼 바로가기(/docs/kr/dxl/x/xl430-w250)**
+**[XL430-W250-T 매뉴얼 바로가기]{: .blank}**
+{: .notice}
 
 #### [2XL430-W250-T](#2xl430-w250-t)
 2XL430-W250-T는 기존 하나의 축만 가지고있는 액츄에이터와 달리, 2축 제어가 가능한 새로운 다이나믹셀입니다.
 
 ![](/assets/images/edu/engineer/kit1/2xl430_intro.png)
 
-**[2XL430-W250-T 매뉴얼 바로가기](/docs/kr/dxl/x/2xl430-w250/)** 
+**[2XL430-W250-T 매뉴얼 바로가기]{: .blank}** 
+{: .notice}
 
 ### [LED 보드](#led-보드)
 빨강, 파랑, 보라 3가지 색과 빛의 세기를 제어할 수 있는 R/B LED 보드입니다.  
@@ -143,12 +136,14 @@ XL430-W250-T는 로봇의 기본관절로 사용되는 액츄에이터입니다.
 ![](/assets/images/edu/engineer/kit2/led_board_03.png)
 > MAX-E2 LED 보드 장착모습
 
-### [절대 거리 센서](#절대-거리-센서)
-
-[절대 거리 센서 DMS-80](DMS : Distance measuring Sensor)은 적외선을 활용해 거리를 감지하는 센서입니다.  
+### [DMS-80](#dms-80)
+절대 거리 센서 DMS-80 (DMS : Distance measuring Sensor)은 적외선을 활용해 거리를 감지하는 센서입니다.  
 일반적인 적외선 센서에 비해 DMS는 반사체의 색상에 거의 영향을 받지 않으며 감지 거리도 10 ~ 80 cm까지 측정이 가능합니다.
 
 ![](/assets/images/edu/engineer/kit2/dms.png)
+
+**[절대 거리 센서 DMS-80 매뉴얼 바로가기](/docs/kr/parts/sensor/dms-80/)**
+{: .notice}
 
 ### [서보모터](#서보모터)
 서보모터는 로봇의 관절과 같이 각도 조절이 필요한 곳에 주로 사용되는 모터입니다.  
@@ -158,7 +153,6 @@ XL430-W250-T는 로봇의 기본관절로 사용되는 액츄에이터입니다.
 
 **[서보모터 매뉴얼 바로가기]{: .blank}**
 {: .notice}
-
 
 ## [주의사항](#주의사항)
 
@@ -273,3 +267,4 @@ XL430-W250-T는 로봇의 기본관절로 사용되는 액츄에이터입니다.
 [CM-550 매뉴얼 바로가기]: /docs/kr/parts/controller/cm-550/
 [2XL430-W250-T 매뉴얼 바로가기]: /docs/kr/dxl/x/2xl430-w250/
 [절대 거리 센서 DMS-80]: /docs/kr/parts/sensor/dms-80/
+[동작 모드]: /docs/kr/parts/controller/cm-550/#동작-모드
