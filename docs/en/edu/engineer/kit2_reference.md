@@ -222,29 +222,26 @@ The ENGINEER KIT2 shares R+Task 3.0 and ENGIEER app with the ENGINEER KIT 1. If 
 - CM-550 controller is initially programmed with Kit2 example.  
 - The `Complete Example` includes `MAX-E2`, `Commando`, `Scorpi` examples.
 
-| Examples |                                  Python (.py)                                  |                                 Motion (.mtn)                                  |
-|:--------:|:------------------------------------------------------------------------------:|:------------------------------------------------------------------------------:|
-|  MAX-E2  |  [01_ENG2_Max_E2_PY.py](https://www.robotis.com/service/download.php?no=1915)  | [01_ENG2_Max_E2_MO.mtn3](https://www.robotis.com/service/download.php?no=1916) |
-| Commando | [02_ENG2_Commando_PY.py](https://www.robotis.com/service/download.php?no=1917) |                                      None                                      |
-|  Scorpi  |  [03_ENG2_Scorpi_PY.py](https://www.robotis.com/service/download.php?no=1919)  | [03_ENG2_Scorpi_MO.mtn3](https://www.robotis.com/service/download.php?no=1918) |
-
-| Additional Eaxmples |                                 Python (.py)                                  |                                  Motion (.mtn)                                  |
-|:-------------------:|:-----------------------------------------------------------------------------:|:-------------------------------------------------------------------------------:|
-|       AutoBot       | [04_ENG2_Autobot_PY.py](https://www.robotis.com/service/download.php?no=1920) | [04_ENG2_Autobot_MO.mtn3](https://www.robotis.com/service/download.php?no=1921) |
-|       Strider       | [05_ENG2_Strider_PY.py](https://www.robotis.com/service/download.php?no=1922) |                                      None                                       |
+| Examples                       | Python (.py)                                                                   | Motion (.mtn)                                                                   |
+|:-------------------------------|:-------------------------------------------------------------------------------|:--------------------------------------------------------------------------------|
+| MAX-E2                         | [01_ENG2_Max_E2_PY.py](https://www.robotis.com/service/download.php?no=1915)   | [01_ENG2_Max_E2_MO.mtn3](https://www.robotis.com/service/download.php?no=1916)  |
+| Commando                       | [02_ENG2_Commando_PY.py](https://www.robotis.com/service/download.php?no=1917) | Only Python File is used                                                        |
+| Scorpi                         | [03_ENG2_Scorpi_PY.py](https://www.robotis.com/service/download.php?no=1919)   | [03_ENG2_Scorpi_MO.mtn3](https://www.robotis.com/service/download.php?no=1918)  |
+| AutoBot  (Additional Eaxmples) | [04_ENG2_Autobot_PY.py](https://www.robotis.com/service/download.php?no=1920)  | [04_ENG2_Autobot_MO.mtn3](https://www.robotis.com/service/download.php?no=1921) |
+| Strider  (Additional Eaxmples) | [05_ENG2_Strider_PY.py](https://www.robotis.com/service/download.php?no=1922)  | Only Python File is used                                                        |
 
 ### [Download Assembly Manual](#download-assembly-manual)
 Download the assembly manuals from the following table.
 
-|  Model   | Download |
-|:--------:|:---------|
-|  MAX-E2  |          |
-| Commando |          |
-|  Scorpi  |          |
+|  Model   | Download                                      |
+|:--------:|:----------------------------------------------|
+|  MAX-E2  | [ROBOTIS_ENGINEER_KIT2_MAX-E2_EN_ver2014.pdf](https://www.robotis.com/service/download.php?no=1929)   |
+| Commando | [ROBOTIS_ENGINEER_KIT2_Commando_EN_ver2014.pdf](https://www.robotis.com/service/download.php?no=1930) |
+|  Scorpi  | [ROBOTIS_ENGINEER_KIT2_Scorpi_EN_ver2014.pdf](https://www.robotis.com/service/download.php?no=1931)   |
 
 ### [Download a MARKER for Commando](#download-a-marker-for-commando)
 
-Download [MARKER for Commando].
+Download [MARKER for Commando](https://www.robotis.com/service/download.php?no=1933).
 
 ![](/assets/images/edu/engineer/kit2/marker_for_commando.png)
 

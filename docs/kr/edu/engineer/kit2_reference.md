@@ -241,30 +241,27 @@ CM-550에 내장된 BLE 슬레이브 모듈의 신호의 세기가 약하거나 
 - CM-550 제어기에는 최초 출하시 KIT2 타입에 맞는 프로그램이 기본적으로 다운로드되어 있습니다.  
 - 종합예제는 `MAX-E2`, `Commando`, `Scorpi` 세가지 로봇이 모두 포함된 예제입니다.
 
-| 기본 예제 |                                  파이썬 (.py)                                  |                                  모션 (.mtn3)                                  |
-|:---------:|:------------------------------------------------------------------------------:|:------------------------------------------------------------------------------:|
-|  MAX-E2   |  [01_ENG2_Max_E2_PY.py](https://www.robotis.com/service/download.php?no=1915)  | [01_ENG2_Max_E2_MO.mtn3](https://www.robotis.com/service/download.php?no=1916) |
-| Commando  | [02_ENG2_Commando_PY.py](https://www.robotis.com/service/download.php?no=1917) |                                   포함 안됨                                    |
-|  Scorpi   |  [03_ENG2_Scorpi_PY.py](https://www.robotis.com/service/download.php?no=1919)  | [03_ENG2_Scorpi_MO.mtn3](https://www.robotis.com/service/download.php?no=1918) |
-
-| 추가 예제 |                                 파이썬 (.py)                                  |                                  모션 (.mtn3)                                   |
-|:---------:|:-----------------------------------------------------------------------------:|:-------------------------------------------------------------------------------:|
-|  AutoBot  | [04_ENG2_Autobot_PY.py](https://www.robotis.com/service/download.php?no=1920) | [04_ENG2_Autobot_MO.mtn3](https://www.robotis.com/service/download.php?no=1921) |
-|  Strider  | [05_ENG2_Strider_PY.py](https://www.robotis.com/service/download.php?no=1922) |                                    포함 안됨                                    |
+| 기본 예제           | 파이썬 (.py)                                                                   | 모션 (.mtn3)                                                                    |
+|:--------------------|:-------------------------------------------------------------------------------|:--------------------------------------------------------------------------------|
+| MAX-E2              | [01_ENG2_Max_E2_PY.py](https://www.robotis.com/service/download.php?no=1915)   | [01_ENG2_Max_E2_MO.mtn3](https://www.robotis.com/service/download.php?no=1916)  |
+| Commando            | [02_ENG2_Commando_PY.py](https://www.robotis.com/service/download.php?no=1917) | 파이썬 예제만 사용                                                              |
+| Scorpi              | [03_ENG2_Scorpi_PY.py](https://www.robotis.com/service/download.php?no=1919)   | [03_ENG2_Scorpi_MO.mtn3](https://www.robotis.com/service/download.php?no=1918)  |
+| AutoBot (추가 예제) | [04_ENG2_Autobot_PY.py](https://www.robotis.com/service/download.php?no=1920)  | [04_ENG2_Autobot_MO.mtn3](https://www.robotis.com/service/download.php?no=1921) |
+| Strider (추가 예제) | [05_ENG2_Strider_PY.py](https://www.robotis.com/service/download.php?no=1922)  | 파이썬 예제만 사용                                                              |
 
 ### [조립서 다운로드 받기](#조립서-다운로드-받기)
 
 아래의 표에서 필요한 조립서를 다운로드 받으세요.
 
-|  Model   | Download |
-|:--------:|:---------|
-|  MAX-E2  |          |
-| Commando |          |
-|  Scorpi  |          |
+|   모델   | 다운로드                                                                                              |
+|:--------:|:------------------------------------------------------------------------------------------------------|
+|  MAX-E2  | [ROBOTIS_ENGINEER_KIT2_MAX-E2_KR_ver2014.pdf](https://www.robotis.com/service/download.php?no=1924)   |
+| Commando | [ROBOTIS_ENGINEER_KIT2_Commando_KR_ver2014.pdf](https://www.robotis.com/service/download.php?no=1925) |
+|  Scorpi  | [ROBOTIS_ENGINEER_KIT2_Scorpi_KR_ver2014.pdf](https://www.robotis.com/service/download.php?no=1926)   |
 
 ### [Commando Marker 다운로드 받기](#commando-marker-다운로드-받기)
 
-- [Commando MARKER] 다운로드.
+- [Commando MARKER](https://www.robotis.com/service/download.php?no=1932) 다운로드.
 
 ![](/assets/images/edu/engineer/kit2/marker_for_commando.png)
 
