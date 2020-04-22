@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: autonomous_driving
+ref: home_service_challenge
 read_time: true
 share: true
 author_profile: false
@@ -10,11 +10,11 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 25
+page_number: 24
 ---
-<!-- 
-<div style="counter-reset: h1 13"></div>
-<div style="counter-reset: h2 8"></div> -->
+
+<div style="counter-reset: h1 12"></div>
+<div style="counter-reset: h2 10"></div> 
 
 ## [TurtleBot3 Home Service Challenge](#turtlebot3-home-service-challenge)
 
@@ -25,16 +25,18 @@ page_number: 25
 {% endcapture %}
 <div class="notice">{{ notice_01 | markdownify }}</div>  
 
-![](/assets/images/platform/turtlebot3/home_service_challenge/temp/hsc_logo.png)   
+<!-- 
+![](/assets/images/platform/turtlebot3/home_service_challenge/temp/hsc_logo.png)    
+-->
 
-The **Home Service Challenge** is the competition for 
-Home Service Challenge는 ROS에서 운용가능한 모바일·매니퓰레이터 플랫폼을 활용하여 자율주행
-및 사물을 이동시키는 코드를 작성하고 미션을 해결하는 종목이다.  
+<!-- The **Home Service Challenge** is the competition for  -->
 
 ![](/assets/images/platform/turtlebot3/home_service_challenge/hsc_stadium_2.png)  
+> Home Service Challenge Stadium and Objects used during the challenge.
 
-![view of hsc stadium](/assets/images/platform/turtlebot3/home_service_challenge/temp/hsc_stadium.png)   
-> Home Service Challenge Stadium and Used Objects.
+<!-- 
+![view of hsc stadium](/assets/images/platform/turtlebot3/home_service_challenge/temp/hsc_stadium.png)    
+-->
 
 ### [What you need to Join the Home Service Challenge](#what-you-need-to-join-the-home-service-challenge)
 `TurtleBot3 Waffle Pi`  
@@ -48,7 +50,7 @@ Home Service Challenge는 ROS에서 운용가능한 모바일·매니퓰레이�
 - It communicates with an single board computer (SBC) on Turtlebot3.
 - Laptop, desktop, or other devices with ROS 1.
   
-### [Getting Started](#software-setup)
+### [Getting Started](#getting-started)
 
 {% capture HSC_Note %}
 **NOTE**: Be sure to complete the following instructions before installing Home Service Challenge packages in the pc.
@@ -424,7 +426,7 @@ $ rostopic pub -1 /tb3_hsc/command std_msgs/String close_gripper
 - `config.yaml` : This configuration file contains manager package's data.
   - File Path : **/turtlebot3_home_service_challenge_manager/config/config.yaml**
 
-#### Details about the Home Service Mission
+#### [Details about the Home Service Mission](#details-about-the-home-service-mission)
 The goal of the Home Service Challenge is to move four different objects from a living room to a specific place with given rules, and to return to the starting point.  
 
 Using the demo package, the process of moving objects in Home Service Challenge is as follows.

@@ -5,12 +5,12 @@ ref: autorace_gazebo
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/turtlebot3/autonomous_gazebo/
+permalink: /docs/en/platform/turtlebot3/autorace_gazebo/
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 26
+page_number: 27
 ---
 
 <div style="counter-reset: h1 13"></div>

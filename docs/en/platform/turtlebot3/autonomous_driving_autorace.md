@@ -10,7 +10,7 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 25
+page_number: 26
 ---
 
 <div style="counter-reset: h1 13"></div>
@@ -20,11 +20,11 @@ page_number: 25
   <h1 id="dummy"><a href="#dummy">Dummy</a></h1>
 <![end dummy Header 1]-->
 
-## [TurtleBot3 AutoRace](#turtlebot3-autorace)
+## [TurtleBot3 AutoRace 2019](#turtlebot3-autorace)
 
 ![](/assets/images/platform/turtlebot3/autonomous_driving/autorace_rbiz_challenge_2017_robots_1.png)
 
-The AutoRace is a competition for autonomous driving robot platforms. To provide various conditions for robot application development, the game gives as less structural regulation as possible. Entire contents are opened in [software](https://github.com/ROBOTIS-GIT/autorace_referee) (source codes for referee system) wise and [hardware](https://github.com/ROBOTIS-GIT/autorace_track) (stp / dwg files of game map) wise.
+**The AutoRace 2019** is a competition for autonomous driving robot platforms. To provide various conditions for robot application development, the game gives as less structural regulation as possible. Entire contents are opened in [software](https://github.com/ROBOTIS-GIT/autorace_referee) (source codes for referee system) wise and [hardware](https://github.com/ROBOTIS-GIT/autorace_track) (stp / dwg files of game map) wise.
 
 Whole robots and even the referee system in the field is run by ROS, so it would support to make many kinds of contents further. Get opened source of what is participated in each competitions!
 

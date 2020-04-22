@@ -25,7 +25,7 @@ It makes the users possible to develop their own firmware. The characteristics a
 
 # [CM-530](#cm-530)
 
-- [Download CM-530 SDK]
+- [Download CM-530 SDK](http://support.robotis.com/ko/baggage_files/embeded_c/embeddec_c(cm530_v1_02).zip)
 
 ## File Structure
 
