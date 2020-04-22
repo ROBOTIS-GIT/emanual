@@ -608,7 +608,7 @@ main:
         titlekr: "적외선 센서(IRSS-10)"
         url: /parts/sensor/irss-10/
       - title: "Distance Sensor(DMS-80)"
-        titlekr: "거리 측정 센서(DMS-80)"
+        titlekr: "절대 거리 센서(DMS-80)"
         url: /parts/sensor/dms-80/
       - title: "Touch Sensor(TS-10)"
         titlekr: "접촉 센서(TS-10)"
@@ -14297,28 +14297,28 @@ kit1:
       titlekr: "앱 설치하기"
       url: /edu/engineer/kit1/#app-installation
       urlkr: /edu/engineer/kit1/#앱-설치하기
-    - title: "Pairing Bluetooth"
-      titlekr: "블루투스 연결하기"
-      url: /edu/engineer/kit1/#pairing-bluetooth
-      urlkr: /edu/engineer/kit1/#블루투스-연결하기
     - title: "Download Examples"
       titlekr: "예제 다운로드"
       url: /edu/engineer/kit1/#download-examples
       urlkr: /edu/engineer/kit1/#예제-다운로드
       children:
       - title: "Download from PC"
-        titlekr: "PC에서 예제 다운로드"
+        titlekr: "PC에서 예제 다운로드 받기"
         url: /edu/engineer/kit1/#download-from-pc
-        urlkr: /edu/engineer/kit1/#pc에서-예제-다운로드
+        urlkr: /edu/engineer/kit1/#pc에서-예제-다운로드-받기
       - title: "Download from Smart Device"
-        titlekr: "스마트 기기에서 예제 다운로드"
+        titlekr: "스마트 기기에서 예제 다운로드 받기"
         url: /edu/engineer/kit1/#download-from-smart-device
-        urlkr: /edu/engineer/kit1/#스마트-기기에서-예제-다운로드
+        urlkr: /edu/engineer/kit1/#스마트-기기에서-예제-다운로드-받기
     - title: "Run Examples"
       titlekr: "예제 실행하기"
       url: /edu/engineer/kit1/#run-examples
       urlkr: /edu/engineer/kit1/#예제-실행하기
       children:
+      - title: "Pairing Bluetooth"
+        titlekr: "블루투스 연결하기"
+        url: /edu/engineer/kit1/#pairing-bluetooth
+        urlkr: /edu/engineer/kit1/#블루투스-연결하기
       - title: "Dr.R"
         titlekr: "Dr.R"
         url: /edu/engineer/kit1/#drr
@@ -14357,10 +14357,6 @@ kit1:
     titlekr: "교육자료 다운로드"
     url: /edu/engineer/kit1/#study-materials
     urlkr: /edu/engineer/kit1/#교육자료-다운로드
-  - title: "Download Softwares"
-    titlekr: "소프트웨어 다운로드"
-    url: /edu/engineer/kit1/#download-softwares
-    urlkr: /edu/engineer/kit1/#소프트웨어-다운로드
   - title: "References"
     titlekr: "참고자료"
     url: /edu/engineer/kit1/#references
@@ -14388,6 +14384,188 @@ kit1:
       urlkr: /edu/engineer/kit1/#퓨즈-교체하기
     - titlekr: "도면"
       urlkr: /edu/engineer/kit1/#도면
+
+#ROBOTIS ENGINEER KIT sidebar
+kit2:
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /edu/engineer/kit2_introduction/#introduction
+    urlkr: /edu/engineer/kit2_introduction/#개요
+    children:
+    - title: "Parts List"
+      titlekr: "부품 목록"
+      url: /edu/engineer/kit2_introduction/#parts-list
+      urlkr: /edu/engineer/kit2_introduction/#부품-목록
+      children:
+      - title: "CM-550 Controller"
+        titlekr: "CM-550 제어기"
+        url: /edu/engineer/kit2_introduction/#cm-550-controller
+        urlkr: /edu/engineer/kit2_introduction/#cm-550-제어기
+      - title: "Raspberry Pi"
+        titlekr: "Raspberry Pi"
+        url: /edu/engineer/kit2_introduction/#raspberry-pi
+        urlkr: /edu/engineer/kit2_introduction/#raspberry-pi
+        children:
+        - title: "Raspberry Pi Camera"
+          titlekr: "Raspberry Pi 카메라"
+          url: /edu/engineer/kit2_introduction/#raspberry-pi-camera
+          urlkr: /edu/engineer/kit2_introduction/#raspberry-pi-카메라 
+      - title: "DYNAMIXEL"
+        titlekr: "다이나믹셀"
+        url: /edu/engineer/kit2_introduction/#dynamixel-
+        urlkr: /edu/engineer/kit2_introduction/#다이나믹셀-
+      - title: "LED Module"
+        titlekr: "LED 보드"
+        url: /edu/engineer/kit2_introduction/#led-module
+        urlkr: /edu/engineer/kit2_introduction/#led-보드
+      - title: "Servo Motor"
+        titlekr: "서보모터"
+        url: /edu/engineer/kit2_introduction/#servo-motor
+        urlkr: /edu/engineer/kit2_introduction/#서보모터  
+      - title: "DMS-80"
+        titlekr: "DMS-80"
+        url: /edu/engineer/kit2_introduction/#dms-80
+        urlkr: /edu/engineer/kit2_introduction/#dms-80     
+    - title: "Cautions"
+      titlekr: "주의사항"
+      url: /edu/engineer/kit2_introduction/#cautions
+      urlkr: /edu/engineer/kit2_introduction/#주의사항
+      children:
+      - title: "Safety Precautions"
+        titlekr: "안전에 대한 주의사항"
+        url: /edu/engineer/kit2_introduction/#safety-precautions
+        urlkr: /edu/engineer/kit2_introduction/#안전에-대한-주의사항
+      - title: "Precautions on Use"
+        titlekr: "사용상 주의사항"
+        url: /edu/engineer/kit2_introduction/#precautions-on-use
+        urlkr: /edu/engineer/kit2_introduction/#사용상-주의사항
+      - title: "Precautions on Battery"
+        titlekr: "충전기/충전지 사용시 주의사항"
+        url: /edu/engineer/kit2_introduction/#precautions-on-battery
+        urlkr: /edu/engineer/kit2_introduction/#충전기충전지-사용시-주의사항
+      - title: "Assembly Precautions"
+        titlekr: "조립시 주의사항"
+        url: /edu/engineer/kit2_introduction/#assembly-precautions
+        urlkr: /edu/engineer/kit2_introduction/#조립시-주의사항     
+  - title: "Quick Start"
+    titlekr: "작동하기"
+    url: /edu/engineer/kit2_quickstart/#quick-start
+    urlkr: /edu/engineer/kit2_quickstart/#작동하기
+    children:
+    - title: "App Installation"
+      titlekr: "앱 설치하기"
+      url: /edu/engineer/kit2_quickstart/#app-installation
+      urlkr: /edu/engineer/kit2_quickstart/#앱-설치하기
+    - title: "Download Examples"
+      titlekr: "예제 다운로드"
+      url: /edu/engineer/kit2_quickstart/#download-examples
+      urlkr: /edu/engineer/kit2_quickstart/#예제-다운로드
+      children:
+      - title: "Download from PC"
+        titlekr: "PC에서 예제 다운로드 받기"
+        url: /edu/engineer/kit2_quickstart/#download-from-pc
+        urlkr: /edu/engineer/kit2_quickstart/#pc에서-예제-다운로드-받기
+      - title: "Download from Smart Device"
+        titlekr: "스마트 기기에서 예제 다운로드 받기"
+        url: /edu/engineer/kit2_quickstart/#download-from-smart-device
+        urlkr: /edu/engineer/kit2_quickstart/#스마트-기기에서-예제-다운로드-받기
+    - title: "Run Examples"
+      titlekr: "예제 실행하기"
+      url: /edu/engineer/kit2_quickstart/#run-examples
+      urlkr: /edu/engineer/kit2_quickstart/#예제-실행하기
+      children:
+      - title: "Pairing Bluetooth"
+        titlekr: "블루투스 연결하기"
+        url: /edu/engineer/kit2_quickstart/#pairing-bluetooth
+        urlkr: /edu/engineer/kit2_quickstart/#블루투스-연결하기
+      - title: "MAX-E2"
+        titlekr: "MAX-E2"
+        url: /edu/engineer/kit2_quickstart/#max-e2
+        urlkr: /edu/engineer/kit2_quickstart/#max-e2
+      - title: "Commando"
+        titlekr: "Commando"
+        url: /edu/engineer/kit2_quickstart/#commando
+        urlkr: /edu/engineer/kit2_quickstart/#commando
+      - title: "Scorpi"
+        titlekr: "Scorpi"
+        url: /edu/engineer/kit2_quickstart/#scorpi
+        urlkr: /edu/engineer/kit2_quickstart/#scorpi
+  - title: "Advanced Courses"
+    titlekr: "교육자료 다운로드"
+    url: /edu/engineer/kit2_advanced_course/#advanced-courses
+    urlkr: /edu/engineer/kit2_advanced_course/#교육자료-다운로드
+  - title: "References"
+    titlekr: "참고자료"
+    url: /edu/engineer/kit2_reference/#references
+    urlkr: /edu/engineer/kit2_reference/#참고자료
+    children:
+    - title: "Setting Video Streaming on ROBOTIS ENGINEER App"
+      titlekr: "앱에서 영상 스트리밍 기능 설정하기"
+      url: /edu/engineer/kit2_reference/#setting-video-streaming-on-robotis-engineer-app
+      urlkr: /edu/engineer/kit2_reference/#앱에서-영상-스트리밍-기능-설정하기 
+    - title: "Raspberry Pi Update and Recovery"
+      titlekr: "Raspberry Pi 업데이트 및 복구"
+      url: /edu/engineer/kit2_reference/#raspberry-pi-update-and-recovery
+      urlkr: /edu/engineer/kit2_reference/#raspberry-pi-업데이트-및-복구
+    - title: "BLE Signal Setting"
+      titlekr: "제어기 BLE 신호 세기 설정"
+      url: /edu/engineer/kit2_reference/#ble-signal-setting
+      urlkr: /edu/engineer/kit2_reference/#제어기-ble-신호-세기-설정     
+    - title: "Setting Up the Robot"
+      titlekr: "로봇 설정하기"
+      url: /edu/engineer/kit2_reference/#setting-up-the-robot
+      urlkr: /edu/engineer/kit2_reference/#로봇-설정하기
+      children:
+      - title: "Check DYNAMIXEL Assembly"
+        titlekr: "모터 조립확인"
+        url: /edu/engineer/kit2_reference/#check-dynamixel-assembly
+        urlkr: /edu/engineer/kit2_reference/#모터-조립확인
+      - title: "DYNAMIXEL Offset"
+        titlekr : "모터 오프셋 설정"
+        url: /edu/engineer/kit2_reference/#dynamixel-offset
+        urlkr: /edu/engineer/kit2_reference/#모터-오프셋-설정
+    - title: "Download"
+      titlekr: "다운로드"
+      url: /edu/engineer/kit2_reference/#download
+      urlkr: /edu/engineer/kit2_reference/#다운로드
+      children:
+      - title: "Download App"
+        titlekr: "앱 설치하기"
+        url: /edu/engineer/kit2_reference/#download-app
+        urlkr: /edu/engineer/kit2_reference/#앱-설치하기
+      - title: "Download Robot Examples"
+        titlekr: "로봇 예제 다운로드 하기"
+        url: /edu/engineer/kit2_reference/#download-robot-examples
+        urlkr: /edu/engineer/kit2_reference/#로봇-예제-다운로드-하기
+      - title: "Download Assembly Manual"
+        titlekr: "조립서 다운로드 받기"
+        url: /edu/engineer/kit2_reference/#download-assembly-manual
+        urlkr:  /edu/engineer/kit2_reference/#조립서-다운로드-받기
+      - title: "Download a MARKER for Commando"
+        titlekr: "Commando Marker 다운로드 받기"
+        url: /edu/engineer/kit2_reference/#download-a-marker-for-commando
+        urlkr: /edu/engineer/kit2_reference/#commando-marker-다운로드-받기               
+    - title: "Self Checklist"
+      titlekr: "점검 및 자가진단"
+      url: /edu/engineer/kit2_reference/#self-checklist
+      urlkr: /edu/engineer/kit2_reference/#점검-및-자가진단
+    - title: "Charging Battery"
+      titlekr: "배터리 충전하기"
+      url: /edu/engineer/kit2_reference/#charging-battery
+      urlkr: /edu/engineer/kit2_reference/#배터리-충전하기
+    - title: "Battery Level Check"
+      titlekr: "충전지 잔량 확인하기"
+      url: /edu/engineer/kit2_reference/#battery-level-check
+      urlkr: /edu/engineer/kit2_reference/#충전지-잔량-확인하기
+    - title: "Fuse Replacement"
+      titlekr: "퓨즈 교체하기"
+      url: /edu/engineer/kit2_reference/#fuse-replacement
+      urlkr: /edu/engineer/kit2_reference/#퓨즈-교체하기
+    - title: "Drawings"
+      titlekr: "도면"
+      url: /edu/engineer/kit2_reference/#drawings
+      urlkr: /edu/engineer/kit2_reference/#도면
+
 
 #ROBOTIS MINI sidebar
 mini:
