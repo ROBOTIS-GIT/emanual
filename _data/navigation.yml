@@ -15878,6 +15878,27 @@ turtlebot3:
       url: /platform/turtlebot3/manipulation/#slam
     - title: "Navigation"
       url: /platform/turtlebot3/manipulation/#navigation
+    - title: "MoveIt!"
+      url: /platform/turtlebot3/manipulation/#moveit
+    - title: "Pick and Place"
+      url: /platform/turtlebot3/manipulation/#pick-and-place
+    - title: "Simulation"
+      url: /platform/turtlebot3/manipulation/#simulation    
+    - title: "Home Service Challenge"
+      url: /platform/turtlebot3/home_service_challenge/
+      children:
+      - title: "What you need to Join the Home Service Challenge"
+        url: /platform/turtlebot3/home_service_challenge/#what-you-need-to-join-the-home-service-challenge
+      - title: "Getting Started"
+        url: /platform/turtlebot3/home_service_challenge/#getting-started
+      - title: "Camera Calibration"
+        url: /platform/turtlebot3/home_service_challenge/#camera-calibration
+      - title: "SLAM"
+        url: /platform/turtlebot3/home_service_challenge/#slam
+      - title: "Starting Missions"
+        url: /platform/turtlebot3/home_service_challenge/#starting-missions
+      - title: "Simulation"
+        url: /platform/turtlebot3/home_service_challenge/#simulation
   - title: "[ROS 1] Autonomous Driving"
     url: /platform/turtlebot3/autonomous_driving/#ros-1-autonomous-driving
     children: 
@@ -15915,10 +15936,10 @@ turtlebot3:
         url: /platform/turtlebot3/autonomous_driving/#mission-5-level-crossing
       - title: "Mission 6: Tunnel"
         url: /platform/turtlebot3/autonomous_driving/#mission-6-tunnel
-    - title: "TurtleBot3 AutoRace"
+    - title: "TurtleBot3 AutoRace 2019"
       url: /platform/turtlebot3/autonomous_driving_autorace/
     - title: "AutoRace with Gazebo"
-      url: /platform/turtlebot3/autonomous_gazebo/
+      url: /platform/turtlebot3/autorace_gazebo/
   - title: "[ROS 1] Machine Learning"
     url: /platform/turtlebot3/machine_learning/#ros-1-machine-learning
     children:
@@ -16125,10 +16146,10 @@ turtlebot3:
     - title: "AutoRace RBIZ Challenge"
       url: /platform/turtlebot3/autorace_rviz_challenge
       children: 
-      - title: "2018"
-        url: /platform/turtlebot3/autorace_rviz_challenge/#autorace-rbiz-challenge-2018
       - title: "2017"
         url: /platform/turtlebot3/autorace_rviz_challenge/#autorace-rbiz-challenge-2017  
+      - title: "2018"
+        url: /platform/turtlebot3/autorace_rviz_challenge/#autorace-rbiz-challenge-2018
   - title: "Appendixes"
     url: /platform/turtlebot3/appendixes/#appendixes
     children:

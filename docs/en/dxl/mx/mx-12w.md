@@ -78,7 +78,7 @@ product_group: dxl_mx
 |   28    |       1        | [P Gain](#p-gain)                           | Proportional Gain             |   RW   |         8          |
 |   30    |       2        | [Goal Position](#goal-position)             | Desired Position              |   RW   |         -          |
 |   32    |       2        | [Moving Speed](#moving-speed)               | Moving Speed(Moving Velocity) |   RW   |         -          |
-|   34    |       2        | [Torque Limit](#torque-limit)               | Torque Limit(Goal Torque)     |   RW   |   ADD 14&amp;15    |
+|   34    |       2        | [Torque Limit](#torque-limit)               | Torque Limit                  |   RW   |     Max Torque     |
 |   36    |       2        | [Present Position](#present-position)       | Present Position              |   R    |         -          |
 |   38    |       2        | [Present Speed](#present-speed)             | Present Speed                 |   R    |         -          |
 |   40    |       2        | [Present Load](#present-load)               | Present Load                  |   R    |         -          |
