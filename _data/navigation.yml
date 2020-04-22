@@ -15878,12 +15878,6 @@ turtlebot3:
       url: /platform/turtlebot3/manipulation/#slam
     - title: "Navigation"
       url: /platform/turtlebot3/manipulation/#navigation
-    - title: "MoveIt!"
-      url: /platform/turtlebot3/manipulation/#moveit
-    - title: "Pick and Place"
-      url: /platform/turtlebot3/manipulation/#pick-and-place
-    - title: "Simulation"
-      url: /platform/turtlebot3/manipulation/#simulation    
     - title: "Home Service Challenge"
       url: /platform/turtlebot3/home_service_challenge/
       children:
