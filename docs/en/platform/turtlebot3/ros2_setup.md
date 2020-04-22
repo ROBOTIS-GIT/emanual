@@ -116,16 +116,19 @@ Following documents will be helpful for you to fix the problem of any build erro
 
 **[TurtleBot3]**
 
-1. Go on [Ubuntu releases](http://cdimage.ubuntu.com/ubuntu/releases/bionic/release) .
-2. Download `Raspberry Pi 3 (64-bit ARM) preinstalled server image` on **Remote PC**
+1. Go to [Ubuntu old releases](http://old-releases.ubuntu.com/releases/18.04.3/).
+2. Download `ubuntu-18.04.3-preinstalled-server-arm64+raspi3.img.xz` on **Remote PC**
 3. Burn the Ubuntu image file to a microSD card.
 
-**TIP** : You can use `GNOME Disks` to burn `Ubuntu Server 18.04 image` to microSD.
+**TIP** : You can use `GNOME Disks` to burn `ubuntu-18.04.3-preinstalled-server-arm64+raspi3.img.xz` to microSD.
 {: .notice--success}
 
 ### Initialization Process for Raspberry Pi 3
 
-To communicate between **Remote PC** and **TurtleBot3**, you need to install `Ubuntu Server 18.04 image` file on Raspberry Pi 3.
+To communicate between **Remote PC** and **TurtleBot3**, you need to install `ubuntu-18.04.3-preinstalled-server-arm64+raspi3.img.xz` file on Raspberry Pi 3.
+
+**WARNING** : Ubuntu 18.04.4 version is known to freeze the Raspberry Pi 3B+.
+{: .notice--warning}
 
 **[TurtleBot3]**
 
@@ -150,8 +153,8 @@ $ sudo touch /etc/netplan/01-netcfg.yaml
 $ sudo nano /etc/netplan/01-netcfg.yaml
 ```
 
-3. After opening the file, configure a network setting. Refer to the network setting below.
-```yaml
+3. After opening the file, configure a network setting. Refer to the network setting below. Please be aware of the indentation in each line.
+```
 network:
   version: 2
   renderer: networkd

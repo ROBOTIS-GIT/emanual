@@ -15870,6 +15870,10 @@ turtlebot3:
       url: /platform/turtlebot3/manipulation/#opencr-setup
     - title: "Bringup"
       url: /platform/turtlebot3/manipulation/#bringup
+    - title: "Simulation"
+      url: /platform/turtlebot3/manipulation/#simulation  
+    - title: "Operate the Actual OpenMANIPULATOR"
+      url: /platform/turtlebot3/manipulation/#operate-the-actual-openmanipulator        
     - title: "SLAM"
       url: /platform/turtlebot3/manipulation/#slam
     - title: "Navigation"
@@ -16353,6 +16357,11 @@ openmanipulator_x:
             url: /platform/openmanipulator_x/ros_operation/#xbox-360-joystick
       - title: "MoveIt!"
         url: /platform/openmanipulator_x/ros_operation/#moveit
+        children: 
+          - title: "Install MoveIt Packages"
+            url: /platform/openmanipulator_x/ros_operation/#install-moveit-packages
+          - title: "Launch Moveit!"
+            url: /platform/openmanipulator_x/ros_operation/#launch-moveit                     
   - title: "[ROS] Simulation"
     url: /platform/openmanipulator_x/ros_simulation/#ros-simulation
     children:
@@ -16372,6 +16381,8 @@ openmanipulator_x:
             url: /platform/openmanipulator_x/ros_applications/#install-ar-marker-package
           - title: "Pick and Place Example"
             url: /platform/openmanipulator_x/ros_applications/#pick-and-place-example
+          - title: "Simulation"
+            url: /platform/openmanipulator_x/ros_applications/#simulation
       - title: "Master Slave"
         url: /platform/openmanipulator_x/ros_applications/#master-slave
         children:
@@ -16381,6 +16392,15 @@ openmanipulator_x:
             url: /platform/openmanipulator_x/ros_applications/#install-package
           - title: "Execute Example"
             url: /platform/openmanipulator_x/ros_applications/#execute-example
+      - title: "Gravitiy Compensation"
+        url: /platform/openmanipulator_x/ros_applications/#gravity-compensation
+        children: 
+          - title: "Install Packages"
+            url: /platform/openmanipulator_x/ros_applications/#install-packages
+          - title: "Set Operating Mode to Current Mode"
+            url: /platform/openmanipulator_x/ros_applications/#set-operating-mode-to-current-mode
+          - title: "Run Gravity Compensation Package"
+            url: /platform/openmanipulator_x/ros_applications/#run-gravity-compensation-package            
   - title: "[ROS 2] Setup"
     url: /platform/openmanipulator_x/ros2_setup/#ros-setup
     children:

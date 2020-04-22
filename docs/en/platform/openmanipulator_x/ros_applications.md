@@ -28,7 +28,6 @@ page_number: 9
 
 ### [Install Camera Package](#install-camera-package)
 
-
 #### [Astra Pro](#astra-pro)
 
 ##### Overview
@@ -427,6 +426,16 @@ There are three commands. Please enter that number in the terminal.
 2. Pick and Place demo. Start: Start the Pick and Place demonstration.
 3. Pick and Place demo. Stop: Stop the Pick and Place demonstration.
 
+### [Simulation](#simulation)
+Simulate OpenMANIPULATOR-X using Gazebo simulator with the following commands.
+
+```bash
+$ roslaunch open_manipulator_gazebo open_manipulator_gazebo.launch
+$ roslaunch open_manipulator_controller open_manipulator_controller.launch use_platform:=false
+$ roslaunch open_manipulator_ar_markers ar_pose.launch camera_model:=realsense_d435 use_platform:=false
+$ roslaunch open_manipulator_pick_and_place open_manipulator_pick_and_place.launch
+```
+
 ## [Master Slave](#master-slave)
 
 In this example, if the user is holding the master OpenManipulator, the slave OpenManipulator-X moves like master robot. Recording mode allows you to save the trajectory as you move the master OpenManipulator-X and play it back to the slave OpenManipulator.
@@ -588,6 +597,30 @@ There are four control modes. Please enter that number in the terminal.
 3. Stop Recording Trajectory: Ends the recording.
 4. Play Recorded Trajectory: The trajectory recorded in the 2nd mode is reproduced only by the slave robot.
 
+
+## [Gravity Compensation](#gravity-compensation)
+Let OpenMANIPULATOR-X compensate gravity forces by using the Gravity Compensation packages
+
+This section describes how to install and use Gravity Compensation feature with OpenManipulator-X.
+
+### [Install Packages](#install-packages)
+```bash
+$ cd ~/catkin_ws/src/
+$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_controls.git
+$ cd ~/catkin_ws && catkin_make
+```
+
+### [Set Operating Mode to Current Mode](#set-operating-mode-to-current-mode)
+Set your DYNAMXEL's Operating Mode to Current Mode via [DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/)
+
+![](/assets/images/platform/openmanipulator_x/omx_gravity_current_mode_setting.png)
+
+### [Run Gravity Compensation Package](#run-gravity-compensation-package)
+Run the gravity compensation package with OpenManipulator-X.
+
+```bash
+$ roslaunch open_manipulator_controllers gravity_compensation_controller.launch
+```
 
 [OpenCR]: /docs/en/parts/controller/opencr10/
 [OpenCR Manual]: /docs/en/parts/controller/opencr10/

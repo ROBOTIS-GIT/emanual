@@ -138,7 +138,7 @@ urdf_file_name : turtlebot3_burger.urdf
 ## [Load TurtleBot3 on Rviz2](#load-a-turtlebot3-on-rviz2)
 
 1. [Bring up TurtleBot3](#bringup-turtlebot3)
-2. Launch robot state publisher and Run RViz on **Remote PC**.
+2. Launch robot state publisher and run RViz on **Remote PC**.
   ```bash
   $ ros2 launch turtlebot3_bringup rviz2.launch.py
   ```
