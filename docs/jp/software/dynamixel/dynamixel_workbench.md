@@ -11,20 +11,20 @@ sidebar:
   nav: "dynamixel_workbench"
 ---
 
-# [Introduction](#introduction)
+# [イントロダクション](#introduction)
 
 ![](/assets/images/sw/dynamixel/dynamixel_workbench/DYNAMIXEL_WORKBENCH_LOGO.png)
 
-The purpose of DYNAMIXEL Workbench is **to use more simple and easy to use any DYNAMIXEL**. This library is based on [DYNAMIXEL SDK] and supports ROS, Linux, macOS and Arduino. However, this library is not magic stick to operate DYNAMIXEL with any setup. It has some restriction compared with DYNAMIXEL SDK but we are continue to upgrade this library for almost everyone loves DYNAMIXEL.
+DYNAMIXEL Workbenchの目的は、**任意のDYNAMIXELをよりシンプルに、そして使いやすくすること** です。このライブラリは[DYNAMIXEL SDK]をベースとしており、ROS、Linux、macOS、Arduinoをサポートしています。しかし、このライブラリはどんなセットアップでもDYNAMIXELを操作できるマジックスティックではありません。DYNAMIXEL SDKと比較するといくらかの制限がありますが、DYNAMIXELを愛用してくださる皆さんのために今後もライブラリをアップデートしていきます。  
 
-If have any questions or issues, please get a ticket in [github issue](https://github.com/ROBOTIS-GIT/dynamixel-workbench/issues).
+質問や問題があれば、[github issue](https://github.com/ROBOTIS-GIT/dynamixel-workbench/issues)でチケットを入手してください。  
 
-**CAUTION** : DYNAMIXEL Workbench is designed to control DYNAMIXEL in ROS with limited features. For setting up and testing the DYNAMIXEL, please use [DYNAMIXEL Wizard 2.0] or [DYNAMIXEL SDK].
+**注意** : DYNAMIXEL Workbenchは、ROSでDYNAMIXELを制御するために設計されていますが、機能が制限されています。DYNAMIXELの設定やテストには、[DYNAMIXEL Wizard 2.0]または[DYNAMIXEL SDK]をご利用ください。  
 {: .notice--warning}
 
-# [Supported DYNAMIXEL](#supported-dynamixel)
+# [サポートしているDYNAMIXEL](#supported-dynamixel)
 
-| DYNAMIXEL Series |                                |                                |                                |                                |                 |
+| DYNAMIXEL シリーズ |                                |                                |                                |                                |                 |
 |:-----------------|:-------------------------------|:-------------------------------|:-------------------------------|:-------------------------------|:----------------|
 | **AX**           | [AX-12W]                       | [AX-12+/12A]                   | [AX-18F/18A]                   |                                |                 |
 | **EX**           | [EX-106+]                      |                                |                                |                                |                 |
@@ -42,20 +42,19 @@ If have any questions or issues, please get a ticket in [github issue](https://g
 | **PM**           | [PM54-060-S250-R]              | [PM54-040-S250-R]              | [PM42-010-S260-R]              |                                |                 |
 | **PH**           | [PH42-020-S300-R]              | [PH54-100-S500-R]              | [PH54-200-S500-R]              |                                |                 |
 
-
-**DYNMAIXEL Workbench** metapackage contains 3 packages:  **Controllers**, **Operators**, and **Toolbox**. The **Controllers** package introduces how to employ DYNAMIXEL on different operating mode with DYNMAIXEL Workbench library(Toolbox).  In addition, the Operators demonstrates some straightforward examples by operating Controllers.
+**DYNAMIXEL Workbench** メタパッケージには、**Controllers**、**Operators** そして **Toolbox** の3つパッケージが含まれています。**Controllers** パッケージは、DYNAMIXEL Workbenchライブラリ（Toolbox）を使って、異なる動作モードでDYNAMIXELを使用する方法を紹介します。また、Operatorsでは、コントローラを操作することによっていくつかの簡単な例を紹介します。  
 
 - [ROS WIKI](http://wiki.ros.org/dynamixel_workbench)
 
-# [Downloads](#downloads)
+# [ダウンロード](#downloads)
 
 ## [ROS](#ros)
 
-### Install ROS on PC
+### PCにROSをインストール
 
 ![](/assets/images/platform/turtlebot3/logo_ros.png)
 
-The following script will allow you to simplify the ROS installation procedure. Run the following command in a terminal window. The terminal application can be found with the Ubuntu search icon on the top left corner of the screen, or you can use shortcut key for terminal is `Ctrl`+`Alt`+`T`. After install ROS, please reboot PC.
+以下のスクリプトを使用すると、ROSのインストール手順を簡略化することができます。ターミナルウィンドウで以下のコマンドを実行します。ターミナルアプリは、画面左上のUbuntu検索アイコンから見つけることができます。もしくは、ショートカットキーである`Ctrl`+`Alt`+`T`を使うことでも見つけられます。ROSをインストールした後は、PCを再起動してください。  
 
 ``` bash
 $ sudo apt-get update
@@ -63,67 +62,67 @@ $ sudo apt-get upgrade
 $ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh && chmod 755 ./install_ros_kinetic.sh && bash ./install_ros_kinetic.sh
 ```
 
-**NOTE**: In order to check which packages are installed, please check this link out. [install_ros_kinetic.sh](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh)
+**注釈**: どのパッケージがインストールされているかを確認するには、このリンクを確認してください。
+[install_ros_kinetic.sh](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh)
 {: .notice--info}
 
-If you prefer manual installation, please following the link below.
+手動インストールをご希望の場合は、以下のリンクをクリックしてください。  
 
 - [Manual installation of ROS Kinetic](http://wiki.ros.org/kinetic/Installation/Ubuntu)
 
-### Downloads ROS Packages
+### ROSパッケージをダウンロード
 
-**Main packages**
+**主なパッケージ**
 
 ``` bash
 $ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench.git
 $ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench-msgs.git
 ```
 
-**Dependent packages**
+**依存パッケージ**
 
 ``` bash
 $ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git
 ```
 
-## [OpenCR and OpenCM](#opencr-and-opencm)
+## [OpenCRとOpenCM](#opencr-and-opencm)
 
-### Downloads Arduino IDE
+### Arduino IDEのダウンロード
 
-- Downloads [Arduino IDE](http://emanual.robotis.com/docs/en/software/arduino_ide/) for uploding firmware to OpenCR and OpenCM
+- OpenCRとOpenCMにファームウェアをアップロードするための [Arduino IDE](http://emanual.robotis.com/docs/en/software/arduino_ide/) をダウンロードします。  
 
 #### OpenCR Arduino IDE
 
 ![](/assets/images/sw/dynamixel/dynamixel_workbench/opencr_arduino_setup.png)
 
-In order to use Exameples for OpenCM 9.04 in Arduino, Porting OpenCM9.04 Board to Arduino IDE is required.  
+OpenCM9.04用の例をArduinoで使用するためには、OpenCM9.04ボードをArduino IDEにポーティングする必要があります。  
 
-- [Porting the OpenCR1.0 board to the Arduino IDE](/docs/en/parts/controller/opencr10/#porting-to-arduino-idelinux)
+- [OpenCR1.0ボードをArduino IDEにポーティングする](/docs/en/parts/controller/opencr10/#porting-to-arduino-idelinux)
 
 #### OpenCM Arduino IDE
 
 ![](/assets/images/sw/dynamixel/dynamixel_workbench/opencm_arduino_setup.png)
 
-In order to use Exameples for OpenCM 9.04 in Arduino, Porting OpenCM9.04 Board to Arduino IDE is required.  
+OpenCM9.04用の例をArduinoで使用するためには、OpenCM9.04ボードをArduino IDEにポーティングする必要があります。  
 
-- [Porting the OpenCM9.04 board to the Arduino IDE](docs/en/parts/controller/opencm904/#porting-the-opencm904-board-to-the-arduino-ide)
+- [OpenCM9.04ボードをArduino IDEにポーティングする](docs/en/parts/controller/opencm904/#porting-the-opencm904-board-to-the-arduino-ide)
 
 ## [Linux and macOS](#linux-and-macos)
-
-**NOTE**: We don't have a plan to release for `Windows OS`. But we will happily merge any contributions regarding Windows environment.
+**注釈**: `Windows OS`向けにリリースする予定はありません。しかし、Windows環境に関するコントリビューションは喜んでマージします。  
 {: .notice--info}
 
-### Downloads Library
+### ダウンロードライブラリ
 
 ``` bash
 $ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git
 $ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench.git
 ```
-### Setup DYNAMIXEL SDK library
+### DYNAMIXEL SDKライブラリのセットアップ
 
 - [Linux](http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/library_setup/cpp_linux/#cpp-linux)  
 - [macOS](http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/library_setup/cpp_macos/#cpp-macos)  
 
-### Setup DYNAMIXEL Workbench library
+### DYNAMIXEL Workbenchライブラリのセットアップ
 
 ``` bash
 $ cd ~/dynamixel-workbench/dynamixel_workbench_toolbox/examples
@@ -132,10 +131,9 @@ $ cmake ..
 $ make
 ```
 
-# [Device Setup](#device-setup)
-
-**WARNING**: You should check the device setup **over and over again** before you use the library.  
-Please check **power input** and **usb port** once again.
+# [デバイスのセットアップ](#device-setup)
+**警告**: ライブラリを使用する前に、デバイスの設定を **何度も何度も** 確認してください。  
+**電源入力** と **USBポート** をもう一度確認してください。  
 {: .notice--warning}
 
 ## [U2D2](#u2d2)
