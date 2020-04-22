@@ -1263,7 +1263,7 @@ addパラメーターまたはtxtパケット命令が正常に動作した場�
 1. `data_num_for_each_id` : 各IDのデータ数を設定します。  
 
 **戻り値**  
-addパラメーターまたはtxtパケット命令が正常に動作した場合はtrueを返します。そうでない場合にはfalseを返します。  
+addパラメーターまたはtxパケット命令が正常に動作した場合はtrueを返します。そうでない場合にはfalseを返します。  
 
 ### bool addSyncReadHandler(uint16_t address, uint16_t length, const char **log = NULL)
 **説明文**  
@@ -1274,7 +1274,7 @@ syncReadハンドラを追加します。
 1. `length` : コントロールテーブル項目の長さを設定します。    
 
 **戻り値**  
-syncWriteハンドラを最大値（デフォルトは5）を超えて追加しようとした場合はfalseを返す、もしくは項目名が見つからなくなります。そうでない場合にはtrueを返します。  
+syncWriteハンドラの最大値（デフォルトは5）を超えて追加しようとした場合はfalseを返す、もしくは項目名が見つからなくなります。そうでない場合にはtrueを返します。  
 
 ### bool addSyncReadHandler(uint8_t id, const char *item_name, const char **log = NULL)
 **説明文**  
@@ -1295,7 +1295,7 @@ syncWriteハンドラを最大値（デフォルトは5）を超えて追加し�
 1. `index` : syncWriteハンドラのインデックスを設定します。  
 
 **戻り値**  
-addパラメーターまたはtxtパケット命令が正常に動作した場合はtrueを返します。そうでない場合にはfalseを返します。  
+addパラメーターまたはtxパケット命令が正常に動作した場合はtrueを返します。そうでない場合にはfalseを返します。  
 
 ### bool syncRead(uint8_t index, uint8_t *id, uint8_t id_num, const char **log = NULL)
 **説明文**  
@@ -1307,7 +1307,7 @@ addパラメーターまたはtxtパケット命令が正常に動作した場�
 1. `id_num` : IDの数を設定します。  
 
 **戻り値**  
-addパラメーターまたはtxtパケット命令が正常に動作した場合はtrueを返します。そうでない場合にはfalseを返します。  
+addパラメーターまたはtxパケット命令が正常に動作した場合はtrueを返します。そうでない場合にはfalseを返します。  
 
 ### bool getSyncReadData(uint8_t index, int32_t *data, const char **log = NULL)
 **説明文**    
@@ -1475,7 +1475,7 @@ writeByteTxRx命令が正常に動作した場合はtureを返します。そう
 
 ### bool torqueOn(uint8_t id, const char **log = NULL)
 **説明文**  
-DYNAMIXELにトルクをかけます。
+DYNAMIXELのトルクをオンに設定します。
 
 **引数**    
 1. `id` : DYNAMIXELのIDを設定します。
@@ -1485,7 +1485,7 @@ writeByteTxRx命令が正常に動作した場合はtureを返します。そう
 
 ### bool torqueOff(uint8_t id, const char **log = NULL)
 **説明文**  
-DYNAMIXELにかかっているトルクをオフに設定します。  
+DYNAMIXELのトルクをオフに設定します。  
 
 **引数**    
 1. `id` : DYNAMIXELのIDを設定します。
@@ -1604,7 +1604,7 @@ writeByteTxRx命令が正常に動作した場合はtureを返します。そう
 
 ### bool setVelocityBasedProfile(uint8_t id, const char **log = NULL)
 **説明文**  
-DYNAMIXELを設定すると、速度ベースのプロファイルが作成されます。  
+DYNAMIXELを設定すると、速度ベースのプロファイルを設定します。  
 
 **引数**    
 1. `id` : DYNAMIXELのIDを設定します。
@@ -1614,7 +1614,7 @@ writeByteTxRx命令が正常に動作した場合はtureを返します。そう
 
 ### bool setTimeBasedProfile(uint8_t id, const char **log = NULL)
 **説明文**  
-DYNAMIXELを設定すると、時間ベースのプロファイルが作成されます。  
+DYNAMIXELを設定すると、タイムベースのプロファイルを設定します。  
 
 **引数**    
 1. `id` : DYNAMIXELのIDを設定します。
@@ -1635,7 +1635,7 @@ writeByteTxRx命令が正常に動作した場合はtureを返します。そう
 
 ### bool setCurrentControlMode(uint8_t id, const char **log = NULL)
 **説明文**  
-DYNAMIXELに電流制御モードを設定します。  
+DYNAMIXELを電流制御モードに設定します。  
 
 **引数**    
 1. `id` : DYNAMIXELのIDを設定します。
@@ -1645,7 +1645,7 @@ writeByteTxRx命令が正常に動作した場合はtureを返します。そう
 
 ### bool setTorqueControlMode(uint8_t id, const char **log = NULL)
 **説明文**  
-DYNAMIXELにトルク制御モードを設定します。  
+DYNAMIXELをトルク制御モードに設定します。  
 
 **引数**    
 1. `id` : DYNAMIXELのIDを設定します。
@@ -1655,7 +1655,7 @@ writeByteTxRx命令が正常に動作した場合はtureを返します。そう
 
 ### bool setVelocityControlMode(uint8_t id, const char **log = NULL)
 **説明文**  
-DYNAMIXELに速度制御モードを設定します。  
+DYNAMIXELを速度制御モードに設定します。  
 
 **引数**    
 1. `id` : DYNAMIXELのIDを設定する。
@@ -1665,7 +1665,7 @@ writeByteTxRx命令が正常に動作した場合はtureを返します。そう
 
 ### bool setPositionControlMode(uint8_t id, const char **log = NULL)
 **説明文**  
-DYNAMIXELに位置制御モードを設定します。  
+DYNAMIXELを位置制御モードに設定します。  
 
 **引数**    
 1. `id` : DYNAMIXELのIDを設定します。
@@ -1675,7 +1675,7 @@ writeByteTxRx命令が正常に動作した場合はtureを返します。そう
 
 ### bool setExtendedPositionControlMode(uint8_t id, const char **log = NULL)
 **説明文**  
-DYNAMIXELに拡張位置制御モードに設定します。  
+DYNAMIXELを拡張位置制御モードに設定します。  
 
 **引数**    
 1. `id` : DYNAMIXELのIDを設定します。
@@ -1685,7 +1685,7 @@ writeByteTxRx命令が正常に動作した場合はtureを返します。そう
 
 ### bool setMultiTurnControlMode(uint8_t id, const char **log = NULL)
 **説明文**  
-DYNAMIXELにマルチターン制御モードを設定します。  
+DYNAMIXELをマルチターン制御モードに設定します。  
 
 **引数**    
 1. `id` : DYNAMIXELのIDを設定します。
@@ -1705,7 +1705,7 @@ writeByteTxRx命令が正常に動作した場合はtureを返します。そう
 
 ### bool setPWMControlMode(uint8_t id, const char **log = NULL)
 **説明文**  
-DYNAMIXELにPWM制御モードを設定します。  
+DYNAMIXELをPWM制御モードに設定します。  
 
 **引数**    
 1. `id` : DYNAMIXELのIDを設定します。
@@ -1743,8 +1743,8 @@ DYNAMIXELにジョイントモードを設定します。任意のDYNAMIXELに�
 
 **引数**    
 1. `id` : DYNAMIXELのIDを設定します。
-1. `velocity` : プロファイル速度を設定します、
-1. `acceleration` : プロファイルの加速度を設定します。  
+1. `velocity` : 速度プロファイルを設定します。
+1. `acceleration` : 加速度プロファイルを設定します。  
 
 **戻り値**  
 writeByteTxRx命令が正常に動作した場合はtureを返します。そうでない場合にはfalseを返します。  
@@ -1768,7 +1768,7 @@ DYNAMIXELに電流による位置制御モードを設定します。DYNAMIXEL-X
 
 **引数**    
 1. `id` : DYNAMIXELのIDを設定します。
-1. `current` : 電流の制限を設定します。  
+1. `current` : 電流値の制限を設定します。  
 
 **戻り値**  
 writeByteTxRx命令が正常に動作した場合はtureを返します。そうでない場合にはfalseを返します。  
@@ -1801,7 +1801,7 @@ DYNAMIXELに速度を設定します。
 
 **引数**    
 1. `id` : DYNAMIXELのIDを設定します。
-1. `value` : 3232ビットのraw値を設定します。
+1. `value` : 32ビットのraw値を設定します。
 
 **戻り値**  
 writeByteTxRx命令が正常に動作した場合はtureを返します。そうでない場合にはfalseを返します。  
@@ -1961,7 +1961,7 @@ DYNAMIXEL用の32ビットのraw値を返します。
 1. `value` : 16ビットのraw値を設定します。  
 
 **戻り値**  
-ロードを返します。単位は%です。  
+負荷を返します。単位は%です。  
 
 [dynamixel_workbench_msgs/DynamixelInfo]: /docs/en/popup/dynamixel_workbench_msgs_DynamixelInfo/
 [dynamixel_workbench_msgs/DynamixelCommand]: /docs/en/popup/dynamixel_workbench_msgs_DynamixelCommand/
