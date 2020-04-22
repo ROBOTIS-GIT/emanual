@@ -60,7 +60,7 @@ sidebar:
 |          SPI           |                2                |
 |        I2C(TWI)        |                2                |
 |         Debug          |           JTAG & SWD            |
-| DYNAMIXEL TTL BUS 3pin |                4                |
+|   DYNAMIXEL TTL BUS    |          4 (Max 1Mbps)          |
 |       Dimensions       |          27mm x 66.5mm          |
 
 {% capture opencm904_caution_01 %}
