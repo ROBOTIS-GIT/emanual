@@ -1604,7 +1604,7 @@ writeByteTxRx命令が正常に動作した場合はtureを返します。そう
 
 ### bool setVelocityBasedProfile(uint8_t id, const char **log = NULL)
 **説明文**  
-DYNAMIXELを設定すると、速度ベースのプロファイルを設定します。  
+DYNAMIXELに速度ベースのプロファイルを設定します。  
 
 **引数**    
 1. `id` : DYNAMIXELのIDを設定します。
@@ -1614,7 +1614,7 @@ writeByteTxRx命令が正常に動作した場合はtureを返します。そう
 
 ### bool setTimeBasedProfile(uint8_t id, const char **log = NULL)
 **説明文**  
-DYNAMIXELを設定すると、タイムベースのプロファイルを設定します。  
+DYNAMIXELにタイムベースのプロファイルを設定します。  
 
 **引数**    
 1. `id` : DYNAMIXELのIDを設定します。
