@@ -53,6 +53,12 @@ page_number: 4
 
 ## [Raspberry Pi Update and Recovery](#raspberry-pi-update-and-recovery)
 
+## [Raspberry Pi Update](#raspberry-pi-update-and-recovery)
+
+You can update Raspberry Pi remotely when it needs. This feature will be available in the near future. 
+
+## [Raspberry Pi and Recovery](#raspberry-pi-update-and-recovery)
+
 If Raspberry Pi won't boot or isn't functioning properly, see the following instructions.
 
 1. Download [Release.zip](https://www.robotis.com/service/download.php?no=1923) (Kit-Only Raspbian Image file **rpi_eng_image_ver_1.img** included).
@@ -233,8 +239,8 @@ The ENGINEER KIT2 shares R+Task 3.0 and ENGIEER app with the ENGINEER KIT 1. If 
 ### [Download Assembly Manual](#download-assembly-manual)
 Download the assembly manuals from the following table.
 
-|  Model   | Download                                      |
-|:--------:|:----------------------------------------------|
+|  Model   | Download                                                                                              |
+|:--------:|:------------------------------------------------------------------------------------------------------|
 |  MAX-E2  | [ROBOTIS_ENGINEER_KIT2_MAX-E2_EN_ver2014.pdf](https://www.robotis.com/service/download.php?no=1929)   |
 | Commando | [ROBOTIS_ENGINEER_KIT2_Commando_EN_ver2014.pdf](https://www.robotis.com/service/download.php?no=1930) |
 |  Scorpi  | [ROBOTIS_ENGINEER_KIT2_Scorpi_EN_ver2014.pdf](https://www.robotis.com/service/download.php?no=1931)   |
@@ -275,6 +281,17 @@ Download [MARKER for Commando](https://www.robotis.com/service/download.php?no=1
 {% include en/parts/controller/fuse_cm-550.md %}
 
 ## [Drawings](#drawings)
+
+Download 3D printing files (STL) from the following table.
+
+|             Model             | Download                                                                            |
+|:-----------------------------:|:------------------------------------------------------------------------------------|
+|          Parts List           | [ENG2_3D_Printing_Parts_List](https://www.robotis.com/service/download.php?no=1972) |
+|            MAX-E2             | [1. MAX-E2_STL.zip](https://www.robotis.com/service/download.php?no=1951)           |
+|           Commando            | [2. COMMANDO_STL.zip](https://www.robotis.com/service/download.php?no=1952)         |
+|            Scorpi             | [3. SCORPI_STL.zip](https://www.robotis.com/service/download.php?no=1953)           |
+| AutoBot (Additional Eaxmples) | [4. AUTOBOT_STL.zip](https://www.robotis.com/service/download.php?no=1954)          |
+| Strider (Additional Eaxmples) | [5. STRIDER_STL.zip](https://www.robotis.com/service/download.php?no=1955)          |
 
 {% include en/dxl/download_center_notice.md %}
 
