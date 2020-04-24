@@ -95,7 +95,7 @@ $ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git
 
 ![](/assets/images/sw/dynamixel/dynamixel_workbench/opencr_arduino_setup.png)
 
-OpenCM9.04用の例をArduinoで使用するためには、OpenCM9.04ボードをArduino IDEにポーティングする必要があります。  
+OpenCR1.0用の例をArduinoで使用するためには、OpenCR1.0ボードをArduino IDEにポーティングする必要があります。  
 
 - [OpenCR1.0ボードをArduino IDEにポーティングする](/docs/en/parts/controller/opencr10/#porting-to-arduino-idelinux)
 
@@ -132,7 +132,7 @@ $ make
 ```
 
 # [デバイスのセットアップ](#device-setup)
-**警告**: ライブラリを使用する前に、デバイスの設定を **何度も何度も** 確認してください。  
+**警告**: ライブラリを使用する前に、デバイスの設定を **繰り返し** 確認してください。  
 **電源入力** と **USBポート** をもう一度確認してください。  
 {: .notice--warning}
 
