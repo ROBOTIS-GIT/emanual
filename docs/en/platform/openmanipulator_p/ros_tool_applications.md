@@ -115,7 +115,7 @@ $ roslaunch open_manipulator_p_teleop open_manipulator_p_teleop_joystick.launch 
 #### [MoveIt!](#moveit)
 
 ```bash 
-$ roslaunch open_manipulator_p_controller open_manipulator_p_controller.launch use_moveit:=true with_gripper:=true
+$ roslaunch open_manipulator_p_controllers joint_trajectory_controller.launch sim:=false with_gripper:=true
 ```
 - [MoveIt! e-Manual](/docs/en/platform/openmanipulator_p/ros_operation/#moveit)
 

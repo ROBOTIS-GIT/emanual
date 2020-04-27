@@ -14,9 +14,9 @@ sidebar:
 # [Introduction](#introduction)
 ![](/assets/images/parts/interface/dynamixel_shield/with_arduino.png)
 
-DYNAMIXEL Shield  was created to use RC100 and DYNAMIXEL on arduino board. We provide dynamixel library for DYNAMIXEL Shield, it can help you to use DYNAMIXEL easily.
+DYNAMIXEL Shield  was created to use [RC-100] and DYNAMIXEL on arduino board. We provide dynamixel library for DYNAMIXEL Shield, it can help you to use DYNAMIXEL easily.
 
-**This product does not contain Arduino Uno. Arduino Uno should be purchased separately.**
+**This product does not contain Arduino Board. Arduino Board should be purchased separately.**
 {: .notice--warning}
 
 # [Specifications](#specifications)
@@ -35,7 +35,8 @@ DYNAMIXEL Shield  was created to use RC100 and DYNAMIXEL on arduino board. We pr
 | **DX** `1`       | [DX-113]                       | [DX-116]                       | [DX-117]                       |                                |                 |
 | **EX** `1`       | [EX-106+]                      |                                |                                |                                |                 |
 | **MX**           | [MX-12W]                       | [MX-28], [MX-28(2.0)]          | [MX-64], [MX-64(2.0)]          | [MX-106], [MX-106(2.0)]        |                 |
-| **XL**           | [XL320]                        | [XL430-W250]                   |                                |                                |                 |
+| **XL**           | [XL320]                        | [XL430-W250]                   | [2XL430-W250]                  |                                |                 |
+| **XC**           | [XC430-W150]                   | [XC430-W240]                   | [2XC430-W250]                  |                                |                 |
 | **XM**           | [XM430-W210]                   | [XM430-W350]                   | [XM540-W150]                   | [XM540-W270]                   |                 |
 | **XH**           | [XH430-W210]<br/> [XH430-W350] | [XH430-V210]<br/> [XH430-V350] | [XH540-W150]<br/> [XH540-W270] | [XH540-V150]<br/> [XH540-V270] |                 |
 | **PRO H**        | [H42-20-S300-R]                | [H54-100-S500-R]               | [H54-200-S500-R]               |                                |                 |
@@ -52,6 +53,9 @@ DYNAMIXEL Shield  was created to use RC100 and DYNAMIXEL on arduino board. We pr
 
 ![](/assets/images/parts/interface/dynamixel_shield/pinmap.png)
 
+The DYNAMIXEL Shield has the same pin position as Aruduino UNO. To find the pinout diagram, see [Arduino Offical page](https://www.arduino.cc/en/Main/Products).
+{: .notice--warning}
+
 | Pin No. |  Pin Name  |        Description        |
 |:-------:|:----------:|:-------------------------:|
 |    0    | HW UART RX |          DXL_RX           |
@@ -66,10 +70,9 @@ DYNAMIXEL Shield  was created to use RC100 and DYNAMIXEL on arduino board. We pr
 |  UART Switch   | UART SW (Upload or DYNAMIXEL Select Switch) |       `Caution1`        |
 |   Jumper Cap   |           Power Source Selection            | Read 'Connecting Power' |
 
--	Arduino pin #0/ #1 : Hardware serial port to control dynamixel
-- Arduino pin #2 : Control pin to select dynamixel direction
-- The hardware serial port is used for DYNAMIXEL control, therefore, the serial communication has to be performed by connecting RC100 or LN101 to the software serial port which is assigned to Arduino pin 7 and 8.
-
+-	DXL_RX (0), DXL_TX (1) : Hardware serial port to control DYNAMIXEL.
+- DXL_DIR(2) : Control pin to select DYNAMIXEL direction.
+- The hardware serial port is used for DYNAMIXEL control, therefore, the serial communication has to be performed by connecting [RC-100] or [LN-101] to the software serial port which is assigned to Arduino pin 7 and 8.
 
 {% capture shield_01 %}
 `Caution1` When uploading firmware using USB port, you should switch the UART SW(SW_2) to Upload mode. When you select the UART SW (SW_2) to DYNAMIXEL mode, you can use DYNAMIXEL but USB port.  
@@ -144,7 +147,7 @@ Check the type of your arduino board, and select the either of listed solution t
 -	Support dynamixel protocol 1.0/2.0
 - Up to 16 DYNAMIXEL's can be controlled (Typically, each motor(XL-320 or XL430-W250) consumes 0.4 ~ 0.6A of current)
 - Support SynWrite function
-- Support RC100 library
+- Support RC-100 library
 - Serial communication using software serial library
 - DYNAMIXEL Shield library(v0.1.0 or above) requires DYNAMIXEL2Arduino library
 
@@ -301,6 +304,10 @@ bool syncWriteEnd(void);
 [MX-106(2.0)]: /docs/en/dxl/mx/mx-106-2/
 [XL320]: /docs/en/dxl/x/xl320/
 [XL430-W250]: /docs/en/dxl/x/xl430-w250/
+[2XL430-W250]: /docs/en/dxl/x/2xl430-w250/
+[XC430-W150]: /docs/en/dxl/x/xc430-w150/
+[XC430-W240]: /docs/en/dxl/x/xc430-w240/
+[2XC430-W250]: /docs/en/dxl/x/2xc430-w250/
 [XM430-W210]: /docs/en/dxl/x/xm430-w210/
 [XM430-W350]: /docs/en/dxl/x/xm430-w350/
 [XH430-W210]: /docs/en/dxl/x/xh430-w210/
@@ -336,6 +343,9 @@ bool syncWriteEnd(void);
 [PM54-060-S250-R]: /docs/en/dxl/p/pm54-060-s250-r/
 [PM54-040-S250-R]: /docs/en/dxl/p/pm54-040-s250-r/
 [PM42-010-S260-R]: /docs/en/dxl/p/pm42-010-s260-r/
+
+[LN-101]: /docs/en/parts/interface/ln-101/
+[RC-100]: /docs/en/parts/communication/rc-100/
 
 [Arduino Official Guide]: https://www.arduino.cc/en/Guide/Libraries
 [GitHub repository]: https://github.com/ROBOTIS-GIT/Dynamixel2Arduino

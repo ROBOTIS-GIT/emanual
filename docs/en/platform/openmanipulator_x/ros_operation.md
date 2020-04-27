@@ -146,6 +146,9 @@ $ roslaunch open_manipulator_teleop open_manipulator_teleop_joystick.launch
 ```
 
 ## [MoveIt!](#moveit)
+MoveIt is a set of packages for your robot to manipulate for Motion Planning, Manipulation, Inverse Kinematics, Control, 3D Perception and Collision Checking. 
+
+The following instruction describes how to install moveit package and to use MoveIt with OpenMAIPULATOR-X.
 
 ### [Install MoveIt Packages](#install-moveit-packages)
 ```bash

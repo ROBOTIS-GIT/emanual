@@ -155,93 +155,42 @@ $ roslaunch open_manipulator_p_teleop open_manipulator_p_teleop_joystick.launch
 
 
 ## [MoveIt!](#moveit)
+MoveIt is a set of packages for your robot to manipulate for Motion Planning, Manipulation, Inverse Kinematics, Control, 3D Perception and Collision Checking. 
 
-**TIP**: Terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`+`Alt`+`t`.
-{: .notice--success}
+The following instruction describes how to install moveit package and to use MoveIt with OpenMAIPULATOR-P.
 
-Before you launch controller using MoveIt!, check `open_manipulator_p_controller` launch file in `open_manipulator_p_controller` package.
+### [Install MoveIt Packages](#install-moveit-packages)
 
-  ```
-  <launch>
-    <arg name="use_robot_name"         default="open_manipulator_p"/>
+```bash
+$ cd ~/catkin_ws/src/
+$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_p_controls.git
+$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_p_dependencies.git
+$ cd ~/catkin_ws && catkin_make
+```
 
-    <arg name="dynamixel_usb_port"     default="/dev/ttyUSB0"/>
-    <arg name="dynamixel_baud_rate"    default="1000000"/>
+### [Launch MoveIt!](#launch-moveit)
 
-    <arg name="control_period"         default="0.010"/>
-
-    <arg name="use_platform"           default="true"/>
-
-    <arg name="use_moveit"             default="false"/>
-    <arg name="planning_group_name"    default="arm"/>
-    <arg name="moveit_sample_duration" default="0.050"/>
-
-    <group if="$(arg use_moveit)">
-      <include file="$(find open_manipulator_p_controller)/launch/open_manipulator_p_moveit.launch">
-        <arg name="robot_name"      value="$(arg use_robot_name)"/>
-        <arg name="sample_duration" value="$(arg moveit_sample_duration)"/>
-      </include>
-    </group>
-
-    <node name="$(arg use_robot_name)" pkg="open_manipulator_p_controller" type="open_manipulator_p_controller" output="screen" args="$(arg dynamixel_usb_port) $(arg dynamixel_baud_rate)">
-        <param name="using_platform"       value="$(arg use_platform)"/>
-        <param name="using_moveit"         value="$(arg use_moveit)"/>
-        <param name="planning_group_name"  value="$(arg planning_group_name)"/>
-        <param name="control_period"       value="$(arg control_period)"/>
-        <param name="moveit_sample_duration"  value="$(arg moveit_sample_duration)"/>
-    </node>
-
-  </launch>
-  ```
-
-**Parameters Description**   
-The following parameters are used to load [move_group](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/move_group_interface/move_group_interface_tutorial.html) package.  
-
-`use_moveit`  
-- It is parameter to use MoveIt! by setting to **true/false** 
-
-`planning_group_name`  
-- It is a parameter to set in [setup_assistant](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/setup_assistant/setup_assistant_tutorial.html#step-4-add-planning-groups)
-
-`moveit_sample_duration`  
-- It is a parameter to set sampling time when joint trajectory is planned from MoveIt!
-
-### [Launch MoveIt!](#launch-moviit)
-
-After setting all the parameters properly, launch Moveit! with the following command.
+Run **Moveit!** with the following command.
 
   ``` bash
-  $ roslaunch open_manipulator_p_controller open_manipulator_p_controller.launch use_moveit:=true
+  $ roslaunch open_manipulator_p_controllers joint_trajectory_controller.launch sim:=false
   ```
-
-**Warning!**     
-When launching the controller to use MoveIt!, [OpenMANIPULATOR-P launch file](/docs/en/platform/openmanipulator_p/ros_controller_package/#launch-controller) must be turned off.
-{: .notice--warning}
-
+  
   ![](/assets/images/platform/openmanipulator_p/moveit_launch.png)  
   
-**Service Server List** :
-A list of MoveIt!-related service server that open_manipulator_p_controller has.
+#### [Using MoveIt! with Gazebo](#using-moveit-with-gazebo)
+Gazebo is a tool to simulate and test your robot in a virtual enviroment, without an actual robot.  
 
-- `/open_manipulator_p/moveit/get_joint_position` ([open_manipulator_p_msgs/GetJointPosition]{: .popup})  
-The user can use this service to receive a joint position which is calculated by move_group.  
+Also, you can use MoveIt feature using your virtual robot in the gazebo enviroment with the following command.
 
-- `/open_manipulator_p/moveit/get_kinematics_pose` ([open_manipulator_p_msgs/GetKinematicsPose]{: .popup})  
-The user can use this service to receive a kinematics pose which is calculated by move_group.
+For more information on Gazebo, See [Simulation](/docs/en/platform/openmanipulator_p/ros_simulation/#ros-simulation)
 
-- `/open_manipulator_p/moveit/set_joint_position` ([open_manipulator_p_msgs/SetJointPosition]{: .popup})  
-The user can use this service to create a trajectory in the [joint space]{: .popup} by move_group. The user inputs the angle of the target joint and the total time of the trajectory.
-
-- `/open_manipulator_p/moveit/set_kinematics_pose` ([open_manipulator_p_msgs/SetKinematicsPose]{: .popup})  
-The user can use this service to create a trajectory in the [task space]{: .popup} by move_group. The user inputs the kinematics pose(orientation only) of the OpenMANIPULATOR-P end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
-
-**TIP**: If you would like to use inverse kinematics with `position_only`, check `open_manipulator_p_moveit` -> `config` -> `kinematics.yaml` and set `position_only_ik` parameter to **True**.
-{: .notice--success}
+```bash
+$ roslaunch open_manipulator_p_controllers joint_trajectory_controller.launch
+```
 
 [OpenCR]: /docs/en/parts/controller/opencr10/
 [OpenCR Manual]: /docs/en/parts/controller/opencr10/
-[rc100]: /docs/en/parts/communication/rc-100/
-[bt410]: /docs/en/parts/communication/bt-410/
 
 [open_manipulator_p_msgs/GetJointPosition]: /docs/en/popup/open_manipulator_p_msgs_GetJointPosition/
 [open_manipulator_p_msgs/GetKinematicsPose]: /docs/en/popup/open_manipulator_p_msgs_GetKinematicsPose/

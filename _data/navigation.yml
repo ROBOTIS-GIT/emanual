@@ -16695,7 +16695,7 @@ openmanipulator_x:
       - title: "OpenMANIPULATOR Linear"
         url: /platform/openmanipulator_x/friends/#openmanipulator-linear
         
-#OpenManipulator-PRO
+#OpenManipulator-P
 openmanipulator_p:
   - title: "Overview"
     url: /platform/openmanipulator_p/overview/#overview
@@ -16780,6 +16780,11 @@ openmanipulator_p:
         url: /platform/openmanipulator_p/ros_operation/#teleoperation
       - title: "MoveIt!"
         url: /platform/openmanipulator_p/ros_operation/#moveit
+        children:
+          - title: "Install MoveIt Packages"
+            url: /platform/openmanipulator_p/ros_operation/#install-moveit-packages
+          - title: "Launch MoveIt!"
+            url: /platform/openmanipulator_p/ros_operation/#launch-moveit
   - title: "[ROS] Simulation"
     url: /platform/openmanipulator_p/ros_simulation/#ros-simulation
     children:
