@@ -386,6 +386,9 @@ main:
       - title: "Kit 1"
         titlekr: "키트 1"
         url: /edu/engineer/kit1/
+      - title: "Kit 2"
+        titlekr: "키트 2"
+        url: /edu/engineer/kit2_introduction/  
     - title: "ROBOTIS MINI"
       titlekr: "로보티즈 미니"
       url: /edu/mini/

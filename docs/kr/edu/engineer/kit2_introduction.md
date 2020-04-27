@@ -3,7 +3,7 @@ layout: archive
 lang: kr
 ref: kit2
 read_time: true
-share: false
+share: true
 author_profile: false
 permalink: /docs/kr/edu/engineer/kit2_introduction/
 sidebar:

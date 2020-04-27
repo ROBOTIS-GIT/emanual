@@ -3,7 +3,7 @@ layout: archive
 lang: kr
 ref: kit2_reference
 read_time: true
-share: false
+share: true
 author_profile: false
 permalink: /docs/kr/edu/engineer/kit2_reference/
 sidebar:
@@ -56,6 +56,31 @@ ROBOTIS ENGINEER KIT2에서는 Raspberry Pi Camera와 앱을 동일한 와이파
     > 스트리밍 화면
 
 ## [Raspberry Pi 업데이트 및 복구](#raspberry-pi-업데이트-및-복구)
+
+### [Raspberry Pi 업데이트 하기](#raspberry-pi-업데이트-하기)
+엔지니어 키트2 의 새로운 기능이 추가될 때 `ROBOTIS ENGIEER` 앱을 이용하여, 라즈베리파이를 원격으로 업데이트 할 수 있습니다. 
+
+해당 기능은, 추후 기능추가시 공개 됩니다.
+<!--
+
+**참고**: 업데이트가 필요할때, `ROBOTIS ENGIEER` 앱의 **RPI 버전 업데이트** 버튼이 활성화 됩니다.
+{: .notice}
+
+1. CM-550의 전원 버튼을 눌러,전원을 켜주세요. 버튼에 노란색 LED가 켜질 때 까지 대기합니다.
+
+2. 원격 연결을 위해, 스마트 기기에서 해당하는 로봇의 RPI (예시: Robotis_Rpi_137E) 네트워크에 접속합니다.
+
+3. `ROBOTIS ENGIEER`앱을 실행 시킨 후, 로봇과 스마트기기를 블루투스로 연결하세요. 
+
+4. `ROBOTIS ENGIEER`앱에서 RPI 설정 화면으로 이동합니다. 제어기에서 "삐" 소리와 함께 해당 화면으로 이동합니다.
+
+5. 네트워크 설정에서, 해당 스마트기기가 라즈베리파이 업데이트를 하기 위해 연결할 네트워크 주소를 입력후 저장 버튼을 클릭합니다.
+6. 로봇의 라즈베리파이 보드가 `ROBOTIS ENGIEER`에서 설정한 네트워크 주소로 연결되면, "연결됨" 표시가 나타납니다. 이후 재부팅시, 해당 네트워크 주소로 게속 연결됩니다.
+7. **RPI 버전 업데이트**를 클릮하여, 업데이트를 진행하세요. 
+
+ -->
+
+### [Raspberry Pi 복구 하기](#raspberry-pi-복구-하기)
 
 만약 라즈베리파이가 부팅시 문제가 있다면 키트전용 라즈비안을 다시 설치하여 해결할수 있습니다.
 
@@ -295,5 +320,18 @@ CM-550에 내장된 BLE 슬레이브 모듈의 신호의 세기가 약하거나 
 {% include kr/parts/controller/fuse_cm-550.md %}
 
 ## [도면](#도면)
+
+로보티즈 엔지니어 키트2에 프레임 및 추가 3D 모델링 파일을 다운로드 받을수 있습니다. 파일 정보 (파츠 명칭, 이미지등)를 확인하기 위해서, 다음 PDF파일을 다운로드 하세요.
+- [ENG2_3D_Printing_Parts_List](https://www.robotis.com/service/download.php?no=1971) 다운로드 하기.
+
+|        모델         | STL 파일 다운로드 (.zip )                                                           |
+|:-------------------:|:------------------------------------------------------------------------------------|
+|     부품 리스트     | [ENG2_3D_Printing_Parts_List](https://www.robotis.com/service/download.php?no=1971) |
+|       MAX-E2        | [1. MAX-E2_STL.zip](https://www.robotis.com/service/download.php?no=1951)           |
+|      Commando       | [2. COMMANDO_STL.zip](https://www.robotis.com/service/download.php?no=1952)         |
+|       Scorpi        | [3. SCORPI_STL.zip](https://www.robotis.com/service/download.php?no=1953)           |
+| AutoBot (추가 예제) | [4. AUTOBOT_STL.zip](https://www.robotis.com/service/download.php?no=1954)          |
+| Strider (추가 예제) | [5. STRIDER_STL.zip](https://www.robotis.com/service/download.php?no=1955)          |
+
 
 {% include kr/dxl/download_center_notice.md %}
