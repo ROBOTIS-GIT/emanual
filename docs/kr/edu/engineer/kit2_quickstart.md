@@ -3,7 +3,7 @@ layout: archive
 lang: kr
 ref: kit2_quickstart
 read_time: true
-share: false
+share: true
 author_profile: false
 permalink: /docs/kr/edu/engineer/kit2_quickstart/
 sidebar:
@@ -18,7 +18,34 @@ page_number: 2
 # [작동하기](#작동하기)
 
 ## [앱 설치하기](#앱-설치하기)
-엔지니어 키트2 는 엔지니어 키트 1와 동일한 소프트웨어(R+Task 3.0) 및 앱(로보티즈 엔지니어) 을 사용합니다. 다음과 같은 소프트웨어 및 앱이 설치가 되어있지않다면, [앱 설치하기](/docs/kr/edu/engineer/kit1/#작동하기)를 참조하세요
+<!-- 엔지니어 키트2 는 엔지니어 키트 1와 동일한 소프트웨어(R+Task 3.0) 및 앱(로보티즈 엔지니어) 을 사용합니다. 다음과 같은 소프트웨어 및 앱이 설치가 되어있지않다면, [앱 설치하기](/docs/kr/edu/engineer/kit1/#작동하기)를 참조하세요 -->
+
+- 로보티즈 엔지니어는 [로보플러스 태스크 3.0]를 지원합니다.
+- [로보플러스 태스크 3.0]은 기존의 [로보플러스 태스크 2.0]과 [로보플러스 모션 2.0]이 통합된 프로그램입니다.
+- 태스크 코드를 작성하여, 로봇을 원하는대로 명령으로 구동할 수 있습니다.
+- 모션파일로 로봇의 행동을 직접 만들어 줄 수 있습니다.
+
+{% capture software_install_01 %}  
+![](/assets/images/edu/engineer/kit1/icon_task_48.png)  
+**로보플러스 태스크 3.0**
+- [윈도우용 설치파일 다운로드](https://www.robotis.com/service/download.php?no=1973) 
+- [맥 OS 용 설치파일 다운로드](https://www.robotis.com/service/download.php?no=1976)
+- \[파이썬 추가] 로보플러스 태스크 3.0 ios 버전은 앱스토어에 곧 출시됩니다. PC 버전을 이용해주세요.  
+- \[파이썬 추가] 로보플러스 태스크 3.0 안드로이드 버전은 APK 파일을 받아서 설치해주세요. 추후 구글 플레이 스토어에서 만나볼수 있습니다.
+  - [안드로이드용 APK 파일 다운로드](https://www.robotis.com/service/download.php?no=1974)
+  - [인터넷에서 받은 앱 설치하기](/docs/kr/popup/apk_install){: .popup}
+{% endcapture %}
+<div class="notice--success">{{ software_install_01 | markdownify }}</div>
+
+{% capture software_install_02 %}  
+![](/assets/images/edu/engineer/kit1/icon_engineer_48.png)  
+**로보플러스 엔지니어**
+- \[키트2 예제 포함] 로보플러스 엔지니어 **ios 버전**은 추후 앱스토어에 출시 됩니다.
+- \[키트2 예제 포함] 로보플러스 엔지니어 **안드로이드 버전**은 아래 APK 파일을 다운로드 받아 설치해주세요. 추후 구글 플레이 스토어에서 만나볼수 있습니다. 
+  - [안드로이드용 APK 파일 다운로드](https://www.robotis.com/service/download.php?no=1975)
+  - [인터넷에서 받은 앱 설치하기](/docs/kr/popup/apk_install){: .popup}
+{% endcapture %}
+<div class="notice--success">{{ software_install_02 | markdownify }}</div>
 
 ## [예제 다운로드 하기](#예제-다운로드-하기)
 아래 표에서 예제를 다운로드 받을수 있습니다. 예제를 다운로드 받은후, 스마트 기기 또는 PC를 이용하여 제어기에 저장해주세요.

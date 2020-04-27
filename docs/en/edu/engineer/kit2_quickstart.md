@@ -3,7 +3,7 @@ layout: archive
 lang: en
 ref: kit2
 read_time: true
-share: false
+share: true
 author_profile: false
 permalink: /docs/en/edu/engineer/kit2_quickstart/
 sidebar:
@@ -19,7 +19,28 @@ page_number: 2
 
 ## [App Installation](#app-installation)
 
-The ENGINEER KIT2 shares R+Task 3.0 and ENGIEER app with the ENGINEER KIT 1. If these app and software are not installed on your PC or a smart device, see [App Installation](/docs/en/edu/engineer/kit1/#app-installation) and install the app and software.
+
+{% capture app_install %}
+![](/assets/images/edu/engineer/kit1/icon_engineer_48.png)  
+**R+ ENGINEER** including Kit 2 examples will be available on Google Play Store (Android) and App Store (ios) soon.  
+- For Android device, download [APK file](https://www.robotis.com/service/download.php?no=1975) and install it on your smart device. 
+- For ios device, the app will be released in App store market in the near future. 
+
+![](/assets/images/edu/engineer/kit1/icon_task_48.png)  
+**R+ Task 3.0** with Python (for an smart device) will be available on Google Play Store (Android) and App Store (ios) soon. 
+- For Windows (PC), download [R+ Task 3.0 Installer for Windows](https://www.robotis.com/service/download.php?no=1973).
+- For Mac OS (PC), download [R+Task 3.0 installer for Mac OS](https://www.robotis.com/service/download.php?no=1976).
+- For Android device, download [APK file](https://www.robotis.com/service/download.php?no=1974) and install it on your smart device.
+- For ios device, the app will be available on App Store in the near future. Please use PC before the app is released.
+{% endcapture %}
+<div class="notice--success">{{ app_install | markdownify }}</div>
+
+**NOTE**: R+Task 3.0 does not support Python Code Download on smart devices. Please download your code using R+Task 3.0 on a PC. 
+{: .notice}
+
+<!-- 
+The ENGINEER KIT2 shares R+Task 3.0 and ENGIEER app with the ENGINEER KIT 1. If these app and software are not installed on your PC or a smart device, see [App Installation](/docs/en/edu/engineer/kit1/#app-installation) and install the app and software. 
+-->
 
 ## [Download Examples](#download-examples)
 Download Kit2 Examples (.py and .mth) into the CM-550 controller. 
