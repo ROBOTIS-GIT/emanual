@@ -226,10 +226,15 @@ It is not a mandatory and it may require more time to replace the cable afterwar
 
 ![](/assets/images/edu/engineer/kit1/icon_task_48.png)  
 **R+ Task 3.0 (Mobile App): [Android App Download](https://play.google.com/store/apps/details?id=com.robotis.task3)**  
-**R+ Task 3.0 : [Windows Installer Download](http://www.robotis.com/service/download.php?no=1774)**  
+**R+ Task 3.0 : [Windows Installer Download](https://www.robotis.com/service/download.php?no=1774)**  
 **NOTE**: [ENGINEER App Installation](/docs/en/popup/engineer/engineer_app_installation){: .popup}
 {% endcapture %}
 <div class="notice--success">{{ app_install | markdownify }}</div>
+
+**WARNING**: Do not choose installation directory with non-English characters, when installing R+ Task 3.0. It may cause a problem to open python code. 
+
+**WARNING**: Install R+ Task 3.0 in a folder with Enlglish characters, otherwise The python codes may not properly work.
+{: .notice--warning}
 
 ## [Download Examples](#download-examples)
 - CM-550 controller is initially programmed with Kit1 example.  

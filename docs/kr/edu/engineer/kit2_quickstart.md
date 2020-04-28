@@ -28,7 +28,7 @@ page_number: 2
 {% capture software_install_01 %}  
 ![](/assets/images/edu/engineer/kit1/icon_task_48.png)  
 **로보플러스 태스크 3.0**
-- [윈도우용 설치파일 다운로드](https://www.robotis.com/service/download.php?no=1973) 
+- [윈도우용 설치파일 다운로드](https://www.robotis.com/service/download.php?no=1980) 
 - [맥 OS 용 설치파일 다운로드](https://www.robotis.com/service/download.php?no=1976)
 - \[파이썬 추가] 로보플러스 태스크 3.0 ios 버전은 앱스토어에 곧 출시됩니다. PC 버전을 이용해주세요.  
 - \[파이썬 추가] 로보플러스 태스크 3.0 안드로이드 버전은 APK 파일을 받아서 설치해주세요. 추후 구글 플레이 스토어에서 만나볼수 있습니다.
@@ -36,6 +36,9 @@ page_number: 2
   - [인터넷에서 받은 앱 설치하기](/docs/kr/popup/apk_install){: .popup}
 {% endcapture %}
 <div class="notice--success">{{ software_install_01 | markdownify }}</div>
+
+**주의**: 로보플러스 태스크 3.0 설치시 경로를 반드시 영문 또는 기본 경로에 설치하세요. 그렇지않으면 파이썬예제 실행시 오류가 발생할 수 있습니다.
+{: .notice--warning}
 
 {% capture software_install_02 %}  
 ![](/assets/images/edu/engineer/kit1/icon_engineer_48.png)  

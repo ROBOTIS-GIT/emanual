@@ -28,7 +28,7 @@ page_number: 2
 
 ![](/assets/images/edu/engineer/kit1/icon_task_48.png)  
 **R+ Task 3.0** with Python (for an smart device) will be available on Google Play Store (Android) and App Store (ios) soon. 
-- For Windows (PC), download [R+ Task 3.0 Installer for Windows](https://www.robotis.com/service/download.php?no=1973).
+- For Windows (PC), download [R+ Task 3.0 Installer for Windows](https://www.robotis.com/service/download.php?no=1980).
 - For Mac OS (PC), download [R+Task 3.0 installer for Mac OS](https://www.robotis.com/service/download.php?no=1976).
 - For Android device, download [APK file](https://www.robotis.com/service/download.php?no=1974) and install it on your smart device.
 - For ios device, the app will be available on App Store in the near future. Please use PC before the app is released.
