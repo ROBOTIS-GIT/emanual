@@ -1,0 +1,5 @@
+<map id="robotis_manipulator::RobotisManipulator::sendMultipleJointActuatorValue" name="robotis_manipulator::RobotisManipulator::sendMultipleJointActuatorValue">
+<area shape="rect" id="node2" href="$classrobotis__manipulator_1_1_manipulator.html#a437ac5f137aa788c4db07690c185e9ba" title="getCoefficient " alt="" coords="233,5,420,47"/>
+<area shape="rect" id="node3" href="$classrobotis__manipulator_1_1_manipulator.html#a60db34ef6a62e0b15aa36f9b1571640d" title="getId " alt="" coords="259,71,394,112"/>
+<area shape="rect" id="node4" href="$classrobotis__manipulator_1_1_manipulator.html#aa740b17551040520851ec8dc1d619bfe" title="setJointValue " alt="" coords="235,136,419,177"/>
+</map>

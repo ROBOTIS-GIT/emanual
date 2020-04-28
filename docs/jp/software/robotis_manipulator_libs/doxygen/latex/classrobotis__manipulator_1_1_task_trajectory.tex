@@ -1,0 +1,367 @@
+\hypertarget{classrobotis__manipulator_1_1_task_trajectory}{}\section{robotis\+\_\+manipulator\+:\+:Task\+Trajectory Class Reference}
+\label{classrobotis__manipulator_1_1_task_trajectory}\index{robotis\+\_\+manipulator\+::\+Task\+Trajectory@{robotis\+\_\+manipulator\+::\+Task\+Trajectory}}
+
+
+The \hyperlink{classrobotis__manipulator_1_1_task_trajectory}{Task\+Trajectory} class.  
+
+
+
+
+{\ttfamily \#include $<$robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+h$>$}
+
+
+
+Collaboration diagram for robotis\+\_\+manipulator\+:\+:Task\+Trajectory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=269pt]{classrobotis__manipulator_1_1_task_trajectory__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrobotis__manipulator_1_1_task_trajectory_ab1cef75c638b80f579f960fad91bf3ba}{Task\+Trajectory} ()
+\item 
+virtual \hyperlink{classrobotis__manipulator_1_1_task_trajectory_a9746e3b18cce92661b766aca6b6d3add}{$\sim$\+Task\+Trajectory} ()
+\item 
+void \hyperlink{classrobotis__manipulator_1_1_task_trajectory_a29e0ef8260a659d2ddbda835777690bc}{make\+Task\+Trajectory} (double move\+\_\+time, \hyperlink{namespacerobotis__manipulator_a440e2d88ec85fdee394e540dc6024c3e}{Task\+Waypoint} start, \hyperlink{namespacerobotis__manipulator_a440e2d88ec85fdee394e540dc6024c3e}{Task\+Waypoint} goal)
+\begin{DoxyCompactList}\small\item\em make\+Task\+Trajectory \end{DoxyCompactList}\item 
+Eigen\+::\+Matrix\+Xd \hyperlink{classrobotis__manipulator_1_1_task_trajectory_ace7f92380218ee5b15f56ec500ae5337}{get\+Minimum\+Jerk\+Coefficient} ()
+\begin{DoxyCompactList}\small\item\em get\+Minimum\+Jerk\+Coefficient \end{DoxyCompactList}\item 
+\hyperlink{namespacerobotis__manipulator_a440e2d88ec85fdee394e540dc6024c3e}{Task\+Waypoint} \hyperlink{classrobotis__manipulator_1_1_task_trajectory_a10718a16244458b0240ec357acfa09bd}{get\+Task\+Waypoint} (double tick)
+\begin{DoxyCompactList}\small\item\em get\+Task\+Waypoint \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{classrobotis__manipulator_1_1_task_trajectory_a3e18bd8e5e8b327d15afd8831ba099f5}{coefficient\+\_\+size\+\_\+}
+\item 
+\hyperlink{classrobotis__manipulator_1_1_minimum_jerk}{Minimum\+Jerk} \hyperlink{classrobotis__manipulator_1_1_task_trajectory_aa616787d639765003bd054cc7c59f6d3}{minimum\+\_\+jerk\+\_\+trajectory\+\_\+generator\+\_\+}
+\item 
+Eigen\+::\+Matrix\+Xd \hyperlink{classrobotis__manipulator_1_1_task_trajectory_a19c6e0525c29db0b3bad7950baa74e42}{minimum\+\_\+jerk\+\_\+coefficient\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classrobotis__manipulator_1_1_task_trajectory}{Task\+Trajectory} class. 
+
+Definition at line 116 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{robotis\+\_\+manipulator\+::\+Task\+Trajectory@{robotis\+\_\+manipulator\+::\+Task\+Trajectory}!Task\+Trajectory@{Task\+Trajectory}}
+\index{Task\+Trajectory@{Task\+Trajectory}!robotis\+\_\+manipulator\+::\+Task\+Trajectory@{robotis\+\_\+manipulator\+::\+Task\+Trajectory}}
+\subsubsection[{\texorpdfstring{Task\+Trajectory()}{TaskTrajectory()}}]{\setlength{\rightskip}{0pt plus 5cm}Task\+Trajectory\+::\+Task\+Trajectory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrobotis__manipulator_1_1_task_trajectory_ab1cef75c638b80f579f960fad91bf3ba}{}\label{classrobotis__manipulator_1_1_task_trajectory_ab1cef75c638b80f579f960fad91bf3ba}
+
+
+Definition at line 132 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+cpp.
+
+
+\begin{DoxyCode}
+133 \{
+134   \hyperlink{classrobotis__manipulator_1_1_task_trajectory_a19c6e0525c29db0b3bad7950baa74e42}{minimum\_jerk\_coefficient\_} = Eigen::MatrixXd::Identity(6, 4);
+135 \}
+\end{DoxyCode}
+\index{robotis\+\_\+manipulator\+::\+Task\+Trajectory@{robotis\+\_\+manipulator\+::\+Task\+Trajectory}!````~Task\+Trajectory@{$\sim$\+Task\+Trajectory}}
+\index{````~Task\+Trajectory@{$\sim$\+Task\+Trajectory}!robotis\+\_\+manipulator\+::\+Task\+Trajectory@{robotis\+\_\+manipulator\+::\+Task\+Trajectory}}
+\subsubsection[{\texorpdfstring{$\sim$\+Task\+Trajectory()}{~TaskTrajectory()}}]{\setlength{\rightskip}{0pt plus 5cm}Task\+Trajectory\+::$\sim$\+Task\+Trajectory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classrobotis__manipulator_1_1_task_trajectory_a9746e3b18cce92661b766aca6b6d3add}{}\label{classrobotis__manipulator_1_1_task_trajectory_a9746e3b18cce92661b766aca6b6d3add}
+
+
+Definition at line 136 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+cpp.
+
+
+\begin{DoxyCode}
+136 \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{robotis\+\_\+manipulator\+::\+Task\+Trajectory@{robotis\+\_\+manipulator\+::\+Task\+Trajectory}!get\+Minimum\+Jerk\+Coefficient@{get\+Minimum\+Jerk\+Coefficient}}
+\index{get\+Minimum\+Jerk\+Coefficient@{get\+Minimum\+Jerk\+Coefficient}!robotis\+\_\+manipulator\+::\+Task\+Trajectory@{robotis\+\_\+manipulator\+::\+Task\+Trajectory}}
+\subsubsection[{\texorpdfstring{get\+Minimum\+Jerk\+Coefficient()}{getMinimumJerkCoefficient()}}]{\setlength{\rightskip}{0pt plus 5cm}Eigen\+::\+Matrix\+Xd Task\+Trajectory\+::get\+Minimum\+Jerk\+Coefficient (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrobotis__manipulator_1_1_task_trajectory_ace7f92380218ee5b15f56ec500ae5337}{}\label{classrobotis__manipulator_1_1_task_trajectory_ace7f92380218ee5b15f56ec500ae5337}
+
+
+get\+Minimum\+Jerk\+Coefficient 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 267 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+cpp.
+
+
+\begin{DoxyCode}
+268 \{
+269   \textcolor{keywordflow}{return} \hyperlink{classrobotis__manipulator_1_1_task_trajectory_a19c6e0525c29db0b3bad7950baa74e42}{minimum\_jerk\_coefficient\_};
+270 \}
+\end{DoxyCode}
+\index{robotis\+\_\+manipulator\+::\+Task\+Trajectory@{robotis\+\_\+manipulator\+::\+Task\+Trajectory}!get\+Task\+Waypoint@{get\+Task\+Waypoint}}
+\index{get\+Task\+Waypoint@{get\+Task\+Waypoint}!robotis\+\_\+manipulator\+::\+Task\+Trajectory@{robotis\+\_\+manipulator\+::\+Task\+Trajectory}}
+\subsubsection[{\texorpdfstring{get\+Task\+Waypoint(double tick)}{getTaskWaypoint(double tick)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Task\+Waypoint} Task\+Trajectory\+::get\+Task\+Waypoint (
+\begin{DoxyParamCaption}
+\item[{double}]{tick}
+\end{DoxyParamCaption}
+)}\hypertarget{classrobotis__manipulator_1_1_task_trajectory_a10718a16244458b0240ec357acfa09bd}{}\label{classrobotis__manipulator_1_1_task_trajectory_a10718a16244458b0240ec357acfa09bd}
+
+
+get\+Task\+Waypoint 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tick} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 209 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+cpp.
+
+
+\begin{DoxyCode}
+210 \{
+211   std::vector<Point> result\_point;
+212   \textcolor{keywordflow}{for} (uint8\_t index = 0; index < \hyperlink{classrobotis__manipulator_1_1_task_trajectory_a3e18bd8e5e8b327d15afd8831ba099f5}{coefficient\_size\_}; index++)
+213   \{
+214     \hyperlink{structrobotis__manipulator_1_1_point}{Point} single\_task\_way\_point;
+215 
+216     single\_task\_way\_point.\hyperlink{structrobotis__manipulator_1_1_point_a0f122386b502d9b316bdead542ed2145}{position} = \hyperlink{classrobotis__manipulator_1_1_task_trajectory_a19c6e0525c29db0b3bad7950baa74e42}{minimum\_jerk\_coefficient\_}(0, index) +
+217              \hyperlink{classrobotis__manipulator_1_1_task_trajectory_a19c6e0525c29db0b3bad7950baa74e42}{minimum\_jerk\_coefficient\_}(1, index) * pow(tick, 1) +
+218              \hyperlink{classrobotis__manipulator_1_1_task_trajectory_a19c6e0525c29db0b3bad7950baa74e42}{minimum\_jerk\_coefficient\_}(2, index) * pow(tick, 2) +
+219              \hyperlink{classrobotis__manipulator_1_1_task_trajectory_a19c6e0525c29db0b3bad7950baa74e42}{minimum\_jerk\_coefficient\_}(3, index) * pow(tick, 3) +
+220              \hyperlink{classrobotis__manipulator_1_1_task_trajectory_a19c6e0525c29db0b3bad7950baa74e42}{minimum\_jerk\_coefficient\_}(4, index) * pow(tick, 4) +
+221              \hyperlink{classrobotis__manipulator_1_1_task_trajectory_a19c6e0525c29db0b3bad7950baa74e42}{minimum\_jerk\_coefficient\_}(5, index) * pow(tick, 5);
+222 
+223     single\_task\_way\_point.\hyperlink{structrobotis__manipulator_1_1_point_a4eaec95fac0c755eb0aa704b36ebe97b}{velocity} = \hyperlink{classrobotis__manipulator_1_1_task_trajectory_a19c6e0525c29db0b3bad7950baa74e42}{minimum\_jerk\_coefficient\_}(1, index) +
+224              2 * \hyperlink{classrobotis__manipulator_1_1_task_trajectory_a19c6e0525c29db0b3bad7950baa74e42}{minimum\_jerk\_coefficient\_}(2, index) * pow(tick, 1) +
+225              3 * \hyperlink{classrobotis__manipulator_1_1_task_trajectory_a19c6e0525c29db0b3bad7950baa74e42}{minimum\_jerk\_coefficient\_}(3, index) * pow(tick, 2) +
+226              4 * \hyperlink{classrobotis__manipulator_1_1_task_trajectory_a19c6e0525c29db0b3bad7950baa74e42}{minimum\_jerk\_coefficient\_}(4, index) * pow(tick, 3) +
+227              5 * \hyperlink{classrobotis__manipulator_1_1_task_trajectory_a19c6e0525c29db0b3bad7950baa74e42}{minimum\_jerk\_coefficient\_}(5, index) * pow(tick, 4);
+228 
+229     single\_task\_way\_point.\hyperlink{structrobotis__manipulator_1_1_point_adb49f1fbcc0eaa7f530c54fdf0ede836}{acceleration} = 2 * 
+      \hyperlink{classrobotis__manipulator_1_1_task_trajectory_a19c6e0525c29db0b3bad7950baa74e42}{minimum\_jerk\_coefficient\_}(2, index) +
+230              6 * \hyperlink{classrobotis__manipulator_1_1_task_trajectory_a19c6e0525c29db0b3bad7950baa74e42}{minimum\_jerk\_coefficient\_}(3, index) * pow(tick, 1) +
+231              12 * \hyperlink{classrobotis__manipulator_1_1_task_trajectory_a19c6e0525c29db0b3bad7950baa74e42}{minimum\_jerk\_coefficient\_}(4, index) * pow(tick, 2) +
+232              20 * \hyperlink{classrobotis__manipulator_1_1_task_trajectory_a19c6e0525c29db0b3bad7950baa74e42}{minimum\_jerk\_coefficient\_}(5, index) * pow(tick, 3);
+233 
+234     single\_task\_way\_point.\hyperlink{structrobotis__manipulator_1_1_point_add1a7019fc87cc2ac9bdf033372a9bb6}{effort} = 0.0;
+235 
+236     result\_point.push\_back(single\_task\_way\_point);
+237   \}
+238 
+239   \hyperlink{structrobotis__manipulator_1_1_pose}{TaskWaypoint} task\_way\_point;
+241   \textcolor{keywordflow}{for}(uint8\_t i = 0; i < 3; i++)        \textcolor{comment}{//x ,y ,z}
+242   \{
+243     task\_way\_point.\hyperlink{structrobotis__manipulator_1_1_pose_a7215a37d50e62643f1523d3fa40a36e9}{kinematic}.\hyperlink{structrobotis__manipulator_1_1_kinematic_pose_a8700e7ae2388242cf540e884d52fd97a}{position}[i] = result\_point.at(i).position;
+244     task\_way\_point.\hyperlink{structrobotis__manipulator_1_1_pose_a8accf10d21933e07ade2728fcccf4ae6}{dynamic}.\hyperlink{structrobotis__manipulator_1_1_dynamic_pose_a45f314d8e2d3f78a4bc9c2aa72f0badc}{linear}.\hyperlink{structrobotis__manipulator_1_1_dynamicvector_a6bbccf8316887a8da3cd6aa065f3beac}{velocity}[i] = result\_point.at(i).velocity;
+245     task\_way\_point.\hyperlink{structrobotis__manipulator_1_1_pose_a8accf10d21933e07ade2728fcccf4ae6}{dynamic}.\hyperlink{structrobotis__manipulator_1_1_dynamic_pose_a45f314d8e2d3f78a4bc9c2aa72f0badc}{linear}.\hyperlink{structrobotis__manipulator_1_1_dynamicvector_afc83eba2d67af4c23150a08824f0f01e}{acceleration}[i] = result\_point.at(i).
+      acceleration;
+246   \}
+248 
+250   Eigen::Vector3d rpy\_orientation;
+251   rpy\_orientation << result\_point.at(3).position, result\_point.at(4).position, result\_point.at(5).position;
+252   task\_way\_point.\hyperlink{structrobotis__manipulator_1_1_pose_a7215a37d50e62643f1523d3fa40a36e9}{kinematic}.\hyperlink{structrobotis__manipulator_1_1_kinematic_pose_a0506da3cc344d21656fdd1befdd7fa27}{orientation} = 
+      \hyperlink{namespacerobotis__manipulator_1_1math_a4bbc795e8c06dd0472ed25864f6ec886}{math::convertRPYToRotationMatrix}(result\_point.at(3).position,   \textcolor{comment}{//roll}
+253                                                                        result\_point.at(4).position,   \textcolor{comment}{//
+      pitch}
+254                                                                        result\_point.at(5).position);   \textcolor{comment}{//
+      yaw}
+255 
+256   Eigen::Vector3d rpy\_velocity;
+257   rpy\_velocity << result\_point.at(3).velocity, result\_point.at(4).velocity, result\_point.at(5).velocity;
+258   task\_way\_point.\hyperlink{structrobotis__manipulator_1_1_pose_a8accf10d21933e07ade2728fcccf4ae6}{dynamic}.\hyperlink{structrobotis__manipulator_1_1_dynamic_pose_a424459b0d1108f1e65594f5d193cbae6}{angular}.\hyperlink{structrobotis__manipulator_1_1_dynamicvector_a6bbccf8316887a8da3cd6aa065f3beac}{velocity} = 
+      \hyperlink{namespacerobotis__manipulator_1_1math_a73d50f3962eeac18f464f879e6a0c8fc}{math::convertRPYVelocityToOmega}(rpy\_orientation, rpy\_velocity);
+259 
+260   Eigen::Vector3d rpy\_acceleration;
+261   rpy\_acceleration << result\_point.at(3).acceleration, result\_point.at(4).acceleration, result\_point.at(5).
+      acceleration;
+262   task\_way\_point.\hyperlink{structrobotis__manipulator_1_1_pose_a8accf10d21933e07ade2728fcccf4ae6}{dynamic}.\hyperlink{structrobotis__manipulator_1_1_dynamic_pose_a424459b0d1108f1e65594f5d193cbae6}{angular}.\hyperlink{structrobotis__manipulator_1_1_dynamicvector_afc83eba2d67af4c23150a08824f0f01e}{acceleration} = 
+      \hyperlink{namespacerobotis__manipulator_1_1math_a752d1631596538515894f09f210eb17b}{math::convertRPYAccelerationToOmegaDot}(rpy\_orientation, rpy\_velocity,
+       rpy\_acceleration);
+263 
+264   \textcolor{keywordflow}{return} task\_way\_point;
+265 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrobotis__manipulator_1_1_task_trajectory_a10718a16244458b0240ec357acfa09bd_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrobotis__manipulator_1_1_task_trajectory_a10718a16244458b0240ec357acfa09bd_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{robotis\+\_\+manipulator\+::\+Task\+Trajectory@{robotis\+\_\+manipulator\+::\+Task\+Trajectory}!make\+Task\+Trajectory@{make\+Task\+Trajectory}}
+\index{make\+Task\+Trajectory@{make\+Task\+Trajectory}!robotis\+\_\+manipulator\+::\+Task\+Trajectory@{robotis\+\_\+manipulator\+::\+Task\+Trajectory}}
+\subsubsection[{\texorpdfstring{make\+Task\+Trajectory(double move\+\_\+time, Task\+Waypoint start, Task\+Waypoint goal)}{makeTaskTrajectory(double move_time, TaskWaypoint start, TaskWaypoint goal)}}]{\setlength{\rightskip}{0pt plus 5cm}void Task\+Trajectory\+::make\+Task\+Trajectory (
+\begin{DoxyParamCaption}
+\item[{double}]{move\+\_\+time, }
+\item[{{\bf Task\+Waypoint}}]{start, }
+\item[{{\bf Task\+Waypoint}}]{goal}
+\end{DoxyParamCaption}
+)}\hypertarget{classrobotis__manipulator_1_1_task_trajectory_a29e0ef8260a659d2ddbda835777690bc}{}\label{classrobotis__manipulator_1_1_task_trajectory_a29e0ef8260a659d2ddbda835777690bc}
+
+
+make\+Task\+Trajectory 
+
+
+\begin{DoxyParams}{Parameters}
+{\em move\+\_\+time} & \\
+\hline
+{\em start} & \\
+\hline
+{\em goal} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 138 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+cpp.
+
+
+\begin{DoxyCode}
+140 \{
+141   std::vector<Point> start\_way\_point;
+142   std::vector<Point> goal\_way\_point;
+143 
+145   \textcolor{keywordflow}{for}(uint8\_t i = 0; i < 3; i++)      \textcolor{comment}{//x, y, z}
+146   \{
+147     \hyperlink{structrobotis__manipulator_1_1_point}{Point} position\_temp;
+148     position\_temp.\hyperlink{structrobotis__manipulator_1_1_point_a0f122386b502d9b316bdead542ed2145}{position} = start.\hyperlink{structrobotis__manipulator_1_1_pose_a7215a37d50e62643f1523d3fa40a36e9}{kinematic}.\hyperlink{structrobotis__manipulator_1_1_kinematic_pose_a8700e7ae2388242cf540e884d52fd97a}{position}[i];
+149     position\_temp.\hyperlink{structrobotis__manipulator_1_1_point_a4eaec95fac0c755eb0aa704b36ebe97b}{velocity} = start.\hyperlink{structrobotis__manipulator_1_1_pose_a8accf10d21933e07ade2728fcccf4ae6}{dynamic}.\hyperlink{structrobotis__manipulator_1_1_dynamic_pose_a45f314d8e2d3f78a4bc9c2aa72f0badc}{linear}.\hyperlink{structrobotis__manipulator_1_1_dynamicvector_a6bbccf8316887a8da3cd6aa065f3beac}{velocity}[i];
+150     position\_temp.\hyperlink{structrobotis__manipulator_1_1_point_adb49f1fbcc0eaa7f530c54fdf0ede836}{acceleration} = start.\hyperlink{structrobotis__manipulator_1_1_pose_a8accf10d21933e07ade2728fcccf4ae6}{dynamic}.\hyperlink{structrobotis__manipulator_1_1_dynamic_pose_a45f314d8e2d3f78a4bc9c2aa72f0badc}{linear}.
+      \hyperlink{structrobotis__manipulator_1_1_dynamicvector_afc83eba2d67af4c23150a08824f0f01e}{acceleration}[i];
+151     position\_temp.\hyperlink{structrobotis__manipulator_1_1_point_add1a7019fc87cc2ac9bdf033372a9bb6}{effort} = 0.0;
+152     start\_way\_point.push\_back(position\_temp);
+153 
+154     position\_temp.\hyperlink{structrobotis__manipulator_1_1_point_a0f122386b502d9b316bdead542ed2145}{position} = goal.\hyperlink{structrobotis__manipulator_1_1_pose_a7215a37d50e62643f1523d3fa40a36e9}{kinematic}.\hyperlink{structrobotis__manipulator_1_1_kinematic_pose_a8700e7ae2388242cf540e884d52fd97a}{position}[i];
+155     position\_temp.\hyperlink{structrobotis__manipulator_1_1_point_a4eaec95fac0c755eb0aa704b36ebe97b}{velocity} = goal.\hyperlink{structrobotis__manipulator_1_1_pose_a8accf10d21933e07ade2728fcccf4ae6}{dynamic}.\hyperlink{structrobotis__manipulator_1_1_dynamic_pose_a45f314d8e2d3f78a4bc9c2aa72f0badc}{linear}.\hyperlink{structrobotis__manipulator_1_1_dynamicvector_a6bbccf8316887a8da3cd6aa065f3beac}{velocity}[i];
+156     position\_temp.\hyperlink{structrobotis__manipulator_1_1_point_adb49f1fbcc0eaa7f530c54fdf0ede836}{acceleration} = goal.\hyperlink{structrobotis__manipulator_1_1_pose_a8accf10d21933e07ade2728fcccf4ae6}{dynamic}.\hyperlink{structrobotis__manipulator_1_1_dynamic_pose_a45f314d8e2d3f78a4bc9c2aa72f0badc}{linear}.
+      \hyperlink{structrobotis__manipulator_1_1_dynamicvector_afc83eba2d67af4c23150a08824f0f01e}{acceleration}[i];
+157     position\_temp.\hyperlink{structrobotis__manipulator_1_1_point_add1a7019fc87cc2ac9bdf033372a9bb6}{effort} = 0.0;
+158     goal\_way\_point.push\_back(position\_temp);
+159   \}
+161 
+163 
+164   Eigen::Vector3d start\_orientation\_rpy;
+165   Eigen::Vector3d start\_ang\_vel\_rpy;
+166   Eigen::Vector3d start\_ang\_acc\_rpy;
+167 
+168   start\_orientation\_rpy = \hyperlink{namespacerobotis__manipulator_1_1math_adaa070908c6328c2459be5eaf64af68f}{math::convertRotationMatrixToRPYVector}(
+      start.\hyperlink{structrobotis__manipulator_1_1_pose_a7215a37d50e62643f1523d3fa40a36e9}{kinematic}.\hyperlink{structrobotis__manipulator_1_1_kinematic_pose_a0506da3cc344d21656fdd1befdd7fa27}{orientation});
+169   start\_ang\_vel\_rpy = \hyperlink{namespacerobotis__manipulator_1_1math_ae69e1aacc48ed72442eb4dc82e280be0}{math::convertOmegaToRPYVelocity}(start\_orientation\_rpy,
+       start.\hyperlink{structrobotis__manipulator_1_1_pose_a8accf10d21933e07ade2728fcccf4ae6}{dynamic}.\hyperlink{structrobotis__manipulator_1_1_dynamic_pose_a424459b0d1108f1e65594f5d193cbae6}{angular}.\hyperlink{structrobotis__manipulator_1_1_dynamicvector_a6bbccf8316887a8da3cd6aa065f3beac}{velocity});
+170   start\_ang\_acc\_rpy = \hyperlink{namespacerobotis__manipulator_1_1math_aabd3cc7c059a6372e917bc98a3e5c1dd}{math::convertOmegaDotToRPYAcceleration}(
+      start\_orientation\_rpy, start\_ang\_vel\_rpy, start.\hyperlink{structrobotis__manipulator_1_1_pose_a8accf10d21933e07ade2728fcccf4ae6}{dynamic}.\hyperlink{structrobotis__manipulator_1_1_dynamic_pose_a424459b0d1108f1e65594f5d193cbae6}{angular}.
+      \hyperlink{structrobotis__manipulator_1_1_dynamicvector_afc83eba2d67af4c23150a08824f0f01e}{acceleration});
+171 
+172   Eigen::Vector3d goal\_orientation\_rpy;
+173   Eigen::Vector3d goal\_ang\_vel\_rpy;
+174   Eigen::Vector3d goal\_ang\_acc\_rpy;
+175 
+176   goal\_orientation\_rpy = \hyperlink{namespacerobotis__manipulator_1_1math_adaa070908c6328c2459be5eaf64af68f}{math::convertRotationMatrixToRPYVector}(goal.
+      \hyperlink{structrobotis__manipulator_1_1_pose_a7215a37d50e62643f1523d3fa40a36e9}{kinematic}.\hyperlink{structrobotis__manipulator_1_1_kinematic_pose_a0506da3cc344d21656fdd1befdd7fa27}{orientation});
+177   goal\_ang\_vel\_rpy = \hyperlink{namespacerobotis__manipulator_1_1math_ae69e1aacc48ed72442eb4dc82e280be0}{math::convertOmegaToRPYVelocity}(goal\_orientation\_rpy, 
+      goal.\hyperlink{structrobotis__manipulator_1_1_pose_a8accf10d21933e07ade2728fcccf4ae6}{dynamic}.\hyperlink{structrobotis__manipulator_1_1_dynamic_pose_a424459b0d1108f1e65594f5d193cbae6}{angular}.\hyperlink{structrobotis__manipulator_1_1_dynamicvector_a6bbccf8316887a8da3cd6aa065f3beac}{velocity});
+178   start\_ang\_acc\_rpy = \hyperlink{namespacerobotis__manipulator_1_1math_aabd3cc7c059a6372e917bc98a3e5c1dd}{math::convertOmegaDotToRPYAcceleration}(
+      goal\_orientation\_rpy, goal\_ang\_vel\_rpy, goal.\hyperlink{structrobotis__manipulator_1_1_pose_a8accf10d21933e07ade2728fcccf4ae6}{dynamic}.\hyperlink{structrobotis__manipulator_1_1_dynamic_pose_a424459b0d1108f1e65594f5d193cbae6}{angular}.\hyperlink{structrobotis__manipulator_1_1_dynamicvector_afc83eba2d67af4c23150a08824f0f01e}{acceleration});
+179 
+180   \textcolor{keywordflow}{for}(uint8\_t i = 0; i < 3; i++)    \textcolor{comment}{//roll, pitch, yaw}
+181   \{
+182     \hyperlink{structrobotis__manipulator_1_1_point}{Point} orientation\_temp;
+183     orientation\_temp.\hyperlink{structrobotis__manipulator_1_1_point_a0f122386b502d9b316bdead542ed2145}{position} = start\_orientation\_rpy[i];
+184     orientation\_temp.\hyperlink{structrobotis__manipulator_1_1_point_a4eaec95fac0c755eb0aa704b36ebe97b}{velocity} = start\_ang\_vel\_rpy[i];
+185     orientation\_temp.\hyperlink{structrobotis__manipulator_1_1_point_adb49f1fbcc0eaa7f530c54fdf0ede836}{acceleration} = start\_ang\_acc\_rpy[i];
+186     orientation\_temp.\hyperlink{structrobotis__manipulator_1_1_point_add1a7019fc87cc2ac9bdf033372a9bb6}{effort} = 0.0;
+187     start\_way\_point.push\_back(orientation\_temp);
+188 
+189     orientation\_temp.\hyperlink{structrobotis__manipulator_1_1_point_a0f122386b502d9b316bdead542ed2145}{position} = goal\_orientation\_rpy[i];
+190     orientation\_temp.\hyperlink{structrobotis__manipulator_1_1_point_a4eaec95fac0c755eb0aa704b36ebe97b}{velocity} = goal\_ang\_vel\_rpy[i];
+191     orientation\_temp.\hyperlink{structrobotis__manipulator_1_1_point_adb49f1fbcc0eaa7f530c54fdf0ede836}{acceleration} = goal\_ang\_acc\_rpy[i];
+192     orientation\_temp.\hyperlink{structrobotis__manipulator_1_1_point_add1a7019fc87cc2ac9bdf033372a9bb6}{effort} = 0.0;
+193     goal\_way\_point.push\_back(orientation\_temp);
+194   \}
+196 
+197   \hyperlink{classrobotis__manipulator_1_1_task_trajectory_a3e18bd8e5e8b327d15afd8831ba099f5}{coefficient\_size\_} = start\_way\_point.size();
+198   \hyperlink{classrobotis__manipulator_1_1_task_trajectory_a19c6e0525c29db0b3bad7950baa74e42}{minimum\_jerk\_coefficient\_}.resize(6,\hyperlink{classrobotis__manipulator_1_1_task_trajectory_a3e18bd8e5e8b327d15afd8831ba099f5}{coefficient\_size\_});
+199   \textcolor{keywordflow}{for} (uint8\_t index = 0; index < \hyperlink{classrobotis__manipulator_1_1_task_trajectory_a3e18bd8e5e8b327d15afd8831ba099f5}{coefficient\_size\_}; index++)
+200   \{
+201     \hyperlink{classrobotis__manipulator_1_1_task_trajectory_aa616787d639765003bd054cc7c59f6d3}{minimum\_jerk\_trajectory\_generator\_}.
+      \hyperlink{classrobotis__manipulator_1_1_minimum_jerk_afd29204e588525a2688a74d2a9656354}{calcCoefficient}(start\_way\_point.at(index),
+202                                     goal\_way\_point.at(index),
+203                                     move\_time);
+204 
+205     \hyperlink{classrobotis__manipulator_1_1_task_trajectory_a19c6e0525c29db0b3bad7950baa74e42}{minimum\_jerk\_coefficient\_}.col(index) = 
+      \hyperlink{classrobotis__manipulator_1_1_task_trajectory_aa616787d639765003bd054cc7c59f6d3}{minimum\_jerk\_trajectory\_generator\_}.
+      \hyperlink{classrobotis__manipulator_1_1_minimum_jerk_a1610599c85567422e492e0893e02cc34}{getCoefficient}();
+206   \}
+207 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrobotis__manipulator_1_1_task_trajectory_a29e0ef8260a659d2ddbda835777690bc_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{robotis\+\_\+manipulator\+::\+Task\+Trajectory@{robotis\+\_\+manipulator\+::\+Task\+Trajectory}!coefficient\+\_\+size\+\_\+@{coefficient\+\_\+size\+\_\+}}
+\index{coefficient\+\_\+size\+\_\+@{coefficient\+\_\+size\+\_\+}!robotis\+\_\+manipulator\+::\+Task\+Trajectory@{robotis\+\_\+manipulator\+::\+Task\+Trajectory}}
+\subsubsection[{\texorpdfstring{coefficient\+\_\+size\+\_\+}{coefficient_size_}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t robotis\+\_\+manipulator\+::\+Task\+Trajectory\+::coefficient\+\_\+size\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrobotis__manipulator_1_1_task_trajectory_a3e18bd8e5e8b327d15afd8831ba099f5}{}\label{classrobotis__manipulator_1_1_task_trajectory_a3e18bd8e5e8b327d15afd8831ba099f5}
+
+
+Definition at line 119 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+h.
+
+\index{robotis\+\_\+manipulator\+::\+Task\+Trajectory@{robotis\+\_\+manipulator\+::\+Task\+Trajectory}!minimum\+\_\+jerk\+\_\+coefficient\+\_\+@{minimum\+\_\+jerk\+\_\+coefficient\+\_\+}}
+\index{minimum\+\_\+jerk\+\_\+coefficient\+\_\+@{minimum\+\_\+jerk\+\_\+coefficient\+\_\+}!robotis\+\_\+manipulator\+::\+Task\+Trajectory@{robotis\+\_\+manipulator\+::\+Task\+Trajectory}}
+\subsubsection[{\texorpdfstring{minimum\+\_\+jerk\+\_\+coefficient\+\_\+}{minimum_jerk_coefficient_}}]{\setlength{\rightskip}{0pt plus 5cm}Eigen\+::\+Matrix\+Xd robotis\+\_\+manipulator\+::\+Task\+Trajectory\+::minimum\+\_\+jerk\+\_\+coefficient\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrobotis__manipulator_1_1_task_trajectory_a19c6e0525c29db0b3bad7950baa74e42}{}\label{classrobotis__manipulator_1_1_task_trajectory_a19c6e0525c29db0b3bad7950baa74e42}
+
+
+Definition at line 121 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+h.
+
+\index{robotis\+\_\+manipulator\+::\+Task\+Trajectory@{robotis\+\_\+manipulator\+::\+Task\+Trajectory}!minimum\+\_\+jerk\+\_\+trajectory\+\_\+generator\+\_\+@{minimum\+\_\+jerk\+\_\+trajectory\+\_\+generator\+\_\+}}
+\index{minimum\+\_\+jerk\+\_\+trajectory\+\_\+generator\+\_\+@{minimum\+\_\+jerk\+\_\+trajectory\+\_\+generator\+\_\+}!robotis\+\_\+manipulator\+::\+Task\+Trajectory@{robotis\+\_\+manipulator\+::\+Task\+Trajectory}}
+\subsubsection[{\texorpdfstring{minimum\+\_\+jerk\+\_\+trajectory\+\_\+generator\+\_\+}{minimum_jerk_trajectory_generator_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Minimum\+Jerk} robotis\+\_\+manipulator\+::\+Task\+Trajectory\+::minimum\+\_\+jerk\+\_\+trajectory\+\_\+generator\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrobotis__manipulator_1_1_task_trajectory_aa616787d639765003bd054cc7c59f6d3}{}\label{classrobotis__manipulator_1_1_task_trajectory_aa616787d639765003bd054cc7c59f6d3}
+
+
+Definition at line 120 of file robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/robotis\+\_\+manipulator/\hyperlink{robotis__manipulator__trajectory__generator_8h}{robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+h}\item 
+src/robotis\+\_\+manipulator/\hyperlink{robotis__manipulator__trajectory__generator_8cpp}{robotis\+\_\+manipulator\+\_\+trajectory\+\_\+generator.\+cpp}\end{DoxyCompactItemize}
