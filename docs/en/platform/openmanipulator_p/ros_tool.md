@@ -1,11 +1,11 @@
 ---
 layout: archive
 lang: en
-ref: openmanipulator_p_ros_tool_applications
+ref: openmanipulator_p_ros_tools
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/openmanipulator_p/ros_tool_applications/
+permalink: /docs/en/platform/openmanipulator_p/ros_tools/
 sidebar:
   title: "OpenMANIPULATOR-P"
   nav: "openmanipulator_p"
@@ -15,7 +15,7 @@ page_number: 8
 
 <div style="counter-reset: h1 7"></div>
 
-# [[ROS] Tool Applications](#ros-tool-application)
+# [[ROS] Tools](#ros-tools)
 
 ## [RH-P12-RN Gripper](#rh-p12-rn-gripper)
 

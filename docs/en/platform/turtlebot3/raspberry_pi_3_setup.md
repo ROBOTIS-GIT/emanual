@@ -93,8 +93,6 @@ $ sudo ddrescue -D --force ubuntu-mate-16.04.2-desktop-armhf-raspberry-pi.img /d
 **NOTE**: This instruction takes about 1 hours to install ROS and related packages for TurtleBot3. Elapsed time may vary depending on network environment.
 {: .notice--info}
 
-**[TurtleBot]** The following script will allow you to simplify the ROS installation procedure. Run the following command in a terminal window on TurtleBot PC. The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`-`Alt`-`T`. After install ROS, please reboot TurtleBot PC.
-
 ``` bash
 $ sudo apt-get update
 $ sudo apt-get upgrade

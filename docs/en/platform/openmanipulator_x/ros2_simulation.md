@@ -10,12 +10,12 @@ sidebar:
   title: "OpenMANIPULATOR-X"
   nav: "openmanipulator_x"
 product_group: openmanipulator_x
-page_number: 13
+page_number: 15
 ---
 
-<div style="counter-reset: h1 12"></div>
+<div style="counter-reset: h1 14"></div>
 
-# [[ROS 2] Simulation](#ros-simulation)
+# [[ROS 2] Simulation](#ros-2-simulation)
 
 `[ROS 2] Simulation` for `ROS 2 Dashing Diademata` will be released soon!
 {: .notice}
