@@ -278,11 +278,14 @@ CM-550에 내장된 BLE 슬레이브 모듈의 신호의 세기가 약하거나 
 
 아래의 표에서 필요한 조립서를 다운로드 받으세요.
 
-|   모델   | 다운로드                                                                                              |
-|:--------:|:------------------------------------------------------------------------------------------------------|
-|  MAX-E2  | [ROBOTIS_ENGINEER_KIT2_MAX-E2_KR_ver2014.pdf](https://www.robotis.com/service/download.php?no=1924)   |
-| Commando | [ROBOTIS_ENGINEER_KIT2_Commando_KR_ver2014.pdf](https://www.robotis.com/service/download.php?no=1925) |
-|  Scorpi  | [ROBOTIS_ENGINEER_KIT2_Scorpi_KR_ver2014.pdf](https://www.robotis.com/service/download.php?no=1926)   |
+|        모델         | 다운로드                                                                                              |
+|:-------------------:|:------------------------------------------------------------------------------------------------------|
+|       MAX-E2        | [ROBOTIS_ENGINEER_KIT2_MAX-E2_KR_ver2014.pdf](https://www.robotis.com/service/download.php?no=1924)   |
+|      Commando       | [ROBOTIS_ENGINEER_KIT2_Commando_KR_ver2014.pdf](https://www.robotis.com/service/download.php?no=1925) |
+|       Scorpi        | [ROBOTIS_ENGINEER_KIT2_Scorpi_KR_ver2014.pdf](https://www.robotis.com/service/download.php?no=1926)   |
+| AutoBot (추가 예제) | [ ROBOTIS_ENGINEER KIT2_Autobot_KR_ver2014.pdf](https://www.robotis.com/service/download.php?no=1927) |
+| Strider (추가 예제) | [ ROBOTIS_ENGINEER KIT2_Strider_KR_ver2014.pdf](https://www.robotis.com/service/download.php?no=1928) |
+
 
 ### [Commando Marker 다운로드 받기](#commando-marker-다운로드-받기)
 
