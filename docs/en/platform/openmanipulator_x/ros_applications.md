@@ -17,7 +17,7 @@ page_number: 11
 
 # [[ROS] Applications](#ros-applications)
 
-## [Master Slave](#master-slave)
+## [Master and Slave](#master-and-slave)
 
 In this example, if the user is holding the master OpenMANIPULATOR, the slave OpenMANIPULATOR-X moves like master robot. Recording mode allows you to save the trajectory as you move the master OpenMANIPULATOR-X and play it back to the slave OpenMANIPULATOR.
 
@@ -35,11 +35,11 @@ Master OpenMANIPULATOR-X is a robot that is controlled by the user. This is easy
 
 |  Name   | DYNAMIXEL ID |
 |:-------:|:------------:|
-| Joint 1 |      1       |
-| Joint 2 |      2       |
-| Joint 3 |      3       |
-| Joint 4 |      4       |
-| Gripper |      5       |
+| Joint 1 |      21       |
+| Joint 2 |      22       |
+| Joint 3 |      23       |
+| Joint 4 |      24       |
+| Gripper |      25       |
 
 #### [Slave OpenMANIPULATOR-X](#slave-openmanipulators-x)
 Slave OpenMANIPULATOR-X moves synchronously with Master OpenMANIPULATOR. DYNAMIXEL of slave OpenMANIPULATOR-X sets the ID as below and the baudrate as 1000000bps. This is the same as the default OpenMANIPULATOR-X setting.
@@ -146,11 +146,11 @@ NODES
 ROS_MASTER_URI=http://localhost:11311
 
 process[open_manipulator/open_manipulator_master-1]: started with pid [32026]
-Joint Dynamixel ID : 1, Model Name : XM430-W350
-Joint Dynamixel ID : 2, Model Name : XM430-W350
-Joint Dynamixel ID : 3, Model Name : XM430-W350
-Joint Dynamixel ID : 4, Model Name : XM430-W350
-Gripper Dynamixel ID : 5, Model Name :XM430-W350
+Joint Dynamixel ID : 21, Model Name : XM430-W350
+Joint Dynamixel ID : 22, Model Name : XM430-W350
+Joint Dynamixel ID : 23, Model Name : XM430-W350
+Joint Dynamixel ID : 24, Model Name : XM430-W350
+Gripper Dynamixel ID : 25, Model Name :XM430-W350
 ```
 
 So, you can see the following message in the terminal window. You can check the current control mode and robot status(joint angle, tool position).

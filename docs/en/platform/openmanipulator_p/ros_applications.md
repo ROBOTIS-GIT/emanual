@@ -24,22 +24,22 @@ In this example, if the user is holding the master OpenMANIPULATOR, the slave Op
 ### [Setup OpenMANIPULATOR-P](#setup-openmanipulator-p)
 Since you need to control two OpenManipulators on one PC, use two U2D2s and two OpenManipulators to connect as shown below.
 
-![](/assets/images/platform/openmanipulator_x/OpenManipulator_master_slave_connection.png)
+![](/assets/images/platform/openmanipulator_p/OpenManipulator-P_master_slave_connection.png)
 
-![](/assets/images/platform/openmanipulator_x/OpenManipulator_master_slave.png)
+![](/assets/images/platform/openmanipulator_x/OpenManipulator_P_master_slave.png)
 
 #### [Master OpenMANIPULATOR](#master-openmanipulator)
 Master OpenMANIPULATOR-P is a robot that is controlled by the user. This is easy to move because no torque is applied to DYNAMIXEL. DYNAMIXEL of master OpenMANIPULATOR-P sets the ID as below and the baudrate as 1000000bps.
 
 |  Name   | DYNAMIXEL ID |
 |:-------:|:------------:|
-| Joint 1 |      1      |
-| Joint 2 |      2      |
-| Joint 3 |      3      |
-| Joint 4 |      4      |
-| Joint 5 |      5      |
-| Joint 6 |      6      |
-| Gripper |      7      |
+| Joint 1 |      21      |
+| Joint 2 |      22      |
+| Joint 3 |      23      |
+| Joint 4 |      24      |
+| Joint 5 |      25      |
+| Joint 6 |      26      |
+| Gripper |      27      |
 
 #### [Slave OpenMANIPULATOR](#slave-openmanipulator)
 Slave OpenMANIPULATOR-P moves synchronously with Master OpenMANIPULATOR. DYNAMIXEL of slave OpenMANIPULATOR-P sets the ID as below and the baudrate as 1000000bps. This is the same as the default OpenMANIPULATOR-P setting.
@@ -109,11 +109,11 @@ NODES
 ROS_MASTER_URI=http://localhost:11311
 
 process[open_manipulator-1]: started with pid [23452]
-Joint Dynamixel ID : 11, Model Name : XM430-W350
-Joint Dynamixel ID : 12, Model Name : XM430-W350
-Joint Dynamixel ID : 13, Model Name : XM430-W350
-Joint Dynamixel ID : 14, Model Name : XM430-W350
-Gripper Dynamixel ID : 15, Model Name :XM430-W350
+Joint Dynamixel ID : 21, Model Name : XM430-W350
+Joint Dynamixel ID : 22, Model Name : XM430-W350
+Joint Dynamixel ID : 23, Model Name : XM430-W350
+Joint Dynamixel ID : 24, Model Name : XM430-W350
+Gripper Dynamixel ID : 25, Model Name :XM430-W350
 [ INFO] [1544509070.096942788]: Succeeded to init /open_manipulator
 ```
 
@@ -147,11 +147,12 @@ NODES
 ROS_MASTER_URI=http://localhost:11311
 
 process[open_manipulator/open_manipulator_master-1]: started with pid [32026]
-Joint Dynamixel ID : 1, Model Name : XM430-W350
-Joint Dynamixel ID : 2, Model Name : XM430-W350
-Joint Dynamixel ID : 3, Model Name : XM430-W350
-Joint Dynamixel ID : 4, Model Name : XM430-W350
-Gripper Dynamixel ID : 5, Model Name :XM430-W350
+Joint Dynamixel ID : 1, Model Name : PRO-PLUS-PH54-200-S500-R
+Joint Dynamixel ID : 2, Model Name : PRO-PLUS-PH54-200-S500-R
+Joint Dynamixel ID : 3, Model Name : PRO-PLUS-PH54-100-S500-R
+Joint Dynamixel ID : 4, Model Name : PRO-PLUS-PH54-100-S500-R
+Joint Dynamixel ID : 5, Model Name : PRO-PLUS-PH42-020-S300-R
+Joint Dynamixel ID : 6, Model Name : PRO-PLUS-PH42-020-S300-R
 ```
 
 So, you can see the following message in the terminal window. You can check the current control mode and robot status(joint angle, tool position).

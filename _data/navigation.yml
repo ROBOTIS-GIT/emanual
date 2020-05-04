@@ -16577,8 +16577,8 @@ openmanipulator_x:
   - title: "[ROS] Applications"
     url: /platform/openmanipulator_x/ros_applications/#ros-applications
     children:
-      - title: "Master Slave"
-        url: /platform/openmanipulator_x/ros_applications/#master-slave
+      - title: "Master and Slave"
+        url: /platform/openmanipulator_x/ros_applications/#master-and-slave
         children:
           - title: "Setup OpenMANIPULATOR-X"
             url: /platform/openmanipulator_x/ros_applications/#setup-openmanipulator-x
@@ -16833,7 +16833,7 @@ openmanipulator_p:
           - title: "Install AR Marker Package"
             url: /platform/openmanipulator_p/ros_perceptions/#install-ar-marker-package
           - title: "Control OpenMANIPULATOR-P with Camera"
-            url: /platform/openmanipulator_p/ros_perceptions/#control-openManipulator-p-with-camera
+            url: /platform/openmanipulator_p/ros_perceptions/#control-openmanipulator-p-with-camera
           - title: "Simulation"
             url: /platform/openmanipulator_p/ros_perceptions/#simulation
   - title: "[ROS] Controls"

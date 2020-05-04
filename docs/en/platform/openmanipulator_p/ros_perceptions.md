@@ -238,7 +238,7 @@ In order to use AR Marker properly with your camera, be sure to add the camera m
 
 See the following section and use the provided command to enable AR Marker feature with your camera.
 
-##### [AR Marker With Astra Pro](#with-astra-pro)
+##### [AR Marker With Astra Pro](#ar-marker-with-astra-pro)
 
 1. Install [Astra Pro ROS package](#astra-pro).
 
@@ -247,7 +247,7 @@ See the following section and use the provided command to enable AR Marker featu
 $ roslaunch open_manipulator_ar_markers ar_pose.launch camera_model:=astra_pro
 ```
 
-##### [AR Marker With Realsense D435](with-realsense-d435)
+##### [AR Marker With Realsense D435](#ar-marker-with-realsense-d435)
 
 1. Install [Realsense D435 ROS package](#realsense-d435).
 
@@ -256,7 +256,7 @@ $ roslaunch open_manipulator_ar_markers ar_pose.launch camera_model:=astra_pro
 $ roslaunch open_manipulator_ar_markers ar_pose.launch camera_model:=realsense_d435
 ```
 
-##### [AR Marker With Raspberry Pi Camera V2](with-raspberry-pi-camera-v2)
+##### [AR Marker With Raspberry Pi Camera V2](#ar-marker-with-raspberry-pi-camera-v2)
 
 1. Install [Raspberry Pi Camera V2 ROS package](#raspberry-pi-camera-v2).
 
@@ -270,8 +270,8 @@ $ roslaunch open_manipulator_camera raspicam.launch
 $ roslaunch open_manipulator_ar_markers ar_pose.launch camera_model:=raspicam
 ```
 
-#### AR Marker displayed on RViz 
-When the camera recognizes the object with the AR marker, the pose of the AR marker will be displated on a RViz screen.  
+#### [AR Marker displayed on RViz](#ar-marker-displayed-on-rviz) 
+When the camera recognizes the object with the AR marker, the pose of the AR marker will be displayed on a RViz screen.  
 
 ![](/assets/images/platform/openmanipulator_x/OpenManipulator_AR_Marker.png)
 
