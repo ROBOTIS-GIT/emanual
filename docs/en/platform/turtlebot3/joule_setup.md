@@ -67,9 +67,6 @@ If you need following step for installation, please refer to below link
 
 ![](/assets/images/platform/turtlebot3/logo_ros.png)
 
-**TIP**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is Ctrl-Alt-T.
-{: .notice--info}
-
 **[TurtleBot]** Install ROS
 
 ``` bash

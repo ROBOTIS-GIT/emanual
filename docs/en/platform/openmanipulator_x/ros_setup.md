@@ -54,9 +54,6 @@ If you prefer a manual installation, please follow the link below.
 ## [Install ROS Packages](#install-ros-packages)
 Install dependent packages for OpenMANIPULATOR-X. Run the following commands in a terminal window.
 
-**NOTE**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`+`Alt`+`t`.
-{: .notice--info}
-
 ``` bash
 $ sudo apt-get install ros-kinetic-ros-controllers ros-kinetic-gazebo* ros-kinetic-moveit* ros-kinetic-industrial-core
 ```

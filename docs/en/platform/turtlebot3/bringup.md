@@ -32,9 +32,6 @@ page_number: 14
 
 ## [Run roscore](#run-roscore)
 
-**NOTE**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`-`Alt`-`T`.
-{: .notice--info}
-
 **[Remote PC]** Run roscore.
 
 ``` bash

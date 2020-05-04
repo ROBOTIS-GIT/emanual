@@ -74,9 +74,6 @@ If you prefer manual installation, please follow the link below.
 
 Install dependent packages for OpenMANIPULATOR-P. Run the following commands in a terminal window.
 
-**NOTE**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`+`Alt`+`t`.
-{: .notice--info} 
-
 **WARNING** : Install either of `ROS Kinetic Kame` or `ROS Melodic Morenia` on your PC. 
 {: .notice--warning}
 

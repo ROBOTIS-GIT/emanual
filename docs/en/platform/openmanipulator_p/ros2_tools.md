@@ -1,21 +1,21 @@
 ---
 layout: archive
 lang: en
-ref: ros2_openmanipulator_p_ros_tool_applications
+ref: ros2_openmanipulator_p_ros_tool
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/openmanipulator_p/ros2_tool_applications/
+permalink: /docs/en/platform/openmanipulator_p/ros2_tools/
 sidebar:
   title: "OpenMANIPULATOR-P"
   nav: "openmanipulator_p"
 product_group: openmanipulator_p
-page_number: 13
+page_number: 16
 ---
 
-<div style="counter-reset: h1 12"></div>
+<div style="counter-reset: h1 15"></div>
 
-# [[ROS 2] Tool Applications](#ros-tool-application)
+# [[ROS 2] Tools](#ros-tools)
 
 ## [RH-P12-RN Gripper](#rh-p12-rn-gripper)
 
@@ -23,12 +23,11 @@ page_number: 13
 
 |                     | Part Name           | Quantity |
 |:--------------------|:--------------------|:--------:|
-| **Necessary Parts** | OpenMANIPULATOR-P |    1     |
+| **Necessary Parts** | OpenMANIPULATOR-P   |    1     |
 |                     | RH-P12-RN (Gripper) |    1     |
 | **Chassis Parts**   | FRP42_A110K         |    1     |
 | **Cables**          | CABLE_4P_180MM      |    1     |
 | **Miscellaneous**   | WB_M3X08_NYLOK_K    |    12    |
-
 
 ![](/assets/images/platform/openmanipulator_p/open_manipulator_gripper_assembly_01.png)
 

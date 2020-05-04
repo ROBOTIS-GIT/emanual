@@ -10,10 +10,10 @@ sidebar:
   title: "OpenMANIPULATOR-P"
   nav: "openmanipulator_p"
 product_group: openmanipulator_p
-page_number: 10
+page_number: 13
 ---
 
-<div style="counter-reset: h1 9"></div>
+<div style="counter-reset: h1 12"></div>
 
 # [[ROS 2] Controller Package](#ros-controller-package)
 

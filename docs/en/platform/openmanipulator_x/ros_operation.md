@@ -145,43 +145,6 @@ $ roslaunch teleop_twist_joy teleop.launch
 $ roslaunch open_manipulator_teleop open_manipulator_teleop_joystick.launch
 ```
 
-## [MoveIt!](#moveit)
-
-### [Install MoveIt Packages](#install-moveit-packages)
-```bash
-$ cd ~/catkin_ws/src/
-$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_controls.git
-$ cd ~/catkin_ws && catkin_make
-```
-
-### [Launch MoveIt!](#launch-moveit) 
-Launch **MoveIt!** with the following command.
-``` bash
-$ roslaunch open_manipulator_controllers joint_trajectory_controller.launch sim:=false
-```
-  ![](/assets/images/platform/openmanipulator_x/moveit_launch.png)  
-
-<!--
-![](/assets/images/platform/openmanipulator_x/OpenManipulator_Chain_moveit_real_1.png)
-
-![](/assets/images/platform/openmanipulator_x/OpenManipulator_Chain_moveit_real_2.png)
-
-![](/assets/images/platform/openmanipulator_x/OpenManipulator_Chain_moveit_real_3.png)
-
-![](/assets/images/platform/openmanipulator_x/OpenManipulator_Chain_moveit_real_4.png) 
--->
-
-#### [Using MoveIt! with Gazebo](#using-moveit-with-gazebo)
-Gazebo is a tool to simulate and test your robot in a virtual enviroment, without an actual robot.  
-
-Also, you can use MoveIt feature using your virtual robot in the gazebo enviroment with the following command.
-
-For more information on Gazebo, See [Simulation](/docs/en/platform/openmanipulator_x/ros_simulation/#ros-simulation)
-
-```bash
-# Gazebo Simulation
-$ roslaunch open_manipulator_controllers joint_trajectory_controller.launch
-```
 
 [OpenCR]: /docs/en/parts/controller/opencr10/
 [OpenCR Manual]: /docs/en/parts/controller/opencr10/
