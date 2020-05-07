@@ -1,6 +1,6 @@
 ---
 layout: archive
-lang: en
+lang: jp
 ref: opencm904
 read_time: true
 share: true
