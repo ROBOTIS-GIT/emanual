@@ -5,7 +5,7 @@ ref: opencm904
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/parts/controller/opencm904/
+permalink: /docs/jp/parts/controller/opencm904/
 sidebar:
   title: OpenCM 9.04
   nav: "opencm904"
