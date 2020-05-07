@@ -68,12 +68,12 @@ $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
 
 4. **[Remote PC]** Set the enviroment variable for the TurtleBot3 Burger and launch `turtlebot3_follow_filter`.
 ``` bash
+$ export TURTLEBOT3_MODEL=burger
 $ roslaunch turtlebot3_follow_filter turtlebot3_follow_filter.launch
 ```
 
 5. **[Remote PC]** Launch `turtlebot3_follower`.
 ``` bash
-$ export TURTLEBOT3_MODEL=burger
 $ roslaunch turtlebot3_follower turtlebot3_follower.launch
 ```
 
