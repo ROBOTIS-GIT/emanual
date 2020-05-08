@@ -33,6 +33,7 @@ The development environment for OpenCR1.0 is wide open from Arduino IDE and Scra
 | Communication Ports  | USB x 1 (Micro-B USB connector/USB 2.0/Host/Peripheral/OTG)<br />TTL x 3 ([B3B-EH-A] / DYNAMIXEL)<br />RS485 x 3 ([B4B-EH-A] / DYNAMIXEL)<br />UART x 2 ([20010WS-04])<br />CAN x 1 ([20010WS-04])                                        |
 | LEDs and buttons     | LD2 (red/green) : USB communication<br />User LED x 4 : LD3 (red), LD4 (green), LD5 (blue)<br />User button  x 2<br />Power LED : LD1 (red, 3.3 V power on)<br />Reset button x 1 (for power reset of board)<br />Power on/off switch x 1 |
 | Input Power Sources  | 5 V (USB VBUS), 7-24 V (Battery or SMPS)<br />Default battery : LI-PO 11.1V 1,800mAh 19.98Wh<br />Default SMPS : 12V 4.5A<br />External battery Port for RTC (Real Time Clock) ([Molex 53047-0210])                                       |
+| Input Power Fuse     | 125V 10A [LittleFuse 0453010]                                                                     |
 | Output Power Sources | <sup>`*`</sup>12V max 4.5A([SMW250-02])<br /><sup>`*`</sup>5V max 4A([5267-02A]), 3.3V@800mA([20010WS-02])                                                                                                                                |
 | Dimensions           | 105(W) X 75(D) mm                                                                                                                                                                                                                         |
 | Weight               | 60g                                                                                                                                                                                                                                       |
@@ -1601,6 +1602,13 @@ opencr_ld.exe COM1 115200 ./opencrfw.bin 1
 
 - [https://github.com/ROBOTIS-GIT/OpenCR/tree/master/arduino/opencr_arduino/tools/opencr_tools_1.0.0](https://github.com/ROBOTIS-GIT/OpenCR/tree/master/arduino/opencr_arduino/tools/opencr_tools_1.0.0)
 
+## [DYNAMIXEL Connectors](#dynamixel connectors)
+
+{% include en/dxl/jst_485_ttl.md %}
+
+{% include en/dxl/485_ttl_connection_x.md %}
+
+
 [Reference Manual]: http://www.st.com/resource/en/reference_manual/dm00124865.pdf
 [Datasheet]: http://www.st.com/resource/en/datasheet/stm32f745ie.pdf
 [B3B-EH-A]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
@@ -1611,3 +1619,4 @@ opencr_ld.exe COM1 115200 ./opencrfw.bin 1
 [5267-02A]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0022035025_PCB_HEADERS.xml&channel=Products&Lang=en-US
 [20010WS-02]: http://www.alldatasheet.com/datasheet-pdf/pdf/147795/YEONHO/20010WS-02000.html
 [Molex 53047-0210]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0530470210_PCB_HEADERS.xml
+[LittleFuse 0453010]: http://www.littelfuse.com/products/fuses/surface-mount-fuses/nano-2-fuses/453/453010.aspx
