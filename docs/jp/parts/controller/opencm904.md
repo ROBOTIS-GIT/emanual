@@ -2089,7 +2089,40 @@ void testscrolltext(void) {
 
   ![](/assets/images/parts/controller/opencm904/recovery_led.jpg)
 
-[R+Manager 2.0 Firmware Recovery](/docs/en/software/rplus2/manager/#firmware-recovery) もしくは [R+Manager 1.0 Firmware Recovery](/docs/en/software/rplus1/manager/#firmware-recovery) の項を参照してください。
+## [R+Manager2.0 ファームウェアリカバリー](#firmware-recovery)
+
+1. “Firmware Recovery”を選択します。
+
+  ![](/assets/images/sw/rplus2/manager/roboplus_manager2_22.jpg)
+
+2. 通知メッセージを確認し、"Next"を押します。
+
+  ![](/assets/images/sw/rplus2/manager/roboplus_manager2_23.jpg)
+
+3. OpenCM9.04を選択し、"Next"ボタンを押します。
+
+  ![](/assets/images/sw/rplus2/manager/roboplus_manager2_24.jpg)
+
+4. 順番に表示される指示にしたがってください。また、黄色で表示されるメッセージを確認してください。
+
+5. 全ての準備が完了したら、"Next"ボタンを押します。
+
+  ![](/assets/images/sw/rplus2/manager/roboplus_manager2_25.jpg)
+
+6. 接続するポートを選択し、"Next"ボタンを押します。
+(下記の例では、Bluetoothのシリアルポートを使用しています。)
+
+7. デバイスが接続されると、ファームウェアインストールのためのブートローダーが検出されます。アクティブになったら"Next"ボタンを選択します。
+
+  ![](/assets/images/sw/rplus2/manager/roboplus_manager2_26.jpg)
+
+8. インストールされているファームウェアの情報を確認し、"Next"ボタンをクリックします。
+
+  ![](/assets/images/sw/rplus2/manager/roboplus_manager2_27.jpg)
+
+9. ファームウェアのリカバリーが完了したら、"Finish"ボタンを選択します。
+
+  ![](/assets/images/sw/rplus2/manager/roboplus_manager2_28.jpg)
 {: .notice}
 
 ## [Windowsドライバのインストール](#windows-driver-installation)
