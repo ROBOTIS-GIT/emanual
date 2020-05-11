@@ -90,8 +90,6 @@ sidebar:
 | **PM**           | [PM54-060-S250-R]              | [PM54-040-S250-R]              | [PM42-010-S260-R]              |                                |                 |
 | **ETC**          | [RH-P12-RN]                    | [RH-P12-RN(A)]                 |                                |                                |                 |
 
-
-
 # [다이나믹셀 위자드 2.0 설치](#다이나믹셀-위자드-20-설치)
 
 ## [윈도우에서 설치하기](#윈도우에서-설치하기)
@@ -110,17 +108,29 @@ sidebar:
   - [리눅스 소프트웨어 다운로드 (v2.0.6)](http://www.robotis.com/service/download.php?no=1671)  
 2. 다음의 명령어를 수행하여 설치파일의 실행권한을 변경합니다.
 
-    ```c
-    # sudo chmod 775 DynamixelWizard2Setup_x64
+    ```bash
+    $ sudo chmod 775 DynamixelWizard2Setup_x64
     ```
 
 3. 설치파일을 실행합니다.  
 
-    ```c
-    # ./DynamixelWizard2Setup_x64
+    ```bash
+    $ ./DynamixelWizard2Setup_x64
     ```
 
 4. 안내에 따라 `Next`버튼을 눌러 설치를 진행합니다.
+
+5. 설치가 끝난 후, USB 포트에 접근하기 위해 사용자 계정을 dialout 그룹에 추가하세요. (아래 커맨드의 **\<your_account_id>**에 해당 PC에서 사용하는 계정으로 교체 하세요.)
+  
+    ```bash
+    $ sudo usermod -aG dialout <your_account_id>
+    ```
+
+6. Dialout 그룹에 계정 추가를 완료하기위해 시스템을 재부팅 하세요.
+  
+    ```bash
+    $ reboot
+    ```
 
 ## [맥에서 설치하기](#맥에서-설치하기)
 
