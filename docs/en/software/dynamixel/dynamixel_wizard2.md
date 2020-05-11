@@ -121,9 +121,14 @@ Although almost all ROBOTIS products are shipped with installed firmwares, new f
 
 4. Click on `Next` button to proceed installation.
 
-5. After completing the installation, please add user name to dialout group in order to access the USB port. Replace the <your_username> in the command below to your actual user account name.
+5. After completing the installation, please add account id to dialout group in order to access the USB port. Replace the <your_account_id> in the command below to your actual user id.
     ```bash
-    $ sudo usermod -aG dialout <your_username>
+    $ sudo usermod -aG dialout <your_account_id>
+    ```
+
+6. Reboot in order the changes to be effective.
+    ```bash
+    $ reboot
     ```
 
 ## [Install: Mac](#install-mac)
