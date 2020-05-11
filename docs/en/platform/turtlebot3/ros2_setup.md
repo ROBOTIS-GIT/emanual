@@ -65,7 +65,7 @@ $ sudo apt install -y \
     python3-sphinx
 # Install Gazebo9
 $ curl -sSL http://get.gazebosim.org | sh
-$ sudo apt install ros-dashing-gazebo-*
+$ sudo apt install ros-dashing-gazebo-pkgs
 # Install Cartographer
 $ sudo apt install ros-dashing-cartographer
 $ sudo apt install ros-dashing-cartographer-ros
