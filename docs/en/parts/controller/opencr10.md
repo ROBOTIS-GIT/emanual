@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/parts/controller/opencr10/
 sidebar:
-  title: OpenCR1.0
+  title: OpenCR 1.0
   nav: "opencr10"
 ---
 
@@ -26,26 +26,25 @@ The development environment for OpenCR1.0 is wide open from Arduino IDE and Scra
 | Items                | Specifications                                                                                                                                                                                                                            |
 |:---------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Microcontroller      | STM32F746ZGT6 / 32-bit ARM Cortex®-M7 with  FPU (216MHz, 462DMIPS)<br />[Reference Manual], [Datasheet]                                                                                                                                   |
-| Sensors              | (**Discontinued**) Gyroscope 3Axis, Accelerometer 3Axis, Magnetometer 3Axis (MPU9250)<br /> (**New**) 3-axis Gyroscope, 3-Axis Accelerometer, A Digital Motion Processor™ (ICM-20648)                                            |
+| Sensors              | (**Discontinued**) Gyroscope 3Axis, Accelerometer 3Axis, Magnetometer 3Axis (MPU9250)<br /> (**New**) 3-axis Gyroscope, 3-Axis Accelerometer, A Digital Motion Processor™ (ICM-20648)                                                     |
 | Programmer           | ARM Cortex 10pin JTAG/SWD connector<br />USB Device Firmware Upgrade (DFU)<br />Serial                                                                                                                                                    |
 | Digital I/O          | 32 pins (L 14, R 18) *Arduino connectivity<br />5Pin OLLO x 4<br />GPIO x 18 pins<br />PWM x 6<br />I2C x 1<br />SPI x 1                                                                                                                  |
 | Analog INPUT         | ADC Channels (Max 12bit) x 6                                                                                                                                                                                                              |
 | Communication Ports  | USB x 1 (Micro-B USB connector/USB 2.0/Host/Peripheral/OTG)<br />TTL x 3 ([B3B-EH-A] / DYNAMIXEL)<br />RS485 x 3 ([B4B-EH-A] / DYNAMIXEL)<br />UART x 2 ([20010WS-04])<br />CAN x 1 ([20010WS-04])                                        |
 | LEDs and buttons     | LD2 (red/green) : USB communication<br />User LED x 4 : LD3 (red), LD4 (green), LD5 (blue)<br />User button  x 2<br />Power LED : LD1 (red, 3.3 V power on)<br />Reset button x 1 (for power reset of board)<br />Power on/off switch x 1 |
 | Input Power Sources  | 5 V (USB VBUS), 7-24 V (Battery or SMPS)<br />Default battery : LI-PO 11.1V 1,800mAh 19.98Wh<br />Default SMPS : 12V 4.5A<br />External battery Port for RTC (Real Time Clock) ([Molex 53047-0210])                                       |
+| Input Power Fuse     | 125V 10A [LittleFuse 0453010]                                                                                                                                                                                                             |
 | Output Power Sources | <sup>`*`</sup>12V max 4.5A([SMW250-02])<br /><sup>`*`</sup>5V max 4A([5267-02A]), 3.3V@800mA([20010WS-02])                                                                                                                                |
 | Dimensions           | 105(W) X 75(D) mm                                                                                                                                                                                                                         |
 | Weight               | 60g                                                                                                                                                                                                                                       |
 
-
-**NOTE**: MPU9250 sensor has been replaced with ICM-20648, since 2020, as MPU9250 is discontinued to produce.
-{: .notice}
-
-<sup>`*`</sup> 5V power source is supplied from regulated 12V output.
-{: .notice}
-
-**NOTE** : Hot swap power switch between "shore power"(12V, 4.5A SMPS) and "mobile power"(battery) from OpenCR1.0 board enables UPS(Uninterrupted Power Supply) feature.
-{: .notice}
+{% capture note_01 %}
+**NOTE**: Be sure to read the following before use of the product to ensure proper use.
+- MPU9250 sensor has been replaced with ICM-20648, since 2020, as MPU9250 is discontinued to produce.
+- 5V power source should be stable by supplying regulated 12V output.
+- Hot swap power switch between "shore power"(12V, 4.5A SMPS) and "mobile power"(battery) from OpenCR1.0 board enables UPS (Uninterrupted Power Supply) feature.
+{% endcapture %}
+<div class="notice--notice">{{ note_01 | markdownify }}</div>
 
 # [Layout/Pin Map](#layoutpin-map)
 
@@ -1168,37 +1167,6 @@ void loop()
 
 - [OpenMANIPULATOR examples](/docs/en/platform/openmanipulator/#how-to-control-on-opencr)
 
-# [Downloads](#downloads)
-
-- `Download` [BOM](https://github.com/ROBOTIS-GIT/OpenCR-Hardware/tree/master/BOM)
-- `Download` [Schematic](https://github.com/ROBOTIS-GIT/OpenCR-Hardware/tree/master/Schematic)
-- `Download` [PCB](https://github.com/ROBOTIS-GIT/OpenCR-Hardware/tree/master/CAD)
-
-# [References](#references)
-
-## [Recovery Mode](#recovery-mode)
-
-If currupted or incompleted firmware is downloaded and the board freezes or does not work, you must enter the boot loader to be able to download the normal firmware.  
-To execute the boot loader, please follow the instruction below.
-
-1. Hold down the `PUSH SW2` button.
-2. Press the `Reset` button.
-3. Release the `Reset` button.
-4. Release the `PUSH SW2` button.
-
-OpenCR will enter the boot loader after reset. When the boot loader is running, the STATUS LED blinks every 100ms.
-
-![](/assets/images/parts/controller/opencr10/bootloader_19.png)
-
-You can download the normal firmware while the boot loader is running.
-
-## [Certifications](#certifications)
-Please inquire us for information regarding unlisted certifications.
-
-### [FCC](#fcc)
-{% include en/dxl/fcc_class_a.md %}
-
-
 # [Bootloader](#bootloader)
 The bootloader is responsible for initializing the board and downloading and executing the firmware into flash memory.  
 
@@ -1561,45 +1529,117 @@ The Downloader appends necessary information to the provided binary file.
 | Supported OS | Windows, Linux, Mac               |
 | Compiler     | Linux : gcc<br />Windows : Qt 5.7 |
 
-## [Usage](#usage)
+## [Description](#description)
+
+Read the following description for use of the command to ensure proper use. 
 
 ```bash
 $ opencr_ld <Communication port> <Baudrate> <Firmware binary> <Firmware execution status [0|1]>
 ```
 
-- Communication port: The serial port name is usually `/dev/ttyACM0` for Linux, and it should be the same as the serial port connected to OpenCR.
-- Baudrate : The speed to communicate and input at 115,200bps.
-- Firmware binary : The firmware binary image has an extension of bin.
-- Firmware execution status : In case of 1, the firmware will be executed after downloading the firmware. If it is not input or if it is 0, only downloading the firmware is performed.
+`Communication port`  
+-  Type the name of the serial port in use (i.e, `/dev/ttyACM0` is widely used for Linux.)
+
+`Baudrate`  
+-  The speed to communicate and input at 115,200 bps.
+
+`Firmware binary`  
+- The firmware binary image has an extension of bin.
+
+`Firmware execution status`  
+- Set `1` to execute the downloaded firmware after download. 
+- Set `0` (or not input status) to download the firmware.
 
   ![](/assets/images/parts/controller/opencr10/arduino_bin_export.png)
 
   > Exporting compiled binary file fron Arduino IDE
 
-### [Linux/Mac Example](#linuxmac-example)
+## [Example For Linux / Mac](#example-for-linux-mac)
 
-If OpenCR is connected to ttyACM0 port and the binary file *opencrfw.bin* is copied into the opencr_ld directory.
+The following is an example for Linux and Mac users. Be sure that the command may differ depending on your PC environment.
 
 ```bash
 $ sudo opencr_ld /dev/ttyACM0 115200 ./opencrfw.bin 1
 ```
 
-### [Windows Example](#windows-example)
+`Communication port`  
+- /dev/ttyACM0
 
-If OpenCR is connected to COM1 port and the binary file *opencrfw.bin* is copied into the opencr_ld directory.
+`Baudrate`  
+- 115,200 bps.
 
-```
+`Firmware binary`
+- opencrfw.bin
+
+`Firmware execution status`
+- 1
+
+## [Example For Windows](#example-for-windows-example)
+
+The following is an example for Windows users. Be sure that the command may differ depending on your PC environment.
+
+```bash
 opencr_ld.exe COM1 115200 ./opencrfw.bin 1
 ```
 
-## [Execution Result](#execution-result)
+`Communication port`
+- COM1  
+
+`Baudrate`  
+- 115,200 bps.
+
+`Firmware binary`
+- opencrfw.bin
+
+`Firmware execution status`
+- 1
+
+## [Execution Result](#execution-result) 
 
 ![](/assets/images/parts/controller/opencr10/downloader_01.png)
 
-
 ## [Download Executable File](#download-executable-file)
+Excutable file can be downloaded at the provided link.
 
 - [https://github.com/ROBOTIS-GIT/OpenCR/tree/master/arduino/opencr_arduino/tools/opencr_tools_1.0.0](https://github.com/ROBOTIS-GIT/OpenCR/tree/master/arduino/opencr_arduino/tools/opencr_tools_1.0.0)
+
+# [Reference](#reference)
+
+## [Recovery Mode](#recovery-mode)
+
+If currupted or incompleted firmware is downloaded and the board freezes or does not work, you must enter the boot loader to be able to download the normal firmware.  
+To execute the boot loader, please follow the instruction below.
+
+1. Hold down the `PUSH SW2` button.
+2. Press the `Reset` button.
+3. Release the `Reset` button.
+4. Release the `PUSH SW2` button.
+
+OpenCR will enter the boot loader after reset. When the boot loader is running, the STATUS LED blinks every 100ms.
+
+![](/assets/images/parts/controller/opencr10/bootloader_19.png)
+
+You can download the normal firmware while the boot loader is running.
+
+## [DYNAMIXEL Connectors](#dynamixel-connectors)
+
+Following table refers the pinout of DYNAMIXEL.
+
+{% include en/dxl/jst_485_ttl.md %}
+
+{% include en/dxl/485_ttl_connection_x.md %}
+
+## [Download](#download)
+
+- `Download` [BOM](https://github.com/ROBOTIS-GIT/OpenCR-Hardware/tree/master/BOM)
+- `Download` [Schematic](https://github.com/ROBOTIS-GIT/OpenCR-Hardware/tree/master/Schematic)
+- `Download` [PCB](https://github.com/ROBOTIS-GIT/OpenCR-Hardware/tree/master/CAD)
+
+## [Certifications](#certifications)
+Please inquire us for information regarding unlisted certifications.
+
+### [FCC](#fcc)
+{% include en/dxl/fcc_class_a.md %}
 
 [Reference Manual]: http://www.st.com/resource/en/reference_manual/dm00124865.pdf
 [Datasheet]: http://www.st.com/resource/en/datasheet/stm32f745ie.pdf
@@ -1611,3 +1651,4 @@ opencr_ld.exe COM1 115200 ./opencrfw.bin 1
 [5267-02A]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0022035025_PCB_HEADERS.xml&channel=Products&Lang=en-US
 [20010WS-02]: http://www.alldatasheet.com/datasheet-pdf/pdf/147795/YEONHO/20010WS-02000.html
 [Molex 53047-0210]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0530470210_PCB_HEADERS.xml
+[LittleFuse 0453010]: http://www.littelfuse.com/products/fuses/surface-mount-fuses/nano-2-fuses/453/453010.aspx

@@ -20,6 +20,7 @@ sidebar:
 - ROBOTIS ENGINEER Kit offers standardized curriculum for multi level robotics educational courses
 - Joint structure allows diverse motions for versatile robots
 - Supports 3D part designing and printing
+- Base kit includes parts to build 3 different robot figures (MAX, SPI, DR. R). Build up to 7 robot figures total with workbooks.
 - Compatible with R+ ENGINEER(Smart device app), R+ Task 3.0(PC software)
 - Upgrade to Raspberry Pi and Camera
 
