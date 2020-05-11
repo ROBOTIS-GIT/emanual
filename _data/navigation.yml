@@ -21697,15 +21697,6 @@ opencr10:
       url: /parts/controller/opencr10/#dynamixel-workbench
     - title: "OpenMANIPULATOR"
       url: /parts/controller/opencr10/#openmanipulator
-  - title: "Downloads"
-    url: /parts/controller/opencr10/#downloads
-  - title: "References"
-    url: /parts/controller/opencr10/#references
-    children:
-    - title: "Recovery Mode"
-      url: /parts/controller/opencr10/#recovery-mode
-    - title: "Certifications"
-      url: /parts/controller/opencr10/#certifications
   - title: "Bootloader"
     url: /parts/controller/opencr10/#bootloader
     children:
@@ -21740,17 +21731,30 @@ opencr10:
   - title: "Downloader"
     url: /parts/controller/opencr10/#downloader
     children:
-    - title: "Usage"
-      url: /parts/controller/opencr10/#usage
-    - title: "Linux/Mac Example"
-      url: /parts/controller/opencr10/#linuxmac-example
+    - title: "Description"
+      url: /parts/controller/opencr10/#description
+    - title: "Example For Linux / Mac"
+      url: /parts/controller/opencr10/#example-for-linux-mac
     - title: "Windows Example"
-      url: /parts/controller/opencr10/#windows-example
+      url: /parts/controller/opencr10/#example-for-windows-example
     - title: "Execution Result"
       url: /parts/controller/opencr10/#execution-result
     - title: "Download Executable File"
       url: /parts/controller/opencr10/#download-executable-file
-
+  - title: "Reference"
+    url: /parts/controller/opencr10/#reference
+    children:
+    - title: "Recovery Mode"
+      url: /parts/controller/opencr10/#recovery-mode
+    - title: "DYNAMIXEL Connectors"
+      url: /parts/controller/opencr10/#dynamixel-connectors
+    - title: "Communication Circuit"
+      url: /parts/controller/opencr10/#communication-circuit    
+    - title: "Downloads"
+      url: /parts/controller/opencr10/#downloads
+    - title: "Certifications"
+      url: /parts/controller/opencr10/#certifications
+      
 dynamixel_shield:
   - title: "Introduction"
     titlekr: "개요"
