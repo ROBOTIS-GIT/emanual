@@ -16529,14 +16529,7 @@ openmanipulator_x:
           - title: "PS4 Joystick"
             url: /platform/openmanipulator_x/ros_operation/#ps4-joystick
           - title: "XBOX 360 Joystick"
-            url: /platform/openmanipulator_x/ros_operation/#xbox-360-joystick
-      - title: "MoveIt!"
-        url: /platform/openmanipulator_x/ros_operation/#moveit
-        children: 
-          - title: "Install MoveIt Packages"
-            url: /platform/openmanipulator_x/ros_operation/#install-moveit-packages
-          - title: "Launch Moveit!"
-            url: /platform/openmanipulator_x/ros_operation/#launch-moveit                     
+            url: /platform/openmanipulator_x/ros_operation/#xbox-360-joystick                   
   - title: "[ROS] Simulation"
     url: /platform/openmanipulator_x/ros_simulation/#ros-simulation
     children:
@@ -16785,13 +16778,6 @@ openmanipulator_p:
         url: /platform/openmanipulator_p/ros_operation/#gui-program
       - title: "Teleoperation"
         url: /platform/openmanipulator_p/ros_operation/#teleoperation
-      - title: "MoveIt!"
-        url: /platform/openmanipulator_p/ros_operation/#moveit
-        children:
-          - title: "Install MoveIt Packages"
-            url: /platform/openmanipulator_p/ros_operation/#install-moveit-packages
-          - title: "Launch MoveIt!"
-            url: /platform/openmanipulator_p/ros_operation/#launch-moveit
   - title: "[ROS] Simulation"
     url: /platform/openmanipulator_p/ros_simulation/#ros-simulation
     children:
@@ -21209,6 +21195,15 @@ cm-550:
     titlekr: "제품 사양"
     url: /parts/controller/cm-550/#specifications
     urlkr: /parts/controller/cm-550/#제품-사양
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /parts/controller/cm-550/#control-table
+    urlkr: /parts/controller/cm-550/#컨트롤-테이블
+    children:
+    - title: "CM-550 Control Table"
+      titlekr: "CM-550 컨트롤 테이블"
+      url: /parts/controller/cm-550/#cm-550-control-table
+      urlkr: /parts/controller/cm-550/#cm-550-컨트롤-테이블
   - title: "Layout"
     titlekr: "각 부 명칭"
     url: /parts/controller/cm-550/#layout

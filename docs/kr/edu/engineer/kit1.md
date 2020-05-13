@@ -226,17 +226,18 @@ sidebar:
 {% capture software_install_01 %}  
 ![](/assets/images/edu/engineer/kit1/icon_task_48.png)  
 **로보플러스 태스크 3.0**
-- [윈도우용 설치파일 다운로드](https://www.robotis.com/service/download.php?no=1774) 
-- [구글 플레이에서 다운로드](https://play.google.com/store/apps/details?id=com.robotis.task3)
-- [앱스토어에서 다운로드](https://www.robotis.com/service/download.php?no=1899)   
+- [윈도우에서 PC 버전 다운로드 받기](https://www.robotis.com/service/download.php?no=1774) 
+- [맥 OS에서 PC 버전 다운로드 받기](https://www.robotis.com/service/download.php?no=1908)
+- [구글 플레이에서 모바일 버전 다운로드 받기](https://play.google.com/store/apps/details?id=com.robotis.task3)
+- [앱스토어에서 모바일 버전 다운로드 받기](https://apps.apple.com/kr/app/r-task3-0/id1482356873)
 {% endcapture %}
 <div class="notice--success">{{ software_install_01 | markdownify }}</div>
 
 {% capture software_install_02 %}  
 ![](/assets/images/edu/engineer/kit1/icon_engineer_48.png)  
 **로보플러스 엔지니어**
-- [구글 플레이에서 다운로드](https://play.google.com/store/apps/details?id=com.robotis.robotisEngineer)
-- [앱 스토어에서 다운로드](https://apps.apple.com/kr/app/r-engineer/id1475713920)
+- [구글 플레이에서 다운로드 받기](https://play.google.com/store/apps/details?id=com.robotis.robotisEngineer)
+- [앱 스토어에서 다운로드 받기](https://apps.apple.com/kr/app/r-engineer/id1475713920)
 - **참고**: [로보플러스 엔지니어 다운로드 방법](/docs/kr/popup/engineer/engineer_app_installation){: .popup}
 {% endcapture %}
 <div class="notice--success">{{ software_install_02 | markdownify }}</div>
