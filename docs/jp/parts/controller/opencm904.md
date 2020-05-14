@@ -2111,7 +2111,7 @@ void testscrolltext(void) {
 
 6. 接続するポートを選択し、"Next"ボタンを押します。
 
-   ![](/assets/images/sw/rplus2/manager/roboplus_manager2_51.png)
+   ![](/assets/images/sw/rplus2/manager/roboplus_manager2_51_2.png)
 
 7. デバイスが接続されると、ファームウェアインストールのためのブートローダーが検出されます。アクティブになったら"Next"ボタンを選択します。
 
