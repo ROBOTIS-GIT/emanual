@@ -2125,6 +2125,26 @@ void testscrolltext(void) {
   ![](/assets/images/sw/rplus2/manager/roboplus_manager2_28.jpg)
 {: .notice}
 
+## Dynamixelのチャンネル構成の変更(XM/XH Series)
+
+1. R+Manager2.0を開き、DYNAMIXEL2.0 製品を選択し、"Update & Test"のメニューを選択します。
+
+  ![](/assets/images/sw/rplus2/manager/roboplus_manager2_30_en_1.jpg)
+
+  ![](/assets/images/sw/rplus2/manager/roboplus_manager2_30_en_2.jpg)
+
+2. OpenCM9.04をLN-101やBT-210、USBケーブル経由でPCと接続します。
+
+3. 以下の手順に従ってOpenCM9.04を検索します。(OpenCM9.04のDYNAMIXELチャンネルの値は、デフォルトでXL-320になっているため、XM/XHは検出されません。)
+
+  ![](/assets/images/sw/rplus2/manager/roboplus_manager2_31_en.jpg)
+
+4. 製品の更新が完了すると、コントロールテーブルの画面が開きます。
+
+5. コントロールテーブルの"Dynamixel Channel"の値を"EXP Board(X-Series)"に設定し、"Save"を選択します。
+
+  ![](/assets/images/sw/rplus2/manager/roboplus_manager2_32_en.jpg)
+
 ## [Windowsドライバのインストール](#windows-driver-installation)
 - 「Windows用ROBOTIS仮想COMポートのインストール方法」を参照してください。{: .popup} 
 
