@@ -2110,7 +2110,8 @@ void testscrolltext(void) {
   ![](/assets/images/sw/rplus2/manager/roboplus_manager2_25.jpg)
 
 6. 接続するポートを選択し、"Next"ボタンを押します。
-(下記の例では、Bluetoothのシリアルポートを使用しています。)
+
+   ![](/assets/images/sw/rplus2/manager/roboplus_manager2_51.png)
 
 7. デバイスが接続されると、ファームウェアインストールのためのブートローダーが検出されます。アクティブになったら"Next"ボタンを選択します。
 
@@ -2123,7 +2124,6 @@ void testscrolltext(void) {
 9. ファームウェアのリカバリーが完了したら、"Finish"ボタンを選択します。
 
   ![](/assets/images/sw/rplus2/manager/roboplus_manager2_28.jpg)
-{: .notice}
 
 ## Dynamixelのチャンネル構成の変更(XM/XH Series)
 
