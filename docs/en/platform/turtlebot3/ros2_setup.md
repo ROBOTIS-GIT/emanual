@@ -226,7 +226,7 @@ $ sudo mkswap /swapfile
 $ sudo swapon /swapfile
 ```
 
-6. Open `/etc/fstab` file with `nano` command, as swap areas are listed in `/etc/fastab`.
+6. Open `/etc/fstab` file with `nano` command, as swap areas are listed in this file.
 ```bash
 $ sudo nano /etc/fstab
 ```
