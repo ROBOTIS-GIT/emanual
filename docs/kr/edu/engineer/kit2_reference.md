@@ -327,6 +327,9 @@ CM-550에 내장된 BLE 슬레이브 모듈의 신호의 세기가 약하거나 
 로보티즈 엔지니어 키트2에 프레임 및 추가 3D 모델링 파일을 다운로드 받을수 있습니다. 파일 정보 (파츠 명칭, 이미지등)를 확인하기 위해서, 다음 PDF파일을 다운로드 하세요.
 - [ENG2_3D_Printing_Parts_List](https://www.robotis.com/service/download.php?no=1971) 다운로드 하기.
 
+**참고**: 3D 모델링 파일을 출력 시, 기체의 무게 감소를 위해 내부 채움 밀도 비율을 10% 이하로 설정하기를 권장 합니다.  
+{: .notice}
+
 |        모델         | STL 파일 다운로드 (.zip )                                                           |
 |:-------------------:|:------------------------------------------------------------------------------------|
 |     부품 리스트     | [ENG2_3D_Printing_Parts_List](https://www.robotis.com/service/download.php?no=1971) |
@@ -335,6 +338,5 @@ CM-550에 내장된 BLE 슬레이브 모듈의 신호의 세기가 약하거나 
 |       Scorpi        | [3. SCORPI_STL.zip](https://www.robotis.com/service/download.php?no=1953)           |
 | AutoBot (추가 예제) | [4. AUTOBOT_STL.zip](https://www.robotis.com/service/download.php?no=1954)          |
 | Strider (추가 예제) | [5. STRIDER_STL.zip](https://www.robotis.com/service/download.php?no=1955)          |
-
 
 {% include kr/dxl/download_center_notice.md %}
