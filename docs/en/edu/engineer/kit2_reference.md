@@ -287,6 +287,9 @@ Download [MARKER for Commando](https://www.robotis.com/service/download.php?no=1
 
 Download 3D printing files (STL) from the following table.
 
+**NOTE**: When printing out 3D model files, it is recommended to use under 10 % infill density, in order to decrease the weight of the robot.
+{: .notice}
+
 |             Model             | Download                                                                            |
 |:-----------------------------:|:------------------------------------------------------------------------------------|
 |          Parts List           | [ENG2_3D_Printing_Parts_List](https://www.robotis.com/service/download.php?no=1972) |
