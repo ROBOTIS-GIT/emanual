@@ -63,8 +63,8 @@ $ sudo apt install ros-dashing-cartographer-ros ros-dashing-navigation2 ros-dash
 **[Remote PC]**
 
 ```bash
-# Install Colcon and vcs tool
-$ sudo apt install python3-colcon-common-extensions python3-vcstool
+# Install Colcon, git and vcs tool
+$ sudo apt install git python3-colcon-common-extensions python3-vcstool
 $ mkdir -p ~/turtlebot3_ws/src
 $ cd ~/turtlebot3_ws
 $ wget https://raw.githubusercontent.com/ROBOTIS-GIT/turtlebot3/ros2/turtlebot3.repos
