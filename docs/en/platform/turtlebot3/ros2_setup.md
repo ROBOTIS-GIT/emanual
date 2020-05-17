@@ -63,8 +63,9 @@ $ sudo apt install -y \
     libcairo2-dev \
     libpcl-dev \
     python3-sphinx
-# Install Gazebo9
+# Install Gazebo Repo
 $ curl -sSL http://get.gazebosim.org | sh
+$ sudo apt remove gazebo11*
 $ sudo apt install ros-dashing-gazebo-*
 # Install Cartographer
 $ sudo apt install ros-dashing-cartographer
