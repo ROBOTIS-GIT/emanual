@@ -287,12 +287,10 @@ $ git clone -b ros2 https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
 $ git clone -b ros2 https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
 $ git clone -b ros2 https://github.com/ROBOTIS-GIT/turtlebot3.git
 $ git clone -b ros2 https://github.com/ROBOTIS-GIT/DynamixelSDK.git
-$ cd ~/turtlebot3_ws/src/turtlebot3
-$ rm -r turtlebot3_cartographer turtlebot3_navigation2
 $ cd ~/turtlebot3_ws/
 $ echo 'source /opt/ros/dashing/setup.bash' >> ~/.bashrc
 $ source ~/.bashrc
-$ colcon build --symlink-install --parallel-workers 1
+$ colcon build --symlink-install --parallel-workers 1 --packages-ignore turtlebot3_cartographer turtlebot3_navigation2
 ```
 
 ### Environment Setup
