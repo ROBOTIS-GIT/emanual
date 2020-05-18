@@ -2145,6 +2145,9 @@ void testscrolltext(void) {
 
   ![](/assets/images/sw/rplus2/manager/roboplus_manager2_32_en.jpg)
 
+**注意** :EXP Board(X-Series)は、OpenCM 485 EXPを使用する場合に設定してください。
+{: .notice--warning}
+
 ## [Windowsドライバのインストール](#windows-driver-installation)
 - 「Windows用ROBOTIS仮想COMポートのインストール方法」を参照してください。{: .popup} 
 
