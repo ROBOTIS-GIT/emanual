@@ -15,7 +15,7 @@ page_number: 3
 
 <div style="counter-reset: h1 2"></div>
 
-# [Advanced Courses](#advanced-courses)
+# [Advanced Study Materials](#advanced-study-materials)
 Customize your ROBOTIS ENGINEER KIT with additional resources.
 
 ## [Training Materials, Additional Examples, 3D Printing](#training-materials-additional-examples-3d-printing)
@@ -23,7 +23,7 @@ Customize your ROBOTIS ENGINEER KIT with additional resources.
 {% capture edu_application %}
 Additional course materials are provided via the link below.
 
-- [**Requesting Additional Course Materials**](http://en.robotis.com/edu/engkit2.php)
+- [**Request Additional Course Materials**](http://en.robotis.com/edu/engkit2.php)
 {% endcapture %}
 <div class="notice--info">{{ edu_application | markdownify }}</div>
 
