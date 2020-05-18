@@ -43,7 +43,6 @@ The DYNAMIXEL SDK supports **all DYNAMIXEL series**.
 | **PH**           | [PH42-020-S300-R]              | [PH54-100-S500-R]              | [PH54-200-S500-R]              |                                |                 |
 
 
-
 ## [Supported Protocols](#supported-protocols)
 
 To control DYNAMIXEL, communication should be established according to the protocol of DYNAMIXEL. There are **versions 1.0 and 2.0 of the DYNAMIXEL protocol**. The DYNAMIXEL SDK supports both, and the user can use both protocols simultaneously using the DYNAMIXEL SDK. Refer to the following manuals for details on the protocols.

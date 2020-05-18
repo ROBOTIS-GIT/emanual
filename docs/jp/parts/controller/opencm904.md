@@ -1,308 +1,306 @@
 ---
 layout: archive
-lang: en
+lang: jp
 ref: opencm904
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/parts/controller/opencm904/
+permalink: /docs/jp/parts/controller/opencm904/
 sidebar:
   title: OpenCM 9.04
   nav: "opencm904"
 ---
 
-# [Introduction](#introduction)
+# [イントロダクション](#introduction)
 
 ![](/assets/images/parts/controller/opencm904/opencm904_product.png)
 
 > OpenCM 9.04
 
-- OpenCM9.04 Types Package
+- OpenCM9.04タイプパッケージ
 
-|         Item         | OpenCM9.04 A Type | OpenCM9.04 B Type | OpenCM9.04 C Type |
+|           項目          | OpenCM9.04タイプA | OpenCM9.04タイプB | OpenCM9.04タイプC |
 |:--------------------:|:-----------------:|:-----------------:|:-----------------:|
-|     Power Switch     |         X         |         1         |         1         |
-|     User Button      |         1         |         1         |         1         |
-| 2Pin Battery(LBS-40) |         X         |         2         |         2         |
-|       JTAG/SWD       |         X         |         1         |         1         |
-|     Micro B USB      |         X         |         1         |         1         |
-|      5-Pin Port      |         X         |         4         |         4         |
-|  DYNAMIXEL TTL BUS   |         X         |       4 `1`       |       4 `2`       |
-| 4 Pin Communication  |         X         |         1         |         1         |
+|        電源スイッチ       |         X         |         1         |         1         |
+|      ユーザースイッチ     |         1         |         1         |         1         |
+|2ピンバッテリー<br>(LBS-40)|         X         |         2         |         2         |
+|        JTAG/SWD         |         X         |         1         |         1         |
+|     マイクロUSBタイプB    |         X         |         1         |         1         |
+|       5-ピンポート       |         X         |         4         |         4         |
+|    DYNAMIXEL TTLバス    |         X         |       4 `1`       |       4 `2`       |
+|        4ピン通信         |         X         |         1         |         1         |
 
 `1`: [MOLEX 53253-0370] x 2(for XL-320), [MOLEX 22-03-5035] x 2(for AX/MX-Series)  
 `2`: [MOLEX 53253-0370] x 4(for XL-320)
 
-- OpenCM9.04 is a microcontroller board based on 32bit ARM Cortex-M3. The OpenCM9.04’s schematics and source codes are open-source.
-- 3 types are available: Type A & Type B & Type C. The difference between Type A,Type B, Type C is the availability of the connectors. (Refer to the image and table above.)  
-  (OpenCM9.04 Accessory Set can be purchased to acquire all the necessary connector to upgrade Type A to Type B Type C.)  [OpenCM9.04 Accessory Set](http://en.robotis.com/shop_en/item.php?it_id=902-0084-030)
+- OpenCM9.04は、32ビットARM Cortex-M3に基づくマイクロコントローラーボードです。 OpenCM9.04の回路図とソースコードはオープンソースです。
+- タイプA、タイプB、タイプCの3つのタイプが使用できます。タイプA、タイプB、タイプCの違いは、コネクタの可用性です。 （上の画像と表を参照してください。）
+（OpenCM9.04アクセサリーセットを購入することで、タイプAからタイプBタイプCへのアップグレードに必要なコネクタをすべて取得することができます。）  [OpenCM9.04 Accessory Set](http://en.robotis.com/shop_en/item.php?it_id=902-0084-030)
 
-**NOTE** : Refer to the ROBOTIS-MINI for controller recovery (type C-only) [ROBOTIS-MINI Controller Firmware Update]
+**注釈** : コントローラーの復旧についてはROBOTIS-MINIを参照してください（タイプCのみ）ROBOTIS-MINIコントローラーのファームウェアの更新 [ROBOTIS-MINI Controller Firmware Update]
 {: .notice}
 
-**CAUTION** : Please **DISCONNECT** OpenCM9.04 and OpenCM 485 Expansion board when updating or recovering DYNAMIXEL firmware.
+**注意** : DYNAMIXELファームウェアの更新または復旧する際は、OpenCM9.04およびOpenCM 485の拡張ボードを**取り外してください**。
 {: .notice--warning}
 
-# [Specifications](#specifications)
+# [仕様表](#specifications)
 
-|          Item          |           Description           |
+|           項目          |               説明               |
 |:----------------------:|:-------------------------------:|
 |          CPU           |   STM32F103CB (ARM Cortex-M3)   |
-|   Operation Voltage    |            5V ~ 16V             |
+|         動作電圧        |            5V ~ 16V             |
 |          I/O           |            GPIO x 26            |
-|         Timer          |            4 (16bit)            |
-|   Analog Input(ADC)    |           10 (12bit)            |
-|         Flash          |              128Kb              |
+|         タイマー        |            4 (16bit)            |
+|     アナログ入力(ADC)    |           10 (12bit)            |
+|       フラッシュROM      |              128Kb              |
 |          SRAM          |              20Kb               |
-|         Clock          |              72Mhz              |
-|          USB           | 1 (2.0 Full Speed) Micro B Type |
+|         クロック        |              72Mhz              |
+|          USB           | 1 (2.0 Full Speed) マイクロUSBタイプB |
 |         USART          |                3                |
 |          SPI           |                2                |
 |        I2C(TWI)        |                2                |
-|         Debug          |           JTAG & SWD            |
+|         デバッグ        |           JTAG & SWD            |
 | DYNAMIXEL TTL BUS 3pin |                4                |
-|       Dimensions       |          27mm x 66.5mm          |
+|          寸法          |          27mm x 66.5mm          |
 
 {% capture opencm904_caution_01 %}
-**WARNING**
-- USB power is cannot be used to operate DYNAMIXEL's. Separate power supply needs to be provided.  
+**警告**
+- DYNAMIXELの操作にUSB電源は使用できません。 別電源からの供給が必要です。
+（OpenCM9.04は、USB、バッテリー、+-端子から供給される電力によって動作します。)  
   (OpenCM9.04 can operate using power supplied via USB, battery, + - terminal.)
-- Check the operating voltage for peripheral devices when using power supply. DYNAMIXEL or XL-series receives the exact same voltage.
-- XL-320 cannot be used with other DYNAMIXEL's due to the difference in operating voltages.
+- 電源を使用する際は、周辺機器の動作電圧を確認してください。DYNAMIXELやXLシリーズは全く同じ電圧を受けます。
+- XL-320は動作電圧の違いにより、他のDYNAMIXELとの併用はできません。
 {% endcapture %}
 
 <div class="notice--danger">{{ opencm904_caution_01 | markdownify }}</div>
 
-# [Control Table](#control-table)
+# [コントロールテーブル](#control-table)
 
-**CAUTION**  
-The control table of OpenCM9.04 can only be accessed using the default firmware.  
-If other program such as Arduino sketch is downloaded, the control table cannot be used.  
-In order to use the control table and connect to Roboplus softwares, please perform Firmware Recovery from R+Manager 2.0.
+**注意**  
+OpenCM9.04のコントロールテーブルには、デフォルトのファームウェアの場合のみアクセス可能です。  
+Arduinoスケッチ等をダウンロードした場合は、コントロールテーブルにアクセスできません。  
+コントロールテーブルを使用しRoboplusソフトウェアに接続するには、R+Manager2.0からファームウェアリカバリーを実行してください。
 {: .notice--warning}
 
-Control Table consists of data regarding the current status and operation of controller. The user can control controller by changing data of Control Table via Instruction packet.
+コントロールテーブルは、コントローラの現在の状態と操作に関するデータで構成されています。  ユーザーは、インストラクションパケットを介してコントロールテーブルのデータを変更することにより、コントローラを制御できます。
 
-- **EEPROM and RAM**  
-  Data in RAM area is reset to initial values whenever the power is turned on while data in EEPROM area is kept once values are set even if the power is turned off.
+- **EEPROMとRAM**  
+  RAM領域のデータは電源投入時にデフォルト値でリセットされ、EEPROM領域のデータは電源を切っても設定値が保持されます。
 
-- **Address**  
-  Represents the location of data. To read from or write data to the control table the user should assign the correct address in the Instruction packet.
+- **アドレス**  
+  データの位置を示します。コントロールテーブルからデータを読み/書きするには、インストラクションパケットで正しいアドレスを割り当てる必要があります。
 
-- **Access**  
-  Controller has two kinds of data: Read-only data, used mainly for sensing, and read-and-write data used for driving.
+- **アクセス**  
+  コントローラには、主にセンシングに使用される読み取り専用データと、駆動に使用される読み取り/書き込みデータの2種類のデータがあります。
 
-- **Initial Value**  
-  In case of data in the EEPROM Area, the initial values on the right side of the below Control Table are the factory default settings.  
-  In case of data in the RAM Area, the initial values on the right side of the following control table are the ones when the power is turned on.
+- **デフォルト値**  
+  EEPROM領域のデータの場合、下記のコントロールテーブルの右側の値が工場出荷時の設定です。
+   RAM領域のデータの場合、下記の管理表の右側の値が電源投入時の値です。
 
-- **Size**  
-  The Size of data varies from 1 ~ 4 bytes depend on their usage. Please check the size of data when updating the data with an Instruction Packet.
+- **データサイズ**  
+  データサイズは、1〜4バイトでコントロールテーブルのアイテムによって異なります。 インストラクションパケットでデータを更新する場合は、データサイズを確認してください。
 
-## [EEPROM Area](#eeprom-area)
+## [EEPROM領域](#eeprom-area)
 
-| Address | Size |        Name         |            Description            | Access | Init Value |
-|:-------:|:----:|:-------------------:|:---------------------------------:|:------:|:----------:|
-|    0    |  2   |    Model Number     |           Model Number            |   R    |    400     |
-|    6    |  1   |  Firmware Version   |         Firmware Version          |   R    |     -      |
-|    7    |  1   |         ID          |           Controller ID           |   RW   |    200     |
-|    8    |  1   |      Baud Rate      |      Communication Baud Rate      |   R    |     1      |
-|    9    |  1   |  Return Delay Time  |        Response Delay Time        |   RW   |     0      |
-|   10    |  1   | Status Return Level |   Select Types of Status Return   |   RW   |     2      |
-|   11    |  1   | Bootloader Version  |   Indicates Bootloader Version    |   R    |     -      |
-|   12    |  1   |    DXL Baud Rate    | DYNAMIXEL Communication Baud Rate |   RW   |     3      |
-|   16    |  1   |  DYNAMIXEL Channel  |       Select DYNAMIXEL Port       |   RW   |     0      |
+| アドレス | サイズ |      アイテム名      | 説明                         | アクセス | デフォルト値 |
+|:-------:|:----:|:-------------------:|:---------------------------:|:------:|:----------:|
+|    0    |  2   |    Model Number     | モデル番号                    |   R    |    400     |
+|    6    |  1   |  Firmware Version   | ファームウェア バージョン        |   R    |     -      |
+|    7    |  1   |         ID          | コントローラID                 |   RW   |    200     |
+|    8    |  1   |      Baud Rate      | 通信ボーレート                 |   R    |     1      |
+|    9    |  1   |  Return Delay Time  | 応答待ち時間                   |   RW   |     0      |
+|   10    |  1   | Status Return Level | リターンパケットのレベル選択     |   RW   |     2      |
+|   11    |  1   | Bootloader Version  | ブートローダ バージョン          |   R    |     -      |
+|   12    |  1   |    DXL Baud Rate    | DYNAMIXELとの通信ボーレート     |   RW   |     3      |
+|   16    |  1   |  DYNAMIXEL Channel  | DYNAMIXELとの通信ポート選択     |   RW   |     0      |
 
-## [RAM Area](#ram-area)
+## [RAM領域](#ram-area)
 
-| Address | Size |              Name               |            Description             | Access | Init Value |
-|:-------:|:----:|:-------------------------------:|:----------------------------------:|:------:|:----------:|
-|   21    |  1   |           Mode Number           |           Operation Mode           |   RW   |     -      |
-|   26    |  1   |          Button Status          |        Start Button Status         |   R    |     0      |
-|   66    |  2   |        Motion Play Page         |      Motion Play Page Number       |   RW   |     0      |
-|   68    |  1   |       Motion Play Status        |         Motion Play Status         |   R    |     -      |
-|   73    |  1   |        128ms Timer Value        |        128ms Timer Counter         |   RW   |     0      |
-|   74    |  2   |         1ms Timer Value         |         1ms Timer Counter          |   RW   |     0      |
-|   77    |  1   |          Random Number          |       Creating Random Number       |   RW   |     -      |
-|   79    |  1   |            Green LED            |          Green LED Status          |   RW   |     0      |
-|   82    |  1   |           Motion LED            |         Motion LED Status          |   RW   |     0      |
-|   360   |  2   |     Port 1 IR Sensor Value      |     IR Sensor Value on Port 1      |   R    |     -      |
-|   366   |  2   |     Port 4 IR Sensor Value      |     IR Sensor Value on Port 4      |   R    |     -      |
-|   368   |  2   |     Port 1 DMS Sensor Value     |     DMS Sensor Value on Port 1     |   R    |     -      |
-|   370   |  2   |     Port 2 DMS Sensor Value     |     DMS Sensor Value on Port 2     |   R    |     -      |
-|   372   |  2   |     Port 3 DMS Sensor Value     |     DMS Sensor Value on Port 3     |   R    |     -      |
-|   374   |  2   |     Port 4 DMS Sensor Value     |     DMS Sensor Value on Port 4     |   R    |     -      |
-|   376   |  1   |    Port 1 Touch Sensor Value    |    Touch Sensor Value on Port 1    |   R    |     -      |
-|   377   |  1   |    Port 2 Touch Sensor Value    |    Touch Sensor Value on Port 2    |   R    |     -      |
-|   378   |  1   |    Port 3 Touch Sensor Value    |    Touch Sensor Value on Port 3    |   R    |     -      |
-|   379   |  1   |    Port 4 Touch Sensor Value    |    Touch Sensor Value on Port 4    |   R    |     -      |
-|   381   |  1   |     Port 2 LED Module Value     | LED Module Control Value on Port 2 |   RW   |     0      |
-|   382   |  1   |     Port 3 LED Module Value     | LED Module Control Value on Port 3 |   RW   |     0      |
-|   386   |  2   |    Port 2 User Device Value     |    User Device Value on Port 2     |   RW   |     0      |
-|   388   |  2   |    Port 3 User Device Value     |    User Device Value on Port 3     |   RW   |     0      |
-|   392   |  1   | Port 1 Temperature Sensor Value | Temperature Sensor Value on Port 1 |   R    |     -      |
-|   393   |  1   | Port 2 Temperature Sensor Value | Temperature Sensor Value on Port 2 |   R    |     -      |
-|   394   |  1   | Port 3 Temperature Sensor Value | Temperature Sensor Value on Port 3 |   R    |     -      |
-|   395   |  1   | Port 4 Temperature Sensor Value | Temperature Sensor Value on Port 4 |   R    |     -      |
-|   396   |  1   | Port 1 Ultrasonic Sensor Value  | Ultrasonic Sensor Value on Port 1  |   R    |     -      |
-|   397   |  1   | Port 2 Ultrasonic Sensor Value  | Ultrasonic Sensor Value on Port 2  |   R    |     -      |
-|   398   |  1   | Port 3 Ultrasonic Sensor Value  | Ultrasonic Sensor Value on Port 3  |   R    |     -      |
-|   399   |  1   | Port 4 Ultrasonic Sensor Value  | Ultrasonic Sensor Value on Port 4  |   R    |     -      |
-|   400   |  1   |  Port 1 Magnetic Sensor Value   |  Magnetic Sensor Value on Port 1   |   R    |     -      |
-|   401   |  1   |  Port 2 Magnetic Sensor Value   |  Magnetic Sensor Value on Port 2   |   R    |     -      |
-|   402   |  1   |  Port 3 Magnetic Sensor Value   |  Magnetic Sensor Value on Port 3   |   R    |     -      |
-|   403   |  1   |  Port 4 Magnetic Sensor Value   |  Magnetic Sensor Value on Port 4   |   R    |     -      |
-|   404   |  1   |   Port 1 Motion Sensor Value    |   Motion Sensor Value on Port 1    |   R    |     -      |
-|   405   |  1   |   Port 2 Motion Sensor Value    |   Motion Sensor Value on Port 2    |   R    |     -      |
-|   406   |  1   |   Port 3 Motion Sensor Value    |   Motion Sensor Value on Port 3    |   R    |     -      |
-|   407   |  1   |   Port 4 Motion Sensor Value    |   Motion Sensor Value on Port 4    |   R    |     -      |
-|   409   |  1   |    Port 2 Color Sensor Value    |    Color Sensor Value on Port 2    |   R    |     -      |
-|   410   |  1   |    Port 3 Color Sensor Value    |    Color Sensor Value on Port 3    |   R    |     -      |
+| アドレス | サイズ |              アイテム名          | 説明                            | アクセス | デフォルト値 |
+|:-------:|:----:|:-------------------------------:|:------------------------------:|:------:|:----------:|
+|   21    |  1   |           Mode Number           | 動作モード                       |   RW   |     -      |
+|   26    |  1   |          Button Status          | スタートボタンの状態               |   R    |     0      |
+|   66    |  2   |        Motion Play Page         | Motion Play ページ番号           |   RW   |     0      |
+|   68    |  1   |       Motion Play Status        | Motion Play ステータス           |   R    |     -      |
+|   73    |  1   |        128ms Timer Value        | 128ms タイマカウンタ              |   RW   |     0      |
+|   74    |  2   |         1ms Timer Value         | 1ms タイマカウンタ                |   RW   |     0      |
+|   77    |  1   |          Random Number          | 乱数値の生成                      |   RW   |     -      |
+|   79    |  1   |            Green LED            | 緑LEDのステータス                 |   RW   |     0      |
+|   82    |  1   |           Motion LED            | Motion LEDのステータス            |   RW   |     0      |
+|   360   |  2   |     Port 1 IR Sensor Value      | ポート1の赤外線センサ値           |   R    |     -      |
+|   366   |  2   |     Port 4 IR Sensor Value      | ポート4の赤外線センサ値           |   R    |     -      |
+|   368   |  2   |     Port 1 DMS Sensor Value     | ポート1の距離センサ値             |   R    |     -      |
+|   370   |  2   |     Port 2 DMS Sensor Value     | ポート2の距離センサ値             |   R    |     -      |
+|   372   |  2   |     Port 3 DMS Sensor Value     | ポート3の距離センサ値             |   R    |     -      |
+|   374   |  2   |     Port 4 DMS Sensor Value     | ポート4の距離センサ値             |   R    |     -      |
+|   376   |  1   |    Port 1 Touch Sensor Value    | ポート1のタッチセンサ値           |   R    |     -      |
+|   377   |  1   |    Port 2 Touch Sensor Value    | ポート2のタッチセンサ値           |   R    |     -      |
+|   378   |  1   |    Port 3 Touch Sensor Value    | ポート3のタッチセンサ値           |   R    |     -      |
+|   379   |  1   |    Port 4 Touch Sensor Value    | ポート4のタッチセンサ値           |   R    |     -      |
+|   381   |  1   |     Port 2 LED Module Value     | ポート2のLEDモジュール値          |   RW   |     0      |
+|   382   |  1   |     Port 3 LED Module Value     | ポート3のLEDモジュール値          |   RW   |     0      |
+|   386   |  2   |    Port 2 User Device Value     | ポート2のユーザーデバイス値        |   RW   |     0      |
+|   388   |  2   |    Port 3 User Device Value     | ポート3のユーザーデバイス値        |   RW   |     0      |
+|   392   |  1   | Port 1 Temperature Sensor Value | ポート1の温度センサ値             |   R    |     -      |
+|   393   |  1   | Port 2 Temperature Sensor Value | ポート2の温度センサ値             |   R    |     -      |
+|   394   |  1   | Port 3 Temperature Sensor Value | ポート3の温度センサ値             |   R    |     -      |
+|   395   |  1   | Port 4 Temperature Sensor Value | ポート4の温度センサ値             |   R    |     -      |
+|   396   |  1   | Port 1 Ultrasonic Sensor Value  | ポート1の超音波センサ値           |   R    |     -      |
+|   397   |  1   | Port 2 Ultrasonic Sensor Value  | ポート2の超音波センサ値           |   R    |     -      |
+|   398   |  1   | Port 3 Ultrasonic Sensor Value  | ポート3の超音波センサ値           |   R    |     -      |
+|   399   |  1   | Port 4 Ultrasonic Sensor Value  | ポート4の超音波センサ値           |   R    |     -      |
+|   400   |  1   |  Port 1 Magnetic Sensor Value   | ポート1の磁気センサ値             |   R    |     -      |
+|   401   |  1   |  Port 2 Magnetic Sensor Value   | ポート2の磁気センサ値             |   R    |     -      |
+|   402   |  1   |  Port 3 Magnetic Sensor Value   | ポート3の磁気センサ値             |   R    |     -      |
+|   403   |  1   |  Port 4 Magnetic Sensor Value   | ポート4の磁気センサ値             |   R    |     -      |
+|   404   |  1   |   Port 1 Motion Sensor Value    | ポート1のモーションセンサ値        |   R    |     -      |
+|   405   |  1   |   Port 2 Motion Sensor Value    | ポート2のモーションセンサ値        |   R    |     -      |
+|   406   |  1   |   Port 3 Motion Sensor Value    | ポート3のモーションセンサ値        |   R    |     -      |
+|   407   |  1   |   Port 4 Motion Sensor Value    | ポート4のモーションセンサ値        |   R    |     -      |
+|   409   |  1   |    Port 2 Color Sensor Value    | ポート2のカラーセンサ値           |   R    |     -      |
+|   410   |  1   |    Port 3 Color Sensor Value    | ポート3のカラーセンサ値           |   R    |     -      |
 
-**NOTE** : Some Addresses of the Control Table can be tested with R+ Manager 2.0.
+**注釈** : コントロールテーブルの一部のアドレスは、R+Manager2.0を使用してテストが可能です。
 {: .notice}
 
-**WARNING** : DYNAMIXEL should **NOT** use ID 200 when OpenCM9.04 is using factory default firmware recovered with R+Manager.  
-ID 200 will be assigned to OpenCM9.04 in the factory default firmware.
+**警告** : OpenCM9.04をR+Manager2.0で工場出荷時のファームウェアに書き換えた場合、DYNAMIXELでは**ID 200を使用しないでください**。  
+ID 200は、工場出荷時のファームウェアでOpenCM9.04に割り当てられています。
 {: .notice--warning}
 
-# [Hardware](#hardware)
+# [ハードウェア](#hardware)
 
-## [Memory Map](#memory-map)
+## [メモリマップ](#memory-map)
 
 ![](/assets/images/parts/controller/opencm904/memory_map.png)
 
-## [Block Diagram](#block-diagram)
+## [ブロック図](#block-diagram)
 
-OpenCM9.04’s block diagram is shown below. OpenCM9.04’s schematic is based on 32bit Cortex-M3 core STM32F103CB microcontroller.  
-The power schematic is designed to cascade through 5V and 3.3V regulators. 5V is supplied to TTL bus and 3.3V is supplied to microcontrollers, 5-pin port and 4-pin communication port.  
-OpenCM9.04 supports USB2.0 FS. Micro-B connector is used to download the program or perform data communication.  
-Pin 11(TX1) & Pin 12(RX1) cannot be used simultaneously because USART Channel 1 is assigned to DYNAMIXEL TTL Bus.  
-USART channel 1 is registered under DYNAMIXEL TTL Bus and cannot be used simultaneously with pin 11(TX1) & 12(RX1).
-
+OpenCM9.04のブロック図を以下に示します。OpenCM9.04の回路図は、32bit Cortex-M3コアのSTM32F103CBマイクロコントローラに基づいています。  
+電源回路図は、5Vと3.3Vのレギュレータを介してカスケードするように設計されています。5VはTTLバスに、3.3Vはマイクロコントローラ、5ピンポート、4ピン通信ポートに供給されます。  
+OpenCM9.04はUSB2.0 FSに対応しています。Micro-Bコネクタは、プログラムのダウンロードやデータ通信を行うために使われます。  
+USARTチャンネル1はDYNAMIXEL TTLバスに割当てられているため、ピン 11(TX1)とピン 12(RX1)を併用することはできません。  
+ 
 ![](/assets/images/parts/controller/opencm904/opencm904_01.png)
 
 
-## [Layout/Pin Map](#layoutpin-map)
+## [レイアウト/ピン配置](#layoutpin-map)
 
 ![](/assets/images/parts/controller/opencm904/opencm904_02.png)
 
-### [Power Switch](#power-switch)
-Switch used to control the power supplied to the board and DYNAMIXEL on/off. (Note: the board is always powered ON when USB cable is connected.)
-### [Serial Battery Socket](#serial-battery-socket)
-Connects two LBS-04 Lithium-ion battery.
+### [電源スイッチ](#power-switch)
+このスイッチは、ボードへの電源供給とDYNAMIXELのON/OFFを制御するためのスイッチです。(注: USB ケーブルが接続されているときは、ボードの電源は常にオンになっています)  
 
-**CAUTION** : Do NOT charge the battery while its connected to the board because the user will short the circuit. Be sure to disconnect from the board when charging the battery.
-{: .notice--warning}
+### [直列バッテリーソケット](#serial-battery-socket)
+LBS-04リチウムイオン電池2本を接続します。  
 
-### [DYNAMIXEL TTL 3 PIN](#dynamixel-ttl-3-pin)
-Port for daisy chaining DYNAMIXEL's that use 3-pin cables (DYNAMIXEL TTL Bus).
+**注意** : 回路をショートさせてしまうため、基板に接続されている間はバッテリーを充電しないでください。バッテリーを充電する際には、必ず基板から切り離してください。  
 
-{% include en/dxl/pinout_warning.md %}
+### [DYNAMIXEL TTL 3ピン](#dynamixel-ttl-3-pin)
+3ピンケーブル(DYNAMIXEL TTL Bus)を使用するDYNAMIXELをデイジーチェーン接続するためのポートです。  
 
-### [Communication Port](#communication-port)
-Used from wired/wireless communication using peripheral devices (i.e. [BT-410], [BT-210], [BT-110A], [ZIG-110A], [LN-101], etc). OpenCM9.04’s 4-pin communication port uses Serial2(USART2).
+**警告** : **ピンアウトを確認してください** DYNAMIXELのピンアウトはコネクタメーカーのピンアウトと異なる場合があります。
+
+### [通信ポート](#communication-port)
+周辺機器（BT-410、BT-210、BT-110A、ZIG-110A、LN-101など）を使う有線/無線通信から使用します。OpenCM9.04 の 4 ピン通信ポートは、Serial2(USART2)を使用しています。　
 
 ![](/assets/images/parts/controller/opencm904/opencm9.04_1-1.jpg)
 
-> 4-pin communication port pinmap
+> 4ピン通信ポート ピン配置
 
 ![](/assets/images/parts/controller/opencm904/opencm904_04.png)
 
-> Example : Wireless communication between OpenCM9.04 and a smartphone
+> 例：OpenCM9.04とスマートフォン間の無線通信
 
 ![](/assets/images/parts/controller/opencm904/opencm904_05.png)
 
-> Example : Bluetooth communication using OpenCM9.04 and RC100
+> 例：OpenCM9.04とRC100を使用したBluetooth通信  
 
 ![](/assets/images/parts/controller/opencm904/opencm904_06.png)
 
-> Example : Zigbee communication using OpenCM9.04 and RC100
+> 例：OpenCM9.04とRC100を使用したZigbee通信
 
 ![](/assets/images/parts/controller/opencm904/opencm904_07.png)
 
-> Example : Wired communication using OpenCM9.04 and LN-101
+> 例：OpenCM9.04とLN-101を使用した有線通信
 
-### [User Button](#user-button)
-A button that can be controlled/programmed by the user. Can be used as pin 23 or BOARD_BUTTON_PIN. It can be initialized in setup() as pinMode(23, INPUT_PULLDOWN).  
-If OpenCM9.04 does not download the program, connect the USB cable while holding down the “User Button”. Status LED will stay lit and the download will be initiated.
+### [ユーザーボタン](#user-button)
+ユーザが制御/プログラムできるボタンです。ピン23またはBOARD_BUTTON_PINとして使用できます。setup()でpinMode(23, INPUT_PULLDOWN)として初期化することができます。    
+OpenCM9.04がプログラムをダウンロードできない場合は、「ユーザーボタン」を押しながらUSBケーブルを接続してください。ステータスLEDが点灯したままになり、ダウンロードが開始されます。  
 
 ![](/assets/images/parts/controller/opencm904/opencm904_08.png)
 
-> OpenCM9.04 can enter a “Emergency Recovery Mode” by using the “User button”
+> OpenCM9.04では、「ユーザーボタン」を使用して「緊急復旧モード」に入ることができます。
 
 ### [Ext. ADC Ref Jumper](#ext-adc-ref-jumper)
-Analog Reference voltage can be modified. Please refer to [I/O header section](#io-header).
+アナログ基準電圧の変更ができます。I/Oヘッダーの項目を参照してください。 [I/Oヘッダー](#io-header).
 
-### [Micro-B USB](#micro-b-usb)
-Used to download programs onto OpenCM9.04 and used to communicate with other devices via USB while simultaneously supplying 5V to the board.  
-Upon connecting the battery, 5V power from USB is automatically disconnected and power is supplied from the battery.  
-If excessive current is drawn, internal fuse cuts off the current drawn from the 5V USB connection to protect the user’s PC from damage.
+### [マイクロUSBタイプB](#micro-b-usb)
+OpenCM9.04にプログラムをダウンロードし、USB経由で他のデバイスと通信しながら、同時に5Vを基板に供給するために使用します。  
+バッテリーを接続すると、USBからの5V電源は自動的に切断され、バッテリーから電源が供給されます。
+過大な電流が流れた場合は、内部のヒューズが5VのUSB接続からの電流を遮断し、ユーザーのPCを破損から保護します。  
 
 ![](/assets/images/parts/controller/opencm904/opencm904_09.png)
 
-### [Status LED]
-LED used to test OpenCM9.04’s program. The LED turns ON when Pin 14 or BOARD_LED_PIN is HIGH and turns OFF when it’s LOW. PWM control is possible.
+### [ステータスLED]
+OpenCM9.04のプログラムをテストするためのLEDです。14番ピンまたはBOARD_LED_PINがHIGHの時に点灯し、LOWの時に消灯します。PWM制御が可能です。  
 
 ![](/assets/images/parts/controller/opencm904/opencm904_10.png)
 
-> Status LED Position
+> ステータスLEDの位置
 
-### [Reset Button](#reset-button)
-Imitates the CPU to reset.
+### [リセットボタン](#reset-button)
+CPUをリセットします。
 
-### [JTAG/SWD 4 PIN](#jtagswd-4-pin)
-Used to connect ST-LINK or other In-Circuit Debugger/Programmer.  
-JTAG/SWD 4-pin port can be used for various developments by advanced users. ST-LINK connection example is shown below.
-
+### [JTAG/SWD 4ピン](#jtagswd-4-pin)
+ST-LINKや、その他のインサーキットデバッガ/プログラマとの接続に使用します。  
+JTAG/SWD 4ピンポートは、上級者の方の様々な開発にご利用いただけます。以下にST-LINKの接続例を示します。  
 ![](/assets/images/parts/controller/opencm904/opencm904_11.png)
 
-> Example: ST-LINK and OpenCM9.04 connection
+> 例：ST-LINKとOpenCM9.04の接続
 
-### [ROBOTIS 5-Pin Port](#robotis-5-pin-port)
-Used to connect ROBOTIS 5-pin devices (modules).
+### [ROBOTIS 5-ピンポート](#robotis-5-pin-port)
+ROBOTISの5ピン-デバイス（モジュール）を接続するために使用します。
 
 ![](/assets/images/parts/controller/opencm904/opencm904_12.png)
 
-> 5-pin port number and instructions
+> 5ピン-ポート番号と手順
 
 ![](/assets/images/parts/controller/opencm904/opencm904_13.png)
 
-> 5-pin cable direction
+> 例：5ピンケーブルの方向
 
-|    5-pin Device Type     | Port 1 | Port 2 | Port 3 | Port 4 |
+|    5-ピン デバイスタイプ     | ポート1 | ポート2 | ポート3 | ポート4 |
 |:------------------------:|:------:|:------:|:------:|:------:|
-|        IR Sensor         |   O    |   X    |   X    |   O    |
-|        DMS Sensor        |   O    |   O    |   O    |   O    |
-|       Gyro Sensor        |   O    |   O    |   O    |   O    |
-|       Touch Sensor       |   O    |   O    |   O    |   O    |
-|       Color Sensor       |   X    |   O    |   O    |   X    |
-|     Magnetic Sensor      |   O    |   O    |   O    |   O    |
-|    Temperature Sensor    |   O    |   O    |   O    |   O    |
-| Passive IR Sensor PIR-10 |   O    |   O    |   O    |   O    |
-|        LED Module        |   X    |   O    |   O    |   X    |
+|        IRセンサ           |   O    |   X    |   X    |   O    |
+|        DMSセンサ          |   O    |   O    |   O    |   O    |
+|       ジャイロセンサ       |   O    |   O    |   O    |   O    |
+|       タッチセンサ         |   O    |   O    |   O    |   O    |
+|       カラーセンサ         |   X    |   O    |   O    |   X    |
+|        磁気センサ         |   O    |   O    |   O    |   O    |
+|        温度センサ         |   O    |   O    |   O    |   O    |
+| Passive IRセンサ PIR-10  |   O    |   O    |   O    |   O    |
+|       LED モジュール      |   X    |   O    |   O    |   X    |
 
-> ROBOTIS sense and LED module compatibility list
+> 例：ROBOTIS センサとLEDモジュールの互換性一覧
 
-### [I/O Header](#io-header)
-OpenCM9.04’s CPU **STM32F103CB** can be accessed via GPIO pins.  
-26 GPIO pins (0~25) are digital input/outputs and operates at 3.3V. Digital input either HIGH(3.3V) or LOW(0V).  
-Digital input’s maximum toggle speed is 18Mhz. (With exception of pin 22 & 23, which has a maximum toggle speed of 2Mhz).  
-Digital pins can only tolerate up to 3.3V; any voltage input greater than 3.3V may damage the OpenCM9.04.  
-5V Tolerant Pin : 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21  
-The maximum current these pins can tolerate is 25mA. (exception: pin 22 & 23 can only tolerate 3mA.)  
-All of OpenCM9.04’s GPIO pins can internally “pull-up” or “pull-down” and can be modified via software. “Pull-up” and “pull-up” resistance is 40K&Omega;(Typical).
-
+### [I/Oヘッダ](#io-header)
+OpenCM9.04のCPU STM32F103CBはGPIOピンを介してアクセスできます。  
+26本のGPIOピン(0～25)はデジタルI/Oで、3.3Vで動作します。デジタル入力はHIGH(3.3V)またはLOW(0V)です。  
+デジタル入力の最大トグル速度は18Mhzです。(ピン22と23を除いて、最大トグル速度は2Mhzです)。  
+デジタルピンは3.3Vまでしか許容できません。3.3Vを超える電圧を入力するとOpenCM9.04が破損する可能性があります。  
+5V耐圧ピン : 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21  
+これらのピンが許容できる最大電流は25mAです。(例外：ピン22と23は3mAまでしか許容できません。)  
+OpenCM9.04のすべてのGPIOピンは内部的に"プルアップ"または"プルダウン"が可能で、ソフトウェアによって変更することができます。"プルアップ"と "プルダウン"の抵抗は40KΩ(標準)です。  
 ![](/assets/images/parts/controller/opencm904/opencm904_14.png)
 
-> OpenCM9.04 GPIO PinMap
+> OpenCM9.04 GPIOピン配置
 
-| Name             | Arduino Pin   |          |
+| 名称             | Arduinoピン |          |
 |:-----------------|:--------------|:---------|
-| Serial/SerialUSB | USB Port      |          |
-| Serial1          | D11, D12      | DXL Port |
-| Serial2          | A4,  A5       |          |
-| Serial3          | D24, D25      |          |
+| シリアル/シリアルUSB | USBポート      |          |
+| シリアル1          | D11, D12      | DXLポート |
+| シリアル2          | A4,  A5       |          |
+| シリアル3          | D24, D25      |          |
 | SPI1             | A1, A6, A7    |          |
 | SPI2             | D19, D20, D21 |          |
 | PWM              | A2 ~ D14      |          |
@@ -310,70 +308,69 @@ All of OpenCM9.04’s GPIO pins can internally “pull-up” or “pull-down” 
 | LED              | D14           |          |
 | EXTI             | A0 ~ D25      |          |
 | I2C              | D24, D25      |          |
-| BUTTON           | D23           |          |
-| 5PIN #1          | D2, D6, D7    |          |
-| 5PIN #2          | D3, D8, D9    |          |
-| 5PIN #3          | D0, D10, D11  |          |
-| 5PIN #4          | D1, D12, D13  |          |
-| 4PIN UART        | D1, D12, D13  | Serial2  |
+| ボタン            | D23           |          |
+| 5ピン #1          | D2, D6, D7    |          |
+| 5ピン #2          | D3, D8, D9    |          |
+| 5ピン #3          | D0, D10, D11  |          |
+| 5ピン #4          | D1, D12, D13  |          |
+| 4ピン UART        | D1, D12, D13  | シリアル2  |
 
-- **Serial(USART)** : 11(TX1), 12(RX1), 4(TX2), 5(RX2), 24(TX3), 25(RX3)
-- **PWM** : 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14
-- **SPI** : 0(SS1), 1(SCK1),6(MISO1) ,7(MOSI1), 18(SS2) ,19(SCK2) ,20(MISO2) ,21(MOSI2)
-- **LED** : 14 (BOARD_LED_PIN is defined as 14)
-- **BUTTON** : 23 (BOARD_BUTTON_PIN is defined as 23)
-- **TWI(I2C)** : 24(SCL2), 25(SDA2)
-- **RST** : Pin connect to the CPU Reset signal.
-- **5V** : outputs 5V when the battery is connected to the board. (Does not output 5V when USB only the USB cable is connected.)
-- **3.3V** : outputs 3.3V when the power is supplied to the board via battery or USB cable.
-- **GND** : GROUND(-) terminal.
-- **A0** : Digital I/O and analog input.
-- **A1** : Digital I/O and analog input. Can be used for SPI channel 1’s SCK clock-pin.
-- **A2** : Digital I/O, analog input, & PWM output.
-- **A3** : Digital I/O, analog input, & PWM output.
-- **A4** : Digital I/O, analog input, & PWM output. Used as USART2(Serial2) channel’s TXD pin and connected to 4-pin communication port’s TX2.
-- **A5** : Digital I/O, analog input, & PWM output. Used as USART2(Serial2) channel’s RXD pin and connected to 4-pin communication RX2.
-- **A6** : Digital I/O, analog input, & PWM output. Can be used as SPI channel 1’s MISO pin.
-- **A7** : Digital I/O, analog input, & PWM output. Can be used as SPI channel 1’s MISO pin.
-- **A8** : Digital I/O, analog input, & PWM output.
-- **A9** Digital I/O, analog input, & PWM output.
-- **D10** : Digital I/O & PWM output.
-- **D11** : Digital I/O & PWM output. USART1’s (Serial1) TX pin. Cannot be simultaneously used with the DYNAMIXEL TTL Bus.
-- **D12** : Digital I/O & PWM output. USART1(Serial1)’s RX pin. Cannot be simultaneously used with the DYNAMIXEL TTL Bus.
-- **D13** : Digital I/O & PWM output.
-- **D14** : Digital I/O & PWM output. Pin connected to the Status LED. It’s pre-defined as BOARD_LED_PIN.
-- **D15** : Digital I/O.
-- **VCC(+)** : +voltage of the board. There are 2 VCC(+) pins. Connected to the + terminal of the battery socket.
-- **GND(-)** :-voltage of the board. There are 2 GND(-) pins. Connected to the + terminal of the battery socket.
-- **TTL** : DYNAMIXEL TTL Bus’s Data line. Used to communicate with 3-pin TTL DYNAMIXEL's.
-- **D** : Relevant to DYNAMIXEL TTL Bus and used to select TX, RX.
-- **X** : DYNAMIXEL TTL Bus’s TX pin.
-- **L** : DYNAMIXEL TTL Bus’s RX pin.
-- **D16** : Digital I/O Pin.
-- **D17** : Digital I/O Pin.
-- **D18** : Digital I/O Pin.
-- **D19** : Digital I/O Pin. Can be used for SPI channel 2’s SCK clock pin.
-- **D20** : Digital I/O Pin. Can be used for SPI channel 2’s MOSI pin.
-- **D21** : Digital I/O Pin. Can be used for SPI channel 2’s MOSI pin.
-- **D22** : Digital I/O Pin. Maximum output current is 3mA and maximum toggle speed is 2Mhz.
-- **D23** : Digital I/O Pin. It’s connected to User Button. If the power is supplied while User Button is pressed, the board initiates Emergency Recovery (Download) Mode. Maximum output current is 3mA and maximum toggle speed is 2Mhz.
-- **D24** : Digital I/O Pin. Can be used as I2C channel 2’s SCL pin or USART3(Serial3)’s TX pin.
-- **D25** : Digital I/O Pin. Can be used as I2C channel 2’s SDA pin or USART3(Serial3)’s RX pin.
-- **5V** : 5V output pin. JP2 jumper can be modified to connect to AREF pin and change the default voltage to 5V.
-- **AREF** : Connect to CPU’s Analog Reference pin. Voltage can be modified from 3.3V by changing the JP2 jumper (Maximum 5V). Refer to STM32F103CB datasheet for specifications.)
+- **シリアル(USART)** : 11(TX1), 12(RX1), 4(TX2), 5(RX2), 24(TX3), 25(RX3)  
+- **PWM** : 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14  
+- **SPI** : 0(SS1), 1(SCK1), 6(MISO1), 7(MOSI1), 18(SS2), 19(SCK2), 20(MISO2), 21(MOSI2)  
+- **LED** : 14(BOARD_LED_PINは14として定義されています)  
+- **ボタン** : 23(BOARD_BUTTON_PINは23として定義されています)  
+- **TWI(I2C)** : 24(SCL2), 25(SDA2)  
+- **RST** : CPUのリセット信号に接続するピンです。  
+- **5V** : バッテリーを基板に接続した時に5Vを出力します。(USBケーブルのみを接続した場合は5Vを出力しません)  
+- **3.3V** : バッテリーもしくはUSBケーブルで基板に電源を供給した場合は3.3Vを出力します。  
+- **GND** : GROUND(-)端子です。  
+- **A0** : デジタルI/O、アナログ入力です。  
+- **A1** : デジタルI/O、アナログ入力です。SPIチャンネル1のSCKクロックピンに使用できます。  
+- **A2** : デジタルI/O、アナログ入力、PWM出力です。  
+- **A3** : デジタルI/O、アナログ入力、PWM出力です。  
+- **A4** : デジタルI/O、アナログ入力、PWM出力です。USART2(Serial2)チャンネルのTXDピンとして使用し、4ピン通信ポートのTX2に接続します。  
+- **A5** : デジタルI/O、アナログ入力、PWM出力です。USART2(Serial2)チャンネルのRXDピンとして使用し、4ピン通信RX2に接続されています。  
+- **A6** : デジタルI/O、アナログ入力、PWM出力です。SPIチャンネル1のMISOピンとして使用できます。  
+- **A7** : デジタルI/O、アナログ入力、PWM出力です。SPIチャンネル1のMISOピンとして使用できます。  
+- **A8** : デジタルI/O、アナログ入力、PWM出力です。  
+- **A9** : デジタルI/O、アナログ入力、PWM出力です。  
+- **D10** : デジタルI/O、アナログ入力、PWM出力です。  
+- **D11** : デジタルI/O、PWM出力です。USART1(Serial1)のTXピンです。DYNAMIXEL TTLバスとの併用はできません。  
+- **D12** : デジタルI/O、PWM出力です。USART1(Serial1)のRXピン。DYNAMIXEL TTLバスとの併用はできません。  
+- **D13** : デジタルI/O、PWM出力です。  
+- **D14** : デジタルI/O、PWM出力です。ステータスLEDに接続されているピンです。それは、BOARD_LED_PINとして定義されています。  
+- **D15** : デジタルI/Oです。  
+- **VCC(+)** : 基板の+電圧です。VCC(+)ピンが2つあります。バッテリーソケットの+端子に接続されています。  
+- **GND(-)** : ボードの-電圧です。2本のGND(-)ピンがあります。バッテリーソケットの+端子に接続します。  
+- **TTL** : DYNAMIXEL TTLバスのデータライン。3ピンTTL DYNAMIXELとの通信に使用します。  
+- **D** : DYNAMIXEL TTLバスに関連し、TX、RXを選択するために使用されます。  
+- **X** : DYNAMIXEL TTLバスのTXピン。  
+- **L** : DYNAMIXEL TTLバスのRXピン。 
+- **D16** : デジタルI/Oピンです。  
+- **D17** : デジタルI/Oピンです。  
+- **D18** : デジタルI/Oピンです。  
+- **D19** : デジタルI/Oです。SPIチャンネル2のSCKクロックピンに使用できます。  
+- **D20** : デジタルI/Oピンです。SPIチャンネル2のMOSIピンに使用できます。  
+- **D21** : デジタルI/Oピンです。SPIチャンネル2のMOSIピンに使用できます。  
+- **D22** : デジタルI/O品です。最大出力電流は3mA、最大トグル速度は2Mhzです。  
+- **D23** : デジタルI/Oピンです。ユーザーボタンに接続されています。ユーザーボタンが押されている間に電源が供給されると、ボードは緊急リカバリー(ダウンロード)モードを開始します。最大出力電流は3mAで、最大トグル速度は2Mhzです。  
+- **D24** : デジタルI/Oピンです。I2Cチャンネル2のSCLピンもしくは、USART3(Serial3)のTXピンとして使用できます。  
+- **D25** : デジタルI/Oピンです。I2Cチャンネル2のSDAピンまたはUSART3(Serial3)のRXピンとして使用できます。  
+- **5V** : 5V出力ピンです。JP2ジャンパーを変更してAREFピンに接続し、デフォルトの電圧を5Vに変更することができます。  
+- **AREF** : CPU のアナログリファレンスピンに接続します。JP2ジャンパを変更することで、3.3Vから電圧を変更することができます（最大5V）。仕様はSTM32F103CBのデータシートを参照してください。  
 
 ![](/assets/images/parts/controller/opencm904/opencm904_15.png)
 
-> JP2 jumper location and instructions
+> JP2ジャンパーの位置と手順
 
 ![](/assets/images/parts/controller/opencm904/opencm904_16.png)
 
-> Example: Changing default Analog Reference voltage(AREF) to 5V by modifying JP2
+> 例：JP2を修正してデフォルトのアナログ基準電圧(AREF)を5Vに変更する。
 
-**CAUTION** : Check the pin supporting up to 5V once Analog Reference (AREF) has been modified to 5V.
-{: .notice--warning}
+**注意** : アナログリファレンス(AREF)を5Vに修正した場合は、5Vまで対応しているかどうかを確認してください。
 
-## [Pin Name Definition](#pin-name-definition)
+## [ピン名の定義](#pin-name-definition)
 
 ```c++
 #define LED_BUILTIN             14
@@ -398,7 +395,7 @@ All of OpenCM9.04’s GPIO pins can internally “pull-up” or “pull-down” 
 #define BOARD_SPI2_SCK_PIN      19  //D27 PB13
 ```
 
-## [Pin Function Definition](#pin-function-definition)
+## [ピン機能の定義](#pin-function-definition)
 
 ```c++
 extern const Pin2PortMapArray g_Pin2PortMapArray[]=
@@ -443,89 +440,91 @@ extern const Pin2PortMapArray g_Pin2PortMapArray[]=
 };
 ```
 
-# [Connecting Power](#connecting-power)
+# [電源接続方法](#connecting-power)
 
-OpenCM board can be powered using 3 types of voltage input:
-1. LBS-40 battery socket
-2. Power supplied via +- header pins
-3. Micro-B USB cable
+OpenCM9.04ボードは、3種類の電圧入力で動作します。:
+1. LB-040バッテリーソケット
+2. +/- のヘッダピン
+3. Micro-B USB
 
 ![](/assets/images/parts/controller/opencm904/opencm904_17.png)
 
-We recommend using 2 LBS-40 batteries when operating the XL-320.
+XL-320の動作時には、LB-040バッテリーを2つ使用する事をお勧めします。
 
 ![](/assets/images/parts/controller/opencm904/opencm904_18.png)
 
-> Example: OpenCM9.04, XL-320, and LBS-40(Li-Ion Battery) connection
+> 例：OpenCM9.04, XL-320, LB-040（リチウムイオンバッテリー）を接続
 
 ![](/assets/images/parts/lbs-40_product.jpg)
 
-> LBS-40 battery
+> LB-040 バッテリー
 
-We recommend using +- pin to power DYNAMIXEL's other than XL-320.
+XL-320以外のDYNAMIXELに電源を供給する場合は、+/-ピンを使用する事をお勧めします。
 
 ![](/assets/images/parts/controller/opencm904/opencm904_19.png)
 
-> Example: OpenCM9.04 and AX12 connection
+> 例：OpenCM9.04, AX-12を接続
 
-As displayed in the image below, connect towards the end of both +,- and it can also be connected using other power supply equipment.  
-(If you see the back side of OpenCM9.04, the +,- in the center is connected as displayed in image A. So, please connect as in the image below)
+以下の図のように、+/-ピンの両方端に接続します。他の電源装置を使用して接続する事も可能です。  
+（OpenCM9.04の裏面が見える場合は、中央の+/-ピンが画像Aのように接続されています。以下の画像のように接続してください）
 
 ![](/assets/images/parts/controller/opencm904/opencm904_20.jpg)
 
-> Picture A
+> 画像 A
 
 ![](/assets/images/parts/controller/opencm904/opencm904_21.jpg)
 
-> Example : Power Connection
+> 例:電源接続
 
-- `Example` Power supply cable ([Link](http://www.robotsource.org/bs/bd.php?bt=forum_CM9DeveloperWorld&bt_id=583))
+- `例` 電源接続ケーブル ([Link](http://www.robotsource.org/bs/bd.php?bt=forum_CM9DeveloperWorld&bt_id=583))
 
-Avoid connecting power to the battery socket and +- pin (shown below). Do not connect an
-incorrect battery to the battery socket. Only connect LBS-40 onto the battery socket.
+バッテリーソケットと+/-ピン（下図を参照）に同時に電源を接続しないでください。間違ったバッテリーをバッテリーソケットに接続しないでください。  
+LB-040はバッテリーソケットのみに接続してください。
 
 ![](/assets/images/parts/controller/opencm904/opencm904_22.jpg)
 
-> CAUTION: Remove either the battery connector or +-header-pin power
+> 注意：バッテリーコネクタ、または+/- ヘッダピン電源を取り外します。
 
 ![](/assets/images/parts/controller/opencm904/opencm904_23.jpg)
 
-> CAUTION: Don’t used different types of batteries
+> 注意：種類の異なるバッテリーは、使用しないでください
 
 ![](/assets/images/parts/controller/opencm904/opencm904_24.png)
 
-It is possible to simultaneously connect the USB port, LBS-40 battery, and +- pin.(Built-in protection)  
-We recommend supplying the recommended voltage of the DYNAMIXEL when supplying power via +- pin or battery. Higher voltage usage may reduce the DYNAMIXEL’s lifespan or damage the product.  
-The OpenCM9.04’s maximum tolerable voltage is 16V; voltage input greater than 16V may damage the board.  
-DYNAMIXEL cannot operate using the power supplied via USB cable, but communication ports and I/O headers can be operated normally.  
-CAUTION: do NOT charge the LBS-40 battery while it is connected to the board and the board is connected to the PC via USB cable.
+USBポート、LB-040バッテリー、+/-ピンを同時に接続することが可能です。（保護機能あり）  
++/-ピン、またはバッテリーを介して電力を供給する場合、DYNAMIXELの推奨電圧を供給することをお勧めします。  
+より高い電圧で使用すると、DYNAMIXELの寿命が短くなったり、製品が損傷する可能性があります。  
+OpenCM9.04の最大許容電圧は16Vです。16Vを超える電圧入力はボードを損傷する可能性があります。  
+DYNAMIXELは、USBケーブルから供給される電源では動作しませんが、通信ポートやI/Oヘッダーは正常に動作します。  
+注意：LB-040バッテリーがボードに接続され、ボードがUSBケーブルを介してPCに接続されている間は、LBS-40バッテリーを充電しないでください。
 
-# [Switch Assembly(Type A)](#switch-assemblytype-a)
+# [スイッチアセンブリ(Type A)](#switch-assemblytype-a)
 
-OpenCM9.04 Type A is sold without a power switch and JP1 shorted. To add the power switch, remove the solder connection of JP1 and solder the 2.54mm pitch power switch.  
-Power switch is included in the OpenCM accessory kit or other switches with the similar pitch can be used.  
+OpenCM9.04 Type Aは、電源スイッチとJP1が短絡されていない状態で販売されています。  
+電源スイッチを追加するには、JP1のはんだ接続を取り外し、2.54mmピッチの電源スイッチをはんだ付けします。  
+電源スイッチは、OpenCMアクセサリキットに含まれているものか、同じピッチの他のスイッチを使用できます。  
 
 ![](/assets/images/parts/controller/opencm904/opencm904_25.png)
 
-> JP1& Power Switch schematics : Power is supplied to the board if JP1 is connected even without a switch
+> JP1＆電源スイッチの回路図：スイッチが無くてもJP1が接続されている場合、ボードに電力が供給されます。
 
 ![](/assets/images/parts/controller/opencm904/opencm904_26.png)
 
-> OpenCM9.04 Type A needs to have JP1 disconnected when soldering the switch for it to operate properly
+> OpenCM9.04 Type Aが正しく動作するためには、スイッチをはんだ付けする際にJP1を切断する必要があります。
 
+# [コネクタアセンブリ(Type A)](#connector-assemblytype-a)
 
-# [Connector Assembly(Type A)](#connector-assemblytype-a)
-
-OpenCM9.04’s DYNAMIXEL 3-Pin TTL pins are all compatible with DYNAMIXEL 3-pin TTL and XL-320 3-pin TTL(mini-type). Thus, both type of pins can be soldered and used.  
-Both types of 3-pin TTL pins are included in OpenCM Accessory Set.
+OpenCM9.04のDYNAMIXEL 3ピンTTLピンは、DYNAMIXEL 3ピンTTLおよびXL-320 3ピンTTL（ミニタイプ）と互換性があります。
+したがって、両方のタイプのピンをはんだ付けして使用可能です。  
+両方のタイプの3ピンTTLピンがOpenCMアクセサリセットに含まれています。
 
 ![](/assets/images/parts/controller/opencm904/opencm904_27.png)
 
-> OpenCM9.04 Type A can have 2 types of 3-pin connectors soldered onto the board
+> OpenCM9.04 Type Aは、2種類の3ピンコネクタをボードに取り付ける事ができます。
 
-# [Development Environment](#development-environment)
+# [開発環境](#development-environment)
 
-## [Supported Software](#supported-software)
+## [サポート ソフトウェア](#supported-software)
 
 - [Arduino IDE]
 - [OpenCM IDE]
@@ -540,16 +539,16 @@ Both types of 3-pin TTL pins are included in OpenCM Accessory Set.
 |       Windows        |       O       |      O       |
 
 ## [OpenCM IDE](#opencm-ide)
-For developers who are using OpenCM IDE, it is recommended to use [Arduino IDE] as OpenCM IDE will not be maintained anymore.
+OpenCM IDEがメンテナンスされなくなるため、OpenCM IDEを使用している開発者は、[Arduino IDE]を使用することをお勧めします。
 
 `e-Manual` [OpenCM IDE]
 
 ## [Arduino IDE](#arduino-ide)
 
-### [Install on Linux](#install-on-linux)
+### [Linuxのインストール](#install-on-linux)
 
-#### [USB port settings (Linux)](#usb-port-settings-linux)
-Make the OpenCM9.04 USB port be able to upload the Arduino IDE program without root permission.
+#### [USBポートの設定 (Linux)](#usb-port-settings-linux)
+OpenCM9.04 USBポートがルート権限無しでArduino IDEプログラムをアップロードできるようにします。
 ```
 wget https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCM9.04/master/99-opencm-cdc.rules
 sudo cp ./99-opencm-cdc.rules /etc/udev/rules.d/
@@ -557,196 +556,199 @@ sudo udevadm control --reload-rules
 sudo udevadm trigger
 ```
 
-#### [Compiler Settings (Linux)](#compiler-settings-linux)
-Since the OpenCM9.04 libraries is built for 32 bit platform, 64 bit PC needs the 32 bit compiler relevants for the ArduinoIDE.
+#### [コンパイラの設定 (Linux)](#compiler-settings-linux)
+OpenCM9.04ライブラリは32ビットプラットフォーム用に構築されているため、64ビットPCにはArduino IDEに関連する32ビットコンパイラ関連が必要です。
 ```
 sudo apt-get install libncurses5-dev:i386
 ```
 
-#### [Install the Arduino IDE (Linux)](#install-the-arduino-ide-linux)
+#### [Arduino IDEのインストール (Linux)](#install-the-arduino-ide-linux)
 
-Download the latest version of Arduino IDE from the official arduino homepage, and install it. Currently, the OpenCM9.04 will be on service in the version 1.6.4 or later.
+Arduinoの公式HPから最新版のArduino IDEをダウンロード後、インストールします。 現在、OpenCM9.04はバージョン1.6.4以降で動作します。
 
 [https://www.arduino.cc/en/Main/Software](https://www.arduino.cc/en/Main/Software)
 
-Then, extract the downloaded file to the desired folder and execute the installation file from the terminal. In this case, the example shown below makes the folder tools in the user’s top folder (~/). This folder will act as the Arduino IDE folder.
+次に、ダウンロードしたファイルを目的のフォルダーに展開し、ターミナルからインストールファイルを実行します。 本例では、ユーザーの最上位フォルダー（〜/）にフォルダを作成します。 このフォルダは、Arduino IDEフォルダとして機能します。
 ```
 cd ~/tools/arduino-1.8.3
 ./install.sh
 ```
 
-Set the file path of installed Arduino IDE as an absolute path named PATH in the bashrc file. Here recommends to use gedit editor. (Use another editor, if necessary.) Finally, source it to apply the changes.
+インストールされているArduino IDEのファイルパスを、bashrcファイルのPATHという名前の絶対パスとして設定します。 ここでは、geditエディターの使用を推奨しています。  
+（必要に応じて、別のエディターを使用します。）最後に、変更を適用します。
 ```
 gedit ~/.bashrc
 export PATH=$PATH:$HOME/tools/arduino-1.8.3
 source ~/.bashrc
 ```
 
-#### [Run the Arduino IDE (Linux)](#run-the-arduino-ide-linux)
+#### [Arduino IDEの実行 (Linux)](#run-the-arduino-ide-linux)
 
-To run the Arduino IDE on Linux platform, type into the terminal as follows.
+LinuxプラットフォームでArduino IDEを実行するには、次のようにターミナルに入力します。
 ```
 arduino
 ```
 
-#### [Porting the OpenCM9.04 board to the Arduino IDE (Linux)](#porting-the-opencm904-board-to-the-arduino-ide-linux)
+#### [Arduino IDE でOpenCM9.04ボードを使用する(Linux)](#porting-the-opencm904-board-to-the-arduino-ide-linux)
 
-##### [Preferences (Linux)](#preferences-linux)
-After Arduino IDE is run, click File → Preferences in the top menu of the IDE. When the Preferences window appears, copy and paste following link to the Additional Boards Manager URLs textbox. (This step may take about 20 min.)
+##### [環境設定 (Linux)](#preferences-linux)
+Arduino IDEの実行後、IDEのトップメニューでFile → Preferencesをクリックします。 Preferencesウィンドウが表示されたら、次のリンクをコピーして、Additional Boards Manager URLsテキストボックスに貼り付けます。  
+（設定に約20分かかる場合があります。）
 
 [https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCM9.04/master/arduino/opencm_release/package_opencm9.04_index.json](https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCM9.04/master/arduino/opencm_release/package_opencm9.04_index.json)
 
 ![](/assets/images/parts/controller/opencm904/opencm9.04_linux_1.png)
 
 
-##### [Install the OpenCM9.04 package via Boards Manager (Linux)](#install-the-opencm904-package-via-boards-manager-linux)
-Click Tools → Board → Boards Manager.
+##### [ボードマネージャー経由でOpenCM9.04パッケージをインストールする(Linux)](#install-the-opencm904-package-via-boards-manager-linux)
+Tools → Board → Boards Managerを選択する。
 
 ![](/assets/images/parts/controller/opencm904/opencm9.04_linux_2.png)
 
-Type OpenCM9.04 into the textbox to find the OpenCM9.04 by ROBOTIS package. After it finds out, click Install.
+テキストボックスにOpenCM9.04と入力して、ROBOTISパッケージによるOpenCM9.04を検索します。 見つけたら、インストールをクリックします。
 
 ![](/assets/images/parts/controller/opencm904/opencm9.04_linux_3.png)
 
-After the installation, “INSTALLED” will be appeared.
+インストール後、「INSTALLED」が表示されます。
 
 ![](/assets/images/parts/controller/opencm904/opencm9.04_linux_4.png)
 
-See if OpenCM9.04 Board is now on the list of Tools → Board. Click this to import the OpenCM9.04 Board source.
+OpenCM9.04 BoardがTools → Boardのリストにあるかどうかを確認します。 これをクリックしてOpenCM9.04ボードをインポートします。
 
 ![](/assets/images/parts/controller/opencm904/opencm9.04_linux_5.png)
 
-##### [Port setting (Linux)](#port-setting-linux)
-This step shows the port setting for the program uploads. The OpenCM9.04 should be connected to the PC and the OpenCM9.04 via the USB ports.
+##### [ポート設定 (Linux)](#port-setting-linux)
+このステップは、プログラムのアップロード用のポート設定を示しています。 OpenCM9.04は、USBポートを介してPCおよびOpenCM9.04に接続する必要があります。
 
-Select Tools → Port → /dev/ttyACM0.
+Tools → Port → /dev/ttyACM0を選択します。
 
-The value of /dev/ttyACM0 may be different depending on the environment connected to the PC.
+/dev/ttyACM0 の値は、PCに接続されている環境によって異なる場合があります。
 {: .notice}
 
 
 ![](/assets/images/parts/controller/opencm904/opencm9.04_linux_6.png)
 
-### [Install on Mac](#install-on-mac)
+### [Macのインストール](#install-on-mac)
 
-#### [Install the Arduino IDE (Mac)](#install-the-arduino-ide-mac)
+#### [Arduino IDEのインストール (Mac)](#install-the-arduino-ide-mac)
 
-Download the latest version of Arduino IDE from the official arduino homepage, and install it. Currently, the OpenCM9.04 will be on service in the version 1.6.4 or later.
+Arduinoの公式HPから最新版のArduino IDEをダウンロード後、インストールします。 現在、OpenCM9.04はバージョン1.6.4以降で動作します。
 
 [https://www.arduino.cc/en/Main/Software](https://www.arduino.cc/en/Main/Software)
 
-#### [Run the Arduino IDE (Mac)](#run-the-arduino-ide-mac)
+#### [Arduino IDEの実行 (Mac)](#run-the-arduino-ide-mac)
 
-To run the Arduino IDE on Mac platform, click the Arduino IDE icon as follows.
+MacプラットフォームでArduino IDEを実行するには、次のようにArduino IDEアイコンをクリックします。
 
 ![](/assets/images/parts/controller/opencm904/arduino_mac_01.png)
 
 ![](/assets/images/parts/controller/opencm904/arduino_mac_02.png)
 
-#### [Porting the OpenCM9.04 board to the Arduino IDE (Mac)](#porting-the-opencm904-board-to-the-arduino-ide-mac)
+#### [Arduino IDE でOpenCM9.04ボードを使用する (Mac)](#porting-the-opencm904-board-to-the-arduino-ide-mac)
 
-##### [Preferences (Mac)](#preferences-mac)
-After Arduino IDE is run, click File → Preferences in the top menu of the IDE. When the Preferences window appears, copy and paste following link to the Additional Boards Manager URLs textbox. (This step may take about 20 min.)
+##### [環境設定 (Mac)](#preferences-mac)
+Arduino IDEの実行後、IDEのトップメニューでFile → Preferencesをクリックします。 Preferencesウィンドウが表示されたら、次のリンクをコピーして、Additional Boards Manager URLsテキストボックスに貼り付けます。  
+（設定に約20分かかる場合があります。）
 
 [https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCM9.04/master/arduino/opencm_release/package_opencm9.04_index.json](https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCM9.04/master/arduino/opencm_release/package_opencm9.04_index.json)
 
 ![](/assets/images/parts/controller/opencm904/opencm9.04_mac_1.png)
 
-##### [Install the OpenCM9.04 package via Boards Manager (Mac)](#install-the-opencm904-package-via-boards-manager-mac)
-Click Tools → Board → Boards Manager.
+##### [ボードマネージャー経由でOpenCM9.04パッケージをインストールする (Mac)](#install-the-opencm904-package-via-boards-manager-mac)
+Tools → Board → Boards Managerを選択する。
 
 ![](/assets/images/parts/controller/opencm904/opencm9.04_mac_2.png)
 
-Type OpenCM9.04 into the textbox to find the OpenCM9.04 by ROBOTIS package. After it finds out, click Install.
+テキストボックスにOpenCM9.04と入力して、ROBOTISパッケージによるOpenCM9.04を検索します。 見つけたら、インストールをクリックします。
 
 ![](/assets/images/parts/controller/opencm904/opencm9.04_mac_3.png)
 
-After the installation, “INSTALLED” will be appeared.
+インストール後、「INSTALLED」が表示されます。
 
 ![](/assets/images/parts/controller/opencm904/opencm9.04_mac_4.png)
 
-See if OpenCM9.04 Board is now on the list of Tools → Board. Click this to import the OpenCM9.04 Board source.
+OpenCM9.04 BoardがTools → Boardのリストにあるかどうかを確認します。 これをクリックしてOpenCM9.04ボードをインポートします。
 
-##### [Port setting (Mac)](#port-setting-mac)
-This step shows the port setting for the program uploads. The OpenCM9.04 should be connected to the PC and the OpenCM9.04 via the USB ports.
+##### [ポート設定 (Mac)](#port-setting-mac)
+このステップは、プログラムのアップロード用のポート設定を示しています。 OpenCM9.04は、USBポートを介してPCおよびOpenCM9.04に接続する必要があります。
 
-Select Tools → Port → /dev/ttyACM0.
+Tools → Port → /dev/ttyACM0を選択します。
 
-The value of /dev/ttyACM0 may be different depending on the environment connected to the PC.
+/dev/ttyACM0 の値は、PCに接続されている環境によって異なる場合があります。
 {: .notice}
 
 ![](/assets/images/parts/controller/opencm904/opencm9.04_mac_6.png)
 
-### [Install on Windows](#windows-driver-installation)
+### [Windowsのインストール](#windows-driver-installation)
 
-#### [Install Virtual COM Port Driver](#install-virtual-com-port-driver)
-To use OpenCM9.04's USB port as a serial port in Windows, you need a USB CDC driver. You can install the USB driver as follows.
+#### [仮想COMポートドライバのインストール](#install-virtual-com-port-driver)
+WindowsでOpenCM9.04のUSBポートをシリアルポートとして使用するには、USB CDCドライバーが必要です。 USBドライバは次のようにインストールできます。
 
-- [Install Windows Driver](#install-windows-driver)
-- See [Install Windows Driver](#install-windows-driver)
+- [Windows ドライバのインストール](#install-windows-driver)
 
-Download the latest version of Arduino IDE from the official arduino homepage, and install it. Currently, the OpenCM 9.04 will be on service in the version 1.6.4 or later.
+Arduinoの公式HPから最新版のArduino IDEをダウンロード後、インストールします。 現在、OpenCM9.04はバージョン1.6.4以降で動作します。
 
 [https://www.arduino.cc/en/Main/Software](https://www.arduino.cc/en/Main/Software)
 
-The Arduino IDE for Windows is available as an installation version and a compressed version, so you can install it using your preferred method.
+Arduino IDE for Windowsは、インストールバージョンと圧縮バージョンを利用できるので、好みの方法でインストールできます。
 
-#### [Porting the OpenCM 9.04 board to the Arduino IDE (Windows)](#porting-the-opencm-904-board-to-the-arduino-ide-windows)
+#### [Arduino IDE でOpenCM9.04ボードを使用する (Windows)](#porting-the-opencm-904-board-to-the-arduino-ide-windows)
 
-##### [Preferences (Windows)](#preferences-windows)
-After Arduino IDE is run, click File → Preferences in the top menu of the IDE. When the Preferences window appears, copy and paste following link to the Additional Boards Manager URLs textbox. (This step may take about 20 min.)
+##### [環境設定 (Windows)](#preferences-windows)
+Arduino IDEの実行後、IDEのトップメニューでFile → Preferencesをクリックします。 Preferencesウィンドウが表示されたら、次のリンクをコピーして、Additional Boards Manager URLsテキストボックスに貼り付けます。  
+（設定に約20分かかる場合があります。）
 
 [https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCM9.04/master/arduino/opencm_release/package_opencm9.04_index.json](https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCM9.04/master/arduino/opencm_release/package_opencm9.04_index.json)
 
 ![](/assets/images/parts/controller/opencm904/opencm904_win_1.png)
 
-##### [Install the OpenCM9.04 package via Boards Manager (Windows)](#install-the-opencm904-package-via-boards-manager-windows)
-Click Tools → Board → Boards Manager.
+##### [ボードマネージャー経由でOpenCM9.04パッケージをインストールする (Windows)](#install-the-opencm904-package-via-boards-manager-windows)
+Tools → Board → Boards Managerを選択する。
 
 ![](/assets/images/parts/controller/opencm904/opencm904_win_2.png)
 
-Type OpenCM9.04 into the textbox to find the OpenCM9.04 by ROBOTIS package. After it finds out, click Install.
+テキストボックスにOpenCM9.04と入力して、ROBOTISパッケージによるOpenCM9.04を検索します。 見つけたら、インストールをクリックします。
 
 ![](/assets/images/parts/controller/opencm904/opencm904_win_3.png)
 
-After the installation, “INSTALLED” will be appeared.
+インストール後、「INSTALLED」が表示されます。
 
 ![](/assets/images/parts/controller/opencm904/opencm904_win_4.png)
 
-See if OpenCM9.04 Board is now on the list of Tools → Board. Click this to import the OpenCM9.04 Board source.
+OpenCM9.04 BoardがTools → Boardのリストにあるかどうかを確認します。 これをクリックしてOpenCM9.04ボードをインポートします。
 
 ![](/assets/images/parts/controller/opencm904/opencm904_win_5.png)
 
-##### [Port setting (Windows)](#port-setting-windows)
-This step shows the port setting for the program uploads. The OpenCM9.04 should be connected to the PC and the OpenCM9.04 via the USB ports.
+##### [ポート設定 (Windows)](#port-setting-windows)
+このステップは、プログラムのアップロード用のポート設定を示しています。 OpenCM9.04は、USBポートを介してPCおよびOpenCM9.04に接続する必要があります。
 
-Select Tools > Port > COM1.
+Tools → Port → COM1を選択します。
 
-The value of COM1 may be different depending on the environment connected to the PC.
+COM1 の値は、PCに接続されている環境によって異なる場合があります。
 {: .notice}
 
-## [Library API](#library-api)
+## [ライブラリAPI](#library-api)
 
-There are three ways to add libraries to the Arduino IDE.
+Arduino IDEにライブラリを追加する方法は3つあります。
 
-- Using the Library Manager
-- Importing a .zip Library
-- Manual installation
+- ライブラリマネージャを使用する  
+- .zip ライブラリのインポート  
+- マニュアルインストール  
 
-Each way is described in detail in the [Arduino Official Guide]{: .blank}, so please refer to it if necessary.  
-Below is an example of using the Library Manager.
+それぞれの方法は [Arduino Official Guide]{: .blank}に詳しく記載されていますので、必要に応じて参考にしてください。  
+以下にライブラリマネージャの使用例を示します。 
 
 ![](/assets/images/parts/interface/dynamixel_shield/library_manager_01.png)
 
-Search for `DYNAMIXEL2Arduino` from the Library Manager and install the library.
+ライブラリマネージャから`DYNAMIXEL2Arduino`を検索し、ライブラリをインストールします。
 
 ![](/assets/images/parts/interface/dynamixel_shield/library_manager_02.png)
 
-If the DYNAMIXEL2Arduino library has been successfully installed, useful examples to control DYNAMIXEL can be found under the DYNAMIXEL2Arduino category.
+DYNAMIXEL2Arduinoライブラリが正常にインストールされている場合、DYNAMIXELを制御するために役に立つサンプルプログラムは、DYNAMIXEL2Arduinoカテゴリで見つけることができます。
 
-### [Dynamixel2Arduino Library](#dynamixel2arduino-library)
+### [Dynamixel2Arduinoライブラリ](#dynamixel2arduino-library)
 
-#### [Dynamixel2Arduino Class](#dynamixel2arduino-class)
+#### [Dynamixel2Arduinoクラス](#dynamixel2arduino-class)
 
 - [begin()]{: .popup}
 - [getPortBaud()]{: .popup}
@@ -772,9 +774,10 @@ If the DYNAMIXEL2Arduino library has been successfully installed, useful example
 - [readControlTableItem()]{: .popup}
 - [writeControlTableItem()]{: .popup}
 
-#### [Master Class](#master-class)
+#### [マスタークラス](#master-class)
 
-Dynamixel2Arduino class inherits below public functions from the Master class.
+Dynamixel2Arduinoクラスは、マスタークラスから以下のパブリック関数を継承しています。
+
 
 - [syncRead()]{: .popup}
 - [syncWrite()]{: .popup}
@@ -782,21 +785,21 @@ Dynamixel2Arduino class inherits below public functions from the Master class.
 - [bulkWrite()]{: .popup}
 - [getLastLibErrCode()]{: .popup}
 
-# [Examples](#examples)
+# [例](#examples)
 
 ## [LED](#led)
 
-It is a built-in LED test on the OpenCM9.04 board.
+OpenCM9.04ボードに内蔵されているLEDテストです。  
 
-### [Test Example for LED](#test-example-for-led)
-There are 1 LED available in OpenCM9.04, The LED connected to base 14 of Arduino.  
-When the built-in LED pin is output as High / Low, the LED turns on / off.
+### [LEDのテスト例](#test-example-for-led)
+OpenCM9.04には1個のLEDが用意されており、Arduinoのベース14に接続されています。   
+内蔵のLED端子をHigh/Lowで出力すると、LEDが点灯/消灯します。
 
 ```
 #define BOARD_LED_PIN        14
 ```
 
-It is a code that sequentially turns on and off all the LEDs.
+全てのLEDを順次点灯・消灯するコードです。
 
 ```c++
 int led_pin = 14;
@@ -820,18 +823,18 @@ void loop() {
 }
 ```
 
-## [Button](#button)
+## [ボタン](#button)
 
-It is a built-in BUTTON test on the OpenCM9.04 board.
+これはOpenCM9.04ボードに内蔵されているBUTTONテストです。
 
-### [Test Example for Button](#test-example-for-button)
-There is one Push switche in OpenCM9.04. The pin number is defined as below, so you can see the status of the current button when you input the data of that pin.
+### [ボタンのテスト例](#test-example-for-button)
+OpenCM9.04には押しボタンが1つあります。ピン番号は以下のように定義されており、そのピンのデータを入力すると現在のボタンの状態がわかります。
 
 ```
 #define BOARD_BUTTON_PIN        23  
 ```
 
-It is a code that outputs the button input status in serial. In order to use the built-in buttons, you need to set the port to pull-down.
+ボタンの入力状態をシリアルで出力するコードです。内蔵ボタンを使用するためには、ポートをプルダウンに設定する必要があります。
 
 ```c++
 void setup(){
@@ -852,17 +855,17 @@ void loop(){
 }
 ```
 
-## [Buzzer](#buzzer)
+## [ブザー](#buzzer)
 
-Buzzer can be driven using Arduino tone API. Buzzer-enabled pins are available on all I / O pins in OpenCM 9.04.
+ArduinoトーンAPIを使用してブザーを駆動できます。ブザー対応のピンは、OpenCM 9.04のすべてのI/Oピンで利用可能です。
 
-### [Connection with Buzzer](#connection-with-buzzer)
+### [ブザーとの接続](#connection-with-buzzer)
 
 ![](/assets/images/parts/controller/opencm904/buzzer_bb.png)
 
 
-### [Arduino code for Buzzer](#arduino-code-for-buzzer)
-The following example shows a change to the Buzzer pin in the basic tone example provided by Arduino, which uses the Buzzer to play the melody.
+### [ブザー用のArduinoコード](#arduino-code-for-buzzer)
+以下の例は、Arduinoが提供する基調の例で、ブザーを使ってメロディを演奏する場合のブザー端子を変更したものです。
 
 ```c++
 #include "pitches.h"
@@ -901,12 +904,13 @@ void setup() {
 
 ## [PWM](#pwm)
 
-This is the PWM output test from the pin of the OpenCM9.04 board.
+OpenCM9.04ボードのピンからのPWM出力テストです。
 
-### [Test Example for PWM](#test-example-for-pwm)
+### [PWMのテスト例](#test-example-for-pwm)
 
-The analogueWrite is used to output the PWM duty ratio to the corresponding ports. The resolution is 8 bits, from 0 to 255, and the frequency is 10 KHz.  
-OpenCM 9.04 has 13 PWM pins in total. This is an example of PWM output on the six pins.
+PWMのデューティ比を対応するポートに出力するために使用するanalogueWriteです。分解能は0から255までの8ビットで、周波数は10KHzです。   
+OpenCM9.04では全部で13本のPWMピンがあります。これは6本のピンにPWMを出力した例です。  
+
 
 ```c++
 /*
@@ -934,23 +938,25 @@ void loop() {
 
 ## [EEPROM](#eeprom)
 
-It is the EEPROM library test of OpenCM9.04 board.
+OpenCM9.04ボードのEEPROMライブラリテストです。
 
-### [Test](#test)
+### [テスト](#test)
 
-OpenCM9.04 does not have EEPROM memory, so it emulates a part of flash memory built in STM32F103 into EEPROM. The method of emulation was provided by ST as an example.  
-The area used as EEPROM is 0x0801F800 ~ 0x08020000 (2KBytes) as shown below. Two sectors are used.
+OpenCM9.04はEEPROMメモリを持っていないので、STM32F103に内蔵されているフラッシュメモリの一部をEEPROMでエミュレートします。  
+エミュレーションの方法はSTから例として提供されたものです。  
+EEPROMとして使用する領域は、以下のように0x0801F800～0x08020000（2KBytes）です。セクターが2つ使用されています。
+
 
 ![](/assets/images/parts/controller/opencm904/memory_map.png)
 
-32 bits are used to store one data, the lower 16 bits are the data to be stored, and the upper 16 bits indicate the address of the corresponding data. When storing data, it is always stored in the new location. When you use one page while saving the data, only the latest values ​​from the saved page are copied to the new page and the existing page is deleted.
-As a result, the number of flash memory erasures is reduced, thereby increasing the write-through life.
+32ビットは1つのデータを格納するためのもので、下位16ビットは格納するデータ、上位16ビットは対応するデータのアドレスを示しています。データを保存する際には、常に新しい場所に保存されます。データ保存中に１ページを使用した場合、保存したページの最新値のみが新しいページにコピーされ、既存のページは削除されます。  
+その結果、フラッシュメモリの消去回数が減り、書き込み寿命が延びます。
 
 ![](/assets/images/parts/controller/opencm904/ex_eeprom_02.png)
 
 ![](/assets/images/parts/controller/opencm904/ex_eeprom_03.png)
 
-To use the EEPROM library, a header must be added, and the maximum size of the current EEPROM is 512bytes. Since the EEPROM library has ported what is supported in Arduino, the basic usage method is the same as that used in other existing Arduino boards. For more information on how to use it, please refer to the Arduino site.
+EEPROMライブラリを使用するにはヘッダを追加する必要があり、現在のEEPROMの最大サイズは512バイトです。EEPROMライブラリはArduinoでサポートされているものを移植しているため、基本的な使用方法は他の既存のArduinoボードで使用されているものと同じです。詳しい使い方はArduinoのサイトを参照してください。
 
 [https://www.arduino.cc/en/Reference/EEPROM](https://www.arduino.cc/en/Reference/EEPROM)
 
@@ -1003,13 +1009,13 @@ void loop() {
 
 - [DYNAMIXEL Workbench examples](/docs/en/software/dynamixel/dynamixel_workbench/#opencr-and-opencm-tutorials)
 
-## [Servo](#servo)
+## [サーボ](#servo)
 
-- Servo library is used to drive RC servo for RC.
-- RC Servo Library uses OpenCM9.04 hardware timer and can be used by connecting to PWM output pin.
-- A2 to D14 pins are PWM output pins.
-- Be careful when using Servo library because other functions using hardware timer can not be used at the same time.
-- See the list below for the hardware and channels used.
+- サーボライブラリは、RC用のRCサーボを駆動するために使用されます。
+- RCサーボライブラリは、OpenCM9.04のハードウェアタイマを使用しており、PWM出力ピンに接続することで使用することができます。
+- A2～D14ピンはPWM出力ピンです。
+- サーボライブラリを利用する際には、ハードウェアタイマーを利用した他の機能を同時に利用することができないので注意が必要です。
+- 使用しているハードウェアとチャンネルは、以下のリストを参照してください。
 
 ```c++
 {GPIOA, GPIO_PIN_0,   &hADC1,   ADC_CHANNEL_0 , &hTIM2 ,   TIM_CHANNEL_1, 2       },  // 2
@@ -1028,12 +1034,12 @@ void loop() {
 {GPIOB, GPIO_PIN_9,   NULL,     NO_ADC        , &hTIM4 ,   TIM_CHANNEL_4, 14      },  // 14 LED
 ```
 
-### [Connection with Servo](#connection-with-servo)
+### [サーボとの接続](#connection-with-servo)
 
 ![](/assets/images/parts/controller/opencm904/servo_bb.png)
 
-### [Arduino code for servo](#arduino-code-for-servo)
-This is an example of a Servo library and uses the A2 pin of OpenCM9.04. The range of the input value is 0 to 180 degrees.
+### [サーボ用Arduinoコード](#arduino-code-for-servo)
+これは、サーボライブラリの例で、OpenCM9.04のA2ピンを使用しています。入力値の範囲は、0度から180度です。
 
 ```c++
 #include <Servo.h>
@@ -1052,18 +1058,18 @@ void loop() {
 }
 ```
 
-## [SD Card](#sd-card)
+## [SDカード](#sd-card)
 
-The Arduino IDE includes an SD card control library using the SPI library. OpenCM 9.04 supports the default SD library.
+Arduino IDEは、SPIライブラリを使ったSDカード制御ライブラリが含まれています。OpenCM 9.04ではデフォルトのSDライブラリをサポートしています。
 
-### [Connection with SD Card](#connection-with-sd-card)
+### [SDカードとの接続](#connection-with-sd-card)
 
-- SD Card Connection(SPI port)
+- SDカード接続(SPIポート)
 
   ![](/assets/images/parts/controller/opencm904/sdcard_bb.png)
 
-### [Arduino code for SD Card](#arduino-code-for-sd-card)
-The cardInfo example from the SD library and displays the file list after initializing the SD card. OpenCM9.04 SPI1 is used, and CS pin is used as No. 4.
+### [SDカード用Arduinoコード](#arduino-code-for-sd-card)
+SDカードライブラリからのcardInfoの例では、SDカードの初期化後のファイルリストを表示しています。OpenCM9.04のSPI1を使用し、CSピンを4番として使用しています。
 
 ```c++
 // include the SD library:
@@ -1157,9 +1163,9 @@ void loop(void) {
 
 ## [MS5540S](#ms5540s)
 
-The MS5540S is a sensor that can measure water pressure and can calculate the depth in water by measuring the water pressure. SPI communication is used.
+MS5540Sは、水圧を測定できるセンサーで、水圧を測定することで水中の水深を計算することができます。SPI通信を使用しています。
 
-### [Connection with MS5540S](#connection-with-ms5540s)
+### [MS5540Sとの接続](#connection-with-ms5540s)
 
 | MS5540S | OpenCM9.04 | etc       |
 |:--------|:-----------|:----------|
@@ -1170,8 +1176,8 @@ The MS5540S is a sensor that can measure water pressure and can calculate the de
 | DOUT    | A6         | MISO      |
 | SCLK    | A1         | SCK       |
 
-### [Arduino code for MS5540S](#arduino-code-for-ms5540s)
-Use SPI1 of OpenCM9.04 and input the clock of 32.768Khz to MCLK of MS5540S sensor. The analogWriteFreq function, which can adjust the frequency of the PWM pin of OpenCM 9.04, generates a clock of 32.768 KHz.
+### [MS5540S用Arduinoコード](#arduino-code-for-ms5540s)
+OpenCM9.04のSPI1を使用し、MS5540SセンサーのMCLKに32.768Khzのクロックを入力します。OpenCM9.04のPWMピンの周波数を調整できるanalogWriteFreq機能で32.768KHzのクロックを生成します。
 
 ```c++
 #include <SPI.h>
@@ -1476,9 +1482,10 @@ void ms5540s_loop()
 
 ## [MPU6050 DMP](#mpu6050-dmp)
 
-The MPU6050 is a sensor consisting of three axes of acceleration / three axes of gyro. If a dedicated processor called DMP is used in the MPU6050, the MPU6050 performs sensor fusion processing for obtaining Roll / Pitch / Yaw.
+MPU6050は、3軸の加速度/3軸のジャイロで構成されているセンサです。MPU6050にDMPと呼ばれる専用プロセッサを使用した場合、
+MPU6050はロール/ピッチ/ヨーを得るためのセンサフュージョン処理を行います。
 
-### [Connection with MPU6050 DMP](#connection-with-mpu6050-dmp)
+### [MPU6050 DMPとの接続](#connection-with-mpu6050-dmp)
 
 | MPU6050 | OpenCM9.04 | etc  |
 |:--------|:-----------|:-----|
@@ -1488,10 +1495,10 @@ The MPU6050 is a sensor consisting of three axes of acceleration / three axes of
 | SDA     | D25        | I2C2 |
 | INT     | A2         |      |
 
-### [Arduino code for MPU6050 DMP](#arduino-code-for-mpu6050-dmp)
-Enable the DMP function of MPU6050 and output Roll / Pitch / Yaw value in serial every 50ms. The full source code is downloaded from the link below.
+### [MPU6050 DMP用のArduinoコード](#arduino-code-for-mpu6050-dmp)
+MPU6050のDMP機能を有効にして、ロール/ピッチ/ヨーの値を50ミリ秒ごとにシリアルで出力します。ソースコードは以下からダウンロードできます。
 
-- Source code download link
+- ソースコード ダウンロードリンク
   [https://github.com/ROBOTIS-GIT/OpenCM9.04/blob/master/arduino/opencm_arduino/examples/Exam_MPU6050.zip](https://github.com/ROBOTIS-GIT/OpenCM9.04/blob/master/arduino/opencm_arduino/examples/Exam_MPU6050.zip)
 
 ```c++
@@ -1653,11 +1660,11 @@ void dmp_loop() {
 
 ## [0.96" OLED LCD](#096-oled-lcd)
 
-It is a 0.96 inch OLED monochrome LCD. It has 128x64 resolution and is controlled using the Adafruit_GFX_Library library.
+0.96インチの有機ELモノクロ液晶です。解像度は128x64で、Adafruit_GFX_Libraryライブラリを使用して制御します。
 
 ![](/assets/images/parts/controller/opencm904/AD304-2T.jpg)
 
-### [Connection with LCD](#connection-with-lcd)
+### [LCDとの接続](#connection-with-lcd)
 
 | OLED | OpenCM9.04 | etc  |
 |:-----|:-----------|:-----|
@@ -1667,14 +1674,15 @@ It is a 0.96 inch OLED monochrome LCD. It has 128x64 resolution and is controlle
 | SDA  | D25        | I2C2 |
 
 
-### [Arduino code for LCD](#arduino-code-for-lcd)
-Enable the DMP function of MPU6050 and output Roll / Pitch / Yaw value in serial every 50ms. The full source code is downloaded from the link below.
+### [LCD用のArduinoコード](#arduino-code-for-lcd)
+MPU6050のDMP機能を有効にして、ロール/ピッチ/ヨーの値を50ミリ秒ごとにシリアルで出力します。ソースコードは以下からダウンロードできます。
 
-- `Download` Library. Copy the following two libraries into the Document > Arduino > libraries folder and unzip them.
+
+- ライブラリを`ダウンロード`します。以下の2つのライブラリを Document > Arduino > libraries フォルダにコピーして解答します。
   [https://github.com/ROBOTIS-GIT/OpenCM9.04/blob/master/arduino/opencm_arduino/examples/Adafruit_SSD1306/Adafruit_GFX_Library.zip](https://github.com/ROBOTIS-GIT/OpenCM9.04/blob/master/arduino/opencm_arduino/examples/Adafruit_SSD1306/Adafruit_GFX_Library.zip)  
   [https://github.com/ROBOTIS-GIT/OpenCM9.04/blob/master/arduino/opencm_arduino/examples/Adafruit_SSD1306/Adafruit_SSD1306.zip](https://github.com/ROBOTIS-GIT/OpenCM9.04/blob/master/arduino/opencm_arduino/examples/Adafruit_SSD1306/Adafruit_SSD1306.zip)
 
-- `Download` Source Code. Extract downloaded source code and open the code from Arduino IDE with File > Open.
+- ソースコードを`ダウンロード`します。ダウンロードしたソースコードを解凍し、Arduino IDEから File > Open で開きます。
   [https://github.com/ROBOTIS-GIT/OpenCM9.04/blob/master/arduino/opencm_arduino/examples/Adafruit_SSD1306/Exam_ssd1306_128x64_i2c.zip](https://github.com/ROBOTIS-GIT/OpenCM9.04/blob/master/arduino/opencm_arduino/examples/Adafruit_SSD1306/Exam_ssd1306_128x64_i2c.zip)
 
 ```c++
@@ -2051,43 +2059,96 @@ void testscrolltext(void) {
 }
 ```
 
-### [Video](#video)
+### [ビデオ](#video)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0E4cu4GE17k" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
-# [Downloads](#downloads)
+# [ダウンロード](#downloads)
 
-- `Download ZIP` [OpenCM 9.04 Manual]
-- `Download PDF` [PCB Schematic]
-- `Download PDF` [Top Gerber]
-- `Download PDF` [Bottom Gerber]
-- `Download PDF` [Gerber]
-- `Download Software Link` [Arduino IDE]
-- `Download Software Link` [OpenCM IDE]
+- `ZIPダウンロード` [OpenCM 9.04 Manual]
+- `PDFダウンロード` [PCB Schematic]
+- `PDFダウンロード` [Top Gerber]
+- `PDFダウンロード` [Bottom Gerber]
+- `PDFダウンロード` [Gerber]
+- `ソフトウェア ダウンロードリンク` [Arduino IDE]
+- `ソフトウェア ダウンロードリンク` [OpenCM IDE]
 
-# [References](#references)
+# [参考](#references)
 
-## [Recovery Mode](#recovery-mode)
+## [リカバリーモード](#recovery-mode)
 
-- If the board does not work due to corrupted firmware, you can force downloading default firmware from Roboplus Manager 1.0 / 2.0. Sketches also can be downloaded from Arduino IDE, OpenCM IDE.
-- Disconnect other power sources and devices from OpenCM9.04. While holding down the User Button of OpenCM9.04, connect the board directly to PC with USB cable.
+- ファームウェアが壊れて動かない場合は、Roboplus Manager1.0/2.0からデフォルトのファームウェアを強制的にダウンロードすることができます。スケッチは、Arduino IDE, OpenCM IDEからもダウンロードできます。
+- OpenCM9.04から他の電源やデバイスの接続を外します。OpenCM9.04のユーザーボタンを押しながら、USBケーブルでボードとPCを直接接続します。
 
   ![](/assets/images/sw/mobile/mini_firmware_02.jpg)
-  > User Button
+  > ユーザーボタン
 
   ![](/assets/images/parts/controller/opencm904/opencm904_08.png)
 
-- If you enter recovery mode as shown below, the green LED will be turned on. When download is completed normally, the board will be reset and the green LED is turned off.
+- 下記のようにリカバリーモードに入ると、緑色のLEDが点灯します。正常にダウンロードが完了すると、ボードはリセットされ、緑色のLEDが消灯します。
 
   ![](/assets/images/parts/controller/opencm904/recovery_led.jpg)
 
-Please refer to [R+Manager 2.0 Firmware Recovery](/docs/en/software/rplus2/manager/#firmware-recovery) or [R+Manager 1.0 Firmware Recovery](/docs/en/software/rplus1/manager/#firmware-recovery) sections.
-{: .notice}
+## [R+Manager2.0 ファームウェアリカバリー](#firmware-recovery)
 
-## [Windows Driver Installation](#windows-driver-installation)
-- See [How to install ROBOTIS virtual COM port for Windows]{: .popup} 
+1. “Firmware Recovery”を選択します。
 
-## [Dimension](#dimension)
+  ![](/assets/images/sw/rplus2/manager/roboplus_manager2_22.jpg)
+
+2. 通知メッセージを確認し、"Next"を押します。
+
+  ![](/assets/images/sw/rplus2/manager/roboplus_manager2_23.jpg)
+
+3. OpenCM9.04を選択し、"Next"ボタンを押します。
+
+  ![](/assets/images/sw/rplus2/manager/roboplus_manager2_24.jpg)
+
+4. 順番に表示される指示にしたがってください。また、黄色で表示されるメッセージを確認してください。
+
+5. 全ての準備が完了したら、"Next"ボタンを押します。
+
+  ![](/assets/images/sw/rplus2/manager/roboplus_manager2_25.jpg)
+
+6. 接続するポートを選択し、"Next"ボタンを押します。
+
+   ![](/assets/images/sw/rplus2/manager/roboplus_manager2_51_2.jpg)
+
+7. デバイスが接続されると、ファームウェアインストールのためのブートローダーが検出されます。アクティブになったら"Next"ボタンを選択します。
+
+  ![](/assets/images/sw/rplus2/manager/roboplus_manager2_26.jpg)
+
+8. インストールされているファームウェアの情報を確認し、"Next"ボタンをクリックします。
+
+  ![](/assets/images/sw/rplus2/manager/roboplus_manager2_27.jpg)
+
+9. ファームウェアのリカバリーが完了したら、"Finish"ボタンを選択します。
+
+  ![](/assets/images/sw/rplus2/manager/roboplus_manager2_28.jpg)
+
+## Dynamixelのチャンネル構成の変更(XM/XH Series)
+
+1. R+Manager2.0を開き、DYNAMIXEL2.0 製品を選択し、"Update & Test"のメニューを選択します。
+
+  ![](/assets/images/sw/rplus2/manager/roboplus_manager2_30_en_1.jpg)
+
+  ![](/assets/images/sw/rplus2/manager/roboplus_manager2_30_en_2.jpg)
+
+2. OpenCM9.04をLN-101やBT-210、USBケーブル経由でPCと接続します。
+
+3. 以下の手順に従ってOpenCM9.04を検索します。(OpenCM9.04のDYNAMIXELチャンネルの値は、デフォルトでXL-320になっているため、XM/XHは検出されません。)
+
+  ![](/assets/images/sw/rplus2/manager/roboplus_manager2_31_en.jpg)
+
+4. 製品の更新が完了すると、コントロールテーブルの画面が開きます。
+
+5. コントロールテーブルの"Dynamixel Channel"の値を"EXP Board(X-Series)"に設定し、"Save"を選択します。
+
+  ![](/assets/images/sw/rplus2/manager/roboplus_manager2_32_en.jpg)
+
+## [Windowsドライバのインストール](#windows-driver-installation)
+- 「Windows用ROBOTIS仮想COMポートのインストール方法」を参照してください。{: .popup} 
+
+## [寸法](#dimension)
 
 ![](/assets/images/parts/controller/opencm904/opencm904_28.png)
 
