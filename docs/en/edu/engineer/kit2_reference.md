@@ -239,11 +239,14 @@ The ENGINEER KIT2 shares R+Task 3.0 and ENGIEER app with the ENGINEER KIT 1. If 
 ### [Download Assembly Manual](#download-assembly-manual)
 Download the assembly manuals from the following table.
 
-|  Model   | Download                                                                                              |
-|:--------:|:------------------------------------------------------------------------------------------------------|
-|  MAX-E2  | [ROBOTIS_ENGINEER_KIT2_MAX-E2_EN_ver2014.pdf](https://www.robotis.com/service/download.php?no=1929)   |
-| Commando | [ROBOTIS_ENGINEER_KIT2_Commando_EN_ver2014.pdf](https://www.robotis.com/service/download.php?no=1930) |
-|  Scorpi  | [ROBOTIS_ENGINEER_KIT2_Scorpi_EN_ver2014.pdf](https://www.robotis.com/service/download.php?no=1931)   |
+|             Model              | Download                                                                                              |
+|:------------------------------:|:------------------------------------------------------------------------------------------------------|
+|             MAX-E2             | [ROBOTIS_ENGINEER_KIT2_MAX-E2_EN_ver2014.pdf](https://www.robotis.com/service/download.php?no=1929)   |
+|            Commando            | [ROBOTIS_ENGINEER_KIT2_Commando_EN_ver2014.pdf](https://www.robotis.com/service/download.php?no=1930) |
+|             Scorpi             | [ROBOTIS_ENGINEER_KIT2_Scorpi_EN_ver2014.pdf](https://www.robotis.com/service/download.php?no=1931)   |
+| AutoBot  (Additional Eaxmples) | [ROBOTIS_ENGINEER KIT2_Autobot_EN_ver2018.pdf](https://www.robotis.com/service/download.php?no=1981)  |
+| Strider  (Additional Eaxmples) | [ROBOTIS_ENGINEER KIT2_Strider_EN_ver2018.pdf](https://www.robotis.com/service/download.php?no=1982)  |
+
 
 ### [Download a MARKER for Commando](#download-a-marker-for-commando)
 
@@ -283,6 +286,9 @@ Download [MARKER for Commando](https://www.robotis.com/service/download.php?no=1
 ## [Drawings](#drawings)
 
 Download 3D printing files (STL) from the following table.
+
+**NOTE**: When printing out 3D model files, it is recommended to use under 10 % infill density, in order to decrease the weight of the robot.
+{: .notice}
 
 |             Model             | Download                                                                            |
 |:-----------------------------:|:------------------------------------------------------------------------------------|

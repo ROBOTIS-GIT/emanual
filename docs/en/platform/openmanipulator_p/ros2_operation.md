@@ -10,10 +10,10 @@ sidebar:
   title: "OpenMANIPULATOR-P"
   nav: "openmanipulator_p"
 product_group: openmanipulator_p
-page_number: 11
+page_number: 14
 ---
 
-<div style="counter-reset: h1 10"></div>
+<div style="counter-reset: h1 13"></div>
 
 # [[ROS 2] Operation](#ros-operation)
 
@@ -112,12 +112,6 @@ Connect XBOX 360 joystick to the PC with Wireless Adapter or USB cable, and laun
 $ ros2 run joy joy_node
 $ ros2 run open_manipulator_p_teleop open_manipulator_p_teleop_joystick
 ```
-
-## [MoveIt!](#moveit)
-
-`Move it` for `ROS 2 Dashing Diademata` will be released soon!  
-{: .notice}
-
 
 
 [OpenCR]: /docs/en/parts/controller/opencr10/

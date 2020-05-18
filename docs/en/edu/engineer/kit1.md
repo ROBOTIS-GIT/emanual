@@ -20,6 +20,7 @@ sidebar:
 - ROBOTIS ENGINEER Kit offers standardized curriculum for multi level robotics educational courses
 - Joint structure allows diverse motions for versatile robots
 - Supports 3D part designing and printing
+- Base kit includes parts to build 3 different robot figures (MAX, SPI, DR. R). Build up to 7 robot figures total with workbooks.
 - Compatible with R+ ENGINEER(Smart device app), R+ Task 3.0(PC software)
 - Upgrade to Raspberry Pi and Camera
 
@@ -68,7 +69,7 @@ sidebar:
 **CAUTION** : The USB port on CM-550 is designed to be connected with the PC. Please do **NOT** connect other USB devices, or it may cause damage to the controller.
 {: .notice--warning}
 
-**[CM-550 eManual]{: .blank}**
+**[See the more detail of CM-550 e-Manual]{: .blank}**
 {: .notice}
 
 ### [2XL430-W250 DYNAMIXEL](#2xl430-w250-dynamixel)
@@ -220,21 +221,30 @@ It is not a mandatory and it may require more time to replace the cable afterwar
 
 ## [App Installation](#app-installation)
 
-{% capture app_install %}
-![](/assets/images/edu/engineer/kit1/icon_engineer_48.png)  
-**R+ ENGINEER for [Android App Download](https://play.google.com/store/apps/details?id=com.robotis.robotisEngineer)**  
+- ROBOTIS ENGIEER KIT supports R+Task 3.0.
+- R+ Task 3.0 is an integrated software tool that combines R+ Task 2.0 and R+ Motion 2.0.
+- Program the robot with a task tool.
+- Make any motios easily with a motion tool. 
 
+{% capture software_install_01 %} 
 ![](/assets/images/edu/engineer/kit1/icon_task_48.png)  
-**R+ Task 3.0 (Mobile App): [Android App Download](https://play.google.com/store/apps/details?id=com.robotis.task3)**  
-**R+ Task 3.0 : [Windows Installer Download](https://www.robotis.com/service/download.php?no=1774)**  
-**NOTE**: [ENGINEER App Installation](/docs/en/popup/engineer/engineer_app_installation){: .popup}
+- Download [R+ Task 3.0 for Windows (PC)](https://www.robotis.com/service/download.php?no=1774).
+- Download [R+ Task 3.0 for Mac OS (PC)](http://en.robotis.com/service/download.php?no=1908).
+- Download [R+ Task 3.0 For Android Device (Google Play)](https://play.google.com/store/apps/details?id=com.robotis.task3).
+- Download [R+ Task 3.0 For Apple Device (App Store)](https://apps.apple.com/us/app/r-task3-0/id1482356873)
 {% endcapture %}
-<div class="notice--success">{{ app_install | markdownify }}</div>
+<div class="notice--success">{{ software_install_01 | markdownify }}</div>
 
-**WARNING**: Do not choose installation directory with non-English characters, when installing R+ Task 3.0. It may cause a problem to open python code. 
+{% capture software_install_02 %}  
+![](/assets/images/edu/engineer/kit1/icon_engineer_48.png)  
+- Download [R+ ENGINEER For Android Device (Google Play)](https://play.google.com/store/apps/details?id=com.robotis.robotisEngineer)
+- Download [R+ ENGINEER For Apple Device (App Store)](https://apps.apple.com/kr/app/r-engineer/id1475713920)
+{% endcapture %}
+<div class="notice--success">{{ software_install_02 | markdownify }}</div>
 
-**WARNING**: Install R+ Task 3.0 in a folder with Enlglish characters, otherwise The python codes may not properly work.
-{: .notice--warning}
+**NOTE**: R+Task 3.0 does not support Python Code Download on smart devices. Please download your code using R+Task 3.0 on a PC. 
+{: .notice}
+
 
 ## [Download Examples](#download-examples)
 - CM-550 controller is initially programmed with Kit1 example.  
@@ -763,7 +773,7 @@ Please refer to the method to adjust CM-550 BLE signal strength for various situ
 {% include en/parts/controller/fuse_cm-550.md %}
 
 
-[CM-550 eManual]: /docs/en/parts/controller/cm-550/
+[See the more detail of CM-550 e-Manual]: /docs/en/parts/controller/cm-550/
 [2XL430-W250 eManual]: /docs/en/dxl/x/2xl430-w250/
 [R+ Task 3.0]: /docs/en/software/rplustask3/
 [R+ Task 2.0]: /docs/en/software/rplus2/task/

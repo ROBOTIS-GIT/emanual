@@ -16,7 +16,7 @@ sidebar:
 
 아두이노 보드에서 다이나믹셀과 RC-100을 사용하기위한 쉴드 보드이며 다이나믹셀 제어를 위한 라이브러리를 제공함.
 
-**본 제품은 아두이노 Uno를 포함하지 않습니다. 아두이노 관련 제품은 별도로 구매를 해야합니다.**
+**본 제품은 아두이노 보드를 포함하지 않습니다. 아두이노 관련 제품은 별도로 구매를 해야합니다.**
 {: .notice--warning}
 
 # [제품 사양](#제품-사양)
@@ -35,7 +35,8 @@ sidebar:
 | **DX** `1`        | [DX-113]                       | [DX-116]                       | [DX-117]                       |                                |                 |
 | **EX** `1`        | [EX-106+]                      |                                |                                |                                |                 |
 | **MX**            | [MX-12W]                       | [MX-28], [MX-28(2.0)]          | [MX-64], [MX-64(2.0)]          | [MX-106], [MX-106(2.0)]        |                 |
-| **XL**            | [XL320]                        | [XL430-W250]                   |                                |                                |                 |
+| **XL**            | [XL320]                        | [XL430-W250]                   | [2XL430-W250]                  |                                |                 |
+| **XC**            | [XC430-W150]                   | [XC430-W240]                   |                                |                                |                 |
 | **XM**            | [XM430-W210]                   | [XM430-W350]                   | [XM540-W150]                   | [XM540-W270]                   |                 |
 | **XH**            | [XH430-W210]<br/> [XH430-W350] | [XH430-V210]<br/> [XH430-V350] | [XH540-W150]<br/> [XH540-W270] | [XH540-V150]<br/> [XH540-V270] |                 |
 | **PRO H**         | [H42-20-S300-R]                | [H54-100-S500-R]               | [H54-200-S500-R]               |                                |                 |
@@ -52,6 +53,9 @@ sidebar:
 
 ![](/assets/images/parts/interface/dynamixel_shield/pinmap.png)
 
+다이나믹셀 쉴드의 핀 맵은 아두이노 UNO 보드의 핀 맵과 동일하다. 관련된 핀 정보는 [아두이노 공식 사이트](https://www.arduino.cc/en/Main/Products)에서 관련된 보드의 핀정보를 참고할것. 
+{: .notice--warning}
+
 | 핀 번호 |  핀 이름   |          설명          |
 |:-------:|:----------:|:----------------------:|
 |    0    | HW UART RX |         DXL_RX         |
@@ -66,9 +70,9 @@ sidebar:
 |   UART 스위치   | UART SW (업로드 또는 다이나믹셀 선택 스위치) |     `주의1`      |
 |   Jumper Cap    |                  전원 선택                   | '전원 연결 방법' |
 
--	아두이노 핀 0번 / 1번이 다이나믹셀 제어를 위한 시리얼 포트
--	아두이노 핀 2번은 방향 제어를 위한 제어핀
--	다이나믹셀 제어를 위해서 하드웨어 시리얼 포트를 사용하기 때문에 아두이노 핀 7/8번을 이용하여 소프트웨어 시리얼로 RC100 혹은 LN101을 연결하여 시리얼 통신 수행
+-	DXL_RX (0), DXL_TX (1): 다이나믹셀 제어를 위한 시리얼 포트
+-	DXL_DIR(2): 방향 제어를 위한 제어핀
+-	다이나믹셀 제어를 위해서 하드웨어 시리얼 포트를 사용하기 때문에 아두이노 핀 7/8번을 이용하여 소프트웨어 시리얼로 [RC-100] 혹은 [LN-101]을 연결하여 시리얼 통신 수행
 
 {% capture shield_01 %}
 `주의1`: UART SW(SW_2)를 Upload로 세팅해야, 펌웨어를 USB 포트를 통해서 업로드 할 수 있다. 다이나믹셀로 세팅해야만, 다이나믹셀을 활용할 수 있다. 이 때는, USB 포트를 사용하지 못하므로, 펌웨어를 업로드 할 수 없다.  
@@ -299,6 +303,10 @@ bool syncWriteEnd(void);
 [MX-106(2.0)]: /docs/kr/dxl/mx/mx-106-2/
 [XL320]: /docs/kr/dxl/x/xl320/
 [XL430-W250]: /docs/kr/dxl/x/xl430-w250/
+[2XL430-W250]: /docs/kr/dxl/x/2xl430-w250/
+[XC430-W150]: /docs/kr/dxl/x/xc430-w150/
+[XC430-W240]: /docs/kr/dxl/x/xc430-w240/
+[2XC430-W250]: /docs/kr/dxl/x/2xc430-w250/
 [XM430-W210]: /docs/kr/dxl/x/xm430-w210/
 [XM430-W350]: /docs/kr/dxl/x/xm430-w350/
 [XH430-W210]: /docs/kr/dxl/x/xh430-w210/
@@ -334,6 +342,9 @@ bool syncWriteEnd(void);
 [PM54-060-S250-R]: /docs/kr/dxl/p/pm54-060-s250-r/
 [PM54-040-S250-R]: /docs/kr/dxl/p/pm54-040-s250-r/
 [PM42-010-S260-R]: /docs/kr/dxl/p/pm42-010-s260-r/
+
+[LN-101]: /docs/kr/parts/interface/ln-101/
+[RC-100]: /docs/kr/parts/communication/rc-100/
 
 [Arduino Official Guide]: https://www.arduino.cc/en/Guide/Libraries
 [GitHub repository]: https://github.com/ROBOTIS-GIT/Dynamixel2Arduino

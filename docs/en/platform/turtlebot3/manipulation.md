@@ -250,7 +250,7 @@ Simulate TurtleBot3 with OpenMANIPULATOR Using Gazebo by following this section.
 ### [Run Gazebo](#run-gazebo)
 **[Remote PC]** Bring TurtleBot3 with OpenMANIPULATOR into Gazebo world using the following command. 
 ```bash
-$ roslaunch turtlebot3_manipulation_gazebo turtlebot3_manipulation.launch
+$ roslaunch turtlebot3_manipulation_gazebo turtlebot3_manipulation_gazebo.launch
 ```
 
 ![](/assets/images/platform/turtlebot3/manipulation/tb3_omx_gazebo.png)

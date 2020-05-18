@@ -10,10 +10,10 @@ sidebar:
   title: "OpenMANIPULATOR-X"
   nav: "openmanipulator_x"
 product_group: openmanipulator_x
-page_number: 16
+page_number: 20
 ---
 
-<div style="counter-reset: h1 15"></div>
+<div style="counter-reset: h1 19"></div>
 
 # [[OpenCR] Operation](#opencr-operation)
 

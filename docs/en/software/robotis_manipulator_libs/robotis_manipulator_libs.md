@@ -56,9 +56,6 @@ If you prefer manual installation, please following the link below.
 ### [Install ROS Package](#install-ros-package)
 Install the robotis_manipulator package. Run the following command in a terminal window.
 
-**NOTE**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`+`Alt`+`t`.
-{: .notice--info}
-
 ``` bash
 $ cd ~/catkin_ws/src/
 $ git clone https://github.com/ROBOTIS-GIT/robotis_manipulator.git

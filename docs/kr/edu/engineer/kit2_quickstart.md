@@ -18,7 +18,6 @@ page_number: 2
 # [작동하기](#작동하기)
 
 ## [앱 설치하기](#앱-설치하기)
-<!-- 엔지니어 키트2 는 엔지니어 키트 1와 동일한 소프트웨어(R+Task 3.0) 및 앱(로보티즈 엔지니어) 을 사용합니다. 다음과 같은 소프트웨어 및 앱이 설치가 되어있지않다면, [앱 설치하기](/docs/kr/edu/engineer/kit1/#작동하기)를 참조하세요 -->
 
 - 로보티즈 엔지니어는 [로보플러스 태스크 3.0]를 지원합니다.
 - [로보플러스 태스크 3.0]은 기존의 [로보플러스 태스크 2.0]과 [로보플러스 모션 2.0]이 통합된 프로그램입니다.
@@ -28,27 +27,24 @@ page_number: 2
 {% capture software_install_01 %}  
 ![](/assets/images/edu/engineer/kit1/icon_task_48.png)  
 **로보플러스 태스크 3.0**
-- [윈도우용 설치파일 다운로드](https://www.robotis.com/service/download.php?no=1980) 
-- [맥 OS 용 설치파일 다운로드](https://www.robotis.com/service/download.php?no=1976)
+- [윈도우에서 다운로드 하기](https://www.robotis.com/service/download.php?no=1774) 
+- [맥 OS에서 다운로드 하기](https://www.robotis.com/service/download.php?no=1908)
+- [구글 플레이에서 다운로드(모바일) 하기](https://play.google.com/store/apps/details?id=com.robotis.task3)
 - \[파이썬 추가] 로보플러스 태스크 3.0 ios 버전은 앱스토어에 곧 출시됩니다. PC 버전을 이용해주세요.  
-- \[파이썬 추가] 로보플러스 태스크 3.0 안드로이드 버전은 APK 파일을 받아서 설치해주세요. 추후 구글 플레이 스토어에서 만나볼수 있습니다.
-  - [안드로이드용 APK 파일 다운로드](https://www.robotis.com/service/download.php?no=1974)
-  - [인터넷에서 받은 앱 설치하기](/docs/kr/popup/apk_install){: .popup}
 {% endcapture %}
 <div class="notice--success">{{ software_install_01 | markdownify }}</div>
-
-**주의**: 로보플러스 태스크 3.0 설치시 경로를 반드시 영문 또는 기본 경로에 설치하세요. 그렇지않으면 파이썬예제 실행시 오류가 발생할 수 있습니다.
-{: .notice--warning}
 
 {% capture software_install_02 %}  
 ![](/assets/images/edu/engineer/kit1/icon_engineer_48.png)  
 **로보플러스 엔지니어**
-- \[키트2 예제 포함] 로보플러스 엔지니어 **ios 버전**은 추후 앱스토어에 출시 됩니다.
-- \[키트2 예제 포함] 로보플러스 엔지니어 **안드로이드 버전**은 아래 APK 파일을 다운로드 받아 설치해주세요. 추후 구글 플레이 스토어에서 만나볼수 있습니다. 
-  - [안드로이드용 APK 파일 다운로드](https://www.robotis.com/service/download.php?no=1975)
-  - [인터넷에서 받은 앱 설치하기](/docs/kr/popup/apk_install){: .popup}
+- [구글 플레이에서 다운로드](https://play.google.com/store/apps/details?id=com.robotis.robotisEngineer)
+- [앱 스토어에서 다운로드](https://apps.apple.com/kr/app/r-engineer/id1475713920)
+- **참고**: [로보플러스 엔지니어 다운로드 방법](/docs/kr/popup/engineer/engineer_app_installation){: .popup}
 {% endcapture %}
 <div class="notice--success">{{ software_install_02 | markdownify }}</div>
+
+**참고**: R+Task 3.0 모바일 버전은 파이썬 예제 다운로드는 PC 버전을 이용해주세요. 
+{: .notice}
 
 ## [예제 다운로드 하기](#예제-다운로드-하기)
 아래 표에서 예제를 다운로드 받을수 있습니다. 예제를 다운로드 받은후, 스마트 기기 또는 PC를 이용하여 제어기에 저장해주세요.
