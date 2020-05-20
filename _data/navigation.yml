@@ -18654,9 +18654,13 @@ rplustask3:
       urlkr: /software/rplustask3/motion_programming/#모션-유닛-편집하기
       children:
       - title: "Using 3D Robot"
+        titlekr: "3D 로봇 활용"
         url: /software/rplustask3/motion_programming/#using-3d-robot
+        urlkr: /software/rplustask3/motion_programming/#3d-로봇-활용
       - title: "Using Actual Robot"
+        titlekr: "실제 로봇 활용"
         url: /software/rplustask3/motion_programming/#using-actual-robot
+        urlkr: /software/rplustask3/motion_programming/#실제-로봇-활용
     - title: "Create New Motion Group"
       titlekr: "새 모션 만들기"
       url: /software/rplustask3/motion_programming/#create-new-motion-group
