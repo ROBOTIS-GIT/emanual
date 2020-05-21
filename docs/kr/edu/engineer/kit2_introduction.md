@@ -25,7 +25,7 @@ page_number: 1
 - 라즈베리 파이와 카메라 확장가능.
 - 3개의 기본 예제(`MAX-E2`, `Commando`, `Scorpi`)와 추가 예제 및 [추가 교육자료](#/docs/kr/edu/engineer/kit2_advanced_course/#교육자료-다운로드) 제공.
 
-**CAUTION** ENGINEER KIT 2 is an expansion for ENGINEER KIT 1. Parts from ENGINEER Kit 1 are required to build the figures in ENGINEER KIT 2.
+**주의** 엔지니어 키트2 는 엔지니어 키트 1의 확장 버전입니다. 키트 2를 사용하기 위해서는, 엔지니어 키트 1에 포함된 부품들이 필요합니다.
 {: .notice--warning}
 
 ## [부품 목록](#부품-목록)
