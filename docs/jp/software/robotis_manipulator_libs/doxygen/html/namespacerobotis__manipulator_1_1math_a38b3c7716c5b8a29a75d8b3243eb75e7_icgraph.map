@@ -1,5 +1,0 @@
-<map id="robotis_manipulator::math::matrixLogarithm" name="robotis_manipulator::math::matrixLogarithm">
-<area shape="rect" id="node2" href="$namespacerobotis__manipulator_1_1math.html#a0659ad2d283ad43e01eca23f0be6a134" title="convertRotationMatrixToOmega " alt="" coords="213,5,408,61"/>
-<area shape="rect" id="node3" href="$namespacerobotis__manipulator_1_1math.html#a26796dad948a40bc2c0ac2c139ed85f0" title="orientationDifference " alt="" coords="217,85,404,126"/>
-<area shape="rect" id="node4" href="$namespacerobotis__manipulator_1_1math.html#a5bf9202c405abf15e234505842bf7361" title="poseDifference " alt="" coords="456,85,611,126"/>
-</map>

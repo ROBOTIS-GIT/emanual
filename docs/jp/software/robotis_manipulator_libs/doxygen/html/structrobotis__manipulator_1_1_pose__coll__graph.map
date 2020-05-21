@@ -1,5 +1,0 @@
-<map id="robotis_manipulator::Pose" name="robotis_manipulator::Pose">
-<area shape="rect" id="node2" href="$structrobotis__manipulator_1_1_dynamic_pose.html" title="{robotis_manipulator\l::DynamicPose\n||}" alt="" coords="5,197,140,289"/>
-<area shape="rect" id="node3" href="$structrobotis__manipulator_1_1_dynamicvector.html" title="{robotis_manipulator\l::Dynamicvector\n|+ velocity\l+ acceleration\l|}" alt="" coords="5,5,140,112"/>
-<area shape="rect" id="node4" href="$structrobotis__manipulator_1_1_kinematic_pose.html" title="{robotis_manipulator\l::KinematicPose\n|+ position\l+ orientation\l|}" alt="" coords="164,189,299,296"/>
-</map>

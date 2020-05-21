@@ -1,6 +1,0 @@
-<map id="robotis_manipulator::Kinematics::~Kinematics" name="robotis_manipulator::Kinematics::~Kinematics">
-<area shape="rect" id="node2" href="$classrobotis__manipulator_1_1_kinematics.html#adc048ff10f7707e3ced3143e583983bc" title="setOption " alt="" coords="241,5,399,47"/>
-<area shape="rect" id="node3" href="$classrobotis__manipulator_1_1_kinematics.html#a8644b348452df2f0a46b00aadc36c218" title="jacobian " alt="" coords="245,71,395,112"/>
-<area shape="rect" id="node4" href="$classrobotis__manipulator_1_1_kinematics.html#adfdd3727052c27d12e3fc2209c025317" title="solveForwardKinematics " alt="" coords="229,135,411,191"/>
-<area shape="rect" id="node5" href="$classrobotis__manipulator_1_1_kinematics.html#a6065cf1bff763854b9a0bd62945a093b" title="solveInverseKinematics " alt="" coords="231,215,409,271"/>
-</map>

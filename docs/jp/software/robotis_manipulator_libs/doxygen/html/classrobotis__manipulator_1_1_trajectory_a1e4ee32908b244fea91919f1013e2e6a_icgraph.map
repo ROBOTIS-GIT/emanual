@@ -1,5 +1,0 @@
-<map id="robotis_manipulator::Trajectory::getTaskTrajectory" name="robotis_manipulator::Trajectory::getTaskTrajectory">
-<area shape="rect" id="node2" href="$classrobotis__manipulator_1_1_robotis_manipulator.html#a94f13f3855b973d213a260e097b25fa2" title="getTrajectoryJointValue " alt="" coords="255,49,421,105"/>
-<area shape="rect" id="node3" href="$classrobotis__manipulator_1_1_robotis_manipulator.html#a78ce7a7754a99409c082e9124403cb62" title="getJointGoalValueFromTrajectory " alt="" coords="469,5,693,61"/>
-<area shape="rect" id="node4" href="$classrobotis__manipulator_1_1_robotis_manipulator.html#aeabf7d5e0159fa82898e6372313ee44c" title="getJointGoalValueFromTrajectoryTickTime " alt="" coords="469,86,693,157"/>
-</map>

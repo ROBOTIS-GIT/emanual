@@ -1,8 +1,0 @@
-<map id="robotis_manipulator::RobotisManipulator::receiveAllJointActuatorValue" name="robotis_manipulator::RobotisManipulator::receiveAllJointActuatorValue">
-<area shape="rect" id="node2" href="$classrobotis__manipulator_1_1_manipulator.html#a83e1adbb8c496ebf785311c8aab2b9ad" title="getIteratorBegin " alt="" coords="287,5,451,61"/>
-<area shape="rect" id="node3" href="$classrobotis__manipulator_1_1_manipulator.html#ae600869bf358724f53241eb5f061ea78" title="getIteratorEnd " alt="" coords="275,85,462,126"/>
-<area shape="rect" id="node4" href="$classrobotis__manipulator_1_1_manipulator.html#a5b1f27b9cc2875b4e0275e3b88ab1b28" title="checkComponentType " alt="" coords="251,150,487,191"/>
-<area shape="rect" id="node5" href="$classrobotis__manipulator_1_1_manipulator.html#a60db34ef6a62e0b15aa36f9b1571640d" title="getId " alt="" coords="301,215,436,257"/>
-<area shape="rect" id="node6" href="$classrobotis__manipulator_1_1_manipulator.html#a437ac5f137aa788c4db07690c185e9ba" title="getCoefficient " alt="" coords="275,281,462,322"/>
-<area shape="rect" id="node7" href="$classrobotis__manipulator_1_1_manipulator.html#aa740b17551040520851ec8dc1d619bfe" title="setJointValue " alt="" coords="277,346,461,387"/>
-</map>

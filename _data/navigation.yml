@@ -21384,6 +21384,120 @@ cm-900:
       url: /parts/controller/cm-900/#certifications
       urlkr: /parts/controller/cm-900/#인증-획득
 
+#OpenCM 9.04 sidebar_jp
+opencm904_jp:
+  - title: "イントロダクション"
+    url: /parts/controller/opencm904_jp/#イントロダクション
+  - title: "仕様表"
+    url: /parts/controller/opencm904_jp/#仕様表
+  - title: "コントロールテーブル"
+    url: /parts/controller/opencm904_jp/#コントロールテーブル
+  - title: "ハードウェア"
+    url: /parts/controller/opencm904_jp/#ハードウェア
+    children:
+    - title: "メモリマップ"
+      url: /parts/controller/opencm904_jp/#メモリマップ
+    - title: "ブロック図"
+      url: /parts/controller/opencm904_jp/#ブロック図
+    - title: "レイアウトピン配置"
+      url: /parts/controller/opencm904_jp/#レイアウトピン配置
+      children:
+      - title: "電源スイッチ"
+        url: /parts/controller/opencm904_jp/#電源スイッチ
+      - title: "直列バッテリーソケット"
+        url: /parts/controller/opencm904_jp/#直列バッテリーソケット
+      - title: "DYNAMIXEL TTL 3ピン"
+        url: /parts/controller/opencm904_jp/#dynamixel-ttl-3ピン
+      - title: "通信ポート"
+        url: /parts/controller/opencm904_jp/#通信ポート
+      - title: "ユーザーボタン"
+        url: /parts/controller/opencm904_jp/#ユーザーボタン
+      - title: "Ext. ADC Ref Jumper"
+        url: /parts/controller/opencm904_jp/#ext-adc-ref-jumper
+      - title: "マイクロUSBタイプB"
+        url: /parts/controller/opencm904_jp/#マイクロusbタイプb
+      - title: "ステータスled"
+        url: /parts/controller/opencm904_jp/#ステータスled
+      - title: "リセットボタン"
+        url: /parts/controller/opencm904_jp/#リセットボタン
+      - title: "JTAG/SWD 4ピン"
+        url: /parts/controller/opencm904_jp/#jtagswd-4ピン
+      - title: "ROBOTIS 5-ピンポート"
+        url: /parts/controller/opencm904_jp/#robotis-5-ピンポート
+      - title: "I/Oヘッダ "
+        url: /parts/controller/opencm904_jp/#ioヘッダ-
+    - title: "ピン名の定義"
+      url: /parts/controller/opencm904_jp/#ピン名の定義
+    - title: "ピン機能の定義"
+      url: /parts/controller/opencm904_jp/#ピン機能の定義
+  - title: "電源接続方法"
+    url: /parts/controller/opencm904_jp/#電源接続方法
+  - title: "スイッチアセンブリ(Type A)"
+    url: /parts/controller/opencm904_jp/#スイッチアセンブリtype-a
+  - title: "コネクタアセンブリ(Type A)"
+    url: /parts/controller/opencm904_jp/#コネクタアセンブリtype-a
+  - title: "開発環境"
+    url: /parts/controller/opencm904_jp/#開発環境
+    children:
+    - title: "サポート ソフトウェア"
+      url: /parts/controller/opencm904_jp/#サポート-ソフトウェア
+    - title: "OpenCM IDE"
+      titlekr: "OpenCM IDE"
+      url: /parts/controller/opencm904_jp/#opencm-ide
+      urlkr: /parts/controller/opencm904_jp/#opencm-ide
+    - title: "Arduino IDE"
+      url: /parts/controller/opencm904_jp/#arduino-ide
+      children:
+      - title: "Linuxのインストール"
+        url: /parts/controller/opencm904_jp/#linuxのインストール
+      - title: "Macのインストール"
+        url: /parts/controller/opencm904_jp/#macのインストール
+      - title: "Windowsのインストール"
+        url: /parts/controller/opencm904_jp/#windowsのインストール
+    - title: "ライブラリAPI"
+      url: /parts/controller/opencm904_jp/#ライブラリapi
+      children:
+      - title: "Dynamixel2Arduinoライブラリ"
+        url: /parts/controller/opencm904_jp/#dynamixel2arduinoライブラリ
+  - title: "例"
+    url: /parts/controller/opencm904_jp/#例
+    children:
+    - title: "LED"
+      url: /parts/controller/opencm904_jp/#led
+    - title: "ボタン"
+      url: /parts/controller/opencm904_jp/#ボタン
+    - title: "ブザー"
+      url: /parts/controller/opencm904_jp/#ブザー
+    - title: "PWM"
+      url: /parts/controller/opencm904_jp/#pwm
+    - title: "EEPROM"
+      url: /parts/controller/opencm904_jp/#eeprom
+    - title: "DYNAMIXEL Workbench"
+      url: /parts/controller/opencm904_jp/#dynamixelworkbench
+    - title: "サーボ"
+      url: /parts/controller/opencm904_jp/#サーボ
+    - title: "SDカード"
+      url: /parts/controller/opencm904_jp/#sdカード
+    - title: "MS5540S"
+      url: /parts/controller/opencm904_jp/#ms5540s
+    - title: "MPU6050 DMP"
+      url: /parts/controller/opencm904_jp/#mpu6050-dmp
+    - title: "0.96\" OLED LCD"
+      url: /parts/controller/opencm904_jp/#096-oled-lcd
+  - title: "ダウンロード"
+    url: /parts/controller/opencm904_jp/#ダウンロード
+  - title: "参考"
+    url: /parts/controller/opencm904_jp/#参考
+    children:
+    - title: "リカバリーモード"
+      url: /parts/controller/opencm904_jp/#リカバリーモード
+    - title: "R+ Manager 2.0 ファームウェアリカバリー"
+      url: /parts/controller/opencm904_jp/#r-manager-20-ファームウェアリカバリー
+    - title: "Windowsドライバのインストール"
+      url: /parts/controller/opencm904_jp/#windowsドライバのインストール
+    - title: "寸法"
+      url: /parts/controller/opencm904_jp/#寸法
+
 #OpenCM 9.04 sidebar
 opencm904:
   - title: "Introduction"
@@ -21554,7 +21668,9 @@ opencm904:
       url: /parts/controller/opencm904/#recovery-mode
       urlkr: /parts/controller/opencm904/#펌웨어-복구모드
     - title: "Windows Driver Installation"
+      titlekr: "USB 드라이버 설치 하기"
       url: /parts/controller/opencm904/#windows-driver-installation
+      urlkr: /parts/controller/opencm904/#usb-드라이버-설치-하기-
     - title: "Dimension"
       titlekr: "도면"
       url: /parts/controller/opencm904/#dimension

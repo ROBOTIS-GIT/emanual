@@ -1,5 +1,0 @@
-<map id="robotis_manipulator::_TaskWaypoint" name="robotis_manipulator::_TaskWaypoint">
-<area shape="rect" id="node2" href="$structrobotis__manipulator_1_1___kinematic_pose.html" title="{robotis_manipulator\l::_KinematicPose\n|+ position\l+ orientation\l|}" alt="" coords="5,189,140,296"/>
-<area shape="rect" id="node3" href="$structrobotis__manipulator_1_1___dynamic_pose.html" title="{robotis_manipulator\l::_DynamicPose\n||}" alt="" coords="164,197,299,289"/>
-<area shape="rect" id="node4" href="$structrobotis__manipulator_1_1___dynamicvector.html" title="{robotis_manipulator\l::_Dynamicvector\n|+ velocity\l+ acceleration\l|}" alt="" coords="164,5,299,112"/>
-</map>

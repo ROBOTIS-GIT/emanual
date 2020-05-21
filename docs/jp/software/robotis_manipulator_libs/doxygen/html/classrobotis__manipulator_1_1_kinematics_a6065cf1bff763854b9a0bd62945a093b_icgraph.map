@@ -1,8 +1,0 @@
-<map id="robotis_manipulator::Kinematics::solveInverseKinematics" name="robotis_manipulator::Kinematics::solveInverseKinematics">
-<area shape="rect" id="node2" href="$classrobotis__manipulator_1_1_kinematics.html#a202eda8d94a06263cf5d729dd51e59ab" title="robotis_manipulator\l::Kinematics::~Kinematics" alt="" coords="231,5,407,47"/>
-<area shape="rect" id="node3" href="$classrobotis__manipulator_1_1_robotis_manipulator.html#a9a292c755bee7f97f2d8a17b73ce3401" title="solveInverseKinematics " alt="" coords="234,70,403,126"/>
-<area shape="rect" id="node4" href="$classrobotis__manipulator_1_1_robotis_manipulator.html#a1ffbc317192844724befed3cd8b65c10" title="makeJointTrajectory " alt="" coords="245,150,393,206"/>
-<area shape="rect" id="node5" href="$classrobotis__manipulator_1_1_robotis_manipulator.html#a94f13f3855b973d213a260e097b25fa2" title="getTrajectoryJointValue " alt="" coords="235,230,402,286"/>
-<area shape="rect" id="node6" href="$classrobotis__manipulator_1_1_robotis_manipulator.html#a78ce7a7754a99409c082e9124403cb62" title="getJointGoalValueFromTrajectory " alt="" coords="455,186,679,242"/>
-<area shape="rect" id="node7" href="$classrobotis__manipulator_1_1_robotis_manipulator.html#aeabf7d5e0159fa82898e6372313ee44c" title="getJointGoalValueFromTrajectoryTickTime " alt="" coords="455,267,679,337"/>
-</map>

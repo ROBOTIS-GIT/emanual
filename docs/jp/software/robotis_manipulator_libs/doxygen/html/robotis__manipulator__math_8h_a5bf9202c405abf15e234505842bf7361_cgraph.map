@@ -1,5 +1,0 @@
-<map id="robotis_manipulator::math::poseDifference" name="robotis_manipulator::math::poseDifference">
-<area shape="rect" id="node2" href="$robotis__manipulator__math_8h.html#ab4f15d22dddddc5f712de188ba0f85f4" title="positionDifference " alt="" coords="215,29,387,71"/>
-<area shape="rect" id="node3" href="$robotis__manipulator__math_8h.html#a26796dad948a40bc2c0ac2c139ed85f0" title="orientationDifference " alt="" coords="208,119,395,160"/>
-<area shape="rect" id="node4" href="$robotis__manipulator__math_8h.html#a38b3c7716c5b8a29a75d8b3243eb75e7" title="matrixLogarithm " alt="" coords="443,119,603,160"/>
-</map>

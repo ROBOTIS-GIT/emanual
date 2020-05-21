@@ -1,6 +1,0 @@
-<map id="robotis_manipulator::Kinematics::setOption" name="robotis_manipulator::Kinematics::setOption">
-<area shape="rect" id="node2" href="$classrobotis__manipulator_1_1_kinematics.html#a202eda8d94a06263cf5d729dd51e59ab" title="robotis_manipulator\l::Kinematics::~Kinematics" alt="" coords="212,5,388,47"/>
-<area shape="rect" id="node3" href="$classrobotis__manipulator_1_1_custom_joint_trajectory.html#a0b26437cc90db37b0054f57ce4619fc3" title="robotis_manipulator\l::CustomJointTrajectory\l::~CustomJointTrajectory" alt="" coords="215,70,385,126"/>
-<area shape="rect" id="node4" href="$classrobotis__manipulator_1_1_custom_task_trajectory.html#a9895c8d695786bdf868de651d5aa170d" title="robotis_manipulator\l::CustomTaskTrajectory\l::~CustomTaskTrajectory" alt="" coords="215,150,385,206"/>
-<area shape="rect" id="node5" href="$classrobotis__manipulator_1_1_robotis_manipulator.html#ad20c00086b950f1148b357fc6883d9fd" title="setKinematicsOption " alt="" coords="225,230,375,286"/>
-</map>

@@ -1,6 +1,0 @@
-<map id="robotis_manipulator::Manipulator::getComponentOrientationFromWorld" name="robotis_manipulator::Manipulator::getComponentOrientationFromWorld">
-<area shape="rect" id="node2" href="$classrobotis__manipulator_1_1_robotis_manipulator.html#acf9826e7464c56814d3f4faf0d92b80b" title="makeJointTrajectory " alt="" coords="245,5,393,61"/>
-<area shape="rect" id="node3" href="$classrobotis__manipulator_1_1_robotis_manipulator.html#a7c8796fb8230da8e8151abc96a276d2c" title="makeTaskTrajectoryFromPresentPose " alt="" coords="441,71,696,127"/>
-<area shape="rect" id="node4" href="$classrobotis__manipulator_1_1_robotis_manipulator.html#af99e51e771170748507ac7c750b515da" title="makeTaskTrajectory " alt="" coords="244,136,393,192"/>
-<area shape="rect" id="node5" href="$classrobotis__manipulator_1_1_robotis_manipulator.html#a4a8e033562c2ec3b10c125d5360216ac" title="makeTaskTrajectory " alt="" coords="494,151,643,207"/>
-</map>

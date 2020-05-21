@@ -1,6 +1,0 @@
-<map id="robotis_manipulator::Trajectory::makeJointTrajectory" name="robotis_manipulator::Trajectory::makeJointTrajectory">
-<area shape="rect" id="node2" href="$classrobotis__manipulator_1_1_robotis_manipulator.html#a10670957d0b6522651b2494d0296cfd4" title="makeJointTrajectory " alt="" coords="268,57,416,113"/>
-<area shape="rect" id="node5" href="$classrobotis__manipulator_1_1_robotis_manipulator.html#aae0261b006df2076d8843b2afde97b7d" title="sleepTrajectory " alt="" coords="271,137,413,193"/>
-<area shape="rect" id="node3" href="$classrobotis__manipulator_1_1_robotis_manipulator.html#a8278c9edbe6ebca76b20a158ef0dd0bf" title="makeJointTrajectoryFromPresentPosition " alt="" coords="464,5,687,76"/>
-<area shape="rect" id="node4" href="$classrobotis__manipulator_1_1_robotis_manipulator.html#acf9826e7464c56814d3f4faf0d92b80b" title="makeJointTrajectory " alt="" coords="501,101,649,157"/>
-</map>

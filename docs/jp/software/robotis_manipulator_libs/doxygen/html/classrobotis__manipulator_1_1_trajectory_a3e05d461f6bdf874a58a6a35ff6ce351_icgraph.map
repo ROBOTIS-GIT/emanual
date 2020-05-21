@@ -1,8 +1,0 @@
-<map id="robotis_manipulator::Trajectory::removeWaypointDynamicData" name="robotis_manipulator::Trajectory::removeWaypointDynamicData">
-<area shape="rect" id="node2" href="$classrobotis__manipulator_1_1_robotis_manipulator.html#a1ffbc317192844724befed3cd8b65c10" title="makeJointTrajectory " alt="" coords="257,5,405,61"/>
-<area shape="rect" id="node3" href="$classrobotis__manipulator_1_1_robotis_manipulator.html#a80958a2678b01cdfcdf2cf2dcfc1f97d" title="makeTaskTrajectory " alt="" coords="257,85,406,141"/>
-<area shape="rect" id="node4" href="$classrobotis__manipulator_1_1_robotis_manipulator.html#aae0261b006df2076d8843b2afde97b7d" title="sleepTrajectory " alt="" coords="260,165,403,221"/>
-<area shape="rect" id="node5" href="$classrobotis__manipulator_1_1_robotis_manipulator.html#a94f13f3855b973d213a260e097b25fa2" title="getTrajectoryJointValue " alt="" coords="248,245,415,301"/>
-<area shape="rect" id="node6" href="$classrobotis__manipulator_1_1_robotis_manipulator.html#a78ce7a7754a99409c082e9124403cb62" title="getJointGoalValueFromTrajectory " alt="" coords="463,201,687,257"/>
-<area shape="rect" id="node7" href="$classrobotis__manipulator_1_1_robotis_manipulator.html#aeabf7d5e0159fa82898e6372313ee44c" title="getJointGoalValueFromTrajectoryTickTime " alt="" coords="463,282,687,353"/>
-</map>
