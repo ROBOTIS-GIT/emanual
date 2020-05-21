@@ -22,7 +22,11 @@ page_number: 1
 - 단계별 로봇교육과정 및 표준 커리큘럼 제공
 - 3D프린팅 지원
 - 로보플러스 엔지니어, 로보플러스 태스크 3.0 등 다용도 소프트웨어 사용가능
-- 라즈베리 파이와 카메라 확장가능
+- 라즈베리 파이와 카메라 확장가능.
+- 3개의 기본 예제(`MAX-E2`, `Commando`, `Scorpi`)와 추가 예제 및 [추가 교육자료](#/docs/kr/edu/engineer/kit2_advanced_course/#교육자료-다운로드) 제공.
+
+**CAUTION** ENGINEER KIT 2 is an expansion for ENGINEER KIT 1. Parts from ENGINEER Kit 1 are required to build the figures in ENGINEER KIT 2.
+{: .notice--warning}
 
 ## [부품 목록](#부품-목록)
 
