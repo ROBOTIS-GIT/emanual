@@ -44,8 +44,8 @@ The ENGINEER KIT2 shares R+Task 3.0 and ENGIEER app with the ENGINEER KIT 1. If 
 
 ## [Download Examples](#download-examples)
 Download Kit2 Examples (.py and .mth) into the CM-550 controller. 
-- CM-550 controller is initially programmed with Kit2 example (`MAX-E2`, `Commando`, `Scorpi`).  
-- `AutoBot` and `Strider` are the additional examples which are not included in the controller with a factory status.
+- CM-550 controller is initially programmed with Kit2 example (`MAX-E2`, `Commando`, `Scorpi`, `AutoBot`,`Strider`).
+- Before downloading the examples, [update the CM-550 firmware](/docs/en/software/rplus2/manager/#firmware-update) via R+ Manager 2.0.
 - In order to download examples into the controller using PC, see [Download from PC](#download-from-pc).
 - In order to download examples into the controller using a smart device, see [Download from Smart Device](#download-from-smart-device).
 
