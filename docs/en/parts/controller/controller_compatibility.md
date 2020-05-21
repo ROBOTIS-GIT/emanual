@@ -141,8 +141,6 @@ sidebar:
 |         [R+ Play 700]          |   X    |    O    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |              X               |      X      |    X     |
 |         [ROBOTIS MINI]         |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |             O(X)             |      X      |    X     |
 
-R+ SMART and R+IoT aren't released yet.
-{: .notice--info}
 
 [How to install ROBOTIS virtual COM port for Windows]: /docs/en/popup/usb_driver_install/
 

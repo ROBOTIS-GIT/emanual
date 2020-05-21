@@ -605,10 +605,10 @@ Tools > Port > /dev/ttyACM0를 선택하십시오.
 
 ### [윈도우즈에 설치하기](#윈도우즈에-설치하기)
 
-#### [Install Virtual COM Port Driver](#install-virtual-com-port-driver)
+#### [USB 드라이버 설치 하기](#usb-드라이버-설치-하기)
 USB 포트를 통해 OpenCM9.04를 윈도우즈 환경에서 사용하려면 USB CDC 드라이버를 설치해야 합니다. 아래 방법으로 설치하시기 바랍니다.
 
-- [윈도우즈 드라이버 설치방법](/docs/en/parts/controller/opencm904/#install-windows-driver)
+- [USB 드라이버 설치]{: .popup}
 
 #### [아두이노 IDE 설치하기 (윈도우즈)](#아두이노-ide-설치하기-윈도우즈)
 
@@ -738,6 +738,11 @@ Dynamixel2Arduino 클래스는 Master 클래스로부터 다음의 함수를 상
 [로보플러스 매니저 2.0: 펌웨어 복구](/docs/kr/software/rplus2/manager/#펌웨어-복구) 또는 [로보플러스 매니저 1.0: 펌웨어 복구](/docs/kr/software/rplus1/manager/#펌웨어-복구)를 참조하세요.
 {: .notice}
 
+## [USB 드라이버 설치 하기 ](#usb-드라이버-설치-하기-)
+USB 포트를 통해 OpenCM9.04를 윈도우즈 환경에서 사용하려면 USB CDC 드라이버를 설치해야 합니다. 아래 방법으로 설치하시기 바랍니다.
+
+- [USB 드라이버 설치]{: .popup}
+
 ## [도면](#도면)
 
 ![](/assets/images/parts/controller/opencm904/floor_plan.png)
@@ -793,3 +798,4 @@ Dynamixel2Arduino 클래스는 Master 클래스로부터 다음의 함수를 상
 [bulkRead()]: /docs/en/popup/arduino_api/bulkRead/
 [bulkWrite()]: /docs/en/popup/arduino_api/bulkWrite/
 [getLastLibErrCode()]: /docs/en/popup/arduino_api/getLastLibErrCode/
+[USB 드라이버 설치]: /docs/kr/popup/usb_driver_install/

@@ -11,6 +11,10 @@ sidebar:
   nav: "opencm904"
 ---
 
+
+**NOTE**: [The OpenCM 9.04 e-Manual](/docs/en/parts/controller/opencm904_jp/) in Japanese (日本語) is available for the Japanese. 
+{: .notice}
+
 # [Introduction](#introduction)
 
 ![](/assets/images/parts/controller/opencm904/opencm904_product.png)
@@ -680,10 +684,9 @@ The value of /dev/ttyACM0 may be different depending on the environment connecte
 ### [Install on Windows](#windows-driver-installation)
 
 #### [Install Virtual COM Port Driver](#install-virtual-com-port-driver)
-To use OpenCM9.04's USB port as a serial port in Windows, you need a USB CDC driver. You can install the USB driver as follows.
+To use OpenCM9.04's USB port as a serial port in Windows, you need a USB CDC driver.
 
-- [Install Windows Driver](#install-windows-driver)
-- See [Install Windows Driver](#install-windows-driver)
+- See [How to install ROBOTIS virtual COM port for Windows]{: .popup} 
 
 Download the latest version of Arduino IDE from the official arduino homepage, and install it. Currently, the OpenCM 9.04 will be on service in the version 1.6.4 or later.
 
@@ -2093,7 +2096,7 @@ Please refer to [R+Manager 2.0 Firmware Recovery](/docs/en/software/rplus2/manag
 
 {% include en/dxl/download_center_notice.md %}
 
-[Windows Driver Installation]: /docs/en/popup/usb_driver_install/
+[How to install ROBOTIS virtual COM port for Windows]: /docs/en/popup/usb_driver_install/
 [MOLEX 53253-0370]: https://www.molex.com/molex/products/datasheet.jsp?part=active/0532530370_PCB_HEADERS.xml
 [MOLEX 22-03-5035]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0022035035_PCB_HEADERS.xml
 [RoboPlus Task]: /docs/en/software/rplus1/task/getting_started/
