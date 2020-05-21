@@ -23,6 +23,10 @@ page_number: 1
 - Supports 3D part designing and printing.
 - Provides an exclusive app (R+ ENGINEER) and software (R+ Task 3.0).
 - Supports Raspberry Pi and Camera.
+- Kit includes parts to build 3 expansion robot figures (`MAX-E2`, `Commando`, `Scorpi`). Build up to 5 example figures total with [Advanced Study Materials](/docs/en/edu/engineer/kit2_advanced_course/#advanced-study-materials). 
+
+**CAUTION** ENGINEER KIT 2 is an expansion for ENGINEER KIT 1. Parts from ENGINEER Kit 1 are required to build the figures in ENGINEER KIT 2.
+{: .notice--warning}
 
 ## [Parts List](#parts-list)
 
