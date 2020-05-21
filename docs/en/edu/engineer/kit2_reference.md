@@ -225,9 +225,6 @@ The ENGINEER KIT2 shares R+Task 3.0 and ENGIEER app with the ENGINEER KIT 1. If 
 
 ### [Download Robot Examples](#download-robot-examples)
 
-- CM-550 controller is initially programmed with Kit2 example.  
-- The `Complete Example` includes `MAX-E2`, `Commando`, `Scorpi` examples.
-
 | Examples                       | Python (.py)                                                                   | Motion (.mtn)                                                                   |
 |:-------------------------------|:-------------------------------------------------------------------------------|:--------------------------------------------------------------------------------|
 | MAX-E2                         | [01_ENG2_Max_E2_PY.py](https://www.robotis.com/service/download.php?no=1915)   | [01_ENG2_Max_E2_MO.mtn3](https://www.robotis.com/service/download.php?no=1916)  |
