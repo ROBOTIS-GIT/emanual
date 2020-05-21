@@ -109,17 +109,27 @@ Although almost all ROBOTIS products are shipped with installed firmwares, new f
 - [Linux Software Download(v2.0.6)](http://www.robotis.com/service/download.php?no=1671)  
 2. Enter the following command to change the permission.
 
-    ```c
-    # sudo chmod 775 DynamixelWizard2Setup_x64
+    ```bash
+    $ sudo chmod 775 DynamixelWizard2Setup_x64
     ```
 
 3. Run the install program.
 
-    ```c
-    # ./DynamixelWizard2Setup_x64
+    ```bash
+    $ ./DynamixelWizard2Setup_x64
     ```
 
 4. Click on `Next` button to proceed installation.
+
+5. After completing the installation, please add account id to dialout group in order to access the USB port. Replace the <your_account_id> in the command below to your actual user id.
+    ```bash
+    $ sudo usermod -aG dialout <your_account_id>
+    ```
+
+6. Reboot in order the changes to be effective.
+    ```bash
+    $ reboot
+    ```
 
 ## [Install: Mac](#install-mac)
 

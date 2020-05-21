@@ -19,21 +19,21 @@ page_number: 2
 
 ## [App Installation](#app-installation)
 
-
-{% capture app_install %}
-![](/assets/images/edu/engineer/kit1/icon_engineer_48.png)  
-**R+ ENGINEER** including Kit 2 examples will be available on Google Play Store (Android) and App Store (ios) soon.  
-- For Android device, download [APK file](https://www.robotis.com/service/download.php?no=1975) and install it on your smart device. 
-- For ios device, the app will be released in App store market in the near future. 
-
+{% capture software_install_01 %} 
 ![](/assets/images/edu/engineer/kit1/icon_task_48.png)  
-**R+ Task 3.0** with Python (for an smart device) will be available on Google Play Store (Android) and App Store (ios) soon. 
-- For Windows (PC), download [R+ Task 3.0 Installer for Windows](https://www.robotis.com/service/download.php?no=1980).
-- For Mac OS (PC), download [R+Task 3.0 installer for Mac OS](https://www.robotis.com/service/download.php?no=1976).
-- For Android device, download [APK file](https://www.robotis.com/service/download.php?no=1974) and install it on your smart device.
+- Download [R+ Task 3.0 for Windows (PC)](https://www.robotis.com/service/download.php?no=1774).
+- Download [R+ Task 3.0 for Mac OS (PC)](http://en.robotis.com/service/download.php?no=1908).
+- Download [R+ Task 3.0 For Android device (Google Play)](https://play.google.com/store/apps/details?id=com.robotis.task3).
 - For ios device, the app will be available on App Store in the near future. Please use PC before the app is released.
 {% endcapture %}
-<div class="notice--success">{{ app_install | markdownify }}</div>
+<div class="notice--success">{{ software_install_01 | markdownify }}</div>
+
+{% capture software_install_02 %}  
+![](/assets/images/edu/engineer/kit1/icon_engineer_48.png)  
+- Download [R+ ENGINEER For Android device (Google Play)](https://play.google.com/store/apps/details?id=com.robotis.robotisEngineer)
+- Download [R+ ENGINEER For Apple device (App Store)](https://apps.apple.com/kr/app/r-engineer/id1475713920)
+{% endcapture %}
+<div class="notice--success">{{ software_install_02 | markdownify }}</div>
 
 **NOTE**: R+Task 3.0 does not support Python Code Download on smart devices. Please download your code using R+Task 3.0 on a PC. 
 {: .notice}
@@ -44,8 +44,8 @@ The ENGINEER KIT2 shares R+Task 3.0 and ENGIEER app with the ENGINEER KIT 1. If 
 
 ## [Download Examples](#download-examples)
 Download Kit2 Examples (.py and .mth) into the CM-550 controller. 
-- CM-550 controller is initially programmed with Kit2 example (`MAX-E2`, `Commando`, `Scorpi`).  
-- `AutoBot` and `Strider` are the additional examples which are not included in the controller with a factory status.
+- CM-550 controller is initially programmed with Kit2 example (`MAX-E2`, `Commando`, `Scorpi`, `AutoBot`,`Strider`).
+- Before downloading the examples, [update the CM-550 firmware](/docs/en/software/rplus2/manager/#firmware-update) via R+ Manager 2.0.
 - In order to download examples into the controller using PC, see [Download from PC](#download-from-pc).
 - In order to download examples into the controller using a smart device, see [Download from Smart Device](#download-from-smart-device).
 

@@ -61,6 +61,7 @@ ROBOTIS ENGINEER KIT2에서는 Raspberry Pi Camera와 앱을 동일한 와이파
 엔지니어 키트2 의 새로운 기능이 추가될 때 `ROBOTIS ENGIEER` 앱을 이용하여, 라즈베리파이를 원격으로 업데이트 할 수 있습니다. 
 
 해당 기능은, 추후 기능추가시 공개 됩니다.
+
 <!--
 
 **참고**: 업데이트가 필요할때, `ROBOTIS ENGIEER` 앱의 **RPI 버전 업데이트** 버튼이 활성화 됩니다.
@@ -262,9 +263,7 @@ CM-550에 내장된 BLE 슬레이브 모듈의 신호의 세기가 약하거나 
 ### [앱 설치하기](#앱-설치하기)
 엔지니어 키트2 는 엔지니어 키트 1와 동일한 소프트웨어(R+Task 3.0) 및 앱(로보티즈 엔지니어) 을 사용합니다. 다음과 같은 소프트웨어 및 앱을 설치 하지 경우, [앱 설치하기](/docs/kr/edu/engineer/kit1/#작동하기)를 참고하세요
 
-### [로봇 예제 다운로드 하기](#로봇-예제-다운로드-하기)
-- CM-550 제어기에는 최초 출하시 KIT2 타입에 맞는 프로그램이 기본적으로 다운로드되어 있습니다.  
-- 종합예제는 `MAX-E2`, `Commando`, `Scorpi` 세가지 로봇이 모두 포함된 예제입니다.
+### [예제 다운로드 하기](#예제-다운로드-하기)
 
 | 기본 예제           | 파이썬 (.py)                                                                   | 모션 (.mtn3)                                                                    |
 |:--------------------|:-------------------------------------------------------------------------------|:--------------------------------------------------------------------------------|
@@ -285,7 +284,6 @@ CM-550에 내장된 BLE 슬레이브 모듈의 신호의 세기가 약하거나 
 |       Scorpi        | [ROBOTIS_ENGINEER_KIT2_Scorpi_KR_ver2014.pdf](https://www.robotis.com/service/download.php?no=1926)   |
 | AutoBot (추가 예제) | [ ROBOTIS_ENGINEER KIT2_Autobot_KR_ver2014.pdf](https://www.robotis.com/service/download.php?no=1927) |
 | Strider (추가 예제) | [ ROBOTIS_ENGINEER KIT2_Strider_KR_ver2014.pdf](https://www.robotis.com/service/download.php?no=1928) |
-
 
 ### [Commando Marker 다운로드 받기](#commando-marker-다운로드-받기)
 
@@ -327,6 +325,9 @@ CM-550에 내장된 BLE 슬레이브 모듈의 신호의 세기가 약하거나 
 로보티즈 엔지니어 키트2에 프레임 및 추가 3D 모델링 파일을 다운로드 받을수 있습니다. 파일 정보 (파츠 명칭, 이미지등)를 확인하기 위해서, 다음 PDF파일을 다운로드 하세요.
 - [ENG2_3D_Printing_Parts_List](https://www.robotis.com/service/download.php?no=1971) 다운로드 하기.
 
+**참고**: 3D 모델링 파일을 출력 시, 기체의 무게 감소를 위해 내부 채움 밀도 비율을 10% 이하로 설정하기를 권장 합니다.  
+{: .notice}
+
 |        모델         | STL 파일 다운로드 (.zip )                                                           |
 |:-------------------:|:------------------------------------------------------------------------------------|
 |     부품 리스트     | [ENG2_3D_Printing_Parts_List](https://www.robotis.com/service/download.php?no=1971) |
@@ -335,6 +336,5 @@ CM-550에 내장된 BLE 슬레이브 모듈의 신호의 세기가 약하거나 
 |       Scorpi        | [3. SCORPI_STL.zip](https://www.robotis.com/service/download.php?no=1953)           |
 | AutoBot (추가 예제) | [4. AUTOBOT_STL.zip](https://www.robotis.com/service/download.php?no=1954)          |
 | Strider (추가 예제) | [5. STRIDER_STL.zip](https://www.robotis.com/service/download.php?no=1955)          |
-
 
 {% include kr/dxl/download_center_notice.md %}

@@ -14537,9 +14537,9 @@ kit2:
         url: /edu/engineer/kit2_reference/#download-app
         urlkr: /edu/engineer/kit2_reference/#앱-설치하기
       - title: "Download Robot Examples"
-        titlekr: "로봇 예제 다운로드 하기"
+        titlekr: "예제 다운로드 하기"
         url: /edu/engineer/kit2_reference/#download-robot-examples
-        urlkr: /edu/engineer/kit2_reference/#로봇-예제-다운로드-하기
+        urlkr: /edu/engineer/kit2_reference/#예제-다운로드-하기
       - title: "Download Assembly Manual"
         titlekr: "조립서 다운로드 받기"
         url: /edu/engineer/kit2_reference/#download-assembly-manual
@@ -16529,14 +16529,7 @@ openmanipulator_x:
           - title: "PS4 Joystick"
             url: /platform/openmanipulator_x/ros_operation/#ps4-joystick
           - title: "XBOX 360 Joystick"
-            url: /platform/openmanipulator_x/ros_operation/#xbox-360-joystick
-      - title: "MoveIt!"
-        url: /platform/openmanipulator_x/ros_operation/#moveit
-        children: 
-          - title: "Install MoveIt Packages"
-            url: /platform/openmanipulator_x/ros_operation/#install-moveit-packages
-          - title: "Launch Moveit!"
-            url: /platform/openmanipulator_x/ros_operation/#launch-moveit                     
+            url: /platform/openmanipulator_x/ros_operation/#xbox-360-joystick                   
   - title: "[ROS] Simulation"
     url: /platform/openmanipulator_x/ros_simulation/#ros-simulation
     children:
@@ -16785,13 +16778,6 @@ openmanipulator_p:
         url: /platform/openmanipulator_p/ros_operation/#gui-program
       - title: "Teleoperation"
         url: /platform/openmanipulator_p/ros_operation/#teleoperation
-      - title: "MoveIt!"
-        url: /platform/openmanipulator_p/ros_operation/#moveit
-        children:
-          - title: "Install MoveIt Packages"
-            url: /platform/openmanipulator_p/ros_operation/#install-moveit-packages
-          - title: "Launch MoveIt!"
-            url: /platform/openmanipulator_p/ros_operation/#launch-moveit
   - title: "[ROS] Simulation"
     url: /platform/openmanipulator_p/ros_simulation/#ros-simulation
     children:
@@ -18668,9 +18654,13 @@ rplustask3:
       urlkr: /software/rplustask3/motion_programming/#모션-유닛-편집하기
       children:
       - title: "Using 3D Robot"
+        titlekr: "3D 로봇 활용"
         url: /software/rplustask3/motion_programming/#using-3d-robot
+        urlkr: /software/rplustask3/motion_programming/#3d-로봇-활용
       - title: "Using Actual Robot"
+        titlekr: "실제 로봇 활용"
         url: /software/rplustask3/motion_programming/#using-actual-robot
+        urlkr: /software/rplustask3/motion_programming/#실제-로봇-활용
     - title: "Create New Motion Group"
       titlekr: "새 모션 만들기"
       url: /software/rplustask3/motion_programming/#create-new-motion-group
@@ -21209,6 +21199,15 @@ cm-550:
     titlekr: "제품 사양"
     url: /parts/controller/cm-550/#specifications
     urlkr: /parts/controller/cm-550/#제품-사양
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /parts/controller/cm-550/#control-table
+    urlkr: /parts/controller/cm-550/#컨트롤-테이블
+    children:
+    - title: "CM-550 Control Table"
+      titlekr: "CM-550 컨트롤 테이블"
+      url: /parts/controller/cm-550/#cm-550-control-table
+      urlkr: /parts/controller/cm-550/#cm-550-컨트롤-테이블
   - title: "Layout"
     titlekr: "각 부 명칭"
     url: /parts/controller/cm-550/#layout
