@@ -797,7 +797,7 @@ This section explains parameters used in R+ Task 2.0. It classifies the paramete
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_112.jpg)
 
-  - Motion Index Number number **0** : Motion stop using a Exit Motion unit.
+  - Motion Index Number number **0** : Motion stop using an Exit Motion unit.
   - Motion Index Number number **-1** : Motion stop at the current unit.
   
 More information on **Key-Frame**, **Motion Unit** and **Motion** is available at [Motion Data](/docs/en/software/rplus2/motion//#motion-data)
