@@ -1,6 +1,6 @@
 ---
 layout: archive
-lang: en
+lang: jp
 ref: opencm485exp
 read_time: true
 share: true
@@ -15,59 +15,59 @@ sidebar:
 
 > OpenCM 485 Expansion Board
 
-# [Introduction](#introduction)
+# [イントロダクション](#introduction)
 
-# [Specifications](#specifications)
+# [仕様表](#specifications)
 
-|       Item        |       Description       |
-|:-----------------:|:-----------------------:|
-|   Input voltage   |         5 ~ 30V         |
-|       Power       | SMPS, LiPo, DXL PRO 24V |
-|   Power Switch    |            1            |
-|  DYNAMIXEL Port   |   4Pin x 5, 3Pin x 5    |
-|      Button       |            2            |
-|        LED        |            5            |
-|       Size        |     68 mm X 66.5 mm     |
-|      Weight       |           32g           |
-|    Serial3 TX     |     Header Pin #24      |
-|    Serial3 RX     |     Header Pin #25      |
-| Direction Control |     Header Pin #22      |
+| 項目　           | 説明　                   |
+| :-------------: | :---------------------: |
+| 入力電圧　　      | 5 ~ 30V                 |
+| 電源　           | SMPS, LiPo, DXL PRO 24V |
+| 電源スイッチ      | 1                       |
+| DYNAMIXEL ポート | 4ピン x 5, 3ピン x 5　　  |
+| ボタン           | 2                       |
+| LED             | 5                       |
+| サイズ           | 68 mm X 66.5 mm         |
+| 重量　           | 32g                     |
+| シリアル3 TX　　  | ヘッダーピン #24          |
+| シリアル3 RX　　  | ヘッダーピン #25          |
+| 方向制御　　      | ヘッダーピン #22          |
 
-# [Layout](#layout)
+# [レイアウト](#layout)
 
 ![](/assets/images/parts/controller/opencm904/opencm485exp_01.jpg)
 
-1. **SMPS DC Connector** : For using SMPS DC Adapter to supply power to OpenCM 485 EXP board.
-2. **DXL Pro Power Connector** : Power connector for DYNAMIXEL Pro (24V).
-3. **Li-Po battery Connector** : Connector for 11.1V Li-Po battery(LBS-10).
-4. **DYNAMIXEL TTL 3 -Pin Bus** : Used to connect 3-Pin Cables(DYNAMIXEL TTL Bus) and for daisy chaining DYNAMIXEL's.
-5. **User Button** : Function of these buttons can be assigned by the user.
-6. **User LED** : LED that can be controlled by the user.
-7. **I/O header** : Header pins used to mount OpenCM9.04(2.54mm pitch).
-8. **DYNAMIXEL 485 4-Pin Bus** : Used to connect 4-Pin Cables(DYNAMIXEL TTL Bus) and for daisy chaining DYNAMIXEL's.
-9. **Power Switch** : Switch that powers the board and DYNAMIXEL. Note: Does not disconnect the power received via USB cable.
-10. **JP1 Jumper** : Jumper that determines whether the power inputted onto OpenCM 485 EXP will be supplied to OpenCM9.04 board or not.
+1. **SMPS DC コネクタ** : SMPS DCアダプタを使用しOpenCM 485 EXP ボードに電源を供給します。
+2. **DXL Pro 電源コネクタ** : DYNAMIXEL Pro (24V) の電源コネクタです。
+3. **Li-Po バッテリコネクタ** : 11.1V Li-Po battery(LBS-10) の 電源コネクタです。
+4. **DYNAMIXEL TTL 3-ピン バス** : 3ピンケーブル(DYNAMIXEL TTL バス)の接続及び、DYNAMIXELのデイジーチェーン接続に使用します。
+5. **ユーザーボタン** : これらのボタンは、ユーザーが割り当てる事ができます。
+6. **ユーザー LED** : ユーザーが制御できるLEDです。
+7. **I/O ヘッダ** : OpenCM9.04(2.54mm pitch)をマウントするピンヘッダです。
+8. **DYNAMIXEL 485 4-ピン バス** : 4ピンケーブル(DYNAMIXEL TTL バス)の接続及び、DYNAMIXELのデイジーチェーン接続に使用します。
+9. **電源スイッチ** : ボードとDYNAMIXELに電源を供給するスイッチです。  注釈: このスイッチでは、USBケーブル経由の電源を切断しません。
+10. **JP1 ジャンパ** : OpenCM485EXPに入力された電力をOpenCM9.04ボードに供給するかを決定するジャンバです。。
 
-{% include en/dxl/pinout_warning.md %}
+{% include jp/dxl/pinout_warning.md %}
 
-# [Connecting OpenCM9.04](#connecting-opencm904)
+# [OpenCM9.04の接続](#connecting-opencm904)
 
-1. Prepare OpenCM 485 EXP and OpenCM9.04 boards. Any version of OpenCM9.04 is compatible. Solder the header onto the OpenCM9.04.
+1. OpenCM 485 EXPおよびOpenCM9.04ボードを準備します。 OpenCM9.04のどのバージョンでも互換性があります。 ヘッダピンをOpenCM9.04にはんだ付けします。
 
     ![](/assets/images/parts/controller/opencm904/opencm485exp_02.jpg)
 
-2. OpenCM9.04 is mounted onto OpenCM 485 EXP as shown below.
+2. OpenCM9.04を下図に示すようにOpenCM 485 EXPにマウントします。
 
-    **CAUTION** : The orientation of the connection must be correct.
+    **注意** : 正しい方向で接続する必要があります。
     {: .notice--warning}
 
     ![](/assets/images/parts/controller/opencm904/opencm485exp_03.jpg)
 
-3. Connect the USB cable onto OpenCM9.04 board.
+3. USBケーブルをOpenCM9.04ボードに接続します。
 
     ![](/assets/images/parts/controller/opencm904/opencm485exp_04.jpg)
 
-4. Connect DYNAMIXEL and 12V SMPS adapter onto OpenCM 485 EXP board.
+4. DYNAMIXELと12V SMPSアダプタをOpenCM 485 EXPボードに接続します。
 
     ![](/assets/images/parts/controller/opencm904/opencm485exp_05.jpg)
 
