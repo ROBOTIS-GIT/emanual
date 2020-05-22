@@ -181,7 +181,7 @@ The following is an example of using the Motion Index Number.
 
 ![](/assets/images/sw/rplus_task3/task3_090.png)
 
-- Motion Index Number number **0** : Motion stop using a Exit Motion unit.
+- Motion Index Number number **0** : Motion stop using an Exit Motion unit.
 - Motion Index Number number **-1** : Motion stop at the current unit.  
 - Motion Index Number number **-2** : Motion stop at the current Key Frame (Only [CM-550]). 
 - Motion Index Number number **-3**: Immediate Motion stop (Only [CM-550]). 
