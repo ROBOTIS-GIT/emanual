@@ -72,34 +72,33 @@ sidebar:
     ![](/assets/images/parts/controller/opencm904/opencm485exp_05.jpg)
 
 
-# [Power Circuit Connection](#power-circuit-connection)
+# [電源回路接続](#power-circuit-connection)
 
-A power circuit block diagram of the OpenCM 485 EXP and OpenCM9.04, once mounted, is shown below.  
-OpenCM 485 EXP supplies 5V from OpenCM9.04 as default. JP1 can be used to determine if VDD power from OpeCM 485 EXP board is supplied to OpenCM9.04.
+OpenCM 485 EXPとOpenCM9.04の電源回路のブロック図を以下に示します。
+OpenCM 485 EXPは、デフォルトでOpenCM9.04から5Vを供給します。 JP1を使用して、OpeCM 485 EXPボードからのVDD電源がOpenCM9.04に供給されているかどうかを判断できます。
 
 ![](/assets/images/parts/controller/opencm904/opencm485exp_06.png)
 
-> OpenCM 485 EXP Power Connection
+> OpenCM 485 EXP 電源接続
 
-OpenCM 485 EXP’s DYNAMIXEL 485 bus operates as DYNAMIXEL bus using OpenCM9.04’s USART3(Serial3).
+OpenCM 485 EXPのDYNAMIXELバスは、OpenCM9.04のUSART3（シリアル3）を使用してDYNAMIXELバスとして動作します。
 
-**NOTE** : OpenCM9.04’s DYNAMIXEL TTL BUS is connected to USART1(Serial1).
+**注釈** : OpenCM9.04のDYNAMIXEL TTLバスは、USART1（シリアル1）に接続されています。
 {: .notice}
 
 ![](/assets/images/parts/controller/opencm904/opencm485exp_07.gif)
 
-> OpenCM9.04 & OpenCM 485 EXP Bus Connections
+> OpenCM9.04 および OpenCM 485 EXP バス接続
 
-# [EXP Board Programming](#exp-board-programming)
+# [EXP Board プログラミング](#exp-board-programming)
 
+OpenCM9.04でOpenCM 485 EXPボードを使用するには、Arduino IDEを使用してください。
 
-In order to use OpenCM 485 EXP board with OpenCM9.04, please use Arduino IDE.
+1. [Arduino IDEのインストール]{: .blank}
 
-1. [Install Arduino IDE]{: .blank}
+2. OpenCM 485 EXPの485バスは、OpenCM9.04のシリアル3（USART3）を介して通信パケットを送受信します。  
 
-2. OpenCM 485 EXP’s 485 Bus sends and receives communication packets via OpenCM9.04’s Serial3(USART3).  
-
-    - In case of programming with DYNAMIXEL SDK, please set Serial3 port as shown below.
+    - DYNAMIXEL SDKでプログラミングする場合は、以下のようにシリアルポートを設定してください。
 
     ```cpp
     #include <DYNAMIXEL SDK.h>
@@ -109,8 +108,7 @@ In order to use OpenCM 485 EXP board with OpenCM9.04, please use Arduino IDE.
     dynamixel::PortHandler *portHandler = dynamixel::PortHandler::getPortHandler(DEVICENAME);
     portHandler->openPort();
     ```
-
-    - In case of programming with DYNAMIXELWorkbench, please set Serial3 port as shown below.
+    - DYNAMIXELWorkbenchを使用する場合は、以下のようにシリアル3ポートを設定してください。
 
     ```cpp
     #include <DYNAMIXELWorkbench.h>
@@ -122,15 +120,15 @@ In order to use OpenCM 485 EXP board with OpenCM9.04, please use Arduino IDE.
     dxl_wb.begin(DEVICE_NAME, BAUDRATE);
     ```
 
-# [Button & LED](#button-led)
+# [ボタン & LED](#button-led)
 
-OpenCM 485 EXP board has 2 buttons and 3 LED’s that are connected to OpenCM9.04 I/O pins.  
-The OpenCM9.04 I/O pin numbers for the buttons and LED’s are indicated below.
+OpenCM 485 EXPボードには、OpenCM9.04のI/Oピンに接続された2つのボタンと3つのLEDがあります。  
+ボタンとLEDのOpenCM9.04のI/Oピン番号を以下に示します。
 
 |         | OpenCM9.04 I/O |
 |:-------:|:--------------:|
-| Button1 |       16       |
-| Button2 |       17       |
+|  ボタン1 |       16       |
+|  ボタン2 |       17       |
 |  LED1   |       18       |
 |  LED2   |       19       |
 |  LED3   |       20       |
@@ -138,9 +136,9 @@ The OpenCM9.04 I/O pin numbers for the buttons and LED’s are indicated below.
 ![](/assets/images/parts/controller/opencm904/opencm485exp_11.jpg)
 
 
-# [Downloads](#downloads)
+# [ダウンロード](#downloads)
 
-- `Download PDF` [PCB Schematic](http://support.robotis.com/en/baggage_files/opencm/schematic1___opencm_485exp.pdf)
+- `ダウンロード PDF` [PCB Schematic](http://support.robotis.com/en/baggage_files/opencm/schematic1___opencm_485exp.pdf)
 
 
 [RoboPlus Task]: /docs/en/software/rplus1/task/getting_started/
