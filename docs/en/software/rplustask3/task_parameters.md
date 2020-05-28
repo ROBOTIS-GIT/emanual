@@ -181,10 +181,10 @@ The following is an example of using the Motion Index Number.
 
 ![](/assets/images/sw/rplus_task3/task3_090.png)
 
-- Motion Index Number number **0** only plays a current Motion Unit. 
-- Motion Index Number number **-1** stops a current Motion Unit in Motion and plays an Exit Motion Unit.  
-- Motion Index Number number **-2** plays a next Key-Frame in Motion Unit after a current Key-Frame runs (Only [CM-550]). 
-- Motion Index Number number **-3** stops a current Key-Frame immediately (Only [CM-550]). 
+- Motion Index Number number **0** : Motion stop using an Exit Motion unit.
+- Motion Index Number number **-1** : Motion stop at the current unit.  
+- Motion Index Number number **-2** : Motion stop at the current Key Frame (Only [CM-550]). 
+- Motion Index Number number **-3**: Immediate Motion stop (Only [CM-550]). 
  
 The more information on Key-Frame, Motion Unit and Motion is avilable at [Motion Programming](/docs/en/software/rplustask3/motion_programming/#motion-programming)
 {: .notice}

@@ -22,9 +22,6 @@ sidebar:
 
 ## [Launch Manager](#launch-manager)
 
-**NOTE**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`+`Alt`+`t`.
-{: .notice--info}
-
 ```
 $ sudo bash
 [sudo] password for robotis:   

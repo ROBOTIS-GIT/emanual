@@ -14,9 +14,9 @@ sidebar:
 # [Introduction](#introduction)
 ![](/assets/images/parts/interface/dynamixel_shield/with_arduino.png)
 
-DYNAMIXEL Shield  was created to use RC100 and DYNAMIXEL on arduino board. We provide dynamixel library for DYNAMIXEL Shield, it can help you to use DYNAMIXEL easily.
+DYNAMIXEL Shield  was created to use [RC-100] and DYNAMIXEL on arduino board. We provide dynamixel library for DYNAMIXEL Shield, it can help you to use DYNAMIXEL easily.
 
-**This product does not contain Arduino Uno. Arduino Uno should be purchased separately.**
+**This product does not contain Arduino Board. Arduino Board should be purchased separately.**
 {: .notice--warning}
 
 # [Specifications](#specifications)
@@ -35,7 +35,8 @@ DYNAMIXEL Shield  was created to use RC100 and DYNAMIXEL on arduino board. We pr
 | **DX** `1`       | [DX-113]                       | [DX-116]                       | [DX-117]                       |                                |                 |
 | **EX** `1`       | [EX-106+]                      |                                |                                |                                |                 |
 | **MX**           | [MX-12W]                       | [MX-28], [MX-28(2.0)]          | [MX-64], [MX-64(2.0)]          | [MX-106], [MX-106(2.0)]        |                 |
-| **XL**           | [XL320]                        | [XL430-W250]                   |                                |                                |                 |
+| **XL**           | [XL320]                        | [XL430-W250]                   | [2XL430-W250]                  |                                |                 |
+| **XC**           | [XC430-W150]                   | [XC430-W240]                   | [2XC430-W250]                  |                                |                 |
 | **XM**           | [XM430-W210]                   | [XM430-W350]                   | [XM540-W150]                   | [XM540-W270]                   |                 |
 | **XH**           | [XH430-W210]<br/> [XH430-W350] | [XH430-V210]<br/> [XH430-V350] | [XH540-W150]<br/> [XH540-W270] | [XH540-V150]<br/> [XH540-V270] |                 |
 | **PRO H**        | [H42-20-S300-R]                | [H54-100-S500-R]               | [H54-200-S500-R]               |                                |                 |
@@ -52,6 +53,9 @@ DYNAMIXEL Shield  was created to use RC100 and DYNAMIXEL on arduino board. We pr
 
 ![](/assets/images/parts/interface/dynamixel_shield/pinmap.png)
 
+The DYNAMIXEL Shield has the same pin position as Aruduino UNO. To find the pinout diagram, see [Arduino Offical page](https://www.arduino.cc/en/Main/Products).
+{: .notice--warning}
+
 | Pin No. |  Pin Name  |        Description        |
 |:-------:|:----------:|:-------------------------:|
 |    0    | HW UART RX |          DXL_RX           |
@@ -66,18 +70,44 @@ DYNAMIXEL Shield  was created to use RC100 and DYNAMIXEL on arduino board. We pr
 |  UART Switch   | UART SW (Upload or DYNAMIXEL Select Switch) |       `Caution1`        |
 |   Jumper Cap   |           Power Source Selection            | Read 'Connecting Power' |
 
--	Arduino pin #0/ #1 : Hardware serial port to control dynamixel
-- Arduino pin #2 : Control pin to select dynamixel direction
-- The hardware serial port is used for DYNAMIXEL control, therefore, the serial communication has to be performed by connecting RC100 or LN101 to the software serial port which is assigned to Arduino pin 7 and 8.
-
+-	DXL_RX (0), DXL_TX (1) : Hardware serial port to control DYNAMIXEL.
+- DXL_DIR(2) : Control pin to select DYNAMIXEL direction.
+- The hardware serial port is used for DYNAMIXEL control, therefore, the serial communication has to be performed by connecting [RC-100] or [LN-101] to the software serial port which is assigned to Arduino pin 7 and 8.
 
 {% capture shield_01 %}
 `Caution1` When uploading firmware using USB port, you should switch the UART SW(SW_2) to Upload mode. When you select the UART SW (SW_2) to DYNAMIXEL mode, you can use DYNAMIXEL but USB port.  
 `Caution2` If you are using a board that does not support SoftwareSerial(like SAMD, etc..), you cannot use pins 7 and 8 for UART purposes.  
 `Caution3` TTL, TTL (XL-320) and RS485 connectors are all connected in parallel in one serial.
 {% endcapture %}
-
 <div class="notice--warning">{{ shield_01 | markdownify }}</div>
+
+## [Use of Serial Monitor with DYNAMIXEL Shield](#use-of-serial-monitor-with-dynamixel-shield)
+
+DYNAMIXELShield uses serial pins (0,1) which are the same pins as Arduino Uno / Mega. When using the serial monitor, it may cause unexpected issue with data in the board due to a port conflict.  
+
+In order to prevent the board from the port conflict, be sure to read [How to Use Serial Monitor with DYNAMIXEL Shield](#how-to-use-serial-monitor-with-dynamixel-shield) carefully. 
+
+### [How to Use Serial Monitor with DYNAMIXEL Shield](#how-to-use-serial-monitor-with-dynamixel-shield)
+
+Check the type of your arduino board, and select the either of listed solution to use Serial Monitor with DYNAMIXEL Shield. 
+
+1. **[Recommanded] #define DEBUG_SERIAL**
+- See #define DEBUG_SERIAL in the DynamixelShield Examples in Arduino.
+
+2. **Use UART port of DYNAMIXEL Shield ( AVR 8 bit board including Uno / Mega boards)**
+- AVR 8 bit boards, such as Uno, and Mega, can use the serial monitor by using DYNAMIXEL Shield's pins, which is read UART (See [Layout](#layout))
+
+    **NOTE**: Be sure to use `SoftwareSerial` Library to use the serial port with DYNAMIXEL Shield and AVR 8 bit boards as the port is designed for the use of general pins. Prefered Comunication Modules: [BT-210](/docs/en/parts/communication/bt-410/), [BT-410](/docs/en/parts/communication/bt-210/), [LN-101](/docs/en/parts/interface/ln-101/).
+    {: .notice}
+
+3. **Use USB Port**
+- When you use other arduino boards except Uno and Mega, use the serial monitor via USB port.
+
+4. **Use USB to Serial converter**
+- You can use either SoftwareSerial or HardwareSerial ways. See [Arduino Reference page of Serial](https://www.arduino.cc/reference/en/language/functions/communication/serial/), and determine your board whether or not it support either of ways (SoftwareSerial or HardwareSerial).
+ 
+5. **Use UART Port**
+- DYNAMIXEL Shield contains UART pins: 7(RX), 8(TX). They are only compatible with AVR 8 bit board, such as Uno and Mega boards. In order to use this port, use other HardwareSerial pins instead of 7(RX), 8(TX). To determine wheather boards has HardwareSerial, and its pin numbers see [Arduino Reference page of Comunication] 
 
 # [Connecting Power](#connecting-power)
 
@@ -117,7 +147,7 @@ DYNAMIXEL Shield  was created to use RC100 and DYNAMIXEL on arduino board. We pr
 -	Support dynamixel protocol 1.0/2.0
 - Up to 16 DYNAMIXEL's can be controlled (Typically, each motor(XL-320 or XL430-W250) consumes 0.4 ~ 0.6A of current)
 - Support SynWrite function
-- Support RC100 library
+- Support RC-100 library
 - Serial communication using software serial library
 - DYNAMIXEL Shield library(v0.1.0 or above) requires DYNAMIXEL2Arduino library
 
@@ -274,6 +304,10 @@ bool syncWriteEnd(void);
 [MX-106(2.0)]: /docs/en/dxl/mx/mx-106-2/
 [XL320]: /docs/en/dxl/x/xl320/
 [XL430-W250]: /docs/en/dxl/x/xl430-w250/
+[2XL430-W250]: /docs/en/dxl/x/2xl430-w250/
+[XC430-W150]: /docs/en/dxl/x/xc430-w150/
+[XC430-W240]: /docs/en/dxl/x/xc430-w240/
+[2XC430-W250]: /docs/en/dxl/x/2xc430-w250/
 [XM430-W210]: /docs/en/dxl/x/xm430-w210/
 [XM430-W350]: /docs/en/dxl/x/xm430-w350/
 [XH430-W210]: /docs/en/dxl/x/xh430-w210/
@@ -309,6 +343,9 @@ bool syncWriteEnd(void);
 [PM54-060-S250-R]: /docs/en/dxl/p/pm54-060-s250-r/
 [PM54-040-S250-R]: /docs/en/dxl/p/pm54-040-s250-r/
 [PM42-010-S260-R]: /docs/en/dxl/p/pm42-010-s260-r/
+
+[LN-101]: /docs/en/parts/interface/ln-101/
+[RC-100]: /docs/en/parts/communication/rc-100/
 
 [Arduino Official Guide]: https://www.arduino.cc/en/Guide/Libraries
 [GitHub repository]: https://github.com/ROBOTIS-GIT/Dynamixel2Arduino

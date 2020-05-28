@@ -54,9 +54,6 @@ If you prefer manual installation, please following the link below.
 
 Install dependent packages for ROBOTIS manipulator ROS program. Run the following command in a terminal window.
 
-**NOTE**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`+`Alt`+`t`.
-{: .notice--info}
-
 ``` bash
 $ sudo apt-get install ros-kinetic-gazebo*
 ```

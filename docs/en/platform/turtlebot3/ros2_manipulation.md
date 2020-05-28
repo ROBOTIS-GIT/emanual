@@ -10,16 +10,16 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 33
+page_number: 36
 ---
 
 <div style="counter-reset: h1 21"></div>
 
-# [Manipulation](#manipulation)
+# [[ROS 2] Manipulation](#ros-2-manipulation)
 
 {% capture notice_01 %}
 **NOTE**:
-- This instructions were tested on `Ubuntu 18.04` and `ROS 2 Dashing Diademata`.
+- This instructions were tested on `Ubuntu 18.04` and `ROS Dashing Diademata`.
 - More information on OpenMANIPULATOR-X is availabe at [OpenMANIPULATOR e-Manual](/docs/en/platform/openmanipulator/).
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
@@ -28,8 +28,8 @@ page_number: 33
 
 ![](/assets/images/platform/turtlebot3/manipulation/tb3_with_opm_logo.png)
 
-The OpenMANIPULATOR by ROBOTIS is one of the manipulators that support ROS, and has the advantage of being able to easily manufacture at a low cost by using DYNAMIXEL actuators with 3D printed parts.
-The OpenMANIPULATOR has the advantage of being compatible with TurtleBot3 Waffle and Waffle Pi. Through fdsfsdthis compatibility can compensate for the lack of freedom and can have greater completeness as a service robot with the the SLAM and Navigation capabilities that the TurtleBot3 has. TurtleBot3 and OpenMANIPULATOR can be used as a `mobile manipulator` and can do things like the following videos.
+The OpenMANIPULATOR by ROBOTIS is one of the manipulators that support ROS platform, and has the advantage of being able to easily manufacture at a low cost by using DYNAMIXEL actuators with 3D printed parts.
+The OpenMANIPULATOR has the advantage of being compatible with TurtleBot3 Waffle and Waffle Pi. Through this compatibility can compensate for the lack of freedom and can have greater completeness as a service robot with the the SLAM and Navigation capabilities that the TurtleBot3 has. TurtleBot3 and OpenMANIPULATOR can be used as a `mobile manipulator` and can do things like the following videos.
 fds
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Qhvk5cnX2hM" frameborder="0" allowfullscreen></iframe>
 
@@ -37,7 +37,7 @@ fds
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/DLOq8yNcCoE" frameborder="0" allowfullscreen></iframe>
 
-The contents in e-Manual may differ from contents of a provided video in e-Manaul as e-Manual is updated on a regular basis.
+The contents in e-Manual can be updated without a previous notice. Therefore, some video may differ from the contents in e-Manual.
 {: .notice--warning} 
 
 ## [Software Setup](#software-setup)
@@ -108,7 +108,7 @@ Be sure to read [Bringup](/docs/en/platform/turtlebot3/ros2_bringup/#bringup) ma
 **[TurtleBot3]** Launch rpicamera node
 ```bash
 $ ROS_NAMESPACE=om_with_tb3 roslaunch turtlebot3_bringup turtlebot3_rpicamera.launch
-``` -->/docs/en/platform/turtlebot3/ros2_manipulation/
+``` -->
 
 ## [SLAM](#slam)
 

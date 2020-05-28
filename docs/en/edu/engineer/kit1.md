@@ -20,9 +20,9 @@ sidebar:
 - ROBOTIS ENGINEER Kit offers standardized curriculum for multi level robotics educational courses
 - Joint structure allows diverse motions for versatile robots
 - Supports 3D part designing and printing
+- Base kit includes parts to build 3 different robot figures (MAX, SPI, DR. R). Build up to 7 robot figures total with workbooks.
 - Compatible with R+ ENGINEER(Smart device app), R+ Task 3.0(PC software)
 - Upgrade to Raspberry Pi and Camera
-
 
 ## [Parts List](#parts-list)
 
@@ -69,7 +69,7 @@ sidebar:
 **CAUTION** : The USB port on CM-550 is designed to be connected with the PC. Please do **NOT** connect other USB devices, or it may cause damage to the controller.
 {: .notice--warning}
 
-**[CM-550 eManual]{: .blank}**
+**[See the more detail of CM-550 e-Manual]{: .blank}**
 {: .notice}
 
 ### [2XL430-W250 DYNAMIXEL](#2xl430-w250-dynamixel)
@@ -221,27 +221,76 @@ It is not a mandatory and it may require more time to replace the cable afterwar
 
 ## [App Installation](#app-installation)
 
-{% capture app_install %}
-![](/assets/images/edu/engineer/kit1/icon_engineer_48.png)  
-**R+ ENGINEER : [Android App Download](https://play.google.com/store/apps/details?id=com.robotis.robotisEngineer)**  
+- ROBOTIS ENGIEER KIT supports R+Task 3.0.
+- R+ Task 3.0 is an integrated software tool that combines R+ Task 2.0 and R+ Motion 2.0.
+- Program the robot with a task tool.
+- Make any motios easily with a motion tool. 
 
+{% capture software_install_01 %} 
 ![](/assets/images/edu/engineer/kit1/icon_task_48.png)  
-**R+ Task 3.0 : [Android App Download](https://play.google.com/store/apps/details?id=com.robotis.task3)**  
-**R+ Task 3.0 : [Windows Installer Download](http://www.robotis.com/service/download.php?no=1774)**  
+- Download [R+ Task 3.0 for Windows (PC)](https://www.robotis.com/service/download.php?no=1774).
+- Download [R+ Task 3.0 for Mac OS (PC)](http://en.robotis.com/service/download.php?no=1908).
+- Download [R+ Task 3.0 For Android Device (Google Play)](https://play.google.com/store/apps/details?id=com.robotis.task3).
+- Download [R+ Task 3.0 For Apple Device (App Store)](https://apps.apple.com/us/app/r-task3-0/id1482356873)
 {% endcapture %}
-<div class="notice--success">{{ app_install | markdownify }}</div>
+<div class="notice--success">{{ software_install_01 | markdownify }}</div>
 
-1. Open `Play Store` or `App Store` from the smart device.  
-  ![](/assets/images/edu/engineer/kit1/app_installation_01_kr.png)
+{% capture software_install_02 %}  
+![](/assets/images/edu/engineer/kit1/icon_engineer_48.png)  
+- Download [R+ ENGINEER For Android Device (Google Play)](https://play.google.com/store/apps/details?id=com.robotis.robotisEngineer)
+- Download [R+ ENGINEER For Apple Device (App Store)](https://apps.apple.com/kr/app/r-engineer/id1475713920)
+{% endcapture %}
+<div class="notice--success">{{ software_install_02 | markdownify }}</div>
 
-2. Search for **ROBOTIS** or **ROBOTIS ENGINEER** from the store.  
-  ![](/assets/images/edu/engineer/kit1/app_installation_02.png)
+**NOTE**: R+Task 3.0 does not support Python Code Download on smart devices. Please download your code using R+Task 3.0 on a PC. 
+{: .notice}
 
-3. Select `R+ ENGINEER` from the list and press the `Get` or `Install` button.  
-  ![](/assets/images/edu/engineer/kit1/app_installation_03.png)
 
-4. **Android** : Press the `Agree` button to proceed installation.  
-  ![](/assets/images/edu/engineer/kit1/app_installation_04.png)
+## [Download Examples](#download-examples)
+- CM-550 controller is initially programmed with Kit1 example.  
+- The `Complete Example` includes `Dr.R`, `MAX-E1`, `SPI` examples.
+
+|     Example      |                                  Task Files                                   |                                 Motion Files                                  |
+|:----------------:|:-----------------------------------------------------------------------------:|:-----------------------------------------------------------------------------:|
+| Complete Example | [01_ENG1_TOTAL_EN.tsk3](http://www.robotis.com/service/download.php?no=1779)  | [01_ENG1_TOTAL_EN.mtn3](http://www.robotis.com/service/download.php?no=1787)  |
+|       Dr.R       |  [02_ENG1_DR_R_EN.tsk3](http://www.robotis.com/service/download.php?no=1780)  |  [02_ENG1_DR_R_EN.mtn3](http://www.robotis.com/service/download.php?no=1788)  |
+|      MAX-E1      | [03_ENG1_MAX_E1_EN.tsk3](http://www.robotis.com/service/download.php?no=1781) | [03_ENG1_MAX_E1_EN.mtn3](http://www.robotis.com/service/download.php?no=1789) |
+|       SPI        |  [04_ENG1_SPI_EN.tsk3](http://www.robotis.com/service/download.php?no=1782)   |  [04_ENG1_SPI_EN.mtn3](http://www.robotis.com/service/download.php?no=1790)   |
+
+### [Download from PC](#download-from-pc)
+
+1. [How to Connect CM-550 Controller to PC]{: .popup}
+2. [How to Download Task Example via PC]{: .popup}
+3. [How to Download Motion Example via PC]{: .popup}
+
+### [Download from Smart Device](#download-from-smart-device)
+
+**NOTE** : Connect CM-550 with your smart device via bluetooth. See [Pairing Bluetooth](#pairing-bluetooth).
+{: .notice}
+
+1. [How to Connect CM-550 Controller to Mobile]{: .popup}
+2. [How to Download Task Example via Mobile]{: .popup}
+3. [How to Download Motion Example via Mobile]{: .popup}
+
+## [Run Examples](#run-examples)
+
+Launch the `R+ ENGINEER` app and select the assembled robot example to operate the robot.
+
+![](/assets/images/edu/engineer/kit1/engineer_app_1.png)
+
+**CAUTION** : Selecting wrong example may result in malfunction of the robot.
+{: .notice--warning}
+
+Select the menu button on the top right corner of the app for app configuration.
+
+![](/assets/images/edu/engineer/kit1/engineer_app_configuration.png)
+
+`Connect to Robot` : Select Bluetooth device to connect.  
+`Reset Example` : Reset selected examples.  
+`Range of Gesture Error Setting` : Configure the error margin of the gesture.  
+`Display Example Image on Gallery` : Show example images in the smart device gallery.  
+`Scanning Media` : Refresh the smart device files/folders when not detected from PC.  
+`Version Information` : Display the current app version.  
 
 
 ## [Pairing Bluetooth](#pairing-bluetooth)
@@ -272,168 +321,6 @@ It is not a mandatory and it may require more time to replace the cable afterwar
 
 7. Select the BLE MAC address from the search list.  
   ![](/assets/images/edu/engineer/kit1/bluetooth_connection_7.png)
-
-## [Download Examples](#download-examples)
-- CM-550 controller is initially programmed with Kit1 example.  
-- The `Complete Example` includes `Dr.R`, `MAX-E1`, `SPI` examples.
-
-|     Example      |                                  Task Files                                   |                                 Motion Files                                  |
-|:----------------:|:-----------------------------------------------------------------------------:|:-----------------------------------------------------------------------------:|
-| Complete Example | [01_ENG1_TOTAL_EN.tsk3](http://www.robotis.com/service/download.php?no=1779)  | [01_ENG1_TOTAL_EN.mtn3](http://www.robotis.com/service/download.php?no=1787)  |
-|       Dr.R       |  [02_ENG1_DR_R_EN.tsk3](http://www.robotis.com/service/download.php?no=1780)  |  [02_ENG1_DR_R_EN.mtn3](http://www.robotis.com/service/download.php?no=1788)  |
-|      MAX-E1      | [03_ENG1_MAX_E1_EN.tsk3](http://www.robotis.com/service/download.php?no=1781) | [03_ENG1_MAX_E1_EN.mtn3](http://www.robotis.com/service/download.php?no=1789) |
-|       SPI        |  [04_ENG1_SPI_EN.tsk3](http://www.robotis.com/service/download.php?no=1782)   |  [04_ENG1_SPI_EN.mtn3](http://www.robotis.com/service/download.php?no=1790)   |
-
-
-{% capture opening_exam %}
-[How to open tsk3 file in R+ Task 3.0](/docs/en/software/rplustask3/task_programming/#태스크-예제-열기)  
-[How to download task program to CM-550 controller](#task-download-pc)  
-
-[How to open mtn3 file in R+ Task 3.0](/docs/en/software/rplustask3/motion_programming/#모션-예제-열기)  
-[How to download motion to CM-550 controller](#motion-download-pc)
-{% endcapture %}
-<div class="notice">{{opening_exam | markdownify}}</div>
-
-### [Download from PC](#download-from-pc)
-
-#### Connect with USB Cable
-The CM-550 can be connected to the PC via Micro USB port to download task(.tsk3) and motion(.mtn3) files.
-
-1. Connect USB cable to PC.
-2. Connect the other side of Micro USB cable to CM-550 controller. The controller will be powered by USB and turned on automatically.
-3. Luanch R+ Task 3.0 and press the `Connect` icon on the bottom left corner.  
-  ![](/assets/images/edu/engineer/kit1/remote_pairing_01.png)
-
-4. Select the serial port to use.  
-  ![](/assets/images/edu/engineer/kit1/remote_pairing_03.png)  
-
-5. Press the `Connect` icon.  
-  ![](/assets/images/edu/engineer/kit1/remote_pairing_04.png)  
-6. CM-550 will be connected to the PC with 3 beeps.  
-  ![](/assets/images/edu/engineer/kit1/remote_pairing_05.png)  
-
-#### Connect with Bluetooth
-The BLE module in CM-550 can be also paired with BT-410 Dongle to connect the PC, but wireless connection will be slower than wired connection when downloading.
-
-1. Turn on the CM-550.
-2. Connect BT-410 Dongle to the USB port of the PC.
-3. Bring the `MODE` button of CM-550 closer to the BT-410 Dongle to pair automatically.
-4. Luanch R+ Task 3.0 and press the `Connect` icon on the bottom left corner.  
-  ![](/assets/images/edu/engineer/kit1/remote_pairing_01.png)  
-
-5. Make sure to check on `Use USB Dongle` option when using BT-410 Dongle.  
-  ![](/assets/images/edu/engineer/kit1/remote_pairing_02.png)  
-
-6. Select the serial port to use.  
-  ![](/assets/images/edu/engineer/kit1/remote_pairing_03.png)  
-
-7. Press the `Connect` icon.  
-  ![](/assets/images/edu/engineer/kit1/remote_pairing_04.png)  
-
-8. CM-550 will be connected to the PC with 3 beeps.  
-  ![](/assets/images/edu/engineer/kit1/remote_pairing_05.png)  
-
-{% capture pairing_01 %}
-**NOTE** :
-- Bring the `MODE` button of CM-550 closer to the BT-410 Dongle to pair automatically.
-- Once BT-410 Dongle is paired successfully, the connection will be maintained within the range of Bluetooth signal.
-- Once BT-410 Dongle is paired successfully, paired device will be automatically connected within the range of Bluetooth signal.
-{% endcapture %}
-<div class="notice--info">{{ pairing_01 | markdownify}}</div>
-
-#### [Task Download (PC)](#task-download-pc)
-
-Please follow the instruction below to download the task(.tsk3) file to CM-550 controller.  
-
-1. Connect the controller to PC and select the assembled task example.  
-  ![](/assets/images/edu/engineer/kit1/remote_pairing_06.png)  
-
-2. Click the `Program Download` button in the menu.  
-  ![](/assets/images/edu/engineer/kit1/remote_pairing_07.png)  
-  ![](/assets/images/edu/engineer/kit1/remote_pairing_08.png)  
-
-#### [Motion Download (PC)](#motion-download-pc)
-
-Please follow the instruction below to download the motion(.mtn3) file to CM-550 controller.  
-
-1. Connect the controller to PC and select the assembled motion example.  
-  ![](/assets/images/edu/engineer/kit1/remote_pairing_09.png)  
-
-2. Select the motion example to download.  
-  ![](/assets/images/edu/engineer/kit1/remote_pairing_10.png)  
-
-3. Click the `Motion Download` tab in the menu.  
-  ![](/assets/images/edu/engineer/kit1/remote_pairing_11.png)  
-
-4. Select the motion group to download from the left column and click the `Download` button.  
-  ![](/assets/images/edu/engineer/kit1/remote_pairing_12.png)
-
-### [Download from Smart Device](#download-from-smart-device)
-
-In order to upload an example to CM-550 controller with R+ Task 3.0 app, the smart device and CM-550 must be paired with Bluetooth.
-
-1. Launch the R+ Task 3.0 app from the smart device and press the button in the red box.  
-  ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_01.png)  
-
-2. When `Connect Robot` window pops up, press the Bluetooth search button in the red box.  
-  ![](/assets/images/edu/engineer/kit1/bluetooth_connection_6_2.png)  
-
-3. Find the BLE MAC address of the CM-550 controller.  
-  ![](/assets/images/edu/engineer/kit1/bluetooth_connection_5.png)
-
-4. Enter the last two characters of BLE MAC address in the left box.  
-  ![](/assets/images/edu/engineer/kit1/bluetooth_connection_6_3.png)  
-
-5. Select the BLE MAC address from the search list.  
-  ![](/assets/images/edu/engineer/kit1/bluetooth_connection_6_4.png)  
-  ![](/assets/images/edu/engineer/kit1/bluetooth_connection_6_5.png)  
-
-#### [Task Download (Smart Device)](#task-download-smart-device)
-
-The task file(.tsk3) can be uploaded to CM-550 controller wirelessly.
-
-1. While CM-550 controller is connected to the R+ Task 3.0 app, go to **Task Examples** tab and select the example to upload.  
-  ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_06.png)
-
-2. Press `Download` button to start uploading the task to CM-550 controller.  
-  ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_07.png)  
-
-#### [Motion Download (Smart Device)](#motion-download-smart-device)
-
-1. While CM-550 controller is connected to the R+ Task 3.0 app, go to **Motion Examples** tab and select the example to upload.  
-  ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_08.png)  
-
-2. Select the example file in the **Select the Example** window.  
-  ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_09.png)  
-
-3. Press the menu button on the top left corner of the screen.  
-  ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_10.png)  
-
-4. Select **Motion Download** tab.  
-  ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_11.png)  
-
-5. Press the `Motion Download` button in the red box, selected motion file will be uploaded to CM-550 controller.  
-  ![](/assets/images/edu/engineer/kit1/remote_pairing_mobile_12.png)
-
-## [Run Examples](#run-examples)
-
-Launch the `R+ ENGINEER` app and select the assembled robot example to operate the robot.
-
-![](/assets/images/edu/engineer/kit1/engineer_app_1.png)
-
-**CAUTION** : Selecting wrong example may result in malfunction of the robot.
-{: .notice--warning}
-
-Select the menu button on the top right corner of the app for app configuration.
-
-![](/assets/images/edu/engineer/kit1/engineer_app_configuration.png)
-
-`Connect to Robot` : Select Bluetooth device to connect.  
-`Reset Example` : Reset selected examples.  
-`Range of Gesture Error Setting` : Configure the error margin of the gesture.  
-`Display Example Image on Gallery` : Show example images in the smart device gallery.  
-`Scanning Media` : Refresh the smart device files/folders when not detected from PC.  
-`Version Information` : Display the current app version.  
 
 ### [Dr.R](#drr)
 
@@ -886,9 +773,16 @@ Please refer to the method to adjust CM-550 BLE signal strength for various situ
 {% include en/parts/controller/fuse_cm-550.md %}
 
 
-[CM-550 eManual]: /docs/en/parts/controller/cm-550/
+[See the more detail of CM-550 e-Manual]: /docs/en/parts/controller/cm-550/
 [2XL430-W250 eManual]: /docs/en/dxl/x/2xl430-w250/
 [R+ Task 3.0]: /docs/en/software/rplustask3/
 [R+ Task 2.0]: /docs/en/software/rplus2/task/
 [R+ Motion 2.0]: /docs/en/software/rplus2/motion/
 [Operating Mode]: /docs/en/parts/controller/cm-550/#operating-mode
+[How to Connect CM-550 Controller to PC]: /docs/en/popup/engineer/connect_controller_pc
+[How to Download Task Example via PC]: /docs/en/popup/engineer/task_download_pc
+[How to Download Motion Example via PC]: /docs/en/popup/engineer/motion_download_pc
+[How to Connect CM-550 Controller to Mobile]: /docs/en/popup/engineer/connect_controller_mobile
+[How to Download Task Example via Mobile]: /docs/en/popup/engineer/task_download_mobile
+[How to Download Motion Example via Mobile]: /docs/en/popup/engineer/motion_download_mobile
+[ENGINEER App Installation]: /docs/en/popup/engineer/engineer_app_installation

@@ -10,7 +10,7 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 38
+page_number: 41
 ---
 
 <div style="counter-reset: h1 26"></div>
@@ -70,7 +70,7 @@ Programming with Blockly to run TurtleBot3 (This tutorial is builed by [Dabit In
 
 TurtleBot3 simulator in Ubuntu 14.04 (This tutorial is builed by [Cyaninfinite](http://cyaninfinite.com))
 
-  - [Document for Tutorials](http://cyaninfinite.com/tutorials/installing-tb3-simulator-in-ubuntu14-04/)
+  - [Document for Tutorials](https://cyaninfinite.com/installing-turtlebot-3-simulator-in-ubuntu-14-04/)
 
 ## [Youtube Course](#youtube-course)
 

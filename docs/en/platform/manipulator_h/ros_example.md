@@ -24,9 +24,6 @@ page_number: 7
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-**NOTE**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`+`Alt`+`t`.
-{: .notice--info}
-
 ## [Manipulator Manager](#manipulator-manager)
 
 ### Bring up the robot in Rviz

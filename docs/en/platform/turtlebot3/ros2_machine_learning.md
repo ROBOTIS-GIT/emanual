@@ -10,12 +10,12 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 35
+page_number: 38
 ---
 
 <div style="counter-reset: h1 23"></div>
 
-# [Machine Learning](#machine-learning)
+# [[ROS 2] Machine Learning](#ros-2-machine-learning)
 
 Machine learning, learning through experience, is a data analysis technique that teaches computers to recognize what is natural for people and animals. There are three types of machine learning: supervised learning, unsupervised learning, reinforcement learning.
 
@@ -23,14 +23,14 @@ This application is reinforcement learning with DQN (Deep Q-Learning). The reinf
 
 <iframe width="854" height="480" src="https://www.youtube.com/embed/WADmP0wzLxs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-The contents in e-Manual may differ from contents of a provided video in e-Manaul as e-Manual is updated on a regular basis.
+The contents in e-Manual can be updated without a previous notice. Therefore, some video may differ from the contents in e-Manual.
 {: .notice--warning} 
 
 This shows reinforcement learning with TurtleBot3 in gazebo.
 This reinforcement learning is applied DQN(Deep Q-Learning) algorithm with LDS.  
 We are preparing a four-step reinforcement learning tutorial.
 
-## [Installation](#installation)
+## [Install TensorFlow](#install-tensorflow)
 
 Install Tensorflow and Keras on PC (Requirement: Ubuntu 18.04 and ROS2 Dashing)
 
@@ -71,21 +71,21 @@ $ pip3 install keras==2.1.5
 2. Install turtlebot3_machine_learning packages. 
 ``` bash
 $ cd ~/robotis_ws/src/
-$ git clone https://github.com/ROBOTIS-GIT/turtlebot3_machine_learning.git
+$ git clone -b ros2 https://github.com/ROBOTIS-GIT/turtlebot3_machine_learning.git
 $ cd ~/robotis_ws && colcon build --symlink-install
 ```
 
-## [Set parameters](#set-parameters)
+## [Set Parameters](#set-parameters)
 The goal of DQN Agent is to get TurtleBot3 to the goal to avoid obstacles. 
 The closer TurtleBot3 gets to, the more positive reward it gets. When TurtleBot3 gets closer to the goal, it gets a positive reward. When it gets farther it gets a negative reward.
 The episode ends when the TurtleBot3 crashes on an obstacle or after a certain period of time. During the episode, TurtleBot3 gets a big positive reward when it gets to the goal, and TurtleBot3 gets a big negative reward when it crashes on an obstacle.
 
 <iframe width="1236" height="695" src="https://www.youtube.com/embed/807_cByUBSI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-The contents in e-Manual may differ from contents of a provided video in e-Manaul as e-Manual is updated on a regular basis.
+The contents in e-Manual can be updated without a previous notice. Therefore, some video may differ from the contents in e-Manual.
 {: .notice--warning} 
 
-### [Set state](#set-state)
+### [Set State](#set-state)
 State is an observation of environment and describes the current situation. Here, `state_size` is 26 and has 24 LDS values, distance to goal, and angle to goal.
 
 Turtlebot3's LDS default is set to 360. You can modify sample of LDS at `turtlebot3/turtlebot3_description/urdf/turtlebot3_burger.gazebo.xacro`.
@@ -108,7 +108,7 @@ Turtlebot3's LDS default is set to 360. You can modify sample of LDS at `turtleb
 |:-----------------------------------------------------------------------:|:----------------------------------------------------------------------:|
 |                            **sample = 360**                             |                            **sample = 24**                             |
 
-### [Set action](#set-action)
+### [Set Action](#set-action)
 Action is what an agent can do in each state. Here, turtlebot3 has always 0.15 m/s of linear velocity. angular velocity is determined by action.
 
 | Action | Angular velocity(rad/s) |
@@ -119,11 +119,11 @@ Action is what an agent can do in each state. Here, turtlebot3 has always 0.15 m
 |   3    |          0.75           |
 |   4    |           1.5           |
 
-### [Set reward](#set-reward)
+### [Set Reward](#set-reward)
 When turtlebot3 takes an action in a state, it receives a reward. The reward design is very important for learning. A reward can be positive or negative. When turtlebot3 gets to the goal, it gets big positive reward. When turtlebot3
 collides with an obstacle, it gets big negative reward. If you want to apply your reward design, modify `setReward` function at  `/turtlebot3_machine_learning/turtlebot3_dqn/src/turtlebot3_dqn/environment_stage_#.py`.
 
-### [Set hyper parameters](#set-hyper-parameters)
+### [Set Hyper Parameters](#set-hyper-parameters)
 This tutorial has been learned using DQN. DQN is a reinforcement learning method that selects a deep neural network by approximating the action-value function(Q-value). Agent has follow hyper parameters at `/turtlebot3_machine_learning/turtlebot3_dqn/nodes/turtlebot3_dqn_stage_#`.
 
 | Hyper parameter | default |                                                      description                                                       |
@@ -143,7 +143,7 @@ This tutorial has been learned using DQN. DQN is a reinforcement learning method
 ## [Run Machine Learning](#run-machine-learning)
 <iframe width="1280" height="720" src="https://www.youtube.com/embed/5uIZU8PCHT8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-The contents in e-Manual may differ from contents of a provided video in e-Manaul as e-Manual is updated on a regular basis.
+The contents in e-Manual can be updated without a previous notice. Therefore, some video may differ from the contents in e-Manual.
 {: .notice--warning} 
 
 ### [Stage 1 (No Obstacle)](#stage-1-no-obstacle)
@@ -154,7 +154,7 @@ Stage 1 is a 4x4 map with no obstacles.
 1. Open a terminal.
 2. Bring the stage 1 in Gazebo map.
 ``` bash
-$ ros2 launch turtlebot3_dqn turtlebot3_dqn_stage1.launch.py
+$ ros2 launch turtlebot3_gazebo turtlebot3_dqn_stage1.launch.py
 $ ros2 run turtlebot3_dqn dqn_gazebo 1
 $ ros2 run turtlebot3_dqn dqn_environment
 $ ros2 run turtlebot3_dqn dqn_agent 1
@@ -173,7 +173,7 @@ Stage 2 is a 4x4 map with four cylinders of static obstacles.
 1. Open a terminal.
 2. Bring the stage 2 in Gazebo map.
 ``` bash
-$ ros2 launch turtlebot3_dqn turtlebot3_dqn_stage2.launch.py
+$ ros2 launch turtlebot3_gazebo turtlebot3_dqn_stage2.launch.py
 $ ros2 run turtlebot3_dqn dqn_gazebo 2
 $ ros2 run turtlebot3_dqn dqn_environment
 $ ros2 run turtlebot3_dqn dqn_agent 2
@@ -192,7 +192,7 @@ Stage 3 is a 4x4 map with four cylinders of moving obstacles.
 1. Open a terminal.
 2. Bring the stage 3 in Gazebo map.
 ``` bash
-$ ros2 launch turtlebot3_dqn turtlebot3_dqn_stage3.launch.py
+$ ros2 launch turtlebot3_gazebo turtlebot3_dqn_stage3.launch.py
 $ ros2 run turtlebot3_dqn dqn_gazebo 3
 $ ros2 run turtlebot3_dqn dqn_environment
 $ ros2 run turtlebot3_dqn dqn_agent 3
@@ -211,7 +211,7 @@ Stage 4 is a 5x5 map with walls and two cylinders of moving obstacles.
 1. Open a terminal.
 2. Bring the stage 4 in Gazebo map.
 ``` bash
-$ ros2 launch turtlebot3_dqn turtlebot3_dqn_stage4.launch.py
+$ ros2 launch turtlebot3_gazebo turtlebot3_dqn_stage4.launch.py
 $ ros2 run turtlebot3_dqn dqn_gazebo 4
 $ ros2 run turtlebot3_dqn dqn_environment
 $ ros2 run turtlebot3_dqn dqn_agent 4

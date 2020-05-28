@@ -10,12 +10,12 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 25
+page_number: 28
 ---
 
 <div style="counter-reset: h1 13"></div>
 
-# [Machine Learning](#machine-learning)
+# [[ROS 1] Machine Learning](#ros-1-machine-learning)
 
 Machine learning is a data analysis technique that teaches computers to recognize what is natural for people and animals - learning through experience. There are three types of machine learning: supervised learning, unsupervised learning, reinforcement learning.
 
@@ -23,7 +23,7 @@ This application is reinforcement learning with DQN (Deep Q-Learning). The reinf
 
 <iframe width="854" height="480" src="https://www.youtube.com/embed/WADmP0wzLxs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-The contents in e-Manual may differ from contents of a provided video in e-Manaul as e-Manual is updated on a regular basis.
+The contents in e-Manual can be updated without a previous notice. Therefore, some video may differ from the contents in e-Manual.
 {: .notice--warning} 
 
 This shows reinforcement learning with TurtleBot3 in gazebo.
@@ -90,7 +90,7 @@ The episode ends when the TurtleBot3 crashes on an obstacle or after a certain p
 
 <iframe width="1236" height="695" src="https://www.youtube.com/embed/807_cByUBSI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-The contents in e-Manual may differ from contents of a provided video in e-Manaul as e-Manual is updated on a regular basis.
+The contents in e-Manual can be updated without a previous notice. Therefore, some video may differ from the contents in e-Manual.
 {: .notice--warning} 
 
 ### [Set state](#set-state)

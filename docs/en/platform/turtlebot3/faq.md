@@ -10,7 +10,7 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 49
+page_number: 53
 ---
 
 <div style="counter-reset: h1 32"></div>
@@ -80,6 +80,7 @@ $ sudo ntpdate ntp.ubuntu.com
 {: .notice--warning}
 
 1. **Upload Setup Firmware to OpenCR**  
+Press and hold the `SW2` button and click the `Reset` button. If the `Status` LED is blinking, release the `SW2` button.  
 As shown in the below image, find `Examples` > `turtlebot3` > `turtlebot3_setup` > `turtlebot3_setup_motor` and open the example.  
 
     ![](/assets/images/platform/turtlebot3/faq/dynamixel_setup_1.png)
@@ -117,9 +118,9 @@ When the setup is completed, `OK` message is printed on the screen.
 
 7. **Test DYNAMIXEL**  
 Complete the setup procedure and verify if the change has been properly made.  
-If you select one of the test menu for DYNAMIXEL, the selected DYNAMIXEL will begin to rotate in the clockwise and counterclockwise.  
+Select one of the test options, then selected DYNAMIXEL will iterate rotation and stop every 1 second to the counter-clockwise or clockwise depending on the selected wheel.  
 To end the test, press the `Enter`.  
-For example, to test the left DYNAMIXEL, enter `3` as shown in below and enter `4` for the right DYNAMIXEL.
+For example, to test the left DYNAMIXEL, enter `3` as shown in below, or enter `4` for the right wheel test.
 
     ![](/assets/images/platform/turtlebot3/faq/dynamixel_setup_6.png)
 

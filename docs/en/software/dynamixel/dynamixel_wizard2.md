@@ -18,7 +18,7 @@ sidebar:
 
 ![](/assets/images/sw/dynamixel/wizard2/wizard2_main_000.jpg)
 
-**Software Download(v2.0.5.1)**  
+**Software Download(v2.0.6)**  
 [Windows](http://www.robotis.com/service/download.php?no=1670)  
 [Linux](http://www.robotis.com/service/download.php?no=1671)  
 [Mac](http://www.robotis.com/service/download.php?no=1760)  
@@ -72,31 +72,32 @@ Although almost all ROBOTIS products are shipped with installed firmwares, new f
 
 ## [Supported Products](#supported-products)
 
-| DYNAMIXEL Series |                                |                                 |                                |                                |                 |
-|:-----------------|:-------------------------------|:--------------------------------|:-------------------------------|:-------------------------------|:----------------|
-| **AX**           | [AX-12W]                       | [AX-12+/12A]                    | [AX-18F/18A]                   |                                |                 |
-| **DX**           | [DX-113]                       | [DX-116]                        | [DX-117]                       |                                |                 |
-| **RX**           | [RX-10]                        | [RX-24F]                        | [RX-28]                        | [RX-64]                        |                 |
-| **EX**           | [EX-106+]                      |                                 |                                |                                |                 |
-| **MX**           | [MX-12W]                       | [MX-28], [MX-28(2.0)]           | [MX-64], [MX-64(2.0)]          | [MX-106], [MX-106(2.0)]        |                 |
-| **XL**           | [XL320]                        | [XL430-W250]<br/> [2XL430-W250] |                                |                                |                 |
-| **XM**           | [XM430-W210]                   | [XM430-W350]                    | [XM540-W150]                   | [XM540-W270]                   |                 |
-| **XH**           | [XH430-W210]<br/> [XH430-W350] | [XH430-V210]<br/> [XH430-V350]  | [XH540-W150]<br/> [XH540-W270] | [XH540-V150]<br/> [XH540-V270] |                 |
-| **PRO H**        | [H42-20-S300-R]                | [H54-100-S500-R]                | [H54-200-S500-R]               |                                |                 |
-| **PRO M**        | [M42-10-S260-R]                | [M54-40-S250-R]                 | [M54-60-S250-R]                |                                |                 |
-| **PRO L**        | [L42-10-S300-R]                | [L54-30-S500-R]                 | [L54-30-S400-R]                | [L54-50-S500-R]                | [L54-50-S290-R] |
-| **PRO H(A)**     | [H42-20-S300-R(A)]             | [H54-100-S500-R(A)]             | [H54-200-S500-R(A)]            |                                |                 |
-| **PRO M(A)**     | [M42-10-S260-R(A)]             | [M54-40-S250-R(A)]              | [M54-60-S250-R(A)]             |                                |                 |
-| **PH**       | [PH42-020-S300-R]              | [PH54-100-S500-R]               | [PH54-100-S500-R]              |                                |                 |
-| **PM**       | [PM54-060-S250-R]              | [PM54-040-S250-R]               | [PM42-010-S260-R]              |                                |                 |
-| **ETC**          | [RH-P12-RN]                    | [RH-P12-RN(A)]                  |                                |                                |                 |
+| DYNAMIXEL Series |                                |                                |                                |                                |                 |
+|:-----------------|:-------------------------------|:-------------------------------|:-------------------------------|:-------------------------------|:----------------|
+| **AX**           | [AX-12W]                       | [AX-12+/12A]                   | [AX-18F/18A]                   |                                |                 |
+| **DX**           | [DX-113]                       | [DX-116]                       | [DX-117]                       |                                |                 |
+| **RX**           | [RX-10]                        | [RX-24F]                       | [RX-28]                        | [RX-64]                        |                 |
+| **EX**           | [EX-106+]                      |                                |                                |                                |                 |
+| **MX**           | [MX-12W]                       | [MX-28], [MX-28(2.0)]          | [MX-64], [MX-64(2.0)]          | [MX-106], [MX-106(2.0)]        |                 |
+| **XL**           | [XL320]                        | [XL430-W250]                   | [2XL430-W250]                  |                                |                 |
+| **XC**           | [XC430-W150]<br/> [XC430-W240] | [2XC430-W250]                  |                                |                                |                 |
+| **XM**           | [XM430-W210]<br/> [XM430-W350] | [XM540-W150]<br/> [XM540-W270] |                                |                                |                 |
+| **XH**           | [XH430-W210]<br/> [XH430-W350] | [XH430-V210]<br/> [XH430-V350] | [XH540-W150]<br/> [XH540-W270] | [XH540-V150]<br/> [XH540-V270] |                 |
+| **PRO H**        | [H42-20-S300-R]                | [H54-100-S500-R]               | [H54-200-S500-R]               |                                |                 |
+| **PRO M**        | [M42-10-S260-R]                | [M54-40-S250-R]                | [M54-60-S250-R]                |                                |                 |
+| **PRO L**        | [L42-10-S300-R]                | [L54-30-S500-R]                | [L54-30-S400-R]                | [L54-50-S500-R]                | [L54-50-S290-R] |
+| **PRO H(A)**     | [H42-20-S300-R(A)]             | [H54-100-S500-R(A)]            | [H54-200-S500-R(A)]            |                                |                 |
+| **PRO M(A)**     | [M42-10-S260-R(A)]             | [M54-40-S250-R(A)]             | [M54-60-S250-R(A)]             |                                |                 |
+| **PH**           | [PH42-020-S300-R]              | [PH54-100-S500-R]              | [PH54-100-S500-R]              |                                |                 |
+| **PM**           | [PM54-060-S250-R]              | [PM54-040-S250-R]              | [PM42-010-S260-R]              |                                |                 |
+| **ETC**          | [RH-P12-RN]                    | [RH-P12-RN(A)]                 |                                |                                |                 |
 
 # [Software Installation](#software-installation)
 
 ## [Install: Windows](#install-windows)
 
 1. Download the package file.
-- [Windows Software Download(v2.0.5.1)](http://www.robotis.com/service/download.php?no=1670)  
+- [Windows Software Download(v2.0.6)](http://www.robotis.com/service/download.php?no=1670)  
 2. Execute downloaded installation file.  
 3. Click on `Next` button to proceed installation.
 
@@ -105,25 +106,35 @@ Although almost all ROBOTIS products are shipped with installed firmwares, new f
 ## [Install: Linux](#install-linux)
 
 1. Download the package file.  
-- [Linux Software Download(v2.0.5.1)](http://www.robotis.com/service/download.php?no=1671)  
+- [Linux Software Download(v2.0.6)](http://www.robotis.com/service/download.php?no=1671)  
 2. Enter the following command to change the permission.
 
-    ```c
-    # sudo chmod 775 DynamixelWizard2Setup_x64
+    ```bash
+    $ sudo chmod 775 DynamixelWizard2Setup_x64
     ```
 
 3. Run the install program.
 
-    ```c
-    # ./DynamixelWizard2Setup_x64
+    ```bash
+    $ ./DynamixelWizard2Setup_x64
     ```
 
 4. Click on `Next` button to proceed installation.
 
+5. After completing the installation, please add account id to dialout group in order to access the USB port. Replace the <your_account_id> in the command below to your actual user id.
+    ```bash
+    $ sudo usermod -aG dialout <your_account_id>
+    ```
+
+6. Reboot in order the changes to be effective.
+    ```bash
+    $ reboot
+    ```
+
 ## [Install: Mac](#install-mac)
 
 1. Download the package file.  
-- [Mac Software Download(v2.0.5.1)](http://www.robotis.com/service/download.php?no=1760)
+- [Mac Software Download(v2.0.6)](http://www.robotis.com/service/download.php?no=1760)
 2. Right click on the downloaded dmg file and select `Open` from the mene.  
   ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_mac_01.png)
 3. Launch the `DynamixelWizard2Setup_x64` file.  
@@ -235,7 +246,7 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 
 4. Select `Goal Position` or `Goal Velocity` item in the control table in the middle column.
 
-    **NOTE**: Read a contorl table of your DYNAMIXEL as the item can be different depending on a model and Operation Mode of DYNAMIXEL. 
+    **NOTE**: Read the control table of your DYNAMIXEL as the item can be different depending on the model and Operating Mode of the DYNAMIXEL. 
     {: .notice}
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_004.png)     
@@ -685,6 +696,9 @@ In order to use the minimum communication interval(1 [ms]), please follow the in
 [XL320]: /docs/en/dxl/x/xl320/
 [XL430-W250]: /docs/en/dxl/x/xl430-w250/
 [2XL430-W250]: /docs/en/dxl/x/2xl430-w250/
+[XC430-W150]: /docs/en/dxl/x/xc430-w150/
+[XC430-W240]: /docs/en/dxl/x/xc430-w240/
+[2XC430-W250]: /docs/en/dxl/x/2xc430-w250/
 [XM430-W210]: /docs/en/dxl/x/xm430-w210/
 [XM430-W350]: /docs/en/dxl/x/xm430-w350/
 [XH430-W210]: /docs/en/dxl/x/xh430-w210/
