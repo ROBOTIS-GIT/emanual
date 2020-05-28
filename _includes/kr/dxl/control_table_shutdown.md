@@ -50,7 +50,15 @@ Revision: PRO+ > DYNAMIXEL-P.
 | Bit 0 |      Input Voltage Error       | 인가된 전압이 설정된 동작전압 범위를 벗어난 경우                                         |
 {% endif %}
 
-{% if page.product_group=='dxl_ax' or page.product_group=='dxl_dx' or page.product_group=='dxl_ex' or page.product_group=='dxl_rx' or page.product_group=='dxl_mx' %}
+{% if page.product_group=='dxl_xw540' %}
+{% capture shutdown_01 %}
+**참고** : Shutdown이 발생할 경우 장치를 **장치를 REBOOT** 시켜 주세요 
+-  H/W REBOOT : 전원을 껐다 켜주세요.
+-  S/W REBOOT : REBOOT Instruction을 사용할수 있습니다. [Protocol 2.0](/docs/kr/dxl/protocol2/#reboot)을 참고해주세요.
+{% endcapture %}
+<div class="notice">{{ shutdown_01 | markdownify }}</div>
+
+{% elsif page.product_group=='dxl_ax' or page.product_group=='dxl_dx' or page.product_group=='dxl_ex' or page.product_group=='dxl_rx' or page.product_group=='dxl_mx' %}
 **참고** : Shutdown이 발생하면, **1초 주기로 LED가 점멸합니다.** 전원을 껏다 다시 켜주세요 (Reboot).  
 {: .notice}
 {% else %}
