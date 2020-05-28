@@ -40,7 +40,15 @@ REBOOT is the only method to reset {% if page.product_group=='dxl_ax' or page.pr
 | Bit 0 |       Input Voltage Error       | Detect input voltage exceeds the configured operating voltage                   |
 {% endif %}
 
-{% if page.product_group=='dxl_ax' or page.product_group=='dxl_dx' or page.product_group=='dxl_ex' or page.product_group=='dxl_rx' or page.product_group=='dxl_mx' %}
+{% if page.product_group=='dxl_xw540' %}
+{% capture shutdown_01 %}
+**NOTE** : If Shutdown occurs, **reboot the device**.
+- H/W REBOOT : Turn off and turn on the power again
+- S/W REBOOT : Transmit REBOOT Instruction (For more details, refer to the [Reboot](/docs/en/dxl/protocol2/#reboot) section of e-Manual.)
+{% endcapture %}
+<div class="notice">{{ shutdown_01 | markdownify }}</div>
+
+{% elsif page.product_group=='dxl_ax' or page.product_group=='dxl_dx' or page.product_group=='dxl_ex' or page.product_group=='dxl_rx' or page.product_group=='dxl_mx' %}
 **NOTE** : If Shutdown occurs, **LED will flicker every second.**
 {: .notice}
 {% else %}
