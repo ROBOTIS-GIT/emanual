@@ -6,6 +6,11 @@ If specific address is allocated to Indirect Address, Indirect Address inherits 
 2. Set Indirect Data 1(224) to ‘1’ : LED(65) also becomes '1' and LED is turned on.
 3. Set Indirect Data 1(224) to ‘0’ : LED(65) also becomes ‘0’ and LED is turned off.
 
+{% if page.product_group=='dxl_xw540' %}
+**NOTE**: XW series does not use LED(65).
+{: .notice}
+{% endif %}
+
 `Example 2` Allocating Size 4 byte Goal Position(116) to Indirect Data 2(225), 4 sequential bytes have to be allocated.
 1. Indirect Address 2(170) : change the value to '116' which is the first address of Goal Position.
 2. Indirect Address 3(172) : change the value to '117' which is the second address of Goal Position.

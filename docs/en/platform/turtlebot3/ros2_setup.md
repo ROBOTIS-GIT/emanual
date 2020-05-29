@@ -47,11 +47,12 @@ As TurtleBot3 operates on ROS, it requies to install `ros-dashing-desktop` debia
 **[Remote PC]**
 
 1. Open a terminal on **Remote PC**.
-2. Use the following commands.
+2. Install Colcon
 ```bash
-# Install Colcon
 $ sudo apt install python3-colcon-common-extensions
-# Install Cartographer dependencies
+```
+3. Install Cartographer dependencies
+```bash
 $ sudo apt install -y \
     google-mock \
     libceres-dev \
@@ -63,16 +64,27 @@ $ sudo apt install -y \
     libcairo2-dev \
     libpcl-dev \
     python3-sphinx
-# Install Gazebo9
+```
+4. Install Gazebo9
+```bash
 $ curl -sSL http://get.gazebosim.org | sh
-$ sudo apt install ros-dashing-gazebo-*
-# Install Cartographer
+### Uninstall Gazebo11 if installed previously
+$ sudo apt remove gazebo11 libgazebo11-dev
+$ sudo apt install gazebo9 libgazebo9-dev
+$ sudo apt install ros-dashing-gazebo-ros-pkgs
+```
+5. Install Cartographer
+```bash
 $ sudo apt install ros-dashing-cartographer
 $ sudo apt install ros-dashing-cartographer-ros
-# Install Navigation2
+```
+6. Install Navigation2
+```bash
 $ sudo apt install ros-dashing-navigation2
 $ sudo apt install ros-dashing-nav2-bringup
-# Install vcstool
+```
+7. Install vcstool
+```bash
 $ sudo apt install python3-vcstool
 ```
 
