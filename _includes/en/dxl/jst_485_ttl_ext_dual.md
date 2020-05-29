@@ -1,6 +1,6 @@
 
 
-{% if page.ref=='xw540-t150' or page.ref=='xw540-t270' %}
+{% if page.ref=='xw540-t140' or page.ref=='xw540-t260' %}
 |      Item      |                            RS-485                            | 
 |:--------------:|:------------------------------------------------------------:|
 |     Pinout     |         `1` GND<br>`2` VDD<br>`3` DATA+<br>`4` DATA-         | 
