@@ -247,6 +247,7 @@ setPacketTimeout(packet_length)
 ```
 
 - Parameters
+
 | Parameters    | Description                  |
 |:--------------|:-----------------------------|
 | Packet_length | Target byte length for write |
