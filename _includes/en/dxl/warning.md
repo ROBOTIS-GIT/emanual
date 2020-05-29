@@ -40,6 +40,7 @@
 ![](/assets/images/icon_warning.png)  
 **ATTENTION**  
 (May cause injury or damage to product)
+{% if page.product_group=='dxl_xw540' %} - Comply with the operating environment. (Depth 1m, 24hr in normal fresh water) {% endif %}
 - Do not disassemble or modify product.
 - Do not drop or apply strong shock to product.
 {% endcapture %}
