@@ -7284,7 +7284,7 @@ xw540-t140:
       - title: "Option Frame Assembly"
         titlekr: "옵션프레임 조립"
         url: /dxl/x/xw540-t140/#option-frame-assembly
-        urlkr: /dxl/x/xw540-t140/#옵션프레임-조립
+        urlkr: /dxl/x/xw540-t140/#옵션프레임-조립      
   - title: "Maintenance"
     titlekr: "유지보수"
     url: /dxl/x/xw540-t140/#maintenance
@@ -7315,12 +7315,16 @@ xw540-t140:
         titlekr: "통신 회로"
         url: /dxl/x/xw540-t140/#communication-circuit
         urlkr: /dxl/x/xw540-t140/#통신-회로
+      - title: "How to Use the Water Proof Cable"
+        titlekr: "케이블 연결 및 분리"
+        url: /dxl/x/xw540-t140/#how-to-use-the-water-proof-cable
+        urlkr: /dxl/x/xw540-t140/#케이블-연결-및-분리          
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/x/xw540-t140/#drawings
         urlkr: /dxl/x/xw540-t140/#도면
                 
-#XW540-T270 sidebar
+#XW540-T260 sidebar
 xw540-t260:
   - title: "Specifications"
     titlekr: "주요 사양"
@@ -7544,6 +7548,10 @@ xw540-t260:
         titlekr: "통신 회로"
         url: /dxl/x/xw540-t260/#communication-circuit
         urlkr: /dxl/x/xw540-t260/#통신-회로
+      - title: "How to Use the Water Proof Cable"
+        titlekr: "케이블 연결 및 분리"
+        url: /dxl/x/xw540-t260/#how-to-use-the-water-proof-cable
+        urlkr: /dxl/x/xw540-t260/#케이블-연결-및-분리           
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/x/xw540-t260/#drawings

@@ -484,8 +484,8 @@ xw540-t140:
   weight:             "185 g"
   dimensions:         "33.5 x 58.5 x 45.9 mm"
   gearratio:          "145.6 : 1"
-  stalltorque:        "6.4 [N.m] (at 11.1 [V], 4.5 [A])<br />6.9 [N.m] (at 12.0 [V], 4.9 [A])<br />8.3 [N.m] (at 14.8 [V], 5.9 [A])"
-  noloadspeed:        "67 [rev/min] (at 11.1 [V]<br />72 [rev/min] (at 12.0 [V]<br />88 [rev/min] (at 14.8 [V])"
+  stalltorque:        "6.4 [N.m] (at 11.1 [V], 4.5 [A])<br />**6.9 [N.m] (at 12.0 [V], 4.9 [A])**<br />8.3 [N.m] (at 14.8 [V], 5.9 [A])"
+  noloadspeed:        "67 [rev/min] (at 11.1 [V]<br />**72 [rev/min] (at 12.0 [V]**<br />88 [rev/min] (at 14.8 [V])"
   radialload:         *radialload
   radialload_en:      *radialload_en
   axialload:          *axialload
