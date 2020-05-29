@@ -34,7 +34,7 @@ common_x_specs:
   standbycurrent_40:  &standbycurrent_40 "40 [mA]"
 
 xl320:
-  temperature:        "-5 ~ +70 [&deg;C]"
+  temperature:        "-5 ~ +65 [&deg;C]"
 
 xh430-v210:
   mcu:                *mcu
