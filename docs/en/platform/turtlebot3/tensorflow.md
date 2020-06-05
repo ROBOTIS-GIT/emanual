@@ -37,9 +37,6 @@ Install setuptools and rospkg.
 
 ## [TurtleBot3 Fake Node Implementation](#turtlebot3-fake-node-implementation)
 
-**Tip :** The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`-`Alt`-`T`.
-{: .notice--info}
-
 Install dependent packages for TurtleBot3 Simulation.
 
 **Note :** turtlebot3_simulation package requires [**TurtleBot3**](http://turtlebot3.robotis.com/en/latest/pc_software.html#install-dependent-packages) package as a prerequisite.

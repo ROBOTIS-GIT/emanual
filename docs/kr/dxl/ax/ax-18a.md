@@ -53,17 +53,17 @@ product_group: dxl_ax
 
 | 주소 | 크기(Byte) | 명칭                                        | 의미                              | 접근 | 초기값 |
 |:-----|:-----------|:--------------------------------------------|:----------------------------------|:-----|:-------|
-| 0    | 2          | [Model Number](#model-number)               | 모델 번호의 바이트                | R    | 18     |
+| 0    | 2          | [Model Number](#model-number)               | 모델 번호                | R    | 18     |
 | 2    | 1          | [Firmware Version](#firmware-version)       | 펌웨어 버전 정보                  | R    | -      |
 | 3    | 1          | [ID](#id)                                   | 다이나믹셀 ID                     | RW   | 1      |
 | 4    | 1          | [Baud Rate](#baud-rate)                     | 다이나믹셀 통신 속도              | RW   | 1      |
 | 5    | 1          | [Return Delay Time](#return-delay-time)     | 응답 지연 시간                    | RW   | 250    |
-| 6    | 2          | [CW Angle Limit](#cw-angle-limit)           | 시계 방향 한계 각도 값의 바이트   | RW   | 0      |
-| 8    | 2          | [CCW Angle Limit](#ccw-angle-limit)         | 반시계 방향 한계 각도 값의 바이트 | RW   | 1023   |
+| 6    | 2          | [CW Angle Limit](#cw-angle-limit)           | 시계 방향 한계 각도    | RW   | 0      |
+| 8    | 2          | [CCW Angle Limit](#ccw-angle-limit)         | 반시계 방향 한계 각도  | RW   | 1023   |
 | 11   | 1          | [Temperature Limit](#temperature-limit)     | 내부 한계 온도                    | RW   | 75     |
 | 12   | 1          | [Min Voltage Limit](#min-voltage-limit)     | 최저 한계 전압                    | RW   | 60     |
 | 13   | 1          | [Max Voltage Limit](#max-voltage-limit)     | 최고 한계 전압                    | RW   | 140    |
-| 14   | 2          | [Max Torque](#max-torque)                   | 토크 한계 값의 바이트             | RW   | 983    |
+| 14   | 2          | [Max Torque](#max-torque)                   | 토크 한계              | RW   | 983    |
 | 16   | 1          | [Status Return Level](#status-return-level) | 응답 레벨                         | RW   | 2      |
 | 17   | 1          | [Alarm LED](#alarm-led)                     | 알람용 LED 기능                   | RW   | 36     |
 | 18   | 1          | [Shutdown](#shutdown)                       | 알람용 셧 다운(Shut down) 기능    | RW   | 36     |
@@ -78,18 +78,18 @@ product_group: dxl_ax
 | 27   | 1          | [CCW Compliance Margin](#ccw-compliance-margin) | CCW Compliance Margin      | RW   | 1          |
 | 28   | 1          | [CW Compliance Slope](#cw-compliance-slope)     | CW Compliance Slope        | RW   | 32         |
 | 29   | 1          | [CCW Compliance Slope](#ccw-compliance-alope)   | CCW Compliance Slope       | RW   | 32         |
-| 30   | 2          | [Goal Position](#goal-position)                 | 목표 위치 값의 바이트      | RW   | -          |
+| 30   | 2          | [Goal Position](#goal-position)                 | 목표 위치       | RW   | -          |
 | 32   | 2          | [Moving Speed](#moving-speed)                   | 목표 속도 값의 하위 바이트 | RW   | -          |
-| 34   | 2          | [Torque Limit](#torque-limit)                   | 토크 한계 값의 바이트      | RW   | ADD 14\&15 |
-| 36   | 2          | [Present Position](#present-position)           | 현재 위치 값의 바이트      | R    | -          |
-| 38   | 2          | [Present Speed](#present-speed)                 | 현재 속도 값의 바이트      | R    | -          |
-| 40   | 2          | [Present Load](#present-load)                   | 현재 하중 값의 바이트      | R    | -          |
+| 34   | 2          | [Torque Limit](#torque-limit)                   | 토크 한계       | RW   | Max Torque |
+| 36   | 2          | [Present Position](#present-position)           | 현재 위치       | R    | -          |
+| 38   | 2          | [Present Speed](#present-speed)                 | 현재 속도       | R    | -          |
+| 40   | 2          | [Present Load](#present-load)                   | 현재 하중       | R    | -          |
 | 42   | 1          | [Present Voltage](#present-voltage)             | 현재 전압                  | R    | -          |
 | 43   | 1          | [Present Temperature](#present-temperature)     | 현재 온도                  | R    | -          |
 | 44   | 1          | [Registered](#registered)                       | Instruction의 등록 여부    | R    | 0          |
 | 46   | 1          | [Moving](#moving)                               | 움직임 유무                | R    | 0          |
 | 47   | 1          | [Lock](#lock)                                   | EEPROM 잠금                | RW   | 0          |
-| 48   | 2          | [Punch](#punch)                                 | Punch 값의 바이트          | RW   | 32         |
+| 48   | 2          | [Punch](#punch)                                 | Punch           | RW   | 32         |
 
 ## [컨트롤 테이블 설명](#컨트롤-테이블-설명)
 

@@ -93,8 +93,6 @@ $ sudo ddrescue -D --force ubuntu-mate-16.04.2-desktop-armhf-raspberry-pi.img /d
 **NOTE**: This instruction takes about 1 hours to install ROS and related packages for TurtleBot3. Elapsed time may vary depending on network environment.
 {: .notice--info}
 
-**[TurtleBot]** The following script will allow you to simplify the ROS installation procedure. Run the following command in a terminal window on TurtleBot PC. The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`-`Alt`-`T`. After install ROS, please reboot TurtleBot PC.
-
 ``` bash
 $ sudo apt-get update
 $ sudo apt-get upgrade
@@ -202,7 +200,8 @@ We provide the Linux distro image based on Raspbian. They are pre-installed with
 ##### Remote PC
 - Download the Linux distro image based on Raspbian for TurtleBot3
   - [download link](http://www.robotis.com/service/download.php?no=1738)
-  - SHA256: 7a868c275169b1f02c04617cc0cce9654fd8222623c78b22d0a27c73a9609398
+  - SHA256 (image_rpi_20190429.img.zip) : eb8173f3727db08087990b2c4e2bb211e70bd54644644834771fc8b971856b97
+  - SHA256 (image_rpi_20190429.img): 7a868c275169b1f02c04617cc0cce9654fd8222623c78b22d0a27c73a9609398
 - After download, unzip the downloaded file.
 - Guide to burn the image to SD card
   - Visit [etcher.io](https://etcher.io/) and download and install the Etcher SD card image utility.

@@ -10,12 +10,12 @@ sidebar:
   title: "OpenMANIPULATOR-X"
   nav: "openmanipulator_x"
 product_group: openmanipulator_x
-page_number: 10
+page_number: 12
 ---
 
-<div style="counter-reset: h1 9"></div>
+<div style="counter-reset: h1 11"></div>
 
-# [[ROS 2] Setup](#ros-setup)
+# [[ROS 2] Setup](#ros-2-setup)
 
 {% capture notice_01 %}
 **NOTE** :  
@@ -42,9 +42,6 @@ Download and install `Ubuntu 18.04` on your PC. Tutoral guide will be helpful fo
 As OpenMANIPULATOR-P operates on Robot Operating System(ROS), it requies to intall `ROS 2 Dashing Diademata`.
 The following script will allow you to simplify the ROS 2 installation procedure. Run the following commands in a terminal window.
 After installing ROS 2, please reboot PC.
-  
-**NOTE**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`+`Alt`+`t`.
-{: .notice--info}
 
 ``` bash
 $ sudo apt update && sudo apt upgrade

@@ -1,11 +1,12 @@
-Set the device’s Secondary ID. Secondary ID(12) is a value to identify each device, just like the ID(7).
-However, unlike ID(7), Secondary ID(12) is not a unique value.
-Therefore, devices with the same Secondary ID value form a group.
+Set Secondary ID(12) of an unit. 
+
+Unlike ID(7) which should not overlap with other DYNAMIXELs', Secondary ID(12) can share the same ID to group DYNAMIXELs, and to synchronize the movement of units. 
+
 The differences between Secondary ID(12) and ID(7) are as follows :
-1. Secondary ID(12) is not a unique value. i.e., a lot of devices may have the same Secondary ID value.
-2. ID(7) has a higher priority than Secondary ID(12). i.e., if Secondary ID(12) and ID(7) are the same, ID(7) will be applied first.
-3. The EEPROM area of the Control Table cannot be modified with Secondary ID(12). Only the RAM area can be modified.
-4. If Instruction Packet ID is the same as Secondary ID(12), the Status Packet will not be returned.
+1. Secondary ID(12) is not a unique value. i.e., devices can have the same Secondary ID.
+2. ID(7) has a greater priority than the Secondary ID(12). If Secondary ID(12) and ID(7) are the same, ID(7) will be applied first.
+3. The EEPROM area of the Control Table cannot be modified using Secondary ID(12). With Secondary ID, the RAM area can be modified only.
+4. If Instruction Packet ID is the same as Secondary ID(12), a Status Packet will not be returned.
 5. If the value of Secondary ID(12) is 253 or higher, the Secondary ID function is deactivated.
 
 |  Values   |                      Description                      |

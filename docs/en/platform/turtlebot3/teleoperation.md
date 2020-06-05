@@ -20,13 +20,13 @@ page_number: 17
   <h1 id="basic-operation"><a href="#basic-operation">Basic Operation</a></h1>
 <![end dummy Header 1]-->
 
-## [Teleoperation](#teleoperation)
+## [Teleoperation](#ros-teleoperation)
 
 ![](/assets/images/platform/turtlebot3/software/remote_pc_and_turtlebot.png)
 
 {% capture notice_01 %}
 **NOTE**: 
-- This instruction was tested on `Ubuntu 16.04` with `ROS Kinetic Kame` and `Windows 10` with `ROS Melodic`
+- This instruction was tested on `Ubuntu 16.04` with `ROS Kinetic Kame` and `Windows 10` with `ROS Melodic Morenia`
 - This examples are supposed to be running on the remote PC. Follow the instruction on your **Remote PC**.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
@@ -38,27 +38,24 @@ The TurtleBot3 can be teleoperated by various devices. It is tested with several
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Z4s18hlazb4" frameborder="0" allowfullscreen></iframe>
 
-The contents in e-Manual may differ from contents of a provided video in e-Manaul as e-Manual is updated on a regular basis.
+The contents in e-Manual can be updated without a previous notice. Therefore, some video may differ from the contents in e-Manual.
 {: .notice--warning} 
 
 ### [Keyboard](#keyboard)
-
-**TIP**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`-`Alt`-`T`.
-{: .notice--info}
 
 **TIP**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `burger`, `waffle`, `waffle_pi`. If you want to permanently set the export settings, please refer to [Export TURTLEBOT3_MODEL][export_turtlebot3_model]{: .popup} page.
 {: .notice--success}
 
 **[Remote PC]** Launch `turtlebot3_teleop_key` node for simple teleoperation test.
 
-# Ubuntu
-``` bash
+#### on Ubuntu
+```bash
 $ export TURTLEBOT3_MODEL=%{TB3_MODEL}
 $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ```
 
-# Windows
-``` bash
+#### on Windows
+```bash
 > set TURTLEBOT3_MODEL=%{TB3_MODEL}
 > roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ```
@@ -80,14 +77,6 @@ If the node is successfully launched, the following instruction will be appeared
   CTRL-C to quit
 ```
 
-# Windows Joystick Instructions
-The Windows implementation of the Joystick control uses the [Open Source Simple DirectMedia Layer](https://www.libsdl.org/), which supports many tethered and wireless joysticks. The Joystick driver is currently (As of January 2020) deployed as a source package, which you need to clone into your catkin workspace.
-
-``` bash
-> git clone -b init_windows https://github.com/ms-iot/joystick_drivers
-```
-
-# Ubuntu Joystick Instructions
 ## [RC100](#rc100)
 
 The settings for [ROBOTIS RC-100B][rc100] controller is included in the OpenCR firmware for TurtleBot3 Burger, Waffle and Waffle Pi. This controller can be used with the Bluetooth module [BT410][bt410]. The TurtleBot3 Waffle Pi includes this controller and Bluetooth modules. When using RC-100, it is not necessary to execute a specific node because `turtlebot_core` node creates a `/cmd_vel` topic in the firmware directly connected to OpeCR.
@@ -194,6 +183,14 @@ $ rosrun leap_motion sender.py
 
 We are developing its contents ! 
 {: .notice--info}
+
+## [Windows] Joystick Instructions
+The Windows implementation of the Joystick control uses the [Open Source Simple DirectMedia Layer](https://www.libsdl.org/), which supports many tethered and wireless joysticks. The Joystick driver is currently (As of January 2020) deployed as a source package, which you need to clone into your catkin workspace.
+
+``` bash
+> git clone -b init_windows https://github.com/ms-iot/joystick_drivers
+```
+
 
 [bringup]: /docs/en/platform/turtlebot3/bringup/#bringup
 [rc100]: /docs/en/parts/communication/rc-100/

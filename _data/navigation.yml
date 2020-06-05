@@ -22,6 +22,9 @@ main:
       - title: "XC430-W240"
         titlekr: "XC430-W240"
         url: /dxl/x/xc430-w240/
+      - title: "2XC430-W250"
+        titlekr: "2XC430-W250"
+        url: /dxl/x/2xc430-w250/                
       - title: "XM430-W210"
         titlekr: "XM430-W210"
         url: /dxl/x/xm430-w210/
@@ -383,6 +386,9 @@ main:
       - title: "Kit 1"
         titlekr: "키트 1"
         url: /edu/engineer/kit1/
+      - title: "Kit 2"
+        titlekr: "키트 2"
+        url: /edu/engineer/kit2_introduction/  
     - title: "ROBOTIS MINI"
       titlekr: "로보티즈 미니"
       url: /edu/mini/
@@ -544,6 +550,9 @@ main:
       - title: "RC-100A/100B"
         titlekr: "RC-100A/100B"
         url: /parts/communication/rc-100/
+      - title: "RC-200"
+        titlekr: "RC-200"
+        url: /parts/communication/rc-200/            
       - title: "*ZIG-100/110A"
         titlekr: "*ZIG-100/110A"
         url: /parts/communication/zig-110/
@@ -602,7 +611,7 @@ main:
         titlekr: "적외선 센서(IRSS-10)"
         url: /parts/sensor/irss-10/
       - title: "Distance Sensor(DMS-80)"
-        titlekr: "거리 측정 센서(DMS-80)"
+        titlekr: "절대 거리 센서(DMS-80)"
         url: /parts/sensor/dms-80/
       - title: "Touch Sensor(TS-10)"
         titlekr: "접촉 센서(TS-10)"
@@ -7081,6 +7090,472 @@ xm540-w270:
         titlekr: "도면"
         url: /dxl/x/xm540-w270/#drawings
         urlkr: /dxl/x/xm540-w270/#도면
+
+#XW540-T140 sidebar
+xw540-t140:
+  - title: "Specifications"
+    titlekr: "주요 사양"
+    url: /dxl/x/xw540-t140/#specifications
+    urlkr: /dxl/x/xw540-t140/#주요-사양
+    children:
+      - title: "Performance Graph"
+        titlekr: "성능 그래프"
+        url: /dxl/x/xw540-t140/#performance-graph
+        urlkr: /dxl/x/xw540-t140/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/x/xw540-t140/#control-table
+    urlkr: /dxl/x/xw540-t140/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/x/xw540-t140/#control-table-data-address
+        urlkr: /dxl/x/xw540-t140/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
+            url: /dxl/x/xw540-t140/#area-eeprom-ram
+            urlkr: /dxl/x/xw540-t140/#영역-eeprom-ram
+          - title: "Size"
+            titlekr: "크기"
+            url: /dxl/x/xw540-t140/#size
+            urlkr: /dxl/x/xw540-t140/#크기
+          - title: "Access"
+            titlekr: "접근권한"
+            url: /dxl/x/xw540-t140/#access
+            urlkr: /dxl/x/xw540-t140/#접근권한
+          - title: "Initial Value"
+            titlekr: "초기값"
+            url: /dxl/x/xw540-t140/#initial-value
+            urlkr: /dxl/x/xw540-t140/#초기값
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/x/xw540-t140/#control-table-of-eeprom-area
+        urlkr: /dxl/x/xw540-t140/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/x/xw540-t140/#control-table-of-ram-area
+        urlkr: /dxl/x/xw540-t140/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/x/xw540-t140/#control-table-description
+        urlkr: /dxl/x/xw540-t140/#컨트롤-테이블-설명
+        children:
+        - title: "Model Number(0)"
+          titlekr: "Model Number(0)"
+          url: /dxl/x/xw540-t140/#model-number0
+        - title: "Firmware Version(6)"
+          titlekr: "Firmware Version(6)"
+          url: /dxl/x/xw540-t140/#firmware-version6
+        - title: "ID(7)"
+          titlekr: "ID(7)"
+          url: /dxl/x/xw540-t140/#id7
+        - title: "Baud Rate(8)"
+          titlekr: "Baud Rate(8)"
+          url: /dxl/x/xw540-t140/#baud-rate8
+        - title: "Return Delay Time(9)"
+          titlekr: "Return Delay Time(9)"
+          url: /dxl/x/xw540-t140/#return-delay-time9
+        - title: "Drive Mode(10)"
+          titlekr: "Drive Mode(10)"
+          url: /dxl/x/xw540-t140/#drive-mode10
+        - title: "Operating Mode(11)"
+          titlekr: "Operating Mode(11)"
+          url: /dxl/x/xw540-t140/#operating-mode11
+        - title: "Secondary(Shadow) ID(12)"
+          titlekr: "Secondary(Shadow) ID(12)"
+          url: /dxl/x/xw540-t140/#secondaryshadow-id12
+        - title: "Protocol Type(13)"
+          titlekr: "Protocol Type(13)"
+          url: /dxl/x/xw540-t140/#protocol-version13
+        - title: "Homing Offset(20)"
+          titlekr: "Homing Offset(20)"
+          url: /dxl/x/xw540-t140/#homing-offset20
+        - title: "Moving Threshold(24)"
+          titlekr: "Moving Threshold(24)"
+          url: /dxl/x/xw540-t140/#moving-threshold24
+        - title: "Temperature Limit(31)"
+          titlekr: "Temperature Limit(31)"
+          url: /dxl/x/xw540-t140/#temperature-limit31
+        - title: "Min/Max Voltage Limit(32,34)"
+          titlekr: "Min/Max Voltage Limit(32,34)"
+          url: /dxl/x/xw540-t140/#minmax-voltage-limit32-34
+        - title: "PWM Lmit(36)"
+          titlekr: "PWM Limit(36)"
+          url: /dxl/x/xw540-t140/#pwm-limit36
+        - title: "Current Limit(38)"
+          titlekr: "Current Limit(38)"
+          url: /dxl/x/xw540-t140/#current-limit38
+        - title: "Velocity Limit(44)"
+          titlekr: "Velocity Limit(44)"
+          url: /dxl/x/xw540-t140/#velocity-limit44
+        - title: "Min/Max Position Limit(48, 52)"
+          titlekr: "Min/Max Position Limit(48, 52)"
+          url: /dxl/x/xw540-t140/#minmax-position-limit48-52
+        - title: "Shutdown(63)"
+          titlekr: "Shutdown(63)"
+          url: /dxl/x/xw540-t140/#shutdown63
+        - title: "Torque Enable(64)"
+          titlekr: "Torque Enable(64)"
+          url: /dxl/x/xw540-t140/#torque-enable64
+        - title: "Status Return Level(68)"
+          titlekr: "Status Return Level(68)"
+          url: /dxl/x/xw540-t140/#status-return-level68
+        - title: "Registered Instruction(69)"
+          titlekr: "Registered Instruction(69)"
+          url: /dxl/x/xw540-t140/#registered-instruction69
+        - title: "Hardware Error Status(70)"
+          titlekr: "Hardware Error Status(70)"
+          url: /dxl/x/xw540-t140/#hardware-error-status70
+        - title: "Velocity PI Gain(76, 78)"
+          titlekr: "Velocity PI Gain(76, 78)"
+          url: /dxl/x/xw540-t140/#velocity-pi-gain76-78
+        - title: "Position PID Gain(80, 82, 84)"
+          titlekr: "Position PID Gain(80, 82, 84)"
+          url: /dxl/x/xw540-t140/#position-pid-gain80-82-84
+        - title: "Feedforward 1st/2nd Gains(88, 90)"
+          titlekr: "Feedforward 1st/2nd Gains(88, 90)"
+          url: /dxl/x/xw540-t140/#feedforward-1st2nd-gains88-90
+        - title: "BUS Watchdog(98)"
+          titlekr: "BUS Watchdog(98)"
+          url: /dxl/x/xw540-t140/#bus-watchdog98
+        - title: "Goal PWM(100)"
+          titlekr: "Goal PWM(100)"
+          url: /dxl/x/xw540-t140/#goal-pwm100
+        - title: "Goal Current(102)"
+          titlekr: "Goal Current(102)"
+          url: /dxl/x/xw540-t140/#goal-current102
+        - title: "Goal Velocity(104)"
+          titlekr: "Goal Velocity(104)"
+          url: /dxl/x/xw540-t140/#goal-velocity104
+        - title: "Profile Acceleration(108)"
+          titlekr: "Profile Acceleration(108)"
+          url: /dxl/x/xw540-t140/#profile-acceleration108
+        - title: "Profile Velocity(112)"
+          titlekr: "Profile Velocity(112)"
+          url: /dxl/x/xw540-t140/#profile-velocity112
+        - title: "Goal Position(116)"
+          titlekr: "Goal Position(116)"
+          url: /dxl/x/xw540-t140/#goal-position116
+        - title: "Realtime Tick(120)"
+          titlekr: "Realtime Tick(120)"
+          url: /dxl/x/xw540-t140/#realtime-tick120
+        - title: "Moving(122)"
+          titlekr: "Moving(122)"
+          url: /dxl/x/xw540-t140/#moving122
+        - title: "Moving Status(123)"
+          titlekr: "Moving Status(123)"
+          url: /dxl/x/xw540-t140/#moving-status123
+        - title: "Present PWM(124)"
+          titlekr: "Present PWM(124)"
+          url: /dxl/x/xw540-t140/#present-pwm124
+        - title: "Present Current(126)"
+          titlekr: "Present Current(126)"
+          url: /dxl/x/xw540-t140/#present-current126
+        - title: "Present Velocity(128)"
+          titlekr: "Present Velocity(128)"
+          url: /dxl/x/xw540-t140/#present-velocity128
+        - title: "Present Position(132)"
+          titlekr: "Present Position(132)"
+          url: /dxl/x/xw540-t140/#present-position132
+        - title: "Velocity Trajectory(136)"
+          titlekr: "Velocity Trajectory(136)"
+          url: /dxl/x/xw540-t140/#velocity-trajectory136
+        - title: "Position Trajectory(140)"
+          titlekr: "Position Trajectory(140)"
+          url: /dxl/x/xw540-t140/#position-trajectory140
+        - title: "Present Input Voltage(144)"
+          titlekr: "Present Input Voltage(144)"
+          url: /dxl/x/xw540-t140/#present-input-voltage144
+        - title: "Present Temperature(146)"
+          titlekr: "Present Temperature(146)"
+          url: /dxl/x/xw540-t140/#present-temperature146
+        - title: "Indirect Address"
+          titlekr: "Indirect Address"
+          url: /dxl/x/xw540-t140/#indirect-address
+        - title: "Indirect Data"
+          titlekr: "Indirect Data"
+          url: /dxl/x/xw540-t140/#indirect-data
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/x/xw540-t140/#how-to-assemble
+    urlkr: /dxl/x/xw540-t140/#조립-예시
+    children:
+      - title: "Option Frame Assembly"
+        titlekr: "옵션프레임 조립"
+        url: /dxl/x/xw540-t140/#option-frame-assembly
+        urlkr: /dxl/x/xw540-t140/#옵션프레임-조립      
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/x/xw540-t140/#maintenance
+    urlkr: /dxl/x/xw540-t140/#유지보수
+    children:
+      - title: "Horn, Gear Replacement"
+        titlekr: "혼과 기어 교체"
+        url: /dxl/x/xw540-t140/#horn-and-gear-replacement
+        urlkr: /dxl/x/xw540-t140/#혼과-기어-교체
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/x/xw540-t140/#reference
+    urlkr: /dxl/x/xw540-t140/#참고자료
+    children:
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/x/xw540-t140/#certifications
+        urlkr: /dxl/x/xw540-t140/#인증-획득
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/x/xw540-t140/#quick-start
+        urlkr: /dxl/x/xw540-t140/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/x/xw540-t140/#connector-information
+        urlkr: /dxl/x/xw540-t140/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/x/xw540-t140/#communication-circuit
+        urlkr: /dxl/x/xw540-t140/#통신-회로
+      - title: "How to Use the Water Proof Cable"
+        titlekr: "케이블 연결 및 분리"
+        url: /dxl/x/xw540-t140/#how-to-use-the-water-proof-cable
+        urlkr: /dxl/x/xw540-t140/#케이블-연결-및-분리          
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/x/xw540-t140/#drawings
+        urlkr: /dxl/x/xw540-t140/#도면
+                
+#XW540-T260 sidebar
+xw540-t260:
+  - title: "Specifications"
+    titlekr: "주요 사양"
+    url: /dxl/x/xw540-t260/#specifications
+    urlkr: /dxl/x/xw540-t260/#주요-사양
+    children:
+      - title: "Performance Graph"
+        titlekr: "성능 그래프"
+        url: /dxl/x/xw540-t260/#performance-graph
+        urlkr: /dxl/x/xw540-t260/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/x/xw540-t260/#control-table
+    urlkr: /dxl/x/xw540-t260/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/x/xw540-t260/#control-table-data-address
+        urlkr: /dxl/x/xw540-t260/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
+            url: /dxl/x/xw540-t260/#area-eeprom-ram
+            urlkr: /dxl/x/xw540-t260/#영역-eeprom-ram
+          - title: "Size"
+            titlekr: "크기"
+            url: /dxl/x/xw540-t260/#size
+            urlkr: /dxl/x/xw540-t260/#크기
+          - title: "Access"
+            titlekr: "접근권한"
+            url: /dxl/x/xw540-t260/#access
+            urlkr: /dxl/x/xw540-t260/#접근권한
+          - title: "Initial Value"
+            titlekr: "초기값"
+            url: /dxl/x/xw540-t260/#initial-value
+            urlkr: /dxl/x/xw540-t260/#초기값
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/x/xw540-t260/#control-table-of-eeprom-area
+        urlkr: /dxl/x/xw540-t260/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/x/xw540-t260/#control-table-of-ram-area
+        urlkr: /dxl/x/xw540-t260/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/x/xw540-t260/#control-table-description
+        urlkr: /dxl/x/xw540-t260/#컨트롤-테이블-설명
+        children:
+        - title: "Model Number(0)"
+          titlekr: "Model Number(0)"
+          url: /dxl/x/xw540-t260/#model-number0
+        - title: "Firmware Version(6)"
+          titlekr: "Firmware Version(6)"
+          url: /dxl/x/xw540-t260/#firmware-version6
+        - title: "ID(7)"
+          titlekr: "ID(7)"
+          url: /dxl/x/xw540-t260/#id7
+        - title: "Baud Rate(8)"
+          titlekr: "Baud Rate(8)"
+          url: /dxl/x/xw540-t260/#baud-rate8
+        - title: "Return Delay Time(9)"
+          titlekr: "Return Delay Time(9)"
+          url: /dxl/x/xw540-t260/#return-delay-time9
+        - title: "Drive Mode(10)"
+          titlekr: "Drive Mode(10)"
+          url: /dxl/x/xw540-t260/#drive-mode10
+        - title: "Operating Mode(11)"
+          titlekr: "Operating Mode(11)"
+          url: /dxl/x/xw540-t260/#operating-mode11
+        - title: "Secondary(Shadow) ID(12)"
+          titlekr: "Secondary(Shadow) ID(12)"
+          url: /dxl/x/xw540-t260/#secondaryshadow-id12
+        - title: "Protocol Type(13)"
+          titlekr: "Protocol Type(13)"
+          url: /dxl/x/xw540-t260/#protocol-version13
+        - title: "Homing Offset(20)"
+          titlekr: "Homing Offset(20)"
+          url: /dxl/x/xw540-t260/#homing-offset20
+        - title: "Moving Threshold(24)"
+          titlekr: "Moving Threshold(24)"
+          url: /dxl/x/xw540-t260/#moving-threshold24
+        - title: "Temperature Limit(31)"
+          titlekr: "Temperature Limit(31)"
+          url: /dxl/x/xw540-t260/#temperature-limit31
+        - title: "Min/Max Voltage Limit(32,34)"
+          titlekr: "Min/Max Voltage Limit(32,34)"
+          url: /dxl/x/xw540-t260/#minmax-voltage-limit32-34
+        - title: "PWM Lmit(36)"
+          titlekr: "PWM Limit(36)"
+          url: /dxl/x/xw540-t260/#pwm-limit36
+        - title: "Current Limit(38)"
+          titlekr: "Current Limit(38)"
+          url: /dxl/x/xw540-t260/#current-limit38
+        - title: "Velocity Limit(44)"
+          titlekr: "Velocity Limit(44)"
+          url: /dxl/x/xw540-t260/#velocity-limit44
+        - title: "Min/Max Position Limit(48, 52)"
+          titlekr: "Min/Max Position Limit(48, 52)"
+          url: /dxl/x/xw540-t260/#minmax-position-limit48-52
+        - title: "Shutdown(63)"
+          titlekr: "Shutdown(63)"
+          url: /dxl/x/xw540-t260/#shutdown63
+        - title: "Torque Enable(64)"
+          titlekr: "Torque Enable(64)"
+          url: /dxl/x/xw540-t260/#torque-enable64
+        - title: "Status Return Level(68)"
+          titlekr: "Status Return Level(68)"
+          url: /dxl/x/xw540-t260/#status-return-level68
+        - title: "Registered Instruction(69)"
+          titlekr: "Registered Instruction(69)"
+          url: /dxl/x/xw540-t260/#registered-instruction69
+        - title: "Hardware Error Status(70)"
+          titlekr: "Hardware Error Status(70)"
+          url: /dxl/x/xw540-t260/#hardware-error-status70
+        - title: "Velocity PI Gain(76, 78)"
+          titlekr: "Velocity PI Gain(76, 78)"
+          url: /dxl/x/xw540-t260/#velocity-pi-gain76-78
+        - title: "Position PID Gain(80, 82, 84)"
+          titlekr: "Position PID Gain(80, 82, 84)"
+          url: /dxl/x/xw540-t260/#position-pid-gain80-82-84
+        - title: "Feedforward 1st/2nd Gains(88, 90)"
+          titlekr: "Feedforward 1st/2nd Gains(88, 90)"
+          url: /dxl/x/xw540-t260/#feedforward-1st2nd-gains88-90
+        - title: "BUS Watchdog(98)"
+          titlekr: "BUS Watchdog(98)"
+          url: /dxl/x/xw540-t260/#bus-watchdog98
+        - title: "Goal PWM(100)"
+          titlekr: "Goal PWM(100)"
+          url: /dxl/x/xw540-t260/#goal-pwm100
+        - title: "Goal Current(102)"
+          titlekr: "Goal Current(102)"
+          url: /dxl/x/xw540-t260/#goal-current102
+        - title: "Goal Velocity(104)"
+          titlekr: "Goal Velocity(104)"
+          url: /dxl/x/xw540-t260/#goal-velocity104
+        - title: "Profile Acceleration(108)"
+          titlekr: "Profile Acceleration(108)"
+          url: /dxl/x/xw540-t260/#profile-acceleration108
+        - title: "Profile Velocity(112)"
+          titlekr: "Profile Velocity(112)"
+          url: /dxl/x/xw540-t260/#profile-velocity112
+        - title: "Goal Position(116)"
+          titlekr: "Goal Position(116)"
+          url: /dxl/x/xw540-t260/#goal-position116
+        - title: "Realtime Tick(120)"
+          titlekr: "Realtime Tick(120)"
+          url: /dxl/x/xw540-t260/#realtime-tick120
+        - title: "Moving(122)"
+          titlekr: "Moving(122)"
+          url: /dxl/x/xw540-t260/#moving122
+        - title: "Moving Status(123)"
+          titlekr: "Moving Status(123)"
+          url: /dxl/x/xw540-t260/#moving-status123
+        - title: "Present PWM(124)"
+          titlekr: "Present PWM(124)"
+          url: /dxl/x/xw540-t260/#present-pwm124
+        - title: "Present Current(126)"
+          titlekr: "Present Current(126)"
+          url: /dxl/x/xw540-t260/#present-current126
+        - title: "Present Velocity(128)"
+          titlekr: "Present Velocity(128)"
+          url: /dxl/x/xw540-t260/#present-velocity128
+        - title: "Present Position(132)"
+          titlekr: "Present Position(132)"
+          url: /dxl/x/xw540-t260/#present-position132
+        - title: "Velocity Trajectory(136)"
+          titlekr: "Velocity Trajectory(136)"
+          url: /dxl/x/xw540-t260/#velocity-trajectory136
+        - title: "Position Trajectory(140)"
+          titlekr: "Position Trajectory(140)"
+          url: /dxl/x/xw540-t260/#position-trajectory140
+        - title: "Present Input Voltage(144)"
+          titlekr: "Present Input Voltage(144)"
+          url: /dxl/x/xw540-t260/#present-input-voltage144
+        - title: "Present Temperature(146)"
+          titlekr: "Present Temperature(146)"
+          url: /dxl/x/xw540-t260/#present-temperature146
+        - title: "Indirect Address"
+          titlekr: "Indirect Address"
+          url: /dxl/x/xw540-t260/#indirect-address
+        - title: "Indirect Data"
+          titlekr: "Indirect Data"
+          url: /dxl/x/xw540-t260/#indirect-data
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/x/xw540-t260/#how-to-assemble
+    urlkr: /dxl/x/xw540-t260/#조립-예시
+    children:
+      - title: "Option Frame Assembly"
+        titlekr: "옵션프레임 조립"
+        url: /dxl/x/xw540-t260/#option-frame-assembly
+        urlkr: /dxl/x/xw540-t260/#옵션프레임-조립
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/x/xw540-t260/#maintenance
+    urlkr: /dxl/x/xw540-t260/#유지보수
+    children:
+      - title: "Horn, Gear Replacement"
+        titlekr: "혼과 기어 교체"
+        url: /dxl/x/xw540-t260/#horn-and-gear-replacement
+        urlkr: /dxl/x/xw540-t260/#혼과-기어-교체
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/x/xw540-t260/#reference
+    urlkr: /dxl/x/xw540-t260/#참고자료
+    children:
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/x/xw540-t260/#certifications
+        urlkr: /dxl/x/xw540-t260/#인증-획득
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/x/xw540-t260/#quick-start
+        urlkr: /dxl/x/xw540-t260/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/x/xw540-t260/#connector-information
+        urlkr: /dxl/x/xw540-t260/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/x/xw540-t260/#communication-circuit
+        urlkr: /dxl/x/xw540-t260/#통신-회로
+      - title: "How to Use the Water Proof Cable"
+        titlekr: "케이블 연결 및 분리"
+        url: /dxl/x/xw540-t260/#how-to-use-the-water-proof-cable
+        urlkr: /dxl/x/xw540-t260/#케이블-연결-및-분리           
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/x/xw540-t260/#drawings
+        urlkr: /dxl/x/xw540-t260/#도면
 
 #XH540-W150 sidebar
 xh540-w150:
@@ -14291,28 +14766,28 @@ kit1:
       titlekr: "앱 설치하기"
       url: /edu/engineer/kit1/#app-installation
       urlkr: /edu/engineer/kit1/#앱-설치하기
-    - title: "Pairing Bluetooth"
-      titlekr: "블루투스 연결하기"
-      url: /edu/engineer/kit1/#pairing-bluetooth
-      urlkr: /edu/engineer/kit1/#블루투스-연결하기
     - title: "Download Examples"
       titlekr: "예제 다운로드"
       url: /edu/engineer/kit1/#download-examples
       urlkr: /edu/engineer/kit1/#예제-다운로드
       children:
       - title: "Download from PC"
-        titlekr: "PC에서 예제 다운로드"
+        titlekr: "PC에서 예제 다운로드 받기"
         url: /edu/engineer/kit1/#download-from-pc
-        urlkr: /edu/engineer/kit1/#pc에서-예제-다운로드
+        urlkr: /edu/engineer/kit1/#pc에서-예제-다운로드-받기
       - title: "Download from Smart Device"
-        titlekr: "스마트 기기에서 예제 다운로드"
+        titlekr: "스마트 기기에서 예제 다운로드 받기"
         url: /edu/engineer/kit1/#download-from-smart-device
-        urlkr: /edu/engineer/kit1/#스마트-기기에서-예제-다운로드
+        urlkr: /edu/engineer/kit1/#스마트-기기에서-예제-다운로드-받기
     - title: "Run Examples"
       titlekr: "예제 실행하기"
       url: /edu/engineer/kit1/#run-examples
       urlkr: /edu/engineer/kit1/#예제-실행하기
       children:
+      - title: "Pairing Bluetooth"
+        titlekr: "블루투스 연결하기"
+        url: /edu/engineer/kit1/#pairing-bluetooth
+        urlkr: /edu/engineer/kit1/#블루투스-연결하기
       - title: "Dr.R"
         titlekr: "Dr.R"
         url: /edu/engineer/kit1/#drr
@@ -14351,10 +14826,6 @@ kit1:
     titlekr: "교육자료 다운로드"
     url: /edu/engineer/kit1/#study-materials
     urlkr: /edu/engineer/kit1/#교육자료-다운로드
-  - title: "Download Softwares"
-    titlekr: "소프트웨어 다운로드"
-    url: /edu/engineer/kit1/#download-softwares
-    urlkr: /edu/engineer/kit1/#소프트웨어-다운로드
   - title: "References"
     titlekr: "참고자료"
     url: /edu/engineer/kit1/#references
@@ -14382,6 +14853,188 @@ kit1:
       urlkr: /edu/engineer/kit1/#퓨즈-교체하기
     - titlekr: "도면"
       urlkr: /edu/engineer/kit1/#도면
+
+#ROBOTIS ENGINEER KIT sidebar
+kit2:
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /edu/engineer/kit2_introduction/#introduction
+    urlkr: /edu/engineer/kit2_introduction/#개요
+    children:
+    - title: "Parts List"
+      titlekr: "부품 목록"
+      url: /edu/engineer/kit2_introduction/#parts-list
+      urlkr: /edu/engineer/kit2_introduction/#부품-목록
+      children:
+      - title: "CM-550 Controller"
+        titlekr: "CM-550 제어기"
+        url: /edu/engineer/kit2_introduction/#cm-550-controller
+        urlkr: /edu/engineer/kit2_introduction/#cm-550-제어기
+      - title: "Raspberry Pi"
+        titlekr: "Raspberry Pi"
+        url: /edu/engineer/kit2_introduction/#raspberry-pi
+        urlkr: /edu/engineer/kit2_introduction/#raspberry-pi
+        children:
+        - title: "Raspberry Pi Camera"
+          titlekr: "Raspberry Pi 카메라"
+          url: /edu/engineer/kit2_introduction/#raspberry-pi-camera
+          urlkr: /edu/engineer/kit2_introduction/#raspberry-pi-카메라 
+      - title: "DYNAMIXEL"
+        titlekr: "다이나믹셀"
+        url: /edu/engineer/kit2_introduction/#dynamixel-
+        urlkr: /edu/engineer/kit2_introduction/#다이나믹셀-
+      - title: "LED Module"
+        titlekr: "LED 보드"
+        url: /edu/engineer/kit2_introduction/#led-module
+        urlkr: /edu/engineer/kit2_introduction/#led-보드
+      - title: "Servo Motor"
+        titlekr: "서보모터"
+        url: /edu/engineer/kit2_introduction/#servo-motor
+        urlkr: /edu/engineer/kit2_introduction/#서보모터  
+      - title: "DMS-80"
+        titlekr: "DMS-80"
+        url: /edu/engineer/kit2_introduction/#dms-80
+        urlkr: /edu/engineer/kit2_introduction/#dms-80     
+    - title: "Cautions"
+      titlekr: "주의사항"
+      url: /edu/engineer/kit2_introduction/#cautions
+      urlkr: /edu/engineer/kit2_introduction/#주의사항
+      children:
+      - title: "Safety Precautions"
+        titlekr: "안전에 대한 주의사항"
+        url: /edu/engineer/kit2_introduction/#safety-precautions
+        urlkr: /edu/engineer/kit2_introduction/#안전에-대한-주의사항
+      - title: "Precautions on Use"
+        titlekr: "사용상 주의사항"
+        url: /edu/engineer/kit2_introduction/#precautions-on-use
+        urlkr: /edu/engineer/kit2_introduction/#사용상-주의사항
+      - title: "Precautions on Battery"
+        titlekr: "충전기/충전지 사용시 주의사항"
+        url: /edu/engineer/kit2_introduction/#precautions-on-battery
+        urlkr: /edu/engineer/kit2_introduction/#충전기충전지-사용시-주의사항
+      - title: "Assembly Precautions"
+        titlekr: "조립시 주의사항"
+        url: /edu/engineer/kit2_introduction/#assembly-precautions
+        urlkr: /edu/engineer/kit2_introduction/#조립시-주의사항     
+  - title: "Quick Start"
+    titlekr: "작동하기"
+    url: /edu/engineer/kit2_quickstart/#quick-start
+    urlkr: /edu/engineer/kit2_quickstart/#작동하기
+    children:
+    - title: "App Installation"
+      titlekr: "앱 설치하기"
+      url: /edu/engineer/kit2_quickstart/#app-installation
+      urlkr: /edu/engineer/kit2_quickstart/#앱-설치하기
+    - title: "Download Examples"
+      titlekr: "예제 다운로드"
+      url: /edu/engineer/kit2_quickstart/#download-examples
+      urlkr: /edu/engineer/kit2_quickstart/#예제-다운로드
+      children:
+      - title: "Download from PC"
+        titlekr: "PC에서 예제 다운로드 받기"
+        url: /edu/engineer/kit2_quickstart/#download-from-pc
+        urlkr: /edu/engineer/kit2_quickstart/#pc에서-예제-다운로드-받기
+      - title: "Download from Smart Device"
+        titlekr: "스마트 기기에서 예제 다운로드 받기"
+        url: /edu/engineer/kit2_quickstart/#download-from-smart-device
+        urlkr: /edu/engineer/kit2_quickstart/#스마트-기기에서-예제-다운로드-받기
+    - title: "Run Examples"
+      titlekr: "예제 실행하기"
+      url: /edu/engineer/kit2_quickstart/#run-examples
+      urlkr: /edu/engineer/kit2_quickstart/#예제-실행하기
+      children:
+      - title: "Pairing Bluetooth"
+        titlekr: "블루투스 연결하기"
+        url: /edu/engineer/kit2_quickstart/#pairing-bluetooth
+        urlkr: /edu/engineer/kit2_quickstart/#블루투스-연결하기
+      - title: "MAX-E2"
+        titlekr: "MAX-E2"
+        url: /edu/engineer/kit2_quickstart/#max-e2
+        urlkr: /edu/engineer/kit2_quickstart/#max-e2
+      - title: "Commando"
+        titlekr: "Commando"
+        url: /edu/engineer/kit2_quickstart/#commando
+        urlkr: /edu/engineer/kit2_quickstart/#commando
+      - title: "Scorpi"
+        titlekr: "Scorpi"
+        url: /edu/engineer/kit2_quickstart/#scorpi
+        urlkr: /edu/engineer/kit2_quickstart/#scorpi
+  - title: "Advanced Courses"
+    titlekr: "교육자료 다운로드"
+    url: /edu/engineer/kit2_advanced_course/#advanced-courses
+    urlkr: /edu/engineer/kit2_advanced_course/#교육자료-다운로드
+  - title: "References"
+    titlekr: "참고자료"
+    url: /edu/engineer/kit2_reference/#references
+    urlkr: /edu/engineer/kit2_reference/#참고자료
+    children:
+    - title: "Setting Video Streaming on ROBOTIS ENGINEER App"
+      titlekr: "앱에서 영상 스트리밍 기능 설정하기"
+      url: /edu/engineer/kit2_reference/#setting-video-streaming-on-robotis-engineer-app
+      urlkr: /edu/engineer/kit2_reference/#앱에서-영상-스트리밍-기능-설정하기 
+    - title: "Raspberry Pi Update and Recovery"
+      titlekr: "Raspberry Pi 업데이트 및 복구"
+      url: /edu/engineer/kit2_reference/#raspberry-pi-update-and-recovery
+      urlkr: /edu/engineer/kit2_reference/#raspberry-pi-업데이트-및-복구
+    - title: "BLE Signal Setting"
+      titlekr: "제어기 BLE 신호 세기 설정"
+      url: /edu/engineer/kit2_reference/#ble-signal-setting
+      urlkr: /edu/engineer/kit2_reference/#제어기-ble-신호-세기-설정     
+    - title: "Setting Up the Robot"
+      titlekr: "로봇 설정하기"
+      url: /edu/engineer/kit2_reference/#setting-up-the-robot
+      urlkr: /edu/engineer/kit2_reference/#로봇-설정하기
+      children:
+      - title: "Check DYNAMIXEL Assembly"
+        titlekr: "모터 조립확인"
+        url: /edu/engineer/kit2_reference/#check-dynamixel-assembly
+        urlkr: /edu/engineer/kit2_reference/#모터-조립확인
+      - title: "DYNAMIXEL Offset"
+        titlekr : "모터 오프셋 설정"
+        url: /edu/engineer/kit2_reference/#dynamixel-offset
+        urlkr: /edu/engineer/kit2_reference/#모터-오프셋-설정
+    - title: "Download"
+      titlekr: "다운로드"
+      url: /edu/engineer/kit2_reference/#download
+      urlkr: /edu/engineer/kit2_reference/#다운로드
+      children:
+      - title: "Download App"
+        titlekr: "앱 설치하기"
+        url: /edu/engineer/kit2_reference/#download-app
+        urlkr: /edu/engineer/kit2_reference/#앱-설치하기
+      - title: "Download Robot Examples"
+        titlekr: "로봇 예제 다운로드 하기"
+        url: /edu/engineer/kit2_reference/#download-robot-examples
+        urlkr: /edu/engineer/kit2_reference/#로봇-예제-다운로드-하기
+      - title: "Download Assembly Manual"
+        titlekr: "조립서 다운로드 받기"
+        url: /edu/engineer/kit2_reference/#download-assembly-manual
+        urlkr:  /edu/engineer/kit2_reference/#조립서-다운로드-받기
+      - title: "Download a MARKER for Commando"
+        titlekr: "Commando Marker 다운로드 받기"
+        url: /edu/engineer/kit2_reference/#download-a-marker-for-commando
+        urlkr: /edu/engineer/kit2_reference/#commando-marker-다운로드-받기               
+    - title: "Self Checklist"
+      titlekr: "점검 및 자가진단"
+      url: /edu/engineer/kit2_reference/#self-checklist
+      urlkr: /edu/engineer/kit2_reference/#점검-및-자가진단
+    - title: "Charging Battery"
+      titlekr: "배터리 충전하기"
+      url: /edu/engineer/kit2_reference/#charging-battery
+      urlkr: /edu/engineer/kit2_reference/#배터리-충전하기
+    - title: "Battery Level Check"
+      titlekr: "충전지 잔량 확인하기"
+      url: /edu/engineer/kit2_reference/#battery-level-check
+      urlkr: /edu/engineer/kit2_reference/#충전지-잔량-확인하기
+    - title: "Fuse Replacement"
+      titlekr: "퓨즈 교체하기"
+      url: /edu/engineer/kit2_reference/#fuse-replacement
+      urlkr: /edu/engineer/kit2_reference/#퓨즈-교체하기
+    - title: "Drawings"
+      titlekr: "도면"
+      url: /edu/engineer/kit2_reference/#drawings
+      urlkr: /edu/engineer/kit2_reference/#도면
+
 
 #ROBOTIS MINI sidebar
 mini:
@@ -15717,7 +16370,7 @@ turtlebot3:
       url: /platform/turtlebot3/getting_started/#learn-and-explore-more
     - title: "References and Contacts"
       url: /platform/turtlebot3/getting_started/#references-and-contacts
-  - title: "[ROS] Setup"
+  - title: "[ROS 1] Setup"
     url: /platform/turtlebot3/setup/#setup
     children:
     - title: "PC Setup"
@@ -15725,12 +16378,18 @@ turtlebot3:
       children:
       - title: "Install Ubuntu on Remote PC"
         url: /platform/turtlebot3/pc_setup/#install-ubuntu-on-remote-pc
-      - title: "Install ROS on Remote PC"
-        url: /platform/turtlebot3/pc_setup/#install-ros-on-remote-pc
-      - title: "Install Dependent ROS Packages"
-        url: /platform/turtlebot3/pc_setup/#install-dependent-ros-packages
+      - title: "Install ROS 1 on Remote PC"
+        url: /platform/turtlebot3/pc_setup/#install-ros-1-on-remote-pc
+      - title: "Install Dependent ROS 1 Packages"
+        url: /platform/turtlebot3/pc_setup/#install-dependent-ros-1-packages
       - title: "Network Configuration"
         url: /platform/turtlebot3/pc_setup/#network-configuration
+      - title: "[Windows] Setup Remote PC"
+        url: /platform/turtlebot3/pc_setup/#windows-setup-remote-pc
+      - title: "[Windows] Setup TurtleBot3 WS"
+        url: /platform/turtlebot3/pc_setup/#windows-setup-turtlebot3-ws
+      - title: "[Windows] Network Configuration"
+        url: /platform/turtlebot3/pc_setup/#windows-network-configuration
     - title: "SBC Setup"
       url: /platform/turtlebot3/sbc_setup/#sbc-setup
       children:
@@ -15738,6 +16397,8 @@ turtlebot3:
         url: /platform/turtlebot3/raspberry_pi_3_setup/#raspberry-pi-3-setup
       - title: "Intel Joule 570x"
         url: /platform/turtlebot3/joule_setup/#joule-setup
+      - title: "[Windows] Windows 10 SBC"
+        url: /platform/turtlebot3/joule_setup/#windows-windows-10-sbc
     - title: "OpenCR Setup"
       url: /platform/turtlebot3/opencr_setup/#opencr-setup
       children:
@@ -15763,8 +16424,8 @@ turtlebot3:
         url: /platform/turtlebot3/compatible_devices/#computer
       - title: "Sensors"
         url: /platform/turtlebot3/compatible_devices/#sensors
-  - title: "[ROS] Bringup"
-    url: /platform/turtlebot3/bringup/#bringup
+  - title: "[ROS 1] Bringup"
+    url: /platform/turtlebot3/bringup/#ros-1-bringup
     children:
     - title: "Run roscore"
       url: /platform/turtlebot3/bringup/#run-roscore
@@ -15772,8 +16433,13 @@ turtlebot3:
       url: /platform/turtlebot3/bringup/#bringup-a-turtlebot3
     - title: "Load a TurtleBot3 on Rviz"
       url: /platform/turtlebot3/bringup/#load-a-turtlebot3-on-rviz
-  - title: "[ROS] Basic Operation"
-    url: /platform/turtlebot3/basic_operation/#basic-operation
+      children:
+      - title: "on Ubuntu"
+        url: /platform/turtlebot3/bringup/#on-ubuntu
+      - title: "on Windows"
+        url: /platform/turtlebot3/bringup/#on-windows
+  - title: "[ROS 1] Basic Operation"
+    url: /platform/turtlebot3/basic_operation/#ros-1-basic-operation
     children:
     - title: "Topic Monitor"
       url: /platform/turtlebot3/topic_monitor/#topic-monitor
@@ -15798,6 +16464,8 @@ turtlebot3:
         url: /platform/turtlebot3/teleoperation/#leap-motion
       - title: "Myo"
         url: /platform/turtlebot3/teleoperation/#myo
+      - title: "[Windows] Joystick Instructions"
+        url: /platform/turtlebot3/teleoperation/#windows-joystick-instructions
     - title: "Basic Examples"
       url: /platform/turtlebot3/basic_examples/#basic-examples
       children:
@@ -15811,8 +16479,8 @@ turtlebot3:
         url: /platform/turtlebot3/basic_examples/#patrol
     - title: "Additional Sensors"
       url: /platform/turtlebot3/additional_sensors/#additional-sensors
-  - title: "[ROS] SLAM"
-    url: /platform/turtlebot3/slam/#slam
+  - title: "[ROS 1] SLAM"
+    url: /platform/turtlebot3/slam/#ros-1-slam
     children:
     - title: "Run SLAM Nodes"
       url: /platform/turtlebot3/slam/#run-slam-nodes
@@ -15826,8 +16494,8 @@ turtlebot3:
       url: /platform/turtlebot3/slam/#map
     - title: "References"
       url: /platform/turtlebot3/slam/#references
-  - title: "[ROS] Navigation"
-    url: /platform/turtlebot3/navigation/#navigation
+  - title: "[ROS 1] Navigation"
+    url: /platform/turtlebot3/navigation/#ros-1-navigation
     children:
     - title: "Run Navigation Nodes"
       url: /platform/turtlebot3/navigation/#run-navigation-nodes
@@ -15839,8 +16507,8 @@ turtlebot3:
       url: /platform/turtlebot3/navigation/#tuning-guide
     - title: "References"
       url: /platform/turtlebot3/navigation/#references
-  - title: "[ROS] Simulation"
-    url: /platform/turtlebot3/simulation/#simulation
+  - title: "[ROS 1] Simulation"
+    url: /platform/turtlebot3/simulation/#ros-1-simulation
     children:
     - title: "TurtleBot3 Simulation using Fake Node"
       url: /platform/turtlebot3/simulation/#turtlebot3-simulation-using-fake-node
@@ -15851,7 +16519,7 @@ turtlebot3:
         url: /platform/turtlebot3/simulation/#ros-packages-for-gazebo
       - title: "Standalone Gazebo Plugin"
         url: /platform/turtlebot3/simulation/#standalone-gazebo-plugin
-  - title: "[ROS] Manipulation"
+  - title: "[ROS 1] Manipulation"
     url: /platform/turtlebot3/manipulation/#manipulation
     children:
     - title: "TurtleBot3 with OpenMANIPULATOR"
@@ -15864,46 +16532,72 @@ turtlebot3:
       url: /platform/turtlebot3/manipulation/#opencr-setup
     - title: "Bringup"
       url: /platform/turtlebot3/manipulation/#bringup
+    - title: "Simulation"
+      url: /platform/turtlebot3/manipulation/#simulation  
+    - title: "Operate the Actual OpenMANIPULATOR"
+      url: /platform/turtlebot3/manipulation/#operate-the-actual-openmanipulator        
     - title: "SLAM"
       url: /platform/turtlebot3/manipulation/#slam
     - title: "Navigation"
       url: /platform/turtlebot3/manipulation/#navigation
-    - title: "MoveIt!"
-      url: /platform/turtlebot3/manipulation/#moveit
-    - title: "Pick and Place"
-      url: /platform/turtlebot3/manipulation/#pick-and-place
-    - title: "Simulation"
-      url: /platform/turtlebot3/manipulation/#simulation      
-  - title: "[ROS] Autonomous Driving"
-    url: /platform/turtlebot3/autonomous_driving/#autonomous-driving
-    children:
-    - title: "TurtleBot3 Auto"
-      url: /platform/turtlebot3/autonomous_driving/#turtlebot3-autorace
-    - title: "TurtleBot3 AutoRace Tutorials"
-      url: /platform/turtlebot3/autonomous_driving/#turtlebot3-autorace-tutorials
+    - title: "Home Service Challenge"
+      url: /platform/turtlebot3/home_service_challenge/
       children:
-      - title: "Tutorials: 1. Requirements"
-        url: /platform/turtlebot3/autonomous_driving/#tutorials-1-requirements
-      - title: "Tutorials: 2. Install AutoRace Package"
-        url: /platform/turtlebot3/autonomous_driving/#tutorials-2-install-autorace-package
-      - title: "Tutorials: 3. Install Additional Dependent Packages"
-        url: /platform/turtlebot3/autonomous_driving/#tutorials-3-install-additional-dependent-packages
-      - title: "Tutorials: 4. Calibration"
-        url: /platform/turtlebot3/autonomous_driving/#tutorials-4-calibration
-      - title: "Tutorials: 5. Missions"
-        url: /platform/turtlebot3/autonomous_driving/#tutorials-5-missions
-      - title: "Tutorials: 6. Run Autonomous Driving"
-        url: /platform/turtlebot3/autonomous_driving/#tutorials-6-run-autonomous-driving
-    - title: "TurtleBot3 AutoRace Online Competition"
-      url: /platform/turtlebot3/autonomous_driving/#turtlebot3-autorace-online-competition
-    - title: "AutoRace RBIZ Challenge 2017"
-      url: /platform/turtlebot3/autonomous_driving/#autorace-rbiz-challenge-2017
-    - title: "AutoRace RBIZ Challenge 2018"
-      url: /platform/turtlebot3/autonomous_driving/#autorace-rbiz-challenge-2018
+      - title: "What you need to Join the Home Service Challenge"
+        url: /platform/turtlebot3/home_service_challenge/#what-you-need-to-join-the-home-service-challenge
+      - title: "Getting Started"
+        url: /platform/turtlebot3/home_service_challenge/#getting-started
+      - title: "Camera Calibration"
+        url: /platform/turtlebot3/home_service_challenge/#camera-calibration
+      - title: "SLAM"
+        url: /platform/turtlebot3/home_service_challenge/#slam
+      - title: "Starting Missions"
+        url: /platform/turtlebot3/home_service_challenge/#starting-missions
+      - title: "Simulation"
+        url: /platform/turtlebot3/home_service_challenge/#simulation
+  - title: "[ROS 1] Autonomous Driving"
+    url: /platform/turtlebot3/autonomous_driving/#ros-1-autonomous-driving
+    children: 
+    - title: "What you need for Autonomous Driving"
+      url: /platform/turtlebot3/autonomous_driving/#what-you-need-for-autonomous-driving
+    - title: "Install Autorace Packages"
+      url: /platform/turtlebot3/autonomous_driving/#install-autorace-packages
+    - title: "Calibrate a Camera on SBC"
+      url: /platform/turtlebot3/autonomous_driving/#calibrate-a-camera-on-sbc
+      children:
+      - title: "Camera Imaging Calibration"
+        url: /platform/turtlebot3/autonomous_driving/#camera-imaging-calibration
+      - title: "Intrinsic Camera Calibration"
+        url: /platform/turtlebot3/autonomous_driving/#intrinsic-camera-calibration
+      - title: "Extrinsic Camera Calibration"
+        url: /platform/turtlebot3/autonomous_driving/#extrinsic-camera-calibration
+      - title: "Settings for Recognition"
+        url: /platform/turtlebot3/autonomous_driving/#settings-for-recognition
+    - title: "Lane Detection"
+      url: /platform/turtlebot3/autonomous_driving/#lane-detection
+    - title: "Traffic Sign Detection"
+      url: /platform/turtlebot3/autonomous_driving/#traffic-sign-detection
+    - title: "TurtleBot3 AutoRace 2020"
+      url: /platform/turtlebot3/autonomous_driving/#turtlebot3-autorace-2020
+      children:
+      - title: "Mission 1: Traffic Lights"
+        url: /platform/turtlebot3/autonomous_driving/#mission-1-traffic-lights
+      - title: "Mission 2: Intersection"
+        url: /platform/turtlebot3/autonomous_driving/#mission-2-intersection
+      - title: "Mission 3: Construction"
+        url: /platform/turtlebot3/autonomous_driving/#mission-3-construction
+      - title: "Mission 4: Parking"
+        url: /platform/turtlebot3/autonomous_driving/#mission-4-parking
+      - title: "Mission 5: Level Crossing"
+        url: /platform/turtlebot3/autonomous_driving/#mission-5-level-crossing
+      - title: "Mission 6: Tunnel"
+        url: /platform/turtlebot3/autonomous_driving/#mission-6-tunnel
+    - title: "TurtleBot3 AutoRace 2019"
+      url: /platform/turtlebot3/autonomous_driving_autorace/
     - title: "AutoRace with Gazebo"
-      url: /platform/turtlebot3/autonomous_driving/#autorace-with-gazebo
-  - title: "[ROS] Machine Learning"
-    url: /platform/turtlebot3/machine_learning/#machine-learning
+      url: /platform/turtlebot3/autorace_gazebo/
+  - title: "[ROS 1] Machine Learning"
+    url: /platform/turtlebot3/machine_learning/#ros-1-machine-learning
     children:
     - title: "Installation"
       url: /platform/turtlebot3/machine_learning/#installation
@@ -15911,7 +16605,7 @@ turtlebot3:
       url: /platform/turtlebot3/machine_learning/#set-parameters
     - title: "Run Machine Learning"
       url: /platform/turtlebot3/machine_learning/#run-machine-learning
-  - title: "[ROS] Applications"
+  - title: "[ROS 1] Applications"
     url: /platform/turtlebot3/applications/#applications
     children:
     - title: "TurtleBot Follower Demo"
@@ -15945,14 +16639,14 @@ turtlebot3:
       - title: "Open Source Hardware"
         url: /platform/turtlebot3/ros2_setup/#open-source-hardware  
   - title: "[ROS 2] Bringup"
-    url: /platform/turtlebot3/ros2_bringup/#bringup
+    url: /platform/turtlebot3/ros2_bringup/#ros-2-bringup
     children:
     - title: "Bringup TurtleBot3"
       url: /platform/turtlebot3/ros2_bringup/#bringup-turtlebot3
     - title: "Load TurtleBot3 on Rviz2"
       url: /platform/turtlebot3/ros2_bringup/#load-turtlebot3-on-rviz2      
   - title: "[ROS 2] Basic Operation"
-    url: /platform/turtlebot3/ros2_basic_operation/#basic_operation
+    url: /platform/turtlebot3/ros2_basic_operation/#ros-2-basic-operation
     children:
       - title: "Topic Monitor"
         url: /platform/turtlebot3/ros2_basic_operation/#topic-monitor
@@ -15981,7 +16675,7 @@ turtlebot3:
           - title: "Additional Sensors"
             url: /platform/turtlebot3/ros2_basic_operation/#additional-sensors
   - title: "[ROS 2] SLAM"
-    url: /platform/turtlebot3/ros2_slam/#slam
+    url: /platform/turtlebot3/ros2_slam/#ros-2-slam
     children: 
       - title: "Cartographer"
         url: /platform/turtlebot3/ros2_slam/#cartographer
@@ -15998,7 +16692,7 @@ turtlebot3:
       - title: "Reference"
         url: /platform/turtlebot3/ros2_slam/#reference
   - title: "[ROS 2] Navigation2"
-    url: /platform/turtlebot3/ros2_navigation2/#navigation2
+    url: /platform/turtlebot3/ros2_navigation2/#ros-2-navigation2
     children:
       - title: "Run Navigation2 Nodes"
         url: /platform/turtlebot3/ros2_navigation2/#run-navigation2-nodes
@@ -16011,7 +16705,7 @@ turtlebot3:
       - title: "References"
         url: /platform/turtlebot3/ros2_navigation2/#references                  
   - title: "[ROS 2] Simulation"
-    url: /platform/turtlebot3/ros2_simulation/#simulation
+    url: /platform/turtlebot3/ros2_simulation/#ros-2-simulation
     children:
       - title: "TurtleBot3 Simulation using Fake Node"
         url: /platform/turtlebot3/ros2_simulation/#turtlebot3-simulation-using-fake-node
@@ -16026,8 +16720,22 @@ turtlebot3:
     url: /platform/turtlebot3/ros2_autonomous_driving/
   - title: "[ROS 2] Machine Learning"
     url: /platform/turtlebot3/ros2_machine_learning/
+    children:
+    - title: "Install TensorFlow"
+      url: /platform/turtlebot3/ros2_machine_learning/#install-tensorflow
+    - title: "Set Parameters"
+      url: /platform/turtlebot3/ros2_machine_learning/#set-parameters
+    - title: "Run Machine Learning"
+      url: /platform/turtlebot3/ros2_machine_learning/#run-machine-learning    
   - title: "[ROS 2] Applications"
     url: /platform/turtlebot3/ros2_applications/
+    children:
+    - title: "Automatic Parking"
+      url: /platform/turtlebot3/ros2_machine_learning/#automatic-parking
+    - title: "Automatic Parking Vision"
+      url: /platform/turtlebot3/ros2_machine_learning/#automatic-parking-vision
+    - title: "Load Multiple TurtleBot3s"
+      url: /platform/turtlebot3/ros2_machine_learning/#load-multiple-turtlebot3s
   - title: "Locomotion"
     url: /platform/turtlebot3/locomotion/#locomotion
     children:
@@ -16091,6 +16799,13 @@ turtlebot3:
       url: /platform/turtlebot3/challenges/#online-competition-on-rds
     - title: "Offline Competition"
       url: /platform/turtlebot3/challenges/#offline-competition
+    - title: "AutoRace RBIZ Challenge"
+      url: /platform/turtlebot3/autorace_rviz_challenge
+      children: 
+      - title: "2017"
+        url: /platform/turtlebot3/autorace_rviz_challenge/#autorace-rbiz-challenge-2017  
+      - title: "2018"
+        url: /platform/turtlebot3/autorace_rviz_challenge/#autorace-rbiz-challenge-2018
   - title: "Appendixes"
     url: /platform/turtlebot3/appendixes/#appendixes
     children:
@@ -16201,7 +16916,7 @@ openmanipulator:
   - title : "OpenMANIPULATOR-X"
     url: /platform/openmanipulator_main/#openmanipulator-x
   - title : "OpenMANIPULATOR-P"
-    url: /platform/openmanipulator_main/#openmanipulator-pro
+    url: /platform/openmanipulator_main/#openmanipulator-p
     
 #OpenMANIPULATOR-X sidebar
 openmanipulator_x:
@@ -16295,9 +17010,7 @@ openmanipulator_x:
           - title: "PS4 Joystick"
             url: /platform/openmanipulator_x/ros_operation/#ps4-joystick
           - title: "XBOX 360 Joystick"
-            url: /platform/openmanipulator_x/ros_operation/#xbox-360-joystick
-      - title: "MoveIt!"
-        url: /platform/openmanipulator_x/ros_operation/#moveit
+            url: /platform/openmanipulator_x/ros_operation/#xbox-360-joystick                   
   - title: "[ROS] Simulation"
     url: /platform/openmanipulator_x/ros_simulation/#ros-simulation
     children:
@@ -16305,23 +17018,47 @@ openmanipulator_x:
         url: /platform/openmanipulator_x/ros_simulation/#launch-gazebo
       - title: "Controller for gazebo"
         url: /platform/openmanipulator_x/ros_simulation/#controller-for-gazebo
+  - title: "[ROS] Perceptions"
+    url: /platform/openmanipulator_x/ros_perceptions/
+    children:
+      - title: "Camera"
+        url: /platform/openmanipulator_x/ros_perceptions/#camera
+        children:
+        - title: "Install Camera Package"
+          url: /platform/openmanipulator_x/ros_perceptions/#install-camera-package
+        - title: "Install AR Marker Package"
+          url: /platform/openmanipulator_x/ros_perceptions/#install-ar-marker-package
+        - title: "Pick and Place Example"
+          url: /platform/openmanipulator_x/ros_perceptions/#pick-and-place-example
+      - title: "Simulation"
+        url: /platform/openmanipulator_x/ros_perceptions/#simulation
+  - title: "[ROS] Controls"
+    url: /platform/openmanipulator_x/ros_controls/
+    children:
+      - title: "MoveIt!"
+        url:  /platform/openmanipulator_x/ros_controls/#moveit
+        children: 
+          - title: "Install MoveIt Packages"
+            url: /platform/openmanipulator_x/ros_controls/#install-moveit-packages
+          - title: "Launch MoveIt!"
+            url: /platform/openmanipulator_x/ros_controls/#launch-moveit
+      - title: "Gravity Compensation"
+        url: /platform/openmanipulator_x/ros_controls/#gravity-compensation
+        children: 
+          - title: "Install Gravity Compensation Packages"
+            url: /platform/openmanipulator_x/ros_controls/#install-gravity-compensation-packages
+          - title: "Set Operating Mode to Current Mode"
+            url: /platform/openmanipulator_x/ros_controls/#set-operating-mode-to-current-mode
+          - title: "Run Gravity Compensation Package"
+            url: /platform/openmanipulator_x/ros_controls/#run-gravity-compensation-package
   - title: "[ROS] Applications"
     url: /platform/openmanipulator_x/ros_applications/#ros-applications
     children:
-      - title: "Camera Application"
-        url: /platform/openmanipulator_x/ros_applications/#camera-application
+      - title: "Master and Slave"
+        url: /platform/openmanipulator_x/ros_applications/#master-and-slave
         children:
-          - title: "Install Camera Package"
-            url: /platform/openmanipulator_x/ros_applications/#install-camera-package
-          - title: "Install AR Marker Package"
-            url: /platform/openmanipulator_x/ros_applications/#install-ar-marker-package
-          - title: "Pick and Place Example"
-            url: /platform/openmanipulator_x/ros_applications/#pick-and-place-example
-      - title: "Master Slave"
-        url: /platform/openmanipulator_x/ros_applications/#master-slave
-        children:
-          - title: "Setup of OpenMANIPULATOR-X"
-            url: /platform/openmanipulator_x/ros_applications/#setup-of-openmanipulator-x
+          - title: "Setup OpenMANIPULATOR-X"
+            url: /platform/openmanipulator_x/ros_applications/#setup-openmanipulator-x
           - title: "Install Package"
             url: /platform/openmanipulator_x/ros_applications/#install-package
           - title: "Execute Example"
@@ -16370,36 +17107,27 @@ openmanipulator_x:
             url: /platform/openmanipulator_x/ros2_operation/#ps4-joystick
           - title: "XBOX 360 Joystick"
             url: /platform/openmanipulator_x/ros2_operation/#xbox-360-joystick
-      - title: "MoveIt!"
-        url: /platform/openmanipulator_x/ros2_operation/#moveit
   - title: "[ROS 2] Simulation"
     url: /platform/openmanipulator_x/ros2_simulation/#ros-simulation
-    #children:
-    #  - title: "Launch gazebo"
-    #    url: /platform/openmanipulator_x/ros2_simulation/#launch-gazebo
-    #  - title: "Controller for gazebo"
-    #    url: /platform/openmanipulator_x/ros2_simulation/#controller-for-gazebo
+  - title: "[ROS 2] Perceptions"
+    url: /platform/openmanipulator_x/ros2_perceptions/
+  - title: "[ROS 2] Controls"
+    url: /platform/openmanipulator_x/ros2_controls/
+    children:
+      - title: "MoveIt!"
+        url: /platform/openmanipulator_x/ros2_controls/#moveit
   - title: "[ROS 2] Applications"
     url: /platform/openmanipulator_x/ros2_applications/#ros-applications
-    #children:
-    #  - title: "Camera Application"
-    #    url: /platform/openmanipulator_x/ros2_applications/#camera-application
-    #    children:
-    #      - title: "Install Camera Package"
-    #        url: /platform/openmanipulator_x/ros2_applications/#install-camera-package
-    #      - title: "Install AR Marker Package"
-    #        url: /platform/openmanipulator_x/ros2_applications/#install-ar-marker-package
-    #      - title: "Pick and Place Example"
-    #        url: /platform/openmanipulator_x/ros2_applications/#pick-and-place-example
-    #  - title: "Master Slave"
-    #    url: /platform/openmanipulator_x/ros2_applications/#master-slave
-    #    children:
-    #      - title: "Setup of OpenMANIPULATOR-X"
-    #        url: /platform/openmanipulator_x/ros2_applications/#setup-of-openmanipulator-x
-    #      - title: "Install Package"
-    #        url: /platform/openmanipulator_x/ros2_applications/#install-package
-    #      - title: "Execute Example"
-    #        url: /platform/openmanipulator_x/ros2_applications/#execute-example
+    children: 
+      - title: "Master and Slave"
+        url: /platform/openmanipulator_x/ros2_applications/#master-and-slave
+        children:
+          - title: "Setup OpenManipulator-X"
+            url: /platform/openmanipulator_x/ros2_applications/#setup-openmanipulator-x
+          - title: "Install Package"
+            url: /platform/openmanipulator_x/ros2_applications/#install-package
+          - title: "Execute Example"
+            url: /platform/openmanipulator_x/ros2_applications/#execute-example
   - title: "[OpenCR] Setup"
     url: /platform/openmanipulator_x/opencr_setup/#opencr-setup
     children:
@@ -16448,7 +17176,7 @@ openmanipulator_x:
       - title: "OpenMANIPULATOR Linear"
         url: /platform/openmanipulator_x/friends/#openmanipulator-linear
         
-#OpenManipulator-PRO
+#OpenManipulator-P
 openmanipulator_p:
   - title: "Overview"
     url: /platform/openmanipulator_p/overview/#overview
@@ -16531,8 +17259,6 @@ openmanipulator_p:
         url: /platform/openmanipulator_p/ros_operation/#gui-program
       - title: "Teleoperation"
         url: /platform/openmanipulator_p/ros_operation/#teleoperation
-      - title: "MoveIt!"
-        url: /platform/openmanipulator_p/ros_operation/#moveit
   - title: "[ROS] Simulation"
     url: /platform/openmanipulator_p/ros_simulation/#ros-simulation
     children:
@@ -16540,32 +17266,66 @@ openmanipulator_p:
         url: /platform/openmanipulator_p/ros_simulation/#launch-gazebo
       - title: "Controller for gazebo"
         url: /platform/openmanipulator_p/ros_simulation/#controller-for-gazebo
-  - title: "[ROS] Tool Applications"
-    url: /platform/openmanipulator_p/ros_tool_applications
+  - title: "[ROS] Tools"
+    url: /platform/openmanipulator_p/ros_tools
     children:
       - title: "RH-P12-RN Gripper"
-        url: /platform/openmanipulator_p/ros_tool_applications/#rh-p12-rn-gripper
+        url: /platform/openmanipulator_p/ros_tools/#rh-p12-rn-gripper
         children:
           - title: "Parts List"
-            url: /platform/openmanipulator_p/ros_tool_applications/#parts-list
+            url: /platform/openmanipulator_p/ros_tools/#parts-list
           - title: "Assembly Manual"
-            url: /platform/openmanipulator_p/ros_tool_applications/#assembly-manual
+            url: /platform/openmanipulator_p/ros_tools/#assembly-manual
           - title: "Operation"
-            url: /platform/openmanipulator_p/ros_tool_applications/#operation
+            url: /platform/openmanipulator_p/ros_tools/#operation
             children:
               - title: "GUI Program"
-                url: /platform/openmanipulator_p/ros_tool_applications/#gui-program
+                url: /platform/openmanipulator_p/ros_tools/#gui-program
               - title: "Teleoperation"
-                url: /platform/openmanipulator_p/ros_tool_applications/#teleoperation
+                url: /platform/openmanipulator_p/ros_tools/#teleoperation
               - title: "Moveit!"
-                url: /platform/openmanipulator_p/ros_tool_applications/#moveit
+                url: /platform/openmanipulator_p/ros_tools/#moveit
           - title: "Simulation"
-            url: /platform/openmanipulator_p/ros_tool_applications/#simulation
+            url: /platform/openmanipulator_p/ros_tools/#simulation
             children:
               - title: "Launch Gazebo"
-                url: /platform/openmanipulator_p/ros_tool_applications/#launch-gazebo
+                url: /platform/openmanipulator_p/ros_tools/#launch-gazebo
               - title: "Controller for Gazebo"
-                url: /platform/openmanipulator_p/ros_tool_applications/#controller-for-gazebo
+                url: /platform/openmanipulator_p/ros_tools/#controller-for-gazebo        
+  - title: "[ROS] Perceptions"
+    url: /platform/openmanipulator_p/ros_perceptions/
+    children: 
+      - title: "Camera"
+        url: /platform/openmanipulator_p/ros_perceptions/#camera
+        children: 
+          - title: "Install Camera Package"
+            url: /platform/openmanipulator_p/ros_perceptions/#install-camera-package
+          - title: "Install AR Marker Package"
+            url: /platform/openmanipulator_p/ros_perceptions/#install-ar-marker-package
+          - title: "Control OpenMANIPULATOR-P with Camera"
+            url: /platform/openmanipulator_p/ros_perceptions/#control-openmanipulator-p-with-camera
+          - title: "Simulation"
+            url: /platform/openmanipulator_p/ros_perceptions/#simulation
+  - title: "[ROS] Controls"
+    url: /platform/openmanipulator_p/ros_controls/
+    children:
+      - title: "MoveIt!"
+        url: /platform/openmanipulator_p/ros_controls/#moveit
+        children:
+          - title: "Install MoveIt Packages" 
+            url: /platform/openmanipulator_p/ros_controls/#install-moveit-packages
+          - title: "Launch MoveIt!" 
+            url: /platform/openmanipulator_p/ros_controls/#launch-moveit
+  - title: "[ROS] Applications"
+    url: /platform/openmanipulator_p/ros_applications/
+    children:
+      - title: "Master and Slave"
+        url: /platform/openmanipulator_p/ros_applications/#master-and-slave
+        children:
+          - title: "Install Package"
+            url: /platform/openmanipulator_p/ros_applications/#install-package
+          - title: "Execute Example"
+            url: /platform/openmanipulator_p/ros_applications/#execute-example
   - title: "[ROS 2] Setup"
     url: /platform/openmanipulator_p/ros2_setup/#ros-setup
     children:
@@ -16599,17 +17359,22 @@ openmanipulator_p:
         url: /platform/openmanipulator_p/ros2_operation/#gui-program
       - title: "Teleoperation"
         url: /platform/openmanipulator_p/ros2_operation/#teleoperation
-      - title: "MoveIt!"
-        url: /platform/openmanipulator_p/ros2_operation/#moveit
   - title: "[ROS 2] Simulation"
     url: /platform/openmanipulator_p/ros2_simulation/#ros-simulation
-  #  children:
-  #    - title: "Launch gazebo"
-  #      url: /platform/openmanipulator_p/ros2_simulation/#launch-gazebo
-  #    - title: "Controller for gazebo"
-  #      url: /platform/openmanipulator_p/ros2_simulation/#controller-for-gazebo
-  - title: "[ROS 2] Tool Applications"
-    url: /platform/openmanipulator_p/ros2_tool_applications    
+  - title: "[ROS 2] Tools"
+    url: /platform/openmanipulator_p/ros2_tools
+  - title: "[ROS 2] Perceptions"
+    children: 
+      - title: "Camera"
+        url: /platform/openmanipulator_p/ros2_perceptions/#camera
+  - title: "[ROS 2] Controls"
+    url: /platform/openmanipulator_p/ros2_controls/
+    children:
+      - title: "Moveit!"
+        url: /platform/openmanipulator_p/ros2_controls/#moveit
+  - title: "[ROS 2] Applications"
+    url: /platform/openmanipulator_p/ros2_applications/
+
 #Manipulator-H
 manipulator_h:
   - title: "Introduction"
@@ -18370,9 +19135,13 @@ rplustask3:
       urlkr: /software/rplustask3/motion_programming/#모션-유닛-편집하기
       children:
       - title: "Using 3D Robot"
+        titlekr: "3D 로봇 활용"
         url: /software/rplustask3/motion_programming/#using-3d-robot
+        urlkr: /software/rplustask3/motion_programming/#3d-로봇-활용
       - title: "Using Actual Robot"
+        titlekr: "실제 로봇 활용"
         url: /software/rplustask3/motion_programming/#using-actual-robot
+        urlkr: /software/rplustask3/motion_programming/#실제-로봇-활용
     - title: "Create New Motion Group"
       titlekr: "새 모션 만들기"
       url: /software/rplustask3/motion_programming/#create-new-motion-group
@@ -20911,6 +21680,15 @@ cm-550:
     titlekr: "제품 사양"
     url: /parts/controller/cm-550/#specifications
     urlkr: /parts/controller/cm-550/#제품-사양
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /parts/controller/cm-550/#control-table
+    urlkr: /parts/controller/cm-550/#컨트롤-테이블
+    children:
+    - title: "CM-550 Control Table"
+      titlekr: "CM-550 컨트롤 테이블"
+      url: /parts/controller/cm-550/#cm-550-control-table
+      urlkr: /parts/controller/cm-550/#cm-550-컨트롤-테이블
   - title: "Layout"
     titlekr: "각 부 명칭"
     url: /parts/controller/cm-550/#layout
@@ -21091,6 +21869,120 @@ cm-900:
       url: /parts/controller/cm-900/#certifications
       urlkr: /parts/controller/cm-900/#인증-획득
 
+#OpenCM 9.04 sidebar_jp
+opencm904_jp:
+  - title: "イントロダクション"
+    url: /parts/controller/opencm904_jp/#イントロダクション
+  - title: "仕様表"
+    url: /parts/controller/opencm904_jp/#仕様表
+  - title: "コントロールテーブル"
+    url: /parts/controller/opencm904_jp/#コントロールテーブル
+  - title: "ハードウェア"
+    url: /parts/controller/opencm904_jp/#ハードウェア
+    children:
+    - title: "メモリマップ"
+      url: /parts/controller/opencm904_jp/#メモリマップ
+    - title: "ブロック図"
+      url: /parts/controller/opencm904_jp/#ブロック図
+    - title: "レイアウトピン配置"
+      url: /parts/controller/opencm904_jp/#レイアウトピン配置
+      children:
+      - title: "電源スイッチ"
+        url: /parts/controller/opencm904_jp/#電源スイッチ
+      - title: "直列バッテリーソケット"
+        url: /parts/controller/opencm904_jp/#直列バッテリーソケット
+      - title: "DYNAMIXEL TTL 3ピン"
+        url: /parts/controller/opencm904_jp/#dynamixel-ttl-3ピン
+      - title: "通信ポート"
+        url: /parts/controller/opencm904_jp/#通信ポート
+      - title: "ユーザーボタン"
+        url: /parts/controller/opencm904_jp/#ユーザーボタン
+      - title: "Ext. ADC Ref Jumper"
+        url: /parts/controller/opencm904_jp/#ext-adc-ref-jumper
+      - title: "マイクロUSBタイプB"
+        url: /parts/controller/opencm904_jp/#マイクロusbタイプb
+      - title: "ステータスled"
+        url: /parts/controller/opencm904_jp/#ステータスled
+      - title: "リセットボタン"
+        url: /parts/controller/opencm904_jp/#リセットボタン
+      - title: "JTAG/SWD 4ピン"
+        url: /parts/controller/opencm904_jp/#jtagswd-4ピン
+      - title: "ROBOTIS 5-ピンポート"
+        url: /parts/controller/opencm904_jp/#robotis-5-ピンポート
+      - title: "I/Oヘッダ "
+        url: /parts/controller/opencm904_jp/#ioヘッダ-
+    - title: "ピン名の定義"
+      url: /parts/controller/opencm904_jp/#ピン名の定義
+    - title: "ピン機能の定義"
+      url: /parts/controller/opencm904_jp/#ピン機能の定義
+  - title: "電源接続方法"
+    url: /parts/controller/opencm904_jp/#電源接続方法
+  - title: "スイッチアセンブリ(Type A)"
+    url: /parts/controller/opencm904_jp/#スイッチアセンブリtype-a
+  - title: "コネクタアセンブリ(Type A)"
+    url: /parts/controller/opencm904_jp/#コネクタアセンブリtype-a
+  - title: "開発環境"
+    url: /parts/controller/opencm904_jp/#開発環境
+    children:
+    - title: "サポート ソフトウェア"
+      url: /parts/controller/opencm904_jp/#サポート-ソフトウェア
+    - title: "OpenCM IDE"
+      titlekr: "OpenCM IDE"
+      url: /parts/controller/opencm904_jp/#opencm-ide
+      urlkr: /parts/controller/opencm904_jp/#opencm-ide
+    - title: "Arduino IDE"
+      url: /parts/controller/opencm904_jp/#arduino-ide
+      children:
+      - title: "Linuxのインストール"
+        url: /parts/controller/opencm904_jp/#linuxのインストール
+      - title: "Macのインストール"
+        url: /parts/controller/opencm904_jp/#macのインストール
+      - title: "Windowsのインストール"
+        url: /parts/controller/opencm904_jp/#windowsのインストール
+    - title: "ライブラリAPI"
+      url: /parts/controller/opencm904_jp/#ライブラリapi
+      children:
+      - title: "Dynamixel2Arduinoライブラリ"
+        url: /parts/controller/opencm904_jp/#dynamixel2arduinoライブラリ
+  - title: "例"
+    url: /parts/controller/opencm904_jp/#例
+    children:
+    - title: "LED"
+      url: /parts/controller/opencm904_jp/#led
+    - title: "ボタン"
+      url: /parts/controller/opencm904_jp/#ボタン
+    - title: "ブザー"
+      url: /parts/controller/opencm904_jp/#ブザー
+    - title: "PWM"
+      url: /parts/controller/opencm904_jp/#pwm
+    - title: "EEPROM"
+      url: /parts/controller/opencm904_jp/#eeprom
+    - title: "DYNAMIXEL Workbench"
+      url: /parts/controller/opencm904_jp/#dynamixelworkbench
+    - title: "サーボ"
+      url: /parts/controller/opencm904_jp/#サーボ
+    - title: "SDカード"
+      url: /parts/controller/opencm904_jp/#sdカード
+    - title: "MS5540S"
+      url: /parts/controller/opencm904_jp/#ms5540s
+    - title: "MPU6050 DMP"
+      url: /parts/controller/opencm904_jp/#mpu6050-dmp
+    - title: "0.96\" OLED LCD"
+      url: /parts/controller/opencm904_jp/#096-oled-lcd
+  - title: "ダウンロード"
+    url: /parts/controller/opencm904_jp/#ダウンロード
+  - title: "参考"
+    url: /parts/controller/opencm904_jp/#参考
+    children:
+    - title: "リカバリーモード"
+      url: /parts/controller/opencm904_jp/#リカバリーモード
+    - title: "R+ Manager 2.0 ファームウェアリカバリー"
+      url: /parts/controller/opencm904_jp/#r-manager-20-ファームウェアリカバリー
+    - title: "Windowsドライバのインストール"
+      url: /parts/controller/opencm904_jp/#windowsドライバのインストール
+    - title: "寸法"
+      url: /parts/controller/opencm904_jp/#寸法
+
 #OpenCM 9.04 sidebar
 opencm904:
   - title: "Introduction"
@@ -21190,8 +22082,8 @@ opencm904:
     url: /parts/controller/opencm904/#development-environment
     urlkr: /parts/controller/opencm904/#소프트웨어-개발환경
     children:
-    - title: "Softwares"
-      url: /parts/controller/opencm904/#softwares
+    - title: "Supported Software"
+      url: /parts/controller/opencm904/#supported-software
     - title: "OpenCM IDE"
       titlekr: "OpenCM IDE"
       url: /parts/controller/opencm904/#opencm-ide
@@ -21261,7 +22153,9 @@ opencm904:
       url: /parts/controller/opencm904/#recovery-mode
       urlkr: /parts/controller/opencm904/#펌웨어-복구모드
     - title: "Windows Driver Installation"
+      titlekr: "USB 드라이버 설치 하기"
       url: /parts/controller/opencm904/#windows-driver-installation
+      urlkr: /parts/controller/opencm904/#usb-드라이버-설치-하기-
     - title: "Dimension"
       titlekr: "도면"
       url: /parts/controller/opencm904/#dimension
@@ -21399,15 +22293,6 @@ opencr10:
       url: /parts/controller/opencr10/#dynamixel-workbench
     - title: "OpenMANIPULATOR"
       url: /parts/controller/opencr10/#openmanipulator
-  - title: "Downloads"
-    url: /parts/controller/opencr10/#downloads
-  - title: "References"
-    url: /parts/controller/opencr10/#references
-    children:
-    - title: "Recovery Mode"
-      url: /parts/controller/opencr10/#recovery-mode
-    - title: "Certifications"
-      url: /parts/controller/opencr10/#certifications
   - title: "Bootloader"
     url: /parts/controller/opencr10/#bootloader
     children:
@@ -21442,17 +22327,30 @@ opencr10:
   - title: "Downloader"
     url: /parts/controller/opencr10/#downloader
     children:
-    - title: "Usage"
-      url: /parts/controller/opencr10/#usage
-    - title: "Linux/Mac Example"
-      url: /parts/controller/opencr10/#linuxmac-example
+    - title: "Description"
+      url: /parts/controller/opencr10/#description
+    - title: "Example For Linux / Mac"
+      url: /parts/controller/opencr10/#example-for-linux-mac
     - title: "Windows Example"
-      url: /parts/controller/opencr10/#windows-example
+      url: /parts/controller/opencr10/#example-for-windows-example
     - title: "Execution Result"
       url: /parts/controller/opencr10/#execution-result
     - title: "Download Executable File"
       url: /parts/controller/opencr10/#download-executable-file
-
+  - title: "Reference"
+    url: /parts/controller/opencr10/#reference
+    children:
+    - title: "Recovery Mode"
+      url: /parts/controller/opencr10/#recovery-mode
+    - title: "DYNAMIXEL Connectors"
+      url: /parts/controller/opencr10/#dynamixel-connectors
+    - title: "Communication Circuit"
+      url: /parts/controller/opencr10/#communication-circuit    
+    - title: "Download"
+      url: /parts/controller/opencr10/#download
+    - title: "Certifications"
+      url: /parts/controller/opencr10/#certifications
+      
 dynamixel_shield:
   - title: "Introduction"
     titlekr: "개요"
@@ -21466,6 +22364,11 @@ dynamixel_shield:
     titlekr: "각 부 명칭"
     url: /parts/interface/dynamixel_shield/#layout
     urlkr: /parts/interface/dynamixel_shield/#각-부-명칭
+    children:
+      - title: "Use of Serial Monitor with DYNAMIXEL Shield"
+        url: /parts/interface/dynamixel_shield/#use-of-serial-monitor-with-dynamixel-shield
+      - titlekr: "시리얼 모니터 사용시 주의사항"
+        url: /parts/interface/dynamixel_shield/#시리얼-모니터-사용시-주의사항        
   - title: "Connecting Power"
     titlekr: "전원 연결 방법"
     url: /parts/interface/dynamixel_shield/#connecting-power
@@ -21563,7 +22466,7 @@ opencm7:
     children:
     - titlekr: "인증 획득"
       urlkr: /parts/controller/opencm7/#인증-획득
-
+  
 rc-100:
   - title: "Introduction"
     titlekr: "개요"
@@ -21613,6 +22516,40 @@ rc-100:
     titlekr: "활용 방법"
     url: /parts/communication/rc-100/#tutorials
     urlkr: /parts/communication/rc-100/#활용-방법
+
+
+rc-200:
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /parts/communication/rc-200/#introduction
+    urlkr: /parts/communication/rc-200/#개요
+  - title: "Quick Start"
+    titlekr: "퀵스타트"
+    url: /parts/communication/rc-200/#quick-start
+    url: /parts/communication/rc-200/#퀵스타트
+    children: 
+    - title: "How to Set the Communication Channel"
+      titlekr: "통신 채널 설정 방법"
+      url: /parts/communication/rc-200/#how-to-set-the-communication-channel
+      urlkr: /parts/communication/rc-200/#통신-채널-설정-방법
+    - title: "How to Lock/Unlock the Channel Buttons"
+      titlekr: "채널버튼 잠금/해제 기능"
+      url: /parts/communication/rc-200/#how-to-lock-unlock-the-channel-button
+      urlkr: /parts/communication/rc-200/#채널버튼-잠금해제-기능
+    - title: "How to Check the Communication Channel"
+      titlekr: "통신 채널 확인 방법"
+      url: /parts/communication/rc-200/#how-to-check-the-communication-channel
+      urlkr: /parts/communication/rc-200/#통신-채널-확인-방법    
+    - title: "When to Replace the Battery"
+      titlekr: "건전지 교체 시기"
+      url: /parts/communication/rc-200/#when-to-replace-the-battery
+      urlkr: /parts/communication/rc-200/#건전지-교체-시기
+    - title: "Straightness Tuning for CM-50"
+      titlekr: "CM-50 직진성 보정하기"
+      url: /parts/communication/rc-200/#straightness-tuning-for-cm-50
+      urlkr: /parts/communication/rc-200/#cm-50-직진성-보정하기
+
+
 
 #ZIG-100/110 sidebar
 zig-110:

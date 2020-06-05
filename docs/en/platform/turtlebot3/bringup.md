@@ -15,7 +15,7 @@ page_number: 14
 
 <div style="counter-reset: h1 6"></div>
 
-# [Bringup](#bringup)
+# [[ROS 1] Bringup](#ros-1-bringup)
 
 ![](/assets/images/platform/turtlebot3/software/remote_pc_and_turtlebot.png)
 
@@ -27,13 +27,10 @@ page_number: 14
 {% endcapture %}
 <div class="notice--warning">{{ notice_01 | markdownify }}</div>
 
-**NOTE**: This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame` and on `Windows 10` with `ROS Melodic Morena`.
+**NOTE**: This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame` and on `Windows 10` with `ROS Melodic Morenia`.
 {: .notice--info}
 
 ## [Run roscore](#run-roscore)
-
-**NOTE**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`-`Alt`-`T`.
-{: .notice--info}
 
 **[Remote PC]** Run roscore.
 
@@ -124,7 +121,7 @@ process[turtlebot3_diagnostics-3]: started with pid [14200]
 **TIP**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `burger`, `waffle`, `waffle_pi`. If you want to permanently set the export settings, please refer to [Export TURTLEBOT3_MODEL][export_turtlebot3_model]{: .popup} page.
 {: .notice--success}
 
-# Ubuntu
+### [on Ubuntu](#on-ubuntu)
 ``` bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ roslaunch turtlebot3_bringup turtlebot3_remote.launch
@@ -136,7 +133,7 @@ Open a new terminal window and enter the below command.
 $ rosrun rviz rviz -d `rospack find turtlebot3_description`/rviz/model.rviz
 ```
 
-# Windows
+### [on Windows](#on-windows)
 ``` bash
 > set TURTLEBOT3_MODEL=${TB3_MODEL}
 > roslaunch turtlebot3_bringup turtlebot3_remote.launch

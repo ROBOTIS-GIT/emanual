@@ -37,8 +37,11 @@ page_number: 11
 
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-#### [Linux Shell Script](#Linux-shell-script)
-  
+#### [(Recommended) Shell Script](#recommended-shell-script)
+
+**NOTE**: For Windows developers, please use the [alternative Arduino IDE](#alternative-arduino-ide) firmware upload method.
+{: .notice}
+
 This instruction was tested on `Ubuntu 16.04`, `Ubuntu Mate`, `Linux Mint` and `Raspbian`. You can use the following command after connecting OpenCR to remote PC (your desktop or laptop PC) or connect OpenCR to your TurtleBot PC (`Intel® Joule™`, `Raspberry Pi 3`) and execute the following command.
 
 - TurtleBot3 Burger
@@ -67,7 +70,7 @@ When firmware upload is completed, `jump_to_fw` text string will be printed on t
 
 When firmware upload is completed, `jump_to_fw` text string will be printed on the terminal.
 
-#### [Arduino IDE](#arduino-ide)
+#### [(Alternative) Arduino IDE](#alternative-arduino-ide)
 
 **WARNING**: The contents in this chapter corresponds to the `Remote PC` (your desktop or laptop PC) which will control TurtleBot3. Do **NOT** apply this instruction to your TurtleBot3.
 {: .notice--warning}

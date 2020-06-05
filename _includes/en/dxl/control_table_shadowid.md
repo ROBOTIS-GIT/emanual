@@ -1,24 +1,43 @@
-Set the DYNAMIXEL’s Secondary ID. Secondary ID(12) is a value to identify each DYNAMIXEL, just like the ID(7).
-However, unlike ID(7), Secondary ID(12) is not a unique value.
-Therefore, DYNAMIXEL with the same Secondary ID value form a group.
-The differences between Secondary ID(12) and ID(7) are as follows :
-1. Secondary ID(12) is not a unique value. i.e., a lot of DYNAMIXEL may have the same Secondary ID value.
-2. ID(7) has a higher priority than Secondary ID(12). i.e., if Secondary ID(12) and ID(7) are the same, ID(7) will be applied first.
-3. The EEPROM area of the Control Table cannot be modified with Secondary ID(12). Only the RAM area can be modified.
-4. If Instruction Packet ID is the same as Secondary ID(12), the Status Packet will not be returned.
-5. If the value of Secondary ID(12) is 253 or higher, the Secondary ID function is deactivated.
+Set Secondary ID(12) of an unit. 
 
-|Values|Description|
-| :---: | :---: |
-|0 ~ 252|Activate Secondary ID function|
-|253 ~ 255|Deactivate Secondary ID function, Default value ‘255’|
+Unlike, ID(7) which should not overlap with other DYNAMIXELs, Secondary ID(12) can share the same ID to group DYNAMIXELs, and to synchronize the movement of units. 
 
-The following are examples of operation when there are five DYNAMIXEL with ID (7) set from 1 to 5.
-1. Set all five DYNAMIXEL' Secondary ID(12) to '5'.
-2. Send Write Instruction Packet(ID = 1, LED(65) = 1).
-3. Turn on LED of DYNAMIXEL with ID '1' and return the Status Packet.
+The differences between Secondary ID(12) and ID(7) are as follows
+- Secondary ID(12) is not a unique value. devices can share the same Secondary ID.
+- ID(7) has a greater priority than the Secondary ID(12). If Secondary ID(12) and ID(7) has the same value, ID(7) will be applied first.
+- The EEPROM area of the Control Table cannot be modified using Secondary ID(12). The RAM area can be modified only with the Secondary ID(12), .
+- If Instruction Packet ID is the same as Secondary ID(12), a Status Packet will not be returned.
+- If the value of Secondary ID(12) is 253 or higher, the Secondary ID function is deactivated.
+
+|  Values   |                      Description                      |
+|:---------:|:-----------------------------------------------------:|
+|  0 ~ 252  |            Activate Secondary ID function             |
+| 253 ~ 255 | Deactivate Secondary ID function, Default value ‘255’ |
+
+#### [Example of Secondary ID(12)](#example-of-secondary-id12)
+
+See the following example of using Secondary ID(12). Note that all DYNAMAIXELs use a different ID (1 to 5)
+
+{% if page.product_group=='dxl_xw540' %}
+
+1. Set Secondary ID of all DYNAMIXELs to '5'.
+2. Send Write Instruction Packet(ID(7) = 1, Torque Enable(64) = 1).
+3. The DYNAMIXEL with ID '1' turns on its torque by the Instruction Packet, and Status Packet will be returned.
+4. Send Write Instruction Packet(ID = 5, Torque Enable(64) = 1).
+5. All DYNAMIXELs turns on their torque, but Status Packet of ID '5' will be returned only.
+6. Set the Secondary ID of all DYNAMIXELs to ‘100’.
+7. Send Write Instruction Packet(ID = 100, Torque Enable(64) = 0).
+8. All DYNAMIXELs turns off their torque. As no DYNAMIXEL uses ID 100, but uses the same Secondary ID, the Status Packet will not be returned.
+
+{% else %}
+
+1. Set Secondary ID of all DYNAMIXELs to '5'.
+2. Send Write Instruction Packet(ID(7) = 1, LED(65) = 1).
+3. The DYNAMIXEL with ID '1' turns on its LED by the Instruction Packet, and Status Packet will be returned.
 4. Send Write Instruction Packet(ID = 5, LED(65) = 1).
-5. Turn on LED on five DYNAMIXEL. However, Status Packet of DYNAMIXEL with ID ‘5’ will be returned.
-6. Set the Secondary ID(12) of all five DYNAMIXEL to ‘100’.
-7. Send Write Instruction Packet(ID = 100, LED(65) = 0).
-8. Turn off LED on five DYNAMIXEL. However, as there is no DYNAMIXEL with ID ‘100’, Status Packet is not returned.
+5. All DYNAMIXELs turns on their LED, but Status Packet of ID '5' will be returned only.
+6. Set the Secondary ID of all DYNAMIXELs to ‘100’.
+7. Send Write Instruction Packet(ID = 100, Torque Enable(64) = 0).
+8. All DYNAMIXELs turns off their LED. As no DYNAMIXEL uses ID 100, but uses the same Secondary ID, the Status Packet will not be returned.
+
+{% endif %}

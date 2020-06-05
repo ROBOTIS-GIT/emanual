@@ -60,10 +60,13 @@ page_number: 8
 [install_linux_based_on_raspbian]: /docs/en/platform/turtlebot3/raspberry_pi_3_setup/#install-linux-based-on-raspbian
 [install_ubuntu]: /docs/en/platform/turtlebot3/joule_setup/#install-linux-ubuntu
 
-### [Windows 10 Single board computer](#windows-10-single-board-computer)
+### [[Windows] Windows 10 SBC](#windows-windows-10-sbc)
+
+**NOTE**: ROS on Windows was brought up using [Up2](https://up-board.org/upsquared/specifications/) and an `Intel Nuc`.
+{: .notice--warning}
 
 1. You can download a trial of Windows 10 IoT Enterprise Long Term Service (LTSC) from the following link:
-   - [Download link][windows_download_link]
+   - [Download Windwos 10 IoT Enterprise LTSC(Trial)][windows_download_link]
 
    [windows_download_link]: https://www.microsoft.com/en-us/evalcenter/evaluate-windows-10-enterprise
 

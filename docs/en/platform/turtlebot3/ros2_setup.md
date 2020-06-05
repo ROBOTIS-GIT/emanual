@@ -10,16 +10,16 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 27
+page_number: 30
 ---
 
 <div style="counter-reset: h1 15"></div>
 
-# [Setup](#setup)
+# [[ROS 2] Setup](#ros-2-setup)
 
 {% capture notice_01 %}
 **NOTE**:
-- The test is done on `Ubuntu 18.04` and `ROS 2 Dashing Diademata`.
+- The test is done on `Ubuntu 18.04` and `ROS Dashing Diademata`.
 - These instructions are supposed to be performed with a remote PC and SBC in TurtleBot.
 - You can ask any questions on [ROS Answers](https://answers.ros.org/questions/) if you are in touble to follow the instruction.
 {% endcapture %}
@@ -47,32 +47,30 @@ As TurtleBot3 operates on ROS, it requies to install `ros-dashing-desktop` debia
 **[Remote PC]**
 
 1. Open a terminal on **Remote PC**.
-2. Use the following commands.
+2. Install Colcon
 ```bash
-# Install Colcon
 $ sudo apt install python3-colcon-common-extensions
-# Install Cartographer dependencies
-$ sudo apt install -y \
-    google-mock \
-    libceres-dev \
-    liblua5.3-dev \
-    libboost-dev \
-    libboost-iostreams-dev \
-    libprotobuf-dev \
-    protobuf-compiler \
-    libcairo2-dev \
-    libpcl-dev \
-    python3-sphinx
-# Install Gazebo9
+```
+3. Install Gazebo9
+```bash
 $ curl -sSL http://get.gazebosim.org | sh
-$ sudo apt install ros-dashing-gazebo-*
-# Install Cartographer
+### Uninstall Gazebo11 if installed previously
+$ sudo apt remove gazebo11 libgazebo11-dev
+$ sudo apt install gazebo9 libgazebo9-dev
+$ sudo apt install ros-dashing-gazebo-ros-pkgs
+```
+4. Install Cartographer
+```bash
 $ sudo apt install ros-dashing-cartographer
 $ sudo apt install ros-dashing-cartographer-ros
-# Install Navigation2
+```
+5. Install Navigation2
+```bash
 $ sudo apt install ros-dashing-navigation2
 $ sudo apt install ros-dashing-nav2-bringup
-# Install vcstool
+```
+6. Install vcstool
+```bash
 $ sudo apt install python3-vcstool
 ```
 
@@ -116,16 +114,19 @@ Following documents will be helpful for you to fix the problem of any build erro
 
 **[TurtleBot3]**
 
-1. Go on [Ubuntu releases](http://cdimage.ubuntu.com/ubuntu/releases/bionic/release) .
-2. Download `Raspberry Pi 3 (64-bit ARM) preinstalled server image` on **Remote PC**
+1. Go to [Ubuntu old releases](http://old-releases.ubuntu.com/releases/18.04.3/).
+2. Download `ubuntu-18.04.3-preinstalled-server-arm64+raspi3.img.xz` on **Remote PC**
 3. Burn the Ubuntu image file to a microSD card.
 
-**TIP** : You can use `GNOME Disks` to burn `Ubuntu Server 18.04 image` to microSD.
+**TIP** : You can use `GNOME Disks` to burn `ubuntu-18.04.3-preinstalled-server-arm64+raspi3.img.xz` to microSD.
 {: .notice--success}
 
 ### Initialization Process for Raspberry Pi 3
 
-To communicate between **Remote PC** and **TurtleBot3**, you need to install `Ubuntu Server 18.04 image` file on Raspberry Pi 3.
+To communicate between **Remote PC** and **TurtleBot3**, you need to install `ubuntu-18.04.3-preinstalled-server-arm64+raspi3.img.xz` file on Raspberry Pi 3.
+
+**WARNING** : Ubuntu 18.04.4 version is known to freeze the Raspberry Pi 3B+.
+{: .notice--warning}
 
 **[TurtleBot3]**
 
@@ -150,8 +151,8 @@ $ sudo touch /etc/netplan/01-netcfg.yaml
 $ sudo nano /etc/netplan/01-netcfg.yaml
 ```
 
-3. After opening the file, configure a network setting. Refer to the network setting below.
-```yaml
+3. After opening the file, configure a network setting. Refer to the network setting below. Please be aware of the indentation in each line.
+```
 network:
   version: 2
   renderer: networkd
@@ -223,7 +224,7 @@ $ sudo mkswap /swapfile
 $ sudo swapon /swapfile
 ```
 
-6. Open `/etc/fstab` file with `nano` command, as swap areas are listed in `/etc/fastab`.
+6. Open `/etc/fstab` file with `nano` command, as swap areas are listed in this file.
 ```bash
 $ sudo nano /etc/fstab
 ```
@@ -241,7 +242,7 @@ Mem:           912M         97M        263M        4.4M        550M        795M
 Swap:          1.0G          0B        1.0G
 ```
 
-### Install ROS 2 Dashing Diademata
+### Install ROS Dashing Diademata
 
 As TurtleBot3 operates on ROS, it requies to install ROS 2 (Dashing Diademata) on **SBC of TurtleBot3**. Following link will guide you for installing ROS 2.
 

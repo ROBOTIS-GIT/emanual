@@ -102,7 +102,7 @@ page_number: 2
 3. If the robot is connected, click `Download` button to download the task code to the robot controller.  
   ![](/assets/images/sw/rplus_task3/task3_022.png)
 
-4. When download is completed, the controller will execute the task (some controllers may be turned off instead of executing the task).  
+4. Ater task download, disconnect the connected cable from PC, and then turn on the controller to run the loaded task. (some controllers may be turned off instead of executing the task).  
   ![](/assets/images/sw/rplus_task3/task3_023.png)
 
 ## [Print Output](#print-output)

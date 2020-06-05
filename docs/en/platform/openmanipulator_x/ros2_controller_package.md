@@ -10,12 +10,12 @@ sidebar:
   title: "OpenMANIPULATOR-X"
   nav: "openmanipulator_x"
 product_group: openmanipulator_x
-page_number: 11
+page_number: 13
 ---
 
-<div style="counter-reset: h1 10"></div>
+<div style="counter-reset: h1 12"></div>
 
-# [[ROS 2] Controller Package](#ros-controller-package)
+# [[ROS 2] Controller Package](#ros-2-controller-package)
 
 OpenMANIPULATOR-X controller provides basic manipulation of OpenMANIPULATOR-X. You can control DYNAMIXEL's of OpenMANIPULATOR-X and check states of OpenMANIPULATOR-X through [messages](/docs/en/platform/openmanipulator_x/ros2_controller_package/#message-list) of the controller.
 
@@ -83,7 +83,7 @@ Gripper Dynamixel ID : 15, Model Name :XM430-W350
 Publish a topic message to check the OpenMANIPULATOR-X setting.
 
 ``` bash
-$ ros2 topic pub /open_manipulator_x/option std_msgs/msg/String "data: print_open_manipulator_x_setting"
+$ ros2 topic pub /option std_msgs/msg/String "data: print_open_manipulator_x_setting"
 ```
 
 <**Manipulator Description**> will be printed on a terminal. 

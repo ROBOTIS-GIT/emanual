@@ -10,12 +10,12 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 28
+page_number: 31
 ---
 
 <div style="counter-reset: h1 16"></div>
 
-# [Bringup](#bringup)
+# [[ROS 2] Bringup](#ros-2-bringup)
 
 ## [Bringup TurtleBot3](#bringup-turtlebot3)
 
@@ -138,7 +138,7 @@ urdf_file_name : turtlebot3_burger.urdf
 ## [Load TurtleBot3 on Rviz2](#load-a-turtlebot3-on-rviz2)
 
 1. [Bring up TurtleBot3](#bringup-turtlebot3)
-2. Launch robot state publisher and Run RViz on **Remote PC**.
+2. Launch robot state publisher and run RViz on **Remote PC**.
   ```bash
   $ ros2 launch turtlebot3_bringup rviz2.launch.py
   ```

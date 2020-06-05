@@ -10,7 +10,7 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 41
+page_number: 44
 ---
 
 <div style="counter-reset: h1 29"></div>
@@ -87,4 +87,4 @@ If you need more information about it or you want to launch it in your remote PC
 [rds]: http://www.theconstructsim.com/rds-ros-development-studio/
 [the_construct]: http://www.theconstructsim.com/
 [learn_the_construct]: /docs/en/platform/turtlebot3/learn/#the-construct
-[autorace_rbiz_challenge_2017]: /docs/en/platform/turtlebot3/autonomous_driving/#autonomous-driving
+[autorace_rbiz_challenge_2017]: /docs/en/platform/turtlebot3/autorace_rviz_challenge

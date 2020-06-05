@@ -8,22 +8,21 @@
 | Bit 6(0x40) |                  -                  | Unused, always ‘0’                                                                                                                                                                                                                                                                                                                               |
 | Bit 5(0x20) |                  -                  | Unused, always ‘0’                                                                                                                                                                                                                                                                                                                               |
 | Bit 4(0x10) |                  -                  | Unused, always ‘0’                                                                                                                                                                                                                                                                                                                               |
-| Bit 3(0x08) |                  -                  | Unused, always ‘0’                                                                                                                                                                                         |{% if page.product_group=='dxl_x430' or page.product_group=='dxl_x540' or page.product_group=='dxl_xl430' or page.ref=='mx-106-2' %}
+| Bit 3(0x08) |                  -                  | Unused, always ‘0’                                                                                                                                                                                         |{% if page.product_group=='dxl_x430' or page.product_group=='dxl_x540' or page.product_group=='dxl_xw540'or page.product_group=='dxl_xl430' or page.product_group=='dxl_mx2' %}
 | Bit 2(0x04) |        Profile Configuration        | **[0]** Velocity-based Profile:  Create a Profile based on Velocity<br />**[1]** Time-based Profile: Create Profile based on time <br />※ Please refer to [Profile Velocity(112)](#profile-velocity112) |{% else %}                                                                                                                              
 | Bit 2(0x04) |                  -                  | Unused, always ‘0’                                                                                                                                                                                          |{% endif %}{% if page.product_group=='dxl_x540' or page.product_group=='dxl_ex' or page.ref=='mx-106-2' or page.ref=='mx-106' %}    
 | Bit 1(0x02) | Master/Slave Mode<br />(Dual Joint) | **[0]** Master Mode: Operate as a Master DYNAMIXEL.<br />**[1]** Slave Mode: Operate as Slave DYNAMIXEL                                                                                                          |{% else %}                                                                                                                     
 | Bit 1(0x02) |                  -                  | Unused, always ‘0’                                                                                                                                                                                           |{% endif %}                                                                                                                        
 | Bit 0(0x01) |         Normal/Reverse Mode         | **[0]** Normal Mode: CCW(Positive), CW(Negative)<br />**[1]** Reverse Mode: CCW(Negative), CW(Positive)                                                                                                  |
 
-
-{% if page.product_group=='dxl_mx2' or page.product_group=='dxl_x540' or page.product_group=='dxl_x430' or page.product_group=='dxl_xl430' %}
+{% if page.product_group=='dxl_mx2' or page.product_group=='dxl_x540' or page.product_group=='dxl_xw540' or page.product_group=='dxl_x430' or page.product_group=='dxl_xl430' %}
 **NOTE** : Time-based Profile is available from **firmware V42**.
 {: .notice}
 {% else %}{% endif %}
 
 {% capture notice_01 %}
 **NOTE** : If the value of Bit 0(Normal/Reverse Mode) of the Drive Mode(10) is set to `1`, rotational direction is inverted.  
-Thus, {% if page.product_group=='dxl_mx2' or page.product_group=='dxl_x540' %}**Position**, **Velocity**, **Current**, **PWM**{% else %}**Goal Position**, **Present Position**{% endif %} will have a inverted direction.  
+Thus, {% if page.product_group=='dxl_mx2' or page.product_group=='dxl_x540'  or page.product_group=='dxl_xw540' %}**Position**, **Velocity**, **Current**, **PWM**{% else %}**Goal Position**, **Present Position**{% endif %} will have a inverted direction.  
 This feature can be very useful when configuring symmetrical joint or wheel system.
 {% endcapture %}
 <div class="notice">{{ notice_01 | markdownify }}</div>
@@ -55,8 +54,8 @@ The twisted sync cable will actuate the Slave DYNAMIXEL to the opposite directio
 ![](/assets/images/dxl/ex/ex-106_dual.png)
 {% endif %}
 
-|     Sync Cable     | Description                                                                                                                                                |
-|:------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     Sync Cable     | Description                                                                                                                                               |
+|:------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Regular Sync Cable | Slave DYNAMIXEL is controlled by the `PWM Signal` from the Master DYNAMIXEL.<br>Master and Slave DYNAMIXEL rotate in the **same direction**.              |
 | Twisted Sync Cable | Slave DYNAMIXEL is controlled by the `Inverted PWM Signal` from the Master DYNAMIXEL.<br>Master and Slave DYNAMIXEL rotate in the **opposite direction**. |
 

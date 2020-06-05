@@ -15,14 +15,14 @@ page_number: 20
 
 <div style="counter-reset: h1 8"></div>
 
-# [SLAM](#slam)
+# [[ROS 1] SLAM](#ros-1-slam)
 
 **WARNING**: Be careful when running the robot on the table as the robot might fall.
 {: .notice--warning}
 
 {% capture notice_01 %}
 **NOTE**: 
-- This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame` and on `Windows 10` with `ROS Melodic Morena`
+- This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame` and on `Windows 10` with `ROS Melodic Morenia`
 - This instructions are supposed to be running on the remote PC. Please run the instructions below on your **Remote PC**.
 - The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. The shortcut key for running the terminal is `Ctrl`-`Alt`-`T`.
 - Make sure to run the [Bringup](/docs/en/platform/turtlebot3/bringup/#bringup) instruction before use of the instruction.
@@ -40,7 +40,7 @@ page_number: 20
 The **SLAM (Simultaneous Localization and Mapping)** is a technique to draw a map by estimating current location in an arbitrary space. The SLAM is a well-known feature of TurtleBot from its predecessors. The video here shows you how accurately TurtleBot3 can draw a map with its compact and affordable platform.
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/lkW4-dG2BCY" frameborder="0" allowfullscreen></iframe>
-The contents in e-Manual may differ from contents of a provided video in e-Manaul as e-Manual is updated on a regular basis.
+The contents in e-Manual can be updated without a previous notice. Therefore, some video may differ from the contents in e-Manual.
 {: .notice--warning} 
 
 * Date: 2016.11.29
@@ -52,7 +52,7 @@ The contents in e-Manual may differ from contents of a provided video in e-Manau
 * Distance: Total 351 meters
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/7mEKrT_cKWI" frameborder="0" allowfullscreen></iframe>
-The contents in e-Manual may differ from contents of a provided video in e-Manaul as e-Manual is updated on a regular basis.
+The contents in e-Manual can be updated without a previous notice. Therefore, some video may differ from the contents in e-Manual.
 {: .notice--warning} 
 
 * Date: 2017.04.20
@@ -80,14 +80,6 @@ $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
 **[Remote PC]** Open a new terminal and launch the SLAM file.
 
 **TIP**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `burger`, `waffle`, `waffle_pi`. If you want to permanently set the export settings, please refer to [Export TURTLEBOT3_MODEL][export_turtlebot3_model]{: .popup} page.
-
-{% capture slam_tip %}
-**TIP**: When running these commands on `Windows 10`,  replace `export TURTLEBOT3_MODEL=${TB3_MODEL}` with `set TURTLEBOT3_MODEL=${TB3_MODEL}` like this:
-``` bash
-$ set TURTLEBOT3_MODEL=burger
-```
-{% endcapture %}
-
 {: .notice--success}
 
 ``` bash
@@ -95,7 +87,17 @@ $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
 ```
 
-{% capture slam_tip %}
+{% capture slam_tip_01 %}
+**TIP**: When running these commands on `Windows 10`,  replace `export TURTLEBOT3_MODEL=${TB3_MODEL}` with `set TURTLEBOT3_MODEL=${TB3_MODEL}` like this:
+``` bash
+> set TURTLEBOT3_MODEL=burger
+> roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
+```
+{% endcapture %}
+<div class="notice--info">{{ slam_tip_01 | markdownify }}</div>
+{: .notice--success}
+
+{% capture slam_tip_02 %}
 **TIP**: When you run the above command, the visualization tool RViz is also executed. If you want to run RViz separately, use one of the following commands.
 
   - $ rviz -d \`rospack find turtlebot3_slam\`/rviz/turtlebot3_gmapping.rviz
@@ -105,8 +107,7 @@ $ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
   - $ rviz -d \`rospack find turtlebot3_slam\`/rviz/turtlebot3_frontier_exploration.rviz
 
 {% endcapture %}
-
-<div class="notice--info">{{ slam_tip | markdownify }}</div>
+<div class="notice--success">{{ slam_tip_02 | markdownify }}</div>
 
 {% capture notice_03 %}
 **NOTE**: Support for various SLAM methods
@@ -125,26 +126,36 @@ $ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
   - Gmapping has not been enabled on Windows
 - For `Cartographer`:
   - Ubuntu
-    - sudo apt-get install ros-kinetic-cartographer ros-kinetic-cartographer-ros ros-kinetic-cartographer-ros-msgs ros-kinetic-cartographer-rviz
+    ```bash
+    $ sudo apt-get install ros-kinetic-cartographer ros-kinetic-cartographer-ros ros-kinetic-cartographer-ros-msgs ros-kinetic-cartographer-rviz
+    ```
   - Windows
-    - choco upgrade ros-melodic-cartographer_ros -y
+    ```bash
+    > choco upgrade ros-melodic-cartographer_ros -y
+    ```
 - For `Hector Mapping`:
-  - sudo apt-get install ros-kinetic-hector-mapping
   - Hector Mapping has not been enabled on Windows
+  ```bash
+  $ sudo apt-get install ros-kinetic-hector-mapping
+  ```
 - For `Karto`:
-  - sudo apt-get install ros-kinetic-slam-karto
   - Coming soon on Windows
+  ```bash
+  $ sudo apt-get install ros-kinetic-slam-karto
+  ```
 - For `Frontier Exploration`:
   - Frontier Exploration uses gmapping, and the following packages should be installed.
   - Frontier Exploration has not been enabled on Windows
-  - sudo apt-get install ros-kinetic-frontier-exploration ros-kinetic-navigation-stage
+  ```bash
+  $ sudo apt-get install ros-kinetic-frontier-exploration ros-kinetic-navigation-stage
+  ```
 {% endcapture %}
 <div class="notice--info">{{ notice_04 | markdownify }}</div>
 
+{% capture cartographer_tip %}
 **TIP**: We tested on cartographer version 0.3.0. The Cartographer package developed by Google supports 0.3.0 version in ROS Melodic, but 0.2.0 version in ROS Kinetic. So if you need to work on ROS Kinetic, instead of downloading the binaries files, you should download and build the source code as follows. Please refer to [official wiki page](https://google-cartographer-ros.readthedocs.io/en/latest/#building-installation) for more detailed installation instructions.
-{: .notice--success}
 
-*Ubuntu*
+**on Ubuntu**
 ```sh
 $ sudo apt-get install ninja-build libceres-dev libprotobuf-dev protobuf-compiler libprotoc-dev
 $ cd ~/catkin_ws/src
@@ -162,12 +173,15 @@ $ source ~/catkin_ws/install_isolated/setup.bash
 $ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=cartographer
 ```
 
-*Windows*
+**Windows**
+```sh
+> c:\ws\turtlebot3\devel\setup.bat
+> set TURTLEBOT3_MODEL=waffle
+> roslaunch turtlebot3_gazebo turtlebot3_gazebo_cartographer_demo.launch
 ```
-c:\ws\turtlebot3\devel\setup.bat
-set TURTLEBOT3_MODEL=waffle
-roslaunch turtlebot3_gazebo turtlebot3_gazebo_cartographer_demo.launch
-```
+{% endcapture %}
+<div class="notice--success">{{ cartographer_tip | markdownify }}</div>
+
 
 ## [Run Teleoperation Node](#run-teleoperation-node)
 
@@ -252,17 +266,17 @@ _**angularUpdate**_
 
 **[Remote PC]** Now that you have all the work done, let's run the `map_saver` node to create a map file. The map is drawn based on the robot's odometry, tf information, and scan information of the sensor when the robot moves. These data can be seen in the RViz from the previous example video. The created map is saved in the directory in which `map_saver` is runnig. Unless you specify the file name, it is stored as `map.pgm` and `map.yaml` file which contains map information.
 
-*Ubuntu*
-``` bash
+The `-f` option refers to the folder and file name where the map file is saved. If `~/map` is used as an option, `map.pgm` and `map.yaml` will be saved in the map folder of user’s home folder `~/` ($HOME directory : `/home/<username>`). On Windows, the user directory is stored in an environment variable `%USERPROFILE%`
+
+### on Ubuntu
+```bash
 $ rosrun map_server map_saver -f ~/map
 ```
 
-*Windows*
-``` bash
+### on Windows
+```bash
 > rosrun map_server map_saver -f %USERPROFILE%\map
 ```
-
-The `-f` option refers to the folder and file name where the map file is saved. If `~/map` is used as an option, `map.pgm` and `map.yaml` will be saved in the map folder of user’s home folder `~/` ($HOME directory : `/home/<username>`). On Windows, the user directory is stored in an environment variable `%USERPROFILE%`
 
 ## [Map](#map)
 

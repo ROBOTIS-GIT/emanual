@@ -27,7 +27,7 @@ page_number: 16
 
 {% capture notice_01 %}
 **NOTE**: 
-- This instructions were tested on `Ubuntu 16.04` with `ROS Kinetic Kame` and `Windows 10` with `ROS Melodic`
+- This instructions were tested on `Ubuntu 16.04` with `ROS Kinetic Kame` and `Windows 10` with `ROS Melodic Morenia`
 - This instructions are supposed to be running on the remote PC. Please run the instructions below on your **Remote PC**.
 - Make sure to run the [Bringup](/docs/en/platform/turtlebot3/bringup/#bringup) instructions before use of the instruction
 {% endcapture %}

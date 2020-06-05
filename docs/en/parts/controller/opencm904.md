@@ -11,6 +11,10 @@ sidebar:
   nav: "opencm904"
 ---
 
+
+**NOTE**: [The OpenCM 9.04 e-Manual](/docs/en/parts/controller/opencm904_jp/) in Japanese (日本語) is available for the Japanese. 
+{: .notice}
+
 # [Introduction](#introduction)
 
 ![](/assets/images/parts/controller/opencm904/opencm904_product.png)
@@ -35,7 +39,7 @@ sidebar:
 
 - OpenCM9.04 is a microcontroller board based on 32bit ARM Cortex-M3. The OpenCM9.04’s schematics and source codes are open-source.
 - 3 types are available: Type A & Type B & Type C. The difference between Type A,Type B, Type C is the availability of the connectors. (Refer to the image and table above.)  
-  (OpenCM9.04 Accessory Set can be purchased to acquire all the necessary connector to upgrade Type A to Type B Type C.)  [OpenCM9.04 Accessory Set](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2394)
+  (OpenCM9.04 Accessory Set can be purchased to acquire all the necessary connector to upgrade Type A to Type B Type C.)  [OpenCM9.04 Accessory Set](http://en.robotis.com/shop_en/item.php?it_id=902-0084-030)
 
 **NOTE** : Refer to the ROBOTIS-MINI for controller recovery (type C-only) [ROBOTIS-MINI Controller Firmware Update]
 {: .notice}
@@ -60,7 +64,7 @@ sidebar:
 |          SPI           |                2                |
 |        I2C(TWI)        |                2                |
 |         Debug          |           JTAG & SWD            |
-| DYNAMIXEL TTL BUS 3pin |                4                |
+|   DYNAMIXEL TTL BUS    |          4 (Max 1Mbps)          |
 |       Dimensions       |          27mm x 66.5mm          |
 
 {% capture opencm904_caution_01 %}
@@ -525,7 +529,7 @@ Both types of 3-pin TTL pins are included in OpenCM Accessory Set.
 
 # [Development Environment](#development-environment)
 
-## [Softwares](#softwares)
+## [Supported Software](#supported-software)
 
 - [Arduino IDE]
 - [OpenCM IDE]
@@ -548,7 +552,7 @@ For developers who are using OpenCM IDE, it is recommended to use [Arduino IDE] 
 
 ### [Install on Linux](#install-on-linux)
 
-#### USB port settings
+#### [USB port settings (Linux)](#usb-port-settings-linux)
 Make the OpenCM9.04 USB port be able to upload the Arduino IDE program without root permission.
 ```
 wget https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCM9.04/master/99-opencm-cdc.rules
@@ -557,13 +561,13 @@ sudo udevadm control --reload-rules
 sudo udevadm trigger
 ```
 
-#### Compiler Settings
+#### [Compiler Settings (Linux)](#compiler-settings-linux)
 Since the OpenCM9.04 libraries is built for 32 bit platform, 64 bit PC needs the 32 bit compiler relevants for the ArduinoIDE.
 ```
 sudo apt-get install libncurses5-dev:i386
 ```
 
-#### Install the Arduino IDE
+#### [Install the Arduino IDE (Linux)](#install-the-arduino-ide-linux)
 
 Download the latest version of Arduino IDE from the official arduino homepage, and install it. Currently, the OpenCM9.04 will be on service in the version 1.6.4 or later.
 
@@ -582,16 +586,16 @@ export PATH=$PATH:$HOME/tools/arduino-1.8.3
 source ~/.bashrc
 ```
 
-#### Run the Arduino IDE
+#### [Run the Arduino IDE (Linux)](#run-the-arduino-ide-linux)
 
 To run the Arduino IDE on Linux platform, type into the terminal as follows.
 ```
 arduino
 ```
 
-#### Porting the OpenCM9.04 board to the Arduino IDE
+#### [Porting the OpenCM9.04 board to the Arduino IDE (Linux)](#porting-the-opencm904-board-to-the-arduino-ide-linux)
 
-##### Preferences
+##### [Preferences (Linux)](#preferences-linux)
 After Arduino IDE is run, click File → Preferences in the top menu of the IDE. When the Preferences window appears, copy and paste following link to the Additional Boards Manager URLs textbox. (This step may take about 20 min.)
 
 [https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCM9.04/master/arduino/opencm_release/package_opencm9.04_index.json](https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCM9.04/master/arduino/opencm_release/package_opencm9.04_index.json)
@@ -599,7 +603,7 @@ After Arduino IDE is run, click File → Preferences in the top menu of the IDE.
 ![](/assets/images/parts/controller/opencm904/opencm9.04_linux_1.png)
 
 
-##### Install the OpenCM9.04 package via Boards Manager
+##### [Install the OpenCM9.04 package via Boards Manager (Linux)](#install-the-opencm904-package-via-boards-manager-linux)
 Click Tools → Board → Boards Manager.
 
 ![](/assets/images/parts/controller/opencm904/opencm9.04_linux_2.png)
@@ -616,7 +620,7 @@ See if OpenCM9.04 Board is now on the list of Tools → Board. Click this to imp
 
 ![](/assets/images/parts/controller/opencm904/opencm9.04_linux_5.png)
 
-##### Port setting
+##### [Port setting (Linux)](#port-setting-linux)
 This step shows the port setting for the program uploads. The OpenCM9.04 should be connected to the PC and the OpenCM9.04 via the USB ports.
 
 Select Tools → Port → /dev/ttyACM0.
@@ -629,13 +633,13 @@ The value of /dev/ttyACM0 may be different depending on the environment connecte
 
 ### [Install on Mac](#install-on-mac)
 
-#### Install the Arduino IDE
+#### [Install the Arduino IDE (Mac)](#install-the-arduino-ide-mac)
 
 Download the latest version of Arduino IDE from the official arduino homepage, and install it. Currently, the OpenCM9.04 will be on service in the version 1.6.4 or later.
 
 [https://www.arduino.cc/en/Main/Software](https://www.arduino.cc/en/Main/Software)
 
-#### Run the Arduino IDE
+#### [Run the Arduino IDE (Mac)](#run-the-arduino-ide-mac)
 
 To run the Arduino IDE on Mac platform, click the Arduino IDE icon as follows.
 
@@ -643,16 +647,16 @@ To run the Arduino IDE on Mac platform, click the Arduino IDE icon as follows.
 
 ![](/assets/images/parts/controller/opencm904/arduino_mac_02.png)
 
-#### Porting the OpenCM9.04 board to the Arduino IDE
+#### [Porting the OpenCM9.04 board to the Arduino IDE (Mac)](#porting-the-opencm904-board-to-the-arduino-ide-mac)
 
-##### Preferences
+##### [Preferences (Mac)](#preferences-mac)
 After Arduino IDE is run, click File → Preferences in the top menu of the IDE. When the Preferences window appears, copy and paste following link to the Additional Boards Manager URLs textbox. (This step may take about 20 min.)
 
 [https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCM9.04/master/arduino/opencm_release/package_opencm9.04_index.json](https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCM9.04/master/arduino/opencm_release/package_opencm9.04_index.json)
 
 ![](/assets/images/parts/controller/opencm904/opencm9.04_mac_1.png)
 
-##### Install the OpenCM9.04 package via Boards Manager
+##### [Install the OpenCM9.04 package via Boards Manager (Mac)](#install-the-opencm904-package-via-boards-manager-mac)
 Click Tools → Board → Boards Manager.
 
 ![](/assets/images/parts/controller/opencm904/opencm9.04_mac_2.png)
@@ -667,7 +671,7 @@ After the installation, “INSTALLED” will be appeared.
 
 See if OpenCM9.04 Board is now on the list of Tools → Board. Click this to import the OpenCM9.04 Board source.
 
-##### Port setting
+##### [Port setting (Mac)](#port-setting-mac)
 This step shows the port setting for the program uploads. The OpenCM9.04 should be connected to the PC and the OpenCM9.04 via the USB ports.
 
 Select Tools → Port → /dev/ttyACM0.
@@ -677,14 +681,12 @@ The value of /dev/ttyACM0 may be different depending on the environment connecte
 
 ![](/assets/images/parts/controller/opencm904/opencm9.04_mac_6.png)
 
-### [Install on Windows](#install-on-windows)
+### [Install on Windows](#windows-driver-installation)
 
-#### Install Virtual COM Port Driver
-To use OpenCM9.04's USB port as a serial port in Windows, you need a USB CDC driver. You can install the USB driver as follows.
+#### [Install Virtual COM Port Driver](#install-virtual-com-port-driver)
+To use OpenCM9.04's USB port as a serial port in Windows, you need a USB CDC driver.
 
-- See [Install Windows Driver](#install-windows-driver)
-여기!
-#### Install the Arduino IDE
+- See [How to install ROBOTIS virtual COM port for Windows]{: .popup} 
 
 Download the latest version of Arduino IDE from the official arduino homepage, and install it. Currently, the OpenCM 9.04 will be on service in the version 1.6.4 or later.
 
@@ -692,16 +694,16 @@ Download the latest version of Arduino IDE from the official arduino homepage, a
 
 The Arduino IDE for Windows is available as an installation version and a compressed version, so you can install it using your preferred method.
 
-#### Porting the OpenCM 9.04 board to the Arduino IDE
+#### [Porting the OpenCM 9.04 board to the Arduino IDE (Windows)](#porting-the-opencm-904-board-to-the-arduino-ide-windows)
 
-##### Preferences
+##### [Preferences (Windows)](#preferences-windows)
 After Arduino IDE is run, click File → Preferences in the top menu of the IDE. When the Preferences window appears, copy and paste following link to the Additional Boards Manager URLs textbox. (This step may take about 20 min.)
 
 [https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCM9.04/master/arduino/opencm_release/package_opencm9.04_index.json](https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCM9.04/master/arduino/opencm_release/package_opencm9.04_index.json)
 
 ![](/assets/images/parts/controller/opencm904/opencm904_win_1.png)
 
-##### Install the OpenCM9.04 package via Boards Manager
+##### [Install the OpenCM9.04 package via Boards Manager (Windows)](#install-the-opencm904-package-via-boards-manager-windows)
 Click Tools → Board → Boards Manager.
 
 ![](/assets/images/parts/controller/opencm904/opencm904_win_2.png)
@@ -718,7 +720,7 @@ See if OpenCM9.04 Board is now on the list of Tools → Board. Click this to imp
 
 ![](/assets/images/parts/controller/opencm904/opencm904_win_5.png)
 
-##### Port setting
+##### [Port setting (Windows)](#port-setting-windows)
 This step shows the port setting for the program uploads. The OpenCM9.04 should be connected to the PC and the OpenCM9.04 via the USB ports.
 
 Select Tools > Port > COM1.
@@ -789,7 +791,7 @@ Dynamixel2Arduino class inherits below public functions from the Master class.
 
 It is a built-in LED test on the OpenCM9.04 board.
 
-### Test
+### [Test Example for LED](#test-example-for-led)
 There are 1 LED available in OpenCM9.04, The LED connected to base 14 of Arduino.  
 When the built-in LED pin is output as High / Low, the LED turns on / off.
 
@@ -825,7 +827,7 @@ void loop() {
 
 It is a built-in BUTTON test on the OpenCM9.04 board.
 
-### Test
+### [Test Example for Button](#test-example-for-button)
 There is one Push switche in OpenCM9.04. The pin number is defined as below, so you can see the status of the current button when you input the data of that pin.
 
 ```
@@ -857,12 +859,12 @@ void loop(){
 
 Buzzer can be driven using Arduino tone API. Buzzer-enabled pins are available on all I / O pins in OpenCM 9.04.
 
-### Connection
+### [Connection with Buzzer](#connection-with-buzzer)
 
 ![](/assets/images/parts/controller/opencm904/buzzer_bb.png)
 
 
-### Arduino code
+### [Arduino code for Buzzer](#arduino-code-for-buzzer)
 The following example shows a change to the Buzzer pin in the basic tone example provided by Arduino, which uses the Buzzer to play the melody.
 
 ```c++
@@ -904,7 +906,7 @@ void setup() {
 
 This is the PWM output test from the pin of the OpenCM9.04 board.
 
-### Test
+### [Test Example for PWM](#test-example-for-pwm)
 
 The analogueWrite is used to output the PWM duty ratio to the corresponding ports. The resolution is 8 bits, from 0 to 255, and the frequency is 10 KHz.  
 OpenCM 9.04 has 13 PWM pins in total. This is an example of PWM output on the six pins.
@@ -937,7 +939,7 @@ void loop() {
 
 It is the EEPROM library test of OpenCM9.04 board.
 
-### Test
+### [Test](#test)
 
 OpenCM9.04 does not have EEPROM memory, so it emulates a part of flash memory built in STM32F103 into EEPROM. The method of emulation was provided by ST as an example.  
 The area used as EEPROM is 0x0801F800 ~ 0x08020000 (2KBytes) as shown below. Two sectors are used.
@@ -1029,11 +1031,11 @@ void loop() {
 {GPIOB, GPIO_PIN_9,   NULL,     NO_ADC        , &hTIM4 ,   TIM_CHANNEL_4, 14      },  // 14 LED
 ```
 
-### Connection
+### [Connection with Servo](#connection-with-servo)
 
 ![](/assets/images/parts/controller/opencm904/servo_bb.png)
 
-### Arduino code
+### [Arduino code for servo](#arduino-code-for-servo)
 This is an example of a Servo library and uses the A2 pin of OpenCM9.04. The range of the input value is 0 to 180 degrees.
 
 ```c++
@@ -1057,13 +1059,13 @@ void loop() {
 
 The Arduino IDE includes an SD card control library using the SPI library. OpenCM 9.04 supports the default SD library.
 
-### Connection
+### [Connection with SD Card](#connection-with-sd-card)
 
 - SD Card Connection(SPI port)
 
   ![](/assets/images/parts/controller/opencm904/sdcard_bb.png)
 
-### Arduino code
+### [Arduino code for SD Card](#arduino-code-for-sd-card)
 The cardInfo example from the SD library and displays the file list after initializing the SD card. OpenCM9.04 SPI1 is used, and CS pin is used as No. 4.
 
 ```c++
@@ -1160,7 +1162,7 @@ void loop(void) {
 
 The MS5540S is a sensor that can measure water pressure and can calculate the depth in water by measuring the water pressure. SPI communication is used.
 
-### Connection
+### [Connection with MS5540S](#connection-with-ms5540s)
 
 | MS5540S | OpenCM9.04 | etc       |
 |:--------|:-----------|:----------|
@@ -1171,7 +1173,7 @@ The MS5540S is a sensor that can measure water pressure and can calculate the de
 | DOUT    | A6         | MISO      |
 | SCLK    | A1         | SCK       |
 
-### Arduino code
+### [Arduino code for MS5540S](#arduino-code-for-ms5540s)
 Use SPI1 of OpenCM9.04 and input the clock of 32.768Khz to MCLK of MS5540S sensor. The analogWriteFreq function, which can adjust the frequency of the PWM pin of OpenCM 9.04, generates a clock of 32.768 KHz.
 
 ```c++
@@ -1479,7 +1481,7 @@ void ms5540s_loop()
 
 The MPU6050 is a sensor consisting of three axes of acceleration / three axes of gyro. If a dedicated processor called DMP is used in the MPU6050, the MPU6050 performs sensor fusion processing for obtaining Roll / Pitch / Yaw.
 
-### Connection
+### [Connection with MPU6050 DMP](#connection-with-mpu6050-dmp)
 
 | MPU6050 | OpenCM9.04 | etc  |
 |:--------|:-----------|:-----|
@@ -1489,7 +1491,7 @@ The MPU6050 is a sensor consisting of three axes of acceleration / three axes of
 | SDA     | D25        | I2C2 |
 | INT     | A2         |      |
 
-### Arduino code
+### [Arduino code for MPU6050 DMP](#arduino-code-for-mpu6050-dmp)
 Enable the DMP function of MPU6050 and output Roll / Pitch / Yaw value in serial every 50ms. The full source code is downloaded from the link below.
 
 - Source code download link
@@ -1658,7 +1660,7 @@ It is a 0.96 inch OLED monochrome LCD. It has 128x64 resolution and is controlle
 
 ![](/assets/images/parts/controller/opencm904/AD304-2T.jpg)
 
-### Connection
+### [Connection with LCD](#connection-with-lcd)
 
 | OLED | OpenCM9.04 | etc  |
 |:-----|:-----------|:-----|
@@ -1668,7 +1670,7 @@ It is a 0.96 inch OLED monochrome LCD. It has 128x64 resolution and is controlle
 | SDA  | D25        | I2C2 |
 
 
-### Arduino code
+### [Arduino code for LCD](#arduino-code-for-lcd)
 Enable the DMP function of MPU6050 and output Roll / Pitch / Yaw value in serial every 50ms. The full source code is downloaded from the link below.
 
 - `Download` Library. Copy the following two libraries into the Document > Arduino > libraries folder and unzip them.
@@ -2052,7 +2054,7 @@ void testscrolltext(void) {
 }
 ```
 
-### Video
+### [Video](#video)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0E4cu4GE17k" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
@@ -2092,6 +2094,8 @@ Please refer to [R+Manager 2.0 Firmware Recovery](/docs/en/software/rplus2/manag
 
 ![](/assets/images/parts/controller/opencm904/opencm904_28.png)
 
+{% include en/dxl/download_center_notice.md %}
+
 [How to install ROBOTIS virtual COM port for Windows]: /docs/en/popup/usb_driver_install/
 [MOLEX 53253-0370]: https://www.molex.com/molex/products/datasheet.jsp?part=active/0532530370_PCB_HEADERS.xml
 [MOLEX 22-03-5035]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0022035035_PCB_HEADERS.xml
@@ -2101,8 +2105,8 @@ Please refer to [R+Manager 2.0 Firmware Recovery](/docs/en/software/rplus2/manag
 [Number of pressed Start button]: /docs/en/software/rplus1/task/programming_02/#button-count
 [Start button]: /docs/en/software/rplus1/task/programming_02/#button-count
 [LN-101]: /docs/en/parts/interface/ln-101/
-[ZIG-100]: /docs/en/parts/communication/zig-110/
-[BT-110]: /docs/en/parts/communication/bt-110/
+[ZIG-110A]: /docs/en/parts/communication/zig-110/
+[BT-110A]: /docs/en/parts/communication/bt-110/
 [BT-210]: /docs/en/parts/communication/bt-210/
 [BT-410]: /docs/en/parts/communication/bt-410/
 [Automatic Turn-off]: /docs/en/software/rplus1/task/programming_02/#powersave-timer

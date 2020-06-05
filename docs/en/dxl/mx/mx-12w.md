@@ -24,12 +24,12 @@ product_group: dxl_mx
 | Position Sensor        | Contactless absolute encoder (12Bit, 360 [°])<br />Maker : ams(www.ams.com), Part No : AS5045 |
 | Motor                  | Cored                                                                                         |
 | Baud Rate              | 8000 bps ~ 4.5 Mbps                                                                           |
-| Resolution             | 4096 \[pulse/rev]                                                                                    |
-| Running Degree         | 0&deg; ~ 360&deg;<br />Endless Turn                                                           |
+| Resolution             | 4096 \[pulse/rev]                                                                             |
+| Running Degree         | 0&deg; ~ 360&deg;<br />Endless Turn<br />Multi-turn                                           |
 | Weight                 | 54.6g                                                                                         |
-| Dimensions (W x H x D) | 32 x 50 x 40 [mm]                                                                            |
+| Dimensions (W x H x D) | 32 x 50 x 40 [mm]                                                                             |
 | Gear Ratio             | 32 : 1                                                                                        |
-| No Load Speed          | 470 [rev/min] (at 12 [V])                                                                               |
+| No Load Speed          | 470 [rev/min] (at 12 [V])                                                                     |
 | Operating Temperature  | -5&deg;C ~ +70&deg;C                                                                          |
 | Input Voltage          | 10 ~ 14.8V (**Recommended : 12V**)                                                            |
 | Standby Current        | 60mA                                                                                          |
@@ -39,6 +39,7 @@ product_group: dxl_mx
 | ID                     | 0 ~ 253                                                                                       |
 | Feedback               | Position, Temperature, Load, Input Voltage, etc                                               |
 | Material               | Engineering Plastic                                                                           |
+
 
 {% include en/dxl/warning.md %}
 
@@ -77,7 +78,7 @@ product_group: dxl_mx
 |   28    |       1        | [P Gain](#p-gain)                           | Proportional Gain             |   RW   |         8          |
 |   30    |       2        | [Goal Position](#goal-position)             | Desired Position              |   RW   |         -          |
 |   32    |       2        | [Moving Speed](#moving-speed)               | Moving Speed(Moving Velocity) |   RW   |         -          |
-|   34    |       2        | [Torque Limit](#torque-limit)               | Torque Limit(Goal Torque)     |   RW   |   ADD 14&amp;15    |
+|   34    |       2        | [Torque Limit](#torque-limit)               | Torque Limit                  |   RW   |     Max Torque     |
 |   36    |       2        | [Present Position](#present-position)       | Present Position              |   R    |         -          |
 |   38    |       2        | [Present Speed](#present-speed)             | Present Speed                 |   R    |         -          |
 |   40    |       2        | [Present Load](#present-load)               | Present Load                  |   R    |         -          |

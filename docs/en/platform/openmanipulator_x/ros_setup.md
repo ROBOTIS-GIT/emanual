@@ -54,9 +54,6 @@ If you prefer a manual installation, please follow the link below.
 ## [Install ROS Packages](#install-ros-packages)
 Install dependent packages for OpenMANIPULATOR-X. Run the following commands in a terminal window.
 
-**NOTE**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`+`Alt`+`t`.
-{: .notice--info}
-
 ``` bash
 $ sudo apt-get install ros-kinetic-ros-controllers ros-kinetic-gazebo* ros-kinetic-moveit* ros-kinetic-industrial-core
 ```
@@ -105,8 +102,8 @@ $ rosrun open_manipulator_controller create_udev_rules
 {: .notice--success}
 
 ### [OpenCR](#opencr)
-This section explains how to set up OpenCR as a communication board between **ROS Packages** of PC and DYNAMIXEL's of OpenMANIPULATOR-X.  
-If you want to operate OpenMANIPULATOR-X on embedded system (OpenCR) without ROS, please refer [OpenCR Setup](/docs/en/platform/openmanipulator_x/opencr-setup/#opencr-setup).
+This section describes how to set up OpenCR as a communication board between **ROS Packages** of PC and DYNAMIXEL's of OpenMANIPULATOR-X.  
+If you want to operate OpenMANIPULATOR-X on embedded system (OpenCR) without ROS, see [OpenCR Setup](/docs/en/platform/openmanipulator_x/opencr_setup/#opencr-setup).
 
 #### Connection
 
