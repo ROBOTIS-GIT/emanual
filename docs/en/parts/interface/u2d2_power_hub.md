@@ -68,7 +68,7 @@ Combined with U2D2, it can supply various kinds of external power supply to supp
     **WARNING** : Check the Recommended Voltage for DYNAMIXEL before supplying the power.
     {: .notice--warning}
 
-    ![](/assets/images/parts/interface/u2d2_power_hub/u2d2_phb_01.jpg)![](/assets/images/parts/interface/u2d2_power_hub/u2d2_phb_02.jpg)
+    ![](/assets/images/parts/interface/u2d2_power_hub/u2d2_phb_01.jpg)
 
 7. Turn the power switch on `U2D2 Power Hub Board` to supply power to DYNAMIXEL
 
