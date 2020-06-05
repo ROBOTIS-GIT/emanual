@@ -4,7 +4,10 @@ layout: popup
 
 # [Export TURTLEBOT3_MODEL](#export-turtlebot3-model)
 
-TurtleBot3 has three models, `burger`,` waffle`, and `waffle_pi`, so you have to set which model to use before using. To do this, we specify the model to be used with the `export` command.
+TurtleBot3 has three models, `burger`,` waffle`, and `waffle_pi`, so you have to set which model to use before using. 
+
+## Ubuntu
+To do this on Ubuntu, we specify the model to be used with the `export` command.
 
 ```bash
 export TURTLEBOT3_MODEL=burger
@@ -28,3 +31,14 @@ $ gedit ~/.bashrc
 ``` bash
 $ source ~/.bashrc
 ```
+
+## Windows
+While TurtleBot3 has three models, only the `burger` and `waffle` are supported with a Windows 10 compatible single board computer. 
+
+On Windows, use the command `setx` to set the property globally, then restart the command window for the setting to take effect.
+```bash
+setx TURTLEBOT3_MODEL burger
+setx TURTLEBOT3_MODEL waffle
+```
+
+

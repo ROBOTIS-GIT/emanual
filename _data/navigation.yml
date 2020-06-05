@@ -16384,6 +16384,12 @@ turtlebot3:
         url: /platform/turtlebot3/pc_setup/#install-dependent-ros-1-packages
       - title: "Network Configuration"
         url: /platform/turtlebot3/pc_setup/#network-configuration
+      - title: "[Windows] Setup Remote PC"
+        url: /platform/turtlebot3/pc_setup/#windows-setup-remote-pc
+      - title: "[Windows] Setup TurtleBot3 WS"
+        url: /platform/turtlebot3/pc_setup/#windows-setup-turtlebot3-ws
+      - title: "[Windows] Network Configuration"
+        url: /platform/turtlebot3/pc_setup/#windows-network-configuration
     - title: "SBC Setup"
       url: /platform/turtlebot3/sbc_setup/#sbc-setup
       children:
@@ -16391,6 +16397,8 @@ turtlebot3:
         url: /platform/turtlebot3/raspberry_pi_3_setup/#raspberry-pi-3-setup
       - title: "Intel Joule 570x"
         url: /platform/turtlebot3/joule_setup/#joule-setup
+      - title: "[Windows] Windows 10 SBC"
+        url: /platform/turtlebot3/joule_setup/#windows-windows-10-sbc
     - title: "OpenCR Setup"
       url: /platform/turtlebot3/opencr_setup/#opencr-setup
       children:
@@ -16425,6 +16433,11 @@ turtlebot3:
       url: /platform/turtlebot3/bringup/#bringup-a-turtlebot3
     - title: "Load a TurtleBot3 on Rviz"
       url: /platform/turtlebot3/bringup/#load-a-turtlebot3-on-rviz
+      children:
+      - title: "on Ubuntu"
+        url: /platform/turtlebot3/bringup/#on-ubuntu
+      - title: "on Windows"
+        url: /platform/turtlebot3/bringup/#on-windows
   - title: "[ROS 1] Basic Operation"
     url: /platform/turtlebot3/basic_operation/#ros-1-basic-operation
     children:
@@ -16451,6 +16464,8 @@ turtlebot3:
         url: /platform/turtlebot3/teleoperation/#leap-motion
       - title: "Myo"
         url: /platform/turtlebot3/teleoperation/#myo
+      - title: "[Windows] Joystick Instructions"
+        url: /platform/turtlebot3/teleoperation/#windows-joystick-instructions
     - title: "Basic Examples"
       url: /platform/turtlebot3/basic_examples/#basic-examples
       children:

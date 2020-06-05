@@ -31,11 +31,13 @@ First of all, collect information from the [Overview][overview], [Notices][notic
 When you have enough understanding about TurtleBot3 from above step, here is guide for software and hardware setups. Be aware that it is a time-saver to set up the SBC and your PC first, rather than assembling the robot. It is recommended to proceed in the following order.
 
 1. [PC Setup](/docs/en/platform/turtlebot3/pc_setup/)
-  - Install some applications (ROS 1, particular Linux version, dependent packages) on **Remote PC** that is the one you mainly use to comunicate with TurtleBot3.
+  - Install applications (ROS 1, ROS 2, particular Linux or Windows version, dependent packages) on **Remote PC** that is the one you mainly use to comunicate with TurtleBot3.
 2. [SBC Setup](/docs/en/platform/turtlebot3/sbc_setup/#sbc-setup)
-  - Install some applications (ROS 1, particular Linux version, dependent packages) on **Single Board Computer** (SBC), which is used to communicate with **Remote PC**.
+  - Install applications (ROS 1, ROS 2, particular Linux or Windows version, dependent packages) on **Single Board Computer** (SBC), which is used to communicate with **Remote PC**.
   
-    **NOTE**: If you want to use different SBC and sensors with TurtleBot3, see [Compatible Devices][compatible_devices] page. 
+    **NOTE**  
+    If you want to use other SBC and sensors with TurtleBot3, see [Compatible Devices][compatible_devices] page.  
+    In order to operate TurtleBot3 on Windows, Windows supported SBC is required. Please see more details [here](https://ms-iot.github.io/ROSOnWindows/Turtlebot/Turtlebot3.html).
     {: .notice}
   
 3. [OpenCR Setup](/docs/en/platform/turtlebot3/opencr_setup/#opencr-setup)
