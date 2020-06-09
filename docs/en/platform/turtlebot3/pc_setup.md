@@ -158,7 +158,7 @@ To communicate from a Windows 10 system to a remote single board computer (SBC) 
 
 ``` bash
 > set ROS_MASTER_URI=http://<IP address of the SBC>:11311
-> set ROS_HOSTHANE=<name of the windows computer>
+> set ROS_HOSTNAME=<name of the windows computer>
 ```
 
 
