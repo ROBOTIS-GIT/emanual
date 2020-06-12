@@ -43,26 +43,28 @@ The ENGINEER KIT2 shares R+Task 3.0 and ENGIEER app with the ENGINEER KIT 1. If 
 -->
 
 ## [Download Examples](#download-examples)
-Download Kit2 Examples (.py and .mth) into the CM-550 controller. 
-- CM-550 controller is initially programmed with Kit2 example (`MAX-E2`, `Commando`, `Scorpi`, `AutoBot`,`Strider`).
-- Before downloading the examples, [update the CM-550 firmware](/docs/en/software/rplus2/manager/#firmware-update) via R+ Manager 2.0.
-- In order to download examples into the controller using PC, see [Download from PC](#download-from-pc).
-- In order to download examples into the controller using a smart device, see [Download from Smart Device](#download-from-smart-device).
+**NOTE**: Before downloading the example files for ENGINEER KIT 2, the firmware of the CM-550 controller must be updated. [Instructions to Update CM-550 firmware using R+ Manager 2.0 software](/docs/en/software/rplus2/manager/#firmware-update)
+{: .notice}
+
+To control ENGINEER KIT2 with the R+ ENGINEER App, the CM-550 controller needs to be programmed with the Python (.py) and Motion (.mtn3) example files that match the assembled robot figure.
+- The CM-550 controller is initially programmed with example files for the ENGINEER KIT1 (`MAX-E1`, `Dr. R`, `SPI`).
+- To download examples file to the controller using a PC, see the [Download from PC](#download-from-pc) section below.
+- To download example files to the controller using a smart device, see the [Download from Smart Device](#download-from-smart-device) section below.
 
 | Examples                       | Python (.py)                                                                   | Motion (.mtn)                                                                   |
 |:-------------------------------|:-------------------------------------------------------------------------------|:--------------------------------------------------------------------------------|
 | MAX-E2                         | [01_ENG2_Max_E2_PY.py](https://www.robotis.com/service/download.php?no=1915)   | [01_ENG2_Max_E2_MO.mtn3](https://www.robotis.com/service/download.php?no=1916)  |
 | Commando                       | [02_ENG2_Commando_PY.py](https://www.robotis.com/service/download.php?no=1917) | Only Python File is used                                                        |
 | Scorpi                         | [03_ENG2_Scorpi_PY.py](https://www.robotis.com/service/download.php?no=1919)   | [03_ENG2_Scorpi_MO.mtn3](https://www.robotis.com/service/download.php?no=1918)  |
-| AutoBot  (Additional Eaxmples) | [04_ENG2_Autobot_PY.py](https://www.robotis.com/service/download.php?no=1920)  | [04_ENG2_Autobot_MO.mtn3](https://www.robotis.com/service/download.php?no=1921) |
-| Strider  (Additional Eaxmples) | [05_ENG2_Strider_PY.py](https://www.robotis.com/service/download.php?no=1922)  | Only Python File is used                                                        |
+| AutoBot  (Additional Examples) | [04_ENG2_Autobot_PY.py](https://www.robotis.com/service/download.php?no=1920)  | [04_ENG2_Autobot_MO.mtn3](https://www.robotis.com/service/download.php?no=1921) |
+| Strider  (Additional Examples) | [05_ENG2_Strider_PY.py](https://www.robotis.com/service/download.php?no=1922)  | Only Python File is used                                                        |
 
 ### [Download from PC](#download-from-pc)
 
 1. [How to Connect CM-550 Controller to PC]{: .popup}
-2. [How to Download Task Example via PC]{: .popup}
+2. [How to Download Python Example Source Code]{: .popup}
 3. [How to Download Motion Example via PC]{: .popup}
-4. [How to Download Python Example Source Code]{: .popup}
+4. [How to Download Task Example via PC]{: .popup}
 
 ### [Download from Smart Device](#download-from-smart-device)
 
