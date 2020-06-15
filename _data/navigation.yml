@@ -7528,10 +7528,10 @@ xw540-t260:
     url: /dxl/x/xw540-t260/#how-to-assemble
     urlkr: /dxl/x/xw540-t260/#조립-예시
     children:
-      - title: "Option Frame Assembly"
-        titlekr: "옵션프레임 조립"
-        url: /dxl/x/xw540-t260/#option-frame-assembly
-        urlkr: /dxl/x/xw540-t260/#옵션프레임-조립
+      - title: "Idler Horn Assembly"
+        titlekr: "아이들러 혼 조립"
+        url: /dxl/x/xw540-t260/#idler-horn-assembly
+        urlkr: /dxl/x/xw540-t260/#아이들러-혼-조립
   - title: "Maintenance"
     titlekr: "유지보수"
     url: /dxl/x/xw540-t260/#maintenance
