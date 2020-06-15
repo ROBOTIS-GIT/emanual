@@ -99,6 +99,13 @@ MX series can use Protocol 2.0 by using a particular firmware version.
 |                                                                ![](/assets/images/dxl/x/x_series_product.png)                                                                |                                                              ![](/assets/images/dxl/x/x540-series_product.png)                                                               |
 | [XH430-W210](/docs/en/dxl/x/xh430-w210/)<br>[XH430-W350](/docs/en/dxl/x/xh430-w350/)<br>[XH430-V210](/docs/en/dxl/x/xh430-v210/)<br>[XH430-V350](/docs/en/dxl/x/xh430-v350/) | [XH540-W150](/docs/en/dxl/x/xh540-w150/)<br>[XH540-W270](/docs/en/dxl/x/xh540-w270/)<br>[XH540-V150](/docs/en/dxl/x/xh540-v150/)<br>[XH540-V270](/docs/en/dxl/x/xh540-v270/) |
 
+## [XW Series](#xw-series)
+
+|                                        XW540                                         |
+|:------------------------------------------------------------------------------------:|
+|                ![](/assets/images/dxl/x/xw/xw540-series_product.png)                 |
+| [XW540-T140](/docs/en/dxl/x/xw540-t140/)<br>[XW540-T260](/docs/en/dxl/x/xw540-t260/) |
+
 # [DYNAMIXEL PRO](#DYNAMIXEL-pro)
 
 ## [L Series](#l-series)

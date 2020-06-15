@@ -8,6 +8,17 @@
 |   PCB 헤더   | ![](/assets/images/dxl/JST_B4B-EH-A.png)<br />[JST B4B-EH-A] |
 | Crimp 터미널 |                     [JST SEH-001T-P0.6]                      |
 |  Wire Gauge  |                            21 AWG                            |
+
+> JST Connector
+
+|              항목              |                                         제품 이미지                                         |                           핀 번호                            |
+|:------------------------------:|:-------------------------------------------------------------------------------------------:|:------------------------------------------------------------:|
+|    Cable Connector (Female)    |    ![](/assets/images/dxl/x/xw/xw_cable_connector_female_sa610_s4b.png) <br /> [SA610/S4B]    | ![](/assets/images/dxl/x/xw/xw540_cableconnector_female.png) |
+| In-Line Cable Connector (Male) | ![](/assets/images/dxl/x/xw/xw_in_line_cable_connector_male_sa611_p4b.png) <br /> [SA611/P4B] |  ![](/assets/images/dxl/x/xw/xw540_cableconnector_male.png)  |
+|     Rear Nut Mount (Male)      |     ![](/assets/images/dxl/x/xw/xw_rear_nut_mount_male_sa612_p4b.png) <br /> [SA612/P4B]      |  ![](/assets/images/dxl/x/xw/xw540_cableconnector_male.png)  |
+
+> 방수 방진 케이블
+
 {% else %}
 |     항목     |                             TTL                              |                            RS-485                            |                              외부포트                               |                             Dual Joint                              |
 |:------------:|:------------------------------------------------------------:|:------------------------------------------------------------:|:-------------------------------------------------------------------:|:-------------------------------------------------------------------:|
@@ -21,6 +32,9 @@
 
 {% include kr/dxl/pinout_warning.md %}
 
+[SA610/S4B]: https://weipu.ru/goods/sa610-s4b/
+[SA612/P4B]: https://weipu.ru/goods/sa612-p4b/
+[SA611/P4B]: https://weipu.ru/goods/sa611-p4b/
 [JST EHR-03]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
 [JST EHR-04]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
 [JST B3B-EH-A]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf

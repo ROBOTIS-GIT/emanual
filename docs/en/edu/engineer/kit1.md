@@ -80,30 +80,6 @@ sidebar:
 
 The usage is identical to other DYNAMIXEL's, but be aware that Firmware Recovery will reset both axis to factory settings.
 
-| Item                   | Specifications                                            |
-|:-----------------------|:----------------------------------------------------------|
-| MCU                    | {{ site.data.dxl_x_info.2xl430-w250.mcu }}                |
-| Position Sensor        | {{ site.data.dxl_x_info.2xl430-w250.encoder }}            |
-| Motor                  | {{ site.data.dxl_x_info.2xl430-w250.motor }}              |
-| Baud Rate              | {{ site.data.dxl_x_info.2xl430-w250.baudrate }}           |
-| Control Algorithm      | {{ site.data.dxl_x_info.2xl430-w250.control }}            |
-| Resolution             | {{ site.data.dxl_x_info.2xl430-w250.resolution }}         |
-| Operating Modes        | {{ site.data.dxl_x_info.2xl430-w250.mode_en }}            |
-| Weight                 | {{ site.data.dxl_x_info.2xl430-w250.weight }}             |
-| Dimensions (W x H x D) | {{ site.data.dxl_x_info.2xl430-w250.dimensions }}         |
-| Gear Ratio             | {{ site.data.dxl_x_info.2xl430-w250.gearratio }}          |
-| Stall Torque           | {{ site.data.dxl_x_info.2xl430-w250.stalltorque }}        |
-| No Load Speed          | {{ site.data.dxl_x_info.2xl430-w250.noloadspeed }}        |
-| Operating Temperature  | {{ site.data.dxl_x_info.2xl430-w250.temperature }}        |
-| Input Voltage          | {{ site.data.dxl_x_info.2xl430-w250.voltage_en }}         |
-| Command Signal         | {{ site.data.dxl_x_info.2xl430-w250.command }}            |
-| Protocol Type          | {{ site.data.dxl_x_info.2xl430-w250.protocoltype }}       |
-| Physical Connection    | {{ site.data.dxl_x_info.2xl430-w250.physicalconnection }} |
-| ID                     | {{ site.data.dxl_x_info.2xl430-w250.id }}                 |
-| Feedback               | {{ site.data.dxl_x_info.2xl430-w250.feedback }}           |
-| Part Material          | {{ site.data.dxl_x_info.2xl430-w250.material }}           |
-| Standby Current        | {{ site.data.dxl_x_info.2xl430-w250.standbycurrent }}     |
-
 **[2XL430-W250 eManual]{: .blank}**
 {: .notice}
 

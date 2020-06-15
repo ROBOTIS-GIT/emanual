@@ -15,10 +15,10 @@ To control the DYNAMIXEL actuators, the main controller needs to convert its UAR
 {% if page.product_group=='dxl_xw540' %}  
 
 ![](/assets/images/dxl/x/xw/xw_series_485_pin.png)  
-> XW540-Series Connector.
+> XW540-Series Connector
 
 ![](/assets/images/dxl/x/xw/xw_series_485_pin_connector.png)
-> Dust and Water Proof Data Cable.
+> Dust and Water Proof Data Cable
 
 {% else %}
 
