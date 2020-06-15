@@ -17,7 +17,7 @@
 > XW540-시리즈 커넥터  
 
 ![](/assets/images/dxl/x/xw/xw_series_485_pin_connector.png)
-> 방진/방수 데이터 케이블
+> 방수 방진 데이터 케이블
 
 {% else %}
 
