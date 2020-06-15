@@ -61,6 +61,12 @@ main:
       - title: "XH540-V270"
         titlekr: "XH540-V270"
         url: /dxl/x/xh540-v270/
+      - title: "XW540-T140"
+        titlekr: "XW540-T140"
+        url: /dxl/x/xw540-t140/
+      - title: "XW540-T260"
+        titlekr: "XW540-T260"
+        url: /dxl/x/xw540-t260/
     - title: "P Series (PRO+)"
       titlekr: "P 시리즈 (PRO+)"
       url: /dxl/p/
@@ -715,7 +721,11 @@ all-dynamixel:
       - title: "XH Series"
         titlekr: "XH 시리즈"
         url: /dxl/#xh-series
-        urlkr: /dxl/#xh-시리즈                       
+        urlkr: /dxl/#xh-시리즈
+      - title: "XW Series"
+        titlekr: "XW 시리즈"
+        url: /dxl/#xw-series
+        urlkr: /dxl/#xw-시리즈                                              
   - title: "DYNAMIXEL PRO"
     titlekr: "다이나믹셀 PRO"
     url: /dxl/#dynamixel-pro
@@ -3988,6 +3998,10 @@ dxl_x_main:
     url: /dxl/x/#dynamixel-x
     urlkr: /dxl/x/#다이나믹셀-x
     children:
+      - title: "XW Series"
+        titlekr: "XW-시리즈"
+        url: /dxl/x/#xw-series
+        urlkr: /dxl/x/#xw-시리즈
       - title: "XH Series"
         titlekr: "XH-시리즈"
         url: /dxl/x/#xh-series
@@ -7281,10 +7295,10 @@ xw540-t140:
     url: /dxl/x/xw540-t140/#how-to-assemble
     urlkr: /dxl/x/xw540-t140/#조립-예시
     children:
-      - title: "Option Frame Assembly"
-        titlekr: "옵션프레임 조립"
-        url: /dxl/x/xw540-t140/#option-frame-assembly
-        urlkr: /dxl/x/xw540-t140/#옵션프레임-조립      
+      - title: "Idler Horn Assembly"
+        titlekr: "아이들러 혼 조립"
+        url: /dxl/x/xw540-t140/#idler-horn-assembly
+        urlkr: /dxl/x/xw540-t140/#아이들러-혼-조립
   - title: "Maintenance"
     titlekr: "유지보수"
     url: /dxl/x/xw540-t140/#maintenance
@@ -23244,6 +23258,11 @@ faq_steam:
   - title: "BIOLOID Beginner/Comprehensive"
     url: /faq/faq_steam/#bioloid-beginnercomprehensive
 
+dxl_software_compatibility:
+  - title: "R+"
+    titlekr: "로보플러스"
+    url: /docs/en/faq/dxl_software_compatibility/
+    urlkr: /docs/kr/faq/dxl_software_compatibility/
 
 contents-guide:
   - title: "Contents Guide"
