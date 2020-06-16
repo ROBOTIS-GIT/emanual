@@ -13,11 +13,11 @@
 
 > JST Connector
 
-|              Item              |                                         Product Image                                         |                         Pin Diagram                          |
-|:------------------------------:|:---------------------------------------------------------------------------------------------:|:------------------------------------------------------------:|
-|    Cable Connector (Female)    |    ![](/assets/images/dxl/x/xw/xw_cable_connector_female_sa610_s4b.png) <br /> [SA610/S4B]    | ![](/assets/images/dxl/x/xw/xw540_cableconnector_female.png) |
-| In-Line Cable Connector (Male) | ![](/assets/images/dxl/x/xw/xw_in_line_cable_connector_male_sa611_p4b.png) <br /> [SA611/P4B] |  ![](/assets/images/dxl/x/xw/xw540_cableconnector_male.png)  |
-|     Rear Nut Mount (Male)      |     ![](/assets/images/dxl/x/xw/xw_rear_nut_mount_male_sa612_p4b.png) <br /> [SA612/P4B]      |  ![](/assets/images/dxl/x/xw/xw540_cableconnector_male.png)  |
+|              Item              |                                                  Product Image                                                   |                         Pin Diagram                          |
+|:------------------------------:|:----------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------:|
+|    Cable Connector (Female)    |    ![](/assets/images/dxl/x/xw/xw_cable_connector_female_sa610_s4b.png) <br /> [SA610/S4B]{: target="_blank"}    | ![](/assets/images/dxl/x/xw/xw540_cableconnector_female.png) |
+| In-Line Cable Connector (Male) | ![](/assets/images/dxl/x/xw/xw_in_line_cable_connector_male_sa611_p4b.png) <br /> [SA611/P4B]{: target="_blank"} |  ![](/assets/images/dxl/x/xw/xw540_cableconnector_male.png)  |
+|     Rear Nut Mount (Male)      |     ![](/assets/images/dxl/x/xw/xw_rear_nut_mount_male_sa612_p4b.png) <br /> [SA612/P4B]{: target="_blank"}      |  ![](/assets/images/dxl/x/xw/xw540_cableconnector_male.png)  |
 
 > Dust and Waterproof Cable Connector
 
