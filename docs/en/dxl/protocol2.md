@@ -99,7 +99,7 @@ The field that indicates the processing result of Instruction Packet
 | 0x04  | Data Range Error  |                                                                                 Data to be written in the corresponding Address is outside the range of the minimum/maximum value                                                                                  |
 | 0x05  | Data Length Error |                                         Attempt to write Data that is shorter than the data length of the corresponding Address<br />(ex: when you attempt to only use 2 bytes of a item that has been defined as 4 bytes)                                         |
 | 0x06  | Data Limit Error  |                                                                                           Data to be written in the corresponding Address is outside of the Limit value                                                                                            |
-| 0x07  |   Access Errer    | Attempt to write a value in an Address that is Read Only or has not been defined<br />Attempt to read a value in an Address that is Write Only or has not been defined<br />Attempt to write a value in the ROM domain while in a state of Torque Enable(ROM Lock) |
+| 0x07  |   Access Error    | Attempt to write a value in an Address that is Read Only or has not been defined<br />Attempt to read a value in an Address that is Write Only or has not been defined<br />Attempt to write a value in the ROM domain while in a state of Torque Enable(ROM Lock) |
 
 ## Parameter
 
