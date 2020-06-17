@@ -18,7 +18,7 @@ sidebar:
 
 ![](/assets/images/sw/dynamixel/wizard2/wizard2_main_000.jpg)
 
-**Software Download(v2.0.6)**  
+**Software Download (v2.0.7)**  
 [Windows](http://www.robotis.com/service/download.php?no=1670)  
 [Linux](http://www.robotis.com/service/download.php?no=1671)  
 [Mac](http://www.robotis.com/service/download.php?no=1760)  
