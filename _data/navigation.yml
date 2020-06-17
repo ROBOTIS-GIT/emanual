@@ -15851,15 +15851,15 @@ rh_p12_rna:
           - title: "Return Delay Time(9)"
             titlekr: "Return Delay Time(9)"
             url: /platform/rh_p12_rna/#return-delay-time9
-          - title: "Drive Mode(10)"
-            titlekr: "Drive Mode(10)"
-            url: /platform/rh_p12_rna/#drive-mode10
           - title: "Operating Mode(11)"
             titlekr: "Operating Mode(11)"
             url: /platform/rh_p12_rna/#operating-mode11
           - title: "Secondary ID(12)"
             titlekr: "Secondary ID(12)"
             url: /platform/rh_p12_rna/#secondary-id12
+          - title: "Protocol Type(13)"
+            titlekr: "Protocol Type(13)"
+            url: /platform/rh_p12_rna/#protocol-type13
           - title: "Homing Offset(20)"
             titlekr: "Homing Offset(20)"
             url: /platform/rh_p12_rna/#homing-offset20

@@ -4,7 +4,7 @@ The Control Table is a structure of data implemented in the device. Users can re
 {% assign protocol= "Protocol 2.0" %}
 {% assign data_size= "1 ~ 4" %}
 
-{% if page.product_group=='dxl_pro_plus' %}
+{% if page.product_group=='dxl_p' %}
 **WARNING** : DYNAMIXEL-P series use different Control Table from DYNAMIXEL PRO series. Please pay attention when replacing DYNAMIXEL PRO with DYNAMIXEL-P series.
 {: .notice--warning}
 {% assign torque_enable= "512" %}

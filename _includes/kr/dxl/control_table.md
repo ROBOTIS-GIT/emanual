@@ -6,7 +6,7 @@ Control Table은 장치 내부에 존재하는 값으로서 장치의 현재 상
 {% assign protocol= "Protocol 2.0" %}
 {% assign data_size= "1 ~ 4" %}
 
-{% if page.product_group=='dxl_pro_plus' %}
+{% if page.product_group=='dxl_p' %}
 **주의** : 다이나믹셀-P 시리즈는 다이나믹셀 PRO 시리즈와 다른 별개의 컨트롤 테이블을 사용합니다. 다이나믹셀 PRO 시리즈를 다이나믹셀-P 시리즈로 교체하는 경우 주의하시기 바랍니다.
 {: .notice--warning}
 {% assign torque_enable= "512" %}

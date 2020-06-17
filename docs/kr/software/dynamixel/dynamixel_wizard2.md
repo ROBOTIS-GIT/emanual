@@ -18,10 +18,10 @@ sidebar:
 
 ![](/assets/images/sw/dynamixel/wizard2/wizard2_main_000.jpg)
 
-**소프트웨어 다운로드**  
-[윈도우 (v2.0.6)](http://www.robotis.com/service/download.php?no=1670)  
-[리눅스 (v2.0.6)](http://www.robotis.com/service/download.php?no=1671)  
-[맥 (v2.0.6)](http://www.robotis.com/service/download.php?no=1760)  
+**소프트웨어 다운로드 (v2.0.7)**  
+[윈도우](http://www.robotis.com/service/download.php?no=1670)  
+[리눅스](http://www.robotis.com/service/download.php?no=1671)  
+[맥 OS](http://www.robotis.com/service/download.php?no=1760)  
 
 ## [다이나믹셀 위자드 2.0](#다이나믹셀-위자드-20)
 

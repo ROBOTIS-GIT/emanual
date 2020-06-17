@@ -1,12 +1,12 @@
 ---
 layout: archive
 lang: en
-ref: dxl_pro_plus
+ref: dxl_p
 permalink: /docs/en/dxl/p/
 sidebar:
   title: DYNAMIXEL-P
   nav: "dynamixel_p"
-product_group: dxl_pro_plus
+product_group: dxl_p
 ---
 
 ![](/assets/images/dxl/p/pro-plus.png)

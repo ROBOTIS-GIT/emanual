@@ -2,7 +2,7 @@
 {% assign present_position="132" %}
 {% assign homing_offset="20" %}
 
-{% if page.product_group=='dxl_pro_plus' or page.product_group=='dxl_pro_a' or page.product_group=='rh_p12_rna' %}
+{% if page.product_group=='dxl_p' or page.product_group=='dxl_pro_a' or page.product_group=='rh_p12_rna' %}
 {% assign torque_enable= "512" %}
 {% assign present_position="580" %}
 {% elsif page.product_group=='dxl_pro' or page.product_group=='rh_p12_rn' %}

@@ -14,8 +14,8 @@
   {% assign target_file = 'dxl_info' %}
 {% elsif page.product_group=='dxl_mx' %}
   {% assign target_file = 'dxl_mx_info' %}
-{% elsif page.product_group=='dxl_pro_plus' %}
-  {% assign target_file = 'dxl_pro_plus_info' %}
+{% elsif page.product_group=='dxl_p' %}
+  {% assign target_file = 'dxl_p_info' %}
 {% elsif page.product_group=='dxl_pro_a' %}
   {% assign target_file = 'dxl_proa_info' %}
 {% elsif page.product_group=='dxl_pro' %}
