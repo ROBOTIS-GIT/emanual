@@ -1,11 +1,11 @@
 ---
 layout: archive
-lang: en
+lang: jp
 ref: dynamixelworkbench
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/software/dynamixel/dynamixel_workbench/
+permalink: /docs/jp/software/dynamixel/dynamixel_workbench/
 sidebar:
   title: DYNAMIXEL Workbench
   nav: "dynamixel_workbench"
