@@ -54,10 +54,10 @@ To control ENGINEER KIT2 with the R+ ENGINEER App, the CM-550 controller needs t
 | Examples                       | Python (.py)                                                                   | Motion (.mtn)                                                                   |
 |:-------------------------------|:-------------------------------------------------------------------------------|:--------------------------------------------------------------------------------|
 | MAX-E2                         | [01_ENG2_Max_E2_PY.py](https://www.robotis.com/service/download.php?no=1915)   | [01_ENG2_Max_E2_MO.mtn3](https://www.robotis.com/service/download.php?no=1916)  |
-| Commando                       | [02_ENG2_Commando_PY.py](https://www.robotis.com/service/download.php?no=1917) | Only Python File is used                                                        |
+| Commando                       | [02_ENG2_Commando_PY.py](https://www.robotis.com/service/download.php?no=1917) | Only Python file is used                                                        |
 | Scorpi                         | [03_ENG2_Scorpi_PY.py](https://www.robotis.com/service/download.php?no=1919)   | [03_ENG2_Scorpi_MO.mtn3](https://www.robotis.com/service/download.php?no=1918)  |
 | AutoBot  (Additional Examples) | [04_ENG2_Autobot_PY.py](https://www.robotis.com/service/download.php?no=1920)  | [04_ENG2_Autobot_MO.mtn3](https://www.robotis.com/service/download.php?no=1921) |
-| Strider  (Additional Examples) | [05_ENG2_Strider_PY.py](https://www.robotis.com/service/download.php?no=1922)  | Only Python File is used                                                        |
+| Strider  (Additional Examples) | [05_ENG2_Strider_PY.py](https://www.robotis.com/service/download.php?no=1922)  | Only Python file is used                                                        |
 
 ### [Download from PC](#download-from-pc)
 
