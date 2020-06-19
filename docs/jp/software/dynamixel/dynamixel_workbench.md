@@ -11,7 +11,7 @@ sidebar:
   nav: "dynamixel_workbench"
 ---
 
-# [イントロダクション](#introduction)
+# [イントロダクション](#イントロダクション)
 
 ![](/assets/images/sw/dynamixel/dynamixel_workbench/DYNAMIXEL_WORKBENCH_LOGO.png)
 

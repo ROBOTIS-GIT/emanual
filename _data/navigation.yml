@@ -20324,6 +20324,64 @@ dynamixel_workbench:
     - title: "Function Reference"
       url: /software/dynamixel/dynamixel_workbench/#function-reference
 
+dynamixel_workbench_jp:
+  - title: "イントロダクション"
+    url: /software/dynamixel/dynamixel_workbench/#イントロダクション
+  - title: "Supported DYNAMIXEL"
+    url: /software/dynamixel/dynamixel_workbench/#supported-dynamixel
+  - title: "Downloads"
+    url: /software/dynamixel/dynamixel_workbench/#downloads
+    children:
+    - title: "ROS"
+      url: /software/dynamixel/dynamixel_workbench/#ros
+    - title: "OpenCR and OpenCM"
+      url: /software/dynamixel/dynamixel_workbench/#opencr-and-opencm
+    - title: "Linux and macOS"
+      url: /software/dynamixel/dynamixel_workbench/#linux-and-macos
+  - title: "Device Setup"
+    url: /software/dynamixel/dynamixel_workbench/#device-setup
+    children:
+    - title: "U2D2"
+      url: /software/dynamixel/dynamixel_workbench/#u2d2
+    - title: "OpenCR"
+      url: /software/dynamixel/dynamixel_workbench/#opencr
+    - title: "OpenCM9.04"
+      url: /software/dynamixel/dynamixel_workbench/#opencm
+  - title: "Tutorials"
+    url: /software/dynamixel/dynamixel_workbench/#tutorials
+    children:
+    - title: "ROS"
+      url: /software/dynamixel/dynamixel_workbench/#ros-tutorials
+      children:
+      - title: "Find Dynamixels"
+        url: /software/dynamixel/dynamixel_workbench/#find-dynamixels
+      - title: "Controllers"
+        url: /software/dynamixel/dynamixel_workbench/#controllers
+      - title: "Operators"
+        url: /software/dynamixel/dynamixel_workbench/#operators
+    - title: "OpenCR and OpenCM"
+      url: /software/dynamixel/dynamixel_workbench/#opencr-and-opencm-tutorials
+      children:
+      - title: "o_Find_Dynamixel"
+        url: /software/dynamixel/dynamixel_workbench/#o_find_dynamixel
+      - title: "p_Monitor"
+        url: /software/dynamixel/dynamixel_workbench/#p_monitor
+    - title: "Linux and macOS"
+      url: /software/dynamixel/dynamixel_workbench/#linux-and-macos-tutorials
+      children:
+      - title: "position"
+        url: /software/dynamixel/dynamixel_workbench/#position
+      - title: "bulk_read_write"
+        url: /software/dynamixel/dynamixel_workbench/#bulk_read_write
+  - title: "API References"
+    url: /software/dynamixel/dynamixel_workbench/#api-references
+    children:
+    - title: "Function List"
+      url: /software/dynamixel/dynamixel_workbench/#function-list
+    - title: "Function Reference"
+      url: /software/dynamixel/dynamixel_workbench/#function-reference
+
+
 #DYNAMIXEL wizard 2.0 sidebar
 dynamixel_wizard2:
   - title: "Introduction"
