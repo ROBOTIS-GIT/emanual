@@ -19,7 +19,7 @@ page_number: 6
 
 ## [PC Setup](#pc-setup)
 
-- The ROBOTIS manipulator ROS program is based on **Linux Ununtu 16.04** OS and **ROS Kenitic Kame**.
+- The ROBOTIS manipulator ROS program is based on **Linux Ubuntu 16.04** OS and **ROS Kenetic Kame**.
 
 ### [Install Ubuntu on PC](#install-ubuntu-on-pc)
 
