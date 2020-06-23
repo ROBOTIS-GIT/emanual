@@ -279,7 +279,7 @@ $ sudo apt install ros-dashing-ros-base
 **[TurtleBot3]**
 
 ```bash
-$ sudo apt install python3-argcomplete python3-colcon-common-extensions libboost-system-dev
+$ sudo apt install python3-argcomplete python3-colcon-common-extensions libboost-system-dev build-essential
 $ mkdir -p ~/turtlebot3_ws/src && cd ~/turtlebot3_ws/src
 $ git clone -b ros2 https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
 $ git clone -b ros2 https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
