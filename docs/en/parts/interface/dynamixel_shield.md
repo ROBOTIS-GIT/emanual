@@ -107,7 +107,7 @@ Check the type of your arduino board, and select the either of listed solution t
 - You can use either SoftwareSerial or HardwareSerial ways. See [Arduino Reference page of Serial](https://www.arduino.cc/reference/en/language/functions/communication/serial/), and determine your board whether or not it support either of ways (SoftwareSerial or HardwareSerial).
  
 5. **Use UART Port**
-- DYNAMIXEL Shield contains UART pins: 7(RX), 8(TX). They are only compatible with AVR 8 bit board, such as Uno and Mega boards. In order to use this port, use other HardwareSerial pins instead of 7(RX), 8(TX). To determine wheather boards has HardwareSerial, and its pin numbers see [Arduino Reference page of Comunication] 
+- DYNAMIXEL Shield contains UART pins: 7(RX), 8(TX). They are only compatible with AVR 8 bit board, such as Uno and Mega boards. In order to use this port, use other HardwareSerial pins instead of 7(RX), 8(TX). To determine wheather boards has HardwareSerial, and its pin numbers see [Arduino Reference page of Comunication](https://www.arduino.cc/reference/en/language/functions/communication/serial/). 
 
 # [Connecting Power](#connecting-power)
 
