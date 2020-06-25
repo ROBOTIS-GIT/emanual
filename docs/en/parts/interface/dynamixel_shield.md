@@ -56,12 +56,13 @@ DYNAMIXEL Shield  was created to use [RC-100] and DYNAMIXEL on arduino board. We
 The DYNAMIXEL Shield has the same pin position as Aruduino UNO. To find the pinout diagram, see [Arduino Offical page](https://www.arduino.cc/en/Main/Products).
 {: .notice--warning}
 
-| Pin No. |  Pin Name  |        Description        |
-|:-------:|:----------:|:-------------------------:|
-|    0    | HW UART RX |          DXL_RX           |
-|    1    | HW UART TX |          DXL_TX           |
-|    7    | SW UART RX | `Caution2` SoftwareSerial |
-|    8    | SW UART TX | `Caution2` SoftwareSerial |
+| Pin No. |  Pin Name   |        Description        |
+|:-------:|:-----------:|:-------------------------:|
+|    0    | HW UART RX  |          DXL_RX           |
+|    1    | HW UART TX  |          DXL_TX           |
+|    2    | HW UART DIR |          DXL_DIR          |
+|    7    | SW UART RX  | `Caution2` SoftwareSerial |
+|    8    | SW UART TX  | `Caution2` SoftwareSerial |
 
 |      Item      |                 Description                 |          Note           |
 |:--------------:|:-------------------------------------------:|:-----------------------:|
