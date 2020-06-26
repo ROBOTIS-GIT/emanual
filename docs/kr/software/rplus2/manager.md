@@ -198,43 +198,10 @@ V2.0.0 기준으로 지원 제품이 한정됩니다. 지원 제품 목록에 �
 
 ## [제어기 컨트롤 테이블](#제어기-컨트롤-테이블)
 
+해당 내용은 작성중 입니다. 
+{: .notice}
 
-# [고급 기능](#고급-기능)
-
-## [XM/XH 시리즈 사용전 준비](#xmxh-시리즈-사용전-준비)
-
-XM/XH 시리즈를 R+Task2.0이나 R+Motion2.0에서 사용하기 위해서는 두 가지 사전준비를 거쳐야 합니다.
-
-### H/W 준비하기
-
-1. 아래 그림처럼 OpenCM9.04과 XM시리즈 외에 “OpenCM 485 EXP 보드” 가 필요합니다.
-
-2. 아래 3가지를 케이블로 연결합니다.
-
-  ![](/assets/images/sw/rplus2/manager/rplusmanager2_30_kr.jpg)
-
-### 다이나믹셀 Channel 설정하기
-
-1. R+ Manager 2.0을 실행하여 DYNAMIXEL 2.0 제품을 선택한 후, 업데이트 & 테스트 메뉴를 실행합니다.
-
-    ![](/assets/images/sw/rplus2/manager/rplusmanager2_31_kr.jpg)
-
-2. OpenCM9.04에 LN-101 또는 BT-210(혹은 BT-110)을 사용하여 PC와 연결한 후, OpenCM 485 EXP의 전원을 켭니다.
-3. 안내에 따라 제품을 검색하면 OpenCM9.04가 검색됩니다. (처음에는 OpenCM9.04의 DYNAMIXEL Channel 값이 Default로 설정되어 있어 XM/XH시리즈가 검색되지 않습니다.)
-
-    ![](/assets/images/sw/rplus2/manager/rplusmanager2_32_kr.jpg)
-
-4. 제품을 업데이트하는 과정을 거치면 컨트롤 테이블이 실행됩니다.
-5. 컨트롤 테이블 항목에서 DYNAMIXEL Channel 값을 EXP Board로 설정한 후 저장합니다.
-
-    ![](/assets/images/sw/rplus2/manager/rplusmanager2_33_kr.jpg)
-
-6. 설정이 완료되면 컨트롤 테이블 창을 닫고, OpenCM 485 EXP의 전원을 껐다가 켭니다.(이때, 재부팅되면서 OpenCM9.04의 미니 TTL버스가 비활성화되고 OpenCM 485 EXP의 다이나믹셀 버스가 활성화 됩니다.)
-7. 업데이트 & 테스트 메뉴를 다시 실행하여 XM/XH시리즈가 정상적으로 검색되는지 확인합니다.
-
-    ![](/assets/images/sw/rplus2/manager/rplusmanager2_34_kr.jpg)
-
-8. 설정이 완료되면 R+ Task 2.0과 R+ Motion 2.0에서 XM/XH 시리즈를 사용할 수 있게 됩니다.(R+ Task 2.0 v2.1.0, R+ Motion 2.0 v2.4.0 이상 버전에서 지원)
+# [참고자료](#참고자료)
 
 ## [컨트롤 아이템 값 변경](#컨트롤-아이템-값-변경)
 
@@ -305,23 +272,13 @@ BT-210, BT-110을 이용하면 무선으로 펌웨어 관리를 진행하실 수
 
 ## [FAQ](#faq)
 
-### 지원 가능한 제품 군은?
+### 지원하는 제품은 무엇인가요?
 
-- [ROBOTIS DREAM]
-- [ROBOTIS SMART]
-- [ROBOTIS SMART2]
-- [ROBOTIS IoT]
-- [ROBOTIS MINI]
-- 다이나믹셀 2.0 시리즈 ([XL-320, XM 시리즈, XH 시리즈] / [PRO 시리즈] / [P 시리즈])
-- 그 외 [CM-150, CM-200, OpenCM9.04, OpenCM7.0]을 사용하여 만든 사용자 로봇
-
-AX시리즈, MX시리즈, RX시리즈, DX시리즈, EX시리즈, CM-530, CM-510, CM-700, CM-100A는 지원하지 않습니다. (V2.0.0 기준)  
-{: .notice--warning}
-
+제품에 사용되는 제어기의 [소프트웨어 호환표](/docs/kr/parts/controller/controller_compatibility/#로보플러스-20)를 참고하세요.
 
 ### 통신 포트가 나타나지 않습니다. 어떻게 해야 하나요?
 
-- 드라이버 설치 매뉴얼을 참고하세요. ([USB 드라이버 설치]{: .popup}, [LN-101 드라이버 설치])
+[USB 드라이버 설치]{: .popup} 또는 [LN-101 드라이버 설치] 매뉴얼을 참고하세요.
 
 ### 제어기가 잘 검색되지 않습니다. 어떻게 해야 하나요?
 

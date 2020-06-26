@@ -2090,6 +2090,46 @@ Please refer to [R+Manager 2.0 Firmware Recovery](/docs/en/software/rplus2/manag
 ## [Windows Driver Installation](#windows-driver-installation)
 - See [How to install ROBOTIS virtual COM port for Windows]{: .popup} 
 
+## [Using OpenCM485 EXP board with OpenCM9.04](#using-opencm485-exp-board)
+
+There are two preparations that need to be done for using the XM Series in R+Task2.0 or R+Motion2.0.  
+(Preparing the H/W / Configuring DYNAMIXEL Channel)
+ 
+### Preparing the H/W
+
+1. Apart from the OpenCM9.04 and your DYNAMIXEL, the OpenCM 485 EXP board is used as shown in the figure below.
+2. Connect the three components below with cables.
+
+![](/assets/images/sw/rplus2/manager/roboplus_manager2_29.jpg)
+
+### Configuring DYNAMIXEL Channel
+
+DYNAMIXEL Channel is a firmware feature of OpenCM9.04 that controls which bus DYNAMIXEL communication is performed on. The OpenCM9.04 may communicate to the connectors on the OpenCM9.04, or send communication through the OpenCM 485 EXP board. 
+
+1. Open R+ Manager 2.0 and select DYNAMIXEL2.0 product, then click on the Update & Test menu.
+
+    ![](/assets/images/sw/rplus2/manager/roboplus_manager2_30.jpg)
+ 
+2. Connect the OpenCM9.04 to the PC by using a micro-USB cable, then turn on the OpenCM 485EXP.
+3. Follow the instructions below to search the product for OpenCM9.04 (DYNAMIXEL Channel value of the OpenCM9.04 is set to "0" by default so any DYNAMIXELs connected to the OpenCM 485 EXP board will not appear yet in the search result).
+
+    ![](/assets/images/sw/rplus2/manager/roboplus_manager2_31.jpg)
+ 
+4. After the software connects to the OpenCM9.04 and performs any updates, the Control Table will open.
+5. From the Control Table list, select DYNAMIXEL Channel, and choose the value "1" for "EXP Board" (OpenCM 485 Expansion Board)and click Save.
+
+    ![](/assets/images/sw/rplus2/manager/roboplus_manager2_32.jpg)
+ 
+6. When the configuration is finished, close the Control Table window and restart the OpenCM 485 EXP.  
+    (As it is restarted, the TTL bus of the OpenCM9.04 is deactivated, and the TTL/RS-485 DYNAMIXEL bus of the OpenCM 485 EXP is activated.)
+7. Open the Update & Test menu again and check that the XM/XH Series is properly detected in the search result.
+
+    ![](/assets/images/sw/rplus2/manager/roboplus_manager2_33.jpg)
+ 
+8. When the configuration is finished, you can now use the XM/XH Series in R+ Task 2.0 and R+ Motion 2.0.  
+    (Supported from versions R+ Task 2.0 v2.1.0, R+ Motion 2.0 v2.4.0 or later)
+
+
 ## [Dimension](#dimension)
 
 ![](/assets/images/parts/controller/opencm904/opencm904_28.png)
