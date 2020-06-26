@@ -31,7 +31,6 @@ sidebar:
 |   Serial3 RX    |       헤더 핀 #25       |
 |  통신방향 제어  |       헤더 핀 #22       |
 
-
 # [각 부 명칭](#각-부-명칭)
 
 ![](/assets/images/parts/controller/opencm904/opencm485exp_01.jpg)
@@ -49,7 +48,9 @@ sidebar:
 
 {% include kr/dxl/pinout_warning.md %}
 
-# [OpenCM9.04와 연결하기](#opencm904와-연결하기)
+# [OpenCM9.04와 사용하기](#opencm904와-사용하기)
+
+## [OpenCM9.04 연결하기](#opencm904-연결하기)
 
 1. OpenCM 485 확장보드 와 OpenCM9.04를 준비합니다. OpenCM9.04는 타입에 관계없이 사용가능하고 헤더를 납땜해주세요.
 
@@ -70,11 +71,45 @@ sidebar:
 
     ![](/assets/images/parts/controller/opencm904/opencm485exp_05.jpg)
 
-**참고**: 다이나믹셀 펌웨어 업데이트 및 복구시 OpenCM9.04와 OpenCM 485 확장보드를 반드시 분리해주세요
-{: .notice--warning}
+{% capture dxl_jst_molex %}
+**참고**: 
+- 다이나믹셀-X 및 P 모델은 JST 커넥터를 사용합니다. OpenCM 485 확장보드는 Molex 커넥터를 지원하기 때문에, X및 P 시리즈의 커넥터와 연결하기 위해서, JST-Molex 변환케이블([3핀](https://www.robotis.com/shop/item.php?it_id=903-0251-000) 또는 [4핀 케이블](https://www.robotis.com/shop/item.php?it_id=903-0246-000))을 사용하세요.
 
+- 다이나믹셀 펌웨어 업데이트 및 복구시 OpenCM9.04와 OpenCM 485 확장보드를 반드시 분리해주세요
+{% endcapture %}
+<div class="notice">{{ dxl_jst_molex | markdownify }}</div>
 
-# [전원 연결 회로](#전원-연결-회로)
+## [OpenCM9.04 및 OpenCM 485 확장보드에서 모션 파일 사용하기](#opencm904-및-opencm-485-확장보드에서-모션-파일-사용하기)
+
+모션 프로그램에서 연결한 다이나믹셀을 사용할 수 없거나, 태스크 코드로 다운로드한 모션파일이 동작하지 않는다면 제어기에서 컨트롤 테이블의 **Dynamixel Channel** 항목을 변경하세요. 
+
+1. R+ Manager를 실행 후, 홈 탭에서 **OpenCM 9.04**를 선택하세요.
+
+    ![](/assets/images/sw/rplus2/manager/rplus_manager2_dxl_channel_setting_01_kr.png)
+
+2. **업데이트 & 테스트**를 클릭하세요.  
+
+    ![](/assets/images/sw/rplus2/manager/rplus_manager2_dxl_channel_setting_02_kr.png)
+
+3. 컨트롤 테이블이 활성화 되면, 컨트롤 테이블 16번 **Dynamixel Channel** 의 항목을 사용하는 다이나믹셀에 맞게 변경하고 저장하세요. 예를 들어, 확장 보드에서 다이나믹셀 X시리즈를 사용하기 위해서는 **EXP Board(XL-320)** 을 선택 합니다.
+  
+    ![](/assets/images/sw/rplus2/manager/rplus_manager2_dxl_channel_setting_03_kr.png)
+              
+| 항목                    | 설명                                                                                                            |
+|:------------------------|:----------------------------------------------------------------------------------------------------------------|
+| **On Board(XL-320)**    | 모션 프로그램 또는 태스크 코드에서 모션파일 사용시, OpenCM 9.04에서 XL-320을 사용 할수 있습니다.                |
+| **EXP Board(X-Series)** | 모션 프로그램 또는 태스크 코드에서 모션파일 사용시, 확장보드에서 X시리즈를 사용 할수 있습니다 (XL-320 제외).    |
+| **EXP Board(XL-320)**   | 모션 프로그램 또는 태스크 코드에서 모션파일 사용시, 확장보드에서 XL320을 사용 할수 있습니다.                    |
+| **On Board(X-Series)**  | 모션 프로그램 또는 태스크 코드에서 모션파일 사용시, OpenCM 9.04에서 X시리즈를 사용 할수 있습니다 (XL-320 제외). |
+
+> OpenCM9.04의 컨트롤테이블 Dynamixel Channel 항목
+
+**참고**: 설정이 완료 되면, 제어기 연결을 해제하고, OpenCM9.04 또는 485 확장보드의 전원을 끄고 다시 켜주세요. 제어기가 재부팅되고, 변경한 Dynamixel Channel에 맞게 다이나믹셀 Bus가 활성화 됩니다. 이후, 태스크 프로그램에서 모션파일을 사용하거나, 모션 프로그램에서 다이나믹셀을 사용 할 수 있습니다. 
+{: .notice}
+
+# [참고자료](#참고자료)
+
+## [전원 연결 회로](#전원-연결-회로)
 
 OpenCM 485 확장보드 와 OpenCM9.04 연결시 전원 블록 다이어그램  
 OpenCM 485 확장보드는 기본적으로 OpenCM9.04 5V 전원 공급을 하며, JP1은 아래 OpeCM 485 확장보드에서 VDD전원을 OpenCM9.04로 공급할 것인지 결정합니다.
@@ -92,7 +127,7 @@ OpenCM 485 확장보드의 TTL/485 버스는 OpenCM9.04의 USART3(Serial3)을 �
 
 > OpenCM9.04 & OpenCM 485 확장보드 버스 연결도
 
-# [OpenCM 485 확장보드 프로그래밍](#opencm-485-확장보드-프로그래밍)
+## [OpenCM 485 확장보드 프로그래밍](#opencm-485-확장보드-프로그래밍)
 
 OpenCM 485 확장보드를 OpenCM9.04와 연결해서 사용하기 위해서는 아두이노 IDE를 사용해야 합니다.
 
@@ -123,7 +158,7 @@ OpenCM 485 확장보드를 OpenCM9.04와 연결해서 사용하기 위해서는 
     dxl_wb.begin(DEVICE_NAME, BAUDRATE);
     ```
 
-# [버튼 및 LED 활용](#버튼-및-led-활용)
+## [버튼 및 LED 활용](#버튼-및-led-활용)
 
 OpenCM 485  확장보드에는 OpenCM9.04의 IO핀과 연결된 버튼 2개와 LED 3개가 제공됩니다.
 각 버튼 및 LED와 연결된 OpenCM9.04의 IO 핀번호는 아래의 표에서 확인할 수 있습니다.
@@ -139,9 +174,9 @@ OpenCM 485  확장보드에는 OpenCM9.04의 IO핀과 연결된 버튼 2개와 
 ![](/assets/images/parts/controller/opencm904/opencm485exp_11.jpg)
 
 
-# [다운로드](#다운로드)
+## [도면](#도면)
 
-- `다운로드` [SCHEMATIC-OpenCM 485 EXP.pdf]
+- `다운로드`: [SCHEMATIC-OpenCM 485 EXP.pdf]
 
 [아두이노 IDE 설치하기]: /docs/kr/software/arduino_ide/
 [SCHEMATIC-OpenCM 485 EXP.pdf]: http://support.robotis.com/ko/baggage_files/opencm/schematic1___opencm_485exp.pdf

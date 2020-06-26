@@ -256,45 +256,7 @@ This feature is currently being prepared and will be supported in upcoming updat
 **NOTE** : For more details on peripheral devices, please refer to R+ Task 2.0.
 {: .notice}
 
-
-# [Advanced Features](#advanced-features)
-
-## [Preparation for XM/XH Series](#preparation-for-xmxh-series)
-
-There are two preparations that need to be done for using the XM Series in R+Task2.0 or R+Motion2.0.  
-(Preparing the H/W / Configuring DYNAMIXEL Channel)
- 
-### Preparing the H/W
-
-1. Apart from the OpenCM9.04 and XM Series, the “OpenCM 485 EXP board” is needed as in the figure below.
-2. Connect the three components below with cables.
-
-![](/assets/images/sw/rplus2/manager/roboplus_manager2_29.jpg)
-
-### Configuring DYNAMIXEL Channel
-
-1. Open R+ Manager 2.0 and select DYNAMIXEL2.0 product, then click on the Update & Test menu.
-
-    ![](/assets/images/sw/rplus2/manager/roboplus_manager2_30.jpg)
- 
-2. Connect the OpenCM9.04 to the PC by usingLN-101 or BT-210(or BT-110), then turn on the OpenCM 485EXP.
-3. Follow the instructions below to search the product forOpenCM9.04 (Initially DYNAMIXEL Channel value of the OpenCM9.04 is set to Default so the XM/XH Series does not appear in the search result).
-
-    ![](/assets/images/sw/rplus2/manager/roboplus_manager2_31.jpg)
- 
-4. After the process of updating the product, the Control Table will open.
-5. From the Control Table list, set DYNAMIXEL Channel value to EXP Board (Expansion Board)and click Save.
-
-    ![](/assets/images/sw/rplus2/manager/roboplus_manager2_32.jpg)
- 
-6. When the configuration is finished, close the Control Table window and restart the OpenCM 485 EXP.  
-    (As it is restarted the, the mini TTL bus of the OpenCM9.04 is deactivated, and then DYNAMIXEL bus of the OpenCM 485 EXP is activated.)
-7. Open the Update & Test menu again and check that the XM/XH Series is properly detected in the search result.
-
-    ![](/assets/images/sw/rplus2/manager/roboplus_manager2_33.jpg)
- 
-8. When the configuration is finished, you can now use the XM/XH Series in R+ Task 2.0 and R+ Motion 2.0.  
-    (Supported from versions R+ Task 2.0 v2.1.0, R+ Motion 2.0 v2.4.0 or later)
+# [Reference](#reference)
 
 ## [Changing Control Value](#changing-control-value)
 
