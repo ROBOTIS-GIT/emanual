@@ -28,10 +28,12 @@ OpenMANIPULATOR-X controller provides basic manipulation of OpenMANIPULATOR-X. Y
 
 ## [Launch Controller](#launch-controller)
 
-Open a terminal then run the following command in the terminal.
+Open a terminal then run the following command in the terminal.  
+In case of using OpenCR as a communiation converter, please modify the `usb_port` definition in `open_manipulator_x_controller.cpp` from `"/dev/ttyUSB0"` to `
+"/dev/ttyACM0`, then build the source code with `$ cd ~/robotis_ws && colcon build --symlink-install` command.
 
 ``` bash
-$ ros2 launch open_manipulator_x_controller open_manipulator_x_controller.launch.py  
+$ ros2 run open_manipulator_x_controller open_manipulator_x_controller
 ```
 
 {% capture warning_01 %}
@@ -377,7 +379,7 @@ This parameter is descripted on open_manipulator_x.cpp in open_manipulator_x_lib
 Load OpenMANIPULATOR-X on RViz.
 
 ``` bash
-$ ros2 launch open_manipulator_x_description open_manipulator_x_rviz2.launch.py 
+$ ros2 launch open_manipulator_x_description open_manipulator_x_rviz.launch.py 
 ```
 
 {% capture notice_01 %}
