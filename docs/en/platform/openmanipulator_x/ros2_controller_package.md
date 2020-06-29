@@ -28,12 +28,16 @@ OpenMANIPULATOR-X controller provides basic manipulation of OpenMANIPULATOR-X. Y
 
 ## [Launch Controller](#launch-controller)
 
-Open a terminal then run the following command in the terminal.  
-In case of using OpenCR as a communiation converter, please modify the `usb_port` definition in `open_manipulator_x_controller.cpp` from `"/dev/ttyUSB0"` to `
-"/dev/ttyACM0`, then build the source code with `$ cd ~/robotis_ws && colcon build --symlink-install` command.
+If you are using `U2D2` as a communication converter, open a terminal then enter the following command.  
 
 ``` bash
 $ ros2 run open_manipulator_x_controller open_manipulator_x_controller
+```
+
+If you are using `OpenCR` as a communication converter, open a terminal then enter the following command instead of above command.  
+
+``` bash
+$ ros2 run open_manipulator_x_controller open_manipulator_x_controller /dev/ttyACM0 1000000
 ```
 
 {% capture warning_01 %}
