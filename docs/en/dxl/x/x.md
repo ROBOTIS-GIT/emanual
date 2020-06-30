@@ -36,7 +36,6 @@ sidebar:
   - Extended Position Control. 
   - PWM Control (Voltage Control Mode).
 
-
 # [DYNAMIXEL-X](#dynamixel-x)
 **Common Specifications**  
 - MCU : ARM CORTEX-M3 (72 \[MHz], 32Bit)  
@@ -50,7 +49,14 @@ sidebar:
 XL320 has different specifications from other XL-Series. Please refer to [XL-320 Specifications](/docs/en/dxl/x/xl320/#주요-사양) for more details.
 {: .notice--info}
 
-## [XH Series](#xh-Series)
+## [XW Series](#xw-series)
+
+| Model          | Stall Torque                                                                                             | No Load Speed                                                                          |
+|:---------------|:---------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------|
+| [XW540-T260-R] | 9.5 [N.m] (at 12 [V], 4.9 [A]) <br>9.5 [N.m] (at 12.0 [V], 4.9 [A])<br>11.2 [N.m] (at 14.8 [V], 5.9 [A]) | 40 [rev/min] (at 12 [V])                                                               |
+| [XW540-T140-R] | 6.4 [N.m] (at 11.1 [V], 4.5 [A])<br>6.9 [N.m] (at 12.0 [V], 4.9 [A])<br>8.3 [N.m] (at 14.8 [V], 5.9 [A]) | 36 [rev/min] (at 11.1 [V])<br>39 [rev/min] (at 12.0 [V])<br>46 [rev/min] (at 14.8 [V]) |
+
+## [XH Series](#xh-series)
 
 | Model            | Stall Torque                                                                                              | No Load Speed                                                                          |
 |:-----------------|:----------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------|
@@ -63,7 +69,7 @@ XL320 has different specifications from other XL-Series. Please refer to [XL-320
 | [XH430-V210-R]   | 2.6 [N.m] (at 24 [V], 0.7[A])                                                                             | 52 [rev/min] (at 24 [V])                                                               |
 | [XH430-W210-T/R] | 2.2 [N.m] (at 11.1 [V], 1.2 [A])<br>2.5 [N.m] (at 12.0 [V], 1.3 [A])<br>3.1 [N.m] (at 14.8 [V], 1.5 [A])  | 46 [rev/min] (at 11.1 [V])<br>50 [rev/min] (at 12.0 [V])<br>62 [rev/min] (at 14.8 [V]) |
 
-## [XM Series](#xm-Series)
+## [XM Series](#xm-series)
 
 | Model            | Stall Torque                                                                                               | No Load Speed                                                                          |
 |:-----------------|:-----------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------|
@@ -87,6 +93,8 @@ XL320 has different specifications from other XL-Series. Please refer to [XL-320
 | [XL430-W250-T]  | 1.0 [N.m] (at 9.0 [V], 1.0 [A])<br>1.4 [N.m] (at 11.1 [V], 1.3 [A])<br>1.5 [N.m] (at 12.0 [V], 1.4 [A]) | 47 [rev/min] (at 9.0 [V])<br>57 [rev/min] (at 11.1 [V])<br>61 [rev/min] (at 12.0 [V]) |
 | [XL-320]        | 0.39[N.m] (at 7.4 [V], 1.1 [A])                                                                         | 114[rev/min] (at 7.4 [V], 0.18[A])                                                    |
 
+[XW540-T260-R]: /docs/en/dxl/x/xw540-t260/
+[XW540-T140-R]: /docs/en/dxl/x/xw540-t140/
 [XH540-V270-R]: /docs/en/dxl/x/xh540-v270/
 [XH540-W270-T/R]: /docs/en/dxl/x/xh540-w270/
 [XH540-V150-R]: /docs/en/dxl/x/xh540-v150/

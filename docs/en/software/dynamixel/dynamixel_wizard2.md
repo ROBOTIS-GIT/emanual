@@ -18,7 +18,7 @@ sidebar:
 
 ![](/assets/images/sw/dynamixel/wizard2/wizard2_main_000.jpg)
 
-**Software Download(v2.0.6)**  
+**Software Download (v2.0.7)**  
 [Windows](http://www.robotis.com/service/download.php?no=1670)  
 [Linux](http://www.robotis.com/service/download.php?no=1671)  
 [Mac](http://www.robotis.com/service/download.php?no=1760)  
@@ -83,6 +83,7 @@ Although almost all ROBOTIS products are shipped with installed firmwares, new f
 | **XC**           | [XC430-W150]<br/> [XC430-W240] | [2XC430-W250]                  |                                |                                |                 |
 | **XM**           | [XM430-W210]<br/> [XM430-W350] | [XM540-W150]<br/> [XM540-W270] |                                |                                |                 |
 | **XH**           | [XH430-W210]<br/> [XH430-W350] | [XH430-V210]<br/> [XH430-V350] | [XH540-W150]<br/> [XH540-W270] | [XH540-V150]<br/> [XH540-V270] |                 |
+| **XW**           | [XW540-T140]<br/> [XW540-T260] |                                |                                |                                |                 |
 | **PRO H**        | [H42-20-S300-R]                | [H54-100-S500-R]               | [H54-200-S500-R]               |                                |                 |
 | **PRO M**        | [M42-10-S260-R]                | [M54-40-S250-R]                | [M54-60-S250-R]                |                                |                 |
 | **PRO L**        | [L42-10-S300-R]                | [L54-30-S500-R]                | [L54-30-S400-R]                | [L54-50-S500-R]                | [L54-50-S290-R] |
@@ -711,6 +712,8 @@ In order to use the minimum communication interval(1 [ms]), please follow the in
 [XH540-W270]: /docs/en/dxl/x/xh540-w270/
 [XH540-V150]: /docs/en/dxl/x/xh540-v150/
 [XH540-V270]: /docs/en/dxl/x/xh540-v270/
+[XW540-T140]: /docs/en/dxl/x/xw540-t140/
+[XW540-T260]: /docs/en/dxl/x/xw540-t260/
 [H54-200-S500-R]: /docs/en/dxl/pro/h54-200-s500-r/
 [H54-100-S500-R]: /docs/en/dxl/pro/h54-100-s500-r/
 [H42-20-S300-R]: /docs/en/dxl/pro/h42-20-s300-r/

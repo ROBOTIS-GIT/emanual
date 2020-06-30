@@ -16,7 +16,8 @@
 | No Load Speed          | {{ site.data.dxl_x_info[page.ref].noloadspeed }}        |{% if site.data.dxl_x_info[page.ref].radialload_en != 'N/A' %}
 | [Radial Load]{: .popup}| {{ site.data.dxl_x_info[page.ref].radialload_en }}      |{% else %}{% endif %}{% if site.data.dxl_x_info[page.ref].axialload != 'N/A' %}
 | [Axial Load]{: .popup} | {{ site.data.dxl_x_info[page.ref].axialload }}          |{% else %}{% endif %}
-| Operating Temperature  | {{ site.data.dxl_x_info[page.ref].temperature }}        |
+| Operating Temperature  | {{ site.data.dxl_x_info[page.ref].temperature }}        |{% if page.product_group=='dxl_xw540' %}
+| **Ingress Protection rating** |                 **IP 68 (1 m, 24 hr)**           |{% else %}{% endif %}
 | Input Voltage          | {{ site.data.dxl_x_info[page.ref].voltage_en }}         |
 | Command Signal         | {{ site.data.dxl_x_info[page.ref].command }}            |
 | Protocol Type          | {{ site.data.dxl_x_info[page.ref].protocoltype }}       |

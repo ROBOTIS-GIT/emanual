@@ -1,5 +1,5 @@
-{% if page.ref=='dxl_pro' or page.ref=='dxl_pro_plus' %}## [UART 연결 회로도](#uart-연결-회로도) {% else %}### [UART 연결 회로도](#uart-연결-회로도) {% endif %}
-Main Controller를 직접 제작하여 {% if page.product_group=='dxl_pro_plus' %}다이나믹셀-P 시리즈{% else %}다이나믹셀 PRO 시리즈{% endif %}를 제어하기 위해서는 Main Controller UART의 신호를 RS485 type으로 변환시켜 주어야 합니다. 다음은 권장 회로도 입니다.
+{% if page.ref=='dxl_pro' or page.ref=='dxl_p' %}## [UART 연결 회로도](#uart-연결-회로도) {% else %}### [UART 연결 회로도](#uart-연결-회로도) {% endif %}
+Main Controller를 직접 제작하여 {% if page.product_group=='dxl_p' %}다이나믹셀-P 시리즈{% else %}다이나믹셀 PRO 시리즈{% endif %}를 제어하기 위해서는 Main Controller UART의 신호를 RS485 type으로 변환시켜 주어야 합니다. 다음은 권장 회로도 입니다.
 
 ![](/assets/images/dxl/pro/485_circuit_pro.png)
 
@@ -12,9 +12,9 @@ Main Controller를 직접 제작하여 {% if page.product_group=='dxl_pro_plus' 
 - DIRECTION485 Level =Low인 경우: D+, D-의 신호가 RxD로 입력
 
 ## [핀 배열](#핀-배열)
-커넥터의 핀 배열은 아래 그림과 같습니다. {% if page.product_group=='dxl_pro_plus' %}다이나믹셀-P 시리즈{% else %}다이나믹셀 PRO 시리즈{% endif %}에 있는 두 개의 4P 커넥터는 내부에서 서로 연결되어 있으므로 두 개 중 어떠한 커넥터에 연결해도 {% if page.product_group=='dxl_pro_plus' %}다이나믹셀-P 시리즈{% else %}다이나믹셀 PRO 시리즈{% endif %} 를 구동시킬 수 있습니다. 또한, 2Pin 커넥터는 파워 커넥터 전용으로, 높은 전류를 사용할 때에는, 이 커넥터를 통해서 전원을 공급해주는 것을 권장합니다.
+커넥터의 핀 배열은 아래 그림과 같습니다. {% if page.product_group=='dxl_p' %}다이나믹셀-P 시리즈{% else %}다이나믹셀 PRO 시리즈{% endif %}에 있는 두 개의 4P 커넥터는 내부에서 서로 연결되어 있으므로 두 개 중 어떠한 커넥터에 연결해도 {% if page.product_group=='dxl_p' %}다이나믹셀-P 시리즈{% else %}다이나믹셀 PRO 시리즈{% endif %} 를 구동시킬 수 있습니다. 또한, 2Pin 커넥터는 파워 커넥터 전용으로, 높은 전류를 사용할 때에는, 이 커넥터를 통해서 전원을 공급해주는 것을 권장합니다.
 
-{% if page.product_group=='dxl_pro_plus' %}
+{% if page.product_group=='dxl_p' %}
 ![](/assets/images/dxl/p/pin_name.png)
 
 ![](/assets/images/dxl/p/connection.png)

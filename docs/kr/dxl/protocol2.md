@@ -98,7 +98,7 @@ Instruction Packet 의 처리 결과를 나타냄
 | 0x04  | Data Range Error  | 해당 Address 에 쓰려는 Data 가 최소/최대값의 범위를 벗어난 경우                                                                                                                                      |
 | 0x05  | Data Length Error | 해당 Address 의 데이터 길이보다 짧은 데이터를 적으려고 한 경우<br />(예: 4 byte로 정의된 항목의 2 byte 만 쓰려고 하는 경우)                                                                          |
 | 0x06  | Data Limit Error  | 해당 Address 에 쓰려는 Data 가 Limit 값을 벗어난 경우                                                                                                                                                |
-| 0x07  | Access Errer      | Read Only 혹은 정의되지 않은 Address 에 값을 쓰려고 한 경우<br />Write Only 혹은 정의되지 않은 Address 에 값을 읽으려고 한 경우<br />Torque Enable(ROM Lock) 상태에서 ROM 영역에 값을 쓰려고 한 경우 |
+| 0x07  | Access Error      | Read Only 혹은 정의되지 않은 Address 에 값을 쓰려고 한 경우<br />Write Only 혹은 정의되지 않은 Address 에 값을 읽으려고 한 경우<br />Torque Enable(ROM Lock) 상태에서 ROM 영역에 값을 쓰려고 한 경우 |
 
 ## Parameter
 
