@@ -405,7 +405,7 @@ XL-320을 제외한 3핀 TTL 다이나믹셀은 헤더의 +-핀 또는 배터리
 
 - 배터리 혼용 금지
 
-  ![](/assets/images/parts/controller/opencm904/opencm904_24.png)
+  ![](/assets/images/parts/controller/opencm904/opencm904_23.jpg)
 
 USB 포트는 LBS-40 배터리 혹은 +-핀과 동시 연결해도 무방합니다.(차단회로 내장)  
 +- 혹은 배터리로 공급되는 전압은 다이나믹셀의 권장 전압으로 사용하시길 추천합니다.  
