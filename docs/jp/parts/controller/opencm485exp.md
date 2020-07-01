@@ -1,39 +1,39 @@
 ---
 layout: archive
-lang: jp
+lang: en
 ref: opencm485exp
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/parts/controller/opencm485exp/
+permalink: /docs/en/parts/controller/opencm485exp_jp/
 sidebar:
   title: OpenCM 485 EXP
-  nav: "opencm485exp"
+  nav: "opencm485exp_jp"
 ---
 
 ![](/assets/images/parts/controller/opencm904/opencm485exp_product.jpg)
 
 > OpenCM 485 Expansion Board
 
-# [イントロダクション](#introduction)
+# [イントロダクション](#イントロダクション)
 
-# [仕様表](#specifications)
+# [仕様表](#仕様表)
 
-| 項目　           | 説明　                   |
-| :-------------: | :---------------------: |
-| 入力電圧　　      | 5 ~ 30V                 |
-| 電源　           | SMPS, LiPo, DXL PRO 24V |
-| 電源スイッチ      | 1                       |
-| DYNAMIXEL ポート | 4ピン x 5, 3ピン x 5　　  |
-| ボタン           | 2                       |
-| LED             | 5                       |
-| サイズ           | 68 mm X 66.5 mm         |
-| 重量　           | 32g                     |
-| シリアル3 TX　　  | ヘッダーピン #24          |
-| シリアル3 RX　　  | ヘッダーピン #25          |
-| 方向制御　　      | ヘッダーピン #22          |
+|       項目       |          説明           |
+|:----------------:|:-----------------------:|
+|     入力電圧     |         5 ~ 30V         |
+|       電源       | SMPS, LiPo, DXL PRO 24V |
+|   電源スイッチ   |            1            |
+| DYNAMIXEL ポート |  4ピン x 5, 3ピン x 5   |
+|      ボタン      |            2            |
+|       LED        |            5            |
+|      サイズ      |     68 mm X 66.5 mm     |
+|       重量       |           32g           |
+|   シリアル3 TX   |    ヘッダーピン #24     |
+|   シリアル3 RX   |    ヘッダーピン #25     |
+|     方向制御     |    ヘッダーピン #22     |
 
-# [レイアウト](#layout)
+# [レイアウト](#レイアウト)
 
 ![](/assets/images/parts/controller/opencm904/opencm485exp_01.jpg)
 
@@ -50,7 +50,7 @@ sidebar:
 
 {% include jp/dxl/pinout_warning.md %}
 
-# [OpenCM9.04の接続](#connecting-opencm904)
+# [OpenCM9.04の接続](#opencm904の接続)
 
 1. OpenCM 485 EXPおよびOpenCM9.04ボードを準備します。 OpenCM9.04のどのバージョンでも互換性があります。 ヘッダピンをOpenCM9.04にはんだ付けします。
 
@@ -72,7 +72,7 @@ sidebar:
     ![](/assets/images/parts/controller/opencm904/opencm485exp_05.jpg)
 
 
-# [電源回路接続](#power-circuit-connection)
+# [電源回路接続](#電源回路接続)
 
 OpenCM 485 EXPとOpenCM9.04の電源回路のブロック図を以下に示します。
 OpenCM 485 EXPは、デフォルトでOpenCM9.04から5Vを供給します。 JP1を使用して、OpeCM 485 EXPボードからのVDD電源がOpenCM9.04に供給されているかどうかを判断できます。
@@ -90,7 +90,7 @@ OpenCM 485 EXPのDYNAMIXELバスは、OpenCM9.04のUSART3（シリアル3）を�
 
 > OpenCM9.04 および OpenCM 485 EXP バス接続
 
-# [EXP Board プログラミング](#exp-board-programming)
+# [EXP Board プログラミング](#exp-board-プログラミング)
 
 OpenCM9.04でOpenCM 485 EXPボードを使用するには、Arduino IDEを使用してください。
 
@@ -120,26 +120,24 @@ OpenCM9.04でOpenCM 485 EXPボードを使用するには、Arduino IDEを使用
     dxl_wb.begin(DEVICE_NAME, BAUDRATE);
     ```
 
-# [ボタン & LED](#button-led)
+# [ボタン そして LED](#ボタン-そして-led)
 
 OpenCM 485 EXPボードには、OpenCM9.04のI/Oピンに接続された2つのボタンと3つのLEDがあります。  
 ボタンとLEDのOpenCM9.04のI/Oピン番号を以下に示します。
 
 |         | OpenCM9.04 I/O |
 |:-------:|:--------------:|
-|  ボタン1 |       16       |
-|  ボタン2 |       17       |
+| ボタン1 |       16       |
+| ボタン2 |       17       |
 |  LED1   |       18       |
 |  LED2   |       19       |
 |  LED3   |       20       |
 
 ![](/assets/images/parts/controller/opencm904/opencm485exp_11.jpg)
 
-
-# [ダウンロード](#downloads)
+# [ダウンロード](#ダウンロード)
 
 - `ダウンロード PDF` [PCB Schematic](http://support.robotis.com/en/baggage_files/opencm/schematic1___opencm_485exp.pdf)
-
 
 [RoboPlus Task]: /docs/en/software/rplus1/task/getting_started/
 [Number of pressed Start button]: /docs/en/software/rplus1/task/programming_02/#button-count

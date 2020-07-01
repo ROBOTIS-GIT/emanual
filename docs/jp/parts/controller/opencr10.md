@@ -1,41 +1,41 @@
 ---
 layout: archive
-lang: jp
+lang: en
 ref: opencr10
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/jp/parts/controller/opencr10/
+permalink: /docs/en/parts/controller/opencr10_jp/
 sidebar:
   title: OpenCR1.0
-  nav: "opencr10"
+  nav: "opencr10_jp"
 ---
 
 ![](/assets/images/parts/controller/opencr10/opencr_product.png)
 
 > OpenCR 1.0
 
-# [イントロダクション](#introduction)
+# [イントロダクション](#イントロダクション)
 OpenCR1.0は、完全にオープンソースのハードウェアとソフトウェアを提供するために、ROSの組み込みシステム用に開発されました。  
 ボードの回路図、PCBカバー、BOM、TurtleBot3とOP3用のファームウェアのソースコードなど、ボードに関するすべてのものは、ユーザーとROSコミュニティのためにオープンソースライセンスのもとで無料で配布されています。  
 OpenCR1.0ボード内のSTM32F7シリーズチップは、浮動小数点演算ユニットを搭載した非常に強力なARM Cortex-M7をベースにしています。  
 OpenCR1.0の開発環境は、若い学生向けのArduino IDEやScratchから、エキスパート向けの従来のファームウェア開発まで幅広く対応しています。  
 
-# [仕様表](#specifications)
+# [仕様表](#仕様表)
 
-| 項目                | 仕様                                                                                                                                                                                                                            |
-|:---------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| マイクロコントローラー      | STM32F746ZGT6 / 32-bit ARM Cortex®-M7 with  FPU (216MHz, 462DMIPS)<br />[Reference Manual], [Datasheet]                                                                                                                                   |
-| センサー              | (**廃止**) 三軸ジャイロ, 三軸加速度, 三軸磁気センサ (MPU9250)<br /> (**新設**) 三軸ジャイロ, 3軸加速度, デジタルモーションプロセッサー™ (ICM-20648)                                            |
-| プログラマー           | ARM Cortex 10ピン JTAG/SWD コネクター<br />USBデバイスファームウェア アップグレード (DFU)<br />シリアル                                                                                                                                                    |
-| デジタルI/O          | 32ピン (L 14, R 18) *Arduino connectivity<br />5ピン OLLO x 4<br />GPIO x 18ピン<br />PWM x 6<br />I2C x 1<br />SPI x 1                                                                                                                  |
-| アナログ入力         | ADCチャンネル (最大 12bit) x 6                                                                                                                                                                                                              |
-| 通信ポート  | USB x 1 (マイクロUSBタイプB/USB 2.0/Host/Peripheral/OTG)<br />TTL x 3 ([B3B-EH-A] / DYNAMIXEL)<br />RS485 x 3 ([B4B-E名称H-A] / DYNAMIXEL)<br />UART x 2 ([20010WS-04])<br />CAN x 1 ([20010WS-04])                                        |
-| LEDとボタン     | LD2 (red/green) : USB通信<br />ユーザーLED x 4 : LD3 (赤), LD4 (緑), LD5 (青)<br />ユーザーボタン  x 2<br />パワーLED : LD1 (赤, 3.3 V 電源オン)<br />リセットボタン x 1 (ボードの電源リセット用)<br />電源オン/オフ スイッチ x 1 |
-| 入力電源  | 5 V (USB VBUS), 7-24 V (バッテリーもしくはSMPS)<br />標準バッテリー : LI-PO 11.1V 1,800mAh 19.98Wh<br />標準SMPS : 12V 4.5A<br />RTC（リアルタイムクロック）用外部バッテリー ([Molex 53047-0210])                                       |
-| 出力電源 | <sup>`*`</sup>12V 最大 4.5A([SMW250-02])<br /><sup>`*`</sup>5V 最小 4A([5267-02A]), 3.3V@800mA([20010WS-02])                                                                                                                                |
-| 寸法           | 105(幅) X 75(奥行き) mm                                                                                                                                                                                                                         |
-| 重量               | 60g                                                                                                                                                                                                                                       |
+| 項目                   | 仕様                                                                                                                                                                                                                              |
+|:-----------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| マイクロコントローラー | STM32F746ZGT6 / 32-bit ARM Cortex®-M7 with  FPU (216MHz, 462DMIPS)<br />[Reference Manual], [Datasheet]                                                                                                                           |
+| センサー               | (**廃止**) 三軸ジャイロ, 三軸加速度, 三軸磁気センサ (MPU9250)<br /> (**新設**) 三軸ジャイロ, 3軸加速度, デジタルモーションプロセッサー™ (ICM-20648)                                                                               |
+| プログラマー           | ARM Cortex 10ピン JTAG/SWD コネクター<br />USBデバイスファームウェア アップグレード (DFU)<br />シリアル                                                                                                                           |
+| デジタルI/O            | 32ピン (L 14, R 18) *Arduino connectivity<br />5ピン OLLO x 4<br />GPIO x 18ピン<br />PWM x 6<br />I2C x 1<br />SPI x 1                                                                                                           |
+| アナログ入力           | ADCチャンネル (最大 12bit) x 6                                                                                                                                                                                                    |
+| 通信ポート             | USB x 1 (マイクロUSBタイプB/USB 2.0/Host/Peripheral/OTG)<br />TTL x 3 ([B3B-EH-A] / DYNAMIXEL)<br />RS485 x 3 ([B4B-E名称H-A] / DYNAMIXEL)<br />UART x 2 ([20010WS-04])<br />CAN x 1 ([20010WS-04])                               |
+| LEDとボタン            | LD2 (red/green) : USB通信<br />ユーザーLED x 4 : LD3 (赤), LD4 (緑), LD5 (青)<br />ユーザーボタン  x 2<br />パワーLED : LD1 (赤, 3.3 V 電源オン)<br />リセットボタン x 1 (ボードの電源リセット用)<br />電源オン/オフ スイッチ x 1 |
+| 入力電源               | 5 V (USB VBUS), 7-24 V (バッテリーもしくはSMPS)<br />標準バッテリー : LI-PO 11.1V 1,800mAh 19.98Wh<br />標準SMPS : 12V 4.5A<br />RTC（リアルタイムクロック）用外部バッテリー ([Molex 53047-0210])                                 |
+| 出力電源               | <sup>`*`</sup>12V 最大 4.5A([SMW250-02])<br /><sup>`*`</sup>5V 最小 4A([5267-02A]), 3.3V@800mA([20010WS-02])                                                                                                                      |
+| 寸法                   | 105(幅) X 75(奥行き) mm                                                                                                                                                                                                           |
+| 重量                   | 60g                                                                                                                                                                                                                               |
 
 {% capture note_01 %}
 **注釈**: ご使用の前に必ずお読みいいただき、正しくお使いください。
@@ -45,52 +45,52 @@ OpenCR1.0の開発環境は、若い学生向けのArduino IDEやScratchから�
 {% endcapture %}
 <div class="notice--notice">{{ note_01 | markdownify }}</div>
 
-# [レイアウト/ピン配置](#layoutpin-map)
+# [レイアウト/ピン配置](#レイアウトピン配置)
 
 ![](/assets/images/parts/controller/opencr10/opencr_pinout.png)
 
 {% include jp/dxl/pinout_warning.md %}
 
-## [Arduinoコネクター](#arduino-connector)
+## [Arduinoコネクター](#arduinoコネクター)
 OpenCRにはArduino Unoのピンに対応したコネクタが付属しています。  
 0～21番のピンはArduino Unoと同じピンで、それ以降はOpenCRに追加されたピンにマッピングされています。  
 
 ![](/assets/images/parts/controller/opencr10/arduino_pinmap_01.png)
 
-| ピン番号 |    関数   |     1     |     2     |   3    | etc  |
-|:-------:|:--------:|:---------:|:---------:|:------:|:----:|
-|    0    | UART RXD | UART6_RX  |           |        | `FT` |
-|    1    | UART TXD | UART6 TX  |           |        | `FT` |
-|    2    |          |           |           | EXTI_0 | `FT` |
-|    3    |   PWM    | TIM3_CH1  |           | EXTI_1 | `FT` |
-|    4    |          |           |           | EXTI_2 | `FT` |
-|    5    |   PWM    | TIM1_CH1  |           |        | `FT` |
-|    6    |   PWM    | TIM2_CH3  |           |        | `FT` |
-|    7    |          |           |           | EXTI_3 | `FT` |
-|    8    |          |           |           | EXTI_4 | `FT` |
-|    9    |   PWM    | TIM9_CH2  |           |        | `FT` |
-|   10    | PWM/NSS  | TIM11_CH1 | SPI2_NSS  |        | `FT` |
-|   11    | PWM/MOSI | TIM12_CH2 | SPI2_MOSI |        | `FT` |
-|   12    |   MISO   |           | SPI2_MISO |        | `FT` |
-|   13    |   SCK    |           | SPI2_SCK  |        | `FT` |
-|   14    |   SDA    |           | I2C1_SDA  |        | `FT` |
-|   15    |   SCL    |           | I2C1_SCL  |        | `FT` |
-|   16    |   ADC    |    A0     |           |        | `FT` |
-|   17    |   ADC    |    A1     |           |        | `FT` |
-|   18    |   ADC    |    A2     |           |        | `FT` |
-|   19    |   ADC    |    A3     |           |        | `FT` |
-|   20    |   ADC    |    A4     |           |        | `FT` |
-|   21    |   ADC    |    A5     |           |        | `FT` |
+| ピン番号 |   関数   |     1     |     2     |   3    | etc  |
+|:--------:|:--------:|:---------:|:---------:|:------:|:----:|
+|    0     | UART RXD | UART6_RX  |           |        | `FT` |
+|    1     | UART TXD | UART6 TX  |           |        | `FT` |
+|    2     |          |           |           | EXTI_0 | `FT` |
+|    3     |   PWM    | TIM3_CH1  |           | EXTI_1 | `FT` |
+|    4     |          |           |           | EXTI_2 | `FT` |
+|    5     |   PWM    | TIM1_CH1  |           |        | `FT` |
+|    6     |   PWM    | TIM2_CH3  |           |        | `FT` |
+|    7     |          |           |           | EXTI_3 | `FT` |
+|    8     |          |           |           | EXTI_4 | `FT` |
+|    9     |   PWM    | TIM9_CH2  |           |        | `FT` |
+|    10    | PWM/NSS  | TIM11_CH1 | SPI2_NSS  |        | `FT` |
+|    11    | PWM/MOSI | TIM12_CH2 | SPI2_MOSI |        | `FT` |
+|    12    |   MISO   |           | SPI2_MISO |        | `FT` |
+|    13    |   SCK    |           | SPI2_SCK  |        | `FT` |
+|    14    |   SDA    |           | I2C1_SDA  |        | `FT` |
+|    15    |   SCL    |           | I2C1_SCL  |        | `FT` |
+|    16    |   ADC    |    A0     |           |        | `FT` |
+|    17    |   ADC    |    A1     |           |        | `FT` |
+|    18    |   ADC    |    A2     |           |        | `FT` |
+|    19    |   ADC    |    A3     |           |        | `FT` |
+|    20    |   ADC    |    A4     |           |        | `FT` |
+|    21    |   ADC    |    A5     |           |        | `FT` |
 
 `FT`ピンはアナログモード時を除き、5Vトレラントです。FTピンの最大注入電流は **-5mA** です。また、全I/O端子を合計した総出力電流は、**120mA / -120mA** となります。  
 {: .notice}
 
-## [ユーザーLED](#user-led)
+## [ユーザーLED](#ユーザーled)
 OpenCRの追加LEDは4つのLEDで構成されており、Arduinoのピン22-25にマッピングされています。  
 
 ![](/assets/images/parts/controller/opencr10/arduino_pinmap_03.png)
 
-|  名称    | Arduinoピン  | ピンの名称         |
+| 名称    | Arduinoピン | ピンの名称       |
 |:--------|:------------|:-----------------|
 | USER1   | 22          | BDPIN_LED_USER_1 |
 | USER2   | 23          | BDPIN_LED_USER_2 |
@@ -99,32 +99,32 @@ OpenCRの追加LEDは4つのLEDで構成されており、Arduinoのピン22-25�
 | STS     | 36          | BDPIN_LED_STATUS |
 | Arduino | 13          | LED_BUILTIN      |
 
-## [ディップスイッチ](#dip-switch)
+## [ディップスイッチ](#ディップスイッチ)
 
 ![](/assets/images/parts/controller/opencr10/arduino_pinmap_04.png)
 
-| Arduinoピン | ピンの名称       |
+| Arduinoピン | ピンの名称     |
 |:------------|:---------------|
 | 26          | BDPIN_DIP_SW_1 |
 | 27          | BDPIN_DIP_SW_2 |
 
-## [GPIO](#pgio)
+## [GPIO](#gpio)
 18ピンの共通GPIO拡張コネクタを持ち、ArduinoのGPIOピンにマッピングされています。下のピン番号はArduinoのピン番号です。  
 
 ![](/assets/images/parts/controller/opencr10/arduino_pinmap_05.png)
 
-| ピン番号 | Arduinoピン | ピンの名称      | ピン番号 | Arduinoピン | ピンの名称      | etc  |
-|:-----------|:------------|:--------------|:-----------|:------------|:--------------|:-----|
-| 1          | -           | 3.3V          | 2          | -           | GND           | -    |
-| 3          | 50          | BDPIN_GPIO_1  | 4          | 51          | BDPIN_GPIO_2  | `FT` |
-| 5          | 52          | BDPIN_GPIO_3  | 6          | 53          | BDPIN_GPIO_4  | `FT` |
-| 7          | 54          | BDPIN_GPIO_5  | 8          | 55          | BDPIN_GPIO_6  | `FT` |
-| 9          | 56          | BDPIN_GPIO_7  | 10         | 57          | BDPIN_GPIO_8  | `FT` |
-| 11         | 58          | BDPIN_GPIO_9  | 12         | 59          | BDPIN_GPIO_10 | `FT` |
-| 13         | 60          | BDPIN_GPIO_11 | 14         | 61          | BDPIN_GPIO_12 | `FT` |
-| 15         | 62          | BDPIN_GPIO_13 | 16         | 63          | BDPIN_GPIO_14 | `FT` |
-| 17         | 64          | BDPIN_GPIO_15 | 18         | 65          | BDPIN_GPIO_16 | `FT` |
-| 19         | 66          | BDPIN_GPIO_17 | 20         | 67          | BDPIN_GPIO_18 | `FT` |
+| ピン番号 | Arduinoピン | ピンの名称    | ピン番号 | Arduinoピン | ピンの名称    | etc  |
+|:---------|:------------|:--------------|:---------|:------------|:--------------|:-----|
+| 1        | -           | 3.3V          | 2        | -           | GND           | -    |
+| 3        | 50          | BDPIN_GPIO_1  | 4        | 51          | BDPIN_GPIO_2  | `FT` |
+| 5        | 52          | BDPIN_GPIO_3  | 6        | 53          | BDPIN_GPIO_4  | `FT` |
+| 7        | 54          | BDPIN_GPIO_5  | 8        | 55          | BDPIN_GPIO_6  | `FT` |
+| 9        | 56          | BDPIN_GPIO_7  | 10       | 57          | BDPIN_GPIO_8  | `FT` |
+| 11       | 58          | BDPIN_GPIO_9  | 12       | 59          | BDPIN_GPIO_10 | `FT` |
+| 13       | 60          | BDPIN_GPIO_11 | 14       | 61          | BDPIN_GPIO_12 | `FT` |
+| 15       | 62          | BDPIN_GPIO_13 | 16       | 63          | BDPIN_GPIO_14 | `FT` |
+| 17       | 64          | BDPIN_GPIO_15 | 18       | 65          | BDPIN_GPIO_16 | `FT` |
+| 19       | 66          | BDPIN_GPIO_17 | 20       | 67          | BDPIN_GPIO_18 | `FT` |
 
 `FT`ピンはアナログモード時を除き、5Vトレラントです。FTピンの最大注入電流 **-5mA** です。また、全I/Oピンを合計した総出力電流は、 **120mA / -120mA** となります。  
 {: .notice}
@@ -132,33 +132,33 @@ OpenCRの追加LEDは4つのLEDで構成されており、Arduinoのピン22-25�
 **注釈** : プルアップ/プルダウンの代表的な抵抗は40kΩです。  
 {: .notice}
 
-## [ROBOTIS 5-ピン コネクター](#robotis-5-pin-connector)
+## [ROBOTIS 5-ピン コネクター](#robotis-5-ピン-コネクター)
 
 ![](/assets/images/parts/controller/opencr10/arduino_pinmap_06.png)
 
-## [プッシュスイッチ](#push-switch)
+## [プッシュスイッチ](#プッシュスイッチ)
 
 ![](/assets/images/parts/controller/opencr10/arduino_pinmap_08.png)
 
-| Arduinoピン | ピンの名称        |
+| Arduinoピン | ピンの名称      |
 |:------------|:----------------|
 | 34          | BDPIN_PUSH_SW_1 |
 | 35          | BDPIN_PUSH_SW_2 |
 
-## [外部割り込み](#external-interrupt)
+## [外部割り込み](#外部割り込み)
 外部割込みは以下のピンに割り当てられており、 *attachInterrupt(EXTI_Pin, callbackFunction, Mode)* マクロで使用することができます。  
 
-| EXTI ピン | Arduinoピン | ピンの名称    |
-|:---------|:------------|:------------|
-| 0        | 2           | -           |
-| 1        | 3           | TIM3_CH1    |
-| 2        | 4           | -           |
-| 3        | 7           | -           |
-| 4        | 8           | -           |
-| 5        | 42          | OLLO_P1_ADC |
-| 6        | 45          | OLLO_P2_ADC |
-| 7        | 72          | OLLO_P3_ADC |
-| 8        | 75          | OLLO_P4_ADC |
+| EXTI ピン | Arduinoピン | ピンの名称  |
+|:----------|:------------|:------------|
+| 0         | 2           | -           |
+| 1         | 3           | TIM3_CH1    |
+| 2         | 4           | -           |
+| 3         | 7           | -           |
+| 4         | 8           | -           |
+| 5         | 42          | OLLO_P1_ADC |
+| 6         | 45          | OLLO_P2_ADC |
+| 7         | 72          | OLLO_P3_ADC |
+| 8         | 75          | OLLO_P4_ADC |
 
 ```c
 /*
@@ -174,19 +174,19 @@ void changeDirection_EXIT_0(void){
 
 ## [UART(Serial)](#uartserial)
 
-| Classインスタンス     | Arduinoピン   |ハードウェア|
-|:--------------------|:-------------|:---------|
-| Serial              | USB          | USB      |
-| Serial1             | 0(RX), 1(TX) | USART6   |
-| Serial2 (SerialBT1) | UART1        | USART2   |
-| Serial3             | DXL Port     | USART3   |
-| Serial4 (SerialBT2) | UART2        | UART8    |
+| Classインスタンス   | Arduinoピン  | ハードウェア |
+|:--------------------|:-------------|:-------------|
+| Serial              | USB          | USB          |
+| Serial1             | 0(RX), 1(TX) | USART6       |
+| Serial2 (SerialBT1) | UART1        | USART2       |
+| Serial3             | DXL Port     | USART3       |
+| Serial4 (SerialBT2) | UART2        | UART8        |
 
 **注意**: DYNAMIXELではSerial3を使用しているため、他のシリアルとは使い方が異なります。（詳細はDYNAMIXEL Workbenchを参照してください）。  
 {: .notice--warning}
 
 
-## [ピンの定義](#pin-definition)
+## [ピンの定義](#ピンの定義)
 
 ```c++
 extern const Pin2PortMapArray g_Pin2PortMapArray[]=
@@ -289,9 +289,9 @@ extern const Pin2PortMapArray g_Pin2PortMapArray[]=
 
 # [Arduino IDE](#arduino-ide)
 
-## [Linuxにインストール](#install-on-linux)
+## [Linuxにインストール](#linuxにインストール)
 
-### [USBポートの設定](#usb-port-settings)
+### [USBポートの設定](#usbポートの設定)
 OpenCRのUSBポートがroot権限無しでArduinoスケッチをアップできるようにします。  
 
 ```bash
@@ -303,7 +303,7 @@ $ sudo udevadm trigger
 
 ![](/assets/images/platform/turtlebot3/preparation/7_1_1_usb_port_setting.png)
 
-### [コンパイラの設定](#compiler-settings)
+### [コンパイラの設定](#コンパイラの設定)
 OpenCRライブラリは、32ビットプラットフォーム用に構築されているため、64ビットPCではArduino IDE用の32ビットコンパイラが必要になります。  
 
 ```bash
@@ -312,7 +312,7 @@ $ sudo apt-get install libncurses5-dev:i386
 
 ![](/assets/images/platform/turtlebot3/preparation/7_1_2_compiler_settings.png)
 
-### [Arduino IDE(Linux)のインストール](#install-arduino-idelinux)
+### [Arduino IDE(Linux)のインストール](#arduino-idelinuxのインストール)
 Arduino公式ホームページから最新版のArduino IDEをダウンロードして、インストールします。現在、OpenCRはバージョン1.6.4.以降でサービス開始予定です。  
 
 [https://www.arduino.cc/en/Main/Software](https://www.arduino.cc/en/Main/Software)
@@ -332,7 +332,7 @@ $ export PATH=$PATH:$HOME/tools/arduino-1.6.4
 $ source ~/.bashrc
 ```
 
-### [Arduino IDE(Linux)の実行](#run-arduino-idelinux)
+### [Arduino IDE(Linux)の実行](#arduino-idelinuxの実行)
 Linuxプラットフォーム上でArduino IDEを実行するには、ターミナルに以下のように入力します。  
 
 ```bash
@@ -341,7 +341,7 @@ $ arduino
 
 ![](/assets/images/platform/turtlebot3/preparation/ide0.png)
 
-### [Arduino IDE(Linux)へのポーティング](#porting-to-arduino-idelinux)
+### [Arduino IDE(Linux)へのポーティング](#arduino-idelinuxへのポーティング)
 
 #### 環境設定
 Arduino IDEを起動した後に、IDEのトップメニューにある「ファイル」→「環境設定」をクリックします。環境設定ウィンドウが表示されたら、以下のリンクをコピーして、Additional Boards Manager URLsのテキストボックスに貼り付けます。(この作業には約20分かかります)  
@@ -379,7 +379,7 @@ https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCR/master/arduino/opencr_relea
 
 ![](/assets/images/platform/turtlebot3/preparation/ide6.png)
 
-### [モデムマネージャの削除](#remove-modemmanager)
+### [モデムマネージャの削除](#モデムマネージャの削除)
 
 Arduino IDEでプログラミングを行い、OpenCRにプログラムをアップロードすると、OpenCRが再起動して再接続されます。同時に、Linuxのモデム関連のパッケージから、デバイスを管理するためのATコマンドが送信されます。このように、OpenCR上で接続エラーが発生していることを示していますので、このステップは事前に行っておく必要があります。 
 
@@ -387,15 +387,15 @@ Arduino IDEでプログラミングを行い、OpenCRにプログラムをアッ
 $ sudo apt-get purge modemmanager
 ```
 
-## [Macにインストール](#install-on-mac)
+## [Macにインストール](#macにインストール)
 
-### [Arduino IDE(Mac)のインストール](#install-arduino-idemac)
+### [Arduino IDE(Mac)のインストール](#arduino-idemacのインストール)
 
 Arduinoの公式ホームページから最新版のArduino IDEをダウンロードしてインストールします。現在、OpenCRはバージョン1.6.4以降でサービスを開始する予定です。
 
 [https://www.arduino.cc/en/Main/Software](https://www.arduino.cc/en/Main/Software)
 
-### [Arduino IDE(Mac)の実行](#run-arduino-idemac)
+### [Arduino IDE(Mac)の実行](#arduino-idemacの実行)
 
 MacプラットフォームでArduino IDEを実行するには、以下のようにArduino IDEのアイコンをクリックします。  
 
@@ -403,7 +403,7 @@ MacプラットフォームでArduino IDEを実行するには、以下のよう
 
 ![](/assets/images/parts/controller/opencr10/arduino_mac_02.png)
 
-### [Arduino IDE(Mac)へのポーティング](#porting-to-arduino-idemac)
+### [Arduino IDE(Mac)へのポーティング](#arduino-idemacへのポーティング)
 
 #### 環境設定
 Arduino IDEを起動したら、IDEのトップメニューにある「ファイル」→「環境設定」をクリックします。環境設定ウィンドウが表示されたら、以下のリンクをコピーして、Additional Boards Manager URLsのテキストボックスに貼り付けます。(この作業には約20分かかります)  
@@ -435,9 +435,9 @@ https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCR/master/arduino/opencr_relea
 
 ![](/assets/images/parts/controller/opencr10/arduino_mac_06.png)
 
-## [Windowsにインストール](#install-on-windows)
+## [Windowsにインストール](#windowsにインストール)
 
-### [ドライバーインストール](#install-driver)
+### [ドライバーインストール](#ドライバーインストール)
 
 **警告** : Windows 10の場合は、このドライバーのインストールをスキップしてください。  
 適切なドライバーが自動的にインストールされます。  
@@ -447,7 +447,7 @@ https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCR/master/arduino/opencr_relea
 
 [http://www.st.com/en/development-tools/stsw-stm32102.html](http://www.st.com/en/development-tools/stsw-stm32102.html)
 
-### [Arduino IDE(Windows)のインストール](#install-arduino-idewindows)
+### [Arduino IDE(Windows)のインストール](#arduino-idewindowsのインストール)
 
 Arduinoの公式ホームページから最新版のArduino IDEをダウンロードしてインストールします。現在、OpenCRはバージョン1.6.4以降でサービスを開始する予定です。  
 
@@ -455,7 +455,7 @@ Arduinoの公式ホームページから最新版のArduino IDEをダウンロ�
 
 Arduino IDE for Windowsにはインストール版と圧縮版がありますので、お好きな方法でインストールしてください。  
 
-### [Arduino IDE(Windows)へのポーティング](#porting-to-arduino-idewindows)
+### [Arduino IDE(Windows)へのポーティング](#arduino-idewindowsへのポーティング)
 
 #### 環境設定
 Arduino IDEを起動したら、IDEのトップメニューにある「ファイル」→「環境設定」をクリックします。環境設定ウィンドウが表示されたら、以下のリンクをコピーして、Additional Boards Manager URLsのテキストボックスに貼り付けます。(この作業には約20分かかります)  
@@ -478,7 +478,7 @@ https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCR/master/arduino/opencr_relea
 {: .notice--warning}
 
 
-# [例](#examples)
+# [例](#例)
 
 ## [LED](#led)
 OpenCRボードに内蔵されているLEDテストです。  
@@ -534,7 +534,7 @@ void loop() {
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VTz_iBqisFk" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
-## [ボタン](#button)
+## [ボタン](#ボタン)
 これは、OpenCRボードに内蔵されているBUTTONテストです。 　
 
 ### コード
@@ -584,7 +584,7 @@ void loop(){
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8RfEmWHOjlQ" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
-## [ブザー](#buzzer)
+## [ブザー](#ブザー)
 OpenCRボードに内蔵されたBUZZER関連のテストで、ArduinoのTone機能を利用しています。  　
 
 ### コード
@@ -779,9 +779,9 @@ OpenCRの基本例として提供されているファームウェアは読み�
 
     ![](/assets/images/parts/controller/opencr10/op3_09.png)
 
-## [センサー](#sensors)
+## [センサー](#センサー)
 
-### [環境光センサー](#ambient-light-sensor)
+### [環境光センサー](#環境光センサー)
 OpenCRボード上での環境光センサーテストです。  
 
 - ピン配置
@@ -853,7 +853,7 @@ void loop()
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eqZsd12g0VI" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
-### [チルトセンサー](#tilt-sensor)
+### [チルトセンサー](#チルトセンサー)
 OpenCRのチルトセンサーのテストです。  
 
 ![](/assets/images/parts/controller/opencr10/tilt_sensor.png)
@@ -906,7 +906,7 @@ void loop()
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VejyCWv4FLc" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
-### [回転センサー](#rotation-sensor)
+### [回転センサー](#回転センサー)
 
 OpenCRボードの回転センサーテストです。  
 
@@ -985,7 +985,7 @@ void loop()
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/z2AbTL7R6rg" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
-### [静電容量式タッチセンサー](#capacitive-touch-sensor)
+### [静電容量式タッチセンサー](#静電容量式タッチセンサー)
 OpenCRボードの静電容量式タッチセンサーテストです。  
 
 ![](/assets/images/parts/controller/opencr10/cap_sensor.jpg)
@@ -1051,7 +1051,7 @@ void loop()
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CtYwSdOD1wI" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
-### [炎センサー](#flame-sensor)
+### [炎センサー](#炎センサー)
 OpenCRボードの炎センサーのテストです。  
 
 ![](/assets/images/parts/controller/opencr10/flame_sensor.jpg)
@@ -1108,7 +1108,7 @@ void loop()
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/DcDFl4UjUos" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
-### [ジョイステックセンサ](#joystick-sensor)
+### [ジョイステックセンサ](#ジョイステックセンサ)
 OpenCRボードでのジョイステックテストです。  
 
 ![](/assets/images/parts/controller/opencr10/joystick_sensor.png)
@@ -1164,7 +1164,7 @@ void loop()
 
 - [OpenMANIPULATORの例](/docs/en/platform/openmanipulator/#how-to-control-on-opencr)
 
-# [ブートローダー](#bootloader)
+# [ブートローダー](#ブートローダー)
 ブートローダーは、ボードを初期化し、フラッシュメモリにファームウェアをダウンロードして実行する役割を担っています。
 
 OpenCRボードのメインMCUに使用されているSTM32F7xxは、DFU(Device Firmware Upgrade)をサポートしています。  
@@ -1172,10 +1172,10 @@ OpenCRボードのメインMCUに使用されているSTM32F7xxは、DFU(Device 
 USBでブートローダーを使用しても、他のJTAG機器を使用せずにブートローダーを使用できることが最大のメリットです。  
 STLinkなどの書き込み/デバッグ機器を使用せずに、MCUに内蔵されたDFUモードを使用してファームウェアを書き込みます。  
 
-|     項目     |         説明         |
+|     項目     |        説明         |
 |:------------:|:-------------------:|
 |    対応OS    | Windows, Linux, Mac |
-|  コンパイラー  | gcc arm 5.4 2016q2  |
+| コンパイラー | gcc arm 5.4 2016q2  |
 
 ![](/assets/images/parts/controller/opencr10/bootloader_19.png)
 
@@ -1187,19 +1187,19 @@ STLinkなどの書き込み/デバッグ機器を使用せずに、MCUに内蔵�
   - 電源投入時やリセット時にボタンを長押しすると、ブートローダーが実行されます。
   - 電源投入時にボタンが押されていない場合は、ブートローダーが実行されます。ファームウェアがフラッシュメモリにある場合は、ブートローダーがファームウェアを実行します。
 
-## [メモリマップ](#memory-map)
+## [メモリマップ](#メモリマップ)
 
 OpenCRで使用しているSTM32F746は、1024KBの内部フラッシュメモリを持ち、各領域は以下のように定義されています。ブートローダーはフラッシュメモリ内の最下位アドレスに配置されており、電源投入時とリセット時に最初にブートローダーが実行されます。  
 
 ![](/assets/images/parts/controller/opencr10/bootloader_01.png)
 
-## [ブートシーケンス](#boot-sequence)
+## [ブートシーケンス](#ブートシーケンス)
 
 ![](/assets/images/parts/controller/opencr10/bootloader_03.png)
 
 ボードの電源投入やリセット時にスイッチ2ボタンを押すと、ブートローダー状態でPCからのコマンドを待ちます。スイッチ2ボタンが押されていない場合は、フラッシュメモリのファームウェア領域にファームウェアが存在する場合は、ファームウェアにジャンプして実行します。
 
-## [通信プロトコル](#communication-protocol)
+## [通信プロトコル](#通信プロトコル)
 
 ### [MavLink](#mavlink)
 
@@ -1274,7 +1274,7 @@ void cmd_flash_fw_verify( msg_t *p_msg );
 void cmd_flash_fw_read_block( msg_t *p_msg );
 ```
 
-### [ダウンロードシーケンス](#download-sequence)
+### [ダウンロードシーケンス](#ダウンロードシーケンス)
 
 ブートローダーの主な機能は、パソコンからファームウェアファイルを受け取り、フラッシュに保存し、保存したファームウェアを実行することです。ダウンロードの順番は以下のようになっており、それを見ながら進め方やどこに目を向けて進めているかを確認することができます。これを元に実際の実装を行うことができます。  
 
@@ -1283,7 +1283,7 @@ void cmd_flash_fw_read_block( msg_t *p_msg );
 ![](/assets/images/parts/controller/opencr10/bootloader_06.png)
 
 
-### [メッセージ処理](#message-processing)
+### [メッセージ処理](#メッセージ処理)
 
 実際に実装したコードでは、メイン関数はメッセージ処理のために msg_process_vcp()関数を呼び出しています。この場合、USBからのデータがある場合はmsg_recv関数を呼び出してメッセージを解析し、何かコマンドを受信した場合はTRUEを返して対応するコマンド関数を呼び出しています。  
 
@@ -1365,21 +1365,7 @@ void cmd_read_version( msg_t *p_msg )
 }
 ```
 
-### [フォルダ構造](#folder-structure)
-
-| 項目          | 内容                                                     |
-|:-------------|:-------------------------------------------------------------|
-| bin          | ビルド後に生成されたobjとbinファイルを保存します                    |
-| common->bsp  | ボード固有の機能(LED / BUTTON / USBなど)を搭載しています           |
-| common->hal  | ハードウェアに依存しないボード上の機能フォルダ                       |
-| common->lib  | 外部または公的に使われているライブラリ                              |
-| msg->mavlink | Xmlによって生成された通信プロトコルソース                           |
-| msg->xml     | コマンドを定義したxmlファイルフォルダ　　　　　　　　　　　            |
-| src          | ブートローダー機能に必要な機能フォルダ                              |
-
-![](/assets/images/parts/controller/opencr10/bootloader_08.png)
-
-## [ブートローダーのアップデート](#update-bootloader)
+## [ブートローダーのアップデート](#ブートローダーのアップデート)
 
 OpenCRボード上のMCUのDFUモードを使ってブートローダをアップデートすることができます。  
 DFUモードを使ってアップデートするには、dfu-utilをインストールする必要があります。  
@@ -1388,21 +1374,21 @@ DFUモードを使ってアップデートするには、dfu-utilをインスト
 $ sudo apt-get install dfu-util
 ```
 
-### [フォルダ構造](#folder-structure)
+### [フォルダ構造](#フォルダ構造)
 
-| 項目          | 内容                                                     |
-|:-------------|:-------------------------------------------------------------|
-| bin          | ビルド後に生成されたobjとbinファイルを保存します                    |
-| common->bsp  | ボード固有の機能(LED / BUTTON / USBなど)を搭載しています           |
-| common->hal  | ハードウェアに依存しないボード上の機能フォルダ                       |
-| common->lib  | 外部または公的に使われているライブラリ                              |
-| msg->mavlink | Xmlによって生成された通信プロトコルソース                           |
-| msg->xml     | コマンドを定義したxmlファイルフォルダ　　　　　　　　　　　            |
-| src          | ブートローダー機能に必要な機能フォルダ                              |
+| 項目         | 内容                                                     |
+|:-------------|:---------------------------------------------------------|
+| bin          | ビルド後に生成されたobjとbinファイルを保存します         |
+| common->bsp  | ボード固有の機能(LED / BUTTON / USBなど)を搭載しています |
+| common->hal  | ハードウェアに依存しないボード上の機能フォルダ           |
+| common->lib  | 外部または公的に使われているライブラリ                   |
+| msg->mavlink | Xmlによって生成された通信プロトコルソース                |
+| msg->xml     | コマンドを定義したxmlファイルフォルダ                    |
+| src          | ブートローダー機能に必要な機能フォルダ                   |
 
 ![](/assets/images/parts/controller/opencr10/bootloader_08.png)
 
-## [ブートローダーのアップデート](#update-bootloader)
+## [ブートローダーのアップデート](#ブートローダーのアップデート)
 
 OpenCRボード上のMCUのDFUモードを使ってブートローダをアップデートすることができます。  
 DFUモードを使ってアップデートするには、dfu-utilをインストールする必要があります。  
@@ -1411,7 +1397,7 @@ DFUモードを使ってアップデートするには、dfu-utilをインスト
 $ sudo apt-get install dfu-util
 ```
 
-### [DFUモードに入る](#enter-dfu-mode)
+### [DFUモードに入る](#dfuモードに入る)
 OpenCRをDFUモードで実行するには、以下の手順に従ってください。  
 
 1. `Boot`ボタンを押したままにする。  
@@ -1423,7 +1409,7 @@ OpenCRをDFUモードで実行するには、以下の手順に従ってくだ�
 
 ![](/assets/images/parts/controller/opencr10/bootloader_19.png)
 
-### [ブートモードの確認](#check-boot-mode)
+### [ブートモードの確認](#ブートモードの確認)
 
 #### Linuxの場合
 lsusbを実行すると、DFUモードになっているかどうかを確認することができます。MCUがDFUモードの場合、lsusbを実行するとDFUデバイスが表示されます。  
@@ -1436,13 +1422,13 @@ $ lsusb
 
 #### Windowsの場合
 `デバイスマネージャー` > `ユニバーサルシリアルデバイス`を開き、**STM32 BOOTLOADER**が検出されていることを確認してください。  
-もし検出されない場合には、[ドライバーインストール(オプション)](#driver-installoptional)の項目を参照してください。  
+もし検出されない場合には、[ドライバーインストール(オプション)](#ドライバーインストールオプション)の項目を参照してください。  
 
 ![](/assets/images/parts/controller/opencr10/dfu_device_manager.png)
 
-### [ブートローダーの書き込み](#burn-bootloader)
+### [ブートローダーの書き込み](#ブートローダーの書き込み)
 
-#### [ブートローダーの書き込み(Linux)](#burn-bootloaderlinux)
+#### [ブートローダーの書き込み(Linux)](#ブートローダーの書き込み)
 
 **注意** : バージョンが更新されている場合には、ブートローダーを更新してください。  
 {: .notice--warning}
@@ -1464,7 +1450,7 @@ DFUモードに正常に入り、ターミナルで *lsusb* を入ルよくす�
 
 ![](/assets/images/platform/turtlebot3/preparation/ide9.png)
 
-#### [ブートローダーの書き込み(Mac)](#burn-bootloadermac)
+#### [ブートローダーの書き込み(Mac)](#ブートローダーの書き込みmac)
 
 **注意** : バージョンが更新されている場合には、ブートローダーを更新してください。  
 {: .notice--warning}
@@ -1486,7 +1472,7 @@ DFUモードに正常に入り、ターミナルで *lsusb* を入ルよくす�
 
 ![](/assets/images/parts/controller/opencr10/arduino_mac_08.png)
 
-#### [ブートローダーの書き込み(Windows)](#burn-bootloaderwindows)
+#### [ブートローダーの書き込み(Windows)](#ブートローダーの書き込みwindows)
 
 **注意** : バージョンが更新されている場合には、ブートローダーを更新してください。  
 {: .notice--warning}
@@ -1511,7 +1497,7 @@ $ sudo dfu-util -d 0483:df11 -a 0 -s 0x08000000 -D ./opencr_boot.bin
 
 ![](/assets/images/parts/controller/opencr10/bootloader_11.png)
 
-### [ドライバーインストール(オプション)](driver-installoptional)
+### [ドライバーインストール(オプション)](#ドライバーインストールオプション)
 ブートローダのアップデートを実行するには、ST DFUドライバーをPCにインストールする必要があります。  
 Windows10では、通常、ST DFUドライバーは **自動的にインストール** されています。  
 
@@ -1539,17 +1525,17 @@ DFU対応のUSBデバイスが利用できません
 
     ![](/assets/images/parts/controller/opencr10/zadig_02.png)
 
-# [ダウンローダー](#downloader)
+# [ダウンローダー](#ダウンローダー)
 
 PC ダウンローダーアプリケーションは、ブートローダと通信し、PC からファームウェアを OpenCR ボードフラッシュのファームウェア領域にダウンロードします。 　
 ダウンローダーは、提供されたバイナリファイルに必要な情報を追加します。  
 
-| 項目          | 説明                              |
+| 項目         | 説明                              |
 |:-------------|:----------------------------------|
-|    対応OS     | Windows, Linux, Mac               |
-|  コンパイラー  | Linux : gcc<br />Windows : Qt 5.7 |
+| 対応OS       | Windows, Linux, Mac               |
+| コンパイラー | Linux : gcc<br />Windows : Qt 5.7 |
 
-## [使用方法](#description)
+## [使用方法](#使用方法)
 
 コマンドを使用する場合は、以下の説明を読み適切に使用してください。
 
@@ -1574,7 +1560,7 @@ $ opencr_ld <Communication port> <Baudrate> <Firmware binary> <Firmware executio
 
   > Arduino IDEからコンパイルしたバイナリファイルをエクスポートする
 
-### [Linux/Macの例](#example-for-linux-mac)
+### [Linux/Macの例](#linuxmacの例)
 
 以下は、LinuxおよびMacユーザーの例です。ご使用のPC環境によっては、コマンドが異なる場合があります。
 
@@ -1594,7 +1580,7 @@ $ sudo opencr_ld /dev/ttyACM0 115200 ./opencrfw.bin 1
 `Firmware execution status`
 - 1
 
-### [Windowsの例](#example-for-windows-example)
+### [Windowsの例](#windowsの例)
 
 以下は、Windowsユーザーの例です。 ご使用のPC環境によっては、コマンドが異なる場合があります。
 
@@ -1614,17 +1600,17 @@ opencr_ld.exe COM1 115200 ./opencrfw.bin 1
 `Firmware execution status`
 - 1
 
-## [実行結果](#execution-result)
+## [実行結果](#実行結果)
 
 ![](/assets/images/parts/controller/opencr10/downloader_01.png)
 
-## [実行ファイルのダウンロード](#download-executable-file)
+## [実行ファイルのダウンロード](#実行ファイルのダウンロード)
 
 - [https://github.com/ROBOTIS-GIT/OpenCR/tree/master/arduino/opencr_arduino/tools/opencr_tools_1.0.0](https://github.com/ROBOTIS-GIT/OpenCR/tree/master/arduino/opencr_arduino/tools/opencr_tools_1.0.0)
 
-# [リファレンス](#references)
+# [リファレンス](#リファレンス)
 
-## [リカバリーモード](#recovery-mode)
+## [リカバリーモード](#リカバリーモード)
 不完全もしくは間違ったファームウェアがダウンロードされ、ボードがフリーズしたり、動作しなくなったりした場合は、正常なファームウェアをダウンロードできるようにするために、ブートローダーに入る必要があります。  
 ブートローダーを実行するには、以下の手順に従ってください。  
 
@@ -1639,7 +1625,7 @@ OpenCRはリセット後、ブートローダーに入ります。ブートロ�
 
 ブートローダーが起動している間に通常のファームウェアをダウンロードすることができます。
 
-## [DYNAMIXEL コネクタ](#dynamixel-connectors)
+## [DYNAMIXEL コネクタ](#dynamixel-コネクタ)
 
 次の表は、DYNAMIXELのピン配列を示しています。
 
@@ -1647,13 +1633,13 @@ OpenCRはリセット後、ブートローダーに入ります。ブートロ�
 
 {% include jp/dxl/485_ttl_connection_x.md %}
 
-## [ダウンロード](#download)
+## [ダウンロード](#ダウンロード)
 
 - `ダウンロード` [部品表](https://github.com/ROBOTIS-GIT/OpenCR-Hardware/tree/master/BOM)
 - `ダウンロード` [回路図](https://github.com/ROBOTIS-GIT/OpenCR-Hardware/tree/master/Schematic)
 - `ダウンロード` [PCB](https://github.com/ROBOTIS-GIT/OpenCR-Hardware/tree/master/CAD)
 
-## [認証](#certifications)
+## [認証](#認証)
 未登録の認証については、お問い合わせください。  
 
 ### [FCC](#fcc)

@@ -11,6 +11,9 @@ sidebar:
   nav: "opencm485exp"
 ---
 
+**NOTE**: [The OpenCM 485 EXP e-Manual](/docs/en/parts/controller/opencm485exp_jp/) in Japanese (日本語) is available for the Japanese. 
+{: .notice}
+
 ![](/assets/images/parts/controller/opencm904/opencm485exp_product.jpg)
 
 > OpenCM 485 Expansion Board
@@ -122,7 +125,7 @@ In order to use OpenCM 485 EXP board with OpenCM9.04, please use Arduino IDE.
     dxl_wb.begin(DEVICE_NAME, BAUDRATE);
     ```
 
-# [Button & LED](#button-led)
+# [Button and LED](#button-and-led)
 
 OpenCM 485 EXP board has 2 buttons and 3 LED’s that are connected to OpenCM9.04 I/O pins.  
 The OpenCM9.04 I/O pin numbers for the buttons and LED’s are indicated below.
@@ -141,7 +144,6 @@ The OpenCM9.04 I/O pin numbers for the buttons and LED’s are indicated below.
 # [Downloads](#downloads)
 
 - `Download PDF` [PCB Schematic](http://support.robotis.com/en/baggage_files/opencm/schematic1___opencm_485exp.pdf)
-
 
 [RoboPlus Task]: /docs/en/software/rplus1/task/getting_started/
 [Number of pressed Start button]: /docs/en/software/rplus1/task/programming_02/#button-count

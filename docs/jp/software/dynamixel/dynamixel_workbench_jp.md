@@ -1,14 +1,14 @@
 ---
 layout: archive
-lang: jp
+lang: en
 ref: dynamixelworkbench
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/jp/software/dynamixel/dynamixel_workbench/
+permalink: /docs/en/software/dynamixel/dynamixel_workbench_jp/
 sidebar:
   title: DYNAMIXEL Workbench
-  nav: "dynamixel_workbench"
+  nav: "dynamixel_workbench_jp"
 ---
 
 # [イントロダクション](#イントロダクション)
@@ -22,31 +22,31 @@ DYNAMIXEL Workbenchの目的は、**任意のDYNAMIXELをよりシンプルに�
 **注意** : DYNAMIXEL Workbenchは、ROSでDYNAMIXELを制御するために設計されていますが、機能が制限されています。DYNAMIXELの設定やテストには、[DYNAMIXEL Wizard 2.0]または[DYNAMIXEL SDK]をご利用ください。  
 {: .notice--warning}
 
-# [サポートしているDYNAMIXEL](#supported-dynamixel)
+# [サポートしているDYNAMIXEL](#サポートしているdynamixel)
 
 | DYNAMIXEL シリーズ |                                |                                |                                |                                |                 |
-|:-----------------|:-------------------------------|:-------------------------------|:-------------------------------|:-------------------------------|:----------------|
-| **AX**           | [AX-12W]                       | [AX-12+/12A]                   | [AX-18F/18A]                   |                                |                 |
-| **EX**           | [EX-106+]                      |                                |                                |                                |                 |
-| **RX**           | [RX-10]                        | [RX-24F]                       | [RX-28]                        | [RX-64]                        |                 |
-| **MX**           | [MX-12W]                       | [MX-28], [MX-28(2.0)]          | [MX-64], [MX-64(2.0)]          | [MX-106], [MX-106(2.0)]        |                 |
-| **XL**           | [XL320]                        | [XL430-W250]                   | [2XL430-W250]                  |                                |                 |
-| **XC**           | [XC430-W150]                   | [XC430-W240]                   |                                |                                |                 |
-| **XM**           | [XM430-W210]                   | [XM430-W350]                   | [XM540-W150]                   | [XM540-W270]                   |                 |
-| **XH**           | [XH430-W210]<br/> [XH430-W350] | [XH430-V210]<br/> [XH430-V350] | [XH540-W150]<br/> [XH540-W270] | [XH540-V150]<br/> [XH540-V270] |                 |
-| **PRO L**        | [L42-10-S300-R]                | [L54-30-S500-R]                | [L54-30-S400-R]                | [L54-50-S500-R]                | [L54-50-S290-R] |
-| **PRO M**        | [M42-10-S260-R]                | [M54-40-S250-R]                | [M54-60-S250-R]                |                                |                 |
-| **PRO H**        | [H42-20-S300-R]                | [H54-100-S500-R]               | [H54-200-S500-R]               |                                |                 |
-| **PRO M(A)**     | [M42-10-S260-R(A)]             | [M54-40-S250-R(A)]             | [M54-60-S250-R(A)]             |                                |                 |
-| **PRO H(A)**     | [H42-20-S300-R(A)]             | [H54-100-S500-R(A)]            | [H54-200-S500-R(A)]            |                                |                 |
-| **PM**           | [PM54-060-S250-R]              | [PM54-040-S250-R]              | [PM42-010-S260-R]              |                                |                 |
-| **PH**           | [PH42-020-S300-R]              | [PH54-100-S500-R]              | [PH54-200-S500-R]              |                                |                 |
+|:-------------------|:-------------------------------|:-------------------------------|:-------------------------------|:-------------------------------|:----------------|
+| **AX**             | [AX-12W]                       | [AX-12+/12A]                   | [AX-18F/18A]                   |                                |                 |
+| **EX**             | [EX-106+]                      |                                |                                |                                |                 |
+| **RX**             | [RX-10]                        | [RX-24F]                       | [RX-28]                        | [RX-64]                        |                 |
+| **MX**             | [MX-12W]                       | [MX-28], [MX-28(2.0)]          | [MX-64], [MX-64(2.0)]          | [MX-106], [MX-106(2.0)]        |                 |
+| **XL**             | [XL320]                        | [XL430-W250]                   | [2XL430-W250]                  |                                |                 |
+| **XC**             | [XC430-W150]                   | [XC430-W240]                   |                                |                                |                 |
+| **XM**             | [XM430-W210]                   | [XM430-W350]                   | [XM540-W150]                   | [XM540-W270]                   |                 |
+| **XH**             | [XH430-W210]<br/> [XH430-W350] | [XH430-V210]<br/> [XH430-V350] | [XH540-W150]<br/> [XH540-W270] | [XH540-V150]<br/> [XH540-V270] |                 |
+| **PRO L**          | [L42-10-S300-R]                | [L54-30-S500-R]                | [L54-30-S400-R]                | [L54-50-S500-R]                | [L54-50-S290-R] |
+| **PRO M**          | [M42-10-S260-R]                | [M54-40-S250-R]                | [M54-60-S250-R]                |                                |                 |
+| **PRO H**          | [H42-20-S300-R]                | [H54-100-S500-R]               | [H54-200-S500-R]               |                                |                 |
+| **PRO M(A)**       | [M42-10-S260-R(A)]             | [M54-40-S250-R(A)]             | [M54-60-S250-R(A)]             |                                |                 |
+| **PRO H(A)**       | [H42-20-S300-R(A)]             | [H54-100-S500-R(A)]            | [H54-200-S500-R(A)]            |                                |                 |
+| **PM**             | [PM54-060-S250-R]              | [PM54-040-S250-R]              | [PM42-010-S260-R]              |                                |                 |
+| **PH**             | [PH42-020-S300-R]              | [PH54-100-S500-R]              | [PH54-200-S500-R]              |                                |                 |
 
 **DYNAMIXEL Workbench** メタパッケージには、**Controllers**、**Operators** そして **Toolbox** の3つパッケージが含まれています。**Controllers** パッケージは、DYNAMIXEL Workbenchライブラリ（Toolbox）を使って、異なる動作モードでDYNAMIXELを使用する方法を紹介します。また、Operatorsでは、コントローラを操作することによっていくつかの簡単な例を紹介します。  
 
 - [ROS WIKI](http://wiki.ros.org/dynamixel_workbench)
 
-# [ダウンロード](#downloads)
+# [ダウンロード](#ダウンロード)
 
 ## [ROS](#ros)
 
@@ -85,7 +85,7 @@ $ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench-msgs.git
 $ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git
 ```
 
-## [OpenCRとOpenCM](#opencr-and-opencm)
+## [OpenCRとOpenCM](#opencrとopencm)
 
 ### Arduino IDEのダウンロード
 
@@ -131,7 +131,7 @@ $ cmake ..
 $ make
 ```
 
-# [デバイスのセットアップ](#device-setup)
+# [デバイスのセットアップ](#デバイスのセットアップ)
 **警告**: ライブラリを使用する前に、デバイスの設定を **繰り返し** 確認してください。  
 **電源入力** と **USBポート** をもう一度確認してください。  
 {: .notice--warning}
@@ -188,7 +188,7 @@ OpenCRをU2D2として使用したい場合は、`usb_to_dxl`ファームウェ�
 
 ![](/assets/images/parts/controller/opencm904/opencm485exp_01.jpg)
 
-# [チュートリアル](#tutorials)
+# [チュートリアル](#チュートリアル)
 
 - [ROS](/docs/en/software/dynamixel/dynamixel_workbench/#ros-tutorials)
     - [Find Dynamixels](/docs/en/software/dynamixel/dynamixel_workbench/#find-dynamixels)
@@ -204,7 +204,7 @@ OpenCRをU2D2として使用したい場合は、`usb_to_dxl`ファームウェ�
     - [position](/docs/en/software/dynamixel/dynamixel_workbench/#position)
     - [bulk_read_write](/docs/en/software/dynamixel/dynamixel_workbench/#bulk_read_write)
 
-## [ROSチュートリアル](#ros-tutorials)
+## [ROSチュートリアル](#rosチュートリアル)
 
 ### [Find Dynamixels](#find-dynamixels)
 
@@ -640,28 +640,28 @@ OpenCRとOpenCMのDYNAMIXEL Workbenchのファームウェアは全く同じで�
 
     ![](/assets/images/sw/dynamixel/dynamixel_workbench/opencr_example_12.png)  
 
-## [LinuxとmacOS チュートリアル](#linux-and-macos-tutorials)
+## [LinuxとmacOS チュートリアル](#linuxとmacOS-チュートリアル)
 
 例は、任意のものを選択して表示できます。
 
-### 例題
-
-1. model_scan
-1. ping
-1. id_change
-1. bps_change
-1. mode_change
-1. reboot
-1. reset
-1. position
-1. velocity
-1. current_based_position
-1. read_write
-1. sync_write
-1. sync_read_write
-1. bulk_read_write
-1. find_dynamixel
-1. monitor
+|    | **例題**                 |
+|:---|:-------------------------|
+| 1  | model\_scan              |
+| 2  | ping                     |
+| 3  | id\_change               |
+| 4  | bps\_change              |
+| 5  | mode\_change             |
+| 6  | reboot                   |
+| 7  | reset                    |
+| 8  | position                 |
+| 9  | velocity                 |
+| 10 | current\_based\_position |
+| 11 | read\_write              |
+| 12 | sync\_write              |
+| 13 | sync\_read\_write        |
+| 14 | bulk\_read\_write        |
+| 15 | find\_dynamixel          |
+| 16 | monitor                  |
 
 **ヒント**: USBポート名はOSによって異なります。例えば、Linuxでは`/dev/ttyUSB0`、`/dev/ttyACM0`となり、macOSでは`/dev/cu.usbmodem1411`となります。
 {: .notice--success}
@@ -721,14 +721,14 @@ OpenCRとOpenCMのDYNAMIXEL Workbenchのファームウェアは全く同じで�
     [DynamixelDriver] Succeeded to add param for bulk write!
     ```
 
-# [APIリファレンス](#api-references)
+# [APIリファレンス](#apiリファレンス)
 
 - [Githubリポジトリ](https://github.com/ROBOTIS-GIT/dynamixel-workbench)
 
 **注釈**: Doxygenの公開予定があります。近日中に更新します。
 {: .notice--info}
 
-## [関数一覧](#function-list)
+## [関数一覧](#関数一覧)
 
 ```c++
 bool init(const char* device_name = "/dev/ttyUSB0",
@@ -893,7 +893,7 @@ float convertValue2Current(int16_t value);
 float convertValue2Load(int16_t value);
 ```  
 
-## [関数リファレンス](#function-reference)
+## [関数リファレンス](#関数リファレンス)
 
 ### bool init(const char* device_name = "/dev/ttyUSB0", uint32_t baud_rate = 57600, const char **log = NULL)  
 
