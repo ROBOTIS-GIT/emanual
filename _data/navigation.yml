@@ -20183,6 +20183,11 @@ arduino_ide:
         url: /software/arduino_ide/#install-arduino-idewindows
       - title: "Porting to Arduino IDE"
         url: /software/arduino_ide/#porting-to-arduino-idewindows
+    - title: "Library API"
+      url: /software/arduino_ide/#library-api
+      children:
+      - title: "Dynamixel2Arduino Library"
+        url: /software/arduino_ide/#dynamixel2arduino-library
   - title: "Examples"
     url: /software/arduino_ide/#examples
     children:
