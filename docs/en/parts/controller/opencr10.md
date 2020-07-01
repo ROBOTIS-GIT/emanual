@@ -11,6 +11,9 @@ sidebar:
   nav: "opencr10"
 ---
 
+**NOTE**: [The OpenCR 1.0 e-Manual](/docs/en/parts/controller/opencr10_jp/) in Japanese (日本語) is available for the Japanese. 
+{: .notice}
+
 ![](/assets/images/parts/controller/opencr10/opencr_product.png)
 
 > OpenCR 1.0
@@ -109,7 +112,7 @@ The OpenCR additional LEDs consist of four LEDs and are mapped to Arduino pin 22
 | 26          | BDPIN_DIP_SW_1 |
 | 27          | BDPIN_DIP_SW_2 |
 
-## [GPIO](#pgio)
+## [GPIO](#gpio)
 It has an 18-pin common GPIO expansion connector and is mapped to the GPIO pin of the Arduino. The pin number below is the arduino pin number.
 
 ![](/assets/images/parts/controller/opencr10/arduino_pinmap_05.png)
@@ -1492,7 +1495,7 @@ $ sudo dfu-util -d 0483:df11 -a 0 -s 0x08000000 -D ./opencr_boot.bin
 
 ![](/assets/images/parts/controller/opencr10/bootloader_11.png)
 
-### [Driver Install(Optional)](driver-installoptional)
+### [Driver Install(Optional)](#driver-installoptional)
 In order to perform Bootloader update, ST DFU driver has to be installed on your PC.
 In Windows 10, ST DFU driver is usually **installed automatically**.  
 
