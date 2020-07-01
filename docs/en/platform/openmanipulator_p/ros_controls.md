@@ -27,7 +27,7 @@ The following instruction describes how to install moveit package and to use Mov
 ```bash
 $ cd ~/catkin_ws/src/
 $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_p_controls.git
-$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_p_dependencies.git
+$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_dependencies.git
 $ cd ~/catkin_ws && catkin_make
 ```
 
