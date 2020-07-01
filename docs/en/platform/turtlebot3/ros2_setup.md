@@ -51,21 +51,7 @@ As TurtleBot3 operates on ROS, it requies to install `ros-dashing-desktop` debia
 ```bash
 $ sudo apt install python3-colcon-common-extensions
 ```
-3. Install Cartographer dependencies
-```bash
-$ sudo apt install -y \
-    google-mock \
-    libceres-dev \
-    liblua5.3-dev \
-    libboost-dev \
-    libboost-iostreams-dev \
-    libprotobuf-dev \
-    protobuf-compiler \
-    libcairo2-dev \
-    libpcl-dev \
-    python3-sphinx
-```
-4. Install Gazebo9
+3. Install Gazebo9
 ```bash
 $ curl -sSL http://get.gazebosim.org | sh
 ### Uninstall Gazebo11 if installed previously
@@ -73,17 +59,17 @@ $ sudo apt remove gazebo11 libgazebo11-dev
 $ sudo apt install gazebo9 libgazebo9-dev
 $ sudo apt install ros-dashing-gazebo-ros-pkgs
 ```
-5. Install Cartographer
+4. Install Cartographer
 ```bash
 $ sudo apt install ros-dashing-cartographer
 $ sudo apt install ros-dashing-cartographer-ros
 ```
-6. Install Navigation2
+5. Install Navigation2
 ```bash
 $ sudo apt install ros-dashing-navigation2
 $ sudo apt install ros-dashing-nav2-bringup
 ```
-7. Install vcstool
+6. Install vcstool
 ```bash
 $ sudo apt install python3-vcstool
 ```
@@ -293,7 +279,7 @@ $ sudo apt install ros-dashing-ros-base
 **[TurtleBot3]**
 
 ```bash
-$ sudo apt install python3-argcomplete python3-colcon-common-extensions libboost-system-dev
+$ sudo apt install python3-argcomplete python3-colcon-common-extensions libboost-system-dev build-essential
 $ mkdir -p ~/turtlebot3_ws/src && cd ~/turtlebot3_ws/src
 $ git clone -b ros2 https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
 $ git clone -b ros2 https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git

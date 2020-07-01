@@ -545,7 +545,7 @@ main:
         titlekr: "OpenCM9.04"
         url: /parts/controller/opencm904/
       - title: "OpenCM 485 EXP"
-        titlekr: "OpenCM 485 EXP"
+        titlekr: "OpenCM 485 확장보드"
         url: /parts/controller/opencm485exp/
       - title: "OpenCR1.0"
         titlekr: "OpenCR1.0"
@@ -16398,6 +16398,12 @@ turtlebot3:
         url: /platform/turtlebot3/pc_setup/#install-dependent-ros-1-packages
       - title: "Network Configuration"
         url: /platform/turtlebot3/pc_setup/#network-configuration
+      - title: "[Windows] Setup Remote PC"
+        url: /platform/turtlebot3/pc_setup/#windows-setup-remote-pc
+      - title: "[Windows] Setup TurtleBot3 WS"
+        url: /platform/turtlebot3/pc_setup/#windows-setup-turtlebot3-ws
+      - title: "[Windows] Network Configuration"
+        url: /platform/turtlebot3/pc_setup/#windows-network-configuration
     - title: "SBC Setup"
       url: /platform/turtlebot3/sbc_setup/#sbc-setup
       children:
@@ -16405,6 +16411,8 @@ turtlebot3:
         url: /platform/turtlebot3/raspberry_pi_3_setup/#raspberry-pi-3-setup
       - title: "Intel Joule 570x"
         url: /platform/turtlebot3/joule_setup/#joule-setup
+      - title: "[Windows] Windows 10 SBC"
+        url: /platform/turtlebot3/joule_setup/#windows-windows-10-sbc
     - title: "OpenCR Setup"
       url: /platform/turtlebot3/opencr_setup/#opencr-setup
       children:
@@ -16439,6 +16447,11 @@ turtlebot3:
       url: /platform/turtlebot3/bringup/#bringup-a-turtlebot3
     - title: "Load a TurtleBot3 on Rviz"
       url: /platform/turtlebot3/bringup/#load-a-turtlebot3-on-rviz
+      children:
+      - title: "on Ubuntu"
+        url: /platform/turtlebot3/bringup/#on-ubuntu
+      - title: "on Windows"
+        url: /platform/turtlebot3/bringup/#on-windows
   - title: "[ROS 1] Basic Operation"
     url: /platform/turtlebot3/basic_operation/#ros-1-basic-operation
     children:
@@ -16465,6 +16478,8 @@ turtlebot3:
         url: /platform/turtlebot3/teleoperation/#leap-motion
       - title: "Myo"
         url: /platform/turtlebot3/teleoperation/#myo
+      - title: "[Windows] Joystick Instructions"
+        url: /platform/turtlebot3/teleoperation/#windows-joystick-instructions
     - title: "Basic Examples"
       url: /platform/turtlebot3/basic_examples/#basic-examples
       children:
@@ -18549,15 +18564,11 @@ rplusmanager2:
       urlkr: /software/rplus2/manager/#다이나믹셀-컨트롤-테이블
     - title: "Controller Control Table"
       url: /software/rplus2/manager/#controller-control-table
-  - title: "Advanced Features"
-    titlekr: "고급 기능"
-    url: /software/rplus2/manager/#advanced-features
-    urlkr: /software/rplus2/manager/#고급-기능
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /software/rplus2/manager/#reference
+    urlkr: /software/rplus2/manager/#참고자료
     children:
-    - title: "Preparation for XM/XH Series"
-      titlekr: "XM/XH 시리즈 사용전 준비"
-      url: /software/rplus2/manager/#preparation-for-xmxh-series
-      urlkr: /software/rplus2/manager/#xhxh-시리즈-사용전-준비
     - title: "Changing Control Value"
       titlekr: "컨트롤 아이템 값 변경"
       url: /software/rplus2/manager/#changing-control-value
@@ -18570,6 +18581,8 @@ rplusmanager2:
       titlekr: "블루투스로 펌웨어 관리하기"
       url: /software/rplus2/manager/#firmware-managementbluetooth
       urlkr: /software/rplus2/manager/#블루투스로-펌웨어-관리하기
+    - titlekr: "FAQ"
+      urlkr: /software/rplus2/manager/#faq
 
 #R+ Task 2.0 sidebar
 rplustask2:
@@ -22235,7 +22248,7 @@ opencm485exp_jp:
     url: /parts/controller/opencm485exp_jp/#ボタン-そして-led
   - title: "ダウンロード"
     url: /parts/controller/opencm485exp_jp/#ダウンロード
-
+    
 #OpenCM 485 EXP sidebar
 opencm485exp:
   - title: "Introduction"
@@ -22250,26 +22263,40 @@ opencm485exp:
     titlekr: "각 부 명칭"
     url: /parts/controller/opencm485exp/#layout
     urlkr: /parts/controller/opencm485exp/#각-부-명칭
-  - title: "Connecting OpenCM9.04"
-    titlekr: "OpenCM9.04와 연결하기"
-    url: /parts/controller/opencm485exp/#connecting-opencm904
-    urlkr: /parts/controller/opencm485exp/#opencm904와-연결하기
-  - title: "Power Circuit Connection"
-    titlekr: "전원 연결 회로"
-    url: /parts/controller/opencm485exp/#power-circuit-connection
-    urlkr: /parts/controller/opencm485exp/#전원-연결-회로
-  - title: "EXP Board Programming"
-    titlekr: "EXP 보드 프로그래밍"
-    url: /parts/controller/opencm485exp/#exp-board-programming
-    urlkr: /parts/controller/opencm485exp/#opencm-485-확장보드-프로그래밍
-  - title: "Button and LED"
-    titlekr: "버튼 및 LED 활용"
-    url: /parts/controller/opencm485exp/#button-and-led
-    urlkr: /parts/controller/opencm485exp/#버튼-및-led-활용
-  - title: "Downloads"
-    titlekr: "다운로드"
-    url: /parts/controller/opencm485exp/#downloads
-    urlkr: /parts/controller/opencm485exp/#다운로드
+  - title: "Using with OpenCM9.04"
+    titlekr: "OpenCM9.04와 사용하기"
+    url: /parts/controller/opencm485exp/#using-with-opencm904
+    urlkr: /parts/controller/opencm485exp/#opencm904와-사용하기
+    children:
+    - title: "Connecting OpenCM9.04 to the expanstion board"
+      titlekr: "OpenCM9.04 연결하기"
+      url: /parts/controller/opencm485exp/#connecting-opencm904-to-the-expanstion-board
+      urlkr: /parts/controller/opencm485exp/#opencm904-연결하기
+    - title: "Using a motion tool or motion file with OpenCM9.04 and OpenCM 485 expansion board"
+      titlekr: "OpenCM9.04 및 OpenCM 485 확장보드에서 모션 파일 사용하기"
+      url: /parts/controller/opencm485exp/#using-a-motion-tool-or-motion-file-with-opencm904-and-opencm-485-expansion-board
+      urlkr: /parts/controller/opencm485exp/#opencm904-및-opencm-485-확장보드에서-모션-파일-사용하기
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /parts/controller/opencm485exp/#reference
+    urlkr: /parts/controller/opencm485exp/#참고자료
+    children:
+        - title: "Power Circuit Connection"
+          titlekr: "전원 연결 회로"
+          url: /parts/controller/opencm485exp/#power-circuit-connection
+          urlkr: /parts/controller/opencm485exp/#전원-연결-회로
+        - title: "EXP Board Programming"
+          titlekr: "EXP 보드 프로그래밍"
+          url: /parts/controller/opencm485exp/#exp-board-programming
+          urlkr: /parts/controller/opencm485exp/#opencm-485-확장보드-프로그래밍
+        - title: "Button & LED"
+          titlekr: "버튼 및 LED 활용"
+          url: /parts/controller/opencm485exp/#button--led
+          urlkr: /parts/controller/opencm485exp/#버튼-및-led-활용
+        - title: "Drawings"
+          titlekr: "도면"
+          url: /parts/controller/opencm485exp/#drawings
+          urlkr: /parts/controller/opencm485exp/#도면
 
 #OpenCR sidebar
 opencr10:

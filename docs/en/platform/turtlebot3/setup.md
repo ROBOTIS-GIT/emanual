@@ -18,10 +18,10 @@ page_number: 6
 # [Setup](#setup)
 
 ## [PC Setup](#pc-setup)
-[PC Setup][pc_setup]: Install Linux, ROS and application packages for TurtleBot3 on your `Remote PC`.
+[PC Setup][pc_setup]: Install Linux or Windows, ROS and application packages for TurtleBot3 on your `Remote PC`.
 
 ## [SBC Setup](#sbc-setup)
-[SBC Setup][sbc_setup]: Install Linux, ROS and hardware related packages to control the TurtleBot3 on your `TurtleBot PC`.
+[SBC Setup][sbc_setup]: Install Linux or Windows, ROS and hardware related packages to control the TurtleBot3 on your `TurtleBot PC`.
 
 ## [OpenCR Setup](#opencr-setup)
 [OpenCR Setup][opencr_setup]: Upload latest firmware of TurtleBot3 to embedded board OpenCR.

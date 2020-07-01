@@ -26,7 +26,7 @@ page_number: 17
 
 {% capture notice_01 %}
 **NOTE**: 
-- This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+- This instruction was tested on `Ubuntu 16.04` with `ROS Kinetic Kame` and `Windows 10` with `ROS Melodic Morenia`
 - This examples are supposed to be running on the remote PC. Follow the instruction on your **Remote PC**.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
@@ -48,9 +48,16 @@ The contents in e-Manual can be updated without a previous notice. Therefore, so
 
 **[Remote PC]** Launch `turtlebot3_teleop_key` node for simple teleoperation test.
 
-``` bash
+#### on Ubuntu
+```bash
 $ export TURTLEBOT3_MODEL=%{TB3_MODEL}
 $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+```
+
+#### on Windows
+```bash
+> set TURTLEBOT3_MODEL=%{TB3_MODEL}
+> roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ```
 
 If the node is successfully launched, the following instruction will be appeared to the terminal window.
@@ -70,13 +77,13 @@ If the node is successfully launched, the following instruction will be appeared
   CTRL-C to quit
 ```
 
-### [RC100](#rc100)
+## [RC100](#rc100)
 
 The settings for [ROBOTIS RC-100B][rc100] controller is included in the OpenCR firmware for TurtleBot3 Burger, Waffle and Waffle Pi. This controller can be used with the Bluetooth module [BT410][bt410]. The TurtleBot3 Waffle Pi includes this controller and Bluetooth modules. When using RC-100, it is not necessary to execute a specific node because `turtlebot_core` node creates a `/cmd_vel` topic in the firmware directly connected to OpeCR.
 
 ![](/assets/images/platform/turtlebot3/example/rc100b_with_bt410.png)
 
-### [PS3 Joystick](#ps3-joystick)
+## [PS3 Joystick](#ps3-joystick)
 
 **[Remote PC]** Connect PS3 Joystick to the remote PC via Bluetooth or with USB cable.
 
@@ -92,7 +99,7 @@ $ sudo apt-get install ros-kinetic-joy ros-kinetic-joystick-drivers ros-kinetic-
 $ roslaunch teleop_twist_joy teleop.launch
 ```
 
-### [XBOX 360 Joystick](#xbox-360-joystick)
+## [XBOX 360 Joystick](#xbox-360-joystick)
 
 **[Remote PC]** Connect XBOX 360 Joystick to the remote PC with Wireless Adapter or USB cable.
 
@@ -109,7 +116,7 @@ $ sudo xboxdrv --silent
 $ roslaunch teleop_twist_joy teleop.launch
 ```
 
-### [Wii Remote](#wii-remote)
+## [Wii Remote](#wii-remote)
 
 **[Remote PC]** Connect Wii remote to the remote PC via Bluetooth.
 
@@ -132,11 +139,11 @@ $ rosrun wiimote wiimote_node
 $ rosrun wiimote teleop_wiimote
 ```
 
-### [Nunchuk](#nunchuk)
+## [Nunchuk](#nunchuk)
 
 (TODO)
 
-### [Android App](#android-app)
+## [Android App](#android-app)
 
 Download [ROS CONTROL][ros_control] and run the application.
 
@@ -151,7 +158,7 @@ Then, you can check state of node and topic connection by `rqt_graph` commands
 
 ![](/assets/images/platform/turtlebot3/example/ros_control_graph.png)
 
-### [LEAP Motion](#leap-motion)
+## [LEAP Motion](#leap-motion)
 
 **[Remote PC]** Connect LEAP motion to the remote PC via Bluetooth.
 
@@ -172,10 +179,18 @@ $ git clone git@github.com:warp1337/rosleapmotion.git
 $ rosrun leap_motion sender.py
 ```
 
-### [Myo](#myo)
+## [Myo](#myo)
 
 We are developing its contents ! 
 {: .notice--info}
+
+## [Windows] Joystick Instructions
+The Windows implementation of the Joystick control uses the [Open Source Simple DirectMedia Layer](https://www.libsdl.org/), which supports many tethered and wireless joysticks. The Joystick driver is currently (As of January 2020) deployed as a source package, which you need to clone into your catkin workspace.
+
+``` bash
+> git clone -b init_windows https://github.com/ms-iot/joystick_drivers
+```
+
 
 [bringup]: /docs/en/platform/turtlebot3/bringup/#bringup
 [rc100]: /docs/en/parts/communication/rc-100/
@@ -183,3 +198,4 @@ We are developing its contents !
 [ros_control]: https://play.google.com/store/apps/details?id=com.robotca.ControlApp
 [leap_setup]: https://www.leapmotion.com/setup
 [leap_sdk]: https://developer.leapmotion.com/get-started/
+

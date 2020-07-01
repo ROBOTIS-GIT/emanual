@@ -47,3 +47,6 @@ $ cd ~/catkin_ws/src/
 $ git clone https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
 $ cd ~/catkin_ws && catkin_make
 ```
+
+# Windows Machine Learning
+Turtlebot3 with ROS on Windows can use the Windows ML ROS node. Windows ML is an extension to DirectX which enables low level hardware independent computer vision scenarios. For more information on using Windows ML, please visit the [WinML ROS Node documentation](https://aka.ms/ros_winml).

@@ -27,10 +27,18 @@ page_number: 7
 **WARNING**: The contents in this chapter corresponds to the `Remote PC` (your desktop or laptop PC) which will control TurtleBot3. Do not apply this instruction to your TurtleBot3.
 {: .notice--warning}
 
-**NOTE**: This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+**NOTE**: This instruction was tested on Linux with `Ubuntu 16.04` and `ROS1 Kinetic Kame`, and Windows with `Windows 10` and ROS `ROS1 Melodic Morenia`
 {: .notice--info}
 
-### [Install Ubuntu on Remote PC](#install-ubuntu-on-remote)
+Select which Operating System you'd like to use for the remote PC:
+- [Ubuntu](#install-ubuntu-on-remote)
+- [Windows](#windows-setup-remote-pc)
+
+**NOTE**: ROS on Windows was brought up using [Up2](https://up-board.org/upsquared/specifications/) and an `Intel Nuc`.
+{: .notice--warning}
+
+
+### [Install Ubuntu on Remote PC](#install-ubuntu-on-remote-pc)
 
 Download and install the `Ubuntu 16.04` on the `Remote PC (your desktop or laptop PC)` from the following link.
 
@@ -119,3 +127,41 @@ $ source ~/.bashrc
 ```
 
 [ubuntu_download_link]: https://www.ubuntu.com/download/alternative-downloads
+
+### [[Windows] Setup Remote PC](#windows-setup-remote-pc)
+
+If you do not already have `Windows 10` on your Remote PC (Desktop, Laptop or SBC), you can download a trial of Windows 10 IoT Enterprise from the following link:
+- [Download Windows 10 IoT Enterprise(Trial)][windows_download_link]
+
+[windows_download_link]: https://www.microsoft.com/en-us/evalcenter/evaluate-windows-10-enterprise
+
+Please refer to the [ROS Wiki instructions](https://wiki.ros.org/Installation/Windows) for installing ROS on Windows.
+
+### [Windows] Setup TurtleBot3 WS
+``` bash
+> mkdir c:\ws\turtlebot3\src
+> cd c:\ws\turtlebot3\src
+> catkin_init_workspace
+> git clone -b melodic-devel https://github.com/ROBOTIS-GIT/turtlebot3_msgs
+> git clone -b melodic-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations
+> git clone -b melodic-devel https://github.com/ROBOTIS-GIT/turtlebot3
+> git clone -b melodic-devel https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver
+> cd c:\ws\turtlebot3
+> rosdep update
+> rosdep install --from-paths src --ignore-src -r -y
+> catkin_make
+> devel\setup.bat
+```
+
+### [[Windows] Network Configuration](#windows-network-configuration)
+To communicate from a Windows 10 system to a remote single board computer (SBC) running on the turtlebot, set the following environment variables:
+
+``` bash
+> set ROS_MASTER_URI=http://<IP address of the SBC>:11311
+> set ROS_HOSTNAME=<name of the windows computer>
+```
+
+
+
+
+

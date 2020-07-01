@@ -82,6 +82,7 @@ page_number: 4
 - [Intel® Joule™ 570x](http://ark.intel.com/products/96414/Intel-Joule-570x-Developer-Kit)
   - TurtleBot3 Waffle
 
+
 ### [Sensors](#sensors)
 
 - [360 Laser Distance Sensor LDS-01](/docs/en/platform/turtlebot3/appendix_lds_01/)
@@ -90,6 +91,7 @@ page_number: 4
   - TurtleBot3 Waffle
 - [The Raspberry Pi Camera Module v2.1](https://www.raspberrypi.org/products/camera-module-v2/)
   - TurtleBot3 Waffle Pi
+
 
 ### [Embedded Board](#Embedded-board)
 

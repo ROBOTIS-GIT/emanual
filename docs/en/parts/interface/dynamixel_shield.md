@@ -56,12 +56,13 @@ DYNAMIXEL Shield  was created to use [RC-100] and DYNAMIXEL on arduino board. We
 The DYNAMIXEL Shield has the same pin position as Aruduino UNO. To find the pinout diagram, see [Arduino Offical page](https://www.arduino.cc/en/Main/Products).
 {: .notice--warning}
 
-| Pin No. |  Pin Name  |        Description        |
-|:-------:|:----------:|:-------------------------:|
-|    0    | HW UART RX |          DXL_RX           |
-|    1    | HW UART TX |          DXL_TX           |
-|    7    | SW UART RX | `Caution2` SoftwareSerial |
-|    8    | SW UART TX | `Caution2` SoftwareSerial |
+| Pin No. |  Pin Name   |        Description        |
+|:-------:|:-----------:|:-------------------------:|
+|    0    | HW UART RX  |          DXL_RX           |
+|    1    | HW UART TX  |          DXL_TX           |
+|    2    | HW UART DIR |          DXL_DIR          |
+|    7    | SW UART RX  | `Caution2` SoftwareSerial |
+|    8    | SW UART TX  | `Caution2` SoftwareSerial |
 
 |      Item      |                 Description                 |          Note           |
 |:--------------:|:-------------------------------------------:|:-----------------------:|
@@ -107,7 +108,7 @@ Check the type of your arduino board, and select the either of listed solution t
 - You can use either SoftwareSerial or HardwareSerial ways. See [Arduino Reference page of Serial](https://www.arduino.cc/reference/en/language/functions/communication/serial/), and determine your board whether or not it support either of ways (SoftwareSerial or HardwareSerial).
  
 5. **Use UART Port**
-- DYNAMIXEL Shield contains UART pins: 7(RX), 8(TX). They are only compatible with AVR 8 bit board, such as Uno and Mega boards. In order to use this port, use other HardwareSerial pins instead of 7(RX), 8(TX). To determine wheather boards has HardwareSerial, and its pin numbers see [Arduino Reference page of Comunication] 
+- DYNAMIXEL Shield contains UART pins: 7(RX), 8(TX). They are only compatible with AVR 8 bit board, such as Uno and Mega boards. In order to use this port, use other HardwareSerial pins instead of 7(RX), 8(TX). To determine wheather boards has HardwareSerial, and its pin numbers see [Arduino Reference page of Comunication](https://www.arduino.cc/reference/en/language/functions/communication/serial/). 
 
 # [Connecting Power](#connecting-power)
 
