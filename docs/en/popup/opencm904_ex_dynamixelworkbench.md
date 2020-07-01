@@ -7,7 +7,7 @@ layout: popup
 ## [APIs](#apis)
 
 ### DYNAMIXEL Item
-This file has control table of DYNAMIXEL Series (AX, RX, EX, MX, XL, XM, XH, PRO).
+This file has control table of DYNAMIXEL Series (AX, RX, EX, MX, XL, XM, XH, PRO, P).
 
 ### DYNAMIXEL tool Class
 This class loads control table and some information in file of DYNAMIXEL item.
