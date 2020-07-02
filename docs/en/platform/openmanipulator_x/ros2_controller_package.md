@@ -37,7 +37,7 @@ $ ros2 launch open_manipulator_x_controller open_manipulator_x_controller.launch
 If you are using `OpenCR` as a communication converter, open a terminal then enter the following command instead of above command.  
 
 ``` bash
-$ ros2 launch open_manipulator_x_controller open_manipulator_x_controller.launch.py usb_port:=/dev/ttyACM0 baud_rate:=1000000
+$ ros2 launch open_manipulator_x_controller open_manipulator_x_controller.launch.py usb_port:=/dev/ttyACM0
 ```
 
 {% capture warning_01 %}
