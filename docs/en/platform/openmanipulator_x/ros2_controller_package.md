@@ -31,13 +31,13 @@ OpenMANIPULATOR-X controller provides basic manipulation of OpenMANIPULATOR-X. Y
 If you are using `U2D2` as a communication converter, open a terminal then enter the following command.  
 
 ``` bash
-$ ros2 run open_manipulator_x_controller open_manipulator_x_controller
+$ ros2 launch open_manipulator_x_controller open_manipulator_x_controller.launch.py
 ```
 
 If you are using `OpenCR` as a communication converter, open a terminal then enter the following command instead of above command.  
 
 ``` bash
-$ ros2 run open_manipulator_x_controller open_manipulator_x_controller /dev/ttyACM0 1000000
+$ ros2 launch open_manipulator_x_controller open_manipulator_x_controller.launch.py usb_port:=/dev/ttyACM0
 ```
 
 {% capture warning_01 %}
@@ -50,7 +50,7 @@ The picture of OpenMANIPULATOR-X below is showing you the ideal pose of OpenMANI
 {% endcapture %}
 <div class="notice--warning">{{ warning_01 | markdownify }}</div>
 
-Follwing message will be shown in the Terminal after the process done successfully.  
+Follwing message will be shown in the Terminal after the process done successfully with `U2D2`.  
 
 ```
 port_name and baud_rate are set to /dev/ttyUSB0, 1000000 
@@ -379,6 +379,11 @@ This parameter is descripted on open_manipulator_x.cpp in open_manipulator_x_lib
 - Make sure ROS dependencies are installed before performing these instructions. - [Install ROS 2 Packages](/docs/en/platform/openmanipulator_x/ros2_setup/#install-ros-2-packages)
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
+
+Install required package.
+```bash
+$ sudo apt-get install ros-dashing-joint-state-publisher
+```
 
 Load OpenMANIPULATOR-X on RViz.
 
