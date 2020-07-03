@@ -1,7 +1,7 @@
 The Maximum velocity for Profile can be set with this value.  
-Profile Velocity(560) can be used in Position Control Mode and Velocity Control Mode.  
+Profile Velocity(560) can be used in Position Control Mode and Extended Position Control Mode.
 Profile Velocity(560) cannot exceed Velocity Limit(44).  
-Velocity Control Mode only uses Profile Acceleration(556) and Profile Velocity(560) will be ignored.
+Velocity Control Mode uses Profile Acceleration(556) only, and Profile Velocity(560) will be ignored.
 
 |      Unit      |      Value Range       |             Description              |
 |:--------------:|:----------------------:|:------------------------------------:|
