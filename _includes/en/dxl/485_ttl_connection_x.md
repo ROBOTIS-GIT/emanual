@@ -27,9 +27,7 @@ To control the DYNAMIXEL actuators, the main controller needs to convert its UAR
 {% endif %}
 
 The power of DYNAMIXEL is supplied via Pin1(-), Pin2(+).  
-(The above circuit is built into DYNAMIXEL-only controller.)  
+(The above circuit is built into DYNAMIXEL's controller only)  
 In the above circuit diagram, the direction of data signal of TxD and RxD in the TTL Level is determined according to the level of DIRECTION 485 as follows:  
 In case of DIRECTION485 Level = High: The signal of TxD is output to D+ and D-  
 In case of DIRECTION485 Level = Low: The signal of D+ and D- is output to RxD  
-
-{% include en/dxl/pinout_warning.md %}

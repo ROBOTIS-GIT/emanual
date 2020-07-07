@@ -405,7 +405,7 @@ This value indicates present internal Temperature. For more details, please refe
 |    Housing     |  ![](/assets/images/dxl/JST_EHR-4.png)<br />[JST EHR-04]   |    ![](/assets/images/dxl/molex_510210600.png)<br />[MOLEX 51021-0600]     |
 |   PCB Header   | ![](/assets/images/dxl/jst_b4beha.png)<br />[JST B4B-EH-A] |    ![](/assets/images/dxl/molex_530470610.png)<br />[MOLEX 53047-0610]     |
 | Crimp Terminal |                    [JST SEH-001T-P0.6]                     |                             [MOLEX 50079-8100]                             |
-|   Wire Gauge   |                           21 AWG                           |                                   21 AWG                                   |
+|   Wire Gauge for DYNAMIXEL   |                           21 AWG                           |                                   21 AWG                                   |
 
 [JST EHR-04]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
 [JST B4B-EH-A]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf

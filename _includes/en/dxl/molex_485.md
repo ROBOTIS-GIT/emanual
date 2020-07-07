@@ -6,7 +6,7 @@
 |Housing|![](/assets/images/dxl/molex_50375043.png)<br />[MOLEX 50-37-5043]|
 |PCB Header|![](/assets/images/dxl/molex_22035045.png)<br />[MOLEX 22-03-5045]|
 |Crimp Terminal|[MOLEX 08-70-1039]|
-|Wire Gauge|21 AWG|
+|Wire Gauge for DYNAMIXEL|21 AWG|
 
 {% include en/dxl/pinout_warning.md %}
 

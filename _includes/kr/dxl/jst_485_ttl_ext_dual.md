@@ -7,7 +7,7 @@
 |    하우징    |   ![](/assets/images/dxl/JST_EHR-4.png)<br />[JST EHR-04]    |
 |   PCB 헤더   | ![](/assets/images/dxl/JST_B4B-EH-A.png)<br />[JST B4B-EH-A] |
 | Crimp 터미널 |                     [JST SEH-001T-P0.6]                      |
-|  Wire Gauge  |                            21 AWG                            |
+|  다이나믹셀 전선규격  |                            21 AWG                            |
 
 > JST Connector
 
@@ -27,10 +27,8 @@
 |    하우징    |   ![](/assets/images/dxl/JST_EHR-3.png)<br />[JST EHR-03]    |   ![](/assets/images/dxl/JST_EHR-4.png)<br />[JST EHR-04]    | ![](/assets/images/dxl/molex_510210500.png)<br />[MOLEX 51021-0500] | ![](/assets/images/dxl/molex_510210300.png)<br />[MOLEX 51021-0300] |
 |   PCB 헤더   | ![](/assets/images/dxl/JST_B3B_EH-A.png)<br />[JST B3B-EH-A] | ![](/assets/images/dxl/JST_B4B-EH-A.png)<br />[JST B4B-EH-A] | ![](/assets/images/dxl/molex_530470510.png)<br />[MOLEX 53047-0510] | ![](/assets/images/dxl/molex_533980371.png)<br />[MOLEX 53398-0371] |
 | Crimp 터미널 |                     [JST SEH-001T-P0.6]                      |                     [JST SEH-001T-P0.6]                      |                         [MOLEX 50079-8100]                          |                         [MOLEX 50058-8000]                          |
-|  Wire Gauge  |                            21 AWG                            |                            21 AWG                            |                               26 AWG                                |                               26 AWG                                |
+|  다이나믹셀 전선규격  |                            21 AWG                            |                            21 AWG                            |                               26 AWG                                |                               26 AWG                                |
 {% endif %}
-
-{% include kr/dxl/pinout_warning.md %}
 
 [SA610/S4B]: https://weipuconnector.com/pro_show_296.htm
 [SA612/P4B]: https://weipuconnector.com/pro_show_299.htm
