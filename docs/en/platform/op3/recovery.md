@@ -63,7 +63,7 @@ This chapter explains how to install software and configure ROBOTIS OP3.
          1. Open a terminal window.
          2. Install dconf-editor with `$ sudo apt install dconf-editor` command.
          3. Run the editor with `$ dconf-editor` command.
-         4. Go to org -> gnome -> desktop -> remote-access and uncheck require-encryption
+         4. Go to org > gnome > desktop > remote-access and uncheck require-encryption
          5. Execute `$ vino-preferences`
          6. In the Sharing section of the Desktop Sharing Preferences windows, apply followings
              1. Check on the Allow other users to view your desktop option.
@@ -84,7 +84,7 @@ This chapter explains how to install software and configure ROBOTIS OP3.
              $ sudo touch /etc/libuser.conf
              $ sudo system-config-samba
              ```
-             - Go to Preferences -> Samba Users...
+             - Go to Preferences > Samba Users...
                  1. Click `Add User` button
                  2. Select the Unix Username (ex : robotis)
                  3. Enter the Windows Username (ex : robotis)
@@ -131,8 +131,8 @@ This chapter explains how to install software and configure ROBOTIS OP3.
  - ETC : g++, git
    ```
    $ sudo apt install g++ git
-   ```  
-
+   ```
+   
 #### Installing ROS packages for ROBOTIS-OP3
 - face_detection  
     ROS Package used for vision demo  
@@ -294,24 +294,31 @@ This chapter explains how to install software and configure ROBOTIS OP3.
             ```
 
 - Configure Power Button for shutdown
-    1. Go to Start Button -> Settings -> Power Manager.
-    2. Go to General -> Buttons -> When power button is pressed and change the option to "Shutdown".    
+    1. Go to Start Button > Settings > Power Manager.
+    2. Go to General > Buttons > When power button is pressed and change the option to "Shutdown".    
 
 ## [Recovery of ROBOTIS-OP3](#recovery-of-robotis-op3)
 
 ### Overview
 This chapter explains how to recover ROBOTIS-OP3 softwares using recovery USB image.
 
-
 ### CloneZilla recovery  
 Clonezilla is used to recover ROBOTIS-OP3 with the image file in the provided USB.  
 
-#### How to make a recovery USB media  
-- Format a USB drive(at least 4GB space should be available)  
-- Download the ROBOTIS-OP3 Recovery image  
-  - Latest version : clonezilla-live-ROBOTIS-OP3_Recovery_181019(NUC_7th).zip   
-  - `Download` [sourceforge.net]   
-- Extract the compressed file to the root folder of the USB drive. The folder structure looks like below.
+#### How to creat a recovery USB media  
+- Format a USB drive (Required 4GB space or above)  
+- Go to [sourceforge.net][sourceforge.net] and download an recovery image file. 
+
+**NOTE**: The required image file may differ depending on a generation of the provided SBC. Be sure to see the following table and download an appropriate image file with your NUC PC.
+{: .notice}
+
+| Recovery Image List                                      | Description                   |
+|:---------------------------------------------------------|:------------------------------|
+| clonezilla-live-ROBOTIS-OP3_Recovery_181019(NUC_7th).zip | NUC 7 only                    |
+| clonezilla-live-ROBOTIS-OP3_Recovery_180402.zip          | Latest version for NUC 6 only |
+| clonezilla-live-ROBOTIS-OP3_Recovery_171013.zip          | Older image for NUC 6 only    |
+    
+- Extract the zipped foler to the root folder of the USB drive. The folder structure is as follows. 
   ```
   .
   ├── boot
@@ -328,25 +335,21 @@ Clonezilla is used to recover ROBOTIS-OP3 with the image file in the provided US
   ```
 
 #### How to recover ROBOTIS-OP3
-- Go to boot manager : Press **F10**  
+
+1. Go to boot manager : Press **F10**  
 	![](/assets/images/platform/op3/op3_recovery_01.jpg)  
-- Select the boot device : Recovery USB media  
+2. Select the boot device : Recovery USB media  
 	![](/assets/images/platform/op3/op3_recovery_02.jpg)  
-- Select the image : clonezilla live with img ROBOTIS-OP3_Transcend (Default settings, VGA 1024x768)  
+3. Select the image : clonezilla live with img ROBOTIS-OP3_Transcend (Default settings, VGA 1024x768)  
 	![](/assets/images/platform/op3/op3_recovery_03.jpg)  
-- Confirm to continue : enter `y`  
+4. Confirm to continue : enter `y`  
 	![](/assets/images/platform/op3/op3_recovery_04.jpg)  
-- Confirm to continue : enter `y`  
+5. Confirm to continue : enter `y`  
 	![](/assets/images/platform/op3/op3_recovery_05.jpg)  
-- Check the progress  
+6. Check the progress  
 	![](/assets/images/platform/op3/op3_recovery_06.jpg)  
-- Turn off or reboot ROBOTIS-OP3  
+7. Turn off or reboot ROBOTIS-OP3  
 	![](/assets/images/platform/op3/op3_recovery_08.jpg)  
-
-
-### File
-* clonezilla-live-ROBOTIS-OP3_Recovery_180402.zip  
-    * `Download` [sourceforge.net]  
 
 
 [How to Install Linux Mint]: https://www.linuxmint.com/documentation/user-guide/Cinnamon/english_18.0.pdf
