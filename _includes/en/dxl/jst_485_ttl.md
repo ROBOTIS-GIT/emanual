@@ -6,9 +6,7 @@
 |Housing|![](/assets/images/dxl/JST_EHR-3.png)<br />[JST EHR-03]|![](/assets/images/dxl/JST_EHR-4.png)<br />[JST EHR-04]|
 |PCB Header|![](/assets/images/dxl/JST_B3B_EH-A.png)<br />[JST B3B-EH-A]|![](/assets/images/dxl/JST_B4B-EH-A.png)<br />[JST B4B-EH-A]|
 |Crimp Terminal|[JST SEH-001T-P0.6]|[JST SEH-001T-P0.6]|
-|Wire Gauge|21 AWG|21 AWG|
-
-{% include en/dxl/pinout_warning.md %}
+|Wire Gauge for DYNAMIXEL|21 AWG|21 AWG|
 
 [JST EHR-03]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
 [JST EHR-04]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf

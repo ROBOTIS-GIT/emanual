@@ -6,9 +6,8 @@
 |    하우징    |    ![](/assets/images/dxl/JST_EHR-4.png)<br />[JST EHR-4]    |             ![](/assets/images/dxl/molex_39012020.png)<br />[MOLEX 39-01-2020]             |    ![](/assets/images/dxl/molex_510210600.png)<br />[MOLEX 51021-0600]     |
 |   PCB 헤더   | ![](/assets/images/dxl/JST_B4B-EH-A.png)<br />[JST B4B-EH-A] | ![](/assets/images/dxl/molex_39281023.png)<br />[MOLEX 39-28-1023]<br />[MOLEX 87427-0242] |    ![](/assets/images/dxl/molex_530470610.png)<br />[MOLEX 53047-0610]     |
 | Crimp 터미널 |                        [JST SEH-001T]                        |                                     [MOLEX 39-00-0038]                                     |                             [MOLEX 50079-8100]                             |
-|  Wire Gauge  |                            21 AWG                            |                                           20 AWG                                           |                                   26 AWG                                   |
+|  다이나믹셀 전선규격  |                            21 AWG                            |                                           20 AWG                                           |                                   26 AWG                                   |
 
-{% include kr/dxl/pinout_warning.md %}
 
 **주의**: 구동 전에 반드시 전원포트를 통해 24V 전원을 공급해주세요.
 {: .notice--warning}

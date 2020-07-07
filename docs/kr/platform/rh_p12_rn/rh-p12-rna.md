@@ -448,7 +448,6 @@ Profile에 의해 생성된 목표 위치 궤적입니다. 전류기반 위치 �
 
 ![](/assets/images/platform/rh_p12_rn/rh-p12-rn_assembly.png)
 
-
 # [참고자료](#참고자료)
 
 ## [커넥터 정보](#커넥터-정보)
@@ -460,7 +459,7 @@ Profile에 의해 생성된 목표 위치 궤적입니다. 전류기반 위치 �
 |    하우징    |                        [JST EHR-04]                        |    ![](/assets/images/dxl/molex_510210600.png)<br />[MOLEX 51021-0600]     |
 |   PCB 헤더   | ![](/assets/images/dxl/jst_b4beha.png)<br />[JST B4B-EH-A] |    ![](/assets/images/dxl/molex_530470610.png)<br />[MOLEX 53047-0610]     |
 | Crimp 터미널 |                    [JST SEH-001T-P0.6]                     |                             [MOLEX 50079-8100]                             |
-|  Wire Gauge  |                           21 AWG                           |                                   21 AWG                                   |
+|  다이나믹셀 전선규격  |                           21 AWG                           |                                   21 AWG                                   |
 
 [JST EHR-04]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
 [JST B4B-EH-A]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf

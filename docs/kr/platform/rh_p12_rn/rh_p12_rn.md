@@ -414,7 +414,7 @@ Goal Velocity(600)가 ‘0’인 경우, Profile 이 비활성화 되어 Goal Ac
 |    하우징    |  ![](/assets/images/dxl/JST_EHR-4.png)<br />[JST EHR-04]   |    ![](/assets/images/dxl/molex_510210600.png)<br />[MOLEX 51021-0600]     |
 |   PCB 헤더   | ![](/assets/images/dxl/jst_b4beha.png)<br />[JST B4B-EH-A] |    ![](/assets/images/dxl/molex_530470610.png)<br />[MOLEX 53047-0610]     |
 | Crimp 터미널 |                    [JST SEH-001T-P0.6]                     |                             [MOLEX 50079-8100]                             |
-|  Wire Gauge  |                           21 AWG                           |                                   21 AWG                                   |
+|  다이나믹셀 전선규격  |                           21 AWG                           |                                   21 AWG                                   |
 
 [JST EHR-04]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
 [JST B4B-EH-A]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf

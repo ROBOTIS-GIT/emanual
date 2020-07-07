@@ -6,7 +6,7 @@
 | 하우징       | ![](/assets/images/dxl/molex_50375033.png)<br />[MOLEX 50-37-5033] | ![](/assets/images/dxl/molex_50375043.png)<br />[MOLEX 50-37-5043] | ![](/assets/images/dxl/molex_510210300.png)<br />[MOLEX 51021-0300]       |
 | PCB 헤더     | ![](/assets/images/dxl/molex_22035035.png)<br />[MOLEX 22-03-5035] | ![](/assets/images/dxl/molex_22035045.png)<br />[MOLEX 22-03-5045] | ![](/assets/images/dxl/molex_533980371.png)<br />[MOLEX 53398-0371] |
 | Crimp 터미널 | [MOLEX 80-70-1039]                                                 | [MOLEX 80-70-1039]                                                 | [MOLEX 50058-8000]                                                  |
-| Wire Gauge   | 21 AWG                                                             | 21 AWG                                                             | 26 AWG                                                              |
+| 다이나믹셀 전선규격   | 21 AWG                                                             | 21 AWG                                                             | 26 AWG                                                              |
 
 {% include kr/dxl/pinout_warning.md %}
 
