@@ -18,52 +18,53 @@ page_number: 4
 # [Quick Start Guide](#quick-start-guide)
 
 This step by step quick start guide for running OpenMANIPULATOR-X on ROS<sup>TM</sup> will guide you to operate the OpenMANIPULATOR-X for the first time.  
-In order to run this guide, you should be prepared with below items.
-- 1 [OpenMANIPULATOR-X](http://en.robotis.com/shop_en/item.php?it_id=905-0024-000)
-- 1 Communication Interface
+
+In order to run this guide, you should be prepared with below items. 
+- [OpenMANIPULATOR-X](http://en.robotis.com/shop_en/item.php?it_id=905-0024-000)
+- Communication Interface
   - Option 1 : [DYNAMIXEL Starter Set](http://en.robotis.com/shop_en/list.php?ca_id=302050)
   - Option 2 : [OpenCR1.0](http://en.robotis.com/shop_en/item.php?it_id=903-0257-000)
-- 1 Power supply
+- Power supply
   - [ROBOTIS SMPS 12V 5A PS-10](http://en.robotis.com/shop_en/list.php?ca_id=3020a0&sort=&sortodr=&page=1) recommended (included in the DYNAMIXEL Starter Set)
 
-**If you are going to use Ubuntu 16.04 and ROS1 Kinetic Kame, please follow the GREEN Instructions only.**  
+**On Ubuntu 16.04 and ROS1 Kinetic Kame, please follow the GREEN Instructions only.**  
 
 {% capture kinetic_00 %}
-for `Kinetic` only.  
-**These Green instructions are tested with the following environment :**  
+For `Kinetic` only.  
+**These Green instructions are tested with the following environment**  
 - Intel NUC
 - Ubuntu 16.04
-- ROS1 Kinetic Kame
+- ROS 1 Kinetic Kame
 - Official ROBOTIS OpenMANIPULATOR-X package
 {% endcapture %}
 <div class="notice--success">{{ kinetic_00 | markdownify }}</div>
 
-**If you are going to use Ubuntu 18.04 and ROS2 Dashing Diademata, please follow the RED Instructions only.**
+**On Ubuntu 18.04 and ROS2 Dashing Diademata, please follow the RED Instructions only.**
 
 {% capture dashing_00 %}
-for `Dashing` only.  
-**These Red instructions are tested with the following environment :**  
+For `Dashing` only.  
+**These Red instructions are tested with the following environment**  
 - Intel NUC
 - Ubuntu 18.04
-- ROS2 Dashing Diademata
+- ROS 2 Dashing Diademata
 - Official ROBOTIS OpenMANIPULATOR-X package
 {% endcapture %}
 <div class="notice--danger">{{ dashing_00 | markdownify }}</div>
 
 ## Install Ubuntu
 Install Ubuntu based on your selection of ROS<sup>TM</sup> version.
-- ROS1 Kinetic Kame : Ubuntu 16.04
-- ROS2 Dashing Diademata : Ubuntu 18.04
+- ROS 1 Kinetic Kame : Ubuntu 16.04
+- ROS 2 Dashing Diademata : Ubuntu 18.04
 
-[Ubuntu Installation Tutorial](https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview)
+[See Ubuntu Installation Tutorial](https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview)
 
 ## Install ROS on PC
 
 It is strongly recommended to install ROS with the script provided in the below command.
-If you decided to install ROS with the official ROS instruction, please refer to the [Manual Setting](#manual-setting) section after installing ROS.
+If you decided to install ROS with the official ROS instruction, refer to the [Manual Setting](#manual-setting) section after installing ROS.
 
 {% capture kinetic_01 %}
-for `Kinetic`  
+For `Kinetic`  
 ```bash
 $ sudo apt update && sudo apt upgrade
 $ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh
@@ -73,7 +74,7 @@ $ chmod 755 ./install_ros_kinetic.sh && bash ./install_ros_kinetic.sh
 <div class="notice--success">{{ kinetic_01 | markdownify }}</div>
 
 {% capture dashing_01 %}
-for `Dashing`  
+For `Dashing`  
 ```bash
 $ sudo apt update && sudo apt upgrade
 $ wget https://raw.githubusercontent.com/ROBOTIS-GIT/open_manipulator/ros2/install_ros_dashing.sh
@@ -86,7 +87,7 @@ $ chmod 755 ./install_ros_dashing.sh && bash ./install_ros_dashing.sh
 Please do **NOT** enter below commands if you have already installed ROS with above instructions.
 
 {% capture kinetic_02 %}
-for `Kinetic`  
+For `Kinetic`  
 ```bash
 $ sudo apt-get install git
 $ mkdir -p ~/catkin_ws/src
@@ -100,7 +101,7 @@ $ source ~/.bashrc
 <div class="notice--success">{{ kinetic_02 | markdownify }}</div>
 
 {% capture dashing_02 %}
-for `Dashing`  
+For `Dashing`  
 ```bash
 $ sudo apt install git
 $ mkdir -p ~/robotis_ws/src
@@ -116,7 +117,7 @@ $ echo "source ~/robotis_ws/install/local_setup.bash" >> ~/.bashrc
 The following commands will download OpenMANIPULATOR-X package source codes and build them.
 
 {% capture kinetic_03 %}
-for `Kinetic`  
+For `Kinetic`  
 ```bash
 $ source ~/.bashrc
 $ sudo apt-get install ros-kinetic-ros-controllers ros-kinetic-gazebo* ros-kinetic-moveit* ros-kinetic-industrial-core
@@ -134,7 +135,7 @@ $ cd ~/catkin_ws && catkin_make
 <div class="notice--success">{{ kinetic_03 | markdownify }}</div>
 
 {% capture dashing_03 %}
-for `Dashing`  
+For `Dashing`  
 ```bash
 $ source ~/.bashrc
 $ sudo apt install ros-dashing-python* ros-dashing-rqt* ros-dashing-joint-state-publisher
@@ -161,7 +162,7 @@ After completing this section, turn on the power switch and check if all DYNAMIX
 ![](/assets/images/platform/openmanipulator_x/OpenManipulator_u2d2_setup2.png)
 
 {% capture kinetic_04 %}
-for `Kinetic` + `U2D2`  
+For `Kinetic` + `U2D2`  
 ```bash
 $ roscore
 ```
@@ -175,7 +176,7 @@ $ rosrun open_manipulator_controller create_udev_rules
 <div class="notice--success">{{ kinetic_04 | markdownify }}</div>
 
 {% capture dashing_04 %}
-for `Dashing` + `U2D2`  
+For `Dashing` + `U2D2`  
 ```bash
 $ ros2 run open_manipulator_x_controller create_udev_rules
 ```
@@ -192,7 +193,7 @@ $ ros2 run open_manipulator_x_controller create_udev_rules
 ![](/assets/images/platform/openmanipulator_x/OpenManipulator_opencr_setup2.png)
 
 {% capture kinetic_05 %}
-for `Kinetic` + `OpenCR`  
+For `Kinetic` + `OpenCR`  
 ```bash
 $ wget https://github.com/ROBOTIS-Will/OpenCR/raw/master/arduino/opencr_arduino/tools/opencr_tools_1.0.0/opencr_ld
 $ wget https://github.com/ROBOTIS-Will/OpenCR/raw/master/arduino/opencr_arduino/tools/opencr_tools_1.0.0/usb_to_dxl.ino.bin
@@ -207,7 +208,7 @@ $ ./opencr_ld /dev/ttyACM0 115200 usb_to_dxl.ino.bin 1
 <div class="notice--success">{{ kinetic_05 | markdownify }}</div>
 
 {% capture dashing_05 %}
-for `Dashing` + `OpenCR`  
+For `Dashing` + `OpenCR`  
 ```bash
 $ wget https://github.com/ROBOTIS-Will/OpenCR/raw/master/arduino/opencr_arduino/tools/opencr_tools_1.0.0/opencr_ld
 $ wget https://github.com/ROBOTIS-Will/OpenCR/raw/master/arduino/opencr_arduino/tools/opencr_tools_1.0.0/usb_to_dxl.ino.bin
@@ -223,7 +224,7 @@ $ ./opencr_ld /dev/ttyACM0 115200 usb_to_dxl.ino.bin 1
 
 {% capture note_03 %}
 `FAQ`  
-In case of getting below failure, please try downloading the firmware again.
+In case of getting below failure, try downloading the firmware again.
 ```bash
 test@Intel-NUC:~$ ./opencr_ld /dev/ttyACM0 115200 usb_to_dxl.ino.bin 1
 opencr_ld ver 1.0.4
@@ -247,7 +248,7 @@ Please note that this instruction is written for the **ROBOTIS official OpenMANI
 {% capture note_01 %}
 `FAQ`
 - You can configure your DYNAMIXEL using [DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/).
-- After completing the [Hardware Setup](#hardware-setup) section, please use DYNAMIXEL Wizard 2.0 to configure the DYNAMIXEL.
+- After completing the [Hardware Setup](#hardware-setup) section, use DYNAMIXEL Wizard 2.0 to configure the DYNAMIXEL.
 {% endcapture %}
 <div class="notice--warning">{{ note_01 | markdownify }}</div>
 
@@ -316,7 +317,7 @@ Gripper Dynamixel ID : 15, Model Name :XM430-W350
 ```
 
 {% capture dashing_06 %}
-for `Dashing` + `U2D2`  
+For `Dashing` + `U2D2`  
 
 Close all terminal window and open a new one.
 ```bash
@@ -326,7 +327,7 @@ $ ros2 launch open_manipulator_x_controller open_manipulator_x_controller.launch
 <div class="notice--danger">{{ dashing_06 | markdownify }}</div>
 
 {% capture dashing_07 %}
-for `Dashing` + `OpenCR`  
+For `Dashing` + `OpenCR`  
 
 Close all terminal window and open a new one.
 ```bash
@@ -348,7 +349,7 @@ Gripper Dynamixel ID : 15, Model Name :XM430-W350
 
 {% capture note_02 %}
 `FAQ`
-- If you only see the part of result on Dashing, please enter below command before launching the controller again.
+- If you only see the part of result on Dashing, enter below command before launching the controller again.
 ```bash
 $ export RCUTILS_CONSOLE_STDOUT_LINE_BUFFERED=1
 ```
@@ -361,7 +362,7 @@ $ export RCUTILS_CONSOLE_STDOUT_LINE_BUFFERED=1
 This section an **optional** that you can see the 3D visualization of OpenMANIPULATOR-X.
 
 {% capture kinetic_08 %}
-for `Kinetic`  
+For `Kinetic`  
 
 Open another terminal and enter below command
 ```bash
@@ -371,7 +372,7 @@ $ roslaunch open_manipulator_description open_manipulator_rviz.launch
 <div class="notice--success">{{ kinetic_08 | markdownify }}</div>
 
 {% capture dashing_08 %}
-for `Dashing`  
+For `Dashing`  
 
 Open another terminal and enter below command
 ```bash
@@ -392,7 +393,7 @@ For Kinetic, two operation options are available. Please run only one method at 
 #### [Option 1] GUI Program
 
 {% capture kinetic_09 %}
-for `Kinetic`  
+For `Kinetic`  
 
 Open another terminal and enter below command. Please refer to [GUI Program](/docs/en/platform/openmanipulator_x/ros_operation/#gui-program) section for more details.
 ```bash
@@ -402,7 +403,7 @@ $ roslaunch open_manipulator_control_gui open_manipulator_control_gui.launch
 <div class="notice--success">{{ kinetic_09 | markdownify }}</div>
 
 {% capture dashing_09 %}
-for `Dashing`, GUI Program is **not supported**.
+For `Dashing`, GUI Program is **not supported**.
 {% endcapture %}
 <div class="notice--danger">{{ dashing_09 | markdownify }}</div>
 
@@ -411,7 +412,7 @@ for `Dashing`, GUI Program is **not supported**.
 #### [Option 2] Keyboard
 
 {% capture kinetic_10 %}
-for `Kinetic`  
+For `Kinetic`  
 
 Open another terminal and enter below command.  
 ```bash
@@ -421,7 +422,7 @@ $ roslaunch open_manipulator_teleop open_manipulator_teleop_keyboard.launch
 <div class="notice--success">{{ kinetic_10 | markdownify }}</div>
 
 {% capture dashing_10 %}
-for `Dashing`  
+For `Dashing`  
 
 Open another terminal and enter below command.  
 ```bash
@@ -464,5 +465,5 @@ You will see below interface on the terminal window after a successful launch.
   ---------------------------
 ```
 
-`FAQ` **For any issues with running OpenMANIPULATOR-X, please submit an issue ticket on [GitHub Issue page](https://github.com/ROBOTIS-GIT/open_manipulator/issues)**.
+`FAQ` **For any issues with running OpenMANIPULATOR-X, submit an issue ticket on [GitHub Issue page](https://github.com/ROBOTIS-GIT/open_manipulator/issues)**.
 {: .notice--warning}
