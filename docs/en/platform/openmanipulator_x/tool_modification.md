@@ -17,6 +17,11 @@ page_number: 21
 
 
 # [Tool Modification](#tool-modification)
+
+We are proposing a way to replace and manipulate tool(gripper) of manipulator to take advantage of OpenMANIPULATOR-X for a wider range of applications. Try the new application using the Pen holder or Vacuum gripper as shown in the example below, and create your own tool to challenge more applications.
+
+<img src="/assets/images/platform/openmanipulator_x/OpenManipulator_tool_modi.png" width="600">
+
 ## [Vacuum Gripper](#vaccum-gripper)
 
 ### Video
