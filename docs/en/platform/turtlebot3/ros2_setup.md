@@ -151,24 +151,8 @@ $ sudo touch /etc/netplan/01-netcfg.yaml
 $ sudo nano /etc/netplan/01-netcfg.yaml
 ```
 
-3. After opening the file, configure a network setting. Refer to the network setting below. Please be aware of the indentation in each line.
-```
-network:
-  version: 2
-  renderer: networkd
-  ethernets:
-    eth0:
-      dhcp4: yes
-      dhcp6: yes
-      optional: true
-  wifis:
-    wlan0:
-      dhcp4: yes
-      dhcp6: yes
-      access-points:
-        "your-wifi-name":
-          password: "your-wifi-password"
-```
+3. After opening the file, enter the network setting as shown below. Please be aware of the indentation in each line.  
+![](/assets/images/platform/turtlebot3/setup/ros2_sbc_netcfg.png)
 
 4. After configuration, the remote PC can connect to a SBC in TurtleBot3 by following steps.
 
