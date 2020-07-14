@@ -56,6 +56,7 @@ DYNAMIXEL2Arduino class inherits below public functions from the Master class.
 - [bulkWrite()]{: .popup}
 - [getLastLibErrCode()]{: .popup}
 
+[Arduino Official Guide]: https://www.arduino.cc/en/Guide/Libraries
 [begin()]: /docs/en/popup/arduino_api/begin/
 [getPortBaud()]: /docs/en/popup/arduino_api/getPortBaud/
 [ping()]: /docs/en/popup/arduino_api/ping/
