@@ -31,14 +31,17 @@ page_number: 11
 
 {% capture notice_01 %}
 **NOTE**: You can choose one of methods for uploading firmware. But we highly recommend to use **shell script**. If you need to modify TurtleBot3's firmware, you can use the second method.
-- Method #1: [**Shell Script**](#shell-script), upload the pre-built binary file using the shell script.
+- Method #1: [**Shell Script**](#shell-script), if you are using linux, you can upload the pre-built binary file using the shell script.
 - Method #2: [**Arduino IDE**](#arduino-ide), build the provided source code and upload the generated binary file using the Arduino IDE.
 {% endcapture %}
 
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
 #### [(Recommended) Shell Script](#recommended-shell-script)
-  
+
+**NOTE**: For Windows developers, please use the [alternative Arduino IDE](#alternative-arduino-ide) firmware upload method.
+{: .notice}
+
 This instruction was tested on `Ubuntu 16.04`, `Ubuntu Mate`, `Linux Mint` and `Raspbian`. You can use the following command after connecting OpenCR to remote PC (your desktop or laptop PC) or connect OpenCR to your TurtleBot PC (`Intel® Joule™`, `Raspberry Pi 3`) and execute the following command.
 
 - TurtleBot3 Burger

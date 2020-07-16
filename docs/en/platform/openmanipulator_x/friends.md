@@ -17,6 +17,11 @@ page_number: 23
 
 # [Friends](#friends)
 
+Modify the hardware(DOF, structure) and software(kinematics, trajectory) of OpenMANIPULATOR-X and manipulate your own OpenMANIPULATOR. We provide a variety of the OpenMANIPULATOR-X friends as examples of hardware transformations. Try to control the manipulator with different structure and enjoy it. And try out the kinematics solving algorithm for the different structure.
+
+<img src="/assets/images/platform/openmanipulator_x/OpenManipulator_friends.png" width="760">
+
+
   Friends List
 
   - [OpenMANIPULATOR SCARA](/docs/en/platform/openmanipulator_x/friends/#openmanipulator-scara)

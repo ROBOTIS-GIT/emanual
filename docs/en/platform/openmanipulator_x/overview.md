@@ -28,7 +28,11 @@ OpenMANIPULATOR-X RM-X52-TNM are based on ROS ​and OpenSource. ROS official ha
 
 ## [OpenHardware](#openhardware)
 OpenMANIPULATOR-X RM-X52-TNM is an open-hardware oriented platform​. Most of the components are uploaded as [STL files](http://www.robotis.com/service/download.php?no=690) so that users can easily 3d print them. It also allows users to modify the length of the links or the design of the robot for their own purposes. OpenMANIPULATOR-X RM-X52-TNM is made of **DYNAMIXEL-X ​Series** which is used in TurtleBot 3.
-![](/assets/images/platform/openmanipulator_x/OpenManipulator_Chain_OnShape.png)
+![](/assets/images/platform/openmanipulator_x/OpenManipulator_Chain_OnShape.png)  
+> Base Plate is not included in the package
+
+- If you want to develop on an embedded system, prepare [OpenCR](http://en.robotis.com/shop_en/item.php?it_id=903-0257-000) and PC. 
+- In order to run with ROS, prepare your PC and either the [DYNAMIXEL Starter Set](http://www.robotis.us/dynamixel-starter-set/?_ga=2.61621164.1048223353.1594349518-2121469020.1594349518) or [OpenCR](http://en.robotis.com/shop_en/item.php?it_id=903-0257-000).  
 
 ## [OpenCR (Embedded board)](#opencr-embedded-board)
 OpenMANIPULATOR-X RM-X52-TNM can also be controlled using [OpenCR] (Open-source Control module for ROS), the control board used in TurtleBot3. The computing power and real-time controllability of OpenCR can support forward and inverse kinematics, and [profile control](http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#profile-acceleration108) examples. 

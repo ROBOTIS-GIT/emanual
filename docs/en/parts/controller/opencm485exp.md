@@ -11,6 +11,9 @@ sidebar:
   nav: "opencm485exp"
 ---
 
+**NOTE**: [The OpenCM 485 EXP e-Manual](/docs/en/parts/controller/opencm485exp_jp/) in Japanese (日本語) is available for the Japanese. 
+{: .notice}
+
 ![](/assets/images/parts/controller/opencm904/opencm485exp_product.jpg)
 
 > OpenCM 485 Expansion Board
@@ -50,7 +53,9 @@ sidebar:
 
 {% include en/dxl/pinout_warning.md %}
 
-# [Connecting OpenCM9.04](#connecting-opencm904)
+# [Using with OpenCM9.04](#using-with-opencm904)
+
+## [Connecting OpenCM9.04 to the expanstion board](#connecting-opencm904-to-the-expanstion-board)
 
 1. Prepare OpenCM 485 EXP and OpenCM9.04 boards. Any version of OpenCM9.04 is compatible. Solder the header onto the OpenCM9.04.
 
@@ -71,8 +76,44 @@ sidebar:
 
     ![](/assets/images/parts/controller/opencm904/opencm485exp_05.jpg)
 
+{% capture dxl_jst_molex %}
+**NOTE**: 
+- DYNAMIXEL-X and P series use JST connector that is not compatible with a connector installed on the OpenCM 485 EXP board. To use DYNAMIXEL X and P series with the expansion board, use [JST-Molex convertable cable](http://en.robotis.com/shop_en/list.php?ca_id=302090&sort=&sortodr=&page=2). 
+- Be sure to disconnect OpenCM9.04 with OpenCM 485 EXP board before a firmware recovery for DYNAMIXEL.
+{% endcapture %}
+<div class="notice">{{ dxl_jst_molex | markdownify }}</div>
 
-# [Power Circuit Connection](#power-circuit-connection)
+## [Using a motion tool or motion file with OpenCM9.04 and OpenCM 485 expansion board](#using-a-motion-tool-or-motion-file-with-opencm904-and-opencm-485-expansion-board)
+
+To use a motion tool on R+ Motion, or a motion file on R+ Task with DYNAMIXEL connected to OpenCM 9.04 or the expanstion board, set the DYNAMIXEL's bus channel by configuring the item, **Dynamixel Channel**, of the Control table on the OpenCM 9.04.
+
+1. Open R+ Manager, and select **OpenCM 9.04** in the **Home** tab.
+
+    ![](/assets/images/sw/rplus2/manager/rplus_manager2_dxl_channel_setting_01.png)
+
+2. Select **Update & Test**.  
+
+    ![](/assets/images/sw/rplus2/manager/rplus_manager2_dxl_channel_setting_02.png)
+
+3. When the control table appears, select an DYNAMIXEL's bus channel on the list of **Dynamixel Channel**. For example, select **EXP Board(X-Series)** to use DYNAMIXEL-X series on the expansion board.
+  
+    ![](/assets/images/sw/rplus2/manager/rplus_manager2_dxl_channel_setting_03.png)
+            
+| Item                    | Description                                                                                            |
+|:------------------------|:-------------------------------------------------------------------------------------------------------|
+| **On Board(XL-320)**    | Uses XL-320 only with the OpenCM 9.04 on a motion tool and a task program                              |
+| **EXP Board(X-Series)** | Uses DYNAMIXEL-X series, XL-320 excluded, with the expantion board on a motion tool and a task program |
+| **EXP Board(XL-320)**   | Uses XL-320 only with the expantion board on a motion tool and a task program                          |
+| **On Board(X-Series)**  | Uses DYNAMIXEL-X series, XL-320 excluded, with the OpenCM 9.04 on a motion tool and a task program     |
+
+> Items of Dynamixel Channle on the control table.
+
+**NOTE**: After setup is complete, restart the OpenCM9.04 or the expansion board to activate DYNAMIXEL's bus channel. Consequently, the DYNAMIXEL with the controller will properly work on the motion tool or with the motion file on the task program.
+{: .notice}
+
+# [Reference](#reference)
+
+## [Power Circuit Connection](#power-circuit-connection)
 
 A power circuit block diagram of the OpenCM 485 EXP and OpenCM9.04, once mounted, is shown below.  
 OpenCM 485 EXP supplies 5V from OpenCM9.04 as default. JP1 can be used to determine if VDD power from OpeCM 485 EXP board is supplied to OpenCM9.04.
@@ -90,8 +131,7 @@ OpenCM 485 EXP’s DYNAMIXEL 485 bus operates as DYNAMIXEL bus using OpenCM9.04�
 
 > OpenCM9.04 & OpenCM 485 EXP Bus Connections
 
-# [EXP Board Programming](#exp-board-programming)
-
+## [EXP Board Programming](#exp-board-programming)
 
 In order to use OpenCM 485 EXP board with OpenCM9.04, please use Arduino IDE.
 
@@ -122,7 +162,7 @@ In order to use OpenCM 485 EXP board with OpenCM9.04, please use Arduino IDE.
     dxl_wb.begin(DEVICE_NAME, BAUDRATE);
     ```
 
-# [Button & LED](#button-led)
+# [Button and LED](#button-and-led)
 
 OpenCM 485 EXP board has 2 buttons and 3 LED’s that are connected to OpenCM9.04 I/O pins.  
 The OpenCM9.04 I/O pin numbers for the buttons and LED’s are indicated below.
@@ -137,11 +177,9 @@ The OpenCM9.04 I/O pin numbers for the buttons and LED’s are indicated below.
 
 ![](/assets/images/parts/controller/opencm904/opencm485exp_11.jpg)
 
-
-# [Downloads](#downloads)
+## [Drawings](#drawings)
 
 - `Download PDF` [PCB Schematic](http://support.robotis.com/en/baggage_files/opencm/schematic1___opencm_485exp.pdf)
-
 
 [RoboPlus Task]: /docs/en/software/rplus1/task/getting_started/
 [Number of pressed Start button]: /docs/en/software/rplus1/task/programming_02/#button-count

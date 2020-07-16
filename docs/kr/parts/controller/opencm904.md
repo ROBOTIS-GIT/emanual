@@ -405,7 +405,7 @@ XL-320을 제외한 3핀 TTL 다이나믹셀은 헤더의 +-핀 또는 배터리
 
 - 배터리 혼용 금지
 
-  ![](/assets/images/parts/controller/opencm904/opencm904_24.png)
+  ![](/assets/images/parts/controller/opencm904/opencm904_23.jpg)
 
 USB 포트는 LBS-40 배터리 혹은 +-핀과 동시 연결해도 무방합니다.(차단회로 내장)  
 +- 혹은 배터리로 공급되는 전압은 다이나믹셀의 권장 전압으로 사용하시길 추천합니다.  
@@ -742,6 +742,42 @@ Dynamixel2Arduino 클래스는 Master 클래스로부터 다음의 함수를 상
 USB 포트를 통해 OpenCM9.04를 윈도우즈 환경에서 사용하려면 USB CDC 드라이버를 설치해야 합니다. 아래 방법으로 설치하시기 바랍니다.
 
 - [USB 드라이버 설치]{: .popup}
+
+## [XM/XH 시리즈 사용전 준비](#xmxh-시리즈-사용전-준비)
+
+XM/XH 시리즈를 R+Task2.0이나 R+Motion2.0에서 사용하기 위해서는 두 가지 사전준비를 거쳐야 합니다.
+
+### H/W 준비하기
+
+1. 아래 그림처럼 OpenCM9.04과 XM시리즈 외에 “OpenCM 485 EXP 보드” 가 필요합니다.
+
+2. 아래 3가지를 케이블로 연결합니다.
+
+  ![](/assets/images/sw/rplus2/manager/rplusmanager2_30_kr.jpg)
+
+### 다이나믹셀 Channel 설정하기
+
+1. R+ Manager 2.0을 실행하여 DYNAMIXEL 2.0 제품을 선택한 후, 업데이트 & 테스트 메뉴를 실행합니다.
+
+    ![](/assets/images/sw/rplus2/manager/rplusmanager2_31_kr.jpg)
+
+2. OpenCM9.04에 LN-101 또는 BT-210(혹은 BT-110)을 사용하여 PC와 연결한 후, OpenCM 485 EXP의 전원을 켭니다.
+3. 안내에 따라 제품을 검색하면 OpenCM9.04가 검색됩니다. (처음에는 OpenCM9.04의 DYNAMIXEL Channel 값이 Default로 설정되어 있어 XM/XH시리즈가 검색되지 않습니다.)
+
+    ![](/assets/images/sw/rplus2/manager/rplusmanager2_32_kr.jpg)
+
+4. 제품을 업데이트하는 과정을 거치면 컨트롤 테이블이 실행됩니다.
+5. 컨트롤 테이블 항목에서 DYNAMIXEL Channel 값을 EXP Board로 설정한 후 저장합니다.
+
+    ![](/assets/images/sw/rplus2/manager/rplusmanager2_33_kr.jpg)
+
+6. 설정이 완료되면 컨트롤 테이블 창을 닫고, OpenCM 485 EXP의 전원을 껐다가 켭니다.(이때, 재부팅되면서 OpenCM9.04의 미니 TTL버스가 비활성화되고 OpenCM 485 EXP의 다이나믹셀 버스가 활성화 됩니다.)
+7. 업데이트 & 테스트 메뉴를 다시 실행하여 XM/XH시리즈가 정상적으로 검색되는지 확인합니다.
+
+    ![](/assets/images/sw/rplus2/manager/rplusmanager2_34_kr.jpg)
+
+8. 설정이 완료되면 R+ Task 2.0과 R+ Motion 2.0에서 XM/XH 시리즈를 사용할 수 있게 됩니다.(R+ Task 2.0 v2.1.0, R+ Motion 2.0 v2.4.0 이상 버전에서 지원)
+
 
 ## [도면](#도면)
 

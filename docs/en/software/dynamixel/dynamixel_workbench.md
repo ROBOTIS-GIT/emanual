@@ -11,6 +11,9 @@ sidebar:
   nav: "dynamixel_workbench"
 ---
 
+**NOTE**: [The DYNAMIXEL Workbench e-Manual](/docs/en/software/dynamixel/dynamixel_workbench_jp/) in Japanese (日本語) is available for the Japanese. 
+{: .notice}
+
 # [Introduction](#introduction)
 
 ![](/assets/images/sw/dynamixel/dynamixel_workbench/DYNAMIXEL_WORKBENCH_LOGO.png)
@@ -647,24 +650,24 @@ DYNAMIXEL Workbench firmware in OpenCR and OpenCM is completely same. You can se
 
 You can select any example what you want and excute it.
 
-### Examples
-
-1. model_scan
-1. ping
-1. id_change
-1. bps_change
-1. mode_change
-1. reboot
-1. reset
-1. position
-1. velocity
-1. current_based_position
-1. read_write
-1. sync_write
-1. sync_read_write
-1. bulk_read_write
-1. find_dynamixel
-1. monitor
+| Item | **Examples**             |
+|:-----|:-------------------------|
+| 1    | model\_scan              |
+| 2    | ping                     |
+| 3    | id\_change               |
+| 4    | bps\_change              |
+| 5    | mode\_change             |
+| 6    | reboot                   |
+| 7    | reset                    |
+| 8    | position                 |
+| 9    | velocity                 |
+| 10   | current\_based\_position |
+| 11   | read\_write              |
+| 12   | sync\_write              |
+| 13   | sync\_read\_write        |
+| 14   | bulk\_read\_write        |
+| 15   | find\_dynamixel          |
+| 16   | monitor                  |
 
 **TIP**: USB port name is different depend on OS. For example, `/dev/ttyUSB0`, `/dev/ttyACM0` in Linux and `/dev/cu.usbmodem1411` in macOS
 {: .notice--success}

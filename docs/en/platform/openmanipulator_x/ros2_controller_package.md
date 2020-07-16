@@ -28,10 +28,16 @@ OpenMANIPULATOR-X controller provides basic manipulation of OpenMANIPULATOR-X. Y
 
 ## [Launch Controller](#launch-controller)
 
-Open a terminal then run the following command in the terminal.
+If you are using `U2D2` as a communication converter, open a terminal then enter the following command.  
 
 ``` bash
-$ ros2 launch open_manipulator_x_controller open_manipulator_x_controller.launch.py  
+$ ros2 launch open_manipulator_x_controller open_manipulator_x_controller.launch.py
+```
+
+If you are using `OpenCR` as a communication converter, open a terminal then enter the following command instead of above command.  
+
+``` bash
+$ ros2 launch open_manipulator_x_controller open_manipulator_x_controller.launch.py usb_port:=/dev/ttyACM0
 ```
 
 {% capture warning_01 %}
@@ -44,7 +50,7 @@ The picture of OpenMANIPULATOR-X below is showing you the ideal pose of OpenMANI
 {% endcapture %}
 <div class="notice--warning">{{ warning_01 | markdownify }}</div>
 
-Follwing message will be shown in the Terminal after the process done successfully.  
+Follwing message will be shown in the Terminal after the process done successfully with `U2D2`.  
 
 ```
 port_name and baud_rate are set to /dev/ttyUSB0, 1000000 
@@ -83,7 +89,7 @@ Gripper Dynamixel ID : 15, Model Name :XM430-W350
 Publish a topic message to check the OpenMANIPULATOR-X setting.
 
 ``` bash
-$ ros2 topic pub /open_manipulator_x/option std_msgs/msg/String "data: print_open_manipulator_x_setting"
+$ ros2 topic pub /option std_msgs/msg/String "data: print_open_manipulator_x_setting"
 ```
 
 <**Manipulator Description**> will be printed on a terminal. 
@@ -374,10 +380,15 @@ This parameter is descripted on open_manipulator_x.cpp in open_manipulator_x_lib
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
+Install required package.
+```bash
+$ sudo apt-get install ros-dashing-joint-state-publisher
+```
+
 Load OpenMANIPULATOR-X on RViz.
 
 ``` bash
-$ ros2 launch open_manipulator_x_description open_manipulator_x_rviz2.launch.py 
+$ ros2 launch open_manipulator_x_description open_manipulator_x_rviz.launch.py 
 ```
 
 {% capture notice_01 %}

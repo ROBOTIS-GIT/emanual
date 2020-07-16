@@ -22,7 +22,7 @@ page_number: 20
 
 {% capture notice_01 %}
 **NOTE**: 
-- This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+- This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame` and on `Windows 10` with `ROS Melodic Morenia`
 - This instructions are supposed to be running on the remote PC. Please run the instructions below on your **Remote PC**.
 - The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. The shortcut key for running the terminal is `Ctrl`-`Alt`-`T`.
 - Make sure to run the [Bringup](/docs/en/platform/turtlebot3/bringup/#bringup) instruction before use of the instruction.
@@ -87,7 +87,17 @@ $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
 ```
 
-{% capture slam_tip %}
+{% capture slam_tip_01 %}
+**TIP**: When running these commands on `Windows 10`,  replace `export TURTLEBOT3_MODEL=${TB3_MODEL}` with `set TURTLEBOT3_MODEL=${TB3_MODEL}` like this:
+``` bash
+> set TURTLEBOT3_MODEL=burger
+> roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
+```
+{% endcapture %}
+<div class="notice--info">{{ slam_tip_01 | markdownify }}</div>
+{: .notice--success}
+
+{% capture slam_tip_02 %}
 **TIP**: When you run the above command, the visualization tool RViz is also executed. If you want to run RViz separately, use one of the following commands.
 
   - $ rviz -d \`rospack find turtlebot3_slam\`/rviz/turtlebot3_gmapping.rviz
@@ -97,13 +107,13 @@ $ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
   - $ rviz -d \`rospack find turtlebot3_slam\`/rviz/turtlebot3_frontier_exploration.rviz
 
 {% endcapture %}
-
-<div class="notice--info">{{ slam_tip | markdownify }}</div>
+<div class="notice--success">{{ slam_tip_02 | markdownify }}</div>
 
 {% capture notice_03 %}
 **NOTE**: Support for various SLAM methods
 - TurtleBot3 supports Gmapping, Cartographer, Hector, and Karto among various SLAM methods. You can do this by changing the `slam_methods:=xxxxx` option.
 - The `slam_methods` options include `gmapping`, `cartographer`, `hector`, `karto`, `frontier_exploration`, and you can choose one of them.
+- For Windows 10, Google Cartographer has been enabled. OpenKarto is coming soon.
 - For example, to use Karto, you can use the following:
 - $ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=karto
 {% endcapture %}
@@ -112,22 +122,40 @@ $ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
 {% capture notice_04 %}
 **NOTE**: Install dependency packages for SLAM packages
 - For `Gmapping`:
-- Packages related to Gmapping have already been installed on [PC Setup](/docs/en/platform/turtlebot3/pc_setup/#install-dependent-ros-packages) page.
+  - Packages related to Gmapping have already been installed on [PC Setup](/docs/en/platform/turtlebot3/pc_setup/#install-dependent-ros-packages) page.
+  - Gmapping has not been enabled on Windows
 - For `Cartographer`:
-- sudo apt-get install ros-kinetic-cartographer ros-kinetic-cartographer-ros ros-kinetic-cartographer-ros-msgs ros-kinetic-cartographer-rviz
+  - Ubuntu
+    ```bash
+    $ sudo apt-get install ros-kinetic-cartographer ros-kinetic-cartographer-ros ros-kinetic-cartographer-ros-msgs ros-kinetic-cartographer-rviz
+    ```
+  - Windows
+    ```bash
+    > choco upgrade ros-melodic-cartographer_ros -y
+    ```
 - For `Hector Mapping`:
-- sudo apt-get install ros-kinetic-hector-mapping
+  - Hector Mapping has not been enabled on Windows
+  ```bash
+  $ sudo apt-get install ros-kinetic-hector-mapping
+  ```
 - For `Karto`:
-- sudo apt-get install ros-kinetic-slam-karto
+  - Coming soon on Windows
+  ```bash
+  $ sudo apt-get install ros-kinetic-slam-karto
+  ```
 - For `Frontier Exploration`:
-- Frontier Exploration uses gmapping, and the following packages should be installed.
-- sudo apt-get install ros-kinetic-frontier-exploration ros-kinetic-navigation-stage
+  - Frontier Exploration uses gmapping, and the following packages should be installed.
+  - Frontier Exploration has not been enabled on Windows
+  ```bash
+  $ sudo apt-get install ros-kinetic-frontier-exploration ros-kinetic-navigation-stage
+  ```
 {% endcapture %}
 <div class="notice--info">{{ notice_04 | markdownify }}</div>
 
+{% capture cartographer_tip %}
 **TIP**: We tested on cartographer version 0.3.0. The Cartographer package developed by Google supports 0.3.0 version in ROS Melodic, but 0.2.0 version in ROS Kinetic. So if you need to work on ROS Kinetic, instead of downloading the binaries files, you should download and build the source code as follows. Please refer to [official wiki page](https://google-cartographer-ros.readthedocs.io/en/latest/#building-installation) for more detailed installation instructions.
-{: .notice--success}
 
+**on Ubuntu**
 ```sh
 $ sudo apt-get install ninja-build libceres-dev libprotobuf-dev protobuf-compiler libprotoc-dev
 $ cd ~/catkin_ws/src
@@ -145,13 +173,30 @@ $ source ~/catkin_ws/install_isolated/setup.bash
 $ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=cartographer
 ```
 
+**Windows**
+```sh
+> c:\ws\turtlebot3\devel\setup.bat
+> set TURTLEBOT3_MODEL=waffle
+> roslaunch turtlebot3_gazebo turtlebot3_gazebo_cartographer_demo.launch
+```
+{% endcapture %}
+<div class="notice--success">{{ cartographer_tip | markdownify }}</div>
+
+
 ## [Run Teleoperation Node](#run-teleoperation-node)
 
 **[Remote PC]** Open a new terminal and run the teleoperation node. The following command allows the user to control the robot to perform SLAM operation manually. It is important to avoid vigorous movements such as changing the speed too quickly or rotating too fast. When building a map using the robot, the robot should scan every corner of the environment to be measured. It requires some experiences to build a clean map, so let’s practice SLAM multiple times to build up know how. The mapping process is shown in figure below.
 
+*Ubuntu*
 ``` bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+```
+
+*Windows*
+``` bash
+> set TURTLEBOT3_MODEL=waffle
+> roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ```
 
 ``` bash
@@ -221,11 +266,17 @@ _**angularUpdate**_
 
 **[Remote PC]** Now that you have all the work done, let's run the `map_saver` node to create a map file. The map is drawn based on the robot's odometry, tf information, and scan information of the sensor when the robot moves. These data can be seen in the RViz from the previous example video. The created map is saved in the directory in which `map_saver` is runnig. Unless you specify the file name, it is stored as `map.pgm` and `map.yaml` file which contains map information.
 
-``` bash
+The `-f` option refers to the folder and file name where the map file is saved. If `~/map` is used as an option, `map.pgm` and `map.yaml` will be saved in the map folder of user’s home folder `~/` ($HOME directory : `/home/<username>`). On Windows, the user directory is stored in an environment variable `%USERPROFILE%`
+
+### on Ubuntu
+```bash
 $ rosrun map_server map_saver -f ~/map
 ```
 
-The `-f` option refers to the folder and file name where the map file is saved. If `~/map` is used as an option, `map.pgm` and `map.yaml` will be saved in the map folder of user’s home folder `~/` ($HOME directory : `/home/<username>`).
+### on Windows
+```bash
+> rosrun map_server map_saver -f %USERPROFILE%\map
+```
 
 ## [Map](#map)
 
