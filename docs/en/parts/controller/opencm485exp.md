@@ -63,7 +63,7 @@ sidebar:
 
 2. OpenCM9.04 is mounted onto OpenCM 485 EXP as shown below.
 
-    **CAUTION** : The orientation of the connection must be correct.
+    **CAUTION** : Be sure to check the direction of the OpenCM9.04 when inserting it into the OpenCM 485 EXP board. 
     {: .notice--warning}
 
     ![](/assets/images/parts/controller/opencm904/opencm485exp_03.jpg)
@@ -112,6 +112,10 @@ To use a motion tool on R+ Motion, or a motion file on R+ Task with DYNAMIXEL co
 {: .notice}
 
 # [Reference](#reference)
+
+## [Connector Information](#connector-information)
+
+{% include en/dxl/molex_485_ttl.md %}
 
 ## [Power Circuit Connection](#power-circuit-connection)
 
@@ -162,7 +166,7 @@ In order to use OpenCM 485 EXP board with OpenCM9.04, please use Arduino IDE.
     dxl_wb.begin(DEVICE_NAME, BAUDRATE);
     ```
 
-# [Button and LED](#button-and-led)
+## [Button and LED](#button-and-led)
 
 OpenCM 485 EXP board has 2 buttons and 3 LED’s that are connected to OpenCM9.04 I/O pins.  
 The OpenCM9.04 I/O pin numbers for the buttons and LED’s are indicated below.

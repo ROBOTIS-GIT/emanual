@@ -33,6 +33,8 @@ Combined with U2D2, it can supply various kinds of external power supply to supp
 | DYNAMIXEL Connectors  | JST connector 3-pin, 4-pin are provided for communication in two ways                         |
 | TTL/RS485 Test Points | TTL data line, RS485 D +, D-line signals can be easily identified with a separate TP          |
 
+- See [Connector Information](/docs/en/parts/interface/u2d2/#connector-information) for more details of JST-connectors. 
+
 # [Cautions](#cautions)
 
 1. When using the terminal block, the left-side is ground and right-side is source, so be careful of polarity when using an external power supply.
