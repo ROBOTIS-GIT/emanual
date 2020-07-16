@@ -1,12 +1,13 @@
 
-|Item|TTL|
-|:---:|:---:|
-|Pinout|`1` GND<br>`2` VDD<br>`3` DATA|
-|Diagram|![](/assets/images/dxl/molex_22035035_diagram.png)|
-|Housing|![](/assets/images/dxl/molex_50375033.png)<br />[MOLEX 50-37-5033]|
-|PCB Header|![](/assets/images/dxl/molex_22035035.png)<br />[MOLEX 22-03-5035]|
-|Crimp Terminal|[MOLEX 08-70-1039]|
-|Wire Gauge for DYNAMIXEL|21 AWG|
+|           Item           |                                TTL                                 |
+|:------------------------:|:------------------------------------------------------------------:|
+|          Pinout          |                   `1` GND<br>`2` VDD<br>`3` DATA                   |
+|         Diagram          |         ![](/assets/images/dxl/molex_22035035_diagram.png)         |
+|         Housing          | ![](/assets/images/dxl/molex_50375033.png)<br />[MOLEX 50-37-5033] |
+|        PCB Header        | ![](/assets/images/dxl/molex_22035035.png)<br />[MOLEX 22-03-5035] |
+|      Crimp Terminal      |                         [MOLEX 08-70-1039]                         |
+| Wire Gauge for DYNAMIXEL |                               21 AWG                               |
+
 
 {% include en/dxl/pinout_warning.md %}
 

@@ -22275,6 +22275,10 @@ opencm485exp:
     url: /parts/controller/opencm485exp/#reference
     urlkr: /parts/controller/opencm485exp/#참고자료
     children:
+        - title: "Connector Information"
+          titlekr: "커넥터 정보"
+          url: /parts/controller/opencm485exp/#connector-information
+          urlkr: /parts/controller/opencm485exp/#커넥터-정보
         - title: "Power Circuit Connection"
           titlekr: "전원 연결 회로"
           url: /parts/controller/opencm485exp/#power-circuit-connection
@@ -22283,9 +22287,9 @@ opencm485exp:
           titlekr: "EXP 보드 프로그래밍"
           url: /parts/controller/opencm485exp/#exp-board-programming
           urlkr: /parts/controller/opencm485exp/#opencm-485-확장보드-프로그래밍
-        - title: "Button & LED"
+        - title: "Button and LED"
           titlekr: "버튼 및 LED 활용"
-          url: /parts/controller/opencm485exp/#button--led
+          url: /parts/controller/opencm485exp/#button-and-led
           urlkr: /parts/controller/opencm485exp/#버튼-및-led-활용
         - title: "Drawings"
           titlekr: "도면"
@@ -23458,11 +23462,15 @@ u2d2:
     url: /parts/interface/u2d2/#references
     urlkr: /parts/interface/u2d2/#참고자료
     children:
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /parts/interface/u2d2/#connector-information
+        urlkr: /parts/interface/u2d2/#커넥터-정보
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /parts/interface/u2d2/#certifications
         urlkr: /parts/interface/u2d2/#인증-획득
-
+        
 #FAQ sidebar
 general:
 
