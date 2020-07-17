@@ -22692,6 +22692,10 @@ u2d2_power_hub:
     titlekr: "조립 예시"
     url: /parts/interface/u2d2_power_hub/#how-to-assemble
     urlkr: /parts/interface/u2d2_power_hub/#조립-예시
+  - title: "Connector Information"
+    titlekr: "커넥터 정보"
+    url: /parts/interface/u2d2_power_hub/#connector-information
+    urlkr: /parts/interface/u2d2_power_hub/#커넥터-정보
 
 opencm7:
   - titlekr: "개요"

@@ -27,18 +27,25 @@ Combined with U2D2, it can supply various kinds of external power supply to supp
 
 ![](/assets/images/parts/interface/u2d2_power_hub/layout.png)
 
-| Part Name             | Description                                                                                   |
-|:----------------------|:----------------------------------------------------------------------------------------------|
-| Power Connectors      | In order to use various power sources including SMPS, three types of connectors are attached. |
-| DYNAMIXEL Connectors  | JST connector 3-pin, 4-pin are provided for communication in two ways                         |
-| TTL/RS485 Test Points | TTL data line, RS485 D +, D-line signals can be easily identified with a separate TP          |
+## [Description](#description)
 
-- See [Connector Information](/docs/en/parts/interface/u2d2/#connector-information) for more details of JST-connectors. 
+1. **DYNAMIXEL Connectors**: 3 and 4-pins JST connectors are installed for communication. See [Connector Information](#connector-information) for more details.
 
-# [Cautions](#cautions)
+2. **TTL/RS485 Test Points**: TTL data line, RS485 D +, D-line signals can be easily identified via the test points
 
-1. When using the terminal block, the left-side is ground and right-side is source, so be careful of polarity when using an external power supply.
-2. Since the back of the board is exposed to several pins, it is recommended to combine the provided supporters so that the conductor does not touch the floor to some extent.
+3. **Power Connectors**: U2D2 PHB provides three different types of power connectors to supply a diverse voltage and current to DYNAMIXEL. 
+    - SMPS DC Connector (2.5mm ID / 5.5mm OD, [Center Positive](https://en.wikipedia.org/wiki/Polarity_symbols))
+    - MOLEX Power connector (See [Connector Information](#connector-information) for more details)
+    - PCB Screw Terminal Block Connector
+      - Left: -
+      - Right: +
+
+{% capture caution_01 %}
+**CAUTION**: 
+- Be sure to check the polarity of the terminal block connector when using an external power supply, to enhance the user safety.
+- Some pins stick out on the bottom of the board, which are prone to touch the floor. To prevent from touching a floor, assemble the board with the supplied supporters following [How to Assemble](#how-to-assemble) instruction.
+{% endcapture %}
+<div class="notice--warning">{{ caution_01 | markdownify }}</div>
 
 # [How to Assemble](#how-to-assemble)
 
@@ -75,3 +82,7 @@ Combined with U2D2, it can supply various kinds of external power supply to supp
 7. Turn the power switch on `U2D2 Power Hub Board` to supply power to DYNAMIXEL
 
     ![](/assets/images/parts/interface/u2d2_power_hub/u2d2_phb_08.jpg)
+
+# [Connector Information](#connector-information)
+    
+{% include en/dxl/jst_485_ttl.md %}

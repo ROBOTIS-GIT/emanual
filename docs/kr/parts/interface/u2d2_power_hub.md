@@ -18,25 +18,34 @@ U2D2와 결합하여, 여러 종류의 외부 전원을 연결하여 다이나�
 
 # [제품 사양](#제품-사양)
 
-|항목|사양|
-|:---:|:---:|
-|동작 전압|7.4V ~ 24.0V|
-|최대 전류|10.0A|
+|   항목    |     사양     |
+|:---------:|:------------:|
+| 동작 전압 | 7.4V ~ 24.0V |
+| 최대 전류 |    10.0A     |
 
 # [각 부 명칭](#각-부-명칭)
 
 ![](/assets/images/parts/interface/u2d2_power_hub/layout.png)
 
-|파트명|설명|
-|:---|:---|
-|Power Connectors|SMPS를 비롯하여, 다양한 전원을 수용할 수 있도록, 터미널 블록을 포함한 3종류의 커넥터|
-|DYNAMIXEL Connectors|두 가지 방식을 통신할 수 있도록 JST 커넥터 3핀, 4핀 배치|
-|TTL/RS485 Test Points|TTL의 Data 라인, RS485의 D+, D- 라인의 신호를 편하게 확인할 수 있도록 별도로 TP를 배치|
+## [설명](#설명)
 
-# [주의사항](#주의사항)
+1. **DYNAMIXEL Connectors**: TTL 및 RS-485 통신을 위해, 3핀 및 4핀 JST 커넥터 사용. (**[커넥터 정보](#커넥터-정보)** 확인하기)
 
-1. 터미널블록을 이용할 때, 좌측 -, 우측 +이므로 외부 전원을 활용할 때, 극성에 유의해야한다.
-2. 보드 뒷면에 여러가지 핀들이 노출되어 있으므로, 밑면에 도체가 닿을 위험을 어느 정도 차단하기 위해, 제공된 서포터를 결합시키는 것을 권장한다.
+2. **TTL / RS485 Test Points**: TTL의 Data 라인, RS485의 D+, D- 라인의 신호를 확인할 수 있도록 별도의 Test Points 가 제공된다.
+
+3. **Power Connectors**: U2D2 PHB는 다양한 전원을 제공 하기위해 3종류의 커넥터를 지원한다.  
+    - SMPS DC Connector (2.5mm ID / 5.5mm OD, **[Center Positive](https://en.wikipedia.org/wiki/Polarity_symbols)**)
+    - MOLEX Power connector (**[커넥터 정보](#커넥터-정보)** 확인하기)
+    - PCB Screw Terminal Block Connector
+      - 좌측: -
+      - 우측: +
+
+{% capture caution_01 %}
+**주의**: 
+- 터미널 블록 (PCB Screw Terminal Block Connector)을 사용할때에는, 반드시 극성에 유의할것. 
+- 보드 뒷면에 여러가지 핀들이 노출되어 있으므로, 밑면에 도체가 닿을 위험을 어느 정도 차단하기 위해, [조립 예시](#조립-예시)를 참고하여 제공된 서포터를 결합시키는 것을 권장한다. 
+{% endcapture %}
+<div class="notice--warning">{{ caution_01 | markdownify }}</div>
 
 # [조립 예시](#조립-예시)
 
@@ -73,3 +82,7 @@ U2D2와 결합하여, 여러 종류의 외부 전원을 연결하여 다이나�
 7. 다이나믹셀에 전원을 공급하려면 `U2D2 파워 허브 보드`의 전원 스위치를 켠다.
 
     ![](/assets/images/parts/interface/u2d2_power_hub/u2d2_phb_08.jpg)
+
+## [커넥터 정보](#커넥터-정보)
+
+{% include kr/dxl/jst_485_ttl.md %}

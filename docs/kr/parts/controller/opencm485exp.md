@@ -35,7 +35,7 @@ sidebar:
 
 ![](/assets/images/parts/controller/opencm904/opencm485exp_01.jpg)
 
-1. **SMPS DC Adapter** : SMPS DC Adapter를 연결해 OpenCM 485 확장보드 보드에 전원을 인가합니다.
+1. **SMPS DC Adapter (2.5mm 내경 / 5.5mm 외경, [Center Positive](https://en.wikipedia.org/wiki/Polarity_symbols))** : SMPS DC Adapter를 연결해 OpenCM 485 확장보드 보드에 전원을 인가합니다.
 2. **DXL PRO Power** : 다이나믹셀 프로와 동일한 24V 전원 커넥터로 전원을 인가합니다.
 3. **Li-Po battery** : 11.1V Li-Po battery(LBS-10)를 사용하는 커넥터 입니다.
 4. **다이나믹셀 TTL 3 PIN** : 3핀 케이블(다이나믹셀 TTL Bus)을 사용하는 다이나믹셀을 Daisy chain으로 연결하기 위한 포트 입니다.
@@ -45,6 +45,8 @@ sidebar:
 8. **다이나믹셀 485 4 PIN** : 4핀 케이블(다이나믹셀 485 Bus)을 사용하는 다이나믹셀을 Daisy chain으로 연결하기 위한 포트 입니다.
 9. **Power Switch** : 보드와 다이나믹셀 전원을 on/off하는 스위치 입니다. 단, USB 연결시 보드 전원은 on/off되지 않습니다.
 10. **JP1 Jumper** : OpenCM 485 EXP 보드에  입력된 전압을 OpenCM9.04에도 전압을 입력할지 결정하는 점퍼 입니다.
+
+- **[커넥터 정보](#커넥터-정보) 확인하기**
 
 {% include kr/dxl/pinout_warning.md %}
 
