@@ -40,7 +40,7 @@ sidebar:
 
 ![](/assets/images/parts/controller/opencm904/opencm485exp_01.jpg)
 
-1. **SMPS DC Connector** : For using SMPS DC Adapter to supply power to OpenCM 485 EXP board.
+1. **SMPS DC Connector (2.5mm ID / 5.5mm OD, [Center Positive](https://en.wikipedia.org/wiki/Polarity_symbols))** : For using SMPS DC Adapter to supply power to OpenCM 485 EXP board.
 2. **DXL Pro Power Connector** : Power connector for DYNAMIXEL Pro (24V).
 3. **Li-Po battery Connector** : Connector for 11.1V Li-Po battery(LBS-10).
 4. **DYNAMIXEL TTL 3 -Pin Bus** : Used to connect 3-Pin Cables(DYNAMIXEL TTL Bus) and for daisy chaining DYNAMIXEL's.
@@ -50,6 +50,8 @@ sidebar:
 8. **DYNAMIXEL 485 4-Pin Bus** : Used to connect 4-Pin Cables(DYNAMIXEL TTL Bus) and for daisy chaining DYNAMIXEL's.
 9. **Power Switch** : Switch that powers the board and DYNAMIXEL. Note: Does not disconnect the power received via USB cable.
 10. **JP1 Jumper** : Jumper that determines whether the power inputted onto OpenCM 485 EXP will be supplied to OpenCM9.04 board or not.
+
+- **See [Connector Information](#connector-information)**. 
 
 {% include en/dxl/pinout_warning.md %}
 
