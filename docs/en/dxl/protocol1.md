@@ -91,9 +91,9 @@ The delay time between bytes when sending an instruction packet. If the delay ti
 # [Instruction Packet](#instruction-packet)
 Instruction Packet is the command data sent to the Device.
 
-| Header1 | Header2 | ID | Length | Instruction | Param 1 | ... | Param N | Checksum |  |
-|:-------:|:-------:|:--:|:------:|:-----------:|:-------:|:---:|:-------:|:--------:|::|
-|  0xFF   |  0xFF   | ID | Length | Instruction | Param 1 | ... | Param N |  CHKSUM  |  |
+| Header1 | Header2 | ID | Length | Instruction | Param 1 | ... | Param N | Checksum |
+|:-------:|:-------:|:--:|:------:|:-----------:|:-------:|:---:|:-------:|:--------:|
+|  0xFF   |  0xFF   | ID | Length | Instruction | Param 1 | ... | Param N |  CHKSUM  |
 
 ## [Header](#header)
 The field indicates the start of the Packet.
@@ -150,9 +150,9 @@ Thus, Instruction Packet should be 0xFF, 0xFF, 0x01, 0x05, 0x03, 0x0C, 0x64, 0xA
 
 # [Status Packet(Return Packet)](#status-packetreturn-packet)
 
-| Header1 | Header2 | ID | Length | Error | Param 1 | ... | Param N | Checksum |  |
-|:-------:|:-------:|:--:|:------:|:-----:|:-------:|:---:|:-------:|:--------:|::|
-|  0xFF   |  0xFF   | ID | Length | Error | Param 1 | ... | Param N |  CHKSUM  |  |
+| Header1 | Header2 | ID | Length | Error | Param 1 | ... | Param N | Checksum |
+|:-------:|:-------:|:--:|:------:|:-----:|:-------:|:---:|:-------:|:--------:|
+|  0xFF   |  0xFF   | ID | Length | Error | Param 1 | ... | Param N |  CHKSUM  |
 
 ## [Error](#error)
 This field displays the error status occurred during the operation of DYNAMIXEL.

@@ -73,8 +73,8 @@ unsigned short update_crc(unsigned short crc_accum, unsigned char *data_blk_ptr,
   - **crc_accum** : '0'으로 설정
   - **data_blk_ptr** : Packet array pointer
   - **data_blk_size** : CRC를 제외한 패킷의 byte 수
-  - **data_blk_size** = Header(3) + Reserved(1) + Packet ID(1) + Packet Length(2) + Packet Length - CRC(2)
-    = 3 + 1 + 1 + 2 + Pakcet Length - 2 = `5 + Packet Length`;
+  - **data_blk_size** = Header(3) + Reserved(1) + Packet ID(1) + Length(2) + Length - CRC(2)
+    = 3 + 1 + 1 + 2 + Length - 2 = `5 + Length`;
   - **Packet Length** = (LEN_H << 8 ) + LEN_L;  //Little-endian
 - Packet 분석 및 CRC 계산
   - Packet 예제(장치의 시작 주소 0x0000에서 2 byte 데이터를 읽기 위한 Read Instruction Packet)

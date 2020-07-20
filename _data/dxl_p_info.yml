@@ -113,7 +113,7 @@ ph54-200-s500-r:
 
 pm42-010-s260-r:
   mcu:                *mcu
-  motor:              "Coreless"
+  motor:              "Coreless (Maxon)"
   baudrate:           *baudrate
   opmode_en:          *opmode_en
   opmode:             *opmode
@@ -143,7 +143,7 @@ pm42-010-s260-r:
 
 pm54-040-s250-r:
   mcu:                *mcu
-  motor:              "BLDC"
+  motor:              "BLDC (Maxon)"
   baudrate:           *baudrate
   opmode_en:          *opmode_en
   opmode:             *opmode
@@ -173,7 +173,7 @@ pm54-040-s250-r:
 
 pm54-060-s250-r:
   mcu:                *mcu
-  motor:              "BLDC"
+  motor:              "BLDC (Maxon)"
   baudrate:           *baudrate
   opmode_en:          *opmode_en
   opmode:             *opmode

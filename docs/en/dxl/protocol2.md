@@ -23,29 +23,38 @@ sidebar:
 # [Instruction Packet](#instruction-packet)
 Instruction Packet is the command data sent to the Device.
 
-| Header1 | Header2 | Header3 | Reserved | Packet ID | Length1 | Length2 | Instruction |  Param  | Param |  Param  | CRC1  | CRC2  |
-|:-------:|:-------:|:-------:|:--------:|:---------:|:-------:|:-------:|:-----------:|:-------:|:-----:|:-------:|:-----:|:-----:|
-|  0xFF   |  0xFF   |  0xFD   |   0x00   |    ID     |  Len_L  |  Len_H  | Instruction | Param 1 |  ...  | Param N | CRC_L | CRC_H |
+| Header 1 | Header 2 | Header 3 | Reserved | Packet ID | Length 1 | Length 2 | Instruction |  Param  | Param |  Param  | CRC 1 | CRC 2 |
+|:--------:|:--------:|:--------:|:--------:|:---------:|:--------:|:--------:|:-----------:|:-------:|:-----:|:-------:|:-----:|:-----:|
+|   0xFF   |   0xFF   |   0xFD   |   0x00   |    ID     |  Len_L   |  Len_H   | Instruction | Param 1 |  ...  | Param N | CRC_L | CRC_H |
 
 ## [Header](#header)
-The field indicates the start of the Packet
+The field that indicates the start of the Packet
 
 ## [Reserved](#reserved)
-0x00 (0xFD cannot be used)
+Uses 0X00 (Note that Reserved does not use 0XFD). The Reserved functions the same as [Header](#header).   
+
+See the next image of a table of the [Packet Details](/docs/en/software/dynamixel/dynamixel_wizard2/#packet-window) of [the DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/), which shows that the Reserved (0x00) are included in the Header field. 
+
+![](/assets/images/dxl/protocol2/protocol20_packet_example_02.png)
+> A table of Packet Details of DYNAMIXEL Wizard 2.0
 
 ## [Packet ID](#packet-id)
-The field that indicates the ID of the Device that should receive the Instruction Packet and process it
+The field that indicates an ID of the device that should receive the Instruction Packet and process it
 
   1. Range : 0 ~ 252 (0x00 ~ 0xFC), which is a total of 253 numbers that can be used
   2. Broadcast ID : 254 (0xFE), which makes all connected devices execute the Instruction Packet
   3. 253(0xFD), 255(0xFF) : These are not used in order to avoid duplicate use with Header
 
-## [Packet Length](#packet-length)
-The length after the Packet Length field (Instruction, Parameter, CRC fields).
-Packet Length = number of Parameters + 3
+## [Length](#length)
+The field that indicates the length of packet field.
+
+  1. Devided into low and high bytes in the [Instruction Packet](#introduction)
+  2. The Length has the size of Instruction, Parameters and CRC (Low / High bytes) fields
+
+- `Length = the number of Parameters + 3`
 
 ## [Instruction](#instruction)
-The field that defines the type of command.
+The field that defines the type of commands.
 
 | Value |  Instructions  |                                                        Description                                                         |
 |:-----:|:--------------:|:--------------------------------------------------------------------------------------------------------------------------:|
@@ -69,14 +78,16 @@ The field that defines the type of command.
   2. Method of expressing negative number data : This is different for each product, so please refer to the e-manual of the corresponding product.
 
 ## [CRC](#crc)
-16bit CRC field checks if the Packet has been damaged during communication. Please refer to the [CRC calculation code](/docs/en/dxl/crc/).
+16bit CRC field which checks if the Packet has been damaged during communication. 
 
+  1. Devided into low and high bytes in the [Instruction Packet](#introduction)
+  2. See [CRC Calculation](/docs/en/dxl/crc/) insturction.
 
 # [Status Packet](#status-packet)
 
-| Header1 | Header2 | Header3 | Reserved | Packet ID | Length1 | Length2 | Instruction |  ERR  |  PARAM  | PARAM |  PARAM  | CRC1  | CRC2  |
-|:-------:|:-------:|:-------:|:--------:|:---------:|:-------:|:-------:|:-----------:|:-----:|:-------:|:-----:|:-------:|:-----:|:-----:|
-|  0xFF   |  0xFF   |  0xFD   |   0x00   |    ID     |  Len_L  |  Len_H  | Instruction | Error | Param 1 |  ...  | Param N | CRC_L | CRC_H |
+| Header 1 | Header 2 | Header 3 | Reserved | Packet ID | Length 1 | Length 2 | Instruction |  ERR  |  PARAM  | PARAM |  PARAM  | CRC 1 | CRC 2 |
+|:--------:|:--------:|:--------:|:--------:|:---------:|:--------:|:--------:|:-----------:|:-----:|:-------:|:-----:|:-------:|:-----:|:-----:|
+|   0xFF   |   0xFF   |   0xFD   |   0x00   |    ID     |  Len_L   |  Len_H   | Instruction | Error | Param 1 |  ...  | Param N | CRC_L | CRC_H |
 
 ## Instruction
 Instruction of the Status Packet is designated to 0x55 (Status)
@@ -114,16 +125,24 @@ The field that indicates the processing result of Instruction Packet
   - Inspection range : Everything within the Instruction field to the Parameter field (not the CRC)
   - Processing method : When the pattern “0xFF 0xFF 0xFD” appears, add Byte Stuffing (0xFD)
     (If “0xFF 0xFF 0xFD” already exists, add a 0xFD to change it to “0xFF 0xFF 0xFD 0xFD”)
-2. Packet Length : Modify to Packet Length with Byte Stuffing applied
+2. Length : Modify to Length with Byte Stuffing applied
 3. CRC : Calculate CRC with Byte Stuffing applied
 
 ## Processing Order of Reception
 
 1. Search for Header(0xFF 0xFF 0xFD) : Ignore the Byte Stuffing(“0xFF 0xFF 0xFD 0xFD”).
-2. Packet ID : If Packet ID is valid, receive additional transmission the size of Packet Length
+2. Packet ID : If Packet ID is valid, receive additional transmission the size of Length
 3. CRC : Calculate with the received Packet with Byte Stuffing included, and once CRC is matched then remove Byte Stuffing
 
 # [Instruction Details](#instruction-details)
+
+Note that given examples use the following abbreviation to provide clear information.
+- Header : H
+- Reserved: RSRV
+- Length: LEN
+- Instruction: Inst
+- Param: P
+
 
 ## [Ping](#ping)
 ### Description
@@ -149,15 +168,15 @@ The field that indicates the processing result of Instruction Packet
 
 #### Ping Instruction Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | CRC1 | CRC2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x03 | 0x00 | 0x01 | 0x19 | 0x4E |
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x03 | 0x00 | 0x01 | 0x19  | 0x4E  |
 
 #### ID 1 Status Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | PARAM1 | PARAM2 | PARAM3 | CRC1 | CRC2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:------:|:------:|:------:|:----:|:----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x07 | 0x00 | 0x55 | 0x00 |  0x06  |  0x04  |  0x26  | 0x65 | 0x5D |
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  |  P1  |  P2  |  P3  | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x07 | 0x00 | 0x55 | 0x00 | 0x06 | 0x04 | 0x26 | 0x65  | 0x5D  |
 
 ### Example 2
 #### Conditions
@@ -167,21 +186,21 @@ The field that indicates the processing result of Instruction Packet
 
 #### Ping Instruction Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | CRC1 | CRC2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0xFE | 0x03 | 0x00 | 0x01 | 0x31 | 0x42 |
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0xFE | 0x03 | 0x00 | 0x01 | 0x31  | 0x42  |
 
 #### ID 1 Status Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | PARAM1 | PARAM2 | PARAM3 | CRC1 | CRC2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:------:|:------:|:------:|:----:|:----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x07 | 0x00 | 0x55 | 0x00 |  0x06  |  0x04  |  0x26  | 0x65 | 0x5D |
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  |  P1  |  P2  |  P3  | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x07 | 0x00 | 0x55 | 0x00 | 0x06 | 0x04 | 0x26 | 0x65  | 0x5D  |
 
 #### ID 2 Status Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | PARAM1 | PARAM2 | PARAM3 | CRC1 | CRC2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:------:|:------:|:------:|:----:|:----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0x02 | 0x07 | 0x00 | 0x55 | 0x00 |  0x06  |  0x04  |  0x26  | 0x6F | 0x6D |
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  |  P1  |  P2  |  P3  | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x02 | 0x07 | 0x00 | 0x55 | 0x00 | 0x06 | 0x04 | 0x26 | 0x6F  | 0x6D  |
 
 ## [Read](#read)
 
@@ -212,15 +231,15 @@ The field that indicates the processing result of Instruction Packet
 
 #### Read Instruction Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | PARAM1 | PARAM2 | PARAM3 | PARAM4 | CRC1 | CRC2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:------:|:------:|:------:|:------:|:----:|:----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x07 | 0x00 | 0x02 |  0x84  |  0x00  |  0x04  |  0x00  | 0x1D | 0x15 |
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  |  P2  |  P3  |  P4  | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x07 | 0x00 | 0x02 | 0x84 | 0x00 | 0x04 | 0x00 | 0x1D  | 0x15  |
 
 #### ID 1 Status Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | PARAM1 | PARAM2 | PARAM3 | PARAM4 | CRC1 | CRC2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:------:|:------:|:------:|:------:|:----:|:----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x08 | 0x00 | 0x55 | 0x00 |  0xA6  |  0x00  |  0x00  |  0x00  | 0x8C | 0xC0 |
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  |  P1  |  P2  |  P3  |  P4  | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x08 | 0x00 | 0x55 | 0x00 | 0xA6 | 0x00 | 0x00 | 0x00 | 0x8C  | 0xC0  |
 
 ## [Write](#write)
 
@@ -246,15 +265,15 @@ The field that indicates the processing result of Instruction Packet
 
 #### Write Instruction Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  |  P2  |  P3  |  P4  |  P5  |  P6  | CRC1 | CRC2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x09 | 0x00 | 0x03 | 0x74 | 0x00 | 0x00 | 0x02 | 0x00 | 0x00 | 0xCA | 0x89 |
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  |  P2  |  P3  |  P4  |  P5  |  P6  | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x09 | 0x00 | 0x03 | 0x74 | 0x00 | 0x00 | 0x02 | 0x00 | 0x00 | 0xCA  | 0x89  |
 
 #### ID 1 Status Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | CRC1|CRC2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:---------:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1|0x0C |
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:------|------:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1  |  0x0C |
 
 ## [Reg Write](#reg-write)
 
@@ -282,15 +301,15 @@ The field that indicates the processing result of Instruction Packet
 
 #### Reg Write Instruction Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  |  P2  |  P3  |  P4  |  P5  |  P6  | CRC1 | CRC2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x09 | 0x00 | 0x04 | 0x68 | 0x00 | 0xC8 | 0x00 | 0x00 | 0x00 | 0xAE | 0x8E |
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  |  P2  |  P3  |  P4  |  P5  |  P6  | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x09 | 0x00 | 0x04 | 0x68 | 0x00 | 0xC8 | 0x00 | 0x00 | 0x00 | 0xAE  | 0x8E  |
 
 #### ID 1 Status Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | CRC1 | CRC2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1 | 0x0C |
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1  | 0x0C  |
 
 ## [Action](#action)
 
@@ -306,15 +325,15 @@ The field that indicates the processing result of Instruction Packet
 
 #### Action Instruction Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | CRC1 | CRC2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x03 | 0x00 | 0x05 | 0x02 | 0xCE |
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x03 | 0x00 | 0x05 | 0x02  | 0xCE  |
 
 #### ID 1 Status Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | CRC1 | CRC2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1 | 0x0C |
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1  | 0x0C  |
 
 ## [Factory Reset](#factory-reset)
 
@@ -336,15 +355,15 @@ The field that indicates the processing result of Instruction Packet
 
 #### Factory Reset Instruction Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  | CRC1 | CRC2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x04 | 0x00 | 0x06 | 0x01 | 0xA1 | 0xE6 |
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x04 | 0x00 | 0x06 | 0x01 | 0xA1  | 0xE6  |
 
 #### ID 1 Status Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  | CRC1 | CRC2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1 | 0x0C |
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1  | 0x0C  |
 
 ## [Reboot](#reboot)
 
@@ -358,15 +377,15 @@ The field that indicates the processing result of Instruction Packet
 
 #### Reboot Instruction Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | CRC1 | CRC2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x03 | 0x00 | 0x08 | 0x2F | 0x4E |
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x03 | 0x00 | 0x08 | 0x2F  | 0x4E  |
 
 #### ID 1 Status Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  | CRC1 | CRC2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1 | 0x0C |
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1  | 0x0C  |
 
 ## [Clear](#clear)
 
@@ -390,15 +409,15 @@ The field that indicates the processing result of Instruction Packet
 
 #### Clear Instruction Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 |   INST   |    P1    |  P2  |  P3  |  P4  |  P5  | CRC1 | CRC2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:--------:|:--------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x08 | 0x00 | **0x10** | **0x01** | 0x44 | 0x58 | 0x4C | 0x22 | 0xB1 | 0xDC |
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 |   INST   |    P1    |  P2  |  P3  |  P4  |  P5  | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:--------:|:--------:|:----:|:----:|:----:|:----:|:-----:|:-----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x08 | 0x00 | **0x10** | **0x01** | 0x44 | 0x58 | 0x4C | 0x22 | 0xB1  | 0xDC  |
 
 #### ID 1 Status Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  | CRC1 | CRC2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1 | 0x0C |
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1  | 0x0C  |
 
 ## [Sync Read](#sync-read)
 
@@ -439,21 +458,22 @@ The field that indicates the processing result of Instruction Packet
 
 #### Sync Read Instruction Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  |  P2  |  P3  |  P4  |  P5  |  P6  | CRC1 | CRC2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0xFE | 0x09 | 0x00 | 0x82 | 0x84 | 0x00 | 0x04 | 0x00 | 0x01 | 0x02 | 0xCE | 0xFA |
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  |  P2  |  P3  |  P4  |  P5  |  P6  | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0xFE | 0x09 | 0x00 | 0x82 | 0x84 | 0x00 | 0x04 | 0x00 | 0x01 | 0x02 | 0xCE  | 0xFA  |
 
 #### ID 1 Status Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | PARAM1 | PARAM2 | PARAM3 | PARAM4 | CRC1 | CRC2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:------:|:------:|:------:|:------:|:----:|:----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x08 | 0x00 | 0x55 | 0x00 |  0xA6  |  0x00  |  0x00  |  0x00  | 0x8C | 0xC0 |
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  |  P1  |  P2  |  P3  |  P4  | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x08 | 0x00 | 0x55 | 0x00 | 0xA6 | 0x00 | 0x00 | 0x00 | 0x8C  | 0xC0  |
 
 #### ID 2 Status Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | PARAM1 | PARAM2 | PARAM3 | PARAM4 | CRC1 | CRC2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:------:|:------:|:------:|:------:|:----:|:----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0x02 | 0x08 | 0x00 | 0x55 | 0x00 |  0x1F  |  0x08  |  0x00  |  0x00  | 0xBA | 0xBE |
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  |  P1  |  P2  |  P3  |  P4  | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x02 | 0x08 | 0x00 | 0x55 | 0x00 | 0x1F | 0x08 | 0x00 | 0x00 | 0xBA  | 0xBE  |
+
 
 ## [Sync Write](#sync-write)
 
@@ -495,9 +515,9 @@ The field that indicates the processing result of Instruction Packet
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
 | 0xFF | 0xFF | 0xFD | 0x00 | 0xFE | 0x11 | 0x00 | 0x83 | 0x74 | 0x00 | 0x04 | 0x00 |
 
-|  P5  |  P6  |  P7  |  P8  |  P9  | P10  | P11  | P12  | P13  | P14  | CRC1 | CRC2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0x01 | 0x96 | 0x00 | 0x00 | 0x00 | 0x02 | 0xAA | 0x00 | 0x00 | 0x00 | 0x82 | 0x87 |
+|  P5  |  P6  |  P7  |  P8  |  P9  | P10  | P11  | P12  | P13  | P14  | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
+| 0x01 | 0x96 | 0x00 | 0x00 | 0x00 | 0x02 | 0xAA | 0x00 | 0x00 | 0x00 | 0x82  | 0x87  |
 
 ## [Bulk Read](#bulk-read)
 
@@ -546,21 +566,21 @@ The field that indicates the processing result of Instruction Packet
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
 | 0xFF | 0xFF | 0xFD | 0x00 | 0xFE | 0x0D | 0x00 | 0x92 | 0x01 | 0x90 | 0x00 | 0x02 | 0x00 |
 
-|  P6  |  P7  |  P8  |  P9  | P10  | CRC1 | CRC2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0x02 | 0x92 | 0x00 | 0x01 | 0x00 | 0x1A | 0x05 |
+|  P6  |  P7  |  P8  |  P9  | P10  | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
+| 0x02 | 0x92 | 0x00 | 0x01 | 0x00 | 0x1A  | 0x05  |
 
 #### ID 1 Status Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | PARAM1 | PARAM2 | CRC1 | CRC2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:------:|:------:|:----:|:----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x06 | 0x00 | 0x55 | 0x00 |  0x77  |  0x00  | 0xC3 | 0x69 |
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | P1 | P2 | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:------:|:------:|:-----:|:-----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x06 | 0x00 | 0x55 | 0x00 |  0x77  |  0x00  | 0xC3  | 0x69  |
 
 #### ID 2 Status Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | PARAM1 | CRC1 | CRC2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:------:|:----:|:----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0x02 | 0x05 | 0x00 | 0x55 | 0x00 |  0x24  | 0x8B | 0xA9 |
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | P1 | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:------:|:-----:|:-----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x02 | 0x05 | 0x00 | 0x55 | 0x00 |  0x24  | 0x8B  | 0xA9  |
 
 ## [Bulk Write](#bulk-write)
 
@@ -607,11 +627,9 @@ The field that indicates the processing result of Instruction Packet
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
 | 0xFF | 0xFF | 0xFD | 0x00 | 0xFE | 0x10 | 0x00 | 0x93 | 0x01 | 0x20 | 0x00 | 0x02 | 0x00 | 0xA0 | 0x00 |
 
-|  P8  |  P9  | P10  | P11  | P12  | P13  | CRC1 | CRC2 |  |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|::|
-| 0x02 | 0x1F | 0x00 | 0x01 | 0x00 | 0x50 | 0xB7 | 0x68 |  |
-
-
+|  P8  |  P9  | P10  | P11  | P12  | P13  | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
+| 0x02 | 0x1F | 0x00 | 0x01 | 0x00 | 0x50 | 0xB7  | 0x68  |
 
 
 
