@@ -95,9 +95,9 @@ Instruction Packet을 전송할 때 Byte와 Byte사이의 Delay Time을 의미�
 # [Instruction Packet](#instruction-packet)
 Instruction Packet은 제어기가 다이나믹셀에게 보내는 명령 데이터입니다. Instruction Packet의 구조는 아래와 같습니다.
 
-| Header1 | Header2 | ID | Length | Instruction | Param 1 | ... | Param N | Checksum |  |
-|:-------:|:-------:|:--:|:------:|:-----------:|:-------:|:---:|:-------:|:--------:|::|
-|  0xFF   |  0xFF   | ID | Length | Instruction | Param 1 | ... | Param N |  CHKSUM  |  |
+| Header1 | Header2 | ID | Length | Instruction | Param 1 | ... | Param N | Checksum |
+|:-------:|:-------:|:--:|:------:|:-----------:|:-------:|:---:|:-------:|:--------:|
+|  0xFF   |  0xFF   | ID | Length | Instruction | Param 1 | ... | Param N |  CHKSUM  |
 
 ## [Header](#header)
 Packet의 시작을 알리는 신호입니다.
@@ -155,9 +155,9 @@ Checksum = ~ ( ID + Length + Instruction + Parameter1 + ... Parameter 3 )
 # [Status Packet(Return Packet)](#status-packetreturn-packet)
 다이나믹셀은 Main Controller로부터 받은 명령을 수행한 뒤 그 결과를 Main Controller에게 Return합니다. 이 때 Return 되는 데이터를 Status Packet이라고 합니다. Status Packet의 구조는 아래와 같습니다.
 
-| Header1 | Header2 | ID | Length | Error | Param 1 | ... | Param N | Checksum |  |
-|:-------:|:-------:|:--:|:------:|:-----:|:-------:|:---:|:-------:|:--------:|::|
-|  0xFF   |  0xFF   | ID | Length | Error | Param 1 | ... | Param N |  CHKSUM  |  |
+| Header1 | Header2 | ID | Length | Error | Param 1 | ... | Param N | Checksum |
+|:-------:|:-------:|:--:|:------:|:-----:|:-------:|:---:|:-------:|:--------:|
+|  0xFF   |  0xFF   | ID | Length | Error | Param 1 | ... | Param N |  CHKSUM  |
 
 ## [Header](#header)
 Packet의 시작을 알리는 신호입니다.

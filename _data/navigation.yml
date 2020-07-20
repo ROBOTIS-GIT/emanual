@@ -13537,9 +13537,9 @@ protocol2:
       - title: "Packet ID"
         titlekr: "Packet ID"
         url: /dxl/protocol2/#packet-id
-      - title: "Packet Length"
-        titlekr: "Packet Length"
-        url: /dxl/protocol2/#packet-length
+      - title: "Length"
+        titlekr: "Length"
+        url: /dxl/protocol2/#length
       - title: "Instruction"
         titlekr: "Instruction"
         url: /dxl/protocol2/#instruction
