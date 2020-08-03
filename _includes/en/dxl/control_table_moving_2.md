@@ -1,7 +1,7 @@
 This value indicates whether DYNAMIXEL is in motion or not.  
-If absolute value of [Present Velocity(128)] is greater than Moving Threshold(24), Moving(122) is set to '1'.  
+If absolute value of [Present Velocity(128)](#present_velocity128) is greater than [Moving Threshold(24)](#moving-threshold24), Moving(122) is set to '1'.  
 Otherwise, it will be cleared to '0'.  
-However, this value will always be set to '1' regardless of [Present Velocity(128)] while Profile is in progress with Goal Position(116) instruction.
+However, this value will always be set to '1' regardless of [Present Velocity(128)](#present_velocity128) while Profile is in progress with [Goal Position(116)](#goal-position116) instruction.
 
 | Value | Description     |
 | :------------- | :------------- |

@@ -1,4 +1,4 @@
-Desired position can be set with Goal Position(116). From the front view of DYNAMIXEL, CCW is an increasing direction whereas CW is a decreasing direction. The way to reaching Goal Position(116) is differ by 4 Profiles provided by DYNAMIXEL. Please refer to the Profile Velocity(112) for more details.
+Desired position can be set with Goal Position(116). From the front view of DYNAMIXEL, CCW is an increasing direction whereas CW is a decreasing direction. The way to reaching Goal Position(116) is differ by 4 Profiles provided by DYNAMIXEL. Please refer to the [Profile Velocity(112)](#goal-velocity112) for more details.
 
 ![](/assets/images/dxl/x/dxl_goal_position.jpg)
 

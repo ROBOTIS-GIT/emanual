@@ -1,5 +1,5 @@
 
-Goal Position(116)을 통해 목표위치를 설정할 수 있습니다. 모든 장치는 Horn을 정면에서 바라봤을 때 CCW(Counter Clockwise) 방향이 증가 방향이고, CW(Clockwise) 방향이 감소 방향입니다. Goal Position(116)에 도달하는 방식은 장치가 제공하는 4가지 형태의 Profile에 따라 달라집니다. Profile에 대한 자세한 내용은 Profile Velocity(112)를 참고하세요.
+Goal Position(116)을 통해 목표위치를 설정할 수 있습니다. 모든 장치는 Horn을 정면에서 바라봤을 때 CCW(Counter Clockwise) 방향이 증가 방향이고, CW(Clockwise) 방향이 감소 방향입니다. Goal Position(116)에 도달하는 방식은 장치가 제공하는 4가지 형태의 Profile에 따라 달라집니다. Profile에 대한 자세한 내용은 [Profile Velocity(112)](#goal-velocity112)를 참고하세요.
 
 ![](/assets/images/dxl/x/dxl_goal_position.jpg)
 

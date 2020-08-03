@@ -1,3 +1,9 @@
+<!-- DXL -->
+
+[Shutdown(18)]: #shutdown 
+[Torque Enable(24)]: #torque-enable
+
+<!-- DXL-X -->
 
 [Return Delay time(5)]: #return-delay-time-5
 [Baud Rate(8)]: #baud-rate8
@@ -13,8 +19,13 @@
 [PWM Limit(36)]: #pwm-limit36
 [Current Limit(38)]: #current-limit38
 [Present Voltage(42)]: #present-voltage-42
+[Velocity Limit(44)]: #velocity-limit44
+[Max Position Limit(48)]: #minmax-position-limit48-52
+[Min Position Limit(52)]: #minmax-position-limit48-52
 [Shutdown(63)]: #shutdown63
 [Torque Enable(64)]: #torque-enable64
+[LED(65)]: #led65
+[Hardware Error Status(70)]: #hardware-error-status70
 [Bus Watchdog(98)]: #bus-watchdog98
 [Goal PWM(100)]: #goal-pwm100
 [Goal Current(102)]: #goal-current102
@@ -28,16 +39,26 @@
 [Present Velocity(128)]: #present-velovity128
 [Present Position(37)]: #present-position37
 [Present Position(132)]: #present-position132
-[Present Position(580)]: #present-position580
-[Present Position(611)]: #present-position611
+[Present Temperature(146)]: #present-temperature146
+
 [Velocity Trajectory(136)]: #velocity-trajectory136
 [Position Trajectory(140)]: #position-trajectory140
 
+<!-- DXL-P, PRO -->
+
+[Shutdown(48)]: #shutdown 
 [Torque Enable(512)]: #torque-enable512
-[Hardware Error Status(518)]: #hardware-error-status518
 [Torque Enable(562)]: #torque-enable562
+[Hardware Error Status(518)]: #hardware-error-status
+[Hardware Error Status(892)]: #hardware-error-status
 [Present Input Voltage(592)]: #present-input-voltage592
 [Goal Velocity(600)]: #goal-velocity600
 [Goal Acceleration(606)]: #goal-acceleration606
+[Present Position(580)]: #present-position580
+[Present Position(611)]: #present-position611
+
+<!--Common Links -->
 
 [케이블 호환성]: /docs/kr/popup/cable_compatibility/
+[Protocol 1.0]: /docs/kr/dxl/protocol1/#status-packet
+[Protocol 2.0]: /docs/kr/dxl/protocol2/#status-packet

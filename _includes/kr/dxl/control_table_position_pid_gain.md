@@ -4,13 +4,13 @@ Control Table의 Gain과 장치 내부 제어기의 Gain은 다음은 같은 관
 하기의 상수에는 샘플링타임이 포함되어 있습니다.  
 편의상 장치 내부 제어기의 Position P Gain을 K<sub>P</sub>P로 표기하고 Control Table의 Gain은 K<sub>P</sub>P<sub>(TBL)</sub>로 표기합니다.
 
-|| 제어기 Gain     | 변환 수식     | 범위 | 설명 |
-| :------------: | :------------: | :------------: | :------------: |
-| Position D Gain(80) | K<sub>P</sub>D | K<sub>P</sub>D = K<sub>P</sub>D<sub>(TBL)</sub> / 16 | 0 ~ 16,383 | D Gain |
-| Position I Gain(82) | K<sub>P</sub>I | K<sub>P</sub>I = K<sub>P</sub>I<sub>(TBL)</sub> / 65,536 | 0 ~ 16,383 | I Gain |
-| Position P Gain(84) | K<sub>P</sub>P | K<sub>P</sub>P = K<sub>P</sub>P<sub>(TBL)</sub> / 128 | 0 ~ 16,383 | P Gain |
-| Feedforward 2nd Gain(88) | K<sub>FF2nd</sub> | K<sub>FF2nd(TBL)</sub> / 4 | 0 ~ 16,383 | Feedforward Acceleration Gain |
-| Feedforward 1st Gain(90) | K<sub>FF1st</sub> | K<sub>FF1st(TBL)</sub> / 4 | 0 ~ 16,383 | Feedforward Velocity Gain |
+|    컨트롤 테이블 항목    |    제어기 Gain    |                        변환 수식                         |                범위 | 설명                 |
+|:------------------------:|:-----------------:|:--------------------------------------------------------:|:------------------------------------------:|
+|   Position D Gain(80)    |  K<sub>P</sub>D   |   K<sub>P</sub>D = K<sub>P</sub>D<sub>(TBL)</sub> / 16   |            0 ~ 16,383 | D Gain             |
+|   Position I Gain(82)    |  K<sub>P</sub>I   | K<sub>P</sub>I = K<sub>P</sub>I<sub>(TBL)</sub> / 65,536 |            0 ~ 16,383 | I Gain             |
+|   Position P Gain(84)    |  K<sub>P</sub>P   |  K<sub>P</sub>P = K<sub>P</sub>P<sub>(TBL)</sub> / 128   |            0 ~ 16,383 | P Gain             |
+| Feedforward 2nd Gain(88) | K<sub>FF2nd</sub> |                K<sub>FF2nd(TBL)</sub> / 4                | 0 ~ 16,383 | Feedforward Acceleration Gain |
+| Feedforward 1st Gain(90) | K<sub>FF1st</sub> |                K<sub>FF1st(TBL)</sub> / 4                |   0 ~ 16,383 | Feedforward Velocity Gain   |
 
 다음은 위치 제어 모드, 확장 위치 제어 모드에서 동작하는 위치제어기의 블록다이어그램입니다.  
 사용자의 요청이 장치에 전달된 후, 장치의 Horn이 구동되기까지의 과정은 다음과 같습니다.
@@ -25,10 +25,9 @@ Control Table의 Gain과 장치 내부 제어기의 Gain은 다음은 같은 관
 
 ![](/assets/images/dxl/position_controller_pid_gain.jpg)
 
-**참고** : PWM 제어 모드의 경우, PID 제어기와 Feedforward 제어기는 모두 비활성화되고 [Goal PWM(100)] 값이 Inverter를 통해서 모터에 직접 인가됩니다. 이를 통해 모터의 전압을 직접 제어할 수 있습니다.
-{: .notice}
-
-**참고** : K<sub>a</sub>는 Anti-windup Gain로서 사용자가 변경할 수는 없습니다.  
-보다 자세한 PID 제어기와 Feedforward 제어기에 대한 설명은 아래의 사이트를 참고바랍니다.  
-[PID Controller](http://en.wikipedia.org/wiki/PID_controller) and [Feed Forward](https://en.wikipedia.org/wiki/Feed_forward_(control)).
-{: .notice}
+{% capture pid_reference %}
+**참고** : 
+- PWM 제어 모드의 경우, PID 제어기와 Feedforward 제어기는 모두 비활성화되고 [Goal PWM(100)](#goal-pwm100) 값이 Inverter를 통해서 모터에 직접 인가됩니다. 이를 통해 모터의 전압을 직접 제어할 수 있습니다.
+- K<sub>a</sub>는 Anti-windup Gain로서 사용자가 변경할 수는 없습니다. 자세한 정보는 [PID Controller](http://en.wikipedia.org/wiki/PID_controller) 및 [Feed Forward](https://en.wikipedia.org/wiki/Feed_forward_(control))에 문서를 참고 하세요.
+{% endcapture %}
+<div class="notice">{{ pid_reference | markdownify }}</div>

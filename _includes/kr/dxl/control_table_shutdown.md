@@ -51,12 +51,12 @@ Revision: PRO+ > DYNAMIXEL-P.
 {% endif %}
 
 {% if page.product_group=='dxl_xw540' %}
-{% capture shutdown_01 %}
+{% capture shutdown_uptodate_firmware_released_dxl %}
 **참고** : Shutdown이 발생할 경우 장치를 **장치를 REBOOT** 시켜 주세요 
 -  H/W REBOOT : 전원을 껐다 켜주세요.
 -  S/W REBOOT : REBOOT Instruction을 사용할수 있습니다. [Protocol 2.0](/docs/kr/dxl/protocol2/#reboot)을 참고해주세요.
 {% endcapture %}
-<div class="notice">{{ shutdown_01 | markdownify }}</div>
+<div class="notice">{{ shutdown_uptodate_firmware_released_dxl | markdownify }}</div>
 
 {% elsif page.product_group=='dxl_ax' or page.product_group=='dxl_dx' or page.product_group=='dxl_ex' or page.product_group=='dxl_rx' or page.product_group=='dxl_mx' %}
 **참고** : Shutdown이 발생하면, **1초 주기로 LED가 점멸합니다.** 전원을 껏다 다시 켜주세요 (Reboot).  
@@ -65,22 +65,10 @@ Revision: PRO+ > DYNAMIXEL-P.
 {% capture shutdown_01 %}
 **참고** :
 {% if page.product_group=='dxl_pro' or page.product_group=='dxl_pro_a' or page.product_group=='dxl_p' %}1. Shutdown이 발생하면 **전기적 브레이크(Dynamic brake) 상태로 전환**됩니다.{% else %}{% endif %}
-2. Shutdown이 발생하면 **1초 주기로 LED가 점멸** 합니다.{% if page.product_group=='dxl_pro' or page.product_group=='dxl_pro_a' or page.product_group=='dxl_p' %}{% else %}(**펌웨어 버전 41 이상**) {% endif %}
+2. Shutdown이 발생하면 **1초 주기로 LED가 점멸** 합니다.{% if page.product_group=='dxl_pro' or page.product_group=='dxl_pro_a' or page.product_group=='dxl_p' or page.product_group=='xl330' %}{% else %}(**펌웨어 버전 41 이상**) {% endif %}
 3. Shutdown이 발생하면 다음과 같은 방법으로 **장치를 REBOOT** 시켜 주세요.
 -  H/W REBOOT : 전원을 껐다 켜주세요.
 -  S/W REBOOT : REBOOT Instruction을 사용할수 있습니다. [Protocol 2.0](/docs/kr/dxl/protocol2/#reboot)을 참고해주세요.
 {% endcapture %}
 <div class="notice">{{ shutdown_01 | markdownify }}</div>
 {% endif %}
-
-
-[Shutdown(18)]: #shutdown 
-[Shutdown(48)]: #shutdown 
-[Shutdown(63)]: #shutdown
-[Torque Enable(24)]: #torque-enable
-[Torque Enable(64)]: #torque-enable
-[Torque Enable(512)]: #torque-enable
-[Torque Enable(562)]: #torque-enable
-[Hardware Error Status(70)]: #hardware-error-status
-[Hardware Error Status(518)]: #hardware-error-status
-[Hardware Error Status(892)]: #hardware-error-status
