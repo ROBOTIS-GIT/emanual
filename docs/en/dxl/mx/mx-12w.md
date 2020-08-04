@@ -236,6 +236,10 @@ For example, if it is set to 300 then the motor is moving to the CCW direction a
 
 {% include en/dxl/molex_ttl.md %}
 
+## [Communication Circuit]
+
+{% include en/dxl/485_ttl_connection.md %}
+
 ## [Drawings](#drawings)
 
 ![](/assets/images/dxl/ax/ax-12w_dimension.png)
