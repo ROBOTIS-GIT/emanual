@@ -147,8 +147,8 @@ To communicate between **Remote PC** and **TurtleBot3**, you need to install `ub
 
 2. Create a folder, and then open it using the following commands.
 ```bash
-$ sudo touch /etc/netplan/01-netcfg.yaml
-$ sudo nano /etc/netplan/01-netcfg.yaml
+$ sudo touch /etc/netplan/99-netcfg.yaml
+$ sudo nano /etc/netplan/99-netcfg.yaml
 ```
 
 3. After opening the file, enter the network setting as shown below. Please be aware of the indentation in each line.  
