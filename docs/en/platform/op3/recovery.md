@@ -120,10 +120,6 @@ This chapter explains how to install software and configure ROBOTIS OP3.
    ```
    $ sudo apt install libncurses5-dev v4l-utils
    ```  
- - ROBOTIS-ROBOTIS-Optimization : scilab
-   ```
-   $ sudo apt install scilab
-   ```   
  - ROBOTIS-Utility : madplay, mpg321  
    ```
    $ sudo apt install madplay mpg321
@@ -212,7 +208,6 @@ This chapter explains how to install software and configure ROBOTIS OP3.
    -  [ROBOTIS-OP3-Tools] : This package contains useful tools for ROBOTIS-OP3
    -  [ROBOTIS-OP3-Common]
    -  ROBOTIS-Utility   
-   -  ROBOTIS-Optimization
 
  - How to install ROBOTIS ROS packages
    - Download sources from Github.  
@@ -228,7 +223,6 @@ This chapter explains how to install software and configure ROBOTIS OP3.
       $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Tools.git
       $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Common.git
       $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-Utility.git
-      $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-Optimization.git
       ```
 
    - Build downloaded sources.  
