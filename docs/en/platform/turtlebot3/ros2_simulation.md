@@ -32,13 +32,13 @@ TurtleBot3 supports a development enviroment which can be programed and develope
 There are two development enviroments: **Fake Node** and **Gazebo**. 
 
 **Fake Node**:
-- You can use Fake Node and RViz that is 3D visualization tool.
-- It is used for testing a model of TurtleBot3 and movement of the robot
-- It does not support using sensor data, so that **SLAM** and **Navigation** is not supported.
+- Simulates TurtleBot3 to test.   
+- Not support sensor data. Be sure that **SLAM** and **Navigation** are not used also. 
 
 **Gazebo**:
-- Gazebo allows Turtlebot3 to use virtual sensor data in simulator: IMU, LDS, and camera information. 
-- Use Gazabo to simulate TurtleBot3 with **SLAM** or **Navigation**.
+- Used to simulate TurtleBot3 
+- Allows to use virtual sensor data in simulator: IMU, LDS, and camera information. 
+- Supports features: **SLAM** and **Navigation**.
 
 ## [TurtleBot3 Simulation using Fake Node](#turtlebot3-simulation-using-fake-node)
 
