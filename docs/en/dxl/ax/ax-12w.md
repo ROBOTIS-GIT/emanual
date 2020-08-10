@@ -21,20 +21,24 @@ product_group: dxl_ax
 | Item                   | Specifications                                                              |
 |:-----------------------|:----------------------------------------------------------------------------|
 | Baud Rate              | 7843 bps ~ 1 Mbps                                                           |
-| Resolution             | 0.29&deg;                                                                   |
-| Running Degree         | 0&deg; ~ 300&deg;<br />Endless Turn                                         |
 | Weight                 | 52.9g                                                                       |
-| Dimensions (W x H x D) | 32mm x 50mm x 40mm                                                          |
+| Dimensions (W x H x D) | 32mm x 50mm x 40mm <br />1.26 X 1.97 X 1.57 [inch]                          |
+| Resolution             | 0.29&deg;                                                                   |
+| Motor                  | Cored                                                                       |
+| Running Degree         | 0&deg; ~ 300&deg;<br />Endless Turn                                         |
 | Gear Ratio             | 32 : 1                                                                      |
+| Stall Torque           | 0.2 [N&middot;m] (at 12 [V], 1.4 [A])                                       |
 | No Load Speed          | 470rpm (at 12V, Wheel Mode)<br />54rpm (at 12.0V, Joint Mode)               |
 | Operating Temperature  | -5&deg;C ~ +70&deg;C                                                        |
 | Input Voltage          | 9.0 ~ 12.0V (**Recommended : 11.1V**)                                       |
 | Command Signal         | Digital Packet                                                              |
 | Protocol Type          | Half Duplex Asynchronous Serial Communication<br />(8bit, 1stop, No Parity) |
 | Physical Connection    | TTL Level Multi Drop Bus                                                    |
-| ID                     | 0 ~ 253                                                                     |
+| ID                     | 254 ID (0~253)                                                              |
 | Feedback               | Position, Temperature, Load, Input Voltage, etc                             |
-| Material               | Engineering Plastic                                                         |
+| Gear Material          | Engineering Plastic(Full)                                                   |
+| Case Material          | Engineering Plastic(Front, Middle, Back)                                    |
+
 
 {% include en/dxl/warning.md %}
 
@@ -72,7 +76,7 @@ product_group: dxl_ax
 |   29    |       1        | [CCW Compliance Slope](#ccw-compliance-alope)   | CCW Compliance Slope         |   RW   |         64         |
 |   30    |       2        | [Goal Position](#goal-position)                 | Target Position              |   RW   |         -          |
 |   32    |       2        | [Moving Speed](#moving-speed)                   | Moving Speed                 |   RW   |         -          |
-|   34    |       2        | [Torque Limit](#torque-limit)                   | Torque Limit    |   RW   |   Max Torque    |
+|   34    |       2        | [Torque Limit](#torque-limit)                   | Torque Limit                 |   RW   |     Max Torque     |
 |   36    |       2        | [Present Position](#present-position)           | Present Position             |   R    |         -          |
 |   38    |       2        | [Present Speed](#present-speed)                 | Present Speed                |   R    |         -          |
 |   40    |       2        | [Present Load](#present-load)                   | Present Load                 |   R    |         -          |

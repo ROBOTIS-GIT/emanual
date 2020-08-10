@@ -28,10 +28,11 @@ product_group: dxl_ax
 | Item                   | Specifications                                                              |
 |:-----------------------|:----------------------------------------------------------------------------|
 | Baud Rate              | 7843 bps ~ 1 Mbps                                                           |
+| Weight                 | 53.5g(AX-12, AX-12+), 54.6g(AX-12A)                                         |
+| Dimensions (W x H x D) | 32mm x 50mm x 40mm <br />1.26 X 1.97 X 1.57 [inch]                          |
 | Resolution             | 0.29 [&deg;]                                                                |
 | Running Degree         | 0 [&deg;] ~ 300 [&deg;]<br />Endless Turn                                   |
-| Weight                 | 53.5g(AX-12, AX-12+), 54.6g(AX-12A)                                         |
-| Dimensions (W x H x D) | 32mm x 50mm x 40mm                                                          |
+| Motor                  | Cored                                                                       |
 | Gear Ratio             | 254 : 1                                                                     |
 | Stall Torque           | 1.5 N*m (at 12V, 1.5A)                                                      |
 | No Load Speed          | 59rpm (at 12V)                                                              |
@@ -40,9 +41,10 @@ product_group: dxl_ax
 | Command Signal         | Digital Packet                                                              |
 | Protocol Type          | Half Duplex Asynchronous Serial Communication<br />(8bit, 1stop, No Parity) |
 | Physical Connection    | TTL Level Multi Drop Bus                                                    |
-| ID                     | 0 ~ 253                                                                     |
+| ID                     | 254 ID (0~253)                                                              |
 | Feedback               | Position, Temperature, Load, Input Voltage, etc                             |
-| Material               | Engineering Plastic                                                         |
+| Gear Material          | Engineering Plastic(Full)                                                   |
+| Case Material          | Engineering Plastic(Front, Middle, Back)                                    |
 
 **NOTE** : Stall torque is the maximum instantaneous and static  torque. Stable motions are possible with robots designed for loads with 1/5 or less of the stall torque.
 {: .notice}
