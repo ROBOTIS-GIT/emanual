@@ -6,6 +6,7 @@
 <!-- DXL-X -->
 
 [Return Delay time(5)]: #return-delay-time-5
+[ID(7)]: #id7
 [Baud Rate(8)]: #baud-rate8
 [Return Delay time(9)]: #return-delay-time-9
 [Operating Mode(11)]: #operating-mode11
@@ -39,6 +40,8 @@
 [Present Velocity(128)]: #present-velovity128
 [Present Position(37)]: #present-position37
 [Present Position(132)]: #present-position132
+[Present Input Voltage(144)]: #present-input-voltage144
+
 [Present Temperature(146)]: #present-temperature146
 
 [Velocity Trajectory(136)]: #velocity-trajectory136

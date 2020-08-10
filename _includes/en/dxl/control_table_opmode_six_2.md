@@ -13,14 +13,14 @@
 **NOTE** : Switching Operating Mode will reset gains(PID, Feedfoward) properly to the selected Operating Mode. The profile generator and limits will also be reset.
 1. [Profile Velocity(112)](#profile-velocity112), [Profile Acceleration(108)](#profile-acceleration108) : Reset to ‘0’
 2. [Goal PWM(100)](#goal-pwm100), [Goal Current(102)](#goal-current102) : Reset to [PWM Limit(36)](#pwm-limit36), [Current Limit(38)](#current-limit38) respectively
-3. Current-based Position Control Mode : Reset to Position Gain(PID) and [PWM Limit(36)](#pwm-limit36) values.
+3. Current-based Position Control Mode : Reset to [Position Gain(PID)](#position-pid-gain80-82-84) and [PWM Limit(36)](#pwm-limit36) values.
 
-Changed Position Gain(PID) and [PWM Limit(36)](#pwm-limit36) values can be read from the Control Table.
+Changed Position Gain(PID) and PWM Limit(36) values can be read from the Control Table.
 {% endcapture %}
 <div class="notice">{{ group_notice_01 | markdownify }}</div>
 
 {% capture group_notice_02 %}
-**NOTE** : PWM is the abbreviation for Pulse Width Modulation that modulates PWM Duty to control motors.  
+**NOTE** : PWM stands for **Pulse Width Modulation** that modulates PWM Duty to control motors.  
 It changes pulse width to control average supply voltage to the motor and this technique is widely used in the motor control field.  
 1. PWM Control Mode is similar to the Wheel Mode of [AX](/docs/en/dxl/ax/ax-12w/#cw-compliance-margin) and [RX](/docs/en/dxl/rx/rx-10/#moving-speed-32) series.
 2. Input a value of [Goal PWM(100)](#goal-pwm) on PWM Control Mode in order to control supply voltage for DYNAMIXEL.  
