@@ -41,13 +41,14 @@ The development environment for OpenCR1.0 is wide open from Arduino IDE and Scra
 | Dimensions           | 105(W) X 75(D) mm                                                                                                                                                                                                                         |
 | Weight               | 60g                                                                                                                                                                                                                                       |
 
-{% capture note_01 %}
-**NOTE**: Be sure to read the following before use of the product to ensure proper use.
-- MPU9250 sensor has been replaced with ICM-20648, since 2020, as MPU9250 is discontinued to produce.
-- 5V power source should be stable by supplying regulated 12V output.
-- Hot swap power switch between "shore power"(12V, 4.5A SMPS) and "mobile power"(battery) from OpenCR1.0 board enables UPS (Uninterrupted Power Supply) feature.
-{% endcapture %}
-<div class="notice--notice">{{ note_01 | markdownify }}</div>
+<sup>`*`</sup> 5V power source is supplied from regulated 12V output. Total power consumption on 12V and 5V ports should not exceed 55W.
+{: .notice--warning}
+
+**NOTE**: MPU9250 sensor has been replaced with ICM-20648, since 2020, as MPU9250 is discontinued to produce.
+{: .notice}
+
+**NOTE** : Hot swap power switch between "shore power"(12V, 4.5A SMPS) and "mobile power"(battery) from OpenCR1.0 board enables UPS(Uninterrupted Power Supply) feature.
+{: .notice}
 
 # [Layout/Pin Map](#layoutpin-map)
 
