@@ -237,9 +237,14 @@ For example, if it is set to 300 then the motor is moving to the CCW direction a
 
 {% include en/dxl/molex_ttl.md %}
 
-## [Communication Circuit]
+## [Communication Circuit](#communication-circuit)
+To control the DYNAMIXEL actuators, the main controller needs to convert its UART signals to the half duplex type. The recommended circuit diagram for this is shown below.
 
-{% include en/dxl/485_ttl_connection.md %}
+### TTL Communication
+![](/assets/images/dxl/ttl_circuit.png)
+
+The power of DYNAMIXEL is supplied via Pin1(-), Pin2(+).  
+(The above circuit is built into DYNAMIXEL's controller only)  
 
 ## [Drawings](#drawings)
 

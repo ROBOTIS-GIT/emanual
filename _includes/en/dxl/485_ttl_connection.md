@@ -2,15 +2,15 @@
 To control the DYNAMIXEL actuators, the main controller needs to convert its UART signals to the half duplex type. The recommended circuit diagram for this is shown below.
 
 {% if page.product_group=='dxl_ax' %}
-### TTL Communication
+### [TTL Communication](#ttl-communication)
 ![](/assets/images/dxl/ttl_circuit.png)
 
 {% else %}
 
-### TTL Communication
+### [TTL Communication](#ttl-communication)
 ![](/assets/images/dxl/ttl_circuit.png)
 
-### RS-485 Communication
+### [RS-485 Communication](#rs-485-communication)
 ![](/assets/images/dxl/485_circuit.png)
 
 The power of DYNAMIXEL is supplied via Pin1(-), Pin2(+).  

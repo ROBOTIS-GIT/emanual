@@ -234,6 +234,14 @@ Value 값이 250 이상인 경우 :
 ## [커넥터 정보](#커넥터-정보)
 {% include kr/dxl/molex_ttl.md %}
 
+## [통신 회로](#통신-회로)
+다이나믹셀을 제어하기 위해서는 제어기의 UART 신호를 Half duplex type으로 변환시켜 주어야 합니다. 다음은 그 권장 회로도입니다.
+
+### [TTL 통신](#ttl-통신)
+![](/assets/images/dxl/ttl_circuit.png)
+
+전원은 Pin1(-), Pin2(+)를 통하여 다이나믹셀로 공급됩니다.(다이나믹셀 전용 Controller에는 위의 회로가 내장되어 있습니다.)  
+
 ## [Videos](#videos)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Tw4GfqUpzNA" frameborder="0" allowfullscreen></iframe>
