@@ -22,6 +22,14 @@ Select a desired DYNAMIXEL protocol type according to your application.
 {% endcapture %}
 <div class="notice">{{ protocol_note_01 | markdownify }}</div>
 
+{% capture protocol_note_01 %}
+**NOTE**
+- In case that a RC Protocol type (S.BUS, iBUS, RC-PWM) is set, DYNAMIXEL will switch to DYNAMIXEL Protocol 2.0 providing that RC protocol is not detected during booting. Therefore, it is possible for DYNAMIXEL to access to its Control Table in using software such as [DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/). 
+- If RC protocol type is detected during the booting and operates as its RC mode, DYNAMIXEL will be automatically **Torque On** status. 
+{% endcapture %}
+<div class="notice">{{ protocol_note_01 | markdownify }}</div>
+
+
 #### [DYNAMIXEL Protocol 2.0](#dynamixel-protocol-20)
 
 The basic communication protocol to communicate between DYNAMIXELs. See [Protocol 2.0] for more detailed information.
@@ -33,7 +41,7 @@ The communication protocol controlling RC servos commonly used by Futaba and FrS
 - The available range of data transmission is from 0 to 2,047, 11 bits.
 - On Position Control sends; [Operating Mode(11)], the data will be passed to [Goal Position(116)]. On Velocity Mode, the data will be passed to [Goal Velocity(104)]. See the  following graph how the transmitted data should be applied via S.Bus Protocol.  
 
-<img src="/assets/images/dxl/x/xl330_temp/protocol_s_bus.png" width="1100">
+<img src="/assets/images/dxl/x/xl330_temp/protocol_s_bus_kr.png" width="1100">
 
 <!-- 
 
@@ -50,6 +58,8 @@ The communication protocol controlling RC servos commonly used by Futaba and FrS
 **참고**: 속도제어 모드에서 최대 속도는 [Velocity Limit(44)](#velocity-limit44) 값으로, 움직이지 않는 범위([Goal Velocity(104)](#goal-velocity104)가 0인 범위)는 [Moving Threshold(24)](#moving-threshold24) 값으로 설정할 수 있습니다.
 {: .notice}
 
+The maximum speed at the Velocity Control mode relies on its [Velocity Limit(44)]. Goal Velocify In case of Velocity Control Mode, Goal Velocity(104) can be used to set a desired velocity. This value cannot exceed Velocity Limit(44). For now, Goal Velocity(104) is used for desired velocity, but this value is not used to limit the velocity.
+
 #### [iBUS Protocol](#ibus)
 
 FlySky제품에서 사용하는 RC 규격의 통신 프로토콜 입니다. 
@@ -57,7 +67,7 @@ FlySky제품에서 사용하는 RC 규격의 통신 프로토콜 입니다.
 - 전달되는 데이터 값의 범위는 0~16,383(16 bits)입니다.
 - 위치제어 모드일 때에는 [Goal Position(116)]으로, 속도제어 모드일 경우에는 [Goal Velocity(104)]로 데이터가 전달됩니다. 프로토콜로 전달받은 데이터에 따른 제어 지령치는 아래 그래프와 같습니다.
 
-<img src="/assets/images/dxl/x/xl330_temp/protocol_ibus_graph.png" width="1100">
+<img src="/assets/images/dxl/x/xl330_temp/protocol_ibus_graph_kr.png" width="1100">
 
 **참고**: 속도제어 모드에서는 최대 속도는 [Velocity Limit(44)](#velocity-limit44) 값으로, 움직이지 않는 범위(Goal Velocity가 0인 범위)는 [Moving Threshold(24)](#moving-threshold24) 값으로 설정할 수 있습니다.
 {: .notice}
@@ -72,7 +82,7 @@ RC 제품군에서 사용하는 PWM(Pulse Width Modulation) 신호로, 여러 �
 
 RC PWM 신호 데이터는 위치제어 모드일 때에는 [Goal Position(116)](#goal-position116)으로, 속도제어 모드일 경우에는 [Goal Velocity(104)](#goal-velocity104)로 데이터가 전달됩니다. RC-PWM 신호의 데이터에 따른 지령치는 다음 그래프와 같습니다.
 
-<img src="/assets/images/dxl/x/xl330_temp/protocl_rc_pwm_graph.png" width="1100">
+<img src="/assets/images/dxl/x/xl330_temp/protocl_rc_pwm_graph_kr.png" width="1100">
 
 **참고**: 속도제어 모드에서는 최대 속도는 [Velocity Limit(44)](#velocity-limit44) 값으로, 움직이지 않는 범위(Goal Velocity가 0인 범위)는 [Moving Threshold(24)](#moving-threshold24) 값으로 설정할 수 있습니다.
 {: .notice}

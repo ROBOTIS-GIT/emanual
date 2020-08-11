@@ -16,7 +16,7 @@
 **참고**
 - 프로토콜 타입이 RC 프로토콜 타입(S.BUS, iBUS, RC-PWM)으로 설정된 경우, 부팅시 일정시간동안 해당 신호가 감지되지 않으면, 다이나믹셀 프로토콜 2.0으로 동작합니다.
 따라서, 다이나믹셀 프로토콜 2.0으로 설정되어 있지 않아도, [다이나믹셀 위자드 2.0](/docs/kr/software/dynamixel/dynamixel_wizard2/) 등을 이용하여 컨트롤 테이블 접근이 가능합니다.
-- RC 프로토콜 타입 (S.BUS, iBUS, RC-PWM) 설정 후, 부팅시 해당하는 프로토콜이 감지되어, RC 모드로 동작되면 자동으로 Torque On 상태가 됩니다.
+- RC 프로토콜 타입 (S.BUS, iBUS, RC-PWM) 설정 후, 부팅시 해당하는 프로토콜이 감지되어, RC 모드로 동작되면 자동으로 **Torque On** 상태가 됩니다.
 {% endcapture %}
 <div class="notice">{{ protocol_note_01 | markdownify }}</div>
 
