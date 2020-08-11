@@ -9,6 +9,7 @@
 [ID(7)]: #id7
 [Baud Rate(8)]: #baud-rate8
 [Return Delay time(9)]: #return-delay-time-9
+[Drive Mode(10)]: #drive-mode
 [Operating Mode(11)]: #operating-mode11
 [Homing Offset(13)]: #homing-offset13
 [Protocol Type(13)]: #protocol-type13

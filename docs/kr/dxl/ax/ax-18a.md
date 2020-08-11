@@ -22,25 +22,26 @@ product_group: dxl_ax
 
 # [주요 사양](#주요-사양)
 
-| 항목            | 내용                                                                        |
-|:----------------|:----------------------------------------------------------------------------|
-| 무게            | AX-18F (54.5 [g]), AX-18A (55.9 [g])                                                |
-| 크기            | 32 X 50 X 40 [mm]<br />1.26 X 1.97 X 1.57 [inch]                            |
-| 최소 제어각     | 0.29 [deg]                                                                   |
-| 모터            | Coreless                                                                    |
-| 기어비          | 254 : 1                                                                     |
-| Stall Torque  | 1.8 [N&middot;m] (at 12 [V], 2.2 [A])                                                      |
-| 무부하 속도   | 97 [rpm] (at 12 [V])                                                              |
-| 동작 모드       | 관절 모드 : 0 ~ 300 [deg]<br />바퀴 모드 : 무한 회전                   |
-| 동작 온도       | -5 ~ +70 [&deg;C]                                                   |
-| 사용 전압       | 9.0 ~ 12.0 [V] (**권장 전압 : 11.1 [V]**)                                    |
-| 제어 명령  | Digital Packet                                                              |
-| 프로토콜 타입   | Half Duplex Asynchronous Serial Communication<br />(8bit, 1stop, No Parity) |
-| 통신 연결 | TTL Level Multi Drop Bus                        |
-| ID              | 254 ID (0~253)                                                              |
-| 피드백        | Position, Temperature, Load, Input Voltage 등                             |
-| 기어 재질   | Engineering Plastic(1, 2, 3), Precious Metal(4)                             |
-| 케이스 재질        | Engineering Plastic(Front, Middle, Back)                               |
+| 항목          | 내용                                                                        |
+|:--------------|:----------------------------------------------------------------------------|
+| 통신 속도     | 7843 bps ~ 1 Mbps                                                           |
+| 무게          | AX-18F (54.5 [g]), AX-18A (55.9 [g])                                        |
+| 크기          | 32 X 50 X 40 [mm]<br />1.26 X 1.97 X 1.57 [inch]                            |
+| 최소 제어각   | 0.29 [deg]                                                                  |
+| 모터          | Coreless                                                                    |
+| 기어비        | 254 : 1                                                                     |
+| Stall Torque  | 1.8 [N&middot;m] (at 12 [V], 2.2 [A])                                       |
+| 무부하 속도   | 97 [rpm] (at 12 [V])                                                        |
+| 동작 모드     | 관절 모드 : 0 ~ 300 [deg]<br />바퀴 모드 : 무한 회전                        |
+| 동작 온도     | -5 ~ +70 [&deg;C]                                                           |
+| 사용 전압     | 9.0 ~ 12.0 [V] (**권장 전압 : 11.1 [V]**)                                   |
+| 제어 명령     | Digital Packet                                                              |
+| 프로토콜 타입 | Half Duplex Asynchronous Serial Communication<br />(8bit, 1stop, No Parity) |
+| 통신 연결     | TTL Level Multi Drop Bus                                                    |
+| ID            | 254 ID (0~253)                                                              |
+| 피드백        | Position, Temperature, Load, Input Voltage 등                               |
+| 기어 재질     | Engineering Plastic(1, 2, 3), Precious Metal(4)                             |
+| 케이스 재질   | Engineering Plastic(Front, Middle, Back)                                    |
 
 **주의**: Stall Torque 는 순간적으로 낼수있는 최대정지토크를 의미합니다. 실제 구동을 위해 로봇을 설계하신다면 Stall Torque의 1/5 이하의 로드가 걸리도록 설계하셔야 안정적인 움직임이 가능합니다.
 {: .notice}

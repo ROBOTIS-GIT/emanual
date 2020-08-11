@@ -18,26 +18,26 @@ product_group: dxl_ax
 
 # [주요 사양](#주요-사양)
 
-| 항목            | 내용                                                                   |
-|:----------------|:-----------------------------------------------------------------------|
-| 무게            | 52.9 [g]                                                                  |
-| 크기            | 32 X 50 X 40 [mm]<br />1.26 X 1.97 X 1.57 [inch]                        |
-| 최소 제어각     | 0.29 [deg]                                                              |
-| 모터            | Cored                                                                  |
-| 기어비          | 32 : 1                                                                 |
-| Stall Torque | 0.2 [N&middot;m] (at 12 [V], 1.4 [A])                                        |
-| 무부하 속도   | 470 [rpm] (at 12.0 [V], Wheel Mode)<br />54 [rpm] (at 12.0 [V], Joint Mode)          |
-| 동작 모드       | 관절 모드 : 0 ~ 300 [deg]<br />바퀴 모드 : 무한 회전                   |
-| 동작 온도       | -5 ~ +70 [&deg;C]                                                   |
-| 사용 전압       | 9.0 ~ 12.0 [V] (**권장 전압 : 11.1 [V]**)                                    |
-| 제어 명령  | Digital Packet                                                         |
-| 프로토콜 타입   | Half Duplex Asynchronous Serial Communication (8bit, 1stop, No Parity) |
-| 통신 연결 | TTL Level Multi Drop Bus                   |
-| ID              | 254 ID (0~253)                                                         |
-| 통신 속도       | 7,843 ~ 1,000,000 [bps]                                                      |
-| 피드백        | Position, Temperature, Load, Input Voltage 등                        |
-| 기어 재질   | Engineering Plastic(Full)                                               |
-| 케이스 재질        | Engineering Plastic(Front, Middle, Back)                               |
+| 항목          | 내용                                                                        |
+|:--------------|:----------------------------------------------------------------------------|
+| 통신 속도     | 7,843 ~ 1,000,000 [bps]                                                     |
+| 무게          | 52.9 [g]                                                                    |
+| 크기          | 32 X 50 X 40 [mm]<br />1.26 X 1.97 X 1.57 [inch]                            |
+| 최소 제어각   | 0.29 [deg]                                                                  |
+| 모터          | Cored                                                                       |
+| 동작 모드     | 관절 모드 : 0 ~ 300 [deg]<br />바퀴 모드 : 무한 회전                        |
+| 기어비        | 32 : 1                                                                      |
+| Stall Torque  | 0.2 [N&middot;m] (at 12 [V], 1.4 [A])                                       |
+| 무부하 속도   | 470 [rpm] (at 12.0 [V], Wheel Mode)<br />54 [rpm] (at 12.0 [V], Joint Mode) |
+| 동작 온도     | -5 ~ +70 [&deg;C]                                                           |
+| 사용 전압     | 9.0 ~ 12.0 [V] (**권장 전압 : 11.1 [V]**)                                   |
+| 제어 명령     | Digital Packet                                                              |
+| 프로토콜 타입 | Half Duplex Asynchronous Serial Communication (8bit, 1stop, No Parity)      |
+| 통신 연결     | TTL Level Multi Drop Bus                                                    |
+| ID            | 254 ID (0~253)                                                              |
+| 피드백        | Position, Temperature, Load, Input Voltage 등                               |
+| 기어 재질     | Engineering Plastic(Full)                                                   |
+| 케이스 재질   | Engineering Plastic(Front, Middle, Back)                                    |
 
 {% include kr/dxl/warning.md %}
 

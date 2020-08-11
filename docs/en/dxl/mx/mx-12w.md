@@ -29,16 +29,17 @@ product_group: dxl_mx
 | Weight                 | 54.6g                                                                                         |
 | Dimensions (W x H x D) | 32 x 50 x 40 [mm]                                                                             |
 | Gear Ratio             | 32 : 1                                                                                        |
+| Stall Torque           | 0.2 [N&middot;m] (at 12 [V], 1.4 [A])                                                         |
 | No Load Speed          | 470 [rev/min] (at 12 [V])                                                                     |
 | Operating Temperature  | -5&deg;C ~ +70&deg;C                                                                          |
 | Input Voltage          | 10 ~ 14.8V (**Recommended : 12V**)                                                            |
-| Standby Current        | 60mA                                                                                          |
 | Command Signal         | Digital Packet                                                                                |
 | Protocol Type          | Half Duplex Asynchronous Serial Communication<br />(8bit, 1stop, No Parity)                   |
 | Physical Connection    | TTL Level Multidrop Bus(Daisy Chain Type Connector)                                           |
 | ID                     | 0 ~ 253                                                                                       |
 | Feedback               | Position, Temperature, Load, Input Voltage, etc                                               |
 | Material               | Engineering Plastic                                                                           |
+| Standby Current        | 60mA                                                                                          |
 
 
 {% include en/dxl/warning.md %}
@@ -235,6 +236,15 @@ For example, if it is set to 300 then the motor is moving to the CCW direction a
 ## [Connector Information](#connector-information)
 
 {% include en/dxl/molex_ttl.md %}
+
+## [Communication Circuit](#communication-circuit)
+To control the DYNAMIXEL actuators, the main controller needs to convert its UART signals to the half duplex type. The recommended circuit diagram for this is shown below.
+
+### TTL Communication
+![](/assets/images/dxl/ttl_circuit.png)
+
+The power of DYNAMIXEL is supplied via Pin1(-), Pin2(+).  
+(The above circuit is built into DYNAMIXEL's controller only)  
 
 ## [Drawings](#drawings)
 

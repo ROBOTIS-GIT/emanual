@@ -1,7 +1,6 @@
-
 [Drive Mode(10)](#drive-mode10)에서 Velocity-based Profile이 선택된 경우, Profile Acceleration(108)은 **Profile의 가속도**를 설정합니다.  
 [Drive Mode(10)](#drive-mode10)에서 Time-based Profile이 선택된 경우, Profile Acceleration(108)은 **Profile의 가속시간**을 설정합니다.  
-Profile Acceleration(108)은 전류 제어 모드를 제외한 모든 제어 모드에서 적용 가능합니다. 자세한 사항은 [Profile Velocity(112)](#profile-velocity112)를 참고하세요.
+Profile Acceleration(108)은 제어 모드 및 PWM 제어모드를 제외한 모든 제어 모드에서 적용 가능합니다. 자세한 사항은 [Profile Velocity(112)](#profile-velocity112)를 참고하세요.
 
 | Velocity-based Profile | 상세                          | 비고                                                                                                                                                          |
 | :--------------------: | :---------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------ |

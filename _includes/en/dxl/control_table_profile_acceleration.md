@@ -1,8 +1,9 @@
 
-If Velocity-based Profile is selected for [Drive Mode(10)](#drive-mode10), Profile Acceleration(108) sets acceleration of the Profile.  
-If Time-based Profile is selected for [Drive Mode(10)](#drive-mode10), Profile Acceleration(108) sets accelerating time of the Profile.  
-Profile Acceleration(108) is applied in all control mode except Current Control Mode.  
-See [Profile Velocity(112)] for more details.
+If Velocity-based Profile is selected for [Drive Mode(10)], [Profile Acceleration(108)] sets acceleration of the Profile.  
+If Time-based Profile is selected for [Drive Mode(10)], [Profile Acceleration(108)] sets accelerating time of the Profile.  
+Profile Acceleration(108) is applied in all control mode except Current Control Mode and PWM Control Mode.  
+Please refer to [Profile Velocity(112)] for more details.
+
 
 | Velocity-based Profile |            Values             | Description                             |
 |:----------------------:|:-----------------------------:|:----------------------------------------|
