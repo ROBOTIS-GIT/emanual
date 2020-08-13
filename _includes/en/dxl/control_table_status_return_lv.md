@@ -1,4 +1,4 @@
-This value decides how to return Status Packet when DYNAMIXEL receives an Instruction Packet.
+The Status Return Level(68) decides how to return Status Packet when DYNAMIXEL receives an Instruction Packet.
 
 | Value |        Responding Instructions         |              Description              |
 |:-----:|:--------------------------------------:|:-------------------------------------:|

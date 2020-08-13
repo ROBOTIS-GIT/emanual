@@ -33,6 +33,7 @@
 [Profile Acceleration(108)]: #profile-acceleration108
 [Profile Velocity(112)]: #profile-velocity112
 [Goal Position(116)]: #goal-position116
+[Moving(122)]: #moving122
 [Present PWM(124)]: #present-pwm124
 [Present Current(126)]: #present-current126
 [Present load(126)]: #present-load126
@@ -60,7 +61,7 @@
 [Present Position(611)]: #present-position611
 
 <!--Common Links -->
-
+[Hardware Error Bit(0x80)]: /docs/en/dxl/protocol2/#error 
 [Harness Compatibility]: /docs/en/popup/cable_compatibility/
 [Protocol 1.0]: /docs/en/dxl/protocol1/#status-packet
 [Protocol 2.0]: /docs/en/dxl/protocol2/#status-packet

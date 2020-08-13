@@ -34,7 +34,7 @@ Futaba와 FrSky의 RC 서보모터 제품에서 사용하는 통신 프로토콜
 - 전달되는 데이터 값의 범위는 0~2,047 (11 bits)입니다.
 - 위치제어 모드일 때에는 [Goal Position(116)]으로, 속도제어 모드일 경우에는 [Goal Velocity(104)]로 데이터가 전달됩니다. 프로토콜로 전달받은 데이터에 따른 제어 지령치는 아래 그래프와 같습니다.
 
-<img src="/assets/images/dxl/x/xl330_temp/protocol_s_bus.png" width="1100">
+<img src="/assets/images/dxl/x/xl330_temp/protocol_s_bus_graph_kr.png" width="1100">
 
 <!-- 
 
@@ -58,7 +58,7 @@ FlySky제품에서 사용하는 RC 규격의 통신 프로토콜 입니다.
 - 전달되는 데이터 값의 범위는 0~16,383(16 bits)입니다.
 - 위치제어 모드일 때에는 [Goal Position(116)]으로, 속도제어 모드일 경우에는 [Goal Velocity(104)]로 데이터가 전달됩니다. 프로토콜로 전달받은 데이터에 따른 제어 지령치는 아래 그래프와 같습니다.
 
-<img src="/assets/images/dxl/x/xl330_temp/protocol_ibus_graph.png" width="1100">
+<img src="/assets/images/dxl/x/xl330_temp/protocol_ibus_graph_kr.png" width="1100">
 
 **참고**: 속도제어 모드에서는 최대 속도는 [Velocity Limit(44)](#velocity-limit44) 값으로, 움직이지 않는 범위(Goal Velocity가 0인 범위)는 [Moving Threshold(24)](#moving-threshold24) 값으로 설정할 수 있습니다.
 {: .notice}
@@ -71,7 +71,7 @@ RC 제품군에서 사용하는 PWM(Pulse Width Modulation) 신호로, 여러 �
 
 RC PWM 신호 데이터는 위치제어 모드일 때에는 [Goal Position(116)](#goal-position116)으로, 속도제어 모드일 경우에는 [Goal Velocity(104)](#goal-velocity104)로 데이터가 전달됩니다. RC-PWM 신호의 데이터에 따른 지령치는 다음 그래프와 같습니다.
 
-<img src="/assets/images/dxl/x/xl330_temp/protocl_rc_pwm_graph.png" width="1100">
+<img src="/assets/images/dxl/x/xl330_temp/protocl_rc_pwm_graph_kr.png" width="1100">
 
 **참고**: 속도제어 모드에서는 최대 속도는 [Velocity Limit(44)](#velocity-limit44) 값으로, 움직이지 않는 범위(Goal Velocity가 0인 범위)는 [Moving Threshold(24)](#moving-threshold24) 값으로 설정할 수 있습니다.
 {: .notice}

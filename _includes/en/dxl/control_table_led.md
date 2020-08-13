@@ -1,4 +1,4 @@
-Turn on or turn off the LED on DYNAMIXEL.
+The LED(65) determines LED On or Off.
 
 |    Bit     | Description      |
 |:----------:|:-----------------|

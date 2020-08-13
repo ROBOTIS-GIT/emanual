@@ -1,5 +1,5 @@
-Bus Watchdog (98) is available from firmware v38. It is a safety device (Fail-safe) that stops the DYNAMIXEL if the communication between the controller and DYNAMIXEL communication (RS485, TTL) is disconnected due to an unspecified error.
-Communication is defined as all the Instruction Packet in the DYNAMIXEL Protocol.
+ The Bus Watchdog(98) is a safety device (Fail-safe) to stops the DYNAMIXEL if the communication between the controller and DYNAMIXEL communication (RS485, TTL) is disconnected due to an unspecified error.
+The communication is defined as all the Instruction Packet in the DYNAMIXEL Protocol.
 
 |       | Values  | Description                                          |
 |:------|:---------------------------------------------------------------|
@@ -17,10 +17,14 @@ If the value of Bus Watchdog(98) is changed to '0', Bus Watchdog Error will be c
 **NOTE** : For details of Range Error, please refer to the [Protocol 2.0]
 {: .notice}
 
+{% if page.product_group !='xl330' %}
+**NOTE**: Bus Watchdog (98) is available from firmware v38.
+{: .notice}
+{% endif %}
 
 #### [Bus Watchdog (98) Example](#bus-watchdog-98-example)
 
-The following are examples of the operation of the Bus Watchdog function.
+The following is the example of the operation of the Bus Watchdog function.
 1. After setting the [Operating Mode(11)] to speed control mode, change the [Torque Enable(64)] to '1'.
 2. If '50' is written in the [Goal Velocity(104)], the DYNAMIXEL will rotate in CCW direction.
 3. Change the value of [Bus Watchdog(98)] to '100' (2,000 [ms]). (Activate Bus Watchdog Function)
