@@ -15,6 +15,7 @@ source "https://rubygems.org"
 
 gem "jekyll", "~> 3.6.3"
 gem "minimal-mistakes-jekyll"
+gem "kramdown", ">= 2.3.0"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
