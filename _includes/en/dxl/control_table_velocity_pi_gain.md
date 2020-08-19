@@ -1,4 +1,4 @@
-Velocity PI Gains(76, 78) indicate gains of Velocity Control Mode.  
+The Velocity PI Gains(76, 78) indicate gains of Velocity Control Mode.  
 Gains of DYNAMIXEL’s internal controller can be calculated from Gains of the Control Table as shown below.  
 The constant in each equations include sampling time.  
 Velocity P Gain of DYNAMIXEL’s internal controller is abbreviated to K<sub>V</sub>P and that of the Control Table is abbreviated to K<sub>V</sub>P<sub>(TBL)</sub>.
@@ -7,7 +7,6 @@ Velocity P Gain of DYNAMIXEL’s internal controller is abbreviated to K<sub>V</
 |:-------------------:|:---------------:|:--------------------------------------------------------:|:----------:|:-----------:|
 | Velocity I Gain(76) | K<sub>V</sub>I  | K<sub>V</sub>I = K<sub>V</sub>I<sub>(TBL)</sub> / 65,536 | 0 ~ 16,383 |   I Gain    |
 | Velocity P Gain(78) | K<sub>V</sub>P  |  K<sub>V</sub>P = K<sub>V</sub>P<sub>(TBL)</sub> / 128   | 0 ~ 16,383 |   P Gain    |
-
 
 Below figure is a block diagram describing the velocity controller in Velocity Control Mode. When the instruction transmitted from the user is received by DYNAMIXEL, it takes following steps until driving the horn.
 1. An Instruction from the user is transmitted via DYNAMIXEL bus, then registered to [Goal Velocity(104)].

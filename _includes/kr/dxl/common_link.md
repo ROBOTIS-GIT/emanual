@@ -4,17 +4,16 @@
 [Torque Enable(24)]: #torque-enable
 
 <!-- DXL-X -->
-
 [Return Delay time(5)]: #return-delay-time-5
 [ID(7)]: #id7
 [Baud Rate(8)]: #baud-rate8
 [Return Delay time(9)]: #return-delay-time-9
-[Drive Mode(10)]: #drive-mode
 [Operating Mode(11)]: #operating-mode11
 [Homing Offset(13)]: #homing-offset13
 [Protocol Type(13)]: #protocol-type13
 [Max Torque(14)]: #max-torque-14
 [Homing Offset(20)]: #homing-offset20
+[Moving Threshold(24)]: #moving-threshold24
 [Acceleration Limit(26)]: #acceleration-limit26
 [Goal Position(30)]: #goal-position-30
 [Torque Limit(34)]: #torque-limit-34
@@ -35,6 +34,7 @@
 [Profile Acceleration(108)]: #profile-acceleration108
 [Profile Velocity(112)]: #profile-velocity112
 [Goal Position(116)]: #goal-position116
+[Moving(122)]: #moving122
 [Present PWM(124)]: #present-pwm124
 [Present Current(126)]: #present-current126
 [Present load(126)]: #present-load126
@@ -66,3 +66,4 @@
 [케이블 호환성]: /docs/kr/popup/cable_compatibility/
 [Protocol 1.0]: /docs/kr/dxl/protocol1/#status-packet
 [Protocol 2.0]: /docs/kr/dxl/protocol2/#status-packet
+[Profile](#profile)

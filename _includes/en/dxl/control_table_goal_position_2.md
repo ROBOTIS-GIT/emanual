@@ -1,4 +1,4 @@
-Desired position can be set with Goal Position(116). From the front view of DYNAMIXEL, CCW is an increasing direction whereas CW is a decreasing direction. The way to reaching Goal Position(116) is differ by 4 Profiles provided by DYNAMIXEL. Please refer to the [Profile Velocity(112)](#goal-velocity112) for more details.
+The Goal Position(116) sets desired position.  From the front view of DYNAMIXEL, CCW is an increasing direction, whereas CW is a decreasing direction. The way to reaching the Goal Position(116) differs by 4 Profiles provided by DYNAMIXEL. See the [What is the Profile] for more details.
 
 ![](/assets/images/dxl/x/dxl_goal_position.jpg)
 
@@ -12,10 +12,13 @@ Desired position can be set with Goal Position(116). From the front view of DYNA
 | :---: | :---: |
 |0.088&deg;/Value| 1[rev] : 0 ~ 4,095 |
 
-**NOTE** : Profile Velocity(112) and [Profile Acceleration(108)] are applied in below cases:  
-In Position Control Mode, Profile Velocity(112) and [Profile Acceleration(108)] are used to create a new profile when Goal Position(116) is updated.  
-In Velocity Control Mode, [Profile Acceleration(108)] is used to create a new profile when Goal Velocity(104) is updated.
-{: .notice}
+
+{% capture notice_01 %}
+**NOTE** : The [Profile Velocity(112)](#profile-velocity112) and the [Profile Acceleration(108)](#profile-acceleration108) are applied in below cases.
+- When the [Operating Mode(11)](#operating-mode11) is **Position Control Mode**, the [Profile Velocity(112)](#profile-velocity112) and the [Profile Acceleration(108)](#profile-acceleration108) are used to create a new profile if the [Goal Position(116)](#goal-position116) is updated.  
+- When the [Operating Mode(11)](#operating-mode11) is **Velocity Control Mode**, the [Profile Acceleration(108)](#profile-acceleration108) is used to create a new profile if [Goal Velocity(104)](#goal-velocity104) is updated.
+{% endcapture %}
+<div class="notice">{{ notice_01 | markdownify }}</div>
 
 **NOTE** : When turning off the power supply or changing Operation Mode on Extended Position Control Mode, the value of Present Position is reset to the absolute position value of single turn .
 {: .notice}

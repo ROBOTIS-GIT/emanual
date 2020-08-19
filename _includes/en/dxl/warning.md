@@ -1,3 +1,10 @@
+
+
+{% if page.product_group== 'xl330' %}
+**NOTE**: Though the communication bus of XL330 series are 3.3 V TTL logic level unlike other DYNAMIXELs, they can be compatible with 5V TTL logic level. 
+{: .notice}
+{% endif %}
+
 {% capture dxl_danger %}  
 ![](/assets/images/icon_warning.png)  
 **DANGER**  
@@ -44,7 +51,7 @@
 - Do not disassemble or modify product.
 - Do not drop or apply strong shock to product.
 {% if page.product_group== 'xl330' %}
-- For a stable power supply, it is recommended using a ROBOTIS controller, or [LB-041 battery](http://en.robotis.com/shop_en/item.php?it_id=903-0220-001). 
+- To ensure a stable power supply, it is recommended using a ROBOTIS controller, or [LB-041 battery](http://en.robotis.com/shop_en/item.php?it_id=903-0220-001). 
 - Do not connect or disconnect DYNAMIXEL when power is being supplied.
 {% else %}
 {% endif %}

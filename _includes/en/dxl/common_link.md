@@ -13,6 +13,7 @@
 [Protocol Type(13)]: #protocol-type13
 [Max Torque(14)]: #max-torque-14
 [Homing Offset(20)]: #homing-offset20
+[Moving Threshold(24)]: #moving-threshold24
 [Acceleration Limit(26)]: #acceleration-limit26
 [Goal Position(30)]: #goal-position-30
 [Torque Limit(34)]: #torque-limit-34
@@ -61,7 +62,9 @@
 [Present Position(611)]: #present-position611
 
 <!--Common Links -->
+
 [Hardware Error Bit(0x80)]: /docs/en/dxl/protocol2/#error 
 [Harness Compatibility]: /docs/en/popup/cable_compatibility/
 [Protocol 1.0]: /docs/en/dxl/protocol1/#status-packet
 [Protocol 2.0]: /docs/en/dxl/protocol2/#status-packet
+[What is the Profile]: #what-is-the-profile

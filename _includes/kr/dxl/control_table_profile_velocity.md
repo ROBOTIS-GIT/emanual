@@ -1,6 +1,7 @@
 [Drive Mode(10)]에서 Velocity-based Profile이 선택된 경우, Profile Velocity(112)는 **Profile의 최대 속도를 설정**합니다.  
 [Drive Mode(10)]에서 Time-based Profile이 선택된 경우, Profile Velocity(112)는 **Profile의 총 시간(도달시간)을 설정**합니다.  
 Profile Velocity(112)는 **위치 제어** 모드와 **확장 위치 제어** 모드에서만 적용됩니다.  
+자세한 사항은 [Profile]에서 확인하세요.
 
 **참고** : 속도 제어 모드에서는 Profile Velocity(112)는 사용하지 않습니다. ([Profile Acceleration(108)]만 적용)
 {: .notice}
@@ -23,6 +24,9 @@ Profile Velocity(112)는 **위치 제어** 모드와 **확장 위치 제어** �
 {: .notice}
 
 {% endif %}
+
+
+<!--
 
 Profile이란 모터 구동 시 급격하게 변하는 속도와 가속도를 조절함으로써 진동, 소음 및 모터의 부하를 줄이는 가감속 제어 방법입니다.  
 일반적으로 속도에 근거하여 가감속을 제어하기 때문에 Velocity Profile이라고 불립니다.  
@@ -77,6 +81,8 @@ Velocity Override 기능은 동일하게 동작합니다.
 <div class="notice">
   {{ group_notice_04 | markdownify }}
 </div>
+
+-->
 
 [Moving Status(123)]: #moving-status123
 [Drive Mode(10)]: #drive-mode10

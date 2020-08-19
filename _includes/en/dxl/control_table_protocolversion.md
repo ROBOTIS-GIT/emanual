@@ -7,12 +7,12 @@ The following table lists available protocol types compatible with DYNAMIXEL for
 
 Select a desired DYNAMIXEL protocol type according to your application.
 
-|   Value    |              Protocol Type              |                           Compatible DYNAMIXEL                            |
-|:----------:|:---------------------------------------:|:-------------------------------------------------------------------------:|
-| 2(default) | [DYNAMIXEL Protocol 2.0](#dynamixel-20) |                 [Protocol Compatibility table]{: .popup}                  |
-|     20     |         [S.BUS](#sbus-protocol)         | Protocol controlling RC servos commonly used by Futaba and FrSky products |
-|     21     |         [iBUS](#ibus-protocol)          |          Protocol controlling RC servos used by FlySKy products           |
-|     22     |       [RC-PWM](#rc-pwm-protocol)        |                       PWM signal used by RC servos                        |
+|   Value    |                  Protocol Type                   |                           Compatible DYNAMIXEL                            |
+|:----------:|:------------------------------------------------:|:-------------------------------------------------------------------------:|
+| 2(default) | [DYNAMIXEL Protocol 2.0](#dynamixel-protocol-20) |                 [Protocol Compatibility table]{: .popup}                  |
+|     20     |             [S.BUS](#sbus-protocol)              | Protocol controlling RC servos commonly used by Futaba and FrSky products |
+|     21     |              [iBUS](#ibus-protocol)              |          Protocol controlling RC servos used by FlySKy products           |
+|     22     |            [RC-PWM](#rc-pwm-protocol)            |                       PWM signal used by RC servos                        |
 
 {% capture protocol_note_01 %}
 **NOTE**
@@ -35,10 +35,7 @@ The S.Bus Protocol is a communication protocol commonly used by Futaba and FrSky
 
 <img src="/assets/images/dxl/x/xl330_temp/protocol_s_bus_graph.png" width="1100">
 
-**참고**: 속도제어 모드에서 최대 속도는 [Velocity Limit(44)](#velocity-limit44) 값으로, 움직이지 않는 범위([Goal Velocity(104)](#goal-velocity104)가 0인 범위)는 [Moving Threshold(24)](#moving-threshold24) 값으로 설정할 수 있습니다.
-{: .notice}
-
-**NOTE**: The maximum speed at the Velocity Control Mode relies on its [Velocity Limit(44)]. By configuring [Moving Threshold(24)](#moving-threshold24), it is possible to set a motionless point, where The [Goal Velocity(104)] is 0.
+**NOTE**: The maximum speed at the Velocity Control Mode relies on its [Velocity Limit(44)]. By configuring [Moving Threshold(24)], it is possible to set a motionless point, where The [Goal Velocity(104)] is 0.
 {: .notice}
 
 #### [iBUS Protocol](#ibus-protocol)
@@ -51,10 +48,7 @@ The iBUS Protocol is a communication protocol commonly used by FrSky RC servo pr
 
 <img src="/assets/images/dxl/x/xl330_temp/protocol_ibus_graph.png" width="1100">
 
-**참고**: 속도제어 모드에서는 최대 속도는 [Velocity Limit(44)](#velocity-limit44) 값으로, 움직이지 않는 범위(Goal Velocity가 0인 범위)는 [Moving Threshold(24)](#moving-threshold24) 값으로 설정할 수 있습니다.
-{: .notice}
-
-**NOTE**: The maximum speed at the Velocity Control Mode relies on its [Velocity Limit(44)]. By configuring [Moving Threshold(24)](#moving-threshold24), it is possible to set a motionless point, where The [Goal Velocity(104)] is 0.
+**NOTE**: The maximum speed at the Velocity Control Mode relies on its [Velocity Limit(44)]. By configuring [Moving Threshold(24)], it is possible to set a motionless point, where The [Goal Velocity(104)] is 0.
 {: .notice}
 
 #### [RC-PWM Protocol](#rc-pwm-protocol)
@@ -68,10 +62,7 @@ The RC-PWM Protocol is a PWM (Pulse Width Modulation) signal generally used by R
 
 <img src="/assets/images/dxl/x/xl330_temp/protocl_rc_pwm_graph.png" width="1100">
 
-**참고**: 속도제어 모드에서는 최대 속도는 [Velocity Limit(44)](#velocity-limit44) 값으로, 움직이지 않는 범위(Goal Velocity가 0인 범위)는 [Moving Threshold(24)](#moving-threshold24) 값으로 설정할 수 있습니다.
-{: .notice}
-
-**NOTE**: The maximum speed at the Velocity Control Mode relies on its [Velocity Limit(44)]. By configuring [Moving Threshold(24)](#moving-threshold24), it is possible to set a motionless point, where The [Goal Velocity(104)] is 0.
+**NOTE**: The maximum speed at the Velocity Control Mode relies on its [Velocity Limit(44)]. By configuring [Moving Threshold(24)], it is possible to set a motionless point, where The [Goal Velocity(104)] is 0.
 {: .notice}
 
 {% else %}
@@ -86,7 +77,7 @@ It is recommended to use an identical protocol type for multiple DYNAMIXEL.
 | 2(default) |      2.0      |         MX-28/64/106 with Firmware v39 or above, X Series, PRO Series         |
 
 
-**WARNING** : In order to change the Protocol Type to Protocol 1.0, please use [DYNAMIXEL Wizard 2.0] as R+ Manager 2.0 does not support Protocol 1.0.
+**WARNING** : To change the Protocol 2.0 to Protocol 1.0, use the [DYNAMIXEL Wizard 2.0] as R+ Manager 2.0 is not compatible with the Protocol 1.0 products.
 {: .notice--warning}
 
 **NOTE** : The protocol 2.0 is greatly enhanced from the protocol 1.0. Accessing some of the Control Table area might be denied if protocol 1.0 is selected. This manual complies with protocol 2.0. Please refer to the [Protocol 1.0] and [Protocol 2.0] of e-Manual for more details about the protocol.

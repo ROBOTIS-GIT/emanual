@@ -1,5 +1,7 @@
-This one byte data provides additional information about the movement.  
-Following Error(0x08) and In-Position(0x01) are available under Position Control Mode, Extended Position Control Mode{% if page.product_group!='dxl_xl430' %}, Current-based Position Control Mode{% else %}{% endif %}.
+The Moving Status(123), one byte data, provides additional information about the movement.  
+Following Error(0x08) and In-Position(0x01) are available under **Position Control Mode**, **Extended Position Control Mode**{% if page.product_group!='dxl_xl430' %}, **Current-based Position Control Mode**{% else %}{% endif %}.
+
+For more details about the mode, see the [Operating Mode(11)].
 
 |      Bit       |        Value         |   Information    | Description                                                                                                                |
 |:--------------:|:--------------------:|:----------------:|:---------------------------------------------------------------------------------------------------------------------------|
@@ -11,7 +13,7 @@ Following Error(0x08) and In-Position(0x01) are available under Position Control
 |     Bit 1      |        0 or 1        | Profile Ongoing  | Profile is in progress with [Goal Position(116)](#goal-position116) instruction<br>0 : Not in progress<br>1 : In progress  |
 |     Bit 0      |        0 or 1        |   In-Position    | DYNAMIXEL has arrived to the desired position<br>0 : Not arrived<br>1 : Arrived                                            |
 
-**NOTE** : Triangular velocity profile is configured when Rectangular velocity profile cannot reach to the [Profile Velocity(112)](#profile-verlocity112).
+**NOTE** : The Triangular velocity profile is configured when Rectangular velocity profile cannot reach to the [Profile Velocity(112)](#profile-verlocity112).
 {: .notice}
 
 **NOTE** : In-Position bit will be set when the positional deviation is smaller than a predefined value under Position related control modes.

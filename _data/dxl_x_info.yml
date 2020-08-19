@@ -11,7 +11,7 @@ common_x_specs:
   weight_330:         &weight_330     "18 [g]"
   weight_430:         &weight_430     "82 [g]"
   weight_540:         &weight_540     "165 [g]"
-  dimension_330:      &dimension_330  "20.0 x 34.0 x 25.0 [mm]"
+  dimension_330:      &dimension_330  "20.0 x 34.0 x 26.0 [mm]"
   dimension_430:      &dimension_430  "28.5 x 46.5 x 34 [mm]"
   dimension_540:      &dimension_540  "33.5 x 58.5 x 44 [mm]"
   radialload:         &radialload     "40 [N] (혼으로부터 10 [mm])"

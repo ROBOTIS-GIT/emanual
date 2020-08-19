@@ -3519,6 +3519,10 @@ mx-28-2:
     url: /dxl/mx/mx-28-2/#reference
     urlkr: /dxl/mx/mx-28-2/#참고자료
     children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/mx/mx-28-2/#what-is-the-profile
+        urlkr: /dxl/mx/mx-28-2/#profile    
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/mx/mx-28-2/#certifications
@@ -3743,6 +3747,10 @@ mx-64-2:
     url: /dxl/mx/mx-64-2/#reference
     urlkr: /dxl/mx/mx-64-2/#참고자료
     children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/mx/mx-64-2/#what-is-the-profile
+        urlkr: /dxl/mx/mx-64-2/#profile      
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/mx/mx-64-2/#certifications
@@ -3971,6 +3979,10 @@ mx-106-2:
     url: /dxl/mx/mx-106-2/#reference
     urlkr: /dxl/mx/mx-106-2/#참고자료
     children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/mx/mx-106-2/#what-is-the-profile
+        urlkr: /dxl/mx/mx-106-2/#profile    
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/mx/mx-106-2/#certifications
@@ -3985,7 +3997,6 @@ mx-106-2:
         urlkr: /dxl/mx/mx-106-2/#도면
       - title: "Communication Circuit"
         url: /dxl/mx/mx-106-2/#communication-circuit
-
 
 #X-Series Main sidebar
 dxl_x_main:
@@ -4234,6 +4245,10 @@ xh430-v210:
     url: /dxl/x/xh430-v210/#reference
     urlkr: /dxl/x/xh430-v210/#참고자료
     children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/x/xh430-v210/#what-is-the-profile
+        urlkr: /dxl/x/xh430-v210/#profile
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/xh430-v210/#certifications
@@ -4470,6 +4485,10 @@ xh430-v350:
     url: /dxl/x/xh430-v350/#reference
     urlkr: /dxl/x/xh430-v350/#참고자료
     children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/x/xh430-v350/#what-is-the-profile
+        urlkr: /dxl/x/xh430-v350/#profile      
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/xh430-v350/#certifications
@@ -4706,6 +4725,10 @@ xh430-w210:
     url: /dxl/x/xh430-w210/#reference
     urlkr: /dxl/x/xh430-w210/#참고자료
     children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/x/xh430-w210/#what-is-the-profile
+        urlkr: /dxl/x/xh430-w210/#profile      
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/xh430-w210/#certifications
@@ -4942,6 +4965,10 @@ xh430-w350:
     url: /dxl/x/xh430-w350/#reference
     urlkr: /dxl/x/xh430-w350/#참고자료
     children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/x/xh430-w350/#what-is-the-profile
+        urlkr: /dxl/x/xh430-w350/#profile      
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/xh430-w350/#certifications
@@ -5209,11 +5236,19 @@ xl330-m077:
       - title: "Indirect Data"
         titlekr: "Indirect Data"
         url: /dxl/x/xl330-m077/#indirect-data
+- title: "How to Assemble"
+  titlekr: "조립 예시"
+  url: /dxl/x/xl330-m288/#how-to-assemble
+  urlkr: /dxl/x/xl330-m288/#조립-예시
 - title: "Reference"
   titlekr: "참고자료"
   url: /dxl/x/xl330-m077/#reference
   urlkr: /dxl/x/xl330-m077/#참고자료
   children:
+    - title: "What is the Profile"
+      titlekr: "Profile"
+      url: /dxl/x/xl330-m077/#what-is-the-profile
+      urlkr: /dxl/x/xl330-m077/#profile
     - title: "Certifications"
       titlekr: "인증 획득"
       url: /dxl/x/xl330-m077/#certifications
@@ -5418,11 +5453,19 @@ xl330-m288:
       - title: "Indirect Data"
         titlekr: "Indirect Data"
         url: /dxl/x/xl330-m288/#indirect-data
+- title: "How to Assemble"
+  titlekr: "조립하 예시"
+  url: /dxl/x/xl330-m288/#how-to-assemble
+  urlkr: /dxl/x/xl330-m288/#조립-예시
 - title: "Reference"
   titlekr: "참고자료"
   url: /dxl/x/xl330-m288/#reference
   urlkr: /dxl/x/xl330-m288/#참고자료
   children:
+    - title: "What is the Profile"
+      titlekr: "Profile"
+      url: /dxl/x/xl330-m288/#what-is-the-profile
+      urlkr: /dxl/x/xl330-m288/#profile
     - title: "Certifications"
       titlekr: "인증 획득"
       url: /dxl/x/xl330-m288/#certifications
@@ -5644,6 +5687,10 @@ xl430-w250:
     url: /dxl/x/xl430-w250/#reference
     urlkr: /dxl/x/xl430-w250/#참고자료
     children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/x/xl430-w250/#what-is-the-profile
+        urlkr: /dxl/x/xl430-w250/#profile      
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/xl430-w250/#certifications
@@ -5874,6 +5921,10 @@ xc430-w150:
     url: /dxl/x/xc430-w150/#reference
     urlkr: /dxl/x/xc430-w150/#참고자료
     children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/x/xc430-w150/#what-is-the-profile
+        urlkr: /dxl/x/xc430-w150/#profile      
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/xc430-w150/#certifications
@@ -6104,6 +6155,10 @@ xc430-w240:
     url: /dxl/x/xc430-w240/#reference
     urlkr: /dxl/x/xc430-w240/#참고자료
     children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/x/xc430-w240/#what-is-the-profile
+        urlkr: /dxl/x/xc430-w240/#profile      
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/xc430-w240/#certifications
@@ -6325,6 +6380,10 @@ xc430-w240:
     url: /dxl/x/2xl430-w250/#reference
     urlkr: /dxl/x/2xl430-w250/#참고자료
     children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/x/2xl430-w250/#what-is-the-profile
+        urlkr: /dxl/x/2xl430-w250/#profile      
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/2xl430-w250/#certifications
@@ -6546,6 +6605,10 @@ xc430-w240:
     url: /dxl/x/2xc430-w250/#reference
     urlkr: /dxl/x/2xc430-w250/#참고자료
     children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/x/2xc430-w250/#what-is-the-profile
+        urlkr: /dxl/x/2xc430-w250/#profile      
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/2xc430-w250/#certifications
@@ -6783,6 +6846,10 @@ xm430-w210:
     url: /dxl/x/xm430-w210/#reference
     urlkr: /dxl/x/xm430-w210/#참고자료
     children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/x/xm430-w210/#what-is-the-profile
+        urlkr: /dxl/x/xm430-w210/#profile      
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/xm430-w210/#certifications
@@ -7019,6 +7086,10 @@ xm430-w350:
     url: /dxl/x/xm430-w350/#reference
     urlkr: /dxl/x/xm430-w350/#참고자료
     children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/x/xm430-w350/#what-is-the-profile
+        urlkr: /dxl/x/xm430-w350/#profile      
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/xm430-w350/#certifications
@@ -7261,6 +7332,10 @@ xm540-w150:
     url: /dxl/x/xm540-w150/#reference
     urlkr: /dxl/x/xm540-w150/#참고자료
     children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/x/xm540-w150/#what-is-the-profile
+        urlkr: /dxl/x/xm540-w150/#profile      
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/xm540-w150/#certifications
@@ -7503,6 +7578,10 @@ xm540-w270:
     url: /dxl/x/xm540-w270/#reference
     urlkr: /dxl/x/xm540-w270/#참고자료
     children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/x/xm540-w270/#what-is-the-profile
+        urlkr: /dxl/x/xm540-w270/#profile      
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/xm540-w270/#certifications
@@ -7732,6 +7811,10 @@ xw540-t140:
     url: /dxl/x/xw540-t140/#reference
     urlkr: /dxl/x/xw540-t140/#참고자료
     children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/x/xw540-t140/#what-is-the-profile
+        urlkr: /dxl/x/xw540-t140/#profile
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/xw540-t140/#certifications
@@ -7965,6 +8048,10 @@ xw540-t260:
     url: /dxl/x/xw540-t260/#reference
     urlkr: /dxl/x/xw540-t260/#참고자료
     children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/x/xw540-t260/#what-is-the-profile
+        urlkr: /dxl/x/xw540-t260/#profile      
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/xw540-t260/#certifications
@@ -8211,6 +8298,10 @@ xh540-w150:
     url: /dxl/x/xh540-w150/#reference
     urlkr: /dxl/x/xh540-w150/#참고자료
     children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/x/xh540-w150/#what-is-the-profile
+        urlkr: /dxl/x/xh540-w150/#profile      
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/xh540-w150/#certifications
@@ -8453,6 +8544,10 @@ xh540-w270:
     url: /dxl/x/xh540-w270/#reference
     urlkr: /dxl/x/xh540-w270/#참고자료
     children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/x/xh540-w270/#what-is-the-profile
+        urlkr: /dxl/x/xh540-w270/#profile      
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/xh540-w270/#certifications
@@ -8695,6 +8790,10 @@ xh540-v150:
     url: /dxl/x/xh540-v150/#reference
     urlkr: /dxl/x/xh540-v150/#참고자료
     children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/x/xh540-v150/#what-is-the-profile
+        urlkr: /dxl/x/xh540-v150/#profile      
       - title: "Quick Start"
         titlekr: "퀵스타트"
         url: /dxl/x/xh540-v150/#quick-start
@@ -8933,6 +9032,10 @@ xh540-v270:
     url: /dxl/x/xh540-v270/#reference
     urlkr: /dxl/x/xh540-v270/#참고자료
     children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/x/xh540-v270/#what-is-the-profile
+        urlkr: /dxl/x/xh540-v270/#profile      
       - title: "Quick Start"
         titlekr: "퀵스타트"
         url: /dxl/x/xh540-v270/#quick-start

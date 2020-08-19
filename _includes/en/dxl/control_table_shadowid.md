@@ -1,12 +1,12 @@
-It assigns a secondary ID to the DYNAMIXEL.  
+The Secondary(Shadow) ID(12) assigns a secondary ID to the DYNAMIXEL.  
 The Secondary ID(12) can be shared to group between DYNAMIXELs and to synchronize their movement, unlike [ID(7)] which should not be overlapped. 
-Be aware of differences between Secondary ID(12) and ID(7) reading the following.
-- Multiple DYNAMIXELs can have the same ID and be grouped under the same Secondary ID(12). 
-- ID(7) has a greater priority than the Secondary ID(12). If two items (Secondary ID(12) and ID(7)) are the same each other, ID(7) should be applied first.
+Be aware of differences between the Secondary ID(12) and ID(7) by reading the following.
+- Under the same Secondary ID(12), multiple DYNAMIXELs can be grouped. 
+- The ID(7) has a greater priority than the Secondary ID(12). If two items (the Secondary ID(12) and ID(7)) are the same each other, the ID(7) should be applied first.
 - [The EEPROM area](#control-table-of-eeprom-area) of [the Control Table](#control-table) cannot be modified using Secondary ID(12). 
 - [The RAM area](#control-table-of-ram-area) can be modified using the Secondary ID(12).
-- If Instruction Packet ID is the same as Secondary ID(12), a Status Packet will not be returned.
-- If the value of Secondary ID(12) is 253 or higher, the Secondary ID function is deactivated.
+- If Instruction Packet ID is the same as the Secondary ID(12), the Status Packet will not be returned.
+- If the value of the Secondary ID(12) is 253 or higher, the Secondary ID function will be deactivated.
 
 |  Values   |                      Description                      |
 |:---------:|:-----------------------------------------------------:|
