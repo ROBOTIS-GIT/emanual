@@ -1,1 +1,1 @@
-This value indicates internal temperature of DYNAMIXEL. For more details, please refer to the [Temperature Limit(31)](#temperature-limit31).
+The Present Temperature(146) indicates internal temperature of DYNAMIXEL. For more details, see the [Temperature Limit(31)](#temperature-limit31).

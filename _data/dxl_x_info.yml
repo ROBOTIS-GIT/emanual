@@ -8,8 +8,10 @@ common_x_specs:
   mode:               &mode           "전류 제어 모드<br />속도 제어 모드<br />위치 제어 모드 (0 ~ 360 [&deg;])<br />확장 위치 제어 모드 (멀티턴)<br />전류기반 위치 제어 모드<br />PWM 제어 모드 (Voltage Control Mode)"
   mode_en:            &mode_en        "Current Control Mode<br />Velcoity Control Mode<br />Position Control Mode (0 ~ 360 [&deg;])<br />Extended Position Control Mode (Multi-turn)<br />Current-based Position Control Mode<br />PWM Control Mode (Voltage Control Mode)"
   motor:              &motor          "Coreless(Maxon)"
+  weight_330:         &weight_330     "18 [g]"
   weight_430:         &weight_430     "82 [g]"
   weight_540:         &weight_540     "165 [g]"
+  dimension_330:      &dimension_330  "20.0 x 34.0 x 26.0 [mm]"
   dimension_430:      &dimension_430  "28.5 x 46.5 x 34 [mm]"
   dimension_540:      &dimension_540  "33.5 x 58.5 x 44 [mm]"
   radialload:         &radialload     "40 [N] (혼으로부터 10 [mm])"
@@ -18,6 +20,8 @@ common_x_specs:
   temperature:        &temperature    "-5 ~ +80 [&deg;C]"
   voltage_12:         &voltage_12     "10.0 ~ 14.8 [V] (**권장 전압 : 12.0 [V]**)"
   voltage_12_en:      &voltage_12_en  "10.0 ~ 14.8 [V] (**Recommended : 12.0 [V]**)"
+  voltage_05_en:      &voltage_05_en  "3.7 ~ 6.0 [V] (**Recommended : 5.0 [V]**)"
+  voltage_05:         &voltage_05     "3.7 ~ 6.0 [V] (**권장 전압 : 5.0 [V]**)"
   voltage_24:         &voltage_24     "24.0 [V] (**권장 전압 : 24.0 [V]**)"
   voltage_24_en:      &voltage_24_en  "24.0 [V] (**Recommended : 24.0 [V]**)"
   command:            &command        "Digital Packet"
@@ -25,7 +29,8 @@ common_x_specs:
   ttl:                &ttl            "TTL Half Duplex Asynchronous Serial Communication<br />(8bit, 1stop, No Parity)"
   rs485_ttl:          &rs485_ttl      "TTL Half Duplex Asynchronous Serial Communication with 8bit, 1stop, No Parity<br />RS485 Asynchronous Serial Communication with 8bit, 1stop, No Parity"
   rs485_connection:   &rs485_connection "RS485 Multidrop Bus"
-  ttl_connection:     &ttl_connection   "TTL Multidrop Bus"
+  ttl_connection_5v:  &ttl_connection_5v   "TTL Multidrop Bus (5V Logic)"
+  ttl_connection_3v3: &ttl_connection_3v3  "TTL Multidrop Bus (3.3V Logic)"
   rs485_ttl_conn:     &rs485_ttl_conn   "RS485 / TTL Multidrop Bus"
   id:                 &id             "253 ID (0 ~ 252)"
   feedback:           &feedback       "Position, Velocity, Current, Realtime tick, Trajectory, Temperature, Input Voltage, etc"
@@ -35,6 +40,64 @@ common_x_specs:
 
 xl320:
   temperature:        "-5 ~ +65 [&deg;C]"
+
+xl330-m077:
+  mcu:                "ARM CORTEX-M0+ (64 [MHz], 32Bit)"
+  encoder:            "Contactless absolute encoder (12Bit, 360 [&deg;])<br />Maker : ams(www.ams.com), Part No : AS5601"
+  motor:              "Cored"
+  baudrate:           "9,600 [bps] ~ 4 [Mbps]"
+  control:            *control
+  resolution:         *resolution
+  backlash:           "N/A"
+  mode:               *mode
+  mode_en:            *mode_en
+  weight:             *weight_330
+  dimensions:         *dimension_330
+  gearratio:          "288.4 : 1"
+  noloadspeed:        "280 [rev/min] (at 3.7 [V]) <br /> **373 [rev/min] (at 5.0 [V])** <br /> N/A [rev/min]  (at 6.0 [V])"
+  stalltorque:        "0.077 [N.m] (at 3.7 [V], 0.96 [A]) <br /> **0.088 [Nm] (at 5.0 [V], 1.09 [A])** <br /> N/A [N.m] (at 6.0 [V], N/A [A])"
+  radialload:         "N/A"
+  radialload_en:      "N/A"
+  axialload:          "N/A"
+  temperature:        "-5 ~ +60 [&deg;C]"
+  voltage:            *voltage_05
+  voltage_en:         *voltage_05_en
+  command:            *command
+  protocoltype:       *ttl
+  physicalconnection: *ttl_connection_3v3
+  id:                 *id
+  feedback:           *feedback
+  material:           "Engineering Plastic"
+  standbycurrent:     15 [mA]
+
+xl330-m288:
+  mcu:                "ARM CORTEX-M0+ (64 [MHz], 32Bit)"
+  encoder:            "Contactless absolute encoder (12Bit, 360 [&deg;])<br />Maker : ams(www.ams.com), Part No : AS5601"
+  motor:              "Cored"
+  baudrate:           "9,600 [bps] ~ 4 [Mbps]"
+  control:            *control
+  resolution:         *resolution
+  backlash:           "N/A"
+  mode:               *mode
+  mode_en:            *mode_en
+  weight:             *weight_330
+  dimensions:         *dimension_330
+  gearratio:          "288.4 : 1"
+  noloadspeed:        "77 [rev/min] (at 3.7 [V]) <br /> **105 [rev/min] (at 5.0 [V])** <br /> N/A [rev/min] (at 6.0 [V])"
+  stalltorque:        "0.29 [N.m] (at 3.7 [V], 0.97 [A]) <br /> **0.33 [Nm] (at 5.0 [V], 1.13 [A])** <br /> N/A [N.m] (at 6.0 [V], N/A [A])"
+  radialload:         "N/A"
+  radialload_en:      "N/A"
+  axialload:          "N/A"
+  temperature:        "-5 ~ +60 [&deg;C]"
+  voltage:            *voltage_05
+  voltage_en:         *voltage_05_en
+  command:            *command
+  protocoltype:       *ttl
+  physicalconnection: *ttl_connection_3v3
+  id:                 *id
+  feedback:           *feedback
+  material:           "Engineering Plastic"
+  standbycurrent:     15 [mA]
 
 xh430-v210:
   mcu:                *mcu
@@ -175,7 +238,7 @@ xl430-w250:
   voltage_en:         "6.5 ~ 12.0 [V] (**Recommended : 11.1 [V]**)"
   command:            *command
   protocoltype:       *ttl
-  physicalconnection: *ttl_connection
+  physicalconnection: *ttl_connection_5v
   id:                 *id
   feedback:           "Position, Velocity, Load, Realtime tick, Trajectory, Temperature, Input Voltage, etc"
   material:           "Engineering Plastic"
@@ -204,7 +267,7 @@ xl430-w250:
   voltage_en:         "6.5 ~ 12.0 [V] (**Recommended : 11.1 [V]**)"
   command:            *command
   protocoltype:       *ttl
-  physicalconnection: *ttl_connection
+  physicalconnection: *ttl_connection_5v_5v
   id:                 *id
   feedback:           "Position, Velocity, Load, Realtime tick, Trajectory, Temperature, Input Voltage, etc"
   material:           "Full Metal Gear <br />Engineering Plastic(Front, Middle, Back)"
@@ -262,7 +325,7 @@ xc430-w240:
   voltage_en:         "6.5 ~ 14.8 [V] (**Recommended : 12.0 [V]**)"
   command:            *command
   protocoltype:       *ttl
-  physicalconnection: *ttl_connection
+  physicalconnection: *ttl_connection_5v
   id:                 *id
   feedback:           "Position, Velocity, Load, Realtime tick, Trajectory, Temperature, Input Voltage, etc"
   material:           "Full Metal Gear <br />Engineering Plastic(Front, Middle, Back)"

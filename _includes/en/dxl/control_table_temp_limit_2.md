@@ -1,11 +1,10 @@
-This value limits operating temperature.  
-When the Present Temperature(146) that indicates internal temperature of DYNAMIXEL is greater than the Temperature Limit(31), the Over Heating Error Bit(0x04) and Hardware Error Bit(0x80) in the Hardware Error Status(70) will be set.  
-If Overheating Error Bit(0x04) is configured in the [Shutdown(63)], [Torque Enable(64)] is cleared to ‘0’ and Torque will be disabled.  
-For more details, please refer to the [Shutdown(63)] section.
+The Temperature Limit(31) limits operating temperature of the DYNAMIXEL.  
+When the [Present Temperature(146)](#present-temperature146) is greater than the Temperature Limit(31), the **Over Heating Error Bit(0x04)** and **Hardware Error Bit(0x80)** in the [Hardware Error Status(70)](hardware-error-status70) will be set. If Overheating Error Bit(0x04) is configured in the [Shutdown(63)], [Torque Enable(64)] is cleared to ‘0’ and DYNAMIXEL's torque will be disabled.  
+See the [Shutdown(63)] for more detailed information.
 
-|Unit|Value Range|Description|
-| :---: | :---: | :---: |
-|About 1&deg;|0 ~ 100|0 ~ 100&deg;|
+|     Unit     | Value Range | Description  |
+|:------------:|:-----------:|:------------:|
+| About 1&deg; |   0 ~ 100   | 0 ~ 100&deg; |
 
-**CAUTION** : Do not set the temperature higher than the default value. When the temperature alarm shutdown occurs, wait 20 minutes to cool the temperature before re-use. Keep using the product when the temperature is high can cause severe damage.
+**CAUTION** : Do not set this value higher than its default. In case that DYNAMIXEL encounters temperature warning alarm (Overheating Error Bit(0x04)), let it cool for 20 minutes or more. Otherwise, it may cause severe damage in operating.
 {: .notice--warning}

@@ -1,10 +1,12 @@
 Status Packet의 반환 방식을 결정합니다.
 
-| 값   | 응답하는 명령                          | 설명                           |
-| :--: | :------------------------------------- | :----------------------------- |
-| 0    | PING Instruction                       | 모든 명령에 대해 반환하지 않음 |
-| 1    | PING Instruction<br />READ Instruction | READ 명령에 대해서만 반환함    |
-| 2    | All Instructions                       | 모든 명령에 대해서 반환함      |
+| 값 |             응답하는 명령              |                     상세설명                      |
+|:--:|:--------------------------------------:|:-------------------------------------------------:|
+| 0  |            PING Instruction            | PING 명령을 제외한 모든 명령에 대해 반환하지 않음 |
+| 1  | PING Instruction<br />READ Instruction |        PING과 READ 명령에 대해서만 반환함         |
+| 2  |            All Instructions            |             모든 명령에 대해서 반환함             |
+
+
 
 **주의** : Status Return Level(516)은 Modbus-RTU 프로토콜에서 동작되지 않습니다.   
 {: .notice--warning}

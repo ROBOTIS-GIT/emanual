@@ -1,6 +1,12 @@
 
 ### Prerequisites
+{% if page.product_group=='xl330' %}
+- Power supply to DYNAMIXEL ([LB-041](http://en.robotis.com/shop_en/item.php?it_id=903-0220-001) or SMPS compatible with DYNAMIXEL)
+  - See [Compatibility Table]
+{% else %}
 - Power supply to DYNAMIXEL(12V SMPS / Controllers, compatible with DYNAMIXEL)
+  - See [Compatibility Table]
+{% endif %}
 - PC with Windows, Linux or MacOS.
 - Connection between PC and DYNAMIXEL ([U2D2], [USB2Dynamixel])
 - [Compatible Software with DYNAMIXEL](#compatible-software-with-dynamixel)
@@ -100,3 +106,4 @@ The following features are provided with DYNAMIXEL Wizard 2.0.
 [R+ Manager 2.0]: /docs/en/software/rplus2/manager/
 [DYNAMIXEL SDK]: /docs/en/software/dynamixel/dynamixel_sdk/overview/
 [DYNAMIXEL Workbench]: /docs/en/software/dynamixel/dynamixel_workbench/
+[Compatibility Table]: /docs/en/parts/controller/controller_compatibility/#compatibility-table/#compatibility-table

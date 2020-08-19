@@ -1,7 +1,13 @@
 
 ### 준비사항
-- 다이나믹셀 전원공급 장치(SMPS2Dynamixel 또는 다이나믹셀과 호환되는 제어기).
+
+{% if page.product_group=='xl330' %}
+- 다이나믹셀 전원공급 장치 (다이나믹셀과 호환되는 제어기 또는 [LB-041](https://www.robotis.com/model/search.php?sfl=wr_subject%7C%7Cwr_content&stx=LB-041) 또는 별도의 파워 서플라이)
   - [제어기 다이나믹셀 호환표](/docs/kr/parts/controller/controller_compatibility/#다이나믹셀-호환표)
+{% else %}
+- 다이나믹셀 전원공급 장치 (SMPS2Dynamixel 또는 다이나믹셀과 호환되는 제어기)
+  - [제어기 다이나믹셀 호환표](/docs/kr/parts/controller/controller_compatibility/#다이나믹셀-호환표)
+{% endif %}
 - OS가 설치된 PC.
 - PC와 다이나믹셀 연결장치 ([U2D2] 또는 [USB2Dynamixel])
 - [호환 소프트웨어](#호환-소프트웨어)
@@ -55,10 +61,16 @@
 제품을 연결하면 해당 제품을 최신버전으로 업데이트할 수 있으며, 컨트롤 테이블을 테스트해볼 수 있습니다.
 기존의 로보플러스 매니저1.0과 위자드1.0에서 제공하던 기능이 로보플러스 매니저 2.0에서 통합되었습니다.
 
+{% if page.product_group=='xl330' %}
+
+{% else %}
+
 {% capture warn_02 %}
 **주의**: 로보플러스 매니저 2.0은 프로토콜 1.0을 사용하는 다이나믹셀과 호환되지 않습니다. 다이나믹셀 위자드 2.0 사용시, 모든 다이나믹셀의 펌웨어 복구/업데이트, 컨트롤 테이블 변경이 가능합니다.  
 {% endcapture %}
 <div class="notice--warning">{{ warn_02 | markdownify }}</div>
+
+{% endif %}
 
 #### [다이나믹셀 위자드 2.0](#다이나믹셀-위자드-20)
 

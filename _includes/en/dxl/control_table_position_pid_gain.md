@@ -1,4 +1,4 @@
-These Gains are used in Position Control Mode and Extended Position Control Mode. Gains of DYNAMIXEL’s internal controller can be calculated from Gains of the Control Table as shown below. The constant in each equations include sampling time. Position P Gain of DYNAMIXEL’s internal controller is abbreviated to K<sub>P</sub>P and that of the Control Table is abbreviated to K<sub>P</sub>P<sub>(TBL)</sub>.
+These Gains are used in Position Control Mode and Extended Position Control Mode. Gains of DYNAMIXEL’s internal controller can be calculated from Gains of the Control Table as shown below. The constant in each equations includes sampling time. Position P Gain of DYNAMIXEL’s internal controller is abbreviated to K<sub>P</sub>P and that of the Control Table is abbreviated to K<sub>P</sub>P<sub>(TBL)</sub>.
 
 |                          |  Controller Gain  |                   Conversion Equations                   |   Range    | Description                   |
 |:------------------------:|:-----------------:|:--------------------------------------------------------:|:----------:|-------------------------------|
@@ -19,9 +19,10 @@ Below figure is a block diagram describing the position controller in Position C
 
 ![](/assets/images/dxl/position_controller_pid_gain.jpg)
 
-**NOTE** : In case of PWM Control Mode, both PID controller and Feedforward controller are deactivated while [Goal PWM(100)] value is directly controlling the motor through an Inverter. In this manner, users can directly control the supplying voltage to the motor.
-{: .notice}
-
-**NOTE** : K<sub>a</sub> is an Anti-windup Gain that cannot be modified by users.  
+{% capture pid_reference %}
+**NOTE:**
+- In case of PWM Control Mode, both PID controller and Feedforward controller are deactivated while [Goal PWM(100)](#goal-pwm100) value is directly controlling the motor through an inverter. In this manner, users can directly control the supplying voltage to the motor.
+- K<sub>a</sub> is an Anti-windup Gain that cannot be modified by users.  
 For more details about the PID controller and Feedforward controller, please refer to the [PID Controller](http://en.wikipedia.org/wiki/PID_controller) and [Feed Forward](https://en.wikipedia.org/wiki/Feed_forward_(control)).
-{: .notice}
+{% endcapture %}
+<div class="notice">{{ pid_reference | markdownify }}</div>

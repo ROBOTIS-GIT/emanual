@@ -88,6 +88,7 @@ Compatibility Key: O= Yes ; X= No ; * = User Action Required
 | Model       | Protocol 1.0            | Protocol 2.0 |
 |:------------|:------------------------|:-------------|
 | XL-320      | X                       | O            |
+| XL-330      | X                       | O            |
 | XL430-W250  | O* <br>(F/W address 13) | O            |
 | 2XL430-W250 | O* <br>(F/W address 13) | O            |
 

@@ -26,9 +26,6 @@ The structure of the instruction and status packet are different.
 ## Protocol 2.0
 [Protocol 2.0] is used with the most recently-released DYNAMIXEL series; the X-series and PRO series utilize [Protocol 2.0]. The control tables of DYNAMIXEL's using Protocol 2.0 are expanded to include PID (Proportional, Integral, Derivative) controls allowing for extremely precise and fine-tuned movements. In addition, [MX]-series DYNAMIXEL's may undergo firmware upgrade to utilize [Protocol 2.0].
 
-- X-series : XL, XM, XH
-- MX-series : MX-28/64/106
-
 Please refer to [Protocol 1.0] and [Protocol 2.0] description pages for more information.
 
 # Which DYNAMIXEL uses Protocol 1.0 and Protocol 2.0?

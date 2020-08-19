@@ -1,4 +1,5 @@
-Users can adjust the Home position by setting Home Offset(20). The Homing Offset value is added to the [Present Position(132)].  
+The Home Offset(20) adjusts the home position. The offest value is added to the [Present Position(132)].  
+
 **Present Position(132) = Actual Position + Homing Offset(20)**
 
 |        Unit         |                  Value Range                  |   Description    |
@@ -8,5 +9,5 @@ Users can adjust the Home position by setting Home Offset(20). The Homing Offset
 **NOTE** : In case of the Position Control Mode(Joint Mode) that rotates less than 360 degrees, any invalid Homing Offset(20) values will be ignored(valid range : -1,024 ~ 1,024).
 {: .notice}
 
-**NOTE** : In the case of Reverse Mode bit is set in Drive Mode(10), the sign of Homing Offset value will not be reversed.
+**NOTE** : In the case of Reverse Mode bit is set in [Drive Mode(10)](#drive-mode10), the sign of Homing Offset(20) value will not be reversed.
 {: .notice}
