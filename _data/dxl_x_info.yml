@@ -54,8 +54,8 @@ xl330-m077:
   weight:             *weight_330
   dimensions:         *dimension_330
   gearratio:          "288.4 : 1"
-  noloadspeed:        "280 [rev/min] (at 3.7 [V]) <br /> **373 [rev/min] (at 5.0 [V])** <br /> N/A [rev/min]  (at 6.0 [V])"
-  stalltorque:        "0.077 [N.m] (at 3.7 [V], 0.96 [A]) <br /> **0.088 [Nm] (at 5.0 [V], 1.09 [A])** <br /> N/A [N.m] (at 6.0 [V], N/A [A])"
+  noloadspeed:        "267 [rev/min] (at 3.7 [V]) <br /> **363 [rev/min] (at 5.0 [V])** <br /> 442 [rev/min] (at 6.0 [V])"
+  stalltorque:        "0.064 [N.m] (at 3.7 [V], 0.96 [A]) <br /> **0.089 [N.m] (at 5.0 [V], 1.28 [A])** <br /> 0.104 [N.m] (at 6.0 [V], 1.52 [A])"
   radialload:         "N/A"
   radialload_en:      "N/A"
   axialload:          "N/A"
@@ -69,7 +69,7 @@ xl330-m077:
   feedback:           *feedback
   material:           "Engineering Plastic"
   standbycurrent:     15 [mA]
-
+  
 xl330-m288:
   mcu:                "ARM CORTEX-M0+ (64 [MHz], 32Bit)"
   encoder:            "Contactless absolute encoder (12Bit, 360 [&deg;])<br />Maker : ams(www.ams.com), Part No : AS5601"
@@ -83,8 +83,8 @@ xl330-m288:
   weight:             *weight_330
   dimensions:         *dimension_330
   gearratio:          "288.4 : 1"
-  noloadspeed:        "77 [rev/min] (at 3.7 [V]) <br /> **105 [rev/min] (at 5.0 [V])** <br /> N/A [rev/min] (at 6.0 [V])"
-  stalltorque:        "0.29 [N.m] (at 3.7 [V], 0.97 [A]) <br /> **0.33 [Nm] (at 5.0 [V], 1.13 [A])** <br /> N/A [N.m] (at 6.0 [V], N/A [A])"
+  noloadspeed:        "76 [rev/min] (at 3.7 [V]) <br /> **104 [rev/min] (at 5.0 [V])** <br /> 125 [rev/min] (at 6.0 [V])"
+  stalltorque:        "0.28 [N.m] (at 3.7 [V], 0.96 [A]) <br /> **0.39 [N.m] (at 5.0 [V], 1.28 [A])** <br /> 0.44 [N.m] (at 6.0 [V], 1.52 [A])"
   radialload:         "N/A"
   radialload_en:      "N/A"
   axialload:          "N/A"
@@ -228,7 +228,7 @@ xl430-w250:
   weight:             "57.2 [g]"
   dimensions:         "28.5 x 46.5 x 34 [mm]"
   gearratio:          "258.5 : 1"
-  stalltorque:        "1.0 [N.m] (at 9.0 [V], 1.0 [A])<br />**1.4 [Nm] (at 11.1 [V], 1.3 [A])**<br />1.5 [Nm] (at 12.0 [V], 1.4 [A])"
+  stalltorque:        "1.0 [N.m] (at 9.0 [V], 1.0 [A])<br />**1.4 [N.m] (at 11.1 [V], 1.3 [A])**<br />1.5 [N.m] (at 12.0 [V], 1.4 [A])"
   noloadspeed:        "47 [rev/min] (at 9.0 [V])<br />**57 [rev/min] (at 11.1 [V])**<br />61 [rev/min] (at 12.0 [V])"
   radialload:         "N/A"
   radialload_en:      "N/A"
@@ -286,7 +286,7 @@ xc430-w240:
   weight:             "65 [g]"
   dimensions:         "28.5 x 46.5 x 34 [mm]"
   gearratio:          "245.22 : 1"
-  stalltorque:        "1.4 [N.m] (at 9.0 [V], 1.1 [A])<br />1.7 [N.m] (at 11.1 [V], 1.3 [A])<br />**1.9 [Nm] (at 12.0 [V], 1.4 [A])**"
+  stalltorque:        "1.4 [N.m] (at 9.0 [V], 1.1 [A])<br />1.7 [N.m] (at 11.1 [V], 1.3 [A])<br />**1.9 [N.m] (at 12.0 [V], 1.4 [A])**"
   noloadspeed:        "52 [rev/min] (at 9.0 [V])<br />65 [rev/min] (at 11.1 [V])<br />**70 [rev/min] (at 12.0 [V])**"
   radialload:         "N/A"
   radialload_en:      "N/A"
@@ -344,7 +344,7 @@ xc430-w150:
   weight:             "65 [g]"
   dimensions:         "28.5 x 46.5 x 34 [mm]"
   gearratio:          "159.59 : 1"
-  stalltorque:        "1.2 [N.m] (at 9.0 [V], 1.1 [A])<br />1.4 [N.m] (at 11.1 [V], 1.3 [A])<br />**1.6 [Nm] (at 12.0 [V], 1.4 [A])**"
+  stalltorque:        "1.2 [N.m] (at 9.0 [V], 1.1 [A])<br />1.4 [N.m] (at 11.1 [V], 1.3 [A])<br />**1.6 [N.m] (at 12.0 [V], 1.4 [A])**"
   noloadspeed:        "80 [rev/min] (at 9.0 [V])<br />99 [rev/min] (at 11.1 [V])<br />**106 [rev/min] (at 12.0 [V])**"
   radialload:         "N/A"
   radialload_en:      "N/A"
@@ -373,7 +373,7 @@ xm430-w210:
   weight:             *weight_430
   dimensions:         *dimension_430
   gearratio:          "212.6 : 1"
-  stalltorque:        "2.7 [N.m] (at 11.1 [V], 2.1 [A])<br />**3.0 [Nm] (at 12.0 [V], 2.3 [A])**<br />3.7 [Nm] (at 14.8 [V], 2.7 [A])"
+  stalltorque:        "2.7 [N.m] (at 11.1 [V], 2.1 [A])<br />**3.0 [N.m] (at 12.0 [V], 2.3 [A])**<br />3.7 [N.m] (at 14.8 [V], 2.7 [A])"
   noloadspeed:        "70 [rev/min] (at 11.1 [V])<br />**77 [rev/min] (at 12.0 [V])**<br />95 [rev/min] (at 14.8 [V])"
   radialload:         *radialload
   radialload_en:      *radialload_en
@@ -402,7 +402,7 @@ xm430-w350:
   weight:             *weight_430
   dimensions:         *dimension_430
   gearratio:          "353.5 : 1"
-  stalltorque:        "3.8 [N.m] (at 11.1 [V], 2.1 [A])<br />**4.1 [Nm] (at 12.0 [V], 2.3 [A])**<br />4.8 [Nm] (at 14.8 [V], 2.7 [A])"
+  stalltorque:        "3.8 [N.m] (at 11.1 [V], 2.1 [A])<br />**4.1 [N.m] (at 12.0 [V], 2.3 [A])**<br />4.8 [N.m] (at 14.8 [V], 2.7 [A])"
   noloadspeed:        "43 [rev/min] (at 11.1 [V])<br />**46 [rev/min] (at 12.0 [V])**<br />57 [rev/min] (at 14.8 [V])"
   radialload:         *radialload
   radialload_en:      *radialload_en
@@ -607,7 +607,7 @@ xm540-w150:
   weight:             *weight_540
   dimensions:         *dimension_540
   gearratio:          "152.3 : 1"
-  stalltorque:        "6.9 [N.m] (at 11.1 [V] 4.2 [A])<br />7.3 [Nm] (at 12.0 [V], 4.4 [A])<br />8.9 [Nm] (at 14.8 [V], 5.5 [A])"
+  stalltorque:        "6.9 [N.m] (at 11.1 [V] 4.2 [A])<br />7.3 [N.m] (at 12.0 [V], 4.4 [A])<br />8.9 [N.m] (at 14.8 [V], 5.5 [A])"
   noloadspeed:        "50 [rev/min] (at 11.1 [V])<br />53 [rev/min] (at 12.0 [V])<br />66 [rev/min] (at 14.8)"
   radialload:         *radialload
   radialload_en:      *radialload_en
@@ -636,7 +636,7 @@ xm540-w270:
   weight:             *weight_540
   dimensions:         *dimension_540
   gearratio:          "272.5 : 1"
-  stalltorque:        "10.0 [Nm] (at 11.1 [V], 4.2 [A])<br />**10.6 [Nm] (at 12.0 [V], 4.4 [A])**<br />12.9 [Nm] (at 14.8 [V], 5.5 [A])"
+  stalltorque:        "10.0 [N.m] (at 11.1 [V], 4.2 [A])<br />**10.6 [N.m] (at 12.0 [V], 4.4 [A])**<br />12.9 [N.m] (at 14.8 [V], 5.5 [A])"
   noloadspeed:        "28 [rev/min] (at 11.1 [V])<br />**30 [rev/min] (at 12.0 [V])**<br />37 [rev/min] (at 14.8 [V])"
   radialload:         *radialload
   radialload_en:      *radialload_en
