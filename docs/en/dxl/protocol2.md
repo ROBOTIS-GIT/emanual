@@ -52,6 +52,7 @@ The field that indicates the length of packet field.
   2. The Length has the size of Instruction, Parameters and CRC (Low / High bytes) fields
 
 - `Length = the number of Parameters + 3`
+- Status Packet includes 1 byte length ERROR data.
 
 ## [Instruction](#instruction)
 The field that defines the type of commands.
