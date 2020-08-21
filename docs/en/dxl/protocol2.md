@@ -361,7 +361,7 @@ Note that given examples use the following abbreviation to provide clear informa
 
 #### ID 1 Status Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  | CRC 1 | CRC 2 |
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | CRC 1 | CRC 2 |
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
 | 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1  | 0x0C  |
 
@@ -383,7 +383,7 @@ Note that given examples use the following abbreviation to provide clear informa
 
 #### ID 1 Status Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  | CRC 1 | CRC 2 |
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | CRC 1 | CRC 2 |
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
 | 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1  | 0x0C  |
 
@@ -415,7 +415,7 @@ Note that given examples use the following abbreviation to provide clear informa
 
 #### ID 1 Status Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  | CRC 1 | CRC 2 |
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | CRC 1 | CRC 2 |
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
 | 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1  | 0x0C  |
 
