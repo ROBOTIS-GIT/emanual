@@ -3,3 +3,6 @@ The ID is a unique value in the network to identify each DYNAMIXEL with an Instr
 
 **NOTE** : Please avoid using an identical ID for multiple DYNAMIXEL. You may face communication failure or may not be able to detect DYNAMIXEL with an identical ID.
 {: .notice}
+
+**NOTE** : If the Instruction Packet ID is set to the Broad Cast ID(0xFE), Status Packets will not be returned for READ and WRITE Instructions. For more details, please refer to the `Status Packet` section for [Protocol 1.0] or [Protocol 2.0].
+{: .notice}

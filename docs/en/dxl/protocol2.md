@@ -44,6 +44,9 @@ The field that indicates an ID of the device that should receive the Instruction
   1. Range : 0 ~ 252 (0x00 ~ 0xFC), which is a total of 253 numbers that can be used
   2. Broadcast ID : 254 (0xFE), which makes all connected devices execute the Instruction Packet
   3. 253(0xFD), 255(0xFF) : These are not used in order to avoid duplicate use with Header
+  
+**NOTE** : If the Instruction Packet ID is set to the Broadcast ID(0xFE), Status Packet will not be returned for READ and WRITE Instructions.
+{: .notice}
 
 ## [Length](#length)
 The field that indicates the length of packet field.
