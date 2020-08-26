@@ -28,18 +28,20 @@ REBOOT is the only method to reset {% if page.product_group=='dxl_ax' or page.pr
 | Bit 1 | Motor Hall Sensor Error(Default) | Motor hall sensor value exceeds normal range                                    |
 | Bit 0 |       Input Voltage Error        | Detect input voltage exceeds the configured operating voltage                   |
 {% else %}
-|  Bit  |              Item               | Description                                                                     |
-|:-----:|:-------------------------------:|:--------------------------------------------------------------------------------|
-| Bit 7 |                -                | Unused, Always '0'                                                              |
-| Bit 6 |                -                | Unused, Always '0'                 control_table_torque_enable                                             |
-| Bit 5 |     Overload Error(default)     | Detect persistent load that exceeds maximum output                              |
-| Bit 4 | Electrical Shock Error(default) | Detect electric shock on the circuit or insufficient power to operate the motor |
-| Bit 3 |       Motor Encoder Error       | Detect malfunction of the motor encoder                                         |
-| Bit 2 |   OverHeating Error(default)    | Detect internal temperature exceeds the configured operating temperature        |
-| Bit 1 |                -                | Unused, Always '0'                                                              |
-| Bit 0 |       Input Voltage Error       | Detect input voltage exceeds the configured operating voltage                   |
+|  Bit  |                                                           Item                                                            | Description                                                                     |
+|:-----:|:-------------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------|
+| Bit 7 |                                                             -                                                             | Unused, Always '0'                                                              |
+| Bit 6 |                                                             -                                                             | Unused, Always '0'                                                              |
+| Bit 5 |                                                  Overload Error(default)                                                  | Detect persistent load that exceeds maximum output                              |
+| Bit 4 |                                              Electrical Shock Error(default)                                              | Detect electric shock on the circuit or insufficient power to operate the motor |
+| Bit 3 |                                                    Motor Encoder Error                                                    | Detect malfunction of the motor encoder                                         |
+| Bit 2 |                                                OverHeating Error(default)                                                 | Detect internal temperature exceeds the configured operating temperature        |
+| Bit 1 |                                                             -                                                             | Unused, Always '0'                                                              |{% if page.product_group=='xl330' %}
+| Bit 0 |                                                Input Voltage Error (default)                                              | Detect input voltage exceeds the configured operating voltage                   |{% else %} 
+| Bit 0 |                                                   Input Voltage Error                                                     | Detect input voltage exceeds the configured operating voltage                   |{% endif %}
+ 
 {% endif %}
-
+ 
 {% if page.product_group=='dxl_xw540' %}
 {% capture shutdown_01 %}
 **NOTE** : If Shutdown occurs, **reboot the device**.

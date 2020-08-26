@@ -52,6 +52,7 @@ Packet의 길이를 나타냄.
   2. Length는 Instruction, Param, CRC(상위 및 하위 바이트) 항목의 데이터 길이를 포함. 
 
 - `Length = Parameter 갯수 + 3`
+- Status Packet의 Length에는 ERROR를 나타내는 1바이트가 추가됩니다.
 
 ## [Instruction](#instruction)
 Packet의 용도를 정의하는 필드
@@ -387,7 +388,6 @@ Instruction Packet 의 처리 결과를 나타냄
 |  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST |  P1  | CRC 1 | CRC 2 |
 |:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:-----:|:-----:|
 | 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1  | 0x0C  |
-
 
 ## [Clear](#clear)
 

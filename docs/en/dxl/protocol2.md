@@ -55,6 +55,7 @@ The field that indicates the length of packet field.
   2. The Length has the size of Instruction, Parameters and CRC (Low / High bytes) fields
 
 - `Length = the number of Parameters + 3`
+- Status Packet includes 1 byte length ERROR data.
 
 ## [Instruction](#instruction)
 The field that defines the type of commands.
@@ -369,7 +370,6 @@ Note that given examples use the following abbreviation to provide clear informa
 |:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:-----:|:-----:|
 | 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1  | 0x0C  |
 
-
 ## [Reboot](#reboot)
 
 ### Description
@@ -391,7 +391,6 @@ Note that given examples use the following abbreviation to provide clear informa
 |  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST |  P1  | CRC 1 | CRC 2 |
 |:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:-----:|:-----:|
 | 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1  | 0x0C  |
-
 
 ## [Clear](#clear)
 
