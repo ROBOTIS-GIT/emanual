@@ -44,6 +44,9 @@ The field that indicates an ID of the device that should receive the Instruction
   1. Range : 0 ~ 252 (0x00 ~ 0xFC), which is a total of 253 numbers that can be used
   2. Broadcast ID : 254 (0xFE), which makes all connected devices execute the Instruction Packet
   3. 253(0xFD), 255(0xFF) : These are not used in order to avoid duplicate use with Header
+  
+**NOTE** : If the Instruction Packet ID is set to the Broadcast ID(0xFE), [Status Packet](#status-packet) will not be returned for READ and WRITE Instructions.
+{: .notice}
 
 ## [Length](#length)
 The field that indicates the length of packet field.
@@ -141,9 +144,8 @@ Note that given examples use the following abbreviation to provide clear informa
 - Header : H
 - Reserved: RSRV
 - Length: LEN
-- Instruction: Inst
+- Instruction: INST
 - Param: P
-
 
 ## [Ping](#ping)
 ### Description
@@ -169,15 +171,16 @@ Note that given examples use the following abbreviation to provide clear informa
 
 #### Ping Instruction Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | CRC 1 | CRC 2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x03 | 0x00 | 0x01 | 0x19  | 0x4E  |
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:-----:|:-----:|
+| 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x03 | 0x00 | 0x01 | 0x19  | 0x4E  |
 
 #### ID 1 Status Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  |  P1  |  P2  |  P3  | CRC 1 | CRC 2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x07 | 0x00 | 0x55 | 0x00 | 0x06 | 0x04 | 0x26 | 0x65  | 0x5D  |
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST | ERR  |  P1  |  P2  |  P3  | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
+| 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x07 | 0x00 | 0x55 | 0x00 | 0x06 | 0x04 | 0x26 | 0x65  | 0x5D  |
+
 
 ### Example 2
 #### Conditions
@@ -187,21 +190,21 @@ Note that given examples use the following abbreviation to provide clear informa
 
 #### Ping Instruction Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | CRC 1 | CRC 2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0xFE | 0x03 | 0x00 | 0x01 | 0x31  | 0x42  |
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:-----:|:-----:|
+| 0xFF | 0xFF | 0xFD | 0x00 |   0xFE    | 0x03 | 0x00 | 0x01 | 0x31  | 0x42  |
 
 #### ID 1 Status Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  |  P1  |  P2  |  P3  | CRC 1 | CRC 2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x07 | 0x00 | 0x55 | 0x00 | 0x06 | 0x04 | 0x26 | 0x65  | 0x5D  |
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST | ERR  |  P1  |  P2  |  P3  | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
+| 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x07 | 0x00 | 0x55 | 0x00 | 0x06 | 0x04 | 0x26 | 0x65  | 0x5D  |
 
 #### ID 2 Status Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  |  P1  |  P2  |  P3  | CRC 1 | CRC 2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0x02 | 0x07 | 0x00 | 0x55 | 0x00 | 0x06 | 0x04 | 0x26 | 0x6F  | 0x6D  |
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST | ERR  |  P1  |  P2  |  P3  | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
+| 0xFF | 0xFF | 0xFD | 0x00 |   0x02    | 0x07 | 0x00 | 0x55 | 0x00 | 0x06 | 0x04 | 0x26 | 0x6F  | 0x6D  |
 
 ## [Read](#read)
 
@@ -232,15 +235,15 @@ Note that given examples use the following abbreviation to provide clear informa
 
 #### Read Instruction Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  |  P2  |  P3  |  P4  | CRC 1 | CRC 2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x07 | 0x00 | 0x02 | 0x84 | 0x00 | 0x04 | 0x00 | 0x1D  | 0x15  |
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST |  P1  |  P2  |  P3  |  P4  | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
+| 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x07 | 0x00 | 0x02 | 0x84 | 0x00 | 0x04 | 0x00 | 0x1D  | 0x15  |
 
 #### ID 1 Status Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  |  P1  |  P2  |  P3  |  P4  | CRC 1 | CRC 2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x08 | 0x00 | 0x55 | 0x00 | 0xA6 | 0x00 | 0x00 | 0x00 | 0x8C  | 0xC0  |
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST | ERR  |  P1  |  P2  |  P3  |  P4  | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
+| 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x08 | 0x00 | 0x55 | 0x00 | 0xA6 | 0x00 | 0x00 | 0x00 | 0x8C  | 0xC0  |
 
 ## [Write](#write)
 
@@ -266,15 +269,15 @@ Note that given examples use the following abbreviation to provide clear informa
 
 #### Write Instruction Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  |  P2  |  P3  |  P4  |  P5  |  P6  | CRC 1 | CRC 2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x09 | 0x00 | 0x03 | 0x74 | 0x00 | 0x00 | 0x02 | 0x00 | 0x00 | 0xCA  | 0x89  |
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST |  P1  |  P2  |  P3  |  P4  |  P5  |  P6  | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
+| 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x09 | 0x00 | 0x03 | 0x74 | 0x00 | 0x00 | 0x02 | 0x00 | 0x00 | 0xCA  | 0x89  |
 
 #### ID 1 Status Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | CRC 1 | CRC 2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:------|------:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1  |  0x0C |
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST | ERR  | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:------|------:|
+| 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1  |  0x0C |
 
 ## [Reg Write](#reg-write)
 
@@ -302,15 +305,15 @@ Note that given examples use the following abbreviation to provide clear informa
 
 #### Reg Write Instruction Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  |  P2  |  P3  |  P4  |  P5  |  P6  | CRC 1 | CRC 2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x09 | 0x00 | 0x04 | 0x68 | 0x00 | 0xC8 | 0x00 | 0x00 | 0x00 | 0xAE  | 0x8E  |
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST |  P1  |  P2  |  P3  |  P4  |  P5  |  P6  | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
+| 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x09 | 0x00 | 0x04 | 0x68 | 0x00 | 0xC8 | 0x00 | 0x00 | 0x00 | 0xAE  | 0x8E  |
 
 #### ID 1 Status Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | CRC 1 | CRC 2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1  | 0x0C  |
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST | ERR  | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:-----:|:-----:|
+| 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1  | 0x0C  |
 
 ## [Action](#action)
 
@@ -326,15 +329,16 @@ Note that given examples use the following abbreviation to provide clear informa
 
 #### Action Instruction Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | CRC 1 | CRC 2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x03 | 0x00 | 0x05 | 0x02  | 0xCE  |
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:-----:|:-----:|
+| 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x03 | 0x00 | 0x05 | 0x02  | 0xCE  |
 
 #### ID 1 Status Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | CRC 1 | CRC 2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1  | 0x0C  |
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST | ERR  | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:-----:|:-----:|
+| 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1  | 0x0C  |
+
 
 ## [Factory Reset](#factory-reset)
 
@@ -356,15 +360,15 @@ Note that given examples use the following abbreviation to provide clear informa
 
 #### Factory Reset Instruction Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  | CRC 1 | CRC 2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x04 | 0x00 | 0x06 | 0x01 | 0xA1  | 0xE6  |
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST |  P1  | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:-----:|:-----:|
+| 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x04 | 0x00 | 0x06 | 0x01 | 0xA1  | 0xE6  |
 
 #### ID 1 Status Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | CRC 1 | CRC 2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1  | 0x0C  |
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST |  P1  | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:-----:|:-----:|
+| 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1  | 0x0C  |
 
 ## [Reboot](#reboot)
 
@@ -378,15 +382,15 @@ Note that given examples use the following abbreviation to provide clear informa
 
 #### Reboot Instruction Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | CRC 1 | CRC 2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x03 | 0x00 | 0x08 | 0x2F  | 0x4E  |
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:-----:|:-----:|
+| 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x03 | 0x00 | 0x08 | 0x2F  | 0x4E  |
 
 #### ID 1 Status Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | CRC 1 | CRC 2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1  | 0x0C  |
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST |  P1  | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:-----:|:-----:|
+| 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1  | 0x0C  |
 
 ## [Clear](#clear)
 
@@ -410,15 +414,15 @@ Note that given examples use the following abbreviation to provide clear informa
 
 #### Clear Instruction Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 |   INST   |    P1    |  P2  |  P3  |  P4  |  P5  | CRC 1 | CRC 2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:--------:|:--------:|:----:|:----:|:----:|:----:|:-----:|:-----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x08 | 0x00 | **0x10** | **0x01** | 0x44 | 0x58 | 0x4C | 0x22 | 0xB1  | 0xDC  |
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 |   INST   |    P1    |  P2  |  P3  |  P4  |  P5  | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:--------:|:--------:|:----:|:----:|:----:|:----:|:-----:|:-----:|
+| 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x08 | 0x00 | **0x10** | **0x01** | 0x44 | 0x58 | 0x4C | 0x22 | 0xB1  | 0xDC  |
 
 #### ID 1 Status Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | CRC 1 | CRC 2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1  | 0x0C  |
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST |  P1  | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:-----:|:-----:|
+| 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1  | 0x0C  |
 
 ## [Sync Read](#sync-read)
 
@@ -459,21 +463,21 @@ Note that given examples use the following abbreviation to provide clear informa
 
 #### Sync Read Instruction Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  |  P2  |  P3  |  P4  |  P5  |  P6  | CRC 1 | CRC 2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0xFE | 0x09 | 0x00 | 0x82 | 0x84 | 0x00 | 0x04 | 0x00 | 0x01 | 0x02 | 0xCE  | 0xFA  |
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST |  P1  |  P2  |  P3  |  P4  |  P5  |  P6  | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
+| 0xFF | 0xFF | 0xFD | 0x00 |   0xFE    | 0x09 | 0x00 | 0x82 | 0x84 | 0x00 | 0x04 | 0x00 | 0x01 | 0x02 | 0xCE  | 0xFA  |
 
 #### ID 1 Status Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  |  P1  |  P2  |  P3  |  P4  | CRC 1 | CRC 2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x08 | 0x00 | 0x55 | 0x00 | 0xA6 | 0x00 | 0x00 | 0x00 | 0x8C  | 0xC0  |
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST | ERR  |  P1  |  P2  |  P3  |  P4  | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
+| 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x08 | 0x00 | 0x55 | 0x00 | 0xA6 | 0x00 | 0x00 | 0x00 | 0x8C  | 0xC0  |
 
 #### ID 2 Status Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  |  P1  |  P2  |  P3  |  P4  | CRC 1 | CRC 2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0x02 | 0x08 | 0x00 | 0x55 | 0x00 | 0x1F | 0x08 | 0x00 | 0x00 | 0xBA  | 0xBE  |
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST | ERR  |  P1  |  P2  |  P3  |  P4  | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
+| 0xFF | 0xFF | 0xFD | 0x00 |   0x02    | 0x08 | 0x00 | 0x55 | 0x00 | 0x1F | 0x08 | 0x00 | 0x00 | 0xBA  | 0xBE  |
 
 
 ## [Sync Write](#sync-write)
@@ -496,7 +500,7 @@ Note that given examples use the following abbreviation to provide clear informa
 |   Parameter 5+1    | [1st Device] 1st Byte                     |
 |   Parameter 5+2    | [1st Device] 2nd Byte                     |
 |        ...         | [1st Device]...                           |
-|   Parameter 6+X    | [2nd Device] X-th Byte                    |
+|   Parameter 5+X    | [1st Device] X-th Byte                    |
 |    Parameter 6     | [2nd Device] ID                           |
 |   Parameter 6+1    | [2nd Device] 1st Byte                     |
 |   Parameter 6+2    | [2nd Device] 2nd Byte                     |
@@ -512,9 +516,9 @@ Note that given examples use the following abbreviation to provide clear informa
 
 #### Sync Write Instruction Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  |  P2  |  P3  |  P4  |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0xFE | 0x11 | 0x00 | 0x83 | 0x74 | 0x00 | 0x04 | 0x00 |
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST |  P1  |  P2  |  P3  |  P4  |
+|:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 |   0xFE    | 0x11 | 0x00 | 0x83 | 0x74 | 0x00 | 0x04 | 0x00 |
 
 |  P5  |  P6  |  P7  |  P8  |  P9  | P10  | P11  | P12  | P13  | P14  | CRC 1 | CRC 2 |
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
@@ -563,9 +567,9 @@ Note that given examples use the following abbreviation to provide clear informa
 
 #### Bulk Read Instruction Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  |  P2  |  P3  |  P4  |  P5  |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0xFE | 0x0D | 0x00 | 0x92 | 0x01 | 0x90 | 0x00 | 0x02 | 0x00 |
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST |  P1  |  P2  |  P3  |  P4  |  P5  |
+|:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 |   0xFE    | 0x0D | 0x00 | 0x92 | 0x01 | 0x90 | 0x00 | 0x02 | 0x00 |
 
 |  P6  |  P7  |  P8  |  P9  | P10  | CRC 1 | CRC 2 |
 |:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
@@ -573,15 +577,16 @@ Note that given examples use the following abbreviation to provide clear informa
 
 #### ID 1 Status Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | P1 | P2 | CRC 1 | CRC 2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:------:|:------:|:-----:|:-----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x06 | 0x00 | 0x55 | 0x00 |  0x77  |  0x00  | 0xC3  | 0x69  |
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST | ERR  |  P1  |  P2  | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
+| 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x06 | 0x00 | 0x55 | 0x00 | 0x77 | 0x00 | 0xC3  | 0x69  |
 
 #### ID 2 Status Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST | ERR  | P1 | CRC 1 | CRC 2 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:------:|:-----:|:-----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0x02 | 0x05 | 0x00 | 0x55 | 0x00 |  0x24  | 0x8B  | 0xA9  |
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST | ERR  |  P1  | CRC 1 | CRC 2 |
+|:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
+| 0xFF | 0xFF | 0xFD | 0x00 |   0x02    | 0x05 | 0x00 | 0x55 | 0x00 | 0x24 | 0x8B  | 0xA9  |
+
 
 ## [Bulk Write](#bulk-write)
 
@@ -624,9 +629,9 @@ Note that given examples use the following abbreviation to provide clear informa
 
 #### Bulk Write Instruction Packet
 
-|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  |  P2  |  P3  |  P4  |  P5  |  P6  |  P7  |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0xFF | 0xFF | 0xFD | 0x00 | 0xFE | 0x10 | 0x00 | 0x93 | 0x01 | 0x20 | 0x00 | 0x02 | 0x00 | 0xA0 | 0x00 |
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST |  P1  |  P2  |  P3  |  P4  |  P5  |  P6  |  P7  |
+|:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 |   0xFE    | 0x10 | 0x00 | 0x93 | 0x01 | 0x20 | 0x00 | 0x02 | 0x00 | 0xA0 | 0x00 |
 
 |  P8  |  P9  | P10  | P11  | P12  | P13  | CRC 1 | CRC 2 |
 |:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|

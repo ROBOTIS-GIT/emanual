@@ -2,6 +2,7 @@
 
 [Shutdown(18)]: #shutdown 
 [Torque Enable(24)]: #torque-enable
+[Present Position(37)]: #present-position37
 
 <!-- DXL-X -->
 [Return Delay time(5)]: #return-delay-time-5
@@ -39,17 +40,15 @@
 [Present Current(126)]: #present-current126
 [Present load(126)]: #present-load126
 [Present Velocity(128)]: #present-velovity128
-[Present Position(37)]: #present-position37
 [Present Position(132)]: #present-position132
 [Present Input Voltage(144)]: #present-input-voltage144
-
 [Present Temperature(146)]: #present-temperature146
-
 [Velocity Trajectory(136)]: #velocity-trajectory136
 [Position Trajectory(140)]: #position-trajectory140
 
 <!-- DXL-P, PRO -->
 
+[Homing Offset(13)]: #homing-offset
 [Shutdown(48)]: #shutdown 
 [Torque Enable(512)]: #torque-enable512
 [Torque Enable(562)]: #torque-enable562
@@ -68,3 +67,4 @@
 [Protocol 1.0]: /docs/en/dxl/protocol1/#status-packet
 [Protocol 2.0]: /docs/en/dxl/protocol2/#status-packet
 [What is the Profile]: #what-is-the-profile
+[RAM area]: #control-table-of-ram-area

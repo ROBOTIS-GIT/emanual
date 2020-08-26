@@ -91,9 +91,9 @@ The delay time between bytes when sending an instruction packet. If the delay ti
 # [Instruction Packet](#instruction-packet)
 Instruction Packet is the command data sent to the Device.
 
-| Header1 | Header2 | ID | Length | Instruction | Param 1 | ... | Param N | Checksum |
-|:-------:|:-------:|:--:|:------:|:-----------:|:-------:|:---:|:-------:|:--------:|
-|  0xFF   |  0xFF   | ID | Length | Instruction | Param 1 | ... | Param N |  CHKSUM  |
+| Header1 | Header2 | Packet ID | Length | Instruction | Param 1 | ... | Param N | Checksum |
+|:-------:|:-------:|:---------:|:------:|:-----------:|:-------:|:---:|:-------:|:--------:|
+|  0xFF   |  0xFF   | Packet ID | Length | Instruction | Param 1 | ... | Param N |  CHKSUM  |
 
 ## [Header](#header)
 The field indicates the start of the Packet.
@@ -147,12 +147,11 @@ Checksum = ~ ( ID + Length + Instruction + Parameter1 + ... Parameter 3 )
 
 Thus, Instruction Packet should be 0xFF, 0xFF, 0x01, 0x05, 0x03, 0x0C, 0x64, 0xAA, 0xDC.
 
-
 # [Status Packet(Return Packet)](#status-packetreturn-packet)
 
-| Header1 | Header2 | ID | Length | Error | Param 1 | ... | Param N | Checksum |
-|:-------:|:-------:|:--:|:------:|:-----:|:-------:|:---:|:-------:|:--------:|
-|  0xFF   |  0xFF   | ID | Length | Error | Param 1 | ... | Param N |  CHKSUM  |
+| Header1 | Header2 | Packet ID | Length | Error | Param 1 | ... | Param N | Checksum |
+|:-------:|:-------:|:---------:|:------:|:-----:|:-------:|:---:|:-------:|:--------:|
+|  0xFF   |  0xFF   |    ID     | Length | Error | Param 1 | ... | Param N |  CHKSUM  |
 
 ## [Error](#error)
 This field displays the error status occurred during the operation of DYNAMIXEL.
@@ -182,8 +181,18 @@ Status Checksum is calculated according to the following formula.
 
 **Status Checksum = ~( ID + Length + Error + Parameter1 + ... Parameter N )**
 
-
 # [Instruction Details](#instruction-details)
+
+Note that given examples use the following abbreviation to provide clear information.
+- Header : H
+- Reserved: RSRV
+- Length: LEN
+- Instruction: INST
+- Param: P
+- Checksum: CKSM
+
+**NOTE**: The given examples are made based on RX-64. Be aware that DYNAMIXELs using Protocol 1.0 such as AX-12A, DX series, can be also used with this example in the same way.
+{: .notice} 
 
 ## [Ping](#ping)
 This instruction requests the Status Packet from a specific ID. Even if Status Return Level(16) is 0, DYNAMIXEL returns Status Packet all the time for Ping Instruction.
@@ -198,15 +207,15 @@ This instruction requests the Status Packet from a specific ID. Even if Status R
 
 #### Ping Instruction Packet
 
-|  H1  |  H2  |  ID  | LEN  | INST | CKSM |
-|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0xFF | 0xFF | 0x01 | 0x02 | 0x01 | 0xFB |
+|  H1  |  H2  | Packet ID | LEN  | INST | CKSM |
+|:----:|:----:|:---------:|:----:|:----:|:----:|
+| 0xFF | 0xFF |   0x01    | 0x02 | 0x01 | 0xFB |
 
 #### ID 1 Status Packet
 
-|  H1  |  H2  |  ID  | LEN  | ERR  | CKSM |
-|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0xFF | 0xFF | 0x01 | 0x02 | 0x00 | 0xFC |
+|  H1  |  H2  | Packet ID | LEN  | ERR  | CKSM |
+|:----:|:----:|:---------:|:----:|:----:|:----:|
+| 0xFF | 0xFF |   0x01    | 0x02 | 0x00 | 0xFC |
 
 ## [Read](#read)
 This instruction is to read data in the Control Table of DYNAMIXEL.
@@ -221,15 +230,15 @@ This instruction is to read data in the Control Table of DYNAMIXEL.
 
 #### Read Instruction Packet
 
-|  H1  |  H2  |  ID  | LEN  | INST |  P1  |  P2  | CKSM |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0xFF | 0xFF | 0x01 | 0x04 | 0x02 | 0x2B | 0x01 | 0xCC |
+|  H1  |  H2  | Packet ID | LEN  | INST |  P1  |  P2  | CKSM |
+|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF |   0x01    | 0x04 | 0x02 | 0x2B | 0x01 | 0xCC |
 
 #### ID 1 Status Packet
 
-|  H1  |  H2  |  ID  | LEN  | ERR  |  P1  | CKSM |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0xFF | 0xFF | 0x01 | 0x03 | 0x00 | 0x20 | 0xDB |
+|  H1  |  H2  | Packet ID | LEN  | ERR  |  P1  | CKSM |
+|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF |   0x01    | 0x03 | 0x00 | 0x20 | 0xDB |
 
 ## [Write](#write)
 This instruction is to write data to the Control Table of DYNAMIXEL
@@ -244,9 +253,9 @@ This instruction is to write data to the Control Table of DYNAMIXEL
 
 #### Write Instruction Packet
 
-|  H1  |  H2  |  ID  | LEN  | INST |  P1  |  P2  | CKSM |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0xFF | 0xFF | 0xFE | 0x04 | 0x03 | 0x03 | 0x01 | 0xF6 |
+|  H1  |  H2  | Packet ID | LEN  | INST |  P1  |  P2  | CKSM |
+|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF |   0xFE    | 0x04 | 0x03 | 0x03 | 0x01 | 0xF6 |
 
 **NOTE** : Status Packet will not be returned if Broadcast ID(0xFE) is used.
 {: .notice}
@@ -267,15 +276,15 @@ This instruction is to write data to the Control Table of DYNAMIXEL
 
 #### Reg Write Instruction Packet
 
-|  H1  |  H2  |  ID  | LEN  | INST |  P1  |  P2  |  P3|CKSM  |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:---------:|
-| 0xFF | 0xFF | 0x01 | 0x05 | 0x04 | 0x1E | 0xF4 | 0x01|0xE2 |
+|  H1  |  H2  | Packet ID | LEN  | INST |  P1  |  P2  |  P3|CKSM  |
+|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:---------:|
+| 0xFF | 0xFF |   0x01    | 0x05 | 0x04 | 0x1E | 0xF4 | 0x01|0xE2 |
 
 #### ID 1 Status Packet
 
-|  H1  |  H2  |  ID  | LEN  | ERR  | CKSM |
-|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0xFF | 0xFF | 0x01 | 0x02 | 0x00 | 0xFC |
+|  H1  |  H2  | Packet ID | LEN  | ERR  | CKSM |
+|:----:|:----:|:---------:|:----:|:----:|:----:|
+| 0xFF | 0xFF |   0x01    | 0x02 | 0x00 | 0xFC |
 
 ## [Action](#action)
 This instruction is to execute the registered Reg Write instruction. The Action instruction is useful when multiple DYNAMIXEL's are required to start moving at the same time. When several devices are controlled via communication, there is a minor time difference between enabling the first and last device. DYNAMIXEL has resolved this problem by using Action instruction.
@@ -290,9 +299,9 @@ This instruction is to execute the registered Reg Write instruction. The Action 
 
 #### Action Instruction Packet
 
-|  H1  |  H2  |  ID  | LEN  | INST | CKSM |
-|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0xFF | 0xFF | 0xFE | 0x02 | 0x05 | 0xFA |
+|  H1  |  H2  | Packet ID | LEN  | INST | CKSM |
+|:----:|:----:|:---------:|:----:|:----:|:----:|
+| 0xFF | 0xFF |   0xFE    | 0x02 | 0x05 | 0xFA |
 
 **NOTE** : Status Packet will not be returned if Broadcast ID(0xFE) is used.
 {: .notice}
@@ -319,15 +328,15 @@ This instruction is to reset the Control Table of DYNAMIXEL to the factory defau
 
 #### Factory Reset Instruction Packet
 
-|  H1  |  H2  |  ID  | LEN  | INST | CKSM |
-|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0xFF | 0xFF | 0x00 | 0x02 | 0x06 | 0xF7 |
+|  H1  |  H2  | Packet ID | LEN  | INST | CKSM |
+|:----:|:----:|:---------:|:----:|:----:|:----:|
+| 0xFF | 0xFF |   0x00    | 0x02 | 0x06 | 0xF7 |
 
 #### ID 0 Status Packet
 
-|  H1  |  H2  |  ID  | LEN  | ERR  | CKSM |
-|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0xFF | 0xFF | 0x00 | 0x02 | 0x00 | 0xFD |
+|  H1  |  H2  | Packet ID | LEN  | ERR  | CKSM |
+|:----:|:----:|:---------:|:----:|:----:|:----:|
+| 0xFF | 0xFF |   0x00    | 0x02 | 0x00 | 0xFD |
 
 ## [Reboot](#reboot)
 This instruction restarts DYNAMIXEL.
@@ -340,15 +349,15 @@ This instruction restarts DYNAMIXEL.
 
 #### Reboot Instruction Packet
 
-|  H1  |  H2  |  ID  | LEN  | INST | CKSM |
-|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0xFF | 0xFF | 0x01 | 0x02 | 0x08 | 0xF4 |
+|  H1  |  H2  | Packet ID | LEN  | INST | CKSM |
+|:----:|:----:|:---------:|:----:|:----:|:----:|
+| 0xFF | 0xFF |   0x01    | 0x02 | 0x08 | 0xF4 |
 
 #### ID 1 Status Packet
 
-|  H1  |  H2  |  ID  | LEN  | ERR  | CKSM |
-|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0xFF | 0xFF | 0x01 | 0x02 | 0x00 | 0xFC |
+|  H1  |  H2  | Packet ID | LEN  | ERR  | CKSM |
+|:----:|:----:|:---------:|:----:|:----:|:----:|
+| 0xFF | 0xFF |   0x01    | 0x02 | 0x00 | 0xFC |
 
 ## [Sync Write](#sync-write)
 This instruction is used to control multiple DYNAMIXEL's simultaneously with a single Instruction Packet transmission. When this instruction is used, several instructions can be transmitted at once, so that the communication time is reduced when multiple DYNAMIXEL's are connected in a single channel. However, the SYNC WRITE instruction can only be used to a single address with an identical length of data over connected DYNAMIXEL's. ID should be transmitted as Broadcasting ID.
@@ -377,9 +386,9 @@ This instruction is used to control multiple DYNAMIXEL's simultaneously with a s
 
 #### Sync Write Instruction Packet
 
-|  H1  |  H2  |  ID  | LEN  | INST |  P1  |  P2  |  P3  |  P4  |  P5  |  P6  |  P7  |  P8  |  P9  | P10  | P11  | P12  | CKSM |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0xFF | 0xFF | 0xFE | 0x0E | 0x83 | 0x1E | 0x04 | 0x00 | 0x10 | 0x00 | 0x50 | 0x01 | 0x01 | 0x20 | 0x02 | 0x60 | 0x03 | 0x67 |
+|  H1  |  H2  | Packet ID | LEN  | INST |  P1  |  P2  |  P3  |  P4  |  P5  |  P6  |  P7  |  P8  |  P9  | P10  | P11  | P12  | CKSM |
+|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF |   0xFE    | 0x0E | 0x83 | 0x1E | 0x04 | 0x00 | 0x10 | 0x00 | 0x50 | 0x01 | 0x01 | 0x20 | 0x02 | 0x60 | 0x03 | 0x67 |
 
 **NOTE** : Status Packet will not be returned if Broadcast ID(0xFE) is used.
 {: .notice}
@@ -407,23 +416,23 @@ This instruction is used for reading values of multiple `MX series` DYNAMIXEL's 
 
 #### Bulk Read Instruction Packet
 
-|  H1  |  H2  |  ID  | LEN  | INST |  P1  |  P2  |  P3  |  P4  |  P5  |  P6  |  P7  | CKSM |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0xFF | 0xFF | 0xFE | 0x09 | 0x92 | 0x00 | 0x02 | 0x01 | 0x1E | 0x02 | 0x02 | 0x24 | 0x1D |
+|  H1  |  H2  | Packet ID | LEN  | INST |  P1  |  P2  |  P3  |  P4  |  P5  |  P6  |  P7  | CKSM |
+|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF |   0xFE    | 0x09 | 0x92 | 0x00 | 0x02 | 0x01 | 0x1E | 0x02 | 0x02 | 0x24 | 0x1D |
 
 When Bulk Read instruction is received, DYNAMIXEL with ID 2 monitors the status packet being sent from ID 1 of the data bus (the preceeding device ID), and when device ID 1’s status packet transmission is completed, ID 2 sends its own status packet.
 
 #### ID 1 Status Packet
 
-|  H1  |  H2  |  ID  | LEN  | ERR  |  P1  |  P2  | CKSM |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0xFF | 0xFF | 0x01 | 0x04 | 0x00 | 0x00 | 0x80 | 0x7A |
+|  H1  |  H2  | Packet ID | LEN  | ERR  |  P1  |  P2  | CKSM |
+|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF |   0x01    | 0x04 | 0x00 | 0x00 | 0x80 | 0x7A |
 
 #### ID 2 Status Packet
 
-|  H1  |  H2  |  ID  | LEN  | ERR  |  P1  |  P2  | CKSM |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0xFF | 0xFF | 0x02 | 0x04 | 0x00 | 0x00 | 0x80 | 0x79 |
+|  H1  |  H2  | Packet ID | LEN  | ERR  |  P1  |  P2  | CKSM |
+|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF |   0x02    | 0x04 | 0x00 | 0x00 | 0x80 | 0x79 |
 
 # [More Packet Examples](#more-packet-examples)
 
