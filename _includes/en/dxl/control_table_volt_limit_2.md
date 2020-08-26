@@ -9,9 +9,10 @@ For more details, please refer to the [Shutdown(63)] section.
 | About 0.1 [V] |  65 ~ 140   | 6.5 ~ 14.0 [V] |
 
 {% elsif page.product_group=='xl330' %}
+
 |     Unit      | Value Range |  Description  |
 |:-------------:|:-----------:|:-------------:|
-| About 0.1 [V] |  3.5 ~ 7.0  | 3.5 ~ 7.0 [V] |
+| About 0.1 [V] |   31 ~ 70   | 3.1 ~ 7.0 [V] |
 
 {% else %}
 |     Unit      | Value Range |  Description   |
