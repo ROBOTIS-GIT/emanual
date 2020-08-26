@@ -43,6 +43,19 @@ With this openended component, handful of TurtleBot3 friends with various charac
 
 **Components List ( BOM )**  
 
+{% capture TB_BOM_notice %}
+
+**Notice**  
+Thank you for your continued interests in the TurtleBot3 Friends.  
+The listed products in BOM, sold by third-party distributors, are subject to change or discontinuation without a prior notice.  
+In this case, please refer to the 3D modeling file to find compatible products.   
+
+**Contact Information**  
+If you have questions regarding the TurtleBot3 Friends, contact us via the email below.  
+- [support@robotis.com](mailto:support@robotis.com)  
+{% endcapture %}
+<div class="notice--warning">{{ TB_BOM_notice | markdownify }}</div>
+
 | Single Item                                                 | Quantity | Set Item                  | Quantity | Purchase Links                                                                                                                                                                         |
 |:------------------------------------------------------------|:---------|:--------------------------|:---------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | XL430-W250-T ([e-Manual](/docs/en/dxl/x/xl430-w250/))       | 2        | XL430-W250-T              | 2        | [ROBOTIS SHOP](http://en.robotis.com/shop_en/item.php?it_id=902-0135-000)                                                                                                              |

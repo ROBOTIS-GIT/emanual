@@ -39,6 +39,7 @@ sidebar:
 | **XC**            | [XC430-W150]                   | [XC430-W240]                   |                                |                                |                 |
 | **XM**            | [XM430-W210]                   | [XM430-W350]                   | [XM540-W150]                   | [XM540-W270]                   |                 |
 | **XH**            | [XH430-W210]<br/> [XH430-W350] | [XH430-V210]<br/> [XH430-V350] | [XH540-W150]<br/> [XH540-W270] | [XH540-V150]<br/> [XH540-V270] |                 |
+| **XW**            | [XW540-T140-R]                 | [XW540-T260-R]                 |                                |                                |                 |
 | **PRO H**         | [H42-20-S300-R]                | [H54-100-S500-R]               | [H54-200-S500-R]               |                                |                 |
 | **PRO M**         | [M42-10-S260-R]                | [M54-40-S250-R]                | [M54-60-S250-R]                |                                |                 |
 | **PRO L** `1`     | [L42-10-S300-R]                | [L54-30-S500-R]                | [L54-30-S400-R]                | [L54-50-S500-R]                | [L54-50-S290-R] |
@@ -319,6 +320,8 @@ bool syncWriteEnd(void);
 [XH540-W270]: /docs/kr/dxl/x/xh540-w270/
 [XH540-V150]: /docs/kr/dxl/x/xh540-v150/
 [XH540-V270]: /docs/kr/dxl/x/xh540-v270/
+[XW540-T260-R]: /docs/kr/dxl/x/xw540-t260/
+[XW540-T140-R]: /docs/kr/dxl/x/xw540-t140/
 [H54-200-S500-R]: /docs/kr/dxl/pro/h54-200-s500-r/
 [H54-100-S500-R]: /docs/kr/dxl/pro/h54-100-s500-r/
 [H42-20-S300-R]: /docs/kr/dxl/pro/h42-20-s300-r/
