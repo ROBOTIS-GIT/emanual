@@ -151,6 +151,7 @@ If `catkin_make` command is completed without any errors, the preparation for Tu
 **[TurtleBot]** The following commands allow to use USB port for OpenCR without acquiring root permission.
 
 ``` bash
+$ source ~/catkin_ws/devel/setup.bash
 $ rosrun turtlebot3_bringup create_udev_rules
 ```
 
