@@ -47,7 +47,7 @@ DYNAMIXEL Shield  was created to use [RC-100] and DYNAMIXEL on arduino board. We
 | **PH**           | [PH42-020-S300-R]              | [PH54-100-S500-R]              | [PH54-100-S500-R]              |                                |                 |
 | **PM**           | [PM54-060-S250-R]              | [PM54-040-S250-R]              | [PM42-010-S260-R]              |                                |                 |
 
-`1` RX, DX, EX, PRO L series require additional configuration in the source code.
+`1` RX, DX, EX series are by default disabled and require [config.h](https://github.com/ROBOTIS-GIT/Dynamixel2Arduino/blob/master/src/utility/config.h#L6) modification in DYNAMIXEL2Arduino to be used.
 
 # [Layout](#layout)
 
@@ -60,7 +60,7 @@ The DYNAMIXEL Shield has the same pin position as Aruduino UNO. To find the pino
 |:-------:|:-----------:|:-------------------------:|
 |    0    | HW UART RX  |          DXL_RX           |
 |    1    | HW UART TX  |          DXL_TX           |
-|    2    | HW UART DIR |          DXL_DIR          |
+|    2    | HW UART DIR |    DXL_DIR(DXL_TX_EN)     |
 |    7    | SW UART RX  | `Caution2` SoftwareSerial |
 |    8    | SW UART TX  | `Caution2` SoftwareSerial |
 
@@ -71,9 +71,9 @@ The DYNAMIXEL Shield has the same pin position as Aruduino UNO. To find the pino
 |  UART Switch   | UART SW (Upload or DYNAMIXEL Select Switch) |       `Caution1`        |
 |   Jumper Cap   |           Power Source Selection            | Read 'Connecting Power' |
 
--	DXL_RX (0), DXL_TX (1) : Hardware serial port to control DYNAMIXEL.
-- DXL_DIR(2) : Control pin to select DYNAMIXEL direction.
-- The hardware serial port is used for DYNAMIXEL control, therefore, the serial communication has to be performed by connecting [RC-100] or [LN-101] to the software serial port which is assigned to Arduino pin 7 and 8.
+-	DXL_RX (0), DXL_TX (1) : Hardware serial port to communicate with DYNAMIXEL.
+- DXL_DIR(2) : Flow control of DYNAMIXEL packet.
+- The hardware serial port is used to communicate with DYNAMIXEL, therefore, [RC-100] or [LN-101] has to be connected to the software serial communication port(SW TX/RX) via Arduino pin 7 and 8.
 
 {% capture shield_01 %}
 `Caution1` When uploading firmware using USB port, you should switch the UART SW(SW_2) to Upload mode. When you select the UART SW (SW_2) to DYNAMIXEL mode, you can use DYNAMIXEL but USB port.  
@@ -142,6 +142,9 @@ Check the type of your arduino board, and select the either of listed solution t
 
 # [DYNAMIXEL Shield Libraries](#dynamixel-shield-libraries)
 
+DYNAMIXEL2Arduino Library : [GitHub Repository][DYNAMIXEL2Arduino GitHub repository]  
+DYNAMIXEL Shield Library : [GitHub Repository][DYNAMIXEL Shield GitHub repository]
+
 ## [Features](#features)
 
 - Compatible to Arduino boards
@@ -171,7 +174,7 @@ In order to use DYNAMIXEL Shield library(v0.1.0 or above), DYNAMIXEL2Arduino lib
 
 ![](/assets/images/parts/interface/dynamixel_shield/library_manager_03.png)
 
-If you have successfully installed the library, you'll be able to find several examples of DynamixelShield in the examples.
+If you have successfully installed both libraries, you'll be able to find several examples of DynamixelShield in the examples.
 
 ![](/assets/images/parts/interface/dynamixel_shield/examples.png)
 
@@ -235,7 +238,7 @@ Dynamixel2Arduino class inherits below public functions from the Master class.
 
 ### [DynamixelShield(v0.0.5)](#dynamixelshieldv005)
 
-**WARNING** : This version of API is deprecated.
+**WARNING** : This version of DYNAMIXEL Shield API is deprecated and not maintained anymore.
 {: .notice--warning}
 
 ```c
@@ -349,7 +352,8 @@ bool syncWriteEnd(void);
 [RC-100]: /docs/en/parts/communication/rc-100/
 
 [Arduino Official Guide]: https://www.arduino.cc/en/Guide/Libraries
-[GitHub repository]: https://github.com/ROBOTIS-GIT/Dynamixel2Arduino
+[DYNAMIXEL2Arduino GitHub repository]: https://github.com/ROBOTIS-GIT/Dynamixel2Arduino
+[DYNAMIXEL Shield GitHub repository]: https://github.com/ROBOTIS-GIT/DynamixelShield
 [begin()]: /docs/en/popup/arduino_api/begin/
 [getPortBaud()]: /docs/en/popup/arduino_api/getPortBaud/
 [ping()]: /docs/en/popup/arduino_api/ping/

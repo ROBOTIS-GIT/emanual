@@ -220,11 +220,11 @@ $ git clone https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
 ### [User Guide (for Embedded Board)](#user-guide-for-embedded-board)
 
 - We provide a way to connect to an embedded board.
-- The data of the LDS-01 can be used on the embedded board like OpenCR and Arduino, and it can be confirmed on the LCD as a graph like below.
+- The data of the LDS-01 can be used on the embedded board like OpenCR and Arduino. Please refer to below instructions.
 
 #### Preparations
-- It does not provide a dedicated interface board, but you can connect it to the power and UART of the embedded board as shown below.
-a
+- The LDS-01 in TurtleBot3 package comes with the interface board, but you can also connect the sensor to the power and UART pins of embedded boards.
+
 ![](/assets/images/platform/turtlebot3/appendix_lds/lds_lines.png)
 
 **WARNNING** : The wiring colours of LDS-01 could differ from the picture by manaufacturers. 
