@@ -447,7 +447,7 @@ end
 
 As mentioned in the document, above code enables each Dynamixel`s torque to set their status as being ready to move.
 
-`write1ByteTxRx()` function orders to the #`DXL1_ID` and #`DXL2_ID` DYNAMIXEL in `PROTOCOL_VERSION` communication protocol through #`port_num` port, writing 1 byte of `TORQUE_ENABLE` value to `ADDR_PRO_TORQUE_ENABLE` address. The function checks Tx/Rx result and receives Hardware error.
+`write1ByteTxRx()` function sends an instruction to the #`DXL1_ID` and #`DXL2_ID` DYNAMIXEL in `PROTOCOL_VERSION` communication protocol through #`port_num` port, writing 1 byte of `TORQUE_ENABLE` value to `ADDR_PRO_TORQUE_ENABLE` address. The function checks Tx/Rx result and receives Hardware error.
 `getLastTxRxResult()` function and `getLastRxPacketError()` function get either, and then `printTxRxResult()` function and `printRxPacketError()` function show results on the console window if any communication error or Hardware error has been occurred.
 
 ``` m
@@ -546,12 +546,12 @@ To continue their rotation, press any key except ESC.
 
 `groupSyncWriteAddParam()` function stores the Dynamixel ID and its `LEN_PRO_GOAL_POSITION` bytes goal position `dxl_goal_position` to the syncwrite target Dynamixel list.
 
-`groupSyncWriteTxPacket()` function orders to the Dynamixel #`DXL1_ID` and #`DXL2_ID` at the same time through #`port_num`, making it possible to write same pre-listed length bytes to same pre-listed address. The function checks Tx/Rx result.
+`groupSyncWriteTxPacket()` function sends an instruction to the Dynamixel #`DXL1_ID` and #`DXL2_ID` at the same time through #`port_num`, making it possible to write same pre-listed length bytes to same pre-listed address. The function checks Tx/Rx result.
 `getLastTxRxResult()` function gets it, and then `printTxRxResult()` function shows result on the console window if any communication error has been occurred.
 
 `groupSyncWriteClearParam()` function clears the Dynamixel list of groupsyncwrite.
 
-`groupSyncReadTxRxPacket()` function orders to the Dynamixel #`DXL1_ID` and #`DXL2_ID` at the same time through #`port_num` port,  making it possible to read same pre-listed length(LEN_PRO_PRESENT_POSITION) of bytes from same pre-listed address(ADDR_PRO_PRESENT_POSITION). The function checks Tx/Rx result.
+`groupSyncReadTxRxPacket()` function sends an instruction to the Dynamixel #`DXL1_ID` and #`DXL2_ID` at the same time through #`port_num` port,  making it possible to read same pre-listed length(LEN_PRO_PRESENT_POSITION) of bytes from same pre-listed address(ADDR_PRO_PRESENT_POSITION). The function checks Tx/Rx result.
 `getLastTxRxResult()` function gets it, and then `printTxRxResult()` function shows result on the console window if any communication error has been occurred.
 
 `groupSyncReadIsAvailable()` function checks if available data is in the groupsyncread data storage. The function returns false if no data is available in the storage.
@@ -584,7 +584,7 @@ end
 
 The controller frees the DYNAMIXEL to be idle.
 
-`write1ByteTxRx()` function orders to the #`DXL1_ID` and #`DXL2_ID` DYNAMIXEL in `PROTOCOL_VERSION` communication protocol through #`port_num` port, writing 1 byte of `TORQUE_DISABLE` value to `ADDR_PRO_TORQUE_ENABLE` address. The function checks Tx/Rx result and receives Hardware error.
+`write1ByteTxRx()` function sends an instruction to the #`DXL1_ID` and #`DXL2_ID` DYNAMIXEL in `PROTOCOL_VERSION` communication protocol through #`port_num` port, writing 1 byte of `TORQUE_DISABLE` value to `ADDR_PRO_TORQUE_ENABLE` address. The function checks Tx/Rx result and receives Hardware error.
 `getLastTxRxResult()` function and `getLastRxPacketError()` function get either, and then `printTxRxResult()` function and `printRxPacketError()` function show results on the console window if any communication error or Hardware error has been occurred.
 
 ``` m

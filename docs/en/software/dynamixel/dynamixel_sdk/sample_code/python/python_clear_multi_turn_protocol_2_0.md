@@ -402,7 +402,7 @@ else:
 
 As mentioned in the document, above code enables Dynamixel torque to set its status as being ready to move.
 
-`packetHandler.write1ByteTxRx()` function orders to the #`DXL_ID` Dynamixel in `PROTOCOL_VERSION` communication protocol through #`port_num` port, writing 1 byte of `TORQUE_ENABLE` value to `ADDR_TORQUE_ENABLE` address. The function checks Tx/Rx result and receives Hardware error.
+`packetHandler.write1ByteTxRx()` function sends an instruction to the #`DXL_ID` Dynamixel in `PROTOCOL_VERSION` communication protocol through #`port_num` port, writing 1 byte of `TORQUE_ENABLE` value to `ADDR_TORQUE_ENABLE` address. The function checks Tx/Rx result and receives Hardware error.
 `packetHandler.getLastTxRxResult()` function and `packetHandler.getLastRxPacketError()` function get either.
 
 ```python
@@ -477,14 +477,14 @@ During `while()` loop, the controller wait to any key input for start `while()` 
 
 To continue its rotation, press any key except ESC.
 
-`packetHandler.write4ByteTxRx()` function orders to the #`DXL_ID` Dynamixel in `PROTOCOL_VERSION` communication protocol through #`port_num` port, writing 4 byte of `MAX_POSITION_VALUE` value to `ADDR_GOAL_POSITION` address. The function checks Tx/Rx result and receives Hardware error.
+`packetHandler.write4ByteTxRx()` function sends an instruction to the #`DXL_ID` Dynamixel in `PROTOCOL_VERSION` communication protocol through #`port_num` port, writing 4 byte of `MAX_POSITION_VALUE` value to `ADDR_GOAL_POSITION` address. The function checks Tx/Rx result and receives Hardware error.
 `packetHandler.getLastTxRxResult()` function and `packetHandler.getLastRxPacketError()` function get either.
 
-`packetHandler.read4ByteTxRx()` function orders to the #`DXL_ID` Dynamixel in `PROTOCOL_VERSION` communication protocol through #`port_num` port, requesting 4 bytes of value in `ADDR_PRESENT_POSITION` address. The function checks Tx/Rx result and receives Hardware error.
+`packetHandler.read4ByteTxRx()` function sends an instruction to the #`DXL_ID` Dynamixel in `PROTOCOL_VERSION` communication protocol through #`port_num` port, requesting 4 bytes of value in `ADDR_PRESENT_POSITION` address. The function checks Tx/Rx result and receives Hardware error.
 `packetHandler.getLastTxRxResult()` function and `packetHandler.getLastRxPacketError()` function get either.
 
-When the space key input, `packetHandler.write4ByteTxRx()` function orders to the #`DXL_ID` Dynamixel in `PROTOCOL_VERSION` communication protocol through #`port_num` port, writing 4 byte of `dxl_present_position` value to `ADDR_GOAL_POSITION` address. The function checks Tx/Rx result and receives Hardware error.
-`packetHandler.getLastTxRxResult()` function and `packetHandler.getLastRxPacketError()` function get either. And then `packetHandler.clearMultiTurn()` function orders to the #`DXL_ID` Dynamixel in `PROTOCOL_VERSION` communication protocol through #`port_num` port.
+When the space key input, `packetHandler.write4ByteTxRx()` function sends an instruction to the #`DXL_ID` Dynamixel in `PROTOCOL_VERSION` communication protocol through #`port_num` port, writing 4 byte of `dxl_present_position` value to `ADDR_GOAL_POSITION` address. The function checks Tx/Rx result and receives Hardware error.
+`packetHandler.getLastTxRxResult()` function and `packetHandler.getLastRxPacketError()` function get either. And then `packetHandler.clearMultiTurn()` function sends an instruction to the #`DXL_ID` Dynamixel in `PROTOCOL_VERSION` communication protocol through #`port_num` port.
 
 Reading its present position will be ended when absolute value of `(MAX_POSITION_VALUE - dxl_present_position)` becomes smaller then `DXL_MOVING_STATUS_THRESHOLD`. 
 
@@ -499,7 +499,7 @@ elif dxl_error != 0:
 
 The controller frees the Dynamixel to be idle.
 
-`packetHandler.write1ByteTxRx()` function orders to the #`DXL_ID` Dynamixel in `PROTOCOL_VERSION` communication protocol through #`port_num` port, writing 1 byte of `TORQUE_DISABLE` value to `ADDR_PRO_TORQUE_ENABLE` address. The function checks Tx/Rx result and receives Hardware error.
+`packetHandler.write1ByteTxRx()` function sends an instruction to the #`DXL_ID` Dynamixel in `PROTOCOL_VERSION` communication protocol through #`port_num` port, writing 1 byte of `TORQUE_DISABLE` value to `ADDR_PRO_TORQUE_ENABLE` address. The function checks Tx/Rx result and receives Hardware error.
 `packetHandler.getLastTxRxResult()` function and `packetHandler.getLastRxPacketError()` function get either.
 
 ```python

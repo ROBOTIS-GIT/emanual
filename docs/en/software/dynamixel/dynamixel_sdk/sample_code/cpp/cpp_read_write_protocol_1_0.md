@@ -603,7 +603,7 @@ Secondly, the controller sets the communication `BAUDRATE` at the port opened pr
 
 As mentioned in the document, above code enables Dynamixel torque to set its status as being ready to move.
 
-`dynamixel::PacketHandler::write1ByteTxRx()` function orders to the #`DXL_ID` Dynamixel through the port which the `portHandler` handles, writing 1 byte of `TORQUE_ENABLE` value to `ADDR_MX_TORQUE_ENABLE` address. Then, it receives the `dxl_error`. The function returns 0 if no communication error has been occurred.
+`dynamixel::PacketHandler::write1ByteTxRx()` function sends an instruction to the #`DXL_ID` Dynamixel through the port which the `portHandler` handles, writing 1 byte of `TORQUE_ENABLE` value to `ADDR_MX_TORQUE_ENABLE` address. Then, it receives the `dxl_error`. The function returns 0 if no communication error has been occurred.
 
 ``` cpp
   while(1)
@@ -656,9 +656,9 @@ During `while()` loop, the controller writes and reads the Dynamixel position th
 
 To continue its rotation, press any key except ESC.
 
-`dynamixel::PacketHandler::write2ByteTxRx()` function orders to the #`DXL_ID` Dynamixel through the port which the `portHandler` handles, writing 2 bytes of `dxl_goal_position[index]` value to `ADDR_MX_GOAL_POSITION` address. Then, it receives the `dxl_error`. The function returns 0 if no communication error has been occurred.
+`dynamixel::PacketHandler::write2ByteTxRx()` function sends an instruction to the #`DXL_ID` Dynamixel through the port which the `portHandler` handles, writing 2 bytes of `dxl_goal_position[index]` value to `ADDR_MX_GOAL_POSITION` address. Then, it receives the `dxl_error`. The function returns 0 if no communication error has been occurred.
 
-`dynamixel::PacketHandler::read2ByteTxRx()` functions orders to the #`DXL_ID` Dynamixel through the port which the `portHandler` handles, requesting 2 bytes of value of `ADDR_MX_PRESENT_POSITION` address. Then, it receives `dxl_present_position` and `dxl_error`. The function returns 0 if no communication error has been occurred.
+`dynamixel::PacketHandler::read2ByteTxRx()` functions sends an instruction to the #`DXL_ID` Dynamixel through the port which the `portHandler` handles, requesting 2 bytes of value of `ADDR_MX_PRESENT_POSITION` address. Then, it receives `dxl_present_position` and `dxl_error`. The function returns 0 if no communication error has been occurred.
 
 Reading its present position will be ended when absolute value of `(dxl_goal_position[index] - dxl_present_position)` becomes smaller then `DXL_MOVING_STATUS_THRESHOLD`.
 
@@ -679,7 +679,7 @@ At last, it changes its direction to the counter-wise and waits for extra key in
 
 The controller frees the Dynamixel to be idle.
 
-`dynamixel::PacketHandler::write1ByteTxRx()` function orders to the #`DXL_ID` Dynamixel through the port which the `portHandler` handles, writing 1 byte of `TORQUE_DISABLE` value to `ADDR_MX_TORQUE_ENABLE` address. Then, it receives the `dxl_error`. The function returns 0 if no communication error has been occurred.
+`dynamixel::PacketHandler::write1ByteTxRx()` function sends an instruction to the #`DXL_ID` Dynamixel through the port which the `portHandler` handles, writing 1 byte of `TORQUE_DISABLE` value to `ADDR_MX_TORQUE_ENABLE` address. Then, it receives the `dxl_error`. The function returns 0 if no communication error has been occurred.
 
 ``` cpp
   // Close port
