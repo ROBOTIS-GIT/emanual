@@ -126,7 +126,7 @@ $ git clone https://github.com/ROBOTIS-GIT/turtlebot3.git
 
 ``` bash
 $ cd ~/catkin_ws/src/turtlebot3
-$ sudo rm -r turtlebot3_description/ turtlebot3_teleop/ turtlebot3_navigation/ turtlebot3_slam/ turtlebot3_example/
+$ rm -r turtlebot3_description/ turtlebot3_teleop/ turtlebot3_navigation/ turtlebot3_slam/ turtlebot3_example/
 ```
 
 **[TurtleBot]** Install dependent packages
