@@ -44,6 +44,14 @@ page_number: 11
 
 This instruction was tested on `Ubuntu 16.04`, `Ubuntu Mate`, `Linux Mint` and `Raspbian`. You can use the following command after connecting OpenCR to remote PC (your desktop or laptop PC) or connect OpenCR to your TurtleBot PC (`Intel® Joule™`, `Raspberry Pi 3`) and execute the following command.
 
+Please make sure that `libc6:armhf` is installed to run the OpenCR firmware updater on the Raspberry Pi.
+
+```bash
+$ sudo dpkg --add-architecture armhf
+$ sudo apt-get update
+$ sudo apt-get install libc6:armhf
+```
+
 - TurtleBot3 Burger
 
   ``` bash
