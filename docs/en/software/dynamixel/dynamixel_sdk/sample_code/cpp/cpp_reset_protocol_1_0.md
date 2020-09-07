@@ -649,7 +649,7 @@ Secondly, the controller sets the communication `BAUDRATE` at the port opened pr
   dxl_comm_result = packetHandler->factoryReset(portHandler, DXL_ID, OPERATION_MODE, &dxl_error);
 ```
 
-`dynamixel::PacketHandler::factoryReset()` function orders to the #`DXL_ID` Dynamixel through the port which the `portHandler` handles, executing it to be reset as `OPERATION_MODE` format. Then, it receives `dxl_error`. The function returns 0 if no communication error has been occurred.
+`dynamixel::PacketHandler::factoryReset()` function sends an instruction to the #`DXL_ID` Dynamixel through the port which the `portHandler` handles, executing it to be reset as `OPERATION_MODE` format. Then, it receives `dxl_error`. The function returns 0 if no communication error has been occurred.
 
 ``` cpp
   // Wait for reset
@@ -712,7 +712,7 @@ This shows that reconnection between controller and Dynamixel is happened by adj
   }
 ```
 
-To make the Dynamixel into previous condition, `dynamixel::PacketHandler::write1ByteTxRx` function orders to the #`DXL_ID` Dynamixel through the port which the `portHandler` handles, writing 1 bytes of `NEW_BAUDNUM` value to `ADDR_MX_BAUDRATE` address. Then, it receives the `dxl_error`. The function returns 0 if no communication error has been occurred.
+To make the Dynamixel into previous condition, `dynamixel::PacketHandler::write1ByteTxRx` function sends an instruction to the #`DXL_ID` Dynamixel through the port which the `portHandler` handles, writing 1 bytes of `NEW_BAUDNUM` value to `ADDR_MX_BAUDRATE` address. Then, it receives the `dxl_error`. The function returns 0 if no communication error has been occurred.
 
 ``` cpp
   // Set port baudrate to BAUDRATE

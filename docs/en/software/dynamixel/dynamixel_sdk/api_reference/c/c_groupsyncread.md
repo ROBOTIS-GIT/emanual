@@ -33,7 +33,7 @@ sidebar:
 | Methods                                                   | Description                                                |
 |:----------------------------------------------------------|:-----------------------------------------------------------|
 | **[groupSyncRead](#groupsyncread)**                       | Initializes members of packet data pointer struct          |
-| **[groupSyncReadAddParam](#groupsyncread_addparam)**      | Adds parameter storage for read                            |
+| **[groupSyncReadAddParam](#groupsyncreadaddparam)**       | Adds parameter storage for read                            |
 | **[groupSyncReadRemoveParam](#groupsyncreadremoveparam)** | Removes parameter on the storage                           |
 | **[groupSyncReadClearParam](#groupsyncreadclearparam)**   | Clears parameter storage                                   |
 | **[groupSyncReadTxPacket](#groupsyncreadtxpacket)**       | Transmits packet to the number of DYNAMIXEL's               |

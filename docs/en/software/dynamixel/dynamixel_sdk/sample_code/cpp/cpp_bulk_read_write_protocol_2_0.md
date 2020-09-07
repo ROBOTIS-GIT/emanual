@@ -839,7 +839,7 @@ Secondly, the controller sets the communication `BAUDRATE` at the port opened pr
 
 As mentioned in the document, above code enables each Dynamixel`s torque to set their status as being ready to move.
 
-`dynamixel::PacketHandler::write1ByteTxRx()` function orders to the #`DXL_ID` Dynamixel through the port which the `portHandler` handles, writing 1 byte of `TORQUE_ENABLE` value to `ADDR_PRO_TORQUE_ENABLE` address. Then, it receives the `dxl_error`. The function returns 0 if no communication error has been occurred.
+`dynamixel::PacketHandler::write1ByteTxRx()` function sends an instruction to the #`DXL_ID` Dynamixel through the port which the `portHandler` handles, writing 1 byte of `TORQUE_ENABLE` value to `ADDR_PRO_TORQUE_ENABLE` address. Then, it receives the `dxl_error`. The function returns 0 if no communication error has been occurred.
 
 
 ``` cpp
@@ -951,11 +951,11 @@ From `param_goal_position[0]` to `param_goal_position[1]` becomes filled with ea
 
 `dynamixel::GroupBulkWrite::addParam()` function stores the Dynamixel ID and its goal position `param_goal_position` or red LED value `dxl_led_value` to the bulkwrite target Dynamixel list.
 
-`dynamixel::GroupBulkWrite::txPacket()` function orders to the Dynamixel #`DXL1_ID` and #`DXL2_ID` at the same time through the port which the `portHandler` handles, making it possible to write data bytes to different address. (In this example, `LEN_PRO_GOAL_POSITION` bytes of the values to the address `ADDR_PRO_GOAL_POSITION` and `LEN_PRO_LED_RED` bytes of the values to the address `ADDR_PRO_LED_RED`, each.) The function returns 0 if no communication error has been occurred.
+`dynamixel::GroupBulkWrite::txPacket()` function sends an instruction to the Dynamixel #`DXL1_ID` and #`DXL2_ID` at the same time through the port which the `portHandler` handles, making it possible to write data bytes to different address. (In this example, `LEN_PRO_GOAL_POSITION` bytes of the values to the address `ADDR_PRO_GOAL_POSITION` and `LEN_PRO_LED_RED` bytes of the values to the address `ADDR_PRO_LED_RED`, each.) The function returns 0 if no communication error has been occurred.
 
 `dynamixel::GroupBulkWrite::clearParam()` function clears the Dynamixel list of groupsyncwrite.
 
-`dynamixel::GroupBulkRead::txRxPacket()` function orders to the Dynamixel #`DXL1_ID` and #`DXL2_ID` at the same time through the port which the `portHandler` handles, making it possible to require data bytes from different address. (In this example, `LEN_PRO_PRESENT_POSITION` bytes of the values to the address `ADDR_PRO_PRESENT_POSITION` and `LEN_PRO_LED_RED` bytes of the values to the address `ADDR_PRO_LED_RED`, each.) The function returns 0 if no communication error has been occurred.
+`dynamixel::GroupBulkRead::txRxPacket()` function sends an instruction to the Dynamixel #`DXL1_ID` and #`DXL2_ID` at the same time through the port which the `portHandler` handles, making it possible to require data bytes from different address. (In this example, `LEN_PRO_PRESENT_POSITION` bytes of the values to the address `ADDR_PRO_PRESENT_POSITION` and `LEN_PRO_LED_RED` bytes of the values to the address `ADDR_PRO_LED_RED`, each.) The function returns 0 if no communication error has been occurred.
 
 `dynamixel::GroupBulkRead::isAvailable()` function checks if available data is in the groupbulkread data storage. The function returns false if no data is available in the storage.
 
@@ -993,7 +993,7 @@ At last, it changes their direction to the counter-wise and waits for extra key 
 
 The controller frees the DYNAMIXEL to be idle.
 
-`dynamixel::PacketHandler::write1ByteTxRx()` function orders to the #`DXL_ID` Dynamixel through the port which the `portHandler` handles, writing 1 byte of `TORQUE_DISABLE` value to `ADDR_PRO_TORQUE_ENABLE` address. Then, it receives the `dxl_error`. The function returns 0 if no communication error has been occurred.
+`dynamixel::PacketHandler::write1ByteTxRx()` function sends an instruction to the #`DXL_ID` Dynamixel through the port which the `portHandler` handles, writing 1 byte of `TORQUE_DISABLE` value to `ADDR_PRO_TORQUE_ENABLE` address. Then, it receives the `dxl_error`. The function returns 0 if no communication error has been occurred.
 
 ``` cpp
   // Close port

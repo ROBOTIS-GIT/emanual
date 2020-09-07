@@ -990,7 +990,7 @@ Indirect address and Indirect data are particularly applicable to control severa
 
 However, Dynamixel PRO has Indirect Address items on its EEPROM area. (Please see the E-Manual.) To change them, you must disable the torque at first.
 
-Above `dynamixel::PacketHandler::write1ByteTxRx()` function orders to the #`DXL_ID` Dynamixel through the port which the `portHandler` handles, writing 1 byte of `TORQUE_DISABLE` value to `ADDR_PRO_TORQUE_ENABLE` address. Then, it receives the `dxl_error`. The function returns 0 if no communication error has been occurred.
+Above `dynamixel::PacketHandler::write1ByteTxRx()` function sends an instruction to the #`DXL_ID` Dynamixel through the port which the `portHandler` handles, writing 1 byte of `TORQUE_DISABLE` value to `ADDR_PRO_TORQUE_ENABLE` address. Then, it receives the `dxl_error`. The function returns 0 if no communication error has been occurred.
 
 ``` cpp
   // INDIRECTDATA parameter storages replace LED, goal position, present position and moving status storages
@@ -1117,7 +1117,7 @@ These allocate five target address for writing (ADDR_PRO_PRESENT_POSITION + 0, A
 
 As mentioned in the document, above code enables each Dynamixel`s torque to set their status as being ready to move.
 
-`dynamixel::PacketHandler::write1ByteTxRx()` function orders to the #`DXL_ID` Dynamixel through the port which the `portHandler` handles, writing 1 byte of `TORQUE_ENABLE` value to `ADDR_PRO_TORQUE_ENABLE` address. Then, it receives the `dxl_error`. The function returns 0 if no communication error has been occurred.
+`dynamixel::PacketHandler::write1ByteTxRx()` function sends an instruction to the #`DXL_ID` Dynamixel through the port which the `portHandler` handles, writing 1 byte of `TORQUE_ENABLE` value to `ADDR_PRO_TORQUE_ENABLE` address. Then, it receives the `dxl_error`. The function returns 0 if no communication error has been occurred.
 
 ``` cpp
   // Add parameter storage for the present position value
@@ -1212,11 +1212,11 @@ From `param_indirect_data_for_write[0]` to `param_indirect_data_for_write[4]` be
 
 `dynamixel::GroupSyncWrite::addParam()` function stores the Dynamixel ID and its goal position `param_indirect_data_for_write` to the syncwrite target Dynamixel list.
 
-`dynamixel::GroupSyncWrite::txPacket()` function orders to the Dynamixel #`DXL_ID` through the port which the `portHandler` handles, making it possible to write same pre-listed length bytes to same pre-listed address. The function returns 0 if no communication error has been occurred.
+`dynamixel::GroupSyncWrite::txPacket()` function sends an instruction to the Dynamixel #`DXL_ID` through the port which the `portHandler` handles, making it possible to write same pre-listed length bytes to same pre-listed address. The function returns 0 if no communication error has been occurred.
 
 `dynamixel::GroupSyncWrite::clearParam()` function clears the Dynamixel list of groupsyncwrite.
 
-`dynamixel::GroupSyncRead::txRxPacket()` function orders to the Dynamixel #`DXL_ID` through the port which the `portHandler` handles,  making it possible to read same pre-listed length(LEN_PRO_INDIRECTDATA_FOR_READ) of bytes to same pre-listed address(ADDR_PRO_INDIRECTDATA_FOR_READ). The function returns 0 if no communication error has been occurred.
+`dynamixel::GroupSyncRead::txRxPacket()` function sends an instruction to the Dynamixel #`DXL_ID` through the port which the `portHandler` handles,  making it possible to read same pre-listed length(LEN_PRO_INDIRECTDATA_FOR_READ) of bytes to same pre-listed address(ADDR_PRO_INDIRECTDATA_FOR_READ). The function returns 0 if no communication error has been occurred.
 
 `dynamixel::GroupSyncRead::isAvailable()` function checks if available data is in the groupsyncread data storage. The function returns false if no data is available in the storage.
 
@@ -1243,7 +1243,7 @@ At last, it changes their direction to the counter-wise and waits for extra key 
 
 The controller frees the Dynamixel to be idle.
 
-`dynamixel::PacketHandler::write1ByteTxRx()` function orders to the #`DXL_ID` Dynamixel through the port which the `portHandler` handles, writing 1 byte of `TORQUE_DISABLE` value to `ADDR_PRO_TORQUE_ENABLE` address. Then, it receives the `dxl_error`. The function returns 0 if no communication error has been occurred.
+`dynamixel::PacketHandler::write1ByteTxRx()` function sends an instruction to the #`DXL_ID` Dynamixel through the port which the `portHandler` handles, writing 1 byte of `TORQUE_DISABLE` value to `ADDR_PRO_TORQUE_ENABLE` address. Then, it receives the `dxl_error`. The function returns 0 if no communication error has been occurred.
 
 ``` cpp
   // Close port

@@ -30,14 +30,14 @@ sidebar:
 
   None
 
-| Methods                                                      | Description                                       |
-|:-------------------------------------------------------------|:--------------------------------------------------|
-| **[groupSyncWrite](#groupsyncwrite)**                        | Initializes members of packet data pointer struct |
-| **[groupSyncWriteAddParam](#groupsyncwrite_addparam)**       | Adds parameter storage for read                   |
-| **[groupSyncWriteRemoveParam](#groupsyncwrite_removeparam)** | Removes parameter on the storage                  |
-| **[groupSyncWriteChangeParam](#groupsyncwrite_changeparam)** | Changes parameter on the storage                  |
-| **[groupSyncWriteClearParam](#groupsyncwrite_clearparam)**   | Clears parameter storage                          |
-| **[groupSyncWriteTxPacket](#groupsyncwrite_txpacket)**       | Transmits packet to the number of DYNAMIXEL's      |
+| Methods                                                     | Description                                       |
+|:------------------------------------------------------------|:--------------------------------------------------|
+| **[groupSyncWrite](#groupsyncwrite)**                       | Initializes members of packet data pointer struct |
+| **[groupSyncWriteAddParam](#groupsyncwriteaddparam)**       | Adds parameter storage for write                  |
+| **[groupSyncWriteRemoveParam](#groupsyncwriteremoveparam)** | Removes parameter on the storage                  |
+| **[groupSyncWriteChangeParam](#groupsyncwritechangeparam)** | Changes parameter on the storage                  |
+| **[groupSyncWriteClearParam](#groupsyncwriteclearparam)**   | Clears parameter storage                          |
+| **[groupSyncWriteTxPacket](#groupsyncwritetxpacket)**       | Transmits packet to the number of DYNAMIXEL's     |
 
 
 

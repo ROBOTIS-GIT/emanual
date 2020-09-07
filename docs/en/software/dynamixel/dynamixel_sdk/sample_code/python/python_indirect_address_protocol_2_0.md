@@ -515,7 +515,7 @@ Indirect address and Indirect data are particularly applicable to control severa
 
 However, Dynamixel PRO has Indirect Address items on its EEPROM area. (Please see the E-Manual.) To change them, you must disable the torque at first.
 
-Above `write1ByteTxRx()` function orders to the #`DXL_ID` Dynamixel through the port, writing 1 byte of `TORQUE_DISABLE` value to `ADDR_PRO_TORQUE_ENABLE` address. The function checks Tx/Rx result and receives Hardware error.
+Above `write1ByteTxRx()` function sends an instruction to the #`DXL_ID` Dynamixel through the port, writing 1 byte of `TORQUE_DISABLE` value to `ADDR_PRO_TORQUE_ENABLE` address. The function checks Tx/Rx result and receives Hardware error.
 `getLastTxRxResult()` function and `getLastRxPacketError()` function get either, and then `printTxRxResult()` function and `printRxPacketError()` function show results on the console window if any communication error or Hardware error has been occurred.
 
 ```python
@@ -599,7 +599,7 @@ elif dynamixel.getLastRxPacketError(port_num, PROTOCOL_VERSION) != 0:
 
 As mentioned in the document, above code enables each Dynamixel`s torque to set their status as being ready to move.
 
-`write1ByteTxRx()` function orders to the #`DXL_ID` Dynamixel in `PROTOCOL_VERSION` communication protocol through #`port_num` port, writing 1 byte of `TORQUE_ENABLE` value to `ADDR_PRO_TORQUE_ENABLE` address. The function checks Tx/Rx result and receives Hardware error.
+`write1ByteTxRx()` function sends an instruction to the #`DXL_ID` Dynamixel in `PROTOCOL_VERSION` communication protocol through #`port_num` port, writing 1 byte of `TORQUE_ENABLE` value to `ADDR_PRO_TORQUE_ENABLE` address. The function checks Tx/Rx result and receives Hardware error.
 `getLastTxRxResult()` function and `getLastRxPacketError()` function get either, and then `printTxRxResult()` function and `printRxPacketError()` function show results on the console window if any communication error or Hardware error has been occurred.
 
 ```python
@@ -681,12 +681,12 @@ To continue their rotation, press any key except ESC.
 
 `groupSyncWriteAddParam()` function stores the Dynamixel ID and its goal position `dxl_goal_position` and LED value `dxl_led_value` to the syncwrite target Dynamixel list.
 
-`groupSyncWriteTxPacket()` function orders to the Dynamixel #`DXL_ID` through the port, making it possible to write same pre-listed length bytes to same pre-listed address. The function checks Tx/Rx result.
+`groupSyncWriteTxPacket()` function sends an instruction to the Dynamixel #`DXL_ID` through the port, making it possible to write same pre-listed length bytes to same pre-listed address. The function checks Tx/Rx result.
 `getLastTxRxResult()` function get it, and then `printTxRxResult()` function shows result on the console window if any communication error has been occurred.
 
 `groupSyncWriteClearParam()` function clears the Dynamixel list of groupsyncwrite.
 
-`groupSyncReadTxRxPacket()` function orders to the Dynamixel #`DXL_ID` through #`port_num` port,  making it possible to read same pre-listed length(LEN_PRO_INDIRECTDATA_FOR_READ) of bytes to same pre-listed address(ADDR_PRO_INDIRECTDATA_FOR_READ). The function checks Tx/Rx result.
+`groupSyncReadTxRxPacket()` function sends an instruction to the Dynamixel #`DXL_ID` through #`port_num` port,  making it possible to read same pre-listed length(LEN_PRO_INDIRECTDATA_FOR_READ) of bytes to same pre-listed address(ADDR_PRO_INDIRECTDATA_FOR_READ). The function checks Tx/Rx result.
 `getLastTxRxResult()` function gets it, and then `printTxRxResult()` function shows result on the console window if any communication error has been occurred.
 
 `groupSyncReadIsAvailable()` function checks if available data is in the groupsyncread data storage. The function returns false if no data is available in the storage.
@@ -710,7 +710,7 @@ elif dynamixel.getLastRxPacketError(port_num, PROTOCOL_VERSION) != 0:
 
 The controller frees the Dynamixel to be idle.
 
-`write1ByteTxRx()` function orders to the #`DXL_ID` Dynamixel in `PROTOCOL_VERSION` communication protocol through #`port_num` port, writing 1 byte of `TORQUE_DISABLE` value to `ADDR_PRO_TORQUE_ENABLE` address. The function checks Tx/Rx result and receives Hardware error.
+`write1ByteTxRx()` function sends an instruction to the #`DXL_ID` Dynamixel in `PROTOCOL_VERSION` communication protocol through #`port_num` port, writing 1 byte of `TORQUE_DISABLE` value to `ADDR_PRO_TORQUE_ENABLE` address. The function checks Tx/Rx result and receives Hardware error.
 `getLastTxRxResult()` function and `getLastRxPacketError()` function get either, and then `printTxRxResult()` function and `printRxPacketError()` function show results on the console window if any communication error or Hardware error has been occurred.
 
 ```python
