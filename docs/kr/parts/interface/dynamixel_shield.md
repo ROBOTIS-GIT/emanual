@@ -386,7 +386,7 @@ bool syncWriteEnd(void);
 [readEvent()]: /docs/en/popup/arduino_api/readEvent/
 [flushRx()]: /docs/en/popup/arduino_api/flushRx/
 [available()]: /docs/en/popup/arduino_api/available/
-[read()]: /docs/en/popup/arduino_api/read/
+[read()]: /docs/en/popup/arduino_api/rc100_read/
 [peek()]: /docs/en/popup/arduino_api/peek/
 [flush()]: /docs/en/popup/arduino_api/flush/
-[write()]: /docs/en/popup/arduino_api/write/
+[write()]: /docs/en/popup/arduino_api/rc100_write/
