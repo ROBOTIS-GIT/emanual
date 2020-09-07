@@ -538,15 +538,16 @@ Both types of 3-pin TTL pins are included in OpenCM Accessory Set.
 |:--------------------:|:-------------:|:------------:|
 |   [DYNAMIXEL SDK]    |       O       |      X       |
 | [DYNAMIXELWorkbench] |       O       |      X       |
-|  Arduino Libraries   |       O       |      O       |
+| [Arduino Libraries]  |       O       |      X       |
 |         OS X         |       O       |  O(10.12.2)  |
 |        Linux         |       O       |   O(12.04)   |
 |       Windows        |       O       |      O       |
 
 ## [OpenCM IDE](#opencm-ide)
-For developers who are using OpenCM IDE, it is recommended to use [Arduino IDE] as OpenCM IDE will not be maintained anymore.
 
-`e-Manual` [OpenCM IDE]
+**OpenCM IDE is deprecated.** Please use [Arduino IDE].
+
+- [OpenCM IDE] manual
 
 ## [Arduino IDE](#arduino-ide)
 
@@ -731,6 +732,8 @@ The value of COM1 may be different depending on the environment connected to the
 {% include en/software/arduino/arduino_library_api.md %}
 
 # [Examples](#examples)
+
+You can find more examples after installing [DYNAMIXEL2Arduino library]
 
 ## [LED](#led)
 
@@ -946,10 +949,6 @@ void loop() {
   }
 }
 ```
-
-## [DYNAMIXELWorkbench](#dynamixelworkbench)
-
-- [DYNAMIXEL Workbench examples](/docs/en/software/dynamixel/dynamixel_workbench/#opencr-and-opencm-tutorials)
 
 ## [Servo](#servo)
 
@@ -2106,5 +2105,7 @@ DYNAMIXEL Channel is a firmware feature of OpenCM9.04 that controls which bus DY
 [OpenCM IDE]: http://emanual.robotis.com/docs/en/software/opencm_ide/getting_started/
 [DYNAMIXEL SDK]: /docs/en/software/dynamixel/dynamixel_sdk/overview/
 [DYNAMIXELWorkbench]: http://wiki.ros.org/dynamixel_workbench
+[Arduino Libraries]: /docs/en/parts/controller/opencm904/#library-api
 [Arduino Official Guide]: https://www.arduino.cc/en/Guide/Libraries
 [GitHub repository]: https://github.com/ROBOTIS-GIT/Dynamixel2Arduino
+[DYNAMIXEL2Arduino library]: #library-api
