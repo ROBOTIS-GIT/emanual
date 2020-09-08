@@ -22588,7 +22588,9 @@ opencm904:
     urlkr: /parts/controller/opencm904/#하드웨어
     children:
     - title: "Memory Map"
+      titlekr: "메모리 맵"
       url: /parts/controller/opencm904/#memory-map
+      urlkr: /parts/controller/opencm904/#메모리-맵
     - title: "Block Diagram"
       titlekr: "블럭 다이어그램"
       url: /parts/controller/opencm904/#block-diagram
@@ -22647,9 +22649,13 @@ opencm904:
         url: /parts/controller/opencm904/#io-header
         urlkr: /parts/controller/opencm904/#입출력-io헤더
     - title: "Pin Name Definition"
+      titlekr: "핀 이름 정의"
       url: /parts/controller/opencm904/#pin-name-definition
+      urlkr: /parts/controller/opencm904/#핀-이름-정의
     - title: "Pin Function Definition"
+      titlekr: "핀 기능 정의"
       url: /parts/controller/opencm904/#pin-function-definition
+      urlkr: /parts/controller/opencm904/#핀-기능-정의
   - title: "Connecting Power"
     titlekr: "전원 연결 방법"
     url: /parts/controller/opencm904/#connecting-power
@@ -22712,8 +22718,6 @@ opencm904:
       url: /parts/controller/opencm904/#pwm
     - title: "EEPROM"
       url: /parts/controller/opencm904/#eeprom
-    - title: "DYNAMIXEL Workbench"
-      url: /parts/controller/opencm904/#dynamixelworkbench
     - title: "Servo"
       url: /parts/controller/opencm904/#servo
     - title: "SD Card"
