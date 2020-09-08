@@ -53,7 +53,7 @@ The contents in e-Manual can be updated without a previous notice. Therefore, so
 2. Install dependent packages using the following commands.
   ```bash
   $ cd ~/turtlebot3_ws/src/
-  $ git clone -b ros2 https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3.git
+  $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3.git
   $ cd ~/turtlebot3_ws && colcon build --symlink-install
   ```
 
@@ -63,7 +63,7 @@ The contents in e-Manual can be updated without a previous notice. Therefore, so
 2. Install dependent packages using the following commands.
   ```bash
   $ cd ~/robotis_ws/src/
-  $ git clone -b ros2 https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3.git
+  $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3.git
   $ cd ~/robotis_ws && colcon build --symlink-install
   ```
   - If `colcon build` command is complete without any errors, go to the step 3.  
