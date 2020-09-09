@@ -74,13 +74,17 @@ $ sudo apt-get install ntpdate
 $ sudo ntpdate ntp.ubuntu.com
 ```
 
-## [Setup DYNAMIXEL's for TurtleBot3](#setup-dynamixels-for-turtlebot3)
+## [Setup DYNAMIXELs for TurtleBot3](#setup-dynamixels-for-turtlebot3)
 
-**WARNING**: Please connect only **ONE** DYNAMIXEL with OpenCR.
+**WARNING**: Be sure to connect only **ONE** DYNAMIXEL with OpenCR 1.0
 {: .notice--warning}
 
-1. **Upload Setup Firmware to OpenCR**  
-Press and hold the `SW2` button and click the `Reset` button. If the `Status` LED is blinking, release the `SW2` button.  
+1. Turn on the power of the OpenCR 1.0, and connect the board with your PC via a USB cable. 
+
+2. Press and hold the `SW2` button and click the `Reset` button. If the `Status` LED is blinking, release the `SW2` button. See [Boot Sequence](/docs/en/parts/controller/opencr10/#boot-sequence) for more information.
+
+3. **Upload Setup Firmware to OpenCR**  
+
 As shown in the below image, find `Examples` > `turtlebot3` > `turtlebot3_setup` > `turtlebot3_setup_motor` and open the example.  
 
     ![](/assets/images/platform/turtlebot3/faq/dynamixel_setup_1.png)

@@ -1610,13 +1610,15 @@ Excutable file can be downloaded at the provided link.
 
 ## [Recovery Mode](#recovery-mode)
 
-If currupted or incompleted firmware is downloaded and the board freezes or does not work, you must enter the boot loader to be able to download the normal firmware.  
+If currupted or incompleted firmware is downloaded and the board freezes or does not work, you must enter a boot loader to be able to download the normal firmware. See [Boot Sequence](/docs/en/parts/controller/opencr10/#boot-sequence) for more information.
+
 To execute the boot loader, please follow the instruction below.
 
-1. Hold down the `PUSH SW2` button.
-2. Press the `Reset` button.
-3. Release the `Reset` button.
-4. Release the `PUSH SW2` button.
+1. Turn on the power of the OpenCR board.
+2. Hold down the `PUSH SW2` button.
+3. Press the `Reset` button.
+4. Release the `Reset` button.
+5. Release the `PUSH SW2` button.
 
 OpenCR will enter the boot loader after reset. When the boot loader is running, the STATUS LED blinks every 100ms.
 

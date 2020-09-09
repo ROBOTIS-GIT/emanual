@@ -29,18 +29,10 @@ page_number: 24
 {% endcapture %}
 <div class="notice">{{ notice_01 | markdownify }}</div>  
 
-<!-- 
-![](/assets/images/platform/turtlebot3/home_service_challenge/temp/hsc_logo.png)    
--->
-
-<!-- The **Home Service Challenge** is the competition for  -->
-
 ![](/assets/images/platform/turtlebot3/home_service_challenge/hsc_stadium_2.png)  
-> Home Service Challenge Stadium and Objects used during the challenge.
+> Home Service Challenge Stadium and Objects
 
-<!-- 
-![view of hsc stadium](/assets/images/platform/turtlebot3/home_service_challenge/temp/hsc_stadium.png)    
--->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3aZXpVsEi0c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### [What you need to Join the Home Service Challenge](#what-you-need-to-join-the-home-service-challenge)
 `TurtleBot3 Waffle Pi`  
