@@ -30,7 +30,7 @@ common_x_specs:
   rs485_ttl:          &rs485_ttl      "TTL Half Duplex Asynchronous Serial Communication with 8bit, 1stop, No Parity<br />RS485 Asynchronous Serial Communication with 8bit, 1stop, No Parity"
   rs485_connection:   &rs485_connection "RS485 Multidrop Bus"
   ttl_connection_5v:  &ttl_connection_5v   "TTL Multidrop Bus (5V Logic)"
-  ttl_connection_3v3: &ttl_connection_3v3  "TTL Multidrop Bus (3.3V Logic)"
+  ttl_connection_3v3: &ttl_connection_3v3  "TTL Multidrop Bus (3.3V Logic, 5V Compatible)"
   rs485_ttl_conn:     &rs485_ttl_conn   "RS485 / TTL Multidrop Bus"
   id:                 &id             "253 ID (0 ~ 252)"
   feedback:           &feedback       "Position, Velocity, Current, Realtime tick, Trajectory, Temperature, Input Voltage, etc"
@@ -53,7 +53,7 @@ xl330-m077:
   mode_en:            *mode_en
   weight:             *weight_330
   dimensions:         *dimension_330
-  gearratio:          "288.4 : 1"
+  gearratio:          "77.5 : 1"
   noloadspeed:        "267 [rev/min] (at 3.7 [V]) <br /> **363 [rev/min] (at 5.0 [V])** <br /> 442 [rev/min] (at 6.0 [V])"
   stalltorque:        "0.064 [N.m] (at 3.7 [V], 0.96 [A]) <br /> **0.089 [N.m] (at 5.0 [V], 1.28 [A])** <br /> 0.104 [N.m] (at 6.0 [V], 1.52 [A])"
   radialload:         "N/A"
@@ -68,7 +68,7 @@ xl330-m077:
   id:                 *id
   feedback:           *feedback
   material:           "Engineering Plastic"
-  standbycurrent:     15 [mA]
+  standbycurrent:     16 [mA]
   
 xl330-m288:
   mcu:                "ARM CORTEX-M0+ (64 [MHz], 32Bit)"

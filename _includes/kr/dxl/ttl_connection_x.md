@@ -5,8 +5,11 @@
 
 {% if page.product_group=='xl330' %}
 
-### [TTL 통신 (3.3V Logic)](#ttl-통신-33v-logic)
+### [TTL 통신 (3.3V Logic, 5V Compatible)](#ttl-통신-33v-logic-5v-compatible)
 ![](/assets/images/dxl/3v3_ttl_circuit.png)
+
+**참고**: XL330의 통신 버스의 전압은 다른 다이나믹셀과 달리 3.3V 이지만, 5V 통신 버스와도 호환됩니다.
+{: .notice}
 
 {% else %}
 
