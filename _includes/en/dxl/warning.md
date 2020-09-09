@@ -1,8 +1,7 @@
 
 
 {% if page.product_group== 'xl330' %}
-**NOTE**: Though the communication bus of XL330 series are 3.3 V TTL logic level unlike other DYNAMIXELs, they can be compatible with 5V TTL logic level. 
-{: .notice}
+**NOTE**: Though the communication bus of XL330 series is 3.3 V TTL logic level unlike other DYNAMIXELs, the XL330 series can be also compatible with 5V TTL logic level.
 {% endif %}
 
 {% capture dxl_danger %}  
