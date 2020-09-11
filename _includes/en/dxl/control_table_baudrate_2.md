@@ -6,8 +6,8 @@ The Baud Rate(8) determines serial communication speed between a controller and 
 |:----------:|:-------------:|:---------------:|
 |     6      |   4M [bps]    |    0.000 [%]    |
 |     5      |   3M [bps]    |    0.000 [%]    |
-|     3      |   1M [bps]    |    0.000 [%]    |
 |     4      |   2M [bps]    |    0.000 [%]    |
+|     3      |   1M [bps]    |    0.000 [%]    |
 |     2      | 115,200 [bps] |   0.0064 [%]    |
 | 1(Default) | 57,600 [bps]  |   0.0016 [%]    |
 |     0      |  9,600 [bps]  |    0.000 [%]    |
@@ -19,8 +19,8 @@ The Baud Rate(8) determines serial communication speed between a controller and 
 |     7      |  4.5M [bps]   |    0.000 [%]    |
 |     6      |   4M [bps]    |    0.000 [%]    |
 |     5      |   3M [bps]    |    0.000 [%]    |
-|     3      |   1M [bps]    |    0.000 [%]    |
 |     4      |   2M [bps]    |    0.000 [%]    |
+|     3      |   1M [bps]    |    0.000 [%]    |
 |     2      | 115,200 [bps] |    0.000 [%]    |
 | 1(Default) | 57,600 [bps]  |    0.000 [%]    |
 |     0      |  9,600 [bps]  |    0.000 [%]    |
