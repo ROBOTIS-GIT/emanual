@@ -1,5 +1,6 @@
 html {
     -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+    -webkit-print-color-adjust: exact;
 }
 
 #main {
