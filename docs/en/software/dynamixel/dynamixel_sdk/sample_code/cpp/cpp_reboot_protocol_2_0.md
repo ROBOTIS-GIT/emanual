@@ -437,7 +437,7 @@ Secondly, the controller sets the communication `BAUDRATE` at the port opened pr
   }
 ```
 
-`dynamixel::PacketHandler::reboot()` function orders to the #`DXL_ID` Dynamixel through the port which the `portHandler` handles, making it reboot. While rebooting, Dynamixel LED will flicker its light. The function returns 0 if no communication error has been occurred.
+`dynamixel::PacketHandler::reboot()` function sends an instruction to the #`DXL_ID` Dynamixel through the port which the `portHandler` handles, making it reboot. While rebooting, Dynamixel LED will flicker its light. The function returns 0 if no communication error has been occurred.
 
 ``` cpp
   // Close port

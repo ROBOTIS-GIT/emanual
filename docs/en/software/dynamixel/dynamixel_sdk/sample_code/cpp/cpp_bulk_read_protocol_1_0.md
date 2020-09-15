@@ -795,7 +795,7 @@ Secondly, the controller sets the communication `BAUDRATE` at the port opened pr
 
 As mentioned in the document, above code enables each Dynamixel`s torque to set their status as being ready to move.
 
-`dynamixel::PacketHandler::write1ByteTxRx()` function orders to the #`DXL_ID` Dynamixel through the port which the `portHandler` handles, writing 1 byte of `TORQUE_ENABLE` value to `ADDR_MX_TORQUE_ENABLE` address. Then, it receives the `dxl_error`. The function returns 0 if no communication error has been occurred.
+`dynamixel::PacketHandler::write1ByteTxRx()` function sends an instruction to the #`DXL_ID` Dynamixel through the port which the `portHandler` handles, writing 1 byte of `TORQUE_ENABLE` value to `ADDR_MX_TORQUE_ENABLE` address. Then, it receives the `dxl_error`. The function returns 0 if no communication error has been occurred.
 
 
 ``` cpp
@@ -896,7 +896,7 @@ To continue their rotation, press any key except ESC.
 
 `dynamixel::PacketHandler::write2ByteTxRx()` functions order to the Dynamixel #`DXL1_ID` and #`DXL2_ID` through the ports which the `portHandler` handles, writing 2 bytes of `dxl_goal_position[index]` values to `ADDR_MX_GOAL_POSITION` address. Then, they receive the `dxl_error`s. The functions return 0 if no communication error has been occurred.
 
-`dynamixel::GroupBulkRead::txRxPacket()` function orders to the Dynamixel #`DXL1_ID` and #`DXL2_ID` at the same time through the ports which the `portHandler` handles, making it possible to require data bytes from different address. (In this example, `LEN_MX_PRESENT_POSITION` bytes of the values to the address `ADDR_MX_PRESENT_POSITION` and `LEN_MX_MOVING` bytes of the values to the address `ADDR_MX_MOVING`, each.) The function returns 0 if no communication error has been occurred.
+`dynamixel::GroupBulkRead::txRxPacket()` function sends an instruction to the Dynamixel #`DXL1_ID` and #`DXL2_ID` at the same time through the ports which the `portHandler` handles, making it possible to require data bytes from different address. (In this example, `LEN_MX_PRESENT_POSITION` bytes of the values to the address `ADDR_MX_PRESENT_POSITION` and `LEN_MX_MOVING` bytes of the values to the address `ADDR_MX_MOVING`, each.) The function returns 0 if no communication error has been occurred.
 
 `dynamixel::GroupBulkRead::isAvailable()` function checks if available data is in the groupbulkread data storage. The function returns false if no data is available in the storage.
 
@@ -934,7 +934,7 @@ At last, it changes their direction to the counter-wise and waits for extra key 
 
 The controller frees the DYNAMIXEL to be idle.
 
-`PacketHandler::write1ByteTxRx()` function orders to the #`DXL_ID` Dynamixel through the port which the `portHandler` handles, writing 1 byte of `TORQUE_DISABLE` value to `ADDR_MX_TORQUE_ENABLE` address. Then, it receives the `dxl_error`. The function returns 0 if no communication error has been occurred.
+`PacketHandler::write1ByteTxRx()` function sends an instruction to the #`DXL_ID` Dynamixel through the port which the `portHandler` handles, writing 1 byte of `TORQUE_DISABLE` value to `ADDR_MX_TORQUE_ENABLE` address. Then, it receives the `dxl_error`. The function returns 0 if no communication error has been occurred.
 
 ``` cpp
   // Close port

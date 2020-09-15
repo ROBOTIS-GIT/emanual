@@ -422,7 +422,7 @@ end
 
 As mentioned in the document, above code enables each Dynamixel`s torque to set their status as being ready to move.
 
-`write1ByteTxRx()` function orders to the #`DXL1_ID` and #`DXL2_ID` DYNAMIXEL in `PROTOCOL_VERSION` communication protocol through #`port_num1` and #`port_num2` ports, writing 1 byte of `TORQUE_ENABLE` value to `ADDR_MX_TORQUE_ENABLE` address. The function checks Tx/Rx result and receives Hardware error.
+`write1ByteTxRx()` function sends an instruction to the #`DXL1_ID` and #`DXL2_ID` DYNAMIXEL in `PROTOCOL_VERSION` communication protocol through #`port_num1` and #`port_num2` ports, writing 1 byte of `TORQUE_ENABLE` value to `ADDR_MX_TORQUE_ENABLE` address. The function checks Tx/Rx result and receives Hardware error.
 `getLastTxRxResult()` function and `getLastRxPacketError()` function get either, and then `printTxRxResult()` function and `printRxPacketError()` function show results on the console window if any communication error or Hardware error has been occurred.
 
 ``` m
@@ -484,11 +484,11 @@ During `while` loop, the controller writes and reads each Dynamixel position thr
 
 To continue their rotation, press any key except ESC.
 
-`write2ByteTxRx()` function orders to the #`DXL1_ID` and #`DXL2_ID` DYNAMIXEL in `PROTOCOL_VERSION` communication protocol through #`port_num1` and #`port_num2` ports, writing 2 byte of `dxl_goal_position[index]` value to `ADDR_MX_GOAL_POSITION` address. The function checks Tx/Rx result and receives Hardware error.
+`write2ByteTxRx()` function sends an instruction to the #`DXL1_ID` and #`DXL2_ID` DYNAMIXEL in `PROTOCOL_VERSION` communication protocol through #`port_num1` and #`port_num2` ports, writing 2 byte of `dxl_goal_position[index]` value to `ADDR_MX_GOAL_POSITION` address. The function checks Tx/Rx result and receives Hardware error.
 `getLastTxRxResult()` function and `getLastRxPacketError()` function get either, and then `printTxRxResult()` function and `printRxPacketError()` function show results on the console window if any communication error or Hardware error has been occurred.
 
 
-`read2ByteTxRx()` function orders to the #`DXL1_ID` and #`DXL2_ID` DYNAMIXEL in `PROTOCOL_VERSION` communication protocol through #`port_num1` and #`port_num2` ports, requesting 2 bytes of value in `ADDR_MX_PRESENT_POSITION` address. The function checks Tx/Rx result and receives Hardware error.
+`read2ByteTxRx()` function sends an instruction to the #`DXL1_ID` and #`DXL2_ID` DYNAMIXEL in `PROTOCOL_VERSION` communication protocol through #`port_num1` and #`port_num2` ports, requesting 2 bytes of value in `ADDR_MX_PRESENT_POSITION` address. The function checks Tx/Rx result and receives Hardware error.
 `getLastTxRxResult()` function and `getLastRxPacketError()` function get either, and then `printTxRxResult()` function and `printRxPacketError()` function show results on the console window if any communication error or Hardware error has been occurred.
 
 Reading their present position will be ended when absolute value of `(dxl1_goal_position[index] - dxl1_present_position)` or `(dxl2_goal_position[index] - dxl2_present_position)` becomes smaller then `DXL_MOVING_STATUS_THRESHOLD`.
@@ -515,7 +515,7 @@ end
 
 The controller frees the DYNAMIXEL to be idle.
 
-`write1ByteTxRx()` function orders to the #`DXL1_ID` and #`DXL2_ID` DYNAMIXEL in `PROTOCOL_VERSION` communication protocol through #`port_num1` and #`port_num2` ports, writing 1 byte of `TORQUE_DISABLE` value to `ADDR_MX_TORQUE_ENABLE` address. The function checks Tx/Rx result and receives Hardware error.
+`write1ByteTxRx()` function sends an instruction to the #`DXL1_ID` and #`DXL2_ID` DYNAMIXEL in `PROTOCOL_VERSION` communication protocol through #`port_num1` and #`port_num2` ports, writing 1 byte of `TORQUE_DISABLE` value to `ADDR_MX_TORQUE_ENABLE` address. The function checks Tx/Rx result and receives Hardware error.
 `getLastTxRxResult()` function and `getLastRxPacketError()` function get either, and then `printTxRxResult()` function and `printRxPacketError()` function show results on the console window if any communication error or Hardware error has been occurred.
 
 ``` m

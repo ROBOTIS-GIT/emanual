@@ -8,8 +8,10 @@ common_x_specs:
   mode:               &mode           "전류 제어 모드<br />속도 제어 모드<br />위치 제어 모드 (0 ~ 360 [&deg;])<br />확장 위치 제어 모드 (멀티턴)<br />전류기반 위치 제어 모드<br />PWM 제어 모드 (Voltage Control Mode)"
   mode_en:            &mode_en        "Current Control Mode<br />Velcoity Control Mode<br />Position Control Mode (0 ~ 360 [&deg;])<br />Extended Position Control Mode (Multi-turn)<br />Current-based Position Control Mode<br />PWM Control Mode (Voltage Control Mode)"
   motor:              &motor          "Coreless(Maxon)"
+  weight_330:         &weight_330     "18 [g]"
   weight_430:         &weight_430     "82 [g]"
   weight_540:         &weight_540     "165 [g]"
+  dimension_330:      &dimension_330  "20.0 x 34.0 x 26.0 [mm]"
   dimension_430:      &dimension_430  "28.5 x 46.5 x 34 [mm]"
   dimension_540:      &dimension_540  "33.5 x 58.5 x 44 [mm]"
   radialload:         &radialload     "40 [N] (혼으로부터 10 [mm])"
@@ -18,6 +20,8 @@ common_x_specs:
   temperature:        &temperature    "-5 ~ +80 [&deg;C]"
   voltage_12:         &voltage_12     "10.0 ~ 14.8 [V] (**권장 전압 : 12.0 [V]**)"
   voltage_12_en:      &voltage_12_en  "10.0 ~ 14.8 [V] (**Recommended : 12.0 [V]**)"
+  voltage_05_en:      &voltage_05_en  "3.7 ~ 6.0 [V] (**Recommended : 5.0 [V]**)"
+  voltage_05:         &voltage_05     "3.7 ~ 6.0 [V] (**권장 전압 : 5.0 [V]**)"
   voltage_24:         &voltage_24     "24.0 [V] (**권장 전압 : 24.0 [V]**)"
   voltage_24_en:      &voltage_24_en  "24.0 [V] (**Recommended : 24.0 [V]**)"
   command:            &command        "Digital Packet"
@@ -25,7 +29,8 @@ common_x_specs:
   ttl:                &ttl            "TTL Half Duplex Asynchronous Serial Communication<br />(8bit, 1stop, No Parity)"
   rs485_ttl:          &rs485_ttl      "TTL Half Duplex Asynchronous Serial Communication with 8bit, 1stop, No Parity<br />RS485 Asynchronous Serial Communication with 8bit, 1stop, No Parity"
   rs485_connection:   &rs485_connection "RS485 Multidrop Bus"
-  ttl_connection:     &ttl_connection   "TTL Multidrop Bus"
+  ttl_connection_5v:  &ttl_connection_5v   "TTL Multidrop Bus (5V Logic)"
+  ttl_connection_3v3: &ttl_connection_3v3  "TTL Multidrop Bus (3.3V Logic, 5V Compatible)"
   rs485_ttl_conn:     &rs485_ttl_conn   "RS485 / TTL Multidrop Bus"
   id:                 &id             "253 ID (0 ~ 252)"
   feedback:           &feedback       "Position, Velocity, Current, Realtime tick, Trajectory, Temperature, Input Voltage, etc"
@@ -35,6 +40,64 @@ common_x_specs:
 
 xl320:
   temperature:        "-5 ~ +65 [&deg;C]"
+
+xl330-m077:
+  mcu:                "ARM CORTEX-M0+ (64 [MHz], 32Bit)"
+  encoder:            "Contactless absolute encoder (12Bit, 360 [&deg;])<br />Maker : ams(www.ams.com), Part No : AS5601"
+  motor:              "Cored"
+  baudrate:           "9,600 [bps] ~ 4 [Mbps]"
+  control:            *control
+  resolution:         *resolution
+  backlash:           "N/A"
+  mode:               *mode
+  mode_en:            *mode_en
+  weight:             *weight_330
+  dimensions:         *dimension_330
+  gearratio:          "77.5 : 1"
+  noloadspeed:        "267 [rev/min] (at 3.7 [V]) <br /> **363 [rev/min] (at 5.0 [V])** <br /> 442 [rev/min] (at 6.0 [V])"
+  stalltorque:        "0.064 [N.m] (at 3.7 [V], 0.96 [A]) <br /> **0.089 [N.m] (at 5.0 [V], 1.28 [A])** <br /> 0.104 [N.m] (at 6.0 [V], 1.52 [A])"
+  radialload:         "N/A"
+  radialload_en:      "N/A"
+  axialload:          "N/A"
+  temperature:        "-5 ~ +60 [&deg;C]"
+  voltage:            *voltage_05
+  voltage_en:         *voltage_05_en
+  command:            *command
+  protocoltype:       *ttl
+  physicalconnection: *ttl_connection_3v3
+  id:                 *id
+  feedback:           *feedback
+  material:           "Engineering Plastic"
+  standbycurrent:     16 [mA]
+  
+xl330-m288:
+  mcu:                "ARM CORTEX-M0+ (64 [MHz], 32Bit)"
+  encoder:            "Contactless absolute encoder (12Bit, 360 [&deg;])<br />Maker : ams(www.ams.com), Part No : AS5601"
+  motor:              "Cored"
+  baudrate:           "9,600 [bps] ~ 4 [Mbps]"
+  control:            *control
+  resolution:         *resolution
+  backlash:           "N/A"
+  mode:               *mode
+  mode_en:            *mode_en
+  weight:             *weight_330
+  dimensions:         *dimension_330
+  gearratio:          "288.4 : 1"
+  noloadspeed:        "76 [rev/min] (at 3.7 [V]) <br /> **104 [rev/min] (at 5.0 [V])** <br /> 125 [rev/min] (at 6.0 [V])"
+  stalltorque:        "0.28 [N.m] (at 3.7 [V], 0.96 [A]) <br /> **0.39 [N.m] (at 5.0 [V], 1.28 [A])** <br /> 0.44 [N.m] (at 6.0 [V], 1.52 [A])"
+  radialload:         "N/A"
+  radialload_en:      "N/A"
+  axialload:          "N/A"
+  temperature:        "-5 ~ +60 [&deg;C]"
+  voltage:            *voltage_05
+  voltage_en:         *voltage_05_en
+  command:            *command
+  protocoltype:       *ttl
+  physicalconnection: *ttl_connection_3v3
+  id:                 *id
+  feedback:           *feedback
+  material:           "Engineering Plastic"
+  standbycurrent:     15 [mA]
 
 xh430-v210:
   mcu:                *mcu
@@ -165,7 +228,7 @@ xl430-w250:
   weight:             "57.2 [g]"
   dimensions:         "28.5 x 46.5 x 34 [mm]"
   gearratio:          "258.5 : 1"
-  stalltorque:        "1.0 [N.m] (at 9.0 [V], 1.0 [A])<br />**1.4 [Nm] (at 11.1 [V], 1.3 [A])**<br />1.5 [Nm] (at 12.0 [V], 1.4 [A])"
+  stalltorque:        "1.0 [N.m] (at 9.0 [V], 1.0 [A])<br />**1.4 [N.m] (at 11.1 [V], 1.3 [A])**<br />1.5 [N.m] (at 12.0 [V], 1.4 [A])"
   noloadspeed:        "47 [rev/min] (at 9.0 [V])<br />**57 [rev/min] (at 11.1 [V])**<br />61 [rev/min] (at 12.0 [V])"
   radialload:         "N/A"
   radialload_en:      "N/A"
@@ -175,7 +238,7 @@ xl430-w250:
   voltage_en:         "6.5 ~ 12.0 [V] (**Recommended : 11.1 [V]**)"
   command:            *command
   protocoltype:       *ttl
-  physicalconnection: *ttl_connection
+  physicalconnection: *ttl_connection_5v
   id:                 *id
   feedback:           "Position, Velocity, Load, Realtime tick, Trajectory, Temperature, Input Voltage, etc"
   material:           "Engineering Plastic"
@@ -204,7 +267,7 @@ xl430-w250:
   voltage_en:         "6.5 ~ 12.0 [V] (**Recommended : 11.1 [V]**)"
   command:            *command
   protocoltype:       *ttl
-  physicalconnection: *ttl_connection
+  physicalconnection: *ttl_connection_5v_5v
   id:                 *id
   feedback:           "Position, Velocity, Load, Realtime tick, Trajectory, Temperature, Input Voltage, etc"
   material:           "Full Metal Gear <br />Engineering Plastic(Front, Middle, Back)"
@@ -223,7 +286,7 @@ xc430-w240:
   weight:             "65 [g]"
   dimensions:         "28.5 x 46.5 x 34 [mm]"
   gearratio:          "245.22 : 1"
-  stalltorque:        "1.4 [N.m] (at 9.0 [V], 1.1 [A])<br />1.7 [N.m] (at 11.1 [V], 1.3 [A])<br />**1.9 [Nm] (at 12.0 [V], 1.4 [A])**"
+  stalltorque:        "1.4 [N.m] (at 9.0 [V], 1.1 [A])<br />1.7 [N.m] (at 11.1 [V], 1.3 [A])<br />**1.9 [N.m] (at 12.0 [V], 1.4 [A])**"
   noloadspeed:        "52 [rev/min] (at 9.0 [V])<br />65 [rev/min] (at 11.1 [V])<br />**70 [rev/min] (at 12.0 [V])**"
   radialload:         "N/A"
   radialload_en:      "N/A"
@@ -262,7 +325,7 @@ xc430-w240:
   voltage_en:         "6.5 ~ 14.8 [V] (**Recommended : 12.0 [V]**)"
   command:            *command
   protocoltype:       *ttl
-  physicalconnection: *ttl_connection
+  physicalconnection: *ttl_connection_5v
   id:                 *id
   feedback:           "Position, Velocity, Load, Realtime tick, Trajectory, Temperature, Input Voltage, etc"
   material:           "Full Metal Gear <br />Engineering Plastic(Front, Middle, Back)"
@@ -281,7 +344,7 @@ xc430-w150:
   weight:             "65 [g]"
   dimensions:         "28.5 x 46.5 x 34 [mm]"
   gearratio:          "159.59 : 1"
-  stalltorque:        "1.2 [N.m] (at 9.0 [V], 1.1 [A])<br />1.4 [N.m] (at 11.1 [V], 1.3 [A])<br />**1.6 [Nm] (at 12.0 [V], 1.4 [A])**"
+  stalltorque:        "1.2 [N.m] (at 9.0 [V], 1.1 [A])<br />1.4 [N.m] (at 11.1 [V], 1.3 [A])<br />**1.6 [N.m] (at 12.0 [V], 1.4 [A])**"
   noloadspeed:        "80 [rev/min] (at 9.0 [V])<br />99 [rev/min] (at 11.1 [V])<br />**106 [rev/min] (at 12.0 [V])**"
   radialload:         "N/A"
   radialload_en:      "N/A"
@@ -310,7 +373,7 @@ xm430-w210:
   weight:             *weight_430
   dimensions:         *dimension_430
   gearratio:          "212.6 : 1"
-  stalltorque:        "2.7 [N.m] (at 11.1 [V], 2.1 [A])<br />**3.0 [Nm] (at 12.0 [V], 2.3 [A])**<br />3.7 [Nm] (at 14.8 [V], 2.7 [A])"
+  stalltorque:        "2.7 [N.m] (at 11.1 [V], 2.1 [A])<br />**3.0 [N.m] (at 12.0 [V], 2.3 [A])**<br />3.7 [N.m] (at 14.8 [V], 2.7 [A])"
   noloadspeed:        "70 [rev/min] (at 11.1 [V])<br />**77 [rev/min] (at 12.0 [V])**<br />95 [rev/min] (at 14.8 [V])"
   radialload:         *radialload
   radialload_en:      *radialload_en
@@ -339,7 +402,7 @@ xm430-w350:
   weight:             *weight_430
   dimensions:         *dimension_430
   gearratio:          "353.5 : 1"
-  stalltorque:        "3.8 [N.m] (at 11.1 [V], 2.1 [A])<br />**4.1 [Nm] (at 12.0 [V], 2.3 [A])**<br />4.8 [Nm] (at 14.8 [V], 2.7 [A])"
+  stalltorque:        "3.8 [N.m] (at 11.1 [V], 2.1 [A])<br />**4.1 [N.m] (at 12.0 [V], 2.3 [A])**<br />4.8 [N.m] (at 14.8 [V], 2.7 [A])"
   noloadspeed:        "43 [rev/min] (at 11.1 [V])<br />**46 [rev/min] (at 12.0 [V])**<br />57 [rev/min] (at 14.8 [V])"
   radialload:         *radialload
   radialload_en:      *radialload_en
@@ -544,7 +607,7 @@ xm540-w150:
   weight:             *weight_540
   dimensions:         *dimension_540
   gearratio:          "152.3 : 1"
-  stalltorque:        "6.9 [N.m] (at 11.1 [V] 4.2 [A])<br />7.3 [Nm] (at 12.0 [V], 4.4 [A])<br />8.9 [Nm] (at 14.8 [V], 5.5 [A])"
+  stalltorque:        "6.9 [N.m] (at 11.1 [V] 4.2 [A])<br />7.3 [N.m] (at 12.0 [V], 4.4 [A])<br />8.9 [N.m] (at 14.8 [V], 5.5 [A])"
   noloadspeed:        "50 [rev/min] (at 11.1 [V])<br />53 [rev/min] (at 12.0 [V])<br />66 [rev/min] (at 14.8)"
   radialload:         *radialload
   radialload_en:      *radialload_en
@@ -573,7 +636,7 @@ xm540-w270:
   weight:             *weight_540
   dimensions:         *dimension_540
   gearratio:          "272.5 : 1"
-  stalltorque:        "10.0 [Nm] (at 11.1 [V], 4.2 [A])<br />**10.6 [Nm] (at 12.0 [V], 4.4 [A])**<br />12.9 [Nm] (at 14.8 [V], 5.5 [A])"
+  stalltorque:        "10.0 [N.m] (at 11.1 [V], 4.2 [A])<br />**10.6 [N.m] (at 12.0 [V], 4.4 [A])**<br />12.9 [N.m] (at 14.8 [V], 5.5 [A])"
   noloadspeed:        "28 [rev/min] (at 11.1 [V])<br />**30 [rev/min] (at 12.0 [V])**<br />37 [rev/min] (at 14.8 [V])"
   radialload:         *radialload
   radialload_en:      *radialload_en

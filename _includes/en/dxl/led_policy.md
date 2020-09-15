@@ -1,5 +1,5 @@
 {% capture dxl_led_policy %}  
-**NOTE** : The LED indicates present status of the device.
+**NOTE** : Check the status of DYNAMIXEL by the counts of flickering LED. 
 
 |      Status      |  LED Representation  |
 |:----------------:|:--------------------:|

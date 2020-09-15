@@ -3392,7 +3392,7 @@ mx-28-2:
           url: /dxl/mx/mx-28-2/#secondaryshadow-id12
         - title: "Protocol Type(13)"
           titlekr: "Protocol Type(13)"
-          url: /dxl/mx/mx-28-2/#protocol-version13
+          url: /dxl/mx/mx-28-2/#protocol-type13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
           url: /dxl/mx/mx-28-2/#homing-offset20
@@ -3522,6 +3522,10 @@ mx-28-2:
     url: /dxl/mx/mx-28-2/#reference
     urlkr: /dxl/mx/mx-28-2/#참고자료
     children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/mx/mx-28-2/#what-is-the-profile
+        urlkr: /dxl/mx/mx-28-2/#profile    
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/mx/mx-28-2/#certifications
@@ -3613,7 +3617,7 @@ mx-64-2:
           url: /dxl/mx/mx-64-2/#secondaryshadow-id12
         - title: "Protocol Type(13)"
           titlekr: "Protocol Type(13)"
-          url: /dxl/mx/mx-64-2/#protocol-version13
+          url: /dxl/mx/mx-64-2/#protocol-type13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
           url: /dxl/mx/mx-64-2/#homing-offset20
@@ -3746,6 +3750,10 @@ mx-64-2:
     url: /dxl/mx/mx-64-2/#reference
     urlkr: /dxl/mx/mx-64-2/#참고자료
     children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/mx/mx-64-2/#what-is-the-profile
+        urlkr: /dxl/mx/mx-64-2/#profile      
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/mx/mx-64-2/#certifications
@@ -3841,7 +3849,7 @@ mx-106-2:
           url: /dxl/mx/mx-106-2/#secondaryshadow-id12
         - title: "Protocol Type(13)"
           titlekr: "Protocol Type(13)"
-          url: /dxl/mx/mx-106-2/#protocol-version13
+          url: /dxl/mx/mx-106-2/#protocol-type13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
           url: /dxl/mx/mx-106-2/#homing-offset20
@@ -3974,6 +3982,10 @@ mx-106-2:
     url: /dxl/mx/mx-106-2/#reference
     urlkr: /dxl/mx/mx-106-2/#참고자료
     children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/mx/mx-106-2/#what-is-the-profile
+        urlkr: /dxl/mx/mx-106-2/#profile    
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/mx/mx-106-2/#certifications
@@ -3988,7 +4000,6 @@ mx-106-2:
         urlkr: /dxl/mx/mx-106-2/#도면
       - title: "Communication Circuit"
         url: /dxl/mx/mx-106-2/#communication-circuit
-
 
 #X-Series Main sidebar
 dxl_x_main:
@@ -4098,7 +4109,7 @@ xh430-v210:
           url: /dxl/x/xh430-v210/#secondaryshadow-id12
         - title: "Protocol Type(13)"
           titlekr: "Protocol Type(13)"
-          url: /dxl/x/xh430-v210/#protocol-version13
+          url: /dxl/x/xh430-v210/#protocol-type13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
           url: /dxl/x/xh430-v210/#homing-offset20
@@ -4237,6 +4248,10 @@ xh430-v210:
     url: /dxl/x/xh430-v210/#reference
     urlkr: /dxl/x/xh430-v210/#참고자료
     children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/x/xh430-v210/#what-is-the-profile
+        urlkr: /dxl/x/xh430-v210/#profile
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/xh430-v210/#certifications
@@ -4334,7 +4349,7 @@ xh430-v350:
           url: /dxl/x/xh430-v350/#secondaryshadow-id12
         - title: "Protocol Type(13)"
           titlekr: "Protocol Type(13)"
-          url: /dxl/x/xh430-v350/#protocol-version13
+          url: /dxl/x/xh430-v350/#protocol-type13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
           url: /dxl/x/xh430-v350/#homing-offset20
@@ -4473,6 +4488,10 @@ xh430-v350:
     url: /dxl/x/xh430-v350/#reference
     urlkr: /dxl/x/xh430-v350/#참고자료
     children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/x/xh430-v350/#what-is-the-profile
+        urlkr: /dxl/x/xh430-v350/#profile      
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/xh430-v350/#certifications
@@ -4570,7 +4589,7 @@ xh430-w210:
           url: /dxl/x/xh430-w210/#secondaryshadow-id12
         - title: "Protocol Type(13)"
           titlekr: "Protocol Type(13)"
-          url: /dxl/x/xh430-w210/#protocol-version13
+          url: /dxl/x/xh430-w210/#protocol-type13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
           url: /dxl/x/xh430-w210/#homing-offset20
@@ -4709,6 +4728,10 @@ xh430-w210:
     url: /dxl/x/xh430-w210/#reference
     urlkr: /dxl/x/xh430-w210/#참고자료
     children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/x/xh430-w210/#what-is-the-profile
+        urlkr: /dxl/x/xh430-w210/#profile      
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/xh430-w210/#certifications
@@ -4806,7 +4829,7 @@ xh430-w350:
           url: /dxl/x/xh430-w350/#secondaryshadow-id12
         - title: "Protocol Type(13)"
           titlekr: "Protocol Type(13)"
-          url: /dxl/x/xh430-w350/#protocol-version13
+          url: /dxl/x/xh430-w350/#protocol-type13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
           url: /dxl/x/xh430-w350/#homing-offset20
@@ -4945,6 +4968,10 @@ xh430-w350:
     url: /dxl/x/xh430-w350/#reference
     urlkr: /dxl/x/xh430-w350/#참고자료
     children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/x/xh430-w350/#what-is-the-profile
+        urlkr: /dxl/x/xh430-w350/#profile      
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/xh430-w350/#certifications
@@ -5028,6 +5055,441 @@ xl320:
         url: /dxl/x/xl320/#drawings
         urlkr: /dxl/x/xl320/#도면
 
+
+#XL330-M077
+xl330-m077:
+- title: "Specifications"
+  titlekr: "주요 사양"
+  url: /dxl/x/xl330-m077/#specifications
+  urlkr: /dxl/x/xl330-m077/#주요-사양
+- title: "Control Table"
+  titlekr: "컨트롤 테이블"
+  url: /dxl/x/xl330-m077/#control-table
+  urlkr: /dxl/x/xl330-m077/#컨트롤-테이블
+  children:
+    - title: "Control Table, Data, Address"
+      titlekr: "컨트롤 테이블, 데이터, 주소"
+      url: /dxl/x/xl330-m077/#control-table-data-address
+      urlkr: /dxl/x/xl330-m077/#컨트롤-테이블-데이터-주소
+      children:
+        - title: "Area(EEPROM, RAM)"
+          titlekr: "영역 (EEPROM, RAM)"
+          url: /dxl/x/xl330-m077/#area-eeprom-ram
+          urlkr: /dxl/x/xl330-m077/#영역-eeprom-ram
+        - title: "Size"
+          titlekr: "크기"
+          url: /dxl/x/xl330-m077/#size
+          urlkr: /dxl/x/xl330-m077/#크기
+        - title: "Access"
+          titlekr: "접근권한"
+          url: /dxl/x/xl330-m077/#access
+          urlkr: /dxl/x/xl330-m077/#접근권한
+        - title: "Initial Value"
+          titlekr: "초기값"
+          url: /dxl/x/xl330-m077/#initial-value
+          urlkr: /dxl/x/xl330-m077/#초기값
+    - title: "EEPROM Area"
+      titlekr: "EEPROM 영역"
+      url: /dxl/x/xl330-m077/#control-table-of-eeprom-area
+      urlkr: /dxl/x/xl330-m077/#eeprom-영역
+    - title: "RAM Area"
+      titlekr: "RAM 영역"
+      url: /dxl/x/xl330-m077/#control-table-of-ram-area
+      urlkr: /dxl/x/xl330-m077/#ram-영역
+    - title: "Control Table Description"
+      titlekr: "컨트롤 테이블 설명"
+      url: /dxl/x/xl330-m077/#control-table-description
+      urlkr: /dxl/x/xl330-m077/#컨트롤-테이블-설명
+      children:
+      - title: "Model Number(0)"
+        titlekr: "Model Number(0)"
+        url: /dxl/x/xl330-m077/#model-number0
+      - title: "Firmware Version(6)"
+        titlekr: "Firmware Version(6)"
+        url: /dxl/x/xl330-m077/#firmware-version6
+      - title: "ID(7)"
+        titlekr: "ID(7)"
+        url: /dxl/x/xl330-m077/#id7
+      - title: "Baud Rate(8)"
+        titlekr: "Baud Rate(8)"
+        url: /dxl/x/xl330-m077/#baud-rate8
+      - title: "Return Delay Time(9)"
+        titlekr: "Return Delay Time(9)"
+        url: /dxl/x/xl330-m077/#return-delay-time9
+      - title: "Drive Mode(10)"
+        titlekr: "Drive Mode(10)"
+        url: /dxl/x/xl330-m077/#drive-mode10
+      - title: "Operating Mode(11)"
+        titlekr: "Operating Mode(11)"
+        url: /dxl/x/xl330-m077/#operating-mode11
+      - title: "Secondary(Shadow) ID(12)"
+        titlekr: "Secondary(Shadow) ID(12)"
+        url: /dxl/x/xl330-m077/#secondaryshadow-id12
+      - title: "Protocol Type(13)"
+        titlekr: "Protocol Type(13)"
+        url: /dxl/x/xl330-m077/#protocol-type13
+      - title: "Homing Offset(20)"
+        titlekr: "Homing Offset(20)"
+        url: /dxl/x/xl330-m077/#homing-offset20
+      - title: "Moving Threshold(24)"
+        titlekr: "Moving Threshold(24)"
+        url: /dxl/x/xl330-m077/#moving-threshold24
+      - title: "Temperature Limit(31)"
+        titlekr: "Temperature Limit(31)"
+        url: /dxl/x/xl330-m077/#temperature-limit31
+      - title: "Min/Max Voltage Limit(32,34)"
+        titlekr: "Min/Max Voltage Limit(32,34)"
+        url: /dxl/x/xl330-m077/#minmax-voltage-limit32-34
+      - title: "PWM Lmit(36)"
+        titlekr: "PWM Limit(36)"
+        url: /dxl/x/xl330-m077/#pwm-limit36
+      - title: "Current Limit(38)"
+        titlekr: "Current Limit(38)"
+        url: /dxl/x/xl330-m077/#current-limit38
+      - title: "Velocity Limit(44)"
+        titlekr: "Velocity Limit(44)"
+        url: /dxl/x/xl330-m077/#velocity-limit44
+      - title: "Min/Max Position Limit(48, 52)"
+        titlekr: "Min/Max Position Limit(48, 52)"
+        url: /dxl/x/xl330-m077/#minmax-position-limit48-52
+      - title: "Shutdown(63)"
+        titlekr: "Shutdown(63)"
+        url: /dxl/x/xl330-m077/#shutdown63
+      - title: "Torque Enable(64)"
+        titlekr: "Torque Enable(64)"
+        url: /dxl/x/xl330-m077/#torque-enable64
+      - title: "LED(65)"
+        titlekr: "LED(65)"
+        url: /dxl/x/xl330-m077/#led65
+      - title: "Status Return Level(68)"
+        titlekr: "Status Return Level(68)"
+        url: /dxl/x/xl330-m077/#status-return-level68
+      - title: "Registered Instruction(69)"
+        titlekr: "Registered Instruction(69)"
+        url: /dxl/x/xl330-m077/#registered-instruction69
+      - title: "Hardware Error Status(70)"
+        titlekr: "Hardware Error Status(70)"
+        url: /dxl/x/xl330-m077/#hardware-error-status70
+      - title: "Velocity PI Gain(76, 78)"
+        titlekr: "Velocity PI Gain(76, 78)"
+        url: /dxl/x/xl330-m077/#velocity-pi-gain76-78
+      - title: "Position PID Gain(80, 82, 84)"
+        titlekr: "Position PID Gain(80, 82, 84)"
+        url: /dxl/x/xl330-m077/#position-pid-gain80-82-84
+      - title: "Feedforward 1st/2nd Gains(88, 90)"
+        titlekr: "Feedforward 1st/2nd Gains(88, 90)"
+        url: /dxl/x/xl330-m077/#feedforward-1st2nd-gains88-90
+      - title: "BUS Watchdog(98)"
+        titlekr: "BUS Watchdog(98)"
+        url: /dxl/x/xl330-m077/#bus-watchdog98
+      - title: "Goal PWM(100)"
+        titlekr: "Goal PWM(100)"
+        url: /dxl/x/xl330-m077/#goal-pwm100
+      - title: "Goal Current(102)"
+        titlekr: "Goal Current(102)"
+        url: /dxl/x/xl330-m077/#goal-current102
+      - title: "Goal Velocity(104)"
+        titlekr: "Goal Velocity(104)"
+        url: /dxl/x/xl330-m077/#goal-velocity104
+      - title: "Profile Acceleration(108)"
+        titlekr: "Profile Acceleration(108)"
+        url: /dxl/x/xl330-m077/#profile-acceleration108
+      - title: "Profile Velocity(112)"
+        titlekr: "Profile Velocity(112)"
+        url: /dxl/x/xl330-m077/#profile-velocity112
+      - title: "Goal Position(116)"
+        titlekr: "Goal Position(116)"
+        url: /dxl/x/xl330-m077/#goal-position116
+      - title: "Realtime Tick(120)"
+        titlekr: "Realtime Tick(120)"
+        url: /dxl/x/xl330-m077/#realtime-tick120
+      - title: "Moving(122)"
+        titlekr: "Moving(122)"
+        url: /dxl/x/xl330-m077/#moving122
+      - title: "Moving Status(123)"
+        titlekr: "Moving Status(123)"
+        url: /dxl/x/xl330-m077/#moving-status123
+      - title: "Present PWM(124)"
+        titlekr: "Present PWM(124)"
+        url: /dxl/x/xl330-m077/#present-pwm124
+      - title: "Present Current(126)"
+        titlekr: "Present Current(126)"
+        url: /dxl/x/xl330-m077/#present-current126
+      - title: "Present Velocity(128)"
+        titlekr: "Present Velocity(128)"
+        url: /dxl/x/xl330-m077/#present-velocity128
+      - title: "Present Position(132)"
+        titlekr: "Present Position(132)"
+        url: /dxl/x/xl330-m077/#present-position132
+      - title: "Velocity Trajectory(136)"
+        titlekr: "Velocity Trajectory(136)"
+        url: /dxl/x/xl330-m077/#velocity-trajectory136
+      - title: "Position Trajectory(140)"
+        titlekr: "Position Trajectory(140)"
+        url: /dxl/x/xl330-m077/#position-trajectory140
+      - title: "Present Input Voltage(144)"
+        titlekr: "Present Input Voltage(144)"
+        url: /dxl/x/xl330-m077/#present-input-voltage144
+      - title: "Present Temperature(146)"
+        titlekr: "Present Temperature(146)"
+        url: /dxl/x/xl330-m077/#present-temperature146
+      - title: "Indirect Address"
+        titlekr: "Indirect Address"
+        url: /dxl/x/xl330-m077/#indirect-address
+      - title: "Indirect Data"
+        titlekr: "Indirect Data"
+        url: /dxl/x/xl330-m077/#indirect-data
+- title: "How to Assemble"
+  titlekr: "조립 예시"
+  url: /dxl/x/xl330-m288/#how-to-assemble
+  urlkr: /dxl/x/xl330-m288/#조립-예시
+- title: "Reference"
+  titlekr: "참고자료"
+  url: /dxl/x/xl330-m077/#reference
+  urlkr: /dxl/x/xl330-m077/#참고자료
+  children:
+    - title: "What is the Profile"
+      titlekr: "Profile"
+      url: /dxl/x/xl330-m077/#what-is-the-profile
+      urlkr: /dxl/x/xl330-m077/#profile
+    - title: "Certifications"
+      titlekr: "인증 획득"
+      url: /dxl/x/xl330-m077/#certifications
+      urlkr: /dxl/x/xl330-m077/#인증-획득
+    - title: "Quick Start"
+      titlekr: "퀵스타트"
+      url: /dxl/x/xl330-m077/#quick-start
+      urlkr: /dxl/x/xl330-m077/#퀵스타트
+    - title: "Connector Information"
+      titlekr: "커넥터 정보"
+      url: /dxl/x/xl330-m077/#connector-information
+      urlkr: /dxl/x/xl330-m077/#커넥터-정보
+    - title: "Communication Circuit"
+      titlekr: "통신 회로"
+      url: /dxl/x/xl330-m077/#communication-circuit
+      urlkr: /dxl/x/xl330-m077/#통신-회로
+    - title: "Drawings"
+      titlekr: "도면"
+      url: /dxl/x/xl330-m077/#drawings
+      urlkr: /dxl/x/xl330-m077/#도면
+
+#XL330-M288
+xl330-m288:
+- title: "Specifications"
+  titlekr: "주요 사양"
+  url: /dxl/x/xl330-m288/#specifications
+  urlkr: /dxl/x/xl330-m288/#주요-사양
+- title: "Control Table"
+  titlekr: "컨트롤 테이블"
+  url: /dxl/x/xl330-m288/#control-table
+  urlkr: /dxl/x/xl330-m288/#컨트롤-테이블
+  children:
+    - title: "Control Table, Data, Address"
+      titlekr: "컨트롤 테이블, 데이터, 주소"
+      url: /dxl/x/xl330-m288/#control-table-data-address
+      urlkr: /dxl/x/xl330-m288/#컨트롤-테이블-데이터-주소
+      children:
+        - title: "Area(EEPROM, RAM)"
+          titlekr: "영역 (EEPROM, RAM)"
+          url: /dxl/x/xl330-m288/#area-eeprom-ram
+          urlkr: /dxl/x/xl330-m288/#영역-eeprom-ram
+        - title: "Size"
+          titlekr: "크기"
+          url: /dxl/x/xl330-m288/#size
+          urlkr: /dxl/x/xl330-m288/#크기
+        - title: "Access"
+          titlekr: "접근권한"
+          url: /dxl/x/xl330-m288/#access
+          urlkr: /dxl/x/xl330-m288/#접근권한
+        - title: "Initial Value"
+          titlekr: "초기값"
+          url: /dxl/x/xl330-m288/#initial-value
+          urlkr: /dxl/x/xl330-m288/#초기값
+    - title: "EEPROM Area"
+      titlekr: "EEPROM 영역"
+      url: /dxl/x/xl330-m288/#control-table-of-eeprom-area
+      urlkr: /dxl/x/xl330-m288/#eeprom-영역
+    - title: "RAM Area"
+      titlekr: "RAM 영역"
+      url: /dxl/x/xl330-m288/#control-table-of-ram-area
+      urlkr: /dxl/x/xl330-m288/#ram-영역
+    - title: "Control Table Description"
+      titlekr: "컨트롤 테이블 설명"
+      url: /dxl/x/xl330-m288/#control-table-description
+      urlkr: /dxl/x/xl330-m288/#컨트롤-테이블-설명
+      children:
+      - title: "Model Number(0)"
+        titlekr: "Model Number(0)"
+        url: /dxl/x/xl330-m288/#model-number0
+      - title: "Firmware Version(6)"
+        titlekr: "Firmware Version(6)"
+        url: /dxl/x/xl330-m288/#firmware-version6
+      - title: "ID(7)"
+        titlekr: "ID(7)"
+        url: /dxl/x/xl330-m288/#id7
+      - title: "Baud Rate(8)"
+        titlekr: "Baud Rate(8)"
+        url: /dxl/x/xl330-m288/#baud-rate8
+      - title: "Return Delay Time(9)"
+        titlekr: "Return Delay Time(9)"
+        url: /dxl/x/xl330-m288/#return-delay-time9
+      - title: "Drive Mode(10)"
+        titlekr: "Drive Mode(10)"
+        url: /dxl/x/xl330-m288/#drive-mode10
+      - title: "Operating Mode(11)"
+        titlekr: "Operating Mode(11)"
+        url: /dxl/x/xl330-m288/#operating-mode11
+      - title: "Secondary(Shadow) ID(12)"
+        titlekr: "Secondary(Shadow) ID(12)"
+        url: /dxl/x/xl330-m288/#secondaryshadow-id12
+      - title: "Protocol Type(13)"
+        titlekr: "Protocol Type(13)"
+        url: /dxl/x/xl330-m288/#protocol-type13
+      - title: "Homing Offset(20)"
+        titlekr: "Homing Offset(20)"
+        url: /dxl/x/xl330-m288/#homing-offset20
+      - title: "Moving Threshold(24)"
+        titlekr: "Moving Threshold(24)"
+        url: /dxl/x/xl330-m288/#moving-threshold24
+      - title: "Temperature Limit(31)"
+        titlekr: "Temperature Limit(31)"
+        url: /dxl/x/xl330-m288/#temperature-limit31
+      - title: "Min/Max Voltage Limit(32,34)"
+        titlekr: "Min/Max Voltage Limit(32,34)"
+        url: /dxl/x/xl330-m288/#minmax-voltage-limit32-34
+      - title: "PWM Lmit(36)"
+        titlekr: "PWM Limit(36)"
+        url: /dxl/x/xl330-m288/#pwm-limit36
+      - title: "Current Limit(38)"
+        titlekr: "Current Limit(38)"
+        url: /dxl/x/xl330-m288/#current-limit38
+      - title: "Velocity Limit(44)"
+        titlekr: "Velocity Limit(44)"
+        url: /dxl/x/xl330-m288/#velocity-limit44
+      - title: "Min/Max Position Limit(48, 52)"
+        titlekr: "Min/Max Position Limit(48, 52)"
+        url: /dxl/x/xl330-m288/#minmax-position-limit48-52
+      - title: "Shutdown(63)"
+        titlekr: "Shutdown(63)"
+        url: /dxl/x/xl330-m288/#shutdown63
+      - title: "Torque Enable(64)"
+        titlekr: "Torque Enable(64)"
+        url: /dxl/x/xl330-m288/#torque-enable64
+      - title: "LED(65)"
+        titlekr: "LED(65)"
+        url: /dxl/x/xl330-m288/#led65
+      - title: "Status Return Level(68)"
+        titlekr: "Status Return Level(68)"
+        url: /dxl/x/xl330-m288/#status-return-level68
+      - title: "Registered Instruction(69)"
+        titlekr: "Registered Instruction(69)"
+        url: /dxl/x/xl330-m288/#registered-instruction69
+      - title: "Hardware Error Status(70)"
+        titlekr: "Hardware Error Status(70)"
+        url: /dxl/x/xl330-m288/#hardware-error-status70
+      - title: "Velocity PI Gain(76, 78)"
+        titlekr: "Velocity PI Gain(76, 78)"
+        url: /dxl/x/xl330-m288/#velocity-pi-gain76-78
+      - title: "Position PID Gain(80, 82, 84)"
+        titlekr: "Position PID Gain(80, 82, 84)"
+        url: /dxl/x/xl330-m288/#position-pid-gain80-82-84
+      - title: "Feedforward 1st/2nd Gains(88, 90)"
+        titlekr: "Feedforward 1st/2nd Gains(88, 90)"
+        url: /dxl/x/xl330-m288/#feedforward-1st2nd-gains88-90
+      - title: "BUS Watchdog(98)"
+        titlekr: "BUS Watchdog(98)"
+        url: /dxl/x/xl330-m288/#bus-watchdog98
+      - title: "Goal PWM(100)"
+        titlekr: "Goal PWM(100)"
+        url: /dxl/x/xl330-m288/#goal-pwm100
+      - title: "Goal Current(102)"
+        titlekr: "Goal Current(102)"
+        url: /dxl/x/xl330-m288/#goal-current102
+      - title: "Goal Velocity(104)"
+        titlekr: "Goal Velocity(104)"
+        url: /dxl/x/xl330-m288/#goal-velocity104
+      - title: "Profile Acceleration(108)"
+        titlekr: "Profile Acceleration(108)"
+        url: /dxl/x/xl330-m288/#profile-acceleration108
+      - title: "Profile Velocity(112)"
+        titlekr: "Profile Velocity(112)"
+        url: /dxl/x/xl330-m288/#profile-velocity112
+      - title: "Goal Position(116)"
+        titlekr: "Goal Position(116)"
+        url: /dxl/x/xl330-m288/#goal-position116
+      - title: "Realtime Tick(120)"
+        titlekr: "Realtime Tick(120)"
+        url: /dxl/x/xl330-m288/#realtime-tick120
+      - title: "Moving(122)"
+        titlekr: "Moving(122)"
+        url: /dxl/x/xl330-m288/#moving122
+      - title: "Moving Status(123)"
+        titlekr: "Moving Status(123)"
+        url: /dxl/x/xl330-m288/#moving-status123
+      - title: "Present PWM(124)"
+        titlekr: "Present PWM(124)"
+        url: /dxl/x/xl330-m288/#present-pwm124
+      - title: "Present Current(126)"
+        titlekr: "Present Current(126)"
+        url: /dxl/x/xl330-m288/#present-current126
+      - title: "Present Velocity(128)"
+        titlekr: "Present Velocity(128)"
+        url: /dxl/x/xl330-m288/#present-velocity128
+      - title: "Present Position(132)"
+        titlekr: "Present Position(132)"
+        url: /dxl/x/xl330-m288/#present-position132
+      - title: "Velocity Trajectory(136)"
+        titlekr: "Velocity Trajectory(136)"
+        url: /dxl/x/xl330-m288/#velocity-trajectory136
+      - title: "Position Trajectory(140)"
+        titlekr: "Position Trajectory(140)"
+        url: /dxl/x/xl330-m288/#position-trajectory140
+      - title: "Present Input Voltage(144)"
+        titlekr: "Present Input Voltage(144)"
+        url: /dxl/x/xl330-m288/#present-input-voltage144
+      - title: "Present Temperature(146)"
+        titlekr: "Present Temperature(146)"
+        url: /dxl/x/xl330-m288/#present-temperature146
+      - title: "Indirect Address"
+        titlekr: "Indirect Address"
+        url: /dxl/x/xl330-m288/#indirect-address
+      - title: "Indirect Data"
+        titlekr: "Indirect Data"
+        url: /dxl/x/xl330-m288/#indirect-data
+- title: "How to Assemble"
+  titlekr: "조립하 예시"
+  url: /dxl/x/xl330-m288/#how-to-assemble
+  urlkr: /dxl/x/xl330-m288/#조립-예시
+- title: "Reference"
+  titlekr: "참고자료"
+  url: /dxl/x/xl330-m288/#reference
+  urlkr: /dxl/x/xl330-m288/#참고자료
+  children:
+    - title: "What is the Profile"
+      titlekr: "Profile"
+      url: /dxl/x/xl330-m288/#what-is-the-profile
+      urlkr: /dxl/x/xl330-m288/#profile
+    - title: "Certifications"
+      titlekr: "인증 획득"
+      url: /dxl/x/xl330-m288/#certifications
+      urlkr: /dxl/x/xl330-m288/#인증-획득
+    - title: "Quick Start"
+      titlekr: "퀵스타트"
+      url: /dxl/x/xl330-m288/#quick-start
+      urlkr: /dxl/x/xl330-m288/#퀵스타트
+    - title: "Connector Information"
+      titlekr: "커넥터 정보"
+      url: /dxl/x/xl330-m288/#connector-information
+      urlkr: /dxl/x/xl330-m288/#커넥터-정보
+    - title: "Communication Circuit"
+      titlekr: "통신 회로"
+      url: /dxl/x/xl330-m288/#communication-circuit
+      urlkr: /dxl/x/xl330-m288/#통신-회로
+    - title: "Drawings"
+      titlekr: "도면"
+      url: /dxl/x/xl330-m288/#drawings
+      urlkr: /dxl/x/xl330-m288/#도면
+
 #XL430-W250 sidebar
 xl430-w250:
   - title: "Specifications"
@@ -5104,7 +5566,7 @@ xl430-w250:
             url: /dxl/x/xl430-w250/#secondaryshadow-id12
           - title: "Protocol Type(13)"
             titlekr: "Protocol Type(13)"
-            url: /dxl/x/xl430-w250/#protocol-version13
+            url: /dxl/x/xl430-w250/#protocol-type13
           - title: "Homing Offset(20)"
             titlekr: "Homing Offset(20)"
             url: /dxl/x/xl430-w250/#homing-offset20
@@ -5228,6 +5690,10 @@ xl430-w250:
     url: /dxl/x/xl430-w250/#reference
     urlkr: /dxl/x/xl430-w250/#참고자료
     children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/x/xl430-w250/#what-is-the-profile
+        urlkr: /dxl/x/xl430-w250/#profile      
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/xl430-w250/#certifications
@@ -5458,6 +5924,10 @@ xc430-w150:
     url: /dxl/x/xc430-w150/#reference
     urlkr: /dxl/x/xc430-w150/#참고자료
     children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/x/xc430-w150/#what-is-the-profile
+        urlkr: /dxl/x/xc430-w150/#profile      
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/xc430-w150/#certifications
@@ -5688,6 +6158,10 @@ xc430-w240:
     url: /dxl/x/xc430-w240/#reference
     urlkr: /dxl/x/xc430-w240/#참고자료
     children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/x/xc430-w240/#what-is-the-profile
+        urlkr: /dxl/x/xc430-w240/#profile      
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/xc430-w240/#certifications
@@ -5909,6 +6383,10 @@ xc430-w240:
     url: /dxl/x/2xl430-w250/#reference
     urlkr: /dxl/x/2xl430-w250/#참고자료
     children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/x/2xl430-w250/#what-is-the-profile
+        urlkr: /dxl/x/2xl430-w250/#profile      
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/2xl430-w250/#certifications
@@ -6130,6 +6608,10 @@ xc430-w240:
     url: /dxl/x/2xc430-w250/#reference
     urlkr: /dxl/x/2xc430-w250/#참고자료
     children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/x/2xc430-w250/#what-is-the-profile
+        urlkr: /dxl/x/2xc430-w250/#profile      
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/2xc430-w250/#certifications
@@ -6367,6 +6849,10 @@ xm430-w210:
     url: /dxl/x/xm430-w210/#reference
     urlkr: /dxl/x/xm430-w210/#참고자료
     children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/x/xm430-w210/#what-is-the-profile
+        urlkr: /dxl/x/xm430-w210/#profile      
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/xm430-w210/#certifications
@@ -6464,7 +6950,7 @@ xm430-w350:
           url: /dxl/x/xm430-w350/#secondaryshadow-id12
         - title: "Protocol Type(13)"
           titlekr: "Protocol Type(13)"
-          url: /dxl/x/xm430-w350/#protocol-version13
+          url: /dxl/x/xm430-w350/#protocol-type13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
           url: /dxl/x/xm430-w350/#homing-offset20
@@ -6603,6 +7089,10 @@ xm430-w350:
     url: /dxl/x/xm430-w350/#reference
     urlkr: /dxl/x/xm430-w350/#참고자료
     children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/x/xm430-w350/#what-is-the-profile
+        urlkr: /dxl/x/xm430-w350/#profile      
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/xm430-w350/#certifications
@@ -6700,7 +7190,7 @@ xm540-w150:
           url: /dxl/x/xm540-w150/#secondaryshadow-id12
         - title: "Protocol Type(13)"
           titlekr: "Protocol Type(13)"
-          url: /dxl/x/xm540-w150/#protocol-version13
+          url: /dxl/x/xm540-w150/#protocol-type13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
           url: /dxl/x/xm540-w150/#homing-offset20
@@ -6845,6 +7335,10 @@ xm540-w150:
     url: /dxl/x/xm540-w150/#reference
     urlkr: /dxl/x/xm540-w150/#참고자료
     children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/x/xm540-w150/#what-is-the-profile
+        urlkr: /dxl/x/xm540-w150/#profile      
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/xm540-w150/#certifications
@@ -6942,7 +7436,7 @@ xm540-w270:
           url: /dxl/x/xm540-w270/#secondaryshadow-id12
         - title: "Protocol Type(13)"
           titlekr: "Protocol Type(13)"
-          url: /dxl/x/xm540-w270/#protocol-version13
+          url: /dxl/x/xm540-w270/#protocol-type13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
           url: /dxl/x/xm540-w270/#homing-offset20
@@ -7087,6 +7581,10 @@ xm540-w270:
     url: /dxl/x/xm540-w270/#reference
     urlkr: /dxl/x/xm540-w270/#참고자료
     children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/x/xm540-w270/#what-is-the-profile
+        urlkr: /dxl/x/xm540-w270/#profile      
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/xm540-w270/#certifications
@@ -7184,7 +7682,7 @@ xw540-t140:
           url: /dxl/x/xw540-t140/#secondaryshadow-id12
         - title: "Protocol Type(13)"
           titlekr: "Protocol Type(13)"
-          url: /dxl/x/xw540-t140/#protocol-version13
+          url: /dxl/x/xw540-t140/#protocol-type13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
           url: /dxl/x/xw540-t140/#homing-offset20
@@ -7316,6 +7814,10 @@ xw540-t140:
     url: /dxl/x/xw540-t140/#reference
     urlkr: /dxl/x/xw540-t140/#참고자료
     children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/x/xw540-t140/#what-is-the-profile
+        urlkr: /dxl/x/xw540-t140/#profile
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/xw540-t140/#certifications
@@ -7417,7 +7919,7 @@ xw540-t260:
           url: /dxl/x/xw540-t260/#secondaryshadow-id12
         - title: "Protocol Type(13)"
           titlekr: "Protocol Type(13)"
-          url: /dxl/x/xw540-t260/#protocol-version13
+          url: /dxl/x/xw540-t260/#protocol-type13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
           url: /dxl/x/xw540-t260/#homing-offset20
@@ -7549,6 +8051,10 @@ xw540-t260:
     url: /dxl/x/xw540-t260/#reference
     urlkr: /dxl/x/xw540-t260/#참고자료
     children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/x/xw540-t260/#what-is-the-profile
+        urlkr: /dxl/x/xw540-t260/#profile      
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/xw540-t260/#certifications
@@ -7650,7 +8156,7 @@ xh540-w150:
           url: /dxl/x/xh540-w150/#secondaryshadow-id12
         - title: "Protocol Type(13)"
           titlekr: "Protocol Type(13)"
-          url: /dxl/x/xh540-w150/#protocol-version13
+          url: /dxl/x/xh540-w150/#protocol-type13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
           url: /dxl/x/xh540-w150/#homing-offset20
@@ -7795,6 +8301,10 @@ xh540-w150:
     url: /dxl/x/xh540-w150/#reference
     urlkr: /dxl/x/xh540-w150/#참고자료
     children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/x/xh540-w150/#what-is-the-profile
+        urlkr: /dxl/x/xh540-w150/#profile      
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/xh540-w150/#certifications
@@ -7892,7 +8402,7 @@ xh540-w270:
           url: /dxl/x/xh540-w270/#secondaryshadow-id12
         - title: "Protocol Type(13)"
           titlekr: "Protocol Type(13)"
-          url: /dxl/x/xh540-w270/#protocol-version13
+          url: /dxl/x/xh540-w270/#protocol-type13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
           url: /dxl/x/xh540-w270/#homing-offset20
@@ -8037,6 +8547,10 @@ xh540-w270:
     url: /dxl/x/xh540-w270/#reference
     urlkr: /dxl/x/xh540-w270/#참고자료
     children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/x/xh540-w270/#what-is-the-profile
+        urlkr: /dxl/x/xh540-w270/#profile      
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/xh540-w270/#certifications
@@ -8134,7 +8648,7 @@ xh540-v150:
           url: /dxl/x/xh540-v150/#secondaryshadow-id12
         - title: "Protocol Type(13)"
           titlekr: "Protocol Type(13)"
-          url: /dxl/x/xh540-v150/#protocol-version13
+          url: /dxl/x/xh540-v150/#protocol-type13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
           url: /dxl/x/xh540-v150/#homing-offset20
@@ -8279,6 +8793,10 @@ xh540-v150:
     url: /dxl/x/xh540-v150/#reference
     urlkr: /dxl/x/xh540-v150/#참고자료
     children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/x/xh540-v150/#what-is-the-profile
+        urlkr: /dxl/x/xh540-v150/#profile      
       - title: "Quick Start"
         titlekr: "퀵스타트"
         url: /dxl/x/xh540-v150/#quick-start
@@ -8372,7 +8890,7 @@ xh540-v270:
           url: /dxl/x/xh540-v270/#secondaryshadow-id12
         - title: "Protocol Type(13)"
           titlekr: "Protocol Type(13)"
-          url: /dxl/x/xh540-v270/#protocol-version13
+          url: /dxl/x/xh540-v270/#protocol-type13
         - title: "Homing Offset(20)"
           titlekr: "Homing Offset(20)"
           url: /dxl/x/xh540-v270/#homing-offset20
@@ -8517,6 +9035,10 @@ xh540-v270:
     url: /dxl/x/xh540-v270/#reference
     urlkr: /dxl/x/xh540-v270/#참고자료
     children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/x/xh540-v270/#what-is-the-profile
+        urlkr: /dxl/x/xh540-v270/#profile      
       - title: "Quick Start"
         titlekr: "퀵스타트"
         url: /dxl/x/xh540-v270/#quick-start
@@ -22069,7 +22591,9 @@ opencm904:
     urlkr: /parts/controller/opencm904/#하드웨어
     children:
     - title: "Memory Map"
+      titlekr: "메모리 맵"
       url: /parts/controller/opencm904/#memory-map
+      urlkr: /parts/controller/opencm904/#메모리-맵
     - title: "Block Diagram"
       titlekr: "블럭 다이어그램"
       url: /parts/controller/opencm904/#block-diagram
@@ -22128,9 +22652,13 @@ opencm904:
         url: /parts/controller/opencm904/#io-header
         urlkr: /parts/controller/opencm904/#입출력-io헤더
     - title: "Pin Name Definition"
+      titlekr: "핀 이름 정의"
       url: /parts/controller/opencm904/#pin-name-definition
+      urlkr: /parts/controller/opencm904/#핀-이름-정의
     - title: "Pin Function Definition"
+      titlekr: "핀 기능 정의"
       url: /parts/controller/opencm904/#pin-function-definition
+      urlkr: /parts/controller/opencm904/#핀-기능-정의
   - title: "Connecting Power"
     titlekr: "전원 연결 방법"
     url: /parts/controller/opencm904/#connecting-power
@@ -22193,8 +22721,6 @@ opencm904:
       url: /parts/controller/opencm904/#pwm
     - title: "EEPROM"
       url: /parts/controller/opencm904/#eeprom
-    - title: "DYNAMIXEL Workbench"
-      url: /parts/controller/opencm904/#dynamixelworkbench
     - title: "Servo"
       url: /parts/controller/opencm904/#servo
     - title: "SD Card"
@@ -22457,161 +22983,165 @@ opencr10:
 
 opencr10_jp:
   - title: "イントロダクション"
-    url: /parts/controller/opencr10/#イントロダクション
+    url: /parts/controller/opencr10_jp/#イントロダクション
   - title: "仕様表"
-    url: /parts/controller/opencr10/#仕様表
+    url: /parts/controller/opencr10_jp/#仕様表
   - title: "レイアウト/ピン配置"
-    url: /parts/controller/opencr10/#レイアウトピン配置
+    url: /parts/controller/opencr10_jp/#レイアウトピン配置
     children:
     - title: "Arduinoコネクター"
-      url: /parts/controller/opencr10/#arduinoコネクター
+      url: /parts/controller/opencr10_jp/#arduinoコネクター
     - title: "ユーザーLED"
-      url: /parts/controller/opencr10/#ユーザーled
+      url: /parts/controller/opencr10_jp/#ユーザーled
     - title: "ディップスイッチ"
-      url: /parts/controller/opencr10/#ディップスイッチ
+      url: /parts/controller/opencr10_jp/#ディップスイッチ
     - title: "GPIO"
-      url: /parts/controller/opencr10/#gpio
+      url: /parts/controller/opencr10_jp/#gpio
     - title: "ROBOTIS 5-ピン コネクター"
-      url: /parts/controller/opencr10/#robotis-5-ピン-コネクター
+      url: /parts/controller/opencr10_jp/#robotis-5-ピン-コネクター
     - title: "プッシュスイッチ"
-      url: /parts/controller/opencr10/#プッシュスイッチ
+      url: /parts/controller/opencr10_jp/#プッシュスイッチ
     - title: "外部割り込み"
-      url: /parts/controller/opencr10/#外部割り込み
+      url: /parts/controller/opencr10_jp/#外部割り込み
     - title: "UART(Serial)"
-      url: /parts/controller/opencr10/#uartserial
+      url: /parts/controller/opencr10_jp/#uartserial
     - title: "ピンの定義"
-      url: /parts/controller/opencr10/#ピンの定義
+      url: /parts/controller/opencr10_jp/#ピンの定義
   - title: "Arduino IDE"
-    url: /parts/controller/opencr10/#arduino-ide
+    url: /parts/controller/opencr10_jp/#arduino-ide
     children:
     - title: "Linuxにインストール"
-      url: /parts/controller/opencr10/#linuxにインストール
+      url: /parts/controller/opencr10_jp/#linuxにインストール
       children:
       - title: "USBポートの設定"
-        url: /parts/controller/opencr10/#usbポートの設定
+        url: /parts/controller/opencr10_jp/#usbポートの設定
       - title: "コンパイラの設定"
-        url: /parts/controller/opencr10/#コンパイラの設定
+        url: /parts/controller/opencr10_jp/#コンパイラの設定
       - title: "Arduino IDE(Linux)のインストール"
-        url: /parts/controller/opencr10/#arduino-idelinuxのインストール
+        url: /parts/controller/opencr10_jp/#arduino-idelinuxのインストール
       - title: "Arduino IDE(Linux)の実行"
-        url: /parts/controller/opencr10/#arduino-idelinuxの実行
+        url: /parts/controller/opencr10_jp/#arduino-idelinuxの実行
       - title: "Arduino IDE(Linux)へのポーティング"
-        url: /parts/controller/opencr10/#arduino-idelinuxへのポーティング
+        url: /parts/controller/opencr10_jp/#arduino-idelinuxへのポーティング
       - title: "モデムマネージャの削除"
-        url: /parts/controller/opencr10/#モデムマネージャの削除
+        url: /parts/controller/opencr10_jp/#モデムマネージャの削除
     - title: "Macにインストール"
-      url: /parts/controller/opencr10/#macにインストール
+      url: /parts/controller/opencr10_jp/#macにインストール
       children:
       - title: "Arduino IDE(Mac)のインストール"
-        url: /parts/controller/opencr10/#arduino-idemacのインストール
+        url: /parts/controller/opencr10_jp/#arduino-idemacのインストール
       - title: "Arduino IDE(Mac)の実行"
-        url: /parts/controller/opencr10/#arduino-idemacの実行
+        url: /parts/controller/opencr10_jp/#arduino-idemacの実行
       - title: "Arduino IDE(Mac)へのポーティング"
-        url: /parts/controller/opencr10/#arduino-idemacへのポーティング
+        url: /parts/controller/opencr10_jp/#arduino-idemacへのポーティング
     - title: "Windowsにインストール"
-      url: /parts/controller/opencr10/#windowsにインストール
+      url: /parts/controller/opencr10_jp/#windowsにインストール
       children:
       - title: "ドライバーインストール"
-        url: /parts/controller/opencr10/#ドライバーインストール
+        url: /parts/controller/opencr10_jp/#ドライバーインストール
       - title: "Arduino IDE(Windows)のインストール"
-        url: /parts/controller/opencr10/#arduino-idewindowsのインストール
+        url: /parts/controller/opencr10_jp/#arduino-idewindowsのインストール
       - title: "Arduino IDE(Windows)へのポーティング"
-        url: /parts/controller/opencr10/#arduino-idewindowsへのポーティング
+        url: /parts/controller/opencr10_jp/#arduino-idewindowsへのポーティング
   - title: "Examples"
-    url: /parts/controller/opencr10/#例
+    url: /parts/controller/opencr10_jp/#例
     children:
     - title: "LED"
-      url: /parts/controller/opencr10/#led
+      url: /parts/controller/opencr10_jp/#led
     - title: "ボタン"
-      url: /parts/controller/opencr10/#ボタン
+      url: /parts/controller/opencr10_jp/#ボタン
     - title: "Buzzer"
-      url: /parts/controller/opencr10/#ブザー
+      url: /parts/controller/opencr10_jp/#ブザー
     - title: "PWM"
-      url: /parts/controller/opencr10/#pwm
+      url: /parts/controller/opencr10_jp/#pwm
     - title: "EEPROM"
-      url: /parts/controller/opencr10/#eeprom
+      url: /parts/controller/opencr10_jp/#eeprom
     - title: "OP3"
-      url: /parts/controller/opencr10/#op3
+      url: /parts/controller/opencr10_jp/#op3
     - title: "センサー"
-      url: /parts/controller/opencr10/#センサー
+      url: /parts/controller/opencr10_jp/#センサー
       children:
       - title: "環境光センサー"
-        url: /parts/controller/opencr10/#環境光センサー
+        url: /parts/controller/opencr10_jp/#環境光センサー
       - title: "チルトセンサー"
-        url: /parts/controller/opencr10/#チルトセンサー
+        url: /parts/controller/opencr10_jp/#チルトセンサー
       - title: "回転センサー"
-        url: /parts/controller/opencr10/#回転センサー
+        url: /parts/controller/opencr10_jp/#回転センサー
       - title: "静電容量式タッチセンサー"
-        url: /parts/controller/opencr10/#静電容量式タッチセンサー
+        url: /parts/controller/opencr10_jp/#静電容量式タッチセンサー
       - title: "炎センサー"
-        url: /parts/controller/opencr10/#炎センサー
+        url: /parts/controller/opencr10_jp/#炎センサー
       - title: "ジョイステックセンサ"
-        url: /parts/controller/opencr10/#ジョイステックセンサ
+        url: /parts/controller/opencr10_jp/#ジョイステックセンサ
     - title: "DYNAMIXEL Workbench"
-      url: /parts/controller/opencr10/#dynamixel-workbench
+      url: /parts/controller/opencr10_jp/#dynamixel-workbench
     - title: "OpenMANIPULATOR"
-      url: /parts/controller/opencr10/#openmanipulator
+      url: /parts/controller/opencr10_jp/#openmanipulator
   - title: "ブートローダー"
-    url: /parts/controller/opencr10/#ブートローダー
+    url: /parts/controller/opencr10_jp/#ブートローダー
     children:
     - title: "メモリマップ"
-      url: /parts/controller/opencr10/#メモリマップ
+      url: /parts/controller/opencr10_jp/#メモリマップ
     - title: "ブートシーケンス"
-      url: /parts/controller/opencr10/#ブートシーケンス
+      url: /parts/controller/opencr10_jp/#ブートシーケンス
     - title: "通信プロトコル"
-      url: /parts/controller/opencr10/#通信プロトコル
+      url: /parts/controller/opencr10_jp/#通信プロトコル
       children:
       - title: "MavLink"
-        url: /parts/controller/opencr10/#mavlink
+        url: /parts/controller/opencr10_jp/#mavlink
       - title: "コマンドの構成"
-        url: /parts/controller/opencr10/#コマンドの構成
+        url: /parts/controller/opencr10_jp/#コマンドの構成
       - title: "ダウンロードシーケンス"
-        url: /parts/controller/opencr10/#ダウンロードシーケンス
+        url: /parts/controller/opencr10_jp/#ダウンロードシーケンス
       - title: "メッセージ処理"
-        url: /parts/controller/opencr10/#メッセージ処理
+        url: /parts/controller/opencr10_jp/#メッセージ処理
       - title: "フォルダ構造"
-        url: /parts/controller/opencr10/#フォルダ構造
+        url: /parts/controller/opencr10_jp/#フォルダ構造
     - title: "ブートローダーのアップデート"
-      url: /parts/controller/opencr10/#ブートローダーのアップデート
+      url: /parts/controller/opencr10_jp/#ブートローダーのアップデート
       children:
       - title: "フォルダ構造"
-        url: /parts/controller/opencr10/#フォルダ構造
+        url: /parts/controller/opencr10_jp/#フォルダ構造
       - title: "ブートローダーのアップデート"
-        url: /parts/controller/opencr10/#ブートローダーのアップデート     
+        url: /parts/controller/opencr10_jp/#ブートローダーのアップデート     
       - title: "DFUモードに入る"
-        url: /parts/controller/opencr10/#dfuモードに入る
+        url: /parts/controller/opencr10_jp/#dfuモードに入る
       - title: "ブートモードの確認"
-        url: /parts/controller/opencr10/#ブートモードの確認
+        url: /parts/controller/opencr10_jp/#ブートモードの確認
       - title: "ブートローダーの書き込み"
-        url: /parts/controller/opencr10/#ブートローダーの書き込み
+        url: /parts/controller/opencr10_jp/#ブートローダーの書き込み
       - title: "ドライバーインストール(オプション)"
-        url: /parts/controller/opencr10/#ドライバーインストールオプション
+        url: /parts/controller/opencr10_jp/#ドライバーインストールオプション
   - title: "ダウンローダー"
-    url: /parts/controller/opencr10/#ダウンローダー
+    url: /parts/controller/opencr10_jp/#ダウンローダー
     children:
     - title: "使用方法"
-      url: /parts/controller/opencr10/#使用方法
+      url: /parts/controller/opencr10_jp/#使用方法
     - title: "Linux/Macの例"
-      url: /parts/controller/opencr10/#linuxmacの例
+      url: /parts/controller/opencr10_jp/#linuxmacの例
     - title: "Windowsの例"
-      url: /parts/controller/opencr10/#windowsの例
+      url: /parts/controller/opencr10_jp/#windowsの例
     - title: "実行結果"
-      url: /parts/controller/opencr10/#実行結果
+      url: /parts/controller/opencr10_jp/#実行結果
     - title: "実行ファイルのダウンロード"
-      url: /parts/controller/opencr10/#実行ファイルのダウンロード
+      url: /parts/controller/opencr10_jp/#実行ファイルのダウンロード
   - title: "リファレンス"
-    url: /parts/controller/opencr10/#リファレンス
+    url: /parts/controller/opencr10_jp/#リファレンス
     children:
     - title: "リカバリーモード"
-      url: /parts/controller/opencr10/#リカバリーモード
+      url: /parts/controller/opencr10_jp/#リカバリーモード
     - title: "DYNAMIXEL コネクタ"
-      url: /parts/controller/opencr10/#dynamixel-コネクタ
+      url: /parts/controller/opencr10_jp/#dynamixel-コネクタ
     - title: "通信回路"
-      url: /parts/controller/opencr10/#通信回路    
+      url: /parts/controller/opencr10_jp/#通信回路    
     - title: "ダウンロード"
-      url: /parts/controller/opencr10/#ダウンロード
+      url: /parts/controller/opencr10_jp/#ダウンロード
     - title: "認証"
+<<<<<<< HEAD
       url: /parts/controller/opencr10/#認証      
+=======
+      url: /parts/controller/opencr10_jp/#認証      
+>>>>>>> master
 
 dynamixel_shield:
   - title: "Introduction"

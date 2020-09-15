@@ -20,6 +20,4 @@ Performance Graph는 N-T Curve라고도 불리며, 부하(load)를 점진적으�
 {% endif %}
 
 {% endcapture %}
-
-
 <div class="notice--danger">{{ perform_graph_02 | markdownify }}</div>

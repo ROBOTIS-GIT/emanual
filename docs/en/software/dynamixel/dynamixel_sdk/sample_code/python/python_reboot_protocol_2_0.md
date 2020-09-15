@@ -245,7 +245,7 @@ elif dynamixel.getLastRxPacketError(port_num, PROTOCOL_VERSION) != 0:
     dynamixel.printRxPacketError(PROTOCOL_VERSION, dynamixel.getLastRxPacketError(port_num, PROTOCOL_VERSION))
 ```
 
-`reboot()` function orders to the #`DXL_ID` Dynamixel through #`port_num` port, making it reboot. While rebooting, Dynamixel LED will flicker its light. The function checks Tx/Rx result and receives Hardware error.
+`reboot()` function sends an instruction to the #`DXL_ID` Dynamixel through #`port_num` port, making it reboot. While rebooting, Dynamixel LED will flicker its light. The function checks Tx/Rx result and receives Hardware error.
 `getLastTxRxResult()` function and `getLastRxPacketError()` function get either, and then `printTxRxResult()` function and `printRxPacketError()` function show results on the console window if any communication error or Hardware error has been occurred.
 
 ```python

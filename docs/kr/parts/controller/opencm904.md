@@ -171,11 +171,9 @@ OpenCM9.04의 컨트롤 테이블은 기본 펌웨어를 사용해서 접근이 
 
 # [하드웨어](#하드웨어)
 
-[OpenCM 9.04 영문 eManual]에서 더 많은 정보가 제공되고 있습니다. 오른쪽 탭의 `구글 버튼`을 클릭하시면 구글 번역기를 사용할 수 있습니다.
-{: .notice--success}
+## [메모리 맵](#메모리-맵)
 
-[OpenCM 9.04 영문 eManual]: /docs/en/parts/controller/opencm904/
-
+![](/assets/images/parts/controller/opencm904/memory_map.png)
 
 ## [블럭 다이어그램](#블럭-다이어그램)
 
@@ -304,6 +302,26 @@ OpenCM9.04의 모든 GPIO핀들은 내부적으로 pull-up 또는 pull-down이 �
 
 > OpenCM9.04 GPIO 핀맵
 
+| 기능              | 아두이노 핀     |          |
+|:-----------------|:--------------|:---------|
+| Serial/SerialUSB | USB Port      |          |
+| Serial1          | D11, D12      | DXL Port |
+| Serial2          | A4,  A5       |          |
+| Serial3          | D24, D25      |          |
+| SPI1             | A1, A6, A7    |          |
+| SPI2             | D19, D20, D21 |          |
+| PWM              | A2 ~ D14      |          |
+| ADC              | A0 ~ A9       |          |
+| LED              | D14           |          |
+| EXTI             | A0 ~ D25      |          |
+| I2C              | D24, D25      |          |
+| BUTTON           | D23           |          |
+| 5PIN #1          | D2, D6, D7    |          |
+| 5PIN #2          | D3, D8, D9    |          |
+| 5PIN #3          | D0, D10, D11  |          |
+| 5PIN #4          | D1, D12, D13  |          |
+| 4PIN UART        | D1, D12, D13  | Serial2  |
+
 - Serial(USART) : 11(TX1), 12(RX1), 4(TX2), 5(RX2), 24(TX3), 25(RX3)
 - PWM : 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14
 - SPI : 0(SS1), 1(SCK1),6(MISO1) ,7(MOSI1), 18(SS2) ,19(SCK2) ,20(MISO2) ,21(MOSI2)
@@ -360,6 +378,76 @@ OpenCM9.04의 모든 GPIO핀들은 내부적으로 pull-up 또는 pull-down이 �
 **주의**: 아날로그 기준전압(AREF)을 5V로 변경시 5V 입력 가능한 핀을 확인하세요.
 {: .notice--danger}
 
+## [핀 이름 정의](#핀-이름-정의)
+
+```c++
+#define LED_BUILTIN             14
+
+#define BOARD_BUTTON_PIN        23  //PC15
+#define BOARD_LED_PIN           14  //PB9
+
+#define BOARD_USART1_TX_PIN     11  //D9(PA9)
+#define BOARD_USART1_RX_PIN     12  //D10(PA10)
+#define BOARD_USART2_TX_PIN     4   //D2 (PA2)
+#define BOARD_USART2_RX_PIN     5   //D3 (PA3)
+#define BOARD_USART3_TX_PIN     24  //D24 (PB10)
+#define BOARD_USART3_RX_PIN     25  //D25 (PB11)
+
+#define BOARD_SPI1_NSS_PIN      0   //D10 (PA4)
+#define BOARD_SPI1_MOSI_PIN     7   //D11 PA7
+#define BOARD_SPI1_MISO_PIN     6   //D12 PA6
+#define BOARD_SPI1_SCK_PIN      1   //D13 PA5
+#define BOARD_SPI2_NSS_PIN      18  //D26 PB12
+#define BOARD_SPI2_MOSI_PIN     21  //D29 PB15
+#define BOARD_SPI2_MISO_PIN     20  //D28 PB14
+#define BOARD_SPI2_SCK_PIN      19  //D27 PB13
+```
+
+## [핀 기능 정의](#핀-기능-정의)
+
+```c++
+extern const Pin2PortMapArray g_Pin2PortMapArray[]=
+{
+  {GPIOA, GPIO_PIN_4,   &hADC1,   ADC_CHANNEL_4 , NULL   ,   NO_PWM       , 0       },  // 0
+  {GPIOA, GPIO_PIN_5,   &hADC1,   ADC_CHANNEL_5 , NULL   ,   NO_PWM       , 1       },  // 1
+  {GPIOA, GPIO_PIN_0,   &hADC1,   ADC_CHANNEL_0 , &hTIM2 ,   TIM_CHANNEL_1, 2       },  // 2
+  {GPIOA, GPIO_PIN_1,   &hADC1,   ADC_CHANNEL_1 , &hTIM2 ,   TIM_CHANNEL_2, 3       },  // 3
+  {GPIOA, GPIO_PIN_2,   &hADC1,   ADC_CHANNEL_2 , &hTIM2 ,   TIM_CHANNEL_3, 4       },  // 4
+  {GPIOA, GPIO_PIN_3,   &hADC1,   ADC_CHANNEL_3 , &hTIM2 ,   TIM_CHANNEL_4, 5       },  // 5
+  {GPIOA, GPIO_PIN_6,   &hADC1,   ADC_CHANNEL_6 , &hTIM3 ,   TIM_CHANNEL_1, 6       },  // 6
+  {GPIOA, GPIO_PIN_7,   &hADC1,   ADC_CHANNEL_7 , &hTIM3 ,   TIM_CHANNEL_2, 7       },  // 7
+  {GPIOB, GPIO_PIN_0,   &hADC1,   ADC_CHANNEL_8 , &hTIM3 ,   TIM_CHANNEL_3, 8       },  // 8
+  {GPIOB, GPIO_PIN_1,   &hADC1,   ADC_CHANNEL_9 , &hTIM3 ,   TIM_CHANNEL_4, 9       },  // 9
+
+  {GPIOA, GPIO_PIN_8,   NULL,     NO_ADC        , &hTIM1 ,   TIM_CHANNEL_1, 10      },  // 10
+  {GPIOA, GPIO_PIN_9,   NULL,     NO_ADC        , &hTIM1 ,   TIM_CHANNEL_2, 11      },  // 11
+  {GPIOA, GPIO_PIN_10,  NULL,     NO_ADC        , &hTIM1 ,   TIM_CHANNEL_3, 12      },  // 12
+  {GPIOB, GPIO_PIN_8,   NULL,     NO_ADC        , &hTIM4 ,   TIM_CHANNEL_3, 13      },  // 13
+  {GPIOB, GPIO_PIN_9,   NULL,     NO_ADC        , &hTIM4 ,   TIM_CHANNEL_4, 14      },  // 14 LED
+  {GPIOA, GPIO_PIN_15,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , 15      },  // 15
+  {GPIOB, GPIO_PIN_3,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , 16      },  // 16
+  {GPIOB, GPIO_PIN_4,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , 17      },  // 17
+  {GPIOB, GPIO_PIN_12,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , 18      },  // 18
+  {GPIOB, GPIO_PIN_13,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , 19      },  // 19
+
+  {GPIOB, GPIO_PIN_14,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , 20      },  // 20
+  {GPIOB, GPIO_PIN_15,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , 21      },  // 21
+  {GPIOC, GPIO_PIN_14,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , 22      },  // 22
+  {GPIOC, GPIO_PIN_15,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , 23      },  // 23 USER_BUTTON
+  {GPIOB, GPIO_PIN_10,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , 24      },  // 24
+  {GPIOB, GPIO_PIN_11,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , 25      },  // 25
+
+
+  {GPIOA, GPIO_PIN_13,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 26 JTAG SWDIO
+  {GPIOA, GPIO_PIN_14,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 27 JTAG SWDCLK
+  {GPIOB, GPIO_PIN_5,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 28 DXL DIR
+  {GPIOB, GPIO_PIN_6,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 29 DXL TXD
+  {GPIOB, GPIO_PIN_7,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 30 DXL RXD
+
+  {NULL , 0          ,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI }
+};
+```
+
 # [전원 연결 방법](#전원-연결-방법)
 
 OpenCM보드는 아래와 같이 3가지 전원 포트로 보드를 작동시킬 수 있습니다.
@@ -399,13 +487,11 @@ XL-320을 제외한 3핀 TTL 다이나믹셀은 헤더의 +-핀 또는 배터리
 
 ![](/assets/images/parts/controller/opencm904/opencm904_22.jpg)
 
-- 배터리 커넥터 및 +-헤더핀 전원 두 개중 하나는 제거
-
-  ![](/assets/images/parts/controller/opencm904/opencm904_22.jpg)
-
-- 배터리 혼용 금지
+> 배터리 커넥터 및 +-헤더핀 전원 두 개중 하나는 제거
 
   ![](/assets/images/parts/controller/opencm904/opencm904_23.jpg)
+
+> 배터리 혼용 금지
 
 USB 포트는 LBS-40 배터리 혹은 +-핀과 동시 연결해도 무방합니다.(차단회로 내장)  
 +- 혹은 배터리로 공급되는 전압은 다이나믹셀의 권장 전압으로 사용하시길 추천합니다.  
@@ -447,13 +533,13 @@ OpenCM9.04의 다이나믹셀 TTL 3핀 홀은 기존 다이나믹셀 TTL 3핀과
 |:--------------------:|:--------------:|:------------:|
 |   [다이나믹셀 SDK]   |       O        |      X       |
 | [DynamixelWorkbench] |       O        |      X       |
-| 아두이노 라이브러리  |       O        |      O       |
+| [아두이노 라이브러리]  |       O        |      X       |
 |         OS X         |       O        | O (10.12.2)  |
 |        리눅스        |       O        |  O (12.04)   |
 |       윈도우즈       |       O        |      O       |
 
 ## [OpenCM IDE](#opencm-ide)
-OpenCM IDE는 더이상 지원하지 않습니다. [아두이노 IDE]를 사용해주세요.
+**OpenCM IDE는 더이상 지원하지 않습니다.** [아두이노 IDE]를 사용해주세요.
 
 - [OpenCM IDE] 매뉴얼
 
@@ -798,6 +884,7 @@ XM/XH 시리즈를 R+Task2.0이나 R+Motion2.0에서 사용하기 위해서는 �
 [BT-410]: /docs/kr/parts/communication/bt-410/
 [다이나믹셀 SDK]: /docs/kr/software/dynamixel/dynamixel_sdk/overview/
 [DynamixelWorkbench]: /docs/kr/software/dynamixel/dynamixel_workbench/
+[아두이노 라이브러리]: /docs/kr/parts/controller/opencm904/#라이브러리-api
 [컨트롤 테이블 확인하기]: /docs/kr/software/rplus2/manager/#다이나믹셀-컨트롤-테이블
 [OpenCM9.04_manual_ko.zip]: http://www.robotis.com/download/doc/controller/OpenCM9.04_ko/OpenCM9.04_manual_ko.zip
 [SCHEMATIC-OpenCM9.04.pdf]: http://support.robotis.com/ko/baggage_files/opencm/opencm904_rev_10_final_schematic.pdf

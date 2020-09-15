@@ -43,6 +43,7 @@ If the DYNAMIXEL2Arduino library has been successfully installed, useful example
 - [getPresentPWM()]{: .popup}
 - [setGoalCurrent()]{: .popup}
 - [getPresentCurrent()]{: .popup}
+- [getTorqueEnableStat()]{: .popup}
 - [readControlTableItem()]{: .popup}
 - [writeControlTableItem()]{: .popup}
 
@@ -50,6 +51,8 @@ If the DYNAMIXEL2Arduino library has been successfully installed, useful example
 
 DYNAMIXEL2Arduino class inherits below public functions from the Master class.
 
+- [read()]{: .popup}
+- [write()]{: .popup}
 - [syncRead()]{: .popup}
 - [syncWrite()]{: .popup}
 - [bulkRead()]{: .popup}
@@ -78,8 +81,11 @@ DYNAMIXEL2Arduino class inherits below public functions from the Master class.
 [getPresentPWM()]: /docs/en/popup/arduino_api/getPresentPWM/
 [setGoalCurrent()]: /docs/en/popup/arduino_api/setGoalCurrent/
 [getPresentCurrent()]: /docs/en/popup/arduino_api/getPresentCurrent/
+[getTorqueEnableStat()]: /docs/en/popup/arduino_api/getTorqueEnableStat/
 [readControlTableItem()]: /docs/en/popup/arduino_api/readControlTableItem/
 [writeControlTableItem()]: /docs/en/popup/arduino_api/writeControlTableItem/
+[read()]: /docs/en/popup/arduino_api/read/
+[write()]: /docs/en/popup/arduino_api/write/
 [syncRead()]: /docs/en/popup/arduino_api/syncRead/
 [syncWrite()]: /docs/en/popup/arduino_api/syncWrite/
 [bulkRead()]: /docs/en/popup/arduino_api/bulkRead/

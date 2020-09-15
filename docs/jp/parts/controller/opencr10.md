@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/parts/controller/opencr10_jp/
 sidebar:
-  title: OpenCR1.0
+  title: OpenCR 1.0
   nav: "opencr10_jp"
 ---
 
@@ -19,7 +19,7 @@ sidebar:
 OpenCR1.0は、完全にオープンソースのハードウェアとソフトウェアを提供するために、ROSの組み込みシステム用に開発されました。  
 ボードの回路図、PCBカバー、BOM、TurtleBot3とOP3用のファームウェアのソースコードなど、ボードに関するすべてのものは、ユーザーとROSコミュニティのためにオープンソースライセンスのもとで無料で配布されています。  
 OpenCR1.0ボード内のSTM32F7シリーズチップは、浮動小数点演算ユニットを搭載した非常に強力なARM Cortex-M7をベースにしています。  
-OpenCR1.0の開発環境は、若い学生向けのArduino IDEやScratchから、エキスパート向けの従来のファームウェア開発まで幅広く対応しています。  
+OpenCR1.0の開発環境は、若い学生向けのArduino IDEやScratchから、エキスパート向けの従来のファームウェア開発まで幅広く対応しています。 
 
 # [仕様表](#仕様表)
 

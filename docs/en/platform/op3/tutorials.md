@@ -49,9 +49,8 @@ Type below commands in the terminal window.
 $ roslaunch op3_bringup op3_bringup.launch  
 ```
 
-> If `op3_bringup` package is not existed, update source to latest version
-
-```
+Note that, if `op3_bringup` package is missing, update the package to download the missing pacakge by following the given insturction.
+```bash
 $ cd ~/catkin_ws/src/ROBOTIS-OP3-Demo
 $ git pull
 $ cd ~/catkin_ws
@@ -743,18 +742,18 @@ The below table shows the contents of the default action file.
 
 | page number | page title | brief description of page                             | number of pages |
 |:-----------:|:-----------|:------------------------------------------------------|:---------------:|
-| 1           | walki_init | initial standing pose                                 | 1               |
-| 2           | hello      | greeting                                              | 1               |
-| 3           | thank_you  | Thank you                                             | 1               |
-| 4           | yes        | yes                                                   | 1               |
-| 5           | no         | no                                                    | 1               |
-| 6           | fighting   | fighting                                              | 1               |
-| 7           | clap       | clap                                                  | 2               |
-| 9           | S_H_RE     | ready for shaking hands                               | 1               |
-| 10          | S_H        | shaking hands                                         | 1               |
-| 11          | S_H_END    | move to initialpose fram ready pose for shaking hands | 1               |
-| 12          | scanning   | looking around                                        | 1               |
-| 13          | ceremony   | ceremony                                              | 1               |
+|      1      | walki_init | initial standing pose                                 |        1        |
+|      2      | hello      | greeting                                              |        1        |
+|      3      | thank_you  | Thank you                                             |        1        |
+|      4      | yes        | yes                                                   |        1        |
+|      5      | no         | no                                                    |        1        |
+|      6      | fighting   | fighting                                              |        1        |
+|      7      | clap       | clap                                                  |        2        |
+|      9      | S_H_RE     | ready for shaking hands                               |        1        |
+|     10      | S_H        | shaking hands                                         |        1        |
+|     11      | S_H_END    | move to initialpose fram ready pose for shaking hands |        1        |
+|     12      | scanning   | looking around                                        |        1        |
+|     13      | ceremony   | ceremony                                              |        1        |
 
 
 #### Basic Command of Action Editor

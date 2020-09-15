@@ -22,7 +22,20 @@ Modify the hardware(DOF, structure) and software(kinematics, trajectory) of Open
 <img src="/assets/images/platform/openmanipulator_x/OpenManipulator_friends.png" width="760">
 
 
-  Friends List
+{% capture TB_BOM_notice %}
+
+**Notice**   
+Thank you for your continued interests in the OpenMANIPULATOR Friends.  
+The listed products in BOM, sold by third-party distributors, are subject to change or discontinuation without a prior notice.  
+In this case, please refer to the 3D modeling file to find compatible products.   
+
+**Contact Information**  
+If you have questions regarding the TurtleBot3 Friends, contact us via the email below.  
+- [support@robotis.com](mailto:support@robotis.com)  
+{% endcapture %}
+<div class="notice--warning">{{ TB_BOM_notice | markdownify }}</div>
+
+  **Friends List**
 
   - [OpenMANIPULATOR SCARA](/docs/en/platform/openmanipulator_x/friends/#openmanipulator-scara)
   - [OpenMANIPULATOR Link](/docs/en/platform/openmanipulator_x/friends/#openmanipulator-link)
@@ -41,7 +54,7 @@ Modify the hardware(DOF, structure) and software(kinematics, trajectory) of Open
 
 | Items               | Unit    |                                    |
 |:--------------------|:--------|:-----------------------------------|
-| **Actuator**        |         | XM430-W350-T             |
+| **Actuator**        |         | XM430-W350-T                       |
 | **Input Voltage**   | V       | 12                                 |
 | **DOF**             | -       | 4 (3 DOF + 1 End-Effector)         |
 | **Speed(Joint)**    | RPM     | 46                                 |
@@ -58,24 +71,24 @@ Modify the hardware(DOF, structure) and software(kinematics, trajectory) of Open
 
 #### Part Lists
 
-|                   | Part Name              | Quantity | Link                                                                                                                               |
-|:------------------|:-----------------------|:---------|:-----------------------------------------------------------------------------------------------------------------------------------|
-| **Chassis Parts** | BASE FRAME             | 1        | [Download Link](https://www.thingiverse.com/thing:3069581)                                                                         |
-| .                 | PEN HOLDER             | 1        | [Download Link](https://www.thingiverse.com/thing:3069581)                                                                         |
-| .                 | FRM BASE               | 1        | [Download Link](https://www.thingiverse.com/thing:3069581)                                                                         |
-| .                 | TAP HOLDER             | 1        | [Download Link](https://www.thingiverse.com/thing:3069581)                                                                         |
-| .                 | FR12_H101_K            | 4        | [Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2768&GC=GD0B0001)                                            |
-| .                 | FR12_S102_K            | 3        | [Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2766&GC=GD0B0001)                                            |
-| .                 | HN12_I101              | 4        | [Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2759&GC=GD0B0006)                                            |
-| **Actuators**     | XM430-W350-T | 4        | [Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2923&GC=GD080101)                                            |
-| **Cables**        | CABLE_3P_130MM         | 3        | [Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2347&GC=GD0B0105&page=2)                                     |
-| .                 | CABLE_3P_240MM         | 1        | [Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2926&GC=GD0B0105&page=3)                                     |
-| **Miscellaneous** | WB_M2X03               | 24       | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/?Inch=0&CategorySpec=00000070644%3A%3A2%0900000070373%3A%3A3)       |
-| .                 | WB_M2_5X4              | 14       | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/?Inch=0&CategorySpec=00000070644%3A%3A2.5%0900000070373%3A%3A8)     |
-| .                 | WB_M2_5X06             | 8        | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/?Inch=0&CategorySpec=00000070644%3A%3A2.5%0900000070373%3A%3A3%2C6) |
-| .                 | WB_M2_5X12             | 2        | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/?Inch=0&CategorySpec=00000070644%3A%3A2.5%0900000070373%3A%3A8)     |
-| .                 | FHS_M2_5X14            | 12       | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3A%3A2.5%0900000071552%3)          |
-| .                 | NUT_M2_5(0.45P)        | 8        | [Shop Link](https://us.misumi-ec.com/vona2/detail/110300250540/?Inch=0&CategorySpec=00000070281%3A%3A2.5)                          |
+|                   | Part Name       | Quantity | Link                                                                                                                               |
+|:------------------|:----------------|:---------|:-----------------------------------------------------------------------------------------------------------------------------------|
+| **Chassis Parts** | BASE FRAME      | 1        | [Download Link](https://www.thingiverse.com/thing:3069581)                                                                         |
+| .                 | PEN HOLDER      | 1        | [Download Link](https://www.thingiverse.com/thing:3069581)                                                                         |
+| .                 | FRM BASE        | 1        | [Download Link](https://www.thingiverse.com/thing:3069581)                                                                         |
+| .                 | TAP HOLDER      | 1        | [Download Link](https://www.thingiverse.com/thing:3069581)                                                                         |
+| .                 | FR12_H101_K     | 4        | [Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2768&GC=GD0B0001)                                            |
+| .                 | FR12_S102_K     | 3        | [Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2766&GC=GD0B0001)                                            |
+| .                 | HN12_I101       | 4        | [Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2759&GC=GD0B0006)                                            |
+| **Actuators**     | XM430-W350-T    | 4        | [Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2923&GC=GD080101)                                            |
+| **Cables**        | CABLE_3P_130MM  | 3        | [Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2347&GC=GD0B0105&page=2)                                     |
+| .                 | CABLE_3P_240MM  | 1        | [Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2926&GC=GD0B0105&page=3)                                     |
+| **Miscellaneous** | WB_M2X03        | 24       | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/?Inch=0&CategorySpec=00000070644%3A%3A2%0900000070373%3A%3A3)       |
+| .                 | WB_M2_5X4       | 14       | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/?Inch=0&CategorySpec=00000070644%3A%3A2.5%0900000070373%3A%3A8)     |
+| .                 | WB_M2_5X06      | 8        | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/?Inch=0&CategorySpec=00000070644%3A%3A2.5%0900000070373%3A%3A3%2C6) |
+| .                 | WB_M2_5X12      | 2        | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/?Inch=0&CategorySpec=00000070644%3A%3A2.5%0900000070373%3A%3A8)     |
+| .                 | FHS_M2_5X14     | 12       | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3A%3A2.5%0900000071552%3)          |
+| .                 | NUT_M2_5(0.45P) | 8        | [Shop Link](https://us.misumi-ec.com/vona2/detail/110300250540/?Inch=0&CategorySpec=00000070281%3A%3A2.5)                          |
 
 
 For more information, please refer to [BOM](https://docs.google.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit#gid=1200068410).
@@ -119,7 +132,7 @@ Open processing source code file (`open_manipulator_processing` → `Scara` → 
 
 | Items                    | Unit    |                                    |
 |:-------------------------|:--------|:-----------------------------------|
-| **Actuator**             |         | XM430-W350-T             |
+| **Actuator**             |         | XM430-W350-T                       |
 | **DOF**                  | -       | 3                                  |
 | **Payload With Suction** | g (lb)  | 500 (1.10)                         |
 | **Speed(Joint)**         | rad/sec | 4.82                               |
@@ -151,7 +164,7 @@ Open processing source code file (`open_manipulator_processing` → `Scara` → 
 | .                 | LINK 200 B                                        | 4        | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | .                 | TRIANGLE LINK                                     | 1        | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | .                 | TOOL LINK                                         | 1        | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| **Actuators**     | XM430-W350-T                            | 3        | [Shop Link](http://en.robotis.com/shop_en/item.php?it_id=902-0124-000)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| **Actuators**     | XM430-W350-T                                      | 3        | [Shop Link](http://en.robotis.com/shop_en/item.php?it_id=902-0124-000)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | **Cables**        | CABLE_3P_180MM                                    | 1        | [Shop Link](http://en.robotis.com/shop_en/item.php?it_id=903-0082-000)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | .                 | CABLE_3P_240MM                                    | 2        | [Shop Link](http://en.robotis.com/shop_en/item.php?it_id=903-0084-000)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | **Axis Parts**    | PSCBRJ6-9                                         | 18       | [Shop Link](https://us.misumi-ec.com/vona2/detail/110302637270/?HissuCode=PSCBRJ6-9)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
@@ -249,7 +262,7 @@ If you have checked the above and it does not work normally, I recommend running
 
 | Items               | Unit |                                    |
 |:--------------------|:-----|:-----------------------------------|
-| **Actuator**        |      | XM430-W350-T             |
+| **Actuator**        |      | XM430-W350-T                       |
 | **Input Voltage**   | V    | 12                                 |
 | **DOF**             | -    | 3                                  |
 | **Speed(Joint)**    | RPM  | 46                                 |
@@ -272,7 +285,7 @@ If you have checked the above and it does not work normally, I recommend running
 | .                 | link_100                         | 3|[Download Link](https://www.thingiverse.com/thing:3064437)                                                                                                                           |
 | .                 | link_120                         | 3|[Download Link](https://www.thingiverse.com/thing:3064437)                                                                                                                           |
 | .                 | HN12_I101                        | 3|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2759&GC=GD0B0006)                                                                                              |
-| **Actuators**     | XM430-W350-T           | 3|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2923&GC=GD080101)                                                                                              |
+| **Actuators**     | XM430-W350-T                     | 3|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2923&GC=GD080101)                                                                                              |
 | **Cables**        | CABLE_3P_240MM                   | 3|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2926&GC=GD0B0105&page=3)                                                                                       |
 | **Miscellaneous** | WB_M2_5X12                       | 24|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/?Inch=0&CategorySpec=00000070644%3A%3A2.5%0900000070373%3A%3A8)                                                      |
 | .                 | FHS_M2_5X14                      | 12|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3A%3A2.5%0900000071552%3)                                                           |
@@ -316,7 +329,7 @@ Open processing source code file (`open_manipulator_processing` → `Planar` →
 
 | Items               | Unit |                                    |
 |:--------------------|:-----|:-----------------------------------|
-| **Actuator**        |      | XM430-W350-T             |
+| **Actuator**        |      | XM430-W350-T                       |
 | **Input Voltage**   | V    | 12                                 |
 | **DOF**             | -    | 3                                  |
 | **Speed(Joint)**    | RPM  | 46                                 |
@@ -339,7 +352,7 @@ Open processing source code file (`open_manipulator_processing` → `Planar` →
 | .                 | Delta_gripper          | 1|[Download Link](https://www.thingiverse.com/thing:3217182)                                                                                                         |
 | .                 | link                   | 3|[Download Link](https://www.thingiverse.com/thing:3217182)                                                                                                         |
 | .                 | HN12_I101              | 3|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2759&GC=GD0B0006)                                                                            |
-| **Actuators**     | XM430-W350-T | 3|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2923&GC=GD080101)                                                                            |
+| **Actuators**     | XM430-W350-T           | 3|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2923&GC=GD080101)                                                                            |
 | **Cables**        | CABLE_3P_240MM         | 3|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2926&GC=GD0B0105&page=3)                                                                     |
 | **Miscellaneous** | WB_M2_5X12             | 24|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2923&GC=GD080101http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2923&GC=GD080101) |
 | .                 | FHS_M2_5X14            | 12|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3A%3A2.5%0900000071552%3)                                         |
@@ -383,7 +396,7 @@ Open processing source code file (`open_manipulator_processing` → `Delta` → 
 
 | Items               | Unit |                                    |
 |:--------------------|:-----|:-----------------------------------|
-| **Actuator**        |      | XM430-W350-T             |
+| **Actuator**        |      | XM430-W350-T                       |
 | **Input Voltage**   | V    | 12                                 |
 | **DOF**             | -    | 6                                  |
 | **Speed(Joint)**    | RPM  | 46                                 |
@@ -401,18 +414,18 @@ Open processing source code file (`open_manipulator_processing` → `Delta` → 
 
 #### Part Lists
 
-|                   | Part Name              | Quantity | Link                                                                                                                                                        |
-|:------------------|:-----------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Chassis Parts** | BASE FRAME             | 1|[Download Link](https://www.thingiverse.com/thing:3272579)                                                                                                           |
-| .                 | stewart_conv           | 6|[Download Link](https://www.thingiverse.com/thing:3272579)                                                                                                           |
-| .                 | st_link_new            | 6|[Download Link](https://www.thingiverse.com/thing:3272579)                                                                                                           |
-| .                 | PHSOM3                 | 12|[Shop Link](https://kr.misumi-ec.com/vona2/detail/110300371730/?HissuCode=PHSOM3&PNSearch=PHSOM3&KWSearch=phsom3&searchFlow=results2type)                           |
-| .                 | SPJW6-100-M3-N3        | 6|[Shop Link](https://kr.misumi-ec.com/vona2/detail/110302636140/?HissuCode=SPJW6-100-M3-N3&PNSearch=SPJW6-100-M3-N3&KWSearch=SPJW6-100-M3-N3&searchFlow=results2type) |
-| .                 | HN12_I101              | 6|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2759&GC=GD0B0006)                                                                              |
-| **Actuators**     | XM430-W350-T | 6|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2923&GC=GD080101)                                                                              |
-| **Cables**        | CABLE_3P_130MM         | 6|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2347&GC=GD0B0105&page=2)                                                                       |
-| **Miscellaneous** | WB_M3X08               | 24|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/)                                                                                                    |
-| .                 | NUT_M3                 | 24|[Shop Link](https://us.misumi-ec.com/vona2/detail/110300250540/)                                                                                                    |
+|                   | Part Name       | Quantity | Link                                                                                                                                                        |
+|:------------------|:----------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Chassis Parts** | BASE FRAME      | 1|[Download Link](https://www.thingiverse.com/thing:3272579)                                                                                                           |
+| .                 | stewart_conv    | 6|[Download Link](https://www.thingiverse.com/thing:3272579)                                                                                                           |
+| .                 | st_link_new     | 6|[Download Link](https://www.thingiverse.com/thing:3272579)                                                                                                           |
+| .                 | PHSOM3          | 12|[Shop Link](https://kr.misumi-ec.com/vona2/detail/110300371730/?HissuCode=PHSOM3&PNSearch=PHSOM3&KWSearch=phsom3&searchFlow=results2type)                           |
+| .                 | SPJW6-100-M3-N3 | 6|[Shop Link](https://kr.misumi-ec.com/vona2/detail/110302636140/?HissuCode=SPJW6-100-M3-N3&PNSearch=SPJW6-100-M3-N3&KWSearch=SPJW6-100-M3-N3&searchFlow=results2type) |
+| .                 | HN12_I101       | 6|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2759&GC=GD0B0006)                                                                              |
+| **Actuators**     | XM430-W350-T    | 6|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2923&GC=GD080101)                                                                              |
+| **Cables**        | CABLE_3P_130MM  | 6|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2347&GC=GD0B0105&page=2)                                                                       |
+| **Miscellaneous** | WB_M3X08        | 24|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/)                                                                                                    |
+| .                 | NUT_M3          | 24|[Shop Link](https://us.misumi-ec.com/vona2/detail/110300250540/)                                                                                                    |
 
 For more information, please refer to [BOM](https://docs.google.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit#gid=1200068410).
 
@@ -451,7 +464,7 @@ Open processing source code file (`open_manipulator_processing` → `Stewart` �
 
 | Items               | Unit |                                    |
 |:--------------------|:-----|:-----------------------------------|
-| **Actuator**        |      | XM430-W350-T             |
+| **Actuator**        |      | XM430-W350-T                       |
 | **Input Voltage**   | V    | 12                                 |
 | **DOF**             | -    | 3                                  |
 | **Speed(Joint)**    | RPM  | 46                                 |
@@ -480,7 +493,7 @@ Open processing source code file (`open_manipulator_processing` → `Stewart` �
 | .                 | linear_pully_conv                      | 1|[Download Link](https://www.thingiverse.com/thing:3255864)                                                                              |
 | .                 | linear_pully_conv_dummy                | 1|[Download Link](https://www.thingiverse.com/thing:3255864)                                                                              |
 | .                 | Aluminum Extrusion - 6 series, Base 30 | 8|[Shop Link](https://us.misumi-ec.com/vona2/detail/110302686450/?HissuCode=HFSLB6-3030-%5b50-1800%2f0.5%5d&searchFlow=results2similartn) |
-| **Actuators**     | XM430-W350-T                 | 3|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2923&GC=GD080101)                                                 |
+| **Actuators**     | XM430-W350-T                           | 3|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2923&GC=GD080101)                                                 |
 | **Cables**        | CABLE_3P_240MM                         | 1|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2926&GC=GD0B0105&page=3)                                          |
 
 For more information, please refer to [BOM](https://docs.google.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit#gid=1200068410).

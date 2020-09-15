@@ -431,7 +431,7 @@ Secondly, the controller sets the communication `BAUDRATE` at the port opened pr
   }
 ```
 
-`dynamixel::PacketHandler::ping()` function orders to the #`DXL_ID` Dynamixel through the port which the `portHandler` handles. Then, it receives the `dxl_model_number` and `dxl_error`. The function returns 0 if no communication error has been occurred.
+`dynamixel::PacketHandler::ping()` function sends an instruction to the #`DXL_ID` Dynamixel through the port which the `portHandler` handles. Then, it receives the `dxl_model_number` and `dxl_error`. The function returns 0 if no communication error has been occurred.
 
 ``` cpp
   // Close port
