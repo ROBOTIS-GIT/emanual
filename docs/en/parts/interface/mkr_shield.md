@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/parts/interface/mkr_shield/
 sidebar:
-  title: MKR Shield
+  title: DYNAMIXEL MKR Shield
   nav: "mkr_shield"
 ---
 
@@ -30,10 +30,14 @@ Please refer to DYNAMIXEL Shield Libraries section to
 # [Quick Start Guide](#quick-start-guide)
 
 ## Online Coursework
+(Coming up soon)  
 ![](http://robotsource.net/upload_image/images/1596679803mkr.png)
 
 ## Video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UFitBEHsWTo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+**Please use 12V SMPS or external power supply when operating DYNAMIXEL other than XL-320 and XL330.**
+{: .notice--warning}
 
 # [Specifications](#specifications)
 
@@ -241,6 +245,8 @@ The Remote Controller class can be used with the Arduino MKR boards by enabling 
 [MX-106T/AT]: /docs/en/dxl/mx/mx-106/
 [MX-106T/AT(2.0)]: /docs/en/dxl/mx/mx-106-2/
 [XL-320]: /docs/en/dxl/x/xl320/
+[XL330-M077-T]: /docs/en/dxl/x/xl330-m077/
+[XL330-M288-T]: /docs/en/dxl/x/xl330-m288/
 [XL430-W250-T]: /docs/en/dxl/x/xl430-w250/
 [2XL430-W250-T]: /docs/en/dxl/x/2xl430-w250/
 [XC430-W150-T]: /docs/en/dxl/x/xc430-w150/

@@ -610,9 +610,9 @@ main:
       - title: "DYNAMIXEL Shield"
         titlekr: "다이나믹셀 쉴드"
         url: /parts/interface/dynamixel_shield/
-      - title: "MKR Shield"
-        titlekr: "MKR 쉴드"
-        url: /parts/interface/mkr_shield/
+#      - title: "MKR Shield"
+#        titlekr: "MKR 쉴드"
+#        url: /parts/interface/mkr_shield/
     - title: "Sensors"
       titlekr: "센서"
       children:
