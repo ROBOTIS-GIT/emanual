@@ -23137,11 +23137,7 @@ opencr10_jp:
     - title: "ダウンロード"
       url: /parts/controller/opencr10_jp/#ダウンロード
     - title: "認証"
-<<<<<<< HEAD
-      url: /parts/controller/opencr10/#認証      
-=======
       url: /parts/controller/opencr10_jp/#認証      
->>>>>>> master
 
 dynamixel_shield:
   - title: "Introduction"
