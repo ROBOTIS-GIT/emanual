@@ -13,14 +13,12 @@ product_group: turtlebot3
 page_number: 24
 ---
 
-<!--[dummy Header 1]>
-  <h1 id="dummy"><a href="#dummy">Dummy</a></h1>
-<![end dummy Header 1]-->
-
 <div style="counter-reset: h1 12"></div>
 <div style="counter-reset: h2 10"></div> 
 
 ## [TurtleBot3 Home Service Challenge](#turtlebot3-home-service-challenge)
+
+![](/assets/images/platform/turtlebot3/home_service_challenge/hsc_logo.png)
 
 {% capture notice_01 %}
 **NOTE**:
@@ -30,9 +28,7 @@ page_number: 24
 <div class="notice">{{ notice_01 | markdownify }}</div>  
 
 ![](/assets/images/platform/turtlebot3/home_service_challenge/hsc_stadium_2.png)  
-> Home Service Challenge Stadium and Objects
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3aZXpVsEi0c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+> Home Service Challenge Stadium and Objects used during the challenge.
 
 ### [What you need to Join the Home Service Challenge](#what-you-need-to-join-the-home-service-challenge)
 `TurtleBot3 Waffle Pi`  
