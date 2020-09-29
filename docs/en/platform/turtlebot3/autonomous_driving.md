@@ -56,7 +56,7 @@ $ git clone https://github.com/ROBOTIS-GIT/turtlebot3_autorace_2020.git
 $ cd ~/catkin_ws && catkin_make
 ```
 
-2. Install additional dependent packages on both `Remote PC` and `SBC`.  
+2. Install additional dependent packages on `Remote PC`.  
 ``` bash
 $ sudo apt-get install ros-kinetic-image-transport ros-kinetic-cv-bridge ros-kinetic-vision-opencv python-opencv libopencv-dev ros-kinetic-image-proc
 ```
