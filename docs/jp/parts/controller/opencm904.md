@@ -731,7 +731,7 @@ Tools → Port → COM1を選択します。
 COM1 の値は、PCに接続されている環境によって異なる場合があります。
 {: .notice}
 
-{% include en/software/arduino/arduino_library_api.md %}
+{% include jp/software/arduino/arduino_library_api.md %}
 
 # [例](#例)
 
@@ -2128,7 +2128,7 @@ void testscrolltext(void) {
 [OpenCM IDE]: http://emanual.robotis.com/docs/en/software/opencm_ide/getting_started/
 [DYNAMIXEL SDK]: /docs/en/software/dynamixel/dynamixel_sdk/overview/
 [DYNAMIXELWorkbench]: http://wiki.ros.org/dynamixel_workbench
-[Arduino Libraries]: /docs/en/parts/controller/opencm904/#library-api
+[Arduino Libraries]: /docs/jp/parts/controller/opencm904/#library-api
 [Arduino Official Guide]: https://www.arduino.cc/en/Guide/Libraries
 [GitHub repository]: https://github.com/ROBOTIS-GIT/Dynamixel2Arduino
 [DYNAMIXEL2Arduino library]: #library-api

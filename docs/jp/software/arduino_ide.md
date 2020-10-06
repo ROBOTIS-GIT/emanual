@@ -1,14 +1,14 @@
 ---
 layout: archive
-lang: jp
+lang: en
 ref: arduino_ide
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/jp/software/arduino_ide/
+permalink: /docs/en/software/arduino_ide_jp/
 sidebar:
   title: Arduino IDE
-  nav: "arduino_ide"
+  nav: "arduino_ide_jp"
 ---
 
 # [イントロダクション](#イントロダクション)
@@ -17,7 +17,7 @@ Arduino IDEは、[OpenCR]および[OpenCM9.04]に互換性がある開発ツー�
 [OpenCM IDE]は、ArduinoIDEに置き換えることができますが、可能であればArduino IDEを使用することを推奨します。  
 Arduino IDEを使用すると、ユーザーはスケッチを作成するときに[DYNAMIXEL SDK]と[DYNMAIXEL Workbench]を適用できます。  
 
-# [ソフトウェアのインストール](#ソフトウェアのインストレール)
+# [ソフトウェアのインストール](#ソフトウェアのインストール)
 
 - `ダウンロード` [Arduino IDE]
 
@@ -56,7 +56,7 @@ $ sudo apt-get install libncurses5-dev:i386
 
 ![](/assets/images/platform/turtlebot3/preparation/7_1_2_compiler_settings.png)
 
-### [Arduino IDEのインストール(Linux)](#arduino-ideのインストール-linux)
+### [Arduino IDEのインストール(Linux)](#arduino-ideのインストールlinux)
 arduinoの公式ホームページからArduino IDEの最新バージョンをダウンロードしインストールします。 現在、OpenCRおよびOpenCM9.04はバージョン1.6.4以降と互換性があります。  
 
 [https://www.arduino.cc/en/Main/Software](https://www.arduino.cc/en/Main/Software)
@@ -76,7 +76,7 @@ $ export PATH=$PATH:$HOME/tools/arduino-1.8.3
 $ source ~/.bashrc
 ```
 
-### [Arduino IDEの実行(Linux)](#arduino-ideの実行-linux)
+### [Arduino IDEの実行(Linux)](#arduino-ideの実行linux)
 LinuxプラットフォームでArduino IDEを実行するには、次のようにターミナルに入力します。
 
 ```bash
@@ -166,13 +166,13 @@ $ sudo apt-get purge modemmanager
 
 ## [Macにインストール](#macにインストール)
 
-### [Arduino IDEのインストール(Mac)](#arduino-ideのインストール-mac)
+### [Arduino IDEのインストール(Mac)](#arduino-ideのインストールmac)
 
 arduinoの公式ホームページからArduino IDEの最新バージョンをダウンロードしインストールします。 現在、OpenCRおよびOpenCM9.04はバージョン1.6.4以降と互換性があります。  
 
 - `ダウンロード` [Arduino IDE]
 
-### [Arduino IDEの実行(Mac)](#arduino-ideの実行-mac)
+### [Arduino IDEの実行(Mac)](#arduino-ideの実行mac)
 
 MacプラットフォームでArduino IDEを実行するには、次のようにArduino IDEアイコンをクリックします。
 
@@ -180,7 +180,7 @@ MacプラットフォームでArduino IDEを実行するには、次のように
 
 ![](/assets/images/parts/controller/opencr10/arduino_mac_02.png)
 
-### [Arduino IDEのポーティング(Mac)](#arduino-ideのポーティング-mac)
+### [Arduino IDEのポーティング(Mac)](#arduino-ideのポーティングmac)
 
 #### 環境設定
 Arduino IDEを実行した後、IDEのトップメニューでファイル → 設定をクリックします。 設定ウィンドウが表示されたら、次のリンクをコピーして追加のボードマネージャーのURLをテキストボックスに貼り付けます。
@@ -243,14 +243,14 @@ WindowsでOpenCRおよびOpenCM9.04マイクロUSBポートをシリアルポー
 
 [http://www.st.com/en/development-tools/stsw-stm32102.html](http://www.st.com/en/development-tools/stsw-stm32102.html)
 
-### [Arduino IDEのインストール(Windows)](#arduino-ideのインストール-windows)
+### [Arduino IDEのインストール(Windows)](#arduino-ideのインストールwindows)
 arduinoの公式ホームページからArduino IDEの最新バージョンをダウンロードしインストールします。 現在、OpenCRおよびOpenCM9.04はバージョン1.6.4以降と互換性があります。  
 
 - `ダウンロード` [Arduino IDE]
 
 Arduino IDE for Windowsにはインストール版と圧縮版がありますので、好みの方法でインストールしてください。
 
-### [Arduino IDEへのポーティング(Windows)](#arduino-ideへのポーティング)
+### [Arduino IDEへのポーティング(Windows)](#arduino-ideへのポーティングwindows)
 
 #### Preferences
 Arduino IDEを起動したら、IDEのトップメニューにある ファイル → 環境設定 をクリックします。環境設定ウィンドウが表示されたら、以下のリンクをコピーして、Additional Boards Manager URLsのテキストボックスに貼り付けます。(この作業には約20分かかります。)
@@ -308,7 +308,7 @@ OpenCR Boardがツール → ボードのリストにあるかどうかを確認
 **注意** : **COM1** の値は、PCに接続されている環境によって異なる場合があり 。
 {: .notice--warning}
 
-{% include en/software/arduino/arduino_library_api.md %}
+{% include jp/software/arduino/arduino_library_api.md %}
 
 # [例](#例)
 
@@ -328,7 +328,7 @@ OpenCR Boardがツール → ボードのリストにあるかどうかを確認
 
 # [アドバンスドユーザー](#アドバンスドユーザー)
 
-## [ブートローダの書き込み(OpenCR)](#ブートローダの書き込み-OpenCR)
+## [ブートローダの書き込み(OpenCR)](#ブートローダの書き込みopencr)
 
 **注意**：OpenCRブートローダーが更新された場合にのみ、ブートローダーの更新を実行してください。 製品にはすでにデフォルトのブートローダーがインストールされています。
 {: .notice--warning}
@@ -357,9 +357,7 @@ DFUモードに正常に入り、デバイスマネージャーの**Universal Se
 
 `ツール` >`ブートローダーの書き込み`をクリックして、ブートローダーを書き込みます。
 
-![](/assets/images/platopencmform/turtlebot3/preparation/ide9.png)
-
-
+![](/assets/images/platform/turtlebot3/preparation/ide9.png)
 
 [Arduino IDE]: https://www.arduino.cc/en/Main/Software
 [OpenCR]: /docs/jp/parts/controller/opencr10/

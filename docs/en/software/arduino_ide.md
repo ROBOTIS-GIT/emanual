@@ -363,8 +363,6 @@ Click `Tools` > `Burn Bootloader` to burn the bootloader.
 
 ![](/assets/images/platform/turtlebot3/preparation/ide9.png)
 
-
-
 [Arduino IDE]: https://www.arduino.cc/en/Main/Software
 [OpenCR]: /docs/en/parts/controller/opencr10/
 [OpenCM9.04]: /docs/en/parts/controller/opencm904/

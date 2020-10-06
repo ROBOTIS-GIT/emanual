@@ -20713,6 +20713,61 @@ arduino_ide:
     - title: "Writing Bootloader(OpenCR)"
       url: /software/arduino_ide/#writing-bootloaderopencr
 
+arduino_ide_jp:
+  - title: "イントロダクション"
+    url: /software/arduino_ide_jp/#イントロダクション
+  - title: "ソフトウェアのインストール"
+    url: /software/arduino_ide_jp/#ソフトウェアのインストール
+    children:
+    - title: "Linuxにインストール"
+      url: /software/arduino_ide_jp/#linuxにインストール
+      children:
+      - title: "USBポート設定"
+        url: /software/arduino_ide_jp/#usbポート設定
+      - title: "コンパイラ設定"
+        url: /software/arduino_ide_jp/#コンパイラ設定
+      - title: "Arduino IDEのインストール(Linux)"
+        url: /software/arduino_ide_jp/#arduino-ideのインストールlinux
+      - title: "Arduino IDEの実行(Linux)"
+        url: /software/arduino_ide_jp/#arduino-ideの実行linux
+      - title: "Arduino IDEへのポーティング(Linux)"
+        url: /software/arduino_ide_jp/#arduino-ideへのポーティングlinux
+      - title: "Modemmanagerの削除"
+        url: /software/arduino_ide_jp/#modemmanagerの削除
+    - title: "Macにインストール"
+      url: /software/arduino_ide_jp/#macにインストール
+      children:
+      - title: "Arduino IDEのインストール(Mac)"
+        url: /software/arduino_ide_jp/#arduino-ideのインストールmac
+      - title: "Arduino IDEの実行(Mac)"
+        url: /software/arduino_ide_jp/#arduino-ideの実行mac
+      - title: "Arduino IDEのポーティング(Mac)"
+        url: /software/arduino_ide_jp/#arduino-ideのポーティングmac
+    - title: "Windowsにインストール"
+      url: /software/arduino_ide_jp/#windowsにインストール
+      children:
+      - title: "ドライバーのインストール"
+        url: /software/arduino_ide_jp/#ドライバーのインストール
+      - title: "Arduino IDEのインストール(Windows)"
+        url: /software/arduino_ide_jp/#arduino-ideのインストールwindows
+      - title: "Arduino IDEへのポーティング(Windows)"
+        url: /software/arduino_ide_jp/#arduino-ideへのポーティングwindows
+    - title: "ライブラリAPI"
+      url: /software/arduino_ide_jp/#ライブラリapi
+      children:
+      - title: "Dynamixel2Arduinoライブラリ"
+        url: /software/arduino_ide_jp/#dynamixel2arduinoライブラリ
+  - title: "例"
+    url: /software/arduino_ide_jp/#例
+    children:
+    - title: "OpenCM9.04 例"
+      url: /software/arduino_ide_jp/#opencm904-例
+  - title: "アドバンスドユーザー"
+    url: /software/arduino_ide_jp/#アドバンスドユーザー
+    children:
+    - title: "ブートローダの書き込み(OpenCR)"
+      url: /software/arduino_ide_jp/#ブートローダの書き込みopencr
+
 robotis_framework_packages:
   - title: "ROBOTIS Framework Packages"
     url: /software/robotis_framework_packages/#robotis-framework-packages
