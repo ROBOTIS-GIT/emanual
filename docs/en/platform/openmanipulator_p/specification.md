@@ -74,94 +74,114 @@ The diagram below shows the “home position” of DYNAMIXEL-P from OpenMANIPULA
 
 ![](/assets/images/platform/openmanipulator_p/mass1.png)
 
-Total Mass : 5,551g
+Total Mass : 5,324g
 
 ### Link 1
 
 ![](/assets/images/platform/openmanipulator_p/mass2.png)
 
-- Mass(g) : 1,030
-- Center of Gravity(mm)
-  - x : 0
-  - y : 1
-  - z : -1.1
-- Inertia Tensor(g * mm<sup>2</sup>)
-  - Ixx Ixy Ixz : 1.4957303e+06 0.0000000e+00 0.0000000e+00
-  - Iyx Iyy Iyz : 0.0000000e+00 4.5009641e+05 -1.0959043e+04
-  - Izz Izy Izz : 0.0000000e+00 -1.0959043e+04 1.4874997e+06
-- Principal Moments(g * mm<sup>2</sup>)
-  - I1 : 4.4998065e+05
-  - I2 : 1.4876155e+06
-  - I3 : 1.4957303e+06
+- Mass [Kg] : 9.4360595e-01
+- Center of Gravity [m]
+  - x : 0.0000000e+00
+  - y : -1.7653633e-04
+  - z : -1.0030209e-03
+- Inertia Tensor with respect to coordinate frame [Kg * m<sup>2</sup>]
+  - Ixx Ixy Ixz : 1.5694005e-03 0.0000000e+00 0.0000000e+00
+  - Iyx Iyy Iyz : 0.0000000e+00 4.5593385e-04 6.4581824e-09
+  - Izx Izy Izz : 0.0000000e+00 6.4581824e-09 1.5561809e-03
+- Inertia Tensor at CENTER OF GRAVITY with respect to coordinate frame [Kg * m<sup>2</sup>]
+  - Ixx Ixy Ixz : 1.5684218e-03 0.0000000e+00 0.0000000e+00
+  - Iyx Iyy Iyz : 0.0000000e+00 4.5498454e-04 1.7354214e-07
+  - Izx Izy Izz : 0.0000000e+00 1.7354214e-07 1.5561515e-03
+- Principal Moments of Inertia [Kg * m<sup>2</sup>]
+  - I1 : 4.5498451e-04
+  - I2 : 1.5561515e-03
+  - I3 : 1.5684218e-03
 
 ### Link 2
 
 ![](/assets/images/platform/openmanipulator_p/mass3.png)
 
-- Mass(g) : 1,404
-- Center of Gravity(mm)
-  - x : 17.9
-  - y : 0.3
-  - z : 206.9
-- Inertia Tensor(g * mm<sup>2</sup>)
-  - Ixx Ixy Ixz : 1.0627201e+07 1.2357497e+04 -1.2920605e+06
-  - Iyx Iyy Iyz : 1.2357497e+04 1.0014640e+07 1.5798255e+05
-  - Izz Izy Izz : -1.2920605e+06 1.5798255e+05 1.9568681e+06
-- Principal Moments(g * mm<sup>2</sup>)
-  - I1 : 1.7653895e+06
-  - I2 : 1.0017530e+07
-  - I3 : 1.0815789e+07
+- Mass [Kg] : 1.3825862e+00
+- Center of Gravity [m]
+  - x : 1.5751501e-02
+  - y : -2.2073221e-04
+  - z : 1.9913687e-01
+- Inertia Tensor with respect to coordinate frame [Kg * m<sup>2</sup>]
+  - Ixx Ixy Ixz : 6.7630430e-02 -1.9988597e-05 -5.7477571e-03
+  - Iyx Iyy Iyz : -1.9988597e-05 6.7208001e-02 7.4823203e-05
+  - Izx Izy Izz : -5.7477571e-03 7.4823203e-05 2.6031353e-03
+- Inertia Tensor at CENTER OF GRAVITY with respect to coordinate frame [Kg * m<sup>2</sup>]
+  - Ixx Ixy Ixz : 1.2803228e-02 -2.4795661e-05 -1.4109928e-03
+  - Iyx Iyy Iyz : -2.4795661e-05 1.2037834e-02 1.4050354e-05
+  - Izx Izy Izz : -1.4109928e-03 1.4050354e-05 2.2600348e-03
+- Principal Moments of Inertia [Kg * m<sup>2</sup>]
+  - I1 : 2.0744566e-03
+  - I2 : 1.2037112e-02
+  - I3 : 1.2989528e-02
 
 ### Link 3
 
 ![](/assets/images/platform/openmanipulator_p/mass4.png)
 
-- Mass(g) : 1,236
-- Center of Gravity(mm)
-  - x : 0.2
-  - y : 0.3
-  - z : 387.9
-- Inertia Tensor(g * mm<sup>2</sup>)
-  - Ixx Ixy Ixz : 3.1318491e+06 –6.0760429e+03 2.4765806e+04
-  - Iyx Iyy Iyz : -6.0760429e+03 2.9193915e+06 4.2823763e+04
-  - Izz Izy Izz : 2.4765806e+04 4.2823763e+04 9.2402606e+05
-- Principal Moments(g * mm<sup>2</sup>)
-  - I1 : 9.2282696e+05
-  - I2 : 2.9201652e+06
-  - I3 : 3.1322745e+06
+- Mass [Kg] : 1.2126965e+00
+- Center of Gravity [m]
+  - x : 3.0352597e-04
+  - y : 4.1703880e-05
+  - z : 3.8074728e-01
+- Inertia Tensor with respect to coordinate frame [Kg * m<sup>2</sup>]
+  - Ixx Ixy Ixz : 1.7985424e-01 -9.9417476e-07 -8.1564441e-05
+  - Iyx Iyy Iyz : -9.9417476e-07 1.7948679e-01 -1.7705853e-05
+  - Izx Izy Izz : -8.1564441e-05 -1.7705853e-05 1.1422079e-03
+- Inertia Tensor at CENTER OF GRAVITY with respect to coordinate frame [Kg * m<sup>2</sup>]
+  - Ixx Ixy Ixz : 4.0514666e-03 -9.7882420e-07 5.8582868e-05
+  - Iyx Iyy Iyz : -9.7882420e-07 3.6839091e-03 1.5501165e-06
+  - Izx Izy Izz : 5.8582868e-05 1.5501165e-06 1.1420941e-03
+- Principal Moments of Inertia [Kg * m<sup>2</sup>]
+  - I1 : 1.1409140e-03
+  - I2 : 3.6839076e-03
+  - I3 : 4.0526481e-03
 
 ### Link 4
 
 ![](/assets/images/platform/openmanipulator_p/mass5.png)
 
-- Mass(g) : 491
-- Center of Gravity(mm)
-  - x : 0
-  - y : -1.5
-  - z : 514.3
-- Inertia Tensor(g * mm<sup>2</sup>)
-  - Ixx Ixy Ixz : 3.9670485e+05 –3.3867048e+00 -4.7608394e+01
-  - Iyx Iyy Iyz : -3.3867048e+00 2.3556702e+05 3.9098238e+03
-  - Izz Izy Izz : -4.7608394e+01 3.9098238e+03 2.9647894e+05
-- Principal Moments(g * mm<sup>2</sup>)
-  - I1 : 2.3531708e+05
-  - I2 : 2.9672886e+05
-  - I3 : 3.9670487e+05
+- Mass [Kg] : 4.6635550e-01
+- Center of Gravity [m]
+  - x : -2.1388493e-06
+  - y : -2.2290515e-03
+  - z : 5.1387207e-01
+- Inertia Tensor with respect to coordinate frame [Kg * m<sup>2</sup>]
+  - Ixx Ixy Ixz : 1.2357713e-01 -1.9465317e-09  5.1228604e-07
+  - Iyx Iyy Iyz : -1.9465317e-09  1.2339567e-01  5.3769657e-04
+  - Izx Izy Izz : 5.1228604e-07  5.3769657e-04  3.3216863e-04
+- Inertia Tensor at CENTER OF GRAVITY with respect to coordinate frame [Kg * m<sup>2</sup>]
+  - Ixx Ixy Ixz : 4.2687885e-04  0.0000000e+00  0.0000000e+00
+  - Iyx Iyy Iyz : 0.0000000e+00  2.4774029e-04  3.5109263e-06
+  - Izx Izy Izz : 0.0000000e+00  3.5109263e-06  3.2985146e-04
+- Principal Moments of Inertia [Kg * m<sup>2</sup>]
+  - I1 : 2.4759044e-04
+  - I2 : 3.3000130e-04
+  - I3 : 4.2687885e-04
 
 ### Link 5
 
 ![](/assets/images/platform/openmanipulator_p/mass6.png)
 
-- Mass(g) : 454
-- Center of Gravity(mm)
-  - x : 0
-  - y : 0.8
-  - z : 591.5
-- Inertia Tensor(g * mm<sup>2</sup>)
-  - Ixx Ixy Ixz : 4.7548066e+05 0.0000000e+00 0.0000000e+00
-  - Iyx Iyy Iyz : 0.0000000e+00 3.9961989e+05 1.4840847e+04
-  - Izz Izy Izz : 0.0000000e+00 1.4840847e+04 1.9795791e+05
-- Principal Moments(g * mm<sup>2</sup>)
-  - I1 : 1.9687159e+05
-  - I2 : 4.0070622e+05
-  - I3 : 4.7548066e+05
+- Mass [Kg] : 4.2561606e-01
+- Center of Gravity [m]
+  - x : -2.1268822e-06
+  - y : 1.8039922e-04
+  - z : 5.9028250e-01
+- Inertia Tensor with respect to coordinate frame [Kg * m<sup>2</sup>]
+  - Ixx Ixy Ixz : 1.4881319e-01  0.0000000e+00  5.3435266e-07
+  - Iyx Iyy Iyz : 0.0000000e+00  1.4872708e-01 -4.3708754e-05
+  - Izx Izy Izz : 5.3435266e-07 -4.3708754e-05  2.1040082e-04
+- Inertia Tensor at CENTER OF GRAVITY with respect to coordinate frame [Kg * m<sup>2</sup>]
+  - Ixx Ixy Ixz : 5.1431341e-04  0.0000000e+00  0.0000000e+00
+  - Iyx Iyy Iyz : 0.0000000e+00  4.2820999e-04  1.6136111e-06
+  - Izx Izy Izz : 0.0000000e+00  1.6136111e-06  2.1038697e-04
+- Principal Moments of Inertia [Kg * m<sup>2</sup>]
+  - I1 : 2.1037502e-04
+  - I2 : 4.2822194e-04
+  - I3 : 5.1431341e-04
