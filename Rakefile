@@ -2,6 +2,11 @@ require "bundler/gem_tasks"
 require "jekyll"
 require "listen"
 
+require 'kramdown'
+require 'kramdown-parser-gfm'
+
+Kramdown::Document.new(text, input: 'GFM').to_html
+
 def listen_ignore_paths(base, options)
   [
     /_config\.ya?ml/,

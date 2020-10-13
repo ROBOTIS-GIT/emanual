@@ -24,4 +24,5 @@ group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jemoji"
   gem 'jekyll-livereload'
+  gem 'kramdown-parser-gfm'
 end
