@@ -2,8 +2,8 @@
 main:
   - title: "DYNAMIXEL"
     titlekr: "다이나믹셀"
-    url: /docs/en/dxl/
-    urlkr: /docs/kr/dxl/
+    url: /dxl/
+    urlkr: /dxl/
     children:
     - title: "X Series"
       titlekr: "X 시리즈"
@@ -224,6 +224,8 @@ main:
       url: /dxl/protocol2/
   - title: "PLATFORM"
     titlekr: "플랫폼"
+    url: /platform/
+    urlkr: /platform/    
     children:
     - title: "ROBOTIS OP"
       titlekr: "로보티즈 OP"
@@ -272,6 +274,8 @@ main:
         url: /platform/openmanipulator_x/overview/
   - title: "STEAM"
     titlekr: "교육키트"
+    url: /edu/
+    urlkr: /edu/    
     children:
     - title: "PLAY"
       children:
@@ -402,6 +406,8 @@ main:
       url: /edu/mini/
   - title: "SOFTWARE"
     titlekr: "소프트웨어"
+    url: /software/
+    urlkr: /software/    
     children:
     - title: "DYNAMIXEL"
       titlekr: "다이나믹셀"
@@ -505,6 +511,8 @@ main:
       url: /software/robotis_manipulator_libs/
   - title: "PARTS"
     titlekr: "부품"
+    url: /parts/
+    urlkr: /parts/    
     children:
     - title: "Controller"
       titlekr: "제어기"
@@ -660,6 +668,8 @@ main:
         url: /parts/display/lm-10/
   - title: "FAQ"
     titlekr: "FAQ"
+    url: /faq/faq_dynamixel/
+    urlkr: /faq/faq_dynamixel/
     children:
       - title: "DYNAMIXEL"
         titlekr: "다이나믹셀"
@@ -681,31 +691,6 @@ main:
         url: /faq/general
 
 all-dynamixel:
-  - title: "DYNAMIXEL"
-    titlekr: "다이나믹셀 "
-    url: /dxl/#dynamixel-
-    urlkr: /dxl/#다이나믹셀-
-    children:
-      - title: "AX Series"
-        titlekr: "AX 시리즈"
-        url: /dxl/#ax-series
-        urlkr: /dxl/#ax-시리즈 
-      - title: "EX Series"
-        titlekr: "EX 시리즈"
-        url: /dxl/#ex-series
-        urlkr: /dxl/#ex-시리즈
-      - title: "DX Series"
-        titlekr: "DX 시리즈"
-        url: /dxl/#dx-series
-        urlkr: /dxl/#dx-시리즈
-      - title: "RX Series"
-        titlekr: "RX 시리즈"
-        url: /dxl/#rx-series
-        urlkr: /dxl/#rx-시리즈
-      - title: "MX Series"
-        titlekr: "MX 시리즈"
-        url: /dxl/#mx-series
-        urlkr: /dxl/#mx-시리즈
   - title: "DYNAMIXEL-X"
     titlekr: "다이나믹셀-X"
     url: /dxl/#dynamixel-x
@@ -730,7 +715,45 @@ all-dynamixel:
       - title: "XW Series"
         titlekr: "XW 시리즈"
         url: /dxl/#xw-series
-        urlkr: /dxl/#xw-시리즈                                              
+        urlkr: /dxl/#xw-시리즈 
+  - title: "DYNAMIXEL"
+    titlekr: "다이나믹셀 "
+    url: /dxl/#dynamixel-
+    urlkr: /dxl/#다이나믹셀-
+    children:
+      - title: "AX Series"
+        titlekr: "AX 시리즈"
+        url: /dxl/#ax-series
+        urlkr: /dxl/#ax-시리즈 
+      - title: "EX Series"
+        titlekr: "EX 시리즈"
+        url: /dxl/#ex-series
+        urlkr: /dxl/#ex-시리즈
+      - title: "DX Series"
+        titlekr: "DX 시리즈"
+        url: /dxl/#dx-series
+        urlkr: /dxl/#dx-시리즈
+      - title: "RX Series"
+        titlekr: "RX 시리즈"
+        url: /dxl/#rx-series
+        urlkr: /dxl/#rx-시리즈
+      - title: "MX Series"
+        titlekr: "MX 시리즈"
+        url: /dxl/#mx-series
+        urlkr: /dxl/#mx-시리즈                                             
+  - title: "DYNAMIXEL-P"
+    titlekr: "다이나믹셀-P"
+    url: /dxl/#dynamixel-p
+    urlkr: /dxl/#다이나믹셀-p
+    children:
+      - title: "PH Seriese"
+        titlekr: "PH 시리즈"
+        url: /dxl/#ph-series
+        urlkr: /dxl/#ph-시리즈
+      - title: "PM Seriese"
+        titlekr: "PM 시리즈"
+        url: /dxl/#pm-series
+        urlkr: /dxl/#pm-시리즈        
   - title: "DYNAMIXEL PRO"
     titlekr: "다이나믹셀 PRO"
     url: /dxl/#dynamixel-pro
@@ -748,19 +771,90 @@ all-dynamixel:
         titlekr: "H 시리즈"
         url: /dxl/#h-series
         urlkr: /dxl/#h-시리즈                
-  - title: "DYNAMIXEL-P"
-    titlekr: "다이나믹셀-P"
-    url: /dxl/#dynamixel-p
-    urlkr: /dxl/#다이나믹셀-p
-    children:
-      - title: "PH Seriese"
-        titlekr: "PH 시리즈"
-        url: /dxl/#ph-series
-        urlkr: /dxl/#ph-시리즈
-      - title: "PM Seriese"
-        titlekr: "PM 시리즈"
-        url: /dxl/#pm-series
-        urlkr: /dxl/#pm-시리즈        
+
+all-platform:
+  - title: "TurtleBot3"
+    titlekr: "터틀봇3"
+    url: /platform/#turtlebot3
+    urlkr: /platform/#터틀봇3
+  - title: "OpenMANIPULATOR"
+    titlekr: "오픈매니퓰레이터"
+    url: /platform/#openmanipulator
+    urlkr: /platform/#오픈매니퓰레이터  
+  - title: "ROBOTIS OP"
+    titlekr: "로보티즈 OP"
+    url: /platform/#robotis-op
+    urlkr: /platform/#로보티즈-op
+  - title: "Robot Hands"
+    titlekr: "로봇핸드"
+    url: /platform/#robot-hands
+    urlkr: /platform/#로봇핸드
+  - title: "THORMANG3"
+    titlekr: "똘망3"
+    url: /platform/#thormang3
+    urlkr: /platform/#똘망3
+
+all-software:
+  - title: "Featured"
+    titlekr: "Featured"
+    url: /software/#featured
+    urlkr: /software/#featured
+  - title: "Arduino IDE"
+    titlekr: "아두이노 IDE"
+    url: /software/#arduino-ide
+    urlkr: /software/#아두이노-ide 
+  - title: "Development (SDK & ROS)"
+    titlekr: "개발 (SDK & ROS)"
+    url: /software/#development-sdk--ros
+    urlkr: /software/#개발-sdk--ros
+  - title: "Roboplus (R+)"
+    titlekr: "로보플러스"
+    url: /software/#roboplus-r
+    urlkr: /software/#로보플러스    
+
+all-controller:
+  - title: "For Platform"
+    titlekr: "플랫폼"
+    url: /parts/all-controller/#for-platform
+    urlkr: /parts/all-controller/#플랫폼
+  - title: "For ROBOTIS ENGINEER"
+    titlekr: "로보티즈 엔지니어 전용"
+    url: /parts/all-controller/#for-robotis-engineer
+    urlkr: /parts/all-controller/#로보티즈-엔지니어-전용
+  - title: "For ROBOTIS MINI"
+    titlekr: "로보티즈 미니 전용"
+    url: /parts/all-controller/#for-robotis-mini
+    urlkr: /parts/all-controller/#로보티즈-미니-전용 
+  - title: "For ROBOTIS BIOLOID"
+    titlekr: "로보티즈 바이올로이드 전용"
+    url: /parts/all-controller/#for-robotis-engineer
+    urlkr: /parts/all-controller/#로보티즈-바이올로이드-전용  
+  - title: "For ROBOTIS Play 600 & 700"
+    titlekr: "로보티즈 플레이 600 & 700 전용"
+    url: /parts/all-controller/#for-robotis-play-600--700
+    urlkr: /parts/all-controller/#로보티즈-플레이-600--700-전용
+  - title: "For ROBOTIS OLLO"
+    titlekr: "로보티즈 올로 전용"
+    url: /parts/all-controller/#for-robotis-ollo
+    urlkr: /parts/all-controller/#로보티즈-올로-전용
+  - title: "For ROBOTIS DREAM I & II"
+    titlekr: "로보티즈 드림 I & II 전용"
+    url: /parts/all-controller/#for-robotis-dream-i--ii
+    urlkr: /parts/all-controller/#로보티즈-드림-i--ii-전용
+  - title: "For ROBOTIS Smart I & II & III"
+    titlekr: "로보티즈 Smart I & II & III 전용"
+    url: /parts/all-controller/#for-robotis-smart-i--ii--iii
+    urlkr: /parts/all-controller/#로보티즈-스마트-i--ii--iii-전용
+  
+all-interface: 
+  - title: "Communication Interfaces"
+    titlekr: "통신 인터페이스"
+    url: /parts/all_interfaces/#communication-interfaces
+    urlkr: /parts/all_interfaces/#통신-인터페이스
+  - title: "Expansion Boards"
+    titlekr: "확장보드"
+    url: /parts/all_interfaces/#expansion boards
+    urlkr: /parts/all_interfaces/#확장보드      
 
 dynamixel_pro:
   - title: "Product Lineup"
@@ -14163,6 +14257,10 @@ all-edu:
     titlekr: "바이올로이드"
     url: /edu/#bioloid
     urlkr: /edu/#바이올로이드
+  - title: "ENGINEER"
+    titlekr: "엔지니어"
+    url: /edu/#engineer
+    urlkr: /edu/#엔지니어
   - title: "MINI"
     titlekr: "미니"
     url: /edu/#mini
