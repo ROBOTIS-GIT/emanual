@@ -95,7 +95,7 @@ sidebar:
     </div>
 
     <div class="feature__item" id="Display">
-        <a class="Show-me-whole-product" href="https://emanual.robotis.com/docs/en/parts/display/lm-10/">
+        <a class="Show-me-whole-product" href="/docs/en/parts/display/lm-10/">
           <div class="archive__item-teaser">
               <img src="/assets/images/parts/led/led.jpg" alt="img">
           </div>

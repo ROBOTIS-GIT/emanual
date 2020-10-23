@@ -12,9 +12,9 @@ sidebar:
 
 # [Featured](#featured)
 
-|                                                     DYNAMIXEL Wizard 2.0                                                      |                                                                DYNAMIXEL SDK                                                                 |                                                               DYNAMIXEL Workbench                                                               |
-| :---------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------: |
-| [![](/assets/images/sw/all_software/software.png)](https://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_wizard2/) | [![](/assets/images/sw/all_software/icon_dynamixel_sdk.png)](https://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/overview/) | [![](/assets/images/sw/all_software/DYNAMIXEL_Workbench_LOGO.png)](https://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_workbench/) |
+|                                        DYNAMIXEL Wizard 2.0                                        |                                                   DYNAMIXEL SDK                                                   |                                                 DYNAMIXEL Workbench                                                  |
+| :------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------: |
+| [![](/assets/images/sw/all_software/software.png)](/docs/en/software/dynamixel/dynamixel_wizard2/) | [![](/assets/images/sw/all_software/icon_dynamixel_sdk.png)](/docs/en/software/dynamixel/dynamixel_sdk/overview/) | [![](/assets/images/sw/all_software/DYNAMIXEL_Workbench_LOGO.png)](/docs/en/software/dynamixel/dynamixel_workbench/) |
 
 ## [DYNAMIXEL Wizard 2.0](#dynamixel-wizard-20)
 
@@ -48,17 +48,17 @@ DYNAMIXEL Workbench, based on DYNAMIXEL SDK, is library which provides simple an
 
 Select ROBOTIS “Open” controllers can be used with Arduino programming software.
 
-|                                                      Arduino IDE                                                      |
-| :-------------------------------------------------------------------------------------------------------------------: |
-| [![](/assets/images/sw/all_software/icon_arduino_ide.png)](https://emanual.robotis.com/docs/en/software/arduino_ide/) |
+|                                        Arduino IDE                                         |
+| :----------------------------------------------------------------------------------------: |
+| [![](/assets/images/sw/all_software/icon_arduino_ide.png)](/docs/en/software/arduino_ide/) |
 
 # [Development (SDK & ROS)](#development-sdk--ros)
 
-|                                                                DYNAMIXEL SDK                                                                 |                                                               DYNAMIXEL Workbench                                                               |                                                          Embedded C(CM-530)                                                          |                                                        Embedded C(CM-510/700)                                                        |                                                              ZIGBEE SDK                                                              |                                                             OpenCM IDE                                                              |
-| :------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------: |
-| [![](/assets/images/sw/all_software/icon_dynamixel_sdk.png)](https://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/overview/) | [![](/assets/images/sw/all_software/DYNAMIXEL_Workbench_LOGO.png)](https://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_workbench/) | [![](/assets/images/sw/all_software/icon_embedded.png)](https://emanual.robotis.com/docs/en/software/embedded_sdk/embedded_c_cm530/) | [![](/assets/images/sw/all_software/icon_embedded.png)](https://emanual.robotis.com/docs/en/software/embedded_sdk/embedded_c_cm530/) | [![](/assets/images/sw/all_software/icon_embedded.png)](https://emanual.robotis.com/docs/en/software/embedded_sdk/embedded_c_cm530/) | [![](/assets/images/sw/all_software/icon_opencm_ide.png)](https://emanual.robotis.com/docs/en/software/opencm_ide/getting_started/) |
+|                                                   DYNAMIXEL SDK                                                   |                                                 DYNAMIXEL Workbench                                                  |                                                Embedded C(CM-530)                                                 |                                              Embedded C(CM-510/700)                                               |                                                   ZIGBEE SDK                                                   |                                                OpenCM IDE                                                |
+| :---------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------: |
+| [![](/assets/images/sw/all_software/icon_dynamixel_sdk.png)](/docs/en/software/dynamixel/dynamixel_sdk/overview/) | [![](/assets/images/sw/all_software/DYNAMIXEL_Workbench_LOGO.png)](/docs/en/software/dynamixel/dynamixel_workbench/) | [![](/assets/images/sw/all_software/icon_embedded_sdk_530.png)](/docs/en/software/embedded_sdk/embedded_c_cm530/) | [![](/assets/images/sw/all_software/icon_embedded_sdk_510.png)](/docs/en/software/embedded_sdk/embedded_c_cm510/) | [![](/assets/images/sw/all_software/icon_embedded_sdk_zigbee.png)](/docs/en/software/embedded_sdk/zigbee_sdk/) | [![](/assets/images/sw/all_software/icon_opencm_ide.png)](/docs/en/software/opencm_ide/getting_started/) |
 
-## [DYNAMIXEL SDK](#dynamixel-sdk)
+## [DYNAMIXEL SDK ](#dynamixel-sdk-)
 
 DYNAMIXEL SDK is a software development kit that provides DYNAMIXEL control functions using packet communication.
 
@@ -68,7 +68,7 @@ You need to be familiar with C/C++ programming language for right use of the sof
 
 This e-Manual provides comprehensive information on ROBOTIS products and applications.
 
-## [DYNAMIXEL Workbench](#dynamixel-workbench)
+## [DYNAMIXEL Workbench ](#dynamixel-workbench-)
 
 DYNAMIXEL Workbench, based on DYNAMIXEL SDK, is library which provides simple and easier method to use DYNAMIXEL.
 
@@ -80,13 +80,13 @@ Custom firmware exploration is an option for users who would like to explore emb
 
 The Robotis Frameware, which is made based on the DYNAMIXEL SDK, is ROS packages mainly used with ROBOTIS humanoid platform, OP2, OP3 and Thormang3.
 
-- [ROBOTIS Framework Packages](https://emanual.robotis.com/docs/en/software/robotis_framework_packages/)
+- [ROBOTIS Framework Packages](/docs/en/software/robotis_framework_packages/)
 
 ## [ROBOTIS Manipulator library](#robotis-manipulator-libs)
 
 The robotis_manipulator package is a library package for controlling the manipulator. This package provides a manipulator class for setting manipulator parameters, and provides some math functions to configure the manipulator controller and a basic trajectory generators that uses minimum jerk.
 
-- [ROBOTIS Manipulator library](https://emanual.robotis.com/docs/en/software/robotis_manipulator_libs/)
+- [ROBOTIS Manipulator library](/docs/en/software/robotis_manipulator_libs/)
 
 ## [OpenCM IDE](#opencm-ide)
 
@@ -100,15 +100,15 @@ RoboPlus (R+) software is designed to help you begin creating and programming wi
 
 R+ Task 3.0 is an integrated software tool that combines R+ Task 2.0 and R+ Motion 2.0.
 
-|                                                     R+ Task 3.0                                                      |
-| :------------------------------------------------------------------------------------------------------------------: |
-| [![](/assets/images/sw/all_software/R+Task3_APP_ICON.png)](https://emanual.robotis.com/docs/en/software/rplustask3/) |
+|                                        R+ Task 3.0                                        |
+| :---------------------------------------------------------------------------------------: |
+| [![](/assets/images/sw/all_software/R+Task3_APP_ICON.png)](/docs/en/software/rplustask3/) |
 
 ## [R+ 2.0](#r-20)
 
-|                                                     R+ Manager 2.0                                                     |                                                    R+ Task 2.0                                                     |                                                     R+ Motion 2.0                                                      |                                                    R+ Design 2.0                                                     |                                                       R+ Scratch                                                       |
-| :--------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------: |
-| [![](/assets/images/sw/all_software/icon_r_manager.png)](https://emanual.robotis.com/docs/en/software/rplus2/manager/) | [![](/assets/images/sw/all_software/icon_r_task_2.jpg)](https://emanual.robotis.com/docs/en/software/rplus2/task/) | [![](/assets/images/sw/all_software/icon_r_motion_2.jpg)](https://emanual.robotis.com/docs/en/software/rplus2/motion/) | [![](/assets/images/sw/all_software/icon_r_design.jpg)](https://emanual.robotis.com/docs/en/software/rplus2/design/) | [![](/assets/images/sw/all_software/icon_r_scratch.jpg)](https://emanual.robotis.com/docs/en/software/rplus2/scratch/) |
+|                                       R+ Manager 2.0                                        |                                       R+ Task 2.0                                       |                                        R+ Motion 2.0                                        |                                       R+ Design 2.0                                       |                                         R+ Scratch                                          |
+| :-----------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: |
+| [![](/assets/images/sw/all_software/icon_r_manager.png)](/docs/en/software/rplus2/manager/) | [![](/assets/images/sw/all_software/icon_r_task_2.jpg)](/docs/en/software/rplus2/task/) | [![](/assets/images/sw/all_software/icon_r_motion_2.jpg)](/docs/en/software/rplus2/motion/) | [![](/assets/images/sw/all_software/icon_r_design.jpg)](/docs/en/software/rplus2/design/) | [![](/assets/images/sw/all_software/icon_r_scratch.jpg)](/docs/en/software/rplus2/scratch/) |
 
 ### [R+ Manager 2.0](#r-manager-20)
 
@@ -128,9 +128,9 @@ This 3D design tool can be used as an interactive guide for step-by-step robot a
 
 ### [R+ Mobile Apps](#r-mohile-apps)
 
-|                                                        R+ m.Task 2.0                                                        |                                                        R+ m.Motion 2.0                                                        |                                                          R+ m.Design                                                          |                                                          R+ Block                                                          |
-| :-------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------: |
-| [![](/assets/images/sw/all_software/rplus_m_task2.png)](https://emanual.robotis.com/docs/en/software/rplus_mobile/mtask20/) | [![](/assets/images/sw/all_software/rplus_m_motion2.png)](https://emanual.robotis.com/docs/en/software/rplus_mobile/mmotion/) | [![](/assets/images/sw/all_software/rplus_m_design2.png)](https://emanual.robotis.com/docs/en/software/rplus_mobile/mdesign/) | [![](/assets/images/sw/all_software/rplus_m_block.png)](https://emanual.robotis.com/docs/en/software/rplus2/rplus2_block/) |
+|                                          R+ m.Task 2.0                                           |                                          R+ m.Motion 2.0                                           |                                            R+ m.Design                                             |                                            R+ Block                                             |
+| :----------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------: |
+| [![](/assets/images/sw/all_software/rplus_m_task2.png)](/docs/en/software/rplus_mobile/mtask20/) | [![](/assets/images/sw/all_software/rplus_m_motion2.png)](/docs/en/software/rplus_mobile/mmotion/) | [![](/assets/images/sw/all_software/rplus_m_design2.png)](/docs/en/software/rplus_mobile/mdesign/) | [![](/assets/images/sw/all_software/rplus_m_block.png)](/docs/en/software/rplus2/rplus2_block/) |
 
 #### [R+ Block](#r-block)
 
@@ -140,14 +140,14 @@ This helper app allows select ROBOTIS controllers to connect to Scratch 2.0 Offl
 
 This older all-in-one version of our RoboPlus software provides similar features to RoboPlus 2.0 but includes additional compatibility for firmware management with legacy ROBOTIS devices: CM-5, CM510/CM530, CM700, Dynamixel AX-Series & MX-Series
 
-|                                                             R+ Task                                                              |                                                       R+ Manager                                                       |                                                      R+ Motion                                                       |                                                        Dynamixel Wizard                                                        |
-| :------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------: |
-| [![](/assets/images/sw/all_software/task10_icon.png)](https://emanual.robotis.com/docs/en/software/rplus1/task/getting_started/) | [![](/assets/images/sw/all_software/manager10_icon.png)](https://emanual.robotis.com/docs/en/software/rplus1/manager/) | [![](/assets/images/sw/all_software/motion10_icon.png)](https://emanual.robotis.com/docs/en/software/rplus1/motion/) | [![](/assets/images/sw/all_software/wizard10_icon.png)](https://emanual.robotis.com/docs/en/software/rplus1/dynamixel_wizard/) |
+|                                                R+ Task                                                |                                         R+ Manager                                          |                                         R+ Motion                                         |                                          Dynamixel Wizard                                           |
+| :---------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: |
+| [![](/assets/images/sw/all_software/icon_task10.png)](/docs/en/software/rplus1/task/getting_started/) | [![](/assets/images/sw/all_software/icon_manager10.png)](/docs/en/software/rplus1/manager/) | [![](/assets/images/sw/all_software/icon_motion10.png)](/docs/en/software/rplus1/motion/) | [![](/assets/images/sw/all_software/wizard10_icon.png)](/docs/en/software/rplus1/dynamixel_wizard/) |
 
 ## [ROBOTIS MINI](#robotis-mini)
 
 This app is used to control and operate ROBOTIS MINI
 
-|                                                         ROBOTIS MINI                                                         |
-| :--------------------------------------------------------------------------------------------------------------------------: |
-| [![](/assets/images/sw/all_software/mobile_mini_app.png)](https://emanual.robotis.com/docs/en/software/mobile_app/mini_app/) |
+|                                           ROBOTIS MINI                                            |
+| :-----------------------------------------------------------------------------------------------: |
+| [![](/assets/images/sw/all_software/mobile_mini_app.png)](/docs/en/software/mobile_app/mini_app/) |

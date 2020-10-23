@@ -668,6 +668,8 @@ main:
         url: /parts/display/lm-10/
   - title: "FAQ"
     titlekr: "FAQ"
+    url: /faq/faq_dynamixel/
+    urlkr: /faq/faq_dynamixel/
     children:
       - title: "DYNAMIXEL"
         titlekr: "다이나믹셀"
@@ -14255,6 +14257,10 @@ all-edu:
     titlekr: "바이올로이드"
     url: /edu/#bioloid
     urlkr: /edu/#바이올로이드
+  - title: "ENGINEER"
+    titlekr: "엔지니어"
+    url: /edu/#engineer
+    urlkr: /edu/#엔지니어
   - title: "MINI"
     titlekr: "미니"
     url: /edu/#mini

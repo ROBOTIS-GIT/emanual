@@ -20,17 +20,17 @@ sidebar:
 
 ## [XL Series](#xl-series)
 
-|                    XL320                    |                                XL430                                |                       2XL                        |
-| :-----------------------------------------: | :-----------------------------------------------------------------: | :----------------------------------------------: |
-| ![](/assets/images/dxl/x/xl320_product.jpg) |           ![](/assets/images/dxl/x/xl430_product_new.png)           | ![](/assets/images/dxl/x/2xl/2xl430_product.png) |
-|       [XL320](/docs/en/dxl/x/xl320/)        | [XL430-W250](https://emanual.robotis.com/docs/en/dxl/x/xl430-w250/) |    [2XL430-W250](/docs/en/dxl/x/2xl430-w250/)    |
+|                    XL320                    |                      XL430                      |                       2XL                        |
+| :-----------------------------------------: | :---------------------------------------------: | :----------------------------------------------: |
+| ![](/assets/images/dxl/x/xl320_product.jpg) | ![](/assets/images/dxl/x/xl430_product_new.png) | ![](/assets/images/dxl/x/2xl/2xl430_product.png) |
+|       [XL320](/docs/en/dxl/x/xl320/)        |    [XL430-W250](/docs/en/dxl/x/xl430-w250/)     |    [2XL430-W250](/docs/en/dxl/x/2xl430-w250/)    |
 
 ## [XC Series](#xc-series)
 
-|                                        XC430                                         |
-| :----------------------------------------------------------------------------------: |
-|                     ![](/assets/images/dxl/x/xc430_product.png)                      |
-| [XC430-W150](/docs/en/dxl/x/xc430-w150/)<br>[XC430-W240](/docs/en/dxl/x/xc430-w240/) |
+|                                        XC430                                         |                      2XC430                      |
+| :----------------------------------------------------------------------------------: | :----------------------------------------------: |
+|                     ![](/assets/images/dxl/x/xc430_product.png)                      | ![](/assets/images/dxl/x/2xc/2xc430_product.png) |
+| [XC430-W150](/docs/en/dxl/x/xc430-w150/)<br>[XC430-W240](/docs/en/dxl/x/xc430-w240/) |    [2XC430-W250](/docs/en/dxl/x/2xc430-w250/)    |
 
 ## [XM Series](#xm-series)
 

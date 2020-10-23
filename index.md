@@ -133,7 +133,7 @@ header:
     </div>
 
     <div class="feature__item">
-        <a class="Show-me-whole-product" href="https://emanual.robotis.com/docs/en/faq/faq_dynamixel/">
+        <a class="Show-me-whole-product" href="/docs/en/faq/faq_dynamixel/">
           <div class="archive__item-teaser">
               <img src="/assets/faq.png" alt="FAQ">
           </div>
