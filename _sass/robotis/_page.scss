@@ -1,6 +1,37 @@
 html {
-    -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
-    -webkit-print-color-adjust: exact;
+  -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+  -webkit-print-color-adjust: exact;
+}
+
+.tab {
+  width: 6rem;
+  font-size: $type-size-6;
+  position: relative;
+  padding: 0.5em;
+  margin: 0.5em;
+  background: #7722a7;
+  color: #fff;
+  border: 1px solid #000;
+  border-radius: 10%;
+  box-sizing: border-box;
+  opacity: 0.3;
+}
+
+.tab:hover {
+  font-weight: bold;
+  transform: scale(1.1);
+  transition: all 300ms;
+}
+
+.tab:active {
+  font-weight: bold;
+  transition: all 300ms;
+  opacity: 1;
+}
+
+.tab.selected {
+  font-weight: bold;
+  opacity: 1;
 }
 
 #main {
@@ -11,7 +42,37 @@ html {
   }
 }
 
+.feature__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.feature__item {
+  float: left;
+  width: 30%;
+  padding: auto;
+  height: auto;
+}
+
+.archive__item-excerpt {
+  padding-bottom: 1.5px;
+  line-height: 2;
+}
+
 @media screen and (max-width: $nominal-width) {
+  .feature__item {
+    margin: 20px 0;
+    width: 43%;
+  }
+
+  .archive__item-title:before {
+    content: none;
+    padding-bottom: 15px;
+  }
 
   .community_link {
     display: none;
@@ -26,11 +87,23 @@ html {
   }
 
   @media screen and (max-width: $mobile-landscape) {
-
     #main {
       padding: 0px;
       width: auto;
       font-size: 14px;
+    }
+
+    h2.archive__item-title {
+      font-size: 2em;
+    }
+
+    .archive__item-title {
+      text-align: center;
+      margin: 25px 0;
+    }
+
+    .archive__item-excerpt {
+      display: none;
     }
 
     .community_link_medium {
@@ -45,7 +118,7 @@ html {
       display: block;
     }
 
-    .masthead__menu{
+    .masthead__menu {
       text-align: center;
     }
 
@@ -57,7 +130,7 @@ html {
       left: -100%;
       padding: 0 0;
       border-bottom: 1px solid #323232;
-      background-color: #ECECEC;
+      background-color: #ececec;
       z-index: 9;
     }
 
@@ -80,7 +153,8 @@ html {
       max-width: 70%;
     }
 
-    .nav__items>li>a, .nav__items>li>label {
+    .nav__items > li > a,
+    .nav__items > li > label {
       color: $top-textcolor;
       border: 0;
       border-top: 1px solid #323232;
@@ -100,22 +174,24 @@ html {
       padding-right: 0;
     }
 
-    .nav__items>li>ul>li a, .nav__items>li>ul>li label {
+    .nav__items > li > ul > li a,
+    .nav__items > li > ul > li label {
       background-color: $mobile-middle-bgcolor;
       color: $middle-textcolor;
       max-width: 100%;
     }
 
-    .nav__items>li>ul>li>ul>li a {
+    .nav__items > li > ul > li > ul > li a {
       background-color: $mobile-bottom-bgcolor;
       color: $bottom-textcolor;
     }
 
-    .nav__items label:hover, .nav__items a:hover {
+    .nav__items label:hover,
+    .nav__items a:hover {
       background-color: $mobile-hovercolor;
     }
 
-    .has-children input[type=checkbox]:checked+label::after {
+    .has-children input[type="checkbox"]:checked + label::after {
       left: 80%;
     }
 
@@ -123,7 +199,7 @@ html {
       left: 80%;
     }
 
-    .has-grandchildren input[type=checkbox]:checked+label::after {
+    .has-grandchildren input[type="checkbox"]:checked + label::after {
       left: 75%;
     }
 
@@ -194,7 +270,7 @@ html {
     }
 
     .menu-icon {
-      display: inline-block;;
+      display: inline-block;
     }
 
     .archive_footer {
@@ -235,7 +311,12 @@ html {
       }
     }
 
-    h1, h2, h3, h4, h5, h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       margin: 1.5em 0 0.5em;
       line-height: 1;
       font-family: $header-font-family;
@@ -251,7 +332,10 @@ html {
       padding-left: 1em;
       word-wrap: break-word;
 
-      li > ul, ol, p, div {
+      li > ul,
+      ol,
+      p,
+      div {
         margin: 0;
       }
     }
@@ -272,14 +356,16 @@ html {
           margin-top: 0.1em;
           display: block;
         }
-        p, div {
+        p,
+        div {
           margin: 0.5em 0.5em 0 1em;
           word-wrap: break-word;
         }
         table {
           margin: 0.5em 0.5em 0 2em;
         }
-        ul, ol {
+        ul,
+        ol {
           margin: 0.5em 0.5em 0 1em;
           @include mobile_indentation;
           blockquote {
@@ -293,7 +379,7 @@ html {
           color: $primary-color;
           border-left: 0.25em solid $primary-color;
           p {
-            margin : 0 0.5em;
+            margin: 0 0.5em;
           }
         }
       }
@@ -316,14 +402,16 @@ html {
           margin-top: 0.1em;
           display: block;
         }
-        p, div {
+        p,
+        div {
           word-wrap: break-word;
           margin: 0.5em 0.5em 0 1em;
         }
         table {
           margin: 0.5em 0.5em 0 2em;
         }
-        ul, ol {
+        ul,
+        ol {
           margin: 0.5em 0.5em 0 1.5em;
           @include mobile_indentation;
           blockquote {
@@ -337,7 +425,7 @@ html {
           color: $primary-color;
           border-left: 0.25em solid $primary-color;
           p {
-            margin : 0 0.5em;
+            margin: 0 0.5em;
           }
         }
       }
@@ -360,14 +448,16 @@ html {
           margin-top: 0.1em;
           display: block;
         }
-        p, div {
+        p,
+        div {
           word-wrap: break-word;
           margin: 0.5em 0.5em 0 2.3em;
         }
         table {
           margin: 0.5em 0.5em 0 5em;
         }
-        ul, ol {
+        ul,
+        ol {
           margin: 0.5em 0.5em 0 2.3em;
           @include mobile_indentation;
           blockquote {
@@ -381,7 +471,7 @@ html {
           color: $primary-color;
           border-left: 0.25em solid $primary-color;
           p {
-            margin : 0 0.5em;
+            margin: 0 0.5em;
           }
         }
       }
@@ -394,7 +484,8 @@ html {
 
       &:before {
         counter-increment: h4;
-        content: counter(h1) ". " counter(h2) ". " counter(h3) ". " counter(h4) ". ";
+        content: counter(h1) ". " counter(h2) ". " counter(h3) ". " counter(h4)
+          ". ";
       }
 
       + div {
@@ -403,14 +494,16 @@ html {
           margin-top: 0.1em;
           display: block;
         }
-        p, div {
+        p,
+        div {
           word-wrap: break-word;
           margin: 0.5em 0.5em 0 3.5em;
         }
         table {
           margin: 0.5em 0.5em 0 4.5em;
         }
-        ul, ol {
+        ul,
+        ol {
           margin: 0.5em 0.5em 0 3.5em;
           @include mobile_indentation;
           blockquote {
@@ -424,7 +517,7 @@ html {
           color: $primary-color;
           border-left: 0.25em solid $primary-color;
           p {
-            margin : 0 0.5em;
+            margin: 0 0.5em;
           }
         }
       }
@@ -441,14 +534,16 @@ html {
           margin-top: 0.1em;
           display: block;
         }
-        p, div {
+        p,
+        div {
           word-wrap: break-word;
           margin: 0.5em 0.5em 0 4em;
         }
         table {
           margin: 0.5em 0.5em 0 7em;
         }
-        ul, ol {
+        ul,
+        ol {
           margin: 0.5em 0.5em 0 3.5em;
           @include mobile_indentation;
           blockquote {
@@ -462,7 +557,7 @@ html {
           color: $primary-color;
           border-left: 0.25em solid $primary-color;
           p {
-            margin : 0 0.5em;
+            margin: 0 0.5em;
           }
         }
       }
@@ -478,14 +573,16 @@ html {
           margin-top: 0.1em;
           display: block;
         }
-        p, div {
+        p,
+        div {
           word-wrap: break-word;
           margin: 0.5em 0.5em 0 6em;
         }
         table {
           margin: 0.5em 0.5em 0 7em;
         }
-        ul, ol {
+        ul,
+        ol {
           margin: 0.5em 0.5em 0 6em;
           @include mobile_indentation;
           blockquote {
@@ -499,14 +596,13 @@ html {
           color: $primary-color;
           border-left: 0.25em solid $primary-color;
           p {
-            margin : 0 0.5em;
+            margin: 0 0.5em;
           }
         }
       }
     }
 
     @media screen and (max-width: $mobile-portrait) {
-
       #main {
         font-size: 60%;
       }

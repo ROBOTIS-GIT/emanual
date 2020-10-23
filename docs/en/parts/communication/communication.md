@@ -1,37 +1,30 @@
 ---
 layout: archive
 lang: en
-ref: communication_parts
-permalink: /docs/en/parts/communication/
+ref: all-communication
+read_time: true
+share: true
+author_profile: false
+permalink: /docs/en/parts/all_communication
 sidebar:
-  title: Parts-Communication
-  nav: ""
+  title: Communications
+  nav: "all-communication"
 ---
+# [Remote Controller](#remote-controller)
 
-# [RC-100A/100B](#rc-100a100b)
+|                               RC-100A/100B                                |                                     RC-200                                     |
+|:-------------------------------------------------------------------------:|:------------------------------------------------------------------------------:|
+| [![](/assets/images/parts/communication/rc-100a_product.png)](/docs/en/parts/communication/rc-100/) | [![](/assets/images/parts/communication/rc_200_product_image.png)](/docs/en/parts/communication/rc-200/) |
 
-[![](/assets/images/parts/communication/rc-100a_product.png)](/docs/en/parts/communication/rc-100/)
 
-# [ZIG-100/110A](#zig-100110a)
+# [BT Module](#bt-module)
 
-[![](/assets/images/parts/communication/zig-110_product.jpg)](/docs/en/parts/communication/zig-110/)
+|                          BT-100/110A                           |                             BT-210                             |                             BT-410                             |                             BT-410 Dongle                             |
+|:--------------------------------------------------------------:|:--------------------------------------------------------------:|:--------------------------------------------------------------:|:---------------------------------------------------------------------:|
+| [![](/assets/images/parts/communication/bt-110_product.jpg)](/docs/en/parts/communication/bt-110/) | [![](/assets/images/parts/communication/bt-210_product.png)](/docs/en/parts/communication/bt-210/) | [![](/assets/images/parts/communication/bt-410_product.jpg)](/docs/en/parts/communication/bt-410/) | [![](/assets/images/parts/communication/bt-410_dongle_product.jpg)](/docs/en/parts/communication/bt-410-dongle/) |
 
-# [BT-100/110A](#bt-100110a)
+# [Zigbee Communication](#zigbee-communication)
 
-[![](/assets/images/parts/communication/bt-110_product.jpg)](/docs/en/parts/communication/bt-110/)
-
-# [BT-210](#bt-210)
-
-[![](/assets/images/parts/communication/bt-210_product.png)](/docs/en/parts/communication/bt-210/)
-
-# [BT-410](#bt-410)
-
-[![](/assets/images/parts/communication/bt-410_product.jpg)](/docs/en/parts/communication/bt-410/)
-
-# [BT-410 Dongle](#bt-410-dongle)
-
-[![](/assets/images/parts/communication/bt-410_dongle_product.jpg)](/docs/en/parts/communication/bt-410-dongle/)
-
-# [ZIG2Serial](#zig2serial)
-
-[![](/assets/images/parts/communication/zig2serial_product.png)](/docs/en/parts/communication/zig2serial/)
+|                          ZIG-100/110A                           |                                                 ZIG2Serial                                                 |
+|:---------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------:|
+| [![](/assets/images/parts/communication/zig-110_product.jpg)]() | [![](/assets/images/parts/communication/zig2serial_product.png)](/docs/en/parts/communication/zig2serial/) |

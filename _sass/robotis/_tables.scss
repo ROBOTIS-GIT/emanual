@@ -3,11 +3,12 @@
    ========================================================================== */
 
 table {
+  display: table;
   margin-bottom: 1em;
   width: auto;
   font-size: 0.8rem;
   border-collapse: collapse;
-  border: 1px solid $light-gray;
+  border: 0px solid #dadada;
 
   & + table {
     margin-top: 1em;
@@ -24,21 +25,23 @@ table.gsc-search-box {
 */
 
 thead {
-  background-color: $light-blue;
-  border-bottom: 1px solid $light-gray;
+  background-color: #f2f3f3;
+  border-top: 0px solid #b6b6b6;
+  // border-bottom: 1px solid #b6b6b6;
 }
 
 tbody {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 th {
   padding: 0.5em;
   font-weight: bold;
   text-align: left;
-  border-right: 1px solid $light-gray;
+  border-right: 0px solid #dadada;
 
   img {
+    display: block;
     padding: 0;
     border: 0;
     border-radius: 0;
@@ -46,18 +49,25 @@ th {
 }
 
 td {
+  display: table-cell;
   padding: 0.5em;
-  border-bottom: 1px solid $light-gray;
-  border-right: 1px solid $light-gray;
+  border-right: 0px solid #dadada;
+  border-bottom: 1px solid #adadad;
 
   img {
     padding: 0;
+    width: auto;
+    max-height: 8rem;
     border: 0;
     border-radius: 0;
   }
 }
 
-.gsc-input, .gsib_a, .gsib_b, .gsc-search-button, .gstl_50 {
+.gsc-input,
+.gsib_a,
+.gsib_b,
+.gsc-search-button,
+.gstl_50 {
   padding: 0;
   border: 0;
 }
@@ -68,6 +78,8 @@ td.gsc-input {
 }
 */
 
-tr, td, th {
+tr,
+td,
+th {
   vertical-align: middle;
 }

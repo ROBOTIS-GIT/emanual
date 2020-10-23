@@ -57,22 +57,30 @@
 }
 
 .community_link {
-  display: block;
-  float: right;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
   margin-right: 10px;
   background-color: $top-bgcolor;
   font-family: FontAleo;
   height: 64px;
-  line-height: 60px;
+  text-align: center;
+  // line-height: 60px;
 
   a {
     font-size: 14px;
-    color: #FFFFFF;
+    color: #ffffff;
     text-decoration: none;
   }
   a:hover {
-    color: #CCF850;
+    color: #ccf850;
   }
+}
+
+.community_link .logo--font {
+  font-size: 12px;
+  margin: 0 20px;
 }
 
 .community_link_medium {
@@ -93,18 +101,18 @@
   bottom: 0;
   margin-right: 0;
   width: 100%;
-  background-color: #ECECEC;
+  background-color: #ececec;
   z-index: 20;
 }
 
 .mobile_button {
   background-repeat: no-repeat;
-  background-position: 5px;
+  background-position: center;
   height: 50px;
   border: 0;
   text-align: left;
   padding-left: 53px;
-  border-right: 1px solid #CFCFCF;
+  border-right: 1px solid #cfcfcf;
 }
 
 /*the container must be positioned relative:*/
@@ -115,7 +123,7 @@
   width: 100%;
   top: 64px;
   z-index: 1;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
 }
 
 .local_navigation select {
@@ -140,18 +148,18 @@
   display: block;
   height: 2px;
   position: relative;
-  transition: background .2s ease-out;
+  transition: background 0.2s ease-out;
   width: 18px;
 }
 
 .menu-icon .navicon:before,
 .menu-icon .navicon:after {
   background: $mobile-top-textcolor;
-  content: '';
+  content: "";
   display: block;
   height: 100%;
   position: absolute;
-  transition: all .2s ease-out;
+  transition: all 0.2s ease-out;
   width: 100%;
 }
 
@@ -219,14 +227,15 @@
   list-style: none;
 }
 
-.mobile_nav__items input[type=radio], .mobile_nav__items input[type=checkbox] {
+.mobile_nav__items input[type="radio"],
+.mobile_nav__items input[type="checkbox"] {
   /* hide native checkbox */
   position: absolute;
   opacity: 0;
 }
 
-
-.mobile_depth_1 label, .mobile_depth_1 a {
+.mobile_depth_1 label,
+.mobile_depth_1 a {
   position: relative;
   display: block;
   background: $top-bgcolor;
@@ -239,12 +248,14 @@
   text-decoration: none;
 }
 
-.mobile_depth_1 label:hover, .mobile_depth_1 a:hover {
+.mobile_depth_1 label:hover,
+.mobile_depth_1 a:hover {
   background: $mobile-hovercolor;
   // color: #ddd;
 }
 
-.mobile_depth_2 label, .mobile_depth_2 a {
+.mobile_depth_2 label,
+.mobile_depth_2 a {
   position: relative;
   display: block;
   background: $mobile-middle-bgcolor;
@@ -256,12 +267,14 @@
   text-decoration: none;
 }
 
-.mobile_depth_2 label:hover, .mobile_depth_2 a:hover {
+.mobile_depth_2 label:hover,
+.mobile_depth_2 a:hover {
   background: $mobile-hovercolor;
   // color: #ddd;
 }
 
-.mobile_depth_3 label, .mobile_depth_3 a {
+.mobile_depth_3 label,
+.mobile_depth_3 a {
   position: relative;
   display: block;
   background: $mobile-bottom-bgcolor;
@@ -273,30 +286,31 @@
   text-decoration: none;
 }
 
-.mobile_depth_3 label:hover, .mobile_depth_3 a:hover {
+.mobile_depth_3 label:hover,
+.mobile_depth_3 a:hover {
   background: $mobile-hovercolor;
   // color: #ddd;
 }
 
-.mobile_nav__items input[type=radio]:checked + label::after {
+.mobile_nav__items input[type="radio"]:checked + label::after {
   /* show open folder icon if item is checked */
   background-position: -32px 0;
 }
 
-.mobile_nav__items input[type=checkbox]:checked + label::after {
+.mobile_nav__items input[type="checkbox"]:checked + label::after {
   /* show open folder icon if item is checked */
   background-position: -32px 0;
 }
 
-.mobile_nav__items input[type=radio]:checked + label + ul,
-.mobile_nav__items input[type=radio]:checked + label:nth-of-type(n) + ul {
+.mobile_nav__items input[type="radio"]:checked + label + ul,
+.mobile_nav__items input[type="radio"]:checked + label:nth-of-type(n) + ul {
   /* use label:nth-of-type(n) to fix a bug on safari (<= 8.0.8) with multiple adjacent-sibling selectors*/
   /* show children when item is checked */
   display: block;
 }
 
-.mobile_nav__items input[type=checkbox]:checked + label + ul,
-.mobile_nav__items input[type=checkbox]:checked + label:nth-of-type(n) + ul {
+.mobile_nav__items input[type="checkbox"]:checked + label + ul,
+.mobile_nav__items input[type="checkbox"]:checked + label:nth-of-type(n) + ul {
   /* use label:nth-of-type(n) to fix a bug on safari (<= 8.0.8) with multiple adjacent-sibling selectors*/
   /* show children when item is checked */
   display: block;
@@ -321,8 +335,8 @@
 }
 
 .dropdown {
-    float: left;
-    overflow: hidden;
+  float: left;
+  overflow: hidden;
 }
 
 .dropdown .dropbtn {
@@ -333,69 +347,71 @@
   padding: 14px 16px;
   background-color: $top-bgcolor;
   height: 64px;
+  cursor: pointer;
 }
 
-.container a:hover, .dropdown:hover .dropbtn {
-    // background-color: $top-hovercolor;
-    color: #CCF850
+.container a:hover,
+.dropdown:hover .dropbtn {
+  // background-color: $top-hovercolor;
+  color: #ccf850;
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: $middle-bgcolor;
-    min-width: 150px;
-    z-index: 20;
+  display: none;
+  position: absolute;
+  background-color: $middle-bgcolor;
+  min-width: 150px;
+  z-index: 20;
 
-    &-wrapper {
-      float: none;
-      position: relative;
-    }
+  &-wrapper {
+    float: none;
+    position: relative;
+  }
 }
 
 .dropdown-content a {
-    font-size: 14px;
-    color: $middle-textcolor;
-    padding: 6px 16px;
-    text-decoration: none;
-    text-align: left;
-    display: block;
+  font-size: 14px;
+  color: $middle-textcolor;
+  padding: 6px 16px;
+  text-decoration: none;
+  text-align: left;
+  display: block;
 }
 
 .dropdown-content a:hover {
-    background-color: $middle-hovercolor;
+  background-color: $middle-hovercolor;
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+  display: block;
 }
 
 .dropdown-2nd-content {
-    display: none;
-    position: absolute;
-    right: -150px;
-    top: -0.5px;
-    background-color: $bottom-bgcolor;
-    min-width: 150px;
-    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
-    z-index: 20;
+  display: none;
+  position: absolute;
+  right: -150px;
+  top: -0.5px;
+  background-color: $bottom-bgcolor;
+  min-width: 150px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  z-index: 20;
 }
 
 .dropdown-2nd-content a {
-    float: none;
-    color: $bottom-textcolor;
-    padding: 6px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
+  float: none;
+  color: $bottom-textcolor;
+  padding: 6px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
 }
 
 .dropdown-2nd-content a:hover {
-    background-color: $bottom-hovercolor;
+  background-color: $bottom-hovercolor;
 }
 
 .dropdown-content-wrapper:hover .dropdown-2nd-content {
-    display: block;
+  display: block;
 }
 
 .fa-stack {
