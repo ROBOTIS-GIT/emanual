@@ -1,0 +1,104 @@
+---
+layout: archive
+lang: kr
+ref: all-controller
+read_time: true
+share: true
+author_profile: false
+permalink: /docs/kr/parts/all-controller/
+sidebar:
+  title: Controllers
+  nav: "all-controller"
+---
+
+# [플랫폼](#플랫폼)
+
+|                                                               OpenCR                                                               |                                                             CM-700                                                             |                                                             CM-900                                                             |                                                                OpenCM 485 EXP                                                                 |
+| :--------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------: |
+| [![](/assets/images/parts/controller/opencr10/opencr_product.png)](https://emanual.robotis.com/docs/kr/parts/controller/opencr10/) | [![](/assets/images/parts/controller/cm-700/cm-700_product.jpg)](https://emanual.robotis.com/docs/kr/parts/controller/cm-700/) | [![](/assets/images/parts/controller/cm-900/cm-900_product.jpg)](https://emanual.robotis.com/docs/kr/parts/controller/cm-900/) | [![](/assets/images/parts/controller/opencm904/opencm485exp_product.jpg)](https://emanual.robotis.com/docs/kr/parts/controller/opencm485exp/) |
+
+# [로보티즈 엔지니어 전용](#로보티즈-엔지니어-전용)
+
+|                                                             CM-550                                                             |
+| :----------------------------------------------------------------------------------------------------------------------------: |
+| [![](/assets/images/parts/controller/cm-550/cm-550_product.png)](https://emanual.robotis.com/docs/kr/parts/controller/cm-550/) |
+
+# [로보티즈 미니 전용](#로보티즈-미니-전용)
+
+|                                                               OpenCM9.04                                                                |
+| :-------------------------------------------------------------------------------------------------------------------------------------: |
+| [![](/assets/images/parts/controller/opencm904/opencm904_product.png)](https://emanual.robotis.com/docs/kr/parts/controller/opencm904/) |
+
+# [로보티즈 바이올로이드 전용](#로보티즈-바이올로이드-전용)
+
+|                                                           CM-5                                                           |                                                             CM-510                                                             |                                                             CM-530                                                             |
+| :----------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------: |
+| [![](/assets/images/parts/controller/cm-5/cm-5_product.jpg)](https://emanual.robotis.com/docs/kr/parts/controller/cm-5/) | [![](/assets/images/parts/controller/cm-510/cm-510_product.jpg)](https://emanual.robotis.com/docs/kr/parts/controller/cm-510/) | [![](/assets/images/parts/controller/cm-530/cm-530_product.png)](https://emanual.robotis.com/docs/kr/parts/controller/cm-530/) |
+
+- 초급, 종합키트: CM-5
+
+- 스템, 프리미엄, GP: CM-510 ,CM-530
+
+# [로보티즈 플레이 600 & 700 전용](#로보티즈-플레이-600--700-전용)
+
+|               CM-20                |                                                            CM-50                                                            |
+| :--------------------------------: | :-------------------------------------------------------------------------------------------------------------------------: |
+| 동봉된 제품의 매뉴얼을 확인하세요. | [![](/assets/images/parts/controller/cm-50/cm-50_product.png)](https://emanual.robotis.com/docs/kr/parts/controller/cm-50/) |
+
+# [로보티즈 올로 전용](#로보티즈-올로-전용)
+
+|                                                             CM-100                                                             |
+| :----------------------------------------------------------------------------------------------------------------------------: |
+| [![](/assets/images/parts/controller/cm-100/cm-100_product.jpg)](https://emanual.robotis.com/docs/kr/parts/controller/cm-100/) |
+
+# [로보티즈 드림 I & II 전용](#로보티즈-드림-i--ii-전용)
+
+|                                                             CM-150                                                             |
+| :----------------------------------------------------------------------------------------------------------------------------: |
+| [![](/assets/images/parts/controller/cm-150/cm-150_product.jpg)](https://emanual.robotis.com/docs/kr/parts/controller/cm-150/) |
+
+# [로보티즈 스마트 I & II & III 전용](#로보티즈-스마트-i--ii--iii-전용)
+
+|                                                         CM-200                                                         |
+| :--------------------------------------------------------------------------------------------------------------------: |
+| [![](/assets/images/parts/controller/cm-200/cm_200.jpg)](https://emanual.robotis.com/docs/kr/parts/controller/cm-200/) |
+
+[ln-101]: /docs/en/parts/interface/ln-101/
+[cm-5]: /docs/en/parts/controller/cm-5/
+[cm-50]: /docs/en/parts/controller/cm-100/
+[cm-100]: /docs/en/parts/controller/cm-100/
+[cm-150]: /docs/en/parts/controller/cm-150/
+[cm-200]: /docs/en/parts/controller/cm-200/
+[cm-510]: /docs/en/parts/controller/cm-510/
+[cm-530]: /docs/en/parts/controller/cm-530/
+[cm-550]: /docs/en/parts/controller/cm-550/
+[cm-700]: /docs/en/parts/controller/cm-700/
+[cm-900]: /docs/en/parts/controller/cm-900/
+[opencm9.04]: /docs/en/parts/controller/opencm904/
+[opencm7.0]: /docs/kr/parts/controller/opencm7/
+[opencm 485 exp]: /docs/en/parts/controller/opencm485exp/
+[opencr]: /docs/en/parts/controller/opencr10/
+[r+ task 1.0]: /docs/en/software/rplus1/task/getting_started/
+[r+ manager 1.0]: /docs/en/software/rplus1/manager/
+[r+ motion 1.0]: /docs/en/software/rplus1/motion/
+[r+ task 2.0]: /docs/en/software/rplus2/task/
+[r+ manager 2.0]: /docs/en/software/rplus2/manager/
+[r+ motion 2.0]: /docs/en/software/rplus2/motion/
+[r+ task 3.0]: /docs/en/software/rplustask3/
+[r+ iot]: /docs/kr/software/mobile_app/rplusiot/
+[r+ blcok]: /docs/en/software/rplus2/rplus2_block/
+[r+ m.task]: /docs/en/software/rplus_mobile/mtask/
+[r+ m.task 2.0]: /docs/en/software/rplus_mobile/mtask20/
+[r+ m.mtion 2.0]: /docs/en/software/rplus_mobile/mmotion/
+[r+ m.design]: /docs/en/software/rplus_mobile/mdesign/
+[r+ smart]: /docs/kr/software/mobile_app/rplussmart/
+[r+ play 700]: /docs/en/edu/play/play-700/#quick-start
+[robotis mini]: /docs/en/software/mobile_app/mini_app/
+[r+ scratch]: /docs/en/software/rplus2/scratch/
+[opencm ide]: /docs/en/software/opencm_ide/getting_started/
+[dynamixel sdk]: /docs/en/software/dynamixel/dynamixel_sdk/overview/
+[dynamixel workbench]: /docs/en/software/dynamixel/dynamixel_workbench/
+[dynamixel wizard]: /docs/en/software/rplus1/dynamixel_wizard/
+[dynamixel wizard 2.0]: /docs/en/software/dynamixel/dynamixel_wizard2/
+[embeded sdk(cm-510/530/700)]: /docs/en/software/embedded_sdk/
+[robotis manipulator library]: /docs/en/software/robotis_manipulator_libs/

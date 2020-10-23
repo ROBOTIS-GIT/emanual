@@ -152,7 +152,21 @@
         location.href=targeturl;
       }
     </script>
-  </head>
+  
+  <script>
+    function tab_handler(en){
+      console.log(en.textContent);
+      var tabs = document.getElementById('tabs').children;
+      for(i = 0; i < tabs.length; i++) {
+        tabs[i].className = "tab not__selected";
+        $(".archive").removeClass(tabs[i].textContent);
+      }
+      en.className = "tab selected";
+      $(".archive").addClass(en.textContent);
+    }
+  </script>
+
+</head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
 
