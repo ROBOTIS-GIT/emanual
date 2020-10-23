@@ -13,27 +13,27 @@ sidebar:
 
 # [For Platform](#for-platform)
 
-|                                                               OpenCR                                                               |                                                             CM-700                                                             |                                                             CM-900                                                             |                                                                OpenCM 485 EXP                                                                 |
-| :--------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------: |
-| [![](/assets/images/parts/controller/opencr10/opencr_product.png)](https://emanual.robotis.com/docs/en/parts/controller/opencr10/) | [![](/assets/images/parts/controller/cm-700/cm-700_product.jpg)](https://emanual.robotis.com/docs/en/parts/controller/cm-700/) | [![](/assets/images/parts/controller/cm-900/cm-900_product.jpg)](https://emanual.robotis.com/docs/en/parts/controller/cm-900/) | [![](/assets/images/parts/controller/opencm904/opencm485exp_product.jpg)](https://emanual.robotis.com/docs/en/parts/controller/opencm485exp/) |
+|                                                 OpenCR                                                  |                                               CM-700                                                |                                               CM-900                                                |                                                   OpenCM 485 EXP                                                   |
+| :-----------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------: |
+| [![](/assets/images/parts/controller/opencr10/opencr_product.png)](/docs/en/parts/controller/opencr10/) | [![](/assets/images/parts/controller/cm-700/cm-700_product.jpg)](/docs/en/parts/controller/cm-700/) | [![](/assets/images/parts/controller/cm-900/cm-900_product.jpg)](/docs/en/parts/controller/cm-900/) | [![](/assets/images/parts/controller/opencm904/opencm485exp_product.jpg)](/docs/en/parts/controller/opencm485exp/) |
 
 # [For ROBOTIS ENGINEER](#for-robotis-engineer)
 
-|                                                             CM-550                                                             |
-| :----------------------------------------------------------------------------------------------------------------------------: |
-| [![](/assets/images/parts/controller/cm-550/cm-550_product.png)](https://emanual.robotis.com/docs/en/parts/controller/cm-550/) |
+|                                               CM-550                                                |
+| :-------------------------------------------------------------------------------------------------: |
+| [![](/assets/images/parts/controller/cm-550/cm-550_product.png)](/docs/en/parts/controller/cm-550/) |
 
 # [For ROBOTIS MINI](#for-robotis-mini)
 
-|                                                               OpenCM9.04                                                                |
-| :-------------------------------------------------------------------------------------------------------------------------------------: |
-| [![](/assets/images/parts/controller/opencm904/opencm904_product.png)](https://emanual.robotis.com/docs/en/parts/controller/opencm904/) |
+|                                                  OpenCM9.04                                                  |
+| :----------------------------------------------------------------------------------------------------------: |
+| [![](/assets/images/parts/controller/opencm904/opencm904_product.png)](/docs/en/parts/controller/opencm904/) |
 
 # [For ROBOTIS BIOLOID](#for-robotis-bioloid)
 
-|                                                           CM-5                                                           |                                                             CM-510                                                             |                                                             CM-530                                                             |
-| :----------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------: |
-| [![](/assets/images/parts/controller/cm-5/cm-5_product.jpg)](https://emanual.robotis.com/docs/en/parts/controller/cm-5/) | [![](/assets/images/parts/controller/cm-510/cm-510_product.jpg)](https://emanual.robotis.com/docs/en/parts/controller/cm-510/) | [![](/assets/images/parts/controller/cm-530/cm-530_product.png)](https://emanual.robotis.com/docs/en/parts/controller/cm-530/) |
+|                                             CM-5                                              |                                               CM-510                                                |                                               CM-530                                                |
+| :-------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: |
+| [![](/assets/images/parts/controller/cm-5/cm-5_product.jpg)](/docs/en/parts/controller/cm-5/) | [![](/assets/images/parts/controller/cm-510/cm-510_product.jpg)](/docs/en/parts/controller/cm-510/) | [![](/assets/images/parts/controller/cm-530/cm-530_product.png)](/docs/en/parts/controller/cm-530/) |
 
 - Beginner & Comprehensive: CM-5
 
@@ -41,27 +41,27 @@ sidebar:
 
 # [For ROBOTIS Play 600 & 700](#for-robotis-play-600--700)
 
-|                  CM-20                  |                                                            CM-50                                                            |
-| :-------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------: |
-| See the manual accompanying the product | [![](/assets/images/parts/controller/cm-50/cm-50_product.png)](https://emanual.robotis.com/docs/en/parts/controller/cm-50/) |
+|                  CM-20                  |                                              CM-50                                               |
+| :-------------------------------------: | :----------------------------------------------------------------------------------------------: |
+| See the manual accompanying the product | [![](/assets/images/parts/controller/cm-50/cm-50_product.png)](/docs/en/parts/controller/cm-50/) |
 
 # [For ROBOTIS OLLO](#for-robotis-ollo)
 
-|                                                             CM-100                                                             |
-| :----------------------------------------------------------------------------------------------------------------------------: |
-| [![](/assets/images/parts/controller/cm-100/cm-100_product.jpg)](https://emanual.robotis.com/docs/en/parts/controller/cm-100/) |
+|                                               CM-100                                                |
+| :-------------------------------------------------------------------------------------------------: |
+| [![](/assets/images/parts/controller/cm-100/cm-100_product.jpg)](/docs/en/parts/controller/cm-100/) |
 
 # [For ROBOTIS DREAM I & II](#for-robotis-dream-i--ii)
 
-|                                                             CM-150                                                             |
-| :----------------------------------------------------------------------------------------------------------------------------: |
-| [![](/assets/images/parts/controller/cm-150/cm-150_product.jpg)](https://emanual.robotis.com/docs/en/parts/controller/cm-150/) |
+|                                               CM-150                                                |
+| :-------------------------------------------------------------------------------------------------: |
+| [![](/assets/images/parts/controller/cm-150/cm-150_product.jpg)](/docs/en/parts/controller/cm-150/) |
 
 # [For ROBOTIS Smart I & II & III](#for-robotis-smart-i--ii--iii)
 
-|                                                         CM-200                                                         |
-| :--------------------------------------------------------------------------------------------------------------------: |
-| [![](/assets/images/parts/controller/cm-200/cm_200.jpg)](https://emanual.robotis.com/docs/en/parts/controller/cm-200/) |
+|                                           CM-200                                            |
+| :-----------------------------------------------------------------------------------------: |
+| [![](/assets/images/parts/controller/cm-200/cm_200.jpg)](/docs/en/parts/controller/cm-200/) |
 
 [ln-101]: /docs/en/parts/interface/ln-101/
 [cm-5]: /docs/en/parts/controller/cm-5/
