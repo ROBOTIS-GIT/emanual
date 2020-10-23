@@ -32,7 +32,7 @@ The download link for the ROBOTIS OpenCM IDE can be found below:
 - [Windows XP, Vista, 7, 8] 32bit/64bit : [Download](http://www.robotis.com/service/download.php?no=47)
 - [Mac OS X] Tested in OS X 10.12.2 : [Download](http://www.robotis.com/service/download.php?no=48)
 - [Linux 64bit] Tested in Ubuntu 12.04 : [Download](http://www.robotis.com/service/download.php?no=49)
-- [Linux 32bit] Tested in Ubuntu 10.10 : [Dowload](http://www.robotis.com/service/download.php?no=50)
+- [Linux 32bit] Tested in Ubuntu 10.10 : [Download](http://www.robotis.com/service/download.php?no=50)
 
 
 # [Getting Started](#getting-started)
