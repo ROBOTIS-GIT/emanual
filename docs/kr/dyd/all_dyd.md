@@ -32,7 +32,7 @@ Compatible Options (3rd Party Motors, Frames, etc)
 
 하지만 로보티즈는 오랜 시간동안 축적해온 기술로, 높은 토크와 반복 정밀도를 컴팩트하고 가벼우며 튼튼한 형태인 다이나믹셀 드라이브(DYD)로 제작하여 출시했습니다.
 
-[dyd_spec_01_kr.png]]()
+![](/assets/images/dyd/dyd_spec_01.png)
 
 McMaster-Carr - industrial-focus distributor of hardware and components. They stock a healthy selection of related items including servos / stepper motors, DC motors, etc. https://www.mcmaster.com/motors/
 {: .notice}
@@ -51,6 +51,8 @@ McMaster-Carr - industrial-focus distributor of hardware and components. They st
 
 ## 특징
 
+![](/assets/images/dyd/dyd_features_01.png)
+
 - Ultra High Impact Resistant
 - Lightweight
 - Hight Precision & Strong Rigidity
@@ -64,16 +66,16 @@ McMaster-Carr - industrial-focus distributor of hardware and components. They st
 
 일반적인 방식인 하우징을 고정하고 출력부를 회전하는 경우, 출력부의 회전 방향은 입력과 반대이며 속도는 1/R이고, 출력부를 고정하고 하우징이 회전하는 경우에는 하우징의 회전방향은 입력과 동일하고 속도는 1/(R+1) 입니다.
 
-|     Fixed     | Output speed | Input direction | output direction |             Example             |
-| :-----------: | :----------: | :-------------: | :--------------: | :-----------------------------: |
-|    Housing    |  i=(-1)1/R   |   Cathode (+)   |    Anode (-)     |    [dyd_housing_01_kr.png]()    |
-| Output flange |  i=1/(R+1)   |   Cathode (+)   |   Cathode (+)    | [dyd_output_flange_01_kr.png]() |
+|     Fixed     | Output speed | Input direction | output direction |                       Example                       |
+| :-----------: | :----------: | :-------------: | :--------------: | :-------------------------------------------------: |
+|    Housing    |  i=(-1)1/R   |   Cathode (+)   |    Anode (-)     |    ![](/assets/images/dyd/dyd_housing_01_kr.png)    |
+| Output flange |  i=1/(R+1)   |   Cathode (+)   |   Cathode (+)    | ![](/assets/images/dyd/dyd_output_flange_01_kr.png) |
 
 # 제품 라인업
 
-|           DYD-11            |           DYD-14            |           DYD-17            |
-| :-------------------------: | :-------------------------: | :-------------------------: |
-| [dyd_lineup_11_01_kr.png]() | [dyd_lineup_11_01_kr.png]() | [dyd_lineup_11_01_kr.png]() |
+|                    DYD-11                    |                    DYD-14                    |                    DYD-17                    |
+| :------------------------------------------: | :------------------------------------------: | :------------------------------------------: |
+| ![](/assets/images/dyd/dyd_lineup_11_01.png) | ![](/assets/images/dyd/dyd_lineup_14_01.png) | ![](/assets/images/dyd/dyd_lineup_17_01.png) |
 
 > 클릭시 이동.
 
@@ -94,7 +96,7 @@ McMaster-Carr - industrial-focus distributor of hardware and components. They st
 
 ## 품번
 
-[dyd_parts_number_01_kr.png]()
+![](/assets/images/dyd/dyd_parts_number_01.png)
 
 | Product name | Model Size | Ratio  | Shaft version |  Option   | Special production |
 | :----------: | :--------: | :----: | :-----------: | :-------: | :----------------: |
@@ -111,13 +113,13 @@ McMaster-Carr - industrial-focus distributor of hardware and components. They st
 일반적으로 감속기를 이용한 시스템을 구성하여 사용함에 있어서 일정한 부하가 작용하는 경우가 극히 적습니다.  
 대부분 증속/가속을 비롯하여 비상상황에 따른 충격부하와 같이 다양한 부하 조건 및 속도를 포함하고 있으므로 적절한 제품 선정을 위해서는 다양한 조건을 고려하여 평균적인 부하 및 속도를 환산하여 적용해야 합니다.
 
-[dyd_selection_flowchart_01_kr.png]()
+![](/assets/images/dyd/dyd_selection_flowchart_01.png)
 
 ### 동작사이클 (Duty cycle)
 
 그림과 같이 다양한 구동사이클에 포함된 부하 및 속도는 사용수명을 결정하기 위해 매우 중요한 요소입니다.
 
-[dyd_duty_cycle_01_kr.png]()
+![](/assets/images/dyd/dyd_duty_cycle_01_kr.png)
 
 | Properties | Description                                | Properties | Description                               |
 | :--------: | ------------------------------------------ | :--------: | ----------------------------------------- |
@@ -134,13 +136,13 @@ McMaster-Carr - industrial-focus distributor of hardware and components. They st
 
 ### 평균부하토크 (Average output load)
 
-[dyd_average_output_torque_01_kr.png]()
-[dyd_average_output_torque_02_kr.png]()
+![](/assets/images/dyd/dyd_average_output_torque_01.png)
+![](/assets/images/dyd/dyd_average_output_torque_02.png)
 
 ### 평균입력속도(Average input speed)
 
-[dyd_average_input_speed_01_kr.png]()
-[dyd_average_input_speed_02_kr.png]()
+![](/assets/images/dyd/dyd_average_input_speed_01.png)
+![](/assets/images/dyd/dyd_average_input_speed_02.png)
 
 ### 정격수명 (Service life)
 
@@ -150,7 +152,7 @@ DYD의 정격수명은 입력축 베어링의 수명에 의해 결정되며 베�
 
 요구수명은 다음과 같이 계산할 수 있습니다.
 
-[dyd_service_life_01_kr.png]()
+![](/assets/images/dyd/dyd_service_life_01_kr.png)
 
 | Properties | Description                    |
 | :--------: | ------------------------------ |
@@ -263,9 +265,9 @@ Starting Torque = 20 cNm (DYD-14)
 
 ### 입력축 타입선정 Select the input shaft type
 
-| Option |                  Type - C                  |          Type - D          |                Type-SC                |
-| :----: | :----------------------------------------: | :------------------------: | :-----------------------------------: |
-| Shape  | [dyd_clamp_ring_01_kr.png]()<br>Clamp-ring | [dyd_d_cut.png]()<br>D-Cut | [dyd_set_screw_kr.png]()<br>Set-screw |
+| Option |                          Type - C                           |                    Type - D                    |                        Type-SC                         |
+| :----: | :---------------------------------------------------------: | :--------------------------------------------: | :----------------------------------------------------: |
+| Shape  | ![](/assets/images/dyd/dyd_clamp_ring_01.png)<br>Clamp-ring | ![](/assets/images/dyd/dyd_d_cut.png)<br>D-Cut | ![](/assets/images/dyd/dyd_set_screw.png)<br>Set-screw |
 
 # 기술자료
 
@@ -293,7 +295,7 @@ Starting Torque = 20 cNm (DYD-14)
 
 히스테리시스 손실은 입력부가 고정된 상태에서 출력부에 토크를 정격토크만큼 서서히 증가하였다가 제거하였을 때, 회전 변형량이 ‘0’으로 완전히 돌아오지 않고 일정량의 손실이 발생하는데 이의 손실을 나타내며 기어 사이의 공차를 포함하고 있습니다.
 
-[dyd_hysteresis_loss.png]()
+![](/assets/images/dyd/dyd_hysteresis_loss.png)
 
 ### 로스트모션(Lost motion)
 
@@ -307,7 +309,7 @@ Starting Torque = 20 cNm (DYD-14)
 
 감속기의 효율은 적용부하, 입력속도, 윤활조건(온도), 사이즈 등 다양한 조건에 따라 달라집니다. 각 모델별 효율 특성은 현재 제품들의 시험결과를 기반으로 작성되었으며, 모델별 상세 데이터를 참조바랍니다. -참조(Reference) :Efficiency characteristic : DYD-14
 
-[dyd_efficiency.png]()
+![](/assets/images/dyd/dyd_efficiency.png)
 
 ### 무부하러닝토크(No-load Starting torque)
 
@@ -317,7 +319,7 @@ Starting Torque = 20 cNm (DYD-14)
 
 역구동토크는 출력부에 토크를 인가하여 입력부가 회전하기 시작하는 최대토크(static friction)를 나타냅니다.
 
-[dyd_back_drive_torque.png]()
+![](/assets/images/dyd/dyd_back_drive_torque.png)
 
 ### 윤활(Lubrications)
 
