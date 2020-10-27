@@ -13,15 +13,15 @@ sidebar:
 
 # [터틀봇3](#터틀봇3)
 
-|                              터틀봇3                              |
-| :---------------------------------------------------------------: |
-| [![](/assets/platform_2.pngdocs/en/platform/turtlebot3/overview/) |
+|                                터틀봇3                                |
+| :-------------------------------------------------------------------: |
+| [![](/assets/platform_2.png)](/docs/en/platform/turtlebot3/overview/) |
 
 # [오픈매니퓰레이터](#오픈매니퓰레이터)
 
-|                                                  Manipulator-H                                                  |                                              OpenMANIPULATOR-P                                              |                                                      OpenMANIPULATOR-X                                                       |
-| :-------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------: |
-| [![](/assets/images/platform/manipulator_h/manipulator_product.pngdocs/en/platform/manipulator_h/introduction/) | [![](/assets/images/platform/openmanipulator_p/product_img.pngdocs/en/platform/openmanipulator_p/overview/) | [![](/assets/images/platform/openmanipulator_x/OpenManipulator_Introduction.jpgdocs/en/platform/openmanipulator_x/overview/) |
+|                                                    Manipulator-H                                                    |                                                OpenMANIPULATOR-P                                                |                                                        OpenMANIPULATOR-X                                                         |
+| :-----------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------: |
+| [![](/assets/images/platform/manipulator_h/manipulator_product.png)](/docs/en/platform/manipulator_h/introduction/) | [![](/assets/images/platform/openmanipulator_p/product_img.png)](/docs/en/platform/openmanipulator_p/overview/) | [![](/assets/images/platform/openmanipulator_x/OpenManipulator_Introduction.jpg)](/docs/en/platform/openmanipulator_x/overview/) |
 
 # [로보티즈 OP](#로보티즈-op)
 
@@ -31,12 +31,12 @@ sidebar:
 
 # [로봇핸드](#로봇-핸드)
 
-|                                         RH-P12-RN(A)                                          |                                                   RH-P12-RN-UR                                                    |                                          로봇핸드 MX28                                          |                                      로봇핸드 RX28                                       |
-| :-------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------: |
-| [![](/assets/images/platform/rh_p12_rn/rh-p12-rn_product_new.pngdocs/en/platform/rh_p12_rna/) | [![](/assets/images/platform/rh_p12_rn/rh_p12_rn_ur/rh_p12_rn_ur_product_image.pngdocs/en/platform/rh_p12_rn_ur/) | [![](/assets/images/platform/hand/3fingerhand_mx-28_02.jpg)](/docs/kr/platform/robothand_mx28/) | [![](/assets/images/platform/hand/platform_hand.jpg)](/docs/kr/platform/robothand_rx28/) |
+|                                           RH-P12-RN(A)                                            |                                                     RH-P12-RN-UR                                                      |                                          로봇핸드 MX28                                          |                                      로봇핸드 RX28                                       |
+| :-----------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------: |
+| [![](/assets/images/platform/rh_p12_rn/rh-p12-rn_product_new.png)](/docs/en/platform/rh_p12_rna/) | [![](/assets/images/platform/rh_p12_rn/rh_p12_rn_ur/rh_p12_rn_ur_product_image.png)](/docs/en/platform/rh_p12_rn_ur/) | [![](/assets/images/platform/hand/3fingerhand_mx-28_02.jpg)](/docs/kr/platform/robothand_mx28/) | [![](/assets/images/platform/hand/platform_hand.jpg)](/docs/kr/platform/robothand_rx28/) |
 
 # [똘망3](#똘망3)
 
-|                                           THORMANG3                                           |
-| :-------------------------------------------------------------------------------------------: |
-| [![](/assets/images/platform/thormang3/thormang3.pngdocs/en/platform/thormang3/introduction/) |
+|                                             THORMANG3                                             |
+| :-----------------------------------------------------------------------------------------------: |
+| [![](/assets/images/platform/thormang3/thormang3.png)](/docs/en/platform/thormang3/introduction/) |
