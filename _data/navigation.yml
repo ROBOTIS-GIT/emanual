@@ -24262,6 +24262,21 @@ dxl_software_compatibility:
     url: /docs/en/faq/dxl_software_compatibility/
     urlkr: /docs/kr/faq/dxl_software_compatibility/
 
+dxl-quick-start:
+  - title: "Getting Started"
+    url: /dxl/dxl-quick-start-insert/#getting-started-with-dynamixel
+    children:
+      - title: "Control via Computer"
+        url: /dxl/dxl-quick-start-insert/#dynamixel-control-via-computer
+      - title: "Control via OpenCM embedded board"
+        url: /dxl/dxl-quick-start-insert/#dynamixel-control-via-opencm-embedded-board
+      - title: "Control via OpenCR1.0"
+        url: /dxl/dxl-quick-start-insert/#dynamixel-control-via-opencr10
+      - title: "Control via CM-Series Controllers"
+        url: /dxl/dxl-quick-start-insert/#dynamixel-control-via-cm-series-controllers                        
+      - title: "Control via Arduino Board + DYNAMIXEL Shield"
+        url: /dxl/dxl-quick-start-insert/#dynamixel-control-via-arduino-board--dynamixel-shield      
+
 contents-guide:
   - title: "Contents Guide"
     titlekr: "컨텐츠 작성방법"
