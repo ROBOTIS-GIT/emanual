@@ -23,8 +23,6 @@ page_number: 49
 
 ## [Appendixes](#appendixes)
 
-<div style="counter-reset: h3 3"></div>
-
 ### [LDS-01](#appendix-lds01)
 
 #### [Overview](#overview)
