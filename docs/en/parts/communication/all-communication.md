@@ -10,6 +10,7 @@ sidebar:
   title: Communications
   nav: "all-communication"
 ---
+
 # [Remote Controller](#remote-controller)
 
 |                               RC-100A/100B                                |                                     RC-200                                     |
@@ -27,4 +28,4 @@ sidebar:
 
 |                          ZIG-100/110A                           |                                                 ZIG2Serial                                                 |
 |:---------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------:|
-| [![](/assets/images/parts/communication/zig-110_product.jpg)]() | [![](/assets/images/parts/communication/zig2serial_product.png)](/docs/en/parts/communication/zig2serial/) |
+| [![](/assets/images/parts/communication/zig-110_product.jpg)](/docs/kr/parts/communication/zig-110/) | [![](/assets/images/parts/communication/zig2serial_product.png)](/docs/en/parts/communication/zig2serial/) |

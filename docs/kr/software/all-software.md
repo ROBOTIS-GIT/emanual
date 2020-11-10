@@ -14,7 +14,7 @@ sidebar:
 | :------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------: |
 | [![](/assets/images/sw/all_software/software.png)](/docs/kr/software/dynamixel/dynamixel_wizard2/) | [![](/assets/images/sw/all_software/icon_dynamixel_sdk.png)](/docs/kr/software/dynamixel/dynamixel_sdk/overview/) | [![](/assets/images/sw/all_software/DYNAMIXEL_Workbench_LOGO.png)](/docs/kr/software/dynamixel/dynamixel_workbench/) |
 
-## [다이나믹셀 위자드 2.0](다이나믹셀l-wizard-20)
+## [다이나믹셀 위자드 2.0](#다이나믹셀-위자드-20)
 
 다이나믹셀 위자드 2.0은 다양한 운영체제에서 다이나믹셀 제품들을 통합 관리할 수 있는 편리한 툴입니다.
 
@@ -30,7 +30,7 @@ sidebar:
 
 - 더많은 개발도구를 찾는다면, [개발 (SDK & ROS)](#개발-sdk--ros)를 참고하세요.
 
-## [다이나믹셀 워크벤치](다이나믹셀l-workbench)
+## [다이나믹셀 워크벤치](#다이나믹셀-워크벤치)
 
 다이나믹셀 SDK를 기반으로 제작된 다이나믹셀 워크벤치는 간단하고 쉬운 방법으로 다이나믹셀을 제어할수있는 라이브러리를 제공합니다.
 
@@ -46,7 +46,7 @@ sidebar:
 
 |                                                  다이나믹셀 SDK                                                   |                                                 다이나믹셀 워크벤치                                                  |                                                Embedded C(CM-530)                                                 |                                              Embedded C(CM-510/700)                                               |                                                      ZIGBEE SDK                                                      |                                              OpenCM IDE                                               |
 | :---------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------: |
-| [![](/assets/images/sw/all_software/icon_dynamixel_sdk.png)](/docs/kr/software/dynamixel/dynamixel_sdk/overview/) | [![](/assets/images/sw/all_software/DYNAMIXEL_Workbench_LOGO.png)](/docs/kr/software/dynamixel/dynamixel_workbench/) | [![](/assets/images/sw/all_software/icon_embedded_sdk_530.png)](/docs/kr/software/embedded_sdk/embedded_c_cm530/) | [![](/assets/images/sw/all_software/icon_embedded_sdk_510.png)](/docs/kr/software/embedded_sdk/embedded_c_cm510/) | [![](/assets/images/sw/all_software/icon_embedded_sdk_zigbee.png)](/docs/kr/software/embedded_sdk/embedded_c_cm530/) | [![](/assets/images/sw/all_software/icon_opencm_ide.png)](/docs/kr/software/embedded_sdk/zigbee_sdk/) |
+| [![](/assets/images/sw/all_software/icon_dynamixel_sdk.png)](/docs/kr/software/dynamixel/dynamixel_sdk/overview/) | [![](/assets/images/sw/all_software/DYNAMIXEL_Workbench_LOGO.png)](/docs/kr/software/dynamixel/dynamixel_workbench/) | [![](/assets/images/sw/all_software/icon_embedded_sdk_530.png)](/docs/kr/software/embedded_sdk/embedded_c_cm530/) | [![](/assets/images/sw/all_software/icon_embedded_sdk_510.png)](/docs/kr/software/embedded_sdk/embedded_c_cm510/) | [![](/assets/images/sw/all_software/icon_embedded_sdk_zigbee.png)](/docs/kr/software/embedded_sdk/zigbee_sdk/) | [![](/assets/images/sw/all_software/icon_opencm_ide.png)](/docs/kr/software/opencm_ide/getting_started/) |
 
 ## [다이나믹셀 SDK ](#다이나믹셀-sdk-)
 
@@ -55,7 +55,7 @@ sidebar:
 - API는 다이나믹셀과 플랫폼 로봇에 기반하여 만들어졌습니다.
 - C/C++ 등의 프로그래밍 언어의 이해가 필요합니다.
 
-## [다이나믹셀 워크벤치 ](다이나믹셀l-workbench-)
+## [다이나믹셀 워크벤치 ](#다이나믹셀l-workbench-)
 
 다이나믹셀 SDK를 기반으로 제작된 다이나믹셀 워크벤치는 간단하고 쉬운 방법으로 다이나믹셀을 제어할수있는 라이브러리를 제공합니다.
 
@@ -82,7 +82,7 @@ sidebar:
 
 다이나믹셀 SDK를 기반으로 만들어진 로보티즈 프레임워크 패키지는 똘망3, OP2, OP3같은 휴머노이드 로봇에서 사용되는 패키지 입니다.
 
-- [로보티즈 프레임워크 패키지](/docs/kr/software/robotis_framework_packages/)
+- [로보티즈 프레임워크 패키지](/docs/en/software/robotis_framework_packages/)
 
 ## [로보티즈 매니퓰레이터 라이브러리](#로보티즈-매니퓰레이터-라이브러리)
 
