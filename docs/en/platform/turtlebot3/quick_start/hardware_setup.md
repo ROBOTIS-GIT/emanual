@@ -10,15 +10,11 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 12
+page_number: 9
 ---
 
-<div style="counter-reset: h1 6"></div>
+<div style="counter-reset: h1 3"></div>
 <div style="counter-reset: h2 3"></div>
-
-<!--[dummy Header 1]>
-  <h1 id="setup"><a href="#setup">Setup</a></h1>
-<![end dummy Header 1]-->
 
 ## [Hardware Setup](#hardware-setup)
 
@@ -29,7 +25,7 @@ page_number: 12
 TurtleBot3 has three different models: `Burger`, `Waffle` and `Waffle Pi`. The following list shows their components. The big differences between three models are the Motor, the SBC (Single Board Computer) and the Sensors. The TurtleBot3 Waffle model is discontinued due to discontinuation of Intel® Joule™.
 
 |                        | Part Name                       | Burger | Waffle | Waffle Pi |
-| --------------------   | --------------------            | ----   | ----   | -------   |
+| ---------------------- | ------------------------------- | ------ | ------ | --------- |
 | **Chassis Parts**      | Waffle Plate                    | 8      | 24     | 24        |
 | .                      | Plate Support M3x35mm           | 4      | 12     | 12        |
 | .                      | Plate Support M3x45mm           | 10     | 10     | 10        |
@@ -93,7 +89,6 @@ TurtleBots3 is delivered as unassembled parts in the boxes. Follow the instructi
 
 If it is difficult to assemble with the assembly manual, please refer to the following assembly video.
 
-
 #### [TurtleBot3 Burger](#turtlebot3-burger)
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/rvm-m2ogrLA" frameborder="0" allowfullscreen></iframe>
@@ -115,5 +110,5 @@ The CAD data is released to the Onshape, which is a full-cloud 3D CAD editor. Ge
 - [TurtleBot3 Waffle Pi 3D Model](http://www.robotis.com/service/download.php?no=678)
 
 [waffle_plate_on_onshape]: https://cad.onshape.com/documents/2586c4659ef3e7078e91168b/w/14abf4cb615429a14a2732cc/e/6c94f199b347f8785a67b6f8
-[Open Robotics]: http://www.osrfoundation.org/
-[ROBOTIS]: http://www.robotis.com
+[open robotics]: http://www.osrfoundation.org/
+[robotis]: http://www.robotis.com

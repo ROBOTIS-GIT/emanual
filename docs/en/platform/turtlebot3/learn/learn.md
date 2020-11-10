@@ -13,7 +13,8 @@ product_group: turtlebot3
 page_number: 41
 ---
 
-<div style="counter-reset: h1 26"></div>
+<div style="counter-reset: h1 11"></div>
+<div style="counter-reset: h2 1"></div>
 
 # [Learn](#learn)
 
@@ -21,18 +22,19 @@ page_number: 41
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/U1ukEpzKCYY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-[AWS RoboMaker][aws_robomaker] is a service that makes it easy to develop, test, and deploy intelligent robotics applications at scale. RoboMaker extends the most widely used open-source robotics software framework, Robot Operating System (ROS), with connectivity to cloud services. This includes AWS machine learning services, monitoring services, and analytics services that enable a robot to stream data, navigate, communicate, comprehend, and learn. RoboMaker provides a robotics development environment for application development, a robotics simulation service to accelerate application testing, and a robotics fleet management service for remote application deployment, update, and management.  
-  
-| [Developer Guide][aws_robomaker_dev_guide]  
+[AWS RoboMaker][aws_robomaker] is a service that makes it easy to develop, test, and deploy intelligent robotics applications at scale. RoboMaker extends the most widely used open-source robotics software framework, Robot Operating System (ROS), with connectivity to cloud services. This includes AWS machine learning services, monitoring services, and analytics services that enable a robot to stream data, navigate, communicate, comprehend, and learn. RoboMaker provides a robotics development environment for application development, a robotics simulation service to accelerate application testing, and a robotics fleet management service for remote application deployment, update, and management.
 
-### AWS RoboMaker example with Turtlebot3  
-[AWS RoboMaker – Develop, Test, Deploy, and Manage Intelligent Robotics Apps][aws_robomaker_example]  
+| [Developer Guide][aws_robomaker_dev_guide]
+
+### AWS RoboMaker example with Turtlebot3
+
+[AWS RoboMaker – Develop, Test, Deploy, and Manage Intelligent Robotics Apps][aws_robomaker_example]
 
 ![](/assets/images/platform/turtlebot3/projects/robo_library_gazebo_1.gif)
 
 ### AWS RoboMaker Reinforcement Learning example with Turtlebot3
-[How to Train a Robot Using Reinforcement Learning][aws_robomaker_ml_example]
 
+[How to Train a Robot Using Reinforcement Learning][aws_robomaker_ml_example]
 
 ## [The Construct](#the-construct)
 
@@ -41,6 +43,7 @@ This **MASTERING WITH ROS: TurtleBot3** lecture is made by [the Construct](http:
 ### MASTERING WITH ROS: TurtleBot3
 
 What you will learn from [MASTERING WITH ROS: TurtleBot3 (Python)](http://www.theconstructsim.com/construct-learn-develop-robots-using-ros/robotigniteacademy_learnros/ros-courses-library/mastering-with-ros-turtlebot3/):
+
 1. Basic Usage and control of the TurtleBot3 robot
 1. How to perform Navigation with TurtleBot3
 1. Follow a line with TurtleBot3
@@ -51,9 +54,11 @@ What you will learn from [MASTERING WITH ROS: TurtleBot3 (Python)](http://www.th
 ![](/assets/images/platform/turtlebot3/learn/mastering_ros_turtlebot3.png)
 
 ### Have a TurtleBot3 simulation running in 5 minutes with RDS v2.0
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8wg2i297MXU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ### TurtleBot3 Laser Scan subscription
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2i_iRhzIPfo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## [TurtleBot3 Blockly](#turtlebot3-blockly)
@@ -64,13 +69,11 @@ Programming with Blockly to run TurtleBot3 (This tutorial is builed by [Dabit In
 
   ![](/assets/images/platform/turtlebot3/learn/turtlebot3_blockly_dabit_industries.gif)
 
-
-
 ## [TurtleBot3 Simulation on ROS Indigo](#turtlebot3-simulation-on-ros-indigo)
 
 TurtleBot3 simulator in Ubuntu 14.04 (This tutorial is builed by [Cyaninfinite](http://cyaninfinite.com))
 
-  - [Document for Tutorials](https://cyaninfinite.com/installing-turtlebot-3-simulator-in-ubuntu-14-04/)
+- [Document for Tutorials](https://cyaninfinite.com/installing-turtlebot-3-simulator-in-ubuntu-14-04/)
 
 ## [Youtube Course](#youtube-course)
 
@@ -80,9 +83,8 @@ This ROS courses are a ROS robot programming guide based on the experiences we h
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rV-POzbzoHc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-  - [Playlist of ROS courses (English)](https://www.youtube.com/playlist?list=PLRG6WP3c31_U7TFGduEIJWVtkOw6AJjFf)
-  - [Playlist of ROS courses (Korean)](https://www.youtube.com/playlist?list=PLRG6WP3c31_VIFtFAxSke2NG_DumVZPgw)
-
+- [Playlist of ROS courses (English)](https://www.youtube.com/playlist?list=PLRG6WP3c31_U7TFGduEIJWVtkOw6AJjFf)
+- [Playlist of ROS courses (Korean)](https://www.youtube.com/playlist?list=PLRG6WP3c31_VIFtFAxSke2NG_DumVZPgw)
 
 ## [Books](#books)
 

@@ -13,16 +13,21 @@ product_group: turtlebot3
 page_number: 49
 ---
 
-<div style="counter-reset: h1 31"></div>
-<div style="counter-reset: h2 2"></div>
+<div style="counter-reset: h1 13"></div>
+<div style="counter-reset: h2 0"></div>
+<div style="counter-reset: h3 3"></div>
 
 <!--[dummy Header 1]>
   <h1 id="appendixes"><a href="#appendixes">Appendixes</a></h1>
 <![end dummy Header 1]-->
 
-## [LDS-01](#appendix-lds01)
+## [Appendixes](#appendixes)
 
-### [Overview](#overview)
+<div style="counter-reset: h3 3"></div>
+
+### [LDS-01](#appendix-lds01)
+
+#### [Overview](#overview)
 
 ![](/assets/images/platform/turtlebot3/appendix_lds/lds.png)
 
@@ -31,7 +36,7 @@ page_number: 49
 - It supports USB interface([USB2LDS]) and is easy to install on a PC.
 - It supports UART interface for embedded baord.
 
-### [Introduction Video](#introduction-video)
+#### [Introduction Video](#introduction-video)
 
 [Video #01] How to use the LDS-01
 
@@ -59,9 +64,9 @@ page_number: 49
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/lkW4-dG2BCY" frameborder="0" allowfullscreen></iframe>
 
-### [Specifications](#specifications)
+#### [Specifications](#specifications)
 
-#### [General Specifications](#general-specifications)
+##### [General Specifications](#general-specifications)
 
 | Items                    | Specifications                                                     |
 |:-------------------------|:-------------------------------------------------------------------|
@@ -76,7 +81,7 @@ page_number: 49
 | Dimensions               | 69.5(W) X 95.5(D) X 39.5(H)mm                                      |
 | Mass                     | Under 125g                                                         |
 
-#### [Measurement Performance Specifications](#measurement-performance-specifications)
+##### [Measurement Performance Specifications](#measurement-performance-specifications)
 
 | Items                               | Specifications |
 |:------------------------------------|:---------------|
@@ -89,7 +94,7 @@ page_number: 49
 | Angular Range                       | 360°           |
 | Angular Resolution                  | 1°             |
 
-### [Detail Specification Document](#detail-specification-document)
+#### [Detail Specification Document](#detail-specification-document)
 
 The following link contains information about basic performance, measurement performance, mechanism layout, optical path, data information, pin description and commands.
 
@@ -101,52 +106,52 @@ Here is the detail specification document : [PDF](/assets/docs/LDS_Basic_Specifi
 - [Connector for LDS] [Molex 51021-0800](http://www.molex.com/pdm_docs/sd/510210800_sd.pdf)
 - [Connector for USB2LDS] [Molex 53048-0810](http://www.molex.com/pdm_docs/sd/530480810_sd.pdf)
 
-### [LDS for TurtleBot3](#lds-for-turtlebot3)
+#### [LDS for TurtleBot3](#lds-for-turtlebot3)
 
 The LDS-01 is used for TurtleBot3 Burger, Waffle and Waffle Pi models.
 
 ![](/assets/images/platform/turtlebot3/hardware_setup/turtlebot3_models.png)
 
 
-### [User Guide (for ROS)](#user-guide-for-ros)
+#### [User Guide (for ROS)](#user-guide-for-ros)
 
 We are offering [ROS package for LSD](http://wiki.ros.org/hls_lfcd_lds_driver). The hls_lfcd_lds_driver package provides a driver for **HLS(Hitachi-LG Sensor) LFCD LDS(Laser Distance Sensor)**.
 
 **NOTE**: Due to firmware update (after buy it on Oct. 2017), the sensor is running directly when power in on.
 {: .notice--info}
 
-### Installation
+#### Installation
 
 ``` bash
 $ sudo apt-get install ros-kinetic-hls-lfcd-lds-driver
 ```
 
-### Set Permission for LDS-01
+#### Set Permission for LDS-01
 
 ``` bash
 $ sudo chmod a+rw /dev/ttyUSB0
 ```
 
-### Run hlds_laser_publisher Node
+#### Run hlds_laser_publisher Node
 
 ``` bash
 $ roslaunch hls_lfcd_lds_driver hlds_laser.launch
 ```
 
-### Run hlds_laser_publisher Node with RViz
+#### Run hlds_laser_publisher Node with RViz
 
 ``` bash
 $ roslaunch hls_lfcd_lds_driver view_hlds_laser.launch
 ```
 
-### [User Guide (for Driver)](#user-guide-for-driver)
+#### [User Guide (for Driver)](#user-guide-for-driver)
 
 - In addition to ROS, the LDS-01 supports Windows, Linux, and MacOS development environments for general purposes.
 - The software requirement is:
   - GCC (for Linux and macOS), MinGW (for Windows)
   - Boost library (Lib for boost system, tested on v1.66.0)
 
-#### Download
+##### Download
 
 - Download the LDS-01's driver
 
@@ -161,7 +166,7 @@ $ git clone https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
   - GCC (for Linux and macOS), [MinGW](https://sourceforge.net/projects/mingw/files/) (for Windows)
   - [Boost library](http://www.boost.org/users/download/)
 
-#### Build
+##### Build
 
 - The makefile used here is set for Linux. Windows and macOS should be changed according to their development environment.
 
@@ -170,7 +175,7 @@ $ cd hls_lfcd_lds_driver/applications/lds_driver/
 $ make
 ```
 
-#### Run
+##### Run
 
 - You can see the raw data in the terminal when you run the driver of LDS-01. Please check the source code for details.
 
@@ -179,7 +184,7 @@ $ ./lds_driver
 r[359]=0.438000,r[358]=0.385000,r[357]=0.379000,...
 ```
 
-### [User Guide (for GUI)](#user-guide-for-gui)
+#### [User Guide (for GUI)](#user-guide-for-gui)
 
 - We provide a basic GUI tool for visually checking the data of the LDS-01.
 - It supports Linux, Windows, and macOS.
@@ -188,7 +193,7 @@ r[359]=0.438000,r[358]=0.385000,r[357]=0.379000,...
   - GCC (for Linux and macOS), MinGW (for Windows), This can be installed together while installing Qt.
   - Boost library (Lib for boost system, tested on v1.66.0)
 
-#### Download
+##### Download
 
 - Download the LDS-01's driver and GUI source code.
 
@@ -204,25 +209,25 @@ $ git clone https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
   - GCC (for Linux and macOS), [MinGW](https://sourceforge.net/projects/mingw/files/) (for Windows)
   - [Boost library](http://www.boost.org/users/download/)
 
-#### Build
+##### Build
 
 - Run the Qt Creator
 - Open file (`Ctrl`-`O`) the `lds_polar_graph.pro` file (hls_lfcd_lds_driver/applications/lds_polar_graph/lds_polar_graph.pro)
 - Change the [input your portname](https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver/blob/cf866c6b80060ab9270a664d665d287afcca2c10/applications/lds_polar_graph/lds_polar_graph.cpp#L47) of source code
 - Build all (`Ctrl`-`Shift`-`B`)
 
-#### Run
+##### Run
 
 - Run the application (`Ctrl`-`R`)
 
 ![](/assets/images/platform/turtlebot3/appendix_lds/lds_gui.png)
 
-### [User Guide (for Embedded Board)](#user-guide-for-embedded-board)
+#### [User Guide (for Embedded Board)](#user-guide-for-embedded-board)
 
 - We provide a way to connect to an embedded board.
 - The data of the LDS-01 can be used on the embedded board like OpenCR and Arduino. Please refer to below instructions.
 
-#### Preparations
+##### Preparations
 - The LDS-01 in TurtleBot3 package comes with the interface board, but you can also connect the sensor to the power and UART pins of embedded boards.
 
 ![](/assets/images/platform/turtlebot3/appendix_lds/lds_lines.png)
@@ -234,7 +239,7 @@ $ git clone https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
 
   - [Install Arduino IDE and OpenCR](http://emanual.robotis.com/docs/en/parts/controller/opencr10/#arduino-ide)
 
-#### Download firmware and run
+##### Download firmware and run
 
 1. After connecting USB to PC, select `Tools` -> `Board` -> `OpenCR Board` in Arduino IDE.
 1. Change `Tools`-> `Port` to the port to which the board is connected.
@@ -243,10 +248,10 @@ $ git clone https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/7wKyW6yLNSg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-### [Certifications](#certifications)
+#### [Certifications](#certifications)
 Please inquire us for information regarding unlisted certifications.
 
-#### [FCC](#fcc)
+##### [FCC](#fcc)
 {% include en/dxl/fcc_class_b.md %}
 
 [USB2LDS]: /docs/en/platform/turtlebot3/appendix_lds_01/#user-guide-for-embedded-board

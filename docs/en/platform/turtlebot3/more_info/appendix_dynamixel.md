@@ -13,18 +13,22 @@ product_group: turtlebot3
 page_number: 47
 ---
 
-<div style="counter-reset: h1 31"></div>
+
+<div style="counter-reset: h1 13"></div>
 <div style="counter-reset: h2 0"></div>
+<div style="counter-reset: h3 1"></div>
 
 <!--[dummy Header 1]>
   <h1 id="appendixes"><a href="#appendixes">Appendixes</a></h1>
 <![end dummy Header 1]-->
 
-## [DYNAMIXEL](#appendix-dynamixel)
+## [Appendixes](#appendixes)
+
+### [DYNAMIXEL](#appendix-dynamixel)
 
 ![](/assets/images/platform/turtlebot3/appendix_dynamixel/dynamixel_x.jpg)
 
-### [Overview](#overview)
+#### [Overview](#overview)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gZWoyCvU-U8" frameborder="0" allowfullscreen></iframe>
 
@@ -46,7 +50,7 @@ Two different types of DYNAMIXEL is adopted in TurtleBot3 Burger, Waffle and Waf
   - Trajectory Data and Moving Status (In-Position, Following Error, etc.)
   - Energy Saving (Reduced Current from 100mA to 40mA)
 
-### [Specifications](#specifications)
+#### [Specifications](#specifications)
 
 | Items           | [XL430-W250][xl430_w250] (for Burger)          | [XM430-W210][xm430_w210] (for Waffle and Waffle Pi)                                |
 |:----------------|:-----------------------------------------------|:-----------------------------------------------------------------------------------|
@@ -71,7 +75,7 @@ Two different types of DYNAMIXEL is adopted in TurtleBot3 Burger, Waffle and Waf
   - [XL430-W250][xl430_w250] for TurtleBot3 Burger
   - [XM430-W210][xm430_w210] for TurtleBot3 Waffle and Waffle Pi
 
-### [DYNAMIXEL SDK](#dynamixel-sdk)
+#### [DYNAMIXEL SDK](#dynamixel-sdk)
 
 ![](/assets/images/sw/sdk/dynamixel_sdk/overview/dynamixel_sdk_concept_logo.jpg)
 

@@ -10,25 +10,25 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 27
 ---
 
-<div style="counter-reset: h1 13"></div>
-<div style="counter-reset: h2 7"></div>
+<div style="counter-reset: h1 8"></div>
+<div style="counter-reset: h2 2"></div>
 
 <!--[dummy Header 1]>
   <h1 id="dummy"><a href="#dummy">Dummy</a></h1>
 <![end dummy Header 1]-->
 
 ## [AutoRace with Gazebo](#autorace-with-gazebo)
+
 The AutoRace is provided by Gazebo. We created a environment TurtleBot3 AutoRace 2017 in R-BIZ Challenge.
 
 - Recommended specification
 
-| CPU     | Intel Core i5 / 2 GHz Dual Core Processor      |
-| RAM     | 4GB                                            |
-| Storage | 20Gb of free hard drive space                  |
-| GPU     | NVIDIA GeForce GTX 9 series                    |
+| CPU | Intel Core i5 / 2 GHz Dual Core Processor |
+| RAM | 4GB |
+| Storage | 20Gb of free hard drive space |
+| GPU | NVIDIA GeForce GTX 9 series |
 
 **WARNING**: Do not confuse your real camera calibration configure files and Gazebo calibration configure files.
 {: .notice--warning}
@@ -38,43 +38,42 @@ The AutoRace is provided by Gazebo. We created a environment TurtleBot3 AutoRace
 
 1. `Remote PC` Run AutoRace Gazebo. You can see the AutoRace 2017 map in Gazebo.
 
-    ``` bash
-    $ roslaunch turtlebot3_gazebo turtlebot3_autorace.launch
-    ```
+   ```bash
+   $ roslaunch turtlebot3_gazebo turtlebot3_autorace.launch
+   ```
 
-    ![](/assets/images/platform/turtlebot3/autonomous_driving/autorace_map.png)
+   ![](/assets/images/platform/turtlebot3/autonomous_driving/autorace_map.png)
 
 2. `Remote PC` Run Mission launch. You can see `Traffic Light`, `Parked TurtleBot3` and `Toll Gate` in Gazebo. When TurtleBot3 approaches the mission area, they operate automatically.
 
-    ``` bash
-    $ roslaunch turtlebot3_gazebo turtlebot3_autorace_mission.launch
-    ```
+   ```bash
+   $ roslaunch turtlebot3_gazebo turtlebot3_autorace_mission.launch
+   ```
 
-    ![](/assets/images/platform/turtlebot3/autonomous_driving/autorace_map_mission.png)
+   ![](/assets/images/platform/turtlebot3/autonomous_driving/autorace_map_mission.png)
 
 3. `Remote PC` Run AutoRace launch. If you want to run AutoRace in real, you have to calibrate your camera.
 
-    ``` bash
-    $ export GAZEBO_MODE=true
-    $ export AUTO_IN_CALIB=action
-    $ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_intrinsic_camera_calibration.launch
-    ```
+   ```bash
+   $ export GAZEBO_MODE=true
+   $ export AUTO_IN_CALIB=action
+   $ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_intrinsic_camera_calibration.launch
+   ```
 
 4. `Remote PC` Open new terminal, then enter
 
-    ``` bash
-    $ export AUTO_EX_CALIB=action
-    $ export AUTO_DT_CALIB=action
-    $ export TURTLEBOT3_MODEL=burger
-    $ roslaunch turtlebot3_autorace_core turtlebot3_autorace_core.launch
-    ```
+   ```bash
+   $ export AUTO_EX_CALIB=action
+   $ export AUTO_DT_CALIB=action
+   $ export TURTLEBOT3_MODEL=burger
+   $ roslaunch turtlebot3_autorace_core turtlebot3_autorace_core.launch
+   ```
 
 5. `Remote PC` Open new terminal, then enter
 
-    ``` bash
-    $ rostopic pub -1 /core/decided_mode std_msgs/UInt8 "data: 2"
-    ```
-
+   ```bash
+   $ rostopic pub -1 /core/decided_mode std_msgs/UInt8 "data: 2"
+   ```
 
 - Video : AutoRace with Gazebo
 

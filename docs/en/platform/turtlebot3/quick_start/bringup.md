@@ -10,18 +10,20 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 14
+page_number: 10
 ---
 
-<div style="counter-reset: h1 6"></div>
+<div style="counter-reset: h1 3"></div>
+<div style="counter-reset: h2 4"></div>
 
-# [[ROS 1] Bringup](#ros-1-bringup)
+## [[ROS 1] Bringup](#ros-1-bringup)
 
 ![](/assets/images/platform/turtlebot3/software/remote_pc_and_turtlebot.png)
 
 {% capture notice_01 %}
-**WARNING**: 
-1. This instruction is intended to be run on the remote PC. If you are following the instruction on **TurtleBot**, please do **NOT** run *roscore* command on TurtleBot PC.
+**WARNING**:
+
+1. This instruction is intended to be run on the remote PC. If you are following the instruction on **TurtleBot**, please do **NOT** run _roscore_ command on TurtleBot PC.
 2. Make sure that IP address on each device is set correctly.
 3. When the battery voltage is lower than 11V, the buzzer alarm will continuously sound and actuators will be disabled. The battery must be recharged when the buzzer alarm sounds.
 {% endcapture %}
@@ -30,19 +32,19 @@ page_number: 14
 **NOTE**: This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame` and on `Windows 10` with `ROS Melodic Morenia`.
 {: .notice--info}
 
-## [Run roscore](#run-roscore)
+### [Run roscore](#run-roscore)
 
 **[Remote PC]** Run roscore.
 
-``` bash
+```bash
 $ roscore
 ```
 
-## [Bringup a TurtleBot3](#bringup-a-turtlebot3)
+### [Bringup a TurtleBot3](#bringup-a-turtlebot3)
 
 **[TurtleBot]** Bring up basic packages to start TurtleBot3 applications.
 
-``` bash
+```bash
 $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
 ```
 
@@ -57,7 +59,7 @@ PARAMETERS
  * /rosversion: 1.12.13
  * /turtlebot3_core/baud: 115200
  * /turtlebot3_core/port: /dev/ttyACM0
- * /turtlebot3_core/tf_prefix: 
+ * /turtlebot3_core/tf_prefix:
  * /turtlebot3_lds/frame_id: base_scan
  * /turtlebot3_lds/port: /dev/ttyUSB0
 
@@ -103,26 +105,28 @@ process[turtlebot3_diagnostics-3]: started with pid [14200]
 
 {% capture bringup_tip_01 %}
 **TIP**: If you want to launch Lidar sensor, Raspberry Pi Camera, Intel® RealSense™ R200 or core separately, please use below commands.
-  - $ roslaunch turtlebot3_bringup turtlebot3_lidar.launch
-  - $ roslaunch turtlebot3_bringup turtlebot3_rpicamera.launch
-  - $ roslaunch turtlebot3_bringup turtlebot3_realsense.launch
-  - $ roslaunch turtlebot3_bringup turtlebot3_core.launch
-{% endcapture %}
+
+- \$ roslaunch turtlebot3_bringup turtlebot3_lidar.launch
+- \$ roslaunch turtlebot3_bringup turtlebot3_rpicamera.launch
+- \$ roslaunch turtlebot3_bringup turtlebot3_realsense.launch
+- \$ roslaunch turtlebot3_bringup turtlebot3_core.launch
+  {% endcapture %}
 
 <div class="notice--info">{{ bringup_tip_01 | markdownify }}</div>
 
 **NOTE**: If `lost sync with device` error message is displayed on the terminal window, the sensor device of TurtleBot3 might not be securely connected.
 {: .notice--info}
 
-## [Load a TurtleBot3 on Rviz](#load-a-turtlebot3-on-rviz)
+### [Load a TurtleBot3 on Rviz](#load-a-turtlebot3-on-rviz)
 
 **[Remote PC]** Launch robot state publisher and Run RViz.
 
 **TIP**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `burger`, `waffle`, `waffle_pi`. If you want to permanently set the export settings, please refer to [Export TURTLEBOT3_MODEL][export_turtlebot3_model]{: .popup} page.
 {: .notice--success}
 
-### [on Ubuntu](#on-ubuntu)
-``` bash
+#### [on Ubuntu](#on-ubuntu)
+
+```bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ roslaunch turtlebot3_bringup turtlebot3_remote.launch
 ```
@@ -133,8 +137,9 @@ Open a new terminal window and enter the below command.
 $ rosrun rviz rviz -d `rospack find turtlebot3_description`/rviz/model.rviz
 ```
 
-### [on Windows](#on-windows)
-``` bash
+#### [on Windows](#on-windows)
+
+```bash
 > set TURTLEBOT3_MODEL=${TB3_MODEL}
 > roslaunch turtlebot3_bringup turtlebot3_remote.launch
 ```
@@ -144,7 +149,6 @@ Open a new ROS command window and enter the below command.
 ```bash
 > rosrun rviz rviz -d "<full path to turtlebot3_description>/rviz/model.rviz"
 ```
-
 
 ![](/assets/images/platform/turtlebot3/bringup/run_rviz.jpg)
 

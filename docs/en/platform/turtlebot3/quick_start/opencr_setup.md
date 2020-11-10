@@ -10,15 +10,11 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 11
+page_number: 8
 ---
 
-<div style="counter-reset: h1 6"></div>
+<div style="counter-reset: h1 3"></div>
 <div style="counter-reset: h2 2"></div>
-
-<!--[dummy Header 1]>
-  <h1 id="setup"><a href="#setup">Setup</a></h1>
-<![end dummy Header 1]-->
 
 ## [OpenCR Setup](#opencr-setup)
 
@@ -31,9 +27,10 @@ page_number: 11
 
 {% capture notice_01 %}
 **NOTE**: You can choose one of methods for uploading firmware. But we highly recommend to use **shell script**. If you need to modify TurtleBot3's firmware, you can use the second method.
+
 - Method #1: [**Shell Script**](#shell-script), if you are using linux, you can upload the pre-built binary file using the shell script.
 - Method #2: [**Arduino IDE**](#arduino-ide), build the provided source code and upload the generated binary file using the Arduino IDE.
-{% endcapture %}
+  {% endcapture %}
 
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -54,7 +51,7 @@ $ sudo apt-get install libc6:armhf
 
 - TurtleBot3 Burger
 
-  ``` bash
+  ```bash
   $ export OPENCR_PORT=/dev/ttyACM0
   $ export OPENCR_MODEL=burger
   $ rm -rf ./opencr_update.tar.bz2
@@ -67,7 +64,7 @@ When firmware upload is completed, `jump_to_fw` text string will be printed on t
 
 - TurtleBot3 Waffle or Waffle Pi
 
-  ``` bash
+  ```bash
   $ export OPENCR_PORT=/dev/ttyACM0
   $ export OPENCR_MODEL=waffle
   $ rm -rf ./opencr_update.tar.bz2
@@ -85,7 +82,7 @@ When firmware upload is completed, `jump_to_fw` text string will be printed on t
 
 Before you following step, please setup Arduino IDE on your remote PC.
 
-  - [Install Arduino IDE for OpenCR][install_arduino_ide_for_opencr]
+- [Install Arduino IDE for OpenCR][install_arduino_ide_for_opencr]
 
 The OpenCR firmware for TurtleBot3 performs the task of controlling DYNAMIXEL or acquiring and transmitting the data of the sensors. The firmware is located in OpenCR example which is downloaded by the board manager.
 
@@ -107,7 +104,7 @@ If you have TurtleBot3 Waffle or Waffle Pi,
 
 **NOTE**: If error occurs while uploading firmware, go to `Tools` → `Port` and check if correct port is selected. Press `Reset` button on the OpenCR and try to upload the firmware again.
 {: .notice--info}
-  
+
 **[Remote PC]** When firmware upload is completed, `jump_to_fw` text string will be printed on the screen.
 
 ### [Basic Operation](#basic-operation)

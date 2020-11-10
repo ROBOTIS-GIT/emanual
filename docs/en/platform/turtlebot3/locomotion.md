@@ -10,24 +10,25 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 40
+page_number: 23
 ---
 
-<div style="counter-reset: h1 25"></div>
+<div style="counter-reset: h1 10"></div>
+<div style="counter-reset: h2 1"></div>
 
 # [Locomotion](#locomotion)
 
 The contents in e-Manual can be updated without a previous notice. Therefore, some video may differ from the contents in e-Manual.
-{: .notice--warning} 
+{: .notice--warning}
 
 In the video, watch how TurtleBot3 can be assembled and reassembled with a few additional parts. The waffle plate which is the biggest part among TurtleBot3 components can be assembled in various sizes and shapes, thanks to its diverse holes for bolts and nuts.
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/o9d7NVC0A1Y" frameborder="0" allowfullscreen></iframe>
 
-With this openended component, handful of TurtleBot3 friends with various characteristics could be built. You can create a totally new robot that is never seen before. Create a variety of robots based on open hardware and try out the new Locomotion.  
+With this openended component, handful of TurtleBot3 friends with various characteristics could be built. You can create a totally new robot that is never seen before. Create a variety of robots based on open hardware and try out the new Locomotion.
 
 **TurtleBot3 Friends List**
- 
+
 - [TurtleBot3 Friends: Car](#turtlebot3-friends-car)
 - [TurtleBot3 Friends: OpenManipulator](#turtlebot3-friends-openmanipulator)
 - [TurtleBot3 Friends: Segway](#turtlebot3-friends-segway)
@@ -39,25 +40,26 @@ With this openended component, handful of TurtleBot3 friends with various charac
 - [TurtleBot3 Friends: Bike](#turtlebot3-friends-bike)
 - [TurtleBot3 Friends: Road Train](#turtlebot3-friends-road-train)
 - [TurtleBot3 Friends: Real TurtleBot](#turtlebot3-friends-real-turtlebot)
-- [TurtleBot3 Friends: Carrier](#turtlebot3-friends-carrier)  
+- [TurtleBot3 Friends: Carrier](#turtlebot3-friends-carrier)
 
-**Components List ( BOM )**  
+**Components List ( BOM )**
 
 {% capture TB_BOM_notice %}
 
 **Notice**  
 Thank you for your continued interests in the TurtleBot3 Friends.  
 The listed products in BOM, sold by third-party distributors, are subject to change or discontinuation without a prior notice.  
-In this case, please refer to the 3D modeling file to find compatible products.   
+In this case, please refer to the 3D modeling file to find compatible products.
 
 **Contact Information**  
-If you have questions regarding the TurtleBot3 Friends, contact us via the email below.  
+If you have questions regarding the TurtleBot3 Friends, contact us via the email below.
+
 - [support@robotis.com](mailto:support@robotis.com)  
 {% endcapture %}
 <div class="notice--warning">{{ TB_BOM_notice | markdownify }}</div>
 
 | Single Item                                                 | Quantity | Set Item                  | Quantity | Purchase Links                                                                                                                                                                         |
-|:------------------------------------------------------------|:---------|:--------------------------|:---------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :---------------------------------------------------------- | :------- | :------------------------ | :------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | XL430-W250-T ([e-Manual](/docs/en/dxl/x/xl430-w250/))       | 2        | XL430-W250-T              | 2        | [ROBOTIS SHOP](http://en.robotis.com/shop_en/item.php?it_id=902-0135-000)                                                                                                              |
 | ROBOT CABLE-X4P 240mm                                       | 2        | ROBOT CABLE-X4P 240mm     | 2        | [ROBOTIS SHOP](http://en.robotis.com/shop_en/item.php?it_id=903-0245-000)                                                                                                              |
 | OpenCR1.0 ([e-Manual](/docs/en/parts/controller/opencr10/)) | 1        | OpenCR1.0                 | 1        | [ROBOTIS SHOP](http://en.robotis.com/shop_en/item.php?it_id=903-0257-000)                                                                                                              |
@@ -76,7 +78,7 @@ If you have questions regarding the TurtleBot3 Friends, contact us via the email
 | SB-S3-35                                                    | 2        | None                      | None     | [Online Store](https://us.misumi-ec.com/vona2/detail/110500137950/?HissuCode=SB-O3-35&searchFlow=results2similartn)                                                                    |
 | 3D printing parts(HV Converter)                             | 4        | None                      | None     | [Onshape](https://cad.onshape.com/documents/f369a265c003df3767a37472/w/42e27bfc98b5e204f5a483fe/e/5b993b12303647b7aa5484f2)                                                            |
 
-[BOM spreadsheets](https://docs.google.com/spreadsheets/d/1vbIFMRJMbyOd2D6BtwV1Ow_yBc9xRHktqZhTTmwI_l4/edit#gid=368658157)  
+[BOM spreadsheets](https://docs.google.com/spreadsheets/d/1vbIFMRJMbyOd2D6BtwV1Ow_yBc9xRHktqZhTTmwI_l4/edit#gid=368658157)
 
 ![](/assets/images/platform/turtlebot3/friends/All_friends.jpg)
 
@@ -131,6 +133,7 @@ If you have questions regarding the TurtleBot3 Friends, contact us via the email
 
 {% capture notice_01 %}
 **NOTE**:
+
 - Two DYNAMIXEL X 430 Series are need to be set on PWM Mode.
 - Filters library have to be downloaded and includes it arduino IDE. [Github Link](https://github.com/JonHub/Filters)
 {% endcapture %}
@@ -146,7 +149,6 @@ If you have questions regarding the TurtleBot3 Friends, contact us via the email
 
   <iframe width="640" height="360" src="https://www.youtube.com/embed/VAY-0xBOE2g" frameborder="0" allowfullscreen></iframe>
 
-
 ## [TurtleBot3 Friends: Conveyor](#turtlebot3-friends-conveyor)
 
 ![](/assets/images/platform/turtlebot3/friends/friends_conveyor.png)
@@ -160,7 +162,6 @@ If you have questions regarding the TurtleBot3 Friends, contact us via the email
 - **Video**:
 
   <iframe width="640" height="360" src="https://www.youtube.com/embed/uv2faO7GhXc" frameborder="0" allowfullscreen></iframe>
-
 
 ## [TurtleBot3 Friends: Monster](#turtlebot3-friends-monster)
 
@@ -274,4 +275,4 @@ If you have questions regarding the TurtleBot3 Friends, contact us via the email
 
   <iframe width="560" height="315" src="https://www.youtube.com/embed/u7qb8xiSiNg" frameborder="0" allowfullscreen></iframe>
 
-[BOM]: /docs/en/popup/turtlebot3_bom
+[bom]: /docs/en/popup/turtlebot3_bom

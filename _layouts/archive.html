@@ -34,17 +34,18 @@ layout: default
     <a href="{{ site.github.repository_url }}/blob/master{{ site.branch }}/{{ page.path }}" itemprop="sameAs" style="font-size:1.3em; float:right; margin: 10px 40px; text-decoration: none;">
       <i class="fa fa-fw fa-github" aria-hidden="true"></i> Edit on GitHub
     </a>
-<!--     
-
-  {% if page.tabs==null %}{% else %}
+    
+    {% if page.tabs==null %}{% else %}
+    <!-- <div>
+    <button class="tab" >{{ page.ros1 }}</button>
+    <button class="tab" >{{ page.ros2 }}</button>
+    </div> -->
     <div id="tabs">
-    <button id="{{ page.tab_title1 }}" class="tab" onClick="tab_handler(this)">{{ page.tab_title1 }}</button> 
-    <button id="{{ page.tab_title2 }}" class="tab" onClick="tab_handler(this)">{{ page.tab_title2 }}</button>
-    <button id="{{ page.tab_title3 }}" class="tab" onClick="movetopage('{{ page.tab_title3 | downcase}}')">{{ page.tab_title3 }}</button>
+    <button data-tab-name="{{ page.tab_title1 }}" class="tab" onClick="tab_handler(this)">{{ page.tab_title1 }}</button> <!-- on click시 default.html로 인자 전달후 함수 실행. -->
+    <button data-tab-name="{{ page.tab_title2 }}" class="tab" onClick="tab_handler(this)">{{ page.tab_title2 }}</button>
+    <button data-tab-name="{{ page.tab_title3 }}" class="tab" onClick="tab_handler(this)">{{ page.tab_title3 }}</button>
     </div>
-    {% endif %}     
-
-  -->
+    {% endif %}
     
     {{ content }}
 

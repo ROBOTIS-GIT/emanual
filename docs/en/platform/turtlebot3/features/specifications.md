@@ -10,19 +10,19 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 4
+page_number: 5
 ---
 
-<div style="counter-reset: h1 3"></div>
+<div style="counter-reset: h1 2"></div>
 
-# [Specifications](#specifications)
+## [Specifications](#specifications)
 
 ![](/assets/images/platform/turtlebot3/hardware_setup/turtlebot3_models.png)
 
-## [Hardware Specifications](#hardware-specifications)
+### [Hardware Specifications](#hardware-specifications)
 
 | Items                              | Burger                                                              | Waffle (Discontinued)                                               | Waffle Pi                                                           |
-|:-----------------------------------|:--------------------------------------------------------------------|:--------------------------------------------------------------------|:--------------------------------------------------------------------|
+| :--------------------------------- | :------------------------------------------------------------------ | :------------------------------------------------------------------ | :------------------------------------------------------------------ |
 | Maximum translational velocity     | 0.22 m/s                                                            | 0.26 m/s                                                            | 0.26 m/s                                                            |
 | Maximum rotational velocity        | 2.84 rad/s (162.72 deg/s)                                           | 1.82 rad/s (104.27 deg/s)                                           | 1.82 rad/s (104.27 deg/s)                                           |
 | Maximum payload                    | 15kg                                                                | 30kg                                                                | 30kg                                                                |
@@ -51,17 +51,17 @@ page_number: 4
 | Firmware upgrade                   | via USB / via JTAG                                                  | via USB / via JTAG                                                  | via USB / via JTAG                                                  |
 | Power adapter (SMPS)               | Input : 100-240V, AC 50/60Hz, 1.5A @max<br />Output : 12V DC, 5A    | Input : 100-240V, AC 50/60Hz, 1.5A @max<br />Output : 12V DC, 5A    | Input : 100-240V, AC 50/60Hz, 1.5A @max<br />Output : 12V DC, 5A    |
 
-## [Dimension and Mass](#dimension-and-mass)
+### [Dimension and Mass](#dimension-and-mass)
 
-### [Data of TurtleBot3 Burger](#data-of-turtlebot3-burger)
+#### [Data of TurtleBot3 Burger](#data-of-turtlebot3-burger)
 
 ![](/assets/images/platform/turtlebot3/hardware_setup/turtlebot3_dimension1.png)
 
-### [Data of TurtleBot3 Waffle](#data-of-turtlebot3-waffle)
+#### [Data of TurtleBot3 Waffle](#data-of-turtlebot3-waffle)
 
 ![](/assets/images/platform/turtlebot3/hardware_setup/turtlebot3_dimension2.png)
 
-### [Data of TurtleBot3 Waffle Pi](#data-of-turtlebot3-waffle-pi)
+#### [Data of TurtleBot3 Waffle Pi](#data-of-turtlebot3-waffle-pi)
 
 ![](/assets/images/platform/turtlebot3/hardware_setup/turtlebot3_dimension3.png)
 
@@ -82,7 +82,6 @@ page_number: 4
 - [Intel® Joule™ 570x](http://ark.intel.com/products/96414/Intel-Joule-570x-Developer-Kit)
   - TurtleBot3 Waffle
 
-
 ### [Sensors](#sensors)
 
 - [360 Laser Distance Sensor LDS-01](/docs/en/platform/turtlebot3/appendix_lds_01/)
@@ -91,7 +90,6 @@ page_number: 4
   - TurtleBot3 Waffle
 - [The Raspberry Pi Camera Module v2.1](https://www.raspberrypi.org/products/camera-module-v2/)
   - TurtleBot3 Waffle Pi
-
 
 ### [Embedded Board](#Embedded-board)
 

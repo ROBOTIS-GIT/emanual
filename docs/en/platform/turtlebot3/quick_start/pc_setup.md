@@ -13,12 +13,10 @@ product_group: turtlebot3
 page_number: 7
 ---
 
-<div style="counter-reset: h1 6"></div>
+<div style="counter-reset: h1 3"></div>
 <div style="counter-reset: h2 0"></div>
 
-<!--[dummy Header 1]>
-  <h1 id="pc-setup"><a href="#pc-setup">PC Setup</a></h1>
-<![end dummy Header 1]-->
+{::options parse_block_html="true" /}
 
 ## [PC Setup](#pc-setup)
 
@@ -31,12 +29,12 @@ page_number: 7
 {: .notice--info}
 
 Select which Operating System you'd like to use for the remote PC:
+
 - [Ubuntu](#install-ubuntu-on-remote)
 - [Windows](#windows-setup-remote-pc)
 
 **NOTE**: ROS on Windows was brought up using [Up2](https://up-board.org/upsquared/specifications/) and an `Intel Nuc`.
 {: .notice--warning}
-
 
 ### [Install Ubuntu on Remote PC](#install-ubuntu-on-remote-pc)
 
@@ -54,7 +52,7 @@ If you need more help for installing Ubuntu, check out the step-by-step guide fr
 
 The following script will allow you to simplify ROS 1 installation procedure. Run the following command in a terminal window. The terminal application can be found with the Ubuntu search icon on the top left corner of the screen, or you can use shortcut key for terminal is `Ctrl`-`Alt`-`T`. After install ROS 1, please reboot Remote PC.
 
-``` bash
+```bash
 $ sudo apt-get update
 $ sudo apt-get upgrade
 $ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh && chmod 755 ./install_ros_kinetic.sh && bash ./install_ros_kinetic.sh
@@ -62,15 +60,16 @@ $ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/instal
 
 If you prefer manual installation, please following the link below.
 
-- [Manual installation of ROS 1 Kinetic](http://wiki.ros.org/kinetic/Installation/Ubuntu)  
+- [Manual installation of ROS 1 Kinetic](http://wiki.ros.org/kinetic/Installation/Ubuntu)
 
 **NOTE**: In order to check which packages are installed, please check this link out. [install_ros_kinetic.sh](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh)
 {: .notice--info}
 
 {% capture info_01 %}
-**NOTE**:  
- - ROBOTIS ROS packages support Melodic Morenia, however, it is recommended to use ROS Kinetic Kame for TurtleBot3.
- - In case of upgrading ROS to Melodic Morenia, please make sure that third party ROS packages are fully supported.
+**NOTE**:
+
+- ROBOTIS ROS packages support Melodic Morenia, however, it is recommended to use ROS Kinetic Kame for TurtleBot3.
+- In case of upgrading ROS to Melodic Morenia, please make sure that third party ROS packages are fully supported.
 {% endcapture %}
 <div class ="notice--info">{{info_01 | markdownify}}</div>
 
@@ -78,11 +77,11 @@ If you prefer manual installation, please following the link below.
 
 The next step is to install dependent packages for TurtleBot3 control on Remote PC.
 
-``` bash
+```bash
 $ sudo apt-get install ros-kinetic-joy ros-kinetic-teleop-twist-joy ros-kinetic-teleop-twist-keyboard ros-kinetic-laser-proc ros-kinetic-rgbd-launch ros-kinetic-depthimage-to-laserscan ros-kinetic-rosserial-arduino ros-kinetic-rosserial-python ros-kinetic-rosserial-server ros-kinetic-rosserial-client ros-kinetic-rosserial-msgs ros-kinetic-amcl ros-kinetic-map-server ros-kinetic-move-base ros-kinetic-urdf ros-kinetic-xacro ros-kinetic-compressed-image-transport ros-kinetic-rqt-image-view ros-kinetic-gmapping ros-kinetic-navigation ros-kinetic-interactive-markers
 ```
 
-``` bash
+```bash
 $ cd ~/catkin_ws/src/
 $ git clone https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
 $ git clone -b kinetic-devel https://github.com/ROBOTIS-GIT/turtlebot3.git
@@ -90,7 +89,6 @@ $ cd ~/catkin_ws && catkin_make
 ```
 
 If `catkin_make` command is completed without any errors, the preparation for TurtleBot3 is done.
-
 
 ### [Network Configuration](#network-configuration)
 
@@ -100,7 +98,7 @@ ROS 1 requires IP addresses in order to communicate between TurtleBot PC and the
 
 Enter the below command on the terminal window of the remote PC to find out the IP address of the remote PC.
 
-``` bash
+```bash
 $ ifconfig
 ```
 
@@ -110,7 +108,7 @@ Text strings in the rectangle is the IP address of the `Remote PC`.
 
 Enter the below command.
 
-``` bash
+```bash
 $ nano ~/.bashrc
 ```
 
@@ -122,7 +120,7 @@ Modify the address of `localhost` in the `ROS_MASTER_URI` and `ROS_HOSTNAME` wit
 
 Then, source the bashrc with below command.
 
-``` bash
+```bash
 $ source ~/.bashrc
 ```
 
@@ -131,6 +129,7 @@ $ source ~/.bashrc
 ### [[Windows] Setup Remote PC](#windows-setup-remote-pc)
 
 If you do not already have `Windows 10` on your Remote PC (Desktop, Laptop or SBC), you can download a trial of Windows 10 IoT Enterprise from the following link:
+
 - [Download Windows 10 IoT Enterprise(Trial)][windows_download_link]
 
 [windows_download_link]: https://www.microsoft.com/en-us/evalcenter/evaluate-windows-10-enterprise
@@ -138,7 +137,8 @@ If you do not already have `Windows 10` on your Remote PC (Desktop, Laptop or SB
 Please refer to the [ROS Wiki instructions](https://wiki.ros.org/Installation/Windows) for installing ROS on Windows.
 
 ### [Windows] Setup TurtleBot3 WS
-``` bash
+
+```bash
 > mkdir c:\ws\turtlebot3\src
 > cd c:\ws\turtlebot3\src
 > catkin_init_workspace
@@ -154,14 +154,10 @@ Please refer to the [ROS Wiki instructions](https://wiki.ros.org/Installation/Wi
 ```
 
 ### [[Windows] Network Configuration](#windows-network-configuration)
+
 To communicate from a Windows 10 system to a remote single board computer (SBC) running on the turtlebot, set the following environment variables:
 
-``` bash
+```bash
 > set ROS_MASTER_URI=http://<IP address of the SBC>:11311
 > set ROS_HOSTNAME=<name of the windows computer>
 ```
-
-
-
-
-

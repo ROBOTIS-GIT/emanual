@@ -5,23 +5,23 @@ ref: autorace_rviz_challenge
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/turtlebot3/autorace_rviz_challenge
+permalink: /docs/en/platform/turtlebot3/autorace_rviz_challenge_temp
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 45
+page_number: 4
 ---
 
-<div style="counter-reset: h1 30"></div>
-<div style="counter-reset: h2 3"></div>
-
+<div style="counter-reset: h1 1"></div>
+<div style="counter-reset: h2 2"></div>
+<div style="counter-reset: h3 2"></div>
 
 <!--[dummy Header 1]>
   <h1 id="dummy"><a href="#dummy">Dummy</a></h1>
 <![end dummy Header 1]-->
 
-## [AutoRace RBIZ Challenge 2017](#autorace-rbiz-challenge-2017)
+### [AutoRace RBIZ Challenge 2017](#autorace-rbiz-challenge-2017)
 
 ![](/assets/images/platform/turtlebot3/autonomous_driving/autorace_rbiz_challenge_2017_robots_2.png)
 
@@ -34,7 +34,7 @@ page_number: 45
 - Participants sources
 
   | Place | Team              | Source link                                                        |
-  |:------|:------------------|:-------------------------------------------------------------------|
+  | :---- | :---------------- | :----------------------------------------------------------------- |
   | 1     | RealRiceThief     | [Github](https://github.com/KoG-8/Turtlebot_RealRiceThief)         |
   | 2     | IronHeart         | [Github](https://github.com/kijongGil/Ironheart)                   |
   | 3     | Robit             | [Github](https://github.com/ROBIT-GIT/turtlebot3_autoRace_2017)    |
@@ -51,7 +51,7 @@ page_number: 45
   | 14    | Cena              | retire                                                             |
   | 15    | TogetherChaChaCha | retire                                                             |
 
-### [TurtleBot3 AutoRace 2017 Teaser](#turtlebot3-autorace-2017-teaser)
+#### [TurtleBot3 AutoRace 2017 Teaser](#turtlebot3-autorace-2017-teaser)
 
 - Official Teaser #1
 
@@ -65,7 +65,7 @@ page_number: 45
 
   <iframe width="560" height="315" src="https://www.youtube.com/embed/DWDBAHHQi_k" frameborder="0" allowfullscreen></iframe>
 
-### [TurtleBot3 AutoRace 2017 Challengers](#turtlebot3-autorace-2017-challengers)
+#### [TurtleBot3 AutoRace 2017 Challengers](#turtlebot3-autorace-2017-challengers)
 
 - Video - Team RealRiceThief (1st Place)
 
@@ -79,13 +79,12 @@ page_number: 45
 
   <iframe width="640" height="360" src="https://www.youtube.com/embed/1V33iEu4ylw" frameborder="0" allowfullscreen></iframe>
 
-
-## [AutoRace RBIZ Challenge 2018](#autorace-rbiz-challenge-2018)
+### [AutoRace RBIZ Challenge 2018](#autorace-rbiz-challenge-2018)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6t6cyFiGLvs?start=100" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 | Place | Team             | Source link                                                               |
-|:------|:-----------------|:--------------------------------------------------------------------------|
+| :---- | :--------------- | :------------------------------------------------------------------------ |
 | 1     | ROBIT            | [Github](https://github.com/developer0hye/2018-Turtlebot3-Autorace-ROBIT) |
 | 2     | Au-Di            | [Github](https://github.com/taening/AuDi-GIT-turtlebot3_autorace)         |
 | 3     | ROBIT2           | will be released soon                                                     |

@@ -10,26 +10,29 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 46
+page_number: 
 ---
 
-<div style="counter-reset: h1 30"></div>
+# [More Info](#more-info)
 
-# [Appendixes](#appendixes)
+<div style="counter-reset: h1 13"></div>
+<div style="counter-reset: h2 0"></div>
 
-## [DYNAMIXEL](#dynamixel)
+## [Appendixes](#appendixes)
+
+### [DYNAMIXEL](#dynamixel)
 - [DYNAMIXEL][dynamixel]: Actuator of TurtleBot3
 
-## [OpenCR1.0](#opencr10)
+### [OpenCR1.0](#opencr10)
 - [OpenCR1.0][opencr]: Embedded Board of TurtleBot3
 
-## [LDS-01](#lds01)
+### [LDS-01](#lds01)
 - [LDS-01][lds]: Lidar Sensor of TurtleBot3
 
-## [RealSense™](#realsense)
+### [RealSense™](#realsense)
 - [RealSense™][realsense]: Depth Camera of TurtleBot3 Waffle
 
-## [Raspberry Pi Camera](#raspberry-pi-camera)
+### [Raspberry Pi Camera](#raspberry-pi-camera)
 - [Raspberry Pi Camera][raspberry pi camera]: Camera of TurtleBot3 Waffle Pi
 
 [dynamixel]: /docs/en/platform/turtlebot3/appendix_dynamixel/

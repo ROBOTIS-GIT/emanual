@@ -10,10 +10,10 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 21
+page_number: 15
 ---
 
-<div style="counter-reset: h1 9"></div>
+<div style="counter-reset: h1 4"></div>
 
 # [[ROS 1] Navigation](#ros1-navigation)
 
@@ -21,7 +21,8 @@ page_number: 21
 {: .notice--warning}
 
 {% capture notice_01 %}
-**NOTE**: 
+**NOTE**:
+
 - This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - This instructions are supposed to be running on the remote PC. Please run the instructions below on your **Remote PC**.
 - The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. The shortcut key for running the terminal is `Ctrl`-`Alt`-`T`.
@@ -33,8 +34,8 @@ page_number: 21
 {% capture notice_02 %}
 {% include en/platform/turtlebot3/ros_book_info.md %}
 {% endcapture %}
-<div class="notice--success">{{ notice_02 | markdownify }}</div>
 
+<div class="notice--success">{{ notice_02 | markdownify }}</div>
 
 **Navigation** is to move the robot from one location to the specified destination in a given environment. For this purpose, a map that contains geometry information of furniture, objects, and walls of the given environment is required. As described in the previous [SLAM][slam] section, the map was created with the distance information obtained by the sensor and the pose information of the robot itself.
 
@@ -44,13 +45,13 @@ The navigation enables a robot to move from the current pose to the designated g
 
 **[Remote PC]** Run roscore.
 
-``` bash
+```bash
 $ roscore
 ```
 
 **[TurtleBot]** Bring up basic packages to start TurtleBot3 applications.
 
-``` bash
+```bash
 $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
 ```
 
@@ -59,7 +60,7 @@ $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
 **TIP**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `burger`, `waffle`, `waffle_pi`. If you want to permanently set the export settings, please refer to [Export TURTLEBOT3_MODEL][export_turtlebot3_model]{: .popup} page.
 {: .notice--success}
 
-``` bash
+```bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/map.yaml
 ```
@@ -67,7 +68,7 @@ $ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/m
 **TIP**: When you run the above command, the visualization tool RViz is also executed. If you want to run RViz separately, use the following command.
 {: .notice--success}
 
-``` bash
+```bash
 $ rviz -d `rospack find turtlebot3_navigation`/rviz/turtlebot3_navigation.rviz
 ```
 
@@ -78,9 +79,9 @@ $ rviz -d `rospack find turtlebot3_navigation`/rviz/turtlebot3_navigation.rviz
 - Click the `2D Pose Estimate` button.
 - Click on the approxtimate point in the map where the TurtleBot3 is located and drag the cursor to indicate the direction where TurtleBot3 faces.
 
-Then move the robot back and forth with tools like the `turtlebot3_teleop_keyboard` node to collect the surrounding environment information and find out where the robot is currently located on the map. 
+Then move the robot back and forth with tools like the `turtlebot3_teleop_keyboard` node to collect the surrounding environment information and find out where the robot is currently located on the map.
 
-``` bash
+```bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ```
@@ -106,7 +107,7 @@ The robot will create a path to avoid obstacles to its destination based on the 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/VYlMywwYALU" frameborder="0" allowfullscreen></iframe>
 
 The contents in e-Manual can be updated without a previous notice. Therefore, some video may differ from the contents in e-Manual.
-{: .notice--warning} 
+{: .notice--warning}
 
 Setting a goal position might fail if the path to the goal position cannot be created. If you wish to stop the robot before it reaches to the goal position, set the current position of TurtleBot3 as a goal position.
 
@@ -117,60 +118,73 @@ Navigation stack has many parameters to change performances for different robots
 This tuning guide give some tips for you to configue important parameters. If you want to change performances depends on your environments, this tips might be help you and save your time.
 
 _**inflation_radius**_
+
 - `turtlebot3_navigation/param/costmap_common_param_$(model).yaml`
-- This parameter makes inflation area from the obstacle. Path would be planned in order that it don't across this area. It is safe that to set this to be bigger than robot radius. For more information about it please following [page of costmap_2d wiki](http://wiki.ros.org/costmap_2d#Inflation). 
+- This parameter makes inflation area from the obstacle. Path would be planned in order that it don't across this area. It is safe that to set this to be bigger than robot radius. For more information about it please following [page of costmap_2d wiki](http://wiki.ros.org/costmap_2d#Inflation).
 
 ![](/assets/images/platform/turtlebot3/navigation/tuning_inflation_radius.png)
 
-_**cost_scaling_factor**_ 
+_**cost_scaling_factor**_
+
 - `turtlebot3_navigation/param/costmap_common_param_$(model).yaml`
-- This factor is multiplied by cost value. Because it is an reciprocal propotion, this parameter is increased, the cost is decreased. 
+- This factor is multiplied by cost value. Because it is an reciprocal propotion, this parameter is increased, the cost is decreased.
 
 ![](/assets/images/platform/turtlebot3/navigation/tuning_cost_scaling_factor.png)
 
-  The best path is for the robot to pass through a center of between obstacles. Set this factor to be smaller in order to far from obstacles.
+The best path is for the robot to pass through a center of between obstacles. Set this factor to be smaller in order to far from obstacles.
 
-_**max_vel_x**_ 
+_**max_vel_x**_
+
 - `turtlebot3_navigation/param/dwa_local_planner_params_$(model).yaml`
-- This factor is set the maximum value of translational velocity. 
+- This factor is set the maximum value of translational velocity.
 
-_**min_vel_x**_ 
+_**min_vel_x**_
+
 - `turtlebot3_navigation/param/dwa_local_planner_params_$(model).yaml`
 - This factor is set the minimum value of translational velocity. If set this negative, the robot can move backwards.
 
 _**max_trans_vel**_
+
 - `turtlebot3_navigation/param/dwa_local_planner_params_$(model).yaml`
 - Actual value of the maximum translational velocity. The robot can not be faster than this.
 
 _**min_trans_vel**_
+
 - `turtlebot3_navigation/param/dwa_local_planner_params_$(model).yaml`
 - Actual value of the minimum translational velocity. The robot can not be slower than this.
 
 _**max_rot_vel**_
+
 - `turtlebot3_navigation/param/dwa_local_planner_params_$(model).yaml`
 - Actual value of the maximum rotational velocity. The robot can not be faster than this.
 
 _**min_rot_vel**_
+
 - `turtlebot3_navigation/param/dwa_local_planner_params_$(model).yaml`
 - Actual value of the minimum rotational velocity. The robot can not be slower than this.
 
 _**acc_lim_x**_
+
 - `turtlebot3_navigation/param/dwa_local_planner_params_$(model).yaml`
 - Actual value of the translational acceleration limit.
 
 _**acc_lim_theta**_
+
 - `turtlebot3_navigation/param/dwa_local_planner_params_$(model).yaml`
 - Actual value of the rotational acceleration limit.
 
 _**xy_goal_tolerance**_
+
 - `turtlebot3_navigation/param/dwa_local_planner_params_$(model).yaml`
 - The x,y distance allowed when the robot reaches its goal pose.
 
 _**yaw_goal_tolerance**_
+
 - `turtlebot3_navigation/param/dwa_local_planner_params_$(model).yaml`
 - The yaw angle allowed when the robot reaches its goal pose.
 
 _**sim_time**_
+
 - `turtlebot3_navigation/param/dwa_local_planner_params_$(model).yaml`
 - This factor is set forward simulation in seconds. Too low value is in sufficient time to pass narrow area and too high value is not allowed rapidly rotates. You can watch defferences of length of the yellow line in below image.
 
@@ -183,7 +197,6 @@ _**sim_time**_
 
 [slam]: /docs/en/platform/turtlebot3/slam/
 [export_turtlebot3_model]: /docs/en/platform/turtlebot3/export_turtlebot3_model
-
 
 ## [References](#references)
 
