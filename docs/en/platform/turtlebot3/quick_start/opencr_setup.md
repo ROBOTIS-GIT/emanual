@@ -18,21 +18,35 @@ page_number: 8
 
 ## [OpenCR Setup](#opencr-setup)
 
-![](/assets/images/platform/turtlebot3/software/remote_pc_and_turtlebot.png)
+1. Connect the OpenCR to the Rasbperry Pi using the micro USB cable.
 
-**NOTE**: If you want to get more detail about OpenCR, Please contact an [OpenCR WiKi][opencr]
-{: .notice--info}
+2. Install required packages on the Raspberry Pi to upload the OpenCR firmware.
+  ```bash
+$ sudo dpkg --add-architecture armhf
+$ sudo apt-get update
+$ sudo apt-get install libc6:armhf
+  ```
 
-### [OpenCR Firmware Upload for TB3](#opencr-firmware-upload-for-tb3)
+3. Depending on the platform, use either `burger` or `waffle` for the **OPENCR_MODEL** name.
+  ```bash
+$ export OPENCR_PORT=/dev/ttyACM0
+$ export OPENCR_MODEL=burger
+$ rm -rf ./opencr_update.tar.bz2
+$ wget https://github.com/ROBOTIS-GIT/OpenCR-Binaries/raw/master/turtlebot3/ROS1/latest/opencr_update.tar.bz2 
+$ tar -xvf opencr_update.tar.bz2 
+$ cd ./opencr_update 
+$ ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr
+  ```  
 
-{% capture notice_01 %}
-**NOTE**: You can choose one of methods for uploading firmware. But we highly recommend to use **shell script**. If you need to modify TurtleBot3's firmware, you can use the second method.
+4. A successful firmware upload for TurtleBot3 Burger will look like below.  
+  ![](/assets/images/platform/turtlebot3/opencr/shell01.png)
 
-- Method #1: [**Shell Script**](#shell-script), if you are using linux, you can upload the pre-built binary file using the shell script.
-- Method #2: [**Arduino IDE**](#arduino-ide), build the provided source code and upload the generated binary file using the Arduino IDE.
-  {% endcapture %}
-
-<div class="notice--info">{{ notice_01 | markdownify }}</div>
+5. If firmware upload fails, try uploading with the recovery mode. Below sequence activates the recovery mode of OpenCR.
+  - Hold down the `PUSH SW2` button.
+  - Press the `Reset` button.
+  - Release the `Reset` button.
+  - Release the `PUSH SW2` button.
+  ![](/assets/images/parts/controller/opencr10/bootloader_19.png)
 
 #### [(Recommended) Shell Script](#recommended-shell-script)
 
