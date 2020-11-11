@@ -16,7 +16,7 @@ page_number: 9
 <div style="counter-reset: h1 3"></div>
 <div style="counter-reset: h2 3"></div>
 
-## [Hardware Setup](#hardware-setup)
+## [Hardware Assembly](#hardware-assembly)
 
 ![](/assets/images/platform/turtlebot3/hardware_setup/turtlebot3_models.png)
 

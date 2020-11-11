@@ -10,6 +10,7 @@ tabs: "ROS"
 tab_title1: Kinetic
 tab_title2: Melodic
 tab_title3: Noetic
+tab_title4: Foxy
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
@@ -23,19 +24,19 @@ page_number: 6
 {::options parse_block_html="true" /}
 
 <section id="{{ page.tab_title1 }}" class="tab_contents">
-
-{% include en/platform/test/kinetic_quickstart.md %}
-
+{% include en/platform/turtlebot3/quickstart_kinetic.md %}
 </section>
 
 <section id="{{ page.tab_title2 }}" class="tab_contents">
-{% include en/platform/test/melodic_quickstart.md %}
-
+{% include en/platform/turtlebot3/quickstart_melodic.md %}
 </section>
 
 <section id="{{ page.tab_title3 }}" class="tab_contents">
-{% include en/platform/test/noetic_quickstart.md %}
+{% include en/platform/turtlebot3/quickstart_noetic.md %}
+</section>
 
+<section id="{{ page.tab_title4 }}" class="tab_contents">
+{% include en/platform/turtlebot3/quickstart_foxy.md %}
 </section>
 
 <!--
