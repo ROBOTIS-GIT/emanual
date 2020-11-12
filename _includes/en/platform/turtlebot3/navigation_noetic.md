@@ -21,7 +21,7 @@ page_number: 15
 
 <div style="counter-reset: h1 4"></div>
 
-# [[ROS 1] Navigation](#ros1-navigation)
+# [Navigation](#ros1-navigation)
 
 **WARNING**: Be careful when running the robot on the table as the robot might fall.
 {: .notice--warning}
@@ -29,7 +29,7 @@ page_number: 15
 {% capture notice_01 %}
 **NOTE**:
 
-- This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+- This instructions were tested on `Ubuntu 20.04` and `ROS Noetic Ninjemys`.
 - This instructions are supposed to be running on the remote PC. Please run the instructions below on your **Remote PC**.
 - The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. The shortcut key for running the terminal is `Ctrl`-`Alt`-`T`.
 - Make sure to run the [Bringup](/docs/en/platform/turtlebot3/bringup/#bringup) instructions before use of the instruction

@@ -5,7 +5,7 @@
   <h1 id="basic-operation"><a href="#basic-operation">Basic Operation</a></h1>
 <![end dummy Header 1]-->
 
-# [[ROS 1] SLAM](#ros-1-slam)
+# [SLAM](#ros-1-slam)
 
 **WARNING**: Be careful when running the robot on the table as the robot might fall.
 {: .notice--warning}
