@@ -16963,9 +16963,9 @@ turtlebot3:
     - title: "Hardware Assembly"
       url: /platform/turtlebot3/hardware_setup/#hardware-assembly
     - title: "Bringup"
-      url: /platform/turtlebot3/bringup/#ros-1-bringup
+      url: /platform/turtlebot3/bringup/#bringup
     - title: "Basic Operation"
-      url: /platform/turtlebot3/basic_operation/#ros-1-basic-operation
+      url: /platform/turtlebot3/basic_operation/#basic-operation
     - title: "Examples"
       url: /platform/turtlebot3/basic_examples/#basic-examples
       children:
@@ -17090,7 +17090,7 @@ turtlebot3:
     - title: "TurtleBot3 AutoRace 2019"
       url: /platform/turtlebot3/autonomous_driving_autorace/
   - title: "Machine Learning"
-    url: /platform/turtlebot3/machine_learning/#ros-1-machine-learning
+    url: /platform/turtlebot3/machine_learning/#machine-learning
     children:
     - title: "Software Setup"
       url: /platform/turtlebot3/machine_learning/#software-setup
