@@ -1,9 +1,9 @@
 
 # Quick Start Guide
 
-## [PC Setup](#pc-setup)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8w3xhG1GPdo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### Install Ubuntu
+## [PC Setup](#pc-setup)
 
 **WARNING**: The contents in this chapter corresponds to the `Remote PC` (your desktop or laptop PC) which will control TurtleBot3. Do not apply this instruction to your TurtleBot3.
 {: .notice--danger}

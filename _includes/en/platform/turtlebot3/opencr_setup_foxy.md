@@ -1,105 +1,69 @@
 
 ## [OpenCR Setup](#opencr-setup)
 
-![](/assets/images/platform/turtlebot3/software/remote_pc_and_turtlebot.png)
+Following commands set up the OpenCR port authorization for Raspberry Pi.
 
-**NOTE**: If you want to get more detail about OpenCR, Please contact an [OpenCR WiKi][opencr]
-{: .notice--info}
+1. Open a terminal from **Raspberry Pi** with `Ctrl` + `Alt` + `T` and enter the commands below.
+  ```bash
+$ cd ~/turtlebot3_ws/src/turtlebot3/turtlebot3_bringup 
+$ sudo cp ./99-turtlebot3-cdc.rules /etc/udev/rules.d/ 
+$ sudo udevadm control --reload-rules 
+$ sudo udevadm trigger
+  ```
 
-### [OpenCR Firmware Upload for TB3](#opencr-firmware-upload-for-tb3)
-
-{% capture notice_01 %}
-**NOTE**: You can choose one of methods for uploading firmware. But we highly recommend to use **shell script**. If you need to modify TurtleBot3's firmware, you can use the second method.
-
-- Method #1: [**Shell Script**](#shell-script), if you are using linux, you can upload the pre-built binary file using the shell script.
-- Method #2: [**Arduino IDE**](#arduino-ide), build the provided source code and upload the generated binary file using the Arduino IDE.
-  {% endcapture %}
-
-<div class="notice--info">{{ notice_01 | markdownify }}</div>
-
-#### [(Recommended) Shell Script](#recommended-shell-script)
-
-**NOTE**: For Windows developers, please use the [alternative Arduino IDE](#alternative-arduino-ide) firmware upload method.
-{: .notice}
-
-This instruction was tested on `Ubuntu 16.04`, `Ubuntu Mate`, `Linux Mint` and `Raspbian`. You can use the following command after connecting OpenCR to remote PC (your desktop or laptop PC) or connect OpenCR to your TurtleBot PC (`Intel® Joule™`, `Raspberry Pi 3`) and execute the following command.
-
-Please make sure that `libc6:armhf` is installed to run the OpenCR firmware updater on the Raspberry Pi.
-
-```bash
+2. Install Dependencies to Run 32bit Executables.
+  ```bash
 $ sudo dpkg --add-architecture armhf
 $ sudo apt-get update
 $ sudo apt-get install libc6:armhf
-```
-
-- TurtleBot3 Burger
-
-  ```bash
-  $ export OPENCR_PORT=/dev/ttyACM0
-  $ export OPENCR_MODEL=burger
-  $ rm -rf ./opencr_update.tar.bz2
-  $ wget https://github.com/ROBOTIS-GIT/OpenCR-Binaries/raw/master/turtlebot3/ROS1/latest/opencr_update.tar.bz2 && tar -xvf opencr_update.tar.bz2 && cd ./opencr_update && ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr && cd ..
   ```
 
-  ![](/assets/images/platform/turtlebot3/opencr/shell01.png)
-
-When firmware upload is completed, `jump_to_fw` text string will be printed on the terminal.
-
-- TurtleBot3 Waffle or Waffle Pi
-
+3. Depending on the platform, use either `burger` or `waffle` for the **OPENCR_MODEL** name.
   ```bash
-  $ export OPENCR_PORT=/dev/ttyACM0
-  $ export OPENCR_MODEL=waffle
-  $ rm -rf ./opencr_update.tar.bz2
-  $ wget https://github.com/ROBOTIS-GIT/OpenCR-Binaries/raw/master/turtlebot3/ROS1/latest/opencr_update.tar.bz2 && tar -xvf opencr_update.tar.bz2 && cd ./opencr_update && ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr && cd ..
+$ export OPENCR_PORT=/dev/ttyACM0
+$ export OPENCR_MODEL=burger
+$ cd && rm -rf opencr_update.tar.bz2
   ```
 
-  ![](/assets/images/platform/turtlebot3/opencr/shell02.png)
+4. Download the firmware and loader, then extract the file.
+  ```bash
+$ wget https://github.com/ROBOTIS-GIT/OpenCR-Binaries/raw/master/turtlebot3/ROS2/latest/opencr_update.tar.bz2
+$ tar -xjf ./opencr_update.tar.bz2
+  ```
 
-When firmware upload is completed, `jump_to_fw` text string will be printed on the terminal.
+5. Upload firmware to the OpenCR.
+  ```bash
+$ cd ~/opencr_update
+$ ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr
+  ```
 
-#### [(Alternative) Arduino IDE](#alternative-arduino-ide)
+6. The following window shows you the result of a firmware upload of TurtleBot3 Burger to OpenCR.  
+  Make sure `jump_to_fw` message is displayed on the bottom of the window. 
+  ```bash
+aarch64
+arm
+OpenCR Update Start..
+opencr_ld_shell ver 1.0.0
+opencr_ld_main
+[  ] file name   	: burger.opencr
+[  ] file size   	: 168 KB
+[  ] fw_name     	: burger
+[  ] fw_ver      	: V180903R1
+[OK] Open port   	: /dev/ttyACM0
+[  ]
+[  ] Board Name  	: OpenCR R1.0
+[  ] Board Ver   	: 0x17020800
+[  ] Board Rev   	: 0x00000000
+[OK] flash_erase 	: 0.96s
+[OK] flash_write 	: 1.92s
+[OK] CRC Check   	: 10E28C8 10E28C8 , 0.006000 sec
+[OK] Download
+[OK] jump_to_fw
+  ```
 
-**WARNING**: The contents in this chapter corresponds to the `Remote PC` (your desktop or laptop PC) which will control TurtleBot3. Do **NOT** apply this instruction to your TurtleBot3.
-{: .notice--warning}
-
-Before you following step, please setup Arduino IDE on your remote PC.
-
-- [Install Arduino IDE for OpenCR][install_arduino_ide_for_opencr]
-
-The OpenCR firmware for TurtleBot3 performs the task of controlling DYNAMIXEL or acquiring and transmitting the data of the sensors. The firmware is located in OpenCR example which is downloaded by the board manager.
-
-If you have TurtleBot3 Burger,
-
-**[Remote PC]** Go to `File` → `Examples` → `turtlebot3` → `turtlebot3_burger` → `turtlebot3_core`.
-
-If you have TurtleBot3 Waffle or Waffle Pi,
-
-**[Remote PC]** Go to `File` → `Examples` → `turtlebot3` → `turtlebot3_waffle` → `turtlebot3_core`.
-
-![](/assets/images/platform/turtlebot3/opencr/o1.png)
-
-**[Remote PC]** Click `Upload` button to upload the firmware to OpenCR.
-
-![](/assets/images/platform/turtlebot3/opencr/o2.png)
-
-![](/assets/images/platform/turtlebot3/opencr/o3.png)
-
-**NOTE**: If error occurs while uploading firmware, go to `Tools` → `Port` and check if correct port is selected. Press `Reset` button on the OpenCR and try to upload the firmware again.
-{: .notice--info}
-
-**[Remote PC]** When firmware upload is completed, `jump_to_fw` text string will be printed on the screen.
-
-### [Basic Operation](#basic-operation)
-
-![](/assets/images/platform/turtlebot3/opencr/opencr_models.png)
-
-You can use `PUSH SW 1` and `PUSH SW 2` buttons to see whether your robot has been properly assembled. This process tests the left and right DYNAMIXEL's and the OpenCR board.
-
-1. After assembling TurtleBot3, connect the battery to OpenCR and turn on the power switch. You can see that the `Power LED` of OpenCR turns on.
-2. Place the robot on the floor. For the test, safety radius of 1 meter (about 40 inches) is recommended.
-3. Press and hold `PUSH SW 1` for a few seconds to command the robot to move 30 centimeters (about 12 inches) forward.
-4. Press and hold `PUSH SW 2` for a few seconds to command the robot to rotate 180 degrees in place.
-
-[opencr]: /docs/en/parts/controller/opencr10/
-[install_arduino_ide_for_opencr]: /docs/en/parts/controller/opencr10/#arduino-ide
+7. If firmware upload fails, try uploading with the recovery mode. Below sequence activates the recovery mode of OpenCR. Under the recovery mode, the `STATUS` led of [OpenCR] will blink periodically.
+  - Hold down the `PUSH SW2` button.
+  - Press the `Reset` button.
+  - Release the `Reset` button.
+  - Release the `PUSH SW2` button.
+  ![](/assets/images/parts/controller/opencr10/bootloader_19.png)

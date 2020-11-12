@@ -40,6 +40,6 @@ page_number: 8
 {% include en/platform/turtlebot3/opencr_setup_foxy.md %}
 </section>
 
-<section id="{{ page.tab_title4 }}" class="tab_contents">
+<section id="{{ page.tab_title5 }}" class="tab_contents">
 {% include en/platform/turtlebot3/opencr_setup_windows.md %}
 </section>
