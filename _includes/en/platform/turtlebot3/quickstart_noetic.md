@@ -1,3 +1,4 @@
+{::options parse_block_html="true" /}
 
 # Quick Start Guide
 
@@ -12,10 +13,10 @@
 ### [Download and Install Ubuntu on PC](#download-and-install-ubuntu-on-pc)
 
 1. Download the proper `Ubuntu 20.04 LTS Desktop` image for your PC from the links below.
-  - [Ubuntu 20.04 LTS Desktop image (64-bit)](hhttps://releases.ubuntu.com/20.04/ubuntu-20.04.1-desktop-amd64.iso)
+  - [Ubuntu 20.04 LTS Desktop image (64-bit)](https://releases.ubuntu.com/20.04/ubuntu-20.04.1-desktop-amd64.iso)
 
 2. Follow the instruction below to install Ubuntu on PC.
-  - [Install Ubuntu desktop](https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview)
+  - [Install Ubuntu desktop](https://www.ubuntu.com/download/desktop/install-ubuntu-desktop)
 
 ### [Install ROS 1 on Remote PC](#install-ros-1-on-remote-pc)
 
@@ -34,14 +35,7 @@ If the above installation fails, please refer to [the official ROS1 Noetic insta
 ### [Install Dependent ROS 1 Packages](#install-dependent-ros-1-packages)
 
 ```bash
-$ sudo apt-get install ros-noetic-joy ros-noetic-teleop-twist-joy \
-  ros-noetic-teleop-twist-keyboard ros-noetic-laser-proc \
-  ros-noetic-rgbd-launch ros-noetic-rosserial-arduino \
-  ros-noetic-rosserial-python ros-noetic-rosserial-client \
-  ros-noetic-rosserial-msgs ros-noetic-amcl ros-noetic-map-server \
-  ros-noetic-move-base ros-noetic-urdf ros-noetic-xacro \
-  ros-noetic-compressed-image-transport ros-noetic-rqt-image-view \
-  ros-noetic-gmapping ros-noetic-navigation ros-noetic-interactive-markers
+$ sudo apt-get install ros-noetic-joy ros-noetic-teleop-twist-joy ros-noetic-teleop-twist-keyboard ros-noetic-laser-proc ros-noetic-rgbd-launch ros-noetic-depthimage-to-laserscan ros-noetic-rosserial-arduino ros-noetic-rosserial-python ros-noetic-rosserial-server ros-noetic-rosserial-client ros-noetic-rosserial-msgs ros-noetic-amcl ros-noetic-map-server ros-noetic-move-base ros-noetic-urdf ros-noetic-xacro  ros-noetic-compressed-image-transport ros-noetic-rqt-image-view ros-noetic-gmapping ros-noetic-navigation ros-noetic-interactive-markers
 ```
 
 ### [Install TurtleBot3 Packages](#install-turtlebot3-packages)
