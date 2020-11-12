@@ -13,7 +13,7 @@
 {% capture notice_01 %}
 **NOTE**:
 
-- This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame` and on `Windows 10` with `ROS Melodic Morenia`
+- This instructions were tested on `Ubuntu 20.04` and `ROS Noetic Ninjemys` and on `Windows 10` with `ROS Melodic Morenia`
 - This instructions are supposed to be running on the remote PC. Please run the instructions below on your **Remote PC**.
 - The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. The shortcut key for running the terminal is `Ctrl`-`Alt`-`T`.
 - Make sure to run the [Bringu
@@ -97,10 +97,7 @@ $ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
 **TIP**: When you run the above command, the visualization tool RViz is also executed. If you want to run RViz separately, use one of the following commands.
 
 - \$ rviz -d \`rospack find turtlebot3_slam\`/rviz/turtlebot3_gmapping.rviz
-- \$ rviz -d \`rospack find turtlebot3_slam\`/rviz/turtlebot3_cartographer.rviz
-- \$ rviz -d \`rospack find turtlebot3_slam\`/rviz/turtlebot3_hector.rviz
 - \$ rviz -d \`rospack find turtlebot3_slam\`/rviz/turtlebot3_karto.rviz
-- \$ rviz -d \`rospack find turtlebot3_slam\`/rviz/turtlebot3_frontier_exploration.rviz
 
 {% endcapture %}
 
@@ -109,8 +106,8 @@ $ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
 {% capture notice_03 %}
 **NOTE**: Support for various SLAM methods
 
-- TurtleBot3 supports Gmapping, Cartographer, Hector, and Karto among various SLAM methods. You can do this by changing the `slam_methods:=xxxxx` option.
-- The `slam_methods` options include `gmapping`, `cartographer`, `hector`, `karto`, `frontier_exploration`, and you can choose one of them.
+- TurtleBot3 supports Gmapping, and Karto among various SLAM methods. You can do this by changing the `slam_methods:=xxxxx` option.
+- The `slam_methods` options include `gmapping`, `karto`, and you can choose one of them.
 - For Windows 10, Google Cartographer has been enabled. OpenKarto is coming soon.
 - For example, to use Karto, you can use the following:
 - \$ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=karto
@@ -123,67 +120,14 @@ $ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
 - For `Gmapping`:
   - Packages related to Gmapping have already been installed on [PC Setup](/docs/en/platform/turtlebot3/pc_setup/#install-dependent-ros-packages) page.
   - Gmapping has not been enabled on Windows
-- For `Cartographer`:
-  - Ubuntu
-    ```bash
-    $ sudo apt-get install ros-kinetic-cartographer ros-kinetic-cartographer-ros ros-kinetic-cartographer-ros-msgs ros-kinetic-cartographer-rviz
-    ```
-  - Windows
-    ```bash
-    > choco upgrade ros-melodic-cartographer_ros -y
-    ```
-- For `Hector Mapping`:
-  - Hector Mapping has not been enabled on Windows
-  ```bash
-  $ sudo apt-get install ros-kinetic-hector-mapping
-  ```
 - For `Karto`:
   - Coming soon on Windows
   ```bash
-  $ sudo apt-get install ros-kinetic-slam-karto
+  $ sudo apt-get install ros-noetic-slam-karto
   ```
-- For `Frontier Exploration`:
-  - Frontier Exploration uses gmapping, and the following packages should be installed.
-  - Frontier Exploration has not been enabled on Windows
-  ```bash
-  $ sudo apt-get install ros-kinetic-frontier-exploration ros-kinetic-navigation-stage
-  ```
-  {% endcapture %}
-  <div class="notice--info">{{ notice_04 | markdownify }}</div>
-
-{% capture cartographer_tip %}
-**TIP**: We tested on cartographer version 0.3.0. The Cartographer package developed by Google supports 0.3.0 version in ROS Melodic, but 0.2.0 version in ROS Kinetic. So if you need to work on ROS Kinetic, instead of downloading the binaries files, you should download and build the source code as follows. Please refer to [official wiki page](https://google-cartographer-ros.readthedocs.io/en/latest/#building-installation) for more detailed installation instructions.
-
-**on Ubuntu**
-
-```sh
-$ sudo apt-get install ninja-build libceres-dev libprotobuf-dev protobuf-compiler libprotoc-dev
-$ cd ~/catkin_ws/src
-$ git clone https://github.com/googlecartographer/cartographer.git
-$ git clone https://github.com/googlecartographer/cartographer_ros.git
-$ cd ~/catkin_ws
-$ src/cartographer/scripts/install_proto3.sh
-$ rm -rf protobuf/
-$ rosdep install --from-paths src --ignore-src -r -y --os=ubuntu:xenial
-$ catkin_make_isolated --install --use-ninja
-```
-
-```sh
-$ source ~/catkin_ws/install_isolated/setup.bash
-$ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=cartographer
-```
-
-**Windows**
-
-```sh
-> c:\ws\turtlebot3\devel\setup.bat
-> set TURTLEBOT3_MODEL=waffle
-> roslaunch turtlebot3_gazebo turtlebot3_gazebo_cartographer_demo.launch
-```
-
 {% endcapture %}
+<div class="notice--info">{{ notice_04 | markdownify }}</div>
 
-<div class="notice--success">{{ cartographer_tip | markdownify }}</div>
 
 ## [Run Teleoperation Node](#run-teleoperation-node)
 
@@ -309,17 +253,6 @@ The figure below shows the result of creating a large map using TurtleBot3. It t
 
   - [ROS WIKI](http://wiki.ros.org/gmapping), [Github](https://github.com/ros-perception/slam_gmapping)
 
-- cartographer
-
-  - [ROS WIKI](http://wiki.ros.org/cartographer), [Github](https://github.com/googlecartographer/cartographer)
-
-- hector
-
-  - [ROS WIKI](http://wiki.ros.org/hector_slam), [Github](https://github.com/tu-darmstadt-ros-pkg/hector_slam)
-
 - karto
 
   - [ROS WIKI](http://wiki.ros.org/slam_karto), [Github](https://github.com/ros-perception/slam_karto)
-
-- frontier_exploration
-  - [ROS WIKI](http://wiki.ros.org/frontier_exploration), [Github](https://github.com/paulbovbel/frontier_exploration)
