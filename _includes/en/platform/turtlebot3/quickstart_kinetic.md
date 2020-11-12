@@ -74,6 +74,17 @@ $ echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 ```
 </details>
 
+### [Set TurtleBot3 Model Name](#set-turtlebot3-model-name)
+Set the default `TURTLEBOT3_MODEL` name to your model. Enter the below command to a terminal.  
+- In case of TurtleBot3 Burger
+  ```bash
+$ echo "export TURTLEBOT3_MODEL=burger" >> ~/.bashrc
+  ```
+- In case of TurtleBot3 Waffle Pi
+  ```bash
+$ echo "export TURTLEBOT3_MODEL=waffle_pi" >> ~/.bashrc
+  ```
+
 ### [Network Configuration](#network-configuration)
 
 ![](/assets/images/platform/turtlebot3/software/network_configuration.png)

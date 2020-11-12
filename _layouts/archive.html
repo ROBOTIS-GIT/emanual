@@ -41,9 +41,12 @@ layout: default
     <button class="tab" >{{ page.ros2 }}</button>
     </div> -->
     <div id="tabs">
-    <button data-tab-name="{{ page.tab_title1 }}" class="tab" onClick="tab_handler(this)">{{ page.tab_title1 }}</button> <!-- on click시 default.html로 인자 전달후 함수 실행. -->
-    <button data-tab-name="{{ page.tab_title2 }}" class="tab" onClick="tab_handler(this)">{{ page.tab_title2 }}</button>
-    <button data-tab-name="{{ page.tab_title3 }}" class="tab" onClick="tab_handler(this)">{{ page.tab_title3 }}</button>
+    {% if page.tab_title1==null %}{% else %}<button data-tab-name="{{ page.tab_title1 }}" class="tab" onClick="tab_handler(this)">{{ page.tab_title1 }}</button>{% endif %} <!-- on click시 default.html로 인자 전달후 함수 실행. -->
+    {% if page.tab_title2==null %}{% else %}<button data-tab-name="{{ page.tab_title2 }}" class="tab" onClick="tab_handler(this)">{{ page.tab_title2 }}</button>{% endif %}
+    {% if page.tab_title3==null %}{% else %}<button data-tab-name="{{ page.tab_title3 }}" class="tab" onClick="tab_handler(this)">{{ page.tab_title3 }}</button>{% endif %}
+    {% if page.tab_title4==null %}{% else %}<button data-tab-name="{{ page.tab_title4 }}" class="tab" onClick="tab_handler(this)">{{ page.tab_title4 }}</button>{% endif %}
+    {% if page.tab_title5==null %}{% else %}<button data-tab-name="{{ page.tab_title5 }}" class="tab" onClick="tab_handler(this)">{{ page.tab_title5 }}</button>{% endif %}
+    {% if page.tab_title6==null %}{% else %}<button data-tab-name="{{ page.tab_title6 }}" class="tab" onClick="tab_handler(this)">{{ page.tab_title6 }}</button>{% endif %}
     </div>
     {% endif %}
     

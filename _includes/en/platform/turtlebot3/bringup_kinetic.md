@@ -75,58 +75,15 @@ $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
     [INFO] [1531306698.953226]: Calibration End
   ```
 
-{% capture bringup_tip_01 %}
-**TIP**: If you want to launch Lidar sensor, Raspberry Pi Camera, Intel® RealSense™ R200 or core separately, please use below commands.
+### [Load TurtleBot3 on Rviz](#load-turtlebot3-on-rviz)
 
-- \$ roslaunch turtlebot3_bringup turtlebot3_lidar.launch
-- \$ roslaunch turtlebot3_bringup turtlebot3_rpicamera.launch
-- \$ roslaunch turtlebot3_bringup turtlebot3_realsense.launch
-- \$ roslaunch turtlebot3_bringup turtlebot3_core.launch
-  {% endcapture %}
-
-<div class="notice--info">{{ bringup_tip_01 | markdownify }}</div>
-
-**NOTE**: If `lost sync with device` error message is displayed on the terminal window, the sensor device of TurtleBot3 might not be securely connected.
-{: .notice--info}
-
-### [Load a TurtleBot3 on Rviz](#load-a-turtlebot3-on-rviz)
-
-**[Remote PC]** Launch robot state publisher and Run RViz.
-
-**TIP**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `burger`, `waffle`, `waffle_pi`. If you want to permanently set the export settings, please refer to [Export TURTLEBOT3_MODEL][export_turtlebot3_model]{: .popup} page.
-{: .notice--success}
-
-#### [on Ubuntu](#on-ubuntu)
-
-```bash
-$ export TURTLEBOT3_MODEL=${TB3_MODEL}
+1. Open a new terminal and launch the robot state publisher.  
+  ```bash
 $ roslaunch turtlebot3_bringup turtlebot3_remote.launch
-```
+  ```
 
-Open a new terminal window and enter the below command.
-
-```bash
+2. Open a new terminal and enter the below command to run RViz.  
+  ```bash
 $ rosrun rviz rviz -d `rospack find turtlebot3_description`/rviz/model.rviz
-```
-
-#### [on Windows](#on-windows)
-
-```bash
-> set TURTLEBOT3_MODEL=${TB3_MODEL}
-> roslaunch turtlebot3_bringup turtlebot3_remote.launch
-```
-
-Open a new ROS command window and enter the below command.
-
-```bash
-> rosrun rviz rviz -d "<full path to turtlebot3_description>/rviz/model.rviz"
-```
-
-![](/assets/images/platform/turtlebot3/bringup/run_rviz.jpg)
-
-In the next chapter, you will be able to test TurtleBot3 with various teleoperation methods and run various applications.
-
-[intel_realsense]: /docs/en/platform/turtlebot3/appendix_realsense/#installation
-[raspberry_pi_camera]: /docs/en/platform/turtlebot3/appendix_raspi_cam/#installation
-[raspbian]: /docs/en/platform/turtlebot3/raspberry_pi_3_setup/#install-linux-based-on-raspbian
-[export_turtlebot3_model]: /docs/en/platform/turtlebot3/export_turtlebot3_model
+  ```  
+  ![](/assets/images/platform/turtlebot3/bringup/run_rviz.jpg)

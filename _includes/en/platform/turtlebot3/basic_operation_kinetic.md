@@ -1,26 +1,3 @@
----
-layout: archive
-lang: en
-ref: basic_operation
-read_time: true
-share: true
-author_profile: false
-permalink: /docs/en/platform/turtlebot3/basic_operation/
-tabs: "ROS"
-tab_title1: Kinetic
-tab_title2: Melodic
-tab_title3: Noetic
-tab_title4: Foxy
-tab_title5: Windows
-sidebar:
-  title: TurtleBot3
-  nav: "turtlebot3"
-product_group: turtlebot3
-page_number: 12
----
-
-<div style="counter-reset: h1 3"></div>
-<div style="counter-reset: h2 5"></div>
 
 ## [[ROS 1] Basic Operation](#ros-1-basic-operation)
 
