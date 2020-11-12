@@ -16978,7 +16978,7 @@ turtlebot3:
       - title: "Patrol"
         url: /platform/turtlebot3/basic_examples/#patrol
   - title: "SLAM"
-    url: /platform/turtlebot3/slam/#ros-1-slam
+    url: /platform/turtlebot3/slam/#slam
     children:
     - title: "Run SLAM Nodes"
       url: /platform/turtlebot3/slam/#run-slam-nodes
@@ -16993,7 +16993,7 @@ turtlebot3:
     - title: "References"
       url: /platform/turtlebot3/slam/#references
   - title: "Navigation"
-    url: /platform/turtlebot3/navigation/#ros-1-navigation
+    url: /platform/turtlebot3/navigation/#navigation
     children:
     - title: "Run Navigation Nodes"
       url: /platform/turtlebot3/navigation/#run-navigation-nodes
@@ -17006,7 +17006,7 @@ turtlebot3:
     - title: "References"
       url: /platform/turtlebot3/navigation/#references
   - title: "Simulation"
-    url: /platform/turtlebot3/simulation/#ros-1-simulation
+    url: /platform/turtlebot3/simulation/#simulation
     children:
     - title: "TurtleBot3 Fake Node"
       url: /platform/turtlebot3/simulation/#turtlebot3-simulation-using-fake-node
@@ -17051,7 +17051,7 @@ turtlebot3:
       - title: "Simulation"
         url: /platform/turtlebot3/home_service_challenge/#simulation
   - title: "Autonomous Driving"
-    url: /platform/turtlebot3/autonomous_driving/#ros-1-autonomous-driving
+    url: /platform/turtlebot3/autonomous_driving/#autonomous-driving
     children: 
     - title: "Getting Started"
       url: /platform/turtlebot3/autonomous_driving/#getting-started
