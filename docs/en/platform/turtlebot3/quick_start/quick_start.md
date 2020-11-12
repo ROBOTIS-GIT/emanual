@@ -39,6 +39,10 @@ page_number: 6
 {% include en/platform/turtlebot3/quickstart_foxy.md %}
 </section>
 
+<section id="{{ page.tab_title5 }}" class="tab_contents">
+{% include en/platform/turtlebot3/quickstart_windows.md %}
+</section>
+
 <!--
 
 Log:

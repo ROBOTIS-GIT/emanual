@@ -16933,10 +16933,8 @@ turtlebot3:
   - title: "Overview"
     url: /platform/turtlebot3/overview/#overview
     children:
-    - title: "TurtleBot3"
-      url: /platform/turtlebot3/overview/#turtlebot3
     - title: "Notices"
-      url: /platform/turtlebot3/notices/#notices
+      url: /platform/turtlebot3/overview/#notices
     - title: "Events"
       url: /platform/turtlebot3/challenges/#events
       children:
@@ -16950,14 +16948,14 @@ turtlebot3:
     url: /platform/turtlebot3/features/#features
     children:
     - title: "Specifications"
-      url: /platform/turtlebot3/specifications/#specifications
+      url: /platform/turtlebot3/features/#specifications
     - title: "Components"
-      url: /platform/turtlebot3/specifications/#components
+      url: /platform/turtlebot3/features/#components
   - title: "Quick Start"
     url: /platform/turtlebot3/quick-start/
     children:
     - title: "PC Setup"
-      url: /platform/turtlebot3/pc_setup/#pc-setup
+      url: /platform/turtlebot3/quick-start/#pc-setup
     - title: "SBC Setup"
       url: /platform/turtlebot3/sbc_setup/#sbc-setup
     - title: "OpenCR Setup"

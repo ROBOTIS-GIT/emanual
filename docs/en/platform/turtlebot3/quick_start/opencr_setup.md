@@ -6,6 +6,11 @@ read_time: true
 share: true
 author_profile: false
 permalink: /docs/en/platform/turtlebot3/opencr_setup/
+tabs: "ROS"
+tab_title1: Kinetic
+tab_title2: Melodic
+tab_title3: Noetic
+tab_title4: Foxy
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
@@ -16,121 +21,20 @@ page_number: 8
 <div style="counter-reset: h1 3"></div>
 <div style="counter-reset: h2 2"></div>
 
-## [OpenCR Setup](#opencr-setup)
+{::options parse_block_html="true" /}
 
-1. Connect the OpenCR to the Rasbperry Pi using the micro USB cable.
+<section id="{{ page.tab_title1 }}" class="tab_contents">
+{% include en/platform/turtlebot3/opencr_setup_kinetic.md %}
+</section>
 
-2. Install required packages on the Raspberry Pi to upload the OpenCR firmware.
-  ```bash
-$ sudo dpkg --add-architecture armhf
-$ sudo apt-get update
-$ sudo apt-get install libc6:armhf
-  ```
+<section id="{{ page.tab_title2 }}" class="tab_contents">
+{% include en/platform/turtlebot3/opencr_setup_melodic.md %}
+</section>
 
-3. Depending on the platform, use either `burger` or `waffle` for the **OPENCR_MODEL** name.
-  ```bash
-$ export OPENCR_PORT=/dev/ttyACM0
-$ export OPENCR_MODEL=burger
-$ rm -rf ./opencr_update.tar.bz2
-$ wget https://github.com/ROBOTIS-GIT/OpenCR-Binaries/raw/master/turtlebot3/ROS1/latest/opencr_update.tar.bz2 
-$ tar -xvf opencr_update.tar.bz2 
-$ cd ./opencr_update 
-$ ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr
-  ```  
+<section id="{{ page.tab_title3 }}" class="tab_contents">
+{% include en/platform/turtlebot3/opencr_setup_noetic.md %}
+</section>
 
-4. A successful firmware upload for TurtleBot3 Burger will look like below.  
-  ![](/assets/images/platform/turtlebot3/opencr/shell01.png)
-
-5. If firmware upload fails, try uploading with the recovery mode. Below sequence activates the recovery mode of OpenCR.
-  - Hold down the `PUSH SW2` button.
-  - Press the `Reset` button.
-  - Release the `Reset` button.
-  - Release the `PUSH SW2` button.
-  ![](/assets/images/parts/controller/opencr10/bootloader_19.png)
-
-#### [(Recommended) Shell Script](#recommended-shell-script)
-
-**NOTE**: For Windows developers, please use the [alternative Arduino IDE](#alternative-arduino-ide) firmware upload method.
-{: .notice}
-
-This instruction was tested on `Ubuntu 16.04`, `Ubuntu Mate`, `Linux Mint` and `Raspbian`. You can use the following command after connecting OpenCR to remote PC (your desktop or laptop PC) or connect OpenCR to your TurtleBot PC (`Intel® Joule™`, `Raspberry Pi 3`) and execute the following command.
-
-Please make sure that `libc6:armhf` is installed to run the OpenCR firmware updater on the Raspberry Pi.
-
-```bash
-$ sudo dpkg --add-architecture armhf
-$ sudo apt-get update
-$ sudo apt-get install libc6:armhf
-```
-
-- TurtleBot3 Burger
-
-  ```bash
-  $ export OPENCR_PORT=/dev/ttyACM0
-  $ export OPENCR_MODEL=burger
-  $ rm -rf ./opencr_update.tar.bz2
-  $ wget https://github.com/ROBOTIS-GIT/OpenCR-Binaries/raw/master/turtlebot3/ROS1/latest/opencr_update.tar.bz2 && tar -xvf opencr_update.tar.bz2 && cd ./opencr_update && ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr && cd ..
-  ```
-
-  ![](/assets/images/platform/turtlebot3/opencr/shell01.png)
-
-When firmware upload is completed, `jump_to_fw` text string will be printed on the terminal.
-
-- TurtleBot3 Waffle or Waffle Pi
-
-  ```bash
-  $ export OPENCR_PORT=/dev/ttyACM0
-  $ export OPENCR_MODEL=waffle
-  $ rm -rf ./opencr_update.tar.bz2
-  $ wget https://github.com/ROBOTIS-GIT/OpenCR-Binaries/raw/master/turtlebot3/ROS1/latest/opencr_update.tar.bz2 && tar -xvf opencr_update.tar.bz2 && cd ./opencr_update && ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr && cd ..
-  ```
-
-  ![](/assets/images/platform/turtlebot3/opencr/shell02.png)
-
-When firmware upload is completed, `jump_to_fw` text string will be printed on the terminal.
-
-#### [(Alternative) Arduino IDE](#alternative-arduino-ide)
-
-**WARNING**: The contents in this chapter corresponds to the `Remote PC` (your desktop or laptop PC) which will control TurtleBot3. Do **NOT** apply this instruction to your TurtleBot3.
-{: .notice--warning}
-
-Before you following step, please setup Arduino IDE on your remote PC.
-
-- [Install Arduino IDE for OpenCR][install_arduino_ide_for_opencr]
-
-The OpenCR firmware for TurtleBot3 performs the task of controlling DYNAMIXEL or acquiring and transmitting the data of the sensors. The firmware is located in OpenCR example which is downloaded by the board manager.
-
-If you have TurtleBot3 Burger,
-
-**[Remote PC]** Go to `File` → `Examples` → `turtlebot3` → `turtlebot3_burger` → `turtlebot3_core`.
-
-If you have TurtleBot3 Waffle or Waffle Pi,
-
-**[Remote PC]** Go to `File` → `Examples` → `turtlebot3` → `turtlebot3_waffle` → `turtlebot3_core`.
-
-![](/assets/images/platform/turtlebot3/opencr/o1.png)
-
-**[Remote PC]** Click `Upload` button to upload the firmware to OpenCR.
-
-![](/assets/images/platform/turtlebot3/opencr/o2.png)
-
-![](/assets/images/platform/turtlebot3/opencr/o3.png)
-
-**NOTE**: If error occurs while uploading firmware, go to `Tools` → `Port` and check if correct port is selected. Press `Reset` button on the OpenCR and try to upload the firmware again.
-{: .notice--info}
-
-**[Remote PC]** When firmware upload is completed, `jump_to_fw` text string will be printed on the screen.
-
-### [Basic Operation](#basic-operation)
-
-![](/assets/images/platform/turtlebot3/opencr/opencr_models.png)
-
-You can use `PUSH SW 1` and `PUSH SW 2` buttons to see whether your robot has been properly assembled. This process tests the left and right DYNAMIXEL's and the OpenCR board.
-
-1. After assembling TurtleBot3, connect the battery to OpenCR and turn on the power switch. You can see that the `Power LED` of OpenCR turns on.
-2. Place the robot on the floor. For the test, safety radius of 1 meter (about 40 inches) is recommended.
-3. Press and hold `PUSH SW 1` for a few seconds to command the robot to move 30 centimeters (about 12 inches) forward.
-4. Press and hold `PUSH SW 2` for a few seconds to command the robot to rotate 180 degrees in place.
-
-[opencr]: /docs/en/parts/controller/opencr10/
-[install_arduino_ide_for_opencr]: /docs/en/parts/controller/opencr10/#arduino-ide
+<section id="{{ page.tab_title4 }}" class="tab_contents">
+{% include en/platform/turtlebot3/opencr_setup_foxy.md %}
+</section>

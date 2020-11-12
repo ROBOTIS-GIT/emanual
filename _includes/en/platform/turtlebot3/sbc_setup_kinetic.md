@@ -59,8 +59,8 @@ Intel Joule is discontinued in 2017, and additional support is unavailable.
 3. Connect the power (either with USB or OpenCR) to turn on the Raspberry Pi.
 
 ### Configure the Raspberry Pi
-1. After Raspbian OS is up and running, find the WiFi network that is connected with the PC.
-2. Find the assigned IP address for Raspberry Pi with the command below.
+1. After Raspbian OS is up and running, connect to the WiFi network that is connected with the PC.
+2. Find the assigned IP address for Raspberry Pi with the command below. Usually wireless IP address for Raspberry Pi can be found under the `wlan0` section.
   ```bash
 $ ifconfig
   ```
@@ -83,7 +83,7 @@ $ sudo raspi-config
   ```bash
 $ nano ~/.bashrc
   ```
-8. Go to the end of file with `Ctrl`+`END` or `Alt`+`/`, then modify the `ROS_MASTER_URI` and the `ROS_HOSTNAME`.
+8. Go to the end of file with `Ctrl`+`END` or `Alt`+`/`, then modify the IP adddresses of `ROS_MASTER_URI` and the `ROS_HOSTNAME`.
   ```bash
 export ROS_MASTER_URI=http://{IP_ADDRESS_OF_REMOTE_PC}:11311
 export ROS_HOSTNAME={IP_ADDRESS_OF_RASPBERRY_PI_3}

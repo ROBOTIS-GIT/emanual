@@ -38,3 +38,7 @@ page_number: 7
 <section id="{{ page.tab_title4 }}" class="tab_contents">
 {% include en/platform/turtlebot3/sbc_setup_foxy.md %}
 </section>
+
+<section id="{{ page.tab_title5 }}" class="tab_contents">
+{% include en/platform/turtlebot3/sbc_setup_windows.md %}
+</section>

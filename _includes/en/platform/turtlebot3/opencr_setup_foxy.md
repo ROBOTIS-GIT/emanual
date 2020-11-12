@@ -1,20 +1,3 @@
----
-layout: archive
-lang: en
-ref: opencr_setup
-read_time: true
-share: true
-author_profile: false
-permalink: /docs/en/platform/turtlebot3/opencr_setup/
-sidebar:
-  title: TurtleBot3
-  nav: "turtlebot3"
-product_group: turtlebot3
-page_number: 8
----
-
-<div style="counter-reset: h1 3"></div>
-<div style="counter-reset: h2 2"></div>
 
 ## [OpenCR Setup](#opencr-setup)
 
