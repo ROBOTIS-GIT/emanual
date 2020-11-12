@@ -8,8 +8,8 @@ author_profile: false
 permalink: /docs/en/platform/turtlebot3/bringup/
 tabs: "ROS"
 tab_title1: Kinetic
-tab_title2: Melodic
-tab_title3: Noetic
+tab_title2: Noetic
+tab_title3: Dashing
 tab_title4: Foxy
 tab_title5: Windows
 sidebar:
@@ -28,11 +28,11 @@ page_number: 10
 </section>
 
 <section id="{{ page.tab_title2 }}" class="tab_contents">
-{% include en/platform/turtlebot3/bringup_melodic.md %}
+{% include en/platform/turtlebot3/bringup_noetic.md %}
 </section>
 
 <section id="{{ page.tab_title3 }}" class="tab_contents">
-{% include en/platform/turtlebot3/bringup_noetic.md %}
+{% include en/platform/turtlebot3/bringup_dashing.md %}
 </section>
 
 <section id="{{ page.tab_title4 }}" class="tab_contents">
