@@ -8,14 +8,15 @@ author_profile: false
 permalink: /docs/en/platform/turtlebot3/quick-start/
 tabs: "ROS"
 tab_title1: Kinetic
-tab_title2: Melodic
-tab_title3: Noetic
+tab_title2: Noetic
+tab_title3: Dashing
 tab_title4: Foxy
+tab_title5: Windows
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 6
+page_number: 4
 ---
 
 <div style="counter-reset: h1 2"></div>
@@ -28,11 +29,11 @@ page_number: 6
 </section>
 
 <section id="{{ page.tab_title2 }}" class="tab_contents">
-{% include en/platform/turtlebot3/quickstart_melodic.md %}
+{% include en/platform/turtlebot3/quickstart_noetic.md %}
 </section>
 
 <section id="{{ page.tab_title3 }}" class="tab_contents">
-{% include en/platform/turtlebot3/quickstart_noetic.md %}
+{% include en/platform/turtlebot3/quickstart_dashing.md %}
 </section>
 
 <section id="{{ page.tab_title4 }}" class="tab_contents">
@@ -42,6 +43,7 @@ page_number: 6
 <section id="{{ page.tab_title5 }}" class="tab_contents">
 {% include en/platform/turtlebot3/quickstart_windows.md %}
 </section>
+
 
 <!--
 

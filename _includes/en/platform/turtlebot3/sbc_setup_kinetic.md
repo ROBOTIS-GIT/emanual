@@ -2,8 +2,6 @@
 <div style="counter-reset: h1 3"></div>
 <div style="counter-reset: h2 1"></div>
 
-{::options parse_block_html="true" /}
-
 ## [SBC Setup](#sbc-setup)
 
 {% capture warning_01 %}
@@ -19,14 +17,15 @@
   - [Download TurtleBot3 Raspbian image for Raspberry Pi 3B+](http://www.robotis.com/service/download.php?no=1738)
 2. Unzip the downloaded image.
 3. Burn the image to the microSD card.
-  - Use `Restore Disk Image` option in the `Disks` utility in Ubuntu or install the [etcher.io](https://etcher.io/).
+  - Use `Restore Disk Image` option in the `Disks` utility in Ubuntu.
   - Run the utility and select the restore image, then burn to the selected micro SD card.
 <details>
 <summary id="summary_for_foreins" style="outline: inherit;">
 ![](/assets/click_here.png) Click here to expand more details about other micro SD card burning methods
 {: .notice--success}
 </summary>
-You can use 'dd' command in Linux or use application 'win32 Disk Imager' in Windows. For a complete guide, refer to the instruction for [Linux](https://elinux.org/RPi_Easy_SD_Card_Setup#Using_the_Linux_command_line) or [Windows](https://elinux.org/RPi_Easy_SD_Card_Setup#Using_the_Win32DiskImager_program).
+- You can use the [etcher.io](https://etcher.io/)
+- You can also use 'dd' command in Linux or use application 'win32 Disk Imager' in Windows. For a complete guide, refer to the instruction for [Linux](https://elinux.org/RPi_Easy_SD_Card_Setup#Using_the_Linux_command_line) or [Windows](https://elinux.org/RPi_Easy_SD_Card_Setup#Using_the_Win32DiskImager_program).
 </details>
 
 <details>
@@ -56,7 +55,8 @@ Intel Joule is discontinued in 2017, and additional support is unavailable.
 ### Boot Up the Raspberry Pi
 1. Connect the HDMI cable of the monitor to the HDMI port of Raspberry Pi.
 2. Connect input devices to the USB port of Raspberry Pi
-3. Connect the power (either with USB or OpenCR) to turn on the Raspberry Pi.
+3. Insert the microSD card.
+4. Connect the power (either with USB or OpenCR) to turn on the Raspberry Pi.
 
 ### Configure the Raspberry Pi
 1. After Raspbian OS is up and running, connect to the WiFi network that is connected with the PC.

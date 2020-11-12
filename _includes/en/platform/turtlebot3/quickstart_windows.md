@@ -1,4 +1,3 @@
-{::options parse_block_html="true" /}
 
 # Quick Start Guide
 
@@ -14,7 +13,7 @@
 
 If you do not already have `Windows 10` on your Remote PC (Desktop, Laptop or SBC), you can download a trial of Windows 10 IoT Enterprise from the following link:
 
-- [Download Windows 10 IoT Enterprise(Trial)][windows_download_link]
+- [Download Windows 10 IoT Enterprise(Trial)](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-10-enterprise)
 
 ### [Setup TurtleBot3 Workspace](#setup-turtlebot3-workspace)
 

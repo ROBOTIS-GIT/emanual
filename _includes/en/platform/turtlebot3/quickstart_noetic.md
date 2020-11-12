@@ -1,4 +1,3 @@
-{::options parse_block_html="true" /}
 
 # Quick Start Guide
 
@@ -16,7 +15,7 @@
   - [Ubuntu 20.04 LTS Desktop image (64-bit)](hhttps://releases.ubuntu.com/20.04/ubuntu-20.04.1-desktop-amd64.iso)
 
 2. Follow the instruction below to install Ubuntu on PC.
-  - [Install Ubuntu desktop](https://www.ubuntu.com/download/desktop/install-ubuntu-desktop)
+  - [Install Ubuntu desktop](https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview)
 
 ### [Install ROS 1 on Remote PC](#install-ros-1-on-remote-pc)
 

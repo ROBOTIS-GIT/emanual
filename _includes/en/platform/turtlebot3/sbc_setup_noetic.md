@@ -2,8 +2,6 @@
 <div style="counter-reset: h1 3"></div>
 <div style="counter-reset: h2 1"></div>
 
-{::options parse_block_html="true" /}
-
 ## [SBC Setup](#sbc-setup)
 
 **WARNING**: This SBC Setup section involves with Raspberry Pi 3B+. For Intel Joule 570x SBC, please refer to the [Intel Joule 570x Setup](/docs/en/platform/turtlebot3/joule_setup/#install-linux-ubuntu) manual.

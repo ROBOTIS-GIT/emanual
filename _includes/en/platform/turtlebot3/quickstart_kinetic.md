@@ -1,4 +1,3 @@
-{::options parse_block_html="true" /}
 
 # Quick Start Guide
 
@@ -17,7 +16,7 @@
   - [Ubuntu 16.04 LTS Desktop image (32-bit)](https://releases.ubuntu.com/16.04.7/ubuntu-16.04.6-desktop-i386.iso)
 
 2. Follow the instruction below to install Ubuntu on PC.
-  - [Install Ubuntu desktop](https://www.ubuntu.com/download/desktop/install-ubuntu-desktop)
+  - [Install Ubuntu desktop](https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview)
 
 ### [Install ROS 1 on Remote PC](#install-ros-1-on-remote-pc)
 

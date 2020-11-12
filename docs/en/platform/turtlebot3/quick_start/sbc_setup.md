@@ -8,9 +8,10 @@ author_profile: false
 permalink: /docs/en/platform/turtlebot3/sbc_setup/
 tabs: "ROS"
 tab_title1: Kinetic
-tab_title2: Melodic
-tab_title3: Noetic
+tab_title2: Noetic
+tab_title3: Dashing
 tab_title4: Foxy
+tab_title5: Windows
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
@@ -28,11 +29,11 @@ page_number: 7
 </section>
 
 <section id="{{ page.tab_title2 }}" class="tab_contents">
-{% include en/platform/turtlebot3/sbc_setup_melodic.md %}
+{% include en/platform/turtlebot3/sbc_setup_noetic.md %}
 </section>
 
 <section id="{{ page.tab_title3 }}" class="tab_contents">
-{% include en/platform/turtlebot3/sbc_setup_noetic.md %}
+{% include en/platform/turtlebot3/sbc_setup_dashing.md %}
 </section>
 
 <section id="{{ page.tab_title4 }}" class="tab_contents">
