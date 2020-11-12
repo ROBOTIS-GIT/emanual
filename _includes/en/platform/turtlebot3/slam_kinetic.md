@@ -5,15 +5,13 @@
   <h1 id="basic-operation"><a href="#basic-operation">Basic Operation</a></h1>
 <![end dummy Header 1]-->
 
-# [[ROS 1] SLAM](#ros-1-slam)
+# [SLAM](#slam)
 
 **WARNING**: Be careful when running the robot on the table as the robot might fall.
 {: .notice--warning}
 
 {% capture notice_01 %}
 **NOTE**:
-
-- This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame` and on `Windows 10` with `ROS Melodic Morenia`
 - This instructions are supposed to be running on the remote PC. Please run the instructions below on your **Remote PC**.
 - The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. The shortcut key for running the terminal is `Ctrl`-`Alt`-`T`.
 - Make sure to run the [Bringu

@@ -1,27 +1,4 @@
----
-layout: archive
-lang: en
-ref: navigation
-read_time: true
-share: true
-author_profile: false
-permalink: /docs/en/platform/turtlebot3/navigation/
-tabs: "ROS"
-tab_title1: Kinetic
-tab_title2: Noetic
-tab_title3: Dashing
-tab_title4: Foxy
-tab_title5: Windows
-sidebar:
-  title: TurtleBot3
-  nav: "turtlebot3"
-product_group: turtlebot3
-page_number: 15
----
-
-<div style="counter-reset: h1 4"></div>
-
-# [[ROS 1] Navigation](#ros1-navigation)
+# [Navigation](#navigation)
 
 **WARNING**: Be careful when running the robot on the table as the robot might fall.
 {: .notice--warning}
@@ -29,19 +6,12 @@ page_number: 15
 {% capture notice_01 %}
 **NOTE**:
 
-- This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - This instructions are supposed to be running on the remote PC. Please run the instructions below on your **Remote PC**.
 - The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. The shortcut key for running the terminal is `Ctrl`-`Alt`-`T`.
 - Make sure to run the [Bringup](/docs/en/platform/turtlebot3/bringup/#bringup) instructions before use of the instruction
 - The navigation uses the a data created in [SLAM](/docs/en/platform/turtlebot3/slam/#slam). Please make sure to have a map data.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
-
-{% capture notice_02 %}
-{% include en/platform/turtlebot3/ros_book_info.md %}
-{% endcapture %}
-
-<div class="notice--success">{{ notice_02 | markdownify }}</div>
 
 **Navigation** is to move the robot from one location to the specified destination in a given environment. For this purpose, a map that contains geometry information of furniture, objects, and walls of the given environment is required. As described in the previous [SLAM][slam] section, the map was created with the distance information obtained by the sensor and the pose information of the robot itself.
 
@@ -63,7 +33,7 @@ $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
 
 **[Remote PC]** Launch the navigation file.
 
-**TIP**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `burger`, `waffle`, `waffle_pi`. If you want to permanently set the export settings, please refer to [Export TURTLEBOT3_MODEL][export_turtlebot3_model]{: .popup} page.
+**TIP**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `burger`, `waffle`, `waffle_pi`.
 {: .notice--success}
 
 ```bash

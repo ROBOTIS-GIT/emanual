@@ -12,8 +12,6 @@
 
 {% capture notice_01 %}
 **NOTE**:
-
-- This instructions were tested on `Ubuntu 20.04` and `ROS Noetic Ninjemys` and on `Windows 10` with `ROS Melodic Morenia`
 - This instructions are supposed to be running on the remote PC. Please run the instructions below on your **Remote PC**.
 - The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. The shortcut key for running the terminal is `Ctrl`-`Alt`-`T`.
 - Make sure to run the [Bringu

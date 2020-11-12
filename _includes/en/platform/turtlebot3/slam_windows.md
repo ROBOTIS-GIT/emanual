@@ -5,19 +5,17 @@
   <h1 id="basic-operation"><a href="#basic-operation">Basic Operation</a></h1>
 <![end dummy Header 1]-->
 
-# [[ROS 1] SLAM](#ros-1-slam)
+# [SLAM](#slam)
 
 **WARNING**: Be careful when running the robot on the table as the robot might fall.
 {: .notice--warning}
 
 {% capture notice_01 %}
 **NOTE**:
-
-- This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame` and on `Windows 10` with `ROS Melodic Morenia`
+- This instructions were tested on `Windows 10` with `ROS Melodic Morenia`
 - This instructions are supposed to be running on the remote PC. Please run the instructions below on your **Remote PC**.
 - The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. The shortcut key for running the terminal is `Ctrl`-`Alt`-`T`.
-- Make sure to run the [Bringu
-.p](/docs/en/platform/turtlebot3/bringup/#bringup) instruction before use of the instruction.
+- Make sure to run the [Bringup](/docs/en/platform/turtlebot3/bringup/#bringup) instruction before use of the instruction.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -72,26 +70,13 @@ $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
 
 **[Remote PC]** Open a new terminal and launch the SLAM file.
 
-**TIP**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `burger`, `waffle`, `waffle_pi`. If you want to permanently set the export settings, please refer to [Export TURTLEBOT3_MODEL][export_turtlebot3_model]{: .popup} page.
+**TIP**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `burger`, `waffle`, `waffle_pi`.
 {: .notice--success}
-
-```bash
-$ export TURTLEBOT3_MODEL=${TB3_MODEL}
-$ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
-```
-
-{% capture slam_tip_01 %}
-**TIP**: When running these commands on `Windows 10`, replace `export TURTLEBOT3_MODEL=${TB3_MODEL}` with `set TURTLEBOT3_MODEL=${TB3_MODEL}` like this:
 
 ```bash
 > set TURTLEBOT3_MODEL=burger
 > roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
 ```
-
-{% endcapture %}
-
-<div class="notice--info">{{ slam_tip_01 | markdownify }}</div>
-{: .notice--success}
 
 {% capture slam_tip_02 %}
 **TIP**: When you run the above command, the visualization tool RViz is also executed. If you want to run RViz separately, use one of the following commands.

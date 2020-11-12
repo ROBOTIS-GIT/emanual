@@ -9,7 +9,6 @@
   
 {% capture notice_01 %}
 **NOTE**: 
-- This instructions were tested on `Ubuntu 20.04` and `ROS Foxy Fitzroy`.
 - This instructions are supposed to be running on the remote PC. Please run the instructions below on your **Remote PC**.
 - Make sure to run the [Bringup](/docs/en/platform/turtlebot3/ros2_bringup/#bringup) instruction before use of the instruction.
 {% endcapture %}

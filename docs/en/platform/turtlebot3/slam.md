@@ -40,6 +40,6 @@ page_number: 14
 {% include en/platform/turtlebot3/slam_foxy.md %}
 </section>
 
-<section id="{{ page.tab_title4 }}" class="tab_contents">
+<section id="{{ page.tab_title5 }}" class="tab_contents">
 {% include en/platform/turtlebot3/slam_windows.md %}
 </section>
