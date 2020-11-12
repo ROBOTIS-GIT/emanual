@@ -15,16 +15,24 @@ $ sudo apt-get install libc6:armhf
 $ export OPENCR_PORT=/dev/ttyACM0
 $ export OPENCR_MODEL=burger
 $ rm -rf ./opencr_update.tar.bz2
+  ```
+
+4. Download the firmware and loader, then extract the file.
+  ```bash
 $ wget https://github.com/ROBOTIS-GIT/OpenCR-Binaries/raw/master/turtlebot3/ROS1/latest/opencr_update.tar.bz2 
 $ tar -xvf opencr_update.tar.bz2 
-$ cd ./opencr_update 
+  ```
+
+5. Upload firmware to the OpenCR.
+  ```bash
+$ cd ./opencr_update
 $ ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr
   ```  
 
-4. A successful firmware upload for TurtleBot3 Burger will look like below.  
+6. A successful firmware upload for TurtleBot3 Burger will look like below.  
   ![](/assets/images/platform/turtlebot3/opencr/shell01.png)
 
-5. If firmware upload fails, try uploading with the recovery mode. Below sequence activates the recovery mode of OpenCR. Under the recovery mode, the `STATUS` led of [OpenCR] will blink periodically.
+7. If firmware upload fails, try uploading with the recovery mode. Below sequence activates the recovery mode of OpenCR. Under the recovery mode, the `STATUS` led of [OpenCR] will blink periodically.
   - Hold down the `PUSH SW2` button.
   - Press the `Reset` button.
   - Release the `Reset` button.
