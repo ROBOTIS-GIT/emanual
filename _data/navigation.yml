@@ -5591,89 +5591,89 @@ xl330-m288:
 xl430-w250-test:
   - title: "Specifications"
     titlekr: "주요 사양"
-    url: /dxl/x/xl430-w250/#specifications
-    urlkr: /dxl/x/xl430-w250/#주요-사양
+    url: /dxl/x/xl430-w250/test/#specifications
+    urlkr: /dxl/x/xl430-w250/test/#주요-사양
     children:
       - title: "Performance Graph"
         titlekr: "성능 그래프"
-        url: /dxl/x/xl430-w250/#performance-graph
-        urlkr: /dxl/x/xl430-w250/#성능-그래프
+        url: /dxl/x/xl430-w250/test/#performance-graph
+        urlkr: /dxl/x/xl430-w250/test/#성능-그래프
   - title: "Control Table"
     titlekr: "컨트롤 테이블"
-    url: /dxl/x/xl430-w250/#control-table
-    urlkr: /dxl/x/xl430-w250/#컨트롤-테이블
+    url: /dxl/x/xl430-w250/test/#control-table
+    urlkr: /dxl/x/xl430-w250/test/#컨트롤-테이블
     children:
       - title: "Control Table, Data, Address"
         titlekr: "컨트롤 테이블, 데이터, 주소"
-        url: /dxl/x/xl430-w250/#control-table-data-address
-        urlkr: /dxl/x/xl430-w250/#컨트롤-테이블-데이터-주소
+        url: /dxl/x/xl430-w250/test/#control-table-data-address
+        urlkr: /dxl/x/xl430-w250/test/#컨트롤-테이블-데이터-주소
         children:
           - title: "Area(EEPROM, RAM)"
             titlekr: "영역 (EEPROM, RAM)"
-            url: /dxl/x/xl430-w250/#area-eeprom-ram
-            urlkr: /dxl/x/xl430-w250/#영역-eeprom-ram
+            url: /dxl/x/xl430-w250/test/#area-eeprom-ram
+            urlkr: /dxl/x/xl430-w250/test/#영역-eeprom-ram
           - title: "Size"
             titlekr: "크기"
-            url: /dxl/x/xl430-w250/#size
-            urlkr: /dxl/x/xl430-w250/#크기
+            url: /dxl/x/xl430-w250/test/#size
+            urlkr: /dxl/x/xl430-w250/test/#크기
           - title: "Access"
             titlekr: "접근권한"
-            url: /dxl/x/xl430-w250/#access
-            urlkr: /dxl/x/xl430-w250/#접근권한
+            url: /dxl/x/xl430-w250/test/#access
+            urlkr: /dxl/x/xl430-w250/test/#접근권한
           - title: "Initial Value"
             titlekr: "초기값"
-            url: /dxl/x/xl430-w250/#initial-value
-            urlkr: /dxl/x/xl430-w250/#초기값
+            url: /dxl/x/xl430-w250/test/#initial-value
+            urlkr: /dxl/x/xl430-w250/test/#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
-        url: /dxl/x/xl430-w250/#control-table-of-eeprom-area
-        urlkr: /dxl/x/xl430-w250/#eeprom-영역
+        url: /dxl/x/xl430-w250/test/#control-table-of-eeprom-area
+        urlkr: /dxl/x/xl430-w250/test/#eeprom-영역
       - title: "RAM Area"
         titlekr: "RAM 영역"
-        url: /dxl/x/xl430-w250/#control-table-of-ram-area
-        urlkr: /dxl/x/xl430-w250/#ram-영역
+        url: /dxl/x/xl430-w250/test/#control-table-of-ram-area
+        urlkr: /dxl/x/xl430-w250/test/#ram-영역
   - title: "How to Assemble"
     titlekr: "조립 예시"
-    url: /dxl/x/xl430-w250/#how-to-assemble
-    urlkr: /dxl/x/xl430-w250/#조립-예시
+    url: /dxl/x/xl430-w250/test/#how-to-assemble
+    urlkr: /dxl/x/xl430-w250/test/#조립-예시
     children:
       - title: "Wiring through Back Case"
         titlekr: "배선 예시"
-        url: /dxl/x/xl430-w250/#wiring-through-back-case
-        urlkr: /dxl/x/xl430-w250/#배선-예시
+        url: /dxl/x/xl430-w250/test/#wiring-through-back-case
+        urlkr: /dxl/x/xl430-w250/test/#배선-예시
       - title: "Option Frame Assembly"
         titlekr: "옵션프레임 조립"
-        url: /dxl/x/xl430-w250/#option-frame-assembly
-        urlkr: /dxl/x/xl430-w250/#옵션프레임-조립
+        url: /dxl/x/xl430-w250/test/#option-frame-assembly
+        urlkr: /dxl/x/xl430-w250/test/#옵션프레임-조립
   - title: "Reference"
     titlekr: "참고자료"
-    url: /dxl/x/xl430-w250/#reference
-    urlkr: /dxl/x/xl430-w250/#참고자료
+    url: /dxl/x/xl430-w250/test/#reference
+    urlkr: /dxl/x/xl430-w250/test/#참고자료
     children:
       - title: "What is the Profile"
         titlekr: "Profile"
-        url: /dxl/x/xl430-w250/#what-is-the-profile
-        urlkr: /dxl/x/xl430-w250/#profile      
+        url: /dxl/x/xl430-w250/test/#what-is-the-profile
+        urlkr: /dxl/x/xl430-w250/test/#profile      
       - title: "Certifications"
         titlekr: "인증 획득"
-        url: /dxl/x/xl430-w250/#certifications
-        urlkr: /dxl/x/xl430-w250/#인증-획득
+        url: /dxl/x/xl430-w250/test/#certifications
+        urlkr: /dxl/x/xl430-w250/test/#인증-획득
       - title: "Quick Start"
         titlekr: "퀵스타트"
-        url: /dxl/x/xl430-w250/#quick-start
-        urlkr: /dxl/x/xl430-w250/#퀵스타트
+        url: /dxl/x/xl430-w250/test/#quick-start
+        urlkr: /dxl/x/xl430-w250/test/#퀵스타트
       - title: "Connector Information"
         titlekr: "커넥터 정보"
-        url: /dxl/x/xl430-w250/#connector-information
-        urlkr: /dxl/x/xl430-w250/#커넥터-정보
+        url: /dxl/x/xl430-w250/test/#connector-information
+        urlkr: /dxl/x/xl430-w250/test/#커넥터-정보
       - title: "Communication Circuit"
         titlekr: "통신 회로"
-        url: /dxl/x/xl430-w250/#communication-circuit
-        urlkr: /dxl/x/xl430-w250/#통신-회로
+        url: /dxl/x/xl430-w250/test/#communication-circuit
+        urlkr: /dxl/x/xl430-w250/test/#통신-회로
       - title: "Drawings"
         titlekr: "도면"
-        url: /dxl/x/xl430-w250/#drawings
-        urlkr: /dxl/x/xl430-w250/#도면
+        url: /dxl/x/xl430-w250/test/#drawings
+        urlkr: /dxl/x/xl430-w250/test/#도면
 
 #XL430-W250 sidebar
 xl430-w250:
