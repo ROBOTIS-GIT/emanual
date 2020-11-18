@@ -53,14 +53,14 @@ Before starting to work with turtlebot3 with a Windows 10 Single Board Computer,
 
 Then modify the following files:
 
-- `turtlebot3_bringup/launch/turtlebot3_core-win.launch`
+- `turtlebot3_bringup/launch/turtlebot3_core-win.launch`  
   ```xml
-<node pkg="rosserial_python" type="serial_node.py" name="turtlebot3_core" output="screen">
+  <node pkg="rosserial_python" type="serial_node.py" name="turtlebot3_core" output="screen">
     <param name="port" value="COMx"/>
   ```
 
-- `turtlebot3_bringup/launch/turtlebot3_lidar-win.launch`
+- `turtlebot3_bringup/launch/turtlebot3_lidar-win.launch`  
   ```xml
-<node pkg="hls_lfcd_lds_driver" type="hlds_laser_publisher" name="turtlebot3_lds" output="screen">
+  <node pkg="hls_lfcd_lds_driver" type="hlds_laser_publisher" name="turtlebot3_lds" output="screen">
     <param name="port" value="COMy"/>
   ```

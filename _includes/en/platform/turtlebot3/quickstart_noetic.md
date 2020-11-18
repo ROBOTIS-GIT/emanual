@@ -25,8 +25,8 @@
 Open the terminal with `Ctrl`+`Alt`+`T` and enter below commands one at a time.  
 In order to check the details of the easy installation script, please refer to [the script file](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_noetic.sh).  
 ```bash
-$ sudo apt-get update
-$ sudo apt-get upgrade
+$ sudo apt update
+$ sudo apt upgrade
 $ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_noetic.sh
 $ chmod 755 ./install_ros_noetic.sh 
 $ bash ./install_ros_noetic.sh
@@ -37,15 +37,22 @@ If the above installation fails, please refer to [the official ROS1 Noetic insta
 ### [Install Dependent ROS 1 Packages](#install-dependent-ros-1-packages)
 
 ```bash
-$ sudo apt-get install ros-noetic-joy ros-noetic-teleop-twist-joy ros-noetic-teleop-twist-keyboard ros-noetic-laser-proc ros-noetic-rgbd-launch ros-noetic-depthimage-to-laserscan ros-noetic-rosserial-arduino ros-noetic-rosserial-python ros-noetic-rosserial-server ros-noetic-rosserial-client ros-noetic-rosserial-msgs ros-noetic-amcl ros-noetic-map-server ros-noetic-move-base ros-noetic-urdf ros-noetic-xacro  ros-noetic-compressed-image-transport ros-noetic-rqt-image-view ros-noetic-gmapping ros-noetic-navigation ros-noetic-interactive-markers
+$ sudo apt install ros-noetic-joy ros-noetic-teleop-twist-joy \
+  ros-noetic-teleop-twist-keyboard ros-noetic-laser-proc \
+  ros-noetic-rgbd-launch ros-noetic-rosserial-arduino \
+  ros-noetic-rosserial-python ros-noetic-rosserial-client \
+  ros-noetic-rosserial-msgs ros-noetic-amcl ros-noetic-map-server \
+  ros-noetic-move-base ros-noetic-urdf ros-noetic-xacro \
+  ros-noetic-compressed-image-transport ros-noetic-rqt-image-view \
+  ros-noetic-gmapping ros-noetic-navigation ros-noetic-interactive-markers
 ```
 
 ### [Install TurtleBot3 Packages](#install-turtlebot3-packages)
 
 ```bash
 $ source /opt/ros/noetic/setup.bash
-$ sudo apt-get install ros-noetic-turtlebot3-msgs
-$ sudo apt-get install ros-noetic-turtlebot3
+$ sudo apt install ros-noetic-turtlebot3-msgs
+$ sudo apt install ros-noetic-turtlebot3
 ```
 
 <details>
@@ -56,8 +63,8 @@ $ sudo apt-get install ros-noetic-turtlebot3
 In case you need to download the source codes and build them, please use the commands below.  
 Make sure to remove the identical packages to avoid redundancy.  
 ```bash
-$ sudo apt-get remove ros-noetic-turtlebot3-msgs
-$ sudo apt-get remove ros-noetic-turtlebot3
+$ sudo apt remove ros-noetic-turtlebot3-msgs
+$ sudo apt remove ros-noetic-turtlebot3
 $ mkdir -p ~/catkin_ws/src
 $ cd ~/catkin_ws/src/
 $ git clone -b noetic-devel https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git

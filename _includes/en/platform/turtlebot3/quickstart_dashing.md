@@ -84,8 +84,8 @@ $ colcon build --symlink-install
 ![](/assets/click_here.png) **Click here to expand more details about TurtleBot3 package installation.**
 {: .notice--success}
 </summary>
-In case you need to install from the binary, please use the commands below.  
-Make sure to remove the identical packages in the `~/turtlebot3_ws` directory to avoid redundancy.  
+In case you want to install from the binary, please use the commands below.  
+Make sure to remove the identical packages in the `~/turtlebot3_ws/src/turtlebot3` and `~/turtlebot3_ws/src/utils` directories to avoid redundancy.  
 ```bash
 $ source /opt/ros/dashing/setup.bash
 $ sudo apt install ros-dashing-turtlebot3-msgs

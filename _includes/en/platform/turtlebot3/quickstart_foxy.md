@@ -25,8 +25,8 @@
 Open the terminal with `Ctrl`+`Alt`+`T` and enter below commands one at a time.  
 In order to check the details of the easy installation script, please refer to [the script file](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros2_foxy.sh).  
 ```bash
-$ sudo apt-get update
-$ sudo apt-get upgrade
+$ sudo apt update
+$ sudo apt upgrade
 $ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros2_foxy.sh
 $ chmod 755 ./install_ros2_foxy.sh
 $ bash ./install_ros2_foxy.sh
@@ -67,8 +67,8 @@ $ sudo apt install python3-vcstool
 
 ```bash
 $ source /opt/ros/foxy/setup.bash
-$ sudo apt-get install ros-foxy-turtlebot3-msgs
-$ sudo apt-get install ros-foxy-turtlebot3
+$ sudo apt install ros-foxy-turtlebot3-msgs
+$ sudo apt install ros-foxy-turtlebot3
 ```
 
 <details>
@@ -77,10 +77,10 @@ $ sudo apt-get install ros-foxy-turtlebot3
 {: .notice--success}
 </summary>
 In case you need to install from the binary, please use the commands below.  
-Make sure to remove the identical packages in the `~/turtlebot3_ws` directory to avoid redundancy.  
+Make sure to remove the identical packages to avoid redundancy.  
 ```bash
-$ sudo apt-get remove ros-foxy-turtlebot3-msgs
-$ sudo apt-get remove ros-foxy-turtlebot3
+$ sudo apt remove ros-foxy-turtlebot3-msgs
+$ sudo apt remove ros-foxy-turtlebot3
 $ mkdir -p ~/turtlebot3_ws/src
 $ cd ~/turtlebot3_ws/src/
 $ git clone -b foxy-devel https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git

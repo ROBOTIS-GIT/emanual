@@ -10,7 +10,7 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 13
+page_number: 10
 ---
 
 <div style="counter-reset: h1 3"></div>

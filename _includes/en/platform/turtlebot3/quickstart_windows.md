@@ -3,9 +3,6 @@
 
 ## [PC Setup](#pc-setup)
 
-**WARNING**: The contents in this chapter corresponds to the `Remote PC` (your desktop or laptop PC) which will control TurtleBot3.  
-{: .notice--danger}
-
 **NOTE**: This instruction was tested on Windows with `Windows 10 IoT Enterprise` and `ROS1 Melodic Morenia`.
 {: .notice--info}
 
