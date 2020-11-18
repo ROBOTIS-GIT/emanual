@@ -3,6 +3,7 @@
 <div style="counter-reset: h2 1"></div>
 
 ## [SBC Setup](#sbc-setup)
+
 {% capture warning_01 %}
 **WARNING**
 - This SBC Setup section is specifically written for **Raspberry Pi 3B+** which is the current official TurtleBot3 SBC.
@@ -50,27 +51,13 @@ APT::Periodic::Update-Package-Lists "0";
 APT::Periodic::Unattended-Upgrade "0";
   ```
 
-4. Open the terminal with `Ctrl`+`Alt`+`T` and enter below commands to configure the WiFi network setting.
+4. Enter below commands to open the WiFi network setting configuration.
   ```bash
 $ sudo nano /etc/netplan/50-cloud-init.yaml
   ```
 
 5. When the editor is opened, append below contents at the end of the file.  
-  ```bash
-network:
-    ethernets:
-        eth0:
-            dhcp4: true
-            optional: true
-    version: 2
-    wifis:z
-        wlan0:
-            optional: true
-            access-points:
-                "WIFI_SSID":
-                    password: "WIFI_PASSWORD"
-            dhcp4: true
-  ```
+  ![](/assets/images/platform/turtlebot3/setup/ros2_sbc_netcfg.png)
 
 6. Reboot the Raspberry Pi.
   ```bash
@@ -125,7 +112,7 @@ Swap:          1.0G          0B        1.0G
 
 ### Install ROS Noetic Ninjemys
 
-Open the terminal with `Ctrl`+`Alt`+`T` and enter below commands one at a time.  
+Enter below commands to the terminal one at a time.  
 In order to check the details of the easy installation script, please refer to [the script file](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_noetic_rp3.sh).  
 ```bash
 $ sudo apt-get update
@@ -135,7 +122,37 @@ $ chmod 755 ./install_ros_noetic_rp3.sh
 $ bash ./install_ros_noetic_rp3.sh
 ```
 
-If the above installation fails, please refer to [the official ROS2 Noetic installation guide](http://wiki.ros.org/noetic/Installation/Ubuntu).
+If the above installation fails, please refer to [the official ROS1 Noetic installation guide](http://wiki.ros.org/noetic/Installation/Ubuntu).
+
+### Install ROS Packages
+1. Install and build TurtleBot3 packages.
+  ```bash
+$ sudo apt install ros-noetic-rosserial-python ros-noetic-tf
+$ mkdir -p ~/catkin_ws/src && cd ~/catkin_ws/src
+$ sudo apt install ros-noetic-hls-lfcd-lds-driver
+$ sudo apt install ros-noetic-turtlebot3-msgs
+$ sudo apt install ros-noetic-dynamixel-sdk
+$ git clone -b noetic-devel https://github.com/ROBOTIS-GIT/turtlebot3.git
+$ cd ~/catkin_ws/src/turtlebot3
+$ rm -r turtlebot3_description/ turtlebot3_teleop/ turtlebot3_navigation/ turtlebot3_slam/ turtlebot3_example/
+$ cd ~/catkin_ws/
+$ echo 'source /opt/ros/noetic/setup.bash' >> ~/.bashrc
+$ source ~/.bashrc
+$ cd ~/catkin_ws && catkin_make -j1
+$ echo 'source ~/catkin_ws/devel/setup.bash' >> ~/.bashrc
+$ source ~/.bashrc
+  ```
+
+2. Install dependencies using rosdep.
+  ```bash
+$ sudo apt install python3-rosdep2
+$ cd ~/colcon_ws && rosdep update && rosdep install --from-paths src --ignore-src -r -y
+  ```
+
+3. USB Port Setting
+  ```bash
+$ rosrun turtlebot3_bringup create_udev_rules
+  ```
 
 ### Network Configuration
 1. Network configuration for ROS.
@@ -152,3 +169,4 @@ export ROS_HOSTNAME={IP_ADDRESS_OF_RASPBERRY_PI_3}
   ```bash
 $ source ~/.bashrc
   ```
+  

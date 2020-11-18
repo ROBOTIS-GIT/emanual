@@ -1,13 +1,12 @@
 
 ## [OpenCR Setup](#opencr-setup)
 
+As of now, OpenCR firmware for Noetic can be uploaded via Arduino IDE from PC. We'll soon release the binary firmware.
+{: .notice--info}
+
 Please be aware that [OpenCR] board manager **does not support Arduino IDE on ARM based SBC such as Raspberry Pi or NVidia Jetson**.  
 In order to upload the [OpenCR] firmware using Arduino IDE, please follow the below instructions on your PC.
 {: .notice--danger}
-
-As of now, OpenCR firmware for Noetic can be uploaded via Arduino IDE from PC.  
-We'll soon release the binary firmware.
-{: .notice--info}
 
 1. If you are using Linux, please configure the USB port for OpenCR. For other OS(OSX or Windows), you can skip this step.
   ```bash
@@ -17,6 +16,7 @@ $ sudo udevadm control --reload-rules
 $ sudo udevadm trigger
 $ sudo apt install libncurses5-dev:i386
   ```
+  
 2. Install Arduino IDE.
   - [Download the latest Arduino IDE](https://www.arduino.cc/en/software)
 

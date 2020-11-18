@@ -27,8 +27,8 @@ $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
     ========
 
     PARAMETERS
-    * /rosdistro: kinetic
-    * /rosversion: 1.12.13
+    * /rosdistro: noetic
+    * /rosversion: 1.15.8
     * /turtlebot3_core/baud: 115200
     * /turtlebot3_core/port: /dev/ttyACM0
     * /turtlebot3_core/tf_prefix:
@@ -75,6 +75,11 @@ $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
     [INFO] [1531306698.953226]: Calibration End
   ```
 
+<details>
+<summary id="summary_for_foreins" style="outline: inherit;">
+![](/assets/click_here.png) **Read more about launching RViz**
+{: .notice--success}
+</summary>
 ### [Load TurtleBot3 on Rviz](#load-turtlebot3-on-rviz)
 
 1. Open a new terminal and launch the robot state publisher.  
@@ -87,3 +92,5 @@ $ roslaunch turtlebot3_bringup turtlebot3_remote.launch
 $ rosrun rviz rviz -d `rospack find turtlebot3_description`/rviz/model.rviz
   ```  
   ![](/assets/images/platform/turtlebot3/bringup/run_rviz.jpg)
+
+</details>

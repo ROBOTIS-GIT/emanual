@@ -13,7 +13,7 @@
 <div class="notice--danger">{{ warning_01 | markdownify }}</div>
 
 ### [Prepare microSD Card](#prepare-microsd-card)
-1. Download the proper `Ubuntu 18.04.3 Preinstalled Server` image for your SBC from the links below. Ubuntu 18.04.4 version is reported to freeze the Raspberry Pi 3B+.
+1. Download the `ubuntu-18.04.3-preinstalled-server-arm64+raspi3.img.xz` image for your SBC from the links below.
   - [Ubuntu 18.04.3 Preinstalled Server ARM64 for Raspberry Pi3](http://old-releases.ubuntu.com/releases/18.04.3/ubuntu-18.04.3-preinstalled-server-arm64+raspi3.img.xz)
 
 2. Unzip the downloaded image.
@@ -53,8 +53,7 @@ APT::Periodic::Unattended-Upgrade "0";
 
 4. Open the terminal with `Ctrl`+`Alt`+`T` and enter below commands to configure the WiFi network setting.
   ```bash
-$ sudo touch /etc/netplan/99-netcfg.yaml
-$ sudo nano /etc/netplan/99-netcfg.yaml
+$ sudo nano /etc/netplan/50-cloud-init.yaml
   ```
 
 5. When the editor is opened, append below contents at the end of the file.  
@@ -114,47 +113,49 @@ Swap:          1.0G          0B        1.0G
 
 ### Install ROS Dashing Diademata
 
-- [ROS 2 Installation Guide](https://index.ros.org/doc/ros2/Installation/Dashing/Linux-Install-Debians/)
+- [Official ROS 2 Dashing Installation Guide](https://index.ros.org/doc/ros2/Installation/Dashing/Linux-Install-Debians/)
 
 1. Open a terminal on **SBC**
 
 2. Update and upgrade your software
-```bash
+  ```bash
 $ sudo apt update && sudo apt upgrade
-```
+  ```
 3. Setup locale
-```bash
+  ```bash
 $ sudo locale-gen en_US en_US.UTF-8
 $ sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
 $ export LANG=en_US.UTF-8
-```
+  ```
 4. Setup sources
-```bash
+  ```bash
 $ sudo apt update && sudo apt install curl gnupg2 lsb-release
 $ curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
 $ sudo sh -c 'echo "deb [arch=amd64,arm64] http://packages.ros.org/ros2/ubuntu `lsb_release -cs` main" > /etc/apt/sources.list.d/ros2-latest.list'
-```
+  ```
 5. Install ROS 2 packages
-```bash
+  ```bash
 $ sudo apt update
 $ sudo apt install ros-dashing-ros-base
-```
+  ```
 
-### Install TurtleBot3 Packages
+### Install ROS Packages
 
 ```bash
 $ sudo apt install python3-argcomplete python3-colcon-common-extensions libboost-system-dev build-essential
+$ sudo apt install ros-dashing-hls-lfcd-lds-driver
+$ sudo apt install ros-dashing-turtlebot3-msgs
+$ sudo apt install ros-dashing-dynamixel-sdk
 $ mkdir -p ~/turtlebot3_ws/src && cd ~/turtlebot3_ws/src
-$ git clone -b ros2 https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
-$ git clone -b ros2 https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
 $ git clone -b ros2 https://github.com/ROBOTIS-GIT/turtlebot3.git
-$ git clone -b ros2 https://github.com/ROBOTIS-GIT/DynamixelSDK.git
 $ cd ~/turtlebot3_ws/src/turtlebot3
 $ rm -r turtlebot3_cartographer turtlebot3_navigation2
 $ cd ~/turtlebot3_ws/
 $ echo 'source /opt/ros/dashing/setup.bash' >> ~/.bashrc
 $ source ~/.bashrc
 $ colcon build --symlink-install --parallel-workers 1
+$ echo 'source ~/turtlebot3_ws/install/setup.bash' >> ~/.bashrc
+$ source ~/.bashrc
 ```
 
 ### Environment Setup
@@ -166,11 +167,10 @@ In DDS communication, `ROS_DOMAIN_ID` must be matched between **Remote PC** and 
 
 1. Open a terminal on **SBC**
 2. Use the following commands.
-```bash
-$ echo 'source ~/turtlebot3_ws/install/setup.bash' >> ~/.bashrc
+  ```bash
 $ echo 'export ROS_DOMAIN_ID=30 #TURTLEBOT3' >> ~/.bashrc
 $ source ~/.bashrc
-```
+  ```
 
-    **WARNING** : Do not **OVERLAP** any IDs between you and other users. It will cause a conflict of communication between users under the same network environment.
-    {: .notice--warning}
+**WARNING** : Do not use an identical ROS_DOMAIN_ID with others in the same network. It will cause a conflict of communication between users under the same network environment.
+{: .notice--warning}

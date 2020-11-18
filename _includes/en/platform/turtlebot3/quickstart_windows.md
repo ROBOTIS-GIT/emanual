@@ -3,7 +3,7 @@
 
 ## [PC Setup](#pc-setup)
 
-**WARNING**: The contents in this chapter corresponds to the `Remote PC` (your desktop or laptop PC) which will control TurtleBot3. Do not apply this instruction to your TurtleBot3.
+**WARNING**: The contents in this chapter corresponds to the `Remote PC` (your desktop or laptop PC) which will control TurtleBot3.  
 {: .notice--danger}
 
 **NOTE**: This instruction was tested on Windows with `Windows 10 IoT Enterprise` and `ROS1 Melodic Morenia`.
@@ -11,20 +11,22 @@
 
 ### [Setup Remote PC](#setup-remote-pc)
 
-If you do not already have `Windows 10` on your Remote PC (Desktop, Laptop or SBC), you can download a trial of Windows 10 IoT Enterprise from the following link:
+1. If you do not already have `Windows 10` on your Remote PC (Desktop, Laptop or SBC), you can download a trial of Windows 10 IoT Enterprise from the following link:
 
-- [Download Windows 10 IoT Enterprise(Trial)](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-10-enterprise)
+- [Download Windows 10 IoT Enterprise LTSC(Trial)](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-10-enterprise)
 
-### [Setup TurtleBot3 Workspace](#setup-turtlebot3-workspace)
+2. Please refer to the [ROS Wiki instructions](https://wiki.ros.org/Installation/Windows) for installing ROS on Windows.
+
+3. Install and build TurtleBot3 packages.
 
 ```bash
 > mkdir c:\ws\turtlebot3\src
 > cd c:\ws\turtlebot3\src
 > catkin_init_workspace
-> git clone -b melodic-devel https://github.com/ROBOTIS-GIT/turtlebot3_msgs
-> git clone -b melodic-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations
-> git clone -b melodic-devel https://github.com/ROBOTIS-GIT/turtlebot3
-> git clone -b melodic-devel https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver
+> sudo apt install ros-melodic-hls-lfcd-lds-driver
+> sudo apt install ros-melodic-turtlebot3-msgs
+> sudo apt install ros-melodic-dynamixel-sdk
+> git clone -b melodic-devel https://github.com/ROBOTIS-GIT/turtlebot3.git
 > cd c:\ws\turtlebot3
 > rosdep update
 > rosdep install --from-paths src --ignore-src -r -y

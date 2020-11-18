@@ -25,21 +25,21 @@ page_number: 12
 {::options parse_block_html="true" /}
 
 <section id="{{ page.tab_title1 }}" class="tab_contents">
-{% include en/platform/turtlebot3/simulation_kinetic.md %}
+{% include en/platform/turtlebot3/basic_operation_kinetic.md %}
 </section>
 
 <section id="{{ page.tab_title2 }}" class="tab_contents">
-{% include en/platform/turtlebot3/simulation_noetic.md %}
+{% include en/platform/turtlebot3/basic_operation_noetic.md %}
 </section>
 
 <section id="{{ page.tab_title3 }}" class="tab_contents">
-{% include en/platform/turtlebot3/simulation_dashing.md %}
+{% include en/platform/turtlebot3/basic_operation_dashing.md %}
 </section>
 
 <section id="{{ page.tab_title4 }}" class="tab_contents">
-{% include en/platform/turtlebot3/simulation_foxy.md %}
+{% include en/platform/turtlebot3/basic_operation_foxy.md %}
 </section>
 
 <section id="{{ page.tab_title5 }}" class="tab_contents">
-{% include en/platform/turtlebot3/simulation_windows.md %}
+{% include en/platform/turtlebot3/basic_operation_windows.md %}
 </section>
