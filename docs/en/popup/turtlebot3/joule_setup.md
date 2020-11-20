@@ -1,33 +1,13 @@
 ---
-layout: archive
-lang: en
-ref: joule_setup
-read_time: true
-share: true
-author_profile: false
-permalink: /docs/en/platform/turtlebot3/joule_setup/
-sidebar:
-  title: TurtleBot3
-  nav: "turtlebot3"
-product_group: turtlebot3
-page_number: 10
+layout: popup
 ---
 
-<div style="counter-reset: h1 6"></div>
-<div style="counter-reset: h2 2"></div>
-<div style="counter-reset: h3 1"></div>
-
-<!--[dummy Header 1]>
-  <h1 id="setup"><a href="#setup">Setup</a></h1>
-  <h2 id="sbc-setup"><a href="#sbc-setup">SBC Setup</a></h2>
-<![end dummy Header 1]-->
-
-### [Joule Setup](#joule-setup)
+# [Joule Setup](#joule-setup)
 
 **WARNING**: Setup work requires Power and Time. So battery is not suitable. We recommend using SMPS (AC adapter) during this work.
 {: .notice--warning}
 
-#### [Install Linux (Ubuntu)](#install-linux-ubuntu)
+## [Install Linux (Ubuntu)](#install-linux-ubuntu)
 
 In this section, the Alternative Ubuntu Desktop 16.04 LTS will be installed on Intel® Joule™.
 
@@ -53,11 +33,71 @@ In this section, the Alternative Ubuntu Desktop 16.04 LTS will be installed on I
 [alternative-installubuntu-desktop-1604-lts]: https://developer.ubuntu.com/core/get-started/intel-joule#alternative-install:-ubuntu-desktop-16.04-lts
 
 
-If you need following step for installation, please refer to below link
+Please refer to the below Ubuntu installation process.
 
-  - [Step by step to install Ubuntu][step_by_step_to_install_ubuntu_on_joule]{: .popup}
+**[Intel® Joule™]** Connect `micro HDMI to HDMI cable`, `power connector supplied by OpenCR1.0`, `USB devices` including `Bootable USB drive`, `mouse` and `keyboard`. You might need a USB hub to plug multiple USB devices into Joule.
 
-#### [Install ROS](#install-ros)
+**[Intel® Joule™]** Installation will be proceeded as shown in below images. When Joule is turned on, monitor will blink about 3 times after 5 seconds, and print menu screen. Press _F7_ to go to `Boot Manager`.
+
+![](/assets/images/platform/turtlebot3/preparation/j1.jpg)
+
+**[Intel® Joule™]** Select _USB Device_.
+
+![](/assets/images/platform/turtlebot3/preparation/j2.jpg)
+
+![](/assets/images/platform/turtlebot3/preparation/j3.jpg)
+
+![](/assets/images/platform/turtlebot3/preparation/j4.jpg)
+
+![](/assets/images/platform/turtlebot3/preparation/j5.jpg)
+
+**[Intel® Joule™]** Select _Erase disk and install Ubuntu_ then _continue_.
+
+![](/assets/images/platform/turtlebot3/preparation/j6.jpg)
+
+**[Intel® Joule™]** `Intel® Joule™` has two different disk drives: 16GB micro SD Card and 16GB eMMC. In this instruction, it is highly recommended to install `Alternarive Ubuntu for Joule` on the `16GB eMMC`. Select `MMC/SD card #2 (mmcblk1) - 15.7 GB MMC 016G32` then _continue_.
+
+![](/assets/images/platform/turtlebot3/preparation/j7.jpg)
+
+![](/assets/images/platform/turtlebot3/preparation/j8.jpg)
+
+**[Intel® Joule™]** Installation will take about 10 minutes.
+
+![](/assets/images/platform/turtlebot3/preparation/j9.jpg)
+
+**[Intel® Joule™]** When installation is completed, click _Restart Now_.
+
+![](/assets/images/platform/turtlebot3/preparation/j10.jpg)
+
+**[Intel® Joule™]** Remove bootable USB drive from Joule.
+
+![](/assets/images/platform/turtlebot3/preparation/j11.jpg)
+
+**[Intel® Joule™]** Don't press any key. It will boot from _16GB eMMC_ which is a default boot device.
+
+![](/assets/images/platform/turtlebot3/preparation/j12.jpg)
+
+![](/assets/images/platform/turtlebot3/preparation/j13.jpg)
+
+![](/assets/images/platform/turtlebot3/preparation/j14.jpg)
+
+**[Intel® Joule™]** Finish the rest of settings.
+
+![](/assets/images/platform/turtlebot3/preparation/j15.jpg)
+
+![](/assets/images/platform/turtlebot3/preparation/j16.jpg)
+
+![](/assets/images/platform/turtlebot3/preparation/j17.jpg)
+
+![](/assets/images/platform/turtlebot3/preparation/j18.jpg)
+
+![](/assets/images/platform/turtlebot3/preparation/j19.jpg)
+
+![](/assets/images/platform/turtlebot3/preparation/j20.jpg)
+
+![](/assets/images/platform/turtlebot3/preparation/j21.jpg)
+
+## [Install ROS](#install-ros)
 
 **WARNING**: The contents in this chapter corresponds to the Intel® Joule™ which will be the main computer of **TurtleBot3 Waffle**. Do **NOT** apply this instruction to your Remote PC (your desktop PC or laptop).
 {: .notice--warning}
@@ -85,7 +125,7 @@ If you prefer manual installation, please following the link below.
 
 - [Install ROS on Ubuntu](http://wiki.ros.org/kinetic/Installation/Ubuntu)
 
-#### [Install Dependent Packages](#install-dependent-packages)
+## [Install Dependent Packages](#install-dependent-packages)
 
 The next step is to install dependent packages for TurtleBot3 control.
 
@@ -125,7 +165,7 @@ $ cd ~/catkin_ws && catkin_make
 
 If catkin_make command is completed without any errors, the preparation for TurtleBot3 is done.
 
-#### [USB Settings](#usb-settings)
+## [USB Settings](#usb-settings)
 
 **[TurtleBot]** The following commands allow to use USB port for OpenCR1.0 without acquiring root permission.
 
@@ -133,7 +173,7 @@ If catkin_make command is completed without any errors, the preparation for Turt
 $ rosrun turtlebot3_bringup create_udev_rules
 ```
 
-#### [Network Configuration](#network-configuration)
+## [Network Configuration](#network-configuration)
 
 ![](/assets/images/platform/turtlebot3/software/network_configuration.png)
 

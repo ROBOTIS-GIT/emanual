@@ -12,16 +12,20 @@
 {% endcapture %}
 <div class="notice--danger">{{ warning_01 | markdownify }}</div>
 
+If you are using **Intel Joule**, please refer to [Intel Joule Setup][joule_setup]{: .popup} instruction.
+{: .notice--danger}
+
 ### [Prepare microSD Card](#prepare-microsd-card)
 1. Download Raspbian with ROBOTIS TurtleBot3 restore image.
   - [Download TurtleBot3 Raspbian image for Raspberry Pi 3B+](http://www.robotis.com/service/download.php?no=1738)
+  - SHA256 (image_rpi_20190429.img): 7a868c275169b1f02c04617cc0cce9654fd8222623c78b22d0a27c73a9609398
 2. Unzip the downloaded image.
 3. Burn the image to the microSD card.
   - Use `Restore Disk Image` option in the `Disks` utility in Ubuntu.
   - Run the utility and select the restore image, then burn to the selected micro SD card.
 <details>
 <summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) Click here to expand more details about other micro SD card burning methods
+![](/assets/click_here.png) Read More about other micro SD card burning methods
 {: .notice--success}
 </summary>
 - You can use the [etcher.io](https://etcher.io/)
@@ -30,7 +34,7 @@
 
 <details>
 <summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) Click here to expand more details about **Raspberry Pi 4B**
+![](/assets/click_here.png) Read More about **Raspberry Pi 4B**
 {: .notice--success}
 </summary>
 In case you use Raspberry Pi 4B, you can use the restore image below. However, please note that this image may not compatible with Raspberry Pi 4B with 8GB RAM.
@@ -39,7 +43,7 @@ In case you use Raspberry Pi 4B, you can use the restore image below. However, p
 
 <details>
 <summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) Click here to expand more details about **Intel Joule 570x**
+![](/assets/click_here.png) Read More about **Intel Joule 570x**
 {: .notice--success}
 </summary>
 In case you use Intel Joule 570x, please follow the instructions below.  
@@ -93,3 +97,5 @@ export ROS_HOSTNAME={IP_ADDRESS_OF_RASPBERRY_PI_3}
   ```bash
 $ source ~/.bashrc
   ```
+
+[joule_setup]: /docs/en/popup/turtlebot3/joule_setup

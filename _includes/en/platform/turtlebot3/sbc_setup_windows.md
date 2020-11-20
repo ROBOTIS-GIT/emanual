@@ -7,7 +7,7 @@
 
 {% capture warning_01 %}
 **WARNING**
-- This SBC Setup section for Windows is tested with [Up2](https://up-board.org/upsquared/specifications/) or `Intel NUC` on TurtleBot3.
+- This SBC Setup section for Windows is tested with `Intel Up²` or `Intel NUC` on TurtleBot3.
 - This process may take long time. Please do not use battery while following this section.
 - An HDMI monitor and input devices such as a keyboard and a mouse will be required to complete this setup.
 {% endcapture %}

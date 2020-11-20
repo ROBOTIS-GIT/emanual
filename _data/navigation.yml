@@ -16966,17 +16966,11 @@ turtlebot3:
       url: /platform/turtlebot3/bringup/#bringup
     - title: "Basic Operation"
       url: /platform/turtlebot3/basic_operation/#basic-operation
-    - title: "Examples"
-      url: /platform/turtlebot3/basic_examples/#basic-examples
       children:
-      - title: "Interactive Markers"
-        url: /platform/turtlebot3/basic_examples/#move-using-interactive-markers
-      - title: "Obstacle Detection"
-        url: /platform/turtlebot3/basic_examples/#obstacle-detection
-      - title: "Point Operation"
-        url: /platform/turtlebot3/basic_examples/#point-operation
-      - title: "Patrol"
-        url: /platform/turtlebot3/basic_examples/#patrol
+      - title: "Teleoperation"
+        url: /platform/turtlebot3/basic_operation/#teleoperation
+      - title: "Topic Monitor"
+        url: /platform/turtlebot3/basic_operation/#topic-monitor
   - title: "SLAM"
     url: /platform/turtlebot3/slam/#slam
     children:
@@ -17098,9 +17092,17 @@ turtlebot3:
       url: /platform/turtlebot3/machine_learning/#set-parameters
     - title: "Run Machine Learning"
       url: /platform/turtlebot3/machine_learning/#run-machine-learning
-  - title: "Applications"
-    url: /platform/turtlebot3/applications/#applications
+  - title: "Examples"
+    url: /platform/turtlebot3/basic_examples/#basic-examples
     children:
+    - title: "Interactive Markers"
+      url: /platform/turtlebot3/basic_examples/#move-using-interactive-markers
+    - title: "Obstacle Detection"
+      url: /platform/turtlebot3/basic_examples/#obstacle-detection
+    - title: "Point Operation"
+      url: /platform/turtlebot3/basic_examples/#point-operation
+    - title: "Patrol"
+      url: /platform/turtlebot3/basic_examples/#patrol
     - title: "TurtleBot Follower Demo"
       url: /platform/turtlebot3/applications/#turtlebot-follower-demo
     - title: "TurtleBot Panorama Demo"

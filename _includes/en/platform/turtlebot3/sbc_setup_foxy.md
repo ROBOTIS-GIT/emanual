@@ -9,6 +9,7 @@
 - This SBC Setup section is specifically written for **Raspberry Pi 3B+** which is the current official TurtleBot3 SBC.
 - This process may take long time. Please do not use battery while following this section.
 - An HDMI monitor and input devices such as a keyboard and a mouse will be required to complete this setup.
+- In order to use the webOS Robotics Platform, please refer to [webOS Robotics Platform](https://github.com/ros/meta-ros/wiki/OpenEmbedded-Build-Instructions) instruction. Packages will be cross-compiled using OpenEmbedded on a higher performance PC and an image file is created.
 {% endcapture %}
 <div class="notice--danger">{{ warning_01 | markdownify }}</div>
 
@@ -23,7 +24,7 @@
   - Run the utility and select the restore image, then burn to the selected micro SD card.
 <details>
 <summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) Click here to expand more details about other micro SD card burning methods
+![](/assets/click_here.png) Read More about other micro SD card burning methods
 {: .notice--success}
 </summary>
 - You can use the [etcher.io](https://etcher.io/) to burn the image.
@@ -143,11 +144,11 @@ $ sudo apt install ros-foxy-ros-base
 
 ```bash
 $ sudo apt install python3-argcomplete python3-colcon-common-extensions libboost-system-dev build-essential
+$ sudo apt install ros-foxy-hls-lfcd-lds-driver
+$ sudo apt install ros-foxy-turtlebot3-msgs
+$ sudo apt install ros-foxy-dynamixel-sdk
 $ mkdir -p ~/turtlebot3_ws/src && cd ~/turtlebot3_ws/src
-$ git clone -b foxy-devel https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
-$ git clone -b foxy-devel https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
 $ git clone -b foxy-devel https://github.com/ROBOTIS-GIT/turtlebot3.git
-$ git clone -b foxy-devel https://github.com/ROBOTIS-GIT/DynamixelSDK.git
 $ cd ~/turtlebot3_ws/src/turtlebot3
 $ rm -r turtlebot3_cartographer turtlebot3_navigation2
 $ cd ~/turtlebot3_ws/

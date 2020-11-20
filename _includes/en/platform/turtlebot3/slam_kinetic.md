@@ -7,26 +7,12 @@
 
 # [SLAM](#slam)
 
-**WARNING**: Be careful when running the robot on the table as the robot might fall.
-{: .notice--warning}
-
 {% capture notice_01 %}
 **NOTE**:
-- This instructions are supposed to be running on the remote PC. Please run the instructions below on your **Remote PC**.
-- The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. The shortcut key for running the terminal is `Ctrl`-`Alt`-`T`.
-- Make sure to run the [Bringu
-.p](/docs/en/platform/turtlebot3/bringup/#bringup) instruction before use of the instruction.
+- It is recommended to run the SLAM on **Remote PC**.
+- Make sure to run the [Bringup](/docs/en/platform/turtlebot3/bringup) instruction before use of the instruction.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
-
-{% capture notice_02 %}
-{% include en/platform/turtlebot3/ros_book_info.md %}
-{% endcapture %}
-
-<div class="notice--success">{{ notice_02 | markdownify }}</div>
-
-**TIP**: It is recommended to use a joystick pad instead of the keyboard for easier control. For more information on remote control, Please refer to [Teleoperation][teleoperation] page.
-{: .notice--success}
 
 The **SLAM (Simultaneous Localization and Mapping)** is a technique to draw a map by estimating current location in an arbitrary space. The SLAM is a well-known feature of TurtleBot from its predecessors. The video here shows you how accurately TurtleBot3 can draw a map with its compact and affordable platform.
 
