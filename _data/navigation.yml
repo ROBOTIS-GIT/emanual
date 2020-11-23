@@ -24266,16 +24266,16 @@ dxl-quick-start:
   - title: "Getting Started"
     url: /dxl/dxl-quick-start-insert/#getting-started-with-dynamixel
     children:
-      - title: "Control via Computer"
-        url: /dxl/dxl-quick-start-insert/#dynamixel-control-via-computer
-      - title: "Control via OpenCM embedded board"
-        url: /dxl/dxl-quick-start-insert/#dynamixel-control-via-opencm-embedded-board
-      - title: "Control via OpenCR1.0"
-        url: /dxl/dxl-quick-start-insert/#dynamixel-control-via-opencr10
-      - title: "Control via CM-Series Controllers"
-        url: /dxl/dxl-quick-start-insert/#dynamixel-control-via-cm-series-controllers                        
-      - title: "Control via Arduino Board + DYNAMIXEL Shield"
-        url: /dxl/dxl-quick-start-insert/#dynamixel-control-via-arduino-board--dynamixel-shield      
+      - title: "DYNAMIXEL and PC"
+        url: /dxl/dxl-quick-start-insert/#dynamixel-and-pc
+      - title: "DYNAMIXEL and OpenCM"
+        url: /dxl/dxl-quick-start-insert/#dynamixel-and-opencm
+      - title: "DYNAMIXEL and OpenCR1.0"
+        url: /dxl/dxl-quick-start-insert/#dynamixel-and-opencr10
+      - title: "DYNAMIXEL and CM-Series Controllers"
+        url: /dxl/dxl-quick-start-insert/#dynamixel-and-cm-series-controllers
+      - title: "DYNAMIXEL and Arduino"
+        url: /dxl/dxl-quick-start-insert/#dynamixel-control-and-arduino     
 
 contents-guide:
   - title: "Contents Guide"

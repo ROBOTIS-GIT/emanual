@@ -8,11 +8,11 @@ sidebar:
   nav: "dxl-quick-start"
 ---
 
-# [Getting Started with DYNAMIXEL](#getting-started-with-dynamixel)
+# [Getting Started](#getting-started-with-dynamixel)
 
 ROBOTIS provides the following solutions for controlling DYNAMIXEL. 
  
-## [DYNAMIXEL Control via Computer](#dynamixel-control-via-computer)
+## [DYNAMIXEL and PC](#dynamixel-and-pc)
 
 ### [DYNAMIXEL Starter Set](#dynamixel-starter-set)
 By interfacing DYNAMIXEL with your PC via the DYNAMIXEL Starter Set, you can program DYNAMIXEL in a wide variety of IDEs/programming languages including: [DYNAMIXEL Wizard 2.0] software & [DYNAMIXEL SDK] (ROS MATLAB LabView Python Visual Studio Eclipse C/C++ C# Visual Basic Java)  
@@ -23,14 +23,14 @@ DYNAMIXEL Starter Set : [U2D2], [U2D2 Power Hub Board] , SMPS 12V 5A AC Adapter
 
 {% capture sdk_notice_01 %}
 **NOTE**: 
-- SDK and ROBOTIS softwares are available at [DOWNLOAD CENTER](http://en.robotis.com/service/downloadpage.php?ca_id=10). 
-- For more information on the ROBOTIS Software, see [Software]
-- **DYNAMIXEL Quick Start Guide** which provides more comprehensive descriptions is planned to be shared via the e-Manual soon.
+- [DYNAMIXEL SDK] and other ROBOTIS software is available to download at the [en.robotis.com](http://en.robotis.com/) Download Center. 
+- For more information on the ROBOTIS Software, see [Software](/docs/en/software/)
+- To assemble DYNAMIXEL Starter Set (U2D2 + U2D2 Power Hub Board + SMPS), see [How to Assemble](/docs/en/parts/interface/u2d2_power_hub/#how-to-assemble)
 {% endcapture %}
 
 <div class="notice">{{ sdk_notice_01 | markdownify }}</div>
 
-## [DYNAMIXEL Control via OpenCM embedded board](#dynamixel-control-via-opencm-embedded-board)
+## [DYNAMIXEL and OpenCM](#dynamixel-and-opencm)
 
 ### [OpenCM9.04](#opencm904) 
 
@@ -38,7 +38,7 @@ DYNAMIXEL Starter Set : [U2D2], [U2D2 Power Hub Board] , SMPS 12V 5A AC Adapter
 
 ### [OpenCM 485 Expansion Board](#opencm-485-expansion-board)
 
-[The OpenCM 485 Expansion Board] features 12V and 24V power connectors as well as TTL/RS-485 buses for simultaneous communication with TTL and RS-485 based DYNAMIXELs (AX/RX/MX).
+[The OpenCM 485 Expansion Board] features 12V and 24V power connectors as well as TTL/RS-485 buses for simultaneous communication with TTL and RS-485 based DYNAMIXELs (X-series and P-series require "convertible" cable for correct connector such as Molex-Jst Robot Cable-[X4P](http://en.robotis.com/shop_en/item.php?it_id=903-0246-000) or [X3P](http://en.robotis.com/shop_en/item.php?it_id=903-0251-000))
 
 ![](/assets/images/dxl/dxl_quick_start_insert/dxl_control_02.png) 
 
@@ -46,11 +46,10 @@ DYNAMIXEL Starter Set : [U2D2], [U2D2 Power Hub Board] , SMPS 12V 5A AC Adapter
 **NOTE**: 
 - OpenCM9.04 and OpenCM485 EXP board must be set up to be used together. Solder header pins to the OpenCM9.04 and once complete mount the OpenCM9.04 board to the OpenCM 485 EXP board.
 - DYNAMIXELs may be operated using any embedded board that can send a signal through the serial bus (multi-drop, half-duplex TTL or RS-485 depending on model of DYNAMIXEL).
-- **OPENCM9.04 + ARDUINO IDE QUICK START GUIDE** which provides more comprehensive descriptions is planned to be shared via the e-Manual soon.
 {% endcapture %}
 <div class="notice">{{ sdk_notice_02 | markdownify }}</div>
 
-## [DYNAMIXEL Control via OpenCR1.0](#dynamixel-control-via-opencr10)
+## [DYNAMIXEL and OpenCR1.0](#dynamixel-and-opencr10)
 
 [OpenCR1.0] (Open-source Control module for ROS) is an open source robot controller embedded with a powerful MCU from the ARM Cortex-M7 line-up. 
 The hardware, software, schematics, PCB Gerber, BOM, and firmware source codes of the OpenCR1.0, the main controller used in the official ROS education platform TurtleBot3, are accessible and open to the public. 
@@ -61,7 +60,7 @@ The OpenCR board manager for Arduino IDE includes various examples to maximize t
 
 ![](/assets/images/dxl/dxl_quick_start_insert/dxl_control_03.png) 
 
-## [DYNAMIXEL Control via CM-Series Controllers](#dynamixel-control-via-cm-series-controllers)
+## [DYNAMIXEL and CM-Series](#dynamixel-and-cm-series-controllers)
  
 ROBOTIS also has exclusive controllers for programming DYNAMIXEL. These controllers include the CM-700 (Compatible with TTL-based AX / MX series DYNAMIXEL), CM-530(Compatible with TTL-based AX/MX series DYNAMIXEL), CM-550(Compatible with TTL-based X series DYNAMIXEL).
 
@@ -82,11 +81,10 @@ ROBOTIS also has exclusive controllers for programming DYNAMIXEL. These controll
 {% capture sdk_notice_03 %}
 **NOTE**: 
 - Check the [controller compatibility](/docs/en/parts/controller/controller_compatibility/) chart to see which servos, sensors, peripherals, and software are compatible with which controller. 
-- **LEARNING R+ TASK 3.0 SOFTWARE** which provides more comprehensive descriptions is planned to be shared via the e-Manual soon.  
 {% endcapture %}
 <div class="notice">{{ sdk_notice_03 | markdownify }}</div>
 
-## [DYNAMIXEL Control via Arduino Board + DYNAMIXEL Shield](#dynamixel-control-via-arduino-board--dynamixel-shield)
+## [DYNAMIXEL and Arduino](#dynamixel-control-and-arduino)
 
 [DYNAMIXEL Shield] was created to use [RC-100] and DYNAMIXEL on arduino board.
 The hardware serial port is used to communicate with DYNAMIXEL, therefore, RC-100 or [LN-101] has to be connected to the software serial communication port(SW TX/RX) via Arduino pin 7 and 8.
@@ -98,7 +96,6 @@ The hardware serial port is used to communicate with DYNAMIXEL, therefore, RC-10
 - [Use of Serial Monitor with DYNAMIXEL Shield](/docs/en/parts/interface/dynamixel_shield/#use-of-serial-monitor-with-dynamixel-shield)
 - ROBOTIS provides DYNAMIXEL library for DYNAMIXEL Shield, it can help you to use DYNAMIXEL easily.
 - Check the [controller compatibility](/docs/en/parts/controller/controller_compatibility/#software) chart to see which servos, sensors, peripherals, and software are compatible with which controller. 
-- **DYNAMIXEL + ARDUINO UNO QUICK START GUIDE** which provides more comprehensive descriptions is planned to be shared via the e-Manual soon.
 {% endcapture %}
 <div class="notice">{{ sdk_notice_03 | markdownify }}</div>
 
