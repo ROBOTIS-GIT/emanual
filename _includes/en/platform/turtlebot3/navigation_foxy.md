@@ -1,4 +1,3 @@
-# [Navigation](#navigation)
 
 **WARNING**: Be careful when running the robot on the table as the robot might fall.
 {: .notice--warning}

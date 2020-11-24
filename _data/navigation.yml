@@ -16972,10 +16972,10 @@ turtlebot3:
       - title: "Topic Monitor"
         url: /platform/turtlebot3/basic_operation/#topic-monitor
   - title: "SLAM"
-    url: /platform/turtlebot3/slam/#slam
+    url: /platform/turtlebot3/slam/
     children:
-    - title: "Run SLAM Nodes"
-      url: /platform/turtlebot3/slam/#run-slam-nodes
+    - title: "Run SLAM Node"
+      url: /platform/turtlebot3/slam/#run-slam-node
     - title: "Run Teleoperation Node"
       url: /platform/turtlebot3/slam/#run-teleoperation-node
     - title: "Tuning Guide"
@@ -16984,8 +16984,6 @@ turtlebot3:
       url: /platform/turtlebot3/slam/#save-map
     - title: "Map"
       url: /platform/turtlebot3/slam/#map
-    - title: "References"
-      url: /platform/turtlebot3/slam/#references
   - title: "Navigation"
     url: /platform/turtlebot3/navigation/#navigation
     children:

@@ -1,15 +1,12 @@
-# [Navigation](#navigation)
 
-**WARNING**: Be careful when running the robot on the table as the robot might fall.
+**WARNING**: In this instruction, TurtleBot3 may move and rotate. Please place the robot on a safe ground.
 {: .notice--warning}
 
 {% capture notice_01 %}
-**NOTE**:
-
-- This instructions are supposed to be running on the remote PC. Please run the instructions below on your **Remote PC**.
-- The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. The shortcut key for running the terminal is `Ctrl`-`Alt`-`T`.
-- Make sure to run the [Bringup](/docs/en/platform/turtlebot3/bringup/#bringup) instructions before use of the instruction
-- The navigation uses the a data created in [SLAM](/docs/en/platform/turtlebot3/slam/#slam). Please make sure to have a map data.
+**NOTE**
+- Please run the Navigation on Remote PC.
+- Make sure to launch the [Bringup](/docs/en/platform/turtlebot3/bringup/) from TurtleBot3 before executing any operation.
+- The Navigation uses a map created by the [SLAM](/docs/en/platform/turtlebot3/slam/). Please prepare a map before running the Navigation.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -19,48 +16,59 @@ The navigation enables a robot to move from the current pose to the designated g
 
 ## [Run Navigation Nodes](#run-navigation-nodes)
 
-**[Remote PC]** Run roscore.
-
-```bash
+1. If `roscore` is not running on the Remote PC, run roscore. **Skip this step if roscore is already running**.
+  ```bash
 $ roscore
-```
+  ```
 
-**[TurtleBot]** Bring up basic packages to start TurtleBot3 applications.
-
-```bash
+2. If the `Bringup` is not running on the TurtleBot3 SBC, launch the Bringup. **Skip this step if you have launched bringup previously**.  
+  - Open a new terminal from Remote PC with `Ctrl` + `Alt` + `T` and connect to Raspberry Pi with its IP address.
+The default password is **turtlebot**.  
+  ```bash
+$ ssh pi@{IP_ADDRESS_OF_RASPBERRY_PI}
 $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
-```
+  ```
 
-**[Remote PC]** Launch the navigation file.
-
-**TIP**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `burger`, `waffle`, `waffle_pi`.
-{: .notice--success}
-
-```bash
+3. Launch the Navigation. Depending on the platform, replace **${TB3_MODEL}** in the below command with `burger`, `waffle` or `waffle_pi`.
+  ```bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/map.yaml
-```
+  ```
 
-**TIP**: When you run the above command, the visualization tool RViz is also executed. If you want to run RViz separately, use the following command.
+<details>
+<summary id="summary_for_foreins" style="outline: inherit;">
+![](/assets/click_here.png) Read more about **How to predefine the TURTLEBOT3_MODEL**
 {: .notice--success}
+</summary>
+The `export TURTLEBOT3_MODEL=${TB3_MODEL}` command can be omitted if the **TURTLEBOT3_MODEL** parameter is predefined in the `.bashrc` file. The `.bashrc` file is automatically loaded when a terminal window is created.  
 
+- Example of defining TurtlBot3 Burger as a default.  
 ```bash
-$ rviz -d `rospack find turtlebot3_navigation`/rviz/turtlebot3_navigation.rviz
+$ echo 'export TURTLEBOT3_MODEL=burger' >> ~/.bashrc
+$ source ~/.bashrc
 ```
+
+- Example of defining TurtlBot3 Waffle Pi as a default.  
+```bash
+$ echo 'export TURTLEBOT3_MODEL=waffle_pi' >> ~/.bashrc
+$ source ~/.bashrc
+```
+</details>
 
 ## [Estimate Initial Pose](#estimate-initial-pose)
 
-**[Remote PC]** First, the initial pose estimation of the robot should be performed. When you press `2D Pose Estimate` in the menu of RViz, a very large green arrow appears. Move it to the pose where the actual robot is located in the given map, and while holding down the left mouse button, drag the green arrow to the direction where the robot's front is facing, follow the instruction below.
+Initial Pose Estimation is critical when running Navigation as this process initialize the AMCL parameters that are critical in Navigation. The TurtleBot3 has to be correctly located on the saved map with the LDS sensor data that neatly overlaps the map.
 
-- Click the `2D Pose Estimate` button.
-- Click on the approxtimate point in the map where the TurtleBot3 is located and drag the cursor to indicate the direction where TurtleBot3 faces.
-
-Then move the robot back and forth with tools like the `turtlebot3_teleop_keyboard` node to collect the surrounding environment information and find out where the robot is currently located on the map.
-
-```bash
-$ export TURTLEBOT3_MODEL=${TB3_MODEL}
+1. Press the `2D Pose Estimate` button in the RViz menu.
+2. Click on the map where the actual robot is located and drag the large green arrow toward the direction where the robot is facing.
+3. Repeat step 1 and 2 until the LDS sensor data is overlayed on the saved map. 
+4. Launch keyboard teleoperation node to precisely locate the robot on the map.
+  ```bash
 $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
-```
+  ```
+5. Move the robot back and forth a bit to collect the surrounding environment information and narrow down the estimated location of the TurtleBot3 on the map which is displayed with tiny green arrows.
+
+
 
 When this process is completed, the robot estimates its actual position and orientation by using the position and orientation specified by the green arrow as the initial pose. Every green arrow stands for an expected position of TurtleBot3. The laser scanner will draw approximate figures of wall on the map. If the drawing doesn't show the figures incorrectly, repeat localizing the TurtleBot3 from clicking `2D Pose Estimate` button above.
 
@@ -171,10 +179,10 @@ _**sim_time**_
 - [Basic Navigation Tuning Guide (ROS Wiki)](http://wiki.ros.org/navigation/Tutorials/Navigation%20Tuning%20Guide)
 - [ROS Navigation Tuning Guide by Kaiyu Zheng](http://kaiyuzheng.me/documents/navguide.pdf)
 
-[slam]: /docs/en/platform/turtlebot3/slam/
-[export_turtlebot3_model]: /docs/en/platform/turtlebot3/export_turtlebot3_model
 
 ## [References](#references)
 
 - Navigation
   - [ROS WIKI](http://wiki.ros.org/navigation), [Github](https://github.com/ros-planning/navigation)
+
+[slam]: /docs/en/platform/turtlebot3/slam/

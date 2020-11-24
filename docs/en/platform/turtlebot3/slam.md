@@ -21,8 +21,9 @@ page_number: 10
 
 <div style="counter-reset: h1 3"></div>
 
-
 {::options parse_block_html="true" /}
+
+# [SLAM](#slam)
 
 <section id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/turtlebot3/slam_kinetic.md %}
