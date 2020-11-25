@@ -10,17 +10,18 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 51
+page_number: 31
 ---
 
-<div style="counter-reset: h1 31"></div>
-<div style="counter-reset: h2 4"></div>
+<div style="counter-reset: h1 13"></div>
+<div style="counter-reset: h2 1"></div>
+<div style="counter-reset: h3 4"></div>
 
 <!--[dummy Header 1]>
   <h1 id="appendixes"><a href="#appendixes">Appendixes</a></h1>
 <![end dummy Header 1]-->
 
-## [Raspberry Pi Camera](#raspberry-pi-camera)
+### [Raspberry Pi Camera](#raspberry-pi-camera)
 
 ![](/assets/images/platform/turtlebot3/appendix_raspi_cam/Pi-Camera-front.jpg)
 

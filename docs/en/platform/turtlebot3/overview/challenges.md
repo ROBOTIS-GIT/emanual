@@ -14,7 +14,7 @@ page_number: 2
 ---
 
 <div style="counter-reset: h1 1"></div>
-<div style="counter-reset: h2 2"></div>
+<div style="counter-reset: h2 1"></div>
 
 ## [Events](#challenges)
 

@@ -89,7 +89,7 @@ https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCR/master/arduino/opencr_relea
   ![](/assets/images/parts/controller/opencr10/bootloader_19.png)
 </details>
 
-## [OpenCR Test](#opencr-test)
+### [OpenCR Test](#opencr-test)
 
 You can use `PUSH SW 1` and `PUSH SW 2` buttons to see whether your robot has been properly assembled. This process tests the left and right DYNAMIXEL's and the [OpenCR] board.
 

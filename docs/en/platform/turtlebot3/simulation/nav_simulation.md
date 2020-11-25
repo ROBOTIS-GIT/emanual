@@ -5,7 +5,7 @@ ref: simulation
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/turtlebot3/slam_simulation/
+permalink: /docs/en/platform/turtlebot3/nav_simulation/
 tabs: "ROS"
 tab_title1: Kinetic
 tab_title2: Noetic
@@ -15,28 +15,28 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 13
+page_number: 14
 ---
 
-<div style="counter-reset: h1 5"></div>
-<div style="counter-reset: h2 1"></div>
+<div style="counter-reset: h1 6"></div>
+<div style="counter-reset: h2 2"></div>
 
-# [Simulation](#simulation)
+## [Navigation Simulation](#navigation-simulation)
 
 {::options parse_block_html="true" /}
 
 <section id="{{ page.tab_title1 }}" class="tab_contents">
-{% include en/platform/turtlebot3/slam_simulation_kinetic.md %}
+{% include en/platform/turtlebot3/nav_simulation_kinetic.md %}
 </section>
 
 <section id="{{ page.tab_title2 }}" class="tab_contents">
-{% include en/platform/turtlebot3/slam_simulation_noetic.md %}
+{% include en/platform/turtlebot3/nav_simulation_noetic.md %}
 </section>
 
 <section id="{{ page.tab_title3 }}" class="tab_contents">
-{% include en/platform/turtlebot3/slam_simulation_dashing.md %}
+{% include en/platform/turtlebot3/nav_simulation_dashing.md %}
 </section>
 
 <section id="{{ page.tab_title4 }}" class="tab_contents">
-{% include en/platform/turtlebot3/slam_simulation_foxy.md %}
+{% include en/platform/turtlebot3/nav_simulation_foxy.md %}
 </section>

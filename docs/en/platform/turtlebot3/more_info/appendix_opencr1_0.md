@@ -10,20 +10,17 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 48
+page_number: 28
 ---
 
 <div style="counter-reset: h1 13"></div>
-<div style="counter-reset: h2 0"></div>
-
+<div style="counter-reset: h2 1"></div>
+<div style="counter-reset: h3 1"></div>
 
 <!--[dummy Header 1]>
   <h1 id="appendixes"><a href="#appendixes">Appendixes</a></h1>
 <![end dummy Header 1]-->
 
-## [Appendixes](#appendixes)
-
-<div style="counter-reset: h3 2"></div>
 
 ### [OpenCR1.0](#appendix-opencr10)
 
@@ -176,7 +173,7 @@ If you want to modify it in the sketch folder, move the above two folders to the
 ##### [How to added topic messages](how-to-added-topic-messages)
 
 For generate topic header file, you run command below in section 2.2 of [rosserial tutorial.](http://wiki.ros.org/rosserial_arduino/Tutorials/Arduino%20IDE%20Setup)
-```
+```bash
 $ cd <sketchbook>/libraries
 $ rm -rf ros_lib
 $ rosrun rosserial_arduino make_libraries.py .

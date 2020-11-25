@@ -10,11 +10,11 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 19
+page_number: 33
 ---
 
-<div style="counter-reset: h1 8"></div>
-<div style="counter-reset: h2 3"></div>
+<div style="counter-reset: h1 13"></div>
+<div style="counter-reset: h2 2"></div>
 
 <!--[dummy Header 1]>
   <h1 id="basic-operation"><a href="#basic-operation">Basic Operation</a></h1>

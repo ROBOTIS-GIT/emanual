@@ -15,7 +15,7 @@ page_number: 19
 
 <div style="counter-reset: h1 7"></div>
 
-# [[ROS 1] Autonomous Driving](#ros-1-autonomous-driving)
+# [Autonomous Driving](#autonomous-driving)
 
 ## Getting Started
 
@@ -72,9 +72,6 @@ $ sudo apt-get install ros-kinetic-image-transport ros-kinetic-cv-bridge ros-kin
 
 3. You need to [Calibrate a Camera on SBC](#calibrate-a-camera-on-sbc).
 
-## [Simulation](#simulation)
-
-- [Click to check the Simulation](/docs/en/platform/turtlebot3/autorace_gazebo/)
 
 ## [Camera Calibration](#camera-calibration)
 

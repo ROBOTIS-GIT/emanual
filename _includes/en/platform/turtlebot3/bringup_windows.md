@@ -12,7 +12,7 @@ Run roscore from either PC or SBC.
 
 Bring up basic packages from TurtleBot3 SBC to start TurtleBot3 applications.
   ```bash
-$ roslaunch turtlebot3_bringup turtlebot3_robot.launch
+> roslaunch turtlebot3_bringup turtlebot3_robot.launch
   ```
 
 <details>

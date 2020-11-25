@@ -10,17 +10,18 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 50
+page_number: 30
 ---
 
-<div style="counter-reset: h1 31"></div>
-<div style="counter-reset: h2 3"></div>
+<div style="counter-reset: h1 13"></div>
+<div style="counter-reset: h2 1"></div>
+<div style="counter-reset: h3 3"></div>
 
 <!--[dummy Header 1]>
   <h1 id="appendixes"><a href="#appendixes">Appendixes</a></h1>
 <![end dummy Header 1]-->
 
-## [RealSense™](#appendix-realsense)
+### [RealSense™](#appendix-realsense)
 
 ![](/assets/images/platform/turtlebot3/appendix_realsense/realsense_r200.png)
 

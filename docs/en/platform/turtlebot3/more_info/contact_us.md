@@ -10,14 +10,15 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 54
+page_number: 35
 ---
 
-<div style="counter-reset: h1 33"></div>
+<div style="counter-reset: h1 13"></div>
+<div style="counter-reset: h2 4"></div>
 
-# [Contact US](#contact-us)
+## [Contact US](#contact-us)
 
-## [About Open Robotics](#about-open-robotics)
+### [About Open Robotics](#about-open-robotics)
 
 ![](/assets/images/platform/turtlebot3/logo_openrobotics.png)
 
@@ -27,7 +28,7 @@ page_number: 54
 * Address : 170 S Whisman Rd, Building D, Suite A, Mountain View, CA 94041, USA
 * E-Mail : turtlebot@osrfoundation.org
 
-## [About ROBOTIS](#about-robotis)
+### [About ROBOTIS](#about-robotis)
 
 ![](/assets/images/platform/turtlebot3/logo_robotis.png)
 
@@ -67,7 +68,7 @@ There are many answers to this question, but we strive to develop and apply prod
 * Web: [http://www.robotis.com/](http://www.robotis.com/)
 * E-Mail: contactus2@robotis.com
 
-## [About OST (Open Source Team)](#about-ost-open-source-team)
+### [About OST (Open Source Team)](#about-ost-open-source-team)
 
 ![](/assets/images/platform/turtlebot3/contact/open_source_team.jpg)
 

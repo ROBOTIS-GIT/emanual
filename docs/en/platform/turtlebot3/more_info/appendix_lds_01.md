@@ -10,18 +10,16 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 49
+page_number: 29
 ---
 
 <div style="counter-reset: h1 13"></div>
-<div style="counter-reset: h2 0"></div>
-<div style="counter-reset: h3 3"></div>
+<div style="counter-reset: h2 1"></div>
+<div style="counter-reset: h3 2"></div>
 
 <!--[dummy Header 1]>
   <h1 id="appendixes"><a href="#appendixes">Appendixes</a></h1>
 <![end dummy Header 1]-->
-
-## [Appendixes](#appendixes)
 
 ### [LDS-01](#appendix-lds01)
 

@@ -10,10 +10,10 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 53
+page_number: 36
 ---
 
-<div style="counter-reset: h1 32"></div>
+<div style="counter-reset: h1 13"></div>
 
 # [FAQ](#faq)
 

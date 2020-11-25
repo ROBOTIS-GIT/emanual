@@ -16951,7 +16951,7 @@ turtlebot3:
       url: /platform/turtlebot3/features/#specifications
     - title: "Components"
       url: /platform/turtlebot3/features/#components
-  - title: "Quick Start"
+  - title: "Quick Start Guide"
     url: /platform/turtlebot3/quick-start/
     children:
     - title: "PC Setup"
@@ -16996,14 +16996,18 @@ turtlebot3:
     - title: "Tuning Guide"
       url: /platform/turtlebot3/navigation/#tuning-guide
   - title: "Simulation"
-    url: /platform/turtlebot3/simulation/#simulation
+    url: /platform/turtlebot3/simulation/
     children:
     - title: "Gazebo Simulation"
       url: /platform/turtlebot3/simulation/#gazebo-simulation
     - title: "SLAM Simulation"
-      url: /platform/turtlebot3/simulation/#slam-simulation
-    - title: "TB3 Standalone Gazebo"
-      url: /platform/turtlebot3/simulation/#tb3-standalone-gazebo
+      url: /platform/turtlebot3/slam_simulation/
+    - title: "Navigation Simulation"
+      url: /platform/turtlebot3/nav_simulation/
+    - title: "Fake Node Simulation"
+      url: /platform/turtlebot3/fakenode_simulation/
+    - title: "Standalone Gazebo Simulation"
+      url: /platform/turtlebot3/standalone_gazebo_simulation/
   - title: "Manipulation"
     url: /platform/turtlebot3/manipulation/#manipulation
     children:
@@ -17045,8 +17049,6 @@ turtlebot3:
     children: 
     - title: "Getting Started"
       url: /platform/turtlebot3/autonomous_driving/#getting-started
-    - title: "Simulation"
-      url: /platform/turtlebot3/autonomous_driving/#simulation
     - title: "Camera Calibration"
       url: /platform/turtlebot3/autonomous_driving/#camera-calibration
       children:
@@ -17100,15 +17102,15 @@ turtlebot3:
     - title: "Patrol"
       url: /platform/turtlebot3/basic_examples/#patrol
     - title: "TurtleBot Follower Demo"
-      url: /platform/turtlebot3/applications/#turtlebot-follower-demo
+      url: /platform/turtlebot3/basic_examples/#turtlebot-follower-demo
     - title: "TurtleBot Panorama Demo"
-      url: /platform/turtlebot3/applications/#turtlebot-panorama-demo
+      url: /platform/turtlebot3/basic_examples/#turtlebot-panorama-demo
     - title: "Automatic Parking"
-      url: /platform/turtlebot3/applications/#automatic-parking
+      url: /platform/turtlebot3/basic_examples/#automatic-parking
     - title: "Automatic Parking Vision"
-      url: /platform/turtlebot3/applications/#automatic-parking-vision
+      url: /platform/turtlebot3/basic_examples/#automatic-parking-vision
     - title: "Load Multiple TurtleBot3s"
-      url: /platform/turtlebot3/applications/#load-multiple-turtlebot3s
+      url: /platform/turtlebot3/basic_examples/#load-multiple-turtlebot3s
   - title: "Friends(Locomotion)"
     url: /platform/turtlebot3/locomotion/#friendslocomotion
     children:
@@ -17158,30 +17160,30 @@ turtlebot3:
         url: /platform/turtlebot3/videos/#videos-from-open-source-team
       - title: "ROBOTIS Channel"
         url: /platform/turtlebot3/videos/#videos-from-robotis-channel
-      - title: "User Projects"
-        url: /platform/turtlebot3/projects/#user-projects
+      - title: "Projects"
+        url: /platform/turtlebot3/projects/
   - title: "More Info"
-    url: /platform/turtlebot3/moreinfo/#more-info
+    url: /platform/turtlebot3/appendixes/#more-info
     children:
     - title: "Appendixes"
       url: /platform/turtlebot3/appendixes/#appendixes
       children:
       - title: "DYNAMIXEL"
-        url: /platform/turtlebot3/appendix_dynamixel/#appendix-dynamixel
+        url: /platform/turtlebot3/appendixes/#dynamixel
       - title: "OpenCR1.0"
-        url: /platform/turtlebot3/appendix_opencr1_0/#appendix-opencr10
+        url: /platform/turtlebot3/appendix_opencr1_0/
       - title: "LDS-01"
-        url: /platform/turtlebot3/appendix_lds_01/#appendix-lds01
+        url: /platform/turtlebot3/appendix_lds_01/
       - title: "RealSense™"
-        url: /platform/turtlebot3/appendix_realsense/#appendix-realsense
+        url: /platform/turtlebot3/appendix_realsense/
       - title: "Raspberry Pi Camera"
-        url: /platform/turtlebot3/appendix_raspi_cam/#appendix-raspberry-pi-camera
+        url: /platform/turtlebot3/appendix_raspi_cam/
     - title: "Compatible Devices"
-      url: /platform/turtlebot3/compatible_devices/#compatible-devices
+      url: /platform/turtlebot3/compatible_devices/
     - title: "Additional Sensors"
-      url: /platform/turtlebot3/additional_sensors/#additional-sensors
+      url: /platform/turtlebot3/additional_sensors/
     - title: "OpenSource and Licenses"
-      url: /platform/turtlebot3/opensource/#opensource-licenses
+      url: /platform/turtlebot3/opensource/
       children:
       - title: "OpenSource Software"
         url: /platform/turtlebot3/opensource/#opensource-software
@@ -17194,7 +17196,7 @@ turtlebot3:
       - title: "Documents License"
         url: /platform/turtlebot3/opensource/#documents-license
     - title: "Contact US"
-      url: /platform/turtlebot3/contact_us/#contact-us
+      url: /platform/turtlebot3/contact_us/
       children:
       - title: "About Open Robotics"
         url: /platform/turtlebot3/contact_us/#about-open-robotics

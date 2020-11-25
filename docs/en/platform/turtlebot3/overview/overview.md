@@ -23,27 +23,13 @@ page_number: 1
 
 **What is TurtleBot?**
 
-<details>
-<summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) TurtleBot is...
-{: .notice--success}
-</summary>
 [TurtleBot][turtlebot] is a [ROS][ros] standard platform robot. Turtle is derived from the Turtle robot, which was driven by the educational computer programming language [Logo][logo] in 1967. In addition, the [turtlesim node][turtlesim], which first appears in the basic tutorial of ROS, is a program that mimics the command system of the [Logo turtle program][logo_primer]. It is also used to create the [Turtle icon][tuturtle] as a symbol of ROS. The nine dots used in the ROS logo derived from the back shell of the turtle. TurtleBot, which originated from the Turtle of Logo, is designed to easily teach people who are new to ROS through TurtleBot as well as to teach computer programming language using Logo. Since then TurtleBot has become the standard platform of ROS, which is the most popular platform among developers and students.
-</details>
 
-**What is TurtleBot3?**
-
-<details>
-<summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) There are 3 versions of the TurtleBot3 model...
-{: .notice--success}
-</summary>
 There are 3 versions of the [TurtleBot][turtlebot] model. TurtleBot1 was developed by Tully (Platform Manager at Open Robotics) and Melonee (CEO of Fetch Robotics) from Willow Garage on top of the iRobot’s Roomba-based research robot, Create, for ROS deployment. It was developed in 2010 and has been on sale since 2011. In 2012, TurtleBot2 was developed by Yujin Robot based on the research robot, iClebo Kobuki. In 2017, TurtleBot3 was developed with features to supplement the lacking functions of its predecessors, and the demands of users. The TurtleBot3 adopts ROBOTIS smart actuator [DYNAMIXEL][dynamixel] for driving. For more information on the TurtleBot series, please see the following [link][history].
 
 TurtleBot3 is a small, affordable, programmable, ROS-based mobile robot for use in education, research, hobby, and product prototyping. The goal of TurtleBot3 is to dramatically reduce the size of the platform and lower the price without having to sacrifice its functionality and quality, while at the same time offering expandability. The TurtleBot3 can be customized into various ways depending on how you reconstruct the mechanical parts and use optional parts such as the computer and sensor. In addition, TurtleBot3 is evolved with cost-effective and small-sized SBC that is suitable for robust embedded system, 360 degree distance sensor and 3D printing technology.
 
 The TurtleBot3’s core technology is [SLAM][slam], [Navigation][navigation] and [Manipulation][manipulation], making it suitable for home service robots. The TurtleBot can run SLAM(simultaneous localization and mapping) algorithms to build a map and can drive around your room. Also, it can be controlled remotely from a laptop, joypad or Android-based smart phone. The TurtleBot can also follow a person’s legs as they walk in a room. Also the TurtleBot3 can be used as a mobile manipulator capable of manipulating an object by attaching a manipulator like OpenMANIPULATOR. The [OpenMANIPULATOR][openmanipulator] has the advantage of being compatible with TurtleBot3 Waffle and Waffle Pi. Through this compatibility can compensate for the lack of freedom and can have greater completeness as a service robot with the the SLAM and navigation capabilities that the TurtleBot3 has.
-</details>
 
 **How to contribute to ROS and TurtleBot?**
 
