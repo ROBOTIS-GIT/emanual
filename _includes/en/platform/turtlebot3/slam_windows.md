@@ -12,7 +12,7 @@ The **SLAM (Simultaneous Localization and Mapping)** is a technique to draw a ma
 
 ## [Run SLAM Node](#run-slam-node)
 
-1. Run roscore from Remote PC.
+1. If `roscore` is not running, run roscore. **Skip this step if roscore is already running**.
   ```bash
 > roscore
   ```

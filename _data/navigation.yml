@@ -16991,19 +16991,17 @@ turtlebot3:
       url: /platform/turtlebot3/navigation/#run-navigation-nodes
     - title: "Estimate Initial Pose"
       url: /platform/turtlebot3/navigation/#estimate-initial-pose
-    - title: "Send Navigation Goal"
-      url: /platform/turtlebot3/navigation/#send-navigation-goal
+    - title: "Set Navigation Goal"
+      url: /platform/turtlebot3/navigation/#set-navigation-goal
     - title: "Tuning Guide"
       url: /platform/turtlebot3/navigation/#tuning-guide
-    - title: "References"
-      url: /platform/turtlebot3/navigation/#references
   - title: "Simulation"
     url: /platform/turtlebot3/simulation/#simulation
     children:
-    - title: "TurtleBot3 Fake Node"
-      url: /platform/turtlebot3/simulation/#turtlebot3-simulation-using-fake-node
-    - title: "TurtleBot3 ROS Gazebo"
-      url: /platform/turtlebot3/simulation/#turtlebot3-simulation-using-gazebo
+    - title: "Gazebo Simulation"
+      url: /platform/turtlebot3/simulation/#gazebo-simulation
+    - title: "SLAM Simulation"
+      url: /platform/turtlebot3/simulation/#slam-simulation
     - title: "TB3 Standalone Gazebo"
       url: /platform/turtlebot3/simulation/#tb3-standalone-gazebo
   - title: "Manipulation"
