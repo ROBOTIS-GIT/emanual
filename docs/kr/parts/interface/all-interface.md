@@ -15,7 +15,7 @@ sidebar:
 
 |                                      LN-101                                       |                                              USB2DYNAMIXEL                                               |                                                U2D2                                                |
 |:---------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------:|
-| [![](/assets/images/parts/interface/ln101.jpg)](/docs/kr/parts/interface/ln-101/) | [![](/assets/images/parts/interface/usb2dynamixel_product.jpg)](/docs/kr/parts/interface/usb2dynamixel/) | [![](/assets/images/parts/interface/u2d2_product.jpg)](/docs/kr/parts/interface/dynamixel_shield/) |
+| [![](/assets/images/parts/interface/ln101.jpg)](/docs/kr/parts/interface/ln-101/) | [![](/assets/images/parts/interface/usb2dynamixel_product.jpg)](/docs/kr/parts/interface/usb2dynamixel/) | [![](/assets/images/parts/interface/u2d2_product.jpg)](/docs/kr/parts/interface/u2d2/) |
 
 # [확장보드](#확장보드)
 

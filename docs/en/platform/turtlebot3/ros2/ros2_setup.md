@@ -10,7 +10,7 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 
+page_number: 30
 ---
 
 <div style="counter-reset: h1 15"></div>
@@ -38,7 +38,7 @@ To setup ROS (Robot Operating System) on Remote PC, install Ubuntu 18.04 on **Re
 
 ![](/assets/images/platform/turtlebot3/logo_ros.png)
 
-As TurtleBot3 operates on ROS, it requies to install `ros-dashing-desktop` debian packages for ROS 2 (Dashing Diademata) on **Remote PC**. Following link will guide on installing ROS 2.
+As TurtleBot3 operates on ROS, it requires to install `ros-dashing-desktop` debian packages for ROS 2 (Dashing Diademata) on **Remote PC**. Following link will guide on installing ROS 2.
 
 - [ROS 2 Installation Guide](https://index.ros.org/doc/ros2/Installation/Dashing/)
 

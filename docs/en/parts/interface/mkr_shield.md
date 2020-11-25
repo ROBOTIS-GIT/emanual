@@ -7,14 +7,14 @@ share: false
 author_profile: false
 permalink: /docs/en/parts/interface/mkr_shield/
 sidebar:
-  title: MKR DYNAMIXEL Shield
+  title: DYNAMIXEL Shield(MKR)
   nav: "mkr_shield"
 ---
 
 # [Introduction](#introduction)
 ![](/assets/images/parts/interface/mkr_shield/mkr_shield_product.png)
 
-MKR DYNAMIXEL Shield(TTL) is compatible with MKR form factor Arduino boards such as MKR ZERO, MKR1000 WIFI, MKR WiFi 1010, and Portenta H7. We provide Arduino libraries(DYNAMIXEL2Arduino, DYNAMIXEL Shield) for MKR DYNAMIXEL Shield to accelerate the development process using DYNAMIXEL on Arduino.
+**DYNAMIXEL Shield for Arduino MKR Series** is compatible with MKR form factor Arduino boards such as MKR ZERO, MKR1000 WIFI, MKR WiFi 1010, and Portenta H7. We provide Arduino libraries(DYNAMIXEL2Arduino, DYNAMIXEL Shield) for MKR DYNAMIXEL Shield to accelerate the development process using DYNAMIXEL on Arduino.
 
 Please refer to DYNAMIXEL Shield Libraries section to 
 
