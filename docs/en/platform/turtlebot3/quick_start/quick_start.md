@@ -24,23 +24,23 @@ page_number: 4
 
 {::options parse_block_html="true" /}
 
-<section id="{{ page.tab_title1 }}" class="tab_contents">
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/turtlebot3/quickstart_kinetic.md %}
 </section>
 
-<section id="{{ page.tab_title2 }}" class="tab_contents">
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
 {% include en/platform/turtlebot3/quickstart_noetic.md %}
 </section>
 
-<section id="{{ page.tab_title3 }}" class="tab_contents">
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
 {% include en/platform/turtlebot3/quickstart_dashing.md %}
 </section>
 
-<section id="{{ page.tab_title4 }}" class="tab_contents">
+<section data-id="{{ page.tab_title4 }}" class="tab_contents">
 {% include en/platform/turtlebot3/quickstart_foxy.md %}
 </section>
 
-<section id="{{ page.tab_title5 }}" class="tab_contents">
+<section data-id="{{ page.tab_title5 }}" class="tab_contents">
 {% include en/platform/turtlebot3/quickstart_windows.md %}
 </section>
 

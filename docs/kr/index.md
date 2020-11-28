@@ -54,7 +54,7 @@ e-Manual은 로보티즈에서 제공하는 모든 제품에 대한 상세한 �
 
         <a class="Show-me-whole-product" href="/docs/kr/platform/">
           <div class="archive__item-teaser">
-              <img src="/assets/platform_2.png" alt="플랫폼">
+              <img src="/assets/platform.png" alt="플랫폼">
 
           </div>
 

@@ -11,6 +11,7 @@ tab_title1: Kinetic
 tab_title2: Noetic
 tab_title3: Dashing
 tab_title4: Foxy
+tab_title5: Windows
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
@@ -39,4 +40,11 @@ page_number: 13
 
 <section id="{{ page.tab_title4 }}" class="tab_contents">
 {% include en/platform/turtlebot3/slam_simulation_foxy.md %}
+</section>
+
+<section id="{{ page.tab_title5 }}" class="tab_contents">
+
+**NOTE**: This feature is available for Kinetic, Noetic, Dashing, Foxy. 
+{: .notice}
+
 </section>

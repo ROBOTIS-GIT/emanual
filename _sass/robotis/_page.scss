@@ -11,21 +11,6 @@ html {
   display: block;
 }
 
-// button[data-tab-name="Kinetic"] {
-//   background: #eb2e28;
-//   color: #333;
-// }
-
-// button[data-tab-name="Melodic"] {
-//   background: #5883b8;
-//   color: #fffbd0;
-// }
-
-// button[data-tab-name="Noetic"] {
-//   background: #88b55a;
-//   color: #1a2c33;
-// }
-
 .tab {
   width: 5.4rem;
   font-size: $type-size-5;
@@ -39,21 +24,13 @@ html {
   border-radius: 5%;
   box-sizing: border-box;
   cursor: pointer;
-  // opacity: 0.5;
 }
 
-// .tab:hover {
-//   // transform: scale(1.2);
-//   // transition: all 300ms ease;
-//   font-weight: bold;
-// }
 
 .tab.selected {
   background: #3e4f6e;
   color: #e6e6e6;
-  // font-weight: bold;
-  // opacity: 1;
-  // transform: scale(1.2);
+
 }
 #main {
   margin: 0;

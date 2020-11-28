@@ -66,7 +66,7 @@ header:
 
         <a class="Show-me-whole-product" href="/docs/en/platform/">
           <div class="archive__item-teaser">
-              <img src="/assets/platform_2.png" alt="PLATFORM">
+              <img src="/assets/platform.png" alt="PLATFORM">
 
           </div>
 

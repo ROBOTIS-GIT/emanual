@@ -1,5 +1,5 @@
 
-Machine learning, learning through experience, is a data analysis technique that teaches computers to recognize what is natural for people and animals. There are three types of machine learning: supervised learning, unsupervised learning, reinforcement learning.
+<!-- Machine learning, learning through experience, is a data analysis technique that teaches computers to recognize what is natural for people and animals. There are three types of machine learning: supervised learning, unsupervised learning, reinforcement learning.
 
 This application is reinforcement learning with DQN (Deep Q-Learning). The reinforcement learning is concerned with how software agents ought to take actions in an environment, so as to maximize some notion of cumulative reward.
 
@@ -10,9 +10,9 @@ The contents in e-Manual can be updated without a previous notice. Therefore, so
 
 This shows reinforcement learning with TurtleBot3 in gazebo.
 This reinforcement learning is applied DQN(Deep Q-Learning) algorithm with LDS.  
-We are preparing a four-step reinforcement learning tutorial.
+We are preparing a four-step reinforcement learning tutorial. -->
 
-## [Software Setup](#software-setup)
+<!-- ## [Software Setup](#software-setup)
 
 Install Tensorflow and Keras on PC (Requirement: Ubuntu 18.04 and ROS2 Dashing)
 
@@ -55,8 +55,10 @@ $ pip3 install keras==2.1.5
 $ cd ~/robotis_ws/src/
 $ git clone -b ros2 https://github.com/ROBOTIS-GIT/turtlebot3_machine_learning.git
 $ cd ~/robotis_ws && colcon build --symlink-install
-```
+``` 
 
+-->
+<!-- 
 ## [Set Parameters](#set-parameters)
 The goal of DQN Agent is to get TurtleBot3 to the goal to avoid obstacles. 
 The closer TurtleBot3 gets to, the more positive reward it gets. When TurtleBot3 gets closer to the goal, it gets a positive reward. When it gets farther it gets a negative reward.
@@ -202,4 +204,6 @@ $ ros2 run turtlebot3_dqn dqn_agent 4
 - If you want to test your trained model, use the following command.
 ``` bash
 $ ros2 run turtlebot3_dqn dqn_test 4
-```
+``` 
+
+-->
