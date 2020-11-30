@@ -26,6 +26,12 @@ The Motion project file has an .mtnx extension, and is shown on the PC as the ic
 
 ## [Software Install](#software-install)
 
+![](/assets/images/sw/all_software/icon_r_motion_2.jpg)  
+- [Install R+ Motion 2.0 for Mac OS](https://apps.apple.com/en/app/r-motion2/id1449808903)
+- [Install R+ Motion 2.0 for Windows](https://www.robotis.com/service/download.php?no=3)
+
+<!-- 
+
 **WARNING** : R+Motion 2.0 software installation procedure for Mac OS X has been updated since v2.3.0.  
 [`Mac OS X R+Motion 2.0 Download`]{: .blank}
 {: .notice--warning}
@@ -70,7 +76,9 @@ The Motion project file has an .mtnx extension, and is shown on the PC as the ic
   ![](/assets/images/sw/rplus2/motion/roboplus_motion2_install_10.png)
 
 11. If software is successfully installed, it'll be appeared on Applications or Launcher screen.  
-  ![](/assets/images/sw/rplus2/motion/roboplus_motion2_install_11.png)
+  ![](/assets/images/sw/rplus2/motion/roboplus_motion2_install_11.png) 
+  
+  -->
 
 ## [Menu](#menu)
 

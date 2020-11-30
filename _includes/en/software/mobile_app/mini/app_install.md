@@ -8,7 +8,13 @@ ROBOTIS-MINI uses a smart device to operate various motions.
 Open the `Play Store` or `App Store` on the smart device. (Play Store is for Android Market App)  
 Search for `ROBOTIS MINI` or `ROBOTIS` and select `MINI`, then click to install. An authorization request message may appear.
 
+In order to use ROBOTIS MINI on ios (for iPhone/iPad), [BT-410](/docs/en/parts/communication/bt-410/) is required for a bluetooth comunication between a smart device and the ROBOTIS MINI. 
+{: .notice}
+
 ![](/assets/images/sw/mobile/mini_app_001.jpg)
+
+[Installing ROBOTIS MINI for ios](https://apps.apple.com/en/app/robotis-mini/id948481762)
+{: .notice}
 
 ### Bluetooth Connection
 When the controller is turned on and the LED of the Bluetooth (BT-210) blinks, the robot and Bluetooth are successfully connected.

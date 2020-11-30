@@ -27,6 +27,12 @@ sidebar:
 
 ## [소프트웨어 설치](#소프트웨어-설치)
 
+![](/assets/images/sw/all_software/icon_r_motion_2.jpg)  
+- [R+ Motion 2.0 설치하기 (맥 OS)](https://apps.apple.com/kr/app/r-motion2/id1449808903)
+- [R+ Motion 설치하기 (윈도우즈)](https://www.robotis.com/service/download.php?no=3)
+
+<!-- 
+
 **주의** : 로보플러스 모션 2.0 소프트웨어의 Mac OS X 설치방법이 v2.4.12부터 변경되었습니다.  
 [`Mac OS X 로보플러스 모션 2.0 다운로드`]{: .blank}
 {: .notice--warning}
@@ -70,7 +76,9 @@ sidebar:
   ![](/assets/images/sw/rplus2/motion/roboplus_motion2_install_10_kr.png)
 
 11. 소프트웨어의 설치가 정상적으로 완료되면 아래와 같이 응용 프로그램 또는 런처에서 설치된 소프트웨어를 찾을 수 있습니다.  
-  ![](/assets/images/sw/rplus2/motion/roboplus_motion2_install_11_kr.png)
+  ![](/assets/images/sw/rplus2/motion/roboplus_motion2_install_11_kr.png) 
+  
+  -->
 
 ## [메뉴설명](#메뉴설명)
 
