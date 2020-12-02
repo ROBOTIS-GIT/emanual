@@ -156,30 +156,6 @@ page_number: 10
 </section>
 
 
-<!-- 
-<section data-id="{{ page.tab_title1 }}" class="tab_contents">
-{% include en/platform/turtlebot3/slam_kinetic.md %}
-</section>
-
-<section data-id="{{ page.tab_title2 }}" class="tab_contents">
-{% include en/platform/turtlebot3/slam_noetic.md %}
-</section>
-
-<section data-id="{{ page.tab_title3 }}" class="tab_contents">
-{% include en/platform/turtlebot3/slam_dashing.md %}
-</section>
-
-<section data-id="{{ page.tab_title4 }}" class="tab_contents">
-{% include en/platform/turtlebot3/slam_foxy.md %}
-</section>
-
-<section data-id="{{ page.tab_title5 }}" class="tab_contents">
-{% include en/platform/turtlebot3/slam_windows.md %}
-</section> 
-
--->
-
-
 [navigation]: /docs/en/platform/turtlebot3/navigation/#navigation
 [teleoperation]: /docs/en/platform/turtlebot3/teleoperation/#teleoperation
 [export_turtlebot3_model]: /docs/en/platform/turtlebot3/export_turtlebot3_model
