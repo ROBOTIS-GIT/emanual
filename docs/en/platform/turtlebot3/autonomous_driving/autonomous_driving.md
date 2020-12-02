@@ -25,11 +25,11 @@ page_number: 19
 
 # [Autonomous Driving](#autonomous-driving)
 
-<section id="{{ page.tab_title1 }}" class="tab_contents">
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/turtlebot3/autonomous_driving_kinetic.md %}
 </section>
 
-<section id="{{ page.tab_title2 }}" class="tab_contents">
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
 
 **NOTE**: This feature is available for Kinetic only. 
 {: .notice}
@@ -37,21 +37,21 @@ page_number: 19
 </section>
 
 
-<section id="{{ page.tab_title3 }}" class="tab_contents">
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
 
 **NOTE**: This feature is available for Kinetic only. 
 {: .notice}
 
 </section>
 
-<section id="{{ page.tab_title4 }}" class="tab_contents">
+<section data-id="{{ page.tab_title4 }}" class="tab_contents">
 
 **NOTE**: This feature is available for Kinetic only. 
 {: .notice}
 
 </section>
 
-<section id="{{ page.tab_title5 }}" class="tab_contents">
+<section data-id="{{ page.tab_title5 }}" class="tab_contents">
 
 **NOTE**: This feature is available for Kinetic only. 
 {: .notice}

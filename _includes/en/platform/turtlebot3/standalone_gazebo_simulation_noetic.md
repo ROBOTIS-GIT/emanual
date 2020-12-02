@@ -118,7 +118,7 @@ $ ./image_listener ${TB3_MODEL}
 - [Tutorial for making sensor plugin](http://gazebosim.org/tutorials?tut=contact_sensor)
 - [Tutorial for topic subscription](http://gazebosim.org/tutorials?tut=topics_subscribed)
 
-[pc_setup]: /docs/en/platform/turtlebot3/pc_setup/#install-dependent-ros-packages
+[pc_setup]: /docs/en/platform/turtlebot3/quick-start/#install-dependent-ros-1-packages-1
 [export_turtlebot3_model]: /docs/en/platform/turtlebot3/export_turtlebot3_model
 [slam]: /docs/en/platform/turtlebot3/slam/#slam
 [simulation]: /docs/en/platform/turtlebot3/simulation/

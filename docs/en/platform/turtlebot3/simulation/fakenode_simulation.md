@@ -26,32 +26,25 @@ page_number: 15
 
 {::options parse_block_html="true" /}
 
-<section id="{{ page.tab_title1 }}" class="tab_contents">
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/turtlebot3/fakenode_simulation_kinetic.md %}
 </section>
 
-<section id="{{ page.tab_title2 }}" class="tab_contents">
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
 {% include en/platform/turtlebot3/fakenode_simulation_noetic.md %}
 </section>
 
-<section id="{{ page.tab_title3 }}" class="tab_contents">
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
 {% include en/platform/turtlebot3/fakenode_simulation_dashing.md %}
 </section>
 
-<section id="{{ page.tab_title4 }}" class="tab_contents">
+<section data-id="{{ page.tab_title4 }}" class="tab_contents">
 {% include en/platform/turtlebot3/fakenode_simulation_foxy.md %}
 </section>
 
-<section id="{{ page.tab_title5 }}" class="tab_contents">
+<section data-id="{{ page.tab_title5 }}" class="tab_contents">
 
-**NOTE**: This feature is not available for Windows. 
-{: .notice}
-
-</section>
-
-<section id="{{ page.tab_title2 }}" class="tab_contents">
-
-**NOTE**: This feature is available for Kinetic only. 
+**NOTE**: This feature is availabe for Kinetic, Noetic, Dashing, Foxy. 
 {: .notice}
 
 </section>

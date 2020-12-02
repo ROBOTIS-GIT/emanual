@@ -32,3 +32,12 @@ $ roslaunch turtlebot3_fake turtlebot3_fake.launch
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ```
+
+
+[export_turtlebot3_model]: /docs/en/platform/turtlebot3/export_turtlebot3_model
+
+[pc_setup]: /docs/en/platform/turtlebot3/quick-start/#install-dependent-ros-1-packages-1
+[export_turtlebot3_model]: /docs/en/platform/turtlebot3/export_turtlebot3_model
+[slam]: /docs/en/platform/turtlebot3/slam/#slam
+[simulation]: /docs/en/platform/turtlebot3/simulation/
+[navigation]: /docs/en/platform/turtlebot3/navigation/#navigation
