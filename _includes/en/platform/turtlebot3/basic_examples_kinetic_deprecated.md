@@ -10,8 +10,6 @@
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-<div class="notice--success">{{ notice_02 | markdownify }}</div>
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Xg1pKFQY5p4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 The contents in e-Manual can be updated without a previous notice. Therefore, some video may differ from the contents in e-Manual.

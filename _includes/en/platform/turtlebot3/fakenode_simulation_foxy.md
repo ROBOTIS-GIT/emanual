@@ -14,7 +14,7 @@ $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ ros2 launch turtlebot3_fake_node turtlebot3_fake_node.launch.py
   ```
 
-2. You can control the virtual TurtleBot3 by using [Teleoperation](/docs/en/platform/turtlebot3/ros2_basic_operation/#basic_operation/#teleoperation)
+2. You can control the virtual TurtleBot3 by using [Teleoperation](/docs/en/platform/turtlebot3/basic_operation/#teleoperation)
   ``` bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ ros2 run turtlebot3_teleop teleop_keyboard

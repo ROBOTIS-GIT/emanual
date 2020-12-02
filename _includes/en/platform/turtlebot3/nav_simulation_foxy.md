@@ -77,3 +77,5 @@ $ ros2 run turtlebot3_teleop teleop_keyboard
 
 [slam]: /docs/en/platform/turtlebot3/slam/#slam
 [navigation]: /docs/en/platform/turtlebot3/navigation/#navigation
+
+[nav2]: https://navigation.ros.org/

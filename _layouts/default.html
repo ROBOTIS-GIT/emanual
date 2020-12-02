@@ -181,7 +181,7 @@
       $(".tab_contents:nth-of-type(1)").addClass("active");
     } else if(sessionStorage.getItem("tabActive") !== null) {
       console.log("tabActive: Not Null"); 
-      $("#"+ sessionStorage.getItem("tabActive")).addClass("active");
+      $('[data-id="' + sessionStorage.getItem("tabActive")+'"]').addClass("active");
       $('[data-tab-name="'+ sessionStorage.getItem("tabActive")+'"]').addClass("tab selected");
     }
   })
@@ -205,7 +205,8 @@
       // in the "tab_contents" class, searching for a matched ID to add a new class to the speidic ID. 
       $(".tab_contents").each(function(){
       // Searching for a ID parameter "temp" and add a class, active, and css style. 
-      $("#" + temp).addClass("active");
+      // $("#" + temp).addClass("active");
+      $('[data-id="' + temp +'"]').addClass("active");
       console.log(temp+":"+ $('.tab_contents').hasClass("active")); 
       // To store user's data in the local storage, collect a class data of the active class.
       sessionStorage.setItem('tabActive', temp); 

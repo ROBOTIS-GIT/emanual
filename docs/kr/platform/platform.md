@@ -15,7 +15,7 @@ sidebar:
 
 |                                터틀봇3                                |
 | :-------------------------------------------------------------------: |
-| [![](/assets/platform_2.png)](/docs/en/platform/turtlebot3/overview/) |
+| [![](/assets/tb3_burger_Waffle.png)](/docs/en/platform/turtlebot3/overview/) |
 
 # [오픈매니퓰레이터](#오픈매니퓰레이터)
 

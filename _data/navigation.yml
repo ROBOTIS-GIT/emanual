@@ -17186,6 +17186,8 @@ turtlebot3:
       url: /platform/turtlebot3/basic_examples/#move-using-interactive-markers
     - title: "Obstacle Detection"
       url: /platform/turtlebot3/basic_examples/#obstacle-detection
+    - title: "Position Control"
+      url: /platform/turtlebot3/basic_examples/#position-control
     - title: "Point Operation"
       url: /platform/turtlebot3/basic_examples/#point-operation
     - title: "Patrol"

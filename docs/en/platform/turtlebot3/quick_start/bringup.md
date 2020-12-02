@@ -23,22 +23,22 @@ page_number: 8
 <div style="counter-reset: h2 4"></div>
 {::options parse_block_html="true" /}
 
-<section id="{{ page.tab_title1 }}" class="tab_contents">
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/turtlebot3/bringup_kinetic.md %}
 </section>
 
-<section id="{{ page.tab_title2 }}" class="tab_contents">
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
 {% include en/platform/turtlebot3/bringup_noetic.md %}
 </section>
 
-<section id="{{ page.tab_title3 }}" class="tab_contents">
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
 {% include en/platform/turtlebot3/bringup_dashing.md %}
 </section>
 
-<section id="{{ page.tab_title4 }}" class="tab_contents">
+<section data-id="{{ page.tab_title4 }}" class="tab_contents">
 {% include en/platform/turtlebot3/bringup_foxy.md %}
 </section>
 
-<section id="{{ page.tab_title5 }}" class="tab_contents">
+<section data-id="{{ page.tab_title5 }}" class="tab_contents">
 {% include en/platform/turtlebot3/bringup_windows.md %}
 </section>

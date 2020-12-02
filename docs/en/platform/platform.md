@@ -12,7 +12,7 @@ sidebar:
 
 |                              TurtleBot3                               |
 | :-------------------------------------------------------------------: |
-| [![](/assets/platform_2.png)](/docs/en/platform/turtlebot3/overview/) |
+| [![](/assets/tb3_burger_Waffle.png)](/docs/en/platform/turtlebot3/overview/) |
 
 # [OpenMANIPULATOR](#openmanipulator)
 
