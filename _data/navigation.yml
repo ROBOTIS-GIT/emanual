@@ -5248,6 +5248,9 @@ xl330-m077:
       - title: "Min/Max Position Limit(48, 52)"
         titlekr: "Min/Max Position Limit(48, 52)"
         url: /dxl/x/xl330-m077/#minmax-position-limit48-52
+      - title: "PWM Slope(62)"
+        titlekr: "PWM Slope(62)"
+        url: /dxl/x/xl330-m077/#pwm-slope62      
       - title: "Shutdown(63)"
         titlekr: "Shutdown(63)"
         url: /dxl/x/xl330-m077/#shutdown63
@@ -5465,6 +5468,9 @@ xl330-m288:
       - title: "Min/Max Position Limit(48, 52)"
         titlekr: "Min/Max Position Limit(48, 52)"
         url: /dxl/x/xl330-m288/#minmax-position-limit48-52
+      - title: "PWM Slope(62)"
+        titlekr: "PWM Slope(62)"
+        url: /dxl/x/xl330-m288/#pwm-slope62       
       - title: "Shutdown(63)"
         titlekr: "Shutdown(63)"
         url: /dxl/x/xl330-m288/#shutdown63
