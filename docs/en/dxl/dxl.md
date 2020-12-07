@@ -101,9 +101,9 @@ MX series can use Protocol 2.0 by using a particular firmware version.
 - [MX-106T/R(2.0)](/docs/en/dxl/mx/mx-106-2/)
 
 {% capture notice_01 %}
-**NOTE**: Read the following to ensure proper use of MX series(2.0).
-- In order to use Protocol 2.0 firmware version with MX series, proceed to **Firmware Recovery** via [DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/#firmware-recovery) or [R+ Manager 2.0](/docs/en/software/rplus2/manager/#firmware-recovery).
-- On Firmware Recovery to Protocol 2.0, it supports various Operating Modes, Secondary ID, Drive Mode, Bus Watchdog and etc.
+**NOTE**: Read the following to ensure proper use of MX series(2.0) with Protocol 2.0.
+- In order to use Protocol 2.0 with MX series, perform the **Firmware Recovery** of the [DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/#firmware-recovery) or [R+ Manager 2.0](/docs/en/software/rplus2/manager/#firmware-recovery).
+- MX series with Protocol 2.0 supports various Operating Modes, Secondary ID, Drive Mode, Bus Watchdog and more.
 {% endcapture %}
 <div class="notice">{{ notice_01| markdownify }}</div>
 
