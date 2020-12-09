@@ -3,7 +3,7 @@ layout: archive
 lang: kr
 ref: dyd-14
 read_time: true
-share: true
+share: false
 author_profile: false
 permalink: /docs/kr/all-dyd/dyd-14/
 sidebar:

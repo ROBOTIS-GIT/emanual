@@ -666,22 +666,22 @@ main:
       - title: "LED Module(LM-10)"
         titlekr: "LED 모듈(LM-10)"
         url: /parts/display/lm-10/
-  - title: "DYD"
-    titlekr: "DYD"
-    url: /all-dyd/
-    children:
-      - title: "DYD-11"
-        titlekr: "DYD-11"
-        url: /all-dyd/dyd-11
-        urlkr: /all-dyd/dyd-11
-      - title: "DYD-14"
-        titlekr: "DYD-14"
-        url: /all-dyd/dyd-14
-        urlkr: /all-dyd/dyd-14
-      - title: "DYD-17"
-        titlekr: "DYD-17"
-        url: /all-dyd/dyd-17
-        urlkr: /all-dyd/dyd-17
+  # - title: "DYD"
+  #   titlekr: "DYD"
+  #   url: /all-dyd/
+  #   children:
+  #     - title: "DYD-11"
+  #       titlekr: "DYD-11"
+  #       url: /all-dyd/dyd-11
+  #       urlkr: /all-dyd/dyd-11
+  #     - title: "DYD-14"
+  #       titlekr: "DYD-14"
+  #       url: /all-dyd/dyd-14
+  #       urlkr: /all-dyd/dyd-14
+  #     - title: "DYD-17"
+  #       titlekr: "DYD-17"
+  #       url: /all-dyd/dyd-17
+  #       urlkr: /all-dyd/dyd-17
   - title: "FAQ"
     titlekr: "FAQ"
     url: /faq/faq_dynamixel/

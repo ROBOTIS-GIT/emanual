@@ -3,7 +3,7 @@ layout: archive
 lang: kr
 ref: all-dyd
 read_time: true
-share: true
+share: false
 author_profile: false
 permalink: /docs/kr/all-dyd/
 sidebar:
@@ -26,7 +26,7 @@ McMaster-Carr - industrial-focus distributor of hardware and components. They st
 {: .notice}
 
 |                      Characteristics                      |  Planetary  |  Harmonic   |     DYD     |
-| :-------------------------------------------------------: | :---------: | :---------: | :---------: |
+|:---------------------------------------------------------:|:-----------:|:-----------:|:-----------:|
 |                        Gear ratio                         | **&#9675;** | **&#9678;** | **&#9678;** |
 |                       Contact ratio                       | **&#9675;** | **&#9675;** | **&#9678;** |
 |                       Compact size                        | **&#9651;** | **&#9678;** | **&#9678;** |
@@ -55,23 +55,23 @@ McMaster-Carr - industrial-focus distributor of hardware and components. They st
 일반적인 방식인 하우징을 고정하고 출력부를 회전하는 경우, 출력부의 회전 방향은 입력과 반대이며 속도는 1/R이고, 출력부를 고정하고 하우징이 회전하는 경우에는 하우징의 회전방향은 입력과 동일하고 속도는 1/(R+1) 입니다.
 
 |     Fixed     | Output speed | Input direction | output direction |                       Example                       |
-| :-----------: | :----------: | :-------------: | :--------------: | :-------------------------------------------------: |
+|:-------------:|:------------:|:---------------:|:----------------:|:---------------------------------------------------:|
 |    Housing    |  i=(-1)1/R   |   Cathode (+)   |    Anode (-)     |    ![](/assets/images/dyd/dyd_housing_01_kr.png)    |
 | Output flange |  i=1/(R+1)   |   Cathode (+)   |   Cathode (+)    | ![](/assets/images/dyd/dyd_output_flange_01_kr.png) |
 
 # [제품 라인업](#제품-라인업)
 
-|                    DYD-11                    |                    DYD-14                    |                    DYD-17                    |
-| :------------------------------------------: | :------------------------------------------: | :------------------------------------------: |
-| ![](/assets/images/dyd/dyd_lineup_11_01.png) | ![](/assets/images/dyd/dyd_lineup_14_01.png) | ![](/assets/images/dyd/dyd_lineup_17_01.png) |
-| ![](/assets/images/dyd/dyd_lineup_11_02.png) | ![](/assets/images/dyd/dyd_lineup_14_02.png) | ![](/assets/images/dyd/dyd_lineup_17_02.png) |
+|                                  DYD-11                                  |                                  DYD-14                                  |                                  DYD-17                                  |
+|:------------------------------------------------------------------------:|:------------------------------------------------------------------------:|:------------------------------------------------------------------------:|
+| [![](/assets/images/dyd/dyd_lineup_11_01.png)](/docs/kr/all-dyd/dyd-11/) | [![](/assets/images/dyd/dyd_lineup_14_01.png)](/docs/kr/all-dyd/dyd-14/) | [![](/assets/images/dyd/dyd_lineup_17_01.png)](/docs/kr/all-dyd/dyd-17/) |
+|               ![](/assets/images/dyd/dyd_lineup_11_02.png)               |               ![](/assets/images/dyd/dyd_lineup_14_02.png)               |               ![](/assets/images/dyd/dyd_lineup_17_02.png)               |
 
 > 클릭시 이동.
 
 ## [세부사양](#세부사양)
 
 |             Properties             | Unit  | DYD-11-033 | DYD-11-051 | DYD-14-051 | DYD-14-099 | DYD-17-051 | DYD-17-099 |
-| :--------------------------------: | :---: | :--------: | :--------: | :--------: | :--------: | :--------: | :--------: |
+|:----------------------------------:|:-----:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|
 |             Gear ratio             |   -   |     33     |     51     |     51     |     99     |     51     |     99     |
 |       Repeatable peak torque       |  Nm   |    8.5     |    17.0    |    27.0    |    39.0    |    34.0    |    54.0    |
 | Read output torque<br>(@2,000 rpm) |  Nm   |    2.2     |    3.5     |    5.4     |    7.8     |    16.0    |    24.0    |
@@ -88,7 +88,7 @@ McMaster-Carr - industrial-focus distributor of hardware and components. They st
 ![](/assets/images/dyd/dyd_parts_number_01.png)
 
 | Product name | Model Size | Ratio  | Shaft version |  Option   | Special production |
-| :----------: | :--------: | :----: | :-----------: | :-------: | :----------------: |
+|:------------:|:----------:|:------:|:-------------:|:---------:|:------------------:|
 |     DYD      |     11     | 33, 51 |      SC       | S, RG, PG |         SP         |
 |     DYD      |     14     | 51, 99 |      C,D      | S, RG, PG |         SP         |
 |     DYD      |     17     | 51, 99 |      C,D      | S, RG, PG |         SP         |
@@ -113,7 +113,7 @@ McMaster-Carr - industrial-focus distributor of hardware and components. They st
 ![](/assets/images/dyd/dyd_duty_cycle_01_kr.png)
 
 | Properties | Description                                | Properties | Description                               |
-| :--------: | ------------------------------------------ | :--------: | ----------------------------------------- |
+|:----------:|:-------------------------------------------|:----------:|:------------------------------------------|
 |     Ta     | Average output load                        |     na     | Average input speed                       |
 |     T1     | maximum output torque at acceleration [Nm] |     n1     | average input speed at acceleration [rpm] |
 |     T2     | output torque at constant speed [Nm]       |     n2     | input speed at constant motion [rpm]      |
@@ -148,7 +148,7 @@ DYD의 정격수명은 입력축 베어링의 수명에 의해 결정되며 베�
 ![](/assets/images/dyd/dyd_service_life_01_kr.png)
 
 | Properties | Description                    |
-| :--------: | ------------------------------ |
+|:----------:|:-------------------------------|
 |     Lh     | Required service life [hours]  |
 |     LR     | Reference service life [hours] |
 |     nR     | nominal input speed [rpm]      |
@@ -161,7 +161,7 @@ DYD의 정격수명은 입력축 베어링의 수명에 의해 결정되며 베�
 ### [동작 사이클 정의](#동작-사이클-정의)
 
 | Properties | Description                                | Value | Note |
-| :--------: | ------------------------------------------ | :---: | ---- |
+|:----------:|:-------------------------------------------|:-----:|:-----|
 |     T1     | Maximum output torque at acceleration [Nm] |  7.5  | -    |
 |     T2     | Output torque at constant speed [Nm]       |   5   | -    |
 |     T3     | Maximum output torque at deceleration [Nm] |  2.5  | -    |
@@ -177,19 +177,19 @@ DYD의 정격수명은 입력축 베어링의 수명에 의해 결정되며 베�
 ### [평균부하토크 계산](#평균부하토크-계산)
 
 | Properties | Description         | Value | Note |
-| :--------: | ------------------- | :---: | ---- |
+|:----------:|:--------------------|:-----:|:-----|
 |     Ta     | Average output load | 4.72  | cal. |
 
 ### [평균입력속도 계산](#평균입력속도-계산)
 
 | Properties | Description         |  Value  | Note |
-| :--------: | ------------------- | :-----: | ---- |
+|:----------:|:--------------------|:-------:|:-----|
 |     na     | Average input speed | 2571.43 | cal. |
 
 ### [예비(사전)형번 선정: DYD-14-051](#예비사전형번-선정-dyd-14-051)
 
 |             Properties             | DYD-14-051 |
-| :--------------------------------: | :--------: |
+|:----------------------------------:|:----------:|
 |             Gear ratio             |     51     |
 |       Repeatable peak torque       |    27.0    |
 | Read output torque<br>(@2,000 rpm) |    5.4     |
@@ -206,7 +206,7 @@ DYD의 정격수명은 입력축 베어링의 수명에 의해 결정되며 베�
 ### [예상수명계산: DYD-14-051](#예상수명계산-dyd-14-051)
 
 | Properties | Description                    |  Value  | Note           |
-| :--------: | ------------------------------ | :-----: | -------------- |
+|:----------:|:-------------------------------|:-------:|:---------------|
 |     Lh     | Required service life [hours]  | 4,883.5 | cal.           |
 |     LR     | Reference service life [hours] |  5,000  | See data sheet |
 |     nR     | Nominal input speed [rpm]      |  2,000  | See data sheet |
@@ -221,7 +221,7 @@ DYD의 정격수명은 입력축 베어링의 수명에 의해 결정되며 베�
 ### [형번 재선정 : DYD-14-099](#형번-재선정--dyd-14-099)
 
 |             Properties             | DYD-14-099 |
-| :--------------------------------: | :--------: |
+|:----------------------------------:|:----------:|
 |             Gear ratio             |     99     |
 |       Repeatable peak torque       |    39.0    |
 | Read output torque<br>(@2,000 rpm) |    7.8     |
@@ -236,7 +236,7 @@ DYD의 정격수명은 입력축 베어링의 수명에 의해 결정되며 베�
 ### [예상수명계산: DYD-14-099](#예상수명계산-dyd-14-099)
 
 | Properties | Description                    |  Value  | Note           |
-| :--------: | ------------------------------ | :-----: | -------------- |
+|:----------:|:-------------------------------|:-------:|:---------------|
 |     Lh     | Required service life [hours]  | 5,520.4 | cal.           |
 |     LR     | Reference service life [hours] |  5,000  | See data sheet |
 |     nR     | Nominal input speed [rpm]      |  2,000  | See data sheet |
@@ -261,7 +261,7 @@ Starting Torque = 20 cNm (DYD-14)
 ### [입력축 타입선정](#입력축-타입선정)
 
 | Option |                   Type - C                    |               Type - D                |                  Type-SC                  |
-| :----: | :-------------------------------------------: | :-----------------------------------: | :---------------------------------------: |
+|:------:|:---------------------------------------------:|:-------------------------------------:|:-----------------------------------------:|
 | Shape  | ![](/assets/images/dyd/dyd_clamp_ring_01.png) | ![](/assets/images/dyd/dyd_d_cut.png) | ![](/assets/images/dyd/dyd_set_screw.png) |
 |  Name  |                  Clamp-ring                   |                 D-Cut                 |                 Set-screw                 |
 
