@@ -666,6 +666,22 @@ main:
       - title: "LED Module(LM-10)"
         titlekr: "LED 모듈(LM-10)"
         url: /parts/display/lm-10/
+  # - title: "DYD"
+  #   titlekr: "DYD"
+  #   url: /all-dyd/
+  #   children:
+  #     - title: "DYD-11"
+  #       titlekr: "DYD-11"
+  #       url: /all-dyd/dyd-11
+  #       urlkr: /all-dyd/dyd-11
+  #     - title: "DYD-14"
+  #       titlekr: "DYD-14"
+  #       url: /all-dyd/dyd-14
+  #       urlkr: /all-dyd/dyd-14
+  #     - title: "DYD-17"
+  #       titlekr: "DYD-17"
+  #       url: /all-dyd/dyd-17
+  #       urlkr: /all-dyd/dyd-17
   - title: "FAQ"
     titlekr: "FAQ"
     url: /faq/faq_dynamixel/
@@ -690,6 +706,7 @@ main:
         titlekr: "자주 묻는 질문"
         url: /faq/general
 
+        
 all-dynamixel:
   - title: "DYNAMIXEL-X"
     titlekr: "다이나믹셀-X"
@@ -855,6 +872,28 @@ all-interface:
     titlekr: "확장보드"
     url: /parts/all_interfaces/#expansion boards
     urlkr: /parts/all_interfaces/#확장보드      
+
+all-dyd: 
+  - title: "Overview"
+    titlekr: "개요"
+    url: /all-dyd/#overview
+    urlkr: /all-dyd/#개요
+  - title: "Product Lineup"
+    titlekr: "제품 라인업"
+    url: /all-dyd/#product-lineup
+    urlkr: /all-dyd/#제품-라인업
+  - title: "Product Selection Guide"
+    titlekr: "제품 선택 가이드"
+    url: /all-dyd/#product-selection-guide
+    urlkr: /all-dyd/#제품-선택-가이드
+  - title: "Glossary"
+    titlekr: "기술 자료"
+    url: /all-dyd/#glossary
+    urlkr: /all-dyd/#기술-자료
+  - title: "Application"
+    titlekr: "활용 예시"
+    url: /all-dyd/#application
+    urlkr: /all-dyd/#활용-예시
 
 dynamixel_pro:
   - title: "Product Lineup"
@@ -23975,6 +24014,60 @@ u2d2:
         url: /parts/interface/u2d2/#certifications
         urlkr: /parts/interface/u2d2/#인증-획득
         
+dyd-11:
+  - title: "Overview"
+    titlekr: "개요"
+    url: /all-dyd/dyd-11/#overview
+    urlkr: /all-dyd/dyd-11/#개요
+  - title: "Drawings"
+    titlekr: "기구도면"
+    url: /all-dyd/dyd-11/#drawings
+    urlkr: /all-dyd/dyd-11/#기구도면
+  - title: "Compatibility and Options"
+    titlekr: "호환성 및 옵션"
+    url: /all-dyd/dyd-11/#compatibility-and-options
+    urlkr: /all-dyd/dyd-11/#호환성-및-옵션
+  - title: "Compatibility and Options"
+    titlekr: "조립 예시"
+    url: /all-dyd/dyd-11/#compatibility-and-options
+    urlkr: /all-dyd/dyd-11/#조립-예시
+
+dyd-14:
+  - title: "Overview"
+    titlekr: "개요"
+    url: /all-dyd/dyd-14/#overview
+    urlkr: /all-dyd/dyd-14/#개요
+  - title: "Drawings"
+    titlekr: "기구도면"
+    url: /all-dyd/dyd-14/#drawings
+    urlkr: /all-dyd/dyd-14/#기구도면
+  - title: "Compatibility and Options"
+    titlekr: "호환성 및 옵션"
+    url: /all-dyd/dyd-14/#compatibility-and-options
+    urlkr: /all-dyd/dyd-14/#호환성-및-옵션
+  - title: "Compatibility and Options"
+    titlekr: "조립 예시"
+    url: /all-dyd/dyd-14/#compatibility-and-options
+    urlkr: /all-dyd/dyd-14/#조립-예시
+
+dyd-17:
+  - title: "Overview"
+    titlekr: "개요"
+    url: /all-dyd/dyd-17/#overview
+    urlkr: /all-dyd/dyd-17/#개요
+  - title: "Drawings"
+    titlekr: "기구도면"
+    url: /all-dyd/dyd-17/#drawings
+    urlkr: /all-dyd/dyd-17/#기구도면
+  - title: "Compatibility and Options"
+    titlekr: "호환성 및 옵션"
+    url: /all-dyd/dyd-17/#compatibility-and-options
+    urlkr: /all-dyd/dyd-17/#호환성-및-옵션
+  - title: "조립 예시"
+    titlekr: "조립예시"
+    url: /all-dyd/dyd-17/#compatibility-and-options
+    urlkr: /all-dyd/dyd-17/#조립-예시
+
 #FAQ sidebar
 general:
 
