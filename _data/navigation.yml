@@ -69,8 +69,8 @@ main:
       - title: "XW540-T260"
         titlekr: "XW540-T260"
         url: /dxl/x/xw540-t260/
-    - title: "P Series (PRO+)"
-      titlekr: "P 시리즈 (PRO+)"
+    - title: "DYNAMIXEL-P"
+      titlekr: "다이나믹셀-P"
       url: /dxl/p/
       children:
       - title: "PH42-020-S300-R (H42P)"
@@ -222,8 +222,8 @@ main:
     - title: "Protocol 2.0"
       titlekr: "프로토콜 2.0"
       url: /dxl/protocol2/
-  - title: "PLATFORM"
-    titlekr: "플랫폼"
+  - title: "DYNAMIXEL SYSTEM"
+    titlekr: "DYNAMIXEL SYSTEM"
     url: /platform/
     urlkr: /platform/    
     children:
@@ -272,8 +272,8 @@ main:
       - title: "OpenMANIPULATOR-X"
         titlekr: "OpenMANIPULATOR-X"
         url: /platform/openmanipulator_x/overview/
-  - title: "STEAM"
-    titlekr: "교육키트"
+  - title: "Education Kits"
+    titlekr: "교육용 키트"
     url: /edu/
     urlkr: /edu/    
     children:
@@ -286,7 +286,7 @@ main:
         - title: "PLAY 700"
           url: /edu/play/play-700/
     - title: "*OLLO"
-      titlekr: "*올로"
+      titlekr: "*로보티즈 올로"
       children:
       - title: "*BUG KIT"
         titlekr: "*버그 키트"
@@ -561,7 +561,7 @@ main:
         titlekr: "OpenCR1.0"
         url: /parts/controller/opencr10/
     - title: "Communication"
-      titlekr: "통신"
+      titlekr: "무선통신, 리모컨"
       children:
       - title: "RC-100A/100B"
         titlekr: "RC-100A/100B"
@@ -590,8 +590,8 @@ main:
     - title: "Motors"
       titlekr: "모터"
       children:
-      - title: "Geared Motor(GM-10A)"
-        titlekr: "감속모터(GM-10A)"
+      - title: "Geared Motor"
+        titlekr: "감속모터"
         url: /parts/motor/gm-10a/
       - title: "*High Speed Geared Motor"
         titlekr: "*고속 감속모터"
@@ -599,8 +599,8 @@ main:
       - title: "*Low Speed Geared Motor"
         titlekr: "*저속 감속모터"
         url: /parts/motor/l_speed_geared_motor/
-      - title: "Servo Motor(SM-10)"
-        titlekr: "서보모터(SM-10)"
+      - title: "Servo Motor"
+        titlekr: "서보모터"
         url: /parts/motor/servo_motor/
     - title: "Interface"
       titlekr: "인터페이스"
@@ -626,45 +626,45 @@ main:
     - title: "Sensors"
       titlekr: "센서"
       children:
-      - title: "IR Sensor(IRSS-10)"
-        titlekr: "적외선 센서(IRSS-10)"
+      - title: "IR Sensor"
+        titlekr: "적외선 센서"
         url: /parts/sensor/irss-10/
-      - title: "Distance Sensor(DMS-80)"
-        titlekr: "절대 거리 센서(DMS-80)"
+      - title: "Distance Sensor"
+        titlekr: "절대 거리 센서"
         url: /parts/sensor/dms-80/
-      - title: "Touch Sensor(TS-10)"
-        titlekr: "접촉 센서(TS-10)"
+      - title: "Touch Sensor"
+        titlekr: "접촉 센서"
         url: /parts/sensor/ts-10/
-      - title: "*Integrated Sensor(AX-S1)"
-        titlekr: "*통합 센서(AX-S1)"
+      - title: "*Integrated Sensor"
+        titlekr: "*통합 센서"
         url: /parts/sensor/ax-s1/
-      - title: "Gyro Sensor(GS-12)"
-        titlekr: "자이로 센서(GS-12)"
+      - title: "Gyro Sensor"
+        titlekr: "자이로 센서"
         url: /parts/sensor/gs-12/
       - title: "IR Array Sensor"
         titlekr: "적외선 어레이 센서"
         url: /parts/sensor/ir-array/
-      - title: "Color Sensor(CS-10)"
-        titlekr: "컬러 센서(CS-10)"
+      - title: "Color Sensor"
+        titlekr: "컬러 센서"
         url: /parts/sensor/cs-10/
-      - title: "Magnetic Sensor(MGSS-10)"
-        titlekr: "자석 센서(MGSS-10)"
+      - title: "Magnetic Sensor"
+        titlekr: "자석 센서"
         url: /parts/sensor/mgss-10/
-      - title: "Temperature Sensor(TPS-10)"
-        titlekr: "온도 센서(TPS-10)"
+      - title: "Temperature Sensor"
+        titlekr: "온도 센서"
         url: /parts/sensor/tps-10/
-      - title: "Motion Sensor(PIR-10)"
-        titlekr: "동작감지 센서(PIR-10)"
+      - title: "Motion Sensor"
+        titlekr: "동작감지 센서"
         url: /parts/sensor/pir-10/
-      - titlekr: "조도 센서(CDS-10)"
+      - titlekr: "조도 센서"
         url: /parts/sensor/cds-10/
-      - titlekr: "온습도 센서(TMS-10)"
+      - titlekr: "온습도 센서"
         url: /parts/sensor/tms-10/
     - title: "Display"
       titlekr: "디스플레이"
       children:
-      - title: "LED Module(LM-10)"
-        titlekr: "LED 모듈(LM-10)"
+      - title: "LED Module"
+        titlekr: "LED 모듈"
         url: /parts/display/lm-10/
   - title: "FAQ"
     titlekr: "FAQ"
@@ -674,11 +674,11 @@ main:
       - title: "DYNAMIXEL"
         titlekr: "다이나믹셀"
         url: /faq/faq_dynamixel/
-      - title: "PLATFORM"
+      - title: "DYNAMIXEL SYSTEM"
         titlekr: "플랫폼"
         url: /faq/faq_platform/
-      - title: "STEAM"
-        titlekr: "교육키트"
+      - title: "Education Kits"
+        titlekr: "교육용 키트"
         url: /faq/faq_steam/
       - title: "SOFTWARE"
         titlekr: "소프트웨어"
