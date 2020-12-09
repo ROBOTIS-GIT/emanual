@@ -29,11 +29,6 @@ Please refer to DYNAMIXEL Shield Libraries section to
 
 # [Quick Start Guide](#quick-start-guide)
 
-## Online Coursework
-(Coming up soon)  
-![](http://robotsource.net/upload_image/images/1596679803mkr.png)
-
-## Video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UFitBEHsWTo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 **Please use 12V SMPS or external power supply when operating DYNAMIXEL other than XL-320 and XL330.**
@@ -48,7 +43,7 @@ Please refer to DYNAMIXEL Shield Libraries section to
 |    Connectors<sup>2</sup>    | JST([S3B-EH]), Molex([5268-02A]), Power Connector([SMAW250-02]), Terminal Block([DG350-3.5-02P-14]) |
 |     Physical Connection      |                            TTL Multidrop Bus (3.3V Logic, 5V Compatible)                            |
 |            Cables            |       DC Jack Harness (Type A, O.D.: 5.5 [mm], I.D.: 2.5 [mm]), Convertible cable for XL-320        |
-|          Dimensions          |                                            68 x 25 [mm]                                             |
+|          Dimensions          |                                            65 x 25 [mm]                                             |
 |            Weight            |                                               11 [g]                                                |
 
 <sup>1</sup> [ROBOTIS SMPS 12V 5A PS-10] is recommended for 12V DYNAMIXEL power supply.  
@@ -108,22 +103,16 @@ MKR DYNAMIXEL Shield can be mounted on or below the Arduino MKR boards.
 Please check the compatibility when using multiple shields on a single Arduino MKR board.  
 **Arduino MKR boards cannot be powered using the VIN(DXL) power source.**
 
-## 12V DYNAMIXEL using SMPS 
-This connection is recommended for most X series DYNAMIXEL (except XL-320, XL330).  
-USB connection from PC will supply power to the MKR board and upload the Arduino sketch, while 12V SMPS provide power to connceted DYNAMIXEL.  
-  ![](/assets/images/parts/interface/mkr_shield/connection_diagram_vin.png)
-
-## 12V DYNAMIXEL using Terminal Block 
-This connection is recommended when using external power supply.  
-In order to use the Terminal Block, desolder the default power connector and solder the included terminal block.  
-Before supplying power via the terminal block, please adjust the voltage according to the recommended voltage of connected DYNAMIXEL.  
-  ![](/assets/images/parts/interface/mkr_shield/connection_diagram_vin_tb.png)
+## 12V DYNAMIXEL X Series 
+This connection is recommended for most X series DYNAMIXEL with 12V operating voltage (except XL-320, XL330).  
+The USB connection from PC supplies power and serial communication to the MKR board to upload the Arduino sketch, while 12V SMPS supplies power to connceted DYNAMIXEL.  
+  ![](/assets/images/parts/interface/mkr_shield/DXL_MKRShield_info01.jpg)
 
 ## AX / MX Series DYNAMIXEL  
 AX and MX series use different type of Molex connector.  
 In order to use the original AX or MX series cable, solder the included molex connector to empty DYNAMIXEL port.  
 Or else, use the [Robot Cable-X3P convertible].  
-  ![](/assets/images/parts/interface/mkr_shield/connection_diagram_mx.png)
+  ![](/assets/images/parts/interface/mkr_shield/DXL_MKRShield_info02.jpg)
 
 ## XL330 using USB power  
 XL330 can run off of the 5V USB power due to its low operating voltage.  
@@ -131,10 +120,10 @@ Set the power jumper to +5V side to use 5V power from the Arduino MKR board.
 
 Please be aware that Arduino MKR boards may limit the 5V power source for USB hardware protection.  
 {: .notice--warning}  
-  ![](/assets/images/parts/interface/mkr_shield/connection_diagram_5v.png)
+  ![](/assets/images/parts/interface/mkr_shield/DXL_MKRShield_info03.jpg)
 
   After uploading the program, 1 cell Lithium battery(3.7V) can be used to power the Arduino MKR board and XL330.  
-  ![](/assets/images/parts/interface/mkr_shield/connection_diagram_batt.png)
+  ![](/assets/images/parts/interface/mkr_shield/DXL_MKRShield_info04.jpg)
 
 
 # [Power Select Jumper](#power-select-jumper)
@@ -249,6 +238,8 @@ The Remote Controller class can be used with the Arduino MKR boards by enabling 
 # [Download](#download)
 - [MKR DYNAMIXEL Shield Schematic(PDF)](https://www.robotis.com/service/download.php?no=1988)  
 ![](/assets/images/parts/interface/mkr_shield/mkr_schematic.png)
+
+# [FAQ](#faq)
 
 
 [AX-12W]: /docs/en/dxl/ax/ax-12w/
