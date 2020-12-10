@@ -14,75 +14,72 @@ sidebar:
 # [Introduction](#introduction)
 ![](/assets/images/parts/interface/mkr_shield/mkr_shield_product.png)
 
-**DYNAMIXEL Shield for Arduino MKR Series** is compatible with MKR form factor Arduino boards such as MKR ZERO, MKR1000 WIFI, MKR WiFi 1010, and Portenta H7. We provide Arduino libraries(DYNAMIXEL2Arduino, DYNAMIXEL Shield) for MKR DYNAMIXEL Shield to accelerate the development process using DYNAMIXEL on Arduino.
+**DYNAMIXEL Shield for Arduino MKR Series**(hereafter referred to as "DYNAMIXEL MKR Shield") is compatible with MKR series form factor Arduino boards such as MKR ZERO, MKR1000 WIFI, MKR WiFi 1010, and Portenta H7. We provide Arduino libraries(DYNAMIXEL2Arduino, DYNAMIXEL Shield) for DYNAMIXEL MKR Shield to accelerate the development process using DYNAMIXEL on Arduino.
 
-Please refer to DYNAMIXEL Shield Libraries section to 
+Please refer to [DYNAMIXEL Shield Libraries](#dynamixel-shield-libraries) section for available APIs.
 
 {% capture shield_00 %}
 **WARNING!**
-1. This product does not contain Arduino Board. **Arduino Board should be purchased separately.**  
-2. **One of three DYNAMIXEL ports is attached** on the shield for DYNAMIXEL X series (More headers are included).  
+1. This product does not contain Arduino MKR Board. **Arduino Board should be purchased separately.**  
+2. **One of three DYNAMIXEL header is attached** on the shield for DYNAMIXEL X series (More headers for AX/MX/X series are included).  
 3. Please solder included headers and parts when necessary.  
-4. Some Arduino MKR shields may not fully compatible with MKR DYNAMIXEL Shield due to the pin confliction. Please refer to each product information before use with MKR DYNAMIXEL Shield.  
+4. Some Arduino MKR shields may not fully compatible with DYNAMIXEL MKR Shield due to the pin confliction. Please refer to each product datasheet before using with DYNAMIXEL MKR Shield.  
 {% endcapture %}
 <div class="notice--danger">{{ shield_00 | markdownify }}</div>
 
 # [Quick Start Guide](#quick-start-guide)
 
-## Online Coursework
-(Coming up soon)  
-![](http://robotsource.net/upload_image/images/1596679803mkr.png)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1Y7FLG1n-9k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Video
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UFitBEHsWTo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-**Please use 12V SMPS or external power supply when operating DYNAMIXEL other than XL-320 and XL330.**
+**Please use the recommended voltage source for the DYNAMIXEL.**
 {: .notice--warning}
 
 # [Specifications](#specifications)
 
-|             Item             |                                               Details                                               |
-|:----------------------------:|:---------------------------------------------------------------------------------------------------:|
-| VIN(DXL) Voltage<sup>1</sup> |                                            3.5 ~ 24 [V]                                             |
-|    Operating Temperature     |                                         -10 ~ +80 [&deg;C]                                          |
-|    Connectors<sup>2</sup>    | JST([S3B-EH]), Molex([5268-02A]), Power Connector([SMAW250-02]), Terminal Block([DG350-3.5-02P-14]) |
-|     Physical Connection      |                            TTL Multidrop Bus (3.3V Logic, 5V Compatible)                            |
-|            Cables            |       DC Jack Harness (Type A, O.D.: 5.5 [mm], I.D.: 2.5 [mm]), Convertible cable for XL-320        |
-|          Dimensions          |                                            68 x 25 [mm]                                             |
-|            Weight            |                                               11 [g]                                                |
+|             Item             |                                                     Details                                                      |
+|:----------------------------:|:----------------------------------------------------------------------------------------------------------------:|
+| VIN(DXL) Voltage<sup>1</sup> |                                                   3.5 ~ 24 [V]                                                   |
+|    Operating Temperature     |                                                -10 ~ +80 [&deg;C]                                                |
+|    Connectors<sup>2</sup>    | JST([S3B-EH]), Molex([5268-02A]), Battery Connector<sup>3</sup>([SMW250-02]), Terminal Block([DG350-3.5-02P-14]) |
+|     Physical Connection      |                                  TTL Multidrop Bus (3.3V Logic, 5V Compatible)                                   |
+|            Cables            |              DC Jack Harness (Type A, O.D.: 5.5 [mm], I.D.: 2.5 [mm]), Convertible cable for XL-320              |
+|          Dimensions          |                                                   65 x 25 [mm]                                                   |
+|            Weight            |                                                      11 [g]                                                      |
 
 <sup>1</sup> [ROBOTIS SMPS 12V 5A PS-10] is recommended for 12V DYNAMIXEL power supply.  
-<sup>2</sup> Only one JST is assembled by default. Please solder included connectors when necessary.
+<sup>2</sup> Only one JST is assembled by default. Please solder included connectors when necessary.  
+<sup>3</sup> The battery connector is compatible with ROBOTIS batteries [LB-010](http://en.robotis.com/shop_en/item.php?it_id=903-0143-000) or [LB-020](http://en.robotis.com/shop_en/item.php?it_id=903-0277-000).
 {: .notice}
 
 
 ## [Supported DYNAMIXEL](#supported-dynamixel)
-MKR DYNAMIXEL Shield only supports `TTL` based DYNAMIXEL lineups.
+DYNAMIXEL MKR Shield only supports `TTL` based DYNAMIXEL lineups.
 
-| DYNAMIXEL Series |                                    |                                    |                                   |                                     |
-|:-----------------|:-----------------------------------|:-----------------------------------|:----------------------------------|:------------------------------------|
-| **AX**           | [AX-12W]                           | [AX-12+/12A]                       | [AX-18F/18A]                      |                                     |
-| **MX**           | [MX-12W]                           | [MX-28T/AT]<br/> [MX-28T/AT(2.0)]  | [MX-64T/AT]<br/> [MX-64T/AT(2.0)] | [MX-106T/AT]<br/> [MX-106T/AT(2.0)] |
-| **XL**           | [XL-320]                           | [XL330-M077-T]<br/> [XL330-M288-T] | [XL430-W250-T]                    | [2XL430-W250-T]                     |
-| **XC**           | [XC430-W150-T]<br/> [XC430-W240-T] | [2XC430-W250-T]                    |                                   |                                     |
-| **XM**           | [XM430-W210-T]<br/> [XM430-W350-T] | [XM540-W150-T]<br/> [XM540-W270-T] |                                   |                                     |
-| **XH**           | [XH430-W210-T]<br/> [XH430-W350-T] | [XH540-W150-T]<br/> [XH540-W270-T] |                                   |                                     |
+| DYNAMIXEL Series |                                                 |                                                        |                                     |
+|:----------------:|:------------------------------------------------|:-------------------------------------------------------|:------------------------------------|
+| **AX**           | [AX-12W]<br/>[AX-12+/12A]<br/>[AX-18F/18A]      |                                                        |                                     |
+| **MX**           | [MX-12W]<br/>[MX-28T/AT]<br/> [MX-28T/AT(2.0)]  | [MX-64T/AT]<br/> [MX-64T/AT(2.0)]                      | [MX-106T/AT]<br/> [MX-106T/AT(2.0)] |
+| **XL**           | [XL-320]<br/>[XL330-M077-T]<br/> [XL330-M288-T] | [XL430-W250-T]<br/>[2XL430-W250-T]                     |                                     |
+| **XC**           |                                                 | [XC430-W150-T]<br/> [XC430-W240-T]<br/>[2XC430-W250-T] |                                     |
+| **XM**           |                                                 | [XM430-W210-T]<br/> [XM430-W350-T]                     | [XM540-W150-T]<br/> [XM540-W270-T]  |
+| **XH**           |                                                 | [XH430-W210-T]<br/> [XH430-W350-T]                     | [XH540-W150-T]<br/> [XH540-W270-T]  |
 
 ## [Part Lists](#part-lists)
 The following parts are included in the package.  
-- MKR DYNAMIXEL Shield (1)
+- DYNAMIXEL MKR Shield (1)
 - JST([S3B-EH]) (2)
 - Molex([5268-02A]) (2)
 - Terminal Block([DG350-3.5-02P-14]) (1)
 - DC Jack Harness (1)
+- Battery Connector([SMW250-02]) (1)
 - XL-320 Convertible cable (1)
 
 # [Layout](#layout)
-MKR DYNAMIXEL Shield Schematics can be found in the below.  
-- [MKR DYNAMIXEL Shield Schematic](https://www.robotis.com/service/download.php?no=1988)
+DYNAMIXEL MKR Shield Schematics can be downloaded in the link below.  
+- [DYNAMIXEL MKR Shield Schematic](https://www.robotis.com/service/download.php?no=1988)
 
 ![](/assets/images/parts/interface/mkr_shield/pinmap.png)  
-> The MKR DYNAMIXEL Shield pinout is based on the layout of Aruduino MKR boards. 
+> The DYNAMIXEL MKR Shield header pinout is based on the Aruduino MKR boards. 
 
 |        Item        |                                       Description                                       |
 |:------------------:|:---------------------------------------------------------------------------------------:|
@@ -104,26 +101,20 @@ MKR DYNAMIXEL Shield Schematics can be found in the below.
 | 21(A6)  |  TX_EN   | Flow control of DYNAMIXEL data BUS<br />- **HIGH** : Transmit<br />- **LOW** : Receive |
 
 # [How to Connect](#how-to-connect)
-MKR DYNAMIXEL Shield can be mounted on or below the Arduino MKR boards.  
+DYNAMIXEL MKR Shield can be mounted on or below the Arduino MKR boards.  
 Please check the compatibility when using multiple shields on a single Arduino MKR board.  
 **Arduino MKR boards cannot be powered using the VIN(DXL) power source.**
 
-## 12V DYNAMIXEL using SMPS 
-This connection is recommended for most X series DYNAMIXEL (except XL-320, XL330).  
-USB connection from PC will supply power to the MKR board and upload the Arduino sketch, while 12V SMPS provide power to connceted DYNAMIXEL.  
-  ![](/assets/images/parts/interface/mkr_shield/connection_diagram_vin.png)
-
-## 12V DYNAMIXEL using Terminal Block 
-This connection is recommended when using external power supply.  
-In order to use the Terminal Block, desolder the default power connector and solder the included terminal block.  
-Before supplying power via the terminal block, please adjust the voltage according to the recommended voltage of connected DYNAMIXEL.  
-  ![](/assets/images/parts/interface/mkr_shield/connection_diagram_vin_tb.png)
+## 12V DYNAMIXEL X Series 
+This connection is recommended for most X series DYNAMIXEL with 12V operating voltage (except XL-320, XL330).  
+The USB connection from PC supplies power and serial communication to the MKR board to upload the Arduino sketch, while 12V SMPS supplies power to connceted DYNAMIXEL.  
+  ![](/assets/images/parts/interface/mkr_shield/DXL_MKRShield_info01.jpg)
 
 ## AX / MX Series DYNAMIXEL  
 AX and MX series use different type of Molex connector.  
 In order to use the original AX or MX series cable, solder the included molex connector to empty DYNAMIXEL port.  
 Or else, use the [Robot Cable-X3P convertible].  
-  ![](/assets/images/parts/interface/mkr_shield/connection_diagram_mx.png)
+  ![](/assets/images/parts/interface/mkr_shield/DXL_MKRShield_info02.jpg)
 
 ## XL330 using USB power  
 XL330 can run off of the 5V USB power due to its low operating voltage.  
@@ -131,10 +122,10 @@ Set the power jumper to +5V side to use 5V power from the Arduino MKR board.
 
 Please be aware that Arduino MKR boards may limit the 5V power source for USB hardware protection.  
 {: .notice--warning}  
-  ![](/assets/images/parts/interface/mkr_shield/connection_diagram_5v.png)
+  ![](/assets/images/parts/interface/mkr_shield/DXL_MKRShield_info03.jpg)
 
   After uploading the program, 1 cell Lithium battery(3.7V) can be used to power the Arduino MKR board and XL330.  
-  ![](/assets/images/parts/interface/mkr_shield/connection_diagram_batt.png)
+  ![](/assets/images/parts/interface/mkr_shield/DXL_MKRShield_info04.jpg)
 
 
 # [Power Select Jumper](#power-select-jumper)
@@ -247,8 +238,10 @@ The Remote Controller class can be used with the Arduino MKR boards by enabling 
 - [write()]{: .popup}
 
 # [Download](#download)
-- [MKR DYNAMIXEL Shield Schematic(PDF)](https://www.robotis.com/service/download.php?no=1988)  
+- [DYNAMIXEL MKR Shield Schematic(PDF)](https://www.robotis.com/service/download.php?no=1988)  
 ![](/assets/images/parts/interface/mkr_shield/mkr_schematic.png)
+
+# [FAQ](#faq)
 
 
 [AX-12W]: /docs/en/dxl/ax/ax-12w/
@@ -280,7 +273,7 @@ The Remote Controller class can be used with the Arduino MKR boards by enabling 
 
 [S3B-EH]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
 [5268-02A]: https://www.molex.com/molex/products/part-detail/pcb_headers/0022057025
-[SMAW250-02]: http://product.ic114.com/PDF/S/SMAW250-NN.pdf
+[SMW250-02]: http://product.ic114.com/PDF/S/SMW250-NN.pdf
 [DG350-3.5-02P-14]: http://www.degson.com/en/downpdf/id/542.html
 [ROBOTIS SMPS 12V 5A PS-10]: http://en.robotis.com/shop_en/list.php?ca_id=3020a0
 [Robot Cable-X3P convertible]: http://en.robotis.com/shop_en/item.php?it_id=903-0251-000

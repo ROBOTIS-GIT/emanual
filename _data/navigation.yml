@@ -23209,6 +23209,10 @@ mkr_shield:
     titlekr: "다운로드"
     url: /parts/interface/mkr_shield/#download
     urlkr: /parts/interface/mkr_shield/#다운로드
+  - title: "FAQ"
+    titlekr: "FAQ"
+    url: /parts/interface/mkr_shield/#faq
+    urlkr: /parts/interface/mkr_shield/#faq
 
 u2d2_power_hub:
   - title: "Introduction"
