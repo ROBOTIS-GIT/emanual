@@ -1,5 +1,5 @@
 It means currently applied load.
-For example, the value is 512, it means the load is detected in the direction of CCW about 50% of the maximum torque.
+For example, the value is 500, it means the load is detected in the direction of CCW about 50% of the maximum torque.
 
 | Unit  | Value Range   | Description |
 | :---: | :-----------: | :---: |

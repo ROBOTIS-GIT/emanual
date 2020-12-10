@@ -152,7 +152,70 @@
         location.href=targeturl;
       }
     </script>
-  </head>
+  
+  <script>
+    function tab_handler(en){
+      console.log(en.textContent);
+      var tabs = document.getElementById('tabs').children;
+      for(i = 0; i < tabs.length; i++) {
+        tabs[i].className = "tab not__selected";
+        $(".archive").removeClass(tabs[i].textContent);
+      }
+      en.className = "tab selected";
+      $(".archive").addClass(en.textContent);
+    }
+  </script>
+
+<script>
+  // When a page is reloaded, a previously selected tab and tab_contents will be recalled to the current page keeping the same status until user's windows is closed.
+  $(document).ready(function() { 
+    
+    //defualt Tab Status. 
+
+    if(sessionStorage.getItem("tabActive") == null){
+      
+      console.log("tabActive:" + sessionStorage.getItem("tabActive")); 
+      
+      $(".tab:nth-child(1)").addClass("selected");
+      
+      $(".tab_contents:nth-of-type(1)").addClass("active");
+    } else if(sessionStorage.getItem("tabActive") !== null) {
+      console.log("tabActive: Not Null"); 
+      $('[data-id="' + sessionStorage.getItem("tabActive")+'"]').addClass("active");
+      $('[data-tab-name="'+ sessionStorage.getItem("tabActive")+'"]').addClass("tab selected");
+    }
+  })
+    // en = enable
+    function tab_handler(en){
+      // console.log(en.textContent);
+      var tabs = document.getElementById('tabs').children;
+      for(i = 0; i < tabs.length; i++) {
+        tabs[i].className = "tab not__selected";
+      // $(".archive").removeClass(tabs[i].textContent);
+      }
+      en.className = "tab selected";
+      // $(".archive").addClass(en.textContent);
+      show_contents(en.textContent);
+    }
+
+    // Controling a clicked tab's contents when a click event occurs. 
+    function show_contents(temp){
+      // Seaching active class within .tab_contents classes in the DOM tree, and remove the "active" class and set the disply as none. 
+      $(".tab_contents.active").removeClass("active");
+      // in the "tab_contents" class, searching for a matched ID to add a new class to the speidic ID. 
+      $(".tab_contents").each(function(){
+      // Searching for a ID parameter "temp" and add a class, active, and css style. 
+      // $("#" + temp).addClass("active");
+      $('[data-id="' + temp +'"]').addClass("active");
+      console.log(temp+":"+ $('.tab_contents').hasClass("active")); 
+      // To store user's data in the local storage, collect a class data of the active class.
+      sessionStorage.setItem('tabActive', temp); 
+    })
+    
+  }
+  </script>
+
+</head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
 

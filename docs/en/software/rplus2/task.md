@@ -31,6 +31,12 @@ A robot operates according to the task code created by the user, and the RoboPlu
 
 ## [Software Install](#software-install)
 
+![](/assets/images/sw/all_software/icon_r_task_2.jpg)  
+- [Install R+ Task 2.0 for Mac OS](https://apps.apple.com/kr/app/r-task2/id1447474642)
+- [Install R+ Task 2.0 for Windows](https://www.robotis.com/service/download.php?no=1)
+
+<!-- 
+
 **WARNING** : R+Task 2.0 software installation procedure for Mac OS X has been updated since v2.3.0.  
 [`Mac OS X R+Task 2.0 Download`]{: .blank}
 {: .notice--warning}
@@ -75,7 +81,8 @@ A robot operates according to the task code created by the user, and the RoboPlu
   ![](/assets/images/sw/rplus2/task/roboplus_task2_install_10.png)
 
 11. If software is successfully installed, it'll be appeared on Applications or Launcher screen.  
-  ![](/assets/images/sw/rplus2/task/roboplus_task2_install_11.png)
+  ![](/assets/images/sw/rplus2/task/roboplus_task2_install_11.png) 
+  -->
 
 ## [Menu Descriptions](#menu-descriptions)
 

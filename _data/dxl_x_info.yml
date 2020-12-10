@@ -54,8 +54,8 @@ xl330-m077:
   weight:             *weight_330
   dimensions:         *dimension_330
   gearratio:          "77.5 : 1"
-  noloadspeed:        "267 [rev/min] (at 3.7 [V]) <br /> **363 [rev/min] (at 5.0 [V])** <br /> 442 [rev/min] (at 6.0 [V])"
-  stalltorque:        "0.064 [N.m] (at 3.7 [V], 0.96 [A]) <br /> **0.089 [N.m] (at 5.0 [V], 1.28 [A])** <br /> 0.104 [N.m] (at 6.0 [V], 1.52 [A])"
+  noloadspeed:        "278 [rev/min] (at 3.7 [V]) <br /> **383 [rev/min] (at 5.0 [V])** <br /> 456 [rev/min] (at 6.0 [V])"
+  stalltorque:        "0.180 [N.m] (at 3.7 [V], 1.11 [A]) <br /> **0.215 [N.m] (at 5.0 [V], 1.47 [A])** <br /> 0.228 [N.m] (at 6.0 [V], 1.74 [A])"
   radialload:         "N/A"
   radialload_en:      "N/A"
   axialload:          "N/A"
@@ -68,7 +68,7 @@ xl330-m077:
   id:                 *id
   feedback:           *feedback
   material:           "Engineering Plastic"
-  standbycurrent:     16 [mA]
+  standbycurrent:     17 [mA]
   
 xl330-m288:
   mcu:                "ARM CORTEX-M0+ (64 [MHz], 32Bit)"
@@ -83,8 +83,8 @@ xl330-m288:
   weight:             *weight_330
   dimensions:         *dimension_330
   gearratio:          "288.4 : 1"
-  noloadspeed:        "76 [rev/min] (at 3.7 [V]) <br /> **104 [rev/min] (at 5.0 [V])** <br /> 125 [rev/min] (at 6.0 [V])"
-  stalltorque:        "0.28 [N.m] (at 3.7 [V], 0.96 [A]) <br /> **0.39 [N.m] (at 5.0 [V], 1.28 [A])** <br /> 0.44 [N.m] (at 6.0 [V], 1.52 [A])"
+  noloadspeed:        "76 [rev/min] (at 3.7 [V]) <br /> **103 [rev/min] (at 5.0 [V])** <br /> 123 [rev/min] (at 6.0 [V])"
+  stalltorque:        "0.42 [N.m] (at 3.7 [V], 1.11 [A]) <br /> **0.52 [N.m] (at 5.0 [V], 1.47 [A])** <br /> 0.60 [N.m] (at 6.0 [V], 1.74 [A])"
   radialload:         "N/A"
   radialload_en:      "N/A"
   axialload:          "N/A"
@@ -97,7 +97,7 @@ xl330-m288:
   id:                 *id
   feedback:           *feedback
   material:           "Engineering Plastic"
-  standbycurrent:     15 [mA]
+  standbycurrent:     17 [mA]
 
 xh430-v210:
   mcu:                *mcu

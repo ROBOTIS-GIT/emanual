@@ -77,7 +77,7 @@ $ chmod 755 ./install_ros_kinetic.sh && bash ./install_ros_kinetic.sh
 For `Dashing`  
 ```bash
 $ sudo apt update && sudo apt upgrade
-$ wget https://raw.githubusercontent.com/ROBOTIS-GIT/open_manipulator/ros2/install_ros_dashing.sh
+$ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros2_dashing.sh
 $ chmod 755 ./install_ros_dashing.sh && bash ./install_ros_dashing.sh
 ```
 {% endcapture %}
