@@ -58,7 +58,6 @@
 
 .community_link {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: flex-end;
   margin-right: 10px;
@@ -330,7 +329,7 @@
   overflow: hidden;
   background-color: $top-bgcolor;
   font-family: $titillium-webkit;
-  max-width: 700px;
+  max-width: 1200px;
   z-index: 900;
 }
 
@@ -340,11 +339,11 @@
 }
 
 .dropdown .dropbtn {
-  font-size: 16px;
+  font-size: 15px;
   border: none;
   outline: none;
   color: $top-textcolor;
-  padding: 14px 16px;
+  padding: 24px 16px;
   background-color: $top-bgcolor;
   height: 64px;
   cursor: pointer;

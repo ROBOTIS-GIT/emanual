@@ -58,7 +58,7 @@ e-Manual은 로보티즈에서 제공하는 모든 제품에 대한 상세한 �
 
           </div>
 
-            <h2 class="archive__item-title">플랫폼</h2>
+            <h2 class="archive__item-title">다이나믹셀 시스템</h2>
 
             <div class="archive__item-excerpt">
             다이나믹셀과 ROS 및 오픈소스를 활용한 연구용 로봇 입니다.<br>
@@ -72,11 +72,11 @@ e-Manual은 로보티즈에서 제공하는 모든 제품에 대한 상세한 �
         <a class="Show-me-whole-product" href="/docs/kr/edu/">
           <div class="archive__item-teaser">
 
-              <img src="/assets/steam.png" alt="교육키트">
+              <img src="/assets/steam.png" alt="교육용 키트">
 
           </div>
 
-            <h2 class="archive__item-title">교육키트</h2>
+            <h2 class="archive__item-title">교육용 키트</h2>
 
             <div class="archive__item-excerpt">
             로봇 작동의 원리, 프로그래밍 및 AI등의 최고의 교육환경을 제공합니다.

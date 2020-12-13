@@ -222,8 +222,8 @@ main:
     - title: "Protocol 2.0"
       titlekr: "프로토콜 2.0"
       url: /dxl/protocol2/
-  - title: "DYNAMIXEL SYSTEM"
-    titlekr: "DYNAMIXEL SYSTEM"
+  - title: "DYNAMIXEL </br> SYSTEM"
+    titlekr: "DYNAMIXEL </br> SYSTEM"
     url: /platform/
     urlkr: /platform/    
     children:
@@ -272,7 +272,7 @@ main:
       - title: "OpenMANIPULATOR-X"
         titlekr: "OpenMANIPULATOR-X"
         url: /platform/openmanipulator_x/overview/
-  - title: "Education Kits"
+  - title: "EDUCATION </br> KITS"
     titlekr: "교육용 키트"
     url: /edu/
     urlkr: /edu/    
@@ -292,26 +292,26 @@ main:
         titlekr: "*버그 키트"
         url: /edu/ollo/bugkit/
       - title: "*EXPLORER"
-        titlekr: "*2단계 교육키트"
+        titlekr: "*2단계"
         url: /edu/ollo/explorer/
       - title: "*INVENTOR"
-        titlekr: "*3단계 교육키트"
+        titlekr: "*3단계"
         url: /edu/ollo/inventor/
-      - titlekr: "*4단계 교육키트"
+      - titlekr: "*4단계"
         url: /edu/ollo/ollo-4/
     - title: "*DREAM"
       titlekr: "*드림 I"
       children:
-      - titlekr: "*1단계 교육키트"
+      - titlekr: "*1단계"
         url: /edu/dream/dream1-1/
       - title: "*LEVEL 2"
-        titlekr: "*2단계 교육키트"
+        titlekr: "*2단계"
         url: /edu/dream/dream1-2/
       - title: "*LEVEL 3"
-        titlekr: "*3단계 교육키트"
+        titlekr: "*3단계"
         url: /edu/dream/dream1-3/
       - title: "*LEVEL 4"
-        titlekr: "*4단계 교육키트"
+        titlekr: "*4단계"
         url: /edu/dream/dream1-4/
       - title: "*SET A"
         url: /edu/dream/dream-a/
@@ -321,60 +321,60 @@ main:
       titlekr: "드림 II"
       children:
       - title: "LEVEL 1"
-        titlekr: "1단계 교육키트"
+        titlekr: "1단계"
         url: /edu/dream/dream2-1/
       - title: "LEVEL 2"
-        titlekr: "2단계 교육키트"
+        titlekr: "2단계"
         url: /edu/dream/dream2-2/
       - title: "LEVEL 3"
-        titlekr: "3단계 교육키트"
+        titlekr: "3단계"
         url: /edu/dream/dream2-3/
       - title: "LEVEL 4"
-        titlekr: "4단계 교육키트"
+        titlekr: "4단계"
         url: /edu/dream/dream2-4/
       - title: "LEVEL 5"
-        titlekr: "5단계 교육키트"
+        titlekr: "5단계"
         url: /edu/dream/dream2-5/
       - title: "School Set"
         url: /edu/dream/dream2-schoolset/
     - titlekr: "*스마트 I"
       children:
-      - titlekr: "*1단계 교육키트"
+      - titlekr: "*1단계"
         url: /edu/smart/smart1-1/
-      - titlekr: "*2단계 교육키트"
+      - titlekr: "*2단계"
         url: /edu/smart/smart1-2/
-      - titlekr: "*3단계 교육키트"
+      - titlekr: "*3단계"
         url: /edu/smart/smart1-3/
     - titlekr: "*스마트 II"
       children:
-      - titlekr: "*1단계 교육키트"
+      - titlekr: "*1단계"
         url: /edu/smart/smart2-1/
-      - titlekr: "*2단계 교육키트"
+      - titlekr: "*2단계"
         url: /edu/smart/smart2-2/
-      - titlekr: "*3단계 교육키트"
+      - titlekr: "*3단계"
         url: /edu/smart/smart2-3/
     - titlekr: "스마트 III"
       children:
-      - titlekr: "1단계 교육키트"
+      - titlekr: "1단계"
         url: /edu/smart/smart3-1/
-      - titlekr: "2단계 교육키트"
+      - titlekr: "2단계"
         url: /edu/smart/smart3-2/
-      - titlekr: "3단계 교육키트"
+      - titlekr: "3단계"
         url: /edu/smart/smart3-3/
-      - titlekr: "4단계 교육키트"
+      - titlekr: "4단계"
         url: /edu/smart/smart3-4/
     - titlekr: "IoT"
       children:
-      - titlekr: "1단계 교육키트"
+      - titlekr: "1단계"
         url: /edu/iot/iot-1/
-      - titlekr: "2단계 교육키트"
+      - titlekr: "2단계"
         url: /edu/iot/iot-2/
     - titlekr: "실과 로봇"
       url: /edu/info/
     - titlekr: "*자동차 로봇"
       url: /edu/car/
-    - title: "BIOLOID"
-      titlekr: "바이올로이드"
+    - title: "ROBOTIS BIOLOID"
+      titlekr: "로보티즈 바이올로이드"
       url: /edu/bioloid/
       children:
       - title: "*Beginner Level"
@@ -675,9 +675,9 @@ main:
         titlekr: "다이나믹셀"
         url: /faq/faq_dynamixel/
       - title: "DYNAMIXEL SYSTEM"
-        titlekr: "플랫폼"
+        titlekr: "DYNAMIXEL SYSTEM"
         url: /faq/faq_platform/
-      - title: "Education Kits"
+      - title: "EDUCATION KITS"
         titlekr: "교육용 키트"
         url: /faq/faq_steam/
       - title: "SOFTWARE"
@@ -813,8 +813,8 @@ all-software:
     urlkr: /software/#로보플러스    
 
 all-controller:
-  - title: "For Platform"
-    titlekr: "플랫폼"
+  - title: "For DYNAMIXEL SYSTEM"
+    titlekr: "DYNAMIXEL SYSTEM"
     url: /parts/all-controller/#for-platform
     urlkr: /parts/all-controller/#플랫폼
   - title: "For ROBOTIS ENGINEER"
@@ -829,11 +829,11 @@ all-controller:
     titlekr: "로보티즈 바이올로이드 전용"
     url: /parts/all-controller/#for-robotis-engineer
     urlkr: /parts/all-controller/#로보티즈-바이올로이드-전용  
-  - title: "For ROBOTIS Play 600 & 700"
+  - title: "For Play 600 & 700"
     titlekr: "로보티즈 플레이 600 & 700 전용"
     url: /parts/all-controller/#for-robotis-play-600--700
     urlkr: /parts/all-controller/#로보티즈-플레이-600--700-전용
-  - title: "For ROBOTIS OLLO"
+  - title: "For OLLO"
     titlekr: "로보티즈 올로 전용"
     url: /parts/all-controller/#for-robotis-ollo
     urlkr: /parts/all-controller/#로보티즈-올로-전용
@@ -4099,7 +4099,7 @@ mx-106-2:
 
 #X-Series Main sidebar
 dxl_x_main:
-  - title: "Feature"
+  - title: "Features"
     titlekr: "특징"
     url: /dxl/x/#features
     urlkr: /dxl/x/#특징
@@ -14325,41 +14325,41 @@ all-edu:
   - title: "PLAY"
     url: /edu/#play
   - title: "OLLO"
-    titlekr: "올로"
+    titlekr: "로보티즈 올로"
     url: /edu/#ollo
-    urlkr: /edu/#올로
+    urlkr: /edu/#로보티즈-올로
   - title: "DREAM"
-    titlekr: "드림 I"
-    url: /edu/#dream
-    urlkr: /edu/#드림-i
-  - title: "DREAM II"
-    titlekr: "드림 II"
-    url: /edu/#dream-ii
-    urlkr: /edu/#드림-ii
-  - titlekr: "스마트 I"
-    urlkr: /edu/#스마트-i
-  - titlekr: "스마트 II"
-    urlkr: /edu/#스마트-ii
-  - titlekr: "스마트 III"
-    urlkr: /edu/#스마트-iii
-  - titlekr: "IoT"
-    urlkr: /edu/#iot
-  - titlekr : "실과로봇"
-    urlkr: /edu/#실과로봇
-  - titlekr: "자동차 로봇"
-    urlkr: /edu/#자동차-로봇
-  - title: "BIOLOID"
-    titlekr: "바이올로이드"
-    url: /edu/#bioloid
-    urlkr: /edu/#바이올로이드
-  - title: "ENGINEER"
-    titlekr: "엔지니어"
-    url: /edu/#engineer
-    urlkr: /edu/#엔지니어
-  - title: "MINI"
-    titlekr: "미니"
+    titlekr: "로보티즈 드림 I"
+    url: /edu/#robotis-dream
+    urlkr: /edu/#로보티즈-드림-i
+  - title: "로보티즈 DREAM II"
+    titlekr: "로보티즈 드림 II"
+    url: /edu/#robotis-dream-ii
+    urlkr: /edu/#로보티즈-드림-ii
+  - titlekr: "로보티즈 스마트 I"
+    urlkr: /edu/#로보티즈-스마트-i
+  - titlekr: "로보티즈 스마트 II"
+    urlkr: /edu/#로보티즈-스마트-ii
+  - titlekr: "로보티즈 스마트 III"
+    urlkr: /edu/#로보티즈-스마트-iii
+  - titlekr: "로보티즈 IoT"
+    urlkr: /edu/#로보티즈-iot
+  - titlekr : "로보티즈 실과로봇"
+    urlkr: /edu/#로보티즈-실과로봇
+  - titlekr: "로보티즈 자동차 로봇"
+    urlkr: /edu/#로보티즈-자동차-로봇
+  - title: "ROBOTIS BIOLOID"
+    titlekr: "로보티즈 바이올로이드"
+    url: /edu/#robotis-bioloid
+    urlkr: /edu/#로보티즈-바이올로이드
+  - title: "ROBOTIS ENGINEER"
+    titlekr: "로보티즈 엔지니어"
+    url: /edu/#robotis-engineer
+    urlkr: /edu/#로보티즈-엔지니어
+  - title: "ROBOTIS MINI"
+    titlekr: "로보티즈 미니"
     url: /edu/#mini
-    urlkr: /edu/#미니
+    urlkr: /edu/#로보티즈-미니
 
 #PLAY 300 sidebar
 play-300:

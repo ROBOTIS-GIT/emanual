@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/kr/faq/faq_platform/
 sidebar:
-  title: FAQ 플랫폼
+  title: FAQ DYNAMIXEL SYSTEM
   nav: "faq_platform"
 ---
 

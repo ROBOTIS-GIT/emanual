@@ -4,7 +4,7 @@ lang: kr
 ref: all-platform
 permalink: /docs/kr/platform/
 sidebar:
-  title: 플랫폼
+  title: 다이나믹셀 시스템
   nav: "all-platform"
 ---
 
@@ -13,8 +13,8 @@ sidebar:
 
 # [터틀봇3](#터틀봇3)
 
-|                                터틀봇3                                |
-| :-------------------------------------------------------------------: |
+|                                   터틀봇3                                    |
+| :--------------------------------------------------------------------------: |
 | [![](/assets/tb3_burger_Waffle.png)](/docs/en/platform/turtlebot3/overview/) |
 
 # [오픈매니퓰레이터](#오픈매니퓰레이터)
