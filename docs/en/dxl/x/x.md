@@ -16,7 +16,7 @@ sidebar:
 
 > DYNAMIXEL-X Series Lineups
 
-## Basic Feature
+## Features
 - Improved Torque, Compact Size.
 - Enhanced Durability and Expansibility.
 - Hollow Back Case Minimizes Cable Stress (3-way-routing).

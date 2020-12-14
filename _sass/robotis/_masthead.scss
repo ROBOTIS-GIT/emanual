@@ -340,10 +340,11 @@
 
 .dropdown .dropbtn {
   font-size: 15px;
+  font-weight: bold;
   border: none;
   outline: none;
   color: $top-textcolor;
-  padding: 24px 16px;
+  padding: 14px 16px;
   background-color: $top-bgcolor;
   height: 64px;
   cursor: pointer;

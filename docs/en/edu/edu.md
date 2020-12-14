@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/edu/
 sidebar:
-  title: EDUCATION KITS
+  title: EDUCATIONAL KITS
   nav: "all-edu"
 ---
 

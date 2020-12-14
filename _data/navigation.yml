@@ -272,7 +272,7 @@ main:
       - title: "OpenMANIPULATOR-X"
         titlekr: "OpenMANIPULATOR-X"
         url: /platform/openmanipulator_x/overview/
-  - title: "EDUCATION </br> KITS"
+  - title: "EDUCATIONAL </br> KITS"
     titlekr: "교육용 키트"
     url: /edu/
     urlkr: /edu/    
@@ -424,55 +424,55 @@ main:
     - title: "Mobile Apps"
       titlekr: "모바일 앱"
       children:
-      - titlekr: "로보플러스 SMART"
+      - titlekr: "R+ SMART"
         url: /software/mobile_app/rplussmart/
-      - titlekr: "로보플러스 IoT"
+      - titlekr: "R+ IoT"
         url: /software/mobile_app/rplusiot/
       - title: "ROBOTIS MINI"
         titlekr: "로보티즈 미니"
         url: /software/mobile_app/mini_app/
       - title: "R+ Block"
-        titlekr: "로보플러스 블록"
+        titlekr: "R+ 블록"
         url: /software/rplus2/rplus2_block/
     - title: "R+ 1.0"
-      titlekr: "로보플러스 1.0"
+      titlekr: "R+ 1.0"
       children:
       - title: "R+ Task"
-        titlekr: "로보플러스 태스크"
+        titlekr: "R+ 태스크"
         url: /software/rplus1/task/getting_started/
       - title: "R+ Manager"
-        titlekr: "로보플러스 매니저"
+        titlekr: "R+ 매니저"
         url: /software/rplus1/manager/
       - title: "R+ Motion"
-        titlekr: "로보플러스 모션"
+        titlekr: "R+ 모션"
         url: /software/rplus1/motion/
       - title: "Dynamixel Wizard"
         titlekr: "다이나믹셀 위자드"
         url: /software/rplus1/dynamixel_wizard/
     - title: "R+ 2.0"
-      titlekr: "로보플러스 2.0"
+      titlekr: "R+ 2.0"
       children:
       - title: "R+ Task 2.0"
-        titlekr: "로보플러스 태스크 2.0"
+        titlekr: "R+ 태스크 2.0"
         url: /software/rplus2/task/
       - title: "R+ Manager 2.0"
-        titlekr: "로보플러스 매니저 2.0"
+        titlekr: "R+ 매니저 2.0"
         url: /software/rplus2/manager/
         urlkr: /software/rplus2/manager/
       - title: "R+ Motion 2.0"
-        titlekr: "로보플러스 모션 2.0"
+        titlekr: "R+ 모션 2.0"
         url: /software/rplus2/motion/
       - title: "R+ Design 2.0"
-        titlekr: "로보플러스 디자인 2.0"
+        titlekr: "R+ 디자인 2.0"
         url: /software/rplus2/design/
       - title: "R+ Scratch"
-        titlekr: "로보플러스 스크래치"
+        titlekr: "R+ 스크래치"
         url: /software/rplus2/scratch/
     - title: "R+ Task 3.0"
-      titlekr: "로보플러스 태스크 3.0"
+      titlekr: "R+ 태스크 3.0"
       url: /software/rplustask3/
     - title: "R+ Mobile"
-      titlekr: "로보플러스 모바일"
+      titlekr: "R+ 모바일"
       children:
       - titlekr: "R+ m.Task"
         url: /software/rplus_mobile/mtask/
@@ -14332,7 +14332,7 @@ all-edu:
     titlekr: "로보티즈 드림 I"
     url: /edu/#robotis-dream
     urlkr: /edu/#로보티즈-드림-i
-  - title: "로보티즈 DREAM II"
+  - title: "ROBOTIS DREAM II"
     titlekr: "로보티즈 드림 II"
     url: /edu/#robotis-dream-ii
     urlkr: /edu/#로보티즈-드림-ii
