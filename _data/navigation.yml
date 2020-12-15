@@ -223,7 +223,7 @@ main:
       titlekr: "프로토콜 2.0"
       url: /dxl/protocol2/
   - title: "DYNAMIXEL </br> SYSTEM"
-    titlekr: "DYNAMIXEL 시스템"
+    titlekr: "다이나믹셀 시스템"
     url: /platform/
     urlkr: /platform/    
     children:
@@ -675,7 +675,7 @@ main:
         titlekr: "다이나믹셀"
         url: /faq/faq_dynamixel/
       - title: "DYNAMIXEL SYSTEM"
-        titlekr: "DYNAMIXEL SYSTEM"
+        titlekr: "다이나믹셀 시스템"
         url: /faq/faq_platform/
       - title: "EDUCATION KITS"
         titlekr: "교육용 키트"
