@@ -14,8 +14,6 @@ product_group: all-dyd
 
 # [개요](#개요)
 
-## [주요사양](#주요사양)
-
 일반적으로 Cycloidal Gear Drive는 강성을 바탕으로 대형 기계장치에 많이 사용되었으나, 그로 인한 무게와 크기는 하모닉 드라이브에 비해 좋지 못했습니다.
 
 하지만 로보티즈는 오랜 시간동안 축적해온 기술로, 높은 토크와 반복 정밀도를 컴팩트하고 가벼우며 튼튼한 형태인 다이나믹셀 드라이브(DYD)로 제작하여 출시했습니다.
@@ -218,6 +216,13 @@ DYD의 정격수명은 입력축 베어링의 수명에 의해 결정되며 베�
 
 요구수명 : 5,000 hours > 예상수명 : 4,880 hours
 
+<!-- 
+
+**참고**: The expected service life does not meet the required service life.
+{: .notice} 
+
+-->
+
 ### [형번 재선정 : DYD-14-099](#형번-재선정--dyd-14-099)
 
 |             Properties             | DYD-14-099 |
@@ -250,7 +255,11 @@ DYD의 정격수명은 입력축 베어링의 수명에 의해 결정되며 베�
 
 ### [출력속도 확인](#출력속도-확인)
 
+<!-- Output Speed i=-(1/R)*V_in = -(1/99)*3,000=30.3 rpm -->
+
 ### [순간허용최대토크 확인](#순간허용최대토크-확인)
+
+<!-- Maximum torque within the duty cycle = 7.5 Nm < 39 Nm (Repeatable peak torque) -->
 
 ### [기동토크 확인](#기동토크-확인)
 

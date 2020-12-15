@@ -90,6 +90,9 @@ DYD의 입력부에 구동 시스템(모터 또는 구동소스)을 구성함에
 | Shape  | ![](/assets/images/dyd/dyd_clamp_ring_01.png) | ![](/assets/images/dyd/dyd_d_cut.png) | ![](/assets/images/dyd/dyd_set_screw.png) |
 |  Name  |                  Clamp-ring                   |                 D-Cut                 |                 Set-screw                 |
 
+**참고**: 기본 옵션은 Type-C 입니다.
+{: .notice}
+
 # [조립 예시](#조립-예시)
 
 ## [조립공차](#조립공차)
