@@ -890,9 +890,9 @@ all-dyd:
     titlekr: "기술 자료"
     url: /all-dyd/#glossary
     urlkr: /all-dyd/#기술-자료
-  - title: "Application"
+  - title: "Use Applications"
     titlekr: "활용 예시"
-    url: /all-dyd/#application
+    url: /all-dyd/#use-applications
     urlkr: /all-dyd/#활용-예시
 
 dynamixel_pro:
@@ -24031,9 +24031,9 @@ dyd-11:
     titlekr: "호환성 및 옵션"
     url: /all-dyd/dyd-11/#compatibility-and-options
     urlkr: /all-dyd/dyd-11/#호환성-및-옵션
-  - title: "Compatibility and Options"
+  - title: "Assembly"
     titlekr: "조립 예시"
-    url: /all-dyd/dyd-11/#compatibility-and-options
+    url: /all-dyd/dyd-11/#assembly
     urlkr: /all-dyd/dyd-11/#조립-예시
 
 dyd-14:
@@ -24049,9 +24049,9 @@ dyd-14:
     titlekr: "호환성 및 옵션"
     url: /all-dyd/dyd-14/#compatibility-and-options
     urlkr: /all-dyd/dyd-14/#호환성-및-옵션
-  - title: "Compatibility and Options"
+  - title: "Assembly"
     titlekr: "조립 예시"
-    url: /all-dyd/dyd-14/#compatibility-and-options
+    url: /all-dyd/dyd-14/#assembly
     urlkr: /all-dyd/dyd-14/#조립-예시
 
 dyd-17:
@@ -24067,9 +24067,9 @@ dyd-17:
     titlekr: "호환성 및 옵션"
     url: /all-dyd/dyd-17/#compatibility-and-options
     urlkr: /all-dyd/dyd-17/#호환성-및-옵션
-  - title: "조립 예시"
+  - title: "Assembly"
     titlekr: "조립예시"
-    url: /all-dyd/dyd-17/#compatibility-and-options
+    url: /all-dyd/dyd-17/#assembly
     urlkr: /all-dyd/dyd-17/#조립-예시
 
 #FAQ sidebar
