@@ -223,7 +223,7 @@ main:
       titlekr: "프로토콜 2.0"
       url: /dxl/protocol2/
   - title: "DYNAMIXEL </br> SYSTEM"
-    titlekr: "DYNAMIXEL </br> SYSTEM"
+    titlekr: "DYNAMIXEL 시스템"
     url: /platform/
     urlkr: /platform/    
     children:

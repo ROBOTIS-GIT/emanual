@@ -88,7 +88,7 @@ header:
 
           </div>
 
-            <h2 class="archive__item-title">EDUCATION KITS</h2>
+            <h2 class="archive__item-title">EDUCATIONAL KITS</h2>
 
             <div class="archive__item-excerpt">
             STEAM stands for 'Science, Technology, Engineering, Art, Math.<br>
