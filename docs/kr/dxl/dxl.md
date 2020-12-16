@@ -99,11 +99,10 @@ MX 시리즈는 **특정 펌웨어**에서 프로토콜 2.0을 사용할수 있�
 - [MX-106T/R(2.0)](/docs/kr/dxl/mx/mx-106-2/)
 
 {% capture notice_01 %}
-**참조**:
+**참고**:
 
-- MX 시리즈는 펌웨어 복구를 통해 프로토콜 2.0을 사용할 수 있습니다. 복구 방법은 [다이나믹셀 위자드 2.0](/docs/kr/software/dynamixel/dynamixel_wizard2/#펌웨어-복구) 또는 [로보플러스 매니저 2.0](/docs/kr/software/rplus2/manager/#펌웨어-복구)의 펌웨어 복구를 참조하세요.
-- MX 시리즈의 프로토콜 2.0은 펌웨어 버전(v39 이상)부터 지원됩니다. 업데이트 방법은 [다이나믹셀 위자드 2.0](/docs/kr/software/dynamixel/dynamixel_wizard2/#펌웨어-업데이트) 또는 [로보플러스 매니저 2.0](/docs/kr/software/rplus2/manager/#펌웨어-업데이트)의 펌웨어 업데이트를 참조하세요.
-- 프로토콜 2.0으로 변경시, Secondary ID, Drive Mode, Bus Watchdog등의 기능을 사용할 수 있습니다.
+- MX 시리즈는 펌웨어 복구를 통해 프로토콜 2.0을 사용할 수 있습니다. 펌웨어 복구는 [다이나믹셀 위자드 2.0](/docs/kr/software/dynamixel/dynamixel_wizard2/#펌웨어-복구) 또는 [로보플러스 매니저 2.0](/docs/kr/software/rplus2/manager/#펌웨어-복구)를 참조하세요.
+- 프로토콜 2.0으로 펌웨어 복구 시, Secondary ID, Drive Mode, Bus Watchdog 등의 기능을 사용할 수 있습니다.
 {% endcapture %}
 <div class="notice">{{ notice_01| markdownify }}</div>
 
