@@ -87,30 +87,6 @@ $ reboot
 $ ssh ubuntu@{IP Address of Raspberry PI}
   ```
 
-### [Add Swap Space](#add-swap-space)
-1. Enter the command below to create 2GB swap space.  
-  ```bash
-$ sudo swapoff /swapfile
-$ sudo fallocate -l 2G /swapfile
-$ sudo chmod 600 /swapfile
-$ sudo mkswap /swapfile
-$ sudo swapon /swapfile
-$ sudo nano /etc/fstab
-  ```
-
-2. When the editor opens the fstab file, append below contents at the end of the file.
-  ```bash
-/swapfile swap swap defaults 0 0
-  ```
-
-3. Check if 2GB of swap space is correctly configured.
-```bash
-$ sudo free -h
-                 total        used        free      shared  buff/cache   available
-Mem:           912M         97M        263M        4.4M        550M        795M
-Swap:          1.0G          0B        1.0G
-```
-
 ### Install ROS Melodic Morenia
 
 Enter below commands to the terminal one at a time.  
