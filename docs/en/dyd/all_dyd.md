@@ -18,8 +18,6 @@ Generally, a traditional Cycloidal Gear Drive is well known as being strong but 
 
 ![](/assets/images/dyd/dyd_spec_01.png)
 
-McMaster-Carr - industrial-focus distributor of hardware and components. They stock a healthy selection of related items including servos / stepper motors, DC motors, etc. https://www.mcmaster.com/motors/
-{: .notice}
 
 |                      Characteristics                      |  Planetary  |  Harmonic   |     DYD     |
 |:---------------------------------------------------------:|:-----------:|:-----------:|:-----------:|
@@ -29,7 +27,7 @@ McMaster-Carr - industrial-focus distributor of hardware and components. They st
 |                       Light Weight                        | **&#9651;** | **&#9678;** | **&#9678;** |
 |                         Backlash                          | **&#9651;** | **&#9678;** |  &#11093;   |
 |                        Efficiency                         | **&#9678;** | **&#9678;** | **&#9678;** |
-|               Rigidity under impact (shock)               |  &#11093;   | **&#9651;** |  &#11093;   |
+|               Rigidity under impact (shock)               |  &#11093;   | **&#9651;** | **&#9678;** |
 |                     Noise & vibration                     | **&#9651;** | **&#9678;** |  &#11093;   |
 | Operating time to failure under heavy operating condition |  &#11093;   | **&#9651;** | **&#9678;** |
 
@@ -37,19 +35,19 @@ McMaster-Carr - industrial-focus distributor of hardware and components. They st
 
 ![](/assets/images/dyd/dyd_features_01.png)
 
-- Ultra High Impact Resistant
-- Lightweight
-- Hight Precision & Strong Rigidity
-- Compact Gear Module & Simple Design
+- High Durability and Strong Rigidity
+- High Impact Resistance
+- High Precision
 - Variable Gear Ratio
-- Less Backlash & Hight Efficiency
+- High Efficiency & Low Backlash
+- Lightweight & Compact Gear Module
 
 ## [Gear Ratio and Rotational Direction](#gear-ratio-and-rotational-direction)
 
 In the following image, it is shown that the rotational direction of the input motor and the output component depends on the fixed position of the reducer. When the DYD drive is fixed and the output flange is rotating, the rotational direction is opposite to the input direction while the output speed becomes reciprocal of the input speed(R). If the DYD drive housing is rotating while the output flange is fixed to the frame, the rotating direction of input and output is the same while the output becomes reciprocal of the input speed + 1(R+1).
 
 
-|     Fixed     | Output speed | Input direction | output direction |                       Example                       |
+|     Fixed     | Output Speed | Input Direction | Output Direction |                       Example                       |
 |:-------------:|:------------:|:---------------:|:----------------:|:---------------------------------------------------:|
 |    Housing    |  i=(-1)1/R   |   Cathode (+)   |    Anode (-)     |    ![](/assets/images/dyd/dyd_housing_01_kr.png)    |
 | Output flange |  i=1/(R+1)   |   Cathode (+)   |   Cathode (+)    | ![](/assets/images/dyd/dyd_output_flange_01_kr.png) |
@@ -88,17 +86,15 @@ In the following image, it is shown that the rotational direction of the input m
 |     DYD      |     14     | 51, 99 |      C,D      | S, RG, PG |         SP         |
 |     DYD      |     17     | 51, 99 |      C,D      | S, RG, PG |         SP         |
 
-- Please contact us at [develop@robotis.com](mailto:develop@robotis.com)
-
 # [Product Selection Guide](#product-selection-guide)
 
-## [Selection Flow Chart](#Selection-flow-chart)
+## [Selection Flow Chart](#selection-flow-chart)
 
 When configuring a system with reducers, the load applied to the reducer normally fluctuates during acceleration/deceleration or emergency conditions, therefore, it is recommended to reflect various operation conditions to estimate the average load and speed to select the appropriate DYD product.
 
 ![](/assets/images/dyd/dyd_selection_flowchart_01.png)
 
-## [Duty cycle](#duty-cycle)
+## [Duty Cycle](#duty-cycle)
 
 In the figure below shows an example of various torque and speed conditions during an operation. These values are critical factors in determining the lifecycle of the DYD product.
 
@@ -117,7 +113,7 @@ In the figure below shows an example of various torque and speed conditions duri
 |     t      | Duty cycle time [s]                        |     -      | -                                         |
 |            |                                            |     -      | -                                         |
 
-## [Average output load](#average-output-load)
+## [Average Output Load](#average-output-load)
 
 The average output load can be calculated as below.
 
@@ -125,7 +121,7 @@ The average output load can be calculated as below.
 
 ![](/assets/images/dyd/dyd_average_output_torque_02.png)
 
-## [Average input speed](#average-input-speed)
+## [Average Input Speed](#average-input-speed)
 
 The average input speed can be calculated as below.
 
@@ -133,7 +129,7 @@ The average input speed can be calculated as below.
 
 ![](/assets/images/dyd/dyd_average_input_speed_02.png)
 
-## [Service life)](#service-life)
+## [Service Life)](#service-life)
 
 The service life of DYD is determined by the fatigue failure of the bearings on the input shaft. Other factors that may affect the actual service life, such as insufficient lubrication, contamination or overload are not taken into account. The nominal service life is provided based on a statistical test value.  
 
@@ -152,7 +148,7 @@ The required service life for a given speed and load values can be calculated as
 
 ## [Product Selection Example](#product-selection-example)
 
-### [Define the duty cycle](#define-the-duty-cycle)
+### [Define the Duty Cycle](#define-the-duty-cycle)
 
 | Properties | Description                                | Value | Note |
 |:----------:|:-------------------------------------------|:-----:|:-----|
@@ -168,13 +164,13 @@ The required service life for a given speed and load values can be calculated as
 |     t4     | idle time [s]                              |   0   | -    |
 |     Lh     | Required service life [hours]              | 5,000 | -    |
 
-### [Average output load calculation](#average-output-load-calculation)
+### [Average Output Load Calculation](#average-output-load-calculation)
 
 | Properties | Description         | Value | Note |
 |:----------:|:--------------------|:-----:|:-----|
 |     Ta     | Average output load | 4.72  | cal. |
 
-### [Average input speed calculation](#average-input-speed-calculation)
+### [Average Input Speed Calculation](#average-input-speed-calculation)
 
 | Properties | Description         |  Value  | Note |
 |:----------:|:--------------------|:-------:|:-----|
@@ -208,14 +204,14 @@ The required service life for a given speed and load values can be calculated as
 |     TR     | Nominal torque [Nm]            |   5.4   | -              |
 |     Ta     | Average output torque [Nm]     |  4.72   | See data sheet |
 
-### [Service life comparison: DYD-14-051](#service-life-comparison-dyd-14-051)
+### [Service Life Comparison: DYD-14-051](#service-life-comparison-dyd-14-051)
 
 Required service life : 5,000 hours > Expected service life : 4,880 hours
 
 **Note**: The expected service life does not meet the required service life.
 {: .notice}
 
-### [Select another part number : DYD-14-099](#select-another-part-number--dyd-14-099)
+### [Select another Part Number : DYD-14-099](#select-another-part-number--dyd-14-099)
 
 |             Properties             | DYD-14-099 |
 |:----------------------------------:|:----------:|
@@ -230,7 +226,7 @@ Required service life : 5,000 hours > Expected service life : 4,880 hours
 |         Dimension (W X H)          |  ø68 x 30  |
 |               Weight               |    400     |
 
-### [Expected service life calculation: DYD-14-099](#expected-service-life-calculation-dyd-14-099)
+### [Expected Service Life Calculation: DYD-14-099](#expected-service-life-calculation-dyd-14-099)
 
 | Properties | Description                    |  Value  | Note           |
 |:----------:|:-------------------------------|:-------:|:---------------|
@@ -241,25 +237,25 @@ Required service life : 5,000 hours > Expected service life : 4,880 hours
 |     TR     | Nominal torque [Nm]            |   7.8   | See data sheet |
 |     Ta     | Average output torque [Nm]     |  4.72   | -              |
 
-### [Service life comparison: DYD-14-099](#service-life-comparison-dyd-14-099)
+### [Service Life Comparison: DYD-14-099](#service-life-comparison-dyd-14-099)
 
 Required service life : 5,000 hours > Expected service life : 5,520 hours
 
-### [Calculate the Output speed](#calculate-the-output-speed)
+### [Calculate the output speed](#calculate-the-output-speed)
 
 Output Speed i=-(1/R)*V_in = -(1/99)*3,000=30.3 rpm 
 
-### [Calculate the Peak torque](#calculate-the-peak-torque)
+### [Calculate the Peak Torque](#calculate-the-peak-torque)
 
 Maximum torque within the duty cycle = 7.5 Nm < 39 Nm (Repeatable peak torque)
 
-### [Check the Starting torque](#check-the-starting-torque)
+### [Check the Starting Torque](#check-the-starting-torque)
 
 Starting Torque = 20 cNm (DYD-14)
 
 ### [Confirm the Part Number : DYD-14-099](#confirm-the-part-number--dyd-14-099)
 
-### [Select the type of Input Shaft](#select-the-type-of-input-shaft)
+### [Select the Type of Input Shaft](#select-the-type-of-input-shaft)
 
 | Option |                   Type - C                    |               Type - D                |                  Type-SC                  |
 |:------:|:---------------------------------------------:|:-------------------------------------:|:-----------------------------------------:|
