@@ -20,9 +20,6 @@ product_group: all-dyd
 
 ![](/assets/images/dyd/dyd_spec_01.png)
 
-McMaster-Carr - industrial-focus distributor of hardware and components. They stock a healthy selection of related items including servos / stepper motors, DC motors, etc. https://www.mcmaster.com/motors/
-{: .notice}
-
 |                      Characteristics                      |  Planetary  |  Harmonic   |     DYD     |
 |:---------------------------------------------------------:|:-----------:|:-----------:|:-----------:|
 |                        Gear ratio                         | **&#9675;** | **&#9678;** | **&#9678;** |
@@ -31,7 +28,7 @@ McMaster-Carr - industrial-focus distributor of hardware and components. They st
 |                       Light Weight                        | **&#9651;** | **&#9678;** | **&#9678;** |
 |                         Backlash                          | **&#9651;** | **&#9678;** | **&#9675;** |
 |                        Efficiency                         | **&#9678;** | **&#9678;** | **&#9678;** |
-|               Rigidity under impact (shock)               | **&#9675;** | **&#9651;** | **&#9675;** |
+|               Rigidity under impact (shock)               | **&#9675;** | **&#9651;** | **&#9678;** |
 |                     Noise & vibration                     | **&#9651;** | **&#9678;** | **&#9675;** |
 | Operating time to failure under heavy operating condition | **&#9675;** | **&#9651;** | **&#9678;** |
 
@@ -39,12 +36,12 @@ McMaster-Carr - industrial-focus distributor of hardware and components. They st
 
 ![](/assets/images/dyd/dyd_features_01.png)
 
-- Ultra High Impact Resistant
-- Lightweight
-- Hight Precision & Strong Rigidity
-- Compact Gear Module & Simple Design
+- High Durability and Strong Rigidity
+- High Impact Resistance
+- High Precision
 - Variable Gear Ratio
-- Less Backlash & Hight Efficiency
+- High Efficiency & Low Backlash
+- Lightweight & Compact Gear Module
 
 ## [감속비와 회전 방향](#감속비와-회전-방향)
 
@@ -52,7 +49,7 @@ McMaster-Carr - industrial-focus distributor of hardware and components. They st
 
 일반적인 방식인 하우징을 고정하고 출력부를 회전하는 경우, 출력부의 회전 방향은 입력과 반대이며 속도는 1/R이고, 출력부를 고정하고 하우징이 회전하는 경우에는 하우징의 회전방향은 입력과 동일하고 속도는 1/(R+1) 입니다.
 
-|     Fixed     | Output speed | Input direction | output direction |                       Example                       |
+|     Fixed     | Output speed | Input direction | Output direction |                       Example                       |
 |:-------------:|:------------:|:---------------:|:----------------:|:---------------------------------------------------:|
 |    Housing    |  i=(-1)1/R   |   Cathode (+)   |    Anode (-)     |    ![](/assets/images/dyd/dyd_housing_01_kr.png)    |
 | Output flange |  i=1/(R+1)   |   Cathode (+)   |   Cathode (+)    | ![](/assets/images/dyd/dyd_output_flange_01_kr.png) |
@@ -85,15 +82,11 @@ McMaster-Carr - industrial-focus distributor of hardware and components. They st
 
 ![](/assets/images/dyd/dyd_parts_number_01.png)
 
-| Product name | Model Size | Ratio  | Shaft version |  Option   | Special production |
+| Product name | Model size | Ratio  | Shaft version |  Option   | Special production |
 |:------------:|:----------:|:------:|:-------------:|:---------:|:------------------:|
 |     DYD      |     11     | 33, 51 |      SC       | S, RG, PG |         SP         |
 |     DYD      |     14     | 51, 99 |      C,D      | S, RG, PG |         SP         |
 |     DYD      |     17     | 51, 99 |      C,D      | S, RG, PG |         SP         |
-
-커스텀 제품은 별도문의 바랍니다.
-
-- [develop@robotis.com](mailto:develop@robotis.com)
 
 # [제품 선택 가이드](#제품-선택-가이드)
 
@@ -104,7 +97,7 @@ McMaster-Carr - industrial-focus distributor of hardware and components. They st
 
 ![](/assets/images/dyd/dyd_selection_flowchart_01.png)
 
-## [동작사이클 (Duty cycle)](#동작사이클-duty-cycle)
+## [동작사이클 (Duty Cycle)](#동작사이클-duty-cycle)
 
 그림과 같이 다양한 구동사이클에 포함된 부하 및 속도는 사용수명을 결정하기 위해 매우 중요한 요소입니다.
 
@@ -198,7 +191,6 @@ DYD의 정격수명은 입력축 베어링의 수명에 의해 결정되며 베�
 |            Service life            |   hr   |   5,000    |
 |         Dimension (W X H)          |   mm   |  ø68 x 30  |
 |               Weight               |   g    |    400     |
-
 
 > 형번 선정 예시: DYD-14-051
 
