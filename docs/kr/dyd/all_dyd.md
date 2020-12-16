@@ -186,18 +186,19 @@ DYD의 정격수명은 입력축 베어링의 수명에 의해 결정되며 베�
 
 ### [예비(사전)형번 선정: DYD-14-051](#예비사전형번-선정-dyd-14-051)
 
-|             Properties             | DYD-14-051 |
-|:----------------------------------:|:----------:|
-|             Gear ratio             |     51     |
-|       Repeatable peak torque       |    27.0    |
-| Read output torque<br>(@2,000 rpm) |    5.4     |
-|        Maximum input Speed         |   6,000    |
-|        Average input speed         |   2,000    |
-|     Hysteresis loss / Backlash     |    <3.0    |
-|          Starting torque           |     20     |
-|            Service life            |   5,000    |
-|         Dimension (W X H)          |  ø68 x 30  |
-|               Weight               |    400     |
+|             Properties             |  Unit  | DYD-14-051 |
+|:----------------------------------:|:------:|:----------:|
+|             Gear ratio             |   -    |     51     |
+|       Repeatable peak torque       |   Nm   |    27.0    |
+| Read output torque<br>(@2,000 rpm) |   Nm   |    5.4     |
+|        Maximum input Speed         |  rpm   |   6,000    |
+|        Average input speed         |  rpm   |   2,000    |
+|     Hysteresis loss / Backlash     | arcmin |    <3.0    |
+|          Starting torque           |  cNm   |     20     |
+|            Service life            |   hr   |   5,000    |
+|         Dimension (W X H)          |   mm   |  ø68 x 30  |
+|               Weight               |   g    |    400     |
+
 
 > 형번 선정 예시: DYD-14-051
 
@@ -225,18 +226,18 @@ DYD의 정격수명은 입력축 베어링의 수명에 의해 결정되며 베�
 
 ### [형번 재선정 : DYD-14-099](#형번-재선정--dyd-14-099)
 
-|             Properties             | DYD-14-099 |
-|:----------------------------------:|:----------:|
-|             Gear ratio             |     99     |
-|       Repeatable peak torque       |    39.0    |
-| Read output torque<br>(@2,000 rpm) |    7.8     |
-|        Maximum input Speed         |   6,000    |
-|        Average input speed         |   2,000    |
-|     Hysteresis loss / Backlash     |    <3.0    |
-|          Starting torque           |     20     |
-|            Service life            |   5,000    |
-|         Dimension (W X H)          |  ø68 x 30  |
-|               Weight               |    400     |
+|             Properties             |  Unit  | DYD-14-099 |
+|:----------------------------------:|:------:|:----------:|
+|             Gear ratio             |   -    |     99     |
+|       Repeatable peak torque       |   Nm   |    39.0    |
+| Read output torque<br>(@2,000 rpm) |   Nm   |    7.8     |
+|        Maximum input Speed         |  rpm   |   6,000    |
+|        Average input speed         |  rpm   |   2,000    |
+|     Hysteresis loss / Backlash     | arcmin |    <3.0    |
+|          Starting torque           |  cNm   |     20     |
+|            Service life            |   hr   |   5,000    |
+|         Dimension (W X H)          |   mm   |  ø68 x 30  |
+|               Weight               |   g    |    400     |
 
 ### [예상수명계산: DYD-14-099](#예상수명계산-dyd-14-099)
 
@@ -255,11 +256,11 @@ DYD의 정격수명은 입력축 베어링의 수명에 의해 결정되며 베�
 
 ### [출력속도 확인](#출력속도-확인)
 
-<!-- Output Speed i=-(1/R)*V_in = -(1/99)*3,000=30.3 rpm -->
+Output Speed i=-(1/R)*V_in = -(1/99)*3,000=30.3 rpm
 
 ### [순간허용최대토크 확인](#순간허용최대토크-확인)
 
-<!-- Maximum torque within the duty cycle = 7.5 Nm < 39 Nm (Repeatable peak torque) -->
+Maximum torque within the duty cycle = 7.5 Nm < 39 Nm (Repeatable peak torque)
 
 ### [기동토크 확인](#기동토크-확인)
 
