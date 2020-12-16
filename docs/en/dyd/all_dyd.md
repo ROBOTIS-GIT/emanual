@@ -182,18 +182,18 @@ The required service life for a given speed and load values can be calculated as
 
 ### [Select Part Number : DYD-14-051](#select-part-number-dyd-14-051)
 
-|             Properties             | DYD-14-051 |
-|:----------------------------------:|:----------:|
-|             Gear ratio             |     51     |
-|       Repeatable peak torque       |    27.0    |
-| Read output torque<br>(@2,000 rpm) |    5.4     |
-|        Maximum input Speed         |   6,000    |
-|        Average input speed         |   2,000    |
-|     Hysteresis loss / Backlash     |    <3.0    |
-|          Starting torque           |     20     |
-|            Service life            |   5,000    |
-|         Dimension (W X H)          |  ø68 x 30  |
-|               Weight               |    400     |
+|             Properties             |  Unit  | DYD-14-051 |
+|:----------------------------------:|:------:|:----------:|
+|             Gear ratio             |   -    |     51     |
+|       Repeatable peak torque       |   Nm   |    27.0    |
+| Read output torque<br>(@2,000 rpm) |   Nm   |    5.4     |
+|        Maximum input Speed         |  rpm   |   6,000    |
+|        Average input speed         |  rpm   |   2,000    |
+|     Hysteresis loss / Backlash     | arcmin |    <3.0    |
+|          Starting torque           |  cNm   |     20     |
+|            Service life            |   hr   |   5,000    |
+|         Dimension (W X H)          |   mm   |  ø68 x 30  |
+|               Weight               |   g    |    400     |
 
 > Selecting Part Number Example for DYD-14-051
 
@@ -304,7 +304,7 @@ The lost motion indicates the torsional angle at +/- 3% of the rated output torq
 
 The torsional stiffness indicates the spring constants between 50% and 100% of the rated output torque, and can be calculated as follows: Torsional stiffness = b/a [Nm/arcmin].
 
-## [Efficiency)](#efficiency)
+## [Efficiency](#efficiency)
 
 The efficiency of the reduction gears depends on the lost motion, input speed, load, lubricant temperature and size. The efficiency of each lineup is statistical value based on the test result. Please refer to the specification of each product.
 
