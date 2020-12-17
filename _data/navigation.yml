@@ -24272,10 +24272,10 @@ dxl-quick-start:
         url: /dxl/dxl-quick-start-insert/#dynamixel-and-opencm
       - title: "DYNAMIXEL and OpenCR1.0"
         url: /dxl/dxl-quick-start-insert/#dynamixel-and-opencr10
-      - title: "DYNAMIXEL and CM-Series Controllers"
-        url: /dxl/dxl-quick-start-insert/#dynamixel-and-cm-series-controllers
+      - title: "DYNAMIXEL and CM-Series"
+        url: /dxl/dxl-quick-start-insert/#dynamixel-and-cm-series
       - title: "DYNAMIXEL and Arduino"
-        url: /dxl/dxl-quick-start-insert/#dynamixel-control-and-arduino     
+        url: /dxl/dxl-quick-start-insert/#dynamixel-and-arduino     
 
 contents-guide:
   - title: "Contents Guide"

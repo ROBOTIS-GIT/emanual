@@ -2,6 +2,9 @@
 layout: archive
 lang: en
 ref: dxl-quick-start-insert
+read_time: true
+share: true
+author_profile: false
 permalink: /docs/en/dxl/dxl-quick-start-insert/
 sidebar:
   title: DYNAMIXEL Qucik Start
@@ -60,7 +63,7 @@ The OpenCR board manager for Arduino IDE includes various examples to maximize t
 
 ![](/assets/images/dxl/dxl_quick_start_insert/dxl_control_03.png) 
 
-## [DYNAMIXEL and CM-Series](#dynamixel-and-cm-series-controllers)
+## [DYNAMIXEL and CM-Series](#dynamixel-and-cm-series)
  
 ROBOTIS also has exclusive controllers for programming DYNAMIXEL. These controllers include the CM-700 (Compatible with TTL-based AX / MX series DYNAMIXEL), CM-530(Compatible with TTL-based AX/MX series DYNAMIXEL), CM-550(Compatible with TTL-based X series DYNAMIXEL).
 
@@ -84,7 +87,7 @@ ROBOTIS also has exclusive controllers for programming DYNAMIXEL. These controll
 {% endcapture %}
 <div class="notice">{{ sdk_notice_03 | markdownify }}</div>
 
-## [DYNAMIXEL and Arduino](#dynamixel-control-and-arduino)
+## [DYNAMIXEL and Arduino](#dynamixel-and-arduino)
 
 [DYNAMIXEL Shield] was created to use [RC-100] and DYNAMIXEL on arduino board.
 The hardware serial port is used to communicate with DYNAMIXEL, therefore, RC-100 or [LN-101] has to be connected to the software serial communication port(SW TX/RX) via Arduino pin 7 and 8.
