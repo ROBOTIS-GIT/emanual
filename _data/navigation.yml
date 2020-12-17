@@ -128,6 +128,12 @@ main:
       - title: "AX-18F/18A"
         titlekr: "AX-18F/18A"
         url: /dxl/ax/ax-18a/
+    - title: "Procotol 1.0"
+      titlekr: "프로토콜 1.0"
+      url: /dxl/protocol1/
+    - title: "Protocol 2.0"
+      titlekr: "프로토콜 2.0"
+      url: /dxl/protocol2/
     - title: "*EX Series"
       titlekr: "*EX 시리즈"
       children:
@@ -216,12 +222,6 @@ main:
       - title: "*L42-10-S300-R"
         titlekr: "*L42-10-S300-R"
         url: /dxl/pro/l42-10-s300-r/
-    - title: "Procotol 1.0"
-      titlekr: "프로토콜 1.0"
-      url: /dxl/protocol1/
-    - title: "Protocol 2.0"
-      titlekr: "프로토콜 2.0"
-      url: /dxl/protocol2/
   - title: "DYNAMIXEL </br> SYSTEM"
     titlekr: "다이나믹셀 시스템"
     url: /platform/
@@ -231,15 +231,15 @@ main:
       titlekr: "로보티즈 OP"
       url: /platform/op/getting_started/
       children:  
-      - title: "*ROBOTIS OP"
-        titlekr: "*로보티즈 OP"
-        url: /platform/op/getting_started/
       - title: "ROBOTIS OP2"
         titlekr: "로보티즈 OP2"
         url: /platform/op2/getting_started/
       - title: "ROBOTIS OP3"
         titlekr: "로보티즈 OP3"
         url: /platform/op3/introduction/
+      - title: "*ROBOTIS OP"
+        titlekr: "*로보티즈 OP"
+        url: /platform/op/getting_started/
     - title: "Robot Hands"
       titlekr: "로봇핸드"
       children:
@@ -263,15 +263,15 @@ main:
       titlekr: "오픈매니퓰레이터"
       url: /platform/openmanipulator_main
       children:
-      - title: "*Manipulator-H"
-        titlekr: "*Manipulator-H"
-        url: /platform/manipulator_h/introduction/
       - title: "OpenMANIPULATOR-P"
         titlekr: "OpenMANIPULATOR-P"
         url: /platform/openmanipulator_p/overview/
       - title: "OpenMANIPULATOR-X"
         titlekr: "OpenMANIPULATOR-X"
         url: /platform/openmanipulator_x/overview/
+      - title: "*Manipulator-H"
+        titlekr: "*Manipulator-H"
+        url: /platform/manipulator_h/introduction/
   - title: "EDUCATIONAL </br> KITS"
     titlekr: "교육용 키트"
     url: /edu/
@@ -285,38 +285,6 @@ main:
           url: /edu/play/play-600/
         - title: "PLAY 700"
           url: /edu/play/play-700/
-    - title: "*OLLO"
-      titlekr: "*로보티즈 올로"
-      children:
-      - title: "*BUG KIT"
-        titlekr: "*버그 키트"
-        url: /edu/ollo/bugkit/
-      - title: "*EXPLORER"
-        titlekr: "*2단계"
-        url: /edu/ollo/explorer/
-      - title: "*INVENTOR"
-        titlekr: "*3단계"
-        url: /edu/ollo/inventor/
-      - titlekr: "*4단계"
-        url: /edu/ollo/ollo-4/
-    - title: "*DREAM"
-      titlekr: "*드림 I"
-      children:
-      - titlekr: "*1단계"
-        url: /edu/dream/dream1-1/
-      - title: "*LEVEL 2"
-        titlekr: "*2단계"
-        url: /edu/dream/dream1-2/
-      - title: "*LEVEL 3"
-        titlekr: "*3단계"
-        url: /edu/dream/dream1-3/
-      - title: "*LEVEL 4"
-        titlekr: "*4단계"
-        url: /edu/dream/dream1-4/
-      - title: "*SET A"
-        url: /edu/dream/dream-a/
-      - title: "*SET B"
-        url: /edu/dream/dream-b/
     - title: "DREAM II"
       titlekr: "드림 II"
       children:
@@ -337,22 +305,6 @@ main:
         url: /edu/dream/dream2-5/
       - title: "School Set"
         url: /edu/dream/dream2-schoolset/
-    - titlekr: "*스마트 I"
-      children:
-      - titlekr: "*1단계"
-        url: /edu/smart/smart1-1/
-      - titlekr: "*2단계"
-        url: /edu/smart/smart1-2/
-      - titlekr: "*3단계"
-        url: /edu/smart/smart1-3/
-    - titlekr: "*스마트 II"
-      children:
-      - titlekr: "*1단계"
-        url: /edu/smart/smart2-1/
-      - titlekr: "*2단계"
-        url: /edu/smart/smart2-2/
-      - titlekr: "*3단계"
-        url: /edu/smart/smart2-3/
     - titlekr: "스마트 III"
       children:
       - titlekr: "1단계"
@@ -371,18 +323,10 @@ main:
         url: /edu/iot/iot-2/
     - titlekr: "실과 로봇"
       url: /edu/info/
-    - titlekr: "*자동차 로봇"
-      url: /edu/car/
     - title: "ROBOTIS BIOLOID"
       titlekr: "로보티즈 바이올로이드"
       url: /edu/bioloid/
       children:
-      - title: "*Beginner Level"
-        titlekr: "*초급"
-        url: /edu/bioloid/beginner/
-      - title: "*Comprehensive Level"
-        titlekr: "*종합"
-        url: /edu/bioloid/comprehensive/
       - title: "ROBOTIS STEM"
         titlekr: "STEM 키트"
         url: /edu/bioloid/stem/
@@ -392,6 +336,12 @@ main:
       - title: "ROBOTIS GP"
         titlekr: "ROBOTIS GP"
         url: /edu/bioloid/gp/
+      - title: "*Beginner Level"
+        titlekr: "*초급"
+        url: /edu/bioloid/beginner/
+      - title: "*Comprehensive Level"
+        titlekr: "*종합"
+        url: /edu/bioloid/comprehensive/
     - title: "ROBOTIS ENGINEER"
       titlekr: "로보티즈 엔지니어"
       children:
@@ -404,6 +354,56 @@ main:
     - title: "ROBOTIS MINI"
       titlekr: "로보티즈 미니"
       url: /edu/mini/
+    - titlekr: "*자동차 로봇"
+      url: /edu/car/
+    - title: "*OLLO"
+      titlekr: "*로보티즈 올로"
+      children:
+      - title: "*BUG KIT"
+        titlekr: "*버그 키트"
+        url: /edu/ollo/bugkit/
+      - title: "*EXPLORER"
+        titlekr: "*2단계"
+        url: /edu/ollo/explorer/
+      - title: "*INVENTOR"
+        titlekr: "*3단계"
+        url: /edu/ollo/inventor/
+      - titlekr: "*4단계"
+      url: /edu/ollo/ollo-4/
+    - title: "*DREAM"
+      titlekr: "*드림 I"
+      children:
+      - titlekr: "*1단계"
+        url: /edu/dream/dream1-1/
+      - title: "*LEVEL 2"
+        titlekr: "*2단계"
+        url: /edu/dream/dream1-2/
+      - title: "*LEVEL 3"
+        titlekr: "*3단계"
+        url: /edu/dream/dream1-3/
+      - title: "*LEVEL 4"
+        titlekr: "*4단계"
+        url: /edu/dream/dream1-4/
+      - title: "*SET A"
+        url: /edu/dream/dream-a/
+      - title: "*SET B"
+        url: /edu/dream/dream-b/    
+    - titlekr: "*스마트 I"
+      children:
+      - titlekr: "*1단계"
+        url: /edu/smart/smart1-1/
+      - titlekr: "*2단계"
+        url: /edu/smart/smart1-2/
+      - titlekr: "*3단계"
+        url: /edu/smart/smart1-3/
+    - titlekr: "*스마트 II"
+      children:
+      - titlekr: "*1단계"
+        url: /edu/smart/smart2-1/
+      - titlekr: "*2단계"
+        url: /edu/smart/smart2-2/
+      - titlekr: "*3단계"
+        url: /edu/smart/smart2-3/
   - title: "SOFTWARE"
     titlekr: "소프트웨어"
     url: /software/
@@ -498,9 +498,6 @@ main:
       - title: "ZIGBEE SDK"
         titlekr: "지그비 SDK"
         url: /software/embedded_sdk/zigbee_sdk/
-    - title: "*OpenCM IDE"
-      titlekr: "*OpenCM IDE"
-      url: /software/opencm_ide/getting_started/
     - title: "Arduino IDE"
       titlekr: "아두이노 IDE"
       url: /software/arduino_ide/
@@ -509,6 +506,9 @@ main:
     - title: "ROBOTIS Manipulator library"
       titlekr: "ROBOTIS Manipulator library"
       url: /software/robotis_manipulator_libs/
+    - title: "*OpenCM IDE"
+      titlekr: "*OpenCM IDE"
+      url: /software/opencm_ide/getting_started/
   - title: "PARTS"
     titlekr: "부품"
     url: /parts/
@@ -521,9 +521,6 @@ main:
       - title: "CM-50"
         titlekr: "CM-50"
         url: /parts/controller/cm-50/
-      - title: "*CM-100A"
-        titlekr: "*CM-100A"
-        url: /parts/controller/cm-100/
       - title: "CM-150"
         titlekr: "CM-150"
         url: /parts/controller/cm-150/
@@ -531,12 +528,6 @@ main:
         titlekr: "CM-200"
         url: /parts/controller/cm-200/
         urlkr: /parts/controller/cm-200/
-      - title: "*CM-5"
-        titlekr: "*CM-5"
-        url: /parts/controller/cm-5/
-      - title: "*CM-510"
-        titlekr: "*CM-510"
-        url: /parts/controller/cm-510/
       - title: "CM-530"
         titlekr: "CM-530"
         url: /parts/controller/cm-530/
@@ -546,9 +537,6 @@ main:
       - title: "CM-700"
         titlekr: "CM-700"
         url: /parts/controller/cm-700/
-      - title: "*CM-900"
-        titlekr: "*CM-900"
-        url: /parts/controller/cm-900/
       - titlekr: "OpenCM7.0"
         url: /parts/controller/opencm7/
       - title: "OpenCM9.04"
@@ -560,6 +548,18 @@ main:
       - title: "OpenCR1.0"
         titlekr: "OpenCR1.0"
         url: /parts/controller/opencr10/
+      - title: "*CM-100A"
+        titlekr: "*CM-100A"
+        url: /parts/controller/cm-100/
+      - title: "*CM-5"
+        titlekr: "*CM-5"
+        url: /parts/controller/cm-5/
+      - title: "*CM-510"
+        titlekr: "*CM-510"
+        url: /parts/controller/cm-510/
+      - title: "*CM-900"
+        titlekr: "*CM-900"
+        url: /parts/controller/cm-900/
     - title: "Communication"
       titlekr: "무선통신, 리모컨"
       children:
@@ -569,12 +569,6 @@ main:
       - title: "RC-200"
         titlekr: "RC-200"
         url: /parts/communication/rc-200/            
-      - title: "*ZIG-100/110A"
-        titlekr: "*ZIG-100/110A"
-        url: /parts/communication/zig-110/
-      - title: "*BT-100/110A"
-        titlekr: "*BT-100/110A"
-        url: /parts/communication/bt-110/
       - title: "BT-210"
         titlekr: "BT-210"
         url: /parts/communication/bt-210/
@@ -584,6 +578,12 @@ main:
       - title: "BT-410 Dongle"
         titlekr: "BT-410 동글"
         url: /parts/communication/bt-410-dongle/
+      - title: "*ZIG-100/110A"
+        titlekr: "*ZIG-100/110A"
+        url: /parts/communication/zig-110/
+      - title: "*BT-100/110A"
+        titlekr: "*BT-100/110A"
+        url: /parts/communication/bt-110/
       - title: "*ZIG2Serial"
         titlekr: "*ZIG2Serial"
         url: /parts/communication/zig2serial/
@@ -593,24 +593,21 @@ main:
       - title: "Geared Motor"
         titlekr: "감속모터"
         url: /parts/motor/gm-10a/
+      - title: "Servo Motor"
+        titlekr: "서보모터"
+        url: /parts/motor/servo_motor/
       - title: "*High Speed Geared Motor"
         titlekr: "*고속 감속모터"
         url: /parts/motor/h_speed_geared_motor/
       - title: "*Low Speed Geared Motor"
         titlekr: "*저속 감속모터"
         url: /parts/motor/l_speed_geared_motor/
-      - title: "Servo Motor"
-        titlekr: "서보모터"
-        url: /parts/motor/servo_motor/
     - title: "Interface"
       titlekr: "인터페이스"
       children:
       - title: "LN-101"
         titlekr: "LN-101"
         url: /parts/interface/ln-101/
-      - title: "*USB2DYNAMIXEL"
-        titlekr: "*USB2DYNAMIXEL"
-        url: /parts/interface/usb2dynamixel/
       - title: "U2D2"
         titlekr: "U2D2"
         url: /parts/interface/u2d2/
@@ -623,6 +620,9 @@ main:
 #      - title: "MKR Shield"
 #        titlekr: "MKR 쉴드"
 #        url: /parts/interface/mkr_shield/
+      - title: "*USB2DYNAMIXEL"
+        titlekr: "*USB2DYNAMIXEL"
+        url: /parts/interface/usb2dynamixel/
     - title: "Sensors"
       titlekr: "센서"
       children:
@@ -635,9 +635,6 @@ main:
       - title: "Touch Sensor"
         titlekr: "접촉 센서"
         url: /parts/sensor/ts-10/
-      - title: "*Integrated Sensor"
-        titlekr: "*통합 센서"
-        url: /parts/sensor/ax-s1/
       - title: "Gyro Sensor"
         titlekr: "자이로 센서"
         url: /parts/sensor/gs-12/
@@ -660,6 +657,9 @@ main:
         url: /parts/sensor/cds-10/
       - titlekr: "온습도 센서"
         url: /parts/sensor/tms-10/
+      - title: "*Integrated Sensor"
+        titlekr: "*통합 센서"
+        url: /parts/sensor/ax-s1/
     - title: "Display"
       titlekr: "디스플레이"
       children:
