@@ -4,14 +4,14 @@ lang: en
 ref: all-platform
 permalink: /docs/en/platform/
 sidebar:
-  title: PLATFORM
+  title: DYNAMIXEL SYSTEM
   nav: "all-platform"
 ---
 
 # [TurtleBot3](#turtlebot3)
 
-|                              TurtleBot3                               |
-| :-------------------------------------------------------------------: |
+|                                  TurtleBot3                                  |
+| :--------------------------------------------------------------------------: |
 | [![](/assets/tb3_burger_Waffle.png)](/docs/en/platform/turtlebot3/overview/) |
 
 # [OpenMANIPULATOR](#openmanipulator)
@@ -22,8 +22,8 @@ sidebar:
 
 # [ROBOTIS OP](#robotis-op)
 
-|                                        ROBOTIS OP                                        |                                         ROBOTIS OP2                                         |                                          ROBOTIS OP3                                          |
-| :--------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------: |
+|                                       ROBOTIS OP                                        |                                        ROBOTIS OP2                                         |                                         ROBOTIS OP3                                          |
+| :-------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------: |
 | [![](/assets/images/platform/op/op_product.jpg)](/docs/en/platform/op/getting_started/) | [![](/assets/images/platform/op2/op2_product.jpg)](/docs/en/platform/op2/getting_started/) | [![](/assets/images/platform/op3/op3_product_rev2.png)](/docs/en/platform/op3/introduction/) |
 
 # [Robot Hands](#robot-hands)

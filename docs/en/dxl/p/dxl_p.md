@@ -10,13 +10,12 @@ product_group: dxl_p
 ---
 
 ![](/assets/images/dxl/p/pro-plus.png)
-> DYNAMIXEL-P
 
 # [Product Lineup](#product-lineup)
 
 ![](/assets/images/dxl/p/dynamixel_pro_plus_lineup_table.jpg)
 
-> DYNAMIXEL-P Lineup
+> DYNAMIXEL-P Series Lineups
 
 {% include en/dxl/p/dxl_p_notice.md %}
 

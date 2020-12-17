@@ -4,7 +4,7 @@ lang: kr
 ref: all-dynamixel
 permalink: /docs/kr/dxl/
 sidebar:
-  title: 액츄에이터
+  title: 다이나믹셀
   nav: "all-dynamixel"
 ---
 

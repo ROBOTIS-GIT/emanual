@@ -70,7 +70,7 @@ header:
 
           </div>
 
-            <h2 class="archive__item-title">PLATFORM</h2>
+            <h2 class="archive__item-title">DYNAMIXEL SYSTEM</h2>
 
             <div class="archive__item-excerpt">
             ROBOTIS is a leader in humanoid robots, ROS (Robot Operating System) development, and open-source robotics.<br>
@@ -88,7 +88,7 @@ header:
 
           </div>
 
-            <h2 class="archive__item-title">STEAM</h2>
+            <h2 class="archive__item-title">EDUCATIONAL KITS</h2>
 
             <div class="archive__item-excerpt">
             STEAM stands for 'Science, Technology, Engineering, Art, Math.<br>
