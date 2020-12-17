@@ -3,7 +3,7 @@ layout: archive
 lang: en
 ref: dxl-quick-start-insert
 read_time: true
-share: true
+share: false
 author_profile: false
 permalink: /docs/en/dxl/dxl-quick-start-insert/
 sidebar:
