@@ -24113,6 +24113,21 @@ dxl_software_compatibility:
     url: /docs/en/faq/dxl_software_compatibility/
     urlkr: /docs/kr/faq/dxl_software_compatibility/
 
+dxl-quick-start:
+  - title: "Getting Started"
+    url: /dxl/dxl-quick-start-insert/#getting-started-with-dynamixel
+    children:
+      - title: "DYNAMIXEL and PC"
+        url: /dxl/dxl-quick-start-insert/#dynamixel-and-pc
+      - title: "DYNAMIXEL and OpenCM"
+        url: /dxl/dxl-quick-start-insert/#dynamixel-and-opencm
+      - title: "DYNAMIXEL and OpenCR1.0"
+        url: /dxl/dxl-quick-start-insert/#dynamixel-and-opencr10
+      - title: "DYNAMIXEL and CM-Series"
+        url: /dxl/dxl-quick-start-insert/#dynamixel-and-cm-series
+      - title: "DYNAMIXEL and Arduino"
+        url: /dxl/dxl-quick-start-insert/#dynamixel-and-arduino     
+
 contents-guide:
   - title: "Contents Guide"
     titlekr: "컨텐츠 작성방법"
