@@ -63,7 +63,7 @@
 
 <!--Common Links -->
 
-[Hardware Error Bit(0x80)]: /docs/kr/dxl/protocol2/#error 
+[Alert Bit(0x80)]: /docs/kr/dxl/protocol2/#error 
 [케이블 호환성]: /docs/kr/popup/cable_compatibility/
 [Protocol 1.0]: /docs/kr/dxl/protocol1/#status-packet
 [Protocol 2.0]: /docs/kr/dxl/protocol2/#status-packet

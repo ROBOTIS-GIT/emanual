@@ -76,7 +76,7 @@ You can choose the desired firmware version by using **Firmware Recovery** of [R
 
 ## [Control Table of EEPROM Area](#control-table-of-eeprom-area)
 
-| Address | Size<br>(Byte) | *Modbus*<br>Address | Data Name                                   | Access | Initial<br />Value |     Range     |          Unit           |
+| Address | Size(Byte) | *Modbus*<br>Address | Data Name                                   | Access | Initial<br />Value |     Range     |          Unit           |
 |:-------:|:--------------:|:-------------------:|:--------------------------------------------|:------:|:------------------:|:-------------:|:-----------------------:|
 |    0    |       2        |       *40001*       | [Model Number](#model-number)               |   R    |       35,074       |       -       |            -            |
 |    2    |       4        |       *40002*       | [Model Information](#model-information)     |   R    |         -          |       -       |            -            |
@@ -112,7 +112,7 @@ You can choose the desired firmware version by using **Firmware Recovery** of [R
 
 ## [Control Table of RAM Area](#control-table-of-ram-area)
 
-| Address | Size<br>(Byte) | *Modbus*<br>Address | Data Name                                         | Access | Initial<br />Value |                        Range                        |          Unit           |
+| Address | Size(Byte) | *Modbus*<br>Address | Data Name                                         | Access | Initial<br />Value |                        Range                        |          Unit           |
 |:-------:|:--------------:|:-------------------:|:--------------------------------------------------|:------:|:------------------:|:---------------------------------------------------:|:-----------------------:|
 |   512   |       1        |  *40257 (Lo Byte)*  | [Torque Enable](#torque-enable)                   |   RW   |         0          |                        0 ~ 1                        |            -            |
 |   513   |       1        |  *40257 (Hi Byte)*  | [LED Red](#led-red)                               |   RW   |         0          |                       0 ~ 255                       |            -            |
