@@ -1,6 +1,6 @@
 
 # [컨트롤 테이블](#컨트롤-테이블)
-Control Table은 장치 내부에 존재하는 값으로서 장치의 현재 상태와 구동에 관한 Data로 구성되어 있습니다.  
+Control Table은 장치의 현재 상태와 구동 및 제어에 필요한 다수의 Data로 이루어져 있습니다.    
 사용자는 Instruction Packet을 통해 Control Table의 특정 Data를 읽어서(READ Instruction) 장치의 상태를 파악할 수 있고, Data를 변경함으로써(WRITE Instruction) 장치를 제어할 수 있습니다.
 
 {% assign protocol= "Protocol 2.0" %}
@@ -64,7 +64,7 @@ Packet에 대한 자세한 내용은 [{{ protocol }}]을 참고해주세요.
 Control Table은 2가지 영역으로 구분됩니다. RAM Area에 위치한 Data는 전원이 인가될 때마다 다시 초기값으로 설정됩니다(Volatile).  
 반면 EEPROM Area에 위치한 Data는 값을 변경하면 전원이 꺼져도 그 값이 보존됩니다(Non-Volatile).  
 
-{% if page.ref=='2xc430-w250' or page.ref =='2xl430-w250' %}**[EEPROM 영역](#eeprom-영역)의 Data는, 각 ID에 할당된 2개의 컨트롤테이블에서, [Torque Enable(64)](#torque-enable)의 값이 모두 `0' 일때만 변경할 수 있습니다.**{% else %} **EEPROM Area에 위치한 모든 Data는 Torque Enable({{ torque_enable }})의 값이 '0'(Off)일 때만 변경할 수 있습니다.**{% endif %}
+{% if page.ref=='2xc430-w250' or page.ref =='2xl430-w250' %}**[EEPROM 영역](#eeprom-영역)의 Data는, 각 ID에 할당된 2개의 컨트롤테이블에서, [Torque Enable(64)](#torque-enable)의 값이 모두 `0' 일때만 변경할 수 있습니다.**{% else %} **EEPROM Area에 위치한 모든 Data는 Torque Enable({{ torque_enable }})의 값이 '0'(Torque OFF)일 때만 변경할 수 있습니다.**{% endif %}
 {: .notice--warning}
 
 ### [크기](#크기)
