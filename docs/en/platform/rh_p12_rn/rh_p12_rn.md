@@ -65,7 +65,7 @@ You can choose the desired firmware version by using **Firmware Recovery** of [R
 
 ## [Control Table of EEPROM Area](#control-table-of-eeprom-area)
 
-| Address | Size<br>(Byte) | Data Name                                   | Description                               | Access | Initial<br />Value |
+| Address | Size(Byte) | Data Name                                   | Description                               | Access | Initial<br />Value |
 |:-------:|:--------------:|:--------------------------------------------|:------------------------------------------|:------:|:------------------:|
 |    0    |       2        | [Model Number](#model-number)               | Model Number                              |   R    |       35073        |
 |    2    |       4        | [Model Information](#model-information)     | Model Information                         |   R    |         -          |
@@ -97,7 +97,7 @@ You can choose the desired firmware version by using **Firmware Recovery** of [R
 
 ## [Control Table of RAM Area](#control-table-of-ram-area)
 
-| Address | Size<br>(Byte) | Data Name                                         | Description                    | Access | Initial<br />Value |
+| Address | Size(Byte) | Data Name                                         | Description                    | Access | Initial<br />Value |
 |:-------:|:--------------:|:--------------------------------------------------|:-------------------------------|:------:|:------------------:|
 |   562   |       1        | [Torque Enable](#torque-enable)                   | Motor Torque On/Off            |   RW   |         0          |
 |   563   |       1        | [LED Red](#led-red)                               | Red LED Intensity Value        |   RW   |         0          |

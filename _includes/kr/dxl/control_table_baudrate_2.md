@@ -30,5 +30,5 @@
 **참고** : UART는 Baudrate 오차가 3 [%] 이내이면 통신에 지장이 없습니다.
 {: .notice}
 
-**참고**: U2D2을 이용 시, 높은 통신 Baud rate에서 안정적인 통신을 위해서는 [포트의 응답시간(Latency)](/docs/kr/software/dynamixel/dynamixel_wizard2/#포트-응답-속도-설정) 을 낮춰주세요.
+**참고**: U2D2을 이용 시, 높은 통신 Baud rate에서 안정적인 통신을 위해서는 [USB 포트의 응답지연시간(Latency)](/docs/kr/software/dynamixel/dynamixel_wizard2/#포트-응답-속도-설정) 을 낮춰주세요.
 {: .notice}

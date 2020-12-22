@@ -4,9 +4,9 @@
 {% assign return_delay = "5" %}
 {% endif %}
 
-After the DYNAMIXEL receives an Instruction Packet, it delays transmitting the Status Packet for Return Delay Time({{ return_delay }}). 
-For instance, if the Return Delay Time({{ return_delay }}) is set to ‘10’, the Status Packet will be returned after 20[μsec] when the Instruction Packet is received.
+If the DYNAMIXEL receives an Instruction Packet, it will return the Status Packet after the time of the set Return Delay Time({{ return_delay }}).  
+Note that the range of values is 0 to 254 (0XFE) and its unit is 2 [μsec]. For instance, if the Return Delay Time({{ return_delay }}) is set to ‘10’, the Status Packet will be returned after 20[μsec] when the Instruction Packet is received.
 
-|Unit| Value Range    | Description     |
-| :------------: | :------------: | :------------: |
-| 2[μsec] | 0 ~ 254 | Default value ‘250’(500[μsec]), Maximum 508[μsec] |
+|  Unit   | Value Range | Description                                                    |
+|:-------:|:-----------:|:---------------------------------------------------------------|
+| 2[μsec] |   0 ~ 254   | Default value ‘250’(500[μsec]) <br> Maximum value: '508'[μsec] |

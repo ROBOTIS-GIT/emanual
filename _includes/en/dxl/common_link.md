@@ -62,7 +62,7 @@
 
 <!--Common Links -->
 
-[Hardware Error Bit(0x80)]: /docs/en/dxl/protocol2/#error 
+[Alert Bit(0x80)]: /docs/en/dxl/protocol2/#error 
 [Harness Compatibility]: /docs/en/popup/cable_compatibility/
 [Protocol 1.0]: /docs/en/dxl/protocol1/#status-packet
 [Protocol 2.0]: /docs/en/dxl/protocol2/#status-packet
