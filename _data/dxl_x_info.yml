@@ -489,8 +489,8 @@ xh540-w150:
   weight:             *weight_540
   dimensions:         *dimension_540
   gearratio:          "152.3 : 1"
-  stalltorque:        "6.6 [N.m] (at 11.1 [V], 4.5 [A])<br />7.1 [N.m] (at 12.0 [V], 4.9 [A])<br />8.5 [N.m] (at 14.8 [V], 5.9 [A]))"
-  noloadspeed:        "66 [rev/min] (at 11.1 [V])<br />70 [rev/min]) (at 12.0 [V])<br />86 [rev/min] (at 14.8 [V])"
+  stalltorque:        "6.6 [N.m] (at 11.1 [V], 4.5 [A])<br />7.1 [N.m] (at 12.0 [V], 4.9 [A])<br />8.5 [N.m] (at 14.8 [V], 5.9 [A])"
+  noloadspeed:        "66 [rev/min] (at 11.1 [V]<br />70 [rev/min] (at 12.0 [V]<br />86 [rev/min] (at 14.8 [V])"
   radialload:         *radialload
   radialload_en:      *radialload_en
   axialload:          *axialload
