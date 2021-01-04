@@ -38,7 +38,7 @@ product_group: dxl_xl430
 
 ## [Control Table of EEPROM Area](#control-table-of-eeprom-area)
 
-| Address | Size(Byte) | Data Name                        | Access | Default<br />Value |           Range            |      Unit       |
+| Address | Size<br>(Byte) | Data Name                        | Access | Default<br />Value |           Range            |      Unit       |
 |:-------:|:--------------:|:---------------------------------|:------:|:------------------:|:--------------------------:|:---------------:|
 |    0    |       2        | [Model Number]{: .popup}         |   R    |       1,060        |             -              |        -        |
 |    2    |       4        | Model Information                |   R    |         -          |             -              |        -        |
@@ -63,7 +63,7 @@ product_group: dxl_xl430
 
 ## [Control Table of RAM Area](#control-table-of-ram-area)
 
-| Address | Size(Byte) | Data Name                                         | Access | Default<br />Value |                        Range                        |                  Unit                   |
+| Address | Size<br>(Byte) | Data Name                                         | Access | Default<br />Value |                        Range                        |                  Unit                   |
 |:-------:|:--------------:|:--------------------------------------------------|:------:|:------------------:|:---------------------------------------------------:|:---------------------------------------:|
 |   64    |       1        | [Torque Enable](#torque-enable)                   |   RW   |         0          |                        0 ~ 1                        |                    -                    |
 |   65    |       1        | [LED](#led)                                       |   RW   |         0          |                        0 ~ 1                        |                    -                    |
@@ -78,7 +78,7 @@ product_group: dxl_xl430
 |   88    |       2        | [Feedforward 2nd Gain](#feedforward-2nd-gain)     |   RW   |         0          |                     0 ~ 16,383                      |                    -                    |
 |   90    |       2        | [Feedforward 1st Gain](#feedforward-1st-gain)     |   RW   |         0          |                     0 ~ 16,383                      |                    -                    |
 |   98    |       1        | [Bus Watchdog](#bus-watchdog)                     |   RW   |         0          |                       1 ~ 127                       |                20 [msec]                |
-|   100   |       2        | [Goal PWM](#goal-pwm)                             |   RW   |         -          |         -PWM Limit(36) ~<br> PWM Limit(36)          |                0.113 [%]                |
+|   100   |       2        | [Goal PWM](#goal-pwm)                             |   RW   |         -          |         -PWM Limit(36) ~<br> PWM Limit(36)          |                    -                    |
 |   104   |       4        | [Goal Velocity](#goal-velocity)                   |   RW   |         -          |    -Velocity Limit(44) ~<br> Velocity Limit(44)     |             0.229 [rev/min]             |
 |   108   |       4        | [Profile Acceleration](#profile-acceleration)     |   RW   |         0          |             0 ~ 32,767 <br> 0 ~ 32,737              | 214.577 [rev/min<sup>2</sup>]<br>1 [ms] |
 |   112   |       4        | [Profile Velocity](#profile-velocity)             |   RW   |         0          |                     0 ~ 32,767                      |             0.229 [rev/min]             |
@@ -173,7 +173,7 @@ product_group: dxl_xl430
 </summary>
 
 These values are maximum and minimum operating voltages.  
-When current input voltage acquired from [Present Input Voltage(144)](#present-input-voltage144) exceeds the range of Max Voltage Limit(32) and Min Voltage Limit(34), Voltage Range Error Bit(0x01) and [Alert Bit(0x80)](#hardware-error-status70) in the Hardware Error Status(70) are set.  
+When current input voltage acquired from [Present Input Voltage(144)](#present-input-voltage144) exceeds the range of Max Voltage Limit(32) and Min Voltage Limit(34), Voltage Range Error Bit(0x01) and [Hardware Error Bit(0x80)](#hardware-error-status70) in the Hardware Error Status(70) are set.  
 If Input Voltage Error Bit(0x10) is configured in the Shutdown(63), [Torque Enable(64)](#torque-enable64) is cleared to ‘0’ and Torque is disabled.  
 For more details, please refer to the [Shutdown(63)] section.
 

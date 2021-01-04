@@ -68,7 +68,7 @@ page_number: 1
 
 ## [EEPROM 영역](#eeprom-영역)
 
-| 주소 | 크기(Byte) | 명칭                                        | 설명                                      | 접근 | 기본값 |
+| 주소 | 크기<br>(Byte) | 명칭                                        | 설명                                      | 접근 | 기본값 |
 |:----:|:--------------:|:--------------------------------------------|:------------------------------------------|:----:|:------:|
 |  0   |       2        | [Model Number](#model-number)               | Model Number                              |  R   | 35073  |
 |  2   |       4        | [Model Information](#model-information)     | Model Information                         |  R   |   -    |
@@ -100,7 +100,7 @@ page_number: 1
 
 ## [RAM 영역](#ram-영역)
 
-| 주소 | 크기(Byte) | 명칭                                              | 설명                           | 접근 | 기본값 |
+| 주소 | 크기<br>(Byte) | 명칭                                              | 설명                           | 접근 | 기본값 |
 |:----:|:--------------:|:--------------------------------------------------|:-------------------------------|:----:|:------:|
 | 562  |       1        | [Torque Enable](#torque-enable)                   | Motor Torque On/Off            |  RW  |   0    |
 | 563  |       1        | [LED Red](#led-red)                               | Red LED Intensity Value        |  RW  |   0    |
