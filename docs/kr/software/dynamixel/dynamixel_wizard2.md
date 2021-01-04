@@ -77,7 +77,7 @@ sidebar:
 | **RX**           | [RX-10]                        | [RX-24F]                       | [RX-28]                        | [RX-64]                        |                 |
 | **EX**           | [EX-106+]                      |                                |                                |                                |                 |
 | **MX**           | [MX-12W]                       | [MX-28], [MX-28(2.0)]          | [MX-64], [MX-64(2.0)]          | [MX-106], [MX-106(2.0)]        |                 |
-| **XL**           | [XL320]                        | [XL430-W250]                   | [2XL430-W250]                  |                                |                 |
+| **XL**           | [XL320]                        | [XL330-M288]<br>[XL330-M077]   | [XL430-W250]                   | [2XL430-W250]                  |                 |
 | **XC**           | [XC430-W150]<br/> [XC430-W240] | [2XC430-W250]                  |                                |                                |                 |
 | **XM**           | [XM430-W210]<br/> [XM430-W350] | [XM540-W150]<br/> [XM540-W270] |                                |                                |                 |
 | **XH**           | [XH430-W210]<br/> [XH430-W350] | [XH430-V210]<br/> [XH430-V350] | [XH540-W150]<br/> [XH540-W270] | [XH540-V150]<br/> [XH540-V270] |                 |
@@ -693,6 +693,8 @@ sidebar:
 [MX-106]: /docs/kr/dxl/mx/mx-106/
 [MX-106(2.0)]: /docs/kr/dxl/mx/mx-106-2/
 [XL320]: /docs/kr/dxl/x/xl320/
+[XL330-M288]: /docs/kr/dxl/x/xl330-m288/
+[XL330-M077]: /docs/kr/dxl/x/xl330-m077/
 [XL430-W250]: /docs/kr/dxl/x/xl430-w250/
 [2XL430-W250]: /docs/kr/dxl/x/2xl430-w250/
 [XC430-W150]: /docs/kr/dxl/x/xc430-w150/
