@@ -93,7 +93,7 @@ sidebar:
 
     ![](/assets/images/sw/rplus2/manager/rplus_manager2_dxl_channel_setting_02_kr.png)
 
-3. 컨트롤 테이블이 활성화 되면, 컨트롤 테이블 16번 **Dynamixel Channel** 의 항목을 사용하는 다이나믹셀에 맞게 변경하고 저장하세요. 예를 들어, 확장 보드에서 다이나믹셀 X시리즈를 사용하기 위해서는 **EXP Board(XL-320)** 을 선택 합니다.
+3. 컨트롤 테이블이 활성화 되면, 컨트롤 테이블 16번 **Dynamixel Channel** 의 항목을 사용하는 다이나믹셀에 맞게 변경하고 저장하세요. 예를 들어, 확장 보드에서 다이나믹셀 X시리즈를 사용하기 위해서는 **EXP Board(X-Series)** 을 선택 합니다.
   
     ![](/assets/images/sw/rplus2/manager/rplus_manager2_dxl_channel_setting_03_kr.png)
               
