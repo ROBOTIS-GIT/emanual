@@ -1,4 +1,4 @@
-These Gains are used in Position Control Mode and Extended Position Control Mode. Gains of DYNAMIXEL’s internal controller can be calculated from Gains of the Control Table as shown below. The constant in each equations includes sampling time. Position P Gain of DYNAMIXEL’s internal controller is abbreviated to K<sub>P</sub>P and that of the Control Table is abbreviated to K<sub>P</sub>P<sub>(TBL)</sub>.
+These Gains are used in Position Control Mode and Extended Position Control Mode. Gains of DYNAMIXEL’s internal controller can be calculated from Gains of the Control Table as shown below. Position P Gain of DYNAMIXEL’s internal controller is abbreviated to K<sub>P</sub>P and that of the Control Table is abbreviated to K<sub>P</sub>P<sub>(TBL)</sub>.
 
 |                          |  Controller Gain  |                   Conversion Equations                   |   Range    | Description                   |
 |:------------------------:|:-----------------:|:--------------------------------------------------------:|:----------:|-------------------------------|

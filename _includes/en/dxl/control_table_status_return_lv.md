@@ -1,10 +1,10 @@
 The Status Return Level(68) decides how to return Status Packet when DYNAMIXEL receives an Instruction Packet.
 
-| Value |        Responding Instructions         |                         Description                          |
-|:-----:|:--------------------------------------:|:------------------------------------------------------------:|
-|   0   |            PING Instruction            |     Returns the Status Packet for PING Instruction only      |
-|   1   | PING Instruction<br />READ Instruction | Returns the Status Packet for PING and READ Instruction only |
-|   2   |            All Instructions            |        Returns the Status Packet for all Instructions        |
+| Value |        Responding Instructions         |                       Description                       |
+|:-----:|:--------------------------------------:|:-------------------------------------------------------:|
+|   0   |            PING Instruction            |   Returns the Status Packet for PING Instruction only   |
+|   1   | PING Instruction<br />READ Instruction | Returns the Status Packet for PING and READ Instruction |
+|   2   |            All Instructions            |     Returns the Status Packet for all Instructions      |
 
 
 {% if page.product_group=='xl330' %}
