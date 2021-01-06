@@ -12,12 +12,12 @@ main:
       - title: "XL-320"
         titlekr: "XL-320"
         url: /dxl/x/xl320/
-      - title: "XL330-M077" 
-        titlekr: "XL330-M077"
-        url: /dxl/x/xl330-m077/
-      - title: "XL330-M288" 
-        titlekr: "XL330-M288"
-        url: /dxl/x/xl330-m288/               
+      # - title: "XL330-M077" 
+      #   titlekr: "XL330-M077"
+      #   url: /dxl/x/xl330-m077/
+      # - title: "XL330-M288" 
+      #   titlekr: "XL330-M288"
+      #   url: /dxl/x/xl330-m288/               
       - title: "XL430-W250"
         titlekr: "XL430-W250"
         url: /dxl/x/xl430-w250/
