@@ -20,10 +20,20 @@ sidebar:
 
 ## [XL Series](#xl-series)
 
+|                    XL320                    |                      XL430                      |                       2XL                        |
+|:-------------------------------------------:|:-----------------------------------------------:|:------------------------------------------------:|
+| ![](/assets/images/dxl/x/xl320_product.jpg) | ![](/assets/images/dxl/x/xl430_product_new.png) | ![](/assets/images/dxl/x/2xl/2xl430_product.png) |
+|       [XL320](/docs/en/dxl/x/xl320/)        |    [XL430-W250](/docs/en/dxl/x/xl430-w250/)     |    [2XL430-W250](/docs/en/dxl/x/2xl430-w250/)    |
+
+
+<!-- 
+
 |                    XL320                    |                                         XL330                                         |                      XL430                      |                       2XL                        |
 |:-------------------------------------------:|:-------------------------------------------------------------------------------------:|:-----------------------------------------------:|:------------------------------------------------:|
 | ![](/assets/images/dxl/x/xl320_product.jpg) |             ![](/assets/images/dxl/x/xl330_temp/xl330-series_product.png)             | ![](/assets/images/dxl/x/xl430_product_new.png) | ![](/assets/images/dxl/x/2xl/2xl430_product.png) |
 |       [XL320](/docs/en/dxl/x/xl320/)        | [XL330-M288](/docs/en/dxl/x/xl330-m288/)<br>[XL330-M077](/docs/en/dxl/x/xl330-m077/) |    [XL430-W250](/docs/en/dxl/x/xl430-w250/)     |    [2XL430-W250](/docs/en/dxl/x/2xl430-w250/)    |
+ 
+ -->
 
 ## [XC Series](#xc-series)
 
