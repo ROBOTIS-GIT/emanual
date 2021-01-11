@@ -1,6 +1,7 @@
 {% if page.product_group=='xl330' %}
 
-The Indirect Address and the Indirect Data are useful when accessing two remote addresses in the [Control Table](#control-table) as sequential addresses. - Sequential addresses increase Instruction Packet efficiency. Addresses that can be defined as Indirect Address is limited to [RAM area (Address 64 ~ 227)](#control-table-of-ram-area).
+The Indirect Address and the Indirect Data are useful when accessing two remote addresses in the [Control Table](#control-table) as sequential addresses. 
+- Sequential addresses can increase Instruction Packet efficiency. Addresses that can be defined as Indirect Address is limited to [RAM area (Address 64 ~ 227)](#control-table-of-ram-area).
 - If specific address is allocated to Indirect Address, Indirect Address inherits features and properties of the Data from the specific Address. Property includes Size(Byte length), value range, and Access property(Read Only, Read/Write). 
 - For instance, allocating 65 (Address of LED) to Indirect Address 1(168), Indirect Data 1(208) can perform exactly same as [LED(65)]. 
 

@@ -1,16 +1,16 @@
-The Goal Position(116) sets desired position.  From the front view of DYNAMIXEL, CCW is an increasing direction, whereas CW is a decreasing direction. The way to reaching the Goal Position(116) differs by 4 Profiles provided by DYNAMIXEL. See the [What is the Profile] for more details.
+The Goal Position(116) sets desired position.  From the front view of DYNAMIXEL, CCW is an increasing direction, whereas CW is a decreasing direction. The way of reaching the Goal Position(116) can differ by the Profile provided by DYNAMIXEL. See the [What is the Profile] for more details.
 
 ![](/assets/images/dxl/x/dxl_goal_position.jpg)
 
 | Mode     | Values     | Description |
-| :--------: | :--------: | :--------: |
+| :--------: | :--------: | :--------:|
 | Position Control Mode | Min Position Limit(52) ~ Max Position Limit(48)| Initial Value : 0 ~ 4,095|
-|Extended Position Control Mode|-1,048,575 ~ 1,048,575|-256[rev] ~ 256[rev]|{% if page.product_group!='dxl_xl430' and page.ref!='mx-28-2' %}
-|Current-based Position Control Mode|-1,048,575 ~ 1,048,575|-256[rev] ~ 256[rev]|{% else %}{% endif %}
+| Extended Position Control Mode|-1,048,575 ~ 1,048,575|-256[rev] ~ 256[rev] |{% if page.product_group!='dxl_xl430' and page.ref!='mx-28-2' %}
+| Current-based Position Control Mode|-1,048,575 ~ 1,048,575|-256[rev] ~ 256[rev]|{% else %}{% endif %}
 
-|Degree Conversion Constant|Description|
-| :---: | :---: |
-|0.088&deg;/Value| 1[rev] : 0 ~ 4,095 |
+| Unit |    Description     |
+|:--------------------------:|:------------------:|
+|      0.088 [deg/pulse]      | 1[rev] : 0 ~ 4,095 |
 
 
 {% capture notice_01 %}

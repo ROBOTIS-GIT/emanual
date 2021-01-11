@@ -1,7 +1,6 @@
 
 위치 제어 모드, 확장 위치 제어 모드에서 동작하는 위치 제어기의 Gain입니다.  
 Control Table의 Gain과 장치 내부 제어기의 Gain은 다음은 같은 관계를 갖습니다.  
-하기의 상수에는 샘플링타임이 포함되어 있습니다.  
 편의상 장치 내부 제어기의 Position P Gain을 K<sub>P</sub>P로 표기하고 Control Table의 Gain은 K<sub>P</sub>P<sub>(TBL)</sub>로 표기합니다.
 
 |    컨트롤 테이블 항목    |    제어기 Gain    |                        변환 수식                         |                범위 | 설명                 |
