@@ -95,6 +95,18 @@ XL320 has different specifications from other XL-Series. Please refer to [XL-320
 | [XL430-W250-T]  | 1.0 [N.m] (at 9.0 [V], 1.0 [A])<br>1.4 [N.m] (at 11.1 [V], 1.3 [A])<br>1.5 [N.m] (at 12.0 [V], 1.4 [A]) | 47 [rev/min] (at 9.0 [V])<br>57 [rev/min] (at 11.1 [V])<br>61 [rev/min] (at 12.0 [V]) |
 | [XL-320]        | 0.39[N.m] (at 7.4 [V], 1.1 [A])                                                                         | 114[rev/min] (at 7.4 [V], 0.18[A])                                                    |
 
+<!-- 
+
+| Model           | Stall Torque                                                                                                   | No Load Speed                                                                         |
+|:----------------|:---------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------|
+| [2XL430-W250-T] | 1.0 [N.m] (at 9.0 [V], 1.0 [A])<br>1.4 [N.m] (at 11.1 [V], 1.3 [A])<br>1.5 [N.m] (at 12.0 [V], 1.4 [A])        | 47 [rev/min] (at 9.0 [V])<br>57 [rev/min] (at 11.1 [V])<br>61 [rev/min] (at 12.0 [V]) |
+| [XL430-W250-T]  | 1.0 [N.m] (at 9.0 [V], 1.0 [A])<br>1.4 [N.m] (at 11.1 [V], 1.3 [A])<br>1.5 [N.m] (at 12.0 [V], 1.4 [A])        | 47 [rev/min] (at 9.0 [V])<br>57 [rev/min] (at 11.1 [V])<br>61 [rev/min] (at 12.0 [V]) |
+| [XL330-M288]    | 0.42 [N.m] (at 3.7 [V], 1.11 [A])<br>0.52 [N.m] (at 5.0 [V], 1.47 [A])<br>0.60 [N.m] (at 6.0 [V], 1.74 [A])    | 114[rev/min] (at 7.4 [V], 0.18[A])                                                    |
+| [XL330-M077]    | 0.180 [N.m] (at 3.7 [V], 1.11 [A])<br>0.215 [N.m] (at 5.0 [V], 1.47 [A])<br>0.228 [N.m] (at 6.0 [V], 1.74 [A]) | 114[rev/min] (at 7.4 [V], 0.18[A])                                                    |
+| [XL-320]        | 0.39[N.m] (at 7.4 [V], 1.1 [A])                                                                                | 114[rev/min] (at 7.4 [V], 0.18[A])                                                    |
+ 
+ -->
+
 [XW540-T260-R]: /docs/en/dxl/x/xw540-t260/
 [XW540-T140-R]: /docs/en/dxl/x/xw540-t140/
 [XH540-V270-R]: /docs/en/dxl/x/xh540-v270/
@@ -114,4 +126,6 @@ XL320 has different specifications from other XL-Series. Please refer to [XL-320
 [XC430-W150-T]: /docs/en/dxl/x/xc430-w150/
 [2XL430-W250-T]: /docs/en/dxl/x/2xl430-w250/
 [XL430-W250-T]: /docs/en/dxl/x/xl430-w250/
+[XL330-M288]: /docs/en/dxl/x/xl330-m288/
+[XL330-M077]: /docs/en/dxl/x/xl330-m077/
 [XL-320]: /docs/en/dxl/x/xl320/
