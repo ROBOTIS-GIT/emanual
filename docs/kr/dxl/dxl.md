@@ -15,20 +15,10 @@ sidebar:
 
 ## [XL 시리즈](#xl-시리즈)
 
-|                    XL320                    |                      XL430                      |                       2XL                        |
+|                    XL-320                   |                      XL430                      |                       2XL430                     |
 |:-------------------------------------------:|:-----------------------------------------------:|:------------------------------------------------:|
 | ![](/assets/images/dxl/x/xl320_product.jpg) | ![](/assets/images/dxl/x/xl430_product_new.png) | ![](/assets/images/dxl/x/2xl/2xl430_product.png) |
-|       [XL320](/docs/kr/dxl/x/xl320/)        |    [XL430-W250](/docs/kr/dxl/x/xl430-w250/)     |    [2XL430-W250](/docs/kr/dxl/x/2xl430-w250/)    |
-
-
-<!-- 
-
-|                    XL320                    |                                        XL330                                         |                      XL430                      |                       2XL                        |
-|:-------------------------------------------:|:------------------------------------------------------------------------------------:|:-----------------------------------------------:|:------------------------------------------------:|
-| ![](/assets/images/dxl/x/xl320_product.jpg) |            ![](/assets/images/dxl/x/xl330_temp/xl330-series_product.png)             | ![](/assets/images/dxl/x/xl430_product_new.png) | ![](/assets/images/dxl/x/2xl/2xl430_product.png) |
-|       [XL320](/docs/kr/dxl/x/xl320/)        | [XL330-M288](/docs/kr/dxl/x/xl330-m288/)<br>[XL330-M077](/docs/kr/dxl/x/xl330-m077/) |    [XL430-W250](/docs/kr/dxl/x/xl430-w250/)     |    [2XL430-W250](/docs/kr/dxl/x/2xl430-w250/)    |
- 
- -->
+|       [XL-320](/docs/kr/dxl/x/xl320/)       |    [XL430-W250](/docs/kr/dxl/x/xl430-w250/)     |    [2XL430-W250](/docs/kr/dxl/x/2xl430-w250/)    |
 
 
 **주의**: XL-320은 프로토콜 1.0으로 **변경할 수 없습니다.**
