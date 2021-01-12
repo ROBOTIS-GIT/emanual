@@ -1,7 +1,7 @@
 {% if page.product_group=='xl330' %}
 
 Indirect Address와 Indirect Data 용도는 서로 떨어져있는 [컨트롤 테이블](#컨트롤-테이블)의 Address를 연속된 Address로 사용하기 위함입니다.  
-- 연속된 Address는 Instruction Packet을 효율성을 향상 시킵니다.  
+- 연속된 Address는 Instruction Packet의 효율성을 향상 시킬 수 있습니다.
 - Indirect Address로 설정할 수 있는 Address는 [RAM 영역(Address 64 ~ 227)](#ram-영역)으로 한정 됩니다.  
 - Indirect Address에 특정 Address를 설정하면, Indirect Data는 특정한 Address에 해당하는 Data의 기능과 동일한 속성을 모두 상속받습니다. 동일한 속성이란 Size(Byte 길이), 값의 범위 그리고 Access(읽기 전용 속성, 읽기 쓰기 속성)를 모두 포함합니다. 
 - 예를들어 Indirect Address 1(168)에 65(LED의 Address)를 설정하면, Indirect Data 1(224)은 [LED(65)]와 동일한 기능을 수행하게 됩니다. 

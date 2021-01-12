@@ -1,12 +1,12 @@
 Use the Goal Velocity(104) to set a desired velocity when the [Operating Mode(11)] is **Velocity Control Mode**. 
 
-Be aware that the Goal Velocity(104) is not to limit moving velocity.
+Note that the Goal Velocity(104) is not used to limit moving velocity.
 
 |   Unit    |                 Value Range                  |
 |:---------:|:--------------------------------------------:|
 | 0.229 rpm | -[Velocity Limit(44)] ~ [Velocity Limit(44)] |
 
-**NOTE**: This value cannot exceed [Velocity Limit(44)].
+**NOTE**: Goal Velocity(104) can not exceed [Velocity Limit(44)].
 {: .notice}
 
 **NOTE** : The maximum velocity and maximum torque of DYNAMIXEL is affected by supplying voltage.  
