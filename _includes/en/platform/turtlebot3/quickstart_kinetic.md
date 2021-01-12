@@ -14,8 +14,8 @@
 ### [Download and Install Ubuntu on PC](#download-and-install-ubuntu-on-pc)
 
 1. Download the proper `Ubuntu 16.04 LTS Desktop` image for your PC from the links below.
-  - [Ubuntu 16.04 LTS Desktop image (64-bit)](https://releases.ubuntu.com/16.04.7/ubuntu-16.04.7-desktop-amd64.iso)
-  - [Ubuntu 16.04 LTS Desktop image (32-bit)](https://releases.ubuntu.com/16.04.7/ubuntu-16.04.6-desktop-i386.iso)
+  - [Ubuntu 16.04 LTS Desktop image (64-bit)](https://releases.ubuntu.com/16.04.7/ubuntu-16.04.7-desktop-amd64.iso){: .blank}
+  - [Ubuntu 16.04 LTS Desktop image (32-bit)](https://releases.ubuntu.com/16.04.7/ubuntu-16.04.6-desktop-i386.iso){: .blank}
 
 2. Follow the instruction below to install Ubuntu on PC.
   - [Install Ubuntu desktop](https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview)

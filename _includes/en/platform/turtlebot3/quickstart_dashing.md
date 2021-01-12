@@ -13,7 +13,7 @@
 ### [Download and Install Ubuntu on PC](#download-and-install-ubuntu-on-pc)
 
 1. Download the proper `Ubuntu 18.04 LTS Desktop` image for your PC from the links below.
-  - [Ubuntu 18.04 LTS Desktop image (64-bit)](http://releases.ubuntu.com/18.04/ubuntu-18.04.5-desktop-amd64.iso)
+  - [Ubuntu 18.04 LTS Desktop image (64-bit)](http://releases.ubuntu.com/18.04/ubuntu-18.04.5-desktop-amd64.iso){: .blank}
 
 2. Follow the instruction below to install Ubuntu on PC.
   - [Install Ubuntu desktop](https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview)
