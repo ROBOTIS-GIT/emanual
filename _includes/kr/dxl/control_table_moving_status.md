@@ -17,6 +17,6 @@
 **참고** : In-Position은 위치 관련 제어모드에서 위치값의 차이가 펌웨어에 설정된 값보다 작은 범위 내에 들어올 때 설정됩니다.
 {: .notice}
 
-[사다리꼴 프로파일]: #profile-velocity112
+[사다리꼴 프로파일]: #profile
 [Step]: #profile-velocity112
-[사각 프로파일]: #profile-velocity112
+[사각 프로파일]: #profile
