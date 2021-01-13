@@ -36,9 +36,9 @@ The **TurtleBot3 Simulation Package** requires `turtlebot3` and `turtlebot3_msgs
 Please follow the [PC Setup](/docs/en/platform/turtlebot3/quick-start/) instructions if you did not install required packages and dependent packages.
 
 ```bash
-$ cd ~/catkin_ws/src/
+$ cd ~/turtlebot3_ws/src/
 $ git clone -b dashing-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
-$ cd ~/catkin_ws && catkin_make
+$ cd ~/turtlebot3_ws && colcon build --symlink-install
 ```
 
 The **GAZEBO_MODEL_PATH** parameter must be appended in the `.bashrc` file. Enter below command to add the information.
