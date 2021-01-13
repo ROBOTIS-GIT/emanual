@@ -94,7 +94,7 @@ In order to check the details of the easy installation script, please refer to [
 ```bash
 $ sudo apt-get update
 $ sudo apt-get upgrade
-$ https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_melodic_rp3.sh
+$ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_melodic_rp3.sh
 $ chmod 755 ./install_ros_melodic_rp3.sh
 $ bash ./install_ros_melodic_rp3.sh
 ```
