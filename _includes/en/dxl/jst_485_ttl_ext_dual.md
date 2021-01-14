@@ -34,9 +34,9 @@
 {% endif %}
 
 
-[SA610/S4B]: https://weipuconnector.com/pro_show_296.htm
-[SA612/P4B]: https://weipuconnector.com/pro_show_299.htm
-[SA611/P4B]: https://weipuconnector.com/pro_show_297.htm
+[SA610/S4B]: https://weipuconnector.com/product/46
+[SA612/P4B]: https://weipuconnector.com/product/46
+[SA611/P4B]: https://weipuconnector.com/product/46
 [JST EHR-03]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
 [JST EHR-04]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
 [JST B3B-EH-A]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
