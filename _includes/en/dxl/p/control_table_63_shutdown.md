@@ -12,7 +12,7 @@ In order to turn on the torque of the device in shutdown status, REBOOT has to b
 | Bit 5 |     Overload Error(Default)      | Detect persistent load that exceeds maximum output                              |
 | Bit 4 | Electrical Shock Error(Default)  | Detect electric shock on the circuit or insufficient power to operate the motor |
 | Bit 3 |   Motor Encoder Error(Default)   | Detect malfunction of the motor encoder                                         |
-| Bit 2 |        OverHeating Error         | Detect internal temperature exceeds the configured operating temperature        |
+| Bit 2 |        Overheating Error         | Detect internal temperature exceeds the configured operating temperature        |
 | Bit 1 | Motor Hall Sensor Error(Default) | Motor hall sensor value exceeds normal range                                    |
 | Bit 0 |       Input Voltage Error        | Detect input voltage exceeds the configured operating voltage                   |
 

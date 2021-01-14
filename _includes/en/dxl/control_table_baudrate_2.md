@@ -30,6 +30,6 @@ The Baud Rate(8) determines serial communication speed between a controller and 
 **NOTE** : Less than 3% of the baud rate error margin will not affect to UART communication.
 {: .notice}
 
-**NOTE** : For the stable communication with higher Baudrate, configure USB Latency value to the lower.  
+**NOTE** : For the stable communication with higher Baudrate using U2D2, configure USB Latency value to the lower.  
 [USB Latency Setting](/docs/en/software/dynamixel/dynamixel_wizard2/#usb-latency-setting) 
 {: .notice}

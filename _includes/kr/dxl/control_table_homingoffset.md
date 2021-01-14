@@ -8,5 +8,5 @@
 **참고** : 1회전 내에서 제어하는 위치제어 모드(관절 모드)의 경우, Homing Offset(20)은 (-1024 ~ 1024) 범위보다 클 경우 무시됩니다.
 {: .notice}
 
-**참고** : Drive Mode(10)의 Reverse Mode가 설정되었더라도, Homing Offset(20)의 부호는 반전되지 않습니다.
+**주의** : Drive Mode(10)의 Reverse Mode가 설정되었더라도, Homing Offset(20)의 부호는 반전되지 않습니다.
 {: .notice}

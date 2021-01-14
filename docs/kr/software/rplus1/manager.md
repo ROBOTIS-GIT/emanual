@@ -548,7 +548,7 @@ RoboPlus Manager는 인터넷을 통해 새 버전의 펌웨어를 자동으로 
   - OverLoad Error : 액츄에이터가 받는 힘이 힘 조절값을 초과했을 경우
   - Checksum Error : 받은 명령에 체크섬 오류가 있을 경우
   - Range Error : 액츄에이터 위치 사용 범위를 초과한 명령을 받은 경우
-  - OverHeating Error : 현재 액츄에이터 상태가 한계 설정 온도를 초과했을 경우
+  - Overheating Error : 현재 액츄에이터 상태가 한계 설정 온도를 초과했을 경우
   - Angle Limit Error : 위치 제한값을 벗어난 경우
   - Input Voltage Error : 입력 전압이 한계 전압값 범위를 벗어난 경우
 

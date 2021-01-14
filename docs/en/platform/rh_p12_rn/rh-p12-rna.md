@@ -17,7 +17,7 @@ page_number: 1
 
 ![](/assets/images/platform/rh_p12_rn/rh-p12-rn_product_new.png)
 
-> RH_P12_RN(A)
+> RH-P12-RN(A)
 
 ## [RH-P12-RN(A)](#rh-p12-rna)
 - It uses improved firmware version compared to RH-P12-RN.
@@ -173,7 +173,8 @@ This address stores model number of the device.
 | RH-P12-RN(A) | 35,074 (0x8902) |
 
 ### <a name="firmware-version"></a>**[Firmware Version(6)](#firmware-version6)**
-{% include en/dxl/p/control_table_6_firmware_version.md %}
+
+This address stores firmware version of the device.
 
 ### <a name="id"></a>**[ID(7)](#id7)**
 {% include en/dxl/p/control_table_7_id.md %}

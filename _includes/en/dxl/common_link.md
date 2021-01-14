@@ -59,6 +59,9 @@
 [Goal Acceleration(606)]: #goal-acceleration606
 [Present Position(580)]: #present-position580
 [Present Position(611)]: #present-position611
+[Max Position Limit(48)]: #maxmin-position-limit48-52
+[Min Position Limit(52)]: #maxmin-position-limit48-52
+[Drive Mode(10)]: #drive-mode
 
 <!--Common Links -->
 
