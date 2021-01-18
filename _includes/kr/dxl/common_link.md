@@ -64,6 +64,12 @@
 [Min Position Limit(52)]: #maxmin-position-limit48-52
 [Drive Mode(10)]: #drive-mode
 [Acceleration Limit(40)]: #acceleration-limit40
+[Profile Acceleration(556)]: #profile-acceleration556
+[Profile Velocity(560)]: #profile-velocity560
+[Goal Velocity(552)]: #goal-velocity552
+[Goal Position(564)]: #goal-position564
+[Velocity Limit(44)]: velocity-limit44
+
 <!--Common Links -->
 
 [Alert Bit(0x80)]: /docs/kr/dxl/protocol2/#error 

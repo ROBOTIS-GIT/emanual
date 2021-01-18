@@ -7,7 +7,7 @@ The "communication" can be seen as all the Instruction Packets defined in the pr
 | Range | 1 ~ 127 | Activates Bus Watchdog (Unit: 20 [msec])                        |
 | Range |   -1    | Bus Watchdog Error Status                                       |
 
-The Bus Watchdog monitors the communication interval time between the controller and the device when Torque Enable(512) is ‘1’.  
+The Bus Watchdog monitors the communication interval time between the controller and the device when Torque Enable(512) is ‘1’ (Torque ON).  
 If the measured communication interval time is longer than set value of Bus Watchdog(546), the device will be stopped and Bus Watchdog(546) value will be set to ‘-1’ (Bus Watchdog Error).  
 If Bus Watchdog Error occurs, goal values such as Goal PWM(548), Goal Current(550), Goal Velocity(552) and Goal Position(564) will be changed to read-only-access.  
 Therefore, if a new value is written to the Goal Value, the Status Packet will send the Data Range Error via its Error field.
