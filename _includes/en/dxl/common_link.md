@@ -61,6 +61,7 @@
 [Present Position(611)]: #present-position611
 [Max Position Limit(48)]: #maxmin-position-limit48-52
 [Min Position Limit(52)]: #maxmin-position-limit48-52
+[Acceleration Limit(40)]: #acceleration-limit40
 [Drive Mode(10)]: #drive-mode
 
 <!--Common Links -->

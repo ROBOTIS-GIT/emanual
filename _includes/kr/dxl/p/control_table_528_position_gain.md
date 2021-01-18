@@ -1,4 +1,4 @@
-위치 제어 모드, 확장 위치 제어 모드에서 동작하는 위치 제어기의 Gain입니다. 편의상 장치 내부 제어기의 Position P Gain을 K<sub>P</sub>P로 표기하고 Control Table의 Gain은 K<sub>P</sub>P<sub>(TBL)</sub>로 표기합니다.
+위치 제어 모드, 확장 위치 제어 모드에서 동작하는 위치 제어기의 Gain입니다. 편의상 장치 내부 제어기의 Position P Gain을 K<sub>P</sub>P로 표기합니다.
 
 |                           |    제어기 Gain    |    범위    | 설명                       |
 |:-------------------------:|:-----------------:|:----------:|:---------------------------|
@@ -26,5 +26,5 @@
 **참고** : PWM 제어 모드의 경우, PID 제어기와 Feedforward 제어기는 모두 비활성화되고 Goal PWM(548) 값이 Inverter를 통해서 모터에 직접 인가됩니다. 이를 통해 모터의 전압을 직접 제어할 수 있습니다.
 {: .notice}
 
-**참고** : K<sub>a</sub>는 Anti-windup Gain로서 사용자가 변경할 수는 없습니다.
+**참고** : K<sub>a</sub>는 Anti-windup Gain로서 사용자가 변경할 수는 없습니다. 자세한 정보는 [PID Controller](http://en.wikipedia.org/wiki/PID_controller) 및 [Feed Forward](https://en.wikipedia.org/wiki/Feed_forward_(control))에 문서를 참고 하세요.
 {: .notice}

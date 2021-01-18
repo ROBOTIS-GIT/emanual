@@ -3,9 +3,9 @@ Profile Velocity(560) can be used in Position Control Mode and Extended Position
 Profile Velocity(560) cannot exceed Velocity Limit(44).  
 Velocity Control Mode uses Profile Acceleration(556) only, and Profile Velocity(560) will be ignored.
 
-|      Unit      |      Value Range       |             Description              |
-|:--------------:|:----------------------:|:------------------------------------:|
-| 0.01 [rev/min] | 0 ~ Velocity Limit(44) | ‘0’ stands for the infinite velocity |
+|      Unit      |      Value Range       |                                Description                                 |
+|:--------------:|:----------------------:|:--------------------------------------------------------------------------:|
+| 0.01 [rev/min] | 0 ~ Velocity Limit(44) | Setting Profile Velocity(560) to ‘0’, it represents the infinite velocity. |
 
 The Profile is an acceleration/deceleration control technique to reduce vibration, noise and load on the motor by controlling dramatically changing velocity and acceleration.  
 It is also called Velocity Profile as it controls acceleration and deceleration based on velocity.  
@@ -47,7 +47,7 @@ The following explains how Profile processes Goal Position(564).
 Step and Trapezoidal Profiles are supported and Velocity Override is supported as well.  
 Acceleration time(t<sub>1</sub>) can be calculated as below equation.
 
-**t<sub>1</sub> = 600 * {Goal Velocity(552) / Profile Acceleration(556)}**
+**t<sub>1</sub> = 600 * {Profile Velocity(560) / Profile Acceleration(556)}**
 {% endcapture %}
 
 <div class="notice">{{ group_notice_03 | markdownify }}</div>

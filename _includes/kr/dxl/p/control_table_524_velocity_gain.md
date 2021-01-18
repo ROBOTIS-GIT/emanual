@@ -1,4 +1,4 @@
-속도 제어 모드에서 동작하는 속도 제어기의 Gain 입니다. Control Table의 Gain과 장치 내부 제어기의 Gain은 다음은 같은 관계를 갖습니다. 편의상 장치 내부 제어기의 Velocity P Gain을 K<sub>V</sub>P로 표기하고 Control Table의 Gain은 K<sub>V</sub>P<sub>(TBL)</sub>로 표기합니다.
+속도 제어 모드에서 동작하는 속도 제어기의 Gain 입니다. Control Table의 Gain과 장치 내부 제어기의 Gain은 다음은 같은 관계를 갖습니다. 편의상 장치 내부 제어기의 Velocity P Gain을 K<sub>V</sub>P로 표기합니다.
 
 
 |                           |    제어기 Gain    |    범위    |           상세 설명           |
@@ -23,5 +23,5 @@
 
 ![](/assets/images/dxl/p/velocity_controller.png)
 
-**참고** : K<sub>v</sub>A는 Anti-windup Gain으로 사용자가 변경할 수는 없습니다. PID제어기에 대한 설명은 [위키피디아 PID Controller](http://en.wikipedia.org/wiki/PID_controller)를 참조하세요.
+**참고** : K<sub>v</sub>A는 Anti-windup Gain으로 사용자가 변경할 수는 없습니다. 자세한 정보는 [PID Controller](http://en.wikipedia.org/wiki/PID_controller) 및 [Feed Forward](https://en.wikipedia.org/wiki/Feed_forward_(control))에 문서를 참고 하세요.
 {: .notice}
