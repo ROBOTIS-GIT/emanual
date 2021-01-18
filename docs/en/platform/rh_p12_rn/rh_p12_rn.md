@@ -17,7 +17,7 @@ page_number: 1
 
 ![](/assets/images/platform/rh_p12_rn/rh-p12-rn_product_old.png)
 
-> RH_P12_RN 
+> RH-P12-RN 
 
 ## [RH-P12-RN](#rh-p12-rn)
 - It uses old firmware version.
@@ -136,14 +136,14 @@ You can choose the desired firmware version by using **Firmware Recovery** of [R
 {: .notice--warning}
 
 ### <a name="model-number"></a>**[Model Number(0)](#model-number0)**
-This address stores model number of the RH-P12-RN.
+This address stores model number of the device.
 
 | Model Name |  Model Number  |
 |:----------:|:--------------:|
 | RH-P12-RN  | 35073 (0x8901) |
 
 ### <a name="firmware-version"></a>**[Firmware Version(6)](#firmware-version6)**
-This address stores firmware version of the RH-P12-RN.
+This address stores firmware version of the device.
 
 ### <a name="id"></a>**[ID(7)](#id7)**
 {% include en/dxl/control_table_id.md %}
@@ -264,7 +264,7 @@ The DYNAMIXEL can protect itself by detecting dangerous situations that could oc
 | Bit 5 |     Overload Error(Default)     | Detect persistent load that exceeds maximum output                              |
 | Bit 4 | Electrical Shock Error(Default) | Detect electric shock on the circuit or insufficient power to operate the motor |
 | Bit 3 |       Motor Encoder Error       | Detect malfunction of the motor encoder                                         |
-| Bit 2 |        OverHeating Error        | Detect internal temperature exceeds the configured operating temperature        |
+| Bit 2 |        Overheating Error        | Detect internal temperature exceeds the configured operating temperature        |
 | Bit 1 |                -                | Unused, Always 0                                                                |
 | Bit 0 |       Input Voltage Error       | Detect input voltage exceeds the configured operating voltage                   |
 

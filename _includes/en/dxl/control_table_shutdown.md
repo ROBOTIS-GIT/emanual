@@ -13,7 +13,7 @@ REBOOT is the only method to reset {% if page.product_group=='dxl_ax' or page.pr
 | Bit 5 |   Overload Error    | Detects that persistent load exceeds maximum output                                          |
 | Bit 4 |   CheckSum Error    | Detects that the Checksum of the transmitted Instruction Packet is invalid                                              |
 | Bit 3 |     Range Error     | Detects that the command is given beyond the range of usage                                                             |
-| Bit 2 |  OverHeating Error  | Detects that the internal temperature exceeds the set temperature                                                       |
+| Bit 2 |  Overheating Error  | Detects that the internal temperature exceeds the set temperature                                                       |
 | Bit 1 |  Angle Limit Error  | Detects that Goal Position is written with the value that is not between CW Angle Limit and CCW Angle Limit             |
 | Bit 0 | Input Voltage Error | Detects that input voltage exceeds the configured operating voltage                      |
 {% elsif page.product_group=='dxl_pro' or page.product_group=='dxl_pro_a' or page.product_group=='dxl_p' %}
@@ -24,7 +24,7 @@ REBOOT is the only method to reset {% if page.product_group=='dxl_ax' or page.pr
 | Bit 5 |     Overload Error(Default)      | Detects that persistent load exceeds maximum output                              |
 | Bit 4 | Electrical Shock Error(Default)  | Detects electric shock on the circuit or insufficient power to operate the motor |
 | Bit 3 |   Motor Encoder Error(Default)   | Detects malfunction of the motor encoder                                         |
-| Bit 2 |        OverHeating Error         | Detects that internal temperature exceeds the configured operating temperature        |
+| Bit 2 |        Overheating Error         | Detects that internal temperature exceeds the configured operating temperature        |
 | Bit 1 | Motor Hall Sensor Error(Default) | Detects that Motor hall sensor value exceeds normal range                                    |
 | Bit 0 |       Input Voltage Error        | Detects that input voltage exceeds the configured operating voltage                   |
 {% else %}
@@ -35,7 +35,7 @@ REBOOT is the only method to reset {% if page.product_group=='dxl_ax' or page.pr
 | Bit 5 |                                                  Overload Error(default)                                                  | Detects that persistent load that exceeds maximum output                              |
 | Bit 4 |                                              Electrical Shock Error(default)                                              | Detects electric shock on the circuit or insufficient power to operate the motor |
 | Bit 3 |                                                    Motor Encoder Error                                                    | Detects malfunction of the motor encoder                                         |
-| Bit 2 |                                                OverHeating Error(default)                                                 | Detects that internal temperature exceeds the configured operating temperature        |
+| Bit 2 |                                                Overheating Error(default)                                                 | Detects that internal temperature exceeds the configured operating temperature        |
 | Bit 1 |                                                             -                                                             | Unused, Always '0'                                                              |{% if page.product_group=='xl330' %}
 | Bit 0 |                                                Input Voltage Error (default)                                              | Detects that input voltage exceeds the configured operating voltage                   |{% else %} 
 | Bit 0 |                                                   Input Voltage Error                                                     | Detects that input voltage exceeds the configured operating voltage                   |{% endif %}

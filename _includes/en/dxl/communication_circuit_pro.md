@@ -3,8 +3,6 @@ The following is a recommended conversion circuit diagram.
 
 ![](/assets/images/dxl/pro/485_circuit_pro.png)
 
-[MAX485 Datasheet](http://ecee.colorado.edu/~mcclurel/max485ds.pdf)
-
 The power is supplied via Pin1(-) and Pin2(+) of DYNAMIXEL. (The above circuit is built into DYNAMIXEL-only controllers)
 
 In the above circuit diagram, the direction of data signal of TxD and RxD in the TTL Level is determined according to the level of `DIRECTION485` as follows:

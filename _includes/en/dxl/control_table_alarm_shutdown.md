@@ -8,7 +8,7 @@ The errors can be set as the table below.
 | Bit 5 |   Overload Error    | When the current load cannot be controlled with the set maximum torque                                     |
 | Bit 4 |   CheckSum Error    | When the Checksum of the transmitted Instruction Packet is invalid                                         |
 | Bit 3 |     Range Error     | When the command is given beyond the range of usage                                                        |
-| Bit 2 |  OverHeating Error  | When the internal temperature is out of the range of operating temperature set in the Control Table        |
+| Bit 2 |  Overheating Error  | When the internal temperature is out of the range of operating temperature set in the Control Table        |
 | Bit 1 |  Angle Limit Error  | When Goal Position is written with the value that is not between CW Angle Limit and CCW Angle Limit        |
 | Bit 0 | Input Voltage Error | When the applied voltage is out of the range of operating voltage set in the Control Table                 |
 

@@ -12,7 +12,9 @@ Performance Graph는 N-T Curve라고도 불리며, 부하(load)를 점진적으�
 
 {% capture perform_graph_02 %}
 **주의** : **전원 공급시 주의사항**
+{% unless page.product_group == 'dxl_p' or page.product_group == 'dxl_pro' or page.product_group == 'dxl_pro_a' or page.ref == 'xh430-v210'or page.ref == 'xh430-v350'or page.ref == 'xh540-v150' or page.ref == 'xh540-v270' %} 
 - 안정적인 전원공급을 위해 로보티즈 제어기나 SMPS2Dynamixel 통한 전원공급을 권장드립니다.
+{% endunless %}
 - 전원이 꺼진 상태에서 장치와 전원을 연결하시고 스위치로 ON/OFF를 해주세요.
 {% if page.product_group=='dxl_pro' or page.product_group=='dxl_pro_a' or page.product_group=='dxl_p' or page.ref=='xh430-v210' or page.ref=='xh430-v350' or page.ref=='xh540-v150' or page.ref=='xh540-v270' %}
 - 다이나믹셀 PRO 및 다이나믹셀-P 시리즈의 경우 반드시 전원포트를 통해 24V 전원을 공급해주세요.

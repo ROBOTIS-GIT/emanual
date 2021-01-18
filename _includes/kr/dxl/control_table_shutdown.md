@@ -23,7 +23,7 @@ Revision: PRO+ > DYNAMIXEL-P.
 | Bit 5 |   Overload Error    | 모터의 최대 출력으로 제어할 수 없는 하중이 지속적으로 적용되는 경우                      |
 | Bit 4 |   CheckSum Error    | 전송된 Instruction Packet의 ChecklSum이 맞지 않을 경우                                   |
 | Bit 3 |     Range Error     | 해당 Address의 값의 범위를 벗어난 값을 Instruction Packet으로 보내는 경우                |
-| Bit 2 |  OverHeating Error  | 내부 온도가 설정된 온도를 벗어난 경우                                          |
+| Bit 2 |  Overheating Error  | 내부 온도가 설정된 온도를 벗어난 경우                                          |
 | Bit 1 |  Angle Limit Error  | 적용한 Goal Position이 설정한 CW/CCW Angle Limit 범위를 벗어난 경우                      |
 | Bit 0 | Input Voltage Error | 인가된 전압이 설정된 동작 전압 범위를 벗어났을 경우                                      |
 {% elsif page.product_group=='dxl_pro' or page.product_group=='dxl_pro_a' or page.product_group=='dxl_p' %}
@@ -45,7 +45,7 @@ Revision: PRO+ > DYNAMIXEL-P.
 | Bit 5 |     Overload Error(초기값)      | 최대 출력으로 제어할 수 없는 하중이 지속적으로 발생한 경우                                         |
 | Bit 4 | Electrical Shock Error(초기값)  | 전기적으로 회로가 충격을 받았거나, 입력 전력이 부족해서 모터가 정상 동작하지 못하는 경우                 |
 | Bit 3 |      Motor Encoder Error       | 모터의 엔코더가 동작하지 않는 경우                                                            |
-| Bit 2 |   OverHeating Error(초기값)     | 내부 온도가 설정된 온도를 벗어난 경우                                                   |
+| Bit 2 |   Overheating Error(초기값)     | 내부 온도가 설정된 온도를 벗어난 경우                                                   |
 | Bit 1 |               -                | 미사용, 항상 '0'                                                                         |{% if page.product_group=='xl330' %}
 | Bit 0 |     Input Voltage Error(초기값)  | 인가된 전압이 설정된 동작전압 범위를 벗어난 경우                                                 |{% else %}
 | Bit 0 |     Input Voltage Error         | 인가된 전압이 설정된 동작전압 범위를 벗어난 경우                                                 |{% endif %}

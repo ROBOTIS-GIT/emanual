@@ -1,6 +1,6 @@
 동작 온도의 상한 값입니다. 사용 범위는 0 ~ 100 이며, 단위는 섭씨 온도입니다.  
 예를 들어, 값이 80이면 80 [&deg;C] 입니다.  
-내부 온도가 이 값을 넘으면 Status Packet 중 ERROR의 Over Heating Error Bit (Bit2) 가 ‘1’로 설정되어 반환되고, Shutdown의 플래그(flag)중 과열(Overheating)이 설정되어 있다면 기능이 발휘됩니다.
+내부 온도가 이 값을 넘으면 Status Packet 중 ERROR의 Overheating Error Bit (Bit2) 가 ‘1’로 설정되어 반환되고, Shutdown의 플래그(flag)중 과열(Overheating)이 설정되어 있다면 기능이 발휘됩니다.
 
 |단위|값의 범위|설명|
 | :---: | :---: | :---: |

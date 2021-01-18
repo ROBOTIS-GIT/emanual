@@ -12962,9 +12962,9 @@ ph54-200-s500-r:
         - title: "Max/Min Position Limit(48, 52)"
           titlekr: "Max/Min Position Limit(48, 52)"
           url: /dxl/p/ph54-200-s500-r/#maxmin-position-limit48-52
-        - title: "External Port Mode"
-          titlekr: "External Port Mode"
-          url: /dxl/p/ph54-200-s500-r/#external-port-mode-external-port-data
+        - title: "External Port Mode (56, 57, 58, 59)"
+          titlekr: "External Port Mode (56, 57, 58, 59)"
+          url: /dxl/p/ph54-200-s500-r/#external-port-mode-external-port-data-56-57-58-59
         - title: "Shutdown(63)"
           titlekr: "Shutdown(63)"
           url: /dxl/p/ph54-200-s500-r/#shutdown63
@@ -12976,7 +12976,7 @@ ph54-200-s500-r:
           url: /dxl/p/ph54-200-s500-r/#torque-enable512
         - title: "RGB LED(513)"
           titlekr: "RGB LED(513)"
-          url: /dxl/p/ph54-200-s500-r/#rgb-led513
+          url: /dxl/p/ph54-200-s500-r/#rgb-led513-514-515
         - title: "Status Return Level(516)"
           titlekr: "Status Return Level(516)"
           url: /dxl/p/ph54-200-s500-r/#status-return-level516
@@ -13196,9 +13196,9 @@ ph54-100-s500-r:
         - title: "Max/Min Position Limit(48, 52)"
           titlekr: "Max/Min Position Limit(48, 52)"
           url: /dxl/p/ph54-100-s500-r/#maxmin-position-limit48-52
-        - title: "External Port Mode"
-          titlekr: "External Port Mode"
-          url: /dxl/p/ph54-100-s500-r/#external-port-mode-external-port-data
+        - title: "External Port Mode (56, 57, 58, 59)"
+          titlekr: "External Port Mode (56, 57, 58, 59)"
+          url: /dxl/p/ph54-100-s500-r/#external-port-mode-external-port-data-56-57-58-59
         - title: "Shutdown(63)"
           titlekr: "Shutdown(63)"
           url: /dxl/p/ph54-100-s500-r/#shutdown63
@@ -13210,7 +13210,7 @@ ph54-100-s500-r:
           url: /dxl/p/ph54-100-s500-r/#torque-enable512
         - title: "RGB LED(513)"
           titlekr: "RGB LED(513)"
-          url: /dxl/p/ph54-100-s500-r/#rgb-led513
+          url: /dxl/p/ph54-100-s500-r/#rgb-led513-514-515
         - title: "Status Return Level(516)"
           titlekr: "Status Return Level(516)"
           url: /dxl/p/ph54-100-s500-r/#status-return-level516
@@ -13430,9 +13430,9 @@ ph42-020-s300-r:
         - title: "Max/Min Position Limit(48, 52)"
           titlekr: "Max/Min Position Limit(48, 52)"
           url: /dxl/p/ph42-020-s300-r/#maxmin-position-limit48-52
-        - title: "External Port Mode"
-          titlekr: "External Port Mode"
-          url: /dxl/p/ph42-020-s300-r/#external-port-mode-external-port-data
+        - title: "External Port Mode (56, 57, 58, 59)"
+          titlekr: "External Port Mode (56, 57, 58, 59)"
+          url: /dxl/p/ph42-020-s300-r/#external-port-mode-external-port-data-56-57-58-59
         - title: "Shutdown(63)"
           titlekr: "Shutdown(63)"
           url: /dxl/p/ph42-020-s300-r/#shutdown63
@@ -13444,7 +13444,7 @@ ph42-020-s300-r:
           url: /dxl/p/ph42-020-s300-r/#torque-enable512
         - title: "RGB LED(513)"
           titlekr: "RGB LED(513)"
-          url: /dxl/p/ph42-020-s300-r/#rgb-led513
+          url: /dxl/p/ph42-020-s300-r/#rgb-led513-514-515
         - title: "Status Return Level(516)"
           titlekr: "Status Return Level(516)"
           url: /dxl/p/ph42-020-s300-r/#status-return-level516
@@ -13663,9 +13663,9 @@ pm42-010-s260-r:
         - title: "Max/Min Position Limit(48, 52)"
           titlekr: "Max/Min Position Limit(48, 52)"
           url: /dxl/p/pm42-010-s260-r/#maxmin-position-limit48-52
-        - title: "External Port Mode"
-          titlekr: "External Port Mode"
-          url: /dxl/p/pm42-010-s260-r/#external-port-mode-external-port-data
+        - title: "External Port Mode (56, 57, 58, 59)"
+          titlekr: "External Port Mode (56, 57, 58, 59)"
+          url: /dxl/p/pm42-010-s260-r/#external-port-mode-external-port-data-56-57-58-59
         - title: "Shutdown(63)"
           titlekr: "Shutdown(63)"
           url: /dxl/p/pm42-010-s260-r/#shutdown63
@@ -13677,7 +13677,7 @@ pm42-010-s260-r:
           url: /dxl/p/pm42-010-s260-r/#torque-enable512
         - title: "RGB LED(513)"
           titlekr: "RGB LED(513)"
-          url: /dxl/p/pm42-010-s260-r/#rgb-led513
+          url: /dxl/p/pm42-010-s260-r/#rgb-led513-514-515
         - title: "Status Return Level(516)"
           titlekr: "Status Return Level(516)"
           url: /dxl/p/pm42-010-s260-r/#status-return-level516
@@ -13896,9 +13896,9 @@ pm54-040-s250-r:
         - title: "Max/Min Position Limit(48, 52)"
           titlekr: "Max/Min Position Limit(48, 52)"
           url: /dxl/p/pm54-040-s250-r/#maxmin-position-limit48-52
-        - title: "External Port Mode"
-          titlekr: "External Port Mode"
-          url: /dxl/p/pm54-040-s250-r/#external-port-mode-external-port-data
+        - title: "External Port Mode (56, 57, 58, 59)"
+          titlekr: "External Port Mode (56, 57, 58, 59)"
+          url: /dxl/p/pm54-040-s250-r/#external-port-mode-external-port-data-56-57-58-59
         - title: "Shutdown(63)"
           titlekr: "Shutdown(63)"
           url: /dxl/p/pm54-040-s250-r/#shutdown63
@@ -13910,7 +13910,7 @@ pm54-040-s250-r:
           url: /dxl/p/pm54-040-s250-r/#torque-enable512
         - title: "RGB LED(513)"
           titlekr: "RGB LED(513)"
-          url: /dxl/p/pm54-040-s250-r/#rgb-led513
+          url: /dxl/p/pm54-040-s250-r/#rgb-led513-514-515
         - title: "Status Return Level(516)"
           titlekr: "Status Return Level(516)"
           url: /dxl/p/pm54-040-s250-r/#status-return-level516
@@ -14129,9 +14129,9 @@ pm54-060-s250-r:
         - title: "Max/Min Position Limit(48, 52)"
           titlekr: "Max/Min Position Limit(48, 52)"
           url: /dxl/p/pm54-060-s250-r/#maxmin-position-limit48-52
-        - title: "External Port Mode"
-          titlekr: "External Port Mode"
-          url: /dxl/p/pm54-060-s250-r/#external-port-mode-external-port-data
+        - title: "External Port Mode (56, 57, 58, 59)"
+          titlekr: "External Port Mode (56, 57, 58, 59)"
+          url: /dxl/p/pm54-060-s250-r/#external-port-mode-external-port-data-56-57-58-59
         - title: "Shutdown(63)"
           titlekr: "Shutdown(63)"
           url: /dxl/p/pm54-060-s250-r/#shutdown63
@@ -14143,7 +14143,7 @@ pm54-060-s250-r:
           url: /dxl/p/pm54-060-s250-r/#torque-enable512
         - title: "RGB LED(513)"
           titlekr: "RGB LED(513)"
-          url: /dxl/p/pm54-060-s250-r/#rgb-led513
+          url: /dxl/p/pm54-060-s250-r/#rgb-led513-514-515
         - title: "Status Return Level(516)"
           titlekr: "Status Return Level(516)"
           url: /dxl/p/pm54-060-s250-r/#status-return-level516

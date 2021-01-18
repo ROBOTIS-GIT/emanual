@@ -1,4 +1,4 @@
-These values indicate Gains of Velocity Control Mode. Gains of the device's internal controller can be calculated from Gains of the Control Table as shown below. Velocity P Gain of the device's internal controller is abbreviated to K<sub>V</sub>P and that of the Control Table is abbreviated to K<sub>V</sub>P<sub>(TBL)</sub>.
+These values indicate Gains of Velocity Control Mode. Velocity P Gain of the device's internal controller is abbreviated to K<sub>V</sub>P.
 
 |                           |  Controller Gain  |   Range    |          Description          |
 |:-------------------------:|:-----------------:|:----------:|:-----------------------------:|
@@ -22,5 +22,5 @@ Below figure is a block diagram describing the velocity controller in Velocity C
 
 ![](/assets/images/dxl/pro/proplus_velocity_controller.png)
 
-**NOTE** : K<sub>v</sub>A stands for Anti-windup Gain that cannot be modified by users. For more details about the PID controller, please refer to the [PID Controller at wikipedia](http://en.wikipedia.org/wiki/PID_controller).
+**NOTE** : K<sub>v</sub>A stands for Anti-windup Gain that cannot be modified by users. For more details about the PID controller and Feedforward controller, please refer to the [PID Controller](http://en.wikipedia.org/wiki/PID_controller) and [Feed Forward](https://en.wikipedia.org/wiki/Feed_forward_(control)).
 {: .notice}

@@ -1,6 +1,6 @@
 This value limits operating temperature.  
-When the Present Temperature(625) that indicates internal temperature of DYNAMIXEL is greater than the Temperature Limit(21), the Over Heating Error Bit(Bit 2) in the Hardware Error Status(892) will be set.  
-If Overheating Error Bit(Bit 2) is configured in the [Shutdown(48)] when Over Heating Error occurs, [Torque Enable(562)] is cleared to ‘0’ and Torque will be disabled.  
+When the Present Temperature(625) that indicates internal temperature of DYNAMIXEL is greater than the Temperature Limit(21), the Overheating Error Bit(Bit 2) in the Hardware Error Status(892) will be set.  
+If Overheating Error Bit(Bit 2) is configured in the [Shutdown(48)] when Overheating Error occurs, [Torque Enable(562)] is cleared to ‘0’ and Torque will be disabled.  
 For more details, please refer to the [Shutdown(48)] section.
 
 |Unit|Value Range|Description|

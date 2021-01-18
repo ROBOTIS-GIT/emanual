@@ -13,7 +13,7 @@ Shutdown(63)에서 감지할 수 있는 위험 상황은 아래 표와 같습니
 | Bit 5 |   Overload Error    | 모터의 최대 출력으로 제어할 수 없는 하중이 지속적으로 적용되는 경우                      |
 | Bit 4 |   CheckSum Error    | 전송된 Instruction Packet의 ChecklSum이 맞지 않을 경우                                   |
 | Bit 3 |     Range Error     | 해당 Address의 값의 범위를 벗어난 값을 Instruction Packet으로 보내는 경우                |
-| Bit 2 |  OverHeating Error  | 내부 온도가 설정된 동작 온도 범위를 벗어난 경우                                          |
+| Bit 2 |  Overheating Error  | 내부 온도가 설정된 동작 온도 범위를 벗어난 경우                                          |
 | Bit 1 |  Angle Limit Error  | 적용한 Goal Position이 설정한 CW/CCW Angle Limit 범위를 벗어난 경우                      |
 | Bit 0 | Input Voltage Error | 인가된 전압이 설정된 동작 전압 범위를 벗어났을 경우                                      |
 

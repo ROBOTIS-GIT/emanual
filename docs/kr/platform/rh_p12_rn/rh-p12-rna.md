@@ -17,7 +17,7 @@ page_number: 1
 
 ![](/assets/images/platform/rh_p12_rn/rh-p12-rn_product_new.png)
 
->  RH_P12_RN(A) 
+>  RH-P12-RN(A) 
 
 ## [RH-P12-RN(A)](#rh-p12-rna)
 - 개선된 펌웨어를 사용합니다.
@@ -168,14 +168,14 @@ page_number: 1
 {: .notice}
 
 ### <a name="model-number"></a>**[Model Number(0)](#model-number0)**
-RH-P12-RN(A)의 모델 번호입니다.
+장치의 모델 번호입니다.
 
 |    모델명    |  Model Number   |
 |:------------:|:---------------:|
 | RH-P12-RN(A) | 35,074 (0x8902) |
 
 ### <a name="firmware-version"></a>**[Firmware Version(6)](#firmware-version6)**
-{% include kr/dxl/p/control_table_6_firmware_version.md %}
+장치의 펌웨어 버전입니다.
 
 ### <a name="id"></a>**[ID(7)](#id7)**
 {% include kr/dxl/p/control_table_7_id.md %}
