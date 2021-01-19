@@ -3064,6 +3064,14 @@ mx-28:
         titlekr: "혼과 베어링 교체"
         url: /dxl/mx/mx-28/#horn-and-bearing-replacement
         urlkr: /dxl/mx/mx-28/#혼과-베어링-교체
+      - title: "Gear Replacement"
+        titlekr: "기어 교체"
+        url: /dxl/mx/mx-28/#gear-replacement
+        urlkr: /dxl/mx/mx-28/#기어-교체        
+      - title: "DYNAMIXEL Calibration"
+        titlekr: "다이나믹셀 캘리브레이션"
+        url: /dxl/mx/mx-28/#dynamixel-calibration
+        urlkr: /dxl/mx/mx-28/#다이나믹셀-캘리브레이션            
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/mx/mx-28/#reference
@@ -3076,7 +3084,7 @@ mx-28:
       - title: "Connector Information"
         titlekr: "커넥터 정보"
         url: /dxl/mx/mx-28/#connector-information
-        urlkr: /dxl/mx/mx-28/#커넥터-정보
+        urlkr: /dxl/mx/mx-28/#커넥터-정보   
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/mx/mx-28/#drawings
@@ -3248,6 +3256,14 @@ mx-64:
         titlekr: "혼과 베어링 교체"
         url: /dxl/mx/mx-64/#horn-and-bearing-replacement
         urlkr: /dxl/mx/mx-64/#혼과-베어링-교체
+      - title: "Gear Replacement"
+        titlekr: "기어 교체"
+        url: /dxl/mx/mx-64/#gear-replacement
+        urlkr: /dxl/mx/mx-64/#기어-교체        
+      - title: "DYNAMIXEL Calibration"
+        titlekr: "다이나믹셀 캘리브레이션"
+        url: /dxl/mx/mx-64/#dynamixel-calibration
+        urlkr: /dxl/mx/mx-64/#다이나믹셀-캘리브레이션         
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/mx/mx-64/#reference
@@ -3435,6 +3451,14 @@ mx-106:
         titlekr: "혼과 베어링 교체"
         url: /dxl/mx/mx-106/#horn-and-bearing-replacement
         urlkr: /dxl/mx/mx-106/#혼과-베어링-교체
+      - title: "Gear Replacement"
+        titlekr: "기어 교체"
+        url: /dxl/mx/mx-106/#gear-replacement
+        urlkr: /dxl/mx/mx-106/#기어-교체        
+      - title: "DYNAMIXEL Calibration"
+        titlekr: "다이나믹셀 캘리브레이션"
+        url: /dxl/mx/mx-106/#dynamixel-calibration
+        urlkr: /dxl/mx/mx-106/#다이나믹셀-캘리브레이션         
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/mx/mx-106/#reference
@@ -3658,6 +3682,14 @@ mx-28-2:
         titlekr: "혼과 베어링 교체"
         url: /dxl/mx/mx-28-2/#horn-and-bearing-replacement
         urlkr: /dxl/mx/mx-28-2/#혼과-베어링-교체
+      - title: "Gear Replacement"
+        titlekr: "기어 교체"
+        url: /dxl/mx/mx-28-2/#gear-replacement
+        urlkr: /dxl/mx/mx-28-2/#기어-교체        
+      - title: "DYNAMIXEL Calibration"
+        titlekr: "다이나믹셀 캘리브레이션"
+        url: /dxl/mx/mx-28-2/#dynamixel-calibration
+        urlkr: /dxl/mx/mx-28-2/#다이나믹셀-캘리브레이션         
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/mx/mx-28-2/#reference
@@ -3886,6 +3918,14 @@ mx-64-2:
         titlekr: "혼과 베어링 교체"
         url: /dxl/mx/mx-64-2/#horn-and-bearing-replacement
         urlkr: /dxl/mx/mx-64-2/#혼과-베어링-교체
+      - title: "Gear Replacement"
+        titlekr: "기어 교체"
+        url: /dxl/mx/mx-64-2/#gear-replacement
+        urlkr: /dxl/mx/mx-64-2/#기어-교체        
+      - title: "DYNAMIXEL Calibration"
+        titlekr: "다이나믹셀 캘리브레이션"
+        url: /dxl/mx/mx-64-2/#dynamixel-calibration
+        urlkr: /dxl/mx/mx-64-2/#다이나믹셀-캘리브레이션         
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/mx/mx-64-2/#reference
@@ -4118,6 +4158,14 @@ mx-106-2:
         titlekr: "혼과 베어링 교체"
         url: /dxl/mx/mx-106-2/#horn-and-bearing-replacement
         urlkr: /dxl/mx/mx-106-2/#혼과-베어링-교체
+      - title: "Gear Replacement"
+        titlekr: "기어 교체"
+        url: /dxl/mx/mx-106-2/#gear-replacement
+        urlkr: /dxl/mx/mx-106-2/#기어-교체        
+      - title: "DYNAMIXEL Calibration"
+        titlekr: "다이나믹셀 캘리브레이션"
+        url: /dxl/mx/mx-106-2/#dynamixel-calibration
+        urlkr: /dxl/mx/mx-106-2/#다이나믹셀-캘리브레이션         
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/mx/mx-106-2/#reference
