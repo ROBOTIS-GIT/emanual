@@ -18,16 +18,16 @@ Once alignment is properly done, gently push the center of the horn toward the a
 
 Once alignment is properly done, gently push the center of the horn toward the actuator.
 
-### Gear Replacement
+### [Gear Replacement](#gear-replacement)
 
 You may need to replace the internal gear set when gears are worn out or damaged.
-Please follow the gear replacement instruction video.
+See the following instruction video for replacing the gears properly.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wKxcZNMrrCQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 {% endif %}
 
-### Calibration of DYNAMIXEL
+### [DYNAMIXEL Calibration](#dynamixel-calibration)
 
 After replacing the internal gearset, you need to calibrate the DYNAMIXEL.
 Please follow the DYNAMIXEL calibration instruction video.
