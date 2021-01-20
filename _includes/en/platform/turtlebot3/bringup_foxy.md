@@ -7,9 +7,9 @@
 $ ssh ubuntu@{IP_ADDRESS_OF_RASPBERRY_PI}
   ```
 
-2. Bring up basic packages to start TurtleBot3 applications. Replace the `${TB3_MODEL}` parameter with your model name such as `burger`, `waffle`, `waffle_pi`.  
+2. Bring up basic packages to start TurtleBot3 applications. Please use the proper keyword among `burger`, `waffle`, `waffle_pi` for the `TURTLEBOT3_MODEL` parameter.  
   ```bash
-$ export TURTLEBOT3_MODEL=${TB3_MODEL}
+$ export TURTLEBOT3_MODEL=burger
 $ ros2 launch turtlebot3_bringup robot.launch.py
   ```
 

@@ -73,11 +73,12 @@ $ sudo apt install ros-foxy-turtlebot3
 
 <details>
 <summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) **Click here to expand more details about TurtleBot3 package installation.**
+![](/assets/click_here.png) **Click here to expand about building TurtleBot3 packages with source code.**
 {: .notice--success}
 </summary>
-In case you need to install from the binary, please use the commands below.  
-Make sure to remove the identical packages to avoid redundancy.  
+In case you need to build the TurtleBot3 packages with source code, please use the commands below.  
+Building the source code provides most up to date contents which may have resolved known issues.  
+Make sure to remove the binary packages to avoid redundancy.  
 ```bash
 $ sudo apt remove ros-foxy-turtlebot3-msgs
 $ sudo apt remove ros-foxy-turtlebot3
@@ -86,6 +87,7 @@ $ cd ~/turtlebot3_ws/src/
 $ git clone -b foxy-devel https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
 $ git clone -b foxy-devel https://github.com/ROBOTIS-GIT/turtlebot3.git
 $ colcon build --symlink-install
+$ source ~/.bashrc
 ```
 </details>
 
@@ -97,4 +99,8 @@ $ echo 'source ~/turtlebot3_ws/install/setup.bash' >> ~/.bashrc
 $ echo 'export ROS_DOMAIN_ID=30 #TURTLEBOT3' >> ~/.bashrc
 $ source ~/.bashrc
   ```
-  
+
+If you have installed TurtleBot3 using `apt install` command, you can ignore the warning below.  
+```bash
+bash: /home/{$YOUR_ACCOUNT}/turtlebot3_ws/install/setup.bash: No such file or directory
+```

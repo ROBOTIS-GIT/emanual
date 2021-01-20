@@ -14,21 +14,24 @@
 <div class="notice--danger">{{ warning_01 | markdownify }}</div>
 
 ### [Prepare microSD Card](#prepare-microsd-card)
+You need a micro SD card reader to burn the OS image on your PC or laptop.
+
 1. Download the `ubuntu-18.04.3-preinstalled-server-arm64+raspi3.img.xz` image for your SBC from the links below.
   - [Ubuntu 18.04.3 Preinstalled Server ARM64 for Raspberry Pi3](http://old-releases.ubuntu.com/releases/18.04.3/ubuntu-18.04.3-preinstalled-server-arm64+raspi3.img.xz)
 
 2. Unzip the downloaded image.
 
-3. Burn the image to the microSD card.
+3. Burn the image file(`.img`) to the microSD card.
   - Use `Restore Disk Image` option in the `Disks` utility in Ubuntu.
-  - Run the utility and select the restore image, then burn to the selected micro SD card.
+  - Run the utility and select the restore image, then burn to the selected micro SD card.  
+  ![](/assets/images/platform/turtlebot3/setup/ubuntu_disks_restore_img.png)
 <details>
 <summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) Read More about other micro SD card burning methods
+![](/assets/click_here.png) **Other micro SD card burning methods?**
 {: .notice--success}
 </summary>
-- You can use the [etcher.io](https://etcher.io/) to burn the image.
-- You can also use 'dd' command in Linux or use application 'win32 Disk Imager' in Windows. For a complete guide, refer to the instruction for [Linux](https://elinux.org/RPi_Easy_SD_Card_Setup#Using_the_Linux_command_line) or [Windows](https://elinux.org/RPi_Easy_SD_Card_Setup#Using_the_Win32DiskImager_program).
+You can also use the [Raspberry Pi Imager](https://www.raspberrypi.org/blog/raspberry-pi-imager-imaging-utility/) that supports Windows, Linux, and Mac OSX.  
+![](/assets/images/platform/turtlebot3/setup/rpi_imager.png)
 </details>
 
 
@@ -39,9 +42,9 @@
 4. Connect the power (either with USB or OpenCR) to turn on the Raspberry Pi.
 
 ### Configure the Raspberry Pi
-1. Log in with default username(`ubuntu`) and password(`ubuntu`). After logged in, system will ask you whether you change the password or not.
+1. Log in with default username(`ubuntu`) and password(`ubuntu`). After logged in, system will ask you to change the password.
 
-2. Disable Automatic update
+2. Open automatic update setting file.
   ```bash
 $ sudo nano /etc/apt/apt.conf.d/20auto-upgrades
   ```
@@ -50,15 +53,18 @@ $ sudo nano /etc/apt/apt.conf.d/20auto-upgrades
   ```bash
 APT::Periodic::Update-Package-Lists "0";
 APT::Periodic::Unattended-Upgrade "0";
-  ```
+  ```  
+  Save the file with `Ctrl`+`S` and exit with `Ctrl`+`X`.
 
-4. Enter below commands to open the WiFi network setting configuration.
+4. Enter below command to configure the WiFi network setting.
   ```bash
 $ sudo nano /etc/netplan/50-cloud-init.yaml
   ```
 
 5. When the editor is opened, append below contents at the end of the file.  
-  ![](/assets/images/platform/turtlebot3/setup/ros2_sbc_netcfg.png)
+  Replace the `WIFI_SSID` and `WIFI_PASSWORD` with your wifi SSID and password.  
+  ![](/assets/images/platform/turtlebot3/setup/ros2_sbc_netcfg.png)  
+  Save the file with `Ctrl`+`S` and exit with `Ctrl`+`X`.
 
 6. Reboot the Raspberry Pi.
   ```bash
@@ -75,7 +81,7 @@ $ systemctl mask systemd-networkd-wait-online.service
 $ sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
   ```
 
-9. Enable the SSH
+9. Install and enable the SSH
   ```bash
 $ sudo apt install ssh
 $ sudo systemctl enable --now ssh

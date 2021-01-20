@@ -8,10 +8,10 @@ Terminate all applications with `Ctrl` + `C` that were launced in the previous s
 
 In the previous [SLAM][slam] section, TurtleBot3 World is used to creat a map. The same Gazebo environment will be used for Navigation.
 
-Replace the **${TB3_MODEL}** with the TurtleBot3 model you want to use: `burger`, `waffle`, `waffle_pi`.
+Please use the proper keyword among `burger`, `waffle`, `waffle_pi` for the `TURTLEBOT3_MODEL` parameter.  
 
 ```bash
-$ export TURTLEBOT3_MODEL=${TB3_MODEL}
+$ export TURTLEBOT3_MODEL=burger
 $ roslaunch turtlebot3_gazebo turtlebot3_world.launch
 ```
 
@@ -21,7 +21,7 @@ $ roslaunch turtlebot3_gazebo turtlebot3_world.launch
 {: .notice--success}
 </summary>
 ```bash
-$ export TURTLEBOT3_MODEL=${TB3_MODEL}
+$ export TURTLEBOT3_MODEL=burger
 $ roslaunch turtlebot3_gazebo turtlebot3_house.launch
 ```
 </details>
@@ -30,7 +30,7 @@ $ roslaunch turtlebot3_gazebo turtlebot3_house.launch
 Open a new terminal from Remote PC with `Ctrl` + `Alt` + `T` and run the Navigation node. 
 
 ```bash
-$ export TURTLEBOT3_MODEL=${TB3_MODEL}
+$ export TURTLEBOT3_MODEL=burger
 $ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/map.yaml
 ```
 
