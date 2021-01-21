@@ -70,5 +70,57 @@ $ rosrun map_server map_saver -f ~/map
 
 > The saved map.pgm file
 
+
+<details>
+<summary id="summary_for_foreins" style="outline: inherit;">
+![](/assets/click_here.png) Read more about **How to SLAM with multiple TurtleBot3**
+{: .notice--success}
+</summary>
+In order to create a map with multiple robots, **multirobot-map-merge** package is required.  
+Follow the instructions below instead of **Launching Simulation World** section of this page to operate multiple TurtleBot3.
+
+1. Install necessary package
+```bash
+$ sudo apt-get install ros-melodic-multirobot-map-merge
+```
+
+2. Load multiple TurtleBot3 in TurtleBot3 House.  
+  These loaded turtlebot3s are set initial position and orientation.
+  ```bash
+$ roslaunch turtlebot3_gazebo multi_turtlebot3.launch
+  ```
+  ![](/assets/images/platform/turtlebot3/simulation/turtlebot3_house_slam.png)  
+
+3. Launch SLAM for each TurtleBot3
+```bash
+$ ROS_NAMESPACE=tb3_0 roslaunch turtlebot3_slam turtlebot3_gmapping.launch set_base_frame:=tb3_0/base_footprint set_odom_frame:=tb3_0/odom set_map_frame:=tb3_0/map
+$ ROS_NAMESPACE=tb3_1 roslaunch turtlebot3_slam turtlebot3_gmapping.launch set_base_frame:=tb3_1/base_footprint set_odom_frame:=tb3_1/odom set_map_frame:=tb3_1/map
+$ ROS_NAMESPACE=tb3_2 roslaunch turtlebot3_slam turtlebot3_gmapping.launch set_base_frame:=tb3_2/base_footprint set_odom_frame:=tb3_2/odom set_map_frame:=tb3_2/map
+```
+
+4. Merge map data from each TurtleBot3
+```bash
+$ roslaunch turtlebot3_gazebo multi_map_merge.launch
+```
+
+5. Launch RViz
+```bash
+$ rosrun rviz rviz -d `rospack find turtlebot3_gazebo`/rviz/multi_turtlebot3_slam.rviz
+```
+
+6. Operate each TurtleBot3
+```bash
+$ ROS_NAMESPACE=tb3_0 rosrun turtlebot3_teleop turtlebot3_teleop_key
+$ ROS_NAMESPACE=tb3_1 rosrun turtlebot3_teleop turtlebot3_teleop_key
+$ ROS_NAMESPACE=tb3_2 rosrun turtlebot3_teleop turtlebot3_teleop_key
+```
+  ![](/assets/images/platform/turtlebot3/simulation/turtlebot3_house_slam1.png)
+
+7. Save the Map
+```bash
+$ rosrun map_server map_saver -f ~/map
+```
+</details>
+
 [slam]: /docs/en/platform/turtlebot3/slam/#slam
 [simulation]: /docs/en/platform/turtlebot3/simulation/

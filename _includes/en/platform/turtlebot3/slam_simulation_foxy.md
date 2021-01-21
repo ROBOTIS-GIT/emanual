@@ -8,10 +8,10 @@ Three Gazebo environments are prepared, but for creating a map with SLAM, it is 
 Use one of the following commands to load the Gazebo environment.  
 
 In this instruction, TurtleBot3 World will be used.  
-Replace the **${TB3_MODEL}** with the TurtleBot3 model you want to use: `burger`, `waffle`, `waffle_pi`.
+Please use the proper keyword among `burger`, `waffle`, `waffle_pi` for the `TURTLEBOT3_MODEL` parameter.  
 
 ```bash
-$ export TURTLEBOT3_MODEL=${TB3_MODEL}
+$ export TURTLEBOT3_MODEL=burger
 $ ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
 ```
 
@@ -21,7 +21,7 @@ $ ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
 {: .notice--success}
 </summary>
 ```bash
-$ export TURTLEBOT3_MODEL=${TB3_MODEL}
+$ export TURTLEBOT3_MODEL=burger
 $ ros2 launch turtlebot3_gazebo turtlebot3_house.launch.py
 ```
 </details>
@@ -30,7 +30,7 @@ $ ros2 launch turtlebot3_gazebo turtlebot3_house.launch.py
 Open a new terminal from Remote PC with `Ctrl` + `Alt` + `T` and run the SLAM node. Cartographer SLAM method is used by default. 
 
 ```bash
-$ export TURTLEBOT3_MODEL=${TB3_MODEL}
+$ export TURTLEBOT3_MODEL=burger
 $ ros2 launch turtlebot3_cartographer cartographer.launch.py use_sim_time:=True
 ```
 
@@ -38,7 +38,7 @@ $ ros2 launch turtlebot3_cartographer cartographer.launch.py use_sim_time:=True
 Open a new terminal from Remote PC with `Ctrl` + `Alt` + `T` and run the teleoperation node from the Remote PC.
 
 ```bash
-$ export TURTLEBOT3_MODEL=${TB3_MODEL}
+$ export TURTLEBOT3_MODEL=burger
 $ ros2 run turtlebot3_teleop teleop_keyboard
 
  Control Your TurtleBot3!

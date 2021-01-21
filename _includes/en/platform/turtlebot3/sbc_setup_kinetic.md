@@ -16,20 +16,23 @@ If you are using **Intel Joule**, please refer to [Intel Joule Setup][joule_setu
 {: .notice--danger}
 
 ### [Prepare microSD Card](#prepare-microsd-card)
+You need a micro SD card reader to burn the OS image on your PC or laptop.
+
 1. Download Raspbian with ROBOTIS TurtleBot3 restore image.
   - [Download TurtleBot3 Raspbian image for Raspberry Pi 3B+](http://www.robotis.com/service/download.php?no=1738)
   - SHA256 (image_rpi_20190429.img): 7a868c275169b1f02c04617cc0cce9654fd8222623c78b22d0a27c73a9609398
 2. Unzip the downloaded image.
-3. Burn the image to the microSD card.
+3. Burn the image file(`.img`) to the microSD card.
   - Use `Restore Disk Image` option in the `Disks` utility in Ubuntu.
-  - Run the utility and select the restore image, then burn to the selected micro SD card.
+  - Run the utility and select the restore image, then burn to the selected micro SD card.  
+  ![](/assets/images/platform/turtlebot3/setup/ubuntu_disks_restore_img.png)
 <details>
 <summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) Read More about other micro SD card burning methods
+![](/assets/click_here.png) **Other micro SD card burning methods?**
 {: .notice--success}
 </summary>
-- You can use the [etcher.io](https://etcher.io/)
-- You can also use 'dd' command in Linux or use application 'win32 Disk Imager' in Windows. For a complete guide, refer to the instruction for [Linux](https://elinux.org/RPi_Easy_SD_Card_Setup#Using_the_Linux_command_line) or [Windows](https://elinux.org/RPi_Easy_SD_Card_Setup#Using_the_Win32DiskImager_program).
+You can also use the [Raspberry Pi Imager](https://www.raspberrypi.org/blog/raspberry-pi-imager-imaging-utility/) that supports Windows, Linux, and Mac OSX.  
+![](/assets/images/platform/turtlebot3/setup/rpi_imager.png)
 </details>
 
 <details>

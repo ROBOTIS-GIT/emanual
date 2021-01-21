@@ -13,9 +13,8 @@ $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
   ```
 
 3. Open a new terminal from Remote PC with `Ctrl` + `Alt` + `T` and launch the SLAM node. The Gmapping is used as a default SLAM method.
-  Please use the proper keyword among `burger`, `waffle`, `waffle_pi` for the `TURTLEBOT3_MODEL` parameter.  
   ```bash
-$ export TURTLEBOT3_MODEL=burger
+$ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ roslaunch turtlebot3_slam turtlebot3_slam.launch
   ```
 
@@ -54,16 +53,18 @@ $ source ~/.bashrc
   ```
 - **Cartographer** ([ROS WIKI](http://wiki.ros.org/cartographer), [Github](https://github.com/googlecartographer/cartographer))
   1. Download and build packages on PC.  
-  The Cartographer package developed by Google supports ROS1 Kinetic with 0.2.0 version. So if you need to use Cartogrpher on Kinetic, you should download and build the source code as follows instead of installing with the binary packages. Please refer to [official wiki page](https://google-cartographer-ros.readthedocs.io/en/latest/#building-installation) for more detailed installation instructions.
+  Please refer to [official wiki page](https://google-cartographer-ros.readthedocs.io/en/latest/#building-installation) for more detailed installation instructions.
   ```bash
-  $ sudo apt-get install ninja-build libceres-dev libprotobuf-dev protobuf-compiler libprotoc-dev
-  $ cd ~/catkin_ws/src
-  $ git clone https://github.com/googlecartographer/cartographer.git
-  $ git clone https://github.com/googlecartographer/cartographer_ros.git
-  $ cd ~/catkin_ws
-  $ src/cartographer/scripts/install_proto3.sh
-  $ rm -rf protobuf/
-  $ rosdep install --from-paths src --ignore-src -r -y --os=ubuntu:xenial
+  $ sudo apt-get update
+  $ sudo apt-get install -y python-wstool python-rosdep ninja-build stow
+  $ mkdir ~/catkin_ws && cd ~/catkin_ws
+  $ wstool init src
+  $ wstool merge -t src https://raw.githubusercontent.com/cartographer-project/cartographer_ros/master/cartographer_ros.rosinstall
+  $ wstool update -t src
+  $ sudo rosdep init
+  $ rosdep update
+  $ rosdep install --from-paths src --ignore-src --rosdistro=melodic -y
+  $ src/cartographer/scripts/install_abseil.sh
   $ catkin_make_isolated --install --use-ninja
   ```
   2. Launch the Cartographer SLAM node.
@@ -74,7 +75,7 @@ $ source ~/.bashrc
 - **Hector** ([ROS WIKI](http://wiki.ros.org/hector_slam), [Github](https://github.com/tu-darmstadt-ros-pkg/hector_slam))
   1. Install dependent packages on PC.
   ```bash
-  $ sudo apt-get install ros-kinetic-hector-mapping
+  $ sudo apt-get install ros-melodic-hector-mapping
   ```
   2. Launch the Hector SLAM node.
   ```bash
@@ -83,20 +84,10 @@ $ source ~/.bashrc
 - **Karto** ([ROS WIKI](http://wiki.ros.org/slam_karto), [Github](https://github.com/ros-perception/slam_karto))
   1. Install dependent packages on PC.
   ```bash
-  $ sudo apt-get install ros-kinetic-slam-karto
+  $ sudo apt-get install ros-melodic-slam-karto
   ```
   2. Launch the Karto SLAM node.
   ```bash
   $ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=karto
   ```
-- **Frontier Exploration** ([ROS WIKI](http://wiki.ros.org/frontier_exploration), [Github](https://github.com/paulbovbel/frontier_exploration))  
-  Frontier Exploration uses gmapping, and the following packages should be installed.  
-  1. Install dependent packages on PC.
-  ```bash
-  $ sudo apt-get install ros-kinetic-frontier-exploration ros-kinetic-navigation-stage
-  ```
-  2. Launch the Frontier Exploration SLAM node.
-  ```bash
-  $ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=frontier_exploration
-  ```  
 </details>

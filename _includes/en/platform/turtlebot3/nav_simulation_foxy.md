@@ -8,10 +8,10 @@ Terminate all applications with `Ctrl` + `C` that were launced in the previous s
 
 In the previous [SLAM][slam] section, TurtleBot3 World is used to creat a map. The same Gazebo environment will be used for Navigation.
 
-Replace the **${TB3_MODEL}** with the TurtleBot3 model you want to use: `burger`, `waffle`, `waffle_pi`.
+Please use the proper keyword among `burger`, `waffle`, `waffle_pi` for the `TURTLEBOT3_MODEL` parameter.  
 
 ```bash
-$ export TURTLEBOT3_MODEL=${TB3_MODEL}
+$ export TURTLEBOT3_MODEL=burger
 $ ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
 ```
 
@@ -21,7 +21,7 @@ $ ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
 {: .notice--success}
 </summary>
 ```bash
-$ export TURTLEBOT3_MODEL=${TB3_MODEL}
+$ export TURTLEBOT3_MODEL=burger
 $ ros2 launch turtlebot3_gazebo turtlebot3_house.launch.py
 ```
 </details>
@@ -30,7 +30,7 @@ $ ros2 launch turtlebot3_gazebo turtlebot3_house.launch.py
 Open a new terminal from Remote PC with `Ctrl` + `Alt` + `T` and run the Navigation2 node. 
 
 ```bash
-$ export TURTLEBOT3_MODEL=${TB3_MODEL}
+$ export TURTLEBOT3_MODEL=burger
 $ ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=True map:=$HOME/map.yaml
 ```
 

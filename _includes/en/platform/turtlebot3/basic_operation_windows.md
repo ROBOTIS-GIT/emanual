@@ -15,11 +15,12 @@ The TurtleBot3 can be teleoperated by various remote controllers. Make sure that
 **TIP**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `burger`, `waffle`, `waffle_pi`.  
 {: .notice--success}
 
-1. Launch `turtlebot3_teleop_key` node from Remote PC for the teleoperation using a keyboard. Replace the `${TB3_MODEL}` parameter with your model name such as `burger`, `waffle`, `waffle_pi`.  
-```bash
-> set TURTLEBOT3_MODEL=%{TB3_MODEL}
+1. Launch `turtlebot3_teleop_key` node from Remote PC for the teleoperation using a keyboard.  
+  Please use the proper keyword among `burger`, `waffle`, `waffle_pi` for the `TURTLEBOT3_MODEL` parameter.  
+  ```bash
+> set TURTLEBOT3_MODEL=waffle
 > roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
-```
+  ```
 
 2. If the node is successfully launched, the following instruction will be appeared to the terminal window.  
 ```bash

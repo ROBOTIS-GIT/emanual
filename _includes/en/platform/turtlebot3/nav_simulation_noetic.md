@@ -8,10 +8,10 @@ Terminate all applications with `Ctrl` + `C` that were launced in the previous s
 
 In the previous [SLAM][slam] section, TurtleBot3 World is used to creat a map. The same Gazebo environment will be used for Navigation.
 
-Replace the **${TB3_MODEL}** with the TurtleBot3 model you want to use: `burger`, `waffle`, `waffle_pi`.
+Please use the proper keyword among `burger`, `waffle`, `waffle_pi` for the `TURTLEBOT3_MODEL` parameter.  
 
 ```bash
-$ export TURTLEBOT3_MODEL=${TB3_MODEL}
+$ export TURTLEBOT3_MODEL=burger
 $ roslaunch turtlebot3_gazebo turtlebot3_world.launch
 ```
 
@@ -21,7 +21,7 @@ $ roslaunch turtlebot3_gazebo turtlebot3_world.launch
 {: .notice--success}
 </summary>
 ```bash
-$ export TURTLEBOT3_MODEL=${TB3_MODEL}
+$ export TURTLEBOT3_MODEL=burger
 $ roslaunch turtlebot3_gazebo turtlebot3_house.launch
 ```
 </details>
@@ -30,7 +30,7 @@ $ roslaunch turtlebot3_gazebo turtlebot3_house.launch
 Open a new terminal from Remote PC with `Ctrl` + `Alt` + `T` and run the Navigation node. 
 
 ```bash
-$ export TURTLEBOT3_MODEL=${TB3_MODEL}
+$ export TURTLEBOT3_MODEL=burger
 $ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/map.yaml
 ```
 
@@ -38,7 +38,7 @@ $ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/m
 
 **Initial Pose Estimation** must be performed before running the Navigation as this process initializes the AMCL parameters that are critical in Navigation. TurtleBot3 has to be correctly located on the map with the LDS sensor data that neatly overlaps the displayed map.
 
-1. Click the `2D Pose Estimate` button in the RViz menu.
+1. Click the `2D Pose Estimate` button in the RViz menu.  
   ![](/assets/images/platform/turtlebot3/navigation/2d_pose_button.png)
 2. Click on the map where the actual robot is located and drag the large green arrow toward the direction where the robot is facing.
 3. Repeat step 1 and 2 until the LDS sensor data is overlayed on the saved map. 
@@ -54,7 +54,7 @@ $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 
 ### [Set Navigation Goal](#set-navigation-goal)
 
-1. Click the `2D Nav Goal` button in the RViz menu.  
+1. Click the `2D Nav Goal` button in the RViz menu.    
   ![](/assets/images/platform/turtlebot3/navigation/2d_nav_goal_button.png)
 2. Click on the map to set the destination of the robot and drag the green arrow toward the direction where the robot will be facing. 
   - This green arrow is a marker that can specify the destination of the robot. 

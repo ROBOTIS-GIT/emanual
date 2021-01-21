@@ -1,5 +1,5 @@
 
-1. Click the `2D Nav Goal` button in the RViz menu.
+1. Click the `2D Nav Goal` button in the RViz menu.  
   ![](/assets/images/platform/turtlebot3/navigation/2d_nav_goal_button.png)
 2. Click on the map to set the destination of the robot and drag the green arrow toward the direction where the robot will be facing. 
   - This green arrow is a marker that can specify the destination of the robot. 

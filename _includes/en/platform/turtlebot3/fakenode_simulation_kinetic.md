@@ -20,15 +20,13 @@ $ cd ~/catkin_ws && catkin_make
 
 To launch the virtual robot, execute the `turtlebot3_fake.launch` file in the `turtlebot3_fake` package as shown below. The `turtlebot3_fake` is a very simple simulation node that can be run without having an actual robot. You can even control the virtual TurtleBot3 in RViz with a teleoperation node.
 
-**TIP**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `burger`, `waffle`, `waffle_pi`. If you want to permanently set the export settings, please refer to [Export TURTLEBOT3_MODEL][export_turtlebot3_model]{: .popup} page.
-{: .notice--success}
-
+Please use the proper keyword among `burger`, `waffle`, `waffle_pi` for the `TURTLEBOT3_MODEL` parameter.  
 ```bash
-$ export TURTLEBOT3_MODEL=${TB3_MODEL}
+$ export TURTLEBOT3_MODEL=burger
 $ roslaunch turtlebot3_fake turtlebot3_fake.launch
 ```
 
 ```bash
-$ export TURTLEBOT3_MODEL=${TB3_MODEL}
+$ export TURTLEBOT3_MODEL=burger
 $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ```

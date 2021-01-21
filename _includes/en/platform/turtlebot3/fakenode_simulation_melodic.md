@@ -14,7 +14,7 @@ To use `turtlebot3_fake_node`, you need the `turtlebot3_simulation` metapackage.
 
 ```bash
 $ cd ~/catkin_ws/src/
-$ git clone -b noetic-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
+$ git clone -b melodic-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
 $ cd ~/catkin_ws && catkin_make
 ```
 
@@ -31,12 +31,3 @@ $ roslaunch turtlebot3_fake turtlebot3_fake.launch
 $ export TURTLEBOT3_MODEL=burger
 $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ```
-
-
-[export_turtlebot3_model]: /docs/en/platform/turtlebot3/export_turtlebot3_model
-
-[pc_setup]: /docs/en/platform/turtlebot3/quick-start/#install-dependent-ros-1-packages-1
-[export_turtlebot3_model]: /docs/en/platform/turtlebot3/export_turtlebot3_model
-[slam]: /docs/en/platform/turtlebot3/slam/#slam
-[simulation]: /docs/en/platform/turtlebot3/simulation/
-[navigation]: /docs/en/platform/turtlebot3/navigation/#navigation

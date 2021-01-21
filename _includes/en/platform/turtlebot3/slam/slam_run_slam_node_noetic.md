@@ -13,25 +13,27 @@ $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
   ```
 
 3. Open a new terminal from Remote PC with `Ctrl` + `Alt` + `T` and launch the SLAM node. The Gmapping is used as a default SLAM method.
+  Please use the proper keyword among `burger`, `waffle`, `waffle_pi` for the `TURTLEBOT3_MODEL` parameter.  
   ```bash
-$ export TURTLEBOT3_MODEL=${TB3_MODEL}
+$ export TURTLEBOT3_MODEL=burger
 $ roslaunch turtlebot3_slam turtlebot3_slam.launch
   ```
 
 <details>
 <summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) Read more about **How to predefine the TURTLEBOT3_MODEL**
+![](/assets/click_here.png) **How to save the TURTLEBOT3_MODEL parameter?**
 {: .notice--success}
 </summary>
-The `export TURTLEBOT3_MODEL=${TB3_MODEL}` command can be omitted if the **TURTLEBOT3_MODEL** parameter is predefined in the `.bashrc` file. The `.bashrc` file is automatically loaded when a terminal window is created.  
+The `$ export TURTLEBOT3_MODEL=${TB3_MODEL}` command can be omitted if the **TURTLEBOT3_MODEL** parameter is predefined in the `.bashrc` file.  
+The `.bashrc` file is automatically loaded when a terminal window is created.  
 
-- Example of defining TurtlBot3 Burger as a default.  
+- Example of defining `TurtlBot3 Burger` as a default model.  
 ```bash
 $ echo 'export TURTLEBOT3_MODEL=burger' >> ~/.bashrc
 $ source ~/.bashrc
 ```
 
-- Example of defining TurtlBot3 Waffle Pi as a default.  
+- Example of defining `TurtlBot3 Waffle Pi` as a default model.  
 ```bash
 $ echo 'export TURTLEBOT3_MODEL=waffle_pi' >> ~/.bashrc
 $ source ~/.bashrc

@@ -8,10 +8,11 @@ author_profile: false
 permalink: /docs/en/platform/turtlebot3/navigation/
 tabs: "ROS"
 tab_title1: Kinetic
-tab_title2: Noetic
-tab_title3: Dashing
-tab_title4: Foxy
-tab_title5: Windows
+tab_title2: Melodic
+tab_title3: Noetic
+tab_title4: Dashing
+tab_title5: Foxy
+tab_title6: Windows
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
@@ -47,19 +48,23 @@ The [Navigation][navigation] enables a robot to move from the current pose to th
 {% include en/platform/turtlebot3/navigation/navigation_run_navigation_nodes_kinetic.md %}
 </section>
 
- <section data-id="{{ page.tab_title2 }}" class="tab_contents">
-{% include en/platform/turtlebot3/navigation/navigation_run_navigation_nodes_noetic.md %}
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+{% include en/platform/turtlebot3/navigation/navigation_run_navigation_nodes_melodic.md %}
 </section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
-{% include en/platform/turtlebot3/navigation/navigation_run_navigation_nodes_dashing.md %}
+{% include en/platform/turtlebot3/navigation/navigation_run_navigation_nodes_noetic.md %}
 </section>
 
 <section data-id="{{ page.tab_title4 }}" class="tab_contents">
-{% include en/platform/turtlebot3/navigation/navigation_run_navigation_nodes_foxy.md %}
+{% include en/platform/turtlebot3/navigation/navigation_run_navigation_nodes_dashing.md %}
 </section>
 
 <section data-id="{{ page.tab_title5 }}" class="tab_contents">
+{% include en/platform/turtlebot3/navigation/navigation_run_navigation_nodes_foxy.md %}
+</section>
+
+<section data-id="{{ page.tab_title6 }}" class="tab_contents">
 {% include en/platform/turtlebot3/navigation/navigation_run_navigation_nodes_windows.md %}
 </section> 
 
@@ -72,18 +77,22 @@ The [Navigation][navigation] enables a robot to move from the current pose to th
 </section>
 
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
-{% include en/platform/turtlebot3/navigation/navigation_estimate_initial_pose_noetic.md %}
+{% include en/platform/turtlebot3/navigation/navigation_estimate_initial_pose_melodic.md %}
 </section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
-{% include en/platform/turtlebot3/navigation/navigation_estimate_initial_pose_dashing.md %}
+{% include en/platform/turtlebot3/navigation/navigation_estimate_initial_pose_noetic.md %}
 </section>
 
 <section data-id="{{ page.tab_title4 }}" class="tab_contents">
-{% include en/platform/turtlebot3/navigation/navigation_estimate_initial_pose_foxy.md %}
+{% include en/platform/turtlebot3/navigation/navigation_estimate_initial_pose_dashing.md %}
 </section>
 
 <section data-id="{{ page.tab_title5 }}" class="tab_contents">
+{% include en/platform/turtlebot3/navigation/navigation_estimate_initial_pose_foxy.md %}
+</section>
+
+<section data-id="{{ page.tab_title6 }}" class="tab_contents">
 {% include en/platform/turtlebot3/navigation/navigation_estimate_initial_pose_windows.md %}
 </section> 
 
@@ -96,18 +105,22 @@ The [Navigation][navigation] enables a robot to move from the current pose to th
 </section>
 
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
-{% include en/platform/turtlebot3/navigation/navigation_set_navigation_goal_noetic.md %}
+{% include en/platform/turtlebot3/navigation/navigation_set_navigation_goal_melodic.md %}
 </section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
-{% include en/platform/turtlebot3/navigation/navigation_set_navigation_goal_dashing.md %}
+{% include en/platform/turtlebot3/navigation/navigation_set_navigation_goal_noetic.md %}
 </section>
 
 <section data-id="{{ page.tab_title4 }}" class="tab_contents">
-{% include en/platform/turtlebot3/navigation/navigation_set_navigation_goal_foxy.md %}
+{% include en/platform/turtlebot3/navigation/navigation_set_navigation_goal_dashing.md %}
 </section>
 
 <section data-id="{{ page.tab_title5 }}" class="tab_contents">
+{% include en/platform/turtlebot3/navigation/navigation_set_navigation_goal_foxy.md %}
+</section>
+
+<section data-id="{{ page.tab_title6 }}" class="tab_contents">
 {% include en/platform/turtlebot3/navigation/navigation_set_navigation_goal_windows.md %}
 </section> 
 
@@ -119,17 +132,21 @@ The [Navigation][navigation] enables a robot to move from the current pose to th
 </section>
 
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
-{% include en/platform/turtlebot3/navigation/navigation_tuning_guide_noetic.md %}
+{% include en/platform/turtlebot3/navigation/navigation_tuning_guide_melodic.md %}
 </section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
-{% include en/platform/turtlebot3/navigation/navigation_tuning_guide_dashing.md %}
+{% include en/platform/turtlebot3/navigation/navigation_tuning_guide_noetic.md %}
 </section>
 
 <section data-id="{{ page.tab_title4 }}" class="tab_contents">
-{% include en/platform/turtlebot3/navigation/navigation_tuning_guide_foxy.md %}
+{% include en/platform/turtlebot3/navigation/navigation_tuning_guide_dashing.md %}
 </section>
 
 <section data-id="{{ page.tab_title5 }}" class="tab_contents">
+{% include en/platform/turtlebot3/navigation/navigation_tuning_guide_foxy.md %}
+</section>
+
+<section data-id="{{ page.tab_title6 }}" class="tab_contents">
 {% include en/platform/turtlebot3/navigation/navigation_tuning_guide_windows.md %}
 </section> 
