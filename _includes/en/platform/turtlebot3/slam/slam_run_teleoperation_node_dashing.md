@@ -21,5 +21,5 @@ $ ros2 run turtlebot3_teleop teleop_keyboard
    CTRL-C to quit
  ```
 
-2. Start exploring and drawing the map. 
+2. Start exploring and drawing the map.  
  ![](/assets/images/platform/turtlebot3/slam/slam_running_for_mapping.png)

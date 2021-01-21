@@ -8,7 +8,7 @@ author_profile: false
 permalink: /docs/en/platform/turtlebot3/navigation/
 tabs: "ROS"
 tab_title1: Kinetic
-tab_title2: melodic
+tab_title2: Melodic
 tab_title3: Noetic
 tab_title4: Dashing
 tab_title5: Foxy
