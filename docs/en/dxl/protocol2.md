@@ -7,21 +7,24 @@ share: true
 author_profile: false
 permalink: /docs/en/dxl/protocol2/
 sidebar:
-  title: Protocol 2.0
+  title: DYNAMIXEL Protocol 2.0
   nav: "protocol2"
 ---
 
 # [Introduction](#introduction)
 
-- Protocol 2.0 supported devices: MX-28, MX-64, MX-106(MX Series with Firmware V39 or above), X Series (2X Series included), PRO Series, P Series. 
-- Protocol 2.0 supported controllers: CM-50, CM-150, CM-200, OpenCM7.0, OpenCM9.04, CM-550, OpenCR
-- Other: 2.0 protocol from R+ Smart app
+- DYNAMIXEL Protocol 2.0 supported devices: MX-28, MX-64, MX-106, X Series (2X Series included), PRO Series, P Series. 
+- DYNAMIXEL Protocol 2.0 supported controllers: CM-50, CM-150, CM-200, OpenCM7.0, OpenCM9.04, CM-550, OpenCR
+- Other: 2.0 protocol from R+ Smart app, DYNAMIXEL Wizard 2.0
 
 **TIP** : See Protocol [Compatibility Table]{: .popup}.
 {: .notice--success}
 
+**NOTE**: MX(2.0) is a special firmware for the DYNAMIXEL MX series supporting the DYNAMIXEL Protocol 2.0. The MX(2.0) firmware can be upgraded from the Protocol 1.0 by using the [Firmware Recovery](/docs/en/software/dynamixel/dynamixel_wizard2/) in DYNAMIXEL Wizard 2.0.
+{: .notice}
+
 # [Instruction Packet](#instruction-packet)
-Instruction Packet is the command data sent to the Device.
+Instruction Packet is the command packet sent to the Device.
 
 | Header 1 | Header 2 | Header 3 | Reserved | Packet ID | Length 1 | Length 2 | Instruction |  Param  | Param |  Param  | CRC 1 | CRC 2 |
 |:--------:|:--------:|:--------:|:--------:|:---------:|:--------:|:--------:|:-----------:|:-------:|:-----:|:-------:|:-----:|:-----:|
@@ -43,38 +46,34 @@ The field that indicates an ID of the device that should receive the Instruction
 
   1. Range : 0 ~ 252 (0x00 ~ 0xFC), which is a total of 253 numbers that can be used
   2. Broadcast ID : 254 (0xFE), which makes all connected devices execute the Instruction Packet
-  3. 253(0xFD), 255(0xFF) : These are not used in order to avoid duplicate use with Header
-  
-**NOTE** : If the Instruction Packet ID is set to the Broadcast ID(0xFE), [Status Packet](#status-packet) will not be returned for READ and WRITE Instructions.
-{: .notice}
 
 ## [Length](#length)
 The field that indicates the length of packet field.
 
   1. Devided into low and high bytes in the [Instruction Packet](#introduction)
-  2. The Length has the size of Instruction, Parameters and CRC (Low / High bytes) fields
+  2. The Length indicates the Byte size of Instruction, Parameters and CRC fields
 
 - `Length = the number of Parameters + 3`
-- Status Packet includes 1 byte length ERROR data.
+- Status Packet includes 1 byte length ERROR field's data.
 
 ## [Instruction](#instruction)
 The field that defines the type of commands.
 
-| Value |  Instructions  |                                                        Description                                                         |
-|:-----:|:--------------:|:--------------------------------------------------------------------------------------------------------------------------:|
-| 0x01  |      Ping      |              Instruction that checks whether the Packet has arrived to a device with the same ID as Packet ID              |
-| 0x02  |      Read      |                                          Instruction to read data from the Device                                          |
-| 0x03  |     Write      |                                          Instruction to write data on the Device                                           |
-| 0x04  |   Reg Write    | Instruction that registers the Instruction Packet to a standby status; Packet is later executed through the Action command |
-| 0x05  |     Action     |                    Instruction that executes the Packet that was registered beforehand using Reg Write                     |
-| 0x06  | Factory Reset  |                     Instruction that resets the Control Table to its initial factory default settings                      |
-| 0x08  |     Reboot     |                                              Instruction to reboot the Device                                              |
-| 0x10  |     Clear      |                                          Instruction to reset certain information                                          |
-| 0x55  | Status(Return) |                                       Return Instruction for the Instruction Packet                                        |
-| 0x82  |   Sync Read    |             For multiple devices, Instruction to read data from the same Address with the same length at once              |
-| 0x83  |   Sync Write   |              For multiple devices, Instruction to write data on the same Address with the same length at once              |
-| 0x92  |   Bulk Read    |           For multiple devices, Instruction to read data from different Addresses with different lengths at once           |
-| 0x93  |   Bulk Write   |           For multiple devices, Instruction to write data on different Addresses with different lengths at once            |
+| Value |  Instructions   |                                                        Description                                                         |
+|:-----:|:---------------:|:--------------------------------------------------------------------------------------------------------------------------:|
+| 0x01  |     [Ping]      |              Instruction that checks whether the Packet has arrived to a device with the same ID as Packet ID              |
+| 0x02  |     [Read]      |                                          Instruction to read data from the Device                                          |
+| 0x03  |     [Write]     |                                          Instruction to write data on the Device                                           |
+| 0x04  |   [Reg Write]   | Instruction that registers the Instruction Packet to a standby status; Packet is later executed through the Action command |
+| 0x05  |    [Action]     |                    Instruction that executes the Packet that was registered beforehand using Reg Write                     |
+| 0x06  | [Factory Reset] |                     Instruction that resets the Control Table to its initial factory default settings                      |
+| 0x08  |    [Reboot]     |                                              Instruction to reboot the Device                                              |
+| 0x10  |     [Clear]     |                                          Instruction to reset certain information                                          |
+| 0x55  | Status(Return)  |                                          Return packet for the Instruction Packet                                          |
+| 0x82  |   [Sync Read]   |             For multiple devices, Instruction to read data from the same Address with the same length at once              |
+| 0x83  |  [Sync Write]   |              For multiple devices, Instruction to write data on the same Address with the same length at once              |
+| 0x92  |   [Bulk Read]   |           For multiple devices, Instruction to read data from different Addresses with different lengths at once           |
+| 0x93  |  [Bulk Write]   |           For multiple devices, Instruction to write data on different Addresses with different lengths at once            |
 
 ## [Parameters](#parameters)
 
@@ -85,13 +84,15 @@ The field that defines the type of commands.
 16bit CRC field which checks if the Packet has been damaged during communication. 
 
   1. Devided into low and high bytes in the [Instruction Packet](#introduction)
-  2. See [CRC Calculation](/docs/en/dxl/crc/) insturction.
+  2. Calculating CRC and examples: [CRC Calculation](/docs/en/dxl/crc/)
 
 # [Status Packet](#status-packet)
 
-| Header 1 | Header 2 | Header 3 | Reserved | Packet ID | Length 1 | Length 2 | Instruction |  ERR  |  PARAM  | PARAM |  PARAM  | CRC 1 | CRC 2 |
-|:--------:|:--------:|:--------:|:--------:|:---------:|:--------:|:--------:|:-----------:|:-----:|:-------:|:-----:|:-------:|:-----:|:-----:|
-|   0xFF   |   0xFF   |   0xFD   |   0x00   |    ID     |  Len_L   |  Len_H   | Instruction | Error | Param 1 |  ...  | Param N | CRC_L | CRC_H |
+Status Packet is the response packet transmitted from the device to a main controller. Note that it has the same construction as the Instruction Packet except the ERROR field is added.
+
+| Header 1 | Header 2 | Header 3 | Reserved | Packet ID | Length 1 | Length 2 | Instruction |  **ERR**{: .red}  |  PARAM  | PARAM |  PARAM  | CRC 1 | CRC 2 |
+|:--------:|:--------:|:--------:|:--------:|:---------:|:--------:|:--------:|:-----------:|:-----------------:|:-------:|:-----:|:-------:|:-----:|:-----:|
+|   0xFF   |   0xFF   |   0xFD   |   0x00   |    ID     |  Len_L   |  Len_H   | Instruction | **Error**{: .red} | Param 1 |  ...  | Param N | CRC_L | CRC_H |
 
 ## Instruction
 Instruction of the Status Packet is designated to 0x55 (Status)
@@ -103,18 +104,18 @@ The field that indicates the processing result of Instruction Packet
 |:-----:|:-------------:|
 | Alert | Error Number  |
 
-  - Alert : When there has been a problem in the Device, this field is set as 1. Checking the Hardware error status value of the Control Table can indicate the cause of the problem.
+  - Alert : When there is some hard ware issue with the Device, this field is set as 1. Checking the Hardware error status value of the Control Table can indicate the cause of the problem.
   - Error Number : When there has been an Error in the processing of the Instruction Packet.
 
-| Value |       Error       |                                                                                                                            Description                                                                                                                             |
-|:-----:|:-----------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| 0x01  |    Result Fail    |                                                                                                           Failed to process the sent Instruction Packet                                                                                                            |
-| 0x02  | Instruction Error |                                                                                          Undefined Instruction has been used<br />Action has been used without Reg Write                                                                                           |
-| 0x03  |     CRC Error     |                                                                                                               CRC of the sent Packet does not match                                                                                                                |
-| 0x04  | Data Range Error  |                                                                                 Data to be written in the corresponding Address is outside the range of the minimum/maximum value                                                                                  |
-| 0x05  | Data Length Error |                                         Attempt to write Data that is shorter than the data length of the corresponding Address<br />(ex: when you attempt to only use 2 bytes of a item that has been defined as 4 bytes)                                         |
-| 0x06  | Data Limit Error  |                                                                                           Data to be written in the corresponding Address is outside of the Limit value                                                                                            |
-| 0x07  |   Access Error    | Attempt to write a value in an Address that is Read Only or has not been defined<br />Attempt to read a value in an Address that is Write Only or has not been defined<br />Attempt to write a value in the ROM domain while in a state of Torque Enable(ROM Lock) |
+| Error Number |       Error       |                                                                                                                            Description                                                                                                                             |
+|:------------:|:-----------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+|     0x01     |    Result Fail    |                                                                                                           Failed to process the sent Instruction Packet                                                                                                            |
+|     0x02     | Instruction Error |                                                                                          Undefined Instruction has been used<br />Action has been used without Reg Write                                                                                           |
+|     0x03     |     CRC Error     |                                                                                                               CRC of the sent Packet does not match                                                                                                                |
+|     0x04     | Data Range Error  |                                                                                 Data to be written in the corresponding Address is outside the range of the minimum/maximum value                                                                                  |
+|     0x05     | Data Length Error |                                         Attempt to write Data that is shorter than the data length of the corresponding Address<br />(ex: when you attempt to only use 2 bytes of a item that has been defined as 4 bytes)                                         |
+|     0x06     | Data Limit Error  |                                                                                           Data to be written in the corresponding Address is outside of the Limit value                                                                                            |
+|     0x07     |   Access Error    | Attempt to write a value in an Address that is Read Only or has not been defined<br />Attempt to read a value in an Address that is Write Only or has not been defined<br />Attempt to write a value in the ROM domain while in a state of Torque Enable(ROM Lock) |
 
 ## Parameter
 
@@ -141,10 +142,12 @@ The field that indicates the processing result of Instruction Packet
 # [Instruction Details](#instruction-details)
 
 Note that given examples use the following abbreviation to provide clear information.
+
 - Header : H
 - Reserved: RSRV
 - Length: LEN
 - Instruction: INST
+- Error: ERR
 - Param: P
 
 ## [Ping](#ping)
@@ -366,7 +369,7 @@ Note that given examples use the following abbreviation to provide clear informa
 
 #### ID 1 Status Packet
 
-|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST |  P1  | CRC 1 | CRC 2 |
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST |  ERR  | CRC 1 | CRC 2 |
 |:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:-----:|:-----:|
 | 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1  | 0x0C  |
 
@@ -388,7 +391,7 @@ Note that given examples use the following abbreviation to provide clear informa
 
 #### ID 1 Status Packet
 
-|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST |  P1  | CRC 1 | CRC 2 |
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST |  ERR  | CRC 1 | CRC 2 |
 |:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:-----:|:-----:|
 | 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1  | 0x0C  |
 
@@ -396,16 +399,16 @@ Note that given examples use the following abbreviation to provide clear informa
 
 ### Description
 - This instruction resets certain information of DYNAMIXEL
-- Applied Products : MX with Protocol 2.0 (Firmware v42 or above), DYNAMIXEL-X series (Firmware v42 or above)
+- Applied Products : MX with DYNAMIXEL Protocol 2.0 (Firmware v42 or above), DYNAMIXEL-X series (Firmware v42 or above)
 
 ### Parameters
 
-|  P1  | P2 ~ P5                                 | Description                                                                                                                                                                                                  |
-|:----:|:----------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  P1  | P2 ~ P5                                 | Description                                                                                                                                                                                                                                                                                                                |
+|:----:|:----------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0x01 | Fixed Values<br />(0x44 0x58 0x4C 0x22) | Reset the Present Position value to an absolute value within one rotation (0-4095).<br />The Clear instruction can only be applied when DYNAMIXEL is stopped.<br />Note that if DYNAMIXEL is in motion and the Clear Instruction packet is sent, Result Fail (0x01) will be sent via the Error field of the Status Packet. |
-| 0x02 | -                                       | Reserved                                                                                                                                                                                                     |
-| ...  | -                                       | Reserved                                                                                                                                                                                                     |
-| 0xFF | -                                       | Reserved                                                                                                                                                                                                     |
+| 0x02 | -                                       | Reserved                                                                                                                                                                                                                                                                                                                   |
+| ...  | -                                       | Reserved                                                                                                                                                                                                                                                                                                                   |
+| 0xFF | -                                       | Reserved                                                                                                                                                                                                                                                                                                                   |
 
 ### Example
 
@@ -420,7 +423,7 @@ Note that given examples use the following abbreviation to provide clear informa
 
 #### ID 1 Status Packet
 
-|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST |  P1  | CRC 1 | CRC 2 |
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST |  ERR  | CRC 1 | CRC 2 |
 |:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:-----:|:-----:|
 | 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1  | 0x0C  |
 
@@ -638,5 +641,16 @@ Note that given examples use the following abbreviation to provide clear informa
 | 0x02 | 0x1F | 0x00 | 0x01 | 0x00 | 0x50 | 0xB7  | 0x68  |
 
 
-
+[Ping]: #ping     
+[Read]: #read     
+[Write]: #write
+[Reg Write]: #reg-write   
+[Action]: #action    
+[Factory Reset]: #factory-reset 
+[Reboot]: #reboot    
+[Clear]: #clear     
+[Sync Read]: #sync-read   
+[Sync Write]: #sync-write  
+[Bulk Read]: #bulk-read   
+[Bulk Write]: #bulk-write
 [Compatibility Table]: /docs/en/popup/faq_protocol_compatibility_table/
