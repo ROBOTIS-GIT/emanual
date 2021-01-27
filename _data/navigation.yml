@@ -14335,9 +14335,9 @@ protocol1:
       - title: "Parameters"
         titlekr: "Parameters"
         url: /dxl/protocol1/#parameters
-      - title: "Instruction Checksum"
-        titlekr: "Instruction Checksum"
-        url: /dxl/protocol1/#instruction-checksum
+      - title: "Checksum (Instruction Packet)"
+        titlekr: "Checksum (Instruction Packet)"
+        url: /dxl/protocol1/#checksum-instruction-packet
   - title: "Status Packet"
     titlekr: "Status Packet"
     url: /dxl/protocol1/#status-packetreturn-packet
@@ -14345,9 +14345,9 @@ protocol1:
       - title: "Error"
         titlekr: "Error"
         url: /dxl/protocol1/#error
-      - title: "Status Checksum"
-        titlekr: "Status Checksum"
-        url: /dxl/protocol1/#status-checksum
+      - title: "Checksum (Status Packet)"
+        titlekr: "Checksum (Status Packet)"
+        url: /dxl/protocol1/#checksum-status-packet
   - title: "Instruction Details"
     titlekr: "Instruction의 종류"
     url: /dxl/protocol1/#instruction-details

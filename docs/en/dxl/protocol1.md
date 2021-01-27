@@ -34,10 +34,10 @@ By giving IDs to Instruction and Status Packets, Main Controller can control onl
 
 DYNAMIXEL does the Asynchronous Serial Communication with 8 bit, 1 Stop bit, and None Parity.
 
-If DYNAMIXEL with the same ID is connected, packet will collide and network problem will occur. Thus, set ID as such that there is no DYNAMIXEL with the same ID.
+If DYNAMIXEL with the same ID is connected, packet will collide and network problem will occur. Thus, set ID as such that there is no DYNAMIXEL with the same ID. To change the DYNAMIXEL's ID, reference the [DYNAMIXEL Control Table](/docs/en/software/dynamixel/dynamixel_wizard2/#dynamixel-control-table) section in the DYNAMIXEL Wizard 2.0. 
 
-ID of DYNAMIXEL is changeable.
-For this change, please refer to [Changing IDs of DYNAMIXEL]. The factory default setting ID is 1.
+**NOTE**: The DYNAMIXEL's initial ID is 1 at the factory condition.
+{: .notice}
 
 ## [Half Duplex](#half-duplex)
 
@@ -105,32 +105,35 @@ The field that indicates the ID of the Device that should receive the Instructio
   2. Broadcast ID : 254 (0xFE), which makes all connected devices execute the Instruction Packet.
 
 ## [Length](#length)
-The length of the Packet(Instruction, Parameter, Checksum fields).
-Length = number of Parameters + 2
+
+The field indicates the Byte size of the Instruction, Parameter and Checksum field.
+
+`Length = number of Parameters + 2`
 
 ## [Instruction](#instruction)
 The field that defines the type of instruction.
 
-| Value | Instructions  |                                                                       Description                                                                        |
-|:-----:|:-------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| 0x01  |     Ping      |                             Instruction that checks whether the Packet has arrived to a device with the same ID as Packet ID                             |
-| 0x02  |     Read      |                                                         Instruction to read data from the Device                                                         |
-| 0x03  |     Write     |                                                         Instruction to write data on the Device                                                          |
-| 0x04  |   Reg Write   |              Instruction that registers the Instruction Packet to a standby status; Packet is later executed through the Action instruction              |
-| 0x05  |    Action     |                                   Instruction that executes the Packet that was registered beforehand using Reg Write                                    |
-| 0x06  | Factory Reset |                                    Instruction that resets the Control Table to its initial factory default settings                                     |
-| 0x08  |    Reboot     |                                       Instruction that reboots DYNAMIXEL(See applied products in the description)                                        |
-| 0x83  |  Sync Write   |                             For multiple devices, Instruction to write data on the same Address with the same length at once                             |
-| 0x92  |   Bulk Read   | For multiple devices, Instruction to write data on different Addresses with different lengths at once<br />This command can only be used with MX series. |
+| Value |  Instructions   |                                                          Description                                                           |
+|:-----:|:---------------:|:------------------------------------------------------------------------------------------------------------------------------:|
+| 0x01  |     [Ping]      |                Instruction that checks whether the Packet has arrived to a device with the same ID as Packet ID                |
+| 0x02  |     [Read]      |                                            Instruction to read data from the Device                                            |
+| 0x03  |     [Write]     |                                            Instruction to write data on the Device                                             |
+| 0x04  |   [Reg Write]   | Instruction that registers the Instruction Packet to a standby status; Packet is later executed through the Action instruction |
+| 0x05  |    [Action]     |                      Instruction that executes the Packet that was registered beforehand using Reg Write                       |
+| 0x06  | [Factory Reset] |                       Instruction that resets the Control Table to its initial factory default settings                        |
+| 0x08  |    [Reboot]     |                          Instruction that reboots DYNAMIXEL(See applied products in the description)                           |
+| 0x83  |  [Sync Write]   |                For multiple devices, Instruction to write data on the same Address with the same length at once                |
+| 0x92  |   [Bulk Read]   |             For multiple devices, Instruction to write data on different Addresses with different lengths at once              |
 
 ## [Parameters](#parameters)
-Parameters are used when additional data is required for an instruction.
 
-## [Instruction Checksum](#instruction-checksum)
+The Parameters are the [Instruction]'s auxiliary data field. The use of the Parameters differ depending on what Instruction is used.
+
+## [Checksum (Instruction Packet)](#checksum-instruction-packet)
 It is used to check if packet is damaged during communication.
-Instruction Checksum is calculated according to the following formula.
+Checksum is calculated according to the following formula.
 
-**Instruction Checksum = ~( ID + Length + Instruction + Parameter1 + ... Parameter N )**
+**Checksum = ~( ID + Length + Instruction + Parameter1 + ... Parameter N )**
 
 Where “~” is the Binary Ones Complement operator.
 When the calculation result of the parenthesis in the above formula is larger than 255 (0xFF), use only lower bytes.
@@ -175,7 +178,7 @@ It means that the error of 0x24 occurs from DYNAMIXEL whose ID is 01. Since 0x24
 **NOTE** : The error types on the table above are related to actuators, and the contents may vary depending on the type of DYNAMIXEL.
 {: .notice}
 
-## [Status Checksum](#status-checksum)
+## [Checksum (Status Packet)](#checksum-status-packet)
 It is used to check if packet is damaged during communication.
 Status Checksum is calculated according to the following formula.
 
@@ -188,6 +191,7 @@ Note that given examples use the following abbreviation to provide clear informa
 - Reserved: RSRV
 - Length: LEN
 - Instruction: INST
+- Error : ERR
 - Param: P
 - Checksum: CKSM
 
@@ -195,7 +199,8 @@ Note that given examples use the following abbreviation to provide clear informa
 {: .notice} 
 
 ## [Ping](#ping)
-This instruction requests the Status Packet from a specific ID. Even if Status Return Level(16) is 0, DYNAMIXEL returns Status Packet all the time for Ping Instruction.
+
+This instruction is used to see if a device exists. Regardless of the Status Return Level, the Ping Instruction returns the Status Packet.
 
 | Length | Instruction | Parameter |
 |:------:|:-----------:|:---------:|
@@ -340,7 +345,7 @@ This instruction is to reset the Control Table of DYNAMIXEL to the factory defau
 
 ## [Reboot](#reboot)
 This instruction restarts DYNAMIXEL.
-- Applied Products : MX-12W(V41), MX-28(V40), MX-64(V40), MX-106(V40), X-Series(except XL-320), MX series with Protocol 2.0
+- Supported products : DYNAMIXEL [MX, MX(2.0)](/docs/en/dxl/mx/) and [X Series](/docs/en/dxl/x/) (excluding XL-320)
 
 ### Example
 
@@ -360,7 +365,7 @@ This instruction restarts DYNAMIXEL.
 | 0xFF | 0xFF |   0x01    | 0x02 | 0x00 | 0xFC |
 
 ## [Sync Write](#sync-write)
-This instruction is used to control multiple DYNAMIXEL's simultaneously with a single Instruction Packet transmission. When this instruction is used, several instructions can be transmitted at once, so that the communication time is reduced when multiple DYNAMIXEL's are connected in a single channel. However, the SYNC WRITE instruction can only be used to a single address with an identical length of data over connected DYNAMIXEL's. ID should be transmitted as Broadcasting ID.
+This instruction is used to control multiple DYNAMIXEL's simultaneously with a single Instruction Packet transmission. When this instruction is used, several instructions can be transmitted at once, so that the communication time is reduced when multiple DYNAMIXEL's are connected in a single channel. However, the SYNC WRITE instruction can only be used to a single address with an identical length of data over connected DYNAMIXEL's. ID should be transmitted as Broadcast ID.
 
 |      Item      | Description                                             |
 |:--------------:|:--------------------------------------------------------|
@@ -395,6 +400,8 @@ This instruction is used to control multiple DYNAMIXEL's simultaneously with a s
 
 ## [Bulk Read](#bulk-read)
 This instruction is used for reading values of multiple `MX series` DYNAMIXEL's simultaneously by sending a single Instruction Packet. The packet length is shortened compared to sending multiple READ commands, and the idle time between the status packets being returned is also shortened to save communication time. However, this cannot be used to read a single module. If an identical ID is designated multiple times, only the first designated parameter will be processed.
+
+- Supported products : DYNAMIXEL [MX, MX(2.0)](/docs/en/dxl/mx/) and [X Series](/docs/en/dxl/x/) (excluding XL-320)
 
 |      Item      | Description                         |
 |:--------------:|:------------------------------------|
@@ -467,10 +474,14 @@ When Bulk Read instruction is received, DYNAMIXEL with ID 2 monitors the status 
 ![](/assets/images/dxl/protocol1/protocol1_example_21.png)
 
 
-[Changing IDs of DYNAMIXEL]: /docs/en/software/rplus1/manager/#id-setup
-
-
-
-
-
+[Ping]: #ping     
+[Read]: #read     
+[Write]: #write
+[Reg Write]: #reg-write   
+[Action]: #action    
+[Factory Reset]: #factory-reset 
+[Reboot]: #reboot     
+[Sync Write]: #sync-write  
+[Bulk Read]: #bulk-read   
+[Instruction]: #instruction
 [Compatibility Table]: /docs/en/popup/faq_protocol_compatibility_table/
