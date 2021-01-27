@@ -3,7 +3,7 @@ layout: archive
 lang: en
 ref: dxl-quick-start-insert
 read_time: true
-share: false
+share: true
 author_profile: false
 permalink: /docs/en/dxl/dxl-quick-start-insert/
 sidebar:
@@ -26,7 +26,7 @@ DYNAMIXEL Starter Set : [U2D2], [U2D2 Power Hub Board] , SMPS 12V 5A AC Adapter
 
 {% capture sdk_notice_01 %}
 **NOTE**: 
-- [DYNAMIXEL SDK] and other ROBOTIS software is available to download at the [en.robotis.com](http://en.robotis.com/) Download Center. 
+- [DYNAMIXEL SDK](/docs/en/software/dynamixel/dynamixel_sdk/overview/) and other ROBOTIS software is available to download at the [en.robotis.com](http://en.robotis.com/) Download Center. 
 - For more information on the ROBOTIS Software, see [Software](/docs/en/software/)
 - To assemble DYNAMIXEL Starter Set (U2D2 + U2D2 Power Hub Board + SMPS), see [How to Assemble](/docs/en/parts/interface/u2d2_power_hub/#how-to-assemble)
 {% endcapture %}
