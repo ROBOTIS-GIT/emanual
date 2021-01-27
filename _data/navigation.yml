@@ -12,12 +12,12 @@ main:
       - title: "XL-320"
         titlekr: "XL-320"
         url: /dxl/x/xl320/
-      # - title: "XL330-M077" 
-      #   titlekr: "XL330-M077"
-      #   url: /dxl/x/xl330-m077/
-      # - title: "XL330-M288" 
-      #   titlekr: "XL330-M288"
-      #   url: /dxl/x/xl330-m288/               
+      - title: "XL330-M077" 
+        titlekr: "XL330-M077"
+        url: /dxl/x/xl330-m077/
+      - title: "XL330-M288" 
+        titlekr: "XL330-M288"
+        url: /dxl/x/xl330-m288/               
       - title: "XL430-W250"
         titlekr: "XL430-W250"
         url: /dxl/x/xl430-w250/
@@ -237,15 +237,15 @@ main:
       titlekr: "로보티즈 OP"
       url: /platform/op/getting_started/
       children:  
-      - title: "ROBOTIS OP2"
-        titlekr: "로보티즈 OP2"
-        url: /platform/op2/getting_started/
       - title: "ROBOTIS OP3"
         titlekr: "로보티즈 OP3"
         url: /platform/op3/introduction/
       - title: "*ROBOTIS OP"
         titlekr: "*로보티즈 OP"
         url: /platform/op/getting_started/
+      - title: "*ROBOTIS OP2"
+        titlekr: "*로보티즈 OP2"
+        url: /platform/op2/getting_started/        
     - title: "Robot Hands"
       titlekr: "로봇핸드"
       children:
