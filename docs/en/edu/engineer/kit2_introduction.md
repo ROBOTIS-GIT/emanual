@@ -199,7 +199,7 @@ refelctor and detection distance can be extended up to 10 to 80 cm.
 3. Operate the robot on the floor to avoid any damages from falling.
 4. Accidental damages from falling is not covered by warranty.
 5. DYNAMIXEL internal gears and robot joints are expendables. Excessive use or long term use may develop the backlash.
-6. Use a battery or SMPS with an high ampere, if the robot requires a rapid motion (i.e, a combat motion) momentarily consuming the high current.  
+6. The robot in a rapid motion (i.e, a combat motion) consumes a lot of current momentarily and may cause the unexpected Power off due to the lack of provided power from its power source. In this case, please use a battery or SMPS with an high ampere (A) to prevent from the unexpected power off. 
 {% endcapture %}
 <div class="notice--warning">{{ eng_kit1_danger2 | markdownify }}</div>
 
