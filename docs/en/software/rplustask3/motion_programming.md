@@ -198,6 +198,9 @@ This section will describe how to insert the Motion Units in an empty Motion, an
 7. Double-click on the `Red Arrow` to insert a Exit Motion Unit that is played when a current Motion Unit is interrupted by a particular command, parameter or etc.
 
     ![](/assets/images/sw/rplus_task3/motion_edit_05.png)
+    
+    **WARNING**: The `Red Arrow`, Exit Motion, may not be displayed and not available to use if the sum of used-keyframes' size in a motion unit exceeds its assigned space in a motion unit. To use the Exit Motion, please use the Keyframes from 7 to 8 approximately. But note that the available numbers of keyframes may differ depending on the remaining space in the motion unit. 
+    {: .notice--warning}
 
 8. Double-Click on the `Green Arrow` and insert the `InitPose` Motion Unit.
 
