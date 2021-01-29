@@ -591,7 +591,7 @@ Instruction Packet 의 처리 결과를 나타냄
 ### 설명
 - Sync Write 와 유사하게, 하나의 Instruction Packet 으로 여러 개 장치를 제어하기 위해 사용하는 Instruction.
 - 데이터의 Address와 Data Length가 장치별로 달라도 사용 가능.
-- Parameter에 동일한 아이디가 여러 번 사용될 수 없음. 즉, 하나의 장치에서는 한 번만 읽을 수 있음.
+- Parameter에 동일한 아이디가 여러 번 사용될 수 없음. 즉, 하나의 장치에는 한 번만 쓸 수 있음.
 - 데이터의 주소가 연속적이지 않을 경우, Indirect Address를 사용할 수 있음.
 - Packet ID 필드 : 0xFE (Broadcast ID)
 
