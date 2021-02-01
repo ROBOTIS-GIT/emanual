@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/kr/dxl/protocol1/
 sidebar:
-  title: Protocol 1.0
+  title: DYNAMIXEL Protocol 1.0
   nav: "protocol1"
 ---
 
@@ -27,7 +27,7 @@ Main Controller와 다이나믹셀은 Packet이라고 불리는 데이터를 주
 ID는 한 개의 버스에 여러 개의 다이나믹셀이 연결되었을 때 각각의 다이나믹셀들을 구별하기 위해 만든 고유 번호입니다.
 Instruction Packet과 Status Packet에 ID를 넣음으로써 Main Controller는 제어하고자 하는 다이나믹셀만을 제어할 수 있습니다.
 
-## [Protocol](#protocol)
+## [DYNAMIXEL Protocol](#dynamixel-protocol)
 
 다이나믹셀은 8 bit, 1 Stop bit, None Parity의 Asynchronous Serial 통신을 합니다.
 
@@ -118,17 +118,17 @@ Packet의 길이로서, Instruction, Parameter, Checksum 필드의 Byte Size를 
 
 다이나믹셀에 지시하는 명령으로 아래와 같은 종류가 있습니다.
 
-|  값  |     명령어      |                                 세부 설명                                 | 파라미터 갯수 |
-|:----:|:---------------:|:-------------------------------------------------------------------------:|:--------------|
-| 0x01 |     [Ping]      |        수행 내용 없음. 제어기가 Status Packet을 받고자할 경우 사용        | 0             |
-| 0x02 |     [Read]      |                      다이나믹셀의 데이터를 읽는 명령                      | 2             |
-| 0x03 |     [Write]     |                      다이나믹셀의 데이터를 쓰는 명령                      | >2            |
-| 0x04 |   [Reg Write]   | Write 와 내용은 유사하나, 대기상태로 있다가 Action 명령이 도착해야 수행됨 | >2            |
-| 0x05 |    [Action]     |                 Reg Write로 등록된 동작을 시작하라는 명령                 | 0             |
-| 0x06 | [Factory Reset] |           다이나믹셀의 상태를 공장 출하 상태로 복귀시키는 명령            | 0             |
-| 0x08 |    [Reboot]     |                         장치를 재부팅 시키는 명령                         | 0             |
-| 0x83 |  [Sync Write]   |    한번에 여러 개의 다이나믹셀을 동시에 제어하고자 할때 사용되는 명령     | >4            |
-| 0x92 |   [Bulk Read]   |     한번의 명령으로 여러 개의 다이나믹셀의 데이터를 순차적으로 읽음.      | >4            |
+|  값  |     명령어      |                                        세부 설명                                         | 파라미터 갯수 |
+|:----:|:---------------:|:----------------------------------------------------------------------------------------:|:--------------|
+| 0x01 |     [Ping]      |               수행 내용 없음. 제어기가 Status Packet을 받고자할 경우 사용                | 0             |
+| 0x02 |     [Read]      |                             다이나믹셀의 데이터를 읽는 명령                              | 2             |
+| 0x03 |     [Write]     |                             다이나믹셀의 데이터를 쓰는 명령                              | >2            |
+| 0x04 |   [Reg Write]   |        Write 와 내용은 유사하나, 대기상태로 있다가 Action 명령이 도착해야 수행됨         | >2            |
+| 0x05 |    [Action]     |                        Reg Write로 등록된 동작을 시작하라는 명령                         | 0             |
+| 0x06 | [Factory Reset] |                   다이나믹셀의 상태를 공장 출하 상태로 복귀시키는 명령                   | 0             |
+| 0x08 |    [Reboot]     |                    장치를 재부팅 시키는 명령 (지원모델을 참고하세요)                     | 0             |
+| 0x83 |  [Sync Write]   |            한번에 여러 개의 다이나믹셀을 동시에 제어하고자 할때 사용되는 명령            | >4            |
+| 0x92 |   [Bulk Read]   | 한번의 명령으로 여러 개의 다이나믹셀의 데이터를 순차적으로 읽음. (지원모델을 참고하세요) | >4            |
 
 ## [Parameters](#parameters)
 Instruction의 보조 데이터 필드로써, Instruction 별로 용도가 다릅니다. [Instruction](#instruction) 을 참고하세요.
@@ -225,9 +225,10 @@ Checksum 은 Packet이 통신 중에 파손되었는지를 점검하기 위해 �
 ## [Ping](#ping)
 장치의 존재 여부를 확인하기 위해 사용됩니다. 장치는 Status Return Level에 관계없이, Ping Instrucion에는 무조건 Status Packet을 전송합니다.
 
-| Length | Instruction | Parameter |
-|:------:|:-----------:|:---------:|
-|  0x02  |    0x01     |     -     |
+| LEN  | INST | P |
+|:----:|:----:|:-:|
+| 0x02 | 0x01 | - |
+
 
 ### 예제
 #### 예제 설명
@@ -248,9 +249,9 @@ Checksum 은 Packet이 통신 중에 파손되었는지를 점검하기 위해 �
 ## [Read](#read)
 Control Table의 Data를 읽는 명령입니다.
 
-| Length | Instruction |        P 1         |      P 2      |
-|:------:|:-----------:|:------------------:|:-------------:|
-|  0x04  |    0x02     | 시작 주소 | 데이터 길이 |
+| LEN  | INST |    P1     |     P2      |
+|:----:|:----:|:---------:|:-----------:|
+| 0x04 | 0x02 | 시작 주소 | 데이터 길이 |
 
 ### 예제
 #### 예제 설명
@@ -271,9 +272,9 @@ Control Table의 Data를 읽는 명령입니다.
 ## [Write](#write)
 Control Table에 Data를 쓰는 명령입니다.
 
-| Length | Instruction |        P 1         |      P 2      |      P 3      |    P N+1     |
-|:------:|:-----------:|:------------------:|:-------------:|:-------------:|:------------:|
-| N + 3  |    0x03     | 시작 주소 | 첫번째 바이트 | 두번째 바이트 | N번째 바이트 |
+|  LEN  | INST |    P1     |      P2       |      P3       |    P N+1     |
+|:-----:|:----:|:---------:|:-------------:|:-------------:|:------------:|
+| N + 3 | 0x03 | 시작 주소 | 첫번째 바이트 | 두번째 바이트 | N번째 바이트 |
 
 ### 예제
 #### 예제 설명
@@ -294,9 +295,9 @@ Reg Write명령은 Write명령과 기능은 유사하나, 명령이 수행되는
 2. 이때, Registered Instruction (Address 44 (0x2C)) 이 1로 설정됩니다.
 3. 이후에 Action Instruction Packet이 도착하면 Registered Instruction 이 0으로 바뀌면서 비로소 등록되어 있던 Write명령이 실행됩니다.
 
-| Length | Instruction |        P 1         |      P 2      |    P N+1     |
-|:------:|:-----------:|:------------------:|:-------------:|:------------:|
-|  N+3   |    0x04     | 시작 주소 | 첫번째 바이트 | N번째 바이트 |
+| LEN | INST |    P1     |      P2       |    P N+1     |
+|:---:|:----:|:---------:|:-------------:|:------------:|
+| N+3 | 0x04 | 시작 주소 | 첫번째 바이트 | N번째 바이트 |
 
 ### 예제
 #### 예제 설명
@@ -319,9 +320,10 @@ Reg Write 명령으로 등록된 Packet을 실행하라는 명령입니다.
 Action 명령은 여러 개의 다이나믹셀들을 동시에 움직여야 하는 경우 사용합니다.
 여러 개의 구동장치를 통신에 의해 제어할 때, 맨 처음 명령을 전달 받는 구동장치와 맨 마지막에 명령을 전달 받는 구동장치는 구동 시점에 약간의 시간 차이가 있는데, Action 명령은 이 문제를 해결합니다.
 
-| Length | Instruction | Parameter |
-|:------:|:-----------:|:---------:|
-|  0x02  |    0x05     |     -     |
+| LEN  | INST | P |
+|:----:|:----:|:-:|
+| 0x02 | 0x05 | - |
+
 
 ### 예제
 #### 예제 설명
@@ -345,9 +347,9 @@ Control Table의 Data를 공장 출하 값 상태로 되돌려 놓습니다.
 
 <div class="notice--warning">{{ reset_warning_01 | markdownify }}</div>
 
-| Length | Instruction | Parameter |
-|:------:|:-----------:|:---------:|
-|  0x02  |    0x06     |     -     |
+| LEN  | INST | P |
+|:----:|:----:|:-:|
+| 0x02 | 0x06 | - |
 
 ### 예제
 #### 예제 설명
@@ -429,20 +431,20 @@ Control Table의 Data를 공장 출하 값 상태로 되돌려 놓습니다.
 단, 하나의 모듈에 여러 번 읽어 오도록 사용할 수는 없으며 동일한 모듈 ID 를 여러 번 지정할 경우 가장 먼저 지정된 파라미터만 처리됩니다.
 - 지원 모델 : 다이나믹셀 [MX, MX(2.0)](/docs/kr/dxl/mx/), [X 시리즈](/docs/kr/dxl/x/) (XL-320 제외)
 
-|      항목      | 설명                                 |
-|:--------------:|:-------------------------------------|
-|  Instruction   | 0x92                                 |
-|     Length     | 3N + 3                               |
-|  Parameter 1   | 0x00                                 |
+|      항목      | 설명                               |
+|:--------------:|:-----------------------------------|
+|  Instruction   | 0x92                               |
+|     Length     | 3N + 3                             |
+|  Parameter 1   | 0x00                               |
 |  Parameter 2   | `첫번째 장치` 읽어들일 데이터 길이 |
-|  Parameter 3   | `첫번째 장치` ID                     |
-|  Parameter 4   | `첫번째 장치` 시작주소               |
-|      ...       | ...                                  |
+|  Parameter 3   | `첫번째 장치` ID                   |
+|  Parameter 4   | `첫번째 장치` 시작주소             |
+|      ...       | ...                                |
 | Parameter 3N+2 | `N번째 장치` 읽어들일 데이터 길이  |
-| Parameter 3N+3 | `N번째 장치` ID                      |
-| Parameter 3N+4 | `N번째 장치` 시작주소                |
+| Parameter 3N+3 | `N번째 장치` ID                    |
+| Parameter 3N+4 | `N번째 장치` 시작주소              |
 
-**주의**: [Protocol 2.0의 Bulk Read](/docs/kr/dxl/protocol2/#bulk-read) 패킷과 Parameter 필드의 구성이 다르므로 주의하세요.
+**주의**: [DYNAMIXEL Protocol 2.0의 Bulk Read](/docs/kr/dxl/protocol2/#bulk-read) 패킷과 Parameter 필드의 구성이 다르므로 주의하세요.
 {: .notice--warning}
 
 ### 예제

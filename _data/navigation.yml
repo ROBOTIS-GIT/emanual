@@ -134,11 +134,11 @@ main:
       - title: "AX-18F/18A"
         titlekr: "AX-18F/18A"
         url: /dxl/ax/ax-18a/
-    - title: "Protocol 1.0"
-      titlekr: "프로토콜 1.0"
+    - title: "DYNAMIXEL Protocol 1.0"
+      titlekr: "다이나믹셀 프로토콜 1.0"
       url: /dxl/protocol1/
-    - title: "Protocol 2.0"
-      titlekr: "프로토콜 2.0"
+    - title: "DYNAMIXEL Protocol 2.0"
+      titlekr: "다이나믹셀 프로토콜 2.0"
       url: /dxl/protocol2/
     - title: "*EX Series"
       titlekr: "*EX 시리즈"
