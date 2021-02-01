@@ -18,7 +18,7 @@ sidebar:
 
 ![](/assets/images/sw/dynamixel/wizard2/wizard2_main_000.jpg)
 
-**소프트웨어 다운로드 (v2.0.7)**  
+**소프트웨어 다운로드 (v2.0.8)**  
 [윈도우](http://www.robotis.com/service/download.php?no=1670)  
 [리눅스](http://www.robotis.com/service/download.php?no=1671)  
 [맥 OS](http://www.robotis.com/service/download.php?no=1760)  
@@ -97,7 +97,7 @@ sidebar:
 ## [윈도우에서 설치하기](#윈도우에서-설치하기)
 
 1. 윈도우즈 전용 패키지를 다운로드 합니다.  
-  - [윈도우즈 소프트웨어 다운로드 (v2.0.6)](http://www.robotis.com/service/download.php?no=1670)
+  - [윈도우즈 소프트웨어 다운로드 (v2.0.8)](http://www.robotis.com/service/download.php?no=1670)
 2. 다운받은 설치파일을 실행합니다.  
 
 3. 안내에 따라 `Next`버튼을 눌러 설치를 진행합니다.
@@ -107,7 +107,7 @@ sidebar:
 ## [리눅스에서 설치하기](#리눅스에서-설치하기)
 
 1. 리눅스 설치패키지를 다운로드합니다.  
-  - [리눅스 소프트웨어 다운로드 (v2.0.6)](http://www.robotis.com/service/download.php?no=1671)  
+  - [리눅스 소프트웨어 다운로드 (v2.0.8)](http://www.robotis.com/service/download.php?no=1671)  
 2. 다음의 명령어를 수행하여 설치파일의 실행권한을 변경합니다.
 
     ```bash
@@ -137,7 +137,7 @@ sidebar:
 ## [맥에서 설치하기](#맥에서-설치하기)
 
 1. 맥 OS 설치 패키지를 다운로드 합니다.  
-  - [맥 소프트웨어 다운로드 (v2.0.6)](http://www.robotis.com/service/download.php?no=1760)
+  - [맥 소프트웨어 다운로드 (v2.0.8)](http://www.robotis.com/service/download.php?no=1760)
 2. 다운로드가 완료된 dmg 파일을 오른쪽 클릭하고 `Open(열기)`를 선택합니다.  
   ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_mac_01.png)
 3. `DynamixelWizard2Setup_x64` 파일을 실행합니다.  
