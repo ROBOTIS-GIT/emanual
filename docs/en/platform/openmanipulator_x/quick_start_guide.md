@@ -139,7 +139,7 @@ For `Dashing`
 ```bash
 $ source ~/.bashrc
 $ sudo apt install ros-dashing-python* ros-dashing-rqt* ros-dashing-joint-state-publisher
-$ cd ~/robotis_ws/src/  
+$ cd ~/colcon_ws/src/  
 $ git clone -b ros2 https://github.com/ROBOTIS-GIT/DynamixelSDK.git  
 $ git clone -b ros2 https://github.com/ROBOTIS-GIT/dynamixel-workbench.git  
 $ git clone -b ros2 https://github.com/ROBOTIS-GIT/open_manipulator.git  
