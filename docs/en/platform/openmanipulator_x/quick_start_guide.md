@@ -104,11 +104,11 @@ $ source ~/.bashrc
 For `Dashing`  
 ```bash
 $ sudo apt install git
-$ mkdir -p ~/robotis_ws/src
-$ cd ~/robotis_ws
+$ mkdir -p ~/colcon_ws/src
+$ cd ~/colcon_ws
 $ colcon build --symlink-install
 $ echo "source /opt/ros/dashing/setup.bash" >> ~/.bashrc
-$ echo "source ~/robotis_ws/install/local_setup.bash" >> ~/.bashrc
+$ echo "source ~/colcon_ws/install/local_setup.bash" >> ~/.bashrc
 ```
 {% endcapture %}
 <div class="notice--danger">{{ dashing_02 | markdownify }}</div>
