@@ -689,7 +689,7 @@ As a result, the number of flash memory erasures is reduced, thereby increasing 
 
 ![](/assets/images/parts/controller/opencr10/ex_eeprom_03.png)
 
-To use the EEPROM library, a header must be added, and the maximum size of the current EEPROM is 1 KBytes. Since the EEPROM library has ported what is supported in Arduino, the basic usage method is the same as that used in other existing Arduino boards. For more information on how to use it, please refer to the Adunion site.
+To use the EEPROM library, a header must be added, and the maximum size of the current EEPROM is 4 KBytes. Since the EEPROM library has ported what is supported in Arduino, the basic usage method is the same as that used in other existing Arduino boards. For more information on how to use it, please refer to the Adunion site.
 
 [https://www.arduino.cc/en/Reference/EEPROM](https://www.arduino.cc/en/Reference/EEPROM)
 
