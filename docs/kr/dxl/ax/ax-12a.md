@@ -39,7 +39,7 @@ product_group: dxl_ax
 | 동작 온도     | -5 ~ +70 [&deg;C]                                                            |
 | 사용 전압     | 9.0 ~ 12.0 [V] (**권장 전압 : 11.1 [V]**)                                    |
 | 제어 명령     | Digital Packet                                                               |
-| 프로토콜 타입 | Half Duplex Asynchronous Serial Communicationf<br />(8bit, 1stop, No Parity) |
+| 프로토콜 타입 | Half Duplex Asynchronous Serial Communication<br />(8bit, 1stop, No Parity) |
 | 통신 연결     | TTL Level Multi Drop Bus                                                     |
 | ID            | 254 ID (0~253)                                                               |
 | 피드백        | Position, Temperature, Load, Input Voltage 등                                |
@@ -55,7 +55,7 @@ product_group: dxl_ax
 
 ## [EEPROM 영역](#eeprom-영역)
 
-| 주소 | 크기(Byte) | 명칭                                        | 의미                           | 접근 | 초기값 |
+| 주소 | 크기(Byte) | 명칭                                        | 의미                           | 접근 | 기본값 |
 |:-----|:-----------|:--------------------------------------------|:-------------------------------|:-----|:-------|
 | 0    | 2          | [Model Number](#model-number)               | 모델 번호                      | R    | 12     |
 | 2    | 1          | [Firmware Version](#firmware-version)       | 펌웨어 버전 정보               | R    | -      |
@@ -75,7 +75,7 @@ product_group: dxl_ax
 
 ## [RAM 영역](#ram-영역)
 
-| 주소 | 크기(Byte) | 명칭                                            | 의미                    | 접근 | 초기값     |
+| 주소 | 크기(Byte) | 명칭                                            | 의미                    | 접근 | 기본값     |
 |:-----|:-----------|:------------------------------------------------|:------------------------|:-----|:-----------|
 | 24   | 1          | [Torque Enable](#torque-enable)                 | 토크 켜기               | RW   | 0          |
 | 25   | 1          | [LED](#led)                                     | Status LED On/Off       | RW   | 0          |
@@ -127,10 +127,8 @@ Baudrate(BPS) = 2,000,000 / (Value + 1)
 **참고**: UART는 Baudrate 오차가 3% 이내이면 통신에 지장이 없습니다.
 {: .notice}
 
-**참고**: 높은 통신데이터를 정상적으로 사용하기위해, 응답시간을 낮춰주세요.  
-[응답 시간 조정](/docs/kr/software/dynamixel/dynamixel_wizard2/#포트-응답-속도-설정)  
+**참고**: U2D2을 이용 시, 높은 통신 Baud rate에서 안정적인 통신을 위해서는 [USB 포트의 응답지연시간(Latency)](/docs/kr/software/dynamixel/dynamixel_wizard2/#포트-응답-속도-설정) 을 낮춰주세요.  
 {: .notice}
-
 
 ### <a name="return-delay-time"></a>**[Return Delay Time (5)](#return-delay-time-5)**
 {% include kr/dxl/control_table_return_delay_time.md %}

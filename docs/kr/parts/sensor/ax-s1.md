@@ -51,7 +51,7 @@ Control Table은 다이나믹셀 내부에 존재하는 값으로서 다이나�
 사용자는 Instruction Packet을 통해 Control Table의 data를 변경하는 방식으로 다이나믹셀을 제어할 수 있습니다.
 
 ## [EEPROM and RAM](#eeprom-and-ram)
-RAM Area의 Data는 전원이 인가될 때마다 다시 초기값으로 설정됩니다. 그러나 EEPROM Area Data의 경우 값을 설정하면 전원이 Off되어도 그 값이 보존됩니다.
+RAM Area의 Data는 전원이 인가될 때마다 다시 기본값으로 설정됩니다. 그러나 EEPROM Area Data의 경우 값을 설정하면 전원이 Off되어도 그 값이 보존됩니다.
 
 ## [Address](#Address)
 Address는Data의 위치 입니다. 다이나믹셀 에 Data를 쓰거나 읽기 위해서는 Packet에 그 Data가 위치해 있는 Address를 지정해 주어야 합니다.
@@ -59,8 +59,8 @@ Address는Data의 위치 입니다. 다이나믹셀 에 Data를 쓰거나 읽기
 ## [접근](#access)
 다이나믹셀 Data 에는 읽기 전용(R)과 읽고 쓰기가 가능한 것(RW), 두 가지가 있습니다. 읽기 전용(R)은 주로 센싱용으로 사용되는 data 이며 읽고 쓰기 가능한 것(RW)은 구동을 위한 Data 입니다.
 
-## [초기값](#initial-value)
-Control Table에서 우측에 표시된 초기값들은 EEPROM 영역 Data인 경우 공장출하 값이고, RAM Area Data인 경우는 전원이 인가되었을 때 갖는 초기값입니다.
+## [기본값](#initial-value)
+Control Table에서 우측에 표시된 기본값들은 EEPROM 영역 Data인 경우 공장출하 값이고, RAM Area Data인 경우는 전원이 인가되었을 때 갖는 기본값입니다.
 
 ## [상위바이트/하위바이트](#highest-lowest-byte)
 Control Table 에는 명칭이 같지만 (L) 과 (H) 가 뒤에 붙어서 Address가 구분되어 있는 것들이 있습니다. 이것은 16bit가 요구되는 Data를 8bit씩 각 Address (low, High)에 나누어 표현한 것입니다. 이 두 개의 Address 는 하나의 Instruction Packet으로 동시에 write 되어야 합니다.
@@ -79,7 +79,7 @@ Control Table 에는 명칭이 같지만 (L) 과 (H) 가 뒤에 붙어서 Addres
 
 ## [RAM Area](#ram-area)
 
-|   주소    |                    데이터명                     |             설명             | 접근 |  초기값  |
+|   주소    |                    데이터명                     |             설명             | 접근 |  기본값  |
 |:---------:|:-----------------------------------------------:|:----------------------------:|:----:|:--------:|
 | 26 (0X1A) |       [IR Left Fire Data](#distance-data)       |      왼쪽 적외선 센서값      |  R   |    -     |
 | 27 (0X1B) |      [IR Center Fire Data](#distance-data)      |      중앙 적외선 센서값      |  R   |    -     |

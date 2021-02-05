@@ -962,9 +962,9 @@ ax-12w:
             url: /dxl/ax/ax-12w/#access
             urlkr: /dxl/ax/ax-12w/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/ax/ax-12w/#initial-value
-            urlkr: /dxl/ax/ax-12w/#초기값
+            urlkr: /dxl/ax/ax-12w/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/ax/ax-12w/#control-table-of-eeprom-area
@@ -1126,9 +1126,9 @@ ax-12a:
             url: /dxl/ax/ax-12a/#access
             urlkr: /dxl/ax/ax-12a/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/ax/ax-12a/#initial-value
-            urlkr: /dxl/ax/ax-12a/#초기값
+            urlkr: /dxl/ax/ax-12a/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/ax/ax-12a/#control-table-of-eeprom-area
@@ -1318,9 +1318,9 @@ ax-18a:
             url: /dxl/ax/ax-18a/#access
             urlkr: /dxl/ax/ax-18a/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/ax/ax-18a/#initial-value
-            urlkr: /dxl/ax/ax-18a/#초기값
+            urlkr: /dxl/ax/ax-18a/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/ax/ax-18a/#control-table-of-eeprom-area
@@ -1482,9 +1482,9 @@ ex-106+:
             url: /dxl/ex/ex-106+/#access
             urlkr: /dxl/ex/ex-106+/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/ex/ex-106+/#initial-value
-            urlkr: /dxl/ex/ex-106+/#초기값
+            urlkr: /dxl/ex/ex-106+/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/ex/ex-106+/#control-table-of-eeprom-area
@@ -1648,9 +1648,9 @@ dx-113:
             url: /dxl/dx/dx-113/#access
             urlkr: /dxl/dx/dx-113/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/dx/dx-113/#initial-value
-            urlkr: /dxl/dx/dx-113/#초기값
+            urlkr: /dxl/dx/dx-113/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/dx/dx-113/#control-table-of-eeprom-area
@@ -1808,9 +1808,9 @@ dx-116:
             url: /dxl/dx/dx-116/#access
             urlkr: /dxl/dx/dx-116/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/dx/dx-116/#initial-value
-            urlkr: /dxl/dx/dx-116/#초기값
+            urlkr: /dxl/dx/dx-116/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/dx/dx-116/#control-table-of-eeprom-area
@@ -1968,9 +1968,9 @@ dx-117:
             url: /dxl/dx/dx-117/#access
             urlkr: /dxl/dx/dx-117/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/dx/dx-117/#initial-value
-            urlkr: /dxl/dx/dx-117/#초기값
+            urlkr: /dxl/dx/dx-117/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/dx/dx-117/#control-table-of-eeprom-area
@@ -2128,9 +2128,9 @@ rx-10:
             url: /dxl/rx/rx-10/#access
             urlkr: /dxl/rx/rx-10/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/rx/rx-10/#initial-value
-            urlkr: /dxl/rx/rx-10/#초기값
+            urlkr: /dxl/rx/rx-10/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/rx/rx-10/#control-table-of-eeprom-area
@@ -2286,9 +2286,9 @@ rx-24f:
             url: /dxl/rx/rx-24f/#access
             urlkr: /dxl/rx/rx-24f/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/rx/rx-24f/#initial-value
-            urlkr: /dxl/rx/rx-24f/#초기값
+            urlkr: /dxl/rx/rx-24f/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/rx/rx-24f/#control-table-of-eeprom-area
@@ -2446,9 +2446,9 @@ rx-28:
             url: /dxl/rx/rx-28/#access
             urlkr: /dxl/rx/rx-28/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/rx/rx-28/#initial-value
-            urlkr: /dxl/rx/rx-28/#초기값
+            urlkr: /dxl/rx/rx-28/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/rx/rx-28/#control-table-of-eeprom-area
@@ -2606,9 +2606,9 @@ rx-64:
             url: /dxl/rx/rx-64/#access
             urlkr: /dxl/rx/rx-64/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/rx/rx-64/#initial-value
-            urlkr: /dxl/rx/rx-64/#초기값
+            urlkr: /dxl/rx/rx-64/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/rx/rx-64/#control-table-of-eeprom-area
@@ -2778,9 +2778,9 @@ mx-12w:
             url: /dxl/mx/mx-12w/#access
             urlkr: /dxl/mx/mx-12w/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/mx/mx-12w/#initial-value
-            urlkr: /dxl/mx/mx-12w/#초기값
+            urlkr: /dxl/mx/mx-12w/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/mx/mx-12w/#control-table-of-eeprom-area
@@ -2945,9 +2945,9 @@ mx-28:
             url: /dxl/mx/mx-28/#access
             urlkr: /dxl/mx/mx-28/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/mx/mx-28/#initial-value
-            urlkr: /dxl/mx/mx-28/#초기값
+            urlkr: /dxl/mx/mx-28/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/mx/mx-28/#control-table-of-eeprom-area
@@ -3128,9 +3128,9 @@ mx-64:
             url: /dxl/mx/mx-64/#access
             urlkr: /dxl/mx/mx-64/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/mx/mx-64/#initial-value
-            urlkr: /dxl/mx/mx-64/#초기값
+            urlkr: /dxl/mx/mx-64/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/mx/mx-64/#control-table-of-eeprom-area
@@ -3320,9 +3320,9 @@ mx-106:
             url: /dxl/mx/mx-106/#access
             urlkr: /dxl/mx/mx-106/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/mx/mx-106/#initial-value
-            urlkr: /dxl/mx/mx-106/#초기값
+            urlkr: /dxl/mx/mx-106/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/mx/mx-106/#control-table-of-eeprom-area
@@ -3515,9 +3515,9 @@ mx-28-2:
             url: /dxl/mx/mx-28-2/#access
             urlkr: /dxl/mx/mx-28-2/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/mx/mx-28-2/#initial-value
-            urlkr: /dxl/mx/mx-28-2/#초기값
+            urlkr: /dxl/mx/mx-28-2/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/mx/mx-28-2/#control-table-of-eeprom-area
@@ -3748,9 +3748,9 @@ mx-64-2:
             url: /dxl/mx/mx-64-2/#access
             urlkr: /dxl/mx/mx-64-2/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/mx/mx-64-2/#initial-value
-            urlkr: /dxl/mx/mx-64-2/#초기값
+            urlkr: /dxl/mx/mx-64-2/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/mx/mx-64-2/#control-table-of-eeprom-area
@@ -3988,9 +3988,9 @@ mx-106-2:
             url: /dxl/mx/mx-106-2/#access
             urlkr: /dxl/mx/mx-106-2/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/mx/mx-106-2/#initial-value
-            urlkr: /dxl/mx/mx-106-2/#초기값
+            urlkr: /dxl/mx/mx-106-2/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/mx/mx-106-2/#control-table-of-eeprom-area
@@ -4256,9 +4256,9 @@ xh430-v210:
             url: /dxl/x/xh430-v210/#access
             urlkr: /dxl/x/xh430-v210/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/x/xh430-v210/#initial-value
-            urlkr: /dxl/x/xh430-v210/#초기값
+            urlkr: /dxl/x/xh430-v210/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/x/xh430-v210/#control-table-of-eeprom-area
@@ -4496,9 +4496,9 @@ xh430-v350:
             url: /dxl/x/xh430-v350/#access
             urlkr: /dxl/x/xh430-v350/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/x/xh430-v350/#initial-value
-            urlkr: /dxl/x/xh430-v350/#초기값
+            urlkr: /dxl/x/xh430-v350/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/x/xh430-v350/#control-table-of-eeprom-area
@@ -4736,9 +4736,9 @@ xh430-w210:
             url: /dxl/x/xh430-w210/#access
             urlkr: /dxl/x/xh430-w210/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/x/xh430-w210/#initial-value
-            urlkr: /dxl/x/xh430-w210/#초기값
+            urlkr: /dxl/x/xh430-w210/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/x/xh430-w210/#control-table-of-eeprom-area
@@ -4980,9 +4980,9 @@ xh430-w350:
             url: /dxl/x/xh430-w350/#access
             urlkr: /dxl/x/xh430-w350/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/x/xh430-w350/#initial-value
-            urlkr: /dxl/x/xh430-w350/#초기값
+            urlkr: /dxl/x/xh430-w350/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/x/xh430-w350/#control-table-of-eeprom-area
@@ -5219,9 +5219,9 @@ xl320:
             url: /dxl/x/xl320/#access
             urlkr: /dxl/x/xl320/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/x/xl320/#initial-value
-            urlkr: /dxl/x/xl320/#초기값
+            urlkr: /dxl/x/xl320/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/x/xl320/#control-table-of-eeprom-area
@@ -5282,9 +5282,9 @@ xl330-m077:
           url: /dxl/x/xl330-m077/#access
           urlkr: /dxl/x/xl330-m077/#접근권한
         - title: "Initial Value"
-          titlekr: "초기값"
+          titlekr: "기본값"
           url: /dxl/x/xl330-m077/#initial-value
-          urlkr: /dxl/x/xl330-m077/#초기값
+          urlkr: /dxl/x/xl330-m077/#기본값
     - title: "EEPROM Area"
       titlekr: "EEPROM 영역"
       url: /dxl/x/xl330-m077/#control-table-of-eeprom-area
@@ -5502,9 +5502,9 @@ xl330-m288:
           url: /dxl/x/xl330-m288/#access
           urlkr: /dxl/x/xl330-m288/#접근권한
         - title: "Initial Value"
-          titlekr: "초기값"
+          titlekr: "기본값"
           url: /dxl/x/xl330-m288/#initial-value
-          urlkr: /dxl/x/xl330-m288/#초기값
+          urlkr: /dxl/x/xl330-m288/#기본값
     - title: "EEPROM Area"
       titlekr: "EEPROM 영역"
       url: /dxl/x/xl330-m288/#control-table-of-eeprom-area
@@ -5728,9 +5728,9 @@ xl430-w250-test:
             url: /dxl/x/xl430-w250/test/#access
             urlkr: /dxl/x/xl430-w250/test/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/x/xl430-w250/test/#initial-value
-            urlkr: /dxl/x/xl430-w250/test/#초기값
+            urlkr: /dxl/x/xl430-w250/test/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/x/xl430-w250/test/#control-table-of-eeprom-area
@@ -5816,9 +5816,9 @@ xl430-w250:
             url: /dxl/x/xl430-w250/#access
             urlkr: /dxl/x/xl430-w250/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/x/xl430-w250/#initial-value
-            urlkr: /dxl/x/xl430-w250/#초기값
+            urlkr: /dxl/x/xl430-w250/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/x/xl430-w250/#control-table-of-eeprom-area
@@ -6041,9 +6041,9 @@ xc430-w150:
             url: /dxl/x/xc430-w150/#access
             urlkr: /dxl/x/xc430-w150/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/x/xc430-w150/#initial-value
-            urlkr: /dxl/x/xc430-w150/#초기값
+            urlkr: /dxl/x/xc430-w150/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/x/xc430-w150/#control-table-of-eeprom-area
@@ -6275,9 +6275,9 @@ xc430-w240:
             url: /dxl/x/xc430-w240/#access
             urlkr: /dxl/x/xc430-w240/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/x/xc430-w240/#initial-value
-            urlkr: /dxl/x/xc430-w240/#초기값
+            urlkr: /dxl/x/xc430-w240/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/x/xc430-w240/#control-table-of-eeprom-area
@@ -6509,9 +6509,9 @@ xc430-w240:
             url: /dxl/x/2xl430-w250/#access
             urlkr: /dxl/x/2xl430-w250/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/x/2xl430-w250/#initial-value
-            urlkr: /dxl/x/2xl430-w250/#초기값
+            urlkr: /dxl/x/2xl430-w250/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/x/2xl430-w250/#control-table-of-eeprom-area
@@ -6734,9 +6734,9 @@ xc430-w240:
             url: /dxl/x/2xc430-w250/#access
             urlkr: /dxl/x/2xc430-w250/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/x/2xc430-w250/#initial-value
-            urlkr: /dxl/x/2xc430-w250/#초기값
+            urlkr: /dxl/x/2xc430-w250/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/x/2xc430-w250/#control-table-of-eeprom-area
@@ -6960,9 +6960,9 @@ xm430-w210:
             url: /dxl/x/xm430-w210/#access
             urlkr: /dxl/x/xm430-w210/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/x/xm430-w210/#initial-value
-            urlkr: /dxl/x/xm430-w210/#초기값
+            urlkr: /dxl/x/xm430-w210/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/x/xm430-w210/#control-table-of-eeprom-area
@@ -7204,9 +7204,9 @@ xm430-w350:
             url: /dxl/x/xm430-w350/#access
             urlkr: /dxl/x/xm430-w350/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/x/xm430-w350/#initial-value
-            urlkr: /dxl/x/xm430-w350/#초기값
+            urlkr: /dxl/x/xm430-w350/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/x/xm430-w350/#control-table-of-eeprom-area
@@ -7448,9 +7448,9 @@ xm540-w150:
             url: /dxl/x/xm540-w150/#access
             urlkr: /dxl/x/xm540-w150/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/x/xm540-w150/#initial-value
-            urlkr: /dxl/x/xm540-w150/#초기값
+            urlkr: /dxl/x/xm540-w150/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/x/xm540-w150/#control-table-of-eeprom-area
@@ -7698,9 +7698,9 @@ xm540-w270:
             url: /dxl/x/xm540-w270/#access
             urlkr: /dxl/x/xm540-w270/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/x/xm540-w270/#initial-value
-            urlkr: /dxl/x/xm540-w270/#초기값
+            urlkr: /dxl/x/xm540-w270/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/x/xm540-w270/#control-table-of-eeprom-area
@@ -7948,9 +7948,9 @@ xw540-t140:
             url: /dxl/x/xw540-t140/#access
             urlkr: /dxl/x/xw540-t140/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/x/xw540-t140/#initial-value
-            urlkr: /dxl/x/xw540-t140/#초기값
+            urlkr: /dxl/x/xw540-t140/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/x/xw540-t140/#control-table-of-eeprom-area
@@ -8185,9 +8185,9 @@ xw540-t260:
             url: /dxl/x/xw540-t260/#access
             urlkr: /dxl/x/xw540-t260/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/x/xw540-t260/#initial-value
-            urlkr: /dxl/x/xw540-t260/#초기값
+            urlkr: /dxl/x/xw540-t260/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/x/xw540-t260/#control-table-of-eeprom-area
@@ -8422,9 +8422,9 @@ xh540-w150:
             url: /dxl/x/xh540-w150/#access
             urlkr: /dxl/x/xh540-w150/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/x/xh540-w150/#initial-value
-            urlkr: /dxl/x/xh540-w150/#초기값
+            urlkr: /dxl/x/xh540-w150/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/x/xh540-w150/#control-table-of-eeprom-area
@@ -8672,9 +8672,9 @@ xh540-w270:
             url: /dxl/x/xh540-w270/#access
             urlkr: /dxl/x/xh540-w270/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/x/xh540-w270/#initial-value
-            urlkr: /dxl/x/xh540-w270/#초기값
+            urlkr: /dxl/x/xh540-w270/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/x/xh540-w270/#control-table-of-eeprom-area
@@ -8922,9 +8922,9 @@ xh540-v150:
             url: /dxl/x/xh540-v150/#access
             urlkr: /dxl/x/xh540-v150/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/x/xh540-v150/#initial-value
-            urlkr: /dxl/x/xh540-v150/#초기값
+            urlkr: /dxl/x/xh540-v150/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/x/xh540-v150/#control-table-of-eeprom-area
@@ -9164,9 +9164,9 @@ xh540-v270:
             url: /dxl/x/xh540-v270/#access
             urlkr: /dxl/x/xh540-v270/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/x/xh540-v270/#initial-value
-            urlkr: /dxl/x/xh540-v270/#초기값
+            urlkr: /dxl/x/xh540-v270/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/x/xh540-v270/#control-table-of-eeprom-area
@@ -9406,9 +9406,9 @@ h42-20-s300-r:
             url: /dxl/pro/h42-20-s300-r/#access
             urlkr: /dxl/pro/h42-20-s300-r/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/pro/h42-20-s300-r/#initial-value
-            urlkr: /dxl/pro/h42-20-s300-r/#초기값
+            urlkr: /dxl/pro/h42-20-s300-r/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/pro/h42-20-s300-r/#control-table-of-eeprom-area
@@ -9599,9 +9599,9 @@ h42-20-s300-ra:
             url: /dxl/pro/h42-20-s300-ra/#access
             urlkr: /dxl/pro/h42-20-s300-ra/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/pro/h42-20-s300-ra/#initial-value
-            urlkr: /dxl/pro/h42-20-s300-ra/#초기값
+            urlkr: /dxl/pro/h42-20-s300-ra/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/pro/h42-20-s300-ra/#control-table-of-eeprom-area
@@ -9835,9 +9835,9 @@ h54-100-s500-r:
             url: /dxl/pro/h54-100-s500-r/#access
             urlkr: /dxl/pro/h54-100-s500-r/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/pro/h54-100-s500-r/#initial-value
-            urlkr: /dxl/pro/h54-100-s500-r/#초기값
+            urlkr: /dxl/pro/h54-100-s500-r/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/pro/h54-100-s500-r/#control-table-of-eeprom-area
@@ -10028,9 +10028,9 @@ h54-100-s500-ra:
             url: /dxl/pro/h54-100-s500-ra/#access
             urlkr: /dxl/pro/h54-100-s500-ra/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/pro/h54-100-s500-ra/#initial-value
-            urlkr: /dxl/pro/h54-100-s500-ra/#초기값
+            urlkr: /dxl/pro/h54-100-s500-ra/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/pro/h54-100-s500-ra/#control-table-of-eeprom-area
@@ -10264,9 +10264,9 @@ h54-200-s500-r:
             url: /dxl/pro/h54-200-s500-r/#access
             urlkr: /dxl/pro/h54-200-s500-r/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/pro/h54-200-s500-r/#initial-value
-            urlkr: /dxl/pro/h54-200-s500-r/#초기값
+            urlkr: /dxl/pro/h54-200-s500-r/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/pro/h54-200-s500-r/#control-table-of-eeprom-area
@@ -10457,9 +10457,9 @@ h54-200-s500-ra:
             url: /dxl/pro/h54-200-s500-ra/#access
             urlkr: /dxl/pro/h54-200-s500-ra/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/pro/h54-200-s500-ra/#initial-value
-            urlkr: /dxl/pro/h54-200-s500-ra/#초기값
+            urlkr: /dxl/pro/h54-200-s500-ra/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/pro/h54-200-s500-ra/#control-table-of-eeprom-area
@@ -10693,9 +10693,9 @@ l42-10-s300-r:
             url: /dxl/pro/l42-10-s300-r/#access
             urlkr: /dxl/pro/l42-10-s300-r/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/pro/l42-10-s300-r/#initial-value
-            urlkr: /dxl/pro/l42-10-s300-r/#초기값
+            urlkr: /dxl/pro/l42-10-s300-r/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/pro/l42-10-s300-r/#control-table-of-eeprom-area
@@ -10881,9 +10881,9 @@ l54-30-s400-r:
             url: /dxl/pro/l54-30-s400-r/#access
             urlkr: /dxl/pro/l54-30-s400-r/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/pro/l54-30-s400-r/#initial-value
-            urlkr: /dxl/pro/l54-30-s400-r/#초기값
+            urlkr: /dxl/pro/l54-30-s400-r/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/pro/l54-30-s400-r/#control-table-of-eeprom-area
@@ -11075,9 +11075,9 @@ l54-30-s500-r:
             url: /dxl/pro/l54-30-s500-r/#access
             urlkr: /dxl/pro/l54-30-s500-r/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/pro/l54-30-s500-r/#initial-value
-            urlkr: /dxl/pro/l54-30-s500-r/#초기값
+            urlkr: /dxl/pro/l54-30-s500-r/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/pro/l54-30-s500-r/#control-table-of-eeprom-area
@@ -11269,9 +11269,9 @@ l54-50-s290-r:
             url: /dxl/pro/l54-50-s290-r/#access
             urlkr: /dxl/pro/l54-50-s290-r/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/pro/l54-50-s290-r/#initial-value
-            urlkr: /dxl/pro/l54-50-s290-r/#초기값
+            urlkr: /dxl/pro/l54-50-s290-r/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/pro/l54-50-s290-r/#control-table-of-eeprom-area
@@ -11463,9 +11463,9 @@ l54-50-s500-r:
             url: /dxl/pro/l54-50-s500-r/#access
             urlkr: /dxl/pro/l54-50-s500-r/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/pro/l54-50-s500-r/#initial-value
-            urlkr: /dxl/pro/l54-50-s500-r/#초기값
+            urlkr: /dxl/pro/l54-50-s500-r/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/pro/l54-50-s500-r/#control-table-of-eeprom-area
@@ -11657,9 +11657,9 @@ m42-10-s260-r:
             url: /dxl/pro/m42-10-s260-r/#access
             urlkr: /dxl/pro/m42-10-s260-r/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/pro/m42-10-s260-r/#initial-value
-            urlkr: /dxl/pro/m42-10-s260-r/#초기값
+            urlkr: /dxl/pro/m42-10-s260-r/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/pro/m42-10-s260-r/#control-table-of-eeprom-area
@@ -11850,9 +11850,9 @@ m42-10-s260-ra:
             url: /dxl/pro/m42-10-s260-ra/#access
             urlkr: /dxl/pro/m42-10-s260-ra/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/pro/m42-10-s260-ra/#initial-value
-            urlkr: /dxl/pro/m42-10-s260-ra/#초기값
+            urlkr: /dxl/pro/m42-10-s260-ra/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/pro/m42-10-s260-ra/#control-table-of-eeprom-area
@@ -12086,9 +12086,9 @@ m54-40-s250-r:
             url: /dxl/pro/m54-40-s250-r/#access
             urlkr: /dxl/pro/m54-40-s250-r/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/pro/m54-40-s250-r/#initial-value
-            urlkr: /dxl/pro/m54-40-s250-r/#초기값
+            urlkr: /dxl/pro/m54-40-s250-r/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/pro/m54-40-s250-r/#control-table-of-eeprom-area
@@ -12279,9 +12279,9 @@ m54-40-s250-ra:
             url: /dxl/pro/m54-40-s250-ra/#access
             urlkr: /dxl/pro/m54-40-s250-ra/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/pro/m54-40-s250-ra/#initial-value
-            urlkr: /dxl/pro/m54-40-s250-ra/#초기값
+            urlkr: /dxl/pro/m54-40-s250-ra/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/pro/m54-40-s250-ra/#control-table-of-eeprom-area
@@ -12515,9 +12515,9 @@ m54-60-s250-r:
             url: /dxl/pro/m54-60-s250-r/#access
             urlkr: /dxl/pro/m54-60-s250-r/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/pro/m54-60-s250-r/#initial-value
-            urlkr: /dxl/pro/m54-60-s250-r/#초기값
+            urlkr: /dxl/pro/m54-60-s250-r/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/pro/m54-60-s250-r/#control-table-of-eeprom-area
@@ -12708,9 +12708,9 @@ m54-60-s250-ra:
             url: /dxl/pro/m54-60-s250-ra/#access
             urlkr: /dxl/pro/m54-60-s250-ra/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /dxl/pro/m54-60-s250-ra/#initial-value
-            urlkr: /dxl/pro/m54-60-s250-ra/#초기값
+            urlkr: /dxl/pro/m54-60-s250-ra/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/pro/m54-60-s250-ra/#control-table-of-eeprom-area
@@ -12943,9 +12943,9 @@ ph54-200-s500-r:
           url: /dxl/p/ph54-200-s500-r/#access
           urlkr: /dxl/p/ph54-200-s500-r/#접근권한
         - title: "Initial Value"
-          titlekr: "초기값"
+          titlekr: "기본값"
           url: /dxl/p/ph54-200-s500-r/#initial-value
-          urlkr: /dxl/p/ph54-200-s500-r/#초기값
+          urlkr: /dxl/p/ph54-200-s500-r/#기본값
     - title: "EEPROM Area"
       titlekr: "EEPROM 영역"
       url: /dxl/p/ph54-200-s500-r/#control-table-of-eeprom-area
@@ -13177,9 +13177,9 @@ ph54-100-s500-r:
           url: /dxl/p/ph54-100-s500-r/#access
           urlkr: /dxl/p/ph54-100-s500-r/#접근권한
         - title: "Initial Value"
-          titlekr: "초기값"
+          titlekr: "기본값"
           url: /dxl/p/ph54-100-s500-r/#initial-value
-          urlkr: /dxl/p/ph54-100-s500-r/#초기값
+          urlkr: /dxl/p/ph54-100-s500-r/#기본값
     - title: "EEPROM Area"
       titlekr: "EEPROM 영역"
       url: /dxl/p/ph54-100-s500-r/#control-table-of-eeprom-area
@@ -13411,9 +13411,9 @@ ph42-020-s300-r:
           url: /dxl/p/ph42-020-s300-r/#access
           urlkr: /dxl/p/ph42-020-s300-r/#접근권한
         - title: "Initial Value"
-          titlekr: "초기값"
+          titlekr: "기본값"
           url: /dxl/p/ph42-020-s300-r/#initial-value
-          urlkr: /dxl/p/ph42-020-s300-r/#초기값
+          urlkr: /dxl/p/ph42-020-s300-r/#기본값
     - title: "EEPROM Area"
       titlekr: "EEPROM 영역"
       url: /dxl/p/ph42-020-s300-r/#control-table-of-eeprom-area
@@ -13644,9 +13644,9 @@ pm42-010-s260-r:
           url: /dxl/p/pm42-010-s260-r/#access
           urlkr: /dxl/p/pm42-010-s260-r/#접근권한
         - title: "Initial Value"
-          titlekr: "초기값"
+          titlekr: "기본값"
           url: /dxl/p/pm42-010-s260-r/#initial-value
-          urlkr: /dxl/p/pm42-010-s260-r/#초기값
+          urlkr: /dxl/p/pm42-010-s260-r/#기본값
     - title: "EEPROM Area"
       titlekr: "EEPROM 영역"
       url: /dxl/p/pm42-010-s260-r/#control-table-of-eeprom-area
@@ -13877,9 +13877,9 @@ pm54-040-s250-r:
           url: /dxl/p/pm54-040-s250-r/#access
           urlkr: /dxl/p/pm54-040-s250-r/#접근권한
         - title: "Initial Value"
-          titlekr: "초기값"
+          titlekr: "기본값"
           url: /dxl/p/pm54-040-s250-r/#initial-value
-          urlkr: /dxl/p/pm54-040-s250-r/#초기값
+          urlkr: /dxl/p/pm54-040-s250-r/#기본값
     - title: "EEPROM Area"
       titlekr: "EEPROM 영역"
       url: /dxl/p/pm54-040-s250-r/#control-table-of-eeprom-area
@@ -14110,9 +14110,9 @@ pm54-060-s250-r:
           url: /dxl/p/pm54-060-s250-r/#access
           urlkr: /dxl/p/pm54-060-s250-r/#접근권한
         - title: "Initial Value"
-          titlekr: "초기값"
+          titlekr: "기본값"
           url: /dxl/p/pm54-060-s250-r/#initial-value
-          urlkr: /dxl/p/pm54-060-s250-r/#초기값
+          urlkr: /dxl/p/pm54-060-s250-r/#기본값
     - title: "EEPROM Area"
       titlekr: "EEPROM 영역"
       url: /dxl/p/pm54-060-s250-r/#control-table-of-eeprom-area
@@ -16479,9 +16479,9 @@ rh_p12_rn:
             url: /platform/rh_p12_rn/#access
             urlkr: /platform/rh_p12_rn/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /platform/rh_p12_rn/#initial-value
-            urlkr: /platform/rh_p12_rn/#초기값
+            urlkr: /platform/rh_p12_rn/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /platform/rh_p12_rn/#control-table-of-eeprom-area
@@ -16691,9 +16691,9 @@ rh_p12_rna:
             url: /platform/rh_p12_rna/#access
             urlkr: /platform/rh_p12_rna/#접근권한
           - title: "Initial Value"
-            titlekr: "초기값"
+            titlekr: "기본값"
             url: /platform/rh_p12_rna/#initial-value
-            urlkr: /platform/rh_p12_rna/#초기값
+            urlkr: /platform/rh_p12_rna/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /platform/rh_p12_rna/#control-table-of-eeprom-area
