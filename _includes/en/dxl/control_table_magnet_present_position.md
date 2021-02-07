@@ -1,9 +1,9 @@
 It is the present position value of DYNAMIXEL.
 The range of the value is 0~4095 (0xFFF), and the unit is 0.088 [&deg;].
 
-![](/assets/images/dxl/mx/mx_position.png)
+![](/assets/images/dxl/mx/mx_position.png)  
 
-> The picture above is the front view of DYNAMIXEL.
+- The picture above is the front view of DYNAMIXEL.
 
 In multi-turn mode, the range is from -28,672 to 28,672 with unit values dependent on Resolution Divider (0.088 * Resolution Divider)
 

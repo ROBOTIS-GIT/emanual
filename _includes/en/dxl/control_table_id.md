@@ -1,4 +1,4 @@
-{% if page.product_group == 'dxl_ax' or page.product_group == 'dxl_ex' or page.product_group == 'dxl_rx' or page.product_group == 'dxl_mx' %}
+{% if page.product_group=='dxl_ax' or page.product_group=='dxl_dx' or page.product_group=='dxl_ex' or page.product_group=='dxl_rx' or page.product_group=='dxl_mx' %} 
 
 {% assign stauts_return_lv = "Stuatus Return Level (16)" %}
 {% assign protocol= "DYNAMIXEL Protocol 1.0" %}

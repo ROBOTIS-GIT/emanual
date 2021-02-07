@@ -1,7 +1,7 @@
 
 동작 온도의 상한 값입니다.  
 예를 들어, 값이 80이면 80[&deg;C] 입니다.
-내부 온도가 Temperature Limit(11)을 넘으면 Status Packet은 ERROR 필드를 통해서 Overheating Error Bit (Bit2)를 전송합니다. Alram LED/Shutdown의 플래그(flag)중 과열(Overheating)이 설정되어 있다면 Alarm LED가 점멸하고, 모터 출력은 0 [%]로 변경됩니다.
+내부 온도가 Temperature Limit(11)을 넘으면 Status Packet은 ERROR 필드를 통해서 Overheating Error Bit (Bit2)를 전송합니다. Alarm LED/Shutdown의 플래그(flag)중 과열(Overheating)이 설정되어 있다면 Alarm LED가 점멸하고, 모터 출력은 0 [%]로 변경됩니다.
 
 |     단위      |  범위   |
 |:-------------:|:-------:|
