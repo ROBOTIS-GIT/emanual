@@ -36,5 +36,5 @@ The {{ stauts_return_lv }} decides how to return Status Packet when DYNAMIXEL re
 
 {% endif %}
 
-[Protocol 1.0]: /docs/en/dxl/protocol1/#status-packet
-[Protocol 2.0]: /docs/en/dxl/protocol2/#status-packet
+[DYNAMIXEL Protocol 1.0]: /docs/en/dxl/protocol1/
+[DYNAMIXEL Protocol 2.0]: /docs/en/dxl/protocol2/

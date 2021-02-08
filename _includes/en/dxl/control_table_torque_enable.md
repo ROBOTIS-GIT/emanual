@@ -16,18 +16,18 @@
 
 {% if page.product_group=='dxl_ax' or page.product_group=='dxl_dx' or page.product_group=='dxl_ex' or page.product_group=='dxl_mx' or page.product_group=='dxl_rx' %}
 
-|   Value    | Description                             |
-|:----------:|:----------------------------------------|
-| 0(Default) | Turn off the torque                     |
-|     1      | Turn on the torque                      |
+|   Value    | Description |
+|:----------:|:------------|
+| 0(Default) | Torque Off  |
+|     1      | Torque On   |
 
 {% else %}
 Torque Enable(64) determines Torque ON/OFF. Writing ‘1’ to Toque Enable's address will turn on the Torque and all Data in the EEPROM area will be locked.
 
-|   Value    | Description                             |
-|:----------:|:----------------------------------------|
-| 0(Default) | Turn off the torque                     |
-|     1      | Turn on the torque and lock EEPROM area |
+|   Value    | Description                    |
+|:----------:|:-------------------------------|
+| 0(Default) | Torque Off                     |
+|     1      | Torque On and lock EEPROM area |
 
 {% endif %}
 

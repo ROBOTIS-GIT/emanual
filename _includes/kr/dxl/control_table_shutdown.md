@@ -43,7 +43,7 @@ Revision: PRO+ > DYNAMIXEL-P.
 {% if page.product_group=='dxl_ax' or page.product_group=='dxl_dx' or page.product_group=='dxl_ex' or page.product_group=='dxl_rx' or page.product_group=='dxl_mx' %}{% else %}
 위험 상황이 감지된 후에는 Reboot을 하지 않는 한, [{{ torque_enable }}] 을 ‘1’(Torque ON)로 설정할 수 없습니다.제어기는 Status Packet의 Error 필드에 [Alert Bit(0x80)]이 설정되었는지를 확인하거나, [{{ hardware_error_status }}] 을 통해서 현재 상태를 확인할 수 있습니다.
 {% endif %}
-[{{ shutdown }}] 에서 감지할 수 있는 위험 상황은 아래 표와 같습니다.
+{{ shutdown }} 에서 감지할 수 있는 위험 상황은 아래 표와 같습니다.
 
 {% if page.product_group=='dxl_ax' or page.product_group=='dxl_dx' or page.product_group=='dxl_ex' or page.product_group=='dxl_rx' or page.product_group=='dxl_mx' %}
 |  Bit  |        항목         | 설명                                                                                     |

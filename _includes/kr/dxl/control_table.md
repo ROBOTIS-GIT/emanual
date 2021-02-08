@@ -67,9 +67,13 @@ Packet에 대한 자세한 내용은 [{{ protocol }}]을 참고해주세요.
 ### [영역 (EEPROM, RAM)](#영역-eeprom-ram)
 컨트롤 테이블은 2가지 영역으로 구분됩니다. RAM 영역에 위치한 데이터는 전원이 인가될 때마다 다시 기본값으로 설정됩니다(Volatile).  
 반면 EEPROM 영역에 위치한 데이터는 값을 변경하면 전원이 꺼져도 그 값이 보존됩니다(Non-Volatile).  
-
-{% if page.ref=='2xc430-w250' or page.ref =='2xl430-w250' %}**[EEPROM 영역](#eeprom-영역)의 데이터는, 각 ID에 할당된 2개의 컨트롤테이블에서, [Torque Enable(64)](#torque-enable)의 값이 모두 `0' 일때만 변경할 수 있습니다.**{% else %} **EEPROM Area에 위치한 모든 데이터는 Torque Enable({{ torque_enable }})의 값이 '0'(Torque OFF)일 때만 변경할 수 있습니다.**{% endif %}
+{% if page.product_group=='dxl_ax' or page.product_group=='dxl_dx' or page.product_group=='dxl_ex' or page.product_group=='dxl_mx' or page.product_group=='dxl_rx' %}
+{% elsif page.ref=='2xc430-w250' or page.ref =='2xl430-w250' %}**[EEPROM 영역](#eeprom-영역)의 데이터는, 각 ID에 할당된 2개의 컨트롤테이블에서, [Torque Enable(64)](#torque-enable)의 값이 모두 `0' 일때만 변경할 수 있습니다.**
 {: .notice--warning}
+{% else %} 
+**EEPROM Area에 위치한 모든 데이터는 Torque Enable({{ torque_enable }})의 값이 '0'(Torque OFF)일 때만 변경할 수 있습니다.**
+{: .notice--warning}
+{% endif %}
 
 ### [크기](#크기)
 데이터의 크기는 용도에 따라 {{ data_size }} byte로 정해져 있습니다. Instruction Packet을 통해 데이터를 변경할 때는 해당 데이터의 크기를 확인하시기 바랍니다.  

@@ -39,3 +39,6 @@ Status Packet의 반환 방식을 결정합니다.
 {: .notice}
 
 {% endif %}
+
+[DYNAMIXEL Protocol 1.0]: /docs/kr/dxl/protocol1/
+[DYNAMIXEL Protocol 2.0]: /docs/kr/dxl/protocol2/

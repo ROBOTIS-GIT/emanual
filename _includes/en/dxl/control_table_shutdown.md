@@ -37,7 +37,7 @@ Revision: PRO+ > DYNAMIXEL-P.
 
 The DYNAMIXEL can protect itself by detecting dangerous situations that could occur during the operation.
 Each Bit is inclusively processed with the ‘OR’ logic, therefore, multiple options can be generated.
-For instance, when ‘0x05’ (binary : 00000101) is defined in [{{ shutdown }}], DYNAMIXEL can detect both Input Voltage Error(binary : 00000001) and Overheating Error(binary : 00000100).
+For instance, when ‘0x05’ (binary : 00000101) is defined in {{ shutdown }}, DYNAMIXEL can detect both Input Voltage Error(binary : 00000001) and Overheating Error(binary : 00000100).
 If those errors are detected, {% if page.product_group=='dxl_ax' or page.product_group=='dxl_dx' or page.product_group=='dxl_ex' or page.product_group=='dxl_rx' or page.product_group=='dxl_mx' %} the Alarm LED will start blinking and the motor's output will be 0 [%]. {% else %} [{{ torque_enable }}] is cleared to ‘0’ and the motor's output becomes 0 [%].
 {% endif %}
 {% if page.product_group=='dxl_ax' or page.product_group=='dxl_dx' or page.product_group=='dxl_ex' or page.product_group=='dxl_rx' or page.product_group=='dxl_mx' %}{% else %}
