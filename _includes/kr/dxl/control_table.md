@@ -29,7 +29,7 @@
 {% capture mx2_control_table %}
 **주의**
 1. MX(2.0) 펌웨어는 다이나믹셀 MX 시리즈의 컨트롤 테이블과 주소가 다릅니다. 사용 전에 컨트롤 테이블 주소를 필히 확인해 주세요.
-2. MX(2.0) 펌웨어는 다이나믹셀 X 시리즈의 기능을 상속받습니다. 따라서 [프로토콜 1.0](/docs/kr/dxl/protocol1/)과 [프로토콜 2.0](/docs/kr/dxl/protocol2/) 및 다양한 Operating Mode와 Secondary ID, Drive Mode, Bus Watchdog 등을 지원합니다. 자세한 사항은 컨트롤 테이블을 참고해주세요.
+2. MX(2.0) 펌웨어는 다이나믹셀 X 시리즈의 기능을 상속받습니다. 따라서 [다이나믹셀 프로토콜 1.0](/docs/kr/dxl/protocol1/)과 [다이나믹셀 프로토콜 2.0](/docs/kr/dxl/protocol2/) 및 다양한 Operating Mode와 Secondary ID, Drive Mode, Bus Watchdog 등을 지원합니다. 자세한 사항은 컨트롤 테이블을 참고해주세요.
 {% endcapture %}
 
 <div class="notice--warning">{{ mx2_control_table | markdownify }}</div>
@@ -65,11 +65,15 @@ Packet에 대한 자세한 내용은 [{{ protocol }}]을 참고해주세요.
 {% endif %}
 
 ### [영역 (EEPROM, RAM)](#영역-eeprom-ram)
-컨트롤 테이블은 2가지 영역으로 구분됩니다. RAM 영역에 위치한 데이터는 전원이 인가될 때마다 다시 초기값으로 설정됩니다(Volatile).  
+컨트롤 테이블은 2가지 영역으로 구분됩니다. RAM 영역에 위치한 데이터는 전원이 인가될 때마다 다시 기본값으로 설정됩니다(Volatile).  
 반면 EEPROM 영역에 위치한 데이터는 값을 변경하면 전원이 꺼져도 그 값이 보존됩니다(Non-Volatile).  
-
-{% if page.ref=='2xc430-w250' or page.ref =='2xl430-w250' %}**[EEPROM 영역](#eeprom-영역)의 데이터는, 각 ID에 할당된 2개의 컨트롤테이블에서, [Torque Enable(64)](#torque-enable)의 값이 모두 `0' 일때만 변경할 수 있습니다.**{% else %} **EEPROM Area에 위치한 모든 데이터는 Torque Enable({{ torque_enable }})의 값이 '0'(Torque OFF)일 때만 변경할 수 있습니다.**{% endif %}
+{% if page.product_group=='dxl_ax' or page.product_group=='dxl_dx' or page.product_group=='dxl_ex' or page.product_group=='dxl_mx' or page.product_group=='dxl_rx' %}
+{% elsif page.ref=='2xc430-w250' or page.ref =='2xl430-w250' %}**[EEPROM 영역](#eeprom-영역)의 데이터는, 각 ID에 할당된 2개의 컨트롤테이블에서, [Torque Enable(64)](#torque-enable)의 값이 모두 `0' 일때만 변경할 수 있습니다.**
 {: .notice--warning}
+{% else %} 
+**EEPROM Area에 위치한 모든 데이터는 Torque Enable({{ torque_enable }})의 값이 '0'(Torque OFF)일 때만 변경할 수 있습니다.**
+{: .notice--warning}
+{% endif %}
 
 ### [크기](#크기)
 데이터의 크기는 용도에 따라 {{ data_size }} byte로 정해져 있습니다. Instruction Packet을 통해 데이터를 변경할 때는 해당 데이터의 크기를 확인하시기 바랍니다.  
@@ -80,9 +84,9 @@ Packet에 대한 자세한 내용은 [{{ protocol }}]을 참고해주세요.
 읽기 전용 속성의 데이터는 WRITE Instruction으로 값이 변경되지 않습니다.  
 읽기 전용 속성(‘R’)은 주로 측정 또는 모니터링 용도로 사용되고, 읽기 쓰기 속성(‘RW’)은 장치의 제어 용도로 사용됩니다.
 
-### [초기값](#초기값)
+### [기본값](#기본값)
 매뉴얼에 표기된 EEPROM 영역의 기본값은 제품의 초기 설정값(공장 출하 설정값)입니다.  
-사용자가 변경한 경우, 초기값은 사용자가 변경한 값으로 적용됩니다.  
+사용자가 변경한 경우, 기본값은 사용자가 변경한 값으로 적용됩니다.  
 RAM 영역의 기본값은 장치에 전원이 인가되었을 때 설정되는 값입니다.
 
 [다이나믹셀 프로토콜 1.0]: /docs/kr/dxl/protocol1/

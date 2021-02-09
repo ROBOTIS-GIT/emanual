@@ -38,7 +38,7 @@ product_group: dxl_xl430
 
 ## [Control Table of EEPROM Area](#control-table-of-eeprom-area)
 
-| Address | Size(Byte) | Data Name                        | Access | Default<br />Value |           Range            |      Unit       |
+| Address | Size(Byte) | Data Name                        | Access | Initial<br />Value |           Range            |      Unit       |
 |:-------:|:--------------:|:---------------------------------|:------:|:------------------:|:--------------------------:|:---------------:|
 |    0    |       2        | [Model Number]{: .popup}         |   R    |       1,060        |             -              |        -        |
 |    2    |       4        | Model Information                |   R    |         -          |             -              |        -        |
@@ -63,7 +63,7 @@ product_group: dxl_xl430
 
 ## [Control Table of RAM Area](#control-table-of-ram-area)
 
-| Address | Size(Byte) | Data Name                                         | Access | Default<br />Value |                        Range                        |                  Unit                   |
+| Address | Size(Byte) | Data Name                                         | Access | Initial<br />Value |                        Range                        |                  Unit                   |
 |:-------:|:--------------:|:--------------------------------------------------|:------:|:------------------:|:---------------------------------------------------:|:---------------------------------------:|
 |   64    |       1        | [Torque Enable](#torque-enable)                   |   RW   |         0          |                        0 ~ 1                        |                    -                    |
 |   65    |       1        | [LED](#led)                                       |   RW   |         0          |                        0 ~ 1                        |                    -                    |

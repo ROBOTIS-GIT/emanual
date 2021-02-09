@@ -42,7 +42,7 @@ product_group: dxl_ax
 | Gear Material          | Engineering Plastic(1, 2, 3), Precious Metal(4)                             |
 | Case Material          | Engineering Plastic(Front, Middle, Back)                                    |
 
-**NOTE** : Stall torque is the maximum instantaneous and static  torque. Stable motions are possible with robots designed for loads with 1/5 or less of the stall torque.
+**NOTE** : Stall torque is the maximum instantaneous and static torque. Stable motions are possible with robots designed for loads with 1/5 or less of the stall torque.
 {: .notice}
 
 {% include en/dxl/warning.md %}

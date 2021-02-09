@@ -63,7 +63,7 @@ Packet의 용도를 정의하는 필드
 | 0x03 |     [Write]     |                                장치에 데이터를 쓰기 위한 Instruction                                |
 | 0x04 |   [Reg Write]   |          Instruction Packet을 대기 상태로 등록하는 Instruction, Action 명령에 의해 실행됨           |
 | 0x05 |    [Action]     |                       Reg Write 로 미리 등록한 Packet을 실행하는 Instruction                        |
-| 0x06 | [Factory Reset] |                   컨트롤테이블을 공장 출하 상태의 초기값으로 되돌리는 Instruction                   |
+| 0x06 | [Factory Reset] |                   컨트롤테이블을 공장 출하 상태의 기본값으로 되돌리는 Instruction                   |
 | 0x08 |    [Reboot]     |                                  장치를 재부팅 시키는 Instruction                                   |
 | 0x10 |     [Clear]     |                               장치의 특정 상태를 해제하는 Instruction                               |
 | 0x55 | Status(Return)  |                               Instruction Packet에 대한 Return packet                               |
@@ -343,7 +343,7 @@ Instruction Packet 의 처리 결과를 나타냄
 ## [Factory Reset](#factory-reset)
 
 ### 설명
-- Control Table 을 공장 출하 시의 초기값으로 되돌리는 Instruction
+- Control Table 을 공장 출하 시의 기본값으로 되돌리는 Instruction
 - Packet ID가 Broadcast ID(0xFE)이고 Option이 Reset all value(0xFF)일 경우, Factory Reset Instruction(0x06)은 동작하지 않음
   - MX(2.0) FW42, 다이나믹셀-X 시리즈 FW42 이상부터 적용
 

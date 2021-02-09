@@ -4,7 +4,7 @@ The errors can be set as the table below.
 |  Bit  |        Item         | Description                                                                                                |
 |:-----:|:-------------------:|:-----------------------------------------------------------------------------------------------------------|
 | Bit 7 |          0          | -                                                                                                          |
-| Bit 6 |  Instruction Error  | When undefined Instruction is transmitted or the Action command is delivered without the reg_write command |
+| Bit 6 |  Instruction Error  | When undefined Instruction is transmitted or the Action command is delivered without the REG_WRITE command |
 | Bit 5 |   Overload Error    | When the current load cannot be controlled with the set maximum torque                                     |
 | Bit 4 |   CheckSum Error    | When the Checksum of the transmitted Instruction Packet is invalid                                         |
 | Bit 3 |     Range Error     | When the command is given beyond the range of usage                                                        |

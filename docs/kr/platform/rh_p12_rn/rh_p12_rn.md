@@ -218,7 +218,7 @@ External Port 의 용도는 External Port Mode (44, 45, 46, 47) 에 의해서 �
 
 | External Port Mode |              명칭               |                                                      상세                                                       |
 |:------------------:|:-------------------------------:|:---------------------------------------------------------------------------------------------------------------:|
-|     0(초기값)      |       AI(Analogue Input)        |                                   External Port 신호를 12[bit] Digital로 변환                                   |
+|     0(기본값)      |       AI(Analogue Input)        |                                   External Port 신호를 12[bit] Digital로 변환                                   |
 |         1          | DO_PP(Digital Output Push-Pull) |                                     External Port를 0[V] 또는 3.3[V]로 출력                                     |
 |         2          |  DI_PU(Digital Input Pull-Up)   | External Port 신호를 ‘0’ 또는 ‘1’의 Digital 신호로 변경<br />External Port에 신호가 연결되어 있지 않을 경우 ‘1’ |
 |         3          | DI_PD(Digital Input Pull-Down)  |   External Port 신호를 0 또는 1의 Digital 신호로 변경<br />External Port에 신호가 연결되어 있지 않을 경우 ‘0’   |
@@ -261,7 +261,7 @@ External Port 의 용도는 External Port Mode (44, 45, 46, 47) 에 의해서 �
 즉 [Shutdown(48)]이 ‘0x05’(2진수 : 000,0101)로 설정되었을 경우, Input Voltage Error(2진수 : 0000,0001)와 Overheating Error(2진수 : 0000,0100)가 발생하는 것을 모두 감지할 수 있습니다.  
 위험상황이 감지되면, [Torque Enable(562)] 값이 ‘0’으로 변경되고 모터 출력은 0%가 됩니다.  
 위험상황이 감지된 후에는 REBOOT을 하지 않는 한, Torque Enable(562)을 ‘1’(Torque ON)로 설정할 수 없습니다.  
-[Shutdown(48)]에서 감지할 수 있는 위험 상황은 아래 표와 같습니다. [Shutdown(48)]의 초기값은 0x30 (2진수 : 0011,0000) 입니다.
+[Shutdown(48)]에서 감지할 수 있는 위험 상황은 아래 표와 같습니다. [Shutdown(48)]의 기본값은 0x30 (2진수 : 0011,0000) 입니다.
 
 |  Bit  |              명칭              | 상세 설명                                                                              |
 |:-----:|:------------------------------:|:---------------------------------------------------------------------------------------|
@@ -315,7 +315,7 @@ K<sub>P</sub>D, K<sub>P</sub>I, K<sub>P</sub>P 는 각각 Position D Gain, Posit
 
 ### <a name="goal-position">**[Goal Position(596)](#goal-position596)**
 이동시키고자 하는 곳의 위치 값입니다.  
-값의 범위는 Min Position Limit(40) ~ Max Position Limit(36) 이며, 초기값은 0 ~ 1,150 (0x47E) 입니다.
+값의 범위는 Min Position Limit(40) ~ Max Position Limit(36) 이며, 기본값은 0 ~ 1,150 (0x47E) 입니다.
 
 |  모델명   |                         Goal Position = 0                          |                         Goal Position = 740                         |
 |:---------:|:------------------------------------------------------------------:|:-------------------------------------------------------------------:|

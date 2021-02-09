@@ -5,7 +5,7 @@
 {% endif %}
 
 
-다이나믹셀은 Instruction Packet을 수신하면, Return Delay Time({{ return_delay }}) 만큼 대기한 후 Status Packet을 반환 합니다.
+다이나믹셀은 Instruction Packet을 수신하면, Return Delay Time({{ return_delay }}) 만큼 대기한 후 Status Packet을 반환 합니다.  
 0 ~ 254 (0xFE) 까지 사용 가능하며 단위는 2 [μsec] 입니다.  
 예를 들어, 값이 10일 경우 20 [μsec] 만큼 시간이 지난 후에 Status Packet을 반환합니다.
 

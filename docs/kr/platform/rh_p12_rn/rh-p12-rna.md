@@ -384,7 +384,7 @@ Velocity Override 기능은 동일하게 동작합니다.
 
 ### <a name="goal-position"></a>**[Goal Position(564)](#goal-position564)**
 이동시키고자 하는 곳의 위치 값입니다.  
-값의 범위는 Min Position Limit(52) ~ Max Position Limit(48) 이며, 초기값은 0 ~ 1,150 (0x47E) 입니다.
+값의 범위는 Min Position Limit(52) ~ Max Position Limit(48) 이며, 기본값은 0 ~ 1,150 (0x47E) 입니다.
 
 |  모델명   |                         Goal Position = 0                          |                         Goal Position = 740                         |
 |:---------:|:------------------------------------------------------------------:|:-------------------------------------------------------------------:|

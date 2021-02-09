@@ -8,3 +8,6 @@
 
 **참고** : 다중 회전 모드(Multi-turn Mode)일 때 실제 위치와 Present Position의 관계는 Resolution Divider와 Multi Turn offset의 값에 따라 달라 질 수 있습니다. 더 자세한 내용은 Multi Turn offset과 Resolution Divider를 참고 하시기 바랍니다.
 {: .notice}
+
+**참고** : 다중 회전 모드(Multi-turn Mode)일 때 음수의 표현 방법은 2의 보수(Two’s complement) 규칙을 따릅니다. 2의 보수에 대한 자세한 설명은 위키피디아의 [Two’s complement](https://en.wikipedia.org/wiki/Two%27s_complement)를 참고하세요.
+{: .notice}

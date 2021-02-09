@@ -15,14 +15,19 @@
 {% endif %}
 
 {% if page.product_group=='dxl_ax' or page.product_group=='dxl_dx' or page.product_group=='dxl_ex' or page.product_group=='dxl_mx' or page.product_group=='dxl_rx' %}
+
+|    값    | 상세 설명                    |
+|:--------:|:----------------------------|
+| 0(기본값) | Torque OFF 상태로 변경합니다 |
+|     1    | Torque ON 상태로 변경합니다. |
+
 {% else %}
 Torque ON/OFF를 제어합니다. ‘1’을 쓰면 Torque ON 상태가 되고, EEPROM 영역의 모든 Data는 잠김 상태로 변경됩니다.
-{% endif %}
-
 |    값    | 상세 설명                                                         |
 |:--------:|:----------------------------------------------------------------|
-| 0(초기값) | Torque OFF 상태로 변경합니다                                        |
+| 0(기본값) | Torque OFF 상태로 변경합니다                                        |
 |     1    | Torque ON 상태로 변경하고 EEPROM 영역의 모든 데이터는 잠김상태로 변경됩니다 |
+{% endif %}
 
 {% if page.product_group=='dxl_ax' or page.product_group=='dxl_dx' or page.product_group=='dxl_ex' or page.product_group=='dxl_mx' or page.product_group=='dxl_rx' or page.product_group=='dxl_xl320' %}
 {% else %}
