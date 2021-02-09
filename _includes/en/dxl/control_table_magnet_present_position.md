@@ -9,3 +9,6 @@ In multi-turn mode, the range is from -28,672 to 28,672 with unit values depende
 
 **NOTE** : In multi-turn mode, Present position depends on resolution divider and multi-turn offset For more information turn to the section on Multi Turn offset and Resolution Divider.
 {: .notice}
+
+**NOTE** : In multi-turn mode, Two’s complement is applied for the negative value. For more information, please refer to [Two’s complement](https://en.wikipedia.org/wiki/Two%27s_complement) from Wikipedia.
+{: .notice}

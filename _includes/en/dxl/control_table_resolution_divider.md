@@ -18,5 +18,5 @@ For example, a DYNAMIXEL with a Real Position of 2048 with a Resolution Divider 
 
 ![](/assets/images/dxl/mx/mx-12_res_divider.jpg)
 
-**NOTE** : This feature is only applied in multi-turn mode and will be ignored in other modes.
+**NOTE** : The [Multiturn Offset(20)](#multi-turn-offset) and [Resolution Divider(22)](#resolution-divider) can be applied in Munti-turn Mode only (The condition that both CW and CCW are 0, see [CW/CCW Angle Limit(6, 8)](#cwccw-angle-limit6-8) for more operation types.), otherwise, the set value in Multiturn Offset(20) and Resolution Divider(22) is ignored in different operation types.  
 {: .notice}

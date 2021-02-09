@@ -22,7 +22,7 @@
 
 **참고** : Drive Mode(10)의 0번 비트(Normal/Reverse Mode)를 설정하면, 다이나믹셀의 기본동작 방향이 반전됩니다.  
 따라서 다이나믹셀의 {% if page.product_group=='dxl_mx2' or page.product_group=='dxl_x540' or page.product_group=='dxl_xw540' %}**Position**, **Velocity**, **Current**, **PWM**값{% else %}**Goal Position**, **Present Position**{% endif %}의 방향이 반전됩니다.  
-대칭구조의 관절이나 바퀴 구동 시스템을 구성할 때 편리하게 사용할 수 있습니다.
+대칭구조의 관절을 구성할 때 편리하게 사용할 수 있습니다
 {: .notice}
 
 {% if page.ref=='mx-106' or page.product_group=='dxl_ex' %}

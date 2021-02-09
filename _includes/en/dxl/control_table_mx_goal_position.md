@@ -1,6 +1,6 @@
-Set the DYNAMIXEL's goal position through the Goal Position(30).
+Set the DYNAMIXEL's goal position through the Goal Position(30).  
 0 to 4,095 (0xFFF) is available.  The unit is 0.088 [&deg;].
-If Goal Position is out of the range, Angle Limit Error Bit (Bit1) of Status Packet is returned as ‘1’ and Alarm is triggered as set in Alarm LED/Shutdown.
+If the Goal Position(30) is set over the [CW/CCW Angle Limit(6, 8)](#cwccw-angle-limit6-8), the Status Packet transmits Angle Limit Error Bit (0x01) via its ERROR field. In the case, providing that Angle Limit Error Bit(0x01) in [Alarm LED/Shutdown](#alarm-led17-shutdown18) is set, the Alarm LED will start blinking and the motor's output will be 0 [%].
 
 ![](/assets/images/dxl/mx/mx_position.png)  
 
