@@ -10,7 +10,7 @@
 
 {% include en/dxl/pinout_warning.md %}
 
-**WARNING**: Before operating DYNAMIXEL PRO and DYNAMIXEL-P series, please supply power through 24V power port.
+**WARNING**: Before operating DYNAMIXEL PRO and DYNAMIXEL-P, please supply power through 24V power port.
 {: .notice--warning}
 
 [MOLEX 50-37-5043]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0050375043_CRIMP_HOUSINGS.xml

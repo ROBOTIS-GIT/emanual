@@ -13,7 +13,7 @@ Generally, Max Torque of the Performance Graph is less than the Stall Torque.
 {% endunless %}
 - Do not connect or disconnect DYNAMIXEL when power is being supplied.
 {% if page.product_group=='dxl_pro' or page.product_group=='dxl_pro_a' or page.product_group=='dxl_p' or page.ref=='xh430-v210' or page.ref=='xh430-v350'or page.ref=='xh540-v150' or page.ref=='xh540-v270' %}
-- In case of DYNAMIXEL PRO and DYNAMIXEL-P series, please supply power through 24V power port.
+- In case of DYNAMIXEL PRO and DYNAMIXEL-P, please supply power through 24V power port.
 {% else %}
 {% endif %}
 
