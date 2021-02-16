@@ -9,76 +9,34 @@ main:
       titlekr: "다이나믹셀-P"
       url: /dxl/p/
       children:
-      - title: "PH42-020-S300-R (H42P)"
-        titlekr: "PH42-020-S300-R (H42P)"
-        url: /dxl/p/ph42-020-s300-r/
-      - title: "PH54-100-S500-R (H54P)"
-        titlekr: "PH54-100-S500-R (H54P)"
-        url: /dxl/p/ph54-100-s500-r/
       - title: "PH54-200-S500-R (H54P)"
         titlekr: "PH54-200-S500-R (H54P)"
         url: /dxl/p/ph54-200-s500-r/
-      - title: "PM42-010-S260-R (M42P)"
-        titlekr: "PM42-010-S260-R (M42P)"
-        url: /dxl/p/pm42-010-s260-r/
-      - title: "PM54-040-S250-R (M54P)"
-        titlekr: "PM54-040-S250-R (M54P)"
-        url: /dxl/p/pm54-040-s250-r/
+      - title: "PH54-100-S500-R (H54P)"
+        titlekr: "PH54-100-S500-R (H54P)"
+        url: /dxl/p/ph54-100-s500-r/
+      - title: "PH42-020-S300-R (H42P)"
+        titlekr: "PH42-020-S300-R (H42P)"
+        url: /dxl/p/ph42-020-s300-r/
       - title: "PM54-060-S250-R (M54P)"
         titlekr: "PM54-060-S250-R (M54P)"
         url: /dxl/p/pm54-060-s250-r/
+      - title: "PM54-040-S250-R (M54P)"
+        titlekr: "PM54-040-S250-R (M54P)"
+        url: /dxl/p/pm54-040-s250-r/
+      - title: "PM42-010-S260-R (M42P)"
+        titlekr: "PM42-010-S260-R (M42P)"
+        url: /dxl/p/pm42-010-s260-r/
     - title: "X Series"
       titlekr: "X 시리즈"
       url: /dxl/x/
       children:
-      - title: "XL-320"
-        titlekr: "XL-320"
-        url: /dxl/x/xl320/
-      - title: "XL330-M077"
-        titlekr: "XL330-M077"
-        url: /dxl/x/xl330-m077/
-      - title: "XL330-M288"
-        titlekr: "XL330-M288"
-        url: /dxl/x/xl330-m288/
-      - title: "XL430-W250"
-        titlekr: "XL430-W250"
-        url: /dxl/x/xl430-w250/
-      - title: "2XL430-W250"
-        titlekr: "2XL430-W250"
-        url: /dxl/x/2xl430-w250/
-      - title: "XC430-W150"
-        titlekr: "XC430-W150"
-        url: /dxl/x/xc430-w150/
-      - title: "XC430-W240"
-        titlekr: "XC430-W240"
-        url: /dxl/x/xc430-w240/
-      - title: "2XC430-W250"
-        titlekr: "2XC430-W250"
-        url: /dxl/x/2xc430-w250/
-      - title: "XM430-W210"
-        titlekr: "XM430-W210"
-        url: /dxl/x/xm430-w210/
-      - title: "XM430-W350"
-        titlekr: "XM430-W350"
-        url: /dxl/x/xm430-w350/
-      - title: "XH430-W210"
-        titlekr: "XH430-W210"
-        url: /dxl/x/xh430-w210/
-      - title: "XH430-W350"
-        titlekr: "XH430-W350"
-        url: /dxl/x/xh430-w350/
-      - title: "XH430-V210"
-        titlekr: "XH430-V210"
-        url: /dxl/x/xh430-v210/
-      - title: "XH430-V350"
-        titlekr: "XH430-V350"
-        url: /dxl/x/xh430-v350/
-      - title: "XM540-W150"
-        titlekr: "XM540-W150"
-        url: /dxl/x/xm540-w150/
-      - title: "XM540-W270"
-        titlekr: "XM540-W270"
-        url: /dxl/x/xm540-w270/
+      - title: "XW540-T140"
+        titlekr: "XW540-T140"
+        url: /dxl/x/xw540-t140/
+      - title: "XW540-T260"
+        titlekr: "XW540-T260"
+        url: /dxl/x/xw540-t260/        
       - title: "XH540-W150"
         titlekr: "XH540-W150"
         url: /dxl/x/xh540-w150/
@@ -90,50 +48,92 @@ main:
         url: /dxl/x/xh540-v150/
       - title: "XH540-V270"
         titlekr: "XH540-V270"
-        url: /dxl/x/xh540-v270/
-      - title: "XW540-T140"
-        titlekr: "XW540-T140"
-        url: /dxl/x/xw540-t140/
-      - title: "XW540-T260"
-        titlekr: "XW540-T260"
-        url: /dxl/x/xw540-t260/
+        url: /dxl/x/xh540-v270/        
+      - title: "XH430-W210"
+        titlekr: "XH430-W210"
+        url: /dxl/x/xh430-w210/
+      - title: "XH430-W350"
+        titlekr: "XH430-W350"
+        url: /dxl/x/xh430-w350/
+      - title: "XH430-V210"
+        titlekr: "XH430-V210"
+        url: /dxl/x/xh430-v210/
+      - title: "XH430-V350"
+        titlekr: "XH430-V350"
+        url: /dxl/x/xh430-v350/        
+      - title: "XM540-W150"
+        titlekr: "XM540-W150"
+        url: /dxl/x/xm540-w150/
+      - title: "XM540-W270"
+        titlekr: "XM540-W270"
+        url: /dxl/x/xm540-w270/        
+      - title: "XM430-W210"
+        titlekr: "XM430-W210"
+        url: /dxl/x/xm430-w210/
+      - title: "XM430-W350"
+        titlekr: "XM430-W350"
+        url: /dxl/x/xm430-w350/        
+      - title: "2XC430-W250"
+        titlekr: "2XC430-W250"
+        url: /dxl/x/2xc430-w250/            
+      - title: "XC430-W150"
+        titlekr: "XC430-W150"
+        url: /dxl/x/xc430-w150/
+      - title: "XC430-W240"
+        titlekr: "XC430-W240"
+        url: /dxl/x/xc430-w240/        
+      - title: "2XL430-W250"
+        titlekr: "2XL430-W250"
+        url: /dxl/x/2xl430-w250/      
+      - title: "XL430-W250"
+        titlekr: "XL430-W250"
+        url: /dxl/x/xl430-w250/
+      - title: "XL330-M077"
+        titlekr: "XL330-M077"
+        url: /dxl/x/xl330-m077/
+      - title: "XL330-M288"
+        titlekr: "XL330-M288"
+        url: /dxl/x/xl330-m288/      
+      - title: "XL-320"
+        titlekr: "XL-320"
+        url: /dxl/x/xl320/
     - title: "MX Series"
       titlekr: "MX 시리즈"
       url: /dxl/mx/
       children:
-      - title: "MX-12W"
-        titlekr: "MX-12W"
-        url: /dxl/mx/mx-12w/
-      - title: "MX-28T/R/AT/AR"
-        titlekr: "MX-28T/R/AT/AR"
-        url: /dxl/mx/mx-28/
-      - title: "MX-64T/R/AT/AR"
-        titlekr: "MX-64T/R/AT/AR"
-        url: /dxl/mx/mx-64/
-      - title: "MX-106T/R"
-        titlekr: "MX-106T/R"
-        url: /dxl/mx/mx-106/
-      - title: "MX-28T/R/AT/AR(2.0)"
-        titlekr: "MX-28T/R/AT/AR(2.0)"
-        url: /dxl/mx/mx-28-2/
+      - title: "MX-106T/R(2.0)"
+        titlekr: "MX-106T/R(2.0)"
+        url: /dxl/mx/mx-106-2/      
       - title: "MX-64T/R/AT/AR(2.0)"
         titlekr: "MX-64T/R/AT/AR(2.0)"
         url: /dxl/mx/mx-64-2/
-      - title: "MX-106T/R(2.0)"
-        titlekr: "MX-106T/R(2.0)"
-        url: /dxl/mx/mx-106-2/
+      - title: "MX-28T/R/AT/AR(2.0)"
+        titlekr: "MX-28T/R/AT/AR(2.0)"
+        url: /dxl/mx/mx-28-2/
+      - title: "MX-106T/R"
+        titlekr: "MX-106T/R"
+        url: /dxl/mx/mx-106/
+      - title: "MX-64T/R/AT/AR"
+        titlekr: "MX-64T/R/AT/AR"
+        url: /dxl/mx/mx-64/
+      - title: "MX-28T/R/AT/AR"
+        titlekr: "MX-28T/R/AT/AR"
+        url: /dxl/mx/mx-28/
+      - title: "MX-12W"
+        titlekr: "MX-12W"
+        url: /dxl/mx/mx-12w/
     - title: "AX Series"
       titlekr: "AX 시리즈"
       children:
-      - title: "AX-12W"
-        titlekr: "AX-12W"
-        url: /dxl/ax/ax-12w/
-      - title: "AX-12/12+/12A"
-        titlekr: "AX-12/12+/12A"
-        url: /dxl/ax/ax-12a/
       - title: "AX-18F/18A"
         titlekr: "AX-18F/18A"
         url: /dxl/ax/ax-18a/
+      - title: "AX-12/12+/12A"
+        titlekr: "AX-12/12+/12A"
+        url: /dxl/ax/ax-12a/
+      - title: "AX-12W"
+        titlekr: "AX-12W"
+        url: /dxl/ax/ax-12w/
     - title: "DYNAMIXEL Protocol 1.0"
       titlekr: "다이나믹셀 프로토콜 1.0"
       url: /dxl/protocol1/
@@ -233,35 +233,6 @@ main:
     url: /platform/
     urlkr: /platform/
     children:
-    - title: "ROBOTIS OP"
-      titlekr: "로보티즈 OP"
-      url: /platform/op/getting_started/
-      children:
-      - title: "ROBOTIS OP3"
-        titlekr: "로보티즈 OP3"
-        url: /platform/op3/introduction/
-      - title: "*ROBOTIS OP"
-        titlekr: "*로보티즈 OP"
-        url: /platform/op/getting_started/
-      - title: "*ROBOTIS OP2"
-        titlekr: "*로보티즈 OP2"
-        url: /platform/op2/getting_started/
-    - title: "Robot Hands"
-      titlekr: "로봇핸드"
-      children:
-      - title: "RH-P12-RN(A)"
-        titlekr: "RH-P12-RN(A)"
-        url: /platform/rh_p12_rna/
-      - title: "RH-P12-RN-UR"
-        titlekr: "RH-P12-RN-UR"
-        url: /platform/rh_p12_rn_ur/
-      - titlekr: "*로봇핸드 RX28"
-        url: /platform/robothand_rx28/
-      - titlekr: "*로봇핸드 MX28"
-        url: /platform/robothand_mx28/
-    - title: "THORMANG3"
-      titlekr: "똘망3"
-      url: /platform/thormang3/introduction/
     - title: "TurtleBot3"
       titlekr: "터틀봇3"
       url: /platform/turtlebot3/overview/
@@ -278,6 +249,35 @@ main:
       - title: "*Manipulator-H"
         titlekr: "*Manipulator-H"
         url: /platform/manipulator_h/introduction/
+    - title: "Robot Hands"
+      titlekr: "로봇핸드"
+      children:
+      - title: "RH-P12-RN(A)"
+        titlekr: "RH-P12-RN(A)"
+        url: /platform/rh_p12_rna/
+      - title: "RH-P12-RN-UR"
+        titlekr: "RH-P12-RN-UR"
+        url: /platform/rh_p12_rn_ur/
+      - titlekr: "*로봇핸드 RX28"
+        url: /platform/robothand_rx28/
+      - titlekr: "*로봇핸드 MX28"
+      url: /platform/robothand_mx28/
+    - title: "ROBOTIS OP"
+      titlekr: "로보티즈 OP"
+      url: /platform/op/getting_started/
+      children:
+      - title: "ROBOTIS OP3"
+        titlekr: "로보티즈 OP3"
+        url: /platform/op3/introduction/
+      - title: "*ROBOTIS OP"
+        titlekr: "*로보티즈 OP"
+        url: /platform/op/getting_started/
+      - title: "*ROBOTIS OP2"
+        titlekr: "*로보티즈 OP2"
+        url: /platform/op2/getting_started/
+    - title: "THORMANG3"
+      titlekr: "똘망3"
+      url: /platform/thormang3/introduction/
   - title: "EDUCATIONAL </br> KITS"
     titlekr: "교육용 키트"
     url: /edu/
@@ -731,26 +731,26 @@ all-dynamixel:
     url: /dxl/#x-series
     urlkr: /dxl/#x-시리즈
     children:
-      - title: "XL Series"
-        titlekr: "XL 시리즈"
-        url: /dxl/#xl-series
-        urlkr: /dxl/#xl-시리즈
-      - title: "XC Series"
-        titlekr: "XC 시리즈"
-        url: /dxl/#xc-series
-        urlkr: /dxl/#xc-시리즈
-      - title: "XM Series"
-        titlekr: "XM 시리즈"
-        url: /dxl/#xm-series
-        urlkr: /dxl/#xm-시리즈
-      - title: "XH Series"
-        titlekr: "XH 시리즈"
-        url: /dxl/#xh-series
-        urlkr: /dxl/#xh-시리즈
       - title: "XW Series"
         titlekr: "XW 시리즈"
         url: /dxl/#xw-series
         urlkr: /dxl/#xw-시리즈
+      - title: "XH Series"
+        titlekr: "XH 시리즈"
+        url: /dxl/#xh-series
+        urlkr: /dxl/#xh-시리즈             
+      - title: "XM Series"
+        titlekr: "XM 시리즈"
+        url: /dxl/#xm-series
+        urlkr: /dxl/#xm-시리즈
+      - title: "XC Series"
+        titlekr: "XC 시리즈"
+        url: /dxl/#xc-series
+        urlkr: /dxl/#xc-시리즈        
+      - title: "XL Series"
+        titlekr: "XL 시리즈"
+        url: /dxl/#xl-series
+        urlkr: /dxl/#xl-시리즈        
   - title: "MX Series"
     titlekr: "MX 시리즈"
     url: /dxl/#mx-series
@@ -759,33 +759,33 @@ all-dynamixel:
     titlekr: "AX 시리즈"
     url: /dxl/#ax-series
     urlkr: /dxl/#ax-시리즈
-  - title: "*EX Series"
-    titlekr: "*EX 시리즈"
+  - title: "EX Series"
+    titlekr: "EX 시리즈"
     url: /dxl/#ex-series
     urlkr: /dxl/#ex-시리즈
-  - title: "*DX Series"
-    titlekr: "*DX 시리즈"
+  - title: "DX Series"
+    titlekr: "DX 시리즈"
     url: /dxl/#dx-series
     urlkr: /dxl/#dx-시리즈
-  - title: "*RX Series"
-    titlekr: "*RX 시리즈"
+  - title: "RX Series"
+    titlekr: "RX 시리즈"
     url: /dxl/#rx-series
     urlkr: /dxl/#rx-시리즈
-  - title: "*DYNAMIXEL PRO"
-    titlekr: "*다이나믹셀 PRO"
+  - title: "DYNAMIXEL PRO"
+    titlekr: "다이나믹셀 PRO"
     url: /dxl/#dynamixel-pro
     urlkr: /dxl/#다이나믹셀-pro
     children:
-      - title: "*L Series"
-        titlekr: "*L 시리즈"
+      - title: "L Series"
+        titlekr: "L 시리즈"
         url: /dxl/#l-series
         urlkr: /dxl/#l-시리즈
-      - title: "*M Series"
-        titlekr: "*M 시리즈"
+      - title: "M Series"
+        titlekr: "M 시리즈"
         url: /dxl/#m-series
         urlkr: /dxl/#m-시리즈
-      - title: "*H Series"
-        titlekr: "*H 시리즈"
+      - title: "H Series"
+        titlekr: "H 시리즈"
         url: /dxl/#h-series
         urlkr: /dxl/#h-시리즈
 

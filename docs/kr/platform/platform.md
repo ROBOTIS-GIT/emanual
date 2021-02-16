@@ -8,7 +8,7 @@ sidebar:
   nav: "all-platform"
 ---
 
-**참고**: 플랫폼 로봇의 매뉴얼은 현재 영문으로만 제공됩니다.
+**참고**: 매뉴얼은 현재 영문으로만 제공됩니다 (로봇핸드 MX28/RX28 제외).
 {: .notice}
 
 # [터틀봇3](#터틀봇3)
@@ -19,15 +19,15 @@ sidebar:
 
 # [오픈매니퓰레이터](#오픈매니퓰레이터)
 
-|                                                    Manipulator-H                                                    |                                                OpenMANIPULATOR-P                                                |                                                        OpenMANIPULATOR-X                                                         |
-| :-----------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------: |
-| [![](/assets/images/platform/manipulator_h/manipulator_product.png)](/docs/en/platform/manipulator_h/introduction/) | [![](/assets/images/platform/openmanipulator_p/product_img.png)](/docs/en/platform/openmanipulator_p/overview/) | [![](/assets/images/platform/openmanipulator_x/OpenManipulator_Introduction.jpg)](/docs/en/platform/openmanipulator_x/overview/) |
+|                                                OpenMANIPULATOR-P                                                |                                                        OpenMANIPULATOR-X                                                         |                                                    Manipulator-H                                                    |
+| :-------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------: |
+| [![](/assets/images/platform/openmanipulator_p/product_img.png)](/docs/en/platform/openmanipulator_p/overview/) | [![](/assets/images/platform/openmanipulator_x/OpenManipulator_Introduction.jpg)](/docs/en/platform/openmanipulator_x/overview/) | [![](/assets/images/platform/manipulator_h/manipulator_product.png)](/docs/en/platform/manipulator_h/introduction/) |
 
 # [로보티즈 OP](#로보티즈-op)
 
-|                                       로보티즈 OP                                       |                                        로보티즈 OP2                                        |                                         로보티즈 OP3                                         |
-| :-------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------: |
-| [![](/assets/images/platform/op/op_product.jpg)](/docs/en/platform/op/getting_started/) | [![](/assets/images/platform/op2/op2_product.jpg)](/docs/en/platform/op2/getting_started/) | [![](/assets/images/platform/op3/op3_product_rev2.png)](/docs/en/platform/op3/introduction/) |
+|                                         로보티즈 OP3                                         |                                        로보티즈 OP2                                        |                                       로보티즈 OP                                       |
+|:--------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------:|
+| [![](/assets/images/platform/op3/op3_product_rev2.png)](/docs/en/platform/op3/introduction/) | [![](/assets/images/platform/op2/op2_product.jpg)](/docs/en/platform/op2/getting_started/) | [![](/assets/images/platform/op/op_product.jpg)](/docs/en/platform/op/getting_started/) |
 
 # [로봇핸드](#로봇-핸드)
 

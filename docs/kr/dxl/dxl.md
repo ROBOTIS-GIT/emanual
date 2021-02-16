@@ -43,38 +43,38 @@ sidebar:
 
 ## [XH 시리즈](#xh-시리즈)
 
-|                                                                                    XH430                                                                                     |                                                                                    XH540                                                                                     |
+|                                                                                    XH540                                                                                     |                                                                                    XH430                                                                                     |
 |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-|                                                                ![](/assets/images/dxl/x/x_series_product.png)                                                                |                                                              ![](/assets/images/dxl/x/x540-series_product.png)                                                               |
-| [XH430-W210](/docs/kr/dxl/x/xh430-w210/)<br>[XH430-W350](/docs/kr/dxl/x/xh430-w350/)<br>[XH430-V210](/docs/kr/dxl/x/xh430-v210/)<br>[XH430-V350](/docs/kr/dxl/x/xh430-v350/) | [XH540-W150](/docs/kr/dxl/x/xh540-w150/)<br>[XH540-W270](/docs/kr/dxl/x/xh540-w270/)<br>[XH540-V150](/docs/kr/dxl/x/xh540-v150/)<br>[XH540-V270](/docs/kr/dxl/x/xh540-v270/) |
+|                                                              ![](/assets/images/dxl/x/x540-series_product.png)                                                               |                                                                ![](/assets/images/dxl/x/x_series_product.png)                                                                |
+| [XH540-W150](/docs/kr/dxl/x/xh540-w150/)<br>[XH540-W270](/docs/kr/dxl/x/xh540-w270/)<br>[XH540-V150](/docs/kr/dxl/x/xh540-v150/)<br>[XH540-V270](/docs/kr/dxl/x/xh540-v270/) | [XH430-W210](/docs/kr/dxl/x/xh430-w210/)<br>[XH430-W350](/docs/kr/dxl/x/xh430-w350/)<br>[XH430-V210](/docs/kr/dxl/x/xh430-v210/)<br>[XH430-V350](/docs/kr/dxl/x/xh430-v350/) |
 
 ## [XM 시리즈](#xm-시리즈)
 
-|                                        XM430                                         |                                        XM540                                         |
+|                                        XM540                                         |                                        XM430                                         |
 |:------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------:|
-|                    ![](/assets/images/dxl/x/x_series_product.png)                    |                  ![](/assets/images/dxl/x/x540-series_product.png)                   |
-| [XM430-W210](/docs/kr/dxl/x/xm430-w210/)<br>[XM430-W350](/docs/kr/dxl/x/xm430-w350/) | [XM540-W150](/docs/kr/dxl/x/xm540-w150/)<br>[XM540-W270](/docs/kr/dxl/x/xm540-w270/) |
+|                  ![](/assets/images/dxl/x/x540-series_product.png)                   |                    ![](/assets/images/dxl/x/x_series_product.png)                    |
+| [XM540-W150](/docs/kr/dxl/x/xm540-w150/)<br>[XM540-W270](/docs/kr/dxl/x/xm540-w270/) | [XM430-W210](/docs/kr/dxl/x/xm430-w210/)<br>[XM430-W350](/docs/kr/dxl/x/xm430-w350/) |
 
 ## [XC 시리즈](#xc-시리즈)
 
-|                                        XC430                                         |                      2XC430                      |
-|:------------------------------------------------------------------------------------:|:------------------------------------------------:|
-|                     ![](/assets/images/dxl/x/xc430_product.png)                      | ![](/assets/images/dxl/x/2xc/2xc430_product.png) |
-| [XC430-W150](/docs/kr/dxl/x/xc430-w150/)<br>[XC430-W240](/docs/kr/dxl/x/xc430-w240/) |    [2XC430-W250](/docs/kr/dxl/x/2xc430-w250/)    |
+|                      2XC430                      |                                        XC430                                         |
+|:------------------------------------------------:|:------------------------------------------------------------------------------------:|
+| ![](/assets/images/dxl/x/2xc/2xc430_product.png) |                     ![](/assets/images/dxl/x/xc430_product.png)                      |
+|    [2XC430-W250](/docs/kr/dxl/x/2xc430-w250/)    | [XC430-W150](/docs/kr/dxl/x/xc430-w150/)<br>[XC430-W240](/docs/kr/dxl/x/xc430-w240/) |
 
 ## [XL 시리즈](#xl-시리즈)
 
-|                    XL-320                   |                                        XL330                                         |                      XL430                      |                       2XL430                     |
-|:-------------------------------------------:|:------------------------------------------------------------------------------------:|:-----------------------------------------------:|:------------------------------------------------:|
-| ![](/assets/images/dxl/x/xl320_product.jpg) |            ![](/assets/images/dxl/x/xl330_temp/xl330-series_product.png)             | ![](/assets/images/dxl/x/xl430_product_new.png) | ![](/assets/images/dxl/x/2xl/2xl430_product.png) |
-|       [XL-320](/docs/kr/dxl/x/xl320/)       | [XL330-M288](/docs/kr/dxl/x/xl330-m288/)<br>[XL330-M077](/docs/kr/dxl/x/xl330-m077/) |    [XL430-W250](/docs/kr/dxl/x/xl430-w250/)     |    [2XL430-W250](/docs/kr/dxl/x/2xl430-w250/)    |
+|                       2XL430                     |                      XL430                      |                                        XL330                                         |                    XL-320                   |
+|:------------------------------------------------:|:-----------------------------------------------:|:------------------------------------------------------------------------------------:|:-------------------------------------------:|
+| ![](/assets/images/dxl/x/2xl/2xl430_product.png) | ![](/assets/images/dxl/x/xl430_product_new.png) |            ![](/assets/images/dxl/x/xl330_temp/xl330-series_product.png)             | ![](/assets/images/dxl/x/xl320_product.jpg) |
+|    [2XL430-W250](/docs/kr/dxl/x/2xl430-w250/)    |    [XL430-W250](/docs/kr/dxl/x/xl430-w250/)     | [XL330-M288](/docs/kr/dxl/x/xl330-m288/)<br>[XL330-M077](/docs/kr/dxl/x/xl330-m077/) |       [XL-320](/docs/kr/dxl/x/xl320/)       |
 
 # [MX 시리즈](#mx-시리즈)
 
-|                                 MX-12W                                  |                                   MX-28T/R/AT/AR                                   |                                   MX-64T/R/AT/AR                                   |                                      MX-106T/R                                       |
-|:-----------------------------------------------------------------------:|:----------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------:|
-| [![](/assets/images/dxl/mx/mx-12_product.jpg)](/docs/kr/dxl/mx/mx-12w/) |                   ![](/assets/images/dxl/mx/mx-28ar_product.jpg)                   |                   ![](/assets/images/dxl/mx/mx-64ar_product.png)                   |                    ![](/assets/images/dxl/mx/mx-106t_product.jpg)                    |
-|                                    -                                    | [Protocol 1.0](/docs/kr/dxl/mx/mx-28/)<br>[Protocol 2.0](/docs/kr/dxl/mx/mx-28-2/) | [Protocol 1.0](/docs/kr/dxl/mx/mx-64/)<br>[Protocol 2.0](/docs/kr/dxl/mx/mx-64-2/) | [Protocol 1.0](/docs/kr/dxl/mx/mx-106/)<br>[Protocol 2.0](/docs/kr/dxl/mx/mx-106-2/) |
+|                                      MX-106T/R                                       |                                   MX-64T/R/AT/AR                                   |                                   MX-28T/R/AT/AR                                   |                                 MX-12W                                  |
+|:------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------:|:-----------------------------------------------------------------------:|
+|                    ![](/assets/images/dxl/mx/mx-106t_product.jpg)                    |                   ![](/assets/images/dxl/mx/mx-64ar_product.png)                   |                   ![](/assets/images/dxl/mx/mx-28ar_product.jpg)                   | [![](/assets/images/dxl/mx/mx-12_product.jpg)](/docs/kr/dxl/mx/mx-12w/) |
+| [Protocol 1.0](/docs/kr/dxl/mx/mx-106/)<br>[Protocol 2.0](/docs/kr/dxl/mx/mx-106-2/) | [Protocol 1.0](/docs/kr/dxl/mx/mx-64/)<br>[Protocol 2.0](/docs/kr/dxl/mx/mx-64-2/) | [Protocol 1.0](/docs/kr/dxl/mx/mx-28/)<br>[Protocol 2.0](/docs/kr/dxl/mx/mx-28-2/) |                    [MX-12W](docs/kr/dxl/mx/mx-12w/)                     |
 
 T/R/AT/AR은 사용하는 프로토콜 타입을 나타냅니다.
 
@@ -84,25 +84,21 @@ T/R/AT/AR은 사용하는 프로토콜 타입을 나타냅니다.
 
 ## MX Series (2.0)
 
-MX 시리즈는 **특정 펌웨어**에서 프로토콜 2.0을 사용할수 있습니다.
+**참고**: MX(2.0)은 프로토콜 2.0을 지원하는 MX 시리즈의 별도 펌웨어를 의미합니다. DYNAMIXEL Wizard2.0의 [펌웨어 복구](/docs/kr/software/dynamixel/dynamixel_wizard2/#펌웨어-복구) 기능을 활용하여 MX(2.0) 펌웨어로 업그레이드할 수 있습니다.
+{: .notice}
 
-- [MX-28T/R/AT/AR(2.0)](/docs/kr/dxl/mx/mx-28-2/)
-- [MX-64T/R/AT/AR(2.0)](/docs/kr/dxl/mx/mx-64-2/)
 - [MX-106T/R(2.0)](/docs/kr/dxl/mx/mx-106-2/)
+- [MX-64T/R/AT/AR(2.0)](/docs/kr/dxl/mx/mx-64-2/)
+- [MX-28T/R/AT/AR(2.0)](/docs/kr/dxl/mx/mx-28-2/)
 
-{% capture notice_01 %}
-**참고**:
-
-- MX 시리즈는 펌웨어 복구를 통해 프로토콜 2.0을 사용할 수 있습니다. 펌웨어 복구는 [다이나믹셀 위자드 2.0](/docs/kr/software/dynamixel/dynamixel_wizard2/#펌웨어-복구) 또는 [로보플러스 매니저 2.0](/docs/kr/software/rplus2/manager/#펌웨어-복구)를 참조하세요.
-- 프로토콜 2.0으로 펌웨어 복구 시, Secondary ID, Drive Mode, Bus Watchdog 등의 기능을 사용할 수 있습니다.
-{% endcapture %}
-<div class="notice">{{ notice_01| markdownify }}</div>
+**참고**: 프로토콜 2.0으로 펌웨어 복구 시, Secondary ID, Drive Mode, Bus Watchdog 등의 기능을 사용할 수 있습니다.
+{: .notice}
 
 # [AX 시리즈](#ax-시리즈)
 
-|                                  AX-12W                                  |                              AX-12/12+/12A                               |                                AX-18F/18A                                |
+|                                AX-18F/18A                                |                              AX-12/12+/12A                               |                                  AX-12W                                  |
 |:------------------------------------------------------------------------:|:------------------------------------------------------------------------:|:------------------------------------------------------------------------:|
-| [![](/assets/images/dxl/ax/ax-12w_product.jpg)](/docs/kr/dxl/ax/ax-12w/) | [![](/assets/images/dxl/ax/ax-12a_product.png)](/docs/kr/dxl/ax/ax-12a/) | [![](/assets/images/dxl/ax/ax-18a_product.png)](/docs/kr/dxl/ax/ax-18a/) |
+| [![](/assets/images/dxl/ax/ax-18a_product.png)](/docs/kr/dxl/ax/ax-18a/) | [![](/assets/images/dxl/ax/ax-12a_product.png)](/docs/kr/dxl/ax/ax-12a/) | [![](/assets/images/dxl/ax/ax-12w_product.jpg)](/docs/kr/dxl/ax/ax-12w/) |
 
 # [EX 시리즈](#ex-시리즈)
 

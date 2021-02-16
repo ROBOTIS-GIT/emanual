@@ -44,38 +44,38 @@ sidebar:
 
 ## [XH Series](#xh-series)
 
-|                                                                                    XH430                                                                                     |                                                                                    XH540                                                                                     |
+|                                                                                    XH540                                                                                     |                                                                                    XH430                                                                                     |
 |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-|                                                                ![](/assets/images/dxl/x/x_series_product.png)                                                                |                                                              ![](/assets/images/dxl/x/x540-series_product.png)                                                               |
-| [XH430-W210](/docs/en/dxl/x/xh430-w210/)<br>[XH430-W350](/docs/en/dxl/x/xh430-w350/)<br>[XH430-V210](/docs/en/dxl/x/xh430-v210/)<br>[XH430-V350](/docs/en/dxl/x/xh430-v350/) | [XH540-W150](/docs/en/dxl/x/xh540-w150/)<br>[XH540-W270](/docs/en/dxl/x/xh540-w270/)<br>[XH540-V150](/docs/en/dxl/x/xh540-v150/)<br>[XH540-V270](/docs/en/dxl/x/xh540-v270/) |
+|                                                              ![](/assets/images/dxl/x/x540-series_product.png)                                                               |                                                                ![](/assets/images/dxl/x/x_series_product.png)                                                                |
+| [XH540-W150](/docs/en/dxl/x/xh540-w150/)<br>[XH540-W270](/docs/en/dxl/x/xh540-w270/)<br>[XH540-V150](/docs/en/dxl/x/xh540-v150/)<br>[XH540-V270](/docs/en/dxl/x/xh540-v270/) | [XH430-W210](/docs/en/dxl/x/xh430-w210/)<br>[XH430-W350](/docs/en/dxl/x/xh430-w350/)<br>[XH430-V210](/docs/en/dxl/x/xh430-v210/)<br>[XH430-V350](/docs/en/dxl/x/xh430-v350/) |
 
 ## [XM Series](#xm-series)
 
-|                                        XM430                                         |                                        XM540                                         |
+|                                        XM540                                         |                                        XM430                                         |
 |:------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------:|
-|                    ![](/assets/images/dxl/x/x_series_product.png)                    |                  ![](/assets/images/dxl/x/x540-series_product.png)                   |
-| [XM430-W210](/docs/en/dxl/x/xm430-w210/)<br>[XM430-W350](/docs/en/dxl/x/xm430-w350/) | [XM540-W150](/docs/en/dxl/x/xm540-w150/)<br>[XM540-W270](/docs/en/dxl/x/xm540-w270/) |
+|                  ![](/assets/images/dxl/x/x540-series_product.png)                   |                    ![](/assets/images/dxl/x/x_series_product.png)                    |
+| [XM540-W150](/docs/en/dxl/x/xm540-w150/)<br>[XM540-W270](/docs/en/dxl/x/xm540-w270/) | [XM430-W210](/docs/en/dxl/x/xm430-w210/)<br>[XM430-W350](/docs/en/dxl/x/xm430-w350/) |
 
 ## [XC Series](#xc-series)
 
-|                                        XC430                                         |                      2XC430                      |
-|:------------------------------------------------------------------------------------:|:------------------------------------------------:|
-|                     ![](/assets/images/dxl/x/xc430_product.png)                      | ![](/assets/images/dxl/x/2xc/2xc430_product.png) |
-| [XC430-W150](/docs/en/dxl/x/xc430-w150/)<br>[XC430-W240](/docs/en/dxl/x/xc430-w240/) |    [2XC430-W250](/docs/en/dxl/x/2xc430-w250/)    |
+|                      2XC430                      |                                        XC430                                         |
+|:------------------------------------------------:|:------------------------------------------------------------------------------------:|
+| ![](/assets/images/dxl/x/2xc/2xc430_product.png) |                     ![](/assets/images/dxl/x/xc430_product.png)                      |
+|    [2XC430-W250](/docs/en/dxl/x/2xc430-w250/)    | [XC430-W150](/docs/en/dxl/x/xc430-w150/)<br>[XC430-W240](/docs/en/dxl/x/xc430-w240/) |
 
 ## [XL Series](#xl-series)
 
-|                   XL-320                    |                                        XL330                                         |                      XL430                      |                      2XL430                      |
-|:-------------------------------------------:|:------------------------------------------------------------------------------------:|:-----------------------------------------------:|:------------------------------------------------:|
-| ![](/assets/images/dxl/x/xl320_product.jpg) |            ![](/assets/images/dxl/x/xl330_temp/xl330-series_product.png)             | ![](/assets/images/dxl/x/xl430_product_new.png) | ![](/assets/images/dxl/x/2xl/2xl430_product.png) |
-|       [XL-320](/docs/en/dxl/x/xl320/)       | [XL330-M288](/docs/en/dxl/x/xl330-m288/)<br>[XL330-M077](/docs/en/dxl/x/xl330-m077/) |    [XL430-W250](/docs/en/dxl/x/xl430-w250/)     |    [2XL430-W250](/docs/en/dxl/x/2xl430-w250/)    |
+|                      2XL430                      |                      XL430                      |                                        XL330                                         |                   XL-320                    |
+|:------------------------------------------------:|:-----------------------------------------------:|:------------------------------------------------------------------------------------:|:-------------------------------------------:|
+| ![](/assets/images/dxl/x/2xl/2xl430_product.png) | ![](/assets/images/dxl/x/xl430_product_new.png) |            ![](/assets/images/dxl/x/xl330_temp/xl330-series_product.png)             | ![](/assets/images/dxl/x/xl320_product.jpg) |
+|    [2XL430-W250](/docs/en/dxl/x/2xl430-w250/)    |    [XL430-W250](/docs/en/dxl/x/xl430-w250/)     | [XL330-M288](/docs/en/dxl/x/xl330-m288/)<br>[XL330-M077](/docs/en/dxl/x/xl330-m077/) |       [XL-320](/docs/en/dxl/x/xl320/)       |
 
 # [MX Series](#mx-series)
 
-|                                 MX-12W                                  |                     MX-28                      |                     MX-64                      |                     MX-106                     |
-|:-----------------------------------------------------------------------:|:----------------------------------------------:|:----------------------------------------------:|:----------------------------------------------:|
-| [![](/assets/images/dxl/mx/mx-12_product.jpg)](/docs/en/dxl/mx/mx-12w/) | ![](/assets/images/dxl/mx/mx-28ar_product.jpg) | ![](/assets/images/dxl/mx/mx-64ar_product.png) | ![](/assets/images/dxl/mx/mx-106t_product.jpg) |
-|                                    -                                    |    [MX-28T/R/AT/AR](/docs/en/dxl/mx/mx-28/)    |    [MX-64T/R/AT/AR](/docs/en/dxl/mx/mx-64/)    |      [MX-106T/R](/docs/en/dxl/mx/mx-106/)      |
+|                     MX-106                     |                     MX-64                      |                     MX-28                      |                                 MX-12W                                  |
+|:----------------------------------------------:|:----------------------------------------------:|:----------------------------------------------:|:-----------------------------------------------------------------------:|
+| ![](/assets/images/dxl/mx/mx-106t_product.jpg) | ![](/assets/images/dxl/mx/mx-64ar_product.png) | ![](/assets/images/dxl/mx/mx-28ar_product.jpg) | [![](/assets/images/dxl/mx/mx-12_product.jpg)](/docs/en/dxl/mx/mx-12w/) |
+|      [MX-106T/R](/docs/en/dxl/mx/mx-106/)      |    [MX-64T/R/AT/AR](/docs/en/dxl/mx/mx-64/)    |    [MX-28T/R/AT/AR](/docs/en/dxl/mx/mx-28/)    |                    [MX-12W](docs/en/dxl/mx/mx-12w/)                     |
 
 T/R/AT/AR represents protocol types as following:
 
@@ -85,24 +85,21 @@ T/R/AT/AR represents protocol types as following:
 
 ## MX Series (2.0)
 
-MX series can use Protocol 2.0 by using a particular firmware version.
+**NOTE**: MX(2.0) is a special firmware for the DYNAMIXEL MX series supporting the DYNAMIXEL Protocol 2.0. The MX(2.0) firmware can be upgraded from the Protocol 1.0 by using the [Firmware Recovery](/docs/en/software/dynamixel/dynamixel_wizard2/) in DYNAMIXEL Wizard 2.0.
+{: .notice}
 
-- [MX-28T/R/AT/AR(2.0)](/docs/en/dxl/mx/mx-28-2/)
-- [MX-64T/R/AT/AR(2.0)](/docs/en/dxl/mx/mx-64-2/)
 - [MX-106T/R(2.0)](/docs/en/dxl/mx/mx-106-2/)
+- [MX-64T/R/AT/AR(2.0)](/docs/en/dxl/mx/mx-64-2/)
+- [MX-28T/R/AT/AR(2.0)](/docs/en/dxl/mx/mx-28-2/)
 
-{% capture notice_01 %}
-**NOTE**: Read the following to ensure proper use of MX series(2.0) with Protocol 2.0.
-- In order to use Protocol 2.0 with MX series, perform the **Firmware Recovery** of the [DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/#firmware-recovery) or [R+ Manager 2.0](/docs/en/software/rplus2/manager/#firmware-recovery).
-- MX series with Protocol 2.0 supports various Operating Modes, Secondary ID, Drive Mode, Bus Watchdog and more.
-{% endcapture %}
-<div class="notice">{{ notice_01| markdownify }}</div>
+**NOTE**: MX(2.0) supports various Operating Modes, Secondary ID, Drive Mode, Bus Watchdog and more.
+{: .notice}
 
 # [AX Series](#ax-series)
 
-|                                  AX-12W                                  |                              AX-12/12+/12A                               |                                AX-18F/18A                                |
+|                                AX-18F/18A                                |                              AX-12/12+/12A                               |                                  AX-12W                                  |
 |:------------------------------------------------------------------------:|:------------------------------------------------------------------------:|:------------------------------------------------------------------------:|
-| [![](/assets/images/dxl/ax/ax-12w_product.jpg)](/docs/en/dxl/ax/ax-12w/) | [![](/assets/images/dxl/ax/ax-12a_product.png)](/docs/en/dxl/ax/ax-12a/) | [![](/assets/images/dxl/ax/ax-18a_product.png)](/docs/en/dxl/ax/ax-18a/) |
+| [![](/assets/images/dxl/ax/ax-18a_product.png)](/docs/en/dxl/ax/ax-18a/) | [![](/assets/images/dxl/ax/ax-12a_product.png)](/docs/en/dxl/ax/ax-12a/) | [![](/assets/images/dxl/ax/ax-12w_product.jpg)](/docs/en/dxl/ax/ax-12w/) |
 
 # [EX Series](#ex-series)
 
