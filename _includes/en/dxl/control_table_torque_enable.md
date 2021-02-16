@@ -22,6 +22,7 @@
 |     1      | Torque On   |
 
 {% else %}
+
 Torque Enable(64) determines Torque ON/OFF. Writing ‘1’ to Toque Enable's address will turn on the Torque and all Data in the EEPROM area will be locked.
 
 |   Value    | Description                    |
@@ -32,7 +33,9 @@ Torque Enable(64) determines Torque ON/OFF. Writing ‘1’ to Toque Enable's ad
 {% endif %}
 
 {% if page.product_group=='dxl_ax' or page.product_group=='dxl_dx' or page.product_group=='dxl_ex' or page.product_group=='dxl_mx' or page.product_group=='dxl_rx' or page.product_group=='dxl_xl320' %}
+
 {% else %}
+
 **NOTE** : [Present Position({{ present_position }})] can be reset when [Operating Mode(11)] and [Torque Enable({{ torque_enable }})] are updated. For more details, please refer to the [Homing Offset({{ homing_offset }})] and [Present Position({{ present_position }})].
 {: .notice}
 {% endif %}

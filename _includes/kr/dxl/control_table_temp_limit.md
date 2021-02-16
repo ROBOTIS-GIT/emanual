@@ -1,7 +1,20 @@
+{% if page.product_group=='dxl_ax' or page.product_group=='dxl_dx' or page.product_group=='dxl_ex' or page.product_group=='dxl_rx' or page.product_group=='dxl_mx' %} 
+
+{% assign shutdown = "Alarm LED(17)/Shutdown(18)" %}
+
+{% elsif page.product_group == 'dxl_xl320' %}
+
+{% assign shutdown = "Shutdown(18)" %}
+
+{% else %}
+
+{% assign shutdown = "Alarm LED(17)/Shutdown(18)" %} 
+
+{% endif %}
 
 동작 온도의 상한 값입니다.  
 예를 들어, 값이 80이면 80 &deg;C 입니다.
-내부 온도가 Temperature Limit(11)을 넘으면 Status Packet은 ERROR 필드를 통해서 Overheating Error Bit (Bit2)를 전송합니다. [Alarm LED(17)/Shutdown(18)](#alarm-led17-shutdown18)의 플래그(flag)중 과열(Overheating)이 설정되어 있다면 Alarm LED가 점멸하고, 모터 출력은 0 [%]로 변경됩니다.
+내부 온도가 Temperature Limit(11)을 넘으면 Status Packet은 ERROR 필드를 통해서 Overheating Error Bit (Bit2)를 전송합니다. [{{ shutdown }}](#shutdown)의 플래그(flag)중 과열(Overheating)이 설정되어 있다면 Alarm LED가 점멸하고, 모터 출력은 0 [%]로 변경됩니다.
 
 |     단위      |  범위   |
 |:-------------:|:-------:|
