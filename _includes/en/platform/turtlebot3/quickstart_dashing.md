@@ -71,6 +71,7 @@ $ sudo apt install python3-vcstool
 
 ```bash
 $ source /opt/ros/dashing/setup.bash
+$ sudo apt install ros-dashing-dynamixel-sdk
 $ sudo apt install ros-dashing-turtlebot3-msgs
 $ sudo apt install ros-dashing-turtlebot3
 ```
