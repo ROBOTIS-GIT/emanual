@@ -67,6 +67,7 @@ $ sudo apt install python3-vcstool
 
 ```bash
 $ source /opt/ros/foxy/setup.bash
+$ sudo apt install ros-foxy-dynamixel-sdk
 $ sudo apt install ros-foxy-turtlebot3-msgs
 $ sudo apt install ros-foxy-turtlebot3
 ```

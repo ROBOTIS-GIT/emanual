@@ -1,9 +1,50 @@
 
 ## [OpenCR Setup](#opencr-setup)
 
-As of now, OpenCR firmware for Noetic can be uploaded via Arduino IDE from PC. We'll soon release the binary firmware.
-{: .notice--info}
+1. Connect the [OpenCR] to the Rasbperry Pi using the micro USB cable.
 
+2. Install required packages on the Raspberry Pi to upload the [OpenCR] firmware.
+  ```bash
+$ sudo dpkg --add-architecture armhf
+$ sudo apt-get update
+$ sudo apt-get install libc6:armhf
+  ```
+
+3. Depending on the platform, use either `burger` or `waffle` for the **OPENCR_MODEL** name.
+  ```bash
+$ export OPENCR_PORT=/dev/ttyACM0
+$ export OPENCR_MODEL=burger_noetic
+$ rm -rf ./opencr_update.tar.bz2
+  ```
+
+4. Download the firmware and loader, then extract the file.
+  ```bash
+$ wget https://github.com/ROBOTIS-GIT/OpenCR-Binaries/raw/master/turtlebot3/ROS1/latest/opencr_update.tar.bz2 
+$ tar -xvf opencr_update.tar.bz2 
+  ```
+
+5. Upload firmware to the OpenCR.
+  ```bash
+$ cd ./opencr_update
+$ ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr
+  ```  
+
+6. A successful firmware upload for TurtleBot3 Burger will look like below.  
+  ![](/assets/images/platform/turtlebot3/opencr/shell01.png)
+
+7. If firmware upload fails, try uploading with the recovery mode. Below sequence activates the recovery mode of OpenCR. Under the recovery mode, the `STATUS` led of [OpenCR] will blink periodically.
+  - Hold down the `PUSH SW2` button.
+  - Press the `Reset` button.
+  - Release the `Reset` button.
+  - Release the `PUSH SW2` button.
+  ![](/assets/images/parts/controller/opencr10/bootloader_19.png)
+
+
+<details>
+<summary id="summary_for_foreins" style="outline: inherit;">
+![](/assets/click_here.png) Click here to expand more details about the firmware upload using **Arduino IDE**
+{: .notice--success}
+</summary>
 Please be aware that [OpenCR] board manager **does not support Arduino IDE on ARM based SBC such as Raspberry Pi or NVidia Jetson**.  
 In order to upload the [OpenCR] firmware using Arduino IDE, please follow the below instructions on your PC.
 {: .notice--danger}
@@ -50,7 +91,7 @@ https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCR/master/arduino/opencr_relea
   - Release the `Reset` button.
   - Release the `PUSH SW2` button.
   ![](/assets/images/parts/controller/opencr10/bootloader_19.png)
-
+</details>
 
 ### [OpenCR Test](#opencr-test)
 
