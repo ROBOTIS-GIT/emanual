@@ -10,9 +10,12 @@ Select a desired DYNAMIXEL protocol type according to your application.
 |   Value    |                  Description                   |                           Compatible DYNAMIXEL                            |
 |:----------:|:------------------------------------------------:|:-------------------------------------------------------------------------:|
 | 2(default) | [DYNAMIXEL Protocol 2.0](#dynamixel-protocol-20) |                 [Protocol Compatibility table]{: .popup}                  |
-|     20     |             [S.BUS](#sbus-protocol)              | Protocol controlling RC servos commonly used by Futaba and FrSky products |
-|     21     |              [iBUS](#ibus-protocol)              |          Protocol controlling RC servos used by FlySKy products           |
+|     20     |             [S.BUS (Partially Supported)](#sbus-protocolpartially-supported)              | Protocol controlling RC servos commonly used by Futaba and FrSky products |
+|     21     |              [iBUS (Partially Supported)](#ibus-protocolpartially-supported)              |          Protocol controlling RC servos used by FlySKy products           |
 |     22     |            [RC-PWM](#rc-pwm-protocol)            |                       PWM signal used by RC servos                        |
+
+**WARNING:** S.Bus and iBUS are **partially** supported.
+{: .notice--danger}
 
 {% capture protocol_note_01 %}
 **NOTE**
@@ -25,7 +28,10 @@ Select a desired DYNAMIXEL protocol type according to your application.
 
 DYNAMIXEL Protocol 2.0 is a basic communication protocol to communicate between DYNAMIXELs. See [Protocol 2.0] for more detailed information.
 
-#### [S.Bus Protocol](#sbus-protocol)
+#### [S.Bus Protocol(Partially Supported)](#sbus-protocolpartially-supported)
+
+XL330 series support a **partial** S.Bus Protocol, and the supported features are described in the following.
+{: .notice--warning}
 
 The S.Bus Protocol is a communication protocol commonly used by Futaba and FrSky RC servo products.
 - Multiple DYNAMIXELs, the maximum is 16, can be wired via signal cables. Notice that S.BUS protocol only allows for use **the range of [ID(7)] from 1 to 16**.
@@ -38,7 +44,10 @@ The S.Bus Protocol is a communication protocol commonly used by Futaba and FrSky
 **NOTE**: The maximum speed at the Velocity Control Mode relies on its [Velocity Limit(44)]. By configuring [Moving Threshold(24)], it is possible to set a motionless point, where The [Goal Velocity(104)] is 0.
 {: .notice}
 
-#### [iBUS Protocol](#ibus-protocol)
+#### [iBUS Protocol(Partially Supported)](#ibus-protocolpartially-supported)
+
+XL330 series support a **partial** iBUS Protocol, and the supported features are described in the following.
+{: .notice--warning}
 
 The iBUS Protocol is a communication protocol commonly used by FrSky RC servo products. 
 - Multiple DYNAMIXELs, the maximum is 14, can be wired via signal cables. Notice that S.BUS protocol only allows for use **the range of [ID(7)] from 1 to 14**.

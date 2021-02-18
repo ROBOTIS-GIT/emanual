@@ -8,9 +8,12 @@
 |    값     |                        설명                        |                       호환되는 장치                       |
 |:---------:|:--------------------------------------------------:|:---------------------------------------------------------:|
 | 2(기본값) | [DYNAMIXEL Protocol 2.0](#dynamixel-protocol-20) |             [프로토콜 호환표]{: .popup} 참고              |
-|    20     |              [S.BUS](#sbus-프로토콜)               | Futaba 와 FrSky 제품에서 사용하는 RC 규격의 통신 프로토콜 |
-|    21     |               [iBUS](#ibus-프로토콜)               |     FlySky 제품에서 사용하는 RC 규격의 통신 프로토콜      |
+|    20     |              [S.BUS(일부 지원)](#sbus-프로토콜일부-지원)               | Futaba 와 FrSky 제품에서 사용하는 RC 규격의 통신 프로토콜 |
+|    21     |               [iBUS(일부 지원)](#ibus-프로토콜일부-지원)               |     FlySky 제품에서 사용하는 RC 규격의 통신 프로토콜      |
 |    22     |             [RC-PWM](#rc-pwm-프로토콜)             |             RC 서보모터에서 이용한는 PWM 신호             |
+
+**주의:** S.Bus와 iBUS의 **일부** 기능을 지원합니다.
+{: .notice--danger}
 
 {% capture protocol_note_01 %}
 **참고**
@@ -25,9 +28,12 @@
 
 다이나믹셀간의 데이터 통신을 위한 기본적인 통신 프로토콜 입니다. 
 
-자세한 내용은 [프로토콜 2.0]을 참고하세요.
+자세한 내용은 [다이나믹셀 프로토콜 2.0]을 참고하세요.
 
-#### [S.Bus 프로토콜](#sbus-프로토콜)
+#### [S.Bus 프로토콜(일부 지원)](#sbus-프로토콜일부-지원)
+
+XL330 시리즈는 **일부** S.Bus 프로토콜을 지원하며, 지원되는 기능은 아래와 같습니다.
+{: .notice--warning}
 
 Futaba와 FrSky의 RC 서보모터 제품에서 사용하는 통신 프로토콜 입니다.
 - 최대 16개의 다이나믹셀을 공유 통신선으로 연결할 수 있으며, ID가 1~16로 설정되어 있을 경우에만 S.BUS 프로토콜로 동작이 가능합니다.
@@ -51,7 +57,10 @@ Futaba와 FrSky의 RC 서보모터 제품에서 사용하는 통신 프로토콜
 **참고**: 속도제어 모드에서 최대 속도는 [Velocity Limit(44)](#velocity-limit44) 값으로, 움직이지 않는 범위([Goal Velocity(104)](#goal-velocity104)가 0인 범위)는 [Moving Threshold(24)](#moving-threshold24) 값으로 설정할 수 있습니다.
 {: .notice}
 
-#### [iBUS 프로토콜](#ibus-프로토콜)
+#### [iBUS 프로토콜(일부 지원)](#ibus-프로토콜일부-지원)
+
+XL330 시리즈는 **일부** iBUS 프로토콜을 지원하며, 지원되는 기능은 아래와 같습니다.
+{: .notice--warning}
 
 FlySky제품에서 사용하는 RC 규격의 통신 프로토콜 입니다. 
 - 최대 14개의 다이나믹셀을 공유 통신선으로 연결할 수 있으며, ID가 1~14로 설정되어 있을 경우에만 iBUS 프로토콜로 동작이 가능합니다.
@@ -90,7 +99,7 @@ RC PWM 신호 데이터는 위치제어 모드일 때에는 [Goal Position(116)]
 
 {% capture protocol_note_02 %}
 **참고** : 
-- [프로토콜 2.0](/docs/kr/dxl/protocol2/)은 [프로토콜 1.0](/docs/kr/dxl/protocol1/)의 안전성을 대폭 개선하였습니다. 프로토콜 1.0을 사용할 경우, 컨트롤테이블의 일부 영역의 접근이 제한될 수 있습니다.
+- [다이나믹셀 프로토콜 2.0](/docs/kr/dxl/protocol2/)은 [프로토콜 1.0](/docs/kr/dxl/protocol1/)의 안전성을 대폭 개선하였습니다. 프로토콜 1.0을 사용할 경우, 컨트롤테이블의 일부 영역의 접근이 제한될 수 있습니다.
 - 프로토콜을 변경하려면 [다이나믹셀 위자드 2.0](/docs/kr/software/dynamixel/dynamixel_wizard2/)을 사용하세요.
 - 장치가 지원하는 프로토콜은 [프로토콜 호환표](/docs/kr/popup/faq_protocol_compatibility_table/){: .popup}를 참조하세요.
 {% endcapture %}
@@ -99,6 +108,6 @@ RC PWM 신호 데이터는 위치제어 모드일 때에는 [Goal Position(116)]
 {% endif %}
 
 [프로토콜 1.0]: /docs/kr/dxl/protocol1/
-[프로토콜 2.0]: /docs/kr/dxl/protocol2/
+[다이나믹셀 프로토콜 2.0]: /docs/kr/dxl/protocol2/
 [다이나믹셀 위자드 2.0]: /docs/kr/software/dynamixel/dynamixel_wizard2/
 [프로토콜 호환표]: /docs/kr/popup/faq_protocol_compatibility_table/
