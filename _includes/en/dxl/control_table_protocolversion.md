@@ -7,15 +7,15 @@ The following table lists available protocol types compatible with DYNAMIXEL for
 
 Select a desired DYNAMIXEL protocol type according to your application.
 
-|   Value    |                     Protocol                      |               Descriptions               |
-| :--------: | :-----------------------------------------------: | :--------------------------------------: |
-| 2(default) | [DYNAMIXEL Protocol 2.0](#dynamixel-protocol-20)  | [Protocol Compatibility table]{: .popup} |
-|     20     | [Experimental S.BUS](#experimental-sbus-protocol) |      Experimental RC S.BUS Protocol      |
-|     21     | [Experimental iBUS](#experimental-ibus-protocol)  |      Experimental RC iBUS Protocol       |
-|     22     |            [RC-PWM](#rc-pwm-protocol)             |       PWM signal used by RC servos       |
+|   Value    |                     Type                          |                      Descriptions                     |
+| :--------: | :-----------------------------------------------: | :---------------------------------------------------: |
+| 2(default) | [DYNAMIXEL Protocol 2.0](#dynamixel-protocol-20)  |       [Protocol Compatibility table]{: .popup}        |
+|     20     | [Experimental S.BUS](#experimental-sbus-protocol) | Compatible with S.BUS Protocol supported RC receivers |
+|     21     | [Experimental iBUS](#experimental-ibus-protocol)  | Compatible with iBUS Protocol supported RC receivers  |
+|     22     |            [RC-PWM](#rc-pwm-protocol)             |              PWM signal used by RC servos             |
 
 **WARNING**  
-`Experimental S.BUS` and `Experimental iBUS` are **partially** supporting S.BUS and iBUS as an experimental protocol, and may not compatible with other devices.  
+`Experimental S.BUS` and `Experimental iBUS` are **partially** supporting S.BUS and iBUS as an experimental protocol, and may not fully compatible with other devices.  
 Please use the experimental protocols at your own risk.
 {: .notice--danger}
 
@@ -35,7 +35,7 @@ DYNAMIXEL Protocol 2.0 is a basic communication protocol to communicate between 
 The `Experimental S.BUS` supports a **partial** S.BUS Protocol, and the supported features are described in the following.
 {: .notice--warning}
 
-The S.BUS Protocol is a communication protocol commonly used in RC products. XL330 series may not compatible with other S.BUS devices.
+The S.BUS Protocol is a communication protocol commonly used in RC products. XL330 series may not fully compatible with other S.BUS devices.
 - Multiple DYNAMIXELs, the maximum is 16, can be wired via signal cables. Notice that S.BUS protocol only allows for use **the range of [ID(7)] from 1 to 16**.
 - The available range of data transmission is from **0 to 2,047 (11 bits)**.
 - If the [Operating Mode(11)] is **Position Control Mode**, data will be passed to the [Goal Position(116)]. 
@@ -51,7 +51,7 @@ The S.BUS Protocol is a communication protocol commonly used in RC products. XL3
 The `Experimental iBUS` supports a **partial** iBUS Protocol, and the supported features are described in the following.
 {: .notice--warning}
 
-The iBUS Protocol is a communication protocol commonly used in RC products. XL330 series may not compatible with other iBUS devices. 
+The iBUS Protocol is a communication protocol commonly used in RC products. XL330 series may not fully compatible with other iBUS devices. 
 - Multiple DYNAMIXELs, the maximum is 14, can be wired via signal cables. Notice that S.BUS protocol only allows for use **the range of [ID(7)] from 1 to 14**.
 - The available range of data transmission is from **0 to 16,383 (16 bits)**.
 - If the [Operating Mode(11)] is **Position Control Mode**, data will be passed to the [Goal Position(116)]. 
