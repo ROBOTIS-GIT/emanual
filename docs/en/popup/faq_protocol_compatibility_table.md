@@ -2,20 +2,23 @@
 layout: popup
 ---
 
-# ROBOTIS Protocol Compatibility Table
+# DYNAMIXEL Protocol Compatibility Table
 
-- [Protocol 1.0]
-- [Protocol 2.0]
+- More info about [Protocol 1.0]
+- More info about [Protocol 2.0]
 
-Compatibility Key: O= Yes ; X= No ; * = User Action Required
+**Compatibility Legend**  
+O : Compatible  
+X : Incompatible  
+\* : Configuration Required
 {: .notice --info}
 
-# [DYNAMIXEL ](#dynamixel-)
+# [DYNAMIXEL](#dynamixel)
 
 ## AX Series
 
 | Model  | Protocol 1.0 | Protocol 2.0 |
-|:-------|:-------------|:-------------|
+|:-------|:------------:|:------------:|
 | AX-12W | O            | X            |
 | AX-12A | O            | X            |
 | AX-18A | O            | X            |
@@ -23,7 +26,7 @@ Compatibility Key: O= Yes ; X= No ; * = User Action Required
 ## MX Series
 
 | Model  | Protocol 1.0 | Protocol 2.0 |
-|:-------|:-------------|:-------------|
+|:-------|:------------:|:------------:|
 | MX-12W | O            | X            |
 | MX-28  | O            | O*           |
 | MX-64  | O            | O*           |
@@ -39,7 +42,7 @@ Compatibility Key: O= Yes ; X= No ; * = User Action Required
 
 {% capture info_01 %}
 **INFO** : 
-- MX(2.0) Firmware is different from MX series control table and address.
+- MX(2.0) Firmware uses different control table and address from default MX firmware with Protocol 1.0.
 - MX(2.0) Firmware inherits DYNAMIXEL-X function.
 {% endcapture %}
 <div class="notice--info">{{ info_01| markdownify }}</div>
@@ -53,10 +56,17 @@ Compatibility Key: O= Yes ; X= No ; * = User Action Required
 {% endcapture %}
 <div class="notice">{{ notice_01| markdownify }}</div>
 
+## [XW Series](#xw-series)
+
+| Model       | Protocol 1.0            | Protocol 2.0 |
+|:------------|:-----------------------:|:------------:|
+| XW540-T140  | O* <br>(F/W address 13) | O            |
+| XW540-T260  | O* <br>(F/W address 13) | O            |
+
 ## [XH Series](#xh-series)
 
 | Model       | Protocol 1.0            | Protocol 2.0 |
-|:------------|:------------------------|:-------------|
+|:------------|:-----------------------:|:------------:|
 | XH430-W210  | O* <br>(F/W address 13) | O            |
 | XH430-W350  | O* <br>(F/W address 13) | O            |
 | XH430-V210  | O* <br>(F/W address 13) | O            |
@@ -69,7 +79,7 @@ Compatibility Key: O= Yes ; X= No ; * = User Action Required
 ## [XM Series](#xm-series)
 
 | Model       | Protocol 1.0            | Protocol 2.0 |
-|:------------|:------------------------|:-------------|
+|:------------|:-----------------------:|:------------:|
 | XM430-W210  | O* <br>(F/W address 13) | O            |
 | XM430-W350  | O* <br>(F/W address 13) | O            |
 | XM540-W150  | O* <br>(F/W address 13) | O            |
@@ -78,7 +88,7 @@ Compatibility Key: O= Yes ; X= No ; * = User Action Required
 ## [XC Series](#xc-series)
 
 | Model       | Protocol 1.0            | Protocol 2.0 |
-|:------------|:------------------------|:-------------|
+|:------------|:-----------------------:|:------------:|
 | XC430-W150  | O* <br>(F/W address 13) | O            |
 | XC430-W240  | O* <br>(F/W address 13) | O            |
 | 2XC430-W250 | O* <br>(F/W address 13) | O            |
@@ -86,18 +96,18 @@ Compatibility Key: O= Yes ; X= No ; * = User Action Required
 ## [XL Series](#xl-series)
 
 | Model       | Protocol 1.0            | Protocol 2.0 |
-|:------------|:------------------------|:-------------|
+|:------------|:-----------------------:|:------------:|
 | XL-320      | X                       | O            |
 | XL-330      | X                       | O            |
 | XL430-W250  | O* <br>(F/W address 13) | O            |
 | 2XL430-W250 | O* <br>(F/W address 13) | O            |
 
-# [DYNMAIXEL PRO](#dynamixel-pro)
+# [DYNAMIXEL PRO](#dynamixel-pro)
 
 ## [H Series](#h-series)
 
 | Model         | Protocol 1.0 | Protocol 2.0 |
-|:--------------|:-------------|:-------------|
+|:--------------|:------------:|:------------:|
 | H42-20-S300   | X            | O            |
 | H54-100-S500  | X            | O            |
 | H54-200-S500  | X            | O            |
@@ -105,7 +115,7 @@ Compatibility Key: O= Yes ; X= No ; * = User Action Required
 ## [M Series](#m-series)
 
 | Model         | Protocol 1.0 | Protocol 2.0 |
-|:--------------|:-------------|:-------------|
+|:--------------|:------------:|:------------:|
 | M42-10-S260   | X            | O            |
 | M54-40-S250   | X            | O            |
 | M54-60-S250   | X            | O            |
@@ -113,7 +123,7 @@ Compatibility Key: O= Yes ; X= No ; * = User Action Required
 ## [L Series](#l-series)
 
 | Model         | Protocol 1.0 | Protocol 2.0 |
-|:--------------|:-------------|:-------------|
+|:--------------|:------------:|:------------:|
 | L54-50-S500-R | X            | O            |
 | L54-50-S290-R | X            | O            |
 | L54-30-S500-R | X            | O            |
@@ -125,7 +135,7 @@ Compatibility Key: O= Yes ; X= No ; * = User Action Required
 ## [PH Series](#ph-series)
 
 | Model           | Protocol 1.0 | Protocol 2.0 |
-|:----------------|:-------------|:-------------|
+|:----------------|:------------:|:------------:|
 | PH54-200-S500-R | X            | O            |
 | PH54-100-S500-R | X            | O            |
 | PH42-020-S300-R | X            | O            |
@@ -133,7 +143,7 @@ Compatibility Key: O= Yes ; X= No ; * = User Action Required
 ## [PM Series](#pm-series)
 
 | Model           | Protocol 1.0 | Protocol 2.0 |
-|:----------------|:-------------|:-------------|
+|:----------------|:------------:|:------------:|
 | PM54-060-S250-R | X            | O            |
 | PM54-040-S250-R | X            | O            |
 | PM42-010-S260-R | X            | O            |
