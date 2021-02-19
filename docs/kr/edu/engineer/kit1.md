@@ -20,7 +20,7 @@ sidebar:
 - 다양한 움직임을 구현하는 관절형 구조
 - 단계별 로봇교육과정 및 표준 커리큘럼 제공
 - 3D프린팅 지원
-- 로보플러스 엔지니어, 로보플러스 태스크 3.0 등 다용도 소프트웨어 사용가능
+- 로보플러스 엔지니어, R+ Task 3.0 등 다용도 소프트웨어 사용가능
 - 라즈베리 파이와 카메라 확장가능
 
 ## [부품 목록](#부품-목록)
@@ -195,14 +195,14 @@ sidebar:
 
 ## [앱 설치하기](#앱-설치하기)
 
-- 로보티즈 엔지니어는 [로보플러스 태스크 3.0]를 지원합니다.
-- [로보플러스 태스크 3.0]은 기존의 [로보플러스 태스크 2.0]과 [로보플러스 모션 2.0]이 통합된 프로그램입니다.
+- 로보티즈 엔지니어는 [R+ Task 3.0]를 지원합니다.
+- [R+ Task 3.0]은 기존의 [R+ Task 2.0]과 [R+ Motion 2.0]이 통합된 프로그램입니다.
 - 태스크 코드를 작성하여, 로봇을 원하는대로 명령으로 구동할 수 있습니다.
 - 모션파일로 로봇의 행동을 직접 만들어 줄 수 있습니다.
 
 {% capture software_install_01 %}  
 ![](/assets/images/edu/engineer/kit1/icon_task_48.png)  
-**로보플러스 태스크 3.0**
+**R+ Task 3.0**
 - [윈도우에서 PC 버전 다운로드 받기](https://www.robotis.com/service/download.php?no=1774) 
 - [맥 OS에서 PC 버전 다운로드 받기](https://www.robotis.com/service/download.php?no=1908)
 - [구글 플레이에서 모바일 버전 다운로드 받기](https://play.google.com/store/apps/details?id=com.robotis.task3)
@@ -651,7 +651,7 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
 ## [제어기 BLE 신호 세기 설정](#제어기-ble-신호-세기-설정)
 
 CM-550에 내장된 BLE 슬레이브 모듈의 신호의 세기가 약하거나 간섭이 발생할 경우 통신이 불안정할 수 있습니다.  
-이러한 경우 로보플러스 매니저 2.0을 사용하여 BLE 신호세기를 알맞게 설정할 수 있습니다.
+이러한 경우 R+ Manager 2.0을 사용하여 BLE 신호세기를 알맞게 설정할 수 있습니다.
 
 아래 표는 여러개의 CM-550를 한 공간에서 사용할 때 BLE 신호 세기를 설정하는 방법입니다.
 
@@ -680,11 +680,11 @@ CM-550에 내장된 BLE 슬레이브 모듈의 신호의 세기가 약하거나 
 
 3. CM-550의 `MODE` 버튼이 깜박이는 것을 확인합니다.
 
-4. 로보플러스 매니저 2.0 을 실행합니다.
+4. R+ Manager 2.0 을 실행합니다.
 
     ![](/assets/images/edu/engineer/kit1/BLE_signal_power_01_kr.png)
 
-5. `업데이트 검사` 를 클릭한 다음, 로보플러스 매니저 2.0이 최신 버전인지 확인합니다.
+5. `업데이트 검사` 를 클릭한 다음, R+ Manager 2.0이 최신 버전인지 확인합니다.
 
     ![](/assets/images/edu/engineer/kit1/BLE_signal_power_02_kr.png)  
     ![](/assets/images/edu/engineer/kit1/BLE_signal_power_03_kr.png)
@@ -777,9 +777,9 @@ CM-550에 내장된 BLE 슬레이브 모듈의 신호의 세기가 약하거나 
 
 [CM-550 매뉴얼 바로가기]: /docs/kr/parts/controller/cm-550/
 [2XL430-W250 매뉴얼 바로가기]: /docs/kr/dxl/x/2xl430-w250/
-[로보플러스 태스크 3.0]: /docs/kr/software/rplustask3/
-[로보플러스 태스크 2.0]: /docs/kr/software/rplus2/task/
-[로보플러스 모션 2.0]: /docs/kr/software/rplus2/motion/
+[R+ Task 3.0]: /docs/kr/software/rplustask3/
+[R+ Task 2.0]: /docs/kr/software/rplus2/task/
+[R+ Motion 2.0]: /docs/kr/software/rplus2/motion/
 [동작 모드]: /docs/kr/parts/controller/cm-550/#동작-모드
 [제어기와 PC 연결하기]: /docs/kr/popup/engineer/connect_controller_pc
 [PC에서 태스크 예제 다운로드 하기]: /docs/kr/popup/engineer/task_download_pc

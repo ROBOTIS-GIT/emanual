@@ -7,16 +7,16 @@ share: true
 author_profile: false
 permalink: /docs/kr/software/rplus2/manager/
 sidebar:
-  title: 로보플러스 매니저 2.0
+  title: R+ Manager 2.0
   nav: "rplusmanager2"
 ---
 
 # [개요](#개요)
 
-## [로보플러스 매니저 2.0](#로보플러스-매니저-20)
-로보플러스 매니저 2.0은 로봇을 구성하는 제어기와 다이나믹셀 장치들을 통합 관리합니다.  
+## [R+ Manager 2.0](#r-manger-20)
+R+ Manager 2.0은 로봇을 구성하는 제어기와 다이나믹셀 장치들을 통합 관리합니다.  
 제품을 연결하면 해당 제품을 최신버전으로 업데이트할 수 있으며, 컨트롤 테이블을 테스트해볼 수 있습니다.  
-기존의 로보플러스 매니저1.0과 위자드1.0에서 제공하던 기능이 로보플러스 매니저 2.0에서 통합되었습니다.
+기존의 로보플러스 매니저1.0과 위자드1.0에서 제공하던 기능이 R+ Manager 2.0에서 통합되었습니다.
 
 ![](/assets/images/sw/rplus2/manager/rplusmanager2_01_kr.jpg)
 

@@ -132,7 +132,7 @@ ROBOTIS ENGINEER KIT2에서는 Raspberry Pi Camera와 앱을 동일한 와이파
 ## [제어기 BLE 신호 세기 설정](#제어기-ble-신호-세기-설정)
 
 CM-550에 내장된 BLE 슬레이브 모듈의 신호의 세기가 약하거나 간섭이 발생할 경우 통신이 불안정할 수 있습니다.  
-이러한 경우 로보플러스 매니저 2.0을 사용하여 BLE 신호세기를 알맞게 설정할 수 있습니다.
+이러한 경우 R+ Manager 2.0을 사용하여 BLE 신호세기를 알맞게 설정할 수 있습니다.
 
 아래 표는 여러개의 CM-550를 한 공간에서 사용할 때 BLE 신호 세기를 설정하는 방법입니다.
 
@@ -161,11 +161,11 @@ CM-550에 내장된 BLE 슬레이브 모듈의 신호의 세기가 약하거나 
 
 3. CM-550의 `MODE` 버튼이 깜박이는 것을 확인합니다.
 
-4. 로보플러스 매니저 2.0 을 실행합니다.
+4. R+ Manager 2.0 을 실행합니다.
 
     ![](/assets/images/edu/engineer/kit1/BLE_signal_power_01_kr.png)
 
-5. `업데이트 검사` 를 클릭한 다음, 로보플러스 매니저 2.0이 최신 버전인지 확인합니다.
+5. `업데이트 검사` 를 클릭한 다음, R+ Manager 2.0이 최신 버전인지 확인합니다.
 
     ![](/assets/images/edu/engineer/kit1/BLE_signal_power_02_kr.png)  
     ![](/assets/images/edu/engineer/kit1/BLE_signal_power_03_kr.png)

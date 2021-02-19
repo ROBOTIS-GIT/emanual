@@ -28,12 +28,12 @@ sidebar:
 
 # [ROBOTIS DREAM](#robotis-dream)
 
+**WARNING** : ROBOTIS DREAM has been discontinued.
+{: .notice--warning}
+
 |                                     LEVEL 2                                      |                                   LEVEL 3                                   |                                   LEVEL 4                                   |                                          SET A                                          |                                          SET B                                          |
 | :------------------------------------------------------------------------------: | :-------------------------------------------------------------------------: | :-------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------: |
 | [![](/assets/images/edu/dream/dream_en02_110.jpg)](/docs/en/edu/dream/dream1-2/) | [![](/assets/images/edu/dream/dream3_en.jpg)](/docs/en/edu/dream/dream1-3/) | [![](/assets/images/edu/dream/dream4_en.jpg)](/docs/en/edu/dream/dream1-4/) | [![](/assets/images/edu/dream/e-manual_dream_seta_tn.jpg)](/docs/en/edu/dream/dream-a/) | [![](/assets/images/edu/dream/e-manual_dream_setb_tn.jpg)](/docs/en/edu/dream/dream-b/) |
-
-**WARNING** : ROBOTIS DREAM has been discontinued.
-{: .notice--warning}
 
 # [ROBOTIS DREAM II](#robotis-dream-ii)
 
@@ -46,6 +46,9 @@ sidebar:
 |                                      Beginner                                      |                                        Comprehensive                                         |                                  STEM                                  |                                   PREMIUM                                    |                                 GP                                 |
 | :--------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------: | :--------------------------------------------------------------------------: | :----------------------------------------------------------------: |
 | [![](/assets/images/edu/bioloid/beginner_kit.jpg)](/docs/en/edu/bioloid/beginner/) | [![](/assets/images/edu/bioloid/comprehensive_kit.jpg)](/docs/en/edu/bioloid/comprehensive/) | [![](/assets/images/edu/bioloid/stem.jpg)](/docs/en/edu/bioloid/stem/) | [![](/assets/images/edu/bioloid/premium.jpg)](/docs/en/edu/bioloid/premium/) | [![](/assets/images/edu/bioloid/gp.jpg)](/docs/en/edu/bioloid/gp/) |
+
+**WARNING** : ROBOTIS Beginner, Comprehensive have been discontinued.
+{: .notice--warning}
 
 # [ROBOTIS ENGINEER](#robotis-engineer)
 

@@ -103,11 +103,17 @@ T/R/AT/AR represents protocol types as following:
 
 # [EX Series](#ex-series)
 
+**WARNING** : EX Series has been discontinued.
+{: .notice--warning}
+
 |                                  EX-106+                                  |
 |:-------------------------------------------------------------------------:|
 | [![](/assets/images/dxl/ex/ex-106_product.png)](/docs/en/dxl/ex/ex-106+/) |
 
 # [DX Series](#dx-series)
+
+**WARNING** : DX Series has been discontinued.
+{: .notice--warning}
 
 |                                  DX-113                                  |                                  DX-116                                  |                                  DX-117                                  |
 |:------------------------------------------------------------------------:|:------------------------------------------------------------------------:|:------------------------------------------------------------------------:|
@@ -115,11 +121,17 @@ T/R/AT/AR represents protocol types as following:
 
 # [RX Series](#rx-series)
 
+**WARNING** : RX Series has been discontinued.
+{: .notice--warning}
+
 |                                 RX-10                                  |                                  RX-24F                                  |                                 RX-28                                  |                                 RX-64                                  |
 |:----------------------------------------------------------------------:|:------------------------------------------------------------------------:|:----------------------------------------------------------------------:|:----------------------------------------------------------------------:|
 | [![](/assets/images/dxl/rx/rx-10_product.png)](/docs/en/dxl/rx/rx-10/) | [![](/assets/images/dxl/rx/rx-24f_product.png)](/docs/en/dxl/rx/rx-24f/) | [![](/assets/images/dxl/rx/rx-28_product.png)](/docs/en/dxl/rx/rx-28/) | [![](/assets/images/dxl/rx/rx-64_product.png)](/docs/en/dxl/rx/rx-64/) |
 
 # [DYNAMIXEL PRO](#DYNAMIXEL-pro)
+
+**WARNING** : DYNAMIXEL PRO has been discontinued.
+{: .notice--warning}
 
 ## [L Series](#l-series)
 

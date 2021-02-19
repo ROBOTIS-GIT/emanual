@@ -19026,9 +19026,9 @@ rplusmanager2:
     urlkr: /software/rplus2/manager/#개요
     children:
     - title: "RoboPlus Manager 2.0"
-      titlekr: "로보플러스 매니저 2.0"
+      titlekr: "R+ Manager 2.0"
       url: /software/rplus2/manager/#roboplus-manager-20
-      urlkr: /software/rplus2/manager/#로보플러스-매니저-20
+      urlkr: /software/rplus2/manager/#r-manger-20
     - title: "Precautions"
       titlekr: "사용전 주의사항"
       url: /software/rplus2/manager/#precautions
@@ -22400,11 +22400,11 @@ cm-550:
     urlkr: /parts/controller/cm-550/#호환-소프트웨어
     children:
     - title: "R+ Manager 2.0"
-      titlekr: "로보플러스 매니저 2.0"
+      titlekr: "R+ Manager 2.0"
       url: /parts/controller/cm-550/#r-manager-20
-      urlkr: /parts/controller/cm-550/#로보플러스-매니저-20
+      urlkr: /parts/controller/cm-550/#r-manger-20
     - title: "R+ Task 3.0"
-      titlekr: "로보플러스 태스크 3.0"
+      titlekr: "R+ Task 3.0"
       url: /parts/controller/cm-550/#r-task-30
       urlkr: /parts/controller/cm-550/#로보플러스-태스크-30
   - title: "Connect to PC"

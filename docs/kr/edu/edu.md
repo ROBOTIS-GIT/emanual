@@ -86,6 +86,9 @@ sidebar:
 |:----------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------:|:----------------------------------------------------------------------------:|:------------------------------------------------------------------:|
 | [![](/assets/images/edu/bioloid/beginner_kit.jpg)](/docs/kr/edu/bioloid/beginner/) | [![](/assets/images/edu/bioloid/comprehensive_kit.jpg)](/docs/kr/edu/bioloid/comprehensive/) | [![](/assets/images/edu/bioloid/stem_kit.jpg)](/docs/kr/edu/bioloid/stem/) | [![](/assets/images/edu/bioloid/premium.jpg)](/docs/kr/edu/bioloid/premium/) | [![](/assets/images/edu/bioloid/gp.jpg)](/docs/kr/edu/bioloid/gp/) |
 
+**주의** : 로보티즈 바이올로이드 초급, 종합 로봇은 현재 단종되어 더 이상 판매되지 않습니다.
+{: .notice--warning}
+
 # [로보티즈 엔지니어](#로보티즈-엔지니어)
 
 |                                         키트 1                                         |                                             키트 2                                              |
