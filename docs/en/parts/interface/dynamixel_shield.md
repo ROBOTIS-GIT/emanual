@@ -169,11 +169,13 @@ Below is an example of using the Library Manager.
 
 ![](/assets/images/parts/interface/dynamixel_shield/library_manager_01.png)
 
-In order to use DYNAMIXEL Shield library(v0.1.0 or above), DYNAMIXEL2Arduino library must be installed.
-
-![](/assets/images/parts/interface/dynamixel_shield/library_manager_02.png)
+Search for `dynamixel shield` from the Library Manager and install the latest version.
 
 ![](/assets/images/parts/interface/dynamixel_shield/library_manager_03.png)
+
+Click `Install all` to install the dependent library `Dynamixel2Arduino`.
+
+![](/assets/images/parts/interface/dynamixel_shield/library_manager_04.png)
 
 If you have successfully installed both libraries, you'll be able to find several examples of DynamixelShield in the examples.
 
