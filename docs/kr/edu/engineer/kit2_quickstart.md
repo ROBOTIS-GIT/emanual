@@ -110,7 +110,7 @@ PC로 작성한 예제 또는 다운로드 받은 예제를 제어기에 다운�
 
 #### [MAX-E2 조종 화면](#max-e2-조종-화면)
 
-![](/assets/images/edu/engineer/kit2/max2_controller_kr.png)
+![](/assets/images/edu/engineer/kit2/max2_controller_kr.jpg)
 
 `메뉴 버튼`: 조종 / 스트리밍 / 얼굴 감지 / 로봇 점검 모드 등을 선택해 변경할 수 있습니다  
 `조종 버튼`: MAX-E2를 조종하기 위한 버튼과 동작의 속도를 변경하는 버튼이 배치되어 있습니다.  
