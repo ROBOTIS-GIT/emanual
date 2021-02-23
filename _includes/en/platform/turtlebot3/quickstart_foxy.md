@@ -44,7 +44,6 @@ $ sudo apt install python3-colcon-common-extensions
   ```
 3. Install Gazebo11
   ```bash
-$ curl -sSL http://get.gazebosim.org | sh
 $ sudo apt install ros-foxy-gazebo-ros-pkgs
   ```
 
@@ -65,6 +64,8 @@ $ sudo apt install python3-vcstool
 
 ### [Install TurtleBot3 Packages](#install-turtlebot3-packages)
 
+Install TurtleBot3 via Debian Packages.
+
 ```bash
 $ source /opt/ros/foxy/setup.bash
 $ sudo apt install ros-foxy-dynamixel-sdk
@@ -74,7 +75,7 @@ $ sudo apt install ros-foxy-turtlebot3
 
 <details>
 <summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) **Click here to expand about building TurtleBot3 packages with source code.**
+![](/assets/click_here.png) **Click here to expand more details about building TurtleBot3 package from source.**
 {: .notice--success}
 </summary>
 In case you need to build the TurtleBot3 packages with source code, please use the commands below.  
