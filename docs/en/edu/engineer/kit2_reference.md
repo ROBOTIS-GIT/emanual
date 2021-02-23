@@ -251,6 +251,10 @@ Download [MARKER for Commando](https://www.robotis.com/service/download.php?no=1
 
 ![](/assets/images/edu/engineer/kit2/marker_for_commando.png)
 
+## [Robot and Software Reset](#robot-and-software-reset)
+
+## [Controller and DYNAMIXEL Reset](#controller-and-dynamixel-reset)
+
 ## [Self Checklist](#self-checklist)
 
 1. Why the robot does not turn on?  
@@ -267,6 +271,9 @@ Download [MARKER for Commando](https://www.robotis.com/service/download.php?no=1
 
 5. The robot turns on with the adapter, but not with the battery.  
   > Please check the Fuse on the bottom of CM-550 controller. Please refer to [Fuse Replacement](#fuse-replacement) section.
+
+
+## [How to initialize the controller and DYNAMIXEL](#how-to-initialize-the-controller-and-dynamixel)
 
 ## [Charging Battery](#charging-battery)
 
