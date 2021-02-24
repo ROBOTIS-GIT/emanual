@@ -635,15 +635,6 @@ Additional course materials can be downloaded from below link.
 
 ![](/assets/images/edu/engineer/kit1/engineer_edu_metarials.png)
 
-# [Download Softwares](#download-softwares)
-
-- ROBOTIS ENGINEER supports [R+ Task 3.0].
-- [R+ Task 3.0] is an integrated software of [R+ Task 2.0] and [R+ Motion 2.0].
-- Write the task code to operate the robot.
-- Create various motions to vitalize the robot.
-
-<div class="notice--success">{{ app_install | markdownify }}</div>
-
 # [References](#references)
 
 ## [BLE Signal Setting](#ble-signal-setting)
@@ -737,6 +728,10 @@ Please refer to the method to adjust CM-550 BLE signal strength for various situ
 
 5. The robot turns on with the adapter, but not with the battery.  
   > Please check the Fuse on the bottom of CM-550 controller. Please refer to [Fuse Replacement](#fuse-replacement) section.
+
+## [How to Reset](#how-to-reset)
+
+If the robot needs to be reset to it's factory condition due to a malfunction, you may need to re-download the provided basic examples (.tsk3 and .mtn3) to the CM-550 to reset the robot. To do it, go to the [Download Examples](#download-examples) and see [Download from PC](#download-from-pc). 
 
 ## [Charging Battery](#charging-battery)
 

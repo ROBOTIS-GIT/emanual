@@ -623,8 +623,8 @@ main:
       - title: "DYNAMIXEL Shield"
         titlekr: "다이나믹셀 쉴드"
         url: /parts/interface/dynamixel_shield/
-      - title: "MKR Shield"
-        # titlekr: "MKR 쉴드"
+      - title: "DYNAMIXEL Shield(MKR)"
+        # titlekr: "다이나믹셀 쉴드(MKR)"
         url: /parts/interface/mkr_shield/
       - title: "*USB2DYNAMIXEL"
         titlekr: "*USB2DYNAMIXEL"
@@ -15722,8 +15722,12 @@ kit1:
       urlkr: /edu/engineer/kit1/#제어기-ble-신호-세기-설정
     - title: "Self Checklist"
       titlekr: "점검 및 자가진단"
-      url: /edu/engineer/kit1/#self-checklist
+      url: /edu/engineer/kit1/#robot-and-software-reset
       urlkr: /edu/engineer/kit1/#점검-및-자가진단
+    - title: "How to Reset"
+      titlekr: "로봇 및 프로그램 초기화 방법"
+      url: /edu/engineer/kit1/#how-to-reset
+      urlkr: /edu/engineer/kit1/#로봇-및-프로그램-초기화-방법
     - title: "Charging Battery"
       titlekr: "배터리 충전하기"
       url: /edu/engineer/kit1/#charging-battery
@@ -15903,6 +15907,10 @@ kit2:
       titlekr: "점검 및 자가진단"
       url: /edu/engineer/kit2_reference/#self-checklist
       urlkr: /edu/engineer/kit2_reference/#점검-및-자가진단
+    - title: "How to initialize the controller and DYNAMIXEL"
+      titlekr: "로봇 및 프로그램 초기화 방법"
+      url: /edu/engineer/kit2_reference/#how-to-initialize-the-controller-and-dynamixel
+      urlkr: /edu/engineer/kit2_reference/#로봇-및-프로그램-초기화-방법            
     - title: "Charging Battery"
       titlekr: "배터리 충전하기"
       url: /edu/engineer/kit2_reference/#charging-battery

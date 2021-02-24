@@ -107,7 +107,7 @@ Run `ROBOTIS ENGINEER` Kit2 App and select **MAX-E2**.
 
 #### [Remote Controller Screen](#Remote-controller-screen)
 
-![](/assets/images/edu/engineer/kit2/max2_controller.png)
+![](/assets/images/edu/engineer/kit2/max2_controller.jpg)
 
 `Menu button`: Control/ Streaming/ Facial Detection/ Robot Inspection Mode.  
 `Control Buttons`: Control and change the speed of motions of MAX-E2.  
