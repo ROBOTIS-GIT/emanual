@@ -27,59 +27,9 @@ The Motion project file has an .mtnx extension, and is shown on the PC as the ic
 ## [Software Install](#software-install)
 
 ![](/assets/images/sw/all_software/icon_r_motion_2.jpg)  
-- [Install R+ Motion 2.0 for Mac OS](https://apps.apple.com/en/app/r-motion2/id1449808903)
+- [Install R+ Motion 2.0 for Mac OS](https://apps.apple.com/tr/app/r-motion/id1449808903)
 - [Install R+ Motion 2.0 for Windows](https://www.robotis.com/service/download.php?no=3)
-
-<!-- 
-
-**WARNING** : R+Motion 2.0 software installation procedure for Mac OS X has been updated since v2.3.0.  
-[`Mac OS X R+Motion 2.0 Download`]{: .blank}
-{: .notice--warning}
-
-[`Mac OS X R+Motion 2.0 Download`]: http://en.robotis.com/service/download.php?no=7
-
-1. Download R+Motion 2.0 from below download link.  
-  [`Mac OS X R+Motion 2.0 Download`]{: .blank}
-
-2. Double click to open the downloaded package file `R+Motion2.0(v2.4.12 Mac).pkg`.  
-  ![](/assets/images/sw/rplus2/motion/roboplus_motion2_install_01.png)
-
-    - If below popup message appears and fails to open the file, please read the following instructions.  
-      ![](/assets/images/sw/rplus2/motion/roboplus_motion2_install_02.png)
-    - Open `System Preference` and select `Security & Privacy` menu.  
-      ![](/assets/images/sw/rplus2/motion/roboplus_motion2_install_03.png)
-    - Click `Open Anyway` button to open downloaded R+Motion 2.0 package.  
-      ![](/assets/images/sw/rplus2/motion/roboplus_motion2_install_04.png)
-
-3. If downloaded package is successfully opened, below installer will appear. Click on `Continue`.  
-  ![](/assets/images/sw/rplus2/motion/roboplus_motion2_install_05.png)
-
-4. Click on `Choose Folder` or `Change Install Location...` to select a folder to extract package files. Please remember this folder to find installation file `R+Motion2 Installer.dmg` in the later part of installation.  
-  Click on `Choose` to confirm selection.  
-  ![](/assets/images/sw/rplus2/motion/roboplus_motion2_install_06.png)  
-  ![](/assets/images/sw/rplus2/motion/roboplus_motion2_install_06_2.png)
-
-5. Click on `Install` button start extracting files.  
-  ![](/assets/images/sw/rplus2/motion/roboplus_motion2_install_07.png)
-
-6. Enter password if necessary.  
-  ![](/assets/images/sw/rplus2/motion/roboplus_motion2_install_08.png)
-
-7. Click on `Close` button.  
-  ![](/assets/images/sw/rplus2/motion/roboplus_motion2_install_09.png)
-
-8. Go to the selected folder from above step 4 and double click to run the installation file `R+Motion2 Installer.dmg`  
-  ![](/assets/images/sw/rplus2/motion/roboplus_motion2_install_dmg.png)
-
-9. Below window will be opened if the file is running successfully.  
-  Drag `R+Motion2` icon on the left side and drop it on the right side where `Applications` icon is located at.  
-  ![](/assets/images/sw/rplus2/motion/roboplus_motion2_install_10.png)
-
-11. If software is successfully installed, it'll be appeared on Applications or Launcher screen.  
-  ![](/assets/images/sw/rplus2/motion/roboplus_motion2_install_11.png) 
-  
-  -->
-
+ 
 ## [Menu](#menu)
 
 ![](/assets/images/sw/rplus2/motion/roboplus_motion_002.gif)
