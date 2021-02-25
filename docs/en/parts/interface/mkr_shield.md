@@ -136,16 +136,16 @@ Please be aware that Arduino MKR boards may limit the 5V power source for USB ha
 |          Use VIN(DXL) from external power source(SMPS)           |                   Use +5V from Arduino MKR                   |
 |:----------------------------------------------------------------:|:------------------------------------------------------------:|
 | ![](/assets/images/parts/interface/mkr_shield/select_vindxl.png) | ![](/assets/images/parts/interface/mkr_shield/select_5v.png) |
-|When using `VIN(DXL)` from external power source, use included DC barrel jack extension or solder the terminal block when needed. **Additional power source for Arduino MKR board will be required.**|When using `+5V` from Arduino MKR, be aware that some Arduino MKR board has a built in fuse that prevents excessive use of 5V power. Please refer to each Arduino MKR board specification.|
+|When using `VIN(DXL)` from external power source, please be aware of the polarity of terminal block. **Additional power source for Arduino MKR board will be required.**|When using `+5V` from Arduino MKR, be aware that some Arduino MKR board has a built in fuse that prevents excessive use of 5V power. Please refer to each Arduino MKR board specification.|
 
-When replacing the VIN(DXL) power connector with included terminal block, **be aware of the polarity of the power supply**.
+When supplying power to DYNAMIXEL MKR Shield, **take extra care for the polarity of the cable**.
 {: .notice}
 
 
 # [DYNAMIXEL Shield Libraries](#dynamixel-shield-libraries)
 
-DYNAMIXEL2Arduino Library : [GitHub Repository][DYNAMIXEL2Arduino GitHub repository]  
-DYNAMIXEL Shield Library : [GitHub Repository][DYNAMIXEL Shield GitHub repository]
+1. DYNAMIXEL2Arduino Library : [GitHub Repository][DYNAMIXEL2Arduino GitHub repository]  
+2. DYNAMIXEL Shield Library : [GitHub Repository][DYNAMIXEL Shield GitHub repository]
 
 ## [Features](#features)
 
