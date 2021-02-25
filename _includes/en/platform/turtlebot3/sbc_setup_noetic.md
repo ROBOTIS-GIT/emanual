@@ -78,16 +78,10 @@ $ systemctl mask systemd-networkd-wait-online.service
 8. Disable Suspend and Hibernation
   ```bash
 $ sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
+$ sudo reboot
   ```
 
-9. Install and enable the SSH
-  ```bash
-$ sudo apt install ssh
-$ sudo systemctl enable --now ssh
-$ reboot
-  ```
-
-10. After rebooting the Raspberry Pi, if you wish to work from the Remote PC using SSH, use below command from the remote PC terminal. The default password is **ubuntu**.
+9. After rebooting the Raspberry Pi, if you wish to work from the Remote PC using SSH, use below command from the remote PC terminal. The default password is **ubuntu**.
   ```bash
 $ ssh ubuntu@{IP Address of Raspberry PI}
   ```
@@ -97,8 +91,6 @@ $ ssh ubuntu@{IP Address of Raspberry PI}
 Enter below commands to the terminal one at a time.  
 In order to check the details of the easy installation script, please refer to [the script file](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_noetic_rp3.sh).  
 ```bash
-$ sudo apt-get update
-$ sudo apt-get upgrade
 $ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_noetic_rp3.sh
 $ chmod 755 ./install_ros_noetic_rp3.sh
 $ bash ./install_ros_noetic_rp3.sh
@@ -110,21 +102,20 @@ If the above installation fails, please refer to [the official ROS1 Noetic insta
 1. Install and build TurtleBot3 packages.
   ```bash
 $ sudo apt install ros-noetic-rosserial-python ros-noetic-tf
-$ mkdir -p ~/catkin_ws/src && cd ~/catkin_ws/src
 $ sudo apt install ros-noetic-hls-lfcd-lds-driver
 $ sudo apt install ros-noetic-turtlebot3-msgs
 $ sudo apt install ros-noetic-dynamixel-sdk
+$ cd ~/catkin_ws/src/
 $ git clone -b noetic-devel https://github.com/ROBOTIS-GIT/turtlebot3.git
 $ cd ~/catkin_ws/src/turtlebot3
 $ rm -r turtlebot3_description/ turtlebot3_teleop/ turtlebot3_navigation/ turtlebot3_slam/ turtlebot3_example/
-$ cd ~/catkin_ws/
 $ cd ~/catkin_ws && catkin_make -j1
 $ source ~/.bashrc
   ```
 
 2. Install dependencies using rosdep.
   ```bash
-$ sudo apt install python3-rosdep2
+$ sudo apt install python3-rosdep2 ros-noetic-rosbash
 $ cd ~/catkin_ws && rosdep update && rosdep install --from-paths src --ignore-src -r -y
   ```
 

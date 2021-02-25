@@ -1163,7 +1163,7 @@ void loop()
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7fOIeFTg7bY" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
-## [DYNMAIXEL Workbench](#dynamixel-workbench)
+## [DYNAMIXEL Workbench](#dynamixel-workbench)
 
 - [DYNAMIXEL Workbench examples](/docs/en/software/dynamixel/dynamixel_workbench/#opencr-and-opencm-tutorials)
 

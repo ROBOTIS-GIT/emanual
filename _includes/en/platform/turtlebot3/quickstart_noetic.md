@@ -51,6 +51,7 @@ $ sudo apt install ros-noetic-joy ros-noetic-teleop-twist-joy \
 
 ```bash
 $ source /opt/ros/noetic/setup.bash
+$ sudo apt install ros-noetic-dynamixel-sdk
 $ sudo apt install ros-noetic-turtlebot3-msgs
 $ sudo apt install ros-noetic-turtlebot3
 ```
