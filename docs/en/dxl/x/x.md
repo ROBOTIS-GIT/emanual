@@ -36,7 +36,7 @@ sidebar:
   - Extended Position Control.
   - PWM Control (Voltage Control Mode).
 
-# [X Series](#x-seires)
+# [X Series](#x-series)
 **Common Specifications**
 - MCU : ARM CORTEX-M3 (72 \[MHz], 32Bit)
 - Resolution : 4096 \[pulse/rev]

@@ -5,8 +5,8 @@ main:
     url: /dxl/
     urlkr: /dxl/
     children:
-    - title: "DYNAMIXEL-P"
-      titlekr: "다이나믹셀-P"
+    - title: "P Series"
+      titlekr: "P 시리즈"
       url: /dxl/p/
       children:
       - title: "PH54-200-S500-R (H54P)"
@@ -713,10 +713,10 @@ main:
         url: /faq/general
 
 all-dynamixel:
-  - title: "DYNAMIXEL-P"
-    titlekr: "다이나믹셀-P"
-    url: /dxl/#dynamixel-p
-    urlkr: /dxl/#다이나믹셀-p
+  - title: "P Series"
+    titlekr: "P 시리즈"
+    url: /dxl/#p-series
+    urlkr: /dxl/#p-시리즈
     children:
       - title: "PH Series"
         titlekr: "PH 시리즈"
@@ -771,10 +771,10 @@ all-dynamixel:
     titlekr: "RX 시리즈"
     url: /dxl/#rx-series
     urlkr: /dxl/#rx-시리즈
-  - title: "DYNAMIXEL PRO"
-    titlekr: "다이나믹셀 PRO"
-    url: /dxl/#dynamixel-pro
-    urlkr: /dxl/#다이나믹셀-pro
+  - title: "PRO Series"
+    titlekr: "PRO 시리즈"
+    url: /dxl/#pro-series
+    urlkr: /dxl/#pro-시리즈
     children:
       - title: "L Series"
         titlekr: "L 시리즈"
@@ -4192,7 +4192,7 @@ dxl_x_main:
     urlkr: /dxl/x/#특징
   - title: "X Series"
     titlekr: "X 시리즈"
-    url: /dxl/x/#x-seires
+    url: /dxl/x/#x-series
     urlkr: /dxl/x/#x-시리즈
     children:
       - title: "XW Series"

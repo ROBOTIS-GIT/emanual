@@ -15,7 +15,7 @@ product_group: dxl_p
 
 ![](/assets/images/dxl/p/dynamixel_pro_plus_lineup_table_kr.jpg)
 
-> 다이나믹셀-P 시리즈 라인업
+> 다이나믹셀-P 라인업
 
 {% include kr/dxl/p/dxl_p_notice.md %}
 

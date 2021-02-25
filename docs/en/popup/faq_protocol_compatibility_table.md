@@ -120,7 +120,7 @@ Compatibility Key: O= Yes ; X= No ; * = User Action Required
 | L54-30-S400-R | X            | O            |
 | L42-10-S300-R | X            | O            |
 
-# [DYNAMIXEL-P](#dynamixel-p)
+# [P Series](#p-series)
 
 ## [PH Series](#ph-series)
 

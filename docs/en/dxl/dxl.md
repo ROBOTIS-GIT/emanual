@@ -128,9 +128,9 @@ T/R/AT/AR represents protocol types as following:
 |:----------------------------------------------------------------------:|:------------------------------------------------------------------------:|:----------------------------------------------------------------------:|:----------------------------------------------------------------------:|
 | [![](/assets/images/dxl/rx/rx-10_product.png)](/docs/en/dxl/rx/rx-10/) | [![](/assets/images/dxl/rx/rx-24f_product.png)](/docs/en/dxl/rx/rx-24f/) | [![](/assets/images/dxl/rx/rx-28_product.png)](/docs/en/dxl/rx/rx-28/) | [![](/assets/images/dxl/rx/rx-64_product.png)](/docs/en/dxl/rx/rx-64/) |
 
-# [DYNAMIXEL PRO](#DYNAMIXEL-pro)
+# [PRO Series](#pro-series)
 
-**WARNING** : DYNAMIXEL PRO has been discontinued.
+**WARNING** : PRO Series has been discontinued.
 {: .notice--warning}
 
 ## [L Series](#l-series)
