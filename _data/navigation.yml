@@ -15920,6 +15920,76 @@ kit2:
       url: /edu/engineer/kit2_reference/#drawings
       urlkr: /edu/engineer/kit2_reference/#도면
 
+pycm:
+  - title: "Abstract"
+    url: /docs/en/edu/pycm/#abstract
+  - title: "pycm module"
+    url: /docs/en/edu/pycm/#pycm-module
+    children:
+    - title: "Definition"
+      url: /docs/en/edu/pycm/#definition
+    - title: "How to use"
+      url: /docs/en/edu/pycm/#how-to-use
+  - title: "System Functions"
+    url: /docs/en/edu/pycm/#system-functions
+    children:
+    - title: "delay()"
+      url: /docs/en/edu/pycm/#definition
+    - title: "console()"
+      url: /docs/en/edu/pycm/#console
+    - title: "print()"
+      url: /docs/en/edu/pycm/#print    
+  - title: "Submodule of pycm(CM-550)"
+    url: /docs/en/edu/pycm/#submodule-of-pycmcm-550
+    children:
+    - title: "buzzer()"
+      url: /docs/en/edu/pycm/#buzzer
+      children:
+      - title: "buzzer.melody()"
+        url: /docs/en/edu/pycm/#buzzermelody
+      - title: "buzzer.wait()"
+        url: /docs/en/edu/pycm/#buzzerwait
+      - title: "buzzer.note()"
+        url: /docs/en/edu/pycm/#buzzernote
+    - title: "led"
+      url: /docs/en/edu/pycm/#led
+      children:
+      - title: "led.set()"
+        url: /docs/en/edu/pycm/#ledset
+      - title: "led.toggle()"
+        url: /docs/en/edu/pycm/#ledtoggle
+      - title: "Constant values for led"
+        url: /docs/en/edu/pycm/#constant-values-for-led
+    - title: "button"
+      url: /docs/en/edu/pycm/#button
+      children:
+      - title: "button.pressed()"
+        url: /docs/en/edu/pycm/#buttonpressed
+      - title: "button.released()"
+        url: /docs/en/edu/pycm/#buttonreleased
+      - title: "button.millis()"
+        url: /docs/en/edu/pycm/#buttonmillis      
+      - title: "button.seconds()"
+        url: /docs/en/edu/pycm/#buttonseconds 
+    - title: "imu"
+      url: /docs/en/edu/pycm/#imu
+      children:
+      - title: "eeprom.imu_type(direction)"
+        url: /docs/en/edu/pycm/#eepromimutypedirection
+      - title: "imu.accel_x() / imu.accel_y() / imu.accel_z()"
+        url: /docs/en/edu/pycm/#imuaccelx--imuaccely--imuaccelz
+      - title: "imu.gyro_x() / imu.gyro_y() / imu.gyro_z()"
+        url: /docs/en/edu/pycm/#imugyrox--imugyroy--imugyroz
+      - title: "imu.roll()"
+        url: /docs/en/edu/pycm/#imuroll       
+      - title: "imu.gyro_x() / imu.gyro_y() / imu.gyro_z()"
+        url: /docs/en/edu/pycm/#imugyrox--imugyroy--imugyroz
+      - title: "imu.pitch()"
+        url: /docs/en/edu/pycm/#imupitch                              
+      - title: "imu.yaw()"
+        url: /docs/en/edu/pycm/#imuyaw                  
+        
+      
 
 #ROBOTIS MINI sidebar
 mini:
