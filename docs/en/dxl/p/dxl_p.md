@@ -15,7 +15,7 @@ product_group: dxl_p
 
 ![](/assets/images/dxl/p/dynamixel_pro_plus_lineup_table.jpg)
 
-> DYNAMIXEL-P Series Lineups
+> DYNAMIXEL-P Lineups
 
 {% include en/dxl/p/dxl_p_notice.md %}
 
@@ -53,7 +53,7 @@ product_group: dxl_p
 The LED of DYNAMIXEL-P flickers once if the power is supplied to DYNAMIXEL-P properly via wiring.
 
 # [Drawing](#drawing)
-The output horn has been redesigned. Please refer to below comparisons between DYNAMIXEL PRO and DYNAMIXEL-P series.
+The output horn has been redesigned. Please refer to below comparisons between DYNAMIXEL PRO and DYNAMIXEL-P.
 
 ![](/assets/images/dxl/p/h54p_drawing.png)
 

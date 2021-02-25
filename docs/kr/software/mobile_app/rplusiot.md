@@ -81,7 +81,7 @@ sidebar:
 
     ![](/assets/images/sw/mobile/r+iot_22_kr.jpg)
 
-3. R+ m.Motion 과 관련된 내용은 로보플러스 모션 2.0 을 참조하세요.
+3. R+ m.Motion 과 관련된 내용은 R+ Motion 2.0 을 참조하세요.
 
 
 ## [모션 오프셋 설정](#모션-오프셋-설정)

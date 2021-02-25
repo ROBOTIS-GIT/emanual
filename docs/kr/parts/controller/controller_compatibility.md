@@ -101,7 +101,7 @@ sidebar:
   {% capture notice_01 %}
   **참고:** 
   - 로보플러스 매니저 1.0은 펌웨어 복구만 가능하고, 제어기의 컨트롤 테이블 확인은 불가능 합니다.
-  - 로포플러스 매니저 2.0은 펌웨어 복구 및 제어기의 컨트롤 테이블을 확인할 수 있습니다.
+  - R+ Manager 2.0은 펌웨어 복구 및 제어기의 컨트롤 테이블을 확인할 수 있습니다.
     - 호환하지 않는 제어기는 로보플러스 매니저 1.0을 사용하세요.
   {% endcapture %}
   <div class="notice">{{ notice_01 | markdownify}}</div>
@@ -110,15 +110,15 @@ sidebar:
 
 |          모델           | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[OpenCM 485 확장보드]) | [OpenCM 7.0] | [OpenCR] |
 |:-----------------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:----------------------------------------:|:------------:|:--------:|
-| [로보플러스 태스크 2.0] |   O    |    O    |    O     |    O     |    O     |    O     |    O     |    X     |    O     |    X     |                   O(X)                   |      X       |    X     |
-| [로보플러스 매니저 2.0] |   O    |    X    |    X     |    O     |    O     |    O     |    O     |    X     |    O     |    X     |                   O(X)                   |      X       |    X     |
-|  [로보플러스 모션 2.0]  |   O    |    X    |    X     |    O     |    O     |    O     |    O     |    X     |    O     |    X     |                   O(X)                   |      X       |    X     |
+| [R+ Task 2.0] |   O    |    O    |    O     |    O     |    O     |    O     |    O     |    X     |    O     |    X     |                   O(X)                   |      X       |    X     |
+| [R+ Manager 2.0] |   O    |    X    |    X     |    O     |    O     |    O     |    O     |    X     |    O     |    X     |                   O(X)                   |      X       |    X     |
+|  [R+ Motion 2.0]  |   O    |    X    |    X     |    O     |    O     |    O     |    O     |    X     |    O     |    X     |                   O(X)                   |      X       |    X     |
 
 ### [로보플러스 3.0](#로보플러스-30)
 
 |          모델           | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[OpenCM 485 확장보드]) | [OpenCM 7.0] | [OpenCR] |
 |:-----------------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:----------------------------------------:|:------------:|:--------:|
-| [로보플러스 태스크 3.0] |   O    |    O    |    O     |    O     |    O     |    O     |    O     |    O     |    O     |    X     |                   O(X)                   |      O       |    X     |
+| [R+ Task 3.0] |   O    |    O    |    O     |    O     |    O     |    O     |    O     |    O     |    O     |    X     |                   O(X)                   |      O       |    X     |
 
 
 ### [로보플러스 모바일](#로보플러스-모바일)
@@ -136,7 +136,7 @@ sidebar:
 |:----------------------------------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:----------------------------------------:|:------------:|:--------:|
 | [로보플러스 SMART] <br> ( I / II / III ) |   X    |    X    |    X     |    X     |    O     |    X     |    X     |    X     |    X     |    X     |                    X                     |      X       |    X     |
 |            [로보플러스 블록]             |   X    |    O    |    X     |    O     |    X     |    X     |    X     |    X     |    X     |    X     |                    X                     |      O       |    X     |
-|             [로보플러스 IoT]             |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                    X                     |      O       |    X     |
+|             [R+ IoT]             |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                    X                     |      O       |    X     |
 |             [로보티즈 미니]              |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                   O(X)                   |      X       |    X     |
 |           로보플러스 Play 700            |   X    |    O    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                    X                     |      X       |    X     |
 
@@ -182,11 +182,11 @@ sidebar:
 [로보플러스 태스크 1.0]: /docs/kr/software/rplus1/task/getting_started/
 [로보플러스 매니저 1.0]: /docs/kr/software/rplus1/manager/
 [로보플러스 모션  1.0]: /docs/kr/software/rplus1/motion/
-[로보플러스 태스크 2.0]: /docs/kr/software/rplus2/task/
-[로보플러스 매니저 2.0]: /docs/kr/software/rplus2/manager/
-[로보플러스 모션 2.0]: /docs/kr/software/rplus2/motion/
-[로보플러스 태스크 3.0]: /docs/kr/software/rplustask3/
-[로보플러스 IoT]: /docs/kr/software/mobile_app/rplusiot/
+[R+ Task 2.0]: /docs/kr/software/rplus2/task/
+[R+ Manager 2.0]: /docs/kr/software/rplus2/manager/
+[R+ Motion 2.0]: /docs/kr/software/rplus2/motion/
+[R+ Task 3.0]: /docs/kr/software/rplustask3/
+[R+ IoT]: /docs/kr/software/mobile_app/rplusiot/
 [로보플러스 블록]: /docs/kr/software/rplus2/rplus2_block/
 [R+ m.Task]: /docs/kr/software/rplus_mobile/mtask/
 [R+ m.Task 2.0]: /docs/kr/software/rplus_mobile/mtask20/

@@ -5,58 +5,38 @@ main:
     url: /dxl/
     urlkr: /dxl/
     children:
+    - title: "P Series"
+      titlekr: "P 시리즈"
+      url: /dxl/p/
+      children:
+      - title: "PH54-200-S500-R (H54P)"
+        titlekr: "PH54-200-S500-R (H54P)"
+        url: /dxl/p/ph54-200-s500-r/
+      - title: "PH54-100-S500-R (H54P)"
+        titlekr: "PH54-100-S500-R (H54P)"
+        url: /dxl/p/ph54-100-s500-r/
+      - title: "PH42-020-S300-R (H42P)"
+        titlekr: "PH42-020-S300-R (H42P)"
+        url: /dxl/p/ph42-020-s300-r/
+      - title: "PM54-060-S250-R (M54P)"
+        titlekr: "PM54-060-S250-R (M54P)"
+        url: /dxl/p/pm54-060-s250-r/
+      - title: "PM54-040-S250-R (M54P)"
+        titlekr: "PM54-040-S250-R (M54P)"
+        url: /dxl/p/pm54-040-s250-r/
+      - title: "PM42-010-S260-R (M42P)"
+        titlekr: "PM42-010-S260-R (M42P)"
+        url: /dxl/p/pm42-010-s260-r/
     - title: "X Series"
       titlekr: "X 시리즈"
       url: /dxl/x/
       children:
-      - title: "XL-320"
-        titlekr: "XL-320"
-        url: /dxl/x/xl320/
-      - title: "XL330-M077" 
-        titlekr: "XL330-M077"
-        url: /dxl/x/xl330-m077/
-      - title: "XL330-M288" 
-        titlekr: "XL330-M288"
-        url: /dxl/x/xl330-m288/               
-      - title: "XL430-W250"
-        titlekr: "XL430-W250"
-        url: /dxl/x/xl430-w250/
-      - title: "2XL430-W250"
-        titlekr: "2XL430-W250"
-        url: /dxl/x/2xl430-w250/
-      - title: "XC430-W150"
-        titlekr: "XC430-W150"
-        url: /dxl/x/xc430-w150/
-      - title: "XC430-W240"
-        titlekr: "XC430-W240"
-        url: /dxl/x/xc430-w240/
-      - title: "2XC430-W250"
-        titlekr: "2XC430-W250"
-        url: /dxl/x/2xc430-w250/                
-      - title: "XM430-W210"
-        titlekr: "XM430-W210"
-        url: /dxl/x/xm430-w210/
-      - title: "XM430-W350"
-        titlekr: "XM430-W350"
-        url: /dxl/x/xm430-w350/
-      - title: "XH430-W210"
-        titlekr: "XH430-W210"
-        url: /dxl/x/xh430-w210/
-      - title: "XH430-W350"
-        titlekr: "XH430-W350"
-        url: /dxl/x/xh430-w350/
-      - title: "XH430-V210"
-        titlekr: "XH430-V210"
-        url: /dxl/x/xh430-v210/
-      - title: "XH430-V350"
-        titlekr: "XH430-V350"
-        url: /dxl/x/xh430-v350/
-      - title: "XM540-W150"
-        titlekr: "XM540-W150"
-        url: /dxl/x/xm540-w150/
-      - title: "XM540-W270"
-        titlekr: "XM540-W270"
-        url: /dxl/x/xm540-w270/
+      - title: "XW540-T140"
+        titlekr: "XW540-T140"
+        url: /dxl/x/xw540-t140/
+      - title: "XW540-T260"
+        titlekr: "XW540-T260"
+        url: /dxl/x/xw540-t260/        
       - title: "XH540-W150"
         titlekr: "XH540-W150"
         url: /dxl/x/xh540-w150/
@@ -68,72 +48,92 @@ main:
         url: /dxl/x/xh540-v150/
       - title: "XH540-V270"
         titlekr: "XH540-V270"
-        url: /dxl/x/xh540-v270/
-      - title: "XW540-T140"
-        titlekr: "XW540-T140"
-        url: /dxl/x/xw540-t140/
-      - title: "XW540-T260"
-        titlekr: "XW540-T260"
-        url: /dxl/x/xw540-t260/
-    - title: "P Series"
-      titlekr: "P 시리즈"
-      url: /dxl/p/
-      children:
-      - title: "PH42-020-S300-R (H42P)"
-        titlekr: "PH42-020-S300-R (H42P)"
-        url: /dxl/p/ph42-020-s300-r/
-      - title: "PH54-100-S500-R (H54P)"
-        titlekr: "PH54-100-S500-R (H54P)"
-        url: /dxl/p/ph54-100-s500-r/
-      - title: "PH54-200-S500-R (H54P)"
-        titlekr: "PH54-200-S500-R (H54P)"
-        url: /dxl/p/ph54-200-s500-r/
-      - title: "PM42-010-S260-R (M42P)"
-        titlekr: "PM42-010-S260-R (M42P)"
-        url: /dxl/p/pm42-010-s260-r/
-      - title: "PM54-040-S250-R (M54P)"
-        titlekr: "PM54-040-S250-R (M54P)"
-        url: /dxl/p/pm54-040-s250-r/
-      - title: "PM54-060-S250-R (M54P)"
-        titlekr: "PM54-060-S250-R (M54P)"
-        url: /dxl/p/pm54-060-s250-r/
+        url: /dxl/x/xh540-v270/        
+      - title: "XH430-W210"
+        titlekr: "XH430-W210"
+        url: /dxl/x/xh430-w210/
+      - title: "XH430-W350"
+        titlekr: "XH430-W350"
+        url: /dxl/x/xh430-w350/
+      - title: "XH430-V210"
+        titlekr: "XH430-V210"
+        url: /dxl/x/xh430-v210/
+      - title: "XH430-V350"
+        titlekr: "XH430-V350"
+        url: /dxl/x/xh430-v350/        
+      - title: "XM540-W150"
+        titlekr: "XM540-W150"
+        url: /dxl/x/xm540-w150/
+      - title: "XM540-W270"
+        titlekr: "XM540-W270"
+        url: /dxl/x/xm540-w270/        
+      - title: "XM430-W210"
+        titlekr: "XM430-W210"
+        url: /dxl/x/xm430-w210/
+      - title: "XM430-W350"
+        titlekr: "XM430-W350"
+        url: /dxl/x/xm430-w350/        
+      - title: "2XC430-W250"
+        titlekr: "2XC430-W250"
+        url: /dxl/x/2xc430-w250/            
+      - title: "XC430-W150"
+        titlekr: "XC430-W150"
+        url: /dxl/x/xc430-w150/
+      - title: "XC430-W240"
+        titlekr: "XC430-W240"
+        url: /dxl/x/xc430-w240/        
+      - title: "2XL430-W250"
+        titlekr: "2XL430-W250"
+        url: /dxl/x/2xl430-w250/      
+      - title: "XL430-W250"
+        titlekr: "XL430-W250"
+        url: /dxl/x/xl430-w250/
+      - title: "XL330-M077"
+        titlekr: "XL330-M077"
+        url: /dxl/x/xl330-m077/
+      - title: "XL330-M288"
+        titlekr: "XL330-M288"
+        url: /dxl/x/xl330-m288/      
+      - title: "XL-320"
+        titlekr: "XL-320"
+        url: /dxl/x/xl320/
     - title: "MX Series"
       titlekr: "MX 시리즈"
       url: /dxl/mx/
       children:
-      - title: "MX-12W"
-        titlekr: "MX-12W"
-        url: /dxl/mx/mx-12w/
-      - title: "MX-28T/R/AT/AR"
-        titlekr: "MX-28T/R/AT/AR"
-        url: /dxl/mx/mx-28/
-      - title: "MX-64T/R/AT/AR"
-        titlekr: "MX-64T/R/AT/AR"
-        url: /dxl/mx/mx-64/
-      - title: "MX-106T/R"
-        titlekr: "MX-106T/R"
-        url: /dxl/mx/mx-106/
-      - title: "MX-28T/R/AT/AR(2.0)"
-        titlekr: "MX-28T/R/AT/AR(2.0)"
-        url: /dxl/mx/mx-28-2/
+      - title: "MX-106T/R(2.0)"
+        titlekr: "MX-106T/R(2.0)"
+        url: /dxl/mx/mx-106-2/      
       - title: "MX-64T/R/AT/AR(2.0)"
         titlekr: "MX-64T/R/AT/AR(2.0)"
         url: /dxl/mx/mx-64-2/
-      - title: "MX-106T/R(2.0)"
-        titlekr: "MX-106T/R(2.0)"
-        url: /dxl/mx/mx-106-2/
+      - title: "MX-28T/R/AT/AR(2.0)"
+        titlekr: "MX-28T/R/AT/AR(2.0)"
+        url: /dxl/mx/mx-28-2/
+      - title: "MX-106T/R"
+        titlekr: "MX-106T/R"
+        url: /dxl/mx/mx-106/
+      - title: "MX-64T/R/AT/AR"
+        titlekr: "MX-64T/R/AT/AR"
+        url: /dxl/mx/mx-64/
+      - title: "MX-28T/R/AT/AR"
+        titlekr: "MX-28T/R/AT/AR"
+        url: /dxl/mx/mx-28/
+      - title: "MX-12W"
+        titlekr: "MX-12W"
+        url: /dxl/mx/mx-12w/
     - title: "AX Series"
       titlekr: "AX 시리즈"
       children:
-      - title: "AX-12W"
-        titlekr: "AX-12W"
-        url: /dxl/ax/ax-12w/
-      - title: "AX-12/12+/12A"
-        titlekr: "AX-12/12+/12A"
-        url: /dxl/ax/ax-12a/
       - title: "AX-18F/18A"
         titlekr: "AX-18F/18A"
         url: /dxl/ax/ax-18a/
+      - title: "AX-12/12+/12A"
+        titlekr: "AX-12/12+/12A"
+        url: /dxl/ax/ax-12a/
+      - title: "AX-12W"
+        titlekr: "AX-12W"
+        url: /dxl/ax/ax-12w/
     - title: "DYNAMIXEL Protocol 1.0"
       titlekr: "다이나믹셀 프로토콜 1.0"
       url: /dxl/protocol1/
@@ -231,37 +231,8 @@ main:
   - title: "DYNAMIXEL </br> SYSTEM"
     titlekr: "다이나믹셀 시스템"
     url: /platform/
-    urlkr: /platform/    
+    urlkr: /platform/
     children:
-    - title: "ROBOTIS OP"
-      titlekr: "로보티즈 OP"
-      url: /platform/op/getting_started/
-      children:  
-      - title: "ROBOTIS OP3"
-        titlekr: "로보티즈 OP3"
-        url: /platform/op3/introduction/
-      - title: "*ROBOTIS OP"
-        titlekr: "*로보티즈 OP"
-        url: /platform/op/getting_started/
-      - title: "*ROBOTIS OP2"
-        titlekr: "*로보티즈 OP2"
-        url: /platform/op2/getting_started/        
-    - title: "Robot Hands"
-      titlekr: "로봇핸드"
-      children:
-      - title: "RH-P12-RN(A)"
-        titlekr: "RH-P12-RN(A)"
-        url: /platform/rh_p12_rna/
-      - title: "RH-P12-RN-UR"
-        titlekr: "RH-P12-RN-UR"
-        url: /platform/rh_p12_rn_ur/
-      - titlekr: "*로봇핸드 RX28"
-        url: /platform/robothand_rx28/
-      - titlekr: "*로봇핸드 MX28"
-        url: /platform/robothand_mx28/
-    - title: "THORMANG3"
-      titlekr: "똘망3"
-      url: /platform/thormang3/introduction/
     - title: "TurtleBot3"
       titlekr: "터틀봇3"
       url: /platform/turtlebot3/overview/
@@ -278,10 +249,39 @@ main:
       - title: "*Manipulator-H"
         titlekr: "*Manipulator-H"
         url: /platform/manipulator_h/introduction/
+    - title: "Robot Hands"
+      titlekr: "로봇핸드"
+      children:
+      - title: "RH-P12-RN(A)"
+        titlekr: "RH-P12-RN(A)"
+        url: /platform/rh_p12_rna/
+      - title: "RH-P12-RN-UR"
+        titlekr: "RH-P12-RN-UR"
+        url: /platform/rh_p12_rn_ur/
+      - titlekr: "*로봇핸드 RX28"
+        url: /platform/robothand_rx28/
+      - titlekr: "*로봇핸드 MX28"
+      url: /platform/robothand_mx28/
+    - title: "ROBOTIS OP"
+      titlekr: "로보티즈 OP"
+      url: /platform/op/getting_started/
+      children:
+      - title: "ROBOTIS OP3"
+        titlekr: "로보티즈 OP3"
+        url: /platform/op3/introduction/
+      - title: "*ROBOTIS OP"
+        titlekr: "*로보티즈 OP"
+        url: /platform/op/getting_started/
+      - title: "*ROBOTIS OP2"
+        titlekr: "*로보티즈 OP2"
+        url: /platform/op2/getting_started/
+    - title: "THORMANG3"
+      titlekr: "똘망3"
+      url: /platform/thormang3/introduction/
   - title: "EDUCATIONAL </br> KITS"
     titlekr: "교육용 키트"
     url: /edu/
-    urlkr: /edu/    
+    urlkr: /edu/
     children:
     - title: "PLAY"
       children:
@@ -356,7 +356,7 @@ main:
         url: /edu/engineer/kit1/
       - title: "Kit 2"
         titlekr: "키트 2"
-        url: /edu/engineer/kit2_introduction/  
+        url: /edu/engineer/kit2_introduction/
     - title: "ROBOTIS MINI"
       titlekr: "로보티즈 미니"
       url: /edu/mini/
@@ -393,7 +393,7 @@ main:
       - title: "*SET A"
         url: /edu/dream/dream-a/
       - title: "*SET B"
-        url: /edu/dream/dream-b/    
+        url: /edu/dream/dream-b/
     - titlekr: "*스마트 I"
       children:
       - titlekr: "*1단계"
@@ -413,7 +413,7 @@ main:
   - title: "SOFTWARE"
     titlekr: "소프트웨어"
     url: /software/
-    urlkr: /software/    
+    urlkr: /software/
     children:
     - title: "DYNAMIXEL"
       titlekr: "다이나믹셀"
@@ -518,7 +518,7 @@ main:
   - title: "PARTS"
     titlekr: "부품"
     url: /parts/
-    urlkr: /parts/    
+    urlkr: /parts/
     children:
     - title: "Controller"
       titlekr: "제어기"
@@ -574,7 +574,7 @@ main:
         url: /parts/communication/rc-100/
       - title: "RC-200"
         titlekr: "RC-200"
-        url: /parts/communication/rc-200/            
+        url: /parts/communication/rc-200/
       - title: "BT-210"
         titlekr: "BT-210"
         url: /parts/communication/bt-210/
@@ -712,75 +712,69 @@ main:
         titlekr: "자주 묻는 질문"
         url: /faq/general
 
-        
 all-dynamixel:
-  - title: "DYNAMIXEL-X"
-    titlekr: "다이나믹셀-X"
-    url: /dxl/#dynamixel-x
-    urlkr: /dxl/#다이나믹셀-x
+  - title: "P Series"
+    titlekr: "P 시리즈"
+    url: /dxl/#p-series
+    urlkr: /dxl/#p-시리즈
     children:
-      - title: "XL Series"
-        titlekr: "XL 시리즈"
-        url: /dxl/#xl-series
-        urlkr: /dxl/#xl-시리즈
-      - title: "XC Series"
-        titlekr: "XC 시리즈"
-        url: /dxl/#xc-series
-        urlkr: /dxl/#xc-시리즈
+      - title: "PH Series"
+        titlekr: "PH 시리즈"
+        url: /dxl/#ph-series
+        urlkr: /dxl/#ph-시리즈
+      - title: "PM Series"
+        titlekr: "PM 시리즈"
+        url: /dxl/#pm-series
+        urlkr: /dxl/#pm-시리즈
+  - title: "X Series"
+    titlekr: "X 시리즈"
+    url: /dxl/#x-series
+    urlkr: /dxl/#x-시리즈
+    children:
+      - title: "XW Series"
+        titlekr: "XW 시리즈"
+        url: /dxl/#xw-series
+        urlkr: /dxl/#xw-시리즈
+      - title: "XH Series"
+        titlekr: "XH 시리즈"
+        url: /dxl/#xh-series
+        urlkr: /dxl/#xh-시리즈             
       - title: "XM Series"
         titlekr: "XM 시리즈"
         url: /dxl/#xm-series
         urlkr: /dxl/#xm-시리즈
-      - title: "XH Series"
-        titlekr: "XH 시리즈"
-        url: /dxl/#xh-series
-        urlkr: /dxl/#xh-시리즈
-      - title: "XW Series"
-        titlekr: "XW 시리즈"
-        url: /dxl/#xw-series
-        urlkr: /dxl/#xw-시리즈 
-  - title: "DYNAMIXEL"
-    titlekr: "다이나믹셀 "
-    url: /dxl/#dynamixel-
-    urlkr: /dxl/#다이나믹셀-
-    children:
-      - title: "AX Series"
-        titlekr: "AX 시리즈"
-        url: /dxl/#ax-series
-        urlkr: /dxl/#ax-시리즈 
-      - title: "EX Series"
-        titlekr: "EX 시리즈"
-        url: /dxl/#ex-series
-        urlkr: /dxl/#ex-시리즈
-      - title: "DX Series"
-        titlekr: "DX 시리즈"
-        url: /dxl/#dx-series
-        urlkr: /dxl/#dx-시리즈
-      - title: "RX Series"
-        titlekr: "RX 시리즈"
-        url: /dxl/#rx-series
-        urlkr: /dxl/#rx-시리즈
-      - title: "MX Series"
-        titlekr: "MX 시리즈"
-        url: /dxl/#mx-series
-        urlkr: /dxl/#mx-시리즈                                             
-  - title: "DYNAMIXEL-P"
-    titlekr: "다이나믹셀-P"
-    url: /dxl/#dynamixel-p
-    urlkr: /dxl/#다이나믹셀-p
-    children:
-      - title: "PH Seriese"
-        titlekr: "PH 시리즈"
-        url: /dxl/#ph-series
-        urlkr: /dxl/#ph-시리즈
-      - title: "PM Seriese"
-        titlekr: "PM 시리즈"
-        url: /dxl/#pm-series
-        urlkr: /dxl/#pm-시리즈        
-  - title: "DYNAMIXEL PRO"
-    titlekr: "다이나믹셀 PRO"
-    url: /dxl/#dynamixel-pro
-    urlkr: /dxl/#다이나믹셀-pro
+      - title: "XC Series"
+        titlekr: "XC 시리즈"
+        url: /dxl/#xc-series
+        urlkr: /dxl/#xc-시리즈        
+      - title: "XL Series"
+        titlekr: "XL 시리즈"
+        url: /dxl/#xl-series
+        urlkr: /dxl/#xl-시리즈        
+  - title: "MX Series"
+    titlekr: "MX 시리즈"
+    url: /dxl/#mx-series
+    urlkr: /dxl/#mx-시리즈
+  - title: "AX Series"
+    titlekr: "AX 시리즈"
+    url: /dxl/#ax-series
+    urlkr: /dxl/#ax-시리즈
+  - title: "EX Series"
+    titlekr: "EX 시리즈"
+    url: /dxl/#ex-series
+    urlkr: /dxl/#ex-시리즈
+  - title: "DX Series"
+    titlekr: "DX 시리즈"
+    url: /dxl/#dx-series
+    urlkr: /dxl/#dx-시리즈
+  - title: "RX Series"
+    titlekr: "RX 시리즈"
+    url: /dxl/#rx-series
+    urlkr: /dxl/#rx-시리즈
+  - title: "PRO Series"
+    titlekr: "PRO 시리즈"
+    url: /dxl/#pro-series
+    urlkr: /dxl/#pro-시리즈
     children:
       - title: "L Series"
         titlekr: "L 시리즈"
@@ -793,7 +787,7 @@ all-dynamixel:
       - title: "H Series"
         titlekr: "H 시리즈"
         url: /dxl/#h-series
-        urlkr: /dxl/#h-시리즈                
+        urlkr: /dxl/#h-시리즈
 
 all-platform:
   - title: "TurtleBot3"
@@ -803,7 +797,7 @@ all-platform:
   - title: "OpenMANIPULATOR"
     titlekr: "오픈매니퓰레이터"
     url: /platform/#openmanipulator
-    urlkr: /platform/#오픈매니퓰레이터  
+    urlkr: /platform/#오픈매니퓰레이터
   - title: "ROBOTIS OP"
     titlekr: "로보티즈 OP"
     url: /platform/#robotis-op
@@ -825,7 +819,7 @@ all-software:
   - title: "Arduino IDE"
     titlekr: "아두이노 IDE"
     url: /software/#arduino-ide
-    urlkr: /software/#아두이노-ide 
+    urlkr: /software/#아두이노-ide
   - title: "Development (SDK & ROS)"
     titlekr: "개발 (SDK & ROS)"
     url: /software/#development-sdk--ros
@@ -833,7 +827,7 @@ all-software:
   - title: "Roboplus (R+)"
     titlekr: "로보플러스"
     url: /software/#roboplus-r
-    urlkr: /software/#로보플러스    
+    urlkr: /software/#로보플러스
 
 all-controller:
   - title: "For DYNAMIXEL SYSTEM"
@@ -847,11 +841,11 @@ all-controller:
   - title: "For ROBOTIS MINI"
     titlekr: "로보티즈 미니 전용"
     url: /parts/all-controller/#for-robotis-mini
-    urlkr: /parts/all-controller/#로보티즈-미니-전용 
+    urlkr: /parts/all-controller/#로보티즈-미니-전용
   - title: "For ROBOTIS BIOLOID"
     titlekr: "로보티즈 바이올로이드 전용"
     url: /parts/all-controller/#for-robotis-engineer
-    urlkr: /parts/all-controller/#로보티즈-바이올로이드-전용  
+    urlkr: /parts/all-controller/#로보티즈-바이올로이드-전용
   - title: "For Play 600 & 700"
     titlekr: "로보티즈 플레이 600 & 700 전용"
     url: /parts/all-controller/#for-robotis-play-600--700
@@ -868,8 +862,8 @@ all-controller:
     titlekr: "로보티즈 Smart I & II & III 전용"
     url: /parts/all-controller/#for-robotis-smart-i--ii--iii
     urlkr: /parts/all-controller/#로보티즈-스마트-i--ii--iii-전용
-  
-all-interface: 
+
+all-interface:
   - title: "Communication Interfaces"
     titlekr: "통신 인터페이스"
     url: /parts/all_interfaces/#communication-interfaces
@@ -877,9 +871,9 @@ all-interface:
   - title: "Expansion Boards"
     titlekr: "확장보드"
     url: /parts/all_interfaces/#expansion boards
-    urlkr: /parts/all_interfaces/#확장보드      
+    urlkr: /parts/all_interfaces/#확장보드
 
-all-dyd: 
+all-dyd:
   - title: "Overview"
     titlekr: "개요"
     url: /all-dyd/#overview
@@ -3067,11 +3061,11 @@ mx-28:
       - title: "Gear Replacement"
         titlekr: "기어 교체"
         url: /dxl/mx/mx-28/#gear-replacement
-        urlkr: /dxl/mx/mx-28/#기어-교체        
+        urlkr: /dxl/mx/mx-28/#기어-교체
       - title: "DYNAMIXEL Calibration"
         titlekr: "다이나믹셀 캘리브레이션"
         url: /dxl/mx/mx-28/#dynamixel-calibration
-        urlkr: /dxl/mx/mx-28/#다이나믹셀-캘리브레이션            
+        urlkr: /dxl/mx/mx-28/#다이나믹셀-캘리브레이션
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/mx/mx-28/#reference
@@ -3084,7 +3078,7 @@ mx-28:
       - title: "Connector Information"
         titlekr: "커넥터 정보"
         url: /dxl/mx/mx-28/#connector-information
-        urlkr: /dxl/mx/mx-28/#커넥터-정보   
+        urlkr: /dxl/mx/mx-28/#커넥터-정보
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/mx/mx-28/#drawings
@@ -3259,11 +3253,11 @@ mx-64:
       - title: "Gear Replacement"
         titlekr: "기어 교체"
         url: /dxl/mx/mx-64/#gear-replacement
-        urlkr: /dxl/mx/mx-64/#기어-교체        
+        urlkr: /dxl/mx/mx-64/#기어-교체
       - title: "DYNAMIXEL Calibration"
         titlekr: "다이나믹셀 캘리브레이션"
         url: /dxl/mx/mx-64/#dynamixel-calibration
-        urlkr: /dxl/mx/mx-64/#다이나믹셀-캘리브레이션         
+        urlkr: /dxl/mx/mx-64/#다이나믹셀-캘리브레이션
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/mx/mx-64/#reference
@@ -3454,11 +3448,11 @@ mx-106:
       - title: "Gear Replacement"
         titlekr: "기어 교체"
         url: /dxl/mx/mx-106/#gear-replacement
-        urlkr: /dxl/mx/mx-106/#기어-교체        
+        urlkr: /dxl/mx/mx-106/#기어-교체
       - title: "DYNAMIXEL Calibration"
         titlekr: "다이나믹셀 캘리브레이션"
         url: /dxl/mx/mx-106/#dynamixel-calibration
-        urlkr: /dxl/mx/mx-106/#다이나믹셀-캘리브레이션         
+        urlkr: /dxl/mx/mx-106/#다이나믹셀-캘리브레이션
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/mx/mx-106/#reference
@@ -3685,11 +3679,11 @@ mx-28-2:
       - title: "Gear Replacement"
         titlekr: "기어 교체"
         url: /dxl/mx/mx-28-2/#gear-replacement
-        urlkr: /dxl/mx/mx-28-2/#기어-교체        
+        urlkr: /dxl/mx/mx-28-2/#기어-교체
       - title: "DYNAMIXEL Calibration"
         titlekr: "다이나믹셀 캘리브레이션"
         url: /dxl/mx/mx-28-2/#dynamixel-calibration
-        urlkr: /dxl/mx/mx-28-2/#다이나믹셀-캘리브레이션         
+        urlkr: /dxl/mx/mx-28-2/#다이나믹셀-캘리브레이션
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/mx/mx-28-2/#reference
@@ -3698,7 +3692,7 @@ mx-28-2:
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/mx/mx-28-2/#what-is-the-profile
-        urlkr: /dxl/mx/mx-28-2/#profile    
+        urlkr: /dxl/mx/mx-28-2/#profile
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/mx/mx-28-2/#certifications
@@ -3921,11 +3915,11 @@ mx-64-2:
       - title: "Gear Replacement"
         titlekr: "기어 교체"
         url: /dxl/mx/mx-64-2/#gear-replacement
-        urlkr: /dxl/mx/mx-64-2/#기어-교체        
+        urlkr: /dxl/mx/mx-64-2/#기어-교체
       - title: "DYNAMIXEL Calibration"
         titlekr: "다이나믹셀 캘리브레이션"
         url: /dxl/mx/mx-64-2/#dynamixel-calibration
-        urlkr: /dxl/mx/mx-64-2/#다이나믹셀-캘리브레이션         
+        urlkr: /dxl/mx/mx-64-2/#다이나믹셀-캘리브레이션
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/mx/mx-64-2/#reference
@@ -3934,7 +3928,7 @@ mx-64-2:
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/mx/mx-64-2/#what-is-the-profile
-        urlkr: /dxl/mx/mx-64-2/#profile      
+        urlkr: /dxl/mx/mx-64-2/#profile
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/mx/mx-64-2/#certifications
@@ -4161,11 +4155,11 @@ mx-106-2:
       - title: "Gear Replacement"
         titlekr: "기어 교체"
         url: /dxl/mx/mx-106-2/#gear-replacement
-        urlkr: /dxl/mx/mx-106-2/#기어-교체        
+        urlkr: /dxl/mx/mx-106-2/#기어-교체
       - title: "DYNAMIXEL Calibration"
         titlekr: "다이나믹셀 캘리브레이션"
         url: /dxl/mx/mx-106-2/#dynamixel-calibration
-        urlkr: /dxl/mx/mx-106-2/#다이나믹셀-캘리브레이션         
+        urlkr: /dxl/mx/mx-106-2/#다이나믹셀-캘리브레이션
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/mx/mx-106-2/#reference
@@ -4174,7 +4168,7 @@ mx-106-2:
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/mx/mx-106-2/#what-is-the-profile
-        urlkr: /dxl/mx/mx-106-2/#profile    
+        urlkr: /dxl/mx/mx-106-2/#profile
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/mx/mx-106-2/#certifications
@@ -4196,32 +4190,32 @@ dxl_x_main:
     titlekr: "특징"
     url: /dxl/x/#features
     urlkr: /dxl/x/#특징
-  - title: "DYNAMIXEL-X"
-    titlekr: "다이나믹셀-X"
-    url: /dxl/x/#dynamixel-x
-    urlkr: /dxl/x/#다이나믹셀-x
+  - title: "X Series"
+    titlekr: "X 시리즈"
+    url: /dxl/x/#x-series
+    urlkr: /dxl/x/#x-시리즈
     children:
       - title: "XW Series"
-        titlekr: "XW-시리즈"
+        titlekr: "XW 시리즈"
         url: /dxl/x/#xw-series
         urlkr: /dxl/x/#xw-시리즈
       - title: "XH Series"
-        titlekr: "XH-시리즈"
+        titlekr: "XH 시리즈"
         url: /dxl/x/#xh-series
         urlkr: /dxl/x/#xh-시리즈
       - title: "XM Series"
-        titlekr: "XM-시리즈"
+        titlekr: "XM 시리즈"
         url: /dxl/x/#xm-series
         urlkr: /dxl/x/#xm-시리즈
       - title: "XC Series"
-        titlekr: "XC-시리즈"
+        titlekr: "XC 시리즈"
         url: /dxl/x/#xc-series
         urlkr: /dxl/x/#xc-시리즈
       - title: "XL Series"
-        titlekr: "XL-시리즈"
+        titlekr: "XL 시리즈"
         url: /dxl/x/#xl-series
         urlkr: /dxl/x/#xl-시리즈
-    
+
 #XH430-V210 sidebar
 xh430-v210:
   - title: "Specifications"
@@ -4680,7 +4674,7 @@ xh430-v350:
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xh430-v350/#what-is-the-profile
-        urlkr: /dxl/x/xh430-v350/#profile      
+        urlkr: /dxl/x/xh430-v350/#profile
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/xh430-v350/#certifications
@@ -4920,7 +4914,7 @@ xh430-w210:
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xh430-w210/#what-is-the-profile
-        urlkr: /dxl/x/xh430-w210/#profile      
+        urlkr: /dxl/x/xh430-w210/#profile
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/xh430-w210/#certifications
@@ -5164,7 +5158,7 @@ xh430-w350:
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xh430-w350/#what-is-the-profile
-        urlkr: /dxl/x/xh430-w350/#profile      
+        urlkr: /dxl/x/xh430-w350/#profile
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/xh430-w350/#certifications
@@ -5188,7 +5182,7 @@ xh430-w350:
       - title: "Moment of Inertia"
         titlekr: "Moment of Inertia"
         url: /dxl/x/xh430-w350/#moment-of-inertia
-        urlkr: /dxl/x/xh430-w350/#moment-of-inertia      
+        urlkr: /dxl/x/xh430-w350/#moment-of-inertia
 
 #XL320 sidebar
 xl320:
@@ -5351,7 +5345,7 @@ xl330-m077:
         url: /dxl/x/xl330-m077/#minmax-position-limit48-52
       - title: "PWM Slope(62)"
         titlekr: "PWM Slope(62)"
-        url: /dxl/x/xl330-m077/#pwm-slope62      
+        url: /dxl/x/xl330-m077/#pwm-slope62
       - title: "Shutdown(63)"
         titlekr: "Shutdown(63)"
         url: /dxl/x/xl330-m077/#shutdown63
@@ -5571,7 +5565,7 @@ xl330-m288:
         url: /dxl/x/xl330-m288/#minmax-position-limit48-52
       - title: "PWM Slope(62)"
         titlekr: "PWM Slope(62)"
-        url: /dxl/x/xl330-m288/#pwm-slope62       
+        url: /dxl/x/xl330-m288/#pwm-slope62
       - title: "Shutdown(63)"
         titlekr: "Shutdown(63)"
         url: /dxl/x/xl330-m288/#shutdown63
@@ -5760,7 +5754,7 @@ xl430-w250-test:
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xl430-w250/test/#what-is-the-profile
-        urlkr: /dxl/x/xl430-w250/test/#profile      
+        urlkr: /dxl/x/xl430-w250/test/#profile
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/xl430-w250/test/#certifications
@@ -5985,7 +5979,7 @@ xl430-w250:
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xl430-w250/#what-is-the-profile
-        urlkr: /dxl/x/xl430-w250/#profile      
+        urlkr: /dxl/x/xl430-w250/#profile
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/xl430-w250/#certifications
@@ -6219,7 +6213,7 @@ xc430-w150:
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xc430-w150/#what-is-the-profile
-        urlkr: /dxl/x/xc430-w150/#profile      
+        urlkr: /dxl/x/xc430-w150/#profile
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/xc430-w150/#certifications
@@ -6453,7 +6447,7 @@ xc430-w240:
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xc430-w240/#what-is-the-profile
-        urlkr: /dxl/x/xc430-w240/#profile      
+        urlkr: /dxl/x/xc430-w240/#profile
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/xc430-w240/#certifications
@@ -6678,7 +6672,7 @@ xc430-w240:
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/2xl430-w250/#what-is-the-profile
-        urlkr: /dxl/x/2xl430-w250/#profile      
+        urlkr: /dxl/x/2xl430-w250/#profile
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/2xl430-w250/#certifications
@@ -6903,7 +6897,7 @@ xc430-w240:
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/2xc430-w250/#what-is-the-profile
-        urlkr: /dxl/x/2xc430-w250/#profile      
+        urlkr: /dxl/x/2xc430-w250/#profile
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/2xc430-w250/#certifications
@@ -7144,7 +7138,7 @@ xm430-w210:
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xm430-w210/#what-is-the-profile
-        urlkr: /dxl/x/xm430-w210/#profile      
+        urlkr: /dxl/x/xm430-w210/#profile
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/xm430-w210/#certifications
@@ -7168,7 +7162,7 @@ xm430-w210:
       - title: "Moment of Inertia"
         titlekr: "Moment of Inertia"
         url: /dxl/x/xm430-w210/#moment-of-inertia
-        urlkr: /dxl/x/xm430-w210/#moment-of-inertia         
+        urlkr: /dxl/x/xm430-w210/#moment-of-inertia
 
 #XM430-W350 sidebar
 xm430-w350:
@@ -7388,7 +7382,7 @@ xm430-w350:
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xm430-w350/#what-is-the-profile
-        urlkr: /dxl/x/xm430-w350/#profile      
+        urlkr: /dxl/x/xm430-w350/#profile
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/xm430-w350/#certifications
@@ -7412,7 +7406,7 @@ xm430-w350:
       - title: "Moment of Inertia"
         titlekr: "Moment of Inertia"
         url: /dxl/x/xm430-w350/#moment-of-inertia
-        urlkr: /dxl/x/xm430-w350/#moment-of-inertia            
+        urlkr: /dxl/x/xm430-w350/#moment-of-inertia
 
 #XM540-W150 sidebar
 xm540-w150:
@@ -7638,7 +7632,7 @@ xm540-w150:
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xm540-w150/#what-is-the-profile
-        urlkr: /dxl/x/xm540-w150/#profile      
+        urlkr: /dxl/x/xm540-w150/#profile
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/xm540-w150/#certifications
@@ -7888,7 +7882,7 @@ xm540-w270:
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xm540-w270/#what-is-the-profile
-        urlkr: /dxl/x/xm540-w270/#profile      
+        urlkr: /dxl/x/xm540-w270/#profile
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/xm540-w270/#certifications
@@ -8145,12 +8139,12 @@ xw540-t140:
       - title: "How to Use the Water Proof Cable"
         titlekr: "케이블 연결 및 분리"
         url: /dxl/x/xw540-t140/#how-to-use-the-water-proof-cable
-        urlkr: /dxl/x/xw540-t140/#케이블-연결-및-분리          
+        urlkr: /dxl/x/xw540-t140/#케이블-연결-및-분리
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/x/xw540-t140/#drawings
         urlkr: /dxl/x/xw540-t140/#도면
-                
+
 #XW540-T260 sidebar
 xw540-t260:
   - title: "Specifications"
@@ -8362,7 +8356,7 @@ xw540-t260:
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xw540-t260/#what-is-the-profile
-        urlkr: /dxl/x/xw540-t260/#profile      
+        urlkr: /dxl/x/xw540-t260/#profile
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/xw540-t260/#certifications
@@ -8382,7 +8376,7 @@ xw540-t260:
       - title: "How to Use the Water Proof Cable"
         titlekr: "케이블 연결 및 분리"
         url: /dxl/x/xw540-t260/#how-to-use-the-water-proof-cable
-        urlkr: /dxl/x/xw540-t260/#케이블-연결-및-분리           
+        urlkr: /dxl/x/xw540-t260/#케이블-연결-및-분리
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/x/xw540-t260/#drawings
@@ -8612,7 +8606,7 @@ xh540-w150:
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xh540-w150/#what-is-the-profile
-        urlkr: /dxl/x/xh540-w150/#profile      
+        urlkr: /dxl/x/xh540-w150/#profile
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/xh540-w150/#certifications
@@ -8862,7 +8856,7 @@ xh540-w270:
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xh540-w270/#what-is-the-profile
-        urlkr: /dxl/x/xh540-w270/#profile      
+        urlkr: /dxl/x/xh540-w270/#profile
       - title: "Certifications"
         titlekr: "인증 획득"
         url: /dxl/x/xh540-w270/#certifications
@@ -8886,7 +8880,7 @@ xh540-w270:
       - title: "Moment of Inertia"
         titlekr: "Moment of Inertia"
         url: /dxl/x/xh540-w270/#moment-of-inertia
-        urlkr: /dxl/x/xh540-w270/#moment-of-inertia        
+        urlkr: /dxl/x/xh540-w270/#moment-of-inertia
 
 #XH540-V150 sidebar
 xh540-v150:
@@ -9112,7 +9106,7 @@ xh540-v150:
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xh540-v150/#what-is-the-profile
-        urlkr: /dxl/x/xh540-v150/#profile      
+        urlkr: /dxl/x/xh540-v150/#profile
       - title: "Quick Start"
         titlekr: "퀵스타트"
         url: /dxl/x/xh540-v150/#quick-start
@@ -9354,7 +9348,7 @@ xh540-v270:
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xh540-v270/#what-is-the-profile
-        urlkr: /dxl/x/xh540-v270/#profile      
+        urlkr: /dxl/x/xh540-v270/#profile
       - title: "Quick Start"
         titlekr: "퀵스타트"
         url: /dxl/x/xh540-v270/#quick-start
@@ -13609,7 +13603,7 @@ ph42-020-s300-r:
     - title: "Moment of Inertia"
       titlekr: "Moment of Inertia"
       url: /dxl/p/ph42-020-s300-r/#moment-of-inertia
-      urlkr: /dxl/p/ph42-020-s300-r/#moment-of-inertia      
+      urlkr: /dxl/p/ph42-020-s300-r/#moment-of-inertia
 
 pm42-010-s260-r:
 - title: "Specifications"
@@ -13842,7 +13836,7 @@ pm42-010-s260-r:
     - title: "Moment of Inertia"
       titlekr: "Moment of Inertia"
       url: /dxl/p/pm42-010-s260-r/#moment-of-inertia
-      urlkr: /dxl/p/pm42-010-s260-r/#moment-of-inertia        
+      urlkr: /dxl/p/pm42-010-s260-r/#moment-of-inertia
 
 pm54-040-s250-r:
 - title: "Specifications"
@@ -14075,7 +14069,7 @@ pm54-040-s250-r:
     - title: "Moment of Inertia"
       titlekr: "Moment of Inertia"
       url: /dxl/p/pm54-040-s250-r/#moment-of-inertia
-      urlkr: /dxl/p/pm54-040-s250-r/#moment-of-inertia              
+      urlkr: /dxl/p/pm54-040-s250-r/#moment-of-inertia
 
 pm54-060-s250-r:
 - title: "Specifications"
@@ -14308,7 +14302,7 @@ pm54-060-s250-r:
     - title: "Moment of Inertia"
       titlekr: "Moment of Inertia"
       url: /dxl/p/pm54-060-s250-r/#moment-of-inertia
-      urlkr: /dxl/p/pm54-060-s250-r/#moment-of-inertia         
+      urlkr: /dxl/p/pm54-060-s250-r/#moment-of-inertia
 
 #Protocol 1.0 sidebar
 protocol1:
@@ -15600,7 +15594,7 @@ kit1_main:
     url: /edu/engineer/kit1_main/#english
   - title: "Korea"
     url: /edu/engineer/kit1_main/#korea
-    
+
 #ROBOTIS ENGINEER KIT sidebar
 kit1:
   - title: "Introduction"
@@ -15767,7 +15761,7 @@ kit2:
         - title: "Raspberry Pi Camera"
           titlekr: "Raspberry Pi 카메라"
           url: /edu/engineer/kit2_introduction/#raspberry-pi-camera
-          urlkr: /edu/engineer/kit2_introduction/#raspberry-pi-카메라 
+          urlkr: /edu/engineer/kit2_introduction/#raspberry-pi-카메라
       - title: "DYNAMIXEL"
         titlekr: "다이나믹셀"
         url: /edu/engineer/kit2_introduction/#dynamixel-
@@ -15779,11 +15773,11 @@ kit2:
       - title: "Servo Motor"
         titlekr: "서보모터"
         url: /edu/engineer/kit2_introduction/#servo-motor
-        urlkr: /edu/engineer/kit2_introduction/#서보모터  
+        urlkr: /edu/engineer/kit2_introduction/#서보모터
       - title: "DMS-80"
         titlekr: "DMS-80"
         url: /edu/engineer/kit2_introduction/#dms-80
-        urlkr: /edu/engineer/kit2_introduction/#dms-80     
+        urlkr: /edu/engineer/kit2_introduction/#dms-80
     - title: "Cautions"
       titlekr: "주의사항"
       url: /edu/engineer/kit2_introduction/#cautions
@@ -15804,7 +15798,7 @@ kit2:
       - title: "Assembly Precautions"
         titlekr: "조립시 주의사항"
         url: /edu/engineer/kit2_introduction/#assembly-precautions
-        urlkr: /edu/engineer/kit2_introduction/#조립시-주의사항     
+        urlkr: /edu/engineer/kit2_introduction/#조립시-주의사항
   - title: "Quick Start"
     titlekr: "작동하기"
     url: /edu/engineer/kit2_quickstart/#quick-start
@@ -15860,7 +15854,7 @@ kit2:
     - title: "Setting Video Streaming on ROBOTIS ENGINEER App"
       titlekr: "앱에서 영상 스트리밍 기능 설정하기"
       url: /edu/engineer/kit2_reference/#setting-video-streaming-on-robotis-engineer-app
-      urlkr: /edu/engineer/kit2_reference/#앱에서-영상-스트리밍-기능-설정하기 
+      urlkr: /edu/engineer/kit2_reference/#앱에서-영상-스트리밍-기능-설정하기
     - title: "Raspberry Pi Update and Recovery"
       titlekr: "Raspberry Pi 업데이트 및 복구"
       url: /edu/engineer/kit2_reference/#raspberry-pi-update-and-recovery
@@ -15868,7 +15862,7 @@ kit2:
     - title: "BLE Signal Setting"
       titlekr: "제어기 BLE 신호 세기 설정"
       url: /edu/engineer/kit2_reference/#ble-signal-setting
-      urlkr: /edu/engineer/kit2_reference/#제어기-ble-신호-세기-설정     
+      urlkr: /edu/engineer/kit2_reference/#제어기-ble-신호-세기-설정
     - title: "Setting Up the Robot"
       titlekr: "로봇 설정하기"
       url: /edu/engineer/kit2_reference/#setting-up-the-robot
@@ -15902,7 +15896,7 @@ kit2:
       - title: "Download a MARKER for Commando"
         titlekr: "Commando Marker 다운로드 받기"
         url: /edu/engineer/kit2_reference/#download-a-marker-for-commando
-        urlkr: /edu/engineer/kit2_reference/#commando-marker-다운로드-받기               
+        urlkr: /edu/engineer/kit2_reference/#commando-marker-다운로드-받기
     - title: "Self Checklist"
       titlekr: "점검 및 자가진단"
       url: /edu/engineer/kit2_reference/#self-checklist
@@ -17276,9 +17270,9 @@ turtlebot3:
     - title: "Bringup"
       url: /platform/turtlebot3/manipulation/#bringup
     - title: "Simulation"
-      url: /platform/turtlebot3/manipulation/#simulation  
+      url: /platform/turtlebot3/manipulation/#simulation
     - title: "Operate the Actual OpenMANIPULATOR"
-      url: /platform/turtlebot3/manipulation/#operate-the-actual-openmanipulator        
+      url: /platform/turtlebot3/manipulation/#operate-the-actual-openmanipulator
     - title: "SLAM"
       url: /platform/turtlebot3/manipulation/#slam
     - title: "Navigation"
@@ -17300,7 +17294,7 @@ turtlebot3:
         url: /platform/turtlebot3/home_service_challenge/#simulation
   - title: "Autonomous Driving"
     url: /platform/turtlebot3/autonomous_driving/#autonomous-driving
-    children: 
+    children:
     - title: "Getting Started"
       url: /platform/turtlebot3/autonomous_driving/#getting-started
     - title: "Camera Calibration"
@@ -17469,7 +17463,7 @@ openmanipulator:
     url: /platform/openmanipulator_main/#openmanipulator-x
   - title : "OpenMANIPULATOR-P"
     url: /platform/openmanipulator_main/#openmanipulator-p
-    
+
 #OpenMANIPULATOR-X sidebar
 openmanipulator_x:
   - title: "Overview"
@@ -17551,7 +17545,7 @@ openmanipulator_x:
           - title: "PS4 Joystick"
             url: /platform/openmanipulator_x/ros_operation/#ps4-joystick
           - title: "XBOX 360 Joystick"
-            url: /platform/openmanipulator_x/ros_operation/#xbox-360-joystick                   
+            url: /platform/openmanipulator_x/ros_operation/#xbox-360-joystick
   - title: "[ROS] Simulation"
     url: /platform/openmanipulator_x/ros_simulation/#ros-simulation
     children:
@@ -17578,14 +17572,14 @@ openmanipulator_x:
     children:
       - title: "MoveIt!"
         url:  /platform/openmanipulator_x/ros_controls/#moveit
-        children: 
+        children:
           - title: "Install MoveIt Packages"
             url: /platform/openmanipulator_x/ros_controls/#install-moveit-packages
           - title: "Launch MoveIt!"
             url: /platform/openmanipulator_x/ros_controls/#launch-moveit
       - title: "Gravity Compensation"
         url: /platform/openmanipulator_x/ros_controls/#gravity-compensation
-        children: 
+        children:
           - title: "Install Gravity Compensation Packages"
             url: /platform/openmanipulator_x/ros_controls/#install-gravity-compensation-packages
           - title: "Set Operating Mode to Current Mode"
@@ -17659,7 +17653,7 @@ openmanipulator_x:
         url: /platform/openmanipulator_x/ros2_controls/#moveit
   - title: "[ROS 2] Applications"
     url: /platform/openmanipulator_x/ros2_applications/#ros-applications
-    children: 
+    children:
       - title: "Master and Slave"
         url: /platform/openmanipulator_x/ros2_applications/#master-and-slave
         children:
@@ -17716,7 +17710,7 @@ openmanipulator_x:
         url: /platform/openmanipulator_x/friends/#openmanipulator-stewart
       - title: "OpenMANIPULATOR Linear"
         url: /platform/openmanipulator_x/friends/#openmanipulator-linear
-        
+
 #OpenManipulator-P
 openmanipulator_p:
   - title: "Overview"
@@ -17832,13 +17826,13 @@ openmanipulator_p:
               - title: "Launch Gazebo"
                 url: /platform/openmanipulator_p/ros_tools/#launch-gazebo
               - title: "Controller for Gazebo"
-                url: /platform/openmanipulator_p/ros_tools/#controller-for-gazebo        
+                url: /platform/openmanipulator_p/ros_tools/#controller-for-gazebo
   - title: "[ROS] Perceptions"
     url: /platform/openmanipulator_p/ros_perceptions/
-    children: 
+    children:
       - title: "Camera"
         url: /platform/openmanipulator_p/ros_perceptions/#camera
-        children: 
+        children:
           - title: "Install Camera Package"
             url: /platform/openmanipulator_p/ros_perceptions/#install-camera-package
           - title: "Install AR Marker Package"
@@ -17853,9 +17847,9 @@ openmanipulator_p:
       - title: "MoveIt!"
         url: /platform/openmanipulator_p/ros_controls/#moveit
         children:
-          - title: "Install MoveIt Packages" 
+          - title: "Install MoveIt Packages"
             url: /platform/openmanipulator_p/ros_controls/#install-moveit-packages
-          - title: "Launch MoveIt!" 
+          - title: "Launch MoveIt!"
             url: /platform/openmanipulator_p/ros_controls/#launch-moveit
   - title: "[ROS] Applications"
     url: /platform/openmanipulator_p/ros_applications/
@@ -17905,7 +17899,7 @@ openmanipulator_p:
   - title: "[ROS 2] Tools"
     url: /platform/openmanipulator_p/ros2_tools
   - title: "[ROS 2] Perceptions"
-    children: 
+    children:
       - title: "Camera"
         url: /platform/openmanipulator_p/ros2_perceptions/#camera
   - title: "[ROS 2] Controls"
@@ -19026,7 +19020,7 @@ download_task_code:
   - title: "CM-550"
     titlekr: "CM-550"
     url: /faq/download_task_code/#cm-550
-    urlkr: /faq/download_task_code/#cm-550    
+    urlkr: /faq/download_task_code/#cm-550
 - title: "Videos"
   titlekr: "동영상"
   url: /faq/download_task_code/#videos
@@ -19040,9 +19034,9 @@ rplusmanager2:
     urlkr: /software/rplus2/manager/#개요
     children:
     - title: "RoboPlus Manager 2.0"
-      titlekr: "로보플러스 매니저 2.0"
+      titlekr: "R+ Manager 2.0"
       url: /software/rplus2/manager/#roboplus-manager-20
-      urlkr: /software/rplus2/manager/#로보플러스-매니저-20
+      urlkr: /software/rplus2/manager/#r-manger-20
     - title: "Precautions"
       titlekr: "사용전 주의사항"
       url: /software/rplus2/manager/#precautions
@@ -21962,7 +21956,7 @@ controller_compatibility:
       urlkr: /parts/controller/controller_compatibility/#소프트웨어-호환표
       children:
       - title: "R+ 1.0"
-        titlekr: "로보플러스 1.0"      
+        titlekr: "로보플러스 1.0"
         url: /parts/controller/controller_compatibility/#r-10
         urlkr: /parts/controller/controller_compatibility/#로보플러스-10
       - title: "R+ 2.0"
@@ -21985,7 +21979,7 @@ controller_compatibility:
         titlekr: "기타 소프트웨어"
         url: /parts/controller/controller_compatibility/#etc
         urlkr: /parts/controller/controller_compatibility/#기타-소프트웨어
-          
+
 #CM-50 Controller sidebar
 cm-50:
   - title: "Introduction"
@@ -22414,11 +22408,11 @@ cm-550:
     urlkr: /parts/controller/cm-550/#호환-소프트웨어
     children:
     - title: "R+ Manager 2.0"
-      titlekr: "로보플러스 매니저 2.0"
+      titlekr: "R+ Manager 2.0"
       url: /parts/controller/cm-550/#r-manager-20
-      urlkr: /parts/controller/cm-550/#로보플러스-매니저-20
+      urlkr: /parts/controller/cm-550/#r-manger-20
     - title: "R+ Task 3.0"
-      titlekr: "로보플러스 태스크 3.0"
+      titlekr: "R+ Task 3.0"
       url: /parts/controller/cm-550/#r-task-30
       urlkr: /parts/controller/cm-550/#로보플러스-태스크-30
   - title: "Connect to PC"
@@ -22839,7 +22833,7 @@ opencm485exp_jp:
     url: /parts/controller/opencm485exp_jp/#ボタン-そして-led
   - title: "ダウンロード"
     url: /parts/controller/opencm485exp_jp/#ダウンロード
-    
+
 #OpenCM 485 EXP sidebar
 opencm485exp:
   - title: "Introduction"
@@ -23042,7 +23036,7 @@ opencr10:
     - title: "DYNAMIXEL Connectors"
       url: /parts/controller/opencr10/#dynamixel-connectors
     - title: "Communication Circuit"
-      url: /parts/controller/opencr10/#communication-circuit    
+      url: /parts/controller/opencr10/#communication-circuit
     - title: "Download"
       url: /parts/controller/opencr10/#download
     - title: "Certifications"
@@ -23171,7 +23165,7 @@ opencr10_jp:
       - title: "フォルダ構造"
         url: /parts/controller/opencr10_jp/#フォルダ構造
       - title: "ブートローダーのアップデート"
-        url: /parts/controller/opencr10_jp/#ブートローダーのアップデート     
+        url: /parts/controller/opencr10_jp/#ブートローダーのアップデート
       - title: "DFUモードに入る"
         url: /parts/controller/opencr10_jp/#dfuモードに入る
       - title: "ブートモードの確認"
@@ -23201,11 +23195,11 @@ opencr10_jp:
     - title: "DYNAMIXEL コネクタ"
       url: /parts/controller/opencr10_jp/#dynamixel-コネクタ
     - title: "通信回路"
-      url: /parts/controller/opencr10_jp/#通信回路    
+      url: /parts/controller/opencr10_jp/#通信回路
     - title: "ダウンロード"
       url: /parts/controller/opencr10_jp/#ダウンロード
     - title: "認証"
-      url: /parts/controller/opencr10_jp/#認証      
+      url: /parts/controller/opencr10_jp/#認証
 
 dynamixel_shield:
   - title: "Introduction"
@@ -23224,7 +23218,7 @@ dynamixel_shield:
       - title: "Use of Serial Monitor with DYNAMIXEL Shield"
         url: /parts/interface/dynamixel_shield/#use-of-serial-monitor-with-dynamixel-shield
       - titlekr: "시리얼 모니터 사용시 주의사항"
-        url: /parts/interface/dynamixel_shield/#시리얼-모니터-사용시-주의사항        
+        url: /parts/interface/dynamixel_shield/#시리얼-모니터-사용시-주의사항
   - title: "Connecting Power"
     titlekr: "전원 연결 방법"
     url: /parts/interface/dynamixel_shield/#connecting-power
@@ -23391,7 +23385,7 @@ opencm7:
     children:
     - titlekr: "인증 획득"
       urlkr: /parts/controller/opencm7/#인증-획득
-  
+
 rc-100:
   - title: "Introduction"
     titlekr: "개요"
@@ -23452,7 +23446,7 @@ rc-200:
     titlekr: "퀵스타트"
     url: /parts/communication/rc-200/#quick-start
     url: /parts/communication/rc-200/#퀵스타트
-    children: 
+    children:
     - title: "How to Set the Communication Channel"
       titlekr: "통신 채널 설정 방법"
       url: /parts/communication/rc-200/#how-to-set-the-communication-channel
@@ -23464,7 +23458,7 @@ rc-200:
     - title: "How to Check the Communication Channel"
       titlekr: "통신 채널 확인 방법"
       url: /parts/communication/rc-200/#how-to-check-the-communication-channel
-      urlkr: /parts/communication/rc-200/#통신-채널-확인-방법    
+      urlkr: /parts/communication/rc-200/#통신-채널-확인-방법
     - title: "When to Replace the Battery"
       titlekr: "건전지 교체 시기"
       url: /parts/communication/rc-200/#when-to-replace-the-battery
@@ -24137,7 +24131,7 @@ u2d2:
         titlekr: "인증 획득"
         url: /parts/interface/u2d2/#certifications
         urlkr: /parts/interface/u2d2/#인증-획득
-        
+
 dyd-11:
   - title: "Overview"
     titlekr: "개요"
@@ -24246,7 +24240,7 @@ dxl-quick-start:
       - title: "DYNAMIXEL and CM-Series"
         url: /dxl/dxl-quick-start-insert/#dynamixel-and-cm-series
       - title: "DYNAMIXEL and Arduino"
-        url: /dxl/dxl-quick-start-insert/#dynamixel-and-arduino     
+        url: /dxl/dxl-quick-start-insert/#dynamixel-and-arduino
 
 contents-guide:
   - title: "Contents Guide"

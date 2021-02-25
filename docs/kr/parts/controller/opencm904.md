@@ -78,7 +78,7 @@ sidebar:
 
 **주의**  
 OpenCM9.04의 컨트롤 테이블은 기본 펌웨어를 사용해서 접근이 가능하며, 아두이노 또는 다른 프로그램의 코드를 다운로드하면 사용할 수 없게 됩니다.  
-다시 로보플러스 소프트웨어와 연결해서 컨트롤 테이블을 사용하려면 로보플러스 매니저 2.0을 통해 펌웨어를 복구해야 합니다.
+다시 로보플러스 소프트웨어와 연결해서 컨트롤 테이블을 사용하려면 R+ Manager 2.0을 통해 펌웨어를 복구해야 합니다.
 {: .notice--warning}
 
 컨트롤 테이블은 제어기 내부에 존재하는 데이터의 집합체입니다. 사용자는 컨트롤 테이블의 주소를 이용하여
@@ -821,7 +821,7 @@ Dynamixel2Arduino 클래스는 Master 클래스로부터 다음의 함수를 상
 
   ![](/assets/images/parts/controller/opencm904/recovery_led.jpg)
 
-[로보플러스 매니저 2.0: 펌웨어 복구](/docs/kr/software/rplus2/manager/#펌웨어-복구) 또는 [로보플러스 매니저 1.0: 펌웨어 복구](/docs/kr/software/rplus1/manager/#펌웨어-복구)를 참조하세요.
+[R+ Manager 2.0: 펌웨어 복구](/docs/kr/software/rplus2/manager/#펌웨어-복구) 또는 [로보플러스 매니저 1.0: 펌웨어 복구](/docs/kr/software/rplus1/manager/#펌웨어-복구)를 참조하세요.
 {: .notice}
 
 ## [USB 드라이버 설치 하기 ](#usb-드라이버-설치-하기-)

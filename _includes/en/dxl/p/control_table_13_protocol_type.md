@@ -19,7 +19,7 @@ In order to use Modbus-RTU with RH-P12-RN(A), please update the firmware to V12 
 [DYNAMIXEL Protocol 2.0]: /docs/en/dxl/protocol2/
 [Modbus-RTU, Industrial Standard Protocol]: http://modbus.org/docs/PI_MBUS_300.pdf
 
-**WARNING** : In order to change the Protocol Type(13) of DYNAMIXEL-P series, use [DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/) as R+ Manager 2.0 does not support Modbus-RTU.
+**WARNING** : In order to change the Protocol Type(13) of DYNAMIXEL-P, use [DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/) as R+ Manager 2.0 does not support Modbus-RTU.
 {: .notice--warning}
 
 {% capture warn01 %}

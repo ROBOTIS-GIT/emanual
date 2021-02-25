@@ -20,10 +20,10 @@
 {: .notice}
 {% endif %}
 
-**참고**: MX(2.0)은 프로토콜 2.0을 지원하는 MX 시리즈의 별도 펌웨어를 의미합니다. DYNAMIXEL Wizard2.0의 [펌웨어 복구](/docs/kr/software/dynamixel/dynamixel_wizard2/#펌웨어-복구) 기능을 활용 또는 [로보플러스 매니저 2.0](/docs/kr/software/rplus2/manager/#펌웨어-복구)를 활용하여 MX(2.0) 펌웨어로 업그레이드할 수 있습니다. (프로토콜 2.0의 컨트롤 테이블은 [{{ mx_model }} (2.0) 컨트롤 테이블] 에서 확인 가능합니다.)
+**참고**: MX(2.0)은 프로토콜 2.0을 지원하는 MX 시리즈의 별도 펌웨어를 의미합니다. DYNAMIXEL Wizard2.0의 [펌웨어 복구](/docs/kr/software/dynamixel/dynamixel_wizard2/#펌웨어-복구) 기능을 활용 또는 [R+ Manager 2.0](/docs/kr/software/rplus2/manager/#펌웨어-복구)를 활용하여 MX(2.0) 펌웨어로 업그레이드할 수 있습니다. (프로토콜 2.0의 컨트롤 테이블은 [{{ mx_model }} (2.0) 컨트롤 테이블] 에서 확인 가능합니다.)
 {: .notice}
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/q_gAewi_dyY" frameborder="0" allowfullscreen></iframe>
 
-> 로보플러스 매니저 2.0으로 펌웨어 업데이트하기
+> R+ Manager 2.0으로 펌웨어 업데이트하기

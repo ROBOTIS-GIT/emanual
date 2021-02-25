@@ -32,7 +32,7 @@ page_number: 1
 OpenMANIPULATOR-P (RM-P60-RNH) is based on ROS and OpenSource. Users can also control it more easily by linking it with the MoveIt! package. Even if you don't have an actual robot, you can control the robot in the Gazebo simulator​.
 
 ## [DYNAMIXEL Examples](#dynamixel-examples)
-OpenMANIPULATOR-P (RM-P60-RNH) is composed of [DYNAMIXEL-P series](/docs/en/dxl/p/). DYNAMIXEL has a modular form and adopts the daisy chain method. It allows users to easily add or remove joints for their own use.  
+OpenMANIPULATOR-P (RM-P60-RNH) is composed of [DYNAMIXEL-P](/docs/en/dxl/p/). DYNAMIXEL has a modular form and adopts the daisy chain method. It allows users to easily add or remove joints for their own use.  
 
 ## [Introduction Video](#introduction-video)
 
