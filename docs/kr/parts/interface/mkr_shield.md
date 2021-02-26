@@ -46,7 +46,7 @@ sidebar:
 |          동작 온도          | -10 ~ +80 [&deg;C]                                                                                 |
 |     커넥터<sup>2</sup>     | JST([S3B-EH]), Molex([5268-02A])<br>배터리 커넥터<sup>3</sup>([SMW250-02])<br>터미널 블럭([DG350-3.5-02P-14]) |
 |          통신 연결          | TTL Multidrop Bus (5V Level)                                                                       |
-|           케이블           | DC 잭 케이블 (Type A, O.D.: 5.5 [mm], I.D.: 2.5 [mm])<br>XL-320 변환 케이블                            |
+|           케이블           | ![](/assets/images/parts/interface/mkr_shield/dc_jack_polarity.png)<br>DC 잭 케이블. Type A, O.D: 5.5 [mm], I.D: 2.5 [mm]<br>XL-320 변환 케이블                            |
 |           크기            | 65 x 25 [mm]                                                                                       |
 |           무게            | 11 [g]                                                                                             |
 

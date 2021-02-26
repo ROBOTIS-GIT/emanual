@@ -45,7 +45,7 @@ Please refer to [DYNAMIXEL Shield Libraries](#dynamixel-shield-libraries) sectio
 |    Operating Temperature     | -10 ~ +80 [&deg;C]                                                                                                   |
 |    Connectors<sup>2</sup>    | JST([S3B-EH]), Molex([5268-02A])<br>Battery Connector<sup>3</sup>([SMW250-02])<br>Terminal Block([DG350-3.5-02P-14]) |
 |     Physical Connection      | TTL Multidrop Bus (5V Level)                                                                                         |
-|            Cables            | DC Jack Harness (Type A, O.D.: 5.5 [mm], I.D.: 2.5 [mm])<br>Convertible cable for XL-320                             |
+|            Cables            | ![](/assets/images/parts/interface/mkr_shield/dc_jack_polarity.png)<br>DC Jack Harness (Type A, O.D: 5.5 [mm], I.D: 2.5 [mm])<br>Convertible cable for XL-320                             |
 |          Dimensions          | 65 x 25 [mm]                                                                                                         |
 |            Weight            | 11 [g]                                                                                                               |
 
