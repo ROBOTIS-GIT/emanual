@@ -7,16 +7,14 @@ share: true
 author_profile: false
 permalink: /docs/en/edu/pycm
 sidebar:
-  title: PYCM API
+  title: CM-550 MicroPython API
   nav: "pycm"
 product_group: pycm
 ---
 
 <!-- **Last Modified** : Feburary 22nd, 2021 -->
 
-# CM-550 MicroPython API  
-
-## **Table of Contents**
+# **[Table of Contents](#table-of-contents)**
 
 **[Abstract](#abstract)**  
 
@@ -44,9 +42,9 @@ product_group: pycm
   - [button.millis()](#buttonmillis)
   - [button.seconds()](#buttonseconds)
 - [imu](#imu)
-  - [eeprom.imu_type(direction)](#eepromimutypedirection)
-  - [imu.accel_x() / imu.accel_y() / imu.accel_z()](#imuaccelx--imuaccely--imuaccelz)
-  - [imu.gyro_x() / imu.gyro_y() / imu.gyro_z()](#imugyrox--imugyroy--imugyroz)
+  - [eeprom.imu_type(direction)](#eepromimu_typedirection)
+  - [imu.accel_x() / imu.accel_y() / imu.accel_z()](#imuaccel_x--imuaccel_y--imuaccel_z)
+  - [imu.gyro_x() / imu.gyro_y() / imu.gyro_z()](#imugyro_x--imugyro_y--imugyro_z)
   - [imu.roll()](#imuroll)
   - [imu.pitch()](#imupitch)
   - [imu.yaw()](#imuyaw)

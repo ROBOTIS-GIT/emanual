@@ -15923,6 +15923,8 @@ kit2:
       urlkr: /edu/engineer/kit2_reference/#도면
 
 pycm:
+  - title: "Table of Contents"
+    url: /edu/pycm/#table-of-contents
   - title: "Abstract"
     url: /edu/pycm/#abstract
   - title: "pycm module"
@@ -15944,7 +15946,7 @@ pycm:
   - title: "Submodule of pycm(CM-550)"
     url: /edu/pycm/#submodule-of-pycmcm-550
     children:
-    - title: "buzzer()"
+    - title: "buzzer"
       url: /edu/pycm/#buzzer
       children:
       - title: "buzzer.melody()"
@@ -15983,9 +15985,7 @@ pycm:
       - title: "imu.gyro_x() / imu.gyro_y() / imu.gyro_z()"
         url: /edu/pycm/#imugyro_x--imugyro_y--imugyro_z
       - title: "imu.roll()"
-        url: /edu/pycm/#imuroll       
-      - title: "imu.gyro_x() / imu.gyro_y() / imu.gyro_z()"
-        url: /edu/pycm/#imugyrox--imugyroy--imugyroz
+        url: /edu/pycm/#imuroll
       - title: "imu.pitch()"
         url: /edu/pycm/#imupitch                              
       - title: "imu.yaw()"
