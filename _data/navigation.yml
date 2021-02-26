@@ -15922,75 +15922,113 @@ kit2:
 
 pycm:
   - title: "Abstract"
-    url: /docs/en/edu/pycm/#abstract
+    url: /edu/pycm/#abstract
   - title: "pycm module"
-    url: /docs/en/edu/pycm/#pycm-module
+    url: /edu/pycm/#pycm-module
     children:
     - title: "Definition"
-      url: /docs/en/edu/pycm/#definition
+      url: /edu/pycm/#definition
     - title: "How to use"
-      url: /docs/en/edu/pycm/#how-to-use
+      url: /edu/pycm/#how-to-use
   - title: "System Functions"
-    url: /docs/en/edu/pycm/#system-functions
+    url: /edu/pycm/#system-functions
     children:
     - title: "delay()"
-      url: /docs/en/edu/pycm/#definition
+      url: /edu/pycm/#delay
     - title: "console()"
-      url: /docs/en/edu/pycm/#console
+      url: /edu/pycm/#console
     - title: "print()"
-      url: /docs/en/edu/pycm/#print    
+      url: /edu/pycm/#print    
   - title: "Submodule of pycm(CM-550)"
-    url: /docs/en/edu/pycm/#submodule-of-pycmcm-550
+    url: /edu/pycm/#submodule-of-pycmcm-550
     children:
     - title: "buzzer()"
-      url: /docs/en/edu/pycm/#buzzer
+      url: /edu/pycm/#buzzer
       children:
       - title: "buzzer.melody()"
-        url: /docs/en/edu/pycm/#buzzermelody
+        url: /edu/pycm/#buzzermelody
       - title: "buzzer.wait()"
-        url: /docs/en/edu/pycm/#buzzerwait
+        url: /edu/pycm/#buzzerwait
       - title: "buzzer.note()"
-        url: /docs/en/edu/pycm/#buzzernote
+        url: /edu/pycm/#buzzernote
     - title: "led"
-      url: /docs/en/edu/pycm/#led
+      url: /edu/pycm/#led
       children:
       - title: "led.set()"
-        url: /docs/en/edu/pycm/#ledset
+        url: /edu/pycm/#ledset
       - title: "led.toggle()"
-        url: /docs/en/edu/pycm/#ledtoggle
+        url: /edu/pycm/#ledtoggle
       - title: "Constant values for led"
-        url: /docs/en/edu/pycm/#constant-values-for-led
+        url: /edu/pycm/#constant-values-for-led
     - title: "button"
-      url: /docs/en/edu/pycm/#button
+      url: /edu/pycm/#button
       children:
       - title: "button.pressed()"
-        url: /docs/en/edu/pycm/#buttonpressed
+        url: /edu/pycm/#buttonpressed
       - title: "button.released()"
-        url: /docs/en/edu/pycm/#buttonreleased
+        url: /edu/pycm/#buttonreleased
       - title: "button.millis()"
-        url: /docs/en/edu/pycm/#buttonmillis      
+        url: /edu/pycm/#buttonmillis      
       - title: "button.seconds()"
-        url: /docs/en/edu/pycm/#buttonseconds 
+        url: /edu/pycm/#buttonseconds 
     - title: "imu"
-      url: /docs/en/edu/pycm/#imu
+      url: /edu/pycm/#imu
       children:
       - title: "eeprom.imu_type(direction)"
-        url: /docs/en/edu/pycm/#eepromimutypedirection
+        url: /edu/pycm/#eepromimu_typedirection
       - title: "imu.accel_x() / imu.accel_y() / imu.accel_z()"
-        url: /docs/en/edu/pycm/#imuaccelx--imuaccely--imuaccelz
+        url: /edu/pycm/#imuaccel_x--imuaccel_y--imuaccel_z
       - title: "imu.gyro_x() / imu.gyro_y() / imu.gyro_z()"
-        url: /docs/en/edu/pycm/#imugyrox--imugyroy--imugyroz
+        url: /edu/pycm/#imugyro_x--imugyro_y--imugyro_z
       - title: "imu.roll()"
-        url: /docs/en/edu/pycm/#imuroll       
+        url: /edu/pycm/#imuroll       
       - title: "imu.gyro_x() / imu.gyro_y() / imu.gyro_z()"
-        url: /docs/en/edu/pycm/#imugyrox--imugyroy--imugyroz
+        url: /edu/pycm/#imugyrox--imugyroy--imugyroz
       - title: "imu.pitch()"
-        url: /docs/en/edu/pycm/#imupitch                              
+        url: /edu/pycm/#imupitch                              
       - title: "imu.yaw()"
-        url: /docs/en/edu/pycm/#imuyaw                  
-        
+        url: /edu/pycm/#imuyaw                  
+    - title: "mic"
+      url: /edu/pycm/#mic
+      children:
+      - title: "mic.counting()"
+        url: /edu/pycm/#miccounting
+      - title: "mic.counted()"
+        url: /edu/pycm/#miccounted
+      - title: "mic.clear()"
+        url: /edu/pycm/#micclear  
+    - title: "rc"
+      url: /edu/pycm/#rc
+      children:
+      - title: "rc.received()"
+        url: /edu/pycm/#rcreceived
+      - title: "rc.read()"
+        url: /edu/pycm/#rcread
+      - title: "Constant values for rc"
+        url: /edu/pycm/#constant-values-for-rc   
+    - title: "motion"
+      url: /edu/pycm/#motion
+      children:
+      - title: "motion.wait()"
+        url: /edu/pycm/#motionwait
+      - title: "motion.play()"
+        url: /edu/pycm/#motionplay
+      - title: "motion.status()"
+        url: /edu/pycm/#motionstatus 
+      - title: "motion.count()"
+        url: /edu/pycm/#motioncount
+    - title: "OLLO APIs"
+      url: /edu/pycm/#ollo-apis
+      children:
+      - title: "OLLO()"
+        url: /edu/pycm/#ollo
+      - title: "object.read()"
+        url: /edu/pycm/#objectread
+      - title: "object.write()"
+        url: /edu/pycm/#objectwrite
+      - title: "Constant values for OLLO"
+        url: /edu/pycm/#constant-values-for-ollo       
       
-
 #ROBOTIS MINI sidebar
 mini:
   - title: "Introduction"
@@ -24292,8 +24330,8 @@ faq_steam:
 dxl_software_compatibility:
   - title: "R+"
     titlekr: "로보플러스"
-    url: /docs/en/faq/dxl_software_compatibility/
-    urlkr: /docs/kr/faq/dxl_software_compatibility/
+    url: /faq/dxl_software_compatibility/
+    urlkr: /faq/dxl_software_compatibility/
 
 dxl-quick-start:
   - title: "Getting Started"

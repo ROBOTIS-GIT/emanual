@@ -83,6 +83,9 @@ pycm is a module for controlling CM-550 hardware with MicoroPython, and it conta
 
 ### Example 1
 
+All examples in the e-Manual of pycm use this method similarly.
+{: .notice}
+
 pycm can be omitted when using its submodules.
 
 ```py
@@ -310,7 +313,7 @@ turn on specified LEDs or turn off all LEDs
 
 #### Parameters
 
-- leds : const.RED, const.GREEN, const.BLUE, const.ALL(combination of RED|GREEN|BLUE)
+- leds : const.RED, const.GREEN, const.BLUE, const.ALL(combination of RED/GREEN/BLUE)
 - None : Turn off all LEDs
 
 #### Returns
@@ -342,7 +345,7 @@ toggle the specified LEDs (ON -> OFF, OFF -> ON)
 
 #### Parameters
 
-- leds : const.RED, const.GREEN, const.BLUE, const.ALL(combination of RED|GREEN|BLUE)
+- leds : const.RED, const.GREEN, const.BLUE, const.ALL(combination of RED/GREEN/BLUE)
 
 #### Returns
 
@@ -508,12 +511,15 @@ while True:
 
 #### Parameters
 
-- direction : const.V or const.H
-  - const.V (vertical)  
-    ![image_v]()
-  - const.H (horizontal)  
-    ![image_h]
+- direction : const.V or const.H   
+  
+  ![cm550_const_v](/assets/images/edu/engineer/kit2/pycm_api/cm550_const_v.png)
+  > const.V (vertical)
+    
 
+  ![cm550_const_h](/assets/images/edu/engineer/kit2/pycm_api/cm550_const_h.png)
+  > const.H (horizontal)
+  
 #### Returns
 
 - None 
@@ -545,7 +551,7 @@ Acceleration value in X/Y/Z-axis
 #### Returns
 
 - acceleration value of range -32768 ~ 32767 (unit: 0.001G)  
-  ![image_accel_range]()
+  ![cm550_accel_range](/assets/images/edu/engineer/kit2/pycm_api/cm550_accel_range.png)
 
 #### Example
 
@@ -580,7 +586,7 @@ gyroeration value in X/Y/Z-axis
 #### Returns
 
 - Gyro value of range -32768 ~ 32767 (unit: 0.01&deg;/s)  
-  ![image_gyro_range]()
+  ![cm550_image_gyro_range](/assets/images/edu/engineer/kit2/pycm_api/cm550_image_gyro_range.png)
 
 #### Example
 
@@ -615,7 +621,7 @@ roll value
 #### Returns
 
 - roll value of range -18000 ~ 18000 (unit: 0.01&deg;)  
-  ![image_rpy_range]()
+  ![cm550_rpy_roll_range](/assets/images/edu/engineer/kit2/pycm_api/cm550_rpy_roll_range.png)
 
 #### Example
 
@@ -648,7 +654,6 @@ pitch value
 #### Returns
 
 - pitch value of range -9000 ~ 9000 (unit: 0.01&deg;)  
-  ![image_rpy_range]()
 
 #### Example
 
@@ -681,7 +686,6 @@ yaw value
 #### Returns
 
 - yaw value of range -18000 ~ 18000 (unit: 0.01&deg;)  
-  ![image_rpy_range]()
 
 #### Example
 
@@ -880,7 +884,7 @@ read the value of the last arrived remocon packet
 - rc.BTN_4 (128) : Button 4 of RC-100B remote controller
 - rc.BTN_5 (256) : Button 5 of RC-100B remote controller
 - rc.BTN_6 (512) : Button 6 of RC-100B remote controller
-- OR(|) combination of rc.BTN_X keys
+- OR(\|) combination of rc.BTN_X keys
 
 #### Example
 
@@ -1131,23 +1135,42 @@ Read sensing value of specified 5-pin module object
 
 | module_type (device link) | Function | Meaning of return value                | Range                                                                                   |
 |:--------------------------|:--------:|:---------------------------------------|:----------------------------------------------------------------------------------------|
-| OLLO_WHEEL_SPEED          |  read()  | Wheel motor speed                      | [0, 1023] CCW<br>[1024, 2047] CW                                                        |
-| OLLO_JOINT_POSITION       |  read()  | Servo motor position                   | [0, 1023]                                                                               |
-| OLLO_JOINT_SPEED          |  read()  | Servo motor speed                      | [0, 1023]                                                                               |
-| OLLO_IR                   |  read()  | IR sensor value                        | [0, 1023]                                                                               |
-| OLLO_MOISTURE             |  read()  | Relative humidity value                | [0, 100] (%)                                                                            |
-| OLLO_MOISTURE_TEMP        |  read()  | Temperature value                      | [-20, 105] (&deg;C)                                                                     |
+| [OLLO_WHEEL_SPEED]        |  read()  | Wheel motor speed                      | [0, 1023] CCW<br>[1024, 2047] CW                                                        |
+| [OLLO_JOINT_POSITION]     |  read()  | Servo motor position                   | [0, 1023]                                                                               |
+| [OLLO_JOINT_SPEED]        |  read()  | Servo motor speed                      | [0, 1023]                                                                               |
+| [OLLO_IR]                 |  read()  | IR sensor value                        | [0, 1023]                                                                               |
+| [OLLO_MOISTURE]           |  read()  | Relative humidity value                | [0, 100] (%)                                                                            |
+| [OLLO_MOISTURE_TEMP]      |  read()  | Temperature value                      | [-20, 105] (&deg;C)                                                                     |
 | OLLO_RED_BRIGHTNESS       |  read()  | Red brightness of Red-Blue LED Module  | [0, 100] (%)                                                                            |
 | OLLO_BLUE_BRIGHTNESS      |  read()  | Blue brightness of Red-Blue LED Module | [0, 100] (%)                                                                            |
-| OLLO_DMS                  |  read()  | DMS sensor value                       | [0, 1023]                                                                               |
-| OLLO_TOUCH                |  read()  | Tact switch sensor status              | 0 : Released<br>1 : Pushed                                                              |
-| OLLO_LED                  |  read()  | LED module status                      | 0 : Both OFF<br>1 : Left OFF, Right ON<br>2 : Left ON, Right OFF<br>3 : Both ON         |
-| OLLO_USER                 |  read()  | Analog value of User Device            | [0, 1023]                                                                               |
-| OLLO_TEMPERATURE          |  read()  | temperature value                      | [-20, 105] (&deg;C)                                                                     |
-| OLLO_MAGNET               |  read()  | Magnet sensor status                   | 0 : No magnet<br>1 : Magnet detected                                                    |
-| OLLO_MOTION_DETECTION     |  read()  | Motion sensor status                   | 0 : No motion<br>1 : Motion detected                                                    |
-| OLLO_COLOR                |  read()  | Sensed color index                     | 0 : Unknown<br>1 : White<br>2 : Black<br>3 : Red<br>4 : Green<br>5 : Blue<br>6 : Yellow |
-| OLLO_BRIGHTNESS           |  read()  | Brightness                             | [0, 1023]                                                                               |
+| [OLLO_DMS]                |  read()  | DMS sensor value                       | [0, 1023]                                                                               |
+| [OLLO_TOUCH]              |  read()  | Tact switch sensor status              | 0 : Released<br>1 : Pushed                                                              |
+| [OLLO_LED]                |  read()  | LED module status                      | 0 : Both OFF<br>1 : Left OFF, Right ON<br>2 : Left ON, Right OFF<br>3 : Both ON         |
+| [OLLO_USER]               |  read()  | Analog value of User Device            | [0, 1023]                                                                               |
+| [OLLO_TEMPERATURE]        |  read()  | temperature value                      | [-20, 105] (&deg;C)                                                                     |
+| [OLLO_MAGNET]             |  read()  | Magnet sensor status                   | 0 : No magnet<br>1 : Magnet detected                                                    |
+| [OLLO_MOTION_DETECTION]   |  read()  | Motion sensor status                   | 0 : No motion<br>1 : Motion detected                                                    |
+| [OLLO_COLOR]              |  read()  | Sensed color index                     | 0 : Unknown<br>1 : White<br>2 : Black<br>3 : Red<br>4 : Green<br>5 : Blue<br>6 : Yellow |
+| [OLLO_BRIGHTNESS]         |  read()  | Brightness                             | [0, 1023]                                                                               |
+
+**NOTE**: OLLO_MOISTURE, OLLO_MOISTURE_TEMP and OLLO_BRIGHTNESS's manuals are currently available for Korean instruction only. 
+{: .notice}
+
+[OLLO_WHEEL_SPEED]: /docs/en/parts/motor/gm-10a/
+[OLLO_JOINT_POSITION]: /docs/en/parts/motor/servo_motor/ 
+[OLLO_JOINT_SPEED]: /docs/en/parts/motor/servo_motor/ 
+[OLLO_IR]: /docs/en/parts/sensor/irss-10/
+[OLLO_MOISTURE]: /docs/kr/parts/sensor/tms-10/
+[OLLO_MOISTURE_TEMP]: /docs/kr/parts/sensor/tms-10/ 
+[OLLO_DMS]: /docs/en/parts/sensor/dms-80/
+[OLLO_TOUCH]: /docs/en/parts/sensor/ts-10/
+[OLLO_LED]: /docs/en/parts/display/lm-10/         
+[OLLO_USER]: /docs/en/edu/bioloid/gp/#make-your-own-sensor            
+[OLLO_TEMPERATURE]: /docs/en/parts/sensor/tps-10/
+[OLLO_MAGNET]: /docs/en/parts/sensor/mgss-10/
+[OLLO_MOTION_DETECTION]: /docs/en/parts/sensor/pir-10/
+[OLLO_COLOR]: /docs/en/parts/sensor/cs-10/
+[OLLO_BRIGHTNESS]: /docs/kr/parts/sensor/cds-10/ 
 
 #### Example
 
@@ -1176,11 +1199,11 @@ Change 5-pin module object’s parameter
 
 | module_type (device link) |      Function      | Meaning of parameter                                                     | Range                            |
 |:--------------------------|:------------------:|:-------------------------------------------------------------------------|:---------------------------------|
-| OLLO_WHEEL_SPEED          |  write(velocity)   | Wheel motor velocity                                                     | [0, 1023] CCW<br>[1024, 2047] CW |
-| OLLO_JOINT_POSITION       |  write(position)   | Servo motor position                                                     | [0, 1023]                        |
-| OLLO_JOINT_SPEED          |    write(speed)    | Servo motor speed for position control                                   | [0, 1023]                        |
-| OLLO_LED                  | write(left, write) | left : control value for left LED<br>right : control value for right LED | 0 : OFF<br>1 : ON                |
-| OLLO_USER                 | write(out1, out2)  | out1 : control value for OUT1 pin<br>out2 : control value for OUT2 pin   | 0 : 0V<br>1 : 5V                 |
+| [OLLO_WHEEL_SPEED]        |  write(velocity)   | Wheel motor velocity                                                     | [0, 1023] CCW<br>[1024, 2047] CW |
+| [OLLO_JOINT_POSITION]     |  write(position)   | Servo motor position                                                     | [0, 1023]                        |
+| [OLLO_JOINT_SPEED]        |    write(speed)    | Servo motor speed for position control                                   | [0, 1023]                        |
+| [OLLO_LED]                | write(left, write) | left : control value for left LED<br>right : control value for right LED | 0 : OFF<br>1 : ON                |
+| [OLLO_USER]               | write(out1, out2)  | out1 : control value for OUT1 pin<br>out2 : control value for OUT2 pin   | 0 : 0V<br>1 : 5V                 |
 
 #### Returns
 
