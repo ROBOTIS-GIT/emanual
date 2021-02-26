@@ -15922,7 +15922,115 @@ kit2:
       url: /edu/engineer/kit2_reference/#drawings
       urlkr: /edu/engineer/kit2_reference/#도면
 
-
+pycm:
+  - title: "Abstract"
+    url: /edu/pycm/#abstract
+  - title: "pycm module"
+    url: /edu/pycm/#pycm-module
+    children:
+    - title: "Definition"
+      url: /edu/pycm/#definition
+    - title: "How to use"
+      url: /edu/pycm/#how-to-use
+  - title: "System Functions"
+    url: /edu/pycm/#system-functions
+    children:
+    - title: "delay()"
+      url: /edu/pycm/#delay
+    - title: "console()"
+      url: /edu/pycm/#console
+    - title: "print()"
+      url: /edu/pycm/#print    
+  - title: "Submodule of pycm(CM-550)"
+    url: /edu/pycm/#submodule-of-pycmcm-550
+    children:
+    - title: "buzzer()"
+      url: /edu/pycm/#buzzer
+      children:
+      - title: "buzzer.melody()"
+        url: /edu/pycm/#buzzermelody
+      - title: "buzzer.wait()"
+        url: /edu/pycm/#buzzerwait
+      - title: "buzzer.note()"
+        url: /edu/pycm/#buzzernote
+    - title: "led"
+      url: /edu/pycm/#led
+      children:
+      - title: "led.set()"
+        url: /edu/pycm/#ledset
+      - title: "led.toggle()"
+        url: /edu/pycm/#ledtoggle
+      - title: "Constant values for led"
+        url: /edu/pycm/#constant-values-for-led
+    - title: "button"
+      url: /edu/pycm/#button
+      children:
+      - title: "button.pressed()"
+        url: /edu/pycm/#buttonpressed
+      - title: "button.released()"
+        url: /edu/pycm/#buttonreleased
+      - title: "button.millis()"
+        url: /edu/pycm/#buttonmillis      
+      - title: "button.seconds()"
+        url: /edu/pycm/#buttonseconds 
+    - title: "imu"
+      url: /edu/pycm/#imu
+      children:
+      - title: "eeprom.imu_type(direction)"
+        url: /edu/pycm/#eepromimu_typedirection
+      - title: "imu.accel_x() / imu.accel_y() / imu.accel_z()"
+        url: /edu/pycm/#imuaccel_x--imuaccel_y--imuaccel_z
+      - title: "imu.gyro_x() / imu.gyro_y() / imu.gyro_z()"
+        url: /edu/pycm/#imugyro_x--imugyro_y--imugyro_z
+      - title: "imu.roll()"
+        url: /edu/pycm/#imuroll       
+      - title: "imu.gyro_x() / imu.gyro_y() / imu.gyro_z()"
+        url: /edu/pycm/#imugyrox--imugyroy--imugyroz
+      - title: "imu.pitch()"
+        url: /edu/pycm/#imupitch                              
+      - title: "imu.yaw()"
+        url: /edu/pycm/#imuyaw                  
+    - title: "mic"
+      url: /edu/pycm/#mic
+      children:
+      - title: "mic.counting()"
+        url: /edu/pycm/#miccounting
+      - title: "mic.counted()"
+        url: /edu/pycm/#miccounted
+      - title: "mic.clear()"
+        url: /edu/pycm/#micclear  
+    - title: "rc"
+      url: /edu/pycm/#rc
+      children:
+      - title: "rc.received()"
+        url: /edu/pycm/#rcreceived
+      - title: "rc.read()"
+        url: /edu/pycm/#rcread
+      - title: "Constant values for rc"
+        url: /edu/pycm/#constant-values-for-rc   
+    - title: "motion"
+      url: /edu/pycm/#motion
+      children:
+      - title: "motion.wait()"
+        url: /edu/pycm/#motionwait
+      - title: "motion.play()"
+        url: /edu/pycm/#motionplay
+      - title: "motion.status()"
+        url: /edu/pycm/#motionstatus 
+      - title: "motion.count()"
+        url: /edu/pycm/#motioncount
+    - title: "OLLO APIs"
+      url: /edu/pycm/#ollo-apis
+      children:
+      - title: "OLLO()"
+        url: /edu/pycm/#ollo
+      - title: "object.read()"
+        url: /edu/pycm/#objectread
+      - title: "object.write()"
+        url: /edu/pycm/#objectwrite
+      - title: "Constant values for OLLO"
+        url: /edu/pycm/#constant-values-for-ollo       
+      
 #ROBOTIS MINI sidebar
 mini:
   - title: "Introduction"
@@ -24224,8 +24332,8 @@ faq_steam:
 dxl_software_compatibility:
   - title: "R+"
     titlekr: "로보플러스"
-    url: /docs/en/faq/dxl_software_compatibility/
-    urlkr: /docs/kr/faq/dxl_software_compatibility/
+    url: /faq/dxl_software_compatibility/
+    urlkr: /faq/dxl_software_compatibility/
 
 dxl-quick-start:
   - title: "Getting Started"
