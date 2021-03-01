@@ -38,8 +38,10 @@ product_group: all-dyd
 |        Dimension (O.D. X H)        |     mm      | 78 x 34.2  | 78 x 34.2  |  -   |
 |               Weight               |      g      |    600     |    600     |  -   |
 
-**Note**: The specification and figures in the list are subject to update for the continuous product performance improvement.
+**NOTE**: The specification and figures in the list are subject to update for the continuous product performance improvement.
 {: .notice}
+
+{% include en/dyd/dyd_warning.md %}
 
 ## [Efficiency](#efficiency)
 
@@ -78,7 +80,7 @@ When a straight connection cannot be made due to a restriction in space, RG opti
 
 > RG Option
 
-**Note**: RG option does not affect the final reduction ratio.
+**NOTE**: RG option does not affect the final reduction ratio.
 {: .notice}
 
 ## [Input shaft options](#input-shaft-options)
@@ -90,7 +92,7 @@ Various input shaft options can be selected with the DYD.
 | Shape  | ![](/assets/images/dyd/dyd_clamp_ring_01.png) | ![](/assets/images/dyd/dyd_d_cut.png) | ![](/assets/images/dyd/dyd_set_screw.png) |
 |  Name  |                  Clamp-ring                   |                 D-Cut                 |                 Set-screw                 |
 
-**Note**: The Type-C is provided as a default option.
+**NOTE**: The Type-C is provided as a default option.
 {: .notice}
 
 # [Assembly](#assembly)
