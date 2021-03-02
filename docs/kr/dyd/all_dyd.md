@@ -32,6 +32,8 @@ product_group: all-dyd
 |                     Noise & vibration                     | **&#9651;** | **&#9678;** | **&#9675;** |
 | Operating time to failure under heavy operating condition | **&#9675;** | **&#9651;** | **&#9678;** |
 
+{% include kr/dyd/dyd_warning.md %}
+
 ## [특징](#특징)
 
 ![](/assets/images/dyd/dyd_features_01.png)
