@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/kr/parts/interface/mkr_shield/
 sidebar:
-  title: 다이나믹셀 쉴드(MKR)
+  title: 다이나믹셀 쉴드 MKR
   nav: "mkr_shield"
 ---
 
@@ -15,7 +15,7 @@ sidebar:
 
 # [개요](#개요)
 
-**DYNAMIXEL Shield for Arduino MKR Series**(이후 "다이나믹셀 쉴드 MKR"로 통칭)는 MKR ZERO, MKR1000 WIFI, MKR WiFi 1010, Portenta H7과 같은 아두이노의 MKR 폼팩터를 공유하는 제어기와 호환됩니다.
+**다이나믹셀 쉴드(아두이노 MKR 시리즈)**(이후 "다이나믹셀 쉴드 MKR"로 통칭)는 MKR ZERO, MKR1000 WIFI, MKR WiFi 1010, Portenta H7과 같은 아두이노의 MKR 폼팩터를 공유하는 제어기와 호환됩니다.
 
 아두이노 라이브러리(DYNAMIXEL2Arduino, DYNAMIXEL Shield)가 제공되어 아두이노 환경에서 다이나믹셀을 빠르고 편리하게 개발할 수 있습니다.
 
