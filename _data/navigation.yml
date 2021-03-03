@@ -623,8 +623,8 @@ main:
       - title: "DYNAMIXEL Shield"
         titlekr: "다이나믹셀 쉴드"
         url: /parts/interface/dynamixel_shield/
-      - title: "DYNAMIXEL Shield(MKR)"
-        titlekr: "다이나믹셀 쉴드(MKR)"
+      - title: "DYNAMIXEL Shield MKR"
+        titlekr: "다이나믹셀 쉴드 MKR"
         url: /parts/interface/mkr_shield/
       - title: "*USB2DYNAMIXEL"
         titlekr: "*USB2DYNAMIXEL"
