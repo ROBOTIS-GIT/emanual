@@ -624,7 +624,7 @@ main:
         titlekr: "다이나믹셀 쉴드"
         url: /parts/interface/dynamixel_shield/
       - title: "DYNAMIXEL Shield(MKR)"
-        # titlekr: "다이나믹셀 쉴드(MKR)"
+        titlekr: "다이나믹셀 쉴드(MKR)"
         url: /parts/interface/mkr_shield/
       - title: "*USB2DYNAMIXEL"
         titlekr: "*USB2DYNAMIXEL"
@@ -23377,9 +23377,9 @@ mkr_shield:
     url: /parts/interface/mkr_shield/#introduction
     urlkr: /parts/interface/mkr_shield/#개요
   - title: "Quick Start Guide"
-    titlekr: "퀵 스타트"
+    titlekr: "시작하기"
     url: /parts/interface/mkr_shield/#quick-start-guide
-    urlkr: /parts/interface/mkr_shield/#퀵-스타트
+    urlkr: /parts/interface/mkr_shield/#시작하기
   - title: "Specifications"
     titlekr: "제품 사양"
     url: /parts/interface/mkr_shield/#specifications
