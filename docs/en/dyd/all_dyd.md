@@ -21,15 +21,17 @@ Generally, a traditional Cycloidal Gear Drive is well known as being strong but 
 
 |                      Characteristics                      |  Planetary  |  Harmonic   |     DYD     |
 |:---------------------------------------------------------:|:-----------:|:-----------:|:-----------:|
-|                        Gear ratio                         |  &#11093;   | **&#9678;** | **&#9678;** |
-|                       Contact ratio                       |  &#11093;   |  &#11093;   | **&#9678;** |
+|                        Gear ratio                         |  O          | **&#9678;** | **&#9678;** |
+|                       Contact ratio                       |  O          |  O          | **&#9678;** |
 |                       Compact size                        | **&#9651;** | **&#9678;** | **&#9678;** |
 |                       Light Weight                        | **&#9651;** | **&#9678;** | **&#9678;** |
-|                         Backlash                          | **&#9651;** | **&#9678;** |  &#11093;   |
+|                         Backlash                          | **&#9651;** | **&#9678;** |  O          |
 |                        Efficiency                         | **&#9678;** | **&#9678;** | **&#9678;** |
-|               Rigidity under impact (shock)               |  &#11093;   | **&#9651;** | **&#9678;** |
-|                     Noise & vibration                     | **&#9651;** | **&#9678;** |  &#11093;   |
-| Operating time to failure under heavy operating condition |  &#11093;   | **&#9651;** | **&#9678;** |
+|               Rigidity under impact (shock)               |  O          | **&#9651;** | **&#9678;** |
+|                     Noise & vibration                     | **&#9651;** | **&#9678;** |  O          |
+| Operating time to failure under heavy operating condition |  O          | **&#9651;** | **&#9678;** |
+
+{% include en/dyd/dyd_warning.md %}
 
 ## [Features](#features)
 
@@ -131,7 +133,7 @@ The average input speed can be calculated as below.
 
 ## [Service Life)](#service-life)
 
-The service life of DYD is determined by the fatigue failure of the bearings on the input shaft. Other factors that may affect the actual service life, such as insufficient lubrication, contamination or overload are not taken into account. The nominal service life is provided based on a statistical test value.  
+The service life of DYD is determined by the fatigue failure of the bearings on the input shaft. Other factors that may affect the actual service life, such as insufficient lubrication, contamination or overload are not taken into account. The nominal service life is provided based on a statistical test value.
 
 The required service life for a given speed and load values can be calculated as follows:
 
@@ -208,7 +210,7 @@ The required service life for a given speed and load values can be calculated as
 
 Required service life : 5,000 hours > Expected service life : 4,880 hours
 
-**Note**: The expected service life does not meet the required service life.
+**NOTE**: The expected service life does not meet the required service life.
 {: .notice}
 
 ### [Select another Part Number : DYD-14-099](#select-another-part-number--dyd-14-099)
@@ -243,7 +245,7 @@ Required service life : 5,000 hours > Expected service life : 5,520 hours
 
 ### [Calculate the output speed](#calculate-the-output-speed)
 
-Output Speed i=-(1/R)*V_in = -(1/99)*3,000=30.3 rpm 
+Output Speed i=-(1/R)*V_in = -(1/99)*3,000=30.3 rpm
 
 ### [Calculate the Peak Torque](#calculate-the-peak-torque)
 
@@ -314,7 +316,7 @@ The no-load starting torque indicates the quasi-static torque required to start 
 
 ## [Back-Drive torque](#back-drive-torque)
 
-As shown in the figure below, the back-drive torque indicates the amount of torque applied on the output flange just enough to start rotation of the input shaft under no load. 
+As shown in the figure below, the back-drive torque indicates the amount of torque applied on the output flange just enough to start rotation of the input shaft under no load.
 
 ![](/assets/images/dyd/dyd_back_drive_torque.png)
 
