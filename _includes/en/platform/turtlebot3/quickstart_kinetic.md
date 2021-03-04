@@ -44,30 +44,34 @@ $ sudo apt-get install ros-kinetic-joy ros-kinetic-teleop-twist-joy \
   ros-kinetic-rosserial-server ros-kinetic-rosserial-client \
   ros-kinetic-rosserial-msgs ros-kinetic-amcl ros-kinetic-map-server \
   ros-kinetic-move-base ros-kinetic-urdf ros-kinetic-xacro \
-  ros-kinetic-compressed-image-transport ros-kinetic-rqt-image-view \
+  ros-kinetic-compressed-image-transport ros-kinetic-rqt* \
   ros-kinetic-gmapping ros-kinetic-navigation ros-kinetic-interactive-markers
 ```
 
 ### [Install TurtleBot3 Packages](#install-turtlebot3-packages)
 
+Install TurtleBot3 via Debian Packages.
+
 ```bash
-$ source /opt/ros/kinetic/setup.bash
+$ sudo apt-get install ros-kinetic-dynamixel-sdk
 $ sudo apt-get install ros-kinetic-turtlebot3-msgs
 $ sudo apt-get install ros-kinetic-turtlebot3
 ```
 
 <details>
 <summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) **Click here to expand more details about TurtleBot3 package installation.**
+![](/assets/click_here.png) **Click here to expand more details about building TurtleBot3 package from source.**
 {: .notice--success}
 </summary>
 In case you need to download the source codes and build them, please use the commands below.  
 Make sure to remove the identical packages to avoid redundancy.  
 ```bash
+$ sudo apt-get remove ros-kinetic-dynamixel-sdk
 $ sudo apt-get remove ros-kinetic-turtlebot3-msgs
 $ sudo apt-get remove ros-kinetic-turtlebot3
 $ mkdir -p ~/catkin_ws/src
 $ cd ~/catkin_ws/src/
+$ git clone -b kinetic-devel https://github.com/ROBOTIS-GIT/DynamixelSDK.git
 $ git clone -b kinetic-devel https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
 $ git clone -b kinetic-devel https://github.com/ROBOTIS-GIT/turtlebot3.git
 $ cd ~/catkin_ws && catkin_make

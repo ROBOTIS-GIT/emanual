@@ -37,20 +37,21 @@ If the above installation fails, please refer to [the official ROS1 Noetic insta
 ### [Install Dependent ROS 1 Packages](#install-dependent-ros-1-packages)
 
 ```bash
-$ sudo apt install ros-noetic-joy ros-noetic-teleop-twist-joy \
+$ sudo apt-get install ros-noetic-joy ros-noetic-teleop-twist-joy \
   ros-noetic-teleop-twist-keyboard ros-noetic-laser-proc \
   ros-noetic-rgbd-launch ros-noetic-rosserial-arduino \
   ros-noetic-rosserial-python ros-noetic-rosserial-client \
   ros-noetic-rosserial-msgs ros-noetic-amcl ros-noetic-map-server \
   ros-noetic-move-base ros-noetic-urdf ros-noetic-xacro \
-  ros-noetic-compressed-image-transport ros-noetic-rqt-image-view \
+  ros-noetic-compressed-image-transport ros-noetic-rqt* ros-noetic-rviz \
   ros-noetic-gmapping ros-noetic-navigation ros-noetic-interactive-markers
 ```
 
 ### [Install TurtleBot3 Packages](#install-turtlebot3-packages)
 
+Install TurtleBot3 via Debian Packages.
+
 ```bash
-$ source /opt/ros/noetic/setup.bash
 $ sudo apt install ros-noetic-dynamixel-sdk
 $ sudo apt install ros-noetic-turtlebot3-msgs
 $ sudo apt install ros-noetic-turtlebot3
@@ -58,16 +59,18 @@ $ sudo apt install ros-noetic-turtlebot3
 
 <details>
 <summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) **Click here to expand more details about TurtleBot3 package installation.**
+![](/assets/click_here.png) **Click here to expand more details about building TurtleBot3 package from source.**
 {: .notice--success}
 </summary>
 In case you need to download the source codes and build them, please use the commands below.  
 Make sure to remove the identical packages to avoid redundancy.  
 ```bash
+$ sudo apt remove ros-noetic-dynamixel-sdk
 $ sudo apt remove ros-noetic-turtlebot3-msgs
 $ sudo apt remove ros-noetic-turtlebot3
 $ mkdir -p ~/catkin_ws/src
 $ cd ~/catkin_ws/src/
+$ git clone -b noetic-devel https://github.com/ROBOTIS-GIT/DynamixelSDK.git
 $ git clone -b noetic-devel https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
 $ git clone -b noetic-devel https://github.com/ROBOTIS-GIT/turtlebot3.git
 $ cd ~/catkin_ws && catkin_make

@@ -43,30 +43,34 @@ $ sudo apt-get install ros-melodic-joy ros-melodic-teleop-twist-joy \
   ros-melodic-rosserial-server ros-melodic-rosserial-client \
   ros-melodic-rosserial-msgs ros-melodic-amcl ros-melodic-map-server \
   ros-melodic-move-base ros-melodic-urdf ros-melodic-xacro \
-  ros-melodic-compressed-image-transport ros-melodic-rqt-image-view \
+  ros-melodic-compressed-image-transport ros-melodic-rqt* \
   ros-melodic-gmapping ros-melodic-navigation ros-melodic-interactive-markers
 ```
 
 ### [Install TurtleBot3 Packages](#install-turtlebot3-packages)
 
+Install TurtleBot3 via Debian Packages.
+
 ```bash
-$ source /opt/ros/melodic/setup.bash
+$ sudo apt-get install ros-melodic-dynamixel-sdk
 $ sudo apt-get install ros-melodic-turtlebot3-msgs
 $ sudo apt-get install ros-melodic-turtlebot3
 ```
 
 <details>
 <summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) **Click here to expand more details about TurtleBot3 package installation.**
+![](/assets/click_here.png) **Click here to expand more details about building TurtleBot3 package from source.**
 {: .notice--success}
 </summary>
 In case you need to download the source codes and build them, please use the commands below.  
 Make sure to remove the identical packages to avoid redundancy.  
 ```bash
+$ sudo apt-get remove ros-melodic-dynamixel-sdk
 $ sudo apt-get remove ros-melodic-turtlebot3-msgs
 $ sudo apt-get remove ros-melodic-turtlebot3
 $ mkdir -p ~/catkin_ws/src
 $ cd ~/catkin_ws/src/
+$ git clone -b melodic-devel https://github.com/ROBOTIS-GIT/DynamixelSDK.git
 $ git clone -b melodic-devel https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
 $ git clone -b melodic-devel https://github.com/ROBOTIS-GIT/turtlebot3.git
 $ cd ~/catkin_ws && catkin_make
