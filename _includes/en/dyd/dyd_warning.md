@@ -1,17 +1,15 @@
-{% capture dyd_danger %}
+{% capture dyd_product_check %}
 **PRODUCT CHECK**
-
 - Please verify product's model and number to ensure correct shipment of the product ordered.
 - Please verify all components are included in original packaging.
 - Please verify to see if there might be any damage on the product's surface or general appearance.
 {% endcapture %}
-<div class="notice--info">{{ dyd_danger | markdownify }}</div>
+<div class="notice--info">{{ dyd_product_check | markdownify }}</div>
 
 {% capture dyd_danger %}
 ![](/assets/images/icon_warning.png)  
 **WARNING**  
 (May cause injury or damage to product)
-
 - Do not disassemble or reassemble the product. If the product is disassembled and reassembled, the original performance cannot be guaranteed.
 - Be careful not to apply a load more than the instantaneous permissible torque.
 - Do not use the product when it is dropped or subjected to strong impact.
@@ -29,19 +27,15 @@
 
 {% capture dyd_warning %}
 ![](/assets/images/icon_warning.png)  
-**CAUTION**
-
+**CAUTION**  
 - Avoid coming into contact with the lubricant as this may cause irritation when in contact with your skin and eyes.
 - In the case your eyes come in contact with the lubricant, wash your eyes immediately with clean water and seek medical advice.
 - In the case your skin comes into contact with the lubricant, wash your skin thoroughly with water and soap.
 {% endcapture %}
 <div class="notice--danger">{{ dyd_warning | markdownify }}</div>
 
-<!-- ![](/assets/images/icon_warning.png)   -->
-
 {% capture dyd_warranty %}
 **WARRANTY**
-
 - This product is covered under warranty for 1 year after purchase or up to 2,000 hours of operational time. (\* Product must be used under normal operating conditions)
 - If there are any issues due to a manufacturing defect within the warranty period, we will repair or replace the product.
 - Warranty will be void if the product is used or handled improperly by user.

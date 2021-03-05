@@ -1,17 +1,15 @@
-{% capture dyd_danger %}
-**점검**
-
+{% capture dyd_product_check %}
+**점검**  
 - 형번 및 형식이 주문한 제품과 일치하는지 확인해 주십시오
 - 포장박스 내에 구성품이 전부 들어 있는지 확인해 주십시오
 - 제품 표면 및 외형에 손상이 없는지 확인해 주십시오
 {% endcapture %}
-<div class="notice--info">{{ dyd_danger | markdownify }}</div>
+<div class="notice--info">{{ dyd_product_check | markdownify }}</div>
 
 {% capture dyd_caution %}
 ![](/assets/images/icon_warning.png)  
 **주의**  
 (상해나 제품 손상의 원인이 됩니다.)
-
 - 제품의 분해 및 재조립을 하지 마십시오. 제품을 분해 및 재조립 하는 경우, 기존의 성능을 재현할 수 없습니다.
 - 순간허용토크 이상의 부하를 가하지 않도록 주의하십시오.
 - 제품을 떨어뜨리거나 강한 충격이 가해진 경우 사용하지 마십시오
@@ -29,8 +27,7 @@
 
 {% capture dyd_warning %}
 ![](/assets/images/icon_warning.png)  
-**경고**
-
+**경고**  
 - 윤활제가 눈 또는 피부에 닿을 경우 염증을 일으킬 수 있으니 주의하시기 바랍니다,
 - 윤활제가 눈에 들어간 경우, 깨끗한 물로 씻고 의사의 진단을 받으십시오
 - 윤활제가 피부에 닿은 경우 물과 비누로 깨끗이 씻으십시오
@@ -38,8 +35,7 @@
 <div class="notice--danger">{{ dyd_warning | markdownify }}</div>
 
 {% capture dyd_warranty %}
-**보증 기간 및 범위**
-
+**보증 기간 및 범위**  
 - 정상 조립 상태에서 사용하는 조건으로 구입후 1년 또는 운전시간 2,000시간 입니다.
 - 보증기간 내에 제조상의 문제로 결함이 있는경우 수리 또는 교환해 드립니다.
 - 고객의 부적절한 취급 또는 사용에 의한 경우

@@ -14,8 +14,7 @@ Select a desired DYNAMIXEL protocol type according to your application.
 |     22     |            [RC-PWM](#rc-pwm-protocol)             |             PWM signal used by RC servos              |
 
 **WARNING**  
-`Experimental S.BUS` and `Experimental iBUS` are **partially** supporting S.BUS and iBUS as an experimental protocol, and may not fully compatible with other devices.  
-Please use the experimental protocols at your own risk.
+The `Experimental S.BUS` and `Experimental iBUS` protocol are an experimental protocol and may not fully support all the features of S.BUS and also may not be fully compatible with other 3rd party devices.
 {: .notice--danger}
 
 {% capture protocol_note_01 %}
@@ -32,10 +31,10 @@ DYNAMIXEL Protocol 2.0 is a basic communication protocol to communicate between 
 
 #### [Experimental S.BUS Protocol](#experimental-sbus-protocol)
 
-The `Experimental S.BUS` supports a **partial** S.BUS Protocol, and the supported features are described in the following.
+The `Experimental S.BUS` protocol is an experimental protocol and may not fully support all the features of S.BUS and also may not be fully compatible with other 3rd party devices.
 {: .notice--warning}
 
-The S.BUS Protocol is a communication protocol commonly used in RC products. XL330 series may not fully compatible with other S.BUS devices.
+The S.BUS protocol is a communication protocol commonly used in RC products. XL330 series may not fully compatible with other S.BUS devices.
 
 - Multiple DYNAMIXELs, the maximum is 16, can be wired via signal cables. Notice that S.BUS protocol only allows for use **the range of [ID(7)] from 1 to 16**.
 - The available range of data transmission is from **0 to 2,047 (11 bits)**.
@@ -49,12 +48,12 @@ The S.BUS Protocol is a communication protocol commonly used in RC products. XL3
 
 #### [Experimental iBUS Protocol](#experimental-ibus-protocol)
 
-The `Experimental iBUS` supports a **partial** iBUS Protocol, and the supported features are described in the following.
+The `Experimental iBUS` protocol is an experimental protocol and may not fully support all the features of iBUS and also may not be fully compatible with other 3rd party devices.
 {: .notice--warning}
 
-The iBUS Protocol is a communication protocol commonly used in RC products. XL330 series may not fully compatible with other iBUS devices.
+The iBUS protocol is a communication protocol commonly used in RC products. XL330 series may not fully compatible with other iBUS devices.
 
-- Multiple DYNAMIXELs, the maximum is 14, can be wired via signal cables. Notice that the iBUS protocol only allows for use **the range of [ID(7)] from 1 to 14**.
+- Multiple DYNAMIXELs, the maximum is 14, can be wired via signal cables. Notice that the Experimental iBUS protocol only allows for use **the range of [ID(7)] from 1 to 14**.
 - The available range of data transmission is from **0 to 16,383 (16 bits)**.
 - If the [Operating Mode(11)] is **Position Control Mode**, data will be passed to the [Goal Position(116)].
 - If the [Operating Mode(11)] is **Velocity Mode**, data will be pased to [Goal Velocity(104)]. For your understanding, see the next graph of the control reference by the passed data via the protocol.
