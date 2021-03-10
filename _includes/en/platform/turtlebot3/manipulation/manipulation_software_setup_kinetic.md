@@ -1,5 +1,5 @@
 
-**NOTE**: Before you install `open_manipulator_with_tb3` packages, please make sure `turtlebot3` and `open_manipulator` packages have been installed previously in RemotePC and setup [Raspberry Pi 3](/docs/en/platform/turtlebot3/raspberry_pi_3_setup/#raspberry-pi-3-setup).
+**NOTE**: Before you install `open_manipulator_with_tb3` packages, be sure that `turtlebot3` and `open_manipulator` packages have been installed previously in RemotePC.
 {: .notice--info}
 
 1. **[RemotePC]** Download and build the package using the following commands in order to use assembled OpenMANIPULATOR-X.
