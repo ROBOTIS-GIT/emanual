@@ -193,7 +193,7 @@ A buzzer is installed in AX-S1, and simple beep sounds can be made.  Total 52 mu
  
  
 ### <a name="buzzer-ring"></a>Buzzer Ringing Time
-AX-S1 has a function to control the buzzer alarming time.  It is possible to control by the unit of 0.1 second, and the minimum length is set to 0.3 seconds; the time can be extended up to maximum 5 seconds.  That is, if 0~3 is entered, the buzzer rings for 0.3 seconds; if the value over 50 is entered, the buzzer rings only for 5 seconds regardless of the value.  Moreover, if the ringing is finished, the buzzer ringing time is automatically initialized to '0.'
+AX-S1 has a function to control the buzzer alarcming time.  It is possible to control by the unit of 0.1 second, and the minimum length is set to 0.3 seconds; the time can be extended up to maximum 5 seconds.  That is, if 0~3 is entered, the buzzer rings for 0.3 seconds; if the value over 50 is entered, the buzzer rings only for 5 seconds regardless of the value.  Moreover, if the ringing is finished, the buzzer ringing time is automatically initialized to '0.'
 There are 2 special buzzer ringing time functions for AX-S1.  Firstly, the buzzer can be ringing without stopping.  If 254 is entered in buzzer ringing time, and the number of desired musical notes is entered, the buzzer rings without stopping.  To stop the ringing, '0' is entered in buzzer ringing time.
 Secondly, the buzzer can play special melodies.  If 255 is entered in buzzer ringing time, and then the value 0~26 is entered in buzzer notes, 27 melodies corresponding to each number can be played. If the ringing is finished, the buzzer ringing time is automatically initialized to '0.'
  
