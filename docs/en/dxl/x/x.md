@@ -22,24 +22,24 @@ sidebar:
 - Hollow Back Case Minimizes Cable Stress (3-way-routing).
 - Direct Screw Assembly to the Case (without Nut Insert).
 - Improved Heat Sink Featuring an Aluminum Case.
- 
+
 ## Various Control Functions
 - Current-Based Torque Control.
 - Profile Control for Smooth Motion Planning.
 - Trajectory Data and Moving Status (In-Position, Following Error, etc).
 - Energy Saving (Reduced Current from 100mA to 40mA).
-- Various Operating Modes 
-  - Current based Position Control (XW/XH/XM series only).
-  - Torque Control (XW/XH/XM series only).
+- Various Operating Modes
+  - Current based Position Control (XW/XH/XM/XL330 only).
+  - Torque Control (XW/XH/XM/XL330 only only).
   - Velocity Control.
   - Position Control.
-  - Extended Position Control. 
+  - Extended Position Control.
   - PWM Control (Voltage Control Mode).
 
-# [DYNAMIXEL-X](#dynamixel-x)
-**Common Specifications**  
-- MCU : ARM CORTEX-M3 (72 \[MHz], 32Bit)  
-- Resolution : 4096 \[pulse/rev]  
+# [X Series](#x-series)
+**Common Specifications**
+- MCU : ARM CORTEX-M3 (72 \[MHz], 32Bit)
+- Resolution : 4096 \[pulse/rev]
 - Motor :
   - XW Series : Coreless (Maxon)
   - XH Series : Coreless (Maxon)

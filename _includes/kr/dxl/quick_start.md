@@ -32,7 +32,7 @@
 
 | 모델                  | AX Series | DX Series | RX Series | EX Series | MX Series | X-Series       | PRO Series | P Series |
 |:----------------------|:----------|:----------|:----------|:----------|:----------|:---------------|:-----------|:---------|
-| 로보플러스 매니저 2.0 | X         | X         | X         | X         | O         | O              | O          | O        |
+| R+ Manager 2.0 | X         | X         | X         | X         | O         | O              | O          | O        |
 | 다이나믹셀 위자드     | O         | X         | X         | O         | O         | X (XL320 지원) | O          | X        |
 | 다이나믹셀 위자드2.0  | O         | O         | O         | O         | O         | O              | O          | O        |
 | 다이나믹셀 SDK        | O         | O         | O         | O         | O         | O              | O          | O        |
@@ -52,21 +52,21 @@
 - 제어기 펌웨어를 관리합니다. [(업데이트 및 복구 기능)](/docs/kr/software/rplus1/manager/#펌웨어-관리)
 - 사용에 필요한 모드설정 또는 제어기 및 주변 장치들의 상태를 점검합니다. [(테스트 및 설정기능)](/docs/kr/software/rplus1/manager/#테스트-및-설정)
 
-**참고**: 로보플러스 매니저 1.0은 기능의 제약이 있습니다. 최신버전인 [로보플러스 매니저 2.0](#로보플러스-매니저-20) 또는 [다이나믹셀 위자드 2.0](#다이나믹셀-위자드-20)을 사용하세요. 
+**참고**: 로보플러스 매니저 1.0은 기능의 제약이 있습니다. 최신버전인 [R+ Manager 2.0](#r-manger-20) 또는 [다이나믹셀 위자드 2.0](#다이나믹셀-위자드-20)을 사용하세요. 
 {: .notice}
 
-#### [로보플러스 매니저 2.0](#로보플러스-매니저-20)
+#### [R+ Manager 2.0](#r-manger-20)
 
-[로보플러스 매니저 2.0]은 로봇을 구성하는 제어기와 다이나믹셀 장치들을 통합 관리합니다.
+[R+ Manager 2.0]은 로봇을 구성하는 제어기와 다이나믹셀 장치들을 통합 관리합니다.
 제품을 연결하면 해당 제품을 최신버전으로 업데이트할 수 있으며, 컨트롤 테이블을 테스트해볼 수 있습니다.
-기존의 로보플러스 매니저1.0과 위자드1.0에서 제공하던 기능이 로보플러스 매니저 2.0에서 통합되었습니다.
+기존의 로보플러스 매니저1.0과 위자드1.0에서 제공하던 기능이 R+ Manager 2.0에서 통합되었습니다.
 
 {% if page.product_group=='xl330' %}
 
 {% else %}
 
 {% capture warn_02 %}
-**주의**: 로보플러스 매니저 2.0은 프로토콜 1.0을 사용하는 다이나믹셀과 호환되지 않습니다. 다이나믹셀 위자드 2.0 사용시, 모든 다이나믹셀의 펌웨어 복구/업데이트, 컨트롤 테이블 변경이 가능합니다.  
+**주의**: R+ Manager 2.0은 프로토콜 1.0을 사용하는 다이나믹셀과 호환되지 않습니다. 다이나믹셀 위자드 2.0 사용시, 모든 다이나믹셀의 펌웨어 복구/업데이트, 컨트롤 테이블 변경이 가능합니다.  
 {% endcapture %}
 <div class="notice--warning">{{ warn_02 | markdownify }}</div>
 
@@ -110,7 +110,7 @@
 [U2D2]: /docs/kr/parts/interface/u2d2/
 [USB2Dynamixel]: /docs/kr/parts/interface/usb2dynamixel/
 [로보플러스 매니저]: /docs/kr/software/rplus1/manager/
-[로보플러스 매니저 2.0]: /docs/kr/software/rplus2/manager/
+[R+ Manager 2.0]: /docs/kr/software/rplus2/manager/
 [다이나믹셀 SDK]: /docs/kr/software/dynamixel/dynamixel_sdk/overview/
 [다이나믹셀 워크벤치]: /docs/kr/software/dynamixel/dynamixel_workbench/
 [다니아믹셀 위자드 2.0]: /docs/kr/software/dynamixel/dynamixel_wizard2/

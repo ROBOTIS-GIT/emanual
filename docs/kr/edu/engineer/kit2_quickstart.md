@@ -19,18 +19,18 @@ page_number: 2
 
 ## [앱 설치하기](#앱-설치하기)
 
-- 로보티즈 엔지니어는 [로보플러스 태스크 3.0]를 지원합니다.
-- [로보플러스 태스크 3.0]은 기존의 [로보플러스 태스크 2.0]과 [로보플러스 모션 2.0]이 통합된 프로그램입니다.
+- 로보티즈 엔지니어는 [R+ Task 3.0]를 지원합니다.
+- [R+ Task 3.0]은 기존의 [R+ Task 2.0]과 [R+ Motion 2.0]이 통합된 프로그램입니다.
 - 태스크 코드를 작성하여, 로봇을 원하는대로 명령으로 구동할 수 있습니다.
 - 모션파일로 로봇의 행동을 직접 만들어 줄 수 있습니다.
 
 {% capture software_install_01 %}  
 ![](/assets/images/edu/engineer/kit1/icon_task_48.png)  
-**로보플러스 태스크 3.0**
+**R+ Task 3.0**
 - [윈도우에서 다운로드 하기](https://www.robotis.com/service/download.php?no=1774) 
 - [맥 OS에서 다운로드 하기](https://www.robotis.com/service/download.php?no=1908)
 - [구글 플레이에서 다운로드(모바일) 하기](https://play.google.com/store/apps/details?id=com.robotis.task3)
-- \[파이썬 추가] 로보플러스 태스크 3.0 ios 버전은 앱스토어에 곧 출시됩니다. PC 버전을 이용해주세요.  
+- \[파이썬 추가] R+ Task 3.0 ios 버전은 앱스토어에 곧 출시됩니다. PC 버전을 이용해주세요.  
 {% endcapture %}
 <div class="notice--success">{{ software_install_01 | markdownify }}</div>
 
@@ -72,7 +72,7 @@ PC로 작성한 예제 또는 다운로드 받은 예제를 제어기에 다운�
 2. [PC에서 태스크 예제 다운로드 하기]{: .popup}
 
 ### [스마트 기기에서 예제 다운로드 받기](#스마트-기기에서-예제-다운로드-받기)
-로보플러스 태스크 3.0 앱을 이용하여 제어기에 파일을 업로드 하려면 스마트 기기와 CM-550이 블루투스로 연결되어야 합니다.  
+R+ Task 3.0 앱을 이용하여 제어기에 파일을 업로드 하려면 스마트 기기와 CM-550이 블루투스로 연결되어야 합니다.  
 스마트기기에서 작성한 예제 또는 다운로드 받은 예제를 제어기에 원격으로 다운로드 하는 방법입니다.
 
 1. [제어기와 스마트기기 연결하기]{: .popup}
@@ -219,9 +219,9 @@ PC로 작성한 예제 또는 다운로드 받은 예제를 제어기에 다운�
 이 기능은 엔지니어 키트 1과 동일합니다, 키트 1의 [모터 조립확인](/docs/kr/edu/engineer/kit1/#모터-오프셋-설정)을 참고하세요. 
 -->
 
-[로보플러스 태스크 3.0]: /docs/kr/software/rplustask3/
-[로보플러스 태스크 2.0]: /docs/kr/software/rplus2/task/
-[로보플러스 모션 2.0]: /docs/kr/software/rplus2/motion/
+[R+ Task 3.0]: /docs/kr/software/rplustask3/
+[R+ Task 2.0]: /docs/kr/software/rplus2/task/
+[R+ Motion 2.0]: /docs/kr/software/rplus2/motion/
 [동작 모드]: /docs/kr/parts/controller/cm-550/#동작-모드
 [제어기와 PC 연결하기]: /docs/kr/popup/engineer/connect_controller_pc
 [PC에서 태스크 예제 다운로드 하기]: /docs/kr/popup/engineer/task_download_pc

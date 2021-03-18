@@ -15,9 +15,9 @@ sidebar:
 
 ![](/assets/images/sw/rplus2/task/roboplus_task2_001.gif)
 
-- 로보플러스 태스크 2.0 (R+ Task 2.0)
+- R+ Task 2.0 (R+ Task 2.0)
 
-  어떤 일을 처리하기 위한 행동들의 집합을 태스크(Task)라고 합니다. 로봇이 해야 할 태스크를 프로그래밍 한 소스를 로보플러스(RoboPlus)에서는 태스크 코드(Task Code)라고 합니다. 로봇은 사용자가 작성한 태스크 코드에 따라 동작하게 되며, 이러한 태스크 코드를 쉽게 작성할 수 있도록 도와주는 것이 로보플러스 태스크(RoboPlus Task) 프로그램입니다. 태스크 코드 파일은 PC(혹은 스마트폰)에서 .tskx라는 확장자를 가집니다. (기존 버전의 경우 .tsk확장자를 사용하며, R+ Task 2.0을 통해 .tskx로 변환할 수 있습니다.)
+  어떤 일을 처리하기 위한 행동들의 집합을 태스크(Task)라고 합니다. 로봇이 해야 할 태스크를 프로그래밍 한 소스를 태스크 코드(Task Code)라고 합니다. 로봇은 사용자가 작성한 태스크 코드에 따라 동작하게 되며, 이러한 태스크 코드를 쉽게 작성할 수 있도록 도와주는 것이 R+ Task(RoboPlus Task) 프로그램입니다. 태스크 코드 파일은 PC(혹은 스마트폰)에서 .tskx라는 확장자를 가집니다. (기존 버전의 경우 .tsk확장자를 사용하며, R+ Task 2.0을 통해 .tskx로 변환할 수 있습니다.)
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_002.gif)
 
@@ -35,14 +35,14 @@ sidebar:
 
 <!-- 
 
-**주의** : 로보플러스 태스크 2.0 소프트웨어의 Mac OS X 설치방법이 v2.3.0부터 변경되었습니다.  
-[`Mac OS X 로보플러스 태스크 2.0 다운로드`]{: .blank}
+**주의** : R+ Task 2.0 소프트웨어의 Mac OS X 설치방법이 v2.3.0부터 변경되었습니다.  
+[`Mac OS X R+ Task 2.0 다운로드`]{: .blank}
 {: .notice--warning}
 
-[`Mac OS X 로보플러스 태스크 2.0 다운로드`]: http://www.robotis.com/service/download.php?no=2
+[`Mac OS X R+ Task 2.0 다운로드`]: http://www.robotis.com/service/download.php?no=2
 
-1. 로보플러스 태스크 2.0을 다운로드 받으세요.  
-  [`Mac OS X 로보플러스 태스크 2.0 다운로드`]{: .blank}
+1. R+ Task 2.0을 다운로드 받으세요.  
+  [`Mac OS X R+ Task 2.0 다운로드`]{: .blank}
 
 2. 다운로드받은 패키지 `R+Task2.0(v2.3.0 Mac).pkg` 를 더블클릭해서 실행하세요.  
   ![](/assets/images/sw/rplus2/task/roboplus_task2_install_01.png)
@@ -51,7 +51,7 @@ sidebar:
       ![](/assets/images/sw/rplus2/task/roboplus_task2_install_02_kr.png)
     - `시스템 환경설정`에서 `보안 및 개인 정보 보호` 메뉴를 실행하세요.  
       ![](/assets/images/sw/rplus2/task/roboplus_task2_install_03_kr.png)
-    - `확인 없이 열기` 버튼을 누르면 다운로드된 로보플러스 태스크 2.0 패키지가 실행됩니다.  
+    - `확인 없이 열기` 버튼을 누르면 다운로드된 R+ Task 2.0 패키지가 실행됩니다.  
       ![](/assets/images/sw/rplus2/task/roboplus_task2_install_04_kr.png)
 
 3. 패키지가 성공적으로 실행되면 `계속` 버튼을 눌러 진행하세요.  
@@ -1513,9 +1513,9 @@ R+ Task 2.0에서 사용하는 파라미터를 설명합니다. 각 장치에 �
 
 >  [제어기호환표](/docs/en/parts/controller/controller_compatibility/)를 참고하여, 제공된 제어기와 호환이 되는지 확인 하세요.
 
-2. 기존 태스크 1.0에서 사용하던 TSK파일을 태스크 2.0에서 사용할 수 있나요?
+2. 기존 태스크 1.0에서 사용하던 TSK파일을 Task 2.0에서 사용할 수 있나요?
 
-> 사용할 수 있습니다. 단, 기존 TSK파일을 태스크2.0으로 불러와 다시 저장할 경우 태스크 1.0에서 더 이상 사용할 수 없습니다.
+> 사용할 수 있습니다. 단, 기존 TSK파일을 Task 2.0으로 불러와 다시 저장할 경우 태스크 1.0에서 더 이상 사용할 수 없습니다.
 
 3. 태스크 다운로드 후 제어기가 종료되지 않습니다. 어떻게 해야 하나요?
 

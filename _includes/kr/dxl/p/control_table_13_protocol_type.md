@@ -21,7 +21,7 @@ RH-P12-RN(A)의 Modbus-RTU는 펌웨어 버전 V12 이상에서 지원합니다.
 [DYNAMIXEL Protocol 2.0]: /docs/kr/dxl/protocol2/
 [Modbus-RTU, Industrial Standard Protocol]: http://modbus.org/docs/PI_MBUS_300.pdf
 
-**주의** : 다이나믹셀-P 시리즈의 Protocol Type(13)을 변경하려면 [다이나믹셀 위자드 2.0](/docs/kr/software/dynamixel/dynamixel_wizard2/)을 사용해주세요. 로보플러스 매니저 2.0은 Modbus-RTU를 지원하지 않습니다.
+**주의** : 다이나믹셀-P의 Protocol Type(13)을 변경하려면 [다이나믹셀 위자드 2.0](/docs/kr/software/dynamixel/dynamixel_wizard2/)을 사용해주세요. R+ Manager 2.0은 Modbus-RTU를 지원하지 않습니다.
 {: .notice--warning}
 
 {% capture warn01 %}

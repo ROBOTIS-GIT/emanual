@@ -8,7 +8,7 @@
 |      Crimp Terminal      |                        [JST SEH-001T]                        |                                     [MOLEX 39-00-0038]                                     |                             [MOLEX 50079-8100]                             |
 | Wire Gauge for DYNAMIXEL |                            21 AWG                            |                                           20 AWG                                           |                                   26 AWG                                   |
 
-**WARNING**: Before operating DYNAMIXEL PRO and DYNAMIXEL-P series, please supply power through 24V power port.
+**WARNING**: Before operating DYNAMIXEL PRO and DYNAMIXEL-P, please supply power through 24V power port.
 {: .notice--warning}
 
 [JST EHR-4]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf

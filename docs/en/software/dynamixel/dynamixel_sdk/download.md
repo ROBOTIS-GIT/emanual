@@ -22,16 +22,17 @@ sidebar:
 - If you are an ROS user, you can install the ROS library and Python module for DYNAMIXEL SDK directly.
 - You can use one of the three methods below.
 
-1) Git command
+1) **Option 1**: Git command
   
   ```
   $ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git
   ```
   
-2) Direct Download
-- [DynamixelSDK-3.xx.yy.zip](https://github.com/ROBOTIS-GIT/DynamixelSDK/releases)
+2) **Option 2**: Direct Download
+- [DYNAMIXEL SDK 3.7.31.zip (For ROS1, Python, C, C++, C#, MATLAB, LabView, Java)](https://github.com/ROBOTIS-GIT/DynamixelSDK/archive/3.7.31.zip)
+- [DYNAMIXEL SDK 3.7.30.zip (For ROS2 only)](https://github.com/ROBOTIS-GIT/DynamixelSDK/archive/3.7.30.zip)
 
-3) Install ROS library (C++ library and Python module)
+3) **Option 3**: Install ROS library (C++ library and Python module)
 
   ```
   $ sudo apt-get install ros-[ROS Distribution]-dynamixel-sdk

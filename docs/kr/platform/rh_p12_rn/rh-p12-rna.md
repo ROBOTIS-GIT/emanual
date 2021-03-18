@@ -31,7 +31,7 @@ page_number: 1
 {% capture info_01 %}
 **참조** : 
 펌웨어 복구를 이용하여, 로봇핸드의 펌웨어를 변경할수있습니다. **RH-P12-RN(A) 펌웨어 사용을 권장합니다.**  
-[로보플러스 매니저 2.0](/docs/kr/software/rplus2/manager/#펌웨어-복구)으로 펌웨어 복구하기.  
+[R+ Manager 2.0](/docs/kr/software/rplus2/manager/#펌웨어-복구)으로 펌웨어 복구하기.  
 [다이나믹셀 위자드 2.0](/docs/kr/software/dynamixel/dynamixel_wizard2/#펌웨어-복구)으로 펌웨어 복구하기.
 {% endcapture %}
 <div class="notice">{{ info_01 | markdownify }}</div>

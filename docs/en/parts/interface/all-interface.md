@@ -13,14 +13,14 @@ sidebar:
 
 # [Communication Interfaces](#communication-interfaces)
 
-|                                      LN-101                                       |                                              USB2DYNAMIXEL                                               |                                                U2D2                                                |
-|:---------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------:|
+|                                      LN-101                                       |                                              USB2DYNAMIXEL                                               |                                          U2D2                                          |
+|:---------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------:|
 | [![](/assets/images/parts/interface/ln101.jpg)](/docs/en/parts/interface/ln-101/) | [![](/assets/images/parts/interface/usb2dynamixel_product.jpg)](/docs/en/parts/interface/usb2dynamixel/) | [![](/assets/images/parts/interface/u2d2_product.jpg)](/docs/en/parts/interface/u2d2/) |
 
 
 # [Expansion Boards](#expansion-boards)
 
 
-|                                                  U2D2 Power Hub                                                  |                                                  DYNAMIXEL Shield                                                   |
-|:----------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------:|
-| [![](/assets/images/parts/interface/u2d2_power_hub/product_image.png)](/docs/en/parts/interface/u2d2_power_hub/) | [![](/assets/images/parts/interface/dynamixel_shield/with_arduino.png)](/docs/en/parts/interface/dynamixel_shield/) |
+|                                                  U2D2 Power Hub                                                  |                                                  DYNAMIXEL Shield                                                   |                                    DYNAMIXEL Shield <br> for Arduino MKR Series                               |
+|:----------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------:|
+| [![](/assets/images/parts/interface/u2d2_power_hub/product_image.png)](/docs/en/parts/interface/u2d2_power_hub/) | [![](/assets/images/parts/interface/dynamixel_shield/with_arduino.png)](/docs/en/parts/interface/dynamixel_shield/) | [![](/assets/images/parts/interface/mkr_shield/mkr_shield_product.jpg)](/docs/en/parts/interface/mkr_shield/) |

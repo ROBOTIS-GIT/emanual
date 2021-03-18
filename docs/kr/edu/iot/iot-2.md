@@ -14,13 +14,13 @@ sidebar:
 # [개요](#개요)
 
 **로보티즈 IoT 2단계** 는 일반적인 로봇의 형태를 벗어나 실생활에서 사용될 수 있는 사물인터넷(internet of things) 역할을 할 수 있는 장치를 구현한 교육용 프로그래밍 솔루션입니다.  
-- 스마트기기로 코딩이 가능한 [R+m.태스크2.0]과 각종 센서를 활용하는 하드웨어를 통한 예제별 프로그램밍 실전학습이 가능한 DIY 교육용 키트입니다.
-- [R+m.태스크2.0]으로 순서도 작성 방법, 코딩을 통한 프로그램학습, 응용하기 등의 과정을 제공합니다.
+- 스마트기기로 코딩이 가능한 [R+m.Task 2.0]과 각종 센서를 활용하는 하드웨어를 통한 예제별 프로그램밍 실전학습이 가능한 DIY 교육용 키트입니다.
+- [R+m.Task 2.0]으로 순서도 작성 방법, 코딩을 통한 프로그램학습, 응용하기 등의 과정을 제공합니다.
 - 교재를 통해 12가지의 사물인터넷 예제를 구현하여 생활 속 장치의 필요성, DIY의 제작 등의 수업을 할 수 있습니다.   
 - 무선 통신이 가능한 블루투스 모듈 및 조도센서, 동작감지센서, 온습도센서, 접촉센서, 자석센서, 감속모터 등이 포함되어 다양한 입출력 기능을 할 수 있습니다.
-- 스마트 기기에서 프로그램 학습 및 예제를 이용하기 위해서 [로보플러스 IoT (R+ IoT)](/docs/kr/software/mobile_app/rplusiot/)앱과 [로보플러스 R+m.태스크2.0(R+ m.task2.0)](/docs/kr/software/rplus_mobile/mtask20/) 를 설치해야 합니다.  
+- 스마트 기기에서 프로그램 학습 및 예제를 이용하기 위해서 [R+ IoT (R+ IoT)](/docs/kr/software/mobile_app/rplusiot/)앱과 [로보플러스 R+m.Task 2.0(R+ m.task2.0)](/docs/kr/software/rplus_mobile/mtask20/) 를 설치해야 합니다.  
 
- [로보플러스 IoT 설치 및 예제실행]  
+ [R+ IoT 설치 및 예제실행]  
   
  [로보티즈 IoT 2단계 엔트리 교재 다운로드]  
  
@@ -39,11 +39,11 @@ sidebar:
 
 - 사용할 스마트 기기에 (R+IoT)를 설치해야 합니다.  
 
-- 설치가 완료되면 로보티즈IOT 1단계 키트에 포함된 제어기([OpenCM7.0])에 블루투스를 연결하고 R+IoT에서 [R+m.태스크2.0]을 이용하여 프로그램을 코딩한 후 다운로드 받습니다.  
+- 설치가 완료되면 로보티즈IOT 1단계 키트에 포함된 제어기([OpenCM7.0])에 블루투스를 연결하고 R+IoT에서 [R+m.Task 2.0]을 이용하여 프로그램을 코딩한 후 다운로드 받습니다.  
  
 [R+IoT 설치 및 실행 방법 바로가기]  
   
-[R+m.태스크2.0 설치 및 실행 방법 바로가기]  
+[R+m.Task 2.0 설치 및 실행 방법 바로가기]  
 
 {% capture warning_1 %}
 **주의**  
@@ -93,7 +93,7 @@ SMS 기능이 필요한 경우 이전 버전의 앱 설치파일(APK)을 다운�
 
 
 
-[로보플러스 IoT 설치 및 예제실행]: /docs/kr/software/mobile_app/rplusiot/#r-iot-다운로드설치
+[R+ IoT 설치 및 예제실행]: /docs/kr/software/mobile_app/rplusiot/#r-iot-다운로드설치
 [R+IoT 앱 파라미터 사용법]: /docs/kr/software/rplus1/task/task_misc/#스마트앱-파라미터
 [로보티즈 IoT 2단계 엔트리 교재 다운로드]: http://www.robotis.com/service/download.php?no=745
 [OpenCM7.0]: /docs/kr/parts/controller/opencm7/
@@ -102,10 +102,10 @@ SMS 기능이 필요한 경우 이전 버전의 앱 설치파일(APK)을 다운�
 [LED 모듈]: /docs/kr/parts/display/lm-10/
 [스크래치2 오프라인 에디터, R+ 스크래치 설치 및 예제 실행 방법 바로가기]: /docs/kr/software/mobile_app/rplusiot/#r-iot-다운로드설치
 [교안예제]: #교안예제
-[R+m.태스크2.0]: /docs/kr/software/rplus_mobile/mtask20/
+[R+m.Task 2.0]: /docs/kr/software/rplus_mobile/mtask20/
 [예제의 실행 방법]: /docs/kr/edu/ollo/bugkit/#태스크-코드-다운로드
 [R+IoT 설치 및 실행 방법 바로가기]: /docs/kr/software/mobile_app/rplusiot/#r-iot-다운로드설치
-[R+m.태스크2.0 설치 및 실행 방법 바로가기]: /docs/kr/software/rplus_mobile/mtask20/  
+[R+m.Task 2.0 설치 및 실행 방법 바로가기]: /docs/kr/software/rplus_mobile/mtask20/  
 [IoT_L2_1_Hello(p)_KR]: http://www.robotis.com/service/download.php?no=1162
 [IoT_L2_1_Hello_KR]: http://www.robotis.com/service/download.php?no=1163
 [IoT_L2_2_MessageSignal(p)_KR]: http://www.robotis.com/service/download.php?no=1164

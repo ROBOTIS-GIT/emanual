@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/kr/software/rplus_mobile/mmotion/
 sidebar:
-  title: 로보플러스 모바일 모션 2.0
+  title: R+m.Motion 2.0
   nav: "rplusmmotion"
 ---
 

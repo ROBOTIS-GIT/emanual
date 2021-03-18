@@ -59,7 +59,7 @@ sidebar:
 |      PRO Series       |       X        |       X        |       X        |         X         |                      X                      |
 |       PH Series       |       X        |       X        |       X        |         X         |                      X                      |
 |       PM Series       |       X        |       X        |       X        |         X         |                      X                      |
-| 로보플러스 매니저 2.0 |       X        |       X        |       X        |         X         | O         | O              | O          | O |
+| R+ Manager 2.0 |       X        |       X        |       X        |         X         | O         | O              | O          | O |
 |   다이나믹셀 위자드   |       O        |       X        |       X        |         O         | O         | X (XL320 지원) | O          | X |
 | 다이나믹셀 위자드2.0  |       O        |       O        |       O        |         O         | O         | O              | O          | O |
 |    다이나믹셀 SDK     |       O        |       O        |       O        |         O         | O         | O              | O          | O |
