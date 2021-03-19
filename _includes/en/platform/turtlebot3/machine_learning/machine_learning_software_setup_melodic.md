@@ -1,5 +1,5 @@
 
-To do this tutorial, you need to install Tensorflow, Keras and Anaconda with Ubuntu 16.04 and ROS1 Kinetic.
+To do this tutorial, you need to install Tensorflow, Keras and Anaconda with Ubuntu 18.04 and ROS1 Melodic.
 
 <iframe width="854" height="480" src="https://www.youtube.com/embed/s0qgunKt654" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
@@ -75,7 +75,7 @@ Machine Learning is running on a Gazebo simulation world. If you haven't install
 
 ```bash
 $ cd ~/catkin_ws/src/
-$ git clone -b kinetic-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
+$ git clone -b melodic-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
 $ cd ~/catkin_ws && catkin_make
 ```
 
