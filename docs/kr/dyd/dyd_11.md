@@ -21,14 +21,14 @@ product_group: all-dyd
 ## [세부사양](#세부사양)
 
 |             Properties             |    Unit     | DYD-11-033 | DYD-11-051 | Note |
-| :--------------------------------: | :---------: | :--------: | :--------: | :--: |
+|:----------------------------------:|:-----------:|:----------:|:----------:|:----:|
 |             Gear ratio             |      -      |     33     |     51     |  -   |
 |       Repeatable peak torque       |     Nm      |    8.5     |    17.0    |  -   |
 | Read output torque<br>(@2,000 rpm) |     Nm      |    2.2     |    3.5     |  -   |
 |        Maximum input speed         |     rpm     |   6,000    |   6,000    |  -   |
 |        Average input speed         |     rpm     |   2,000    |   2,000    |  -   |
 |         Moment of intertia         | X10-4 kgm^2 |   0.022    |   0.024    |  -   |
-|     Hysteresis loss / Backlash     |   arcmin    |    <3.0    |    <3.0    |  -   |
+|              Backlash              |   arcmin    |    <3.0    |    <3.0    |  -   |
 |            Lost motion             |   arcmin    |    <3.0    |    <3.0    |  -   |
 |        Torsional stiffness         |  Nm/arcmin  |    1.0     |    1.0     |  -   |
 | Efficiency(@2,000 rpm, 20 &#8451;) |      %      |     50     |     50     |  -   |
@@ -67,22 +67,22 @@ product_group: all-dyd
 
 > PG 옵션
 
-|  DYD gear ratio  | 33  |  -  |  -  |  -  | 51  |  -  |  -  |  -  |
-| :--------------: | :-: | :-: | :-: | :-: | --- | :-: | :-: | :-: |
-|  PG gear ratio   |  3  |  4  |  5  |  7  | 3   |  4  |  5  |  7  |
-| Total gear ratio | 99  | 132 | 165 | 231 | 153 | 204 | 255 | 357 |
+|  DYD gear ratio  | 33 |  -  |  -  |  -  | 51  |  -  |  -  |  -  |
+|:----------------:|:--:|:---:|:---:|:---:|:----|:---:|:---:|:---:|
+|  PG gear ratio   | 3  |  4  |  5  |  7  | 3   |  4  |  5  |  7  |
+| Total gear ratio | 99 | 132 | 165 | 231 | 153 | 204 | 255 | 357 |
 
 ## [입력부 샤프트 옵션](#입력부-샤프트-옵션)
 
 DYD의 입력부에 구동 시스템(모터 또는 구동소스)을 구성함에 있어서 다양한 입력축이 제공될 수 있습니다.
 
-| Option |                   Type - C                    |               Type - D                |                  Type - SC                  |
-| :----: | :-------------------------------------------: | :-----------------------------------: | :---------------------------------------: |
+| Option |                   Type - C                    |               Type - D                |                 Type - SC                 |
+|:------:|:---------------------------------------------:|:-------------------------------------:|:-----------------------------------------:|
 | Shape  | ![](/assets/images/dyd/dyd_clamp_ring_01.png) | ![](/assets/images/dyd/dyd_d_cut.png) | ![](/assets/images/dyd/dyd_set_screw.png) |
 |  Name  |                  Clamp-ring                   |                 D-Cut                 |                 Set-screw                 |
 
 {% capture dyd_input_shaft_reference %}
-**참고**: 다음표에서 각 DYD에서 권장되는 입력축을 참고하세요.
+**참고**: 다음 표에서 각 DYD에서 기본으로 제공하는 입력축을 참고하세요.
 
 | DYD-11  |  DYD-14  |  DYD-17  |
 |:-------:|:--------:|:--------:|

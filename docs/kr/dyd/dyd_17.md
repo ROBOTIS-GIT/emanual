@@ -28,7 +28,7 @@ product_group: all-dyd
 |        Maximum input speed         |     rpm     |   6,000    |   6,000    |  -   |
 |        Average input speed         |     rpm     |   2,000    |   2,000    |  -   |
 |         Moment of intertia         | X10-4 kgm^2 |   0.284    |   0.322    |  -   |
-|     Hysteresis loss / Backlash     |    arcmin    |    <3.0    |    <3.0    |  -   |
+|       Backlash     |    arcmin    |    <3.0    |    <3.0    |  -   |
 |            Lost motion             |   arcmin    |    <3.0    |    <3.0    |  -   |
 |        Torsional stiffness         |  Nm/arcmin  |    2.2     |    2.2     |  -   |
 | Efficiency(@2,000 rpm, 20 &#8451;) |      %      |     58     |     58     |  -   |
@@ -83,7 +83,7 @@ DYD의 입력부에 구동 시스템(모터 또는 구동소스)을 구성함에
 
 {% capture dyd_input_shaft_reference %}
 
-**참고**: 다음표에서 각 DYD에서 권장되는 입력축을 참고하세요.
+**참고**: 다음 표에서 각 DYD에서 기본으로 제공하는 입력축을 참고하세요.
 
 | DYD-11  |  DYD-14  |  DYD-17  |
 |:-------:|:--------:|:--------:|

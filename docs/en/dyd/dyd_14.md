@@ -28,7 +28,7 @@ product_group: all-dyd
 |        Maximum input speed         |     rpm     |   6,000    |   6,000    |  -   |
 |        Average input speed         |     rpm     |   2,000    |   2,000    |  -   |
 |         Moment of intertia         | X10-4 kgm^2 |   0.119    |   0.135    |  -   |
-|     Hysteresis loss / Backlash     |   arcmin    |    <3.0    |    <3.0    |  -   |
+|       Backlash     |   arcmin    |    <3.0    |    <3.0    |  -   |
 |            Lost motion             |   arcmin    |    <3.0    |    <3.0    |  -   |
 |        Torsional stiffness         |  Nm/arcmin  |    2.0     |    2.0     |  -   |
 | Efficiency(@2,000 rpm, 20 &#8451;) |      %      |     55     |     55     |  -   |
@@ -83,7 +83,7 @@ Various input shaft options (Type C / D / SC) can be selected with the DYD. See 
 
 {% capture dyd_input_shaft_reference %}
 
-**NOTE**: Reference the recommended input shaft option type for each DYD.
+**NOTE**: Refer to the input shaft option type provided with the each DYD.
 
 | DYD-11  |  DYD-14  |  DYD-17  |
 |:-------:|:--------:|:--------:|
