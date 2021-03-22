@@ -334,8 +334,8 @@ Grease for lubrication of the gearhead is injected during assembly, and addition
 
 > DYD Application: Collaborative Robot
 
-## [Mobile Platforms](#mobile-platforms)
+## [Mobile Robot System](#mobile-robot-system)
 
 ![](/assets/images/dyd/dyd_application_02.png)
 
-> DYD Application: Mobile Platform
+> DYD Application: Mobile Robot System

@@ -339,8 +339,8 @@ Starting Torque = 20 cNm (DYD-14)
 
 > DYD 활용예시: 협동로봇
 
-## [모바일플랫폼](#모바일플랫폼)
+## [모바일 로봇 시스템](#모바일-로봇-시스템)
 
 ![](/assets/images/dyd/dyd_application_02.png)
 
-> DYD 활용예시: 모바일플랫폼
+> DYD 활용예시: 모바일 로봇 시스템
