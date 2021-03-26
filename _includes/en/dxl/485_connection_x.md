@@ -6,6 +6,9 @@ To control the DYNAMIXEL actuators, the main controller needs to convert its UAR
 ### RS-485 Communication
 ![](/assets/images/dxl/x/x_series_485_circuit.jpg)
 
+**NOTE**: Above circuit is designed for 5V or 5V tolerant MCU. Otherwise, use a Level Shifter to match the voltage of MCU.
+{: .notice}
+
 ![](/assets/images/dxl/x/x_series_485_pin.png)
 
 The power of DYNAMIXEL is supplied via Pin1(-), Pin2(+).  
