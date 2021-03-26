@@ -8,6 +8,9 @@
 ### [TTL 통신 (3.3V Logic, 5V Compatible)](#ttl-통신-33v-logic-5v-compatible)
 ![](/assets/images/dxl/3v3_ttl_circuit.png)
 
+**참고**: 위 회로는 5V 전원을 사용하는 MCU를 사용하거나 IO가 5V tolerant한 경우 사용가능합니다. 그 외의 경우, Level Shifter를 사용하세요.
+{: .notice}
+
 **참고**: XL330의 통신 버스의 전압은 다른 다이나믹셀과 달리 3.3V 이지만, 5V 통신 버스와도 호환됩니다.
 {: .notice}
 
@@ -15,6 +18,10 @@
 
 ### [TTL 통신](#ttl-통신)
 ![](/assets/images/dxl/ttl_circuit.png)
+
+**참고**: 위 회로는 5V 전원을 사용하는 MCU를 사용하거나 IO가 5V tolerant한 경우 사용가능합니다. 그 외의 경우, Level Shifter를 사용하세요.
+{: .notice}
+
 {% endif %}
 
 {% if page.ref=='2xl430-w250' or page.ref=='2xc430-w250' %} ![](/assets/images/dxl/x/2xl/2x_series_ttl_pin.png) {% else %}![](/assets/images/dxl/x/x_series_ttl_pin.png) {% endif %} 

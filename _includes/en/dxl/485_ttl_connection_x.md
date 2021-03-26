@@ -5,8 +5,7 @@ To control the DYNAMIXEL actuators, the main controller needs to convert its UAR
 ### TTL Communication
 ![](/assets/images/dxl/ttl_circuit.png)
 
-**NOTE**: Above circuit is designed for 5V or 5V tolerant MCU. Otherwise, use a Level Shifter to match the voltage of MCU.
-{: .notice}
+> TTL Circuit
 
 **NOTE**: Above circuit is designed for 5V or 5V tolerant MCU. Otherwise, use a Level Shifter to match the voltage of MCU.
 {: .notice}
@@ -37,6 +36,6 @@ To control the DYNAMIXEL actuators, the main controller needs to convert its UAR
 
 The power of DYNAMIXEL is supplied via Pin1(-), Pin2(+).  
 (The above circuit is built into DYNAMIXEL's controller only)  
-In the above circuit diagram, the direction of data signal of TxD and RxD in the TTL Level is determined according to the level of TX_Enable_5V as follows:  
-In case of TX_Enable_5V = High: The signal of TxD is output to D+ and D-  
-In case of TX_Enable_5V = Low: The signal of D+ and D- is output to RxD  
+In the above circuit diagram, the direction of data signal of TxD and RxD in the TTL Level is determined according to the level of DIRECTION 485 as follows:  
+In case of DIRECTION485 Level = High: The signal of TxD is output to D+ and D-  
+In case of DIRECTION485 Level = Low: The signal of D+ and D- is output to RxD  

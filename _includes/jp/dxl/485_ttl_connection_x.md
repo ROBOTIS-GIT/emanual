@@ -4,6 +4,9 @@ DYNAMIXEL アクチュエータを制御するには、メインコントロー�
 ### TTL 通信
 ![](/assets/images/dxl/ttl_circuit.png)
 
+**NOTE**: Above circuit is designed for 5V or 5V tolerant MCU. Otherwise, use a Level Shifter to match the voltage of MCU.
+{: .notice}
+
 ![](/assets/images/dxl/x/x_series_ttl_pin.png)
 
 ### RS-485 通信
