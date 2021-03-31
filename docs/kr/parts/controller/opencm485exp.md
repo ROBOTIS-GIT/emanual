@@ -41,7 +41,7 @@ sidebar:
 4. **다이나믹셀 TTL 3 PIN** : 3핀 케이블(다이나믹셀 TTL Bus)을 사용하는 다이나믹셀을 Daisy chain으로 연결하기 위한 포트 입니다.
 5. **User Button** : 사용자가 제어 할 수 있는 스위치 입니다.
 6. **User LED** : 사용자가 제어 할 수있는 LED 입니다.
-7. **I/O header** : OpenCM9.04와 연결하 기 위한 헤더 입니다.(2.54mm pitch)
+7. **I/O header** : OpenCM9.04와 연결하기 위한 헤더 입니다.(2.54mm pitch)
 8. **다이나믹셀 485 4 PIN** : 4핀 케이블(다이나믹셀 485 Bus)을 사용하는 다이나믹셀을 Daisy chain으로 연결하기 위한 포트 입니다.
 9. **Power Switch** : 보드와 다이나믹셀 전원을 on/off하는 스위치 입니다. 단, USB 연결시 보드 전원은 on/off되지 않습니다.
 10. **JP1 Jumper** : OpenCM 485 EXP 보드에  입력된 전압을 OpenCM9.04에도 전압을 입력할지 결정하는 점퍼 입니다.
