@@ -15705,6 +15705,15 @@ kit1:
     titlekr: "교육자료 다운로드"
     url: /edu/engineer/kit1/#study-materials
     urlkr: /edu/engineer/kit1/#교육자료-다운로드
+    children:
+    - title: "Apply for Study Materials"
+      titlekr: "교육자료 신청하기"
+      url: /edu/engineer/kit1/#apply-for-study-materials
+      urlkr: /edu/engineer/kit1/#교육자료-신청하기
+    - title: "Assembly Manual Download"
+      titlekr: "조립서 다운로드 받기"
+      url: /edu/engineer/kit1/#assembly-manual-download
+      urlkr: /edu/engineer/kit1/#조립서-다운로드-받기
   - title: "References"
     titlekr: "참고자료"
     url: /edu/engineer/kit1/#references
@@ -15842,10 +15851,31 @@ kit2:
         titlekr: "Scorpi"
         url: /edu/engineer/kit2_quickstart/#scorpi
         urlkr: /edu/engineer/kit2_quickstart/#scorpi
-  - title: "Advanced Courses"
-    titlekr: "교육자료 다운로드"
-    url: /edu/engineer/kit2_advanced_course/#advanced-courses
-    urlkr: /edu/engineer/kit2_advanced_course/#교육자료-다운로드
+  - title: "Study Materials"
+    titlekr: "교육자료"
+    url: /edu/engineer/kit2_advanced_course/#study-materials
+    urlkr: /edu/engineer/kit2_advanced_course/#교육자료
+    children:
+    - title: "Advanced Study Materials"
+      titlekr: "교육자료 다운로드 하기"
+      url: /edu/engineer/kit2_advanced_course/#advanced-study-materials
+      urlkr: /edu/engineer/kit2_advanced_course/#교육자료-다운로드-하기
+    - title: "Download App"
+      titlekr: "앱 설치하기"
+      url: /edu/engineer/kit2_advanced_course/#download-app
+      urlkr: /edu/engineer/kit2_advanced_course/#앱-설치하기
+    - title: "Download Robot Examples"
+      titlekr: "로봇 예제 다운로드 하기"
+      url: /edu/engineer/kit2_advanced_course/#download-robot-examples
+      urlkr: /edu/engineer/kit2_advanced_course/#로봇-예제-다운로드-하기
+    - title: "Download Assembly Manual"
+      titlekr: "조립서 다운로드 받기"
+      url: /edu/engineer/kit2_advanced_course/#download-assembly-manual
+      urlkr:  /edu/engineer/kit2_advanced_course/#조립서-다운로드-받기
+    - title: "Download a MARKER for Commando"
+      titlekr: "Commando Marker 다운로드 받기"
+      url: /edu/engineer/kit2_advanced_course/#download-a-marker-for-commando
+      urlkr: /edu/engineer/kit2_advanced_course/#commando-marker-다운로드-받기    
   - title: "References"
     titlekr: "참고자료"
     url: /edu/engineer/kit2_reference/#references
@@ -15876,27 +15906,6 @@ kit2:
         titlekr : "모터 오프셋 설정"
         url: /edu/engineer/kit2_reference/#dynamixel-offset
         urlkr: /edu/engineer/kit2_reference/#모터-오프셋-설정
-    - title: "Download"
-      titlekr: "다운로드"
-      url: /edu/engineer/kit2_reference/#download
-      urlkr: /edu/engineer/kit2_reference/#다운로드
-      children:
-      - title: "Download App"
-        titlekr: "앱 설치하기"
-        url: /edu/engineer/kit2_reference/#download-app
-        urlkr: /edu/engineer/kit2_reference/#앱-설치하기
-      - title: "Download Robot Examples"
-        titlekr: "로봇 예제 다운로드 하기"
-        url: /edu/engineer/kit2_reference/#download-robot-examples
-        urlkr: /edu/engineer/kit2_reference/#로봇-예제-다운로드-하기
-      - title: "Download Assembly Manual"
-        titlekr: "조립서 다운로드 받기"
-        url: /edu/engineer/kit2_reference/#download-assembly-manual
-        urlkr:  /edu/engineer/kit2_reference/#조립서-다운로드-받기
-      - title: "Download a MARKER for Commando"
-        titlekr: "Commando Marker 다운로드 받기"
-        url: /edu/engineer/kit2_reference/#download-a-marker-for-commando
-        urlkr: /edu/engineer/kit2_reference/#commando-marker-다운로드-받기
     - title: "Self Checklist"
       titlekr: "점검 및 자가진단"
       url: /edu/engineer/kit2_reference/#self-checklist

@@ -623,8 +623,9 @@ Tensor Flow installation can be done in two simple steps.
 {% endcapture %}
 <div class="notice--info">{{ retrain | markdownify }}</div>
 
-
 # [Study Materials](#study-materials)
+
+## [Apply for Study Materials](#apply-for-study-materials)
 
 {% capture edu_application %}
 Additional course materials can be downloaded from below link.
@@ -634,6 +635,19 @@ Additional course materials can be downloaded from below link.
 <div class="notice--info">{{ edu_application | markdownify }}</div>
 
 ![](/assets/images/edu/engineer/kit1/engineer_edu_metarials.png)
+
+## [Assembly Manual Download](#apply-for-study-materials)
+
+|                    Model                     |                    Download                    |
+|:--------------------------------------------:|:----------------------------------------------:|
+|                     Dr.R                     |          [ROBOTIS_ENGINEER_KIT1_Dr_r]          |
+|                    MAX-E1                    |         [ROBOTIS_ENGINEER_KIT1_Max_E1]         |
+|                     SPI                      |          [ROBOTIS_ENGINEER_KIT1_SPI]           |
+|          Educ (Additional Eaxmples)          |          [ROBOTIS_ENGINEER_KIT1_Educ]          |
+|    Quadruped Robot (Additional Eaxmples)     |    [ROBOTIS_ENGINEER_KIT1_Quadruped_robot]     |
+|      Gimbal Mini (Additional Eaxmples)       |      [ROBOTIS_ENGINEER_KIT1_Gimbal_mini]       |
+|         Gimbal (Additional Eaxmples)         |         [ROBOTIS_ENGINEER_KIT1_Gimbal]         |
+| Excavating Manipulator (Additional Eaxmples) | [ROBOTIS_ENGINEER_KIT1_Excavating Manipulator] |
 
 # [References](#references)
 

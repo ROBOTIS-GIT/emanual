@@ -217,40 +217,6 @@ Select `OK` once again to save the offset value to robot.
   - `Reset Offset` : When selected, the confirmation window will appear. Select [OK] to reset the offset value of all joint.  
   - `Initial Pose` : This button will reload the saved offset value. Incorrectly configured offset may be recovered with this button.
 
-## [Download](#download)
-All items (App, Assemly Manuals and Kit-Only Raspbian Image file) are available . 
-
-### [Download App](#download-app)
-The ENGINEER KIT2 shares R+Task 3.0 and ENGIEER app with the ENGINEER KIT 1. If these app and software are not installed on your PC or a smart device, see [App Installation](/docs/en/edu/engineer/kit1/#app-installation) and install the app and software.
-
-### [Download Robot Examples](#download-robot-examples)
-
-| Examples                       | Python (.py)                                                                   | Motion (.mtn)                                                                   |
-|:-------------------------------|:-------------------------------------------------------------------------------|:--------------------------------------------------------------------------------|
-| MAX-E2                         | [01_ENG2_Max_E2_PY.py](https://www.robotis.com/service/download.php?no=1915)   | [01_ENG2_Max_E2_MO.mtn3](https://www.robotis.com/service/download.php?no=1916)  |
-| Commando                       | [02_ENG2_Commando_PY.py](https://www.robotis.com/service/download.php?no=1917) | Only Python File is used                                                        |
-| Scorpi                         | [03_ENG2_Scorpi_PY.py](https://www.robotis.com/service/download.php?no=1919)   | [03_ENG2_Scorpi_MO.mtn3](https://www.robotis.com/service/download.php?no=1918)  |
-| AutoBot  (Additional Eaxmples) | [04_ENG2_Autobot_PY.py](https://www.robotis.com/service/download.php?no=1920)  | [04_ENG2_Autobot_MO.mtn3](https://www.robotis.com/service/download.php?no=1921) |
-| Strider  (Additional Eaxmples) | [05_ENG2_Strider_PY.py](https://www.robotis.com/service/download.php?no=1922)  | Only Python File is used                                                        |
-
-### [Download Assembly Manual](#download-assembly-manual)
-Download the assembly manuals from the following table.
-
-|             Model              | Download                                                                                              |
-|:------------------------------:|:------------------------------------------------------------------------------------------------------|
-|             MAX-E2             | [ROBOTIS_ENGINEER_KIT2_MAX-E2_EN_ver2014.pdf](https://www.robotis.com/service/download.php?no=1929)   |
-|            Commando            | [ROBOTIS_ENGINEER_KIT2_Commando_EN_ver2014.pdf](https://www.robotis.com/service/download.php?no=1930) |
-|             Scorpi             | [ROBOTIS_ENGINEER_KIT2_Scorpi_EN_ver2014.pdf](https://www.robotis.com/service/download.php?no=1931)   |
-| AutoBot  (Additional Eaxmples) | [ROBOTIS_ENGINEER KIT2_Autobot_EN_ver2018.pdf](https://www.robotis.com/service/download.php?no=1981)  |
-| Strider  (Additional Eaxmples) | [ROBOTIS_ENGINEER KIT2_Strider_EN_ver2018.pdf](https://www.robotis.com/service/download.php?no=1982)  |
-
-
-### [Download a MARKER for Commando](#download-a-marker-for-commando)
-
-Download [MARKER for Commando](https://www.robotis.com/service/download.php?no=1933).
-
-![](/assets/images/edu/engineer/kit2/marker_for_commando.png)
-
 ## [Robot and Software Reset](#robot-and-software-reset)
 
 ## [Controller and DYNAMIXEL Reset](#controller-and-dynamixel-reset)
