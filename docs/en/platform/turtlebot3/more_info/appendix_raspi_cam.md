@@ -119,9 +119,11 @@ Here is the detail specification document: [Raspberry Pi Camera Module v2 Datash
 
 The Raspberry Pi Camera Module v2 is applied on TurtleBot3 Waffle Pi.
 
-
 ![](/assets/images/platform/turtlebot3/hardware_setup/turtlebot3_models.png)
 
+**WARNING**  
+This instruction can be applied to the Raspberry Pi with Raspbian OS installed.
+{: .notice--warning}
 
 ### [Introduction Video](#introduction-video)
 
