@@ -623,8 +623,9 @@ Tensor Flow installation can be done in two simple steps.
 {% endcapture %}
 <div class="notice--info">{{ retrain | markdownify }}</div>
 
-
 # [Study Materials](#study-materials)
+
+## [Apply for Study Materials](#apply-for-study-materials)
 
 {% capture edu_application %}
 Additional course materials can be downloaded from below link.
@@ -634,6 +635,19 @@ Additional course materials can be downloaded from below link.
 <div class="notice--info">{{ edu_application | markdownify }}</div>
 
 ![](/assets/images/edu/engineer/kit1/engineer_edu_metarials.png)
+
+## [Assembly Manual Download](#apply-for-study-materials)
+
+|                    Model                     |                                                      Download                                                      |
+|:--------------------------------------------:|:------------------------------------------------------------------------------------------------------------------:|
+|                     Dr.R                     |          [ROBOTIS_ENGINEER_KIT1_DrR_EN_ver2113.pdf](https://www.robotis.com/service/download.php?no=2035)          |
+|                    MAX-E1                    |        [ROBOTIS_ENGINEER_KIT1_MAX-E1_EN_ver2113.pdf](https://www.robotis.com/service/download.php?no=2036)         |
+|                     SPI                      |          [ROBOTIS_ENGINEER_KIT1_SPI_EN_ver2113.pdf](https://www.robotis.com/service/download.php?no=2037)          |
+|          Educ (Additional Eaxmples)          |         [ROBOTIS_ENGINEER_KIT1_Educ_EN_ver2113.pdf](https://www.robotis.com/service/download.php?no=2038)          |
+|    Quadruped Robot (Additional Eaxmples)     |    [ROBOTIS_ENGINEER_KIT1_QuadrupedRobot_EN_ver2113.pdf](https://www.robotis.com/service/download.php?no=2039)     |
+|      Gimbal Mini (Additional Eaxmples)       |      [ROBOTIS_ENGINEER_KIT1_GimbalMini_EN_ver2113.pdf](https://www.robotis.com/service/download.php?no=2040)       |
+|         Gimbal (Additional Eaxmples)         |        [ROBOTIS_ENGINEER_KIT1_Gimbal_EN_ver2113.pdf](https://www.robotis.com/service/download.php?no=2041)         |
+| Excavating Manipulator (Additional Eaxmples) | [ROBOTIS_ENGINEER_KIT1_ExcavatingManipulator_EN_ver2113.pdf](https://www.robotis.com/service/download.php?no=2042) |
 
 # [References](#references)
 
