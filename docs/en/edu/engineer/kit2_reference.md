@@ -217,9 +217,10 @@ Select `OK` once again to save the offset value to robot.
   - `Reset Offset` : When selected, the confirmation window will appear. Select [OK] to reset the offset value of all joint.  
   - `Initial Pose` : This button will reload the saved offset value. Incorrectly configured offset may be recovered with this button.
 
-## [Robot and Software Reset](#robot-and-software-reset)
-
 ## [Controller and DYNAMIXEL Reset](#controller-and-dynamixel-reset)
+
+To reset, redownload the programming code to the controller, which will set the configuration of the robot to the factory status. Note that, if you make your own custom robot, the set configuration might differ depending on your application. 
+- To donwload robot examples, see [Download Examples](/docs/en/edu/engineer/kit2_quickstart/#download-examples) and select the preferable option ([Download from PC](/docs/en/edu/engineer/kit2_quickstart/#download-from-pc) using R+Task 3.0 recommended).
 
 ## [Self Checklist](#self-checklist)
 

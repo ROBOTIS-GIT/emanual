@@ -15818,9 +15818,9 @@ kit2:
       url: /edu/engineer/kit2_quickstart/#app-installation
       urlkr: /edu/engineer/kit2_quickstart/#앱-설치하기
     - title: "Download Examples"
-      titlekr: "예제 다운로드"
+      titlekr: "예제 다운로드 받기"
       url: /edu/engineer/kit2_quickstart/#download-examples
-      urlkr: /edu/engineer/kit2_quickstart/#예제-다운로드
+      urlkr: /edu/engineer/kit2_quickstart/#예제-다운로드-받기
       children:
       - title: "Download from PC"
         titlekr: "PC에서 예제 다운로드 받기"
@@ -15910,10 +15910,10 @@ kit2:
       titlekr: "점검 및 자가진단"
       url: /edu/engineer/kit2_reference/#self-checklist
       urlkr: /edu/engineer/kit2_reference/#점검-및-자가진단
-    - title: "How to initialize the controller and DYNAMIXEL"
-      titlekr: "로봇 및 프로그램 초기화 방법"
-      url: /edu/engineer/kit2_reference/#how-to-initialize-the-controller-and-dynamixel
-      urlkr: /edu/engineer/kit2_reference/#로봇-및-프로그램-초기화-방법            
+    - title: "Controller and DYNAMIXEL Reset"
+      titlekr: "제어기 및 다이나믹셀 초기화 방법"
+      url: /edu/engineer/kit2_reference/#controller-and-dynamixel-reset
+      urlkr: /edu/engineer/kit2_reference/#제어기-및-다이나믹셀-초기화-방법
     - title: "Charging Battery"
       titlekr: "배터리 충전하기"
       url: /edu/engineer/kit2_reference/#charging-battery
