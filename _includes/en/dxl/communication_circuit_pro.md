@@ -1,13 +1,16 @@
 To control {% if page.product_group=='dxl_p' %}DYNAMIXEL-P{% else %}DYNAMIXEL PRO{% endif %} with a custom made Main Controller, the signal of Main Controller UART should be converted into RS-485 signal.
 The following is a recommended conversion circuit diagram.
 
-![](/assets/images/dxl/pro/485_circuit_pro.png)
+![](/assets/images/dxl/x/x_series_485_circuit.jpg)
+
+**NOTE**: Above circuit is designed for 5V or 5V tolerant MCU. Otherwise, use a Level Shifter to match the voltage of MCU.
+{: .notice}
 
 The power is supplied via Pin1(-) and Pin2(+) of DYNAMIXEL. (The above circuit is built into DYNAMIXEL-only controllers)
 
-In the above circuit diagram, the direction of data signal of TxD and RxD in the TTL Level is determined according to the level of `DIRECTION485` as follows:
-- If `DIRECTION485` = **High** : The `CPU_TXD` signal is transferred to `D+` and `D-`.
-- If `DIRECTION485` = **Low** : The `D+` and `D-` signals are transferred to `CPU_RXD`.
+In the above circuit diagram, the direction of data signal of TxD and RxD in the TTL Level is determined according to the level of `TX_Enable_5V` as follows:
+- If `TX_Enable_5V` = **High** : The `TXD_5V` signal is transferred to `D+` and `D-`.
+- If `TX_Enable_5V` = **Low** : The `D+` and `D-` signals are transferred to `RXD_5V`.
 
 ## [Pin Arrangement](#pin-arrangement)
 Connector pin arrangement is shown below.

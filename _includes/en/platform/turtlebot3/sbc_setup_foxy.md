@@ -122,6 +122,14 @@ Mem:           912M         97M        263M        4.4M        550M        795M
 Swap:          2.0G          0B        2.0G
 ```
 
+{% capture ubuntu_blog %}
+Please refer to the Ubuntu Blog below for more useful information.  
+- [Improving Security with Ubuntu](https://ubuntu.com/blog/steps-to-maximise-robotics-security-with-ubuntu)
+- [Improving User Experience of TurtleBot3 Waffle Pi](https://ubuntu.com/blog/building-a-better-turtlebot3)
+- [How to set up TurtleBot3 Waffle Pi in minutes with Snaps](https://ubuntu.com/blog/how-to-set-up-turtlebot3-in-minutes-with-snaps)
+{% endcapture %}
+<div class="notice--success">{{ ubuntu_blog | markdownify }}</div>
+
 ### Install ROS Foxy Fitzroy
 
 - [Official ROS 2 Foxy Installation Guide](https://index.ros.org/doc/ros2/Installation/Foxy/Linux-Install-Debians/)

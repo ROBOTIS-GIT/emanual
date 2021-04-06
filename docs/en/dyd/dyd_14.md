@@ -25,10 +25,10 @@ product_group: all-dyd
 |             Gear ratio             |      -      |     51     |     99     |  -   |
 |       Repeatable peak torque       |     Nm      |    27.0    |    39.0    |  -   |
 | Read output torque<br>(@2,000 rpm) |     Nm      |    5.4     |    7.8     |  -   |
-|        Maximum input Speed         |     rpm     |   6,000    |   6,000    |  -   |
+|        Maximum input speed         |     rpm     |   6,000    |   6,000    |  -   |
 |        Average input speed         |     rpm     |   2,000    |   2,000    |  -   |
 |         Moment of intertia         | X10-4 kgm^2 |   0.119    |   0.135    |  -   |
-|     Hysteresis loss / Backlash     |    armin    |    <3.0    |    <3.0    |  -   |
+|       Backlash     |   arcmin    |    <3.0    |    <3.0    |  -   |
 |            Lost motion             |   arcmin    |    <3.0    |    <3.0    |  -   |
 |        Torsional stiffness         |  Nm/arcmin  |    2.0     |    2.0     |  -   |
 | Efficiency(@2,000 rpm, 20 &#8451;) |      %      |     55     |     55     |  -   |
@@ -72,28 +72,26 @@ Additional planetary gears(PG) with various reduction ratio can be attached in o
 |  PG gear ratio   |  3  |  4  |  5  |  7  |  3  |  4  |  5  |  7  |
 | Total gear ratio | 153 | 204 | 255 | 357 | 297 | 396 | 495 | 693 |
 
-## [Right angle (RA option), RG Option](#right-angle-ra-option-rg-option)
-
-When a straight connection cannot be made due to a restriction in space, RG option can be applied.
-
-![](/assets/images/dyd/dyd_14_rg_option_01.png)
-
-> RG Option
-
-**NOTE**: RG option does not affect the final reduction ratio.
-{: .notice}
-
 ## [Input shaft options](#input-shaft-options)
 
-Various input shaft options can be selected with the DYD.
+Various input shaft options (Type C / D / SC) can be selected with the DYD. See the following table and select the input shaft option to use with DYD. 
 
-| Option |                   Type - C                    |               Type - D                |                  Type-SC                  |
+| Option |                   Type - C                    |               Type - D                |                 Type - SC                 |
 |:------:|:---------------------------------------------:|:-------------------------------------:|:-----------------------------------------:|
 | Shape  | ![](/assets/images/dyd/dyd_clamp_ring_01.png) | ![](/assets/images/dyd/dyd_d_cut.png) | ![](/assets/images/dyd/dyd_set_screw.png) |
 |  Name  |                  Clamp-ring                   |                 D-Cut                 |                 Set-screw                 |
 
-**NOTE**: The Type-C is provided as a default option.
-{: .notice}
+{% capture dyd_input_shaft_reference %}
+
+**NOTE**: Refer to the input shaft option type provided with the each DYD.
+
+| DYD-11  |  DYD-14  |  DYD-17  |
+|:-------:|:--------:|:--------:|
+| Type-SC | Type - C | Type - C |
+
+{% endcapture %}
+
+<div class="notice">{{ dyd_input_shaft_reference | markdownify }}</div>
 
 # [Assembly](#assembly)
 
@@ -112,11 +110,3 @@ The PG option that provides high ratio reduction, requires a bracket to attach t
 ![](/assets/images/dyd/dyd_14_pg_option_assembly_01.png)
 
 > Assembly Example for PG option
-
-## [Assembly example of RG option](#assembly-example-of-rg-option)
-
-The RG option that changes the input direction requires a bracket to attach the motor to the apparatus. The bracket for a motor is not provided.
-
-![](/assets/images/dyd/dyd_14_rg_option_assembly_01.png)
-
-> Assembly Example for RG option

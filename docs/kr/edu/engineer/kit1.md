@@ -637,14 +637,30 @@ Dr.R 예제를 선택하면 스마트 기기 화면에 아래와 같은 표정�
 
 # [교육자료 다운로드](#교육자료-다운로드)
 
+## [교육자료 신청하기](#교육자료-신청하기)
+
 {% capture edu_application %}
 아래의 링크에서 로보티즈 엔지니어 키트의 다양한 교육자료를 받을 수 있습니다.
-
 - [**교육자료 신청하기**](https://www.robotis.com/pdf_project/register.php)
 {% endcapture %}
 <div class="notice--info">{{ edu_application | markdownify }}</div>
 
 ![](/assets/images/edu/engineer/kit1/engineer_edu_metarials_kr.png)
+
+## [조립서 다운로드 받기](#조립서-다운로드-받기)
+
+아래의 표에서 필요한 조립서를 다운로드 받으세요.
+
+|                모델                |                                                      다운로드                                                      |
+|:----------------------------------:|:------------------------------------------------------------------------------------------------------------------:|
+|                Dr.R                |          [ROBOTIS_ENGINEER_KIT1_DrR_KR_ver2113.pdf](https://www.robotis.com/service/download.php?no=2027)          |
+|               MAX-E1               |        [ROBOTIS_ENGINEER_KIT1_MAX-E1_KR_ver2113.pdf](https://www.robotis.com/service/download.php?no=2028)         |
+|                SPI                 |          [ROBOTIS_ENGINEER_KIT1_SPI_KR_ver2113.pdf](https://www.robotis.com/service/download.php?no=2029)          |
+|          Educ (추가 예제)          |         [ROBOTIS_ENGINEER_KIT1_Educ_KR_ver2113.pdf](https://www.robotis.com/service/download.php?no=2030)          |
+|    Quadruped Robot (추가 예제)     |    [ROBOTIS_ENGINEER_KIT1_QuadrupedRobot_KR_ver2113.pdf](https://www.robotis.com/service/download.php?no=2031)     |
+|      Gimbal Mini (추가 예제)       |      [ROBOTIS_ENGINEER_KIT1_GimbalMini_KR_ver2113.pdf](https://www.robotis.com/service/download.php?no=2032)       |
+|         Gimbal (추가 예제)         |        [ROBOTIS_ENGINEER_KIT1_Gimbal_KR_ver2113.pdf](https://www.robotis.com/service/download.php?no=2033)         |
+| Excavating Manipulator (추가 예제) | [ROBOTIS_ENGINEER_KIT1_ExcavatingManipulator_KR_ver2113.pdf](https://www.robotis.com/service/download.php?no=2034) |
 
 # [참고자료](#참고자료)
 

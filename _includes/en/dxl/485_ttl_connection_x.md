@@ -5,12 +5,20 @@ To control the DYNAMIXEL actuators, the main controller needs to convert its UAR
 ### TTL Communication
 ![](/assets/images/dxl/ttl_circuit.png)
 
+> TTL Circuit
+
+**NOTE**: Above circuit is designed for 5V or 5V tolerant MCU. Otherwise, use a Level Shifter to match the voltage of MCU.
+{: .notice}
+
 ![](/assets/images/dxl/x/x_series_ttl_pin.png)
 {% else %}{% endif %}
 
 ### RS-485 Communication
 ![](/assets/images/dxl/x/x_series_485_circuit.jpg)  
 > RS-485 Circuit 
+
+**NOTE**: Above circuit is designed for 5V or 5V tolerant MCU. Otherwise, use a Level Shifter to match the voltage of MCU.
+{: .notice}
 
 {% if page.product_group=='dxl_xw540' %}  
 

@@ -240,6 +240,9 @@ Value 값이 250 이상인 경우 :
 ### [TTL 통신](#ttl-통신)
 ![](/assets/images/dxl/ttl_circuit.png)
 
+**참고**: 위 회로는 5V 전원을 사용하는 MCU를 사용하거나 IO가 5V tolerant한 경우 사용가능합니다. 그 외의 경우, Level Shifter를 사용하세요.
+{: .notice}
+
 전원은 Pin1(-), Pin2(+)를 통하여 다이나믹셀로 공급됩니다.(다이나믹셀 전용 Controller에는 위의 회로가 내장되어 있습니다.)  
 
 ## [Videos](#videos)

@@ -35,14 +35,13 @@ page_number: 21
 
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
 
-**NOTE**: This feature is available for Kinetic, Dashing only. 
-{: .notice}
+{% include en/platform/turtlebot3/machine_learning/machine_learning_intro_melodic.md %}
 
 </section> 
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
 
-**NOTE**: This feature is available for Kinetic, Dashing only. 
+**NOTE**: This section for Noetic will be supported soon. 
 {: .notice}
 
 </section> 
@@ -55,14 +54,14 @@ page_number: 21
 
 <section data-id="{{ page.tab_title5 }}" class="tab_contents">
 
-**NOTE**: This feature is available for Kinetic, Dashing only. 
+**NOTE**: This section for Foxy will be supported soon. 
 {: .notice}
 
 </section> 
 
 <section data-id="{{ page.tab_title6 }}" class="tab_contents">
 
-**NOTE**: This feature is available for Kinetic, Dashing only. 
+**NOTE**: This section for Windows is not supported yet. 
 {: .notice}
 
 </section>
@@ -76,12 +75,11 @@ page_number: 21
 
 </section>
 
-<!-- <section data-id="{{ page.tab_title2 }}" class="tab_contents">
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
 
-**NOTE**: This feature is available for Kinetic, Dashing only. 
-{: .notice}
+{% include en/platform/turtlebot3/machine_learning/machine_learning_software_setup_melodic.md %}
 
-</section>  -->
+</section> 
 
 
 <section data-id="{{ page.tab_title4 }}" class="tab_contents">
@@ -113,15 +111,13 @@ page_number: 21
 
 </section>
 
-<!-- 
+
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
 
-**NOTE**: This feature is available for Kinetic, Dashing only. 
-{: .notice}
+{% include en/platform/turtlebot3/machine_learning/machine_learning_set_parameter_melodic.md %}
 
 </section> 
 
--->
 
 <section data-id="{{ page.tab_title4 }}" class="tab_contents">
 
@@ -152,15 +148,13 @@ page_number: 21
 
 </section>
 
-<!-- 
+
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
 
-**NOTE**: This feature is available for Kinetic, Dashing only. 
-{: .notice}
+{% include en/platform/turtlebot3/machine_learning/machine_learning_run_machine_learning_melodic.md %}
 
 </section> 
 
--->
 
 <section data-id="{{ page.tab_title4 }}" class="tab_contents">
 

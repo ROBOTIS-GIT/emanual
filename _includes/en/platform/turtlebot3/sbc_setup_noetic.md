@@ -86,6 +86,14 @@ $ sudo reboot
 $ ssh ubuntu@{IP Address of Raspberry PI}
   ```
 
+{% capture ubuntu_blog %}
+Please refer to the Ubuntu Blog below for more useful information.  
+- [Improving Security with Ubuntu](https://ubuntu.com/blog/steps-to-maximise-robotics-security-with-ubuntu)
+- [Improving User Experience of TurtleBot3 Waffle Pi](https://ubuntu.com/blog/building-a-better-turtlebot3)
+- [How to set up TurtleBot3 Waffle Pi in minutes with Snaps](https://ubuntu.com/blog/how-to-set-up-turtlebot3-in-minutes-with-snaps)
+{% endcapture %}
+<div class="notice--success">{{ ubuntu_blog | markdownify }}</div>
+
 ### Install ROS Noetic Ninjemys
 
 Enter below commands to the terminal one at a time.  

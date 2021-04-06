@@ -67,28 +67,28 @@ product_group: all-dyd
 
 ## [세부사양](#세부사양)
 
-|             Properties             | Unit  | DYD-11-033 | DYD-11-051 | DYD-14-051 | DYD-14-099 | DYD-17-051 | DYD-17-099 |
-|:----------------------------------:|:-----:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|
-|             Gear ratio             |   -   |     33     |     51     |     51     |     99     |     51     |     99     |
-|       Repeatable peak torque       |  Nm   |    8.5     |    17.0    |    27.0    |    39.0    |    34.0    |    54.0    |
-| Read output torque<br>(@2,000 rpm) |  Nm   |    2.2     |    3.5     |    5.4     |    7.8     |    16.0    |    24.0    |
-|        Maximum input Speed         |  rpm  |   6,000    |   6,000    |   6,000    |   6,000    |   6,000    |   6,000    |
-|        Average input speed         |  rpm  |   2,000    |   2,000    |   2,000    |   2,000    |   2,000    |   2,000    |
-|     Hysteresis loss / Backlash     | armin |    <3.0    |    <3.0    |    <3.0    |    <3.0    |    <3.0    |    <3.0    |
-|          Starting torque           |  cNm  |     20     |     20     |     20     |     20     |     30     |     30     |
-|            Service life            | horse |   3,000    |   3,000    |   5,000    |   5,000    |   5,000    |   5,000    |
-|         Dimension (W X H)          |  mm   | 43 X 23.65 | 43 X 23.6  |  ø68 x 30  |  ø68 x 30  | ø78 x 34.2 | ø78 x 34.2 |
-|               Weight               |   g   |    196     |    196     |    400     |    400     |    600     |    600     |
+|             Properties             |  Unit  | DYD-11-033  | DYD-11-051 | DYD-14-051 | DYD-14-099 | DYD-17-051 | DYD-17-099 |
+|:----------------------------------:|:------:|:-----------:|:----------:|:----------:|:----------:|:----------:|:----------:|
+|             Gear ratio             |   -    |     33      |     51     |     51     |     99     |     51     |     99     |
+|       Repeatable peak torque       |   Nm   |     8.5     |    17.0    |    27.0    |    39.0    |    34.0    |    54.0    |
+| Read output torque<br>(@2,000 rpm) |   Nm   |     2.2     |    3.5     |    5.4     |    7.8     |    16.0    |    24.0    |
+|        Maximum input speed         |  rpm   |    6,000    |   6,000    |   6,000    |   6,000    |   6,000    |   6,000    |
+|        Average input speed         |  rpm   |    2,000    |   2,000    |   2,000    |   2,000    |   2,000    |   2,000    |
+|     Hysteresis loss / Backlash     | arcmin |    <3.0     |    <3.0    |    <3.0    |    <3.0    |    <3.0    |    <3.0    |
+|          Starting torque           |  cNm   |     20      |     20     |     20     |     20     |     30     |     30     |
+|            Service life            | horse  |    3,000    |   3,000    |   5,000    |   5,000    |   5,000    |   5,000    |
+|         Dimension (W X H)          |   mm   | ø43 X 23.65 | ø43 X 23.6 |  ø68 x 30  |  ø68 x 30  | ø78 x 34.2 | ø78 x 34.2 |
+|               Weight               |   g    |     196     |    196     |    400     |    400     |    600     |    600     |
 
 ## [품번](#품번)
 
 ![](/assets/images/dyd/dyd_parts_number_01.png)
 
-| Product name | Model size | Ratio  | Shaft version |  Option   | Special production |
-|:------------:|:----------:|:------:|:-------------:|:---------:|:------------------:|
-|     DYD      |     11     | 33, 51 |      SC       | S, RG, PG |         SP         |
-|     DYD      |     14     | 51, 99 |      C,D      | S, RG, PG |         SP         |
-|     DYD      |     17     | 51, 99 |      C,D      | S, RG, PG |         SP         |
+| Product name | Model size | Ratio  | Shaft version | Option | Special production |
+|:------------:|:----------:|:------:|:-------------:|:------:|:------------------:|
+|     DYD      |     11     | 33, 51 |      SC       | S, PG  |         SP         |
+|     DYD      |     14     | 51, 99 |      C,D      | S, PG  |         SP         |
+|     DYD      |     17     | 51, 99 |      C,D      | S, PG  |         SP         |
 
 # [제품 선택 가이드](#제품-선택-가이드)
 
@@ -186,7 +186,7 @@ DYD의 정격수명은 입력축 베어링의 수명에 의해 결정되며 베�
 |             Gear ratio             |   -    |     51     |
 |       Repeatable peak torque       |   Nm   |    27.0    |
 | Read output torque<br>(@2,000 rpm) |   Nm   |    5.4     |
-|        Maximum input Speed         |  rpm   |   6,000    |
+|        Maximum input speed         |  rpm   |   6,000    |
 |        Average input speed         |  rpm   |   2,000    |
 |     Hysteresis loss / Backlash     | arcmin |    <3.0    |
 |          Starting torque           |  cNm   |     20     |
@@ -225,7 +225,7 @@ DYD의 정격수명은 입력축 베어링의 수명에 의해 결정되며 베�
 |             Gear ratio             |   -    |     99     |
 |       Repeatable peak torque       |   Nm   |    39.0    |
 | Read output torque<br>(@2,000 rpm) |   Nm   |    7.8     |
-|        Maximum input Speed         |  rpm   |   6,000    |
+|        Maximum input speed         |  rpm   |   6,000    |
 |        Average input speed         |  rpm   |   2,000    |
 |     Hysteresis loss / Backlash     | arcmin |    <3.0    |
 |          Starting torque           |  cNm   |     20     |
@@ -264,7 +264,7 @@ Starting Torque = 20 cNm (DYD-14)
 
 ### [입력축 타입선정](#입력축-타입선정)
 
-| Option |                   Type - C                    |               Type - D                |                  Type-SC                  |
+| Option |                   Type - C                    |               Type - D                |                  Type - SC                  |
 |:------:|:---------------------------------------------:|:-------------------------------------:|:-----------------------------------------:|
 | Shape  | ![](/assets/images/dyd/dyd_clamp_ring_01.png) | ![](/assets/images/dyd/dyd_d_cut.png) | ![](/assets/images/dyd/dyd_set_screw.png) |
 |  Name  |                  Clamp-ring                   |                 D-Cut                 |                 Set-screw                 |
@@ -339,8 +339,8 @@ Starting Torque = 20 cNm (DYD-14)
 
 > DYD 활용예시: 협동로봇
 
-## [모바일플랫폼](#모바일플랫폼)
+## [모바일 로봇 시스템](#모바일-로봇-시스템)
 
 ![](/assets/images/dyd/dyd_application_02.png)
 
-> DYD 활용예시: 모바일플랫폼
+> DYD 활용예시: 모바일 로봇 시스템
