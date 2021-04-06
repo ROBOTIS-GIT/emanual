@@ -25,10 +25,8 @@
 Open the terminal with `Ctrl`+`Alt`+`T` and enter below commands one at a time.  
 In order to check the details of the easy installation script, please refer to [the script file](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros2_foxy.sh).  
 ```bash
-$ sudo apt update
-$ sudo apt upgrade
 $ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros2_foxy.sh
-$ chmod 755 ./install_ros2_foxy.sh
+$ sudo chmod 755 ./install_ros2_foxy.sh
 $ bash ./install_ros2_foxy.sh
 ```
 
@@ -38,28 +36,19 @@ If the above installation fails, please refer to [the official ROS2 Foxy install
 ### [Install Dependent ROS 2 Packages](#install-dependent-ros-2-packages)
 
 1. Open the terminal with `Ctrl`+`Alt`+`T` from **Remote PC**.
-2. Install Colcon
+2. Install Gazebo11
   ```bash
-$ sudo apt install python3-colcon-common-extensions
+$ sudo apt-get install ros-foxy-gazebo-*
   ```
-3. Install Gazebo11
-  ```bash
-$ sudo apt install ros-foxy-gazebo-ros-pkgs
-  ```
-
-5. Install Cartographer
+3. Install Cartographer
   ```bash
 $ sudo apt install ros-foxy-cartographer
 $ sudo apt install ros-foxy-cartographer-ros
   ```
-6. Install Navigation2
+4. Install Navigation2
   ```bash
 $ sudo apt install ros-foxy-navigation2
 $ sudo apt install ros-foxy-nav2-bringup
-  ```
-7. Install vcstool
-  ```bash
-$ sudo apt install python3-vcstool
   ```
 
 ### [Install TurtleBot3 Packages](#install-turtlebot3-packages)
@@ -67,7 +56,7 @@ $ sudo apt install python3-vcstool
 Install TurtleBot3 via Debian Packages.
 
 ```bash
-$ source /opt/ros/foxy/setup.bash
+$ source ~/.bashrc
 $ sudo apt install ros-foxy-dynamixel-sdk
 $ sudo apt install ros-foxy-turtlebot3-msgs
 $ sudo apt install ros-foxy-turtlebot3
@@ -89,6 +78,7 @@ $ cd ~/turtlebot3_ws/src/
 $ git clone -b foxy-devel https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
 $ git clone -b foxy-devel https://github.com/ROBOTIS-GIT/turtlebot3.git
 $ colcon build --symlink-install
+$ echo 'source ~/turtlebot3_ws/install/setup.bash' >> ~/.bashrc
 $ source ~/.bashrc
 ```
 </details>
@@ -97,12 +87,11 @@ $ source ~/.bashrc
 
 1. Set the ROS environment for PC.
   ```bash
-$ echo 'source ~/turtlebot3_ws/install/setup.bash' >> ~/.bashrc
 $ echo 'export ROS_DOMAIN_ID=30 #TURTLEBOT3' >> ~/.bashrc
 $ source ~/.bashrc
   ```
 
-If you have installed TurtleBot3 using `apt install` command, you can ignore the warning below.  
+If you have installed TurtleBot3 using Debian packages with `apt install` command, you can ignore the warning below.  
 ```bash
 bash: /home/{$YOUR_ACCOUNT}/turtlebot3_ws/install/setup.bash: No such file or directory
 ```
