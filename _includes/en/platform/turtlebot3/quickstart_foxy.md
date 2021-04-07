@@ -77,6 +77,7 @@ $ mkdir -p ~/turtlebot3_ws/src
 $ cd ~/turtlebot3_ws/src/
 $ git clone -b foxy-devel https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
 $ git clone -b foxy-devel https://github.com/ROBOTIS-GIT/turtlebot3.git
+$ cd ~/turtlebot3_ws
 $ colcon build --symlink-install
 $ echo 'source ~/turtlebot3_ws/install/setup.bash' >> ~/.bashrc
 $ source ~/.bashrc

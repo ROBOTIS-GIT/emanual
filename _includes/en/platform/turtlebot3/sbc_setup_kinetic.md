@@ -19,7 +19,7 @@ If you are using **Intel Joule**, please refer to [Intel Joule Setup][joule_setu
 You need a micro SD card reader to burn the OS image on your PC or laptop.
 
 1. Download Raspbian with ROBOTIS TurtleBot3 restore image.
-  - [Download TurtleBot3 Raspbian image for Raspberry Pi 3B+](http://www.robotis.com/service/download.php?no=1738)
+  - [Download TurtleBot3 Raspbian image for Raspberry Pi 3B+](http://www.robotis.com/service/download.php?no=1738){: .blank}
   - SHA256 (image_rpi_20190429.img): 7a868c275169b1f02c04617cc0cce9654fd8222623c78b22d0a27c73a9609398
 2. Unzip the downloaded image.
 3. Burn the image file(`.img`) to the microSD card.
