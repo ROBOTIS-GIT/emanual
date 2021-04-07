@@ -23,8 +23,8 @@ DYNAMIXEL Shield  was created to use [RC-100] and DYNAMIXEL on arduino board. We
 
 |       Item        |               Details                |
 |:-----------------:|:------------------------------------:|
-| Operating Voltage | 7.4V (XL-320) ~ 24V (PRO / X Series) |
-|  Maximum Current  | 1A(Arduino), 10A(Terminal Connector) |
+| Operating Voltage | 5 V (XL-330) ~ 24 V (PRO / X Series) |
+|  Maximum Current  | 1 A(Arduino), 10 A (Terminal Connector) |
 
 ## [Supported DYNAMIXEL](#supported-dynamixel)
 

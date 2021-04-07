@@ -20,7 +20,7 @@ Combined with U2D2, it can supply various kinds of external power supply to supp
 
 |       Item       |   Details    |
 |:----------------:|:------------:|
-| Operaing Voltage | 7.4V ~ 24.0V |
+| Operaing Voltage | 3.5V ~ 24.0V |
 | Maximum Current  |    10.0A     |
 
 # [Layout](#layout)
