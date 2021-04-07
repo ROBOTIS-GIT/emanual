@@ -147,7 +147,7 @@ Joint Dynamixel ID : 6, Model Name : PRO-PLUS-PH42-020-S300-R
 `rosrun dynamixel_workbench_controllers find_dynamixel /dev/ttyUSB0`  
 if DYNAMIXEL aren't recoginized, please check firmware with ROBOTIS software ([R+ Manager 2.0](/docs/en/software/rplus2/manager/) or [DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/#firmware-update))
 
-- If you would like to change DYNAMIXEL ID, please check [`open_manipulator_p.cpp`](https://github.com/ROBOTIS-GIT/open_manipulator_p/blob/master/open_manipulator_p_libs/src/open_manipulator_p.cpp) in the open_manipulator_p_lib folder. The default ID is **11, 12, 13, 14 ,15 and 16** for joints.
+- If you would like to change DYNAMIXEL ID, please check [`open_manipulator_p.cpp`](https://github.com/ROBOTIS-GIT/open_manipulator_p/blob/master/open_manipulator_p_libs/src/open_manipulator_p.cpp) in the open_manipulator_p_lib folder. The default ID is **1, 2, 3, 4 ,5 and 6** for joints.
 
 {% endcapture %}
 <div class="notice--success">{{ notice_01 | markdownify }}</div>
