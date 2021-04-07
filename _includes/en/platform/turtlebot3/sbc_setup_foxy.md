@@ -17,7 +17,7 @@
 You need a micro SD card reader to burn the OS image on your PC or laptop.
 
 1. Download the proper `Ubuntu 20.04.1(Focal) Preinstalled Server` image for your SBC from the links below.
-  - [Ubuntu 20.04.1(Focal) Preinstalled Server for Raspberry Pi3(arm64)](http://cdimage.ubuntu.com/ubuntu-server/focal/daily-preinstalled/current/)
+  - [Ubuntu 20.04.1(Focal) Preinstalled Server for Raspberry Pi3(arm64)](http://cdimage.ubuntu.com/ubuntu-server/focal/daily-preinstalled/current/){: .blank}
 
 2. Unzip the downloaded image.
 

@@ -17,7 +17,7 @@
 You need a micro SD card reader to burn the OS image on your PC or laptop.
 
 1. Download the `ubuntu-18.04.4-preinstalled-server-arm64+raspi3.img.xz` image on your PC.
-  - [Ubuntu 18.04.4 Preinstalled Server ARM64 for Raspberry Pi3](http://old-releases.ubuntu.com/releases/18.04.4/)
+  - [Ubuntu 18.04.4 Preinstalled Server ARM64 for Raspberry Pi3](http://old-releases.ubuntu.com/releases/18.04.4/){: .blank}
 
 2. Unzip the downloaded image.
 
