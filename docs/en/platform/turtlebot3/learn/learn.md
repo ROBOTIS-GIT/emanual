@@ -36,6 +36,19 @@ page_number: 24
 
 [How to Train a Robot Using Reinforcement Learning][aws_robomaker_ml_example]
 
+## [Data Collection via Matlab](#data-collection-via-matlab)
+
+Thanks to [Sebastian Castro](https://kr.mathworks.com/matlabcentral/profile/authors/3069683), Robotics and AI educator at MathWorks, there is a great material for use of Matlab tools with ROS. 
+
+The post, [How Do Autonomous Systems “See”?](https://blogs.mathworks.com/racing-lounge/2018/09/12/autonomous-systems-sensors/) explains deeply about the combination between Matlab tools and ROS; Particularly, Autonomous Drving through the TurtleBot3 AutoRace.
+
+![](https://blogs.mathworks.com/racing-lounge/files/2018/09/autorace_segmented-e1536674931633.png)
+
+> Obstacle detection via Matlab tool. 
+
+**Reference**:
+  - [Getting Started with MATLAB, Simulink, and ROS](https://blogs.mathworks.com/racing-lounge/2017/11/08/matlab-simulink-ros/)
+
 ## [The Construct](#the-construct)
 
 This **MASTERING WITH ROS: TurtleBot3** lecture is made by [the Construct](http://www.theconstructsim.com/). Within this Course, you are going to learn how you can start working with the TurtleBot3 robot, explore its functionalitities, and how to build interesting ROS applications. If you want to learn more about ROS, please check the [ROBOT IGNITE ACADEMY](http://www.theconstructsim.com/construct-learn-develop-robots-using-ros/robotigniteacademy_learnros/) that contains series of online ROS tutorials tied to online simulations, giving you the tools and knowledge to understand and create any ROS based robotics development.
