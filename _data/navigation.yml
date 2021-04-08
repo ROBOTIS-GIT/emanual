@@ -17510,8 +17510,8 @@ turtlebot3:
     children:
     - title: "AWS RoboMaker with TurtleBot3"
       url: /platform/turtlebot3/learn/#aws-robomaker-with-turtlebot3
-    - title: "The Construct"
-      url: /platform/turtlebot3/learn/#the-construct
+    - title: "Data Collection via Matlab"
+      url: /platform/turtlebot3/learn/#data-collection-via-matlab
     - title: "TurtleBot3 Blockly"
       url: /platform/turtlebot3/learn/#turtlebot3-blockly
     - title: "TurtleBot3 Simulation on ROS Indigo"
