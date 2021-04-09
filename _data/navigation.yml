@@ -22706,6 +22706,8 @@ opencm904_jp:
         url: /parts/controller/opencm904_jp/#macのインストール
       - title: "Windowsのインストール"
         url: /parts/controller/opencm904_jp/#windowsのインストール
+      - title: "スケッチのアップロード"
+        url: /parts/controller/opencm904_jp/#スケッチのアップロード
     - title: "ライブラリAPI"
       url: /parts/controller/opencm904_jp/#ライブラリapi
       children:
@@ -22878,6 +22880,8 @@ opencm904:
         titlekr: "윈도우즈에 설치하기"
         url: /parts/controller/opencm904/#install-on-windows
         urlkr: /parts/controller/opencm904/#윈도우즈에-설치하기
+      - title: "Uplaod sketch"
+        url: /parts/controller/opencm904/#upload-sketch
     - title: "Library API"
       titlekr: "라이브러리 API"
       url: /parts/controller/opencm904/#library-api
