@@ -254,6 +254,42 @@ The Remote Controller class can be used with the Arduino MKR boards by enabling 
 - [flush()]{: .popup}
 - [write()]{: .popup}
 
+# [Examples](#examples)
+
+## [CAN2DYNAMIXEL](#can2dynamixel)
+
+CAN2DYNAMIXEL converts CAN based DYNAMIXEL Protocol into DYNAMIXEL Protocol 2.0.
+
+![](/assets/images/parts/interface/mkr_shield/examples_can2dynamixel_diagram.jpg)
+
+The `CAN Standard Protocol 2.0` used in this example is shown as below.
+
+| 1 Bit | 11 Bit | 1 Bit | 1 Bit | 1 Bit |  4 Bit  |  8 Byte  | 2 Byte | 2 Bit | 7 Bit | 3 Bit |
+|:-----:|:------:|:-----:|:-----:|:-----:|:-------:|:--------:|:------:|:-----:|:-----:|:-----:|
+|  SOF  | **ID** |  RTR  |  IDE  |  r0   | **DLC** | **Data** |  CRC   |  ACK  |  EOF  |  IFS  |
+
+- **ID** : DYNAMIXEL ID
+- **DLC** : Size of Data
+- **Data** : [Instruction](/docs/en/dxl/protocol2/#instruction){: .blank}(1 Byte) + [Parameters](/docs/en/dxl/protocol2/#parameters){: .blank}(0 ~ 7 Byte)
+
+**NOTE** : CAN2DYNAMIXEL does not support `Sync` or `Bulk` instructions due to the limited length of Data field.
+{: .notice}
+
+The Transmit section of IXXAT canAnalyser3 Mini software requires `ID (hex)` and `Data (hex)` while other fields are automatically generated as shown below.
+
+![](/assets/images/parts/interface/mkr_shield/can2dynamixel_ixxat_cananalyser3_mini_example.png)
+
+The example is included in the `DYNAMIXEL Shield library` and can be found from **File > Examples > DynamixelShield > advanced > can2dynamixel**.
+
+CAN shield board with MCP2515 is required and 107-Arduino-MCP2515 library can be installed via Library Manager of Arduino IDE.
+
+{% capture shield_01 %}
+**WARNING**  
+- This example uses 1,000,000 bps. Please configure the Baudrate of DYNAMIXEL accordingly.
+- Do not use a Baudrate higher than 1,000,000 bps as it may cause unstable data transmission.
+{% endcapture %}
+<div class="notice--warning">{{ shield_01 | markdownify }}</div>
+
 # [Download](#download)
 
 - [DYNAMIXEL Shield MKR Schematic(PDF)](https://www.robotis.com/service/download.php?no=1988)  

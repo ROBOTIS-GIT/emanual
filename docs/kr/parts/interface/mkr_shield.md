@@ -256,6 +256,42 @@ Remote Controller 클래스는 아두이노 MKR 제어기의 SoftwareSerial 기�
 - [flush()]{: .popup}
 - [write()]{: .popup}
 
+# [예제](#예제)
+
+## [CAN2DYNAMIXEL](#can2dynamixel)
+
+CAN2DYNAMIXEL는 CAN 기반의 다이나믹셀 프로토콜을 다이나믹셀 프로토콜 2.0으로 변환하는 예제입니다.
+
+![](/assets/images/parts/interface/mkr_shield/examples_can2dynamixel_diagram.jpg)
+
+이 예제에서는 아래와 같은 구조의 `CAN Standard Protocol 2.0`이 사용되었습니다..
+
+| 1 Bit | 11 Bit | 1 Bit | 1 Bit | 1 Bit |  4 Bit  |  8 Byte  | 2 Byte | 2 Bit | 7 Bit | 3 Bit |
+|:-----:|:------:|:-----:|:-----:|:-----:|:-------:|:--------:|:------:|:-----:|:-----:|:-----:|
+|  SOF  | **ID** |  RTR  |  IDE  |  r0   | **DLC** | **Data** |  CRC   |  ACK  |  EOF  |  IFS  |
+
+- **ID** : 다이나믹셀 ID
+- **DLC** : Data의 크기(바이트)
+- **Data** : [Instruction](/docs/kr/dxl/protocol2/#instruction){: .blank}(1 Byte) + [Parameters](/docs/kr/dxl/protocol2/#parameters){: .blank}(0 ~ 7 Byte)
+
+**참고** : CAN2DYNAMIXEL은 Data 필드의 크기 제한으로 인해 `Sync` 또는 `Bulk`를 지원하지 않습니다.
+{: .notice}
+
+IXXAT canAnalyser3 Mini 프로그램의 Transmit 부분에서는 아래와 같이 `ID (hex)`와 `Data (hex)`를 입력하면 나머지 필드가 자동으로 완성됩니다.
+
+![](/assets/images/parts/interface/mkr_shield/can2dynamixel_ixxat_cananalyser3_mini_example.png)
+
+본 예제는 `DYNAMIXEL Shield library`에 포함되어 있으며 **File > Examples > DynamixelShield > advanced > can2dynamixel**에서 찾을 수 있습니다.
+
+MCP2515를 사용하는 CAN shield board를 사용해야 하며, 107-Arduino-MCP2515 라이브러리는 아두이노 IDE의 Library Manager에서 검색 후 설치할 수 있습니다.
+
+{% capture shield_01 %}
+**주의**  
+- 예제에서 사용하는 Baudrate은 1,000,000 bps입니다. 다이나믹셀의 통신속도를 맞춰주세요.
+- 1,000,000 bps 이상의 통신속도를 사용할 경우 통신이 불안정할 수 있습니다.
+{% endcapture %}
+<div class="notice--warning">{{ shield_01 | markdownify }}</div>
+
 # [다운로드](#다운로드)
 
 - [다이나믹셀 쉴드 MKR 회로도(PDF)](https://www.robotis.com/service/download.php?no=1988)  

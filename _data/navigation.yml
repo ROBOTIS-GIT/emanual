@@ -23436,6 +23436,10 @@ mkr_shield:
         titlekr: 다이나믹셀 쉴드(v0.1.0 이상)
         url: /parts/interface/mkr_shield/#dynamixelshieldv010-or-above
         urlkr: /parts/interface/mkr_shield/#다이나믹셀-쉴드v010-이상
+  - title: "Examples"
+    titlekr: "예제"
+    url: /parts/interface/mkr_shield/#examples
+    urlkr: /parts/interface/mkr_shield/#예제
   - title: "Download"
     titlekr: "다운로드"
     url: /parts/interface/mkr_shield/#download
