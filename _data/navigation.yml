@@ -18265,7 +18265,7 @@ rplustask1:
       urlkr: /software/rplus1/task/programming_02/#제어기-파라미터
       children:
       - title: "Remocon TXD"
-        titlekr: "모낼 무선 데이터"
+        titlekr: "보낼 무선 데이터"
         url: /software/rplus1/task/programming_02/#remocon-txd
         urlkr: /software/rplus1/task/programming_02/#보낼-무선-데이터
       - title: "Remocon RXD"
