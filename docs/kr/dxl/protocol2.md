@@ -334,7 +334,7 @@ Instruction Packet 의 처리 결과를 나타냄
 ### 설명
   - [Reg Write] Instruction으로 등록된 Packet을 실행하라는 Instruction
   - Write Instruction으로 다수의 장치를 제어할 경우, Packet을 최초로 수신한 장치와 마지막으로 수신한 장치는 실행 시점에 차이가 발생함.
-  - [Reg Write] 와 Action Instruction을 사용하면, 다수의 장치를 동시에 구동할 수 있음.
+  - Reg Write 와 Action Instruction을 사용하면, 다수의 장치를 동시에 구동할 수 있음.
 
 ### 예제
 

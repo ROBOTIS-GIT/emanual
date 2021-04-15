@@ -14414,15 +14414,18 @@ protocol2:
     titlekr: "Status Packet"
     url: /dxl/protocol2/#status-packet
     children:
+      - title: "Instruction"
+        titlekr: "Instruction "
+        url: /dxl/protocol2/#instruction-
       - title: "Error"
         titlekr: "Error"
         url: /dxl/protocol2/#error
       - title: "Parameters"
         titlekr: "Parameters "
         url: /dxl/protocol2/#parameters-
-      - title: "Instruction"
-        titlekr: "Instruction "
-        url: /dxl/protocol2/#instruction-
+      - title: "Response Policy"
+        titlekr: "Response Policy"
+        url: /dxl/protocol2/#response-policy
   - title: "Packet Process"
     titlekr: "Packet 처리"
     url: /dxl/protocol2/#packet-process
