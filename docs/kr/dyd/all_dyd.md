@@ -26,10 +26,9 @@ product_group: all-dyd
 |                       Contact ratio                       | **&#9675;** | **&#9675;** | **&#9678;** |
 |                       Compact size                        | **&#9651;** | **&#9678;** | **&#9678;** |
 |                       Light Weight                        | **&#9651;** | **&#9678;** | **&#9678;** |
-|                         Backlash                          | **&#9651;** | **&#9678;** | **&#9675;** |
-|                        Efficiency                         | **&#9678;** | **&#9678;** | **&#9678;** |
+|                         Accuracy                          | **&#9651;** | **&#9678;** | **&#9678;** |
+|                     Back-drive torque                     | **&#9678;** | **&#9651;** | **&#9675;** |
 |               Rigidity under impact (shock)               | **&#9675;** | **&#9651;** | **&#9678;** |
-|                     Noise & vibration                     | **&#9651;** | **&#9678;** | **&#9675;** |
 | Operating time to failure under heavy operating condition | **&#9675;** | **&#9651;** | **&#9678;** |
 
 {% include kr/dyd/dyd_warning.md %}
@@ -67,28 +66,28 @@ product_group: all-dyd
 
 ## [세부사양](#세부사양)
 
-|             Properties             |  Unit  | DYD-11-033  | DYD-11-051 | DYD-14-051 | DYD-14-099 | DYD-17-051 | DYD-17-099 |
-|:----------------------------------:|:------:|:-----------:|:----------:|:----------:|:----------:|:----------:|:----------:|
-|             Gear ratio             |   -    |     33      |     51     |     51     |     99     |     51     |     99     |
-|       Repeatable peak torque       |   Nm   |     8.5     |    17.0    |    27.0    |    39.0    |    34.0    |    54.0    |
-| Read output torque<br>(@2,000 rpm) |   Nm   |     2.2     |    3.5     |    5.4     |    7.8     |    16.0    |    24.0    |
-|        Maximum input speed         |  rpm   |    6,000    |   6,000    |   6,000    |   6,000    |   6,000    |   6,000    |
-|        Average input speed         |  rpm   |    2,000    |   2,000    |   2,000    |   2,000    |   2,000    |   2,000    |
-|     Hysteresis loss / Backlash     | arcmin |    <3.0     |    <3.0    |    <3.0    |    <3.0    |    <3.0    |    <3.0    |
-|          Starting torque           |  cNm   |     20      |     20     |     20     |     20     |     30     |     30     |
-|            Service life            | horse  |    3,000    |   3,000    |   5,000    |   5,000    |   5,000    |   5,000    |
-|         Dimension (W X H)          |   mm   | ø43 X 23.65 | ø43 X 23.6 |  ø68 x 30  |  ø68 x 30  | ø78 x 34.2 | ø78 x 34.2 |
-|               Weight               |   g    |     196     |    196     |    400     |    400     |    600     |    600     |
+|             Properties             |  Unit  |   DYD-11-033    |   DYD-11-051    | DYD-14-051 | DYD-14-099 | DYD-17-051 | DYD-17-099 |
+|:----------------------------------:|:------:|:---------------:|:---------------:|:----------:|:----------:|:----------:|:----------:|
+|             Gear ratio             |   -    |       33        |       51        |     51     |     99     |     51     |     99     |
+|       Repeatable peak torque       |   Nm   |       8.5       |      17.0       |    27.0    |    39.0    |    34.0    |    54.0    |
+| Read output torque<br>(@2,000 rpm) |   Nm   |       2.2       |       3.5       |    5.4     |    7.8     |    16.0    |    24.0    |
+|        Maximum input speed         |  rpm   |      6,000      |      6,000      |   6,000    |   6,000    |   6,000    |   6,000    |
+|        Average input speed         |  rpm   |      2,000      |      2,000      |   2,000    |   2,000    |   2,000    |   2,000    |
+|     Hysteresis loss / Backlash     | arcmin |      <3.0       |      <3.0       |    <3.0    |    <3.0    |    <3.0    |    <3.0    |
+|          Starting torque           |  cNm   |       20        |       20        |     20     |     20     |     30     |     30     |
+|            Service life            | hours  |      3,000      |      3,000      |   5,000    |   5,000    |   5,000    |   5,000    |
+|             Dimension              |   mm   | 43 X 43 X 23.65 | 43 X 43 X 23.65 |  ø68 x 30  |  ø68 x 30  | ø78 x 34.2 | ø78 x 34.2 |
+|               Weight               |   g    |       196       |       196       |    400     |    400     |    600     |    600     |
 
 ## [품번](#품번)
 
 ![](/assets/images/dyd/dyd_parts_number_01.png)
 
-| Product name | Model size | Ratio  | Shaft version | Option | Special production |
-|:------------:|:----------:|:------:|:-------------:|:------:|:------------------:|
-|     DYD      |     11     | 33, 51 |      SC       | S, PG  |         SP         |
-|     DYD      |     14     | 51, 99 |      C,D      | S, PG  |         SP         |
-|     DYD      |     17     | 51, 99 |      C,D      | S, PG  |         SP         |
+| Product name | Model size | Ratio  |    Option     | Special production |
+|:------------:|:----------:|:------:|:-------------:|:------------------:|
+|     DYD      |     11     | 33, 51 | C,  D, SC, PG |         SP         |
+|     DYD      |     14     | 51, 99 | C,  D, SC, PG |         SP         |
+|     DYD      |     17     | 51, 99 | C,  D, SC, PG |         SP         |
 
 # [제품 선택 가이드](#제품-선택-가이드)
 

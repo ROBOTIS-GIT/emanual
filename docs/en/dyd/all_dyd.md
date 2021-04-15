@@ -25,10 +25,9 @@ Generally, a traditional Cycloidal Gear Drive is well known as being strong but 
 |                       Contact ratio                       |      O      |      O      | **&#9678;** |
 |                       Compact size                        | **&#9651;** | **&#9678;** | **&#9678;** |
 |                       Light Weight                        | **&#9651;** | **&#9678;** | **&#9678;** |
-|                         Backlash                          | **&#9651;** | **&#9678;** |      O      |
-|                        Efficiency                         | **&#9678;** | **&#9678;** | **&#9678;** |
+|                         Accuracy                          | **&#9651;** | **&#9678;** | **&#9678;** |
+|                     Back-drive torque                     | **&#9678;** | **&#9651;** |      O      |
 |               Rigidity under impact (shock)               |      O      | **&#9651;** | **&#9678;** |
-|                     Noise & vibration                     | **&#9651;** | **&#9678;** |      O      |
 | Operating time to failure under heavy operating condition |      O      | **&#9651;** | **&#9678;** |
 
 {% include en/dyd/dyd_warning.md %}
@@ -65,28 +64,28 @@ In the following image, it is shown that the rotational direction of the input m
 
 ## [Specifications](#specifications)
 
-|             Properties             |  Unit  | DYD-11-033  | DYD-11-051 | DYD-14-051 | DYD-14-099 | DYD-17-051 | DYD-17-099 |
-|:----------------------------------:|:------:|:-----------:|:----------:|:----------:|:----------:|:----------:|:----------:|
-|             Gear ratio             |   -    |     33      |     51     |     51     |     99     |     51     |     99     |
-|       Repeatable peak torque       |   Nm   |     8.5     |    17.0    |    27.0    |    39.0    |    34.0    |    54.0    |
-| Read output torque<br>(@2,000 rpm) |   Nm   |     2.2     |    3.5     |    5.4     |    7.8     |    16.0    |    24.0    |
-|        Maximum input speed         |  rpm   |    6,000    |   6,000    |   6,000    |   6,000    |   6,000    |   6,000    |
-|        Average input speed         |  rpm   |    2,000    |   2,000    |   2,000    |   2,000    |   2,000    |   2,000    |
-|     Hysteresis loss / Backlash     | arcmin |    <3.0     |    <3.0    |    <3.0    |    <3.0    |    <3.0    |    <3.0    |
-|          Starting torque           |  cNm   |     20      |     20     |     20     |     20     |     30     |     30     |
-|            Service life            | horse  |    3,000    |   3,000    |   5,000    |   5,000    |   5,000    |   5,000    |
-|         Dimension (W X H)          |   mm   | ø43 X 23.65 | ø43 X 23.6 |  ø68 x 30  |  ø68 x 30  | ø78 x 34.2 | ø78 x 34.2 |
-|               Weight               |   g    |     196     |    196     |    400     |    400     |    600     |    600     |
+|             Properties             |  Unit  |   DYD-11-033    |   DYD-11-051    | DYD-14-051 | DYD-14-099 | DYD-17-051 | DYD-17-099 |
+|:----------------------------------:|:------:|:---------------:|:---------------:|:----------:|:----------:|:----------:|:----------:|
+|             Gear ratio             |   -    |       33        |       51        |     51     |     99     |     51     |     99     |
+|       Repeatable peak torque       |   Nm   |       8.5       |      17.0       |    27.0    |    39.0    |    34.0    |    54.0    |
+| Read output torque<br>(@2,000 rpm) |   Nm   |       2.2       |       3.5       |    5.4     |    7.8     |    16.0    |    24.0    |
+|        Maximum input speed         |  rpm   |      6,000      |      6,000      |   6,000    |   6,000    |   6,000    |   6,000    |
+|        Average input speed         |  rpm   |      2,000      |      2,000      |   2,000    |   2,000    |   2,000    |   2,000    |
+|     Hysteresis loss / Backlash     | arcmin |      <3.0       |      <3.0       |    <3.0    |    <3.0    |    <3.0    |    <3.0    |
+|          Starting torque           |  cNm   |       20        |       20        |     20     |     20     |     30     |     30     |
+|            Service life            | hours  |      3,000      |      3,000      |   5,000    |   5,000    |   5,000    |   5,000    |
+|             Dimension              |   mm   | 43 X 43 X 23.65 | 43 X 43 X 23.65 |  ø68 x 30  |  ø68 x 30  | ø78 x 34.2 | ø78 x 34.2 |
+|               Weight               |   g    |       196       |       196       |    400     |    400     |    600     |    600     |
 
 ## [Part Numbers](#part-numbers)
 
 ![](/assets/images/dyd/dyd_parts_number_01.png)
 
-| Product name | Model Size | Ratio  | Shaft version | Option | Special production |
-|:------------:|:----------:|:------:|:-------------:|:------:|:------------------:|
-|     DYD      |     11     | 33, 51 |      SC       |  S,PG  |         SP         |
-|     DYD      |     14     | 51, 99 |      C,D      |  S,PG  |         SP         |
-|     DYD      |     17     | 51, 99 |      C,D      |  S,PG  |         SP         |
+| Product name | Model Size | Ratio  |    Option     | Special production |
+|:------------:|:----------:|:------:|:-------------:|:------------------:|
+|     DYD      |     11     | 33, 51 | C,  D, SC, PG |         SP         |
+|     DYD      |     14     | 51, 99 | C,  D, SC, PG |         SP         |
+|     DYD      |     17     | 51, 99 | C,  D, SC, PG |         SP         |
 
 # [Product Selection Guide](#product-selection-guide)
 
@@ -259,7 +258,7 @@ Starting Torque = 20 cNm (DYD-14)
 
 ### [Select the Type of Input Shaft](#select-the-type-of-input-shaft)
 
-| Option |                   Type - C                    |               Type - D                |                  Type - SC                  |
+| Option |                   Type - C                    |               Type - D                |                 Type - SC                 |
 |:------:|:---------------------------------------------:|:-------------------------------------:|:-----------------------------------------:|
 | Shape  | ![](/assets/images/dyd/dyd_clamp_ring_01.png) | ![](/assets/images/dyd/dyd_d_cut.png) | ![](/assets/images/dyd/dyd_set_screw.png) |
 |  Name  |                  Clamp-ring                   |                 D-Cut                 |                 Set-screw                 |
@@ -286,7 +285,7 @@ The average  input  speed  indicates the average input speed of the duty cycle.
 
 Effective moment of inertia is calculated by the inertia of each rotating component and the variation of parallel axis theorem based on the input shaft rotation.
 
-## [Hysteresis loss / Backlash)](#hysteresis-loss--backlash)
+## [Hysteresis loss / Backlash](#hysteresis-loss--backlash)
 
 As shown in Figure below, when the rated torque is gradually applied to the output shaft then removed while the input is firmly fixed, the differential torsional angle between the zero point and the output shaft is called the hysteresis loss which includes the clearance or mechanical margin between the gear mesh.
 
