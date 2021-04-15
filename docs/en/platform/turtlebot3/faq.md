@@ -84,7 +84,6 @@ $ sudo ntpdate ntp.ubuntu.com
 2. Press and hold the `SW2` button and click the `Reset` button. If the `Status` LED is blinking, release the `SW2` button. See [Boot Sequence](/docs/en/parts/controller/opencr10/#boot-sequence) for more information.
 
 3. **Upload Setup Firmware to OpenCR**  
-
 As shown in the below image, find `Examples` > `turtlebot3` > `turtlebot3_setup` > `turtlebot3_setup_motor` and open the example.  
 
     ![](/assets/images/platform/turtlebot3/faq/dynamixel_setup_1.png)
