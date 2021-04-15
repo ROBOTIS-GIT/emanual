@@ -14417,9 +14417,12 @@ protocol2:
       - title: "Error"
         titlekr: "Error"
         url: /dxl/protocol2/#error
-      - title: "Status Checksum"
-        titlekr: "Status Checksum"
-        url: /dxl/protocol2/#status-checksum
+      - title: "Parameters"
+        titlekr: "Parameters "
+        url: /dxl/protocol2/#parameters-
+      - title: "Instruction"
+        titlekr: "Instruction "
+        url: /dxl/protocol2/#instruction-
   - title: "Packet Process"
     titlekr: "Packet 처리"
     url: /dxl/protocol2/#packet-process
@@ -14429,42 +14432,42 @@ protocol2:
     url: /dxl/protocol2/#instruction-details
     urlkr: /dxl/protocol2/#instruction의-종류
     children:
-      - title: "Ping"
-        titlekr: "Ping"
-        url: /dxl/protocol2/#ping
-      - title: "Read"
-        titlekr: "Read"
-        url: /dxl/protocol2/#read
-      - title: "Write"
-        titlekr: "Write"
-        url: /dxl/protocol2/#write
-      - title: "Reg Write"
-        titlekr: "Reg Write"
-        url: /dxl/protocol2/#reg-write
-      - title: "Action"
-        titlekr: "Action"
-        url: /dxl/protocol2/#action
-      - title: "Factory Reset"
-        titlekr: "Factory Reset"
-        url: /dxl/protocol2/#factory-reset
-      - title: "Reboot"
-        titlekr: "Reboot"
-        url: /dxl/protocol2/#reboot
-      - title: "Clear"
-        titlekr: "Clear"
-        url: /dxl/protocol2/#clear
-      - title: "Sync Read"
-        titlekr: "Sync Read"
-        url: /dxl/protocol2/#sync-read
-      - title: "Sync Write"
-        titlekr: "Sync Write"
-        url: /dxl/protocol2/#sync-write
-      - title: "Bulk Read"
-        titlekr: "Bulk Read"
-        url: /dxl/protocol2/#bulk-read
-      - title: "Bulk Write"
-        titlekr: "Bulk Write"
-        url: /dxl/protocol2/#bulk-write
+      - title: "Ping (0x01)"
+        titlekr: "Ping (0x01)"
+        url: /dxl/protocol2/#ping-0x01
+      - title: "Read (0x02)"
+        titlekr: "Read (0x02)"
+        url: /dxl/protocol2/#read-0x02
+      - title: "Write (0x03)"
+        titlekr: "Write (0x03)"
+        url: /dxl/protocol2/#write-0x03
+      - title: "Reg Write (0x04)"
+        titlekr: "Reg Write (0x04)"
+        url: /dxl/protocol2/#reg-write-0x04
+      - title: "Action (0x05)"
+        titlekr: "Action (0x05)"
+        url: /dxl/protocol2/#action-0x05
+      - title: "Factory Reset (0x06)"
+        titlekr: "Factory Reset (0x06)"
+        url: /dxl/protocol2/#factory-reset-0x06
+      - title: "Reboot (0x08)"
+        titlekr: "Reboot (0x08)"
+        url: /dxl/protocol2/#reboot-0x08
+      - title: "Clear (0x10)"
+        titlekr: "Clear (0x10)"
+        url: /dxl/protocol2/#clear-0x10
+      - title: "Sync Read (0x82)"
+        titlekr: "Sync Read (0x82)"
+        url: /dxl/protocol2/#sync-read-0x82
+      - title: "Sync Write (0x83)"
+        titlekr: "Sync Write (0x83)"
+        url: /dxl/protocol2/#sync-write-0x83
+      - title: "Bulk Read (0x92)"
+        titlekr: "Bulk Read (0x92)"
+        url: /dxl/protocol2/#bulk-read-0x92
+      - title: "Bulk Write (0x93)"
+        titlekr: "Bulk Write (0x93)"
+        url: /dxl/protocol2/#bulk-write-0x93
 
 all-edu:
   - title: "PLAY"

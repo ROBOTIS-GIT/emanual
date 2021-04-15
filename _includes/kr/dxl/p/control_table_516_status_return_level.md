@@ -10,7 +10,7 @@ Status Packet의 반환 방식을 결정합니다.
 **주의** : Status Return Level(516)은 Modbus-RTU 프로토콜에서 동작되지 않습니다.   
 {: .notice--warning}
 
-**참고** : Instruction packet 의 ID가 Broadcast ID(0xFE) 인 경우는 Status Return Level(516)의 설정값과 무관하게 Read Instruction 또는 Write Instruction에 대한 Status Packet은 반환되지 않습니다. 더 자세한 설명은 [Protocol 2.0]의 [Status Packet] 항목을 참조하심시오.
+**참고** : Instruction packet 의 ID가 Broadcast ID(0xFE) 인 경우는 Status Return Level(516)의 설정값과 무관하게 Read Instruction 또는 Write Instruction에 대한 Status Packet은 반환되지 않습니다. 더 자세한 설명은 [Protocol 2.0]의 [Status Packet] 항목을 참조하세요.
 {: .notice}
 
 [Status Packet]: /docs/kr/dxl/protocol2/#status-packet

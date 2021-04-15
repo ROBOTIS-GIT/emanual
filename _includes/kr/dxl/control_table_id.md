@@ -22,5 +22,5 @@ Instruction Packet으로 장치를 식별하기 위한 고유 번호입니다.
 **참고** : 연결된 장치의 ID가 중복되지 않도록 주의해야 합니다. 장치의 ID가 중복되면, 통신 오류 및 고유의 ID를 가지는 다이나믹셀 검색에 실패합니다.
 {: .notice}
 
-**참고** : Instruction packet의 ID가 Broadcast ID(0xFE)인 경우, [{{ stauts_return_lv }}](#status-return-level)의 설정값과 무관하게 Read Instruction 또는 Write Instruction에 대한 Status Packet은 반환되지 않습니다. 더 자세한 설명은 [{{ protocol }}]의 `Status Packet` 항목을 참조하심시오.
+**참고** : Instruction packet의 ID가 Broadcast ID(0xFE)인 경우, [{{ stauts_return_lv }}](#status-return-level)의 설정값과 무관하게 Read Instruction 또는 Write Instruction에 대한 Status Packet은 반환되지 않습니다. 더 자세한 설명은 [{{ protocol }}]의 `Status Packet` 항목을 참조하세요.
 {: .notice}
