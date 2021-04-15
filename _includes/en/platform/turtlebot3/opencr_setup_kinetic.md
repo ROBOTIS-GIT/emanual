@@ -92,7 +92,7 @@ https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCR/master/arduino/opencr_relea
 
 ### [OpenCR Test](#opencr-test)
 
-**NOTE**: If the wheels does not move while performing OpenCR Test instruction, make sure to see "**[Setup DYNAMIXELs for TurtleBot3](/docs/en/platform/turtlebot3/faq/#setup-dynamixels-for-turtlebot3)**" section to update the DYNAMIXEL's configuration for use of TurtleBot3.
+**NOTE**: If the wheels do not move while performing OpenCR Test instruction, make sure to see "**[Setup DYNAMIXELs for TurtleBot3](/docs/en/platform/turtlebot3/faq/#setup-dynamixels-for-turtlebot3)**" section to update the DYNAMIXEL's configuration for use of TurtleBot3.
 {: .notice}
 
 You can use `PUSH SW 1` and `PUSH SW 2` buttons to see whether your robot has been properly assembled. This process tests the left and right DYNAMIXEL's and the [OpenCR] board.
