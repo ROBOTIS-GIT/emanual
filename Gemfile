@@ -13,7 +13,7 @@ source "https://rubygems.org"
 
 # To upgrade, run `bundle update`.
 
-gem "jekyll", "~> 3.6"
+gem "jekyll", "~> 3.9.0"
 gem "minimal-mistakes-jekyll"
 
 # If you have any plugins, put them here!
@@ -25,4 +25,5 @@ group :jekyll_plugins do
   gem "jemoji"
   gem 'jekyll-livereload'
   gem 'kramdown-parser-gfm'
+  gem "kramdown", ">= 2.3.1"
 end
