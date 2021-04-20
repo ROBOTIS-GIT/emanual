@@ -285,7 +285,7 @@ The average  input  speed  indicates the average input speed of the duty cycle.
 
 Effective moment of inertia is calculated by the inertia of each rotating component and the variation of parallel axis theorem based on the input shaft rotation.
 
-## [Hysteresis loss / Backlash](#hysteresis-loss--backlash)
+## [Backlash](#backlash)
 
 As shown in Figure below, when the rated torque is gradually applied to the output shaft then removed while the input is firmly fixed, the differential torsional angle between the zero point and the output shaft is called the hysteresis loss which includes the clearance or mechanical margin between the gear mesh.
 
@@ -327,14 +327,5 @@ Grease for lubrication of the gearhead is injected during assembly, and addition
 
 # [Use Applications](#use-applications)
 
-## [Collaborative Robots](#collaborative-robots)
-
-![](/assets/images/dyd/dyd_application_01.png)
-
-> DYD Application: Collaborative Robot
-
-## [Mobile Robot System](#mobile-robot-system)
-
-![](/assets/images/dyd/dyd_application_02.png)
-
-> DYD Application: Mobile Robot System
+Soon to display
+{: .notice}

@@ -20,23 +20,23 @@ product_group: all-dyd
 
 ## [세부사양](#세부사양)
 
-|             Properties             |    Unit     |   DYD-11-033    |   DYD-11-051    | Note |
-|:----------------------------------:|:-----------:|:---------------:|:---------------:|:----:|
-|             Gear ratio             |      -      |       33        |       51        |  -   |
-|       Repeatable peak torque       |     Nm      |       8.5       |      17.0       |  -   |
-| Read output torque<br>(@2,000 rpm) |     Nm      |       2.2       |       3.5       |  -   |
-|        Maximum input speed         |     rpm     |      6,000      |      6,000      |  -   |
-|        Average input speed         |     rpm     |      2,000      |      2,000      |  -   |
-|         Moment of intertia         | X10-4 kgm^2 |      0.022      |      0.024      |  -   |
-|              Backlash              |   arcmin    |      <3.0       |      <3.0       |  -   |
-|            Lost motion             |   arcmin    |      <3.0       |      <3.0       |  -   |
-|        Torsional stiffness         |  Nm/arcmin  |       1.0       |       1.0       |  -   |
-| Efficiency(@2,000 rpm, 20 &#8451;) |      %      |       50        |       50        |  -   |
-|          Starting torque           |     cNm     |       20        |       20        |  -   |
-|         Back-Drive torque          |     Nm      |       1.0       |       1.0       |  -   |
-|            Service life            |    hours    |      3,000      |      3,000      |  -   |
-|             Dimension              |     mm      | 43 X 43 X 23.65 | 43 X 43 X 23.65 |  -   |
-|               Weight               |      g      |       196       |       196       |  -   |
+|             속성             |    단위     |   DYD-11-033    |   DYD-11-051    | 비고 |
+|:----------------------------:|:-----------:|:---------------:|:---------------:|:----:|
+|            감속비            |      -      |       33        |       51        |  -   |
+|     순간 최대 허용 토크      |     Nm      |       8.5       |      17.0       |  -   |
+|  정격 토크<br>(@2,000 rpm)   |     Nm      |       2.2       |       3.5       |  -   |
+|        최대 입력 속도        |     rpm     |      6,000      |      6,000      |  -   |
+|        평균 입력 속도        |     rpm     |      2,000      |      2,000      |  -   |
+|         관성 모멘트          | X10-4 kgm^2 |      0.022      |      0.024      |  -   |
+|            백래쉬            |   arcmin    |      <3.0       |      <3.0       |  -   |
+|         로스트 모션          |   arcmin    |      <3.0       |      <3.0       |  -   |
+|          토크 강성           |  Nm/arcmin  |       1.0       |       1.0       |  -   |
+| 효율(@2,000 rpm, 20 &#8451;) |      %      |       50        |       50        |  -   |
+|          기동 토크           |     cNm     |       20        |       20        |  -   |
+|       백 드라이브 토크       |     Nm      |       1.0       |       1.0       |  -   |
+|             수명             |    hours    |      3,000      |      3,000      |  -   |
+|             크기             |     mm      | 43 X 43 X 23.65 | 43 X 43 X 23.65 |  -   |
+|             무게             |      g      |       196       |       196       |  -   |
 
 **참고**: 제품의 성능 개선을 위해 사양은 변경될 수 있습니다.
 {: .notice}
@@ -67,19 +67,19 @@ product_group: all-dyd
 
 > PG 옵션
 
-|  DYD gear ratio  | 33 |  -  |  -  |  -  | 51  |  -  |  -  |  -  |
+|  DYD 감속비  | 33 |  -  |  -  |  -  | 51  |  -  |  -  |  -  |
 |:----------------:|:--:|:---:|:---:|:---:|:----|:---:|:---:|:---:|
-|  PG gear ratio   | 3  |  4  |  5  |  7  | 3   |  4  |  5  |  7  |
-| Total gear ratio | 99 | 132 | 165 | 231 | 153 | 204 | 255 | 357 |
+|  PG 감속비   | 3  |  4  |  5  |  7  | 3   |  4  |  5  |  7  |
+| 총 감속비 | 99 | 132 | 165 | 231 | 153 | 204 | 255 | 357 |
 
 ## [입력부 샤프트 옵션](#입력부-샤프트-옵션)
 
 DYD의 입력부에 구동 시스템(모터 또는 구동소스)을 구성함에 있어서 다양한 입력축이 제공될 수 있습니다.
 
-| Option |                   Type - C                    |               Type - D                |                 Type - SC                 |
+| 옵션 |                   Type - C                    |               Type - D                |                 Type - SC                 |
 |:------:|:---------------------------------------------:|:-------------------------------------:|:-----------------------------------------:|
-| Shape  | ![](/assets/images/dyd/dyd_clamp_ring_01.png) | ![](/assets/images/dyd/dyd_d_cut.png) | ![](/assets/images/dyd/dyd_set_screw.png) |
-|  Name  |                  Clamp-ring                   |                 D-Cut                 |                 Set-screw                 |
+| 형태  | ![](/assets/images/dyd/dyd_clamp_ring_01.png) | ![](/assets/images/dyd/dyd_d_cut.png) | ![](/assets/images/dyd/dyd_set_screw.png) |
+|  명칭  |                  Clamp-ring                   |                 D-Cut                 |                 Set-screw                 |
 
 {% capture dyd_input_shaft_reference %}
 **참고**: 다음 표에서 각 DYD에서 기본으로 제공하는 입력축을 참고하세요.
