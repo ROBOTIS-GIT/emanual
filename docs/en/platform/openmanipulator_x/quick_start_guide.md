@@ -194,49 +194,32 @@ $ ros2 run open_manipulator_x_controller create_udev_rules
 
 {% capture kinetic_05 %}
 For `Kinetic` + `OpenCR`  
-```bash
-$ wget https://github.com/ROBOTIS-Will/OpenCR/raw/master/arduino/opencr_arduino/tools/opencr_tools_1.0.0/opencr_ld
-$ wget https://github.com/ROBOTIS-Will/OpenCR/raw/master/arduino/opencr_arduino/tools/opencr_tools_1.0.0/usb_to_dxl.ino.bin
-$ wget https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCR/master/99-opencr-cdc.rules
-$ sudo cp ./99-opencr-cdc.rules /etc/udev/rules.d/
-$ sudo udevadm control --reload-rules
-$ sudo udevadm trigger
-$ sudo chmod 775 opencr_ld
-$ ./opencr_ld /dev/ttyACM0 115200 usb_to_dxl.ino.bin 1
-```
+1. Set up Arduino IDE ([Instructions](https://emanual.robotis.com/docs/en/parts/controller/opencr10/#arduino-ide))
+2. Connect OpenCR to the PC.
+3. Open the example from `File > Examples > OpenCR > 10.Etc > usb_to_dxl`
+4. Upload the example to OpenCR.
 {% endcapture %}
 <div class="notice--success">{{ kinetic_05 | markdownify }}</div>
 
 {% capture dashing_05 %}
 For `Dashing` + `OpenCR`  
-```bash
-$ wget https://github.com/ROBOTIS-Will/OpenCR/raw/master/arduino/opencr_arduino/tools/opencr_tools_1.0.0/opencr_ld
-$ wget https://github.com/ROBOTIS-Will/OpenCR/raw/master/arduino/opencr_arduino/tools/opencr_tools_1.0.0/usb_to_dxl.ino.bin
-$ wget https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCR/master/99-opencr-cdc.rules
-$ sudo cp ./99-opencr-cdc.rules /etc/udev/rules.d/
-$ sudo udevadm control --reload-rules
-$ sudo udevadm trigger
-$ sudo chmod 775 opencr_ld
-$ ./opencr_ld /dev/ttyACM0 115200 usb_to_dxl.ino.bin 1
-```
+1. Set up Arduino IDE ([Instructions](https://emanual.robotis.com/docs/en/parts/controller/opencr10/#arduino-ide))
+2. Connect OpenCR to the PC.
+3. Open the example from `File > Examples > OpenCR > 10.Etc > usb_to_dxl`
+4. Upload the example to OpenCR.
 {% endcapture %}
 <div class="notice--danger">{{ dashing_05 | markdownify }}</div>
 
 {% capture note_03 %}
 `FAQ`  
-In case of getting below failure, try downloading the firmware again.
-```bash
-test@Intel-NUC:~$ ./opencr_ld /dev/ttyACM0 115200 usb_to_dxl.ino.bin 1
-opencr_ld ver 1.0.4
-opencr_ld_main
->>
-file name : usb_to_dxl.ino.bin
-file size : 111 KB
-ser_open: unable to open port: Device or resource busy
-Fail to open port 1 : /dev/ttyACM0
-Fail to jump to boot
-```
-{% endcapture %}
+If upload fails, try with [Recovery Mode](https://emanual.robotis.com/docs/en/parts/controller/opencr10/#recovery-mode)
+1. Turn on the power of the OpenCR board.
+2. Hold down the `PUSH SW2` button.
+3. Press the `Reset` button.
+4. Release the `Reset` button.
+5. Release the `PUSH SW2` button.
+
+The STATUS LED should blink every 100ms after entering Recovery Mode successfully.
 <div class="notice--warning">{{ note_03 | markdownify }}</div>
 
 ## Operate the OpenMANIPULATOR-X
