@@ -194,7 +194,7 @@ $ ros2 run open_manipulator_x_controller create_udev_rules
 
 {% capture kinetic_05 %}
 For `Kinetic` + `OpenCR`  
-1. Set up Arduino IDE ([Instructions](https://emanual.robotis.com/docs/en/parts/controller/opencr10/#arduino-ide))
+1. Set up Arduino IDE ([Instructions](/docs/en/parts/controller/opencr10/#arduino-ide))
 2. Connect OpenCR to the PC.
 3. Open the example from `File > Examples > OpenCR > 10.Etc > usb_to_dxl`
 4. Upload the example to OpenCR.
@@ -203,7 +203,7 @@ For `Kinetic` + `OpenCR`
 
 {% capture dashing_05 %}
 For `Dashing` + `OpenCR`  
-1. Set up Arduino IDE ([Instructions](https://emanual.robotis.com/docs/en/parts/controller/opencr10/#arduino-ide))
+1. Set up Arduino IDE ([Instructions](/docs/en/parts/controller/opencr10/#arduino-ide))
 2. Connect OpenCR to the PC.
 3. Open the example from `File > Examples > OpenCR > 10.Etc > usb_to_dxl`
 4. Upload the example to OpenCR.
@@ -212,7 +212,7 @@ For `Dashing` + `OpenCR`
 
 {% capture note_03 %}
 `FAQ`  
-If upload fails, try with [Recovery Mode](https://emanual.robotis.com/docs/en/parts/controller/opencr10/#recovery-mode)
+If upload fails, try with [Recovery Mode](/docs/en/parts/controller/opencr10/#recovery-mode)
 1. Turn on the power of the OpenCR board.
 2. Hold down the `PUSH SW2` button.
 3. Press the `Reset` button.
@@ -220,6 +220,7 @@ If upload fails, try with [Recovery Mode](https://emanual.robotis.com/docs/en/pa
 5. Release the `PUSH SW2` button.
 
 The STATUS LED should blink every 100ms after entering Recovery Mode successfully.
+{% endcapture %}
 <div class="notice--warning">{{ note_03 | markdownify }}</div>
 
 ## Operate the OpenMANIPULATOR-X
