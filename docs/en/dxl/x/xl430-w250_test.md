@@ -1,11 +1,11 @@
 ---
 layout: archive
 lang: en
-ref: xl430-w250
+ref: xl430-w250-test
 read_time: true
 share: false
 author_profile: false
-permalink: /docs/en/dxl/x/xl430-w250/test
+permalink: /docs/en/dxl/x/xl430-w250-test
 sidebar:
   title: XL430-W250-T
   nav: "xl430-w250-test"
