@@ -99,7 +99,7 @@ When configuring a system with reducers, the load applied to the reducer normall
 
 In the figure below shows an example of various torque and speed conditions during an operation. These values are critical factors in determining the lifecycle of the DYD product.
 
-![](/assets/images/dyd/dyd_duty_cycle_01_kr.png)
+![](/assets/images/dyd/dyd_duty_cycle_01.png)
 
 | Properties | Description                                | Properties | Description                               |
 |:----------:|:-------------------------------------------|:----------:|:------------------------------------------|
@@ -145,7 +145,7 @@ The required service life for a given speed and load values can be calculated as
 |     nR     | nominal input speed [rpm]      |
 |     na     | average input speed [rpm]      |
 |     TR     | nominal torque [Nm]            |
-|     Ta     | average output torque [Nm]     |
+|     Ta     | average output load [Nm]     |
 
 ## [Product Selection Example](#product-selection-example)
 
@@ -203,7 +203,7 @@ The required service life for a given speed and load values can be calculated as
 |     nR     | Nominal input speed [rpm]      |  2,000  | See data sheet |
 |     na     | Average input speed [rpm]      |  2,142  | -              |
 |     TR     | Nominal torque [Nm]            |   5.4   | -              |
-|     Ta     | Average output torque [Nm]     |  4.72   | See data sheet |
+|     Ta     | average output load [Nm]     |  4.72   | See data sheet |
 
 ### [Service Life Comparison: DYD-14-051](#service-life-comparison-dyd-14-051)
 
@@ -236,7 +236,7 @@ Required service life : 5,000 hours > Expected service life : 4,880 hours
 |     nR     | Nominal input speed [rpm]      |  2,000  | See data sheet |
 |     na     | Average input speed [rpm]      |  2,142  | -              |
 |     TR     | Nominal torque [Nm]            |   7.8   | See data sheet |
-|     Ta     | Average output torque [Nm]     |  4.72   | -              |
+|     Ta     | average output load [Nm]     |  4.72   | -              |
 
 ### [Service Life Comparison: DYD-14-099](#service-life-comparison-dyd-14-099)
 
@@ -285,7 +285,7 @@ The average  input  speed  indicates the average input speed of the duty cycle.
 
 Effective moment of inertia is calculated by the inertia of each rotating component and the variation of parallel axis theorem based on the input shaft rotation.
 
-## [Hysteresis loss / Backlash](#hysteresis-loss--backlash)
+## [Backlash](#backlash)
 
 As shown in Figure below, when the rated torque is gradually applied to the output shaft then removed while the input is firmly fixed, the differential torsional angle between the zero point and the output shaft is called the hysteresis loss which includes the clearance or mechanical margin between the gear mesh.
 
@@ -327,14 +327,4 @@ Grease for lubrication of the gearhead is injected during assembly, and addition
 
 # [Use Applications](#use-applications)
 
-## [Collaborative Robots](#collaborative-robots)
-
-![](/assets/images/dyd/dyd_application_01.png)
-
-> DYD Application: Collaborative Robot
-
-## [Mobile Robot System](#mobile-robot-system)
-
-![](/assets/images/dyd/dyd_application_02.png)
-
-> DYD Application: Mobile Robot System
+![](/assets/images/dyd/dyd_application_01.png){: width="500px"}
