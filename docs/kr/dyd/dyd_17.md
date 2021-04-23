@@ -47,7 +47,7 @@ product_group: all-dyd
 
 감속기의 효율은 주변 환경의 온도 및 입력속도에 따라 달라질 수 있으며, 특히 입력속도-출력부하에 대한 효율특성은 다음과 같습니다.
 
-![](/assets/images/dyd/dyd_17_efficiency.png){: width="700px"}
+![](/assets/images/dyd/dyd_17_efficiency_kr.png){: width="700px"}
 
 > DYD-17 효율특성 그래프, 시험환경 : 온도 22도, 습도 55%
 

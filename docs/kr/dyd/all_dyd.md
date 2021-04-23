@@ -19,7 +19,7 @@ product_group: all-dyd
 
 ![](/assets/images/dyd/dyd_spec_01.png)
 
-|          특징          |  유성기어  |  하모닉   |     DYD     |
+|          특징          |  유성기어   |   하모닉    |     DYD     |
 |:----------------------:|:-----------:|:-----------:|:-----------:|
 |         기어비         | **&#9675;** | **&#9678;** | **&#9678;** |
 |         물림률         | **&#9675;** | **&#9675;** | **&#9678;** |
@@ -80,7 +80,7 @@ product_group: all-dyd
 
 ## [품번](#품번)
 
-![](/assets/images/dyd/dyd_parts_number_01.png)
+![](/assets/images/dyd/dyd_parts_number_01_kr.png)
 
 | 제품명 | 크기 | 감속비 |     옵션      | 특주 사양 |
 |:------:|:----:|:------:|:-------------:|:---------:|
@@ -95,7 +95,7 @@ product_group: all-dyd
 일반적으로 감속기를 이용한 시스템을 구성하여 사용함에 있어서 일정한 부하가 작용하는 경우가 극히 적습니다.  
 대부분 증속/가속을 비롯하여 비상상황에 따른 충격부하와 같이 다양한 부하 조건 및 속도를 포함하고 있으므로 적절한 제품 선정을 위해서는 다양한 조건을 고려하여 평균적인 부하 및 속도를 환산하여 적용해야 합니다.
 
-![](/assets/images/dyd/dyd_selection_flowchart_01.png)
+![](/assets/images/dyd/dyd_selection_flowchart_01_kr.png)
 
 ## [동작사이클 (Duty Cycle)](#동작사이클-duty-cycle)
 
@@ -105,7 +105,7 @@ product_group: all-dyd
 
 | 기호 | 의미                        | 기호 | 의미                         |
 |:----:|:----------------------------|:----:|:-----------------------------|
-|  Ta  | Average output load         |  na  | 평균 입력 속도 [rpm]         |
+|  Ta  | 평균 부하 토크              |  na  | 평균 입력 속도 [rpm]         |
 |  T1  | 가속 시 최대 출력 토크 [Nm] |  n1  | 가속 시 평균 입력 속도 [rpm] |
 |  T2  | 정상 운전 시 출력 토크 [Nm] |  n2  | 정상 운전 시 입력 속도 [rpm] |
 |  T3  | 감속 시 최대 출력 토크 [Nm] |  n3  | 감속 시 평균 입력 속도 [rpm] |
@@ -125,7 +125,7 @@ product_group: all-dyd
 
 ![](/assets/images/dyd/dyd_average_input_speed_01.png)
 
-![](/assets/images/dyd/dyd_average_input_speed_02.png)
+![](/assets/images/dyd/dyd_average_input_speed_02_kr.png)
 
 ## [정격수명 (Service life)](#정격수명-service-life)
 
@@ -133,14 +133,14 @@ DYD의 정격수명은 입력축 베어링의 수명에 의해 결정되며 베�
 
 여기서 정격수명에 영향을 미치는 윤활, 과부하 등은 고려되지 않았습니다. 정격수명은 시험결과를 기반으로 결정되었습니다.
 
-요구수명은 다음과 같이 계산할 수 있습니다.
+예상 수명은 다음과 같이 계산할 수 있습니다.
 
 ![](/assets/images/dyd/dyd_service_life_01_kr.png)
 
-| 기호 | 의미          |
+| 기호 | 의미                 |
 |:----:|:---------------------|
-|  Lh  | 요구 수명 [hours]    |
-|  LR  | 기준 수명 [hours]    |
+|  Lh  | 예상 수명 [hours]    |
+|  LR  | 요구 수명 [hours]    |
 |  nR  | 정격 입력 속도 [rpm] |
 |  na  | 평균 입력 속도 [rpm] |
 |  TR  | 정격 토크 [Nm]       |
@@ -162,7 +162,7 @@ DYD의 정격수명은 입력축 베어링의 수명에 의해 결정되며 베�
 |  t2  | 정상 운전 시간 [s]           |   5   | -    |
 |  t3  | 감속 시간 [s]                |   1   | -    |
 |  t4  | 정지 시간 [s]                |   0   | -    |
-|  Lh  | 요구 수명 [hours]            | 5,000 | -    |
+|  Lh  | 예상 수명 [hours]            | 5,000 | -    |
 
 ### [평균부하토크 계산](#평균부하토크-계산)
 
@@ -197,15 +197,15 @@ DYD의 정격수명은 입력축 베어링의 수명에 의해 결정되며 베�
 
 | 기호 | 의미                 |  수치   | 비고            |
 |:----:|:---------------------|:-------:|:----------------|
-|  Lh  | 요구 수명 [hours]    | 4,883.5 | cal.            |
-|  LR  | 기준 수명 [hours]    |  5,000  | 데이터시트 참고 |
+|  Lh  | 예상 수명 [hours]    | 4,883.5 | cal.            |
+|  LR  | 요구 수명 [hours]    |  5,000  | 데이터시트 참고 |
 |  nR  | 정격 입력 속도 [rpm] |  2,000  | 데이터시트 참고 |
 |  na  | 평균 입력 속도 [rpm] |  2,142  | -               |
 |  TR  | 정격 토크 [Nm]       |   5.4   | -               |
 |  Ta  | 평균 부하 토크 [Nm]  |  4.72   | 데이터시트 참고 |
 
 
-### [요구 수명과 비교: DYD-14-051](#요구-수명과-비교-dyd-14-051)
+### [예상 수명과 비교: DYD-14-051](#예상-수명과-비교-dyd-14-051)
 
 요구수명 : 5,000 hours > 예상수명 : 4,880 hours
 
@@ -228,14 +228,14 @@ DYD의 정격수명은 입력축 베어링의 수명에 의해 결정되며 베�
 
 | 속성 | 의미                 |  수치   | 비고            |
 |:----:|:---------------------|:-------:|:----------------|
-|  Lh  | 요구 수명 [hours]    | 5,520.4 | cal.            |
-|  LR  | 기준 수명 [hours]    |  5,000  | 데이터시트 참고 |
+|  Lh  | 예상 수명 [hours]    | 5,520.4 | cal.            |
+|  LR  | 요구 수명 [hours]    |  5,000  | 데이터시트 참고 |
 |  nR  | 정격 입력 속도 [rpm] |  2,000  | 데이터시트 참고 |
 |  na  | 평균 입력 속도 [rpm] |  2,142  | -               |
 |  TR  | 정격 토크 [Nm]       |   7.8   | 데이터시트 참고 |
 |  Ta  | 평균 부하 토크 [Nm]  |  4.72   | -               |
 
-### [요구 수명과 비교: DYD-14-099](#요구-수명과-비교-dyd-14-099)
+### [예상 수명과 비교: DYD-14-099](#예상-수명과-비교-dyd-14-099)
 
 요구수명 : 5,000 hours < 예상수명 : 5,520 hours
 
@@ -284,11 +284,11 @@ Starting Torque = 20 cNm (DYD-14)
 
 ## [백래쉬](#백래쉬)
 
-백래쉬는 입력부가 고정된 상태에서 출력부에 토크를 정격토크만큼 서서히 증가하였다가 제거하였을 때, 회전 변형량이 ‘0’으로 완전히 돌아오지 않고 일정량의 손실이 발생하는데 이의 손실을 나타내며 기어 사이의 공차를 포함하고 있습니다.
+백래쉬는 입력부가 고정된 상태에서 출력부에 토크를 정격 토크만큼 서서히 증가하였다가 제거하였을 때, 회전 변형량이 ‘0’으로 완전히 돌아오지 않고 일정량의 손실이 발생합니다. 이때 발생한 손실을 아래 그래프와 같이 나타내며 기어 사이의 공차를 포함하고 있습니다.
 
-![](/assets/images/dyd/dyd_hysteresis_loss.png)
+![](/assets/images/dyd/dyd_hysteresis_loss_kr.png)
 
-> 백리쉬
+> 백래쉬
 
 ## [로스트모션(Lost motion)](#로스트모션lost-motion)
 
@@ -304,21 +304,21 @@ Starting Torque = 20 cNm (DYD-14)
 
 감속기의 효율은 적용부하, 입력속도, 윤활조건(온도), 사이즈 등 다양한 조건에 따라 달라집니다. 각 모델별 효율 특성은 현재 제품들의 시험결과를 기반으로 작성되었으며, 모델별 상세 데이터를 참조바랍니다.
 
-![](/assets/images/dyd/dyd_14_efficiency.png)
+![](/assets/images/dyd/dyd_14_efficiency_kr.png)
 
 > 정격 효율 (예시: DYD-14), Efficiency characteristic
 
-## [무부하러닝토크(No-load Starting torque)](#무부하러닝토크no-load-starting-torque)
+## [무부하기동토크(No-load Starting torque)](#무부하기동토크no-load-starting-torque)
 
-무부하러닝토크는 출력부에 부하가 없는 상태에서 입력부 샤프트가 회전하여 출력부가 회전을 시작하는 순간의 토크를 나타냅니다.
+무부하기동토크는 출력부에 부하가 없는 상태에서 입력부 샤프트가 회전하여 출력부가 회전을 시작하는 순간의 토크를 나타냅니다.
 
-## [역구동토크(Back-Drive torque)](#역구동토크back-drive-torque)
+## [백 드라이브 토크(Back-Drive torque)](#백-드라이브-토크back-drive-torque)
 
-역구동토크는 출력부에 토크를 인가하여 입력부가 회전하기 시작하는 최대토크(static friction)를 나타냅니다.
+백 드라이브 토크는 출력부에 토크를 인가하여 입력부가 회전하기 시작하는 최대토크(static friction)를 나타냅니다.
 
-![](/assets/images/dyd/dyd_back_drive_torque.png)
+![](/assets/images/dyd/dyd_back_drive_torque_kr.png)
 
-> 역구동토크, Back-Drive torque
+> 백 드라이브 토크, Back-Drive torque
 
 ## [윤활(Lubrications)](#윤활lubrications)
 
@@ -326,5 +326,4 @@ Starting Torque = 20 cNm (DYD-14)
 
 # [활용 예시](#활용-예시)
 
-준비중
-{: .notice}
+![](/assets/images/dyd/dyd_application_01.png){: width="500px"}
