@@ -55,12 +55,15 @@ In the following image, it is shown that the rotational direction of the input m
 
 # [Product Lineup](#product-lineup)
 
-|                                  DYD-11                                  |                                  DYD-14                                  |                                  DYD-17                                  |
-|:------------------------------------------------------------------------:|:------------------------------------------------------------------------:|:------------------------------------------------------------------------:|
-| [![](/assets/images/dyd/dyd_lineup_11_01.png)](/docs/en/all-dyd/dyd-11/) | [![](/assets/images/dyd/dyd_lineup_14_01.png)](/docs/en/all-dyd/dyd-14/) | [![](/assets/images/dyd/dyd_lineup_17_01.png)](/docs/en/all-dyd/dyd-17/) |
-|               ![](/assets/images/dyd/dyd_lineup_11_02.png)               |               ![](/assets/images/dyd/dyd_lineup_14_02.png)               |               ![](/assets/images/dyd/dyd_lineup_17_02.png)               |
+|                    DYD-11                    |                                  DYD-14                                  |                    DYD-17                    |
+|:--------------------------------------------:|:------------------------------------------------------------------------:|:--------------------------------------------:|
+| ![](/assets/images/dyd/dyd_lineup_11_02.png) |               ![](/assets/images/dyd/dyd_lineup_14_02.png)               | ![](/assets/images/dyd/dyd_lineup_17_02.png) |
+| ![](/assets/images/dyd/dyd_lineup_11_01.png) | [![](/assets/images/dyd/dyd_lineup_14_01.png)](/docs/en/all-dyd/dyd-14/) | ![](/assets/images/dyd/dyd_lineup_17_01.png) |
 
-> Click to the product page.
+> Click to go the product manual.
+
+**NOTE**: DYD-11/17 document will be open in the near futre
+{: .notice}
 
 ## [Specifications](#specifications)
 
