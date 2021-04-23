@@ -119,7 +119,7 @@ product_group: all-dyd
 
 ![](/assets/images/dyd/dyd_average_output_torque_01.png)
 
-![](/assets/images/dyd/dyd_average_output_torque_02.png)
+![](/assets/images/dyd/dyd_average_output_torque_02_kr.png)
 
 ## [평균입력속도(Average input speed)](#평균입력속도average-input-speed)
 
