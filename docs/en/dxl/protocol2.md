@@ -46,15 +46,18 @@ The field that indicates an ID of the device that should receive the Instruction
 
   1. Range : 0 ~ 252 (0x00 ~ 0xFC), which is a total of 253 numbers that can be used
   2. Broadcast ID : 254 (0xFE), which makes all connected devices execute the Instruction Packet
+  
+  **WARNING**: Be sure that Broadcast ID(254 (0xFE)) is responded to [Ping], [Sync Read] and [Bulk Read] only.
+  {: .notice--warning}
 
 ## [Length](#length)
 The field that indicates the length of packet field.
 
-  1. Devided into low and high bytes in the [Instruction Packet](#introduction)
+  1. Devided into low and high bytes in the [Instruction Packet]
   2. The Length indicates the Byte size of Instruction, Parameters and CRC fields
 
 - `Length = the number of Parameters + 3`
-- Status Packet includes 1 byte length ERROR field's data.
+- [Status Packet] includes 1 byte length ERROR field's data.
 
 ## [Instruction](#instruction)
 The field that defines the type of commands.
@@ -83,8 +86,9 @@ The field that defines the type of commands.
 ## [CRC](#crc)
 16bit CRC field which checks if the Packet has been damaged during communication. 
 
-  1. Devided into low and high bytes in the [Instruction Packet](#introduction)
-  2. Calculating CRC and examples: [CRC Calculation](/docs/en/dxl/crc/)
+  1. Devided into low and high bytes in the [Instruction Packet]
+  2. Range of CRC calculation: From Header (FF FF FD 00) to Parameteres before CRC field in [Instruction Packet]
+  3. Calculating CRC and examples: [CRC Calculation](/docs/en/dxl/crc/)
 
 # [Status Packet](#status-packet)
 
@@ -94,7 +98,7 @@ Status Packet is the response packet transmitted from the device to a main contr
 |:--------:|:--------:|:--------:|:--------:|:---------:|:--------:|:--------:|:-----------:|:-----------------:|:-------:|:-----:|:-------:|:-----:|:-----:|
 |   0xFF   |   0xFF   |   0xFD   |   0x00   |    ID     |  Len_L   |  Len_H   | Instruction | **Error**{: .red} | Param 1 |  ...  | Param N | CRC_L | CRC_H |
 
-## Instruction
+## [Instruction ](#instruction-)
 Instruction of the Status Packet is designated to 0x55 (Status)
 
 ## [Error](#error)
@@ -117,10 +121,15 @@ The field that indicates the processing result of Instruction Packet
 |     0x06     | Data Limit Error  |                                                                                           Data to be written in the corresponding Address is outside of the Limit value                                                                                            |
 |     0x07     |   Access Error    | Attempt to write a value in an Address that is Read Only or has not been defined<br />Attempt to read a value in an Address that is Write Only or has not been defined<br />Attempt to write a value in the ROM domain while in a state of Torque Enable(ROM Lock) |
 
-## Parameter
+## [Parameters ](parameters-)
 
 1. As the auxiliary data field for Instruction, its purpose is different for each Instruction.
 2. Method of expressing negative number data : This is different for each product, so please refer to the e-manual of the corresponding product
+
+## [Response Policy](#response-policy)
+
+1. Broadcast ID(254 (0xFE)) is responded to [Ping], [Sync Read] and [Bulk Read] only. For instance, Broadcast ID is not responded to [Sync Write] and [Bulk Write] Instruction. 
+2. A response to Instruction can be determined depending on a value of Status Return Level in Control Table. For more details, see the selectable value from Status Return Level in Control Table of the DYNAMIXEL in use. 
 
 # [Packet Process](#packet-process)
 
@@ -150,10 +159,10 @@ Note that given examples use the following abbreviation to provide clear informa
 - Error: ERR
 - Param: P
 
-## [Ping](#ping)
+## [Ping (0x01)](#ping-0x01)
 ### Description
   - Instruction to check the existence of a Device and basic information
-  - Regardless of the Status Return Level of the Device, the Status Packet is always sent to Ping Instruction.
+  - Regardless of the Status Return Level of the Device, the [Status Packet] is always sent to Ping Instruction.
   - When the Packet ID field is 0xFE(Broadcast ID) : All devices send their Status Packet according to their arranged order.
 
 ### Packet Parameters
@@ -209,11 +218,15 @@ Note that given examples use the following abbreviation to provide clear informa
 |:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
 | 0xFF | 0xFF | 0xFD | 0x00 |   0x02    | 0x07 | 0x00 | 0x55 | 0x00 | 0x06 | 0x04 | 0x26 | 0x6F  | 0x6D  |
 
-## [Read](#read)
+## [Read (0x02)](#read-0x02)
 
 ### Description
   - Instruction to read a value from Control Table
   - Method of expressing negative number data : This is different for each product, so please refer to the e-manual of the corresponding product
+  - Read Instruction does not respond to Broadcast ID(254 (0xFE))
+
+  **NOTE**: If requesting the response for the excess range of its Control Table, the Status packet will fill [Access Error](#error) in its error field, and return the packet with no parameters.
+  {: .notice}
 
 ### Packet Parameters
 
@@ -248,7 +261,7 @@ Note that given examples use the following abbreviation to provide clear informa
 |:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
 | 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x08 | 0x00 | 0x55 | 0x00 | 0xA6 | 0x00 | 0x00 | 0x00 | 0x8C  | 0xC0  |
 
-## [Write](#write)
+## [Write (0x03)](#write-0x03)
 
 ### Description
   - Instruction to write a value on the Control Table
@@ -282,11 +295,12 @@ Note that given examples use the following abbreviation to provide clear informa
 |:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:------|------:|
 | 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1  |  0x0C |
 
-## [Reg Write](#reg-write)
+## [Reg Write (0x04)](#reg-write-0x04)
 
 ### Description
   - Instruction that is similar to Write Instruction, but has an improved synchronization characteristic
   - Write Instruction is executed immediately when an Instruction Packet is received.
+  - By using Reg Write and [Action] Instruction, one can operate multiple devices simultaneously.
   - Reg Write Instruction registers the Instruction Packet to a standby status, and sets Control table Registered Instruction to ‘1’.
   - When an Action Instruction is received, the registered Packet is executed, and sets Control Table Registered Instruction to ‘0’.
 
@@ -318,7 +332,7 @@ Note that given examples use the following abbreviation to provide clear informa
 |:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:-----:|:-----:|
 | 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1  | 0x0C  |
 
-## [Action](#action)
+## [Action (0x05)](#action-0x05)
 
 ### Description
   - Instruction that executes the Packet that has been registered using Reg Write Instruction
@@ -343,10 +357,11 @@ Note that given examples use the following abbreviation to provide clear informa
 | 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1  | 0x0C  |
 
 
-## [Factory Reset](#factory-reset)
+## [Factory Reset (0x06)](#factory-reset-0x06)
 
 ### Description
   - Instruction that resets the Control Table to its initial factory default settings.
+  - When Factory Reset (0x06) Instruction is performed, a device is rebooted and the LED blinks four times in a row.
   - In case of when **Packet ID** is a Broadcast ID `0xFE` and **Option** is Reset All `0xFF`, Factory Reset Instruction(0x06) will **NOT** be activated.
     - This feature is applied from MX(2.0) FW42, X-series FW42 or above.
 
@@ -369,11 +384,11 @@ Note that given examples use the following abbreviation to provide clear informa
 
 #### ID 1 Status Packet
 
-|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST |  ERR  | CRC 1 | CRC 2 |
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST | ERR  | CRC 1 | CRC 2 |
 |:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:-----:|:-----:|
 | 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1  | 0x0C  |
 
-## [Reboot](#reboot)
+## [Reboot (0x08)](#reboot-0x08)
 
 ### Description
 - Instruction to reboot the device
@@ -391,11 +406,11 @@ Note that given examples use the following abbreviation to provide clear informa
 
 #### ID 1 Status Packet
 
-|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST |  ERR  | CRC 1 | CRC 2 |
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST | ERR  | CRC 1 | CRC 2 |
 |:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:-----:|:-----:|
 | 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1  | 0x0C  |
 
-## [Clear](#clear)
+## [Clear (0x10)](#clear-0x10)
 
 ### Description
 - This instruction resets certain information of DYNAMIXEL
@@ -423,16 +438,17 @@ Note that given examples use the following abbreviation to provide clear informa
 
 #### ID 1 Status Packet
 
-|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST |  ERR  | CRC 1 | CRC 2 |
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST | ERR  | CRC 1 | CRC 2 |
 |:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:-----:|:-----:|
 | 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1  | 0x0C  |
 
-## [Sync Read](#sync-read)
+## [Sync Read (0x82)](#sync-read-0x82)
 
 ### Description
 - Instruction to read data from multiple devices simultaneously using one Instruction Packet
 - The Address and Data Length of the data must all be the same.
 - If the Address of the data is not continual, an Indirect Address can be used.
+- [Status Packet] will be returned in order, according to input ID in the [Instruction Packet].
 - Packet ID field : 0xFE (Broadcast ID)
 
 ### Parameters
@@ -448,15 +464,15 @@ Note that given examples use the following abbreviation to provide clear informa
 |        ...         |                    ...                    |
 |   Parameter 4+X    |           ID of the X-th Device           |
 
-**NOTE** : Status Packet is received from each Device.
-{: .notice}
-
 | Status Packet | Description |
 |:-------------:|:-----------:|
 |  Parameter 1  | Frist Byte  |
 |  Parameter 2  | Second Byte |
 |      ...      |     ...     |
 |  Parameter X  |  X-th Byte  |
+
+**NOTE** : Each device individually returns Status Packet for Sync Read instruction. 
+{: .notice}
 
 ### Example
 
@@ -483,7 +499,7 @@ Note that given examples use the following abbreviation to provide clear informa
 | 0xFF | 0xFF | 0xFD | 0x00 |   0x02    | 0x08 | 0x00 | 0x55 | 0x00 | 0x1F | 0x08 | 0x00 | 0x00 | 0xBA  | 0xBE  |
 
 
-## [Sync Write](#sync-write)
+## [Sync Write (0x83)](#sync-write-0x83)
 
 ### Description
 - Instruction to control multiple devices simultaneously using one Instruction Packet
@@ -527,12 +543,13 @@ Note that given examples use the following abbreviation to provide clear informa
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
 | 0x01 | 0x96 | 0x00 | 0x00 | 0x00 | 0x02 | 0xAA | 0x00 | 0x00 | 0x00 | 0x82  | 0x87  |
 
-## [Bulk Read](#bulk-read)
+## [Bulk Read (0x92)](#bulk-read-0x92)
 
 ### Description
 - Similar to Sync Read, this is an Instruction to read data from multiple devices simultaneously using one Instruction Packet
 - This Instruction can be used even if the Address and Data Length of the data for each device are not all the same.
 - The same ID cannot be used multiple times in the Parameter. In other words, it can only read once from each individual device.
+- [Status Packet] will be returned in order, according to input ID in the [Instruction Packet].
 - If the Address of the data is not continual, an Indirect Address can be used.
 - Packet ID field : 0xFE (Broadcast ID)
 
@@ -552,15 +569,15 @@ Note that given examples use the following abbreviation to provide clear informa
 |    Parameter 10    | [2nd Device] High-order byte from the data             |
 |        ...         | ...                                                    |
 
-**NOTE** : Status Packet is received from each Device.
-{: .notice}
-
 | Status Packet | Description |
 |:-------------:|:-----------:|
 |  Parameter 1  |  1st Byte   |
 |  Parameter 2  |  2nd Byte   |
 |      ...      |     ...     |
 |  Parameter X  |  X-th Byte  |
+
+**NOTE** : Each device individually returns Status Packet for Bulk Read instruction. See the Example below for more details.
+{: .notice}
 
 ### Example
 
@@ -591,7 +608,7 @@ Note that given examples use the following abbreviation to provide clear informa
 | 0xFF | 0xFF | 0xFD | 0x00 |   0x02    | 0x05 | 0x00 | 0x55 | 0x00 | 0x24 | 0x8B  | 0xA9  |
 
 
-## [Bulk Write](#bulk-write)
+## [Bulk Write (0x93)](#bulk-write-0x93)
 
 ### Description
 - Similar to Sync Write, this is an Instruction to control multiple devices simultaneously using one Instruction Packet
@@ -641,16 +658,19 @@ Note that given examples use the following abbreviation to provide clear informa
 | 0x02 | 0x1F | 0x00 | 0x01 | 0x00 | 0x50 | 0xB7  | 0x68  |
 
 
-[Ping]: #ping     
-[Read]: #read     
-[Write]: #write
-[Reg Write]: #reg-write   
-[Action]: #action    
-[Factory Reset]: #factory-reset 
-[Reboot]: #reboot    
-[Clear]: #clear     
-[Sync Read]: #sync-read   
-[Sync Write]: #sync-write  
-[Bulk Read]: #bulk-read   
-[Bulk Write]: #bulk-write
+[Instruction Packet]: #instruction-packet
+[Status Packet]: #status-packet
+[Ping]: #ping-0x01
+[Read]: #read-0x02
+[Write]: #write-0x03
+[Reg Write]: #reg-write-0x04
+[Action]: #action-0x05  
+[Factory Reset]: #factory-reset-0x06
+[Reboot]: #reboot-0x08
+[Clear]: #clear-0x10
+[Sync Read]: #sync-read-0x82
+[Sync Write]: #sync-write-0x83
+[Bulk Read]: #bulk-read-0x92   
+[Bulk Write]: #bulk-write-0x93
+
 [Compatibility Table]: /docs/en/popup/faq_protocol_compatibility_table/

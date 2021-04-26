@@ -31,11 +31,11 @@ Status Packet의 반환 방식을 결정합니다.
 
 {% if page.product_group=='xl330' %}
 
-**참고** : [Instruction Packet ID](/docs/kr/dxl/protocol2/)가 [Broadcast ID](/docs/kr/dxl/protocol2/#packet-id) 인 경우는  {{ stauts_return_lv }}의 설정값과 무관하게 Read Instruction 또는 Write Instruction에 대한 Status Packet은 반환되지 않습니다. 더 자세한 설명은 [{{ protocol }}]의 `Status Packet` 항목을 참조하심시오.
+**참고** : [Instruction Packet ID](/docs/kr/dxl/protocol2/)가 [Broadcast ID](/docs/kr/dxl/protocol2/#packet-id) 인 경우는  {{ stauts_return_lv }}의 설정값과 무관하게 Read Instruction 또는 Write Instruction에 대한 Status Packet은 반환되지 않습니다. 더 자세한 설명은 [{{ protocol }}]의 `Status Packet` 항목을 참조하세요.
 {: .notice}
 
 {% else %}
-**참고** : Instruction packet 의 ID가 Broadcast ID(0xFE) 인 경우는  {{ stauts_return_lv }}의 설정값과 무관하게 Read Instruction 또는 Write Instruction에 대한 Status Packet은 반환되지 않습니다. 더 자세한 설명은 [{{ protocol }}]의 `Status Packet` 항목을 참조하심시오.
+**참고** : Instruction packet 의 ID가 Broadcast ID(0xFE) 인 경우는  {{ stauts_return_lv }}의 설정값과 무관하게 Read Instruction 또는 Write Instruction에 대한 Status Packet은 반환되지 않습니다. 더 자세한 설명은 [{{ protocol }}]의 `Status Packet` 항목을 참조하세요.
 {: .notice}
 
 {% endif %}

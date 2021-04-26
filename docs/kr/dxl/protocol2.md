@@ -17,7 +17,7 @@ sidebar:
 - 다이나믹셀 프로토콜 2.0을 지원하는 제어기: CM-50, CM-150, CM-200, OpenCM7.0, OpenCM9.04, CM-550, OpenCR
 - 다이나믹셀 프로토콜 2.0을 지원하는 소프트웨어: 로보플러스 스마트 앱, 로보플러스 2.0, 로보플러스 3.0, 다이나믹셀 위자드 2.0
 
-**참고**: MX(2.0)은 프로토콜 2.0을 지원하는 MX 시리즈의 별도 펌웨어를 의미합니다. DYNAMIXEL Wizard2.0의 [펌웨어 복구](/docs/kr/software/dynamixel/dynamixel_wizard2/#펌웨어-복구) 기능을 활용하여 MX(2.0) 펌웨어로 업그레이드할 수 있습니다.
+**참고**: MX(2.0)은 프로토콜 2.0을 지원하는 MX 시리즈의 별도 펌웨어를 의미함. DYNAMIXEL Wizard2.0의 [펌웨어 복구](/docs/kr/software/dynamixel/dynamixel_wizard2/#펌웨어-복구) 기능을 활용하여 MX(2.0) 펌웨어로 업그레이드 가능. 
 {: .notice}
 
 # [Instruction Packet](#instruction-packet)
@@ -42,16 +42,19 @@ Packet의 시작을 나타내는 신호.
 Instruction Packet을 받아 처리해야 할 장치의 ID를 나타내는 필드.
 
   1. 범위 : 0 ~ 252 (0x00 ~ 0xFC) 까지 253 개 사용 가능
-  2. Broadcast ID : 254 (0xFE), 연결된 모든 장치가 Instruction Packet 을 실행하도록 함.
+  2. Broadcast ID : 254 (0xFE), 연결된 모든 장치가 Instruction Packet 을 실행하도록 함. 
+  
+  **주의**: Broadcast ID(254 (0xFE))는 [Ping], [Sync Read] 및 [Bulk Read] 에만 응답하며, 그 외 [Instruction](#instruction)에는 응답하지 않음. 
+  {: .notice--warning}
 
 ## [Length](#length)
 Packet의 길이를 나타냄.
   
-  1. 하위 바이트와 상위 바이트를 [Instruction Packet](#instruction-packet)에서 나누어서 보냄.
+  1. 하위 바이트와 상위 바이트를 [Instruction Packet]에서 나누어서 보냄.
   2. Length는 Instruction, Parameter, CRC 필드의 Byte Size를 나타내는 필드
 
 - `Length = Parameter 갯수 + 3`
-- Status Packet의 Length에는 ERROR 필드를 나타내는 1바이트가 추가됩니다.
+- Status Packet의 Length에는 ERROR 필드를 나타내는 1바이트가 추가.
 
 ## [Instruction](#instruction)
 Packet의 용도를 정의하는 필드
@@ -80,8 +83,9 @@ Packet의 용도를 정의하는 필드
 ## [CRC](#crc)
 Packet이 통신 중에 파손되었는지를 점검하기 위한 필드 (16bit CRC)  
 
-  1. 하위 바이트와 상위 바이트를 [Instruction Packet](#instruction-packet)에서 나누어서 보냄.
-  2. CRC 계산 방법 및 예제 : [CRC Calculation](/docs/kr/dxl/crc/)
+  1. 하위 바이트와 상위 바이트를 [Instruction Packet]에서 나누어서 보냄.
+  2. CRC 계산 범위: [Instruction Packet]의 Header (FF FF FD 00)를 포함하여, CRC 필드 이전까지.
+  3. CRC 계산 방법 및 예제 : [CRC Calculation](/docs/kr/dxl/crc/)
 
 # [Status Packet](#status-packet)
 
@@ -91,7 +95,7 @@ Status Packet은 장치(Device)가 Main Controller로 보내는 응답 패킷. E
 |:--------:|:--------:|:--------:|:--------:|:---------:|:--------:|:--------:|:-----------:|:-----------------:|:-------:|:-----:|:-------:|:-----:|:-----:|
 |   0xFF   |   0xFF   |   0xFD   |   0x00   |    ID     |  Len_L   |  Len_H   | Instruction | **Error**{: .red} | Param 1 |  ...  | Param N | CRC_L | CRC_H |
 
-## Instruction
+## [Instruction ](#instruction-)
 Status Packet의 Instruction은 0x55 (Status Instruction: 0x55) 로 고정
 
 ## [Error](#error)
@@ -114,10 +118,15 @@ Instruction Packet 의 처리 결과를 나타냄
 |     0x06     | Data Limit Error  | 해당 Address 에 쓰려는 Data 가 Limit 값을 벗어난 경우                                                                                                                                                |
 |     0x07     | Access Error      | Read Only 혹은 정의되지 않은 Address 에 값을 쓰려고 한 경우<br />Write Only 혹은 정의되지 않은 Address 에 값을 읽으려고 한 경우<br />Torque Enable(ROM Lock) 상태에서 ROM 영역에 값을 쓰려고 한 경우 |
 
-## Parameter
+## [Parameters ](parameters-)
 
 1. Instruction의 보조 데이터 필드로써, Instruction 마다 용도가 다름.
 2. 음수 데이터의 표현 방법 : 제품별로 차이가 있으므로, 해당 제품의 e-Manual을 참고 할 것.
+
+## [Response Policy](#response-policy)
+
+1. Broadcast ID(254 (0xFE))는 [Ping], [Sync Read] 및 [Bulk Read] 에만 응답하며, 그 외 [Instruction](#instruction)에는 응답하지 않음. 예를 들어 [Sync Write] 및 [Bulk Write] Instruction에서는 응답 하지 않음.
+2. Control Table의 Status Return Level값에 따라 응답이 결정. 각 장치의 Status Return Level에서 설정가능한 값을 참고. 
 
 # [Packet 처리](#packet-처리)
 
@@ -138,7 +147,7 @@ Instruction Packet 의 처리 결과를 나타냄
 
 # [Instruction의 종류](#instruction의-종류)
 
-설명의 편의를 위하여, 다음과 같은 약어를 사용합니다.
+설명의 편의를 위하여, 다음과 같은 약어를 사용.
 
 - Header : H
 - Reserved: RSRV
@@ -147,7 +156,7 @@ Instruction Packet 의 처리 결과를 나타냄
 - Error: ERR
 - Param: P
 
-## [Ping](#ping)
+## [Ping (0x01)](#ping-0x01)
 
 - 장치의 존재 여부 및 기본 정보를 얻기 위한 Instruction
 - 장치는 Status Return Level에 관계없이, Ping Instruction에는 무조건 Status Packet을 전송
@@ -206,11 +215,15 @@ Instruction Packet 의 처리 결과를 나타냄
 |:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
 | 0xFF | 0xFF | 0xFD | 0x00 |   0x02    | 0x07 | 0x00 | 0x55 | 0x00 | 0x06 | 0x04 | 0x26 | 0x6F  | 0x6D  |
 
-## [Read](#read)
+## [Read (0x02)](#read-0x02)
 
 ### 설명
   - Control Table 의 값을 읽어오기 위한 Instruction
   - 음수 데이터의 표현 방법 : 제품별로 차이가 있으므로, 해당 제품의 e-Manual 을 참고 할 것.
+  - Broadcast ID(254 (0xFE))에 대해서는 응답하지 않음.
+  
+  **참고**: Control Table 범위를 초과하여 요청할 경우, Error 필드에 [Access Error](#error)가 채워지고, Parameter가 없는 Status Packet을 응답
+  {: .notice}
 
 ### Packet Parameters
 
@@ -245,7 +258,7 @@ Instruction Packet 의 처리 결과를 나타냄
 |:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
 | 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x08 | 0x00 | 0x55 | 0x00 | 0xA6 | 0x00 | 0x00 | 0x00 | 0x8C  | 0xC0  |
 
-## [Write](#write)
+## [Write (0x03)](#write-0x03)
 
 ### 설명
   - Control Table 에 값을 쓰기 위한 Instruction
@@ -279,11 +292,12 @@ Instruction Packet 의 처리 결과를 나타냄
 |:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:-----------:|
 | 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x04 | 0x00 | 0x55 | 0x00 |  0xA1|0x0C  |
 
-## [Reg Write](#reg-write)
+## [Reg Write (0x04)](#reg-write-0x04)
 
 ### 설명
   - Write Instruction과 유사하지만, 동기화 특성이 향상된 Instruction
   - Write Instruction은 Instruction Packet 을 받으면 즉시 실행됨.
+  - Reg Write 와 [Action] Instruction을 사용하면, 다수의 장치를 동시에 구동할 수 있음.
   - Reg Write Instruction은 Instruction Packet 을 대기 상태로 등록하고, Control table Registered Instruction을 ‘1’로 설정함.
   - Action Instruction 을 수신하면, 등록된 Packet을 실행하고, Control Table Registered Instruction을 ‘0’으로 변경함.
 
@@ -315,10 +329,10 @@ Instruction Packet 의 처리 결과를 나타냄
 |:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:-----:|:-----:|
 | 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1  | 0x0C  |
 
-## [Action](#action)
+## [Action (0x05)](#action-0x05)
 
 ### 설명
-  - Reg Write Instruction으로 등록된 Packet을 실행하라는 Instruction
+  - [Reg Write] Instruction으로 등록된 Packet을 실행하라는 Instruction
   - Write Instruction으로 다수의 장치를 제어할 경우, Packet을 최초로 수신한 장치와 마지막으로 수신한 장치는 실행 시점에 차이가 발생함.
   - Reg Write 와 Action Instruction을 사용하면, 다수의 장치를 동시에 구동할 수 있음.
 
@@ -340,11 +354,12 @@ Instruction Packet 의 처리 결과를 나타냄
 | 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1  | 0x0C  |
 
 
-## [Factory Reset](#factory-reset)
+## [Factory Reset (0x06)](#factory-reset-0x06)
 
 ### 설명
-- Control Table 을 공장 출하 시의 기본값으로 되돌리는 Instruction
-- Packet ID가 Broadcast ID(0xFE)이고 Option이 Reset all value(0xFF)일 경우, Factory Reset Instruction(0x06)은 동작하지 않음
+- Control Table 을 공장 출하 시의 기본값으로 되돌리는 Instruction.
+- Factory Reset (0x06) Instruction이 실행되면, 장치는 재부팅되고 LED가 4번 점멸
+- Packet ID가 Broadcast ID(0xFE)이고 Option이 Reset all value(0xFF)일 경우, Factory Reset Instruction (0x06)은 동작하지 않음
   - MX(2.0) FW42, 다이나믹셀-X 시리즈 FW42 이상부터 적용
 
 ### Parameters
@@ -370,7 +385,7 @@ Instruction Packet 의 처리 결과를 나타냄
 |:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:-----:|:-----:|
 | 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1  | 0x0C  |
 
-## [Reboot](#reboot)
+## [Reboot (0x08)](#reboot-0x08)
 
 ### 설명
 - 장치를 재부팅 시키는 Instruction
@@ -388,11 +403,11 @@ Instruction Packet 의 처리 결과를 나타냄
 
 #### ID 1 Status Packet
 
-|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST |  ERR  | CRC 1 | CRC 2 |
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST | ERR  | CRC 1 | CRC 2 |
 |:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:-----:|:-----:|
 | 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1  | 0x0C  |
 
-## [Clear](#clear)
+## [Clear (0x10)](#clear-0x10)
 
 ### 설명
 - 장치의 특정 상태를 해제하는 Instruction
@@ -420,17 +435,18 @@ Instruction Packet 의 처리 결과를 나타냄
 
 #### ID 1 Status Packet
 
-|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST |  ERR  | CRC 1 | CRC 2 |
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST | ERR  | CRC 1 | CRC 2 |
 |:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:-----:|:-----:|
 | 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1  | 0x0C  |
 
 
-## [Sync Read](#sync-read)
+## [Sync Read (0x82)](#sync-read-0x82)
 
 ### 설명
 - 하나의 Instruction Packet 으로 동시에 여러 개 장치의 데이터를 읽을 때 사용하는 Instruction
 - 데이터의 Address와 Data Length가 모두 동일해야 함.
 - 데이터의 주소가 연속적이지 않을 경우, Indirect Address를 사용할 수 있음.
+- [Instruction Packet]에 입력된 ID 순서대로 다이나믹셀이 Status Packet 응답. 
 - Packet ID 필드 : 0xFE (Broadcast ID)
 
 ### Parameters
@@ -446,6 +462,8 @@ Instruction Packet 의 처리 결과를 나타냄
 |        ...         |             ...              |
 |   Parameter 4+X    |       X번째 장치의 ID        |
 
+**참고** : 각 장치는 Sync Read Instruction Packet에 대해 응답 시, Status Packet을 각각 반환. 아래 예제를 참고할 것.
+{: .notice}
 
 | Status Packet |     설명     |
 |:-------------:|:------------:|
@@ -480,7 +498,7 @@ Instruction Packet 의 처리 결과를 나타냄
 
 
 
-## [Sync Write](#sync-write)
+## [Sync Write (0x83)](#sync-write-0x83)
 
 ### 설명
 - 하나의 Instruction Packet 으로 동시에 여러 개 장치를 제어하기 위해 사용하는 Instruction
@@ -524,13 +542,14 @@ Instruction Packet 의 처리 결과를 나타냄
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
 | 0x01 | 0x96 | 0x00 | 0x00 | 0x00 | 0x02 | 0xAA | 0x00 | 0x00 | 0x00 | 0x82  | 0x87  |
 
-## [Bulk Read](#bulk-read)
+## [Bulk Read (0x92)](#bulk-read-0x92)
 
 ### 설명
 - Sync Read 와 유사하게, 하나의 Instruction Packet 으로 동시에 여러 개 장치의 데이터를 읽을 때 사용하는 Instruction
 - 데이터의 Address와 Data Length가 장치별로 달라도 사용 가능.
 - Parameter에 동일한 아이디가 여러 번 사용될 수 없음. 즉, 하나의 장치에서는 한 번만 읽을 수 있음.
 - 데이터의 주소가 연속적이지 않을 경우, Indirect Address를 사용할 수 있음.
+- [Instruction Packet]에 입력된 ID 순서대로 다이나믹셀이 Status Packet 응답. 
 - Packet ID 필드 : 0xFE (Broadcast ID)
 
 ### Parameters
@@ -556,6 +575,9 @@ Instruction Packet 의 처리 결과를 나타냄
 |  Parameter 2  | 두번째 바이트 |
 |      ...      |      ...      |
 |  Parameter X  | X번째 바이트  |
+
+**참고** : 각 장치는 Bulk Read Instruction Packet에 대해 Status Packet을 각각 반환. 아래 예제를 참고할 것.
+{: .notice}
 
 ### 예제
 
@@ -586,7 +608,7 @@ Instruction Packet 의 처리 결과를 나타냄
 | 0xFF | 0xFF | 0xFD | 0x00 |   0x02    | 0x05 | 0x00 | 0x55 | 0x00 | 0x24 | 0x8B  | 0xA9  |
 
 
-## [Bulk Write](#bulk-write)
+## [Bulk Write (0x93)](#bulk-write-0x93)
 
 ### 설명
 - Sync Write 와 유사하게, 하나의 Instruction Packet 으로 여러 개 장치를 제어하기 위해 사용하는 Instruction.
@@ -636,15 +658,16 @@ Instruction Packet 의 처리 결과를 나타냄
 |:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
 | 0x02 | 0x1F | 0x00 | 0x01 | 0x00 | 0x50 | 0xB7  | 0x68  |
 
-[Ping]: #ping     
-[Read]: #read     
-[Write]: #write
-[Reg Write]: #reg-write   
-[Action]: #action    
-[Factory Reset]: #factory-reset 
-[Reboot]: #reboot    
-[Clear]: #clear     
-[Sync Read]: #sync-read   
-[Sync Write]: #sync-write  
-[Bulk Read]: #bulk-read   
-[Bulk Write]: #bulk-write
+[Ping]: #ping-0x01
+[Read]: #read-0x02
+[Write]: #write-0x03
+[Reg Write]: #reg-write-0x04
+[Action]: #action-0x05  
+[Factory Reset]: #factory-reset-0x06
+[Reboot]: #reboot-0x08
+[Clear]: #clear-0x10
+[Sync Read]: #sync-read-0x82
+[Sync Write]: #sync-write-0x83
+[Bulk Read]: #bulk-read-0x92   
+[Bulk Write]: #bulk-write-0x93
+[Instruction Packet]: #instruction-packet
