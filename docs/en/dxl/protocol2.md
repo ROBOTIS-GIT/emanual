@@ -128,7 +128,7 @@ The field that indicates the processing result of Instruction Packet
 
 ## [Response Policy](#response-policy)
 
-1. Broadcast ID(254 (0xFE)) is responded [Ping], [Sync Read] and [Bulk Read] only. For instance, Broadcast ID is not responded to [Sync Write] and [Bulk Write] Instruction. 
+1. Broadcast ID(254 (0xFE)) is responded to [Ping], [Sync Read] and [Bulk Read] only. For instance, Broadcast ID is not responded to [Sync Write] and [Bulk Write] Instruction. 
 2. A response to Instruction can be determined depending on a value of Status Return Level in Control Table. For more details, see the selectable value from Status Return Level in Control Table of the DYNAMIXEL in use. 
 
 # [Packet Process](#packet-process)
@@ -224,6 +224,9 @@ Note that given examples use the following abbreviation to provide clear informa
   - Instruction to read a value from Control Table
   - Method of expressing negative number data : This is different for each product, so please refer to the e-manual of the corresponding product
   - Read Instruction does not respond to Broadcast ID(254 (0xFE))
+
+  **NOTE**: If requesting the response for the excess range of its Control Table, the Status packet will fill [Access Error](#error) in its error field, and return the packet with no parameters.
+  {: .notice}
 
 ### Packet Parameters
 
@@ -461,15 +464,15 @@ Note that given examples use the following abbreviation to provide clear informa
 |        ...         |                    ...                    |
 |   Parameter 4+X    |           ID of the X-th Device           |
 
-**NOTE** : Status Packet is received from each Device.
-{: .notice}
-
 | Status Packet | Description |
 |:-------------:|:-----------:|
 |  Parameter 1  | Frist Byte  |
 |  Parameter 2  | Second Byte |
 |      ...      |     ...     |
 |  Parameter X  |  X-th Byte  |
+
+**NOTE** : Each device individually returns Status Packet for Sync Read instruction. 
+{: .notice}
 
 ### Example
 
@@ -566,15 +569,15 @@ Note that given examples use the following abbreviation to provide clear informa
 |    Parameter 10    | [2nd Device] High-order byte from the data             |
 |        ...         | ...                                                    |
 
-**NOTE** : Status Packet is received from each Device.
-{: .notice}
-
 | Status Packet | Description |
 |:-------------:|:-----------:|
 |  Parameter 1  |  1st Byte   |
 |  Parameter 2  |  2nd Byte   |
 |      ...      |     ...     |
 |  Parameter X  |  X-th Byte  |
+
+**NOTE** : Each device individually returns Status Packet for Bulk Read instruction. See the Example below for more details.
+{: .notice}
 
 ### Example
 

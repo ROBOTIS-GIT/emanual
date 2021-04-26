@@ -17,7 +17,7 @@ sidebar:
 - 다이나믹셀 프로토콜 2.0을 지원하는 제어기: CM-50, CM-150, CM-200, OpenCM7.0, OpenCM9.04, CM-550, OpenCR
 - 다이나믹셀 프로토콜 2.0을 지원하는 소프트웨어: 로보플러스 스마트 앱, 로보플러스 2.0, 로보플러스 3.0, 다이나믹셀 위자드 2.0
 
-**참고**: MX(2.0)은 프로토콜 2.0을 지원하는 MX 시리즈의 별도 펌웨어를 의미합니다. DYNAMIXEL Wizard2.0의 [펌웨어 복구](/docs/kr/software/dynamixel/dynamixel_wizard2/#펌웨어-복구) 기능을 활용하여 MX(2.0) 펌웨어로 업그레이드할 수 있습니다.
+**참고**: MX(2.0)은 프로토콜 2.0을 지원하는 MX 시리즈의 별도 펌웨어를 의미함. DYNAMIXEL Wizard2.0의 [펌웨어 복구](/docs/kr/software/dynamixel/dynamixel_wizard2/#펌웨어-복구) 기능을 활용하여 MX(2.0) 펌웨어로 업그레이드 가능. 
 {: .notice}
 
 # [Instruction Packet](#instruction-packet)
@@ -50,11 +50,11 @@ Instruction Packet을 받아 처리해야 할 장치의 ID를 나타내는 필�
 ## [Length](#length)
 Packet의 길이를 나타냄.
   
-  1. 하위 바이트와 상위 바이트를 [Instruction Packet](#instruction-packet)에서 나누어서 보냄.
+  1. 하위 바이트와 상위 바이트를 [Instruction Packet]에서 나누어서 보냄.
   2. Length는 Instruction, Parameter, CRC 필드의 Byte Size를 나타내는 필드
 
 - `Length = Parameter 갯수 + 3`
-- Status Packet의 Length에는 ERROR 필드를 나타내는 1바이트가 추가됩니다.
+- Status Packet의 Length에는 ERROR 필드를 나타내는 1바이트가 추가.
 
 ## [Instruction](#instruction)
 Packet의 용도를 정의하는 필드
@@ -83,8 +83,8 @@ Packet의 용도를 정의하는 필드
 ## [CRC](#crc)
 Packet이 통신 중에 파손되었는지를 점검하기 위한 필드 (16bit CRC)  
 
-  1. 하위 바이트와 상위 바이트를 [Instruction Packet](#instruction-packet)에서 나누어서 보냄.
-  2. CRC 계산 범위: [Instruction Packet](#instruction-packet)의 Header (FF FF FD 00)를 포함하여, CRC 필드 이전까지.
+  1. 하위 바이트와 상위 바이트를 [Instruction Packet]에서 나누어서 보냄.
+  2. CRC 계산 범위: [Instruction Packet]의 Header (FF FF FD 00)를 포함하여, CRC 필드 이전까지.
   3. CRC 계산 방법 및 예제 : [CRC Calculation](/docs/kr/dxl/crc/)
 
 # [Status Packet](#status-packet)
@@ -147,7 +147,7 @@ Instruction Packet 의 처리 결과를 나타냄
 
 # [Instruction의 종류](#instruction의-종류)
 
-설명의 편의를 위하여, 다음과 같은 약어를 사용합니다.
+설명의 편의를 위하여, 다음과 같은 약어를 사용.
 
 - Header : H
 - Reserved: RSRV
@@ -222,7 +222,7 @@ Instruction Packet 의 처리 결과를 나타냄
   - 음수 데이터의 표현 방법 : 제품별로 차이가 있으므로, 해당 제품의 e-Manual 을 참고 할 것.
   - Broadcast ID(254 (0xFE))에 대해서는 응답하지 않음.
   
-  **참고**: Control Table 범위를 초과하여 요청할 경우, Error 필드에 Access Error가 채워지고, Parameter가 없는 Status Packet을 응답
+  **참고**: Control Table 범위를 초과하여 요청할 경우, Error 필드에 [Access Error](#error)가 채워지고, Parameter가 없는 Status Packet을 응답
   {: .notice}
 
 ### Packet Parameters
@@ -462,6 +462,8 @@ Instruction Packet 의 처리 결과를 나타냄
 |        ...         |             ...              |
 |   Parameter 4+X    |       X번째 장치의 ID        |
 
+**참고** : 각 장치는 Sync Read Instruction Packet에 대해 응답 시, Status Packet을 각각 반환. 아래 예제를 참고할 것.
+{: .notice}
 
 | Status Packet |     설명     |
 |:-------------:|:------------:|
@@ -574,6 +576,9 @@ Instruction Packet 의 처리 결과를 나타냄
 |      ...      |      ...      |
 |  Parameter X  | X번째 바이트  |
 
+**참고** : 각 장치는 Bulk Read Instruction Packet에 대해 Status Packet을 각각 반환. 아래 예제를 참고할 것.
+{: .notice}
+
 ### 예제
 
 #### Condition
@@ -665,3 +670,4 @@ Instruction Packet 의 처리 결과를 나타냄
 [Sync Write]: #sync-write-0x83
 [Bulk Read]: #bulk-read-0x92   
 [Bulk Write]: #bulk-write-0x93
+[Instruction Packet]: #instruction-packet
