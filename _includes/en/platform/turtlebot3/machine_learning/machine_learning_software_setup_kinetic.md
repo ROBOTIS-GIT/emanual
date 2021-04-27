@@ -30,13 +30,13 @@ If Anaconda is installed successfuly, `Python 2.7.xx :: Anaconda, Inc.` will be 
 Install required packages first.
 
 ```bash
-$ pip install argparse
+$ pip install msgpack argparse
 ```
 
 To use ROS and Anaconda together, you must additionally install ROS dependency packages.
 
 ```bash
-$ pip install -U rosinstall msgpack empy defusedxml netifaces
+$ pip install -U rosinstall empy defusedxml netifaces
 ```
 
 ### [Tensorflow](#tensorflow)
