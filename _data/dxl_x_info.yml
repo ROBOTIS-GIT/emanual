@@ -594,6 +594,66 @@ xw540-t260:
   material:           Full Metal Gear / Full Metal Case
   standbycurrent:     *standbycurrent_40
 
+xw430-t330:
+  mcu:                *mcu
+  encoder:            *encoder
+  motor:              *motor
+  baudrate:           *baudrate
+  control:            *control
+  resolution:         *resolution
+  backlash:           *backlash_x
+  mode:               *mode
+  mode_en:            *mode_en
+  weight:             "96 g"
+  dimensions:         "28.5 x 46.5 x 34.0 mm"
+  gearratio:          "332.8 : 1"
+  stalltorque:        "2.9 [N.m] (at 11.1 [V], 1.2 [A])<br />**3.1 [N.m] (at 12.0 [V], 1.3 [A])**<br />3.6 [N.m] (at 14.8 [V], 1.5 [A])"
+  noloadspeed:        "29 [rev/min] (at 11.1 [V]<br />**31 [rev/min] (at 12.0 [V]**<br />39 [rev/min] (at 14.8 [V])"
+  radialload:         *radialload
+  radialload_en:      *radialload_en
+  axialload:          *axialload
+  temperature:        *temperature
+  # ip:                 "IP 67"
+  voltage:            *voltage_12
+  voltage_en:         *voltage_12_en
+  command:            *command
+  protocoltype:       *rs485
+  physicalconnection: *rs485_connection
+  id:                 *id
+  feedback:           *feedback
+  material:           Full Metal Gear / Full Metal Case
+  standbycurrent:     *standbycurrent_40
+
+xw430-t200:
+  mcu:                *mcu
+  encoder:            *encoder
+  motor:              *motor
+  baudrate:           *baudrate
+  control:            *control
+  resolution:         *resolution
+  backlash:           *backlash_x
+  mode:               *mode
+  mode_en:            *mode_en
+  weight:             "96 g"
+  dimensions:         "28.5 x 46.5 x 34.0 mm"
+  gearratio:          "200.1 : 1"
+  stalltorque:        "2.1 [N.m] (at 11.1 [V], 1.2 [A])<br />**2.3 [N.m] (at 12.0 [V], 1.3 [A])**<br />2.7 [N.m] (at 14.8 [V], 1.5 [A])"
+  noloadspeed:        "49 [rev/min] (at 11.1 [V]<br />**53 [rev/min] (at 12.0 [V]**<br />66 [rev/min] (at 14.8 [V])"
+  radialload:         *radialload
+  radialload_en:      *radialload_en
+  axialload:          *axialload
+  temperature:        *temperature
+  # ip:                 "IP 67"
+  voltage:            *voltage_12
+  voltage_en:         *voltage_12_en
+  command:            *command
+  protocoltype:       *rs485
+  physicalconnection: *rs485_connection
+  id:                 *id
+  feedback:           *feedback
+  material:           Full Metal Gear / Full Metal Case
+  standbycurrent:     *standbycurrent_40
+
 xm540-w150:
   mcu:                *mcu
   encoder:            *encoder
