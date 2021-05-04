@@ -23,23 +23,25 @@ product_group: dxl_mx
 | MCU                    | ARM CORTEX-M3 (72 [MHz], 32Bit)                                                               |
 | Position Sensor        | Contactless absolute encoder (12Bit, 360 [°])<br />Maker : ams(www.ams.com), Part No : AS5045 |
 | Motor                  | Cored                                                                                         |
-| Baud Rate              | 8000 bps ~ 4.5 Mbps                                                                           |
+| Baud Rate              | 8,000 [bps] ~ 4.5 [Mbps]                                                                      |
+| Control Algorithm      | PID CONTROL                                                                                   |
 | Resolution             | 4096 \[pulse/rev]                                                                             |
-| Running Degree         | 0&deg; ~ 360&deg;<br />Endless Turn<br />Multi-turn                                           |
-| Weight                 | 54.6g                                                                                         |
+| Running Degree         | 0 ~ 360 [&deg;]<br />Endless Turn<br />Multi-turn                                             |
+| Weight                 | 54.6 [g]                                                                                      |
 | Dimensions (W x H x D) | 32 x 50 x 40 [mm]                                                                             |
 | Gear Ratio             | 32 : 1                                                                                        |
 | Stall Torque           | 0.2 [N&middot;m] (at 12 [V], 1.4 [A])                                                         |
 | No Load Speed          | 470 [rev/min] (at 12 [V])                                                                     |
-| Operating Temperature  | -5&deg;C ~ +70&deg;C                                                                          |
-| Input Voltage          | 10 ~ 14.8V (**Recommended : 12V**)                                                            |
+| Operating Temperature  | -5 ~ +70 [&deg;C]                                                                             |
+| Input Voltage          | 10 ~ 14.8 [V] (**Recommended : 12 [V]**)                                                      |
 | Command Signal         | Digital Packet                                                                                |
 | Protocol Type          | Half Duplex Asynchronous Serial Communication<br />(8bit, 1stop, No Parity)                   |
 | Physical Connection    | TTL Level Multidrop Bus(Daisy Chain Type Connector)                                           |
-| ID                     | 0 ~ 253                                                                                       |
+| ID                     | 253 ID (0 ~ 252)                                                                              |
 | Feedback               | Position, Temperature, Load, Input Voltage, etc                                               |
-| Material               | Engineering Plastic                                                                           |
-| Standby Current        | 60mA                                                                                          |
+| Case Material          | Engineering Plastic                                                                           |
+| Gear Material          | Engineering Plastic                                                                           |
+| Standby Current        | 60 [mA]                                                                                       |
 
 
 {% include en/dxl/warning.md %}

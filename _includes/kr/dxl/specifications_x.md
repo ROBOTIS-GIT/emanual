@@ -20,11 +20,11 @@
 | **방진/방수 등급**|             **IP 68 (1 m, 24 hr)**                                   |{% else %}{% endif %}
 | 사용 전압        | {{ site.data.dxl_x_info[page.ref].voltage }}            |
 | 제어 명령        | {{ site.data.dxl_x_info[page.ref].command }}            |
-| 프로토콜 타입    | {{ site.data.dxl_x_info[page.ref].protocoltype }}       |
-| 통신 연결        | {{ site.data.dxl_x_info[page.ref].physicalconnection }} |
+| 통신 연결         | {{ site.data.dxl_x_info[page.ref].physicalconnection }} <br /> {{ site.data.dxl_x_info[page.ref].protocoltype }}      |
 | ID               | {{ site.data.dxl_x_info[page.ref].id }}                 |
 | 피드백           | {{ site.data.dxl_x_info[page.ref].feedback }}           |
-| 재질             | {{ site.data.dxl_x_info[page.ref].material }}           |
+| 케이스 재질       | {{ site.data.dxl_x_info[page.ref].case_material }}     |
+| 기어 재질         | {{ site.data.dxl_x_info[page.ref].gear_material }}     |
 | 대기 전류        | {{ site.data.dxl_x_info[page.ref].standbycurrent }}     |
 
 [반경방향 하중]: /assets/images/dxl/axial_radial_load.png
