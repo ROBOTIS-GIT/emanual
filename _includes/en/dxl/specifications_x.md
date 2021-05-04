@@ -20,11 +20,11 @@
 | **Ingress Protection rating** |                 **IP 68 (1 m, 24 hr)**           |{% else %}{% endif %}
 | Input Voltage          | {{ site.data.dxl_x_info[page.ref].voltage_en }}         |
 | Command Signal         | {{ site.data.dxl_x_info[page.ref].command }}            |
-| Protocol Type          | {{ site.data.dxl_x_info[page.ref].protocoltype }}       |
-| Physical Connection    | {{ site.data.dxl_x_info[page.ref].physicalconnection }} |
+| Physical Connection    | {{ site.data.dxl_x_info[page.ref].physicalconnection }} <br /> {{ site.data.dxl_x_info[page.ref].protocoltype }} |
 | ID                     | {{ site.data.dxl_x_info[page.ref].id }}                 |
 | Feedback               | {{ site.data.dxl_x_info[page.ref].feedback }}           |
-| Part Material          | {{ site.data.dxl_x_info[page.ref].material }}           |
+| Case Material          | {{ site.data.dxl_x_info[page.ref].case_material }}      |
+| Gear Material          | {{ site.data.dxl_x_info[page.ref].gear_material }}      |
 | Standby Current        | {{ site.data.dxl_x_info[page.ref].standbycurrent }}     |
 
 [Radial Load]: /assets/images/dxl/axial_radial_load.png

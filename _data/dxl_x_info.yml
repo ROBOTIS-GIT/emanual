@@ -34,7 +34,8 @@ common_x_specs:
   rs485_ttl_conn:     &rs485_ttl_conn   "RS485 / TTL Multidrop Bus"
   id:                 &id             "253 ID (0 ~ 252)"
   feedback:           &feedback       "Position, Velocity, Current, Realtime tick, Trajectory, Temperature, Input Voltage, etc"
-  material:           &material       "Full Metal Gear<br />Metal (Front, Middle), Engineering Plastic (Back)"
+  case_material:      &case_material  "Metal (Front, Middle), Engineering Plastic (Back)"
+  gear_material:      &gear_material  "Full Metal Gear"
   standbycurrent_36:  &standbycurrent_36 "36 [mA]"
   standbycurrent_40:  &standbycurrent_40 "40 [mA]"
 
@@ -67,7 +68,8 @@ xl330-m077:
   physicalconnection: *ttl_connection_3v3
   id:                 *id
   feedback:           *feedback
-  material:           "Engineering Plastic"
+  case_material:      "Engineering Plastic"
+  gear_material:      "Engineering Plastic"
   standbycurrent:     17 [mA]
   
 xl330-m288:
@@ -96,7 +98,8 @@ xl330-m288:
   physicalconnection: *ttl_connection_3v3
   id:                 *id
   feedback:           *feedback
-  material:           "Engineering Plastic"
+  case_material:      "Engineering Plastic"
+  gear_material:      "Engineering Plastic"
   standbycurrent:     17 [mA]
 
 xh430-v210:
@@ -125,7 +128,8 @@ xh430-v210:
   physicalconnection: *rs485_connection
   id:                 *id
   feedback:           *feedback
-  material:           *material
+  case_material:      *case_material
+  gear_material:      *gear_material
   standbycurrent:     *standbycurrent_36
 
 xh430-v350:
@@ -154,7 +158,8 @@ xh430-v350:
   physicalconnection: *rs485_connection
   id:                 *id
   feedback:           *feedback
-  material:           *material
+  case_material:      *case_material
+  gear_material:      *gear_material
   standbycurrent:     *standbycurrent_36
 
 xh430-w210:
@@ -183,7 +188,8 @@ xh430-w210:
   physicalconnection: *rs485_ttl_conn
   id:                 *id
   feedback:           *feedback
-  material:           *material
+  case_material:      *case_material
+  gear_material:      *gear_material
   standbycurrent:     *standbycurrent_40
 
 xh430-w350:
@@ -212,7 +218,8 @@ xh430-w350:
   physicalconnection: *rs485_ttl_conn
   id:                 *id
   feedback:           *feedback
-  material:           *material
+  case_material:      *case_material
+  gear_material:      *gear_material
   standbycurrent:     *standbycurrent_40
 
 xl430-w250:
@@ -241,7 +248,8 @@ xl430-w250:
   physicalconnection: *ttl_connection_5v
   id:                 *id
   feedback:           "Position, Velocity, Load, Realtime tick, Trajectory, Temperature, Input Voltage, etc"
-  material:           "Engineering Plastic"
+  case_material:      "Engineering Plastic"
+  gear_material:      "Engineering Plastic"
   standbycurrent:     "52 [mA]"
 
 2xl430-w250:
@@ -270,7 +278,8 @@ xl430-w250:
   physicalconnection: *ttl_connection_5v_5v
   id:                 *id
   feedback:           "Position, Velocity, Load, Realtime tick, Trajectory, Temperature, Input Voltage, etc"
-  material:           "Full Metal Gear <br />Engineering Plastic(Front, Middle, Back)"
+  case_material:      "Engineering Plastic(Front, Middle, Back)"
+  gear_material:      "Full Metal Gear"
   standbycurrent:     "49 [mA]"
 
 xc430-w240:
@@ -299,7 +308,8 @@ xc430-w240:
   physicalconnection: "TTL Level Multidrop Bus"
   id:                 "253 ID (0 ~ 252)"
   feedback:           "Position, Velocity, Load, Realtime tick, Trajectory, Temperature, Input Voltage, etc"
-  material:           "Full Metal Gear<br />Engineering Plastic (Body)"
+  case_material:      "Engineering Plastic (Body)"
+  gear_material:      "Full Metal Gear"
   standbycurrent:     "46 [mA]"
 
 2xc430-w250:
@@ -328,7 +338,8 @@ xc430-w240:
   physicalconnection: *ttl_connection_5v
   id:                 *id
   feedback:           "Position, Velocity, Load, Realtime tick, Trajectory, Temperature, Input Voltage, etc"
-  material:           "Full Metal Gear <br />Engineering Plastic(Front, Middle, Back)"
+  case_material:      "Engineering Plastic(Front, Middle, Back)"
+  gear_material:      "Full Metal Gear"
   standbycurrent:     "49 [mA]"
 
 xc430-w150:
@@ -357,7 +368,8 @@ xc430-w150:
   physicalconnection: "TTL Level Multidrop Bus"
   id:                 "253 ID (0 ~ 252)"
   feedback:           "Position, Velocity, Load, Realtime tick, Trajectory, Temperature, Input Voltage, etc"
-  material:           "Full Metal Gear<br />Engineering Plastic (Body)"
+  case_material:      "Engineering Plastic (Body)"
+  gear_material:      "Full Metal Gear"
   standbycurrent:     "46 [mA]"
 
 xm430-w210:
@@ -386,7 +398,8 @@ xm430-w210:
   physicalconnection: *rs485_ttl_conn
   id:                 *id
   feedback:           *feedback
-  material:           *material
+  case_material:      *case_material
+  gear_material:      *gear_material
   standbycurrent:     *standbycurrent_40
 
 xm430-w350:
@@ -415,7 +428,8 @@ xm430-w350:
   physicalconnection: *rs485_ttl_conn
   id:                 *id
   feedback:           *feedback
-  material:           *material
+  case_material:      *case_material
+  gear_material:      *gear_material
   standbycurrent:     *standbycurrent_40
 
 xh540-v270:
@@ -444,7 +458,8 @@ xh540-v270:
   physicalconnection: *rs485_connection
   id:                 *id
   feedback:           *feedback
-  material:           *material
+  case_material:      *case_material
+  gear_material:      *gear_material
   standbycurrent:     *standbycurrent_36
 
 xh540-v150:
@@ -473,7 +488,8 @@ xh540-v150:
   physicalconnection: *rs485_connection
   id:                 *id
   feedback:           *feedback
-  material:           *material
+  case_material:      *case_material
+  gear_material:      *gear_material
   standbycurrent:     *standbycurrent_36
 
 xh540-w150:
@@ -502,7 +518,8 @@ xh540-w150:
   physicalconnection: *rs485_ttl_conn
   id:                 *id
   feedback:           *feedback
-  material:           *material
+  case_material:      *case_material
+  gear_material:      *gear_material
   standbycurrent:     *standbycurrent_40
 
 xh540-w270:
@@ -531,7 +548,8 @@ xh540-w270:
   physicalconnection: *rs485_ttl_conn
   id:                 *id
   feedback:           *feedback
-  material:           *material
+  case_material:      *case_material
+  gear_material:      *gear_material
   standbycurrent:     *standbycurrent_40
 
 xw540-t140:
@@ -544,8 +562,8 @@ xw540-t140:
   backlash:           *backlash_x
   mode:               *mode
   mode_en:            *mode_en
-  weight:             "185 g"
-  dimensions:         "33.5 x 58.5 x 45.9 mm"
+  weight:             "185 [g]"
+  dimensions:         "33.5 x 58.5 x 45.9 [mm]"
   gearratio:          "145.6 : 1"
   stalltorque:        "6.4 [N.m] (at 11.1 [V], 4.5 [A])<br />**6.9 [N.m] (at 12.0 [V], 4.9 [A])**<br />8.3 [N.m] (at 14.8 [V], 5.9 [A])"
   noloadspeed:        "67 [rev/min] (at 11.1 [V]<br />**72 [rev/min] (at 12.0 [V]**<br />88 [rev/min] (at 14.8 [V])"
@@ -561,7 +579,8 @@ xw540-t140:
   physicalconnection: *rs485_connection
   id:                 *id
   feedback:           *feedback
-  material:           Full Metal Gear / Full Metal Case
+  case_material:      "Full Metal Case"
+  gear_material:      "Full Metal Gear"
   standbycurrent:     *standbycurrent_40
 
 xw540-t260:
@@ -574,8 +593,8 @@ xw540-t260:
   backlash:           *backlash_x
   mode:               *mode
   mode_en:            *mode_en
-  weight:             "185 g"
-  dimensions:         "33.5 x 58.5 x 45.9 mm"
+  weight:             "185 [g]"
+  dimensions:         "33.5 x 58.5 x 45.9 [mm]"
   gearratio:          "260.6 : 1"
   stalltorque:        "8.8 [N.m] (at 11.1 [V], 4.5 [A])<br />**9.5 [N.m] (at 12.0 [V], 4.9 [A])**<br />11.2 [N.m] (at 14.8 [V], 5.9 [A])"
   noloadspeed:        "37 [rev/min] (at 11.1 [V])<br />**40 [rev/min] (at 12.0 [V])**<br />48 [rev/min] (at 14.8 [V])"
@@ -591,7 +610,8 @@ xw540-t260:
   physicalconnection: *rs485_connection
   id:                 *id
   feedback:           *feedback
-  material:           Full Metal Gear / Full Metal Case
+  case_material:      "Full Metal Case"
+  gear_material:      "Full Metal Gear"
   standbycurrent:     *standbycurrent_40
 
 xm540-w150:
@@ -620,7 +640,8 @@ xm540-w150:
   physicalconnection: *rs485_ttl_conn
   id:                 *id
   feedback:           *feedback
-  material:           *material
+  case_material:      *case_material
+  gear_material:      *gear_material
   standbycurrent:     *standbycurrent_40
 
 xm540-w270:
@@ -649,5 +670,6 @@ xm540-w270:
   physicalconnection: *rs485_ttl_conn
   id:                 *id
   feedback:           *feedback
-  material:           *material
+  case_material:      *case_material
+  gear_material:      *gear_material
   standbycurrent:     *standbycurrent_40
