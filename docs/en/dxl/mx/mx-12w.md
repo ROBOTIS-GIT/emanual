@@ -30,10 +30,10 @@ product_group: dxl_mx
 | Weight                 | 54.6 [g]                                                                                      |
 | Dimensions (W x H x D) | 32 x 50 x 40 [mm]                                                                             |
 | Gear Ratio             | 32 : 1                                                                                        |
-| Stall Torque           | 0.2 [N&middot;m] (at 12 [V], 1.4 [A])                                                         |
-| No Load Speed          | 470 [rev/min] (at 12 [V])                                                                     |
+| Stall Torque           | 0.2 [N.m] (at 12.0 [V], 1.4 [A])                                                              |
+| No Load Speed          | 470 [rev/min] (at 12.0 [V])                                                                   |
 | Operating Temperature  | -5 ~ +70 [&deg;C]                                                                             |
-| Input Voltage          | 10 ~ 14.8 [V] (**Recommended : 12 [V]**)                                                      |
+| Input Voltage          | 10.0 ~ 14.8 [V] (**Recommended : 12.0 [V]**)                                                  |
 | Command Signal         | Digital Packet                                                                                |
 | Protocol Type          | Half Duplex Asynchronous Serial Communication<br />(8bit, 1stop, No Parity)                   |
 | Physical Connection    | TTL Level Multidrop Bus(Daisy Chain Type Connector)                                           |

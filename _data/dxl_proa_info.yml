@@ -40,7 +40,7 @@ h42-20-s300-ra:
   noloadspeed:        "32.7 [rev/min]"
   noloadcurrent:      "0.57 [A]"
   contspeed:          "29.2 [rev/min]"
-  conttorque:         "5.1 [Nm]"
+  conttorque:         "5.1 [N.m]"
   contcurrent:        "1.5 [A]"
   output:             "20 [W]"
   temperature:        *temperature
@@ -70,7 +70,7 @@ h54-100-s500-ra:
   noloadspeed:        "33.3 [rev/min]"
   noloadcurrent:      "1.13 [A]"
   contspeed:          "29.2 [rev/min]"
-  conttorque:         "25.3 [Nm]"
+  conttorque:         "25.3 [N.m]"
   contcurrent:        "5.5 [A]"
   output:             "100 [W]"
   temperature:        *temperature
@@ -100,7 +100,7 @@ h54-200-s500-ra:
   noloadspeed:        "33.1 [rev/min]"
   noloadcurrent:      "1.65 [A]"
   contspeed:          "29.0 [rev/min]"
-  conttorque:         "44.7 [Nm]"
+  conttorque:         "44.7 [N.m]"
   contcurrent:        "9.3 [A]"
   output:             "200 [W]"
   temperature:        *temperature
@@ -130,7 +130,7 @@ m42-10-s260-ra:
   noloadspeed:        "28.0 [rev/min]"
   noloadcurrent:      "0.52 [A]"
   contspeed:          "26.0 [rev/min]"
-  conttorque:         "1.7 [Nm]"
+  conttorque:         "1.7 [N.m]"
   contcurrent:        "0.6 [A]"
   output:             "10 [W]"
   temperature:        *temperature
@@ -160,7 +160,7 @@ m54-40-s250-ra:
   noloadspeed:        "28.4 [rev/min]"
   noloadcurrent:      "1.32 [A]"
   contspeed:          "24.2 [rev/min]"
-  conttorque:         "3.9 [Nm]"
+  conttorque:         "3.9 [N.m]"
   contcurrent:        "1.9 [A]"
   output:             "40 [W]"
   temperature:        *temperature
@@ -190,7 +190,7 @@ m54-60-s250-ra:
   noloadspeed:        "33.1 [rev/min]"
   noloadcurrent:      "1.25 [A]"
   contspeed:          "28.3 [rev/min]"
-  conttorque:         "10.1 [Nm]"
+  conttorque:         "10.1 [N.m]"
   contcurrent:        "3.0 [A]"
   output:             "60 [W]"
   temperature:        *temperature

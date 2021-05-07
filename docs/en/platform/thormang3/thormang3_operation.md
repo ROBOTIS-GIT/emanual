@@ -463,7 +463,7 @@ Manipulation Control Mode can control and receive feedback of the upper body.
 
 3. Update the value of specific joint.    
   - Select desired joint from `Joint Name`.    
-  - Write target value in `Joint Value [deg]`.    
+  - Write target value in `Joint Value [&deg;]`.    
   - Click `Set Destination Joint Angle` button.     
 
 4. Obtain current joint value.    

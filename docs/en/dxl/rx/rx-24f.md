@@ -29,7 +29,7 @@ product_group: dxl_rx
 | Weight                 | 67g                                                                         |
 | Dimensions (W x H x D) | 35.6mm x 50.6mm x 35.5mm                                                    |
 | Gear Ratio             | 193 : 1                                                                     |
-| Stall Torque           | 2.6 N*m (at 12V, 2.4A)                                                      |
+| Stall Torque           | 2.6 [N.m] (at 12V, 2.4A)                                                      |
 | No Load Speed          | 126rpm (at 12V)                                                             |
 | Operating Temperature  | -5&deg;C ~ +80&deg;C                                                        |
 | Input Voltage          | 9 ~ 12V (**Recommended : 11.1V**)                                           |

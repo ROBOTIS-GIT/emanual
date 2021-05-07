@@ -107,9 +107,9 @@ In the figure below shows an example of various torque and speed conditions duri
 | Properties | Description                                | Properties | Description                               |
 |:----------:|:-------------------------------------------|:----------:|:------------------------------------------|
 |     Ta     | Average output load                        |     na     | Average input speed                       |
-|     T1     | maximum output torque at acceleration [Nm] |     n1     | average input speed at acceleration [rpm] |
-|     T2     | output torque at constant speed [Nm]       |     n2     | input speed at constant motion [rpm]      |
-|     T3     | maximum output torque at deceleration [Nm] |     n3     | average input speed at deceleration [rpm] |
+|     T1     | maximum output torque at acceleration [N.m] |     n1     | average input speed at acceleration [rpm] |
+|     T2     | output torque at constant speed [N.m]       |     n2     | input speed at constant motion [rpm]      |
+|     T3     | maximum output torque at deceleration [N.m] |     n3     | average input speed at deceleration [rpm] |
 |     t1     | acceleration time [s]                      |     -      | -                                         |
 |     t2     | constant motion time [s]                   |     -      | -                                         |
 |     t3     | deceleration time [s]                      |     -      | -                                         |
@@ -147,8 +147,8 @@ The required service life for a given speed and load values can be calculated as
 |     LR     | Reference service life [hours] |
 |     nR     | nominal input speed [rpm]      |
 |     na     | average input speed [rpm]      |
-|     TR     | nominal torque [Nm]            |
-|     Ta     | average output load [Nm]     |
+|     TR     | nominal torque [N.m]            |
+|     Ta     | average output load [N.m]     |
 
 ## [Product Selection Example](#product-selection-example)
 
@@ -156,9 +156,9 @@ The required service life for a given speed and load values can be calculated as
 
 | Properties | Description                                | Value | Note |
 |:----------:|:-------------------------------------------|:-----:|:-----|
-|     T1     | Maximum output torque at acceleration [Nm] |  7.5  | -    |
-|     T2     | Output torque at constant speed [Nm]       |   5   | -    |
-|     T3     | Maximum output torque at deceleration [Nm] |  2.5  | -    |
+|     T1     | Maximum output torque at acceleration [N.m] |  7.5  | -    |
+|     T2     | Output torque at constant speed [N.m]       |   5   | -    |
+|     T3     | Maximum output torque at deceleration [N.m] |  2.5  | -    |
 |     n1     | Average input speed at acceleration [rpm]  | 1,500 | -    |
 |     n2     | Input speed at constant motion [rpm]       | 3,000 | -    |
 |     n3     | Average input speed at deceleration [rpm]  | 1,500 | -    |
@@ -205,8 +205,8 @@ The required service life for a given speed and load values can be calculated as
 |     LR     | Reference service life [hours] |  5,000  | See data sheet |
 |     nR     | Nominal input speed [rpm]      |  2,000  | See data sheet |
 |     na     | Average input speed [rpm]      |  2,142  | -              |
-|     TR     | Nominal torque [Nm]            |   5.4   | -              |
-|     Ta     | average output load [Nm]     |  4.72   | See data sheet |
+|     TR     | Nominal torque [N.m]            |   5.4   | -              |
+|     Ta     | average output load [N.m]     |  4.72   | See data sheet |
 
 ### [Service Life Comparison: DYD-14-051](#service-life-comparison-dyd-14-051)
 
@@ -238,8 +238,8 @@ Required service life : 5,000 hours > Expected service life : 4,880 hours
 |     LR     | Reference service life [hours] |  5,000  | See data sheet |
 |     nR     | Nominal input speed [rpm]      |  2,000  | See data sheet |
 |     na     | Average input speed [rpm]      |  2,142  | -              |
-|     TR     | Nominal torque [Nm]            |   7.8   | See data sheet |
-|     Ta     | average output load [Nm]     |  4.72   | -              |
+|     TR     | Nominal torque [N.m]            |   7.8   | See data sheet |
+|     Ta     | average output load [N.m]     |  4.72   | -              |
 
 ### [Service Life Comparison: DYD-14-099](#service-life-comparison-dyd-14-099)
 
