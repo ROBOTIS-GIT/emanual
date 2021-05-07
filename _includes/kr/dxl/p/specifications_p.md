@@ -21,10 +21,9 @@
 | 동작 온도                 | {{ site.data.dxl_p_info[page.ref].temperature }}        |
 | 사용 전압                 | {{ site.data.dxl_p_info[page.ref].opvoltage }}          |
 | Command Signal            | {{ site.data.dxl_p_info[page.ref].commandsignalkr }}    |
-| Protocol Type             | {{ site.data.dxl_p_info[page.ref].protocoltypekr }}     |
-| Physical Connection       | {{ site.data.dxl_p_info[page.ref].physicalconnection }} |
+| Physical Connection       | {{ site.data.dxl_p_info[page.ref].physicalconnection }} <br /> {{ site.data.dxl_p_info[page.ref].protocoltypekr }}|
 | ID                        | {{ site.data.dxl_p_info[page.ref].id }}                 |
-| 대기 전류                 | {{ site.data.dxl_p_info[page.ref].standbycurrent }}     |
+| 대기 전류                 | {{ site.data.dxl_p_info[page.ref].standbycurrent }}       |
 
 `1` 명시된 토크/전류 값은 입력 모터 사양에 따른 값입니다. 일반적으로 사용하는 토크 범위는 성능 그래프를 참고하여 주시고, 장시간 사용 환경에서는 별도로 문의 바랍니다.
 {: .notice}
