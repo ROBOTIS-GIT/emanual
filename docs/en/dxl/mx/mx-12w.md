@@ -26,7 +26,7 @@ product_group: dxl_mx
 | Baud Rate              | 8,000 [bps] ~ 4.5 [Mbps]                                                                      |
 | Control Algorithm      | PID CONTROL                                                                                   |
 | Resolution             | 4096 \[pulse/rev]                                                                             |
-| Operating Modes        | Joint Mode (0 ~ 360 [&deg;])<br />Endless Turn<br />Multi-turn                                             |
+| Operating Modes        | Joint Mode (0 ~ 360 [&deg;])<br />Endless Turn<br />Multi-turn                                |
 | Weight                 | 54.6 [g]                                                                                      |
 | Dimensions (W x H x D) | 32 x 50 x 40 [mm]                                                                             |
 | Gear Ratio             | 32 : 1                                                                                        |
