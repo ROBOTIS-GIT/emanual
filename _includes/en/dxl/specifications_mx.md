@@ -8,7 +8,7 @@
 | Control Algorithm       | {{ site.data.dxl_mx_info[page.ref].control }}                                                                      |
 | Resolution              | {{ site.data.dxl_mx_info[page.ref].resolution }}                                                                   |
 | Backlash                | {{ site.data.dxl_mx_info[page.ref].backlash }}                                                                     |
-| Operating Mode          | {{ site.data.dxl_mx_info[page.ref].mode_en }}                                                                      |
+| Operating Modes         | {{ site.data.dxl_mx_info[page.ref].mode_en }}                                                                     |
 | Weight                  | {{ site.data.dxl_mx_info[page.ref].weight }}                                                                       |
 | Dimensions (W x H x D)  | {{ site.data.dxl_mx_info[page.ref].dimensions }}                                                                   |
 | Gear Ratio              | {{ site.data.dxl_mx_info[page.ref].gearratio }}                                                                    |
