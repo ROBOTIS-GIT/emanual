@@ -36,7 +36,7 @@ product_group: dxl_ax
 | Gear Ratio             | 254 : 1                                                                                                   |
 | Stall Torque           | 1.5 [N.m] (at 12 [V], 1.5 [A])                                                                            |
 | No Load Speed          | 59 [rev/min] (at 12V)                                                                                     |
-| Operating Temperature  | -5 [&deg;C] ~ +70 [&deg;C]                                                                                |
+| Operating Temperature  | -5 ~ +70 [&deg;C]                                                                                |
 | Input Voltage          | 9.0 ~ 12.0 [V] (**Recommended : 11.1V**)                                                                  |
 | Command Signal         | Digital Packet                                                                                            |
 | Physical Connection    | TTL Level Multi Drop Bus<br />Half Duplex Asynchronous Serial Communication<br />(8bit, 1stop, No Parity) |

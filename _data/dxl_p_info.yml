@@ -10,7 +10,7 @@ common_pro_plus_specs:
   radialload_54_en:   &radialload_54_en   "370 [N] (10 [mm] away from the horn)"
   axialload_42:       &axialload_42       "100 [N]"
   axialload_54:       &axialload_54       "130 [N]"
-  temperature:        &temperature        "-5 ~ 55 [&deg;C]"
+  temperature:        &temperature        "-5 ~ +55 [&deg;C]"
   voltage:            &voltage            "24.0 [V]"
   command:            &command            "Digital Packet"
   command_kr:         &command_kr         "디지털 패킷"
