@@ -731,6 +731,12 @@ Tools → Port → COM1を選択します。
 COM1 の値は、PCに接続されている環境によって異なる場合があります。
 {: .notice}
 
+##### [スケッチのアップロード](#スケッチのアップロード)
+
+プログラムをOpenCM9.04にアップロードする場合は、"ユーザーボタン"を押しながらUSBケーブルを接続してください。ステータスLEDは点灯したままになり、Arduino IDEの"アップロード"ボタンを押してアップロードを開始できます。
+
+![](/assets/images/parts/controller/opencm904/opencm904_08.png)
+
 {% include jp/software/arduino/arduino_library_api.md %}
 
 # [例](#例)
