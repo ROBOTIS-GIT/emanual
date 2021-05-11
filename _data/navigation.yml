@@ -22886,8 +22886,10 @@ opencm904:
         titlekr: "윈도우즈에 설치하기"
         url: /parts/controller/opencm904/#install-on-windows
         urlkr: /parts/controller/opencm904/#윈도우즈에-설치하기
-      - title: "Uplaod sketch"
+      - title: "Upload sketch"
         url: /parts/controller/opencm904/#upload-sketch
+      - titlekr: "스케치 업로드하기"
+        url: /parts/controller/opencm904/#스케치-업로드하기
     - title: "Library API"
       titlekr: "라이브러리 API"
       url: /parts/controller/opencm904/#library-api

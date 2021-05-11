@@ -729,11 +729,18 @@ Select Tools > Port > COM1.
 The value of COM1 may be different depending on the environment connected to the PC.
 {: .notice}
 
-##### [Upload sketch](#upload-sketch)
+### [Upload sketch](#upload-sketch)
 
-When uploading the program to OpenCM 9.04, connect the USB cable while holding down the “User Button”. Status LED will stay lit and you can press the Upload button on the Arduino IDE to start the upload.
+The way to upload the sketch to the OpenCM9.04 board is similar to the way other common arduino boards do such as Arduino Uno.
 
-![](/assets/images/parts/controller/opencm904/opencm904_08.png)
+Connect the OpenCM9.04 to the PC via USB cable and click on the Upload icon. 
+
+Make sure that the board is properly entering the Bootloader (See the resulting output from the Arduino IDE), otherwise the OpenCM9.04 will fail to download the sketch. 
+
+![](/assets/images/parts/controller/opencm904/oencm904_upload_01.png)
+
+**Note**: Uploading error could be occured by a firmware issue installed on the board. If you enters any error while uploading the code to the board, see [User Button](/#user-button)
+{: .notice}
 
 {% include en/software/arduino/arduino_library_api.md %}
 
