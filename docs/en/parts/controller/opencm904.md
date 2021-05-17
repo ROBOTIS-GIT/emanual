@@ -739,7 +739,7 @@ Make sure that the board is properly entering the Bootloader (See the resulting 
 
 ![](/assets/images/parts/controller/opencm904/oencm904_upload_01.png)
 
-**Note**: Uploading error could be occured by a firmware issue installed on the board. If you enters any error while uploading the code to the board, see [User Button](/#user-button)
+**Note**: Uploading error could be occured by a firmware issue installed on the board. If you enters any error while uploading the code to the board, see [User Button](#user-button)
 {: .notice}
 
 {% include en/software/arduino/arduino_library_api.md %}
