@@ -26,9 +26,8 @@ You need a micro SD card reader to burn the OS image on your PC or laptop.
   - Run the utility and select the restore image, then burn to the selected micro SD card.  
   ![](/assets/images/platform/turtlebot3/setup/ubuntu_disks_restore_img.png)
 <details>
-<summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) **Other micro SD card burning methods?**
-{: .notice--success}
+<summary>
+![](/assets/images/icon_unfold.png) **Other micro SD card burning methods?**
 </summary>
 You can also use the [Raspberry Pi Imager](https://www.raspberrypi.org/blog/raspberry-pi-imager-imaging-utility/) that supports Windows, Linux, and Mac OSX.  
 ![](/assets/images/platform/turtlebot3/setup/rpi_imager.png)

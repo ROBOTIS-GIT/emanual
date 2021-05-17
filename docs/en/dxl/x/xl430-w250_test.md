@@ -135,40 +135,40 @@ product_group: dxl_xl430
 {: .notice--warning}
 
 <details>
-<summary id="summary_for_foreins" style="outline: inherit;"> 
+<summary> 
 </summary>
 </details>
 
 <details>
-<summary id="summary_for_foreins" style="outline: inherit;"> 
+<summary> 
 ### Protocol Type(13)
 </summary>
 {% include en/dxl/control_table_protocolversion.md %}
 </details>
 
 <details>
-<summary id="summary_for_foreins" style="outline: inherit;"> 
+<summary> 
 ### <a name="homing-offset"></a>Homing Offset(20)
 </summary>
 {% include en/dxl/control_table_homingoffset.md %}
 </details>
 
 <details>
-<summary id="summary_for_foreins" style="outline: inherit;"> 
+<summary> 
 ### <a name="moving-threshold"></a>**[Moving Threshold(24)](#moving-threshold24)**
 </summary>
 {% include en/dxl/control_table_movingthreshold.md %}
 </details>
 
 <details>
-<summary id="summary_for_foreins" style="outline: inherit;"> 
+<summary> 
 ### <a name="temperature-limit"></a>**[Temperature Limit(31)](#temperature-limit31)**
 </summary>
 {% include en/dxl/control_table_temp_limit_2.md %}
 </details>
 
 <details>
-<summary id="summary_for_foreins" style="outline: inherit;"> 
+<summary> 
 ### <a name="max-voltage-limit"></a><a name="min-voltage-limit"></a>**[Min/Max Voltage Limit(32, 34)](#minmax-voltage-limit32-34)**
 </summary>
 
@@ -183,21 +183,21 @@ For more details, please refer to the [Shutdown(63)] section.
 </details>
 
 <details>
-<summary id="summary_for_foreins" style="outline: inherit;"> 
+<summary> 
 ### <a name="pwm-limit"></a>**[PWM Limit(36)](#pwm-limit36)**
 </summary>
 {% include en/dxl/control_table_pwm_limit.md %}
 </details>
 
 <details>
-<summary id="summary_for_foreins" style="outline: inherit;"> 
+<summary> 
 ### <a name="velocity-limit"></a>**[Velocity Limit(44)](#velocity-limit44)**
 </summary>
 {% include en/dxl/control_table_vellimit.md %}
 </details>
 
 <details>
-<summary id="summary_for_foreins" style="outline: inherit;"> 
+<summary> 
 ### <a name="max-position-limit"></a><a name="min-position-limit"></a>**[Min/Max Position Limit(48, 52)](#minmax-position-limit48-52)**
 </summary>
 
@@ -212,7 +212,7 @@ These values limit maximum and minimum target positions for Position Control Mod
 </details>
 
 <details>
-<summary id="summary_for_foreins" style="outline: inherit;"> 
+<summary> 
 ### <a name="shutdown"></a>**[Shutdown(63)](#shutdown63)**
 </summary>
 {% include en/dxl/control_table_shutdown.md %}

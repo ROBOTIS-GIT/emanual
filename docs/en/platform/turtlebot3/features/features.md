@@ -22,9 +22,8 @@ page_number: 3
 ![](/assets/images/platform/turtlebot3/features/features_with_icons.png)
 
 <details>
-<summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) Click here to expand more details about each features
-{: .notice--success}
+<summary>
+![](/assets/images/icon_unfold.png) Click here to expand more details about each features
 </summary>
 
 **World's Most Popular ROS Platform**

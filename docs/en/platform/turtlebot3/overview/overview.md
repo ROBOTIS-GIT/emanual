@@ -34,9 +34,8 @@ The TurtleBot3’s core technology is [SLAM][slam], [Navigation][navigation] and
 **How to contribute to ROS and TurtleBot?**
 
 <details>
-<summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) TurtleBot3 is a collaboration project...
-{: .notice--success}
+<summary>
+![](/assets/images/icon_unfold.png) TurtleBot3 is a collaboration project...
 </summary>
 TurtleBot3 is a collaboration project among [Open Robotics][open_robotics], [ROBOTIS][robotis], and more partners like [The Construct][the_construct], [Intel][intel], [Onshape][onshape], [OROCA][oroca], [AuTURBO][auturbo], [ROS in Robotclub Malaysia][ros_in_robotclub_malaysia], [Astana Digital][astana digital], [Polariant Experiment][polariant_experiment], [Tokyo University of Agriculture and Technology, GVlab][gvlab], [Networked Control Robotics Lab at National Chiao Tung University][nctu], [SIM Group at TU Darmstadt][sim_group]. The Open Robotics is in charge of software and community activities, while ROBOTIS is in charge of manufacturing and global distribution.
 
@@ -66,9 +65,8 @@ If you are interested in partnership with us to realize open source robotics, pl
 ## [Notices](#notices)
 
 <details>
-<summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) Checkout ROS and TurtleBot3 Publications
-{: .notice--success}
+<summary>
+![](/assets/images/icon_unfold.png) Checkout ROS and TurtleBot3 Publications
 </summary>
 - 10/15/2020 [ROS 2 Foxy Release](https://discourse.ros.org/t/new-packages-for-foxy-fitzroy-2020-11-05/17140)
 - 08/21/2019 [ROS 2 Dashing Release](https://discourse.ros.org/t/tb3-ros-2-dashing-release/10364)
@@ -131,9 +129,8 @@ If you are interested in partnership with us to realize open source robotics, pl
 </details>
 
 <details>
-<summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) Click to expand the recent news
-{: .notice--success}
+<summary>
+![](/assets/images/icon_unfold.png) Click to expand the recent news
 </summary>
 - 07/22/2019 [Top 10 ROS-based robotics companies in 2019, The Robot Report
   ](https://www.therobotreport.com/top-10-ros-based-robotics-companies-2019/)

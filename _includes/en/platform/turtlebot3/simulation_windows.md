@@ -7,9 +7,8 @@
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
 <details>
-<summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) Read more about **TurtleBot3 Simulation**
-{: .notice--success}
+<summary>
+![](/assets/images/icon_unfold.png) Read more about **TurtleBot3 Simulation**
 </summary>
 TurtleBot3 supports simulation development environment that can be programmed and developed with a virtual robot in the simulation. There are two development environments to do this, one is using a **fake node with 3D visualization tool RViz**, and the other is using the **3D robot simulator Gazebo**.
 

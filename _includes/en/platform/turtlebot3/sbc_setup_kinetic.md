@@ -15,39 +15,54 @@
 If you are using **Intel Joule**, please refer to [Intel Joule Setup][joule_setup]{: .popup} instruction.
 {: .notice--danger}
 
-### [Prepare microSD Card](#prepare-microsd-card)
-You need a micro SD card reader to burn the OS image on your PC or laptop.
+### [Prepare microSD Card and Reader](#prepare-microsd-card-and-reader)
+If you PC do not have a microSD slot, please use a microSD card reader to burn the recovery image.  
+![](/assets/images/platform/turtlebot3/setup/micro_sd_reader.png)
 
-1. Download Raspbian with ROBOTIS TurtleBot3 restore image.
-  - [Download TurtleBot3 Raspbian image for Raspberry Pi 3B+](http://www.robotis.com/service/download.php?no=1738){: .blank}
-  - SHA256 (image_rpi_20190429.img): 7a868c275169b1f02c04617cc0cce9654fd8222623c78b22d0a27c73a9609398
-2. Unzip the downloaded image.
-3. Burn the image file(`.img`) to the microSD card.
-  - Use `Restore Disk Image` option in the `Disks` utility in Ubuntu.
-  - Run the utility and select the restore image, then burn to the selected micro SD card.  
-  ![](/assets/images/platform/turtlebot3/setup/ubuntu_disks_restore_img.png)
-<details>
-<summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) **Other micro SD card burning methods?**
-{: .notice--success}
-</summary>
-You can also use the [Raspberry Pi Imager](https://www.raspberrypi.org/blog/raspberry-pi-imager-imaging-utility/) that supports Windows, Linux, and Mac OSX.  
-![](/assets/images/platform/turtlebot3/setup/rpi_imager.png)
-</details>
+### [Download TurtleBot3 SBC Image](#download-turtlebot3-sbc-image)
+Download the correct image file for your hardware and ROS version.  
+Kinetic version images use Raspberry Pi OS(Raspbian OS).  
+
+- [![](/assets/images/icon_download.png) **Raspberry Pi 3B+** ROS1 Kinetic image](http://www.robotis.com/service/download.php?no=1738){: .blank}
+  - **SHA256** : eb8173f3727db08087990b2c4e2bb211e70bd54644644834771fc8b971856b97
+- [![](/assets/images/icon_download.png) **Raspberry Pi 4B (2GB or 4GB)** ROS1 Kinetic image](https://www.robotis.com/service/download.php?no=1905){: .blank}
+  - **SHA256** : 73546c63d3056bfc5538acc187f54dab6c1601096df320e60e0842bcb1b03d34
+  - Please note that this image may not compatible with Raspberry Pi 4B with 8GB RAM.
+
+The recovery image files can be modified without a prior notice.
+{: .notice}
+
+### [Unzip the downloaded image file](#unzip-the-downloaded-image-file)
+Extract the `.img` file and save it in the local disk.
+
+### Burn the image file
+You can use various image burning tools.  
+For example, `Raspberry Pi Imager` or Linux `Disks` utility can be used.  
+Choose your preferred tool to burn the image to microSD.
+
+#### Raspberry Pi Imager
+Please refer to [this article](https://www.raspberrypi.org/blog/raspberry-pi-imager-imaging-utility/) to find more information about Raspberry Pi Imager.
+
+[![](/assets/images/icon_download.png) Download Raspberry Pi Imager from raspberrypi.org](https://www.raspberrypi.org/software/){: .blank}
+
+![](/assets/images/platform/turtlebot3/setup/rpi_imager.gif)  
+1. Click `CHOOSE OS`.  
+2. Click `Use custom` and select the extracted `.img` file from local disk.  
+3. Click `CHOOSE STORAGE` and select the microSD.  
+4. Click `WRITE` to start burning the image.
+
+#### Disks Utility
+`Disks` utility is included in recent Ubuntu Desktop. Search for "Disks" and launch the app.  
+
+![](/assets/images/platform/turtlebot3/setup/disks.gif)  
+1. Select the microSD card in the left panel.  
+2. Select `Restore Disk Image` option.  
+3. Open the `.img` file from local disk.  
+4. Click `Start Restoring...` > `Restore` button.
 
 <details>
-<summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) Read More about **Raspberry Pi 4B**
-{: .notice--success}
-</summary>
-In case you use Raspberry Pi 4B, you can use the restore image below. However, please note that this image may not compatible with Raspberry Pi 4B with 8GB RAM.
-- [Download TurtleBot3 Raspbian image for Raspberry Pi 4B](https://www.robotis.com/service/download.php?no=1905)
-</details>
-
-<details>
-<summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) Read More about **Intel Joule 570x**
-{: .notice--success}
+<summary>
+![](/assets/images/icon_unfold.png) **Click to expand : Instructions for Intel Joule 570x**
 </summary>
 In case you use Intel Joule 570x, please follow the instructions below.  
 Intel Joule is discontinued in 2017, and additional support is unavailable.
