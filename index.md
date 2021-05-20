@@ -26,22 +26,20 @@ header:
 
 <div class="notice--success">{{ index_notice_01 | markdownify }}</div>
 
-{% capture index_notice_02 %}
-
-  <details>
-  <summary id="summary_for_foreins" style="outline: inherit;"> <span id="hover_note"><img src="/assets/click_here.png" alt="Click Here" width="20" height="20"> Click here for Japanese (日本語) or Chinese (中文) e-Manual notices.</span></summary> 
-  <ul>
-    <li> 日本語e-manualは現時点で編集されていません。 英語版ページをご参照下さい。</li>
-    <li> 目前, 还没有中文版. 请使用提供的Google翻译器 <img src="/assets/images/icon_google.png">. </li>
-    <li> 中文用户 (DREAM, STEM, MINI等产品) 请参考中文手册.</li>
-    <li> <a href="/docs/en/popup/dream1-2_example_cn/" class="popup">DREAM Lv2 下载示例文件</a> </li>
-    <li> <a href="/docs/en/popup/dream1-3_example_cn/" class="popup">DREAM Lv3 下载示例文件]</a> </li>
-    <li> <a href="/docs/en/popup/dream1-4_example_cn/" class="popup">DREAM Lv4 下载示例文件</a> </li>
-    <li> <a href="/docs/en/popup/mini_example_cn/" class="popup">MINI 下载</a> </li>
-  </ul>
-  </details>  
-  {% endcapture %}  
-<div class="notice">{{ index_notice_02 | markdownify }}</div>
+<details>
+<summary><img src="/assets/images/icon_unfold.png" alt="Click Here" width="20" height="20">
+<b>Click to expand : Japanese (日本語) or Chinese (中文) e-Manual notices</b>
+</summary> 
+<ul>
+  <li> 日本語e-manualは現時点で編集されていません。 英語版ページをご参照下さい。</li>
+  <li> 目前, 还没有中文版. 请使用提供的Google翻译器 <img src="/assets/images/icon_google.png">. </li>
+  <li> 中文用户 (DREAM, STEM, MINI等产品) 请参考中文手册.</li>
+  <li> <a href="/docs/en/popup/dream1-2_example_cn/" class="popup">DREAM Lv2 下载示例文件</a> </li>
+  <li> <a href="/docs/en/popup/dream1-3_example_cn/" class="popup">DREAM Lv3 下载示例文件]</a> </li>
+  <li> <a href="/docs/en/popup/dream1-4_example_cn/" class="popup">DREAM Lv4 下载示例文件</a> </li>
+  <li> <a href="/docs/en/popup/mini_example_cn/" class="popup">MINI 下载</a> </li>
+</ul>
+</details>
 
 <div class="feature__wrapper">
 

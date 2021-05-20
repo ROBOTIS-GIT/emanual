@@ -36,9 +36,8 @@ $ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/m
   ```
 
 <details>
-<summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) Read more about **How to predefine the TURTLEBOT3_MODEL**
-{: .notice--success}
+<summary>
+![](/assets/images/icon_unfold.png) Read more about **How to predefine the TURTLEBOT3_MODEL**
 </summary>
 The `export TURTLEBOT3_MODEL=${TB3_MODEL}` command can be omitted if the **TURTLEBOT3_MODEL** parameter is predefined in the `.bashrc` file. The `.bashrc` file is automatically loaded when a terminal window is created.  
 
@@ -86,9 +85,8 @@ $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 <iframe width="640" height="360" src="https://www.youtube.com/embed/VYlMywwYALU" frameborder="0" allowfullscreen></iframe>
 
 <details>
-<summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) Read more about **Navigation**
-{: .notice--success}
+<summary>
+![](/assets/images/icon_unfold.png) Read more about **Navigation**
 </summary>
 - The robot will create a path to reach to the Navigation Goal based on the global path planner. Then, the robot moves along the path. If an obstacle is placed in the path, the Navigation will use local path planner to avoid the obstacle.
 

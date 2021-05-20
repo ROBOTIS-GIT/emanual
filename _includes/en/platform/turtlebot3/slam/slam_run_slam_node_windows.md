@@ -12,9 +12,8 @@
   ```
 
 <details>
-<summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) Read more about **other SLAM methods**
-{: .notice--success}
+<summary>
+![](/assets/images/icon_unfold.png) Read more about **other SLAM methods**
 </summary>
 - **Cartographer** ([ROS WIKI](http://wiki.ros.org/cartographer), [Github](https://github.com/googlecartographer/cartographer))
   1. Install dependent packages on PC using choco.  

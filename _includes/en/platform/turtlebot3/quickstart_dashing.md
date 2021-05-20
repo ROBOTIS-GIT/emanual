@@ -79,9 +79,8 @@ $ sudo apt install ros-dashing-turtlebot3
 ```
 
 <details>
-<summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) **Click here to expand more details about building TurtleBot3 package from source.**
-{: .notice--success}
+<summary>
+![](/assets/images/icon_unfold.png) **Click here to expand more details about building TurtleBot3 package from source.**
 </summary>
 In case you need to build the TurtleBot3 packages with source code, please use the commands below.  
 Building the source code provides most up to date contents which may have resolved known issues.  

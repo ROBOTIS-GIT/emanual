@@ -58,9 +58,8 @@ $ sudo apt-get install ros-melodic-turtlebot3
 ```
 
 <details>
-<summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) **Click here to expand more details about building TurtleBot3 package from source.**
-{: .notice--success}
+<summary>
+![](/assets/images/icon_unfold.png) **Click here to expand more details about building TurtleBot3 package from source.**
 </summary>
 In case you need to download the source codes and build them, please use the commands below.  
 Make sure to remove the identical packages to avoid redundancy.  
