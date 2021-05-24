@@ -7,9 +7,8 @@
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
 <details>
-<summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) Read more about **TurtleBot3 Simulation**
-{: .notice--success}
+<summary>
+![](/assets/images/icon_unfold.png) Read more about **TurtleBot3 Simulation**
 </summary>
 TurtleBot3 supports simulation development environment that can be programmed and developed with a virtual robot in the simulation. There are two development environments to do this, one is using a **fake node with 3D visualization tool RViz**, and the other is using the **3D robot simulator Gazebo**.
 
@@ -82,9 +81,8 @@ $ ros2 run turtlebot3_teleop teleop_keyboard
 ```
 
 <details>
-<summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) Read more about **How to run Autonomous Collision Avoidance**
-{: .notice--success}
+<summary>
+![](/assets/images/icon_unfold.png) Read more about **How to run Autonomous Collision Avoidance**
 </summary>
 A simple collision avoidance node is prepared which keeps certain distance from obstacles and make turns to avoid collision.  
 In order to autonomously drive a TurtleBot3 in the **TurtleBot3 world**, please follow the instruction below.
@@ -98,9 +96,8 @@ $ ros2 run turtlebot3_gazebo turtlebot3_drive
 </details>
 
 <details>
-<summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) Read more about **How to visualize Simulation data(RViz2)**
-{: .notice--success}
+<summary>
+![](/assets/images/icon_unfold.png) Read more about **How to visualize Simulation data(RViz2)**
 </summary>
 RViz2 visualizes published topics while simulation is running. You can launch RViz2 in a new terminal window by entering below command.
 

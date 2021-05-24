@@ -8,9 +8,8 @@ Bring up basic packages from TurtleBot3 to start TurtleBot3 applications.
   ```
 
 <details>
-<summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) **Read more about loading TurtleBot3 on RViz**
-{: .notice--success}
+<summary>
+![](/assets/images/icon_unfold.png) **Read more about loading TurtleBot3 on RViz**
 </summary>
 1. Bring up basic packages to start TurtleBot3 applications.  
   Please use the proper keyword among `burger`, `waffle`, `waffle_pi` for the `TURTLEBOT3_MODEL` parameter.  

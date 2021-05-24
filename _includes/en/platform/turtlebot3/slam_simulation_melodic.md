@@ -16,9 +16,8 @@ $ roslaunch turtlebot3_gazebo turtlebot3_world.launch
 ```
 
 <details>
-<summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) Read more about **How to load TurtleBot3 House**
-{: .notice--success}
+<summary>
+![](/assets/images/icon_unfold.png) Read more about **How to load TurtleBot3 House**
 </summary>
 ```bash
 $ export TURTLEBOT3_MODEL=burger
@@ -72,9 +71,8 @@ $ rosrun map_server map_saver -f ~/map
 
 
 <details>
-<summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) Read more about **How to SLAM with multiple TurtleBot3**
-{: .notice--success}
+<summary>
+![](/assets/images/icon_unfold.png) Read more about **How to SLAM with multiple TurtleBot3**
 </summary>
 In order to create a map with multiple robots, **multirobot-map-merge** package is required.  
 Follow the instructions below instead of **Launching Simulation World** section of this page to operate multiple TurtleBot3.

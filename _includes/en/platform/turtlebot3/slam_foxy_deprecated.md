@@ -29,9 +29,8 @@ $ ros2 launch turtlebot3_cartographer cartographer.launch.py
   ![](/assets/images/platform/turtlebot3/ros2/platform_cartographer.png)
 
 <details>
-<summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) Read more about **How to predefine the TURTLEBOT3_MODEL**
-{: .notice--success}
+<summary>
+![](/assets/images/icon_unfold.png) Read more about **How to predefine the TURTLEBOT3_MODEL**
 </summary>
 The `export TURTLEBOT3_MODEL=${TB3_MODEL}` command can be omitted if the **TURTLEBOT3_MODEL** parameter is predefined in the `.bashrc` file. The `.bashrc` file is automatically loaded when a terminal window is created.  
 

@@ -16,9 +16,8 @@ $ ros2 launch turtlebot3_navigation2 navigation2.launch.py map:=$HOME/map.yaml
   ```
 
 <details>
-<summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) **How to save the TURTLEBOT3_MODEL parameter?**
-{: .notice--success}
+<summary>
+![](/assets/images/icon_unfold.png) **How to save the TURTLEBOT3_MODEL parameter?**
 </summary>
 The `$ export TURTLEBOT3_MODEL=${TB3_MODEL}` command can be omitted if the **TURTLEBOT3_MODEL** parameter is predefined in the `.bashrc` file.  
 The `.bashrc` file is automatically loaded when a terminal window is created.  

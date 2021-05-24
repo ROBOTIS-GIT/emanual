@@ -83,9 +83,8 @@ $ ros2 run teleop_twist_joy teleop_node
 ### [Topic Monitor](#topic-monitor)
 
 <details>
-<summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) **Read more about Topic Monitor**
-{: .notice--success}
+<summary>
+![](/assets/images/icon_unfold.png) **Read more about Topic Monitor**
 </summary>
 In order to check topics of TurtleBot3, Use [rqt][rqt] provided by ROS, which is a Qt-based framework for GUI development for ROS. It is a tool displaying all topics of TurtleBot3 with a topic name, type, bandwidth, Hz, and value.
 </details>
