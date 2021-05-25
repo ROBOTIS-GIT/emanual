@@ -3,9 +3,9 @@
 
 {% capture notice_01 %}
 **NOTE**
- - This instructions were tested on `Ubuntu 20.04` and `ROS1 Noetic Ninjemys`.
- - Noetic version has been tested with GAZEBO simulation. 
- - It is assumed that the 6.simulation process is carried out in a PC environment that is successfully driven.
+- This Autorace package is developed on `Ubuntu 20.04` with `ROS1 Noetic Ninjemys`.
+- This package has been tested under the Gazebo simulation.
+- In order to successfully simulate this example, [Simulation](/docs/en/platform/turtlebot3/simulation/) section has to be completed.
 {% endcapture %}
 
 <div class="notice">{{ notice_01 | markdownify }}</div>
@@ -13,20 +13,16 @@
 The contents in e-Manual can be updated without a previous notice. Therefore, some video may differ from the contents in e-Manual.
 {: .notice--warning}
 
-The following instruction describes how to build the autonomous driving TurtleBot3 on ROS by using AutoRace packages.
-
-### [What you need for Autonomous Driving](#what-you-need-for-autonomous-driving)
+### [Prerequisites](#prerequisites)
 
 `Remote PC`
 
-- Laptop, desktop, or other devices with ROS 1.
-- It is necessary to run GAZEBO simulation and autorace packages.
+- ROS 1 Noetic installed Laptop or desktop PC.
+- This instruction is based on Gazebo simulation, but can be ported to the actual robot later.
 
 ### [Install Autorace Packages](#install-autorace-packages)
 
-The following instructions describes how to install packages and to calibrate camera.
-
-1. Install AutoRace package on `Remote PC`.
+1. Install the AutoRace 2020 meta package on `Remote PC`.
 ```bash
 $ cd ~/catkin_ws/src/
 $ git clone -b noetic-devel https://github.com/ROBOTIS-GIT/turtlebot3_autorace_2020.git
@@ -40,76 +36,67 @@ $ sudo apt install ros-noetic-image-transport ros-noetic-cv-bridge ros-noetic-vi
 
 ## [Camera Calibration](#camera-calibration)
 
-Calibrating the camera is very important for autonomous driving. The following describes how to simply calibrate the camera step by step.
+Autonomous driving is heavily dependent on vision processing, therefore, camera calibration is playing an important role for a successful mission completion.
 
 ### [Camera Imaging Calibration](#camera-imaging-calibration)
-
- - Camera image calibration does not support both GAZEBO / Actual Robot.
+Camera image calibration is currently not supported in Gazebo simulation or Actual Robot.
 
 ### [Intrinsic Camera Calibration](#intrinsic-camera-calibration)
-
- - Intrinsic Camera Calibration is only supported by Actual Robot.
+Intrinsic Camera Calibration is not required in Gazebo simulation.
 
 ### [Extrinsic Camera Calibration](#extrinsic-camera-calibration)
 
-1. Launch roscore on `Remote PC`.
-```bash
-$ roscore
-```
-
-2. Launch GAZEBO on `Remote PC`.
+1. Open a new terminal on `Remote PC` and launch Gazebo.
 ```bash
 $ roslaunch turtlebot3_gazebo turtlebot3_autorace_2020.launch
 ```
 
-3. Use the command on `Remote PC`.
+2. Open a new terminal and launch the intrinsic camera calibration node.
 ```bash
-$ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_intrinsic_camera_calibration.launch
+$ roslaunch turtlebot3_autorace_camera intrinsic_camera_calibration.launch
 ```
 
-4. Run the extrinsic camera calibration launch file on `Remote PC`.
+3. Open a new terminal and launch the extrinsic camera calibration node.
 ```bash
 $ export AUTO_EX_CALIB=calibration
-$ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_extrinsic_camera_calibration.launch
+$ roslaunch turtlebot3_autorace_camera extrinsic_camera_calibration.launch
 ```
 
-5. Execute rqt on `Remote PC`.
+4. Execute rqt on `Remote PC`.
 ```
 $ rqt
 ```
 
-6. Click **plugins** > **visualization** > **Image view**; Multiple windows will be present.
+5. Select **plugins** > **visualization** > **Image view**. Create two image view windows.
 
-7. Select `/camera/image_extrinsic_calib/compressed` and `/camera/image_projected_compensated` topics on each monitors.
-   - One of two screens will show an image with a red rectangle box. The other one shows the ground projected view (Bird's eye view).
+6. Select `/camera/image_extrinsic_calib/compressed` topic on one window and `/camera/image_projected_compensated` on the other.
+   - The first topic shows an image with a red trapezoidal shape and the latter shows the ground projected view (Bird's eye view).
 
       ![](/assets/images/platform/turtlebot3/autonomous_driving/noetic_extrinsic_calibration.png){: width="1024"}
-      > `/camera/image_extrinsic_calib/compressed` and `/camera/image_projected_compensated`
+      > `/camera/image_extrinsic_calib/compressed` (Left) and `/camera/image_projected_compensated` (Right)
 
-
-8. Excute rqt_reconfigure on `Remote PC`.
+7. Excute rqt_reconfigure on `Remote PC`.
 ```bash
 $ rosrun rqt_reconfigure rqt_reconfigure
 ```
 
-9. Adjust parameters in `/camera/image_projection` and `/camera/image_compensation_projection`.
+8. Adjust parameters in `/camera/image_projection` and `/camera/image_compensation_projection`.
    - Change `/camera/image_projection` parameter value. It affects `/camera/image_extrinsic_calib/compressed` topic.
-   - Intrinsic camera calibration will transform the image surrounded by the red rectangle, and will show the image that looks from over the lane.
+   - Intrinsic camera calibration modifies the perspective of the image in the red trapezoid.
 
       ![](/assets/images/platform/turtlebot3/autonomous_driving/noetic_extrinsic_calibration_reconfigure.png){: width="1024"}
       > rqt_reconfigure
 
-10. After that, overwrite each values on to the yaml files in **turtlebot3_autorace_camera/calibration/extrinsic_calibration/.** This will make the camera set its parameters as you set here from next launching.
+9. After that, overwrite each values on to the yaml files in **turtlebot3_autorace_camera/calibration/extrinsic_calibration/.** This will save the current calibration parameters so that they can be loaded later.
     
-      ![](/assets/images/platform/turtlebot3/autonomous_driving/noetic_compensation_yaml.png){: width="512" height="216"}
-      ![](/assets/images/platform/turtlebot3/autonomous_driving/noetic_projection_yaml.png){: width="512" height="216"}
-      > `compensation.yaml` and `projection.yaml`
+  ![](/assets/images/platform/turtlebot3/autonomous_driving/noetic_compensation_yaml.png){: width="512" height="216"}
+  ![](/assets/images/platform/turtlebot3/autonomous_driving/noetic_projection_yaml.png){: width="512" height="216"}
+  > `compensation.yaml` and `projection.yaml`
 
 
 ### [Settings for Recognition](#settings-for-recognition)
 
-When you complete all the camera calibration, be sure that the calibration is successfully applied to the camera.  
-The following instruction describes settings for recognition.
+After completing calibrations, follow the instructions below for recognition.
 
 1. Close all of terminal.
 
@@ -118,20 +105,20 @@ The following instruction describes settings for recognition.
 $ roscore
 ```
 
-2. Launch GAZEBO on `Remote PC`.
+2. Launch Gazebo on `Remote PC`.
 ```bash
 $ roslaunch turtlebot3_gazebo turtlebot3_autorace_2020.launch
 ```
 
 3. Use the command on `Remote PC`.
 ```bash
-$ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_intrinsic_camera_calibration.launch
+$ roslaunch turtlebot3_autorace_camera intrinsic_camera_calibration.launch
 ```
 
 4. Open terminal and use the command on `Remote PC`.
 ```bash
 $ export AUTO_EX_CALIB=action
-$ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_extrinsic_camera_calibration.launch
+$ roslaunch turtlebot3_autorace_camera extrinsic_camera_calibration.launch
 ```
 
 5. Launch rqt on `Remote PC`.
@@ -159,20 +146,20 @@ The following instructions describe how to use the lane detection feature and to
 $ roscore
 ```
 
-3. Launch GAZEBO on `Remote PC`.
+3. Launch Gazebo on `Remote PC`.
 ```bash
 $ roslaunch turtlebot3_gazebo turtlebot3_autorace_2020.launch
 ```
 
 4. Run a intrinsic camera calibration launch file on `Remote PC`.
 ```bash
-$ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_intrinsic_camera_calibration.launch
+$ roslaunch turtlebot3_autorace_camera intrinsic_camera_calibration.launch
 ```
 
 5. Run a extrinsic camera calibration launch file on `Remote PC`.
 ```bash
 $ export AUTO_EX_CALIB=action
-$ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_extrinsic_camera_calibration.launch
+$ roslaunch turtlebot3_autorace_camera extrinsic_camera_calibration.launch
 ```
 
 6. Run a lane detection launch file on `Remote PC`
@@ -248,7 +235,7 @@ TurtleBot3 can detect traffic signs using a node with `SIFT algorithm`, and perf
 $ roscore
 ```
 
-2. Launch GAZEBO on `Remote PC`.
+2. Launch Gazebo on `Remote PC`.
 ```bash
 $ roslaunch turtlebot3_gazebo turtlebot3_autorace_2020.launch
 ```
@@ -271,14 +258,14 @@ $ rqt_image_view
 
 8. Open terminal and use the command on `Remote PC`.
       ```bash
-      $ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_intrinsic_camera_calibration.launch
+      $ roslaunch turtlebot3_autorace_camera intrinsic_camera_calibration.launch
       ```
       
       Open terminal and use the command on `Remote PC`.
 
       ```bash
       $ export AUTO_EX_CALIB=action
-      $ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_extrinsic_camera_calibration.launch
+      $ roslaunch turtlebot3_autorace_camera extrinsic_camera_calibration.launch
       ```
       
       Open terminal and use the command on `Remote PC`.
@@ -355,7 +342,7 @@ You should change the file name written in the source core_node_mission.py file 
 $ roscore
 ```
 
-2. Launch GAZEBO on `Remote PC`.
+2. Launch Gazebo on `Remote PC`.
 ```bash
 $ roslaunch turtlebot3_gazebo turtlebot3_autorace_2020.launch
 ```
@@ -363,14 +350,14 @@ $ roslaunch turtlebot3_gazebo turtlebot3_autorace_2020.launch
 3. Open terminal and use the command on `Remote PC`.
 
    ```bash
-   $ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_intrinsic_camera_calibration.launch
+   $ roslaunch turtlebot3_autorace_camera intrinsic_camera_calibration.launch
    ```
    
    Open new terminal and use the command on `Remote PC`.
 
    ```bash
    $ export AUTO_EX_CALIB=action
-   $ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_extrinsic_camera_calibration.launch
+   $ roslaunch turtlebot3_autorace_camera extrinsic_camera_calibration.launch
    ```
 
    Open new terminal and use the command on `Remote PC`.
@@ -439,14 +426,14 @@ $ rqt_image_view
 $ roscore
 ```
 
-2. Launch GAZEBO on `Remote PC`.
+2. Launch Gazebo on `Remote PC`.
 ```bash
 $ roslaunch turtlebot3_gazebo turtlebot3_autorace_2020.launch
 ```
 
 3. Use the command on `Remote PC`.
 ```bash
-$ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_intrinsic_camera_calibration.launch
+$ roslaunch turtlebot3_autorace_camera intrinsic_camera_calibration.launch
 ```
 
 4. Use the command on `Remote PC`.
@@ -462,7 +449,7 @@ $ roslaunch turtlebot3_autorace_core turtlebot3_autorace_core.launch
 $ rostopic pub -1 /core/decided_mode std_msgs/UInt8 "data: 3"
 ```
 
-6. Launch GAZEBO mission on `Remote PC`.
+6. Launch Gazebo mission on `Remote PC`.
 ```bash
 $ roslaunch turtlebot3_autorace_core turtlebot3_autorace_mission.launch
 ```
@@ -480,14 +467,14 @@ Intersection is the second mission of AutoRace. TurtleBot3 detects a specific tr
 $ roscore
 ```
 
-2. Launch GAZEBO on `Remote PC`.
+2. Launch Gazebo on `Remote PC`.
 ```bash
 $ roslaunch turtlebot3_gazebo turtlebot3_autorace_2020.launch
 ```
 
 3. Use the command on `Remote PC`.
 ```bash
-$ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_intrinsic_camera_calibration.launch
+$ roslaunch turtlebot3_autorace_camera intrinsic_camera_calibration.launch
 ```
 
 4. Use the command on `Remote PC`.
@@ -498,7 +485,7 @@ $ export MISSION_MODE=intersection
 $ roslaunch turtlebot3_autorace_core turtlebot3_autorace_core.launch
 ```
 
-5. Launch GAZEBO mission on `Remote PC`.
+5. Launch Gazebo mission on `Remote PC`.
 ```bash
 $ roslaunch turtlebot3_autorace_core turtlebot3_autorace_mission.launch
 ```
@@ -522,14 +509,14 @@ Construction is the third mission of AutoRace. TurtleBot3 avoids constructions o
 $ roscore
 ```
 
-2. Launch GAZEBO on `Remote PC`.
+2. Launch Gazebo on `Remote PC`.
 ```bash
 $ roslaunch turtlebot3_gazebo turtlebot3_autorace_2020.launch
 ```
 
 3. Use the command on `Remote PC`.
 ```bash
-$ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_intrinsic_camera_calibration.launch
+$ roslaunch turtlebot3_autorace_camera intrinsic_camera_calibration.launch
 ```
 
 4. Use the command on `Remote PC`.
@@ -540,7 +527,7 @@ $ export MISSION_MODE=construction
 $ roslaunch turtlebot3_autorace_core turtlebot3_autorace_core.launch
 ```
 
-5. Launch GAZEBO mission on `Remote PC`.
+5. Launch Gazebo mission on `Remote PC`.
 ```bash
 $ roslaunch turtlebot3_autorace_core turtlebot3_autorace_mission.launch
 ```
@@ -563,14 +550,14 @@ Parking is the fourth mission of AutoRace. TurtleBot3 detects the parking sign, 
 $ roscore
 ```
 
-2. Launch GAZEBO on `Remote PC`.
+2. Launch Gazebo on `Remote PC`.
 ```bash
 $ roslaunch turtlebot3_gazebo turtlebot3_autorace_2020.launch
 ```
 
 3. Use the command on `Remote PC`.
 ```bash
-$ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_intrinsic_camera_calibration.launch
+$ roslaunch turtlebot3_autorace_camera intrinsic_camera_calibration.launch
 ```
 
 4. Use the command on `Remote PC`.
@@ -581,7 +568,7 @@ $ export MISSION_MODE=parking
 $ roslaunch turtlebot3_autorace_core turtlebot3_autorace_core.launch
 ```
 
-5. Launch GAZEBO mission on `Remote PC`.
+5. Launch Gazebo mission on `Remote PC`.
 ```bash
 $ roslaunch turtlebot3_autorace_core turtlebot3_autorace_mission.launch
 ```
@@ -605,7 +592,7 @@ Level Crossing is the fifth mission of AutoRace. When TurtleBot3 encounters the 
 $ roscore
 ```
 
-2. Launch GAZEBO on `Remote PC`.
+2. Launch Gazebo on `Remote PC`.
 ```bash
 $ roslaunch turtlebot3_gazebo turtlebot3_autorace_2020.launch
 ```
@@ -613,14 +600,14 @@ $ roslaunch turtlebot3_gazebo turtlebot3_autorace_2020.launch
 3. Open terminal and use the command on `Remote PC`.
 
    ```bash
-   $ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_intrinsic_camera_calibration.launch
+   $ roslaunch turtlebot3_autorace_camera intrinsic_camera_calibration.launch
    ```
    
    Open new terminal and use the command on `Remote PC`.
 
    ```bash
    $ export AUTO_EX_CALIB=action
-   $ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_extrinsic_camera_calibration.launch
+   $ roslaunch turtlebot3_autorace_camera extrinsic_camera_calibration.launch
    ```
 
    Open new terminal and use the command on `Remote PC`.
@@ -679,14 +666,14 @@ $ rqt_image_view
 $ roscore
 ```
 
-2. Launch GAZEBO on `Remote PC`.
+2. Launch Gazebo on `Remote PC`.
 ```bash
 $ roslaunch turtlebot3_gazebo turtlebot3_autorace_2020.launch
 ```
 
 3. Use the command on `Remote PC`.
 ```bash
-$ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_intrinsic_camera_calibration.launch
+$ roslaunch turtlebot3_autorace_camera intrinsic_camera_calibration.launch
 ```
 
 4. Use the command on `Remote PC`.
@@ -697,7 +684,7 @@ $ export MISSION_MODE=level_crossing
 $ roslaunch turtlebot3_autorace_core turtlebot3_autorace_core.launch
 ```
 
-5. Launch GAZEBO mission on `Remote PC`.
+5. Launch Gazebo mission on `Remote PC`.
 ```bash
 $ roslaunch turtlebot3_autorace_core turtlebot3_autorace_mission.launch
 ```
@@ -723,14 +710,14 @@ Tunnel is the sixth mission of AutoRace. TurtleBot3 passes the tunnel successful
 $ roscore
 ```
 
-2. Launch GAZEBO on `Remote PC`.
+2. Launch Gazebo on `Remote PC`.
 ```bash
 $ roslaunch turtlebot3_gazebo turtlebot3_autorace_2020.launch
 ```
 
 3. Use the command on `Remote PC`.
 ```bash
-$ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_intrinsic_camera_calibration.launch
+$ roslaunch turtlebot3_autorace_camera intrinsic_camera_calibration.launch
 ```
 
 4. Use the command on `Remote PC`.
@@ -741,7 +728,7 @@ $ export MISSION_MODE=tunnel
 $ roslaunch turtlebot3_autorace_core turtlebot3_autorace_core.launch
 ```
 
-5. Launch GAZEBO mission on `Remote PC`.
+5. Launch Gazebo mission on `Remote PC`.
 ```bash
 $ roslaunch turtlebot3_autorace_core turtlebot3_autorace_mission.launch
 ```

@@ -32,7 +32,7 @@ page_number: 19
 
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
 
-**NOTE**: This feature is available for Kinetic only. 
+**NOTE**: TurtleBot3 Autorace is supported in ROS1 Kinetic and Noetic. 
 {: .notice}
 
 </section>
@@ -47,21 +47,21 @@ page_number: 19
 
 <section data-id="{{ page.tab_title4 }}" class="tab_contents">
 
-**NOTE**: This feature is available for Kinetic only. 
+**NOTE**: TurtleBot3 Autorace is supported in ROS1 Kinetic and Noetic. 
 {: .notice}
 
 </section>
 
 <section data-id="{{ page.tab_title5 }}" class="tab_contents">
 
-**NOTE**: This feature is available for Kinetic only. 
+**NOTE**: TurtleBot3 Autorace is supported in ROS1 Kinetic and Noetic. 
 {: .notice}
 
 </section>
 
 <section data-id="{{ page.tab_title6 }}" class="tab_contents">
 
-**NOTE**: This feature is available for Kinetic only. 
+**NOTE**: TurtleBot3 Autorace is supported in ROS1 Kinetic and Noetic. 
 {: .notice}
 
 </section>
