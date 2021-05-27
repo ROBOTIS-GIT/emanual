@@ -292,6 +292,31 @@ MCP2515를 사용하는 CAN shield board를 사용해야 하며, 107-Arduino-MCP
 {% endcapture %}
 <div class="notice--warning">{{ shield_01 | markdownify }}</div>
 
+## [RCPWM2DYNAMIXEL](#rcpwm2dynamixel)
+
+RCPWM2DYNAMIXEL은 RC 리시버로 부터 전달된 PWM 신호를 변환하여 다이나믹셀을 제어하기 위한 예제입니다. 
+
+Soft Start가 구현되어 있으며, Fail-Safe 동작을 통해 지정한 위치로 다이나믹셀을 이동 시킬 수 있습니다. 
+
+![개요](/assets/images/parts/interface/mkr_shield/examples_rcpwm2dynamixel_diagram.png)
+
+예제에서 사용된 부품은 다음과 같습니다. 리시버 및 조종기는 관계없이 사용가능합니다.
+- Futaba T10J x 1
+- Futaba R3008SB Receiver  x 1
+- Arduino MKR ZERO x 1
+- DYNAMIXEL Shield MKR x 1
+- DYNAMIXEL-X x 7 
+
+[데모영상]()
+
+**참고**: 사용가능한 다이나믹셀의 개수는, 리시버의 채널개수에 따라 달라 질 수 있습니다.
+{: .notice}
+
+{% capture shield_01 %}
+**주의**: 예제에서 사용하는 Baudrate은 1,000,000 bps입니다. 다이나믹셀의 통신속도를 맞춰주세요.
+{% endcapture %}
+<div class="notice--warning">{{ shield_01 | markdownify }}</div>
+
 # [다운로드](#다운로드)
 
 - [다이나믹셀 쉴드 MKR 회로도(PDF)](https://www.robotis.com/service/download.php?no=1988)  
