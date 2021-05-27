@@ -300,16 +300,14 @@ Soft Start가 구현되어 있으며, Fail-Safe 동작을 통해 지정한 위�
 
 ![개요](/assets/images/parts/interface/mkr_shield/examples_rcpwm2dynamixel_diagram.png)
 
-본 예제는 `DYNAMIXEL Shield library`에 포함되어 있으며 **File > Examples > DynamixelShield > advanced > can2dynamixel**에서 찾을 수 있습니다.
+본 예제는 `DYNAMIXEL Shield library`에 포함되어 있으며 **File > Examples > DynamixelShield > advanced > rc_pwm2dynamixel**에서 찾을 수 있습니다.
 
 사용된 예제의 테스트 환경은 다음과 같습니다. 리시버 및 조종기는 관계없이 사용가능합니다.
 - Futaba T10J x 1
 - Futaba R3008SB Receiver  x 1
 - 아두이노 MKR ZERO x 1
 - 다이나믹셀 쉴드 MKR x 1
-- 다이나믹셀 X 시리즈 (ID: 1 ~ 7 ) x 7
-
-[데모영상]()
+- 다이나믹셀 X 시리즈 x 7
 
 **참고**: 사용가능한 다이나믹셀의 개수는, 리시버의 채널개수에 따라 달라질 수 있습니다.
 {: .notice}
