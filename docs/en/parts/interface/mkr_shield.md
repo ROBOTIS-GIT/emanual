@@ -260,6 +260,25 @@ The Remote Controller class can be used with the Arduino MKR boards by enabling 
 
 CAN2DYNAMIXEL converts CAN based DYNAMIXEL Protocol into DYNAMIXEL Protocol 2.0.
 
+The test environment for this example is as below.
+
+- DYNAMIXEL
+  - TTL supported X series (except XL-320)
+  - ID = 1, Baudrate = 1000000bps, Protocol 2.0
+- Controller
+  - Arduino MKR WAN 1300
+  - DYNAMIXEL Shield for Arduino MKR
+  - MKR CAN Shield
+- CAN Interface
+  - IXXAT USB-to-CAN V2
+- CAN Library
+  - 107-Arduino-MCP2515
+- Software
+  - IXXAT canAnalyser3 Mini
+  - Bitrate = 1000CiA (1000 kbit/s)
+  - Arduino IDE
+  - DYNAMIXEL Shield library
+
 ![](/assets/images/parts/interface/mkr_shield/examples_can2dynamixel_diagram.jpg)
 
 The `CAN Standard Protocol 2.0` used in this example is shown as below.
@@ -279,7 +298,7 @@ The Transmit section of IXXAT canAnalyser3 Mini software requires `ID (hex)` and
 
 ![](/assets/images/parts/interface/mkr_shield/can2dynamixel_ixxat_cananalyser3_mini_example.png)
 
-The example is included in the `DYNAMIXEL Shield library` and can be found from **File > Examples > DynamixelShield > advanced > can2dynamixel**.
+The example is included in the `DYNAMIXEL Shield library` and can be found at **File > Examples > DynamixelShield > advanced > can2dynamixel** from Arduino IDE.
 
 CAN shield board with MCP2515 is required and 107-Arduino-MCP2515 library can be installed via Library Manager of Arduino IDE.
 

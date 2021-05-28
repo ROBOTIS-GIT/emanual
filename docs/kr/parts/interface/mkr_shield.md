@@ -262,9 +262,28 @@ Remote Controller 클래스는 아두이노 MKR 제어기의 SoftwareSerial 기�
 
 CAN2DYNAMIXEL는 CAN 기반의 다이나믹셀 프로토콜을 다이나믹셀 프로토콜 2.0으로 변환하는 예제입니다.
 
+예제 테스트에 사용된 환경은 아래와 같습니다.
+
+- DYNAMIXEL
+  - TTL 통신이 지원되는 X 시리즈 (XL-320 제외)
+  - ID = 1, Baudrate = 1000000bps, Protocol 2.0
+- Controller
+  - Arduino MKR WAN 1300
+  - DYNAMIXEL Shield for Arduino MKR
+  - MKR CAN Shield
+- CAN Interface
+  - IXXAT USB-to-CAN V2
+- CAN Library
+  - 107-Arduino-MCP2515
+- Software
+  - IXXAT canAnalyser3 Mini
+  - Bitrate = 1000CiA (1000 kbit/s)
+  - Arduino IDE
+  - 다이나믹셀 쉴드 라이브러리
+
 ![](/assets/images/parts/interface/mkr_shield/examples_can2dynamixel_diagram.jpg)
 
-이 예제에서는 아래와 같은 구조의 `CAN Standard Protocol 2.0`이 사용되었습니다..
+이 예제에서는 아래와 같은 구조의 `CAN Standard Protocol 2.0`이 사용되었습니다.
 
 | 1 Bit | 11 Bit | 1 Bit | 1 Bit | 1 Bit |  4 Bit  |  8 Byte  | 2 Byte | 2 Bit | 7 Bit | 3 Bit |
 |:-----:|:------:|:-----:|:-----:|:-----:|:-------:|:--------:|:------:|:-----:|:-----:|:-----:|
@@ -281,7 +300,7 @@ IXXAT canAnalyser3 Mini 프로그램의 Transmit 부분에서는 아래와 같�
 
 ![](/assets/images/parts/interface/mkr_shield/can2dynamixel_ixxat_cananalyser3_mini_example.png)
 
-본 예제는 `DYNAMIXEL Shield library`에 포함되어 있으며 **File > Examples > DynamixelShield > advanced > can2dynamixel**에서 찾을 수 있습니다.
+본 예제는 `DYNAMIXEL Shield library`에 포함되어 있으며 Arduino IDE의 **File > Examples > DynamixelShield > advanced > can2dynamixel**에서 찾을 수 있습니다.
 
 MCP2515를 사용하는 CAN shield board를 사용해야 하며, 107-Arduino-MCP2515 라이브러리는 아두이노 IDE의 Library Manager에서 검색 후 설치할 수 있습니다.
 
@@ -294,27 +313,38 @@ MCP2515를 사용하는 CAN shield board를 사용해야 하며, 107-Arduino-MCP
 
 ## [RCPWM2DYNAMIXEL](#rcpwm2dynamixel)
 
-RCPWM2DYNAMIXEL은 RC 리시버로 부터 전달된 PWM 신호를 변환하여 다이나믹셀을 제어하기 위한 예제입니다. 
+RCPWM2DYNAMIXEL은 다이나믹셀을 RC로 제어하는 예제입니다.  
+RC 조종기에서 송신된 명령어가 RC 수신기에서 PWM 신호로 출력되면 MKR 제어기에서 이를 다이나믹셀 프로토콜 2.0으로 변환합니다.
 
-Soft Start가 구현되어 있으며, Fail-Safe 동작을 통해 지정한 위치로 다이나믹셀을 이동 시킬 수 있습니다. 
+RC 수신기의 전원 인가시 갑작스러운 움직임으로 인한 사고를 방지하기 위한 `Soft Start` 기능과, RC 수신기의 전원이 차단되었을 때 안전한 위치로 다이나믹셀을 이동시키는 `Fail Safe` 기능이 구현되어 있습니다.
 
 ![개요](/assets/images/parts/interface/mkr_shield/examples_rcpwm2dynamixel_diagram.png)
 
-본 예제는 `DYNAMIXEL Shield library`에 포함되어 있으며 **File > Examples > DynamixelShield > advanced > can2dynamixel**에서 찾을 수 있습니다.
+RC 수신기와 DYNAMIXEL Shield MKR은 아래와 같이 연결할 수 있습니다.
 
-사용된 예제의 테스트 환경은 다음과 같습니다. 리시버 및 조종기는 관계없이 사용가능합니다.
-- Futaba T10J x 1
-- Futaba R3008SB Receiver  x 1
-- 아두이노 MKR ZERO x 1
-- 다이나믹셀 쉴드 MKR x 1
-- 다이나믹셀 X 시리즈 (ID: 1 ~ 7 ) x 7
+![connection_diagram](/assets/images/parts/interface/mkr_shield/connection_diagram.jpg)
 
-[데모영상]()
+예제 테스트에 사용된 환경은 아래와 같습니다.
 
-**참고**: 사용가능한 다이나믹셀의 개수는, 리시버의 채널개수에 따라 달라질 수 있습니다.
+- DYNAMIXEL
+  - TTL 통신이 지원되는 X 시리즈 (XL-320 제외)
+  - ID = 1 ~ 7, Baudrate = 1000000bps, Protocol 2.0
+- Controller
+  - Arduino MKR Zero
+  - DYNAMIXEL Shield for Arduino MKR
+  - Futaba T10J 조종기
+- RC Interface
+  - Futaba R3008SB 수신기
+- Software
+  - Arduino IDE
+  - 다이나믹셀 쉴드 라이브러리
+
+본 예제는 `DYNAMIXEL Shield library`에 포함되어 있으며 Arduino IDE의 **File > Examples > DynamixelShield > advanced > can2dynamixel**에서 찾을 수 있습니다.
+
+**참고**: 사용가능한 다이나믹셀의 개수는 수신기와 아두이노 제어기의 입력 가능한 채널개수에 따라 달라질 수 있습니다.
 {: .notice}
 
-**주의**: 예제에서 사용하는 Baudrate은 1,000,000 bps입니다. 다이나믹셀의 통신속도를 맞춰주세요.
+**주의**: 다이나믹셀 X 시리즈의 기본 통신속도는 57600 bps이며, 예제에서 사용하는 Baudrate은 1000000 bps입니다. 다이나믹셀과 예제의 통신속도를 동일하게 설정하시기 바랍니다.
 {: .notice--warning}
 
 # [다운로드](#다운로드)
