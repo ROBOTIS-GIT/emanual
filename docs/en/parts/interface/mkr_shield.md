@@ -41,7 +41,7 @@ Please refer to [DYNAMIXEL Shield Libraries](#dynamixel-shield-libraries) sectio
 # [Specifications](#specifications)
 
 |             Item             | Details                                                                                                                                                       |
-| :--------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|:----------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | VIN(DXL) Voltage<sup>1</sup> | 3.5 ~ 24 [V]                                                                                                                                                  |
 |    Operating Temperature     | -10 ~ +80 [&deg;C]                                                                                                                                            |
 |    Connectors<sup>2</sup>    | JST([S3B-EH]), Molex([5268-02A])<br>Battery Connector<sup>3</sup>([SMW250-02])<br>Terminal Block([DG350-3.5-02P-14])                                          |
@@ -60,7 +60,7 @@ Please refer to [DYNAMIXEL Shield Libraries](#dynamixel-shield-libraries) sectio
 DYNAMIXEL Shield MKR only supports `TTL` based DYNAMIXEL lineups.
 
 | DYNAMIXEL Series |                                                 |                                                        |                                     |
-| :--------------: | :---------------------------------------------- | :----------------------------------------------------- | :---------------------------------- |
+|:----------------:|:------------------------------------------------|:-------------------------------------------------------|:------------------------------------|
 |      **AX**      | [AX-12W]<br/>[AX-12+/12A]<br/>[AX-18F/18A]      |                                                        |                                     |
 |      **MX**      | [MX-12W]<br/>[MX-28T/AT]<br/> [MX-28T/AT(2.0)]  | [MX-64T/AT]<br/> [MX-64T/AT(2.0)]                      | [MX-106T/AT]<br/> [MX-106T/AT(2.0)] |
 |      **XL**      | [XL-320]<br/>[XL330-M077-T]<br/> [XL330-M288-T] | [XL430-W250-T]<br/>[2XL430-W250-T]                     |                                     |
@@ -91,7 +91,7 @@ DYNAMIXEL Shield MKR Schematics can be downloaded in the link below.
 > The DYNAMIXEL Shield MKR header pinout is based on the Aruduino MKR boards.
 
 |        Item        |                                       Description                                       |
-| :----------------: | :-------------------------------------------------------------------------------------: |
+|:------------------:|:---------------------------------------------------------------------------------------:|
 | DYNAMIXEL TTL Port |                                 TTL DYNAMIXEL supported                                 |
 |      VIN(DXL)      | External power input for DYNAMIXEL only. Cannot provide power to the ARduino MKR boards |
 |  +5V<sup>1</sup>   |                 5V from Arduino MKR boards to supply power to DYNAMIXEL                 |
@@ -105,7 +105,7 @@ DYNAMIXEL Shield MKR Schematics can be downloaded in the link below.
 > Arduino MKR board pinout example. Please refer to each product in [Arduino Products](https://www.arduino.cc/en/Main/Products) for more details.
 
 | Pin No. | Pin Name | Description                                                                            |
-| :-----: | :------: | :------------------------------------------------------------------------------------- |
+|:-------:|:--------:|:---------------------------------------------------------------------------------------|
 |   13    |    RX    | Hardware serial port to receive data from DYNAMIXEL                                    |
 |   14    |    TX    | Hardware serial port to transmit data to DYNAMIXEL                                     |
 | 21(A6)  |  TX_EN   | Flow control of DYNAMIXEL data BUS<br />- **HIGH** : Transmit<br />- **LOW** : Receive |
@@ -144,7 +144,7 @@ After uploading the program, 1 cell Lithium battery(3.7V) can be used to power t
 # [Power Select Jumper](#power-select-jumper)
 
 |                                                              Use VIN(DXL) from external power source(SMPS)                                                               |                                                                                  Use +5V from Arduino MKR                                                                                  |
-| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 |                                                     ![](/assets/images/parts/interface/mkr_shield/select_vindxl.png)                                                     |                                                                ![](/assets/images/parts/interface/mkr_shield/select_5v.png)                                                                |
 | When using `VIN(DXL)` from external power source, please be aware of the polarity of terminal block. **Additional power source for Arduino MKR board will be required.** | When using `+5V` from Arduino MKR, be aware that some Arduino MKR board has a built in fuse that prevents excessive use of 5V power. Please refer to each Arduino MKR board specification. |
 
@@ -260,8 +260,40 @@ The Remote Controller class can be used with the Arduino MKR boards by enabling 
 
 CAN2DYNAMIXEL converts CAN based DYNAMIXEL Protocol into DYNAMIXEL Protocol 2.0.
 
+CAN shield board with MCP2515 is required and `107-Arduino-MCP2515` library can be installed via Library Manager of Arduino IDE.
+
+### Download
+The example is included in the `DYNAMIXEL Shield library` and can be found at **File > Examples > DynamixelShield > advanced > can2dynamixel** from Arduino IDE.
+
+### Tested Environment
+- DYNAMIXEL
+  - TTL supported X series (except XL-320)
+  - ID = 1, Baudrate = 1000000bps, Protocol 2.0
+- Controller
+  - Arduino MKR WAN 1300
+  - DYNAMIXEL Shield for Arduino MKR
+  - MKR CAN Shield
+- CAN Interface
+  - IXXAT USB-to-CAN V2
+- CAN Library
+  - 107-Arduino-MCP2515
+- Software
+  - IXXAT canAnalyser3 Mini
+  - Bitrate = 1000CiA (1000 kbit/s)
+  - Arduino IDE
+  - DYNAMIXEL Shield library
+
+{% capture shield_01 %}
+**WARNING**  
+- This example uses 1,000,000 bps. Please configure the Baudrate of DYNAMIXEL accordingly.
+- Do not use a Baudrate higher than 1,000,000 bps as it may cause unstable data transmission.
+{% endcapture %}
+<div class="notice--warning">{{ shield_01 | markdownify }}</div>
+
+### Connection Diagram
 ![](/assets/images/parts/interface/mkr_shield/examples_can2dynamixel_diagram.jpg)
 
+### Additional Information
 The `CAN Standard Protocol 2.0` used in this example is shown as below.
 
 | 1 Bit | 11 Bit | 1 Bit | 1 Bit | 1 Bit |  4 Bit  |  8 Byte  | 2 Byte | 2 Bit | 7 Bit | 3 Bit |
@@ -279,16 +311,43 @@ The Transmit section of IXXAT canAnalyser3 Mini software requires `ID (hex)` and
 
 ![](/assets/images/parts/interface/mkr_shield/can2dynamixel_ixxat_cananalyser3_mini_example.png)
 
-The example is included in the `DYNAMIXEL Shield library` and can be found from **File > Examples > DynamixelShield > advanced > can2dynamixel**.
+## [RCPWM2DYNAMIXEL](#rcpwm2dynamixel)
 
-CAN shield board with MCP2515 is required and 107-Arduino-MCP2515 library can be installed via Library Manager of Arduino IDE.
+RCPWM2DYNAMIXEL is the example to control DYNAMIXEL using RC controller.  
+The RC signal sent from the RC controller is translated into PWM signal by the RC receiver, then converted into DYNAMIXEL Protocol 2.0 by the Arduino MKR board.
 
-{% capture shield_01 %}
-**WARNING**  
-- This example uses 1,000,000 bps. Please configure the Baudrate of DYNAMIXEL accordingly.
-- Do not use a Baudrate higher than 1,000,000 bps as it may cause unstable data transmission.
-{% endcapture %}
-<div class="notice--warning">{{ shield_01 | markdownify }}</div>
+The example provides a couple safety features such as `Soft Start` that prevents sudden movement of DYNAMIXEL when the RC receiver is powered, and `Fail Safe` that returns DYNAMIXEL to certain position when the power of the RC receiver is cut off.
+
+### Download
+The example is included in the `DYNAMIXEL Shield library` and can be found from **File > Examples > DynamixelShield > advanced > rc_pwm2dynamixel**
+
+### Tested Environment
+- DYNAMIXEL
+  - TTL supported X series (except XL-320)
+  - ID = 1 ~ 7, Baudrate = 1000000bps, Protocol 2.0
+- Controller
+  - Arduino MKR Zero
+  - DYNAMIXEL Shield for Arduino MKR
+  - Futaba T10J controller
+- RC Interface
+  - Futaba R3008SB receiver
+- Software
+  - Arduino IDE
+  - DYNAMIXEL Shield library
+
+**NOTE**: The maximum number of DYNAMIXEL depends on the number of channel supported by the RC receiver and the Arduino controller.
+{: .notice}
+
+**WARNING**: The default baudrate of DYNAMIXEL X series is set to 57600 bps, and the example uses 1000000 bps.  
+Please match the baudrate of DYNAMIXEL and the examplel code.
+{: .notice--warning}
+### Connection Diagram
+![](/assets/images/parts/interface/mkr_shield/examples_rcpwm2dynamixel_diagram.png)
+
+### Wiring
+The RC receiver and the DYNAMIXEL Shield MKR can be connected as below.
+
+![connection_diagram](/assets/images/parts/interface/mkr_shield/connection_diagram.jpg)
 
 # [Download](#download)
 

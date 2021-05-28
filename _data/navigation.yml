@@ -23452,6 +23452,15 @@ mkr_shield:
     titlekr: "예제"
     url: /parts/interface/mkr_shield/#examples
     urlkr: /parts/interface/mkr_shield/#예제
+    children:
+    - title: "CAN2DYNAMIXEL"
+      titlekr: "CAN2DYNAMIXEL"
+      url: /parts/interface/mkr_shield/#can2dynamixel
+      urlkr: /parts/interface/mkr_shield/#can2dynamixel
+    - title: "RCPWM2DYNAMIXEL"
+      titlekr: "RCPWM2DYNAMIXEL"
+      url: /parts/interface/mkr_shield/#rcpwm2dynamixel
+      urlkr: /parts/interface/mkr_shield/#rcpwm2dynamixel
   - title: "Download"
     titlekr: "다운로드"
     url: /parts/interface/mkr_shield/#download
