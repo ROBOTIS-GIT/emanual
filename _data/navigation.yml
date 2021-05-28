@@ -17429,27 +17429,27 @@ turtlebot3:
         url: /platform/turtlebot3/autonomous_driving/#intrinsic-camera-calibration
       - title: "Extrinsic Camera Calibration"
         url: /platform/turtlebot3/autonomous_driving/#extrinsic-camera-calibration
-      - title: "Settings for Recognition"
-        url: /platform/turtlebot3/autonomous_driving/#settings-for-recognition
+      - title: "Check Calibration Result"
+        url: /platform/turtlebot3/autonomous_driving/#check-calibration-result
     - title: "Lane Detection"
       url: /platform/turtlebot3/autonomous_driving/#lane-detection
     - title: "Traffic Sign Detection"
       url: /platform/turtlebot3/autonomous_driving/#traffic-sign-detection
-    - title: "TurtleBot3 AutoRace 2020"
-      url: /platform/turtlebot3/autonomous_driving/#turtlebot3-autorace-2020
+    - title: "Missions"
+      url: /platform/turtlebot3/autonomous_driving/#missions
       children:
-      - title: "Mission 1: Traffic Lights"
-        url: /platform/turtlebot3/autonomous_driving/#mission-1-traffic-lights
-      - title: "Mission 2: Intersection"
-        url: /platform/turtlebot3/autonomous_driving/#mission-2-intersection
-      - title: "Mission 3: Construction"
-        url: /platform/turtlebot3/autonomous_driving/#mission-3-construction
-      - title: "Mission 4: Parking"
-        url: /platform/turtlebot3/autonomous_driving/#mission-4-parking
-      - title: "Mission 5: Level Crossing"
-        url: /platform/turtlebot3/autonomous_driving/#mission-5-level-crossing
-      - title: "Mission 6: Tunnel"
-        url: /platform/turtlebot3/autonomous_driving/#mission-6-tunnel
+      - title: "Traffic Lights"
+        url: /platform/turtlebot3/autonomous_driving/#traffic-lights
+      - title: "Intersection"
+        url: /platform/turtlebot3/autonomous_driving/#intersection
+      - title: "Construction"
+        url: /platform/turtlebot3/autonomous_driving/#construction
+      - title: "Parking"
+        url: /platform/turtlebot3/autonomous_driving/#parking
+      - title: "Level Crossing"
+        url: /platform/turtlebot3/autonomous_driving/#level-crossing
+      - title: "Tunnel"
+        url: /platform/turtlebot3/autonomous_driving/#tunnel
     - title: "TurtleBot3 AutoRace 2019"
       url: /platform/turtlebot3/autonomous_driving_autorace/
   - title: "Machine Learning"

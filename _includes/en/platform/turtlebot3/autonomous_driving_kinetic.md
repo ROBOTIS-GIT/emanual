@@ -1,4 +1,5 @@
 
+![](/assets/images/platform/turtlebot3/autonomous_driving/autorace_rbiz_challenge_2017_robots_1.png)
 ## Getting Started
 
 {% capture notice_01 %}
@@ -224,7 +225,7 @@ $ rosrun rqt_reconfigure rqt_reconfigure
 
   > Result from parameter modification.
 
-### [Settings for Recognition](#settings-for-recognition)
+### [Check Calibration Result](#check-calibration-result)
 
 When you complete all the camera calibration (Camera Imaging Calibration, Intrinsic Calibration, Extrinsic Calibration), be sure that the calibration is successfully applied to the camera.  
 The following instruction describes settings for recognition.
@@ -401,9 +402,7 @@ $ rqt_image_view
 
 9. Select `/detect/image_traffic_sign/compressed` topic in the select box. A screen will show the result of traffic sign detection.
 
-## [TurtleBot3 AutoRace 2020](#turtlebot3-autorace-2020)
-
-![](/assets/images/platform/turtlebot3/autonomous_driving/autorace_rbiz_challenge_2017_robots_1.png)
+## [Missions](#missions)
 
 The AutoRace is a competition for autonomous driving robot platforms.  
 To provide various conditions for a robot application development, the game provide structural regulation as less as possible. Provided open sources are based on ROS, and can be applied to this competition. The contents can be continually updated. Join the competition and show your skill.
@@ -411,13 +410,13 @@ To provide various conditions for a robot application development, the game prov
 **WARNING**: Be sure to read [Autonomous Driving](#autonomous-driving) in order to start missions.
 {: .notice--warning}
 
-### [Mission 1: Traffic Lights](#mission-1-traffic-lights)
+### [Traffic Lights](#traffic-lights)
 
 Traffic Light is the first mission of AutoRace. TurtleBot3 recognizes the traffic lights and starts the course.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/JNj_STs3OSg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-#### [Camera Calibration for Traffic Lights](#camera-calibration-for-traffic-lights)
+#### [Traffic Lights Detection](#traffic-lights-detection)
 
 1. Open terminal and use the command on `Remote PC`.
 ```bash
@@ -458,7 +457,7 @@ $ rqt_image_view
 
 11. See traffic light calibration is successfully applied.
 
-#### [Run Traffic Light Mission](#run-traffic-light-mission)
+#### [How to Run Traffic Light Mission](#how-to-run-traffic-light-mission)
 
 **WARNING**: Be sure to read [Camera Calibration for Traffic Lights](#camera-calibration-for-traffic-lights) before running the traffic light node.  
 {: .notice--warning}
@@ -482,7 +481,7 @@ $ roslaunch turtlebot3_autorace_traffic_light_core turtlebot3_autorace_core.laun
 $ rostopic pub -1 /core/decided_mode std_msgs/UInt8 "data: 3"
 ```
 
-### [Mission 2: Intersection](#mission-2-intersection)
+### [Intersection](#intersection)
 
 Intersection is the second mission of AutoRace. TurtleBot3 detects a specific traffic sign (such as a curve sign) at the intersection course, and go to the given direction.
 
@@ -508,7 +507,7 @@ $ roslaunch turtlebot3_autorace_intersection_core turtlebot3_autorace_core.launc
 $ rostopic pub -1 /core/decided_mode std_msgs/UInt8 "data: 2"
 ```
 
-### [Mission 3: Construction](#mission-3-construction)
+### [Construction](#construction)
 
 Construction is the third mission of AutoRace. TurtleBot3 avoids constructions on the track while it is driving.
 
@@ -535,7 +534,7 @@ $ roslaunch turtlebot3_autorace_construction_core turtlebot3_autorace_core.launc
 $ rostopic pub -1 /core/decided_mode std_msgs/UInt8 "data: 2"
 ```
 
-### [Mission 4: Parking](#mission-4-parking)
+### [Parking](#parking)
 
 Parking is the fourth mission of AutoRace. TurtleBot3 detects the parking sign, and park itself at a parking lot.
 
@@ -562,13 +561,13 @@ $ roslaunch turtlebot3_autorace_parking_core turtlebot3_autorace_core.launch
 $ rostopic pub -1 /core/decided_mode std_msgs/UInt8 "data: 2"
 ```
 
-### [Mission 5: Level Crossing](#mission-5-level-crossing)
+### [Level Crossing](#level-crossing)
 
 Level Crossing is the fifth mission of AutoRace. When TurtleBot3 encounters the level crossing, it stops driving, and wait until the level crossing opens.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xyBaLeg4Ifk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-#### [Camera Calibration for Level Crossing](#camera-calibration-for-level-crossing)
+#### [Level Crossing Detection](#level-crossing-detection)
 
 1. Use the command on `Remote PC`.
 ```bash
@@ -621,7 +620,7 @@ $ roslaunch turtlebot3_autorace_level_crossing_core turtlebot3_autorace_core.lau
 $ rostopic pub -1 /core/decided_mode std_msgs/UInt8 "data: 2"
 ```
 
-### [Mission 6: Tunnel](#mission-6-tunnel)
+### [Tunnel](#tunnel)
 
 Tunnel is the sixth mission of AutoRace. TurtleBot3 passes the tunnel successfully.
 
