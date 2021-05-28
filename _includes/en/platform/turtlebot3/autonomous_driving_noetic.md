@@ -89,14 +89,13 @@ $ rosrun rqt_reconfigure rqt_reconfigure
 
 9. After that, overwrite each values on to the yaml files in **turtlebot3_autorace_camera/calibration/extrinsic_calibration/.** This will save the current calibration parameters so that they can be loaded later.  
 
-![](/assets/images/platform/turtlebot3/autonomous_driving/noetic_compensation_yaml.png)
-> turtlebot3_autorace_camera/calibration/extrinsic_calibration/`compensation.yaml`
+      ![](/assets/images/platform/turtlebot3/autonomous_driving/noetic_compensation_yaml.png)
+      > turtlebot3_autorace_camera/calibration/extrinsic_calibration/`compensation.yaml`
 
-![](/assets/images/platform/turtlebot3/autonomous_driving/noetic_projection_yaml.png)  
-> turtlebot3_autorace_camera/calibration/extrinsic_calibration/`projection.yaml`
+      ![](/assets/images/platform/turtlebot3/autonomous_driving/noetic_projection_yaml.png)  
+      > turtlebot3_autorace_camera/calibration/extrinsic_calibration/`projection.yaml`
 
-
-### [Check Calibration Result](#check-calibration-result)
+ [Check Calibration Result](#check-calibration-result)
 
 After completing calibrations, run the step by step instructions below on `Remote PC` to check the calibration result.
 
@@ -306,6 +305,8 @@ To provide various conditions for a robot application development, the game prov
 
 Traffic Light is the first mission of AutoRace. TurtleBot3 recognizes the traffic lights and starts the course.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/d2cP8OTMbwI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 #### [Traffic Lights Detection](#traffic-lights-detection)
 
 **NOTE**: In order to fix the traffic ligth to a specific color in Gazebo, you may modify the controlMission method in the `core_node_mission` file in the ***turtlebot3_autorace_2020/turtlebot3_autorace_core/nodes/*** directory.
@@ -430,6 +431,8 @@ $ roslaunch turtlebot3_autorace_core turtlebot3_autorace_mission.launch
 
 Intersection is the second mission of AutoRace. TurtleBot3 must detect the directional sign at the intersection, and proceed to the directed path.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/F101PDx20nc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 #### [How to Run Intersection Mission](#how-to-run-intersection-mission)
 
 1. Close all terminals or terminate them with `Ctrl` + `C`
@@ -469,6 +472,8 @@ $ rostopic pub -1 /core/decided_mode std_msgs/UInt8 "data: 2"
 
 Construction is the third mission of TurtleBot3 AutoRace 2020. TurtleBot3 must avoid obstacles in the construction area.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pO9SXz7ad7M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 #### [How to Run Construction Mission](#how-to-run-construction-mission)
 
 1. Close all terminals or terminate them with `Ctrl` + `C`
@@ -502,6 +507,8 @@ $ rostopic pub -1 /core/decided_mode std_msgs/UInt8 "data: 2"
 ### [Parking](#parking)
 
 Parking is the fourth mission of TurtleBot3 AutoRace 2020. TurtleBot3 must detect the parking sign, and park at an empty parking spot.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZRuX_nYwohI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### [How to Run Parking Mission](#how-to-run-parking-mission)
 
@@ -542,6 +549,8 @@ $ rostopic pub -1 /core/decided_mode std_msgs/UInt8 "data: 2"
 
 Level Crossing is the fifth mission of TurtleBot3 AutoRace 2020. TurtleBot3 must detect the stop sign and wait until the crossing gate is lifted.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PMOYhx9kiDk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 #### [Level Crossing Detection](#level-crossing-detection)
 
 1. Close all terminals or terminate them with `Ctrl` + `C`
@@ -572,7 +581,7 @@ $ rqt
 ```
 
 7. Select two topics: `/detect/image_level_color_filtered/compressed`, `/detect/image_level/compressed`.
-![](/assets/images/platform/turtlebot3/autonomous_driving/noetic_detect_level.png)
+    ![](/assets/images/platform/turtlebot3/autonomous_driving/noetic_detect_level.png)
 
 8. Excute rqt_reconfigure.
 ```bash
@@ -583,7 +592,8 @@ $ rosrun rqt_reconfigure rqt_reconfigure
 ![](/assets/images/platform/turtlebot3/autonomous_driving/noetic_level_reconfigure.png)
 
 10. Open `level.yaml` file located at ***turtlebot3_autorace_detect/param/level/***.
-![](/assets/images/platform/turtlebot3/autonomous_driving/noetic_level_yaml.png)
+
+    ![](/assets/images/platform/turtlebot3/autonomous_driving/noetic_level_yaml.png)
 
 11. Write modified values to the file and save.
 
@@ -656,6 +666,8 @@ $ rostopic pub -1 /core/decided_mode std_msgs/UInt8 "data: 2"
 ### [Tunnel](#tunnel)
 
 Tunnel is the sixth mission of TurtleBot3 AutoRace 2020. TurtleBot3 must avoid obstacles in the unexplored tunnel and exit successfully.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Qx3vbgoSNO8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### [How to Run Tunnel Mission](#how-to-run-tunnel-mission)
 
