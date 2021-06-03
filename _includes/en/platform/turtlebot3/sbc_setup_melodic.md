@@ -92,6 +92,7 @@ If "No such file or directory" is returned, make sure the microSD is mounted to 
   b. Connect input devices to the USB port of Raspberry Pi.  
   c. Insert the microSD card.  
   d. Connect the power (either with USB or OpenCR) to turn on the Raspberry Pi.
+  e. Login with ID `ubuntu` and PASSWORD `turtlebot`.
 
 HDMI cable has to be connected before powering the Raspberry Pi, or else the HDMI port of the Raspberry Pi will be disabled.
 {: .notice--warning}
