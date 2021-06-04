@@ -90,7 +90,8 @@ If "No such file or directory" is returned, make sure the microSD is mounted to 
   a. Connect the HDMI cable of the monitor to the HDMI port of Raspberry Pi.  
   b. Connect input devices to the USB port of Raspberry Pi.  
   c. Insert the microSD card.  
-  d. Connect the power (either with USB or OpenCR) to turn on the Raspberry Pi.
+  d. Connect the power (either with USB or OpenCR) to turn on the Raspberry Pi.  
+  e. Login with ID `ubuntu` and PASSWORD `ubuntu`.
 
 HDMI cable has to be connected before powering the Raspberry Pi, or else the HDMI port of the Raspberry Pi will be disabled.
 {: .notice--warning}
