@@ -25,9 +25,9 @@ Kinetic version images use Raspberry Pi OS(Raspbian OS).
 
 - [![](/assets/images/icon_download.png) **Raspberry Pi 3B+** ROS1 Kinetic image](http://www.robotis.com/service/download.php?no=1738){: .blank}
   - **SHA256** : eb8173f3727db08087990b2c4e2bb211e70bd54644644834771fc8b971856b97
-- [![](/assets/images/icon_download.png) **Raspberry Pi 4B (2GB or 4GB)** ROS1 Kinetic image](https://www.robotis.com/service/download.php?no=1905){: .blank}
-  - **SHA256** : 73546c63d3056bfc5538acc187f54dab6c1601096df320e60e0842bcb1b03d34
-  - Please note that this image may not compatible with Raspberry Pi 4B with 8GB RAM.
+
+Raspberry Pi 4 does not support Ubuntu 16.04 nor Debian Jessie, therefore, ROS1 Kinetic is not available for Raspberry Pi 4.
+{: .notice--warning}
 
 The recovery image files can be modified without a prior notice.
 {: .notice}
@@ -81,6 +81,9 @@ Intel Joule is discontinued in 2017, and additional support is unavailable.
 4. Connect the power (either with USB or OpenCR) to turn on the Raspberry Pi.
 
 ### Configure the Raspberry Pi
+
+{% include en/platform/turtlebot3/ros_gpg_key_expiration_incident.md %}
+
 1. After Raspbian OS is up and running, connect to the WiFi network that is connected with the PC.
 2. Find the assigned IP address for Raspberry Pi with the command below. Usually wireless IP address for Raspberry Pi can be found under the `wlan0` section.
   ```bash

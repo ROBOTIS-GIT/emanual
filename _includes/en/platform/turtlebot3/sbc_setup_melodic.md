@@ -21,8 +21,15 @@ If you PC do not have a microSD slot, please use a microSD card reader to burn t
 Download the correct image file for your hardware and ROS version.  
 Melodic version images are created based on Ubuntu 18.04.  
 
-- [![](/assets/images/icon_download.png) **Raspberry Pi 3B+** ROS1 Melodic image](https://www.robotis.com/service/download.php?no=2011){: .blank}
+- [![](/assets/images/icon_download.png) **Raspberry Pi 3B+** ROS1 Melodic image(Ubuntu 18.04 based)](https://www.robotis.com/service/download.php?no=2011){: .blank}
   - **SHA256** : db992103968b8b4d439e60657e7beec4695f2d71f2ee4f0878f6d4b52e76993e
+
+- [![](/assets/images/icon_download.png) **Raspberry Pi 4B (2GB or 4GB)** ROS1 Melodic image(Raspberry Pi OS based)](https://www.robotis.com/service/download.php?no=1905){: .blank}
+  - **SHA256** : 73546c63d3056bfc5538acc187f54dab6c1601096df320e60e0842bcb1b03d34
+  - Please note that this image may not compatible with Raspberry Pi 4B with 8GB RAM.
+
+For setting up the Raspberry Pi 4 with the Raspberry Pi 4 image, please refer to the SBC Setup instructions of the Kinetic.
+{: .notice--warning}
 
 The recovery image files can be modified without a prior notice.
 {: .notice}
@@ -73,6 +80,9 @@ Please resize the partition to use the unallocated space.
 6. Click the `Apply All Operations` green check button at the top.
 
 ### Configure the WiFi Network Setting
+
+{% include en/platform/turtlebot3/ros_gpg_key_expiration_incident.md %}
+
 1. Open a terminal window with `Alt`+`Ctrl`+`T` and go to the netplan directory in the microSD card.  
 Start editing the `50-cloud-init.yaml` file with a superuser permission `sudo`.  
 ```bash
@@ -260,4 +270,3 @@ Please refer to the Ubuntu Blog below for more useful information.
 - [How to set up TurtleBot3 Waffle Pi in minutes with Snaps](https://ubuntu.com/blog/how-to-set-up-turtlebot3-in-minutes-with-snaps)
 {% endcapture %}
 <div class="notice--success">{{ ubuntu_blog | markdownify }}</div>
-
