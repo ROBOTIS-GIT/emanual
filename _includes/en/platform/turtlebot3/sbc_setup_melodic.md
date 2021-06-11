@@ -80,6 +80,9 @@ Please resize the partition to use the unallocated space.
 6. Click the `Apply All Operations` green check button at the top.
 
 ### Configure the WiFi Network Setting
+
+{% include en/platform/turtlebot3/ros_gpg_key_expiration_incident.md %}
+
 1. Open a terminal window with `Alt`+`Ctrl`+`T` and go to the netplan directory in the microSD card.  
 Start editing the `50-cloud-init.yaml` file with a superuser permission `sudo`.  
 ```bash
@@ -267,4 +270,3 @@ Please refer to the Ubuntu Blog below for more useful information.
 - [How to set up TurtleBot3 Waffle Pi in minutes with Snaps](https://ubuntu.com/blog/how-to-set-up-turtlebot3-in-minutes-with-snaps)
 {% endcapture %}
 <div class="notice--success">{{ ubuntu_blog | markdownify }}</div>
-

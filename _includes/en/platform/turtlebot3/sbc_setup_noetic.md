@@ -97,6 +97,9 @@ HDMI cable has to be connected before powering the Raspberry Pi, or else the HDM
 {: .notice--warning}
 
 ### ROS1 Network Configuration
+
+{% include en/platform/turtlebot3/ros_gpg_key_expiration_incident.md %}
+
 Please follow the instructions below on the **SBC (Raspberry Pi 3B+)**.
 1. Confirm the WiFi IP address.
   ```bash
@@ -259,4 +262,3 @@ Please refer to the Ubuntu Blog below for more useful information.
 - [How to set up TurtleBot3 Waffle Pi in minutes with Snaps](https://ubuntu.com/blog/how-to-set-up-turtlebot3-in-minutes-with-snaps)
 {% endcapture %}
 <div class="notice--success">{{ ubuntu_blog | markdownify }}</div>
-

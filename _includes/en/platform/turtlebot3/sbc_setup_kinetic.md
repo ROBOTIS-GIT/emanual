@@ -81,6 +81,9 @@ Intel Joule is discontinued in 2017, and additional support is unavailable.
 4. Connect the power (either with USB or OpenCR) to turn on the Raspberry Pi.
 
 ### Configure the Raspberry Pi
+
+{% include en/platform/turtlebot3/ros_gpg_key_expiration_incident.md %}
+
 1. After Raspbian OS is up and running, connect to the WiFi network that is connected with the PC.
 2. Find the assigned IP address for Raspberry Pi with the command below. Usually wireless IP address for Raspberry Pi can be found under the `wlan0` section.
   ```bash
