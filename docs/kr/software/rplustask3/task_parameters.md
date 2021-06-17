@@ -169,6 +169,12 @@ R+ Task 3.0에서 사용하는 파라미터를 설명합니다. 각 장치에 �
 키프레임, 모션유닛, 모션에 대한 정보는 [모션 프로그래밍](/docs/kr/software/rplustask3/motion_programming/#모션-프로그래밍)을 참조하세요.
 {: .notice}
 
+#### 모션 연결
+
+현재 모션 이후, 실행될 모션을 지정합니다. 현재 모션과 다음 실행 모션을 자연스럽게 연결할 수 있습니다.
+
+![Motion_Link](/assets/images/sw/rplus_task3_kr/Motion_Next_Page_kr.png)
+
 #### 모션 상태
 모션이 실행되고 있으면 True, 모션이 실행되고 있지 않으면 False값을 반환합니다.
 - 아래는 모션 상태를 이용하여 모션이 종료될 때까지 대기하는 예제입니다.  

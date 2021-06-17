@@ -189,6 +189,12 @@ The following is an example of using the Motion Index Number.
 The more information on Key-Frame, Motion Unit and Motion is avilable at [Motion Programming](/docs/en/software/rplustask3/motion_programming/#motion-programming)
 {: .notice}
 
+#### Motion Next Page
+
+Assin a next motion unit to the current running motion unit. The Motion Next Page can be used to link two motions for seamless motion flow.
+
+![Motion_Link](/assets/images/sw/rplus_task3/Motion_Next_Page.png)
+
 #### Motion Status
 Returns True if motion is being executed, returns False if motion is not being executed.
 
