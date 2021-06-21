@@ -170,6 +170,8 @@ Reads the output value of the user-created sensor.
 - This section describes specific parameters for executing motions downloaded on controller via R+ Motion.
 - Only specific controllers support motion control. (Supported controllers : [CM-200], [CM-5], [CM-510], [CM-530], [CM-550], [CM-700], [OpenCM 9.04])
 
+![](/assets/images/sw/rplus_task3/motion_control_tab_menu.png)
+
 #### Motion Index Number
 Executes a motion by calling the corresponding Motion Index Number. If the Motion is being executed, you can read the current Motion Index Number.
 
