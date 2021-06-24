@@ -71,6 +71,7 @@
 
 <!--Common Links -->
 
+[Compatibility Guide]: http://en.robotis.com/service/compatibility_table.php?cate=dx
 [Alert Bit(0x80)]: /docs/en/dxl/protocol2/#error 
 [Harness Compatibility]: /docs/en/popup/cable_compatibility/
 [Protocol 1.0]: /docs/en/dxl/protocol1/#status-packet
