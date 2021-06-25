@@ -7607,28 +7607,61 @@ xm540-w150:
     url: /dxl/x/xm540-w150/#how-to-assemble
     urlkr: /dxl/x/xm540-w150/#조립-예시
     children:
-      - title: "Wiring through Back Case"
-        titlekr: "배선 예시"
-        url: /dxl/x/xm540-w150/#wiring-through-back-case
-        urlkr: /dxl/x/xm540-w150/#배선-예시
-      - title: "Option Frame Assembly"
-        titlekr: "옵션프레임 조립"
-        url: /dxl/x/xm540-w150/#option-frame-assembly
-        urlkr: /dxl/x/xm540-w150/#옵션프레임-조립
-  - title: "Maintenance"
-    titlekr: "유지보수"
-    url: /dxl/x/xm540-w150/#maintenance
-    urlkr: /dxl/x/xm540-w150/#유지보수
-    children:
-      - title: "Horn, Gear Replacement"
-        titlekr: "혼과 기어 교체"
-        url: /dxl/x/xm540-w150/#horn-and-gear-replacement
-        urlkr: /dxl/x/xm540-w150/#혼과-기어-교체
+      - title: "Horn Assembly"
+        titlekr: "혼 조립하기"
+        url: /dxl/x/xm540-w150/#horn-assembly
+        urlkr: /dxl/x/xm540-w150/#혼-조립하기
+        children:
+          - title: "Normal Horn Assembly"
+            titlekr: "노멀 혼 조립하기"
+            url: /dxl/x/xm540-w150/#normal-horn-assembly
+            urlkr: /dxl/x/xm540-w150/#노멀-혼-조립하기
+          - title: "Idler Horn Assembly"
+            titlekr: "아이들러 혼 조립하기"
+            url: /dxl/x/xm540-w150/#idler-horn-assembly
+            urlkr: /dxl/x/xm540-w150/#아이들러-혼-조립하기            
+      - title: "Frame Assembly"
+        titlekr: "프레임 조립하기"
+        url: /dxl/x/xm540-w150/#frame-assembly
+        urlkr: /dxl/x/xm540-w150/#프레임-조립하기
+        children:
+          - title: "How To Use Spacer Ring"
+            titlekr: "스페이서 링 사용 방법"
+            url: /dxl/x/xm540-w150/#how-to-use-spacer-ring
+            urlkr: /dxl/x/xm540-w150/#스페이서-링-사용-방법
+          - title: "Precaution of Frame and Horn Assembly"
+            titlekr: "프레임과 혼 결합 시 주의 사항"
+            url: /dxl/x/xm540-w150/#precaution-of-frame-and-horn-assembly
+            urlkr: /dxl/x/xm540-w150/#프레임과-혼-결합-시-주의-사항    
+          - title: "Hinge Frame Assembly"
+            titlekr: "힌지 프레임 조립하기"
+            url: /dxl/x/xm540-w150/#hinge-frame-assembly
+            urlkr: /dxl/x/xm540-w150/#힌지-프레임-조립하기
+          - title: "Side Frame Assembly"
+            titlekr: "사이드 프레임 조립하기"
+            url: /dxl/x/xm540-w150/#side-frame-assembly
+            urlkr: /dxl/x/xm540-w150/#사이드-프레임-조립하기
+          - title: "Frame Combination"
+            titlekr: "프레임 활용 하기"
+            url: /dxl/x/xm540-w150/#frame-combination
+            urlkr: /dxl/x/xm540-w150/#프레임-활용-하기
+          - title: "Custom Frame Assembly"
+            titlekr: "기타 프레임 조립 예시"
+            url: /dxl/x/xm540-w150/#custom-frame-assembly
+            urlkr: /dxl/x/xm540-w150/#기타-프레임-조립-예시
+      - title: "Gear Replacement"
+        titlekr: "기어 교체하기"
+        url: /dxl/x/xm540-w150/#gear-replacement
+        urlkr: /dxl/x/xm540-w150/#기어-교체하기
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/x/xm540-w150/#reference
     urlkr: /dxl/x/xm540-w150/#참고자료
     children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xm540-w150/#wiring-through-back-case
+        urlkr: /dxl/x/xm540-w150/#배선-예시
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xm540-w150/#what-is-the-profile
@@ -7857,28 +7890,61 @@ xm540-w270:
     url: /dxl/x/xm540-w270/#how-to-assemble
     urlkr: /dxl/x/xm540-w270/#조립-예시
     children:
-      - title: "Wiring through Back Case"
-        titlekr: "배선 예시"
-        url: /dxl/x/xm540-w270/#wiring-through-back-case
-        urlkr: /dxl/x/xm540-w270/#배선-예시
-      - title: "Option Frame Assembly"
-        titlekr: "옵션프레임 조립"
-        url: /dxl/x/xm540-w270/#option-frame-assembly
-        urlkr: /dxl/x/xm540-w270/#옵션프레임-조립
-  - title: "Maintenance"
-    titlekr: "유지보수"
-    url: /dxl/x/xm540-w270/#maintenance
-    urlkr: /dxl/x/xm540-w270/#유지보수
-    children:
-      - title: "Horn, Gear Replacement"
-        titlekr: "혼과 기어 교체"
-        url: /dxl/x/xm540-w270/#horn-and-gear-replacement
-        urlkr: /dxl/x/xm540-w270/#혼과-기어-교체
+      - title: "Horn Assembly"
+        titlekr: "혼 조립하기"
+        url: /dxl/x/xm540-w270/#horn-assembly
+        urlkr: /dxl/x/xm540-w270/#혼-조립하기
+        children:
+          - title: "Normal Horn Assembly"
+            titlekr: "노멀 혼 조립하기"
+            url: /dxl/x/xm540-w270/#normal-horn-assembly
+            urlkr: /dxl/x/xm540-w270/#노멀-혼-조립하기
+          - title: "Idler Horn Assembly"
+            titlekr: "아이들러 혼 조립하기"
+            url: /dxl/x/xm540-w270/#idler-horn-assembly
+            urlkr: /dxl/x/xm540-w270/#아이들러-혼-조립하기            
+      - title: "Frame Assembly"
+        titlekr: "프레임 조립하기"
+        url: /dxl/x/xm540-w270/#frame-assembly
+        urlkr: /dxl/x/xm540-w270/#프레임-조립하기
+        children:
+          - title: "How To Use Spacer Ring"
+            titlekr: "스페이서 링 사용 방법"
+            url: /dxl/x/xm540-w270/#how-to-use-spacer-ring
+            urlkr: /dxl/x/xm540-w270/#스페이서-링-사용-방법
+          - title: "Precaution of Frame and Horn Assembly"
+            titlekr: "프레임과 혼 결합 시 주의 사항"
+            url: /dxl/x/xm540-w270/#precaution-of-frame-and-horn-assembly
+            urlkr: /dxl/x/xm540-w270/#프레임과-혼-결합-시-주의-사항    
+          - title: "Hinge Frame Assembly"
+            titlekr: "힌지 프레임 조립하기"
+            url: /dxl/x/xm540-w270/#hinge-frame-assembly
+            urlkr: /dxl/x/xm540-w270/#힌지-프레임-조립하기
+          - title: "Side Frame Assembly"
+            titlekr: "사이드 프레임 조립하기"
+            url: /dxl/x/xm540-w270/#side-frame-assembly
+            urlkr: /dxl/x/xm540-w270/#사이드-프레임-조립하기
+          - title: "Frame Combination"
+            titlekr: "프레임 활용 하기"
+            url: /dxl/x/xm540-w270/#frame-combination
+            urlkr: /dxl/x/xm540-w270/#프레임-활용-하기
+          - title: "Custom Frame Assembly"
+            titlekr: "기타 프레임 조립 예시"
+            url: /dxl/x/xm540-w270/#custom-frame-assembly
+            urlkr: /dxl/x/xm540-w270/#기타-프레임-조립-예시
+      - title: "Gear Replacement"
+        titlekr: "기어 교체하기"
+        url: /dxl/x/xm540-w270/#gear-replacement
+        urlkr: /dxl/x/xm540-w270/#기어-교체하기
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/x/xm540-w270/#reference
     urlkr: /dxl/x/xm540-w270/#참고자료
     children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xm540-w270/#wiring-through-back-case
+        urlkr: /dxl/x/xm540-w270/#배선-예시
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xm540-w270/#what-is-the-profile
@@ -8581,28 +8647,61 @@ xh540-w150:
     url: /dxl/x/xh540-w150/#how-to-assemble
     urlkr: /dxl/x/xh540-w150/#조립-예시
     children:
-      - title: "Wiring through Back Case"
-        titlekr: "배선 예시"
-        url: /dxl/x/xh540-w150/#wiring-through-back-case
-        urlkr: /dxl/x/xh540-w150/#배선-예시
-      - title: "Option Frame Assembly"
-        titlekr: "옵션프레임 조립"
-        url: /dxl/x/xh540-w150/#option-frame-assembly
-        urlkr: /dxl/x/xh540-w150/#옵션프레임-조립
-  - title: "Maintenance"
-    titlekr: "유지보수"
-    url: /dxl/x/xh540-w150/#maintenance
-    urlkr: /dxl/x/xh540-w150/#유지보수
-    children:
-      - title: "Horn, Gear Replacement"
-        titlekr: "혼과 기어 교체"
-        url: /dxl/x/xh540-w150/#horn-and-gear-replacement
-        urlkr: /dxl/x/xh540-w150/#혼과-기어-교체
+      - title: "Horn Assembly"
+        titlekr: "혼 조립하기"
+        url: /dxl/x/xh540-w150/#horn-assembly
+        urlkr: /dxl/x/xh540-w150/#혼-조립하기
+        children:
+          - title: "Normal Horn Assembly"
+            titlekr: "노멀 혼 조립하기"
+            url: /dxl/x/xh540-w150/#normal-horn-assembly
+            urlkr: /dxl/x/xh540-w150/#노멀-혼-조립하기
+          - title: "Idler Horn Assembly"
+            titlekr: "아이들러 혼 조립하기"
+            url: /dxl/x/xh540-w150/#idler-horn-assembly
+            urlkr: /dxl/x/xh540-w150/#아이들러-혼-조립하기            
+      - title: "Frame Assembly"
+        titlekr: "프레임 조립하기"
+        url: /dxl/x/xh540-w150/#frame-assembly
+        urlkr: /dxl/x/xh540-w150/#프레임-조립하기
+        children:
+          - title: "How To Use Spacer Ring"
+            titlekr: "스페이서 링 사용 방법"
+            url: /dxl/x/xh540-w150/#how-to-use-spacer-ring
+            urlkr: /dxl/x/xh540-w150/#스페이서-링-사용-방법
+          - title: "Precaution of Frame and Horn Assembly"
+            titlekr: "프레임과 혼 결합 시 주의 사항"
+            url: /dxl/x/xh540-w150/#precaution-of-frame-and-horn-assembly
+            urlkr: /dxl/x/xh540-w150/#프레임과-혼-결합-시-주의-사항    
+          - title: "Hinge Frame Assembly"
+            titlekr: "힌지 프레임 조립하기"
+            url: /dxl/x/xh540-w150/#hinge-frame-assembly
+            urlkr: /dxl/x/xh540-w150/#힌지-프레임-조립하기
+          - title: "Side Frame Assembly"
+            titlekr: "사이드 프레임 조립하기"
+            url: /dxl/x/xh540-w150/#side-frame-assembly
+            urlkr: /dxl/x/xh540-w150/#사이드-프레임-조립하기
+          - title: "Frame Combination"
+            titlekr: "프레임 활용 하기"
+            url: /dxl/x/xh540-w150/#frame-combination
+            urlkr: /dxl/x/xh540-w150/#프레임-활용-하기
+          - title: "Custom Frame Assembly"
+            titlekr: "기타 프레임 조립 예시"
+            url: /dxl/x/xh540-w150/#custom-frame-assembly
+            urlkr: /dxl/x/xh540-w150/#기타-프레임-조립-예시
+      - title: "Gear Replacement"
+        titlekr: "기어 교체하기"
+        url: /dxl/x/xh540-w150/#gear-replacement
+        urlkr: /dxl/x/xh540-w150/#기어-교체하기
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/x/xh540-w150/#reference
     urlkr: /dxl/x/xh540-w150/#참고자료
     children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xh540-w150/#wiring-through-back-case
+        urlkr: /dxl/x/xh540-w150/#배선-예시
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xh540-w150/#what-is-the-profile
@@ -8831,28 +8930,61 @@ xh540-w270:
     url: /dxl/x/xh540-w270/#how-to-assemble
     urlkr: /dxl/x/xh540-w270/#조립-예시
     children:
-      - title: "Wiring through Back Case"
-        titlekr: "배선 예시"
-        url: /dxl/x/xh540-w270/#wiring-through-back-case
-        urlkr: /dxl/x/xh540-w270/#배선-예시
-      - title: "Option Frame Assembly"
-        titlekr: "옵션프레임 조립"
-        url: /dxl/x/xh540-w270/#option-frame-assembly
-        urlkr: /dxl/x/xh540-w270/#옵션프레임-조립
-  - title: "Maintenance"
-    titlekr: "유지보수"
-    url: /dxl/x/xh540-w270/#maintenance
-    urlkr: /dxl/x/xh540-w270/#유지보수
-    children:
-      - title: "Horn, Gear Replacement"
-        titlekr: "혼과 기어 교체"
-        url: /dxl/x/xh540-w270/#horn-and-gear-replacement
-        urlkr: /dxl/x/xh540-w270/#혼과-기어-교체
+      - title: "Horn Assembly"
+        titlekr: "혼 조립하기"
+        url: /dxl/x/xh540-w270/#horn-assembly
+        urlkr: /dxl/x/xh540-w270/#혼-조립하기
+        children:
+          - title: "Normal Horn Assembly"
+            titlekr: "노멀 혼 조립하기"
+            url: /dxl/x/xh540-w270/#normal-horn-assembly
+            urlkr: /dxl/x/xh540-w270/#노멀-혼-조립하기
+          - title: "Idler Horn Assembly"
+            titlekr: "아이들러 혼 조립하기"
+            url: /dxl/x/xh540-w270/#idler-horn-assembly
+            urlkr: /dxl/x/xh540-w270/#아이들러-혼-조립하기            
+      - title: "Frame Assembly"
+        titlekr: "프레임 조립하기"
+        url: /dxl/x/xh540-w270/#frame-assembly
+        urlkr: /dxl/x/xh540-w270/#프레임-조립하기
+        children:
+          - title: "How To Use Spacer Ring"
+            titlekr: "스페이서 링 사용 방법"
+            url: /dxl/x/xh540-w270/#how-to-use-spacer-ring
+            urlkr: /dxl/x/xh540-w270/#스페이서-링-사용-방법
+          - title: "Precaution of Frame and Horn Assembly"
+            titlekr: "프레임과 혼 결합 시 주의 사항"
+            url: /dxl/x/xh540-w270/#precaution-of-frame-and-horn-assembly
+            urlkr: /dxl/x/xh540-w270/#프레임과-혼-결합-시-주의-사항    
+          - title: "Hinge Frame Assembly"
+            titlekr: "힌지 프레임 조립하기"
+            url: /dxl/x/xh540-w270/#hinge-frame-assembly
+            urlkr: /dxl/x/xh540-w270/#힌지-프레임-조립하기
+          - title: "Side Frame Assembly"
+            titlekr: "사이드 프레임 조립하기"
+            url: /dxl/x/xh540-w270/#side-frame-assembly
+            urlkr: /dxl/x/xh540-w270/#사이드-프레임-조립하기
+          - title: "Frame Combination"
+            titlekr: "프레임 활용 하기"
+            url: /dxl/x/xh540-w270/#frame-combination
+            urlkr: /dxl/x/xh540-w270/#프레임-활용-하기
+          - title: "Custom Frame Assembly"
+            titlekr: "기타 프레임 조립 예시"
+            url: /dxl/x/xh540-w270/#custom-frame-assembly
+            urlkr: /dxl/x/xh540-w270/#기타-프레임-조립-예시
+      - title: "Gear Replacement"
+        titlekr: "기어 교체하기"
+        url: /dxl/x/xh540-w270/#gear-replacement
+        urlkr: /dxl/x/xh540-w270/#기어-교체하기
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/x/xh540-w270/#reference
     urlkr: /dxl/x/xh540-w270/#참고자료
     children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xh540-w270/#wiring-through-back-case
+        urlkr: /dxl/x/xh540-w270/#배선-예시
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xh540-w270/#what-is-the-profile
@@ -9081,28 +9213,62 @@ xh540-v150:
     url: /dxl/x/xh540-v150/#how-to-assemble
     urlkr: /dxl/x/xh540-v150/#조립-예시
     children:
-      - title: "Wiring through Back Case"
-        titlekr: "배선 예시"
-        url: /dxl/x/xh540-v150/#wiring-through-back-case
-        urlkr: /dxl/x/xh540-v150/#배선-예시
-      - title: "Option Frame Assembly"
-        titlekr: "옵션프레임 조립"
-        url: /dxl/x/xh540-v150/#option-frame-assembly
-        urlkr: /dxl/x/xh540-v150/#옵션프레임-조립
-  - title: "Maintenance"
-    titlekr: "유지보수"
-    url: /dxl/x/xh540-v150/#maintenance
-    urlkr: /dxl/x/xh540-v150/#유지보수
-    children:
-      - title: "Horn, Gear Replacement"
-        titlekr: "혼과 기어 교체"
-        url: /dxl/x/xh540-v150/#horn-and-gear-replacement
-        urlkr: /dxl/x/xh540-v150/#혼과-기어-교체
+      - title: "Horn Assembly"
+        titlekr: "혼 조립하기"
+        url: /dxl/x/xh540-v150/#horn-assembly
+        urlkr: /dxl/x/xh540-v150/#혼-조립하기
+        children:
+          - title: "Normal Horn Assembly"
+            titlekr: "노멀 혼 조립하기"
+            url: /dxl/x/xh540-v150/#normal-horn-assembly
+            urlkr: /dxl/x/xh540-v150/#노멀-혼-조립하기
+          - title: "Idler Horn Assembly"
+            titlekr: "아이들러 혼 조립하기"
+            url: /dxl/x/xh540-v150/#idler-horn-assembly
+            urlkr: /dxl/x/xh540-v150/#아이들러-혼-조립하기            
+      - title: "Frame Assembly"
+        titlekr: "프레임 조립하기"
+        url: /dxl/x/xh540-v150/#frame-assembly
+        urlkr: /dxl/x/xh540-v150/#프레임-조립하기
+        children:
+          - title: "How To Use Spacer Ring"
+            titlekr: "스페이서 링 사용 방법"
+            url: /dxl/x/xh540-v150/#how-to-use-spacer-ring
+            urlkr: /dxl/x/xh540-v150/#스페이서-링-사용-방법
+          - title: "Precaution of Frame and Horn Assembly"
+            titlekr: "프레임과 혼 결합 시 주의 사항"
+            url: /dxl/x/xh540-v150/#precaution-of-frame-and-horn-assembly
+            urlkr: /dxl/x/xh540-v150/#프레임과-혼-결합-시-주의-사항    
+          - title: "Hinge Frame Assembly"
+            titlekr: "힌지 프레임 조립하기"
+            url: /dxl/x/xh540-v150/#hinge-frame-assembly
+            urlkr: /dxl/x/xh540-v150/#힌지-프레임-조립하기
+          - title: "Side Frame Assembly"
+            titlekr: "사이드 프레임 조립하기"
+            url: /dxl/x/xh540-v150/#side-frame-assembly
+            urlkr: /dxl/x/xh540-v150/#사이드-프레임-조립하기
+          - title: "Frame Combination"
+            titlekr: "프레임 활용 하기"
+            url: /dxl/x/xh540-v150/#frame-combination
+            urlkr: /dxl/x/xh540-v150/#프레임-활용-하기
+          - title: "Custom Frame Assembly"
+            titlekr: "기타 프레임 조립 예시"
+            url: /dxl/x/xh540-v150/#custom-frame-assembly
+            urlkr: /dxl/x/xh540-v150/#기타-프레임-조립-예시
+      - title: "Gear Replacement"
+        titlekr: "기어 교체하기"
+        url: /dxl/x/xh540-v150/#gear-replacement
+        urlkr: /dxl/x/xh540-v150/#기어-교체하기
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/x/xh540-v150/#reference
     urlkr: /dxl/x/xh540-v150/#참고자료
     children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xh540-v150/#wiring-through-back-case
+        urlkr: /dxl/x/xh540-v150/#배선-예시
+      - title: "Option Frame Assembly"      
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xh540-v150/#what-is-the-profile
@@ -9323,28 +9489,61 @@ xh540-v270:
     url: /dxl/x/xh540-v270/#how-to-assemble
     urlkr: /dxl/x/xh540-v270/#조립-예시
     children:
-      - title: "Wiring through Back Case"
-        titlekr: "배선 예시"
-        url: /dxl/x/xh540-v270/#wiring-through-back-case
-        urlkr: /dxl/x/xh540-v270/#배선-예시
-      - title: "Option Frame Assembly"
-        titlekr: "옵션프레임 조립"
-        url: /dxl/x/xh540-v270/#option-frame-assembly
-        urlkr: /dxl/x/xh540-v270/#옵션프레임-조립
-  - title: "Maintenance"
-    titlekr: "유지보수"
-    url: /dxl/x/xh540-v270/#maintenance
-    urlkr: /dxl/x/xh540-v270/#유지보수
-    children:
-      - title: "Horn, Gear Replacement"
-        titlekr: "혼과 기어 교체"
-        url: /dxl/x/xh540-v270/#horn-and-gear-replacement
-        urlkr: /dxl/x/xh540-v270/#혼과-기어-교체
+      - title: "Horn Assembly"
+        titlekr: "혼 조립하기"
+        url: /dxl/x/xh540-v270/#horn-assembly
+        urlkr: /dxl/x/xh540-v270/#혼-조립하기
+        children:
+          - title: "Normal Horn Assembly"
+            titlekr: "노멀 혼 조립하기"
+            url: /dxl/x/xh540-v270/#normal-horn-assembly
+            urlkr: /dxl/x/xh540-v270/#노멀-혼-조립하기
+          - title: "Idler Horn Assembly"
+            titlekr: "아이들러 혼 조립하기"
+            url: /dxl/x/xh540-v270/#idler-horn-assembly
+            urlkr: /dxl/x/xh540-v270/#아이들러-혼-조립하기            
+      - title: "Frame Assembly"
+        titlekr: "프레임 조립하기"
+        url: /dxl/x/xh540-v270/#frame-assembly
+        urlkr: /dxl/x/xh540-v270/#프레임-조립하기
+        children:
+          - title: "How To Use Spacer Ring"
+            titlekr: "스페이서 링 사용 방법"
+            url: /dxl/x/xh540-v270/#how-to-use-spacer-ring
+            urlkr: /dxl/x/xh540-v270/#스페이서-링-사용-방법
+          - title: "Precaution of Frame and Horn Assembly"
+            titlekr: "프레임과 혼 결합 시 주의 사항"
+            url: /dxl/x/xh540-v270/#precaution-of-frame-and-horn-assembly
+            urlkr: /dxl/x/xh540-v270/#프레임과-혼-결합-시-주의-사항    
+          - title: "Hinge Frame Assembly"
+            titlekr: "힌지 프레임 조립하기"
+            url: /dxl/x/xh540-v270/#hinge-frame-assembly
+            urlkr: /dxl/x/xh540-v270/#힌지-프레임-조립하기
+          - title: "Side Frame Assembly"
+            titlekr: "사이드 프레임 조립하기"
+            url: /dxl/x/xh540-v270/#side-frame-assembly
+            urlkr: /dxl/x/xh540-v270/#사이드-프레임-조립하기
+          - title: "Frame Combination"
+            titlekr: "프레임 활용 하기"
+            url: /dxl/x/xh540-v270/#frame-combination
+            urlkr: /dxl/x/xh540-v270/#프레임-활용-하기
+          - title: "Custom Frame Assembly"
+            titlekr: "기타 프레임 조립 예시"
+            url: /dxl/x/xh540-v270/#custom-frame-assembly
+            urlkr: /dxl/x/xh540-v270/#기타-프레임-조립-예시
+      - title: "Gear Replacement"
+        titlekr: "기어 교체하기"
+        url: /dxl/x/xh540-v270/#gear-replacement
+        urlkr: /dxl/x/xh540-v270/#기어-교체하기
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/x/xh540-v270/#reference
     urlkr: /dxl/x/xh540-v270/#참고자료
     children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xh540-v270/#wiring-through-back-case
+        urlkr: /dxl/x/xh540-v270/#배선-예시      
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xh540-v270/#what-is-the-profile

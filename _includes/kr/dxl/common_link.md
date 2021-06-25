@@ -72,6 +72,7 @@
 
 <!--Common Links -->
 
+[호환성 가이드]: http://www.robotis.com/service/compatibility_table.php?cate=dx
 [Alert Bit(0x80)]: /docs/kr/dxl/protocol2/#error 
 [케이블 호환성]: /docs/kr/popup/cable_compatibility/
 [Protocol 1.0]: /docs/kr/dxl/protocol1/#status-packet
