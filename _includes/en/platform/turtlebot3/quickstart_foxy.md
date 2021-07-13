@@ -74,6 +74,7 @@ $ sudo apt remove ros-foxy-turtlebot3-msgs
 $ sudo apt remove ros-foxy-turtlebot3
 $ mkdir -p ~/turtlebot3_ws/src
 $ cd ~/turtlebot3_ws/src/
+$ git clone -b foxy-devel https://github.com/ROBOTIS-GIT/DynamixelSDK.git
 $ git clone -b foxy-devel https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
 $ git clone -b foxy-devel https://github.com/ROBOTIS-GIT/turtlebot3.git
 $ cd ~/turtlebot3_ws

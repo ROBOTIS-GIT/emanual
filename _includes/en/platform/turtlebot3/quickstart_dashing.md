@@ -90,6 +90,7 @@ $ sudo apt remove ros-dashing-turtlebot3-msgs
 $ sudo apt remove ros-dashing-turtlebot3
 $ mkdir -p ~/turtlebot3_ws/src
 $ cd ~/turtlebot3_ws/src/
+$ git clone -b dashing-devel https://github.com/ROBOTIS-GIT/DynamixelSDK.git
 $ git clone -b dashing-devel https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
 $ git clone -b dashing-devel https://github.com/ROBOTIS-GIT/turtlebot3.git
 $ colcon build --symlink-install
