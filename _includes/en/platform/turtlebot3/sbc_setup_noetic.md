@@ -21,7 +21,7 @@ Download the correct image file for your hardware and ROS version.
 Noetic version images are created based on Ubuntu 20.04.  
 
 - [![](/assets/images/icon_download.png) **Raspberry Pi 3B+** ROS1 Noetic image](https://www.robotis.com/service/download.php?no=2008){: .blank}
-  - **SHA256** : 3262a2f77f80b7ce177a711e305f9b46e5bda422f933b5e86f7681b47a17b7f0
+  - **SHA256** : a7c57e20f2ee4204c95315866f4a274886094f7c63ed390b6d06d95074830309
 
 The recovery image files can be modified without a prior notice.
 {: .notice}
