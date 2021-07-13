@@ -198,6 +198,11 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 
 ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_001.png)
 
+![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_export_001.png)
+
+**NOTE** : The time stamp output to Excel is a Unix time stamp.
+{: .notice}
+
 # [Basic Features](#basic-features)
 
 ## [Connect DYNAMIXEL](#connect-dynamixel)
