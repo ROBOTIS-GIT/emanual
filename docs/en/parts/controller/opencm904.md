@@ -301,25 +301,25 @@ All of OpenCM9.04’s GPIO pins can internally “pull-up” or “pull-down” 
 
 > OpenCM9.04 GPIO PinMap
 
-| Name             | Arduino Pin   |          |
-|:-----------------|:--------------|:---------|
-| Serial/SerialUSB | USB Port      |          |
-| Serial1          | D11, D12      | DXL Port |
-| Serial2          | A4,  A5       |          |
-| Serial3          | D24, D25      |          |
-| SPI1             | A1, A6, A7    |          |
-| SPI2             | D19, D20, D21 |          |
-| PWM              | A2 ~ D14      |          |
-| ADC              | A0 ~ A9       |          |
-| LED              | D14           |          |
-| EXTI             | A0 ~ D25      |          |
-| I2C              | D24, D25      |          |
-| BUTTON           | D23           |          |
-| 5PIN #1          | D2, D6, D7    |          |
-| 5PIN #2          | D3, D8, D9    |          |
-| 5PIN #3          | D0, D10, D11  |          |
-| 5PIN #4          | D1, D12, D13  |          |
-| 4PIN UART        | D1, D12, D13  | Serial2  |
+| Name             | Arduino Pin   | Description            |
+|:-----------------|:--------------|:-----------------------|
+| Serial/SerialUSB | USB Port      |                        |
+| Serial1          | N/A           | DXL Port               |
+| Serial2          | A4,  A5       | 4PIN UART              |
+| Serial3          | D24, D25      | OpenCM485 EXP DXL Port |
+| SPI1             | A1, A6, A7    |                        |
+| SPI2             | D19, D20, D21 |                        |
+| PWM              | A2 ~ D14      |                        |
+| ADC              | A0 ~ A9       |                        |
+| LED              | D14           |                        |
+| EXTI             | A0 ~ D25      |                        |
+| I2C              | D24, D25      |                        |
+| BUTTON           | D23           |                        |
+| 5PIN #1          | D2, D6, D7    |                        |
+| 5PIN #2          | D3, D8, D9    |                        |
+| 5PIN #3          | D0, D10, D11  |                        |
+| 5PIN #4          | D1, D12, D13  |                        |
+| 4PIN UART        | D1, D12, D13  | Serial2                |
 
 - **Serial(USART)** : 11(TX1), 12(RX1), 4(TX2), 5(RX2), 24(TX3), 25(RX3)
 - **PWM** : 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14
@@ -335,24 +335,24 @@ All of OpenCM9.04’s GPIO pins can internally “pull-up” or “pull-down” 
 - **A1** : Digital I/O and analog input. Can be used for SPI channel 1’s SCK clock-pin.
 - **A2** : Digital I/O, analog input, & PWM output.
 - **A3** : Digital I/O, analog input, & PWM output.
-- **A4** : Digital I/O, analog input, & PWM output. Used as USART2(Serial2) channel’s TXD pin and connected to 4-pin communication port’s TX2.
-- **A5** : Digital I/O, analog input, & PWM output. Used as USART2(Serial2) channel’s RXD pin and connected to 4-pin communication RX2.
+- **A4** : Digital I/O, analog input, & PWM output. USART2(Serial2) TX pin and connected to the TX2 of 4-pin communication port.
+- **A5** : Digital I/O, analog input, & PWM output. USART2(Serial2) RX pin and connected to the RX2 of 4-pin communication port.
 - **A6** : Digital I/O, analog input, & PWM output. Can be used as SPI channel 1’s MISO pin.
 - **A7** : Digital I/O, analog input, & PWM output. Can be used as SPI channel 1’s MISO pin.
 - **A8** : Digital I/O, analog input, & PWM output.
 - **A9** Digital I/O, analog input, & PWM output.
 - **D10** : Digital I/O & PWM output.
-- **D11** : Digital I/O & PWM output. USART1’s (Serial1) TX pin. Cannot be simultaneously used with the DYNAMIXEL TTL Bus.
-- **D12** : Digital I/O & PWM output. USART1(Serial1)’s RX pin. Cannot be simultaneously used with the DYNAMIXEL TTL Bus.
+- **D11** : Digital I/O & PWM output. USART1 TX pin.
+- **D12** : Digital I/O & PWM output. USART1 RX pin.
 - **D13** : Digital I/O & PWM output.
 - **D14** : Digital I/O & PWM output. Pin connected to the Status LED. It’s pre-defined as BOARD_LED_PIN.
 - **D15** : Digital I/O.
 - **VCC(+)** : +voltage of the board. There are 2 VCC(+) pins. Connected to the + terminal of the battery socket.
 - **GND(-)** :-voltage of the board. There are 2 GND(-) pins. Connected to the + terminal of the battery socket.
 - **TTL** : DYNAMIXEL TTL Bus’s Data line. Used to communicate with 3-pin TTL DYNAMIXEL's.
-- **D** : Relevant to DYNAMIXEL TTL Bus and used to select TX, RX.
-- **X** : DYNAMIXEL TTL Bus’s TX pin.
-- **L** : DYNAMIXEL TTL Bus’s RX pin.
+- **D** : Direction Control pin of DYNAMIXEL TTL Bus that controls TX and RX selection.
+- **X** : TX pin of DYNAMIXEL TTL Bus (Serial1).
+- **L** : RX pin of DYNAMIXEL TTL Bus (Serial1).
 - **D16** : Digital I/O Pin.
 - **D17** : Digital I/O Pin.
 - **D18** : Digital I/O Pin.
@@ -361,8 +361,8 @@ All of OpenCM9.04’s GPIO pins can internally “pull-up” or “pull-down” 
 - **D21** : Digital I/O Pin. Can be used for SPI channel 2’s MOSI pin.
 - **D22** : Digital I/O Pin. Maximum output current is 3mA and maximum toggle speed is 2Mhz.
 - **D23** : Digital I/O Pin. It’s connected to User Button. If the power is supplied while User Button is pressed, the board initiates Emergency Recovery (Download) Mode. Maximum output current is 3mA and maximum toggle speed is 2Mhz.
-- **D24** : Digital I/O Pin. Can be used as I2C channel 2’s SCL pin or USART3(Serial3)’s TX pin.
-- **D25** : Digital I/O Pin. Can be used as I2C channel 2’s SDA pin or USART3(Serial3)’s RX pin.
+- **D24** : Digital I/O Pin. Can be used as SCL pin of I2C channel 2 or TX of USART3(Serial3) for OpenCM485 EXP.
+- **D25** : Digital I/O Pin. Can be used as SDA pin of I2C channel 2 or RX of USART3(Serial3) for OpenCM485 EXP.
 - **5V** : 5V output pin. JP2 jumper can be modified to connect to AREF pin and change the default voltage to 5V.
 - **AREF** : Connect to CPU’s Analog Reference pin. Voltage can be modified from 3.3V by changing the JP2 jumper (Maximum 5V). Refer to STM32F103CB datasheet for specifications.)
 
