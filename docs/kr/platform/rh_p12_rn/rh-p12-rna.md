@@ -87,7 +87,7 @@ page_number: 1
 |  8   |       1        |  *40005 (Lo Byte)*  | [Baud Rate](#baud-rate)                     |  RW  |   1    |     0 ~ 9     |            -            |
 |  9   |       1        |         N/A         | [Return Delay Time](#return-delay-time)     |  RW  |  250   |    0 ~ 255    |        2 [μsec]         |
 |  11  |       1        |  *40006 (Hi Byte)*  | [Operating Mode](#operating-mode)           |  RW  |   5    |     0, 5      |            -            |
-|  12  |       1        |         N/A         | [Sencondary ID](#secondary-id)              |  RW  |  255   |    0 ~ 255    |            -            |
+|  12  |       1        |         N/A         | [Secondary ID](#secondary-id)              |  RW  |  255   |    0 ~ 255    |            -            |
 |  13  |       1        |  *40007 (Hi Byte)*  | [Protocol Type](#protocol-type13)           |  RW  |   2    |     2, 10     |            -            |
 |  20  |       4        |       *40011*       | [Homing Offset](#homing-offset)             |  RW  |   0    |   0 ~ 1,150   |        1 [pulse]        |
 |  24  |       4        |       *40013*       | [Moving Threshold](#moving-threshold)       |  RW  |   80   |   0 ~ 2,970   |     0.01 [rev/min]      |
