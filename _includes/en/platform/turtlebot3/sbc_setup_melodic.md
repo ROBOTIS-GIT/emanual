@@ -22,7 +22,7 @@ Download the correct image file for your hardware and ROS version.
 Melodic version images are created based on Ubuntu 18.04.  
 
 - [![](/assets/images/icon_download.png) **Raspberry Pi 3B+** ROS1 Melodic image(Ubuntu 18.04 based)](https://www.robotis.com/service/download.php?no=2011){: .blank}
-  - **SHA256** : db992103968b8b4d439e60657e7beec4695f2d71f2ee4f0878f6d4b52e76993e
+  - **SHA256** : 312e1a5ad78447b901ae401ba31b2aaf94c1c760bdcafc60e2312df14e342640
 
 - [![](/assets/images/icon_download.png) **Raspberry Pi 4B (2GB or 4GB)** ROS1 Melodic image(Raspberry Pi OS based)](https://www.robotis.com/service/download.php?no=1905){: .blank}
   - **SHA256** : 73546c63d3056bfc5538acc187f54dab6c1601096df320e60e0842bcb1b03d34
