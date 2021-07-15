@@ -75,7 +75,7 @@ Please resize the partition to use the unallocated space.
 1. Select microSD card from the menu (mounted location may vary by system).  
 2. Right click on the yellow partition.  
 3. Select `Resize/Move` option.  
-4. Drag the right edge of the partition to all the way up.  
+4. Drag the right edge of the partition to all the way to the right end.  
 5. Click `Resize/Move` button.  
 6. Click the `Apply All Operations` green check button at the top.
 
@@ -108,7 +108,7 @@ HDMI cable has to be connected before powering the Raspberry Pi, or else the HDM
 {: .notice--warning}
 
 ### ROS1 Network Configuration
-Please follow the instructions below on the **SBC (Raspberry Pi 3B+)**.
+Please follow the instructions below on the **SBC (Raspberry Pi)**.
 1. Confirm the WiFi IP address.
   ```bash
 $ ifconfig
