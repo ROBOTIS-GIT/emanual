@@ -44,7 +44,7 @@ Instruction Packet을 받아 처리해야 할 장치의 ID를 나타내는 필�
   1. 범위 : 0 ~ 252 (0x00 ~ 0xFC) 까지 253 개 사용 가능
   2. Broadcast ID : 254 (0xFE), 연결된 모든 장치가 Instruction Packet 을 실행하도록 함. 
   
-  **주의**: Broadcast ID(254 (0xFE))는 [Ping], [Sync Read] 및 [Bulk Read] 에만 응답하며, 그 외 [Instruction](#instruction)에는 응답하지 않음. 
+  **주의**: Broadcast ID(254 (0xFE))는 [Ping], [Sync Read] 및 [Bulk Read] 에만 [Status Packet](#status-packet)을 반환하며, 그 외 [Instruction](#instruction)에는 Status Packet을 반환하지 않음.
   {: .notice--warning}
 
 ## [Length](#length)
