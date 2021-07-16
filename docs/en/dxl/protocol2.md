@@ -47,7 +47,7 @@ The field that indicates an ID of the device that should receive the Instruction
   1. Range : 0 ~ 252 (0x00 ~ 0xFC), which is a total of 253 numbers that can be used
   2. Broadcast ID : 254 (0xFE), which makes all connected devices execute the Instruction Packet
   
-  **WARNING**: Be sure that Broadcast ID(254 (0xFE)) is responded to [Ping], [Sync Read] and [Bulk Read] only.
+  **WARNING**: Be sure that Broadcast ID(254 (0xFE)) return [Status Packet](#status-packet) for [Ping], [Sync Read] and [Bulk Read] only, other [Instruction] aside from [Ping], [Sync Read] and [Bulk Read] will not return Status Packet to Broadcast ID.
   {: .notice--warning}
 
 ## [Length](#length)
