@@ -1,0 +1,50 @@
+---
+layout: archive
+lang: en
+ref: openmanipulator_x_ros_controller_experiment
+read_time: true
+share: true
+author_profile: false
+permalink: /docs/en/platform/openmanipulator_x/ros_controller_experiment/
+tabs: "ROS"
+tab_title1: Kinetic
+tab_title2: Noetic
+tab_title3: Dashing
+sidebar:
+  title: "OpenMANIPULATOR-X"
+  nav: "openmanipulator_x"
+product_group: openmanipulator_x
+page_number: 9
+---
+
+<div style="counter-reset: h1 5"></div>
+<div style="counter-reset: h2 3"></div>
+
+{::options parse_block_html="true" /}
+
+
+## [Experimental](#experimental)
+
+**WARNING**  
+This section introduces other experimental controllers. These controllers may not fully compatible with OpenMANIPULATOR-X.
+{: .notice--warning}
+
+### [MoveIt!](#moveit)
+
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/controller/moveit_kinetic.md %}
+</section>
+
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/controller/moveit_dashing.md %}
+</section>
+
+### [Gravity Compensation](#gravity-compensation)
+
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/controller/gravity_compensation_kinetic.md %}
+</section>
+
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/controller/gravity_compensation_dashing.md %}
+</section>

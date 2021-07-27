@@ -1,3 +1,4 @@
+![](/assets/images/platform/openmanipulator_p/logo_ros.png)
 
 For beginners, it is strongly recommended to install ROS with the script provided in the below command.
 
@@ -5,7 +6,8 @@ For beginners, it is strongly recommended to install ROS with the script provide
 ```bash
 $ sudo apt update && sudo apt upgrade
 $ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh
-$ chmod 755 ./install_ros_kinetic.sh && bash ./install_ros_kinetic.sh
+$ chmod 755 ./install_ros_kinetic.sh
+$ bash ./install_ros_kinetic.sh
 ```
 
 <details>

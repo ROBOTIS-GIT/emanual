@@ -6,13 +6,13 @@ Please launch the [OpenMANIPULATOR-X Controller](#launch-controller) before runn
 Publish a topic message to check the OpenMANIPULATOR-X setting.
 
 ```bash
-$ rostopic pub /open_manipulator/option std_msgs/String "print_open_manipulator_setting"
+$ ros2 topic pub /option std_msgs/msg/String "data: print_open_manipulator_x_setting"
 ```
 
 **Manipulator Description** will be printed on the terminal where the open_manipulator_controller is running.  
 Current configuration of the OpenMANIPULATOR-X is displayed.  
 Parameters related to the description is loaded from the open_manipulator.cpp in the open_manipulator_libs package.  
-`~/catkin_ws/src/open_manipulator/open_manipulator_libs/src/open_manipulator.cpp`
+`~/robotis_ws/src/open_manipulator_x/open_manipulator_x_libs/src/open_manipulator_x.cpp`
 
 ```
   ----------<Manipulator Description>----------

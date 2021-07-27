@@ -8,10 +8,8 @@ author_profile: false
 permalink: /docs/en/platform/openmanipulator_x/quick_start_guide_basic_operation/
 tabs: "ROS"
 tab_title1: Kinetic
-tab_title2: Melodic
-tab_title3: Noetic
-tab_title4: Dashing
-tab_title5: Foxy
+tab_title2: Noetic
+tab_title3: Dashing
 sidebar:
   title: "OpenMANIPULATOR-X"
   nav: "openmanipulator_x"
@@ -26,10 +24,36 @@ page_number: 5
 
 ## [Basic Operation](#basic-operation)
 
+Please note that this instruction is written for the **ROBOTIS official OpenMANIPULATOR-X package**. If you are operating a home made OpenMANIPULATOR-X, make sure to configure each DYNAMIXEL as below before operating.
+
+![](/assets/images/platform/openmanipulator_x/OpenManipulator_id_baudrate.png)
+
+**WARNING** The gripper module(ID 15) requires `Current based Position Control Mode`. Please make sure your DYNAMIXEL model supports the required [Operating Mode](https://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#operating-mode11).
+{: .notice--danger}
+
+{% capture note_01 %}
+`FAQ`
+- You can configure your DYNAMIXEL using [DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/).
+- After completing the [Communication Interface](/docs/en/platform/openmanipulator_x/quick_start_guide/#communication-interface) section, use DYNAMIXEL Wizard 2.0 to configure the DYNAMIXEL.
+{% endcapture %}
+<div class="notice--warning">{{ note_01 | markdownify }}</div>
+
+### [Launch Controller](#launch-controller)
+
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/quickstart/quickstart_kinetic_basic_operation.md %}
+{% include en/platform/openmanipulator_x/quick_start_guide/launch_controller_kinetic.md %}
 </section>
 
-<section data-id="{{ page.tab_title4 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/quickstart/quickstart_dashing_basic_operation.md %}
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/quick_start_guide/launch_controller_dashing.md %}
+</section>
+
+### [Keyboard Teleoperation](#keyboard-teleoperation)
+
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/quick_start_guide/keyboard_teleop_kinetic.md %}
+</section>
+
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/quick_start_guide/keyboard_teleop_dashing.md %}
 </section>

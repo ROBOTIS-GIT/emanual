@@ -13,11 +13,10 @@ $ roslaunch open_manipulator_controller open_manipulator_controller.launch usb_p
 The `open_manipulator_controller.launch` file has several arguments for launching the controller package. Please see below [Parameter Descriptions](#parameter-descriptions).
 
 {% capture warning_01 %}
-
-**WARNING**  
+**WARNING** :  
 Please check each joint position before running OpenMANIPULATOR-X. The manipulator will not operate if any joint is out of operable range.  
-The following image describes the recommended pose of OpenMANIPULATOR-X at start up. Please adjust the pose before the torque is turned on by the controller.  
-        
+The following image describes the recommended pose of OpenMANIPULATOR-X at start up. Please adjust the pose before the torque is turned on by the controller.
+  
 <img src="/assets/images/platform/openmanipulator_x/open_manipulator_start_pose.png" width="250">
 {% endcapture %}
 <div class="notice--warning">{{ warning_01 | markdownify }}</div>

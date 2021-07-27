@@ -8,10 +8,8 @@ author_profile: false
 permalink: /docs/en/platform/openmanipulator_x/quick_start_guide/
 tabs: "ROS"
 tab_title1: Kinetic
-tab_title2: Melodic
-tab_title3: Noetic
-tab_title4: Dashing
-tab_title5: Foxy
+tab_title2: Noetic
+tab_title3: Dashing
 sidebar:
   title: "OpenMANIPULATOR-X"
   nav: "openmanipulator_x"
@@ -37,75 +35,52 @@ In order to run this Quick Start Guide, you should be prepared with below items.
 
 
 ## [Setup](#setup)
+
 ### [Install Ubuntu on PC](#install-ubuntu-on-pc)
 
 Installing Ubuntu on a PC or laptop may differ by model. Please contact the manufacturer or community for more details.
 {: .notice--warning}
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/quickstart/quickstart_kinetic.md %}
+{% include en/platform/openmanipulator_x/quick_start_guide/quickstart_kinetic.md %}
 </section>
 
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/quickstart/quickstart_melodic.md %}
+{% include en/platform/openmanipulator_x/quick_start_guide/quickstart_noetic.md %}
 </section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/quickstart/quickstart_noetic.md %}
-</section>
-
-<section data-id="{{ page.tab_title4 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/quickstart/quickstart_dashing.md %}
-</section>
-
-<section data-id="{{ page.tab_title5 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/quickstart/quickstart_foxy.md %}
+{% include en/platform/openmanipulator_x/quick_start_guide/quickstart_dashing.md %}
 </section>
 
 ### [Install ROS on PC](#install-ros-on-pc)
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/quickstart/quickstart_kinetic_ros.md %}
+{% include en/platform/openmanipulator_x/quick_start_guide/quickstart_kinetic_ros.md %}
 </section>
 
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/quickstart/quickstart_melodic_ros.md %}
+{% include en/platform/openmanipulator_x/quick_start_guide/quickstart_noetic_ros.md %}
 </section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/quickstart/quickstart_noetic_ros.md %}
-</section>
-
-<section data-id="{{ page.tab_title4 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/quickstart/quickstart_dashing_ros.md %}
-</section>
-
-<section data-id="{{ page.tab_title5 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/quickstart/quickstart_foxy_ros.md %}
+{% include en/platform/openmanipulator_x/quick_start_guide/quickstart_dashing_ros.md %}
 </section>
 
 ### [Install ROS Packages](#install-ros-packages)
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/quickstart/quickstart_kinetic_ros_packages.md %}
+{% include en/platform/openmanipulator_x/quick_start_guide/quickstart_kinetic_ros_packages.md %}
 </section>
 
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/quickstart/quickstart_melodic_ros_packages.md %}
+{% include en/platform/openmanipulator_x/quick_start_guide/quickstart_noetic_ros_packages.md %}
 </section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/quickstart/quickstart_noetic_ros_packages.md %}
-</section>
-
-<section data-id="{{ page.tab_title4 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/quickstart/quickstart_dashing_ros_packages.md %}
-</section>
-
-<section data-id="{{ page.tab_title5 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/quickstart/quickstart_foxy_ros_packages.md %}
+{% include en/platform/openmanipulator_x/quick_start_guide/quickstart_dashing_ros_packages.md %}
 </section>
 
 ### [Communication Interface](#communication-interface)
 
-{% include en/platform/openmanipulator_x/quickstart/quickstart_comm_interface.md %}
+{% include en/platform/openmanipulator_x/quick_start_guide/quickstart_comm_interface.md %}
