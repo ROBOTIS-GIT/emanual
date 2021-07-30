@@ -1,6 +1,6 @@
 
 **NOTE**:  
-Please launch the [OpenMANIPULATOR-X Controller](#launch-controller) before running this section.
+Please launch the [OpenMANIPULATOR-X Controller](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) before running this section.
 {: .notice--info}
 
 Load OpenMANIPULATOR-X on RViz.

@@ -6,7 +6,7 @@ Please launch the [OpenMANIPULATOR-X Controller](/docs/en/platform/openmanipulat
 Publish a topic message to check the OpenMANIPULATOR-X setting.
 
 ```bash
-$ rostopic pub /open_manipulator/option std_msgs/String "print_open_manipulator_setting"
+$ rostopic pub /option std_msgs/String "print_open_manipulator_setting"
 ```
 
 **Manipulator Description** will be printed on the terminal where the open_manipulator_controller is running.  

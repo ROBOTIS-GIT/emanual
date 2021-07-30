@@ -10,6 +10,7 @@ tabs: "ROS"
 tab_title1: Kinetic
 tab_title2: Noetic
 tab_title3: Dashing
+tab_title4: Arduino
 sidebar:
   title: "OpenMANIPULATOR-X"
   nav: "openmanipulator_x"
@@ -44,8 +45,16 @@ Please note that this instruction is written for the **ROBOTIS official OpenMANI
 {% include en/platform/openmanipulator_x/quick_start_guide/launch_controller_kinetic.md %}
 </section>
 
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/quick_start_guide/launch_controller_noetic.md %}
+</section>
+
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
 {% include en/platform/openmanipulator_x/quick_start_guide/launch_controller_dashing.md %}
+</section>
+
+<section data-id="{{ page.tab_title4 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/quick_start_guide/launch_controller_arduino.md %}
 </section>
 
 ### [Keyboard Teleoperation](#keyboard-teleoperation)
@@ -54,6 +63,15 @@ Please note that this instruction is written for the **ROBOTIS official OpenMANI
 {% include en/platform/openmanipulator_x/quick_start_guide/keyboard_teleop_kinetic.md %}
 </section>
 
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/quick_start_guide/keyboard_teleop_noetic.md %}
+</section>
+
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
 {% include en/platform/openmanipulator_x/quick_start_guide/keyboard_teleop_dashing.md %}
+</section>
+
+<section data-id="{{ page.tab_title4 }}" class="tab_contents">
+Not supported.
+{: .notice--warning}
 </section>

@@ -54,6 +54,11 @@ $ ros2 run open_manipulator_x_teleop open_manipulator_x_teleop_keyboard
   ---------------------------
   ```
 
+### [RC-100](#rc-100)
+
+Not supported.
+{: .notice--warning}
+
 ### [PS4 Joystick](#ps4-joystick)
 
 Install packages for teleoperation using PS4 joystick.

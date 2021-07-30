@@ -4,7 +4,7 @@ For beginners, it is strongly recommended to install ROS with the script provide
 
 
 ```bash
-$ sudo apt update && sudo apt upgrade
+$ sudo apt-get update
 $ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh
 $ chmod 755 ./install_ros_kinetic.sh
 $ bash ./install_ros_kinetic.sh
@@ -24,7 +24,7 @@ $ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) ma
 
 2. Set up the keys
 ```bash
-$ sudo apt install curl
+$ sudo apt-get install curl
 $ curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
 ```
 
@@ -36,12 +36,12 @@ $ sudo apt-get install ros-kinetic-desktop-full
 
 4. Dependencies for building packages
 ```bash
-$ sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
+$ sudo apt-get install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
 ```
 
 5. Initialize rosdep
 ```bash
-$ sudo apt install python-rosdep
+$ sudo apt-get install python-rosdep
 $ sudo rosdep init
 $ rosdep update
 ```

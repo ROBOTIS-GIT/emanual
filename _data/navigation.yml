@@ -17874,6 +17874,8 @@ openmanipulator_x:
       children:
       - title: "Keyboard"
         url: /platform/openmanipulator_x/ros_operation/#keyboard
+      - title: "RC-100"
+        url: /platform/openmanipulator_x/ros_operation/#rc-100
       - title: "PS4 Joystick"
         url: /platform/openmanipulator_x/ros_operation/#ps4-joystick
       - title: "XBOX 360 Joystick"
@@ -17911,29 +17913,8 @@ openmanipulator_x:
         url: /platform/openmanipulator_x/ros_applications/#install-package
       - title: "Execute Example"
         url: /platform/openmanipulator_x/ros_applications/#execute-example
-  - title: "[OpenCR] Setup"
-    url: /platform/openmanipulator_x/opencr_setup/#opencr-setup
-    children:
-      - title: "Connection"
-        url: /platform/openmanipulator_x/opencr_setup/#connection
-      - title: "Arduino IDE Setup"
-        url: /platform/openmanipulator_x/opencr_setup/#arduino-ide-setup
-  - title: "[OpenCR] Operation"
-    url: /platform/openmanipulator_x/opencr_operation/#opencr-operation
-    children:
-      - title: "Upload Controller Program"
-        url: /platform/openmanipulator_x/opencr_operation/#upload-controller-program
-      - title: "Setup Processing(GUI)"
-        url: /platform/openmanipulator_x/opencr_operation/#setup-processinggui
-      - title: "Launch Processing(GUI)"
-        url: /platform/openmanipulator_x/opencr_operation/#launch-processinggui
-        children:
-          - title: "Control Interface"
-            url: /platform/openmanipulator_x/opencr_operation/#control-interface
-          - title: "Hand Guiding"
-            url: /platform/openmanipulator_x/opencr_operation/#hand-guiding
-      - title: "Teleoperation RC100"
-        url: /platform/openmanipulator_x/opencr_operation/#teleoperation-rc100
+    - title: "OpenCR Teaching"
+      url: /platform/openmanipulator_x/ros_applications/#opencr-teaching
   - title: "Tool Modification"
     url: /platform/openmanipulator_x/tool_modification/#tool-modification
     children:

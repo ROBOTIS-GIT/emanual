@@ -1,4 +1,7 @@
 
+Installing Ubuntu on a PC or laptop may differ by model. Please contact the manufacturer or community for more details.
+{: .notice--warning}
+
 ROS 2 Dashing is supported on `Ubuntu 18.04`.  
 Please refer to the Ubuntu installation tutorial below.
 

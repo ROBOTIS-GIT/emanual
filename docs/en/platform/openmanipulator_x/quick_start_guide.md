@@ -10,6 +10,7 @@ tabs: "ROS"
 tab_title1: Kinetic
 tab_title2: Noetic
 tab_title3: Dashing
+tab_title4: Arduino
 sidebar:
   title: "OpenMANIPULATOR-X"
   nav: "openmanipulator_x"
@@ -23,23 +24,29 @@ page_number: 4
 
 # [Quick Start Guide](#quick-start-guide)
 
-This step by step quick start guide for running OpenMANIPULATOR-X on ROS<sup>TM</sup> will guide you to operate the OpenMANIPULATOR-X for the first time.  
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/quick_start_guide/ros_intro.md %}
+</section>
 
-In order to run this Quick Start Guide, you should be prepared with below items. 
-- [OpenMANIPULATOR-X](http://en.robotis.com/shop_en/item.php?it_id=905-0024-000)
-- Communication Interface (Use either option you prefer)
-  - Option 1 : [DYNAMIXEL Starter Set](http://en.robotis.com/shop_en/list.php?ca_id=302050)
-  - Option 2 : [OpenCR1.0](http://en.robotis.com/shop_en/item.php?it_id=903-0257-000)
-- Power supply
-  - [ROBOTIS SMPS 12V 5A PS-10](http://en.robotis.com/shop_en/list.php?ca_id=3020a0&sort=&sortodr=&page=1) recommended (included in the DYNAMIXEL Starter Set)
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/quick_start_guide/ros_intro.md %}
+</section>
 
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/quick_start_guide/ros_intro.md %}
+</section>
+
+<section data-id="{{ page.tab_title4 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/quick_start_guide/arduino_intro.md %}
+</section>
 
 ## [Setup](#setup)
 
-### [Install Ubuntu on PC](#install-ubuntu-on-pc)
+<section data-id="{{ page.tab_title4 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/quick_start_guide/quickstart_arduino.md %}
+</section>
 
-Installing Ubuntu on a PC or laptop may differ by model. Please contact the manufacturer or community for more details.
-{: .notice--warning}
+### [Install Ubuntu on PC](#install-ubuntu-on-pc)
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/openmanipulator_x/quick_start_guide/quickstart_kinetic.md %}
@@ -51,6 +58,11 @@ Installing Ubuntu on a PC or laptop may differ by model. Please contact the manu
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
 {% include en/platform/openmanipulator_x/quick_start_guide/quickstart_dashing.md %}
+</section>
+
+<section data-id="{{ page.tab_title4 }}" class="tab_contents">
+Not required.
+{: .notice--warning}
 </section>
 
 ### [Install ROS on PC](#install-ros-on-pc)
@@ -67,6 +79,11 @@ Installing Ubuntu on a PC or laptop may differ by model. Please contact the manu
 {% include en/platform/openmanipulator_x/quick_start_guide/quickstart_dashing_ros.md %}
 </section>
 
+<section data-id="{{ page.tab_title4 }}" class="tab_contents">
+Not required.
+{: .notice--warning}
+</section>
+
 ### [Install ROS Packages](#install-ros-packages)
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
@@ -81,6 +98,26 @@ Installing Ubuntu on a PC or laptop may differ by model. Please contact the manu
 {% include en/platform/openmanipulator_x/quick_start_guide/quickstart_dashing_ros_packages.md %}
 </section>
 
+<section data-id="{{ page.tab_title4 }}" class="tab_contents">
+Not required.
+{: .notice--warning}
+</section>
+
 ### [Communication Interface](#communication-interface)
 
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/openmanipulator_x/quick_start_guide/quickstart_comm_interface.md %}
+</section>
+
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/quick_start_guide/quickstart_comm_interface.md %}
+</section>
+
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/quick_start_guide/quickstart_comm_interface.md %}
+</section>
+
+<section data-id="{{ page.tab_title4 }}" class="tab_contents">
+Not required.
+{: .notice--warning}
+</section>

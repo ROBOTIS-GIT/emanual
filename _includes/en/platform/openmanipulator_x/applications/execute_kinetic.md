@@ -1,18 +1,20 @@
 
 {% capture warning_01 %}
 **WARNING** :  
-Please check each joint position before running OpenMANIPULATOR-X. The manipulator will not operate if any joint is out of operable range.  
-The following image describes the recommended pose of OpenMANIPULATOR-X at start up. Please adjust the pose before the torque is turned on by the controller.
+Please check each joint position before running OpenMANIPULATOR-X.  
+The manipulator will not operate if any joint is out of operable range.  
+The following image describes the recommended pose of OpenMANIPULATOR-X at start up.  
+Please adjust the pose before the torque is turned on by the controller.
   
 <img src="/assets/images/platform/openmanipulator_x/open_manipulator_start_pose.png" width="250">
 {% endcapture %}
 <div class="notice--warning">{{ warning_01 | markdownify }}</div>
 
-1. Open a new terminal and enter the following command to run the **Slave OpenMANIPULATOR-X controller**.  
+1. Open a new terminal and enter the following command to run the controller for the **Slave OpenMANIPULATOR-X**.  
   The `dynamixel_usb_port` is a parameter that sets the port of the slave OpenMANIPULATOR-X.  
-  Please check your OS and use the appropriate serial port assigned to the U2D2.  
+  Please check your OS and use the appropriate usb port assigned to the U2D2.  
   ```bash
-  $ roslaunch open_manipulator_controller open_manipulator_controller.launch dynamixel_usb_port:=/dev/ttyUSB0
+$ roslaunch open_manipulator_controller open_manipulator_controller.launch dynamixel_usb_port:=/dev/ttyUSB0
   ```
 
 2. If the slave OpenMANIPULATOR-X controller is launched successfully, the terminal will print the following message.  
@@ -49,7 +51,7 @@ The following image describes the recommended pose of OpenMANIPULATOR-X at start
   The `usb_port` is a parameter that sets the port of the master OpenMANIPULATOR-X.  
   Please check your OS and use the appropriate serial port assigned to the U2D2.  
   ```bash
-  $ roslaunch open_manipulator_master_slave open_manipulator_master.launch usb_port:=/dev/ttyUSB1
+$ roslaunch open_manipulator_master_slave open_manipulator_master.launch usb_port:=/dev/ttyUSB1
   ```
 
 4. If the master OpenMANIPULATOR-X controller has been launched successfully, the terminal will print the following message.  
