@@ -3,7 +3,7 @@ layout: archive
 lang: en
 ref: dyd-11
 read_time: true
-share: false
+share: true
 author_profile: false
 permalink: /docs/en/all-dyd/dyd-11/
 sidebar:
