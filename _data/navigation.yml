@@ -20817,7 +20817,7 @@ rplussmart:
     - titlekr: "모션파일 다운로드"
       urlkr: /software/mobile_app/rplussmart/#모션파일-다운로드
     - titlekr: "제어기와 스마트기기 연결"
-      urlkr: /software/mobile_app/rplussmart/#제어기-스마트기기-연결
+      urlkr: /software/mobile_app/rplussmart/#제어기와-스마트기기-연결
     - titlekr: "태스크파일 다운로드"
       urlkr: /software/mobile_app/rplussmart/#태스크파일-다운로드
 
@@ -22485,6 +22485,8 @@ cm-200:
         urlkr: /parts/controller/cm-200/#r-mtask-20-설치하기
       - titlekr: "모션파일 다운로드"
         urlkr: /parts/controller/cm-200/#모션파일-다운로드
+      - titlekr: "태스크파일 다운로드"
+        urlkr: /parts/controller/cm-200/#태스크파일-다운로드
   - title: "Connect to Smartphone"
     url: /parts/controller/cm-200/#connect-to-smartphone
   - title: "Connect to PC"
