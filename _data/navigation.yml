@@ -22474,6 +22474,11 @@ cm-200:
     urlkr: /parts/controller/cm-200/#전원-연결
   - title: "How to Operate"
     url: /parts/controller/cm-200/#how-to-operate
+    children: 
+      - title: "How to Download Task Files"
+        url: /parts/controller/cm-200/#how-to-download-task-files
+      - title: "How to Download Motion Files"
+        url: /parts/controller/cm-200/#how-to-download-motion-files
   - titlekr: "작동 방법"
     urlkr: /parts/controller/cm-200/#작동-방법
     children:
