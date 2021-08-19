@@ -52,7 +52,8 @@ page_number: 10
 
 <section data-id="{{ page.tab_title4 }}" class="tab_contents">
 {% include en/platform/openmanipulator_x/operation/gui_program_arduino.md %}
-</section>`
+</section>
+
 
 ## [Teleoperation](#teleoperation)
 

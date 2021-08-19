@@ -1,4 +1,3 @@
-Gazebo controller is not developed yet.  
-Contribution to the package is welcome.  
+Gazebo controller is not supported yet.  
 [https://github.com/ROBOTIS-GIT/open_manipulator_simulations](https://github.com/ROBOTIS-GIT/open_manipulator_simulations)
 {: .notice--warning}

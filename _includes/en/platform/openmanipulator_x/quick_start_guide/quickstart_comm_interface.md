@@ -1,12 +1,12 @@
 There are two communication interface hardware options available for controlling the OpenMANIPULATOR-X. Please select one of the below options.  
 After completing this section, turn on the power switch and check if all DYNAMIXEL LED blink once.
-- Option 1 : [U2D2](#option-1-use-u2d2-as-a-communication-interface)
-- Option 2 : [OpenCR](#option-2-use-opencr-as-a-communication-interface)
 
+<details open>
+<summary>
+![](/assets/images/icon_unfold.png) **Option 1(Recommended) : Use U2D2 as a communication interface**
+</summary>
 
-#### [Option 1] Use U2D2 as a Communication Interface
-
-##### Connection
+#### Connection
 Connect micro USB (connected to PC), DYNAMIXEL's(OpenMANIPULATOR-X), and 12V Power to U2D2 and U2D2 power hub board as shown below.
 
 <img src="/assets/images/platform/openmanipulator_x/OpenManipulator_u2d2_setup2.png" width="800">
@@ -14,7 +14,7 @@ Connect micro USB (connected to PC), DYNAMIXEL's(OpenMANIPULATOR-X), and 12V Pow
 **NOTE** : Please refer to [U2D2 e-Manual](/docs/en/parts/interface/u2d2/) and [U2D2 power hub board e-manual](/docs/en/parts/interface/u2d2_power_hub/) for detailed connection of U2D2 and U2D2 power hub board.
 {: .notice--info}
 
-##### USB Latency Timer Setting
+#### USB Latency Timer Setting
 In Linux(Ubuntu platform) environment, USB latency time is set to 16ms by default. Follow the steps below to set the communication latency time to the lowest value (1ms) between DYNAMIXEL's and PC connected via USB.
 
 Open a terminal window and run the roscore.
@@ -24,7 +24,7 @@ $ roscore
 ```
 
 **TIP**: You can open a new terminal window by pressing `ALT` + `CTRL` + `T`.
-{: .notice--success}
+{: .notice}
 
 While the roscore running, open a new terminal window and enter the following command to set usb latency time. The command below will set the USB latency to **1 ms**.
 
@@ -39,20 +39,25 @@ $ rosrun open_manipulator_controller create_udev_rules
 $ cat /sys/bus/usb-serial/devices/ttyUSB0/latency_timer
 ```
 {% endcapture %}
-<div class="notice--success">{{ notice_01 | markdownify }}</div>
+<div class="notice">{{ notice_01 | markdownify }}</div>
+</details>
 
 
-#### [Option 2] Use OpenCR as a Communication Interface
+<details>
+<summary>
+![](/assets/images/icon_unfold.png) **Option 2 : Use OpenCR as a communication interface**
+</summary>
+
 This section describes how to set up OpenCR as a communication board between **ROS Packages** of PC and DYNAMIXEL's of OpenMANIPULATOR-X.  
 If you want to operate OpenMANIPULATOR-X on embedded system (OpenCR) without ROS, see [OpenCR Setup](/docs/en/platform/openmanipulator_x/opencr_setup/#opencr-setup).
 
-##### Connection
+#### Connection
 
 Connect micro USB (connected to PC), DYNAMIXEL's(OpenMANIPULATOR-X), and 12V Power to OpenCR as shown below.
 
 <img src="/assets/images/platform/openmanipulator_x/OpenManipulator_opencr_setup2.png" width="800">
 
-##### Upload Source code
+#### Upload Source code
 
 1. Set up the Arduino IDE for OpenCR ([Instructions](/docs/en/parts/controller/opencr10/#arduino-ide))
 
@@ -81,3 +86,5 @@ If upload fails, try with [Recovery Mode](/docs/en/parts/controller/opencr10/#re
 The STATUS LED should blink every 100ms after entering Recovery Mode successfully.
 {% endcapture %}
 <div class="notice--warning">{{ note_03 | markdownify }}</div>
+
+</details>

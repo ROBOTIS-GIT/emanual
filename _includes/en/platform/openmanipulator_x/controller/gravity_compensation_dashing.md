@@ -1,4 +1,3 @@
-The Gravity Compensation is not developed yet.  
-Contribution to the package is welcome.  
+The Gravity Compensation is not supported yet.  
 [https://github.com/ROBOTIS-GIT/open_manipulator_controls](https://github.com/ROBOTIS-GIT/open_manipulator_controls)
 {: .notice--warning}

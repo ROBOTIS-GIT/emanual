@@ -1,3 +1,8 @@
+Since you need to control two OpenManipulators on one PC, use two U2D2s and two OpenManipulators to connect as shown below.
+
+![](/assets/images/platform/openmanipulator_x/OpenManipulator_master_slave_connection.png)
+
+![](/assets/images/platform/openmanipulator_x/OpenManipulator_master_slave.png)
 
 #### [Master OpenMANIPULATOR-X](#master-openmanipulators-x)
 Master OpenMANIPULATOR-X is a robot that is controlled by the user. This is easy to move because no torque is applied to dynamixel. DYNAMIXEL of master OpenMANIPULATOR-X sets the ID as below and the baudrate as 1,000,000 bps.

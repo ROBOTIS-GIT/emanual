@@ -30,20 +30,22 @@ Please run the instructions below on a PC with ROS packages installed.
 {: .notice--info}
 </section>
 
-<section data-id="{{ page.tab_title3 }}" class="tab_contents">
-**NOTE**
-Please run the instructions below on a PC with ROS packages installed.
-{: .notice--info}
-</section>
-
 ## [Camera](#camera)
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
 The OpenMAIPULATOR-X can work with some cameras to recognize a front object. Use the following packages with introduced cameras: [Astro Pro](#astra-pro), [Realsense D435](#realsense-d435), [Raspberry Pi Camera V2](#raspberry-pi-camera-v2).
 </section>
 
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+This example is not supported yet.  
+[https://github.com/ROBOTIS-GIT/open_manipulator_perceptions](https://github.com/ROBOTIS-GIT/open_manipulator_perceptions)
+{: .notice--warning}
+</section>
+
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
-The OpenMAIPULATOR-X can work with some cameras to recognize a front object. Use the following packages with introduced cameras: [Astro Pro](#astra-pro), [Realsense D435](#realsense-d435), [Raspberry Pi Camera V2](#raspberry-pi-camera-v2).
+This example is not supported yet.  
+[https://github.com/ROBOTIS-GIT/open_manipulator_perceptions](https://github.com/ROBOTIS-GIT/open_manipulator_perceptions)
+{: .notice--warning}
 </section>
 
 <section data-id="{{ page.tab_title4 }}" class="tab_contents">
@@ -59,10 +61,6 @@ The Arduino sketch code can be found from [OpenCR examples](https://github.com/R
 {% include en/platform/openmanipulator_x/perceptions/camera_kinetic.md %}
 </section>
 
-<section data-id="{{ page.tab_title3 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/perceptions/camera_dashing.md %}
-</section>
-
 <section data-id="{{ page.tab_title4 }}" class="tab_contents">
 Not supported in Arduino
 {: .notice--warning}
@@ -74,10 +72,6 @@ Not supported in Arduino
 {% include en/platform/openmanipulator_x/perceptions/ar_marker_kinetic.md %}
 </section>
 
-<section data-id="{{ page.tab_title3 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/perceptions/ar_marker_dashing.md %}
-</section>
-
 <section data-id="{{ page.tab_title4 }}" class="tab_contents">
 Not supported in Arduino
 {: .notice--warning}
@@ -87,10 +81,6 @@ Not supported in Arduino
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/openmanipulator_x/perceptions/pick_place_kinetic.md %}
-</section>
-
-<section data-id="{{ page.tab_title3 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/perceptions/pick_place_dashing.md %}
 </section>
 
 <section data-id="{{ page.tab_title4 }}" class="tab_contents">

@@ -13,6 +13,8 @@ This controller can be paired with [BT-410](/docs/en/parts/communication/bt-410/
 
 ![](/assets/images/platform/openmanipulator_x/OpenManipulator_chain_processing_teleop.png)
 
+[ROBOTIS RC-100B]: /docs/en/parts/communication/rc-100/
+[BT-410]: /docs/en/parts/communication/bt-410/
 
 ### [PS4 Joystick](#ps4-joystick)
 
