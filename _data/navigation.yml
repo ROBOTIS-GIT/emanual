@@ -22861,6 +22861,15 @@ dynamixel_wizard2:
         titlekr: "ID 진단"
         url: /software/dynamixel/dynamixel_wizard2/#id-inspection
         urlkr: /software/dynamixel/dynamixel_wizard2/#id-진단
+      - title: "Data Backup and Restore"
+        titlekr: "백업 및 복구"
+        url: /software/dynamixel/dynamixel_wizard2/#data-backup-and-restore
+        urlkr: /software/dynamixel/dynamixel_wizard2/#백업-및-복구
+        children:
+          - title: "How to Restore RAM Data"
+            titlekr: "RAM 영역 복구하기"
+            url: /software/dynamixel/dynamixel_wizard2/#how-to-restore-ram-data
+            urlkr: /software/dynamixel/dynamixel_wizard2/#ram-영역-복구하기
       - title: "Modifying Control Values"
         titlekr: "컨트롤 아이템 값 변경"
         url: /software/dynamixel/dynamixel_wizard2/#modifying-control-values

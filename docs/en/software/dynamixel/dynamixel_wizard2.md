@@ -551,6 +551,69 @@ The `ID Inspection` resolves the overlapping ID although they remain wired. For 
 
     ![](/assets/images/sw/dynamixel/wizard2/id_inspection/id_inspection_done.png)  
 
+
+## [Data Backup and Restore](#data-backup-and-restore)
+
+Backup data stored in both EEPROM and RAM (Specific items only) using `Backup` function. 
+
+This can be useful if the DYNAMIXEL are reset after the [Firmware Recovery](#firmware-recovery) or any situation in data reset.  
+
+The stored data by `backup` can be restored in using `Restore EEPROM`.
+
+See the available items in Control Table for data backup, 
+- All Data in EERPOM 
+- Velocity P.I Gains
+- Position P.I.D Gains
+- Feedforward 1st & 2nd Gains
+- Profile Acceleration
+- Profile Velocity
+- Indirect Addresses
+
+**Note**: Be sure to set a bit of **Restore RAM** as '1' from `Startup Configuration` address in Control Table, in order to restore stored RAM data by `Backup`.
+{: .notice}
+
+See the following instruction for the use of `Backup`. 
+
+1. [Scan DYNAMIXEL](#scan-dynamixel). 
+
+2. Change and save value of data in EEPROM and RAM. 
+
+    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_eeprom.png)  
+    > Data in EEPROM
+
+    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_ram1.png)
+
+    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_ram2.png)  
+    > Data in RAM
+    
+3. Go to `Tool` > `Control Table` > `Backup` 
+
+    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_click_backup.png)
+    
+    **Note**: `Backup Ready` becomes '1' after `Backup`.  
+    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_backup_enabled.png)
+    {: .notice}
+  
+4. Go to `Tool` > `Control Table` > `Restore EEPROM`
+
+    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_click_restore.png)
+
+5. Confirm that backup data are restored. 
+
+    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_restore_eeprom.png)
+
+### [How to Restore RAM Data](#how-to-restore-ram-data)
+
+1. Set a bit of **Restore RAM** as '1' from `Startup Configuration` address in Control Table
+
+   ![](/assets/images/sw/dynamixel/wizard2/backup/backup_enable_restore_ram.png)
+       
+2. Rebooting DYNAMIXEL calls stored data from `Backup`. This will calls data in RAM whenever the DYNAMIXEL starts. 
+
+   ![](/assets/images/sw/dynamixel/wizard2/backup/backup_restore_ram2.png)
+       
+   ![](/assets/images/sw/dynamixel/wizard2/backup/backup_restore_ram1.png)
+   
 ## [Modifying Control Values](#modifying-control-values)
 
 1. Drag or slide the interface (Moderately changes value)

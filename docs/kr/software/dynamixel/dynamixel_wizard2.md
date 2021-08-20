@@ -564,9 +564,66 @@ sidebar:
 
     ![](/assets/images/sw/dynamixel/wizard2/id_inspection/id_inspection_done_kr.png)  
 
-<!-- # [백업 및 복구](#백업-및-복구)
+## [백업 및 복구](#백업-및-복구)
 
-`백업` 기능을 통해, 컨트롤 테이블에 저장된 EEPROM 및 RAM 영역의 데이터를 저장 할 수 있습니다. 펌웨어 복구 또는 데이터가 초기화 된경우에 유용하게 사용할수 있습니다. -->
+`백업` 기능을 통해, 컨트롤 테이블에 저장된 EEPROM 및 일부 RAM 영역의 데이터를 저장 할 수 있습니다. 펌웨어 복구 또는 데이터가 초기화 된경우에 유용하게 사용할수 있습니다. 
+
+저장된 데이터는 `EEPROM 복구` 기능을 통해, 다시 불러올수 있습니다. 
+
+백업 및 복구 가능영역은 다음과 같습니다. 
+
+- EERPOM 영역 전체 
+- Velocity P.I Gains
+- Position P.I.D Gains
+- Feedforward 1st & 2nd Gains
+- Profile Acceleration
+- Profile Velocity
+- Indirect Addresse
+
+**참고**: 백업후, RAM 영역의 복구를 위해서는, 컨트롤 테이블의 `Startup Configuration` 주소의 **Restore RAM** 항목 을 활성화 시켜야합니다. 
+{: .notice}
+
+아래는 `백업`을 활용한 예시 입니다. 
+
+1. [다이나믹셀 검색하기](#다이나믹셀-검색하기)
+
+2. EEPROM 및 RAM 영역의 컨트롤테이블 값을 설정하세요.
+
+    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_eeprom.png)  
+    > EEPROM 설정
+
+    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_ram1.png)
+
+    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_ram2.png)  
+    > RAM 영역 설정
+    
+3. 도구 > `컨트롤 테이블` > `백업` 을 클릭하세요.
+
+    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_click_backup_kr.png)
+    
+    **참고**: 백업 후, `Backup Ready`가 '1'로 활성화 됩니다.  
+    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_backup_enabled.png)
+    {: .notice}
+  
+4. 도구 > `컨트롤 테이블` > `EEPROM 복구`를 클릭하세요.
+
+    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_click_restore_kr.png)
+
+5. `EEPROM 복구`이후 다이나믹셀은 백업된 데이터를 불러옵니다.
+
+    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_restore_eeprom.png)
+
+### [RAM 영역 복구하기](#ram-영역-복구하기)
+
+1. EEPROM에서 `StartUp Configuration` 항목의 `RAM Restore` 비트를 '1'로 설정 하세요.
+
+   ![](/assets/images/sw/dynamixel/wizard2/backup/backup_enable_restore_ram.png)
+       
+2. 다이나믹셀 재부팅시, 저장된 RAM영역을 불러옵니다. 
+
+   ![](/assets/images/sw/dynamixel/wizard2/backup/backup_restore_ram2.png)
+       
+   ![](/assets/images/sw/dynamixel/wizard2/backup/backup_restore_ram1.png)
 
 ## [컨트롤 아이템 값 변경](#컨트롤-아이템-값-변경)  
 
