@@ -34,7 +34,7 @@ User can write the code in **Arduino IDE** and simulate or control using **Proce
 1. Hold down the `PUSH SW2` button.
 2. Press the `Reset` button.
 3. Release the `Reset` button.
-4. Release the `PUSH SW2` button.
+4. Release the `PUSH SW2` button.  
 ![](/assets/images/parts/controller/opencr10/bootloader_19.png)
 {% endcapture %}
 <div class="notice--warning">{{ warning_01 | markdownify }}</div>

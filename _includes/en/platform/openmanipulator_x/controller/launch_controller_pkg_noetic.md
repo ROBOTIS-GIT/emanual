@@ -1,7 +1,7 @@
 The open_manipulator_controller package created by ROBOTIS helps to control each joint of OpenMANIPULATOR-X and to check the status of OpenMANIPULATOR-X through ROS [messages](/docs/en/platform/openmanipulator_x/ros_controller_package/#message-list).  
 In order to operate the OpenMANIPULATOR-X, the controller package should be running in the first place.
 
-Other experimental controllers are available in the [Experimental](#experimental) section.
+Other experimental controllers are available in the [Experimental](/docs/en/platform/openmanipulator_x/ros_controller_experiment/) section.
 
 {% capture notice_01 %}
 **NOTE**: 

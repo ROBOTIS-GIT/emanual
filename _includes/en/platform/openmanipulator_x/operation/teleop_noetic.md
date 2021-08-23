@@ -79,7 +79,6 @@ Enter pairing mode with PS4 by pressing and holding Playstation button + share b
 ```bash
 $ export ROS_NAMESPACE=/open_manipulator
 $ roslaunch teleop_twist_joy teleop.launch
-
 $ roslaunch open_manipulator_teleop open_manipulator_teleop_joystick.launch
 ```
 

@@ -63,7 +63,7 @@ Connect micro USB (connected to PC), DYNAMIXEL's(OpenMANIPULATOR-X), and 12V Pow
 
 2. Connect OpenCR to the PC.
 
-3. Open the example from `File > Examples > OpenCR > 10.Etc > usb_to_dxl`
+3. Open the example from `File > Examples > OpenCR > 10.Etc > usb_to_dxl`  
   ![](/assets/images/platform/openmanipulator_x/OpenManipulator_opencr_utd_setup.png)  
   > Open the `usb to dxl` example.
 

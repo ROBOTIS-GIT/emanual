@@ -7,8 +7,7 @@ $ roslaunch open_manipulator_controller open_manipulator_controller.launch use_p
 ```
 
 {% capture notice_01 %}
-**NOTE**:
-- If you want to manipulate the OpenMANIPULATOR-X using MoveIt! along with the Gazebo simulator, you should modify the `use_moveit` parameter value from `false` to `true` in open_manipulator_controller launch file.
+**NOTE**: If you want to manipulate the OpenMANIPULATOR-X using MoveIt! along with the Gazebo simulator, you should modify the `use_moveit` parameter value from `false` to `true` in open_manipulator_controller launch file.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
