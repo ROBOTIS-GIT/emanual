@@ -407,7 +407,6 @@ sidebar:
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_006_kr.png)
 
-
 ## [펌웨어 업데이트](#펌웨어-업데이트)
 
 다이나믹셀의 펌웨어 업데이트가 필요할 경우, 장치이름 앞에 특수문자(*)와 함께 연하게 표시됩니다.  
@@ -475,7 +474,6 @@ sidebar:
     **주의** : 다이나믹셀 펌웨어 복구시에는 반드시 한개의 다이나믹셀만 연결되어 있어야 합니다.  
     {: .notice--warning}
 
-
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_004_kr.png)
 
 6. 다이나믹셀을 찾기 위해 복구할 다이나믹셀의 전원을 껐다가 켜십시오.  
@@ -494,33 +492,23 @@ sidebar:
 
 ## [ID 진단](#id-진단)
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/B0x1PEISavw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+
+> DYNAMIXEL Tips \| Use ID Inspector to Change Overlapping IDs with Ease
+
+{% capture supported_dynamixel %}
+**지원 다이나믹셀**
+- [DYNAMIXEL-X](/docs/kr/dxl/x/) (펌웨어 버전 **45 이상**, X330 시리즈: 펌웨어 버전 **46 이상**) 
+- [DYNAMIXEL-P](/docs/kr/dxl/p/) (펌웨어 버전 **12 이상**)
+{% endcapture %}
+
 다이나믹셀은 고유 ID를 가지고, Main Controller와 패킷을 사용하여 통신합니다. 
 
 만약 조립된 로봇에서 고유 ID가 2개 이상 존재 할 경우, 통신 실패 및 다이나믹셀 위자드 2.0에서 다이나믹셀 검색에 실패할 수 있습니다. 
 
 `ID 진단`을 사용하면, 조립된 로봇의 케이블을 분리하지않고 각 다이나믹셀에 고유 ID를 쉽게 할당 할 수 있습니다.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/B0x1PEISavw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
-
-> DYNAMIXEL Tips \| Use ID Inspector to Change Overlapping IDs with Ease
-
-<!-- 다이나믹셀로 조립된 로봇에서 고유 ID가 2개 이상 존재 할 경우, 통신 실패 및 다이나믹셀 위자드 2.0에서 다이나믹셀 검색에 실패할 수 있습니다. -->
-
-<!-- 고유 ID를 할당하기 위해서는, 중복된 ID를 가진 다이나믹셀을 조립된 로봇에서 분리해야 합니다, 하지만  -->
-
-<!-- `ID 진단`은 다음과 같은 상황에서 사용시 매우 유용합니다.  
-
-- ID를 우선 설정하지 않고 로봇 조립을 했을 경우, 
-- 조립된 로봇에서, 특정 다이나믹셀 펌웨어 복구 진행 후 ID 1 이 중복되었을 경우, 
-- 다수의 공장 출고 상태의 다이나믹셀 (ID: 1)에 ID를 할당해야 하는 경우,
-
-더 자세한 내용은, 상단의 영상 또는 아래의 가이드를 참고하세요. -->
-
-<!-- 다이나믹셀은 고유 ID를 가지고, Main Controller와 패킷을 사용하여 통신합니다. 
-
-만약 조립된 로봇에서 고유 ID가 2개 이상 존재 할 경우, 통신 실패 및 다이나믹셀 위자드 2.0에서 다이나믹셀 검색에 실패할 수 있습니다. 
-
-`ID 진단`을 사용하면, 조립된 로봇의 케이블을 분리하지않고 각 다이나믹셀에 고유 ID를 쉽게 할당 할 수 있습니다. -->
+<div class="notice">{{ supported_dynamixel | markdownify }}</div>
 
 자세한 내용은, 상단의 영상 또는 아래의 가이드를 참고하세요.
 
@@ -536,7 +524,7 @@ sidebar:
 
     ![](/assets/images/sw/dynamixel/wizard2/id_inspection/id_inspection_step2_01_kr.png)  
 
-    **참고**: 다이나믹셀이 검색 되지않는다면, [펌웨어 복구](#펌웨어-복구) 진행 후, 다시 시도 하세요.
+    **참고**: 다이나믹셀이 검색 되지않는다면, [펌웨어 복구](#펌웨어-복구) 또는 [펌웨어 업데이트](#펌웨어-업데이트)를 통해 최신펌웨어로 업데이트하세요.
     {: .notice}
 
 4. 검색이 끝나면, `다음` 버튼을 클릭하여, **ID 설정** 단계로 이동하세요.
@@ -549,10 +537,10 @@ sidebar:
 
     ![](/assets/images/sw/dynamixel/wizard2/id_inspection/id_inspection_step3_02_kr.png)  
 
-    **참고** : 항목 클릭시, 해당하는 다이나믹셀의 상단 LED가 깜밖입니다. LED를 통해, 연결된 다이나믹셀의 위치를 파악하세요.
+    **참고** : 항목 클릭시, 해당하는 다이나믹셀의 상단 LED가 깜밖입니다. LED를 통해, 연결된 다이나믹셀의 위치를 확인하세요.
     {: .notice}
 
-6. 중복된 ID가 아닌 항목은 초록색으로 표시됩니다. ID 할당이 끝나면, `적용`을 클릭하여, 저장된 ID를 다이나믹셀에 할당 하세요.
+6. 중복된 ID가 아닌 항목은 초록색으로 표시됩니다. ID 할당이 끝나면, `적용`을 클릭하여, 저장된 ID를 다이나믹셀에 할당하세요.
 
     ![](/assets/images/sw/dynamixel/wizard2/id_inspection/id_inspection_step4_01_kr.png)  
 
@@ -566,7 +554,11 @@ sidebar:
 
 ## [백업 및 복구](#백업-및-복구)
 
-`백업` 기능을 통해, 컨트롤 테이블에 저장된 EEPROM 및 일부 RAM 영역의 데이터를 저장 할 수 있습니다. 펌웨어 복구 또는 데이터가 초기화 된경우에 유용하게 사용할수 있습니다. 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CFinASETHiQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+> DYNAMIXEL Tips \| EEPROM and RAM Data Restoring Using Backup Funcion 
+
+`백업` 기능을 통해, 컨트롤 테이블에 저장된 EEPROM 및 일부 RAM 영역의 데이터를 다이나믹셀 내부에 저장 할 수 있습니다. 펌웨어 복구 또는 데이터가 초기화 된경우에 유용하게 사용할수 있습니다. 
 
 저장된 데이터는 `EEPROM 복구` 기능을 통해, 다시 불러올수 있습니다. 
 
@@ -580,8 +572,10 @@ sidebar:
 - Profile Velocity
 - Indirect Addresse
 
-**참고**: 백업후, RAM 영역의 복구를 위해서는, 컨트롤 테이블의 `Startup Configuration` 주소의 **Restore RAM** 항목 을 활성화 시켜야합니다. 
+**참고**: 백업후, RAM 영역의 복구를 위해서는, 컨트롤 테이블에서 `Startup Configuration` 주소의 **Restore RAM** 항목을 활성화 시켜야합니다. [RAM 영역 복구하기](#ram-영역-복구하기)를 참고하세요.
 {: .notice}
+
+<div class="notice">{{ supported_dynamixel | markdownify }}</div>
 
 아래는 `백업`을 활용한 예시 입니다. 
 
@@ -601,10 +595,14 @@ sidebar:
 
     ![](/assets/images/sw/dynamixel/wizard2/backup/backup_click_backup_kr.png)
     
+    **주의**: `백업` 사용 전, 아래 이미지 처럼 다이나믹셀을 **Torque Off** 상태로 변경 하세요. 그렇지않으면, `백업`에 실패합니다.  
+    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_torque_off_kr.png)
+    {: .notice--warning}
+    
     **참고**: 백업 후, `Backup Ready`가 '1'로 활성화 됩니다.  
     ![](/assets/images/sw/dynamixel/wizard2/backup/backup_backup_enabled.png)
     {: .notice}
-  
+    
 4. 도구 > `컨트롤 테이블` > `EEPROM 복구`를 클릭하세요.
 
     ![](/assets/images/sw/dynamixel/wizard2/backup/backup_click_restore_kr.png)

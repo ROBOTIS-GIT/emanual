@@ -500,15 +500,19 @@ When positioning a mouse cursor on its model name, **Firmware update is availabl
 
 > DYNAMIXEL Tips \| Use ID Inspector to Change Overlapping IDs with Ease
 
-As the DYNAMIXEL can be distinguished by its own ID in packet communication with your main controller, the ID on DYNAMIXEL has to be unique. 
+{% capture supported_dynamixel %}
+**Supported DYNAMIXEL**
+- [DYNAMIXEL-X](/docs/en/dxl/x/) (Firmware **v45** or **above**, For X330 Series: Firmware **v46** or **above**) 
+- [DYNAMIXEL-P](/docs/en/dxl/p/) (Firmware **v12** or **above**)  
+{% endcapture %}
+
+As the DYNAMIXEL can be distinguished by its own ID in packet communication with your main controller, the ID assigned on DYNAMIXEL has to be unique. 
 
 If there are overlapping ID in your application, communication between the main controller and DYNAMIXELs or scanning DYANMIXEL via DYNAMIXEL Wizard 2.0 will be failed.  
 
 The `ID Inspection` resolves the overlapping ID although they remain wired. For more details, watch a tutorial video above or read through the following instructions. 
 
-<!-- - A Robot fully assembled with overlapping IDs.
-- Performed Firmware Recovery that set the DYNAMIXEL as default state, and DYNAMIXELs are turned as default setting.
-- Setting ID for multiple factory released DYNAMIXEL (ID: 1, Default Setting) -->
+<div class="notice">{{ supported_dynamixel | markdownify }}</div>
 
 1. Go to `Tool` > `ID Inspection`
 
@@ -554,7 +558,11 @@ The `ID Inspection` resolves the overlapping ID although they remain wired. For 
 
 ## [Data Backup and Restore](#data-backup-and-restore)
 
-Backup data stored in both EEPROM and RAM (Specific items only) using `Backup` function. 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CFinASETHiQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+> DYNAMIXEL Tips \| EEPROM and RAM Data Restoring Using Backup Funcion
+
+Data in both EEPROM and RAM (Specific items only) can be stored inside DYNAMIXEL using `Backup` function.
 
 This can be useful if the DYNAMIXEL are reset after the [Firmware Recovery](#firmware-recovery) or any situation in data reset.  
 
@@ -571,6 +579,8 @@ See the available items in Control Table for data backup,
 
 **Note**: Be sure to set a bit of **Restore RAM** as '1' from `Startup Configuration` address in Control Table, in order to restore stored RAM data by `Backup`.
 {: .notice}
+
+<div class="notice">{{ supported_dynamixel | markdownify }}</div>
 
 See the following instruction for the use of `Backup`. 
 
@@ -590,6 +600,10 @@ See the following instruction for the use of `Backup`.
 
     ![](/assets/images/sw/dynamixel/wizard2/backup/backup_click_backup.png)
     
+    **WARNING**: Before `Backup`, be sure to have the DYNAMIXEL **Torque Off** status as the image below. Otherwise, `Backup` will get failed.  
+    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_torque_off.png)
+    {: .notice--warning}
+    
     **Note**: `Backup Ready` becomes '1' after `Backup`.  
     ![](/assets/images/sw/dynamixel/wizard2/backup/backup_backup_enabled.png)
     {: .notice}
@@ -604,11 +618,11 @@ See the following instruction for the use of `Backup`.
 
 ### [How to Restore RAM Data](#how-to-restore-ram-data)
 
-1. Set a bit of **Restore RAM** as '1' from `Startup Configuration` address in Control Table
+1. Set a bit of **Restore RAM** as '1' of `Startup Configuration` in Control Table
 
    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_enable_restore_ram.png)
        
-2. Rebooting DYNAMIXEL calls stored data from `Backup`. This will calls data in RAM whenever the DYNAMIXEL starts. 
+2. Whenever rebooting or starting the DYNAMIXEL, stored RAM data will be called. 
 
    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_restore_ram2.png)
        
