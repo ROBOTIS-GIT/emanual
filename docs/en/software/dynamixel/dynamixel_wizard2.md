@@ -45,7 +45,7 @@ The following features are provided with DYNAMIXEL Wizard 2.0.
 ## [Supported OS](#supported-os)
 
 - Windows 7 / 8.1 / 10 (32 bit and 64 bit)
-- Linux 
+- Linux
   - Ubuntu 18.04 (64 bit)
   - Ubuntu 16.04 (64 bit)
 - MacOS 10.12 / 10.13 / 10.14 (64bit)
@@ -247,7 +247,7 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 
 4. Select `Goal Position` or `Goal Velocity` item in the control table in the middle column.
 
-    **NOTE**: Read the control table of your DYNAMIXEL as the item can be different depending on the model and Operating Mode of the DYNAMIXEL. 
+    **NOTE**: Read the control table of your DYNAMIXEL as the item can be different depending on the model and Operating Mode of the DYNAMIXEL.
     {: .notice}
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_004.png)     
@@ -258,13 +258,13 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
     {: .notice--warning}
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_004.png)  
-    - When selecting `Position control` from Operation Mode, you can use a virtual dial controller 
+    - When selecting `Position control` from Operation Mode, you can use a virtual dial controller
     - Control a horn of DYNAMIXEL by using the controller.
     - Input values into the input window.  
-    - When selecting `Velocitiy control`/`Current control`/`PWM control` from Operation Mode, you can use a virtual joypad. 
-    - Move a horn to CW / CCW by using the controller. 
+    - When selecting `Velocitiy control`/`Current control`/`PWM control` from Operation Mode, you can use a virtual joypad.
+    - Move a horn to CW / CCW by using the controller.
     - Input values into the input window to increase (or decrease) the speed of a horn of DYNAMIXEL.
-    - More information on the virtual controller is available at [Modifying Control Value](#modifying-control-values) 
+    - More information on the virtual controller is available at [Modifying Control Value](#modifying-control-values)
 
 6. `Communication Status` on the buttom left corner represents communication status between PC and DYNAMIXEL's.
 
@@ -294,31 +294,31 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_003.png)
 
-4. Double-click a color of a item to call `Read Item Settings` box. 
-  
+4. Double-click a color of a item to call `Read Item Settings` box.
+
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004.png)
-5. Diverse option can be used. 
-  
+5. Diverse option can be used.
+
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004_1.png)
-        
+
     - Y-Axis: it adds Y-axis to a selected item. The Maximum is 9.    
 
       ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004_y_axis_01.png)
-      
+
       ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004_y_axis_02.png)
-      
-    - Scale: When a certain number is set, a value of selected item of y-axis represents the value multiplied of item by the scale. 
-  
+
+    - Scale: When a certain number is set, a value of selected item of y-axis represents the value multiplied of item by the scale.
+
       ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004_scale_01.png)
-      
+
       ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004_scale_02.png)
-      
-    - Offset: It adds Offset to a selected item. Use the option to separate overlapped items on the graph such as `Present Position` and `Goal Position` 
-     
+
+    - Offset: It adds Offset to a selected item. Use the option to separate overlapped items on the graph such as `Present Position` and `Goal Position`
+
       ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004_offset_01.png)
-      
+
       ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004_offset_02.png)
-        
+
 5. Communication interval can be set between 1 ~ 1000ms. Smaller interval will display refined graph.
 
     **NOTE** : The actual communication interval can differ by baudrate and the hardware spec of the PC.
@@ -346,16 +346,16 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 
 3. After start plotting, enable Torque first then change `Goal Position` to see how `Present Position` data is plotted in real time.
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_start_005.png) 
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_start_005.png)
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_start_006.png) 
-    
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_start_006.png)
+
 4. Disable the plotting graph by clicking the certain item on the right side of the graph window.  
-    
+
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_start_004.png)
 
 5. Use the features to control graph window.
-  
+
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_start_002.png)
 
     - Start/Stop : Start/Stop plotting
@@ -369,7 +369,7 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
       - `Ctrl` + `Select Area` : Zoom In on Y axis only
       - Use mouse wheel to undo / redo zoom level setting
     - While running the graph, use `Ctrl` + `Mouse Wheel` to adjust X axis length from 1 to 10 seconds.
-    
+
 ## [Packet](#packet)
 
 1. Go to `View` > `Packet` to display the packet window.
@@ -387,9 +387,9 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 3. Select Protocol Type and instruction to use.
   In this example, `Write` instruction for Protocol Type `2.0` is selected.
 
-    **NOTE** : Protocol Type can be different depending on a model of DYNAMIXEL. Confirm [Protocol Type](/docs/en/popup/faq_protocol_compatibility_table){: .popup} of your DYNAMIXEL. 
+    **NOTE** : Protocol Type can be different depending on a model of DYNAMIXEL. Confirm [Protocol Type](/docs/en/popup/faq_protocol_compatibility_table){: .popup} of your DYNAMIXEL.
     {: .notice}
-    
+
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_003.png)
 
@@ -411,11 +411,11 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_006.png)
 
 
-## [Firmware Update](#firmware-update) 
+## [Firmware Update](#firmware-update)
 
 Update firmware version of DYNAMIXEL, if you see its model name with a special charactor (\*), on the device list, in light grey.  
 When positioning a mouse cursor on its model name, **Firmware update is available** will be shown up.  
-  
+
 ![](/assets/images/sw/dynamixel/wizard2/wizard2_update_notification.png)
 
 1. Go to `Tools` > `Firmware Update`
@@ -469,9 +469,9 @@ When positioning a mouse cursor on its model name, **Firmware update is availabl
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_002.png)
 
-4. Select a desired firmware version. 
-    
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_003.png) 
+4. Select a desired firmware version.
+
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_003.png)
 
 5. The proper communication port that is connected to DYNAMIXEL has to be selected manually. If the port is in use, it has to be released first.
 
@@ -485,7 +485,7 @@ When positioning a mouse cursor on its model name, **Firmware update is availabl
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_005.png)
 
 7. If DYNAMIXEL is successfully detected, wizard begins firmware recovery. Please do **NOT** disconnect or turn off DYNAMIXEL.
-    
+
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_006.png)
 
 8. Confirm the firmware recovery result.
@@ -494,6 +494,140 @@ When positioning a mouse cursor on its model name, **Firmware update is availabl
 
 # [Advanced Features](#advanced-features)
 
+## [ID Inspection](#id-inspection)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/B0x1PEISavw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+> DYNAMIXEL Tips \| Use ID Inspector to Change Overlapping IDs with Ease
+
+{% capture supported_dynamixel %}
+**Supported DYNAMIXEL**
+- [DYNAMIXEL-X](/docs/en/dxl/x/) (Firmware **v45** or **above**, For X330 Series: Firmware **v46** or **above**) 
+- [DYNAMIXEL-P](/docs/en/dxl/p/) (Firmware **v12** or **above**)  
+{% endcapture %}
+
+As the DYNAMIXEL can be distinguished by its own ID in packet communication with your main controller, the ID assigned on DYNAMIXEL has to be unique. 
+
+If there are overlapping ID in your application, communication between the main controller and DYNAMIXELs or scanning DYANMIXEL via DYNAMIXEL Wizard 2.0 will be failed.  
+
+The `ID Inspection` resolves the overlapping ID although they remain wired. For more details, watch a tutorial video above or read through the following instructions. 
+
+<div class="notice">{{ supported_dynamixel | markdownify }}</div>
+
+1. Go to `Tool` > `ID Inspection`
+
+    ![](/assets/images/sw/dynamixel/wizard2/id_inspection/id_inspection_step1_01.png)   
+
+2. Select your right USB port and Baud rates, and click on `Scan`
+
+    ![](/assets/images/sw/dynamixel/wizard2/id_inspection/id_inspection_step1_02.png)  
+
+3. Once DYNAMIXEL scan is started, state of scanning DYNAMIXEL is displayed.
+
+    ![](/assets/images/sw/dynamixel/wizard2/id_inspection/id_inspection_step2_01.png)  
+
+    **Note**: Perform [Firmware Recovery](#firmware-recovery) if you fail to scan any DYNAMIXEL.
+    {: .notice}
+
+4. Click on `Next` for "ID Setting"
+
+    ![](/assets/images/sw/dynamixel/wizard2/id_inspection/id_inspection_step2_02.png)  
+
+    ![](/assets/images/sw/dynamixel/wizard2/id_inspection/id_inspection_step3_01.png)  
+
+
+5. Select an item (colored red) and assign new ID from the right box to resolve ID overlapping.
+
+    ![](/assets/images/sw/dynamixel/wizard2/id_inspection/id_inspection_step3_02.png)  
+
+    **Note** : If you select any item in the list, the DYNAMIXEL will blink once.
+    {: .notice}
+
+6. If new ID are saved to the items of DYNAMIXEL, it will be colored green. Once completed, click on `Apply`.
+
+    ![](/assets/images/sw/dynamixel/wizard2/id_inspection/id_inspection_step4_01.png)  
+
+7. Click on `Finish` to exit the `ID Inspection` window.
+
+    ![](/assets/images/sw/dynamixel/wizard2/id_inspection/id_inspection_step4_02.png)  
+
+8. Confirm the DYNAMIXEL Wizard 2.0 scans DYNAMIXELs successfully.
+
+    ![](/assets/images/sw/dynamixel/wizard2/id_inspection/id_inspection_done.png)  
+
+
+## [Data Backup and Restore](#data-backup-and-restore)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CFinASETHiQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+> DYNAMIXEL Tips \| EEPROM and RAM Data Restoring Using Backup Funcion
+
+Data in both EEPROM and RAM (Specific items only) can be stored inside DYNAMIXEL using `Backup` function.
+
+This can be useful if the DYNAMIXEL are reset after the [Firmware Recovery](#firmware-recovery) or any situation in data reset.  
+
+The stored data by `backup` can be restored in using `Restore EEPROM`.
+
+See the available items in Control Table for data backup, 
+- All Data in EERPOM 
+- Velocity P.I Gains
+- Position P.I.D Gains
+- Feedforward 1st & 2nd Gains
+- Profile Acceleration
+- Profile Velocity
+- Indirect Addresses
+
+**Note**: Be sure to set a bit of **Restore RAM** as '1' from `Startup Configuration` address in Control Table, in order to restore stored RAM data by `Backup`.
+{: .notice}
+
+<div class="notice">{{ supported_dynamixel | markdownify }}</div>
+
+See the following instruction for the use of `Backup`. 
+
+1. [Scan DYNAMIXEL](#scan-dynamixel). 
+
+2. Change and save value of data in EEPROM and RAM. 
+
+    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_eeprom.png)  
+    > Data in EEPROM
+
+    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_ram1.png)
+
+    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_ram2.png)  
+    > Data in RAM
+    
+3. Go to `Tool` > `Control Table` > `Backup` 
+
+    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_click_backup.png)
+    
+    **WARNING**: Before `Backup`, be sure to have the DYNAMIXEL **Torque Off** status as the image below. Otherwise, `Backup` will get failed.  
+    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_torque_off.png)
+    {: .notice--warning}
+    
+    **Note**: `Backup Ready` becomes '1' after `Backup`.  
+    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_backup_enabled.png)
+    {: .notice}
+  
+4. Go to `Tool` > `Control Table` > `Restore EEPROM`
+
+    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_click_restore.png)
+
+5. Confirm that backup data are restored. 
+
+    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_restore_eeprom.png)
+
+### [How to Restore RAM Data](#how-to-restore-ram-data)
+
+1. Set a bit of **Restore RAM** as '1' of `Startup Configuration` in Control Table
+
+   ![](/assets/images/sw/dynamixel/wizard2/backup/backup_enable_restore_ram.png)
+       
+2. Whenever rebooting or starting the DYNAMIXEL, stored RAM data will be called. 
+
+   ![](/assets/images/sw/dynamixel/wizard2/backup/backup_restore_ram2.png)
+       
+   ![](/assets/images/sw/dynamixel/wizard2/backup/backup_restore_ram1.png)
+   
 ## [Modifying Control Values](#modifying-control-values)
 
 1. Drag or slide the interface (Moderately changes value)
@@ -661,7 +795,6 @@ In order to use the minimum communication interval(1 [ms]), please follow the in
     # cat /sys/bus/usb-serial/devices/ttyUSB0/latency_timer
     1
     ```
-
 
 ### [DYNAMIXEL Setting](#dynamixel-setting)
 

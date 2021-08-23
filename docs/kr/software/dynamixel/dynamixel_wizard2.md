@@ -45,13 +45,13 @@ sidebar:
 ## [지원 운영체제](#지원-운영체제)
 
 - 윈도우 7 / 8.1 / 10 (32 bit and 64 bit)
-- 리눅스 
+- 리눅스
   - 우분투 18.04 (64 bit)
   - 우분투 16.04 (64 bit)
 - 맥 OS 10.12 / 10.13 / 10.14 (64bit)
 
 {% capture supported_platform %}
-**경고**: 
+**경고**:
 - 다이나믹셀 위자드 2.0은 노트북 및 데스크탑 환경에서만 테스트 되었습니다.
 - x86기반 플랫폼에서 다이나믹셀 위자드 2.0을 사용 해주세요.
 {% endcapture %}
@@ -123,13 +123,13 @@ sidebar:
 4. 안내에 따라 `Next`버튼을 눌러 설치를 진행합니다.
 
 5. 설치가 끝난 후, USB 포트에 접근하기 위해 사용자 계정을 dialout 그룹에 추가하세요. (아래 커맨드의 **\<your_account_id>**에 해당 PC에서 사용하는 계정으로 교체 하세요.)
-  
+
     ```bash
     $ sudo usermod -aG dialout <your_account_id>
     ```
 
 6. Dialout 그룹에 계정 추가를 완료하기위해 시스템을 재부팅 하세요.
-  
+
     ```bash
     $ reboot
     ```
@@ -236,16 +236,16 @@ sidebar:
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_003_kr.png)
 
 4. 부가 메뉴의 `토크` 버튼을 클릭하여 다이나믹셀의 토크를 켭니다.
-    
+
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_torque_on_kr.png)  
 
 5. 컨트롤 테이블에서 `Goal Position` 또는 `Goal Velocity` 항목을 찾아 선택합니다.
-   
+
    **참고** : 다이나믹셀 모델 및 동작모드(Operation Mode)에 따라 항목은 달라질수 있습니다. **관련 다이나믹셀의 컨트롤 테이블을 반드시 확인하세요.**
     {: .notice}
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_004_kr.png) 
-    
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_004_kr.png)
+
 6. 우측 하단의 위치 또는 속도 값 컨트롤을 사용하여 모터를 움직여봅니다.
 
     **경고** : 값을 조정하는 과정에서 모터가 갑작스럽게 움직일 수 있으니 주의하세요.  
@@ -256,7 +256,7 @@ sidebar:
     - 가상 다이얼 컨트롤러를 사용하여, 원하는 위치로 이동시켜 보세요.
     - 입력창에서 컨트롤 아이템 값을 직접 입력가능합니다.
     - 자세한 내용은 [컨트롤 아이템 값 변경](#컨트롤-아이템-값-변경)에서 확인하세요.
- 
+
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_004_velocity_mode_joypad_kr.png)  
     - `Velocitiy control`/`Current control`/`PWM control` 선택시, 가상 조이패드 컨트롤러로 변경됩니다.
     - 가상 조이패드 컨트롤러를 사용하여, CW 및 CCW 방향으로 움직여보세요.      
@@ -292,31 +292,31 @@ sidebar:
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_003_kr.png)
 
 4. 추가된 항목의 색깔을 클릭하면 항목 추가 상자가 나타납니다.
-    
+
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004_kr.png)
 
 5. 항목 추가 상자에서 색깔, 비율, 보조 Y축을 설정할 수 있습니다.    
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004_1_kr.png)
-    
+
     - Y축: 선택된 항목의 Y축을 그래프에 표시합니다. 총 10개의 Y축을 그래프에 나타낼 수 있습니다.
-      
+
         ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004_y_axis_01_kr.png)
-        
+
         ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004_y_axis_02_kr.png)
-        
-    - 비율: 그래프에서 선택된 항목의 Y축 값에 비율을 곱해서 나타냅니다. 
-    
+
+    - 비율: 그래프에서 선택된 항목의 Y축 값에 비율을 곱해서 나타냅니다.
+
         ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004_scale_01_kr.png)
-        
+
         ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004_scale_02_kr.png)
-        
-    - 오프셋: 선택된 항목에 오프셋 값을 더하여 표시합니다. `Present Position` 과 `Goal Position` 같이 유사한 값을 가진 그래프를 분리하고 싶을 때 사용하세요. 
+
+    - 오프셋: 선택된 항목에 오프셋 값을 더하여 표시합니다. `Present Position` 과 `Goal Position` 같이 유사한 값을 가진 그래프를 분리하고 싶을 때 사용하세요.
 
         ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004_offset_01_kr.png)
-        
+
         ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004_offset_02_kr.png)
-        
+
 6. 통신주기(Interval)는 1~1000ms로 설정가능합니다. 통신주기가 작을수록 더 세밀한 그래프가 표현됩니다.
 
     **참고** : 실제 통신주기는 통신속도와 PC사양에 따라 달라질 수 있습니다.  
@@ -344,8 +344,8 @@ sidebar:
 
 3. 컨트롤 테이블에서 `Goal Position` 항목의 값을 변경하면 실시간으로 변경되는 `Present Position` 을 확인할 수 있습니다.
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_start_005_kr.png) 
-    
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_start_005_kr.png)
+
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_start_006_kr.png)  
 
 4. 그래프의 우측에서 항목을 클릭하여, 그래프를 비활성화 시킬수 있습니다.  
@@ -355,7 +355,7 @@ sidebar:
 5. 다음의 메뉴를 통해 그래프를 제어할 수 있습니다.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_start_002_kr.png)  
-    
+
     - 시작/정지 : 그래프 시작/정지
     - 리셋 : 줌화면에서 원래화면으로 복귀
     - 캡처 : 그래프를 이미지로 저장
@@ -367,7 +367,7 @@ sidebar:
       - `Ctrl` + 드래그 : x축 고정, y축 확대
       - 마우스 휠로 이전 줌, 다음 줌으로 이동
     - 그래프 동작시 Ctrl과 마우스휠로 시간축을 1~10초로 1초단위로 조절
-    
+
 ## [패킷](#패킷)
 
 1. 메인 메뉴에서 `보기` > `패킷` 를 선택하면 패킷창이 나타납니다.
@@ -384,7 +384,7 @@ sidebar:
 
 3. 우측 메뉴에서 통신할 프로토콜 버전과 Instruction을 설정할 수 있습니다.  
   프로토콜 버전을 `2.0` 으로 Instruction을 `Write` 로 설정합니다.  
-  
+
     **참고** : 각 다이나믹셀은 지원하는 프로토콜 버전이 다릅니다. **관련 다이나믹셀의 [프로토콜 버전](/docs/kr/popup/faq_protocol_compatibility_table){: .popup}을 반드시 확인하세요.**
     {: .notice}
 
@@ -406,7 +406,6 @@ sidebar:
 6. `전송` 버튼을 클릭하여 패킷을 전송합니다.  
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_006_kr.png)
-
 
 ## [펌웨어 업데이트](#펌웨어-업데이트)
 
@@ -467,7 +466,7 @@ sidebar:
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_002_kr.png)
 
 4. 복구할 펌웨어 버전을 선택하십시오.
-    
+
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_003_kr.png)
 
 5. 사용자가 다이나믹셀이 연결된 포트를 수동으로 설정해 주어야 합니다. 포트가 사용중이면 다이나믹셀을 인식할 수 없으니 다른 프로그램을 종료하고 진행하십시오.  
@@ -475,7 +474,6 @@ sidebar:
     **주의** : 다이나믹셀 펌웨어 복구시에는 반드시 한개의 다이나믹셀만 연결되어 있어야 합니다.  
     {: .notice--warning}
 
-    
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_004_kr.png)
 
 6. 다이나믹셀을 찾기 위해 복구할 다이나믹셀의 전원을 껐다가 켜십시오.  
@@ -492,7 +490,140 @@ sidebar:
 
 # [고급 기능](#고급-기능)
 
-## [컨트롤 아이템 값 변경](#컨트롤-아이템-값-변경)
+## [ID 진단](#id-진단)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/B0x1PEISavw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+
+> DYNAMIXEL Tips \| Use ID Inspector to Change Overlapping IDs with Ease
+
+{% capture supported_dynamixel %}
+**지원 다이나믹셀**
+- [DYNAMIXEL-X](/docs/kr/dxl/x/) (펌웨어 버전 **45 이상**, X330 시리즈: 펌웨어 버전 **46 이상**) 
+- [DYNAMIXEL-P](/docs/kr/dxl/p/) (펌웨어 버전 **12 이상**)
+{% endcapture %}
+
+다이나믹셀은 고유 ID를 가지고, Main Controller와 패킷을 사용하여 통신합니다. 
+
+만약 조립된 로봇에서 고유 ID가 2개 이상 존재 할 경우, 통신 실패 및 다이나믹셀 위자드 2.0에서 다이나믹셀 검색에 실패할 수 있습니다. 
+
+`ID 진단`을 사용하면, 조립된 로봇의 케이블을 분리하지않고 각 다이나믹셀에 고유 ID를 쉽게 할당 할 수 있습니다.
+
+<div class="notice">{{ supported_dynamixel | markdownify }}</div>
+
+자세한 내용은, 상단의 영상 또는 아래의 가이드를 참고하세요.
+
+1. 도구 > `ID 진단`을 클릭하세요.
+
+    ![](/assets/images/sw/dynamixel/wizard2/id_inspection/id_inspection_step1_01_kr.png)  
+
+2. 다이나믹셀과 연결된 USB 포트 및 다이나믹셀의 보드레이트를 선택후, `검색`을 클릭하세요.  
+
+    ![](/assets/images/sw/dynamixel/wizard2/id_inspection/id_inspection_step1_02_kr.png)  
+
+3. 다이나믹셀 검색이 시작되면, 상태창에 해당 다이나믹셀의 ID가 나타납니다.
+
+    ![](/assets/images/sw/dynamixel/wizard2/id_inspection/id_inspection_step2_01_kr.png)  
+
+    **참고**: 다이나믹셀이 검색 되지않는다면, [펌웨어 복구](#펌웨어-복구) 또는 [펌웨어 업데이트](#펌웨어-업데이트)를 통해 최신펌웨어로 업데이트하세요.
+    {: .notice}
+
+4. 검색이 끝나면, `다음` 버튼을 클릭하여, **ID 설정** 단계로 이동하세요.
+
+    ![](/assets/images/sw/dynamixel/wizard2/id_inspection/id_inspection_step2_02_kr.png)  
+
+    ![](/assets/images/sw/dynamixel/wizard2/id_inspection/id_inspection_step3_01_kr.png)  
+
+5. ID 설정 단계에서, 중복된 ID를 가진 다이나믹셀은 빨간색으로 표시됩니다. ID를 새롭게 지정 후 `저장`을 클릭하세요.
+
+    ![](/assets/images/sw/dynamixel/wizard2/id_inspection/id_inspection_step3_02_kr.png)  
+
+    **참고** : 항목 클릭시, 해당하는 다이나믹셀의 상단 LED가 깜밖입니다. LED를 통해, 연결된 다이나믹셀의 위치를 확인하세요.
+    {: .notice}
+
+6. 중복된 ID가 아닌 항목은 초록색으로 표시됩니다. ID 할당이 끝나면, `적용`을 클릭하여, 저장된 ID를 다이나믹셀에 할당하세요.
+
+    ![](/assets/images/sw/dynamixel/wizard2/id_inspection/id_inspection_step4_01_kr.png)  
+
+7. `끝` 을 클릭하여, `ID 진단`을 종료합니다.
+
+    ![](/assets/images/sw/dynamixel/wizard2/id_inspection/id_inspection_step4_02_kr.png)  
+
+7. 다이나믹셀 검색 시, `ID 진단`에서 할당한 ID가 성공적으로 적용된것을 확인할수 있습니다.
+
+    ![](/assets/images/sw/dynamixel/wizard2/id_inspection/id_inspection_done_kr.png)  
+
+## [백업 및 복구](#백업-및-복구)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CFinASETHiQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+> DYNAMIXEL Tips \| EEPROM and RAM Data Restoring Using Backup Funcion 
+
+`백업` 기능을 통해, 컨트롤 테이블에 저장된 EEPROM 및 일부 RAM 영역의 데이터를 다이나믹셀 내부에 저장 할 수 있습니다. 펌웨어 복구 또는 데이터가 초기화 된경우에 유용하게 사용할수 있습니다. 
+
+저장된 데이터는 `EEPROM 복구` 기능을 통해, 다시 불러올수 있습니다. 
+
+백업 및 복구 가능영역은 다음과 같습니다. 
+
+- EERPOM 영역 전체 
+- Velocity P.I Gains
+- Position P.I.D Gains
+- Feedforward 1st & 2nd Gains
+- Profile Acceleration
+- Profile Velocity
+- Indirect Addresse
+
+**참고**: 백업후, RAM 영역의 복구를 위해서는, 컨트롤 테이블에서 `Startup Configuration` 주소의 **Restore RAM** 항목을 활성화 시켜야합니다. [RAM 영역 복구하기](#ram-영역-복구하기)를 참고하세요.
+{: .notice}
+
+<div class="notice">{{ supported_dynamixel | markdownify }}</div>
+
+아래는 `백업`을 활용한 예시 입니다. 
+
+1. [다이나믹셀 검색하기](#다이나믹셀-검색하기)
+
+2. EEPROM 및 RAM 영역의 컨트롤테이블 값을 설정하세요.
+
+    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_eeprom.png)  
+    > EEPROM 설정
+
+    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_ram1.png)
+
+    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_ram2.png)  
+    > RAM 영역 설정
+    
+3. 도구 > `컨트롤 테이블` > `백업` 을 클릭하세요.
+
+    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_click_backup_kr.png)
+    
+    **주의**: `백업` 사용 전, 아래 이미지 처럼 다이나믹셀을 **Torque Off** 상태로 변경 하세요. 그렇지않으면, `백업`에 실패합니다.  
+    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_torque_off_kr.png)
+    {: .notice--warning}
+    
+    **참고**: 백업 후, `Backup Ready`가 '1'로 활성화 됩니다.  
+    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_backup_enabled.png)
+    {: .notice}
+    
+4. 도구 > `컨트롤 테이블` > `EEPROM 복구`를 클릭하세요.
+
+    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_click_restore_kr.png)
+
+5. `EEPROM 복구`이후 다이나믹셀은 백업된 데이터를 불러옵니다.
+
+    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_restore_eeprom.png)
+
+### [RAM 영역 복구하기](#ram-영역-복구하기)
+
+1. EEPROM에서 `StartUp Configuration` 항목의 `RAM Restore` 비트를 '1'로 설정 하세요.
+
+   ![](/assets/images/sw/dynamixel/wizard2/backup/backup_enable_restore_ram.png)
+       
+2. 다이나믹셀 재부팅시, 저장된 RAM영역을 불러옵니다. 
+
+   ![](/assets/images/sw/dynamixel/wizard2/backup/backup_restore_ram2.png)
+       
+   ![](/assets/images/sw/dynamixel/wizard2/backup/backup_restore_ram1.png)
+
+## [컨트롤 아이템 값 변경](#컨트롤-아이템-값-변경)  
 
 1. 마우스 왼쪽 버튼 드래그로 변경하기 (값을 크게 변경할 때 사용합니다.)  
 
@@ -670,7 +801,6 @@ sidebar:
 2. 다이나믹셀의 통신속도(Baud Rate)를 최대로 설정하고 `Return Delay Time` 을 `0` 으로 설정합니다.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_007_kr.png)
-
 
 [기본 기능 > 그래프]: #그래프
 [프로토콜 1.0]: /docs/kr/dxl/protocol1/
