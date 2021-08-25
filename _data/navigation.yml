@@ -4329,6 +4329,9 @@ xh430-v210:
         - title: "Min/Max Position Limit(48, 52)"
           titlekr: "Min/Max Position Limit(48, 52)"
           url: /dxl/x/xh430-v210/#minmax-position-limit48-52
+        - title: "Startup Configuration(60)"
+          titlekr: "Startup Configuration(60)"
+          url: /dxl/x/xh430-v210/#startup-configuration60    
         - title: "Shutdown(63)"
           titlekr: "Shutdown(63)"
           url: /dxl/x/xh430-v210/#shutdown63
@@ -4410,6 +4413,9 @@ xh430-v210:
         - title: "Present Temperature(146)"
           titlekr: "Present Temperature(146)"
           url: /dxl/x/xh430-v210/#present-temperature146
+        - title: "Backup Ready(147)"
+          titlekr: "Backup Ready(147)"
+          url: /dxl/x/xh430-v210/#backup-ready147        
         - title: "Indirect Address"
           titlekr: "Indirect Address"
           url: /dxl/x/xh430-v210/#indirect-address
@@ -4569,6 +4575,9 @@ xh430-v350:
         - title: "Min/Max Position Limit(48, 52)"
           titlekr: "Min/Max Position Limit(48, 52)"
           url: /dxl/x/xh430-v350/#minmax-position-limit48-52
+        - title: "Startup Configuration(60)"
+          titlekr: "Startup Configuration(60)"
+          url: /dxl/x/xh430-v350/#startup-configuration60       
         - title: "Shutdown(63)"
           titlekr: "Shutdown(63)"
           url: /dxl/x/xh430-v350/#shutdown63
@@ -4650,6 +4659,9 @@ xh430-v350:
         - title: "Present Temperature(146)"
           titlekr: "Present Temperature(146)"
           url: /dxl/x/xh430-v350/#present-temperature146
+        - title: "Backup Ready(147)"
+          titlekr: "Backup Ready(147)"
+          url: /dxl/x/xh430-v350/#backup-ready147        
         - title: "Indirect Address"
           titlekr: "Indirect Address"
           url: /dxl/x/xh430-v350/#indirect-address
@@ -4809,6 +4821,9 @@ xh430-w210:
         - title: "Min/Max Position Limit(48, 52)"
           titlekr: "Min/Max Position Limit(48, 52)"
           url: /dxl/x/xh430-w210/#minmax-position-limit48-52
+        - title: "Startup Configuration(60)"
+          titlekr: "Startup Configuration(60)"
+          url: /dxl/x/xh430-w210/#startup-configuration60          
         - title: "Shutdown(63)"
           titlekr: "Shutdown(63)"
           url: /dxl/x/xh430-w210/#shutdown63
@@ -4890,6 +4905,9 @@ xh430-w210:
         - title: "Present Temperature(146)"
           titlekr: "Present Temperature(146)"
           url: /dxl/x/xh430-w210/#present-temperature146
+        - title: "Backup Ready(147)"
+          titlekr: "Backup Ready(147)"
+          url: /dxl/x/xh430-w210/#backup-ready147        
         - title: "Indirect Address"
           titlekr: "Indirect Address"
           url: /dxl/x/xh430-w210/#indirect-address
@@ -5053,6 +5071,9 @@ xh430-w350:
         - title: "Min/Max Position Limit(48, 52)"
           titlekr: "Min/Max Position Limit(48, 52)"
           url: /dxl/x/xh430-w350/#minmax-position-limit48-52
+        - title: "Startup Configuration(60)"
+          titlekr: "Startup Configuration(60)"
+          url: /dxl/x/xh430-w350/#startup-configuration60       
         - title: "Shutdown(63)"
           titlekr: "Shutdown(63)"
           url: /dxl/x/xh430-w350/#shutdown63
@@ -5134,6 +5155,9 @@ xh430-w350:
         - title: "Present Temperature(146)"
           titlekr: "Present Temperature(146)"
           url: /dxl/x/xh430-w350/#present-temperature146
+        - title: "Backup Ready(147)"
+          titlekr: "Backup Ready(147)"
+          url: /dxl/x/xh430-w350/#backup-ready147         
         - title: "Indirect Address"
           titlekr: "Indirect Address"
           url: /dxl/x/xh430-w350/#indirect-address
@@ -5355,6 +5379,9 @@ xl330-m077:
       - title: "Min/Max Position Limit(48, 52)"
         titlekr: "Min/Max Position Limit(48, 52)"
         url: /dxl/x/xl330-m077/#minmax-position-limit48-52
+      - title: "Startup Configuration(60)"
+        titlekr: "Startup Configuration(60)"
+        url: /dxl/x/xl330-m077/#startup-configuration60
       - title: "PWM Slope(62)"
         titlekr: "PWM Slope(62)"
         url: /dxl/x/xl330-m077/#pwm-slope62
@@ -5439,6 +5466,9 @@ xl330-m077:
       - title: "Present Temperature(146)"
         titlekr: "Present Temperature(146)"
         url: /dxl/x/xl330-m077/#present-temperature146
+      - title: "Backup Ready(147)"
+        titlekr: "Backup Ready(147)"
+        url: /dxl/x/xl330-m077/#backup-ready147    
       - title: "Indirect Address"
         titlekr: "Indirect Address"
         url: /dxl/x/xl330-m077/#indirect-address
@@ -5447,8 +5477,8 @@ xl330-m077:
         url: /dxl/x/xl330-m077/#indirect-data
 - title: "How to Assemble"
   titlekr: "조립 예시"
-  url: /dxl/x/xl330-m288/#how-to-assemble
-  urlkr: /dxl/x/xl330-m288/#조립-예시
+  url: /dxl/x/xl330-m077/#how-to-assemble
+  urlkr: /dxl/x/xl330-m077/#조립-예시
 - title: "Reference"
   titlekr: "참고자료"
   url: /dxl/x/xl330-m077/#reference
@@ -5575,6 +5605,9 @@ xl330-m288:
       - title: "Min/Max Position Limit(48, 52)"
         titlekr: "Min/Max Position Limit(48, 52)"
         url: /dxl/x/xl330-m288/#minmax-position-limit48-52
+      - title: "Startup Configuration(60)"
+        titlekr: "Startup Configuration(60)"
+        url: /dxl/x/xl330-m288/#startup-configuration60
       - title: "PWM Slope(62)"
         titlekr: "PWM Slope(62)"
         url: /dxl/x/xl330-m288/#pwm-slope62
@@ -5659,6 +5692,9 @@ xl330-m288:
       - title: "Present Temperature(146)"
         titlekr: "Present Temperature(146)"
         url: /dxl/x/xl330-m288/#present-temperature146
+      - title: "Backup Ready(147)"
+        titlekr: "Backup Ready(147)"
+        url: /dxl/x/xl330-m288/#backup-ready147
       - title: "Indirect Address"
         titlekr: "Indirect Address"
         url: /dxl/x/xl330-m288/#indirect-address
@@ -7015,6 +7051,9 @@ xl430-w250:
           - title: "Min/Max Position Limit(48, 52)"
             titlekr: "Min/Max Position Limit(48, 52)"
             url: /dxl/x/xl430-w250/#minmax-position-limit48-52
+          - title: "Startup Configuration(60)"
+            titlekr: "Startup Configuration(60)"
+            url: /dxl/x/xl430-w250/#startup-configuration60
           - title: "Shutdown(63)"
             titlekr: "Shutdown(63)"
             url: /dxl/x/xl430-w250/#shutdown63
@@ -7093,6 +7132,9 @@ xl430-w250:
           - title: "Present Temperature(146)"
             titlekr: "Present Temperature(146)"
             url: /dxl/x/xl430-w250/#present-temperature146
+          - title: "Backup Ready(147)"
+            titlekr: "Backup Ready(147)"
+            url: /dxl/x/xl430-w250/#backup-ready147        
           - title: "Indirect Address"
             titlekr: "Indirect Address"
             url: /dxl/x/xl430-w250/#indirect-address
@@ -7240,6 +7282,9 @@ xc430-w150:
           - title: "Min/Max Position Limit(48, 52)"
             titlekr: "Min/Max Position Limit(48, 52)"
             url: /dxl/x/xc430-w150/#minmax-position-limit48-52
+          - title: "Startup Configuration(60)"
+            titlekr: "Startup Configuration(60)"
+            url: /dxl/x/xc430-w150/#startup-configuration60
           - title: "Shutdown(63)"
             titlekr: "Shutdown(63)"
             url: /dxl/x/xc430-w150/#shutdown63
@@ -7318,6 +7363,9 @@ xc430-w150:
           - title: "Present Temperature(146)"
             titlekr: "Present Temperature(146)"
             url: /dxl/x/xc430-w150/#present-temperature146
+          - title: "Backup Ready(147)"
+            titlekr: "Backup Ready(147)"
+            url: /dxl/x/xc430-w150/#backup-ready147
           - title: "Indirect Address"
             titlekr: "Indirect Address"
             url: /dxl/x/xc430-w150/#indirect-address
@@ -7474,6 +7522,9 @@ xc430-w240:
           - title: "Min/Max Position Limit(48, 52)"
             titlekr: "Min/Max Position Limit(48, 52)"
             url: /dxl/x/xc430-w240/#minmax-position-limit48-52
+          - title: "Startup Configuration(60)"
+            titlekr: "Startup Configuration(60)"
+            url: /dxl/x/xc430-w240/#startup-configuration60         
           - title: "Shutdown(63)"
             titlekr: "Shutdown(63)"
             url: /dxl/x/xc430-w240/#shutdown63
@@ -7552,6 +7603,9 @@ xc430-w240:
           - title: "Present Temperature(146)"
             titlekr: "Present Temperature(146)"
             url: /dxl/x/xc430-w240/#present-temperature146
+          - title: "Backup Ready(147)"
+            titlekr: "Backup Ready(147)"
+            url: /dxl/x/xc430-w240/#backup-ready147
           - title: "Indirect Address"
             titlekr: "Indirect Address"
             url: /dxl/x/xc430-w240/#indirect-address
@@ -7708,6 +7762,9 @@ xc430-w240:
           - title: "Min/Max Position Limit(48, 52)"
             titlekr: "Min/Max Position Limit(48, 52)"
             url: /dxl/x/2xl430-w250/#minmax-position-limit48-52
+          - title: "Startup Configuration(60)"
+            titlekr: "Startup Configuration(60)"
+            url: /dxl/x/2xl430-w250/#startup-configuration60          
           - title: "Shutdown(63)"
             titlekr: "Shutdown(63)"
             url: /dxl/x/2xl430-w250/#shutdown63
@@ -7786,6 +7843,9 @@ xc430-w240:
           - title: "Present Temperature(146)"
             titlekr: "Present Temperature(146)"
             url: /dxl/x/2xl430-w250/#present-temperature146
+          - title: "Backup Ready(147)"
+            titlekr: "Backup Ready(147)"
+            url: /dxl/x/2xl430-w250/#backup-ready147
           - title: "Indirect Address"
             titlekr: "Indirect Address"
             url: /dxl/x/2xl430-w250/#indirect-address
@@ -7933,6 +7993,9 @@ xc430-w240:
           - title: "Min/Max Position Limit(48, 52)"
             titlekr: "Min/Max Position Limit(48, 52)"
             url: /dxl/x/2xc430-w250/#minmax-position-limit48-52
+          - title: "Startup Configuration(60)"
+            titlekr: "Startup Configuration(60)"
+            url: /dxl/x/2xc430-w250/#startup-configuration60           
           - title: "Shutdown(63)"
             titlekr: "Shutdown(63)"
             url: /dxl/x/2xc430-w250/#shutdown63
@@ -8011,6 +8074,9 @@ xc430-w240:
           - title: "Present Temperature(146)"
             titlekr: "Present Temperature(146)"
             url: /dxl/x/2xc430-w250/#present-temperature146
+          - title: "Backup Ready(147)"
+            titlekr: "Backup Ready(147)"
+            url: /dxl/x/2xc430-w250/#backup-ready147        
           - title: "Indirect Address"
             titlekr: "Indirect Address"
             url: /dxl/x/2xc430-w250/#indirect-address
@@ -8162,6 +8228,9 @@ xm430-w210:
         - title: "Min/Max Position Limit(48, 52)"
           titlekr: "Min/Max Position Limit(48, 52)"
           url: /dxl/x/xm430-w210/#minmax-position-limit48-52
+        - title: "Startup Configuration(60)"
+          titlekr: "Startup Configuration(60)"
+          url: /dxl/x/xm430-w210/#startup-configuration60
         - title: "Shutdown(63)"
           titlekr: "Shutdown(63)"
           url: /dxl/x/xm430-w210/#shutdown63
@@ -8243,6 +8312,9 @@ xm430-w210:
         - title: "Present Temperature(146)"
           titlekr: "Present Temperature(146)"
           url: /dxl/x/xm430-w210/#present-temperature146
+        - title: "Backup Ready(147)"
+          titlekr: "Backup Ready(147)"
+          url: /dxl/x/xm430-w210/#backup-ready147     
         - title: "Indirect Address"
           titlekr: "Indirect Address"
           url: /dxl/x/xm430-w210/#indirect-address
@@ -8406,6 +8478,9 @@ xm430-w350:
         - title: "Min/Max Position Limit(48, 52)"
           titlekr: "Min/Max Position Limit(48, 52)"
           url: /dxl/x/xm430-w350/#minmax-position-limit48-52
+        - title: "Startup Configuration(60)"
+          titlekr: "Startup Configuration(60)"
+          url: /dxl/x/xm430-w350/#startup-configuration60          
         - title: "Shutdown(63)"
           titlekr: "Shutdown(63)"
           url: /dxl/x/xm430-w350/#shutdown63
@@ -8487,6 +8562,9 @@ xm430-w350:
         - title: "Present Temperature(146)"
           titlekr: "Present Temperature(146)"
           url: /dxl/x/xm430-w350/#present-temperature146
+        - title: "Backup Ready(147)"
+          titlekr: "Backup Ready(147)"
+          url: /dxl/x/xm430-w350/#backup-ready147        
         - title: "Indirect Address"
           titlekr: "Indirect Address"
           url: /dxl/x/xm430-w350/#indirect-address
@@ -8653,6 +8731,9 @@ xm540-w150:
         - title: "External Port Mode 1,2,3(56,57,58)"
           titlekr: "External Port Mode 1,2,3(56,57,58)"
           url: /dxl/x/xm540-w150/#external-port-mode-123565758
+        - title: "Startup Configuration(60)"
+          titlekr: "Startup Configuration(60)"
+          url: /dxl/x/xm540-w150/#startup-configuration60         
         - title: "Shutdown(63)"
           titlekr: "Shutdown(63)"
           url: /dxl/x/xm540-w150/#shutdown63
@@ -8734,6 +8815,9 @@ xm540-w150:
         - title: "Present Temperature(146)"
           titlekr: "Present Temperature(146)"
           url: /dxl/x/xm540-w150/#present-temperature146
+        - title: "Backup Ready(147)"
+          titlekr: "Backup Ready(147)"
+          url: /dxl/x/xm540-w150/#backup-ready147
         - title: "External Port Data 1,2,3"
           titlekr: "External Port Data 1,2,3"
           url: /dxl/x/xm540-w150/#external-port-data-123
@@ -8903,6 +8987,9 @@ xm540-w270:
         - title: "External Port Mode 1,2,3(56,57,58)"
           titlekr: "External Port Mode 1,2,3(56,57,58)"
           url: /dxl/x/xm540-w270/#external-port-mode-123565758
+        - title: "Startup Configuration(60)"
+          titlekr: "Startup Configuration(60)"
+          url: /dxl/x/xm540-w270/#startup-configuration60         
         - title: "Shutdown(63)"
           titlekr: "Shutdown(63)"
           url: /dxl/x/xm540-w270/#shutdown63
@@ -8984,6 +9071,9 @@ xm540-w270:
         - title: "Present Temperature(146)"
           titlekr: "Present Temperature(146)"
           url: /dxl/x/xm540-w270/#present-temperature146
+        - title: "Backup Ready(147)"
+          titlekr: "Backup Ready(147)"
+          url: /dxl/x/xm540-w270/#backup-ready147        
         - title: "External Port Data 1,2,3"
           titlekr: "External Port Data 1,2,3"
           url: /dxl/x/xm540-w270/#external-port-data-123
@@ -9150,6 +9240,9 @@ xw540-t140:
         - title: "Min/Max Position Limit(48, 52)"
           titlekr: "Min/Max Position Limit(48, 52)"
           url: /dxl/x/xw540-t140/#minmax-position-limit48-52
+        - title: "Startup Configuration(60)"
+          titlekr: "Startup Configuration(60)"
+          url: /dxl/x/xw540-t140/#startup-configuration60      
         - title: "Shutdown(63)"
           titlekr: "Shutdown(63)"
           url: /dxl/x/xw540-t140/#shutdown63
@@ -9228,6 +9321,9 @@ xw540-t140:
         - title: "Present Temperature(146)"
           titlekr: "Present Temperature(146)"
           url: /dxl/x/xw540-t140/#present-temperature146
+        - title: "Backup Ready(147)"
+          titlekr: "Backup Ready(147)"
+          url: /dxl/x/xw540-t140/#backup-ready147      
         - title: "Indirect Address"
           titlekr: "Indirect Address"
           url: /dxl/x/xw540-t140/#indirect-address
@@ -9387,6 +9483,9 @@ xw540-t260:
         - title: "Min/Max Position Limit(48, 52)"
           titlekr: "Min/Max Position Limit(48, 52)"
           url: /dxl/x/xw540-t260/#minmax-position-limit48-52
+        - title: "Startup Configuration(60)"
+          titlekr: "Startup Configuration(60)"
+          url: /dxl/x/xw540-t260/#startup-configuration60   
         - title: "Shutdown(63)"
           titlekr: "Shutdown(63)"
           url: /dxl/x/xw540-t260/#shutdown63
@@ -9468,6 +9567,9 @@ xw540-t260:
         - title: "Indirect Address"
           titlekr: "Indirect Address"
           url: /dxl/x/xw540-t260/#indirect-address
+        - title: "Backup Ready(147)"
+          titlekr: "Backup Ready(147)"
+          url: /dxl/x/xw540-t260/#backup-ready147        
         - title: "Indirect Data"
           titlekr: "Indirect Data"
           url: /dxl/x/xw540-t260/#indirect-data
@@ -9627,6 +9729,9 @@ xh540-w150:
         - title: "External Port Mode 1,2,3(56,57,58)"
           titlekr: "External Port Mode 1,2,3(56,57,58)"
           url: /dxl/x/xh540-w150/#external-port-mode-123565758
+        - title: "Startup Configuration(60)"
+          titlekr: "Startup Configuration(60)"
+          url: /dxl/x/xh540-w150/#startup-configuration60         
         - title: "Shutdown(63)"
           titlekr: "Shutdown(63)"
           url: /dxl/x/xh540-w150/#shutdown63
@@ -9708,6 +9813,9 @@ xh540-w150:
         - title: "Present Temperature(146)"
           titlekr: "Present Temperature(146)"
           url: /dxl/x/xh540-w150/#present-temperature146
+        - title: "Backup Ready(147)"
+          titlekr: "Backup Ready(147)"
+          url: /dxl/x/xh540-w150/#backup-ready147          
         - title: "External Port Data 1,2,3"
           titlekr: "External Port Data 1,2,3"
           url: /dxl/x/xh540-w150/#external-port-data-123
@@ -9877,6 +9985,9 @@ xh540-w270:
         - title: "External Port Mode 1,2,3(56,57,58)"
           titlekr: "External Port Mode 1,2,3(56,57,58)"
           url: /dxl/x/xh540-w270/#external-port-mode-123565758
+        - title: "Startup Configuration(60)"
+          titlekr: "Startup Configuration(60)"
+          url: /dxl/x/xh540-w270/#startup-configuration60         
         - title: "Shutdown(63)"
           titlekr: "Shutdown(63)"
           url: /dxl/x/xh540-w270/#shutdown63
@@ -9958,6 +10069,9 @@ xh540-w270:
         - title: "Present Temperature(146)"
           titlekr: "Present Temperature(146)"
           url: /dxl/x/xh540-w270/#present-temperature146
+        - title: "Backup Ready(147)"
+          titlekr: "Backup Ready(147)"
+          url: /dxl/x/xh540-w270/#backup-ready147          
         - title: "External Port Data 1,2,3"
           titlekr: "External Port Data 1,2,3"
           url: /dxl/x/xh540-w270/#external-port-data-123
@@ -10127,6 +10241,9 @@ xh540-v150:
         - title: "External Port Mode 1,2,3(56,57,58)"
           titlekr: "External Port Mode 1,2,3(56,57,58)"
           url: /dxl/x/xh540-v150/#external-port-mode-123565758
+        - title: "Startup Configuration(60)"
+          titlekr: "Startup Configuration(60)"
+          url: /dxl/x/xh540-v150/#startup-configuration60       
         - title: "Shutdown(63)"
           titlekr: "Shutdown(63)"
           url: /dxl/x/xh540-v150/#shutdown63
@@ -10208,6 +10325,9 @@ xh540-v150:
         - title: "Present Temperature(146)"
           titlekr: "Present Temperature(146)"
           url: /dxl/x/xh540-v150/#present-temperature146
+        - title: "Backup Ready(147)"
+          titlekr: "Backup Ready(147)"
+          url: /dxl/x/xh540-v150/#backup-ready147          
         - title: "External Port Data 1,2,3"
           titlekr: "External Port Data 1,2,3"
           url: /dxl/x/xh540-v150/#external-port-data-123
@@ -10369,6 +10489,9 @@ xh540-v270:
         - title: "External Port Mode 1,2,3(56,57,58)"
           titlekr: "External Port Mode 1,2,3(56,57,58)"
           url: /dxl/x/xh540-v270/#external-port-mode-123565758
+        - title: "Startup Configuration(60)"
+          titlekr: "Startup Configuration(60)"
+          url: /dxl/x/xh540-v270/#startup-configuration60         
         - title: "Shutdown(63)"
           titlekr: "Shutdown(63)"
           url: /dxl/x/xh540-v270/#shutdown63
@@ -10450,6 +10573,9 @@ xh540-v270:
         - title: "Present Temperature(146)"
           titlekr: "Present Temperature(146)"
           url: /dxl/x/xh540-v270/#present-temperature146
+        - title: "Backup Ready(147)"
+          titlekr: "Backup Ready(147)"
+          url: /dxl/x/xh540-v270/#backup-ready147      
         - title: "External Port Data 1,2,3"
           titlekr: "External Port Data 1,2,3"
           url: /dxl/x/xh540-v270/#external-port-data-123
