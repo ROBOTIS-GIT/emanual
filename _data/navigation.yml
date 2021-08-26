@@ -14367,9 +14367,9 @@ ph54-200-s500-r:
         - title: "Present Temperature(594)"
           titlekr: "Present Temperature(594)"
           url: /dxl/p/ph54-200-s500-r/#present-temperature594
-        - title: "Startup Configuration"
-          titlekr: "Startup Configuration"
-          url: /dxl/p/ph54-200-s500-r/#startup-configuration     
+        - title: "Backup Ready(878)"
+          titlekr: "Backup Ready(878)"
+          url: /dxl/p/ph54-200-s500-r/#backup-ready878    
 - title: "How to Assemble"
   titlekr: "조립 예시"
   url: /dxl/p/ph54-200-s500-r/#how-to-assemble
