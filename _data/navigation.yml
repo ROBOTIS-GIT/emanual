@@ -31,10 +31,10 @@ main:
       titlekr: "다이나믹셀 드라이브 (DYD)"
       url: /all-dyd/
       children:
-        # - title: "DYD-11"
-        #   titlekr: "DYD-11"
-        #   url: /all-dyd/dyd-11
-        #   urlkr: /all-dyd/dyd-11
+        - title: "DYD-11"
+          titlekr: "DYD-11"
+          url: /all-dyd/dyd-11
+          urlkr: /all-dyd/dyd-11
         - title: "DYD-14"
           titlekr: "DYD-14"
           url: /all-dyd/dyd-14
