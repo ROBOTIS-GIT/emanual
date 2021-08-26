@@ -14235,6 +14235,9 @@ ph54-200-s500-r:
         - title: "Return Delay Time(9)"
           titlekr: "Return Delay Time(9)"
           url: /dxl/p/ph54-200-s500-r/#return-delay-time9
+        - title: "Drive Mode(10)"
+          titlekr: "Drive Mode(10)"
+          url: /dxl/p/ph54-200-s500-r/#drive-mode10        
         - title: "Operating Mode(11)"
           titlekr: "Operating Mode(11)"
           url: /dxl/p/ph54-200-s500-r/#operating-mode11
@@ -14274,6 +14277,9 @@ ph54-200-s500-r:
         - title: "External Port Mode (56, 57, 58, 59)"
           titlekr: "External Port Mode (56, 57, 58, 59)"
           url: /dxl/p/ph54-200-s500-r/#external-port-mode-external-port-data-56-57-58-59
+        - title: "Startup Configuration(60)"
+          titlekr: "Startup Configuration(60)"
+          url: /dxl/p/ph54-200-s500-r/#startup-configuration60
         - title: "Shutdown(63)"
           titlekr: "Shutdown(63)"
           url: /dxl/p/ph54-200-s500-r/#shutdown63
@@ -14361,6 +14367,9 @@ ph54-200-s500-r:
         - title: "Present Temperature(594)"
           titlekr: "Present Temperature(594)"
           url: /dxl/p/ph54-200-s500-r/#present-temperature594
+        - title: "Startup Configuration"
+          titlekr: "Startup Configuration"
+          url: /dxl/p/ph54-200-s500-r/#startup-configuration     
 - title: "How to Assemble"
   titlekr: "조립 예시"
   url: /dxl/p/ph54-200-s500-r/#how-to-assemble
@@ -14379,6 +14388,10 @@ ph54-200-s500-r:
   url: /dxl/p/ph54-200-s500-r/#reference
   urlkr: /dxl/p/ph54-200-s500-r/#참고자료
   children:
+    - title: "What is the Profile"
+      titlekr: "Profile"
+      url: /dxl/p/ph54-200-s500-r/#what-is-the-profile
+      urlkr: /dxl/p/ph54-200-s500-r/#profile
     - title: "Certifications"
       titlekr: "인증 획득"
       url: /dxl/p/ph54-200-s500-r/#certifications
@@ -14469,6 +14482,9 @@ ph54-100-s500-r:
         - title: "Return Delay Time(9)"
           titlekr: "Return Delay Time(9)"
           url: /dxl/p/ph54-100-s500-r/#return-delay-time9
+        - title: "Drive Mode(10)"
+          titlekr: "Drive Mode(10)"
+          url: /dxl/p/ph54-100-s500-r/#drive-mode10
         - title: "Operating Mode(11)"
           titlekr: "Operating Mode(11)"
           url: /dxl/p/ph54-100-s500-r/#operating-mode11
@@ -14508,6 +14524,9 @@ ph54-100-s500-r:
         - title: "External Port Mode (56, 57, 58, 59)"
           titlekr: "External Port Mode (56, 57, 58, 59)"
           url: /dxl/p/ph54-100-s500-r/#external-port-mode-external-port-data-56-57-58-59
+        - title: "Startup Configuration(60)"
+          titlekr: "Startup Configuration(60)"
+          url: /dxl/p/ph54-100-s500-r/#startup-configuration60
         - title: "Shutdown(63)"
           titlekr: "Shutdown(63)"
           url: /dxl/p/ph54-100-s500-r/#shutdown63
@@ -14595,6 +14614,9 @@ ph54-100-s500-r:
         - title: "Present Temperature(594)"
           titlekr: "Present Temperature(594)"
           url: /dxl/p/ph54-100-s500-r/#present-temperature594
+        - title: "Backup Ready(878)"
+          titlekr: "Backup Ready(878)"
+          url: /dxl/p/ph54-100-s500-r/#backup-ready878
 - title: "How to Assemble"
   titlekr: "조립 예시"
   url: /dxl/p/ph54-100-s500-r/#how-to-assemble
@@ -14613,6 +14635,10 @@ ph54-100-s500-r:
   url: /dxl/p/ph54-100-s500-r/#reference
   urlkr: /dxl/p/ph54-100-s500-r/#참고자료
   children:
+    - title: "What is the Profile"
+      titlekr: "Profile"
+      url: /dxl/p/ph54-100-s500-r/#what-is-the-profile
+      urlkr: /dxl/p/ph54-100-s500-r/#profile    
     - title: "Certifications"
       titlekr: "인증 획득"
       url: /dxl/p/ph54-100-s500-r/#certifications
@@ -14703,6 +14729,9 @@ ph42-020-s300-r:
         - title: "Return Delay Time(9)"
           titlekr: "Return Delay Time(9)"
           url: /dxl/p/ph42-020-s300-r/#return-delay-time9
+        - title: "Drive Mode(10)"
+          titlekr: "Drive Mode(10)"
+          url: /dxl/p/ph42-020-s300-r/#drive-mode10                
         - title: "Operating Mode(11)"
           titlekr: "Operating Mode(11)"
           url: /dxl/p/ph42-020-s300-r/#operating-mode11
@@ -14742,6 +14771,9 @@ ph42-020-s300-r:
         - title: "External Port Mode (56, 57, 58, 59)"
           titlekr: "External Port Mode (56, 57, 58, 59)"
           url: /dxl/p/ph42-020-s300-r/#external-port-mode-external-port-data-56-57-58-59
+        - title: "Startup Configuration(60)"
+          titlekr: "Startup Configuration(60)"
+          url: /dxl/p/ph42-020-s300-r/#startup-configuration60        
         - title: "Shutdown(63)"
           titlekr: "Shutdown(63)"
           url: /dxl/p/ph42-020-s300-r/#shutdown63
@@ -14829,6 +14861,9 @@ ph42-020-s300-r:
         - title: "Present Temperature(594)"
           titlekr: "Present Temperature(594)"
           url: /dxl/p/ph42-020-s300-r/#present-temperature594
+        - title: "Backup Ready(878)"
+          titlekr: "Backup Ready(878)"
+          url: /dxl/p/ph42-020-s300-r/#backup-ready878          
 - title: "How to Assemble"
   titlekr: "조립 예시"
   url: /dxl/p/ph42-020-s300-r/#how-to-assemble
@@ -14847,6 +14882,10 @@ ph42-020-s300-r:
   url: /dxl/p/ph42-020-s300-r/#reference
   urlkr: /dxl/p/ph42-020-s300-r/#참고자료
   children:
+    - title: "What is the Profile"
+      titlekr: "Profile"
+      url: /dxl/p/ph42-020-s300-r/#what-is-the-profile
+      urlkr: /dxl/p/ph42-020-s300-r/#profile    
     - title: "Certifications"
       titlekr: "인증 획득"
       url: /dxl/p/ph42-020-s300-r/#certifications
@@ -14936,6 +14975,9 @@ pm42-010-s260-r:
         - title: "Return Delay Time(9)"
           titlekr: "Return Delay Time(9)"
           url: /dxl/p/pm42-010-s260-r/#return-delay-time9
+        - title: "Drive Mode(10)"
+          titlekr: "Drive Mode(10)"
+          url: /dxl/p/pm42-010-s260-r/#drive-mode10                        
         - title: "Operating Mode(11)"
           titlekr: "Operating Mode(11)"
           url: /dxl/p/pm42-010-s260-r/#operating-mode11
@@ -14975,6 +15017,9 @@ pm42-010-s260-r:
         - title: "External Port Mode (56, 57, 58, 59)"
           titlekr: "External Port Mode (56, 57, 58, 59)"
           url: /dxl/p/pm42-010-s260-r/#external-port-mode-external-port-data-56-57-58-59
+        - title: "Startup Configuration(60)"
+          titlekr: "Startup Configuration(60)"
+          url: /dxl/p/pm42-010-s260-r/#startup-configuration60                  
         - title: "Shutdown(63)"
           titlekr: "Shutdown(63)"
           url: /dxl/p/pm42-010-s260-r/#shutdown63
@@ -15062,6 +15107,9 @@ pm42-010-s260-r:
         - title: "Present Temperature(594)"
           titlekr: "Present Temperature(594)"
           url: /dxl/p/pm42-010-s260-r/#present-temperature594
+        - title: "Backup Ready(878)"
+          titlekr: "Backup Ready(878)"
+          url: /dxl/p/pm42-010-s260-r/#backup-ready878               
 - title: "How to Assemble"
   titlekr: "조립 예시"
   url: /dxl/p/pm42-010-s260-r/#how-to-assemble
@@ -15080,6 +15128,10 @@ pm42-010-s260-r:
   url: /dxl/p/pm42-010-s260-r/#reference
   urlkr: /dxl/p/pm42-010-s260-r/#참고자료
   children:
+    - title: "What is the Profile"
+      titlekr: "Profile"
+      url: /dxl/p/pm42-010-s260-r/#what-is-the-profile
+      urlkr: /dxl/p/pm42-010-s260-r/#profile        
     - title: "Certifications"
       titlekr: "인증 획득"
       url: /dxl/p/pm42-010-s260-r/#certifications
@@ -15169,6 +15221,9 @@ pm54-040-s250-r:
         - title: "Return Delay Time(9)"
           titlekr: "Return Delay Time(9)"
           url: /dxl/p/pm54-040-s250-r/#return-delay-time9
+        - title: "Drive Mode(10)"
+          titlekr: "Drive Mode(10)"
+          url: /dxl/p/pm54-040-s250-r/#drive-mode10                                  
         - title: "Operating Mode(11)"
           titlekr: "Operating Mode(11)"
           url: /dxl/p/pm54-040-s250-r/#operating-mode11
@@ -15208,6 +15263,9 @@ pm54-040-s250-r:
         - title: "External Port Mode (56, 57, 58, 59)"
           titlekr: "External Port Mode (56, 57, 58, 59)"
           url: /dxl/p/pm54-040-s250-r/#external-port-mode-external-port-data-56-57-58-59
+        - title: "Startup Configuration(60)"
+          titlekr: "Startup Configuration(60)"
+          url: /dxl/p/pm54-040-s250-r/#startup-configuration60                            
         - title: "Shutdown(63)"
           titlekr: "Shutdown(63)"
           url: /dxl/p/pm54-040-s250-r/#shutdown63
@@ -15295,6 +15353,9 @@ pm54-040-s250-r:
         - title: "Present Temperature(594)"
           titlekr: "Present Temperature(594)"
           url: /dxl/p/pm54-040-s250-r/#present-temperature594
+        - title: "Backup Ready(878)"
+          titlekr: "Backup Ready(878)"
+          url: /dxl/p/pm54-040-s250-r/#backup-ready878                         
 - title: "How to Assemble"
   titlekr: "조립 예시"
   url: /dxl/p/pm54-040-s250-r/#how-to-assemble
@@ -15313,6 +15374,10 @@ pm54-040-s250-r:
   url: /dxl/p/pm54-040-s250-r/#reference
   urlkr: /dxl/p/pm54-040-s250-r/#참고자료
   children:
+    - title: "What is the Profile"
+      titlekr: "Profile"
+      url: /dxl/p/pm54-040-s250-r/#what-is-the-profile
+      urlkr: /dxl/p/pm54-040-s250-r/#profile            
     - title: "Certifications"
       titlekr: "인증 획득"
       url: /dxl/p/pm54-040-s250-r/#certifications
@@ -15402,6 +15467,9 @@ pm54-060-s250-r:
         - title: "Return Delay Time(9)"
           titlekr: "Return Delay Time(9)"
           url: /dxl/p/pm54-060-s250-r/#return-delay-time9
+        - title: "Drive Mode(10)"
+          titlekr: "Drive Mode(10)"
+          url: /dxl/p/pm54-060-s250-r/#drive-mode10                                  
         - title: "Operating Mode(11)"
           titlekr: "Operating Mode(11)"
           url: /dxl/p/pm54-060-s250-r/#operating-mode11
@@ -15441,6 +15509,9 @@ pm54-060-s250-r:
         - title: "External Port Mode (56, 57, 58, 59)"
           titlekr: "External Port Mode (56, 57, 58, 59)"
           url: /dxl/p/pm54-060-s250-r/#external-port-mode-external-port-data-56-57-58-59
+        - title: "Startup Configuration(60)"
+          titlekr: "Startup Configuration(60)"
+          url: /dxl/p/pm54-060-s250-r/#startup-configuration60        
         - title: "Shutdown(63)"
           titlekr: "Shutdown(63)"
           url: /dxl/p/pm54-060-s250-r/#shutdown63
@@ -15528,6 +15599,9 @@ pm54-060-s250-r:
         - title: "Present Temperature(594)"
           titlekr: "Present Temperature(594)"
           url: /dxl/p/pm54-060-s250-r/#present-temperature594
+        - title: "Backup Ready(878)"
+          titlekr: "Backup Ready(878)"
+          url: /dxl/p/pm54-060-s250-r/#backup-ready878                                   
 - title: "How to Assemble"
   titlekr: "조립 예시"
   url: /dxl/p/pm54-060-s250-r/#how-to-assemble
@@ -15546,6 +15620,10 @@ pm54-060-s250-r:
   url: /dxl/p/pm54-060-s250-r/#reference
   urlkr: /dxl/p/pm54-060-s250-r/#참고자료
   children:
+    - title: "What is the Profile"
+      titlekr: "Profile"
+      url: /dxl/p/pm54-060-s250-r/#what-is-the-profile
+      urlkr: /dxl/p/pm54-060-s250-r/#profile              
     - title: "Certifications"
       titlekr: "인증 획득"
       url: /dxl/p/pm54-060-s250-r/#certifications
