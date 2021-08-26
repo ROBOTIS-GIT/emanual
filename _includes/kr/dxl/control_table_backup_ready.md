@@ -1,4 +1,6 @@
-{% if page.product_group == 'xl330' or page.product_group == 'xc330' %}
+{% if page.product_group == 'dxl_p' %}
+{% assign firmware_version_backup = "펌웨어 v12" %}
+{% elsif page.product_group == 'xl330' or page.product_group == 'xc330' %}
 {% assign firmware_version_backup = "펌웨어 v46" %}
 {% else %}
 {% assign firmware_version_backup = "펌웨어 v45" %}
