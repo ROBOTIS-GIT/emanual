@@ -11,7 +11,7 @@ Profile이란 모터 구동 시 급격하게 변하는 속도와 가속도를 �
 이와 같이 속도의 불연속이 발생하지 않도록 목표 속도 궤적을 생성하는 기능을 Velocity Override라고 합니다.  
 여기서는 수식의 단순화를 위해 Profile의 시작속도를 ‘0’으로 가정합니다.
 
-다음은 [Goal Position(564)] 명령에 대한 Profile의 동작 과정을 나타냅니다.
+다음은 [Operating Mode(11)]가 **위치 제어 모드** 또는 **확장 위치 제어 모드** 일때 [Goal Position(564)] 명령에 대한 Profile의 동작 과정을 나타냅니다.
 
 {% capture profile_vel_ex1 %}
 1. 사용자의 요청이 통신 버스를 통해 [Goal Position(564)](#goal_position564)에 등록됩니다.
@@ -37,8 +37,9 @@ Profile이란 모터 구동 시 급격하게 변하는 속도와 가속도를 �
 제공되는 Profile의 형태는 Step과 Trapezoidal 2가지 입니다.  
 Velocity Override 기능은 동일하게 동작합니다.  
 이때의 가속시간(t<sub>1</sub>)은 다음과 같습니다.  
-**Velocity-based Profile**: **t<sub>1</sub> = 600 * {Profile Velocity(560) / Profile Acceleration(556)}**  
-**Time-based Profile**: **t<sub>1</sub> = Profile Acceleration(556)**
+
+**Velocity-based Profile**: **t<sub>1</sub> = 600 * {[Profile Velocity(560)](#profile-velocity560) / [Profile Acceleration(556)](#profile-acceleration556)}**  
+**Time-based Profile**: **t<sub>1</sub> = [Profile Acceleration(556)](#profile-acceleration556)**
 {% endcapture %}
 
 <div class="notice">

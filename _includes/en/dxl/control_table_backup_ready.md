@@ -13,5 +13,5 @@ Indicates whether backup data of Control Table saved through Control table Backu
 |   0   | No Control Table's backup data        |
 |   1   | Control Table's backup data is saved. |
 
-**NOTE**: Backup Ready is available from {{ firmware_version_backup }}. See, [Data Backup and Restore](/docs/en/software/dynamixel/dynamixel_wizard2/#data-backup-and-restore) for more details.
+**NOTE**: Backup Ready is available from {{ firmware_version_backup }}. See [Data Backup and Restore](/docs/en/software/dynamixel/dynamixel_wizard2/#data-backup-and-restore) for more details.
 {: .notice}

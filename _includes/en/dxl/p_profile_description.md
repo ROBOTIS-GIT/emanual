@@ -11,7 +11,7 @@ When the device receives updated desired position via [Goal Position(564)] while
 Maintaining velocity continuity while updating the desired velocity trajectory is called "Velocity Override".  
 For easier calculation in this example, let’s assume that the initial velocity of the Profile is `0`.
 
-The following explains how Profile processes [Goal Position(564)].
+The following explains how Profile processes [Goal Position(564)] when the [Operating Mode(11)] is **Position Control Mode** or **Extended Position Control Mode** .
 
 {% capture profile_vel_ex1 %}
 1. An Instruction is recieved via communication bus, then registered in [Goal Position(564)](#goal_position564).
@@ -37,7 +37,7 @@ The following explains how Profile processes [Goal Position(564)].
 Step and Trapezoidal Profiles are supported and Velocity Override is supported as well.  
 Acceleration time(t<sub>1</sub>) can be calculated as below equation.
 
-**t<sub>1</sub> = 600 * {Profile Velocity(560) / Profile Acceleration(556)}**  
+**Velocity-based Profile**: **t<sub>1</sub> = 600 * {[Profile Velocity(560)](#profile-velocity560) / [Profile Acceleration(556)](#profile-acceleration556)}**  
 **Time-based Profile**: **t<sub>1</sub> = Profile Acceleration(556)**
 {% endcapture %}
 
