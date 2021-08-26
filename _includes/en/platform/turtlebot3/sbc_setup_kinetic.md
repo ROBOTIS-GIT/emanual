@@ -6,7 +6,7 @@
 
 {% capture warning_01 %}
 **WARNING**  
-- This SBC Setup section is specifically written for **Raspberry Pi 3B+** which is the current official TurtleBot3 SBC.
+- `Raspberry Pi 4`, `Jetson Nano` do not support ROS Kinetic.
 - This process may take long time. Please do not use battery while following this section.
 - An HDMI monitor and input devices such as a keyboard and a mouse will be required to complete this setup.
 {% endcapture %}
@@ -23,14 +23,18 @@ If you PC do not have a microSD slot, please use a microSD card reader to burn t
 Download the correct image file for your hardware and ROS version.  
 Kinetic version images use Raspberry Pi OS(Raspbian OS).  
 
-- [![](/assets/images/icon_download.png) **Raspberry Pi 3B+** ROS1 Kinetic image](http://www.robotis.com/service/download.php?no=1738){: .blank}
-  - **SHA256** : eb8173f3727db08087990b2c4e2bb211e70bd54644644834771fc8b971856b97
+{% capture download_01 %}
+[![](/assets/images/icon_download.png) **Download** `Raspberry Pi 3B+` ROS Kinetic image](http://www.robotis.com/service/download.php?no=1738){: .blank}
 
-Raspberry Pi 4 does not support Ubuntu 16.04 nor Debian Jessie, therefore, ROS1 Kinetic is not available for Raspberry Pi 4.
-{: .notice--warning}
+**SHA256** : eb8173f3727db08087990b2c4e2bb211e70bd54644644834771fc8b971856b97
+{% endcapture %}
+<div class="notice--success">{{ download_01 | markdownify }}</div>
 
 The recovery image files can be modified without a prior notice.
 {: .notice}
+
+`Raspberry Pi 4` does not support Ubuntu 16.04 nor Debian Jessie, therefore, ROS Kinetic is not supported.
+{: .notice--warning}
 
 ### [Unzip the downloaded image file](#unzip-the-downloaded-image-file)
 Extract the `.img` file and save it in the local disk.
@@ -43,7 +47,10 @@ Choose your preferred tool to burn the image to microSD.
 #### Raspberry Pi Imager
 Please refer to [this article](https://www.raspberrypi.org/blog/raspberry-pi-imager-imaging-utility/) to find more information about Raspberry Pi Imager.
 
-[![](/assets/images/icon_download.png) Download Raspberry Pi Imager from raspberrypi.org](https://www.raspberrypi.org/software/){: .blank}
+{% capture download_rpi_imager %}
+[![](/assets/images/icon_download.png) **Download** Raspberry Pi Imager from raspberrypi.org](https://www.raspberrypi.org/software/){: .blank}
+{% endcapture %}
+<div class="notice--success">{{ download_rpi_imager | markdownify }}</div>
 
 ![](/assets/images/platform/turtlebot3/setup/rpi_imager.gif)  
 1. Click `CHOOSE OS`.  

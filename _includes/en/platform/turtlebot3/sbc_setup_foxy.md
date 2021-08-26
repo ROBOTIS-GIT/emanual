@@ -6,7 +6,6 @@
 
 {% capture warning_01 %}
 **WARNING**
-- This SBC Setup section is specifically written for **Raspberry Pi 3B+** which is the current official TurtleBot3 SBC.
 - This process may take long time. Please do not use battery while following this section.
 - An HDMI monitor and input devices such as a keyboard and a mouse will be required to complete this setup.
 - In order to use the webOS Robotics Platform, please refer to [webOS Robotics Platform](https://github.com/ros/meta-ros/wiki/OpenEmbedded-Build-Instructions) instruction. Packages will be cross-compiled using OpenEmbedded on a higher performance PC and an image file is created.
@@ -21,8 +20,20 @@ If you PC do not have a microSD slot, please use a microSD card reader to burn t
 Download the correct image file for your hardware and ROS version.  
 Foxy version images are created based on Ubuntu 20.04.  
 
-- [![](/assets/images/icon_download.png) **Raspberry Pi 3B+** ROS2 Foxy image(Ubuntu 20.04 based)](https://www.robotis.com/service/download.php?no=2058){: .blank}
-  - **SHA256** : e1916b75573e3944c72552664ee1e32e9be32a026bd5b4323d0a4b5778243a1e
+{% capture download_01 %}
+[![](/assets/images/icon_download.png) **Download** `Raspberry Pi 3B+` ROS2 Foxy image](https://www.robotis.com/service/download.php?no=2058){: .blank}
+
+**SHA256** : e1916b75573e3944c72552664ee1e32e9be32a026bd5b4323d0a4b5778243a1e
+{% endcapture %}
+<div class="notice--success">{{ download_01 | markdownify }}</div>
+
+{% capture download_02 %}
+[![](/assets/images/icon_download.png) **Download** `Raspberry Pi 4B (2GB or 4GB)` ROS2 Foxy image](https://www.robotis.com/service/download.php?no=2064){: .blank}
+
+**SHA256** : 8b8b54ad80c7a02ae35da8e9e5d9750fdf21ec6098052a804986ab22ce10ba7e
+- Please note that this image may not compatible with Raspberry Pi 4B with 8GB RAM.
+{% endcapture %}
+<div class="notice--success">{{ download_02 | markdownify }}</div>
 
 The recovery image files can be modified without a prior notice.
 {: .notice}
@@ -38,7 +49,10 @@ Choose your preferred tool to burn the image to microSD.
 #### Raspberry Pi Imager
 Please refer to [this article](https://www.raspberrypi.org/blog/raspberry-pi-imager-imaging-utility/) to find more information about Raspberry Pi Imager.
 
-[![](/assets/images/icon_download.png) Download Raspberry Pi Imager from raspberrypi.org](https://www.raspberrypi.org/software/){: .blank}
+{% capture download_rpi_imager %}
+[![](/assets/images/icon_download.png) **Download** Raspberry Pi Imager from raspberrypi.org](https://www.raspberrypi.org/software/){: .blank}
+{% endcapture %}
+<div class="notice--success">{{ download_rpi_imager | markdownify }}</div>
 
 ![](/assets/images/platform/turtlebot3/setup/rpi_imager.gif)  
 1. Click `CHOOSE OS`.  
@@ -188,12 +202,12 @@ $ ssh ubuntu@{IP Address of Raspberry PI}
 
 13. Install ROS2 Foxy Fiztroy  
 Enter below commands to the Raspberry Pi terminal one at a time.  
-In order to check the details of the easy installation script, please refer to [the script file](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros2_foxy_rp3.sh).  
+In order to check the details of the easy installation script, please refer to [the script file](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros2_foxy_rpi.sh).  
 ```bash
 $ sudo apt update
-$ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros2_foxy_rp3.sh
-$ chmod 755 ./install_ros2_foxy_rp3.sh
-$ bash ./install_ros2_foxy_rp3.sh
+$ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros2_foxy_rpi.sh
+$ chmod 755 ./install_ros2_foxy_rpi.sh
+$ bash ./install_ros2_foxy_rpi.sh
 ```
 If the above installation fails, please refer to [the official ROS2 Foxy installation guide](https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html).
 
