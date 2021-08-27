@@ -2,7 +2,7 @@
 
 ### [Bringup TurtleBot3](#bringup-turtlebot3)
 1. Open a new terminal from PC with `Ctrl` + `Alt` + `T` and connect to Raspberry Pi with its IP address.  
-  The default password is **ubuntu**.  
+  The default password is **turtlebot**.  
   ```bash
 $ ssh ubuntu@{IP_ADDRESS_OF_RASPBERRY_PI}
   ```

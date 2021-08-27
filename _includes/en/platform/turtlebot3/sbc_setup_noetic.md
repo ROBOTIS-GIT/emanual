@@ -6,7 +6,6 @@
 
 {% capture warning_01 %}
 **WARNING**
-- This SBC Setup section is specifically written for **Raspberry Pi 3B+** which is the current official TurtleBot3 SBC.
 - This process may take long time. Please do not use battery while following this section.
 - An HDMI monitor and input devices such as a keyboard and a mouse will be required to complete this setup.
 {% endcapture %}
@@ -20,8 +19,20 @@ If you PC do not have a microSD slot, please use a microSD card reader to burn t
 Download the correct image file for your hardware and ROS version.  
 Noetic version images are created based on Ubuntu 20.04.  
 
-- [![](/assets/images/icon_download.png) **Raspberry Pi 3B+** ROS1 Noetic image](https://www.robotis.com/service/download.php?no=2008){: .blank}
-  - **SHA256** : a7c57e20f2ee4204c95315866f4a274886094f7c63ed390b6d06d95074830309
+{% capture download_01 %}
+[![](/assets/images/icon_download.png) **Download** `Raspberry Pi 3B+` ROS Noetic image](https://www.robotis.com/service/download.php?no=2008){: .blank}
+
+**SHA256** : a7c57e20f2ee4204c95315866f4a274886094f7c63ed390b6d06d95074830309
+{% endcapture %}
+<div class="notice--success">{{ download_01 | markdownify }}</div>
+
+{% capture download_02 %}
+[![](/assets/images/icon_download.png) **Download** `Raspberry Pi 4B (2GB or 4GB)` ROS Noetic image](https://www.robotis.com/service/download.php?no=2066){: .blank}
+
+**SHA256** : 9d48925a78381885916a6f3bb77891adbfae2b271b05fe2ae9a9b7ebd12c46cc
+- Please note that this image may not compatible with Raspberry Pi 4B with 8GB RAM.
+{% endcapture %}
+<div class="notice--success">{{ download_02 | markdownify }}</div>
 
 The recovery image files can be modified without a prior notice.
 {: .notice}
@@ -37,7 +48,10 @@ Choose your preferred tool to burn the image to microSD.
 #### Raspberry Pi Imager
 Please refer to [this article](https://www.raspberrypi.org/blog/raspberry-pi-imager-imaging-utility/) to find more information about Raspberry Pi Imager.
 
-[![](/assets/images/icon_download.png) Download Raspberry Pi Imager from raspberrypi.org](https://www.raspberrypi.org/software/){: .blank}
+{% capture download_rpi_imager %}
+[![](/assets/images/icon_download.png) **Download** Raspberry Pi Imager from raspberrypi.org](https://www.raspberrypi.org/software/){: .blank}
+{% endcapture %}
+<div class="notice--success">{{ download_rpi_imager | markdownify }}</div>
 
 ![](/assets/images/platform/turtlebot3/setup/rpi_imager.gif)  
 1. Click `CHOOSE OS`.  
@@ -96,7 +110,7 @@ If "No such file or directory" is returned, make sure the microSD is mounted to 
 HDMI cable has to be connected before powering the Raspberry Pi, or else the HDMI port of the Raspberry Pi will be disabled.
 {: .notice--warning}
 
-### ROS1 Network Configuration
+### ROS Network Configuration
 
 {% include en/platform/turtlebot3/ros_gpg_key_expiration_incident.md %}
 
@@ -198,17 +212,17 @@ $ sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.
 $ ssh ubuntu@{IP Address of Raspberry PI}
   ```
 
-13. Install ROS1 Noetic Ninjemys
+13. Install ROS Noetic Ninjemys
 Enter below commands to the terminal one at a time.  
-In order to check the details of the easy installation script, please refer to [the script file](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_noetic_rp3.sh).  
+In order to check the details of the easy installation script, please refer to [the script file](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_noetic_rpi.sh).  
 ```bash
 $ sudo apt-get update
 $ sudo apt-get upgrade
-$ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_noetic_rp3.sh
-$ chmod 755 ./install_ros_noetic_rp3.sh
-$ bash ./install_ros_noetic_rp3.sh
+$ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_noetic_rpi.sh
+$ chmod 755 ./install_ros_noetic_rpi.sh
+$ bash ./install_ros_noetic_rpi.sh
 ```
-If the above installation fails, please refer to [the official ROS1 Noetic installation guide](http://wiki.ros.org/noetic/Installation/Ubuntu).
+If the above installation fails, please refer to [the official ROS Noetic installation guide](http://wiki.ros.org/noetic/Installation/Ubuntu).
 
 14. Install and Build ROS Packages.
   ```bash
@@ -233,7 +247,7 @@ $ source ~/.bashrc
 $ rosrun turtlebot3_bringup create_udev_rules
 ```
 
-16. ROS1 Network Configuration
+16. ROS Network Configuration
 Confirm the WiFi IP address and edit the `.bashrc` file
   ```bash
 $ nano ~/.bashrc

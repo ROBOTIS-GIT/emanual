@@ -19,7 +19,7 @@
   - [Install Ubuntu desktop](https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview)
 
 
-### [Install ROS 1 on Remote PC](#install-ros-1-on-remote-pc)
+### [Install ROS on Remote PC](#install-ros-on-remote-pc)
 
 Open the terminal with `Ctrl`+`Alt`+`T` and enter below commands one at a time.  
 In order to check the details of the easy installation script, please refer to [the script file](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_melodic.sh).  
@@ -33,7 +33,7 @@ $ bash ./install_ros_melodic.sh
 
 If the above installation fails, please refer to [the official ROS1 Melodic installation guide](http://wiki.ros.org/melodic/Installation/Ubuntu).
 
-### [Install Dependent ROS 1 Packages](#install-dependent-ros-1-packages)
+### [Install Dependent ROS Packages](#install-dependent-ros-packages)
 
 ```bash
 $ sudo apt-get install ros-melodic-joy ros-melodic-teleop-twist-joy \
