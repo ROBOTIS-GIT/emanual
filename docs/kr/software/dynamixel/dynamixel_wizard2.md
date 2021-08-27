@@ -613,7 +613,7 @@ sidebar:
 
 ### [RAM 영역 복구하기](#ram-영역-복구하기)
 
-1. EEPROM에서 `StartUp Configuration` 항목의 `RAM Restore` 비트를 '1'로 설정 하세요.
+1. EEPROM에서 `StartUp Configuration` 주소의 `Restore RAM` 비트를 활성화 하세요.
 
    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_enable_restore_ram.png)
        
