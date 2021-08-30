@@ -1,10 +1,10 @@
 
 ### Prerequisites
-{% if page.product_group=='xl330' %}
+{% if page.product_group=='xl330' or page.ref=='xc330-m288' or page.ref=='xc330-m181' %}
 - Power supply to DYNAMIXEL ([LB-041](http://en.robotis.com/shop_en/item.php?it_id=903-0220-001) or SMPS compatible with DYNAMIXEL)
   - See [Compatibility Table]
 {% else %}
-- Power supply to DYNAMIXEL(12V SMPS / Controllers, compatible with DYNAMIXEL)
+- Power supply to DYNAMIXEL(12V SMPS / Controllers, compatible with DYNAMIXEL or [LB-020 battery](http://en.robotis.com/shop_en/item.php?it_id=903-0277-000))
   - See [Compatibility Table]
 {% endif %}
 - PC with Windows, Linux or MacOS.

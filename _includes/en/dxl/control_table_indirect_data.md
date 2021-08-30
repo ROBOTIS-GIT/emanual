@@ -1,4 +1,4 @@
-{% if page.product_group=='xl330' %}
+{% if page.product_group=='xl330' or page.product_group=='xc330' %}
 
 The Indirect Address and the Indirect Data are useful when accessing two remote addresses in the [Control Table](#control-table) as sequential addresses. 
 - Sequential addresses can increase Instruction Packet efficiency. Addresses that can be defined as Indirect Address is limited to [RAM area (Address 64 ~ 227)](#control-table-of-ram-area).
@@ -6,7 +6,7 @@ The Indirect Address and the Indirect Data are useful when accessing two remote 
 - For instance, allocating 65 (Address of LED) to Indirect Address 1(168), Indirect Data 1(208) can perform exactly same as [LED(65)]. 
 
 | Indirect Address Range | Description                                                                           |
-|:-----------------------|:--------------------------------------------------------------------------------------|
+|:-----------------------:|:--------------------------------------------------------------------------------------|
 | 64 ~ 227               | [EEPROM](#control-table-of-eeprom-area) address can't be assigned to Indirect Address |
 
 #### [Indirect Address and Indirect Data Examples](#indirect-address-and-indirect-data-examples)
@@ -34,7 +34,7 @@ Indirect Address and Indirect Data are useful when accessing two remote addresse
 - For instance, allocating 65(Address of LED) to Indirect Address 1(168), Indirect Data 1(224) can perform exactly same as [LED(65)].
 
 | Indirect Address Range | Description                                                                           |
-|:-----------------------|:--------------------------------------------------------------------------------------|
+|:-----------------------:|:--------------------------------------------------------------------------------------|
 | 64 ~ 661               | [EEPROM](#control-table-of-eeprom-area) address can't be assigned to Indirect Address |
 
 #### [Indirect Address and Indirect Data Examples](#indirect-address-and-indirect-data-examples)

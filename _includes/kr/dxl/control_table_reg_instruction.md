@@ -12,7 +12,9 @@
 
 {% endif %}
 
-| Value | Description                         |
+[Reg Write Instruction](/docs/kr/dxl/protocol2/#reg-write-0x04)에 의해서 등록된 Write 정보의 유무를 나타냅니다.
+
+| 값 | 상세 설명                         |
 |:-----:|:------------------------------------|
 |   0   | REG_WRITE에 의해 등록된 명령이 없습니다. |
 |   1   | REG_WRITE에 의해 등록된 명령이 있습니다. |

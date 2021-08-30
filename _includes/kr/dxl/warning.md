@@ -26,7 +26,7 @@
   {% assign target_file = 'dxl_proa_info' %}
 {% elsif page.product_group=='dxl_pro' %}
   {% assign target_file = 'dxl_pro_info' %}
-{% elsif page.product_group=='dxl_x430' or page.product_group=='dxl_xl430' or page.product_group=='dxl_x540' or page.product_group=='dxl_xw540' or page.product_group=='dxl_xl320' or page.product_group=='xl330' %}
+{% elsif page.product_group=='dxl_x430' or page.product_group=='dxl_xl430' or page.product_group=='dxl_x540' or page.product_group=='dxl_xw540' or page.product_group=='dxl_xl320' or page.product_group=='xl330' or page.product_group=='xc330' %}
   {% assign target_file = 'dxl_x_info' %}
 {% elsif page.product_group=='rh_p12_rn' or page.product_group=='rh_p12_rna' %}
   {% assign target_file = 'rh_p12_rn_info' %}
@@ -48,10 +48,12 @@
 (상해나 제품 손상의 원인이 됩니다.)
 - 제품을 사용자 임의로 분해 또는 개조하지 마세요.
 - 제품에 강한 충격을 가하거나 떨어드리지 마세요.
-{% if page.product_group== 'xl330' %}
+{% if page.product_group== 'xl330' or page.ref == 'xc330-m181' or page.ref == 'xc330-m288' %}
 - 안정적인 전원공급을 위해 로보티즈 제어기나 [리튬이온 배터리(LB-041)](https://www.robotis.com/shop/item.php?it_id=903-0220-001) 또는 별도의 파워 서플라이를 통한 전원공급을 권장합니다.
 - 전원이 꺼진 상태에서 장치와 전원을 연결하시고 스위치로 ON/OFF를 해주세요.
-{% else %}
+{% elsif page.ref == 'xc330-t288' or page.ref == 'xc330-t181' %}
+- 안정적인 전원공급을 위해 로보티즈 제어기나 [리튬이온 배터리(LB-020)](https://www.robotis.com/shop/item.php?it_id=903-0277-000) 또는 별도의 파워 서플라이를 통한 전원공급을 권장합니다.
+- 전원이 꺼진 상태에서 장치와 전원을 연결하시고 스위치로 ON/OFF를 해주세요.
 {% endif %}
 {% endcapture %}
 <div class="notice--warning">{{ dxl_attention | markdownify }}</div>
