@@ -570,7 +570,7 @@ sidebar:
 - Feedforward 1st & 2nd Gains
 - Profile Acceleration
 - Profile Velocity
-- Indirect Addresse
+- Indirect Addresse (다이나믹셀-P 시리즈 제외)
 
 **참고**: 백업후, RAM 영역의 복구를 위해서는, 컨트롤 테이블에서 `Startup Configuration` 주소의 **Restore RAM** 항목을 활성화 시켜야합니다. [RAM 영역 복구하기](#ram-영역-복구하기)를 참고하세요.
 {: .notice}

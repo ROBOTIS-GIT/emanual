@@ -4,8 +4,8 @@ layout: popup
 
 # DYNAMIXEL Protocol Compatibility Table
 
-- More info about [Protocol 1.0]
-- More info about [Protocol 2.0]
+- More info about [DYNAMIXEL Protocol 1.0]
+- More info about [DYNAMIXEL Protocol 2.0]
 
 **Compatibility Legend**  
 O : Compatible  
@@ -17,7 +17,7 @@ X : Incompatible
 
 ## AX Series
 
-| Model  | Protocol 1.0 | Protocol 2.0 |
+| Model  | DYNAMIXEL Protocol 1.0 | DYNAMIXEL Protocol 2.0 |
 |:-------|:------------:|:------------:|
 | AX-12W | O            | X            |
 | AX-12A | O            | X            |
@@ -25,7 +25,7 @@ X : Incompatible
 
 ## MX Series
 
-| Model  | Protocol 1.0 | Protocol 2.0 |
+| Model  | DYNAMIXEL Protocol 1.0 | DYNAMIXEL Protocol 2.0 |
 |:-------|:------------:|:------------:|
 | MX-12W | O            | X            |
 | MX-28  | O            | O*           |
@@ -34,15 +34,15 @@ X : Incompatible
 
 {% capture notice_01 %}
 **NOTE**: Read the following to ensure proper use.
-- In order to use Protocol 2.0 firmware version with MX series, proceed to **Firmware Recovery** via [DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/#firmware-recovery) or [R+ Manager 2.0](/docs/en/software/rplus2/manager/#firmware-recovery).
-- Protocol 2.0 is available with v39 Firmware version (or above). Proceed to **Firmware Update** via [DYNAMIXEL Wizard 2.0](/docs/kr/software/dynamixel/dynamixel_wizard2/#firmware-update) or [R+ Manager 2.0](/docs/en/software/rplus2/manager/#firmware-recovery).
-- Protocol 2.0 supports various Operating Modes, Secondary ID, Drive Mode, Bus Watchdog and etc.
+- In order to use DYNAMIXEL Protocol 2.0 firmware version with MX series, proceed to **Firmware Recovery** via [DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/#firmware-recovery) or [R+ Manager 2.0](/docs/en/software/rplus2/manager/#firmware-recovery).
+- DYNAMIXEL Protocol 2.0 is available with v39 Firmware version (or above). Proceed to **Firmware Update** via [DYNAMIXEL Wizard 2.0](/docs/kr/software/dynamixel/dynamixel_wizard2/#firmware-update) or [R+ Manager 2.0](/docs/en/software/rplus2/manager/#firmware-recovery).
+- DYNAMIXEL Protocol 2.0 supports various Operating Modes, Secondary ID, Drive Mode, Bus Watchdog and etc.
 {% endcapture %}
 <div class="notice">{{ notice_01| markdownify }}</div>
 
 {% capture info_01 %}
 **INFO** : 
-- MX(2.0) Firmware uses different control table and address from default MX firmware with Protocol 1.0.
+- MX(2.0) Firmware uses different control table and address from default MX firmware with DYNAMIXEL Protocol 1.0.
 - MX(2.0) Firmware inherits DYNAMIXEL-X function.
 {% endcapture %}
 <div class="notice--info">{{ info_01| markdownify }}</div>
@@ -51,21 +51,21 @@ X : Incompatible
 
 {% capture notice_01 %}
 **NOTE** : 
-- X-series can switch Protocol 2.0 into Protocol 1.0 aside from [XL320](/docs/en/dxl/x/xl320/)
-- Refer to Protocol Type(13) in control table of model of its DYNAMIXEL. 
+- X-series can switch DYNAMIXEL Protocol 2.0 into DYNAMIXEL Protocol 1.0 aside from [XL320](/docs/en/dxl/x/xl320/)
+- Refer to DYNAMIXEL Protocol Type(13) in control table of model of its DYNAMIXEL. 
 {% endcapture %}
 <div class="notice">{{ notice_01| markdownify }}</div>
 
 ## [XW Series](#xw-series)
 
-| Model       | Protocol 1.0            | Protocol 2.0 |
+| Model       | DYNAMIXEL Protocol 1.0            | DYNAMIXEL Protocol 2.0 |
 |:------------|:-----------------------:|:------------:|
 | XW540-T140  | O* <br>(F/W address 13) | O            |
 | XW540-T260  | O* <br>(F/W address 13) | O            |
 
 ## [XH Series](#xh-series)
 
-| Model       | Protocol 1.0            | Protocol 2.0 |
+| Model       | DYNAMIXEL Protocol 1.0            | DYNAMIXEL Protocol 2.0 |
 |:------------|:-----------------------:|:------------:|
 | XH430-W210  | O* <br>(F/W address 13) | O            |
 | XH430-W350  | O* <br>(F/W address 13) | O            |
@@ -78,7 +78,7 @@ X : Incompatible
 
 ## [XM Series](#xm-series)
 
-| Model       | Protocol 1.0            | Protocol 2.0 |
+| Model       | DYNAMIXEL Protocol 1.0            | DYNAMIXEL Protocol 2.0 |
 |:------------|:-----------------------:|:------------:|
 | XM430-W210  | O* <br>(F/W address 13) | O            |
 | XM430-W350  | O* <br>(F/W address 13) | O            |
@@ -87,7 +87,7 @@ X : Incompatible
 
 ## [XC Series](#xc-series)
 
-| Model       | Protocol 1.0            | Protocol 2.0 |
+| Model       | DYNAMIXEL Protocol 1.0            | DYNAMIXEL Protocol 2.0 |
 |:------------|:-----------------------:|:------------:|
 | XC430-W150  | O* <br>(F/W address 13) | O            |
 | XC430-W240  | O* <br>(F/W address 13) | O            |
@@ -95,10 +95,11 @@ X : Incompatible
 
 ## [XL Series](#xl-series)
 
-| Model       | Protocol 1.0            | Protocol 2.0 |
+| Model       | DYNAMIXEL Protocol 1.0            | DYNAMIXEL Protocol 2.0 |
 |:------------|:-----------------------:|:------------:|
 | XL-320      | X                       | O            |
-| XL-330      | X                       | O            |
+| XL330-M288  | X                       | O            |
+| XL330-M077  | X                       | O            |
 | XL430-W250  | O* <br>(F/W address 13) | O            |
 | 2XL430-W250 | O* <br>(F/W address 13) | O            |
 
@@ -106,7 +107,7 @@ X : Incompatible
 
 ## [H Series](#h-series)
 
-| Model         | Protocol 1.0 | Protocol 2.0 |
+| Model         | DYNAMIXEL Protocol 1.0 | DYNAMIXEL Protocol 2.0 |
 |:--------------|:------------:|:------------:|
 | H42-20-S300   | X            | O            |
 | H54-100-S500  | X            | O            |
@@ -114,7 +115,7 @@ X : Incompatible
 
 ## [M Series](#m-series)
 
-| Model         | Protocol 1.0 | Protocol 2.0 |
+| Model         | DYNAMIXEL Protocol 1.0 | DYNAMIXEL Protocol 2.0 |
 |:--------------|:------------:|:------------:|
 | M42-10-S260   | X            | O            |
 | M54-40-S250   | X            | O            |
@@ -122,7 +123,7 @@ X : Incompatible
 
 ## [L Series](#l-series)
 
-| Model         | Protocol 1.0 | Protocol 2.0 |
+| Model         | DYNAMIXEL Protocol 1.0 | DYNAMIXEL Protocol 2.0 |
 |:--------------|:------------:|:------------:|
 | L54-50-S500-R | X            | O            |
 | L54-50-S290-R | X            | O            |
@@ -134,7 +135,7 @@ X : Incompatible
 
 ## [PH Series](#ph-series)
 
-| Model           | Protocol 1.0 | Protocol 2.0 |
+| Model           | DYNAMIXEL Protocol 1.0 | DYNAMIXEL Protocol 2.0 |
 |:----------------|:------------:|:------------:|
 | PH54-200-S500-R | X            | O            |
 | PH54-100-S500-R | X            | O            |
@@ -142,7 +143,7 @@ X : Incompatible
 
 ## [PM Series](#pm-series)
 
-| Model           | Protocol 1.0 | Protocol 2.0 |
+| Model           | DYNAMIXEL Protocol 1.0 | DYNAMIXEL Protocol 2.0 |
 |:----------------|:------------:|:------------:|
 | PM54-060-S250-R | X            | O            |
 | PM54-040-S250-R | X            | O            |
@@ -150,7 +151,7 @@ X : Incompatible
 
 # [ETC](#etc)
 
-| Model                |         Protocol 1.0         |         Protocol 2.0          |
+| Model                |         DYNAMIXEL Protocol 1.0         |         DYNAMIXEL Protocol 2.0          |
 |:---------------------|:----------------------------:|:-----------------------------:|
 | RoboPlus 1.0 Suite   |              O               |   X* (XL-320 and PRO only)    |
 | R+ Manager 2.0       |              O               |               O               |
@@ -175,5 +176,5 @@ X : Incompatible
 | OpenCM485 EXP        | O <br>(Controller-dependent) |  O<br>(Controller-dependent)  |
 | OpenCR1.0            |  O*<br>(Library-dependent)   |   O*<br>(Library-dependent)   |
 
-[Protocol 1.0]: /docs/en/dxl/protocol1/
-[Protocol 2.0]: /docs/en/dxl/protocol2/
+[DYNAMIXEL Protocol 1.0]: /docs/en/dxl/protocol1/
+[DYNAMIXEL Protocol 2.0]: /docs/en/dxl/protocol2/

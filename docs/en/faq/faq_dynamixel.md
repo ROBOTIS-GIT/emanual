@@ -17,24 +17,32 @@ sidebar:
 **NOTE** : More FAQ can be found from [ROBOTIS Support page].
 {: .notice}
 
-# What is the difference between Protocol 1.0 and 2.0?
+# What is the difference between DYNAMIXEL Protocol 1.0 and 2.0?
 
 The structure of the instruction and status packet are different.
-## Protocol 1.0
-[Protocol 1.0] is used with established DYNAMIXEL product lines; the AX-series and MX-series DYNAMIXEL servos operate with [Protocol 1.0].
 
-## Protocol 2.0
-[Protocol 2.0] is used with the most recently-released DYNAMIXEL series; the X-series and PRO series utilize [Protocol 2.0]. The control tables of DYNAMIXEL's using Protocol 2.0 are expanded to include PID (Proportional, Integral, Derivative) controls allowing for extremely precise and fine-tuned movements. In addition, [MX]-series DYNAMIXEL's may undergo firmware upgrade to utilize [Protocol 2.0].
+## DYNAMIXEL Protocol 1.0
+[DYNAMIXEL Protocol 1.0] is used with established DYNAMIXEL product lines; the AX-series and MX-series DYNAMIXEL servos operate with [DYNAMIXEL Protocol 1.0].
 
-Please refer to [Protocol 1.0] and [Protocol 2.0] description pages for more information.
+## DYNAMIXEL Protocol 2.0
+[DYNAMIXEL Protocol 2.0] is used with the most recently-released DYNAMIXEL series; the X-series and PRO series utilize [DYNAMIXEL Protocol 2.0]. The control tables of DYNAMIXEL's using DYNAMIXEL Protocol 2.0 are expanded to include PID (Proportional, Integral, Derivative) controls allowing for extremely precise and fine-tuned movements. In addition, [MX]-series DYNAMIXEL's may undergo firmware upgrade to utilize [DYNAMIXEL Protocol 2.0].
 
-# Which DYNAMIXEL uses Protocol 1.0 and Protocol 2.0?
+Please refer to [DYNAMIXEL Protocol 1.0] and [DYNAMIXEL Protocol 2.0] description pages for more information.
+
+# Which DYNAMIXEL uses DYNAMIXEL Protocol 1.0 and DYNAMIXEL Protocol 2.0?
 
 Please refer to [Compatibility Table]{: .popup} of ROBOTIS products.
 
 # What does Control Table/DYNAMIXEL firmware mean?
 
-The Control Table contains every numbered firmware address that may be used in a command or status packet.
+The Control Table is a structure that consists of multiple Data fields (EEPROM, RAM) to store status or to control the device. Users can check current status of the device by reading a specific Data from the Control Table with Read Instruction Packets. WRITE Instruction Packets enable users to control the device by changing specific Data in the Control Table. The Address is a unique value when accessing a specific Data in the Control Table with Instruction Packets. In order to read or write data, users must designate a specific Address in the Instruction Packet.
+
+<!-- Delete: The Control Table contains every numbered firmware address that may be used in a command or status packet. /// Correspond to the exsisting description in each DYNAMIXEL manual -->
+
+For more details about Instruction and Status Packets, please refer to [DYNAMIXEL Protocol 1.0] and [DYNAMIXEL Protocol 2.0]. 
+
+**NOTE**: To know what product supports DYNAMIXEL Protocol (1.0 or 2.0), see [DYNAMIXEL Protocol Compatibility Table](/docs/en/popup/faq_protocol_compatibility_table/){: .popup} 
+{: .notice}
 
 **TIP** : The firmware addresses remain similar for DYNAMIXEL's within the same series.    
 ex) Goal Position of [AX-12A](/docs/en/dxl/ax/ax-12a/#goal-position-30) and [AX-18A](/docs/en/dxl/ax/ax-18a/#goal-position-30) is firmware address 30.
@@ -58,8 +66,8 @@ Please refer to Connector Information section of each DYNAMIXEL manual page belo
    DYNAMIXEL communicates via half-duplex UART (TTL or RS485 depending on your model). Refer to the **Communication Circuit** section in each DYNAMIXEL manual.
 
 # How can I test DYNAMIXEL control table?
-1. Please use [DYNAMIXEL Wizard] or [DYNAMIXEL Wizard 2.0] for the product using **Protocol 1.0**.
-2. Please use [R+ Manager 2.0] or [DYNAMIXEL Wizard 2.0] for the product using **Protocol 2.0**.
+1. Please use [DYNAMIXEL Wizard] or [DYNAMIXEL Wizard 2.0] for the product using **DYNAMIXEL Protocol 1.0**.
+2. Please use [R+ Manager 2.0] or [DYNAMIXEL Wizard 2.0] for the product using **DYNAMIXEL Protocol 2.0**.
 
 # How can I make a program to control DYNAMIXEL?
 1. If you are operating DYNAMIXEL from your PC with [U2D2] or [USB2DYNAMIXEL]
@@ -68,8 +76,8 @@ Please refer to Connector Information section of each DYNAMIXEL manual page belo
   You can use [Arduino IDE] that supports [DYNAMIXEL SDK] and [DYNAMIXEL Workbench] libraries.
 
 
-# If the Protocol Version of DYNAMIXEL's X-Series is changed, does it really change the firmware address?
-This does not change the firmware addresses of DYNAMIXEL, but will allow it to communicate in Protocol 1.0 for compatibility with older series such as AX or MX.
+# If the DYNAMIXEL Protocol Version of DYNAMIXEL's X-Series is changed, does it really change the firmware address?
+This does not change the firmware addresses of DYNAMIXEL, but will allow it to communicate in DYNAMIXEL Protocol 1.0 for compatibility with older series such as AX or MX.
 
 
 # I'd like to know which frames and horns are compatible to my DYNAMIXEL.
@@ -87,11 +95,11 @@ Do not exceed the operating voltage range as it will damage the internal compone
 DYNAMIXEL Pro is highly recommended to use with DC 24V.
 
 # Why DYNAMIXEL-X Series doesn't work with other DYNAMIXEL series?
-1. To communicate with any DYNAMIXEL, users must utilize the communication protocol accepted by DYNAMIXEL as well as the [correct logic level (buffer circuit)](http://emanual.robotis.com/docs/en/dxl/x/xl430-w250/#ttl-communication). The [XL430-W250-T](/docs/en/dxl/x/xl430-w250/) utilizes Communication [Protocol 2.0] for packet structure and instructions.
+1. To communicate with any DYNAMIXEL, users must utilize the communication protocol accepted by DYNAMIXEL as well as the [correct logic level (buffer circuit)](http://emanual.robotis.com/docs/en/dxl/x/xl430-w250/#ttl-communication). The [XL430-W250-T](/docs/en/dxl/x/xl430-w250/) utilizes Communication [DYNAMIXEL Protocol 2.0] for packet structure and instructions.
 
-2. The third-party software solution you linked likely did not work due to being based on Communication [Protocol 1.0]. However, ROBOTIS does not recommend operating DYNAMIXEL's without the appropriate communication circuit.
+2. The third-party software solution you linked likely did not work due to being based on Communication [DYNAMIXEL Protocol 1.0]. However, ROBOTIS does not recommend operating DYNAMIXEL's without the appropriate communication circuit.
 
-3. [XL430-W250-T](/docs/en/dxl/x/xl430-w250/), and all Protocol 2.0 DYNAMIXEL actuators, may be configured to accept Communication Protocol 1.0 commands by changing the [Protocol Version parameter](/docs/en/dxl/x/xl430-w250/#protocol-version13) in DYNAMIXEL firmware.
+3. [XL430-W250-T](/docs/en/dxl/x/xl430-w250/), and all DYNAMIXEL Protocol 2.0 DYNAMIXEL actuators, may be configured to accept Communication DYNAMIXEL Protocol 1.0 commands by changing the [DYNAMIXEL Protocol Version parameter](/docs/en/dxl/x/xl430-w250/#protocol-version13) in DYNAMIXEL firmware.
 
 # What is the recommended torque for DYNAMIXEL?
 Each DYNAMIXEL has different torque ranges.
@@ -122,8 +130,8 @@ Most models of DYNAMIXEL contain a suffix on the last digit of the model number 
 DYNAMIXEL Pro is CE/FCC certified. For more information, please search ROBOTIS [e-Manual](http://emanual.robotis.com/) for Pro and Pro + series.
 
 
-[Protocol 1.0]: /docs/en/dxl/protocol1/
-[Protocol 2.0]: /docs/en/dxl/protocol2/
+[DYNAMIXEL Protocol 1.0]: /docs/en/dxl/protocol1/
+[DYNAMIXEL Protocol 2.0]: /docs/en/dxl/protocol2/
 [DX]: /docs/en/dxl/#dx-series
 [AX]: /docs/en/dxl/#ax-series
 [RX]: /docs/en/dxl/#rx-series
