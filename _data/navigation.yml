@@ -15804,18 +15804,27 @@ protocol2:
       - title: "Clear (0x10)"
         titlekr: "Clear (0x10)"
         url: /dxl/protocol2/#clear-0x10
+      - title: "Control Table Backup (0x20)"
+        titlekr: "Control Table Backup (0x20)"
+        url: /dxl/protocol2/#control-table-backup-0x20
       - title: "Sync Read (0x82)"
         titlekr: "Sync Read (0x82)"
         url: /dxl/protocol2/#sync-read-0x82
       - title: "Sync Write (0x83)"
         titlekr: "Sync Write (0x83)"
         url: /dxl/protocol2/#sync-write-0x83
+      - title: "Fast Sync Read (0x8A)"
+        titlekr: "Fast Sync Read (0x8A)"
+        url: /dxl/protocol2/#fast-sync-read-0x8a
       - title: "Bulk Read (0x92)"
         titlekr: "Bulk Read (0x92)"
         url: /dxl/protocol2/#bulk-read-0x92
       - title: "Bulk Write (0x93)"
         titlekr: "Bulk Write (0x93)"
         url: /dxl/protocol2/#bulk-write-0x93
+      - title: "Fast Bulk Read (0x9A)"
+        titlekr: "Fast Bulk Read (0x9A)"
+        url: /dxl/protocol2/#fast-bulk-read-0x9a     
 
 all-edu:
   - title: "PLAY"

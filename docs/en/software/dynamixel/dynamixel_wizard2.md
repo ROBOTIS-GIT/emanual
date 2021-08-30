@@ -575,9 +575,9 @@ See the available items in Control Table for data backup,
 - Feedforward 1st & 2nd Gains
 - Profile Acceleration
 - Profile Velocity
-- Indirect Addresses
+- Indirect Addresses (Except for DYNAMIXEL-P Series)
 
-**Note**: Be sure to set a bit of **Restore RAM** as '1' from `Startup Configuration` address in Control Table, in order to restore stored RAM data by `Backup`.
+**Note**: Be sure to enable **Restore RAM** bit from `Startup Configuration` address in Control Table, in order to restore stored RAM data by `Backup`.
 {: .notice}
 
 <div class="notice">{{ supported_dynamixel | markdownify }}</div>

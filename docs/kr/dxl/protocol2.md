@@ -17,6 +17,9 @@ sidebar:
 - 다이나믹셀 프로토콜 2.0을 지원하는 제어기: CM-50, CM-150, CM-200, OpenCM7.0, OpenCM9.04, CM-550, OpenCR
 - 다이나믹셀 프로토콜 2.0을 지원하는 소프트웨어: 로보플러스 스마트 앱, 로보플러스 2.0, 로보플러스 3.0, 다이나믹셀 위자드 2.0
 
+**참고**: [다이나믹셀 프로토콜 호환표](/docs/kr/popup/faq_protocol_compatibility_table/){: .popup} 참고.
+{: .notice}
+
 **참고**: MX(2.0)은 프로토콜 2.0을 지원하는 MX 시리즈의 별도 펌웨어를 의미함. DYNAMIXEL Wizard2.0의 [펌웨어 복구](/docs/kr/software/dynamixel/dynamixel_wizard2/#펌웨어-복구) 기능을 활용하여 MX(2.0) 펌웨어로 업그레이드 가능. 
 {: .notice}
 
@@ -59,21 +62,25 @@ Packet의 길이를 나타냄.
 ## [Instruction](#instruction)
 Packet의 용도를 정의하는 필드
 
-|  값  |      명령       |                                                설명                                                 |
-|:----:|:---------------:|:---------------------------------------------------------------------------------------------------:|
-| 0x01 |     [Ping]      |       Packet ID와 동일한 ID를 가지는 장치에 Packet이 도달했는지 여부 확인을 위한 Instruction        |
-| 0x02 |     [Read]      |                            장치로부터 데이터를 읽어오기 위한 Instruction                            |
-| 0x03 |     [Write]     |                                장치에 데이터를 쓰기 위한 Instruction                                |
-| 0x04 |   [Reg Write]   |          Instruction Packet을 대기 상태로 등록하는 Instruction, Action 명령에 의해 실행됨           |
-| 0x05 |    [Action]     |                       Reg Write 로 미리 등록한 Packet을 실행하는 Instruction                        |
-| 0x06 | [Factory Reset] |                   컨트롤테이블을 공장 출하 상태의 기본값으로 되돌리는 Instruction                   |
-| 0x08 |    [Reboot]     |                                  장치를 재부팅 시키는 Instruction                                   |
-| 0x10 |     [Clear]     |                               장치의 특정 상태를 해제하는 Instruction                               |
-| 0x55 | Status(Return)  |                               Instruction Packet에 대한 Return packet                               |
-| 0x82 |   [Sync Read]   |    다수의 장치에 대해서, 동일한 Address에서 동일한 길이의 데이터를 한 번에 읽기 위한 Instruction    |
-| 0x83 |  [Sync Write]   |     다수의 장치에 대해서, 동일한 Address에 동일한 길이의 데이터를 한 번에 쓰기 위한 Instruction     |
-| 0x92 |   [Bulk Read]   | 다수의 장치에 대해서, 서로 다른 Address에서 서로 다른 길이의 데이터를 한 번에 읽기 위한 Instruction |
-| 0x93 |  [Bulk Write]   |  다수의 장치에 대해서, 서로 다른 Address에 서로 다른 길이의 데이터를 한번에 쓰기 위한 Instruction   |
+|  값  |          명령          | 설명                                                                                                |
+|:----:|:----------------------:|:----------------------------------------------------------------------------------------------------|
+| 0x01 |         [Ping]         | Packet ID와 동일한 ID를 가지는 장치에 Packet이 도달했는지 여부 확인을 위한 Instruction              |
+| 0x02 |         [Read]         | 장치로부터 데이터를 읽어오기 위한 Instruction                                                       |
+| 0x03 |        [Write]         | 장치에 데이터를 쓰기 위한 Instruction                                                               |
+| 0x04 |      [Reg Write]       | Instruction Packet을 대기 상태로 등록하는 Instruction, Action 명령에 의해 실행됨                    |
+| 0x05 |        [Action]        | Reg Write 로 미리 등록한 Packet을 실행하는 Instruction                                              |
+| 0x06 |    [Factory Reset]     | Control Table을 공장 출하 상태의 기본값으로 되돌리는 Instruction                                     |
+| 0x08 |        [Reboot]        | 장치를 재부팅 시키는 Instruction                                                                    |
+| 0x10 |        [Clear]         | 장치의 특정 상태를 해제하는 Instruction                                                             |
+| 0x20 | [Control Table Backup] | Control Table을 Backup 또는 복구하기 위한 Instruction                                               |
+| 0x55 |     Status(Return)     | Instruction Packet에 대한 Return packet                                                             |
+| 0x82 |      [Sync Read]       | 다수의 장치에 대해서, 동일한 Address에서 동일한 길이의 데이터를 한 번에 읽기 위한 Instruction       |
+| 0x83 |      [Sync Write]      | 다수의 장치에 대해서, 동일한 Address에 동일한 길이의 데이터를 한 번에 쓰기 위한 Instruction         |
+| 0x8A |    [Fast Sync Read]    | 다수의 장치에 대해서, 동안한 Address에서 동인한 길이의 데이터를 한 번에 읽기 위한 Instruction       |
+| 0x92 |      [Bulk Read]       | 다수의 장치에 대해서, 서로 다른 Address에서 서로 다른 길이의 데이터를 한 번에 읽기 위한 Instruction |
+| 0x93 |      [Bulk Write]      | 다수의 장치에 대해서, 서로 다른 Address에 서로 다른 길이의 데이터를 한번에 쓰기 위한 Instruction    |
+| 0x9A |    [Fast Bulk Read]    | 다수의 장치에 대해서, 서로 다른 Address에서 서로 다른 길이의 데이터를 한 번에 읽기 위한 Instruction |
+
 
 ## [Parameters](#parameters)
 
@@ -105,7 +112,7 @@ Instruction Packet 의 처리 결과를 나타냄
 |:-----:|:-------------:|
 | Alert | Error Number  |
 
-  - Alert : 장치에 하드웨어적인 문제가 발생한 경우 1 로 Setting 됨. 이 경우 Control Table 의 Hardware error status 값을 읽어 보면 문제의 원인을 알 수 있음.
+  - Alert : 장치에 하드웨어적인 문제가 발생한 경우 1 로 Setting 됨. 이 경우 [Control Table] 의 Hardware error status 값을 읽어 보면 문제의 원인을 알 수 있음.
   - Error Number : Instruction Packet 의 처리에 Error 가 발생한 경우.
 
 | Error Number | Error             | 설명                                                                                                                                                                                                 |
@@ -126,7 +133,7 @@ Instruction Packet 의 처리 결과를 나타냄
 ## [Response Policy](#response-policy)
 
 1. Broadcast ID(254 (0xFE))는 [Ping], [Sync Read] 및 [Bulk Read] 에만 응답하며, 그 외 [Instruction](#instruction)에는 응답하지 않음. 예를 들어 [Sync Write] 및 [Bulk Write] Instruction에서는 응답 하지 않음.
-2. Control Table의 Status Return Level값에 따라 응답이 결정. 각 장치의 Status Return Level에서 설정가능한 값을 참고. 
+2. [Control Table]의 Status Return Level값에 따라 응답이 결정. 각 장치의 Status Return Level에서 설정가능한 값을 참고. 
 
 # [Packet 처리](#packet-처리)
 
@@ -167,10 +174,10 @@ Instruction Packet 의 처리 결과를 나타냄
 **참고**: Status Packet은 각 장치로부터 받음.
 {: .notice}
 
-| Status Packet |      설명      |
-|:-------------:|:--------------:|
-|  Parameter 1  |  모델번호 LSB  |
-|  Parameter 2  |  모델번호 MSB  |
+| Status Packet | 설명           |
+|:-------------:|:---------------|
+|  Parameter 1  | 모델번호 LSB   |
+|  Parameter 2  | 모델번호 MSB   |
 |  Parameter 3  | 펌웨어 Version |
 
 ### 예제 1
@@ -218,7 +225,7 @@ Instruction Packet 의 처리 결과를 나타냄
 ## [Read (0x02)](#read-0x02)
 
 ### 설명
-  - Control Table 의 값을 읽어오기 위한 Instruction
+  - [Control Table] 의 값을 읽어오기 위한 Instruction
   - 음수 데이터의 표현 방법 : 제품별로 차이가 있으므로, 해당 제품의 e-Manual 을 참고 할 것.
   - Broadcast ID(254 (0xFE))에 대해서는 응답하지 않음.
   
@@ -227,18 +234,18 @@ Instruction Packet 의 처리 결과를 나타냄
 
 ### Packet Parameters
 
-| Instruction Packet |             설명             |
-|:------------------:|:----------------------------:|
-|    Parameter 1     |   시작 주소의 하위 바이트    |
-|    Parameter 2     |   시작 주소의 상위 바이트    |
+| Instruction Packet | 설명                         |
+|:------------------:|:-----------------------------|
+|    Parameter 1     | 시작 주소의 하위 바이트      |
+|    Parameter 2     | 시작 주소의 상위 바이트      |
 |    Parameter 3     | 데이터 길이(X)의 하위 바이트 |
 |    Parameter 4     | 데이터 길이(X)의 상위 바이트 |
 
-| Status Packet |      설명      |
-|:-------------:|:--------------:|
+| Status Packet | 설명           |
+|:-------------:|:---------------|
 |  Parameter 1  | 첫 번째 바이트 |
 |  Parameter 2  | 두 번째 바이트 |
-|      ...      |      ...       |
+|      ...      | ...            |
 |  Parameter X  | X 번째 바이트  |
 
 ### 예제
@@ -261,19 +268,19 @@ Instruction Packet 의 처리 결과를 나타냄
 ## [Write (0x03)](#write-0x03)
 
 ### 설명
-  - Control Table 에 값을 쓰기 위한 Instruction
+  - [Control Table] 에 값을 쓰기 위한 Instruction
   - 음수 데이터의 표현 방법 : 제품별로 차이가 있으므로, 해당 제품의 e-Manual을 참고 할 것.
 
 ### Packet Parameters
 
-| Instruction Packet |          설명           |
-|:------------------:|:-----------------------:|
+| Instruction Packet | 설명                    |
+|:------------------:|:------------------------|
 |    Parameter 1     | 시작 주소의 하위 바이트 |
 |    Parameter 2     | 시작 주소의 상위 바이트 |
-|   Parameter 2+1    |      첫번째 바이트      |
-|   Parameter 2+2    |      두번째 바이트      |
-|        ...         |           ...           |
-|   Parameter 2+X    |      X번째 바이트       |
+|   Parameter 2+1    | 첫번째 바이트           |
+|   Parameter 2+2    | 두번째 바이트           |
+|        ...         | ...                     |
+|   Parameter 2+X    | X번째 바이트            |
 
 ### 예제
 
@@ -299,18 +306,18 @@ Instruction Packet 의 처리 결과를 나타냄
   - Write Instruction은 Instruction Packet 을 받으면 즉시 실행됨.
   - Reg Write 와 [Action] Instruction을 사용하면, 다수의 장치를 동시에 구동할 수 있음.
   - Reg Write Instruction은 Instruction Packet 을 대기 상태로 등록하고, Control table Registered Instruction을 ‘1’로 설정함.
-  - Action Instruction 을 수신하면, 등록된 Packet을 실행하고, Control Table Registered Instruction을 ‘0’으로 변경함.
+  - Action Instruction 을 수신하면, 등록된 Packet을 실행하고, [Control Table] Registered Instruction을 ‘0’으로 변경함.
 
 ### Packet Parameters
 
-| Instruction Packet |          설명           |
-|:------------------:|:-----------------------:|
+| Instruction Packet | 설명                    |
+|:------------------:|:------------------------|
 |    Parameter 1     | 시작 주소의 하위 바이트 |
 |    Parameter 2     | 시작 주소의 상위 바이트 |
-|   Parameter 2+1    |      첫번째 바이트      |
-|   Parameter 2+2    |      두번째 바이트      |
-|        ...         |           ...           |
-|   Parameter 2+X    |      X번째 바이트       |
+|   Parameter 2+1    | 첫번째 바이트           |
+|   Parameter 2+2    | 두번째 바이트           |
+|        ...         | ...                     |
+|   Parameter 2+X    | X번째 바이트            |
 
 ### 예제
 
@@ -357,7 +364,7 @@ Instruction Packet 의 처리 결과를 나타냄
 ## [Factory Reset (0x06)](#factory-reset-0x06)
 
 ### 설명
-- Control Table 을 공장 출하 시의 기본값으로 되돌리는 Instruction.
+- [Control Table] 을 공장 출하 시의 기본값으로 되돌리는 Instruction.
 - Factory Reset (0x06) Instruction이 실행되면, 장치는 재부팅되고 LED가 4번 점멸
 - Packet ID가 Broadcast ID(0xFE)이고 Option이 Reset all value(0xFF)일 경우, Factory Reset Instruction (0x06)은 동작하지 않음
   - MX(2.0) FW42, 다이나믹셀-X 시리즈 FW42 이상부터 적용
@@ -415,12 +422,12 @@ Instruction Packet 의 처리 결과를 나타냄
 
 ### Parameters
 
-|  P1  | P2 ~ P5                           | 설명                                                                                                                                                                                                                  |
-|:----:|:----------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  P1  |              P2 ~ P5              | 설명                                                                                                                                                                                                                  |
+|:----:|:---------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0x01 | 고정값<br />(0x44 0x58 0x4C 0x22) | 현재 위치(Present Position) 값을 1회전(0~4095) 이내의 절대위치 값으로 초기화.<br />정지된 상태에서만 Clear 가능. <br />구동중에 Clear Inst Packet을 전송할 경우, Status Packet의 Error 필드에 Result Fail(0x01) 발생. |
-| 0x02 | -                                 | 사용하지 않음                                                                                                                                                                                                         |
-| ...  | -                                 | 사용하지 않음                                                                                                                                                                                                         |
-| 0xFF | -                                 | 사용하지 않음                                                                                                                                                                                                         |
+| 0x02 |                 -                 | 사용하지 않음                                                                                                                                                                                                         |
+| ...  |                 -                 | 사용하지 않음                                                                                                                                                                                                         |
+| 0xFF |                 -                 | 사용하지 않음                                                                                                                                                                                                         |
 
 ### 예제
 
@@ -440,6 +447,73 @@ Instruction Packet 의 처리 결과를 나타냄
 | 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1  | 0x0C  |
 
 
+## [Control Table Backup (0x20)](#control-table-backup-0x20)
+
+### 설명
+- 현재 상태의 [Control table] 값을 Backup 영역에 저장하거나, 저장된 값으로 EEPROM을 복구하기 위한 Instruction.
+- Control Table Backup 명령은 Torque Enable 항목이 ‘0’(Off) 상태일 때만 수행되며, ‘1’(On) 상태일 때에는 [Result Fail Packet](#error)을 응답함.
+- X430, X540 시리즈 FW45 이상, X330 시리즈 FW46 이상, 다이나믹셀-P 시리즈 FW12 이상부터 지원.
+- Backup으로 저장하는 데이터.
+  - EEPROM 영역: 전체
+  - RAM 영역
+    - 위치, 속도 제어기의 PID gain
+    - Feedforward 1st, 2nd Gain
+    - Profile Acceleration, Velocity
+    - Indirect Address (P 시리즈는 제외)
+
+{% capture howto_backup %}
+**참고**
+- [백업 및 복구](/docs/kr/software/dynamixel/dynamixel_wizard2/#백업-및-복구)
+- Control Table Backup 데이터 중에서 RAM 영역의 데이터는 Control Table의 Startup Configuration(60)에서 복구할 수 있음 ([RAM 영역 복구하기](/docs/kr/software/dynamixel/dynamixel_wizard2/#ram-영역-복구하기))
+{% endcapture %}
+
+<div class="notice">{{ howto_backup | markdownify}}</div>
+
+
+### Parameters
+
+|  P1  |              P2 ~ P5              | 설명                                                                                                                 |
+|:----:|:---------------------------------:|:---------------------------------------------------------------------------------------------------------------------|
+| 0x01 | 고정값<br />(0x43 0x54 0x52 0x4C) | 현재 상태의 Control Table 데이터를 Backup 영역에 저장                                                                |
+| 0x02 | 고정값<br />(0x43 0x54 0x52 0x4C) | Backup 영역에 저장된 Control Table 데이터 중에서 EEPROM 영역의 데이터를 복구<br>패킷 처리 후 자동으로 재부팅 합니다. |
+| 0x03 |                \-                 | 사용하지 않음                                                                                                        |
+|  ⋯   |                \-                 | 사용하지 않음                                                                                                        |
+| 0xFF |                \-                 | 사용하지 않음                                                                                                        |
+
+### 예제
+
+#### 예제 1 설명
+
+ID 1(XC330-T288): 현재 상태의 Control Table 데이터를 Backup영역에 저장
+
+#### Control Table Backup Packet
+
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST |  P1  |  P2  |  P3  |  P4  |  P5  | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x08 | 0x00 | 0x20 | 0x01 | 0x43 | 0x54 | 0x52 | 0x4C | 0x16 | 0xF5 |
+
+#### ID1 Status Packet
+
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST | ERR  | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1 | 0x0C |
+
+#### 예제 2 설명
+
+ID1 (XC330-T288): Backup 영역에 저장된 EEPROM 데이터를 복구 (복구 후 재부팅)
+
+#### Control Table Backup Packet
+
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST |  P1  |  P2  |  P3  |  P4  |  P5  | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x08 | 0x00 | 0x20 | 0x02 | 0x43 | 0x54 | 0x52 | 0x4C | 0x92 | 0xF5 |
+
+#### ID1 Status Packet
+
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST | ERR  | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1 | 0x0C |
+
 ## [Sync Read (0x82)](#sync-read-0x82)
 
 ### 설명
@@ -451,25 +525,25 @@ Instruction Packet 의 처리 결과를 나타냄
 
 ### Parameters
 
-| Instruction Packet |             설명             |
-|:------------------:|:----------------------------:|
-|    Parameter 1     |   시작 주소의 하위 바이트    |
-|    Parameter 2     |   시작 주소의 상위 바이트    |
+| Instruction Packet | 설명                         |
+|:------------------:|:-----------------------------|
+|    Parameter 1     | 시작 주소의 하위 바이트      |
+|    Parameter 2     | 시작 주소의 상위 바이트      |
 |    Parameter 3     | 데이터 길이(X)의 하위 바이트 |
 |    Parameter 4     | 데이터 길이(X)의 상위 바이트 |
-|   Parameter 4+1    |       첫번째 장치의 ID       |
-|   Parameter 4+2    |       두번째 장치의 ID       |
-|        ...         |             ...              |
-|   Parameter 4+X    |       X번째 장치의 ID        |
+|   Parameter 4+1    | `첫번째 장치` ID             |
+|   Parameter 4+2    | `두번째 장치` ID             |
+|        ...         | ...                          |
+|   Parameter 4+X    | X번째 장치의 ID              |
 
 **참고** : 각 장치는 Sync Read Instruction Packet에 대해 응답 시, Status Packet을 각각 반환. 아래 예제를 참고할 것.
 {: .notice}
 
-| Status Packet |     설명     |
-|:-------------:|:------------:|
-|  Parameter 1  |  Frist Byte  |
+| Status Packet | 설명         |
+|:-------------:|:-------------|
+|  Parameter 1  | Frist Byte   |
 |  Parameter 2  | Second Byte  |
-|      ...      |     ...      |
+|      ...      | ...          |
 |  Parameter X  | X번째 바이트 |
 
 ### 예제
@@ -495,7 +569,6 @@ Instruction Packet 의 처리 결과를 나타냄
 |  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST | ERR  |  P1  |  P2  |  P3  |  P4  | CRC 1 | CRC 2 |
 |:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
 | 0xFF | 0xFF | 0xFD | 0x00 |   0x02    | 0x08 | 0x00 | 0x55 | 0x00 | 0x1F | 0x08 | 0x00 | 0x00 | 0xBA  | 0xBE  |
-
 
 
 ## [Sync Write (0x83)](#sync-write-0x83)
@@ -542,6 +615,90 @@ Instruction Packet 의 처리 결과를 나타냄
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
 | 0x01 | 0x96 | 0x00 | 0x00 | 0x00 | 0x02 | 0xAA | 0x00 | 0x00 | 0x00 | 0x82  | 0x87  |
 
+## [Fast Sync Read (0x8A)](#fast-sync-read-0x8a)
+
+### 설명
+- 보다 빠른 [Sync Read Instruction(0x82)](#sync-read-0x82) 통신을 하기 위해서 고안된 프로토콜
+- Fast Sync Read 패킷을 받은 다수의 다이나믹셀은 마치 하나의 다이나믹셀이 응답하는 것처럼 [Status Packet]을 하나로 구성하여 응답한다.
+- Instruction Packet은 Sync Read (0x82) 패킷과 동일한 방식으로 구성된다.
+
+**참고**: [DYNAMIXEL Tips \| EEPROM and RAM Data Restoring Using Backup Funcion](https://www.youtube.com/watch?v=claLIK8omIQ)
+{: .notice}
+
+### Parameter
+
+| Instruction Packet | 설명                         |
+|:------------------:|:-----------------------------|
+|    Parameter 1     | 시작 주소의 하위 바이트      |
+|    Parameter 2     | 시작 주소의 상위 바이트      |
+|    Parameter 3     | 데이터 길이(X)의 하위 바이트 |
+|    Parameter 4     | 데이터 길이(X)의 상위 바이트 |
+|   Parameter 4+1    | `첫번째 장치` ID             |
+|   Parameter 4+2    | `두번째 장치` ID             |
+|         ⋯          | ⋯                            |
+|   Parameter 4+n    | `n번째 장치` ID              |
+
+|  Status Packet   | 설명                          |
+|:----------------:|:------------------------------|
+|   Parameter 1    | `첫번째 장치` ID              |
+|   Parameter 2    | `첫번째 장치` First Byte      |
+|   Parameter 3    | `첫번째 장치` Second Byte     |
+|        ⋯         | ⋯                             |
+|   Parameter X    | `첫번째 장치` X번째 바이트    |
+|  Parameter X+1   | `첫번째 장치` CRC 하위 바이트 |
+|  Parameter X+2   | `첫번째 장치` CRC 상위 바이트 |
+|  Parameter X+3   | `두번째 장치` Error           |
+|  Parameter X+4   | `두번째 장치` ID              |
+| Parameter X+4+1  | `두번째 장치` First Byte      |
+| Parameter X+4+2  | `두번째 장치` Second Byte     |
+|        ⋯         | ⋯                             |
+|  Parameter 2X+4  | `두번째 장치` X번째 바이트    |
+| Parameter 2X+4+1 | `두번째 장치` CRC 하위 바이트 |
+| Parameter 2X+4+2 | `두번째 장치` CRC 상위 바이트 |
+|        ⋯         | ⋯                             |
+|  Parameter nX+4  | `n번째 장치` X번째 바이트     |
+
+**참고**: 각 장치의 [CRC] 값은 다이나믹셀 간의 패킷 무결성 확인을 위하여 다이나믹셀 내부 연산에 이용되며, Main Controller는 Status Packet 마지막의 CRC만 확인하여도 무방함.
+{: .notice}
+
+**참고**: 각 장치는 Fast Sync Read Instruction Packet에 대해 응답 시, Status Packet 하나의 부분을 각각 반환. 아래 예제를 참고할 것.
+{: .notice}
+
+**참고**: Fast Sync Read Status Packet은 Byte Stuffing(0xFD) 처리를 하지 않음.
+{: .notice}
+
+### 예제
+
+#### 예제 설명 
+
+- ID3(XC330-T288) : Present Position(132, 0x0084, 4[byte])이 166(0x000000A6)인 경우
+- ID7(XC330-T288) : Present Position(132, 0x0084, 4[byte])이 2,079(0x0000081F)인 경우
+- ID4(XC330-T288) : Present Position(132, 0x0084, 4[byte])이 1,023(0x000003FF)인 경우
+
+#### Fast Sync Read Instruction Packet
+
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST |  P1  |  P2  |  P3  |  P4  |  P5  |  P6  |  P7  | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 |   0xFE    | 0x0A | 0x00 | 0x8A | 0x84 | 0x00 | 0x04 | 0x00 | 0x03 | 0x07 | 0x04 | 0x20 | 0xF2 |
+
+#### ID 3 Status Packet
+
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST | ERR  | ID1  |  D1  |  D2  |  D3  |  D4  | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 |   0xFE    | 0x19 | 0x00 | 0x55 | 0x00 | 0x03 | 0xA6 | 0x00 | 0x00 | 0x00 | 0x84 | 0x08 |
+
+#### ID 7 Status Packet
+
+| ERR  | ID2  |  D1  |  D2  |  D3  |  D4  | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0x00 | 0x07 | 0x1F | 0x08 | 0x00 | 0x00 | 0x16 | 0xCA |
+
+#### ID 4 Status Packet
+
+| ERR  | ID3  |  D1  |  D2  |  D3  |  D4  | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0x00 | 0x04 | 0xFF | 0x03 | 0x00 | 0x00 | 0xD1 | 0x9E |
+
 ## [Bulk Read (0x92)](#bulk-read-0x92)
 
 ### 설명
@@ -567,7 +724,6 @@ Instruction Packet 의 처리 결과를 나타냄
 |    Parameter 9     | `두번째 장치` 데이터 길이 하위 바이트 |
 |    Parameter 10    | `두번째 장치` 데이터 길이 상위 바이트 |
 |        ...         | ...                                   |
-
 
 | Status Packet |     설명      |
 |:-------------:|:-------------:|
@@ -606,7 +762,6 @@ Instruction Packet 의 처리 결과를 나타냄
 |  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST | ERR  |  P1  | CRC 1 | CRC 2 |
 |:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
 | 0xFF | 0xFF | 0xFD | 0x00 |   0x02    | 0x05 | 0x00 | 0x55 | 0x00 | 0x24 | 0x8B  | 0xA9  |
-
 
 ## [Bulk Write (0x93)](#bulk-write-0x93)
 
@@ -658,6 +813,100 @@ Instruction Packet 의 처리 결과를 나타냄
 |:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
 | 0x02 | 0x1F | 0x00 | 0x01 | 0x00 | 0x50 | 0xB7  | 0x68  |
 
+## [Fast Bulk Read (0x9A)](#fast-bulk-read-0x9a)
+
+### 설명
+- 보다 빠른 [Bulk Read] 통신을 하기 위해서 고안된 프로토콜
+- Fast Bulk Read 패킷을 받은 다수의 다이나믹셀은 마치 하나의 다이나믹셀이 응답하는 것처럼 [Status Packet]을 하나로 구성하여 응답한다.
+- Instruction Packet은 Bulk Read 패킷과 동일한 방식으로 구성된다.
+
+**참고**: [DYNAMIXEL Tips \| EEPROM and RAM Data Restoring Using Backup Funcion](https://www.youtube.com/watch?v=claLIK8omIQ)
+{: .notice}
+
+### Parameters
+
+| Instruction Packet | 설명                                        |
+|:------------------:|:--------------------------------------------|
+|    Parameter 1     | `첫번째 장치` ID                            |
+|    Parameter 2     | `첫번째 장치` 시작 주소 하위 바이트         |
+|    Parameter 3     | `첫번째 장치` 시작 주소 상위 바이트         |
+|    Parameter 4     | `첫번째 장치` 데이터 길이(X1)의 하위 바이트 |
+|    Parameter 5     | `첫번째 장치` 데이터 길이(X1)의 상위 바이트 |
+|    Parameter 6     | `두번째 장치` ID                            |
+|    Parameter 7     | `두번째 장치` 시작 주소 하위 바이트         |
+|    Parameter 8     | `두번째 장치` 시작 주소 상위 바이트         |
+|    Parameter 9     | `두번째 장치` 데이터 길이(X2)의 하위 바이트 |
+|    Parameter 10    | `두번째 장치` 데이터 길이(X2)의 상위 바이트 |
+
+|         Status Packet         | 설명                          |
+|:-----------------------------:|:------------------------------|
+|          Parameter 1          | `첫번째 장치` ID              |
+|          Parameter 2          | `첫번째 장치` First Byte      |
+|          Parameter 3          | `첫번째 장치` Second Byte     |
+|               ⋯               | ⋯                             |
+|         Parameter X1          | `첫번째 장치` X1번째 바이트   |
+|        Parameter X1+1         | `첫번째 장치` CRC 하위 바이트 |
+|        Parameter X1+2         | `첫번째 장치` CRC 상위 바이트 |
+|        Parameter X1+3         | `두번째 장치` Error           |
+|        Parameter X1+4         | `두번째 장치` ID              |
+|       Parameter X1+4+1        | `두번째 장치` First Byte      |
+|       Parameter X1+4+2        | `두번째 장치` Second Byte     |
+|               ⋯               | ⋯                             |
+|       Parameter X1+4+X2       | `두번째 장치` X2번째 바이트   |
+|      Parameter X1+4+X2+1      | `두번째 장치` CRC 하위 바이트 |
+|      Parameter X1+4+X2+2      | `두번째 장치` CRC 상위 바이트 |
+|               ⋯               | ⋯                             |
+| Parameter X1+4+X2+ <br>⋯ 4+Xn | `n번째 장치` Xn번째 바이트    |
+
+**참고** : 각 장치의 [CRC] 값은 다이나믹셀 간의 패킷 무결성 확인을 위하여 다이나믹셀 내부 연산에 이용되며, Main Controller는 Status Packet 마지막의 CRC만 확인하여도 무방함.
+{: .notice}
+
+**참고** : 각 장치는 Fast Bulk Read Instruction Packet에 대해 응답 시, Status Packet 하나의 부분을 각각 반환. 아래 예제를 참고할 것.
+{: .notice}
+
+**참고** : Fast Bulk Read Status Packet은 Byte Stuffing(0xFD) 처리를 하지 않음.
+{: .notice}
+
+### 예제
+
+#### 예제 설명
+
+- ID3(XC330-T288) : Present Position(132, 0x0084, 4[byte])이 166(0x000000A6)인 경우
+- ID7(XC330-T288) : Present PWM(124, 0x007C, 2[byte])이 421(0x01A5)인 경우
+- ID4(XC330-T288) : Present Temperature(146, 0x0092, 1[byte])이 31(0x1F)인 경우
+
+#### Fast Bulk Read Instruction Packet
+
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST |  P1  |  P2  |  P3  |  P4  |  P5  |  P6  |  P7  |  P8  |
+|:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 |   0xFE    | 0x12 | 0x00 | 0x9A | 0x03 | 0x84 | 0x00 | 0x04 | 0x00 | 0x07 | 0x7C | 0x00 |
+
+|  P9  | P10  | P11  | P12  | P13  | P14  | P15  | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0x02 | 0x00 | 0x04 | 0x92 | 0x00 | 0x01 | 0x00 | 0x20 | 0xF2 |
+
+#### ID 3 Status Packet
+
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST | ERR  | ID1  |  D1  |  D2  |  D3  |  D4  | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 |   0xFE    | 0x14 | 0x00 | 0x55 | 0x00 | 0x03 | 0xA6 | 0x00 | 0x00 | 0x00 | 0x67 | 0xA4 |
+
+#### ID 7 Status Packet
+
+| ERR  | ID2  |  D1  |  D2  | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0x00 | 0x07 | 0xA5 | 0x01 | 0x24 | 0x74 |
+
+#### ID 4 Status Packet
+
+| ERR  | ID2  |  D1  | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|
+| 0x00 | 0x04 | 0x1F | 0xD9 | 0xC1 |
+
+
+[Control Table]: /docs/kr/faq/faq_dynamixel/
+[Instruction Packet]: #instruction-packet
+[Status Packet]: #status-packet
 [Ping]: #ping-0x01
 [Read]: #read-0x02
 [Write]: #write-0x03
@@ -666,8 +915,11 @@ Instruction Packet 의 처리 결과를 나타냄
 [Factory Reset]: #factory-reset-0x06
 [Reboot]: #reboot-0x08
 [Clear]: #clear-0x10
+[Control Table Backup]: #control-table-backup-0x20
 [Sync Read]: #sync-read-0x82
 [Sync Write]: #sync-write-0x83
+[Fast Sync Read]: #fast-sync-read-0x8a
 [Bulk Read]: #bulk-read-0x92   
 [Bulk Write]: #bulk-write-0x93
-[Instruction Packet]: #instruction-packet
+[Fast Bulk Read]: #fast-bulk-read-0x9a
+[CRC]: #crc
