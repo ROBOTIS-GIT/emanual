@@ -69,6 +69,8 @@ sidebar:
 |     **XM**      |                                                 | [XM430-W210-T]<br/> [XM430-W350-T]                     | [XM540-W150-T]<br/> [XM540-W270-T]  |
 |     **XH**      |                                                 | [XH430-W210-T]<br/> [XH430-W350-T]                     | [XH540-W150-T]<br/> [XH540-W270-T]  |
 
+<!-- [XC330-T288]<br>[XC330-T181]<br>[XC330-M288]<br>[XC330-M181] Need to add-->
+
 ## [부품 목록](#부품-목록)
 
 제품 패키지에는 다음과 같은 부품이 포함되어 있습니다.
@@ -380,6 +382,10 @@ RC 수신기와 DYNAMIXEL Shield MKR은 아래와 같이 연결할 수 있습니
 [2xl430-w250-t]: /docs/kr/dxl/x/2xl430-w250/
 [xc430-w150-t]: /docs/kr/dxl/x/xc430-w150/
 [xc430-w240-t]: /docs/kr/dxl/x/xc430-w240/
+[XC330-T288]: /docs/kr/dxl/x/xc330-t288
+[XC330-T181]: /docs/kr/dxl/x/xc330-t181
+[XC330-M288]: /docs/kr/dxl/x/xc330-m288
+[XC330-M181]: /docs/kr/dxl/x/xc330-m181
 [2xc430-w250-t]: /docs/kr/dxl/x/2xc430-w250/
 [xm430-w210-t]: /docs/kr/dxl/x/xm430-w210/
 [xm430-w350-t]: /docs/kr/dxl/x/xm430-w350/
