@@ -6,8 +6,8 @@
 2. Install required packages on the Raspberry Pi to upload the [OpenCR] firmware.
   ```bash
 $ sudo dpkg --add-architecture armhf
-$ sudo apt-get update
-$ sudo apt-get install libc6:armhf
+$ sudo apt update
+$ sudo apt install libc6:armhf
   ```
 
 3. Depending on the platform, use either `burger` or `waffle` for the **OPENCR_MODEL** name.

@@ -24,7 +24,7 @@ page_number: 1
 ROS-enabled OpenMANIPULATOR-X (RM-X52-TNM) is a full open robot platform consisting of **OpenSoftware**​, **OpenHardware** and **OpenCR(Embedded board)​**.
 
 ## [OpenSoftware](#opensoftware)
-OpenMANIPULATOR-X RM-X52-TNM are based on ROS ​and OpenSource. ROS official hardware platform,TurtleBot series has been supporting ‘TurtleBot Arm’. The OpenMANIPULATOR-X RM-X52-TNM has full hardware compatibility with TurtleBot3​. Users can also control it more easily by linking it with the MoveIt! package. Even if you do not have an actual robot, you can control the robot in the Gazebo simulator​. 
+OpenMANIPULATOR-X is based on ROS ​and OpenSource. ROS official hardware platform, TurtleBot series has been supporting "TurtleBot Arm". The OpenMANIPULATOR-X has full hardware compatibility with TurtleBot3​. Users can also control it more easily by adopting the MoveIt! package. Even if you do not have an actual robot, you can control the robot in the Gazebo simulator​. 
 
 ## [OpenHardware](#openhardware)
 OpenMANIPULATOR-X RM-X52-TNM is an open-hardware oriented platform​. Most of the components are uploaded as [STL files](http://www.robotis.com/service/download.php?no=690) so that users can easily 3d print them. It also allows users to modify the length of the links or the design of the robot for their own purposes. OpenMANIPULATOR-X RM-X52-TNM is made of **DYNAMIXEL-X ​Series** which is used in TurtleBot 3.

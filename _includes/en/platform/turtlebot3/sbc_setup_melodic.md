@@ -6,7 +6,6 @@
 
 {% capture warning_01 %}
 **WARNING**
-- This SBC Setup section is specifically written for **Raspberry Pi 3B+** which is the current official TurtleBot3 SBC.
 - This process may take long time. Please do not use battery while following this section.
 - An HDMI monitor and input devices such as a keyboard and a mouse will be required to complete this setup.
 - In order to use the webOS Robotics Platform, please refer to [webOS Robotics Platform](https://github.com/ros/meta-ros/wiki/OpenEmbedded-Build-Instructions) instruction. Packages will be cross-compiled using OpenEmbedded on a higher performance PC and an image file is created.
@@ -21,15 +20,30 @@ If you PC do not have a microSD slot, please use a microSD card reader to burn t
 Download the correct image file for your hardware and ROS version.  
 Melodic version images are created based on Ubuntu 18.04.  
 
-- [![](/assets/images/icon_download.png) **Raspberry Pi 3B+** ROS1 Melodic image(Ubuntu 18.04 based)](https://www.robotis.com/service/download.php?no=2011){: .blank}
-  - **SHA256** : db992103968b8b4d439e60657e7beec4695f2d71f2ee4f0878f6d4b52e76993e
+{% capture download_01 %}
+[![](/assets/images/icon_download.png) **Download** `Raspberry Pi 3B+` ROS Melodic image](https://www.robotis.com/service/download.php?no=2011){: .blank}
 
-- [![](/assets/images/icon_download.png) **Raspberry Pi 4B (2GB or 4GB)** ROS1 Melodic image(Raspberry Pi OS based)](https://www.robotis.com/service/download.php?no=1905){: .blank}
-  - **SHA256** : 73546c63d3056bfc5538acc187f54dab6c1601096df320e60e0842bcb1b03d34
-  - Please note that this image may not compatible with Raspberry Pi 4B with 8GB RAM.
+**SHA256** : 312e1a5ad78447b901ae401ba31b2aaf94c1c760bdcafc60e2312df14e342640
+{% endcapture %}
+<div class="notice--success">{{ download_01 | markdownify }}</div>
 
-For setting up the Raspberry Pi 4 with the Raspberry Pi 4 image, please refer to the SBC Setup instructions of the Kinetic.
-{: .notice--warning}
+{% capture download_02 %}
+[![](/assets/images/icon_download.png) **Download** `Raspberry Pi 4B (2GB or 4GB)` ROS Melodic image](https://www.robotis.com/service/download.php?no=2065){: .blank}
+
+**SHA256** : 676bbcfc27fc6990bdf1e026247008f0525d344ccfaa106dca6c53d0bf7f4de8
+- Please note that this image may not compatible with Raspberry Pi 4B with 8GB RAM.
+{% endcapture %}
+<div class="notice--success">{{ download_02 | markdownify }}</div>
+
+{% capture download_03 %}
+[![](/assets/images/icon_download.png) **Download** `Raspberry Pi 4B (2GB or 4GB)` ROS Melodic image(Raspberry Pi OS based)](https://www.robotis.com/service/download.php?no=1905){: .blank}
+
+**SHA256** : 73546c63d3056bfc5538acc187f54dab6c1601096df320e60e0842bcb1b03d34
+
+- ROS Melodic recovery image based on Ubuntu 18.04 above is recommended.
+- Please note that this image may not compatible with Raspberry Pi 4B with 8GB RAM.
+{% endcapture %}
+<div class="notice--success">{{ download_03 | markdownify }}</div>
 
 The recovery image files can be modified without a prior notice.
 {: .notice}
@@ -45,7 +59,10 @@ Choose your preferred tool to burn the image to microSD.
 #### Raspberry Pi Imager
 Please refer to [this article](https://www.raspberrypi.org/blog/raspberry-pi-imager-imaging-utility/) to find more information about Raspberry Pi Imager.
 
-[![](/assets/images/icon_download.png) Download Raspberry Pi Imager from raspberrypi.org](https://www.raspberrypi.org/software/){: .blank}
+{% capture download_rpi_imager %}
+[![](/assets/images/icon_download.png) **Download** Raspberry Pi Imager from raspberrypi.org](https://www.raspberrypi.org/software/){: .blank}
+{% endcapture %}
+<div class="notice--success">{{ download_rpi_imager | markdownify }}</div>
 
 ![](/assets/images/platform/turtlebot3/setup/rpi_imager.gif)  
 1. Click `CHOOSE OS`.  
@@ -75,7 +92,7 @@ Please resize the partition to use the unallocated space.
 1. Select microSD card from the menu (mounted location may vary by system).  
 2. Right click on the yellow partition.  
 3. Select `Resize/Move` option.  
-4. Drag the right edge of the partition to all the way up.  
+4. Drag the right edge of the partition to all the way to the right end.  
 5. Click `Resize/Move` button.  
 6. Click the `Apply All Operations` green check button at the top.
 
@@ -107,8 +124,8 @@ If "No such file or directory" is returned, make sure the microSD is mounted to 
 HDMI cable has to be connected before powering the Raspberry Pi, or else the HDMI port of the Raspberry Pi will be disabled.
 {: .notice--warning}
 
-### ROS1 Network Configuration
-Please follow the instructions below on the **SBC (Raspberry Pi 3B+)**.
+### ROS Network Configuration
+Please follow the instructions below on the **SBC (Raspberry Pi)**.
 1. Confirm the WiFi IP address.
   ```bash
 $ ifconfig
@@ -206,17 +223,17 @@ $ sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.
 $ ssh ubuntu@{IP Address of Raspberry PI}
   ```
 
-13. Install ROS1 Melodic Morenia
+13. Install ROS Melodic Morenia
 Enter below commands to the terminal one at a time.  
-In order to check the details of the easy installation script, please refer to [the script file](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_melodic_rp3.sh).  
+In order to check the details of the easy installation script, please refer to [the script file](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_melodic_rpi.sh).  
 ```bash
 $ sudo apt-get update
 $ sudo apt-get upgrade
-$ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_melodic_rp3.sh
-$ chmod 755 ./install_ros_melodic_rp3.sh
-$ bash ./install_ros_melodic_rp3.sh
+$ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_melodic_rpi.sh
+$ chmod 755 ./install_ros_melodic_rpi.sh
+$ bash ./install_ros_melodic_rpi.sh
 ```
-If the above installation fails, please refer to [the official ROS1 Melodic installation guide](http://wiki.ros.org/melodic/Installation/Ubuntu).
+If the above installation fails, please refer to [the official ROS Melodic installation guide](http://wiki.ros.org/melodic/Installation/Ubuntu).
 
 14. Install and Build ROS Packages.
   ```bash
@@ -241,7 +258,7 @@ $ source ~/.bashrc
 $ rosrun turtlebot3_bringup create_udev_rules
 ```
 
-16. ROS1 Network Configuration
+16. ROS Network Configuration
 Confirm the WiFi IP address and edit the `.bashrc` file
   ```bash
 $ nano ~/.bashrc

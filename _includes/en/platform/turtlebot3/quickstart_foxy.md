@@ -8,6 +8,14 @@
 **WARNING**: The contents in this chapter corresponds to the `Remote PC` (your desktop or laptop PC) which will control TurtleBot3. Do not apply this instruction to your TurtleBot3.
 {: .notice--danger}
 
+{% capture warning_01 %}
+**Compatibility WARNING**  
+- `Jetson Nano` does not support native Ubuntu 20.04. Please refer to [NVIDIA developer forum]{: .blank} for more details.
+
+[NVIDIA developer forum]: https://forums.developer.nvidia.com/t/when-will-jetpack-move-to-ubuntu-20-04/142517
+{% endcapture %}
+<div class="notice--danger">{{ warning_01 | markdownify }}</div>
+
 **NOTE**: This instruction was tested on Linux with `Ubuntu 20.04` and `ROS2 Foxy Fitzroy`.
 {: .notice--info}
 
@@ -74,6 +82,7 @@ $ sudo apt remove ros-foxy-turtlebot3-msgs
 $ sudo apt remove ros-foxy-turtlebot3
 $ mkdir -p ~/turtlebot3_ws/src
 $ cd ~/turtlebot3_ws/src/
+$ git clone -b foxy-devel https://github.com/ROBOTIS-GIT/DynamixelSDK.git
 $ git clone -b foxy-devel https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
 $ git clone -b foxy-devel https://github.com/ROBOTIS-GIT/turtlebot3.git
 $ cd ~/turtlebot3_ws

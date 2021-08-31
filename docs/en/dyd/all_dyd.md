@@ -58,27 +58,27 @@ In the following image, it is shown that the rotational direction of the input m
 |                    DYD-11                    |                                  DYD-14                                  |                    DYD-17                    |
 |:--------------------------------------------:|:------------------------------------------------------------------------:|:--------------------------------------------:|
 | ![](/assets/images/dyd/dyd_lineup_11_02.png) |               ![](/assets/images/dyd/dyd_lineup_14_02.png)               | ![](/assets/images/dyd/dyd_lineup_17_02.png) |
-| ![](/assets/images/dyd/dyd_lineup_11_01.png) | [![](/assets/images/dyd/dyd_lineup_14_01.png)](/docs/en/all-dyd/dyd-14/) | ![](/assets/images/dyd/dyd_lineup_17_01.png) |
+| [![](/assets/images/dyd/dyd_lineup_11_01.png)](/docs/en/all-dyd/dyd-11/) | [![](/assets/images/dyd/dyd_lineup_14_01.png)](/docs/en/all-dyd/dyd-14/) | ![](/assets/images/dyd/dyd_lineup_17_01.png) |
 
 > Click to go the product manual.
 
-**NOTE**: DYD-11/17 document will be open in the near futre
+**NOTE**: DYD-17 document will be open in the near futre
 {: .notice}
 
 ## [Specifications](#specifications)
 
-|             Properties             |  Unit  |   DYD-11-033    |   DYD-11-051    | DYD-14-051 | DYD-14-099 | DYD-17-051 | DYD-17-099 |
-|:----------------------------------:|:------:|:---------------:|:---------------:|:----------:|:----------:|:----------:|:----------:|
-|             Gear ratio             |   -    |       33        |       51        |     51     |     99     |     51     |     99     |
-|       Repeatable peak torque       |   Nm   |       8.5       |      17.0       |    27.0    |    39.0    |    34.0    |    54.0    |
-| Read output torque<br>(@2,000 rpm) |   Nm   |       2.2       |       3.5       |    5.4     |    7.8     |    16.0    |    24.0    |
-|        Maximum input speed         |  rpm   |      6,000      |      6,000      |   6,000    |   6,000    |   6,000    |   6,000    |
-|        Average input speed         |  rpm   |      2,000      |      2,000      |   2,000    |   2,000    |   2,000    |   2,000    |
-|     Hysteresis loss / Backlash     | arcmin |      <3.0       |      <3.0       |    <3.0    |    <3.0    |    <3.0    |    <3.0    |
-|          Starting torque           |  cNm   |       20        |       20        |     20     |     20     |     30     |     30     |
-|            Service life            | hours  |      3,000      |      3,000      |   5,000    |   5,000    |   5,000    |   5,000    |
-|             Dimension              |   mm   | 43 X 43 X 23.65 | 43 X 43 X 23.65 |  ø68 x 30  |  ø68 x 30  | ø78 x 34.2 | ø78 x 34.2 |
-|               Weight               |   g    |       196       |       196       |    400     |    400     |    600     |    600     |
+|             Properties              |  Unit  |   DYD-11-033    |   DYD-11-051    | DYD-14-051 | DYD-14-099 | DYD-17-051 | DYD-17-099 |
+|:-----------------------------------:|:------:|:---------------:|:---------------:|:----------:|:----------:|:----------:|:----------:|
+|             Gear ratio              |   -    |       33        |       51        |     51     |     99     |     51     |     99     |
+|       Repeatable peak torque        |   Nm   |       8.5       |      17.0       |    27.0    |    39.0    |    34.0    |    54.0    |
+| Rated output torque<br>(@2,000 rpm) |   Nm   |       2.2       |       3.5       |    5.4     |    7.8     |    16.0    |    24.0    |
+|         Maximum input speed         |  rpm   |      6,000      |      6,000      |   6,000    |   6,000    |   6,000    |   6,000    |
+|         Average input speed         |  rpm   |      2,000      |      2,000      |   2,000    |   2,000    |   2,000    |   2,000    |
+|     Hysteresis loss / Backlash      | arcmin |      <3.0       |      <3.0       |    <3.0    |    <3.0    |    <3.0    |    <3.0    |
+|           Starting torque           |  cNm   |       20        |       20        |     20     |     20     |     30     |     30     |
+|            Service life             | hours  |      3,000      |      3,000      |   5,000    |   5,000    |   5,000    |   5,000    |
+|              Dimension              |   mm   | 43 X 43 X 23.65 | 43 X 43 X 23.65 |  ø68 x 30  |  ø68 x 30  | ø78 x 34.2 | ø78 x 34.2 |
+|               Weight                |   g    |       196       |       196       |    400     |    400     |    600     |    600     |
 
 ## [Part Numbers](#part-numbers)
 
@@ -104,18 +104,18 @@ In the figure below shows an example of various torque and speed conditions duri
 
 ![](/assets/images/dyd/dyd_duty_cycle_01.png)
 
-| Properties | Description                                | Properties | Description                               |
-|:----------:|:-------------------------------------------|:----------:|:------------------------------------------|
-|     Ta     | Average output load                        |     na     | Average input speed                       |
+| Properties | Description                                 | Properties | Description                               |
+|:----------:|:--------------------------------------------|:----------:|:------------------------------------------|
+|     Ta     | Average output load                         |     na     | Average input speed                       |
 |     T1     | maximum output torque at acceleration [N.m] |     n1     | average input speed at acceleration [rpm] |
 |     T2     | output torque at constant speed [N.m]       |     n2     | input speed at constant motion [rpm]      |
 |     T3     | maximum output torque at deceleration [N.m] |     n3     | average input speed at deceleration [rpm] |
-|     t1     | acceleration time [s]                      |     -      | -                                         |
-|     t2     | constant motion time [s]                   |     -      | -                                         |
-|     t3     | deceleration time [s]                      |     -      | -                                         |
-|     t4     | idle time [s]                              |     -      | -                                         |
-|     t      | Duty cycle time [s]                        |     -      | -                                         |
-|            |                                            |     -      | -                                         |
+|     t1     | acceleration time [s]                       |     -      | -                                         |
+|     t2     | constant motion time [s]                    |     -      | -                                         |
+|     t3     | deceleration time [s]                       |     -      | -                                         |
+|     t4     | idle time [s]                               |     -      | -                                         |
+|     t      | Duty cycle time [s]                         |     -      | -                                         |
+|            |                                             |     -      | -                                         |
 
 ## [Average Output Load](#average-output-load)
 
@@ -133,7 +133,7 @@ The average input speed can be calculated as below.
 
 ![](/assets/images/dyd/dyd_average_input_speed_02.png)
 
-## [Service Life)](#service-life)
+## [Service Life](#service-life)
 
 The service life of DYD is determined by the fatigue failure of the bearings on the input shaft. Other factors that may affect the actual service life, such as insufficient lubrication, contamination or overload are not taken into account. The nominal service life is provided based on a statistical test value.
 
@@ -147,26 +147,26 @@ The required service life for a given speed and load values can be calculated as
 |     LR     | Reference service life [hours] |
 |     nR     | nominal input speed [rpm]      |
 |     na     | average input speed [rpm]      |
-|     TR     | nominal torque [N.m]            |
-|     Ta     | average output load [N.m]     |
+|     TR     | nominal torque [N.m]           |
+|     Ta     | average output load [N.m]      |
 
 ## [Product Selection Example](#product-selection-example)
 
 ### [Define the Duty Cycle](#define-the-duty-cycle)
 
-| Properties | Description                                | Value | Note |
-|:----------:|:-------------------------------------------|:-----:|:-----|
+| Properties | Description                                 | Value | Note |
+|:----------:|:--------------------------------------------|:-----:|:-----|
 |     T1     | Maximum output torque at acceleration [N.m] |  7.5  | -    |
 |     T2     | Output torque at constant speed [N.m]       |   5   | -    |
 |     T3     | Maximum output torque at deceleration [N.m] |  2.5  | -    |
-|     n1     | Average input speed at acceleration [rpm]  | 1,500 | -    |
-|     n2     | Input speed at constant motion [rpm]       | 3,000 | -    |
-|     n3     | Average input speed at deceleration [rpm]  | 1,500 | -    |
-|     t1     | Acceleration time [s]                      |   1   | -    |
-|     t2     | Constant motion time [s]                   |   5   | -    |
-|     t3     | deceleration time [s]                      |   1   | -    |
-|     t4     | idle time [s]                              |   0   | -    |
-|     Lh     | Required service life [hours]              | 5,000 | -    |
+|     n1     | Average input speed at acceleration [rpm]   | 1,500 | -    |
+|     n2     | Input speed at constant motion [rpm]        | 3,000 | -    |
+|     n3     | Average input speed at deceleration [rpm]   | 1,500 | -    |
+|     t1     | Acceleration time [s]                       |   1   | -    |
+|     t2     | Constant motion time [s]                    |   5   | -    |
+|     t3     | deceleration time [s]                       |   1   | -    |
+|     t4     | idle time [s]                               |   0   | -    |
+|     Lh     | Required service life [hours]               | 5,000 | -    |
 
 ### [Average Output Load Calculation](#average-output-load-calculation)
 
@@ -182,18 +182,18 @@ The required service life for a given speed and load values can be calculated as
 
 ### [Select Part Number : DYD-14-051](#select-part-number-dyd-14-051)
 
-|             Properties             |  Unit  | DYD-14-051 |
-|:----------------------------------:|:------:|:----------:|
-|             Gear ratio             |   -    |     51     |
-|       Repeatable peak torque       |   Nm   |    27.0    |
-| Read output torque<br>(@2,000 rpm) |   Nm   |    5.4     |
-|        Maximum input speed         |  rpm   |   6,000    |
-|        Average input speed         |  rpm   |   2,000    |
-|     Hysteresis loss / Backlash     | arcmin |    <3.0    |
-|          Starting torque           |  cNm   |     20     |
-|            Service life            |   hr   |   5,000    |
-|         Dimension (W X H)          |   mm   |  ø68 x 30  |
-|               Weight               |   g    |    400     |
+|             Properties              |  Unit  | DYD-14-051 |
+|:-----------------------------------:|:------:|:----------:|
+|             Gear ratio              |   -    |     51     |
+|       Repeatable peak torque        |   Nm   |    27.0    |
+| Rated output torque<br>(@2,000 rpm) |   Nm   |    5.4     |
+|         Maximum input speed         |  rpm   |   6,000    |
+|         Average input speed         |  rpm   |   2,000    |
+|     Hysteresis loss / Backlash      | arcmin |    <3.0    |
+|           Starting torque           |  cNm   |     20     |
+|            Service life             |   hr   |   5,000    |
+|          Dimension (W X H)          |   mm   |  ø68 x 30  |
+|               Weight                |   g    |    400     |
 
 > Selecting Part Number Example for DYD-14-051
 
@@ -205,8 +205,8 @@ The required service life for a given speed and load values can be calculated as
 |     LR     | Reference service life [hours] |  5,000  | See data sheet |
 |     nR     | Nominal input speed [rpm]      |  2,000  | See data sheet |
 |     na     | Average input speed [rpm]      |  2,142  | -              |
-|     TR     | Nominal torque [N.m]            |   5.4   | -              |
-|     Ta     | average output load [N.m]     |  4.72   | See data sheet |
+|     TR     | Nominal torque [N.m]           |   5.4   | -              |
+|     Ta     | average output load [N.m]      |  4.72   | See data sheet |
 
 ### [Service Life Comparison: DYD-14-051](#service-life-comparison-dyd-14-051)
 
@@ -217,18 +217,18 @@ Required service life : 5,000 hours > Expected service life : 4,880 hours
 
 ### [Select another Part Number : DYD-14-099](#select-another-part-number--dyd-14-099)
 
-|             Properties             | DYD-14-099 |
-|:----------------------------------:|:----------:|
-|             Gear ratio             |     99     |
-|       Repeatable peak torque       |    39.0    |
-| Read output torque<br>(@2,000 rpm) |    7.8     |
-|        Maximum input speed         |   6,000    |
-|        Average input speed         |   2,000    |
-|     Hysteresis loss / Backlash     |    <3.0    |
-|          Starting torque           |     20     |
-|            Service life            |   5,000    |
-|         Dimension (W X H)          |  ø68 x 30  |
-|               Weight               |    400     |
+|             Properties              | DYD-14-099 |
+|:-----------------------------------:|:----------:|
+|             Gear ratio              |     99     |
+|       Repeatable peak torque        |    39.0    |
+| Rated output torque<br>(@2,000 rpm) |    7.8     |
+|         Maximum input speed         |   6,000    |
+|         Average input speed         |   2,000    |
+|     Hysteresis loss / Backlash      |    <3.0    |
+|           Starting torque           |     20     |
+|            Service life             |   5,000    |
+|          Dimension (W X H)          |  ø68 x 30  |
+|               Weight                |    400     |
 
 ### [Expected Service Life Calculation: DYD-14-099](#expected-service-life-calculation-dyd-14-099)
 
@@ -238,8 +238,8 @@ Required service life : 5,000 hours > Expected service life : 4,880 hours
 |     LR     | Reference service life [hours] |  5,000  | See data sheet |
 |     nR     | Nominal input speed [rpm]      |  2,000  | See data sheet |
 |     na     | Average input speed [rpm]      |  2,142  | -              |
-|     TR     | Nominal torque [N.m]            |   7.8   | See data sheet |
-|     Ta     | average output load [N.m]     |  4.72   | -              |
+|     TR     | Nominal torque [N.m]           |   7.8   | See data sheet |
+|     Ta     | average output load [N.m]      |  4.72   | -              |
 
 ### [Service Life Comparison: DYD-14-099](#service-life-comparison-dyd-14-099)
 

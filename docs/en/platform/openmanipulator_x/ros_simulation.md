@@ -6,123 +6,109 @@ read_time: true
 share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_x/ros_simulation/
+tabs: "ROS"
+tab_title1: Kinetic
+tab_title2: Noetic
+tab_title3: Dashing
+tab_title4: Arduino
 sidebar:
   title: "OpenMANIPULATOR-X"
   nav: "openmanipulator_x"
 product_group: openmanipulator_x
-page_number: 8
+page_number: 11
 ---
 
-<div style="counter-reset: h1 7"></div>
+<div style="counter-reset: h1 6"></div>
 
-# [[ROS] Simulation](#ros-simulation)
+{::options parse_block_html="true" /}
 
+# [Simulation](#simulation)
+
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% capture notice_01 %}
 **NOTE**:
-- The test is done on `ROS Kinetic Kame` installed in `Ubuntu 16.04`.
-- Make sure ROS dependencies are installed before performing these instructions - [Install ROS Packages](/docs/en/platform/openmanipulator_x/ros_setup/#install-ros-packages)
+- Make sure ROS dependencies are installed before performing these instructions
+- [Install ROS Packages](/docs/en/platform/openmanipulator_x/ros_setup/#install-ros-packages)
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
+</section>
+
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+{% capture notice_01 %}
+**NOTE**:
+- Make sure ROS dependencies are installed before performing these instructions
+- [Install ROS Packages](/docs/en/platform/openmanipulator_x/ros_setup/#install-ros-packages)
+{% endcapture %}
+<div class="notice--info">{{ notice_01 | markdownify }}</div>
+</section>
+
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
+{% capture notice_01 %}
+**NOTE**:
+- Make sure ROS dependencies are installed before performing these instructions
+- [Install ROS Packages](/docs/en/platform/openmanipulator_x/ros_setup/#install-ros-packages)
+{% endcapture %}
+<div class="notice--info">{{ notice_01 | markdownify }}</div>
+</section>
+
+<section data-id="{{ page.tab_title4 }}" class="tab_contents">
+Not supported with Arduino
+{: .notice--warning}
+</section>
 
 ## [Launch gazebo](#launch-gazebo)
 
-Load OpenManipulator-X on Gazebo simulator and click on Play `▶` button.
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/simulation/launch_gazebo_kinetic.md %}
+</section>
 
-  ``` bash
-  $ roslaunch open_manipulator_gazebo open_manipulator_gazebo.launch
-  ```
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/simulation/launch_gazebo_noetic.md %}
+</section>
 
-A red box is pointing end-effector link.
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/simulation/launch_gazebo_dashing.md %}
+</section>
 
-  ![](/assets/images/platform/openmanipulator_x/OpenManipulator_Chain_gazebo_1.png)
+<section data-id="{{ page.tab_title4 }}" class="tab_contents">
+Not supported with Arduino
+{: .notice--warning}
+</section>
 
-Enter `rostopic list` to list up the activated topics.
+## [Controller for Gazebo](#controller-for-gazebo)
 
-  ```
-  /clock
-  /gazebo/link_states
-  /gazebo/model_states
-  /gazebo/set_link_state
-  /gazebo/set_model_state
-  /open_manipulator/gripper/kinematics_pose
-  /open_manipulator/gripper_position/command
-  /open_manipulator/gripper_sub_position/command
-  /open_manipulator/joint1_position/command
-  /open_manipulator/joint2_position/command
-  /open_manipulator/joint3_position/command
-  /open_manipulator/joint4_position/command
-  /open_manipulator/joint_states
-  /open_manipulator/option
-  /open_manipulator/states
-  /rosout
-  /rosout_agg
-  ```
-Open [OpenManipulator control GUI](/docs/en/platform/openmanipulator_x/ros_operation/#gui-program)
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/simulation/gazebo_controller_kinetic.md %}
+</section>
 
-  ![](/assets/images/platform/openmanipulator_x/OpenManipulator_Chain_gazebo_2.png)
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/simulation/gazebo_controller_noetic.md %}
+</section>
 
-## [Controller for gazebo](#controller-for-gazebo)
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/simulation/gazebo_controller_dashing.md %}
+</section>
 
-Launch the open_manipulator_controller for gazebo simulation.
+<section data-id="{{ page.tab_title4 }}" class="tab_contents">
+Not supported with Arduino
+{: .notice--warning}
+</section>
 
-  ``` bash
-  $ roslaunch open_manipulator_controller open_manipulator_controller.launch use_platform:=false
-  ```
-{% capture notice_01 %}
-**NOTE**:
-- To control the OpenMANIPULATOR-X in the Gazebo environment using the OpenMANIPULATOR-X Controller, the controller must set the **use_platform** parameter to **false** because it needs to send messages to gazebo instead of Platform.
-- If you want to manipulate the OpenMANIPULATOR-X using Moveit within the Gazebo simulator, you should also convert the **use_moveit** to **true** in open_manipulator_controller launch file.
-{% endcapture %}
-<div class="notice--info">{{ notice_01 | markdownify }}</div>
+## [Operation in Gazebo](#operation-in-gazebo)
 
-If the OpenMANIPULATOR-X controller for gazebo simulation Launched successfully, the terminal will represent below messages.
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/simulation/gazebo_operation_kinetic.md %}
+</section>
 
-```
-SUMMARY
-========
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/simulation/gazebo_operation_noetic.md %}
+</section>
 
-PARAMETERS
- * /open_manipulator/control_period: 0.01
- * /open_manipulator/moveit_sample_duration: 0.05
- * /open_manipulator/planning_group_name: arm
- * /open_manipulator/using_moveit: False
- * /open_manipulator/using_platform: False
- * /rosdistro: kinetic
- * /rosversion: 1.12.14
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/simulation/gazebo_operation_dashing.md %}
+</section>
 
-NODES
-  /
-    open_manipulator (open_manipulator_controller/open_manipulator_controller)
-
-ROS_MASTER_URI=http://localhost:11311
-
-process[open_manipulator-1]: started with pid [9820]
-[ INFO] [1544506914.862653563]: Ready to simulate /open_manipulator on Gazebo
-```
-**NOTE** : In OpenMANIPULATOR-X controller for gazebo simulation, Joint and Gripper DYNAMIXEL are not enable, following messages will not be displayed :  
-Joint Dynamixel ID : 11, Model Name : XM430-W350  
-Joint Dynamixel ID : 12, Model Name : XM430-W350  
-Joint Dynamixel ID : 13, Model Name : XM430-W350  
-Joint Dynamixel ID : 14, Model Name : XM430-W350  
-Gripper Dynamixel ID : 15, Model Name :XM430-W350
-{: .notice--info}
-
-[OpenCR]: /docs/en/parts/controller/opencr10/
-[OpenCR Manual]: /docs/en/parts/controller/opencr10/
-[rc100]: /docs/en/parts/communication/rc-100/
-[bt410]: /docs/en/parts/communication/bt-410/
-
-[open_manipulator_msgs/GetJointPosition]: /docs/en/popup/open_manipulator_msgs_GetJointPosition/
-[open_manipulator_msgs/GetKinematicsPose]: /docs/en/popup/open_manipulator_msgs_GetKinematicsPose/
-[open_manipulator_msgs/SetJointPosition]: /docs/en/popup/open_manipulator_msgs_SetJointPosition/
-[open_manipulator_msgs/SetKinematicsPose]: /docs/en/popup/open_manipulator_msgs_SetKinematicsPose/
-[open_manipulator_msgs/SetActuatorState]: /docs/en/popup/open_manipulator_msgs_SetActuatorState/
-[open_manipulator_msgs/SetDrawingTrajectory]: /docs/en/popup/open_manipulator_msgs_SetDrawingTrajectory/
-
-[sensor_msgs/JointState]: /docs/en/popup/sensor_msgs_JointState_msg/
-[open_manipulator_msgs/KinematicsPose]: /docs/en/popup/open_manipulator_msgs_KinematicsPose/
-[open_manipulator_msgs/OpenManipulatorState]: /docs/en/popup/open_manipulator_msgs_OpenManipulatorState/
-[std_msgs::String]: /docs/en/popup/std_msgs_string/
-
-[task space]: /docs/en/popup/open_manipulator_coordinates/
-[joint space]: /docs/en/popup/open_manipulator_coordinates/
+<section data-id="{{ page.tab_title4 }}" class="tab_contents">
+Not supported with Arduino
+{: .notice--warning}
+</section>
