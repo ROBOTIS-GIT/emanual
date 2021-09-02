@@ -1,6 +1,6 @@
 <!-- #### [Camera Imaging Calibration](#camera-imaging-calibration) -->
 
-Camera image calibration for `Raspberry Pi Camera V2` is not supported yet.
+Camera image calibration is not required in Gazebo Simulation.
 
 <details>
 <summary>
