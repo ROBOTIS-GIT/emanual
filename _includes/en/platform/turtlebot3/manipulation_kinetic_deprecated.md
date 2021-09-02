@@ -7,7 +7,7 @@
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-The contents in e-Manual can be updated without a previous notice. Therefore, some video may differ from the contents in e-Manual.
+The contents in e-Manual are subject to be updated without a prior notice. Therefore, some video may differ from the contents in e-Manual.
 {: .notice--warning}
 
 <div class="notice--success">{{ notice_02 | markdownify }}</div>
@@ -29,7 +29,7 @@ The OpenMANIPULATOR has the advantage of being compatible with TurtleBot3 Waffle
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/DLOq8yNcCoE" frameborder="0" allowfullscreen></iframe>
 
-The contents in e-Manual can be updated without a previous notice. Therefore, some video may differ from the contents in e-Manual.
+The contents in e-Manual are subject to be updated without a prior notice. Therefore, some video may differ from the contents in e-Manual.
 {: .notice--warning}
 
 ## [Software Setup](#software-setup)
