@@ -289,7 +289,7 @@ main:
       - titlekr: "*로봇핸드 RX28"
         url: /platform/robothand_rx28/
       - titlekr: "*로봇핸드 MX28"
-      url: /platform/robothand_mx28/
+        url: /platform/robothand_mx28/
     - title: "ROBOTIS OP"
       titlekr: "로보티즈 OP"
       url: /platform/op/getting_started/
