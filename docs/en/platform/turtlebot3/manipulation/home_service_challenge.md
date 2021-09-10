@@ -36,10 +36,7 @@ page_number: 18
 </section>
 
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
-
-**NOTE**: This feature is available for Kinetic only. 
-{: .notice}
-
+{% include en/platform/turtlebot3/home_service_challenge_noetic.md %}
 </section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
