@@ -277,14 +277,14 @@ $ roslaunch turtlebot3_home_service_challenge_tools slam.launch
 $ roslaunch turtlebot3_home_service_challenge_tools mobile_teleop_key.launch
 ```
 
-After the node is run, the following controller will be displayed on a terminal window.
-````bash
-Control Your TurtleBot3!
----------------------------
-Moving around:
-w
-a s d
-x
+    After the node is run, the following controller will be displayed on a terminal window.
+    ```bash
+    Control Your TurtleBot3!
+    ---------------------------
+    Moving around:
+      w
+    a s d
+      x
 
     w/x : increase/decrease linear velocity
     a/d : increase/decrease angular velocity
@@ -297,12 +297,13 @@ x
 
    ![making_map](/assets/images/platform/turtlebot3/home_service_challenge/slam_02.png)
 
+
 5. **[Remote PC]** Save the map when it is fully updated.
 ```bash
 $ ROS_NAMESPACE=tb3_hsc rosrun map_server map_saver -f tb3_hsc
 ````
 
-![map](/assets/images/platform/turtlebot3/home_service_challenge/map.png)
+   ![map](/assets/images/platform/turtlebot3/home_service_challenge/map.png)
 
 ### [Starting Missions](#starting-missions)
 
@@ -460,14 +461,14 @@ Simulate TurtleBot3 with OpenMANIPULATOR-X in Gazebo.
 $ roslaunch turtlebot3_home_service_challenge_simulation competition.launch
 ```
 
-![gazebo](/assets/images/platform/turtlebot3/home_service_challenge/simulation_00.png)
+   ![gazebo](/assets/images/platform/turtlebot3/home_service_challenge/simulation_00.png)
 
 2. **[Remote PC]** Run a simulation demo for Gazebo.
 ```bash
 $ roslaunch turtlebot3_home_service_challenge_tools turtlebot3_home_service_challenge_demo_simulation.launch
 ```
 
-![simulation_rviz](/assets/images/platform/turtlebot3/home_service_challenge/simulation_rviz_01.png)
+   ![simulation_rviz](/assets/images/platform/turtlebot3/home_service_challenge/simulation_rviz_01.png)
 
 3. **[Remote PC]** Run Home Service Manager.
 ```bash
