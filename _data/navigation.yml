@@ -23554,10 +23554,10 @@ cm-151:
     titlekr: "작동 방법"
     url: /parts/controller/cm-151/#how-to-operate
     urlkr: /parts/controller/cm-151/#작동-방법
-  - title: "Connect to PC"
-    titlekr: "PC 연결"
-    url: /parts/controller/cm-151/#connect-to-pc
-    urlkr: /parts/controller/cm-151/#pc-연결
+  - title: "Connect to PC (Micro USB)"
+    titlekr: "PC 연결 하기 (Micro USB)"
+    url: /parts/controller/cm-151/#connect-to-pc-micro-usb
+    urlkr: /parts/controller/cm-151/#pc-연결-하기-micro-usb
   - title: "Wireless Communication"
     titlekr: "무선통신 연결"
     url: /parts/controller/cm-151/#wireless-communication
