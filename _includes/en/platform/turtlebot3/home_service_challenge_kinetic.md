@@ -7,7 +7,7 @@
 {% endcapture %}
 <div class="notice">{{ notice_01 | markdownify }}</div>
 
-![](/assets/images/platform/turtlebot3/home_service_challenge/hsc_stadium_2.png)
+![](/assets/images/platform/turtlebot3/home_service_challenge/kinetic/hsc_stadium_2.png)
 
 > Home Service Challenge Stadium and Objects
 
@@ -161,7 +161,7 @@ $ rqt_image_view
 
 3. Select **/raspicam_node/image/compressed** (or **/raspicam_node/image/**) topic on the check box.
 
-   ![camera view](/assets/images/platform/turtlebot3/home_service_challenge/camera_setting_01.png)
+   ![camera view](/assets/images/platform/turtlebot3/home_service_challenge/kinetic/camera_setting_01.png)
 
 4. **[Remote PC]** Excute rqt_reconfigure.
 ```bash
@@ -170,7 +170,7 @@ $ rosrun rqt_reconfigure rqt_reconfigure
 
 5. Click **raspicam_node**, and modify parameter value to see clear images from the camera.
 
-   ![camera setting](/assets/images/platform/turtlebot3/home_service_challenge/camera_setting_02.png)
+   ![camera setting](/assets/images/platform/turtlebot3/home_service_challenge/kinetic/camera_setting_02.png)
 
 6. Open **camera.yaml** file located in **turtlebot3_home_service_challenge_tools/config/camera_calibration**.
 
@@ -218,18 +218,18 @@ $ rosrun camera_calibration cameracalibrator.py --size 8x6 --square 0.024 image:
     **NOTE**: The size of squres may differ depending on the print paper size A3, A4 or others. In which case, **adjust the value (0.024) of --square option in the given command** according to the square size in the print paper.
     {: .notice}
 
-    ![calibration display](/assets/images/platform/turtlebot3/home_service_challenge/camera_calibration_01.png)
+    ![calibration display](/assets/images/platform/turtlebot3/home_service_challenge/kinetic/camera_calibration_01.png)
 
 3. Use the checkerboard to calibrate the camera, and click **CALIBRATE**.
 
    **NOTE**: Move and tilt the checker board around to the left, right, top, bottom and various angles to get `X`,`Y`, `Size` and `Skew` calibration data. As the data is computed enough, `X`,`Y`, `Size` and `Skew` will have a green bar.
    {: .notice}
 
-   ![calibraion](/assets/images/platform/turtlebot3/home_service_challenge/camera_calibration_02.png)
+   ![calibraion](/assets/images/platform/turtlebot3/home_service_challenge/kinetic/camera_calibration_02.png)
 
 4. Click **Commit** to save the intrinsic calibration data to the default folder.(~/.ros/camera_info)
 
-   ![commit](/assets/images/platform/turtlebot3/home_service_challenge/camera_calibration_04.png)
+   ![commit](/assets/images/platform/turtlebot3/home_service_challenge/kinetic/camera_calibration_04.png)
 
 5. Open `camerav2_1280x720.yaml` file located **~/.ros/camera_info** from `Turtlebot SBC` and check the saved data, which has the form like the script below.
 ```bash
@@ -295,7 +295,7 @@ $ roslaunch turtlebot3_home_service_challenge_tools mobile_teleop_key.launch
 
 4. Update a map with the keyboard controller.
 
-   ![making_map](/assets/images/platform/turtlebot3/home_service_challenge/slam_02.png)
+   ![making_map](/assets/images/platform/turtlebot3/home_service_challenge/kinetic/slam_02.png)
 
 
 5. **[Remote PC]** Save the map when it is fully updated.
@@ -303,7 +303,7 @@ $ roslaunch turtlebot3_home_service_challenge_tools mobile_teleop_key.launch
 $ ROS_NAMESPACE=tb3_hsc rosrun map_server map_saver -f tb3_hsc
 ````
 
-   ![map](/assets/images/platform/turtlebot3/home_service_challenge/map.png)
+   ![map](/assets/images/platform/turtlebot3/home_service_challenge/kinetic/map.png)
 
 ### [Starting Missions](#starting-missions)
 
@@ -317,7 +317,7 @@ $ roslaunch turtlebot3_home_service_challenge_tools turtlebot3_home_service_chal
     **NOTE**: Be sure **Remote PC** and **TurtleBot3** are connected **under the same IP**.
     {: .notice}
 
-    ![demo_01](/assets/images/platform/turtlebot3/home_service_challenge/home_service_challenge_demo_01.png)
+    ![demo_01](/assets/images/platform/turtlebot3/home_service_challenge/kinetic/home_service_challenge_demo_01.png)
 
 2. **[Remote PC]** Run the manager package used to carry out Home Service Challenge's mission.
 ```bash
@@ -415,22 +415,22 @@ Using the demo package, the process of moving objects in Home Service Challenge 
 1. Navigating to a target in the living room.
 
 - Find a target, and reach it using a Navigation package.  
-  ![demo_02](/assets/images/platform/turtlebot3/home_service_challenge/home_service_challenge_demo_02.png)
+  ![demo_02](/assets/images/platform/turtlebot3/home_service_challenge/kinetic/home_service_challenge_demo_02.png)
 
 2. Approaching the target.
 
 - For the approach to the target with precise, TurtleBot3 wheels are directly controlled by computing target's location from AR marker. (Used Topic : `/tb3_hsc/cmd_vel`). To produce a reliable performance, Closed-loop and control system can be used for the specified number of times.
-  ![demo_03](/assets/images/platform/turtlebot3/home_service_challenge/home_service_challenge_demo_03.png)
+  ![demo_03](/assets/images/platform/turtlebot3/home_service_challenge/kinetic/home_service_challenge_demo_03.png)
 
 3. Picking the target with OpenMANIPULATOR-X's gripper.
 
 - Pick the target object using the moveit package (Joint space control, Task space control and Gripper control)
 
-  ![manipulation_diagram](/assets/images/platform/turtlebot3/home_service_challenge/manipulation_diagram.png)
+  ![manipulation_diagram](/assets/images/platform/turtlebot3/home_service_challenge/kinetic/manipulation_diagram.png)
 
   > MoveIt Diagram
 
-  ![demo_04](/assets/images/platform/turtlebot3/home_service_challenge/home_service_challenge_demo_04.png)
+  ![demo_04](/assets/images/platform/turtlebot3/home_service_challenge/kinetic/home_service_challenge_demo_04.png)
 
   > Picking a Target Using MoveIt Package.
 
@@ -442,7 +442,7 @@ Using the demo package, the process of moving objects in Home Service Challenge 
 
 - Find a next target, and reach it using a Navigation package.
 
-  ![demo_05](/assets/images/platform/turtlebot3/home_service_challenge/home_service_challenge_demo_05.png)
+  ![demo_05](/assets/images/platform/turtlebot3/home_service_challenge/kinetic/home_service_challenge_demo_05.png)
 
 6. Approaching the target.
 
@@ -450,7 +450,7 @@ Using the demo package, the process of moving objects in Home Service Challenge 
 
 8. Returning to the starting point using the navigation package.
 
-   ![demo_06](/assets/images/platform/turtlebot3/home_service_challenge/home_service_challenge_demo_06.png)
+   ![demo_06](/assets/images/platform/turtlebot3/home_service_challenge/kinetic/home_service_challenge_demo_06.png)
 
 ### [Simulation](#simulation)
 
@@ -461,14 +461,14 @@ Simulate TurtleBot3 with OpenMANIPULATOR-X in Gazebo.
 $ roslaunch turtlebot3_home_service_challenge_simulation competition.launch
 ```
 
-   ![gazebo](/assets/images/platform/turtlebot3/home_service_challenge/simulation_00.png)
+   ![gazebo](/assets/images/platform/turtlebot3/home_service_challenge/kinetic/simulation_00.png)
 
 2. **[Remote PC]** Run a simulation demo for Gazebo.
 ```bash
 $ roslaunch turtlebot3_home_service_challenge_tools turtlebot3_home_service_challenge_demo_simulation.launch
 ```
 
-   ![simulation_rviz](/assets/images/platform/turtlebot3/home_service_challenge/simulation_rviz_01.png)
+   ![simulation_rviz](/assets/images/platform/turtlebot3/home_service_challenge/kinetic/simulation_rviz_01.png)
 
 3. **[Remote PC]** Run Home Service Manager.
 ```bash
