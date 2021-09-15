@@ -13,8 +13,18 @@
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3aZXpVsEi0c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### [What you need to Join the Home Service Challenge](#what-you-need-to-join-the-home-service-challenge)
+### [Getting Started](#getting-started)
 
+{% capture HSC_Note %}
+**NOTE**: Be sure to complete the following instructions before installing Home Service Challenge packages in the pc.
+
+- [TurtleBot3 PC Set up](/docs/en/platform/turtlebot3/quick-start/#pc-setup)
+- [TurtleBot3 SBC Set up](/docs/en/platform/turtlebot3/sbc_setup/#sbc-setup)
+- [OpenMANIPULATOR-X](/docs/en/platform/openmanipulator_x/quick_start_guide/#install-ros-packages) packages
+{% endcapture %}
+<div class="notice">{{ HSC_Note | markdownify }}</div>
+
+#### [Prerequisites](#Prerequisites)
 `TurtleBot3 Waffle Pi`
 
 - It is the basic model to use Home Service Challenge packages for mobile manipulation.
@@ -29,28 +39,21 @@
 - It communicates with an single board computer (SBC) on Turtlebot3.
 - Laptop, desktop, or other devices with ROS 1.
 
-### [Getting Started](#getting-started)
-
-{% capture HSC_Note %}
-**NOTE**: Be sure to complete the following instructions before installing Home Service Challenge packages in the pc.
-
-- [TurtleBot3 PC Set up](/docs/en/platform/turtlebot3/pc_setup)
-- [TurtleBot3 SBC Set up](/docs/en/platform/turtlebot3/raspberry_pi_3_setup/#raspberry-pi-3-setup)
-- [OpenMANIPULATOR-X](/docs/en/platform/openmanipulator_x/ros_setup/#install-ros-packages) packages
-{% endcapture %}
-<div class="notice">{{ HSC_Note | markdownify }}</div>
-
 #### [Remote PC Setup](#remote-pc-setup)
 
 1. **[Remote PC]** Install Home Service Challenge packages.
 ```bash
 $ cd ~/catkin_ws/src/
 $ git clone https://github.com/ROBOTIS-GIT/turtlebot3_home_service_challenge.git
-$ sudo apt-get install ros-kinetic-ar-track-alvar ros-kinetic-ar-track-alvar-msgs
 $ cd ~/catkin_ws && catkin_make
 ```
 
-2. **[Remote PC]** Load the TurtleBot3 Waffle (or Waffle Pi) with OpenMANIPULATOR on RViz.
+2. **[Remote PC]** Install additional dependent packages on Remote PC
+```bash
+$ sudo apt-get install ros-kinetic-ar-track-alvar ros-kinetic-ar-track-alvar-msgs
+```
+
+3. **[Remote PC]** Load the TurtleBot3 Waffle (or Waffle Pi) with OpenMANIPULATOR on RViz.
 ```bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ roslaunch turtlebot3_manipulation_description turtlebot3_manipulation_view.launch use_gui:=true
@@ -62,12 +65,12 @@ $ roslaunch turtlebot3_manipulation_description turtlebot3_manipulation_view.lau
 
     > Rviz View
 
-3. **[Remote PC]** In order to use your PC remotely, you need to make SSH keys. Create a script file to generate SSH key.
+4. **[Remote PC]** In order to use your PC remotely, you need to make SSH keys. Create a script file to generate SSH key.
 ```bash
 $ nano ~/tb3_ssh_keygen
 ```
 
-4. **[Remote PC]** Copy and paste the followings to the script, and save it.
+5. **[Remote PC]** Copy and paste the followings to the script, and save it.
 ```bash
 #!/bin/bash
 argc=$#
@@ -85,17 +88,19 @@ do
 done
 ```
 
-5. **[Remote PC]** Make the file executable.
+6. **[Remote PC]** Make the file executable.
 ```bash
 $ chmod +x ~/tb3_ssh_keygen
 ```
 
-6. **[Remote PC]** Execute the file with TurtleBot3's IP address. Be sure **Remote PC** and **TurtleBot3** are connected **under the same IP**.
+7. **[Remote PC]** Execute the file with TurtleBot3's IP address. Be sure **Remote PC** and **TurtleBot3** are connected **under the same WiFi**.
 ```bash
-$ ~/tb3_ssh_keygen 192.168.1.10
+$ ~/tb3_ssh_keygen {IP_ADDRESS_OF_TURTLEBOT3}
 ```
 
-7. Check `~/.ssh/known_hosts` file if SSH is successfully generated.
+8. Check `~/.ssh/known_hosts` file if SSH is successfully generated.
+
+   ![known_hosts](/assets/images/platform/turtlebot3/home_service_challenge/kinetic/known_hosts.png)
 
 #### [SBC Setup](#sbc-setup)
 
@@ -134,13 +139,13 @@ exec "$@"
 $ chmod +x ~/env.bash
 ```
 
-#### [Hardware Setup](#hardware-setup)
-
-- See the [Hardware Setup](/docs/en/platform/turtlebot3/manipulation/#hardware-setup)
-
 #### [OpenCR Setup](#opencr-setup)
 
 - See the [OpenCR Setup](/docs/en/platform/turtlebot3/manipulation/#opencr-setup)
+
+#### [Hardware Setup](#hardware-setup)
+
+- See the [Hardware Setup](/docs/en/platform/turtlebot3/manipulation/#hardware-setup)
 
 ### [Camera Calibration](#camera-calibration)
 
@@ -305,7 +310,7 @@ $ ROS_NAMESPACE=tb3_hsc rosrun map_server map_saver -f tb3_hsc
 
    ![map](/assets/images/platform/turtlebot3/home_service_challenge/kinetic/map.png)
 
-### [Starting Missions](#starting-missions)
+### [Missions](#missions)
 
 #### [Run a Demo and Manager Pacakge](#run-a-demo-and-manager-package)
 
