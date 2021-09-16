@@ -15,7 +15,7 @@ Secondary ID(12)와 ID(7)의 차이는 다음과 같습니다.
 
 #### [Secondary ID(12) 동작 예시](#secondary-id12-동작-예시)
 
-{% if page.product_group=='dxl_xw540' %}
+{% if page.product_group=='dxl_xw540' or page.product_group=='dxl_xw430' %}
 
 여러개의 다이나믹셀은 서로 동일한 [ID(7)] 를 가질 수 없지만, Secondary ID(12)는 동일한 값을 가질 수 있습니다.
 
