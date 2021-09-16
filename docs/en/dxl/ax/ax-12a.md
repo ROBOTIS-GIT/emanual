@@ -25,26 +25,25 @@ product_group: dxl_ax
 
 # [Specifications](#specifications)
 
-| Item                   | Specifications                                                              |
-|:-----------------------|:----------------------------------------------------------------------------|
-| Baud Rate              | 7843 bps ~ 1 Mbps                                                           |
-| Weight                 | 53.5g(AX-12, AX-12+), 54.6g(AX-12A)                                         |
-| Dimensions (W x H x D) | 32mm x 50mm x 40mm <br />1.26 X 1.97 X 1.57 [inch]                          |
-| Resolution             | 0.29 [&deg;]                                                                |
-| Running Degree         | 0 [&deg;] ~ 300 [&deg;]<br />Endless Turn                                   |
-| Motor                  | Cored                                                                       |
-| Gear Ratio             | 254 : 1                                                                     |
-| Stall Torque           | 1.5 N*m (at 12V, 1.5A)                                                      |
-| No Load Speed          | 59rpm (at 12V)                                                              |
-| Operating Temperature  | -5 [&deg;C] ~ +70 [&deg;C]                                                  |
-| Input Voltage          | 9.0 ~ 12.0V (**Recommended : 11.1V**)                                       |
-| Command Signal         | Digital Packet                                                              |
-| Protocol Type          | Half Duplex Asynchronous Serial Communication<br />(8bit, 1stop, No Parity) |
-| Physical Connection    | TTL Level Multi Drop Bus                                                    |
-| ID                     | 254 ID (0~253)                                                              |
-| Feedback               | Position, Temperature, Load, Input Voltage, etc                             |
-| Gear Material          | Engineering Plastic(Full)                                                   |
-| Case Material          | Engineering Plastic(Front, Middle, Back)                                    |
+| Item                   | Specifications                                                                                            |
+|:-----------------------|:----------------------------------------------------------------------------------------------------------|
+| Baud Rate              | 7,843 [bps] ~ 1 [Mbps]                                                                                    |
+| Weight                 | AX-12 (53.5 [g]), AX-12+ (53.5 [g]), AX-12A (54.6 [g])                                                    |
+| Dimensions (W x H x D) | 32 X 50 X 40 [mm]<br />1.26 X 1.97 X 1.57 [inch]                                                          |
+| Resolution             | 0.29 [&deg;]                                                                                              |
+| Running Degree         | 0 ~ 300 [&deg;]<br />Endless Turn                                                                         |
+| Motor                  | Cored                                                                                                     |
+| Gear Ratio             | 254 : 1                                                                                                   |
+| Stall Torque           | 1.5 [N.m] (at 12 [V], 1.5 [A])                                                                            |
+| No Load Speed          | 59 [rev/min] (at 12V)                                                                                     |
+| Operating Temperature  | -5 ~ +70 [&deg;C]                                                                                |
+| Input Voltage          | 9.0 ~ 12.0 [V] (**Recommended : 11.1V**)                                                                  |
+| Command Signal         | Digital Packet                                                                                            |
+| Physical Connection    | TTL Level Multi Drop Bus<br />Half Duplex Asynchronous Serial Communication<br />(8bit, 1stop, No Parity) |
+| ID                     | 254 ID (0~253)                                                                                            |
+| Feedback               | Position, Temperature, Load, Input Voltage, etc                                                           |
+| Gear Material          | Engineering Plastic(Full)                                                                                 |
+| Case Material          | Engineering Plastic(Front, Middle, Back)                                                                  |
 
 **NOTE** : Stall torque is the maximum instantaneous and static torque. Stable motions are possible with robots designed for loads with 1/5 or less of the stall torque.
 {: .notice}

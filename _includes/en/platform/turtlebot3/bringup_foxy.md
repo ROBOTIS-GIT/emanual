@@ -2,7 +2,7 @@
 
 ### [Bringup TurtleBot3](#bringup-turtlebot3)
 1. Open a new terminal from PC with `Ctrl` + `Alt` + `T` and connect to Raspberry Pi with its IP address.  
-  The default password is **ubuntu**.  
+  The default password is **turtlebot**.  
   ```bash
 $ ssh ubuntu@{IP_ADDRESS_OF_RASPBERRY_PI}
   ```
@@ -119,9 +119,8 @@ $ ros2 service list
   ```
 
 <details>
-<summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) **Read more about launching RViz**
-{: .notice--success}
+<summary>
+![](/assets/images/icon_unfold.png) **Read more about launching RViz**
 </summary>
 ### [Load TurtleBot3 on Rviz](#load-turtlebot3-on-rviz)
 

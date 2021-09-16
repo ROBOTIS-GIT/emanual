@@ -6,8 +6,8 @@
 2. Install required packages on the Raspberry Pi to upload the [OpenCR] firmware.
   ```bash
 $ sudo dpkg --add-architecture armhf
-$ sudo apt-get update
-$ sudo apt-get install libc6:armhf
+$ sudo apt update
+$ sudo apt install libc6:armhf
   ```
 
 3. Depending on the platform, use either `burger` or `waffle` for the **OPENCR_MODEL** name.
@@ -41,9 +41,8 @@ $ ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr
 
 
 <details>
-<summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) Click here to expand more details about the firmware upload using **Arduino IDE**
-{: .notice--success}
+<summary>
+![](/assets/images/icon_unfold.png) Click here to expand more details about the firmware upload using **Arduino IDE**
 </summary>
 Please be aware that [OpenCR] board manager **does not support Arduino IDE on ARM based SBC such as Raspberry Pi or NVidia Jetson**.  
 In order to upload the [OpenCR] firmware using Arduino IDE, please follow the below instructions on your PC.

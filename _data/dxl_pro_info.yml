@@ -41,7 +41,7 @@ h42-20-s300-r:
   axialload:          *axialload_42
   noloadcurrent:      "0.57 [A]"
   contspeed:          "29.2 [rev/min]"
-  conttorque:         "5.1 [Nm]"
+  conttorque:         "5.1 [N.m]"
   contcurrent:        "1.5 [A]"
   output:             "20 [W]"
   temperature:        *temperature
@@ -71,7 +71,7 @@ h54-100-s500-r:
   axialload:          *axialload_54
   noloadcurrent:      "1.13 [A]"
   contspeed:          "29.2 [rev/min]"
-  conttorque:         "25.3 [Nm]"
+  conttorque:         "25.3 [N.m]"
   contcurrent:        "5.5 [A]"
   output:             "100 [W]"
   temperature:        *temperature
@@ -101,7 +101,7 @@ h54-200-s500-r:
   axialload:          *axialload_54
   noloadcurrent:      "1.65 [A]"
   contspeed:          "29.0 [rev/min]"
-  conttorque:         "44.7 [Nm]"
+  conttorque:         "44.7 [N.m]"
   contcurrent:        "9.3 [A]"
   output:             "200 [W]"
   temperature:        *temperature
@@ -131,7 +131,7 @@ l42-10-s300-r:
   axialload:          *axialload_42
   noloadcurrent:      "0.72 [A]"
   contspeed:          "27.9 [rev/min]"
-  conttorque:         "1.2 [Nm]"
+  conttorque:         "1.2 [N.m]"
   contcurrent:        "0.8 [A]"
   output:             "10 [W]"
   temperature:        *temperature
@@ -161,7 +161,7 @@ l54-30-s400-r:
   axialload:          *axialload_54
   noloadcurrent:      "1.19 [A]"
   contspeed:          "26.9 [rev/min]"
-  conttorque:         "2.5 [Nm]"
+  conttorque:         "2.5 [N.m]"
   contcurrent:        "1.6 [A]"
   output:             "30 [W]"
   temperature:        *temperature
@@ -191,7 +191,7 @@ l54-30-s500-r:
   axialload:          *axialload_54
   noloadcurrent:      "1.1 [A]"
   contspeed:          "21.0 [rev/min]"
-  conttorque:         "5.4 [Nm]"
+  conttorque:         "5.4 [N.m]"
   contcurrent:        "1.6 [A]"
   output:             "30 [W]"
   temperature:        *temperature
@@ -221,7 +221,7 @@ l54-50-s290-r:
   axialload:          *axialload_54
   noloadcurrent:      "1.05 [A]"
   contspeed:          "22.1 [rev/min]"
-  conttorque:         "4.8 [Nm]"
+  conttorque:         "4.8 [N.m]"
   contcurrent:        "1.9 [A]"
   output:             "50 [W]"
   temperature:        *temperature
@@ -251,7 +251,7 @@ l54-50-s500-r:
   axialload:          *axialload_54
   noloadcurrent:      "0.7 [A]"
   contspeed:          "13.7 [rev/min]"
-  conttorque:         "14.0 [Nm]"
+  conttorque:         "14.0 [N.m]"
   contcurrent:        "1.9 [A]"
   output:             "100 [W]"
   temperature:        *temperature
@@ -281,7 +281,7 @@ m42-10-s260-r:
   axialload:          *axialload_42
   noloadcurrent:      "0.52 [A]"
   contspeed:          "26.0 [rev/min]"
-  conttorque:         "1.7 [Nm]"
+  conttorque:         "1.7 [N.m]"
   contcurrent:        "0.6 [A]"
   output:             "10 [W]"
   temperature:        *temperature
@@ -311,7 +311,7 @@ m54-40-s250-r:
   axialload:          *axialload_54
   noloadcurrent:      "1.32 [A]"
   contspeed:          "24.2 [rev/min]"
-  conttorque:         "3.9 [Nm]"
+  conttorque:         "3.9 [N.m]"
   contcurrent:        "1.9 [A]"
   output:             "40 [W]"
   temperature:        *temperature
@@ -341,7 +341,7 @@ m54-60-s250-r:
   axialload:          *axialload_54
   noloadcurrent:      "1.25 [A]"
   contspeed:          "28.3 [rev/min]"
-  conttorque:         "10.1 [Nm]"
+  conttorque:         "10.1 [N.m]"
   contcurrent:        "3.0 [A]"
   output:             "60 [W]"
   temperature:        *temperature

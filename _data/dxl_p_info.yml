@@ -10,7 +10,7 @@ common_pro_plus_specs:
   radialload_54_en:   &radialload_54_en   "370 [N] (10 [mm] away from the horn)"
   axialload_42:       &axialload_42       "100 [N]"
   axialload_54:       &axialload_54       "130 [N]"
-  temperature:        &temperature        "-5 ~ 55 [&deg;C]"
+  temperature:        &temperature        "-5 ~ +55 [&deg;C]"
   voltage:            &voltage            "24.0 [V]"
   command:            &command            "Digital Packet"
   command_kr:         &command_kr         "디지털 패킷"
@@ -38,7 +38,7 @@ ph42-020-s300-r:
   noloadspeed:        "32.7 [rev/min]"
   noloadcurrent:      "0.57 [A]"
   contspeed:          "29.2 [rev/min]"
-  conttorque:         "5.1 [Nm]"
+  conttorque:         "5.1 [N.m]"
   contcurrent:        "1.5 [A]"
   output:             "20 [W]"
   temperature:        *temperature
@@ -68,7 +68,7 @@ ph54-100-s500-r:
   noloadspeed:        "33.3 [rev/min]"
   noloadcurrent:      "1.13 [A]"
   contspeed:          "29.2 [rev/min]"
-  conttorque:         "25.3 [Nm]"
+  conttorque:         "25.3 [N.m]"
   contcurrent:        "5.5 [A]"
   output:             "100 [W]"
   temperature:        *temperature
@@ -98,7 +98,7 @@ ph54-200-s500-r:
   noloadspeed:        "33.1 [rev/min]"
   noloadcurrent:      "1.65 [A]"
   contspeed:          "29.0 [rev/min]"
-  conttorque:         "44.7 [Nm]"
+  conttorque:         "44.7 [N.m]"
   contcurrent:        "9.3 [A]"
   output:             "200 [W]"
   temperature:        *temperature
@@ -128,7 +128,7 @@ pm42-010-s260-r:
   noloadspeed:        "28.0 [rev/min]"
   noloadcurrent:      "0.52 [A]"
   contspeed:          "26.0 [rev/min]"
-  conttorque:         "1.7 [Nm]"
+  conttorque:         "1.7 [N.m]"
   contcurrent:        "0.6 [A]"
   output:             "10 [W]"
   temperature:        *temperature
@@ -158,7 +158,7 @@ pm54-040-s250-r:
   noloadspeed:        "28.4 [rev/min]"
   noloadcurrent:      "1.32 [A]"
   contspeed:          "24.2 [rev/min]"
-  conttorque:         "3.9 [Nm]"
+  conttorque:         "3.9 [N.m]"
   contcurrent:        "1.9 [A]"
   output:             "40 [W]"
   temperature:        *temperature
@@ -188,7 +188,7 @@ pm54-060-s250-r:
   noloadspeed:        "33.1 [rev/min]"
   noloadcurrent:      "1.25 [A]"
   contspeed:          "28.3 [rev/min]"
-  conttorque:         "10.1 [Nm]"
+  conttorque:         "10.1 [N.m]"
   contcurrent:        "3.0 [A]"
   output:             "60 [W]"
   temperature:        *temperature

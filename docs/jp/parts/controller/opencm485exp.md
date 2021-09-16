@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: opencm485exp
+ref: opencm485exp_jp
 read_time: true
 share: true
 author_profile: false

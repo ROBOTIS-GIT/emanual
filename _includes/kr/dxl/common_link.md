@@ -68,10 +68,11 @@
 [Profile Velocity(560)]: #profile-velocity560
 [Goal Velocity(552)]: #goal-velocity552
 [Goal Position(564)]: #goal-position564
-[Velocity Limit(44)]: velocity-limit44
+[Velocity Limit(44)]: #velocity-limit44
 
 <!--Common Links -->
 
+[호환성 가이드]: http://www.robotis.com/service/compatibility_table.php?cate=dx
 [Alert Bit(0x80)]: /docs/kr/dxl/protocol2/#error 
 [케이블 호환성]: /docs/kr/popup/cable_compatibility/
 [Protocol 1.0]: /docs/kr/dxl/protocol1/#status-packet

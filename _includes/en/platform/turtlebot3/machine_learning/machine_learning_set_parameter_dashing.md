@@ -6,7 +6,7 @@ The episode ends when the TurtleBot3 crashes on an obstacle or after a certain p
 
 <iframe width="1236" height="695" src="https://www.youtube.com/embed/807_cByUBSI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-The contents in e-Manual can be updated without a previous notice. Therefore, some video may differ from the contents in e-Manual.
+The contents in e-Manual are subject to be updated without a prior notice. Therefore, some video may differ from the contents in e-Manual.
 {: .notice--warning} 
 
 ### [Set State](#set-state)

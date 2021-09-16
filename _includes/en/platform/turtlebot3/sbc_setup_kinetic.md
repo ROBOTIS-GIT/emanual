@@ -6,7 +6,7 @@
 
 {% capture warning_01 %}
 **WARNING**  
-- This SBC Setup section is specifically written for **Raspberry Pi 3B+** which is the current official TurtleBot3 SBC.
+- `Raspberry Pi 4`, `Jetson Nano` do not support ROS Kinetic.
 - This process may take long time. Please do not use battery while following this section.
 - An HDMI monitor and input devices such as a keyboard and a mouse will be required to complete this setup.
 {% endcapture %}
@@ -15,39 +15,61 @@
 If you are using **Intel Joule**, please refer to [Intel Joule Setup][joule_setup]{: .popup} instruction.
 {: .notice--danger}
 
-### [Prepare microSD Card](#prepare-microsd-card)
-You need a micro SD card reader to burn the OS image on your PC or laptop.
+### [Prepare microSD Card and Reader](#prepare-microsd-card-and-reader)
+If you PC do not have a microSD slot, please use a microSD card reader to burn the recovery image.  
+![](/assets/images/platform/turtlebot3/setup/micro_sd_reader.png)
 
-1. Download Raspbian with ROBOTIS TurtleBot3 restore image.
-  - [Download TurtleBot3 Raspbian image for Raspberry Pi 3B+](http://www.robotis.com/service/download.php?no=1738){: .blank}
-  - SHA256 (image_rpi_20190429.img): 7a868c275169b1f02c04617cc0cce9654fd8222623c78b22d0a27c73a9609398
-2. Unzip the downloaded image.
-3. Burn the image file(`.img`) to the microSD card.
-  - Use `Restore Disk Image` option in the `Disks` utility in Ubuntu.
-  - Run the utility and select the restore image, then burn to the selected micro SD card.  
-  ![](/assets/images/platform/turtlebot3/setup/ubuntu_disks_restore_img.png)
-<details>
-<summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) **Other micro SD card burning methods?**
-{: .notice--success}
-</summary>
-You can also use the [Raspberry Pi Imager](https://www.raspberrypi.org/blog/raspberry-pi-imager-imaging-utility/) that supports Windows, Linux, and Mac OSX.  
-![](/assets/images/platform/turtlebot3/setup/rpi_imager.png)
-</details>
+### [Download TurtleBot3 SBC Image](#download-turtlebot3-sbc-image)
+Download the correct image file for your hardware and ROS version.  
+Kinetic version images use Raspberry Pi OS(Raspbian OS).  
+
+{% capture download_01 %}
+[![](/assets/images/icon_download.png) **Download** `Raspberry Pi 3B+` ROS Kinetic image](http://www.robotis.com/service/download.php?no=1738){: .blank}
+
+**SHA256** : eb8173f3727db08087990b2c4e2bb211e70bd54644644834771fc8b971856b97
+{% endcapture %}
+<div class="notice--success">{{ download_01 | markdownify }}</div>
+
+The recovery image files can be modified without a prior notice.
+{: .notice}
+
+`Raspberry Pi 4` does not support Ubuntu 16.04 nor Debian Jessie, therefore, ROS Kinetic is not supported.
+{: .notice--warning}
+
+### [Unzip the downloaded image file](#unzip-the-downloaded-image-file)
+Extract the `.img` file and save it in the local disk.
+
+### Burn the image file
+You can use various image burning tools.  
+For example, `Raspberry Pi Imager` or Linux `Disks` utility can be used.  
+Choose your preferred tool to burn the image to microSD.
+
+#### Raspberry Pi Imager
+Please refer to [this article](https://www.raspberrypi.org/blog/raspberry-pi-imager-imaging-utility/) to find more information about Raspberry Pi Imager.
+
+{% capture download_rpi_imager %}
+[![](/assets/images/icon_download.png) **Download** Raspberry Pi Imager from raspberrypi.org](https://www.raspberrypi.org/software/){: .blank}
+{% endcapture %}
+<div class="notice--success">{{ download_rpi_imager | markdownify }}</div>
+
+![](/assets/images/platform/turtlebot3/setup/rpi_imager.gif)  
+1. Click `CHOOSE OS`.  
+2. Click `Use custom` and select the extracted `.img` file from local disk.  
+3. Click `CHOOSE STORAGE` and select the microSD.  
+4. Click `WRITE` to start burning the image.
+
+#### Disks Utility
+`Disks` utility is included in recent Ubuntu Desktop. Search for "Disks" and launch the app.  
+
+![](/assets/images/platform/turtlebot3/setup/disks.gif)  
+1. Select the microSD card in the left panel.  
+2. Select `Restore Disk Image` option.  
+3. Open the `.img` file from local disk.  
+4. Click `Start Restoring...` > `Restore` button.
 
 <details>
-<summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) Read More about **Raspberry Pi 4B**
-{: .notice--success}
-</summary>
-In case you use Raspberry Pi 4B, you can use the restore image below. However, please note that this image may not compatible with Raspberry Pi 4B with 8GB RAM.
-- [Download TurtleBot3 Raspbian image for Raspberry Pi 4B](https://www.robotis.com/service/download.php?no=1905)
-</details>
-
-<details>
-<summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) Read More about **Intel Joule 570x**
-{: .notice--success}
+<summary>
+![](/assets/images/icon_unfold.png) **Click to expand : Instructions for Intel Joule 570x**
 </summary>
 In case you use Intel Joule 570x, please follow the instructions below.  
 Intel Joule is discontinued in 2017, and additional support is unavailable.
@@ -66,6 +88,9 @@ Intel Joule is discontinued in 2017, and additional support is unavailable.
 4. Connect the power (either with USB or OpenCR) to turn on the Raspberry Pi.
 
 ### Configure the Raspberry Pi
+
+{% include en/platform/turtlebot3/ros_gpg_key_expiration_incident.md %}
+
 1. After Raspbian OS is up and running, connect to the WiFi network that is connected with the PC.
 2. Find the assigned IP address for Raspberry Pi with the command below. Usually wireless IP address for Raspberry Pi can be found under the `wlan0` section.
   ```bash

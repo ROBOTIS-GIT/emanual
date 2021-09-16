@@ -21,8 +21,7 @@
 | Operating Temperature   | {{ site.data.dxl_p_info[page.ref].temperature }}        |
 | Input Voltage           | {{ site.data.dxl_p_info[page.ref].opvoltage }}          |
 | Command Signal          | {{ site.data.dxl_p_info[page.ref].commandsignal }}      |
-| Protocol Type           | {{ site.data.dxl_p_info[page.ref].protocoltype }}       |
-| Physical Connection     | {{ site.data.dxl_p_info[page.ref].physicalconnection }} |
+| Physical Connection     | {{ site.data.dxl_p_info[page.ref].physicalconnection }} <br /> {{ site.data.dxl_p_info[page.ref].protocoltype }} |
 | ID                      | {{ site.data.dxl_p_info[page.ref].id }}                 |
 | Standby Current         | {{ site.data.dxl_p_info[page.ref].standbycurrent }}     |
 

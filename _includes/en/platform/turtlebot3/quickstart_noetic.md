@@ -9,6 +9,14 @@
 **WARNING**: The contents in this chapter corresponds to the `Remote PC` (your desktop or laptop PC) which will control TurtleBot3. Do not apply this instruction to your TurtleBot3.
 {: .notice--danger}
 
+{% capture warning_01 %}
+**Compatibility WARNING**  
+- `Jetson Nano` does not support native Ubuntu 20.04. Please refer to [NVIDIA developer forum]{: .blank} for more details.
+
+[NVIDIA developer forum]: https://forums.developer.nvidia.com/t/when-will-jetpack-move-to-ubuntu-20-04/142517
+{% endcapture %}
+<div class="notice--danger">{{ warning_01 | markdownify }}</div>
+
 **NOTE**: This instruction was tested on Linux with `Ubuntu 20.04` and `ROS1 Noetic Ninjemys`.
 {: .notice--info}
 
@@ -20,7 +28,7 @@
 2. Follow the instruction below to install Ubuntu on PC.
   - [Install Ubuntu desktop](https://www.ubuntu.com/download/desktop/install-ubuntu-desktop)
 
-### [Install ROS 1 on Remote PC](#install-ros-1-on-remote-pc)
+### [Install ROS on Remote PC](#install-ros-on-remote-pc)
 
 Open the terminal with `Ctrl`+`Alt`+`T` and enter below commands one at a time.  
 In order to check the details of the easy installation script, please refer to [the script file](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_noetic.sh).  
@@ -34,7 +42,7 @@ $ bash ./install_ros_noetic.sh
 
 If the above installation fails, please refer to [the official ROS1 Noetic installation guide](http://wiki.ros.org/noetic/Installation/Ubuntu).
 
-### [Install Dependent ROS 1 Packages](#install-dependent-ros-1-packages)
+### [Install Dependent ROS Packages](#install-dependent-ros-packages)
 
 ```bash
 $ sudo apt-get install ros-noetic-joy ros-noetic-teleop-twist-joy \
@@ -58,9 +66,8 @@ $ sudo apt install ros-noetic-turtlebot3
 ```
 
 <details>
-<summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) **Click here to expand more details about building TurtleBot3 package from source.**
-{: .notice--success}
+<summary>
+![](/assets/images/icon_unfold.png) **Click here to expand more details about building TurtleBot3 package from source.**
 </summary>
 In case you need to download the source codes and build them, please use the commands below.  
 Make sure to remove the identical packages to avoid redundancy.  

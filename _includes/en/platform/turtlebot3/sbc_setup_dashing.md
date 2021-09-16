@@ -13,83 +13,108 @@
 {% endcapture %}
 <div class="notice--danger">{{ warning_01 | markdownify }}</div>
 
-### [Prepare microSD Card](#prepare-microsd-card)
-You need a micro SD card reader to burn the OS image on your PC or laptop.
+### [Prepare microSD Card and Reader](#prepare-microsd-card-and-reader)
+If you PC do not have a microSD slot, please use a microSD card reader to burn the recovery image.  
+![](/assets/images/platform/turtlebot3/setup/micro_sd_reader.png)
 
-1. Download the `ubuntu-18.04.4-preinstalled-server-arm64+raspi3.img.xz` image on your PC.
-  - [Ubuntu 18.04.4 Preinstalled Server ARM64 for Raspberry Pi3](http://old-releases.ubuntu.com/releases/18.04.4/){: .blank}
+### [Download SBC OS Image](#download-sbc-os-image)
+Download the correct image file for your hardware and ROS version.  
+ROS2 Dashing requires Ubuntu 18.04.  
 
-2. Unzip the downloaded image.
+{% capture download_01 %}
+[![](/assets/images/icon_download.png) **Download** `ubuntu-18.04.4-preinstalled-server-arm64+raspi3.img.xz` OS image](http://old-releases.ubuntu.com/releases/18.04.4/){: .blank}
+{% endcapture %}
+<div class="notice--success">{{ download_01 | markdownify }}</div>
 
-3. Burn the image file(`.img`) to the microSD card.
-  - Use `Restore Disk Image` option in the `Disks` utility in Ubuntu.
-  - Run the utility and select the restore image, then burn to the selected micro SD card.  
-  ![](/assets/images/platform/turtlebot3/setup/ubuntu_disks_restore_img.png)
-<details>
-<summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) **Other micro SD card burning methods?**
-{: .notice--success}
-</summary>
-You can also use the [Raspberry Pi Imager](https://www.raspberrypi.org/blog/raspberry-pi-imager-imaging-utility/) that supports Windows, Linux, and Mac OSX.  
-![](/assets/images/platform/turtlebot3/setup/rpi_imager.png)
-</details>
+### [Unzip the downloaded image file](#unzip-the-downloaded-image-file)
+Extract the `.img` file and save it in the local disk.
 
+### Burn the image file
+You can use various image burning tools.  
+For example, `Raspberry Pi Imager` or Linux `Disks` utility can be used.  
+Choose your preferred tool to burn the image to microSD.
+
+#### Raspberry Pi Imager
+Please refer to [this article](https://www.raspberrypi.org/blog/raspberry-pi-imager-imaging-utility/) to find more information about Raspberry Pi Imager.
+
+{% capture download_rpi_imager %}
+[![](/assets/images/icon_download.png) **Download** Raspberry Pi Imager from raspberrypi.org](https://www.raspberrypi.org/software/){: .blank}
+{% endcapture %}
+<div class="notice--success">{{ download_rpi_imager | markdownify }}</div>
+
+![](/assets/images/platform/turtlebot3/setup/rpi_imager.gif)  
+1. Click `CHOOSE OS`.  
+2. Click `Use custom` and select the extracted `.img` file from local disk.  
+3. Click `CHOOSE STORAGE` and select the microSD.  
+4. Click `WRITE` to start burning the image.
+
+#### Disks Utility
+`Disks` utility is included in the recent Ubuntu Desktop. Search for "Disks" and launch the app.  
+
+![](/assets/images/platform/turtlebot3/setup/disks.gif)  
+1. Select the microSD card in the left panel.  
+2. Select `Restore Disk Image` option.  
+3. Open the `.img` file from local disk.  
+4. Click `Start Restoring...` > `Restore` button.
 
 ### Boot Up the Raspberry Pi
 1. Connect the HDMI cable of the monitor to the HDMI port of Raspberry Pi.
 2. Connect input devices to the USB port of Raspberry Pi
 3. Insert the microSD card.
 4. Connect the power (either with USB or OpenCR) to turn on the Raspberry Pi.
+5. Login with ID `ubuntu` and PASSWORD `ubuntu`.  
+  Once logged in, the system will request to change the password.
+
+HDMI cable has to be connected before powering the Raspberry Pi, or else the HDMI port of the Raspberry Pi will be disabled.
+{: .notice--warning}
 
 ### Configure the Raspberry Pi
-1. Log in with default username(`ubuntu`) and password(`ubuntu`). After logged in, system will ask you to change the password.
-
-2. Open automatic update setting file.
+1. Open automatic update setting file.
   ```bash
 $ sudo nano /etc/apt/apt.conf.d/20auto-upgrades
   ```
 
-3. Edit to disable automatic update settings as below.
+2. Edit to disable automatic update settings as below.
   ```bash
 APT::Periodic::Update-Package-Lists "0";
 APT::Periodic::Unattended-Upgrade "0";
   ```  
   Save the file with `Ctrl`+`S` and exit with `Ctrl`+`X`.
 
-4. Enter below command to configure the WiFi network setting.
+3. Enter below command to configure the WiFi network setting.
   ```bash
 $ sudo nano /etc/netplan/50-cloud-init.yaml
   ```
 
-5. When the editor is opened, append below contents at the end of the file.  
+4. When the editor is opened, append below contents at the end of the file.  
   Replace the `WIFI_SSID` and `WIFI_PASSWORD` with your wifi SSID and password.  
   ![](/assets/images/platform/turtlebot3/setup/ros2_sbc_netcfg.png)  
   Save the file with `Ctrl`+`S` and exit with `Ctrl`+`X`.
 
-6. Apply all configuration for the renderers, and then reboot the Raspberry Pi.
+5. Apply all configuration for the renderers, and then reboot the Raspberry Pi.
   ```bash
 $ sudo netplan apply
 $ reboot
   ```
 
-7. Set the `systemd` to prevent boot-up delay even if there is no network at startup. Run the command below to set mask the `systemd` process using the following command.
+6. Set the `systemd` to prevent boot-up delay even if there is no network at startup. Run the command below to set mask the `systemd` process using the following command.
 ```bash
 $ systemctl mask systemd-networkd-wait-online.service
 ```
 
-8. Disable Suspend and Hibernation
+7. Disable Suspend and Hibernation
   ```bash
 $ sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
   ```
 
-9. Install and enable the SSH
+8. Install and enable the SSH
   ```bash
 $ sudo apt install ssh
 $ sudo systemctl enable --now ssh
 $ reboot
   ```
 
-10. After rebooting the Raspberry Pi, if you wish to work from the Remote PC using SSH, use below command from the remote PC terminal. The default password is **ubuntu**.
+9. After rebooting the Raspberry Pi, if you wish to work from the Remote PC using SSH, use below command from the remote PC terminal. The default password is **ubuntu**.
   ```bash
 $ ssh ubuntu@{IP Address of Raspberry PI}
   ```
@@ -129,36 +154,33 @@ Please refer to the Ubuntu Blog below for more useful information.
 {% endcapture %}
 <div class="notice--success">{{ ubuntu_blog | markdownify }}</div>
 
-### Install ROS Dashing Diademata
+### Install ROS 2 Dashing Diademata
 
-- [Official ROS 2 Dashing Installation Guide](https://index.ros.org/doc/ros2/Installation/Dashing/Linux-Install-Debians/)
+**Reference**: [Official ROS 2 Dashing Installation Guide](https://index.ros.org/doc/ros2/Installation/Dashing/Linux-Install-Debians/)
+{: .notice}
 
 1. Open a terminal on **SBC**
 
-2. Update and upgrade your software
+2. Setup locale
   ```bash
-$ sudo apt update && sudo apt upgrade
-  ```
-3. Setup locale
-  ```bash
+$ sudo apt update && sudo apt install locales
 $ sudo locale-gen en_US en_US.UTF-8
 $ sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
 $ export LANG=en_US.UTF-8
   ```
-4. Setup sources
+3. Setup sources
   ```bash
 $ sudo apt update && sudo apt install curl gnupg2 lsb-release
-$ curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
-$ sudo sh -c 'echo "deb [arch=amd64,arm64] http://packages.ros.org/ros2/ubuntu `lsb_release -cs` main" > /etc/apt/sources.list.d/ros2-latest.list'
+$ sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key  -o /usr/share/keyrings/ros-archive-keyring.gpg
+$ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
   ```
-5. Install ROS 2 packages
+4. Install ROS 2 packages
   ```bash
 $ sudo apt update
 $ sudo apt install ros-dashing-ros-base
   ```
 
-### Install ROS Packages
-
+5. Install and Build ROS Packages.
 ```bash
 $ sudo apt install python3-argcomplete python3-colcon-common-extensions libboost-system-dev build-essential
 $ sudo apt install ros-dashing-hls-lfcd-lds-driver
@@ -176,19 +198,22 @@ $ echo 'source ~/turtlebot3_ws/install/setup.bash' >> ~/.bashrc
 $ source ~/.bashrc
 ```
 
-### Environment Setup
+6. USB Port Setting for OpenCR
+```bash
+$ sudo cp `ros2 pkg prefix turtlebot3_bringup`/share/turtlebot3_bringup/script/99-turtlebot3-cdc.rules /etc/udev/rules.d/
+$ sudo udevadm control --reload-rules
+$ sudo udevadm trigger
+```
 
-#### Domain ID Allocation
-In DDS communication, `ROS_DOMAIN_ID` must be matched between **Remote PC** and **TurtleBot3** for wireless communication under the same network environment. Following commands shows how to assign a `ROS_DOMAIN_ID` to SBC in TurtleBot3.
-- A default ID of **TurtleBot3** is set as `0`.  
-- To configure the `ROS_DOMAIN_ID` of Remote PC and SBC in TurtleBot3 to `30` is recommendable.  
+7. ROS Domain ID Setting
+In ROS2 DDS communication, `ROS_DOMAIN_ID` must be matched between **Remote PC** and **TurtleBot3** for communication under the same network environment. Following commands shows how to assign a `ROS_DOMAIN_ID` to SBC in TurtleBot3.
+- A default ID of **TurtleBot3** is `30`.  
+- Configuring the `ROS_DOMAIN_ID` of Remote PC and SBC in TurtleBot3 to `30` is recommended.  
 
-1. Open a terminal on **SBC**
-2. Use the following commands.
-  ```bash
+```bash
 $ echo 'export ROS_DOMAIN_ID=30 #TURTLEBOT3' >> ~/.bashrc
 $ source ~/.bashrc
-  ```
+```
 
 **WARNING** : Do not use an identical ROS_DOMAIN_ID with others in the same network. It will cause a conflict of communication between users under the same network environment.
 {: .notice--warning}

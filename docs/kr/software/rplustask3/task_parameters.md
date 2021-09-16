@@ -154,6 +154,8 @@ R+ Task 3.0에서 사용하는 파라미터를 설명합니다. 각 장치에 �
 - 특정 제어기에서만 사용할 수 있습니다.  
   (지원 제어기 : [CM-200], [CM-5], [CM-510], [CM-530], [CM-550], [CM-700], [OpenCM 9.04])
 
+![](/assets/images/sw/rplus_task3_kr/motion_control_tab_menu_kr.png)
+
 #### 모션 호출 번호
 해당 호출 번호의 모션이 실행됩니다.
 - 모션 호출 번호에 지정된 이름을 확인할수 있습니다.
@@ -168,6 +170,12 @@ R+ Task 3.0에서 사용하는 파라미터를 설명합니다. 각 장치에 �
 
 키프레임, 모션유닛, 모션에 대한 정보는 [모션 프로그래밍](/docs/kr/software/rplustask3/motion_programming/#모션-프로그래밍)을 참조하세요.
 {: .notice}
+
+#### 모션 연결
+
+현재 모션 이후, 실행될 모션을 지정합니다. 현재 모션과 다음 실행 모션을 자연스럽게 연결할 수 있습니다.
+
+![Motion_Link](/assets/images/sw/rplus_task3_kr/motion_next_page_kr.png)
 
 #### 모션 상태
 모션이 실행되고 있으면 True, 모션이 실행되고 있지 않으면 False값을 반환합니다.

@@ -8,18 +8,25 @@
 **WARNING**: The contents in this chapter corresponds to the `Remote PC` (your desktop or laptop PC) which will control TurtleBot3. Do not apply this instruction to your TurtleBot3.
 {: .notice--danger}
 
-**NOTE**: This instruction was tested on Linux with `Ubuntu 16.04` and `ROS1 Kinetic Kame`.
+{% capture warning_01 %}
+**Compatibility WARNING**  
+- `Raspberry Pi 4` does not support ROS Kinetic.
+- `Jetson Nano` does not support ROS Kinetic.
+{% endcapture %}
+<div class="notice--danger">{{ warning_01 | markdownify }}</div>
+
+**NOTE**: This instruction was tested on Linux with `Ubuntu 16.04` and `ROS Kinetic Kame`.
 {: .notice--info}
 
 ### [Download and Install Ubuntu on PC](#download-and-install-ubuntu-on-pc)
 
 1. Download the proper `Ubuntu 16.04 LTS Desktop` image for your PC from the links below.
-  - [Ubuntu 16.04 LTS Desktop image (64-bit)](https://releases.ubuntu.com/16.04.7/){: .blank}
+  - [![](/assets/images/icon_download.png) Ubuntu 16.04 LTS Desktop image (64-bit)](https://releases.ubuntu.com/16.04.7/){: .blank}
 
 2. Follow the instruction below to install Ubuntu on PC.
   - [Install Ubuntu desktop](https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview)
 
-### [Install ROS 1 on Remote PC](#install-ros-1-on-remote-pc)
+### [Install ROS on Remote PC](#install-ros-on-remote-pc)
 
 Open the terminal with `Ctrl`+`Alt`+`T` and enter below commands one at a time.  
 In order to check the details of the easy installation script, please refer to [the script file](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh).  
@@ -31,9 +38,9 @@ $ chmod 755 ./install_ros_kinetic.sh
 $ bash ./install_ros_kinetic.sh
 ```
 
-If the above installation fails, please refer to [the official ROS1 Kinetic installation guide](http://wiki.ros.org/kinetic/Installation/Ubuntu).
+If the above installation fails, please refer to [the official ROS Kinetic installation guide](http://wiki.ros.org/kinetic/Installation/Ubuntu).
 
-### [Install Dependent ROS 1 Packages](#install-dependent-ros-1-packages)
+### [Install Dependent ROS Packages](#install-dependent-ros-packages)
 
 ```bash
 $ sudo apt-get install ros-kinetic-joy ros-kinetic-teleop-twist-joy \
@@ -58,9 +65,8 @@ $ sudo apt-get install ros-kinetic-turtlebot3
 ```
 
 <details>
-<summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) **Click here to expand more details about building TurtleBot3 package from source.**
-{: .notice--success}
+<summary>
+![](/assets/images/icon_unfold.png) **Click here to expand more details about building TurtleBot3 package from source.**
 </summary>
 In case you need to download the source codes and build them, please use the commands below.  
 Make sure to remove the identical packages to avoid redundancy.  

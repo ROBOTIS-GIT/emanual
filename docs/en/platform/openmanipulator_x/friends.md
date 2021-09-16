@@ -10,10 +10,10 @@ sidebar:
   title: "OpenMANIPULATOR-X"
   nav: "openmanipulator_x"
 product_group: openmanipulator_x
-page_number: 23
+page_number: 16
 ---
 
-<div style="counter-reset: h1 22"></div>
+<div style="counter-reset: h1 11"></div>
 
 # [Friends](#friends)
 

@@ -20,9 +20,8 @@ $ roslaunch turtlebot3_slam turtlebot3_slam.launch
   ```
 
 <details>
-<summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) **How to save the TURTLEBOT3_MODEL parameter?**
-{: .notice--success}
+<summary>
+![](/assets/images/icon_unfold.png) **How to save the TURTLEBOT3_MODEL parameter?**
 </summary>
 The `$ export TURTLEBOT3_MODEL=${TB3_MODEL}` command can be omitted if the **TURTLEBOT3_MODEL** parameter is predefined in the `.bashrc` file.  
 The `.bashrc` file is automatically loaded when a terminal window is created.  
@@ -41,9 +40,8 @@ $ source ~/.bashrc
 </details>
 
 <details>
-<summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) Read more about **other SLAM methods**
-{: .notice--success}
+<summary>
+![](/assets/images/icon_unfold.png) Read more about **other SLAM methods**
 </summary>
 - **Gmapping** ([ROS WIKI](http://wiki.ros.org/gmapping), [Github](https://github.com/ros-perception/slam_gmapping))
   1. Install dependent packages on PC.  

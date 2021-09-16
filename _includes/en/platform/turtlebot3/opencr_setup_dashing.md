@@ -41,9 +41,8 @@ $ ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr
 
 
 <details>
-<summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) Click here to expand more details about the firmware upload using **Arduino IDE**
-{: .notice--success}
+<summary>
+![](/assets/images/icon_unfold.png) Click here to expand more details about the firmware upload using **Arduino IDE**
 </summary>
 Please be aware that [OpenCR] board manager **does not support Arduino IDE on ARM based SBC such as Raspberry Pi or NVidia Jetson**.  
 In order to upload the [OpenCR] firmware using Arduino IDE, please follow the below instructions on your PC.

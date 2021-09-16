@@ -63,9 +63,8 @@ The [Navigation][navigation] enables a robot to move from the current pose to th
 <iframe width="640" height="360" src="https://www.youtube.com/embed/VYlMywwYALU" frameborder="0" allowfullscreen></iframe>
 
 <details>
-<summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) Read more about **Navigation**
-{: .notice--success}
+<summary>
+![](/assets/images/icon_unfold.png) Read more about **Navigation**
 </summary>
 - The robot will create a path to reach to the Navigation Goal based on the global path planner. Then, the robot moves along the path. If an obstacle is placed in the path, the Navigation will use local path planner to avoid the obstacle.
 

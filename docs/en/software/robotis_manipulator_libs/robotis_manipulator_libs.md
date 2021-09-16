@@ -70,7 +70,7 @@ If the catkin_make command has been completed without any errors, all the prepar
 
 Connect PC and OpenCR to micro USB as shown below.
 
-<img src="/assets/images/platform/openmanipulator_x/OpenManipulator_opencr_setup.png" width="500">
+![](/assets/images/platform/openmanipulator_x/OpenManipulator_opencr_setup.png)
 
 **NOTE** : Please refer the detailed description of [OpenCR](http://emanual.robotis.com/docs/en/parts/controller/opencr10/).
 {: .notice}

@@ -57,9 +57,8 @@ The Windows implementation of the Joystick control uses the [Open Source Simple 
 ### [Topic Monitor](#topic-monitor)
 
 <details>
-<summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) **Read more about Topic Monitor**
-{: .notice--success}
+<summary>
+![](/assets/images/icon_unfold.png) **Read more about Topic Monitor**
 </summary>
 In order to check the topics of TurtleBot3, we will use [rqt][rqt] provided by ROS. The rqt is a Qt-based framework for GUI development for ROS. The rqt is a tool that allows users to easily see the topic status by displaying all the topics in the topic list. There are topic names, types, bandwidth, Hz, value in GUI.
 </details>

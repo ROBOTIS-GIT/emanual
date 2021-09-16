@@ -34,10 +34,63 @@
   padding-bottom: 1.5px;
 }
 
-#summary_for_foreins:hover {
-  color: #176ac7;
-  cursor: pointer;
+details {
+  display: block;
+  border: dashed;
+  background-color: #eff9ef;
+  padding: 0em;
+  margin: 1em 0em 0em 3em !important;
+
+  + p {
+    border: 1px;
+    margin: 0em 0em 0em 0em !important;
+  }
+
+  > ul, > ol {
+    border: 1px;
+    margin: 0em 0em 0em 2em !important;
+  }
+
+  summary {
+    padding: 1px;
+    border: none;
+    cursor: pointer;
+    list-style: none;
+    p {
+      border: 1px;
+      margin: 0em 0em 0em 1em !important;
+    }
+  }
+  
+  summary:hover {
+    padding: 1px;
+    border: none;
+    background-color: #dcffdc;
+    cursor: pointer;
+    list-style: none;
+  }
 }
+
+// details > summary {
+//   padding: 1px;
+//   border: none;
+//   background-color: #eff9ef;
+//   cursor: pointer;
+//   list-style: none;
+// }
+
+// details > summary:hover {
+//   padding: 1px;
+//   border: none;
+//   background-color: #dcffdc;
+//   cursor: pointer;
+//   list-style: none;
+// }
+
+// details > summary > p {
+//   border: 1px;
+//   margin: 0em 0em 0em 1em !important;
+// }
 
 summary::-webkit-details-marker {
   display: none;

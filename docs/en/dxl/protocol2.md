@@ -17,7 +17,7 @@ sidebar:
 - DYNAMIXEL Protocol 2.0 supported controllers: CM-50, CM-150, CM-200, OpenCM7.0, OpenCM9.04, CM-550, OpenCR
 - Other: 2.0 protocol from R+ Smart app, DYNAMIXEL Wizard 2.0
 
-**TIP** : See Protocol [Compatibility Table]{: .popup}.
+**TIP** : See DYNAMIXEL Protocol [Compatibility Table]{: .popup}.
 {: .notice--success}
 
 **NOTE**: MX(2.0) is a special firmware for the DYNAMIXEL MX series supporting the DYNAMIXEL Protocol 2.0. The MX(2.0) firmware can be upgraded from the Protocol 1.0 by using the [Firmware Recovery](/docs/en/software/dynamixel/dynamixel_wizard2/) in DYNAMIXEL Wizard 2.0.
@@ -47,7 +47,7 @@ The field that indicates an ID of the device that should receive the Instruction
   1. Range : 0 ~ 252 (0x00 ~ 0xFC), which is a total of 253 numbers that can be used
   2. Broadcast ID : 254 (0xFE), which makes all connected devices execute the Instruction Packet
   
-  **WARNING**: Be sure that Broadcast ID(254 (0xFE)) is responded to [Ping], [Sync Read] and [Bulk Read] only.
+  **WARNING**: Be sure that Broadcast ID(254 (0xFE)) return [Status Packet](#status-packet) for [Ping], [Sync Read] and [Bulk Read] only, other [Instruction] aside from [Ping], [Sync Read] and [Bulk Read] will not return Status Packet to Broadcast ID.
   {: .notice--warning}
 
 ## [Length](#length)
@@ -62,21 +62,24 @@ The field that indicates the length of packet field.
 ## [Instruction](#instruction)
 The field that defines the type of commands.
 
-| Value |  Instructions   |                                                        Description                                                         |
-|:-----:|:---------------:|:--------------------------------------------------------------------------------------------------------------------------:|
-| 0x01  |     [Ping]      |              Instruction that checks whether the Packet has arrived to a device with the same ID as Packet ID              |
-| 0x02  |     [Read]      |                                          Instruction to read data from the Device                                          |
-| 0x03  |     [Write]     |                                          Instruction to write data on the Device                                           |
-| 0x04  |   [Reg Write]   | Instruction that registers the Instruction Packet to a standby status; Packet is later executed through the Action command |
-| 0x05  |    [Action]     |                    Instruction that executes the Packet that was registered beforehand using Reg Write                     |
-| 0x06  | [Factory Reset] |                     Instruction that resets the Control Table to its initial factory default settings                      |
-| 0x08  |    [Reboot]     |                                              Instruction to reboot the Device                                              |
-| 0x10  |     [Clear]     |                                          Instruction to reset certain information                                          |
-| 0x55  | Status(Return)  |                                          Return packet for the Instruction Packet                                          |
-| 0x82  |   [Sync Read]   |             For multiple devices, Instruction to read data from the same Address with the same length at once              |
-| 0x83  |  [Sync Write]   |              For multiple devices, Instruction to write data on the same Address with the same length at once              |
-| 0x92  |   [Bulk Read]   |           For multiple devices, Instruction to read data from different Addresses with different lengths at once           |
-| 0x93  |  [Bulk Write]   |           For multiple devices, Instruction to write data on different Addresses with different lengths at once            |
+| Value |      Instructions      |                                                        Description                                                         |
+|:-----:|:----------------------:|:--------------------------------------------------------------------------------------------------------------------------:|
+| 0x01  |         [Ping]         |              Instruction that checks whether the Packet has arrived to a device with the same ID as Packet ID              |
+| 0x02  |         [Read]         |                                          Instruction to read data from the Device                                          |
+| 0x03  |        [Write]         |                                          Instruction to write data on the Device                                           |
+| 0x04  |      [Reg Write]       | Instruction that registers the Instruction Packet to a standby status; Packet is later executed through the Action command |
+| 0x05  |        [Action]        |                    Instruction that executes the Packet that was registered beforehand using Reg Write                     |
+| 0x06  |    [Factory Reset]     |                     Instruction that resets the Control Table to its initial factory default settings                      |
+| 0x08  |        [Reboot]        |                                              Instruction to reboot the Device                                              |
+| 0x10  |        [Clear]         |                                          Instruction to reset certain information                                          |
+| 0x20  | [Control Table Backup] |             Instruction to store current Control Table status data to a Backup area or to restore EEPROM data.             |
+| 0x55  |     Status(Return)     |                                          Return packet for the Instruction Packet                                          |
+| 0x82  |      [Sync Read]       |             For multiple devices, Instruction to read data from the same Address with the same length at once              |
+| 0x83  |      [Sync Write]      |              For multiple devices, Instruction to write data on the same Address with the same length at once              |
+| 0x8A  |    [Fast Sync Read]    |             For multiple devices, Instruction to read data from the same Address with the same length at once              |
+| 0x92  |      [Bulk Read]       |           For multiple devices, Instruction to read data from different Addresses with different lengths at once           |
+| 0x93  |      [Bulk Write]      |           For multiple devices, Instruction to write data on different Addresses with different lengths at once            |
+| 0x9A  |    [Fast Bulk Read]    |           For multiple devices, Instruction to read data from different Addresses with different lengths at once           |
 
 ## [Parameters](#parameters)
 
@@ -108,7 +111,7 @@ The field that indicates the processing result of Instruction Packet
 |:-----:|:-------------:|
 | Alert | Error Number  |
 
-  - Alert : When there is some hard ware issue with the Device, this field is set as 1. Checking the Hardware error status value of the Control Table can indicate the cause of the problem.
+  - Alert : When there is some hard ware issue with the Device, this field is set as 1. Checking the Hardware error status value of the [Control Table] can indicate the cause of the problem.
   - Error Number : When there has been an Error in the processing of the Instruction Packet.
 
 | Error Number |       Error       |                                                                                                                            Description                                                                                                                             |
@@ -129,7 +132,7 @@ The field that indicates the processing result of Instruction Packet
 ## [Response Policy](#response-policy)
 
 1. Broadcast ID(254 (0xFE)) is responded to [Ping], [Sync Read] and [Bulk Read] only. For instance, Broadcast ID is not responded to [Sync Write] and [Bulk Write] Instruction. 
-2. A response to Instruction can be determined depending on a value of Status Return Level in Control Table. For more details, see the selectable value from Status Return Level in Control Table of the DYNAMIXEL in use. 
+2. A response to Instruction can be determined depending on a value of Status Return Level in [Control Table]. For more details, see the selectable value from Status Return Level in Control Table of the DYNAMIXEL in use. 
 
 # [Packet Process](#packet-process)
 
@@ -221,7 +224,7 @@ Note that given examples use the following abbreviation to provide clear informa
 ## [Read (0x02)](#read-0x02)
 
 ### Description
-  - Instruction to read a value from Control Table
+  - Instruction to read a value from [Control Table]
   - Method of expressing negative number data : This is different for each product, so please refer to the e-manual of the corresponding product
   - Read Instruction does not respond to Broadcast ID(254 (0xFE))
 
@@ -264,7 +267,7 @@ Note that given examples use the following abbreviation to provide clear informa
 ## [Write (0x03)](#write-0x03)
 
 ### Description
-  - Instruction to write a value on the Control Table
+  - Instruction to write a value on the [Control Table]
   - Method of expressing negative number data : This is different for each product, so please refer to the e-manual of the corresponding product
 
 ### Packet Parameters
@@ -302,7 +305,7 @@ Note that given examples use the following abbreviation to provide clear informa
   - Write Instruction is executed immediately when an Instruction Packet is received.
   - By using Reg Write and [Action] Instruction, one can operate multiple devices simultaneously.
   - Reg Write Instruction registers the Instruction Packet to a standby status, and sets Control table Registered Instruction to ‘1’.
-  - When an Action Instruction is received, the registered Packet is executed, and sets Control Table Registered Instruction to ‘0’.
+  - When an Action Instruction is received, the registered Packet is executed, and sets [Control Table] Registered Instruction to ‘0’.
 
 ### Packet Parameters
 
@@ -418,12 +421,12 @@ Note that given examples use the following abbreviation to provide clear informa
 
 ### Parameters
 
-|  P1  | P2 ~ P5                                 | Description                                                                                                                                                                                                                                                                                                                |
-|:----:|:----------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  P1  |                 P2 ~ P5                 | Description                                                                                                                                                                                                                                                                                                                |
+|:----:|:---------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0x01 | Fixed Values<br />(0x44 0x58 0x4C 0x22) | Reset the Present Position value to an absolute value within one rotation (0-4095).<br />The Clear instruction can only be applied when DYNAMIXEL is stopped.<br />Note that if DYNAMIXEL is in motion and the Clear Instruction packet is sent, Result Fail (0x01) will be sent via the Error field of the Status Packet. |
-| 0x02 | -                                       | Reserved                                                                                                                                                                                                                                                                                                                   |
-| ...  | -                                       | Reserved                                                                                                                                                                                                                                                                                                                   |
-| 0xFF | -                                       | Reserved                                                                                                                                                                                                                                                                                                                   |
+| 0x02 |                    -                    | Reserved                                                                                                                                                                                                                                                                                                                   |
+| ...  |                    -                    | Reserved                                                                                                                                                                                                                                                                                                                   |
+| 0xFF |                    -                    | Reserved                                                                                                                                                                                                                                                                                                                   |
 
 ### Example
 
@@ -441,6 +444,75 @@ Note that given examples use the following abbreviation to provide clear informa
 |  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST | ERR  | CRC 1 | CRC 2 |
 |:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:-----:|:-----:|
 | 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1  | 0x0C  |
+
+
+## [Control Table Backup (0x20)](#control-table-backup-0x20)
+
+### Description
+- Instruction to store current [Control Table] status data to a Backup area, or to restore EEPROM data.
+- The Control Table Backup works properly only if **Torque Enable** in RAM area is set as '0' (Torque Off status). If the Torque Enable is set as '1' (Torque On), Status Packet with [Result Fail](#error) will be returned.
+- The Control Table Backup is available from FW45 (for X430, X540 series), FW46 (for X330 series) and FW12 (for P series).
+- Available items in Control Table for data backup: 
+  - All Data in EERPOM 
+  - Velocity P.I Gains
+  - Position P.I.D Gains
+  - Feedforward 1st & 2nd Gains
+  - Profile Acceleration
+  - Profile Velocity
+  - Indirect Addresses (Except for DYNAMIXEL-P Series)
+
+{% capture howto_backup %}
+**Note**
+- See [Data Backup and Restore](/docs/en/software/dynamixel/dynamixel_wizard2/#data-backup-and-restore) for more details.
+- RAM data stored by Control Table Backup can be restored by using **Startup Configuration(60)**. see [How to Restore RAM Data](/docs/en/software/dynamixel/dynamixel_wizard2/#how-to-restore-ram-data).
+{% endcapture %}
+
+<div class="notice">{{ howto_backup | markdownify}}</div>
+
+### Parameters
+
+|  P1  |                 P2 ~ P5                 | Description                                                                                   |
+|:----:|:---------------------------------------:|:----------------------------------------------------------------------------------------------|
+| 0x01 | Fixed Values<br />(0x43 0x54 0x52 0x4C) | Store current Control Table status data to a Backup area                                      |
+| 0x02 | Fixed Values<br />(0x43 0x54 0x52 0x4C) | Restore EEPROM data from Backup area. <br> After processing packets, DYNAMIXEL reboots itself |
+| 0x03 |                   \-                    | Reserved                                                                                      |
+|  ⋯   |                   \-                    | Reserved                                                                                      |
+| 0xFF |                   \-                    | Reserved                                                                                      |
+
+### Example
+
+#### Example 1 Description
+
+ID 1(XC330-T288): Storing Control Table data in Backup area.
+
+#### Control Table Backup Packet
+
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST |  P1  |  P2  |  P3  |  P4  |  P5  | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x08 | 0x00 | 0x20 | 0x01 | 0x43 | 0x54 | 0x52 | 0x4C | 0x16 | 0xF5 |
+
+#### ID1 Status Packet
+
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST | ERR  | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1 | 0x0C |
+
+#### Example 2 Description
+
+ID1 (XC330-T288): Restoring EEPROM data stored in Backup area (DYNAMIXEL is rebooted after restoring data).
+
+#### Control Table Backup Packet
+
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST |  P1  |  P2  |  P3  |  P4  |  P5  | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x08 | 0x00 | 0x20 | 0x02 | 0x43 | 0x54 | 0x52 | 0x4C | 0x92 | 0xF5 |
+
+#### ID1 Status Packet
+
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST | ERR  | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1 | 0x0C |
+
 
 ## [Sync Read (0x82)](#sync-read-0x82)
 
@@ -542,6 +614,91 @@ Note that given examples use the following abbreviation to provide clear informa
 |  P5  |  P6  |  P7  |  P8  |  P9  | P10  | P11  | P12  | P13  | P14  | CRC 1 | CRC 2 |
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:-----:|
 | 0x01 | 0x96 | 0x00 | 0x00 | 0x00 | 0x02 | 0xAA | 0x00 | 0x00 | 0x00 | 0x82  | 0x87  |
+
+## [Fast Sync Read (0x8A)](#fast-sync-read-0x8a)
+
+### Description
+- Enhanced Instruction for faster communication compared to [Sync Read]
+- One Status Packet is structured and returned for all DYNAMIXELs if using Fast Sync Read Instruction regardless of number of DYNAMIXELs chained, as if one DYNAMIXEL returns [Status Packet].
+- Instruction Packet is formatted in the same way as Sync Read
+
+**Note**: [DYNAMIXEL Tips \| EEPROM and RAM Data Restoring Using Backup Funcion](https://www.youtube.com/watch?v=claLIK8omIQ)
+{: .notice}
+
+### Parameter
+
+| Instruction Packet | Description                               |
+|:------------------:|:------------------------------------------|
+|    Parameter 1     | Low-order byte from the starting address  |
+|    Parameter 2     | High-order byte from the starting address |
+|    Parameter 3     | Low-order byte from the data length(X)    |
+|    Parameter 4     | High-order byte from the data length(X)   |
+|   Parameter 4+1    | `1st Device` ID                           |
+|   Parameter 4+2    | `2nd Device` ID                           |
+|         ⋯          | ⋯                                         |
+|   Parameter 4+n    | `Nnd Device` ID                           |
+
+|  Status Packet   | Description                           |
+|:----------------:|:--------------------------------------|
+|   Parameter 1    | `1st Device` ID                       |
+|   Parameter 2    | `1st Device` First Byte               |
+|   Parameter 3    | `1st Device` Second Byte              |
+|        ⋯         | ⋯                                     |
+|   Parameter X    | `1st Device` X-th Byte                |
+|  Parameter X+1   | `1st Device` Low-order byte from CRC  |
+|  Parameter X+2   | `1st Device` High-order byte from CRC |
+|  Parameter X+3   | `2nd Device` Error                    |
+|  Parameter X+4   | `2nd Device` ID                       |
+| Parameter X+4+1  | `2nd Device` First Byte               |
+| Parameter X+4+2  | `2nd Device` Second Byte              |
+|        ⋯         | ⋯                                     |
+|  Parameter 2X+4  | `2nd Device` X-th Byte                |
+| Parameter 2X+4+1 | `2nd Device` Low-order byte from CRC  |
+| Parameter 2X+4+2 | `2nd Device` High-order byte from CRC |
+|        ⋯         | ⋯                                     |
+|  Parameter nX+4  | `Nnd Device` X-th Byte                |
+
+**Note**: [CRC] values are used for internal calculation in DYNAMIXEL to confirm packet integrity between DYNAMIXELs. You can let the main controller check CRC only at the end of Status Packet.
+{: .notice}
+
+**Note**: Each device respectively returns a particular part of Status Packet in response to Fast Sync Read Instruction. For more details, see Example below.
+{: .notice}
+
+**Note**: Fast Sync Read Status Packet does not perform Byte Stuffing(0xFD) process.
+{: .notice}
+
+### Example 
+
+#### Example  Description 
+
+- ID3(XC330-T288) : Present Position(132, 0x0084, 4[byte]) = 166(0x000000A6)
+- ID7(XC330-T288) : Present Position(132, 0x0084, 4[byte]) = 2,079(0x0000081F)
+- ID4(XC330-T288) : Present Position(132, 0x0084, 4[byte]) = 1,023(0x000003FF)
+
+#### Fast Sync Read Instruction Packet
+
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST |  P1  |  P2  |  P3  |  P4  |  P5  |  P6  |  P7  | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 |   0xFE    | 0x0A | 0x00 | 0x8A | 0x84 | 0x00 | 0x04 | 0x00 | 0x03 | 0x07 | 0x04 | 0x20 | 0xF2 |
+
+#### ID 3 Status Packet
+
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST | ERR  | ID1  |  D1  |  D2  |  D3  |  D4  | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 |   0xFE    | 0x19 | 0x00 | 0x55 | 0x00 | 0x03 | 0xA6 | 0x00 | 0x00 | 0x00 | 0x84 | 0x08 |
+
+#### ID 7 Status Packet
+
+| ERR  | ID2  |  D1  |  D2  |  D3  |  D4  | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0x00 | 0x07 | 0x1F | 0x08 | 0x00 | 0x00 | 0x16 | 0xCA |
+
+#### ID 4 Status Packet
+
+| ERR  | ID3  |  D1  |  D2  |  D3  |  D4  | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0x00 | 0x04 | 0xFF | 0x03 | 0x00 | 0x00 | 0xD1 | 0x9E |
+
 
 ## [Bulk Read (0x92)](#bulk-read-0x92)
 
@@ -658,6 +815,97 @@ Note that given examples use the following abbreviation to provide clear informa
 | 0x02 | 0x1F | 0x00 | 0x01 | 0x00 | 0x50 | 0xB7  | 0x68  |
 
 
+## [Fast Bulk Read (0x9A)](#fast-bulk-read-0x9a)
+
+### Description
+- Enhanced Instruction for faster communication compared to [Bulk Read]. 
+- One Status Packet is structured and returned for all DYNAMIXELs using Fast Bulk Read Instruction regardless of number of DYNAMIXELs chained, as if one DYNAMIXEL returns Status Packet.
+- Instruction Packet is formatted in the same way as Bulk Read
+
+**Note**: [DYNAMIXEL Tips \| EEPROM and RAM Data Restoring Using Backup Funcion](https://www.youtube.com/watch?v=claLIK8omIQ)
+{: .notice}
+
+### Parameters
+
+| Instruction Packet | Description                                            |
+|:------------------:|:-------------------------------------------------------|
+|    Parameter 1     | `1st Device` ID                                        |
+|    Parameter 2     | `1st Device` Low-order byte from the starting address  |
+|    Parameter 3     | `1st Device` High-order byte from the starting address |
+|    Parameter 4     | `1st Device` Low-order byte from the data length(X1)   |
+|    Parameter 5     | `1st Device` High-order byte from the data length(X1)  |
+|    Parameter 6     | `2nd Device` ID                                        |
+|    Parameter 7     | `2nd Device` Low-order byte from the starting address  |
+|    Parameter 8     | `2nd Device` High-order byte from the starting address |
+|    Parameter 9     | `2nd Device` Low-order byte from the data length(X2)   |
+|    Parameter 10    | `2nd Device` High-order byte from the data length(X2)  |
+
+| Status Packet                 | Description                           |
+|:------------------------------|:--------------------------------------|
+| Parameter 1                   | `1st Device` ID                       |
+| Parameter 2                   | `1st Device` First Byte               |
+| Parameter 3                   | `1st Device` Second Byte              |
+| ⋯                             | ⋯                                     |
+| Parameter X1                  | `1st Device` X1-th Byte               |
+| Parameter X1+1                | `1st Device` Low-order byte from CRC  |
+| Parameter X1+2                | `1st Device` High-order byte from CRC |
+| Parameter X1+3                | `2nd Device` Error                    |
+| Parameter X1+4                | `2nd Device` ID                       |
+| Parameter X1+4+1              | `2nd Device` First Byte               |
+| Parameter X1+4+2              | `2nd Device` Second Byte              |
+| ⋯                             | ⋯                                     |
+| Parameter X1+4+X2             | `2nd Device` X2-th Byte               |
+| Parameter X1+4+X2+1           | `2nd Device` Low-order byte from CRC  |
+| Parameter X1+4+X2+2           | `2nd Device` High-order byte from CRC |
+| ⋯                             | ⋯                                     |
+| Parameter X1+4+X2+ <br>⋯ 4+Xn | `Nnd Device` Xn-th Byte               |
+
+**Note**: [CRC] values are used for internal calculation in DYNAMIXEL to confirm packet integrity between DYNAMIXELs. You can let the main controller check CRC only at the end of Status Packet.
+{: .notice}
+
+**Note**: Each device respectively returns a particular part of Status Packet in response to Fast Bulk Read Instruction. For more details, see Example below.
+{: .notice}
+
+**Note**: Status Packet responded from Fast Bulk Read does not perform Byte Stuffing(0xFD) process.
+{: .notice}
+
+### Example
+
+#### Example Description
+
+- ID3(XC330-T288) : Present Position(132, 0x0084, 4[byte]) = 166(0x000000A6)
+- ID7(XC330-T288) : Present PWM(124, 0x007C, 2[byte]) = 421(0x01A5)
+- ID4(XC330-T288) : Present Temperature(146, 0x0092, 1[byte]) = 31(0x1F)
+
+#### Fast Bulk Read Instruction Packet
+
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST |  P1  |  P2  |  P3  |  P4  |  P5  |  P6  |  P7  |  P8  |
+|:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 |   0xFE    | 0x12 | 0x00 | 0x9A | 0x03 | 0x84 | 0x00 | 0x04 | 0x00 | 0x07 | 0x7C | 0x00 |
+
+|  P9  | P10  | P11  | P12  | P13  | P14  | P15  | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0x02 | 0x00 | 0x04 | 0x92 | 0x00 | 0x01 | 0x00 | 0x20 | 0xF2 |
+
+#### ID 3 Status Packet
+
+|  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST | ERR  | ID1  |  D1  |  D2  |  D3  |  D4  | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 |   0xFE    | 0x14 | 0x00 | 0x55 | 0x00 | 0x03 | 0xA6 | 0x00 | 0x00 | 0x00 | 0x67 | 0xA4 |
+
+#### ID 7 Status Packet
+
+| ERR  | ID2  |  D1  |  D2  | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0x00 | 0x07 | 0xA5 | 0x01 | 0x24 | 0x74 |
+
+#### ID 4 Status Packet
+
+| ERR  | ID2  |  D1  | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|
+| 0x00 | 0x04 | 0x1F | 0xD9 | 0xC1 |
+
+[Control Table]: /docs/en/faq/faq_dynamixel/
 [Instruction Packet]: #instruction-packet
 [Status Packet]: #status-packet
 [Ping]: #ping-0x01
@@ -668,9 +916,12 @@ Note that given examples use the following abbreviation to provide clear informa
 [Factory Reset]: #factory-reset-0x06
 [Reboot]: #reboot-0x08
 [Clear]: #clear-0x10
+[Control Table Backup]: #control-table-backup-0x20
 [Sync Read]: #sync-read-0x82
 [Sync Write]: #sync-write-0x83
 [Bulk Read]: #bulk-read-0x92   
 [Bulk Write]: #bulk-write-0x93
-
+[Fast Sync Read]: #fast-sync-read-0x8a
+[Fast Bulk Read]: #fast-bulk-read-0x9a
+[CRC]: #crc
 [Compatibility Table]: /docs/en/popup/faq_protocol_compatibility_table/

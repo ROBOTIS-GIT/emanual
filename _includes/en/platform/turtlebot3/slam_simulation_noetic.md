@@ -16,9 +16,8 @@ $ roslaunch turtlebot3_gazebo turtlebot3_world.launch
 ```
 
 <details>
-<summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) Read more about **How to load TurtleBot3 House**
-{: .notice--success}
+<summary>
+![](/assets/images/icon_unfold.png) Read more about **How to load TurtleBot3 House**
 </summary>
 ```bash
 $ export TURTLEBOT3_MODEL=burger

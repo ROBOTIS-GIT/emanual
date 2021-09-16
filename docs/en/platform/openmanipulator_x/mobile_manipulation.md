@@ -10,10 +10,10 @@ sidebar:
   title: "OpenMANIPULATOR-X"
   nav: "openmanipulator_x"
 product_group: openmanipulator_x
-page_number: 22
+page_number: 15
 ---
 
-<div style="counter-reset: h1 21"></div>
+<div style="counter-reset: h1 10"></div>
 
 # [Mobile Manipulation](#mobile-manipulation)
 

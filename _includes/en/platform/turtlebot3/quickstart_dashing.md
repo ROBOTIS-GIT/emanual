@@ -79,9 +79,8 @@ $ sudo apt install ros-dashing-turtlebot3
 ```
 
 <details>
-<summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) **Click here to expand more details about building TurtleBot3 package from source.**
-{: .notice--success}
+<summary>
+![](/assets/images/icon_unfold.png) **Click here to expand more details about building TurtleBot3 package from source.**
 </summary>
 In case you need to build the TurtleBot3 packages with source code, please use the commands below.  
 Building the source code provides most up to date contents which may have resolved known issues.  
@@ -91,6 +90,7 @@ $ sudo apt remove ros-dashing-turtlebot3-msgs
 $ sudo apt remove ros-dashing-turtlebot3
 $ mkdir -p ~/turtlebot3_ws/src
 $ cd ~/turtlebot3_ws/src/
+$ git clone -b dashing-devel https://github.com/ROBOTIS-GIT/DynamixelSDK.git
 $ git clone -b dashing-devel https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
 $ git clone -b dashing-devel https://github.com/ROBOTIS-GIT/turtlebot3.git
 $ colcon build --symlink-install

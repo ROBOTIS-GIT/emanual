@@ -170,6 +170,8 @@ Reads the output value of the user-created sensor.
 - This section describes specific parameters for executing motions downloaded on controller via R+ Motion.
 - Only specific controllers support motion control. (Supported controllers : [CM-200], [CM-5], [CM-510], [CM-530], [CM-550], [CM-700], [OpenCM 9.04])
 
+![](/assets/images/sw/rplus_task3/motion_control_tab_menu.png)
+
 #### Motion Index Number
 Executes a motion by calling the corresponding Motion Index Number. If the Motion is being executed, you can read the current Motion Index Number.
 
@@ -188,6 +190,12 @@ The following is an example of using the Motion Index Number.
  
 The more information on Key-Frame, Motion Unit and Motion is avilable at [Motion Programming](/docs/en/software/rplustask3/motion_programming/#motion-programming)
 {: .notice}
+
+#### Motion Next Page
+
+Assin a next motion unit to the current running motion unit. The Motion Next Page can be used to link two motions for seamless motion flow.
+
+![Motion_Link](/assets/images/sw/rplus_task3/Motion_Next_Page.png)
 
 #### Motion Status
 Returns True if motion is being executed, returns False if motion is not being executed.

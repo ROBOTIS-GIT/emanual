@@ -34,9 +34,8 @@ The TurtleBot3’s core technology is [SLAM][slam], [Navigation][navigation] and
 **How to contribute to ROS and TurtleBot?**
 
 <details>
-<summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) TurtleBot3 is a collaboration project...
-{: .notice--success}
+<summary>
+![](/assets/images/icon_unfold.png) TurtleBot3 is a collaboration project...
 </summary>
 TurtleBot3 is a collaboration project among [Open Robotics][open_robotics], [ROBOTIS][robotis], and more partners like [The Construct][the_construct], [Intel][intel], [Onshape][onshape], [OROCA][oroca], [AuTURBO][auturbo], [ROS in Robotclub Malaysia][ros_in_robotclub_malaysia], [Astana Digital][astana digital], [Polariant Experiment][polariant_experiment], [Tokyo University of Agriculture and Technology, GVlab][gvlab], [Networked Control Robotics Lab at National Chiao Tung University][nctu], [SIM Group at TU Darmstadt][sim_group]. The Open Robotics is in charge of software and community activities, while ROBOTIS is in charge of manufacturing and global distribution.
 
@@ -66,10 +65,13 @@ If you are interested in partnership with us to realize open source robotics, pl
 ## [Notices](#notices)
 
 <details>
-<summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) Checkout ROS and TurtleBot3 Publications
-{: .notice--success}
+<summary>
+![](/assets/images/icon_unfold.png) Checkout ROS and TurtleBot3 Publications
 </summary>
+- 09/06/2021 TurtleBot3 is upgraded with Raspberry Pi 4!!!
+- 05/28/2021 [TurtleBot3 Autorace 2020 now runs with ROS Noetic](https://www.youtube.com/playlist?list=PLRG6WP3c31_WsNjwmYID2ulX5g4WcjKbI)
+- 05/24/2021 [ROS 2 Galactic Geochelone Release](https://discourse.ros.org/t/ros-2-galactic-geochelone-released/20559)
+- 12/20/2020 [Webots supports TurtleBot3 with ROS 2 Foxy](https://discourse.ros.org/t/turtlebot3-and-webots/17880)
 - 10/15/2020 [ROS 2 Foxy Release](https://discourse.ros.org/t/new-packages-for-foxy-fitzroy-2020-11-05/17140)
 - 08/21/2019 [ROS 2 Dashing Release](https://discourse.ros.org/t/tb3-ros-2-dashing-release/10364)
 - 08/20/2019 [Navigation2 Dashing release - demo video](https://discourse.ros.org/t/navigation2-dashing-release-demo-video/10349)
@@ -131,10 +133,10 @@ If you are interested in partnership with us to realize open source robotics, pl
 </details>
 
 <details>
-<summary id="summary_for_foreins" style="outline: inherit;">
-![](/assets/click_here.png) Click to expand the recent news
-{: .notice--success}
+<summary>
+![](/assets/images/icon_unfold.png) Click to expand the recent news
 </summary>
+- 11/12/2020 [ROS World 2020: ROBOTIS TurtleBot3 Parallel Session](https://vimeo.com/480460365)
 - 07/22/2019 [Top 10 ROS-based robotics companies in 2019, The Robot Report
   ](https://www.therobotreport.com/top-10-ros-based-robotics-companies-2019/)
 - 12/10/2018 [Robot Gift Guide 2018, IEEE Spectrum](https://spectrum.ieee.org/automaton/robotics/home-robots/robot-gift-guide-2018)
