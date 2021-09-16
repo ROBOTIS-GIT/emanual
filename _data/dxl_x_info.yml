@@ -614,7 +614,7 @@ xw540-t260:
   gear_material:      "Full Metal Gear"
   standbycurrent:     *standbycurrent_40
 
-xw430-t330:
+xw430-t333:
   mcu:                *mcu
   encoder:            *encoder
   motor:              *motor
