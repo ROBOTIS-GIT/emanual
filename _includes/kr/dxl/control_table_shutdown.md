@@ -82,7 +82,7 @@ Revision: PRO+ > DYNAMIXEL-P.
 
 {% endif %}
 
-{% if page.product_group=='dxl_xw540' %}
+{% if page.product_group=='dxl_xw540' or page.product_group=='dxl_xw430' %}
 {% capture shutdown_uptodate_firmware_released_dxl %}
 **참고** : Shutdown이 발생할 경우 장치를 **장치를 REBOOT** 시켜 주세요
 -  H/W REBOOT : 전원을 껐다 켜주세요.

@@ -14,27 +14,27 @@
 |     Bit 7(0x80)     |                      -              | 미사용, 항상 '0'                                                                                                                                                                                           |
 |     Bit 6(0x40)     |                      -              | 미사용, 항상 '0'                                                                                                                                                                                           |
 |     Bit 5(0x20)     |                      -              | 미사용, 항상 '0'                                                                                                                                                                                           |
-|     Bit 4(0x10)     |                      -              | 미사용, 항상 '0'                                                                                                                                                                                           |{% if page.product_group=='xl330' or page.product_group=='xc330' or page.product_group=='dxl_x430' or page.product_group=='dxl_x540' or page.product_group=='dxl_xw540' or page.product_group=='dxl_xl430' %}
+|     Bit 4(0x10)     |                      -              | 미사용, 항상 '0'                                                                                                                                                                                           |{% if page.product_group=='xl330' or page.product_group=='xc330' or page.product_group=='dxl_x430' or page.product_group=='dxl_x540' or page.product_group=='dxl_xw540' or page.product_group=='dxl_xw430' or page.product_group=='dxl_xl430' %}
 |     Bit 3(0x08)     |                      Torque On by Goal Update              | **[0]** [Torque Enable(64)]이 '1' 일때만 Goal 지령에 동작 수행 <br> **[1]** [Torque Enable(64)]값이 0이더라도, 지령을 받으면 자동으로 값이 '1'로 변경되고, 지령수행.                                |{% else %}
-|     Bit 3(0x08 )    |                      -              | 미사용, 항상 '0'                                                                                                                                                                                            |{% endif %}   {% if page.product_group=='xl330' or page.product_group=='xc330' or page.product_group=='dxl_x430' or page.product_group=='dxl_x540' or page.product_group=='dxl_xw540' or page.product_group=='dxl_xl430' or page.product_group=='dxl_mx2' %}
+|     Bit 3(0x08 )    |                      -              | 미사용, 항상 '0'                                                                                                                                                                                            |{% endif %}   {% if page.product_group=='xl330' or page.product_group=='xc330' or page.product_group=='dxl_x430' or page.product_group=='dxl_x540' or page.product_group=='dxl_xw540' or page.product_group=='dxl_xw430' or page.product_group=='dxl_xl430' or page.product_group=='dxl_mx2' %}
 |     Bit 2(0x04)     |           Profile Configuration     | **[0]** Velocity-based Profile: 속도를 기준으로 Profile 생성<br />**[1]** Time-based Profile: 시간을 기준으로 Profile 생성<br />※ 자세한 사항은 [Profile](#profile)를 참고하세요.                                       |{% else %}
 |     Bit 2(0x04)     |                      -              | 미사용, 항상 '0'                                                                                                                                                                                           |{% endif %}{% if page.product_group=='dxl_x540' or page.product_group=='dxl_ex' or page.ref=='mx-106-2' or page.ref=='mx-106' %}
 |     Bit 1(0x02)     | Master/Slave Mode<br />(Dual Joint) | **[0]** Master Mode: 마스터 다이나믹셀로 동작합니다.<br />**[1]** Slave Mode: 슬레이브 다이나믹셀로 동작합니다.                                                                                                          |{% else %}
 |     Bit 1(0x02)     |                      -              | 미사용, 항상 '0'                                                                                                                                                                                           |{% endif %}
 |     Bit 0(0x01)     |        Normal/Reverse Mode          | **[0]** Normal Mode: 반시계방향(CCW)이 양수값, 시계방향(CW)이 음수값<br />**[1]** Reverse Mode: 시계방향(CW)이 양수값, 반시계방향(CCW)이 음수값                                                                           |
 
-{% if page.product_group=='dxl_mx2' or page.product_group=='dxl_x540' or page.product_group=='dxl_xw540' or page.product_group=='dxl_x430' or page.product_group=='dxl_xl430' %}
+{% if page.product_group=='dxl_mx2' or page.product_group=='dxl_x540' or page.product_group=='dxl_xw540' or page.product_group=='dxl_xw430' or page.product_group=='dxl_x430' or page.product_group=='dxl_xl430' %}
 **참고** : Time-based Profile은 펌웨어 V42부터 지원합니다.
 {: .notice}
 {% else %}{% endif %}
 
-{% if page.product_group=='xl330' or page.product_group=='xc330' or page.product_group=='dxl_x430' or page.product_group=='dxl_x540' or page.product_group=='dxl_xw540' or page.product_group=='dxl_xl430' %}
+{% if page.product_group=='xl330' or page.product_group=='xc330' or page.product_group=='dxl_x430' or page.product_group=='dxl_x540' or page.product_group=='dxl_xw540' or page.product_group=='dxl_xw430' or page.product_group=='dxl_xl430' %}
 **참고** : Torque On by Goal Update는 {{ firmware_version_torque_on_by_goal_update }} 부터 지원합니다.
 {: .notice}
 {% else %}{% endif %}
 
 **참고** : Drive Mode(10)의 0번 비트(Normal/Reverse Mode)를 설정하면, 다이나믹셀의 기본동작 방향이 반전됩니다.  
-따라서 다이나믹셀의 {% if page.product_group=='dxl_mx2' or page.product_group=='dxl_x540' or page.product_group=='dxl_xw540' %}**Position**, **Velocity**, **Current**, **PWM**값{% else %}**Goal Position**, **Present Position**{% endif %}의 방향이 반전됩니다.  
+따라서 다이나믹셀의 {% if page.product_group=='dxl_mx2' or page.product_group=='dxl_x540' or page.product_group=='dxl_xw540' or page.product_group=='dxl_xw430' %}**Position**, **Velocity**, **Current**, **PWM**값{% else %}**Goal Position**, **Present Position**{% endif %}의 방향이 반전됩니다.  
 대칭구조의 관절을 구성할 때 편리하게 사용할 수 있습니다
 {: .notice}
 
