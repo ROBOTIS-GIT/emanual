@@ -18,7 +18,7 @@ Be aware of differences between the Secondary ID(12) and ID(7) by reading the fo
 As mentioned, the Secondary ID(12) can be assigned with the same values unlike the ID(7).
 See the following Secondary ID(12) example to understand the address properly. Note that The assigned ID(7) on each DYNAMIXELs is '1', '2', '3', '4' or '5' and they are not overlapped to be assigned.
 
-{% if page.product_group=='dxl_xw540' %}
+{% if page.product_group=='dxl_xw540' or page.product_group=='dxl_xw430'%}
 
 1. Set Secondary ID of five DYNAMIXELs (each of Assigned ID(7)  is '1','2','3','4' or '5' not overlapped) to '5'
 2. Send Write Instruction Packet([ID(7)] = 1, [Torque Enable(64)] = 1).

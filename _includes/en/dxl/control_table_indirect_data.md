@@ -44,7 +44,7 @@ Indirect Address and Indirect Data are useful when accessing two remote addresse
 2. Set Indirect Data 1(224) to ‘1’ : LED(65) also becomes '1' and LED is turned on.
 3. Set Indirect Data 1(224) to ‘0’ : LED(65) also becomes ‘0’ and LED is turned off.
 
-{% if page.product_group=='dxl_xw540' %}
+{% if page.product_group=='dxl_xw540' or page.product_group=='dxl_xw430'%}
 **NOTE**: XW series does not use [LED(65)].
 {: .notice}
 {% endif %}

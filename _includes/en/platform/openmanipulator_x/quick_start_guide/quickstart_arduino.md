@@ -10,6 +10,9 @@ User can write the code in **Arduino IDE** and simulate or control using **Proce
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fT1Wv6qHknI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+**NOTE** : Processing source code is tested in Processing **v3.5.4**.
+{: .notice} 
+
 1. Install Arduino IDE and setup OpenCR developing environment.
   - [Setup Arduino IDE for OpenCR 1.0 (Windows)](/docs/en/parts/controller/opencr10/#install-on-windows)
   - [Setup Arduino IDE for OpenCR 1.0 (Linux)](/docs/en/parts/controller/opencr10/#install-on-linux)
@@ -49,6 +52,9 @@ Now let's setup the Processing GUI tool for easier control of OpenMANIPULATOR-X.
 1. Download and install the Processing.
 
     - ![](/assets/images/icon_download.png) [https://processing.org/download/](https://processing.org/download/)
+
+    **NOTE** : Processing source code is tested in Processing **v3.5.4**.
+    {: .notice} 
 
 2. Launch Processing and go to `Tools` > `Add Tool..`.
 

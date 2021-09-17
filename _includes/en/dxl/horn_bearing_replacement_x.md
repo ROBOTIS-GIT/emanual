@@ -6,7 +6,7 @@ The horn is installed on the front wheel gear serration of the DYNAMIXEL whereas
 
 When installing horn, carefully match the align markings on the horn and the wheel gear serration.
 
-{% if page.product_group=='dxl_xw540' %}
+{% if page.product_group=='dxl_xw540' or page.product_group=='dxl_xw430' %}
 
 ![](/assets/images/dxl/x/xw/xw540_marking.png)
 

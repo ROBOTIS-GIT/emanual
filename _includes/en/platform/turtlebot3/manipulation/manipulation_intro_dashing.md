@@ -6,7 +6,7 @@
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-The contents in e-Manual can be updated without a previous notice. Therefore, some video may differ from the contents in e-Manual.
+The contents in e-Manual are subject to be updated without a prior notice. Therefore, some video may differ from the contents in e-Manual.
 {: .notice--warning}
 
 **TIP**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. The shortcut key for running the terminal is `Ctrl`-`Alt`-`T`.

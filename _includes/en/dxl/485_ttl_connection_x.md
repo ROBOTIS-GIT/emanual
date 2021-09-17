@@ -20,7 +20,7 @@ To control the DYNAMIXEL actuators, the main controller needs to convert its UAR
 **NOTE**: Above circuit is designed for 5V or 5V tolerant MCU. Otherwise, use a Level Shifter to match the voltage of MCU.
 {: .notice}
 
-{% if page.product_group=='dxl_xw540' %}  
+{% if page.product_group=='dxl_xw540' or page.product_group=='dxl_xw430' %}  
 
 ![](/assets/images/dxl/x/xw/xw_series_485_pin.png)  
 > XW540-Series Connector
