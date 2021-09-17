@@ -6,7 +6,7 @@
 {% assign firmware_version_backup = "펌웨어 v45" %}
 {% endif %}
 
-Control table Backup 패킷을 통하여 저장된 컨트롤 테이블 데이터의 유무를 나타냅니다.
+[Control table Backup 패킷](/docs/kr/dxl/protocol2/#control-table-backup-0x20)을 통하여 저장된 컨트롤 테이블 데이터의 유무를 나타냅니다.
 
 | 값 | 상세 설명                            |
 |:--:|:-------------------------------------|
