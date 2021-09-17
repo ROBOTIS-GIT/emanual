@@ -641,7 +641,8 @@ xw430-t333:
   physicalconnection: *rs485_connection
   id:                 *id
   feedback:           *feedback
-  material:           Full Metal Gear / Full Metal Case
+  case_material:      "Full Metal Case"
+  gear_material:      "Full Metal Gear"
   standbycurrent:     *standbycurrent_40
 
 xw430-t200:
@@ -671,7 +672,8 @@ xw430-t200:
   physicalconnection: *rs485_connection
   id:                 *id
   feedback:           *feedback
-  material:           Full Metal Gear / Full Metal Case
+  case_material:      "Full Metal Case"
+  gear_material:      "Full Metal Gear"
   standbycurrent:     *standbycurrent_40
 
 xm540-w150:
