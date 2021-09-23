@@ -9,7 +9,7 @@ $ cd ~/catkin_ws/src/
 $ git clone https://github.com/ROBOTIS-GIT/turtlebot3_manipulation.git
 $ git clone https://github.com/ROBOTIS-GIT/turtlebot3_manipulation_simulations.git
 $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_dependencies.git
-$ sudo apt install ros-kinetic-ros-control* && ros-kinetic-control* && ros-kinetic-moveit*
+$ sudo apt install ros-melodic-ros-control* && ros-melodic-control* && ros-melodic-moveit*
 $ cd ~/catkin_ws && catkin_make
 ```
 
@@ -21,7 +21,7 @@ $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3.git
 $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3_msgs.git
 $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3_simulations.git
 $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_perceptions.git
-$ sudo apt-get install ros-kinetic-smach* ros-kinetic-ar-track-alvar ros-kinetic-ar-track-alvar-msgs
+$ sudo apt-get install ros-melodic-smach* ros-melodic-ar-track-alvar ros-melodic-ar-track-alvar-msgs
 $ cd ~/catkin_ws && catkin_make
 ```
 
