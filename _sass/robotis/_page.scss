@@ -3,6 +3,12 @@ html {
   -webkit-print-color-adjust: exact;
 }
 
+#tabs { 
+  position: sticky;
+  top: 10px;
+  z-index: 10; // Make sure Tab contents is not position behind any contents in a page aside from Nav menu (as well as Dropdown items appearing pointing Nav item)
+}
+
 .tab_contents {
   display: none;
 }
@@ -12,7 +18,7 @@ html {
 }
 
 .tab {
-  width: 5.4rem;
+  width: fit-content;
   font-size: $type-size-5;
   position: relative;
   padding: 0.5em;
