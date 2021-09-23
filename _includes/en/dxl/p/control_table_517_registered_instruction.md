@@ -2,7 +2,7 @@
 | Value | Description                                  |
 |:-----:|:---------------------------------------------|
 |   0   | No instruction registered by REG_WRITE.      |
-|   1   | Instruction registered by REG_WRITE exsists. |
+|   1   | Instruction registered by REG_WRITE exists. |
 
 **NOTE** : If ACTION instruction is executed, the Registered Instruction(517) will be changed to 0.
 {: .notice}

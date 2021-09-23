@@ -46,39 +46,65 @@ REBOOT is the only method to reset [{{ torque_enable }}] to ‘1’(Torque ON) a
 {% if page.product_group=='dxl_ax' or page.product_group=='dxl_dx' or page.product_group=='dxl_ex' or page.product_group=='dxl_rx' or page.product_group=='dxl_mx' %}{% else %} Check [Alert Bit(0x80)] in an error field of Status Packet or a present status via [{{ hardware_error_status }}]. {% endif %} The followings are detectable situations.
 
 {% if page.product_group=='dxl_ax' or page.product_group=='dxl_dx' or page.product_group=='dxl_ex' or page.product_group=='dxl_rx' or page.product_group=='dxl_mx' %}
-|  Bit  |        Item         | Description                                                                                                             |
-|:-----:|:-------------------:|:------------------------------------------------------------------------------------------------------------------------|
-| Bit 7 |          0          | -                                                                                                                       |
-| Bit 6 |  Instruction Error  | Detects that undefined Instruction is transmitted or the ACTION command is delivered without the REG_WRITE command      |
-| Bit 5 |   Overload Error    | Detects that persistent load exceeds maximum output                                          |
-| Bit 4 |   CheckSum Error    | Detects that the Checksum of the transmitted Instruction Packet is invalid                                              |
-| Bit 3 |     Range Error     | Detects that the command is given beyond the range of usage                                                             |
-| Bit 2 |  Overheating Error  | Detects that the internal temperature exceeds the set temperature                                                       |
-| Bit 1 |  Angle Limit Error  | Detects that Goal Position is written with the value that is not between CW Angle Limit and CCW Angle Limit             |
-| Bit 0 | Input Voltage Error | Detects that input voltage exceeds the configured operating voltage                      |
+|  Bit  |        Item         | Description                                                                                                        |
+|:-----:|:-------------------:|:-------------------------------------------------------------------------------------------------------------------|
+| Bit 7 |          0          | -                                                                                                                  |
+| Bit 6 |  Instruction Error  | Detects that undefined Instruction is transmitted or the ACTION command is delivered without the REG_WRITE command |
+| Bit 5 |   Overload Error    | Detects that persistent load exceeds maximum output                                                                |
+| Bit 4 |   CheckSum Error    | Detects that the Checksum of the transmitted Instruction Packet is invalid                                         |
+| Bit 3 |     Range Error     | Detects that the command is given beyond the range of usage                                                        |
+| Bit 2 |  Overheating Error  | Detects that the internal temperature exceeds the set temperature                                                  |
+| Bit 1 |  Angle Limit Error  | Detects that Goal Position is written with the value that is not between CW Angle Limit and CCW Angle Limit        |
+| Bit 0 | Input Voltage Error | Detects that input voltage exceeds the configured operating voltage                                                |
 {% elsif page.product_group=='dxl_pro' or page.product_group=='dxl_pro_a' or page.product_group=='dxl_p' %}
-|  Bit  |               Item               | Description                                                                     |
-|:-----:|:--------------------------------:|:--------------------------------------------------------------------------------|
-| Bit 7 |                -                 | Not used, always '0'                                                            |
-| Bit 6 |                -                 | Not used, always '0'                                                            |
+|  Bit  |               Item               | Description                                                                      |
+|:-----:|:--------------------------------:|:---------------------------------------------------------------------------------|
+| Bit 7 |                -                 | Not used, always '0'                                                             |
+| Bit 6 |                -                 | Not used, always '0'                                                             |
 | Bit 5 |     Overload Error(Default)      | Detects that persistent load exceeds maximum output                              |
 | Bit 4 | Electrical Shock Error(Default)  | Detects electric shock on the circuit or insufficient power to operate the motor |
 | Bit 3 |   Motor Encoder Error(Default)   | Detects malfunction of the motor encoder                                         |
-| Bit 2 |        Overheating Error         | Detects that internal temperature exceeds the configured operating temperature        |
-| Bit 1 | Motor Hall Sensor Error(Default) | Detects that Motor hall sensor value exceeds normal range                                    |
-| Bit 0 |       Input Voltage Error        | Detects that input voltage exceeds the configured operating voltage                   |
+| Bit 2 |        Overheating Error         | Detects that internal temperature exceeds the configured operating temperature   |
+| Bit 1 | Motor Hall Sensor Error(Default) | Detects that Motor hall sensor value exceeds normal range                        |
+| Bit 0 |       Input Voltage Error        | Detects that input voltage exceeds the configured operating voltage              |
+{% elsif page.product_group=='xl330' or page.ref=='xc330-m181' or page.ref=='xc330-m288' %}
+
+|  Bit  |              Item               | Description                                                                      |
+|:-----:|:-------------------------------:|:---------------------------------------------------------------------------------|
+| Bit 7 |                -                | Unused, Always '0'                                                               |
+| Bit 6 |                -                | Unused, Always '0'                                                               |
+| Bit 5 |     Overload Error(default)     | Detects that persistent load that exceeds maximum output                         |
+| Bit 4 | Electrical Shock Error(default) | Detects electric shock on the circuit or insufficient power to operate the motor |
+| Bit 3 |                -                | -                                                                                |
+| Bit 2 |   Overheating Error(default)    | Detects that internal temperature exceeds the configured operating temperature   |
+| Bit 1 |                -                | Unused, Always '0'                                                               |
+| Bit 0 |  Input Voltage Error (default)  | Detects that input voltage exceeds the configured operating voltage              |
+
+{% elsif page.ref=='xc330-t181' or page.ref=='xc330-t288' %}
+
+|  Bit  |              Item               | Description                                                                      |
+|:-----:|:-------------------------------:|:---------------------------------------------------------------------------------|
+| Bit 7 |                -                | Unused, Always '0'                                                               |
+| Bit 6 |                -                | Unused, Always '0'                                                               |
+| Bit 5 |     Overload Error(default)     | Detects that persistent load that exceeds maximum output                         |
+| Bit 4 | Electrical Shock Error(default) | Detects electric shock on the circuit or insufficient power to operate the motor |
+| Bit 3 |                -                | -                                                                                |
+| Bit 2 |        Overheating Error        | Detects that internal temperature exceeds the configured operating temperature   |
+| Bit 1 |                -                | Unused, Always '0'                                                               |
+| Bit 0 |  Input Voltage Error (default)  | Detects that input voltage exceeds the configured operating voltage              |
+
 {% else %}
-|  Bit  |                                                           Item                                                            | Description                                                                     |
-|:-----:|:-------------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------|
-| Bit 7 |                                                             -                                                             | Unused, Always '0'                                                              |
-| Bit 6 |                                                             -                                                             | Unused, Always '0'                                                              |
-| Bit 5 |                                                  Overload Error(default)                                                  | Detects that persistent load that exceeds maximum output                              |
-| Bit 4 |                                              Electrical Shock Error(default)                                              | Detects electric shock on the circuit or insufficient power to operate the motor |
-| Bit 3 |                                                    Motor Encoder Error                                                    | Detects malfunction of the motor encoder                                         |
-| Bit 2 |                                                Overheating Error(default)                                                 | Detects that internal temperature exceeds the configured operating temperature        |
-| Bit 1 |                                                             -                                                             | Unused, Always '0'                                                              |{% if page.product_group=='xl330' %}
-| Bit 0 |                                                Input Voltage Error (default)                                              | Detects that input voltage exceeds the configured operating voltage                   |{% else %}
-| Bit 0 |                                                   Input Voltage Error                                                     | Detects that input voltage exceeds the configured operating voltage                   |{% endif %}
+|  Bit  |              Item               | Description                                                                                                           |
+|:-----:|:-------------------------------:|:----------------------------------------------------------------------------------------------------------------------|
+| Bit 7 |                -                | Unused, Always '0'                                                                                                    |
+| Bit 6 |                -                | Unused, Always '0'                                                                                                    |
+| Bit 5 |     Overload Error(default)     | Detects that persistent load that exceeds maximum output                                                              |
+| Bit 4 | Electrical Shock Error(default) | Detects electric shock on the circuit or insufficient power to operate the motor                                      |
+| Bit 3 |       Motor Encoder Error       | Detects malfunction of the motor encoder                                                                              |
+| Bit 2 |   Overheating Error(default)    | Detects that internal temperature exceeds the configured operating temperature                                        |
+| Bit 1 |                -                | Unused, Always '0'                                                              |{% if page.product_group=='xl330' %} |
+| Bit 0 |  Input Voltage Error (default)  | Detects that input voltage exceeds the configured operating voltage                   |{% else %}                     |
+| Bit 0 |       Input Voltage Error       | Detects that input voltage exceeds the configured operating voltage                   |{% endif %}                    |
 
 {% endif %}
 
@@ -97,7 +123,7 @@ REBOOT is the only method to reset [{{ torque_enable }}] to ‘1’(Torque ON) a
 {% capture shutdown_01 %}
 **NOTE** :
 {% if page.product_group=='dxl_pro' or page.product_group=='dxl_pro_a' or page.product_group=='dxl_p' %}1. If Shutdown occurs, **Dynamic brake** will be activated.{% else %}{% endif %}
-2. If Shutdown occurs, **LED will flicker every second**. {% if page.product_group=='dxl_pro' or page.product_group=='dxl_pro_a' or page.product_group=='dxl_p' or page.product_group=='xl330' %}{% else %}(**Firmware v41 or above**){% endif %}
+2. If Shutdown occurs, **LED will flicker every second**. {% if page.product_group=='dxl_pro' or page.product_group=='dxl_pro_a' or page.product_group=='dxl_p' or page.product_group=='xl330' or page.product_group=='xc330' %}{% else %}(**Firmware v41 or above**){% endif %}
 3. If Shutdown occurs, **reboot the device**.
 - H/W REBOOT : Turn off and turn on the power again
 - S/W REBOOT : Transmit REBOOT Instruction (For more details, refer to the [Reboot](/docs/en/dxl/protocol2/#reboot) section of e-Manual.)

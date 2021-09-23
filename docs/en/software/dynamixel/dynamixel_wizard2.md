@@ -93,6 +93,8 @@ Although almost all ROBOTIS products are shipped with installed firmwares, new f
 | **PM**           | [PM54-060-S250-R]              | [PM54-040-S250-R]              | [PM42-010-S260-R]              |                                |                 |
 | **ETC**          | [RH-P12-RN]                    | [RH-P12-RN(A)]                 |                                |                                |                 |
 
+<!-- [XC330-T288]<br>[XC330-T181]<br>[XC330-M288]<br>[XC330-M181] Need to add-->
+
 # [Software Installation](#software-installation)
 
 ## [Install: Windows](#install-windows)
@@ -835,6 +837,10 @@ In order to use the minimum communication interval(1 [ms]), please follow the in
 [XC430-W150]: /docs/en/dxl/x/xc430-w150/
 [XC430-W240]: /docs/en/dxl/x/xc430-w240/
 [2XC430-W250]: /docs/en/dxl/x/2xc430-w250/
+[XC330-T288]: /docs/en/dxl/x/xc330-t288
+[XC330-T181]: /docs/en/dxl/x/xc330-t181
+[XC330-M288]: /docs/en/dxl/x/xc330-m288
+[XC330-M181]: /docs/en/dxl/x/xc330-m181
 [XM430-W210]: /docs/en/dxl/x/xm430-w210/
 [XM430-W350]: /docs/en/dxl/x/xm430-w350/
 [XH430-W210]: /docs/en/dxl/x/xh430-w210/

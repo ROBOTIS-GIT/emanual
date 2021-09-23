@@ -48,6 +48,8 @@ sidebar:
 | **PH**            | [PH42-020-S300-R]              | [PH54-100-S500-R]              | [PH54-200-S500-R]               |                                |                 |
 | **PM**            | [PM54-060-S250-R]              | [PM54-040-S250-R]              | [PM42-010-S260-R]               |                                |                 |
 
+<!-- [XC330-T288]<br>[XC330-T181]<br>[XC330-M288]<br>[XC330-M181] Need to add-->
+
 `1` RX, DX, EX, PRO L 시리즈를 사용하려면 소스 코드에서 별도의 설정이 필요합니다.
 
 # [각 부 명칭](#각-부-명칭)
@@ -310,6 +312,10 @@ bool syncWriteEnd(void);
 [XC430-W150]: /docs/kr/dxl/x/xc430-w150/
 [XC430-W240]: /docs/kr/dxl/x/xc430-w240/
 [2XC430-W250]: /docs/kr/dxl/x/2xc430-w250/
+[XC330-T288]: /docs/kr/dxl/x/xc330-t288
+[XC330-T181]: /docs/kr/dxl/x/xc330-t181
+[XC330-M288]: /docs/kr/dxl/x/xc330-m288
+[XC330-M181]: /docs/kr/dxl/x/xc330-m181
 [XM430-W210]: /docs/kr/dxl/x/xm430-w210/
 [XM430-W350]: /docs/kr/dxl/x/xm430-w350/
 [XH430-W210]: /docs/kr/dxl/x/xh430-w210/

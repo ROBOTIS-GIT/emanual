@@ -1,6 +1,6 @@
 제어기와 통신하기 위한 통신 속도 입니다.
 
-{% if page.product_group=='xl330' %}
+{% if page.product_group=='xl330' or page.product_group=='xc330'%}
 
 |     값     |   통신 속도   |   오차율   |
 | :--------: | :-----------: | :--------: |

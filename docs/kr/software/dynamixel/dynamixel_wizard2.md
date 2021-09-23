@@ -92,6 +92,8 @@ sidebar:
 | **PM**           | [PM54-060-S250-R]              | [PM54-040-S250-R]              | [PM42-010-S260-R]              |                                |                 |
 | **ETC**          | [RH-P12-RN]                    | [RH-P12-RN(A)]                 |                                |                                |                 |
 
+<!-- [XC330-T288]<br>[XC330-T181]<br>[XC330-M288]<br>[XC330-M181] Need to add-->
+
 # [다이나믹셀 위자드 2.0 설치](#다이나믹셀-위자드-20-설치)
 
 ## [윈도우에서 설치하기](#윈도우에서-설치하기)
@@ -831,6 +833,10 @@ sidebar:
 [XC430-W150]: /docs/kr/dxl/x/xc430-w150/
 [XC430-W240]: /docs/kr/dxl/x/xc430-w240/
 [2XC430-W250]: /docs/kr/dxl/x/2xc430-w250/
+[XC330-T288]: /docs/kr/dxl/x/xc330-t288
+[XC330-T181]: /docs/kr/dxl/x/xc330-t181
+[XC330-M288]: /docs/kr/dxl/x/xc330-m288
+[XC330-M181]: /docs/kr/dxl/x/xc330-m181
 [XM430-W210]: /docs/kr/dxl/x/xm430-w210/
 [XM430-W350]: /docs/kr/dxl/x/xm430-w350/
 [XH430-W210]: /docs/kr/dxl/x/xh430-w210/

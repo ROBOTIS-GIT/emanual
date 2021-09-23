@@ -48,6 +48,8 @@ DYNAMIXEL Shield  was created to use [RC-100] and DYNAMIXEL on arduino board. We
 | **PH**           | [PH42-020-S300-R]              | [PH54-100-S500-R]              | [PH54-200-S500-R]               |                                |                 |
 | **PM**           | [PM54-060-S250-R]              | [PM54-040-S250-R]              | [PM42-010-S260-R]               |                                |                 |
 
+<!-- [XC330-T288]<br>[XC330-T181]<br>[XC330-M288]<br>[XC330-M181] Need to add-->
+
 `1` RX, DX, EX series are by default disabled and require [config.h](https://github.com/ROBOTIS-GIT/Dynamixel2Arduino/blob/master/src/utility/config.h#L6) modification in DYNAMIXEL2Arduino to be used.
 
 # [Layout](#layout)
@@ -317,6 +319,10 @@ bool syncWriteEnd(void);
 [XC430-W150]: /docs/en/dxl/x/xc430-w150/
 [XC430-W240]: /docs/en/dxl/x/xc430-w240/
 [2XC430-W250]: /docs/en/dxl/x/2xc430-w250/
+[XC330-T288]: /docs/en/dxl/x/xc330-t288
+[XC330-T181]: /docs/en/dxl/x/xc330-t181
+[XC330-M288]: /docs/en/dxl/x/xc330-m288
+[XC330-M181]: /docs/en/dxl/x/xc330-m181
 [XM430-W210]: /docs/en/dxl/x/xm430-w210/
 [XM430-W350]: /docs/en/dxl/x/xm430-w350/
 [XH430-W210]: /docs/en/dxl/x/xh430-w210/
