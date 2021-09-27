@@ -37,10 +37,10 @@ sidebar:
 
 ## [XW Series](#xw-series)
 
-|                                        XW540                                         |
-|:------------------------------------------------------------------------------------:|
-|                ![](/assets/images/dxl/x/xw/xw540-series_product.png)                 |
-| [XW540-T140](/docs/en/dxl/x/xw540-t140/)<br>[XW540-T260](/docs/en/dxl/x/xw540-t260/) |
+|                                        XW540                                         |                                        XW430                                         |
+|:------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------:|
+|                ![](/assets/images/dxl/x/xw/xw540-series_product.png)                 |                ![](/assets/images/dxl/x/xw/xw430_series_product.jpg)                 |
+| [XW540-T140](/docs/en/dxl/x/xw540-t140/)<br>[XW540-T260](/docs/en/dxl/x/xw540-t260/) | [XW430-T200](/docs/kr/dxl/x/xw540-t200/)<br>[XW430-T333](/docs/kr/dxl/x/xw540-t333/) |
 
 ## [XH Series](#xh-series)
 

@@ -50,6 +50,9 @@ layout: popup
 |:-------------|:-----------------------:|:-----------------------:|
 | XW540-T260-R | O* <br>(F/W address 13) |            O            |
 | XW540-T140-R | O* <br>(F/W address 13) |            O            |
+| XW430-T333-R | O* <br>(F/W address 13) |            O            |
+| XW430-T260-R | O* <br>(F/W address 13) |            O            |
+
 
 ## [XH 시리즈](#xh-시리즈)
 

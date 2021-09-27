@@ -35,7 +35,7 @@ The DYNAMIXEL SDK supports **all DYNAMIXEL series**.
 | **XC**           | [XC430-W150]<br/> [XC430-W240] | [2XC430-W250]                  |                                |                                |                 |
 | **XM**           | [XM430-W210]<br/> [XM430-W350] | [XM540-W150]<br/> [XM540-W270] |                                |                                |                 |
 | **XH**           | [XH430-W210]<br/> [XH430-W350] | [XH430-V210]<br/> [XH430-V350] | [XH540-W150]<br/> [XH540-W270] | [XH540-V150]<br/> [XH540-V270] |                 |
-| **XW**           | [XW540-T140]<br>[XW540-T260]   |                                |                                |                                |                 |
+| **XW**           | [XW430-T333]<br/> [XW430-T200] | [XW540-T140]<br/> [XW540-T260] |                                |                                |                 |
 | **PRO L**        | [L42-10-S300-R]                | [L54-30-S500-R]                | [L54-30-S400-R]                | [L54-50-S500-R]                | [L54-50-S290-R] |
 | **PRO M**        | [M42-10-S260-R]                | [M54-40-S250-R]                | [M54-60-S250-R]                |                                |                 |
 | **PRO H**        | [H42-20-S300-R]                | [H54-100-S500-R]               | [H54-200-S500-R]               |                                |                 |
@@ -43,8 +43,6 @@ The DYNAMIXEL SDK supports **all DYNAMIXEL series**.
 | **PRO H(A)**     | [H42-20-S300-R(A)]             | [H54-100-S500-R(A)]            | [H54-200-S500-R(A)]            |                                |                 |
 | **PM**           | [PM54-060-S250-R]              | [PM54-040-S250-R]              | [PM42-010-S260-R]              |                                |                 |
 | **PH**           | [PH42-020-S300-R]              | [PH54-100-S500-R]              | [PH54-200-S500-R]              |                                |                 |
-
-<!-- [XC330-T288]<br>[XC330-T181]<br>[XC330-M288]<br>[XC330-M181] Need to add-->
 
 ## [Supported Protocols](#supported-protocols)
 
@@ -116,6 +114,8 @@ In addition, DYNAMIXEL SDK supports **ROS**, so it can be used as ROS library us
 [XH540-W270]: /docs/en/dxl/x/xh540-w270/
 [XH540-V150]: /docs/en/dxl/x/xh540-v150/
 [XH540-V270]: /docs/en/dxl/x/xh540-v270/
+[XW430-T200]: /docs/en/dxl/x/xw430-t200/
+[XW430-T333]: /docs/en/dxl/x/xw430-t333/
 [XW540-T140]: /docs/en/dxl/x/xw540-t140/
 [XW540-T260]: /docs/en/dxl/x/xw540-t260/
 [H54-200-S500-R]: /docs/en/dxl/pro/h54-200-s500-r/
