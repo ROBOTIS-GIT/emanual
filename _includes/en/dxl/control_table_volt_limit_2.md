@@ -8,11 +8,17 @@ For more details, please refer to the [Shutdown(63)] section.
 |:-------------:|:-----------:|:--------------:|
 | About 0.1 [V] |  65 ~ 140   | 6.5 ~ 14.0 [V] |
 
-{% elsif page.product_group=='xl330' %}
+{% elsif page.product_group=='xl330' or page.ref == 'xc330-m181' or page.ref == 'xc330-m288' %}
 
 |     Unit      | Value Range |  Description  |
 |:-------------:|:-----------:|:-------------:|
 | About 0.1 [V] |   31 ~ 70   | 3.1 ~ 7.0 [V] |
+
+{% elsif page.ref == 'xc330-t181' or page.ref == 'xc330-t288' %}
+
+|     Unit      | Value Range |  Description   |
+|:-------------:|:-----------:|:--------------:|
+| About 0.1 [V] |   55 ~ 140   | 5.5 ~ 14.0 [V] |
 
 {% else %}
 |     Unit      | Value Range |  Description   |

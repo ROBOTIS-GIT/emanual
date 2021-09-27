@@ -1,16 +1,18 @@
 
 ### 준비사항
 
-{% if page.product_group=='xl330' %}
+{% if page.product_group=='xl330' or page.ref=='xc330-m288' or page.ref=='xc330-m181' %}
 - 다이나믹셀 전원공급 장치 (다이나믹셀과 호환되는 제어기 또는 [LB-041](https://www.robotis.com/model/search.php?sfl=wr_subject%7C%7Cwr_content&stx=LB-041) 또는 별도의 파워 서플라이)
   - [제어기 다이나믹셀 호환표](/docs/kr/parts/controller/controller_compatibility/#다이나믹셀-호환표)
 {% else %}
-- 다이나믹셀 전원공급 장치 (SMPS2Dynamixel 또는 다이나믹셀과 호환되는 제어기)
+- 다이나믹셀과 호환되는 제어기나 [리튬이온 배터리(LB-020)](https://www.robotis.com/shop/item.php?it_id=903-0277-000) 또는 별도의 파워 서플라이
   - [제어기 다이나믹셀 호환표](/docs/kr/parts/controller/controller_compatibility/#다이나믹셀-호환표)
 {% endif %}
 - OS가 설치된 PC.
 - PC와 다이나믹셀 연결장치 ([U2D2] 또는 [USB2Dynamixel])
 - [호환 소프트웨어](#호환-소프트웨어)
+
+
 
 {% capture warn_01 %}
 **주의**: 
