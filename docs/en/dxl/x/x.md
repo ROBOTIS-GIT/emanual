@@ -56,6 +56,8 @@ XL320 has different specifications from other XL-Series. Please refer to [XL-320
 |:---------------|:----------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------|
 | [XW540-T260-R] | 8.8 [N.m] (at 11.1 [V], 4.5 [A])<br>9.5 [N.m] (at 12.0 [V], 4.9 [A])<br>11.2 [N.m] (at 14.8 [V], 5.9 [A]) | 37 [rev/min] (at 11.1 [V])<br>40 [rev/min] (at 12.0 [V])<br>48 [rev/min] (at 14.8 [V]) |
 | [XW540-T140-R] | 6.4 [N.m] (at 11.1 [V], 4.5 [A])<br>6.9 [N.m] (at 12.0 [V], 4.9 [A])<br>8.3 [N.m] (at 14.8 [V], 5.9 [A])  | 67 [rev/min] (at 11.1 [V]<br>72 [rev/min] (at 12.0 [V]<br>88 [rev/min] (at 14.8 [V])   |
+| [XW430-T333-R] | 2.9 [N.m] (at 11.1 [V], 1.2 [A])<br>3.1 [N.m] (at 12.0 [V], 1.3 [A])<br>3.6 [N.m] (at 14.8 [V], 1.5 [A])  | 29 [rev/min] (at 11.1 [V]<br>31 [rev/min] (at 12.0 [V]<br>39 [rev/min] (at 14.8 [V])   |
+| [XW430-T200-R] | 6.4 [N.m] (at 11.1 [V], 4.5 [A])<br>6.9 [N.m] (at 12.0 [V], 4.9 [A])<br>8.3 [N.m] (at 14.8 [V], 5.9 [A])  | 49 [rev/min] (at 11.1 [V]<br>53 [rev/min] (at 12.0 [V]<br>66 [rev/min] (at 14.8 [V])   |
 
 ## [XH Series](#xh-series)
 
@@ -99,6 +101,8 @@ XL320 has different specifications from other XL-Series. Please refer to [XL-320
 
 [XW540-T260-R]: /docs/en/dxl/x/xw540-t260/
 [XW540-T140-R]: /docs/en/dxl/x/xw540-t140/
+[XW430-T333-R]: /docs/en/dxl/x/xw430-t333/
+[XW430-T200-R]: /docs/en/dxl/x/xw430-t200/
 [XH540-V270-R]: /docs/en/dxl/x/xh540-v270/
 [XH540-W270-T/R]: /docs/en/dxl/x/xh540-w270/
 [XH540-V150-R]: /docs/en/dxl/x/xh540-v150/
