@@ -53,6 +53,12 @@ main:
       - title: "XW540-T260"
         titlekr: "XW540-T260"
         url: /dxl/x/xw540-t260/
+      - title: "XW430-T200"
+        titlekr: "XW430-T200"
+        url: /dxl/x/xw430-t200/
+      - title: "XW430-T333"
+        titlekr: "XW430-T333"
+        url: /dxl/x/xw430-t333/
       - title: "XH540-W150"
         titlekr: "XH540-W150"
         url: /dxl/x/xh540-w150/
@@ -9625,7 +9631,7 @@ xw540-t260:
         url: /dxl/x/xw540-t260/#drawings
         urlkr: /dxl/x/xw540-t260/#도면
 
-#XW540-T140 sidebar
+#XW430-T333 sidebar
 xw430-t333:
   - title: "Specifications"
     titlekr: "주요 사양"
@@ -9726,6 +9732,9 @@ xw430-t333:
         - title: "Min/Max Position Limit(48, 52)"
           titlekr: "Min/Max Position Limit(48, 52)"
           url: /dxl/x/xw430-t333/#minmax-position-limit48-52
+        - title: "Startup Configuration(60)"
+          titlekr: "Startup Configuration(60)"
+          url: /dxl/x/xw430-t333/#startup-configuration60           
         - title: "Shutdown(63)"
           titlekr: "Shutdown(63)"
           url: /dxl/x/xw430-t333/#shutdown63
@@ -9804,6 +9813,9 @@ xw430-t333:
         - title: "Present Temperature(146)"
           titlekr: "Present Temperature(146)"
           url: /dxl/x/xw430-t333/#present-temperature146
+        - title: "Backup Ready(147)"
+          titlekr: "Backup Ready(147)"
+          url: /dxl/x/xw430-t333/#backup-ready147               
         - title: "Indirect Address"
           titlekr: "Indirect Address"
           url: /dxl/x/xw430-t333/#indirect-address
@@ -9862,7 +9874,7 @@ xw430-t333:
         url: /dxl/x/xw430-t333/#drawings
         urlkr: /dxl/x/xw430-t333/#도면
 
-#XW540-T140 sidebar
+#XW430-T200 sidebar
 xw430-t200:
   - title: "Specifications"
     titlekr: "주요 사양"
@@ -9963,6 +9975,9 @@ xw430-t200:
         - title: "Min/Max Position Limit(48, 52)"
           titlekr: "Min/Max Position Limit(48, 52)"
           url: /dxl/x/xw430-t200/#minmax-position-limit48-52
+        - title: "Startup Configuration(60)"
+          titlekr: "Startup Configuration(60)"
+          url: /dxl/x/xw430-t200/#startup-configuration60                   
         - title: "Shutdown(63)"
           titlekr: "Shutdown(63)"
           url: /dxl/x/xw430-t200/#shutdown63
@@ -10041,6 +10056,9 @@ xw430-t200:
         - title: "Present Temperature(146)"
           titlekr: "Present Temperature(146)"
           url: /dxl/x/xw430-t200/#present-temperature146
+        - title: "Backup Ready(147)"
+          titlekr: "Backup Ready(147)"
+          url: /dxl/x/xw430-t200/#backup-ready147                       
         - title: "Indirect Address"
           titlekr: "Indirect Address"
           url: /dxl/x/xw430-t200/#indirect-address

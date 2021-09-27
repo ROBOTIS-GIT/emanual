@@ -58,10 +58,12 @@ X : Incompatible
 
 ## [XW Series](#xw-series)
 
-| Model      | DYNAMIXEL Protocol 1.0  | DYNAMIXEL Protocol 2.0 |
-|:-----------|:-----------------------:|:----------------------:|
-| XW540-T140 | O* <br>(F/W address 13) |           O            |
-| XW540-T260 | O* <br>(F/W address 13) |           O            |
+| Model        | DYNAMIXEL Protocol 1.0  | DYNAMIXEL Protocol 2.0 |
+|:-------------|:-----------------------:|:----------------------:|
+| XW540-T140   | O* <br>(F/W address 13) |           O            |
+| XW540-T260   | O* <br>(F/W address 13) |           O            |
+| XW430-T333-R | O* <br>(F/W address 13) |           O            |
+| XW430-T260-R | O* <br>(F/W address 13) |           O            |
 
 ## [XH Series](#xh-series)
 
