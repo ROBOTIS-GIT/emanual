@@ -57,20 +57,10 @@ sidebar:
 
 ## [XC 시리즈](#xc-시리즈)
 
-|                      2XC430                      |                                        XC430                                         |
-|:------------------------------------------------:|:------------------------------------------------------------------------------------:|
-| ![](/assets/images/dxl/x/2xc/2xc430_product.png) |                     ![](/assets/images/dxl/x/xc430_product.png)                      |
-|    [2XC430-W250](/docs/kr/dxl/x/2xc430-w250/)    | [XC430-W150](/docs/kr/dxl/x/xc430-w150/)<br>[XC430-W240](/docs/kr/dxl/x/xc430-w240/) |
-
-<!-- 
-
 |                      2XC430                      |                                        XC430                                         |                                                                                  XC330                                                                                   |
 |:------------------------------------------------:|:------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | ![](/assets/images/dxl/x/2xc/2xc430_product.png) |                     ![](/assets/images/dxl/x/xc430_product.png)                      |                                                      ![](/assets/images/dxl/x/xl330_temp/xl330-series_product.png)                                                       |
-|    [2XC430-W250](/docs/kr/dxl/x/2xc430-w250/)    | [XC430-W150](/docs/kr/dxl/x/xc430-w150/)<br>[XC430-W240](/docs/kr/dxl/x/xc430-w240/) | [XC330-T288](/docs/kr/dxl/x/xc330-t288)<br>[XC330-T181](/docs/kr/dxl/x/xc330-t181)<br>[XC330-M288](/docs/kr/dxl/x/xc330-m288)<br>[XC330-M181](/docs/kr/dxl/x/xc330-m181) | 
-
--->
-
+|    [2XC430-W250](/docs/kr/dxl/x/2xc430-w250/)    | [XC430-W150](/docs/kr/dxl/x/xc430-w150/)<br>[XC430-W240](/docs/kr/dxl/x/xc430-w240/) | [XC330-T288](/docs/kr/dxl/x/xc330-t288)<br>[XC330-T181](/docs/kr/dxl/x/xc330-t181)<br>[XC330-M288](/docs/kr/dxl/x/xc330-m288)<br>[XC330-M181](/docs/kr/dxl/x/xc330-m181) |
 
 ## [XL 시리즈](#xl-시리즈)
 
