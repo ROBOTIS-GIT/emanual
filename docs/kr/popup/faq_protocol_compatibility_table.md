@@ -83,6 +83,10 @@ layout: popup
 | XC430-W150  | O* <br>(F/W address 13) |            O            |
 | XC430-W240  | O* <br>(F/W address 13) |            O            |
 | 2XC430-W250 | O* <br>(F/W address 13) |            O            |
+| XC330-T181  |            X            |           O            |
+| XC330-T288  |            X            |           O            |
+| XC330-M181  |            X            |           O            |
+| XC330-M288  |            X            |           O            |
 
 ## [XL 시리즈](#xl-시리즈)
 
