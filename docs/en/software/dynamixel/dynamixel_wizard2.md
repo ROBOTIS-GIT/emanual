@@ -25,7 +25,7 @@ sidebar:
 
 ## [DYNAMIXEL Wizard 2.0](#dynamixel-wizard-20)
 
-DYNAMIXEL Wizard 2.0 is an optimized tool for managing DYNAMIXEL's from various operating systems.
+DYNAMIXEL Wizard 2.0 is an optimized tool for managing DYNAMIXEL from various operating systems.
 The following features are provided with DYNAMIXEL Wizard 2.0.
 
 - DYNAMIXEL Firmware Update

@@ -5,7 +5,7 @@ This application is reinforcement learning with DQN (Deep Q-Learning). The reinf
 
 <iframe width="854" height="480" src="https://www.youtube.com/embed/WADmP0wzLxs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-The contents in e-Manual can be updated without a previous notice. Therefore, some video may differ from the contents in e-Manual.
+The contents in e-Manual are subject to be updated without a prior notice. Therefore, some video may differ from the contents in e-Manual.
 {: .notice--warning} 
 
 This shows reinforcement learning with TurtleBot3 in gazebo.

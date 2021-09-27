@@ -46,7 +46,7 @@ Indirect Address와 Indirect Data 용도는 서로 떨어져있는 [컨트롤 �
 2. Indirect Data 1(224)를 ‘1’로 변경 : LED(65) 역시 ‘1’로 변경되면서 LED가 켜집니다.
 3. Indirect Data 1(224)를 ‘0’로 변경 : LED(65) 역시 ‘0’로 변경되면서 LED가 꺼집니다.
 
-{% if page.product_group=='dxl_xw540' %}
+{% if page.product_group=='dxl_xw540' or page.product_group=='dxl_xw430' %}
 **참고**: XW 모델은 [LED(65)]를 사용하지 않습니다.
 {: .notice}
 {% endif %}

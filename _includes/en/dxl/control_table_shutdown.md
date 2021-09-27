@@ -108,7 +108,7 @@ REBOOT is the only method to reset [{{ torque_enable }}] to ‘1’(Torque ON) a
 
 {% endif %}
 
-{% if page.product_group=='dxl_xw540' %}
+{% if page.product_group=='dxl_xw540' or page.product_group=='dxl_xw430'%}
 {% capture shutdown_01 %}
 **NOTE** : If Shutdown occurs, **reboot the device**.
 - H/W REBOOT : Turn off and turn on the power again
