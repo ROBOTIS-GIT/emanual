@@ -148,7 +148,7 @@ sidebar:
 
 |             Model             | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-151] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[OpenCM 485 EXP]) | [OpenCM7.0] | [OpenCR] |
 |:-----------------------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:-----------------------------------:|:-----------:|:--------:|
-|         [R+ Scratch]          |   X    |    O    |    X     |    O     |    O     |    X     |    X     |    X     |    X     |    X     |    X     |                  X                  |      O      |    X     |
+|         [R+ Scratch]          |   X    |    O    |    X     |    O     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  X                  |      O      |    X     |
 |         [OpenCM IDE]          |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  O                  |      X      |    X     |
 |        [DYNAMIXEL SDK]        |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  O                  |      X      |    O     |
 |     [DYNAMIXEL Workbench]     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  O                  |      X      |    O     |
