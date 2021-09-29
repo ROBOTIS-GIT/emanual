@@ -10175,6 +10175,1018 @@ xw430-t200:
         url: /dxl/x/xw430-t200/#drawings
         urlkr: /dxl/x/xw430-t200/#도면
 
+#XD540-T150 sidebar
+xd540-t150:
+  - title: "Specifications"
+    titlekr: "주요 사양"
+    url: /dxl/x/xd540-t150/#specifications
+    urlkr: /dxl/x/xd540-t150/#주요-사양
+    children:
+      - title: "Performance Graph"
+        titlekr: "성능 그래프"
+        url: /dxl/x/xd540-t150/#performance-graph
+        urlkr: /dxl/x/xd540-t150/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/x/xd540-t150/#control-table
+    urlkr: /dxl/x/xd540-t150/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/x/xd540-t150/#control-table-data-address
+        urlkr: /dxl/x/xd540-t150/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
+            url: /dxl/x/xd540-t150/#area-eeprom-ram
+            urlkr: /dxl/x/xd540-t150/#영역-eeprom-ram
+          - title: "Size"
+            titlekr: "크기"
+            url: /dxl/x/xd540-t150/#size
+            urlkr: /dxl/x/xd540-t150/#크기
+          - title: "Access"
+            titlekr: "접근권한"
+            url: /dxl/x/xd540-t150/#access
+            urlkr: /dxl/x/xd540-t150/#접근권한
+          - title: "Initial Value"
+            titlekr: "기본값"
+            url: /dxl/x/xd540-t150/#initial-value
+            urlkr: /dxl/x/xd540-t150/#기본값
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/x/xd540-t150/#control-table-of-eeprom-area
+        urlkr: /dxl/x/xd540-t150/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/x/xd540-t150/#control-table-of-ram-area
+        urlkr: /dxl/x/xd540-t150/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/x/xd540-t150/#control-table-description
+        urlkr: /dxl/x/xd540-t150/#컨트롤-테이블-설명
+        children:
+        - title: "Model Number(0)"
+          titlekr: "Model Number(0)"
+          url: /dxl/x/xd540-t150/#model-number0
+        - title: "Firmware Version(6)"
+          titlekr: "Firmware Version(6)"
+          url: /dxl/x/xd540-t150/#firmware-version6
+        - title: "ID(7)"
+          titlekr: "ID(7)"
+          url: /dxl/x/xd540-t150/#id7
+        - title: "Baud Rate(8)"
+          titlekr: "Baud Rate(8)"
+          url: /dxl/x/xd540-t150/#baud-rate8
+        - title: "Return Delay Time(9)"
+          titlekr: "Return Delay Time(9)"
+          url: /dxl/x/xd540-t150/#return-delay-time9
+        - title: "Drive Mode(10)"
+          titlekr: "Drive Mode(10)"
+          url: /dxl/x/xd540-t150/#drive-mode10
+        - title: "Operating Mode(11)"
+          titlekr: "Operating Mode(11)"
+          url: /dxl/x/xd540-t150/#operating-mode11
+        - title: "Secondary(Shadow) ID(12)"
+          titlekr: "Secondary(Shadow) ID(12)"
+          url: /dxl/x/xd540-t150/#secondaryshadow-id12
+        - title: "Protocol Type(13)"
+          titlekr: "Protocol Type(13)"
+          url: /dxl/x/xd540-t150/#protocol-type13
+        - title: "Homing Offset(20)"
+          titlekr: "Homing Offset(20)"
+          url: /dxl/x/xd540-t150/#homing-offset20
+        - title: "Moving Threshold(24)"
+          titlekr: "Moving Threshold(24)"
+          url: /dxl/x/xd540-t150/#moving-threshold24
+        - title: "Temperature Limit(31)"
+          titlekr: "Temperature Limit(31)"
+          url: /dxl/x/xd540-t150/#temperature-limit31
+        - title: "Min/Max Voltage Limit(32,34)"
+          titlekr: "Min/Max Voltage Limit(32,34)"
+          url: /dxl/x/xd540-t150/#minmax-voltage-limit32-34
+        - title: "PWM Lmit(36)"
+          titlekr: "PWM Limit(36)"
+          url: /dxl/x/xd540-t150/#pwm-limit36
+        - title: "Current Limit(38)"
+          titlekr: "Current Limit(38)"
+          url: /dxl/x/xd540-t150/#current-limit38
+        - title: "Velocity Limit(44)"
+          titlekr: "Velocity Limit(44)"
+          url: /dxl/x/xd540-t150/#velocity-limit44
+        - title: "Min/Max Position Limit(48, 52)"
+          titlekr: "Min/Max Position Limit(48, 52)"
+          url: /dxl/x/xd540-t150/#minmax-position-limit48-52
+        - title: "External Port Mode 1,2,3(56,57,58)"
+          titlekr: "External Port Mode 1,2,3(56,57,58)"
+          url: /dxl/x/xd540-t150/#external-port-mode-123565758
+        - title: "Startup Configuration(60)"
+          titlekr: "Startup Configuration(60)"
+          url: /dxl/x/xd540-t150/#startup-configuration60         
+        - title: "Shutdown(63)"
+          titlekr: "Shutdown(63)"
+          url: /dxl/x/xd540-t150/#shutdown63
+        - title: "Torque Enable(64)"
+          titlekr: "Torque Enable(64)"
+          url: /dxl/x/xd540-t150/#torque-enable64
+        - title: "LED(65)"
+          titlekr: "LED(65)"
+          url: /dxl/x/xd540-t150/#led65
+        - title: "Status Return Level(68)"
+          titlekr: "Status Return Level(68)"
+          url: /dxl/x/xd540-t150/#status-return-level68
+        - title: "Registered Instruction(69)"
+          titlekr: "Registered Instruction(69)"
+          url: /dxl/x/xd540-t150/#registered-instruction69
+        - title: "Hardware Error Status(70)"
+          titlekr: "Hardware Error Status(70)"
+          url: /dxl/x/xd540-t150/#hardware-error-status70
+        - title: "Velocity PI Gain(76, 78)"
+          titlekr: "Velocity PI Gain(76, 78)"
+          url: /dxl/x/xd540-t150/#velocity-pi-gain76-78
+        - title: "Position PID Gain(80, 82, 84)"
+          titlekr: "Position PID Gain(80, 82, 84)"
+          url: /dxl/x/xd540-t150/#position-pid-gain80-82-84
+        - title: "Feedforward 1st/2nd Gains(88, 90)"
+          titlekr: "Feedforward 1st/2nd Gains(88, 90)"
+          url: /dxl/x/xd540-t150/#feedforward-1st2nd-gains88-90
+        - title: "BUS Watchdog(98)"
+          titlekr: "BUS Watchdog(98)"
+          url: /dxl/x/xd540-t150/#bus-watchdog98
+        - title: "Goal PWM(100)"
+          titlekr: "Goal PWM(100)"
+          url: /dxl/x/xd540-t150/#goal-pwm100
+        - title: "Goal Current(102)"
+          titlekr: "Goal Current(102)"
+          url: /dxl/x/xd540-t150/#goal-current102
+        - title: "Goal Velocity(104)"
+          titlekr: "Goal Velocity(104)"
+          url: /dxl/x/xd540-t150/#goal-velocity104
+        - title: "Profile Acceleration(108)"
+          titlekr: "Profile Acceleration(108)"
+          url: /dxl/x/xd540-t150/#profile-acceleration108
+        - title: "Profile Velocity(112)"
+          titlekr: "Profile Velocity(112)"
+          url: /dxl/x/xd540-t150/#profile-velocity112
+        - title: "Goal Position(116)"
+          titlekr: "Goal Position(116)"
+          url: /dxl/x/xd540-t150/#goal-position116
+        - title: "Realtime Tick(120)"
+          titlekr: "Realtime Tick(120)"
+          url: /dxl/x/xd540-t150/#realtime-tick120
+        - title: "Moving(122)"
+          titlekr: "Moving(122)"
+          url: /dxl/x/xd540-t150/#moving122
+        - title: "Moving Status(123)"
+          titlekr: "Moving Status(123)"
+          url: /dxl/x/xd540-t150/#moving-status123
+        - title: "Present PWM(124)"
+          titlekr: "Present PWM(124)"
+          url: /dxl/x/xd540-t150/#present-pwm124
+        - title: "Present Current(126)"
+          titlekr: "Present Current(126)"
+          url: /dxl/x/xd540-t150/#present-current126
+        - title: "Present Velocity(128)"
+          titlekr: "Present Velocity(128)"
+          url: /dxl/x/xd540-t150/#present-velocity128
+        - title: "Present Position(132)"
+          titlekr: "Present Position(132)"
+          url: /dxl/x/xd540-t150/#present-position132
+        - title: "Velocity Trajectory(136)"
+          titlekr: "Velocity Trajectory(136)"
+          url: /dxl/x/xd540-t150/#velocity-trajectory136
+        - title: "Position Trajectory(140)"
+          titlekr: "Position Trajectory(140)"
+          url: /dxl/x/xd540-t150/#position-trajectory140
+        - title: "Present Input Voltage(144)"
+          titlekr: "Present Input Voltage(144)"
+          url: /dxl/x/xd540-t150/#present-input-voltage144
+        - title: "Present Temperature(146)"
+          titlekr: "Present Temperature(146)"
+          url: /dxl/x/xd540-t150/#present-temperature146
+        - title: "Backup Ready(147)"
+          titlekr: "Backup Ready(147)"
+          url: /dxl/x/xd540-t150/#backup-ready147          
+        - title: "External Port Data 1,2,3"
+          titlekr: "External Port Data 1,2,3"
+          url: /dxl/x/xd540-t150/#external-port-data-123
+        - title: "Indirect Address"
+          titlekr: "Indirect Address"
+          url: /dxl/x/xd540-t150/#indirect-address
+        - title: "Indirect Data"
+          titlekr: "Indirect Data"
+          url: /dxl/x/xd540-t150/#indirect-data
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/x/xd540-t150/#how-to-assemble
+    urlkr: /dxl/x/xd540-t150/#조립-예시
+    children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xd540-t150/#wiring-through-back-case
+        urlkr: /dxl/x/xd540-t150/#배선-예시
+      - title: "Option Frame Assembly"
+        titlekr: "옵션프레임 조립"
+        url: /dxl/x/xd540-t150/#option-frame-assembly
+        urlkr: /dxl/x/xd540-t150/#옵션프레임-조립
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/x/xd540-t150/#maintenance
+    urlkr: /dxl/x/xd540-t150/#유지보수
+    children:
+      - title: "Horn, Gear Replacement"
+        titlekr: "혼과 기어 교체"
+        url: /dxl/x/xd540-t150/#horn-and-gear-replacement
+        urlkr: /dxl/x/xd540-t150/#혼과-기어-교체
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/x/xd540-t150/#reference
+    urlkr: /dxl/x/xd540-t150/#참고자료
+    children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/x/xd540-t150/#what-is-the-profile
+        urlkr: /dxl/x/xd540-t150/#profile
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/x/xd540-t150/#certifications
+        urlkr: /dxl/x/xd540-t150/#인증-획득
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/x/xd540-t150/#quick-start
+        urlkr: /dxl/x/xd540-t150/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/x/xd540-t150/#connector-information
+        urlkr: /dxl/x/xd540-t150/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/x/xd540-t150/#communication-circuit
+        urlkr: /dxl/x/xd540-t150/#통신-회로
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/x/xd540-t150/#drawings
+        urlkr: /dxl/x/xd540-t150/#도면
+      - title: "Moment of Inertia"
+        titlekr: "Moment of Inertia"
+        url: /dxl/x/xd540-t150/#moment-of-inertia
+        urlkr: /dxl/x/xd540-t150/#moment-of-inertia
+
+#XD540-T270 sidebar
+xd540-t270:
+  - title: "Specifications"
+    titlekr: "주요 사양"
+    url: /dxl/x/xd540-t270/#specifications
+    urlkr: /dxl/x/xd540-t270/#주요-사양
+    children:
+      - title: "Performance Graph"
+        titlekr: "성능 그래프"
+        url: /dxl/x/xd540-t270/#performance-graph
+        urlkr: /dxl/x/xd540-t270/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/x/xd540-t270/#control-table
+    urlkr: /dxl/x/xd540-t270/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/x/xd540-t270/#control-table-data-address
+        urlkr: /dxl/x/xd540-t270/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
+            url: /dxl/x/xd540-t270/#area-eeprom-ram
+            urlkr: /dxl/x/xd540-t270/#영역-eeprom-ram
+          - title: "Size"
+            titlekr: "크기"
+            url: /dxl/x/xd540-t270/#size
+            urlkr: /dxl/x/xd540-t270/#크기
+          - title: "Access"
+            titlekr: "접근권한"
+            url: /dxl/x/xd540-t270/#access
+            urlkr: /dxl/x/xd540-t270/#접근권한
+          - title: "Initial Value"
+            titlekr: "기본값"
+            url: /dxl/x/xd540-t270/#initial-value
+            urlkr: /dxl/x/xd540-t270/#기본값
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/x/xd540-t270/#control-table-of-eeprom-area
+        urlkr: /dxl/x/xd540-t270/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/x/xd540-t270/#control-table-of-ram-area
+        urlkr: /dxl/x/xd540-t270/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/x/xd540-t270/#control-table-description
+        urlkr: /dxl/x/xd540-t270/#컨트롤-테이블-설명
+        children:
+        - title: "Model Number(0)"
+          titlekr: "Model Number(0)"
+          url: /dxl/x/xd540-t270/#model-number0
+        - title: "Firmware Version(6)"
+          titlekr: "Firmware Version(6)"
+          url: /dxl/x/xd540-t270/#firmware-version6
+        - title: "ID(7)"
+          titlekr: "ID(7)"
+          url: /dxl/x/xd540-t270/#id7
+        - title: "Baud Rate(8)"
+          titlekr: "Baud Rate(8)"
+          url: /dxl/x/xd540-t270/#baud-rate8
+        - title: "Return Delay Time(9)"
+          titlekr: "Return Delay Time(9)"
+          url: /dxl/x/xd540-t270/#return-delay-time9
+        - title: "Drive Mode(10)"
+          titlekr: "Drive Mode(10)"
+          url: /dxl/x/xd540-t270/#drive-mode10
+        - title: "Operating Mode(11)"
+          titlekr: "Operating Mode(11)"
+          url: /dxl/x/xd540-t270/#operating-mode11
+        - title: "Secondary(Shadow) ID(12)"
+          titlekr: "Secondary(Shadow) ID(12)"
+          url: /dxl/x/xd540-t270/#secondaryshadow-id12
+        - title: "Protocol Type(13)"
+          titlekr: "Protocol Type(13)"
+          url: /dxl/x/xd540-t270/#protocol-type13
+        - title: "Homing Offset(20)"
+          titlekr: "Homing Offset(20)"
+          url: /dxl/x/xd540-t270/#homing-offset20
+        - title: "Moving Threshold(24)"
+          titlekr: "Moving Threshold(24)"
+          url: /dxl/x/xd540-t270/#moving-threshold24
+        - title: "Temperature Limit(31)"
+          titlekr: "Temperature Limit(31)"
+          url: /dxl/x/xd540-t270/#temperature-limit31
+        - title: "Min/Max Voltage Limit(32,34)"
+          titlekr: "Min/Max Voltage Limit(32,34)"
+          url: /dxl/x/xd540-t270/#minmax-voltage-limit32-34
+        - title: "PWM Lmit(36)"
+          titlekr: "PWM Limit(36)"
+          url: /dxl/x/xd540-t270/#pwm-limit36
+        - title: "Current Limit(38)"
+          titlekr: "Current Limit(38)"
+          url: /dxl/x/xd540-t270/#current-limit38
+        - title: "Velocity Limit(44)"
+          titlekr: "Velocity Limit(44)"
+          url: /dxl/x/xd540-t270/#velocity-limit44
+        - title: "Min/Max Position Limit(48, 52)"
+          titlekr: "Min/Max Position Limit(48, 52)"
+          url: /dxl/x/xd540-t270/#minmax-position-limit48-52
+        - title: "External Port Mode 1,2,3(56,57,58)"
+          titlekr: "External Port Mode 1,2,3(56,57,58)"
+          url: /dxl/x/xd540-t270/#external-port-mode-123565758
+        - title: "Startup Configuration(60)"
+          titlekr: "Startup Configuration(60)"
+          url: /dxl/x/xd540-t270/#startup-configuration60         
+        - title: "Shutdown(63)"
+          titlekr: "Shutdown(63)"
+          url: /dxl/x/xd540-t270/#shutdown63
+        - title: "Torque Enable(64)"
+          titlekr: "Torque Enable(64)"
+          url: /dxl/x/xd540-t270/#torque-enable64
+        - title: "LED(65)"
+          titlekr: "LED(65)"
+          url: /dxl/x/xd540-t270/#led65
+        - title: "Status Return Level(68)"
+          titlekr: "Status Return Level(68)"
+          url: /dxl/x/xd540-t270/#status-return-level68
+        - title: "Registered Instruction(69)"
+          titlekr: "Registered Instruction(69)"
+          url: /dxl/x/xd540-t270/#registered-instruction69
+        - title: "Hardware Error Status(70)"
+          titlekr: "Hardware Error Status(70)"
+          url: /dxl/x/xd540-t270/#hardware-error-status70
+        - title: "Velocity PI Gain(76, 78)"
+          titlekr: "Velocity PI Gain(76, 78)"
+          url: /dxl/x/xd540-t270/#velocity-pi-gain76-78
+        - title: "Position PID Gain(80, 82, 84)"
+          titlekr: "Position PID Gain(80, 82, 84)"
+          url: /dxl/x/xd540-t270/#position-pid-gain80-82-84
+        - title: "Feedforward 1st/2nd Gains(88, 90)"
+          titlekr: "Feedforward 1st/2nd Gains(88, 90)"
+          url: /dxl/x/xd540-t270/#feedforward-1st2nd-gains88-90
+        - title: "BUS Watchdog(98)"
+          titlekr: "BUS Watchdog(98)"
+          url: /dxl/x/xd540-t270/#bus-watchdog98
+        - title: "Goal PWM(100)"
+          titlekr: "Goal PWM(100)"
+          url: /dxl/x/xd540-t270/#goal-pwm100
+        - title: "Goal Current(102)"
+          titlekr: "Goal Current(102)"
+          url: /dxl/x/xd540-t270/#goal-current102
+        - title: "Goal Velocity(104)"
+          titlekr: "Goal Velocity(104)"
+          url: /dxl/x/xd540-t270/#goal-velocity104
+        - title: "Profile Acceleration(108)"
+          titlekr: "Profile Acceleration(108)"
+          url: /dxl/x/xd540-t270/#profile-acceleration108
+        - title: "Profile Velocity(112)"
+          titlekr: "Profile Velocity(112)"
+          url: /dxl/x/xd540-t270/#profile-velocity112
+        - title: "Goal Position(116)"
+          titlekr: "Goal Position(116)"
+          url: /dxl/x/xd540-t270/#goal-position116
+        - title: "Realtime Tick(120)"
+          titlekr: "Realtime Tick(120)"
+          url: /dxl/x/xd540-t270/#realtime-tick120
+        - title: "Moving(122)"
+          titlekr: "Moving(122)"
+          url: /dxl/x/xd540-t270/#moving122
+        - title: "Moving Status(123)"
+          titlekr: "Moving Status(123)"
+          url: /dxl/x/xd540-t270/#moving-status123
+        - title: "Present PWM(124)"
+          titlekr: "Present PWM(124)"
+          url: /dxl/x/xd540-t270/#present-pwm124
+        - title: "Present Current(126)"
+          titlekr: "Present Current(126)"
+          url: /dxl/x/xd540-t270/#present-current126
+        - title: "Present Velocity(128)"
+          titlekr: "Present Velocity(128)"
+          url: /dxl/x/xd540-t270/#present-velocity128
+        - title: "Present Position(132)"
+          titlekr: "Present Position(132)"
+          url: /dxl/x/xd540-t270/#present-position132
+        - title: "Velocity Trajectory(136)"
+          titlekr: "Velocity Trajectory(136)"
+          url: /dxl/x/xd540-t270/#velocity-trajectory136
+        - title: "Position Trajectory(140)"
+          titlekr: "Position Trajectory(140)"
+          url: /dxl/x/xd540-t270/#position-trajectory140
+        - title: "Present Input Voltage(144)"
+          titlekr: "Present Input Voltage(144)"
+          url: /dxl/x/xd540-t270/#present-input-voltage144
+        - title: "Present Temperature(146)"
+          titlekr: "Present Temperature(146)"
+          url: /dxl/x/xd540-t270/#present-temperature146
+        - title: "Backup Ready(147)"
+          titlekr: "Backup Ready(147)"
+          url: /dxl/x/xd540-t270/#backup-ready147          
+        - title: "External Port Data 1,2,3"
+          titlekr: "External Port Data 1,2,3"
+          url: /dxl/x/xd540-t270/#external-port-data-123
+        - title: "Indirect Address"
+          titlekr: "Indirect Address"
+          url: /dxl/x/xd540-t270/#indirect-address
+        - title: "Indirect Data"
+          titlekr: "Indirect Data"
+          url: /dxl/x/xd540-t270/#indirect-data
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/x/xd540-t270/#how-to-assemble
+    urlkr: /dxl/x/xd540-t270/#조립-예시
+    children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xd540-t270/#wiring-through-back-case
+        urlkr: /dxl/x/xd540-t270/#배선-예시
+      - title: "Option Frame Assembly"
+        titlekr: "옵션프레임 조립"
+        url: /dxl/x/xd540-t270/#option-frame-assembly
+        urlkr: /dxl/x/xd540-t270/#옵션프레임-조립
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/x/xd540-t270/#maintenance
+    urlkr: /dxl/x/xd540-t270/#유지보수
+    children:
+      - title: "Horn, Gear Replacement"
+        titlekr: "혼과 기어 교체"
+        url: /dxl/x/xd540-t270/#horn-and-gear-replacement
+        urlkr: /dxl/x/xd540-t270/#혼과-기어-교체
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/x/xd540-t270/#reference
+    urlkr: /dxl/x/xd540-t270/#참고자료
+    children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/x/xd540-t270/#what-is-the-profile
+        urlkr: /dxl/x/xd540-t270/#profile
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/x/xd540-t270/#certifications
+        urlkr: /dxl/x/xd540-t270/#인증-획득
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/x/xd540-t270/#quick-start
+        urlkr: /dxl/x/xd540-t270/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/x/xd540-t270/#connector-information
+        urlkr: /dxl/x/xd540-t270/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/x/xd540-t270/#communication-circuit
+        urlkr: /dxl/x/xd540-t270/#통신-회로
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/x/xd540-t270/#drawings
+        urlkr: /dxl/x/xd540-t270/#도면
+      - title: "Moment of Inertia"
+        titlekr: "Moment of Inertia"
+        url: /dxl/x/xd540-t270/#moment-of-inertia
+        urlkr: /dxl/x/xd540-t270/#moment-of-inertia
+
+#XH430-W210 sidebar
+xd430-t210:
+  - title: "Specifications"
+    titlekr: "주요 사양"
+    url: /dxl/x/xd430-t210/#specifications
+    urlkr: /dxl/x/xd430-t210/#주요-사양
+    children:
+      - title: "Performance Graph"
+        titlekr: "성능 그래프"
+        url: /dxl/x/xd430-t210/#performance-graph
+        urlkr: /dxl/x/xd430-t210/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/x/xd430-t210/#control-table
+    urlkr: /dxl/x/xd430-t210/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/x/xd430-t210/#control-table-data-address
+        urlkr: /dxl/x/xd430-t210/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
+            url: /dxl/x/xd430-t210/#area-eeprom-ram
+            urlkr: /dxl/x/xd430-t210/#영역-eeprom-ram
+          - title: "Size"
+            titlekr: "크기"
+            url: /dxl/x/xd430-t210/#size
+            urlkr: /dxl/x/xd430-t210/#크기
+          - title: "Access"
+            titlekr: "접근권한"
+            url: /dxl/x/xd430-t210/#access
+            urlkr: /dxl/x/xd430-t210/#접근권한
+          - title: "Initial Value"
+            titlekr: "기본값"
+            url: /dxl/x/xd430-t210/#initial-value
+            urlkr: /dxl/x/xd430-t210/#기본값
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/x/xd430-t210/#control-table-of-eeprom-area
+        urlkr: /dxl/x/xd430-t210/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/x/xd430-t210/#control-table-of-ram-area
+        urlkr: /dxl/x/xd430-t210/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/x/xd430-t210/#control-table-description
+        urlkr: /dxl/x/xd430-t210/#컨트롤-테이블-설명
+        children:
+        - title: "Model Number(0)"
+          titlekr: "Model Number(0)"
+          url: /dxl/x/xd430-t210/#model-number0
+        - title: "Firmware Version(6)"
+          titlekr: "Firmware Version(6)"
+          url: /dxl/x/xd430-t210/#firmware-version6
+        - title: "ID(7)"
+          titlekr: "ID(7)"
+          url: /dxl/x/xd430-t210/#id7
+        - title: "Baud Rate(8)"
+          titlekr: "Baud Rate(8)"
+          url: /dxl/x/xd430-t210/#baud-rate8
+        - title: "Return Delay Time(9)"
+          titlekr: "Return Delay Time(9)"
+          url: /dxl/x/xd430-t210/#return-delay-time9
+        - title: "Drive Mode(10)"
+          titlekr: "Drive Mode(10)"
+          url: /dxl/x/xd430-t210/#drive-mode10
+        - title: "Operating Mode(11)"
+          titlekr: "Operating Mode(11)"
+          url: /dxl/x/xd430-t210/#operating-mode11
+        - title: "Secondary(Shadow) ID(12)"
+          titlekr: "Secondary(Shadow) ID(12)"
+          url: /dxl/x/xd430-t210/#secondaryshadow-id12
+        - title: "Protocol Type(13)"
+          titlekr: "Protocol Type(13)"
+          url: /dxl/x/xd430-t210/#protocol-type13
+        - title: "Homing Offset(20)"
+          titlekr: "Homing Offset(20)"
+          url: /dxl/x/xd430-t210/#homing-offset20
+        - title: "Moving Threshold(24)"
+          titlekr: "Moving Threshold(24)"
+          url: /dxl/x/xd430-t210/#moving-threshold24
+        - title: "Temperature Limit(31)"
+          titlekr: "Temperature Limit(31)"
+          url: /dxl/x/xd430-t210/#temperature-limit31
+        - title: "Min/Max Voltage Limit(32,34)"
+          titlekr: "Min/Max Voltage Limit(32,34)"
+          url: /dxl/x/xd430-t210/#minmax-voltage-limit32-34
+        - title: "PWM Lmit(36)"
+          titlekr: "PWM Limit(36)"
+          url: /dxl/x/xd430-t210/#pwm-limit36
+        - title: "Current Limit(38)"
+          titlekr: "Current Limit(38)"
+          url: /dxl/x/xd430-t210/#current-limit38
+        - title: "Velocity Limit(44)"
+          titlekr: "Velocity Limit(44)"
+          url: /dxl/x/xd430-t210/#velocity-limit44
+        - title: "Min/Max Position Limit(48, 52)"
+          titlekr: "Min/Max Position Limit(48, 52)"
+          url: /dxl/x/xd430-t210/#minmax-position-limit48-52
+        - title: "Startup Configuration(60)"
+          titlekr: "Startup Configuration(60)"
+          url: /dxl/x/xd430-t210/#startup-configuration60          
+        - title: "Shutdown(63)"
+          titlekr: "Shutdown(63)"
+          url: /dxl/x/xd430-t210/#shutdown63
+        - title: "Torque Enable(64)"
+          titlekr: "Torque Enable(64)"
+          url: /dxl/x/xd430-t210/#torque-enable64
+        - title: "LED(65)"
+          titlekr: "LED(65)"
+          url: /dxl/x/xd430-t210/#led65
+        - title: "Status Return Level(68)"
+          titlekr: "Status Return Level(68)"
+          url: /dxl/x/xd430-t210/#status-return-level68
+        - title: "Registered Instruction(69)"
+          titlekr: "Registered Instruction(69)"
+          url: /dxl/x/xd430-t210/#registered-instruction69
+        - title: "Hardware Error Status(70)"
+          titlekr: "Hardware Error Status(70)"
+          url: /dxl/x/xd430-t210/#hardware-error-status70
+        - title: "Velocity PI Gain(76, 78)"
+          titlekr: "Velocity PI Gain(76, 78)"
+          url: /dxl/x/xd430-t210/#velocity-pi-gain76-78
+        - title: "Position PID Gain(80, 82, 84)"
+          titlekr: "Position PID Gain(80, 82, 84)"
+          url: /dxl/x/xd430-t210/#position-pid-gain80-82-84
+        - title: "Feedforward 1st/2nd Gains(88, 90)"
+          titlekr: "Feedforward 1st/2nd Gains(88, 90)"
+          url: /dxl/x/xd430-t210/#feedforward-1st2nd-gains88-90
+        - title: "BUS Watchdog(98)"
+          titlekr: "BUS Watchdog(98)"
+          url: /dxl/x/xd430-t210/#bus-watchdog98
+        - title: "Goal PWM(100)"
+          titlekr: "Goal PWM(100)"
+          url: /dxl/x/xd430-t210/#goal-pwm100
+        - title: "Goal Current(102)"
+          titlekr: "Goal Current(102)"
+          url: /dxl/x/xd430-t210/#goal-current102
+        - title: "Goal Velocity(104)"
+          titlekr: "Goal Velocity(104)"
+          url: /dxl/x/xd430-t210/#goal-velocity104
+        - title: "Profile Acceleration(108)"
+          titlekr: "Profile Acceleration(108)"
+          url: /dxl/x/xd430-t210/#profile-acceleration108
+        - title: "Profile Velocity(112)"
+          titlekr: "Profile Velocity(112)"
+          url: /dxl/x/xd430-t210/#profile-velocity112
+        - title: "Goal Position(116)"
+          titlekr: "Goal Position(116)"
+          url: /dxl/x/xd430-t210/#goal-position116
+        - title: "Realtime Tick(120)"
+          titlekr: "Realtime Tick(120)"
+          url: /dxl/x/xd430-t210/#realtime-tick120
+        - title: "Moving(122)"
+          titlekr: "Moving(122)"
+          url: /dxl/x/xd430-t210/#moving122
+        - title: "Moving Status(123)"
+          titlekr: "Moving Status(123)"
+          url: /dxl/x/xd430-t210/#moving-status123
+        - title: "Present PWM(124)"
+          titlekr: "Present PWM(124)"
+          url: /dxl/x/xd430-t210/#present-pwm124
+        - title: "Present Current(126)"
+          titlekr: "Present Current(126)"
+          url: /dxl/x/xd430-t210/#present-current126
+        - title: "Present Velocity(128)"
+          titlekr: "Present Velocity(128)"
+          url: /dxl/x/xd430-t210/#present-velocity128
+        - title: "Present Position(132)"
+          titlekr: "Present Position(132)"
+          url: /dxl/x/xd430-t210/#present-position132
+        - title: "Velocity Trajectory(136)"
+          titlekr: "Velocity Trajectory(136)"
+          url: /dxl/x/xd430-t210/#velocity-trajectory136
+        - title: "Position Trajectory(140)"
+          titlekr: "Position Trajectory(140)"
+          url: /dxl/x/xd430-t210/#position-trajectory140
+        - title: "Present Input Voltage(144)"
+          titlekr: "Present Input Voltage(144)"
+          url: /dxl/x/xd430-t210/#present-input-voltage144
+        - title: "Present Temperature(146)"
+          titlekr: "Present Temperature(146)"
+          url: /dxl/x/xd430-t210/#present-temperature146
+        - title: "Backup Ready(147)"
+          titlekr: "Backup Ready(147)"
+          url: /dxl/x/xd430-t210/#backup-ready147        
+        - title: "Indirect Address"
+          titlekr: "Indirect Address"
+          url: /dxl/x/xd430-t210/#indirect-address
+        - title: "Indirect Data"
+          titlekr: "Indirect Data"
+          url: /dxl/x/xd430-t210/#indirect-data
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/x/xd430-t210/#how-to-assemble
+    urlkr: /dxl/x/xd430-t210/#조립-예시
+    children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xd430-t210/#wiring-through-back-case
+        urlkr: /dxl/x/xd430-t210/#배선-예시
+      - title: "Option Frame Assembly"
+        titlekr: "옵션프레임 조립"
+        url: /dxl/x/xd430-t210/#option-frame-assembly
+        urlkr: /dxl/x/xd430-t210/#옵션프레임-조립
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/x/xd430-t210/#maintenance
+    urlkr: /dxl/x/xd430-t210/#유지보수
+    children:
+      - title: "Horn, Gear Replacement"
+        titlekr: "혼과 기어 교체"
+        url: /dxl/x/xd430-t210/#horn-and-gear-replacement
+        urlkr: /dxl/x/xd430-t210/#혼과-기어-교체
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/x/xd430-t210/#reference
+    urlkr: /dxl/x/xd430-t210/#참고자료
+    children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/x/xd430-t210/#what-is-the-profile
+        urlkr: /dxl/x/xd430-t210/#profile
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/x/xd430-t210/#certifications
+        urlkr: /dxl/x/xd430-t210/#인증-획득
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/x/xd430-t210/#quick-start
+        urlkr: /dxl/x/xd430-t210/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/x/xd430-t210/#connector-information
+        urlkr: /dxl/x/xd430-t210/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/x/xd430-t210/#communication-circuit
+        urlkr: /dxl/x/xd430-t210/#통신-회로
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/x/xd430-t210/#drawings
+        urlkr: /dxl/x/xd430-t210/#도면
+      - title: "Moment of Inertia"
+        titlekr: "Moment of Inertia"
+        url: /dxl/x/xd430-t210/#moment-of-inertia
+        urlkr: /dxl/x/xd430-t210/#moment-of-inertia
+
+#XH430-W350 sidebar
+xd430-t350:
+  - title: "Specifications"
+    titlekr: "주요 사양"
+    url: /dxl/x/xd430-t350/#specifications
+    urlkr: /dxl/x/xd430-t350/#주요-사양
+    children:
+      - title: "Performance Graph"
+        titlekr: "성능 그래프"
+        url: /dxl/x/xd430-t350/#performance-graph
+        urlkr: /dxl/x/xd430-t350/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/x/xd430-t350/#control-table
+    urlkr: /dxl/x/xd430-t350/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/x/xd430-t350/#control-table-data-address
+        urlkr: /dxl/x/xd430-t350/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
+            url: /dxl/x/xd430-t350/#area-eeprom-ram
+            urlkr: /dxl/x/xd430-t350/#영역-eeprom-ram
+          - title: "Size"
+            titlekr: "크기"
+            url: /dxl/x/xd430-t350/#size
+            urlkr: /dxl/x/xd430-t350/#크기
+          - title: "Access"
+            titlekr: "접근권한"
+            url: /dxl/x/xd430-t350/#access
+            urlkr: /dxl/x/xd430-t350/#접근권한
+          - title: "Initial Value"
+            titlekr: "기본값"
+            url: /dxl/x/xd430-t350/#initial-value
+            urlkr: /dxl/x/xd430-t350/#기본값
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/x/xd430-t350/#control-table-of-eeprom-area
+        urlkr: /dxl/x/xd430-t350/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/x/xd430-t350/#control-table-of-ram-area
+        urlkr: /dxl/x/xd430-t350/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/x/xd430-t350/#control-table-description
+        urlkr: /dxl/x/xd430-t350/#컨트롤-테이블-설명
+        children:
+        - title: "Model Number(0)"
+          titlekr: "Model Number(0)"
+          url: /dxl/x/xd430-t350/#model-number0
+        - title: "Firmware Version(6)"
+          titlekr: "Firmware Version(6)"
+          url: /dxl/x/xd430-t350/#firmware-version6
+        - title: "ID(7)"
+          titlekr: "ID(7)"
+          url: /dxl/x/xd430-t350/#id7
+        - title: "Baud Rate(8)"
+          titlekr: "Baud Rate(8)"
+          url: /dxl/x/xd430-t350/#baud-rate8
+        - title: "Return Delay Time(9)"
+          titlekr: "Return Delay Time(9)"
+          url: /dxl/x/xd430-t350/#return-delay-time9
+        - title: "Drive Mode(10)"
+          titlekr: "Drive Mode(10)"
+          url: /dxl/x/xd430-t350/#drive-mode10
+        - title: "Operating Mode(11)"
+          titlekr: "Operating Mode(11)"
+          url: /dxl/x/xd430-t350/#operating-mode11
+        - title: "Secondary(Shadow) ID(12)"
+          titlekr: "Secondary(Shadow) ID(12)"
+          url: /dxl/x/xd430-t350/#secondaryshadow-id12
+        - title: "Protocol Type(13)"
+          titlekr: "Protocol Type(13)"
+          url: /dxl/x/xd430-t350/#protocol-type13
+        - title: "Homing Offset(20)"
+          titlekr: "Homing Offset(20)"
+          url: /dxl/x/xd430-t350/#homing-offset20
+        - title: "Moving Threshold(24)"
+          titlekr: "Moving Threshold(24)"
+          url: /dxl/x/xd430-t350/#moving-threshold24
+        - title: "Temperature Limit(31)"
+          titlekr: "Temperature Limit(31)"
+          url: /dxl/x/xd430-t350/#temperature-limit31
+        - title: "Min/Max Voltage Limit(32,34)"
+          titlekr: "Min/Max Voltage Limit(32,34)"
+          url: /dxl/x/xd430-t350/#minmax-voltage-limit32-34
+        - title: "PWM Lmit(36)"
+          titlekr: "PWM Limit(36)"
+          url: /dxl/x/xd430-t350/#pwm-limit36
+        - title: "Current Limit(38)"
+          titlekr: "Current Limit(38)"
+          url: /dxl/x/xd430-t350/#current-limit38
+        - title: "Velocity Limit(44)"
+          titlekr: "Velocity Limit(44)"
+          url: /dxl/x/xd430-t350/#velocity-limit44
+        - title: "Min/Max Position Limit(48, 52)"
+          titlekr: "Min/Max Position Limit(48, 52)"
+          url: /dxl/x/xd430-t350/#minmax-position-limit48-52
+        - title: "Startup Configuration(60)"
+          titlekr: "Startup Configuration(60)"
+          url: /dxl/x/xd430-t350/#startup-configuration60       
+        - title: "Shutdown(63)"
+          titlekr: "Shutdown(63)"
+          url: /dxl/x/xd430-t350/#shutdown63
+        - title: "Torque Enable(64)"
+          titlekr: "Torque Enable(64)"
+          url: /dxl/x/xd430-t350/#torque-enable64
+        - title: "LED(65)"
+          titlekr: "LED(65)"
+          url: /dxl/x/xd430-t350/#led65
+        - title: "Status Return Level(68)"
+          titlekr: "Status Return Level(68)"
+          url: /dxl/x/xd430-t350/#status-return-level68
+        - title: "Registered Instruction(69)"
+          titlekr: "Registered Instruction(69)"
+          url: /dxl/x/xd430-t350/#registered-instruction69
+        - title: "Hardware Error Status(70)"
+          titlekr: "Hardware Error Status(70)"
+          url: /dxl/x/xd430-t350/#hardware-error-status70
+        - title: "Velocity PI Gain(76, 78)"
+          titlekr: "Velocity PI Gain(76, 78)"
+          url: /dxl/x/xd430-t350/#velocity-pi-gain76-78
+        - title: "Position PID Gain(80, 82, 84)"
+          titlekr: "Position PID Gain(80, 82, 84)"
+          url: /dxl/x/xd430-t350/#position-pid-gain80-82-84
+        - title: "Feedforward 1st/2nd Gains(88, 90)"
+          titlekr: "Feedforward 1st/2nd Gains(88, 90)"
+          url: /dxl/x/xd430-t350/#feedforward-1st2nd-gains88-90
+        - title: "BUS Watchdog(98)"
+          titlekr: "BUS Watchdog(98)"
+          url: /dxl/x/xd430-t350/#bus-watchdog98
+        - title: "Goal PWM(100)"
+          titlekr: "Goal PWM(100)"
+          url: /dxl/x/xd430-t350/#goal-pwm100
+        - title: "Goal Current(102)"
+          titlekr: "Goal Current(102)"
+          url: /dxl/x/xd430-t350/#goal-current102
+        - title: "Goal Velocity(104)"
+          titlekr: "Goal Velocity(104)"
+          url: /dxl/x/xd430-t350/#goal-velocity104
+        - title: "Profile Acceleration(108)"
+          titlekr: "Profile Acceleration(108)"
+          url: /dxl/x/xd430-t350/#profile-acceleration108
+        - title: "Profile Velocity(112)"
+          titlekr: "Profile Velocity(112)"
+          url: /dxl/x/xd430-t350/#profile-velocity112
+        - title: "Goal Position(116)"
+          titlekr: "Goal Position(116)"
+          url: /dxl/x/xd430-t350/#goal-position116
+        - title: "Realtime Tick(120)"
+          titlekr: "Realtime Tick(120)"
+          url: /dxl/x/xd430-t350/#realtime-tick120
+        - title: "Moving(122)"
+          titlekr: "Moving(122)"
+          url: /dxl/x/xd430-t350/#moving122
+        - title: "Moving Status(123)"
+          titlekr: "Moving Status(123)"
+          url: /dxl/x/xd430-t350/#moving-status123
+        - title: "Present PWM(124)"
+          titlekr: "Present PWM(124)"
+          url: /dxl/x/xd430-t350/#present-pwm124
+        - title: "Present Current(126)"
+          titlekr: "Present Current(126)"
+          url: /dxl/x/xd430-t350/#present-current126
+        - title: "Present Velocity(128)"
+          titlekr: "Present Velocity(128)"
+          url: /dxl/x/xd430-t350/#present-velocity128
+        - title: "Present Position(132)"
+          titlekr: "Present Position(132)"
+          url: /dxl/x/xd430-t350/#present-position132
+        - title: "Velocity Trajectory(136)"
+          titlekr: "Velocity Trajectory(136)"
+          url: /dxl/x/xd430-t350/#velocity-trajectory136
+        - title: "Position Trajectory(140)"
+          titlekr: "Position Trajectory(140)"
+          url: /dxl/x/xd430-t350/#position-trajectory140
+        - title: "Present Input Voltage(144)"
+          titlekr: "Present Input Voltage(144)"
+          url: /dxl/x/xd430-t350/#present-input-voltage144
+        - title: "Present Temperature(146)"
+          titlekr: "Present Temperature(146)"
+          url: /dxl/x/xd430-t350/#present-temperature146
+        - title: "Backup Ready(147)"
+          titlekr: "Backup Ready(147)"
+          url: /dxl/x/xd430-t350/#backup-ready147         
+        - title: "Indirect Address"
+          titlekr: "Indirect Address"
+          url: /dxl/x/xd430-t350/#indirect-address
+        - title: "Indirect Data"
+          titlekr: "Indirect Data"
+          url: /dxl/x/xd430-t350/#indirect-data
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/x/xd430-t350/#how-to-assemble
+    urlkr: /dxl/x/xd430-t350/#조립-예시
+    children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xd430-t350/#wiring-through-back-case
+        urlkr: /dxl/x/xd430-t350/#배선-예시
+      - title: "Option Frame Assembly"
+        titlekr: "옵션프레임 조립"
+        url: /dxl/x/xd430-t350/#option-frame-assembly
+        urlkr: /dxl/x/xd430-t350/#옵션프레임-조립
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/x/xd430-t350/#maintenance
+    urlkr: /dxl/x/xd430-t350/#유지보수
+    children:
+      - title: "Horn, Gear Replacement"
+        titlekr: "혼과 기어 교체"
+        url: /dxl/x/xd430-t350/#horn-and-gear-replacement
+        urlkr: /dxl/x/xd430-t350/#혼과-기어-교체
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/x/xd430-t350/#reference
+    urlkr: /dxl/x/xd430-t350/#참고자료
+    children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/x/xd430-t350/#what-is-the-profile
+        urlkr: /dxl/x/xd430-t350/#profile
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/x/xd430-t350/#certifications
+        urlkr: /dxl/x/xd430-t350/#인증-획득
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/x/xd430-t350/#quick-start
+        urlkr: /dxl/x/xd430-t350/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/x/xd430-t350/#connector-information
+        urlkr: /dxl/x/xd430-t350/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/x/xd430-t350/#communication-circuit
+        urlkr: /dxl/x/xd430-t350/#통신-회로
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/x/xd430-t350/#drawings
+        urlkr: /dxl/x/xd430-t350/#도면
+      - title: "Moment of Inertia"
+        titlekr: "Moment of Inertia"
+        url: /dxl/x/xd430-t350/#moment-of-inertia
+        urlkr: /dxl/x/xd430-t350/#moment-of-inertia
+
 #XH540-W150 sidebar
 xh540-w150:
   - title: "Specifications"
@@ -11298,6 +12310,8 @@ xh540-v270:
         titlekr: "도면"
         url: /dxl/x/xh540-v270/#drawings
         urlkr: /dxl/x/xh540-v270/#도면
+
+
 
 #H42-20-S300-R sidebar
 h42-20-s300-r:
