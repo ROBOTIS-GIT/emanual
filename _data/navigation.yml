@@ -59,6 +59,18 @@ main:
       - title: "XW430-T333"
         titlekr: "XW430-T333"
         url: /dxl/x/xw430-t333/
+      - title: "XD540-T150"
+        titlekr: "XD540-T150"
+        url: /dxl/x/xd540-t150/
+      - title: "XD540-T270"
+        titlekr: "XD540-T270"
+        url: /dxl/x/xd540-t270/
+      - title: "XD430-T210"
+        titlekr: "XD430-T210"
+        url: /dxl/x/xd430-t210/
+      - title: "XD430-T350"
+        titlekr: "XD430-T350"
+        url: /dxl/x/xd430-t350/                                
       - title: "XH540-W150"
         titlekr: "XH540-W150"
         url: /dxl/x/xh540-w150/
@@ -753,6 +765,10 @@ all-dynamixel:
         titlekr: "XW 시리즈"
         url: /dxl/#xw-series
         urlkr: /dxl/#xw-시리즈
+      - title: "XD Series"
+        titlekr: "XD 시리즈"
+        url: /dxl/#xd-series
+        urlkr: /dxl/#xd-시리즈
       - title: "XH Series"
         titlekr: "XH 시리즈"
         url: /dxl/#xh-series
@@ -4217,6 +4233,10 @@ dxl_x_main:
         titlekr: "XW 시리즈"
         url: /dxl/x/#xw-series
         urlkr: /dxl/x/#xw-시리즈
+      - title: "XD Series"
+        titlekr: "XD 시리즈"
+        url: /dxl/x/#xd-series
+        urlkr: /dxl/x/#xd-시리즈
       - title: "XH Series"
         titlekr: "XH 시리즈"
         url: /dxl/x/#xh-series

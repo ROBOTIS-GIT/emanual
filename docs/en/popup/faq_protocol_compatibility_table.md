@@ -65,6 +65,15 @@ X : Incompatible
 | XW430-T333-R | O* <br>(F/W address 13) |           O            |
 | XW430-T260-R | O* <br>(F/W address 13) |           O            |
 
+## [XD Series](#xd-series)
+
+| Model        | DYNAMIXEL Protocol 1.0  | DYNAMIXEL Protocol 2.0 |
+|:-------------|:-----------------------:|:----------------------:|
+| XD540-T270-R | O* <br>(F/W address 13) |           O            |
+| XD540-T150-R | O* <br>(F/W address 13) |           O            |
+| XD430-T350-R | O* <br>(F/W address 13) |           O            |
+| XD430-T210-R | O* <br>(F/W address 13) |           O            |
+
 ## [XH Series](#xh-series)
 
 | Model      | DYNAMIXEL Protocol 1.0  | DYNAMIXEL Protocol 2.0 |
