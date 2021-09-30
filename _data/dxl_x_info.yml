@@ -8,7 +8,9 @@ common_x_specs:
   mode:               &mode           "전류 제어 모드<br />속도 제어 모드<br />위치 제어 모드 (0 ~ 360 [&deg;])<br />확장 위치 제어 모드 (멀티턴)<br />전류기반 위치 제어 모드<br />PWM 제어 모드 (Voltage Control Mode)"
   mode_en:            &mode_en        "Current Control Mode<br />Velcoity Control Mode<br />Position Control Mode (0 ~ 360 [&deg;])<br />Extended Position Control Mode (Multi-turn)<br />Current-based Position Control Mode<br />PWM Control Mode (Voltage Control Mode)"
   motor:              &motor          "Coreless(Maxon)"
-  weight_330:         &weight_330     "18 [g]"
+  motor_coreless_dc:  &motor_coreless_dc "Coreless DC"
+  weight_xl330:       &weight_xl330   "18 [g]"
+  weight_xc330:       &weight_xc330   "23 [g]"
   weight_430:         &weight_430     "82 [g]"
   weight_540:         &weight_540     "165 [g]"
   dimension_330:      &dimension_330  "20.0 x 34.0 x 26.0 [mm]"
@@ -20,6 +22,8 @@ common_x_specs:
   temperature:        &temperature    "-5 ~ +80 [&deg;C]"
   voltage_12:         &voltage_12     "10.0 ~ 14.8 [V] (**권장 전압 : 12.0 [V]**)"
   voltage_12_en:      &voltage_12_en  "10.0 ~ 14.8 [V] (**Recommended : 12.0 [V]**)"
+  voltage_6_12:       &voltage_6_12    "6.5 ~ 12.0 [V] (**권장 전압 : 11.1 [V]**)"
+  voltage_6_12_en:    &voltage_6_12_en "6.5 ~ 12.0 [V] (**Recommended : 11.1 [V]**)"
   voltage_05_en:      &voltage_05_en  "3.7 ~ 6.0 [V] (**Recommended : 5.0 [V]**)"
   voltage_05:         &voltage_05     "3.7 ~ 6.0 [V] (**권장 전압 : 5.0 [V]**)"
   voltage_24:         &voltage_24     "24.0 [V] (**권장 전압 : 24.0 [V]**)"
@@ -52,7 +56,7 @@ xl330-m077:
   backlash:           "N/A"
   mode:               *mode
   mode_en:            *mode_en
-  weight:             *weight_330
+  weight:             *weight_xl330
   dimensions:         *dimension_330
   gearratio:          "77.5 : 1"
   noloadspeed:        "278 [rev/min] (at 3.7 [V]) <br /> **383 [rev/min] (at 5.0 [V])** <br /> 456 [rev/min] (at 6.0 [V])"
@@ -82,7 +86,7 @@ xl330-m288:
   backlash:           "N/A"
   mode:               *mode
   mode_en:            *mode_en
-  weight:             *weight_330
+  weight:             *weight_xl330
   dimensions:         *dimension_330
   gearratio:          "288.4 : 1"
   noloadspeed:        "76 [rev/min] (at 3.7 [V]) <br /> **103 [rev/min] (at 5.0 [V])** <br /> 123 [rev/min] (at 6.0 [V])"
@@ -100,6 +104,126 @@ xl330-m288:
   feedback:           *feedback
   case_material:      "Engineering Plastic"
   gear_material:      "Engineering Plastic"
+  standbycurrent:     17 [mA]
+
+xc330-m181:
+  mcu:                "ARM CORTEX-M0+ (64 [MHz], 32Bit)"
+  encoder:            "Contactless absolute encoder (12Bit, 360 [&deg;])<br />Maker : ams(www.ams.com), Part No : AS5601"
+  motor:              *motor_coreless_dc
+  baudrate:           "9,600 [bps] ~ 4 [Mbps]"
+  control:            *control
+  resolution:         *resolution
+  backlash:           "N/A"
+  mode:               *mode
+  mode_en:            *mode_en
+  weight:             *weight_xc330
+  dimensions:         *dimension_330
+  gearratio:          "180.62 : 1"
+  noloadspeed:        "95 [rev/min] (at 3.7 [V]) <br /> **129 [rev/min] (at 5.0 [V])** <br /> 155 [rev/min] (at 6.0 [V])"
+  stalltorque:        "0.52 [N.m] (at 3.7 [V], 1.34 [A]) <br /> **0.60 [N.m] (at 5.0 [V], 1.80 [A])** <br /> 0.66 [N.m] (at 6.0 [V], 2.15 [A])"
+  radialload:         "N/A"
+  radialload_en:      "N/A"
+  axialload:          "N/A"
+  temperature:        "-5 ~ +60 [&deg;C]"
+  voltage:            *voltage_05
+  voltage_en:         *voltage_05_en
+  command:            *command
+  protocoltype:       *ttl
+  physicalconnection: *ttl_connection_3v3
+  id:                 *id
+  feedback:           *feedback
+  case_material:      "Engineering Plastic"
+  gear_material:      "Full Metal Gear, 2 Bearing"
+  standbycurrent:     17 [mA]
+
+xc330-m288:
+  mcu:                "ARM CORTEX-M0+ (64 [MHz], 32Bit)"
+  encoder:            "Contactless absolute encoder (12Bit, 360 [&deg;])<br />Maker : ams(www.ams.com), Part No : AS5601"
+  motor:              *motor_coreless_dc
+  baudrate:           "9,600 [bps] ~ 4 [Mbps]"
+  control:            *control
+  resolution:         *resolution
+  backlash:           "N/A"
+  mode:               *mode
+  mode_en:            *mode_en
+  weight:             *weight_xc330
+  dimensions:         *dimension_330
+  gearratio:          "288.35 : 1"
+  noloadspeed:        "59 [rev/min] (at 3.7 [V]) <br /> **81 [rev/min] (at 5.0 [V])** <br /> 97 [rev/min] (at 6.0 [V])"
+  stalltorque:        "0.69 [N.m] (at 3.7 [V], 1.34 [A]) <br /> **0.93 [N.m] (at 5.0 [V], 1.80 [A])** <br /> 1.10 [N.m] (at 6.0 [V], 2.15 [A])"
+  radialload:         "N/A"
+  radialload_en:      "N/A"
+  axialload:          "N/A"
+  temperature:        "-5 ~ +60 [&deg;C]"
+  voltage:            *voltage_05
+  voltage_en:         *voltage_05_en
+  command:            *command
+  protocoltype:       *ttl
+  physicalconnection: *ttl_connection_3v3
+  id:                 *id
+  feedback:           *feedback
+  case_material:      "Engineering Plastic"
+  gear_material:      "Full Metal Gear, 2 Bearing"
+  standbycurrent:     17 [mA]
+
+xc330-t181:
+  mcu:                "ARM CORTEX-M0+ (64 [MHz], 32Bit)"
+  encoder:            "Contactless absolute encoder (12Bit, 360 [&deg;])<br />Maker : ams(www.ams.com), Part No : AS5601"
+  motor:              *motor_coreless_dc
+  baudrate:           "9,600 [bps] ~ 4 [Mbps]"
+  control:            *control
+  resolution:         *resolution
+  backlash:           "N/A"
+  mode:               *mode
+  mode_en:            *mode_en
+  weight:             *weight_xc330
+  dimensions:         *dimension_330
+  gearratio:          "180.62 : 1"
+  noloadspeed:        "83 [rev/min] (at 9.0 [V]) <br /> **104 [rev/min] (at 11.1 [V])** <br /> 113 [rev/min] (at 12.0 [V])"
+  stalltorque:        "0.65 [N.m] (at 9.0 [V], 0.61 [A]) <br /> **0.76 [N.m] (at 11.1 [V], 0.80 [A])** <br /> 0.80 [N.m] (at 12.0 [V], 0.88 [A])"
+  radialload:         "N/A"
+  radialload_en:      "N/A"
+  axialload:          "N/A"
+  temperature:        "-5 ~ +60 [&deg;C]"
+  voltage:            *voltage_6_12
+  voltage_en:         *voltage_6_12_en
+  command:            *command
+  protocoltype:       *ttl
+  physicalconnection: *ttl_connection_5v
+  id:                 *id
+  feedback:           *feedback
+  case_material:      "Engineering Plastic"
+  gear_material:      "Full Metal Gear, 2 Bearing"
+  standbycurrent:     17 [mA]
+
+xc330-t288:
+  mcu:                "ARM CORTEX-M0+ (64 [MHz], 32Bit)"
+  encoder:            "Contactless absolute encoder (12Bit, 360 [&deg;])<br />Maker : ams(www.ams.com), Part No : AS5601"
+  motor:              *motor_coreless_dc
+  baudrate:           "9,600 [bps] ~ 4 [Mbps]"
+  control:            *control
+  resolution:         *resolution
+  backlash:           "N/A"
+  mode:               *mode
+  mode_en:            *mode_en
+  weight:             *weight_xc330
+  dimensions:         *dimension_330
+  gearratio:          "288.35 : 1"
+  noloadspeed:        "52 [rev/min] (at 9.0 [V]) <br /> **65 [rev/min] (at 11.1 [V])** <br /> 71 [rev/min] (at 12.0 [V])"
+  stalltorque:        "0.76 [N.m] (at 9.0 [V], 0.61 [A]) <br /> **0.92 [N.m] (at 11.1 [V], 0.80 [A])** <br /> 1.00 [N.m] (at 12.0 [V], 0.88 [A])"
+  radialload:         "N/A"
+  radialload_en:      "N/A"
+  axialload:          "N/A"
+  temperature:        "-5 ~ +60 [&deg;C]"
+  voltage:            *voltage_6_12
+  voltage_en:         *voltage_6_12_en
+  command:            *command
+  protocoltype:       *ttl
+  physicalconnection: *ttl_connection_5v
+  id:                 *id
+  feedback:           *feedback
+  case_material:      "Engineering Plastic"
+  gear_material:      "Full Metal Gear, 2 Bearing"
   standbycurrent:     17 [mA]
 
 xh430-v210:
@@ -603,6 +727,68 @@ xw540-t260:
   axialload:          *axialload
   temperature:        *temperature
   # ip:                 "IP 67"  
+  voltage:            *voltage_12
+  voltage_en:         *voltage_12_en
+  command:            *command
+  protocoltype:       *rs485
+  physicalconnection: *rs485_connection
+  id:                 *id
+  feedback:           *feedback
+  case_material:      "Full Metal Case"
+  gear_material:      "Full Metal Gear"
+  standbycurrent:     *standbycurrent_40
+
+xw430-t333:
+  mcu:                *mcu
+  encoder:            *encoder
+  motor:              *motor
+  baudrate:           *baudrate
+  control:            *control
+  resolution:         *resolution
+  backlash:           *backlash_x
+  mode:               *mode
+  mode_en:            *mode_en
+  weight:             "96 g"
+  dimensions:         "28.5 x 46.5 x 34.0 mm"
+  gearratio:          "332.8 : 1"
+  stalltorque:        "2.9 [N.m] (at 11.1 [V], 1.2 [A])<br />**3.1 [N.m] (at 12.0 [V], 1.3 [A])**<br />3.6 [N.m] (at 14.8 [V], 1.5 [A])"
+  noloadspeed:        "29 [rev/min] (at 11.1 [V]<br />**31 [rev/min] (at 12.0 [V]**<br />39 [rev/min] (at 14.8 [V])"
+  radialload:         *radialload
+  radialload_en:      *radialload_en
+  axialload:          *axialload
+  temperature:        *temperature
+  # ip:                 "IP 67"
+  voltage:            *voltage_12
+  voltage_en:         *voltage_12_en
+  command:            *command
+  protocoltype:       *rs485
+  physicalconnection: *rs485_connection
+  id:                 *id
+  feedback:           *feedback
+  case_material:      "Full Metal Case"
+  gear_material:      "Full Metal Gear"
+  standbycurrent:     *standbycurrent_40
+
+xw430-t200:
+  mcu:                *mcu
+  encoder:            *encoder
+  motor:              *motor
+  baudrate:           *baudrate
+  control:            *control
+  resolution:         *resolution
+  backlash:           *backlash_x
+  mode:               *mode
+  mode_en:            *mode_en
+  weight:             "96 g"
+  dimensions:         "28.5 x 46.5 x 34.0 mm"
+  gearratio:          "200.1 : 1"
+  stalltorque:        "2.1 [N.m] (at 11.1 [V], 1.2 [A])<br />**2.3 [N.m] (at 12.0 [V], 1.3 [A])**<br />2.7 [N.m] (at 14.8 [V], 1.5 [A])"
+  noloadspeed:        "49 [rev/min] (at 11.1 [V]<br />**53 [rev/min] (at 12.0 [V]**<br />66 [rev/min] (at 14.8 [V])"
+  radialload:         *radialload
+  radialload_en:      *radialload_en
+  axialload:          *axialload
+  temperature:        *temperature
+  # ip:                 "IP 67"
   voltage:            *voltage_12
   voltage_en:         *voltage_12_en
   command:            *command

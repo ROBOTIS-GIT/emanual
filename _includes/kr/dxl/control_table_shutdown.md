@@ -67,6 +67,28 @@ Revision: PRO+ > DYNAMIXEL-P.
 | Bit 2 |        Overheating Error        | 설정된 온도를 벗어난 경우                                                  |
 | Bit 1 | Motor Hall Sensor Error(기본값) | 모터의 홀센서 값이 정상 범위를 벗어났을 경우                                           |
 | Bit 0 |       Input Voltage Error       | 인가된 전압이 설정된 동작 전압 범위를 벗어났을 경우                                    |
+{% elsif page.product_group=='xl330' or page.ref=='xc330-m181' or page.ref=='xc330-m288' %}
+|  Bit  |              명칭               | 내용                                                                                   |
+|:-----:|:-------------------------------:|:---------------------------------------------------------------------------------------|
+| Bit 7 |                -                | 미사용, 항상 '0'                                                               |
+| Bit 6 |                -                | 미사용, 항상 '0'                                                               |
+| Bit 5 |     Overload Error(기본값)       | 모터의 최대 출력으로 제어 할 수 없는 하중이 지속적으로 적용되는 경우                       |
+| Bit 4 | Electrical Shock Error(기본값)   | 전기적으로 회로가 충격을 받거나, 입력 전력이 부족해서, 모터가 정상동작하지 못하는 경우         |
+| Bit 3 |                -                | 미사용, 항상 '0'                                                               |
+| Bit 2 |        Overheating Error(기본값) | 설정된 온도를 벗어난 경우                                                         |
+| Bit 1 |               -                 | 미사용, 항상 '0'                                                               |
+| Bit 0 |       Input Voltage Error(기본값) | 인가된 전압이 설정된 동작 전압 범위를 벗어났을 경우                                    |
+{% elsif page.ref=='xc330-t181' or page.ref=='xc330-t288' %}
+|  Bit  |              명칭               | 내용                                                                                   |
+|:-----:|:-------------------------------:|:---------------------------------------------------------------------------------------|
+| Bit 7 |                -                | 미사용, 항상 '0'                                                               |
+| Bit 6 |                -                | 미사용, 항상 '0'                                                               |
+| Bit 5 |     Overload Error(기본값)       | 모터의 최대 출력으로 제어 할 수 없는 하중이 지속적으로 적용되는 경우                       |
+| Bit 4 | Electrical Shock Error(기본값)   | 전기적으로 회로가 충격을 받거나, 입력 전력이 부족해서, 모터가 정상동작하지 못하는 경우         |
+| Bit 3 |                -                | 미사용, 항상 '0'                                                               |
+| Bit 2 |        Overheating Error(기본값) | 설정된 온도를 벗어난 경우                                                         |
+| Bit 1 |               -                 | 미사용, 항상 '0'                                                               |
+| Bit 0 |       Input Voltage Error       | 인가된 전압이 설정된 동작 전압 범위를 벗어났을 경우                                    |
 {% else %}
 |  Bit  |              명칭              | 상세 설명                                                                                                                      |
 |:-----:|:------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------|
@@ -82,7 +104,7 @@ Revision: PRO+ > DYNAMIXEL-P.
 
 {% endif %}
 
-{% if page.product_group=='dxl_xw540' %}
+{% if page.product_group=='dxl_xw540' or page.product_group=='dxl_xw430' %}
 {% capture shutdown_uptodate_firmware_released_dxl %}
 **참고** : Shutdown이 발생할 경우 장치를 **장치를 REBOOT** 시켜 주세요
 -  H/W REBOOT : 전원을 껐다 켜주세요.
@@ -97,7 +119,7 @@ Revision: PRO+ > DYNAMIXEL-P.
 {% capture shutdown_01 %}
 **참고** :
 {% if page.product_group=='dxl_pro' or page.product_group=='dxl_pro_a' or page.product_group=='dxl_p' %}1. Shutdown이 발생하면 **전기적 브레이크(Dynamic brake) 상태로 전환**됩니다.{% else %}{% endif %}
-2. Shutdown이 발생하면 **1초 주기로 LED가 점멸** 합니다.{% if page.product_group=='dxl_pro' or page.product_group=='dxl_pro_a' or page.product_group=='dxl_p' or page.product_group=='xl330' %}{% else %}(**펌웨어 버전 41 이상**) {% endif %}
+2. Shutdown이 발생하면 **1초 주기로 LED가 점멸** 합니다.{% if page.product_group=='dxl_pro' or page.product_group=='dxl_pro_a' or page.product_group=='dxl_p' or page.product_group=='xl330' or page.product_group=='xc330' %}{% else %}(**펌웨어 버전 41 이상**) {% endif %}
 3. Shutdown이 발생하면 다음과 같은 방법으로 **장치를 REBOOT** 시켜 주세요.
 -  H/W REBOOT : 전원을 껐다 켜주세요.
 -  S/W REBOOT : REBOOT Instruction을 사용할수 있습니다. [Protocol 2.0](/docs/kr/dxl/protocol2/#reboot)을 참고해주세요.

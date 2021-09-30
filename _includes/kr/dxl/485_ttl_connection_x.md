@@ -23,7 +23,7 @@
 **참고**: 위 회로는 5V 전원을 사용하는 MCU를 사용하거나 IO가 5V tolerant한 경우 사용가능합니다. 그 외의 경우, Level Shifter를 사용하세요.
 {: .notice}
 
-{% if page.product_group=='dxl_xw540' %}
+{% if page.product_group=='dxl_xw540' or page.product_group=='dxl_xw430' %}
 
 ![](/assets/images/dxl/x/xw/xw_series_485_pin.png)
 > XW540-시리즈 커넥터  

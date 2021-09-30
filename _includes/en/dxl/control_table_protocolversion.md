@@ -1,4 +1,4 @@
-{% if page.product_group=='xl330' %}
+{% if page.product_group=='xl330' or page.product_group=='xc330' %}
 
 To communicate with DYANMIXEL, it is important to select a proper protocol type.
 
@@ -7,7 +7,7 @@ The following table lists available protocol types compatible with DYNAMIXEL for
 Select a desired DYNAMIXEL protocol type according to your application.
 
 |   Value    |                       Type                        |                     Descriptions                      |
-| :--------: | :-----------------------------------------------: | :---------------------------------------------------: |
+|:----------:|:-------------------------------------------------:|:-----------------------------------------------------:|
 | 2(default) | [DYNAMIXEL Protocol 2.0](#dynamixel-protocol-20)  |       [Protocol Compatibility table]{: .popup}        |
 |     20     | [Experimental S.BUS](#experimental-sbus-protocol) | Compatible with S.BUS Protocol supported RC receivers |
 |     21     | [Experimental iBUS](#experimental-ibus-protocol)  | Compatible with iBUS Protocol supported RC receivers  |
@@ -84,7 +84,7 @@ DYNAMIXEL protocol type (either DYNAMIXEL Protocol 1.0 or 2.0) can be selected u
 It is recommended to use an identical protocol type for multiple DYNAMIXEL.
 
 |   Value    |      Description       |                             Compatible DYNAMIXEL                              |
-| :--------: | :--------------------: | :---------------------------------------------------------------------------: |
+|:----------:|:----------------------:|:-----------------------------------------------------------------------------:|
 |     1      | DYNAMIXEL Protocol 1.0 | AX Series, DX Series, RX Series, EX Series, MX Series with Firmware below v39 |
 | 2(default) | DYNAMIXEL Protocol 2.0 |         MX-28/64/106 with Firmware v39 or above, X Series, PRO Series         |
 

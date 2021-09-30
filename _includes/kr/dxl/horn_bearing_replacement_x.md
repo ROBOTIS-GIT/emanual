@@ -6,7 +6,7 @@
 
 아래 그림과 같이 혼과 기어의 마킹 위치에 맞추어 혼을 조립합니다.
 
-{% if page.product_group=='dxl_xw540' %}
+{% if page.product_group=='dxl_xw540' or page.product_group=='dxl_xw430' %}
 
 ![](/assets/images/dxl/x/xw/xw540_marking.png)
 

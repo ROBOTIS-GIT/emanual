@@ -1,5 +1,5 @@
 
-{% if page.product_group=='xl330' %}
+{% if page.product_group=='xl330' or page.product_group=='xc330'%}
 
 다이나믹셀과 통신하기 위해서는, 적절한 프로토콜 타입을 선택해야 합니다.
 

@@ -1,6 +1,6 @@
 The Baud Rate(8) determines serial communication speed between a controller and DYNAMIXEL.
 
-{% if page.product_group=='xl330' %}
+{% if page.product_group=='xl330' or page.product_group=='xc330' %}
 
 |   Value    |   Baud Rate   | Margin of Error |
 |:----------:|:-------------:|:---------------:|

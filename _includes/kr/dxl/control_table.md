@@ -35,7 +35,7 @@
 <div class="notice--warning">{{ mx2_control_table | markdownify }}</div>
 {% assign torque_enable= "64" %}
 
-{% elsif page.product_group=='dxl_x430' or page.product_group=='dxl_xl430' or page.product_group=='dxl_x540' or page.product_group=='dxl_xw540' %}
+{% elsif page.product_group=='dxl_x430' or page.product_group=='dxl_xl430' or page.product_group=='dxl_x540' or page.product_group=='dxl_xw540' or page.product_group=='dxl_xw430' %}
 {% assign torque_enable= "64" %}
 
 {% elsif page.product_group=='dxl_xl320' %}

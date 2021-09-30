@@ -37,10 +37,10 @@ sidebar:
 
 ## [XW Series](#xw-series)
 
-|                                        XW540                                         |
-|:------------------------------------------------------------------------------------:|
-|                ![](/assets/images/dxl/x/xw/xw540-series_product.png)                 |
-| [XW540-T140](/docs/en/dxl/x/xw540-t140/)<br>[XW540-T260](/docs/en/dxl/x/xw540-t260/) |
+|                                        XW540                                         |                                        XW430                                         |
+|:------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------:|
+|                ![](/assets/images/dxl/x/xw/xw540-series_product.png)                 |                ![](/assets/images/dxl/x/xw/xw430_series_product.jpg)                 |
+| [XW540-T140](/docs/en/dxl/x/xw540-t140/)<br>[XW540-T260](/docs/en/dxl/x/xw540-t260/) | [XW430-T200](/docs/en/dxl/x/xw430-t200/)<br>[XW430-T333](/docs/en/dxl/x/xw430-t333/) |
 
 ## [XH Series](#xh-series)
 
@@ -58,10 +58,10 @@ sidebar:
 
 ## [XC Series](#xc-series)
 
-|                      2XC430                      |                                        XC430                                         |
-|:------------------------------------------------:|:------------------------------------------------------------------------------------:|
-| ![](/assets/images/dxl/x/2xc/2xc430_product.png) |                     ![](/assets/images/dxl/x/xc430_product.png)                      |
-|    [2XC430-W250](/docs/en/dxl/x/2xc430-w250/)    | [XC430-W150](/docs/en/dxl/x/xc430-w150/)<br>[XC430-W240](/docs/en/dxl/x/xc430-w240/) |
+|                      2XC430                      |                                        XC430                                         |                                                                                  XC330                                                                                   |
+|:------------------------------------------------:|:------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| ![](/assets/images/dxl/x/2xc/2xc430_product.png) |                     ![](/assets/images/dxl/x/xc430_product.png)                      |                                                      ![](/assets/images/dxl/x/xl330_temp/xl330-series_product.png)                                                       |
+|    [2XC430-W250](/docs/en/dxl/x/2xc430-w250/)    | [XC430-W150](/docs/en/dxl/x/xc430-w150/)<br>[XC430-W240](/docs/en/dxl/x/xc430-w240/) | [XC330-T288](/docs/en/dxl/x/xc330-t288)<br>[XC330-T181](/docs/en/dxl/x/xc330-t181)<br>[XC330-M288](/docs/en/dxl/x/xc330-m288)<br>[XC330-M181](/docs/en/dxl/x/xc330-m181) | 
 
 ## [XL Series](#xl-series)
 

@@ -18,7 +18,7 @@ sidebar:
 
 ![](/assets/images/sw/dynamixel/wizard2/wizard2_main_000.jpg)
 
-**소프트웨어 다운로드 (v2.0.9)**  
+**소프트웨어 다운로드 (v2.0.11)**  
 [윈도우](http://www.robotis.com/service/download.php?no=1670)  
 [리눅스](http://www.robotis.com/service/download.php?no=1671)  
 [맥 OS](http://www.robotis.com/service/download.php?no=1760)  
@@ -70,7 +70,6 @@ sidebar:
 
 ## [지원 제품 목록](#지원-제품-목록)
 
-
 | DYNAMIXEL Series |                                |                                |                                |                                |                 |
 |:-----------------|:-------------------------------|:-------------------------------|:-------------------------------|:-------------------------------|:----------------|
 | **AX**           | [AX-12W]                       | [AX-12+/12A]                   | [AX-18F/18A]                   |                                |                 |
@@ -79,10 +78,10 @@ sidebar:
 | **EX**           | [EX-106+]                      |                                |                                |                                |                 |
 | **MX**           | [MX-12W]                       | [MX-28], [MX-28(2.0)]          | [MX-64], [MX-64(2.0)]          | [MX-106], [MX-106(2.0)]        |                 |
 | **XL**           | [XL320]                        | [XL330-M288]<br>[XL330-M077]   | [XL430-W250]                   | [2XL430-W250]                  |                 |
-| **XC**           | [XC430-W150]<br/> [XC430-W240] | [2XC430-W250]                  |                                |                                |                 |
+| **XC**           | [XC330-T288]<br>[XC330-T181]<br>[XC330-M288]<br>[XC330-M181] | [XC430-W150]<br/> [XC430-W240] | [2XC430-W250]                  |                                |                 |
 | **XM**           | [XM430-W210]<br/> [XM430-W350] | [XM540-W150]<br/> [XM540-W270] |                                |                                |                 |
 | **XH**           | [XH430-W210]<br/> [XH430-W350] | [XH430-V210]<br/> [XH430-V350] | [XH540-W150]<br/> [XH540-W270] | [XH540-V150]<br/> [XH540-V270] |                 |
-| **XW**           | [XW540-T140]<br/> [XW540-T260] |                                |                                |                                |                 |
+| **XW**           | [XW430-T333]<br/> [XW430-T200] | [XW540-T140]<br/> [XW540-T260] |                                |                                |                 |
 | **PRO H**        | [H42-20-S300-R]                | [H54-100-S500-R]               | [H54-200-S500-R]               |                                |                 |
 | **PRO M**        | [M42-10-S260-R]                | [M54-40-S250-R]                | [M54-60-S250-R]                |                                |                 |
 | **PRO L**        | [L42-10-S300-R]                | [L54-30-S500-R]                | [L54-30-S400-R]                | [L54-50-S500-R]                | [L54-50-S290-R] |
@@ -831,6 +830,10 @@ sidebar:
 [XC430-W150]: /docs/kr/dxl/x/xc430-w150/
 [XC430-W240]: /docs/kr/dxl/x/xc430-w240/
 [2XC430-W250]: /docs/kr/dxl/x/2xc430-w250/
+[XC330-T288]: /docs/kr/dxl/x/xc330-t288
+[XC330-T181]: /docs/kr/dxl/x/xc330-t181
+[XC330-M288]: /docs/kr/dxl/x/xc330-m288
+[XC330-M181]: /docs/kr/dxl/x/xc330-m181
 [XM430-W210]: /docs/kr/dxl/x/xm430-w210/
 [XM430-W350]: /docs/kr/dxl/x/xm430-w350/
 [XH430-W210]: /docs/kr/dxl/x/xh430-w210/
@@ -843,6 +846,8 @@ sidebar:
 [XH540-W270]: /docs/kr/dxl/x/xh540-w270/
 [XH540-V150]: /docs/kr/dxl/x/xh540-v150/
 [XH540-V270]: /docs/kr/dxl/x/xh540-v270/
+[XW430-T200]: /docs/kr/dxl/x/xw430-t200/
+[XW430-T333]: /docs/kr/dxl/x/xw430-t333/
 [XW540-T140]: /docs/kr/dxl/x/xw540-t140/
 [XW540-T260]: /docs/kr/dxl/x/xw540-t260/
 [XC430-W150]: /docs/kr/dxl/x/xc430-w150/

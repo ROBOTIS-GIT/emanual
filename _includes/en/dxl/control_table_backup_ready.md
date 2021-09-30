@@ -6,7 +6,7 @@
 {% assign firmware_version_backup = "firmware **V45**" %}
 {% endif %}
 
-Indicates whether backup data of Control Table saved through Control table Backup packet exist. 
+Indicates whether backup data of Control Table saved through [Control table Backup packet](/docs/en/dxl/protocol2/#control-table-backup-0x20) exist. 
 
 | Value | Description                           |
 |:-----:|:--------------------------------------|
