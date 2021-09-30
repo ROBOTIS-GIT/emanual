@@ -13,7 +13,7 @@
 
 > Home Service Challenge Stadium and Objects
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3aZXpVsEi0c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lnLHSz7mGIA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### [Getting Started](#getting-started)
 
@@ -30,7 +30,7 @@
 `Remote PC`
 
 - ROS 1 Noetic installed Laptop or desktop PC.
-- This instruction is based on Gazebo simulation, but can be ported to the actual robot later.
+- This instruction is based on Gazebo simulation.
 
 #### [Remote PC Setup](#remote-pc-setup)
 
