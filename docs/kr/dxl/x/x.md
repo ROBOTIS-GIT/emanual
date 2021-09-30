@@ -10,7 +10,7 @@ sidebar:
 
 ![](/assets/images/dxl/x/x_series_product.png)
 
-# [특징](#특징)
+XD430-T350-R# [특징](#특징)
 
 ![](/assets/images/dxl/x/dxl_x_productline_kr.png)
 
@@ -53,6 +53,15 @@ XL-320의 사양은 다른 XL 모델들과 차이가 있습니다. 자세한 내
 | [XW540-T140-R] | 6.4 [N.m] (at 11.1 [V], 4.5 [A])<br>6.9 [N.m] (at 12.0 [V], 4.9 [A])<br>8.3 [N.m] (at 14.8 [V], 5.9 [A])  | 67 [rev/min] (at 11.1 [V]<br>72 [rev/min] (at 12.0 [V]<br>88 [rev/min] (at 14.8 [V])   |
 | [XW430-T333-R] | 2.9 [N.m] (at 11.1 [V], 1.2 [A])<br>3.1 [N.m] (at 12.0 [V], 1.3 [A])<br>3.6 [N.m] (at 14.8 [V], 1.5 [A])  | 29 [rev/min] (at 11.1 [V]<br>31 [rev/min] (at 12.0 [V]<br>39 [rev/min] (at 14.8 [V])   |
 | [XW430-T200-R] | 6.4 [N.m] (at 11.1 [V], 4.5 [A])<br>6.9 [N.m] (at 12.0 [V], 4.9 [A])<br>8.3 [N.m] (at 14.8 [V], 5.9 [A])  | 49 [rev/min] (at 11.1 [V]<br>53 [rev/min] (at 12.0 [V]<br>66 [rev/min] (at 14.8 [V])   |
+
+## [XD 시리즈](#xd-시리즈)
+
+| 모델             | Stall Torque                                                                                              | 무부하 속도                                                                            |
+|:-----------------|:----------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------|
+| [XD540-T270-R] | 9.2 [N.m] (at 11.1 [V], 4.5 [A])<br>9.9 [N.m] (at 12.0 [V], 4.9 [A])<br>11.7 [N.m] (at 14.8 [V], 5.9 [A]) | 36 [rev/min] (at 11.1 [V])<br>39 [rev/min] (at 12.0 [V])<br>46 [rev/min] (at 14.8 [V]) |
+| [XD540-T150-R] | 6.6 [N.m] (at 11.1 [V], 4.5 [A])<br>7.1 [N.m] (at 12.0 [V], 4.9 [A])<br>8.5 [N.m] (at 14.8 [V], 5.9 [A])  | 66 [rev/min] (at 11.1 [V])<br>70 [rev/min] (at 12.0 [V])<br>86 [rev/min] (at 14.8 [V]) |
+| [XD430-T350-R] | 3.1 [N.m] (at 11.1 [V], 1.2 [A])<br>3.4 [N.m] (at 12.0 [V], 1.3 [A])<br>4.2 [N.m] (at 14.8 [V], 1.5 [A])  | 27 [rev/min] (at 11.1 [V])<br>30 [rev/min] (at 12.0 [V])<br>37 [rev/min] (at 14.8 [V]) |
+| [XD430-T210-R] | 2.2 [N.m] (at 11.1 [V], 1.2 [A])<br>2.5 [N.m] (at 12.0 [V], 1.3 [A])<br>3.1 [N.m] (at 14.8 [V], 1.5 [A])  | 46 [rev/min] (at 11.1 [V])<br>50 [rev/min] (at 12.0 [V])<br>62 [rev/min] (at 14.8 [V]) |
 
 ## [XH 시리즈](#xh-시리즈)
 
@@ -102,6 +111,10 @@ XL-320의 사양은 다른 XL 모델들과 차이가 있습니다. 자세한 내
 [XW540-T140-R]: /docs/kr/dxl/x/xw540-t140/
 [XW430-T200-R]: /docs/kr/dxl/x/xw430-t200/
 [XW430-T333-R]: /docs/kr/dxl/x/xw430-t333/
+[XD540-T270-R]: /docs/kr/dxl/x/xd540-t270
+[XD540-T150-R]: /docs/kr/dxl/x/xd540-t150
+[XD430-T350-R]: /docs/kr/dxl/x/xd430-t350
+[XD430-T210-R]: /docs/kr/dxl/x/xd430-t210
 [XH540-V270-R]: /docs/kr/dxl/x/xh540-v270/
 [XH540-W270-T/R]: /docs/kr/dxl/x/xh540-w270/
 [XH540-V150-R]: /docs/kr/dxl/x/xh540-v150/

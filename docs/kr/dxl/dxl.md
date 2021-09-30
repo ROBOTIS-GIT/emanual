@@ -41,6 +41,14 @@ sidebar:
 | [XW540-T140](/docs/kr/dxl/x/xw540-t140/)<br>[XW540-T260](/docs/kr/dxl/x/xw540-t260/) | [XW430-T200](/docs/kr/dxl/x/xw430-t200/)<br>[XW430-T333](/docs/kr/dxl/x/xw430-t333/) |
 
 
+## [XD 시리즈](#xd-시리즈)
+
+|                                        XD540                                         |                                        XD430                                         |
+|:------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------:|
+|                  ![](/assets/images/dxl/x/x540-series_product.png)                   |                    ![](/assets/images/dxl/x/x_series_product.png)                    |
+| [XD540-T270](/docs/kr/dxl/x/xd540-t270/)<br>[XD540-T150](/docs/kr/dxl/x/xd540-t150/) | [XD430-T350](/docs/kr/dxl/x/xd430-t350/)<br>[XD430-T210](/docs/kr/dxl/x/xd430-t350/) |
+
+
 ## [XH 시리즈](#xh-시리즈)
 
 |                                                                                    XH540                                                                                     |                                                                                    XH430                                                                                     |
