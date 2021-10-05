@@ -504,7 +504,8 @@ When positioning a mouse cursor on its model name, **Firmware update is availabl
 {% capture supported_dynamixel %}
 **Supported DYNAMIXEL**
 - [DYNAMIXEL-X](/docs/en/dxl/x/) (Firmware **v45** or **above**, For X330 Series: Firmware **v46** or **above**) 
-- [DYNAMIXEL-P](/docs/en/dxl/p/) (Firmware **v12** or **above**)  
+- [DYNAMIXEL-P](/docs/en/dxl/p/) (Firmware **v12** or **above**)
+- XL-320 is not supported
 {% endcapture %}
 
 As the DYNAMIXEL can be distinguished by its own ID in packet communication with your main controller, the ID assigned on DYNAMIXEL has to be unique. 
@@ -557,7 +558,7 @@ The `ID Inspection` resolves the overlapping ID although they remain wired. For 
     ![](/assets/images/sw/dynamixel/wizard2/id_inspection/id_inspection_done.png)  
 
 
-## [Data Backup and Restore](#data-backup-and-restore)
+## [Backup and Restore](#backup-and-restore)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CFinASETHiQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -570,64 +571,56 @@ This can be useful if the DYNAMIXEL are reset after the [Firmware Recovery](#fir
 The stored data by `backup` can be restored in using `Restore EEPROM`.
 
 See the available items in Control Table for data backup, 
-- All Data in EERPOM 
+- All Data in EERPOM
 - Velocity P.I Gains
 - Position P.I.D Gains
 - Feedforward 1st & 2nd Gains
 - Profile Acceleration
 - Profile Velocity
-- Indirect Addresses (Except for DYNAMIXEL-P Series)
+- Indirect Addresses (Except DYNAMIXEL-P Series)
 
-**Note**: Be sure to enable **Restore RAM** bit from `Startup Configuration` address in Control Table, in order to restore stored RAM data by `Backup`.
+**Note**: Be sure to set the **Restore RAM** bit of the `Startup Configuration(60)` address in order to restore the RAM data on startup.
 {: .notice}
 
 <div class="notice">{{ supported_dynamixel | markdownify }}</div>
 
-See the following instruction for the use of `Backup`. 
+## [Control Table Backup](#backup-the-control-table)
 
-1. [Scan DYNAMIXEL](#scan-dynamixel). 
+1. Connect and [Scan DYNAMIXEL](#scan-dynamixel).
 
-2. Change and save value of data in EEPROM and RAM. 
+2. Make sure to turn off the Torque of DYNAMIXEL. Otherwise, backup will fail.
 
-    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_eeprom.png)  
-    > Data in EEPROM
-
-    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_ram1.png)
-
-    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_ram2.png)  
-    > Data in RAM
+    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_torque_off.png)
     
-3. Go to `Tool` > `Control Table` > `Backup` 
+3. Select `Tool` > `Control Table` > `Backup` 
 
     ![](/assets/images/sw/dynamixel/wizard2/backup/backup_click_backup.png)
     
-    **WARNING**: Before `Backup`, be sure to have the DYNAMIXEL **Torque Off** status as the image below. Otherwise, `Backup` will get failed.  
-    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_torque_off.png)
-    {: .notice--warning}
-    
-    **Note**: `Backup Ready` becomes '1' after `Backup`.  
+4. Check if the `Backup Ready(147)` address is set to `1` after backup.  
+
     ![](/assets/images/sw/dynamixel/wizard2/backup/backup_backup_enabled.png)
-    {: .notice}
-  
-4. Go to `Tool` > `Control Table` > `Restore EEPROM`
+
+### [Restoring EEPROM Area](#restoring-eeprom-area)
+
+1. Go to `Tool` > `Control Table` > `Restore EEPROM`
 
     ![](/assets/images/sw/dynamixel/wizard2/backup/backup_click_restore.png)
 
-5. Confirm that backup data are restored. 
+2. DYNAMIXEL will be rebooted and restore the EEPROM settings.
 
-    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_restore_eeprom.png)
+### [Restoring RAM Area](#restoring-ram-area)
 
-### [How to Restore RAM Data](#how-to-restore-ram-data)
-
-1. Set a bit of **Restore RAM** as '1' of `Startup Configuration` in Control Table
+1. Set the **Restore RAM** bit of the `Startup Configuration` as below.
 
    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_enable_restore_ram.png)
        
-2. Whenever rebooting or starting the DYNAMIXEL, stored RAM data will be called. 
-
-   ![](/assets/images/sw/dynamixel/wizard2/backup/backup_restore_ram2.png)
-       
-   ![](/assets/images/sw/dynamixel/wizard2/backup/backup_restore_ram1.png)
+2. The data in specific RAM area(listed below) will be restored when DYNAMIXEL is rebooted.
+    - Velocity P.I Gains
+    - Position P.I.D Gains
+    - Feedforward 1st & 2nd Gains
+    - Profile Acceleration
+    - Profile Velocity
+    - Indirect Addresses (Except for DYNAMIXEL-P Series)
    
 ## [Modifying Control Values](#modifying-control-values)
 

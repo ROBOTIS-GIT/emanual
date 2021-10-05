@@ -453,18 +453,20 @@ Instruction Packet 의 처리 결과를 나타냄
 - 현재 상태의 [Control table] 값을 Backup 영역에 저장하거나, 저장된 값으로 EEPROM을 복구하기 위한 Instruction.
 - Control Table Backup 명령은 Torque Enable 항목이 ‘0’(Off) 상태일 때만 수행되며, ‘1’(On) 상태일 때에는 [Result Fail Packet](#error)을 응답함.
 - X430, X540 시리즈 FW45 이상, X330 시리즈 FW46 이상, 다이나믹셀-P 시리즈 FW12 이상부터 지원.
+- XL-320은 지원하지 않음
 - Backup으로 저장하는 데이터.
   - EEPROM 영역: 전체
   - RAM 영역
-    - 위치, 속도 제어기의 PID gain
+    - 속도 제어기의 PI gains
+    - 위치 제어기의 PID gains
     - Feedforward 1st, 2nd Gain
     - Profile Acceleration, Velocity
-    - Indirect Address (P 시리즈는 제외)
+    - Indirect Address (다이나믹셀-P 시리즈 제외)
 
 {% capture howto_backup %}
 **참고**
-- [백업 및 복구](/docs/kr/software/dynamixel/dynamixel_wizard2/#백업-및-복구)
-- Control Table Backup 데이터 중에서 RAM 영역의 데이터는 Control Table의 Startup Configuration(60)에서 복구할 수 있음 ([RAM 영역 복구하기](/docs/kr/software/dynamixel/dynamixel_wizard2/#ram-영역-복구하기))
+- 다이나믹셀 위자드 2.0 [백업 및 복구](/docs/kr/software/dynamixel/dynamixel_wizard2/#백업-및-복구)
+- RAM 영역의 데이터는 Control Table의 Startup Configuration(60) 설정으로 복구할 수 있음 ([RAM 영역 복구](/docs/kr/software/dynamixel/dynamixel_wizard2/#ram-영역-복구) 항목 참조)
 {% endcapture %}
 
 <div class="notice">{{ howto_backup | markdownify}}</div>
@@ -484,7 +486,7 @@ Instruction Packet 의 처리 결과를 나타냄
 
 #### 예제 1 설명
 
-ID 1(XC330-T288): 현재 상태의 Control Table 데이터를 Backup영역에 저장
+- ID 1(XC330-T288) : 현재 상태의 Control Table 데이터를 Backup영역에 저장
 
 #### Control Table Backup Packet
 
@@ -500,9 +502,10 @@ ID 1(XC330-T288): 현재 상태의 Control Table 데이터를 Backup영역에 �
 
 #### 예제 2 설명
 
-ID1 (XC330-T288): Backup 영역에 저장된 EEPROM 데이터를 복구 (복구 후 재부팅)
+- ID1 (XC330-T288) : Backup 영역에 저장된 EEPROM 데이터를 복구
+- 성공적으로 EEPROM 복구 후 자동적으로 재부팅
 
-#### Control Table Backup Packet
+#### Control Table EEPROM Restoring Packet
 
 |  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST |  P1  |  P2  |  P3  |  P4  |  P5  | CRC1 | CRC2 |
 |:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|

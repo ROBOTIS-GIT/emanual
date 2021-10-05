@@ -24681,15 +24681,23 @@ dynamixel_wizard2:
         titlekr: "ID 진단"
         url: /software/dynamixel/dynamixel_wizard2/#id-inspection
         urlkr: /software/dynamixel/dynamixel_wizard2/#id-진단
-      - title: "Data Backup and Restore"
+      - title: "Backup and Restore"
         titlekr: "백업 및 복구"
-        url: /software/dynamixel/dynamixel_wizard2/#data-backup-and-restore
+        url: /software/dynamixel/dynamixel_wizard2/#backup-and-restore
         urlkr: /software/dynamixel/dynamixel_wizard2/#백업-및-복구
         children:
-          - title: "How to Restore RAM Data"
-            titlekr: "RAM 영역 복구하기"
-            url: /software/dynamixel/dynamixel_wizard2/#how-to-restore-ram-data
-            urlkr: /software/dynamixel/dynamixel_wizard2/#ram-영역-복구하기
+          - title: "Backup the Control Table"
+            titlekr: "컨트롤 테이블 백업"
+            url: /software/dynamixel/dynamixel_wizard2/#backup-the-control-table
+            urlkr: /software/dynamixel/dynamixel_wizard2/#컨트롤-테이블-백업
+          - title: "Restoring EEPROM Area"
+            titlekr: "EEPROM 영역 복구"
+            url: /software/dynamixel/dynamixel_wizard2/#restoring-eeprom-area
+            urlkr: /software/dynamixel/dynamixel_wizard2/#eeprom-영역-복구
+          - title: "Restoring RAM Area"
+            titlekr: "RAM 영역 복구"
+            url: /software/dynamixel/dynamixel_wizard2/#restoring-ram-area
+            urlkr: /software/dynamixel/dynamixel_wizard2/#ram-영역-복구
       - title: "Modifying Control Values"
         titlekr: "컨트롤 아이템 값 변경"
         url: /software/dynamixel/dynamixel_wizard2/#modifying-control-values

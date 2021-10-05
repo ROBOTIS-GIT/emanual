@@ -500,9 +500,10 @@ sidebar:
 **지원 다이나믹셀**
 - [DYNAMIXEL-X](/docs/kr/dxl/x/) (펌웨어 버전 **45 이상**, X330 시리즈: 펌웨어 버전 **46 이상**) 
 - [DYNAMIXEL-P](/docs/kr/dxl/p/) (펌웨어 버전 **12 이상**)
+- XL-320은 지원되지 않습니다.
 {% endcapture %}
 
-다이나믹셀은 고유 ID를 가지고, Main Controller와 패킷을 사용하여 통신합니다. 
+다이나믹셀은 고유 ID를 가지고, 제어기와 패킷을 사용하여 통신합니다. 
 
 만약 조립된 로봇에서 고유 ID가 2개 이상 존재 할 경우, 통신 실패 및 다이나믹셀 위자드 2.0에서 다이나믹셀 검색에 실패할 수 있습니다. 
 
@@ -558,70 +559,63 @@ sidebar:
 
 > DYNAMIXEL Tips \| EEPROM and RAM Data Restoring Using Backup Funcion 
 
-`백업` 기능을 통해, 컨트롤 테이블에 저장된 EEPROM 및 일부 RAM 영역의 데이터를 다이나믹셀 내부에 저장 할 수 있습니다. 펌웨어 복구 또는 데이터가 초기화 된경우에 유용하게 사용할수 있습니다. 
+`백업` 기능을 통해, 컨트롤 테이블에 저장된 EEPROM 및 일부 RAM 영역의 데이터를 다이나믹셀 내부에 저장할 수 있습니다. 펌웨어 복구 또는 데이터가 초기화 된 경우에 유용하게 사용할수 있습니다. 
 
-저장된 데이터는 `EEPROM 복구` 기능을 통해, 다시 불러올수 있습니다. 
+저장된 데이터는 `EEPROM 복구` 기능을 통해, 다시 불러올 수 있습니다. 
 
 백업 및 복구 가능영역은 다음과 같습니다. 
 
 - EERPOM 영역 전체 
-- Velocity P.I Gains
-- Position P.I.D Gains
+- 속도 제어기의 PI Gains
+- 위치 제어기의 PID Gains
 - Feedforward 1st & 2nd Gains
 - Profile Acceleration
 - Profile Velocity
 - Indirect Addresse (다이나믹셀-P 시리즈 제외)
 
-**참고**: 백업후, RAM 영역의 복구를 위해서는, 컨트롤 테이블에서 `Startup Configuration` 주소의 **Restore RAM** 항목을 활성화 시켜야합니다. [RAM 영역 복구하기](#ram-영역-복구하기)를 참고하세요.
+**참고**: 백업후, RAM 영역의 복구를 위해서는, 컨트롤 테이블에서 `Startup Configuration` 주소의 **Restore RAM** 항목을 활성화 시켜야합니다. [RAM 영역 복구](#ram-영역-복구) 항목을 참고하세요.
 {: .notice}
 
 <div class="notice">{{ supported_dynamixel | markdownify }}</div>
 
-아래는 `백업`을 활용한 예시 입니다. 
 
-1. [다이나믹셀 검색하기](#다이나믹셀-검색하기)
+### [컨트롤 테이블 백업](#컨트롤-테이블-백업)
 
-2. EEPROM 및 RAM 영역의 컨트롤테이블 값을 설정하세요.
+1. 다이나믹셀 연결 후 [검색하기](#다이나믹셀-검색하기)
 
-    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_eeprom.png)  
-    > EEPROM 설정
+2. 백업을 사용하기에 앞서, 아래와 같이 다이나믹셀이 **Torque Off** 상태인지 확인하세요. 그렇지 않으면, 백업에 실패합니다.
 
-    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_ram1.png)
-
-    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_ram2.png)  
-    > RAM 영역 설정
+    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_torque_off_kr.png)
     
-3. 도구 > `컨트롤 테이블` > `백업` 을 클릭하세요.
+3. `도구` > `컨트롤 테이블` > `백업` 을 클릭하세요.
 
     ![](/assets/images/sw/dynamixel/wizard2/backup/backup_click_backup_kr.png)
-    
-    **주의**: `백업` 사용 전, 아래 이미지 처럼 다이나믹셀을 **Torque Off** 상태로 변경 하세요. 그렇지않으면, `백업`에 실패합니다.  
-    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_torque_off_kr.png)
-    {: .notice--warning}
-    
-    **참고**: 백업 후, `Backup Ready`가 '1'로 활성화 됩니다.  
+
+4. 백업 후, `Backup Ready(147)`가 `1`로 변경됐는지 확인하세요.
+
     ![](/assets/images/sw/dynamixel/wizard2/backup/backup_backup_enabled.png)
-    {: .notice}
+
+### [EEPROM 영역 복구](#eeprom-영역-복구)
     
-4. 도구 > `컨트롤 테이블` > `EEPROM 복구`를 클릭하세요.
+1. `도구` > `컨트롤 테이블` > `EEPROM 복구`를 클릭하세요.
 
     ![](/assets/images/sw/dynamixel/wizard2/backup/backup_click_restore_kr.png)
 
-5. `EEPROM 복구`이후 다이나믹셀은 백업된 데이터를 불러옵니다.
+2. 다이나믹셀이 재부팅되며 EEPROM이 저장된 값으로 복구됩니다.
 
-    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_restore_eeprom.png)
+### [RAM 영역 복구](#ram-영역-복구)
 
-### [RAM 영역 복구하기](#ram-영역-복구하기)
-
-1. EEPROM에서 `StartUp Configuration` 주소의 `Restore RAM` 비트를 활성화 하세요.
+1. EEPROM에서 `StartUp Configuration` 주소의 **Restore RAM** 항목을 체크하세요.
 
    ![](/assets/images/sw/dynamixel/wizard2/backup/backup_enable_restore_ram.png)
-       
-2. 다이나믹셀 재부팅시, 저장된 RAM영역을 불러옵니다. 
 
-   ![](/assets/images/sw/dynamixel/wizard2/backup/backup_restore_ram2.png)
-       
-   ![](/assets/images/sw/dynamixel/wizard2/backup/backup_restore_ram1.png)
+2. 다이나믹셀이 부팅될 때마다, 아래의 특정 RAM영역의 값을 저장된 데이터로 복구합니다.
+    - 속도 제어기의 PI Gains
+    - 위치 제어기의 PID Gains
+    - Feedforward 1st & 2nd Gains
+    - Profile Acceleration
+    - Profile Velocity
+    - Indirect Addresses (다이나믹셀-P 시리즈 제외)
 
 ## [컨트롤 아이템 값 변경](#컨트롤-아이템-값-변경)  
 
