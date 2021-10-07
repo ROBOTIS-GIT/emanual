@@ -6,18 +6,18 @@ In order to check the topics of OpenMANIPULATOR-X controller, you can use [rqt](
 ```bash
 $ rqt
 ```
-![](/assets/images/platform/openmanipulator_x/ros2_rqt_om.png)
+![](/assets/images/platform/openmanipulator_x/ros2_rqt_om_foxy.png)
 
 **TIP**: If the Topic Monitor is not shown, select the `plugin` > `Topics` > `Topic Monitor`.
 {: .notice--success}
 
 Unchecked Topics will not be monitored. To monitor topics, select the checkbox.  
 
-![](/assets/images/platform/openmanipulator_x/ros2_rqt_1.png)
+![](/assets/images/platform/openmanipulator_x/ros2_foxy_rqt_1.png)
 
 If you would like to see more details about a specific topic, click on the ▶ icon next to the checkbox to expand.  
 
-![](/assets/images/platform/openmanipulator_x/ros2_rqt_2.png)
+![](/assets/images/platform/openmanipulator_x/ros2_foxy_rqt_2.png)
 
 
 #### [Published Topic List](#published-topic-list)

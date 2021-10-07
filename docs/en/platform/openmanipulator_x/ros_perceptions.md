@@ -10,7 +10,8 @@ tabs: "ROS"
 tab_title1: Kinetic
 tab_title2: Noetic
 tab_title3: Dashing
-tab_title4: Arduino
+tab_title4: Foxy
+tab_title5: Arduino
 sidebar:
   title: "OpenMANIPULATOR-X"
   nav: "openmanipulator_x"
@@ -37,18 +38,24 @@ The OpenMAIPULATOR-X can work with some cameras to recognize a front object. Use
 </section>
 
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
-This example is not supported yet.  
+This example is not supported.  
 [https://github.com/ROBOTIS-GIT/open_manipulator_perceptions](https://github.com/ROBOTIS-GIT/open_manipulator_perceptions)
 {: .notice--warning}
 </section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
-This example is not supported yet.  
+This example is not supported.  
 [https://github.com/ROBOTIS-GIT/open_manipulator_perceptions](https://github.com/ROBOTIS-GIT/open_manipulator_perceptions)
 {: .notice--warning}
 </section>
 
 <section data-id="{{ page.tab_title4 }}" class="tab_contents">
+This example is not supported.  
+[https://github.com/ROBOTIS-GIT/open_manipulator_perceptions](https://github.com/ROBOTIS-GIT/open_manipulator_perceptions)
+{: .notice--warning}
+</section>
+
+<section data-id="{{ page.tab_title5 }}" class="tab_contents">
 The following is an example of connecting the OV7725 camera module with AL422B buffer to the GPIO of OpenCR.  
 [https://community.robotsource.org/t/opencr-with-ov7725-al422b-camera-2-8-tftlcd/1413](https://community.robotsource.org/t/opencr-with-ov7725-al422b-camera-2-8-tftlcd/1413)
 
@@ -61,7 +68,7 @@ The Arduino sketch code can be found from [OpenCR examples](https://github.com/R
 {% include en/platform/openmanipulator_x/perceptions/camera_kinetic.md %}
 </section>
 
-<section data-id="{{ page.tab_title4 }}" class="tab_contents">
+<section data-id="{{ page.tab_title5 }}" class="tab_contents">
 Not supported in Arduino
 {: .notice--warning}
 </section>
@@ -72,7 +79,7 @@ Not supported in Arduino
 {% include en/platform/openmanipulator_x/perceptions/ar_marker_kinetic.md %}
 </section>
 
-<section data-id="{{ page.tab_title4 }}" class="tab_contents">
+<section data-id="{{ page.tab_title5 }}" class="tab_contents">
 Not supported in Arduino
 {: .notice--warning}
 </section>
@@ -83,7 +90,7 @@ Not supported in Arduino
 {% include en/platform/openmanipulator_x/perceptions/pick_place_kinetic.md %}
 </section>
 
-<section data-id="{{ page.tab_title4 }}" class="tab_contents">
+<section data-id="{{ page.tab_title5 }}" class="tab_contents">
 Not supported in Arduino
 {: .notice--warning}
 </section>
