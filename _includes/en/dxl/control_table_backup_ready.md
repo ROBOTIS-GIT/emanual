@@ -6,12 +6,14 @@
 {% assign firmware_version_backup = "firmware **V45**" %}
 {% endif %}
 
-Indicates whether backup data of Control Table saved through [Control table Backup packet](/docs/en/dxl/protocol2/#control-table-backup-0x20) exist. 
+The value in this address indicates whether the backup of the control table exists after sending the [Control Table Backup Packet](/docs/en/dxl/protocol2/#control-table-backup-0x20).
 
-| Value | Description                           |
-|:-----:|:--------------------------------------|
-|   0   | No Control Table's backup data        |
-|   1   | Control Table's backup data is saved. |
+| Value | Description                    |
+|:-----:|:-------------------------------|
+|   0   | The backup data doesn't exist. |
+|   1   | A saved backup data exists.    |
 
-**NOTE**: Backup Ready is available from {{ firmware_version_backup }}. See [Data Backup and Restore](/docs/en/software/dynamixel/dynamixel_wizard2/#data-backup-and-restore) for more details.
+**NOTE**  
+Backup Ready is available from {{ firmware_version_backup }}.  
+See [Backup and Restore](/docs/en/software/dynamixel/dynamixel_wizard2/#backup-and-restore) for more details.
 {: .notice}

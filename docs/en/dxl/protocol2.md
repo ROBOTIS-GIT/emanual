@@ -452,6 +452,7 @@ Note that given examples use the following abbreviation to provide clear informa
 - Instruction to store current [Control Table] status data to a Backup area, or to restore EEPROM data.
 - The Control Table Backup works properly only if **Torque Enable** in RAM area is set as '0' (Torque Off status). If the Torque Enable is set as '1' (Torque On), Status Packet with [Result Fail](#error) will be returned.
 - The Control Table Backup is available from FW45 (for X430, X540 series), FW46 (for X330 series) and FW12 (for P series).
+- XL-320 is not supported.
 - Available items in Control Table for data backup: 
   - All Data in EERPOM 
   - Velocity P.I Gains
@@ -459,12 +460,12 @@ Note that given examples use the following abbreviation to provide clear informa
   - Feedforward 1st & 2nd Gains
   - Profile Acceleration
   - Profile Velocity
-  - Indirect Addresses (Except for DYNAMIXEL-P Series)
+  - Indirect Addresses (Except DYNAMIXEL-P Series)
 
 {% capture howto_backup %}
 **Note**
-- See [Data Backup and Restore](/docs/en/software/dynamixel/dynamixel_wizard2/#data-backup-and-restore) for more details.
-- RAM data stored by Control Table Backup can be restored by using **Startup Configuration(60)**. see [How to Restore RAM Data](/docs/en/software/dynamixel/dynamixel_wizard2/#how-to-restore-ram-data).
+- See [Backup and Restore](/docs/en/software/dynamixel/dynamixel_wizard2/#backup-and-restore) for more details.
+- RAM area can be restored by configuring the **Startup Configuration(60)** address. Refer to the [Restoring RAM Area](/docs/en/software/dynamixel/dynamixel_wizard2/#restoring-ram-area) for more information.
 {% endcapture %}
 
 <div class="notice">{{ howto_backup | markdownify}}</div>
@@ -481,9 +482,9 @@ Note that given examples use the following abbreviation to provide clear informa
 
 ### Example
 
-#### Example 1 Description
+#### Example 1 Conditions
 
-ID 1(XC330-T288): Storing Control Table data in Backup area.
+- ID 1(XC330-T288) : Backup the Control Table.
 
 #### Control Table Backup Packet
 
@@ -497,11 +498,12 @@ ID 1(XC330-T288): Storing Control Table data in Backup area.
 |:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:----:|:----:|
 | 0xFF | 0xFF | 0xFD | 0x00 |   0x01    | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1 | 0x0C |
 
-#### Example 2 Description
+#### Example 2 Conditions
 
-ID1 (XC330-T288): Restoring EEPROM data stored in Backup area (DYNAMIXEL is rebooted after restoring data).
+- ID1(XC330-T288) : Restoring EEPROM data
+- DYNAMIXEL will be rebooted after a successful restoration.
 
-#### Control Table Backup Packet
+#### Control Table EEPROM Restoring Packet
 
 |  H1  |  H2  |  H3  | RSRV | Packet ID | LEN1 | LEN2 | INST |  P1  |  P2  |  P3  |  P4  |  P5  | CRC1 | CRC2 |
 |:----:|:----:|:----:|:----:|:---------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
