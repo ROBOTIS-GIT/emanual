@@ -53,6 +53,14 @@ layout: popup
 | XW430-T333-R | O* <br>(F/W address 13) |            O            |
 | XW430-T260-R | O* <br>(F/W address 13) |            O            |
 
+## [XD 시리즈](#xd-시리즈)
+
+| 모델         | 다이나믹셀 프로토콜 1.0 | 다이나믹셀 프로토콜 2.0 |
+|:-------------|:-----------------------:|:-----------------------:|
+| XD540-T270-R | O* <br>(F/W address 13) |            O            |
+| XD540-T150-R | O* <br>(F/W address 13) |            O            |
+| XD430-T350-R | O* <br>(F/W address 13) |            O            |
+| XD430-T210-R | O* <br>(F/W address 13) |            O            |
 
 ## [XH 시리즈](#xh-시리즈)
 
