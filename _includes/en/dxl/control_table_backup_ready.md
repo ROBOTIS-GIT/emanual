@@ -15,5 +15,5 @@ The value in this address indicates whether the backup of the control table exis
 
 **NOTE**  
 Backup Ready is available from {{ firmware_version_backup }}.  
-See [Data Backup and Restore](/docs/en/software/dynamixel/dynamixel_wizard2/#data-backup-and-restore) for more details.
+See [Backup and Restore](/docs/en/software/dynamixel/dynamixel_wizard2/#backup-and-restore) for more details.
 {: .notice}

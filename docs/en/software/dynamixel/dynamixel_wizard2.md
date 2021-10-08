@@ -584,7 +584,7 @@ See the available items in Control Table for data backup,
 
 <div class="notice">{{ supported_dynamixel | markdownify }}</div>
 
-## [Control Table Backup](#backup-the-control-table)
+## [Control Table Backup](#control-table-backup)
 
 1. Connect and [Scan DYNAMIXEL](#scan-dynamixel).
 

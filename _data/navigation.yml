@@ -24686,9 +24686,9 @@ dynamixel_wizard2:
         url: /software/dynamixel/dynamixel_wizard2/#backup-and-restore
         urlkr: /software/dynamixel/dynamixel_wizard2/#백업-및-복구
         children:
-          - title: "Backup the Control Table"
+          - title: "Control Table Backup"
             titlekr: "컨트롤 테이블 백업"
-            url: /software/dynamixel/dynamixel_wizard2/#backup-the-control-table
+            url: /software/dynamixel/dynamixel_wizard2/#control-table-backup
             urlkr: /software/dynamixel/dynamixel_wizard2/#컨트롤-테이블-백업
           - title: "Restoring EEPROM Area"
             titlekr: "EEPROM 영역 복구"
