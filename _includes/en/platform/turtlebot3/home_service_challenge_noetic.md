@@ -214,32 +214,28 @@ The goal of the Home Service Challenge is to move four different objects from a 
 Using the demo package, the process of moving objects in Home Service Challenge is as follows.
 
 1. Navigating to a target in the living room.
-
-- Find a target, and reach it using a Navigation package.  
-  ![demo_1](/assets/images/platform/turtlebot3/home_service_challenge/noetic/demo_1.PNG)
+  - Find a target, and reach it using a Navigation package.  
+    
+    ![demo_1](/assets/images/platform/turtlebot3/home_service_challenge/noetic/demo_1.PNG)
 
 2. Approaching the target.
-
-- For the approach to the target with precise, TurtleBot3 wheels are directly controlled by computing target's location from AR marker. (Used Topic : `/tb3_hsc/cmd_vel`). To produce a reliable performance, Closed-loop and control system can be used for the specified number of times.
-  ![demo_2](/assets/images/platform/turtlebot3/home_service_challenge/noetic/demo_2.PNG)
+  - For the approach to the target with precise, TurtleBot3 wheels are directly controlled by computing target's location from AR marker. (Used Topic : `/tb3_hsc/cmd_vel`). To produce a reliable performance, Closed-loop and control system can be used for the specified number of times.
+    
+    ![demo_2](/assets/images/platform/turtlebot3/home_service_challenge/noetic/demo_2.PNG)
 
 3. Picking the target with OpenMANIPULATOR-X's gripper.
+  - Pick the target object using the moveit package (Joint space control, Task space control and Gripper control)
 
-- Pick the target object using the moveit package (Joint space control, Task space control and Gripper control)
-
-  ![manipulation_diagram](/assets/images/platform/turtlebot3/home_service_challenge/kinetic/manipulation_diagram.png)
-
-  > MoveIt Diagram
+    ![manipulation_diagram](/assets/images/platform/turtlebot3/home_service_challenge/kinetic/manipulation_diagram.png)
+    > MoveIt Diagram
 
 4. Leaving for the next room to place the object (Used Topic : `/tb3_hsc/cmd_vel`)
-
-   - When moving back from the target, the wheels are directly controlled by the manager program using `/tb3_hsc/cmd_vel` topic.
+  - When moving back from the target, the wheels are directly controlled by the manager program using `/tb3_hsc/cmd_vel` topic.
 
 5. Navigating to the place where the object will be placed.
-
-- Find a next target, and reach it using a Navigation package.
-
-  ![demo_3](/assets/images/platform/turtlebot3/home_service_challenge/noetic/demo_3.PNG)
+   - Find a next target, and reach it using a Navigation package.
+    
+    ![demo_3](/assets/images/platform/turtlebot3/home_service_challenge/noetic/demo_3.PNG)
 
 6. Approaching the target.
 
