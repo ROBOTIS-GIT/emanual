@@ -7,14 +7,24 @@
 {% endcapture %}
 <div class="notice">{{ notice_01 | markdownify }}</div>
 
-![](/assets/images/platform/turtlebot3/home_service_challenge/hsc_stadium_2.png)
+![](/assets/images/platform/turtlebot3/home_service_challenge/kinetic/hsc_stadium_2.png)
 
 > Home Service Challenge Stadium and Objects
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3aZXpVsEi0c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### [What you need to Join the Home Service Challenge](#what-you-need-to-join-the-home-service-challenge)
+### [Getting Started](#getting-started)
 
+{% capture HSC_Note %}
+**NOTE**: Be sure to complete the following instructions before installing Home Service Challenge packages in the pc.
+
+- [TurtleBot3 PC Set up](/docs/en/platform/turtlebot3/quick-start/#pc-setup)
+- [TurtleBot3 SBC Set up](/docs/en/platform/turtlebot3/sbc_setup/#sbc-setup)
+- [OpenMANIPULATOR-X](/docs/en/platform/openmanipulator_x/quick_start_guide/#install-ros-packages) packages
+{% endcapture %}
+<div class="notice">{{ HSC_Note | markdownify }}</div>
+
+#### [Prerequisites](#Prerequisites)
 `TurtleBot3 Waffle Pi`
 
 - It is the basic model to use Home Service Challenge packages for mobile manipulation.
@@ -29,28 +39,21 @@
 - It communicates with an single board computer (SBC) on Turtlebot3.
 - Laptop, desktop, or other devices with ROS 1.
 
-### [Getting Started](#getting-started)
-
-{% capture HSC_Note %}
-**NOTE**: Be sure to complete the following instructions before installing Home Service Challenge packages in the pc.
-
-- [TurtleBot3 PC Set up](/docs/en/platform/turtlebot3/pc_setup)
-- [TurtleBot3 SBC Set up](/docs/en/platform/turtlebot3/raspberry_pi_3_setup/#raspberry-pi-3-setup)
-- [OpenMANIPULATOR-X](/docs/en/platform/openmanipulator_x/ros_setup/#install-ros-packages) packages
-{% endcapture %}
-<div class="notice">{{ HSC_Note | markdownify }}</div>
-
 #### [Remote PC Setup](#remote-pc-setup)
 
 1. **[Remote PC]** Install Home Service Challenge packages.
 ```bash
 $ cd ~/catkin_ws/src/
 $ git clone https://github.com/ROBOTIS-GIT/turtlebot3_home_service_challenge.git
-$ sudo apt-get install ros-kinetic-ar-track-alvar ros-kinetic-ar-track-alvar-msgs
 $ cd ~/catkin_ws && catkin_make
 ```
 
-2. **[Remote PC]** Load the TurtleBot3 Waffle (or Waffle Pi) with OpenMANIPULATOR on RViz.
+2. **[Remote PC]** Install additional dependent packages on Remote PC
+```bash
+$ sudo apt-get install ros-kinetic-ar-track-alvar ros-kinetic-ar-track-alvar-msgs
+```
+
+3. **[Remote PC]** Load the TurtleBot3 Waffle (or Waffle Pi) with OpenMANIPULATOR on RViz.
 ```bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ roslaunch turtlebot3_manipulation_description turtlebot3_manipulation_view.launch use_gui:=true
@@ -62,12 +65,12 @@ $ roslaunch turtlebot3_manipulation_description turtlebot3_manipulation_view.lau
 
     > Rviz View
 
-3. **[Remote PC]** In order to use your PC remotely, you need to make SSH keys. Create a script file to generate SSH key.
+4. **[Remote PC]** In order to use your PC remotely, you need to make SSH keys. Create a script file to generate SSH key.
 ```bash
 $ nano ~/tb3_ssh_keygen
 ```
 
-4. **[Remote PC]** Copy and paste the followings to the script, and save it.
+5. **[Remote PC]** Copy and paste the followings to the script, and save it.
 ```bash
 #!/bin/bash
 argc=$#
@@ -85,17 +88,19 @@ do
 done
 ```
 
-5. **[Remote PC]** Make the file executable.
+6. **[Remote PC]** Make the file executable.
 ```bash
 $ chmod +x ~/tb3_ssh_keygen
 ```
 
-6. **[Remote PC]** Execute the file with TurtleBot3's IP address. Be sure **Remote PC** and **TurtleBot3** are connected **under the same IP**.
+7. **[Remote PC]** Execute the file with TurtleBot3's IP address. Be sure **Remote PC** and **TurtleBot3** are connected **under the same WiFi**.
 ```bash
-$ ~/tb3_ssh_keygen 192.168.1.10
+$ ~/tb3_ssh_keygen {IP_ADDRESS_OF_TURTLEBOT3}
 ```
 
-7. Check `~/.ssh/known_hosts` file if SSH is successfully generated.
+8. Check `~/.ssh/known_hosts` file if SSH is successfully generated.
+
+   ![known_hosts](/assets/images/platform/turtlebot3/home_service_challenge/kinetic/known_hosts.png)
 
 #### [SBC Setup](#sbc-setup)
 
@@ -134,13 +139,13 @@ exec "$@"
 $ chmod +x ~/env.bash
 ```
 
-#### [Hardware Setup](#hardware-setup)
-
-- See the [Hardware Setup](/docs/en/platform/turtlebot3/manipulation/#hardware-setup)
-
 #### [OpenCR Setup](#opencr-setup)
 
 - See the [OpenCR Setup](/docs/en/platform/turtlebot3/manipulation/#opencr-setup)
+
+#### [Hardware Setup](#hardware-setup)
+
+- See the [Hardware Setup](/docs/en/platform/turtlebot3/manipulation/#hardware-setup)
 
 ### [Camera Calibration](#camera-calibration)
 
@@ -161,7 +166,7 @@ $ rqt_image_view
 
 3. Select **/raspicam_node/image/compressed** (or **/raspicam_node/image/**) topic on the check box.
 
-   ![camera view](/assets/images/platform/turtlebot3/home_service_challenge/camera_setting_01.png)
+   ![camera view](/assets/images/platform/turtlebot3/home_service_challenge/kinetic/camera_setting_01.png)
 
 4. **[Remote PC]** Excute rqt_reconfigure.
 ```bash
@@ -170,7 +175,7 @@ $ rosrun rqt_reconfigure rqt_reconfigure
 
 5. Click **raspicam_node**, and modify parameter value to see clear images from the camera.
 
-   ![camera setting](/assets/images/platform/turtlebot3/home_service_challenge/camera_setting_02.png)
+   ![camera setting](/assets/images/platform/turtlebot3/home_service_challenge/kinetic/camera_setting_02.png)
 
 6. Open **camera.yaml** file located in **turtlebot3_home_service_challenge_tools/config/camera_calibration**.
 
@@ -218,18 +223,18 @@ $ rosrun camera_calibration cameracalibrator.py --size 8x6 --square 0.024 image:
     **NOTE**: The size of squres may differ depending on the print paper size A3, A4 or others. In which case, **adjust the value (0.024) of --square option in the given command** according to the square size in the print paper.
     {: .notice}
 
-    ![calibration display](/assets/images/platform/turtlebot3/home_service_challenge/camera_calibration_01.png)
+    ![calibration display](/assets/images/platform/turtlebot3/home_service_challenge/kinetic/camera_calibration_01.png)
 
 3. Use the checkerboard to calibrate the camera, and click **CALIBRATE**.
 
    **NOTE**: Move and tilt the checker board around to the left, right, top, bottom and various angles to get `X`,`Y`, `Size` and `Skew` calibration data. As the data is computed enough, `X`,`Y`, `Size` and `Skew` will have a green bar.
    {: .notice}
 
-   ![calibraion](/assets/images/platform/turtlebot3/home_service_challenge/camera_calibration_02.png)
+   ![calibraion](/assets/images/platform/turtlebot3/home_service_challenge/kinetic/camera_calibration_02.png)
 
 4. Click **Commit** to save the intrinsic calibration data to the default folder.(~/.ros/camera_info)
 
-   ![commit](/assets/images/platform/turtlebot3/home_service_challenge/camera_calibration_04.png)
+   ![commit](/assets/images/platform/turtlebot3/home_service_challenge/kinetic/camera_calibration_04.png)
 
 5. Open `camerav2_1280x720.yaml` file located **~/.ros/camera_info** from `Turtlebot SBC` and check the saved data, which has the form like the script below.
 ```bash
@@ -277,14 +282,14 @@ $ roslaunch turtlebot3_home_service_challenge_tools slam.launch
 $ roslaunch turtlebot3_home_service_challenge_tools mobile_teleop_key.launch
 ```
 
-After the node is run, the following controller will be displayed on a terminal window.
-````bash
-Control Your TurtleBot3!
----------------------------
-Moving around:
-w
-a s d
-x
+    After the node is run, the following controller will be displayed on a terminal window.
+    ```bash
+    Control Your TurtleBot3!
+    ---------------------------
+    Moving around:
+      w
+    a s d
+      x
 
     w/x : increase/decrease linear velocity
     a/d : increase/decrease angular velocity
@@ -295,16 +300,17 @@ x
 
 4. Update a map with the keyboard controller.
 
-   ![making_map](/assets/images/platform/turtlebot3/home_service_challenge/slam_02.png)
+   ![making_map](/assets/images/platform/turtlebot3/home_service_challenge/kinetic/slam_02.png)
+
 
 5. **[Remote PC]** Save the map when it is fully updated.
 ```bash
 $ ROS_NAMESPACE=tb3_hsc rosrun map_server map_saver -f tb3_hsc
 ````
 
-![map](/assets/images/platform/turtlebot3/home_service_challenge/map.png)
+   ![map](/assets/images/platform/turtlebot3/home_service_challenge/kinetic/map.png)
 
-### [Starting Missions](#starting-missions)
+### [Missions](#missions)
 
 #### [Run a Demo and Manager Pacakge](#run-a-demo-and-manager-package)
 
@@ -316,7 +322,7 @@ $ roslaunch turtlebot3_home_service_challenge_tools turtlebot3_home_service_chal
     **NOTE**: Be sure **Remote PC** and **TurtleBot3** are connected **under the same IP**.
     {: .notice}
 
-    ![demo_01](/assets/images/platform/turtlebot3/home_service_challenge/home_service_challenge_demo_01.png)
+    ![demo_01](/assets/images/platform/turtlebot3/home_service_challenge/kinetic/home_service_challenge_demo_01.png)
 
 2. **[Remote PC]** Run the manager package used to carry out Home Service Challenge's mission.
 ```bash
@@ -412,36 +418,31 @@ The goal of the Home Service Challenge is to move four different objects from a 
 Using the demo package, the process of moving objects in Home Service Challenge is as follows.
 
 1. Navigating to a target in the living room.
-
-- Find a target, and reach it using a Navigation package.  
-  ![demo_02](/assets/images/platform/turtlebot3/home_service_challenge/home_service_challenge_demo_02.png)
+   - Find a target, and reach it using a Navigation package.  
+  
+    ![demo_02](/assets/images/platform/turtlebot3/home_service_challenge/kinetic/home_service_challenge_demo_02.png)
 
 2. Approaching the target.
-
-- For the approach to the target with precise, TurtleBot3 wheels are directly controlled by computing target's location from AR marker. (Used Topic : `/tb3_hsc/cmd_vel`). To produce a reliable performance, Closed-loop and control system can be used for the specified number of times.
-  ![demo_03](/assets/images/platform/turtlebot3/home_service_challenge/home_service_challenge_demo_03.png)
+   - For the approach to the target with precise, TurtleBot3 wheels are directly controlled by computing target's location from AR marker. (Used Topic : `/tb3_hsc/cmd_vel`). To produce a reliable performance, Closed-loop and control system can be used for the specified number of times.
+  
+    ![demo_03](/assets/images/platform/turtlebot3/home_service_challenge/kinetic/home_service_challenge_demo_03.png)
 
 3. Picking the target with OpenMANIPULATOR-X's gripper.
+   - Pick the target object using the moveit package (Joint space control, Task space control and Gripper control)
 
-- Pick the target object using the moveit package (Joint space control, Task space control and Gripper control)
+    ![manipulation_diagram](/assets/images/platform/turtlebot3/home_service_challenge/kinetic/manipulation_diagram.png)
+    > MoveIt Diagram
 
-  ![manipulation_diagram](/assets/images/platform/turtlebot3/home_service_challenge/manipulation_diagram.png)
-
-  > MoveIt Diagram
-
-  ![demo_04](/assets/images/platform/turtlebot3/home_service_challenge/home_service_challenge_demo_04.png)
-
-  > Picking a Target Using MoveIt Package.
+    ![demo_04](/assets/images/platform/turtlebot3/home_service_challenge/kinetic/home_service_challenge_demo_04.png)
+    > Picking a Target Using MoveIt Package.
 
 4. Leaving for the next room to place the object (Used Topic : `/tb3_hsc/cmd_vel`)
-
    - When moving back from the target, the wheels are directly controlled by the manager program using `/tb3_hsc/cmd_vel` topic.
 
 5. Navigating to the place where the object will be placed.
+   - Find a next target, and reach it using a Navigation package.
 
-- Find a next target, and reach it using a Navigation package.
-
-  ![demo_05](/assets/images/platform/turtlebot3/home_service_challenge/home_service_challenge_demo_05.png)
+    ![demo_05](/assets/images/platform/turtlebot3/home_service_challenge/kinetic/home_service_challenge_demo_05.png)
 
 6. Approaching the target.
 
@@ -449,7 +450,7 @@ Using the demo package, the process of moving objects in Home Service Challenge 
 
 8. Returning to the starting point using the navigation package.
 
-   ![demo_06](/assets/images/platform/turtlebot3/home_service_challenge/home_service_challenge_demo_06.png)
+   ![demo_06](/assets/images/platform/turtlebot3/home_service_challenge/kinetic/home_service_challenge_demo_06.png)
 
 ### [Simulation](#simulation)
 
@@ -460,14 +461,14 @@ Simulate TurtleBot3 with OpenMANIPULATOR-X in Gazebo.
 $ roslaunch turtlebot3_home_service_challenge_simulation competition.launch
 ```
 
-![gazebo](/assets/images/platform/turtlebot3/home_service_challenge/simulation_00.png)
+   ![gazebo](/assets/images/platform/turtlebot3/home_service_challenge/kinetic/simulation_00.png)
 
 2. **[Remote PC]** Run a simulation demo for Gazebo.
 ```bash
 $ roslaunch turtlebot3_home_service_challenge_tools turtlebot3_home_service_challenge_demo_simulation.launch
 ```
 
-![simulation_rviz](/assets/images/platform/turtlebot3/home_service_challenge/simulation_rviz_01.png)
+   ![simulation_rviz](/assets/images/platform/turtlebot3/home_service_challenge/kinetic/simulation_rviz_01.png)
 
 3. **[Remote PC]** Run Home Service Manager.
 ```bash

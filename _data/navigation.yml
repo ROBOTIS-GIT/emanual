@@ -20457,16 +20457,14 @@ turtlebot3:
     - title: "Home Service Challenge"
       url: /platform/turtlebot3/home_service_challenge/
       children:
-      - title: "Event Overview"
-        url: /platform/turtlebot3/home_service_challenge/#event-overview
       - title: "Getting Started"
         url: /platform/turtlebot3/home_service_challenge/#getting-started
       - title: "Camera Calibration"
         url: /platform/turtlebot3/home_service_challenge/#camera-calibration
       - title: "SLAM"
         url: /platform/turtlebot3/home_service_challenge/#slam
-      - title: "Starting Missions"
-        url: /platform/turtlebot3/home_service_challenge/#starting-missions
+      - title: "Missions"
+        url: /platform/turtlebot3/home_service_challenge/#missions
       - title: "Simulation"
         url: /platform/turtlebot3/home_service_challenge/#simulation
   - title: "Autonomous Driving"
