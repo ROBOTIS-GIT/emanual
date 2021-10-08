@@ -4,7 +4,7 @@ For beginners, it is strongly recommended to install ROS with the script provide
 
 
 ``` bash
-$ sudo apt update && sudo apt upgrade
+$ sudo apt update
 $ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros2_dashing.sh
 $ chmod 755 ./install_ros2_dashing.sh
 $ bash ./install_ros2_dashing.sh

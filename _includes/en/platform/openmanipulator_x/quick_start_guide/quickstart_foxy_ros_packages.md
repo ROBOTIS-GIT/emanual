@@ -1,4 +1,18 @@
 
-ROS 2 Foxy is supported on Ubuntu 20.04.
+Install dependent packages for OpenMANIPULATOR-X. Run the following commands in a terminal window.
 
-[Official Ubuntu Installation Tutorial](https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview)
+
+```bash
+$ sudo apt install ros-foxy-rqt* ros-foxy-joint-state-publisher
+```
+
+```bash
+$ cd ~/robotis_ws/src/
+$ git clone -b dashing-devel https://github.com/ROBOTIS-GIT/DynamixelSDK.git
+$ git clone -b ros2 https://github.com/ROBOTIS-GIT/dynamixel-workbench.git
+$ git clone -b foxy-devel https://github.com/ROBOTIS-GIT/open_manipulator.git
+$ git clone -b ros2 https://github.com/ROBOTIS-GIT/open_manipulator_msgs.git
+$ git clone -b ros2 https://github.com/ROBOTIS-GIT/open_manipulator_dependencies.git
+$ git clone -b ros2 https://github.com/ROBOTIS-GIT/robotis_manipulator.git
+$ cd ~/robotis_ws && colcon build --symlink-install
+```
