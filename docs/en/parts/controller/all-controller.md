@@ -53,9 +53,9 @@ sidebar:
 
 # [For ROBOTIS DREAM I & II](#for-robotis-dream-i--ii)
 
-|                                               CM-150                                                |
-| :-------------------------------------------------------------------------------------------------: |
-| [![](/assets/images/parts/controller/cm-150/cm-150_product.jpg)](/docs/en/parts/controller/cm-150/) |
+|                                               CM-150                                                |                                               CM-151                                               |
+| :-------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------:|
+| [![](/assets/images/parts/controller/cm-150/cm-150_product.jpg)](/docs/en/parts/controller/cm-150/) | [![](/assets/images/parts/controller/cm-150/cm-150_product.jpg)](/docs/en/parts/controller/cm-151/)|
 
 # [For ROBOTIS Smart I & II & III](#for-robotis-smart-i--ii--iii)
 
