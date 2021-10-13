@@ -118,7 +118,7 @@ sidebar:
 ## [전원 연결 회로](#전원-연결-회로)
 
 OpenCM 485 확장보드 와 OpenCM9.04 연결시 전원 블록 다이어그램  
-OpenCM 485 확장보드는 기본적으로 OpenCM9.04 5V 전원 공급을 하며, JP1은 아래 OpeCM 485 확장보드에서 VDD전원을 OpenCM9.04로 공급할 것인지 결정합니다.
+OpenCM 485 확장보드는 전원에 연결됐을 때 OpenCM9.04에 5V 전원을 공급하며, JP1을 이용해서 OpeCM 485 확장보드에서 VDD전원을 OpenCM9.04로 공급할 것인지 선택합니다.
 
 ![](/assets/images/parts/controller/opencm904/opencm485exp_06.png)
 
