@@ -29,8 +29,8 @@ sidebar:
 - Trajectory Data and Moving Status (In-Position, Following Error, etc).
 - Energy Saving (Reduced Current from 100mA to 40mA).
 - Various Operating Modes
-  - Current based Position Control (XW/XH/XM/XL330 only).
-  - Torque Control (XW/XH/XM/XL330 only only).
+  - Current based Position Control (XW/XH/XM/XC330/XL330 only).
+  - Current Control (XW/XH/XM/XC330/XL330 only only).
   - Velocity Control.
   - Position Control.
   - Extended Position Control.
@@ -41,6 +41,7 @@ sidebar:
 - MCU : ARM CORTEX-M3 (72 \[MHz], 32Bit)
 - Resolution : 4096 \[pulse/rev]
 - Motor :
+  - XD Series : Coreless (Maxon)
   - XW Series : Coreless (Maxon)
   - XH Series : Coreless (Maxon)
   - XM Series : Coreless
