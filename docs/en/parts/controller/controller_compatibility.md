@@ -42,6 +42,9 @@ sidebar:
 |    XC Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |                X(O)                 |      X      |    O     |
 |    XM Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |                X(O)                 |      X      |    O     |
 |    XH Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |                X(O)                 |      X      |    O     |
+|    XH Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |                X(O)                 |      X      |    O     |
+|    XD Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |                X(O)                 |      X      |    O     |
+|    XW Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |                X(O)                 |      X      |    O     |
 |    PRO Series    |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    X     |                X(O)                 |      X      |    O     |
 
 **NOTE**: OpenCM9.04 with OpenCM 485 EXP can use all types of DYNAMIXEL.
