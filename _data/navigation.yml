@@ -26588,6 +26588,34 @@ u2d2_power_hub:
     url: /parts/interface/u2d2_power_hub/#connector-information
     urlkr: /parts/interface/u2d2_power_hub/#커넥터-정보
 
+
+dxl_bridge:
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /parts/interface/dxl_bridge/#introduction
+    urlkr: /parts/interface/dxl_bridge/#개요
+  - title: "Specifications"
+    titlekr: "제품 사양"
+    url: /parts/interface/dxl_bridge/#specifications
+    urlkr: /parts/interface/dxl_bridge/#제품-사양
+  - title: "Layout"
+    titlekr: "각 부 명칭"
+    url: /parts/interface/dxl_bridge/#layout
+    urlkr: /parts/interface/dxl_bridge/#각-부-명칭
+  - title: "Connection Examples"
+    titlekr: "연결 예시"
+    url: /parts/interface/dxl_bridge/#layout
+    urlkr: /parts/interface/dxl_bridge/#연결-예시
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /parts/interface/dxl_bridge/#reference
+    urlkr: /parts/interface/dxl_bridge/#참고-자료
+    children:
+    - title: "Connector Information"
+      titlekr: "커넥터 정보"
+      url: /parts/interface/dxl_bridge/#connecor-information
+      urlkr: /parts/interface/dxl_bridge/#커넥터-정보
+    
 opencm7:
   - titlekr: "개요"
     urlkr: /parts/controller/opencm7/#개요
