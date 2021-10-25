@@ -122,7 +122,7 @@ To use a motion tool on R+ Motion, or a motion file on R+ Task with DYNAMIXEL co
 ## [Power Circuit Connection](#power-circuit-connection)
 
 A power circuit block diagram of the OpenCM 485 EXP and OpenCM9.04, once mounted, is shown below.  
-OpenCM 485 EXP supplies 5V from OpenCM9.04 as default. JP1 can be used to determine if VDD power from OpeCM 485 EXP board is supplied to OpenCM9.04.
+OpenCM 485 EXP can supply 5V to OpenCM9.04 when connected to a power source. JP1 can be used to determine whether the VDD power from OpeCM 485 EXP board is supplied to OpenCM9.04 DYNAMIXEL ports.
 
 ![](/assets/images/parts/controller/opencm904/opencm485exp_06.png)
 

@@ -75,7 +75,7 @@ sidebar:
 # [電源回路接続](#電源回路接続)
 
 OpenCM 485 EXPとOpenCM9.04の電源回路のブロック図を以下に示します。
-OpenCM 485 EXPは、デフォルトでOpenCM9.04から5Vを供給します。 JP1を使用して、OpeCM 485 EXPボードからのVDD電源がOpenCM9.04に供給されているかどうかを判断できます。
+OpenCM 485 EXPは、デフォルトでOpenCM9.04に5Vを供給します。 JP1を使用して、OpeCM 485EXPボードからのVDD電源がOpenCM9.04に供給されているかどうかを確認できます。
 
 ![](/assets/images/parts/controller/opencm904/opencm485exp_06.png)
 
