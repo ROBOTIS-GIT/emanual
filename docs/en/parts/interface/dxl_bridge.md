@@ -7,7 +7,7 @@ share: false
 author_profile: false
 permalink: /docs/en/parts/interface/dxl_bridge/
 sidebar:
-  title: DYNAMIXEL Bridge
+  title: DXL Communication Bridge
   nav: "dxl_bridge"
 ---
 
@@ -15,21 +15,27 @@ sidebar:
 
 ![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_product.png){: width='450px'}
 
-The **DYNAMIXEL Communication Bridge** works as a communication converter between TTL (3 Pin connector) and RS485 (4 Pin connector) of DYNAMIXEL.
+The **DYNAMIXEL Communication Bridge** works as a communication converter between TTL (3 Pin JST Type connector) and RS485 (4 Pin JST Type connector) of DYNAMIXEL.
 
-TTL and RS485 ports in the U2D2 interface are separately connected to the master PC,
+{% capture why_bridge %}
+
+**NOTE**
+
+TTL and RS485 ports in the [U2D2 interface](/docs/en/parts/interface/u2d2/) are separately connected to the master PC,
 however, the data line between TTL and RS485 ports are not connected to each other.
 
-Thus, instructions such as Broadcast Ping, Sync Read and Bulk Read over TTL and
-RS485 are not available through U2D2.
+Thus, Instructions Packets such as **Broadcast Ping, Sync Read and Bulk Read** over TTL to RS485 and vice versa are not feasible through the U2D2 interface only.
+
+- For more detailes about Instruction Packet, see [DYNAMIXEL Protocol 1.0](/docs/en/dxl/protocol1/#instruction-packet) or [Protocol 2.0](/docs/en/dxl/protocol2/#instruction-packet) depending on what DYNAMIXEL is in use. 
 
 ![](/assets/images/parts/interface/dxl_bridge/u2d2_separate_ttl_485.png){: width='600px'}
 
-Unlike the U2D2, the DYNAMIXEL Communication Bridge provides conversion between
-TTL to RS485, which allows Broadcast Ping, Sync Read, and Bulk Read instructions from
-mixed types of communication.
+Unlike the U2D2, the DYNAMIXEL Communication Bridge features a signal conversion between TTL to RS485, which allows Broadcast Ping, Sync Read, and Bulk Read instructions from mixed types of communication. 
 
 ![](/assets/images/parts/interface/dxl_bridge/u2d2_bridge_ttl_485.png){: width='950px'}
+
+{% endcapture %}
+<div class="notice">{{ why_bridge | markdownify }}</div>
 
 # [Specifications](#specifications)
 

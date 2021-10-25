@@ -15,17 +15,23 @@ sidebar:
 
 ![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_product.png){: width='450px'}
 
-**다이나믹셀 커뮤니케이션 브릿지**(이하 다이나믹셀 브릿지)는 RS485 통신 다이나믹셀(4 Pin)과 TTL 통신 다이나믹셀(3 Pin)의 통신을 상호 호환할 수 있도록 연결해 주는 역할을 합니다.  
+**다이나믹셀 커뮤니케이션 브릿지**는 RS485 통신 다이나믹셀(4 Pin, JST 타입)과 TTL 통신 다이나믹셀(3 Pin, JST 타입)의 통신을 상호 호환할 수 있도록 연결해 주는 역할을 합니다.  
 
-U2D2에 있는 TTL과 RS485 단자는 마스터 PC와 서로 연결되어 있지만, TTL과 RS485간의 통신 선로는 연결되어 있지 않습니다. 따라서, U2D2를 통한 TTL과 RS485 다이나믹셀간의  
 
-Broadcast Ping, Sync/Bulk Read 통신은 불가능합니다.  
+{% capture why_bridge %}
+**참고**
+
+[U2D2 인터페이스](/docs/kr/parts/interface/u2d2/)의 TTL과 RS485 단자는 마스터 PC와 서로 연결되어 있지만, TTL과 RS485간의 통신 선로는 연결되어 있지 않습니다. 따라서, U2D2를 통한 TTL과 RS485 다이나믹셀간의 **Broadcast Ping, Sync 및 Bulk Read**와 같은 Instruction Packet 통신은 불가능합니다.
+- Instruction Packet에 대한 자세한 정보는, [다이나믹셀 프로토콜 1.0](/docs/kr/dxl/protocol1/#instruction-packet) or [프로토콜 2.0](/docs/kr/dxl/protocol2/#instruction-packet)을 참고하세요.
 
 ![](/assets/images/parts/interface/dxl_bridge/u2d2_separate_ttl_485.png){: width='600px'}
 
-반면, Dynamixel Communication Bridge는 TTL ↔ RS485 간의 상호 전환을 가능하게 하므로 Broadcast Ping, Sync/Bulk Read 패킷 통신이 가능합니다.  
+반면, 다이나믹셀 커뮤니케이션 브릿지는 TTL과 RS485 간의 상호 전환을 가능하게 하므로 다이나믹셀간의 **Broadcast Ping, Sync 및 Bulk Read** Instruction Packet 통신이 가능합니다.  
 
 ![](/assets/images/parts/interface/dxl_bridge/u2d2_bridge_ttl_485.png){: width='950px'}
+
+{% endcapture %}
+<div class="notice">{{ why_bridge | markdownify }}</div>
 
 # [제품 사양](#제품-사양)
 
