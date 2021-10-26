@@ -1,10 +1,13 @@
+{% capture perform_graph_01 %}
 **NOTE** : The Max Torque and the Stall Torque of Performance Graph are different in measurement methods.
 Stall torque is a measured value of the momentary torque that it can reach. This is generally how RC servos are measured.
 The Performance graph is also called as N-T curves, which is measured with the gradually increasing load.
 The actual motor operation environment is closer to the performance graph, not stall torque method.
 For this reason, the performance graph is broadly used in the industrial field.
 Generally, Max Torque of the Performance Graph is less than the Stall Torque.
-{: .notice}
+{% endcapture %}
+
+<div class="notice">{{ perform_graph_01 | markdownify }}</div>
 
 {% capture caution_power %}
 **CAUTION : When supplying power**
