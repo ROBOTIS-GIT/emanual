@@ -43,11 +43,11 @@ sidebar:
 
 # [각 부 명칭](#각-부-명칭)
 
-![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_layout_front.png){: width='600px'}
+![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_layout_front_kr.png){: width='600px'}
 
 > 각 부 명칭 - 전면 
 
-![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_layout_back.png){: width='600px'}
+![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_layout_back_kr.png){: width='600px'}
 
 > 각 부 명칭 - 후면
 
@@ -57,7 +57,7 @@ sidebar:
 
 2. **볼트 체결 홀** : 장치를 고정하는 용도로 사용. 불필요할 경우 체결 홀 절단선을 따라서 절단이 가능합니다.
 
-3. **RS485 Termination resistance** : RS485의 종단저항을 연결할 수 있는 자리입니다. 저항은 1608 사이즈 (1.6mm x 0.8mm)의 칩저항을 사용할 수 있습니다.
+3. **RS485 종단 저항** : RS485의 종단저항을 연결할 수 있는 자리입니다. 저항은 1608 사이즈 (1.6mm x 0.8mm)의 칩저항을 사용할 수 있습니다.
 
 # [연결 예시](#연결-예시)
 
