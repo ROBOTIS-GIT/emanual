@@ -3,7 +3,7 @@ layout: archive
 lang: kr
 ref: dxl_bridge
 read_time: true
-share: false
+share: true
 permalink: /docs/kr/parts/interface/dxl_bridge/
 author_profile: false
 sidebar:
@@ -13,7 +13,7 @@ sidebar:
 
 # [개요](#개요)
 
-![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_product.png){: width='450px'}
+![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_product_front.png){: width='300px'}
 
 **다이나믹셀 커뮤니케이션 브릿지**는 RS485 통신 다이나믹셀(4 Pin, JST 타입)과 TTL 통신 다이나믹셀(3 Pin, JST 타입)의 통신을 상호 호환할 수 있도록 연결해 주는 역할을 합니다.  
 
@@ -28,7 +28,7 @@ sidebar:
 
 반면, 다이나믹셀 커뮤니케이션 브릿지는 TTL과 RS485 간의 상호 전환을 가능하게 하므로 다이나믹셀간의 **Broadcast Ping, Sync 및 Bulk Read** Instruction Packet 통신이 가능합니다.  
 
-![](/assets/images/parts/interface/dxl_bridge/u2d2_bridge_ttl_485.png){: width='950px'}
+![](/assets/images/parts/interface/dxl_bridge/u2d2_bridge_ttl_485.png)
 
 {% endcapture %}
 <div class="notice">{{ why_bridge | markdownify }}</div>
@@ -43,11 +43,17 @@ sidebar:
 
 # [각 부 명칭](#각-부-명칭)
 
-![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_layout_kr.png){: width='600px'}
+![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_layout_front.png){: width='600px'}
+
+> 각 부 명칭 - 전면 
+
+![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_layout_back.png){: width='600px'}
+
+> 각 부 명칭 - 후면
 
 ## [설명](#설명)
 
-1. **TTL / RS485 Connecter (JST 3 / 4Pin)** : TTL 및 RS485 통신을 위한 3핀, 4핀 JST 커넥터 사용
+1. **TTL (JST 3핀) / RS485 Connecter (JST 4핀)** : TTL 및 RS485 통신을 위한 3핀, 4핀 JST 커넥터 사용
 
 2. **볼트 체결 홀** : 장치를 고정하는 용도로 사용. 불필요할 경우 체결 홀 절단선을 따라서 절단이 가능합니다.
 
@@ -55,18 +61,24 @@ sidebar:
 
 # [연결 예시](#연결-예시)
 
-1. 다이나믹셀의 동작 전압이 동일한 경우, 다음 이미지를 참고하세요. 
+1. 다이나믹셀의 동작 전압이 동일한 경우, 다음 예시 이미지를 참고하세요. 
 
     ![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_connection_example_same_voltage_01.png){: width='600px'}
+    > 다이나믹셀이 Master Device에서 전원을 공급 받는 경우, 
 
     ![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_connection_example_same_voltage_02.png){: width='600px'}
+    > 다이나믹셀이 외부에서 전원을 공급 받는 경우,
 
-2. 다이나믹셀의 동작 전압이 다른 경우, 다음 이미지를 참고하세요. 
+2. 다이나믹셀의 동작 전압이 다른 경우, 다음 예시 이미지를 참고하세요. 
 
     ![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_connection_example_different_voltage_01.png){: width='600px'}
+    > 전원이 다이나믹셀 커뮤니케이션 브릿지의 RS485 커넥터로 공급되는 경우, 
 
     ![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_connection_example_different_voltage_02.png){: width='600px'}
+    > 전원이 다이나믹셀 커뮤니케이션 브릿지의 TTL 커넥터로 공급되는 경우, 
 
 # [참고자료](#참고자료)
+
+## [커넥터 정보](#커넥터-정보)
 
 {% include kr/dxl/jst_485_ttl.md %}

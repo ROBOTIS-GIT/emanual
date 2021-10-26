@@ -3,7 +3,7 @@ layout: archive
 lang: en
 ref: dxl_bridge
 read_time: true
-share: false
+share: true
 author_profile: false
 permalink: /docs/en/parts/interface/dxl_bridge/
 sidebar:
@@ -13,7 +13,7 @@ sidebar:
 
 # [Introduction](#introduction)
 
-![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_product.png){: width='450px'}
+![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_product_front.png){: width='300px'}
 
 The **DYNAMIXEL Communication Bridge** works as a communication converter between TTL (3 Pin JST Type connector) and RS485 (4 Pin JST Type connector) of DYNAMIXEL.
 
@@ -32,7 +32,7 @@ Thus, Instructions Packets such as **Broadcast Ping, Sync Read and Bulk Read** o
 
 Unlike the U2D2, the DYNAMIXEL Communication Bridge features a signal conversion between TTL to RS485, which allows Broadcast Ping, Sync Read, and Bulk Read instructions from mixed types of communication. 
 
-![](/assets/images/parts/interface/dxl_bridge/u2d2_bridge_ttl_485.png){: width='950px'}
+![](/assets/images/parts/interface/dxl_bridge/u2d2_bridge_ttl_485.png)
 
 {% endcapture %}
 <div class="notice">{{ why_bridge | markdownify }}</div>
@@ -47,11 +47,18 @@ Unlike the U2D2, the DYNAMIXEL Communication Bridge features a signal conversion
 
 # [Layout](#layout)
 
-![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_layout_kr.png){: width='600px'}
+
+![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_layout_front.png){: width='600px'}  
+
+> Layout - Front
+
+![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_layout_back.png){: width='600px'}
+
+> Layout - Back
 
 ## [Description](#description)
 
-1. **TTL / RS485 Connecters (JST 3 / 4 Pins)** : 3 and 4 Pin JST connectors for TTL / RS458 communication.
+1. **TTL (JST 3 Pins) / RS485 Connecters (JST 4 Pins)** : 3 and 4 Pin JST connectors for TTL / RS458 communication.
 
 2. **Mounting holes** : Used to mount on other devices. Mounting holes can be removed if not used by snapping along the V-cut line.
 
@@ -62,15 +69,21 @@ Unlike the U2D2, the DYNAMIXEL Communication Bridge features a signal conversion
 1. If the operating voltages of all DYNAMIXELs are the same, see the following images.
 
     ![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_connection_example_same_voltage_01.png){: width='600px'}
+    > Powering the DYNAMIXEL from Master Device. 
 
     ![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_connection_example_same_voltage_02.png){: width='600px'}
+    > Powering the DYNAMIXEL from external power source. 
   
 2. If the operating voltages of DYNAMIXELs are different, see the following images.
 
     ![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_connection_example_different_voltage_01.png){: width='600px'}
+    > Powering the DYNAMIXEL Communication Bridge from the RS485 connector side. 
 
     ![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_connection_example_different_voltage_02.png){: width='600px'}
+    > Powering the DYNAMIXEL Communication Bridge from the TTL connector side. 
 
 # [Reference](#reference)
+
+## [Connector Information](#connector-information)
 
 {% include en/dxl/jst_485_ttl.md %}

@@ -26609,11 +26609,11 @@ dxl_bridge:
   - title: "Reference"
     titlekr: "참고자료"
     url: /parts/interface/dxl_bridge/#reference
-    urlkr: /parts/interface/dxl_bridge/#참고-자료
+    urlkr: /parts/interface/dxl_bridge/#참고자료
     children:
     - title: "Connector Information"
       titlekr: "커넥터 정보"
-      url: /parts/interface/dxl_bridge/#connecor-information
+      url: /parts/interface/dxl_bridge/#connector-information
       urlkr: /parts/interface/dxl_bridge/#커넥터-정보
     
 opencm7:
