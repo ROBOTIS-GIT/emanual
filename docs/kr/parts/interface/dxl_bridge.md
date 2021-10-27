@@ -37,8 +37,8 @@ sidebar:
 
 | 항목      | 사양           |
 |:----------|:---------------|
-| 동작 전압 | 3.5 V ~ 24.0 V |
-| 허용 전류 | 최대 3.0 A     |
+| 동작 전압 | 3.5 V ~ 30.0 V |
+| 허용 전류 | 3.0 A          |
 | 통신 속도 | 최대 6 Mbps    |
 
 # [각 부 명칭](#각-부-명칭)
@@ -76,6 +76,9 @@ sidebar:
 
     ![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_connection_example_different_voltage_02.png){: width='600px'}
     > 전원이 다이나믹셀 커뮤니케이션 브릿지의 TTL 커넥터로 공급되는 경우, 
+
+    **주의**: 다이나믹셀 커뮤니케이션 브릿지의 TTL 과 RS485의 커넥터의 Vin핀은 서로 연결되어 있습니다. 동작 전압이 다른 다이나믹셀 사용시, 제품의 안전을 위해 Vin Pin이 서로 연결되지 않게 주의하세요.
+    {: .notice--warning} 
 
 # [참고자료](#참고자료)
 
