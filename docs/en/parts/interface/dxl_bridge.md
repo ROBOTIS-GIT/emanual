@@ -41,8 +41,8 @@ Unlike the U2D2, the DYNAMIXEL Communication Bridge features a signal conversion
 
 | Item              | Specifications |
 |:------------------|:---------------|
-| Operating Voltage | 3.5 V ~ 24.0 V |
-| Current           | Max 3.0 A      |
+| Operating Voltage | 3.5 V ~ 30.0 V |
+| Current Raiting   | 3.0 A          |
 | Baud Rate         | Max 6 Mbps     |
 
 # [Layout](#layout)
@@ -68,19 +68,22 @@ Unlike the U2D2, the DYNAMIXEL Communication Bridge features a signal conversion
 
 1. If the operating voltages of all DYNAMIXELs are the same, see the following images.
 
-    ![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_connection_example_same_voltage_01.png){: width='600px'}
+    ![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_connection_example_same_voltage_01.png){: width='750px'}
     > Powering the DYNAMIXEL from Master Device. 
 
-    ![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_connection_example_same_voltage_02.png){: width='600px'}
+    ![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_connection_example_same_voltage_02.png){: width='750px'}
     > Powering the DYNAMIXEL from external power source. 
   
 2. If the operating voltages of DYNAMIXELs are different, see the following images.
 
-    ![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_connection_example_different_voltage_01.png){: width='600px'}
+    ![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_connection_example_different_voltage_01.png){: width='850px'}
     > Powering the DYNAMIXEL Communication Bridge from the RS485 connector side. 
 
-    ![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_connection_example_different_voltage_02.png){: width='600px'}
+    ![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_connection_example_different_voltage_02.png){: width='850px'}
     > Powering the DYNAMIXEL Communication Bridge from the TTL connector side. 
+
+    **WARNING**: Vin pins of DYNAMIXEL Communication Bridge between RS485 and TTL are connected each other. Be sure Vin pins are not connected when using DYNAMIXELs with the differnt operating voltage for the product safety.
+    {: .notice--warning} 
 
 # [Reference](#reference)
 

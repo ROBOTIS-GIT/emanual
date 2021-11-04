@@ -37,17 +37,17 @@ sidebar:
 
 | 항목      | 사양           |
 |:----------|:---------------|
-| 동작 전압 | 3.5 V ~ 24.0 V |
-| 허용 전류 | 최대 3.0 A     |
+| 동작 전압 | 3.5 V ~ 30.0 V |
+| 허용 전류 | 3.0 A          |
 | 통신 속도 | 최대 6 Mbps    |
 
 # [각 부 명칭](#각-부-명칭)
 
-![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_layout_front.png){: width='600px'}
+![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_layout_front_kr.png){: width='600px'}
 
 > 각 부 명칭 - 전면 
 
-![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_layout_back.png){: width='600px'}
+![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_layout_back_kr.png){: width='600px'}
 
 > 각 부 명칭 - 후면
 
@@ -57,7 +57,7 @@ sidebar:
 
 2. **볼트 체결 홀** : 장치를 고정하는 용도로 사용. 불필요할 경우 체결 홀 절단선을 따라서 절단이 가능합니다.
 
-3. **RS485 Termination resistance** : RS485의 종단저항을 연결할 수 있는 자리입니다. 저항은 1608 사이즈 (1.6mm x 0.8mm)의 칩저항을 사용할 수 있습니다.
+3. **RS485 종단 저항** : RS485의 종단저항을 연결할 수 있는 자리입니다. 저항은 1608 사이즈 (1.6mm x 0.8mm)의 칩저항을 사용할 수 있습니다.
 
 # [연결 예시](#연결-예시)
 
@@ -76,6 +76,9 @@ sidebar:
 
     ![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_connection_example_different_voltage_02.png){: width='600px'}
     > 전원이 다이나믹셀 커뮤니케이션 브릿지의 TTL 커넥터로 공급되는 경우, 
+
+    **주의**: 다이나믹셀 커뮤니케이션 브릿지의 TTL 과 RS485의 커넥터의 Vin핀은 서로 연결되어 있습니다. 동작 전압이 다른 다이나믹셀 사용시, 제품의 안전을 위해 Vin Pin이 서로 연결되지 않게 주의하세요.
+    {: .notice--warning} 
 
 # [참고자료](#참고자료)
 
