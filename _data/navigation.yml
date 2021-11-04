@@ -26604,7 +26604,7 @@ dxl_bridge:
     urlkr: /parts/interface/dxl_bridge/#각-부-명칭
   - title: "Connection Examples"
     titlekr: "연결 예시"
-    url: /parts/interface/dxl_bridge/#layout
+    url: /parts/interface/dxl_bridge/#connection-examples
     urlkr: /parts/interface/dxl_bridge/#연결-예시
   - title: "Reference"
     titlekr: "참고자료"
