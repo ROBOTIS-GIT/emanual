@@ -63,18 +63,18 @@ sidebar:
 
 1. 다이나믹셀의 동작 전압이 동일한 경우, 다음 예시 이미지를 참고하세요. 
 
-    ![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_connection_example_same_voltage_01.png){: width='600px'}
+    ![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_connection_example_same_voltage_01.png)
     > 다이나믹셀이 Master Device에서 전원을 공급 받는 경우, 
 
-    ![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_connection_example_same_voltage_02.png){: width='600px'}
+    ![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_connection_example_same_voltage_02.png)
     > 다이나믹셀이 외부에서 전원을 공급 받는 경우,
 
 2. 다이나믹셀의 동작 전압이 다른 경우, 다음 예시 이미지를 참고하세요. 
 
-    ![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_connection_example_different_voltage_01.png){: width='600px'}
+    ![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_connection_example_different_voltage_01.png)
     > 전원이 다이나믹셀 커뮤니케이션 브릿지의 RS485 커넥터로 공급되는 경우, 
 
-    ![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_connection_example_different_voltage_02.png){: width='600px'}
+    ![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_connection_example_different_voltage_02.png)
     > 전원이 다이나믹셀 커뮤니케이션 브릿지의 TTL 커넥터로 공급되는 경우, 
 
     **주의**: 다이나믹셀 커뮤니케이션 브릿지의 TTL 과 RS485의 커넥터의 Vin핀은 서로 연결되어 있습니다. 동작 전압이 다른 다이나믹셀 사용시, 제품의 안전을 위해 Vin Pin이 서로 연결되지 않게 주의하세요.
