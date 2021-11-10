@@ -3,7 +3,7 @@
 
 A normal horn is the standard horn for the DYNAMIXEL X540 series. The normal horn can be assembled to the output shaft wheel gear of a front case of DYNAMIXEL, and it can be used to connect DYNAMIXEL with frames. 
 
-![Horn_Assembly](/assets/images/dxl/x/x540/hn13-n101_assembly.png)
+![Horn_Assembly](/assets/images/dxl/x/x430/hn12-n101_assembly.png)
 
 **WARNNING**: Be sure to align the thrust washer properly with the output shaft. Otherwise, the thrust washer can be damaged by the assembled horn.  
   ![HowTo_Thrust_Washer](/assets/images/dxl/x/assembly_common/thrust_washer_02.png)
