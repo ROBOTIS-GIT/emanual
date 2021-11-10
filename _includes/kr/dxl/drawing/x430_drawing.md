@@ -1,8 +1,19 @@
 
-### [X430](#x430)
+{% if page.ref=='xd430-t210' or page.ref=='xd430-t350' %}
+
+### [XD430](#xd430)
 - `다운로드` [XD-430.N101.I101.dwg]{: .blank}
 - `다운로드` [XD-430.N101.I101.pdf]{: .blank}
 - `다운로드` [XD-430.N101.I101.STP]{: .blank}
+
+{% else %}
+
+### [X430](#x430)
+- `다운로드` [X_430_idle_ref.pdf]{: .blank}
+- `다운로드` [X-430_idle_ref.dwg]{: .blank}
+- `다운로드` [x-430_idle.stp]{: .blank}
+
+{% endif %}
 
 ### [FR12-H101K](#fr12-h101k)
 - `다운로드` [fr12_h101_ref.dwg]{: .blank} 
@@ -44,9 +55,17 @@
 - `다운로드` [fr12-e171.pdf]{: .blank}
 - `다운로드` [fr12-e171.stp]{: .blank}
 
+<!-- XD 430 Only -->
+
 [XD-430.N101.I101.pdf]: https://www.robotis.com/service/download.php?no=2080
 [XD-430.N101.I101.dwg]: https://www.robotis.com/service/download.php?no=2079
 [XD-430.N101.I101.STP]: https://www.robotis.com/service/download.php?no=2081
+
+<!-- XM/XH 430 Only -->
+
+[X_430_idle_ref.pdf]: http://www.robotis.com/service/download.php?no=157
+[X-430_idle_ref.dwg]: http://www.robotis.com/service/download.php?no=156
+[x-430_idle.stp]: http://www.robotis.com/service/download.php?no=158
 
 [fr12_h101_ref.dwg]: https://www.robotis.com/service/download.php?no=311
 [fr12_h101_ref.pdf]: https://www.robotis.com/service/download.php?no=312
