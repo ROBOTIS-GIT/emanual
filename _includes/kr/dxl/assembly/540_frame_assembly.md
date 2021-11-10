@@ -3,14 +3,14 @@
 
 프레임 보호를 위해, 스페이서 링을 사용하세요. 스페이서 링은, 조립된 프레임과 다이나믹셀 케이스 사이의 빈 공간을 메꾸는 역할을 합니다. 
 
-![HowTo_SpacerRing](/assets/images/dxl/x/X540/howto_spacering_kr.png)
+![HowTo_SpacerRing](/assets/images/dxl/x/assembly_common/howto_spacering_kr.png)
 
 ### [프레임과 혼 결합 시 주의 사항](#프레임과-혼-결합-시-주의-사항)
 
 나사의 길이가 체결된 혼과 프레임의 두께보다 길다면, 케이스 손상 또는 구동시 제품이 파손될수 있습니다. 반드시 프레임과 혼의 두께 (T)를 고려하여 나사를 체결하세요.
 {: .notice--warning}
 
-![Warn_HornAssembly](/assets/images/dxl/x/X540/warning_horn_assembly_x540.png)
+![Warn_HornAssembly](/assets/images/dxl/x/x540/warning_horn_assembly_x540.png)
 
 **참고**: [도면](#도면)에서 프레임 및 혼 조립 시 필요한 다양한 정보를 제공합니다. 
 {: .notice}
@@ -19,7 +19,7 @@
 
 다이나믹셀의 혼과 체결되는 힌지 프레임입니다. 
 
-![Hinge_Assembly](/assets/images/dxl/x/X540/fr13-h101k.png)
+![Hinge_Assembly](/assets/images/dxl/x/x540/fr13-h101k.png)
 
 > FR13-H101K
 
@@ -36,11 +36,11 @@
 
 다이나믹셀의 측면 및 하단부에 체결되는 사이드 프레임입니다.
 
-![Side_Assembly_Side](/assets/images/dxl/x/X540/fr13-s101k.png)
+![Side_Assembly_Side](/assets/images/dxl/x/x540/fr13-s101k.png)
 
 > FR13-S101K
 
-![Side_Assembly_Bottom](/assets/images/dxl/x/X540/fr13-s102k.png)
+![Side_Assembly_Bottom](/assets/images/dxl/x/x540/fr13-s102k.png)
 
 > FR13-S102K
 
@@ -54,7 +54,7 @@
 
 힌지프레임과 사이드 프레임을 조합하여 다양하게 활용 가능합니다. 
 
-![Frame_Example](/assets/images/dxl/x/X540/x540_frame_example.png)
+![Frame_Example](/assets/images/dxl/x/x540/x540_frame_example.png)
 
 ### [기타 프레임 조립 예시](#기타-프레임-조립-예시)
 
@@ -64,11 +64,11 @@
 
 1. Step 1  
 
-    ![ETC_FrameAssembly](/assets/images/dxl/x/X540/x540_etc_assembly_example_front1_01.png)
+    ![ETC_FrameAssembly](/assets/images/dxl/x/x540/x540_etc_assembly_example_front1_01.png)
 
 2. Step 2  
 
-    ![ETC_FrameAssembly](/assets/images/dxl/x/X540/x540_etc_assembly_example_front1_02.png)
+    ![ETC_FrameAssembly](/assets/images/dxl/x/x540/x540_etc_assembly_example_front1_02.png)
 
   **참고**: 이미지에서 사용된 프레임은 판매되는 프레임이 아닙니다.
   {: .notice}
@@ -83,11 +83,11 @@
 
 1. Step 1
   
-    ![ETC_FrameAssembly](/assets/images/dxl/x/X540/x540_etc_assembly_example_front2_01.png)
+    ![ETC_FrameAssembly](/assets/images/dxl/x/x540/x540_etc_assembly_example_front2_01.png)
 
 2. Step 2
 
-    ![ETC_FrameAssembly](/assets/images/dxl/x/X540/x540_etc_assembly_example_front2_02.png)
+    ![ETC_FrameAssembly](/assets/images/dxl/x/x540/x540_etc_assembly_example_front2_02.png)
 
   **참고**: 이미지에서 사용된 프레임은 판매되는 프레임이 아닙니다.
   {: .notice}
@@ -100,12 +100,12 @@
 
 #### [Side](#side)
 
-  ![ETC_FrameAssembly](/assets/images/dxl/x/X540/x540_etc_assembly_example_side.png)
+  ![ETC_FrameAssembly](/assets/images/dxl/x/x540/x540_etc_assembly_example_side.png)
   
   {% capture sidetab_warning_3mm %}
   **주의**: 케이스 측면 (Side Tab)에 프레임 결합 시, 나사 길이에 유의하세요.  
   
-  ![3mm_Mount_Deep_Warning](/assets/images/dxl/x/X540/3mm_mount_warning.jpg)
+  ![3mm_Mount_Deep_Warning](/assets/images/dxl/x/assembly_common/3mm_mount_warning.jpg)
   
   {% endcapture %}
   
@@ -119,7 +119,7 @@
   
 #### [Bottom](#bottom)
 
-  ![ETC_FrameAssembly](/assets/images/dxl/x/X540/x540_etc_assembly_example_bottom.png)
+  ![ETC_FrameAssembly](/assets/images/dxl/x/x540/x540_etc_assembly_example_bottom.png)
   
   <div class="notice--warning">{{ sidetab_warning_3mm | markdownify }}</div> 
   
