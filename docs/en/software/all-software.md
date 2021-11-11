@@ -18,7 +18,7 @@ sidebar:
 
 ## [DYNAMIXEL Wizard 2.0](#dynamixel-wizard-20)
 
-DYNAMIXEL Wizard 2.0 is an optimized tool for managing DYNAMIXEL’s from various operating systems.
+[DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/) is an optimized tool for managing DYNAMIXEL’s from various operating systems.
 
 The following features are provided with DYNAMIXEL Wizard 2.0.
 
@@ -30,7 +30,7 @@ The following features are provided with DYNAMIXEL Wizard 2.0.
 
 ## [DYNAMIXEL SDK](#dynamixel-sdk)
 
-DYNAMIXEL SDK is a software development kit that provides DYNAMIXEL control functions using packet communication.
+[DYNAMIXEL SDK](/docs/en/software/dynamixel/dynamixel_sdk/overview/) is a software development kit that provides DYNAMIXEL control functions using packet communication.
 
 The API of DYNAMIXEL SDK is designed for DYNAMIXEL actuators and DYNAMIXEL-based platforms.
 
@@ -42,11 +42,11 @@ If you are looking for more SDK programs, see [Development (SDK & ROS)](#develop
 
 ## [DYNAMIXEL Workbench](#dynamixel-workbench)
 
-DYNAMIXEL Workbench, based on DYNAMIXEL SDK, is library which provides simple and easier method to use DYNAMIXEL.
+[DYNAMIXEL Workbench](/docs/en/software/dynamixel/dynamixel_workbench/) is library which provides simple and easy APIs to use DYNAMIXEL.
 
 # [Arduino IDE](#arduino-ide)
 
-Select ROBOTIS “Open” controllers can be used with Arduino programming software.
+[Arduino IDE](/docs/en/software/arduino_ide/) enviroment can be utilized with DYNAMIXEL Shield or OpenCM controllers by using our open-source library (Dynamixel2Arduino or Dynamixel Shield)
 
 |                                        Arduino IDE                                         |
 | :----------------------------------------------------------------------------------------: |
@@ -60,7 +60,7 @@ Select ROBOTIS “Open” controllers can be used with Arduino programming softw
 
 ## [DYNAMIXEL SDK ](#dynamixel-sdk-)
 
-DYNAMIXEL SDK is a software development kit that provides DYNAMIXEL control functions using packet communication.
+[DYNAMIXEL SDK](/docs/en/software/dynamixel/dynamixel_sdk/overview/) is a software development kit that provides DYNAMIXEL control functions using packet communication.
 
 The API of DYNAMIXEL SDK is designed for DYNAMIXEL actuators and DYNAMIXEL-based platforms.
 
@@ -70,35 +70,42 @@ This e-Manual provides comprehensive information on ROBOTIS products and applica
 
 ## [DYNAMIXEL Workbench ](#dynamixel-workbench-)
 
-DYNAMIXEL Workbench, based on DYNAMIXEL SDK, is library which provides simple and easier method to use DYNAMIXEL.
+[DYNAMIXEL Workbench](/docs/en/software/dynamixel/dynamixel_workbench/) is library which provides simple and easy APIs to use DYNAMIXEL.
 
-## [EMBEDDED SDK](#embedded-sdk)
+## [Embedded SDK](#embedded-sdk)
 
-Custom firmware exploration is an option for users who would like to explore embedded programming in C-language with the ROBOTIS CM-530, 510, 700 controller in BIOLOID Premium, GP and STEM kits
+Custom firmware exploration is an option for users who would like to explore embedded programming in C-language with the ROBOTIS CM-530, 510, 700 controller used in BIOLOID Premium, GP and STEM kits.
+
+The Embedded SDK provides the solution for users to develope a firmware that can be installed in CM-510 / CM-530 / CM-700
+
+1. About [Embedded C(CM530)](/docs/en/software/embedded_sdk/embedded_c_cm530/) and [Embeeded C(CM510/700)](/docs/en/software/embedded_sdk/embedded_c_cm510/) 
+- All the codes are written in C . 
+- Detailed Examples are provided. 
+
+2. About [Zigbee SDK](/docs/en/software/embedded_sdk/zigbee_sdk/)
+- It has outstanding portability in each platform since written in C language.
+- It is easy to perform platform porting since it is written in both platform independent and dependent sources.
+- The interface is standardized; thus, the developed software can be used again even if the controller is different.
 
 ## [ROBOTIS Framework Packages](#robotis-framework-packages)
 
-The Robotis Frameware, which is made based on the DYNAMIXEL SDK, is ROS packages mainly used with ROBOTIS humanoid platform, OP2, OP3 and Thormang3.
+The [ROBOTIS Framework Packages](/docs/en/software/robotis_framework_packages/) is ROS packages which is mainly used with ROBOTIS humanoid platform, OP2, OP3 and Thormang3.
 
-- [ROBOTIS Framework Packages](/docs/en/software/robotis_framework_packages/)
+## [ROBOTIS Manipulator library](#robotis-manipulator-library)
 
-## [ROBOTIS Manipulator library](#robotis-manipulator-libs)
-
-The robotis_manipulator package is a library package for controlling the manipulator. This package provides a manipulator class for setting manipulator parameters, and provides some math functions to configure the manipulator controller and a basic trajectory generators that uses minimum jerk.
-
-- [ROBOTIS Manipulator library](/docs/en/software/robotis_manipulator_libs/)
+The [ROBOTIS Manipulator library](/docs/en/software/robotis_manipulator_libs/) is a library package to control a manipulator. This package provides a manipulator class for setting manipulator parameters, and provides some math functions to configure the manipulator controller and a basic trajectory generators that uses minimum jerk.
 
 ## [OpenCM IDE](#opencm-ide)
 
-For an Arduino-like programming experience, OpenCM IDE can be used to program the ROBOTIS OpenCM9.04 controller included with the ROBOTIS Mini. It includes example sketches specific to the Dynamixel communication protocol and OLLO sensors.
+For an Arduino-like programming experience, [OpenCM IDE](/docs/en/software/opencm_ide/getting_started/) can be used to program the ROBOTIS OpenCM9.04 controller included with the ROBOTIS Mini. It includes example sketches specific to the Dynamixel communication protocol and OLLO sensors.
 
 # [Roboplus (R+)](#roboplus-r)
 
 RoboPlus (R+) software is designed to help you begin creating and programming with ROBOTIS kits straight out of the box.
 
-## [R+ Task 3.0](#r-task30)
+## [R+ Task 3.0](#r-task-30)
 
-R+ Task 3.0 is an integrated software tool that combines R+ Task 2.0 and R+ Motion 2.0.
+[R+ Task 3.0](/docs/en/software/rplustask3/) is an integrated software tool that combines R+ Task 2.0 and R+ Motion 2.0.
 
 |                                        R+ Task 3.0                                        |
 | :---------------------------------------------------------------------------------------: |
@@ -112,21 +119,21 @@ R+ Task 3.0 is an integrated software tool that combines R+ Task 2.0 and R+ Moti
 
 ### [R+ Manager 2.0](#r-manager-20)
 
-Our firmware management tool can be used to test and update sensors, motors, controllers and servos.
+[R+ Manager 2.0](/docs/en/software/rplus2/manager/) is a firmware management tool to test and update sensors, motors, controllers and servos.
 
 ### [R+ Task 2.0](#r-task-20)
 
-Using this graphical programming tool, instructions are created in a simplified version of C-Language code and downloaded to the ROBOTIS controller. Contains the power and flexibility of more common text-based programming applications and requires minimal coding experience.
+[R+ Task 2.0](/docs/en/software/rplus2/task/) is a task editor to create instructions in a simplified C-Language that can be downloaded to our exclusive controller such as CM-550. 
 
 ### [R+ Motion 2.0](#r-motion-20)
 
-Use our motion editor tool to easily create complex robot poses which can be linked together to create full movement routines. Once downloaded to the ROBOTIS controller, motion files can be played back from R+ Motion 2.0 or inserted into code made in R+ Task 2.0.
+[R+ Motion 2.0](/docs/en/software/rplus2/motion/) is a motion editor to easily create complex robot poses which can be linked together to create full movement routines. Once downloaded to the ROBOTIS controller, motion files can be played back from R+ Motion 2.0 or inserted into code made in R+ Task 2.0.
 
 ### [R+ Design 2.0](#r-design-20)
 
-This 3D design tool can be used as an interactive guide for step-by-step robot assembly. The optional “Creator Mode” allows users to prototype and develop their own structures based on ROBOTIS components.
+[R+ Design 2.0](/docs/en/software/rplus2/design/) can be used as an interactive guide for step-by-step robot assembly. The optional “Creator Mode” allows users to prototype and develop their own structures based on ROBOTIS components.
 
-### [R+ Mobile Apps](#r-mohile-apps)
+### [R+ Mobile Apps](#r-mobile-apps)
 
 |                                          R+ m.Task 2.0                                           |                                          R+ m.Motion 2.0                                           |                                            R+ m.Design                                             |                                            R+ Block                                             |
 | :----------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------: |
@@ -134,7 +141,7 @@ This 3D design tool can be used as an interactive guide for step-by-step robot a
 
 #### [R+ Block](#r-block)
 
-This helper app allows select ROBOTIS controllers to connect to Scratch 2.0 Offline Editor and program robots in the Scratch block-programming language.
+[R+ Block](/docs/en/software/rplus2/rplus2_block/) allows to select ROBOTIS controllers to connect to Scratch 2.0 Offline Editor and program robots in the Scratch block-programming language.
 
 ## [R+ 1.0](#r-10)
 
@@ -146,7 +153,7 @@ This older all-in-one version of our RoboPlus software provides similar features
 
 ## [ROBOTIS MINI](#robotis-mini)
 
-This app is used to control and operate ROBOTIS MINI
+[ROBOTIS Mini app](/docs/en/software/mobile_app/mini_app/) is used to control and operate ROBOTIS MINI
 
 |                                           ROBOTIS MINI                                            |
 | :-----------------------------------------------------------------------------------------------: |
