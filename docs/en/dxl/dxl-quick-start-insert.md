@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/dxl/dxl-quick-start-insert/
 sidebar:
-  title: DYNAMIXEL Qucik Start
+  title: DYNAMIXEL Quick Start
   nav: "dxl-quick-start"
 ---
 
