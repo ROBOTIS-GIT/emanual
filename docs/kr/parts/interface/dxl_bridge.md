@@ -51,6 +51,9 @@ sidebar:
 
 > 각 부 명칭 - 후면
 
+**참고**: `VDD`는 다이나믹셀 커뮤니케이션 브릿지 후면에 프린팅된 `Vin`과 동일한 명칭입니다. 
+{: .notice}
+
 ## [설명](#설명)
 
 1. **TTL (JST 3핀) / RS485 Connecter (JST 4핀)** : TTL 및 RS485 통신을 위한 3핀, 4핀 JST 커넥터 사용
@@ -77,7 +80,7 @@ sidebar:
     ![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_connection_example_different_voltage_02.png)
     > 전원이 다이나믹셀 커뮤니케이션 브릿지의 TTL 커넥터로 공급되는 경우, 
 
-    **주의**: 다이나믹셀 커뮤니케이션 브릿지의 TTL 과 RS485의 커넥터의 Vin핀은 서로 연결되어 있습니다. 동작 전압이 다른 다이나믹셀 사용시, 제품의 안전을 위해 Vin Pin이 서로 연결되지 않게 주의하세요.
+    **주의**: 다이나믹셀 커뮤니케이션 브릿지의 TTL 커넥터와 RS485 커넥터의 `VDD` 단자(2번 Pin, [각 부 명칭](#각-부-명칭) 참조)는 서로 연결되어 있습니다. TTL과 RS485에 서로 다른 전원을 사용할 경우, 둘 중 하나의 `VDD`만 다이나믹셀 커뮤니케이션 브릿지에 연결하세요.  
     {: .notice--warning} 
 
 # [참고자료](#참고자료)

@@ -56,6 +56,9 @@ Unlike the U2D2, the DYNAMIXEL Communication Bridge features a signal conversion
 
 > Layout - Back
 
+**NOTE**: `VDD` is the same terminology as the `Vin` printed back of the DYNAMIXEL Communication Bridge.
+{: .notice}
+
 ## [Description](#description)
 
 1. **TTL (JST 3 Pins) / RS485 Connecters (JST 4 Pins)** : 3 and 4 Pin JST connectors for TTL / RS458 communication.
@@ -82,7 +85,7 @@ Unlike the U2D2, the DYNAMIXEL Communication Bridge features a signal conversion
     ![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_connection_example_different_voltage_02.png)
     > Powering the DYNAMIXEL Communication Bridge from the TTL connector side. 
 
-    **WARNING**: Vin pins of DYNAMIXEL Communication Bridge between RS485 and TTL are connected each other. Be sure Vin pins are not connected when using DYNAMIXELs with the differnt operating voltage for the product safety.
+    **WARNING**: `VDD` pins (See [Layout](#layout)) of DYNAMIXEL Communication Bridge between a RS485 and TTL connector are connected each other. In case the TTL and RS485 connectors use different power, be sure to connect **only one `VDD`** to the DYNAMIXEL Communication Bridge for the product safety. 
     {: .notice--warning} 
 
 # [Reference](#reference)
