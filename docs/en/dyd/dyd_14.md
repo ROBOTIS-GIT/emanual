@@ -24,7 +24,7 @@ product_group: all-dyd
 |:----------------------------------:|:-----------:|:----------:|:----------:|:----:|
 |             Gear ratio             |      -      |     51     |     99     |  -   |
 |       Repeatable peak torque       |     Nm      |    27.0    |    39.0    |  -   |
-| Rated output torque<br>(@2,000 rpm) |     Nm      |    5.4     |    7.8     |  -   |
+| Rated output torque<br>(@2,000 rpm) |     Nm      |    3.7     |    5.4     |  -   |
 |        Maximum input speed         |     rpm     |   6,000    |   6,000    |  -   |
 |        Average input speed         |     rpm     |   2,000    |   2,000    |  -   |
 |         Moment of intertia         | X10-4 kgm^2 |   0.119    |   0.135    |  -   |
@@ -34,7 +34,7 @@ product_group: all-dyd
 | Efficiency(@2,000 rpm, 20 &#8451;) |      %      |     55     |     55     |  -   |
 |          Starting torque           |     cNm     |     20     |     20     |  -   |
 |         Back-Drive torque          |     Nm      |    3.0     |    3.0     |  -   |
-|            Service life            |    hours    |   5,000    |   5,000    |  -   |
+|            Service life            |    hours    |   7,000    |   7,000    |  -   |
 |        Dimension (O.D. X H)        |     mm      |  68 x 30   |  68 x 30   |  -   |
 |               Weight               |      g      |    400     |    400     |  -   |
 
