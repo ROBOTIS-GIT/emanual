@@ -12,6 +12,15 @@
 {% endcapture %}
 <div class="notice--danger">{{ warning_01 | markdownify }}</div>
 
+{% capture info_01 %}
+TurtleBot3 Hardware is compatible with Jetson Nano SBC.  
+Please refer to the video below in order to set up the Jetson Nano for TurtleBot3.  
+The [Jetson Nano Developer Kit setup](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit) must be completed first.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fGEq_0aWpoA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% endcapture %}
+<div class="notice--success">{{ info_01 | markdownify }}</div>
+
 ### [Prepare microSD Card and Reader](#prepare-microsd-card-and-reader)
 If you PC do not have a microSD slot, please use a microSD card reader to burn the recovery image.  
 ![](/assets/images/platform/turtlebot3/setup/micro_sd_reader.png)
