@@ -20,23 +20,23 @@ product_group: all-dyd
 
 ## [Specifications](#specifications)
 
-|             Properties             |    Unit     | DYD-17-051 | DYD-17-099 | Note |
-| :--------------------------------: | :---------: | :--------: | :--------: | :--: |
-|             Gear ratio             |      -      |     51     |     99     |  -   |
-|       Repeatable peak torque       |     Nm      |    34.0    |    54.0    |  -   |
-| Rated output torque<br>(@2,000 rpm) |     Nm      |    16.0    |    24.0    |  -   |
-|        Maximum input speed         |     rpm     |   6,000    |   6,000    |  -   |
-|        Average input speed         |     rpm     |   2,000    |   2,000    |  -   |
-|         Moment of intertia         | X10-4 kgm^2 |   0.284    |   0.322    |  -   |
-|       Backlash     |    arcmin    |    <3.0    |    <3.0    |  -   |
-|            Lost motion             |   arcmin    |    <3.0    |    <3.0    |  -   |
-|        Torsional stiffness         |  Nm/arcmin  |    2.2     |    2.2     |  -   |
-| Efficiency(@2,000 rpm, 20 &#8451;) |      %      |     58     |     58     |  -   |
-|          Starting torque           |     cNm     |     30     |     30     |  -   |
-|         Back-Drive torque          |     Nm      |    5.0     |    5.0     |  -   |
-|            Service life            |    hours    |   5,000    |   5,000    |  -   |
-|        Dimension (O.D. X H)        |     mm      | 78 x 34.2  | 78 x 34.2  |  -   |
-|               Weight               |      g      |    600     |    600     |  -   |
+|             Properties              |    Unit     | DYD-17-051 | DYD-17-099 | Note |
+|:-----------------------------------:|:-----------:|:----------:|:----------:|:----:|
+|             Gear ratio              |      -      |     51     |     99     |  -   |
+|       Repeatable peak torque        |     Nm      |    34.0    |    54.0    |  -   |
+| Rated output torque<br>(@2,000 rpm) |     Nm      |    11.0    |    16.0    |  -   |
+|         Maximum input speed         |     rpm     |   6,000    |   6,000    |  -   |
+|         Average input speed         |     rpm     |   2,000    |   2,000    |  -   |
+|         Moment of intertia          | X10-4 kgm^2 |   0.284    |   0.322    |  -   |
+|              Backlash               |   arcmin    |    <3.0    |    <3.0    |  -   |
+|             Lost motion             |   arcmin    |    <3.0    |    <3.0    |  -   |
+|         Torsional stiffness         |  Nm/arcmin  |    2.2     |    2.2     |  -   |
+| Efficiency(@2,000 rpm, 20 &#8451;)  |      %      |     58     |     58     |  -   |
+|           Starting torque           |     cNm     |     30     |     30     |  -   |
+|          Back-Drive torque          |     Nm      |    5.0     |    5.0     |  -   |
+|            Service life             |    hours    |   5,000    |   5,000    |  -   |
+|        Dimension (O.D. X H)         |     mm      | 78 x 34.2  | 78 x 34.2  |  -   |
+|               Weight                |      g      |    600     |    600     |  -   |
 
 **NOTE**: The specification and figures in the list are subject to update for the continuous product performance improvement.
 {: .notice}
@@ -68,7 +68,7 @@ Additional planetary gears(PG) with various reduction ratio can be attached in o
 > PG Option
 
 |  DYD gear ratio  | 51  |  -  |  -  |  -  | 99  |  -  |  -  |  -  |
-| :--------------: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+|:----------------:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |  PG gear ratio   |  3  |  4  |  5  |  7  |  3  |  4  |  5  |  7  |
 | Total gear ratio | 153 | 204 | 255 | 357 | 297 | 396 | 495 | 693 |
 
@@ -76,8 +76,8 @@ Additional planetary gears(PG) with various reduction ratio can be attached in o
 
 Various input shaft options can be selected with the DYD.
 
-| Option |                   Type - C                    |               Type - D                |                  Type - SC                  |
-| :----: | :-------------------------------------------: | :-----------------------------------: | :---------------------------------------: |
+| Option |                   Type - C                    |               Type - D                |                 Type - SC                 |
+|:------:|:---------------------------------------------:|:-------------------------------------:|:-----------------------------------------:|
 | Shape  | ![](/assets/images/dyd/dyd_clamp_ring_01.png) | ![](/assets/images/dyd/dyd_d_cut.png) | ![](/assets/images/dyd/dyd_set_screw.png) |
 |  Name  |                  Clamp-ring                   |                 D-Cut                 |                 Set-screw                 |
 
