@@ -660,6 +660,9 @@ main:
     - title: "Interface"
       titlekr: "인터페이스"
       children:
+      - title: "DYNAMIXEL Communication Bridge"
+        titlekr: "DYNAMIXEL Communication Bridge"
+        url: /parts/interface/dxl_bridge/
       - title: "LN-101"
         titlekr: "LN-101"
         url: /parts/interface/ln-101/
