@@ -2029,7 +2029,7 @@ uint32_t getDataRead2(int port_num, uint16_t data_length, uint16_t data_pos)
 ##### updateCRC
 - Syntax
 ``` cpp
-void updateCRC(uint16_t crc_accum, uint8_t *data_blk_ptr, uint16_t data_blk_size)
+uint16_t updateCRC(uint16_t crc_accum, uint8_t *data_blk_ptr, uint16_t data_blk_size)
 ```
 - Parameters
 
@@ -2462,7 +2462,7 @@ void read2ByteTx2(int port_num, uint8_t id, uint16_t address)
 ##### read4ByteTx2
 - Syntax
 ``` cpp
-void Read4ByteTx1(int port_num, uint8_t id, uint16_t address)
+void read4ByteTx2(int port_num, uint8_t id, uint16_t address)
 ```
 - Parameters
 

@@ -55,7 +55,7 @@ sidebar:
 ##### groupSyncRead
 - Syntax
 ``` cpp
-uint8_t groupSyncRead(int port_num, int protocol_version, uint16_t start_address, uint16_t data_length)
+int groupSyncRead(int port_num, int protocol_version, uint16_t start_address, uint16_t data_length)
 ```
 
 | Parameters       | Description                                 |
@@ -121,7 +121,7 @@ void groupSyncReadClearParam(int group_num)
 ##### groupSyncReadTxPacket
 - Syntax
 ``` cpp
-int groupSyncReadTxPacket(int group_num)
+void groupSyncReadTxPacket(int group_num)
 ```
 
 | Parameters | Description  |
@@ -136,7 +136,7 @@ int groupSyncReadTxPacket(int group_num)
 ##### groupSyncReadRxPacket
 - Syntax
 ``` cpp
-int groupSyncReadRxPacket(int group_num)
+void groupSyncReadRxPacket(int group_num)
 ```
 
 | Parameters | Description  |
@@ -151,7 +151,7 @@ int groupSyncReadRxPacket(int group_num)
 ##### groupSyncReadTxRxPacket
 - Syntax
 ``` cpp
-int groupSyncReadTxRxPacket(int group_num)
+void groupSyncReadTxRxPacket(int group_num)
 ```
 
 | Parameters | Description  |
@@ -166,7 +166,7 @@ int groupSyncReadTxRxPacket(int group_num)
 ##### groupFastSyncReadTxPacket
 - Syntax
 ``` cpp
-int groupFastSyncReadTxPacket(int group_num)
+void groupFastSyncReadTxPacket(int group_num)
 ```
 
 | Parameters | Description  |
@@ -181,7 +181,7 @@ int groupFastSyncReadTxPacket(int group_num)
    ##### groupFastSyncReadRxPacket
 - Syntax
 ``` cpp
-int groupFastSyncReadRxPacket(int group_num)
+void groupFastSyncReadRxPacket(int group_num)
 ```
 
 | Parameters | Description  |
@@ -196,7 +196,7 @@ int groupFastSyncReadRxPacket(int group_num)
    ##### groupFastSyncReadTxRxPacket
 - Syntax
 ``` cpp
-int groupFastSyncReadTxRxPacket(int group_num)
+void groupFastSyncReadTxRxPacket(int group_num)
 ```
 
 | Parameters | Description  |
@@ -211,7 +211,7 @@ int groupFastSyncReadTxRxPacket(int group_num)
 ##### groupSyncReadIsAvailable
 - Syntax
 ``` cpp
-bool groupSyncReadIsAvailable(int group_num, uint8_t id, uint16_t address, uint16_t data_length)
+uint8_t groupSyncReadIsAvailable(int group_num, uint8_t id, uint16_t address, uint16_t data_length)
 ```
 
 | Parameters | Description                               |
