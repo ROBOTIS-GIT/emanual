@@ -13,9 +13,9 @@ sidebar:
 
 # [통신 인터페이스](#통신-인터페이스)
 
-|                                      LN-101                                       |                                              USB2DYNAMIXEL                                               |                                          U2D2                                          |
-|:---------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------:|
-| [![](/assets/images/parts/interface/ln101.jpg)](/docs/kr/parts/interface/ln-101/) | [![](/assets/images/parts/interface/usb2dynamixel_product.jpg)](/docs/kr/parts/interface/usb2dynamixel/) | [![](/assets/images/parts/interface/u2d2_product.jpg)](/docs/kr/parts/interface/u2d2/) |
+|                                              다이나믹셀 커뮤니케이션 브릿지                                             |                                      LN-101                                       |                                              USB2DYNAMIXEL                                               |                                          U2D2                                          |
+|:------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------:|
+| [![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_product_front.png)](/docs/kr/parts/interface/dxl_bridge/) | [![](/assets/images/parts/interface/ln101.jpg)](/docs/kr/parts/interface/ln-101/) | [![](/assets/images/parts/interface/usb2dynamixel_product.jpg)](/docs/kr/parts/interface/usb2dynamixel/) | [![](/assets/images/parts/interface/u2d2_product.jpg)](/docs/kr/parts/interface/u2d2/) |
 
 # [확장보드](#확장보드)
 

@@ -46,6 +46,8 @@ main:
     - title: "X Series"
       titlekr: "X 시리즈"
       url: /dxl/x/
+    - title: "&nbsp;&nbsp;&nbsp;&nbsp;XW Series"
+      titlekr: "&nbsp;&nbsp;&nbsp;&nbsp;XW 시리즈"
       children:
       - title: "XW540-T140"
         titlekr: "XW540-T140"
@@ -58,7 +60,10 @@ main:
         url: /dxl/x/xw430-t200/
       - title: "XW430-T333"
         titlekr: "XW430-T333"
-        url: /dxl/x/xw430-t333/
+        url: /dxl/x/xw430-t333/        
+    - title: "&nbsp;&nbsp;&nbsp;&nbsp;XD Series"
+      titlekr: "&nbsp;&nbsp;&nbsp;&nbsp;XD 시리즈"
+      children:
       - title: "XD540-T150"
         titlekr: "XD540-T150"
         url: /dxl/x/xd540-t150/
@@ -70,7 +75,10 @@ main:
         url: /dxl/x/xd430-t210/
       - title: "XD430-T350"
         titlekr: "XD430-T350"
-        url: /dxl/x/xd430-t350/                                
+        url: /dxl/x/xd430-t350/        
+    - title: "&nbsp;&nbsp;&nbsp;&nbsp;XH Series"
+      titlekr: "&nbsp;&nbsp;&nbsp;&nbsp;XH 시리즈"
+      children:
       - title: "XH540-W150"
         titlekr: "XH540-W150"
         url: /dxl/x/xh540-w150/
@@ -94,7 +102,10 @@ main:
         url: /dxl/x/xh430-v210/
       - title: "XH430-V350"
         titlekr: "XH430-V350"
-        url: /dxl/x/xh430-v350/
+        url: /dxl/x/xh430-v350/        
+    - title: "&nbsp;&nbsp;&nbsp;&nbsp;XM Series"
+      titlekr: "&nbsp;&nbsp;&nbsp;&nbsp;XM 시리즈"
+      children:
       - title: "XM540-W150"
         titlekr: "XM540-W150"
         url: /dxl/x/xm540-w150/
@@ -106,7 +117,10 @@ main:
         url: /dxl/x/xm430-w210/
       - title: "XM430-W350"
         titlekr: "XM430-W350"
-        url: /dxl/x/xm430-w350/
+        url: /dxl/x/xm430-w350/        
+    - title: "&nbsp;&nbsp;&nbsp;&nbsp;XC Series"
+      titlekr: "&nbsp;&nbsp;&nbsp;&nbsp;XC 시리즈"
+      children:
       - title: "2XC430-W250"
         titlekr: "2XC430-W250"
         url: /dxl/x/2xc430-w250/
@@ -116,12 +130,6 @@ main:
       - title: "XC430-W240"
         titlekr: "XC430-W240"
         url: /dxl/x/xc430-w240/
-      - title: "2XL430-W250"
-        titlekr: "2XL430-W250"
-        url: /dxl/x/2xl430-w250/
-      - title: "XL430-W250"
-        titlekr: "XL430-W250"
-        url: /dxl/x/xl430-w250/
       - title: "XC330-T288"
         titlekr: "XC330-T288"
         url: /dxl/x/xc330-t288/
@@ -133,7 +141,16 @@ main:
         url: /dxl/x/xc330-m181/
       - title: "XC330-M288"
         titlekr: "XC330-M288"
-        url: /dxl/x/xc330-m288/
+        url: /dxl/x/xc330-m288/        
+    - title: "&nbsp;&nbsp;&nbsp;&nbsp;XL Series"
+      titlekr: "&nbsp;&nbsp;&nbsp;&nbsp;XL 시리즈"
+      children:
+      - title: "2XL430-W250"
+        titlekr: "2XL430-W250"
+        url: /dxl/x/2xl430-w250/
+      - title: "XL430-W250"
+        titlekr: "XL430-W250"
+        url: /dxl/x/xl430-w250/
       - title: "XL330-M077"
         titlekr: "XL330-M077"
         url: /dxl/x/xl330-m077/
@@ -142,7 +159,7 @@ main:
         url: /dxl/x/xl330-m288/
       - title: "XL-320"
         titlekr: "XL-320"
-        url: /dxl/x/xl320/
+        url: /dxl/x/xl320/     
     - title: "MX Series"
       titlekr: "MX 시리즈"
       url: /dxl/mx/
@@ -660,6 +677,9 @@ main:
     - title: "Interface"
       titlekr: "인터페이스"
       children:
+      - title: "DYNAMIXEL Communication Bridge"
+        titlekr: "DYNAMIXEL Communication Bridge"
+        url: /parts/interface/dxl_bridge/
       - title: "LN-101"
         titlekr: "LN-101"
         url: /parts/interface/ln-101/

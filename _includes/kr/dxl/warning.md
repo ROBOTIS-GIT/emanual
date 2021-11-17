@@ -1,7 +1,10 @@
 
 {% if page.product_group== 'xl330' %}
+{% capture x330_ttl %}  
 **참고**: XL330의 통신 버스의 전압은 다른 다이나믹셀과 달리 3.3V 이지만, 5V 통신 버스에 호환됩니다.
-{: .notice}
+{% endcapture %}
+<div class="notice">{{ x330_ttl | markdownify }}</div>
+
 {% endif %}
 
 {% capture dxl_danger %}  
