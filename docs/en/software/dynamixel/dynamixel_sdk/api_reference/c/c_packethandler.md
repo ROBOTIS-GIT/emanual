@@ -28,78 +28,84 @@ sidebar:
 
 - Methods
 
-| Methods                                               | Description                                          |
-|:------------------------------------------------------|:-----------------------------------------------------|
-| **[packetHandler](#packethandler)**                   | Initializes members of packet data pointer struct    |
-| **[printTxRxResult](#printtxrxresult)**               | Shows communication result                           |
-| **[printRxPacketError](#printtxrxresult)**            | Shows hardware error                                 |
-| **[getLastTxRxResult](#getlasttxrxresult)**           | Gets last communication result                       |
-| **[getLastRxPacketError](#getlasttxrxresult)**        | Gets last hardware error                             |
-| **[setDataWrite](#setdatawrite)**                     | Gets last communication result                       |
-| **[getDataRead](#getdataread)**                       | Gets last hardware error                             |
-| **[txPacket](#txpacket)**                             | Transmits the packet                                 |
-| **[rxPacket](#rxpacket)**                             | Receives the packet                                  |
-| **[txRxPacket](#txrxpacket)**                         | Transmits and receives the packet                    |
-| **[ping](#ping)**                                     | ping DYNAMIXEL                                       |
-| **[pingGetModelNum](#pinggetmodelnum)**               | Ping DYNAMIXEL and get its model number              |
-| **[broadcastPing](#broadcastping)**                   | ping all connected DYNAMIXEL's                        |
-| **[getBroadcastPingResult](#getbroadcastpingresult)** | Get IDs of DYNAMIXEL's responded by BroadcastPing2    |
-| **[action](#action)**                                 | Commands ‘Run’ the Regwritten                        |
-| **[regWrite](#regwrite)**                             | Writes the packets and wait for the ‘Action’ command |
-| **[reboot](#reboot)**                                 | Reboots DYNAMIXEL                                    |
-| **[factoryReset](#factoryreset)**                     | Resets all DYNAMIXEL settings                        |
-| **[readTx](#readtx)**                                 | Transmits N byte read instruction packet             |
-| **[readRx](#readrx)**                                 | Receives N byte read status packet                   |
-| **[readTxRx](#readtxrx)**                             | Transmits and receives N byte packet                 |
-| **[read1ByteTx](#read1bytetx)**                       | Transmits 1 byte read instruction packet             |
-| **[read1ByteRx](#read1byterx)**                       | Receives 1 byte read status packet                   |
-| **[read1ByteTxRx](#read1bytetxrx)**                   | Transmits and receives 1 byte packet                 |
-| **[read2ByteTx](#read2bytetx)**                       | Transmits 2 byte read instruction packet             |
-| **[read2ByteRx](#read2byterx)**                       | Receives 2 byte read status packet                   |
-| **[read2ByteTxRx](#read2bytetxrx)**                   | Transmits and receives 2 byte packet                 |
-| **[read4ByteTx](#read4bytetx)**                       | Transmits 4 byte read instruction packet             |
-| **[read4ByteRx](#read4byterx)**                       | Receives 4 byte read status packet                   |
-| **[read4ByteTxRx](#read4bytetxrx)**                   | Transmits and receives 4 byte packet                 |
-| **[writeTxOnly](#writetxonly)**                       | Transmits N byte write instruction packet            |
-| **[writeTxRx](#writetxrx)**                           | Transmits and receives N byte packet                 |
-| **[write1ByteTxOnly](#write1bytetxonly)**             | Transmits 1 byte write instruction packet            |
-| **[write1ByteTxRx](#write1bytetxrx)**                 | Transmits and receives 1 byte packet                 |
-| **[write2ByteTxOnly](#write2bytetxonly)**             | Transmits 2 byte write instruction packet            |
-| **[write2ByteTxRx](#write2bytetxrx)**                 | Transmits and receives 2 byte packet                 |
-| **[write4ByteTxOnly](#write4bytetxonly)**             | Transmits 4 byte write instruction packet            |
-| **[write4ByteTxRx](#write4bytetxrx)**                 | Transmits and receives 4 byte packet                 |
-| **[regWriteTxOnly](#regwritetxonly)**                 | Transmits register write instruction packet          |
-| **[regWriteTxRx](#regwritetxrx)**                     | Transmits and receives register write packet         |
-| **[syncReadTx](#syncreadtx)**                         | Transmits N byte sync read Instruction packet        |
-| **[syncWriteTxOnly](#syncwritetxonly)**               | Transmits N byte sync write Instruction packet       |
-| **[bulkReadTx](#bulkreadtx)**                         | Transmits N byte bulk read Instruction packet        |
-| **[bulkWriteTxOnly](#bulkwritetxonly)**               | Transmits N byte bulk write Instruction packet       |
+| Methods                                               | Description                                                                    |
+|:------------------------------------------------------|:-------------------------------------------------------------------------------|
+| **[packetHandler](#packethandler)**                   | Initializes members of packet data pointer struct                              |
+| **[printTxRxResult](#printtxrxresult)**               | Shows communication result *(Deprecated Methods. Please check *getTxRxResult)* |
+| **[printRxPacketError](#printtxrxresult)**            | Shows hardware error *(Deprecated Methods. Please check *getRxPacketError)*    |
+| **[getLastTxRxResult](#getlasttxrxresult)**           | Gets last communication result                                                 |
+| **[getLastRxPacketError](#getlasttxrxresult)**        | Gets last hardware error                                                       |
+| **[setDataWrite](#setdatawrite)**                     | Gets last communication result                                                 |
+| **[getDataRead](#getdataread)**                       | Gets last hardware error                                                       |
+| **[txPacket](#txpacket)**                             | Transmits the packet                                                           |
+| **[rxPacket](#rxpacket)**                             | Receives the packet                                                            |
+| **[fastReadRxPacket](#fastreadrxpacket)**             | Fast Receives the packet                                                       |
+| **[txRxPacket](#txrxpacket)**                         | Transmits and receives the packet                                              |
+| **[ping](#ping)**                                     | ping DYNAMIXEL                                                                 |
+| **[pingGetModelNum](#pinggetmodelnum)**               | Ping DYNAMIXEL and get its model number                                        |
+| **[broadcastPing](#broadcastping)**                   | ping all connected DYNAMIXEL's                                                 |
+| **[getBroadcastPingResult](#getbroadcastpingresult)** | Get IDs of DYNAMIXEL's responded by BroadcastPing2                             |
+| **[action](#action)**                                 | Commands ‘Run’ the Regwritten                                                  |
+| **[regWrite](#regwrite)**                             | Writes the packets and wait for the ‘Action’ command                           |
+| **[reboot](#reboot)**                                 | Reboots DYNAMIXEL                                                              |
+| **[clearMultiTurn](#clearmultiturn)**                 | Reset the Present Position                                                     | 
+| **[factoryReset](#factoryreset)**                     | Resets all DYNAMIXEL settings                                                  |
+| **[readTx](#readtx)**                                 | Transmits N byte read instruction packet                                       |
+| **[readRx](#readrx)**                                 | Receives N byte read status packet                                             |
+| **[fastSyncReadRx](#fastsyncreadrx)**                 | Fast receives N byte read status packet                                        |
+| **[readTxRx](#readtxrx)**                             | Transmits and receives N byte packet                                           |
+| **[read1ByteTx](#read1bytetx)**                       | Transmits 1 byte read instruction packet                                       |
+| **[read1ByteRx](#read1byterx)**                       | Receives 1 byte read status packet                                             |
+| **[read1ByteTxRx](#read1bytetxrx)**                   | Transmits and receives 1 byte packet                                           |
+| **[read2ByteTx](#read2bytetx)**                       | Transmits 2 byte read instruction packet                                       |
+| **[read2ByteRx](#read2byterx)**                       | Receives 2 byte read status packet                                             |
+| **[read2ByteTxRx](#read2bytetxrx)**                   | Transmits and receives 2 byte packet                                           |
+| **[read4ByteTx](#read4bytetx)**                       | Transmits 4 byte read instruction packet                                       |
+| **[read4ByteRx](#read4byterx)**                       | Receives 4 byte read status packet                                             |
+| **[read4ByteTxRx](#read4bytetxrx)**                   | Transmits and receives 4 byte packet                                           |
+| **[writeTxOnly](#writetxonly)**                       | Transmits N byte write instruction packet                                      |
+| **[writeTxRx](#writetxrx)**                           | Transmits and receives N byte packet                                           |
+| **[write1ByteTxOnly](#write1bytetxonly)**             | Transmits 1 byte write instruction packet                                      |
+| **[write1ByteTxRx](#write1bytetxrx)**                 | Transmits and receives 1 byte packet                                           |
+| **[write2ByteTxOnly](#write2bytetxonly)**             | Transmits 2 byte write instruction packet                                      |
+| **[write2ByteTxRx](#write2bytetxrx)**                 | Transmits and receives 2 byte packet                                           |
+| **[write4ByteTxOnly](#write4bytetxonly)**             | Transmits 4 byte write instruction packet                                      |
+| **[write4ByteTxRx](#write4bytetxrx)**                 | Transmits and receives 4 byte packet                                           |
+| **[regWriteTxOnly](#regwritetxonly)**                 | Transmits register write instruction packet                                    |
+| **[regWriteTxRx](#regwritetxrx)**                     | Transmits and receives register write packet                                   |
+| **[syncReadTx](#syncreadtx)**                         | Transmits N byte sync read Instruction packet                                  |
+| **[fastSyncReadTx](#fastsyncreadtx)**                 | Transmits N byte fast sync read Instruction packet                             |
+| **[syncWriteTxOnly](#syncwritetxonly)**               | Transmits N byte sync write Instruction packet                                 |
+| **[bulkReadTx](#bulkreadtx)**                         | Transmits N byte bulk read Instruction packet                                  |
+| **[bulkWriteTxOnly](#bulkwritetxonly)**               | Transmits N byte bulk write Instruction packet                                 |
 
 - Enumerator
 
-| Enumerator          | Description                                   |
-|:--------------------|:----------------------------------------------|
-| DXL_MAKEWORD(a, b)  | makes value from a and b to word type         |
-| DXL_MAKEDWORD(a, b) | makes value from a and b to dword type        |
-| DXL_LOWORD(l)       | gets lower word type value from l             |
-| DXL_HIWORD(l)       | gets higher word type value from l            |
-| DXL_LOBYTE(w)       | gets lower byte type value from w             |
-| DXL_HIBYTE(w)       | gets higher byte type value from w            |
-| BROADCAST_ID        | := 0xFE	Broadcast ID                           |
-| MAX_ID              | := 0xFC	Maximum ID value                       |
-| INST_PING           | := 1	Instruction value of ping                 |
-| INST_READ           | := 2	Instruction value of Read                 |
-| INST_WRITE          | := 3	Instruction value of Write                |
-| INST_REG_WRITE      | := 4	Instruction value of Register Write       |
-| INST_ACTION         | := 5	Instruction value of Action               |
-| INST_FACTORY_RESET  | := 6	Instruction value of Factory Reset        |
-| INST_SYNC_WRITE     | := 131	Instruction value of Sync Write         |
-| INST_BULK_READ      | := 146	Instruction value of Bulk Read          |
-| INST_REBOOT         | := 8	Instruction value of Reboot               |
+| Enumerator          | Description                                    |
+|:--------------------|:-----------------------------------------------|
+| DXL_MAKEWORD(a, b)  | makes value from a and b to word type          |
+| DXL_MAKEDWORD(a, b) | makes value from a and b to dword type         |
+| DXL_LOWORD(l)       | gets lower word type value from l              |
+| DXL_HIWORD(l)       | gets higher word type value from l             |
+| DXL_LOBYTE(w)       | gets lower byte type value from w              |
+| DXL_HIBYTE(w)       | gets higher byte type value from w             |
+| BROADCAST_ID        | := 0xFE	Broadcast ID                          |
+| MAX_ID              | := 0xFC	Maximum ID value                      |
+| INST_PING           | := 1	Instruction value of ping                |
+| INST_READ           | := 2	Instruction value of Read                |
+| INST_WRITE          | := 3	Instruction value of Write               |
+| INST_REG_WRITE      | := 4	Instruction value of Register Write      |
+| INST_ACTION         | := 5	Instruction value of Action              |
+| INST_FACTORY_RESET  | := 6	Instruction value of Factory Reset       |
+| INST_SYNC_WRITE     | := 131	Instruction value of Sync Write       |
+| INST_BULK_READ      | := 146	Instruction value of Bulk Read        |
+| INST_REBOOT         | := 8	Instruction value of Reboot              |
+| INST_CLEAR          | := 16 Instruction value of Clear               |
 | INST_STATUS         | := 85	Instruction value of Status              |
-| INST_SYNC_READ      | := 130	Instruction value of Sync Read          |
-| INST_BULK_WRITE     | := 147		Instruction value of Bulk Write         |
-| COMM_SUCCESS        | := 0	Status of Communication Success           |
+| INST_SYNC_READ      | := 130	Instruction value of Sync Read        |
+| INST_FAST_SYNC_READ | := 138	Instruction value of Fast Sync Read   |
+| INST_BULK_WRITE     | := 147	Instruction value of Bulk Write       |
+| COMM_SUCCESS        | := 0	Status of Communication Success          |
 | COMM_PORT_BUSY      | := -1000	Status of Port in use                 |
 | COMM_TX_FAIL        | := -1001	Status of Transmit packet failed      |
 | COMM_RX_FAIL        | := -1002	Status of Receive packet failed       |
@@ -128,7 +134,7 @@ void packetHandler()
 ##### printTxRxResult
 - Syntax
 ``` cpp
-void printTxRxResult(int protocol_version, int result)
+const char *getTxRxResult(int protocol_version, int result)
 ```
 - Parameters
 
@@ -139,13 +145,15 @@ void printTxRxResult(int protocol_version, int result)
 
 - Detailed Description
 
-   This function calls either `PrintTxRxResult1` or `PrintTxRxResult2` function depending on the `protocol_version`.
+   printTxRxResult is Deprecated. Please use the getTxRxResult instead of printTxRxResult.
+
+   This function calls either `getTxRxResult1` or `getTxRxResult2` function depending on the `protocol_version`.
 
 
 ##### printRxPacketError
 - Syntax
 ``` cpp
-void printRxPacketError(int protocol_version, uint8_t error)
+const char *getRxPacketError(int protocol_version, uint8_t error)
 ```
 - Parameters
 
@@ -156,7 +164,9 @@ void printRxPacketError(int protocol_version, uint8_t error)
 
 - Detailed Description
 
-   This function calls either `PrintRxPacketError1` or `PrintRxPacketError2` function depending on the `protocol_version`.
+   printRxPacketError is Deprecated. Please use the getRxPacketError instead of printRxPacketError.
+
+   This function calls either `getRxPacketError1` or `getRxPacketError2` function depending on the `protocol_version`.
 
 
 ##### getLastTxRxResult
@@ -265,11 +275,27 @@ void rxPacket(int port_num, int protocol_version)
    This function calls either `rxPacket1` or `rxPacket2` function depending on the `protocol_version`.
 
 
+##### fastReadRxPacket
+- Syntax
+``` cpp
+void fastReadRxPacket(int port_num, int protocol_version)
+```
+- Parameters
+
+| Parameters       | Description      |
+|:-----------------|:-----------------|
+| port_num         | Port number      |
+| protocol_version | Protocol version |
+
+- Detailed Description
+
+   This function calls either `rxPacket1` or `fastRxPacket2` function depending on the `protocol_version`.
+
+
 ##### txRxPacket
 - Syntax
 ``` cpp
 void txRxPacket(int port_num, int protocol_version)
-
 ```
 - Parameters
 
@@ -287,7 +313,6 @@ void txRxPacket(int port_num, int protocol_version)
 - Syntax
 ``` cpp
 void ping (int port_num, int protocol_version, uint8_t id)
-
 ```
 - Parameters
 
@@ -306,7 +331,6 @@ void ping (int port_num, int protocol_version, uint8_t id)
 - Syntax
 ``` cpp
 uint16_t pingGetModelNum (int port_num, int protocol_version, int id)
-
 ```
 - Parameters
 
@@ -325,7 +349,6 @@ uint16_t pingGetModelNum (int port_num, int protocol_version, int id)
 - Syntax
 ``` cpp
 void broadcastPing(int port_num, int protocol_version)
-
 ```
 - Parameters
 
@@ -343,7 +366,6 @@ void broadcastPing(int port_num, int protocol_version)
 - Syntax
 ``` cpp
 uint8_t getBroadcastPingResult(int port_num, int protocol_version, int id)
-
 ```
 - Parameters
 
@@ -395,11 +417,29 @@ void reboot(int port_num, int protocol_version, uint8_t id)
    This function calls either `reboot1` or `reboot2` function depending on the `protocol_version`.
 
 
+##### clearMultiTurn
+- Syntax
+``` cpp
+void clearMultiTurn(int port_num, int protocol_version, uint8_t id)
+```
+- Parameters
+
+| Parameters       | Description      |
+|:-----------------|:-----------------|
+| port_num         | Port number      |
+| protocol_version | Protocol version |
+| id               | DYNAMIXEL ID     |
+
+
+- Detailed Description
+
+   This function calls either `clearMultiTurn1` or `clearMultiTurn2` function depending on the `protocol_version`.
+
+
 ##### factoryReset
 - Syntax
 ``` cpp
 void factoryReset(int port_num, int protocol_version, uint8_t id, uint8_t option)
-
 ```
 - Parameters
 
@@ -418,7 +458,6 @@ void factoryReset(int port_num, int protocol_version, uint8_t id, uint8_t option
 - Syntax
 ``` cpp
 void readTx(int port_num, int protocol_version, uint8_t id, uint16_t address, uint16_t length)
-
 ```
 - Parameters
 
@@ -452,6 +491,25 @@ void readRx(int port_num, int protocol_version, uint16_t length)
 - Detailed Description
 
    This function calls either `readRx1` or `readRx2` function depending on the `protocol_version`.
+
+
+##### fastSyncReadRx
+- Syntax
+``` cpp
+ void fastSyncReadRx(int port_num, int protocol_version, uint16_t length)
+```
+- Parameters
+
+| Parameters       | Description      |
+|:-----------------|:-----------------|
+| port_num         | Port number      |
+| protocol_version | Protocol version |
+| length           | Packet length    |
+
+
+- Detailed Description
+
+   This function calls either `fastReadRx2` function depending on the `protocol_version`.
 
 
 ##### readTxRx
@@ -871,6 +929,26 @@ void syndReadTx(int port_num, int protocol_version, uint16_t address, uint16_t d
    This function calls either `syncReadTx1` or `syncReadTx2` function depending on the `protocol_version`.
 
 
+##### fastSyncReadTx
+- Syntax
+``` cpp
+void fastSyncReadTx(iint port_num, int protocol_version, uint16_t start_address, uint16_t data_length, uint16_t param_length)
+```
+- Parameters
+
+| Parameters       | Description                                     |
+|:-----------------|:------------------------------------------------|
+| port_num         | Port number                                     |
+| protocol_version | Protocol version                                |
+| start_address    | Start address on the control table of DYNAMIXEL |
+| data_length      | Data length                                     |
+| param_length     | Parameter length                                |
+
+- Detailed Description
+
+   This function calls either `fastSyncReadTx2` function depending on the `protocol_version`.
+
+
 ##### syncWriteTxOnly
 - Syntax
 ``` cpp
@@ -878,13 +956,13 @@ void syndReadTx(int port_num, int protocol_version, uint16_t address, uint16_t d
 ```
 - Parameters
 
-| Parameters       | Description                               |
-|:-----------------|:------------------------------------------|
-| port_num         | Port number                               |
-| protocol_version | Protocol version                          |
-| start_address    | Address on the control table of DYNAMIXEL |
-| data_length      | Data length                               |
-| param_length     | Parameter length                          |
+| Parameters       | Description                                     |
+|:-----------------|:------------------------------------------------|
+| port_num         | Port number                                     |
+| protocol_version | Protocol version                                |
+| start_address    | Start address on the control table of DYNAMIXEL |
+| data_length      | Data length                                     |
+| param_length     | Parameter length                                |
 
 
 - Detailed Description
@@ -939,51 +1017,52 @@ void syndReadTx(int port_num, int protocol_version, uint16_t address, uint16_t d
 
 - Methods
 
-| Methods                                                 | Description                                          |
-|:--------------------------------------------------------|:-----------------------------------------------------|
-| **[printTxRxResult1](#printtxrxresult1)**               | Shows communication result                           |
-| **[printRxPacketError1](#printtxrxresult1)**            | Shows hardware error                                 |
-| **[getLastTxRxResult1](#getlasttxrxresult1)**           | Gets last communication result                       |
-| **[getLastRxPacketError1](#getlasttxrxresult1)**        | Gets last hardware error                             |
-| **[setDataWrite1](#setdatawrite1)**                     | Gets last communication result                       |
-| **[getDataRead1](#getdataread1)**                       | Gets last hardware error                             |
-| **[txPacket1](#txpacket1)**                             | Transmits the packet                                 |
-| **[rxPacket1](#rxpacket1)**                             | Receives the packet                                  |
-| **[txRxPacket1](#txrxpacket1)**                         | Transmits and receives the packet                    |
-| **[ping1](#ping1)**                                     | Ping DYNAMIXEL                                       |
-| **[pingGetModelNum1](#pinggetmodelnum1)**               | Ping DYNAMIXEL and get its model number              |
-| **[broadcastPing1](#broadcastping1)**                   | Not available in Protocol 1.0                        |
-| **[getBroadcastPingResult1](#getbroadcastpingresult1)** | Not available in Protocol 1.0                        |
-| **[action1](#action1)**                                 | Commands ‘Run’ the Regwritten                        |
-| **[RegWrite1](#regwrite1)**                             | Writes the packets and wait for the ‘Action’ command |
-| **[reboot1](#reboot1)**                                 | Not available in Protocol 1.0                        |
-| **[factoryReset1](#factoryreset1)**                     | Resets all DYNAMIXEL settings                        |
-| **[readTx1](#readtx1)**                                 | Transmits N byte read instruction packet             |
-| **[readRx1](#readrx1)**                                 | Receives N byte read status packet                   |
-| **[readTxRx1](#readtxrx1)**                             | Transmits and receives N byte packet                 |
-| **[read1ByteTx1](#read1bytetx1)**                       | Transmits 1 byte read instruction packet             |
-| **[read1ByteRx1](#read1byterx1)**                       | Receives 1 byte read status packet                   |
-| **[read1ByteTxRx1](#read1bytetxrx1)**                   | Transmits and receives 1 byte packet                 |
-| **[read2ByteTx1](#read2bytetx1)**                       | Transmits 2 byte read instruction packet             |
-| **[read2ByteRx1](#read2byterx1)**                       | Receives 2 byte read status packet                   |
-| **[read2ByteTxRx1](#read2bytetxrx1)**                   | Transmits and receives 2 byte packet                 |
-| **[read4ByteTx1](#read4bytetx1)**                       | Not available in Protocol 1.0                        |
-| **[read4ByteRx1](#read4byterx1)**                       | Not available in Protocol 1.0                        |
-| **[read4ByteTxRx1](#read4bytetxrx1)**                   | Not available in Protocol 1.0                        |
-| **[writeTxOnly1](#writetxonly1)**                       | Transmits N byte write instruction packet            |
-| **[writeTxRx1](#writetxrx1)**                           | Transmits and receives N byte packet                 |
-| **[write1ByteTxOnly1](#write1bytetxonly1)**             | Transmits 1 byte write instruction packet            |
-| **[write1ByteTxRx1](#write1bytetxrx1)**                 | Transmits and receives 1 byte packet                 |
-| **[write2ByteTxOnly1](#write2bytetxonly1)**             | Transmits 2 byte write instruction packet            |
-| **[write2ByteTxRx1](#write2bytetxrx1)**                 | Transmits and receives 2 byte packet                 |
-| **[write4ByteTxOnly1](#write4bytetxonly1)**             | Not available in Protocol 1.0                        |
-| **[write4ByteTxRx1](#write4bytetxrx1)**                 | Not available in Protocol 1.0                        |
-| **[regWriteTxOnly1](#regwritetxonly1)**                 | Transmits register write instruction packet          |
-| **[regWriteTxRx1](#regwritetxrx1)**                     | Transmits and receives register write packet         |
-| **[syncReadTx1](#syncreadtx1)**                         | Not available in Protocol 1.0                        |
-| **[syncWriteTxOnly1](#syncwritetxonly1)**               | Transmits N byte sync write Instruction packet       |
-| **[bulkReadTx1](#bulkreadtx1)**                         | Transmits N byte bulk read Instruction packet        |
-| **[bulkWriteTxOnly1](#bulkwritetxonly1)**               | Not available in Protocol 1.0                        |
+| Methods                                                 | Description                                                                     |
+|:--------------------------------------------------------|:--------------------------------------------------------------------------------|
+| **[printTxRxResult1](#printtxrxresult1)**               | Shows communication result *(Deprecated Methods. Please check *getTxRxResult1)* |
+| **[printRxPacketError1](#printtxrxresult1)**            | Shows hardware error *(Deprecated Methods. Please check *getRxPacketError1)*    |
+| **[getLastTxRxResult1](#getlasttxrxresult1)**           | Gets last communication result                                                  |
+| **[getLastRxPacketError1](#getlasttxrxresult1)**        | Gets last hardware error                                                        |
+| **[setDataWrite1](#setdatawrite1)**                     | Gets last communication result                                                  |
+| **[getDataRead1](#getdataread1)**                       | Gets last hardware error                                                        |
+| **[txPacket1](#txpacket1)**                             | Transmits the packet                                                            |
+| **[rxPacket1](#rxpacket1)**                             | Receives the packet                                                             |
+| **[txRxPacket1](#txrxpacket1)**                         | Transmits and receives the packet                                               |
+| **[ping1](#ping1)**                                     | Ping DYNAMIXEL                                                                  |
+| **[pingGetModelNum1](#pinggetmodelnum1)**               | Ping DYNAMIXEL and get its model number                                         |
+| **[broadcastPing1](#broadcastping1)**                   | Not available in Protocol 1.0                                                   |
+| **[getBroadcastPingResult1](#getbroadcastpingresult1)** | Not available in Protocol 1.0                                                   |
+| **[action1](#action1)**                                 | Commands ‘Run’ the Regwritten                                                   |
+| **[RegWrite1](#regwrite1)**                             | Writes the packets and wait for the ‘Action’ command                            |
+| **[reboot1](#reboot1)**                                 | Not available in Protocol 1.0                                                   |
+| **[clearMultiTurn1](#clearmultiturn1)**                 | Reset the Present Position                                                      |
+| **[factoryReset1](#factoryreset1)**                     | Resets all DYNAMIXEL settings                                                   |
+| **[readTx1](#readtx1)**                                 | Transmits N byte read instruction packet                                        |
+| **[readRx1](#readrx1)**                                 | Receives N byte read status packet                                              |
+| **[readTxRx1](#readtxrx1)**                             | Transmits and receives N byte packet                                            |
+| **[read1ByteTx1](#read1bytetx1)**                       | Transmits 1 byte read instruction packet                                        |
+| **[read1ByteRx1](#read1byterx1)**                       | Receives 1 byte read status packet                                              |
+| **[read1ByteTxRx1](#read1bytetxrx1)**                   | Transmits and receives 1 byte packet                                            |
+| **[read2ByteTx1](#read2bytetx1)**                       | Transmits 2 byte read instruction packet                                        |
+| **[read2ByteRx1](#read2byterx1)**                       | Receives 2 byte read status packet                                              |
+| **[read2ByteTxRx1](#read2bytetxrx1)**                   | Transmits and receives 2 byte packet                                            |
+| **[read4ByteTx1](#read4bytetx1)**                       | Not available in Protocol 1.0                                                   |
+| **[read4ByteRx1](#read4byterx1)**                       | Not available in Protocol 1.0                                                   |
+| **[read4ByteTxRx1](#read4bytetxrx1)**                   | Not available in Protocol 1.0                                                   |
+| **[writeTxOnly1](#writetxonly1)**                       | Transmits N byte write instruction packet                                       |
+| **[writeTxRx1](#writetxrx1)**                           | Transmits and receives N byte packet                                            |
+| **[write1ByteTxOnly1](#write1bytetxonly1)**             | Transmits 1 byte write instruction packet                                       |
+| **[write1ByteTxRx1](#write1bytetxrx1)**                 | Transmits and receives 1 byte packet                                            |
+| **[write2ByteTxOnly1](#write2bytetxonly1)**             | Transmits 2 byte write instruction packet                                       |
+| **[write2ByteTxRx1](#write2bytetxrx1)**                 | Transmits and receives 2 byte packet                                            |
+| **[write4ByteTxOnly1](#write4bytetxonly1)**             | Not available in Protocol 1.0                                                   |
+| **[write4ByteTxRx1](#write4bytetxrx1)**                 | Not available in Protocol 1.0                                                   |
+| **[regWriteTxOnly1](#regwritetxonly1)**                 | Transmits register write instruction packet                                     |
+| **[regWriteTxRx1](#regwritetxrx1)**                     | Transmits and receives register write packet                                    |
+| **[syncReadTx1](#syncreadtx1)**                         | Not available in Protocol 1.0                                                   |
+| **[syncWriteTxOnly1](#syncwritetxonly1)**               | Transmits N byte sync write Instruction packet                                  |
+| **[bulkReadTx1](#bulkreadtx1)**                         | Transmits N byte bulk read Instruction packet                                   |
+| **[bulkWriteTxOnly1](#bulkwritetxonly1)**               | Not available in Protocol 1.0                                                   |
 
 
 - Enumerator
@@ -995,7 +1074,7 @@ void syndReadTx(int port_num, int protocol_version, uint16_t address, uint16_t d
 ##### printTxRxResult1
 - Syntax
 ``` cpp
-void printTxRxResult1(int result)
+const char *getTxRxResult1(int result)
 ```
 - Parameters
 
@@ -1005,13 +1084,15 @@ void printTxRxResult1(int result)
 
 - Detailed Description
 
+  printTxRxResult1 is Deprecated. Please use the getTxRxResult1 instead of printTxRxResult1.
+
   This function prints out on the console window what communication `result` value means.
 
 
 ##### printRxPacketError1
 - Syntax
 ``` cpp
-void printRxPacketError1(uint8_t error)
+const char *getRxPacketError1(uint8_t error)
 ```
 - Parameters
 
@@ -1020,6 +1101,8 @@ void printRxPacketError1(uint8_t error)
 | error      | Hardware error |
 
 - Detailed Description
+
+  printRxPacketError1 is Deprecated. Please use the getRxPacketError1 instead of printRxPacketError1.
 
   This function prints out on the console window what hardware `error` value means.
 
@@ -1128,7 +1211,6 @@ void rxPacket1(int port_num)
 - Syntax
 ``` cpp
 void txRxPacket1(int port_num)
-
 ```
 - Parameters
 
@@ -1145,7 +1227,6 @@ void txRxPacket1(int port_num)
 - Syntax
 ``` cpp
 void ping1 (int port_num, uint8_t id)
-
 ```
 - Parameters
 
@@ -1163,7 +1244,6 @@ void ping1 (int port_num, uint8_t id)
 - Syntax
 ``` cpp
 uint16_t pingGetModelNum1 (int port_num, int id)
-
 ```
 - Parameters
 
@@ -1181,7 +1261,6 @@ uint16_t pingGetModelNum1 (int port_num, int id)
 - Syntax
 ``` cpp
 void broadcastPing1(int port_num)
-
 ```
 - Parameters
 
@@ -1197,14 +1276,14 @@ void broadcastPing1(int port_num)
 ##### getBroadcastPingResult1
 - Syntax
 ``` cpp
-uint8_t getBroadcastPingResult1(int port_num)
-
+uint8_t getBroadcastPingResult1(int port_num, int id)
 ```
 - Parameters
 
-| Parameters | Description |
-|:-----------|:------------|
-| port_num   | Port number |
+| Parameters | Description  |
+|:-----------|:-------------|
+| port_num   | Port number  |
+| id         | DYNAMIXEL ID |
 
 - Detailed Description
 
@@ -1245,11 +1324,28 @@ void reboot1(int port_num, uint8_t id)
   This function is not available with the DYNAMIXEL Protocol 1.0.
 
 
+##### clearMultiTurn1
+- Syntax
+``` cpp
+void clearMultiTurn1(int port_num, uint8_t id)
+```
+- Parameters
+
+| Parameters | Description  |
+|:-----------|:-------------|
+| port_num   | Port number  |
+| id         | DYNAMIXEL ID |
+
+
+- Detailed Description
+
+  This function is not available with the DYNAMIXEL Protocol 1.0.
+
+
 ##### factoryReset1
 - Syntax
 ``` cpp
 void factoryReset1(int port_num, uint8_t id, uint8_t option)
-
 ```
 - Parameters
 
@@ -1268,7 +1364,6 @@ void factoryReset1(int port_num, uint8_t id, uint8_t option)
 - Syntax
 ``` cpp
 void readTx1(int port_num, uint8_t id, uint16_t address, uint16_t length)
-
 ```
 - Parameters
 
@@ -1622,7 +1717,7 @@ void write4ByteTxOnly1(int port_num, uint8_t id, uint16_t address, uint32_t data
 ##### write4ByteTxRx1
 - Syntax
 ``` cpp
-void write4ByteTxRx1(int port_num, uint8_t id, uint16_t address)
+void write4ByteTxRx1(int port_num, uint8_t id, uint16_t address, uint32_t data)
 ```
 - Parameters
 
@@ -1631,6 +1726,7 @@ void write4ByteTxRx1(int port_num, uint8_t id, uint16_t address)
 | port_num   | Port number                               |
 | id         | DYNAMIXEL ID                              |
 | address    | Address on the control table of DYNAMIXEL |
+| data       | Data for write                            |
 
 
 - Detailed Description
@@ -1682,16 +1778,16 @@ void regWriteTxRx1(int port_num, uint8_t id, uint16_t address, uint16_t length)
 ##### syncReadTx1
 - Syntax
 ``` cpp
-void syncReadTx1(int port_num, uint16_t address, uint16_t data_length, uint16_t param_length)
+void syncReadTx1(int port_num, uint16_t start_address, uint16_t data_length, uint16_t param_length)
 ```
 - Parameters
 
-| Parameters   | Description                               |
-|:-------------|:------------------------------------------|
-| port_num     | Port number                               |
-| address      | Address on the control table of DYNAMIXEL |
-| data_length  | Data length                               |
-| param_length | Parameter length                          |
+| Parameters    | Description                               |
+|:--------------|:------------------------------------------|
+| port_num      | Port number                               |
+| start_address | Address on the control table of DYNAMIXEL |
+| data_length   | Data length                               |
+| param_length  | Parameter length                          |
 
 - Detailed Description
 
@@ -1764,51 +1860,58 @@ void bulkWriteTxOnly1(int port_num, uint16_t param_length)
 
 - Methods
 
-| Methods                                                 | Description                                          |
-|:--------------------------------------------------------|:-----------------------------------------------------|
-| **[printTxRxResult2](#printtxrxresult2)**               | Shows communication result                           |
-| **[printRxPacketError2](#printtxrxresult2)**            | Shows hardware error                                 |
-| **[getLastTxRxResult2](#getlasttxrxresult2)**           | Gets last communication result                       |
-| **[getLastRxPacketError2](#getlasttxrxresult2)**        | Gets last hardware error                             |
-| **[setDataWrite2](#setdatawrite2)**                     | Gets last communication result                       |
-| **[getDataRead2](#getdataread2)**                       | Gets last hardware error                             |
-| **[txPacket2](#txpacket2)**                             | Transmits the packet                                 |
-| **[rxPacket2](#rxpacket2)**                             | Receives the packet                                  |
-| **[txRxPacket2](#txrxpacket2)**                         | Transmits and receives the packet                    |
-| **[ping2](#ping2)**                                     | Ping DYNAMIXEL                                       |
-| **[pingGetModelNum2](#pinggetmodelnum2)**               | Ping DYNAMIXEL and get its model number              |
-| **[broadcastPing2](#broadcastping2)**                   | Ping all connected DYNAMIXEL's                        |
-| **[getBroadcastPingResult2](#getbroadcastpingresult2)** | Get IDs of DYNAMIXEL's responded by broadcastPing2    |
-| **[action2](#action2)**                                 | Commands ‘Run’ the Regwritten                        |
-| **[regWrite2](#regwrite2)**                             | Writes the packets and wait for the ‘Action’ command |
-| **[reboot2](#reboot2)**                                 | Reboots DYNAMIXEL                                    |
-| **[factoryReset2](#factoryreset2)**                     | Resets all DYNAMIXEL settings                        |
-| **[readTx2](#readtx2)**                                 | Transmits N byte read instruction packet             |
-| **[readRx2](#readrx2)**                                 | Receives N byte read status packet                   |
-| **[readTxRx2](#readtxrx2)**                             | Transmits and receives N byte packet                 |
-| **[read1ByteTx2](#read1bytetx2)**                       | Transmits 1 byte read instruction packet             |
-| **[read1ByteRx2](#read1byterx2)**                       | Receives 1 byte read status packet                   |
-| **[read1ByteTxRx2](#read1bytetxrx2)**                   | Transmits and receives 1 byte packet                 |
-| **[read2ByteTx2](#read2bytetx2)**                       | Transmits 2 byte read instruction packet             |
-| **[read2ByteRx2](#read2byterx2)**                       | Receives 2 byte read status packet                   |
-| **[read2ByteTxRx2](#read2bytetxrx2)**                   | Transmits and receives 2 byte packet                 |
-| **[read4ByteTx2](#read4bytetx2)**                       | Transmits 4 byte read instruction packet             |
-| **[read4ByteRx2](#read4byterx2)**                       | Receives 4 byte read status packet                   |
-| **[read4ByteTxRx2](#read4bytetxrx2)**                   | Transmits and receives 4 byte packet                 |
-| **[writeTxOnly2](#writetxonly2)**                       | Transmits N byte write instruction packet            |
-| **[writeTxRx2](#writetxrx2)**                           | Transmits and receives N byte packet                 |
-| **[write1ByteTxOnly2](#write1bytetxonly2)**             | Transmits 1 byte write instruction packet            |
-| **[write1ByteTxRx2](#write1bytetxrx2)**                 | Transmits and receives 1 byte packet                 |
-| **[write2ByteTxOnly2](#write2bytetxonly2)**             | Transmits 2 byte write instruction packet            |
-| **[write2ByteTxRx2](#write2bytetxrx2)**                 | Transmits and receives 2 byte packet                 |
-| **[write4ByteTxOnly2](#write4bytetxonly2)**             | Transmits 4 byte write instruction packet            |
-| **[write4ByteTxRx2](#write4bytetxrx2)**                 | Transmits and receives 4 byte packet                 |
-| **[regWriteTxOnly2](#regwritetxonly2)**                 | Transmits register write instruction packet          |
-| **[regWriteTxRx2](#regwritetxrx2)**                     | Transmits and receives register write packet         |
-| **[syncReadTx2](#syncreadtx2)**                         | Transmits N byte sync read Instruction packet        |
-| **[syncWriteTxOnly2](#syncwritetxonly2)**               | Transmits N byte sync write Instruction packet       |
-| **[bulkReadTx2](#bulkreadtx2)**                         | Transmits N byte bulk read Instruction packet        |
-| **[bulkWriteTxOnly2](#bulkwritetxonly2)**               | Transmits N byte bulk write Instruction packet       |
+| Methods                                                 | Description                                                                     |
+|:--------------------------------------------------------|:--------------------------------------------------------------------------------|
+| **[printTxRxResult2](#printtxrxresult2)**               | Shows communication result *(Deprecated Methods. Please check *getTxRxResult2)* |
+| **[printRxPacketError2](#printtxrxresult2)**            | Shows hardware error *(Deprecated Methods. Please check *getRxPacketError2)*    |
+| **[getLastTxRxResult2](#getlasttxrxresult2)**           | Gets last communication result                                                  |
+| **[getLastRxPacketError2](#getlasttxrxresult2)**        | Gets last hardware error                                                        |
+| **[setDataWrite2](#setdatawrite2)**                     | Gets last communication result                                                  |
+| **[getDataRead2](#getdataread2)**                       | Gets last hardware error                                                        |
+| **[updateCRC](#updatecrc)**                             | Data transfer check method                                                      |
+| **[addStuffing](#addstuffing)**                         | Appends the packet value                                                        |
+| **[removeStuffing](#removestuffing)**                   | Removes the packet value                                                        |
+| **[txPacket2](#txpacket2)**                             | Transmits the packet                                                            |
+| **[rxPacket2](#rxpacket2)**                             | Receives the packet                                                             |
+| **[fastRxPacket2](#fastRxPacket2)**                     | Fast receives the packet                                                        |
+| **[txRxPacket2](#txrxpacket2)**                         | Transmits and receives the packet                                               |
+| **[ping2](#ping2)**                                     | Ping DYNAMIXEL                                                                  |
+| **[pingGetModelNum2](#pinggetmodelnum2)**               | Ping DYNAMIXEL and get its model number                                         |
+| **[broadcastPing2](#broadcastping2)**                   | Ping all connected DYNAMIXEL's                                                  |
+| **[getBroadcastPingResult2](#getbroadcastpingresult2)** | Get IDs of DYNAMIXEL's responded by broadcastPing2                              |
+| **[action2](#action2)**                                 | Commands ‘Run’ the Regwritten                                                   |
+| **[regWrite2](#regwrite2)**                             | Writes the packets and wait for the ‘Action’ command                            |
+| **[reboot2](#reboot2)**                                 | Reboots DYNAMIXEL                                                               |
+| **[clearMultiTurn2](#clearmultiturn2)**                 | Clear instruction packet                                                        |
+| **[factoryReset2](#factoryreset2)**                     | Resets all DYNAMIXEL settings                                                   |
+| **[readTx2](#readtx2)**                                 | Transmits N byte read instruction packet                                        |
+| **[readRx2](#readrx2)**                                 | Receives N byte read status packet                                              |
+| **[fastReadRx2](#fastreadrx2)**                         | Fast receives N byte read status packet                                         |
+| **[readTxRx2](#readtxrx2)**                             | Transmits and receives N byte packet                                            |
+| **[read1ByteTx2](#read1bytetx2)**                       | Transmits 1 byte read instruction packet                                        |
+| **[read1ByteRx2](#read1byterx2)**                       | Receives 1 byte read status packet                                              |
+| **[read1ByteTxRx2](#read1bytetxrx2)**                   | Transmits and receives 1 byte packet                                            |
+| **[read2ByteTx2](#read2bytetx2)**                       | Transmits 2 byte read instruction packet                                        |
+| **[read2ByteRx2](#read2byterx2)**                       | Receives 2 byte read status packet                                              |
+| **[read2ByteTxRx2](#read2bytetxrx2)**                   | Transmits and receives 2 byte packet                                            |
+| **[read4ByteTx2](#read4bytetx2)**                       | Transmits 4 byte read instruction packet                                        |
+| **[read4ByteRx2](#read4byterx2)**                       | Receives 4 byte read status packet                                              |
+| **[read4ByteTxRx2](#read4bytetxrx2)**                   | Transmits and receives 4 byte packet                                            |
+| **[writeTxOnly2](#writetxonly2)**                       | Transmits N byte write instruction packet                                       |
+| **[writeTxRx2](#writetxrx2)**                           | Transmits and receives N byte packet                                            |
+| **[write1ByteTxOnly2](#write1bytetxonly2)**             | Transmits 1 byte write instruction packet                                       |
+| **[write1ByteTxRx2](#write1bytetxrx2)**                 | Transmits and receives 1 byte packet                                            |
+| **[write2ByteTxOnly2](#write2bytetxonly2)**             | Transmits 2 byte write instruction packet                                       |
+| **[write2ByteTxRx2](#write2bytetxrx2)**                 | Transmits and receives 2 byte packet                                            |
+| **[write4ByteTxOnly2](#write4bytetxonly2)**             | Transmits 4 byte write instruction packet                                       |
+| **[write4ByteTxRx2](#write4bytetxrx2)**                 | Transmits and receives 4 byte packet                                            |
+| **[regWriteTxOnly2](#regwritetxonly2)**                 | Transmits register write instruction packet                                     |
+| **[regWriteTxRx2](#regwritetxrx2)**                     | Transmits and receives register write packet                                    |
+| **[syncReadTx2](#syncreadtx2)**                         | Transmits N byte sync read Instruction packet                                   |
+| **[fastSyncReadTx2](#fastsyncreadtx2)**                 | Transmits N byte fast sync read Instruction packet                              |
+| **[syncWriteTxOnly2](#syncwritetxonly2)**               | Transmits N byte sync write Instruction packet                                  |
+| **[bulkReadTx2](#bulkreadtx2)**                         | Transmits N byte bulk read Instruction packet                                   |
+| **[bulkWriteTxOnly2](#bulkwritetxonly2)**               | Transmits N byte bulk write Instruction packet                                  |
 
 
 - Enumerator
@@ -1818,10 +1921,11 @@ void bulkWriteTxOnly1(int port_num, uint16_t param_length)
 #### Method References
 ----------------------------------------------
 
+
 ##### printTxRxResult2
 - Syntax
 ``` cpp
-void printTxRxResult2(int result)
+const char *getTxRxResult2(int result)
 ```
 - Parameters
 
@@ -1831,13 +1935,15 @@ void printTxRxResult2(int result)
 
 - Detailed Description
 
+   printTxRxResult2 is Deprecated. Please use the getTxRxResult2 instead of printTxRxResult2.
+
    This function prints out on the console window what communication `result` value means.
 
 
 ##### printRxPacketError2
 - Syntax
 ``` cpp
-void printRxPacketError2(uint8_t error)
+const char *getRxPacketError2(uint8_t error)
 ```
 - Parameters
 
@@ -1846,6 +1952,8 @@ void printRxPacketError2(uint8_t error)
 | error      | Hardware error |
 
 - Detailed Description
+
+   printRxPacketError2 is Deprecated. Please use the getRxPacketError2 instead of printRxPacketError2.
 
    This function prints out on the console window what hardware `error` value means.
 
@@ -1918,6 +2026,57 @@ uint32_t getDataRead2(int port_num, uint16_t data_length, uint16_t data_pos)
    This function gets `data_length` bytes of the data located in `data_pos` position of read data array that from #`port_num` port rx buffer.
 
 
+##### updateCRC
+- Syntax
+``` cpp
+void updateCRC(uint16_t crc_accum, uint8_t *data_blk_ptr, uint16_t data_blk_size)
+```
+- Parameters
+
+| Parameters    | Description                             |
+|:--------------|:----------------------------------------|
+| crc_accum     | set to '0'                              |
+| data_blk_ptr  | Packet array pointer                    |
+| data_blk_size | Number of bytes in packet excluding CRC |
+
+
+- Detailed Description
+
+   This function is a data transfer check method.
+
+
+##### addStuffing
+- Syntax
+``` cpp
+void addStuffing(uint8_t *packet)
+```
+- Parameters
+
+| Parameters | Description          |
+|:-----------|:---------------------|
+| packet     | packet               |
+
+- Detailed Description
+
+   This function appends the packet value.
+
+
+##### removeStuffing
+- Syntax
+``` cpp
+void removeStuffing(uint8_t *packet)
+```
+- Parameters
+
+| Parameters | Description          |
+|:-----------|:---------------------|
+| packet     | packet               |
+
+- Detailed Description
+
+   This function removes the packet value.
+
+
 ##### txPacket2
 - Syntax
 ``` cpp
@@ -1949,12 +2108,25 @@ void rxPacket2(int port_num)
 
    This function repeatedly tries to receive packets from #`port_num` port rx buffer until whole packets that it waits to get have arrived, or the packet wait time limit is over, while it filters garbage signals and verify correctness of received signal. The communication result and the hardware error are available when the function is terminated.
 
+##### fastRxPacket2
+- Syntax
+``` cpp
+void fastRxPacket2(int port_num)
+```
+- Parameters
+
+| Parameters | Description |
+|:-----------|:------------|
+| port_num   | Port number |
+
+- Detailed Description
+
+   This function repeatedly tries to receive packets from #`port_num` port rx buffer until whole packets that it waits to get have arrived, or the packet wait time limit is over, while it filters garbage signals and verify correctness of received signal. The communication result and the hardware error are available when the function is terminated.
 
 ##### txRxPacket2
 - Syntax
 ``` cpp
 void txRxPacket2(int port_num)
-
 ```
 - Parameters
 
@@ -1971,7 +2143,6 @@ void txRxPacket2(int port_num)
 - Syntax
 ``` cpp
 void ping2 (int port_num, uint8_t id)
-
 ```
 - Parameters
 
@@ -1989,7 +2160,6 @@ void ping2 (int port_num, uint8_t id)
 - Syntax
 ``` cpp
 uint16_t pingGetModelNum2 (int port_num, int id)
-
 ```
 - Parameters
 
@@ -2007,7 +2177,6 @@ uint16_t pingGetModelNum2 (int port_num, int id)
 - Syntax
 ``` cpp
 void broadcastPing2(int port_num)
-
 ```
 - Parameters
 
@@ -2024,7 +2193,6 @@ void broadcastPing2(int port_num)
 - Syntax
 ``` cpp
 uint8_t getBroadcastPingResult2(int port_num, int id)
-
 ```
 - Parameters
 
@@ -2073,11 +2241,30 @@ void reboot2(int port_num, uint8_t id)
    This function constructs the transmission packet with reboot instruction, and starts `txRxPacket2`. The function may perform its role when the DYNAMIXEL stops working caused by hardware error. The communication result and the hardware error are available when the function is terminated.
 
 
+##### clearMultiTurn2
+- Syntax
+``` cpp
+void clearMultiTurn2(int port_num, uint8_t id)
+```
+- Parameters
+
+| Parameters | Description  |
+|:-----------|:-------------|
+| port_num   | Port number  |
+| id         | DYNAMIXEL ID |
+
+
+- Detailed Description
+
+  Reset the Present Position value to an absolute value within one rotation (0-4095).
+  The Clear instruction can only be applied when DYNAMIXEL is stopped.
+  Note that if DYNAMIXEL is in motion and the Clear Instruction packet is sent, Result Fail (0x01) will be sent via the Error field of the Status Packet.
+
+
 ##### factoryReset2
 - Syntax
 ``` cpp
 void factoryReset2(int port_num, uint8_t id, uint8_t option)
-
 ```
 - Parameters
 
@@ -2095,7 +2282,6 @@ void factoryReset2(int port_num, uint8_t id, uint8_t option)
 - Syntax
 ``` cpp
 void readTx2(int port_num, uint8_t id, uint16_t address, uint16_t length)
-
 ```
 - Parameters
 
@@ -2127,6 +2313,24 @@ void readRx2(int port_num, uint16_t length)
 - Detailed Description
 
    This function calls `rxPacket2` function and gets the packet from read data storage if the communication succeeds. The communication result and the hardware error are available when the function is terminated.
+
+
+##### fastReadRx2 
+- Syntax
+``` cpp
+void fastReadRx2 (int port_num, uint16_t length)
+```
+- Parameters
+
+| Parameters | Description   |
+|:-----------|:--------------|
+| port_num   | Port number   |
+| length     | Packet length |
+
+
+- Detailed Description
+
+   This function calls `fastReadRx2` function and gets the packet quickly from read data storage if the communication succeeds. The communication result and the hardware error are available when the function is terminated.
 
 
 ##### readTxRx2
@@ -2449,7 +2653,7 @@ void write4ByteTxOnly2(int port_num, uint8_t id, uint16_t address, uint32_t data
 ##### write4ByteTxRx2
 - Syntax
 ``` cpp
-void write4ByteTxRx2(int port_num, uint8_t id, uint16_t address)
+void write4ByteTxRx2(int port_num, uint8_t id, uint16_t address, uint32_t data)
 ```
 - Parameters
 
@@ -2458,6 +2662,7 @@ void write4ByteTxRx2(int port_num, uint8_t id, uint16_t address)
 | port_num   | Port number                               |
 | id         | DYNAMIXEL ID                              |
 | address    | Address on the control table of DYNAMIXEL |
+| data       | Data for write                            |
 
 
 - Detailed Description
@@ -2509,16 +2714,35 @@ void write4ByteTxRx2(int port_num, uint8_t id, uint16_t address)
 ##### syncReadTx2
 - Syntax
 ``` cpp
-void syncReadTx2(int port_num, uint16_t address, uint16_t data_length, uint16_t param_length)
+void syncReadTx2(int port_num, uint16_t start_address, uint16_t data_length, uint16_t param_length)
 ```
 - Parameters
 
-| Parameters   | Description                               |
-|:-------------|:------------------------------------------|
-| port_num     | Port number                               |
-| address      | Address on the control table of DYNAMIXEL |
-| data_length  | Data length                               |
-| param_length | Parameter length                          |
+| Parameters       | Description                                     |
+|:-----------------|:------------------------------------------------|
+| port_num         | Port number                                     |
+| start_address    | Start address on the control table of DYNAMIXEL |
+| data_length      | Data length                                     |
+| param_length     | Parameter length                                |
+
+- Detailed Description
+
+   This function intends simultanoues multiple DYNAMIXEL's control by reading same length of data from the same address on the DYNAMIXEL control table. The function constructs the transmission packet with sync read instruction, and starts 'txPacket2'. Then the function calls `setPacketTimeout` function when `txPacket2` succeeds. The communication result and the hardware error are available when the function is terminated.
+
+
+##### fastSyncReadTx2
+- Syntax
+``` cpp
+void fastSyncReadTx2(int port_num, uint16_t start_address, uint16_t data_length, uint16_t param_length)
+```
+- Parameters
+
+| Parameters       | Description                                     |
+|:-----------------|:------------------------------------------------|
+| port_num         | Port number                                     |
+| start_address    | Start address on the control table of DYNAMIXEL |
+| data_length      | Data length                                     |
+| param_length     | Parameter length                                |
 
 - Detailed Description
 
@@ -2532,12 +2756,12 @@ void syncReadTx2(int port_num, uint16_t address, uint16_t data_length, uint16_t 
 ```
 - Parameters
 
-| Parameters    | Description                               |
-|:--------------|:------------------------------------------|
-| port_num      | Port number                               |
-| start_address | Address on the control table of DYNAMIXEL |
-| data_length   | Data length                               |
-| param_length  | Parameter length                          |
+| Parameters       | Description                                     |
+|:-----------------|:------------------------------------------------|
+| port_num         | Port number                                     |
+| start_address    | Start address on the control table of DYNAMIXEL |
+| data_length      | Data length                                     |
+| param_length     | Parameter length                                |
 
 
 - Detailed Description
