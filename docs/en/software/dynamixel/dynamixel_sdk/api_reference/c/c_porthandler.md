@@ -70,20 +70,24 @@ sidebar:
 
 - Methods
 
-| Methods                                                 | Description                                                |
-|:--------------------------------------------------------|:-----------------------------------------------------------|
-| **[portHandlerWindows](#porthandlerwindows)**           | Initializes parameters for serial port control             |
-| **[openPortWindows](#openportwindows)**                 | Opens a serial port                                        |
-| **[closePortWindows](#closeportwindows)**               | Closes a serial port                                       |
-| **[clearPortWindows](#clearportwindows)**               | Refreshes a serial port                                    |
-| **[setPortNameWindows](#setportnamewindows)**           | Sets a device name                                         |
-| **[getPortNameWindows](#getportnamewindows)**           | Gets a device name                                         |
-| **[setBaudrateWindows](#setbaudratewindows)**           | Sets a baudrate                                            |
-| **[getBaudrateWindows](#getbaudratewindows)**           | Gets a baudrate                                            |
-| **[readPortWindows](#readportwindows)**                 | Reads bytes from port buffer                               |
-| **[writePortWindows](#writeportwindows)**               | Writes bytes to port buffer                                |
-| **[setPacketTimeoutWindows](#setpackettimeoutwindows)** | Sets timeout                                               |
-| **[isPacketTimeoutWindows](#ispackettimeoutwindows)**   | Checks whether communication has been succeeded in timeout |
+| Methods                                                         | Description                                                |
+|:----------------------------------------------------------------|:-----------------------------------------------------------|
+| **[portHandlerWindows](#porthandlerwindows)**                   | Initializes parameters for serial port control             |
+| **[openPortWindows](#openportwindows)**                         | Opens a serial port                                        |
+| **[closePortWindows](#closeportwindows)**                       | Closes a serial port                                       |
+| **[clearPortWindows](#clearportwindows)**                       | Refreshes a serial port                                    |
+| **[setPortNameWindows](#setportnamewindows)**                   | Sets a device name                                         |
+| **[getPortNameWindows](#getportnamewindows)**                   | Gets a device name                                         |
+| **[setBaudrateWindows](#setbaudratewindows)**                   | Sets a baudrate                                            |
+| **[getBaudrateWindows](#getbaudratewindows)**                   | Gets a baudrate                                            |
+| **[readPortWindows](#readportwindows)**                         | Reads bytes from port buffer                               |
+| **[writePortWindows](#writeportwindows)**                       | Writes bytes to port buffer                                |
+| **[setPacketTimeoutWindows](#setpackettimeoutwindows)**         | Sets timeout                                               |
+| **[setPacketTimeoutMSecWindows](#setpackettimeoutmsecwindows)** | Sets timeout using micro second                            |
+| **[isPacketTimeoutWindows](#ispackettimeoutwindows)**           | Checks whether communication has been succeeded in timeout |
+| **[getCurrentTimeWindows](#getcurrenttimewindows)**             | Gets a current time                                        |
+| **[getTimeSinceStartWindows](#gettimesincestartwindows)**       | Gets a time since start                                    |
+| **[setupPortWindows](#setupportwindows)**                       | Sets a port                                                |
 
 
 - Enumerator
@@ -105,6 +109,7 @@ int portHandlerWindows(const char *port_name)
 |:-----------|:------------|
 | port_name  | Port name   |
 
+
 - Detailed Description
 
    The function initializes the parameters for port control. At first, this checks if the port with same device name is set already in the `portDataWindows` pointer struct. If it exists, the function returns the port number as what it has. If not, the function finds any free port, resize `portDataWindows` struct and start to initialize struct members.
@@ -121,6 +126,7 @@ uint8_t openPortWindows(int port_num)
 |:-----------|:------------|
 | port_num   | Port number |
 
+
 - Detailed Description
 
    This function opens the port by `SetBaudRateWindows` function using `DEFAULT_BAUDRATE`. If the baudrate is needed to be changed to another baudrate value, `SetBaudRateWindows` function should be called again after calling `openPortWindows` function. When the port succeeds to be opened, this function will return true, and if not, then false.
@@ -136,6 +142,7 @@ void closePortWindows(int port_num)
 | Parameters | Description |
 |:-----------|:------------|
 | port_num   | Port number |
+
 
 - Detailed Description
 
@@ -227,6 +234,7 @@ int getBaudrateWindows(int port_num)
 |:-----------|:------------|
 | port_num   | Port number |
 
+
 - Description
 
   This function returns the baudrate value previously set.  
@@ -267,7 +275,6 @@ int writePortWindows(int port_num, uint8_t *packet, int length)
 | port_num   | Port number                       |
 | packet     | The number of data bytes to write |
 | length     | Byte length for write             |
-
 
 
 - Description
@@ -323,11 +330,73 @@ uint8_t isPacketTimeoutWindows (int port_num)
 
 - Parameters
 
-  None
+| Parameters | Description |
+|:-----------|:------------|
+| port_num   | Port number |
+
 
 - Description
 
   This function decides the timeover of packet communication. If the time limit is over, it returns false.
+
+
+##### getCurrentTimeWindows
+- Syntax
+
+``` cpp
+double getCurrentTimeWindows(int port_num)
+```
+
+- Parameters
+
+| Parameters | Description |
+|:-----------|:------------|
+| port_num   | Port number |
+
+
+- Description
+
+  This function gets a current time.
+
+
+##### getTimeSinceStartWindows
+- Syntax
+
+``` cpp
+double getTimeSinceStartWindows(int port_num)
+```
+
+- Parameters
+
+| Parameters | Description |
+|:-----------|:------------|
+| port_num   | Port number |
+
+
+- Description
+
+  This function gets a time since start.
+
+
+##### setupPortWindows
+- Syntax
+
+``` cpp
+uint8_t setupPortWindows (int port_num, const int baudrate)
+```
+
+- Parameters
+
+| Parameters | Description     |
+|:-----------|:----------------|
+| port_num   | Port number     |
+| baudrate   | Target baudrate |
+
+
+- Description
+
+  This function sets the port.
+
 
 ### [C PortHandlerLinux](#c-porthandlerlinux)
 
@@ -342,21 +411,27 @@ uint8_t isPacketTimeoutWindows (int port_num)
 
 - Methods
 
-| Methods                                               | Description                                                |
-|:------------------------------------------------------|:-----------------------------------------------------------|
-| **[portHandleLinux](#porthandlerlinux)**              | Initializes parameters for serial port control             |
-| **[openPortLinux](#openportlinux)**                   | Opens a serial port                                        |
-| **[closePortLinux](#closeportlinux)**                 | Closes a serial port                                       |
-| **[clearPortLinux](#clearportlinux)**                 | Refreshes a serial port                                    |
-| **[setPortNameLinux](#setportnamelinux)**             | Sets a device name                                         |
-| **[getPortNameLinux](#getportnamelinux)**             | Gets a device name                                         |
-| **[setBaudrateLinux](#setbaudratelinux)**             | Sets a baudrate                                            |
-| **[getBaudrateLinux](#getbaudratelinux)**             | Gets a baudrate                                            |
-| **[getBytesAvailableLinux](#getbytesavailablelinux)** | Checks how many bytes can be read in port buffer           |
-| **[readPortLinux](#readportlinux)**                   | Reads bytes from port buffer                               |
-| **[writePortLinux](#writeportlinux)**                 | Writes bytes to port buffer                                |
-| **[setPacketTimeoutLinux](#setpackettimeoutlinux)**   | Sets timeout                                               |
-| **[isPacketTimeoutLinux](#ispackettimeoutlinux)**     | Checks whether communication has been succeeded in timeout |
+| Methods                                                     | Description                                                |
+|:------------------------------------------------------------|:-----------------------------------------------------------|
+| **[portHandleLinux](#porthandlerlinux)**                    | Initializes parameters for serial port control             |
+| **[openPortLinux](#openportlinux)**                         | Opens a serial port                                        |
+| **[closePortLinux](#closeportlinux)**                       | Closes a serial port                                       |
+| **[clearPortLinux](#clearportlinux)**                       | Refreshes a serial port                                    |
+| **[setPortNameLinux](#setportnamelinux)**                   | Sets a device name                                         |
+| **[getPortNameLinux](#getportnamelinux)**                   | Gets a device name                                         |
+| **[setBaudrateLinux](#setbaudratelinux)**                   | Sets a baudrate                                            |
+| **[getBaudrateLinux](#getbaudratelinux)**                   | Gets a baudrate                                            |
+| **[getBytesAvailableLinux](#getbytesavailablelinux)**       | Checks how many bytes can be read in port buffer           |
+| **[readPortLinux](#readportlinux)**                         | Reads bytes from port buffer                               |
+| **[writePortLinux](#writeportlinux)**                       | Writes bytes to port buffer                                |
+| **[setPacketTimeoutLinux](#setpackettimeoutlinux)**         | Sets timeout                                               |
+| **[setPacketTimeoutMSecLinux](#setpackettimeoutmseclinux)** | Sets timeout using micro second                            |
+| **[isPacketTimeoutLinux](#ispackettimeoutlinux)**           | Checks whether communication has been succeeded in timeout |
+| **[getCurrentTimeLinux](#getcurrenttimelinux)**             | Gets a current time                                        |
+| **[getTimeSinceStartLinux](#gettimesincestartlinux)**       | Gets a time since start                                    |
+| **[setupPortLinux](#setupportlinux)**                       | Sets a port                                                |
+| **[setCustomBaudrateLinux](#setcustombaudratelinux)**       | Sets a custom baudrate   |
+| **[getCFlagBaud](#getcflagbaud)**                           | Gets a baudrate |
 
 
 - Enumerator
@@ -378,6 +453,7 @@ int portHandlerLinux(const char *port_name)
 |:-----------|:------------|
 | port_name  | Port name   |
 
+
 - Detailed Description
 
    The function initializes the parameters for port control. At first, this checks if the port with same device name is set already in the `portDataLinux` pointer struct. If it exists, the function returns the port number as what it has. If not, the function finds any free port, resize `portDataLinux` struct and start to initialize struct members.
@@ -392,6 +468,7 @@ uint8_t openPortLinux(int port_num)
 | Parameters | Description |
 |:-----------|:------------|
 | port_num   | Port number |
+
 
 - Detailed Description
 
@@ -408,6 +485,7 @@ void closePortLinux(int port_num)
 | Parameters | Description |
 |:-----------|:------------|
 | port_num   | Port number |
+
 
 - Detailed Description
 
@@ -442,6 +520,7 @@ void setPortNameLinux(int port_num, const char *port_name)
 | port_num   | Port number |
 | port_name  | Port name   |
 
+
 - Detailed Description
 
   This function sets the device name as port_name.
@@ -457,6 +536,7 @@ char *getPortNameLinux(int port_num)
 | Parameters | Description |
 |:-----------|:------------|
 | port_num   | Port number |
+
 
 - Detailed Description
 
@@ -496,6 +576,7 @@ int getBaudrateLinux(int port_num)
 |:-----------|:------------|
 | port_num   | Port number |
 
+
 - Description
 
   This function returns the baudrate value previously set.  
@@ -513,6 +594,7 @@ int getBytesAvailableLinux(int port_num)
 | Parameters | Description |
 |:-----------|:------------|
 | port_num   | Port number |
+
 
 - Description
 
@@ -554,7 +636,6 @@ int writePortLinux(int port_num, uint8_t *packet, int length)
 | port_num   | Port number                       |
 | packet     | The number of data bytes to write |
 | length     | Byte length for write             |
-
 
 
 - Description
@@ -614,9 +695,105 @@ uint8_t isPacketTimeoutLinux(int port_num)
 |:-----------|:------------|
 | port_num   | Port number |
 
+
 - Description
 
   This function decides the timeover of packet communication. If the time limit is over, it returns false.
+
+
+##### getCurrentTimeLinux
+- Syntax
+
+``` cpp
+double getCurrentTimeLinux()
+```
+
+- Parameters
+  
+  None
+
+- Description
+
+  This function gets a current time.
+
+
+##### getTimeSinceStartLinux
+- Syntax
+
+``` cpp
+double getTimeSinceStartLinux(int port_num)
+```
+
+- Parameters
+  
+| Parameters | Description |
+|:-----------|:------------|
+| port_num   | Port number |
+
+
+- Description
+
+  This function gets a time since start.
+
+
+##### setupPortLinux
+- Syntax
+
+``` cpp
+uint8_t setupPortLinux(int port_num, int cflag_baud)
+```
+
+- Parameters
+  
+| Parameters | Description     |
+|:-----------|:----------------|
+| port_num   | Port number     |
+| cflag_baud | Target baudrate |
+
+
+- Description
+
+  This function sets the port.
+
+
+##### setCustomBaudrateLinux
+- Syntax
+
+``` cpp
+uint8_t setCustomBaudrateLinux(int port_num, int speed)
+```
+
+- Parameters
+  
+| Parameters | Description         |
+|:-----------|:--------------------|
+| port_num   | Port number         |
+| speed      | communication speed |
+
+
+- Description
+
+  This function sets a custom baudrate.
+
+
+##### getCFlagBaud
+- Syntax
+
+``` cpp
+int getCFlagBaud(int baudrate)
+```
+
+- Parameters
+  
+| Parameters | Description     |
+|:-----------|:----------------|
+| baudrate   | Target baudrate |
+
+
+- Description
+
+  This function gets the baudrate.
+
 
 ### [C PortHandlerMac](#c-porthandlermac)
 
@@ -631,27 +808,32 @@ uint8_t isPacketTimeoutLinux(int port_num)
 
 - Methods
 
-| Methods                                           | Description                                                |
-|:--------------------------------------------------|:-----------------------------------------------------------|
-| **[portHandleMac](#porthandlermac)**              | Initializes parameters for serial port control             |
-| **[openPortMac](#openportmac)**                   | Opens a serial port                                        |
-| **[closePortMac](#closeportmac)**                 | Closes a serial port                                       |
-| **[clearPortMac](#clearportmac)**                 | Refreshes a serial port                                    |
-| **[setPortNameMac](#setportnamemac)**             | Sets a device name                                         |
-| **[getPortNameMac](#getportnamemac)**             | Gets a device name                                         |
-| **[setBaudrateMac](#setbaudratemac)**             | Sets a baudrate                                            |
-| **[getBaudrateMac](#getbaudratemac)**             | Gets a baudrate                                            |
-| **[getBytesAvailableMac](#getbytesavailablemac)** | Checks how many bytes can be read in port buffer           |
-| **[readPortMac](#readportmac)**                   | Reads bytes from port buffer                               |
-| **[writePortMac](#writeportmac)**                 | Writes bytes to port buffer                                |
-| **[setPacketTimeoutMac](#setpackettimeoutmac)**   | Sets timeout                                               |
-| **[isPacketTimeoutMac](#ispackettimeoutmac)**     | Checks whether communication has been succeeded in timeout |
+| Methods                                                   | Description                                                |
+|:----------------------------------------------------------|:-----------------------------------------------------------|
+| **[portHandleMac](#porthandlermac)**                      | Initializes parameters for serial port control             |
+| **[openPortMac](#openportmac)**                           | Opens a serial port                                        |
+| **[closePortMac](#closeportmac)**                         | Closes a serial port                                       |
+| **[clearPortMac](#clearportmac)**                         | Refreshes a serial port                                    |
+| **[setPortNameMac](#setportnamemac)**                     | Sets a device name                                         |
+| **[getPortNameMac](#getportnamemac)**                     | Gets a device name                                         |
+| **[setBaudrateMac](#setbaudratemac)**                     | Sets a baudrate                                            |
+| **[getBaudrateMac](#getbaudratemac)**                     | Gets a baudrate                                            |
+| **[getBytesAvailableMac](#getbytesavailablemac)**         | Checks how many bytes can be read in port buffer           |
+| **[readPortMac](#readportmac)**                           | Reads bytes from port buffer                               |
+| **[writePortMac](#writeportmac)**                         | Writes bytes to port buffer                                |
+| **[setPacketTimeoutMac](#setpackettimeoutmac)**           | Sets timeout                                               |
+| **[setPacketTimeoutMSecMac](#setPacketTimeoutMSecMac)**   | Sets timeout using micro                                   |
+| **[isPacketTimeoutMac](#ispackettimeoutmac)**             | Checks whether communication has been succeeded in timeout |
+| **[getCurrentTimeMac](#getcurrenttimemac)**               | Gets a current time                                        |
+| **[getTimeSinceStartMac](#gettimesincestartmac)**         | Gets a time since start                                    |
+| **[setupPortMac](#setupportmac)**                         | Sets a port                                                |
+| **[setCustomBaudrateMac](#setcustombaudratemac)**         | Sets a custom baudrate                                     |
+| **[getCFlagBaud](#getcflagbaud)**                         | Gets a baudrate                                            |
 
 
 - Enumerator
 
    None
-
 
 
 #### Method References
@@ -667,6 +849,7 @@ int portHandlerMac(const char *port_name)
 |:-----------|:------------|
 | port_name  | Port name   |
 
+
 - Detailed Description
 
    The function initializes the parameters for port control. At first, this checks if the port with same device name is set already in the `portDataMac` pointer struct. If it exists, the function returns the port number as what it has. If not, the function finds any free port, resize `portDataMac` struct and start to initialize struct members.
@@ -681,6 +864,7 @@ uint8_t openPortMac(int port_num)
 | Parameters | Description |
 |:-----------|:------------|
 | port_num   | Port number |
+
 
 - Detailed Description
 
@@ -698,6 +882,7 @@ void closePortMac(int port_num)
 |:-----------|:------------|
 | port_num   | Port number |
 
+
 - Detailed Description
 
   This function closes the port by closing the file descriptor.
@@ -713,6 +898,7 @@ void clearPortMac(int port_num)
 | Parameters | Description |
 |:-----------|:------------|
 | port_num   | Port number |
+
 
 - Detailed Description
 
@@ -731,6 +917,7 @@ void setPortNameMac(int port_num, const char *port_name)
 | port_num   | Port number |
 | port_name  | Port name   |
 
+
 - Detailed Description
 
   This function sets the device name as port_name.
@@ -746,6 +933,7 @@ char *getPortNameMac(int port_num)
 | Parameters | Description |
 |:-----------|:------------|
 | port_num   | Port number |
+
 
 - Detailed Description
 
@@ -785,6 +973,7 @@ int getBaudrateMac(int port_num)
 |:-----------|:------------|
 | port_num   | Port number |
 
+
 - Description
 
   This function returns the baudrate value previously set.  
@@ -802,6 +991,7 @@ int getBytesAvailableMac(int port_num)
 | Parameters | Description |
 |:-----------|:------------|
 | port_num   | Port number |
+
 
 - Description
 
@@ -843,7 +1033,6 @@ int writePortMac(int port_num, uint8_t *packet, int length)
 | port_num   | Port number                       |
 | packet     | The number of data bytes to write |
 | length     | Byte length for write             |
-
 
 
 - Description
@@ -903,6 +1092,101 @@ uint8_t isPacketTimeoutMac(int port_num)
 |:-----------|:------------|
 | port_num   | Port number |
 
+
 - Description
 
   This function decides the timeover of packet communication. If the time limit is over, it returns false.
+
+
+##### getCurrentTimeMac
+- Syntax
+
+``` cpp
+double getCurrentTimeMac()
+```
+
+- Parameters
+
+  None
+
+- Description
+
+  This function gets a current time.
+
+
+##### getTimeSinceStartMac
+- Syntax
+
+``` cpp
+double getTimeSinceStartMac(int port_num)
+```
+
+- Parameters
+
+| Parameters | Description |
+|:-----------|:------------|
+| port_num   | Port number |
+
+
+- Description
+
+  This function gets a time since start.
+
+
+##### setupPortMac
+- Syntax
+
+``` cpp
+uint8_t setupPortMac(int port_num, int cflag_baud)
+```
+
+- Parameters
+
+| Parameters | Description     |
+|:-----------|:----------------|
+| port_num   | Port number     |
+| cflag_baud | Target baudrate |
+
+
+- Description
+
+  This function sets the port.
+
+
+##### setCustomBaudrateMac
+- Syntax
+
+``` cpp
+uint8_t setCustomBaudrateMac(int port_num, int speed)
+```
+
+- Parameters
+
+| Parameters | Description         |
+|:-----------|:--------------------|
+| port_num   | Port number         |
+| speed      | communication speed |
+
+
+- Description
+
+  This function sets a custom baudrate.
+
+
+##### getCFlagBaud
+- Syntax
+
+``` cpp
+int getCFlagBaud(int baudrate)
+```
+
+- Parameters
+
+| Parameters | Description     |
+|:-----------|:----------------|
+| baudrate   | Target baudrate |
+
+
+- Description
+
+  This function gets the baudrate.
