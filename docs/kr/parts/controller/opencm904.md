@@ -843,16 +843,16 @@ USB 포트를 통해 OpenCM9.04를 윈도우즈 환경에서 사용하려면 USB
 
 ## [다양한 X시리즈 사용하기](#다양한-x시리즈-사용하기)
 
-로보티즈에서 제공하는 프로그램과 다이나믹셀-X 시리즈를 OpenCM 9.04에서 사용하기위해서는, [다이나믹셀 채널](#다이나믹셀-channel-설정하기) 설정이 필요합니다. 
+로보티즈에서 제공하는 [소프트웨어](/docs/kr/software/#로보플러스)과 다이나믹셀-X 시리즈를 OpenCM 9.04에서 사용하기위해서는, [DYNAMIXEL Channel](#dynamixel-channel-설정하기) 설정이 필요합니다. 
 
-**참고**: 아두이노 환경에서는, 채널 설정이 필요하지 않습니다. 
+**참고**: 아두이노를 사용시, 채널 설정이 필요하지 않습니다. 
 {: .notice}
 
 **참고**: OpenCM485 확장보드를 사용하면, 24V를 사용하는 다이나믹셀과 호환가능합니다. OpenCM 9.04의 전압 범위는 [제품 사양](#제품-사양)을 참고하세요.
 ![](/assets/images/sw/rplus2/manager/rplusmanager2_30_kr.jpg) 
 {: .notice}
   
-### [다이나믹셀 Channel 설정하기](#다이나믹셀-channel-설정하기)
+### [DYNAMIXEL Channel 설정하기](#dynamixel-channel-설정하기)
 
 1. R+ Manager 2.0을 실행하여 DYNAMIXEL 2.0 제품을 선택한 후, 업데이트 & 테스트 메뉴를 실행합니다.
 
@@ -863,7 +863,7 @@ USB 포트를 통해 OpenCM9.04를 윈도우즈 환경에서 사용하려면 USB
       **참고**: Micro USB를 사용하지않는경우, [통신포트](/docs/kr/parts/controller/opencm904/#통신포트)를 참고하세요.
       {: .notice}
 
-3. 안내에 따라 제품을 검색하면 OpenCM9.04가 검색됩니다. (처음에는 OpenCM9.04의 DYNAMIXEL Channel 값이 Default로 설정되어 있어 다이나믹셀이 검색되지 않을수 있습니다..)
+3. 안내에 따라 제품을 검색하면 OpenCM9.04가 검색됩니다. (처음에는 OpenCM9.04의 DYNAMIXEL Channel 값이 Default로 설정되어 있어 다이나믹셀이 검색되지 않을수 있습니다.)
 
     ![](/assets/images/sw/rplus2/manager/rplusmanager2_32_kr.jpg)
 
@@ -872,7 +872,7 @@ USB 포트를 통해 OpenCM9.04를 윈도우즈 환경에서 사용하려면 USB
 
     ![](/assets/images/sw/rplus2/manager/rplusmanager2_33_kr.jpg)
 
-6. 설정이 완료되면, OpenCM 9.04 및 OpenCM485 확장보드의 전원을 껏다 다시 켜주세요. (이때, 재부팅되면서 OpenCM9.04의 미니 TTL버스가 비활성화되고 OpenCM 485 EXP의 다이나믹셀 버스가 활성화 됩니다.)
+6. 설정이 완료되면, OpenCM 9.04 및 OpenCM485 확장보드의 전원을 끄고, 다시 켜주세요. (이때, 재부팅되면서 OpenCM9.04의 미니 TTL버스가 비활성화되고 OpenCM 485 EXP의 다이나믹셀 버스가 활성화 됩니다.)
 7. 업데이트 & 테스트 메뉴를 다시 실행하여 X시리즈가 정상적으로 검색되는지 확인합니다.
 
     ![](/assets/images/sw/rplus2/manager/rplusmanager2_34_kr.jpg)
