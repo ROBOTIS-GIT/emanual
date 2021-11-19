@@ -22,13 +22,13 @@ page_number: 1
 ![](/assets/images/platform/turtlebot3/overview/turtlebot3_with_logo.png)
 
 {% capture info_00 %}
-![](/assets/images/platform/turtlebot3/logo_raspberry_pi.png) **Rasbperry Pi 4**  
+![](/assets/images/platform/turtlebot3/logo_raspberry_pi.png){: width="30px"} **Rasbperry Pi 4**  
 TurtleBot3 has been upgraded with `Raspberry Pi 4`.
 {% endcapture %}
 <div class="notice--success">{{ info_00 | markdownify }}</div>
 
 {% capture info_01 %}
-![](/assets/images/platform/turtlebot3/logo_nvidia.jpg) **Jetson Nano**  
+![](/assets/images/platform/turtlebot3/logo_nvidia.jpg){: width="65px"} **Jetson Nano**  
 TurtleBot3 Hardware is compatible with `Jetson Nano` SBC.  
 Please refer to the video below in order to set up the Jetson Nano for TurtleBot3.  
 The [Jetson Nano Developer Kit setup](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit) must be completed first.
