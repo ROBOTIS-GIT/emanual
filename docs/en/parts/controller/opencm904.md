@@ -49,23 +49,23 @@ sidebar:
 
 # [Specifications](#specifications)
 
-|          Item          |           Description           |
-|:----------------------:|:-------------------------------:|
-|          CPU           |   STM32F103CB (ARM Cortex-M3)   |
-|   Operation Voltage    |            5V ~ 16V             |
-|          I/O           |            GPIO x 26            |
-|         Timer          |            4 (16bit)            |
-|   Analog Input(ADC)    |           10 (12bit)            |
-|         Flash          |              128Kb              |
-|          SRAM          |              20Kb               |
-|         Clock          |              72Mhz              |
-|          USB           | 1 (2.0 Full Speed) Micro B Type |
-|         USART          |                3                |
-|          SPI           |                2                |
-|        I2C(TWI)        |                2                |
-|         Debug          |           JTAG & SWD            |
-|   DYNAMIXEL TTL BUS    |          4 (Max 1Mbps)          |
-|       Dimensions       |          27mm x 66.5mm          |
+|       Item        |           Description           |
+|:-----------------:|:-------------------------------:|
+|        CPU        |   STM32F103CB (ARM Cortex-M3)   |
+| Operation Voltage |            5V ~ 16V             |
+|        I/O        |            GPIO x 26            |
+|       Timer       |            4 (16bit)            |
+| Analog Input(ADC) |           10 (12bit)            |
+|       Flash       |              128Kb              |
+|       SRAM        |              20Kb               |
+|       Clock       |              72Mhz              |
+|        USB        | 1 (2.0 Full Speed) Micro B Type |
+|       USART       |                3                |
+|        SPI        |                2                |
+|     I2C(TWI)      |                2                |
+|       Debug       |           JTAG & SWD            |
+| DYNAMIXEL TTL BUS |          4 (Max 1Mbps)          |
+|    Dimensions     |          27mm x 66.5mm          |
 
 {% capture opencm904_caution_01 %}
 **WARNING**
@@ -2047,19 +2047,19 @@ Please refer to [R+Manager 2.0 Firmware Recovery](/docs/en/software/rplus2/manag
 ## [Windows Driver Installation](#windows-driver-installation)
 - See [How to install ROBOTIS virtual COM port for Windows]{: .popup} 
 
-## [Using OpenCM485 EXP board with OpenCM9.04](#using-opencm485-exp-board)
+## [Using More DYNAMIXEL-X](#using-more-dynamixel-x)
 
 There are two preparations that need to be done for using the XM Series in R+Task2.0 or R+Motion2.0.  
 (Preparing the H/W / Configuring DYNAMIXEL Channel)
  
-### Preparing the H/W
+### [Preparing the H/W](#preparing-the-hw)
 
 1. Apart from the OpenCM9.04 and your DYNAMIXEL, the OpenCM 485 EXP board is used as shown in the figure below.
 2. Connect the three components below with cables.
 
 ![](/assets/images/sw/rplus2/manager/roboplus_manager2_29.jpg)
 
-### Configuring DYNAMIXEL Channel
+### [Configuring DYNAMIXEL Channel](#configuring-dynamixel-channel)
 
 DYNAMIXEL Channel is a firmware feature of OpenCM9.04 that controls which bus DYNAMIXEL communication is performed on. The OpenCM9.04 may communicate to the connectors on the OpenCM9.04, or send communication through the OpenCM 485 EXP board. 
 
