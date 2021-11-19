@@ -30,20 +30,20 @@ sidebar:
 
   None
 
-| Methods                                                         | Description                                                     |
-|:----------------------------------------------------------------|:----------------------------------------------------------------|
-| **[groupSyncRead](#groupsyncread)**                             | Initializes members of packet data pointer struct               |
-| **[groupSyncReadAddParam](#groupsyncreadaddparam)**             | Adds parameter storage for read                                 |
-| **[groupSyncReadRemoveParam](#groupsyncreadremoveparam)**       | Removes parameter on the storage                                |
-| **[groupSyncReadClearParam](#groupsyncreadclearparam)**         | Clears parameter storage                                        |
-| **[groupSyncReadTxPacket](#groupsyncreadtxpacket)**             | Transmits packet to the number of DYNAMIXEL's                   |
-| **[groupSyncReadRxPacket](#groupsyncreadrxpacket)**             | receives packet from the number of DYNAMIXEL's                  |
-| **[groupSyncReadTxRxPacket](#groupsyncreadtxrxpacket)**         | Transmits and receives packet on the number of DYNAMIXEL's      |
-| **[groupFastSyncReadTxPacket](#groupfastsyncreadtxpacket)**     | Fast transmits packet to the number of DYNAMIXEL's              |
-| **[groupFastSyncReadRxPacket](#groupfastsyncreadrxpacket)**     | Fast receives packet from the number of DYNAMIXEL's             |
-| **[groupFastSyncReadTxRxPacket](#groupfastsyncreadtxrxpacket)** | Fast transmits and receives packet on the number of DYNAMIXEL's |
-| **[groupSyncReadIsAvailable](#groupsyncreadisavailable)**       | Checks whether there is available data in the data storage      |
-| **[groupSyncReadGetData](#groupsyncreadgetdata)**               | Gets data from received packet                                  |
+| Methods                                                         | Description                                                        |
+|:----------------------------------------------------------------|:-------------------------------------------------------------------|
+| **[groupSyncRead](#groupsyncread)**                             | Initializes members of packet data pointer struct                  |
+| **[groupSyncReadAddParam](#groupsyncreadaddparam)**             | Adds parameter storage for read                                    |
+| **[groupSyncReadRemoveParam](#groupsyncreadremoveparam)**       | Removes parameter on the storage                                   |
+| **[groupSyncReadClearParam](#groupsyncreadclearparam)**         | Clears parameter storage                                           |
+| **[groupSyncReadTxPacket](#groupsyncreadtxpacket)**             | Transmits packet to the number of DYNAMIXEL's                      |
+| **[groupSyncReadRxPacket](#groupsyncreadrxpacket)**             | receives packet from the number of DYNAMIXEL's                     |
+| **[groupSyncReadTxRxPacket](#groupsyncreadtxrxpacket)**         | Transmits and receives packet on the number of DYNAMIXEL's         |
+| **[groupFastSyncReadTxPacket](#groupfastsyncreadtxpacket)**     | Transmits packet to the number of DYNAMIXEL's quickly              |
+| **[groupFastSyncReadRxPacket](#groupfastsyncreadrxpacket)**     | Receives packet from the number of DYNAMIXEL's quickly             |
+| **[groupFastSyncReadTxRxPacket](#groupfastsyncreadtxrxpacket)** | Transmits and receives packet on the number of DYNAMIXEL's quickly |
+| **[groupSyncReadIsAvailable](#groupsyncreadisavailable)**       | Checks whether there is available data in the data storage         |
+| **[groupSyncReadGetData](#groupsyncreadgetdata)**               | Gets data from received packet                                     |
 
 
 - Enumerator
@@ -175,7 +175,7 @@ void groupFastSyncReadTxPacket(int group_num)
 
 - Detailed Description
 
-   This function transmits and receives the packet by using `fastSyncReadTx`. The communication result and the hardware error are available when the function is terminated.
+   This function transmits and receives the packet by using `fastSyncReadTx` quickly. The communication result and the hardware error are available when the function is terminated.
 
 
    ##### groupFastSyncReadRxPacket
@@ -190,7 +190,7 @@ void groupFastSyncReadRxPacket(int group_num)
 
 - Detailed Description
 
-   This function transmits and receives the packet by using `fastSyncReadRx` function. The communication result and the hardware error are available when the function is terminated.
+   This function transmits and receives the packet by using `fastSyncReadRx` function quickly. The communication result and the hardware error are available when the function is terminated.
 
 
    ##### groupFastSyncReadTxRxPacket
@@ -205,7 +205,7 @@ void groupFastSyncReadTxRxPacket(int group_num)
 
 - Detailed Description
 
-   This function transmits and receives the packet by using `fastSyncReadTx` function and `fastSyncReadRx` function. The communication result and the hardware error are available when the function is terminated.
+   This function transmits and receives the packet by using `fastSyncReadTx` function and `fastSyncReadRx` function quickly. The communication result and the hardware error are available when the function is terminated.
 
 
 ##### groupSyncReadIsAvailable

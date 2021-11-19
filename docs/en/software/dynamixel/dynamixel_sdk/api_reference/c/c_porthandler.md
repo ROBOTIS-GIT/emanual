@@ -430,8 +430,8 @@ uint8_t setupPortWindows (int port_num, const int baudrate)
 | **[getCurrentTimeLinux](#getcurrenttimelinux)**             | Gets a current time                                        |
 | **[getTimeSinceStartLinux](#gettimesincestartlinux)**       | Gets a time since start                                    |
 | **[setupPortLinux](#setupportlinux)**                       | Sets a port                                                |
-| **[setCustomBaudrateLinux](#setcustombaudratelinux)**       | Sets a custom baudrate   |
-| **[getCFlagBaud](#getcflagbaud)**                           | Gets a baudrate |
+| **[setCustomBaudrateLinux](#setcustombaudratelinux)**       | Sets a custom baudrate                                     |
+| **[getCFlagBaud](#getcflagbaud)**                           | Gets a baudrate                                            |
 
 
 - Enumerator
