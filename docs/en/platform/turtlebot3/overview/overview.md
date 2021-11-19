@@ -21,6 +21,22 @@ page_number: 1
 
 ![](/assets/images/platform/turtlebot3/overview/turtlebot3_with_logo.png)
 
+{% capture info_00 %}
+![](/assets/images/platform/turtlebot3/logo_raspberry_pi.png) **Rasbperry Pi 4**  
+TurtleBot3 has been upgraded with `Raspberry Pi 4`.
+{% endcapture %}
+<div class="notice--success">{{ info_00 | markdownify }}</div>
+
+{% capture info_01 %}
+![](/assets/images/platform/turtlebot3/logo_nvidia.jpg) **Jetson Nano**  
+TurtleBot3 Hardware is compatible with `Jetson Nano` SBC.  
+Please refer to the video below in order to set up the Jetson Nano for TurtleBot3.  
+The [Jetson Nano Developer Kit setup](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit) must be completed first.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fGEq_0aWpoA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% endcapture %}
+<div class="notice--success">{{ info_01 | markdownify }}</div>
+
 **What is TurtleBot?**
 
 [TurtleBot][turtlebot] is a [ROS][ros] standard platform robot. Turtle is derived from the Turtle robot, which was driven by the educational computer programming language [Logo][logo] in 1967. In addition, the [turtlesim node][turtlesim], which first appears in the basic tutorial of ROS, is a program that mimics the command system of the [Logo turtle program][logo_primer]. It is also used to create the [Turtle icon][tuturtle] as a symbol of ROS. The nine dots used in the ROS logo derived from the back shell of the turtle. TurtleBot, which originated from the Turtle of Logo, is designed to easily teach people who are new to ROS through TurtleBot as well as to teach computer programming language using Logo. Since then TurtleBot has become the standard platform of ROS, which is the most popular platform among developers and students.
