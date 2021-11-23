@@ -843,42 +843,18 @@ USB 포트를 통해 OpenCM9.04를 윈도우즈 환경에서 사용하려면 USB
 
 ## [다양한 X시리즈 사용하기](#다양한-x시리즈-사용하기)
 
-로보티즈에서 제공하는 [소프트웨어](/docs/kr/software/#로보플러스)과 다이나믹셀-X 시리즈를 OpenCM 9.04에서 사용하기위해서는, [DYNAMIXEL Channel](#dynamixel-channel-설정하기) 설정이 필요합니다. 
+다이나믹셀-X 시리즈와 OpenCM 9.04 그리고 로보티즈에서 제공하는 [소프트웨어](/docs/kr/software/#로보플러스)를 사용하기위해서는, [DYNAMIXEL Channel](#dynamixel-channel-설정하기) 설정을 해주세요.
 
 **참고**: [아두이노 IDE](#아두이노-ide)를 사용시, 채널 설정이 필요하지 않습니다. 
 {: .notice}
 
-**참고**: OpenCM485 확장보드를 사용하면, 24V를 사용하는 다이나믹셀과 호환가능합니다. OpenCM 9.04의 전압 범위는 [제품 사양](#제품-사양)을 참고하세요.  
+**참고**: OpenCM485 확장보드를 사용하면, 24V 다이나믹셀 및 RS485 통신이 사용가능합니다.
 ![](/assets/images/sw/rplus2/manager/rplusmanager2_30_kr.jpg) 
 {: .notice}
   
 ### [DYNAMIXEL Channel 설정하기](#dynamixel-channel-설정하기)
 
-1. R+ Manager 2.0을 실행하여 DYNAMIXEL 2.0 제품을 선택한 후, 업데이트 & 테스트 메뉴를 실행합니다.
-
-    ![](/assets/images/sw/rplus2/manager/rplusmanager2_31_kr.jpg)
-
-2. [LN-101](/docs/kr/parts/interface/ln-101/) 또는 [BT-210](/docs/kr/parts/communication/bt-210/)(혹은 [BT-110](/docs/kr/parts/communication/bt-110/)) 또는 Micro USB를 통해 제어기와 PC를 연결하세요. 
-  
-      **참고**: Micro USB를 사용하지않는경우, [통신포트](/docs/kr/parts/controller/opencm904/#통신포트)를 참고하세요.
-      {: .notice}
-
-3. 안내에 따라 제품을 검색하면 OpenCM9.04가 검색됩니다. (처음에는 OpenCM9.04의 DYNAMIXEL Channel 값이 Default로 설정되어 있어 다이나믹셀이 검색되지 않을수 있습니다.)
-
-    ![](/assets/images/sw/rplus2/manager/rplusmanager2_32_kr.jpg)
-
-4. 제품을 업데이트하는 과정을 거치면 컨트롤 테이블이 실행됩니다.
-5. 컨트롤 테이블 항목에서 DYNAMIXEL Channel 값을 변경하세요.
-
-    ![](/assets/images/sw/rplus2/manager/rplusmanager2_33_kr.jpg)
-
-6. 설정이 완료되면, OpenCM 9.04 및 OpenCM485 확장보드의 전원을 끄고, 다시 켜주세요. (이때, 재부팅되면서 OpenCM9.04의 미니 TTL버스가 비활성화되고 OpenCM 485 EXP의 다이나믹셀 버스가 활성화 됩니다.)
-7. 업데이트 & 테스트 메뉴를 다시 실행하여 X시리즈가 정상적으로 검색되는지 확인합니다.
-
-    ![](/assets/images/sw/rplus2/manager/rplusmanager2_34_kr.jpg)
-
-8. 설정이 완료되면 사용하는 프로그램에서 다이나믹셀-X 시리즈를 사용할 수 있게 됩니다.(R+ Task 2.0 v2.1.0, R+ Motion 2.0 v2.4.0 이상 버전에서 지원)
-
+{% include kr/parts/controller/opencm904_dxl_channel.md %}
 
 ## [도면](#도면)
 
