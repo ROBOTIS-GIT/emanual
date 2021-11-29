@@ -1,9 +1,13 @@
+<!-- 
 
-<!-- ### [Configuring DYNAMIXEL Channel](#configuring-dynamixel-channel) -->
+### [Configuring DYNAMIXEL Channel](#configuring-dynamixel-channel)
 
 To use ROBOTIS [software](/docs/en/software/#roboplus-r) with DYNAMIXEL-X series on OpenCM 9.04 or OpenCM485 EXP board with OpenCM9.04, [Configuring DYNAMIXEL Channle](#configuring-dynamixel-channel) is required.
 
 ### [Configuring DYNAMIXEL Channel](#configuring-dynamixel-channel)
+
+-->
+
 
 1. Open R+ Manager, and select **OpenCM 9.04** in the **Home** tab.
 

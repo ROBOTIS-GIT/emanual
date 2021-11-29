@@ -26308,7 +26308,7 @@ opencm904:
       titlekr: "USB 드라이버 설치 하기"
       url: /parts/controller/opencm904/#windows-driver-installation
       urlkr: /parts/controller/opencm904/#usb-드라이버-설치-하기-
-    - title: "Using More DYNAMIXEL-X"
+    - title: "Using DYNAMIXEL-X"
       titlekr: "다양한 X시리즈 사용하기"
       url: /parts/controller/opencm904/#using-more-dynamixel-x
       urlkr: /parts/controller/opencm904/#다양한-x시리즈-사용하기
