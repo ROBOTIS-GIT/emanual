@@ -521,8 +521,8 @@ OpenCM9.04의 다이나믹셀 TTL 3핀 홀은 기존 다이나믹셀 TTL 3핀과
 
 ![](/assets/images/parts/controller/opencm904/opencm904_27.png)
 
-> OpenCM9.04 A타입은 2가지 종류의 3핀 커넥터를 모두 납땜할 수 있습니다
-
+**참고**: 다이나믹셀-X를 사용 할경우, Molex타입이 아닌 JST 커넥터를 부착해야합니다. 자세한 내용은 [다양한 X시리즈 사용하기](#다양한-x시리즈-사용하기)를 참고하세요.
+{: .notice}
 
 # [소프트웨어 개발환경](#소프트웨어-개발환경)
 
@@ -833,7 +833,7 @@ Dynamixel2Arduino 클래스는 Master 클래스로부터 다음의 함수를 상
 
   ![](/assets/images/parts/controller/opencm904/recovery_led.jpg)
 
-[R+ Manager 2.0: 펌웨어 복구](/docs/kr/software/rplus2/manager/#펌웨어-복구) 또는 [로보플러스 매니저 1.0: 펌웨어 복구](/docs/kr/software/rplus1/manager/#펌웨어-복구)를 참조하세요.
+**참고**: [펌웨어 복구](/docs/kr/software/rplus2/manager/#펌웨어-복구)
 {: .notice}
 
 ## [USB 드라이버 설치 하기 ](#usb-드라이버-설치-하기-)

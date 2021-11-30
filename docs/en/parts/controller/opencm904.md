@@ -527,6 +527,9 @@ Both types of 3-pin TTL pins are included in OpenCM Accessory Set.
 
 > OpenCM9.04 Type A can have 2 types of 3-pin connectors soldered onto the board
 
+**NOTE**: If DYNAMIXEL-X is used with OpenCM 9.04, JST Type connector should be soldered. For more details, see [Using DYNAMIXEL-X](#using-dynamixel-x).
+{: .notice}
+
 # [Development Environment](#development-environment)
 
 ## [Supported Software](#supported-software)
@@ -2041,7 +2044,7 @@ void testscrolltext(void) {
 
   ![](/assets/images/parts/controller/opencm904/recovery_led.jpg)
 
-Please refer to [R+Manager 2.0 Firmware Recovery](/docs/en/software/rplus2/manager/#firmware-recovery) or [R+Manager 1.0 Firmware Recovery](/docs/en/software/rplus1/manager/#firmware-recovery) sections.
+**NOTE** [R+Manager 2.0 Firmware Recovery](/docs/en/software/rplus2/manager/#firmware-recovery).
 {: .notice}
 
 ## [Windows Driver Installation](#windows-driver-installation)
