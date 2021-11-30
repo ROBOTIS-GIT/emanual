@@ -841,6 +841,8 @@ USB 포트를 통해 OpenCM9.04를 윈도우즈 환경에서 사용하려면 USB
 
 - [USB 드라이버 설치]{: .popup}
 
+<!-- 
+
 ## [다양한 X시리즈 사용하기](#다양한-x시리즈-사용하기)
 
 다이나믹셀-X 시리즈와 OpenCM 9.04 그리고 로보티즈에서 제공하는 [소프트웨어](/docs/kr/software/#로보플러스)를 사용하기위해서는, [DYNAMIXEL Channel](#dynamixel-channel-설정하기) 설정을 해주세요.
@@ -848,11 +850,13 @@ USB 포트를 통해 OpenCM9.04를 윈도우즈 환경에서 사용하려면 USB
 **참고**: [아두이노 IDE](#아두이노-ide)를 사용시, 채널 설정이 필요하지 않습니다. 
 {: .notice}
 
-**참고**: OpenCM485 확장보드를 사용하면, 24V 다이나믹셀 및 RS485 통신이 사용가능합니다.
+**참고**: OpenCM485 확장보드를 사용하면, 24V 다이나믹셀 및 RS485 통신이 사용가능합니다.  
 ![](/assets/images/sw/rplus2/manager/rplusmanager2_30_kr.jpg) 
 {: .notice}
   
-### [DYNAMIXEL Channel 설정하기](#dynamixel-channel-설정하기)
+### [DYNAMIXEL Channel 설정하기](#dynamixel-channel-설정하기) 
+
+-->
 
 {% include kr/parts/controller/opencm904_dxl_channel.md %}
 

@@ -81,7 +81,18 @@ sidebar:
 {% endcapture %}
 <div class="notice">{{ dxl_jst_molex | markdownify }}</div>
 
+<!-- 
+
 ## [다양한 X시리즈 사용하기](#다양한-x시리즈-사용하기)
+
+[DYNAMIXEL Channel](#dynamixel-channel-설정하기)을 설정하여, [다이나믹셀-X](/docs/kr/dxl/x/#x-series)를 로보티즈가 제공하는 [소프트웨어](/docs/kr/software/#로보플러스)에서 사용하실수 있습니다. 
+
+**참고**: [아두이노 IDE](#아두이노-ide)를 사용시, 채널 설정이 필요하지 않습니다. 
+{: .notice}
+
+### [DYNAMIXEL Channel 설정하기](#dynamixel-channel-설정하기) 
+
+-->
 
 {% include kr/parts/controller/opencm904_dxl_channel.md %}
 

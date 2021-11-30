@@ -26310,7 +26310,7 @@ opencm904:
       urlkr: /parts/controller/opencm904/#usb-드라이버-설치-하기-
     - title: "Using DYNAMIXEL-X"
       titlekr: "다양한 X시리즈 사용하기"
-      url: /parts/controller/opencm904/#using-more-dynamixel-x
+      url: /parts/controller/opencm904/#using-dynamixel-x
       urlkr: /parts/controller/opencm904/#다양한-x시리즈-사용하기
     - title: "Dimension"
       titlekr: "도면"
@@ -26359,7 +26359,7 @@ opencm485exp:
       titlekr: "OpenCM9.04 연결하기"
       url: /parts/controller/opencm485exp/#connecting-opencm904-to-the-expanstion-board
       urlkr: /parts/controller/opencm485exp/#opencm904-연결하기
-    - title: "Using a motion tool or motion file with OpenCM9.04 and OpenCM 485 expansion board"
+    - title: "Using DYNAMIXEL-X"
       titlekr: "다양한 X시리즈 사용하기"
       url: /parts/controller/opencm485exp/#using-dynamixel-x
       urlkr: /parts/controller/opencm485exp/#다양한-x시리즈-사용하기

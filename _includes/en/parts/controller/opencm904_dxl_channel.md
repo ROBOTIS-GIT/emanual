@@ -1,13 +1,15 @@
-<!-- 
+## [Using DYNAMIXEL-X](#using-dynamixel-x)
+
+To use ROBOTIS [software](/docs/kr/software/#roboplus-r) with DYNAMIXEL-X series, [Configuring DYNAMIXEL Channle](#configuring-dynamixel-channel) is required.
+
+**NOTE**: [Arduino IDE](#arduino-ide) does not require DYNAMIXEL Channel configuration.
+{: .notice}
+
+**NOTE**: With OpenCM485 EXP Board, DYNAMIXEL-X with 24V and RS485 Communication Port can be used.  
+![](/assets/images/sw/rplus2/manager/rplusmanager2_30_kr.jpg)  
+{: .notice}
 
 ### [Configuring DYNAMIXEL Channel](#configuring-dynamixel-channel)
-
-To use ROBOTIS [software](/docs/en/software/#roboplus-r) with DYNAMIXEL-X series on OpenCM 9.04 or OpenCM485 EXP board with OpenCM9.04, [Configuring DYNAMIXEL Channle](#configuring-dynamixel-channel) is required.
-
-### [Configuring DYNAMIXEL Channel](#configuring-dynamixel-channel)
-
--->
-
 
 1. Open R+ Manager, and select **OpenCM 9.04** in the **Home** tab.
 

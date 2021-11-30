@@ -2047,6 +2047,7 @@ Please refer to [R+Manager 2.0 Firmware Recovery](/docs/en/software/rplus2/manag
 ## [Windows Driver Installation](#windows-driver-installation)
 - See [How to install ROBOTIS virtual COM port for Windows]{: .popup} 
 
+<!-- 
 ## [Using DYNAMIXEL-X](#using-dynamixel-x)
 
 To use ROBOTIS [software](/docs/kr/software/#roboplus-r) with DYNAMIXEL-X series on OpenCM 9.04 or OpenCM485 EXP board with OpenCM9.04, [Configuring DYNAMIXEL Channle](#configuring-dynamixel-channel) is required.
@@ -2059,6 +2060,8 @@ To use ROBOTIS [software](/docs/kr/software/#roboplus-r) with DYNAMIXEL-X series
 {: .notice}
 
 ### [Configuring DYNAMIXEL Channel](#configuring-dynamixel-channel)
+
+-->
 
 {% include en/parts/controller/opencm904_dxl_channel.md %}
 

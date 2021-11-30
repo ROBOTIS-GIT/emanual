@@ -85,11 +85,15 @@ sidebar:
 {% endcapture %}
 <div class="notice">{{ dxl_jst_molex | markdownify }}</div>
 
+<!-- 
+
 ## [Using DYNAMIXEL-X](#using-dynamixel-x)
 
 To use ROBOTIS [software](/docs/kr/software/#roboplus-r) with DYNAMIXEL-X series on OpenCM 9.04 or OpenCM485 EXP board with OpenCM9.04, [Configuring DYNAMIXEL Channle](#configuring-dynamixel-channel) is required.
 
 ### [Configuring DYNAMIXEL Channel](#configuring-dynamixel-channel)
+
+ -->
 
 {% include en/parts/controller/opencm904_dxl_channel.md %}
 
