@@ -49,23 +49,23 @@ sidebar:
 
 # [Specifications](#specifications)
 
-|          Item          |           Description           |
-|:----------------------:|:-------------------------------:|
-|          CPU           |   STM32F103CB (ARM Cortex-M3)   |
-|   Operation Voltage    |            5V ~ 16V             |
-|          I/O           |            GPIO x 26            |
-|         Timer          |            4 (16bit)            |
-|   Analog Input(ADC)    |           10 (12bit)            |
-|         Flash          |              128Kb              |
-|          SRAM          |              20Kb               |
-|         Clock          |              72Mhz              |
-|          USB           | 1 (2.0 Full Speed) Micro B Type |
-|         USART          |                3                |
-|          SPI           |                2                |
-|        I2C(TWI)        |                2                |
-|         Debug          |           JTAG & SWD            |
-|   DYNAMIXEL TTL BUS    |          4 (Max 1Mbps)          |
-|       Dimensions       |          27mm x 66.5mm          |
+|       Item        |           Description           |
+|:-----------------:|:-------------------------------:|
+|        CPU        |   STM32F103CB (ARM Cortex-M3)   |
+| Operation Voltage |            5V ~ 16V             |
+|        I/O        |            GPIO x 26            |
+|       Timer       |            4 (16bit)            |
+| Analog Input(ADC) |           10 (12bit)            |
+|       Flash       |              128Kb              |
+|       SRAM        |              20Kb               |
+|       Clock       |              72Mhz              |
+|        USB        | 1 (2.0 Full Speed) Micro B Type |
+|       USART       |                3                |
+|        SPI        |                2                |
+|     I2C(TWI)      |                2                |
+|       Debug       |           JTAG & SWD            |
+| DYNAMIXEL TTL BUS |          4 (Max 1Mbps)          |
+|    Dimensions     |          27mm x 66.5mm          |
 
 {% capture opencm904_caution_01 %}
 **WARNING**
@@ -2047,45 +2047,23 @@ Please refer to [R+Manager 2.0 Firmware Recovery](/docs/en/software/rplus2/manag
 ## [Windows Driver Installation](#windows-driver-installation)
 - See [How to install ROBOTIS virtual COM port for Windows]{: .popup} 
 
-## [Using OpenCM485 EXP board with OpenCM9.04](#using-opencm485-exp-board)
+<!-- 
+## [Using DYNAMIXEL-X](#using-dynamixel-x)
 
-There are two preparations that need to be done for using the XM Series in R+Task2.0 or R+Motion2.0.  
-(Preparing the H/W / Configuring DYNAMIXEL Channel)
- 
-### Preparing the H/W
+To use ROBOTIS [software](/docs/kr/software/#roboplus-r) with DYNAMIXEL-X series on OpenCM 9.04 or OpenCM485 EXP board with OpenCM9.04, [Configuring DYNAMIXEL Channle](#configuring-dynamixel-channel) is required.
 
-1. Apart from the OpenCM9.04 and your DYNAMIXEL, the OpenCM 485 EXP board is used as shown in the figure below.
-2. Connect the three components below with cables.
+**NOTE**: [Arduino IDE](#arduino-ide) does not require DYNAMIXEL Channel configuration.
+{: .notice}
 
-![](/assets/images/sw/rplus2/manager/roboplus_manager2_29.jpg)
+**NOTE**: With OpenCM485 EXP Board, DYNAMIXEL-X with 24V and RS485 Communication Port can be used.  
+![](/assets/images/sw/rplus2/manager/rplusmanager2_30_kr.jpg)  
+{: .notice}
 
-### Configuring DYNAMIXEL Channel
+### [Configuring DYNAMIXEL Channel](#configuring-dynamixel-channel)
 
-DYNAMIXEL Channel is a firmware feature of OpenCM9.04 that controls which bus DYNAMIXEL communication is performed on. The OpenCM9.04 may communicate to the connectors on the OpenCM9.04, or send communication through the OpenCM 485 EXP board. 
+-->
 
-1. Open R+ Manager 2.0 and select DYNAMIXEL2.0 product, then click on the Update & Test menu.
-
-    ![](/assets/images/sw/rplus2/manager/roboplus_manager2_30.jpg)
- 
-2. Connect the OpenCM9.04 to the PC by using a micro-USB cable, then turn on the OpenCM 485EXP.
-3. Follow the instructions below to search the product for OpenCM9.04 (DYNAMIXEL Channel value of the OpenCM9.04 is set to "0" by default so any DYNAMIXELs connected to the OpenCM 485 EXP board will not appear yet in the search result).
-
-    ![](/assets/images/sw/rplus2/manager/roboplus_manager2_31.jpg)
- 
-4. After the software connects to the OpenCM9.04 and performs any updates, the Control Table will open.
-5. From the Control Table list, select DYNAMIXEL Channel, and choose the value "1" for "EXP Board" (OpenCM 485 Expansion Board)and click Save.
-
-    ![](/assets/images/sw/rplus2/manager/roboplus_manager2_32.jpg)
- 
-6. When the configuration is finished, close the Control Table window and restart the OpenCM 485 EXP.  
-    (As it is restarted, the TTL bus of the OpenCM9.04 is deactivated, and the TTL/RS-485 DYNAMIXEL bus of the OpenCM 485 EXP is activated.)
-7. Open the Update & Test menu again and check that the XM/XH Series is properly detected in the search result.
-
-    ![](/assets/images/sw/rplus2/manager/roboplus_manager2_33.jpg)
- 
-8. When the configuration is finished, you can now use the XM/XH Series in R+ Task 2.0 and R+ Motion 2.0.  
-    (Supported from versions R+ Task 2.0 v2.1.0, R+ Motion 2.0 v2.4.0 or later)
-
+{% include en/parts/controller/opencm904_dxl_channel.md %}
 
 ## [Dimension](#dimension)
 
