@@ -26312,6 +26312,11 @@ opencm904:
       titlekr: "다양한 X시리즈 사용하기"
       url: /parts/controller/opencm904/#using-dynamixel-x
       urlkr: /parts/controller/opencm904/#다양한-x시리즈-사용하기
+      children:
+      - title: "Configuring DYNAMIXEL Channel"
+        titlekr: "DYNAMIXEL Channel 설정하기"
+        url: /parts/controller/opencm904/#configuring-dynamixel-channel
+        urlkr: /parts/controller/opencm904/#dynamixel-channel-설정하기
     - title: "Dimension"
       titlekr: "도면"
       url: /parts/controller/opencm904/#dimension
@@ -26363,6 +26368,11 @@ opencm485exp:
       titlekr: "다양한 X시리즈 사용하기"
       url: /parts/controller/opencm485exp/#using-dynamixel-x
       urlkr: /parts/controller/opencm485exp/#다양한-x시리즈-사용하기
+      children:
+      - title: "Configuring DYNAMIXEL Channel"
+        titlekr: "DYNAMIXEL Channel 설정하기"
+        url: /parts/controller/opencm904/#configuring-dynamixel-channel
+        urlkr: /parts/controller/opencm904/#dynamixel-channel-설정하기
   - title: "Reference"
     titlekr: "참고자료"
     url: /parts/controller/opencm485exp/#reference
