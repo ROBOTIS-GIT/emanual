@@ -27587,6 +27587,10 @@ ln-101:
     titlekr: "드라이버 수동 설치"
     url: /parts/interface/ln-101/#install-driver-manually
     urlkr: /parts/interface/ln-101/#드라이버-수동-설치
+  - title: "Connector Information"
+    titlekr: "커넥터 정보"
+    url: /parts/interface/ln-101/#connector-information
+    urlkr: /parts/interface/ln-101/#커넥터-정보
   - title: "Videos"
     titlekr: "동영상"
     url: /parts/interface/ln-101/#videos
