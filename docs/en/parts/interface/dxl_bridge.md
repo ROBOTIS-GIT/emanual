@@ -17,6 +17,8 @@ sidebar:
 
 The **DYNAMIXEL Communication Bridge** works as a communication converter between TTL (3 Pin JST Type connector) and RS485 (4 Pin JST Type connector) of DYNAMIXEL.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oRbzORRpgqg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 {% capture why_bridge %}
 
 **NOTE**

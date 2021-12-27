@@ -17,6 +17,7 @@ sidebar:
 
 **다이나믹셀 커뮤니케이션 브릿지**는 RS485 통신 다이나믹셀(4 Pin, JST 타입)과 TTL 통신 다이나믹셀(3 Pin, JST 타입)의 통신을 상호 호환할 수 있도록 연결해 주는 역할을 합니다.  
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oRbzORRpgqg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 {% capture why_bridge %}
 **참고**
