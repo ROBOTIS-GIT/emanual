@@ -20,23 +20,23 @@ product_group: all-dyd
 
 ## [Specifications](#specifications)
 
-|             Properties              |    Unit     | DYD-17-051 | DYD-17-099 | Note |
-|:-----------------------------------:|:-----------:|:----------:|:----------:|:----:|
-|             Gear ratio              |      -      |     51     |     99     |  -   |
-|       Repeatable peak torque        |     Nm      |    34.0    |    54.0    |  -   |
-| Rated output torque<br>(@2,000 rpm) |     Nm      |    11.0    |    16.0    |  -   |
-|         Maximum input speed         |     rpm     |   6,000    |   6,000    |  -   |
-|         Nominal input speed         |     rpm     |   2,000    |   2,000    |  -   |
+|             Properties              |               Unit               | DYD-17-051 | DYD-17-099 | Note |
+|:-----------------------------------:|:--------------------------------:|:----------:|:----------:|:----:|
+|             Gear ratio              |                -                 |     51     |     99     |  -   |
+|       Repeatable peak torque        |                Nm                |    34.0    |    54.0    |  -   |
+| Rated output torque<br>(@2,000 rpm) |                Nm                |    11.0    |    16.0    |  -   |
+|         Maximum input speed         |               rpm                |   6,000    |   6,000    |  -   |
+|         Nominal input speed         |               rpm                |   2,000    |   2,000    |  -   |
 |         Moment of intertia          | X10<sup>-4</sup> kgm<sup>2</sup> |   0.284    |   0.322    |  -   |
-|              Backlash               |   arcmin    |    <3.0    |    <3.0    |  -   |
-|             Lost motion             |   arcmin    |    <3.0    |    <3.0    |  -   |
-|         Torsional stiffness         |  Nm/arcmin  |    2.2     |    2.2     |  -   |
-| Efficiency(@2,000 rpm, 20 &#8451;)  |      %      |     58     |     58     |  -   |
-|           Starting torque           |     cNm     |     30     |     30     |  -   |
-|          Back-Drive torque          |     Nm      |    5.0     |    5.0     |  -   |
-|            Service life             |    hours    |   5,000    |   5,000    |  -   |
-|        Dimension (O.D. X H)         |     mm      | 78 x 34.2  | 78 x 34.2  |  -   |
-|               Weight                |      g      |    600     |    600     |  -   |
+|              Backlash               |              arcmin              |    <3.0    |    <3.0    |  -   |
+|             Lost motion             |              arcmin              |    <3.0    |    <3.0    |  -   |
+|         Torsional stiffness         |            Nm/arcmin             |    2.2     |    2.2     |  -   |
+| Efficiency(@2,000 rpm, 20 &#8451;)  |                %                 |     58     |     58     |  -   |
+|           Starting torque           |               cNm                |     30     |     30     |  -   |
+|          Back-Drive torque          |                Nm                |    5.0     |    5.0     |  -   |
+|            Service life             |              hours               |   5,000    |   5,000    |  -   |
+|        Dimension (O.D. X H)         |                mm                | 78 x 34.2  | 78 x 34.2  |  -   |
+|               Weight                |                g                 |    600     |    600     |  -   |
 
 **NOTE**: The specification and figures in the list are subject to update for the continuous product performance improvement.
 {: .notice}
@@ -61,12 +61,12 @@ The efficiency of the DYD can be affected by the temperature and the input speed
 
 ## [Input shaft options](#input-shaft-options)
 
-Various input shaft options can be selected with the DYD.
+Various input shaft options can be selected with the DYD. See the following table and select the input shaft option to use with DYD. 
 
-| Option |                Type - C                |                Type - SD                 |
+| Option |                Type - C                |                Type - SD                |
 |:------:|:--------------------------------------:|:---------------------------------------:|
 | Shape  | ![](/assets/images/dyd/dyd_c_type.png) | ![](/assets/images/dyd/dyd_sd_type.png) |
-|  Name  |               Clamp-ring               |                  Set-screw (D-Cut)                  |
+|  Name  |               Clamp-ring               |            Set-screw (D-Cut)            |
 
 ## [Assembly Tolerance](#assembly-tolerance)
 
