@@ -1873,7 +1873,7 @@ void bulkWriteTxOnly1(int port_num, uint16_t param_length)
 | **[removeStuffing](#removestuffing)**                   | Removes the packet value                                                        |
 | **[txPacket2](#txpacket2)**                             | Transmits the packet                                                            |
 | **[rxPacket2](#rxpacket2)**                             | Receives the packet                                                             |
-| **[fastRxPacket2](#fastRxPacket2)**                     | Receives the packet quickly                                                     |
+| **[fastRxPacket2](#fastrxpacket2)**                     | Receives the packet quickly                                                     |
 | **[txRxPacket2](#txrxpacket2)**                         | Transmits and receives the packet                                               |
 | **[ping2](#ping2)**                                     | Ping DYNAMIXEL                                                                  |
 | **[pingGetModelNum2](#pinggetmodelnum2)**               | Ping DYNAMIXEL and get its model number                                         |

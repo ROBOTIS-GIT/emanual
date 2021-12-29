@@ -178,7 +178,7 @@ void groupFastSyncReadTxPacket(int group_num)
    This function transmits and receives the packet by using `fastSyncReadTx` quickly. The communication result and the hardware error are available when the function is terminated.
 
 
-   ##### groupFastSyncReadRxPacket
+##### groupFastSyncReadRxPacket
 - Syntax
 ``` cpp
 void groupFastSyncReadRxPacket(int group_num)
@@ -193,7 +193,7 @@ void groupFastSyncReadRxPacket(int group_num)
    This function transmits and receives the packet by using `fastSyncReadRx` function quickly. The communication result and the hardware error are available when the function is terminated.
 
 
-   ##### groupFastSyncReadTxRxPacket
+##### groupFastSyncReadTxRxPacket
 - Syntax
 ``` cpp
 void groupFastSyncReadTxRxPacket(int group_num)
