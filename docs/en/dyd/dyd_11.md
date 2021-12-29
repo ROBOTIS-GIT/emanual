@@ -61,7 +61,7 @@ The efficiency of the DYD can be affected by the temperature and the input speed
 
 ## [Input shaft options](#input-shaft-options)
 
-Various input shaft options can be selected with the DYD.
+Various input shaft options can be selected with the DYD. See the following table and select the input shaft option to use with DYD. 
 
 | Option |                Type - C                |                Type - SD                |
 |:------:|:--------------------------------------:|:---------------------------------------:|
