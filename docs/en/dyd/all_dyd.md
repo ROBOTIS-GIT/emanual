@@ -73,7 +73,7 @@ In the following image, it is shown that the rotational direction of the input m
 |       Repeatable peak torque        |   Nm   |       8.5       |      17.0       |    27.0    |    39.0    |    34.0    |    54.0    |
 | Rated output torque<br>(@2,000 rpm) |   Nm   |       2.2       |       3.5       |    5.4     |    7.8     |    16.0    |    24.0    |
 |         Maximum input speed         |  rpm   |      6,000      |      6,000      |   6,000    |   6,000    |   6,000    |   6,000    |
-|         Average input speed         |  rpm   |      2,000      |      2,000      |   2,000    |   2,000    |   2,000    |   2,000    |
+|         Nominal input speed         |  rpm   |      2,000      |      2,000      |   2,000    |   2,000    |   2,000    |   2,000    |
 |     Hysteresis loss / Backlash      | arcmin |      <3.0       |      <3.0       |    <3.0    |    <3.0    |    <3.0    |    <3.0    |
 |           Starting torque           |  cNm   |       20        |       20        |     20     |     20     |     30     |     30     |
 |            Service life             | hours  |      3,000      |      3,000      |   5,000    |   5,000    |   5,000    |   5,000    |
@@ -84,11 +84,11 @@ In the following image, it is shown that the rotational direction of the input m
 
 ![](/assets/images/dyd/dyd_parts_number_01.png)
 
-| Product name | Model Size | Ratio  |    Option     | Special production |
-|:------------:|:----------:|:------:|:-------------:|:------------------:|
-|     DYD      |     11     | 33, 51 | C,  D, SC, PG |         SP         |
-|     DYD      |     14     | 51, 99 | C,  D, SC, PG |         SP         |
-|     DYD      |     17     | 51, 99 | C,  D, SC, PG |         SP         |
+| Product name | Model Size | Ratio  | Option | Special production |
+|:------------:|:----------:|:------:|:------:|:------------------:|
+|     DYD      |     11     | 33, 51 | C, SD  |         SP         |
+|     DYD      |     14     | 51, 99 | C, SD  |         SP         |
+|     DYD      |     17     | 51, 99 | C, SD  |         SP         |
 
 # [Product Selection Guide](#product-selection-guide)
 
@@ -261,10 +261,10 @@ Starting Torque = 20 cNm (DYD-14)
 
 ### [Select the Type of Input Shaft](#select-the-type-of-input-shaft)
 
-| Option |                   Type - C                    |               Type - D                |                 Type - SC                 |
-|:------:|:---------------------------------------------:|:-------------------------------------:|:-----------------------------------------:|
-| Shape  | ![](/assets/images/dyd/dyd_clamp_ring_01.png) | ![](/assets/images/dyd/dyd_d_cut.png) | ![](/assets/images/dyd/dyd_set_screw.png) |
-|  Name  |                  Clamp-ring                   |                 D-Cut                 |                 Set-screw                 |
+| Option |                Type - C                |                Type - SD                 |
+|:------:|:--------------------------------------:|:---------------------------------------:|
+| Shape  | ![](/assets/images/dyd/dyd_c_type.png) | ![](/assets/images/dyd/dyd_sd_type.png) |
+|  Name  |               Clamp-ring               |                  Set-screw (D-Cut)        
 
 # [Glossary](#glossary)
 
