@@ -27698,14 +27698,10 @@ dyd-11:
     titlekr: "기구도면"
     url: /all-dyd/dyd-11/#drawings
     urlkr: /all-dyd/dyd-11/#기구도면
-  - title: "Compatibility and Options"
-    titlekr: "호환성 및 옵션"
-    url: /all-dyd/dyd-11/#compatibility-and-options
-    urlkr: /all-dyd/dyd-11/#호환성-및-옵션
-  - title: "Assembly"
-    titlekr: "조립 예시"
-    url: /all-dyd/dyd-11/#assembly
-    urlkr: /all-dyd/dyd-11/#조립-예시
+  - title: "Options & Assembly Tolerance"
+    titlekr: "옵션 및 조립공차"
+    url: /all-dyd/dyd-11/#options--assembly-tolerance
+    urlkr: /all-dyd/dyd-11/#옵션-및-조립공차
 
 dyd-14:
   - title: "Overview"
@@ -27716,15 +27712,11 @@ dyd-14:
     titlekr: "기구도면"
     url: /all-dyd/dyd-14/#drawings
     urlkr: /all-dyd/dyd-14/#기구도면
-  - title: "Compatibility and Options"
-    titlekr: "호환성 및 옵션"
-    url: /all-dyd/dyd-14/#compatibility-and-options
-    urlkr: /all-dyd/dyd-14/#호환성-및-옵션
-  - title: "Assembly"
-    titlekr: "조립 예시"
-    url: /all-dyd/dyd-14/#assembly
-    urlkr: /all-dyd/dyd-14/#조립-예시
-
+  - title: "Options & Assembly Tolerance"
+    titlekr: "옵션 및 조립공차"
+    url: /all-dyd/dyd-14/#options--assembly-tolerance
+    urlkr: /all-dyd/dyd-14/#옵션-및-조립공차
+    
 dyd-17:
   - title: "Overview"
     titlekr: "개요"
@@ -27734,14 +27726,10 @@ dyd-17:
     titlekr: "기구도면"
     url: /all-dyd/dyd-17/#drawings
     urlkr: /all-dyd/dyd-17/#기구도면
-  - title: "Compatibility and Options"
-    titlekr: "호환성 및 옵션"
-    url: /all-dyd/dyd-17/#compatibility-and-options
-    urlkr: /all-dyd/dyd-17/#호환성-및-옵션
-  - title: "Assembly"
-    titlekr: "조립예시"
-    url: /all-dyd/dyd-17/#assembly
-    urlkr: /all-dyd/dyd-17/#조립-예시
+  - title: "Options & Assembly Tolerance"
+    titlekr: "옵션 및 조립공차"
+    url: /all-dyd/dyd-17/#options--assembly-tolerance
+    urlkr: /all-dyd/dyd-17/#옵션-및-조립공차
 
 #FAQ sidebar
 general:

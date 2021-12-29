@@ -26,8 +26,8 @@ product_group: all-dyd
 |       Repeatable peak torque        |     Nm      |    34.0    |    54.0    |  -   |
 | Rated output torque<br>(@2,000 rpm) |     Nm      |    11.0    |    16.0    |  -   |
 |         Maximum input speed         |     rpm     |   6,000    |   6,000    |  -   |
-|         Average input speed         |     rpm     |   2,000    |   2,000    |  -   |
-|         Moment of intertia          | X10-4 kgm^2 |   0.284    |   0.322    |  -   |
+|         Nominal input speed         |     rpm     |   2,000    |   2,000    |  -   |
+|         Moment of intertia          | X10<sup>-4</sup> kgm<sup>2</sup> |   0.284    |   0.322    |  -   |
 |              Backlash               |   arcmin    |    <3.0    |    <3.0    |  -   |
 |             Lost motion             |   arcmin    |    <3.0    |    <3.0    |  -   |
 |         Torsional stiffness         |  Nm/arcmin  |    2.2     |    2.2     |  -   |
@@ -57,43 +57,16 @@ The efficiency of the DYD can be affected by the temperature and the input speed
 
 > Drawings for DYD-17 
 
-# [Compatibility and Options](#compatibility-and-options)
-
-## [Higher ratio reduction(additional planetary gear, PG option)](#higher-ratio-reductionadditional-planetary-gear-pg-option)
-
-Additional planetary gears(PG) with various reduction ratio can be attached in order to use higher speed motors.
-
-![](/assets/images/dyd/dyd_17_pg_option_01.png)
-
-> PG Option
-
-|  DYD gear ratio  | 51  |  -  |  -  |  -  | 99  |  -  |  -  |  -  |
-|:----------------:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|  PG gear ratio   |  3  |  4  |  5  |  7  |  3  |  4  |  5  |  7  |
-| Total gear ratio | 153 | 204 | 255 | 357 | 297 | 396 | 495 | 693 |
+# [Options & Assembly Tolerance](#options--assembly-tolerance)
 
 ## [Input shaft options](#input-shaft-options)
 
 Various input shaft options can be selected with the DYD.
 
-| Option |                   Type - C                    |               Type - D                |                 Type - SC                 |
-|:------:|:---------------------------------------------:|:-------------------------------------:|:-----------------------------------------:|
-| Shape  | ![](/assets/images/dyd/dyd_clamp_ring_01.png) | ![](/assets/images/dyd/dyd_d_cut.png) | ![](/assets/images/dyd/dyd_set_screw.png) |
-|  Name  |                  Clamp-ring                   |                 D-Cut                 |                 Set-screw                 |
-
-{% capture dyd_input_shaft_reference %}
-
-**NOTE**: Refer to the input shaft option type provided with the each DYD.
-
-| DYD-11  |  DYD-14  |  DYD-17  |
-|:-------:|:--------:|:--------:|
-| Type-SC | Type - C | Type - C |
-
-{% endcapture %}
-
-<div class="notice">{{ dyd_input_shaft_reference | markdownify }}</div>
-
-# [Assembly](#assembly)
+| Option |                Type - C                |                Type - SD                 |
+|:------:|:--------------------------------------:|:---------------------------------------:|
+| Shape  | ![](/assets/images/dyd/dyd_c_type.png) | ![](/assets/images/dyd/dyd_sd_type.png) |
+|  Name  |               Clamp-ring               |                  Set-screw (D-Cut)                  |
 
 ## [Assembly Tolerance](#assembly-tolerance)
 
@@ -102,11 +75,3 @@ See the dimension and the geometric tolerances of the input, output and the hous
 ![](/assets/images/dyd/dyd_17_assembly_tollerance_01.png){: width="700px"}
 
 > Assembly Tolerance
-
-## [Assembly example of PG option](#assembly-example-of-pg-option)
-
-The PG option that provides high ratio reduction, requires a bracket to attach the motor to the apparatus. The bracket for a motor is not provided.
-
-![](/assets/images/dyd/dyd_17_pg_option_assembly_01.png)
-
-> Assembly Example for PG option
