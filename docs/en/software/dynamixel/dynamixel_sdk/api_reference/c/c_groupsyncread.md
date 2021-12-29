@@ -30,17 +30,20 @@ sidebar:
 
   None
 
-| Methods                                                   | Description                                                |
-|:----------------------------------------------------------|:-----------------------------------------------------------|
-| **[groupSyncRead](#groupsyncread)**                       | Initializes members of packet data pointer struct          |
-| **[groupSyncReadAddParam](#groupsyncreadaddparam)**       | Adds parameter storage for read                            |
-| **[groupSyncReadRemoveParam](#groupsyncreadremoveparam)** | Removes parameter on the storage                           |
-| **[groupSyncReadClearParam](#groupsyncreadclearparam)**   | Clears parameter storage                                   |
-| **[groupSyncReadTxPacket](#groupsyncreadtxpacket)**       | Transmits packet to the number of DYNAMIXEL's               |
-| **[groupSyncReadRxPacket](#groupsyncreadrxpacket)**       | receives packet from the number of DYNAMIXEL's              |
-| **[groupSyncReadTxRxPacket](#groupsyncreadtxrxpacket)**   | Transmits and receives packet on the number of DYNAMIXEL's  |
-| **[groupSyncReadIsAvailable](#groupsyncreadisavailable)** | Checks whether there is available data in the data storage |
-| **[groupSyncReadGetData](#groupsyncreadgetdata)**         | Gets data from received packet                             |
+| Methods                                                         | Description                                                        |
+|:----------------------------------------------------------------|:-------------------------------------------------------------------|
+| **[groupSyncRead](#groupsyncread)**                             | Initializes members of packet data pointer struct                  |
+| **[groupSyncReadAddParam](#groupsyncreadaddparam)**             | Adds parameter storage for read                                    |
+| **[groupSyncReadRemoveParam](#groupsyncreadremoveparam)**       | Removes parameter on the storage                                   |
+| **[groupSyncReadClearParam](#groupsyncreadclearparam)**         | Clears parameter storage                                           |
+| **[groupSyncReadTxPacket](#groupsyncreadtxpacket)**             | Transmits packet to the number of DYNAMIXEL's                      |
+| **[groupSyncReadRxPacket](#groupsyncreadrxpacket)**             | receives packet from the number of DYNAMIXEL's                     |
+| **[groupSyncReadTxRxPacket](#groupsyncreadtxrxpacket)**         | Transmits and receives packet on the number of DYNAMIXEL's         |
+| **[groupFastSyncReadTxPacket](#groupfastsyncreadtxpacket)**     | Transmits packet to the number of DYNAMIXEL's quickly              |
+| **[groupFastSyncReadRxPacket](#groupfastsyncreadrxpacket)**     | Receives packet from the number of DYNAMIXEL's quickly             |
+| **[groupFastSyncReadTxRxPacket](#groupfastsyncreadtxrxpacket)** | Transmits and receives packet on the number of DYNAMIXEL's quickly |
+| **[groupSyncReadIsAvailable](#groupsyncreadisavailable)**       | Checks whether there is available data in the data storage         |
+| **[groupSyncReadGetData](#groupsyncreadgetdata)**               | Gets data from received packet                                     |
 
 
 - Enumerator
@@ -52,7 +55,7 @@ sidebar:
 ##### groupSyncRead
 - Syntax
 ``` cpp
-uint8_t groupSyncRead(int port_num, int protocol_version, uint16_t start_address, uint16_t data_length)
+int groupSyncRead(int port_num, int protocol_version, uint16_t start_address, uint16_t data_length)
 ```
 
 | Parameters       | Description                                 |
@@ -118,7 +121,7 @@ void groupSyncReadClearParam(int group_num)
 ##### groupSyncReadTxPacket
 - Syntax
 ``` cpp
-int groupSyncReadTxPacket(int group_num)
+void groupSyncReadTxPacket(int group_num)
 ```
 
 | Parameters | Description  |
@@ -133,7 +136,7 @@ int groupSyncReadTxPacket(int group_num)
 ##### groupSyncReadRxPacket
 - Syntax
 ``` cpp
-int groupSyncReadRxPacket(int group_num)
+void groupSyncReadRxPacket(int group_num)
 ```
 
 | Parameters | Description  |
@@ -148,7 +151,7 @@ int groupSyncReadRxPacket(int group_num)
 ##### groupSyncReadTxRxPacket
 - Syntax
 ``` cpp
-int groupSyncReadTxRxPacket(int group_num)
+void groupSyncReadTxRxPacket(int group_num)
 ```
 
 | Parameters | Description  |
@@ -157,12 +160,58 @@ int groupSyncReadTxRxPacket(int group_num)
 
 - Detailed Description
 
-   This function transmits and receives the packet by using `TxPacket` function and `RxPacket` function. The communication result and the hardware error are available when the function is terminated.
+   This function transmits and receives the packet by using `SyncReadTx` function and `ReadRx` function. The communication result and the hardware error are available when the function is terminated.
+
+
+##### groupFastSyncReadTxPacket
+- Syntax
+``` cpp
+void groupFastSyncReadTxPacket(int group_num)
+```
+
+| Parameters | Description  |
+|:-----------|:-------------|
+| group_num  | Group number |
+
+- Detailed Description
+
+   This function transmits and receives the packet by using `fastSyncReadTx` quickly. The communication result and the hardware error are available when the function is terminated.
+
+
+##### groupFastSyncReadRxPacket
+- Syntax
+``` cpp
+void groupFastSyncReadRxPacket(int group_num)
+```
+
+| Parameters | Description  |
+|:-----------|:-------------|
+| group_num  | Group number |
+
+- Detailed Description
+
+   This function transmits and receives the packet by using `fastSyncReadRx` function quickly. The communication result and the hardware error are available when the function is terminated.
+
+
+##### groupFastSyncReadTxRxPacket
+- Syntax
+``` cpp
+void groupFastSyncReadTxRxPacket(int group_num)
+```
+
+| Parameters | Description  |
+|:-----------|:-------------|
+| group_num  | Group number |
+
+- Detailed Description
+
+   This function transmits and receives the packet by using `fastSyncReadTx` function and `fastSyncReadRx` function quickly. The communication result and the hardware error are available when the function is terminated.
+
 
 ##### groupSyncReadIsAvailable
 - Syntax
 ``` cpp
-bool groupSyncReadIsAvailable(int group_num, uint8_t id, uint16_t address, uint16_t data_length)
+uint8_t groupSyncReadIsAvailable(int group_num, uint8_t id, uint16_t address, uint16_t data_length)
 ```
 
 | Parameters | Description                               |
