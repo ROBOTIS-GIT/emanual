@@ -1,3 +1,10 @@
+
+{% if page.permalink == '/' %}
+  {% include analytics-providers/google-ga4.html %}
+{% elsif page.permalink == '/docs/kr/' %}
+  {% include analytics-providers/google-ga4_kr.html %}
+{% endif %}
+
 <meta charset="utf-8">
 
 {% include seo.html %}
