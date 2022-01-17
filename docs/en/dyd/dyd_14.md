@@ -20,23 +20,23 @@ product_group: all-dyd
 
 ## [Specifications](#specifications)
 
-|             Properties             |    Unit     | DYD-14-051 | DYD-14-099 | Note |
-|:----------------------------------:|:-----------:|:----------:|:----------:|:----:|
-|             Gear ratio             |      -      |     51     |     99     |  -   |
-|       Repeatable peak torque       |     Nm      |    27.0    |    39.0    |  -   |
-| Rated output torque<br>(@2,000 rpm) |     Nm      |    3.7     |    5.4     |  -   |
-|        Maximum input speed         |     rpm     |   6,000    |   6,000    |  -   |
-|        Nominal input speed         |     rpm     |   2,000    |   2,000    |  -   |
-|         Moment of intertia         | X10<sup>-4</sup> kgm<sup>2</sup> |   0.119    |   0.135    |  -   |
-|       Backlash     |   arcmin    |    <3.0    |    <3.0    |  -   |
-|            Lost motion             |   arcmin    |    <3.0    |    <3.0    |  -   |
-|        Torsional stiffness         |  Nm/arcmin  |    2.0     |    2.0     |  -   |
-| Efficiency(@2,000 rpm, 20 &#8451;) |      %      |     55     |     55     |  -   |
-|          Starting torque           |     cNm     |     20     |     20     |  -   |
-|         Back-Drive torque          |     Nm      |    3.0     |    3.0     |  -   |
-|            Service life            |    hours    |   7,000    |   7,000    |  -   |
-|        Dimension (O.D. X H)        |     mm      |  68 x 30   |  68 x 30   |  -   |
-|               Weight               |      g      |    400     |    400     |  -   |
+|             Properties              |               Unit               | DYD-14-051 | DYD-14-099 | Note |
+|:-----------------------------------:|:--------------------------------:|:----------:|:----------:|:----:|
+|             Gear ratio              |                -                 |     51     |     99     |  -   |
+|       Repeatable peak torque        |                Nm                |     24     |     35     |  -   |
+| Rated output torque<br>(@2,000 rpm) |                Nm                |    3.7     |    5.4     |  -   |
+|         Maximum input speed         |               rpm                |   6,000    |   6,000    |  -   |
+|         Nominal input speed         |               rpm                |   2,000    |   2,000    |  -   |
+|         Moment of intertia          | X10<sup>-4</sup> kgm<sup>2</sup> |   0.119    |   0.135    |  -   |
+|              Backlash               |              arcmin              |    <3.0    |    <3.0    |  -   |
+|             Lost motion             |              arcmin              |    <3.0    |    <3.0    |  -   |
+|         Torsional stiffness         |            Nm/arcmin             |    2.0     |    2.0     |  -   |
+| Efficiency(@2,000 rpm, 20 &#8451;)  |                %                 |     55     |     55     |  -   |
+|           Starting torque           |               cNm                |     20     |     20     |  -   |
+|          Back-Drive torque          |                Nm                |    3.0     |    3.0     |  -   |
+|            Service life             |              hours               |   7,000    |   7,000    |  -   |
+|        Dimension (O.D. X H)         |                mm                |  68 x 30   |  68 x 30   |  -   |
+|               Weight                |                g                 |    400     |    400     |  -   |
 
 **NOTE**: The specification and figures in the list are subject to update for the continuous product performance improvement.
 {: .notice}
