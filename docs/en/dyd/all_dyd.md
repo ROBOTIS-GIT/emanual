@@ -70,7 +70,7 @@ In the following image, it is shown that the rotational direction of the input m
 |             Properties              |  Unit  |   DYD-11-033    |   DYD-11-051    | DYD-14-051 | DYD-14-099 | DYD-17-051 | DYD-17-099 |
 |:-----------------------------------:|:------:|:---------------:|:---------------:|:----------:|:----------:|:----------:|:----------:|
 |             Gear ratio              |   -    |       33        |       51        |     51     |     99     |     51     |     99     |
-|       Repeatable peak torque        |   Nm   |       8.5       |      17.0       |    27.0    |    39.0    |    34.0    |    54.0    |
+|       Repeatable peak torque        |   Nm   |       8.5       |      17.0       |     24     |     35     |     55     |     80     |
 | Rated output torque<br>(@2,000 rpm) |   Nm   |       2.2       |       3.5       |    5.4     |    7.8     |    16.0    |    24.0    |
 |         Maximum input speed         |  rpm   |      6,000      |      6,000      |   6,000    |   6,000    |   6,000    |   6,000    |
 |         Nominal input speed         |  rpm   |      2,000      |      2,000      |   2,000    |   2,000    |   2,000    |   2,000    |
@@ -185,7 +185,7 @@ The required service life for a given speed and load values can be calculated as
 |             Properties              |  Unit  | DYD-14-051 |
 |:-----------------------------------:|:------:|:----------:|
 |             Gear ratio              |   -    |     51     |
-|       Repeatable peak torque        |   Nm   |    27.0    |
+|       Repeatable peak torque        |   Nm   |    24    |
 | Rated output torque<br>(@2,000 rpm) |   Nm   |    5.4     |
 |         Maximum input speed         |  rpm   |   6,000    |
 |         Average input speed         |  rpm   |   2,000    |
@@ -220,7 +220,7 @@ Required service life : 5,000 hours > Expected service life : 4,880 hours
 |             Properties              | DYD-14-099 |
 |:-----------------------------------:|:----------:|
 |             Gear ratio              |     99     |
-|       Repeatable peak torque        |    39.0    |
+|       Repeatable peak torque        |     35     |
 | Rated output torque<br>(@2,000 rpm) |    7.8     |
 |         Maximum input speed         |   6,000    |
 |         Average input speed         |   2,000    |
@@ -251,7 +251,7 @@ Output Speed i=-(1/R)*V_in = -(1/99)*3,000=30.3 rpm
 
 ### [Calculate the Peak Torque](#calculate-the-peak-torque)
 
-Maximum torque within the duty cycle = 7.5 Nm < 39 Nm (Repeatable peak torque)
+Maximum torque within the duty cycle = 7.5 Nm < 35 Nm (Repeatable peak torque)
 
 ### [Check the Starting Torque](#check-the-starting-torque)
 
