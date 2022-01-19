@@ -892,33 +892,33 @@ all-controller:
     url: /parts/all-controller/#for-platform
     urlkr: /parts/all-controller/#플랫폼
   - title: "For ROBOTIS ENGINEER"
-    titlekr: "로보티즈 엔지니어 전용"
+    titlekr: "STEAMCUP ENGINEER 전용"
     url: /parts/all-controller/#for-robotis-engineer
-    urlkr: /parts/all-controller/#로보티즈-엔지니어-전용
+    urlkr: /parts/all-controller/#steamcup-engineer-전용
   - title: "For ROBOTIS MINI"
-    titlekr: "로보티즈 미니 전용"
+    titlekr: "STEAMCUP MINI 전용"
     url: /parts/all-controller/#for-robotis-mini
-    urlkr: /parts/all-controller/#로보티즈-미니-전용
+    urlkr: /parts/all-controller/#steamcup-mini-전용
   - title: "For ROBOTIS BIOLOID"
-    titlekr: "로보티즈 바이올로이드 전용"
+    titlekr: "바이올로이드 전용"
     url: /parts/all-controller/#for-robotis-engineer
     urlkr: /parts/all-controller/#로보티즈-바이올로이드-전용
   - title: "For Play 600 & 700"
-    titlekr: "로보티즈 플레이 600 & 700 전용"
+    titlekr: "STEAMCUP PLAY 600 & 700 전용"
     url: /parts/all-controller/#for-robotis-play-600--700
-    urlkr: /parts/all-controller/#로보티즈-플레이-600--700-전용
+    urlkr: /parts/all-controller/#steamcup-play-600--700-전용용
   - title: "For OLLO"
-    titlekr: "로보티즈 올로 전용"
+    titlekr: "올로 전용"
     url: /parts/all-controller/#for-robotis-ollo
     urlkr: /parts/all-controller/#로보티즈-올로-전용
   - title: "For ROBOTIS DREAM I & II"
-    titlekr: "로보티즈 드림 I & II 전용"
+    titlekr: "ROBOTIS DREAM I & STEAMCUP DREAM II 전용"
     url: /parts/all-controller/#for-robotis-dream-i--ii
-    urlkr: /parts/all-controller/#로보티즈-드림-i--ii-전용
+    urlkr: /parts/all-controller/#robotis-dream-i-steamcup-dream-ii-전용
   - title: "For ROBOTIS Smart I & II & III"
-    titlekr: "로보티즈 Smart I & II & III 전용"
+    titlekr: "ROBOTIS SMART I & II & STEAMCUP SMART III 전용"
     url: /parts/all-controller/#for-robotis-smart-i--ii--iii
-    urlkr: /parts/all-controller/#로보티즈-스마트-i--ii--iii-전용
+    urlkr: /parts/all-controller/#robotis-smart-i--ii-steamcup-smart-iii-전용
 
 all-interface:
   - title: "Communication Interfaces"
@@ -17872,37 +17872,37 @@ all-edu:
     url: /edu/#ollo
     urlkr: /edu/#로보티즈-올로
   - title: "DREAM"
-    titlekr: "로보티즈 드림 I"
+    titlekr: "ROBOTIS DREAM I"
     url: /edu/#robotis-dream
-    urlkr: /edu/#로보티즈-드림-i
+    urlkr: /edu/#robotis-dream-i
   - title: "ROBOTIS DREAM II"
-    titlekr: "로보티즈 드림 II"
+    titlekr: "STEAMCUP DREAM II"
     url: /edu/#robotis-dream-ii
-    urlkr: /edu/#로보티즈-드림-ii
-  - titlekr: "로보티즈 스마트 I"
-    urlkr: /edu/#로보티즈-스마트-i
-  - titlekr: "로보티즈 스마트 II"
-    urlkr: /edu/#로보티즈-스마트-ii
-  - titlekr: "로보티즈 스마트 III"
-    urlkr: /edu/#로보티즈-스마트-iii
-  - titlekr: "로보티즈 IoT"
-    urlkr: /edu/#로보티즈-iot
-  - titlekr : "로보티즈 실과로봇"
-    urlkr: /edu/#로보티즈-실과로봇
+    urlkr: /edu/#steamcup-dream-ii
+  - titlekr: "ROBOTIS SMART I"
+    urlkr: /edu/#robotis-smart-i
+  - titlekr: "ROBOTIS SMART II"
+    urlkr: /edu/#robotis-smart-ii
+  - titlekr: "STEAMCUP SMART III"
+    urlkr: /edu/#steamcup-smart-iii
+  - titlekr: "ROBOTIS IoT"
+    urlkr: /edu/#robotis-iot
+  - titlekr : "STEAMCUP 실과로봇"
+    urlkr: /edu/#steamcup-실과로봇
   - titlekr: "로보티즈 자동차 로봇"
     urlkr: /edu/#로보티즈-자동차-로봇
   - title: "ROBOTIS BIOLOID"
-    titlekr: "로보티즈 바이올로이드"
+    titlekr: "바이올로이드"
     url: /edu/#robotis-bioloid
-    urlkr: /edu/#로보티즈-바이올로이드
+    urlkr: /edu/#바이올로이드
   - title: "ROBOTIS ENGINEER"
-    titlekr: "로보티즈 엔지니어"
+    titlekr: "STEAMCUP 엔지니어"
     url: /edu/#robotis-engineer
     urlkr: /edu/#로보티즈-엔지니어
   - title: "ROBOTIS MINI"
-    titlekr: "로보티즈 미니"
+    titlekr: "STEAMCUP MINI"
     url: /edu/#mini
-    urlkr: /edu/#로보티즈-미니
+    urlkr: /edu/#steamcup-mini
 
 #PLAY 300 sidebar
 play-300:
