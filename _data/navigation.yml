@@ -354,8 +354,8 @@ main:
           url: /edu/play/play-600/
         - title: "PLAY 700"
           url: /edu/play/play-700/
-    - title: "DREAM II"
-      titlekr: "드림 II"
+    - title: "ROBOTIS DREAM II"
+      titlekr: "STEAMCUP DREAM II"
       children:
       - title: "LEVEL 1"
         titlekr: "1단계"
@@ -374,7 +374,7 @@ main:
         url: /edu/dream/dream2-5/
       - title: "School Set"
         url: /edu/dream/dream2-schoolset/
-    - titlekr: "스마트 III"
+    - titlekr: "STEAMCUP SMART III"
       children:
       - titlekr: "1단계"
         url: /edu/smart/smart3-1/
@@ -393,17 +393,17 @@ main:
     - titlekr: "실과 로봇"
       url: /edu/info/
     - title: "ROBOTIS BIOLOID"
-      titlekr: "로보티즈 바이올로이드"
+      titlekr: "바이올로이드"
       url: /edu/bioloid/
       children:
       - title: "ROBOTIS STEM"
-        titlekr: "STEM 키트"
+        titlekr: "STEAMCUP STEM 키트"
         url: /edu/bioloid/stem/
       - title: "ROBOTIS PREMIUM"
-        titlekr: "프리미엄"
+        titlekr: "STEAMCUP PREMIUM"
         url: /edu/bioloid/premium/
       - title: "ROBOTIS GP"
-        titlekr: "ROBOTIS GP"
+        titlekr: "STEAMCUP GP"
         url: /edu/bioloid/gp/
       - title: "*Beginner Level"
         titlekr: "*초급"
@@ -412,7 +412,7 @@ main:
         titlekr: "*종합"
         url: /edu/bioloid/comprehensive/
     - title: "ROBOTIS ENGINEER"
-      titlekr: "로보티즈 엔지니어"
+      titlekr: "STEAMCUP ENGINEER"
       children:
       - title: "Kit 1"
         titlekr: "키트 1"
@@ -421,7 +421,7 @@ main:
         titlekr: "키트 2"
         url: /edu/engineer/kit2_introduction/
     - title: "ROBOTIS MINI"
-      titlekr: "로보티즈 미니"
+      titlekr: "STEAMCUP MINI"
       url: /edu/mini/
     - titlekr: "*자동차 로봇"
       url: /edu/car/
@@ -440,7 +440,7 @@ main:
       - titlekr: "*4단계"
       url: /edu/ollo/ollo-4/
     - title: "*DREAM"
-      titlekr: "*드림 I"
+      titlekr: "*ROBOTIS DREAM I"
       children:
       - titlekr: "*1단계"
         url: /edu/dream/dream1-1/
@@ -457,7 +457,7 @@ main:
         url: /edu/dream/dream-a/
       - title: "*SET B"
         url: /edu/dream/dream-b/
-    - titlekr: "*스마트 I"
+    - titlekr: "*ROBOTIS SMART I"
       children:
       - titlekr: "*1단계"
         url: /edu/smart/smart1-1/
@@ -465,7 +465,7 @@ main:
         url: /edu/smart/smart1-2/
       - titlekr: "*3단계"
         url: /edu/smart/smart1-3/
-    - titlekr: "*스마트 II"
+    - titlekr: "*ROBOTIS SMART II"
       children:
       - titlekr: "*1단계"
         url: /edu/smart/smart2-1/
@@ -498,7 +498,7 @@ main:
       - titlekr: "R+ IoT"
         url: /software/mobile_app/rplusiot/
       - title: "ROBOTIS MINI"
-        titlekr: "로보티즈 미니"
+        titlekr: "ROBOTIS MINI"
         url: /software/mobile_app/mini_app/
       - title: "R+ Block"
         titlekr: "R+ Block"
@@ -18119,13 +18119,13 @@ ollo-4:
 
 dream:
 - title: "DREAM"
-  titlekr: "로보티즈 드림"
+  titlekr: "ROBOTIS DREAM"
   url: /edu/dream/#dream
-  urlkr: /edu/dream/#로보티즈-드림
+  urlkr: /edu/dream/#robotis-dream
 - title: "DREAM II"
-  titlekr: "로보티즈 드림 II"
+  titlekr: "STEAMCUP DREAM II"
   url: /edu/dream/#dream-ii
-  urlkr: /edu/dream/#로보티즈-드림-ii
+  urlkr: /edu/dream/#steamcup-dream-ii
 
 #DreamI Level1 sidebar
 dream1-1:
@@ -19459,21 +19459,21 @@ mini:
       urlkr: /edu/mini/#준비하기
       children:
       - title: "ROBOTIS MINI App"
-        titlekr: "로보티즈 미니 앱"
+        titlekr: "ROBOTIS MINI 앱"
         url: /edu/mini/#robotis-mini-app
-        urlkr: /edu/mini/#로보티즈-미니-앱
+        urlkr: /edu/mini/#robotis-mini-앱
       - title: "Connect to MINI"
-        titlekr: "로보티즈 미니 연결하기"
+        titlekr: "STEAMCUP MINI 연결하기"
         url: /edu/mini/#connect-to-mini
-        urlkr: /edu/mini/#로보티즈-미니-연결하기
+        urlkr: /edu/mini/#steamcup-mini-연결하기
       - title: "Check Connection"
         titlekr: "연결 포트번호 확인하기"
         url: /edu/mini/#check-connection
         urlkr: /edu/mini/#연결-포트번호-확인하기
   - title: "Operating MINI"
-    titlekr: "로보티즈 미니 작동하기"
+    titlekr: "STEAMCUP MINI 작동하기"
     url: /edu/mini/#operating-mini
-    urlkr: /edu/mini/#로보티즈-미니-작동하기
+    urlkr: /edu/mini/#steamcup-mini-작동하기
     children:
     - title: "App Install"
       titlekr: "미니 앱 설치"
@@ -19492,22 +19492,22 @@ mini:
       url: /edu/mini/#programming
       urlkr: /edu/mini/#로봇-프로그래밍
   - title: "Customize"
-    titlekr: "나만의 로보티즈 미니 꾸미기"
+    titlekr: "나만의 STEAMCUP MINI 꾸미기"
     url: /edu/mini/#customize
-    urlkr: /edu/mini/#나만의-로보티즈-미니-꾸미기
+    urlkr: /edu/mini/#나만의-steamcup-mini-꾸미기
   - title: "Download"
     titlekr: "다운로드"
     url: /edu/mini/#download
     urlkr: /edu/mini/#다운로드
   - title: "References"
-    titlekr: "로보티즈 미니 관리하기"
+    titlekr: "STEAMCUP MINI 관리하기"
     url: /edu/mini/#references
-    urlkr: /edu/mini/#로보티즈-미니-관리하기
+    urlkr: /edu/mini/#steamcup-mini-관리하기
     children:
     - title: "Firmware Update"
       titlekr: "펌웨어 업데이트"
       url: /edu/mini/#firmware-update
-      urlkr: /edu/mini/#로보티즈-미니-제어기-펌웨어-업데이트
+      urlkr: /edu/mini/#steamcup-mini-제어기-펌웨어-업데이트
     - title: "ID Map"
       titlekr: "ID Map"
       url: /edu/mini/#id-map
@@ -23960,20 +23960,20 @@ rplusiot:
 
 mini_app:
   - title: "ROBOTIS MINI APP"
-    titlekr: "로보티즈 미니 앱"
+    titlekr: "STEAMCUP MINI 앱"
     url: /software/mobile_app/mini_app/#robotis-mini-app
-    urlkr: /software/mobile_app/mini_app/#로보티즈-미니-작동하기
+    urlkr: /software/mobile_app/mini_app/#steamcup-mini-작동하기
     children:
     - title: "App Install"
-      titlekr: "미니 앱 설치"
+      titlekr: "MINI 앱 설치"
       url: /software/mobile_app/mini_app/#app-install
       urlkr: /software/mobile_app/mini_app/#미니-앱-설치
     - title: "App Usage"
-      titlekr: "미니 앱 사용하기"
+      titlekr: "MINI 앱 사용하기"
       url: /software/mobile_app/mini_app/#app-usage
       urlkr: /software/mobile_app/mini_app/#미니-앱-사용하기
     - title: "App Setting"
-      titlekr: "미니 앱 설정"
+      titlekr: "MINI 앱 설정"
       url: /software/mobile_app/mini_app/#app-setting
       urlkr: /software/mobile_app/mini_app/#미니-앱-설정
 
