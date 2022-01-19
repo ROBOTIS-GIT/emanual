@@ -6,7 +6,7 @@ common_x_specs:
   resolution:         &resolution     "4096 [pulse/rev]"
   backlash_x:         &backlash_x     "15 [arcmin] (0.25 [&deg;])"
   mode:               &mode           "전류 제어 모드<br />속도 제어 모드<br />위치 제어 모드 (0 ~ 360 [&deg;])<br />확장 위치 제어 모드 (멀티턴)<br />전류기반 위치 제어 모드<br />PWM 제어 모드 (Voltage Control Mode)"
-  mode_en:            &mode_en        "Current Control Mode<br />Velcoity Control Mode<br />Position Control Mode (0 ~ 360 [&deg;])<br />Extended Position Control Mode (Multi-turn)<br />Current-based Position Control Mode<br />PWM Control Mode (Voltage Control Mode)"
+  mode_en:            &mode_en        "Current Control Mode<br />Velocity Control Mode<br />Position Control Mode (0 ~ 360 [&deg;])<br />Extended Position Control Mode (Multi-turn)<br />Current-based Position Control Mode<br />PWM Control Mode (Voltage Control Mode)"
   motor:              &motor          "Coreless(Maxon)"
   motor_coreless_dc:  &motor_coreless_dc "Coreless DC"
   weight_xl330:       &weight_xl330   "18 [g]"
@@ -355,7 +355,7 @@ xl430-w250:
   resolution:         *resolution
   backlash:           "N/A"
   mode:               "속도 제어 모드<br />위치 제어 모드 (0 ~ 360 [&deg;])<br />확장 위치 제어 모드 (멀티턴)<br />PWM 제어 모드 (Voltage Control Mode)"
-  mode_en:            "Velcoity Control Mode<br />Position Control Mode (0 ~ 360 [&deg;])<br />Extended Position Control Mode (Multi-turn)<br />PWM Control Mode (Voltage Control Mode)"
+  mode_en:            "Velocity Control Mode<br />Position Control Mode (0 ~ 360 [&deg;])<br />Extended Position Control Mode (Multi-turn)<br />PWM Control Mode (Voltage Control Mode)"
   weight:             "57.2 [g]"
   dimensions:         "28.5 x 46.5 x 34 [mm]"
   gearratio:          "258.5 : 1"
@@ -385,7 +385,7 @@ xl430-w250:
   resolution:         *resolution
   backlash:           "N/A"
   mode:               "속도 제어 모드<br />위치 제어 모드 (0 ~ 360 [&deg;])<br />확장 위치 제어 모드 (멀티턴)<br />PWM 제어 모드 (Voltage Control Mode)"
-  mode_en:            "Velcoity Control Mode<br />Position Control Mode (0 ~ 360 [&deg;])<br />Extended Position Control Mode (Multi-turn)<br />PWM Control Mode (Voltage Control Mode)"
+  mode_en:            "Velocity Control Mode<br />Position Control Mode (0 ~ 360 [&deg;])<br />Extended Position Control Mode (Multi-turn)<br />PWM Control Mode (Voltage Control Mode)"
   weight:             "98.2 [g]"
   dimensions:         "36 x 46.5 x 36 [mm]"
   gearratio:          "257.4 : 1"
@@ -415,7 +415,7 @@ xc430-w240:
   resolution:         *resolution
   backlash:           "N/A"
   mode:               "속도 제어 모드<br />위치 제어 모드 (0 ~ 360 [&deg;])<br />확장 위치 제어 모드 (멀티턴)<br />PWM 제어 모드 (Voltage Control Mode)"
-  mode_en:            "Velcoity Control Mode<br />Position Control Mode (0 ~ 360 [&deg;])<br />Extended Position Control Mode (Multi-turn)<br />PWM Control Mode (Voltage Control Mode)"
+  mode_en:            "Velocity Control Mode<br />Position Control Mode (0 ~ 360 [&deg;])<br />Extended Position Control Mode (Multi-turn)<br />PWM Control Mode (Voltage Control Mode)"
   weight:             "65 [g]"
   dimensions:         "28.5 x 46.5 x 34 [mm]"
   gearratio:          "245.22 : 1"
@@ -445,7 +445,7 @@ xc430-w240:
   resolution:         *resolution
   backlash:           "N/A"
   mode:               "속도 제어 모드<br />위치 제어 모드 (0 ~ 360 [&deg;])<br />확장 위치 제어 모드 (멀티턴)<br />PWM 제어 모드 (Voltage Control Mode)"
-  mode_en:            "Velcoity Control Mode<br />Position Control Mode (0 ~ 360 [&deg;])<br />Extended Position Control Mode (Multi-turn)<br />PWM Control Mode (Voltage Control Mode)"
+  mode_en:            "Velocity Control Mode<br />Position Control Mode (0 ~ 360 [&deg;])<br />Extended Position Control Mode (Multi-turn)<br />PWM Control Mode (Voltage Control Mode)"
   weight:             "102 [g]"
   dimensions:         "36 x 46.5 x 36 [mm]"
   gearratio:          "257.4 : 1"
@@ -475,7 +475,7 @@ xc430-w150:
   resolution:         *resolution
   backlash:           "N/A"
   mode:               "속도 제어 모드<br />위치 제어 모드 (0 ~ 360 [&deg;])<br />확장 위치 제어 모드 (멀티턴)<br />PWM 제어 모드 (Voltage Control Mode)"
-  mode_en:            "Velcoity Control Mode<br />Position Control Mode (0 ~ 360 [&deg;])<br />Extended Position Control Mode (Multi-turn)<br />PWM Control Mode (Voltage Control Mode)"
+  mode_en:            "Velocity Control Mode<br />Position Control Mode (0 ~ 360 [&deg;])<br />Extended Position Control Mode (Multi-turn)<br />PWM Control Mode (Voltage Control Mode)"
   weight:             "65 [g]"
   dimensions:         "28.5 x 46.5 x 34 [mm]"
   gearratio:          "159.59 : 1"

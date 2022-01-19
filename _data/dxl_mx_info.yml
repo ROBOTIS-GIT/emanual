@@ -11,7 +11,7 @@ common_mx_specs:
   mode2_mx28:         &mode2_mx28     "속도 제어 모드<br />위치 제어 모드(0 ~ 360 [&deg;])<br />확장 위치 제어 모드(멀티턴)<br />PWM 제어 모드"
   mode2_mx28_en:      &mode2_mx28_en  "Velocity Control Mode<br />Position Control Mode(0&deg; ~ 360&deg;)<br />Extended Position Ctrl Mode(Multi-turn)<br />PWM Control Mode"
   mode2:              &mode2          "전류 제어 모드<br />속도 제어 모드<br />위치 제어 모드 (0 ~ 360 [&deg;])<br />확장 위치 제어 모드 (멀티턴)<br />전류기반 위치 제어 모드<br />PWM 제어 모드 (Voltage Control Mode)"
-  mode2_en:           &mode2_en       "Current Control Mode<br />Velcoity Control Mode<br />Position Control Mode (0 ~ 360 [&deg;])<br />Extended Position Control Mode (Multi-turn)<br />Current-based Position Control Mode<br />PWM Control Mode (Voltage Control Mode)"
+  mode2_en:           &mode2_en       "Current Control Mode<br />Velocity Control Mode<br />Position Control Mode (0 ~ 360 [&deg;])<br />Extended Position Control Mode (Multi-turn)<br />Current-based Position Control Mode<br />PWM Control Mode (Voltage Control Mode)"
   weight_mx28:        &weight_mx28    "MX-28AR/AT : 77 [g], MX-28R/T : 72 [g]"
   weight_mx64:        &weight_mx64    "165 [g]"
   weight_mx106:       &weight_mx106   "165 [g]"
