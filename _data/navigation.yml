@@ -390,7 +390,7 @@ main:
         url: /edu/iot/iot-1/
       - titlekr: "2단계"
         url: /edu/iot/iot-2/
-    - titlekr: "실과 로봇"
+    - titlekr: "STEAMCUP 실과로봇"
       url: /edu/info/
     - title: "ROBOTIS BIOLOID"
       titlekr: "바이올로이드"
