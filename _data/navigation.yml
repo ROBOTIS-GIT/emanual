@@ -17896,9 +17896,9 @@ all-edu:
     url: /edu/#robotis-bioloid
     urlkr: /edu/#바이올로이드
   - title: "ROBOTIS ENGINEER"
-    titlekr: "STEAMCUP 엔지니어"
+    titlekr: "STEAMCUP ENGINEER"
     url: /edu/#robotis-engineer
-    urlkr: /edu/#로보티즈-엔지니어
+    urlkr: /edu/#steamcup-engineer
   - title: "ROBOTIS MINI"
     titlekr: "STEAMCUP MINI"
     url: /edu/#mini
@@ -18499,12 +18499,12 @@ bioloid:
     urlkr: /edu/bioloid/#
   - titlekr: "바이올로이드 종합키트"
     urlkr: /edu/bioloid/#바이올로이드-종합키트
-  - titlekr: "로보티즈 STEM"
-    urlkr: /edu/bioloid/#로보티즈-stem
-  - titlekr: "로보티즈 프리미엄"
-    urlkr: /edu/bioloid/#로보티즈-프리미엄
-  - titlekr: "로보티즈 GP"
-    urlkr: /edu/bioloid/#로보티즈-gp
+  - titlekr: "STEAMCUP STEM"
+    urlkr: /edu/bioloid/#steamcup-stem
+  - titlekr: "STEAMCUP PREMIUM"
+    urlkr: /edu/bioloid/#steamcup-premium
+  - titlekr: "STEAMCUP GP"
+    urlkr: /edu/bioloid/#steamcup-gp
 
 #BIOLOID Beginner sidebar
 bioloid-beginner:

@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/kr/edu/bioloid/gp/
 sidebar:
-  title: 로보티즈 GP
+  title: STEAMCUP GP
   nav: "bioloid-gp"
 ---
 
@@ -220,7 +220,7 @@ BT-410 사용자는 [BT-410 e-Manual]을 참조해주세요.
 
 ## [센서 추가하기](#센서-추가하기)
 
-바이올로이드 프리미엄 혹은 로보티즈 GP 에서는 CM-510의 센서연결부를 통해 [적외선센서], [접촉 센서], [절대 거리 센서]를 추가로 달 수 있습니다.  
+STEAMCUP PREMIUM 혹은 STEAMCUP GP 에서는 CM-510의 센서연결부를 통해 [적외선센서], [접촉 센서], [절대 거리 센서]를 추가로 달 수 있습니다.  
 각 센서에 대한 자세한 정보는 위의 텍스트에 각 센서에 대한 이름을 클릭하시면 해당 페이지로 이동하여 보실 수 있습니다.
 
 ### 적외선 센서

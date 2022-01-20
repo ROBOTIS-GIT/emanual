@@ -24,23 +24,23 @@ sidebar:
 - [중급 레벨 로봇 예제 다운받으러 가기](/docs/kr/edu/bioloid/comprehensive/#중급-레벨)
 - [고급 레벨 로봇 예제 다운받으러 가기](/docs/kr/edu/bioloid/comprehensive/#고급-레벨)
 
-# [로보티즈 STEM](#로보티즈-stem)
+# [STEAMCUP STEM](#steamcup-stem)
 ![](/assets/images/edu/bioloid/stem_kit_kr.jpg)
 
-- [로보티즈 STEM Level l 로봇 예제 다운받으러 가기](/docs/kr/edu/bioloid/stem/#stem-level-1-예제)
-- [로보티즈 STEM Level 2 로봇 예제 다운받으러 가기](/docs/kr/edu/bioloid/stem/#stem-level-2-예제)
+- [STEAMCUP STEM Level l 로봇 예제 다운받으러 가기](/docs/kr/edu/bioloid/stem/#stem-level-1-예제)
+- [STEAMCUP STEM Level 2 로봇 예제 다운받으러 가기](/docs/kr/edu/bioloid/stem/#stem-level-2-예제)
 
-# [로보티즈 프리미엄](#로보티즈-프리미엄)
+# [STEAMCUP PREMIUM](#steamcup-premium)
 
 ![](/assets/images/edu/bioloid/premium_kit_kr.png)
 
-- [로보티즈 프리미엄 기본 예제 다운 받으러가기](/docs/kr/edu/bioloid/premium/#모션-파일-다운로드-방법)
+- [STEAMCUP PREMIUM 기본 예제 다운 받으러가기](/docs/kr/edu/bioloid/premium/#모션-파일-다운로드-방법)
 - [초급 레벨 로봇 예제 다운받으러 가기](/docs/kr/edu/bioloid/premium/#초급-응용-로봇)
 - [중급 레벨 로봇 예제 다운받으러 가기](/docs/kr/edu/bioloid/premium/#중급-응용-로봇)
 - [고급 레벨 로봇 예제 다운받으러 가기](/docs/kr/edu/bioloid/premium/#고급-응용-로봇)
 
-# [로보티즈 GP](#로보티즈-gp)
+# [STEAMCUP GP](#steamcup-gp)
 
 ![](/assets/images/edu/bioloid/gp_thumbnail_kr.png)
 
-- [로보티즈 GP 기본 예제 다운 받으러가기](/docs/kr/edu/bioloid/gp/#기본-프로그램)
+- [STEAMCUP GP 기본 예제 다운 받으러가기](/docs/kr/edu/bioloid/gp/#기본-프로그램)
