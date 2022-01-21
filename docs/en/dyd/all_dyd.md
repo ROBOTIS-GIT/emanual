@@ -76,7 +76,7 @@ In the following image, it is shown that the rotational direction of the input m
 |         Nominal input speed         |  rpm   |      2,000      |      2,000      |   2,000    |   2,000    |   2,000    |   2,000    |
 |     Hysteresis loss / Backlash      | arcmin |      <3.0       |      <3.0       |    <3.0    |    <3.0    |    <3.0    |    <3.0    |
 |           Starting torque           |  cNm   |       20        |       20        |     20     |     20     |     30     |     30     |
-|            Service life             | hours  |      3,000      |      3,000      |   5,000    |   5,000    |   5,000    |   5,000    |
+|            Service life             | hours  |      3,000      |      3,000      |   5,000    |   5,000    |   7,000    |   7,000    |
 |              Dimension              |   mm   | 43 X 43 X 23.65 | 43 X 43 X 23.65 |  ø68 x 30  |  ø68 x 30  | ø78 x 34.2 | ø78 x 34.2 |
 |               Weight                |   g    |       196       |       196       |    400     |    400     |    600     |    600     |
 
