@@ -34,7 +34,7 @@ product_group: all-dyd
 | Efficiency(@2,000 rpm, 20 &#8451;)  |                %                 |     58     |     58     |  -   |
 |           Starting torque           |               cNm                |     30     |     30     |  -   |
 |          Back-Drive torque          |                Nm                |    5.0     |    5.0     |  -   |
-|            Service life             |              hours               |   5,000    |   5,000    |  -   |
+|            Service life             |              hours               |   7,000    |   7,000    |  -   |
 |        Dimension (O.D. X H)         |                mm                | 78 x 34.2  | 78 x 34.2  |  -   |
 |               Weight                |                g                 |    600     |    600     |  -   |
 
