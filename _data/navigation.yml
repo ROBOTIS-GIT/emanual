@@ -39,10 +39,10 @@ main:
           titlekr: "DYD-14"
           url: /all-dyd/dyd-14
           urlkr: /all-dyd/dyd-14
-        # - title: "DYD-17"
-        #   titlekr: "DYD-17"
-        #   url: /all-dyd/dyd-17
-        #   urlkr: /all-dyd/dyd-17
+        - title: "DYD-17"
+          titlekr: "DYD-17"
+          url: /all-dyd/dyd-17
+          urlkr: /all-dyd/dyd-17
     - title: "X Series"
       titlekr: "X 시리즈"
       url: /dxl/x/

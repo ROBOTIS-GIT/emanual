@@ -3,7 +3,7 @@ layout: archive
 lang: en
 ref: dyd-17
 read_time: true
-share: false
+share: true
 author_profile: false
 permalink: /docs/en/all-dyd/dyd-17/
 sidebar:
@@ -23,7 +23,7 @@ product_group: all-dyd
 |             Properties              |               Unit               | DYD-17-051 | DYD-17-099 | Note |
 |:-----------------------------------:|:--------------------------------:|:----------:|:----------:|:----:|
 |             Gear ratio              |                -                 |     51     |     99     |  -   |
-|       Repeatable peak torque        |                Nm                |    34.0    |    54.0    |  -   |
+|       Repeatable peak torque        |                Nm                |     55     |     80     |  -   |
 | Rated torque<br>(@2,000 rpm) |                Nm                |    11.0    |    16.0    |  -   |
 |         Maximum input speed         |               rpm                |   6,000    |   6,000    |  -   |
 |         Nominal input speed         |               rpm                |   2,000    |   2,000    |  -   |
