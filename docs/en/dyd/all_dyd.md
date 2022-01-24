@@ -268,7 +268,7 @@ Starting Torque = 20 cNm (DYD-14)
 
 # [Glossary](#glossary)
 
-## [Rated torque](#rated-output-torque)
+## [Rated torque](#rated-torque)
 
 Rated torque indicates allowable continuous load torque at rated input speed.
 
