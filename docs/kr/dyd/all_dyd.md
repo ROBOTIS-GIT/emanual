@@ -265,7 +265,7 @@ Starting Torque = 20 cNm (DYD-14)
 
 # [기술 자료](#기술-자료)
 
-## [정격출력토크(Rated output torque)](#정격출력토크rated-output-torque)
+## [정격출력토크(Rated torque)](#정격출력토크rated-output-torque)
 
 정격회전속도시의 허용연속부하토크를 나타냅니다.
 

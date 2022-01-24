@@ -71,7 +71,7 @@ In the following image, it is shown that the rotational direction of the input m
 |:-----------------------------------:|:------:|:---------------:|:---------------:|:----------:|:----------:|:----------:|:----------:|
 |             Gear ratio              |   -    |       33        |       51        |     51     |     99     |     51     |     99     |
 |       Repeatable peak torque        |   Nm   |       8.5       |      17.0       |     24     |     35     |     55     |     80     |
-| Rated output torque<br>(@2,000 rpm) |   Nm   |       2.2       |       3.5       |    5.4     |    7.8     |    16.0    |    24.0    |
+| Rated torque<br>(@2,000 rpm) |   Nm   |       2.2       |       3.5       |    5.4     |    7.8     |    16.0    |    24.0    |
 |         Maximum input speed         |  rpm   |      6,000      |      6,000      |   6,000    |   6,000    |   6,000    |   6,000    |
 |         Nominal input speed         |  rpm   |      2,000      |      2,000      |   2,000    |   2,000    |   2,000    |   2,000    |
 |     Hysteresis loss / Backlash      | arcmin |      <3.0       |      <3.0       |    <3.0    |    <3.0    |    <3.0    |    <3.0    |
@@ -186,7 +186,7 @@ The required service life for a given speed and load values can be calculated as
 |:-----------------------------------:|:------:|:----------:|
 |             Gear ratio              |   -    |     51     |
 |       Repeatable peak torque        |   Nm   |    24    |
-| Rated output torque<br>(@2,000 rpm) |   Nm   |    5.4     |
+| Rated torque<br>(@2,000 rpm) |   Nm   |    5.4     |
 |         Maximum input speed         |  rpm   |   6,000    |
 |         Average input speed         |  rpm   |   2,000    |
 |     Hysteresis loss / Backlash      | arcmin |    <3.0    |
@@ -221,7 +221,7 @@ Required service life : 5,000 hours > Expected service life : 4,880 hours
 |:-----------------------------------:|:----------:|
 |             Gear ratio              |     99     |
 |       Repeatable peak torque        |     35     |
-| Rated output torque<br>(@2,000 rpm) |    7.8     |
+| Rated torque<br>(@2,000 rpm) |    7.8     |
 |         Maximum input speed         |   6,000    |
 |         Average input speed         |   2,000    |
 |     Hysteresis loss / Backlash      |    <3.0    |
@@ -268,7 +268,7 @@ Starting Torque = 20 cNm (DYD-14)
 
 # [Glossary](#glossary)
 
-## [Rated output torque](#rated-output-torque)
+## [Rated torque](#rated-output-torque)
 
 Rated torque indicates allowable continuous load torque at rated input speed.
 
@@ -298,11 +298,11 @@ As shown in Figure below, when the rated torque is gradually applied to the outp
 
 ## [Lost motion](#lost-motion)
 
-The lost motion indicates the torsional angle at +/- 3% of the rated output torque as shown in the figure above.
+The lost motion indicates the torsional angle at +/- 3% of the Rated torque as shown in the figure above.
 
 ## [Torsional stiffness](#torsional-stiffness)
 
-The torsional stiffness indicates the spring constants between 50% and 100% of the rated output torque, and can be calculated as follows: Torsional stiffness = b/a [Nm/arcmin].
+The torsional stiffness indicates the spring constants between 50% and 100% of the Rated torque, and can be calculated as follows: Torsional stiffness = b/a [Nm/arcmin].
 
 ## [Efficiency](#efficiency)
 
