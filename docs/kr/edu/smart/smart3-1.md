@@ -40,7 +40,7 @@ STEAMCUP SMART III는 일반 리모컨의 단방향통신을 이용한 단순조
 
 # [작동하기](#작동하기)
 
-- 스마트 기기에 [R+ SMART III] 와 [R+m.Task2.0]를 설치해야 합니다.  
+- 스마트 기기에 [R+ SMARTIII] 와 [R+m.Task2.0]를 설치해야 합니다.  
 - 앱 설치가 완료되면 스마트III 1단계 키트에 포함된 제어기([CM-200])에 블루투스([BT-410])를 연결하고 R+SMARTIII에서 R+m.task2.0을 실행하여 예제를 다운로드 받습니다.  
  
 **[R+ SMARTIII 설치 및 예제 다운로드 방법 바로가기](/docs/kr/software/mobile_app/rplussmart/#r-smart-다운로드설치)**  
