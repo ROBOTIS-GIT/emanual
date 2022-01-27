@@ -26,7 +26,7 @@ sidebar:
 
 ## [Parts List](#parts-list)
 
-![](/assets/images/edu/engineer/kit1/parts_list.png)
+![](/assets/images/edu/engineer/kit1/kit1_parts_list.png)
 
 ### [CM-550 Controller](#cm-550-controller)
 

@@ -25,7 +25,7 @@ sidebar:
 
 ## [부품 목록](#부품-목록)
 
-![](/assets/images/edu/engineer/kit1/parts_list_kr.png)
+![](/assets/images/edu/engineer/kit1/kit1_parts_list_kr.png)
 
 ### [CM-550 제어기](#cm-550-제어기)
 
