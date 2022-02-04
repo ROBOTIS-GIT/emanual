@@ -21,7 +21,7 @@ page_number: 29
   <h1 id="appendixes"><a href="#appendixes">Appendixes</a></h1>
 <![end dummy Header 1]-->
 
-### [LDS-01](#appendix-lds01)
+### [LDS-01](#lds-01)
 
 #### [Overview](#overview)
 
@@ -34,29 +34,18 @@ page_number: 29
 
 #### [Introduction Video](#introduction-video)
 
-[Video #01] How to use the LDS-01
-
-- Contents
-  1. Specification
-  1. ROS
-  1. Windows, Linux, macOS
-  1. Embedded Board
-  1. SLAM and Navigation
-  1. Self-Parking
-  1. 3D Sensing
-  1. for Makers
-
+- How to use the LDS-01
 <iframe width="640" height="360" src="https://www.youtube.com/embed/wmZQoTdtioY" frameborder="0" allowfullscreen></iframe>
 
-[Video #02] Laser Distance Sensor (LDS) Example.
+- Laser Distance Sensor (LDS) Example.
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/9oic8aT3wIc" frameborder="0" allowfullscreen></iframe>
 
-[Video #03] ROS Hector SLAM demo using only a 360 Laser Distance Sensor LDS-01 made by HLDS (Hitachi-LG Data Storage).
+- ROS Hector SLAM demo using only a 360 Laser Distance Sensor LDS-01 made by HLDS (Hitachi-LG Data Storage).
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/s7CflpA6TOo" frameborder="0" allowfullscreen></iframe>
 
-[Video #04] ROS Gmapping and Cartographer SLAM demo using TurtleBot3 and 360 Laser Distance Sensor LDS-01.
+- ROS Gmapping and Cartographer SLAM demo using TurtleBot3 and 360 Laser Distance Sensor LDS-01.
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/lkW4-dG2BCY" frameborder="0" allowfullscreen></iframe>
 
