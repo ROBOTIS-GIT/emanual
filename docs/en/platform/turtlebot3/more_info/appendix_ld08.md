@@ -21,18 +21,18 @@ page_number: 30
   <h1 id="appendixes"><a href="#appendixes">Appendixes</a></h1>
 <![end dummy Header 1]-->
 
-### [LD08](#ld08)
+### [LDS-02](#lds-02)
 
-[The previous LDS sensor(LDS-01)](/docs/en/platform/turtlebot3/appendix_lds_01/) is discontinued and replaced with LD08 since 2022.
+[The previous LDS sensor(LDS-01)](/docs/en/platform/turtlebot3/appendix_lds_01/) is discontinued and replaced with LDS-02 since 2022.
 
 #### [Overview](#overview)
 
 ![](/assets/images/platform/turtlebot3/appendix_lds/lds_ld08_small.png)
 ![](/assets/images/platform/turtlebot3/appendix_lds/lds_ld08_top_small.png)
 
-- 360 Laser Distance Sensor LD08 is a 2D laser scanner capable of sensing 360 degrees that collects a set of data around the robot to use for SLAM (Simultaneous Localization and Mapping) and Navigation.
-- The LD08 is used for TurtleBot3 Burger and Waffle Pi models.
-- Only Tx UART interface is available for the LD08 sensor.
+- 360 Laser Distance Sensor LDS-02 is a 2D laser scanner capable of sensing 360 degrees that collects a set of data around the robot to use for SLAM (Simultaneous Localization and Mapping) and Navigation.
+- The LDS-02 is used for TurtleBot3 Burger and Waffle Pi models.
+- Only Tx UART interface is available for the LDS-02 sensor.
 - The USB interface(USB2LDS) supports easier connection to a PC or SBC.
 
 #### [Specifications](#specifications)
@@ -77,7 +77,7 @@ page_number: 30
 
 #### [Data Packet](#data-packet)
 
-The LD08 adopts one-way communication and begins to send measuring data packet once working stably without any instruction packet.
+The LDS-02 adopts one-way communication and begins to send measuring data packet once working stably without any instruction packet.
 
 | Header | Length | Speed (2Byte)    | Start Angle (2Byte) | Data (36Byte) | End Angle (2Byte) | Timestamp (2Byte) | CRC |
 |:-------|:-------|:-----------------|:--------------------|:--------------|:------------------|:------------------|:----|

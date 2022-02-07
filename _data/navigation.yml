@@ -20937,7 +20937,7 @@ turtlebot3:
         url: /platform/turtlebot3/appendix_opencr1_0/
       - title: "LDS-01"
         url: /platform/turtlebot3/appendix_lds_01/
-      - title: "LD08"
+      - title: "LDS-02"
         url: /platform/turtlebot3/appendix_ld08/
       - title: "RealSense™"
         url: /platform/turtlebot3/appendix_realsense/
