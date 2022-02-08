@@ -154,7 +154,7 @@ $ sudo apt update
 $ sudo apt install libudev-dev
 $ cd ~/catkin_ws/src
 $ git clone -b develop https://github.com/ROBOTIS-GIT/ld08_driver.git
-$ cd ~/turtlebot3 && git pull
+$ cd ~/catkin_ws/src/turtlebot3 && git pull
 $ cd ~/catkin_ws && catkin_make
 ```
 
