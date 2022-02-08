@@ -25,7 +25,8 @@ page_number: 29
 
 #### [Overview](#overview)
 
-![](/assets/images/platform/turtlebot3/appendix_lds/lds.png)
+![](/assets/images/platform/turtlebot3/appendix_lds/lds_small.png)
+![](/assets/images/platform/turtlebot3/appendix_lds/lds_top_small.png)
 
 - 360 Laser Distance Sensor LDS-01 is a 2D laser scanner capable of sensing 360 degrees that collects a set of data around the robot to use for SLAM (Simultaneous Localization and Mapping) and Navigation.
 - The LDS-01 is used for TurtleBot3 Burger, Waffle and Waffle Pi models.

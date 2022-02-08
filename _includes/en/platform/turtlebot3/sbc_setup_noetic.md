@@ -139,6 +139,31 @@ $ source ~/.bashrc
   ```  
 ![](/assets/images/platform/turtlebot3/setup/ros1_sbc_netcfg.gif)
 
+### NEW LDS-02 Configuration
+
+|LDS-01|LDS-02|
+|:---:|:---:|
+|![](/assets/images/platform/turtlebot3/appendix_lds/lds_small.png)|![](/assets/images/platform/turtlebot3/appendix_lds/lds_ld08_small.png)|
+
+The TurtleBot3 LDS has been updated to LDS-02 since 2022 models.  
+Please follow the instructions below on the **SBC (Raspberry Pi)** of TurtleBot3.
+
+1. Install the LDS-02 driver and update TurtleBot3 package
+```bash
+$ sudo apt update
+$ sudo apt install libudev-dev
+$ cd ~/catkin_ws/src
+$ git clone -b develop https://github.com/ROBOTIS-GIT/ld08_driver.git
+$ cd ~/catkin_ws/src/turtlebot3 && git pull
+$ cd ~/catkin_ws && catkin_make
+```
+
+2. Export the LDS_MODEL to the bashrc file. Depending on your LDS model, use `LDS-01` or `LDS-02`.
+```bash
+$ echo 'export LDS_MODEL=LDS-01' >> ~/.bashrc
+$ source ~/.bashrc
+```
+
 **This is it! Now you are done with SBC setup :)**  
 Next Step : [OpenCR Setup](/docs/en/platform/turtlebot3/opencr_setup/#opencr-setup)
 {: .notice--success}
