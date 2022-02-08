@@ -181,6 +181,7 @@ $ cd ~/catkin_ws && catkin_make
 2. Export the LDS_MODEL to the bashrc file. Depending on your LDS model, use `LDS-01` or `LDS-02`.
 ```bash
 $ echo 'export LDS_MODEL=LDS-01' >> ~/.bashrc
+$ source ~/.bashrc
 ```
 
 **This is it! Now you are done with SBC setup :)**  
