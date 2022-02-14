@@ -20938,7 +20938,7 @@ turtlebot3:
       - title: "LDS-01"
         url: /platform/turtlebot3/appendix_lds_01/
       - title: "LDS-02"
-        url: /platform/turtlebot3/appendix_ld08/
+        url: /platform/turtlebot3/appendix_lds_02/
       - title: "RealSense™"
         url: /platform/turtlebot3/appendix_realsense/
       - title: "Raspberry Pi Camera"

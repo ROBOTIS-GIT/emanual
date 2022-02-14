@@ -1,11 +1,11 @@
 ---
 layout: archive
 lang: en
-ref: appendix_ld08
+ref: appendix_lds_02
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/turtlebot3/appendix_ld08/
+permalink: /docs/en/platform/turtlebot3/appendix_lds_02/
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
