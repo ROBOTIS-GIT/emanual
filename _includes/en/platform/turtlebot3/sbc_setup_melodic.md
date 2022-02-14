@@ -306,7 +306,25 @@ export ROS_HOSTNAME={IP_ADDRESS_OF_RASPBERRY_PI_3}
 
 18. Save the file and exit the nano editor.
 
-19. Apply changes with the command below.
+19. LDS Configuration
+The TurtleBot3 LDS has been updated to LDS-02 since 2022 models.  
+Please follow the instructions below on the **SBC (Raspberry Pi)** of TurtleBot3.
+```bash
+$ sudo apt update
+$ sudo apt install libudev-dev
+$ cd ~/catkin_ws/src
+$ git clone -b develop https://github.com/ROBOTIS-GIT/ld08_driver.git
+$ cd ~/catkin_ws/src/turtlebot3 && git pull
+$ cd ~/catkin_ws && catkin_make
+```
+
+20. Export the LDS_MODEL to the bashrc file. Depending on your LDS model, use `LDS-01` or `LDS-02`.
+```bash
+$ echo 'export LDS_MODEL=LDS-01' >> ~/.bashrc
+$ source ~/.bashrc
+```
+
+21. Apply changes with the command below.
 ```bash
 $ source ~/.bashrc
 ```

@@ -273,6 +273,29 @@ $ source ~/.bashrc
 
 **WARNING** : Do not use an identical ROS_DOMAIN_ID with others in the same network. It will cause a conflict of communication between users under the same network environment.
 {: .notice--warning}
+
+17. LDS Configuration
+The TurtleBot3 LDS has been updated to LDS-02 since 2022 models.  
+Please follow the instructions below on the **SBC (Raspberry Pi)** of TurtleBot3.
+```bash
+$ sudo apt update
+$ sudo apt install libudev-dev
+$ cd ~/turtlebot3_ws/src
+$ git clone -b ros2-devel https://github.com/ROBOTIS-GIT/ld08_driver.git
+$ cd ~/turtlebot3_ws/src/turtlebot3 && git pull
+$ cd ~/turtlebot3_ws && colcon build --symlink-install
+```
+
+18. Export the LDS_MODEL to the bashrc file. Depending on your LDS model, use `LDS-01` or `LDS-02`.
+```bash
+$ echo 'export LDS_MODEL=LDS-01' >> ~/.bashrc
+```
+
+19. Apply changes with the command below.
+```bash
+$ source ~/.bashrc
+```
+
 </details>
 
 {% capture ubuntu_blog %}
