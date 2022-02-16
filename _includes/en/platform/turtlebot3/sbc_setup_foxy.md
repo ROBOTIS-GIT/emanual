@@ -142,6 +142,7 @@ $ sudo apt install libudev-dev
 $ cd ~/turtlebot3_ws/src
 $ git clone -b ros2-devel https://github.com/ROBOTIS-GIT/ld08_driver.git
 $ cd ~/turtlebot3_ws/src/turtlebot3 && git pull
+$ rm -r turtlebot3_cartographer turtlebot3_navigation2
 $ cd ~/turtlebot3_ws && colcon build --symlink-install
 ```
 
@@ -282,7 +283,6 @@ $ sudo apt update
 $ sudo apt install libudev-dev
 $ cd ~/turtlebot3_ws/src
 $ git clone -b ros2-devel https://github.com/ROBOTIS-GIT/ld08_driver.git
-$ cd ~/turtlebot3_ws/src/turtlebot3 && git pull
 $ cd ~/turtlebot3_ws && colcon build --symlink-install
 ```
 
