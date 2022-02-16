@@ -87,7 +87,7 @@ page_number: 3
 | MCU                                | 32-bit ARM Cortex®-M7 with FPU (216 MHz, 462 DMIPS)              | 32-bit ARM Cortex®-M7 with FPU (216 MHz, 462 DMIPS)              |
 | Remote Controller                  | -                                                                | RC-100B + BT-410 Set (Bluetooth 4, BLE)                          |
 | Actuator                           | XL430-W250                                                       | XM430-W210                                                       |
-| LDS(Laser Distance Sensor)         | 360 Laser Distance Sensor LDS-01                                 | 360 Laser Distance Sensor LDS-01                                 |
+| LDS(Laser Distance Sensor)         | 360 Laser Distance Sensor [LDS-01] or [LDS-02]                   | 360 Laser Distance Sensor [LDS-01] or [LDS-02]                   |
 | Camera                             | -                                                                | Raspberry Pi Camera Module v2.1                                  |
 | IMU                                | Gyroscope 3 Axis<br />Accelerometer 3 Axis                       | Gyroscope 3 Axis<br />Accelerometer 3 Axis                       |
 | Power connectors                   | 3.3V / 800mA<br />5V / 4A<br />12V / 1A                          | 3.3V / 800mA<br />5V / 4A<br />12V / 1A                          |
@@ -124,57 +124,58 @@ page_number: 3
 TurtleBot3 is available in two types of models: `Burger` and `Waffle Pi`.  
 The following table shows the lists of components. The major differences between two models are the actuators, the SBC(Single Board Computer) and the Sensors.  
 
-|                        | Part Name                     | Burger | Waffle Pi |
-|------------------------|-------------------------------|-------:|----------:|
-| **Chassis Parts**      | Waffle Plate                  |      8 |        24 |
-| .                      | Plate Support M3x35mm         |      4 |        12 |
-| .                      | Plate Support M3x45mm         |     10 |        10 |
-| .                      | PCB Support                   |     12 |        12 |
-| .                      | Wheel                         |      2 |         2 |
-| .                      | Tire                          |      2 |         2 |
-| .                      | Ball Caster                   |      1 |         2 |
-| .                      | Camera Bracket                |      0 |         1 |
-| **Motors**             | DYNAMIXEL ([XL430-W250-T])    |      2 |         0 |
-| .                      | DYNAMIXEL ([XM430-W210-T])    |      0 |         2 |
-| **Boards**             | [OpenCR1.0]                   |      1 |         1 |
-| .                      | <sup>*</sup>Raspberry Pi      |      1 |         1 |
-| .                      | USB2LDS                       |      1 |         1 |
-| **Remote Controllers** | BT-410 Set (Bluetooth 4, BLE) |      0 |         1 |
-| .                      | RC-100B (Remote Controller)   |      0 |         1 |
-| **Sensors**            | [LDS-01 (HLS-LFCD2)]          |      1 |         1 |
-| .                      | [Raspberry Pi Camera v2.1]    |      0 |         1 |
-| **Memorys**            | MicroSD Card                  |      1 |         1 |
-| **Cables**             | Raspberry Pi Power Cable      |      1 |         1 |
-| .                      | Li-Po Battery Extension Cable |      1 |         1 |
-| .                      | DYNAMIXEL to OpenCR Cable     |      2 |         2 |
-| .                      | USB Cable                     |      2 |         2 |
-| .                      | Camera Cable                  |      0 |         1 |
-| **Powers**             | SMPS 12V5A                    |      1 |         1 |
-| .                      | A/C Cord                      |      1 |         1 |
-| .                      | LIPO Battery 11.1V 1,800mAh   |      1 |         1 |
-| .                      | LIPO Battery Charger          |      1 |         1 |
-| **Tools**              | Screw driver                  |      1 |         1 |
-| .                      | Rivet tool                    |      1 |         1 |
-| **Miscellaneous**      | PH_M2x4mm_K                   |      8 |         8 |
-| .                      | PH_T2x6mm_K                   |      4 |         8 |
-| .                      | PH_M2x12mm_K                  |      0 |         4 |
-| .                      | PH_M2.5x8mm_K                 |     16 |        16 |
-| .                      | PH_M2.5x12mm_K                |      0 |        20 |
-| .                      | PH_T2.6x12mm_K                |     16 |         0 |
-| .                      | PH_M2.5x16mm_K                |      4 |         4 |
-| .                      | PH_M3x8mm_K                   |     44 |       140 |
-| .                      | NUT_M2                        |      0 |         4 |
-| .                      | NUT_M2.5                      |     20 |        24 |
-| .                      | NUT_M3                        |     16 |        96 |
-| .                      | Rivet_1                       |     14 |        22 |
-| .                      | Rivet_2                       |      2 |         2 |
-| .                      | Spacer                        |      4 |         4 |
-| .                      | Silicone Spacer               |      0 |         4 |
-| .                      | Bracket                       |      5 |         6 |
-| .                      | Adapter Plate                 |      1 |         1 |
+|                        | Part Name                         | Burger | Waffle Pi |
+|------------------------|-----------------------------------|-------:|----------:|
+| **Chassis Parts**      | Waffle Plate                      |      8 |        24 |
+| .                      | Plate Support M3x35mm             |      4 |        12 |
+| .                      | Plate Support M3x45mm             |     10 |        10 |
+| .                      | PCB Support                       |     12 |        12 |
+| .                      | Wheel                             |      2 |         2 |
+| .                      | Tire                              |      2 |         2 |
+| .                      | Ball Caster                       |      1 |         2 |
+| .                      | Camera Bracket                    |      0 |         1 |
+| **Motors**             | DYNAMIXEL ([XL430-W250-T])        |      2 |         0 |
+| .                      | DYNAMIXEL ([XM430-W210-T])        |      0 |         2 |
+| **Boards**             | [OpenCR1.0]                       |      1 |         1 |
+| .                      | <sup>*</sup>Raspberry Pi          |      1 |         1 |
+| .                      | USB2LDS                           |      1 |         1 |
+| **Remote Controllers** | BT-410 Set (Bluetooth 4, BLE)     |      0 |         1 |
+| .                      | RC-100B (Remote Controller)       |      0 |         1 |
+| **Sensors**            | <sup>**</sup>[LDS-01] or [LDS-02] |      1 |         1 |
+| .                      | [Raspberry Pi Camera v2.1]        |      0 |         1 |
+| **Memorys**            | MicroSD Card                      |      1 |         1 |
+| **Cables**             | Raspberry Pi Power Cable          |      1 |         1 |
+| .                      | Li-Po Battery Extension Cable     |      1 |         1 |
+| .                      | DYNAMIXEL to OpenCR Cable         |      2 |         2 |
+| .                      | USB Cable                         |      2 |         2 |
+| .                      | Camera Cable                      |      0 |         1 |
+| **Powers**             | SMPS 12V5A                        |      1 |         1 |
+| .                      | A/C Cord                          |      1 |         1 |
+| .                      | LIPO Battery 11.1V 1,800mAh       |      1 |         1 |
+| .                      | LIPO Battery Charger              |      1 |         1 |
+| **Tools**              | Screw driver                      |      1 |         1 |
+| .                      | Rivet tool                        |      1 |         1 |
+| **Miscellaneous**      | PH_M2x4mm_K                       |      8 |         8 |
+| .                      | PH_T2x6mm_K                       |      4 |         8 |
+| .                      | PH_M2x12mm_K                      |      0 |         4 |
+| .                      | PH_M2.5x8mm_K                     |     16 |        16 |
+| .                      | PH_M2.5x12mm_K                    |      0 |        20 |
+| .                      | PH_T2.6x12mm_K                    |     16 |         0 |
+| .                      | PH_M2.5x16mm_K                    |      4 |         4 |
+| .                      | PH_M3x8mm_K                       |     44 |       140 |
+| .                      | NUT_M2                            |      0 |         4 |
+| .                      | NUT_M2.5                          |     20 |        24 |
+| .                      | NUT_M3                            |     16 |        96 |
+| .                      | Rivet_1                           |     14 |        22 |
+| .                      | Rivet_2                           |      2 |         2 |
+| .                      | Spacer                            |      4 |         4 |
+| .                      | Silicone Spacer                   |      0 |         4 |
+| .                      | Bracket                           |      5 |         6 |
+| .                      | Adapter Plate                     |      1 |         1 |
 
-<sup>*</sup> [Raspberry Pi 3 Model B+] is applied from 2019. Earlier model is equipped with [Raspberry Pi 3 Model B].  
-<sup>*</sup> [Raspberry Pi 4 Model B] is applied from 2021 September.
+<sup>*</sup> [Raspberry Pi 3 Model B+] is applied since 2019. Earlier model is equipped with [Raspberry Pi 3 Model B].  
+<sup>*</sup> [Raspberry Pi 4 Model B] is applied since 2021 September.  
+<sup>**</sup> [LDS-02] is applied since 2022.
 
 TurtleBot3 Waffle is discontinued due to the EOL of [Intel® Joule™ 570x].
 {: .notice}
@@ -194,6 +195,8 @@ The CAD data is released to the Onshape, which is a full-cloud 3D CAD editor. Ge
 [Raspberry Pi 4 Model B]: https://www.raspberrypi.org/products/raspberry-pi-4-model-b/
 [Intel® Joule™ 570x]: http://ark.intel.com/products/96414/Intel-Joule-570x-Developer-Kit
 [LDS-01 (HLS-LFCD2)]: /docs/en/platform/turtlebot3/appendix_lds_01/
+[LDS-01]: /docs/en/platform/turtlebot3/appendix_lds_01/
+[LDS-02]: /docs/en/platform/turtlebot3/appendix_lds_02/
 [Intel® Realsense™ R200]: https://software.intel.com/en-us/RealSense/R200Camera
 [Raspberry Pi Camera v2.1]: https://www.raspberrypi.org/products/camera-module-v2/
 [OpenCR1.0]: /docs/en/platform/turtlebot3/appendix_opencr1_0/
