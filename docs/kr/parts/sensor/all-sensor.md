@@ -5,7 +5,7 @@ ref: all-sensor
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/kr/parts/all_sensors
+permalink: /docs/kr/parts/all_sensors/
 sidebar:
   title: 센서
   nav: "all-sensor"

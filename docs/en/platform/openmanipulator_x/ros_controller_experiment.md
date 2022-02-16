@@ -19,6 +19,11 @@ product_group: openmanipulator_x
 page_number: 9
 ---
 
+<!--[dummy Header 1]>
+  <h1 id="dummy"><a href="#dummy">Dummy</a></h1>
+<![end dummy Header 1]-->
+
+
 <div style="counter-reset: h1 5"></div>
 <div style="counter-reset: h2 3"></div>
 

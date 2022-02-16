@@ -5,13 +5,15 @@ ref: all-sensor
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/parts/all_sensors
+permalink: /docs/en/parts/all_sensors/
 sidebar:
   title: Sensors
   nav: "all-sensor"
 ---
 
 # [Sensors](#sensors)
+
+Sensors can be used to measure distance, temperature, colors, touch, or more! ROBOTIS produces many sensors that are compatible with both ROBOTIS edutainment kits and different ROBOTIS controllers.
 
 |                             IR Sensor(IRSS-10)                             |                               Distance Sensor(DMS-80)                                |                            Touch Sensor(TS-10)                             |                              Integrated Sensor(AX-S1)                              |                              Gyro Sensor(GS-12)                               |
 | :------------------------------------------------------------------------: | :----------------------------------------------------------------------------------: | :------------------------------------------------------------------------: | :--------------------------------------------------------------------------------: | :---------------------------------------------------------------------------: |

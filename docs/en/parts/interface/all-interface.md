@@ -5,7 +5,7 @@ ref: all-interface
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/parts/all_interfaces
+permalink: /docs/en/parts/all_interfaces/
 sidebar:
   title: Interfaces
   nav: "all-interface"

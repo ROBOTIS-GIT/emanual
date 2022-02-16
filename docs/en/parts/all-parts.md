@@ -8,6 +8,10 @@ sidebar:
   nav: "parts"
 ---
 
+<!--[dummy Header 1]>
+  <h1 id="All Parts"><a href="/docs/en/parts/">All Parts</a></h1>
+<![end dummy Header 1]-->
+
 <div class="feature__wrapper">
 
     <div class="feature__item" id="Controller">

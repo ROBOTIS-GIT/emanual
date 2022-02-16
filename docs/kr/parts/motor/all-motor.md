@@ -5,7 +5,7 @@ ref: all-motor
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/kr/parts/all-motor
+permalink: /docs/kr/parts/all-motor/
 sidebar:
   title: 모터
   nav: "all-motor"
