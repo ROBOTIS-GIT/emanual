@@ -22,11 +22,13 @@ page_number: 20
 <div style="counter-reset: h1 8"></div>
 <div style="counter-reset: h2 6"></div>
 
-<!--[dummy Header 1]>
-  <h1 data-id="dummy"><a href="#dummy">Dummy</a></h1>
-<![end dummy Header 1]-->
-
 {::options parse_block_html="true" /}
+
+<!--[dummy Header 1]>
+  <h1 id="dummy">Autonomous Driving</h1>
+  <h2 id="dummy">AutoRace</h2>
+  <p class="dummy_content"> TurtleBot3 AutoRace Package</p>
+<![end dummy Header 1]-->
 
 ## [TurtleBot3 AutoRace 2019](#turtlebot3-autorace)
 

@@ -19,14 +19,16 @@ product_group: openmanipulator_x
 page_number: 5
 ---
 
-<!--[dummy Header 1]>
-  <h1 id="dummy"><a href="#dummy">Dummy</a></h1>
-<![end dummy Header 1]-->
-
 <div style="counter-reset: h1 4"></div>
 <div style="counter-reset: h2 1"></div>
 
 {::options parse_block_html="true" /}
+
+<!--[dummy Header 1]>
+  <h1 id="quick_start_guide">Quick Start Guide</h1>
+  <h2 id="basic_operation_intro">Basic Operation</h2>
+  <p class="dummy_content">Showing how to run basic Operation for your OpenMANIPULATOR-X</p>
+<![end dummy Header 1]-->
 
 ## [Basic Operation](#basic-operation)
 

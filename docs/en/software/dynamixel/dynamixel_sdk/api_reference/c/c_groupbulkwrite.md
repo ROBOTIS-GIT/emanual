@@ -15,9 +15,9 @@ sidebar:
 <div style="counter-reset: h2 1"></div>
 <div style="counter-reset: h3 9"></div>
 
-<!--[dummy Header 1]>
-  <h1 id="api-reference"><a href="#api-reference">API Reference</a></h1>
-  <h2 id="c"><a href="#c">C</a></h2>
+<!--[dummy Header 1], Dummy should be set if you are resetting the header otherwise, the raw_index.json would give you some error. Plus, you should manually add <p> tag for search tool to show the contnet in search box. >
+<h1 id="dummy">DYNAMIXEL SDK</h1>
+<p class=dummy_content>Group Bulk Write Language C </p>
 <![end dummy Header 1]-->
 
 ### [C GroupBulkWrite](#c-groupbulkwrite)
@@ -37,7 +37,7 @@ sidebar:
 | **[groupBulkWriteRemoveParam](#groupbulkwriteremoveparam)** | Removes parameter on the storage                  |
 | **[groupBulkWriteChangeParam](#groupbulkwritechangeparam)** | Changes parameter on the storage                  |
 | **[groupBulkWriteClearParam](#groupbulkwriteclearparam)**   | Clears parameter storage                          |
-| **[groupBulkWriteTxPacket](#groupbulkwritetxpacket)**       | Transmits packet to the number of DYNAMIXEL's      |
+| **[groupBulkWriteTxPacket](#groupbulkwritetxpacket)**       | Transmits packet to the number of DYNAMIXEL's     |
 
 - Enumerator
 

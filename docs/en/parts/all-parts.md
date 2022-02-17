@@ -8,9 +8,11 @@ sidebar:
   nav: "parts"
 ---
 
-<!--[dummy Header 1]>
-  <h1 id="All Parts"><a href="/docs/en/parts/">All Parts</a></h1>
-<![end dummy Header 1]-->
+<!-- [dummy Header 1] >
+  <h1 id="dummy">PARTS</h1>
+  <p class="dummy_content">The supported parts compatible with ROBOTIS products; Controller, Interface, Communication Module, Sensors, Geard Motor, and display module.</p>
+<![end dummy Header 1] -->
+
 
 <div class="feature__wrapper">
 

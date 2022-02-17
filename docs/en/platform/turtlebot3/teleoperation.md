@@ -17,7 +17,9 @@ page_number:
 <div style="counter-reset: h2 1"></div>
 
 <!--[dummy Header 1]>
-  <h1 id="basic-operation"><a href="#basic-operation">Basic Operation</a></h1>
+  <h1 id="dummy">Dummy</h1>
+  <h2 id="dummy">Dummy</h2>
+  <p class="dummy_content">Deprecated</p>
 <![end dummy Header 1]-->
 
 ## [Teleoperation](#ros-teleoperation)
@@ -198,4 +200,3 @@ The Windows implementation of the Joystick control uses the [Open Source Simple 
 [ros_control]: https://play.google.com/store/apps/details?id=com.robotca.ControlApp
 [leap_setup]: https://www.leapmotion.com/setup
 [leap_sdk]: https://developer.leapmotion.com/get-started/
-

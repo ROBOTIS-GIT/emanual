@@ -19,12 +19,14 @@ product_group: openmanipulator_x
 page_number: 8
 ---
 
-<!--[dummy Header 1]>
-  <h1 id="dummy"><a href="#dummy">Dummy</a></h1>
-<![end dummy Header 1]-->
-
 <div style="counter-reset: h1 5"></div>
 <div style="counter-reset: h2 2"></div>
+
+<!--[dummy Header 1]>
+  <h1 id="controller">Controller</h1>
+  <h2 id="message">Message List, Topic</h2>
+  <p class="dummy_content"> OpenMANIPULATOR-X is availble for Message List, Topic and etc. </p>
+<![end dummy Header 1]-->
 
 {::options parse_block_html="true" /}
 
