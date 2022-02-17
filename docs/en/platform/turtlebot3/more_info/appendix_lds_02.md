@@ -18,7 +18,9 @@ page_number: 30
 <div style="counter-reset: h3 3"></div>
 
 <!--[dummy Header 1]>
-  <h1 id="appendixes"><a href="#appendixes">Appendixes</a></h1>
+  <h1 id="dummy">More Info</h1>
+  <h2 id="dummy">Appendixes: LDS-02</h2>
+  <p class=dummy_content>360 Laser Distance Sensor v2</p>
 <![end dummy Header 1]-->
 
 ### [LDS-02](#lds-02)

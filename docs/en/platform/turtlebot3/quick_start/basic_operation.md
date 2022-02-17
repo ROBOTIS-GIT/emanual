@@ -25,6 +25,12 @@ page_number: 9
 
 {::options parse_block_html="true" /}
 
+<!--[dummy Header 1]>
+  <h1 id="dummy">Quick Start Guide</h1>
+  <h2 id="dummy">Basic Operation</h2>
+  <p class="dummy_content">Basic Opearation Features</p>
+<![end dummy Header 1]-->
+
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/turtlebot3/basic_operation_kinetic.md %}
 </section>

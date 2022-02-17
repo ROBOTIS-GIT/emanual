@@ -18,7 +18,8 @@ page_number: 32
 <div style="counter-reset: h3 5"></div>
 
 <!--[dummy Header 1]>
-  <h1 id="appendixes"><a href="#appendixes">Appendixes</a></h1>
+  <h1 id="dummy">More Info</h1>
+  <h2 id="dummy">Appendixes: Raspberry Pi Camera Module v2</h2>
 <![end dummy Header 1]-->
 
 ### [Raspberry Pi Camera](#raspberry-pi-camera)

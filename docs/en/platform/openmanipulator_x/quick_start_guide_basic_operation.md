@@ -24,6 +24,12 @@ page_number: 5
 
 {::options parse_block_html="true" /}
 
+<!--[dummy Header 1]>
+  <h1 id="quick_start_guide">Quick Start Guide</h1>
+  <h2 id="basic_operation_intro">Basic Operation</h2>
+  <p class="dummy_content">Showing how to run basic Operation for your OpenMANIPULATOR-X</p>
+<![end dummy Header 1]-->
+
 ## [Basic Operation](#basic-operation)
 
 Please note that this instruction is written for the **ROBOTIS official OpenMANIPULATOR-X package**. If you are operating a home made OpenMANIPULATOR-X, make sure to configure each DYNAMIXEL as below before operating.

@@ -25,6 +25,12 @@ page_number: 6
 
 {::options parse_block_html="true" /}
 
+<!--[dummy Header 1]>
+  <h1 id="dummy">Quick Start Guide</h1>
+  <h2 id="dummy">OpenCR Setup</h2>
+  <p class="dummy_content">OpenCR Setup</p>
+<![end dummy Header 1]-->
+
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/turtlebot3/opencr_setup_kinetic.md %}
 </section>

@@ -5,7 +5,7 @@ ref: all-communication
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/kr/parts/all_communication
+permalink: /docs/kr/parts/all_communication/
 sidebar:
   title: 커뮤니케이션
   nav: "all-communication"

@@ -16,6 +16,12 @@ page_number: 2
 <div style="counter-reset: h1 1"></div>
 <div style="counter-reset: h2 1"></div>
 
+<!--[dummy Header 1]>
+  <h1 id="dummy">Overview</h1>
+  <h2 id="dummy">Events</h2>
+  <p class="dummy_content">Various TurtleBot3 Events</p>
+<![end dummy Header 1]-->
+
 ## [Events](#challenges)
 
 ### [Online Competition on RDS](#online-competition-on-rds)
@@ -151,7 +157,7 @@ If you need more information about it or you want to launch it in your remote PC
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6t6cyFiGLvs?start=100" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 | Place | Team             | Source link                                                               |
-| :---- | :--------------- | :------------------------------------------------------------------------ |
+|:------|:-----------------|:--------------------------------------------------------------------------|
 | 1     | ROBIT            | [Github](https://github.com/developer0hye/2018-Turtlebot3-Autorace-ROBIT) |
 | 2     | Au-Di            | [Github](https://github.com/taening/AuDi-GIT-turtlebot3_autorace)         |
 | 3     | ROBIT2           | will be released soon                                                     |

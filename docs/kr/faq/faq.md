@@ -5,7 +5,7 @@ ref: faq
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/kr/faq/general
+permalink: /docs/kr/faq/general/
 sidebar:
   title: 기타 질문
   nav: "faq"

@@ -25,6 +25,12 @@ page_number: 5
 
 {::options parse_block_html="true" /}
 
+<!--[dummy Header 1]>
+  <h1 id="dummy">Quick Start Guide</h1>
+  <h2 id="dummy">SBC Setup</h2>
+  <p class="dummy_content">SBC is your Remote PC</p>
+<![end dummy Header 1]-->
+
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/turtlebot3/sbc_setup_kinetic.md %}
 </section>

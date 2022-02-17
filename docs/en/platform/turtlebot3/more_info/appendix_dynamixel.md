@@ -19,7 +19,9 @@ page_number: 47
 <div style="counter-reset: h3 1"></div>
 
 <!--[dummy Header 1]>
-  <h1 id="appendixes"><a href="#appendixes">Appendixes</a></h1>
+  <h1 id="dummy">More Info</h1>
+  <h2 id="dummy">Appendixes: DYNAMIXEL</h2>
+  <p class=dummy_content>TurtleBot3 Main Drive</p>
 <![end dummy Header 1]-->
 
 ## [Appendixes](#appendixes)

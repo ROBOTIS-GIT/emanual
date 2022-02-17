@@ -17,7 +17,9 @@ page_number: 33
 <div style="counter-reset: h2 1"></div>
 
 <!--[dummy Header 1]>
-  <h1 id="setup"><a href="#setup">Setup</a></h1>
+  <h1 id="dummy">More Info</h1>
+  <h2 id="dummy">Compatible Device</h2>
+  <p class="dummy_content">Computer, Hardware Assembly, Power, sensros and etc</p>
 <![end dummy Header 1]-->
 
 ## [Compatible Devices](#compatible-devices)
