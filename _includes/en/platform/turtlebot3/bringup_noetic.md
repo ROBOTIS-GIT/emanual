@@ -10,6 +10,9 @@ $ roscore
 
 ### [Bringup TurtleBot3](#bringup-turtlebot3)
 
+**TIP**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `burger`, `waffle`, `waffle_pi`.  
+{: .notice--success}
+
 1. Open a new terminal from PC with `Ctrl` + `Alt` + `T` and connect to Raspberry Pi with its IP address.  
   The default password is **turtlebot**.  
   ```bash
@@ -18,6 +21,7 @@ $ ssh ubuntu@{IP_ADDRESS_OF_RASPBERRY_PI}
 
 2. Bring up basic packages to start TurtleBot3 applications.
   ```bash
+$ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
   ```
 
@@ -88,7 +92,7 @@ $ roslaunch turtlebot3_bringup turtlebot3_remote.launch
 
 2. Open a new terminal and enter the below command to run RViz.  
   ```bash
-$ rosrun rviz rviz -d `rospack find turtlebot3_description`/rviz/model.rviz
+$ rosrun rviz rviz -d `rospack find turtlebot3_description`/rviz/burger.rviz
   ```  
   ![](/assets/images/platform/turtlebot3/bringup/run_rviz.jpg)
 
