@@ -16,6 +16,9 @@ product_group: dxl_ax
 
 > AX-12W
 
+**NOTE** : The [XL430-W250](/docs/en/dxl/x/xl430-w250) is an X series DYNAMIXEL serving as a direct replacement of the AX-12. X series servos offer improved performance and additional features, as well as support for [DYNAMIXEL Protocol 2.0](docs/en/dxl/protocol2). ROBOTIS recommends that new and existing AX-12 users transition to [XL430-W250](/docs/en/dxl/x/xl430-w250).
+{: .notice--warning}
+
 # [Specifications](#specifications)
 
 | Item                   | Specifications                                                                                            |
