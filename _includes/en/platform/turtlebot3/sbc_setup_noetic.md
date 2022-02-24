@@ -34,6 +34,7 @@ Noetic version images are created based on Ubuntu 20.04.
 {% endcapture %}
 <div class="notice--success">{{ download_02 | markdownify }}</div>
 
+The recovery image files was updated on February 15, 2022.
 The recovery image files can be modified without a prior notice.
 {: .notice}
 

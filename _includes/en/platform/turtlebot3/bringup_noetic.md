@@ -90,10 +90,10 @@ $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
 $ roslaunch turtlebot3_bringup turtlebot3_remote.launch
   ```
 
-2. Open a new terminal and enter the below command to run RViz.  
+2. Open a new terminal and enter the below command to run RViz. To run rviz, you need to specify the model name of TurtleBot3.
   ```bash
-$ rosrun rviz rviz -d `rospack find turtlebot3_description`/rviz/burger.rviz
+$ rosrun rviz rviz -d `rospack find turtlebot3_description`/rviz/{burger, waffle_pi}.rviz
   ```  
-  ![](/assets/images/platform/turtlebot3/bringup/run_rviz.jpg)
+  ![](/assets/images/platform/turtlebot3/bringup/2022_run_rviz.png)
 
 </details>
