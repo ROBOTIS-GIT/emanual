@@ -49,7 +49,7 @@ $ cat /sys/bus/usb-serial/devices/ttyUSB0/latency_timer
 </summary>
 
 This section describes how to set up OpenCR as a communication board between **ROS Packages** of PC and DYNAMIXEL's of OpenMANIPULATOR-X.  
-If you want to operate OpenMANIPULATOR-X on embedded system (OpenCR) without ROS, see [OpenCR Setup](/docs/en/platform/openmanipulator_x/opencr_setup/#opencr-setup).
+If you want to operate OpenMANIPULATOR-X on embedded system (OpenCR) without ROS, please select the `Arduino` tab at the top of the page.
 
 #### Connection
 
