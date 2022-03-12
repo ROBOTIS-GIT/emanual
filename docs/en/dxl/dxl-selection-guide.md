@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: dxl-quick-start-insert
+ref: dxl-selection-guide
 read_time: true
 share: true
 author_profile: false
@@ -30,7 +30,7 @@ DYNAMIXELs offer various benefits over other comparable servos including:
 - Designed for "daisy-chain" connections to link multiple DYNAMIXELs. One cable between each link in the DYNAMIXEL chain simplifies cable management and power delivery.
 
 
-# [DYNAMIXEL Selection Process](#dynamixel-selection-process)
+# [DYNAMIXEL Selection](#dynamixel-selection)
 
 When selecting a DYNAMIXEL servo and control solution for your application, it is important to ensure that all of your chosen components are compatible with one another. One way to ensure that they will all be compatible with one another is to select them in the following order.
 
@@ -126,7 +126,7 @@ The DYNAMIXEL [Controller Compatibility Chart](/docs/en/parts/controller/control
 {% endcapture %}
 <div class="notice">{{ sdk_notice_03 | markdownify }}</div>
 
-### [CM Series](cm-series)
+### [CM Series](#cm-series)
  
 ROBOTIS produces a series of controllers specifically designed for DYNAMIXEL Control. These controllers cover a wide variety of uses, so that you can choose the CM series controller best suited for your project.
 
@@ -195,9 +195,11 @@ The [DYNAMIXEL Shield] and [MKR Shield](/docs/en/parts/interface/mkr_shield) wer
 
 ### [OpenCR1.0](#opencr10)
 
-[OpenCR1.0] (Open-source Control module for ROS) is an open source robot controller with a powerful embedded MCU from the ARM Cortex-M7 line-up. The hardware, software, schematics, PCB Gerber, BOM, and firmware of the OpenCR1.0 are completely open source. It was developed to serve as the main controller used in the official ROBOTIS ROS education platform [TurtleBot3](/docs/en/platform/turtlebot3/overview/).
+![](/assets/images/parts/controller/opencr10/opencr_product.png)
 
-The [OpenCR1.0] supports RS-485 and TTL communication for DYNAMIXEL control as well as UART and CAN buses and a variety of other ports and opportunites for other peripherals. The OpenCR is also compatible with Arduino IDE for developing customized software for your projects. Additionally, the OpenCR can be used in coordination with a SBC such as a RaspberyPi to enable more powerful mobile operation than a standalone embedded controller.
+[OpenCR1.0](/docs/en/parts/controller/opencr10) (Open-source Control module for ROS) is an open source robot controller with a powerful embedded MCU from the ARM Cortex-M7 line-up. The hardware, software, schematics, PCB Gerber, BOM, and firmware of the OpenCR1.0 are completely open source. It was developed to serve as the main controller used in the official ROBOTIS ROS education platform [TurtleBot3](/docs/en/platform/turtlebot3/overview/).
+
+The [OpenCR1.0](/docs/en/parts/controller/opencr10) supports RS-485 and TTL communication for DYNAMIXEL control as well as UART and CAN buses and a variety of other ports and opportunites for other peripherals. The OpenCR is also compatible with Arduino IDE for developing customized software for your projects. Additionally, the OpenCR can be used in coordination with a SBC such as a RaspberyPi to enable more powerful mobile operation than a standalone embedded controller.
 
 ![](/assets/images/dxl/dxl_quick_start_insert/dxl_control_03.png) 
 
@@ -218,11 +220,13 @@ The most fully featured option is [R+ Task 3.0](/docs/en/software/rplustask3/), 
 
 #### [R+ Mobile](#r+-mobile)
 
-![](/assets/images/sw/rplus_mobile/r+m_task2_1.png)
+![](/assets/images/sw/rplus_mobile/r+m_task2_4.png)
 
-[R+ Mobile](/docs/en/software/rplus_mobile/mtask20/) is a fully featured programming environment for your Android smartphone, allowing programming, testing, and debugging to be done on the go.
+[R+ Mobile](/docs/en/software/rplus_mobile/mtask20/) is a fully featured programming environment for your Android smartphone, allowing programming, testing, and debugging to be done on the go.The ease of use and portability of this solution make it perfect for use in classroom settings as an easy to use programming interface that students will love.
 
 ### [Arduino IDE](#arduino-ide)
+
+![](/assets/images/parts/controller/opencm904/oencm904_upload_01.png)
 
 The Arduino IDE is compatible with both [OpenCR] and [OpenCM9.04], allowing users familiar with Arduino to easily integrate the [DYNAMIXEL SDK] to add fully featured DYNAMIXEL Support into their system.
 
@@ -235,7 +239,7 @@ Supplying your DYNAMIXELs with adequate power is the final step to ensure proper
 
 ### [SMPS](#smps)
 
-The SMPS power supply is ROBOTIS' reccomended soultion for powering most DYNAMIXEL Systems. The SMPS is capable of safely supplying a consistent 12v to ensure optimal operation of nearly any DYNAMIXEL.
+The SMPS power supply is ROBOTIS' recommended solution for powering most DYNAMIXEL Systems. The SMPS is capable of safely supplying a consistent 12v to ensure optimal operation of nearly any DYNAMIXEL.
 
 ### [Batteries](#batteries)
 

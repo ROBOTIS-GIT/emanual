@@ -27789,6 +27789,45 @@ dxl-quick-start:
       - title: "DYNAMIXEL and Arduino"
         url: /dxl/dxl-quick-start-insert/#dynamixel-and-arduino
 
+dxl-selection-guide:
+  - title: "DYNAMIXEL Selection Guide"
+    url: /dxl/dxl-selection-guide/#getting-started
+    children:
+      - title: "DYNAMIXEL Selection"
+        url: /dxl/dxl-quick-start-insert/#dynamixel-selection
+      - title: "Servos"
+        url: /dxl/dxl-quick-start-insert/#servos
+      - title: "DYNAMIXEL Models"
+        url: /dxl/dxl-quick-start-insert/#dynamixel-models
+      - title: "Performance"
+        url: /dxl/dxl-quick-start-insert/#performance
+      - title: "Communication"
+        url: /dxl/dxl-quick-start-insert/#communication
+      - title: "TTL"
+        url: /dxl/dxl-quick-start-insert/#ttl
+      - title: "RS485"
+        url: /dxl/dxl-quick-start-insert/#rs485
+      - title: "Firmware"
+        url: /dxl/dxl-quick-start-insert/#firmware
+      - title: "Controller"
+        url: /dxl/dxl-quick-start-insert/#controller
+      - title: "CM Series"
+        url: /dxl/dxl-quick-start-insert/#cm-series
+      - title: "OpenCM9.04"
+        url: /dxl/dxl-quick-start-insert/#opencm904
+      - title: "CM-530"
+        url: /dxl/dxl-quick-start-insert/#cm-530
+      - title: "CM-550"
+        url: /dxl/dxl-quick-start-insert/#cm-550
+      - title: "PC"
+        url: /dxl/dxl-quick-start-insert/#pc
+      - title: "Arduino"
+        url: /dxl/dxl-quick-start-insert/#arduino
+      - title: "OpenCR1.0"
+        url: /dxl/dxl-quick-start-insert/#opencr10
+      - title: "Software"
+        url: /dxl/dxl-quick-start-insert/#software
+
 contents-guide:
   - title: "Contents Guide"
     titlekr: "컨텐츠 작성방법"
