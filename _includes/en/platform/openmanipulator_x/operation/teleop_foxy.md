@@ -16,7 +16,7 @@
 1. Launch `open_manipulator_teleop_keyboard` node for simple teleoperation test using the keyboard.  
 The [OpenMANIPULATOR-X Controller](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) must be running on another terminal.  
 ```bash
-$ ros2 run open_manipulator_x_teleop open_manipulator_x_teleop_keyboard
+$ ros2 run open_manipulator_x_teleop teleop_keyboard
 ```
 
 2. If the node is successfully launched, the following instruction will appear in the terminal window.  
