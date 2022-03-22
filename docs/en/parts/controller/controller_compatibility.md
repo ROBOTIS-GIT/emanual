@@ -156,7 +156,7 @@ sidebar:
 |        [DYNAMIXEL SDK]        |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  O                  |      X      |    O     |
 |     [DYNAMIXEL Workbench]     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  O                  |      X      |    O     |
 |      [DYNAMIXEL Wizard]       |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  X                  |      X      |    X     |
-|    [DYNAMIXEL Wizard 2.0]     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  X                  |      X      |    X     |
+|    [DYNAMIXEL Wizard 2.0]     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  X                  |      X      |    O     |
 | [ROBOTIS Manipulator library] |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  X                  |      X      |    O     |
 | [Embeded SDK(CM-510/530/700)] |   X    |    X    |    X     |    X     |    X     |    X     |    O     |    O     |    X     |    O     |    X     |                  X                  |      X      |    X     |
 |          Arduino IDE          |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  O                  |      X      |    O     |

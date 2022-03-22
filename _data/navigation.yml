@@ -27790,43 +27790,105 @@ dxl-quick-start:
         url: /dxl/dxl-quick-start-insert/#dynamixel-and-arduino
 
 dxl-selection-guide:
-  - title: "DYNAMIXEL Selection Guide"
+  - title: "Getting Started"
     url: /dxl/dxl-selection-guide/#getting-started
-    children:
-      - title: "DYNAMIXEL Selection"
-        url: /dxl/dxl-quick-start-insert/#dynamixel-selection
-      - title: "Servos"
-        url: /dxl/dxl-quick-start-insert/#servos
-      - title: "DYNAMIXEL Models"
-        url: /dxl/dxl-quick-start-insert/#dynamixel-models
+    children:  
+      - title: "e-Shop"
+        url: /dxl/dxl-selection-guide/#e-shop
+  # - title: "DYNAMIXEL Selection"
+  #   url: /dxl/dxl-selection-guide/#dynamixel-selection
+  - title: "DYNAMIXEL"
+    url: /dxl/dxl-selection-guide/#dynamixel    
+    children:  
+      - title: "Models"
+        url: /dxl/dxl-selection-guide/#models
       - title: "Performance"
-        url: /dxl/dxl-quick-start-insert/#performance
+        url: /dxl/dxl-selection-guide/#performance
       - title: "Communication"
-        url: /dxl/dxl-quick-start-insert/#communication
-      - title: "TTL"
-        url: /dxl/dxl-quick-start-insert/#ttl
-      - title: "RS485"
-        url: /dxl/dxl-quick-start-insert/#rs485
-      - title: "Firmware"
-        url: /dxl/dxl-quick-start-insert/#firmware
-      - title: "Controller"
-        url: /dxl/dxl-quick-start-insert/#controller
-      - title: "CM Series"
-        url: /dxl/dxl-quick-start-insert/#cm-series
-      - title: "OpenCM9.04"
-        url: /dxl/dxl-quick-start-insert/#opencm904
-      - title: "CM-530"
-        url: /dxl/dxl-quick-start-insert/#cm-530
-      - title: "CM-550"
-        url: /dxl/dxl-quick-start-insert/#cm-550
-      - title: "PC"
-        url: /dxl/dxl-quick-start-insert/#pc
-      - title: "Arduino"
-        url: /dxl/dxl-quick-start-insert/#arduino
-      - title: "OpenCR1.0"
-        url: /dxl/dxl-quick-start-insert/#opencr10
-      - title: "Software"
-        url: /dxl/dxl-quick-start-insert/#software
+        url: /dxl/dxl-selection-guide/#communication
+        children:
+        - title: "TTL"
+          url: /dxl/dxl-selection-guide/#ttl
+        - title: "RS485"
+          url: /dxl/dxl-selection-guide/#rs485
+      # - title: "Firmware"
+      #   url: /dxl/dxl-selection-guide/#firmware
+  - title: "Power"
+    url: /dxl/dxl-selection-guide/#power
+    children:
+      - title: "Operating Voltages"
+        url: /dxl/dxl-selection-guide/#operating-voltage
+        children:
+          - title: DYNAMIXEL-X
+            url: /dxl/dxl-selection-guide/#dynamixel-x
+          - title: DYNAMIXEL-P
+            url: /dxl/dxl-selection-guide/#dynamixel-p
+      - title: "Power Solution"
+        url: /dxl/dxl-selection-guide/#power-solution
+        children:
+        - title: "SMPS"
+          url: /dxl/dxl-selection-guide/#smps
+        - title: "Batteries"
+          url: /dxl/dxl-selection-guide/#batteries
+        - title: "PSU"
+          url: /dxl/dxl-selection-guide/#psu
+  - title: "Controller & Interface"
+    url: /dxl/dxl-selection-guide/#controller--interface
+    children:  
+      - title: "Educational"
+        url: /dxl/dxl-selection-guide/#educational  
+        children:
+          - title: "CM Series"
+            url: /dxl/dxl-selection-guide/#cm-series
+          # - title: "OpenCM9.04"
+          #   url: /dxl/dxl-selection-guide/#opencm904
+          # - title: "CM-530"
+          #   url: /dxl/dxl-selection-guide/#cm-530
+          # - title: "CM-550"
+          #   url: /dxl/dxl-selection-guide/#cm-550
+      - title: "Interfaces"
+        url: /dxl/dxl-selection-guide/#interfaces
+        children:      
+        - title: "U2D2"
+          url: /dxl/dxl-selection-guide/#u2d2
+        - title: "DYNAMIXEL Shields"
+          url: /dxl/dxl-selection-guide/#dynamixel-shields
+      - title: "Embedded Controllers"
+        url: /dxl/dxl-selection-guide/#embedded-controllers
+        children: 
+        - title: "OpenCR1.0"
+          url: /dxl/dxl-selection-guide/#opencr10
+        - title: "OpenCM9.04"
+          url: /dxl/dxl-selection-guide/#opencm904          
+      - title: "Other Controllers"
+        url: /dxl/dxl-selection-guide/#other-controllers
+  - title: "Software & Tools"
+    url: /dxl/dxl-selection-guide/#software--tools
+    children: 
+    - title: "Educational Software"
+      url: /dxl/dxl-selection-guide/#educational-software
+      children: 
+      - title: "R+ Software Suite"
+        url: /dxl/dxl-selection-guide/#r-software-suite
+    - title: "Test & Management"
+      url: /dxl/dxl-selection-guide/#test--management
+      children: 
+      - title: "DYNAMIXEL Wizard 2.0"
+        url: /dxl/dxl-selection-guide/#dynamixel-wizard-20
+      - title: "R+ Manager 2.0"
+        url: /dxl/dxl-selection-guide/#r-manager-20
+    - title: "DYNAMIXEL Development"
+      url: /dxl/dxl-selection-guide/#dynamixel-development     
+      children: 
+        - title: "DYNAMIXEL SDK"
+          url: /dxl/dxl-selection-guide/#dynamixel-sdk
+        - title: "Arduino Library"
+          url: /dxl/dxl-selection-guide/#arduino-library
+          children: 
+          - title: "Dynamixel2Arduino"
+            url: /dxl/dxl-selection-guide/#dynamixel2arduino
+          - title: "DynamixelShield"
+            url: /dxl/dxl-selection-guide/#dynamixelshield
 
 contents-guide:
   - title: "Contents Guide"
