@@ -253,18 +253,15 @@ If the above installation fails, please refer to [the official ROS Noetic instal
 14. Install and Build ROS Packages.
   ```bash
 $ sudo apt install ros-noetic-rosserial-python ros-noetic-tf
-$ mkdir -p ~/catkin_ws/src && cd ~/catkin_ws/src
 $ sudo apt install ros-noetic-hls-lfcd-lds-driver
 $ sudo apt install ros-noetic-turtlebot3-msgs
 $ sudo apt install ros-noetic-dynamixel-sdk
+$ cd ~/catkin_ws/src
 $ git clone -b noetic-devel https://github.com/ROBOTIS-GIT/turtlebot3.git
 $ cd ~/catkin_ws/src/turtlebot3
 $ rm -r turtlebot3_description/ turtlebot3_teleop/ turtlebot3_navigation/ turtlebot3_slam/ turtlebot3_example/
 $ cd ~/catkin_ws/
-$ echo 'source /opt/ros/noetic/setup.bash' >> ~/.bashrc
-$ source ~/.bashrc
-$ cd ~/catkin_ws && catkin_make -j1
-$ echo 'source ~/catkin_ws/devel/setup.bash' >> ~/.bashrc
+$ catkin_make -j1
 $ source ~/.bashrc
   ```
 
