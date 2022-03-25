@@ -37,7 +37,7 @@ To purchase items, please visit the e-Shop :
 
 # [DYNAMIXEL](#dynamixel)
 
-The first consideration for any DYNAMIXEL System is the actuator. Choosing a DYNAMIXEL for your application should start by understanding the capabilities and communication protocols supported by the actuator you are considering. 
+The first consideration for any DYNAMIXEL System is the servos. Choosing a DYNAMIXEL for your application should start by understanding the capabilities and communication protocols supported by the servos you are considering. 
 
 ## [Models](#models)
 
@@ -49,7 +49,7 @@ DYNAMIXELs come in a variety of sizes and with a variety of capabilities, with e
 ![](/assets/images/dxl/p/dynamixel_pro_plus_lineup_table.jpg)
 > DYNAMIXEL-P Series Naming Convention
 
-This information is invaluable in narrowing your choices for actuators before moving on to considering the performance of the units.
+This information is invaluable in narrowing your choices for servos before moving on to considering the performance of the units.
 
 **NOTE**: DYNAMIXEL AX, MX series does not follow the naming convention, please jump to [Performance](#performance).
 {: .notice}
@@ -63,7 +63,7 @@ The easiest way to select a DYNAMIXEL based on its performance is to look at the
 
 <!-- {% include en/dxl/note_performance_graph.md %} -->
 
-Most DYNAMIXEL actuator have a graph like that one located on their page here on the e-Manual. This graph provides an easy way to examine the overall performance characteristics of the servo at a glance, by graphing four of the most important metrics against one another:
+Most DYNAMIXEL servos have a graph like that one located on their page here on the e-Manual. This graph provides an easy way to examine the overall performance characteristics of the servo at a glance, by graphing four of the most important metrics against one another:
 
 **NOTE**: In selecting DYNAMIXEL in terms of torque, ~20% of **Stall Torque** (See Specification) of DYNAMIXEL will be the general range of use for your system. 
 {: .notice}
@@ -88,7 +88,7 @@ To communicate with DYNAMIXELs, consistent communication protocol must be promis
 <summary>
 ![](/assets/images/icon_unfold.png) **Tip**: **Looking for a solution to combining TTL and RS485 of DYNAMIXEL in your system ?**
 </summary>
-Ordinarily, DYNAMIXELs utilizing different serial protocols can not communicate with one another over the same serial bus. This means that it is important to select actuator using compatible communications protocols. In some applications, you may need to combine DYNAMIXELs with mismatched serial protocols. For these cases, you can combine mismatched serial protocols using a [DYNAMIXEL Communication Bridge](/docs/en/parts/interface/dxl_bridge/).
+Ordinarily, DYNAMIXELs utilizing different serial protocols can not communicate with one another over the same serial bus. This means that it is important to select servos using compatible communications protocols. In some applications, you may need to combine DYNAMIXELs with mismatched serial protocols. For these cases, you can combine mismatched serial protocols using a [DYNAMIXEL Communication Bridge](/docs/en/parts/interface/dxl_bridge/).
 
 ![](/assets/images/parts/interface/dxl_bridge/u2d2_bridge_ttl_485.png)
 
@@ -98,7 +98,7 @@ Ordinarily, DYNAMIXELs utilizing different serial protocols can not communicate 
 
 TTL (Transistor-Transistor Logic), 0 to 5V logic level, is the common serial communication protocol in DYNAMIXEL. 
 
-An easy way to identify TTL DYNAMIXEL actuator is if the model name ends with a "T", or if the DYNAMIXEL ports on the rear of the actuator are 3 pin ports like these:
+An easy way to identify TTL DYNAMIXEL servos is if the model name ends with a "T", or if the DYNAMIXEL ports on the rear of the servos are 3 pin ports like these:
 
 ![](/assets/images/dxl/x/x_series_ttl_pin.png)  
 > Pin Diagram for TTL Based DYNAMIXEL, using JST connectors
@@ -119,9 +119,9 @@ To control the DYNAMIXEL actuators, the main controller needs to convert its UAR
 
 ### [RS485](#rs485)
 
-Some higher end DYNAMIXEL actuator operate using RS485 communications protocol. If you need longer cabling distance, RS485 will the best option for you. 
+Some higher end DYNAMIXEL servos operate using RS485 communications protocol. If you need longer cabling distance, RS485 will the best option for you. 
 
-These actuator can be identified by a model name that ends with an "R", or if the DYNAMIXEL ports on the rear of the actuator are 4 pin ports like these:
+These servos can be identified by a model name that ends with an "R", or if the DYNAMIXEL ports on the rear of the servos are 4 pin ports like these:
 
 ![](/assets/images/dxl/x/x_series_485_pin.png)   
 > Pin Diagram for RS485 Based DYNAMIXEL, using JST connectors
@@ -152,7 +152,7 @@ Before selecting your power solution, check out the operating voltage for each D
 
 ### [DYNAMIXEL-X](#dynamixel-x)
 
-Operating Voltage may differ depending on what model to be selected. See the following table.  
+- **DYNAMIXEL-X** Series: Operating Voltage may differ depending on what model to be selected. See the following table.  
 
 | Symbol |             Operating Voltage             |              Recommended              |
 |:------:|:-----------------------------------------:|:-------------------------------------:|
@@ -165,7 +165,7 @@ Operating Voltage may differ depending on what model to be selected. See the fol
 
 ### [DYNAMIXEL-P](#dynamixel-p)
 
-DYNAMIXEL-P Series runs at 24.0V. This can be compatible with DYNAMXEL-X's `V` models (24V). 
+- **DYNAMIXEL-P** Series: DYNAMIXEL-P Series runs at 24.0V. This can be compatible with DYNAMXEL-X's `V` models (24V). 
 
 |  Series   | Operating Voltage | Recommended |
 |:---------:|:-----------------:|:-----------:|
@@ -190,17 +190,15 @@ The **Batteries** provides more mobility than a fixed power supply can offer, in
 
 ### [PSU](#psu)
 
-The **PSU** gives you wide range of power options for your system. Espectially, With DYNAMIXEL-P or DYNAMIXEL-X with `V` model (24V), PSU will be the right selection for your system. Using a sufficient wattage model is recommended for the stability.
+The **PSU** gives you wide range of power options for your system. Espectially, With DYNAMIXEL-P or DYNAMIXEL-X with `V` model (24V), PSU will be the right selection for your system. * Using a sufficient wattage model is recommended for the stability.
 
 # [Controller & Interface](#controller--interface)
 
-The controller is one of the essential of the DYNAMIXEL system responsible for accessing the Control Table of DYNAMIXEL to read and write the data in address of the table.
-
-For most applications, you can choose which of the following control solution fits your needs best.
+The controller is the part of the DYNAMIXEL system responsible for issuing commands to the servos, as well as for interpreting the data received from connected DYNAMIXELs or any other integrated devices or sensors. For this reason, your choice of controller has a large impact on the rest of your DYNAMIXEL system. DYNAMIXEL's controller agnostic nature means that you can utilize any device capable of communication over TTL or RS485 serial as your DYNAMIXEL controller. For most applications, you can choose which of the following control solution fits your needs best.
 
 {% capture sdk_notice_03 %}
 **NOTE**: 
-The DYNAMIXEL [Controller Compatibility Chart](/docs/en/parts/controller/controller_compatibility/) provides a convenient way to quickly check which controllers are compatible with ROBOTIS products
+The DYNAMIXEL [Controller Compatibility Chart](/docs/en/parts/controller/controller_compatibility/) provides a convenient way to quickly check which controllers are compatible with each of ROBOTIS' sensors, servos, and software.
 {% endcapture %}
 <div class="notice">{{ sdk_notice_03 | markdownify }}</div>
 
@@ -210,7 +208,7 @@ The DYNAMIXEL [Controller Compatibility Chart](/docs/en/parts/controller/control
  
 [U2D2] is a serial interface that can convert USB to TTL / RS485 signal. 
 
-Using the inteface like U2D2 enable you to use [DYNAMIXEL Wizard 2.0](#dynamixel-wizard) to test, configure, and tune your DYNAMIXELs as well as the full features of the [DYNAMIXEL SDK](#dynamixel-sdk), with support for a variety languages.
+A PC and [U2D2] enable you to use [DYNAMIXEL Wizard 2.0](#dynamixel-wizard) to test, configure, and tune your DYNAMIXELs as well as the full features of the [DYNAMIXEL SDK](#dynamixel-sdk), with support for a variety languages.
 
 ![](/assets/images/parts/interface/u2d2_04.png){: width="400px", height="240px"}
 
@@ -288,7 +286,7 @@ The following items are our recent & most popular educational level controllers.
 **NOTE**: To see a full range of controllers provided by ROBOTIS, visit our [Controllers](/docs/en/parts/all-controller/) page.
 {: .notice}
 
-**NOTE**: Not all sensors are compatible with each CM series, check out the compatible sensors with each CM series at [Parts Compatibility](/docs/en/parts/controller/controller_compatibility/#parts)
+**NOTE**: Not all sensors are compatible with each CM series, check out the compatible sensors with each CM series at [Compatibility Table for parts](/docs/en/parts/controller/controller_compatibility/#parts)
 {: .notice}
 
 ## [Other Controllers](#other-controllers)
@@ -301,7 +299,7 @@ See all the range of [Controllers](/docs/en/parts/all-controller/) for more info
 
 Your choice of software is another important consideration for your DYNAMIXEL System. Your controller combined with your software defines the capabilities of your project, and how you will interact with your DYNAMIXELs.
 
-- Check out the [Software Compatibility](/docs/en/parts/controller/controller_compatibility/#software) which software is supportive with your selection.
+- Check out the [Controller Compatibility](/docs/en/parts/controller/controller_compatibility/) which software is supportive with your selection.
 
 ## [Test & Management](#test--management)
 
@@ -357,7 +355,7 @@ ROBOTIS provides comprehensive code APIs and basic example for Arduino users.
 
 #### [Dynamixel2Arduino](#dynamixel2arduino)
 
-[Dynamixel2Arduino] library designed based on [DYNAMIXEL SDK](#dynamixel-sdk-for-arduino) provides comprehensive code APIs. Dynamixel2Arduino give you user-friendly experience than DYNAMIXEL SDK in Arduino. 
+[Dynamixel2Arduino] library designed based on [DYNAMIXEL SDK](#dynamixel-sdk-for-arduino) provides comprehensive code APIs. Dynamixel2Arduino give you user-friendly experience rather than using DYNAMIXEL SDK in Arduino. 
 - [API Reference](/docs/en/software/arduino_ide/#dynamixel2arduino-library)
 
 ![](/assets/images/parts/interface/dynamixel_shield/library_manager_02.png)
