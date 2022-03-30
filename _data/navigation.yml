@@ -27800,22 +27800,22 @@ dxl-selection-guide:
         url: /dxl/dxl-selection-guide/#e-shop
         urlkr: /dxl/dxl-selection-guide/#스토어
   - title: "DYNAMIXEL"
-    titlekr: "다이나믹셀"
+    titlekr: "다이나믹셀 "
     url: /dxl/dxl-selection-guide/#dynamixel
-    urlkr: /dxl/dxl-selection-guide/#다이나믹셀
+    urlkr: /dxl/dxl-selection-guide/#다이나믹셀-
     children:  
       - title: "Models"
         titlekr: "모델"
         url: /dxl/dxl-selection-guide/#models
         urlkr: /dxl/dxl-selection-guide/#모델
       - title: "Performance"
-        titlekr: "Performance"
+        titlekr: "성능 그래프"
         url: /dxl/dxl-selection-guide/#performance
-        urlkr: /dxl/dxl-selection-guide/#performance 
+        urlkr: /dxl/dxl-selection-guide/#성능-그래프
       - title: "Communication"
-      - titlekr: "Communication"      
+      - titlekr: "통신"      
         url: /dxl/dxl-selection-guide/#communication
-        urlkr: /dxl/dxl-selection-guide/#communication
+        urlkr: /dxl/dxl-selection-guide/#통신
         children:
         - title: "TTL"
           titlekr: "TTL"
@@ -27861,7 +27861,7 @@ dxl-selection-guide:
           url: /dxl/dxl-selection-guide/#psu
           urlkr: /dxl/dxl-selection-guide/#psu
   - title: "Controller & Interface"
-    title: "제어기와 인터페이스"
+    titlekr: "제어기와 인터페이스"
     url: /dxl/dxl-selection-guide/#controller--interface
     urlkr: /dxl/dxl-selection-guide/#제어기와-인터페이스
     children:  
@@ -27879,7 +27879,7 @@ dxl-selection-guide:
           url: /dxl/dxl-selection-guide/#dynamixel-shields
           urlkr: /dxl/dxl-selection-guide/#다이나믹셀-쉴드
       - title: "Embedded Controllers"
-        title: "임베디드 제어기"
+        titlekr: "임베디드 제어기"
         url: /dxl/dxl-selection-guide/#embedded-controllers
         urlkr: /dxl/dxl-selection-guide/#임베디드-제어기
         children: 
@@ -27925,14 +27925,14 @@ dxl-selection-guide:
         url: /dxl/dxl-selection-guide/#r-manager-20
         urlkr: /dxl/dxl-selection-guide/#r-manager-20
     - title: "DYNAMIXEL Development"
-      titlekr: "DYNAMIXEL Development"
+      titlekr: "개발도구"
       url: /dxl/dxl-selection-guide/#dynamixel-development     
-      urlkr: /dxl/dxl-selection-guide/#dynamixel-development           
+      urlkr: /dxl/dxl-selection-guide/#개발도구
       children: 
         - title: "DYNAMIXEL SDK"
-          titlekr: "DYNAMIXEL SDK"
+          titlekr: "다이나믹셀 SDK"
           url: /dxl/dxl-selection-guide/#dynamixel-sdk
-          urlkr: /dxl/dxl-selection-guide/#dynamixel-sdk          
+          urlkr: /dxl/dxl-selection-guide/#다이나믹셀-sdk          
         - title: "Arduino Library"
           titlekr: "아두이노 라이브러리"
           url: /dxl/dxl-selection-guide/#arduino-library
