@@ -27792,169 +27792,202 @@ dxl-quick-start:
 dxl-selection-guide:
   - title: "Getting Started"
     titlekr: "시작하기"
-    url: /dxl/dxl-selection-guide/#getting-started
-    urlkr: /dxl/dxl-selection-guide/#시작하기
+    url: /reference/dxl-selection-guide/#getting-started
+    urlkr: /reference/dxl-selection-guide/#시작하기
     children:  
       - title: "e-Shop"
         titlekr: "스토어"
-        url: /dxl/dxl-selection-guide/#e-shop
-        urlkr: /dxl/dxl-selection-guide/#스토어
+        url: /reference/dxl-selection-guide/#e-shop
+        urlkr: /reference/dxl-selection-guide/#스토어
   - title: "DYNAMIXEL"
     titlekr: "다이나믹셀 "
-    url: /dxl/dxl-selection-guide/#dynamixel
-    urlkr: /dxl/dxl-selection-guide/#다이나믹셀-
+    url: /reference/dxl-selection-guide/#dynamixel
+    urlkr: /reference/dxl-selection-guide/#다이나믹셀-
     children:  
       - title: "Models"
         titlekr: "모델"
-        url: /dxl/dxl-selection-guide/#models
-        urlkr: /dxl/dxl-selection-guide/#모델
+        url: /reference/dxl-selection-guide/#models
+        urlkr: /reference/dxl-selection-guide/#모델
       - title: "Performance"
         titlekr: "성능 그래프"
-        url: /dxl/dxl-selection-guide/#performance
-        urlkr: /dxl/dxl-selection-guide/#성능-그래프
+        url: /reference/dxl-selection-guide/#performance
+        urlkr: /reference/dxl-selection-guide/#성능-그래프
       - title: "Communication"
-      - titlekr: "통신"      
-        url: /dxl/dxl-selection-guide/#communication
-        urlkr: /dxl/dxl-selection-guide/#통신
+        titlekr: "통신"      
+        url: /reference/dxl-selection-guide/#communication
+        urlkr: /reference/dxl-selection-guide/#통신
         children:
         - title: "TTL"
           titlekr: "TTL"
-          url: /dxl/dxl-selection-guide/#ttl
-          urlkr: /dxl/dxl-selection-guide/#ttl
+          url: /reference/dxl-selection-guide/#ttl
+          urlkr: /reference/dxl-selection-guide/#ttl
         - title: "RS485"
         - titlekr: "RS485"        
-          url: /dxl/dxl-selection-guide/#rs485
-          urlkr: /dxl/dxl-selection-guide/#rs485
+          url: /reference/dxl-selection-guide/#rs485
+          urlkr: /reference/dxl-selection-guide/#rs485
   - title: "Power"
     titlekr: "전원"
-    url: /dxl/dxl-selection-guide/#power
-    urlkr: /dxl/dxl-selection-guide/#전원
+    url: /reference/dxl-selection-guide/#power
+    urlkr: /reference/dxl-selection-guide/#전원
     children:
       - title: "Operating Voltages"
         titlekr: "사용 전압"
-        url: /dxl/dxl-selection-guide/#operating-voltage
-        urlkr: /dxl/dxl-selection-guide/#사용-전압
+        url: /reference/dxl-selection-guide/#operating-voltage
+        urlkr: /reference/dxl-selection-guide/#사용-전압
         children:
           - title: "DYNAMIXEL-X"
             titlekr: "다이나믹셀 X 시리즈"
-            url: /dxl/dxl-selection-guide/#dynamixel-x
-            urlkr: /dxl/dxl-selection-guide/#다이나믹셀-x-시리즈
+            url: /reference/dxl-selection-guide/#dynamixel-x
+            urlkr: /reference/dxl-selection-guide/#다이나믹셀-x-시리즈
           - title: "DYNAMIXEL-P"
             titlekr: "다이나믹셀 P 시리즈"
-            url: /dxl/dxl-selection-guide/#dynamixel-p
-            urlkr: /dxl/dxl-selection-guide/#다이나믹셀-p-시리즈
+            url: /reference/dxl-selection-guide/#dynamixel-p
+            urlkr: /reference/dxl-selection-guide/#다이나믹셀-p-시리즈
       - title: "Power Solution"
-      - titlekr: "전원 솔루션"
-        url: /dxl/dxl-selection-guide/#power-solution
-        urlkr: /dxl/dxl-selection-guide/#전원-솔루션
+        titlekr: "전원 솔루션"
+        url: /reference/dxl-selection-guide/#power-solution
+        urlkr: /reference/dxl-selection-guide/#전원-솔루션
         children:
         - title: "SMPS"
           titlekr: "SMPS"
-          url: /dxl/dxl-selection-guide/#smps
-          urlkr: /dxl/dxl-selection-guide/#smps
+          url: /reference/dxl-selection-guide/#smps
+          urlkr: /reference/dxl-selection-guide/#smps
         - title: "Batteries"
           titlekr: "배터리"
-          url: /dxl/dxl-selection-guide/#batteries
-          urlkr: /dxl/dxl-selection-guide/#배터리
+          url: /reference/dxl-selection-guide/#batteries
+          urlkr: /reference/dxl-selection-guide/#배터리
         - title: "PSU"
-          title: "PSU"
-          url: /dxl/dxl-selection-guide/#psu
-          urlkr: /dxl/dxl-selection-guide/#psu
+          titlekr: "PSU"
+          url: /reference/dxl-selection-guide/#psu
+          urlkr: /reference/dxl-selection-guide/#psu
   - title: "Controller & Interface"
     titlekr: "제어기와 인터페이스"
-    url: /dxl/dxl-selection-guide/#controller--interface
-    urlkr: /dxl/dxl-selection-guide/#제어기와-인터페이스
+    url: /reference/dxl-selection-guide/#controller--interface
+    urlkr: /reference/dxl-selection-guide/#제어기와-인터페이스
     children:  
       - title: "Interfaces"
         titlekr: "인터페이스"
-        url: /dxl/dxl-selection-guide/#interfaces
-        urlkr: /dxl/dxl-selection-guide/#인터페이스        
+        url: /reference/dxl-selection-guide/#interfaces
+        urlkr: /reference/dxl-selection-guide/#인터페이스        
         children:      
         - title: "U2D2"
           titlekr: "U2D2"
-          url: /dxl/dxl-selection-guide/#u2d2
-          urlkr: /dxl/dxl-selection-guide/#u2d2
+          url: /reference/dxl-selection-guide/#u2d2
+          urlkr: /reference/dxl-selection-guide/#u2d2
         - title: "DYNAMIXEL Shields"
           titlekr: "다이나믹셀 쉴드"
-          url: /dxl/dxl-selection-guide/#dynamixel-shields
-          urlkr: /dxl/dxl-selection-guide/#다이나믹셀-쉴드
+          url: /reference/dxl-selection-guide/#dynamixel-shields
+          urlkr: /reference/dxl-selection-guide/#다이나믹셀-쉴드
       - title: "Embedded Controllers"
         titlekr: "임베디드 제어기"
-        url: /dxl/dxl-selection-guide/#embedded-controllers
-        urlkr: /dxl/dxl-selection-guide/#임베디드-제어기
+        url: /reference/dxl-selection-guide/#embedded-controllers
+        urlkr: /reference/dxl-selection-guide/#임베디드-제어기
         children: 
         # - title: "OpenRB-150"
-        #   url: /dxl/dxl-selection-guide/#openrb-150       
+        #   url: /reference/dxl-selection-guide/#openrb-150       
         - title: "OpenCR1.0"
           titlekr: "OpenCR1.0"
-          url: /dxl/dxl-selection-guide/#opencr10
-          urlkr: /dxl/dxl-selection-guide/#opencr10
+          url: /reference/dxl-selection-guide/#opencr10
+          urlkr: /reference/dxl-selection-guide/#opencr10
         - title: "OpenCM9.04"
           titlekr: "OpenCM9.04"
-          url: /dxl/dxl-selection-guide/#opencm904
-          urlkr: /dxl/dxl-selection-guide/#opencm904
+          url: /reference/dxl-selection-guide/#opencm904
+          urlkr: /reference/dxl-selection-guide/#opencm904
       - title: "Educational"
         titlekr: "교육용"
-        url: /dxl/dxl-selection-guide/#educational  
-        urlkr: /dxl/dxl-selection-guide/#교육용
+        url: /reference/dxl-selection-guide/#educational  
+        urlkr: /reference/dxl-selection-guide/#교육용
         children:
           - title: "CM Series"
             titlekr: "CM 시리즈"
-            url: /dxl/dxl-selection-guide/#cm-series
-            urlkr: /dxl/dxl-selection-guide/#cm-시리즈
+            url: /reference/dxl-selection-guide/#cm-series
+            urlkr: /reference/dxl-selection-guide/#cm-시리즈
       - title: "Other Controllers"
-      - titlekr: "기타 제어기"
-        url: /dxl/dxl-selection-guide/#other-controllers
-        urlkr: /dxl/dxl-selection-guide/#기타-제어기
+        titlekr: "기타 제어기"
+        url: /reference/dxl-selection-guide/#other-controllers
+        urlkr: /reference/dxl-selection-guide/#기타-제어기
   - title: "Software & Tools"
     titlekr: "소프트웨어와 도구"
-    url: /dxl/dxl-selection-guide/#software--tools
-    urlkr: /dxl/dxl-selection-guide/#소프트웨어와-도구
+    url: /reference/dxl-selection-guide/#software--tools
+    urlkr: /reference/dxl-selection-guide/#소프트웨어와-도구
     children: 
     - title: "Test & Management"
       titlekr: "테스트 및 관리도구"
-      url: /dxl/dxl-selection-guide/#test--management
-      urlkr: /dxl/dxl-selection-guide/#테스트-및-관리도구
+      url: /reference/dxl-selection-guide/#test--management
+      urlkr: /reference/dxl-selection-guide/#테스트-및-관리도구
       children: 
       - title: "DYNAMIXEL Wizard 2.0"
         titlekr: "DYNAMIXEL Wizard 2.0"
-        url: /dxl/dxl-selection-guide/#dynamixel-wizard-20
-        urlkr: /dxl/dxl-selection-guide/#dynamixel-wizard-20        
+        url: /reference/dxl-selection-guide/#dynamixel-wizard-20
+        urlkr: /reference/dxl-selection-guide/#dynamixel-wizard-20        
       - title: "R+ Manager 2.0"
         titlekr: "R+ Manager 2.0"
-        url: /dxl/dxl-selection-guide/#r-manager-20
-        urlkr: /dxl/dxl-selection-guide/#r-manager-20
+        url: /reference/dxl-selection-guide/#r-manager-20
+        urlkr: /reference/dxl-selection-guide/#r-manager-20
     - title: "DYNAMIXEL Development"
       titlekr: "개발도구"
-      url: /dxl/dxl-selection-guide/#dynamixel-development     
-      urlkr: /dxl/dxl-selection-guide/#개발도구
+      url: /reference/dxl-selection-guide/#dynamixel-development     
+      urlkr: /reference/dxl-selection-guide/#개발도구
       children: 
         - title: "DYNAMIXEL SDK"
           titlekr: "다이나믹셀 SDK"
-          url: /dxl/dxl-selection-guide/#dynamixel-sdk
-          urlkr: /dxl/dxl-selection-guide/#다이나믹셀-sdk          
+          url: /reference/dxl-selection-guide/#dynamixel-sdk
+          urlkr: /reference/dxl-selection-guide/#다이나믹셀-sdk          
         - title: "Arduino Library"
           titlekr: "아두이노 라이브러리"
-          url: /dxl/dxl-selection-guide/#arduino-library
-          urlkr: /dxl/dxl-selection-guide/#아두이노-라이브러리         
+          url: /reference/dxl-selection-guide/#arduino-library
+          urlkr: /reference/dxl-selection-guide/#아두이노-라이브러리         
           children: 
           - title: "Dynamixel2Arduino"
             titlekr: "Dynamixel2Arduino"
-            url: /dxl/dxl-selection-guide/#dynamixel2arduino
-            urlkr: /dxl/dxl-selection-guide/#dynamixel2arduino            
+            url: /reference/dxl-selection-guide/#dynamixel2arduino
+            urlkr: /reference/dxl-selection-guide/#dynamixel2arduino            
           - title: "DynamixelShield"
             titlekr: "DynamixelShield"
-            url: /dxl/dxl-selection-guide/#dynamixelshield
-            urlkr: /dxl/dxl-selection-guide/#dynamixelshield            
+            url: /reference/dxl-selection-guide/#dynamixelshield
+            urlkr: /reference/dxl-selection-guide/#dynamixelshield            
     - title: "Educational Software"
       titlekr: "교육용 소프트웨어"
-      url: /dxl/dxl-selection-guide/#educational-software
-      urlkr: /dxl/dxl-selection-guide/#교육용-소프트웨어
+      url: /reference/dxl-selection-guide/#educational-software
+      urlkr: /reference/dxl-selection-guide/#교육용-소프트웨어
       children: 
       - title: "R+ Software Suite"
         titlekr: "로보플러스"
-        url: /dxl/dxl-selection-guide/#r-software-suite
-        urlkr: /dxl/dxl-selection-guide/#로보플러스                    
+        url: /reference/dxl-selection-guide/#r-software-suite
+        urlkr: /reference/dxl-selection-guide/#로보플러스                    
+
+dxl-quick-start-guide: 
+  - title: "Getting Started"
+    url: /dxl/dxl-quick-start-guide/#getting-started
+    children: 
+      - title: "Archive"
+        url: /dxl/dxl-quick-start-guide/#archive
+  - title: "DYNAMIXEL SDK"
+    url: /dxl/dxl-quick-start-guide/#dynamixel-sdk
+    children: 
+      - title: "C"
+        url: /dxl/dxl-quick-start-guide/#c
+      - title: "C++"
+        url: /dxl/dxl-quick-start-guide/#c-1
+      - title: "C-Sharp"
+        url: /dxl/dxl-quick-start-guide/#c-sharp
+      - title: "Python"
+        url: /dxl/dxl-quick-start-guide/#python
+      - title: "Java"
+        url: /dxl/dxl-quick-start-guide/#java
+      - title: "Matlab"
+        url: /dxl/dxl-quick-start-guide/#matlab
+      - title: "LabVIEW"
+        url: /dxl/dxl-quick-start-guide/#labview
+      - title: "ROS"
+        url: /dxl/dxl-quick-start-guide/#ros
+  - title: "Arduino"
+    url: /dxl/dxl-quick-start-guide/#arduino
+    children: 
+      - title: "Dynamixel2Arduino"
+        url: /dxl/dxl-quick-start-guide/#dynamixel2arduino
+      - title: "DynamixelShield"
+        url: /dxl/dxl-quick-start-guide/#dynamixelshield
 
 contents-guide:
   - title: "Contents Guide"

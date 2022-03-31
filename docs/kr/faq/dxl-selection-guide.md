@@ -5,7 +5,7 @@ ref: dxl-selection-guide
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/kr/dxl/dxl-selection-guide/
+permalink: /docs/kr/reference/dxl-selection-guide/
 sidebar:
   title: 다이나믹셀 선택 가이드
   nav: "dxl-selection-guide"

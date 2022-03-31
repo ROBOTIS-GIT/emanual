@@ -5,7 +5,7 @@ ref: dxl-selection-guide
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/dxl/dxl-selection-guide/
+permalink: /docs/en/reference/dxl-selection-guide/
 sidebar:
   title: DYNAMIXEL Selection Guide
   nav: "dxl-selection-guide"
