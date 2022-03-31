@@ -26190,115 +26190,64 @@ opencm904_jp:
 
 #OpenRB-150 sidebar
 openrb-150:
-  - title: "Introduction"
+  - title: "Overview"
     titlekr: "개요"
-    url: /parts/controller/openrb-150/#introduction
+    url: /parts/controller/openrb-150/#overview
     urlkr: /parts/controller/openrb-150/#개요
   - title: "Specifications"
     titlekr: "제품 사양"
     url: /parts/controller/openrb-150/#specifications
     urlkr: /parts/controller/openrb-150/#제품-사양
-  - title: "Control Table"
-    titlekr: "컨트롤 테이블"
-    url: /parts/controller/openrb-150/#control-table
-    urlkr: /parts/controller/openrb-150/#컨트롤-테이블
-  - title: "Hardware"
-    titlekr: "하드웨어"
-    url: /parts/controller/openrb-150/#hardware
-    urlkr: /parts/controller/openrb-150/#하드웨어
-  - title: "Hardware"
-    titlekr: "하드웨어"
-    url: /parts/controller/openrb-150/#hardware
-    urlkr: /parts/controller/openrb-150/#하드웨어
+  - title: "Hardware Layout"
+    titlekr: "하드웨어 레이아웃"
+    url: /parts/controller/openrb-150/#hardware-layout
+    urlkr: /parts/controller/openrb-150/#하드웨어-레이아웃
     children:
-    - title: "Memory Map"
-      titlekr: "메모리 맵"
-      url: /parts/controller/openrb-150/#memory-map
-      urlkr: /parts/controller/openrb-150/#메모리-맵
-    - title: "Block Diagram"
-      titlekr: "블럭 다이어그램"
-      url: /parts/controller/openrb-150/#block-diagram
-      urlkr: /parts/controller/openrb-150/#블럭-다이어그램
-    - title: "Layout / Pin Map"
-      titlekr: "각 부 명칭"
-      url: /parts/controller/openrb-150/#layoutpin-map
-      urlkr: /parts/controller/openrb-150/#각-부-명칭
-      children:
-      - title: "Power Switch"
-        titlekr: "전원 스위치"
-        url: /parts/controller/openrb-150/#power-switch
-        urlkr: /parts/controller/openrb-150/#전원-스위치
-      - title: "Serial Battery Socket"
-        titlekr: "직렬 배터리 소켓"
-        url: /parts/controller/openrb-150/#serial-battery-socket
-        urlkr: /parts/controller/openrb-150/#직렬-배터리-소켓
-      - title: "DYNAMIXEL TTL Socket"
-        titlekr: "다이나믹셀 TTL 소켓"
-        url: /parts/controller/openrb-150/#dynamixel-ttl-3-pin
-        urlkr: /parts/controller/openrb-150/#다이나믹셀-ttl-소켓
-      - title: "Communication Port"
-        titlekr: "통신포트"
-        url: /parts/controller/openrb-150/#communication-port
-        urlkr: /parts/controller/openrb-150/#통신포트
-      - title: "User Button"
-        titlekr: "사용자 버튼"
-        url: /parts/controller/openrb-150/#user-button
-        urlkr: /parts/controller/openrb-150/#사용자-버튼
-      - title: "Ext ADC Ref Jumper"
-        titlekr: "외부 ADC 기준전압 점퍼"
-        url: /parts/controller/openrb-150/#ext-adc-ref-jumper
-        urlkr: /parts/controller/openrb-150/#외부-adc-기준전압-점퍼
-      - title: "Micro-B USB"
-        titlekr: "Micro-B USB"
-        url: /parts/controller/openrb-150/#micro-b-usb
-        urlkr: /parts/controller/openrb-150/#micro-b-usb
-      - title: "Status LED"
-        titlekr: "상태"
-        url: /parts/controller/openrb-150/#status-led
-        urlkr: /parts/controller/openrb-150/#상태-led
-      - title: "Reset Button"
-        titlekr: "리셋 버튼"
-        url: /parts/controller/openrb-150/#reset-button
-        urlkr: /parts/controller/openrb-150/#리셋-버튼
-      - title: "JTAG/SWD Pin"
-        titlekr: "JTAG/SWD Pin"
-        url: /parts/controller/openrb-150/#jtagswd-4-pin
-        urlkr: /parts/controller/openrb-150/#jtagswd-4-pin
-      - title: "ROBOTIS 5-Pin Port"
-        titlekr: "로보티즈 5핀 포트"
-        url: /parts/controller/openrb-150/#robotis-5-pin-port
-        urlkr: /parts/controller/openrb-150/#로보티즈-5핀-포트
-      - title: "I/O Header"
-        titlekr: "입출력 IO헤더"
-        url: /parts/controller/openrb-150/#io-header
-        urlkr: /parts/controller/openrb-150/#입출력-io헤더
-    - title: "Pin Name Definition"
-      titlekr: "핀 이름 정의"
-      url: /parts/controller/openrb-150/#pin-name-definition
-      urlkr: /parts/controller/openrb-150/#핀-이름-정의
-    - title: "Pin Function Definition"
-      titlekr: "핀 기능 정의"
-      url: /parts/controller/openrb-150/#pin-function-definition
-      urlkr: /parts/controller/openrb-150/#핀-기능-정의
+    - title: "Pinout"
+      titlekr: "핀아웃"
+      url: /parts/controller/openrb-150/#pinout
+      urlkr: /parts/controller/openrb-150/#핀아웃
+    - title: "Reset Button"
+      titlekr: "리셋 버튼"
+      url: /parts/controller/openrb-150/#reset-button
+      urlkr: /parts/controller/openrb-150/#리셋-버튼
+    - title: "DYNAMIXEL Power Switch"
+      titlekr: "다이나믹셀 전원 스위치"
+      url: /parts/controller/openrb-150/#dynamixel-power-switch
+      urlkr: /parts/controller/openrb-150/#다이나믹셀-전원-스위치
+    - title: "Terminal VIN"
+      titlekr: "터미널 전원 입력"
+      url: /parts/controller/openrb-150/#terminal-vin
+      urlkr: /parts/controller/openrb-150/#터미널-전원-입력
+    - title: "DYNAMIXEL Ports"
+      titlekr: "다이나믹셀 포트"
+      url: /parts/controller/openrb-150/#dynamixel-ports
+      urlkr: /parts/controller/openrb-150/#다이나믹셀-포트
+    - title: "Serial Port"
+      titlekr: "시리얼 포트"
+      url: /parts/controller/openrb-150/#serial-port
+      urlkr: /parts/controller/openrb-150/#시리얼-포트
+    - title: "LEDs"
+      titlekr: "LEDs"
+      url: /parts/controller/openrb-150/#leds
+      urlkr: /parts/controller/openrb-150/#leds
+  - title: "Pin Name Definitions"
+    titlekr: "핀 이름 정의"
+    url: /parts/controller/openrb-150/#pin-name-definitions
+    urlkr: /parts/controller/openrb-150/#핀-이름-정의
   - title: "Connecting Power"
     titlekr: "전원 연결 방법"
     url: /parts/controller/openrb-150/#connecting-power
     urlkr: /parts/controller/openrb-150/#전원-연결-방법
   - title: "Development Environment"
-    titlekr: "소프트웨어 개발환경"
+    titlekr: "개발 환경 설정"
     url: /parts/controller/openrb-150/#development-environment
-    urlkr: /parts/controller/openrb-150/#소프트웨어-개발환경
+    urlkr: /parts/controller/openrb-150/#개발-환경-설정
     children:
-    - title: "Supported Software"
-      url: /parts/controller/openrb-150/#supported-software
-    - title: "OpenCM IDE"
-      titlekr: "OpenCM IDE"
-      url: /parts/controller/openrb-150/#opencm-ide
-      urlkr: /parts/controller/openrb-150/#opencm-ide
-    - title: "Arduino IDE"
-      titlekr: "아두이노 IDE"
-      url: /parts/controller/openrb-150/#arduino-ide
-      urlkr: /parts/controller/openrb-150/#아두이노-ide
+    - title: "Install the Arduino IDE"
+      titlekr: "아두이노 IDE 설치"
+      url: /parts/controller/openrb-150/#install-the-arduino-ide
+      urlkr: /parts/controller/openrb-150/#아두이노-ide-설치
       children:
       - title: "Install on Linux"
         titlekr: "리눅스에 설치하기"
@@ -26312,10 +26261,8 @@ openrb-150:
         titlekr: "윈도우즈에 설치하기"
         url: /parts/controller/openrb-150/#install-on-windows
         urlkr: /parts/controller/openrb-150/#윈도우즈에-설치하기
-      - title: "Upload sketch"
-        url: /parts/controller/openrb-150/#upload-sketch
-      - titlekr: "스케치 업로드하기"
-        url: /parts/controller/openrb-150/#스케치-업로드하기
+    - title: "Install Board Manager"
+      url: /parts/controller/openrb-150/#install-board-manager
     - title: "Library API"
       titlekr: "라이브러리 API"
       url: /parts/controller/openrb-150/#library-api
@@ -26325,36 +26272,14 @@ openrb-150:
         titlekr: "Dynamixel2Arduino 라이브러리"
         url: /parts/controller/openrb-150/#dynamixel2arduino-library
         urlkr: /parts/controller/openrb-150/#dynamixel2arduino-라이브러리
+    - title: "Upload sketch"
+      titlekr: "스케치 업로드하기"
+      url: /parts/controller/openrb-150/#upload-sketch
+      urlkr: /parts/controller/openrb-150/#스케치-업로드하기  
   - title: "Downloads"
     titlekr: "다운로드"
     url: /parts/controller/openrb-150/#downloads
     urlkr: /parts/controller/openrb-150/#다운로드
-  - title: "References"
-    titlekr: "참고자료"
-    url: /parts/controller/openrb-150/#references
-    urlkr: /parts/controller/openrb-150/#참고자료
-    children:
-    - title: "Recovery Mode"
-      titlekr: "펌웨어 복구모드"
-      url: /parts/controller/openrb-150/#recovery-mode
-      urlkr: /parts/controller/openrb-150/#펌웨어-복구모드
-    - title: "Windows Driver Installation"
-      titlekr: "USB 드라이버 설치 하기"
-      url: /parts/controller/openrb-150/#windows-driver-installation
-      urlkr: /parts/controller/openrb-150/#usb-드라이버-설치-하기-
-    - title: "Using DYNAMIXEL-X"
-      titlekr: "다양한 X시리즈 사용하기"
-      url: /parts/controller/openrb-150/#using-dynamixel-x
-      urlkr: /parts/controller/openrb-150/#다양한-x시리즈-사용하기
-      children:
-      - title: "Configuring DYNAMIXEL Channel"
-        titlekr: "DYNAMIXEL Channel 설정하기"
-        url: /parts/controller/openrb-150/#configuring-dynamixel-channel
-        urlkr: /parts/controller/openrb-150/#dynamixel-channel-설정하기
-    - title: "Dimension"
-      titlekr: "도면"
-      url: /parts/controller/openrb-150/#dimension
-      urlkr: /parts/controller/openrb-150/#도면
 
 #OpenCM 9.04 sidebar
 opencm904:
