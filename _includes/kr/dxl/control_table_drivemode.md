@@ -41,7 +41,7 @@
 {% if page.ref=='mx-106' or page.product_group=='dxl_ex' %}
 {% capture drivemode %}
 **주의** : MX-106과 EX-106+는 바퀴 모드로 설정되면 Normal/Reverse Mode를 지원하지 않습니다.  
-Normal/Reverse Mode는 관절모드와 다중회전 모드에서만 사용가능합니다.  
+Normal/Reverse Mode는 관절모드와 다중회전 모드에서만 사용 가능합니다.  
 동작 모드 설정은 [CW/CCW Angle Limit](#cwccw-angle-limit6-8)을 참고해주세요.
 {% endcapture %}
 <div class="notice--warning">{{ drivemode | markdownify }}</div>
