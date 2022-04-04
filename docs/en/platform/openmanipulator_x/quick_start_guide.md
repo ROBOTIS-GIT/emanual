@@ -135,7 +135,7 @@ Not required.
 </section>
 
 <section data-id="{{ page.tab_title4 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/quick_start_guide/quickstart_comm_interface.md %}
+{% include en/platform/openmanipulator_x/quick_start_guide/quickstart_comm_interface_foxy.md %}
 </section>
 
 <section data-id="{{ page.tab_title5 }}" class="tab_contents">

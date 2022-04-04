@@ -22,9 +22,14 @@ Download the correct image file for your hardware and ROS version.
 ROS2 Dashing requires Ubuntu 18.04.  
 
 {% capture download_01 %}
-[![](/assets/images/icon_download.png) **Download** `ubuntu-18.04.4-preinstalled-server-arm64+raspi3.img.xz` OS image](http://old-releases.ubuntu.com/releases/18.04.4/){: .blank}
+[![](/assets/images/icon_download.png) **Download for Rasbperry Pi 4** `ubuntu-18.04.4-preinstalled-server-arm64+raspi4.img.xz` OS image](http://old-releases.ubuntu.com/releases/18.04.4/){: .blank}
 {% endcapture %}
 <div class="notice--success">{{ download_01 | markdownify }}</div>
+
+{% capture download_02 %}
+[![](/assets/images/icon_download.png) **Download for Raspberry Pi 3B+** `ubuntu-18.04.3-preinstalled-server-arm64+raspi3.img.xz` OS image](http://old-releases.ubuntu.com/releases/18.04.3/){: .blank}
+{% endcapture %}
+<div class="notice--success">{{ download_02 | markdownify }}</div>
 
 ### [Unzip the downloaded image file](#unzip-the-downloaded-image-file)
 Extract the `.img` file and save it in the local disk.

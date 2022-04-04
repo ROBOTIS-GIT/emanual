@@ -62,7 +62,7 @@ In the following image, it is shown that the rotational direction of the input m
 
 > Click to go the product manual.
 
-**NOTE**: DYD-17 document will be open in the near futre
+**NOTE**: DYD-17 document will be open in the near future
 {: .notice}
 
 ## [Specifications](#specifications)

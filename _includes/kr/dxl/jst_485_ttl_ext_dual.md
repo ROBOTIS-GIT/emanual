@@ -1,5 +1,5 @@
 
-{% if page.ref=='xw540-t140' or page.ref=='xw540-t260' %}
+{% if page.ref=='xw540-t140' or page.ref=='xw540-t260' or page.ref=='xw430-t200' or page.ref=='xw430-t333' %}
 |     항목     |                            RS-485                            |
 |:------------:|:------------------------------------------------------------:|
 |   핀 번호    |         `1` GND<br>`2` VDD<br>`3` DATA+<br>`4` DATA-         |
