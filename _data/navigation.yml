@@ -27821,10 +27821,10 @@ dxl-selection-guide:
           titlekr: "TTL"
           url: /reference/dxl-selection-guide/#ttl
           urlkr: /reference/dxl-selection-guide/#ttl
-        - title: "RS485"
-        - titlekr: "RS485"        
-          url: /reference/dxl-selection-guide/#rs485
-          urlkr: /reference/dxl-selection-guide/#rs485
+        - title: "RS-485"
+          titlekr: "RS-485"        
+          url: /reference/dxl-selection-guide/#rs-485
+          urlkr: /reference/dxl-selection-guide/#rs-485
   - title: "Power"
     titlekr: "전원"
     url: /reference/dxl-selection-guide/#power
@@ -27912,9 +27912,9 @@ dxl-selection-guide:
     urlkr: /reference/dxl-selection-guide/#소프트웨어와-도구
     children: 
     - title: "Test & Management"
-      titlekr: "테스트 및 관리도구"
+      titlekr: "테스트 및 관리 도구"
       url: /reference/dxl-selection-guide/#test--management
-      urlkr: /reference/dxl-selection-guide/#테스트-및-관리도구
+      urlkr: /reference/dxl-selection-guide/#테스트-및-관리-도구
       children: 
       - title: "DYNAMIXEL Wizard 2.0"
         titlekr: "DYNAMIXEL Wizard 2.0"
@@ -27925,9 +27925,9 @@ dxl-selection-guide:
         url: /reference/dxl-selection-guide/#r-manager-20
         urlkr: /reference/dxl-selection-guide/#r-manager-20
     - title: "DYNAMIXEL Development"
-      titlekr: "개발도구"
+      titlekr: "개발 도구"
       url: /reference/dxl-selection-guide/#dynamixel-development     
-      urlkr: /reference/dxl-selection-guide/#개발도구
+      urlkr: /reference/dxl-selection-guide/#개발-도구
       children: 
         - title: "DYNAMIXEL SDK"
           titlekr: "다이나믹셀 SDK"
@@ -27981,13 +27981,18 @@ dxl-quick-start-guide:
         url: /dxl/dxl-quick-start-guide/#labview
       - title: "ROS"
         url: /dxl/dxl-quick-start-guide/#ros
-  - title: "Arduino"
-    url: /dxl/dxl-quick-start-guide/#arduino
+  - title: "Arduino Library"
+    url: /dxl/dxl-quick-start-guide/#arduino-library
     children: 
       - title: "Dynamixel2Arduino"
         url: /dxl/dxl-quick-start-guide/#dynamixel2arduino
       - title: "DynamixelShield"
         url: /dxl/dxl-quick-start-guide/#dynamixelshield
+  - title: "DYNAMIXEL Wizard 2.0"
+    url: /dxl/dxl-quick-start-guide/#dynamixel-wizard-20
+    children: 
+      - title: "Firmware Recovery"
+        url: /dxl/dxl-quick-start-guide/#firmware-recovery
 
 contents-guide:
   - title: "Contents Guide"

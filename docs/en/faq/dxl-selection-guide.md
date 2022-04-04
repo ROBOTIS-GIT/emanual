@@ -68,7 +68,7 @@ Most DYNAMIXEL servos have a graph like that one located on their page here on t
 **NOTE**: In selecting DYNAMIXEL in terms of torque, ~20% of **Stall Torque** (See Specification) of DYNAMIXEL will be the general range of use for your system. 
 {: .notice}
 
-1. **Torque(Nm)** - External load applied at the shaft of servo. 
+1. **Torque(Nm)** - External load applied at the shaft of servo. By the Torque(Nm), Output Speed(A) and Current(A) are determined
 
 2. **Speed(RPM)** - The output speed at the Torque. This shares the **black** line. 
 
@@ -80,13 +80,13 @@ These factors can help you compare the performance of different DYNAMIXELs to he
 
 ## [Communication](#communication)
 
-Each DYNAMIXEL supports one of two serial communications: [TTL](#ttl), [RS485](#rs485). 
+Each DYNAMIXEL supports one of two serial communications: [TTL](#ttl), [RS-485](#rs-485). 
 
-To communicate with DYNAMIXELs, consistent communication protocol must be promised.
+To communicate with DYNAMIXELs using a controller, the same communication interface(TTL or RS-485) must be used.
 
 <details>
 <summary>
-![](/assets/images/icon_unfold.png) **Tip**: **Looking for a solution to combining TTL and RS485 of DYNAMIXEL in your system ?**
+![](/assets/images/icon_unfold.png) **Tip**: **Looking for a solution to combining TTL and RS-485 of DYNAMIXEL in your system ?**
 </summary>
 Ordinarily, DYNAMIXELs utilizing different serial protocols can not communicate with one another over the same serial bus. This means that it is important to select servos using compatible communications protocols. In some applications, you may need to combine DYNAMIXELs with mismatched serial protocols. For these cases, you can combine mismatched serial protocols using a [DYNAMIXEL Communication Bridge](/docs/en/parts/interface/dxl_bridge/).
 
@@ -96,11 +96,9 @@ Ordinarily, DYNAMIXELs utilizing different serial protocols can not communicate 
 
 ### [TTL](#ttl)
 
-TTL (Transistor-Transistor Logic), 0 to 5V logic level, is the common serial communication protocol in DYNAMIXEL. 
+TTL (Transistor-Transistor Logic), 0 to 5V logic level, is the common serial communication interface of DYNAMIXEL. 
 
-An easy way to identify TTL DYNAMIXEL actuator is if the model name ends with a "-T" (e.g, XL330-M288-**T**).  
-
-TTL based DYNAMIXEL has three pins ports on the rear of the actuator. 
+An easy way to identify TTL DYNAMIXEL actuator is that the model name ends with a "-T" (e.g, XL330-M288-**T**) and has three pins ports.  
 
 ![](/assets/images/dxl/x/x_series_ttl_pin.png)  
 > Pin Diagram for TTL Based DYNAMIXEL, using JST connectors
@@ -119,20 +117,18 @@ To control the DYNAMIXEL actuators, the main controller needs to convert its UAR
 {: .notice}  
 </details>
 
-### [RS485](#rs485)
+### [RS-485](#rs-485)
 
-Some higher end DYNAMIXEL servos operate using RS485 communications protocol. If you need longer cabling distance, RS485 will the best option for you. 
+Some higher end DYNAMIXEL servos operate using RS-485 communications protocol. If you need longer cabling distance, RS-485 will the best option for you. 
 
-An easy way to identify RS485 based DYNAMIXEL actuator is if the model name ends with a "-R" (e.g, XD40-T150-**R**).  
-
-RS485 based based DYNAMIXEL has three pins ports on the rear of the actuator. 
+An easy way to identify RS-485 based DYNAMIXEL actuator is that the model name ends with a "-R" (e.g, XD40-T150-**R**) and has four pins ports.
 
 ![](/assets/images/dxl/x/x_series_485_pin.png)   
-> Pin Diagram for RS485 Based DYNAMIXEL, using JST connectors
+> Pin Diagram for RS-485 Based DYNAMIXEL, using JST connectors
 
 <details>
 <summary>
-![](/assets/images/icon_unfold.png) **Tip**: **Communication Circuit of RS485 based DYNAMIXEL**
+![](/assets/images/icon_unfold.png) **Tip**: **Communication Circuit of RS-485 based DYNAMIXEL**
 </summary>
 
 To control the DYNAMIXELs, the main controller needs to convert its UART signals to the half duplex type. The recommended circuit diagram for this is shown below.  
@@ -169,12 +165,16 @@ Operating Voltage may differ depending on what model to be selected. See the fol
 
 ### [DYNAMIXEL-P](#dynamixel-p)
 
-DYNAMIXEL-P Series runs at 24.0V. This can be compatible with DYNAMXEL-X's `V` models (24V). 
+DYNAMIXEL-P Series runs at 24.0V. This can be compatible with DYNAMIXEL-X's `V` [models](#models) (24V) which represent operating voltages at 24V.
+
+<!-- 
 
 |  Series   | Operating Voltage | Recommended |
 |:---------:|:-----------------:|:-----------:|
 | PM Series |       24.0        |  **24.0**   |
 | PH Series |       24.0        |  **24.0**   |
+ 
+-->
 
 ## [Power Solution](#power-solution)
 
@@ -187,10 +187,10 @@ The **SMPS** is recommended power solution with ROBOTIS' providing interface and
 
 ### [Batteries](#batteries)
 
-The **Batteries** provides more mobility than a fixed power supply can offer, in those cases batteries may be the optimal solution for your high mobility robot. If Li-Po batteries are your choice, check if there is PCM (Protection Circuit Modules) are included for your system safety. 
+The **Batteries** provides more mobility than a fixed power supply can offer, in those cases batteries may be the optimal solution for your high mobility robot. If LiPo batteries are your choice, check if there is PCM (Protection Circuit Modules) are included for your system safety. 
   
 ![](/assets/images/reference/selection_guide/selection_guide_lipo.png)
-> LIPO Battery(LB-012) 11.1V 1800mAh 
+> LiPo Battery(LB-012) 11.1V 1800mAh 
 
 ### [PSU](#psu)
 
@@ -212,11 +212,11 @@ The DYNAMIXEL [Controller Compatibility Chart](/docs/en/parts/controller/control
 
 ### [U2D2](#u2d2)
  
-[U2D2] is a serial interface that can convert USB to TTL / RS485 signal. 
+[U2D2] is a serial interface that can convert USB to TTL / RS-485 signal. 
 
-Using the inteface like U2D2 enable you to use [DYNAMIXEL Wizard 2.0](#dynamixel-wizard) to test, configure, and tune your DYNAMIXELs as well as the full features of the [DYNAMIXEL SDK](#dynamixel-sdk), with support for a variety languages.
+Using the inteface like U2D2 allow you to use [DYNAMIXEL Wizard 2.0](#dynamixel-wizard) and [DYNAMIXEL SDK](#dynamixel-sdk).
 
-![](/assets/images/parts/interface/u2d2_04.png){: width="400px", height="240px"}
+![](/assets/images/parts/interface/u2d2_01.png){: width="1017", height="198px"}
 
 The DYNAMIXEL Starter Set includes everything you need to utilize your PC as your chosen controller, a [U2D2], [U2D2 Power Hub Board], and an SMPS 12V 5A AC Adapter 
 
@@ -257,12 +257,12 @@ The OpenCR is also compatible with Arduino IDE for developing customized softwar
 
 ### [OpenCM9.04](#opencm904)
 
-[OpenCM9.04] is featuring an embedded MCU from the ARM Cortex-M7 line-up. The OpenCM is compatible with the Arduino IDE, [DYNAMIXEL SDK (Arduino)](#dynamixel-sdk-arduino), [Arduino Library](#arduino-library)), for development of custom software for your project.
+[OpenCM9.04] is featuring an embedded MCU from the ARM Cortex-M3 line-up. The OpenCM is compatible with the Arduino IDE([DYNAMIXEL SDK (Arduino)](#dynamixel-sdk-arduino), [Arduino Library](#arduino-library)) for development of custom software for your project.
 
 ![](/assets/images/parts/controller/opencm904/opencm904_14.png)
 
 {% capture exp_board %}
-**NOTE**: When combined with the [OpenCM 485 EXP Board](/docs/en/parts/controller/opencm485exp) the OpenCM 9.04 can drive RS485 DYNAMIXELs as well as TTL ones.
+**NOTE**: When combined with the [OpenCM 485 EXP Board](/docs/en/parts/controller/opencm485exp) the OpenCM 9.04 can drive RS-485 DYNAMIXELs as well as TTL based DYNAMIXEL.
  
 ![](/assets/images/parts/controller/opencm904/opencm485exp_product.jpg)
 
@@ -311,7 +311,7 @@ Check out the [Software Compatibility](/docs/en/parts/controller/controller_comp
 
 ### [DYNAMIXEL Wizard 2.0](#dynamixel-wizard-20)
 
-[DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/) is an optimized tool for managing DYNAMIXEL’s from various operating systems (Linux / Mac / Windows). [U2D2](#u2d2) or [Compatible controller](/docs/kr/parts/controller/controller_compatibility) is required to use.
+[DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/) is an optimized tool for managing DYNAMIXEL’s from various operating systems (Linux / Mac / Windows). [U2D2](#u2d2) or [Compatible controller](/docs/en/parts/controller/controller_compatibility) is required to use.
 
 The following features are provided with DYNAMIXEL Wizard 2.0.
 
@@ -340,7 +340,7 @@ The following features are provided with DYNAMIXEL Wizard 2.0.
 
 [DYNAMIXEL SDK](/docs/en/software/dynamixel/dynamixel_sdk/overview/) is a software development kit to support a variety programming language(C, C++, C#, Python, Java, Matlab and LabVIEW) on major OS(Linux, Windows, Mac). The provided APIs will allow you to manipulate data of DYNAMIXEL with ease. 
 
-**NOTE**: It is recommended to use [U2D2](#u2d2) (USB to TTL & RS485 converter) to interface DYNAMIXEL with your development device (PC,SBC and etc). Otherwise, You will be required to build DYNAMIXEL communication circuit. See [Communication](#communication)
+**NOTE**: It is recommended to use [U2D2](#u2d2) (USB to TTL & RS-485 converter) to interface DYNAMIXEL with your development device (PC,SBC and etc). Otherwise, You will be required to build DYNAMIXEL communication circuit. See [Communication](#communication)
 {: .notice}
 
 #### [DYNAMIXEL SDK (Arduino)](#dynamixel-sdk-arduino)
@@ -403,3 +403,5 @@ The R+ (Roboplus) Software suite is ROBOTIS' first party robot controller softwa
 [LN-101]: /docs/en/parts/interface/ln-101/
 [Dynamixel2Arduino]: https://github.com/ROBOTIS-GIT/Dynamixel2Arduino
 [DynamixelShield]: https://github.com/ROBOTIS-GIT/DynamixelShield
+[DYNAMIXEL Protocol 1.0]: /docs/en/dxl/protocol1/
+[DYNAMIXEL Protocol 2.0]: /docs/en/dxl/protocol2/
