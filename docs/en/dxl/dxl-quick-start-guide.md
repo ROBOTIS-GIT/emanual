@@ -15,11 +15,11 @@ sidebar:
 
 # [Getting Started](#getting-started)
 
-DYNAMIXEL Quick Start Guide is the series of Plug & Run videos covering ROBOTIS software and DYNAMIXEL.
+DYNAMIXEL Quick Start Guide is the series of videos covering ROBOTIS software and DYNAMIXEL.  
 
-Before starting the guide, visit the [DYNAMIXEL Selection Guide] and see the brief information on products and software introduced in the series.
+This guide will be helpful for first DYNAMIXEL users or rookies before starting a project. 
 
-The following table shows which controller or interface should be used with selected software in the series.
+The following table shortly shows what controller or interface is used with selected software along the guide. 
 
 | Enviroment  | Software & Tool        | Controller                     | Interface                              |
 |:------------|:-----------------------|:-------------------------------|:---------------------------------------|
@@ -28,33 +28,46 @@ The following table shows which controller or interface should be used with sele
 | Arduino IDE | [DynamixelShield]      | Compatible Arduino formfactors | Dynamixel Shield, Dynamixel Shield MKR |
 | PC          | [DYNAMIXEL Wizard 2.0] | None                           | U2D2, OpenCR 1.0                       |
 
-**NOTE**: Although the guide focuses on a plug & run for a basic example and ROBOTIS parts, it does not imply you have only one solution appliable to your system. 
-As the provided libraries are shared through our github ([ROBOTIS](https://github.com/ROBOTIS-GIT/)), you can customize it for your system if needed. 
+**NOTE**: Before starting the guide, visit the [DYNAMIXEL Selection Guide] and see brief information on products and software introduced in the series.
 {: .notice}
 
+<!-- 
+**NOTE**: As the provided libraries are shared through our github ([ROBOTIS](https://github.com/ROBOTIS-GIT/)), you can customize it for your system if needed. 
+{: .notice}  -->
+
+<!-- 
+
+**NOTE**: Although this guide utilize ROBOTIS providing parts only, it does not imply you have only one solution appliable to your system. 
+As the provided libraries are shared through our github ([ROBOTIS](https://github.com/ROBOTIS-GIT/)), you can customize it for your system if needed. 
+{: .notice} 
+
+-->
+
 ## [Archive](#archive)
+
+For your convenience, available contents in this page are archived under the ![](/assets/images/icon_unfold.png) **Tip** below.
 
 <details>
 <summary>
 ![](/assets/images/icon_unfold.png) **Tip**: **Find all DYNAMIXEL Quick Start Guide series**
 </summary>
 
-| Group             | Software & Tool      | Developement<br>Enviroment | Controller / Interface                 | Title                                                                                                                                                                  |
-|:------------------|:---------------------|:---------------------------|:---------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Development       | DYNAMIXEL SDK        | PC, SBC (C)                | U2D2                                   | [DYNAMIXEL Quick Start Guide for Raspberry Pi (C language)](https://www.youtube.com/watch?v=-MafNIZUCHA&list=PLRG6WP3c31_Xg_IPNGJybiP8H4Lpy2RuY&index=7)               |
-| Development       | DYNAMIXEL SDK        | PC, SBC (C++)              | U2D2                                   | [DYNAMIXEL Quick Start Guide in C++](https://www.youtube.com/watch?v=bm5MBO7D13Q&list=PLRG6WP3c31_Xg_IPNGJybiP8H4Lpy2RuY&index=6)                                      |
-| Development       | DYNAMIXEL SDK        | PC, SBC (C#)               | U2D2                                   | None                                                                                                                                                                   |
-| Development       | DYNAMIXEL SDK        | PC, SBC (Python)           | U2D2                                   | [DYNAMIXEL Quick Start Guide in Python](https://www.youtube.com/watch?v=LAizFTTdL8o&list=PLRG6WP3c31_Xg_IPNGJybiP8H4Lpy2RuY&index=4)                                   |
-| Development       | DYNAMIXEL SDK        | PC, SBC (Java)             | U2D2                                   | None                                                                                                                                                                   |
-| Development       | DYNAMIXEL SDK        | PC, SBC (Matlab)           | U2D2                                   | [DYNAMIXEL Quick Start Guide in MATLAB on Windows](https://www.youtube.com/watch?v=1VWksgPqyDs&list=PLRG6WP3c31_Xg_IPNGJybiP8H4Lpy2RuY&index=3)                        |
-| Development       | DYNAMIXEL SDK        | PC, SBC (Matlab)           | U2D2                                   | [DYNAMIXEL Quick Start Guide in MATLAB on Linux](https://www.youtube.com/watch?v=zGhd727NkJY&list=PLRG6WP3c31_Xg_IPNGJybiP8H4Lpy2RuY&index=5)                          |
-| Development       | DYNAMIXEL SDK        | PC, SBC (LabView)          | U2D2                                   | [DYNAMIXEL Quick Start Guide for LabVIEW on Windows](https://www.youtube.com/watch?v=4fzFshycfi0)                                                                      |
-| Development       | DYNAMIXEL SDK        | PC, SBC (ROS)              | U2D2                                   | [DYNAMIXEL Quick Start Guide for ROS 1](https://www.youtube.com/watch?v=SpdxjsCO9sE&list=PLRG6WP3c31_Xg_IPNGJybiP8H4Lpy2RuY&index=9)                                   |
-| Development       | DYNAMIXEL SDK        | PC, SBC (ROS)              | U2D2                                   | [DYNAMIXEL Quick Start Guide for ROS 2](https://www.youtube.com/watch?v=E8XPqDjof4U&list=PLRG6WP3c31_Xg_IPNGJybiP8H4Lpy2RuY&index=1)                                   |
-| Development       | DynamixelShield      | \-                         | Dynamixel Shield, Dynamixel Shield MKR | [DYNAMIXEL Quick Start Guide for DYNAMIXEL Shield for Arduino MKR Series](https://www.youtube.com/watch?v=1Y7FLG1n-9k&list=PLRG6WP3c31_Xg_IPNGJybiP8H4Lpy2RuY&index=8) |
-| Development       | Dynamixel2Arduino    | Arduino IDE                | OpenCR 1.0                             | [DYNAMIXEL Quick Start Guide for OpenCR 1.0](https://www.youtube.com/watch?v=0_M0Da9SHDw&list=PLRG6WP3c31_Xg_IPNGJybiP8H4Lpy2RuY&index=10)                             |
-| Management & Test | DYNAMIXEL Wizard 2.0 | \-                         | U2D2                                   | [How To: Firmware Recover DYNAMIXEL Using U2D2](https://youtu.be/PgbIAK2Qg1Y)                                                                                          |
-| Management & Test | DYNAMIXEL Wizard 2.0 | \-                         | OpenCR 1.0                             | [How To: DYNAMIXEL Firmware Recovery Using OpenCR1.0](https://youtu.be/FAnVIE_23AA)                                                                                    |
+| Group             | Software & Tool      | Developement<br>Enviroment | Controller / Interface                 | Title                                                                     |
+|:------------------|:---------------------|:---------------------------|:---------------------------------------|:--------------------------------------------------------------------------|
+| Development       | [DYNAMIXEL SDK]        | PC, SBC (C)                | U2D2                                   | [DYNAMIXEL Quick Start Guide for Raspberry Pi (C language)]               |
+| Development       | [DYNAMIXEL SDK]        | PC, SBC (C++)              | U2D2                                   | [DYNAMIXEL Quick Start Guide in C++]                                      |
+| Development       | [DYNAMIXEL SDK]        | PC, SBC (C#)               | U2D2                                   | None                                                                      |
+| Development       | [DYNAMIXEL SDK]        | PC, SBC (Python)           | U2D2                                   | [DYNAMIXEL Quick Start Guide in Python]                                   |
+| Development       | [DYNAMIXEL SDK]        | PC, SBC (Java)             | U2D2                                   | None                                                                      |
+| Development       | [DYNAMIXEL SDK]        | PC, SBC (Matlab)           | U2D2                                   | [DYNAMIXEL Quick Start Guide in MATLAB on Windows]                        |
+| Development       | [DYNAMIXEL SDK]        | PC, SBC (Matlab)           | U2D2                                   | [DYNAMIXEL Quick Start Guide in MATLAB on Linux]                          |
+| Development       | [DYNAMIXEL SDK]        | PC, SBC (LabView)          | U2D2                                   | [DYNAMIXEL Quick Start Guide for LabVIEW on Windows]                      |
+| Development       | [DYNAMIXEL SDK]        | PC, SBC (ROS)              | U2D2                                   | [DYNAMIXEL Quick Start Guide for ROS 1]                                   |
+| Development       | [DYNAMIXEL SDK]        | PC, SBC (ROS)              | U2D2                                   | [DYNAMIXEL Quick Start Guide for ROS 2]                                   |
+| Development       | [DynamixelShield]      | \-                         | Dynamixel Shield, Dynamixel Shield MKR | [DYNAMIXEL Quick Start Guide for DYNAMIXEL Shield for Arduino MKR Series] |
+| Development       | [Dynamixel2Arduino]    | Arduino IDE                | OpenCR 1.0                             | [DYNAMIXEL Quick Start Guide for OpenCR 1.0]                              |
+| Management & Test | [DYNAMIXEL Wizard 2.0] | \-                         | U2D2                                   | [How To: Firmware Recover DYNAMIXEL Using U2D2]                           |
+| Management & Test | [DYNAMIXEL Wizard 2.0] | \-                         | OpenCR 1.0                             | [How To: DYNAMIXEL Firmware Recovery Using OpenCR1.0]                     |
      
 </details>
 
@@ -78,6 +91,8 @@ For more details, see [DYNAMIXEL SDK](/docs/en/software/dynamixel/dynamixel_sdk/
 | PC, SBC (LabView)          | U2D2                     | [DYNAMIXEL Quick Start Guide for LabVIEW on Windows]        | Read / Write example (Position Control) |
 | PC, SBC (ROS)              | U2D2                     | [DYNAMIXEL Quick Start Guide for ROS 1]                     | Read / Write example (Position Control) |
 | PC, SBC (ROS)              | U2D2                     | [DYNAMIXEL Quick Start Guide for ROS 2]                     | Read / Write example (Position Control) |
+
+<!-- 
 
 {% capture TTL_RS485 %}
 
@@ -109,7 +124,9 @@ To control the DYNAMIXELs, the main controller needs to convert its UART signals
 </details>
 
 {% endcapture TTL_RS485 %}
-<div class="notice"> {{ TTL_RS485 | markdownify }}</div>
+<div class="notice"> {{ TTL_RS485 | markdownify }}</div> 
+
+-->
 
 ## [C](#c)
 
@@ -306,15 +323,15 @@ Visit the page here -->
 [DYNAMIXEL Quick Start Guide for DYNAMIXEL Shield for Arduino MKR Series]: #dynamixel-quick-start-guide-for-dynamixel-shield-for-arduino-mkr-series
 [DYNAMIXEL Quick Start Guide for OpenCR 1.0]: #dynamixel-quick-start-guide-for-opencr-10
 
-[How To: Firmware Recover DYNAMIXEL Using U2D2]: https://youtu.be/PgbIAK2Qg1Y)
-[How To: DYNAMIXEL Firmware Recovery Using OpenCR1.0]: https://www.youtube.com/watch?v=FAnVIE_23AA&feature=youtu.be
-[How To: DYNAMIXEL Firmware Recovery Using OpenCM9.04]: https://www.youtube.com/watch?v=92HAcjeAQGg&feature=youtu.be
+[How To: Firmware Recover DYNAMIXEL Using U2D2]: #how-to-firmware-recover-dynamixel-using-u2d2
+[How To: DYNAMIXEL Firmware Recovery Using OpenCR1.0]: #how-to-dynamixel-firmware-recovery-using-opencr10
 [Troubleshooting DYNAMIXEL Shutdowns with Dynamixel Wizard 2.0 Self-Diagnosis]: https://youtu.be/xVk4XcXfQX8
 [How To update the protocol on MX Series DYNAMIXELs]: https://youtu.be/aVZytXRc_r8
 [DYNAMIXEL Selection Guide]: /docs/en/reference/dxl-selection-guide/
 
+<!-- [How To: DYNAMIXEL Firmware Recovery Using OpenCM9.04]: https://www.youtube.com/watch?v=92HAcjeAQGg&feature=youtu.be -->
 
 [DYNAMIXEL SDK]: #dynamixel-sdk
 [Dynamixel2Arduino]: #dynamixel2arduino
 [DynamixelShield]: #dynamixelshield
-[DYNAMIXEL Wizard 2.0]: #dynamixel-wizard20
+[DYNAMIXEL Wizard 2.0]: #dynamixel-wizard-20

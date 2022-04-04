@@ -203,7 +203,7 @@ U2D2는 USB 신호를 TTL 또는 RS-485 신호로 변환해주는 통신 변환 
 
   ![](/assets/images/dxl/dxl_quick_start_insert/dxl_control_01.png) 
 
-  > Connection Example of the DYNAMIXEL Starter Set
+  > 다이나믹셀 스타터 세트 연결 예시
 
 <!-- NOTE: DYNAMIXEL Quick Start Guide -->
 
