@@ -414,14 +414,14 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 
 ## [Firmware Update](#firmware-update)
 
-Update firmware version of DYNAMIXEL, if you see its model name with a special charactor (\*), on the device list, in light grey.  
-When positioning a mouse cursor on its model name, **Firmware update is available** will be shown up.  
+When your connected DYNAMIXEL has a firmware update available an asterisk **(\*)** will be displayed next to the model name on the device list.  
+When positioning your mouse cursor over the model name, **Firmware update is Available** will also be displayed as a tooltip.
 
 ![](/assets/images/sw/dynamixel/wizard2/wizard2_update_notification.png)
 
 1. Go to `Tools` > `Firmware Update`
 
-    **NOTE** : If there isn't any detected or connected device, `Firmware Update` will be disabled. Please scan DYNAMIXEL first.
+    **NOTE** : If no DYNAMIXELS are detected, the `Firmware Update` option will not be available. 
     {: .notice}
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_015.png)

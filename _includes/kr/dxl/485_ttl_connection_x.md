@@ -8,7 +8,7 @@
 
 > TTL 통신회로 
 
-**참고**: 위 회로는 5V 전원을 사용하는 MCU를 사용하거나 IO가 5V tolerant한 경우 사용가능합니다. 그 외의 경우, Level Shifter를 사용하세요.
+**참고**: 위 회로는 5V 전원을 사용하는 MCU를 사용하거나 IO가 5V tolerant한 경우 사용 가능합니다. 그 외의 경우, Level Shifter를 사용하세요.
 {: .notice}
 
 ![](/assets/images/dxl/x/x_series_ttl_pin.png)
@@ -20,7 +20,7 @@
 
 > RS-485 통신회로 
 
-**참고**: 위 회로는 5V 전원을 사용하는 MCU를 사용하거나 IO가 5V tolerant한 경우 사용가능합니다. 그 외의 경우, Level Shifter를 사용하세요.
+**참고**: 위 회로는 5V 전원을 사용하는 MCU를 사용하거나 IO가 5V tolerant한 경우 사용 가능합니다. 그 외의 경우, Level Shifter를 사용하세요.
 {: .notice}
 
 {% if page.product_group=='dxl_xw540' or page.product_group=='dxl_xw430' %}

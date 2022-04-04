@@ -850,7 +850,7 @@ USB 포트를 통해 OpenCM9.04를 윈도우즈 환경에서 사용하려면 USB
 **참고**: [아두이노 IDE](#아두이노-ide)를 사용시, 채널 설정이 필요하지 않습니다. 
 {: .notice}
 
-**참고**: OpenCM485 확장보드를 사용하면, 24V 다이나믹셀 및 RS485 통신이 사용가능합니다.  
+**참고**: OpenCM485 확장보드를 사용하면, 24V 다이나믹셀 및 RS485 통신이 사용 가능합니다.  
 ![](/assets/images/sw/rplus2/manager/rplusmanager2_30_kr.jpg) 
 {: .notice}
   

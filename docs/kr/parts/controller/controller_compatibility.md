@@ -154,7 +154,7 @@ sidebar:
 |        [다이나믹셀 SDK]        |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                    O                     |      X       |    O     |
 |     [다이나믹셀 워크벤치]      |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                    O                     |      X       |    O     |
 |      [다이나믹셀 위자드]       |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                    X                     |      X       |    X     |
-|    [다이나믹셀 위자드 2.0]     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                    X                     |      X       |    X     |
+|    [다이나믹셀 위자드 2.0]     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                    X                     |      X       |    O     |
 | [ROBOTIS Manipulator library]  |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                    X                     |      X       |    O     |
 | [임베디드 SDK(CM-510/530/700)] |   X    |    X    |    X     |    X     |    X     |    O     |    X     |    O     |    X     |    O     |    X     |                    X                     |      X       |    X     |
 |          아두이노 IDE          |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                    O                     |      X       |    O     |

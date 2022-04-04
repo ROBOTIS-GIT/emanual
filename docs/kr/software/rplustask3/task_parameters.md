@@ -66,7 +66,7 @@ R+ Task 3.0에서 사용하는 파라미터를 설명합니다. 각 장치에 �
 - 아래는 서보모터를 관절형태로 제어하는 예제입니다.  
   ![](/assets/images/sw/rplus_task3_kr/servo_joint.png)
 
-- CM-550은 서보모터를 속도모드와 관절모드로 선택해서 사용할 수 있습니다. 그러므로 다른 제어기와 같이 동작모드에 속도모드 또는 관절모드를 지정해줄 필요없이 바로 사용가능합니다.  
+- CM-550은 서보모터를 속도모드와 관절모드로 선택해서 사용할 수 있습니다. 그러므로 다른 제어기와 같이 동작모드에 속도모드 또는 관절모드를 지정해줄 필요없이 바로 사용 가능합니다.  
   ![](/assets/images/sw/rplus_task3_kr/cm550_servo_selection.png)  
   ![](/assets/images/sw/rplus_task3_kr/cm550_servo_ex.png)
 
