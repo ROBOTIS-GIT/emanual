@@ -11,21 +11,19 @@ sidebar:
   nav: "dynamixel_workbench"
 ---
 
-**NOTE**: [The DYNAMIXEL Workbench e-Manual](/docs/en/software/dynamixel/dynamixel_workbench_jp/) in Japanese (日本語) is available for the Japanese. 
+**NOTE**: This [DYNAMIXEL Workbench](/docs/en/software/dynamixel/dynamixel_workbench_jp/) e-Manual page is also available in Japanese (日本語).
 {: .notice}
 
 # [Introduction](#introduction)
 
 ![](/assets/images/sw/dynamixel/dynamixel_workbench/DYNAMIXEL_WORKBENCH_LOGO.png)
 
-The purpose of DYNAMIXEL Workbench is **to use more simple and easy to use any DYNAMIXEL**. This library is based on [DYNAMIXEL SDK] and supports ROS, Linux, macOS and Arduino. However, this library is not magic stick to operate DYNAMIXEL with any setup. It has some restriction compared with DYNAMIXEL SDK but we are continue to upgrade this library for almost everyone loves DYNAMIXEL.
+DYNAMIXEL Workbench is an ROS library based on [DYNAMIXEL SDK] supporting Linux, macOS and Arduino. DYNAMIXEL Workbench is intended to provide a simpler way to achieve ROS control of DYNAMIXEL systems than using the full [DYNAMIXEL SDK]. While Workbench currently does not support all features of the [DYNAMIXEL SDK], it is still in [active development](https://github.com/ROBOTIS-GIT/dynamixel-workbench) and features are always being added and improved.
 
-If have any questions or issues, please get a ticket in [github issue](https://github.com/ROBOTIS-GIT/dynamixel-workbench/issues).
-
-**CAUTION** : DYNAMIXEL Workbench is designed to control DYNAMIXEL in ROS with limited features. For setting up and testing the DYNAMIXEL, please use [DYNAMIXEL Wizard 2.0] or [DYNAMIXEL SDK].
+**CAUTION** : DYNAMIXEL Workbench is designed to enable convenient DYNAMIXEL control in ROS. For configuration and testing of DYNAMIXELs, please use [DYNAMIXEL Wizard 2.0] or the full [DYNAMIXEL SDK].
 {: .notice--warning}
 
-# [Supported DYNAMIXEL](#supported-dynamixel)
+# [Supported DYNAMIXELs](#supported-dynamixels)
 
 | DYNAMIXEL Series |                                |                                |                                |                                |                 |
 |:-----------------|:-------------------------------|:-------------------------------|:-------------------------------|:-------------------------------|:----------------|
@@ -46,9 +44,10 @@ If have any questions or issues, please get a ticket in [github issue](https://g
 | **PH**           | [PH42-020-S300-R]              | [PH54-100-S500-R]              | [PH54-200-S500-R]              |                                |                 |
 
 
-**DYNMAIXEL Workbench** metapackage contains 3 packages:  **Controllers**, **Operators**, and **Toolbox**. The **Controllers** package introduces how to employ DYNAMIXEL on different operating mode with DYNMAIXEL Workbench library(Toolbox).  In addition, the Operators demonstrates some straightforward examples by operating Controllers.
-
-- [ROS WIKI](http://wiki.ros.org/dynamixel_workbench)
+The DYNAMIXEL Workbench [metapackage](http://wiki.ros.org/dynamixel_workbench) includes 3 packages:  **Controllers**, **Operators**, and **Toolbox**. 
+* The **Controllers** package provides an easy way to configure DYNAMIXELs for use with ROS
+* **Operators** provides the nodes that coordinate control of DYNAMIXELS
+* and **Toolbox** provides the classes and functions to easily control connected DYNAMIXELs
 
 # [Downloads](#downloads)
 
@@ -58,7 +57,7 @@ If have any questions or issues, please get a ticket in [github issue](https://g
 
 ![](/assets/images/platform/turtlebot3/logo_ros.png)
 
-The following script will allow you to simplify the ROS installation procedure. Run the following command in a terminal window. The terminal application can be found with the Ubuntu search icon on the top left corner of the screen, or you can use shortcut key for terminal is `Ctrl`+`Alt`+`T`. After install ROS, please reboot PC.
+The following script allows quick installation of the ROS installation procedure. Run the following command in a terminal window. The terminal application can be found with the Ubuntu search icon on the top left corner of the screen, or you can use shortcut key for terminal is `Ctrl`+`Alt`+`T`. After install ROS, please reboot PC.
 
 ``` bash
 $ sudo apt-get update
