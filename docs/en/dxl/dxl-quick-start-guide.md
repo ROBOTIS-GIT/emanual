@@ -21,9 +21,9 @@ Additionally, the source code for the libraries utilized throughout these tutori
 
 The DYNAMIXEL Quick Start Guide is a series of videos designed to help first time users, or individuals learning new ways to utilize their DYNAMIXEL actuators or ROBOTIS software.
 
-This index lists the videos included in the DYNAMIXEL Quick start guide series, and specifies the software and hardware used and taught in the video.
+This index lists the videos included in the DYNAMIXEL Quick start guide series, and specifies the software and hardware used in each. Each included category has a corresponding index listing the same information about each video.
 
-| Environment | Software & Tool        | Controller                     | Interface                              |
+|: Environment :|: Software & Tool        :|: Controller                     :|: Interface                              :|
 |:------------|:-----------------------|:-------------------------------|:---------------------------------------|
 | PC, SBC     | [DYNAMIXEL SDK]        | None                           | U2D2                                   |
 | Arduino IDE | [Dynamixel2Arduino]    | OpenCR 1.0, OpenCM 9.04        | None                                   |
@@ -61,10 +61,12 @@ For your convenience, an index listing the videos included on this page as well 
 | Development       | [DYNAMIXEL SDK]        | PC, SBC (LabView)          | U2D2                                   | [DYNAMIXEL Quick Start Guide for LabVIEW on Windows]                      |
 | Development       | [DYNAMIXEL SDK]        | PC, SBC (ROS)              | U2D2                                   | [DYNAMIXEL Quick Start Guide for ROS 1]                                   |
 | Development       | [DYNAMIXEL SDK]        | PC, SBC (ROS)              | U2D2                                   | [DYNAMIXEL Quick Start Guide for ROS 2]                                   |
-| Development       | [DynamixelShield]      | \-                         | Dynamixel Shield, Dynamixel Shield MKR | [DYNAMIXEL Quick Start Guide for DYNAMIXEL Shield for Arduino MKR Series] |
+| Development       | [DynamixelShield]      | Arduino IDE                | Dynamixel Shield, Dynamixel Shield MKR | [DYNAMIXEL Quick Start Guide for DYNAMIXEL Shield for Arduino MKR Series] |
 | Development       | [Dynamixel2Arduino]    | Arduino IDE                | OpenCR 1.0                             | [DYNAMIXEL Quick Start Guide for OpenCR 1.0]                              |
-| Management & Testing | [DYNAMIXEL Wizard 2.0] | \-                         | U2D2                                   | [How To: Firmware Recover DYNAMIXEL Using U2D2]                           |
-| Management & Testing | [DYNAMIXEL Wizard 2.0] | \-                         | OpenCR 1.0                             | [How To: DYNAMIXEL Firmware Recovery Using OpenCR1.0]                     |
+| Management & Testing | [DYNAMIXEL Wizard 2.0] | PC (Windows, Linux, Mac OS) | U2D2                     | [Troubleshooting DYNAMIXEL Shutdowns with Dynamixel Wizard 2.0 Self-Diagnosis]       |
+| Management & Testing | [DYNAMIXEL Wizard 2.0] | PC (Windows, Linux, Mac OS) | U2D2                     | [How To update the protocol on MX Series DYNAMIXELs]       
+| Management & Testing | [DYNAMIXEL Wizard 2.0] | PC (Windows, Linux, Mac OS) | U2D2                                   | [How To: Firmware Recover DYNAMIXEL Using U2D2]                           |
+| Management & Testing | [DYNAMIXEL Wizard 2.0] | PC (Windows, Linux, Mac OS) | OpenCR 1.0                             | [How To: DYNAMIXEL Firmware Recovery Using OpenCR1.0]                     |
      
 </details>
 
@@ -235,18 +237,17 @@ Tutorial for the [DYNAMIXEL SDK] in ROS2, implementing a Read / Write example fo
 
 # [Arduino Library](#arduino-library)
 
-ROBOTIS provides comprehensive code APIs and basic example for Arduino users.
+The [DYNAMIXEL2Arduino](https://github.com/ROBOTIS-GIT/Dynamixel2Arduino) library is a comprehensive open source library for utilizing DYNAMIXEL actuators with Arduino compatible micro-controllers.
 
-The following table shows which controller or interface is compatible with provided libraries. 
 
-| Developement<br>Enviroment | Controller<br>&Interface | Title                                                                     | Description                             |
+| Development<br>Environment | Controller<br>&<br>Interface | Title                                                                     | Description                             |
 |:---------------------------|:-------------------------|:--------------------------------------------------------------------------|:----------------------------------------|
 | Arduino IDE                | OpenCR 1.0               | [DYNAMIXEL Quick Start Guide for OpenCR 1.0]                              | Read / Write example (Position Control) |
 | Arduino IDE                | DYNAMIXEL Shields        | [DYNAMIXEL Quick Start Guide for DYNAMIXEL Shield for Arduino MKR Series] | Read / Write example (Position Control) |
 
 ## [Dynamixel2Arduino](#dynamixel2arduino)
 
-DYNAMIXEL Control Library for [Embedded Controller](/docs/en/reference/dxl-selection-guide/#embedded-controllers)
+ DYNAMIXEL2Arduino tutorial for use with [Embedded Controllers](/docs/en/reference/dxl-selection-guide/#embedded-controllers)
 
 ### [DYNAMIXEL Quick Start Guide for OpenCR 1.0](#dynamixel-quick-start-guide-for-opencr-10)
 
@@ -261,11 +262,11 @@ DYNAMIXEL Control Library for [Embedded Controller](/docs/en/reference/dxl-selec
 
 ## [DynamixelShield](#dynamixelshield)
 
-DYNAMIXEL Control Library for [DYNAMIXEL Shields](/docs/en/reference/dxl-selection-guide/#dynamixel-shields)
+ DYNAMIXEL2Arduino tutorial for use with [DYNAMIXEL Shields](/docs/en/reference/dxl-selection-guide/#dynamixel-shields)
 
 ### [DYNAMIXEL Quick Start Guide for DYNAMIXEL Shield for Arduino MKR Series](#dynamixel-quick-start-guide-for-dynamixel-shield-for-arduino-mkr-series)
 
-Implementing the basic position control example by DynamixelShield, and guide powering the DYNAMIXEL from different power connectors (either Battery or USB power) using DYNAMIXEL MKR Shield.
+Implementation of a basic position control example, and walkthrough of USB and battery power delivery for the DYNAMIXEL MKR Shield.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1Y7FLG1n-9k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -276,26 +277,42 @@ Implementing the basic position control example by DynamixelShield, and guide po
 
 # [DYNAMIXEL Wizard 2.0](#dynamixel-wizard-20)
 
-DYNAMIXEL Wizard is the optimized tool for the maintanance (Firmware Recovery, Update), test and configuration of DYNAMIXEL. 
+DYNAMIXEL Wizard 2.0 is a ROBOTIS provided software tool designed for configuration, maintenance, and diagnostics of DYNAMIXEL actuators.
 
-| Software<br>&Tool    | Developement<br>Enviroment  | Controller<br>&Interface | Title                                                 | Description       |
+| Software<br>&<br>Tool    | Development<br>Environment  | Controller<br>&<br>Interface | Title                                                 | Description       |
 |:---------------------|:----------------------------|:-------------------------|:------------------------------------------------------|:------------------|
+| DYNAMIXEL Wizard 2.0 | PC (Windows, Linux, Mac OS) | U2D2                     | [Troubleshooting DYNAMIXEL Shutdowns with Dynamixel Wizard 2.0 Self-Diagnosis]       | Troubleshooting |
+| DYNAMIXEL Wizard 2.0 | PC (Windows, Linux, Mac OS) | U2D2                     | [How To update the protocol on MX Series DYNAMIXELs]       | Firmware Update |
 | DYNAMIXEL Wizard 2.0 | PC (Windows, Linux, Mac OS) | U2D2                     | [How To: Firmware Recover DYNAMIXEL Using U2D2]       | Firmware Recovery |
 | DYNAMIXEL Wizard 2.0 | PC (Windows, Linux, Mac OS) | OpenCR 1.0               | [How To: DYNAMIXEL Firmware Recovery Using OpenCR1.0] | Firmware Recovery |
 
-## [Firmware Recovery](#firmware-recovery)
 
-[Firmware Recovery](/docs/en/software/dynamixel/dynamixel_wizard2/#firmware-recovery) is the hard reset solution, turning back to its original state as factory released, to your DYNAMIXEL. 
+[Firmware Recovery](/docs/en/software/dynamixel/dynamixel_wizard2/#firmware-recovery) returns your DYNAMIXEL to factory default configuration, and is ROBOTIS' recommended method to attempt to resolve many issues you may experience with DYNAMIXEL actuators.
+
+
+## [Troubleshooting DYNAMIXEL Shutdowns with Dynamixel Wizard 2.0 Self-Diagnosis](troubleshooting-dynamixel-shutdowns-with-dynamixel-wizard-2.0-self-diagnosis)
+
+A walk through of the process to diagnose shutdown statuses for your DYNAMIXEL actuators.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xVk4XcXfQX8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## [How To: Update the Protocol on MX Series DYNAMIXELs](how-to-update-the-protocol-on-mx-series-dynamixels)
+
+A walk through of the process to upgrade the firmware of MX series DYNAMIXELs to utilize DYNAMIXEL Protocol 2.0 communication.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aVZytXRc_r8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## [Firmware Recovery](#firmware-recovery)
 
 ### [How To: Firmware Recover DYNAMIXEL Using U2D2](#dxl-quick-start-guide/#how-to-firmware-recover-dynamixel-using-u2d2)
 
-Basic solution of firmware recovery using the U2D2. 
+Basic firmware recovery tutorial using the [U2D2] serial interface. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PgbIAK2Qg1Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### [How To: DYNAMIXEL Firmware Recovery Using OpenCR1.0](#how-to-dynamixel-firmware-recovery-using-opencr10)
 
-OpenCR 1.0 can be used as an interface like U2D2 by a particular firmware that can be installed by Arduino example.
+The OpenCR micro controller can also be used as a firmware recovery tool by using the ROBOTIS provided USB2DXL firmware.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FAnVIE_23AA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -307,26 +324,24 @@ If you complete the DYNAMIXEL Quick Start Guide series, this is time to look dee
 
 Visit the page here -->
 
-Tutorial for the [DYNAMIXEL Quick Start Guide for Raspberry Pi (C language)]: #dynamixel-quick-start-guide-for-raspberry-pi-c-language
-Tutorial for the [DYNAMIXEL Quick Start Guide in C++]: #dynamixel-quick-start-guide-in-c
-Tutorial for the [DYNAMIXEL Quick Start Guide in Python]: #dynamixel-quick-start-guide-in-python
-Tutorial for the [DYNAMIXEL Quick Start Guide in MATLAB on Linux]: #dynamixel-quick-start-guide-in-matlab-on-linux
-Tutorial for the [DYNAMIXEL Quick Start Guide in MATLAB on Windows]: #dynamixel-quick-start-guide-in-matlab-on-windows
-Tutorial for the [DYNAMIXEL Quick Start Guide for LabVIEW on Windows]: #dynamixel-quick-start-guide-for-labview-on-windows
-Tutorial for the [DYNAMIXEL Quick Start Guide for ROS 1]: #dynamixel-quick-start-guide-for-ros-1
-Tutorial for the [DYNAMIXEL Quick Start Guide for ROS 2]: #dynamixel-quick-start-guide-for-ros-2
-Tutorial for the [DYNAMIXEL Quick Start Guide for DYNAMIXEL Shield for Arduino MKR Series]: #dynamixel-quick-start-guide-for-dynamixel-shield-for-arduino-mkr-series
-Tutorial for the [DYNAMIXEL Quick Start Guide for OpenCR 1.0]: #dynamixel-quick-start-guide-for-opencr-10
+
+[DYNAMIXEL Quick Start Guide for Raspberry Pi (C language)]: #dynamixel-quick-start-guide-for-raspberry-pi-c-language
+[DYNAMIXEL Quick Start Guide in C++]: #dynamixel-quick-start-guide-in-c
+[DYNAMIXEL Quick Start Guide in Python]: #dynamixel-quick-start-guide-in-python
+[DYNAMIXEL Quick Start Guide in MATLAB on Linux]: #dynamixel-quick-start-guide-in-matlab-on-linux
+[DYNAMIXEL Quick Start Guide in MATLAB on Windows]: #dynamixel-quick-start-guide-in-matlab-on-windows
+[DYNAMIXEL Quick Start Guide for LabVIEW on Windows]: #dynamixel-quick-start-guide-for-labview-on-windows
+[DYNAMIXEL Quick Start Guide for ROS 1]: #dynamixel-quick-start-guide-for-ros-1
+[DYNAMIXEL Quick Start Guide for ROS 2]: #dynamixel-quick-start-guide-for-ros-2
+[DYNAMIXEL Quick Start Guide for DYNAMIXEL Shield for Arduino MKR Series]: #dynamixel-quick-start-guide-for-dynamixel-shield-for-arduino-mkr-series
+[DYNAMIXEL Quick Start Guide for OpenCR 1.0]: #dynamixel-quick-start-guide-for-opencr-10
 
 [How To: Firmware Recover DYNAMIXEL Using U2D2]: #how-to-firmware-recover-dynamixel-using-u2d2
 [How To: DYNAMIXEL Firmware Recovery Using OpenCR1.0]: #how-to-dynamixel-firmware-recovery-using-opencr10
 [Troubleshooting DYNAMIXEL Shutdowns with Dynamixel Wizard 2.0 Self-Diagnosis]: https://youtu.be/xVk4XcXfQX8
 [How To update the protocol on MX Series DYNAMIXELs]: https://youtu.be/aVZytXRc_r8
-Tutorial for the [DYNAMIXEL Selection Guide]: /docs/en/reference/dxl-selection-guide/
-
-<!-- [How To: DYNAMIXEL Firmware Recovery Using OpenCM9.04]: https://www.youtube.com/watch?v=92HAcjeAQGg&feature=youtu.be -->
-
-Tutorial for the [DYNAMIXEL SDK]: #dynamixel-sdk
+[DYNAMIXEL Selection Guide]: /docs/en/reference/dxl-selection-guide/
+[DYNAMIXEL SDK]: #dynamixel-sdk
 [Dynamixel2Arduino]: #dynamixel2arduino
 [DynamixelShield]: #dynamixelshield
-Tutorial for the [DYNAMIXEL Wizard 2.0]: #dynamixel-wizard-20
+[DYNAMIXEL Wizard 2.0]: #dynamixel-wizard-20

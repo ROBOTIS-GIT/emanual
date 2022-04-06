@@ -51,7 +51,7 @@ DYNAMIXELs come in a variety of sizes and with a variety of capabilities, with e
 
 This information is invaluable in narrowing your choices for actuators before moving on to considering the performance of the units.
 
-**NOTE**: DYNAMIXEL AX, MX series does not follow the naming convention, please jump to [Performance](#performance).
+**NOTE**: DYNAMIXEL AX and MX series actuators do not follow the naming convention, please refer to the [Performance](#performance) section for more information about identifying their capabilities.
 {: .notice}
 
 ## [Performance](#performance)
@@ -65,9 +65,6 @@ The easiest way to select a DYNAMIXEL based on its performance is to look at the
 
 Most DYNAMIXEL servos have a graph like that one located on their page here on the e-Manual. This graph provides an easy way to examine the overall performance characteristics of the servo at a glance, by graphing four of the most important metrics against one another:
 
-**NOTE**: In selecting DYNAMIXEL in terms of torque, ~20% of **Stall Torque** (See Specification) of DYNAMIXEL will be the general range of use for your system. 
-{: .notice}
-
 1. **Torque(Nm)** - External load applied at the shaft of servo. By the Torque(Nm), Output Speed(A) and Current(A) are determined
 
 2. **Speed(RPM)** - The output speed at the Torque. This shares the **black** line. 
@@ -78,15 +75,24 @@ Most DYNAMIXEL servos have a graph like that one located on their page here on t
 
 These factors can help you compare the performance of different DYNAMIXELs to help you find the one that is right for your use case.
 
+**NOTE:** When selecting DYNAMIXELs based on rated torque, two measurements of torque are used depending on the specific DYNAMIXEL Model.
+<br>**Continuous Torque** is the measurement of the amount of torque a DYNAMIXEL can produce constantly without risk of damage to the motor or gears.
+<br>**Stall Torque** is the maximum amount of torque a DYNAMIXEL can produce before the internal motor stalls. 
+<br>DYNAMIXEL's operational load should be based on the **Continuous Torque** rating. For servos where this value is not given, it can be estimated to be ~20% of **Stall Torque**
+{: .notice}
+
+<span style="color:red">**WARNING**</span>**: Operating DYNAMIXELS for extended periods at or near their stall torque can cause severe damage to the servos**
+{: .notice--warning}
+
 ## [Communication](#communication)
 
-Each DYNAMIXEL supports one of two serial communications: [TTL](#ttl), [RS-485](#rs-485). 
+Each DYNAMIXEL supports one of two serial communications protocols: [TTL](#ttl) or [RS-485](#rs-485). 
 
-To communicate with DYNAMIXELs using a controller, the same communication interface(TTL or RS-485) must be used.
+DYNAMIXEL actuators can be controlled by any device utilizing a compatible serial communications protocol.
 
 <details>
 <summary>
-![](/assets/images/icon_unfold.png) **Tip**: **Looking for a solution to combining TTL and RS-485 of DYNAMIXEL in your system ?**
+![](/assets/images/icon_unfold.png) **Tip**: **Looking for a solution to combine TTL and RS-485 DYNAMIXELs in your system?**
 </summary>
 Ordinarily, DYNAMIXELs utilizing different serial protocols can not communicate with one another over the same serial bus. This means that it is important to select servos using compatible communications protocols. In some applications, you may need to combine DYNAMIXELs with mismatched serial protocols. For these cases, you can combine mismatched serial protocols using a [DYNAMIXEL Communication Bridge](/docs/en/parts/interface/dxl_bridge/).
 
@@ -96,32 +102,32 @@ Ordinarily, DYNAMIXELs utilizing different serial protocols can not communicate 
 
 ### [TTL](#ttl)
 
-TTL (Transistor-Transistor Logic), 0 to 5V logic level, is the common serial communication interface of DYNAMIXEL. 
+TTL (Transistor-Transistor Logic) is the common serial communication interface for DYNAMIXEL actuators. 
 
-An easy way to identify TTL DYNAMIXEL actuator is that the model name ends with a "-T" (e.g, XL330-M288-**T**) and has three pins ports.  
+The simplest ways to identify TTL DYNAMIXEL actuators are a model name ending with a "-T" (e.g, XL330-M288-**T**) as well as the three pin JST ports.  
 
 ![](/assets/images/dxl/x/x_series_ttl_pin.png)  
 > Pin Diagram for TTL Based DYNAMIXEL, using JST connectors
 
 <details>
 <summary>
-![](/assets/images/icon_unfold.png) **Tip**: **Communication Circuit of TTL based DYNAMIXEL**
+![](/assets/images/icon_unfold.png) **Tip**: **TTL DYNAMIXEL Communication Circuit**
 </summary>
-To control the DYNAMIXEL actuators, the main controller needs to convert its UART signals to the half duplex type. The recommended circuit diagram for this is shown below.  
+DYNAMIXEL actuators operate using half-duplex UART communication. The following diagram shows the recommended circuit to convert full-duplex TTL to half-duplex TTL for DYNAMIXEL control.
+
+**WARNING**: This circuit is designed for a 5V or 5V tolerant MCU. Otherwise, a Level Shifter will be required to match the voltage of the MCU.
+{: .notice--warning}  
 ![](/assets/images/dxl/ttl_circuit.png)  
 
-**NOTE**: Above circuit is designed for 5V or 5V tolerant MCU. Otherwise, use a Level Shifter to match the voltage of MCU.
-{: .notice}  
-
-**NOTE**: 3.3V logic DYNAMIXELs, such as XL330 series, is 5V tolerant at data line. 
+**NOTE**: 3.3V logic level DYNAMIXELs, such as XL330 series, are 5V tolerant on the data line. 
 {: .notice}  
 </details>
 
 ### [RS-485](#rs-485)
 
-Some higher end DYNAMIXEL servos operate using RS-485 communications protocol. If you need longer cabling distance, RS-485 will the best option for you. 
+Some higher end DYNAMIXEL servos operate using the RS-485 communications protocol. If you need longer cabling distance or more resistance to interference, RS-485 will the best option for you. 
 
-An easy way to identify RS-485 based DYNAMIXEL actuator is that the model name ends with a "-R" (e.g, XD40-T150-**R**) and has four pins ports.
+The simplest ways to identify RS-485 based DYNAMIXEL actuator are a model name ending with an "-R" (e.g, XD40-T150-**R**) as well as the four pin JST ports.
 
 ![](/assets/images/dxl/x/x_series_485_pin.png)   
 > Pin Diagram for RS-485 Based DYNAMIXEL, using JST connectors
@@ -131,11 +137,12 @@ An easy way to identify RS-485 based DYNAMIXEL actuator is that the model name e
 ![](/assets/images/icon_unfold.png) **Tip**: **Communication Circuit of RS-485 based DYNAMIXEL**
 </summary>
 
-To control the DYNAMIXELs, the main controller needs to convert its UART signals to the half duplex type. The recommended circuit diagram for this is shown below.  
+DYNAMIXEL actuators operate using half-duplex UART communication. The following diagram shows the recommended circuit to convert full-duplex RS-485 to half-duplex RS-485 for DYNAMIXEL control.
+
+**WARNING**: This circuit is designed for a 5V or 5V tolerant MCU. Otherwise, a Level Shifter will be required to match the voltage of the MCU.
+{: .notice--warning}  
 ![](/assets/images/dxl/x/x_series_485_circuit.jpg)  
 
-**NOTE**: Above circuit is designed for 5V or 5V tolerant MCU. Otherwise, use a Level Shifter to match the voltage of MCU.
-{: .notice}
 </details>
 
 # [Power](#power)
@@ -148,7 +155,7 @@ Note that used connector may differ depending on your selection.
 
 ## [Operating Voltage](#operating-voltage)
 
-Before selecting your power solution, check out the operating voltage for each DYNAMIXEL Model.
+Prior to selecting your power solution, refer to the tables below for operating voltages for all DYNAMIXEL X-Series actuators.
 
 ### [DYNAMIXEL-X](#dynamixel-x)
 
@@ -160,12 +167,12 @@ Operating Voltage may differ depending on what model to be selected. See the fol
 | T / W  | 10.0 ~ 14.8<br>(Max 12V for XL430, XC330) | **12.0** <br>(11.1V for XL430, XC330) |
 | H / V  |                   24.0                    |               **24.0V**               |
 
-**NOTE**: The **_Symbol_** in the table follows our [Naming Convention](#models) of DYNAMIXEL-X series only. For other DYNAMIXEL family's operating voltage, such as AX, MX, please visit [DYNAMIXEL.com](http://www.dynamixel.com/list.php?dxl=x) and find it at **Voltage** cell in a table.
+**NOTE**: The **_Symbol_** in the table follows the [Naming Convention](#models) of DYNAMIXEL X-Series actuators. For DYNAMIXEL [AX](/docs/en/dxl/ax/ax-12a) and [MX](/docs/en/dxl/mx/mx-64) operating voltages refer to the eManual page for the servo.
 {: .notice}
 
 ### [DYNAMIXEL-P](#dynamixel-p)
 
-DYNAMIXEL-P Series runs at 24.0V. This can be compatible with DYNAMIXEL-X's `V` [models](#models) (24V) which represent operating voltages at 24V.
+All DYNAMIXEL-P Series actuators run at 24.0V. This allows them to be used alongside DYNAMIXEL X `V` series 24v actuators.
 
 <!-- 
 
@@ -180,7 +187,7 @@ DYNAMIXEL-P Series runs at 24.0V. This can be compatible with DYNAMIXEL-X's `V` 
 
 ### [SMPS](#smps)
 
-The **SMPS** is recommended power solution with ROBOTIS' providing interface and controller. Most of items offer the SMPS DC Connector that is compatible with 2.5mm / 5.5mm OD, Center Positive SMPS.
+The **SMPS** is ROBOTIS' recommended power solution with ROBOTIS' providing interface and controller. Most of items offer the SMPS DC Connector that is compatible with 2.5mm / 5.5mm OD, Center Positive SMPS.
   
 ![](/assets/images/reference/selection_guide/selection_guide_smps.png)
 > SMPS 12V, 5A
