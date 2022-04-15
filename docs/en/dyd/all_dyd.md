@@ -62,9 +62,6 @@ In the following image, it is shown that the rotational direction of the input m
 
 > Click to go the product manual.
 
-**NOTE**: DYD-17 document will be open in the near future
-{: .notice}
-
 ## [Specifications](#specifications)
 
 |             Properties              |  Unit  |   DYD-11-033    |   DYD-11-051    | DYD-14-051 | DYD-14-099 | DYD-17-051 | DYD-17-099 |
