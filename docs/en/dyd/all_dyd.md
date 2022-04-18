@@ -55,16 +55,14 @@ In the following image, it is shown that the rotational direction of the input m
 
 # [Product Lineup](#product-lineup)
 
-|                    DYD-11                    |                                  DYD-14                                  |                    DYD-17                    |
-|:--------------------------------------------:|:------------------------------------------------------------------------:|:--------------------------------------------:|
-| ![](/assets/images/dyd/dyd_lineup_11_02.png) |               ![](/assets/images/dyd/dyd_lineup_14_02.png)               | ![](/assets/images/dyd/dyd_lineup_17_02.png) |
-| [![](/assets/images/dyd/dyd_lineup_11_01.png)](/docs/en/all-dyd/dyd-11/) | [![](/assets/images/dyd/dyd_lineup_14_01.png)](/docs/en/all-dyd/dyd-14/) | [![](/assets/images/dyd/dyd_lineup_17_01.png)](/docs/en/all-dyd/dyd-17/) |
-
-> Click to go the product manual.
+|                   [DYD-11]                   |                   [DYD-14]                   |                   [DYD-17]                   |
+|:--------------------------------------------:|:--------------------------------------------:|:--------------------------------------------:|
+| ![](/assets/images/dyd/dyd_lineup_11_02.png) | ![](/assets/images/dyd/dyd_lineup_14_02.png) | ![](/assets/images/dyd/dyd_lineup_17_02.png) |
+| ![](/assets/images/dyd/dyd_lineup_11_01.png) | ![](/assets/images/dyd/dyd_lineup_14_01.png) | ![](/assets/images/dyd/dyd_lineup_17_01.png) |
 
 ## [Specifications](#specifications)
 
-|             Properties              |  Unit  |   DYD-11-033    |   DYD-11-051    | DYD-14-051 | DYD-14-099 | DYD-17-051 | DYD-17-099 |
+|             Properties              |  Unit  |   [DYD-11-033]    |   [DYD-11-051]    | [DYD-14-051] | [DYD-14-099] | [DYD-17-051] | [DYD-17-099] |
 |:-----------------------------------:|:------:|:---------------:|:---------------:|:----------:|:----------:|:----------:|:----------:|
 |             Gear ratio              |   -    |       33        |       51        |     51     |     99     |     51     |     99     |
 |       Repeatable peak torque        |   Nm   |       8.5       |      17.0       |     24     |     35     |     55     |     80     |
@@ -79,13 +77,13 @@ In the following image, it is shown that the rotational direction of the input m
 
 ## [Part Numbers](#part-numbers)
 
-![](/assets/images/dyd/dyd_parts_number_01.png)
+![](/assets/images/dyd/dyd_parts_numbe_update_01.jpg)
 
-| Product name | Model Size | Ratio  | Option | Special production |
-|:------------:|:----------:|:------:|:------:|:------------------:|
-|     DYD      |     11     | 33, 51 | C, SD  |         SP         |
-|     DYD      |     14     | 51, 99 | C, SD  |         SP         |
-|     DYD      |     17     | 51, 99 | C, SD  |         SP         |
+| Product name | Model Size | Ratio  |                 Option                  | Special production |
+|:------------:|:----------:|:------:|:---------------------------------------:|:------------------:|
+|     DYD      |     11     | 33, 51 | C (Clamp Ring)<br>SD: Set Screw (D-Cut) |         SP         |
+|     DYD      |     14     | 51, 99 | C (Clamp Ring)<br>SD: Set Screw (D-Cut) |         SP         |
+|     DYD      |     17     | 51, 99 | C (Clamp Ring)<br>SD: Set Screw (D-Cut) |         SP         |
 
 # [Product Selection Guide](#product-selection-guide)
 
@@ -328,3 +326,14 @@ Grease for lubrication of the gearhead is injected during assembly, and addition
 # [Use Applications](#use-applications)
 
 ![](/assets/images/dyd/dyd_application_01.png){: width="500px"}
+
+
+[DYD-11-033]: /docs/en/all-dyd/dyd-11/
+[DYD-11-051]: /docs/en/all-dyd/dyd-11/
+[DYD-14-051]: /docs/en/all-dyd/dyd-14/
+[DYD-14-099]: /docs/en/all-dyd/dyd-14/
+[DYD-17-051]: /docs/en/all-dyd/dyd-17/
+[DYD-17-099]: /docs/en/all-dyd/dyd-17/
+[DYD-11]: /docs/en/all-dyd/dyd-11/
+[DYD-14]: /docs/en/all-dyd/dyd-14/
+[DYD-17]: /docs/en/all-dyd/dyd-17/
