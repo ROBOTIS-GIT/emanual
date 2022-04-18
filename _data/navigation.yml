@@ -940,13 +940,13 @@ all-dyd:
     url: /all-dyd/#product-lineup
     urlkr: /all-dyd/#제품-라인업
   - title: "Product Selection Guide"
-    titlekr: "제품 선택 가이드"
+    # titlekr: "제품 선택 가이드"
     url: /all-dyd/#product-selection-guide
-    urlkr: /all-dyd/#제품-선택-가이드
+    # urlkr: /all-dyd/#제품-선택-가이드
   - title: "Glossary"
-    titlekr: "기술 자료"
+    # titlekr: "기술 자료"
     url: /all-dyd/#glossary
-    urlkr: /all-dyd/#기술-자료
+    # urlkr: /all-dyd/#기술-자료
   - title: "Use Applications"
     titlekr: "활용 예시"
     url: /all-dyd/#use-applications
