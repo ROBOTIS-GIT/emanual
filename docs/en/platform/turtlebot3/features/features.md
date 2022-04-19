@@ -149,7 +149,7 @@ The following table shows the lists of components. The major differences between
 | .                      | DYNAMIXEL to OpenCR Cable         |      2 |         2 |
 | .                      | USB Cable                         |      2 |         2 |
 | .                      | Camera Cable                      |      0 |         1 |
-| **Powers**             | SMPS 12V5A                        |      1 |         1 |
+| **Powers**             | SMPS 12V5A (2.5mm ID / 5.5mm OD, Center Positive)|1| 1 | 
 | .                      | A/C Cord                          |      1 |         1 |
 | .                      | LIPO Battery 11.1V 1,800mAh       |      1 |         1 |
 | .                      | LIPO Battery Charger              |      1 |         1 |
