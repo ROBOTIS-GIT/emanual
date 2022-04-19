@@ -11,6 +11,6 @@ Please refer to the Gain section in order to see how Goal PWM(548) affects to di
 
 |      Unit       |               Range                |
 |:---------------:|:----------------------------------:|
-| about 0.498 [%] | -[PWM Limit(36)] ~ [PWM Limit(36)] |
+| about 0.0498 [%] | -[PWM Limit(36)] ~ [PWM Limit(36)] |
 
 [PWM Limit(36)]: #pwm-limit36
