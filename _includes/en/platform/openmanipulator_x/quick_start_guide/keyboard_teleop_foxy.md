@@ -1,7 +1,7 @@
 
 Open another terminal and enter below command.  
 ```bash
-$ ros2 run open_manipulator_x_teleop open_manipulator_x_teleop_keyboard
+$ ros2 run open_manipulator_x_teleop teleop_keyboard
 ```
 
 

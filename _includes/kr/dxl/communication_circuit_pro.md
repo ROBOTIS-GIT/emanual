@@ -3,7 +3,7 @@ Main Controller를 직접 제작하여 {% if page.product_group=='dxl_p' %}다�
 
 ![](/assets/images/dxl/x/x_series_485_circuit.jpg)
 
-**참고**: 위 회로는 5V 전원을 사용하는 MCU를 사용하거나 IO가 5V tolerant한 경우 사용가능합니다. 그 외의 경우, Level Shifter를 사용하세요.
+**참고**: 위 회로는 5V 전원을 사용하는 MCU를 사용하거나 IO가 5V tolerant한 경우 사용 가능합니다. 그 외의 경우, Level Shifter를 사용하세요.
 {: .notice}
 
 전원은 Pin1(-), Pin2(+)를 통하여 다이나믹셀로 공급됩니다. (다이나믹셀 전용 제어기에는 위의 회로가 내장되어 있습니다)

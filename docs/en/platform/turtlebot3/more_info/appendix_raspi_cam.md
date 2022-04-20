@@ -10,15 +10,16 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 31
+page_number: 32
 ---
 
 <div style="counter-reset: h1 13"></div>
 <div style="counter-reset: h2 1"></div>
-<div style="counter-reset: h3 4"></div>
+<div style="counter-reset: h3 5"></div>
 
 <!--[dummy Header 1]>
-  <h1 id="appendixes"><a href="#appendixes">Appendixes</a></h1>
+  <h1 id="dummy">More Info</h1>
+  <h2 id="dummy">Appendixes: Raspberry Pi Camera Module v2</h2>
 <![end dummy Header 1]-->
 
 ### [Raspberry Pi Camera](#raspberry-pi-camera)

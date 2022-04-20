@@ -105,7 +105,7 @@ RoboPlus (R+) software is designed to help you begin creating and programming wi
 
 ## [R+ Task 3.0](#r-task-30)
 
-[R+ Task 3.0](/docs/en/software/rplustask3/) is an integrated software tool that combines R+ Task 2.0 and R+ Motion 2.0.
+The most fully featured option is [R+ Task 3.0](/docs/en/software/rplustask3/), featuring options to program your robot using ROBOTIS [Task Code](/docs/en/software/rplustask3/task_programming), Python, and [Motion Programming](/docs/en/software/rplustask3/motion_programming). 
 
 |                                        R+ Task 3.0                                        |
 | :---------------------------------------------------------------------------------------: |

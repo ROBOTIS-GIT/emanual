@@ -10,14 +10,16 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 33
+page_number: 34
 ---
 
 <div style="counter-reset: h1 13"></div>
 <div style="counter-reset: h2 2"></div>
 
 <!--[dummy Header 1]>
-  <h1 id="basic-operation"><a href="#basic-operation">Basic Operation</a></h1>
+  <h1 id="dummy">More Info</h1>
+  <h2 id="dummy">Additional Sensors</h2>
+  <p class=dummy_content>TurtleBot3 Available sensors</p>
 <![end dummy Header 1]-->
 
 ## [Additional Sensors](#additional-sensors)

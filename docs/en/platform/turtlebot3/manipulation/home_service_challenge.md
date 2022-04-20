@@ -20,12 +20,14 @@ product_group: turtlebot3
 page_number: 18
 ---
 
-<!--[dummy Header 1]>
-  <h1 data-id="dummy"><a href="#dummy">Dummy</a></h1>
-<![end dummy Header 1]-->
-
 <div style="counter-reset: h1 7"></div>
 <div style="counter-reset: h2 9"></div>
+
+<!--[dummy Header 1]>
+  <h1 id="dummy">Manipulation</h1>
+  <h2 id="dummy">Home Service Challenge</h2>
+  <p class="dummy_content">Home Service Challenge Package</p>
+<![end dummy Header 1]-->
 
 ## [TurtleBot3 Home Service Challenge](#turtlebot3-home-service-challenge)
 

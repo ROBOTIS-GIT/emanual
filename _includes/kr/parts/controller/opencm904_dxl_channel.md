@@ -7,7 +7,7 @@
 {: .notice}
 
 {% if page.ref=='opencm904' %}
-**참고**: [OpenCM485 확장보드](/docs/kr/parts/controller/opencm485exp/)를 사용하면, 24V 다이나믹셀 및 RS485 통신이 사용가능합니다.  
+**참고**: [OpenCM485 확장보드](/docs/kr/parts/controller/opencm485exp/)를 사용하면, 24V 다이나믹셀 및 RS485 통신이 사용 가능합니다.  
 ![](/assets/images/sw/rplus2/manager/rplusmanager2_30_kr.jpg) 
 {: .notice}
 

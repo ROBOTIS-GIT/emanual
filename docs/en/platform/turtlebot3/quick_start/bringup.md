@@ -24,6 +24,12 @@ page_number: 8
 <div style="counter-reset: h2 4"></div>
 {::options parse_block_html="true" /}
 
+<!--[dummy Header 1]>
+  <h1 id="dummy">Quick Start Guide</h1>
+  <h2 id="dummy">Bring Up</h2>
+  <p class="dummy_content">Wake up your TurtleBot3 using the Bringup package</p>
+<![end dummy Header 1]-->
+
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/turtlebot3/bringup_kinetic.md %}
 </section>

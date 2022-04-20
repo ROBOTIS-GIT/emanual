@@ -18,7 +18,7 @@ sidebar:
 
 ![](/assets/images/sw/dynamixel/wizard2/wizard2_main_000.jpg)
 
-**Software Download (v2.0.11)**  
+**Software Download (v2.0.12)**  
 [Windows](http://www.robotis.com/service/download.php?no=1670)  
 [Linux](http://www.robotis.com/service/download.php?no=1671)  
 [Mac](http://www.robotis.com/service/download.php?no=1760)  
@@ -99,7 +99,7 @@ Although almost all ROBOTIS products are shipped with installed firmwares, new f
 ## [Install: Windows](#install-windows)
 
 1. Download the package file.
-- [Windows Software Download(v2.0.9)](http://www.robotis.com/service/download.php?no=1670)  
+- [Windows Software Download](http://www.robotis.com/service/download.php?no=1670)  
 2. Execute downloaded installation file.  
 3. Click on `Next` button to proceed installation.
 
@@ -108,7 +108,7 @@ Although almost all ROBOTIS products are shipped with installed firmwares, new f
 ## [Install: Linux](#install-linux)
 
 1. Download the package file.  
-- [Linux Software Download(v2.0.9)](http://www.robotis.com/service/download.php?no=1671)  
+- [Linux Software Download](http://www.robotis.com/service/download.php?no=1671)  
 2. Enter the following command to change the permission.
 
     ```bash
@@ -136,7 +136,7 @@ Although almost all ROBOTIS products are shipped with installed firmwares, new f
 ## [Install: Mac](#install-mac)
 
 1. Download the package file.  
-- [Mac Software Download(v2.0.9)](http://www.robotis.com/service/download.php?no=1760)
+- [Mac Software Download](http://www.robotis.com/service/download.php?no=1760)
 2. Right click on the downloaded dmg file and select `Open` from the mene.  
   ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_mac_01.png)
 3. Launch the `DynamixelWizard2Setup_x64` file.  
@@ -414,14 +414,14 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 
 ## [Firmware Update](#firmware-update)
 
-Update firmware version of DYNAMIXEL, if you see its model name with a special charactor (\*), on the device list, in light grey.  
-When positioning a mouse cursor on its model name, **Firmware update is available** will be shown up.  
+When your connected DYNAMIXEL has a firmware update available an asterisk **(\*)** will be displayed next to the model name on the device list.  
+When positioning your mouse cursor over the model name, **Firmware update is Available** will also be displayed as a tooltip.
 
 ![](/assets/images/sw/dynamixel/wizard2/wizard2_update_notification.png)
 
 1. Go to `Tools` > `Firmware Update`
 
-    **NOTE** : If there isn't any detected or connected device, `Firmware Update` will be disabled. Please scan DYNAMIXEL first.
+    **NOTE** : If no DYNAMIXELS are detected, the `Firmware Update` option will not be available. 
     {: .notice}
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_015.png)

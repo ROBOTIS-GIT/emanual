@@ -44,7 +44,7 @@ Please refer to [DYNAMIXEL Shield Libraries](#dynamixel-shield-libraries) sectio
 |:----------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | VIN(DXL) Voltage<sup>1</sup> | 3.5 ~ 24 [V]                                                                                                                                                  |
 |    Operating Temperature     | -10 ~ +80 [&deg;C]                                                                                                                                            |
-|    Connectors<sup>2</sup>    | JST([S3B-EH]), Molex([5268-02A])<br>Battery Connector<sup>3</sup>([SMW250-02])<br>Terminal Block([DG350-3.5-02P-14])                                          |
+|    Connectors<sup>2</sup>    | JST([S3B-EH]), Molex([5268-03A])<br>Battery Connector<sup>3</sup>([SMW250-02])<br>Terminal Block([DG350-3.5-02P-14])                                          |
 |     Physical Connection      | TTL Multidrop Bus (5V Level)                                                                                                                                  |
 |            Cables            | ![](/assets/images/parts/interface/mkr_shield/dc_jack_polarity.png)<br>DC Jack Harness (Type A, O.D: 5.5 [mm], I.D: 2.5 [mm])<br>Convertible cable for XL-320 |
 |          Dimensions          | 65 x 25 [mm]                                                                                                                                                  |
@@ -76,7 +76,7 @@ The following parts are included in the package.
 
 - DYNAMIXEL Shield MKR (1)
 - JST Header([S3B-EH]) (2)
-- Molex Header([5268-02A]) (2)
+- Molex Header([5268-03A]) (2)
 - Terminal Block([DG350-3.5-02P-14]) (1)
 - DC Jack Harness (1)
 - Battery Connector([SMW250-02]) (1)
@@ -389,7 +389,7 @@ The RC receiver and the DYNAMIXEL Shield MKR can be connected as below.
 [xh540-w150-t]: /docs/en/dxl/x/xh540-w150/
 [xh540-w270-t]: /docs/en/dxl/x/xh540-w270/
 [s3b-eh]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
-[5268-02a]: https://www.molex.com/molex/products/part-detail/pcb_headers/0022057025
+[5268-03A]: https://www.molex.com/molex/products/part-detail/pcb_headers/0022057035
 [smw250-02]: http://product.ic114.com/PDF/S/SMW250-NN.pdf
 [dg350-3.5-02p-14]: http://www.degson.com/en/downpdf/id/542.html
 [robotis smps 12v 5a ps-10]: http://en.robotis.com/shop_en/list.php?ca_id=3020a0

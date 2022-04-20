@@ -166,7 +166,7 @@ sidebar:
 
 [ln-101]: /docs/kr/parts/interface/ln-101/
 [CM-5]: /docs/kr/parts/controller/cm-5/
-[CM-50]: /docs/kr/parts/controller/cm-100/
+[CM-50]: /docs/kr/parts/controller/cm-50/
 [CM-100]: /docs/kr/parts/controller/cm-100/
 [CM-150]: /docs/kr/parts/controller/cm-150/
 [CM-200]: /docs/kr/parts/controller/cm-200/

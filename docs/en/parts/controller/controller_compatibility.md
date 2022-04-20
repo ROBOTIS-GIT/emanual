@@ -70,10 +70,10 @@ sidebar:
 |       TPS-10 (Temperature Sensor)        |   X    |    X    |    X     |    O     |    O     |    O     |    O     |    O     |    O     |    X     |    O     |                  O                  |      O      |    O     |
 | TMS-10 (Temperature and Moisture sensor) |   X    |    X    |    X     |    O     |    O     |    O     |    X     |    O     |    O     |    X     |    O     |                  O                  |      O      |    O     |
 |        AX-S1 (Integrated Sensor)         |   O    |    X    |    X     |    X     |    X     |    X     |    O     |    O     |    X     |    O     |    X     |                  O                  |      X      |    O     |
-|           SM-10 (Servo Motor)            |   X    |    X    |    O     |    O     |    O     |    O     |    X     |    O     |    O     |    X     |    O     |                  O                  |      O      |    O     |
-|          GM-10A (Geared Motor)           |   X    |    X    |    O     |    O     |    O     |    O     |    X     |    X     |    X     |    X     |    O     |                  O                  |      O      |    O     |
-|         High Speed Geared Motor          |   X    |    O    |    O     |    O     |    O     |    X     |    X     |    X     |    X     |    X     |    O     |                  O                  |      O      |    O     |
-|          Low Speed Geared Motor          |   X    |    O    |    O     |    O     |    O     |    X     |    X     |    X     |    X     |    X     |    O     |                  O                  |      O      |    O     |
+|           SM-10 (Servo Motor)            |   X    |    X    |    O     |    O     |    O     |    O     |    X     |    O     |    O     |    X     |    O     |                  X                  |      O      |    O     |
+|          GM-10A (Geared Motor)           |   X    |    X    |    O     |    O     |    O     |    O     |    X     |    X     |    X     |    X     |    O     |                  X                  |      O      |    O     |
+|         High Speed Geared Motor          |   X    |    O    |    O     |    O     |    O     |    X     |    X     |    X     |    X     |    X     |    O     |                  X                  |      O      |    O     |
+|          Low Speed Geared Motor          |   X    |    O    |    O     |    O     |    O     |    X     |    X     |    X     |    X     |    X     |    O     |                  X                  |      O      |    O     |
 |            LM-10 (LED Module)            |   X    |    O    |    O     |    O     |    O     |    O     |    X     |    O     |    O     |    X     |    O     |                  O                  |      O      |    O     |
 |                IR Sensor                 |   X    |    X    |    O     |    O     |    O     |    X     |    O     |    O     |    O     |    O     |    X     |                  O                  |      X      |    O     |
 |                 ZIG-100                  |   O    |    O    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  X                  |      X      |    X     |
@@ -131,7 +131,7 @@ sidebar:
 |:----------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:-----------------------------------:|:-----------:|:--------:|
 |   [R+ m.Task]    |   O    |    O    |    O     |    O     |    x     |    O     |    O     |    O     |    X     |    O     |    X     |                O(X)                 |      O      |    X     |
 | [R+ m.Task 2.0]  |   O    |    O    |    X     |    O     |    x     |    O     |    O     |    O     |    X     |    X     |    X     |                O(X)                 |      O      |    X     |
-| [R+ m.Mtion 2.0] |   O    |    X    |    X     |    X     |    X     |    O     |    O     |    O     |    X     |    O     |    X     |                O(X)                 |      X      |    X     |
+| [R+ m.Motion 2.0] |   O    |    X    |    X     |    X     |    X     |    O     |    O     |    O     |    X     |    O     |    X     |                O(X)                 |      X      |    X     |
 |  [R+ m.Design]   |   O    |    X    |    O     |    O     |    O     |    O     |    O     |    O     |    X     |    X     |    X     |                O(X)                 |      X      |    X     |
 
 ### [R+ Mobile (STEAM KIT)](#r-mobile-steam-kit)
@@ -139,7 +139,7 @@ sidebar:
 |             Model              | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-151] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[OpenCM 485 EXP]) | [OpenCM7.0] | [OpenCR] |
 |:------------------------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:-----------------------------------:|:-----------:|:--------:|
 | R+ SMART <br> ( I / II / III ) |   X    |    X    |    X     |    X     |    X     |    O     |    X     |    X     |    X     |    X     |    X     |                  X                  |      X      |    X     |
-|           [R+ Blcok]           |   X    |    O    |    X     |    O     |    O     |    X     |    X     |    X     |    X     |    X     |    X     |                  X                  |      O      |    X     |
+|           [R+ Block]           |   X    |    O    |    X     |    O     |    O     |    X     |    X     |    X     |    X     |    X     |    X     |                  X                  |      O      |    X     |
 |             R+ IoT             |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  X                  |      O      |    X     |
 |         [R+ Play 700]          |   X    |    O    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  X                  |      X      |    X     |
 |         [ROBOTIS MINI]         |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                O(X)                 |      X      |    X     |
@@ -156,7 +156,7 @@ sidebar:
 |        [DYNAMIXEL SDK]        |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  O                  |      X      |    O     |
 |     [DYNAMIXEL Workbench]     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  O                  |      X      |    O     |
 |      [DYNAMIXEL Wizard]       |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  X                  |      X      |    X     |
-|    [DYNAMIXEL Wizard 2.0]     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  X                  |      X      |    X     |
+|    [DYNAMIXEL Wizard 2.0]     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  X                  |      X      |    O     |
 | [ROBOTIS Manipulator library] |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  X                  |      X      |    O     |
 | [Embeded SDK(CM-510/530/700)] |   X    |    X    |    X     |    X     |    X     |    X     |    O     |    O     |    X     |    O     |    X     |                  X                  |      X      |    X     |
 |          Arduino IDE          |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  O                  |      X      |    O     |
@@ -169,7 +169,7 @@ sidebar:
 
 [ln-101]: /docs/en/parts/interface/ln-101/
 [CM-5]: /docs/en/parts/controller/cm-5/
-[CM-50]: /docs/en/parts/controller/cm-100/
+[CM-50]: /docs/en/parts/controller/cm-50/
 [CM-100]: /docs/en/parts/controller/cm-100/
 [CM-150]: /docs/en/parts/controller/cm-150/
 [CM-151]: /docs/en/parts/controller/cm-151/

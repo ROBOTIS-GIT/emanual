@@ -5,13 +5,13 @@ ref: faq
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/faq/general
+permalink: /docs/en/faq/general/
 sidebar:
   title: GENERAL
   nav: "general"
 ---
 
-# What Software, DYNAMIXEL and Parts are compatible with my own controller?
+# [What Software, DYNAMIXEL and Parts are compatible with my own controller?](#what-is-the-difference-between-dynamixel-protocol-10-and-20)
 - See [Product Compatibility Guide](/docs/en/parts/controller/controller_compatibility/).
 
 # How to download Task Code to my controller? 

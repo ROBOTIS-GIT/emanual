@@ -24,7 +24,7 @@ product_group: all-dyd
 |:-----------------------------------:|:--------------------------------:|:----------:|:----------:|:----:|
 |             Gear ratio              |                -                 |     51     |     99     |  -   |
 |       Repeatable peak torque        |                Nm                |     24     |     35     |  -   |
-| Rated output torque<br>(@2,000 rpm) |                Nm                |    3.7     |    5.4     |  -   |
+| Rated torque<br>(@2,000 rpm) |                Nm                |    3.7     |    5.4     |  -   |
 |         Maximum input speed         |               rpm                |   6,000    |   6,000    |  -   |
 |         Nominal input speed         |               rpm                |   2,000    |   2,000    |  -   |
 |         Moment of intertia          | X10<sup>-4</sup> kgm<sup>2</sup> |   0.119    |   0.135    |  -   |

@@ -55,40 +55,35 @@ In the following image, it is shown that the rotational direction of the input m
 
 # [Product Lineup](#product-lineup)
 
-|                    DYD-11                    |                                  DYD-14                                  |                    DYD-17                    |
-|:--------------------------------------------:|:------------------------------------------------------------------------:|:--------------------------------------------:|
-| ![](/assets/images/dyd/dyd_lineup_11_02.png) |               ![](/assets/images/dyd/dyd_lineup_14_02.png)               | ![](/assets/images/dyd/dyd_lineup_17_02.png) |
-| [![](/assets/images/dyd/dyd_lineup_11_01.png)](/docs/en/all-dyd/dyd-11/) | [![](/assets/images/dyd/dyd_lineup_14_01.png)](/docs/en/all-dyd/dyd-14/) | ![](/assets/images/dyd/dyd_lineup_17_01.png) |
-
-> Click to go the product manual.
-
-**NOTE**: DYD-17 document will be open in the near futre
-{: .notice}
+|                   [DYD-11]                   |                   [DYD-14]                   |                   [DYD-17]                   |
+|:--------------------------------------------:|:--------------------------------------------:|:--------------------------------------------:|
+| ![](/assets/images/dyd/dyd_lineup_11_02.png) | ![](/assets/images/dyd/dyd_lineup_14_02.png) | ![](/assets/images/dyd/dyd_lineup_17_02.png) |
+| ![](/assets/images/dyd/dyd_lineup_11_01.png) | ![](/assets/images/dyd/dyd_lineup_14_01.png) | ![](/assets/images/dyd/dyd_lineup_17_01.png) |
 
 ## [Specifications](#specifications)
 
-|             Properties              |  Unit  |   DYD-11-033    |   DYD-11-051    | DYD-14-051 | DYD-14-099 | DYD-17-051 | DYD-17-099 |
+|             Properties              |  Unit  |   [DYD-11-033]    |   [DYD-11-051]    | [DYD-14-051] | [DYD-14-099] | [DYD-17-051] | [DYD-17-099] |
 |:-----------------------------------:|:------:|:---------------:|:---------------:|:----------:|:----------:|:----------:|:----------:|
 |             Gear ratio              |   -    |       33        |       51        |     51     |     99     |     51     |     99     |
 |       Repeatable peak torque        |   Nm   |       8.5       |      17.0       |     24     |     35     |     55     |     80     |
-| Rated output torque<br>(@2,000 rpm) |   Nm   |       2.2       |       3.5       |    5.4     |    7.8     |    16.0    |    24.0    |
+| Rated torque<br>(@2,000 rpm) |   Nm   |       2.2       |       3.5       |    5.4     |    7.8     |    16.0    |    24.0    |
 |         Maximum input speed         |  rpm   |      6,000      |      6,000      |   6,000    |   6,000    |   6,000    |   6,000    |
 |         Nominal input speed         |  rpm   |      2,000      |      2,000      |   2,000    |   2,000    |   2,000    |   2,000    |
 |     Hysteresis loss / Backlash      | arcmin |      <3.0       |      <3.0       |    <3.0    |    <3.0    |    <3.0    |    <3.0    |
 |           Starting torque           |  cNm   |       20        |       20        |     20     |     20     |     30     |     30     |
-|            Service life             | hours  |      3,000      |      3,000      |   5,000    |   5,000    |   5,000    |   5,000    |
+|            Service life             | hours  |      3,000      |      3,000      |   5,000    |   5,000    |   7,000    |   7,000    |
 |              Dimension              |   mm   | 43 X 43 X 23.65 | 43 X 43 X 23.65 |  ø68 x 30  |  ø68 x 30  | ø78 x 34.2 | ø78 x 34.2 |
 |               Weight                |   g    |       196       |       196       |    400     |    400     |    600     |    600     |
 
 ## [Part Numbers](#part-numbers)
 
-![](/assets/images/dyd/dyd_parts_number_01.png)
+![](/assets/images/dyd/dyd_parts_numbe_update_01.jpg)
 
-| Product name | Model Size | Ratio  | Option | Special production |
-|:------------:|:----------:|:------:|:------:|:------------------:|
-|     DYD      |     11     | 33, 51 | C, SD  |         SP         |
-|     DYD      |     14     | 51, 99 | C, SD  |         SP         |
-|     DYD      |     17     | 51, 99 | C, SD  |         SP         |
+| Product name | Model Size | Ratio  |                 Option                  | Special production |
+|:------------:|:----------:|:------:|:---------------------------------------:|:------------------:|
+|     DYD      |     11     | 33, 51 | C (Clamp Ring)<br>SD: Set Screw (D-Cut) |         SP         |
+|     DYD      |     14     | 51, 99 | C (Clamp Ring)<br>SD: Set Screw (D-Cut) |         SP         |
+|     DYD      |     17     | 51, 99 | C (Clamp Ring)<br>SD: Set Screw (D-Cut) |         SP         |
 
 # [Product Selection Guide](#product-selection-guide)
 
@@ -186,7 +181,7 @@ The required service life for a given speed and load values can be calculated as
 |:-----------------------------------:|:------:|:----------:|
 |             Gear ratio              |   -    |     51     |
 |       Repeatable peak torque        |   Nm   |    24    |
-| Rated output torque<br>(@2,000 rpm) |   Nm   |    5.4     |
+| Rated torque<br>(@2,000 rpm) |   Nm   |    5.4     |
 |         Maximum input speed         |  rpm   |   6,000    |
 |         Average input speed         |  rpm   |   2,000    |
 |     Hysteresis loss / Backlash      | arcmin |    <3.0    |
@@ -221,7 +216,7 @@ Required service life : 5,000 hours > Expected service life : 4,880 hours
 |:-----------------------------------:|:----------:|
 |             Gear ratio              |     99     |
 |       Repeatable peak torque        |     35     |
-| Rated output torque<br>(@2,000 rpm) |    7.8     |
+| Rated torque<br>(@2,000 rpm) |    7.8     |
 |         Maximum input speed         |   6,000    |
 |         Average input speed         |   2,000    |
 |     Hysteresis loss / Backlash      |    <3.0    |
@@ -268,7 +263,7 @@ Starting Torque = 20 cNm (DYD-14)
 
 # [Glossary](#glossary)
 
-## [Rated output torque](#rated-output-torque)
+## [Rated torque](#rated-torque)
 
 Rated torque indicates allowable continuous load torque at rated input speed.
 
@@ -298,11 +293,11 @@ As shown in Figure below, when the rated torque is gradually applied to the outp
 
 ## [Lost motion](#lost-motion)
 
-The lost motion indicates the torsional angle at +/- 3% of the rated output torque as shown in the figure above.
+The lost motion indicates the torsional angle at +/- 3% of the Rated torque as shown in the figure above.
 
 ## [Torsional stiffness](#torsional-stiffness)
 
-The torsional stiffness indicates the spring constants between 50% and 100% of the rated output torque, and can be calculated as follows: Torsional stiffness = b/a [Nm/arcmin].
+The torsional stiffness indicates the spring constants between 50% and 100% of the Rated torque, and can be calculated as follows: Torsional stiffness = b/a [Nm/arcmin].
 
 ## [Efficiency](#efficiency)
 
@@ -331,3 +326,14 @@ Grease for lubrication of the gearhead is injected during assembly, and addition
 # [Use Applications](#use-applications)
 
 ![](/assets/images/dyd/dyd_application_01.png){: width="500px"}
+
+
+[DYD-11-033]: /docs/en/all-dyd/dyd-11/
+[DYD-11-051]: /docs/en/all-dyd/dyd-11/
+[DYD-14-051]: /docs/en/all-dyd/dyd-14/
+[DYD-14-099]: /docs/en/all-dyd/dyd-14/
+[DYD-17-051]: /docs/en/all-dyd/dyd-17/
+[DYD-17-099]: /docs/en/all-dyd/dyd-17/
+[DYD-11]: /docs/en/all-dyd/dyd-11/
+[DYD-14]: /docs/en/all-dyd/dyd-14/
+[DYD-17]: /docs/en/all-dyd/dyd-17/

@@ -8,6 +8,11 @@ sidebar:
   nav: "parts"
 ---
 
+<!-- [dummy Header 1] >
+  <h1 id="dummy">PARTS</h1>
+  <p class="dummy_content">로보티즈 제품과 호환되는 인터페이스, 센서 및 각종 부품들입니다</p>
+<![end dummy Header 1] -->
+
 <div class="feature__wrapper">
 
     <div class="feature__item" id="controller">

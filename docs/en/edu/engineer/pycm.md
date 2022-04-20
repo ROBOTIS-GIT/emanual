@@ -5,7 +5,7 @@ ref: pycm
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/edu/pycm
+permalink: /docs/en/edu/pycm/
 sidebar:
   title: CM-550 MicroPython API
   nav: "pycm"

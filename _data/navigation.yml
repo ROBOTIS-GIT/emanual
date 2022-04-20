@@ -39,10 +39,10 @@ main:
           titlekr: "DYD-14"
           url: /all-dyd/dyd-14
           urlkr: /all-dyd/dyd-14
-        # - title: "DYD-17"
-        #   titlekr: "DYD-17"
-        #   url: /all-dyd/dyd-17
-        #   urlkr: /all-dyd/dyd-17
+        - title: "DYD-17"
+          titlekr: "DYD-17"
+          url: /all-dyd/dyd-17
+          urlkr: /all-dyd/dyd-17
     - title: "X Series"
       titlekr: "X 시리즈"
       url: /dxl/x/
@@ -940,13 +940,13 @@ all-dyd:
     url: /all-dyd/#product-lineup
     urlkr: /all-dyd/#제품-라인업
   - title: "Product Selection Guide"
-    titlekr: "제품 선택 가이드"
+    # titlekr: "제품 선택 가이드"
     url: /all-dyd/#product-selection-guide
-    urlkr: /all-dyd/#제품-선택-가이드
+    # urlkr: /all-dyd/#제품-선택-가이드
   - title: "Glossary"
-    titlekr: "기술 자료"
+    # titlekr: "기술 자료"
     url: /all-dyd/#glossary
-    urlkr: /all-dyd/#기술-자료
+    # urlkr: /all-dyd/#기술-자료
   - title: "Use Applications"
     titlekr: "활용 예시"
     url: /all-dyd/#use-applications
@@ -7433,6 +7433,10 @@ xm430-w210:
     url: /dxl/x/xm430-w210/#reference
     urlkr: /dxl/x/xm430-w210/#참고자료
     children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xm430-w210/#wiring-through-back-case
+        urlkr: /dxl/x/xm430-w210/#배선-예시      
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xm430-w210/#what-is-the-profile
@@ -7716,6 +7720,10 @@ xm430-w350:
     url: /dxl/x/xm430-w350/#reference
     urlkr: /dxl/x/xm430-w350/#참고자료
     children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xm430-w350/#wiring-through-back-case
+        urlkr: /dxl/x/xm430-w350/#배선-예시      
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xm430-w350/#what-is-the-profile
@@ -8001,6 +8009,10 @@ xm540-w150:
     url: /dxl/x/xm540-w150/#reference
     urlkr: /dxl/x/xm540-w150/#참고자료
     children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xm540-w150/#wiring-through-back-case
+        urlkr: /dxl/x/xm540-w150/#배선-예시       
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xm540-w150/#what-is-the-profile
@@ -8286,6 +8298,10 @@ xm540-w270:
     url: /dxl/x/xm540-w270/#reference
     urlkr: /dxl/x/xm540-w270/#참고자료
     children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xm540-w270/#wiring-through-back-case
+        urlkr: /dxl/x/xm540-w270/#배선-예시       
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xm540-w270/#what-is-the-profile
@@ -9857,7 +9873,7 @@ xd540-t270:
         url: /dxl/x/xd540-t270/#moment-of-inertia
         urlkr: /dxl/x/xd540-t270/#moment-of-inertia
 
-#XH430-W210 sidebar
+#XD430-T210 sidebar
 xd430-t210:
   - title: "Specifications"
     titlekr: "주요 사양"
@@ -10111,6 +10127,10 @@ xd430-t210:
     url: /dxl/x/xd430-t210/#reference
     urlkr: /dxl/x/xd430-t210/#참고자료
     children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xd430-t210/#wiring-through-back-case
+        urlkr: /dxl/x/xd430-t210/#배선-예시      
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xd430-t210/#what-is-the-profile
@@ -10394,6 +10414,10 @@ xd430-t350:
     url: /dxl/x/xd430-t350/#reference
     urlkr: /dxl/x/xd430-t350/#참고자료
     children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xd430-t350/#wiring-through-back-case
+        urlkr: /dxl/x/xd430-t350/#배선-예시      
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xd430-t350/#what-is-the-profile
@@ -10677,6 +10701,10 @@ xh430-v210:
     url: /dxl/x/xh430-v210/#reference
     urlkr: /dxl/x/xh430-v210/#참고자료
     children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xh430-v210/#wiring-through-back-case
+        urlkr: /dxl/x/xh430-v210/#배선-예시      
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xh430-v210/#what-is-the-profile
@@ -10956,6 +10984,10 @@ xh430-v350:
     url: /dxl/x/xh430-v350/#reference
     urlkr: /dxl/x/xh430-v350/#참고자료
     children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xh430-v350/#wiring-through-back-case
+        urlkr: /dxl/x/xh430-v350/#배선-예시      
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xh430-v350/#what-is-the-profile
@@ -11235,6 +11267,10 @@ xh430-w210:
     url: /dxl/x/xh430-w210/#reference
     urlkr: /dxl/x/xh430-w210/#참고자료
     children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xh430-w210/#wiring-through-back-case
+        urlkr: /dxl/x/xh430-w210/#배선-예시      
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xh430-w210/#what-is-the-profile
@@ -11518,6 +11554,10 @@ xh430-w350:
     url: /dxl/x/xh430-w350/#reference
     urlkr: /dxl/x/xh430-w350/#참고자료
     children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xh430-w350/#wiring-through-back-case
+        urlkr: /dxl/x/xh430-w350/#배선-예시
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xh430-w350/#what-is-the-profile
@@ -11803,6 +11843,10 @@ xh540-w150:
     url: /dxl/x/xh540-w150/#reference
     urlkr: /dxl/x/xh540-w150/#참고자료
     children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xh540-w150/#wiring-through-back-case
+        urlkr: /dxl/x/xh540-w150/#배선-예시       
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xh540-w150/#what-is-the-profile
@@ -12088,6 +12132,10 @@ xh540-w270:
     url: /dxl/x/xh540-w270/#reference
     urlkr: /dxl/x/xh540-w270/#참고자료
     children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xh540-w270/#wiring-through-back-case
+        urlkr: /dxl/x/xh540-w270/#배선-예시       
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xh540-w270/#what-is-the-profile
@@ -12373,6 +12421,10 @@ xh540-v150:
     url: /dxl/x/xh540-v150/#reference
     urlkr: /dxl/x/xh540-v150/#참고자료
     children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xh540-v150/#wiring-through-back-case
+        urlkr: /dxl/x/xh540-v150/#배선-예시       
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xh540-v150/#what-is-the-profile
@@ -12650,6 +12702,10 @@ xh540-v270:
     url: /dxl/x/xh540-v270/#reference
     urlkr: /dxl/x/xh540-v270/#참고자료
     children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xh540-v270/#wiring-through-back-case
+        urlkr: /dxl/x/xh540-v270/#배선-예시       
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xh540-v270/#what-is-the-profile
@@ -20937,6 +20993,8 @@ turtlebot3:
         url: /platform/turtlebot3/appendix_opencr1_0/
       - title: "LDS-01"
         url: /platform/turtlebot3/appendix_lds_01/
+      - title: "LDS-02"
+        url: /platform/turtlebot3/appendix_lds_02/
       - title: "RealSense™"
         url: /platform/turtlebot3/appendix_realsense/
       - title: "Raspberry Pi Camera"
@@ -27786,6 +27844,211 @@ dxl-quick-start:
         url: /dxl/dxl-quick-start-insert/#dynamixel-and-cm-series
       - title: "DYNAMIXEL and Arduino"
         url: /dxl/dxl-quick-start-insert/#dynamixel-and-arduino
+
+dxl-selection-guide:
+  - title: "Getting Started"
+    titlekr: "시작하기"
+    url: /reference/dxl-selection-guide/#getting-started
+    urlkr: /reference/dxl-selection-guide/#시작하기
+    children:  
+      - title: "e-Shop"
+        titlekr: "스토어"
+        url: /reference/dxl-selection-guide/#e-shop
+        urlkr: /reference/dxl-selection-guide/#스토어
+  - title: "DYNAMIXEL"
+    titlekr: "다이나믹셀 "
+    url: /reference/dxl-selection-guide/#dynamixel
+    urlkr: /reference/dxl-selection-guide/#다이나믹셀-
+    children:  
+      - title: "Models"
+        titlekr: "모델"
+        url: /reference/dxl-selection-guide/#models
+        urlkr: /reference/dxl-selection-guide/#모델
+      - title: "Performance"
+        titlekr: "성능 그래프"
+        url: /reference/dxl-selection-guide/#performance
+        urlkr: /reference/dxl-selection-guide/#성능-그래프
+      - title: "Communication"
+        titlekr: "통신"      
+        url: /reference/dxl-selection-guide/#communication
+        urlkr: /reference/dxl-selection-guide/#통신
+        children:
+        - title: "TTL"
+          titlekr: "TTL"
+          url: /reference/dxl-selection-guide/#ttl
+          urlkr: /reference/dxl-selection-guide/#ttl
+        - title: "RS-485"
+          titlekr: "RS-485"        
+          url: /reference/dxl-selection-guide/#rs-485
+          urlkr: /reference/dxl-selection-guide/#rs-485
+  - title: "Power"
+    titlekr: "전원"
+    url: /reference/dxl-selection-guide/#power
+    urlkr: /reference/dxl-selection-guide/#전원
+    children:
+      - title: "Operating Voltages"
+        titlekr: "사용 전압"
+        url: /reference/dxl-selection-guide/#operating-voltage
+        urlkr: /reference/dxl-selection-guide/#사용-전압
+        children:
+          - title: "DYNAMIXEL-X"
+            titlekr: "다이나믹셀 X 시리즈"
+            url: /reference/dxl-selection-guide/#dynamixel-x
+            urlkr: /reference/dxl-selection-guide/#다이나믹셀-x-시리즈
+          - title: "DYNAMIXEL-P"
+            titlekr: "다이나믹셀 P 시리즈"
+            url: /reference/dxl-selection-guide/#dynamixel-p
+            urlkr: /reference/dxl-selection-guide/#다이나믹셀-p-시리즈
+      - title: "Power Solution"
+        titlekr: "전원 솔루션"
+        url: /reference/dxl-selection-guide/#power-solution
+        urlkr: /reference/dxl-selection-guide/#전원-솔루션
+        children:
+        - title: "SMPS"
+          titlekr: "SMPS"
+          url: /reference/dxl-selection-guide/#smps
+          urlkr: /reference/dxl-selection-guide/#smps
+        - title: "Batteries"
+          titlekr: "배터리"
+          url: /reference/dxl-selection-guide/#batteries
+          urlkr: /reference/dxl-selection-guide/#배터리
+        - title: "PSU"
+          titlekr: "PSU"
+          url: /reference/dxl-selection-guide/#psu
+          urlkr: /reference/dxl-selection-guide/#psu
+  - title: "Controller & Interface"
+    titlekr: "제어기와 인터페이스"
+    url: /reference/dxl-selection-guide/#controller--interface
+    urlkr: /reference/dxl-selection-guide/#제어기와-인터페이스
+    children:  
+      - title: "Interfaces"
+        titlekr: "인터페이스"
+        url: /reference/dxl-selection-guide/#interfaces
+        urlkr: /reference/dxl-selection-guide/#인터페이스        
+        children:      
+        - title: "U2D2"
+          titlekr: "U2D2"
+          url: /reference/dxl-selection-guide/#u2d2
+          urlkr: /reference/dxl-selection-guide/#u2d2
+        - title: "DYNAMIXEL Shields"
+          titlekr: "다이나믹셀 쉴드"
+          url: /reference/dxl-selection-guide/#dynamixel-shields
+          urlkr: /reference/dxl-selection-guide/#다이나믹셀-쉴드
+      - title: "Embedded Controllers"
+        titlekr: "임베디드 제어기"
+        url: /reference/dxl-selection-guide/#embedded-controllers
+        urlkr: /reference/dxl-selection-guide/#임베디드-제어기
+        children: 
+        # - title: "OpenRB-150"
+        #   url: /reference/dxl-selection-guide/#openrb-150       
+        - title: "OpenCR1.0"
+          titlekr: "OpenCR1.0"
+          url: /reference/dxl-selection-guide/#opencr10
+          urlkr: /reference/dxl-selection-guide/#opencr10
+        - title: "OpenCM9.04"
+          titlekr: "OpenCM9.04"
+          url: /reference/dxl-selection-guide/#opencm904
+          urlkr: /reference/dxl-selection-guide/#opencm904
+      - title: "Educational"
+        titlekr: "교육용"
+        url: /reference/dxl-selection-guide/#educational  
+        urlkr: /reference/dxl-selection-guide/#교육용
+        children:
+          - title: "CM Series"
+            titlekr: "CM 시리즈"
+            url: /reference/dxl-selection-guide/#cm-series
+            urlkr: /reference/dxl-selection-guide/#cm-시리즈
+      - title: "Other Controllers"
+        titlekr: "기타 제어기"
+        url: /reference/dxl-selection-guide/#other-controllers
+        urlkr: /reference/dxl-selection-guide/#기타-제어기
+  - title: "Software & Tools"
+    titlekr: "소프트웨어와 도구"
+    url: /reference/dxl-selection-guide/#software--tools
+    urlkr: /reference/dxl-selection-guide/#소프트웨어와-도구
+    children: 
+    - title: "Test & Management"
+      titlekr: "테스트 및 관리 도구"
+      url: /reference/dxl-selection-guide/#test--management
+      urlkr: /reference/dxl-selection-guide/#테스트-및-관리-도구
+      children: 
+      - title: "DYNAMIXEL Wizard 2.0"
+        titlekr: "DYNAMIXEL Wizard 2.0"
+        url: /reference/dxl-selection-guide/#dynamixel-wizard-20
+        urlkr: /reference/dxl-selection-guide/#dynamixel-wizard-20        
+      - title: "R+ Manager 2.0"
+        titlekr: "R+ Manager 2.0"
+        url: /reference/dxl-selection-guide/#r-manager-20
+        urlkr: /reference/dxl-selection-guide/#r-manager-20
+    - title: "DYNAMIXEL Development"
+      titlekr: "개발 도구"
+      url: /reference/dxl-selection-guide/#dynamixel-development     
+      urlkr: /reference/dxl-selection-guide/#개발-도구
+      children: 
+        - title: "DYNAMIXEL SDK"
+          titlekr: "다이나믹셀 SDK"
+          url: /reference/dxl-selection-guide/#dynamixel-sdk
+          urlkr: /reference/dxl-selection-guide/#다이나믹셀-sdk          
+        - title: "Arduino Library"
+          titlekr: "아두이노 라이브러리"
+          url: /reference/dxl-selection-guide/#arduino-library
+          urlkr: /reference/dxl-selection-guide/#아두이노-라이브러리         
+          children: 
+          - title: "Dynamixel2Arduino"
+            titlekr: "Dynamixel2Arduino"
+            url: /reference/dxl-selection-guide/#dynamixel2arduino
+            urlkr: /reference/dxl-selection-guide/#dynamixel2arduino            
+          - title: "DynamixelShield"
+            titlekr: "DynamixelShield"
+            url: /reference/dxl-selection-guide/#dynamixelshield
+            urlkr: /reference/dxl-selection-guide/#dynamixelshield            
+    - title: "Educational Software"
+      titlekr: "교육용 소프트웨어"
+      url: /reference/dxl-selection-guide/#educational-software
+      urlkr: /reference/dxl-selection-guide/#교육용-소프트웨어
+      children: 
+      - title: "R+ Software Suite"
+        titlekr: "로보플러스"
+        url: /reference/dxl-selection-guide/#r-software-suite
+        urlkr: /reference/dxl-selection-guide/#로보플러스                    
+
+dxl-quick-start-guide: 
+  - title: "Getting Started"
+    url: /dxl/dxl-quick-start-guide/#getting-started
+    children: 
+      - title: "Archive"
+        url: /dxl/dxl-quick-start-guide/#archive
+  - title: "DYNAMIXEL SDK"
+    url: /dxl/dxl-quick-start-guide/#dynamixel-sdk
+    children: 
+      - title: "C"
+        url: /dxl/dxl-quick-start-guide/#c
+      - title: "C++"
+        url: /dxl/dxl-quick-start-guide/#c-1
+      - title: "C-Sharp"
+        url: /dxl/dxl-quick-start-guide/#c-sharp
+      - title: "Python"
+        url: /dxl/dxl-quick-start-guide/#python
+      - title: "Java"
+        url: /dxl/dxl-quick-start-guide/#java
+      - title: "Matlab"
+        url: /dxl/dxl-quick-start-guide/#matlab
+      - title: "LabVIEW"
+        url: /dxl/dxl-quick-start-guide/#labview
+      - title: "ROS"
+        url: /dxl/dxl-quick-start-guide/#ros
+  - title: "Arduino Library"
+    url: /dxl/dxl-quick-start-guide/#arduino-library
+    children: 
+      - title: "Dynamixel2Arduino"
+        url: /dxl/dxl-quick-start-guide/#dynamixel2arduino
+      - title: "DynamixelShield"
+        url: /dxl/dxl-quick-start-guide/#dynamixelshield
+  - title: "DYNAMIXEL Wizard 2.0"
+    url: /dxl/dxl-quick-start-guide/#dynamixel-wizard-20
+    children: 
+      - title: "Firmware Recovery"
+        url: /dxl/dxl-quick-start-guide/#firmware-recovery
 
 contents-guide:
   - title: "Contents Guide"

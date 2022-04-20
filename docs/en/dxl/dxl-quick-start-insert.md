@@ -11,6 +11,11 @@ sidebar:
   nav: "dxl-quick-start"
 ---
 
+<!--[dummy Header 1]>
+  <h1 id="dummy">DYNAMIXEL Quick Start</h1>
+  <p class="dummy_content">Getting Start DYNAMIXEL Starter Set, Controller, Arduino Shield</p>
+<![end dummy Header 1]-->
+
 # [Getting Started](#getting-started-with-dynamixel)
 
 ROBOTIS provides the following solutions for controlling DYNAMIXEL. 

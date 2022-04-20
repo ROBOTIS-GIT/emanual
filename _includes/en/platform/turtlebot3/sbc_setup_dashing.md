@@ -22,9 +22,14 @@ Download the correct image file for your hardware and ROS version.
 ROS2 Dashing requires Ubuntu 18.04.  
 
 {% capture download_01 %}
-[![](/assets/images/icon_download.png) **Download** `ubuntu-18.04.4-preinstalled-server-arm64+raspi3.img.xz` OS image](http://old-releases.ubuntu.com/releases/18.04.4/){: .blank}
+[![](/assets/images/icon_download.png) **Download for Rasbperry Pi 4** `ubuntu-18.04.4-preinstalled-server-arm64+raspi4.img.xz` OS image](http://old-releases.ubuntu.com/releases/18.04.4/){: .blank}
 {% endcapture %}
 <div class="notice--success">{{ download_01 | markdownify }}</div>
+
+{% capture download_02 %}
+[![](/assets/images/icon_download.png) **Download for Raspberry Pi 3B+** `ubuntu-18.04.3-preinstalled-server-arm64+raspi3.img.xz` OS image](http://old-releases.ubuntu.com/releases/18.04.3/){: .blank}
+{% endcapture %}
+<div class="notice--success">{{ download_02 | markdownify }}</div>
 
 ### [Unzip the downloaded image file](#unzip-the-downloaded-image-file)
 Extract the `.img` file and save it in the local disk.
@@ -217,3 +222,27 @@ $ source ~/.bashrc
 
 **WARNING** : Do not use an identical ROS_DOMAIN_ID with others in the same network. It will cause a conflict of communication between users under the same network environment.
 {: .notice--warning}
+
+### NEW LDS-02 Configuration
+
+|LDS-01|LDS-02|
+|:---:|:---:|
+|![](/assets/images/platform/turtlebot3/appendix_lds/lds_small.png)|![](/assets/images/platform/turtlebot3/appendix_lds/lds_ld08_small.png)|
+
+The TurtleBot3 LDS has been updated to LDS-02 since 2022 models.  
+Please follow the instructions below on the **SBC (Raspberry Pi)** of TurtleBot3.
+
+1. Install the LDS-02 driver and update TurtleBot3 package
+```bash
+$ sudo apt update
+$ sudo apt install libudev-dev
+$ cd ~/turtlebot3_ws/src
+$ git clone -b ros2-devel https://github.com/ROBOTIS-GIT/ld08_driver.git
+$ cd ~/turtlebot3_ws && colcon build --symlink-install
+```
+
+2. Export the LDS_MODEL to the bashrc file. Depending on your LDS model, use `LDS-01` or `LDS-02`.
+```bash
+$ echo 'export LDS_MODEL=LDS-01' >> ~/.bashrc
+$ source ~/.bashrc
+```

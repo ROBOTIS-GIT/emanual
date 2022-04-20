@@ -139,6 +139,32 @@ $ source ~/.bashrc
   ```  
 ![](/assets/images/platform/turtlebot3/setup/ros1_sbc_netcfg.gif)
 
+### NEW LDS-02 Configuration
+
+|LDS-01|LDS-02|
+|:---:|:---:|
+|![](/assets/images/platform/turtlebot3/appendix_lds/lds_small.png)|![](/assets/images/platform/turtlebot3/appendix_lds/lds_ld08_small.png)|
+
+The TurtleBot3 LDS has been updated to LDS-02 since 2022 models.  
+Please follow the instructions below on the **SBC (Raspberry Pi)** of TurtleBot3.
+
+1. Install the LDS-02 driver and update TurtleBot3 package
+```bash
+$ sudo apt update
+$ sudo apt install libudev-dev
+$ cd ~/catkin_ws/src
+$ git clone -b develop https://github.com/ROBOTIS-GIT/ld08_driver.git
+$ cd ~/catkin_ws/src/turtlebot3 && git pull
+$ rm -r turtlebot3_description/ turtlebot3_teleop/ turtlebot3_navigation/ turtlebot3_slam/ turtlebot3_example/
+$ cd ~/catkin_ws && catkin_make
+```
+
+2. Export the LDS_MODEL to the bashrc file. Depending on your LDS model, use `LDS-01` or `LDS-02`.
+```bash
+$ echo 'export LDS_MODEL=LDS-01' >> ~/.bashrc
+$ source ~/.bashrc
+```
+
 **This is it! Now you are done with SBC setup :)**  
 Next Step : [OpenCR Setup](/docs/en/platform/turtlebot3/opencr_setup/#opencr-setup)
 {: .notice--success}
@@ -227,18 +253,15 @@ If the above installation fails, please refer to [the official ROS Noetic instal
 14. Install and Build ROS Packages.
   ```bash
 $ sudo apt install ros-noetic-rosserial-python ros-noetic-tf
-$ mkdir -p ~/catkin_ws/src && cd ~/catkin_ws/src
 $ sudo apt install ros-noetic-hls-lfcd-lds-driver
 $ sudo apt install ros-noetic-turtlebot3-msgs
 $ sudo apt install ros-noetic-dynamixel-sdk
+$ cd ~/catkin_ws/src
 $ git clone -b noetic-devel https://github.com/ROBOTIS-GIT/turtlebot3.git
 $ cd ~/catkin_ws/src/turtlebot3
 $ rm -r turtlebot3_description/ turtlebot3_teleop/ turtlebot3_navigation/ turtlebot3_slam/ turtlebot3_example/
 $ cd ~/catkin_ws/
-$ echo 'source /opt/ros/noetic/setup.bash' >> ~/.bashrc
-$ source ~/.bashrc
-$ cd ~/catkin_ws && catkin_make -j1
-$ echo 'source ~/catkin_ws/devel/setup.bash' >> ~/.bashrc
+$ catkin_make -j1
 $ source ~/.bashrc
   ```
 
@@ -261,7 +284,24 @@ export ROS_HOSTNAME={IP_ADDRESS_OF_RASPBERRY_PI_3}
 
 18. Save the file and exit the nano editor.
 
-19. Apply changes with the command below.
+19. LDS Configuration
+The TurtleBot3 LDS has been updated to LDS-02 since 2022 models.  
+Please follow the instructions below on the **SBC (Raspberry Pi)** of TurtleBot3.
+```bash
+$ sudo apt update
+$ sudo apt install libudev-dev
+$ cd ~/catkin_ws/src
+$ git clone -b develop https://github.com/ROBOTIS-GIT/ld08_driver.git
+$ cd ~/catkin_ws && catkin_make
+```
+
+20. Export the LDS_MODEL to the bashrc file. Depending on your LDS model, use `LDS-01` or `LDS-02`.
+```bash
+$ echo 'export LDS_MODEL=LDS-01' >> ~/.bashrc
+$ source ~/.bashrc
+```
+
+21. Apply changes with the command below.
 ```bash
 $ source ~/.bashrc
 ```
