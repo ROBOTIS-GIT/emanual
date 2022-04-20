@@ -26,4 +26,5 @@ group :jekyll_plugins do
   gem 'jekyll-livereload'
   gem 'kramdown-parser-gfm'
   gem "kramdown", ">= 2.3.1"
+  gem "nokogiri", ">= 1.13.4"
 end
