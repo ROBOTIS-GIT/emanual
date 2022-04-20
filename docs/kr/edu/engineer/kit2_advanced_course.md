@@ -32,7 +32,7 @@ page_number: 3
 ![](/assets/images/edu/engineer/kit2/engineer_edu_metarials_kit2.png)
 
 ## [앱 설치하기](#앱-설치하기)
-엔지니어 키트2 는 엔지니어 키트 1와 동일한 소프트웨어(R+Task 3.0) 및 앱(로보티즈 엔지니어) 을 사용합니다. 다음과 같은 소프트웨어 및 앱을 설치 하지 경우, [앱 설치하기](/docs/kr/edu/engineer/kit1/#작동하기)를 참고하세요
+엔지니어 키트2 는 엔지니어 키트 1와 동일한 소프트웨어(R+Task 3.0) 및 앱(STEAMCUP ENGINEER) 을 사용합니다. 다음과 같은 소프트웨어 및 앱을 설치 하지 경우, [앱 설치하기](/docs/kr/edu/engineer/kit1/#작동하기)를 참고하세요
 
 ## [로봇 예제 다운로드 하기](#로봇-예제-다운로드-하기)
 

@@ -22,7 +22,7 @@
 CM-5에 장착한 ZIG-100모듈의 경우에는 채널 변경이 불가능 합니다. 따라서 사용자는 모두 채널 1번에 맞추셔서 사용 해야 브로드캐스트 통신이 가능합니다. 각 장치 간의 채널이 다르면 통신이 불가능하므로 모든 채널을 일치시켜야 합니다.
 {: .notice}
 
-#### 바이올로이드 프리미엄키트 / CM-700
+#### STEAMCUP PREMIUM키트 / CM-700
 
 ##### Zig2Serial과 다수 로봇과의 통신
 ![](/assets/images/edu/bioloid/broadcast_zig2prm_kr.png)

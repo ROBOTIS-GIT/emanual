@@ -167,7 +167,7 @@ layout: popup
 | 다이나믹셀 위자드 2.0 |              O               |               O               |
 | 로보티즈 OP2          |              O               | O* <br>(Requires F/W Upgrade) |
 | 로보티즈 OP3          |              X               |               O               |
-| 로보티즈 STEM         |              O               |               X               |
+| STEAMCUP STEM         |              O               |               X               |
 | 바이올로이드 Premium  |              O               |               X               |
 | 터틀봇3 버거          |    O*<br>(F/W address 13)    |               O               |
 | 터틀봇3 와플파이      |    O*<br>(F/W address 13)    |               O               |

@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/kr/edu/bioloid/stem/
 sidebar:
-  title: 로보티즈 STEM 키트
+  title: STEAMCUP STEM 키트
   nav: "bioloid-stem"
 ---
 

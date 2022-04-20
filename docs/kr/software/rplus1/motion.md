@@ -340,21 +340,21 @@ Windows installer와 .NET Framework는 마이크로 소프트 다운로드 센�
 
 - 포즈를 만들고자 하는 로봇의 이름을 선택합니다.
 
-| 로봇 이름                   |                         |
-| ----------------------- | ----------------------- |
+| 로봇 이름               |                                           |
+|:------------------------|:------------------------------------------|
 | Bioloid Battle Droid    | 바이올로이드 중급 응용 로봇 배틀 드로이드 |
-| Bioloid Dinosaur        | 바이올로이드 고급 응용 로봇 공룡      |
-| Bioloid Fawn            | 바이올로이드 중급 응용 로봇 아기 사슴   |
-| Bioloid Gerwalk         | 바이올로이드 중급 응용 로봇 거웍      |
-| Bioloid Humanoid        | 바이올로이드 고급 응용 로봇 휴머노이드   |
-| Bioloid King Spider     | 바이올로이드 고급 응용 로봇 킹 스파이더  |
-| Bioloid Puppy           | 바이올로이드 고급 응용 로봇 강아지     |
-| Bioloid Spider          | 바이올로이드 중급 응용 로봇 거미      |
-| Bioloid Turtle          | 바이올로이드 중급 응용 로봇 거북이     |
+| Bioloid Dinosaur        | 바이올로이드 고급 응용 로봇 공룡          |
+| Bioloid Fawn            | 바이올로이드 중급 응용 로봇 아기 사슴     |
+| Bioloid Gerwalk         | 바이올로이드 중급 응용 로봇 거웍          |
+| Bioloid Humanoid        | 바이올로이드 고급 응용 로봇 휴머노이드    |
+| Bioloid King Spider     | 바이올로이드 고급 응용 로봇 킹 스파이더   |
+| Bioloid Puppy           | 바이올로이드 고급 응용 로봇 강아지        |
+| Bioloid Spider          | 바이올로이드 중급 응용 로봇 거미          |
+| Bioloid Turtle          | 바이올로이드 중급 응용 로봇 거북이        |
 | Bioloid Walking Droid   | 바이올로이드 초급 응용 로봇 보행 드로이드 |
-| Premium Humanoid A-type | 바이올로이드 프리미엄 휴머노이드 A 타입  |
-| Premium Humanoid B-type | 바이올로이드 프리미엄 휴머노이드 B 타입  |
-| Premium Humanoid C-type | 바이올로이드 프리미엄 휴머노이드 C 타입  |
+| Premium Humanoid A-type | STEAMCUP PREMIUM 휴머노이드 A 타입        |
+| Premium Humanoid B-type | STEAMCUP PREMIUM 휴머노이드 B 타입        |
+| Premium Humanoid C-type | STEAMCUP PREMIUM 휴머노이드 C 타입        |
 
 - `초기 자세` 버튼을 누르면 로봇이 각 로봇의 타입에 맞는 초기 자세를 취합니다.
 
@@ -435,11 +435,11 @@ Origin은 X, Y, Z의 좌표가 (0, 0, 0)임을 의미합니다.
 이 기능은 역기구학 연산을 수행하는 모듈이 있어야 합니다. 현재 역기구학 연산을 지원하는 로봇은 다음과 같습니다.
 
 - 바이올로이드 휴머노이드
-- 바이올로이드 프리미엄 휴머노이드 A타입
-- 바이올로이드 프리미엄 휴머노이드 B타입
-- 바이올로이드 프리미엄 휴머노이드 C타입
+- STEAMCUP PREMIUM 휴머노이드 A타입
+- STEAMCUP PREMIUM 휴머노이드 B타입
+- STEAMCUP PREMIUM 휴머노이드 C타입
 
-본 주제에 대한 설명은 바이올로이드 프리미엄 휴머노이드 A타입을 기준으로 진행됩니다.
+본 주제에 대한 설명은 STEAMCUP PREMIUM 휴머노이드 A타입을 기준으로 진행됩니다.
 
 ###### 끝점 선택
 
@@ -925,18 +925,18 @@ RoboPlus Motion이 설치된 폴더 안을 보면 로봇 정보 파일이 아래
 리스트에 보여질 이름을 입력합니다.  
 culture속성을 줘서 언어별로 보여지게 할 수 있는데, RoboPlus Motion에서 지원하는 언어만 가능합니다.
 
-| 값    | 언어            |
-| ---- | ------------- |
-| kor  | 한국어           |
-| jpn  | 일본어           |
-| 없음   | 영어 혹은 그 외의 언어 |
+| 값   | 언어                   |
+|:-----|:-----------------------|
+| kor  | 한국어                 |
+| jpn  | 일본어                 |
+| 없음 | 영어 혹은 그 외의 언어 |
 
 ```xml
 <Name>Premium Humanoid A-type</Name>
 <Name culture=”kor”> Bioloid Premium Type A</Name>
 ```
 
-> 바이올로이드 프리미엄 A타입의 예
+> STEAMCUP PREMIUM A타입의 예
 
 #### &lt;Motor&gt;
 
@@ -968,7 +968,7 @@ culture속성을 줘서 언어별로 보여지게 할 수 있는데, RoboPlus Mo
 <Motor id="18" model="AX-12+" init="512"></Motor>
 ```
 
-> 바이올로이드 프리미엄 A타입의 예
+> STEAMCUP PREMIUM A타입의 예
 
 #### &lt;Mirror&gt;
 
@@ -988,7 +988,7 @@ culture속성을 줘서 언어별로 보여지게 할 수 있는데, RoboPlus Mo
 </Mirror>
 ```
 
-> 바이올로이드 프리미엄 A타입의 예
+> STEAMCUP PREMIUM A타입의 예
 
 ![img](/assets/images/sw/rplus1/motion/poseutility_3dview.png)
 
@@ -1006,7 +1006,7 @@ culture속성을 줘서 언어별로 보여지게 할 수 있는데, RoboPlus Mo
 </InverseKinematics>
 ```
 
-> 바이올로이드 프리미엄 A타입의 예
+> STEAMCUP PREMIUM A타입의 예
 
 #### &lt;Object3D&gt;
 
@@ -1039,7 +1039,7 @@ culture속성을 줘서 언어별로 보여지게 할 수 있는데, RoboPlus Mo
       <Part name="f52" T="1 0 0 0 0 1 0 0 0 0 1 0">
 ```
 
-> 바이올로이드 프리미엄 A타입의 예
+> STEAMCUP PREMIUM A타입의 예
 
 ### [3D 모델 데이터](#3d-모델-데이터)
 
@@ -1049,36 +1049,36 @@ RoboPlus Motion은 IGES(igs)포맷만 지원하며, 데이터 크기가 너무 �
 
 현재 기본으로 제공되는 모델 데이터는 다음과 같습니다. (Models폴더 안에 존재하며  RoboPlus 업데이트 시 추가될 수 있습니다.)
 
-| 이름          | 모양                                       | 파일              |
-| ----------- | ---------------------------------------- | --------------- |
-| F1          | ![img](/assets/images/sw/rplus1/motion/f1.png) | f1.igs          |
-| F2          | ![img](/assets/images/sw/rplus1/motion/f2.png) | f2.igs          |
-| F3          | ![img](/assets/images/sw/rplus1/motion/f3.png) | f3.igs          |
-| F4          | ![img](/assets/images/sw/rplus1/motion/f4.png) | f4.igs          |
-| F5          | ![img](/assets/images/sw/rplus1/motion/f5.png) | f5.igs          |
-| F6          | ![img](/assets/images/sw/rplus1/motion/f6.png) | f6.igs          |
-| F7          | ![img](/assets/images/sw/rplus1/motion/f7.png) | f7.igs          |
-| F8          | ![img](/assets/images/sw/rplus1/motion/f8.png) | f8.igs          |
-| F9          | ![img](/assets/images/sw/rplus1/motion/f9.png) | f9.igs          |
-| F10         | ![img](/assets/images/sw/rplus1/motion/f10.png) | f10.igs         |
-| F11         | ![img](/assets/images/sw/rplus1/motion/f11.png) | f11.igs         |
-| F12         | ![img](/assets/images/sw/rplus1/motion/f12.png) | f12.igs         |
-| F15 + F16   | ![img](/assets/images/sw/rplus1/motion/f15+16.png) | f15.igs         |
-| F51         | ![img](/assets/images/sw/rplus1/motion/f51.png) | f51.igs         |
-| F52         | ![img](/assets/images/sw/rplus1/motion/f52.png) | f52.igs         |
-| F53         | ![img](/assets/images/sw/rplus1/motion/f53.png) | f53.igs         |
-| F56         | ![img](/assets/images/sw/rplus1/motion/f56.png) | f56.igs         |
-| F57         | ![img](/assets/images/sw/rplus1/motion/f57.png) | f57.igs         |
-| F58         | ![img](/assets/images/sw/rplus1/motion/f58.png) | f58.igs         |
-| F60         | ![img](/assets/images/sw/rplus1/motion/f60.png) | f60.igs         |
-| WA          | ![img](/assets/images/sw/rplus1/motion/wa.png) | wa,igs          |
-| BU          | ![img](/assets/images/sw/rplus1/motion/bu.png) | bu.igs          |
-| CM-5        | ![img](/assets/images/sw/rplus1/motion/cm5.png) | cm-5.igs        |
+| 이름        | 모양                                                    | 파일            |
+|:------------|:--------------------------------------------------------|:----------------|
+| F1          | ![img](/assets/images/sw/rplus1/motion/f1.png)          | f1.igs          |
+| F2          | ![img](/assets/images/sw/rplus1/motion/f2.png)          | f2.igs          |
+| F3          | ![img](/assets/images/sw/rplus1/motion/f3.png)          | f3.igs          |
+| F4          | ![img](/assets/images/sw/rplus1/motion/f4.png)          | f4.igs          |
+| F5          | ![img](/assets/images/sw/rplus1/motion/f5.png)          | f5.igs          |
+| F6          | ![img](/assets/images/sw/rplus1/motion/f6.png)          | f6.igs          |
+| F7          | ![img](/assets/images/sw/rplus1/motion/f7.png)          | f7.igs          |
+| F8          | ![img](/assets/images/sw/rplus1/motion/f8.png)          | f8.igs          |
+| F9          | ![img](/assets/images/sw/rplus1/motion/f9.png)          | f9.igs          |
+| F10         | ![img](/assets/images/sw/rplus1/motion/f10.png)         | f10.igs         |
+| F11         | ![img](/assets/images/sw/rplus1/motion/f11.png)         | f11.igs         |
+| F12         | ![img](/assets/images/sw/rplus1/motion/f12.png)         | f12.igs         |
+| F15 + F16   | ![img](/assets/images/sw/rplus1/motion/f15+16.png)      | f15.igs         |
+| F51         | ![img](/assets/images/sw/rplus1/motion/f51.png)         | f51.igs         |
+| F52         | ![img](/assets/images/sw/rplus1/motion/f52.png)         | f52.igs         |
+| F53         | ![img](/assets/images/sw/rplus1/motion/f53.png)         | f53.igs         |
+| F56         | ![img](/assets/images/sw/rplus1/motion/f56.png)         | f56.igs         |
+| F57         | ![img](/assets/images/sw/rplus1/motion/f57.png)         | f57.igs         |
+| F58         | ![img](/assets/images/sw/rplus1/motion/f58.png)         | f58.igs         |
+| F60         | ![img](/assets/images/sw/rplus1/motion/f60.png)         | f60.igs         |
+| WA          | ![img](/assets/images/sw/rplus1/motion/wa.png)          | wa,igs          |
+| BU          | ![img](/assets/images/sw/rplus1/motion/bu.png)          | bu.igs          |
+| CM-5        | ![img](/assets/images/sw/rplus1/motion/cm5.png)         | cm-5.igs        |
 | ADAPTOR-CM5 | ![img](/assets/images/sw/rplus1/motion/adaptor_cm5.png) | adaptor_cm5.igs |
-| BATTERY     | ![img](/assets/images/sw/rplus1/motion/battery.png) | battery.igs     |
-| AX-12       | ![img](/assets/images/sw/rplus1/motion/ax12.png) | ax-12.igs       |
-| AX-12 Horn  | ![img](/assets/images/sw/rplus1/motion/ax12_horn.png) | ax-12_horn.igs  |
-| AX-S1       | ![img](/assets/images/sw/rplus1/motion/axs1.png) | ax-s1.igs       |
+| BATTERY     | ![img](/assets/images/sw/rplus1/motion/battery.png)     | battery.igs     |
+| AX-12       | ![img](/assets/images/sw/rplus1/motion/ax12.png)        | ax-12.igs       |
+| AX-12 Horn  | ![img](/assets/images/sw/rplus1/motion/ax12_horn.png)   | ax-12_horn.igs  |
+| AX-S1       | ![img](/assets/images/sw/rplus1/motion/axs1.png)        | ax-s1.igs       |
 
 ### <a name="plug-in-sdk-프로그래밍"></a>[Plug-In SDK 프로그래밍](#plug-in-sdk-프로그래밍)
 
@@ -1164,7 +1164,7 @@ RoboPlus Motion을 실행시켜서 추가시킨 로봇이 잘 동작하는지 �
 </InverseKinematics>
 ```
 
-> 바이올로이드 프리미엄 A타입의 예
+> STEAMCUP PREMIUM A타입의 예
 
 
 [각 제어기 정보]: /docs/kr/parts/controller/controller_compatibility/
