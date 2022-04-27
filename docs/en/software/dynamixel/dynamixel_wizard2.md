@@ -18,7 +18,7 @@ sidebar:
 
 ![](/assets/images/sw/dynamixel/wizard2/wizard2_main_000.jpg)
 
-**Software Download (v2.0.12)**  
+**Software Download (v2.0.13)**  
 [Windows](http://www.robotis.com/service/download.php?no=1670)  
 [Linux](http://www.robotis.com/service/download.php?no=1671)  
 [Mac](http://www.robotis.com/service/download.php?no=1760)  
@@ -40,7 +40,10 @@ The following features are provided with DYNAMIXEL Wizard 2.0.
 
 - [Protocol 1.0]
 - [Protocol 2.0]
-- [Compatibility Table]{: .popup}
+- Modbus-RTU (DYNAMIXEL-P series only)
+
+**NOTE**: [Compatibility Table]{: .popup}
+{: .notice}
 
 ## [Supported OS](#supported-os)
 
@@ -135,6 +138,9 @@ Although almost all ROBOTIS products are shipped with installed firmwares, new f
 
 ## [Install: Mac](#install-mac)
 
+**NOTE**: Modern Mac OS supports app store installation only. 
+{: .notice}
+
 1. Download the package file.  
 - [Mac Software Download](http://www.robotis.com/service/download.php?no=1760)
 2. Right click on the downloaded dmg file and select `Open` from the mene.  
@@ -190,7 +196,7 @@ Detected DYNAMIXEL's can be tested by modifying control table values.
 By selecting control table items to be plotted, values of the selected items will be drawn in the graph window in real time.
 Please refer to [Basic Features > Graph] section for more details about selecting control table items.
 
-![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_001.png)
+![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_001_new.png)
 
 ## [Packet Window](#packet-window)
 
@@ -207,7 +213,7 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 
 1. Go to `Tools` > `Options` or use shortcut key `F4`.
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_011.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_011_new.png)
 
 2. Select `Scan` from the left column menu to display scan options.
 
@@ -285,7 +291,7 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 
 1. Go to `Tools` > `Options`
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_011.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_011_new.png)
 
 2. Select `Graph` from the left column menu to display scan options.
 

@@ -18,7 +18,7 @@ sidebar:
 
 ![](/assets/images/sw/dynamixel/wizard2/wizard2_main_000.jpg)
 
-**소프트웨어 다운로드 (v2.0.11)**  
+**소프트웨어 다운로드 (v2.0.13)**  
 [윈도우](http://www.robotis.com/service/download.php?no=1670)  
 [리눅스](http://www.robotis.com/service/download.php?no=1671)  
 [맥 OS](http://www.robotis.com/service/download.php?no=1760)  
@@ -41,6 +41,10 @@ sidebar:
 
 - [프로토콜 1.0]
 - [프로토콜 2.0]
+- Modbus-RTU (다이나믹셀 P 시리즈 전용)
+
+**참고**: [다이나믹셀 프로토콜 호환표]{: .popup}
+{: .notice}
 
 ## [지원 운영체제](#지원-운영체제)
 
@@ -81,7 +85,7 @@ sidebar:
 | **XC**           | [XC330-T288]<br>[XC330-T181]<br>[XC330-M288]<br>[XC330-M181] | [XC430-W150]<br/> [XC430-W240]    | [2XC430-W250]                  |                                |                 |
 | **XM**           | [XM430-W210]<br/> [XM430-W350]                               | [XM540-W150]<br/> [XM540-W270]    |                                |                                |                 |
 | **XH**           | [XH430-W210]<br/> [XH430-W350]                               | [XH430-V210]<br/> [XH430-V350]    | [XH540-W150]<br/> [XH540-W270] | [XH540-V150]<br/> [XH540-V270] |                 |
-| **XD**           | [XD430-T350]<br/>[XD430-T210]                                | [XD540-T270-R]<br/>[XD540-T150-R] |                                |                                |                 |
+| **XD**           | [XD430-T350-R]<br/>[XD430-T210-R]                                | [XD540-T270-R]<br/>[XD540-T150-R] |                                |                                |                 |
 | **XW**           | [XW430-T333]<br/> [XW430-T200]                               | [XW540-T140]<br/> [XW540-T260]    |                                |                                |                 |
 | **PRO H**        | [H42-20-S300-R]                                              | [H54-100-S500-R]                  | [H54-200-S500-R]               |                                |                 |
 | **PRO M**        | [M42-10-S260-R]                                              | [M54-40-S250-R]                   | [M54-60-S250-R]                |                                |                 |
@@ -97,17 +101,17 @@ sidebar:
 ## [윈도우에서 설치하기](#윈도우에서-설치하기)
 
 1. 윈도우즈 전용 패키지를 다운로드 합니다.  
-  - [윈도우즈 소프트웨어 다운로드 (v2.0.9)](http://www.robotis.com/service/download.php?no=1670)
+  - [윈도우즈 소프트웨어 다운로드](http://www.robotis.com/service/download.php?no=1670)
 2. 다운받은 설치파일을 실행합니다.  
 
 3. 안내에 따라 `Next`버튼을 눌러 설치를 진행합니다.
 
-![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_win_01.png)
+![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_win_new.png)
 
 ## [리눅스에서 설치하기](#리눅스에서-설치하기)
 
 1. 리눅스 설치패키지를 다운로드합니다.  
-  - [리눅스 소프트웨어 다운로드 (v2.0.9)](http://www.robotis.com/service/download.php?no=1671)  
+  - [리눅스 소프트웨어 다운로드](http://www.robotis.com/service/download.php?no=1671)  
 2. 다음의 명령어를 수행하여 설치파일의 실행권한을 변경합니다.
 
     ```bash
@@ -136,8 +140,11 @@ sidebar:
 
 ## [맥에서 설치하기](#맥에서-설치하기)
 
+**참고**: 최신 맥 OS 이용자는, 앱스토어를 통해 다이나믹셀 위자드 2.0을 다운로드 하세요.
+{: .notice}
+
 1. 맥 OS 설치 패키지를 다운로드 합니다.  
-  - [맥 소프트웨어 다운로드 (v2.0.9)](http://www.robotis.com/service/download.php?no=1760)
+  - [맥 소프트웨어 다운로드](http://www.robotis.com/service/download.php?no=1760)
 2. 다운로드가 완료된 dmg 파일을 오른쪽 클릭하고 `Open(열기)`를 선택합니다.  
   ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_mac_01.png)
 3. `DynamixelWizard2Setup_x64` 파일을 실행합니다.  
@@ -183,7 +190,7 @@ sidebar:
 
 표시항목을 설정하면 실시간으로 변화되는 값을 확인할 수 있습니다. 그래프 표시 항목 설정 방법은 [기본 기능 > 그래프]를 참고하세요
 
-![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_001_kr.png)
+![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_001_new_kr.png)
 
 ## [패킷 창](#패킷-창)
 
@@ -200,6 +207,7 @@ sidebar:
 1. 메인 메뉴에서 `도구` > `설정` 를 선택하면 설정창이 나타납니다.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_011_kr.png)
+    
 
 2. 설정창의 좌측 목록에서 `검색` 항목을 선택하면 검색 설정이 나타납니다.
 
@@ -281,11 +289,11 @@ sidebar:
 
 1. 메인 메뉴에서 `도구` > `설정` 를 선택하면 설정창이 나타납니다.
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_011_kr.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_011_new.png)
 
 2. 설정창의 좌측 목록에서 `그래프` 항목을 선택하면 그래프 설정이 나타납니다.
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_002_kr.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_002_new.png)
 
 3. 아래 그림에 표시된 `>>` 버튼을 눌러 항목을 추가 합니다. (`<<` 버튼으로 항목을 제거할 수 있습니다.)
 
@@ -876,3 +884,4 @@ sidebar:
 [PM42-010-S260-R]: /docs/kr/dxl/p/pm42-010-s260-r/
 [RH-P12-RN]: /docs/kr/platform/rh_p12_rn/
 [RH-P12-RN(A)]: /docs/kr/platform/rh_p12_rna/
+[다이나믹셀 프로토콜 호환표]: /docs/kr/popup/faq_protocol_compatibility_table

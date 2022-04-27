@@ -147,6 +147,7 @@ DEPENDENCIES
   kramdown (>= 2.3.1)
   kramdown-parser-gfm
   minimal-mistakes-jekyll
+  nokogiri (>= 1.13.4)
 
 BUNDLED WITH
    2.3.7
