@@ -20,15 +20,15 @@ layout: popup
 |    12. 小鬼怪机器人<br />![](/assets/images/edu/dream/dream1-3_goblin.jpg)    | [下载][ex_12] |
 
 
-[ex_01]: http://support.robotis.com/cn/baggage_files/dream/dream_l3_orgel_cn.tsk
-[ex_02]: http://support.robotis.com/cn/baggage_files/dream/dream_l3_cleanuprobot_cn.tsk
-[ex_03]: http://support.robotis.com/cn/baggage_files/dream/dream_l3_truck_cn.tsk
-[ex_04]: http://support.robotis.com/cn/baggage_files/dream/dream_l3_bumpercar_cn.tsk
-[ex_05]: http://support.robotis.com/cn/baggage_files/dream/dream_l3_probingcar_cn.tsk
-[ex_06]: http://support.robotis.com/cn/baggage_files/dream/dream_l3_guitar_cn.tsk
-[ex_07]: http://support.robotis.com/cn/baggage_files/dream/dream_l3_flaggame_cn.tsk
-[ex_08]: http://support.robotis.com/cn/baggage_files/dream/dream_l3_crane_cn.tsk
-[ex_09]: http://support.robotis.com/cn/baggage_files/dream/dream_l3_drunkenbasket_cn.tsk
-[ex_10]: http://support.robotis.com/cn/baggage_files/dream/dream_l3_viking_cn.tsk
-[ex_11]: http://support.robotis.com/cn/baggage_files/dream/dream_l3_molehitting_cn.tsk
-[ex_12]: http://support.robotis.com/cn/baggage_files/dream/dream_l3_babygoblin_cn.tsk
+[ex_01]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/cn/baggage_files/dream/dream_l3_orgel_cn.tsk
+[ex_02]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/cn/baggage_files/dream/dream_l3_cleanuprobot_cn.tsk
+[ex_03]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/cn/baggage_files/dream/dream_l3_truck_cn.tsk
+[ex_04]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/cn/baggage_files/dream/dream_l3_bumpercar_cn.tsk
+[ex_05]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/cn/baggage_files/dream/dream_l3_probingcar_cn.tsk
+[ex_06]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/cn/baggage_files/dream/dream_l3_guitar_cn.tsk
+[ex_07]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/cn/baggage_files/dream/dream_l3_flaggame_cn.tsk
+[ex_08]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/cn/baggage_files/dream/dream_l3_crane_cn.tsk
+[ex_09]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/cn/baggage_files/dream/dream_l3_drunkenbasket_cn.tsk
+[ex_10]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/cn/baggage_files/dream/dream_l3_viking_cn.tsk
+[ex_11]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/cn/baggage_files/dream/dream_l3_molehitting_cn.tsk
+[ex_12]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/cn/baggage_files/dream/dream_l3_babygoblin_cn.tsk
