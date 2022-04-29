@@ -597,8 +597,8 @@ PC([RoboPlus Task] 프로그램), 조립된 버그 로봇, USB 다운로더([LN-
 [감속모터]: /docs/kr/parts/motor/gm-10a/
 [USB 다운로더(LN-101)]: /docs/kr/parts/interface/ln-101/
 [프로그래밍 학습]: #프로그래밍-학습
-[OLLO_LineTrace.pdf]: http://support.robotis.com/ko/baggage_files/ollo/ollo_linetrace.pdf
-[OLLO_PuzzleRacing.zip]: http://support.robotis.com/ko/baggage_files/ollo/ollo_puzzle_racing_line.zip
+[OLLO_LineTrace.pdf]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/ko/baggage_files/ollo/ollo_linetrace.pdf
+[OLLO_PuzzleRacing.zip]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/ko/baggage_files/ollo/ollo_puzzle_racing_line.zip
 [RC-100]: /docs/kr/parts/communication/rc-100/
 [버그 기본 프로그램]: #다운로드
 [태스크 코드로 제어하는 방법보기]: /docs/kr/software/rplus1/task/programming_02/#자동꺼짐-타이머

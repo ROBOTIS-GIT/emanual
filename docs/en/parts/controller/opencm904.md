@@ -2090,10 +2090,10 @@ To use ROBOTIS [software](/docs/kr/software/#roboplus-r) with DYNAMIXEL-X series
 [Automatic Turn-off]: /docs/en/software/rplus1/task/programming_02/#powersave-timer
 [Firmware Update]: /docs/en/software/rplus1/manager/#firmware-update
 [OpenCM 9.04 Manual]: http://www.robotis.com/download/doc/controller/OpenCM9.04_en/OpenCM9.04_manual_en.zip
-[PCB Schematic]: http://support.robotis.com/en/baggage_files/opencm/opencm904_rev_10_final_schematic.pdf
-[Top Gerber]: http://support.robotis.com/en/baggage_files/opencm/opencm9.04__rev_1.0(131009)-top.pdf
-[Bottom Gerber]: http://support.robotis.com/en/baggage_files/opencm/opencm9.04__rev_1.0(131009)-bottom.pdf
-[Gerber]: http://support.robotis.com/en/baggage_files/opencm/opencm9.04__rev_1.0(131009)-gerber.pdf
+[PCB Schematic]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/opencm/opencm904_rev_10_final_schematic.pdf
+[Top Gerber]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/opencm/opencm9.04__rev_1.0(131009)-top.pdf
+[Bottom Gerber]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/opencm/opencm9.04__rev_1.0(131009)-bottom.pdf
+[Gerber]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/opencm/opencm9.04__rev_1.0(131009)-gerber.pdf
 [ROBOTIS-MINI Controller Firmware Update]: /docs/en/edu/mini/#firmware-update
 [Arduino IDE]: /docs/en/parts/controller/opencm904/#arduino-ide
 [OpenCM IDE]: http://emanual.robotis.com/docs/en/software/opencm_ide/getting_started/

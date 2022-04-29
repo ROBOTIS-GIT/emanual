@@ -76,7 +76,7 @@ For more information assembly and operation, please refer to the ROBOTIS DREAM S
 [How to Download Task code]: /docs/en/faq/download_task_code/
 [Powersave Timer]: /docs/en/software/rplus1/task/programming_02/#powersave-timer
 
-[ex_02]: http://support.robotis.com/en/baggage_files/dream/dream_l2_avoider_en.tsk
-[ex_03]: http://support.robotis.com/en/baggage_files/dream/dream_l2_scorpion_en.tsk
-[ex_04]: http://support.robotis.com/en/baggage_files/dream/dream_l2_crocodile_en.tsk
+[ex_02]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/dream/dream_l2_avoider_en.tsk
+[ex_03]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/dream/dream_l2_scorpion_en.tsk
+[ex_04]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/dream/dream_l2_crocodile_en.tsk
 [power_button]: /assets/images/edu/ollo/ollo_lvl2_001.jpg

@@ -214,7 +214,7 @@ if(zgb_rx_check() == 1)
 
 Zigbee SDK는 사용자가 직접 다양한 플랫폼에 포팅할 수 있도록 소스를 제공하고 있습니다.
 
-- [Download ZIGBEE_SDK_Porting_v1_00.zip](http://support.robotis.com/ko/baggage_files/zigbee_sdk/zigbee_sdk_porting_v1_00.zip)
+- [Download ZIGBEE_SDK_Porting_v1_00.zip](https://robotis.s3.ap-northeast-2.amazonaws.com/support/ko/baggage_files/zigbee_sdk/zigbee_sdk_porting_v1_00.zip)
 
 ## 소스 구조
 
@@ -316,8 +316,8 @@ int zgb_hal_rx(
 
 Windows용 Zigbee SDK를 다운로드 받을 수 있습니다.
 
-- [Download ZIGBEE_SDK_Win32_ v1_02.zip](http://support.robotis.com/ko/baggage_files/zigbee_sdk/zigbee_sdk_win32_v1_02.zip)
-- [Download ZIGBEE_SDK_Win64_ v1_02.zip](http://support.robotis.com/ko/baggage_files/zigbee_sdk/zigbee_sdk_win64_v1_02.zip)
+- [Download ZIGBEE_SDK_Win32_ v1_02.zip](https://robotis.s3.ap-northeast-2.amazonaws.com/support/ko/baggage_files/zigbee_sdk/zigbee_sdk_win32_v1_02.zip)
+- [Download ZIGBEE_SDK_Win64_ v1_02.zip](https://robotis.s3.ap-northeast-2.amazonaws.com/support/ko/baggage_files/zigbee_sdk/zigbee_sdk_win64_v1_02.zip)
 
 ### 시스템 요구 사항
 - OS : Windows XP /Vista /7 (32/64bit)
@@ -357,7 +357,7 @@ Windows의 환경 변수로 zigbee.dll의 위치를 등록하면 프로그램 �
 
 Linux용 Zigbee SDK를 다운로드 받을 수 있습니다.
 
-- [Download ZIGBEE_SDK_LINUX_ v1_00.zip](http://support.robotis.com/ko/baggage_files/zigbee_sdk/zigbee_sdk_linux_v1_00.zip)
+- [Download ZIGBEE_SDK_LINUX_ v1_00.zip](https://robotis.s3.ap-northeast-2.amazonaws.com/support/ko/baggage_files/zigbee_sdk/zigbee_sdk_linux_v1_00.zip)
 
 ### 시스템 요구 사항
 - OS : Linux Kernel 2.6.21 이상 권장
@@ -421,10 +421,10 @@ Visual Studio에 Zigbee SDK의 위치를 등록합니다.
 사용하는 Zigbee 모듈은 서로 1:1통신으로 설정합니다.  
 제어기가 응답할 수 있도록 제어기 타입에 맞는 tsk파일을 다운로드 합니다.
 
-- [Download CM100_Echo.tsk](http://support.robotis.com/ko/baggage_files/zigbee_sdk/cm100_echo.tsk)
-- [Download CM5_Echo.tsk](http://support.robotis.com/ko/baggage_files/zigbee_sdk/cm5_echo.tsk)
-- [Download CM510_Echo.tsk](http://support.robotis.com/ko/baggage_files/zigbee_sdk/cm510_echo.tsk)
-- [Download CM700_Echo.tsk](http://support.robotis.com/ko/baggage_files/zigbee_sdk/cm700_echo.tsk)
+- [Download CM100_Echo.tsk](https://robotis.s3.ap-northeast-2.amazonaws.com/support/ko/baggage_files/zigbee_sdk/cm100_echo.tsk)
+- [Download CM5_Echo.tsk](https://robotis.s3.ap-northeast-2.amazonaws.com/support/ko/baggage_files/zigbee_sdk/cm5_echo.tsk)
+- [Download CM510_Echo.tsk](https://robotis.s3.ap-northeast-2.amazonaws.com/support/ko/baggage_files/zigbee_sdk/cm510_echo.tsk)
+- [Download CM700_Echo.tsk](https://robotis.s3.ap-northeast-2.amazonaws.com/support/ko/baggage_files/zigbee_sdk/cm700_echo.tsk)
 
 #### 소스
 
@@ -528,9 +528,9 @@ Visual Basic용 예제입니다. 이 예제는 Visual Studio 2005에서 테스�
 
 사용하는 Zigbee 모듈은 서로 1:1통신으로 설정합니다. 제어기가 응답할 수 있도록 제어기 타입에 맞는 tsk파일을 다운로드 합니다.
 
-- [Download CM100_Echo.tsk](http://support.robotis.com/ko/baggage_files/zigbee_sdk/cm100_echo.tsk)
-- [Download CM5_Echo.tsk](http://support.robotis.com/ko/baggage_files/zigbee_sdk/cm5_echo.tsk)
-- [Download CM510_Echo.tsk](http://support.robotis.com/ko/baggage_files/zigbee_sdk/cm510_echo.tsk)
+- [Download CM100_Echo.tsk](https://robotis.s3.ap-northeast-2.amazonaws.com/support/ko/baggage_files/zigbee_sdk/cm100_echo.tsk)
+- [Download CM5_Echo.tsk](https://robotis.s3.ap-northeast-2.amazonaws.com/support/ko/baggage_files/zigbee_sdk/cm5_echo.tsk)
+- [Download CM510_Echo.tsk](https://robotis.s3.ap-northeast-2.amazonaws.com/support/ko/baggage_files/zigbee_sdk/cm510_echo.tsk)
 
 #### 소스
 
@@ -629,9 +629,9 @@ Visual C#용 예제입니다. 이 예제는 Visual Studio 2005에서 테스트 �
 
 사용하는 Zigbee 모듈은 서로 1:1통신으로 설정합니다. 제어기가 응답할 수 있도록 제어기 타입에 맞는 tsk파일을 다운로드 합니다.
 
-- [Download CM100_Echo.tsk](http://support.robotis.com/ko/baggage_files/zigbee_sdk/cm100_echo.tsk)
-- [Download CM5_Echo.tsk](http://support.robotis.com/ko/baggage_files/zigbee_sdk/cm5_echo.tsk)
-- [Download CM510_Echo.tsk](http://support.robotis.com/ko/baggage_files/zigbee_sdk/cm510_echo.tsk)
+- [Download CM100_Echo.tsk](https://robotis.s3.ap-northeast-2.amazonaws.com/support/ko/baggage_files/zigbee_sdk/cm100_echo.tsk)
+- [Download CM5_Echo.tsk](https://robotis.s3.ap-northeast-2.amazonaws.com/support/ko/baggage_files/zigbee_sdk/cm5_echo.tsk)
+- [Download CM510_Echo.tsk](https://robotis.s3.ap-northeast-2.amazonaws.com/support/ko/baggage_files/zigbee_sdk/cm510_echo.tsk)
 
 #### 소스
 

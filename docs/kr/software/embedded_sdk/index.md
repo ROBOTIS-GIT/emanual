@@ -47,12 +47,12 @@ sidebar:
 |ZIG2Serial(Windows)|X|X|X|O|X|X|X|O|O|O|X|
 |ZIG2Serial(Linux)|X|X|X|X|O|X|X|X|X|X|X|
 
-- [Download Plug-In SDK(Motion)](http://support.robotis.com/en/baggage_files/zigbee_sdk/pluginsdk_example.zip)
-- [Download ZIGBEE Porting SDK](http://support.robotis.com/en/baggage_files/zigbee_sdk/zigbee_sdk_porting_v1_00.zip)
-- [Download ZIG2Serial SDK for 32bit Windows](http://support.robotis.com/en/baggage_files/zigbee_sdk/zigbee_sdk_win32_v1_02.zip)
-- [Download ZIG2Serial SDK for 64bit Windows](http://support.robotis.com/en/baggage_files/zigbee_sdk/zigbee_sdk_win64_v1_02.zip)
-- [Download ZIG2Serial SDK for Linux](http://support.robotis.com/en/baggage_files/zigbee_sdk/zigbee_sdk_linux_v1_00.zip)
+- [Download Plug-In SDK(Motion)](https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/zigbee_sdk/pluginsdk_example.zip)
+- [Download ZIGBEE Porting SDK](https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/zigbee_sdk/zigbee_sdk_porting_v1_00.zip)
+- [Download ZIG2Serial SDK for 32bit Windows](https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/zigbee_sdk/zigbee_sdk_win32_v1_02.zip)
+- [Download ZIG2Serial SDK for 64bit Windows](https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/zigbee_sdk/zigbee_sdk_win64_v1_02.zip)
+- [Download ZIG2Serial SDK for Linux](https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/zigbee_sdk/zigbee_sdk_linux_v1_00.zip)
 
-[Download CM-510 SDK]: http://support.robotis.com/en/baggage_files/embeded_c/embeded_c(cm510_v1.02).zip
-[Download CM-530 SDK]: http://support.robotis.com/en/baggage_files/embeded_c/embeddec_c(cm530_v1_02).zip
-[Download CM-700 SDK]: http://support.robotis.com/en/baggage_files/embeded_c/embeded_c(cm700_v1.02).zip
+[Download CM-510 SDK]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/embeded_c/embeded_c(cm510_v1.02).zip
+[Download CM-530 SDK]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/embeded_c/embeddec_c(cm530_v1_02).zip
+[Download CM-700 SDK]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/embeded_c/embeded_c(cm700_v1.02).zip

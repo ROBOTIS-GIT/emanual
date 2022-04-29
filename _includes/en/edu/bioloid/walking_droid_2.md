@@ -50,7 +50,7 @@ Play the downloaded task code.  Leave obstacles on the way of the path, and then
 
 ![Walking_Droid-20][img_053]
 
-[ex_14-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_cmp_walkingdroid_en.tsk
+[ex_14-2]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_cmp_walkingdroid_en.tsk
 [How to Download Task Code]: #download-task-code
 
 [img_048]: /assets/images/edu/bioloid/bioloid_entry_tutorial_droid_15.png

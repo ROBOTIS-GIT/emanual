@@ -1688,7 +1688,7 @@ RoboPlus Task를 이용하여 코드를 작성하고 화면 출력 기능으로 
 |없음|실행할 모션 페이지가 존재하지 않습니다.|**[Invalid Page Read:00FE]**<br>00FE : 실행할 페이지 번호(16진수)|
  
 
-[파라미터 예제]: http://support.robotis.com/ko/baggage_files/smart/parameter.zip
+[파라미터 예제]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/ko/baggage_files/smart/parameter.zip
 [파라미터 입력 방법 1]: /assets/images/sw/rplus1/task/parameter_38.gif
 [파라미터 입력 방법 2]: /assets/images/sw/rplus1/task/parameter_39.gif
 [파라미터 입력 방법 3]: /assets/images/sw/rplus1/task/parameter_40.gif

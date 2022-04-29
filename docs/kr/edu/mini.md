@@ -397,10 +397,10 @@ STEAMCUP MINI의 제어기(OpenCM9.04C) 펌웨어를 복구하거나 업데이�
 
 [OpenCM9.04]: /docs/kr/parts/controller/opencm904/
 [XL-320]: /docs/kr/dxl/x/xl320/
-[태스크 및 모션 예제 다운로드]: http://support.robotis.com/ko/baggage_files/darwinmini/darwin_mini_exemple.zip
-[꾸미기 스티커 다운로드]: http://support.robotis.com/ko/baggage_files/darwinmini/darwin-mini_sticker.pdf
+[태스크 및 모션 예제 다운로드]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/ko/baggage_files/darwinmini/darwin_mini_exemple.zip
+[꾸미기 스티커 다운로드]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/ko/baggage_files/darwinmini/darwin-mini_sticker.pdf
 [3D 프린터용 STL 파일]: http://www.robotis.com/download/darwinmini/darwin_mini_3dprinter.zip
-[설계용 STP 파일]: http://support.robotis.com/ko/baggage_files/darwinmini/darwin_mini_stp.zip
+[설계용 STP 파일]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/ko/baggage_files/darwinmini/darwin_mini_stp.zip
 [STEAMCUP MINI 작동하기]: #steamcup-mini-작동하기
 [e-매뉴얼 로보플러스 태스크 사용법]: /docs/kr/software/rplus1/task/getting_started/
 [로보플러스 태스크 다운로드]: /docs/kr/software/rplus1/task/getting_started/#프로그램-다운로드

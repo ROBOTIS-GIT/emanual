@@ -882,10 +882,10 @@ USB 포트를 통해 OpenCM9.04를 윈도우즈 환경에서 사용하려면 USB
 [아두이노 라이브러리]: /docs/kr/parts/controller/opencm904/#라이브러리-api
 [컨트롤 테이블 확인하기]: /docs/kr/software/rplus2/manager/#다이나믹셀-컨트롤-테이블
 [OpenCM9.04_manual_ko.zip]: http://www.robotis.com/download/doc/controller/OpenCM9.04_ko/OpenCM9.04_manual_ko.zip
-[SCHEMATIC-OpenCM9.04.pdf]: http://support.robotis.com/ko/baggage_files/opencm/opencm904_rev_10_final_schematic.pdf
-[OpenCM9.04_REV_1.-(131009)-TOP.pdf]: http://support.robotis.com/ko/baggage_files/opencm/opencm9.04__rev_1.0(131009)-top.pdf
-[OpenCM9.04_REV_1.-(131009)-BOTTOM.pdf]: http://support.robotis.com/ko/baggage_files/opencm/opencm9.04__rev_1.0(131009)-bottom.pdf
-[OpenCM9.04_REV_1.-(131009)-Gerber.pdf]: http://support.robotis.com/ko/baggage_files/opencm/opencm9.04__rev_1.0(131009)-gerber.pdf
+[SCHEMATIC-OpenCM9.04.pdf]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/ko/baggage_files/opencm/opencm904_rev_10_final_schematic.pdf
+[OpenCM9.04_REV_1.-(131009)-TOP.pdf]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/ko/baggage_files/opencm/opencm9.04__rev_1.0(131009)-top.pdf
+[OpenCM9.04_REV_1.-(131009)-BOTTOM.pdf]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/ko/baggage_files/opencm/opencm9.04__rev_1.0(131009)-bottom.pdf
+[OpenCM9.04_REV_1.-(131009)-Gerber.pdf]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/ko/baggage_files/opencm/opencm9.04__rev_1.0(131009)-gerber.pdf
 [Arduino Official Guide]: https://www.arduino.cc/en/Guide/Libraries
 [GitHub repository]: https://github.com/ROBOTIS-GIT/Dynamixel2Arduino
 [begin()]: /docs/en/popup/arduino_api/begin/

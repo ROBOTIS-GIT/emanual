@@ -25,8 +25,8 @@ Based on previously written task code in Building Walking Droid 2 - Task Code:
 
 Play the downloaded task code. Using RC-100, check if the robot moves to the desired directions by performing forward / backward / turn left / turn right motions.
 
-[ex_14-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_cmp_walkingdroid_en.tsk
-[ex_14-3]: http://support.robotis.com/en/baggage_files/bioloid/bio_cmp_walkingdroid_en.mtn
+[ex_14-2]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_cmp_walkingdroid_en.tsk
+[ex_14-3]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_cmp_walkingdroid_en.mtn
 [How to Download Task Code]: #download-task-code
 [How to Download Motion File]: #download-motion-file
 [img_054]: /assets/images/edu/bioloid/bioloid_entry_tutorial_droid_21.png

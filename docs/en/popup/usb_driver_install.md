@@ -21,7 +21,7 @@ This step-by-step instruction describes how to install a driver (ROBOTIS Virtual
 
 ## [Download a driver](#download-a-driver)
 Download the driver from the given link, and extract the zipped folder.
-- [robotis_CDC_drv.zip](http://support.robotis.com/ko/baggage_files/opencm/robotis_cdc_drv.zip)
+- [robotis_CDC_drv.zip](https://robotis.s3.ap-northeast-2.amazonaws.com/support/ko/baggage_files/opencm/robotis_cdc_drv.zip)
 
 ## [Connect your controller to a PC](#connect-your-controller-to-a-pc)
 Connect your controller to a PC via the USB cable.

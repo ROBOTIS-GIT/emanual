@@ -17,7 +17,7 @@ layout: popup
 {% endcapture %}
 <div class="notice">{{ supported_controller | markdownify }}</div>
 
-- `다운로드` [Robotis_CDC_drv.zip](http://support.robotis.com/ko/baggage_files/opencm/robotis_cdc_drv.zip)  
+- `다운로드` [Robotis_CDC_drv.zip](https://robotis.s3.ap-northeast-2.amazonaws.com/support/ko/baggage_files/opencm/robotis_cdc_drv.zip)  
   Windows XP, Vista, 7, 8, 8.1 (32비트 및 64비트 지원, 단 서버군 제외)
 
 ## INF,CAT 파일을 이용한 설치방법

@@ -137,7 +137,7 @@ OpenCM 485 EXPボードには、OpenCM9.04のI/Oピンに接続された2つの�
 
 # [ダウンロード](#ダウンロード)
 
-- `ダウンロード PDF` [PCB Schematic](http://support.robotis.com/en/baggage_files/opencm/schematic1___opencm_485exp.pdf)
+- `ダウンロード PDF` [PCB Schematic](https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/opencm/schematic1___opencm_485exp.pdf)
 
 [RoboPlus Task]: /docs/en/software/rplus1/task/getting_started/
 [Number of pressed Start button]: /docs/en/software/rplus1/task/programming_02/#button-count
@@ -147,8 +147,8 @@ OpenCM 485 EXPボードには、OpenCM9.04のI/Oピンに接続された2つの�
 [BT-110]: /docs/en/parts/communication/bt-110/
 [BT-210]: /docs/en/parts/communication/bt-210/
 [Automatic Turn-off]: /docs/en/software/rplus1/task/programming_02/#powersave-timer
-[Top Gerber]: http://support.robotis.com/en/baggage_files/opencm/opencm9.04__rev_1.0(131009)-top.pdf
-[Bottom Gerber]: http://support.robotis.com/en/baggage_files/opencm/opencm9.04__rev_1.0(131009)-bottom.pdf
-[Gerber]: http://support.robotis.com/en/baggage_files/opencm/opencm9.04__rev_1.0(131009)-gerber.pdf
+[Top Gerber]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/opencm/opencm9.04__rev_1.0(131009)-top.pdf
+[Bottom Gerber]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/opencm/opencm9.04__rev_1.0(131009)-bottom.pdf
+[Gerber]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/opencm/opencm9.04__rev_1.0(131009)-gerber.pdf
 [DARWIN-MINI Controller Firmware Update]: /docs/en/edu/mini/#firmware-update
 [Install Arduino IDE]: /docs/en/software/arduino_ide/

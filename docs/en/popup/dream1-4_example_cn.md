@@ -20,15 +20,15 @@ layout: popup
 | 12. 搬运机器人<br />![](/assets/images/edu/dream/dream1-4_transporter.jpg) | [下载][ex_12] |
 
 
-[ex_01]: http://support.robotis.com/cn/baggage_files/dream/dream_l4_tank_cn.tsk
-[ex_02]: http://support.robotis.com/cn/baggage_files/dream/dream_l4_robotknight_cn.tsk
-[ex_03]: http://support.robotis.com/cn/baggage_files/dream/dream_l4_warrobot_cn.tsk
-[ex_04]: http://support.robotis.com/cn/baggage_files/dream/dream_l4_soccerrobot_cn.tsk
-[ex_05]: http://support.robotis.com/cn/baggage_files/dream/dream_l4_excavator_cn.tsk
-[ex_06]: http://support.robotis.com/cn/baggage_files/dream/dream_l4_laddertruck_cn.tsk
-[ex_07]: http://support.robotis.com/cn/baggage_files/dream/dream_l4_forklift_cn.tsk
-[ex_08]: http://support.robotis.com/cn/baggage_files/dream/dream_l4_boxingrobot_cn.tsk
-[ex_09]: http://support.robotis.com/cn/baggage_files/dream/dream_l4_bulldozer_cn.tsk
-[ex_10]: http://support.robotis.com/cn/baggage_files/dream/dream_l4_dribblerobot_cn.tsk
-[ex_11]: http://support.robotis.com/cn/baggage_files/dream/dream_l4_explorer_cn.tsk
-[ex_12]: http://support.robotis.com/cn/baggage_files/dream/dream_l4_transportrobot_cn.tsk
+[ex_01]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/cn/baggage_files/dream/dream_l4_tank_cn.tsk
+[ex_02]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/cn/baggage_files/dream/dream_l4_robotknight_cn.tsk
+[ex_03]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/cn/baggage_files/dream/dream_l4_warrobot_cn.tsk
+[ex_04]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/cn/baggage_files/dream/dream_l4_soccerrobot_cn.tsk
+[ex_05]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/cn/baggage_files/dream/dream_l4_excavator_cn.tsk
+[ex_06]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/cn/baggage_files/dream/dream_l4_laddertruck_cn.tsk
+[ex_07]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/cn/baggage_files/dream/dream_l4_forklift_cn.tsk
+[ex_08]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/cn/baggage_files/dream/dream_l4_boxingrobot_cn.tsk
+[ex_09]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/cn/baggage_files/dream/dream_l4_bulldozer_cn.tsk
+[ex_10]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/cn/baggage_files/dream/dream_l4_dribblerobot_cn.tsk
+[ex_11]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/cn/baggage_files/dream/dream_l4_explorer_cn.tsk
+[ex_12]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/cn/baggage_files/dream/dream_l4_transportrobot_cn.tsk
