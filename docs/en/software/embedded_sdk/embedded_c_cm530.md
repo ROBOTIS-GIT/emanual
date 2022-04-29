@@ -67,7 +67,7 @@ Select the version that best matches your working system.
 
 You can download WinARM 
 
-`Download `[WinARM](http://support.robotis.com/en/software/embeded_c/WinARM_20080331_testing.zip).
+`Download `[WinARM](https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/software/embeded_c/WinARM_20080331_testing.zip).
  
 The downloaded file is a compressed file. Decompressed the file in C:\WinARM directory.
 

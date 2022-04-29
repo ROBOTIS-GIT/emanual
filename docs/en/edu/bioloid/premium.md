@@ -234,8 +234,8 @@ Objective for this tutorial is to learn how to use the `Walking Machine`.
 
 `Waking Machine` is a combination of a walking motion file made up of specific patterns and a task code that plays theh role of smoothly connecting the walking motions in this motion file.
 
-- [Download](http://support.robotis.com/en/baggage_files/bioloid/bio_prm_walkingmachineexam_en.mtn) Walking Motion File
-- [Download](http://support.robotis.com/en/baggage_files/bioloid/bio_prm_walkingmachineexam_en.tsk) Walking Task Code
+- [Download](https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_walkingmachineexam_en.mtn) Walking Motion File
+- [Download](https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_walkingmachineexam_en.tsk) Walking Task Code
 
 Let’s use the `Walking Machine` to learn about how walking motions are converted smoothly.
 
@@ -314,7 +314,7 @@ Objective for this tutorial is to learn how to adjust a humanoid’s posture usi
 
 A Gyro sensor is used to determine angular velocity (angular variation per second). When the robot tilts and angular velocity increases in a specific direction, the servo motor's value can be adjusted in the opposite direction to straighten the robot.
 
-`Download` [TASK Code(BIO_PRM_GyroSensorExam_EN.tsk)](http://support.robotis.com/en/baggage_files/bioloid/bio_prm_gyrosensorexam_en.tsk)
+`Download` [TASK Code(BIO_PRM_GyroSensorExam_EN.tsk)](https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_gyrosensorexam_en.tsk)
 
 ### Things to Prepare
 
@@ -388,7 +388,7 @@ Let’s learn how to add 4 motions below using the RoboPlus Motion program.
 |       14       | Block ball on the right |       27       | Get up while lying on stomach |
 |       16       | Block ball on the left  |       28       |  Get up while lying on back   |
 
-[Download](http://support.robotis.com/en/baggage_files/bioloid/bio_prm_usermotionexam_en.mtn) Motion File(BIO_PRM_UserMotionExam_EN.mtn)
+[Download](https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_usermotionexam_en.mtn) Motion File(BIO_PRM_UserMotionExam_EN.mtn)
 
 ### Make a motion to block a ball on the right
 
@@ -461,8 +461,8 @@ Code to execute user-defined motions will be added to the task code used in  the
 
 Let’s learn how to run the motion added on " User-defined Motions 1 : Create Motion " with the RC-100.
 
-- [Download](http://support.robotis.com/en/baggage_files/bioloid/bio_prm_usermotionexam_en.mtn) Motion File(BIO_PRM_UserMotionExam_KR.mtn)
-- [Download](http://support.robotis.com/en/baggage_files/bioloid/bio_prm_usermotionexam_en.tsk) TASK Code(BIO_PRM_UserMotionExam_KR.tsk)
+- [Download](https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_usermotionexam_en.mtn) Motion File(BIO_PRM_UserMotionExam_KR.mtn)
+- [Download](https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_usermotionexam_en.tsk) TASK Code(BIO_PRM_UserMotionExam_KR.tsk)
 
 ### Task Code Overview
 
@@ -489,8 +489,8 @@ When you add a gripper to your robot, there is a need to keep the robot’s arm 
 
 In this case, it is not necessary to revise the motions to keep the arm still.  Instead, let’s learn to control the gripper using the task code, while preventing specific actuators from being controlled by the motion data.
 
-- [Download](http://support.robotis.com/en/baggage_files/bioloid/bio_prm_humanoidtypeb_en.mtn) Motion File(BIO_PRM_HumanoidTypeB_EN.mtn)
-- [Download](http://support.robotis.com/en/baggage_files/bioloid/bio_prm_gripperexam_en.tsk) TASK Code(BIO_PRM_GripperExam_EN.tsk)
+- [Download](https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_humanoidtypeb_en.mtn) Motion File(BIO_PRM_HumanoidTypeB_EN.mtn)
+- [Download](https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_gripperexam_en.tsk) TASK Code(BIO_PRM_GripperExam_EN.tsk)
 
 ### Background Knowledge
 
@@ -677,38 +677,38 @@ Please refer to the [Gripper Assembly].
 [img_ex_beginner_11]: /assets/images/edu/bioloid/premium_walkingdroid.jpg
 
 [ex_beginner_1-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_CrossingGate_ASM_EN.pdf
-[ex_beginner_1-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_crossinggate_en.tsk
+[ex_beginner_1-2]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_crossinggate_en.tsk
 [ex_beginner_1-3]: https://www.dropbox.com/s/r3j2ozjljrdmog3/BIO_PRM_CrossingGate.wmv?dl=0
 [ex_beginner_2-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_UniversalGauge_ASM_EN.pdf
-[ex_beginner_2-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_universalgauge_en.tsk
+[ex_beginner_2-2]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_universalgauge_en.tsk
 [ex_beginner_2-3]: https://www.dropbox.com/s/2ymcu5boposrkx0/BIO_PRM_UniversalGauge.wmv?dl=0
 [ex_beginner_3-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_CrocodileMouth_ASM_EN.pdf
-[ex_beginner_3-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_crocodilemouth_en.tsk
+[ex_beginner_3-2]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_crocodilemouth_en.tsk
 [ex_beginner_3-3]: https://www.dropbox.com/s/5amlfqbs8bp111n/BIO_PRM_CrocodileMouth.wmv?dl=0
 [ex_beginner_4-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_PanTilt_ASM_EN.pdf
-[ex_beginner_4-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_pantilt_en.tsk
+[ex_beginner_4-2]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_pantilt_en.tsk
 [ex_beginner_4-3]: https://www.dropbox.com/s/z5jxto4zdwnsefx/BIO_PRM_PanTilt.wmv?dl=0
 [ex_beginner_5-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_ParkingGate_ASM_EN.pdf
-[ex_beginner_5-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_parkinggate_en.tsk
+[ex_beginner_5-2]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_parkinggate_en.tsk
 [ex_beginner_5-3]: https://www.dropbox.com/s/sn6li7gu68jw0es/BIO_PRM_ParkingGate.wmv?dl=0
 [ex_beginner_6-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_SmartCar_ASM_EN.pdf
-[ex_beginner_6-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_smartcar_en.tsk
+[ex_beginner_6-2]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_smartcar_en.tsk
 [ex_beginner_6-3]: https://www.dropbox.com/s/pa6u6brs4nhebud/BIO_PRM_SmartCar.wmv?dl=0
 [ex_beginner_7-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_ClappingCrab_ASM_EN.pdf
-[ex_beginner_7-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_clappingcrab_en.tsk
+[ex_beginner_7-2]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_clappingcrab_en.tsk
 [ex_beginner_7-3]: https://www.dropbox.com/s/k8vlerjsmw80fse/BIO_PRM_ClappingCrab.wmv?dl=0
 [ex_beginner_8-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_AttackingDuck_ASM_EN.pdf
-[ex_beginner_8-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_attackingduck_en.tsk
+[ex_beginner_8-2]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_attackingduck_en.tsk
 [ex_beginner_8-3]: https://www.dropbox.com/s/ogfmctvc2zcnjs5/BIO_PRM_AttackingDuck.wmv?dl=0
 [ex_beginner_9-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_DistanceLevelMeter_ASM_EN.pdf
-[ex_beginner_9-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_distancelevelmeter_en.tsk
+[ex_beginner_9-2]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_distancelevelmeter_en.tsk
 [ex_beginner_9-3]: https://www.dropbox.com/s/g4z6ucy58pr28cg/BIO_PRM_DistanceLevelMeter.wmv?dl=0
 [ex_beginner_10-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_LineTracer_ASM_EN.pdf
-[ex_beginner_10-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_linetracer_en.tsk
+[ex_beginner_10-2]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_linetracer_en.tsk
 [ex_beginner_10-3]: https://www.dropbox.com/s/bi4c81e79hup3vu/BIO_PRM_LineTracer.wmv?dl=0
 [ex_beginner_11-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_WalkingDroid_ASM_EN.pdf
-[ex_beginner_11-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_walkingdroid_en.tsk
-[ex_beginner_11-3]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_walkingdroid_en.mtn
+[ex_beginner_11-2]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_walkingdroid_en.tsk
+[ex_beginner_11-3]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_walkingdroid_en.mtn
 [ex_beginner_11-4]: https://www.dropbox.com/s/v2ujjwfd5zsvkpx/BIO_PRM_WalkingDroid.wmv?dl=0
 
 ### [Intermediate](#intermediate)
@@ -738,42 +738,42 @@ Please refer to the [Gripper Assembly].
 [img_ex_intermediate_10]: /assets/images/edu/bioloid/premium_robotarm.jpg
 
 [ex_intermediate_1-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_ProbingRobot_ASM_eng.pdf
-[ex_intermediate_1-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_probingrobot_en.tsk
+[ex_intermediate_1-2]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_probingrobot_en.tsk
 [ex_intermediate_1-3]: https://www.dropbox.com/s/nb5zqfhfcfr1hqq/BIO_PRM_ProvingRobot.wmv?dl=0
 [ex_intermediate_2-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_Excavator_ASM_EN.pdf
-[ex_intermediate_2-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_excavator_en.tsk
-[ex_intermediate_2-3]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_excavator_en.mtn
+[ex_intermediate_2-2]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_excavator_en.tsk
+[ex_intermediate_2-3]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_excavator_en.mtn
 [ex_intermediate_2-4]: https://www.dropbox.com/s/mvw9ng07h7qpsq2/BIO_PRM_Excavator.wmv?dl=0
 [ex_intermediate_3-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_RobotFlower_ASM_EN.pdf
-[ex_intermediate_3-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_robotflower_en.tsk
-[ex_intermediate_3-3]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_robotflower_en.mtn
+[ex_intermediate_3-2]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_robotflower_en.tsk
+[ex_intermediate_3-3]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_robotflower_en.mtn
 [ex_intermediate_3-4]: https://www.dropbox.com/s/pkcxzr2vckeqph0/BIO_PRM_RobotFlower.wmv?dl=0
 [ex_intermediate_4-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_Fawn_ASM_EN.pdf
-[ex_intermediate_4-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_fawn_en.tsk
-[ex_intermediate_4-3]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_fawn_en.mtn
+[ex_intermediate_4-2]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_fawn_en.tsk
+[ex_intermediate_4-3]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_fawn_en.mtn
 [ex_intermediate_4-4]: https://www.dropbox.com/s/fo4kmsk7hk8p1oi/BIO_PRM_Fawn.wmv?dl=0
 [ex_intermediate_5-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_Turtle_ASM_EN.pdf
-[ex_intermediate_5-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_turtle_en.tsk
-[ex_intermediate_5-3]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_turtle_en.mtn
+[ex_intermediate_5-2]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_turtle_en.tsk
+[ex_intermediate_5-3]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_turtle_en.mtn
 [ex_intermediate_5-4]: https://www.dropbox.com/s/fwco6p5wifs41vm/BIO_PRM_Turtle.wmv?dl=0
 [ex_intermediate_6-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_GerWalk_ASM_EN.pdf
-[ex_intermediate_6-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_gerwalk_en.tsk
-[ex_intermediate_6-3]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_gerwalk_en.mtn
+[ex_intermediate_6-2]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_gerwalk_en.tsk
+[ex_intermediate_6-3]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_gerwalk_en.mtn
 [ex_intermediate_6-4]: https://www.dropbox.com/s/wnv2kuu0y1lj0ia/BIO_PRM_GerWalk.wmv?dl=0
 [ex_intermediate_7-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_BattleDroid_ASM_EN.pdf
-[ex_intermediate_7-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_battledroid_en.tsk
-[ex_intermediate_7-3]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_battledroid_en.mtn
+[ex_intermediate_7-2]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_battledroid_en.tsk
+[ex_intermediate_7-3]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_battledroid_en.mtn
 [ex_intermediate_7-4]: https://www.dropbox.com/s/e39178yae2wo4wh/BIO_PRM_BattleDroid.wmv?dl=0
 [ex_intermediate_8-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_QuadrupedRobot_ASM_EN.pdf
-[ex_intermediate_8-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_quadrupedrobot_en.tsk
-[ex_intermediate_8-3]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_quadrupedwalkingrobot_en.mtn
+[ex_intermediate_8-2]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_quadrupedrobot_en.tsk
+[ex_intermediate_8-3]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_quadrupedwalkingrobot_en.mtn
 [ex_intermediate_8-4]: https://www.dropbox.com/s/i15yq60h7en23n1/BIO_PRM_QuadrupedWalkingRobot.wmv?dl=0
 [ex_intermediate_9-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_BipedRobot_ASM_EN.pdf
-[ex_intermediate_9-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_bipedrobot_en.tsk
-[ex_intermediate_9-3]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_bipedwalkingrobot_en.mtn
+[ex_intermediate_9-2]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_bipedrobot_en.tsk
+[ex_intermediate_9-3]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_bipedwalkingrobot_en.mtn
 [ex_intermediate_9-4]: https://www.dropbox.com/s/vvkgnrvj6kmbf3s/BIO_PRM_BipedWalkingRobot.wmv?dl=0
 [ex_intermediate_10-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_RobotArm_ASM_EN.pdf
-[ex_intermediate_10-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_robotarm_en.tsk
+[ex_intermediate_10-2]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_robotarm_en.tsk
 [ex_intermediate_10-3]: https://www.dropbox.com/s/pqxbqhq1mb4b0dk/BIO_PRM_RobotArm.wmv?dl=0
 
 
@@ -794,24 +794,24 @@ Please refer to the [Gripper Assembly].
 [img_ex_advanced_05]: /assets/images/edu/bioloid/premium_lizard.jpg
 
 [ex_advanced_1-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_Dinosaur_ASM_EN.pdf
-[ex_advanced_1-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_dinosaur_en.tsk
-[ex_advanced_1-3]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_dinosaur_en.mtn
+[ex_advanced_1-2]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_dinosaur_en.tsk
+[ex_advanced_1-3]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_dinosaur_en.mtn
 [ex_advanced_1-4]: https://www.dropbox.com/s/wf4vg932jsg63g6/BIO_PRM_Dinosaur.wmv?dl=0
 [ex_advanced_2-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_Puppy_ASM_EN.pdf
-[ex_advanced_2-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_puppy_en.tsk
-[ex_advanced_2-3]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_puppy_en.mtn
+[ex_advanced_2-2]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_puppy_en.tsk
+[ex_advanced_2-3]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_puppy_en.mtn
 [ex_advanced_2-4]: https://www.dropbox.com/s/z844sld7e55xqjr/BIO_PRM_Puppy.wmv?dl=0
 [ex_advanced_3-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_KingSpider_ASM_EN.pdf
-[ex_advanced_3-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_kingspider_en.tsk
-[ex_advanced_3-3]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_kingspider_en.mtn
+[ex_advanced_3-2]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_kingspider_en.tsk
+[ex_advanced_3-3]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_kingspider_en.mtn
 [ex_advanced_3-4]: https://www.dropbox.com/s/cqiku4w55jfsu8w/BIO_PRM_KingSpider.wmv?dl=0
 [ex_advanced_4-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_Scorpion_ASM_EN.pdf
-[ex_advanced_4-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_scorpion_en.tsk
-[ex_advanced_4-3]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_scorpion_en.mtn
+[ex_advanced_4-2]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_scorpion_en.tsk
+[ex_advanced_4-3]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_scorpion_en.mtn
 [ex_advanced_4-4]: https://www.dropbox.com/s/xi794k7suepm72q/BIO_PRM_Scorpion.wmv?dl=0
 [ex_advanced_5-1]: http://www.robotis.com/download/doc/ENG/BIO_PRM_Lizard_ASM_EN.pdf
-[ex_advanced_5-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_lizard_en.tsk
-[ex_advanced_5-3]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_lizard_en.mtn
+[ex_advanced_5-2]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_lizard_en.tsk
+[ex_advanced_5-3]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_lizard_en.mtn
 [ex_advanced_5-4]: https://www.dropbox.com/s/za3th47u4gyei4d/BIO_PRM_Lizard.wmv?dl=0
 
 # [References](#references)
@@ -985,13 +985,13 @@ AX-12+ #9 was used for the right gripper and AX-12+ #10 was used for the left.
 [How to Download motion file]: /docs/en/software/rplus1/motion/#download-motion
 
 [premium_file_01]: http://www.robotis.com/download/doc/BIO_PRM_Humanoid_ASM.pdf
-[premium_file_02]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_humanoidtypea_en.tsk
-[premium_file_03]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_humanoidtypea_en.mtn
-[premium_file_04]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_humanoidtypeb_en.tsk
-[premium_file_05]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_humanoidtypeb_en.mtn
-[premium_file_06]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_humanoidtypec_en.tsk
-[premium_file_07]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_humanoidtypec_en.mtn
-[premium_file_08]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_fighttypea_en.tsk
-[premium_file_09]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_fighttypea_en.mtn
-[premium_file_10]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_soccertypea_en.tsk
-[premium_file_11]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_soccertypea_en.mtn
+[premium_file_02]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_humanoidtypea_en.tsk
+[premium_file_03]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_humanoidtypea_en.mtn
+[premium_file_04]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_humanoidtypeb_en.tsk
+[premium_file_05]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_humanoidtypeb_en.mtn
+[premium_file_06]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_humanoidtypec_en.tsk
+[premium_file_07]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_humanoidtypec_en.mtn
+[premium_file_08]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_fighttypea_en.tsk
+[premium_file_09]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_fighttypea_en.mtn
+[premium_file_10]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_soccertypea_en.tsk
+[premium_file_11]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_prm_soccertypea_en.mtn

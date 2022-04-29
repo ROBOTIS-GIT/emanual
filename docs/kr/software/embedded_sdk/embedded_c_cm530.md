@@ -74,7 +74,7 @@ JRE는 다음 사이트에서 다운로드 받을 수 있습니다.
 
 WinARM은 아래 링크에서 다운로드 받을 수 있습니다.
 
-`다운로드` [WinARM](http://support.robotis.com/en/software/embeded_c/WinARM_20080331_testing.zip)
+`다운로드` [WinARM](https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/software/embeded_c/WinARM_20080331_testing.zip)
 
 다운로드된 파일은 압축 파일입니다. C:\WinARM 에 압축을 풀어 주시면 됩니다.
 

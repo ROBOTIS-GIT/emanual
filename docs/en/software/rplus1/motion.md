@@ -1061,7 +1061,7 @@ The following are the basic parts provided with RoboPlus.
 
 Users can use Plug-In SDK to add inverse kinematics computing module from "Pose Utility."
 Instruction is given using an example of developing C# from Visual Studio 2005. (Sample example included)
-- `Download ZIP` [PlugInSDK_Example.zip](http://support.robotis.com/en/baggage_files/zigbee_sdk/pluginsdk_example.zip)
+- `Download ZIP` [PlugInSDK_Example.zip](https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/zigbee_sdk/pluginsdk_example.zip)
 
 #### Create Project
 

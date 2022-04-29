@@ -124,8 +124,8 @@ ROBOTIS is not responsible for any damages or losses resulting from any accident
 - Do not use batteries or chargers other than provided in the kit.
 - Gears must be replaced after long excessive use.
 
-[thormang3_stp.zip]: http://support.robotis.com/en/baggage_files/thormang3/thormang3_stp.zip
-[sim_for_thormang3_stl.zip]: http://support.robotis.com/en/baggage_files/thormang3/sim_for_thormang3_stl.zip
+[thormang3_stp.zip]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/thormang3/thormang3_stp.zip
+[sim_for_thormang3_stl.zip]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/thormang3/sim_for_thormang3_stl.zip
 [DYNAMIXEL-P]: /docs/en/dxl/p/
 [PH54-200-S500-R]: /docs/en/dxl/p/ph54-200-s500-r/
 [PH54-100-S500-R]: /docs/en/dxl/p/ph54-100-s500-r/
