@@ -25092,6 +25092,10 @@ dynamixel_wizard2:
             titlekr: "RAM 영역 복구"
             url: /software/dynamixel/dynamixel_wizard2/#restoring-ram-area
             urlkr: /software/dynamixel/dynamixel_wizard2/#ram-영역-복구
+          - title: "Save and Load Backup File"
+            titlekr: "백업 파일 저장 및 불러오기"
+            url: /software/dynamixel/dynamixel_wizard2/#save-and-load-backup-file
+            urlkr: /software/dynamixel/dynamixel_wizard2/#백업-파일-저장-및-불러오기
       - title: "Modifying Control Values"
         titlekr: "컨트롤 아이템 값 변경"
         url: /software/dynamixel/dynamixel_wizard2/#modifying-control-values
