@@ -196,7 +196,7 @@ Detected DYNAMIXEL's can be tested by modifying control table values.
 By selecting control table items to be plotted, values of the selected items will be drawn in the graph window in real time.
 Please refer to [Basic Features > Graph] section for more details about selecting control table items.
 
-![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_001_new.png)
+![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_001.png)
 
 ## [Packet Window](#packet-window)
 
@@ -213,7 +213,7 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 
 1. Go to `Tools` > `Options` or use shortcut key `F4`.
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_011_new.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_011.png)
 
 2. Select `Scan` from the left column menu to display scan options.
 
@@ -291,7 +291,7 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 
 1. Go to `Tools` > `Options`
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_011_new.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_011.png)
 
 2. Select `Graph` from the left column menu to display scan options.
 
@@ -307,24 +307,15 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 5. Diverse option can be used.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004_1.png)
+    
+    **NOTE**: `Scale`and `Offset` are no longer appearing at the option box above, from the latest version of software. Adjust these factors at the [Graph Window](#graph-window) in real time. (See the additional explanation at Y-Axis below)
+    {: .notice}
 
-    - Y-Axis: it adds Y-axis to a selected item. The Maximum is 9.    
-
-      ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004_y_axis_01.png)
+    - Y-Axis: it adds Y-axis to a selected item. The Maximum is 10.    
 
       ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004_y_axis_02.png)
-
-    - Scale: When a certain number is set, a value of selected item of y-axis represents the value multiplied of item by the scale.
-
-      ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004_scale_01.png)
-
-      ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004_scale_02.png)
-
-    - Offset: It adds Offset to a selected item. Use the option to separate overlapped items on the graph such as `Present Position` and `Goal Position`
-
-      ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004_offset_01.png)
-
-      ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004_offset_02.png)
+      - `Scale`: Adjust scale of axis at the Graph Window (Main Axsis, Secondary Axis) using a mouse wheel.  
+      - `Offset`: Adjust Offset by dragging the desired axis up and down at the Graph Window (Main Axsis, Secondary Axis).  
 
 5. Communication interval can be set between 1 ~ 1000ms. Smaller interval will display refined graph.
 
@@ -371,11 +362,11 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
     - Save : Save plotted data to CSV file
     - Load : Load CSV file
     - Enable/Disable Item : Click items on the right to toggle visibility
-    - Zoom In : Drag an area to zoom in
+    - Zoom : Drag an area to zoom 
       - `Shift` + `Select Area` : Zoom In on X axis only
       - `Ctrl` + `Select Area` : Zoom In on Y axis only
-      - Use mouse wheel to undo / redo zoom level setting
-    - While running the graph, use `Ctrl` + `Mouse Wheel` to adjust X axis length from 1 to 10 seconds.
+      - `Ctrl` + `Mouse Wheel`: Zoom In / Out.
+    - While running the graph, use `Shift` + `Mouse Wheel` to adjust X axis length from 1 to 10 seconds.
 
 ## [Packet](#packet)
 
@@ -628,6 +619,20 @@ See the available items in Control Table for data backup,
     - Profile Velocity
     - Indirect Addresses (Except for DYNAMIXEL-P Series)
    
+### [Save and Load Backup File](#save-and-load-backup-file)
+
+Save and Load backup data of EEPROM field as .ctd file.
+
+![](/assets/images/sw/dynamixel/wizard2/backup/backup_save_ctd.png)
+
+When loading backup data from .ctd file, it provides restoring options to ignore restoring particular data at EEPROM field. 
+
+![](/assets/images/sw/dynamixel/wizard2/backup/backup_load_01.png)
+
+The resulting log shows the restored item. 
+
+![](/assets/images/sw/dynamixel/wizard2/backup/backup_load_02.png)   
+   
 ## [Modifying Control Values](#modifying-control-values)
 
 1. Drag or slide the interface (Moderately changes value)
@@ -668,49 +673,44 @@ If the horn is misaligned after gear set replacement or reassembly, please perfo
 1. Go to `Tool` > `Calibration`
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_001.png)
+    
+    **NOTE**: `Calibration` itme will be disabled at the menu for non-supported DYNAMIXEL such as [AX Series](/docs/en/dxl/#ax-series)
+    {: .notice}
+    
+    **WARNING** : Only one DYNAMIXEL has to be connected to the port when calibrating DYNAMIXEL.
+    {: .notice--warning}    
 
 2. Calibration will begin with a breif instruction.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_002.png)
 
-3. During the calibration mode, DYNAMIXEL Wizard 2.0 cannot identify the model information of DYNAMIXEL, so correct model has to be selected manually. Selecting wrong model can cause malfunction or serious hardware damage.
-
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_003.png)
-
-4. The proper communication port that is connected to DYNAMIXEL has to be selected manually. If the port is in use, it has to be released first.
-
-    **WARNING** : Only one DYNAMIXEL has to be connected to the port when calibrating DYNAMIXEL.
-    {: .notice--warning}
-
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_004.png)
-
-5. Toggle the power of DYNAMIXEL to be detected from DYNAMIXEL Wizard 2.0.
+3. Toggle the power of DYNAMIXEL to be detected from DYNAMIXEL Wizard 2.0.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_005.png)
 
-6. If DYNAMIXEL is successfully detected, calibration firmware is installed. Please do NOT disconnect or turn off DYNAMIXEL.
+4. If DYNAMIXEL is successfully detected, calibration firmware will start being installed. Please do NOT disconnect or turn off DYNAMIXEL.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_006.png)
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_007.png)
 
-7. Calibrate the first position.
+5. Calibrate the first position.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_008.png)
 
-8. Calibrate the second position.
+6. Calibrate the second position.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_009.png)
 
-9. Calibrate the third position.
+7. Calibrate the third position.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_010.png)
 
-10. Calibrate the fourth position.
+8. Calibrate the fourth position.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_011.png)
 
-11. Clibration is completed.
+9. Clibration is completed.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_012.png)
 
@@ -720,7 +720,7 @@ In order to find error in DYNAMIXEL, self diagnosis can be performed.
 
 1. Go to `Tool` > `Self-Diagnosis`
 
-    **NOTE** : If there isn't any detected or connected device, `Self-Diagnosis` will be disabled. Please scan DYNAMIXEL first.
+    **NOTE** : `Self-Diagnosis` item will be disabled at the menu for non-suppored DYNAMIXEL such as [RX Series](/docs/en/dxl/#rx-series)
     {: .notice}
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_self_001.png)
@@ -756,9 +756,13 @@ In order to find error in DYNAMIXEL, self diagnosis can be performed.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_self_008.png)
 
-9. Proceed to performance test.
+9. Proceed to performance test. 
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_self_009.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_self_009_position.png){: width="400px"}
+    > **Position Test** : Goal Position represents red line and Present Position represents green line.
+
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_self_009_velocity.png){: width="400px"}
+    > **Velocity Test** : Safe area represents a green zone. 
 
 10. Confirm the self diagnosis result.
 
