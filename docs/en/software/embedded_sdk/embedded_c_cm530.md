@@ -23,7 +23,7 @@ The Embedded C SDK enables users to create their own CM-530 firmware from scratc
 
 # [CM-530](#cm-530)
 
-The CM-530 SDK can be found on our [Download Center](http://support.robotis.com/ko/baggage_files/embeded_c/embeddec_c(cm530_v1_02).zip)
+The CM-530 SDK can be found on our [Download Center](https://robotis.s3.ap-northeast-2.amazonaws.com/support/ko/baggage_files/embeded_c/embeddec_c(cm530_v1_02).zip)
 
 ## File Structure
 

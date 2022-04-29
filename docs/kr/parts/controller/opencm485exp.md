@@ -172,4 +172,4 @@ OpenCM 485  확장보드에는 OpenCM9.04의 IO핀과 연결된 버튼 2개와 
 - `다운로드`: [SCHEMATIC-OpenCM 485 EXP.pdf]
 
 [아두이노 IDE 설치하기]: /docs/kr/software/arduino_ide/
-[SCHEMATIC-OpenCM 485 EXP.pdf]: http://support.robotis.com/ko/baggage_files/opencm/schematic1___opencm_485exp.pdf
+[SCHEMATIC-OpenCM 485 EXP.pdf]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/ko/baggage_files/opencm/schematic1___opencm_485exp.pdf

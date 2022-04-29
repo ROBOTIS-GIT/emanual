@@ -1085,7 +1085,7 @@ RoboPlus Motion은 IGES(igs)포맷만 지원하며, 데이터 크기가 너무 �
 사용자는 Plug-In SDK를 이용해서 포즈 유틸리티의 역기구학 연산 모듈을 추가할 수 있습니다.  
 설명은 Visual Studio 2005에서 C#으로 개발하는 것을 예로 들었습니다. (Sample 예제 첨부)
 
-- `Download ZIP` [PlugInSDK_Example.zip](http://support.robotis.com/ko/baggage_files/roboplus/roboplus_motion/pluginsdk_example.zip)  
+- `Download ZIP` [PlugInSDK_Example.zip](https://robotis.s3.ap-northeast-2.amazonaws.com/support/ko/baggage_files/roboplus/roboplus_motion/pluginsdk_example.zip)  
 
 #### 프로젝트 생성
 

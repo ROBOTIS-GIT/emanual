@@ -28,7 +28,7 @@ sidebar:
 
 - `다운로드` [CM-530 SDK]
 
-[CM-530 SDK]: http://support.robotis.com/ko/baggage_files/embeded_c/embeddec_c(cm530_v1_02).zip
+[CM-530 SDK]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/ko/baggage_files/embeded_c/embeddec_c(cm530_v1_02).zip
 
 ## 폴더 구조
 
@@ -122,7 +122,7 @@ Eclipse는 따로 설치 과정이 필요 없이 압축을 푸신 후 바로 ecl
 
 함께 제공되는 [예제 프로젝트]를 열어 보겠습니다. 압축을 풀어주십시오. Root는 관계없습니다.
 
-[예제 프로젝트]: http://support.robotis.com/ko/baggage_files/embeded_c/embeddec_c(cm530_v1_02).zip
+[예제 프로젝트]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/ko/baggage_files/embeded_c/embeddec_c(cm530_v1_02).zip
 
 ![img](/assets/images/sw/sdk/embedded_060.png)
 
