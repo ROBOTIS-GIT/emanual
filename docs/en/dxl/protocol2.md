@@ -20,7 +20,7 @@ sidebar:
 **TIP** : See DYNAMIXEL Protocol [Compatibility Table]{: .popup}.
 {: .notice--success}
 
-**NOTE**: MX(2.0) is a special firmware for the DYNAMIXEL MX series supporting the DYNAMIXEL Protocol 2.0. The MX(2.0) firmware can be upgraded from the Protocol 1.0 by using the [Firmware Recovery](/docs/en/software/dynamixel/dynamixel_wizard2/) in DYNAMIXEL Wizard 2.0.
+**Note**: MX(2.0) is a special firmware for the DYNAMIXEL MX series supporting the DYNAMIXEL Protocol 2.0. The MX(2.0) firmware can be upgraded from the Protocol 1.0 by using the [Firmware Recovery](/docs/en/software/dynamixel/dynamixel_wizard2/) in DYNAMIXEL Wizard 2.0.
 {: .notice}
 
 # [Instruction Packet](#instruction-packet)
@@ -170,7 +170,7 @@ Note that given examples use the following abbreviation to provide clear informa
 
 ### Packet Parameters
 
-**NOTE** : Status Packet is received from each Device.
+**Note** : Status Packet is received from each Device.
 {: .notice}
 
 | Status Packet |     Description     |
@@ -228,7 +228,7 @@ Note that given examples use the following abbreviation to provide clear informa
   - Method of expressing negative number data : This is different for each product, so please refer to the e-manual of the corresponding product
   - Read Instruction does not respond to Broadcast ID(254 (0xFE))
 
-  **NOTE**: If requesting the response for the excess range of its Control Table, the Status packet will fill [Access Error](#error) in its error field, and return the packet with no parameters.
+  **Note**: If requesting the response for the excess range of its Control Table, the Status packet will fill [Access Error](#error) in its error field, and return the packet with no parameters.
   {: .notice}
 
 ### Packet Parameters
@@ -417,7 +417,7 @@ Note that given examples use the following abbreviation to provide clear informa
 
 ### Description
 - This instruction resets certain information of DYNAMIXEL
-- Applied Products : MX with DYNAMIXEL Protocol 2.0 (Firmware v42 or above), DYNAMIXEL-X series (Firmware v42 or above)
+- Supported DYNAMIXEL : MX (2.0) with Fw v42 or above, DYNAMIXEL-X series with Fw v42 or above
 
 ### Parameters
 
@@ -451,8 +451,7 @@ Note that given examples use the following abbreviation to provide clear informa
 ### Description
 - Instruction to store current [Control Table] status data to a Backup area, or to restore EEPROM data.
 - The Control Table Backup works properly only if **Torque Enable** in RAM area is set as '0' (Torque Off status). If the Torque Enable is set as '1' (Torque On), Status Packet with [Result Fail](#error) will be returned.
-- The Control Table Backup is available from FW45 (for X430, X540 series), FW46 (for X330 series) and FW12 (for P series).
-- XL-320 is not supported.
+- Supported DYNAMIXEL: X430/540 Series(Fw v45 or above), X330 Series(Fw v46 or above), P Series(Fw v12 or above).
 - Available items in Control Table for data backup: 
   - All Data in EERPOM 
   - Velocity P.I Gains
@@ -545,7 +544,7 @@ Note that given examples use the following abbreviation to provide clear informa
 |      ...      |     ...     |
 |  Parameter X  |  X-th Byte  |
 
-**NOTE** : Each device individually returns Status Packet for Sync Read instruction. 
+**Note** : Each device individually returns Status Packet for Sync Read instruction. 
 {: .notice}
 
 ### Example
@@ -623,8 +622,13 @@ Note that given examples use the following abbreviation to provide clear informa
 - Enhanced Instruction for faster communication compared to [Sync Read]
 - One Status Packet is structured and returned for all DYNAMIXELs if using Fast Sync Read Instruction regardless of number of DYNAMIXELs chained, as if one DYNAMIXEL returns [Status Packet].
 - Instruction Packet is formatted in the same way as Sync Read
+- Supported DYNAMIXEL:
+  - X430/540 Series (Fw v45 or above, 2XL/2XC Not Supported)
+  - X330 (Fw v46 or above)
+  - P Series (Fw v12 or above)
+  - RH-P12-RN(A) (Fw v13 or above)
 
-**Note**: [DYNAMIXEL Tips \| EEPROM and RAM Data Restoring Using Backup Funcion](https://www.youtube.com/watch?v=claLIK8omIQ)
+**Note**: [DYNAMIXEL Tips \| Use Fast Sync and Fast Bulk Read Instruction for Speedy Communication](https://www.youtube.com/watch?v=claLIK8omIQ)
 {: .notice}
 
 ### Parameter
@@ -735,7 +739,7 @@ Note that given examples use the following abbreviation to provide clear informa
 |      ...      |     ...     |
 |  Parameter X  |  X-th Byte  |
 
-**NOTE** : Each device individually returns Status Packet for Bulk Read instruction. See the Example below for more details.
+**Note** : Each device individually returns Status Packet for Bulk Read instruction. See the Example below for more details.
 {: .notice}
 
 ### Example
@@ -823,8 +827,13 @@ Note that given examples use the following abbreviation to provide clear informa
 - Enhanced Instruction for faster communication compared to [Bulk Read]. 
 - One Status Packet is structured and returned for all DYNAMIXELs using Fast Bulk Read Instruction regardless of number of DYNAMIXELs chained, as if one DYNAMIXEL returns Status Packet.
 - Instruction Packet is formatted in the same way as Bulk Read
+- Supported DYNAMIXEL:
+  - X430/540 Series (Fw v45 or above, 2XL/2XC Not Supported)
+  - X330 (Fw v46 or above)
+  - P Series (Fw v12 or above)
+  - RH-P12-RN(A) (Fw v13 or above)
 
-**Note**: [DYNAMIXEL Tips \| EEPROM and RAM Data Restoring Using Backup Funcion](https://www.youtube.com/watch?v=claLIK8omIQ)
+**Note**: [DYNAMIXEL Tips \| Use Fast Sync and Fast Bulk Read Instruction for Speedy Communication](https://www.youtube.com/watch?v=claLIK8omIQ)
 {: .notice}
 
 ### Parameters

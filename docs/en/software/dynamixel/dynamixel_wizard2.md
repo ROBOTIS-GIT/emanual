@@ -621,7 +621,10 @@ See the available items in Control Table for data backup,
    
 ### [Save and Load Backup File](#save-and-load-backup-file)
 
-Save and Load backup data of EEPROM field as .ctd file.
+Save and Load backup data of EEPROM field as .ctd file. Utilizing "Save and Load Backup File" reduces the consuming time tasks of DYNAMIXEL configuration, and loewer the possibility of configuration error.
+
+**NOTE**: Saved backup file(.cd) can be used between the same DYNAMIXEL models.
+{: .notice}
 
 ![](/assets/images/sw/dynamixel/wizard2/backup/backup_save_ctd.png)
 
