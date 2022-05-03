@@ -26239,11 +26239,20 @@ openrb-150:
     titlekr: "전원 연결 방법"
     url: /parts/controller/openrb-150/#connecting-power
     urlkr: /parts/controller/openrb-150/#전원-연결-방법
+    children:
+    - title: "Connection Examples"
+      titlekr: "연결 예시"
+      url: /parts/controller/openrb-150/#connection-examples
+      urlkr: /parts/controller/openrb-150/#연결-예시
   - title: "Development Environment"
     titlekr: "개발 환경 설정"
     url: /parts/controller/openrb-150/#development-environment
     urlkr: /parts/controller/openrb-150/#개발-환경-설정
     children:
+    - title: "DYNAMIXEL Wizard 2.0"
+      titlekr: "다이나믹셀 위자드 2.0"
+      url: /parts/controller/openrb-150/#dynamixel-wizard-20
+      urlkr: /parts/controller/openrb-150/#다이나믹셀-위자드-20
     - title: "Install the Arduino IDE"
       titlekr: "아두이노 IDE 설치"
       url: /parts/controller/openrb-150/#install-the-arduino-ide
@@ -26272,7 +26281,7 @@ openrb-150:
         titlekr: "Dynamixel2Arduino 라이브러리"
         url: /parts/controller/openrb-150/#dynamixel2arduino-library
         urlkr: /parts/controller/openrb-150/#dynamixel2arduino-라이브러리
-    - title: "Upload sketch"
+    - title: "Upload Sketch"
       titlekr: "스케치 업로드하기"
       url: /parts/controller/openrb-150/#upload-sketch
       urlkr: /parts/controller/openrb-150/#스케치-업로드하기  
