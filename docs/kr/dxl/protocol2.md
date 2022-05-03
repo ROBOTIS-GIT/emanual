@@ -69,7 +69,7 @@ Packet의 용도를 정의하는 필드
 | 0x03 |        [Write]         | 장치에 데이터를 쓰기 위한 Instruction                                                               |
 | 0x04 |      [Reg Write]       | Instruction Packet을 대기 상태로 등록하는 Instruction, Action 명령에 의해 실행됨                    |
 | 0x05 |        [Action]        | Reg Write 로 미리 등록한 Packet을 실행하는 Instruction                                              |
-| 0x06 |    [Factory Reset]     | Control Table을 공장 출하 상태의 기본값으로 되돌리는 Instruction                                     |
+| 0x06 |    [Factory Reset]     | Control Table을 공장 출하 상태의 기본값으로 되돌리는 Instruction                                    |
 | 0x08 |        [Reboot]        | 장치를 재부팅 시키는 Instruction                                                                    |
 | 0x10 |        [Clear]         | 장치의 특정 상태를 해제하는 Instruction                                                             |
 | 0x20 | [Control Table Backup] | Control Table을 Backup 또는 복구하기 위한 Instruction                                               |
@@ -452,8 +452,7 @@ Instruction Packet 의 처리 결과를 나타냄
 ### 설명
 - 현재 상태의 [Control table] 값을 Backup 영역에 저장하거나, 저장된 값으로 EEPROM을 복구하기 위한 Instruction.
 - Control Table Backup 명령은 Torque Enable 항목이 ‘0’(Off) 상태일 때만 수행되며, ‘1’(On) 상태일 때에는 [Result Fail Packet](#error)을 응답함.
-- X430, X540 시리즈 FW45 이상, X330 시리즈 FW46 이상, 다이나믹셀-P 시리즈 FW12 이상부터 지원.
-- XL-320은 지원하지 않음
+- 지원 다이나믹셀: X430, X540 시리즈 FW45 이상, X330 시리즈 FW46 이상, 다이나믹셀-P 시리즈 FW12 이상부터 지원 (XL-320은 미지원).
 - Backup으로 저장하는 데이터.
   - EEPROM 영역: 전체
   - RAM 영역
@@ -624,8 +623,9 @@ Instruction Packet 의 처리 결과를 나타냄
 - 보다 빠른 [Sync Read Instruction(0x82)](#sync-read-0x82) 통신을 하기 위해서 고안된 프로토콜
 - Fast Sync Read 패킷을 받은 다수의 다이나믹셀은 마치 하나의 다이나믹셀이 응답하는 것처럼 [Status Packet]을 하나로 구성하여 응답한다.
 - Instruction Packet은 Sync Read (0x82) 패킷과 동일한 방식으로 구성된다.
+- 지원 다이나믹셀: X430/540 시리즈(2X 시리즈 제외, FW v45 이상), X330(FW v46 이상), P 시리즈(FW v12 이상), RH-P12-RN(A)(FW v13 이상)에서 지원.
 
-**참고**: [DYNAMIXEL Tips \| EEPROM and RAM Data Restoring Using Backup Funcion](https://www.youtube.com/watch?v=claLIK8omIQ)
+**참고**: [DYNAMIXEL Tips \| Use Fast Sync and Fast Bulk Read Instruction for Speedy Communication](https://www.youtube.com/watch?v=claLIK8omIQ)
 {: .notice}
 
 ### Parameter
@@ -822,8 +822,9 @@ Instruction Packet 의 처리 결과를 나타냄
 - 보다 빠른 [Bulk Read] 통신을 하기 위해서 고안된 프로토콜
 - Fast Bulk Read 패킷을 받은 다수의 다이나믹셀은 마치 하나의 다이나믹셀이 응답하는 것처럼 [Status Packet]을 하나로 구성하여 응답한다.
 - Instruction Packet은 Bulk Read 패킷과 동일한 방식으로 구성된다.
+- 지원 다이나믹셀: X430/540 시리즈(2X 시리즈 제외, FW v45 이상), X330(FW v46 이상), P 시리즈(FW v12 이상), RH-P12-RN(A)(FW v13 이상)에서 지원. 
 
-**참고**: [DYNAMIXEL Tips \| EEPROM and RAM Data Restoring Using Backup Funcion](https://www.youtube.com/watch?v=claLIK8omIQ)
+**참고**: [DYNAMIXEL Tips \| Use Fast Sync and Fast Bulk Read Instruction for Speedy Communication](https://www.youtube.com/watch?v=claLIK8omIQ)
 {: .notice}
 
 ### Parameters
