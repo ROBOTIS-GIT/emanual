@@ -611,6 +611,9 @@ main:
         url: /parts/controller/cm-700/
       - titlekr: "OpenCM7.0"
         url: /parts/controller/opencm7/
+      # - title: "OpenRB-150"
+      #   titlekr: "OpenRB-150"
+      #   url: /parts/controller/openrb-150/
       - title: "OpenCM9.04"
         titlekr: "OpenCM9.04"
         url: /parts/controller/opencm904/
@@ -26188,6 +26191,112 @@ opencm904_jp:
       url: /parts/controller/opencm904_jp/#windowsドライバのインストール
     - title: "寸法"
       url: /parts/controller/opencm904_jp/#寸法
+
+#OpenRB-150 sidebar
+openrb-150:
+  - title: "Overview"
+    titlekr: "개요"
+    url: /parts/controller/openrb-150/#overview
+    urlkr: /parts/controller/openrb-150/#개요
+  - title: "Specifications"
+    titlekr: "제품 사양"
+    url: /parts/controller/openrb-150/#specifications
+    urlkr: /parts/controller/openrb-150/#제품-사양
+  - title: "Hardware Layout"
+    titlekr: "하드웨어 레이아웃"
+    url: /parts/controller/openrb-150/#hardware-layout
+    urlkr: /parts/controller/openrb-150/#하드웨어-레이아웃
+    children:
+    - title: "Pinout"
+      titlekr: "핀아웃"
+      url: /parts/controller/openrb-150/#pinout
+      urlkr: /parts/controller/openrb-150/#핀아웃
+    - title: "Reset Button"
+      titlekr: "리셋 버튼"
+      url: /parts/controller/openrb-150/#reset-button
+      urlkr: /parts/controller/openrb-150/#리셋-버튼
+    - title: "DYNAMIXEL Power Switch"
+      titlekr: "다이나믹셀 전원 스위치"
+      url: /parts/controller/openrb-150/#dynamixel-power-switch
+      urlkr: /parts/controller/openrb-150/#다이나믹셀-전원-스위치
+    - title: "Terminal VIN"
+      titlekr: "터미널 전원 입력"
+      url: /parts/controller/openrb-150/#terminal-vin
+      urlkr: /parts/controller/openrb-150/#터미널-전원-입력
+    - title: "Power Source Jumper"
+      titlekr: "전원 점퍼"
+      url: /parts/controller/openrb-150/#power-source-jumper
+      urlkr: /parts/controller/openrb-150/#전원-점퍼
+    - title: "DYNAMIXEL Ports"
+      titlekr: "다이나믹셀 포트"
+      url: /parts/controller/openrb-150/#dynamixel-ports
+      urlkr: /parts/controller/openrb-150/#다이나믹셀-포트
+    - title: "Serial Port"
+      titlekr: "시리얼 포트"
+      url: /parts/controller/openrb-150/#serial-port
+      urlkr: /parts/controller/openrb-150/#시리얼-포트
+    - title: "LEDs"
+      titlekr: "LEDs"
+      url: /parts/controller/openrb-150/#leds
+      urlkr: /parts/controller/openrb-150/#leds
+  - title: "Pin Name Definitions"
+    titlekr: "핀 이름 정의"
+    url: /parts/controller/openrb-150/#pin-name-definitions
+    urlkr: /parts/controller/openrb-150/#핀-이름-정의
+  - title: "Connecting Power"
+    titlekr: "전원 연결 방법"
+    url: /parts/controller/openrb-150/#connecting-power
+    urlkr: /parts/controller/openrb-150/#전원-연결-방법
+    children:
+    - title: "Connection Examples"
+      titlekr: "연결 예시"
+      url: /parts/controller/openrb-150/#connection-examples
+      urlkr: /parts/controller/openrb-150/#연결-예시
+  - title: "Development Environment"
+    titlekr: "개발 환경 설정"
+    url: /parts/controller/openrb-150/#development-environment
+    urlkr: /parts/controller/openrb-150/#개발-환경-설정
+    children:
+    - title: "DYNAMIXEL Wizard 2.0"
+      titlekr: "다이나믹셀 위자드 2.0"
+      url: /parts/controller/openrb-150/#dynamixel-wizard-20
+      urlkr: /parts/controller/openrb-150/#다이나믹셀-위자드-20
+    - title: "Install the Arduino IDE"
+      titlekr: "아두이노 IDE 설치"
+      url: /parts/controller/openrb-150/#install-the-arduino-ide
+      urlkr: /parts/controller/openrb-150/#아두이노-ide-설치
+      children:
+      - title: "Install on Linux"
+        titlekr: "리눅스에 설치하기"
+        url: /parts/controller/openrb-150/#install-on-linux
+        urlkr: /parts/controller/openrb-150/#리눅스에-설치하기
+      - title: "Install on Mac"
+        titlekr: "맥에 설치하기"
+        url: /parts/controller/openrb-150/#install-on-mac
+        urlkr: /parts/controller/openrb-150/#맥에-설치하기
+      - title: "Install on Windows"
+        titlekr: "윈도우즈에 설치하기"
+        url: /parts/controller/openrb-150/#install-on-windows
+        urlkr: /parts/controller/openrb-150/#윈도우즈에-설치하기
+    - title: "Install Board Manager"
+      url: /parts/controller/openrb-150/#install-board-manager
+    - title: "Library API"
+      titlekr: "라이브러리 API"
+      url: /parts/controller/openrb-150/#library-api
+      urlkr: /parts/controller/openrb-150/#라이브러리-api
+      children:
+      - title: "Dynamixel2Arduino Library"
+        titlekr: "Dynamixel2Arduino 라이브러리"
+        url: /parts/controller/openrb-150/#dynamixel2arduino-library
+        urlkr: /parts/controller/openrb-150/#dynamixel2arduino-라이브러리
+    - title: "Upload Sketch"
+      titlekr: "스케치 업로드하기"
+      url: /parts/controller/openrb-150/#upload-sketch
+      urlkr: /parts/controller/openrb-150/#스케치-업로드하기  
+  - title: "Downloads"
+    titlekr: "다운로드"
+    url: /parts/controller/openrb-150/#downloads
+    urlkr: /parts/controller/openrb-150/#다운로드
 
 #OpenCM 9.04 sidebar
 opencm904:
