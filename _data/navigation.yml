@@ -611,9 +611,9 @@ main:
         url: /parts/controller/cm-700/
       - titlekr: "OpenCM7.0"
         url: /parts/controller/opencm7/
-      - title: "OpenRB-150"
-        titlekr: "OpenRB-150"
-        url: /parts/controller/openrb-150/
+      # - title: "OpenRB-150"
+      #   titlekr: "OpenRB-150"
+      #   url: /parts/controller/openrb-150/
       - title: "OpenCM9.04"
         titlekr: "OpenCM9.04"
         url: /parts/controller/opencm904/
@@ -26219,6 +26219,10 @@ openrb-150:
       titlekr: "터미널 전원 입력"
       url: /parts/controller/openrb-150/#terminal-vin
       urlkr: /parts/controller/openrb-150/#터미널-전원-입력
+    - title: "Power Source Jumper"
+      titlekr: "전원 점퍼"
+      url: /parts/controller/openrb-150/#power-source-jumper
+      urlkr: /parts/controller/openrb-150/#전원-점퍼
     - title: "DYNAMIXEL Ports"
       titlekr: "다이나믹셀 포트"
       url: /parts/controller/openrb-150/#dynamixel-ports

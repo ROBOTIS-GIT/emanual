@@ -121,6 +121,15 @@ Please remove the Terminal Block before soldering the XT60 right angle connector
 ![](/assets/images/parts/controller/openrb-150/openrb-150_power_xt60.png)  
 > XT60 Connector Ready
 
+
+## [Power Source Jumper](#power-source-jumper)
+OpenRB-150 can be powered with three sources.  
+In order to properly supply power to the controller and DYNAMIXEL, the power source jumper needs to be set properly.
+
+|                             When using USB or VIN                              |                          When using Terminal Block or XT60                           |
+|:------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------:|
+| ![](/assets/images/parts/controller/openrb-150/openrb-150_power_jumper_5v.png) | ![](/assets/images/parts/controller/openrb-150/openrb-150_power_jumper_terminal.png) |
+
 ## [DYNAMIXEL Ports](#dynamixel-ports)
 4 DYNAMIXEL Ports are ready for any TTL supported DYNAMIXEL.  
 RS-485 supported DYNAMIXEL can also be used when connected with the [DYNAMIXEL Communication Bridge].
@@ -270,11 +279,29 @@ On the Arduino IDE, go to `File > Preferences` from the top menu.
 When the Preferences window appears, copy and paste following address in the `Additional Boards Manager URLs` textbox.
 
 ```
-https://raw.githubusercontent.com/ROBOTIS-GIT/openrb/master/package_openrb_index.json
+https://raw.githubusercontent.com/ROBOTIS-GIT/OpenRB-150/master/package_openrb_index.json
 ```
 
-![](/assets/images/parts/controller/opencm904/opencm9.04_linux_1.png)
+![](/assets/images/parts/controller/openrb-150/openrb-150_board_manager_index.png)
 
+### Arduino SAMD Board Manager
+
+The OpenRB-150 requires Arduino SAMD board manager for building and uploading sketches to the controller.
+Follow the instructions below to install the Arduino SAMD Board Manager.
+
+1. Go to Tools > Board > Boards Manager.
+2. Search for `Arduino SAMD` and Install the latest version.
+
+![](/assets/images/parts/controller/openrb-150/arduino_samd_board_manager.png)
+
+### OpenRB-150 Board Manager
+
+Follow the instructions below to install the OpenRB-150 Board Manager.
+
+1. Go to Tools > Board > Boards Manager.
+2. Search for `OpenRB` and Install the latest version.
+
+![](/assets/images/parts/controller/openrb-150/openrb-150_board_manager.png)
 
 {% include en/software/arduino/arduino_library_api.md %}
 
@@ -293,7 +320,7 @@ If error occurs during the Upload process, please try uploading the sketch in th
 
 - [OpenRB-150 Schematic (PDF)]
 - [OpenRB-150 3D Modeling (STEP)]
-- OpenRB Board Manager ([GitHub Repo](https://github.com/ROBOTIS-GIT), [Zip])
+- OpenRB-150 Board Manager ([GitHub Repo](https://github.com/ROBOTIS-GIT/OpenRB-150), [Zip])
 - DYNAMIXEL2Arduino Library ([GitHub Repo](https://github.com/ROBOTIS-GIT/Dynamixel2Arduino), [Zip])
 
 [X Series]: /docs/en/dxl/x/
