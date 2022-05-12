@@ -14,9 +14,7 @@ header:
 
 {% capture index_notice_01 %}
 **Hi, welcome to the e-Manual!**
-- Any inquiry regarding the use of products, please visit the following links or contact **[support@robotis.com](mailto:support@robotis.com){: .blank}**
-  - [User Community](https://community.robotis.us/)
-  - [Forum](http://en.robotis.com/service/forum.php)
+- For general discussions, inquiries, and support for your projects, please visit **[User Community]**.
 - You can also find useful resources through the **[ROBOTIS Download Center]**, such as Drawings (2D/3D CAD), and Software.
 - To see tranlations as you browse the e-Manual, click the Google Translate icon <img src="/assets/images/icon_google.png"> placed on the right side of the page.
 
