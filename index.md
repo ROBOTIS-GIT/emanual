@@ -14,12 +14,11 @@ header:
 
 {% capture index_notice_01 %}
 **Hi, welcome to the e-Manual!**
-
-- If you have any issue with ROBOTIS Products, go to the **[Forum]{: .blank}**, or contact us via email, **[support@robotis.com](mailto:support@robotis.com){: .blank}**
+- For general discussions, inquiries, and support for your projects, please visit **[User Community]**.
 - You can also find useful resources through the **[ROBOTIS Download Center]**, such as Drawings (2D/3D CAD), and Software.
 - To see tranlations as you browse the e-Manual, click the Google Translate icon <img src="/assets/images/icon_google.png"> placed on the right side of the page.
 
-[https://community.robotis.us/]: https://community.robotis.us/
+[User Community]: https://community.robotis.us/
 [robotis download center]: http://en.robotis.com/service/downloadcenter.php
 
 {% endcapture %}
