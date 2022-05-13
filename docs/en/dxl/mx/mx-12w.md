@@ -27,7 +27,7 @@ product_group: dxl_mx
 | Control Algorithm      | PID CONTROL                                                                                   |
 | Resolution             | 4096 \[pulse/rev]                                                                             |
 | Operating Modes        | Joint Mode (0 ~ 360 [&deg;])<br />Endless Turn<br />Multi-turn                                |
-| Weight                 | 54.6 [g]                                                                                      |
+| Weight                 | 55.0 [g]                                                                                      |
 | Dimensions (W x H x D) | 32 x 50 x 40 [mm]                                                                             |
 | Gear Ratio             | 32 : 1                                                                                        |
 | Stall Torque           | 0.2 [N.m] (at 12.0 [V], 1.4 [A])                                                              |
