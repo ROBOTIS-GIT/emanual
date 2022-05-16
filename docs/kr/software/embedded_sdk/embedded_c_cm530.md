@@ -28,7 +28,7 @@ sidebar:
 
 - `다운로드` [CM-530 SDK]
 
-[CM-530 SDK]: http://support.robotis.com/ko/baggage_files/embeded_c/embeddec_c(cm530_v1_02).zip
+[CM-530 SDK]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/ko/baggage_files/embeded_c/embeddec_c(cm530_v1_02).zip
 
 ## 폴더 구조
 
@@ -74,7 +74,7 @@ JRE는 다음 사이트에서 다운로드 받을 수 있습니다.
 
 WinARM은 아래 링크에서 다운로드 받을 수 있습니다.
 
-`다운로드` [WinARM](http://support.robotis.com/en/software/embeded_c/WinARM_20080331_testing.zip)
+`다운로드` [WinARM](https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/software/embeded_c/WinARM_20080331_testing.zip)
 
 다운로드된 파일은 압축 파일입니다. C:\WinARM 에 압축을 풀어 주시면 됩니다.
 
@@ -122,7 +122,7 @@ Eclipse는 따로 설치 과정이 필요 없이 압축을 푸신 후 바로 ecl
 
 함께 제공되는 [예제 프로젝트]를 열어 보겠습니다. 압축을 풀어주십시오. Root는 관계없습니다.
 
-[예제 프로젝트]: http://support.robotis.com/ko/baggage_files/embeded_c/embeddec_c(cm530_v1_02).zip
+[예제 프로젝트]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/ko/baggage_files/embeded_c/embeddec_c(cm530_v1_02).zip
 
 ![img](/assets/images/sw/sdk/embedded_060.png)
 

@@ -20,15 +20,15 @@ layout: popup
 |       12. 发挥想象吧<br />![](/assets/images/edu/dream/dream1-2_imagine.jpg)        | [下载][ex_12] |
 
 
-[ex_01]: http://support.robotis.com/cn/baggage_files/dream/dream_l2_elephant_cn.tsk
-[ex_02]: http://support.robotis.com/cn/baggage_files/dream/dream_l2_fireflylight_cn.tsk
-[ex_03]: http://support.robotis.com/cn/baggage_files/dream/dream_l2_avoider_cn.tsk
-[ex_04]: http://support.robotis.com/cn/baggage_files/dream/dream_l2_seal_cn.tsk
-[ex_05]: http://support.robotis.com/cn/baggage_files/dream/dream_l2_abeetle_cn.tsk
-[ex_06]: http://support.robotis.com/cn/baggage_files/dream/dream_l2_raccoon_cn.tsk
-[ex_07]: http://support.robotis.com/cn/baggage_files/dream/dream_l2_scorpion_cn.tsk
-[ex_08]: http://support.robotis.com/cn/baggage_files/dream/dream_l2_puppy_cn.tsk
-[ex_09]: http://support.robotis.com/cn/baggage_files/dream/dream_l2_squirrel_cn.tsk
-[ex_10]: http://support.robotis.com/cn/baggage_files/dream/dream_l2_buffalo_cn.tsk
-[ex_11]: http://support.robotis.com/cn/baggage_files/dream/dream_l2_crocodile_cn.tsk
-[ex_12]: http://support.robotis.com/cn/baggage_files/dream/dream_l2_distancesensor_cn.tsk
+[ex_01]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/cn/baggage_files/dream/dream_l2_elephant_cn.tsk
+[ex_02]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/cn/baggage_files/dream/dream_l2_fireflylight_cn.tsk
+[ex_03]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/cn/baggage_files/dream/dream_l2_avoider_cn.tsk
+[ex_04]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/cn/baggage_files/dream/dream_l2_seal_cn.tsk
+[ex_05]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/cn/baggage_files/dream/dream_l2_abeetle_cn.tsk
+[ex_06]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/cn/baggage_files/dream/dream_l2_raccoon_cn.tsk
+[ex_07]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/cn/baggage_files/dream/dream_l2_scorpion_cn.tsk
+[ex_08]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/cn/baggage_files/dream/dream_l2_puppy_cn.tsk
+[ex_09]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/cn/baggage_files/dream/dream_l2_squirrel_cn.tsk
+[ex_10]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/cn/baggage_files/dream/dream_l2_buffalo_cn.tsk
+[ex_11]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/cn/baggage_files/dream/dream_l2_crocodile_cn.tsk
+[ex_12]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/cn/baggage_files/dream/dream_l2_distancesensor_cn.tsk

@@ -640,8 +640,8 @@ After executing the program, control the robot forward, backward, left, and righ
 [USB Downloader(LN-101)]: /docs/en/parts/interface/ln-101/
 [RC-100]: /docs/en/parts/communication/rc-100/
 [Programming]: #programming
-[OLLO_LineTrace.pdf]: http://support.robotis.com/en/baggage_files/ollo/ollo_linetrace.pdf
-[OLLO_PuzzleRacing.zip]: http://support.robotis.com/en/baggage_files/ollo/ollo_puzzle_racing_line.zip
+[OLLO_LineTrace.pdf]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/ollo/ollo_linetrace.pdf
+[OLLO_PuzzleRacing.zip]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/ollo/ollo_puzzle_racing_line.zip
 [OLLO_BUG_Product_EN.tsk]: http://www.robotis.com/service/download.php?no=1450
 [How to play Bug]: #how-to-play
 [bug_move.tsk]: http://www.robotis.com/service/download.php?no=1533

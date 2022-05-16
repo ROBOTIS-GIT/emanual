@@ -48,7 +48,7 @@ For more information assembly and operation, please refer to the ROBOTIS DREAM S
 [How to Download Task code]: /docs/en/faq/download_task_code/
 [Powersave Timer]: /docs/en/software/rplus1/task/programming_02/#powersave-timer
 
-[ex_01]: http://support.robotis.com/en/baggage_files/dream/dream_l3_probingcar_en.tsk
-[ex_02]: http://support.robotis.com/en/baggage_files/dream/dream_l3_electricguitar_en.tsk
-[ex_03]: http://support.robotis.com/en/baggage_files/dream/dream_l3_flaggame_en.tsk
-[ex_04]: http://support.robotis.com/en/baggage_files/dream/dream_l4_warrobot_en.tsk
+[ex_01]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/dream/dream_l3_probingcar_en.tsk
+[ex_02]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/dream/dream_l3_electricguitar_en.tsk
+[ex_03]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/dream/dream_l3_flaggame_en.tsk
+[ex_04]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/dream/dream_l4_warrobot_en.tsk

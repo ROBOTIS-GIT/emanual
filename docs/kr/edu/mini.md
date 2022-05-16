@@ -18,7 +18,7 @@ sidebar:
 - 미려한프레임의 적용으로 굿디자인 선정
 - 6mm 격자의 올로 프레임과 호환성 유지
 - 소형 다이나믹셀 XL-320 적용으로 다양한 모션 가능
-- 로보티즈 미니 전용 App 제공 (터치, 제스처, 음성인식, 메신저)
+- STEAMCUP MINI 전용 App 제공 (터치, 제스처, 음성인식, 메신저)
 - 사용자 편의를 위한 다양한 기능 지원 (배터리 잔량체크, 오프셋 설정 등)
 - R+ Task 및 R+ Motion 연동 지원
 - 컬러센서, LED 모듈 등 추가 장치 확장 가능
@@ -82,7 +82,7 @@ sidebar:
 
 
   **리튬이온전지의 배터리 잔량 체크**  
-  로보티즈 미니의 제어기 전원을 켜면 제어기가 배터리 잔량을 체크 합니다.
+  STEAMCUP MINI의 제어기 전원을 켜면 제어기가 배터리 잔량을 체크 합니다.
 
   ![](/assets/images/edu/mini/darwin_mini_6.jpg)
 
@@ -91,7 +91,7 @@ sidebar:
    제품 사용 시 아래와 같은 상황이 발생하면, 즉시 전원 스위치를 끄고 로보티즈 고객지원센터로 연락하시기 바랍니다.
 
   - 제품에서 연기가 날 경우
-  - 로보티즈 미니를 조립하고 `관절 동작 테스트`를 실행할 때 로봇 관절(다이나믹셀 XL-320)의 LED가 깜박이지 않는 경우
+  - STEAMCUP MINI를 조립하고 `관절 동작 테스트`를 실행할 때 로봇 관절(다이나믹셀 XL-320)의 LED가 깜박이지 않는 경우
   - 로봇에 물이나 이물질이 들어간 경우
   - 로봇에서 이상한 냄새가 나는 경우
   - 로봇이 파손된 경우
@@ -112,17 +112,17 @@ sidebar:
 
 ### [로보티즈 미니 앱](#로보티즈-미니-앱)
 
-로보티즈 미니는 스마트 기기를 사용하여 다양한 동작을 실행시킬 수 있는 전용 앱을 기본 제공하고 있습니다.
+STEAMCUP MINI는 스마트 기기를 사용하여 다양한 동작을 실행시킬 수 있는 전용 앱을 기본 제공하고 있습니다.
 
-로보티즈 미니 전용 앱에 대한 설치 및 설정 방법, 동작 방법에 대해서는 [로보티즈 미니 작동하기]를 참조하세요.
+STEAMCUP MINI 전용 앱에 대한 설치 및 설정 방법, 동작 방법에 대해서는 [STEAMCUP MINI 작동하기]를 참조하세요.
 
-### [로보티즈 미니 연결하기](#로보티즈-미니-연결하기)
+### [STEAMCUP MINI 연결하기](#steamcup-mini-연결하기)
 
-#### PC에 로보티즈 미니의 블루투스 장치 추가하기
+#### PC에 STEAMCUP MINI의 블루투스 장치 추가하기
 
-블루투스를 통해 로보티즈 미니를 PC와 연결하려면 PC에 블루투스 장치가 있어야 합니다.  
+블루투스를 통해 STEAMCUP MINI를 PC와 연결하려면 PC에 블루투스 장치가 있어야 합니다.  
 내장된 블루투스 장치가 없을 경우 별도로 블루투스 동글을 구매하여 PC에 장착해야 합니다.  
-블루투스 장치가 있을 경우 아래와 같이 로보티즈 미니의 블루투스(BT-210)를 PC에 등록합니다.  
+블루투스 장치가 있을 경우 아래와 같이 STEAMCUP MINI의 블루투스(BT-210)를 PC에 등록합니다.  
 (등록 방법은 Windows 7/8/8.1을 기준으로 설명합니다.)
 {: .notice}
 
@@ -169,7 +169,7 @@ Windows 8/8.1에서 제어판을 열기 위해서는 데스크톱 모드에서 �
 
     ![](/assets/images/edu/mini/darwin_mini_39.jpg)
 
-# [로보티즈 미니 작동하기](#로보티즈-미니-작동하기)
+# [STEAMCUP MINI 작동하기](#steamcup-mini-작동하기)
 
 ## [미니 앱 설치](#미니-앱-설치)
 
@@ -201,7 +201,7 @@ Windows 8/8.1에서 제어판을 열기 위해서는 데스크톱 모드에서 �
 
 #### 태스크 프로그래밍 예제
 
-로보티즈 미니를 제어하는 프로그래밍 예제로, 오른팔을 잡고 움직이면 왼팔이 똑같이 따라 움직이는 프로그램을 태스크로 작성하면 아래와 같습니다.
+STEAMCUP MINI를 제어하는 프로그래밍 예제로, 오른팔을 잡고 움직이면 왼팔이 똑같이 따라 움직이는 프로그램을 태스크로 작성하면 아래와 같습니다.
 
 ![](/assets/images/edu/mini/darwin_mini_40.png)
 
@@ -209,10 +209,10 @@ Windows 8/8.1에서 제어판을 열기 위해서는 데스크톱 모드에서 �
 
 #### 태스크 코드 다운로드
 
-작성한 태스크 코드를 로보티즈 미니에 다운로드합니다. 다운로드를 하게 되면 제어기 내부에 태스크 코드를 저장하므로 한 번만 수행하면 됩니다.
+작성한 태스크 코드를 STEAMCUP MINI에 다운로드합니다. 다운로드를 하게 되면 제어기 내부에 태스크 코드를 저장하므로 한 번만 수행하면 됩니다.
 
-- PC와 제어기가 연결되어야 합니다. 앞에서 설명한 `PC에 로보티즈 미니의 블루투스 장치 추가하기`를 통해 로보티즈 미니의 블루투스를 PC에 등록합니다.
-- 로보티즈 미니가 연결된 포트를 확인하고, 해당 포트를 선택합니다.
+- PC와 제어기가 연결되어야 합니다. 앞에서 설명한 `PC에 STEAMCUP MINI의 블루투스 장치 추가하기`를 통해 STEAMCUP MINI의 블루투스를 PC에 등록합니다.
+- STEAMCUP MINI가 연결된 포트를 확인하고, 해당 포트를 선택합니다.
 
   ![](/assets/images/edu/mini/darwin_mini_41.jpg)
 
@@ -231,7 +231,7 @@ Windows 8/8.1에서 제어판을 열기 위해서는 데스크톱 모드에서 �
 
   ![](/assets/images/edu/mini/darwin_mini_44.png)
 
-- 로보티즈 미니의 제어기 전원을 껐다가 켜면 다운로드된 태스크 코드가 자동으로 실행됩니다. 로봇이 프로그래밍한 대로 동작하는지 확인합니다.
+- STEAMCUP MINI의 제어기 전원을 껐다가 켜면 다운로드된 태스크 코드가 자동으로 실행됩니다. 로봇이 프로그래밍한 대로 동작하는지 확인합니다.
 
 ### [로보플러스 모션](#로보플러스-모션)
 
@@ -252,16 +252,16 @@ Windows 8/8.1에서 제어판을 열기 위해서는 데스크톱 모드에서 �
 - `로보티즈 홈페이지` [다운로드 게시판]
 - `e-매뉴얼` [로보플러스 모션 사용법]
 
-#### 로보티즈 미니 기본 모션 파일
+#### STEAMCUP MINI 기본 모션 파일
 
-로보티즈 미니에 기본으로 제공되는 예제 모션 파일도 [다운로드](#다운로드)에서 받으실 수 있습니다.
+STEAMCUP MINI에 기본으로 제공되는 예제 모션 파일도 [다운로드](#다운로드)에서 받으실 수 있습니다.
 예제 모션 파일을 [로보플러스 모션 사용법]을 참고하여 수정해 보세요.
 
 #### 모션 파일 다운로드
 
 수정한 모션 파일을 로보티즈 미니 앱이나 태스크 코드에서 활용할 수 있도록 로봇에 다운로드합니다. 모션 데이터도 다운로드를 하게 되면 태스크 코드와 마찬가지로 제어기 내부에 저장되므로 한 번만 수행하면 됩니다.
 
-- PC와 제어기가 연결되어야 합니다. 앞에서 설명한 `PC에 로보티즈 미니의 블루투스 장치 추가하기`를 통해 로보티즈 미니의 블루투스(BT-210)를 PC에 등록합니다.
+- PC와 제어기가 연결되어야 합니다. 앞에서 설명한 `PC에 STEAMCUP MINI의 블루투스 장치 추가하기`를 통해 STEAMCUP MINI의 블루투스(BT-210)를 PC에 등록합니다.
 - 프로그램 좌측 하단에 `연결하기` 버튼을 클릭합니다.
 
   ![](/assets/images/edu/mini/darwin_mini_46.png)
@@ -274,7 +274,7 @@ Windows 8/8.1에서 제어판을 열기 위해서는 데스크톱 모드에서 �
 
   ![](/assets/images/edu/mini/darwin_mini_49.png)
 
-- 모션 데이터 다운로드를 위해 상단의 마지막 탭인 모션 다운로드 탭으로 이동하여 로보티즈 미니에 다운로드할 모션그룹을 선택하고, 모션그룹 다운로드 버튼을 클릭합니다.
+- 모션 데이터 다운로드를 위해 상단의 마지막 탭인 모션 다운로드 탭으로 이동하여 STEAMCUP MINI에 다운로드할 모션그룹을 선택하고, 모션그룹 다운로드 버튼을 클릭합니다.
 
   ![](/assets/images/edu/mini/darwin_mini_50.jpg)
 
@@ -284,10 +284,10 @@ Windows 8/8.1에서 제어판을 열기 위해서는 데스크톱 모드에서 �
 
 - 로보티즈 미니 앱이나 태스크 코드를 통해 수정한 모션을 실행하여 동작이 수정한 대로 이루어지는지확인합니다.
 
-# [나만의 로보티즈 미니 꾸미기](#나만의-로보티즈-미니-꾸미기)
+# [나만의 STEAMCUP MINI 꾸미기](#나만의-steamcup-mini-꾸미기)
 
 ## [추가 부품 장착하기](#추가-부품-장착하기)
-로보티즈 미니의 제어기인 OpenCM9.04-C Type은 5핀 다목적 포트를 통해 다음과 같은 장치들을 추가 장착할 수 있습니다.
+STEAMCUP MINI의 제어기인 OpenCM9.04-C Type은 5핀 다목적 포트를 통해 다음과 같은 장치들을 추가 장착할 수 있습니다.
 
 - 추가부품
 
@@ -313,7 +313,7 @@ Windows 8/8.1에서 제어판을 열기 위해서는 데스크톱 모드에서 �
   ![](/assets/images/edu/mini/darwin_mini_54.jpg)
 
 ## [외형 꾸미기](#외형-꾸미기)
-꾸미기 스티커를 이용하여 다윈미니의 얼굴과 몸을 꾸며 보세요. 빈 스티커에 그림을 직접 그려서 나만의 눈과 옷을 만들 수 있어요.
+꾸미기 스티커를 이용하여 STEAMCUP MINI의 얼굴과 몸을 꾸며 보세요. 빈 스티커에 그림을 직접 그려서 나만의 눈과 옷을 만들 수 있어요.
 
 - 꾸미기 스티커 이미지는 [다운로드](#다운로드)에서 찾을 수 있습니다.
 
@@ -325,15 +325,15 @@ Windows 8/8.1에서 제어판을 열기 위해서는 데스크톱 모드에서 �
 - `다운로드` [꾸미기 스티커 다운로드]
 - `다운로드` [3D 프린터용 STL 파일]
 - `다운로드` [설계용 STP 파일]
-- `다운로드` [로보티즈 미니 조립서]
+- `다운로드` [STEAMCUP MINI 조립서]
 
-# [로보티즈 미니 관리하기](#로보티즈-미니-관리하기)
+# [STEAMCUP MINI 관리하기](#steamcup-mini-관리하기)
 
-## [로보티즈 미니 제어기 펌웨어 업데이트](#로보티즈-미니-제어기-펌웨어-업데이트)
+## [STEAMCUP MINI 제어기 펌웨어 업데이트](#steamcup-mini-제어기-펌웨어-업데이트)
 
-로보티즈 미니의 제어기(OpenCM9.04C) 펌웨어를 복구하거나 업데이트 하려면 아래 순서대로 진행하시면 됩니다.
+STEAMCUP MINI의 제어기(OpenCM9.04C) 펌웨어를 복구하거나 업데이트 하려면 아래 순서대로 진행하시면 됩니다.
 
-1. 먼저 로보티즈 미니 가슴 부분을 몸체와 분리하여 제어기를 분리 합니다.
+1. 먼저 STEAMCUP MINI 가슴 부분을 몸체와 분리하여 제어기를 분리 합니다.
 
     ![](/assets/images/edu/mini/darwin_firmware.jpg)
 
@@ -397,15 +397,15 @@ Windows 8/8.1에서 제어판을 열기 위해서는 데스크톱 모드에서 �
 
 [OpenCM9.04]: /docs/kr/parts/controller/opencm904/
 [XL-320]: /docs/kr/dxl/x/xl320/
-[태스크 및 모션 예제 다운로드]: http://support.robotis.com/ko/baggage_files/darwinmini/darwin_mini_exemple.zip
-[꾸미기 스티커 다운로드]: http://support.robotis.com/ko/baggage_files/darwinmini/darwin-mini_sticker.pdf
+[태스크 및 모션 예제 다운로드]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/ko/baggage_files/darwinmini/darwin_mini_exemple.zip
+[꾸미기 스티커 다운로드]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/ko/baggage_files/darwinmini/darwin-mini_sticker.pdf
 [3D 프린터용 STL 파일]: http://www.robotis.com/download/darwinmini/darwin_mini_3dprinter.zip
-[설계용 STP 파일]: http://support.robotis.com/ko/baggage_files/darwinmini/darwin_mini_stp.zip
-[로보티즈 미니 작동하기]: #로보티즈-미니-작동하기
+[설계용 STP 파일]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/ko/baggage_files/darwinmini/darwin_mini_stp.zip
+[STEAMCUP MINI 작동하기]: #steamcup-mini-작동하기
 [e-매뉴얼 로보플러스 태스크 사용법]: /docs/kr/software/rplus1/task/getting_started/
 [로보플러스 태스크 다운로드]: /docs/kr/software/rplus1/task/getting_started/#프로그램-다운로드
 [다운로드 게시판]: http://www.robotis.com/service/downloadcenter.php
 [로보플러스 모션 사용법]: /docs/kr/software/rplus1/motion/
 [다운로드]: #다운로드
 [로보티즈 쇼핑몰]: http://www.robotis.com/shop/
-[로보티즈 미니 조립서]: https://www.robotis.com/service/download.php?no=2052 
+[STEAMCUP MINI 조립서]: https://www.robotis.com/service/download.php?no=2052 

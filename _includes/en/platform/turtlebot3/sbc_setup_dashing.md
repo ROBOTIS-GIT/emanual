@@ -237,7 +237,7 @@ Please follow the instructions below on the **SBC (Raspberry Pi)** of TurtleBot3
 $ sudo apt update
 $ sudo apt install libudev-dev
 $ cd ~/turtlebot3_ws/src
-$ git clone -b ros2-devel https://github.com/ROBOTIS-GIT/ld08_driver.git
+$ git clone -b dashing-devel https://github.com/ROBOTIS-GIT/ld08_driver.git
 $ cd ~/turtlebot3_ws && colcon build --symlink-install
 ```
 

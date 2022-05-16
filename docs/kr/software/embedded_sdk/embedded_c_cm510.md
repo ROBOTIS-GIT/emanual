@@ -29,8 +29,8 @@ sidebar:
 - `다운로드` [CM-510 SDK]
 - `다운로드` [CM-700 SDK]
 
-[CM-510 SDK]: http://support.robotis.com/en/baggage_files/embeded_c/embeded_c(cm510_v1.02).zip
-[CM-700 SDK]: http://support.robotis.com/en/baggage_files/embeded_c/embeded_c(cm700_v1.02).zip
+[CM-510 SDK]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/embeded_c/embeded_c(cm510_v1.02).zip
+[CM-700 SDK]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/embeded_c/embeded_c(cm700_v1.02).zip
 
 ## 폴더 구조
 

@@ -215,7 +215,7 @@ if(zgb_rx_check() == 1)
 
 Zigbee SDK provides sources so that the users can perform porting to various platforms.
 
-- [Download ZIGBEE Porting SDK](http://support.robotis.com/en/baggage_files/zigbee_sdk/zigbee_sdk_porting_v1_00.zip)
+- [Download ZIGBEE Porting SDK](https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/zigbee_sdk/zigbee_sdk_porting_v1_00.zip)
 
 ## The Structure of Source
 
@@ -313,8 +313,8 @@ int zgb_hal_rx(
 
 ## For Windows
 
-- [Download ZIG2Serial SDK for 32bit Windows](http://support.robotis.com/en/baggage_files/zigbee_sdk/zigbee_sdk_win32_v1_02.zip)
-- [Download ZIG2Serial SDK for 64bit Windows](http://support.robotis.com/en/baggage_files/zigbee_sdk/zigbee_sdk_win64_v1_02.zip)
+- [Download ZIG2Serial SDK for 32bit Windows](https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/zigbee_sdk/zigbee_sdk_win32_v1_02.zip)
+- [Download ZIG2Serial SDK for 64bit Windows](https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/zigbee_sdk/zigbee_sdk_win64_v1_02.zip)
  
 ### System Requirements
 - OS : Windows XP/Vista/7 (32/64bit)
@@ -349,7 +349,7 @@ If you do not want to register the location of dll as environment variables, the
 
 ## For Linux
 
-- [Download ZIG2Serial SDK for Linux](http://support.robotis.com/en/baggage_files/zigbee_sdk/zigbee_sdk_linux_v1_00.zip)
+- [Download ZIG2Serial SDK for Linux](https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/zigbee_sdk/zigbee_sdk_linux_v1_00.zip)
  
 ### System Requirements
 - OS : Over Linux Kernel 2.6.21 is recommended
@@ -411,10 +411,10 @@ Call the necessary functions from the source.  Please refer to API Reference on 
 Used Zigbee modules are set to 1:1 communication for each other.  
 Download tsk file appropriate to the controller type so that the controller can respond.
 
-- [Download CM100_Echo.tsk](http://support.robotis.com/en/baggage_files/zigbee_sdk/cm100_echo.tsk)
-- [Download CM5_Echo.tsk](http://support.robotis.com/en/baggage_files/zigbee_sdk/cm5_echo.tsk)
-- [Download CM510_Echo.tsk](http://support.robotis.com/en/baggage_files/zigbee_sdk/cm510_echo.tsk)
-- [Download CM700_Echo.tsk](http://support.robotis.com/en/baggage_files/zigbee_sdk/cm700_echo.tsk)
+- [Download CM100_Echo.tsk](https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/zigbee_sdk/cm100_echo.tsk)
+- [Download CM5_Echo.tsk](https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/zigbee_sdk/cm5_echo.tsk)
+- [Download CM510_Echo.tsk](https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/zigbee_sdk/cm510_echo.tsk)
+- [Download CM700_Echo.tsk](https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/zigbee_sdk/cm700_echo.tsk)
  
 #### Source
 
@@ -517,10 +517,10 @@ The environment must be set in Visual Basic to execute the examples.
 #### Preparation
 
 Used Zigbee modules are set to 1:1 communication for each other. Download tsk file appropriate to the controller type so that the controller can respond.
-- [Download CM100_Echo.tsk](http://support.robotis.com/en/baggage_files/zigbee_sdk/cm100_echo.tsk)
-- [Download CM5_Echo.tsk](http://support.robotis.com/en/baggage_files/zigbee_sdk/cm5_echo.tsk)
-- [Download CM510_Echo.tsk](http://support.robotis.com/en/baggage_files/zigbee_sdk/cm510_echo.tsk)
-- [Download CM700_Echo.tsk](http://support.robotis.com/en/baggage_files/zigbee_sdk/cm700_echo.tsk)
+- [Download CM100_Echo.tsk](https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/zigbee_sdk/cm100_echo.tsk)
+- [Download CM5_Echo.tsk](https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/zigbee_sdk/cm5_echo.tsk)
+- [Download CM510_Echo.tsk](https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/zigbee_sdk/cm510_echo.tsk)
+- [Download CM700_Echo.tsk](https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/zigbee_sdk/cm700_echo.tsk)
  
 #### Source
 
@@ -617,10 +617,10 @@ The environment must be set in Visual C# to execute the examples.
 #### Preparation
 
 Used Zigbee modules are set to 1:1 communication for each other. Download tsk file appropriate to the controller type so that it can respond.
-- [Download CM100_Echo.tsk](http://support.robotis.com/en/baggage_files/zigbee_sdk/cm100_echo.tsk)
-- [Download CM5_Echo.tsk](http://support.robotis.com/en/baggage_files/zigbee_sdk/cm5_echo.tsk)
-- [Download CM510_Echo.tsk](http://support.robotis.com/en/baggage_files/zigbee_sdk/cm510_echo.tsk)
-- [Download CM700_Echo.tsk](http://support.robotis.com/en/baggage_files/zigbee_sdk/cm700_echo.tsk)
+- [Download CM100_Echo.tsk](https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/zigbee_sdk/cm100_echo.tsk)
+- [Download CM5_Echo.tsk](https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/zigbee_sdk/cm5_echo.tsk)
+- [Download CM510_Echo.tsk](https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/zigbee_sdk/cm510_echo.tsk)
+- [Download CM700_Echo.tsk](https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/zigbee_sdk/cm700_echo.tsk)
  
 #### Source
 

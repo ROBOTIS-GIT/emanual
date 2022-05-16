@@ -47,7 +47,7 @@ Do not approach your face near the robot when the power is on. You may get injur
 ![Attacking_Duck-4][img_028]
 
 [How to Download Task Code]: #download-task-code
-[ex_11-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_cmp_attackingduck_en.tsk
+[ex_11-2]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_cmp_attackingduck_en.tsk
 [img_025]: /assets/images/edu/bioloid/bioloid_entry_tutorial_attackingduck_01.png
 [img_026]: /assets/images/edu/bioloid/bioloid_entry_tutorial_attackingduck_02.png
 [img_027]: /assets/images/edu/bioloid/bioloid_entry_tutorial_attackingduck_03.png

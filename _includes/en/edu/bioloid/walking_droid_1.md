@@ -76,7 +76,7 @@ Besides duplicated motions, 4 motions must be made as below, and the robot can a
 - [Download][walking_droid_ex-1] Example Motion File ([How to Download Motion File])
 
 [How to Download Motion File]: #download-motion-file
-[walking_droid_ex-1]: http://support.robotis.com/en/baggage_files/bioloid/bio_cmp_walkingdroidexam1_en.mtn
+[walking_droid_ex-1]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_cmp_walkingdroidexam1_en.mtn
 [img_034]: /assets/images/edu/bioloid/bioloid_entry_tutorial_droid_01.png
 [img_035]: /assets/images/edu/bioloid/bioloid_entry_tutorial_droid_02.png
 [img_036]: /assets/images/edu/bioloid/bioloid_entry_tutorial_droid_03.png

@@ -68,10 +68,10 @@ sidebar:
 |       TPS-10 (온도 센서)       |   X    |    X    |    X     |    O     |    O     |    O     |    O     |    O     |    O     |    X     |    O     |                    O                     |      O       |    O     |
 |      TMS-10 (온습도 센서)      |   X    |    X    |    X     |    O     |    O     |    O     |    X     |    O     |    O     |    X     |    O     |                    O                     |      O       |    O     |
 |       AX-S1 (통합 센서)        |   O    |    X    |    X     |    X     |    X     |    X     |    O     |    O     |    X     |    O     |    X     |                    O                     |      X       |    O     |
-|        SM-10 (서보모터)        |   X    |    X    |    O     |    O     |    O     |    O     |    X     |    O     |    O     |    X     |    O     |                    O                     |      O       |    O     |
-|       GM-10A (감속모터)        |   X    |    X    |    O     |    O     |    O     |    O     |    X     |    X     |    X     |    X     |    O     |                    O                     |      O       |    O     |
-|         고속 감속모터          |   X    |    O    |    O     |    O     |    O     |    X     |    X     |    X     |    X     |    X     |    O     |                    O                     |      O       |    O     |
-|         저속 감속모터          |   X    |    O    |    O     |    O     |    O     |    X     |    X     |    X     |    X     |    X     |    O     |                    O                     |      O       |    O     |
+|        SM-10 (서보모터)        |   X    |    X    |    O     |    O     |    O     |    O     |    X     |    O     |    O     |    X     |    O     |                    X                     |      O       |    O     |
+|       GM-10A (감속모터)        |   X    |    X    |    O     |    O     |    O     |    O     |    X     |    X     |    X     |    X     |    O     |                    X                     |      O       |    O     |
+|         고속 감속모터          |   X    |    O    |    O     |    O     |    O     |    X     |    X     |    X     |    X     |    X     |    O     |                    X                     |      O       |    O     |
+|         저속 감속모터          |   X    |    O    |    O     |    O     |    O     |    X     |    X     |    X     |    X     |    X     |    O     |                    X                     |      O       |    O     |
 |        LM-10 (LED 모듈)        |   X    |    O    |    O     |    O     |    O     |    O     |    X     |    O     |    O     |    X     |    O     |                    O                     |      O       |    O     |
 |           IR 수신기            |   X    |    X    |    O     |    O     |    O     |    X     |    O     |    O     |    O     |    O     |    X     |                    O                     |      X       |    O     |
 |            ZIG-100             |   O    |    O    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                    X                     |      X       |    X     |
@@ -139,7 +139,7 @@ sidebar:
 | [로보플러스 SMART] <br> ( I / II / III ) |   X    |    X    |    X     |    X     |    O     |    X     |    X     |    X     |    X     |    X     |    X     |                    X                     |      X       |    X     |
 |            [로보플러스 블록]             |   X    |    O    |    X     |    O     |    X     |    O     |    X     |    X     |    X     |    X     |    X     |                    X                     |      O       |    X     |
 |                 [R+ IoT]                 |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                    X                     |      O       |    X     |
-|             [로보티즈 미니]              |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                   O(X)                   |      X       |    X     |
+|             [STEAMCUP MINI]              |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                   O(X)                   |      X       |    X     |
 |           로보플러스 Play 700            |   X    |    O    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                    X                     |      X       |    X     |
 
   **참고**: 로보플러스 Play 700은 글로벌 전용제품 소프트웨어 입니다. 
@@ -196,7 +196,7 @@ sidebar:
 [R+ m.Mtion 2.0]: /docs/kr/software/rplus_mobile/mmotion/
 [R+ m.Design]: /docs/kr/software/rplus_mobile/mdesign/
 [로보플러스 SMART]: /docs/kr/software/mobile_app/rplussmart/
-[로보티즈 미니]: /docs/kr/software/mobile_app/mini_app/
+[STEAMCUP MINI]: /docs/kr/software/mobile_app/mini_app/
 [로보플러스 스크래치]: /docs/kr/software/rplus2/scratch/
 [OpenCM IDE]: /docs/kr/software/opencm_ide/getting_started/              
 [다이나믹셀 SDK]: /docs/kr/software/dynamixel/dynamixel_sdk/overview/

@@ -11,14 +11,13 @@ sidebar:
   nav: "dynamixel_wizard2"
 ---
 
-
 ![](/assets/images/sw/dynamixel/wizard2/wizard2_main_003.png)
 
 # [개요](#개요)
 
 ![](/assets/images/sw/dynamixel/wizard2/wizard2_main_000.jpg)
 
-**소프트웨어 다운로드 (v2.0.11)**  
+**소프트웨어 다운로드 (v2.0.13)**  
 [윈도우](http://www.robotis.com/service/download.php?no=1670)  
 [리눅스](http://www.robotis.com/service/download.php?no=1671)  
 [맥 OS](http://www.robotis.com/service/download.php?no=1760)  
@@ -41,6 +40,10 @@ sidebar:
 
 - [프로토콜 1.0]
 - [프로토콜 2.0]
+- Modbus-RTU (다이나믹셀 P 시리즈 전용)
+
+**참고**: [다이나믹셀 프로토콜 호환표]{: .popup}
+{: .notice}
 
 ## [지원 운영체제](#지원-운영체제)
 
@@ -81,7 +84,7 @@ sidebar:
 | **XC**           | [XC330-T288]<br>[XC330-T181]<br>[XC330-M288]<br>[XC330-M181] | [XC430-W150]<br/> [XC430-W240]    | [2XC430-W250]                  |                                |                 |
 | **XM**           | [XM430-W210]<br/> [XM430-W350]                               | [XM540-W150]<br/> [XM540-W270]    |                                |                                |                 |
 | **XH**           | [XH430-W210]<br/> [XH430-W350]                               | [XH430-V210]<br/> [XH430-V350]    | [XH540-W150]<br/> [XH540-W270] | [XH540-V150]<br/> [XH540-V270] |                 |
-| **XD**           | [XD430-T350]<br/>[XD430-T210]                                | [XD540-T270-R]<br/>[XD540-T150-R] |                                |                                |                 |
+| **XD**           | [XD430-T350-R]<br/>[XD430-T210-R]                            | [XD540-T270-R]<br/>[XD540-T150-R] |                                |                                |                 |
 | **XW**           | [XW430-T333]<br/> [XW430-T200]                               | [XW540-T140]<br/> [XW540-T260]    |                                |                                |                 |
 | **PRO H**        | [H42-20-S300-R]                                              | [H54-100-S500-R]                  | [H54-200-S500-R]               |                                |                 |
 | **PRO M**        | [M42-10-S260-R]                                              | [M54-40-S250-R]                   | [M54-60-S250-R]                |                                |                 |
@@ -97,7 +100,7 @@ sidebar:
 ## [윈도우에서 설치하기](#윈도우에서-설치하기)
 
 1. 윈도우즈 전용 패키지를 다운로드 합니다.  
-  - [윈도우즈 소프트웨어 다운로드 (v2.0.9)](http://www.robotis.com/service/download.php?no=1670)
+  - [윈도우즈 소프트웨어 다운로드](http://www.robotis.com/service/download.php?no=1670)
 2. 다운받은 설치파일을 실행합니다.  
 
 3. 안내에 따라 `Next`버튼을 눌러 설치를 진행합니다.
@@ -107,7 +110,7 @@ sidebar:
 ## [리눅스에서 설치하기](#리눅스에서-설치하기)
 
 1. 리눅스 설치패키지를 다운로드합니다.  
-  - [리눅스 소프트웨어 다운로드 (v2.0.9)](http://www.robotis.com/service/download.php?no=1671)  
+  - [리눅스 소프트웨어 다운로드](http://www.robotis.com/service/download.php?no=1671)  
 2. 다음의 명령어를 수행하여 설치파일의 실행권한을 변경합니다.
 
     ```bash
@@ -136,8 +139,11 @@ sidebar:
 
 ## [맥에서 설치하기](#맥에서-설치하기)
 
+**참고**: 최신 맥 OS 이용자는, 앱스토어를 통해 다이나믹셀 위자드 2.0을 다운로드 하세요.
+{: .notice}
+
 1. 맥 OS 설치 패키지를 다운로드 합니다.  
-  - [맥 소프트웨어 다운로드 (v2.0.9)](http://www.robotis.com/service/download.php?no=1760)
+  - [맥 소프트웨어 다운로드](http://www.robotis.com/service/download.php?no=1760)
 2. 다운로드가 완료된 dmg 파일을 오른쪽 클릭하고 `Open(열기)`를 선택합니다.  
   ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_mac_01.png)
 3. `DynamixelWizard2Setup_x64` 파일을 실행합니다.  
@@ -200,6 +206,7 @@ sidebar:
 1. 메인 메뉴에서 `도구` > `설정` 를 선택하면 설정창이 나타납니다.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_011_kr.png)
+    
 
 2. 설정창의 좌측 목록에서 `검색` 항목을 선택하면 검색 설정이 나타납니다.
 
@@ -285,7 +292,9 @@ sidebar:
 
 2. 설정창의 좌측 목록에서 `그래프` 항목을 선택하면 그래프 설정이 나타납니다.
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_002_kr.png)
+
+
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_002.png)
 
 3. 아래 그림에 표시된 `>>` 버튼을 눌러 항목을 추가 합니다. (`<<` 버튼으로 항목을 제거할 수 있습니다.)
 
@@ -295,27 +304,18 @@ sidebar:
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004_kr.png)
 
-5. 항목 추가 상자에서 색깔, 비율, 보조 Y축을 설정할 수 있습니다.    
+5. 항목 추가 상자에서 색깔, 보조 Y축을 설정할 수 있습니다.    
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004_1_kr.png)
-
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004_1.png)
+    
+    **참고**: 최신버전에서는 `비율`(Scale)과 `오프셋`(Offset) 선택 옵션은 삭제되고, [그래프 창](#그래프-창)에서 실시간으로 조정합니다. (아래 y축 설명 참고)
+    {: .notice}
+    
     - Y축: 선택된 항목의 Y축을 그래프에 표시합니다. 총 10개의 Y축을 그래프에 나타낼 수 있습니다.
 
-        ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004_y_axis_01_kr.png)
-
-        ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004_y_axis_02_kr.png)
-
-    - 비율: 그래프에서 선택된 항목의 Y축 값에 비율을 곱해서 나타냅니다.
-
-        ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004_scale_01_kr.png)
-
-        ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004_scale_02_kr.png)
-
-    - 오프셋: 선택된 항목에 오프셋 값을 더하여 표시합니다. `Present Position` 과 `Goal Position` 같이 유사한 값을 가진 그래프를 분리하고 싶을 때 사용하세요.
-
-        ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004_offset_01_kr.png)
-
-        ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004_offset_02_kr.png)
+      ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004_y_axis_02_new_kr.png)
+      - `비율`: 그래프 창에서, **주축** 또는 **보조축**을 마우스 휠로 조정.
+      - `오프셋`: 그래프 창에서 **주축** 또는 **보조축**을 위아래로 드래그.
 
 6. 통신주기(Interval)는 1~1000ms로 설정가능합니다. 통신주기가 작을수록 더 세밀한 그래프가 표현됩니다.
 
@@ -365,8 +365,8 @@ sidebar:
     - 확대/축소 : 마우스 드래그로 줌영역을 선택
       - `Shift` + 드래그 : y축 고정, x축 확대
       - `Ctrl` + 드래그 : x축 고정, y축 확대
-      - 마우스 휠로 이전 줌, 다음 줌으로 이동
-    - 그래프 동작시 Ctrl과 마우스휠로 시간축을 1~10초로 1초단위로 조절
+      - `Ctrl` + 휠 : 단계별 줌인, 줌아웃
+    - 그래프 동작시 `Shift` + 휠로 시간축을 1~10초로 조절 
 
 ## [패킷](#패킷)
 
@@ -617,6 +617,23 @@ sidebar:
     - Profile Velocity
     - Indirect Addresses (다이나믹셀-P 시리즈 제외)
 
+### [백업 파일 저장 및 불러오기](#백업-파일-저장-및-불러오기)
+
+컨트롤테이블의 **EEPROM 영역**을 파일(.ctd)로 저장 및 불러오기가 가능합니다. 해당 기능을 활용하면 반복적인 다이나믹 설정 작업에 드는 시간을 절약하고 오류를 줄일 수 있습니다.
+
+**참고**: 동일 모델 간 백업파일을 사용할 수 있습니다.
+{: .notice}
+
+![](/assets/images/sw/dynamixel/wizard2/backup/backup_save_ctd.png)
+
+EEPROM 영역의 특정 데이터 (ID, Baudrate, Protocol Type)의 복구 여부를 선택할 수 있습니다. 
+
+![](/assets/images/sw/dynamixel/wizard2/backup/backup_load_01.png)
+
+현재값과 다른 항목만 변경됩니다.
+
+![](/assets/images/sw/dynamixel/wizard2/backup/backup_load_02.png)
+
 ## [컨트롤 아이템 값 변경](#컨트롤-아이템-값-변경)  
 
 1. 마우스 왼쪽 버튼 드래그로 변경하기 (값을 크게 변경할 때 사용합니다.)  
@@ -654,52 +671,49 @@ sidebar:
 
 기어교체등으로 인해 혼의 위치값이 틀여졌다면 캘리브레이션을 통해 위치를 다시 설정해 줄 수 있습니다.
 
-1. 메인 메뉴의 `도구` > `캘리브레이션` 메뉴를 클릭합니다.  
+1. [다이나믹셀 검색하기](#다이나믹셀-검색하기)
+
+2. 메인 메뉴의 `도구` > `캘리브레이션` 메뉴를 클릭합니다.  
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_001_kr.png)
-
-2. 간단한 도움말과 함께 다이나믹셀 캘리브레이션을 시작합니다.  
-
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_002_kr.png)
-
-3. 다이나믹셀 캘리브레이션 모드에서는 모델명을 자동으로 인식할 수 없기 때문에, 사용자가 정확한 모델을 선택해 주어야 합니다. 잘못된 모델을 선택하면 정상적으로 동작하지 않습니다.  
-
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_003_kr.png)
-
-4. 사용자가 다이나믹셀이 연결된 포트를 수동으로 설정해 주어야 합니다. 포트가 사용중이면 다이나믹셀을 인식할 수 없으니 다른 프로그램을 종료하고 진행하십시오.  
-
+    
+    **참고**: 캘리브레이션을 지원하지 않는 모델(예: [AX 시리즈](/docs/kr/dxl/#ax-시리즈))은, 메뉴에서 `캘리브레이션`이 활성화되지 않습니다. 
+    {: .notice}
+    
     **주의** : 다이나믹셀 캘리브레이션시에는 반드시 한개의 다이나믹셀만 연결되어 있어야 합니다.  
     {: .notice--warning}
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_004_kr.png)
+3. 간단한 도움말과 함께 다이나믹셀 캘리브레이션을 시작합니다.  
 
-5. 다이나믹셀을 찾기 위해 다이나믹셀의 전원을 껐다가 켜십시오.  
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_002_kr.png)
+
+4. 다이나믹셀을 찾기 위해 다이나믹셀의 전원을 껐다가 켜십시오.  
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_005_kr.png)
 
-6. 다이나믹셀 검색에 성공하면 캘리브레이션 펌웨어를 설치합니다.  
+5. 다이나믹셀 검색에 성공하면 캘리브레이션 펌웨어를 설치합니다.  
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_006_kr.png)
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_007_kr.png)
 
-7. 첫번째 위치를 설정합니다.  
+6. 첫번째 위치를 설정합니다.  
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_008_kr.png)
 
-8. 두번째 위치를 설정합니다.  
+7. 두번째 위치를 설정합니다.  
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_009_kr.png)
 
-9. 세번째 위치를 설정합니다.  
+8. 세번째 위치를 설정합니다.  
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_010_kr.png)
 
-10. 네번째 위치를 설정합니다.  
+9. 네번째 위치를 설정합니다.  
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_011_kr.png)
 
-11. 캘리브레이션이 완료되었습니다.  
+10. 캘리브레이션이 완료되었습니다.  
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_012_kr.png)
 
@@ -708,8 +722,8 @@ sidebar:
 다이나믹셀의 불량여부를 판단하기위해 자가진단을 실행할 수 있습니다.
 
 1. 메인 메뉴의 `도구` > `자가진단` 메뉴를 클릭합니다.  
-
-    **참고** : 선택된 장치가 없으면 해당 메뉴가 비활성화된 상태입니다. 검색 후 다이나믹셀이 연결된 상태에서 진행해 주세요.  
+    
+    **참고**: 자가진단 기능을 지원하지 않는 모델(예: [RX 시리즈](/docs/kr/dxl/#rx-시리즈))은, 메뉴에서 `자가진단`이 활성화되지 않습니다. 
     {: .notice}
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_self_001_kr.png)
@@ -745,9 +759,13 @@ sidebar:
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_self_008_kr.png)
 
-9. 성능테스트를 진행합니다.  
+9. 성능테스트를 진행합니다. 
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_self_009_kr.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_self_009_position.png){: width="400px"}
+    > **위치 테스트**: Goal Position이 빨간 선, Present Position이 녹색 선으로 표시
+    
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_self_009_velocity.png){: width="400px"}
+    > **속도 테스트**: 합격 영역이 그린존으로 표시
 
 10. 자가진단 결과를 확인합니다.  
 
@@ -876,3 +894,4 @@ sidebar:
 [PM42-010-S260-R]: /docs/kr/dxl/p/pm42-010-s260-r/
 [RH-P12-RN]: /docs/kr/platform/rh_p12_rn/
 [RH-P12-RN(A)]: /docs/kr/platform/rh_p12_rna/
+[다이나믹셀 프로토콜 호환표]: /docs/kr/popup/faq_protocol_compatibility_table

@@ -353,10 +353,10 @@ Color Sensor : Use ports `2` and `3`
 - [Download][mini_download_04] STP Design File
 - [Download][mini_download_05] Assembly Guide
 
-[mini_download_01]: http://support.robotis.com/en/baggage_files/darwinmini/darwin_mini_exemple_en.zip
-[mini_download_02]: http://support.robotis.com/en/baggage_files/darwinmini/darwin-mini_sticker.pdf
+[mini_download_01]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/darwinmini/darwin_mini_exemple_en.zip
+[mini_download_02]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/darwinmini/darwin-mini_sticker.pdf
 [mini_download_03]: http://www.robotis.com/download/darwinmini/darwin_mini_3dprinter.zip
-[mini_download_04]: http://support.robotis.com/en/baggage_files/darwinmini/darwin_mini_stp.zip
+[mini_download_04]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/darwinmini/darwin_mini_stp.zip
 [mini_download_05]: https://www.robotis.com/service/download.php?no=2053
 
 # [References](#references)

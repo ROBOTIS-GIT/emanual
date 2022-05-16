@@ -847,5 +847,5 @@ The controller can be operated using RC-100.
 [RoboPlus Terminal]: /docs/en/software/rplus1/task/terminal/
 [CM-510]: /docs/en/parts/controller/cm-510/
 [CM-700]: /docs/en/parts/controller/cm-700/
-[Download CM-510 SDK]: http://support.robotis.com/en/baggage_files/embeded_c/embeded_c(cm510_v1.02).zip
-[Download CM-700 SDK]: http://support.robotis.com/en/baggage_files/embeded_c/embeded_c(cm700_v1.02).zip
+[Download CM-510 SDK]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/embeded_c/embeded_c(cm510_v1.02).zip
+[Download CM-700 SDK]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/embeded_c/embeded_c(cm700_v1.02).zip

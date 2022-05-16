@@ -18,13 +18,13 @@ sidebar:
 
 # [로보티즈 e-Manual](#로보티즈-e-manual)
 
-{% capture index_notice_01 %}
+{% capture index_notice_01 %} 
 **로보티즈 e-Manual에 오신걸 환영합니다 !**  
-e-Manual은 로보티즈에서 제공하는 모든 제품에 대한 상세한 매뉴얼을 제공합니다.
-
-- 궁금한 점이 있다면, 로보티즈 커뮤니티인 **[포럼]** 또는 **[support@robotis.com](mailto:support@robotis.com){: .blank}** 로 문의하세요.
+e-Manual은 로보티즈에서 제공하는 모든 제품에 대한 상세한 매뉴얼을 제공합니다.  
+- 프로젝트 관련 토론 및 기술 지원은 **[유저 커뮤니티]** 또는 **[포럼]**을 방문하세요!  
 - **[로보티즈 다운로드 센터]** 에서 2D/3D 도면 및 소프트웨어등 다양한 자료를 제공합니다.
 
+[유저 커뮤니티]: https://community.robotis.us/
 [포럼]: https://www.robotis.com/service/forum.php
 [로보티즈 다운로드 센터]: http://en.robotis.com/service/downloadcenter.php
 

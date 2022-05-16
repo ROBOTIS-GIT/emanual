@@ -107,8 +107,8 @@ CM-700에서 동작하는 프로그램을 만들기 위해서는 Atmega2561 개�
 - `AVR STUDIO4 다운로드` [PHN_Development(v1.00).zip]
 - `Atmel STUDIO6 다운로드` [PHN_Development(v1.01).zip]
 
-[PHN_Development(v1.00).zip]: http://support.robotis.com/ko/baggage_files/platform/hand/phn_development(v1.00).zip
-[PHN_Development(v1.01).zip]: http://support.robotis.com/ko/baggage_files/platform/hand/phn_development(v1.01).zip
+[PHN_Development(v1.00).zip]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/ko/baggage_files/platform/hand/phn_development(v1.00).zip
+[PHN_Development(v1.01).zip]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/ko/baggage_files/platform/hand/phn_development(v1.01).zip
 
 ### [소스 구조](#소스-구조)
 
@@ -248,8 +248,8 @@ Hand 데모 프로그램 예제가 구현되어 있습니다.
 
 비 전문가를 위한 개발 환경인 RoboPlus를 이용해서 Hand를 제어할 수 있습니다.
 
-- `태스크 다운로드` [PHN_Demo_KR.tsk](http://support.robotis.com/ko/baggage_files/platform/hand/phn_demo_kr.tsk)
-- `모션 다운로드` [PHN_Demo_KR_33C.mtn](http://support.robotis.com/ko/baggage_files/platform/hand/phn_demo_kr_33c.mtn)
+- `태스크 다운로드` [PHN_Demo_KR.tsk](https://robotis.s3.ap-northeast-2.amazonaws.com/support/ko/baggage_files/platform/hand/phn_demo_kr.tsk)
+- `모션 다운로드` [PHN_Demo_KR_33C.mtn](https://robotis.s3.ap-northeast-2.amazonaws.com/support/ko/baggage_files/platform/hand/phn_demo_kr_33c.mtn)
 
 - [로보플러스 사용준비(CM-700 펌웨어 복구)]
 - [로보플러스 태스크 프로그래밍]
@@ -262,7 +262,7 @@ Hand 데모 프로그램 예제가 구현되어 있습니다.
 
 - `다운로드` [3Finger Hand PHN-33B(pdf).zip](http://www.robotis.com/service/download.php?no=463)
 - `다운로드` [3Finger Hand PHN-33B(stp).zip](http://www.robotis.com/service/download.php?no=464)
-- ​`다운로드` [Platform_Hand_Bottom_Dimension.pdf](http://support.robotis.com/ko/baggage_files/platform/hand/platform_hand_dimension_bottom.pdf)
+- ​`다운로드` [Platform_Hand_Bottom_Dimension.pdf](https://robotis.s3.ap-northeast-2.amazonaws.com/support/ko/baggage_files/platform/hand/platform_hand_dimension_bottom.pdf)
 
 
 [RX-28]: /docs/kr/dxl/rx/rx-28/

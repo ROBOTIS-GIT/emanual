@@ -125,7 +125,7 @@ This method utilizes BT-210 Bluetooth module or ZigBee (ZIG-110A Set + ZIG2Seria
 6. Select “ROBOTIS Virtual COM Port” and click “Next” to finish the installation.
 
 To install the USB driver manually, please visit the following link:  
-http://support.robotis.com/ko/software/sw_reference/cm150_usb_install.htm
+https://robotis.s3.ap-northeast-2.amazonaws.com/support/ko/software/sw_reference/cm150_usb_install.htm
 
 ## [Add Extension Blocks](#add-extension-blocks)
 - Selecting the Controller and clicking the “New Scratch” or “Open Scratch” buttons will open a Scratch project with the blocks related to the Controller automatically included.

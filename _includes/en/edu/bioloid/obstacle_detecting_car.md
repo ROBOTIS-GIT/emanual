@@ -45,7 +45,7 @@ Play the downloaded task code. Check if the obstacle detection car runs and avoi
 ![Obstacle_Car-5][img_033]
 
 [How to Download Task Code]: #download-task-code
-[ex_9-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_cmp_obstacledetectioncar_en.tsk
+[ex_9-2]: https://robotis.s3.ap-northeast-2.amazonaws.com/support/en/baggage_files/bioloid/bio_cmp_obstacledetectioncar_en.tsk
 [img_029]: /assets/images/edu/bioloid/bioloid_entry_tutorial_obstaclecar_01.png
 [img_030]: /assets/images/edu/bioloid/bioloid_entry_tutorial_obstaclecar_02.png
 [img_031]: /assets/images/edu/bioloid/bioloid_entry_tutorial_obstaclecar_03.png

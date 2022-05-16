@@ -7,22 +7,22 @@ share: true
 author_profile: false
 permalink: /docs/kr/edu/dream/
 sidebar:
-  title: 로보티즈 드림
+  title: DREAM
   nav: "dream"
 ---
 
 
-# [로보티즈 드림](#로보티즈-드림)
+# [ROBOTIS DREAM](#robotis-dream)
 
 |1단계|2단계|3단계|4단계|
 |:---:|:---:|:---:|:---:|
 |[![](/assets/images/edu/dream/dream_l1.jpg)](/docs/kr/edu/dream/dream1-1/)|[![](/assets/images/edu/dream/dream_l2.jpg)](/docs/kr/edu/dream/dream1-2/)|[![](/assets/images/edu/dream/dream_l3.jpg)](/docs/kr/edu/dream/dream1-3/)|[![](/assets/images/edu/dream/dream_l4.jpg)](/docs/kr/edu/dream/dream1-4/)|
 |-|[교안 예제](/docs/kr/edu/dream/dream1-2/#교안예제)|[교안 예제](/docs/kr/edu/dream/dream1-3/#교안예제)|[교안 예제](/docs/kr/edu/dream/dream1-4/#교안예제)|
 
-**주의** : 로보티즈 드림은 현재 단종되어 더 이상 판매되지 않습니다.
+**주의** : ROBOTIS DREAM은 현재 단종되어 더 이상 판매되지 않습니다.
 {: .notice--warning}
 
-# [로보티즈 드림 II](#로보티즈-드림-ii)
+# [STEAMCUP DREAM II](#steamcup-dream-ii)
 
 |1단계|2단계|3단계|4단계|5단계|
 |:---:|:---:|:---:|:---:|:---:|
