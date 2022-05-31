@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: kit2
+ref: kit2_reference
 read_time: true
 share: true
 author_profile: false
@@ -55,7 +55,57 @@ page_number: 4
 
 ## [Raspberry Pi Update](#raspberry-pi-update-and-recovery)
 
-You can update Raspberry Pi remotely when it needs. This feature will be available in the near future. 
+Update your Raspberry Pi Zero 2 W to add new features for Engineer Kit2. 
+
+{% capture zero_w_update_warn %}
+**WARNING**
+- If you are using Raspberry Pi Zero W, do not follow Raspberry Pi Update instruction, but follow [Raspberry Pi Recovery] instruction.
+- Check the name of board on the back side of your Raspberry Pi Zero board.
+
+  ![](/assets/images/edu/engineer/kit2/sbc_update/rpizero2w_back_side.png)
+
+{% endcapture %}
+
+<div class="notice--warning">{{ zero_w_update_warn | markdownify }}</div>
+
+1. Download **dxl.rts** at your PC.
+  - `Download`: **[dxl.rts](https://www.robotis.com/service/download.php?no=2115)**
+
+2. Turn on the controller and wait for the Raspberry Pi Zero 2 W to boot up.
+  
+    **NOTE**: After about 70 seconds, the User LED will turn yellow with a beep sound.
+    {: .notice}
+    
+    ![](/assets/images/edu/engineer/kit2/pi_booting.png)
+  
+3.  Aftewr bootup, search your WIFI and connect to `Robotis_Rpi_XXXX` (XXXX is 4 digit MAC address of the controller) or `Robotis_Rpi` AP
+  
+    ![](/assets/images/edu/engineer/kit2/rpi_wifi_scan_02.png)
+    
+    **NOTE**: If Password is requested, type the followings:  
+    `Account`: pi  
+    `Passoword`: Robotis0  
+    {: .notice}
+
+3. PC의 윈도우 탐색 창을 여세요. (Window10 단축키: `Win` + `E`) 
+
+    ![](/assets/images/edu/engineer/kit2/sbc_update/file_explore_01.png){: width="650px"}
+
+4. PC의 윈도우 탐색기 주소창에 **\\raspberrypi.local** 를 입력하면,`robotis` 폴더가 나타납니다.
+
+    ![](/assets/images/edu/engineer/kit2/sbc_update/file_explore_02.png){: width="650px"}
+
+5. 다운로드 받은 **dxl.rts** 파일을 `robotis`폴더에 복사하세요.
+
+    ![](/assets/images/edu/engineer/kit2/sbc_update/copy_rts.png){: width="650px"}
+    
+    ![](/assets/images/edu/engineer/kit2/sbc_update/copy_rts_02.png){: width="650px"}
+    
+6. 제어기(CM-550)를 껏다 키면 Raspberry Pi Zero 2 W가 재부팅되면서, 업데이트가 진행됩니다.
+
+    **참고**: 재부팅 후, 업데이트가 완료되면 복사된 파일(**dxl.rts**)은 자동으로 삭제됩니다. 
+    {: .notice}
+
 
 ## [Raspberry Pi and Recovery](#raspberry-pi-update-and-recovery)
 
