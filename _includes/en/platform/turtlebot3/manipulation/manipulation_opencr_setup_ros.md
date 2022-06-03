@@ -73,9 +73,8 @@ https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCR/master/arduino/opencr_relea
   ```  
   ![](/assets/images/platform/turtlebot3/preparation/ide1.png)
 
-6. Open the TurtleBot3 firmware. Depending on your platform, please select the correct firmware.
-  - Burger : ***File > Examples > turtlebot3 > turtlebot3_burger > turtlebot3_core***
-  - Waffle/Waffle Pi : ***File > Examples > turtlebot3 > turtlebot3_waffle > turtlebot3_core***
+6. Open the TurtleBot3 with OpenMANIPULATOR firmware.
+  - TurtleBot3 with OpenMANIPULATOR : ***File > Examples > turtlebot3 > turtlebot3_with_open_manipulator > turtlebot3_with_open_manipulator_core***
 
 7. Connect OpenCR to the PC and Select ***OpenCR > OpenCR Board*** from ***Tools > Board*** menu.
 
