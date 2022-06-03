@@ -14,9 +14,8 @@ sidebar:
 
 # [Overview](#overview)
 
-![](/assets/images/parts/controller/openrb-150/OpenRB-150_modeling_quarterview.png)
-
-> OpenRB-150
+![](/assets/images/parts/controller/openrb-150/openrb_fonts.png){: width="300px"}  
+![](/assets/images/parts/controller/openrb-150/openrb_overview_01.png){: width="300px"}
 
 The OpenRB-150 is a new open source Arduino compatible Microcontroller.
 
@@ -34,7 +33,7 @@ The OpenRB-150 also features 4 dedicated DYNAMIXEL ports, and supports the DYNAM
 | MICROCONTROLLER                 | SAMD21 Cortex-M0+ 32bit low power ARM® MCU                  |
 | BOARD POWER SUPPLY              | (USB 3.0) 5 V<br />(VIN -or Terminal) 3.7 ~ 12.6 V          |
 | SUPPORTED BATTERY               | Li-Po 1 - 3 cell (3.7 - 11.1 V)<br />XT60 connector ready   |
-| DC CURRENT FOR 3.3V PIN         | 300 mA                                                    |
+| DC CURRENT FOR 3.3V PIN         | 300 mA                                                      |
 | DC CURRENT FOR 5V PIN           | 300 mA                                                      |
 | CIRCUIT OPERATING VOLTAGE       | 3.3 V                                                       |
 | DIGITAL I/O PINS                | 24                                                          |
@@ -318,8 +317,8 @@ If error occurs during the Upload process, please try uploading the sketch in th
 
 # [Downloads](#downloads)
 
-- [OpenRB-150 Schematic (PDF)]
-- [OpenRB-150 3D Modeling (STEP)]
+- OpenRB-150 Schematic (PDF): Download will be available soon. 
+- OpenRB-150 3D Modeling (STEP): Download link will be available soon. 
 - OpenRB-150 Board Manager ([GitHub Repo](https://github.com/ROBOTIS-GIT/OpenRB-150), [Zip])
 - DYNAMIXEL2Arduino Library ([GitHub Repo](https://github.com/ROBOTIS-GIT/Dynamixel2Arduino), [Zip])
 
