@@ -26253,9 +26253,9 @@ openrb-150:
       url: /parts/controller/openrb-150/#connection-examples
       urlkr: /parts/controller/openrb-150/#연결-예시
   - title: "Development Environment"
-    titlekr: "개발 환경 설정"
+    titlekr: "개발 환경"
     url: /parts/controller/openrb-150/#development-environment
-    urlkr: /parts/controller/openrb-150/#개발-환경-설정
+    urlkr: /parts/controller/openrb-150/#개발-환경
     children:
     - title: "DYNAMIXEL Wizard 2.0"
       titlekr: "다이나믹셀 위자드 2.0"
