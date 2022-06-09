@@ -23,7 +23,7 @@
 
 {% else %}
 
-Torque Enable(64) determines Torque ON/OFF. Writing ‘1’ to Toque Enable's address will turn on the Torque and all Data in the EEPROM area will be locked.
+Torque Enable(64) determines Torque ON/OFF. Writing ‘1’ to Torque Enable's address will turn on the Torque and all Data in the EEPROM area will be locked.
 
 |   Value    | Description                    |
 |:----------:|:-------------------------------|
