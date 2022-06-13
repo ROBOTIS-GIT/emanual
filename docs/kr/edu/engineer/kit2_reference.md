@@ -24,23 +24,23 @@ ROBOTIS ENGINEER KIT2에서는 Raspberry Pi Camera와 앱을 동일한 와이파
 한 후 촬영한 영상을 스트리밍 기능을 통해 바로 확인할 수 있습니다.
 
 1. 제어기의 전원을 켜고, Raspberry Pi가 부팅될 때까지 기다립니다.
-  
+
     **참고**: 약 70초 정도가 지나 부팅이 되면 사용자 LED가 노란색으로 켜지고 소리가 납니다.
     {: .notice}
 
     ![](/assets/images/edu/engineer/kit2/pi_booting.png)
 
 2. 앱이 설치된 기기에서 와이파이 설정을 선택합니다.
-  
+
 3. 네크워크 목록에서 `Robotis_Rpi_XXXX`를 찾아 선택합니다.
 
     ![](/assets/images/edu/engineer/kit2/kit2_wifi_01_kr.png)
-        
+
     **참고**: XXXX는 제어기 MAC 주소 4자리 입니다.
     {: .notice}
 
-4. 비밀번호 입력창이 나타나면 `robotis0` 을 입력한 후 연결합니다. 
-   
+4. 비밀번호 입력창이 나타나면 `robotis0` 을 입력한 후 연결합니다.
+
    ![](/assets/images/edu/engineer/kit2/kit2_wifi_02_kr.png)
 
 5. ENGINEER 앱을 실행한 후 우측 상단의 블루투스 아이콘을 눌러 제어기와 연결합니다. 제어기가 연결되면, 아이콘이 초록색으로 바뀝니다.
@@ -51,7 +51,7 @@ ROBOTIS ENGINEER KIT2에서는 Raspberry Pi Camera와 앱을 동일한 와이파
 
     ![](/assets/images/edu/engineer/kit2/kit2_streaming_select_example.png)
     > 예제 선택
-        
+
     ![](/assets/images/edu/engineer/kit2/kit2_streaming_select_example_02.png)
     > 스트리밍 화면
 
@@ -59,7 +59,7 @@ ROBOTIS ENGINEER KIT2에서는 Raspberry Pi Camera와 앱을 동일한 와이파
 
 ### [Raspberry Pi 업데이트 하기](#raspberry-pi-업데이트-하기)
 
-Raspberry Pi Zero 2 W를 업데이트 하여, 엔지니어 키트 2의 새로운 기능을 사용할 수 있습니다. 
+Raspberry Pi Zero 2 W를 업데이트 하여, 엔지니어 키트 2의 새로운 기능을 사용할 수 있습니다.
 
 {% capture zero_w_update_warn %}
 **주의**
@@ -73,58 +73,65 @@ Raspberry Pi Zero 2 W를 업데이트 하여, 엔지니어 키트 2의 새로운
 
 <div class="notice--warning">{{ zero_w_update_warn | markdownify }}</div>
 
-1. 엔지니어 키트 2에서 사용되는 Raspberry Pi Zero 2 W 업데이트를 위해, PC에서 **dxl.rts** 파일을 다운로드하세요. 
+1. 엔지니어 키트 2에서 사용되는 Raspberry Pi Zero 2 W 업데이트를 위해, PC에서 **dxl.rts** 파일을 다운로드하세요.
    - **[dxl.rts 다운로드 하기](https://www.robotis.com/service/download.php?no=2115)**
 
 2. 제어기(CM-550)의 전원을 켜고, Raspberry Pi Zero 2 W가 부팅될 때까지 기다립니다.
-  
+
     ![](/assets/images/edu/engineer/kit2/pi_booting.png)
-    
+
     **참고**: 약 70초 정도가 지나 부팅이 되면 사용자 LED가 노란색으로 켜지고 소리가 납니다.
     {: .notice}
 
 2. Raspberry Pi Zero 2 W가 부팅 되면, PC의 와이파이 검색창에서 `Robotis_Rpi_XXXX` (XXXX는 제어기 MAC 주소 4자리) 또는 `Robotis_Rpi` 이름의 AP에 연결하세요.
-  
+
     ![](/assets/images/edu/engineer/kit2/rpi_wifi_scan_02.png)
-    
-    **참고**: 연결 시, 접근을 위해 계정과 비밀번호를 입력을 요청할 수 있습니다. 아래 `계정`과 `패스워드`를 입력하세요.  
+
+    **참고**: 접근을 위해 계정과 비밀번호를 입력을 요청할 수 있습니다. 아래 `계정`과 `패스워드`를 입력하세요.  
     `계정`: pi  
     `패스워드`: Robotis0
     {: .notice}
 
-3. PC의 윈도우 탐색 창을 여세요. (Window10 단축키: `Win` + `E`) 
+3. PC의 윈도우 탐색 창을 여세요. (Window10 단축키: `Win` + `E`)
 
-    ![](/assets/images/edu/engineer/kit2/sbc_update/file_explore_01.png){: width="650px"}
+    ![](/assets/images/edu/engineer/kit2/sbc_update/file_explore_01_kr.png){: width="650px"}
 
-4. PC의 윈도우 탐색기 주소창에 **\\raspberrypi.local** 를 입력하면,`robotis` 폴더가 나타납니다.
+4. PC의 윈도우 탐색기 주소창에 **\\\raspberrypi.local** 를 입력하면,`robotis` 폴더가 나타납니다.
 
-    ![](/assets/images/edu/engineer/kit2/sbc_update/file_explore_02.png){: width="650px"}
+    ![](/assets/images/edu/engineer/kit2/sbc_update/file_explore_kr_02.png){: width="650px"}
 
 5. 다운로드한 **dxl.rts** 파일을 `robotis` 폴더에 복사하세요.
 
-    ![](/assets/images/edu/engineer/kit2/sbc_update/copy_rts.png){: width="650px"}
-    
-    ![](/assets/images/edu/engineer/kit2/sbc_update/copy_rts_02.png){: width="650px"}
-    
+    ![](/assets/images/edu/engineer/kit2/sbc_update/copy_rts_kr.png){: width="650px"}
+
+    ![](/assets/images/edu/engineer/kit2/sbc_update/copy_rts_02_kr.png){: width="650px"}
+
+    **참고**: 접근을 위해 계정과 비밀번호를 입력을 요청할 수 있습니다. 아래 `계정`과 `패스워드`를 입력하세요.  
+    `계정`: pi  
+    `패스워드`: Robotis0  
+    ![](/assets/images/edu/engineer/kit2/sbc_update/eng_sbc_updaye_password_request.png){: width="250px"}
+    {: .notice}
+
 6. 제어기(CM-550)를 껐다 켜면 Raspberry Pi Zero 2 W가 재부팅되면서, 업데이트가 진행됩니다.
 
-    **참고**: 업데이트가 완료되면 복사된 파일(**dxl.rts**)은 자동으로 삭제됩니다. 
+    **참고**: 업데이트가 완료되면 복사된 파일(**dxl.rts**)은 자동으로 삭제됩니다.
     {: .notice}
 
 ### [Raspberry Pi 복구 하기](#raspberry-pi-복구-하기)
 
 만약 Raspberry Pi가 부팅시 문제가 있다면 키트전용 라즈비안을 다시 설치하여 해결할수 있습니다.
 
-1. 압축된 키트전용 라즈비안 이미지 압축 파일을 다운로드 받으세요. 
+1. 사용하는 Raspberry Pi Zero (W 또는 2W) 버전과 일치하는, 키트전용 라즈비안 이미지 압축 파일을 다운로드 받으세요.
    - Raspberry Pi Zero W: [Release.zip](https://www.robotis.com/service/download.php?no=1923)
    - Raspberry Pi Zero 2W: [링크 업데이트 필요]
-   
-   **참고**: 제공된 Raspberry Pi 보드에 따라, 복구하는 이미지가 다릅니다. 
+
+   **참고**: 사용 중인 라즈베리파이 버전은, 보드의 뒷면에서 확인하세요.
+   ![](/assets/images/edu/engineer/kit2/sbc_update/rpizero2w_back_side.png)
    {: .notice}
-   
+
 2. 파일압축을 해제하세요. 압축해제시 **rpi_eng_image_ver_1.img**이 선택한 폴더에 생성됩니다.
 
-3. 압축해제한 이미지 파일을 [Win32 Disk Imager](https://sourceforge.net/projects/win32diskimager/)와 같은 Imager 프로그램을 사용하여 저장매체에 넣어줘야 합니다. 본 매뉴얼에서는 Win32 Disk Imager를 사용합니다. 
+3. 압축해제한 이미지 파일을 [Win32 Disk Imager](https://sourceforge.net/projects/win32diskimager/)와 같은 Imager 프로그램을 사용하여 저장매체에 넣어줘야 합니다. 본 매뉴얼에서는 Win32 Disk Imager를 사용합니다.
 
 4. 설치한 Imager를 실행하세요.
 
@@ -137,7 +144,7 @@ Raspberry Pi Zero 2 W를 업데이트 하여, 엔지니어 키트 2의 새로운
     ![](/assets/images/edu/engineer/kit2/select_rpi_image_extracted_02.png)
 
 6. 선택한 이미지를 저장할 저장매체를 선택하세요.
-    
+
     ![](/assets/images/edu/engineer/kit2/select_sdcard_drive.png)
 
 7. **Write**를 클릭하고, 키트 전용 라즈비안이 저장매체에 Writing이 완료될때까지 기다립니다.
@@ -147,23 +154,23 @@ Raspberry Pi Zero 2 W를 업데이트 하여, 엔지니어 키트 2의 새로운
 9. 분리한 SD 카드를 CM-550에 결합된 Raspberry Pi 슬롯에 삽입합니다.
 
 10. CM-550의 전원을 켜고 부팅이 완료될때까지 기다립니다. 처음 SD 카드 삽입시 자동으로 부팅이 여러번 이루어지며, 완료시 마다 사용자 버튼이 노란색으로 켜지면서 "삐" 소리가 납니다.
-  
-    **참고**: 부팅시 약 3분정도 소요됩니다. 
+
+    **참고**: 부팅시 약 3분정도 소요됩니다.
     {: .notice}
 
 11. 부팅 후, 스마트기기로 네트워크 목록 검색시, CM-550의 맥 주소와 동일한 이름이 검색 되면 업데이트가 성공적으로 완료된 것입니다.
 
     **참고**: 맥 주소는 CM-550의 전원 버튼 옆에 표시되어 있습니다.
-    {: .notice} 
+    {: .notice}
 
     ![](/assets/images/edu/engineer/kit2/rpi_wifi_scan_01.png)  
-      > 부팅 완료 전 와이파이 검색 결과 
-    
+      > 부팅 완료 전 와이파이 검색 결과
+
     ![](/assets/images/edu/engineer/kit2/rpi_wifi_scan_02.png)  
       > 부팅 완료 후 와이파이 검색 결과
 
-12. 검색된 네트워크를 클릭하고, 비밀번호 입력창이 나타나면 `robotis0`를 입력 후 기기와 연결 해주세요. 
-      
+12. 검색된 네트워크를 클릭하고, 비밀번호 입력창이 나타나면 `robotis0`를 입력 후 기기와 연결 해주세요.
+
 ## [제어기 BLE 신호 세기 설정](#제어기-ble-신호-세기-설정)
 
 CM-550에 내장된 BLE 슬레이브 모듈의 신호의 세기가 약하거나 간섭이 발생할 경우 통신이 불안정할 수 있습니다.  
@@ -311,9 +318,9 @@ STEAMCUP ENGINEER에 사용된 다이나믹셀의 자세나 위치 값의 보정
 
 ## [제어기 및 다이나믹셀 초기화 방법](#제어기-및-다이나믹셀-초기화-방법)
 
-예제 코드에는 컨트롤러와 다이나믹셀을 각 예제 로봇에 맞게 자동으로 설정하도록 되어 있습니다. 자신만의 로봇을 만들 경우 설정이 해당로봇과 달라 정상 작동하지 않을 수 있습니다. 
+예제 코드에는 컨트롤러와 다이나믹셀을 각 예제 로봇에 맞게 자동으로 설정하도록 되어 있습니다. 자신만의 로봇을 만들 경우 설정이 해당로봇과 달라 정상 작동하지 않을 수 있습니다.
 
-- [예제 다운로드 하기](/docs/kr/edu/engineer/kit2_quickstart/#예제-다운로드-하기)에서, 예제를 다운로드 받으세요. [PC에서 예제 다운로드 받기](/docs/kr/edu/engineer/kit2_quickstart/#pc에서-예제-다운로드-받기)로 간편하게 다운로드 받을수 있습니다. 
+- [예제 다운로드 하기](/docs/kr/edu/engineer/kit2_quickstart/#예제-다운로드-하기)에서, 예제를 다운로드 받으세요. [PC에서 예제 다운로드 받기](/docs/kr/edu/engineer/kit2_quickstart/#pc에서-예제-다운로드-받기)로 간편하게 다운로드 받을수 있습니다.
 
 ## [배터리 충전하기](#배터리-충전하기)
 
