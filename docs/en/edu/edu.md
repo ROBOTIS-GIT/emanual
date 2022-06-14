@@ -56,6 +56,6 @@ sidebar:
 |:--------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------:|
 | [![](/assets/images/edu/engineer/kit1/enginner_main.png)](/docs/en/edu/engineer/kit1/) | [![](/assets/images/edu/engineer/kit2/kit2_main.png)](/docs/en/edu/engineer/kit2_introduction/) |
 
-<!-- # [ROBOTIS MINI](#robotis-mini)
+# [ROBOTIS MINI](#robotis-mini)
 
-[![](/assets/images/edu/mini/mini.jpg)](/docs/en/edu/mini/) -->
+[![](/assets/images/edu/mini/mini.jpg)](/docs/en/edu/mini/)

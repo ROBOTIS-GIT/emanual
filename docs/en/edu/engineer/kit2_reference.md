@@ -32,7 +32,7 @@ page_number: 4
 
     ![](/assets/images/edu/engineer/kit2/kit2_wifi_01.png)
 
-    **NOTE**: XXXX is 4 digit MAC address of the controller.
+    **NOTE**: XXXX is 4 digit MAC address of your controller.
     {: .notice}
 
 4. Enter `robotis0` to connect, when password input window appears.
@@ -68,7 +68,7 @@ Update your Raspberry Pi Zero 2 W to add new features for Engineer Kit2.
 
 <div class="notice--warning">{{ zero_w_update_warn | markdownify }}</div>
 
-1. Download **dxl.rts** at your PC.
+1. Download `dxl.rts` at your PC.
   - `Download`: **[dxl.rts](https://www.robotis.com/service/download.php?no=2115)**
 
 2. Turn on the controller and wait for the Raspberry Pi Zero 2 W to boot up.
@@ -78,13 +78,13 @@ Update your Raspberry Pi Zero 2 W to add new features for Engineer Kit2.
 
     ![](/assets/images/edu/engineer/kit2/pi_booting.png)
 
-3.  After bootup, search your WIFI and connect to `Robotis_Rpi_XXXX` (XXXX is 4 digit MAC address of the controller) or `Robotis_Rpi` AP.
+3.  After bootup, search your WIFI and connect to `Robotis_Rpi_XXXX` (XXXX is 4 digit MAC address of your controller) or `Robotis_Rpi` AP.
 
     ![](/assets/images/edu/engineer/kit2/rpi_wifi_scan_02.png)
 
     **NOTE**: If Password is requested, type the followings:  
     `Account`: pi  
-    `Password`: Robotis0  
+    `Password`: robotis0  
     ![](/assets/images/edu/engineer/kit2/sbc_update/eng_sbc_updaye_password_request.png){: width="250px"}
     {: .notice}
 
@@ -96,16 +96,21 @@ Update your Raspberry Pi Zero 2 W to add new features for Engineer Kit2.
 
     ![img Update Needed](/assets/images/edu/engineer/kit2/sbc_update/file_explore_02.png){: width="650px"}
 
-5. Move the downloaded **dxl.rts** file to the `robotis` folder.
+5. Access to the `robotis` folder, and drop the downloaded `dxl.rts` file to the folder.
 
     ![](/assets/images/edu/engineer/kit2/sbc_update/copy_rts.png){: width="650px"}
 
     ![](/assets/images/edu/engineer/kit2/sbc_update/copy_rts_02.png){: width="650px"}
 
-6. Update will begin after rebooting the Raspberry Pi Zero 2 W.
+    **NOTE**: If Password is requested, type the followings:  
+    `Account`: pi  
+    `Password`: robotis0  
+    {: .notice}
 
-  **NOTE**: Once the update is complete, copied **dxl.rts** file will be automatically deleted.
-  {: .notice}
+6. Update will begin after rebooting the Raspberry Pi Zero 2 W. Reboot can be done by simply turning on and off the board.
+
+    **NOTE**: Once the update is complete, copied `dxl.rts` file will be automatically deleted.
+    {: .notice}
 
 ## [Raspberry Pi and Recovery](#raspberry-pi-update-and-recovery)
 
@@ -113,15 +118,15 @@ If Raspberry Pi won't boot or isn't functioning properly, see the following inst
 
 1. Download Compressed Raspbian Image for ENGINEER Kit2 according to the version of your Raspberry Pi Zero (Either Zero W or Zero 2W)
   - Raspberry Pi Zero W: [Release.zip](https://www.robotis.com/service/download.php?no=1923)
-  - Raspberry Pi Zero 2W: [Download Link will be added]
+  - Raspberry Pi Zero 2W: [rpi_zero_w_image_v2_0.zip](https://www.robotis.com/service/download.php?no=2116)
 
   **NOTE**: See the version of Raspberry Pi at the rear of your board.  
   ![](/assets/images/edu/engineer/kit2/sbc_update/rpizero2w_back_side.png)
   {: .notice}
 
-2. Unzip the file. **rpi_eng_image_ver_1.img** file will be generated in a location where you extract.
+2. Unpack the downloaded zip file. zipped **.img** file will be extracted at your current path. 
 
-3. Install a image writer, such as [Win32 Disk Imager](https://sourceforge.net/projects/win32diskimager/), to write the file to a SD card before installing **rpi_eng_image_ver_1.img** on a Raspberry Pi board.
+3. After unpacking the file, you are required to write **.img** to a SD card that is inserted to the Raspberry Pi using a image writer, such as [Win32 Disk Imager](https://sourceforge.net/projects/win32diskimager/).
 
 4. Run the image writer from your PC. (In this instruction, Win32 Disk Imager is used.)
 

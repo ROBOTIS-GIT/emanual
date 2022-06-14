@@ -73,7 +73,7 @@ Raspberry Pi Zero 2 W를 업데이트 하여, 엔지니어 키트 2의 새로운
 
 <div class="notice--warning">{{ zero_w_update_warn | markdownify }}</div>
 
-1. 엔지니어 키트 2에서 사용되는 Raspberry Pi Zero 2 W 업데이트를 위해, PC에서 **dxl.rts** 파일을 다운로드하세요.
+1. 엔지니어 키트 2에서 사용되는 Raspberry Pi Zero 2 W 업데이트를 위해, PC에서 `dxl.rts` 파일을 다운로드하세요.
    - **[dxl.rts 다운로드 하기](https://www.robotis.com/service/download.php?no=2115)**
 
 2. 제어기(CM-550)의 전원을 켜고, Raspberry Pi Zero 2 W가 부팅될 때까지 기다립니다.
@@ -89,7 +89,8 @@ Raspberry Pi Zero 2 W를 업데이트 하여, 엔지니어 키트 2의 새로운
 
     **참고**: 접근을 위해 계정과 비밀번호를 입력을 요청할 수 있습니다. 아래 `계정`과 `패스워드`를 입력하세요.  
     `계정`: pi  
-    `패스워드`: Robotis0
+    `패스워드`: robotis0  
+    ![](/assets/images/edu/engineer/kit2/sbc_update/eng_sbc_updaye_password_request.png){: width="250px"}
     {: .notice}
 
 3. PC의 윈도우 탐색 창을 여세요. (Window10 단축키: `Win` + `E`)
@@ -98,9 +99,9 @@ Raspberry Pi Zero 2 W를 업데이트 하여, 엔지니어 키트 2의 새로운
 
 4. PC의 윈도우 탐색기 주소창에 **\\\raspberrypi.local** 를 입력하면,`robotis` 폴더가 나타납니다.
 
-    ![](/assets/images/edu/engineer/kit2/sbc_update/file_explore_kr_02.png){: width="650px"}
+    ![](/assets/images/edu/engineer/kit2/sbc_update/file_explore_02_kr.png){: width="650px"}
 
-5. 다운로드한 **dxl.rts** 파일을 `robotis` 폴더에 복사하세요.
+5. 폴더로 접근 후, 다운로드한 `dxl.rts` 파일을 `robotis` 폴더에 복사하세요.
 
     ![](/assets/images/edu/engineer/kit2/sbc_update/copy_rts_kr.png){: width="650px"}
 
@@ -108,13 +109,12 @@ Raspberry Pi Zero 2 W를 업데이트 하여, 엔지니어 키트 2의 새로운
 
     **참고**: 접근을 위해 계정과 비밀번호를 입력을 요청할 수 있습니다. 아래 `계정`과 `패스워드`를 입력하세요.  
     `계정`: pi  
-    `패스워드`: Robotis0  
-    ![](/assets/images/edu/engineer/kit2/sbc_update/eng_sbc_updaye_password_request.png){: width="250px"}
+    `패스워드`: robotis0  
     {: .notice}
 
-6. 제어기(CM-550)를 껐다 켜면 Raspberry Pi Zero 2 W가 재부팅되면서, 업데이트가 진행됩니다.
+6. Raspberry Pi Zero 2 W를 재부팅하면 (전원 끄고 켜기) 업데이트가 진행됩니다. 
 
-    **참고**: 업데이트가 완료되면 복사된 파일(**dxl.rts**)은 자동으로 삭제됩니다.
+    **참고**: 업데이트가 완료되면 복사된 파일(`dxl.rts`)은 자동으로 삭제됩니다.
     {: .notice}
 
 ### [Raspberry Pi 복구 하기](#raspberry-pi-복구-하기)
@@ -123,21 +123,21 @@ Raspberry Pi Zero 2 W를 업데이트 하여, 엔지니어 키트 2의 새로운
 
 1. 사용하는 Raspberry Pi Zero (W 또는 2W) 버전과 일치하는, 키트전용 라즈비안 이미지 압축 파일을 다운로드 받으세요.
    - Raspberry Pi Zero W: [Release.zip](https://www.robotis.com/service/download.php?no=1923)
-   - Raspberry Pi Zero 2W: [링크 업데이트 필요]
+   - Raspberry Pi Zero 2W: [rpi_zero_w_image_v2_0.zip](https://www.robotis.com/service/download.php?no=2116)
 
-   **참고**: 사용 중인 라즈베리파이 버전은, 보드의 뒷면에서 확인하세요.
+   **참고**: 사용 중인 라즈베리파이 버전은, 보드의 뒷면에서 확인하세요.  
    ![](/assets/images/edu/engineer/kit2/sbc_update/rpizero2w_back_side.png)
    {: .notice}
 
-2. 파일압축을 해제하세요. 압축해제시 **rpi_eng_image_ver_1.img**이 선택한 폴더에 생성됩니다.
+2. 파일압축을 해제하세요. 압축해제시 **.img** 파일이 선택한 폴더에 생성됩니다.
 
-3. 압축해제한 이미지 파일을 [Win32 Disk Imager](https://sourceforge.net/projects/win32diskimager/)와 같은 Imager 프로그램을 사용하여 저장매체에 넣어줘야 합니다. 본 매뉴얼에서는 Win32 Disk Imager를 사용합니다.
+3. 압축해제한 이미지 파일을 [Win32DiskImager](https://sourceforge.net/projects/win32diskimager/)와 같은 Imager 프로그램을 사용하여 저장매체에 넣어줘야 합니다. 본 매뉴얼에서는 Win32DiskImager를 사용합니다.
 
 4. 설치한 Imager를 실행하세요.
 
     ![](/assets/images/edu/engineer/kit2/run_win32diskimager.png)
 
-5. 2번 에서 압축해제한 **rpi_eng_image_ver_1.img**를 선택하세요.
+5. 2번 에서 압축해제한 **.img** 파일를 선택하세요.
 
     ![](/assets/images/edu/engineer/kit2/select_rpi_image_extracted_01.png)
 
@@ -147,7 +147,7 @@ Raspberry Pi Zero 2 W를 업데이트 하여, 엔지니어 키트 2의 새로운
 
     ![](/assets/images/edu/engineer/kit2/select_sdcard_drive.png)
 
-7. **Write**를 클릭하고, 키트 전용 라즈비안이 저장매체에 Writing이 완료될때까지 기다립니다.
+7. _**Write**_를 클릭하고, 키트 전용 라즈비안이 저장매체에 Writing이 완료될때까지 기다립니다.
 
 8. Write가 완료되면 win32diskimager를 종료하고, SD카드를 컴퓨터에서 분리 합니다.
 
