@@ -53,7 +53,7 @@ page_number: 4
 
 ## [Raspberry Pi Update and Recovery](#raspberry-pi-update-and-recovery)
 
-## [Raspberry Pi Update](#raspberry-pi-update-and-recovery)
+### [Raspberry Pi Update](#raspberry-pi-update)
 
 Update your Raspberry Pi Zero 2 W to add new features for Engineer Kit2.
 
@@ -112,7 +112,7 @@ Update your Raspberry Pi Zero 2 W to add new features for Engineer Kit2.
     **NOTE**: Once the update is complete, copied `dxl.rts` file will be automatically deleted.
     {: .notice}
 
-## [Raspberry Pi and Recovery](#raspberry-pi-update-and-recovery)
+### [Raspberry Pi Recovery](#raspberry-pi-recovery)
 
 If Raspberry Pi won't boot or isn't functioning properly, see the following instructions.
 
