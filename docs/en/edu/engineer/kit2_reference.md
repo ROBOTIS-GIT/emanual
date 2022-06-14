@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: kit2
+ref: kit2_reference
 read_time: true
 share: true
 author_profile: false
@@ -20,19 +20,19 @@ page_number: 4
 ## [Setting Video Streaming on ROBOTIS ENGINEER App](#setting-video-streaming-on-robotis-engineer-app)
 
 1. Turn on the controller and wait for the Raspberry Pi to boot up.
-  
+
     **NOTE**: After about 70 seconds, the User LED will turn yellow with a beep sound.
     {: .notice}
-    
+
     ![](/assets/images/edu/engineer/kit2/pi_booting.png)
 
 2. Select Wi-Fi settings on the device where the app is installed..
 
-3. Select Robotis_Rpi_XXXX in the network list. 
+3. Select Robotis_Rpi_XXXX in the network list.
 
     ![](/assets/images/edu/engineer/kit2/kit2_wifi_01.png)
-        
-    **NOTE**: XXXX is 4 digit MAC address of the controller.
+
+    **NOTE**: XXXX is 4 digit MAC address of your controller.
     {: .notice}
 
 4. Enter `robotis0` to connect, when password input window appears.
@@ -46,8 +46,8 @@ page_number: 4
 6. If running the streaming service by selecting MAX-E2 or Commando, witch has the streaming function, one can control the robot by using the streaming function as shown below.
 
     ![](/assets/images/edu/engineer/kit2/kit2_streaming_select_example.png)
-    > Selecting MAX-E2 or Commando. 
-      
+    > Selecting MAX-E2 or Commando.
+
     ![](/assets/images/edu/engineer/kit2/kit2_streaming_select_example_02.png)
     > Video Streaming with the app.  
 
@@ -55,17 +55,78 @@ page_number: 4
 
 ## [Raspberry Pi Update](#raspberry-pi-update-and-recovery)
 
-You can update Raspberry Pi remotely when it needs. This feature will be available in the near future. 
+Update your Raspberry Pi Zero 2 W to add new features for Engineer Kit2.
+
+{% capture zero_w_update_warn %}
+**WARNING**
+- If you are using Raspberry Pi Zero W, do not follow Raspberry Pi Update instruction, but follow [Raspberry Pi Recovery] instruction.
+- Check the name of board on the back side of your Raspberry Pi Zero board.
+
+  ![](/assets/images/edu/engineer/kit2/sbc_update/rpizero2w_back_side.png)
+
+{% endcapture %}
+
+<div class="notice--warning">{{ zero_w_update_warn | markdownify }}</div>
+
+1. Download `dxl.rts` at your PC.
+  - `Download`: **[dxl.rts](https://www.robotis.com/service/download.php?no=2115)**
+
+2. Turn on the controller and wait for the Raspberry Pi Zero 2 W to boot up.
+
+    **NOTE**: After about 70 seconds, the User LED will turn yellow with a beep sound.
+    {: .notice}
+
+    ![](/assets/images/edu/engineer/kit2/pi_booting.png)
+
+3.  After bootup, search your WIFI and connect to `Robotis_Rpi_XXXX` (XXXX is 4 digit MAC address of your controller) or `Robotis_Rpi` AP.
+
+    ![](/assets/images/edu/engineer/kit2/rpi_wifi_scan_02.png)
+
+    **NOTE**: If Password is requested, type the followings:  
+    `Account`: pi  
+    `Password`: robotis0  
+    ![](/assets/images/edu/engineer/kit2/sbc_update/eng_sbc_updaye_password_request.png){: width="250px"}
+    {: .notice}
+
+3. Open the File Explore (Windows 10 Short Key: `Win` + `E`) from your PC.
+
+    ![img Update Needed](/assets/images/edu/engineer/kit2/sbc_update/file_explore_01.png){: width="650px"}
+
+4. Type **\\\raspberrypi.local**, and `robotis` folder appears.
+
+    ![img Update Needed](/assets/images/edu/engineer/kit2/sbc_update/file_explore_02.png){: width="650px"}
+
+5. Access to the `robotis` folder, and drop the downloaded `dxl.rts` file to the folder.
+
+    ![](/assets/images/edu/engineer/kit2/sbc_update/copy_rts.png){: width="650px"}
+
+    ![](/assets/images/edu/engineer/kit2/sbc_update/copy_rts_02.png){: width="650px"}
+
+    **NOTE**: If Password is requested, type the followings:  
+    `Account`: pi  
+    `Password`: robotis0  
+    {: .notice}
+
+6. Update will begin after rebooting the Raspberry Pi Zero 2 W. Reboot can be done by simply turning on and off the board.
+
+    **NOTE**: Once the update is complete, copied `dxl.rts` file will be automatically deleted.
+    {: .notice}
 
 ## [Raspberry Pi and Recovery](#raspberry-pi-update-and-recovery)
 
 If Raspberry Pi won't boot or isn't functioning properly, see the following instructions.
 
-1. Download [Release.zip](https://www.robotis.com/service/download.php?no=1923) (Kit-Only Raspbian Image file **rpi_eng_image_ver_1.img** included).
+1. Download Compressed Raspbian Image for ENGINEER Kit2 according to the version of your Raspberry Pi Zero (Either Zero W or Zero 2W)
+  - Raspberry Pi Zero W: [Release.zip](https://www.robotis.com/service/download.php?no=1923)
+  - Raspberry Pi Zero 2W: [rpi_zero_w_image_v2_0.zip](https://www.robotis.com/service/download.php?no=2116)
 
-2. Unzip the file. **rpi_eng_image_ver_1.img** file will be generated in a location where you extract.
+  **NOTE**: See the version of Raspberry Pi at the rear of your board.  
+  ![](/assets/images/edu/engineer/kit2/sbc_update/rpizero2w_back_side.png)
+  {: .notice}
 
-3. Install a image writer, such as [Win32 Disk Imager](https://sourceforge.net/projects/win32diskimager/), to write the file to a SD card before installing **rpi_eng_image_ver_1.img** on a Raspberry Pi board. 
+2. Unpack the downloaded zip file. zipped **.img** file will be extracted at your current path. 
+
+3. After unpacking the file, you are required to write **.img** to a SD card that is inserted to the Raspberry Pi using a image writer, such as [Win32 Disk Imager](https://sourceforge.net/projects/win32diskimager/).
 
 4. Run the image writer from your PC. (In this instruction, Win32 Disk Imager is used.)
 
@@ -77,7 +138,7 @@ If Raspberry Pi won't boot or isn't functioning properly, see the following inst
 
     ![](/assets/images/edu/engineer/kit2/select_rpi_image_extracted_02.png)
 
-6. Select the device where the SD card is occupied. 
+6. Select the device where the SD card is occupied.
 
     ![](/assets/images/edu/engineer/kit2/select_sdcard_drive.png)
 
@@ -89,22 +150,22 @@ If Raspberry Pi won't boot or isn't functioning properly, see the following inst
 
 9. Insert the SD card to a SD card slot of the Raspberry Pi Zero that on CM-550.
 
-11. Wait for the Raspberry Pi booting up. The booting will proceed around 3 times with a beep sound every booting. 
-  
+11. Wait for the Raspberry Pi booting up. The booting will proceed around 3 times with a beep sound every booting.
+
   **NOTE**: The booting takes about 3 minutes.
   {: .notice}
 
-11. In order to check if the booting is successfully completed, scan the wifi address with your phone. From the network list, you will see the item Robotis_Rpi_xxxx (CM-550's Mac address). 
-    
-    **NOTE**: Mac address is marked on the CM-550 next to the power button. 
+11. In order to check if the booting is successfully completed, scan the wifi address with your phone. From the network list, you will see the item Robotis_Rpi_xxxx (CM-550's Mac address).
+
+    **NOTE**: Mac address is marked on the CM-550 next to the power button.
     {: .notice}
-    
+
     ![](/assets/images/edu/engineer/kit2/rpi_wifi_scan_01.png)  
       > Wifi scan result before the Raspbian complete update.  
 
     ![](/assets/images/edu/engineer/kit2/rpi_wifi_scan_02.png)  
       > Wifi scan result after the Raspbian complete update.
-    
+
 12. Enter `robotis0` to connect, when password input window appears.
 
 ## [BLE Signal Setting](#ble-signal-setting)
@@ -219,7 +280,7 @@ Select `OK` once again to save the offset value to robot.
 
 ## [Controller and DYNAMIXEL Reset](#controller-and-dynamixel-reset)
 
-To reset, redownload the programming code to the controller, which will set the configuration of the robot to the factory status. Note that, if you make your own custom robot, the set configuration might differ depending on your application. 
+To reset, redownload the programming code to the controller, which will set the configuration of the robot to the factory status. Note that, if you make your own custom robot, the set configuration might differ depending on your application.
 - To donwload robot examples, see [Download Examples](/docs/en/edu/engineer/kit2_quickstart/#download-examples) and select the preferable option ([Download from PC](/docs/en/edu/engineer/kit2_quickstart/#download-from-pc) using R+Task 3.0 recommended).
 
 ## [Self Checklist](#self-checklist)
