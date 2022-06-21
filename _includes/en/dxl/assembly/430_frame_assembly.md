@@ -3,7 +3,7 @@
 
 To protect your assembled frame, use the spacer rings which fills the gap between assembled frame and DYNAMIXEL case.
 
-![HowTo_SpacerRing](/assets/images/dxl/x/assembly_common/howto_spacering.png)
+![HowTo_SpacerRing](/assets/images/dxl/x/frame/common/howto_spacering.png)
 
 ### [Precaution of Frame and Horn Assembly](#precaution-of-frame-and-horn-assembly)
 
@@ -11,7 +11,7 @@ Be sure to use screws in proper length by considering the depth of the thickness
 If the length of screw is longer than the depth of them, it may cause a damage to the DYNAMIXEL during work. 
 {: .notice--warning}
 
-![Warn_HornAssembly](/assets/images/dxl/x/x430/warning_horn_assembly_x430.png)
+![Warn_HornAssembly](/assets/images/dxl/x/frame/x430/warning_horn_assembly_x430.png)
 
 **NOTE**: Find useful data (Size, Depth and etc) for your horn or frame assembly from [Drawings](#drawings).
 {: .notice}
@@ -20,19 +20,19 @@ If the length of screw is longer than the depth of them, it may cause a damage t
 
 A hinge frame can be assembled to the output shaft wheel gear of DYNAMIXEL.
 
-![Hinge_Assembly](/assets/images/dxl/x/x430/fr12-h101k.png)
+![Hinge_Assembly](/assets/images/dxl/x/frame/x430/fr12-h101k.png)
 
 > FR12-H101K
 
-![Hinge_Assembly](/assets/images/dxl/x/x430/fr12-h104k.png)
+![Hinge_Assembly](/assets/images/dxl/x/frame/x430/fr12-h104k.png)
 
 > FR12-H104K
 
-![Hinge_Assembly](/assets/images/dxl/x/x430/fr12-h104k_xh_xl430.png)
+![Hinge_Assembly](/assets/images/dxl/x/frame/x430/fr12-h104k_xh_xl430.png)
 
 > FR12-H104K (Back Mount, compatible with DYNAMIXEL XL & XC Series)
 
-![Hinge_Assembly](/assets/images/dxl/x/x430/fr12-h103gm.png)
+![Hinge_Assembly](/assets/images/dxl/x/frame/x430/fr12-h103gm.png)
 
 > FR12-H103GM
 
@@ -49,11 +49,11 @@ A hinge frame can be assembled to the output shaft wheel gear of DYNAMIXEL.
 
 A side frame can be assembled to the side and bottom of case of DYNAMIXEL. 
 
-![Side_Assembly_Side](/assets/images/dxl/x/x430/fr12_s101k.png)
+![Side_Assembly_Side](/assets/images/dxl/x/frame/x430/fr12_s101k.png)
 
 > FR12-S101K
 
-![Side_Assembly_Bottom](/assets/images/dxl/x/x430/fr12-s102k.png)
+![Side_Assembly_Bottom](/assets/images/dxl/x/frame/x430/fr12-s102k.png)
 
 > FR12-S102K
 
@@ -65,7 +65,7 @@ A side frame can be assembled to the side and bottom of case of DYNAMIXEL.
 
 ### [Gripper Assembly](#gripper-assembly)
 
-![etc_gripper_assembly](/assets/images/dxl/x/x430/fr12_g101_e170_e171.png)
+![etc_gripper_assembly](/assets/images/dxl/x/frame/x430/fr12_g101_e170_e171.png)
 
 > FR12-G101GM (FR12-E170 + FR12-E171) 
 
@@ -79,7 +79,7 @@ A side frame can be assembled to the side and bottom of case of DYNAMIXEL.
 
 Make various combination with hinge and side frames.
 
-![Frame_Example](/assets/images/dxl/x/x430/x430_frame_example.png)
+![Frame_Example](/assets/images/dxl/x/frame/x430/x430_frame_example.png)
 
 ### [Custom Frame Assembly](#custom-frame-assembly)
 
@@ -89,11 +89,11 @@ If you make custom frames for your application, see the next assembly example.
 
 1. Step 1  
 
-    ![ETC_FrameAssembly](/assets/images/dxl/x/x430/x430_etc_assembly_example_front1_01.png)
+    ![ETC_FrameAssembly](/assets/images/dxl/x/frame/x430/x430_etc_assembly_example_front1_01.png)
 
 2. Step 2  
 
-    ![ETC_FrameAssembly](/assets/images/dxl/x/x430/x430_etc_assembly_example_front1_02.png)
+    ![ETC_FrameAssembly](/assets/images/dxl/x/frame/x430/x430_etc_assembly_example_front1_02.png)
 
 **NOTE**: Note that the frame in the image is not for sale. 
 {: .notice}
@@ -108,11 +108,11 @@ If you make custom frames for your application, see the next assembly example.
 
 1. Step 1
   
-    ![ETC_FrameAssembly](/assets/images/dxl/x/x430/x430_etc_assembly_example_front2_01.png)
+    ![ETC_FrameAssembly](/assets/images/dxl/x/frame/x430/x430_etc_assembly_example_front2_01.png)
 
 2. Step 2
 
-    ![ETC_FrameAssembly](/assets/images/dxl/x/x430/x430_etc_assembly_example_front2_02.png)
+    ![ETC_FrameAssembly](/assets/images/dxl/x/frame/x430/x430_etc_assembly_example_front2_02.png)
 
 **NOTE**: Note that the frame in the image is not for sale. 
 {: .notice}
@@ -125,12 +125,12 @@ If you make custom frames for your application, see the next assembly example.
 
 #### [Side](#side)
 
-  ![ETC_FrameAssembly](/assets/images/dxl/x/x430/x430_etc_assembly_example_side.png)
+  ![ETC_FrameAssembly](/assets/images/dxl/x/frame/x430/x430_etc_assembly_example_side.png)
   
   {% capture sidetab_warning_3mm %}
   **WARNNING**: Be sure to use the proper length of screws when assembling a frame to the side tab.
   
-  ![3mm_Mount_Deep_Warning](/assets/images/dxl/x/assembly_common/3mm_mount_warning.jpg)
+  ![3mm_Mount_Deep_Warning](/assets/images/dxl/x/frame/common/3mm_mount_warning.jpg)
   
   {% endcapture %}
   
@@ -144,7 +144,7 @@ If you make custom frames for your application, see the next assembly example.
   
 #### [Bottom](#bottom)
 
-  ![ETC_FrameAssembly](/assets/images/dxl/x/x430/x430_etc_assembly_example_bottom.png)
+  ![ETC_FrameAssembly](/assets/images/dxl/x/frame/x430/x430_etc_assembly_example_bottom.png)
   
   <div class="notice--warning">{{ sidetab_warning_3mm | markdownify }}</div> 
   
