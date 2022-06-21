@@ -41,7 +41,7 @@ The S.BUS protocol is a communication protocol commonly used in RC products. XL3
 - If the [Operating Mode(11)] is **Position Control Mode**, data will be passed to the [Goal Position(116)].
 - If the [Operating Mode(11)] is **Velocity Mode**, data will be pased to [Goal Velocity(104)]. For your understanding, see the next graph of the control reference by the passed data via the protocol.
 
-<img src="/assets/images/dxl/x/xl330_temp/protocol_s_bus_graph.png" width="1100">
+<img src="/assets/images/dxl/x/xl330/protocol_s_bus_graph.png" width="1100">
 
 **NOTE**: The maximum speed at the Velocity Control Mode relies on its [Velocity Limit(44)]. By configuring [Moving Threshold(24)], it is possible to set a motionless point, where The [Goal Velocity(104)] is 0.
 {: .notice}
@@ -58,7 +58,7 @@ The iBUS protocol is a communication protocol commonly used in RC products. XL33
 - If the [Operating Mode(11)] is **Position Control Mode**, data will be passed to the [Goal Position(116)].
 - If the [Operating Mode(11)] is **Velocity Mode**, data will be pased to [Goal Velocity(104)]. For your understanding, see the next graph of the control reference by the passed data via the protocol.
 
-<img src="/assets/images/dxl/x/xl330_temp/protocol_ibus_graph.png" width="1100">
+<img src="/assets/images/dxl/x/xl330/protocol_ibus_graph.png" width="1100">
 
 **NOTE**: The maximum speed at the Velocity Control Mode relies on its [Velocity Limit(44)]. By configuring [Moving Threshold(24)], it is possible to set a motionless point, where The [Goal Velocity(104)] is 0.
 {: .notice}
@@ -67,12 +67,12 @@ The iBUS protocol is a communication protocol commonly used in RC products. XL33
 
 The RC-PWM Protocol is a PWM (Pulse Width Modulation) signal generally used by RC servo products. Even if it is not possible to wire multiple DYNAMIXELs with a signal cable, this is the most-used protocol to control RC servos. The RC-PWM is the analog data with respect to time as it is the way of transmitting data by proportion of time of signal pulse width.
 
-<img src="/assets/images/dxl/x/xl330_temp/protocol_rc_pwm_duty.png" width="550">
+<img src="/assets/images/dxl/x/xl330/protocol_rc_pwm_duty.png" width="550">
 
 - If the [Operating Mode(11)] is **Position Control Mode**, data will be passed to the [Goal Position(116)].
 - If the [Operating Mode(11)] is **Velocity Mode**, data will be pased to [Goal Velocity(104)]. For your understanding, see the next graph of the control reference by the passed data via the protocol.
 
-<img src="/assets/images/dxl/x/xl330_temp/protocl_rc_pwm_graph.png" width="1100">
+<img src="/assets/images/dxl/x/xl330/protocl_rc_pwm_graph.png" width="1100">
 
 **NOTE**: The maximum speed at the Velocity Control Mode relies on its [Velocity Limit(44)]. By configuring [Moving Threshold(24)], it is possible to set a motionless point, where The [Goal Velocity(104)] is 0.
 {: .notice}
