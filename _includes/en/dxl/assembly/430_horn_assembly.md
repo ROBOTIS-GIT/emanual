@@ -15,12 +15,21 @@ A normal horn is the standard horn for the DYNAMIXEL X540 series. The normal hor
 
 ### [Idler Horn Assembly](#idler-horn-assembly)
 
-The idler horn can be assembled with the follows, 
+The idler horn can be used for an hinge frame assembly with the DYNAMIXEL normal horn. 
+
+Additionally, utilizing the hole of the idler horn provides a neat cable wiring solution. Click the ![](/assets/images/icon_unfold.png) note below for how-to. 
 
 ![HowTo_Idler_Assembly](/assets/images/dxl/x/assembly_common/idler_assembly.png)
 
-**NOTE** : The hole of idler horn provides the neat wiring solution. See [Wiring through Back Case](#wiring-through-back-case)
-{: .notice}
+<details>
+<summary>
+![](/assets/images/icon_unfold.png) **Find Cable Wiring Throuh a Back Case Here**  
+</summary>
+
+![](/assets/images/dxl/x/wiring_through_back_case.jpg)
+
+{% include en/dxl/hollow_cabling.md %}
+</details>
 
 #### [Idler Horn Disassembly](#idler-horn-disassembly)
 

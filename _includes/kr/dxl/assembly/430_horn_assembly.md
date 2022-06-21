@@ -15,15 +15,23 @@ X시리즈 540 전용 노멀 혼 입니다. 전면 케이스의 휠기어에 장
   ![Horn_Marking](/assets/images/dxl/x/assembly_common/horn_assembly_marking.png)
 {: .notice}
 
-
 ### [아이들러 혼 조립하기](#아이들러-혼-조립하기)
 
-아이들러 혼 조립시, 다음과 같이 조립하세요. 
+아이들러 혼은, 노멀 혼과 함께 힌지 프레임 체결시 사용됩니다.  
+
+중공형 조립방식으로, 아이들러 혼을 통해 케이블을 깔끔하게 정리할 수 있습니다. 아래 ![](/assets/images/icon_unfold.png)를 클릭하여, 케이블 배선 예시를 참고하세요.  
 
 ![HowTo_Idler_Assembly](/assets/images/dxl/x/assembly_common/idler_assembly.png)
 
-**참고** : 아이들러 혼의 구멍을 통해, 케이블을 깔끔하게 정리할수 있습니다. [배선 예시](#배선-예시)를 참고하세요.
-{: .notice}
+<details>
+<summary>
+![](/assets/images/icon_unfold.png) **클릭하여, 케이블 배선 예시를 참고하세요**  
+</summary>
+
+![](/assets/images/dxl/x/wiring_through_back_case.jpg)
+
+{% include kr/dxl/hollow_cabling.md %}
+</details>
 
 #### [아이들러 혼 분해하기](#아이들러-혼-분해하기)
 
