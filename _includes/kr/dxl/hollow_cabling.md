@@ -1,5 +1,5 @@
 
-![](/assets/images/dxl/x/frame/common/x-series_cable_assembly.png)
+![](/assets/images/dxl/x/assembly/common/x-series_cable_assembly.png)
 
 {% capture hollow_assy %}
 **주의** : 중공형 케이블 조립시 주의사항 
