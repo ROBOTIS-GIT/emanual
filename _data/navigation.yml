@@ -5975,6 +5975,10 @@ xl430-w250-test:
     url: /dxl/x/xl430-w250/test/#how-to-assemble
     urlkr: /dxl/x/xl430-w250/test/#조립-예시
     children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xl430-w250/test/#wiring-through-back-case
+        urlkr: /dxl/x/xl430-w250/test/#배선-예시
       - title: "Option Frame Assembly"
         titlekr: "옵션프레임 조립"
         url: /dxl/x/xl430-w250/test/#option-frame-assembly
@@ -6202,10 +6206,48 @@ xl430-w250:
     url: /dxl/x/xl430-w250/#how-to-assemble
     urlkr: /dxl/x/xl430-w250/#조립-예시
     children:
-      - title: "Option Frame Assembly"
-        titlekr: "옵션프레임 조립"
-        url: /dxl/x/xl430-w250/#option-frame-assembly
-        urlkr: /dxl/x/xl430-w250/#옵션프레임-조립
+      - title: "Horn Assembly"
+        titlekr: "혼 조립하기"
+        url: /dxl/x/xl430-w250/#horn-assembly
+        urlkr: /dxl/x/xl430-w250/#혼-조립하기
+        children:
+          - title: "Idler Horn Assembly"
+            titlekr: "아이들러 혼 조립하기"
+            url: /dxl/x/xl430-w250/#idler-horn-assembly
+            urlkr: /dxl/x/xl430-w250/#아이들러-혼-조립하기            
+      - title: "Frame Assembly"
+        titlekr: "프레임 조립하기"
+        url: /dxl/x/xl430-w250/#frame-assembly
+        urlkr: /dxl/x/xl430-w250/#프레임-조립하기
+        children:
+          - title: "How To Use Spacer Ring"
+            titlekr: "스페이서 링 사용 방법"
+            url: /dxl/x/xl430-w250/#how-to-use-spacer-ring
+            urlkr: /dxl/x/xl430-w250/#스페이서-링-사용-방법
+          - title: "Precaution of Frame and Horn Assembly"
+            titlekr: "프레임과 혼 결합 시 주의 사항"
+            url: /dxl/x/xl430-w250/#precaution-of-frame-and-horn-assembly
+            urlkr: /dxl/x/xl430-w250/#프레임과-혼-결합-시-주의-사항    
+          - title: "Hinge Frame Assembly"
+            titlekr: "힌지 프레임 조립하기"
+            url: /dxl/x/xl430-w250/#hinge-frame-assembly
+            urlkr: /dxl/x/xl430-w250/#힌지-프레임-조립하기
+          - title: "Side Frame Assembly"
+            titlekr: "사이드 프레임 조립하기"
+            url: /dxl/x/xl430-w250/#side-frame-assembly
+            urlkr: /dxl/x/xl430-w250/#사이드-프레임-조립하기
+          - title: "Gripper Assembly"
+            titlekr: "그리퍼 조립하기"
+            url: /dxl/x/xl430-w250/#gripper-assembly
+            urlkr: /dxl/x/xl430-w250/#그리퍼-조립하기
+          - title: "Frame Combination"
+            titlekr: "프레임 활용 하기"
+            url: /dxl/x/xl430-w250/#frame-combination
+            urlkr: /dxl/x/xl430-w250/#프레임-활용-하기
+          - title: "Custom Frame Assembly"
+            titlekr: "기타 프레임 조립 예시"
+            url: /dxl/x/xl430-w250/#custom-frame-assembly
+            urlkr: /dxl/x/xl430-w250/#기타-프레임-조립-예시
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/x/xl430-w250/#reference
@@ -6429,19 +6471,48 @@ xc430-w150:
     url: /dxl/x/xc430-w150/#how-to-assemble
     urlkr: /dxl/x/xc430-w150/#조립-예시
     children:
-      - title: "Option Frame Assembly"
-        titlekr: "옵션프레임 조립"
-        url: /dxl/x/xc430-w150/#option-frame-assembly
-        urlkr: /dxl/x/xc430-w150/#옵션프레임-조립
-#  - title: "Maintenance"
-#    titlekr: "유지보수"
-#    url: /dxl/x/xc430-w150/#maintenance
-#    urlkr: /dxl/x/xc430-w150/#유지보수
-#    children:
-#      - title: "Horn, Gear Replacement"
-#        titlekr: "혼과 기어 교체"
-#        url: /dxl/x/xc430-w150/#horn-and-gear-replacement
-#        urlkr: /dxl/x/xc430-w150/#혼과-기어-교체
+      - title: "Horn Assembly"
+        titlekr: "혼 조립하기"
+        url: /dxl/x/xc430-w150/#horn-assembly
+        urlkr: /dxl/x/xc430-w150/#혼-조립하기
+        children:
+          - title: "Idler Horn Assembly"
+            titlekr: "아이들러 혼 조립하기"
+            url: /dxl/x/xc430-w150/#idler-horn-assembly
+            urlkr: /dxl/x/xc430-w150/#아이들러-혼-조립하기            
+      - title: "Frame Assembly"
+        titlekr: "프레임 조립하기"
+        url: /dxl/x/xc430-w150/#frame-assembly
+        urlkr: /dxl/x/xc430-w150/#프레임-조립하기
+        children:
+          - title: "How To Use Spacer Ring"
+            titlekr: "스페이서 링 사용 방법"
+            url: /dxl/x/xc430-w150/#how-to-use-spacer-ring
+            urlkr: /dxl/x/xc430-w150/#스페이서-링-사용-방법
+          - title: "Precaution of Frame and Horn Assembly"
+            titlekr: "프레임과 혼 결합 시 주의 사항"
+            url: /dxl/x/xc430-w150/#precaution-of-frame-and-horn-assembly
+            urlkr: /dxl/x/xc430-w150/#프레임과-혼-결합-시-주의-사항    
+          - title: "Hinge Frame Assembly"
+            titlekr: "힌지 프레임 조립하기"
+            url: /dxl/x/xc430-w150/#hinge-frame-assembly
+            urlkr: /dxl/x/xc430-w150/#힌지-프레임-조립하기
+          - title: "Side Frame Assembly"
+            titlekr: "사이드 프레임 조립하기"
+            url: /dxl/x/xc430-w150/#side-frame-assembly
+            urlkr: /dxl/x/xc430-w150/#사이드-프레임-조립하기
+          - title: "Gripper Assembly"
+            titlekr: "그리퍼 조립하기"
+            url: /dxl/x/xc430-w150/#gripper-assembly
+            urlkr: /dxl/x/xc430-w150/#그리퍼-조립하기
+          - title: "Frame Combination"
+            titlekr: "프레임 활용 하기"
+            url: /dxl/x/xc430-w150/#frame-combination
+            urlkr: /dxl/x/xc430-w150/#프레임-활용-하기
+          - title: "Custom Frame Assembly"
+            titlekr: "기타 프레임 조립 예시"
+            url: /dxl/x/xc430-w150/#custom-frame-assembly
+            urlkr: /dxl/x/xc430-w150/#기타-프레임-조립-예시
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/x/xc430-w150/#reference
@@ -6665,19 +6736,48 @@ xc430-w240:
     url: /dxl/x/xc430-w240/#how-to-assemble
     urlkr: /dxl/x/xc430-w240/#조립-예시
     children:
-      - title: "Option Frame Assembly"
-        titlekr: "옵션프레임 조립"
-        url: /dxl/x/xc430-w240/#option-frame-assembly
-        urlkr: /dxl/x/xc430-w240/#옵션프레임-조립
-#  - title: "Maintenance"
-#    titlekr: "유지보수"
-#    url: /dxl/x/xc430-w240/#maintenance
-#    urlkr: /dxl/x/xc430-w240/#유지보수
-#    children:
-#      - title: "Horn, Gear Replacement"
-#        titlekr: "혼과 기어 교체"
-#        url: /dxl/x/xc430-w240/#horn-and-gear-replacement
-#        urlkr: /dxl/x/xc430-w240/#혼과-기어-교체
+      - title: "Horn Assembly"
+        titlekr: "혼 조립하기"
+        url: /dxl/x/xc430-w240/#horn-assembly
+        urlkr: /dxl/x/xc430-w240/#혼-조립하기
+        children:
+          - title: "Idler Horn Assembly"
+            titlekr: "아이들러 혼 조립하기"
+            url: /dxl/x/xc430-w240/#idler-horn-assembly
+            urlkr: /dxl/x/xc430-w240/#아이들러-혼-조립하기            
+      - title: "Frame Assembly"
+        titlekr: "프레임 조립하기"
+        url: /dxl/x/xc430-w240/#frame-assembly
+        urlkr: /dxl/x/xc430-w240/#프레임-조립하기
+        children:
+          - title: "How To Use Spacer Ring"
+            titlekr: "스페이서 링 사용 방법"
+            url: /dxl/x/xc430-w240/#how-to-use-spacer-ring
+            urlkr: /dxl/x/xc430-w240/#스페이서-링-사용-방법
+          - title: "Precaution of Frame and Horn Assembly"
+            titlekr: "프레임과 혼 결합 시 주의 사항"
+            url: /dxl/x/xc430-w240/#precaution-of-frame-and-horn-assembly
+            urlkr: /dxl/x/xc430-w240/#프레임과-혼-결합-시-주의-사항    
+          - title: "Hinge Frame Assembly"
+            titlekr: "힌지 프레임 조립하기"
+            url: /dxl/x/xc430-w240/#hinge-frame-assembly
+            urlkr: /dxl/x/xc430-w240/#힌지-프레임-조립하기
+          - title: "Side Frame Assembly"
+            titlekr: "사이드 프레임 조립하기"
+            url: /dxl/x/xc430-w240/#side-frame-assembly
+            urlkr: /dxl/x/xc430-w240/#사이드-프레임-조립하기
+          - title: "Gripper Assembly"
+            titlekr: "그리퍼 조립하기"
+            url: /dxl/x/xc430-w240/#gripper-assembly
+            urlkr: /dxl/x/xc430-w240/#그리퍼-조립하기
+          - title: "Frame Combination"
+            titlekr: "프레임 활용 하기"
+            url: /dxl/x/xc430-w240/#frame-combination
+            urlkr: /dxl/x/xc430-w240/#프레임-활용-하기
+          - title: "Custom Frame Assembly"
+            titlekr: "기타 프레임 조립 예시"
+            url: /dxl/x/xc430-w240/#custom-frame-assembly
+            urlkr: /dxl/x/xc430-w240/#기타-프레임-조립-예시
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/x/xc430-w240/#reference
@@ -6901,10 +7001,48 @@ xc430-w240:
     url: /dxl/x/2xl430-w250/#how-to-assemble
     urlkr: /dxl/x/2xl430-w250/#조립-예시
     children:
-    #  - title: "Option Frame Assembly"
-    #    titlekr: "옵션프레임 조립"
-    #    url: /dxl/x/2xl430-w250/#option-frame-assembly
-    #    urlkr: /dxl/x/2xl430-w250/#옵션프레임-조립
+      - title: "Horn Assembly"
+        titlekr: "혼 조립하기"
+        url: /dxl/x/2xl430-w250/#horn-assembly
+        urlkr: /dxl/x/2xl430-w250/#혼-조립하기
+        children:
+          - title: "Idler Horn Assembly"
+            titlekr: "아이들러 혼 조립하기"
+            url: /dxl/x/2xl430-w250/#idler-horn-assembly
+            urlkr: /dxl/x/2xl430-w250/#아이들러-혼-조립하기            
+      - title: "Frame Assembly"
+        titlekr: "프레임 조립하기"
+        url: /dxl/x/2xl430-w250/#frame-assembly
+        urlkr: /dxl/x/2xl430-w250/#프레임-조립하기
+        children:
+          - title: "How To Use Spacer Ring"
+            titlekr: "스페이서 링 사용 방법"
+            url: /dxl/x/2xl430-w250/#how-to-use-spacer-ring
+            urlkr: /dxl/x/2xl430-w250/#스페이서-링-사용-방법
+          - title: "Precaution of Frame and Horn Assembly"
+            titlekr: "프레임과 혼 결합 시 주의 사항"
+            url: /dxl/x/2xl430-w250/#precaution-of-frame-and-horn-assembly
+            urlkr: /dxl/x/2xl430-w250/#프레임과-혼-결합-시-주의-사항    
+          - title: "Hinge Frame Assembly"
+            titlekr: "힌지 프레임 조립하기"
+            url: /dxl/x/2xl430-w250/#hinge-frame-assembly
+            urlkr: /dxl/x/2xl430-w250/#힌지-프레임-조립하기
+          - title: "Side Frame Assembly"
+            titlekr: "사이드 프레임 조립하기"
+            url: /dxl/x/2xl430-w250/#side-frame-assembly
+            urlkr: /dxl/x/2xl430-w250/#사이드-프레임-조립하기
+          - title: "Gripper Assembly"
+            titlekr: "그리퍼 조립하기"
+            url: /dxl/x/2xl430-w250/#gripper-assembly
+            urlkr: /dxl/x/2xl430-w250/#그리퍼-조립하기
+          - title: "Frame Combination"
+            titlekr: "프레임 활용 하기"
+            url: /dxl/x/2xl430-w250/#frame-combination
+            urlkr: /dxl/x/2xl430-w250/#프레임-활용-하기
+          - title: "Custom Frame Assembly"
+            titlekr: "기타 프레임 조립 예시"
+            url: /dxl/x/2xl430-w250/#custom-frame-assembly
+            urlkr: /dxl/x/2xl430-w250/#기타-프레임-조립-예시
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/x/2xl430-w250/#reference
@@ -7128,6 +7266,48 @@ xc430-w240:
     url: /dxl/x/2xc430-w250/#how-to-assemble
     urlkr: /dxl/x/2xc430-w250/#조립-예시
     children:
+      - title: "Horn Assembly"
+        titlekr: "혼 조립하기"
+        url: /dxl/x/2xc430-w250/#horn-assembly
+        urlkr: /dxl/x/2xc430-w250/#혼-조립하기
+        children:
+          - title: "Idler Horn Assembly"
+            titlekr: "아이들러 혼 조립하기"
+            url: /dxl/x/2xc430-w250/#idler-horn-assembly
+            urlkr: /dxl/x/2xc430-w250/#아이들러-혼-조립하기            
+      - title: "Frame Assembly"
+        titlekr: "프레임 조립하기"
+        url: /dxl/x/2xc430-w250/#frame-assembly
+        urlkr: /dxl/x/2xc430-w250/#프레임-조립하기
+        children:
+          - title: "How To Use Spacer Ring"
+            titlekr: "스페이서 링 사용 방법"
+            url: /dxl/x/2xc430-w250/#how-to-use-spacer-ring
+            urlkr: /dxl/x/2xc430-w250/#스페이서-링-사용-방법
+          - title: "Precaution of Frame and Horn Assembly"
+            titlekr: "프레임과 혼 결합 시 주의 사항"
+            url: /dxl/x/2xc430-w250/#precaution-of-frame-and-horn-assembly
+            urlkr: /dxl/x/2xc430-w250/#프레임과-혼-결합-시-주의-사항    
+          - title: "Hinge Frame Assembly"
+            titlekr: "힌지 프레임 조립하기"
+            url: /dxl/x/2xc430-w250/#hinge-frame-assembly
+            urlkr: /dxl/x/2xc430-w250/#힌지-프레임-조립하기
+          - title: "Side Frame Assembly"
+            titlekr: "사이드 프레임 조립하기"
+            url: /dxl/x/2xc430-w250/#side-frame-assembly
+            urlkr: /dxl/x/2xc430-w250/#사이드-프레임-조립하기
+          - title: "Gripper Assembly"
+            titlekr: "그리퍼 조립하기"
+            url: /dxl/x/2xc430-w250/#gripper-assembly
+            urlkr: /dxl/x/2xc430-w250/#그리퍼-조립하기
+          - title: "Frame Combination"
+            titlekr: "프레임 활용 하기"
+            url: /dxl/x/2xc430-w250/#frame-combination
+            urlkr: /dxl/x/2xc430-w250/#프레임-활용-하기
+          - title: "Custom Frame Assembly"
+            titlekr: "기타 프레임 조립 예시"
+            url: /dxl/x/2xc430-w250/#custom-frame-assembly
+            urlkr: /dxl/x/2xc430-w250/#기타-프레임-조립-예시
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/x/2xc430-w250/#reference
@@ -7411,7 +7591,11 @@ xm430-w210:
     titlekr: "참고자료"
     url: /dxl/x/xm430-w210/#reference
     urlkr: /dxl/x/xm430-w210/#참고자료
-    children:      
+    children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xm430-w210/#wiring-through-back-case
+        urlkr: /dxl/x/xm430-w210/#배선-예시      
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xm430-w210/#what-is-the-profile
@@ -7694,7 +7878,11 @@ xm430-w350:
     titlekr: "참고자료"
     url: /dxl/x/xm430-w350/#reference
     urlkr: /dxl/x/xm430-w350/#참고자료
-    children:      
+    children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xm430-w350/#wiring-through-back-case
+        urlkr: /dxl/x/xm430-w350/#배선-예시      
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xm430-w350/#what-is-the-profile
@@ -7979,7 +8167,11 @@ xm540-w150:
     titlekr: "참고자료"
     url: /dxl/x/xm540-w150/#reference
     urlkr: /dxl/x/xm540-w150/#참고자료
-    children:       
+    children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xm540-w150/#wiring-through-back-case
+        urlkr: /dxl/x/xm540-w150/#배선-예시       
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xm540-w150/#what-is-the-profile
@@ -8264,7 +8456,11 @@ xm540-w270:
     titlekr: "참고자료"
     url: /dxl/x/xm540-w270/#reference
     urlkr: /dxl/x/xm540-w270/#참고자료
-    children:       
+    children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xm540-w270/#wiring-through-back-case
+        urlkr: /dxl/x/xm540-w270/#배선-예시       
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xm540-w270/#what-is-the-profile
@@ -10089,7 +10285,11 @@ xd430-t210:
     titlekr: "참고자료"
     url: /dxl/x/xd430-t210/#reference
     urlkr: /dxl/x/xd430-t210/#참고자료
-    children:      
+    children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xd430-t210/#wiring-through-back-case
+        urlkr: /dxl/x/xd430-t210/#배선-예시      
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xd430-t210/#what-is-the-profile
@@ -10372,7 +10572,11 @@ xd430-t350:
     titlekr: "참고자료"
     url: /dxl/x/xd430-t350/#reference
     urlkr: /dxl/x/xd430-t350/#참고자료
-    children:      
+    children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xd430-t350/#wiring-through-back-case
+        urlkr: /dxl/x/xd430-t350/#배선-예시      
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xd430-t350/#what-is-the-profile
@@ -10655,7 +10859,11 @@ xh430-v210:
     titlekr: "참고자료"
     url: /dxl/x/xh430-v210/#reference
     urlkr: /dxl/x/xh430-v210/#참고자료
-    children:      
+    children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xh430-v210/#wiring-through-back-case
+        urlkr: /dxl/x/xh430-v210/#배선-예시      
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xh430-v210/#what-is-the-profile
@@ -10934,7 +11142,11 @@ xh430-v350:
     titlekr: "참고자료"
     url: /dxl/x/xh430-v350/#reference
     urlkr: /dxl/x/xh430-v350/#참고자료
-    children:      
+    children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xh430-v350/#wiring-through-back-case
+        urlkr: /dxl/x/xh430-v350/#배선-예시      
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xh430-v350/#what-is-the-profile
@@ -11213,7 +11425,11 @@ xh430-w210:
     titlekr: "참고자료"
     url: /dxl/x/xh430-w210/#reference
     urlkr: /dxl/x/xh430-w210/#참고자료
-    children:      
+    children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xh430-w210/#wiring-through-back-case
+        urlkr: /dxl/x/xh430-w210/#배선-예시      
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xh430-w210/#what-is-the-profile
@@ -11497,6 +11713,10 @@ xh430-w350:
     url: /dxl/x/xh430-w350/#reference
     urlkr: /dxl/x/xh430-w350/#참고자료
     children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xh430-w350/#wiring-through-back-case
+        urlkr: /dxl/x/xh430-w350/#배선-예시
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xh430-w350/#what-is-the-profile
@@ -11781,7 +12001,11 @@ xh540-w150:
     titlekr: "참고자료"
     url: /dxl/x/xh540-w150/#reference
     urlkr: /dxl/x/xh540-w150/#참고자료
-    children:       
+    children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xh540-w150/#wiring-through-back-case
+        urlkr: /dxl/x/xh540-w150/#배선-예시       
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xh540-w150/#what-is-the-profile
@@ -12066,7 +12290,11 @@ xh540-w270:
     titlekr: "참고자료"
     url: /dxl/x/xh540-w270/#reference
     urlkr: /dxl/x/xh540-w270/#참고자료
-    children:       
+    children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xh540-w270/#wiring-through-back-case
+        urlkr: /dxl/x/xh540-w270/#배선-예시       
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xh540-w270/#what-is-the-profile
@@ -12351,7 +12579,11 @@ xh540-v150:
     titlekr: "참고자료"
     url: /dxl/x/xh540-v150/#reference
     urlkr: /dxl/x/xh540-v150/#참고자료
-    children:       
+    children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xh540-v150/#wiring-through-back-case
+        urlkr: /dxl/x/xh540-v150/#배선-예시       
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xh540-v150/#what-is-the-profile
@@ -12628,7 +12860,11 @@ xh540-v270:
     titlekr: "참고자료"
     url: /dxl/x/xh540-v270/#reference
     urlkr: /dxl/x/xh540-v270/#참고자료
-    children:       
+    children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xh540-v270/#wiring-through-back-case
+        urlkr: /dxl/x/xh540-v270/#배선-예시       
       - title: "What is the Profile"
         titlekr: "Profile"
         url: /dxl/x/xh540-v270/#what-is-the-profile
