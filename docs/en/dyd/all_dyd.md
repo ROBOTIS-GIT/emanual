@@ -14,21 +14,21 @@ product_group: all-dyd
 
 # [Overview](#overview)
 
-Generally, a traditional Cycloidal Gear Drive is well known as being strong but  larger in size and heavier compared to the Harmonic Drive. However, unlike traditional Cycloid Drives, the ROBOTIS DYNAMIXEL DRIVE(DYD) achieves high torque and accurate repeatability at the same time while being more compact, lighter, and stronger over other reducers in the market
+DYNAMIXEL DRIVE(DYD) is a Cycloidal Gear that achieves high torque and accurate repeatability while being compact, light, and strong.
 
 ![](/assets/images/dyd/dyd_spec_01.png)
 
+|                      Characteristics                      | Starain Wave Gear |     DYD     | Planetary Gear |
+|:---------------------------------------------------------:|:-----------------:|:-----------:|:--------------:|
+|                        Efficiency                         |    **&#9651;**    | **&#9678;** |  **&#9678;**   |
+|                     Back-Drive torque                     |    **&#9651;**    |    **O**    |  **&#9678;**   |
+|                    Accuracy (Backlash)                    |    **&#9678;**    | **&#9678;** |  **&#9651;**   |
+|               Rigidity under impact (shock)               |    **&#9651;**    | **&#9678;** |     **O**      |
+| Operating time to failure under heavy operating condition |    **&#9651;**    | **&#9678;** |     **O**      |
 
-|                      Characteristics                      |  Planetary  |  Harmonic   |     DYD     |
-|:---------------------------------------------------------:|:-----------:|:-----------:|:-----------:|
-|                        Gear ratio                         |      O      | **&#9678;** | **&#9678;** |
-|                       Contact ratio                       |      O      |      O      | **&#9678;** |
-|                       Compact size                        | **&#9651;** | **&#9678;** | **&#9678;** |
-|                       Light Weight                        | **&#9651;** | **&#9678;** | **&#9678;** |
-|                         Accuracy                          | **&#9651;** | **&#9678;** | **&#9678;** |
-|                     Back-drive torque                     | **&#9678;** | **&#9651;** |      O      |
-|               Rigidity under impact (shock)               |      O      | **&#9651;** | **&#9678;** |
-| Operating time to failure under heavy operating condition |      O      | **&#9651;** | **&#9678;** |
+- **&#9678;**: Excellent
+- **O** : Good
+- **&#9651;**: Average
 
 {% include en/dyd/dyd_warning.md %}
 
@@ -45,13 +45,13 @@ Generally, a traditional Cycloidal Gear Drive is well known as being strong but 
 
 ## [Gear Ratio and Rotational Direction](#gear-ratio-and-rotational-direction)
 
-In the following image, it is shown that the rotational direction of the input motor and the output component depends on the fixed position of the reducer. When the DYD drive is fixed and the output flange is rotating, the rotational direction is opposite to the input direction while the output speed becomes reciprocal of the input speed(R). If the DYD drive housing is rotating while the output flange is fixed to the frame, the rotating direction of input and output is the same while the output becomes reciprocal of the input speed + 1(R+1).
+In the following table, its shown input rotate direction and output rotate direction depend on fixed part.  
+The housing fixed type is input and output rotations in the opposite direction.
 
-
-|     Fixed     | Output Speed | Input Direction | Output Direction |                       Example                       |
-|:-------------:|:------------:|:---------------:|:----------------:|:---------------------------------------------------:|
-|    Housing    |  i=(-1)1/R   |   Cathode (+)   |    Anode (-)     |    ![](/assets/images/dyd/dyd_housing_01_kr.png)    |
-| Output flange |  i=1/(R+1)   |   Cathode (+)   |   Cathode (+)    | ![](/assets/images/dyd/dyd_output_flange_01_kr.png) |
+|     Fixed     | Output Speed | Input Direction | Output Direction |                         Example                          |
+|:-------------:|:------------:|:---------------:|:----------------:|:--------------------------------------------------------:|
+|    Housing    |  i=(-1)1/R   |   Cathode (+)   |    Anode (-)     |    ![](/assets/images/dyd/all_dyd/dyd_housing_01.png)    |
+| Output flange |  i=1/(R+1)   |   Cathode (+)   |   Cathode (+)    | ![](/assets/images/dyd/all_dyd/dyd_output_flange_01.png) |
 
 # [Product Lineup](#product-lineup)
 
@@ -62,18 +62,18 @@ In the following image, it is shown that the rotational direction of the input m
 
 ## [Specifications](#specifications)
 
-|             Properties              |  Unit  |   [DYD-11-033]    |   [DYD-11-051]    | [DYD-14-051] | [DYD-14-099] | [DYD-17-051] | [DYD-17-099] |
-|:-----------------------------------:|:------:|:---------------:|:---------------:|:----------:|:----------:|:----------:|:----------:|
-|             Gear ratio              |   -    |       33        |       51        |     51     |     99     |     51     |     99     |
-|       Repeatable peak torque        |   Nm   |       8.5       |      17.0       |     24     |     35     |     55     |     80     |
-| Rated torque<br>(@2,000 rpm) |   Nm   |       2.2       |       3.5       |    5.4     |    7.8     |    16.0    |    24.0    |
-|         Maximum input speed         |  rpm   |      6,000      |      6,000      |   6,000    |   6,000    |   6,000    |   6,000    |
-|         Nominal input speed         |  rpm   |      2,000      |      2,000      |   2,000    |   2,000    |   2,000    |   2,000    |
-|     Hysteresis loss / Backlash      | arcmin |      <3.0       |      <3.0       |    <3.0    |    <3.0    |    <3.0    |    <3.0    |
-|           Starting torque           |  cNm   |       20        |       20        |     20     |     20     |     30     |     30     |
-|            Service life             | hours  |      3,000      |      3,000      |   5,000    |   5,000    |   7,000    |   7,000    |
-|              Dimension              |   mm   | 43 X 43 X 23.65 | 43 X 43 X 23.65 |  ø68 x 30  |  ø68 x 30  | ø78 x 34.2 | ø78 x 34.2 |
-|               Weight                |   g    |       196       |       196       |    400     |    400     |    600     |    600     |
+|               Properties                |  Unit  | DYD-11-033 | DYD-11-051 | DYD-14-051 | DYD-14-099 | DYD-17-051 | DYD-17-099 |
+|:---------------------------------------:|:------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|
+|               Gear ratio                |   \-   |     33     |     51     |     51     |     99     |     51     |     99     |
+|     Rated output torque (@2,000rpm)     |   Nm   |    2.2     |    3.5     |    3.7     |    5.4     |     11     |     16     |
+| Permissible peak torque (accel / decel) |   Nm   |    8.8     |     14     |    14.8    |    21.6    |     44     |     64     |
+|    Permissible peak torque at E-stop    |   Nm   |     28     |     28     |    43.2    |    43.2    |     96     |     96     |
+|           Nominal input speed           |  rpm   |   2,000    |   2,000    |   2,000    |   2,000    |   2,000    |    2000    |
+|           Maximum input speed           |  rpm   |   8,500    |   8,500    |   8,500    |   8,500    |   8,500    |    8500    |
+|                Backlash                 | arcmin |    <3.0    |    <3.0    |    <3.0    |    <3.0    |    <3.0    |    <3.0    |
+|               Efficiency                |   %    |     65     |     65     |     60     |     60     |     70     |     70     |
+|                Dimension                |   mm   | □43 × 23.5 | □43 × 23.5 |  ∅68 × 30  |  ∅68 × 30  | ∅78 × 34.2 | ∅78 × 34.2 |
+|                 Weight                  |   g    |    196     |    196     |    400     |    400     |    600     |    600     |
 
 ## [Part Numbers](#part-numbers)
 
@@ -81,252 +81,242 @@ In the following image, it is shown that the rotational direction of the input m
 
 | Product name | Model Size | Ratio  |                 Option                  | Special production |
 |:------------:|:----------:|:------:|:---------------------------------------:|:------------------:|
-|     DYD      |     11     | 33, 51 | C (Clamp Ring)<br>SD: Set Screw (D-Cut) |         SP         |
-|     DYD      |     14     | 51, 99 | C (Clamp Ring)<br>SD: Set Screw (D-Cut) |         SP         |
-|     DYD      |     17     | 51, 99 | C (Clamp Ring)<br>SD: Set Screw (D-Cut) |         SP         |
+|     DYD      |     11     | 33, 51 | C (Clamp Ring)<br>SD: Set-Screw (D-Cut) |         SP         |
+|     DYD      |     14     | 51, 99 | C (Clamp Ring)<br>SD: Set-Screw (D-Cut) |         SP         |
+|     DYD      |     17     | 51, 99 | C (Clamp Ring)<br>SD: Set-Screw (D-Cut) |         SP         |
+
+# [Engineering Data](#engineering-data)
+
+## [Rated output torque](#rated-output-torque)
+
+Rated output torque indicates allowable continuous load torque at rated input speed.
+
+## [Permissible peak torque (accel / decel)](#permissible-peak-torque-accel--decel)
+
+When the reducer is operating, a torque higher than the rated torque is applied during acceleration or deceleration. It is used when calculating the average output torque. See "duty cycle".
+
+## [Permissible peak torque at E-stop](#permissible-peak-torque-at-e-stop)
+
+The gear may be subjected to momentary peak torques in the event of a collision or emergency stop. 
+
+![](/assets/images/dyd/all_dyd/dyd_peak_torque.png)
+
+## [Nominal input speed](#nominal-input-speed)
+
+Nominal input speed represents a limit for average working cycle speed.
+
+## [Maximum input speed](#maximum-input-speed)
+
+The maximum input speed is the speed limit in the continuous operation. 
+
+## [Moment of inertia](#moment-of-inertia)
+
+The moment of inertia represents the moment of mass inertia based on the input axis of rotation. 
+
+## [Backlash](#backlash)
+
+As shown in Figure, when the applied torque is increased to the rated torque and is brought back to zero, the torsional angle does not return exactly back to the zero point. This small difference is called hysteresis loss. 
+
+![](/assets/images/dyd/all_dyd/dyd_backlash.png)
+
+## [Efficiency](#efficiency)
+
+The efficiency of the reduction gears depends on the specific lost motion, input speed, load, lubricant temperature and size. The results statistically evaluated from current production tests.
+
+## [Starting torque](#starting-torque)
+
+The starting torque is a quasi-static torque required to start rotation of the input shaft(dynamic friction), if no load is applied to the output flange. 
+
+## [Back-Drive torque](#back-drive-torque)
+
+The back-driving torque is the torque applied on the output flange that is required to start rotation of the input shaft under no load. And the output flange fully rotate 1 revolution.
 
 # [Product Selection Guide](#product-selection-guide)
 
 ## [Selection Flow Chart](#selection-flow-chart)
 
-When configuring a system with reducers, the load applied to the reducer normally fluctuates during acceleration/deceleration or emergency conditions, therefore, it is recommended to reflect various operation conditions to estimate the average load and speed to select the appropriate DYD product.
+<!-- 
+
+When configuring a system with reducers, the load applied to the reducer normally fluctuates during acceleration/deceleration or emergency conditions, therefore, it is recommended to reflect various operation conditions to estimate the average load and speed to select the appropriate DYD product. 
+
+-->
 
 ![](/assets/images/dyd/dyd_selection_flowchart_01.png)
 
 ## [Duty Cycle](#duty-cycle)
 
-In the figure below shows an example of various torque and speed conditions during an operation. These values are critical factors in determining the lifecycle of the DYD product.
+In the figure the duty cycle is different from your cases, please supply the drawing and values of your duty cycle. These values are important for us to be able to determine effectively lifetimes
 
-![](/assets/images/dyd/dyd_duty_cycle_01.png)
+![](/assets/images/dyd/all_dyd/dyd_duty_cycle.png)
 
-| Properties | Description                                 | Properties | Description                               |
-|:----------:|:--------------------------------------------|:----------:|:------------------------------------------|
-|     Ta     | Average output load                         |     na     | Average input speed                       |
-|     T1     | maximum output torque at acceleration [N.m] |     n1     | average input speed at acceleration [rpm] |
-|     T2     | output torque at constant speed [N.m]       |     n2     | input speed at constant motion [rpm]      |
-|     T3     | maximum output torque at deceleration [N.m] |     n3     | average input speed at deceleration [rpm] |
-|     t1     | acceleration time [s]                       |     -      | -                                         |
-|     t2     | constant motion time [s]                    |     -      | -                                         |
-|     t3     | deceleration time [s]                       |     -      | -                                         |
-|     t4     | idle time [s]                               |     -      | -                                         |
-|     t      | Duty cycle time [s]                         |     -      | -                                         |
-|            |                                             |     -      | -                                         |
+| Properties | Description                                  | Properties | Description                                 |
+|:-----------|:---------------------------------------------|:-----------|:--------------------------------------------|
+| Ta         | Average output load \[Nm\]                   | na         | Average input speed \[rpm\]                 |
+| T1         | Maximum output torque at acceleration \[Nm\] | n1         | Average input speed at acceleration \[rpm\] |
+| T2         | Output torque at constant speed \[Nm\]       | n2         | Input speed at constant motion \[rpm\]      |
+| T3         | Maximum output torque at deceleration \[Nm\] | n3         | Average input speed at deceleration \[rpm\] |
+| t1         | Acceleration time \[s\]                      |            |                                             |
+| t2         | Constant motion time \[s\]                   |            |                                             |
+| t3         | Deceleration time \[s\]                      |            |                                             |
+| t4         | Idle time \[s\]                              |            |                                             |
+| t          | Duty cycle time \[s\]                        |            |                                             |
+
 
 ## [Average Output Load](#average-output-load)
 
-The average output load can be calculated as below.
+Please calculate values of your average output load. 
 
-![](/assets/images/dyd/dyd_average_output_torque_01.png)
+![](/assets/images/dyd/all_dyd/dyd_average_torque_eq.png)
 
-![](/assets/images/dyd/dyd_average_output_torque_02.png)
+![](/assets/images/dyd/all_dyd/dyd_average_output_torque.png)
 
-## [Average Input Speed](#average-input-speed)
+## [Average Input Speed](#average-input-speed-2)
 
-The average input speed can be calculated as below.
+Please calculate values of your average input speed.
 
-![](/assets/images/dyd/dyd_average_input_speed_01.png)
+![](/assets/images/dyd/all_dyd/dyd_averlage_speed_eq.png)
 
-![](/assets/images/dyd/dyd_average_input_speed_02.png)
+![](/assets/images/dyd/all_dyd/dyd_average_input_speed.png)
 
 ## [Service Life](#service-life)
 
-The service life of DYD is determined by the fatigue failure of the bearings on the input shaft. Other factors that may affect the actual service life, such as insufficient lubrication, contamination or overload are not taken into account. The nominal service life is provided based on a statistical test value.
+The nominal service life of the Dynamixel Drive is determined by the service life of the bearings on the input shaft.  
+This nominal service life is limited by the material fatigue of the bearings. It does not take into account other factors that may be a limit to the practical service life, such as insufficient lubrication, contamination or overload. The nominal service life is only a statistical value.  
 
 The required service life for a given speed and load values can be calculated as follows:
 
 ![](/assets/images/dyd/dyd_service_life_01_kr.png)
 
-| Properties | Description                    |
-|:----------:|:-------------------------------|
-|     Lh     | Required service life [hours]  |
-|     LR     | Reference service life [hours] |
-|     nR     | nominal input speed [rpm]      |
-|     na     | average input speed [rpm]      |
-|     TR     | nominal torque [N.m]           |
-|     Ta     | average output load [N.m]      |
+|  Properties   | Description                      |
+|:-------------:|:---------------------------------|
+|   Lh design   | Design service life \[hour\]     |
+| Lh calculated | Calculated service life \[hour\] |
+|      LR       | Reference service life \[hour\]  |
+|      nR       | Nominal input speed  \[rpm\]     |
+|      na       | Average input speed \[rpm\]      |
+|      TR       | Rated torque \[Nm\]              |
+|      Ta       | Average output load \[Nm\]       |
+
+### [Service Life with Output Load](#service-life-with-output-load)
+
+![](/assets/images/dyd/all_dyd/dyd_11_life.png){: width="600px"}
+> Service Life: DYD-11 \| Test condition :  Input speed 2,000rpm, Test environment : Temperature 22 ºC, Humidity 55%
+
+![](/assets/images/dyd/all_dyd/dyd_14_life.png){: width="600px"}
+> Service Life: DYD-14 \| Test condition :  Input speed 2,000rpm, Test environment : Temperature 22 ºC, Humidity 55%
+
+![](/assets/images/dyd/all_dyd/dyd_17_life.png){: width="600px"}
+> Service Life: DYD-17 \| Test condition :  Input speed 2,000rpm, Test environment : Temperature 22 ºC, Humidity 55%
 
 ## [Product Selection Example](#product-selection-example)
 
 ### [Define the Duty Cycle](#define-the-duty-cycle)
 
-| Properties | Description                                 | Value | Note |
-|:----------:|:--------------------------------------------|:-----:|:-----|
-|     T1     | Maximum output torque at acceleration [N.m] |  7.5  | -    |
-|     T2     | Output torque at constant speed [N.m]       |   5   | -    |
-|     T3     | Maximum output torque at deceleration [N.m] |  2.5  | -    |
-|     n1     | Average input speed at acceleration [rpm]   | 1,500 | -    |
-|     n2     | Input speed at constant motion [rpm]        | 3,000 | -    |
-|     n3     | Average input speed at deceleration [rpm]   | 1,500 | -    |
-|     t1     | Acceleration time [s]                       |   1   | -    |
-|     t2     | Constant motion time [s]                    |   5   | -    |
-|     t3     | deceleration time [s]                       |   1   | -    |
-|     t4     | idle time [s]                               |   0   | -    |
-|     Lh     | Required service life [hours]               | 5,000 | -    |
+| Properties |              Description              |   Value    | Note |
+|:----------:|:-------------------------------------:|:----------:|:----:|
+|     T1     | Maximum output torque at acceleration |   7.5 Nm   |      |
+|     T2     |    Output torque at constant speed    |    5 Nm    |      |
+|     T3     | Maximum output torque at deceleration |   2.5 Nm   |      |
+|     n1     |  Average input speed at acceleration  | 1,500 rpm  |      |
+|     n2     |    Input speed at constant motion     | 3,000 rpm  |      |
+|     n3     |  Average input speed at acceleration  | 1,500 rpm  |      |
+|     t1     |           Acceleration time           |    1 s     |      |
+|     t2     |         Constant motion time          |    5 s     |      |
+|     t3     |           Deceleration time           |    1 s     |      |
+|     t4     |               Idle time               |    0 s     |      |
+| Lh design  |          Design service life          | 6,500 hour |      |
 
 ### [Average Output Load Calculation](#average-output-load-calculation)
 
-| Properties | Description         | Value | Note |
-|:----------:|:--------------------|:-----:|:-----|
-|     Ta     | Average output load | 4.72  | cal. |
+| Properties | Description         |  Value  | Note |
+|:----------:|:--------------------|:-------:|:-----|
+|     Ta     | Average output load | 4.72 Nm | cal. |
 
 ### [Average Input Speed Calculation](#average-input-speed-calculation)
 
-| Properties | Description         |  Value  | Note |
-|:----------:|:--------------------|:-------:|:-----|
-|     na     | Average input speed | 2571.43 | cal. |
+| Properties | Description         |    Value     | Note |
+|:----------:|:--------------------|:------------:|:-----|
+|     na     | Average input speed | 2,571.43 rpm | cal. |
 
-### [Select Part Number : DYD-14-051](#select-part-number-dyd-14-051)
+### [Pre-Selection : DYD-14-051](#pre-selection--dyd-14-051)
 
-|             Properties              |  Unit  | DYD-14-051 |
-|:-----------------------------------:|:------:|:----------:|
-|             Gear ratio              |   -    |     51     |
-|       Repeatable peak torque        |   Nm   |    24    |
-| Rated torque<br>(@2,000 rpm) |   Nm   |    5.4     |
-|         Maximum input speed         |  rpm   |   6,000    |
-|         Average input speed         |  rpm   |   2,000    |
-|     Hysteresis loss / Backlash      | arcmin |    <3.0    |
-|           Starting torque           |  cNm   |     20     |
-|            Service life             |   hr   |   5,000    |
-|          Dimension (W X H)          |   mm   |  ø68 x 30  |
-|               Weight                |   g    |    400     |
-
-> Selecting Part Number Example for DYD-14-051
+|               Properties                | Unit   | DYD-14-051 |
+|:---------------------------------------:|:-------|:----------:|
+|               Gear ratio                | \-     |     51     |
+|     Rated output torque (@2,000rpm)     | Nm     |    3.7     |
+| Permissible peak torque (accel / decel) | Nm     |    14.8    |
+|    Permissible peak torque at E-stop    | Nm     |    43.2    |
+|           Nominal input speed           | rpm    |   2,000    |
+|           Maximum input speed           | rpm    |   8,500    |
+|                Backlash                 | arcmin |    <3.0    |
+|               Efficiency                | %      |     60     |
+|                Dimension                | mm     |  Ø68 × 30  |
+|                 Weight                  | g      |    400     |
 
 ### [Expected Service Life Calculation: DYD-14-051](#expected-service-life-calculation-dyd-14-051)
 
-| Properties | Description                    |  Value  | Note           |
-|:----------:|:-------------------------------|:-------:|:---------------|
-|     Lh     | Required service life [hours]  | 4,883.5 | cal.           |
-|     LR     | Reference service life [hours] |  5,000  | See data sheet |
-|     nR     | Nominal input speed [rpm]      |  2,000  | See data sheet |
-|     na     | Average input speed [rpm]      |  2,142  | -              |
-|     TR     | Nominal torque [N.m]           |   5.4   | -              |
-|     Ta     | average output load [N.m]      |  4.72   | See data sheet |
+|  Properties   | Description             |   Value    |      Note      |
+|:-------------:|:------------------------|:----------:|:--------------:|
+| Lh calculated | Calculated service life | 6,027 hour |      cal.      |
+|   Lh design   | Design service life     | 6,500 hour |                |
+|      nR       | Nominal input speed     | 2,000 rpm  | see data sheet |
+|      na       | Average input speed     | 2,142 rpm  |                |
+|      TR       | Rated torque            |   3.7 Nm   | see data sheet |
+|      Ta       | Average output torque   |  4.72 Nm   |                |
 
-### [Service Life Comparison: DYD-14-051](#service-life-comparison-dyd-14-051)
+### [Design service life comparison : DYD-14-051](#design-service-life-comparison--dyd-14-051)
 
-Required service life : 5,000 hours > Expected service life : 4,880 hours
+Design service life : 6,500 hour > Calculated service life : 6,027 hour
 
-**NOTE**: The expected service life does not meet the required service life.
-{: .notice}
+### [Pre-Selection : DYD-14-099](#pre-selection--dyd-14-099)
 
-### [Select another Part Number : DYD-14-099](#select-another-part-number--dyd-14-099)
-
-|             Properties              | DYD-14-099 |
-|:-----------------------------------:|:----------:|
-|             Gear ratio              |     99     |
-|       Repeatable peak torque        |     35     |
-| Rated torque<br>(@2,000 rpm) |    7.8     |
-|         Maximum input speed         |   6,000    |
-|         Average input speed         |   2,000    |
-|     Hysteresis loss / Backlash      |    <3.0    |
-|           Starting torque           |     20     |
-|            Service life             |   5,000    |
-|          Dimension (W X H)          |  ø68 x 30  |
-|               Weight                |    400     |
+|               Properties                | Unit   | DYD-14-099 |
+|:---------------------------------------:|:-------|:----------:|
+|               Gear ratio                | \-     |     99     |
+|     Rated output torque (@2,000rpm)     | Nm     |    5.4     |
+| Permissible peak torque (accel / decel) | Nm     |    21.6    |
+|    Permissible peak torque at E-stop    | Nm     |    43.2    |
+|           Nominal input speed           | rpm    |   2,000    |
+|           Maximum input speed           | rpm    |   8,500    |
+|                Backlash                 | arcmin |    <3.0    |
+|               Efficiency                | %      |     60     |
+|                Dimension                | mm     |  ∅68 × 30  |
+|                 Weight                  | g      |    400     |
 
 ### [Expected Service Life Calculation: DYD-14-099](#expected-service-life-calculation-dyd-14-099)
 
-| Properties | Description                    |  Value  | Note           |
-|:----------:|:-------------------------------|:-------:|:---------------|
-|     Lh     | Required service life [hours]  | 5,520.4 | cal.           |
-|     LR     | Reference service life [hours] |  5,000  | See data sheet |
-|     nR     | Nominal input speed [rpm]      |  2,000  | See data sheet |
-|     na     | Average input speed [rpm]      |  2,142  | -              |
-|     TR     | Nominal torque [N.m]           |   7.8   | See data sheet |
-|     Ta     | average output load [N.m]      |  4.72   | -              |
+|  Properties   | Description             |   Value    |      Note      |
+|:-------------:|:------------------------|:----------:|:--------------:|
+| Lh calculated | Calculated service life | 6,837 hour |      cal.      |
+|   Lh design   | Design service life     | 6,500 hour |                |
+|      nR       | Nominal input speed     | 2,000 rpm  | see data sheet |
+|      na       | Average input speed     | 2,142 rpm  |                |
+|      TR       | Rated torque            |   5.4 Nm   | see data sheet |
+|      Ta       | Average output torque   |  4.72 Nm   |                |
 
-### [Service Life Comparison: DYD-14-099](#service-life-comparison-dyd-14-099)
 
-Required service life : 5,000 hours > Expected service life : 5,520 hours
+### [Design service life comparison : DYD-14-099](#design-service-life-comparison--dyd-14-099)
 
-### [Calculate the output speed](#calculate-the-output-speed)
+Design service life : 6,500 hour < Calculated service life : 6,837 hour
 
-Output Speed i=-(1/R)*V_in = -(1/99)*3,000=30.3 rpm
+<!-- 
 
-### [Calculate the Peak Torque](#calculate-the-peak-torque)
+### [Confirm the Part Number : DYD-14-099](#confirm-the-part-number--dyd-14-099) 
 
-Maximum torque within the duty cycle = 7.5 Nm < 35 Nm (Repeatable peak torque)
+-->
 
-### [Check the Starting Torque](#check-the-starting-torque)
+### [Select the input shaft type](#select-the-type-input-shaft-type)
 
-Starting Torque = 20 cNm (DYD-14)
+Two types of input shafts are available; C and SD. 	
 
-### [Confirm the Part Number : DYD-14-099](#confirm-the-part-number--dyd-14-099)
-
-### [Select the Type of Input Shaft](#select-the-type-of-input-shaft)
-
-| Option |                Type - C                |                Type - SD                 |
+| Option |                Type - C                |                Type - SD                |
 |:------:|:--------------------------------------:|:---------------------------------------:|
 | Shape  | ![](/assets/images/dyd/dyd_c_type.png) | ![](/assets/images/dyd/dyd_sd_type.png) |
-|  Name  |               Clamp-ring               |                  Set-screw (D-Cut)        
-
-# [Glossary](#glossary)
-
-## [Rated torque](#rated-torque)
-
-Rated torque indicates allowable continuous load torque at rated input speed.
-
-## [Repeatable peak torque](#repeatable-peak-torque)
-
-The repeatable peak torque indicates the permissible torque for instantaneous load in case of emergency stop or unexpected impact.
-
-## [Maximum input speed](#maximum-input-speed)
-
-The maximum input speed indicates the speed limit of the continuous operation.
-
-## [Average input speed](#average-input-speed-1)
-
-The average  input  speed  indicates the average input speed of the duty cycle.
-
-## [Moment of inertia](#moment-of-inertia)
-
-Effective moment of inertia is calculated by the inertia of each rotating component and the variation of parallel axis theorem based on the input shaft rotation.
-
-## [Backlash](#backlash)
-
-As shown in Figure below, when the rated torque is gradually applied to the output shaft then removed while the input is firmly fixed, the differential torsional angle between the zero point and the output shaft is called the hysteresis loss which includes the clearance or mechanical margin between the gear mesh.
-
-![](/assets/images/dyd/dyd_hysteresis_loss.png)
-
-> Hysteresis loss
-
-## [Lost motion](#lost-motion)
-
-The lost motion indicates the torsional angle at +/- 3% of the Rated torque as shown in the figure above.
-
-## [Torsional stiffness](#torsional-stiffness)
-
-The torsional stiffness indicates the spring constants between 50% and 100% of the Rated torque, and can be calculated as follows: Torsional stiffness = b/a [Nm/arcmin].
-
-## [Efficiency](#efficiency)
-
-The efficiency of the reduction gears depends on the lost motion, input speed, load, lubricant temperature and size. The efficiency of each lineup is statistical value based on the test result. Please refer to the specification of each product.
-
-![](/assets/images/dyd/dyd_14_efficiency.png)
-
-> Efficiency characteristic for DYD-14
-
-## [No-load Starting torque](#no-load-starting-torque)
-
-The no-load starting torque indicates the quasi-static torque required to start rotation of the input shaft(dynamic friction) when no load is applied to the output flange. The value in specification is a statistical value based on the current production test results.
-
-## [Back-Drive torque](#back-drive-torque)
-
-As shown in the figure below, the back-drive torque indicates the amount of torque applied on the output flange just enough to start rotation of the input shaft under no load.
-
-![](/assets/images/dyd/dyd_back_drive_torque.png)
-
-> Back-Drive torque
-
-## [Lubrications](#lubrications)
-
-Grease for lubrication of the gearhead is injected during assembly, and additional injection is not required.
+|  Name  |               Clamp-ring               |            Set-screw (D-Cut)            |
 
 # [Use Applications](#use-applications)
 
 ![](/assets/images/dyd/dyd_application_01.png){: width="500px"}
-
 
 [DYD-11-033]: /docs/en/all-dyd/dyd-11/
 [DYD-11-051]: /docs/en/all-dyd/dyd-11/

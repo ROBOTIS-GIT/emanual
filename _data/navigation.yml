@@ -942,9 +942,9 @@ all-dyd:
     titlekr: "제품 라인업"
     url: /all-dyd/#product-lineup
     urlkr: /all-dyd/#제품-라인업
-  - title: "Glossary"
+  - title: "Engineering Data"
     titlekr: "기술 자료"
-    url: /all-dyd/#glossary
+    url: /all-dyd/#engineering-data
     urlkr: /all-dyd/#기술-자료
   - title: "Product Selection Guide"
     titlekr: "제품 선택 가이드"
