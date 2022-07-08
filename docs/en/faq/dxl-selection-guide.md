@@ -58,7 +58,7 @@ This information is invaluable in narrowing your choices for actuators before mo
 
 The easiest way to select a DYNAMIXEL based on its performance is to look at the N-T graph:
 
-![](/assets/images/dxl/pro/h54-100-s500-r_performance_graph_2.png)
+![](/assets/images/dxl/pro/h54-100-s500-r_performance_graph_2.jpg)
 > Performance Graph (N-T graph)
 
 <!-- {% include en/dxl/note_performance_graph.md %} -->
