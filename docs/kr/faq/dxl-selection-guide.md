@@ -59,7 +59,7 @@ sidebar:
 
 시스템의 요구 조건에 따라, 적합한 성능 그래프(N-T 그래프)를 가지는 다이나믹셀을 선택하세요.  
 
-![](/assets/images/dxl/pro/h54-100-s500-r_performance_graph_2.png)
+![](/assets/images/dxl/pro/h54-100-s500-r_performance_graph_2.jpg)
 > 성능 그래프 (N-T 그래프)
 
 **참고**: **Stall Torque**의 20%가 일반적인 시스템의 사용범주에 속합니다. Stall Torque는 제품 e-Manual의 **주요 사양**을 참고하세요. 
