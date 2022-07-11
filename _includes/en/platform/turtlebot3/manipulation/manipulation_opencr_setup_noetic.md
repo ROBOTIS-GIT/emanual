@@ -18,7 +18,7 @@ After OpenMANIPULATOR is properly mounted on TurtleBot3, the OpenCR firmware nee
 1. **[TurtleBot3 SBC]** Download the OpenCR firmware file on Raspberry Pi (SBC) and upload the correct firmware with the following commands.
 ```bash
 $ export OPENCR_PORT=/dev/ttyACM0
-$ export OPENCR_MODEL=om_with_tb3
+$ export OPENCR_MODEL=om_with_tb3_noetic
 $ rm -rf ./opencr_update.tar.bz2
 $ wget https://github.com/ROBOTIS-GIT/OpenCR-Binaries/raw/master/turtlebot3/ROS1/latest/opencr_update.tar.bz2
 $ tar -xvf opencr_update.tar.bz2
@@ -76,15 +76,17 @@ https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCR/master/arduino/opencr_relea
 6. Open the TurtleBot3 with OpenMANIPULATOR firmware.
   - TurtleBot3 with OpenMANIPULATOR : ***File > Examples > turtlebot3 > turtlebot3_with_open_manipulator > turtlebot3_with_open_manipulator_core***
 
-7. Connect OpenCR to the PC and Select ***OpenCR > OpenCR Board*** from ***Tools > Board*** menu.
+7. Uncomment `#define NOETIC_SUPPORT` on `turtlebot3_with_open_manipulator_core.h`, and save it with any name.
 
-8. Select the OpenCR connected USB port from ***Tools > Port*** menu.
+8. Connect OpenCR to the PC and Select ***OpenCR > OpenCR Board*** from ***Tools > Board*** menu.
 
-9. Upload the TurtleBot3 firmware sketch with `Ctrl` + `U` or the upload icon.  
+9. Select the OpenCR connected USB port from ***Tools > Port*** menu.
+
+10. Upload the TurtleBot3 firmware sketch with `Ctrl` + `U` or the upload icon.  
   ![](/assets/images/platform/turtlebot3/opencr/o2.png)  
   ![](/assets/images/platform/turtlebot3/opencr/o3.png)
 
-10. If firmware upload fails, try uploading with the recovery mode. Below sequence activates the recovery mode of OpenCR. Under the recovery mode, the `STATUS` led of OpenCR will blink periodically.
+11. If firmware upload fails, try uploading with the recovery mode. Below sequence activates the recovery mode of OpenCR. Under the recovery mode, the `STATUS` led of OpenCR will blink periodically.
   - Hold down the `PUSH SW2` button.
   - Press the `Reset` button.
   - Release the `Reset` button.

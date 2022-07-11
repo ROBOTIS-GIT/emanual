@@ -2,7 +2,7 @@
 {% capture notice_01 %}
 **NOTE**:
 
-- This instructions were tested on `Ubuntu 18.04` and `ROS Melodic Morenia`.
+- This instructions were tested on `Ubuntu 20.04` and `ROS Noetic Ninjemys`.
 - If you want more specfic information about OpenMANIPULATOR-X, please refer to the [OpenMANIPULATOR-X e-Manual](/docs/en/platform/openmanipulator/).
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>

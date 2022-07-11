@@ -9,7 +9,7 @@ $ cd ~/catkin_ws/src/
 $ git clone https://github.com/ROBOTIS-GIT/turtlebot3_manipulation.git
 $ git clone https://github.com/ROBOTIS-GIT/turtlebot3_manipulation_simulations.git
 $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_dependencies.git
-$ sudo apt install ros-melodic-ros-control* && ros-melodic-control* && ros-melodic-moveit*
+$ sudo apt install ros-noetic-ros-control* ros-noetic-control* ros-noetic-moveit*
 $ cd ~/catkin_ws && catkin_make
 ```
 
