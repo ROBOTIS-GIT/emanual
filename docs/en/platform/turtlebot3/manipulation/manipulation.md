@@ -35,10 +35,7 @@ page_number: 17
 </section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
-
-**NOTE**: This feature in the selected ROS distribution is not available yet. 
-{: .notice}
-
+{% include en/platform/turtlebot3/manipulation/manipulation_intro_nortic.md %}
 </section>
 
 <section data-id="{{ page.tab_title4 }}" class="tab_contents">
@@ -71,6 +68,10 @@ page_number: 17
 {% include en/platform/turtlebot3/manipulation/manipulation_tb3_with_openmanipulator_melodic.md %}
 </section>
 
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
+{% include en/platform/turtlebot3/manipulation/manipulation_tb3_with_openmanipulator_noetic.md %}
+</section>
+
 <section data-id="{{ page.tab_title4 }}" class="tab_contents">
 {% include en/platform/turtlebot3/manipulation/manipulation_tb3_with_openmanipulator_dashing.md %}
 </section>
@@ -84,6 +85,10 @@ page_number: 17
 
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
 {% include en/platform/turtlebot3/manipulation/manipulation_software_setup_melodic.md %}
+</section>
+
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
+{% include en/platform/turtlebot3/manipulation/manipulation_software_setup_noetic.md %}
 </section>
 
 <section data-id="{{ page.tab_title4 }}" class="tab_contents">
@@ -104,6 +109,10 @@ page_number: 17
 {% include en/platform/turtlebot3/manipulation/manipulation_opencr_setup_ros.md %}
 </section>
 
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
+{% include en/platform/turtlebot3/manipulation/manipulation_opencr_setup_noetic.md %}
+</section>
+
 <section data-id="{{ page.tab_title4 }}" class="tab_contents">
 {% include en/platform/turtlebot3/manipulation/manipulation_opencr_setup_dashing.md %}
 
@@ -121,6 +130,10 @@ page_number: 17
 {% include en/platform/turtlebot3/manipulation/manipulation_bringup_melodic.md %}
 </section>
 
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
+{% include en/platform/turtlebot3/manipulation/manipulation_bringup_noetic.md %}
+</section>
+
 <section data-id="{{ page.tab_title4 }}" class="tab_contents">
 {% include en/platform/turtlebot3/manipulation/manipulation_bringup_dashing.md %}
 </section>
@@ -135,6 +148,10 @@ page_number: 17
 {% include en/platform/turtlebot3/manipulation/manipulation_simulation_melodic.md %}
 </section>
 
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
+{% include en/platform/turtlebot3/manipulation/manipulation_simulation_noetic.md %}
+</section>
+
 <section data-id="{{ page.tab_title4 }}" class="tab_contents">
 {% include en/platform/turtlebot3/manipulation/manipulation_simulation_dashing.md %}
 </section>
@@ -147,6 +164,10 @@ page_number: 17
 
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
 {% include en/platform/turtlebot3/manipulation/manipulation_operate_the_actual_openmanipulator_melodic.md %}
+</section>
+
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
+{% include en/platform/turtlebot3/manipulation/manipulation_operate_the_actual_openmanipulator_noetic.md %}
 </section>
 
 <section data-id="{{ page.tab_title4 }}" class="tab_contents">
@@ -164,6 +185,10 @@ page_number: 17
 {% include en/platform/turtlebot3/manipulation/manipulation_slam_melodic.md %}
 </section>
 
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
+{% include en/platform/turtlebot3/manipulation/manipulation_slam_noetic.md %}
+</section>
+
 <section data-id="{{ page.tab_title4 }}" class="tab_contents">
 {% include en/platform/turtlebot3/manipulation/manipulation_slam_dashing.md %}
 </section>
@@ -176,6 +201,10 @@ page_number: 17
 
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
 {% include en/platform/turtlebot3/manipulation/manipulation_navigation_melodic.md %}
+</section>
+
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
+{% include en/platform/turtlebot3/manipulation/manipulation_navigation_noetic.md %}
 </section>
 
 <section data-id="{{ page.tab_title4 }}" class="tab_contents">
