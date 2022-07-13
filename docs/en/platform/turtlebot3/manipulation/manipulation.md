@@ -35,7 +35,7 @@ page_number: 17
 </section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
-{% include en/platform/turtlebot3/manipulation/manipulation_intro_nortic.md %}
+{% include en/platform/turtlebot3/manipulation/manipulation_intro_noetic.md %}
 </section>
 
 <section data-id="{{ page.tab_title4 }}" class="tab_contents">
