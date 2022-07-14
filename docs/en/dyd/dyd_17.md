@@ -20,7 +20,7 @@ product_group: all-dyd
 
 ## [Specifications](#specifications)
 
-|               Properties                |               Unit               | DYD-14-051 | DYD-14-099 | Note |
+|               Properties                |               Unit               | DYD-17-051 | DYD-17-099 | Note |
 |:---------------------------------------:|:--------------------------------:|:----------:|:-----------------:|
 |               Gear ratio                |                \-                |     51     |        99         |
 |     Rated output torque (@2,000rpm)     |                Nm                |     11     |        16         |
