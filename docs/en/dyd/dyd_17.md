@@ -21,21 +21,21 @@ product_group: all-dyd
 ## [Specifications](#specifications)
 
 |               Properties                |               Unit               | DYD-17-051 | DYD-17-099 | Note |
-|:---------------------------------------:|:--------------------------------:|:----------:|:-----------------:|
-|               Gear ratio                |                \-                |     51     |        99         |
-|     Rated output torque (@2,000rpm)     |                Nm                |     11     |        16         |
-| Permissible peak torque (accel / decel) |                Nm                |     44     |        64         |
-|    Permissible peak torque at E-stop    |                Nm                |     96     |        96         |
-|           Nominal input speed           |               rpm                |   2,000    |       2,000       |
-|           Maximum input speed           |               rpm                |   8,500    |       8,500       |
-|            Moment of inertia            | x10<sup>-4</sup> kgm<sup>2</sup> |   0.284    |       0.322       |
-|                Backlash                 |              arcmin              |    <3.0    |       <3.0        |
-|       Efficiency (@2,000rpm, 20℃)       |                %                 |     70     |        70         |
-|             Starting torque             |               cNm                |     4      |         3         |
-|            Back-Drive torque            |                Nm                |     5      |         5         |
-|              Service life               |               hour               |   7,000    |       7,000       |
-|                Dimension                |                mm                | Ø78 × 34.2 |    Ø78 × 34.2     |
-|                 Weight                  |                g                 |    600     |        600        |
+|:---------------------------------------:|:--------------------------------:|:----------:|:-----------------:|:---:|
+|               Gear ratio                |                \-                |     51     |        99         ||
+|     Rated output torque (@2,000rpm)     |                Nm                |     11     |        16         ||
+| Permissible peak torque (accel / decel) |                Nm                |     44     |        64         ||
+|    Permissible peak torque at E-stop    |                Nm                |     96     |        96         ||
+|           Nominal input speed           |               rpm                |   2,000    |       2,000       ||
+|           Maximum input speed           |               rpm                |   8,500    |       8,500       ||
+|            Moment of inertia            | x10<sup>-4</sup> kgm<sup>2</sup> |   0.284    |       0.322       ||
+|                Backlash                 |              arcmin              |    <3.0    |       <3.0        ||
+|       Efficiency (@2,000rpm, 20℃)      |                %                 |     70     |        70         ||
+|             Starting torque             |               cNm                |     4      |         3         ||
+|            Back-Drive torque            |                Nm                |     5      |         5         ||
+|              Service life               |               hour               |   7,000    |       7,000       ||
+|                Dimension                |                mm                | Ø78 × 34.2 |    Ø78 × 34.2     ||
+|                 Weight                  |                g                 |    600     |        600        ||
 
 **NOTE**: The specification and figures in the list are subject to update for the continuous product performance improvement.
 {: .notice}
