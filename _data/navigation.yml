@@ -26236,9 +26236,9 @@ openrb-150:
       url: /parts/controller/openrb-150/#serial-port
       urlkr: /parts/controller/openrb-150/#시리얼-포트
     - title: "LEDs"
-      titlekr: "LEDs"
+      titlekr: "LED"
       url: /parts/controller/openrb-150/#leds
-      urlkr: /parts/controller/openrb-150/#leds
+      urlkr: /parts/controller/openrb-150/#led
   - title: "Pin Name Definitions"
     titlekr: "핀 이름 정의"
     url: /parts/controller/openrb-150/#pin-name-definitions
@@ -26253,9 +26253,9 @@ openrb-150:
       url: /parts/controller/openrb-150/#connection-examples
       urlkr: /parts/controller/openrb-150/#연결-예시
   - title: "Development Environment"
-    titlekr: "개발 환경 설정"
+    titlekr: "개발 환경"
     url: /parts/controller/openrb-150/#development-environment
-    urlkr: /parts/controller/openrb-150/#개발-환경-설정
+    urlkr: /parts/controller/openrb-150/#개발-환경
     children:
     - title: "DYNAMIXEL Wizard 2.0"
       titlekr: "다이나믹셀 위자드 2.0"
@@ -26279,7 +26279,9 @@ openrb-150:
         url: /parts/controller/openrb-150/#install-on-windows
         urlkr: /parts/controller/openrb-150/#윈도우즈에-설치하기
     - title: "Install Board Manager"
+      titlekr: "보드 매니저 설치하기"
       url: /parts/controller/openrb-150/#install-board-manager
+      urlkr: /parts/controller/openrb-150/#보드-매니저-설치하기
     - title: "Library API"
       titlekr: "라이브러리 API"
       url: /parts/controller/openrb-150/#library-api
