@@ -14,20 +14,21 @@ product_group: all-dyd
 
 # [Overview](#overview)
 
-DYNAMIXEL DRIVE(DYD) is a Cycloidal Gear that achieves high torque and accurate repeatability while being compact, light, and strong.
+DYNAMIXEL DRIVE (DYD) is a cycloid-based compact reduction gear with superior impact resistance while realizing high torque, high efficiency and light weight.
+
 
 ![](/assets/images/dyd/dyd_spec_01.png)
 
-|                      Characteristics                      | Starain Wave Gear |     DYD     | Planetary Gear |
-|:---------------------------------------------------------:|:-----------------:|:-----------:|:--------------:|
-|                        Efficiency                         |    **&#9651;**    | **&#9678;** |  **&#9678;**   |
-|                     Back-Drive torque                     |    **&#9651;**    |    **O**    |  **&#9678;**   |
-|                    Accuracy (Backlash)                    |    **&#9678;**    | **&#9678;** |  **&#9651;**   |
-|               Rigidity under impact (shock)               |    **&#9651;**    | **&#9678;** |     **O**      |
-| Operating time to failure under heavy operating condition |    **&#9651;**    | **&#9678;** |     **O**      |
+|                      Characteristics                      |   **DYD**{: .red}   | Starain Wave Gear | Planetary Gear |
+|:---------------------------------------------------------:|:-------------------:|:-----------------:|:--------------:|
+|                        Efficiency                         | **&#9678;**{: .red} |    **&#9651;**    |  **&#9678;**   |
+|                     Back-Drive torque                     | **&#9711;**{: .red} |    **&#9651;**    |  **&#9678;**   |
+|                    Accuracy (Backlash)                    | **&#9678;**{: .red} |    **&#9678;**    |  **&#9651;**   |
+|               Rigidity under impact (shock)               | **&#9678;**{: .red} |    **&#9651;**    |  **&#9711;**   |
+| Operating time to failure under heavy operating condition | **&#9678;**{: .red} |    **&#9651;**    |  **&#9711;**   |
 
 - **&#9678;**: Excellent
-- **O** : Good
+- **&#9711;** : Good
 - **&#9651;**: Average
 
 {% include en/dyd/dyd_warning.md %}
@@ -36,11 +37,11 @@ DYNAMIXEL DRIVE(DYD) is a Cycloidal Gear that achieves high torque and accurate 
 
 ![](/assets/images/dyd/dyd_features_01.png)
 
-- High Durability and Strong Rigidity
-- High Impact Resistance
-- High Precision
-- Variable Gear Ratio
+- Superior Impact Resistance  
+- High Durability & Strong Rigidity                              
 - High Efficiency & Low Backlash
+- High Precision
+- Various Gear Ratios
 - Lightweight & Compact Gear Module
 
 ## [Gear Ratio and Rotational Direction](#gear-ratio-and-rotational-direction)
@@ -62,28 +63,34 @@ The housing fixed type is input and output rotations in the opposite direction.
 
 ## [Specifications](#specifications)
 
-|               Properties                |  Unit  | DYD-11-033 | DYD-11-051 | DYD-14-051 | DYD-14-099 | DYD-17-051 | DYD-17-099 |
-|:---------------------------------------:|:------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|
-|               Gear ratio                |   \-   |     33     |     51     |     51     |     99     |     51     |     99     |
-|     Rated output torque (@2,000rpm)     |   Nm   |    2.2     |    3.5     |    3.7     |    5.4     |     11     |     16     |
-| Permissible peak torque (accel / decel) |   Nm   |    8.8     |     14     |    14.8    |    21.6    |     44     |     64     |
-|    Permissible peak torque at E-stop    |   Nm   |     28     |     28     |    43.2    |    43.2    |     96     |     96     |
-|           Nominal input speed           |  rpm   |   2,000    |   2,000    |   2,000    |   2,000    |   2,000    |    2000    |
-|           Maximum input speed           |  rpm   |   8,500    |   8,500    |   8,500    |   8,500    |   8,500    |    8500    |
-|                Backlash                 | arcmin |    <3.0    |    <3.0    |    <3.0    |    <3.0    |    <3.0    |    <3.0    |
-|               Efficiency                |   %    |     65     |     65     |     60     |     60     |     70     |     70     |
-|                Dimension                |   mm   | □43 × 23.5 | □43 × 23.5 |  ∅68 × 30  |  ∅68 × 30  | ∅78 × 34.2 | ∅78 × 34.2 |
-|                 Weight                  |   g    |    196     |    196     |    400     |    400     |    600     |    600     |
+|                Properties                |  Unit  | DYD-11-033 | DYD-11-051 | DYD-14-051 | DYD-14-099 | DYD-17-051 | DYD-17-099 |
+|:----------------------------------------:|:------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|
+|                Gear ratio                |   \-   |     33     |     51     |     51     |     99     |     51     |     99     |
+|     Rated output torque (@2,000rpm)      |   Nm   |    2.2     |    3.5     |    3.7     |    5.4     |     11     |     16     |
+| Permissible peak torque at accel / decel |   Nm   |    8.8     |     14     |    14.8    |    21.6    |     44     |     64     |
+|    Permissible peak torque at E-stop     |   Nm   |     28     |     28     |    43.2    |    43.2    |     96     |     96     |
+|           Nominal input speed            |  rpm   |   2,000    |   2,000    |   2,000    |   2,000    |   2,000    |    2000    |
+|           Maximum input speed            |  rpm   |   8,500    |   8,500    |   8,500    |   8,500    |   8,500    |    8500    |
+|                 Backlash                 | arcmin |    <3.0    |    <3.0    |    <3.0    |    <3.0    |    <3.0    |    <3.0    |
+|       Efficiency (@ 2,000rpm, 20℃)       |   %    |     65     |     65     |     60     |     60     |     70     |     70     |
+|             Starting torque              |  cNm   |     5      |     3      |     5      |     3      |     4      |     3      |
+|            Back-drive torque             |   Nm   |     1      |     1      |     3      |     3      |     5      |     5      |
+|                Dimensions                |   mm   | □43 × 23.5 | □43 × 23.5 |  ∅68 × 30  |  ∅68 × 30  | ∅78 × 34.2 | ∅78 × 34.2 |
+|                  Weight                  |   g    |    196     |    196     |    400     |    400     |    600     |    600     |
 
-## [Part Numbers](#part-numbers)
+- **Nominal input speed**: 2,000 rpm
+- **Maximum input speed**: 8,500 rpm
+- **Service life**: 7,000 hours
 
-![](/assets/images/dyd/dyd_parts_numbe_update_01.jpg)
+## [Naming Convention](#naming-convention)
 
-| Product name | Model Size | Ratio  |                 Option                  | Special production |
-|:------------:|:----------:|:------:|:---------------------------------------:|:------------------:|
-|     DYD      |     11     | 33, 51 | C (Clamp Ring)<br>SD: Set-Screw (D-Cut) |         SP         |
-|     DYD      |     14     | 51, 99 | C (Clamp Ring)<br>SD: Set-Screw (D-Cut) |         SP         |
-|     DYD      |     17     | 51, 99 | C (Clamp Ring)<br>SD: Set-Screw (D-Cut) |         SP         |
+![](/assets/images/dyd/dyd_parts_number_update_01.jpg)
+
+| Product Name | Model Size | Gear Ratio | Input Shaft | Special Production |
+|:------------:|:----------:|:----------:|:-----------:|:------------------:|
+|     DYD      |     11     |   33, 51   |  C <br>SD   |         SP         |
+|     DYD      |     14     |   51, 99   |  C <br>SD   |         SP         |
+|     DYD      |     17     |   51, 99   |  C <br>SD   |         SP         |
 
 # [Engineering Data](#engineering-data)
 
@@ -91,7 +98,7 @@ The housing fixed type is input and output rotations in the opposite direction.
 
 Rated output torque indicates allowable continuous load torque at rated input speed.
 
-## [Permissible peak torque (accel / decel)](#permissible-peak-torque-accel--decel)
+## [Permissible peak torque at accel / decel](#permissible-peak-torque-at-accel--decel)
 
 When the reducer is operating, a torque higher than the rated torque is applied during acceleration or deceleration. It is used when calculating the average output torque. See "duty cycle".
 
@@ -115,7 +122,7 @@ The moment of inertia represents the moment of mass inertia based on the input a
 
 ## [Backlash](#backlash)
 
-As shown in Figure, when the applied torque is increased to the rated torque and is brought back to zero, the torsional angle does not return exactly back to the zero point. This small difference is called hysteresis loss. 
+As shown in the figure below, when the applied torque is increased to the rated torque and is brought back to zero, the torsional angle does not return exactly back to the zero point. This small difference is called hysteresis loss. 
 
 ![](/assets/images/dyd/all_dyd/dyd_backlash.png)
 
@@ -127,7 +134,7 @@ The efficiency of the reduction gears depends on the specific lost motion, input
 
 The starting torque is a quasi-static torque required to start rotation of the input shaft(dynamic friction), if no load is applied to the output flange. 
 
-## [Back-Drive torque](#back-drive-torque)
+## [Back-drive torque](#back-drive-torque)
 
 The back-driving torque is the torque applied on the output flange that is required to start rotation of the input shaft under no load. And the output flange fully rotate 1 revolution.
 
