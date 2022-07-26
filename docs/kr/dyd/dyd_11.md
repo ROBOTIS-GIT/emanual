@@ -52,7 +52,7 @@ product_group: all-dyd
 
 # [기구도면](#기구도면)
 
-![](/assets/images/dyd/dyd_11_drawing_update.png)
+![](/assets/images/dyd/drawing/dyd_11_drawing_update_enlarged.png)
 
 # [옵션 및 조립공차](#옵션-및-조립공차)
 

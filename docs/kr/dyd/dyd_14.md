@@ -37,7 +37,6 @@ product_group: all-dyd
 |            크기             |                mm                |  Ø68 × 30  |  Ø68 × 30  |
 |            무게             |                g                 |    400     |    400     |
 
-
 **참고**: 제품의 성능 개선을 위해 사양은 변경될 수 있습니다.
 {: .notice}
 
@@ -53,7 +52,7 @@ product_group: all-dyd
 
 # [기구도면](#기구도면)
 
-![](/assets/images/dyd/dyd_14_drawing_update.png)
+![](/assets/images/dyd/drawing/dyd_14_drawing_update_enlarged.png)
 
 # [옵션 및 조립공차](#옵션-및-조립공차)
 

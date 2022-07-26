@@ -32,9 +32,9 @@ product_group: all-dyd
 |                Backlash                 |              arcmin              |    <3.0     |    <3.0     |
 |       Efficiency (@2,000rpm, 20℃)       |                %                 |     65      |     65      |
 |             Starting torque             |               cNm                |      5      |      3      |
-|            Back-Drive torque            |                Nm                |      1      |      1      |
+|            Back-drive torque            |                Nm                |      1      |      1      |
 |              Service life               |               hour               |    7,000    |    7,000    |
-|                Dimension                |                mm                | □43 × 23.65 | □43 × 23.65 |
+|               Dimensions                |                mm                | □43 × 23.65 | □43 × 23.65 |
 |                 Weight                  |                g                 |     196     |     196     |
 
 **NOTE**: The specification and figures in the list are subject to update for the continuous product performance improvement.
@@ -54,7 +54,7 @@ The efficiency curves of input speed versus output torque are as follows.
 
 # [Drawings](#drawings)
 
-![](/assets/images/dyd/dyd_11_drawing_update.png)
+![](/assets/images/dyd/drawing/dyd_11_drawing_update_enlarged.png)
 
 # [Options & Assembly Tolerance](#options--assembly-tolerance)
 

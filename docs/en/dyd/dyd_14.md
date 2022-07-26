@@ -32,9 +32,9 @@ product_group: all-dyd
 |                Backlash                 |              arcmin              |    <3.0    |       <3.0        |
 |       Efficiency (@2,000rpm, 20℃)       |                %                 |     60     |        60         |
 |             Starting torque             |               cNm                |     5      |         3         |
-|            Back-Drive torque            |                Nm                |     3      |         3         |
+|            Back-drive torque            |                Nm                |     3      |         3         |
 |              Service life               |               hour               |   7,000    |       7,000       |
-|                Dimension                |                mm                |  Ø68 × 30  |     Ø68 × 30      |
+|               Dimensions                |                mm                |  Ø68 × 30  |     Ø68 × 30      |
 |                 Weight                  |                g                 |    400     |        400        |
 
 **NOTE**: The specification and figures in the list are subject to update for the continuous product performance improvement.
@@ -54,7 +54,7 @@ The efficiency curves of input speed versus output torque are as follows.
 
 # [Drawings](#drawings)
 
-![](/assets/images/dyd/dyd_14_drawing_update.png)
+![](/assets/images/dyd/drawing/dyd_14_drawing_update_enlarged.png)
 
 # [Options & Assembly Tolerance](#options--assembly-tolerance)
 
@@ -62,10 +62,10 @@ The efficiency curves of input speed versus output torque are as follows.
 
 Various input shaft options can be selected with the DYD. See the following table and select the input shaft option to use with DYD. 
 
-| Option |                Type - C                |                Type - SD                 |
+| Option |                Type - C                |                Type - SD                |
 |:------:|:--------------------------------------:|:---------------------------------------:|
 | Shape  | ![](/assets/images/dyd/dyd_c_type.png) | ![](/assets/images/dyd/dyd_sd_type.png) |
-|  Name  |               Clamp-ring               |                 Set-screw (D-Cut)                  |
+|  Name  |               Clamp-ring               |            Set-screw (D-Cut)            |
 
 ## [Assembly Tolerance](#assembly-tolerance)
 
