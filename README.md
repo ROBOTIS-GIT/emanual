@@ -1,9 +1,10 @@
 # ROBOTIS wiki e-Manual
 
 **Hi, welcome to the e-Manual!**
-- For general discussions, inquiries, and support for your projects, please visit **[User Community]**.
-- You can also find useful resources through the **[ROBOTIS Download Center]**, such as Drawings (2D/3D CAD), and Software.
-- To see tranlations as you browse the e-Manual, click the Google Translate icon <img src="/assets/images/icon_google.png"> placed on the right side of the page
+
+- Visit [https://emanual.robotis.com/](https://emanual.robotis.com/)
+- For general discussions, inquiries, and support for your projects, please visit User Community.
+- You can also find useful resources through the ROBOTIS Download Center, such as Drawings (2D/3D CAD), and Software.
 
 [User Community]: https://community.robotis.us/
 [robotis download center]: http://en.robotis.com/service/downloadcenter.php
