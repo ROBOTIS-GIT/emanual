@@ -609,11 +609,11 @@ main:
       - title: "CM-700"
         titlekr: "CM-700"
         url: /parts/controller/cm-700/
+      - title: "OpenRB-150"
+        titlekr: "OpenRB-150"
+        url: /parts/controller/openrb-150/
       - titlekr: "OpenCM7.0"
         url: /parts/controller/opencm7/
-      # - title: "OpenRB-150"
-      #   titlekr: "OpenRB-150"
-      #   url: /parts/controller/openrb-150/
       - title: "OpenCM9.04"
         titlekr: "OpenCM9.04"
         url: /parts/controller/opencm904/
