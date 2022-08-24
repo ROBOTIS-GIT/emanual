@@ -318,8 +318,9 @@ If error occurs during the Upload process, please try uploading the sketch in th
 
 # [Downloads](#downloads)
 
-- [OpenRB-150 Schematic (PDF)]
-- [OpenRB-150 3D Modeling (STL)]
+- OpenRB-150 Schematic ([PDF](https://www.robotis.com/service/download.php?no=2117))
+- OpenRB-150 2D Drawing ([PDF](https://www.robotis.com/service/download.php?no=2120), [DWG](https://www.robotis.com/service/download.php?no=2119))
+- OpenRB-150 3D Modeling ([STL](https://www.robotis.com/service/download.php?no=2118), [STEP](https://www.robotis.com/service/download.php?no=2121))
 - OpenRB-150 Board Manager ([GitHub Repo](https://github.com/ROBOTIS-GIT/OpenRB-150))
 - DYNAMIXEL2Arduino Library ([GitHub Repo](https://github.com/ROBOTIS-GIT/Dynamixel2Arduino))
 
@@ -330,5 +331,3 @@ If error occurs during the Upload process, please try uploading the sketch in th
 [DYNAMIXEL Wizard 2.0]: /docs/en/software/dynamixel/dynamixel_wizard2/
 [Arduino IDE]: https://www.arduino.cc/en/software
 [DYNAMIXEL Communication Bridge]: /docs/en/parts/interface/dxl_bridge/
-[OpenRB-150 Schematic (PDF)]: https://www.robotis.com/service/download.php?no=2117
-[OpenRB-150 3D Modeling (STL)]: https://www.robotis.com/service/download.php?no=2118
