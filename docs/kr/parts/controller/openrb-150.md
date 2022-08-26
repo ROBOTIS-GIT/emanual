@@ -385,8 +385,9 @@ OpenRB-150이 연결된 Port를 선택 후, `업로드` 버튼을 클릭하면 �
 
 # [다운로드](#다운로드)
 
-- [OpenRB-150 회로도 (PDF)]
-- [OpenRB-150 3D 모델링 파일 (STL)]
+- OpenRB-150 회로도 ([PDF](https://www.robotis.com/service/download.php?no=2117))
+- OpenRB-150 2D 도면 ([PDF](https://www.robotis.com/service/download.php?no=2120), [DWG](https://www.robotis.com/service/download.php?no=2119))
+- OpenRB-150 3D 모델링 파일 ([STL](https://www.robotis.com/service/download.php?no=2118), [STEP](https://www.robotis.com/service/download.php?no=2121))
 - OpenRB-150 Board Manager ([GitHub Repo](https://github.com/ROBOTIS-GIT/OpenRB-150))
 - DYNAMIXEL2Arduino Library ([GitHub Repo](https://github.com/ROBOTIS-GIT/Dynamixel2Arduino))
 
@@ -397,8 +398,6 @@ OpenRB-150이 연결된 Port를 선택 후, `업로드` 버튼을 클릭하면 �
 [다이나믹셀 위자드 2.0]: /docs/kr/software/dynamixel/dynamixel_wizard2/
 [아두이노 IDE]: https://www.arduino.cc/en/software
 [다이나믹셀 커뮤니케이션 브릿지]: /docs/kr/parts/interface/dxl_bridge/
-[OpenRB-150 회로도 (PDF)]: https://www.robotis.com/service/download.php?no=2117
-[OpenRB-150 3D 모델링 파일 (STL)]: https://www.robotis.com/service/download.php?no=2118
 
 <!-- D2A Library Popup -->
 [Arduino Official Guide]: https://www.arduino.cc/en/Guide/Libraries
