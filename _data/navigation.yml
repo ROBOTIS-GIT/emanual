@@ -7027,22 +7027,6 @@ xc430-w240:
             titlekr: "힌지 프레임 조립하기"
             url: /dxl/x/2xl430-w250/#hinge-frame-assembly
             urlkr: /dxl/x/2xl430-w250/#힌지-프레임-조립하기
-          - title: "Side Frame Assembly"
-            titlekr: "사이드 프레임 조립하기"
-            url: /dxl/x/2xl430-w250/#side-frame-assembly
-            urlkr: /dxl/x/2xl430-w250/#사이드-프레임-조립하기
-          - title: "Gripper Assembly"
-            titlekr: "그리퍼 조립하기"
-            url: /dxl/x/2xl430-w250/#gripper-assembly
-            urlkr: /dxl/x/2xl430-w250/#그리퍼-조립하기
-          - title: "Frame Combination"
-            titlekr: "프레임 활용 하기"
-            url: /dxl/x/2xl430-w250/#frame-combination
-            urlkr: /dxl/x/2xl430-w250/#프레임-활용-하기
-          - title: "Custom Frame Assembly"
-            titlekr: "기타 프레임 조립 예시"
-            url: /dxl/x/2xl430-w250/#custom-frame-assembly
-            urlkr: /dxl/x/2xl430-w250/#기타-프레임-조립-예시
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/x/2xl430-w250/#reference
@@ -7292,22 +7276,6 @@ xc430-w240:
             titlekr: "힌지 프레임 조립하기"
             url: /dxl/x/2xc430-w250/#hinge-frame-assembly
             urlkr: /dxl/x/2xc430-w250/#힌지-프레임-조립하기
-          - title: "Side Frame Assembly"
-            titlekr: "사이드 프레임 조립하기"
-            url: /dxl/x/2xc430-w250/#side-frame-assembly
-            urlkr: /dxl/x/2xc430-w250/#사이드-프레임-조립하기
-          - title: "Gripper Assembly"
-            titlekr: "그리퍼 조립하기"
-            url: /dxl/x/2xc430-w250/#gripper-assembly
-            urlkr: /dxl/x/2xc430-w250/#그리퍼-조립하기
-          - title: "Frame Combination"
-            titlekr: "프레임 활용 하기"
-            url: /dxl/x/2xc430-w250/#frame-combination
-            urlkr: /dxl/x/2xc430-w250/#프레임-활용-하기
-          - title: "Custom Frame Assembly"
-            titlekr: "기타 프레임 조립 예시"
-            url: /dxl/x/2xc430-w250/#custom-frame-assembly
-            urlkr: /dxl/x/2xc430-w250/#기타-프레임-조립-예시
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/x/2xc430-w250/#reference
