@@ -36,15 +36,15 @@ sidebar:
 |    RX Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    O     |                X(O)                 |      X      |    O     |      X       |
 |    EX Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    O     |                X(O)                 |      X      |    O     |      X       |
 |  MX Series(TTL)  |   O    |    X    |    X     |    X     |    X     |    X     |    O     |    O     |    X     |    O     |    O     |                X(O)                 |      X      |    O     |      O       |
-| MX Series(RS485) |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    O     |                X(O)                 |      X      |    O     |O(Comm Bridge)|
+| MX Series(RS485) |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    O     |                X(O)                 |      X      |    O     |O([Comm Bridge])|
 |      XL-320      |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    O     |                O(X)                 |      X      |    X     |      O       |
 |    XL Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |                X(O)                 |      X      |    O     |      O       |
 |    XC Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |                X(O)                 |      X      |    O     |      O       |
 |    XM Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |                X(O)                 |      X      |    O     |      O       |
 |    XH Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |                X(O)                 |      X      |    O     |      O       |
-|    XD Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |                X(O)                 |      X      |    O     |O(Comm Bridge)|
-|    XW Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |                X(O)                 |      X      |    O     |O(Comm Bridge)|
-|    PRO Series    |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    X     |                X(O)                 |      X      |    O     |O(Comm Bridge)|
+|    XD Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |                X(O)                 |      X      |    O     |O([Comm Bridge])|
+|    XW Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |                X(O)                 |      X      |    O     |O([Comm Bridge])|
+|    PRO Series    |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    X     |                X(O)                 |      X      |    O     |O([Comm Bridge])|
 
 **NOTE**: OpenCM9.04 with OpenCM 485 EXP can use all types of DYNAMIXEL.
 {: .notice}
@@ -182,6 +182,8 @@ sidebar:
 [OpenCM7.0]: /docs/kr/parts/controller/opencm7/
 [OpenCM 485 EXP]: /docs/en/parts/controller/opencm485exp/
 [OpenCR]: /docs/en/parts/controller/opencr10/
+[OpenRB-150]: /docs/en/parts/controller/openrb-150/
+[Comm Bridge]: /docs/en/parts/interface/dxl_bridge/
 [R+ Task 1.0]: /docs/en/software/rplus1/task/getting_started/
 [R+ Manager 1.0]: /docs/en/software/rplus1/manager/
 [R+ Motion  1.0]: /docs/en/software/rplus1/motion/

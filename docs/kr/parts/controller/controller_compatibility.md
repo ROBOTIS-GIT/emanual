@@ -29,22 +29,22 @@ sidebar:
 
 ## [다이나믹셀 호환표](#다이나믹셀-호환표)
 
-|       모델       | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-151] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[OpenCM 485 확장보드]) | [OpenCM 7.0] | [OpenCR] | [OpenRB-150] |
-|:----------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:----------------------------------------:|:------------:|:--------:|:------------:|
-|    AX Series     |   O    |    X    |    X     |    X     |    X     |    X     |    O     |    O     |    X     |    O     |    O     |                   X(O)                   |      X       |    O     |      O       |
-|    DX Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    O     |                   X(O)                   |      X       |    O     |      X       |
-|    RX Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    O     |                   X(O)                   |      X       |    O     |      X       |
-|    EX Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    O     |                   X(O)                   |      X       |    O     |      X       |
-|  MX Series(TTL)  |   O    |    X    |    X     |    X     |    X     |    X     |    O     |    O     |    X     |    O     |    O     |                   X(O)                   |      X       |    O     |      O       |
-| MX Series(RS485) |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    O     |                   X(O)                   |      X       |    O     |O(Comm Bridge)|
-|      XL-320      |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    O     |                   O(X)                   |      X       |    X     |      O       |
-|    XL Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |                   X(O)                   |      X       |    O     |      O       |
-|    XC Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |                   X(O)                   |      X       |    O     |      O       |
-|    XM Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |                   X(O)                   |      X       |    O     |      O       |
-|    XH Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |                   X(O)                   |      X       |    O     |      O       |
-|    XD Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |                   X(O)                   |      X       |    O     |O(Comm Bridge)|
-|    XW Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |                   X(O)                   |      X       |    O     |O(Comm Bridge)|
-|    PRO Series    |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                   X(O)                   |      X       |    O     |O(Comm Bridge)|
+|       모델       | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-151] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[OpenCM 485 확장보드]) | [OpenCM 7.0] | [OpenCR] |   [OpenRB-150]   |
+|:----------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:----------------------------------------:|:------------:|:--------:|:----------------:|
+|    AX Series     |   O    |    X    |    X     |    X     |    X     |    X     |    O     |    O     |    X     |    O     |    O     |                   X(O)                   |      X       |    O     |        O         |
+|    DX Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    O     |                   X(O)                   |      X       |    O     |        X         |
+|    RX Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    O     |                   X(O)                   |      X       |    O     |        X         |
+|    EX Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    O     |                   X(O)                   |      X       |    O     |        X         |
+|  MX Series(TTL)  |   O    |    X    |    X     |    X     |    X     |    X     |    O     |    O     |    X     |    O     |    O     |                   X(O)                   |      X       |    O     |        O         |
+| MX Series(RS485) |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    O     |                   X(O)                   |      X       |    O     | O([Comm Bridge]) |
+|      XL-320      |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    O     |                   O(X)                   |      X       |    X     |        O         |
+|    XL Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |                   X(O)                   |      X       |    O     |        O         |
+|    XC Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |                   X(O)                   |      X       |    O     |        O         |
+|    XM Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |                   X(O)                   |      X       |    O     |        O         |
+|    XH Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |                   X(O)                   |      X       |    O     |        O         |
+|    XD Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |                   X(O)                   |      X       |    O     | O([Comm Bridge]) |
+|    XW Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |                   X(O)                   |      X       |    O     | O([Comm Bridge]) |
+|    PRO Series    |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                   X(O)                   |      X       |    O     | O([Comm Bridge]) |
 
 **참고**: OpenCM9.04을 OpenCM 485 확장보드와 함께 사용하면, 모든 다이나믹셀을 제어할수 있습니다.
 {: .notice}
@@ -182,6 +182,8 @@ sidebar:
 [OpenCM 7.0]: /docs/kr/parts/controller/opencm7/
 [OpenCM 485 확장보드]: /docs/kr/parts/controller/opencm485exp/
 [OpenCR]: /docs/en/parts/controller/opencr10/
+[OpenRB-150]: /docs/kr/parts/controller/openrb-150/
+[Comm Bridge]: /docs/kr/parts/interface/dxl_bridge/
 [로보플러스 태스크 1.0]: /docs/kr/software/rplus1/task/getting_started/
 [로보플러스 매니저 1.0]: /docs/kr/software/rplus1/manager/
 [로보플러스 모션  1.0]: /docs/kr/software/rplus1/motion/
