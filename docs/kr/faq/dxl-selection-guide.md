@@ -15,7 +15,7 @@ sidebar:
 
 # [시작하기](#시작하기)
 
-다이나믹셀 선택 가이드는 다이나믹셀을 처음 시작하는 유저를 위해 만들어진 문서입니다. 
+다이나믹셀 선택 가이드는 다이나믹셀을 처음 시작하는 유저를 위해 만들어진 문서입니다.  
 사용자의 개발환경에 적합한 제품과 개발도구를 선택 하는것이 좋습니다. 아래 4가지 항목들을 참고하여, 사용자의 시스템에 적합한 다이나믹셀 및 호환되는 제품과 개발 도구를 선택하세요. 
 
 - [다이나믹셀 ](#다이나믹셀-)
@@ -244,7 +244,9 @@ U2D2는 USB 신호를 TTL 또는 RS-485 신호로 변환해주는 통신 변환 
 
 ### [OpenCR1.0](#opencr10)
 
-[OpenCR 1.0]은 ARM Cortex-M7 및 IMU 센서 / 다양한 포트가 내장된 사용한 강력한 성능의 오픈소스 로봇 제어기입니다. PCB Gerber, BOM, 펌웨어 및 소스 코드 등 개발에 필요한 자료가 공개되어있으며, 아두이노 환경에서 [다이나믹셀 SDK](#다이나믹셀-sdk-arduino)와 전용 [아두이노 라이브러리](#아두이노-라이브러리)를 사용하여 다이나믹셀을 제어합니다. ROS 공식 플랫폼인 [TurtleBot3](/docs/en/platform/turtlebot3/overview/)의 제어기로 사용되었습니다. 
+[OpenCR 1.0]은 ARM Cortex-M7 및 IMU 센서 / 다양한 포트가 내장된 사용한 강력한 성능의 오픈소스 로봇 제어기입니다.  
+PCB Gerber, BOM, 펌웨어 및 소스 코드 등 개발에 필요한 자료가 공개되어있으며, 아두이노 환경에서 [다이나믹셀 SDK](#다이나믹셀-sdk-arduino)와 전용 [아두이노 라이브러리](#아두이노-라이브러리)를 사용하여 다이나믹셀을 제어합니다.  
+ROS 공식 플랫폼인 [TurtleBot3](/docs/en/platform/turtlebot3/overview/)의 제어기로 사용되었습니다. 
 
 ![](/assets/images/parts/controller/opencr10/opencr_pinout.png) 
 > OpenCR 1.0 핀맵 및 레이아웃
@@ -297,7 +299,8 @@ CM 시리즈는 로보티즈가 제공하는 전용 센서를 사용할 수 있�
 
 # [소프트웨어와 도구](#소프트웨어와-도구)
 
-다이나믹셀 제어를 위해, 제어기와 호환되는 적절한 소프트웨어를 사용해야 합니다. 선택한 제어기에 따라, 적절한 다이나믹셀 테스트 및 관리 도구 / 개발 도구 / 교육용 소프트웨어를 선택하세요. 
+다이나믹셀 제어를 위해, 제어기와 호환되는 적절한 소프트웨어를 사용해야 합니다.  
+선택한 제어기에 따라, 적절한 다이나믹셀 테스트 및 관리 도구 / 개발 도구 / 교육용 소프트웨어를 선택하세요. 
 
 [소프트웨어 호환표](/docs/kr/parts/controller/controller_compatibility/#소프트웨어-호환표)를 참고하여, 선택한 소프트웨어가 제어기와 호환되는지 확인할 수 있습니다.
 
@@ -319,7 +322,8 @@ DYNAMIXEL Wizard 2.0은 다음 특징이 있습니다.
 
 ### [R+ Manager 2.0](#r-manager-20)
 
-[R+ Manager 2.0](/docs/kr/software/rplus2/manager/)은 로보플러스 소프트웨어 중 하나입니다. R+Manager 2.0은 CM 시리즈 및 교육용 키트에서 제공되는 [CM 시리즈](#cm-시리즈)의 유지보수(펌웨어 복구 및 업데이트) 및 CM 시리즈에 연결된 다이나믹셀의 테스트를 위해서 사용될 수 있습니다. 
+[R+ Manager 2.0](/docs/kr/software/rplus2/manager/)은 로보플러스 소프트웨어 중 하나입니다.  
+R+Manager 2.0은 CM 시리즈 및 교육용 키트에서 제공되는 [CM 시리즈](#cm-시리즈)의 유지보수(펌웨어 복구 및 업데이트) 및 CM 시리즈에 연결된 다이나믹셀의 테스트를 위해서 사용될 수 있습니다. 
 
 ![](/assets/images/sw/rplus2/manager/roboplus_manager2_07.jpg)
 
@@ -332,7 +336,8 @@ DYNAMIXEL Wizard 2.0은 다음 특징이 있습니다.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/F-sXbIAM0jc" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
-[다이나믹셀 SDK](/docs/kr/software/dynamixel/dynamixel_sdk/overview/)는 주요 OS(Windows, Mac, Linux)에서, 다양한 개발언어(C, C++, C#, Python, Java, Matlab and LabVIEW)를 지원하는 개발 키트 라이브러리입니다. 제공되는 API를 사용하여, 다이나믹셀의 데이터에 쉽게 접근하여 데이터를 쓰고 읽을 수 있습니다. 
+[다이나믹셀 SDK](/docs/kr/software/dynamixel/dynamixel_sdk/overview/)는 주요 OS(Windows, Mac, Linux)에서, 다양한 개발언어(C, C++, C#, Python, Java, Matlab and LabVIEW)를 지원하는 개발 키트 라이브러리입니다.   
+제공되는 API를 사용하여, 다이나믹셀의 데이터에 쉽게 접근하여 데이터를 쓰고 읽을 수 있습니다. 
 
 **참고**: 다이나믹셀에 읽고 쓰기 위해서는, 디바이스의 출력 신호 (USB 또는 UART)를 다이나믹셀 통신 프로토콜인 TTL 및 RS-485 통신 회로를 구성하여 신호를 변환해야 합니다. 다이나믹셀 SDK를 PC 및 SBC 환경에서 사용한다면, 통신 변환 인터페이스인 [U2D2](#u2d2)사용이 권장됩니다. 다이나믹셀의 통신 회로는 [통신](#통신)을 참고하세요. 
 {: .notice}

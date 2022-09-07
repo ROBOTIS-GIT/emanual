@@ -13,22 +13,24 @@ sidebar:
 
 {::options parse_block_html="true" /}
 
-# [Getting Started](#getting-started)
+**NOTE**: Although the videos and guides included on this page utilize ROBOTIS parts and software, DYNAMIXELs are compatible with a wide variety of 3rd Party software and control solutions.
+Additionally, the source code for the libraries utilized throughout these tutorials are available on the official [ROBOTIS Github Repo](https://github.com/ROBOTIS-GIT/), so that they may be customized for your application.
+{: .notice} 
 
-DYNAMIXEL Quick Start Guide is the series of videos covering ROBOTIS software and DYNAMIXEL.  
+# [Getting Started](#getting-started) 
 
-This guide will be helpful for first DYNAMIXEL users or rookies before starting a project. 
+The DYNAMIXEL Quick Start Guide is a series of videos designed to help first time users, or individuals learning new ways to utilize their DYNAMIXEL actuators or ROBOTIS software.
 
-The following table shortly shows what controller or interface is used with selected software along the guide. 
+This index lists the videos included in the DYNAMIXEL Quick start guide series, and specifies the software and hardware used in each. Each included category has a corresponding index listing the same information about each video.
 
 | Enviroment  | Software & Tool        | Controller                     | Interface                              |
 |:------------|:-----------------------|:-------------------------------|:---------------------------------------|
 | PC, SBC     | [DYNAMIXEL SDK]        | None                           | U2D2                                   |
 | Arduino IDE | [Dynamixel2Arduino]    | OpenCR 1.0, OpenCM 9.04        | None                                   |
-| Arduino IDE | [DynamixelShield]      | Compatible Arduino formfactors | Dynamixel Shield, Dynamixel Shield MKR |
+| Arduino IDE | [DynamixelShield]      | Compatible Arduino form factors | Dynamixel Shield, Dynamixel Shield MKR |
 | PC          | [DYNAMIXEL Wizard 2.0] | None                           | U2D2, OpenCR 1.0                       |
 
-**NOTE**: Before starting the guide, visit the [DYNAMIXEL Selection Guide] and see brief information on products and software introduced in the series.
+**NOTE**: Before you begin, consult the [DYNAMIXEL Selection Guide] to learn how to select the to select components and software for your DYNAMIXEL system.
 {: .notice}
 
 <!-- 
@@ -43,7 +45,7 @@ As the provided libraries are shared through our github ([ROBOTIS](https://githu
 
 -->
 
-## [Archive](#archive)
+## [Index](#index)
 
 For your convenience, available contents in this page are archived under the ![](/assets/images/icon_unfold.png) **Tip** below.
 
@@ -73,11 +75,9 @@ For your convenience, available contents in this page are archived under the ![]
 
 # [DYNAMIXEL SDK](#dynamixel-sdk)
 
-DYNAMIXEL SDK is the modulized development kit to control DYNAMIXEL for your system.
+The DYNAMIXEL SDK is a modular software development kit to control DYNAMIXELs in in a variety of programming languages.
 
-Not just provided contents in the table, also many solutions in variety programming language and operating system can be utilized (e.g, C++ on Windows,).
-
-For more details, see [DYNAMIXEL SDK](/docs/en/software/dynamixel/dynamixel_sdk/overview/).
+These examples and tutorials are not an exhaustive representation of what the DYNAMIXEL SDK is capable of. For more details, see the [DYNAMIXEL SDK](/docs/en/software/dynamixel/dynamixel_sdk/overview/) eManual page.
 
 | Developement<br>Enviroment | Controller<br>&Interface | Title                                                       | Description                             |
 |:---------------------------|:-------------------------|:------------------------------------------------------------|:----------------------------------------|
@@ -132,11 +132,11 @@ To control the DYNAMIXELs, the main controller needs to convert its UART signals
 
 ### [DYNAMIXEL Quick Start Guide for Raspberry Pi (C language)](#dynamixel-quick-start-guide-for-raspberry-pi-c-language)
 
-[DYNAMIXEL SDK] in C with Raspberry Pi, by implementing Read / Write example for DYNAMIXEL position control.  
+Tutorial for the [DYNAMIXEL SDK] in C on a Raspberry Pi, implementing a Read / Write example for DYNAMIXEL position control. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-MafNIZUCHA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-**Tested with**
+**Components Used**
 - PC (Raspberry Pi 3B+, Raspbian)
 - DYNAMIXEL Starter Kit (U2D2, U2D2 PHB, SMPS(12V))
 - DYNAMIXEL: XL430-W250 (12V) / XL330-M288 (5V)
@@ -145,58 +145,58 @@ To control the DYNAMIXELs, the main controller needs to convert its UART signals
 
 ### [DYNAMIXEL Quick Start Guide in C++](#dynamixel-quick-start-guide-in-c-1)
 
-[DYNAMIXEL SDK] in C++, by implementing Read / Write example for DYNAMIXEL position control.  
+Tutorial for the [DYNAMIXEL SDK] in C++ on PC, implementing a Read / Write example for DYNAMIXEL position control.   
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/bm5MBO7D13Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-**Tested with**
+**Components Used**
 - PC (Laptop, Linux)
 - DYNAMIXEL Starter Kit (U2D2, U2D2 PHB, SMPS(12V))
 - DYNAMIXEL: XL430-W250 (12V)
 
 ## [C-Sharp](#c-sharp)
 
-DYNAMIXEL Quick Start Guide in C-Sharp will be worked on. Until it is ready for being done, Visit DYNAMIXEL SDK, [C-Sharp Windows Library Setup](/docs/en/software/dynamixel/dynamixel_sdk/library_setup/csharp_windows/#csharp-windows).
+The DYNAMIXEL Quick Start Guide for C-Sharp is still in progress. Until the tutorial is complete, see DYNAMIXEL SDK, [C-Sharp Windows Library Setup](/docs/en/software/dynamixel/dynamixel_sdk/library_setup/csharp_windows/#csharp-windows).
 {: .notice}
 
 ## [Python](#python)
 
 ### [DYNAMIXEL Quick Start Guide in Python](#dynamixel-quick-start-guide-in-python)
 
-[DYNAMIXEL SDK] in Python, by implementing Read / Write example for DYNAMIXEL position control.  
+Tutorial for the [DYNAMIXEL SDK] in Python on PC, implementing a Read / Write example for DYNAMIXEL position control.  
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LAizFTTdL8o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-**Tested with**
+**Components Used**
 - PC (Laptop, Linux)
 - DYNAMIXEL Starter Kit (U2D2, U2D2 PHB, SMPS(12V))
 - DYNAMIXEL: XL430-W250 (12V)
 
 ## [Java](#java)
 
-DYNAMIXEL Quick Start Guide in Java will be worked on. Until it is ready for being done, Visit DYNAMIXEL SDK, [Java Windows](/docs/en/software/dynamixel/dynamixel_sdk/library_setup/java_windows/#java-windows) or [Java Linux](/docs/en/software/dynamixel/dynamixel_sdk/library_setup/java_linux/#java-linux).
+The DYNAMIXEL Quick Start Guide for Java is still in progress. Until the tutorial is complete, see DYNAMIXEL SDK, [Java Windows](/docs/en/software/dynamixel/dynamixel_sdk/library_setup/java_windows/#java-windows) or [Java Linux](/docs/en/software/dynamixel/dynamixel_sdk/library_setup/java_linux/#java-linux).
 {: .notice}
 
 ## [Matlab](#matlab)
 
 ### [DYNAMIXEL Quick Start Guide in MATLAB on Windows](#dynamixel-quick-start-guide-in-matlab-on-windows)
 
-[DYNAMIXEL SDK] in Matlab on Windows, by implementing Read / Write example for DYNAMIXEL position control.  
+Tutorial for the [DYNAMIXEL SDK] in Matlab on Windows, implementing a Read / Write example for DYNAMIXEL position control.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1VWksgPqyDs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-**Tested with**
+**Components Used**
 - PC (Laptop, Windows)
 - DYNAMIXEL Starter Kit (U2D2, U2D2 PHB, SMPS(12V))
 - DYNAMIXEL: XL430-W250 (12V)
 
 ### [DYNAMIXEL Quick Start Guide in MATLAB on Linux](#dynamixel-quick-start-guide-in-matlab-on-linux)
 
-[DYNAMIXEL SDK] in Matlab on Linux,  by implementing Read / Write example for DYNAMIXEL position control.  
+Tutorial for the [DYNAMIXEL SDK] in Matlab on Linux,  implementing a Read / Write example for DYNAMIXEL position control.    
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zGhd727NkJY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-**Tested with**
+**Components Used**
 - PC (Laptop, Linux)
 - DYNAMIXEL Starter Kit (U2D2, U2D2 PHB, SMPS(12V))
 - DYNAMIXEL: XL430-W250 (12V)
@@ -205,11 +205,11 @@ DYNAMIXEL Quick Start Guide in Java will be worked on. Until it is ready for bei
 
 ### [DYNAMIXEL Quick Start Guide for LabVIEW on Windows](#dynamixel-quick-start-guide-for-labview-on-windows)
 
-[DYNAMIXEL SDK] in LabView on Windows, by implementing Read / Write example for DYNAMIXEL position control.  
+Tutorial for the [DYNAMIXEL SDK] in LabView on Windows, implementing a Read / Write example for DYNAMIXEL position control.  
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4fzFshycfi0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-**Tested with**
+**Components Used**
 - PC (Laptop, Windows)
 - DYNAMIXEL Starter Kit (U2D2, U2D2 PHB, SMPS(12V))
 - DYNAMIXEL: XL430-W250 (12V)
@@ -218,31 +218,29 @@ DYNAMIXEL Quick Start Guide in Java will be worked on. Until it is ready for bei
 
 ### [DYNAMIXEL Quick Start Guide for ROS 1](#dynamixel-quick-start-guide-for-ros-1)
 
-[DYNAMIXEL SDK] in ROS, by implementing Read / Write example for DYNAMIXEL position control.  
+Tutorial for the [DYNAMIXEL SDK] in ROS, implementing a Read / Write example for DYNAMIXEL position control.  
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SpdxjsCO9sE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-**Tested with**
+**Components Used**
 - PC (Laptop, Linux)
 - DYNAMIXEL Starter Kit (U2D2, U2D2 PHB, SMPS(12V))
 - DYNAMIXEL: XL430-W250 (12V)
 
 ### [DYNAMIXEL Quick Start Guide for ROS 2](#dynamixel-quick-start-guide-for-ros-2)
 
-[DYNAMIXEL SDK] in ROS2, by implementing Read / Write example for DYNAMIXEL position control.  
+Tutorial for the [DYNAMIXEL SDK] in ROS2, implementing a Read / Write example for DYNAMIXEL position control.  
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/E8XPqDjof4U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-**Tested with**
+**Components Used**
 - PC (Laptop, Linux)
 - DYNAMIXEL Starter Kit (U2D2, U2D2 PHB, SMPS(12V))
 - DYNAMIXEL: XL430-W250 (12V)
 
 # [Arduino Library](#arduino-library)
 
-ROBOTIS provides comprehensive code APIs and basic example for Arduino users.
-
-The following table shows which controller or interface is compatible with provided libraries. 
+The [Dynamixel2Arduino](https://github.com/ROBOTIS-GIT/Dynamixel2Arduino) library is a comprehensive open source library for utilizing DYNAMIXEL actuators with Arduino compatible micro-controllers and shields. 
 
 | Developement<br>Enviroment | Controller<br>&Interface | Title                                                                     | Description                             |
 |:---------------------------|:-------------------------|:--------------------------------------------------------------------------|:----------------------------------------|
@@ -251,37 +249,37 @@ The following table shows which controller or interface is compatible with provi
 
 ## [Dynamixel2Arduino](#dynamixel2arduino)
 
-DYNAMIXEL Control Library for [Embedded Controller](/docs/en/reference/dxl-selection-guide/#embedded-controllers)
+Dynamixel2Arduino tutorial for use with [Embedded Controllers](/docs/en/reference/dxl-selection-guide/#embedded-controllers)
 
 ### [DYNAMIXEL Quick Start Guide for OpenCR 1.0](#dynamixel-quick-start-guide-for-opencr-10)
 
-<!-- OpenCR 1.0 by implementing Read / Write example for DYNAMIXEL position control.   -->
+<!-- OpenCR 1.0 implementing a Read / Write example for DYNAMIXEL position control.   -->
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0_M0Da9SHDw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-**Tested with**
+**Components Used**
 - Arduino IDE
 - OpenCR 1.0
 - DYNAMIXEL: XL430-W250 (12V)
 
 ## [DynamixelShield](#dynamixelshield)
 
-DYNAMIXEL Control Library for [DYNAMIXEL Shields](/docs/en/reference/dxl-selection-guide/#dynamixel-shields)
+DynamixelShield tutorial for use with [DYNAMIXEL Shields](/docs/en/reference/dxl-selection-guide/#dynamixel-shields)
 
 ### [DYNAMIXEL Quick Start Guide for DYNAMIXEL Shield for Arduino MKR Series](#dynamixel-quick-start-guide-for-dynamixel-shield-for-arduino-mkr-series)
 
-Implementing the basic position control example by DynamixelShield, and guide powering the DYNAMIXEL from different power connectors (either Battery or USB power) using DYNAMIXEL MKR Shield.
+Implementation of a basic position control example, and walkthrough of USB and battery power delivery for the DYNAMIXEL MKR Shield.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1Y7FLG1n-9k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-**Tested with**
+**Components Used**
 - Arduino IDE
 - DYNAMIXEL Shield for Arduino MKR Series
 - DYNAMIXEL: XL430-W250 (12V), XL330-M288(5V)
 
 # [DYNAMIXEL Wizard 2.0](#dynamixel-wizard-20)
 
-DYNAMIXEL Wizard is the optimized tool for the maintanance (Firmware Recovery, Update), test and configuration of DYNAMIXEL. 
+DYNAMIXEL Wizard 2.0 is a ROBOTIS provided software tool designed for configuration, maintenance, and diagnostics of DYNAMIXEL actuators.
 
 | Software<br>&Tool    | Developement<br>Enviroment  | Controller<br>&Interface | Title                                                 | Description       |
 |:---------------------|:----------------------------|:-------------------------|:------------------------------------------------------|:------------------|
@@ -290,17 +288,17 @@ DYNAMIXEL Wizard is the optimized tool for the maintanance (Firmware Recovery, U
 
 ## [Firmware Recovery](#firmware-recovery)
 
-[Firmware Recovery](/docs/en/software/dynamixel/dynamixel_wizard2/#firmware-recovery) is the hard reset solution, turning back to its original state as factory released, to your DYNAMIXEL. 
+[Firmware Recovery](/docs/en/software/dynamixel/dynamixel_wizard2/#firmware-recovery) returns your DYNAMIXEL to factory default configuration, and is ROBOTIS' recommended method to attempt to resolve many issues you may experience with DYNAMIXEL actuators.
 
 ### [How To: Firmware Recover DYNAMIXEL Using U2D2](#dxl-quick-start-guide/#how-to-firmware-recover-dynamixel-using-u2d2)
 
-Basic solution of firmware recovery using the U2D2. 
+Basic firmware recovery tutorial using the [U2D2] serial interface. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PgbIAK2Qg1Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### [How To: DYNAMIXEL Firmware Recovery Using OpenCR1.0](#how-to-dynamixel-firmware-recovery-using-opencr10)
 
-OpenCR 1.0 can be used as an interface like U2D2 by a particular firmware that can be installed by Arduino example.
+The OpenCR micro controller can also be used as a firmware recovery tool by using the ROBOTIS provided USB2DXL firmware.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FAnVIE_23AA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -335,3 +333,4 @@ Visit the page here -->
 [Dynamixel2Arduino]: #dynamixel2arduino
 [DynamixelShield]: #dynamixelshield
 [DYNAMIXEL Wizard 2.0]: #dynamixel-wizard-20
+[U2D2]: /docs/en/parts/interface/u2d2/
