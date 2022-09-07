@@ -749,6 +749,12 @@ main:
     url: /faq/faq_dynamixel/
     urlkr: /faq/faq_dynamixel/
     children:
+      - title: "DYNAMIXEL Selection Guide"
+        titlekr: "다이나믹셀 선택 가이드"
+        url: /reference/dxl-selection-guide/
+      - title: "DYNAMIXEL Quick Start Guide"
+        titlekr: "DYNAMIXEL Quick Start Guide"
+        url: /dxl/dxl-quick-start-guide/ 
       - title: "DYNAMIXEL"
         titlekr: "다이나믹셀"
         url: /faq/faq_dynamixel/
@@ -28133,8 +28139,8 @@ dxl-quick-start-guide:
   - title: "Getting Started"
     url: /dxl/dxl-quick-start-guide/#getting-started
     children: 
-      - title: "Archive"
-        url: /dxl/dxl-quick-start-guide/#archive
+      - title: "Index"
+        url: /dxl/dxl-quick-start-guide/#index
   - title: "DYNAMIXEL SDK"
     url: /dxl/dxl-quick-start-guide/#dynamixel-sdk
     children: 
