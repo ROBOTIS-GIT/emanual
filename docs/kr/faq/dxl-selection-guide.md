@@ -197,7 +197,7 @@ SMPS는 인터페이스 또는 제어기를 통해 다이나믹셀에 전압을 
 
 ### [U2D2](#u2d2)
  
-U2D2는 USB 신호를 TTL 또는 RS-485 신호로 변환해주는 통신 변환 인터페이스입니다. PC에 U2D2와 같은 통신 인터페이스를 연결하여, [DYNAMIXEL Wizard 2.0] 및 [다이나믹셀 SDK](#다이나믹셀-sdk)등을 활용하세요.
+U2D2는 USB 신호를 TTL 또는 RS-485 신호로 변환해주는 통신 변환 인터페이스입니다. PC에 U2D2와 같은 통신 인터페이스를 연결하여, [다이나믹셀 위자드 2.0] 및 [다이나믹셀 SDK](#다이나믹셀-sdk)등을 활용하세요.
  
 ![](/assets/images/parts/interface/u2d2_01.png){: width="1017", height="198px"}
 
@@ -220,13 +220,27 @@ U2D2는 USB 신호를 TTL 또는 RS-485 신호로 변환해주는 통신 변환 
 
 로보티즈에서 제공하는 임베디드 제어기는 아두이노 환경을 지원합니다. 
 
-<!-- ### [OpenRB-150](#openrb-150)
+### [OpenRB-150](#openrb-150)
 
-The [OpenRB-150]  is a new open source controller that is highly compatible with the Arduino products. Using a dedicated library Dynamixel2Arduino(#dynamixel2arduino), you can just start off DYNAMIXEL with ease.
-- SAMD21 Cortex-M0+ 32bit low power ARM® MCU allows the OpenRB to support feature of Arduino IDE. 
-- More features with Arduino MKR formfactor Shield
-- On-board 3Pin JST connectors to directely power and control the DYNAMIXEL.  
-- With the firmware provided by the OpenRB Board Manager, you can scan use the OpenRB-150 with [DYNAMIXEL Wizard 2.0](#dynamixel-wizard-20)  -->
+![](/assets/images/parts/controller/openrb-150/openrb_overview_01.png)
+
+[OpenRB-150]은 아두이노와 호환되는 오픈소스 제어기입니다.  
+아두이노 MKR 보드와 동일한 폼팩터를 특징으로, MKR 악세사리와 호환 및 프로그래밍 할 수 있습니다.  
+4개의 다이나믹셀 전용 포트를 가지고 있으며, 다이나믹셀 전용 소프트웨어인 [다이나믹셀 위자드 2.0]을 사용할 수 있습니다.
+
+- **아두이노 IDE** 지원
+- **아두이노 MKR 쉴드** 호환
+- 4개의 다이나믹셀 TTL 전용 커넥터
+- 다이나믹셀의 손쉬운 사용과 관리를 위한 [다이나믹셀 위자드 2.0] 지원
+
+![](/assets/images/parts/controller/openrb-150/openrb-150_pinout.png)
+> OpenRB-150 핀맵 및 레이아웃
+
+![](/assets/images/parts/controller/openrb-150/openrb-150_connection_example01.png)
+> USB 전원공급 연결 예시
+
+![](/assets/images/parts/controller/openrb-150/openrb-150_connection_example02.png)
+> SMPS 전원공급 연결 예시
 
 ### [OpenCR1.0](#opencr10)
 
@@ -291,7 +305,7 @@ CM 시리즈는 로보티즈가 제공하는 전용 센서를 사용할 수 있�
 
 ### [DYNAMIXEL Wizard 2.0](#dynamixel-wizard-20)
 
-[DYNAMIXEL Wizard 2.0](/docs/kr/software/dynamixel/dynamixel_wizard2/)은 다양한 OS(Linux / Mac / Windows)에서 사용 가능한 다이나믹셀에 최적화된 관리 도구입니다. ([U2D2](#u2d2) 또는 [호환 제어기](/docs/kr/parts/controller/controller_compatibility/#기타-소프트웨어) 필요)
+[다이나믹셀 위자드 2.0]은 다양한 OS(Linux / Mac / Windows)에서 사용 가능한 다이나믹셀에 최적화된 관리 도구입니다. ([U2D2](#u2d2) 또는 [호환 제어기](/docs/kr/parts/controller/controller_compatibility/#기타-소프트웨어) 필요)
 
 DYNAMIXEL Wizard 2.0은 다음 특징이 있습니다. 
 
@@ -309,7 +323,7 @@ DYNAMIXEL Wizard 2.0은 다음 특징이 있습니다.
 
 ![](/assets/images/sw/rplus2/manager/roboplus_manager2_07.jpg)
 
-**참고**: 교육용 키트 또는 CM시리즈 사용자가 아니라면, 다이나믹셀 전용 관리프로그램 [DYNAMIXEL Wizard 2.0](#dynamixel-wizard-20)을 사용하세요.
+**참고**: 교육용 키트 또는 CM시리즈 사용자가 아니라면, 다이나믹셀 전용 관리프로그램 [다이나믹셀 위자드 2.0]을 사용하세요.
 {: .notice}
 
 ## [개발 도구](#개발-도구)
@@ -365,13 +379,14 @@ CM 시리즈와 교육용 키트에서 사용할 수 있는 소프트웨어인, 
 ![](/assets/images/sw/rplus_task3/task3_001.png)
 > R+Task 3.0
 
-[DYNAMIXEL Wizard 2.0]: /docs/kr/software/dynamixel/dynamixel_wizard2/
+[다이나믹셀 위자드 2.0]: /docs/kr/software/dynamixel/dynamixel_wizard2/
 [다이나믹셀 SDK]: /docs/en/software/dynamixel/dynamixel_sdk/overview/
 [U2D2]: /docs/kr/parts/interface/u2d2/
 [U2D2 Power Hub Board]: /docs/kr/parts/interface/u2d2_power_hub/
 [Software]: /docs/kr/software/
 [OpenCM9.04]: /docs/kr/parts/controller/opencm904/
 [The OpenCM 485 Expansion Board]: /docs/kr/parts/controller/opencm485exp/
+[OpenRB-150]: /docs/kr/parts/controller/openrb-150/
 [OpenCR 1.0]: /docs/kr/parts/controller/opencr10/
 [CM-530]: /docs/kr/parts/controller/cm-530/
 [CM-550]: /docs/kr/parts/controller/cm-550/

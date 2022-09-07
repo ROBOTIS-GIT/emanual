@@ -235,13 +235,27 @@ The [DYNAMIXEL Shield] and [DYNAMIXEL Shield MKR] were created to enable users t
 
 ## [Embedded Controllers](#embedded-controllers)
 
-<!-- ### [OpenRB-150](#openrb-150)
+### [OpenRB-150](#openrb-150)
 
-The [OpenRB-150]  is a new open source controller that is highly compatible with the Arduino products. Using a dedicated library Dynamixel2Arduino(#dynamixel2arduino), you can just start off DYNAMIXEL with ease.
-- SAMD21 Cortex-M0+ 32bit low power ARM® MCU allows the OpenRB to support feature of Arduino IDE. 
-- More features with Arduino MKR formfactor Shield
-- On-board 3Pin JST connectors to directely power and control the DYNAMIXEL.  
-- With the firmware provided by the OpenRB Board Manager, you can scan use the OpenRB-150 with [DYNAMIXEL Wizard 2.0](#dynamixel-wizard-20)  -->
+![](/assets/images/parts/controller/openrb-150/openrb_overview_01.png)
+
+The [OpenRB-150] is a new open source Arduino compatible embedded controller.  
+The controller features the same pinout and the form factor as the Arduino MKR to ensure compatibility with phyisical accessories, and has support for programming using the Arduino IDE.  
+The OpenRB-150 also features 4 dedicated DYNAMIXEL ports, and supports the DYNAMIXEL Wizard 2.0 testing and calibration softwere.
+
+- Program the controller with **Arduino IDE**
+- Compatible with **Arduino MKR Shields**
+- Dedicated 4 DYNAMIXEL TTL connectors
+- Support [DYNAMIXEL Wizard 2.0](#dynamixel-wizard-20) for easier use and maintenance of DYNAMIXEL
+
+![](/assets/images/parts/controller/openrb-150/openrb-150_pinout.png)
+> OpenRB-150 Layout and Pin Map
+
+![](/assets/images/parts/controller/openrb-150/openrb-150_connection_example01.png)
+> Power Connection Example using USB
+
+![](/assets/images/parts/controller/openrb-150/openrb-150_connection_example02.png)
+> Power Connection Example using SMPS
 
 ### [OpenCR1.0](#opencr10)
 
@@ -393,6 +407,7 @@ The R+ (Roboplus) Software suite is ROBOTIS' first party robot controller softwa
 [Software]: /docs/en/software/
 [OpenCM9.04]: /docs/en/parts/controller/opencm904/
 [The OpenCM 485 Expansion Board]: /docs/en/parts/controller/opencm485exp/
+[OpenRB-150]: /docs/en/parts/controller/openrb-150/
 [OpenCR 1.0]: /docs/en/parts/controller/opencr10/
 [CM-530]: /docs/en/parts/controller/cm-530/
 [CM-550]: /docs/en/parts/controller/cm-550/

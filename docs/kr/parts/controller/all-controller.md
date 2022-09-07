@@ -11,11 +11,27 @@ sidebar:
   nav: "all-controller"
 ---
 
-# [플랫폼](#플랫폼)
+# [다이나믹셀 시스템용](#다이나믹셀-시스템용)
 
-|                                                 OpenCR                                                  |                                               CM-700                                                |                                               CM-900                                                |                                                   OpenCM 485 EXP                                                   |
-|:-------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------:|
-| [![](/assets/images/parts/controller/opencr10/opencr_product.png)](/docs/kr/parts/controller/opencr10/) | [![](/assets/images/parts/controller/cm-700/cm-700_product.jpg)](/docs/kr/parts/controller/cm-700/) | [![](/assets/images/parts/controller/cm-900/cm-900_product.jpg)](/docs/kr/parts/controller/cm-900/) | [![](/assets/images/parts/controller/opencm904/opencm485exp_product.jpg)](/docs/kr/parts/controller/opencm485exp/) |
+|                                                   OpenRB-150                                                    |
+|:---------------------------------------------------------------------------------------------------------------:|
+| [![](/assets/images/parts/controller/openrb-150/openrb_overview_01.png)](/docs/kr/parts/controller/openrb-150/) |
+
+|                                                 OpenCR                                                  |
+|:-------------------------------------------------------------------------------------------------------:|
+| [![](/assets/images/parts/controller/opencr10/opencr_product.png)](/docs/kr/parts/controller/opencr10/) |
+
+|                                               CM-700                                                |
+|:---------------------------------------------------------------------------------------------------:|
+| [![](/assets/images/parts/controller/cm-700/cm-700_product.jpg)](/docs/kr/parts/controller/cm-700/) |
+
+|                                               CM-900                                                |
+|:---------------------------------------------------------------------------------------------------:|
+| [![](/assets/images/parts/controller/cm-900/cm-900_product.jpg)](/docs/kr/parts/controller/cm-900/) |
+
+|                                                 OpenCM 9.04                                                  |                                                   OpenCM 485 EXP                                                   |
+|:------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------:|
+| [![](/assets/images/parts/controller/opencm904/opencm904_product.png)](/docs/kr/parts/controller/opencm904/) | [![](/assets/images/parts/controller/opencm904/opencm485exp_product.jpg)](/docs/kr/parts/controller/opencm485exp/) |
 
 # [STEAMCUP ENGINEER 전용](#steamcup-engineer-전용)
 
