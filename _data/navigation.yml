@@ -753,7 +753,7 @@ main:
         titlekr: "다이나믹셀 선택 가이드"
         url: /reference/dxl-selection-guide/
       - title: "DYNAMIXEL Quick Start Guide"
-        titlekr: "DYNAMIXEL Quick Start Guide"
+        titlekr: "다이나믹셀 퀵 스타트 가이드"
         url: /dxl/dxl-quick-start-guide/ 
       - title: "DYNAMIXEL"
         titlekr: "다이나믹셀"
