@@ -15,7 +15,8 @@ sidebar:
  Please refer to [protocol compatibility table](/docs/en/faq/faq_protocol_compatibility_table) to check information.
 
 # What controller be compatible with Arduino and recommended?
- [OpenCM9.04] and  [OpenCM485 EXP Board] is recommended for users.Users have established control Arduino hardware with reference to available resources on the [ROBOTIS GitHub](https://github.com/ROBOTIS-GIT)
+ [OpenRB-150] is recommended for general users.  
+ [OpenCM9.04] and [OpenCM485 EXP Board] combination is another recommendation.  
 
 # How do I configure a Zigbee? (pairing, broadcasting mode)
  Watch this video : [FAQ-Wireless module(ZIGBEE) set up](https://youtu.be/YgebCObXJZg)

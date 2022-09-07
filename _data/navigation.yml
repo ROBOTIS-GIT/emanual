@@ -893,7 +893,7 @@ all-controller:
   - title: "For DYNAMIXEL SYSTEM"
     titlekr: "DYNAMIXEL SYSTEM"
     url: /parts/all-controller/#for-platform
-    urlkr: /parts/all-controller/#플랫폼
+    urlkr: /parts/all-controller/#다이나믹셀-시스템용
   - title: "For ROBOTIS ENGINEER"
     titlekr: "STEAMCUP ENGINEER 전용"
     url: /parts/all-controller/#for-robotis-engineer
@@ -905,23 +905,23 @@ all-controller:
   - title: "For ROBOTIS BIOLOID"
     titlekr: "바이올로이드 전용"
     url: /parts/all-controller/#for-robotis-engineer
-    urlkr: /parts/all-controller/#로보티즈-바이올로이드-전용
+    urlkr: /parts/all-controller/#바이올로이드-전용
   - title: "For Play 600 & 700"
     titlekr: "STEAMCUP PLAY 600 & 700 전용"
     url: /parts/all-controller/#for-robotis-play-600--700
-    urlkr: /parts/all-controller/#steamcup-play-600--700-전용용
+    urlkr: /parts/all-controller/#steamcup-play-600--700-전용
   - title: "For OLLO"
     titlekr: "올로 전용"
     url: /parts/all-controller/#for-robotis-ollo
-    urlkr: /parts/all-controller/#로보티즈-올로-전용
+    urlkr: /parts/all-controller/#올로-전용
   - title: "For ROBOTIS DREAM I & II"
     titlekr: "ROBOTIS DREAM I & STEAMCUP DREAM II 전용"
     url: /parts/all-controller/#for-robotis-dream-i--ii
-    urlkr: /parts/all-controller/#robotis-dream-i-steamcup-dream-ii-전용
+    urlkr: /parts/all-controller/#robotis-dream-i--steamcup-dream-ii-전용
   - title: "For ROBOTIS Smart I & II & III"
     titlekr: "ROBOTIS SMART I & II & STEAMCUP SMART III 전용"
     url: /parts/all-controller/#for-robotis-smart-i--ii--iii
-    urlkr: /parts/all-controller/#robotis-smart-i--ii-steamcup-smart-iii-전용
+    urlkr: /parts/all-controller/#robotis-smart-i--ii--steamcup-smart-iii-전용
 
 all-interface:
   - title: "Communication Interfaces"
@@ -28054,8 +28054,10 @@ dxl-selection-guide:
         url: /reference/dxl-selection-guide/#embedded-controllers
         urlkr: /reference/dxl-selection-guide/#임베디드-제어기
         children: 
-        # - title: "OpenRB-150"
-        #   url: /reference/dxl-selection-guide/#openrb-150       
+        - title: "OpenRB-150"
+          titlekr: "OpenRB-150"
+          url: /reference/dxl-selection-guide/#openrb-150
+          urlkr: /reference/dxl-selection-guide/#openrb-150
         - title: "OpenCR1.0"
           titlekr: "OpenCR1.0"
           url: /reference/dxl-selection-guide/#opencr10

@@ -56,7 +56,7 @@ sidebar:
 2. [USB2DYNAMIXEL]  
   QC 번호를 확인해주세요. 만약 QC번호가 1412 ~ 1502 사이에 있다면 FTDI와 관련된 문제가 있을 수 있습니다. [드라이버 수동 설치]를 참고해주시고 이 방법으로 동작하지 않는다면 교환을 요청해주세요. 
 2. 로보티즈 제어기  
-  [OpenCM9.04], [OpenCM9.04] + [OpenCM 485 EXP], [CM-530], [CM-700], [OpenCR1.0]을 사용해서 다이나믹셀을 제어할 수 있습니다.
+  [OpenRB-150], [OpenCM9.04], [OpenCM9.04] + [OpenCM 485 EXP], [CM-530], [CM-700], [OpenCR1.0]을 사용해서 다이나믹셀을 제어할 수 있습니다.
 3. 기타 제어기
   다이나믹셀은 반이중 UART 통신(TTL 또는 RS-485 방식)을 지원합니다.각 다이나믹셀 매뉴얼의 **통신 회로** 항목을 참고하시기 바랍니다.
 
@@ -115,6 +115,7 @@ sidebar:
 [U2D2]: /docs/kr/parts/interface/u2d2/
 [USB2DYNAMIXEL]: /docs/kr/parts/interface/usb2dynamixel/
 [드라이버 수동 설치]: /docs/kr/parts/interface/usb2dynamixel/#드라이버-수동-설치
+[OpenRB-150]: /docs/kr/parts/controller/openrb-150/
 [OpenCM9.04]: /docs/kr/parts/controller/opencm904/
 [OpenCM 485 EXP]: /docs/kr/parts/controller/opencm485exp/
 [CM-530]: /docs/kr/parts/controller/cm-530/
