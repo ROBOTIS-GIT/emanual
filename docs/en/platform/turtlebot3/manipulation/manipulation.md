@@ -36,7 +36,7 @@ page_number: 17
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
 
-**NOTE**: This feature in the selected ROS distribution is not available yet. 
+**NOTE**: This feature in the selected ROS distribution will be available in October 2022. 
 {: .notice}
 
 </section>
@@ -49,7 +49,8 @@ page_number: 17
 
 <section data-id="{{ page.tab_title5 }}" class="tab_contents">
 
-**NOTE**: This feature in the selected ROS distribution is not available yet. 
+{% include en/platform/turtlebot3/manipulation/manipulation_intro_foxy.md %}
+
 {: .notice} 
 
 </section>
@@ -75,6 +76,9 @@ page_number: 17
 {% include en/platform/turtlebot3/manipulation/manipulation_tb3_with_openmanipulator_dashing.md %}
 </section>
 
+<section data-id="{{ page.tab_title5 }}" class="tab_contents">
+{% include en/platform/turtlebot3/manipulation/manipulation_tb3_with_openmanipulator_foxy.md %}
+</section>
 
 ## [Software Setup](#software-setup)
 
@@ -88,6 +92,10 @@ page_number: 17
 
 <section data-id="{{ page.tab_title4 }}" class="tab_contents">
 {% include en/platform/turtlebot3/manipulation/manipulation_software_setup_dashing.md %}
+</section>
+
+<section data-id="{{ page.tab_title5 }}" class="tab_contents">
+{% include en/platform/turtlebot3/manipulation/manipulation_software_setup_foxy.md %}
 </section>
 
 ## [Hardware Assembly](#hardware-assembly)
@@ -107,8 +115,12 @@ page_number: 17
 <section data-id="{{ page.tab_title4 }}" class="tab_contents">
 {% include en/platform/turtlebot3/manipulation/manipulation_opencr_setup_dashing.md %}
 
-**Note**: This feature is available for Kinetic. 
+**Note**: This feature is available for Foxy. 
 {: .notice}
+</section>
+
+<section data-id="{{ page.tab_title5 }}" class="tab_contents">
+{% include en/platform/turtlebot3/manipulation/manipulation_opencr_setup_foxy.md %}
 </section>
 
 ## [Bringup](#bringup)
@@ -125,6 +137,10 @@ page_number: 17
 {% include en/platform/turtlebot3/manipulation/manipulation_bringup_dashing.md %}
 </section>
 
+<section data-id="{{ page.tab_title5 }}" class="tab_contents">
+{% include en/platform/turtlebot3/manipulation/manipulation_bringup_foxy.md %}
+</section>
+
 ## [Simulation](#simulation)
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
@@ -137,6 +153,10 @@ page_number: 17
 
 <section data-id="{{ page.tab_title4 }}" class="tab_contents">
 {% include en/platform/turtlebot3/manipulation/manipulation_simulation_dashing.md %}
+</section>
+
+<section data-id="{{ page.tab_title5 }}" class="tab_contents">
+{% include en/platform/turtlebot3/manipulation/manipulation_simulation_foxy.md %}
 </section>
 
 ## [Operate the Actual OpenMANIPULATOR](#operate-the-actual-openmanipulator)
