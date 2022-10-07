@@ -171,7 +171,10 @@ page_number: 17
 
 <section data-id="{{ page.tab_title4 }}" class="tab_contents">
 {% include en/platform/turtlebot3/manipulation/manipulation_operate_the_actual_openmanipulator_dashing.md %}
+</section>
 
+<section data-id="{{ page.tab_title5 }}" class="tab_contents">
+{% include en/platform/turtlebot3/manipulation/manipulation_operate_the_actual_openmanipulator_foxy.md %}
 </section>
 
 ## [SLAM](#slam)
@@ -188,6 +191,10 @@ page_number: 17
 {% include en/platform/turtlebot3/manipulation/manipulation_slam_dashing.md %}
 </section>
 
+<section data-id="{{ page.tab_title5 }}" class="tab_contents">
+{% include en/platform/turtlebot3/manipulation/manipulation_slam_foxy.md %}
+</section>
+
 ## [Navigation](#navigation)
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
@@ -200,4 +207,8 @@ page_number: 17
 
 <section data-id="{{ page.tab_title4 }}" class="tab_contents">
 {% include en/platform/turtlebot3/manipulation/manipulation_navigation_dashing.md %}
+</section>
+
+<section data-id="{{ page.tab_title5 }}" class="tab_contents">
+{% include en/platform/turtlebot3/manipulation/manipulation_navigation_foxy.md %}
 </section>
