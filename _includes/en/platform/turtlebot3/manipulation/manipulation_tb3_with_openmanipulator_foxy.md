@@ -8,7 +8,5 @@ fds
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/P82pZsqpBg0" frameborder="0" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DLOq8yNcCoE" frameborder="0" allowfullscreen></iframe>
-
 The contents in e-Manual are subject to change without prior notice. Therefore, some video may differ from the contents in e-Manual.
 {: .notice--warning} 
