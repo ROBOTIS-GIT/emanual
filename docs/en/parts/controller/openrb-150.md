@@ -19,9 +19,9 @@ sidebar:
 
 The OpenRB-150 is a new open source Arduino compatible embedded controller.
 
-The controller features the same pinout and the form factor as the Arduino MKR to ensure compatibility with phyisical accessories, and has support for programming using the Arduino IDE.
+The controller features the same pinout and the form factor as the Arduino MKR to ensure compatibility with physical accessories, and has support for programming using the Arduino IDE.
 
-The OpenRB-150 also features 4 dedicated DYNAMIXEL ports, and supports the DYNAMIXEL Wizard 2.0 testing and calibration softwere.
+The OpenRB-150 also features 4 dedicated DYNAMIXEL ports, and supports the DYNAMIXEL Wizard 2.0 testing and calibration software.
 
 **NOTE** : Specialty firmware is required to utilize the OpenRB-150 with DYNAMIXEL Wizard. This firmware is included in the OpenRB board manager package.
 {: .notice}
