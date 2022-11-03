@@ -26,6 +26,9 @@
 
 > FR12-H101K
 
+**참고**: FR11-H101K Set은 FR12-H101K 과 HN11-I101 (아이들러)가 포함된 Set입니다.
+{: .notice}
+
 ![Hinge_Assembly](/assets/images/dxl/x/assembly/xl430/hinge/xl430_fr12-h104k_01.jpg)
 
 > FR12-H104K
