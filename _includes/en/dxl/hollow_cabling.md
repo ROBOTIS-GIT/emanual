@@ -1,5 +1,7 @@
 
-![](/assets/images/dxl/x/x-series_cable_assembly.png)
+![](/assets/images/dxl/x/assembly/common/x-series_cable_assembly.png)
+
+> Precaution in cable assembly through a hollow case (Model: XM430-W250)
 
 {% capture hollow_assy %}
 **CAUTION** : DYNAMIXEL-X series cable assembly through hollow case
