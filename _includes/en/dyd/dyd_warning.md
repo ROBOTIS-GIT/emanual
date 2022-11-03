@@ -11,7 +11,7 @@
 **WARNING**  
 (May cause injury or damage to product)
 - Do not disassemble or reassemble the product. If the product is disassembled and reassembled, the original performance cannot be guaranteed.
-- Be careful not to apply a load more than the instantaneous permissible torque.
+- Be careful not to apply a load more than its Permissible peak torque.
 - Do not use the product when it is dropped or subjected to strong impact.
 - Please familiarize yourself with the contents of the manual before using the product. If the product is operated without correct assembly, it may cause vibration, shortened life, and/or permanent damage.
 - Use at an ambient temperature of -5° to 55° degrees Celsius.

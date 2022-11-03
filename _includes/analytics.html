@@ -4,8 +4,10 @@
 {% when "google" %}
   {% if page.lang=='kr' %}
     {% include /analytics-providers/google_kr.html %}
+    {% include /analytics-providers/google-ga4_kr.html %}
   {% else %}
     {% include /analytics-providers/google.html %}
+    {% include /analytics-providers/google-ga4.html %}
   {% endif %}
 {% when "google-universal" %}
   {% include /analytics-providers/google-universal.html %}

@@ -609,11 +609,11 @@ main:
       - title: "CM-700"
         titlekr: "CM-700"
         url: /parts/controller/cm-700/
+      - title: "OpenRB-150"
+        titlekr: "OpenRB-150"
+        url: /parts/controller/openrb-150/
       - titlekr: "OpenCM7.0"
         url: /parts/controller/opencm7/
-      # - title: "OpenRB-150"
-      #   titlekr: "OpenRB-150"
-      #   url: /parts/controller/openrb-150/
       - title: "OpenCM9.04"
         titlekr: "OpenCM9.04"
         url: /parts/controller/opencm904/
@@ -749,6 +749,12 @@ main:
     url: /faq/faq_dynamixel/
     urlkr: /faq/faq_dynamixel/
     children:
+      - title: "DYNAMIXEL Selection Guide"
+        titlekr: "다이나믹셀 선택 가이드"
+        url: /reference/dxl-selection-guide/
+      - title: "DYNAMIXEL Quick Start Guide"
+        titlekr: "다이나믹셀 퀵 스타트 가이드"
+        url: /dxl/dxl-quick-start-guide/ 
       - title: "DYNAMIXEL"
         titlekr: "다이나믹셀"
         url: /faq/faq_dynamixel/
@@ -893,7 +899,7 @@ all-controller:
   - title: "For DYNAMIXEL SYSTEM"
     titlekr: "DYNAMIXEL SYSTEM"
     url: /parts/all-controller/#for-platform
-    urlkr: /parts/all-controller/#플랫폼
+    urlkr: /parts/all-controller/#다이나믹셀-시스템용
   - title: "For ROBOTIS ENGINEER"
     titlekr: "STEAMCUP ENGINEER 전용"
     url: /parts/all-controller/#for-robotis-engineer
@@ -905,23 +911,23 @@ all-controller:
   - title: "For ROBOTIS BIOLOID"
     titlekr: "바이올로이드 전용"
     url: /parts/all-controller/#for-robotis-engineer
-    urlkr: /parts/all-controller/#로보티즈-바이올로이드-전용
+    urlkr: /parts/all-controller/#바이올로이드-전용
   - title: "For Play 600 & 700"
     titlekr: "STEAMCUP PLAY 600 & 700 전용"
     url: /parts/all-controller/#for-robotis-play-600--700
-    urlkr: /parts/all-controller/#steamcup-play-600--700-전용용
+    urlkr: /parts/all-controller/#steamcup-play-600--700-전용
   - title: "For OLLO"
     titlekr: "올로 전용"
     url: /parts/all-controller/#for-robotis-ollo
-    urlkr: /parts/all-controller/#로보티즈-올로-전용
+    urlkr: /parts/all-controller/#올로-전용
   - title: "For ROBOTIS DREAM I & II"
     titlekr: "ROBOTIS DREAM I & STEAMCUP DREAM II 전용"
     url: /parts/all-controller/#for-robotis-dream-i--ii
-    urlkr: /parts/all-controller/#robotis-dream-i-steamcup-dream-ii-전용
+    urlkr: /parts/all-controller/#robotis-dream-i--steamcup-dream-ii-전용
   - title: "For ROBOTIS Smart I & II & III"
     titlekr: "ROBOTIS SMART I & II & STEAMCUP SMART III 전용"
     url: /parts/all-controller/#for-robotis-smart-i--ii--iii
-    urlkr: /parts/all-controller/#robotis-smart-i--ii-steamcup-smart-iii-전용
+    urlkr: /parts/all-controller/#robotis-smart-i--ii--steamcup-smart-iii-전용
 
 all-interface:
   - title: "Communication Interfaces"
@@ -942,9 +948,9 @@ all-dyd:
     titlekr: "제품 라인업"
     url: /all-dyd/#product-lineup
     urlkr: /all-dyd/#제품-라인업
-  - title: "Glossary"
+  - title: "Engineering Data"
     titlekr: "기술 자료"
-    url: /all-dyd/#glossary
+    url: /all-dyd/#engineering-data
     urlkr: /all-dyd/#기술-자료
   - title: "Product Selection Guide"
     titlekr: "제품 선택 가이드"
@@ -26360,9 +26366,9 @@ openrb-150:
       url: /parts/controller/openrb-150/#serial-port
       urlkr: /parts/controller/openrb-150/#시리얼-포트
     - title: "LEDs"
-      titlekr: "LEDs"
+      titlekr: "LED"
       url: /parts/controller/openrb-150/#leds
-      urlkr: /parts/controller/openrb-150/#leds
+      urlkr: /parts/controller/openrb-150/#led
   - title: "Pin Name Definitions"
     titlekr: "핀 이름 정의"
     url: /parts/controller/openrb-150/#pin-name-definitions
@@ -26377,9 +26383,9 @@ openrb-150:
       url: /parts/controller/openrb-150/#connection-examples
       urlkr: /parts/controller/openrb-150/#연결-예시
   - title: "Development Environment"
-    titlekr: "개발 환경 설정"
+    titlekr: "개발 환경"
     url: /parts/controller/openrb-150/#development-environment
-    urlkr: /parts/controller/openrb-150/#개발-환경-설정
+    urlkr: /parts/controller/openrb-150/#개발-환경
     children:
     - title: "DYNAMIXEL Wizard 2.0"
       titlekr: "다이나믹셀 위자드 2.0"
@@ -26403,7 +26409,9 @@ openrb-150:
         url: /parts/controller/openrb-150/#install-on-windows
         urlkr: /parts/controller/openrb-150/#윈도우즈에-설치하기
     - title: "Install Board Manager"
+      titlekr: "보드 매니저 설치하기"
       url: /parts/controller/openrb-150/#install-board-manager
+      urlkr: /parts/controller/openrb-150/#보드-매니저-설치하기
     - title: "Library API"
       titlekr: "라이브러리 API"
       url: /parts/controller/openrb-150/#library-api
@@ -28176,8 +28184,10 @@ dxl-selection-guide:
         url: /reference/dxl-selection-guide/#embedded-controllers
         urlkr: /reference/dxl-selection-guide/#임베디드-제어기
         children: 
-        # - title: "OpenRB-150"
-        #   url: /reference/dxl-selection-guide/#openrb-150       
+        - title: "OpenRB-150"
+          titlekr: "OpenRB-150"
+          url: /reference/dxl-selection-guide/#openrb-150
+          urlkr: /reference/dxl-selection-guide/#openrb-150
         - title: "OpenCR1.0"
           titlekr: "OpenCR1.0"
           url: /reference/dxl-selection-guide/#opencr10
@@ -28253,8 +28263,8 @@ dxl-quick-start-guide:
   - title: "Getting Started"
     url: /dxl/dxl-quick-start-guide/#getting-started
     children: 
-      - title: "Archive"
-        url: /dxl/dxl-quick-start-guide/#archive
+      - title: "Index"
+        url: /dxl/dxl-quick-start-guide/#index
   - title: "DYNAMIXEL SDK"
     url: /dxl/dxl-quick-start-guide/#dynamixel-sdk
     children: 

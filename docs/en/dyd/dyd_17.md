@@ -20,23 +20,22 @@ product_group: all-dyd
 
 ## [Specifications](#specifications)
 
-|             Properties              |               Unit               | DYD-17-051 | DYD-17-099 | Note |
-|:-----------------------------------:|:--------------------------------:|:----------:|:----------:|:----:|
-|             Gear ratio              |                -                 |     51     |     99     |  -   |
-|       Repeatable peak torque        |                Nm                |     55     |     80     |  -   |
-| Rated torque<br>(@2,000 rpm) |                Nm                |    11.0    |    16.0    |  -   |
-|         Maximum input speed         |               rpm                |   6,000    |   6,000    |  -   |
-|         Nominal input speed         |               rpm                |   2,000    |   2,000    |  -   |
-|         Moment of intertia          | X10<sup>-4</sup> kgm<sup>2</sup> |   0.284    |   0.322    |  -   |
-|              Backlash               |              arcmin              |    <3.0    |    <3.0    |  -   |
-|             Lost motion             |              arcmin              |    <3.0    |    <3.0    |  -   |
-|         Torsional stiffness         |            Nm/arcmin             |    2.2     |    2.2     |  -   |
-| Efficiency(@2,000 rpm, 20 &#8451;)  |                %                 |     58     |     58     |  -   |
-|           Starting torque           |               cNm                |     30     |     30     |  -   |
-|          Back-Drive torque          |                Nm                |    5.0     |    5.0     |  -   |
-|            Service life             |              hours               |   7,000    |   7,000    |  -   |
-|        Dimension (O.D. X H)         |                mm                | 78 x 34.2  | 78 x 34.2  |  -   |
-|               Weight                |                g                 |    600     |    600     |  -   |
+|               Properties                |               Unit               | DYD-17-051 | DYD-17-099 | Note |
+|:---------------------------------------:|:--------------------------------:|:----------:|:-----------------:|
+|               Gear ratio                |                \-                |     51     |        99         |
+|     Rated output torque (@2,000rpm)     |                Nm                |     11     |        16         |
+| Permissible peak torque (accel / decel) |                Nm                |     44     |        64         |
+|    Permissible peak torque at E-stop    |                Nm                |     96     |        96         |
+|           Nominal input speed           |               rpm                |   2,000    |       2,000       |
+|           Maximum input speed           |               rpm                |   8,500    |       8,500       |
+|            Moment of inertia            | x10<sup>-4</sup> kgm<sup>2</sup> |   0.284    |       0.322       |
+|                Backlash                 |              arcmin              |    <3.0    |       <3.0        |
+|       Efficiency (@2,000rpm, 20℃)      |                %                 |     70     |        70         |
+|             Starting torque             |               cNm                |     4      |         3         |
+|            Back-drive torque            |                Nm                |     5      |         5         |
+|              Service life               |               hour               |   7,000    |       7,000       |
+|               Dimensions                |                mm                | Ø78 × 34.2 |    Ø78 × 34.2     |
+|                 Weight                  |                g                 |    600     |        600        |
 
 **NOTE**: The specification and figures in the list are subject to update for the continuous product performance improvement.
 {: .notice}
@@ -45,17 +44,15 @@ product_group: all-dyd
 
 ## [Efficiency](#efficiency)
 
-The efficiency of the DYD can be affected by the temperature and the input speed. Please refer to the graph below for the input speed and the output torque efficiency.
+Various input shaft options can be selected with the DYD. See the following table and select the input shaft option to use with DYD. 
 
-![](/assets/images/dyd/dyd_17_efficiency.png){: width="700px"}
+![](/assets/images/dyd/efficiency_dyd_17_051.jpg){: width='600px'}
 
-> Graph of Efficiency Characteristics for DYD-17, Operating Enviroment : Temperature 22 &deg; (71.6&deg;F), Humidity 55%
+![](/assets/images/dyd/efficiency_dyd_17_099.jpg){: width='600px'}
 
 # [Drawings](#drawings)
 
-![](/assets/images/dyd/dyd_17_drawings.png)
-
-> Drawings for DYD-17 
+![](/assets/images/dyd/drawing/dyd_17_drawing_update_enlarged.png)
 
 # [Options & Assembly Tolerance](#options--assembly-tolerance)
 
@@ -73,5 +70,3 @@ Various input shaft options can be selected with the DYD. See the following tabl
 See the dimension and the geometric tolerances of the input, output and the housing when applying DYD on the system.
 
 ![](/assets/images/dyd/dyd_17_assembly_tollerance_01.png){: width="700px"}
-
-> Assembly Tolerance

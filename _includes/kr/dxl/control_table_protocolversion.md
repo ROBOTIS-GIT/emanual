@@ -42,15 +42,15 @@ S.BUS는 RC 제품에서 사용하는 통신 프로토콜 입니다. XL330 시�
 - 전달되는 데이터 값의 범위는 0~2,047 (11 bits)입니다.
 - 위치제어 모드일 때에는 [Goal Position(116)]으로, 속도제어 모드일 경우에는 [Goal Velocity(104)]로 데이터가 전달됩니다. 프로토콜로 전달받은 데이터에 따른 제어 지령치는 아래 그래프와 같습니다.
 
-<img src="/assets/images/dxl/x/xl330/protocol_s_bus_graph_kr.png" width="1100">
+<img src="/assets/images/dxl/x/x330/protocol_s_bus_graph_kr.png" width="1100">
 
 <!-- 
 
-![](/assets/images/dxl/x/xl330/protocol_s_bus_position_mode.png)
+![](/assets/images/dxl/x/x330/protocol_s_bus_position_mode.png)
 
   > 위치제어 모드
 
-![](/assets/images/dxl/x/xl330/protocol_s_bus_velocity_mode.png)
+![](/assets/images/dxl/x/x330/protocol_s_bus_velocity_mode.png)
 
   > 속도제어 모드 
 
@@ -69,7 +69,7 @@ iBUS는 RC 제품에서 사용하는 통신 프로토콜 입니다. XL330 시리
 - 전달되는 데이터 값의 범위는 0~16,383(16 bits)입니다.
 - 위치제어 모드일 때에는 [Goal Position(116)]으로, 속도제어 모드일 경우에는 [Goal Velocity(104)]로 데이터가 전달됩니다. 프로토콜로 전달받은 데이터에 따른 제어 지령치는 아래 그래프와 같습니다.
 
-<img src="/assets/images/dxl/x/xl330/protocol_ibus_graph_kr.png" width="1100">
+<img src="/assets/images/dxl/x/x330/protocol_ibus_graph_kr.png" width="1100">
 
 **참고**: 속도제어 모드에서는 최대 속도는 [Velocity Limit(44)](#velocity-limit44) 값으로, 움직이지 않는 범위(Goal Velocity가 0인 범위)는 [Moving Threshold(24)](#moving-threshold24) 값으로 설정할 수 있습니다.
 {: .notice}
@@ -78,11 +78,11 @@ iBUS는 RC 제품에서 사용하는 통신 프로토콜 입니다. XL330 시리
 
 RC 제품군에서 사용하는 PWM(Pulse Width Modulation) 신호로, 여러 장치가 신호선을 공유할 수 없지만, 가장 고전적이고 오랫동안 대중적으로 사용되고 있는 RC 서보모터의 프로토콜입니다. RC-PWM 신호는 다음과 같이 신호 펄스폭의 시간으로 통해서 데이터를 전송하는 방식으로, 시간에 대한 아날로그 데이터입니다.
 
-<img src="/assets/images/dxl/x/xl330/protocol_rc_pwm_duty.png" width="550">
+<img src="/assets/images/dxl/x/x330/protocol_rc_pwm_duty.png" width="550">
 
 RC PWM 신호 데이터는 위치제어 모드일 때에는 [Goal Position(116)](#goal-position116)으로, 속도제어 모드일 경우에는 [Goal Velocity(104)](#goal-velocity104)로 데이터가 전달됩니다. RC-PWM 신호의 데이터에 따른 지령치는 다음 그래프와 같습니다.
 
-<img src="/assets/images/dxl/x/xl330/protocl_rc_pwm_graph_kr.png" width="1100">
+<img src="/assets/images/dxl/x/x330/protocl_rc_pwm_graph_kr.png" width="1100">
 
 **참고**: 속도제어 모드에서는 최대 속도는 [Velocity Limit(44)](#velocity-limit44) 값으로, 움직이지 않는 범위(Goal Velocity가 0인 범위)는 [Moving Threshold(24)](#moving-threshold24) 값으로 설정할 수 있습니다.
 {: .notice}

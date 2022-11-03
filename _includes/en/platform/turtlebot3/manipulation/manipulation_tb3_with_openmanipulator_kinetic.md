@@ -1,5 +1,5 @@
 
-![](/assets/images/platform/turtlebot3/manipulation/tb3_with_opm_logo.png)
+![](/assets/images/platform/turtlebot3/manipulation/tb3_with_opm_logo.png){: width="50%"}
 
 The OpenMANIPULATOR-X by ROBOTIS is one of the manipulators that support ROS, and has the advantage of being able to easily manufacture at a low cost by using DYNAMIXEL actuators with 3D printed parts.
 
@@ -11,5 +11,5 @@ The OpenMANIPULATOR-X has the advantage of being compatible with TurtleBot3 Waff
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/DLOq8yNcCoE" frameborder="0" allowfullscreen></iframe>
 
-The contents in e-Manual are subject to be updated without a prior notice. Therefore, some video may differ from the contents in e-Manual.
+The contents in e-Manual are subject to change without prior notice. Therefore, some video may differ from the contents in e-Manual.
 {: .notice--warning}

@@ -1,8 +1,13 @@
 # ROBOTIS wiki e-Manual
 
-- [support.robotis.com] will be served as well until the end of 2018.
-- New ROBOTIS Community [Forum] is available. Please checkout the [Forum] if you have any issue with ROBOTIS Products.
-- 한국어 사용자는 [`한글 매뉴얼`]을 참조하세요.
+**Hi, welcome to the e-Manual!**
+
+- Visit [https://emanual.robotis.com/](https://emanual.robotis.com/)
+- For general discussions, inquiries, and support for your projects, please visit User Community.
+- You can also find useful resources through the ROBOTIS Download Center, such as Drawings (2D/3D CAD), and Software.
+
+[User Community]: https://community.robotis.us/
+[robotis download center]: http://en.robotis.com/service/downloadcenter.php
 
 # Quick References
 

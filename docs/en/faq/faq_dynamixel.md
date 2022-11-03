@@ -61,7 +61,7 @@ Please refer to Connector Information section of each DYNAMIXEL manual page belo
 2. [USB2DYNAMIXEL]
    Check QC number. If it's in the range of 1412-1502 there may be an FTDI issue. Try [manual installation] or return the product for replacement.
 2. ROBOTIS controllers
-   You can use [OpenCM9.04], [OpenCM9.04] + [OpenCM 485 EXP], [CM-530], [CM-700], and [OpenCR1.0].
+   You can use [OpenRB-150], [OpenCM9.04], [OpenCM9.04] + [OpenCM 485 EXP], [CM-530], [CM-700], and [OpenCR1.0].
 3. Other controllers
    DYNAMIXEL communicates via half-duplex UART (TTL or RS485 depending on your model). Refer to the **Communication Circuit** section in each DYNAMIXEL manual.
 
@@ -144,6 +144,7 @@ DYNAMIXEL Pro is CE/FCC certified. For more information, please search ROBOTIS [
 [U2D2]: /docs/en/parts/interface/u2d2/
 [USB2DYNAMIXEL]: /docs/en/parts/interface/usb2dynamixel/
 [manual installation]: /docs/en/parts/interface/usb2dynamixel/#install-driver-manually
+[OpenRB-150]: /docs/en/parts/controller/openrb-150/
 [OpenCM9.04]: /docs/en/parts/controller/opencm904/
 [OpenCM 485 EXP]: /docs/en/parts/controller/opencm485exp/
 [CM-530]: /docs/en/parts/controller/cm-530/
