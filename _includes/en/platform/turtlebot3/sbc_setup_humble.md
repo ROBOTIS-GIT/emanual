@@ -18,17 +18,17 @@ If you PC do not have a microSD slot, please use a microSD card reader to burn t
 
 ### [Download TurtleBot3 SBC Image](#download-turtlebot3-sbc-image)
 Download the correct image file for your hardware and ROS version.  
-Foxy version images are created based on Ubuntu 20.04.  
+Humble version images are created based on Ubuntu 22.04.  
 
 {% capture download_01 %}
-[![](/assets/images/icon_download.png) **Download** `Raspberry Pi 3B+` ROS2 Foxy image](https://www.robotis.com/service/download.php?no=2058){: .blank}
+[![](/assets/images/icon_download.png) **Download** `Raspberry Pi 3B+` ROS2 Humble image](https://www.robotis.com/service/download.php?no=2058){: .blank}
 
 **SHA256** : e1916b75573e3944c72552664ee1e32e9be32a026bd5b4323d0a4b5778243a1e
 {% endcapture %}
 <div class="notice--success">{{ download_01 | markdownify }}</div>
 
 {% capture download_02 %}
-[![](/assets/images/icon_download.png) **Download** `Raspberry Pi 4B (2GB or 4GB)` ROS2 Foxy image](https://www.robotis.com/service/download.php?no=2064){: .blank}
+[![](/assets/images/icon_download.png) **Download** `Raspberry Pi 4B (2GB or 4GB)` ROS2 Humble image](https://www.robotis.com/service/download.php?no=2064){: .blank}
 
 **SHA256** : 8b8b54ad80c7a02ae35da8e9e5d9750fdf21ec6098052a804986ab22ce10ba7e
 - Please note that this image may not compatible with Raspberry Pi 4B with 8GB RAM.
@@ -226,29 +226,23 @@ $ sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.
 $ ssh ubuntu@{IP Address of Raspberry PI}
   ```
 
-13. Install ROS2 Foxy Fiztroy  
-Enter below commands to the Raspberry Pi terminal one at a time.  
-In order to check the details of the easy installation script, please refer to [the script file](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros2_foxy_rpi.sh).  
-```bash
-$ sudo apt update
-$ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros2_foxy_rpi.sh
-$ chmod 755 ./install_ros2_foxy_rpi.sh
-$ bash ./install_ros2_foxy_rpi.sh
-```
-If the above installation fails, please refer to [the official ROS2 Foxy installation guide](https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html).
+13. Install ROS2 Humble Hawksbill  
+Please refer to [the official ROS2 Humble installation guide](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html).
 
 14. Install and Build ROS Packages.
   ```bash
 $ sudo apt install python3-argcomplete python3-colcon-common-extensions libboost-system-dev build-essential
-$ sudo apt install ros-foxy-hls-lfcd-lds-driver
-$ sudo apt install ros-foxy-turtlebot3-msgs
-$ sudo apt install ros-foxy-dynamixel-sdk
+$ sudo apt install ros-humble-hls-lfcd-lds-driver
+$ sudo apt install ros-humble-turtlebot3-msgs
+$ sudo apt install ros-humble-dynamixel-sdk
+$ sudo apt install libudev-dev
 $ mkdir -p ~/turtlebot3_ws/src && cd ~/turtlebot3_ws/src
-$ git clone -b foxy-devel https://github.com/ROBOTIS-GIT/turtlebot3.git
+$ git clone -b humble-devel https://github.com/ROBOTIS-GIT/turtlebot3.git
+$ git clone -b ros2-devel https://github.com/ROBOTIS-GIT/ld08_driver.git
 $ cd ~/turtlebot3_ws/src/turtlebot3
 $ rm -r turtlebot3_cartographer turtlebot3_navigation2
 $ cd ~/turtlebot3_ws/
-$ echo 'source /opt/ros/foxy/setup.bash' >> ~/.bashrc
+$ echo 'source /opt/ros/humble/setup.bash' >> ~/.bashrc
 $ source ~/.bashrc
 $ colcon build --symlink-install --parallel-workers 1
 $ echo 'source ~/turtlebot3_ws/install/setup.bash' >> ~/.bashrc
@@ -277,21 +271,13 @@ $ source ~/.bashrc
 
 17. LDS Configuration
 The TurtleBot3 LDS has been updated to LDS-02 since 2022 models.  
-Please follow the instructions below on the **SBC (Raspberry Pi)** of TurtleBot3.
-```bash
-$ sudo apt update
-$ sudo apt install libudev-dev
-$ cd ~/turtlebot3_ws/src
-$ git clone -b ros2-devel https://github.com/ROBOTIS-GIT/ld08_driver.git
-$ cd ~/turtlebot3_ws && colcon build --symlink-install
-```
-
-18. Export the LDS_MODEL to the bashrc file. Depending on your LDS model, use `LDS-01` or `LDS-02`.
+Please follow the instructions below on the **SBC (Raspberry Pi)** of TurtleBot3.  
+Export the LDS_MODEL to the bashrc file. Depending on your LDS model, use `LDS-01` or `LDS-02`.
 ```bash
 $ echo 'export LDS_MODEL=LDS-02' >> ~/.bashrc
 ```
 
-19. Apply changes with the command below.
+18. Apply changes with the command below.
 ```bash
 $ source ~/.bashrc
 ```
