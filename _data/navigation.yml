@@ -8660,6 +8660,10 @@ xw540-t140:
     url: /dxl/x/xw540-t140/#how-to-assemble
     urlkr: /dxl/x/xw540-t140/#조립-예시
     children:
+      - title: "Frame Assembly"
+        titlekr: "프레임 조립"
+        url: /dxl/x/xw540-t140/#frame-assembly
+        urlkr: /dxl/x/xw540-t140/#프레임-조립      
       - title: "Idler Horn Assembly"
         titlekr: "아이들러 혼 조립"
         url: /dxl/x/xw540-t140/#idler-horn-assembly
@@ -8903,6 +8907,10 @@ xw540-t260:
     url: /dxl/x/xw540-t260/#how-to-assemble
     urlkr: /dxl/x/xw540-t260/#조립-예시
     children:
+      - title: "Frame Assembly"
+        titlekr: "프레임 조립"
+        url: /dxl/x/xw540-t260/#frame-assembly
+        urlkr: /dxl/x/xw540-t260/#프레임-조립
       - title: "Idler Horn Assembly"
         titlekr: "아이들러 혼 조립"
         url: /dxl/x/xw540-t260/#idler-horn-assembly
@@ -9146,6 +9154,10 @@ xw430-t333:
     url: /dxl/x/xw430-t333/#how-to-assemble
     urlkr: /dxl/x/xw430-t333/#조립-예시
     children:
+      - title: "Frame Assembly"
+        titlekr: "프레임 조립"
+        url: /dxl/x/xw430-t333/#frame-assembly
+        urlkr: /dxl/x/xw430-t333/#프레임-조립      
       - title: "Idler Horn Assembly"
         titlekr: "아이들러 혼 조립"
         url: /dxl/x/xw430-t333/#idler-horn-assembly
@@ -9389,6 +9401,10 @@ xw430-t200:
     url: /dxl/x/xw430-t200/#how-to-assemble
     urlkr: /dxl/x/xw430-t200/#조립-예시
     children:
+      - title: "Frame Assembly"
+        titlekr: "프레임 조립"
+        url: /dxl/x/xw430-t200/#frame-assembly
+        urlkr: /dxl/x/xw430-t200/#프레임-조립            
       - title: "Idler Horn Assembly"
         titlekr: "아이들러 혼 조립"
         url: /dxl/x/xw430-t200/#idler-horn-assembly
