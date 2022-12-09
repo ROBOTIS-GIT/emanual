@@ -162,7 +162,7 @@ Three LED indicates the status of the OpenRB-150 controller.
 #define LED_BUILTIN PIN_LED
 
 // DYNAMIXEL POWER FET
-#define DXL_PWR_SW  (31u)
+#define BDPIN_DXL_PWR_EN  (31u)
 ```
 
 # [Connecting Power](#connecting-power)
