@@ -186,7 +186,7 @@ If you have questions regarding the TurtleBot3 Friends, contact us via the email
 
 - **Type**: Caterpillar
 - **Features**: Caterpillar units which are connected and assembled on sprocket wheels make it be strong in the rough terrain.
-- **Components**: Two DYNAMIXEL X 430 Series (All for driving), an OpenCR1.0 Board, a RC100 Remote Controller with BT410 master-slave Bluetooth modules, TurtleBot3 Chassis and Battery, Caterpillar Unit, 3D printed chassis.
+- **Components**: Four DYNAMIXEL X 430 Series (All for driving), an OpenCR1.0 Board, a RC100 Remote Controller with BT410 master-slave Bluetooth modules, TurtleBot3 Chassis and Battery, Caterpillar Unit, 3D printed chassis.
 - [BOM](https://docs.google.com/spreadsheets/d/1vbIFMRJMbyOd2D6BtwV1Ow_yBc9xRHktqZhTTmwI_l4/edit?pli=1#gid=146214313)
 - Hardware ([Onshape](http://www.robotis.com/service/download.php?no=683), [Thingiverse](https://www.thingiverse.com/thing:3069755))
 - **Software**: `Examples` → `turtlebot3` → `turtlebot3_friends` → `turtlebot3_tank`
