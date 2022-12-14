@@ -11,37 +11,42 @@ sidebar:
   nav: "faq_dynamixel"
 ---
 
-**TIP** : If you have any problem with DYNAMIXEL, please go over this [DYNAMIXEL Self Checklist] first.
+**TIP** : If you are experiencing problems with your DYNAMIXEL actuators, the [DYNAMIXEL Self Checklist] is a great way to diagnose and resolve most issues.
 {: .notice--success}
 
-**NOTE** : More FAQ can be found from [ROBOTIS Support page].
+**NOTE** : More FAQs can be found on the [ROBOTIS Support FAQ page].
 {: .notice}
 
 # What is the difference between DYNAMIXEL Protocol 1.0 and 2.0?
 
-The structure of the instruction and status packet are different.
+The structure of the DYNAMIXEL packets used to communicate has been changed between the protocols. Products utilizing different DYNAMIXEL protocols are not able to be utilized together on a single DYNAMIXEL network.
 
 ## DYNAMIXEL Protocol 1.0
-[DYNAMIXEL Protocol 1.0] is used with established DYNAMIXEL product lines; the AX-series and MX-series DYNAMIXEL servos operate with [DYNAMIXEL Protocol 1.0].
+[DYNAMIXEL Protocol 1.0] was used on our legacy DYNAMIXEL models, including:
+* [MX Series]
+* [AX Series]
+* [RX Series]
+* [EX Series]
+* [DX Series]
+
+[DYNAMIXEL Protocol 1.0] is now considered a legacy communications protocol, and ROBOTIS recommends transitioning to products utilizing [DYNAMIXEL Protocol 2.0].
 
 ## DYNAMIXEL Protocol 2.0
-[DYNAMIXEL Protocol 2.0] is used with the most recently-released DYNAMIXEL series; the X-series and PRO series utilize [DYNAMIXEL Protocol 2.0]. The control tables of DYNAMIXEL's using DYNAMIXEL Protocol 2.0 are expanded to include PID (Proportional, Integral, Derivative) controls allowing for extremely precise and fine-tuned movements. In addition, [MX]-series DYNAMIXEL's may undergo firmware upgrade to utilize [DYNAMIXEL Protocol 2.0].
+[DYNAMIXEL Protocol 2.0] is used in ROBOTIS' new DYNAMIXEL series: 
+* [DYNAMIXEL-X]
+* [DYNAMIXEL-P]
+
+[DYNAMIXEL Protocol 2.0] is an improved communications protocol featuring PID (Proportional, Integral, Derivative) controls allowing for extremely precise and fine-tuned movements. In addition to the default support for Protocol 2.0 provided by our new actuators, [MX Series] DYNAMIXELs may undergo firmware upgrade to add support for [DYNAMIXEL Protocol 2.0].
 
 Please refer to [DYNAMIXEL Protocol 1.0] and [DYNAMIXEL Protocol 2.0] description pages for more information.
 
-# Which DYNAMIXEL uses DYNAMIXEL Protocol 1.0 and DYNAMIXEL Protocol 2.0?
+# What is a Control Table?
 
-Please refer to [Compatibility Table]{: .popup} of ROBOTIS products.
+The Control Table is an internal memory structure consisting of multiple memory types (EEPROM, RAM) and data fields (Control Table Items) used by DYNAMIXELs to store status information and to control the device. Users can check current status of the device by reading specific control table fields, or control DYNAMIXELs by writing to control table fields. 
 
-# What does Control Table/DYNAMIXEL firmware mean?
+For more details about Instruction and Status Packets as well as how to read and write to DYNAMIXEL control tables, please refer to the eManual pages regarding [DYNAMIXEL Protocol 1.0] or [DYNAMIXEL Protocol 2.0] depending on the communications protocol supported by your actuators.
 
-The Control Table is a structure that consists of multiple Data fields (EEPROM, RAM) to store status or to control the device. Users can check current status of the device by reading a specific Data from the Control Table with Read Instruction Packets. WRITE Instruction Packets enable users to control the device by changing specific Data in the Control Table. The Address is a unique value when accessing a specific Data in the Control Table with Instruction Packets. In order to read or write data, users must designate a specific Address in the Instruction Packet.
-
-<!-- Delete: The Control Table contains every numbered firmware address that may be used in a command or status packet. /// Correspond to the exsisting description in each DYNAMIXEL manual -->
-
-For more details about Instruction and Status Packets, please refer to [DYNAMIXEL Protocol 1.0] and [DYNAMIXEL Protocol 2.0]. 
-
-**NOTE**: To know what product supports DYNAMIXEL Protocol (1.0 or 2.0), see [DYNAMIXEL Protocol Compatibility Table](/docs/en/popup/faq_protocol_compatibility_table/){: .popup} 
+**NOTE**: To check which products support which DYNAMIXEL Protocol (1.0 or 2.0), see the [DYNAMIXEL Protocol Compatibility Table](/docs/en/popup/faq_protocol_compatibility_table/){: .popup} 
 {: .notice}
 
 **TIP** : The firmware addresses remain similar for DYNAMIXEL's within the same series.    
@@ -49,97 +54,101 @@ ex) Goal Position of [AX-12A](/docs/en/dxl/ax/ax-12a/#goal-position-30) and [AX-
 {: .notice--success}
 
 
-# What kind of connector and cable does DYNAMIXEL use?
-Please refer to Connector Information section of each DYNAMIXEL manual page below.
+# What kind of connector does my DYNAMIXEL use?
+Connector information for each DYNAMIXEL actuator is available in the "Connector Information" section on the actuator's eManual page.
 
-  - [Standard](http://en.robotis.com/model/board.php?bo_table=tutorial_vod_en&wr_id=1131796) - AX-Series, MX-Series, X-Series
-  - [Pro](http://en.robotis.com/model/board.php?bo_table=tutorial_vod_en&wr_id=1151886) - H-Series, M-Series
+* [DYNAMIXEL-X]
+* [DYNAMIXEL-P]
+
+**LEGACY PRODUCTS**
+* [MX Series]
+* [AX Series]
+* [RX Series]
+* [EX Series]
+* [DX Series]
+{: .notice--warning}
 
 # Which hardware should I use to connect DYNAMIXEL?
 1. [U2D2]
-   U2D2 is the most widely used and recommended interface to connect DYNAMIXEL and PC.
-2. [USB2DYNAMIXEL]
-   Check QC number. If it's in the range of 1412-1502 there may be an FTDI issue. Try [manual installation] or return the product for replacement.
-2. ROBOTIS controllers
-   You can use [OpenRB-150], [OpenCM9.04], [OpenCM9.04] + [OpenCM 485 EXP], [CM-530], [CM-700], and [OpenCR1.0].
-3. Other controllers
-   DYNAMIXEL communicates via half-duplex UART (TTL or RS485 depending on your model). Refer to the **Communication Circuit** section in each DYNAMIXEL manual.
+   The U2D2 USB to Serial converter is the most widely used interface to connect DYNAMIXEL actuators to a PC.
+2. ROBOTIS provides a variety of robot controllers designed especially for use with DYNAMIXEL servos, including: [OpenRB-150], [OpenCM9.04], [OpenCM9.04] + [OpenCM 485 EXP], [CM-530], [CM-700], and [OpenCR1.0].
+3. DYNAMIXEL actuators are completely controller agnostic, and are fully compatible with any system capable of DYNAMIXEL Protocol communications. DYNAMIXEL actuators communicate via half-duplex UART (TTL or RS485 depending on your model). Refer to the **Communication Circuit** section on the eManual page for your DYNAMIXEL model for more information on communication circuit implementation.
 
-# How can I test DYNAMIXEL control table?
-1. Please use [DYNAMIXEL Wizard] or [DYNAMIXEL Wizard 2.0] for the product using **DYNAMIXEL Protocol 1.0**.
-2. Please use [R+ Manager 2.0] or [DYNAMIXEL Wizard 2.0] for the product using **DYNAMIXEL Protocol 2.0**.
+# How can I test or configure my DYNAMIXEL actuator?
+1. Use [DYNAMIXEL Wizard 2.0] or [R+ Manager 2.0] for products using **DYNAMIXEL Protocol 2.0**.
+2. Use [DYNAMIXEL Wizard 2.0] or [DYNAMIXEL Wizard] for products using **DYNAMIXEL Protocol 1.0**.
 
-# How can I make a program to control DYNAMIXEL?
-1. If you are operating DYNAMIXEL from your PC with [U2D2] or [USB2DYNAMIXEL]
-  You can use [DYNAMIXEL SDK](/docs/en/software/dynamixel/dynamixel_sdk/overview/)(C, C++, C#, Java, MATLAB, LabVIEW, Python, ROS) or [R+ Task] or [R+ Task 2.0]
-2. If you are operating DYNAMIXEL from [OpenCM9.04] or [OpenCR1.0] embedded controller
-  You can use [Arduino IDE] that supports [DYNAMIXEL SDK] and [DYNAMIXEL Workbench] libraries.
+# How can I create a program to control DYNAMIXELs?
+1. If you intend to control your DYNAMIXELs from your PC with a [U2D2] or comparable USB to serial interface, you can use ROBOTIS' [DYNAMIXEL SDK](/docs/en/software/dynamixel/dynamixel_sdk/overview/)(C, C++, C#, Java, MATLAB, LabVIEW, Python, ROS) or [R+ Task 3.0]
+2. If you want to control your DYNAMIXELs using an embedded microcontroller like our [OpenRB-150] or [OpenCR1.0] the [Arduino IDE] supports the [DYNAMIXEL SDK] through the offical DYNAMIXEL2Arduino library.
 
 
-# If the DYNAMIXEL Protocol Version of DYNAMIXEL's X-Series is changed, does it really change the firmware address?
-This does not change the firmware addresses of DYNAMIXEL, but will allow it to communicate in DYNAMIXEL Protocol 1.0 for compatibility with older series such as AX or MX.
+# When DYNAMIXEL X series servos are operating in DYNAMIXEL Protocol 1.0 compatibility mode, are the firmware addresses really changed?
+Protocol 1.0 compatibility mode does not change the firmware addresses of DYNAMIXEL actuators, but will allow it to communicate using DYNAMIXEL Protocol 1.0 for compatibility with legacy DYNAMIXEL actuators.
 
 
-# I'd like to know which frames and horns are compatible to my DYNAMIXEL.
+# I'd like to know which frames and horns are compatible with my DYNAMIXEL actuator.
 Please refer to the [DYNAMIXEL Compatibility Guide].
 
-# Where can I find 3D modeling files?
-3D files can be found from [ROBOTIS Download Center].
+# Where can I find 3D models of DYNAMIXEL servos and accessories?
+Models for 3d printing and component design can be downloaded from the [ROBOTIS Download Center].
 
 # Can I purchase internal components for my DYNAMIXEL?
-Replacement gears can be purchased except PRO and higher series.
+Replacement gear sets for AX, MX and X Series DYNAMIXELs are available for purchase from ROBOTIS online storefront in your region. Other internal components are not sold separately.
 
-# What is the power requirement of DYNAMIXEL?
-Each DYNAMIXEL has different power requirements. Please refer to the manual page for each model.
-Do not exceed the operating voltage range as it will damage the internal components.
-DYNAMIXEL Pro is highly recommended to use with DC 24V.
+# What are the power requirements for DYNAMIXEL actuators?
+Each DYNAMIXEL has different power requirements. Please refer to the eManual page for your DYNAMIXEL model for more information.
 
-# Why DYNAMIXEL-X Series doesn't work with other DYNAMIXEL series?
-1. To communicate with any DYNAMIXEL, users must utilize the communication protocol accepted by DYNAMIXEL as well as the [correct logic level (buffer circuit)](http://emanual.robotis.com/docs/en/dxl/x/xl430-w250/#ttl-communication). The [XL430-W250-T](/docs/en/dxl/x/xl430-w250/) utilizes Communication [DYNAMIXEL Protocol 2.0] for packet structure and instructions.
+# Can I mix different DYNAMIXEL series actuators in the same DYNAMIXEL Network?
+DYNAMIXEL communication relies on all actuators utilizing the same communication protocol as well as the [correct logic level (buffer circuit)](http://emanual.robotis.com/docs/en/dxl/x/xl430-w250/#ttl-communication) for packet structure and instructions.
 
-2. The third-party software solution you linked likely did not work due to being based on Communication [DYNAMIXEL Protocol 1.0]. However, ROBOTIS does not recommend operating DYNAMIXEL's without the appropriate communication circuit.
+DYNAMIXEL Protocol 2.0 DYNAMIXEL actuators may be configured to accept Communication DYNAMIXEL Protocol 1.0 commands by changing the [DYNAMIXEL Protocol Version parameter](/docs/en/dxl/x/xl430-w250/#protocol-version13) in DYNAMIXEL firmware to allow compatibility with legacy actuators.
 
-3. [XL430-W250-T](/docs/en/dxl/x/xl430-w250/), and all DYNAMIXEL Protocol 2.0 DYNAMIXEL actuators, may be configured to accept Communication DYNAMIXEL Protocol 1.0 commands by changing the [DYNAMIXEL Protocol Version parameter](/docs/en/dxl/x/xl430-w250/#protocol-version13) in DYNAMIXEL firmware.
+# What is the recommended torque range for DYNAMIXEL actuators?
+Each DYNAMIXEL has different torque ranges. Please refer to the performance graph on the eManual page for your actuator for more specific information.
 
-# What is the recommended torque for DYNAMIXEL?
-Each DYNAMIXEL has different torque ranges.
-Please refer to the performance graph in the manual to find the most efficient torque range.
-Please refer to the specifications for DYNAMIXEL Pro series.
+# My DYNAMIXEL is not being detected by ROBOTIS software!
+1. Make sure that proper power is being supplied to all connected DYNAMIXELs.
+2. Make sure that each DYNAMIXEL in the network has a unique ID assigned.
+3. Make sure that all cables and connectors are securely connected.
+4. Make sure that all cables are not damaged.
+5. Try searching all Baud Rates for connected DYNAMIXELs.
+6. Try [Firmware Recovery].
 
-# DYNAMIXEL is not detected from softwares(R+ softwares, DYNAMIXEL Wizard).
-1. Make sure that proper power is being supplied to all DYNAMIXEL.
-2. Make sure that each DYNAMIXEL in the network has unique ID.
-3. Make sure that cables and connectors are securely connected.
-4. Make sure that cables are not damaged.
-5. Try searching for all Baud Rates.
-6. Try [Firmware Recovery] for undetected DYNAMIXEL.
-
-# DYNAMIXEL is not detected from other softwares(LabView, Visual Studio, etc) when trying to communicate via SDK source code examples.
-In a peculiar case, Windows 32-bit DLL could not recognize COM port higher than COM9.
+# DYNAMIXEL is not detected in 3rd party software (LabView, Visual Studio, etc) when trying to communicate via SDK source code examples!
+A known issue with Windows' 32-bit DLL may be preventing communication over COM ports higher than 09. Utilizing a lower COM port may resolve this issue.
 
 
-# What is the meaning of suffix 'R','T' on the last digit of DYNAMIXEL's model number?
-Most models of DYNAMIXEL contain a suffix on the last digit of the model number (e.g. MX-64R ; XM430-W210T) which denotes the format of asynchronous serial communication utilized by DYNAMIXEL. It is important to ensure the correct serial interface format is chosen for compatibility in the intended system and across daisy-chained DYNAMIXEL's.
-- R : RS-485 serial communication
-- T : TTL serial communication
+# What is the meaning of the 'R' and 'T' at the end of a DYNAMIXEL's model name?
+
+This character indicates the supported communications protocol for that model of DYNAMIXEL actuator:
+- R indicates support for RS-485 serial communication
+- T indicates support for TTL serial communication
+
+Connector information for each communications protocol is available here on the ROBOTIS eManual.
 - [MOLEX Connector Information](/docs/en/dxl/mx/mx-28/#connector-information)
 - [JST Connector Information](/docs/en/dxl/x/xm430-w350/#connector-information)
 
 
-# Are actuators certified as intrinsically safe?
-DYNAMIXEL Pro is CE/FCC certified. For more information, please search ROBOTIS [e-Manual](http://emanual.robotis.com/) for Pro and Pro + series.
+# What certifications/ratings do DYNAMIXEL actuators have?
+* DYNAMIXEL [P Series] actuators are CE/FCC certified.
+* DYNAMIXEL XW Series actuators are IP68 rated.
+
+ For more information, please refer to the eManual pages for each actuator.
+
+
 
 
 [DYNAMIXEL Protocol 1.0]: /docs/en/dxl/protocol1/
 [DYNAMIXEL Protocol 2.0]: /docs/en/dxl/protocol2/
-[DX]: /docs/en/dxl/#dx-series
-[AX]: /docs/en/dxl/#ax-series
-[RX]: /docs/en/dxl/#rx-series
-[EX]: /docs/en/dxl/#ex-series
-[MX]: /docs/en/dxl/#mx-series
+[MX Series]: /docs/en/dxl/#mx-series
+[AX Series]: /docs/en/dxl/#ax-series
+[RX Series]: /docs/en/dxl/#rx-series
+[EX Series]: /docs/en/dxl/#ex-series
+[DX Series]: /docs/en/dxl/#dx-series
 [DYNAMIXEL-X]: /docs/en/dxl/#x-series
 [DYNAMIXEL Pro]: /docs/en/dxl/#pro-series
-[DYNAMIXEL-P]: /docs/en/dxl/#pro-plus-series
+[DYNAMIXEL-P]: /docs/en/dxl/#p-series
 [MX]: /docs/en/dxl/#mx-series
 [U2D2]: /docs/en/parts/interface/u2d2/
 [USB2DYNAMIXEL]: /docs/en/parts/interface/usb2dynamixel/
@@ -162,5 +171,5 @@ DYNAMIXEL Pro is CE/FCC certified. For more information, please search ROBOTIS [
 [ROBOTIS Download Center]: http://en.robotis.com/service/downloadcenter.php
 [Firmware Recovery]: /docs/en/software/dynamixel/dynamixel_wizard2/#firmware-recovery
 [DYNAMIXEL Self Checklist]: http://en.robotis.com/model/selfcheck.php
-[ROBOTIS Support page]: http://en.robotis.com/model/board.php?bo_table=robotis_faq_en
+[ROBOTIS Support FAQ page]: http://en.robotis.com/model/board.php?bo_table=robotis_faq_en
 [Compatibility Table]: /docs/en/popup/faq_protocol_compatibility_table/
