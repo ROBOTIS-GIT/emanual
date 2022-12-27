@@ -12,7 +12,8 @@ tab_title2: Melodic
 tab_title3: Noetic
 tab_title4: Dashing
 tab_title5: Foxy
-tab_title6: Windows
+tab_title6: Humble
+tab_title7: Windows
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
@@ -51,5 +52,9 @@ page_number: 8
 </section>
 
 <section data-id="{{ page.tab_title6 }}" class="tab_contents">
+{% include en/platform/turtlebot3/bringup_humble.md %}
+</section>
+
+<section data-id="{{ page.tab_title7 }}" class="tab_contents">
 {% include en/platform/turtlebot3/bringup_windows.md %}
 </section>
