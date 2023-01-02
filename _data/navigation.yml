@@ -27093,6 +27093,19 @@ dynamixel_shield:
         titlekr: 다이나믹셀 쉴드(v0.0.5)
         url: /parts/interface/dynamixel_shield/#dynamixelshieldv005
         urlkr: /parts/interface/dynamixel_shield/#다이나믹셀-쉴드v005
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /parts/interface/dynamixel_shield/#reference
+    urlkr: /parts/interface/dynamixel_shield/#참고자료
+    children:
+    - title: "DYNAMIXEL Connectors"
+      titlekr: "커넥터 정보"
+      url: /parts/interface/dynamixel_shield/#dynamixel-connectors
+      urlkr: /parts/interface/dynamixel_shield/#커넥터-정보
+    - title: "Communication Circuit"
+      titlekr: "통신 회로"
+      url: /parts/interface/dynamixel_shield/#communication-circuit
+      urlkr: /parts/interface/dynamixel_shield/#통신-회로
 
 mkr_shield:
   - title: "Introduction"
