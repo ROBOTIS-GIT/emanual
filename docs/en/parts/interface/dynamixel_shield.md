@@ -291,6 +291,21 @@ bool syncWriteBegin(void);
 bool syncWriteEnd(void);
 ```
 
+# [Reference](#reference)
+
+## [DYNAMIXEL Connectors](#dynamixel-connectors)
+
+|           Item           |                             TTL                              |                            RS-485                            |                            XL-320 (TTL)                             |
+|:------------------------:|:------------------------------------------------------------:|:------------------------------------------------------------:|:-------------------------------------------------------------------:|
+|          Pinout          |                `1` GND<br>`2` VDD<br>`3` DATA                |         `1` GND<br>`2` VDD<br>`3` DATA+<br>`4` DATA-         |                   `1` GND<br>`2` VDD<br>`3` DATA                    |
+|         Diagram          |        ![](/assets/images/dxl/jst_b3beha_diagram.png)        |        ![](/assets/images/dxl/jst_b4beha_diagram.png)        |         ![](/assets/images/dxl/molex_532530370_diagram.png)         |
+|         Housing          |   ![](/assets/images/dxl/JST_EHR-3.png)<br />[JST EHR-03]    |   ![](/assets/images/dxl/JST_EHR-4.png)<br />[JST EHR-04]    | ![](/assets/images/dxl/molex_510650300.png)<br />[MOLEX 51065-0300] |
+|        PCB Header        | ![](/assets/images/dxl/JST_B3B_EH-A.png)<br />[JST B3B-EH-A] | ![](/assets/images/dxl/JST_B4B-EH-A.png)<br />[JST B4B-EH-A] | ![](/assets/images/dxl/molex_532530370.png)<br />[MOLEX 53253-0370] |
+|      Crimp Terminal      |                     [JST SEH-001T-P0.6]                      |                     [JST SEH-001T-P0.6]                      |                         [MOLEX 50212-8000]                          |
+| Wire Gauge for DYNAMIXEL |                            21 AWG                            |                            21 AWG                            |                               24 AWG                                |
+
+{% include en/dxl/485_ttl_connection_x.md %}
+
 
 [AX-12W]: /docs/en/dxl/ax/ax-12w/
 [AX-12+/12A]: /docs/en/dxl/ax/ax-12a/
@@ -411,3 +426,11 @@ bool syncWriteEnd(void);
 [peek()]: /docs/en/popup/arduino_api/peek/
 [flush()]: /docs/en/popup/arduino_api/flush/
 [write()]: /docs/en/popup/arduino_api/rc100_write/
+[JST EHR-03]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
+[JST EHR-04]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
+[JST B3B-EH-A]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
+[JST B4B-EH-A]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
+[JST SEH-001T-P0.6]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
+[MOLEX 51065-0300]: https://www.molex.com/molex/products/datasheet.jsp?part=active/0510650300_CRIMP_HOUSINGS.xml&channel=Product
+[MOLEX 53253-0370]: https://www.molex.com/molex/products/datasheet.jsp?part=active/0532530370_PCB_HEADERS.xml
+[MOLEX 50212-8000]: https://www.molex.com/molex/products/datasheet.jsp?part=active/0502128000_CRIMP_TERMINALS.xml

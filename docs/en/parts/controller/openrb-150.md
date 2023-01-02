@@ -132,6 +132,14 @@ In order to properly supply power to the controller and DYNAMIXEL, the power sou
 
 ## [DYNAMIXEL Ports](#dynamixel-ports)
 4 DYNAMIXEL Ports are ready for any TTL supported DYNAMIXEL.  
+
+{% include en/dxl/jst_ttl.md %}
+
+![](/assets/images/dxl/x/x_series_ttl_pin.png)
+
+**NOTE**: Above circuit is designed for 5V or 5V tolerant MCU. Otherwise, use a Level Shifter to match the voltage of MCU.
+{: .notice}
+
 RS-485 supported DYNAMIXEL can also be used when connected with the [DYNAMIXEL Communication Bridge].
 
 ![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_product_front.png)
