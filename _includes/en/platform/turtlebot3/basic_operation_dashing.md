@@ -34,7 +34,7 @@ CTRL-C to quit
 
 #### [RC-100](#rc100)
 
-The settings for [ROBOTIS RC-100B][rc100] is included in an OpenCR firmware for TurtleBot3. It can be used with the Bluetooth module [BT410][bt410]. TurtleBot3 Waffle Pi includes this controller and Bluetooth modules. When using RC-100B, it is not necessary to execute a specific node because `turtlebot_core` node creates a `/cmd_vel` topic in the firmware directly connected to OpeCR.
+The settings for [ROBOTIS RC-100B][rc100] is included in an OpenCR firmware for TurtleBot3. It can be used with the Bluetooth module [BT410][bt410]. TurtleBot3 Waffle Pi includes this controller and Bluetooth modules. When using RC-100B, it is not necessary to execute a specific node because `turtlebot_core` node creates a `/cmd_vel` topic in the firmware directly connected to OpenCR.
 
 ![](/assets/images/platform/turtlebot3/example/rc100b_with_bt410.png)
 
