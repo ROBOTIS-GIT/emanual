@@ -4576,8 +4576,8 @@ xl330-m077:
       urlkr: /dxl/x/xl330-m077/#도면
     - title: "Moment of Inertia"
       titlekr: "Moment of Inertia"
-      url: /dxl/x/xl330-m077/moment-of-inertia
-      urlkr: /dxl/x/xl330-m077/moment-of-inertia  
+      url: /dxl/x/xl330-m077/#moment-of-inertia
+      urlkr: /dxl/x/xl330-m077/#moment-of-inertia  
 
 #XL330-M288
 xl330-m288:
@@ -4806,8 +4806,8 @@ xl330-m288:
       urlkr: /dxl/x/xl330-m288/#도면
     - title: "Moment of Inertia"
       titlekr: "Moment of Inertia"
-      url: /dxl/x/xl330-m288/moment-of-inertia
-      urlkr: /dxl/x/xl330-m288/moment-of-inertia  
+      url: /dxl/x/xl330-m288/#moment-of-inertia
+      urlkr: /dxl/x/xl330-m288/#moment-of-inertia  
 
 
 #XC330-M288
@@ -5037,8 +5037,8 @@ xc330-m288:
       urlkr: /dxl/x/xc330-m288/#도면
     - title: "Moment of Inertia"
       titlekr: "Moment of Inertia"
-      url: /dxl/x/xc330-m288/moment-of-inertia
-      urlkr: /dxl/x/xc330-m288/moment-of-inertia
+      url: /dxl/x/xc330-m288/#moment-of-inertia
+      urlkr: /dxl/x/xc330-m288/#moment-of-inertia
 
 #XC330-M181
 xc330-m181:
@@ -5267,8 +5267,8 @@ xc330-m181:
       urlkr: /dxl/x/xc330-m181/#도면
     - title: "Moment of Inertia"
       titlekr: "Moment of Inertia"
-      url: /dxl/x/xc330-m181/moment-of-inertia
-      urlkr: /dxl/x/xc330-m181/moment-of-inertia        
+      url: /dxl/x/xc330-m181/#moment-of-inertia
+      urlkr: /dxl/x/xc330-m181/#moment-of-inertia        
 
 #XC330-M288
 xc330-m288:
@@ -5497,8 +5497,8 @@ xc330-m288:
       urlkr: /dxl/x/xc330-m288/#도면
     - title: "Moment of Inertia"
       titlekr: "Moment of Inertia"
-      url: /dxl/x/xc330-m288/moment-of-inertia
-      urlkr: /dxl/x/xc330-m288/moment-of-inertia  
+      url: /dxl/x/xc330-m288/#moment-of-inertia
+      urlkr: /dxl/x/xc330-m288/#moment-of-inertia  
 
 #XC330-T181
 xc330-t181:
@@ -6306,8 +6306,8 @@ xl430-w250:
         urlkr: /dxl/x/xl430-w250/#도면
       - title: "Moment of Inertia"
         titlekr: "Moment of Inertia"
-        url: /dxl/x/xl430-w250/moment-of-inertia
-        urlkr: /dxl/x/xl430-w250/moment-of-inertia
+        url: /dxl/x/xl430-w250/#moment-of-inertia
+        urlkr: /dxl/x/xl430-w250/#moment-of-inertia
 
 #XC430-W150 sidebar
 xc430-w150:
@@ -6575,8 +6575,8 @@ xc430-w150:
         urlkr: /dxl/x/xc430-w150/#도면
       - title: "Moment of Inertia"
         titlekr: "Moment of Inertia"
-        url: /dxl/x/xc430-w150/moment-of-inertia
-        urlkr: /dxl/x/xc430-w150/moment-of-inertia
+        url: /dxl/x/xc430-w150/#moment-of-inertia
+        urlkr: /dxl/x/xc430-w150/#moment-of-inertia
 
 #XC430-W240 sidebar
 xc430-w240:
@@ -6844,8 +6844,8 @@ xc430-w240:
         urlkr: /dxl/x/xc430-w240/#도면
       - title: "Moment of Inertia"    
         titlekr: "Moment of Inertia"
-        url: /dxl/x/xc430-w240/moment-of-inertia
-        urlkr: /dxl/x/xc430-w240/moment-of-inertia
+        url: /dxl/x/xc430-w240/#moment-of-inertia
+        urlkr: /dxl/x/xc430-w240/#moment-of-inertia
 
 #2XL430-W250 sidebar
 2xl430-w250:
@@ -7097,8 +7097,8 @@ xc430-w240:
         urlkr: /dxl/x/2xl430-w250/#도면
       - title: "Moment of Inertia"    
         titlekr: "Moment of Inertia"
-        url: /dxl/x/2xl430-w250/moment-of-inertia
-        urlkr: /dxl/x/2xl430-w250/moment-of-inertia        
+        url: /dxl/x/2xl430-w250/#moment-of-inertia
+        urlkr: /dxl/x/2xl430-w250/#moment-of-inertia        
 
 #2XC430-W250 sidebar
 2xc430-w250:
@@ -7350,8 +7350,8 @@ xc430-w240:
         urlkr: /dxl/x/2xc430-w250/#도면
       - title: "Moment of Inertia"
         titlekr: "Moment of Inertia"
-        url: /dxl/x/2xc430-w250/moment-of-inertia
-        urlkr: /dxl/x/2xc430-w250/moment-of-inertia
+        url: /dxl/x/2xc430-w250/#moment-of-inertia
+        urlkr: /dxl/x/2xc430-w250/#moment-of-inertia
 
 #XM430-W210 sidebar
 xm430-w210:
@@ -8753,8 +8753,8 @@ xw540-t140:
         urlkr: /dxl/x/xw540-t140/#도면
       - title: "Moment of Inertia"
         titlekr: "Moment of Inertia"
-        url: /dxl/x/xw540-t140/moment-of-inertia
-        urlkr: /dxl/x/xw540-t140/moment-of-inertia         
+        url: /dxl/x/xw540-t140/#moment-of-inertia
+        urlkr: /dxl/x/xw540-t140/#moment-of-inertia         
 
 #XW540-T260 sidebar
 xw540-t260:
@@ -9004,8 +9004,8 @@ xw540-t260:
         urlkr: /dxl/x/xw540-t260/#도면
       - title: "Moment of Inertia"
         titlekr: "Moment of Inertia"
-        url: /dxl/x/xw540-t260/moment-of-inertia
-        urlkr: /dxl/x/xw540-t260/moment-of-inertia         
+        url: /dxl/x/xw540-t260/#moment-of-inertia
+        urlkr: /dxl/x/xw540-t260/#moment-of-inertia         
 
 #XW430-T333 sidebar
 xw430-t333:
@@ -9255,8 +9255,8 @@ xw430-t333:
         urlkr: /dxl/x/xw430-t333/#도면
       - title: "Moment of Inertia"
         titlekr: "Moment of Inertia"
-        url: /dxl/x/xw430-t333/moment-of-inertia
-        urlkr: /dxl/x/xw430-t333/moment-of-inertia         
+        url: /dxl/x/xw430-t333/#moment-of-inertia
+        urlkr: /dxl/x/xw430-t333/#moment-of-inertia         
 
 #XW430-T200 sidebar
 xw430-t200:
@@ -9506,8 +9506,8 @@ xw430-t200:
         urlkr: /dxl/x/xw430-t200/#도면
       - title: "Moment of Inertia"
         titlekr: "Moment of Inertia"
-        url: /dxl/x/xw430-t200/moment-of-inertia
-        urlkr: /dxl/x/xw430-t200/moment-of-inertia          
+        url: /dxl/x/xw430-t200/#moment-of-inertia
+        urlkr: /dxl/x/xw430-t200/#moment-of-inertia          
 
 #XD540-T150 sidebar
 xd540-t150:
