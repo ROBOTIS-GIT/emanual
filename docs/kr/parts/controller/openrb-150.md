@@ -177,7 +177,7 @@ RS-485 다이나믹셀 모델을 OpenRB-150과 사용하기 위해서는, [다�
 #define LED_BUILTIN PIN_LED
 
 // DYNAMIXEL POWER FET
-#define DXL_PWR_SW  (31u)
+#define BDPIN_DXL_PWR_EN  (31u)
 ```
 
 # [전원 연결 방법](#전원-연결-방법)
