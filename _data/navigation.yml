@@ -4577,7 +4577,7 @@ xl330-m077:
     - title: "Moment of Inertia"
       titlekr: "Moment of Inertia"
       url: /dxl/x/xl330-m077/#moment-of-inertia
-      urlkr: /dxl/x/xl330-m077/#moment-of-inertia  
+      urlkr: /dxl/x/xl330-m077/#moment-of-inertia
 
 #XL330-M288
 xl330-m288:
@@ -4807,7 +4807,7 @@ xl330-m288:
     - title: "Moment of Inertia"
       titlekr: "Moment of Inertia"
       url: /dxl/x/xl330-m288/#moment-of-inertia
-      urlkr: /dxl/x/xl330-m288/#moment-of-inertia  
+      urlkr: /dxl/x/xl330-m288/#moment-of-inertia
 
 
 #XC330-M288
@@ -5046,6 +5046,10 @@ xc330-m181:
   titlekr: "주요 사양"
   url: /dxl/x/xc330-m181/#specifications
   urlkr: /dxl/x/xc330-m181/#주요-사양
+- title: "Performance Graph"
+  titlekr: "성능 그래프"
+  url: /dxl/x/xc330-m181/#performance-graph
+  urlkr: /dxl/x/xc330-m181/#성능-그래프
 - title: "Control Table"
   titlekr: "컨트롤 테이블"
   url: /dxl/x/xc330-m181/#control-table
@@ -5268,7 +5272,7 @@ xc330-m181:
     - title: "Moment of Inertia"
       titlekr: "Moment of Inertia"
       url: /dxl/x/xc330-m181/#moment-of-inertia
-      urlkr: /dxl/x/xc330-m181/#moment-of-inertia        
+      urlkr: /dxl/x/xc330-m181/#moment-of-inertia
 
 #XC330-M288
 xc330-m288:
@@ -5276,6 +5280,10 @@ xc330-m288:
   titlekr: "주요 사양"
   url: /dxl/x/xc330-m288/#specifications
   urlkr: /dxl/x/xc330-m288/#주요-사양
+- title: "Performance Graph"
+  titlekr: "성능 그래프"
+  url: /dxl/x/xc330-m288/#performance-graph
+  urlkr: /dxl/x/xc330-m288/#성능-그래프
 - title: "Control Table"
   titlekr: "컨트롤 테이블"
   url: /dxl/x/xc330-m288/#control-table
@@ -5498,7 +5506,7 @@ xc330-m288:
     - title: "Moment of Inertia"
       titlekr: "Moment of Inertia"
       url: /dxl/x/xc330-m288/#moment-of-inertia
-      urlkr: /dxl/x/xc330-m288/#moment-of-inertia  
+      urlkr: /dxl/x/xc330-m288/#moment-of-inertia
 
 #XC330-T181
 xc330-t181:
@@ -5506,6 +5514,10 @@ xc330-t181:
   titlekr: "주요 사양"
   url: /dxl/x/xc330-t181/#specifications
   urlkr: /dxl/x/xc330-t181/#주요-사양
+- title: "Performance Graph"
+  titlekr: "성능 그래프"
+  url: /dxl/x/xc330-t181/#performance-graph
+  urlkr: /dxl/x/xc330-t181/#성능-그래프
 - title: "Control Table"
   titlekr: "컨트롤 테이블"
   url: /dxl/x/xc330-t181/#control-table
@@ -5726,12 +5738,16 @@ xc330-t181:
       url: /dxl/x/xc330-t181/#drawings
       urlkr: /dxl/x/xc330-t181/#도면
 
-#XC330-T181
+#XC330-T288
 xc330-t288:
 - title: "Specifications"
   titlekr: "주요 사양"
   url: /dxl/x/xc330-t288/#specifications
   urlkr: /dxl/x/xc330-t288/#주요-사양
+- title: "Performance Graph"
+  titlekr: "성능 그래프"
+  url: /dxl/x/xc330-t288/#performance-graph
+  urlkr: /dxl/x/xc330-t288/#성능-그래프
 - title: "Control Table"
   titlekr: "컨트롤 테이블"
   url: /dxl/x/xc330-t288/#control-table
@@ -6842,7 +6858,7 @@ xc430-w240:
         titlekr: "도면"
         url: /dxl/x/xc430-w240/#drawings
         urlkr: /dxl/x/xc430-w240/#도면
-      - title: "Moment of Inertia"    
+      - title: "Moment of Inertia"
         titlekr: "Moment of Inertia"
         url: /dxl/x/xc430-w240/#moment-of-inertia
         urlkr: /dxl/x/xc430-w240/#moment-of-inertia
@@ -7095,10 +7111,10 @@ xc430-w240:
         titlekr: "도면"
         url: /dxl/x/2xl430-w250/#drawings
         urlkr: /dxl/x/2xl430-w250/#도면
-      - title: "Moment of Inertia"    
+      - title: "Moment of Inertia"
         titlekr: "Moment of Inertia"
         url: /dxl/x/2xl430-w250/#moment-of-inertia
-        urlkr: /dxl/x/2xl430-w250/#moment-of-inertia        
+        urlkr: /dxl/x/2xl430-w250/#moment-of-inertia
 
 #2XC430-W250 sidebar
 2xc430-w250:
@@ -8754,7 +8770,7 @@ xw540-t140:
       - title: "Moment of Inertia"
         titlekr: "Moment of Inertia"
         url: /dxl/x/xw540-t140/#moment-of-inertia
-        urlkr: /dxl/x/xw540-t140/#moment-of-inertia         
+        urlkr: /dxl/x/xw540-t140/#moment-of-inertia
 
 #XW540-T260 sidebar
 xw540-t260:
@@ -9005,7 +9021,7 @@ xw540-t260:
       - title: "Moment of Inertia"
         titlekr: "Moment of Inertia"
         url: /dxl/x/xw540-t260/#moment-of-inertia
-        urlkr: /dxl/x/xw540-t260/#moment-of-inertia         
+        urlkr: /dxl/x/xw540-t260/#moment-of-inertia
 
 #XW430-T333 sidebar
 xw430-t333:
@@ -9256,7 +9272,7 @@ xw430-t333:
       - title: "Moment of Inertia"
         titlekr: "Moment of Inertia"
         url: /dxl/x/xw430-t333/#moment-of-inertia
-        urlkr: /dxl/x/xw430-t333/#moment-of-inertia         
+        urlkr: /dxl/x/xw430-t333/#moment-of-inertia
 
 #XW430-T200 sidebar
 xw430-t200:
@@ -9507,7 +9523,7 @@ xw430-t200:
       - title: "Moment of Inertia"
         titlekr: "Moment of Inertia"
         url: /dxl/x/xw430-t200/#moment-of-inertia
-        urlkr: /dxl/x/xw430-t200/#moment-of-inertia          
+        urlkr: /dxl/x/xw430-t200/#moment-of-inertia
 
 #XD540-T150 sidebar
 xd540-t150:
