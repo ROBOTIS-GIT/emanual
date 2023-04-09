@@ -17,7 +17,7 @@ sidebar:
 
 ![](/assets/images/sw/dynamixel/wizard2/wizard2_main_000.jpg)
 
-**소프트웨어 다운로드 (v2.0.13)**  
+**소프트웨어 다운로드**  
 [윈도우](http://www.robotis.com/service/download.php?no=1670)  
 [리눅스](http://www.robotis.com/service/download.php?no=1671)  
 [맥 OS](http://www.robotis.com/service/download.php?no=1760)  
@@ -105,7 +105,11 @@ sidebar:
 
 3. 안내에 따라 `Next`버튼을 눌러 설치를 진행합니다.
 
-![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_win_01.png)
+    ![](/assets/images/sw/dynamixel/wizard2/new_wizard2_setup_win_01.png)  
+
+    ![](/assets/images/sw/dynamixel/wizard2/new_wizard2_setup_win_02.png)
+
+    <!-- ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_win_01.png) -->
 
 ## [리눅스에서 설치하기](#리눅스에서-설치하기)
 
@@ -183,19 +187,25 @@ sidebar:
 
 프로그램의 메인화면은 검색된 제품을 통신포트, 통신속도, 모델명에 따라 분류하여 나타내며, 컨트롤 테이블 값을 변경하여 테스트할 수 있습니다.
 
-![](/assets/images/sw/dynamixel/wizard2/wizard2_main_002_kr.png)
+![](/assets/images/sw/dynamixel/wizard2/new_wizard2_main_002_kr.png)
+
+<!-- ![](/assets/images/sw/dynamixel/wizard2/wizard2_main_002_kr.png) -->
 
 ## [그래프 창](#그래프-창)
 
 표시항목을 설정하면 실시간으로 변화되는 값을 확인할 수 있습니다. 그래프 표시 항목 설정 방법은 [기본 기능 > 그래프]를 참고하세요
 
-![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_001_kr.png)
+![](/assets/images/sw/dynamixel/wizard2/new_wizard2_graph_001_kr.png)
+
+<!-- ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_001_kr.png) -->
 
 ## [패킷 창](#패킷-창)
 
 선택한 프로토콜 버전의 Instruction패킷을 직접 생성하여 전송해볼 수 있습니다. 또한 패킷통신목록에서 항목을 선택하면 상세정보를 확인할 수 있습니다.
 
-![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_001_kr.png)
+![](/assets/images/sw/dynamixel/wizard2/new_wizard2_packet_001_kr.png)
+
+<!-- ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_001_kr.png) -->
 
 # [기본 기능](#기본-기능)
 
@@ -205,12 +215,14 @@ sidebar:
 
 1. 메인 메뉴에서 `도구` > `설정` 를 선택하면 설정창이 나타납니다.
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_011_kr.png)
+    ![](/assets/images/sw/dynamixel/wizard2/new_wizard2_011_kr.png)
+    <!-- ![](/assets/images/sw/dynamixel/wizard2/wizard2_011_kr.png) -->
     
 
 2. 설정창의 좌측 목록에서 `검색` 항목을 선택하면 검색 설정이 나타납니다.
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_options_001_kr.png)
+    ![](/assets/images/sw/dynamixel/wizard2/new_wizard2_options_001_kr.png)
+    <!-- ![](/assets/images/sw/dynamixel/wizard2/wizard2_options_001_kr.png) -->
 
 3. 순서대로 검색할 프로토콜 버전, 통신포트, 통신속도, ID범위를 설정하고 `OK` 버튼을 클릭합니다. 항목을 적게 설정할수록 검색시간이 단축됩니다.
 
@@ -224,8 +236,10 @@ sidebar:
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_012_kr.png)
 
 2. 검색되는 다이나믹셀을 왼쪽의 장치목록에서 확인할 수 있습니다.  
-
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_001_kr.png)
+    
+    ![](/assets/images/sw/dynamixel/wizard2/new_wizard2_001_kr.png)
+    
+    <!-- ![](/assets/images/sw/dynamixel/wizard2/wizard2_001_kr.png) -->
 
 ## [다이나믹셀 컨트롤 테이블](#다이나믹셀-컨트롤-테이블)
 
@@ -233,14 +247,19 @@ sidebar:
 
 2. 장치목록은 포트, 통신속도, 장치 순으로 분류합니다. 테스트할 그룹이나 장치를 선택합니다.  
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_002_kr.png)
+    ![](/assets/images/sw/dynamixel/wizard2/new_wizard2_002_kr.png)
+    
+    <!-- ![](/assets/images/sw/dynamixel/wizard2/wizard2_002_kr.png) -->
 
 3. 부가 메뉴에서 `팩토리 리셋` 버튼을 클릭하면 제품을 공장 초기화 상태로 되돌릴 수 있습니다(이때, ID와 Baudrate 값은 변경하지 않습니다).  
   부가 메뉴에서 `리부팅` 버튼을 클릭하면 해당 다이나믹셀을 재부팅할 수 있습니다.  
   부가 메뉴에서 `토크` 버튼을 클릭하면 해당 다이나믹셀의 토크를 켜거나 끌 수 있습니다.  
   부가 메뉴에서 `LED` 버튼을 클릭하면 해당 다이나믹셀의 LED를 켜거나 끌 수 있습니다.  
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_003_kr.png)
+    ![](/assets/images/sw/dynamixel/wizard2/new_wizard2_003_kr.png)
+
+    <!-- ![](/assets/images/sw/dynamixel/wizard2/wizard2_003_kr.png) -->
+
 
 4. 부가 메뉴의 `토크` 버튼을 클릭하여 다이나믹셀의 토크를 켭니다.
 
@@ -250,21 +269,24 @@ sidebar:
 
    **참고** : 다이나믹셀 모델 및 동작모드(Operation Mode)에 따라 항목은 달라질수 있습니다. **관련 다이나믹셀의 컨트롤 테이블을 반드시 확인하세요.**
     {: .notice}
-
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_004_kr.png)
+    
+    ![](/assets/images/sw/dynamixel/wizard2/new_wizard2_004.png)
+    
+    <!-- ![](/assets/images/sw/dynamixel/wizard2/wizard2_004_kr.png) -->
 
 6. 우측 하단의 위치 또는 속도 값 컨트롤을 사용하여 모터를 움직여봅니다.
 
     **경고** : 값을 조정하는 과정에서 모터가 갑작스럽게 움직일 수 있으니 주의하세요.  
     {: .notice--warning}
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_004_position_mode_joypad_kr.png)  
+    <!-- ![](/assets/images/sw/dynamixel/wizard2/wizard2_004_position_mode_joypad_kr.png)   -->
+    ![](/assets/images/sw/dynamixel/wizard2/new_wizard2_004_position_mode_joypad_kr.png)  
     - `Position control` 선택시, 가상 다이얼 컨트롤러를 사용할수 있습니다.
     - 가상 다이얼 컨트롤러를 사용하여, 원하는 위치로 이동시켜 보세요.
     - 입력창에서 컨트롤 아이템 값을 직접 입력가능합니다.
     - 자세한 내용은 [컨트롤 아이템 값 변경](#컨트롤-아이템-값-변경)에서 확인하세요.
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_004_velocity_mode_joypad_kr.png)  
+    ![](/assets/images/sw/dynamixel/wizard2/new_wizard2_004_velocity_mode_joypad_kr.png)  
     - `Velocitiy control`/`Current control`/`PWM control` 선택시, 가상 조이패드 컨트롤러로 변경됩니다.
     - 가상 조이패드 컨트롤러를 사용하여, CW 및 CCW 방향으로 움직여보세요.      
     - 입력창에서 컨트롤 아이템 값을 직접 입력가능합니다.
@@ -288,25 +310,29 @@ sidebar:
 
 1. 메인 메뉴에서 `도구` > `설정` 를 선택하면 설정창이 나타납니다.
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_011_kr.png)
+    ![](/assets/images/sw/dynamixel/wizard2/new_wizard2_011_kr.png)
 
 2. 설정창의 좌측 목록에서 `그래프` 항목을 선택하면 그래프 설정이 나타납니다.
 
+    ![](/assets/images/sw/dynamixel/wizard2/new_wizard2_graph_002_kr.png)
 
+    <!-- ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_002.png) -->
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_002.png)
+3. 아래 그림에 표시된 `>` 버튼을 눌러 항목을 추가 합니다. (`<` 버튼으로 항목을 제거할 수 있습니다.)
 
-3. 아래 그림에 표시된 `>>` 버튼을 눌러 항목을 추가 합니다. (`<<` 버튼으로 항목을 제거할 수 있습니다.)
+    ![](/assets/images/sw/dynamixel/wizard2/new_wizard2_graph_003_kr.png)
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_003_kr.png)
+    <!-- ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_003_kr.png) -->
 
-4. 추가된 항목의 색깔을 클릭하면 항목 추가 상자가 나타납니다.
+4. 추가된 항목을 더블 클릭하면 항목 추가 상자가 나타납니다.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004_kr.png)
 
-5. 항목 추가 상자에서 색깔, 보조 Y축을 설정할 수 있습니다.    
+5. 항목 설정 상자에서 색깔, Y축을 설정할 수 있습니다.
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004_1.png)
+    ![](/assets/images/sw/dynamixel/wizard2/new_wizard2_graph_004_1.png)
+
+    <!-- ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004_1.png) -->
     
     **참고**: 최신버전에서는 `비율`(Scale)과 `오프셋`(Offset) 선택 옵션은 삭제되고, [그래프 창](#그래프-창)에서 실시간으로 조정합니다. (아래 y축 설명 참고)
     {: .notice}
@@ -327,7 +353,9 @@ sidebar:
     **참고** : 속도 최적화를 사용하면 컨트롤 테이블의 일부 항목들이 자동으로 갱신되지않습니다.  
     {: .notice}  
 
-8. 설정창의 `확인` 버튼을 클릭합니다.
+8. 인쇄모드 사용여부를 설정합니다. 설정하면 그래프 배경이 흰색으로 캡처됩니다.
+
+9. 설정창의 `확인` 버튼을 클릭합니다.
 
 ### [그래프 시작](#그래프-시작)
 
@@ -340,21 +368,27 @@ sidebar:
     **참고** : 선택된 장치가 없으면 해당 메뉴가 비활성화된 상태입니다. 검색 후 다이나믹셀이 연결된 상태에서 진행해 주세요.  
     {: .notice}
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_start_001_kr.png)
+    ![](/assets/images/sw/dynamixel/wizard2/new_wizard2_graph_start_001_kr.png)
+
+    <!-- ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_start_001_kr.png) -->
 
 3. 컨트롤 테이블에서 `Goal Position` 항목의 값을 변경하면 실시간으로 변경되는 `Present Position` 을 확인할 수 있습니다.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_start_005_kr.png)
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_start_006_kr.png)  
+    ![](/assets/images/sw/dynamixel/wizard2/new_wizard2_graph_start_006_kr.png)  
+
+    <!-- ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_start_006_kr.png)   -->
 
 4. 그래프의 우측에서 항목을 클릭하여, 그래프를 비활성화 시킬수 있습니다.  
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_start_004.png)
+    ![](/assets/images/sw/dynamixel/wizard2/new_wizard2_graph_start_004.png)
+
+    <!-- ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_start_004.png) -->
 
 5. 다음의 메뉴를 통해 그래프를 제어할 수 있습니다.
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_start_002_kr.png)  
+    ![](/assets/images/sw/dynamixel/wizard2/new_wizard2_graph_start_002_kr.png)  
 
     - 시작/정지 : 그래프 시작/정지
     - 리셋 : 줌화면에서 원래화면으로 복귀
@@ -380,7 +414,7 @@ sidebar:
     **참고** : 만약, 해당 통신 포트에 연결을 실패하면 사용중인 프로그램을 찾아 사용을 해제해야합니다.  
     {: .notice}
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_002_kr.png)
+    ![](/assets/images/sw/dynamixel/wizard2/new_wizard2_packet_002_kr.png)
 
 3. 우측 메뉴에서 통신할 프로토콜 버전과 Instruction을 설정할 수 있습니다.  
   프로토콜 버전을 `2.0` 으로 Instruction을 `Write` 로 설정합니다.  
@@ -388,12 +422,16 @@ sidebar:
     **참고** : 각 다이나믹셀은 지원하는 프로토콜 버전이 다릅니다. **관련 다이나믹셀의 [프로토콜 버전](/docs/kr/popup/faq_protocol_compatibility_table){: .popup}을 반드시 확인하세요.**
     {: .notice}
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_003_kr.png)
+    ![](/assets/images/sw/dynamixel/wizard2/new_wizard2_packet_003_kr.png)
+
+    <!-- ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_003_kr.png) -->
 
 4. Instuction에 대한 상세설정을 할 수 있습니다.  
   다음과 같이 LED 켜기의 패킷을 설정합니다.  
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_004_kr.png)
+    ![](/assets/images/sw/dynamixel/wizard2/new_wizard2_packet_004_kr.png)
+
+    <!-- ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_004_kr.png) -->
 
     - LED 항목의 컨트롤 테이블 주소 : 65
     - LED 항목의 컨트롤 테이블 길이[Byte] : 1
@@ -405,21 +443,31 @@ sidebar:
 
 6. `전송` 버튼을 클릭하여 패킷을 전송합니다.  
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_006_kr.png)
+    ![](/assets/images/sw/dynamixel/wizard2/new_wizard2_packet_006_kr.png)
+    
+    <!-- ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_006_kr.png) -->
+
+7. 전송 후 패킷을 클릭하면 상세정보를 아래에서 확인할 수 있습니다.
+
+    ![](/assets/images/sw/dynamixel/wizard2/new_wizard2_packet_007_kr.png)
 
 ## [펌웨어 업데이트](#펌웨어-업데이트)
 
 다이나믹셀의 펌웨어 업데이트가 필요할 경우, 장치이름 앞에 특수문자(*)와 함께 연하게 표시됩니다.  
-해당 다이나믹셀에 마우스를 올리면, **Firmware update is available** 문장이 표시됩니다.  
+해당 다이나믹셀에 마우스를 올리면, **“펌웨어 업데이트가 있습니다” ** 문장이 표시됩니다.  
 
-![](/assets/images/sw/dynamixel/wizard2/wizard2_update_notification_kr.png)
+![](/assets/images/sw/dynamixel/wizard2/new_wizard2_update_notification_kr.png)
+
+<!-- ![](/assets/images/sw/dynamixel/wizard2/wizard2_update_notification_kr.png) -->
 
 1. 메인 메뉴에서 `도구` > `펌웨어 업데이트`를 선택합니다.
 
     **참고** : 선택된 장치가 없으면 해당 메뉴가 비활성화된 상태입니다. 검색 후 다이나믹셀이 연결된 상태에서 진행해 주세요.  
     {: .notice}
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_015_kr.png)
+    ![](/assets/images/sw/dynamixel/wizard2/new_wizard2_015_kr.png)
+
+    <!-- ![](/assets/images/sw/dynamixel/wizard2/wizard2_015_kr.png) -->
 
 2. 간단한 도움말과 함께 펌웨어 업데이트를 시작합니다. 특히, 업데이트 도중 연결이 끊기거나 전원이 꺼지지 않도록 유의하십시오.
 
@@ -437,7 +485,9 @@ sidebar:
 
 1. `도구` > `펌웨어 전체 업데이트`을 선택합니다.
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_016.png)
+    ![](/assets/images/sw/dynamixel/wizard2/new_wizard2_016_kr.png)
+
+    <!-- ![](/assets/images/sw/dynamixel/wizard2/wizard2_016.png) -->
 
 2. 펌웨어 업데이트가 필요한 다이나믹셀을 선택후, `다음` 버튼을 클릭합니다.  
 
@@ -455,7 +505,9 @@ sidebar:
 
 1. 메인 메뉴에서 `도구` > `펌웨어 복구`를 선택합니다.
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_017_kr.png)
+    ![](/assets/images/sw/dynamixel/wizard2/new_wizard2_017_kr.png)
+    
+    <!-- ![](/assets/images/sw/dynamixel/wizard2/wizard2_017_kr.png) -->
 
 2. 간단한 도움말과 함께 다이나믹셀 펌웨어 복구 마법사를 시작합니다.  
 
@@ -624,15 +676,15 @@ sidebar:
 **참고**: 동일 모델 간 백업파일을 사용할 수 있습니다.
 {: .notice}
 
-![](/assets/images/sw/dynamixel/wizard2/backup/backup_save_ctd.png)
+![](/assets/images/sw/dynamixel/wizard2/backup/backup_save_ctd_kr.png)
 
 EEPROM 영역의 특정 데이터 (ID, Baudrate, Protocol Type)의 복구 여부를 선택할 수 있습니다. 
 
-![](/assets/images/sw/dynamixel/wizard2/backup/backup_load_01.png)
+![](/assets/images/sw/dynamixel/wizard2/backup/backup_load_01_kr.png)
 
 현재값과 다른 항목만 변경됩니다.
 
-![](/assets/images/sw/dynamixel/wizard2/backup/backup_load_02.png)
+![](/assets/images/sw/dynamixel/wizard2/backup/backup_load_02_kr.png)
 
 ## [컨트롤 아이템 값 변경](#컨트롤-아이템-값-변경)  
 
@@ -675,7 +727,9 @@ EEPROM 영역의 특정 데이터 (ID, Baudrate, Protocol Type)의 복구 여부
 
 2. 메인 메뉴의 `도구` > `캘리브레이션` 메뉴를 클릭합니다.  
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_001_kr.png)
+    ![](/assets/images/sw/dynamixel/wizard2/new_wizard2_cali_001_kr.png)
+
+    <!-- ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_001_kr.png) -->
     
     **참고**: 캘리브레이션을 지원하지 않는 모델(예: [AX 시리즈](/docs/kr/dxl/#ax-시리즈))은, 메뉴에서 `캘리브레이션`이 활성화되지 않습니다. 
     {: .notice}
@@ -808,11 +862,26 @@ EEPROM 영역의 특정 데이터 (ID, Baudrate, Protocol Type)의 복구 여부
 
 1. 그래프 설정에서 `통신 주기` 을 `1ms` 로 설정하고 `선택항목만 읽어오기` 항목을 체크합니다.
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_005_kr.png)
+    ![](/assets/images/sw/dynamixel/wizard2/new_wizard2_graph_005_kr.png)
+
+    <!-- ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_005_kr.png) -->
 
 2. 다이나믹셀의 통신속도(Baud Rate)를 최대로 설정하고 `Return Delay Time` 을 `0` 으로 설정합니다.
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_007_kr.png)
+    ![](/assets/images/sw/dynamixel/wizard2/new_wizard2_graph_007_kr.png)
+    
+    <!-- ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_007_kr.png) -->
+
+
+### [로깅](#로깅)
+
+다이나믹셀과 위자드가 주고받은 패킷 정보를 파일로 저장합니다.  
+
+- 그래프의 경우 설정된 주기마다 해당 주기의 최근사값, 최소값, 최대값, 평균값을 저장합니다. 
+- 패킷의 경우 모니터링된 모든 패킷을 파일로 저장합니다.  
+
+![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_logging_kr.png)
+
 
 [기본 기능 > 그래프]: #그래프
 [프로토콜 1.0]: /docs/kr/dxl/protocol1/
