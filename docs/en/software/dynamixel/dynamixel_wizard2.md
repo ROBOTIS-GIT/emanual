@@ -881,14 +881,30 @@ In order to use the minimum communication interval(1 [ms]), please follow the in
     
     <!-- ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_007.png) -->
 
-### [로깅](#로깅)
+### [logging](#logging)
 
 Save a log file of a packet information in DYNAMIXEL Wizard 2.0.  
 
 - In case of Graph, it saves the most nearest, the minimum, the maximum and the average value at your set interval.  
 - In case of Packet, it saves every monitored packets.  
 
-![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_logging.png)
+    ![](/assets/images/sw/dynamixel/wizard2/logging/wizard2_logging.png)
+
+#### [Gragh Logging](#gragh-logging)
+
+Once starting the graph, the logging file is saved under _Documents/DYNAMIXEL Wizard2/graph/_
+
+The whole path to save can be found at a title bar. 
+
+![](/assets/images/sw/dynamixel/wizard2/logging/wizard2_graph_logging.png)
+
+#### [Packet Logging](#packet-logging)
+
+Once opening the communication port, the logging file is saved under _Documents/DYNAMIXEL Wizard2/packet/_
+
+The whole path to save can be found at a title bar. 
+
+![](/assets/images/sw/dynamixel/wizard2/logging/wizard2_packet_logging.png)
 
 [Basic Features > Graph]: #graph
 [Protocol 1.0]: /docs/en/dxl/protocol1/
