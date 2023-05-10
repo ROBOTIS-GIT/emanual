@@ -348,7 +348,7 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 
     - Y-Axis: it adds Y-axis to a selected item. The Maximum is 10.    
 
-      ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004_y_axis_02.png)
+      ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004_y_axis_02_new.png)
       - `Scale`: Adjust scale of axis at the Graph Window (Main Axsis, Secondary Axis) using a mouse wheel.  
       - `Offset`: Adjust Offset by dragging the desired axis up and down at the Graph Window (Main Axsis, Secondary Axis).  
 

@@ -330,7 +330,7 @@ sidebar:
 
 5. 항목 설정 상자에서 색깔, Y축을 설정할 수 있습니다.
 
-    ![](/assets/images/sw/dynamixel/wizard2/new_wizard2_graph_004_1.png)
+    ![](/assets/images/sw/dynamixel/wizard2/new_wizard2_graph_004_1_kr.png)
 
     <!-- ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004_1.png) -->
     
