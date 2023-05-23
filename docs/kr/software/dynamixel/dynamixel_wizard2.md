@@ -882,14 +882,14 @@ EEPROM 영역의 특정 데이터 (ID, Baudrate, Protocol Type)의 복구 여부
 
     ![](/assets/images/sw/dynamixel/wizard2/logging/wizard2_logging_kr.png)
 
-#### [그래프 로깅]
+#### [그래프 로깅](#그래프-로깅)
 
 그래프를 시작하면 “문서/ DYNAMIXEL Wizard2/graph” 폴더에 저장됩니다.  
 전체 경로가 제목표시줄에 출력됩니다.  
 
 ![](/assets/images/sw/dynamixel/wizard2/logging/wizard2_graph_logging_kr.png)
 
-#### [패킷 로깅]
+#### [패킷 로깅](#패킷-로깅)
 
 통신포트를 열면 “문서/ DYNAMIXEL Wizard2/packet” 폴더에 저장됩니다.   
 전체 경로가 제목표시줄에 출력됩니다.

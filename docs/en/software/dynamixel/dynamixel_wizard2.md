@@ -881,7 +881,7 @@ In order to use the minimum communication interval(1 [ms]), please follow the in
     
     <!-- ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_007.png) -->
 
-### [logging](#logging)
+### [Logging](#logging)
 
 Save a log file of a packet information in DYNAMIXEL Wizard 2.0.  
 
