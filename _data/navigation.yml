@@ -25349,6 +25349,19 @@ dynamixel_wizard2:
             titlekr: "다이나믹셀 설정"
             url: /software/dynamixel/dynamixel_wizard2/#dynamixel-setting
             urlkr: /software/dynamixel/dynamixel_wizard2/#다이나믹셀-설정
+      - title: "Logging"
+        titlekr: "로깅"
+        url: /software/dynamixel/dynamixel_wizard2/#logging
+        urlkr: /software/dynamixel/dynamixel_wizard2/#로깅
+        children:
+          - title: "Gragh Logging"
+            titlekr: "그래프 로깅"
+            url: /software/dynamixel/dynamixel_wizard2/#gragh-logging
+            urlkr: /software/dynamixel/dynamixel_wizard2/#그래프 로깅
+          - title: "Packet Logging"
+            titlekr: "패킷 로깅"
+            url: /software/dynamixel/dynamixel_wizard2/#packet-logging
+            urlkr: /software/dynamixel/dynamixel_wizard2/#패킷-로깅      
 
 #ZIGBEE SDK sidebar
 zigbee_sdk:
