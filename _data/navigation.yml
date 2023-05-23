@@ -25357,7 +25357,7 @@ dynamixel_wizard2:
           - title: "Gragh Logging"
             titlekr: "그래프 로깅"
             url: /software/dynamixel/dynamixel_wizard2/#gragh-logging
-            urlkr: /software/dynamixel/dynamixel_wizard2/#그래프 로깅
+            urlkr: /software/dynamixel/dynamixel_wizard2/#그래프-로깅
           - title: "Packet Logging"
             titlekr: "패킷 로깅"
             url: /software/dynamixel/dynamixel_wizard2/#packet-logging
