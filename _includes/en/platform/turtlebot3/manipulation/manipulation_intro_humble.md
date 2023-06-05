@@ -1,7 +1,7 @@
 
 {% capture notice_01 %}
 **NOTE**:
-- This instructions were tested on `Ubuntu 18.04` and `ROS2 Dashing Diademata`.
+- This instructions were tested on `Ubuntu 22.04` and `ROS2 Humble Hawksbill`.
 - More information on OpenMANIPULATOR-X is availabe at [OpenMANIPULATOR-X e-Manual](/docs/en/platform/openmanipulator_x/overview/).
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>

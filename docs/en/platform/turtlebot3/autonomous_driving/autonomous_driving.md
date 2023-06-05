@@ -12,7 +12,8 @@ tab_title2: Melodic
 tab_title3: Noetic
 tab_title4: Dashing
 tab_title5: Foxy
-tab_title6: Windows
+tab_title6: Humble
+tab_title7: Windows
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
@@ -29,22 +30,27 @@ page_number: 19
 # [Autonomous Driving](#autonomous-driving)
 
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
-**NOTE**: TurtleBot3 Autorace is supported in ROS1 Kinetic and Noetic. 
+**NOTE**: TurtleBot3 Autorace is supported in ROS Kinetic and Noetic. 
 {: .notice}
 </section>
 
 <section data-id="{{ page.tab_title4 }}" class="tab_contents">
-**NOTE**: TurtleBot3 Autorace is supported in ROS1 Kinetic and Noetic. 
+**NOTE**: TurtleBot3 Autorace is supported in ROS Kinetic and Noetic. 
 {: .notice}
 </section>
 
 <section data-id="{{ page.tab_title5 }}" class="tab_contents">
-**NOTE**: TurtleBot3 Autorace is supported in ROS1 Kinetic and Noetic. 
+**NOTE**: TurtleBot3 Autorace is supported in ROS Kinetic and Noetic. 
 {: .notice}
 </section>
 
 <section data-id="{{ page.tab_title6 }}" class="tab_contents">
-**NOTE**: TurtleBot3 Autorace is supported in ROS1 Kinetic and Noetic. 
+**NOTE**: TurtleBot3 Autorace is supported in ROS Kinetic and Noetic. 
+{: .notice}
+</section>
+
+<section data-id="{{ page.tab_title7 }}" class="tab_contents">
+**NOTE**: TurtleBot3 Autorace is supported in ROS Kinetic and Noetic. 
 {: .notice}
 </section>
 

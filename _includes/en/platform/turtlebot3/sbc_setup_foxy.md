@@ -288,7 +288,7 @@ $ cd ~/turtlebot3_ws && colcon build --symlink-install
 
 18. Export the LDS_MODEL to the bashrc file. Depending on your LDS model, use `LDS-01` or `LDS-02`.
 ```bash
-$ echo 'export LDS_MODEL=LDS-01' >> ~/.bashrc
+$ echo 'export LDS_MODEL=LDS-02' >> ~/.bashrc
 ```
 
 19. Apply changes with the command below.

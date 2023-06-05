@@ -16,13 +16,13 @@
 {% endcapture %}
 <div class="notice--danger">{{ warning_01 | markdownify }}</div>
 
-**NOTE**: This instruction was tested on Linux with `Ubuntu 20.04` and `ROS2 Foxy Fitzroy`.
+**NOTE**: This instruction was tested on Linux with `Ubuntu 22.04` and `ROS2 Humble Hawksbill`.
 {: .notice--info}
 
 ### [Download and Install Ubuntu on PC](#download-and-install-ubuntu-on-pc)
 
-1. Download the proper `Ubuntu 20.04 LTS Desktop` image for your PC from the links below.
-  - [Ubuntu 20.04 LTS Desktop image (64-bit)](https://releases.ubuntu.com/20.04/){: .blank}
+1. Download the proper `Ubuntu 22.04 LTS Desktop` image for your PC from the links below.
+  - [Ubuntu 22.04 LTS Desktop image (64-bit)](https://releases.ubuntu.com/22.04/){: .blank}
 
 2. Follow the instruction below to install Ubuntu on PC.
   - [Install Ubuntu desktop](https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview)
@@ -30,33 +30,26 @@
 
 ### [Install ROS 2 on Remote PC](#install-ros-2-on-remote-pc)
 
-Open the terminal with `Ctrl`+`Alt`+`T` and enter below commands one at a time.  
-In order to check the details of the easy installation script, please refer to [the script file](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros2_foxy.sh).  
-```bash
-$ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros2_foxy.sh
-$ sudo chmod 755 ./install_ros2_foxy.sh
-$ bash ./install_ros2_foxy.sh
-```
-
-If the above installation fails, please refer to [the official ROS2 Foxy installation guide](https://index.ros.org/doc/ros2/Installation/Foxy/Linux-Install-Debians/).
+Please follow [the official ROS2 documentation](https://docs.ros.org/en/humble/Installation.html) to install the ROS2 Humble.  
+For most Linux users, [Debian package installation](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html) method is strongly recommended.
 
 
 ### [Install Dependent ROS 2 Packages](#install-dependent-ros-2-packages)
 
 1. Open the terminal with `Ctrl`+`Alt`+`T` from **Remote PC**.
-2. Install Gazebo11
+2. Install Gazebo
   ```bash
-$ sudo apt-get install ros-foxy-gazebo-*
+$ sudo apt install ros-humble-gazebo-*
   ```
 3. Install Cartographer
   ```bash
-$ sudo apt install ros-foxy-cartographer
-$ sudo apt install ros-foxy-cartographer-ros
+$ sudo apt install ros-humble-cartographer
+$ sudo apt install ros-humble-cartographer-ros
   ```
 4. Install Navigation2
   ```bash
-$ sudo apt install ros-foxy-navigation2
-$ sudo apt install ros-foxy-nav2-bringup
+$ sudo apt install ros-humble-navigation2
+$ sudo apt install ros-humble-nav2-bringup
   ```
 
 ### [Install TurtleBot3 Packages](#install-turtlebot3-packages)
@@ -65,9 +58,9 @@ Install TurtleBot3 via Debian Packages.
 
 ```bash
 $ source ~/.bashrc
-$ sudo apt install ros-foxy-dynamixel-sdk
-$ sudo apt install ros-foxy-turtlebot3-msgs
-$ sudo apt install ros-foxy-turtlebot3
+$ sudo apt install ros-humble-dynamixel-sdk
+$ sudo apt install ros-humble-turtlebot3-msgs
+$ sudo apt install ros-humble-turtlebot3
 ```
 
 <details>
@@ -78,13 +71,13 @@ In case you need to build the TurtleBot3 packages with source code, please use t
 Building the source code provides most up to date contents which may have resolved known issues.  
 Make sure to remove the binary packages to avoid redundancy.  
 ```bash
-$ sudo apt remove ros-foxy-turtlebot3-msgs
-$ sudo apt remove ros-foxy-turtlebot3
+$ sudo apt remove ros-humble-turtlebot3-msgs
+$ sudo apt remove ros-humble-turtlebot3
 $ mkdir -p ~/turtlebot3_ws/src
 $ cd ~/turtlebot3_ws/src/
-$ git clone -b foxy-devel https://github.com/ROBOTIS-GIT/DynamixelSDK.git
-$ git clone -b foxy-devel https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
-$ git clone -b foxy-devel https://github.com/ROBOTIS-GIT/turtlebot3.git
+$ git clone -b humble-devel https://github.com/ROBOTIS-GIT/DynamixelSDK.git
+$ git clone -b humble-devel https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
+$ git clone -b humble-devel https://github.com/ROBOTIS-GIT/turtlebot3.git
 $ cd ~/turtlebot3_ws
 $ colcon build --symlink-install
 $ echo 'source ~/turtlebot3_ws/install/setup.bash' >> ~/.bashrc

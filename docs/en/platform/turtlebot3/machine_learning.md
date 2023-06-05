@@ -12,7 +12,8 @@ tab_title2: Melodic
 tab_title3: Noetic
 tab_title4: Dashing
 tab_title5: Foxy
-tab_title6: Windows
+tab_title6: Humble
+tab_title7: Windows
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
@@ -27,43 +28,35 @@ page_number: 21
 # [Machine Learning](#machine-learning)
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-
 {% include en/platform/turtlebot3/machine_learning/machine_learning_intro_kinetic.md %}
-
 </section>
 
-
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
-
 {% include en/platform/turtlebot3/machine_learning/machine_learning_intro_melodic.md %}
-
 </section> 
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
-
-**NOTE**: This section for Noetic will be supported soon. 
+**NOTE**: This section is supported in ROS Kinetic and Melodic, and ROS2 Dashing. 
 {: .notice}
-
 </section> 
 
 <section data-id="{{ page.tab_title4 }}" class="tab_contents">
-
 {% include en/platform/turtlebot3/machine_learning/machine_learning_intro_dashing.md %}
-
 </section>
 
 <section data-id="{{ page.tab_title5 }}" class="tab_contents">
-
-**NOTE**: This section for Foxy will be supported soon. 
+**NOTE**: This section is supported in ROS Kinetic and Melodic, and ROS2 Dashing. 
 {: .notice}
-
 </section> 
 
 <section data-id="{{ page.tab_title6 }}" class="tab_contents">
-
-**NOTE**: This section for Windows is not supported yet. 
+**NOTE**: This section is supported in ROS Kinetic and Melodic, and ROS2 Dashing. 
 {: .notice}
+</section>
 
+<section data-id="{{ page.tab_title7 }}" class="tab_contents">
+**NOTE**: This section is supported in ROS Kinetic and Melodic, and ROS2 Dashing. 
+{: .notice}
 </section>
 
 
