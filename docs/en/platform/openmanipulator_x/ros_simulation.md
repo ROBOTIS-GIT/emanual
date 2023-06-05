@@ -29,7 +29,7 @@ page_number: 11
 {% capture notice_01 %}
 **NOTE**:
 - Make sure ROS dependencies are installed before performing these instructions
-- [Install ROS Packages](/docs/en/platform/openmanipulator_x/ros_setup/#install-ros-packages)
+- [Install ROS Packages](/docs/en/platform/openmanipulator_x/quick_start_guide/#install-ros-packages)
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 </section>
@@ -38,7 +38,7 @@ page_number: 11
 {% capture notice_01 %}
 **NOTE**:
 - Make sure ROS dependencies are installed before performing these instructions
-- [Install ROS Packages](/docs/en/platform/openmanipulator_x/ros_setup/#install-ros-packages)
+- [Install ROS Packages](/docs/en/platform/openmanipulator_x/quick_start_guide/#install-ros-packages)
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 </section>
