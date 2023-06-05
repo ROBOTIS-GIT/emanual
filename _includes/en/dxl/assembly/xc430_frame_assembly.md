@@ -1,0 +1,164 @@
+
+### [How To Use Spacer Ring](#how-to-use-spacer-ring)
+
+To protect your assembled frame, use the spacer rings which fills the gap between assembled frame and DYNAMIXEL case.
+
+![HowTo_SpacerRing](/assets/images/dxl/x/assembly/common/howto_spacering.png)
+
+**NOTE**: Use of the spacer ring can be applied in a same way for any DYNAMIXELs. 
+{: .notice}
+
+### [Precaution of Frame and Horn Assembly](#precaution-of-frame-and-horn-assembly)
+
+Be sure to use screws in proper length by considering the depth of the thickness of frame plus thickness (T) of DYNAMIXEL horn.  
+If the length of screw is longer than the depth of them, it may cause a damage to the DYNAMIXEL during work. 
+{: .notice--warning}
+
+![Warn_HornAssembly](/assets/images/dxl/x/assembly/xl430/xl_xc430_warning.png)
+
+**NOTE**: Find useful data (Size, Depth and etc) for your horn or frame assembly from [Drawings](#drawings).
+{: .notice}
+
+### [Hinge Frame Assembly](#hinge-frame-assembly)
+
+A hinge frame can be assembled to the output shaft wheel gear of DYNAMIXEL.
+
+![Hinge_Assembly](/assets/images/dxl/x/assembly/xc430/hinge/xc430_fr12-h101k.jpg)
+
+> FR12-H101K
+
+![Hinge_Assembly](/assets/images/dxl/x/assembly/xc430/hinge/xc430_fr12-h104k_01.jpg)
+
+> FR12-H104K
+
+![Hinge_Assembly](/assets/images/dxl/x/assembly/xc430/hinge/xc430_fr12-h104k_02.jpg)
+
+> FR12-H104K (Back Mount, compatible with DYNAMIXEL XL & XC Series)
+
+![Hinge_Assembly](/assets/images/dxl/x/assembly/xc430/hinge/xc430_fr12-h103gm.jpg)
+
+> FR12-H103GM
+
+**NOTE**: Find useful data (Size, Depth and etc) for your horn or frame assembly from [Drawings](#drawings).
+{: .notice}
+
+**NOTE**: In hinge assembly, the idler horn should be assembled to the back case of DYNAMIXEL. See [Idler Horn Assembly](#idler-horn-assembly).
+{: .notice}
+
+**WARNNING**: In hinge assembly, make sure to use the proper screw. See [Precaution of Frame and Horn Assembly](#precaution-of-frame-and-horn-assembly).
+{: .notice--warning}
+
+### [Side Frame Assembly](#side-frame-assembly)
+
+A side frame can be assembled to the side and bottom of case of DYNAMIXEL. 
+
+![Side_Assembly_Side](/assets/images/dxl/x/assembly/xc430/side/xc430_fr12_s101k.jpg)
+
+> FR12-S101K
+
+![Side_Assembly_Bottom](/assets/images/dxl/x/assembly/xc430/side/xc430_fr12_s102k.jpg)
+
+> FR12-S102K
+
+**NOTE**: Find useful data (Size, Depth and etc) for your horn or frame assembly from [Drawings](#drawings).
+{: .notice}
+
+**NOTE**: Use spacer rings to protect assembled frame. See [How To Use Spacer Ring](#how-to-use-spacer-ring).
+{: .notice}
+
+### [Gripper Assembly](#gripper-assembly)
+
+![etc_gripper_assembly](/assets/images/dxl/x/assembly/xc430/etc/xc430_fr12_g101_e170_e171.jpg)
+
+> FR12-G101GM (FR12-E170 + FR12-E171) 
+
+**NOTE**: Find useful data (Size, Depth and etc) for your horn or frame assembly from [Drawings](#drawings).
+{: .notice}
+
+**NOTE**: Use spacer rings to protect assembled frame. See [How To Use Spacer Ring](#how-to-use-spacer-ring).
+{: .notice}
+
+### [Frame Combination](#frame-combination)
+
+Make various combination with hinge and side frames.
+
+![Frame_Example](/assets/images/dxl/x/assembly/xl430/xl_xc430_frame_compatibility-01.jpg)
+
+**NOTE**: Find more detailed screw information on frame to frame assembly at [Drawings](#drawings).
+{: .notice}
+
+### [Custom Frame Assembly](#custom-frame-assembly)
+
+If you make custom frames for your application, see the next assembly example. 
+
+#### [Front (Flat Head Screw)](#front-flat-head-screw)
+
+1. Step 1  
+
+    ![ETC_FrameAssembly](/assets/images/dxl/x/assembly/xc430/etc/xc430_etc_assembly_example_front1_01.jpg)
+
+2. Step 2  
+
+    ![ETC_FrameAssembly](/assets/images/dxl/x/assembly/xc430/etc/xc430_etc_assembly_example_front1_02.jpg)
+
+**NOTE**: Note that the frame in the image is not for sale. 
+{: .notice}
+
+**NOTE**: Use spacer rings to protect assembled frame. See [How To Use Spacer Ring](#how-to-use-spacer-ring).
+{: .notice}
+
+**NOTE**: Find useful data (Size, Depth and etc) for your horn or frame assembly from [Drawings](#drawings).
+{: .notice}
+
+#### [Front (Pan Head Screw)](#front-pan-head-screw)
+
+1. Step 1
+  
+    ![ETC_FrameAssembly](/assets/images/dxl/x/assembly/xc430/etc/xc430_etc_assembly_example_front1_01.jpg)
+
+2. Step 2
+
+    ![ETC_FrameAssembly](/assets/images/dxl/x/assembly/xc430/etc/xc430_etc_assembly_example_front2_02.jpg)
+
+**NOTE**: Note that the frame in the image is not for sale. 
+{: .notice}
+
+**NOTE**: Use spacer rings to protect assembled frame. See [How To Use Spacer Ring](#how-to-use-spacer-ring).
+{: .notice}
+
+**NOTE**: Find useful data (Size, Depth and etc) for your horn or frame assembly from [Drawings](#drawings).
+{: .notice}
+
+#### [Side](#side)
+
+  ![ETC_FrameAssembly](/assets/images/dxl/x/assembly/xc430/etc/xc430_etc_assembly_example_side.jpg)
+  
+  {% capture sidetab_warning_3mm %}
+  **WARNNING**: Be sure to use the proper length of screws when assembling a frame to the side tab.
+  
+  ![3mm_Mount_Deep_Warning](/assets/images/dxl/x/assembly/xc430/etc/xc430_3mm_mount_warning.jpg)
+  
+  {% endcapture %}
+  
+  <div class="notice--warning">{{ sidetab_warning_3mm | markdownify }}</div> 
+  
+**NOTE**: Note that the frame in the image is not for sale. 
+{: .notice}
+
+**NOTE**: Find useful data (Size, Depth and etc) for your horn or frame assembly from [Drawings](#drawings).
+{: .notice}
+  
+#### [Bottom](#bottom)
+
+  ![ETC_FrameAssembly](/assets/images/dxl/x/assembly/xc430/etc/xc430_etc_assembly_example_bottom.jpg)
+  
+  <div class="notice--warning">{{ sidetab_warning_3mm | markdownify }}</div> 
+  
+**NOTE**: Note that the frame in the image is not for sale. 
+{: .notice}
+
+**NOTE**: Use spacer rings to protect assembled frame. See [How To Use Spacer Ring](#how-to-use-spacer-ring).
+{: .notice}
+
+**NOTE**: Find useful data (Size, Depth and etc) for your horn or frame assembly from [Drawings](#drawings).
+{: .notice}

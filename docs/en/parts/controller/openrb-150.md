@@ -19,9 +19,9 @@ sidebar:
 
 The OpenRB-150 is a new open source Arduino compatible embedded controller.
 
-The controller features the same pinout and the form factor as the Arduino MKR to ensure compatibility with phyisical accessories, and has support for programming using the Arduino IDE.
+The controller features the same pinout and the form factor as the Arduino MKR to ensure compatibility with physical accessories, and has support for programming using the Arduino IDE.
 
-The OpenRB-150 also features 4 dedicated DYNAMIXEL ports, and supports the DYNAMIXEL Wizard 2.0 testing and calibration softwere.
+The OpenRB-150 also features 4 dedicated DYNAMIXEL ports, and supports the DYNAMIXEL Wizard 2.0 testing and calibration software.
 
 **NOTE** : Specialty firmware is required to utilize the OpenRB-150 with DYNAMIXEL Wizard. This firmware is included in the OpenRB board manager package.
 {: .notice}
@@ -132,6 +132,14 @@ In order to properly supply power to the controller and DYNAMIXEL, the power sou
 
 ## [DYNAMIXEL Ports](#dynamixel-ports)
 4 DYNAMIXEL Ports are ready for any TTL supported DYNAMIXEL.  
+
+{% include en/dxl/jst_ttl.md %}
+
+![](/assets/images/dxl/x/x_series_ttl_pin.png)
+
+**NOTE**: Above circuit is designed for 5V or 5V tolerant MCU. Otherwise, use a Level Shifter to match the voltage of MCU.
+{: .notice}
+
 RS-485 supported DYNAMIXEL can also be used when connected with the [DYNAMIXEL Communication Bridge].
 
 ![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_product_front.png)
@@ -162,7 +170,7 @@ Three LED indicates the status of the OpenRB-150 controller.
 #define LED_BUILTIN PIN_LED
 
 // DYNAMIXEL POWER FET
-#define DXL_PWR_SW  (31u)
+#define BDPIN_DXL_PWR_EN  (31u)
 ```
 
 # [Connecting Power](#connecting-power)

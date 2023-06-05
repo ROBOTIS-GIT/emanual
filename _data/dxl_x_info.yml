@@ -365,8 +365,8 @@ xl430-w250:
   radialload_en:      "N/A"
   axialload:          "N/A"
   temperature:        "-5 ~ +72 [&deg;C]"
-  voltage:            "6.5 ~ 12.0 [V] (**권장 전압 : 11.1 [V]**)"
-  voltage_en:         "6.5 ~ 12.0 [V] (**Recommended : 11.1 [V]**)"
+  voltage:            "6.5 ~ 12.0 [V] (**권장 전압 : 11.1 [V]**) (리튬이온 배터리 3 Cell)"
+  voltage_en:         "6.5 ~ 12.0 [V] (**Recommended : 11.1 [V]**) (lithium-ion battery 3 Cell)"
   command:            *command
   protocoltype:       *ttl
   physicalconnection: *ttl_connection_5v
@@ -395,8 +395,8 @@ xl430-w250:
   radialload_en:      "N/A"
   axialload:          "N/A"
   temperature:        "-5 ~ +72 [&deg;C]"
-  voltage:            "6.5 ~ 12.0 [V] (**권장 전압 : 11.1 [V]**)"
-  voltage_en:         "6.5 ~ 12.0 [V] (**Recommended : 11.1 [V]**)"
+  voltage:            "6.5 ~ 12.0 [V] (**권장 전압 : 11.1 [V]**) (리튬이온 배터리 3 Cell)"
+  voltage_en:         "6.5 ~ 12.0 [V] (**Recommended : 11.1 [V]**) (lithium-ion battery 3 Cell)"
   command:            *command
   protocoltype:       *ttl
   physicalconnection: *ttl_connection_5v_5v
