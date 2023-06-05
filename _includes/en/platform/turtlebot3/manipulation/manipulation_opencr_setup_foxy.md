@@ -81,5 +81,6 @@ https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCR/master/arduino/opencr_relea
   - Press the `Reset` button.
   - Release the `Reset` button.
   - Release the `PUSH SW2` button.
+
   ![](/assets/images/parts/controller/opencr10/bootloader_19.png)
 </details>

@@ -12,7 +12,8 @@ tab_title2: Melodic
 tab_title3: Noetic
 tab_title4: Dashing
 tab_title5: Foxy
-tab_title6: Windows
+tab_title6: Humble
+tab_title7: Windows
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
@@ -65,6 +66,10 @@ The [Navigation][navigation] enables a robot to move from the current pose to th
 </section>
 
 <section data-id="{{ page.tab_title6 }}" class="tab_contents">
+{% include en/platform/turtlebot3/navigation/navigation_run_navigation_nodes_foxy.md %}
+</section>
+
+<section data-id="{{ page.tab_title7 }}" class="tab_contents">
 {% include en/platform/turtlebot3/navigation/navigation_run_navigation_nodes_windows.md %}
 </section> 
 
@@ -93,6 +98,10 @@ The [Navigation][navigation] enables a robot to move from the current pose to th
 </section>
 
 <section data-id="{{ page.tab_title6 }}" class="tab_contents">
+{% include en/platform/turtlebot3/navigation/navigation_estimate_initial_pose_foxy.md %}
+</section>
+
+<section data-id="{{ page.tab_title7 }}" class="tab_contents">
 {% include en/platform/turtlebot3/navigation/navigation_estimate_initial_pose_windows.md %}
 </section> 
 
@@ -121,6 +130,10 @@ The [Navigation][navigation] enables a robot to move from the current pose to th
 </section>
 
 <section data-id="{{ page.tab_title6 }}" class="tab_contents">
+{% include en/platform/turtlebot3/navigation/navigation_set_navigation_goal_foxy.md %}
+</section>
+
+<section data-id="{{ page.tab_title7 }}" class="tab_contents">
 {% include en/platform/turtlebot3/navigation/navigation_set_navigation_goal_windows.md %}
 </section> 
 
@@ -148,5 +161,9 @@ The [Navigation][navigation] enables a robot to move from the current pose to th
 </section>
 
 <section data-id="{{ page.tab_title6 }}" class="tab_contents">
+{% include en/platform/turtlebot3/navigation/navigation_tuning_guide_foxy.md %}
+</section>
+
+<section data-id="{{ page.tab_title7 }}" class="tab_contents">
 {% include en/platform/turtlebot3/navigation/navigation_tuning_guide_windows.md %}
 </section> 

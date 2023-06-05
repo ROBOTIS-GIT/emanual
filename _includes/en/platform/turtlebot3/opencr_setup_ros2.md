@@ -36,7 +36,8 @@ $ ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr
   - Hold down the `PUSH SW2` button.
   - Press the `Reset` button.
   - Release the `Reset` button.
-  - Release the `PUSH SW2` button.
+  - Release the `PUSH SW2` button.  
+  
   ![](/assets/images/parts/controller/opencr10/bootloader_19.png)
 
 

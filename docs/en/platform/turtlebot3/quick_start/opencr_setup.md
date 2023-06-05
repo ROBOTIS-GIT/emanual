@@ -49,7 +49,11 @@ page_number: 6
 </section>
 
 <section data-id="{{ page.tab_title5 }}" class="tab_contents">
-{% include en/platform/turtlebot3/opencr_setup_foxy.md %}
+{% include en/platform/turtlebot3/opencr_setup_ros2.md %}
+</section>
+
+<section data-id="{{ page.tab_title6 }}" class="tab_contents">
+{% include en/platform/turtlebot3/opencr_setup_ros2.md %}
 </section>
 
 <section data-id="{{ page.tab_title6 }}" class="tab_contents">

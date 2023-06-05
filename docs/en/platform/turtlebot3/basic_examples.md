@@ -12,7 +12,8 @@ tab_title2: Melodic
 tab_title3: Noetic
 tab_title4: Dashing
 tab_title5: Foxy
-tab_title6: Windows
+tab_title6: Humble
+tab_title7: Windows
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
@@ -31,17 +32,13 @@ page_number: 22
 </section>
 
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
-
-**NOTE**: This feature is available for Kinetic, Dashing only. 
+**NOTE**: This feature is available for ROS Kinetic and ROS2 Dashing. 
 {: .notice}
-
 </section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
-
-**NOTE**: This feature is available for Kinetic, Dashing only. 
+**NOTE**: This feature is available for ROS Kinetic and ROS2 Dashing. 
 {: .notice}
-
 </section>
 
 <section data-id="{{ page.tab_title4 }}" class="tab_contents">
@@ -49,17 +46,18 @@ page_number: 22
 </section>
 
 <section data-id="{{ page.tab_title5 }}" class="tab_contents">
-
-**NOTE**: This feature is available for Kinetic, Dashing only. 
+**NOTE**: This feature is available for ROS Kinetic and ROS2 Dashing. 
 {: .notice}
-
 </section>
 
 <section data-id="{{ page.tab_title6 }}" class="tab_contents">
-
-**NOTE**: This feature is available for Kinetic, Dashing only. 
+**NOTE**: This feature is available for ROS Kinetic and ROS2 Dashing. 
 {: .notice}
+</section>
 
+<section data-id="{{ page.tab_title7 }}" class="tab_contents">
+**NOTE**: This feature is available for ROS Kinetic and ROS2 Dashing. 
+{: .notice}
 </section>
 
 ## [Move using Interactive Markers](#move-using-interactive-markers)
