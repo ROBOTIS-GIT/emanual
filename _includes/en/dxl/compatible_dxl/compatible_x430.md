@@ -72,5 +72,7 @@
 [XM430-W210-T/R]: /docs/en/dxl/x/xm430-w210/
 [2XC430-W250]: /docs/en/dxl/x/2xc430-w250/
 [XC430-W240-T]: /docs/en/dxl/x/xc430-w240/
-[XC430-W150-T]: /docs/en/dxl/x/xc430-w150/
-[XL430-W250-T]: /docs/en/dxl/x/xl430-w250/
+[XC430-W150-T]: /docs/en/dxl/x/xc430-w150bb/
+[XL430-W250-T]: /docs/en/dxl/x/xl430-w250bb/
+[XC430-W150BB-T]: /docs/en/dxl/x/xc430-w150bb/
+[XL430-W250BB-T]: /docs/en/dxl/x/xl430-w250bb/
