@@ -65,7 +65,7 @@ sidebar:
 |     **AX**      | [AX-12W]<br/>[AX-12+/12A]<br/>[AX-18F/18A]                      |                                                        |                                     |
 |     **MX**      | [MX-12W]<br/>[MX-28T/AT]<br/> [MX-28T/AT(2.0)]                  | [MX-64T/AT]<br/> [MX-64T/AT(2.0)]                      | [MX-106T/AT]<br/> [MX-106T/AT(2.0)] |
 |     **XL**      | [XL-320]<br/>[XL330-M077-T]<br/> [XL330-M288-T]                 | [XL430-W250-T]<br/>[2XL430-W250-T]                     |                                     |
-|     **XC**      | [XC330-T288]<br/>[XC330-T181]<br/>[XC330-M288]<br/>[XC330-M181] | [XC430-W150-T]<br/> [XC430-W240-T]<br/>[2XC430-W250-T]<br/>[XC430-W150BB-T]<br/> [XC430-W240BB-T] |                                     |
+|     **XC**      | [XC330-T288]<br/>[XC330-T181]<br/>[XC330-M288]<br/>[XC330-M181] | [XC430-W150-T]<br/> [XC430-W240-T]<br/>[2XC430-W250-T]<br/>[XC430-T150BB-T]<br/> [XC430-T240BB-T] |                                     |
 |     **XM**      |                                                                 | [XM430-W210-T]<br/> [XM430-W350-T]                     | [XM540-W150-T]<br/> [XM540-W270-T]  |
 |     **XH**      |                                                                 | [XH430-W210-T]<br/> [XH430-W350-T]                     | [XH540-W150-T]<br/> [XH540-W270-T]  |
 
@@ -380,8 +380,8 @@ RC 수신기와 DYNAMIXEL Shield MKR은 아래와 같이 연결할 수 있습니
 [2xl430-w250-t]: /docs/kr/dxl/x/2xl430-w250/
 [xc430-w150-t]: /docs/kr/dxl/x/xc430-w150/
 [xc430-w240-t]: /docs/kr/dxl/x/xc430-w240/
-[xc430-w150bb-t]: /docs/kr/dxl/x/xc430-w150bb/
-[xc430-w240bb-t]: /docs/kr/dxl/x/xc430-w240bb/
+[xc430-t150bb-t]: /docs/kr/dxl/x/xc430-t150bb/
+[xc430-t240bb-t]: /docs/kr/dxl/x/xc430-t240bb/
 [XC330-T288]: /docs/kr/dxl/x/xc330-t288
 [XC330-T181]: /docs/kr/dxl/x/xc330-t181
 [XC330-M288]: /docs/kr/dxl/x/xc330-m288

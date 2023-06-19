@@ -36,7 +36,7 @@ DYNAMIXEL Shield  was created to use [RC-100] and DYNAMIXEL on arduino board. We
 | **EX** `1`       | [EX-106+]                                                    |                                  |                                 |                                |                 |
 | **MX**           | [MX-12W]                                                     | [MX-28], [MX-28(2.0)]            | [MX-64], [MX-64(2.0)]           | [MX-106], [MX-106(2.0)]        |                 |
 | **XL**           | [XL320]                                                      | [XL430-W250]                     | [XL330-M077] <br/> [XL330-M288] | [2XL430-W250]                  |                 |
-| **XC**           | [XC330-T288]<br>[XC330-T181]<br>[XC330-M288]<br>[XC330-M181] | [XC430-W150]<br/> [XC430-W240]<br/>[XC430-W150BB]<br/> [XC430-W240BB]   | [2XC430-W250]                   |                                |                 |
+| **XC**           | [XC330-T288]<br>[XC330-T181]<br>[XC330-M288]<br>[XC330-M181] | [XC430-W150]<br/> [XC430-W240]<br/>[XC430-T150BB]<br/> [XC430-T240BB]   | [2XC430-W250]                   |                                |                 |
 | **XM**           | [XM430-W210]                                                 | [XM430-W350]                     | [XM540-W150]                    | [XM540-W270]                   |                 |
 | **XH**           | [XH430-W210]<br/> [XH430-W350]                               | [XH430-V210]<br/> [XH430-V350]   | [XH540-W150]<br/> [XH540-W270]  | [XH540-V150]<br/> [XH540-V270] |                 |
 | **XD**           | [XD430-T210-R]<br>[XD430-T350-R]                             | [XD540-T150-R]<br>[XD540-T270-R] |                                 |                                |                 |
@@ -332,8 +332,8 @@ bool syncWriteEnd(void);
 [2XL430-W250]: /docs/en/dxl/x/2xl430-w250/
 [XC430-W150]: /docs/en/dxl/x/xc430-w150/
 [XC430-W240]: /docs/en/dxl/x/xc430-w240/
-[XC430-W150BB]: /docs/en/dxl/x/xc430-w150bb/
-[XC430-W240BB]: /docs/en/dxl/x/xc430-w240bb/
+[XC430-T150BB]: /docs/en/dxl/x/xc430-t150bb/
+[XC430-T240BB]: /docs/en/dxl/x/xc430-t240bb/
 [2XC430-W250]: /docs/en/dxl/x/2xc430-w250/
 [XC330-T288]: /docs/en/dxl/x/xc330-t288
 [XC330-T181]: /docs/en/dxl/x/xc330-t181

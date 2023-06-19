@@ -130,12 +130,12 @@ main:
       - title: "XC430-W240"
         titlekr: "XC430-W240"
         url: /dxl/x/xc430-w240/
-      - title: "XC430-W150BB"
-        titlekr: "XC430-W150BB"
-        url: /dxl/x/xc430-w150bb/
-      - title: "XC430-W240BB"
-        titlekr: "XC430-W240BB"
-        url: /dxl/x/xc430-w240bb/        
+      - title: "XC430-T150BB"
+        titlekr: "XC430-T150BB"
+        url: /dxl/x/xc430-t150bb/
+      - title: "XC430-T240BB"
+        titlekr: "XC430-T240BB"
+        url: /dxl/x/xc430-t240bb/        
       - title: "XC330-T288"
         titlekr: "XC330-T288"
         url: /dxl/x/xc330-t288/
@@ -6869,544 +6869,544 @@ xc430-w240:
         url: /dxl/x/xc430-w240/#moment-of-inertia
         urlkr: /dxl/x/xc430-w240/#moment-of-inertia
 
-#XC430-W150BB sidebar
-xc430-w150bb:
+#XC430-T150BB sidebar
+xc430-t150bb:
   - title: "Specifications"
     titlekr: "주요 사양"
-    url: /dxl/x/xc430-w150bb/#specifications
-    urlkr: /dxl/x/xc430-w150bb/#주요-사양
+    url: /dxl/x/xc430-t150bb/#specifications
+    urlkr: /dxl/x/xc430-t150bb/#주요-사양
     children:
       - title: "Performance Graph"
         titlekr: "성능 그래프"
-        url: /dxl/x/xc430-w150bb/#performance-graph
-        urlkr: /dxl/x/xc430-w150bb/#성능-그래프
+        url: /dxl/x/xc430-t150bb/#performance-graph
+        urlkr: /dxl/x/xc430-t150bb/#성능-그래프
   - title: "Control Table"
     titlekr: "컨트롤 테이블"
-    url: /dxl/x/xc430-w150bb/#control-table
-    urlkr: /dxl/x/xc430-w150bb/#컨트롤-테이블
+    url: /dxl/x/xc430-t150bb/#control-table
+    urlkr: /dxl/x/xc430-t150bb/#컨트롤-테이블
     children:
       - title: "Control Table, Data, Address"
         titlekr: "컨트롤 테이블, 데이터, 주소"
-        url: /dxl/x/xc430-w150bb/#control-table-data-address
-        urlkr: /dxl/x/xc430-w150bb/#컨트롤-테이블-데이터-주소
+        url: /dxl/x/xc430-t150bb/#control-table-data-address
+        urlkr: /dxl/x/xc430-t150bb/#컨트롤-테이블-데이터-주소
         children:
           - title: "Area(EEPROM, RAM)"
             titlekr: "영역 (EEPROM, RAM)"
-            url: /dxl/x/xc430-w150bb/#area-eeprom-ram
-            urlkr: /dxl/x/xc430-w150bb/#영역-eeprom-ram
+            url: /dxl/x/xc430-t150bb/#area-eeprom-ram
+            urlkr: /dxl/x/xc430-t150bb/#영역-eeprom-ram
           - title: "Size"
             titlekr: "크기"
-            url: /dxl/x/xc430-w150bb/#size
-            urlkr: /dxl/x/xc430-w150bb/#크기
+            url: /dxl/x/xc430-t150bb/#size
+            urlkr: /dxl/x/xc430-t150bb/#크기
           - title: "Access"
             titlekr: "접근권한"
-            url: /dxl/x/xc430-w150bb/#access
-            urlkr: /dxl/x/xc430-w150bb/#접근권한
+            url: /dxl/x/xc430-t150bb/#access
+            urlkr: /dxl/x/xc430-t150bb/#접근권한
           - title: "Initial Value"
             titlekr: "기본값"
-            url: /dxl/x/xc430-w150bb/#initial-value
-            urlkr: /dxl/x/xc430-w150bb/#기본값
+            url: /dxl/x/xc430-t150bb/#initial-value
+            urlkr: /dxl/x/xc430-t150bb/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
-        url: /dxl/x/xc430-w150bb/#control-table-of-eeprom-area
-        urlkr: /dxl/x/xc430-w150bb/#eeprom-영역
+        url: /dxl/x/xc430-t150bb/#control-table-of-eeprom-area
+        urlkr: /dxl/x/xc430-t150bb/#eeprom-영역
       - title: "RAM Area"
         titlekr: "RAM 영역"
-        url: /dxl/x/xc430-w150bb/#control-table-of-ram-area
-        urlkr: /dxl/x/xc430-w150bb/#ram-영역
+        url: /dxl/x/xc430-t150bb/#control-table-of-ram-area
+        urlkr: /dxl/x/xc430-t150bb/#ram-영역
       - title: "Control Table Description"
         titlekr: "컨트롤 테이블 설명"
-        url: /dxl/x/xc430-w150bb/#control-table-description
-        urlkr: /dxl/x/xc430-w150bb/#컨트롤-테이블-설명
+        url: /dxl/x/xc430-t150bb/#control-table-description
+        urlkr: /dxl/x/xc430-t150bb/#컨트롤-테이블-설명
         children:
           - title: "Model Number(0)"
             titlekr: "Model Number(0)"
-            url: /dxl/x/xc430-w150bb/#model-number0
+            url: /dxl/x/xc430-t150bb/#model-number0
           - title: "Firmware Version(6)"
             titlekr: "Firmware Version(6)"
-            url: /dxl/x/xc430-w150bb/#firmware-version6
+            url: /dxl/x/xc430-t150bb/#firmware-version6
           - title: "ID(7)"
             titlekr: "ID(7)"
-            url: /dxl/x/xc430-w150bb/#id7
+            url: /dxl/x/xc430-t150bb/#id7
           - title: "Baud Rate(8)"
             titlekr: "Baud Rate(8)"
-            url: /dxl/x/xc430-w150bb/#baud-rate8
+            url: /dxl/x/xc430-t150bb/#baud-rate8
           - title: "Return Delay Time(9)"
             titlekr: "Return Delay Time(9)"
-            url: /dxl/x/xc430-w150bb/#return-delay-time9
+            url: /dxl/x/xc430-t150bb/#return-delay-time9
           - title: "Drive Mode(10)"
             titlekr: "Drive Mode(10)"
-            url: /dxl/x/xc430-w150bb/#drive-mode10
+            url: /dxl/x/xc430-t150bb/#drive-mode10
           - title: "Operating Mode(11)"
             titlekr: "Operating Mode(11)"
-            url: /dxl/x/xc430-w150bb/#operating-mode11
+            url: /dxl/x/xc430-t150bb/#operating-mode11
           - title: "Secondary(Shadow) ID(12)"
             titlekr: "Secondary(Shadow) ID(12)"
-            url: /dxl/x/xc430-w150bb/#secondaryshadow-id12
+            url: /dxl/x/xc430-t150bb/#secondaryshadow-id12
           - title: "Protocol Type(13)"
             titlekr: "Protocol Type(13)"
-            url: /dxl/x/xc430-w150bb/#protocol-type13
+            url: /dxl/x/xc430-t150bb/#protocol-type13
           - title: "Homing Offset(20)"
             titlekr: "Homing Offset(20)"
-            url: /dxl/x/xc430-w150bb/#homing-offset20
+            url: /dxl/x/xc430-t150bb/#homing-offset20
           - title: "Moving Threshold(24)"
             titlekr: "Moving Threshold(24)"
-            url: /dxl/x/xc430-w150bb/#moving-threshold24
+            url: /dxl/x/xc430-t150bb/#moving-threshold24
           - title: "Temperature Limit(31)"
             titlekr: "Temperature Limit(31)"
-            url: /dxl/x/xc430-w150bb/#temperature-limit31
+            url: /dxl/x/xc430-t150bb/#temperature-limit31
           - title: "Min/Max Voltage Limit(32,34)"
             titlekr: "Min/Max Voltage Limit(32,34)"
-            url: /dxl/x/xc430-w150bb/#minmax-voltage-limit32-34
+            url: /dxl/x/xc430-t150bb/#minmax-voltage-limit32-34
           - title: "PWM Lmit(36)"
             titlekr: "PWM Limit(36)"
-            url: /dxl/x/xc430-w150bb/#pwm-limit36
+            url: /dxl/x/xc430-t150bb/#pwm-limit36
           - title: "Velocity Limit(44)"
             titlekr: "Velocity Limit(44)"
-            url: /dxl/x/xc430-w150bb/#velocity-limit44
+            url: /dxl/x/xc430-t150bb/#velocity-limit44
           - title: "Min/Max Position Limit(48, 52)"
             titlekr: "Min/Max Position Limit(48, 52)"
-            url: /dxl/x/xc430-w150bb/#minmax-position-limit48-52
+            url: /dxl/x/xc430-t150bb/#minmax-position-limit48-52
           - title: "Startup Configuration(60)"
             titlekr: "Startup Configuration(60)"
-            url: /dxl/x/xc430-w150bb/#startup-configuration60
+            url: /dxl/x/xc430-t150bb/#startup-configuration60
           - title: "Shutdown(63)"
             titlekr: "Shutdown(63)"
-            url: /dxl/x/xc430-w150bb/#shutdown63
+            url: /dxl/x/xc430-t150bb/#shutdown63
           - title: "Torque Enable(64)"
             titlekr: "Torque Enable(64)"
-            url: /dxl/x/xc430-w150bb/#torque-enable64
+            url: /dxl/x/xc430-t150bb/#torque-enable64
           - title: "LED(65)"
             titlekr: "LED(65)"
-            url: /dxl/x/xc430-w150bb/#led65
+            url: /dxl/x/xc430-t150bb/#led65
           - title: "Status Return Level(68)"
             titlekr: "Status Return Level(68)"
-            url: /dxl/x/xc430-w150bb/#status-return-level68
+            url: /dxl/x/xc430-t150bb/#status-return-level68
           - title: "Registered Instruction(69)"
             titlekr: "Registered Instruction(69)"
-            url: /dxl/x/xc430-w150bb/#registered-instruction69
+            url: /dxl/x/xc430-t150bb/#registered-instruction69
           - title: "Hardware Error Status(70)"
             titlekr: "Hardware Error Status(70)"
-            url: /dxl/x/xc430-w150bb/#hardware-error-status70
+            url: /dxl/x/xc430-t150bb/#hardware-error-status70
           - title: "Velocity PI Gain(76, 78)"
             titlekr: "Velocity PI Gain(76, 78)"
-            url: /dxl/x/xc430-w150bb/#velocity-pi-gain76-78
+            url: /dxl/x/xc430-t150bb/#velocity-pi-gain76-78
           - title: "Position PID Gain(80, 82, 84)"
             titlekr: "Position PID Gain(80, 82, 84)"
-            url: /dxl/x/xc430-w150bb/#position-pid-gain80-82-84
+            url: /dxl/x/xc430-t150bb/#position-pid-gain80-82-84
           - title: "Feedforward 1st/2nd Gains(88, 90)"
             titlekr: "Feedforward 1st/2nd Gains(88, 90)"
-            url: /dxl/x/xc430-w150bb/#feedforward-1st2nd-gains88-90
+            url: /dxl/x/xc430-t150bb/#feedforward-1st2nd-gains88-90
           - title: "BUS Watchdog(98)"
             titlekr: "BUS Watchdog(98)"
-            url: /dxl/x/xc430-w150bb/#bus-watchdog98
+            url: /dxl/x/xc430-t150bb/#bus-watchdog98
           - title: "Goal PWM(100)"
             titlekr: "Goal PWM(100)"
-            url: /dxl/x/xc430-w150bb/#goal-pwm100
+            url: /dxl/x/xc430-t150bb/#goal-pwm100
           - title: "Goal Velocity(104)"
             titlekr: "Goal Velocity(104)"
-            url: /dxl/x/xc430-w150bb/#goal-velocity104
+            url: /dxl/x/xc430-t150bb/#goal-velocity104
           - title: "Profile Acceleration(108)"
             titlekr: "Profile Acceleration(108)"
-            url: /dxl/x/xc430-w150bb/#profile-acceleration108
+            url: /dxl/x/xc430-t150bb/#profile-acceleration108
           - title: "Profile Velocity(112)"
             titlekr: "Profile Velocity(112)"
-            url: /dxl/x/xc430-w150bb/#profile-velocity112
+            url: /dxl/x/xc430-t150bb/#profile-velocity112
           - title: "Goal Position(116)"
             titlekr: "Goal Position(116)"
-            url: /dxl/x/xc430-w150bb/#goal-position116
+            url: /dxl/x/xc430-t150bb/#goal-position116
           - title: "Realtime Tick(120)"
             titlekr: "Realtime Tick(120)"
-            url: /dxl/x/xc430-w150bb/#realtime-tick120
+            url: /dxl/x/xc430-t150bb/#realtime-tick120
           - title: "Moving(122)"
             titlekr: "Moving(122)"
-            url: /dxl/x/xc430-w150bb/#moving122
+            url: /dxl/x/xc430-t150bb/#moving122
           - title: "Moving Status(123)"
             titlekr: "Moving Status(123)"
-            url: /dxl/x/xc430-w150bb/#moving-status123
+            url: /dxl/x/xc430-t150bb/#moving-status123
           - title: "Present PWM(124)"
             titlekr: "Present PWM(124)"
-            url: /dxl/x/xc430-w150bb/#present-pwm124
+            url: /dxl/x/xc430-t150bb/#present-pwm124
           - title: "Present Load(126)"
             titlekr: "Present Load(126)"
-            url: /dxl/x/xc430-w150bb/#present-load126
+            url: /dxl/x/xc430-t150bb/#present-load126
           - title: "Present Velocity(128)"
             titlekr: "Present Velocity(128)"
-            url: /dxl/x/xc430-w150bb/#present-velocity128
+            url: /dxl/x/xc430-t150bb/#present-velocity128
           - title: "Present Position(132)"
             titlekr: "Present Position(132)"
-            url: /dxl/x/xc430-w150bb/#present-position132
+            url: /dxl/x/xc430-t150bb/#present-position132
           - title: "Velocity Trajectory(136)"
             titlekr: "Velocity Trajectory(136)"
-            url: /dxl/x/xc430-w150bb/#velocity-trajectory136
+            url: /dxl/x/xc430-t150bb/#velocity-trajectory136
           - title: "Position Trajectory(140)"
             titlekr: "Position Trajectory(140)"
-            url: /dxl/x/xc430-w150bb/#position-trajectory140
+            url: /dxl/x/xc430-t150bb/#position-trajectory140
           - title: "Present Input Voltage(144)"
             titlekr: "Present Input Voltage(144)"
-            url: /dxl/x/xc430-w150bb/#present-input-voltage144
+            url: /dxl/x/xc430-t150bb/#present-input-voltage144
           - title: "Present Temperature(146)"
             titlekr: "Present Temperature(146)"
-            url: /dxl/x/xc430-w150bb/#present-temperature146
+            url: /dxl/x/xc430-t150bb/#present-temperature146
           - title: "Backup Ready(147)"
             titlekr: "Backup Ready(147)"
-            url: /dxl/x/xc430-w150bb/#backup-ready147
+            url: /dxl/x/xc430-t150bb/#backup-ready147
           - title: "Indirect Address"
             titlekr: "Indirect Address"
-            url: /dxl/x/xc430-w150bb/#indirect-address
+            url: /dxl/x/xc430-t150bb/#indirect-address
           - title: "Indirect Data"
             titlekr: "Indirect Data"
-            url: /dxl/x/xc430-w150bb/#indirect-data
+            url: /dxl/x/xc430-t150bb/#indirect-data
   - title: "How to Assemble"
     titlekr: "조립 예시"
-    url: /dxl/x/xc430-w150bb/#how-to-assemble
-    urlkr: /dxl/x/xc430-w150bb/#조립-예시
+    url: /dxl/x/xc430-t150bb/#how-to-assemble
+    urlkr: /dxl/x/xc430-t150bb/#조립-예시
     children:
       - title: "Horn Assembly"
         titlekr: "혼 조립하기"
-        url: /dxl/x/xc430-w150bb/#horn-assembly
-        urlkr: /dxl/x/xc430-w150bb/#혼-조립하기
+        url: /dxl/x/xc430-t150bb/#horn-assembly
+        urlkr: /dxl/x/xc430-t150bb/#혼-조립하기
         children:
           - title: "Idler Horn Assembly"
             titlekr: "아이들러 혼 조립하기"
-            url: /dxl/x/xc430-w150bb/#idler-horn-assembly
-            urlkr: /dxl/x/xc430-w150bb/#아이들러-혼-조립하기
+            url: /dxl/x/xc430-t150bb/#idler-horn-assembly
+            urlkr: /dxl/x/xc430-t150bb/#아이들러-혼-조립하기
       - title: "Frame Assembly"
         titlekr: "프레임 조립하기"
-        url: /dxl/x/xc430-w150bb/#frame-assembly
-        urlkr: /dxl/x/xc430-w150bb/#프레임-조립하기
+        url: /dxl/x/xc430-t150bb/#frame-assembly
+        urlkr: /dxl/x/xc430-t150bb/#프레임-조립하기
         children:
           - title: "How To Use Spacer Ring"
             titlekr: "스페이서 링 사용 방법"
-            url: /dxl/x/xc430-w150bb/#how-to-use-spacer-ring
-            urlkr: /dxl/x/xc430-w150bb/#스페이서-링-사용-방법
+            url: /dxl/x/xc430-t150bb/#how-to-use-spacer-ring
+            urlkr: /dxl/x/xc430-t150bb/#스페이서-링-사용-방법
           - title: "Precaution of Frame and Horn Assembly"
             titlekr: "프레임과 혼 결합 시 주의 사항"
-            url: /dxl/x/xc430-w150bb/#precaution-of-frame-and-horn-assembly
-            urlkr: /dxl/x/xc430-w150bb/#프레임과-혼-결합-시-주의-사항
+            url: /dxl/x/xc430-t150bb/#precaution-of-frame-and-horn-assembly
+            urlkr: /dxl/x/xc430-t150bb/#프레임과-혼-결합-시-주의-사항
           - title: "Hinge Frame Assembly"
             titlekr: "힌지 프레임 조립하기"
-            url: /dxl/x/xc430-w150bb/#hinge-frame-assembly
-            urlkr: /dxl/x/xc430-w150bb/#힌지-프레임-조립하기
+            url: /dxl/x/xc430-t150bb/#hinge-frame-assembly
+            urlkr: /dxl/x/xc430-t150bb/#힌지-프레임-조립하기
           - title: "Side Frame Assembly"
             titlekr: "사이드 프레임 조립하기"
-            url: /dxl/x/xc430-w150bb/#side-frame-assembly
-            urlkr: /dxl/x/xc430-w150bb/#사이드-프레임-조립하기
+            url: /dxl/x/xc430-t150bb/#side-frame-assembly
+            urlkr: /dxl/x/xc430-t150bb/#사이드-프레임-조립하기
           - title: "Gripper Assembly"
             titlekr: "그리퍼 조립하기"
-            url: /dxl/x/xc430-w150bb/#gripper-assembly
-            urlkr: /dxl/x/xc430-w150bb/#그리퍼-조립하기
+            url: /dxl/x/xc430-t150bb/#gripper-assembly
+            urlkr: /dxl/x/xc430-t150bb/#그리퍼-조립하기
           - title: "Frame Combination"
             titlekr: "프레임 활용 하기"
-            url: /dxl/x/xc430-w150bb/#frame-combination
-            urlkr: /dxl/x/xc430-w150bb/#프레임-활용-하기
+            url: /dxl/x/xc430-t150bb/#frame-combination
+            urlkr: /dxl/x/xc430-t150bb/#프레임-활용-하기
           - title: "Custom Frame Assembly"
             titlekr: "기타 프레임 조립 예시"
-            url: /dxl/x/xc430-w150bb/#custom-frame-assembly
-            urlkr: /dxl/x/xc430-w150bb/#기타-프레임-조립-예시
+            url: /dxl/x/xc430-t150bb/#custom-frame-assembly
+            urlkr: /dxl/x/xc430-t150bb/#기타-프레임-조립-예시
   - title: "Reference"
     titlekr: "참고자료"
-    url: /dxl/x/xc430-w150bb/#reference
-    urlkr: /dxl/x/xc430-w150bb/#참고자료
+    url: /dxl/x/xc430-t150bb/#reference
+    urlkr: /dxl/x/xc430-t150bb/#참고자료
     children:
       - title: "What is the Profile"
         titlekr: "Profile"
-        url: /dxl/x/xc430-w150bb/#what-is-the-profile
-        urlkr: /dxl/x/xc430-w150bb/#profile
+        url: /dxl/x/xc430-t150bb/#what-is-the-profile
+        urlkr: /dxl/x/xc430-t150bb/#profile
       - title: "Certifications"
         titlekr: "인증 획득"
-        url: /dxl/x/xc430-w150bb/#certifications
-        urlkr: /dxl/x/xc430-w150bb/#인증-획득
+        url: /dxl/x/xc430-t150bb/#certifications
+        urlkr: /dxl/x/xc430-t150bb/#인증-획득
       - title: "Quick Start"
         titlekr: "퀵스타트"
-        url: /dxl/x/xc430-w150bb/#quick-start
-        urlkr: /dxl/x/xc430-w150bb/#퀵스타트
+        url: /dxl/x/xc430-t150bb/#quick-start
+        urlkr: /dxl/x/xc430-t150bb/#퀵스타트
       - title: "Connector Information"
         titlekr: "커넥터 정보"
-        url: /dxl/x/xc430-w150bb/#connector-information
-        urlkr: /dxl/x/xc430-w150bb/#커넥터-정보
+        url: /dxl/x/xc430-t150bb/#connector-information
+        urlkr: /dxl/x/xc430-t150bb/#커넥터-정보
       - title: "Communication Circuit"
         titlekr: "통신 회로"
-        url: /dxl/x/xc430-w150bb/#communication-circuit
-        urlkr: /dxl/x/xc430-w150bb/#통신-회로
+        url: /dxl/x/xc430-t150bb/#communication-circuit
+        urlkr: /dxl/x/xc430-t150bb/#통신-회로
       - title: "Drawings"
         titlekr: "도면"
-        url: /dxl/x/xc430-w150bb/#drawings
-        urlkr: /dxl/x/xc430-w150bb/#도면
+        url: /dxl/x/xc430-t150bb/#drawings
+        urlkr: /dxl/x/xc430-t150bb/#도면
       - title: "Moment of Inertia"
         titlekr: "Moment of Inertia"
-        url: /dxl/x/xc430-w150bb/#moment-of-inertia
-        urlkr: /dxl/x/xc430-w150bb/#moment-of-inertia
+        url: /dxl/x/xc430-t150bb/#moment-of-inertia
+        urlkr: /dxl/x/xc430-t150bb/#moment-of-inertia
 
 
 #XC430-W240 sidebar
-xc430-w240bb:
+xc430-t240bb:
   - title: "Specifications"
     titlekr: "주요 사양"
-    url: /dxl/x/xc430-w240bb/#specifications
-    urlkr: /dxl/x/xc430-w240bb/#주요-사양
+    url: /dxl/x/xc430-t240bb/#specifications
+    urlkr: /dxl/x/xc430-t240bb/#주요-사양
     children:
       - title: "Performance Graph"
         titlekr: "성능 그래프"
-        url: /dxl/x/xc430-w240bb/#performance-graph
-        urlkr: /dxl/x/xc430-w240bb/#성능-그래프
+        url: /dxl/x/xc430-t240bb/#performance-graph
+        urlkr: /dxl/x/xc430-t240bb/#성능-그래프
   - title: "Control Table"
     titlekr: "컨트롤 테이블"
-    url: /dxl/x/xc430-w240bb/#control-table
-    urlkr: /dxl/x/xc430-w240bb/#컨트롤-테이블
+    url: /dxl/x/xc430-t240bb/#control-table
+    urlkr: /dxl/x/xc430-t240bb/#컨트롤-테이블
     children:
       - title: "Control Table, Data, Address"
         titlekr: "컨트롤 테이블, 데이터, 주소"
-        url: /dxl/x/xc430-w240bb/#control-table-data-address
-        urlkr: /dxl/x/xc430-w240bb/#컨트롤-테이블-데이터-주소
+        url: /dxl/x/xc430-t240bb/#control-table-data-address
+        urlkr: /dxl/x/xc430-t240bb/#컨트롤-테이블-데이터-주소
         children:
           - title: "Area(EEPROM, RAM)"
             titlekr: "영역 (EEPROM, RAM)"
-            url: /dxl/x/xc430-w240bb/#area-eeprom-ram
-            urlkr: /dxl/x/xc430-w240bb/#영역-eeprom-ram
+            url: /dxl/x/xc430-t240bb/#area-eeprom-ram
+            urlkr: /dxl/x/xc430-t240bb/#영역-eeprom-ram
           - title: "Size"
             titlekr: "크기"
-            url: /dxl/x/xc430-w240bb/#size
-            urlkr: /dxl/x/xc430-w240bb/#크기
+            url: /dxl/x/xc430-t240bb/#size
+            urlkr: /dxl/x/xc430-t240bb/#크기
           - title: "Access"
             titlekr: "접근권한"
-            url: /dxl/x/xc430-w240bb/#access
-            urlkr: /dxl/x/xc430-w240bb/#접근권한
+            url: /dxl/x/xc430-t240bb/#access
+            urlkr: /dxl/x/xc430-t240bb/#접근권한
           - title: "Initial Value"
             titlekr: "기본값"
-            url: /dxl/x/xc430-w240bb/#initial-value
-            urlkr: /dxl/x/xc430-w240bb/#기본값
+            url: /dxl/x/xc430-t240bb/#initial-value
+            urlkr: /dxl/x/xc430-t240bb/#기본값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
-        url: /dxl/x/xc430-w240bb/#control-table-of-eeprom-area
-        urlkr: /dxl/x/xc430-w240bb/#eeprom-영역
+        url: /dxl/x/xc430-t240bb/#control-table-of-eeprom-area
+        urlkr: /dxl/x/xc430-t240bb/#eeprom-영역
       - title: "RAM Area"
         titlekr: "RAM 영역"
-        url: /dxl/x/xc430-w240bb/#control-table-of-ram-area
-        urlkr: /dxl/x/xc430-w240bb/#ram-영역
+        url: /dxl/x/xc430-t240bb/#control-table-of-ram-area
+        urlkr: /dxl/x/xc430-t240bb/#ram-영역
       - title: "Control Table Description"
         titlekr: "컨트롤 테이블 설명"
-        url: /dxl/x/xc430-w240bb/#control-table-description
-        urlkr: /dxl/x/xc430-w240bb/#컨트롤-테이블-설명
+        url: /dxl/x/xc430-t240bb/#control-table-description
+        urlkr: /dxl/x/xc430-t240bb/#컨트롤-테이블-설명
         children:
           - title: "Model Number(0)"
             titlekr: "Model Number(0)"
-            url: /dxl/x/xc430-w240bb/#model-number0
+            url: /dxl/x/xc430-t240bb/#model-number0
           - title: "Firmware Version(6)"
             titlekr: "Firmware Version(6)"
-            url: /dxl/x/xc430-w240bb/#firmware-version6
+            url: /dxl/x/xc430-t240bb/#firmware-version6
           - title: "ID(7)"
             titlekr: "ID(7)"
-            url: /dxl/x/xc430-w240bb/#id7
+            url: /dxl/x/xc430-t240bb/#id7
           - title: "Baud Rate(8)"
             titlekr: "Baud Rate(8)"
-            url: /dxl/x/xc430-w240bb/#baud-rate8
+            url: /dxl/x/xc430-t240bb/#baud-rate8
           - title: "Return Delay Time(9)"
             titlekr: "Return Delay Time(9)"
-            url: /dxl/x/xc430-w240bb/#return-delay-time9
+            url: /dxl/x/xc430-t240bb/#return-delay-time9
           - title: "Drive Mode(10)"
             titlekr: "Drive Mode(10)"
-            url: /dxl/x/xc430-w240bb/#drive-mode10
+            url: /dxl/x/xc430-t240bb/#drive-mode10
           - title: "Operating Mode(11)"
             titlekr: "Operating Mode(11)"
-            url: /dxl/x/xc430-w240bb/#operating-mode11
+            url: /dxl/x/xc430-t240bb/#operating-mode11
           - title: "Secondary(Shadow) ID(12)"
             titlekr: "Secondary(Shadow) ID(12)"
-            url: /dxl/x/xc430-w240bb/#secondaryshadow-id12
+            url: /dxl/x/xc430-t240bb/#secondaryshadow-id12
           - title: "Protocol Type(13)"
             titlekr: "Protocol Type(13)"
-            url: /dxl/x/xc430-w240bb/#protocol-type13
+            url: /dxl/x/xc430-t240bb/#protocol-type13
           - title: "Homing Offset(20)"
             titlekr: "Homing Offset(20)"
-            url: /dxl/x/xc430-w240bb/#homing-offset20
+            url: /dxl/x/xc430-t240bb/#homing-offset20
           - title: "Moving Threshold(24)"
             titlekr: "Moving Threshold(24)"
-            url: /dxl/x/xc430-w240bb/#moving-threshold24
+            url: /dxl/x/xc430-t240bb/#moving-threshold24
           - title: "Temperature Limit(31)"
             titlekr: "Temperature Limit(31)"
-            url: /dxl/x/xc430-w240bb/#temperature-limit31
+            url: /dxl/x/xc430-t240bb/#temperature-limit31
           - title: "Min/Max Voltage Limit(32,34)"
             titlekr: "Min/Max Voltage Limit(32,34)"
-            url: /dxl/x/xc430-w240bb/#minmax-voltage-limit32-34
+            url: /dxl/x/xc430-t240bb/#minmax-voltage-limit32-34
           - title: "PWM Lmit(36)"
             titlekr: "PWM Limit(36)"
-            url: /dxl/x/xc430-w240bb/#pwm-limit36
+            url: /dxl/x/xc430-t240bb/#pwm-limit36
           - title: "Velocity Limit(44)"
             titlekr: "Velocity Limit(44)"
-            url: /dxl/x/xc430-w240bb/#velocity-limit44
+            url: /dxl/x/xc430-t240bb/#velocity-limit44
           - title: "Min/Max Position Limit(48, 52)"
             titlekr: "Min/Max Position Limit(48, 52)"
-            url: /dxl/x/xc430-w240bb/#minmax-position-limit48-52
+            url: /dxl/x/xc430-t240bb/#minmax-position-limit48-52
           - title: "Startup Configuration(60)"
             titlekr: "Startup Configuration(60)"
-            url: /dxl/x/xc430-w240bb/#startup-configuration60
+            url: /dxl/x/xc430-t240bb/#startup-configuration60
           - title: "Shutdown(63)"
             titlekr: "Shutdown(63)"
-            url: /dxl/x/xc430-w240bb/#shutdown63
+            url: /dxl/x/xc430-t240bb/#shutdown63
           - title: "Torque Enable(64)"
             titlekr: "Torque Enable(64)"
-            url: /dxl/x/xc430-w240bb/#torque-enable64
+            url: /dxl/x/xc430-t240bb/#torque-enable64
           - title: "LED(65)"
             titlekr: "LED(65)"
-            url: /dxl/x/xc430-w240bb/#led65
+            url: /dxl/x/xc430-t240bb/#led65
           - title: "Status Return Level(68)"
             titlekr: "Status Return Level(68)"
-            url: /dxl/x/xc430-w240bb/#status-return-level68
+            url: /dxl/x/xc430-t240bb/#status-return-level68
           - title: "Registered Instruction(69)"
             titlekr: "Registered Instruction(69)"
-            url: /dxl/x/xc430-w240bb/#registered-instruction69
+            url: /dxl/x/xc430-t240bb/#registered-instruction69
           - title: "Hardware Error Status(70)"
             titlekr: "Hardware Error Status(70)"
-            url: /dxl/x/xc430-w240bb/#hardware-error-status70
+            url: /dxl/x/xc430-t240bb/#hardware-error-status70
           - title: "Velocity PI Gain(76, 78)"
             titlekr: "Velocity PI Gain(76, 78)"
-            url: /dxl/x/xc430-w240bb/#velocity-pi-gain76-78
+            url: /dxl/x/xc430-t240bb/#velocity-pi-gain76-78
           - title: "Position PID Gain(80, 82, 84)"
             titlekr: "Position PID Gain(80, 82, 84)"
-            url: /dxl/x/xc430-w240bb/#position-pid-gain80-82-84
+            url: /dxl/x/xc430-t240bb/#position-pid-gain80-82-84
           - title: "Feedforward 1st/2nd Gains(88, 90)"
             titlekr: "Feedforward 1st/2nd Gains(88, 90)"
-            url: /dxl/x/xc430-w240bb/#feedforward-1st2nd-gains88-90
+            url: /dxl/x/xc430-t240bb/#feedforward-1st2nd-gains88-90
           - title: "BUS Watchdog(98)"
             titlekr: "BUS Watchdog(98)"
-            url: /dxl/x/xc430-w240bb/#bus-watchdog98
+            url: /dxl/x/xc430-t240bb/#bus-watchdog98
           - title: "Goal PWM(100)"
             titlekr: "Goal PWM(100)"
-            url: /dxl/x/xc430-w240bb/#goal-pwm100
+            url: /dxl/x/xc430-t240bb/#goal-pwm100
           - title: "Goal Velocity(104)"
             titlekr: "Goal Velocity(104)"
-            url: /dxl/x/xc430-w240bb/#goal-velocity104
+            url: /dxl/x/xc430-t240bb/#goal-velocity104
           - title: "Profile Acceleration(108)"
             titlekr: "Profile Acceleration(108)"
-            url: /dxl/x/xc430-w240bb/#profile-acceleration108
+            url: /dxl/x/xc430-t240bb/#profile-acceleration108
           - title: "Profile Velocity(112)"
             titlekr: "Profile Velocity(112)"
-            url: /dxl/x/xc430-w240bb/#profile-velocity112
+            url: /dxl/x/xc430-t240bb/#profile-velocity112
           - title: "Goal Position(116)"
             titlekr: "Goal Position(116)"
-            url: /dxl/x/xc430-w240bb/#goal-position116
+            url: /dxl/x/xc430-t240bb/#goal-position116
           - title: "Realtime Tick(120)"
             titlekr: "Realtime Tick(120)"
-            url: /dxl/x/xc430-w240bb/#realtime-tick120
+            url: /dxl/x/xc430-t240bb/#realtime-tick120
           - title: "Moving(122)"
             titlekr: "Moving(122)"
-            url: /dxl/x/xc430-w240bb/#moving122
+            url: /dxl/x/xc430-t240bb/#moving122
           - title: "Moving Status(123)"
             titlekr: "Moving Status(123)"
-            url: /dxl/x/xc430-w240bb/#moving-status123
+            url: /dxl/x/xc430-t240bb/#moving-status123
           - title: "Present PWM(124)"
             titlekr: "Present PWM(124)"
-            url: /dxl/x/xc430-w240bb/#present-pwm124
+            url: /dxl/x/xc430-t240bb/#present-pwm124
           - title: "Present Load(126)"
             titlekr: "Present Load(126)"
-            url: /dxl/x/xc430-w240bb/#present-load126
+            url: /dxl/x/xc430-t240bb/#present-load126
           - title: "Present Velocity(128)"
             titlekr: "Present Velocity(128)"
-            url: /dxl/x/xc430-w240bb/#present-velocity128
+            url: /dxl/x/xc430-t240bb/#present-velocity128
           - title: "Present Position(132)"
             titlekr: "Present Position(132)"
-            url: /dxl/x/xc430-w240bb/#present-position132
+            url: /dxl/x/xc430-t240bb/#present-position132
           - title: "Velocity Trajectory(136)"
             titlekr: "Velocity Trajectory(136)"
-            url: /dxl/x/xc430-w240bb/#velocity-trajectory136
+            url: /dxl/x/xc430-t240bb/#velocity-trajectory136
           - title: "Position Trajectory(140)"
             titlekr: "Position Trajectory(140)"
-            url: /dxl/x/xc430-w240bb/#position-trajectory140
+            url: /dxl/x/xc430-t240bb/#position-trajectory140
           - title: "Present Input Voltage(144)"
             titlekr: "Present Input Voltage(144)"
-            url: /dxl/x/xc430-w240bb/#present-input-voltage144
+            url: /dxl/x/xc430-t240bb/#present-input-voltage144
           - title: "Present Temperature(146)"
             titlekr: "Present Temperature(146)"
-            url: /dxl/x/xc430-w240bb/#present-temperature146
+            url: /dxl/x/xc430-t240bb/#present-temperature146
           - title: "Backup Ready(147)"
             titlekr: "Backup Ready(147)"
-            url: /dxl/x/xc430-w240bb/#backup-ready147
+            url: /dxl/x/xc430-t240bb/#backup-ready147
           - title: "Indirect Address"
             titlekr: "Indirect Address"
-            url: /dxl/x/xc430-w240bb/#indirect-address
+            url: /dxl/x/xc430-t240bb/#indirect-address
           - title: "Indirect Data"
             titlekr: "Indirect Data"
-            url: /dxl/x/xc430-w240bb/#indirect-data
+            url: /dxl/x/xc430-t240bb/#indirect-data
   - title: "How to Assemble"
     titlekr: "조립 예시"
-    url: /dxl/x/xc430-w240bb/#how-to-assemble
-    urlkr: /dxl/x/xc430-w240bb/#조립-예시
+    url: /dxl/x/xc430-t240bb/#how-to-assemble
+    urlkr: /dxl/x/xc430-t240bb/#조립-예시
     children:
       - title: "Horn Assembly"
         titlekr: "혼 조립하기"
-        url: /dxl/x/xc430-w240bb/#horn-assembly
-        urlkr: /dxl/x/xc430-w240bb/#혼-조립하기
+        url: /dxl/x/xc430-t240bb/#horn-assembly
+        urlkr: /dxl/x/xc430-t240bb/#혼-조립하기
         children:
           - title: "Idler Horn Assembly"
             titlekr: "아이들러 혼 조립하기"
-            url: /dxl/x/xc430-w240bb/#idler-horn-assembly
-            urlkr: /dxl/x/xc430-w240bb/#아이들러-혼-조립하기
+            url: /dxl/x/xc430-t240bb/#idler-horn-assembly
+            urlkr: /dxl/x/xc430-t240bb/#아이들러-혼-조립하기
       - title: "Frame Assembly"
         titlekr: "프레임 조립하기"
-        url: /dxl/x/xc430-w240bb/#frame-assembly
-        urlkr: /dxl/x/xc430-w240bb/#프레임-조립하기
+        url: /dxl/x/xc430-t240bb/#frame-assembly
+        urlkr: /dxl/x/xc430-t240bb/#프레임-조립하기
         children:
           - title: "How To Use Spacer Ring"
             titlekr: "스페이서 링 사용 방법"
-            url: /dxl/x/xc430-w240bb/#how-to-use-spacer-ring
-            urlkr: /dxl/x/xc430-w240bb/#스페이서-링-사용-방법
+            url: /dxl/x/xc430-t240bb/#how-to-use-spacer-ring
+            urlkr: /dxl/x/xc430-t240bb/#스페이서-링-사용-방법
           - title: "Precaution of Frame and Horn Assembly"
             titlekr: "프레임과 혼 결합 시 주의 사항"
-            url: /dxl/x/xc430-w240bb/#precaution-of-frame-and-horn-assembly
-            urlkr: /dxl/x/xc430-w240bb/#프레임과-혼-결합-시-주의-사항
+            url: /dxl/x/xc430-t240bb/#precaution-of-frame-and-horn-assembly
+            urlkr: /dxl/x/xc430-t240bb/#프레임과-혼-결합-시-주의-사항
           - title: "Hinge Frame Assembly"
             titlekr: "힌지 프레임 조립하기"
-            url: /dxl/x/xc430-w240bb/#hinge-frame-assembly
-            urlkr: /dxl/x/xc430-w240bb/#힌지-프레임-조립하기
+            url: /dxl/x/xc430-t240bb/#hinge-frame-assembly
+            urlkr: /dxl/x/xc430-t240bb/#힌지-프레임-조립하기
           - title: "Side Frame Assembly"
             titlekr: "사이드 프레임 조립하기"
-            url: /dxl/x/xc430-w240bb/#side-frame-assembly
-            urlkr: /dxl/x/xc430-w240bb/#사이드-프레임-조립하기
+            url: /dxl/x/xc430-t240bb/#side-frame-assembly
+            urlkr: /dxl/x/xc430-t240bb/#사이드-프레임-조립하기
           - title: "Gripper Assembly"
             titlekr: "그리퍼 조립하기"
-            url: /dxl/x/xc430-w240bb/#gripper-assembly
-            urlkr: /dxl/x/xc430-w240bb/#그리퍼-조립하기
+            url: /dxl/x/xc430-t240bb/#gripper-assembly
+            urlkr: /dxl/x/xc430-t240bb/#그리퍼-조립하기
           - title: "Frame Combination"
             titlekr: "프레임 활용 하기"
-            url: /dxl/x/xc430-w240bb/#frame-combination
-            urlkr: /dxl/x/xc430-w240bb/#프레임-활용-하기
+            url: /dxl/x/xc430-t240bb/#frame-combination
+            urlkr: /dxl/x/xc430-t240bb/#프레임-활용-하기
           - title: "Custom Frame Assembly"
             titlekr: "기타 프레임 조립 예시"
-            url: /dxl/x/xc430-w240bb/#custom-frame-assembly
-            urlkr: /dxl/x/xc430-w240bb/#기타-프레임-조립-예시
+            url: /dxl/x/xc430-t240bb/#custom-frame-assembly
+            urlkr: /dxl/x/xc430-t240bb/#기타-프레임-조립-예시
   - title: "Reference"
     titlekr: "참고자료"
-    url: /dxl/x/xc430-w240bb/#reference
-    urlkr: /dxl/x/xc430-w240bb/#참고자료
+    url: /dxl/x/xc430-t240bb/#reference
+    urlkr: /dxl/x/xc430-t240bb/#참고자료
     children:
       - title: "What is the Profile"
         titlekr: "Profile"
-        url: /dxl/x/xc430-w240bb/#what-is-the-profile
-        urlkr: /dxl/x/xc430-w240bb/#profile
+        url: /dxl/x/xc430-t240bb/#what-is-the-profile
+        urlkr: /dxl/x/xc430-t240bb/#profile
       - title: "Certifications"
         titlekr: "인증 획득"
-        url: /dxl/x/xc430-w240bb/#certifications
-        urlkr: /dxl/x/xc430-w240bb/#인증-획득
+        url: /dxl/x/xc430-t240bb/#certifications
+        urlkr: /dxl/x/xc430-t240bb/#인증-획득
       - title: "Quick Start"
         titlekr: "퀵스타트"
-        url: /dxl/x/xc430-w240bb/#quick-start
-        urlkr: /dxl/x/xc430-w240bb/#퀵스타트
+        url: /dxl/x/xc430-t240bb/#quick-start
+        urlkr: /dxl/x/xc430-t240bb/#퀵스타트
       - title: "Connector Information"
         titlekr: "커넥터 정보"
-        url: /dxl/x/xc430-w240bb/#connector-information
-        urlkr: /dxl/x/xc430-w240bb/#커넥터-정보
+        url: /dxl/x/xc430-t240bb/#connector-information
+        urlkr: /dxl/x/xc430-t240bb/#커넥터-정보
       - title: "Communication Circuit"
         titlekr: "통신 회로"
-        url: /dxl/x/xc430-w240bb/#communication-circuit
-        urlkr: /dxl/x/xc430-w240bb/#통신-회로
+        url: /dxl/x/xc430-t240bb/#communication-circuit
+        urlkr: /dxl/x/xc430-t240bb/#통신-회로
       - title: "Drawings"
         titlekr: "도면"
-        url: /dxl/x/xc430-w240bb/#drawings
-        urlkr: /dxl/x/xc430-w240bb/#도면
+        url: /dxl/x/xc430-t240bb/#drawings
+        urlkr: /dxl/x/xc430-t240bb/#도면
       - title: "Moment of Inertia"
         titlekr: "Moment of Inertia"
-        url: /dxl/x/xc430-w240bb/#moment-of-inertia
-        urlkr: /dxl/x/xc430-w240bb/#moment-of-inertia
+        url: /dxl/x/xc430-t240bb/#moment-of-inertia
+        urlkr: /dxl/x/xc430-t240bb/#moment-of-inertia
 
 #2XL430-W250 sidebar
 2xl430-w250:
