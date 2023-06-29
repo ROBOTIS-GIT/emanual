@@ -81,7 +81,7 @@ sidebar:
 | **EX**           | [EX-106+]                                                    |                                   |                                |                                |                 |
 | **MX**           | [MX-12W]                                                     | [MX-28], [MX-28(2.0)]             | [MX-64], [MX-64(2.0)]          | [MX-106], [MX-106(2.0)]        |                 |
 | **XL**           | [XL320]                                                      | [XL330-M288]<br>[XL330-M077]      | [XL430-W250]                   | [2XL430-W250]                  |                 |
-| **XC**           | [XC330-T288]<br>[XC330-T181]<br>[XC330-M288]<br>[XC330-M181] | [XC430-W150]<br/> [XC430-W240]<br/>[XC430-W150BB]<br/> [XC430-W240BB]    | [2XC430-W250]                  |                                |                 |
+| **XC**           | [XC330-T288]<br>[XC330-T181]<br>[XC330-M288]<br>[XC330-M181] | [XC430-W150]<br/> [XC430-W240]<br/>[XC430-T150BB]<br/> [XC430-T240BB]    | [2XC430-W250]                  |                                |                 |
 | **XM**           | [XM430-W210]<br/> [XM430-W350]                               | [XM540-W150]<br/> [XM540-W270]    |                                |                                |                 |
 | **XH**           | [XH430-W210]<br/> [XH430-W350]                               | [XH430-V210]<br/> [XH430-V350]    | [XH540-W150]<br/> [XH540-W270] | [XH540-V150]<br/> [XH540-V270] |                 |
 | **XD**           | [XD430-T350-R]<br/>[XD430-T210-R]                            | [XD540-T270-R]<br/>[XD540-T150-R] |                                |                                |                 |
@@ -952,8 +952,8 @@ EEPROM 영역의 특정 데이터 (ID, Baudrate, Protocol Type)의 복구 여부
 [XW540-T260]: /docs/kr/dxl/x/xw540-t260/
 [XC430-W150]: /docs/kr/dxl/x/xc430-w150/
 [XC430-W240]: /docs/kr/dxl/x/xc430-w240/
-[XC430-W150BB]: /docs/kr/dxl/x/xc430-w150bb/
-[XC430-W240BB]: /docs/kr/dxl/x/xc430-w240bb/
+[XC430-T150BB]: /docs/kr/dxl/x/xc430-t150bb/
+[XC430-T240BB]: /docs/kr/dxl/x/xc430-t240bb/
 [H54-200-S500-R]: /docs/kr/dxl/pro/h54-200-s500-r/
 [H54-100-S500-R]: /docs/kr/dxl/pro/h54-100-s500-r/
 [H42-20-S300-R]: /docs/kr/dxl/pro/h42-20-s300-r/

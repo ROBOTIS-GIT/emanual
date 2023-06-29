@@ -29,7 +29,7 @@
   For more details, please refer to [Microsoft Instructions](https://ms-iot.github.io/ROSOnWindows/Turtlebot/Turtlebot3.html).
   ```
 > mkdir c:\ws\turtlebot3\src
-> cd c:\ws\turtlebot3\src
+> cd c:\ws\turtlebot3
 > curl -o tb3.repos https://raw.githubusercontent.com/ms-iot/ROSOnWindows/master/docs/Turtlebot/turtlebot3_ros1.repos
 > vcs import src < tb3.repos
   ```
