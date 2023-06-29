@@ -1995,6 +1995,8 @@ Return load. Unit is %
 [2XL430-W250]: /docs/en/dxl/x/2xl430-w250/
 [XC430-W150]: /docs/en/dxl/x/xc430-w150/
 [XC430-W240]: /docs/en/dxl/x/xc430-w240/
+[XC430-W150BB]: /docs/en/dxl/x/xc430-w150bb/
+[XC430-W240BB]: /docs/en/dxl/x/xc430-w240bb/
 [XM430-W210]: /docs/en/dxl/x/xm430-w210/
 [XM430-W350]: /docs/en/dxl/x/xm430-w350/
 [XH430-W210]: /docs/en/dxl/x/xh430-w210/
