@@ -104,7 +104,7 @@ You can use RViz or image_view to verify driver. You can select data topic name 
 
 ##### [Setup Raspberry Pi Camera](#setup-raspberry-pi-camera)
 
-**Warning!**: Raspberry pi must be installed before setting up the Raspberry Pi Camera V2. See [Raspberry Pi 3 Setup](/docs/en/platform/turtlebot3/raspberry_pi_3_setup/) in order to install it.
+**Warning!**: Below instruction uses raspi-config tool to setup Raspberry Pi Camera V2. See [Raspberry Pi Camera](https://www.raspberrypi.com/documentation/accessories/camera.html#installing-a-raspberry-pi-camera) for more details.
 {: .notice--warning}
 
 1. **[Raspberry Pi]** Setting up the camera hardware.
