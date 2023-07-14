@@ -52,7 +52,7 @@ mx-28:
   mcu:                *mcu
   encoder:            *encoder
   motor:              *motor
-  baudrate:           *baudrate
+  baudrate:           "7,834 [bps] ~ 3 [Mbps]"
   control:            *control
   resolution:         *resolution
   backlash:           *backlash
@@ -112,7 +112,7 @@ mx-64:
   mcu:                *mcu
   encoder:            *encoder
   motor:              *motor
-  baudrate:           *baudrate
+  baudrate:           "7,834 [bps] ~ 3 [Mbps]"
   control:            *control
   resolution:         *resolution
   backlash:           *backlash
@@ -172,7 +172,7 @@ mx-106:
   mcu:                *mcu
   encoder:            *encoder
   motor:              *motor
-  baudrate:           *baudrate
+  baudrate:           "7,834 [bps] ~ 3 [Mbps]"
   control:            *control
   resolution:         *resolution
   backlash:           *backlash

@@ -23,7 +23,7 @@ product_group: dxl_mx
 | MCU           | ARM CORTEX-M3 (72 [MHz], 32Bit)                                                                |
 | 위치 센서     | Contactless absolute encoder (12BIT, 360 [°])<br />Maker : ams (www.ams.com), Part No : AS5045 |
 | 모터          | Cored                                                                                          |
-| 통신속도      | 8,000 [bps] ~ 4.5 [Mbps]                                                                       |
+| 통신속도      | 7,834 [bps] ~ 3 [Mbps]                                                                 |
 | 제어 알고리즘 | PID CONTROL                                                                                    |
 | 해상도        | 4096 \[pulse/rev]                                                                              |
 | 동작 모드     | 관절 모드 (0 ~ 360 [°]) / 바퀴 모드 (무한 회전) /  다중회전모드                                |
