@@ -28174,7 +28174,7 @@ bt-430-dongle:
   - title: "BT-410 Dongle Setting"
     titlekr: "BT-430 동글 설정하기"
     # url: /parts/communication/bt-430-dongle/#bt-430-dongle-setting
-    urlkr: /parts/communication/bt-430-dongle/#bt-410-동글-설정하기
+    urlkr: /parts/communication/bt-430-dongle/#bt-430-동글-설정하기
   - title: "AT Commands"
     titlekr: "AT 명령어"
     # url: /parts/communication/bt-430-dongle/#at-commands

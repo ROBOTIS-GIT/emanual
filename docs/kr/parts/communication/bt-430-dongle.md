@@ -13,8 +13,9 @@ sidebar:
 
 # [개요](#개요)
 
-![img](/assets/images/parts/communication/bt-430_dongle_01.jpg)
-![img](/assets/images/parts/communication/bt-430_dongle_02.jpg)
+![img](/assets/images/parts/communication/bt-430_dongle_01.jpg){: width='200px'}  
+
+![img](/assets/images/parts/communication/bt-430_dongle_02.jpg){: width='200px'}
 
 > BT-430 동글
 
