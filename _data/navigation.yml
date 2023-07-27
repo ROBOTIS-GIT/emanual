@@ -659,8 +659,7 @@ main:
       - title: "BT-410 Dongle"
         titlekr: "BT-410 동글"
         url: /parts/communication/bt-410-dongle/
-      - title: "BT-430 Dongle"
-        titlekr: "BT-430 동글"
+      - titlekr: "BT-430 동글"
         url: /parts/communication/bt-430-dongle/
       - title: "*ZIG-100/110A"
         titlekr: "*ZIG-100/110A"
