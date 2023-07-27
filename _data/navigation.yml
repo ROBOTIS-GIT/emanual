@@ -659,6 +659,9 @@ main:
       - title: "BT-410 Dongle"
         titlekr: "BT-410 동글"
         url: /parts/communication/bt-410-dongle/
+      - title: "BT-430 Dongle"
+        titlekr: "BT-430 동글"
+        url: /parts/communication/bt-430-dongle/
       - title: "*ZIG-100/110A"
         titlekr: "*ZIG-100/110A"
         url: /parts/communication/zig-110/
@@ -28149,6 +28152,51 @@ bt-410-dongle:
       titlekr: "인증 획득"
       url: /parts/communication/bt-410-dongle/#certifications
       urlkr: /parts/communication/bt-410-dongle/#인증-획득
+
+#BT-430 Dongle sidebar
+bt-430-dongle:
+  - title: "Introduction"
+    titlekr: "개요"
+    # url: /parts/communication/bt-430-dongle/#introduction
+    urlkr: /parts/communication/bt-430-dongle/#개요
+  - title: "Specifications"
+    titlekr: "제품 사양"
+    # url: /parts/communication/bt-410-dongle/#specifications
+    urlkr: /parts/communication/bt-430-dongle/#제품-사양
+  - title: "Compatibility"
+    titlekr: "호환성"
+    # url: /parts/communication/bt-430-dongle/#compatibility
+    urlkr: /parts/communication/bt-430-dongle/#호환성
+  - title: "Communication Mode"
+    titlekr: "통신 모드"
+    # url: /parts/communication/bt-430-dongle/#communication-mode
+    urlkr: /parts/communication/bt-430-dongle/#통신-모드
+  - title: "BT-410 Dongle Setting"
+    titlekr: "BT-430 동글 설정하기"
+    # url: /parts/communication/bt-430-dongle/#bt-430-dongle-setting
+    urlkr: /parts/communication/bt-430-dongle/#bt-410-동글-설정하기
+  - title: "AT Commands"
+    titlekr: "AT 명령어"
+    # url: /parts/communication/bt-430-dongle/#at-commands
+    urlkr: /parts/communication/bt-430-dongle/#at-명령어
+  - title: "Check Driver"
+    titlekr: "드라이버 설치 확인방법"
+    # url: /parts/communication/bt-430-dongle/#check-driver
+    urlkr: /parts/communication/bt-430-dongle/#드라이버-설치-확인방법
+  - title: "Install Driver Manually"
+    titlekr: "드라이버 수동 설치"
+    # url: /parts/communication/bt-430-dongle/#install-driver-manually
+    urlkr: /parts/communication/bt-430-dongle/#드라이버-수동-설치
+  - title: "References"
+    titlekr: "참고자료"
+    # url: /parts/communication/bt-430-dongle/#references
+    urlkr: /parts/communication/bt-430-dongle/#참고자료
+    children:
+    - title: "Certifications"
+      titlekr: "인증 획득"
+      # url: /parts/communication/bt-430-dongle/#certifications
+      urlkr: /parts/communication/bt-430-dongle/#인증-획득
+
 
 #ZIG2Serial sidebar
 zig2serial:
