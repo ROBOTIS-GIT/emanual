@@ -392,11 +392,11 @@ OpenRB-150이 연결된 Port를 선택 후, `업로드` 버튼을 클릭하면 �
 
 # [다운로드](#다운로드)
 
-- OpenRB-150 BOM ([BOM](https://www.robotis.com/service/download.php?no=2166))
+- OpenRB-150 BOM ([BOM](https://www.robotis.com/service/download.php?no=2168))
 - OpenRB-150 회로도 ([PDF](https://www.robotis.com/service/download.php?no=2117))
 - OpenRB-150 2D 도면 ([PDF](https://www.robotis.com/service/download.php?no=2120), [DWG](https://www.robotis.com/service/download.php?no=2119))
 - OpenRB-150 3D 모델링 파일 ([STL](https://www.robotis.com/service/download.php?no=2118), [STEP](https://www.robotis.com/service/download.php?no=2121))
-- OpenRB-150 거버 ([GBR](https://www.robotis.com/service/download.php?no=2165))
+- OpenRB-150 거버 ([GBR](https://www.robotis.com/service/download.php?no=2167))
 - OpenRB-150 보드 매니저 ([GitHub Repo](https://github.com/ROBOTIS-GIT/OpenRB-150))
 - DYNAMIXEL2Arduino 라이브러리 ([GitHub Repo](https://github.com/ROBOTIS-GIT/Dynamixel2Arduino))
 
