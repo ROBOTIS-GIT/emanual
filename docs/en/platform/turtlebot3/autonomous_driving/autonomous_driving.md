@@ -30,115 +30,117 @@ page_number: 19
 # [Autonomous Driving](#autonomous-driving)
 
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
-**NOTE**: TurtleBot3 Autorace is supported in ROS Kinetic and Noetic. 
-{: .notice}
+**NOTE**: TurtleBot3 Autorace is only officially supported in ROS Kinetic and Noetic
+{: .notice--warning}
 </section>
 
 <section data-id="{{ page.tab_title4 }}" class="tab_contents">
-**NOTE**: TurtleBot3 Autorace is supported in ROS Kinetic and Noetic. 
-{: .notice}
+**NOTE**: TurtleBot3 Autorace is only officially supported in ROS Kinetic and Noetic
+{: .notice--warning}
 </section>
 
 <section data-id="{{ page.tab_title5 }}" class="tab_contents">
-**NOTE**: TurtleBot3 Autorace is supported in ROS Kinetic and Noetic. 
-{: .notice}
+**NOTE**: TurtleBot3 Autorace is only officially supported in ROS Kinetic and Noetic
+{: .notice--warning}
 </section>
 
 <section data-id="{{ page.tab_title6 }}" class="tab_contents">
-**NOTE**: TurtleBot3 Autorace is supported in ROS Kinetic and Noetic. 
-{: .notice}
+**NOTE**: TurtleBot3 Autorace is only officially supported in ROS Kinetic and Noetic
+{: .notice--warning}
 </section>
 
 <section data-id="{{ page.tab_title7 }}" class="tab_contents">
-**NOTE**: TurtleBot3 Autorace is supported in ROS Kinetic and Noetic. 
-{: .notice}
+**NOTE**: TurtleBot3 Autorace is only officially supported in ROS Kinetic and Noetic
+{: .notice--warning}
 </section>
 
-## Getting Started
-
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
+## Getting Started
 {% include en/platform/turtlebot3/autonomous_driving/kinetic/autonomous_driving_getting_started_kinetic.md %}
 </section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
+## Getting Started
 {% include en/platform/turtlebot3/autonomous_driving/noetic/autonomous_driving_sim_getting_started_noetic.md %}
 </section>
 
-## [Camera Calibration](#camera-calibration)
 
 <!-- Camera Calli -->
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
+## [Camera Calibration](#camera-calibration)
 Calibrating the camera is very important for autonomous driving. The following describes how to simply calibrate the camera step by step.
 </section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
+## [Camera Calibration](#camera-calibration)
 Calibrating the camera is very important for autonomous driving. The following describes how to simply calibrate the camera step by step.
 </section>
 
-### [Camera Imaging Calibration](#camera-imaging-calibration)
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
+### [Camera Imaging Calibration](#camera-imaging-calibration)
 {% include en/platform/turtlebot3/autonomous_driving/kinetic/autonomous_driving_camera_imaging_calibration_kinetic.md %}
 </section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
+### [Camera Imaging Calibration](#camera-imaging-calibration)
 {% include en/platform/turtlebot3/autonomous_driving/noetic/autonomous_driving_sim_camera_imaging_calibration_noetic.md %}
 </section>
 
-### [Intrinsic Camera Calibration](#intrinsic-camera-calibration)
-
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
+### [Intrinsic Camera Calibration](#intrinsic-camera-calibration)
 {% include en/platform/turtlebot3/autonomous_driving/kinetic/autonomous_driving_intrinsic_camera_calibration_kinetic.md %}
 </section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
+### [Intrinsic Camera Calibration](#intrinsic-camera-calibration)
 {% include en/platform/turtlebot3/autonomous_driving/noetic/autonomous_driving_sim_intrinsic_camera_calibration_noetic.md %}
 </section>
 
-### [Extrinsic Camera Calibration](#extrinsic-camera-calibration)
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
+### [Extrinsic Camera Calibration](#extrinsic-camera-calibration)
 {% include en/platform/turtlebot3/autonomous_driving/kinetic/autonomous_driving_extrinsic_camera_calibration_kinetic.md  %}
 </section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
+### [Extrinsic Camera Calibration](#extrinsic-camera-calibration)
 {% include en/platform/turtlebot3/autonomous_driving/noetic/autonomous_driving_sim_extrinsic_camera_calibration_noetic.md %}
 </section>
 
-### [Check Calibration Result](#check-calibration-result)
-
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
+### [Check Calibration Result](#check-calibration-result)
 {% include en/platform/turtlebot3/autonomous_driving/kinetic/autonomous_driving_check_calibration_result_kinetic.md %}
 </section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
+### [Check Calibration Result](#check-calibration-result)
 {% include en/platform/turtlebot3/autonomous_driving/noetic/autonomous_driving_sim_check_calibration_result_noetic.md %}
 </section>
 
-## [Lane Detection](#lane-detection)
-
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
+## [Lane Detection](#lane-detection)
 {% include en/platform/turtlebot3/autonomous_driving/kinetic/autonomous_driving_lane_detection_kinetic.md  %}
 </section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
+## [Lane Detection](#lane-detection)
 {% include en/platform/turtlebot3/autonomous_driving/noetic/autonomous_driving_sim_lane_detection_noetic.md %}
 </section>
 
-## [Traffic Sign Detection](#traffic-sign-detection)
-
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
+## [Traffic Sign Detection](#traffic-sign-detection)
 {% include en/platform/turtlebot3/autonomous_driving/kinetic/autonomous_driving_traffic_sign_detection_kinetic.md %}
 </section> 
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
+## [Traffic Sign Detection](#traffic-sign-detection)
 {% include en/platform/turtlebot3/autonomous_driving/noetic/autonomous_driving_sim_traffic_sign_detection_noetic.md %}
 </section> 
 
-## [Missions](#missions)
-
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
+## [Missions](#missions)
 
 The AutoRace is a competition for autonomous driving robot platforms.  
 To provide various conditions for a robot application development, the game provide structural regulation as less as possible. Provided open sources are based on ROS, and can be applied to this competition. The contents can be continually updated. Join the competition and show your skill.
@@ -149,6 +151,7 @@ To provide various conditions for a robot application development, the game prov
 </section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
+## [Missions](#missions)
 
 The AutoRace is a competition for autonomous driving robot platforms.  
 To provide various conditions for a robot application development, the game provide structural regulation as less as possible. Provided open sources are based on ROS, and can be applied to this competition. The contents can be continually updated. Join the competition and show your skill.
@@ -157,62 +160,62 @@ To provide various conditions for a robot application development, the game prov
 {: .notice--warning}
 </section>
 
-### [Traffic Lights](#traffic-lights)
-
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
+### [Traffic Lights](#traffic-lights)
 {% include en/platform/turtlebot3/autonomous_driving/kinetic/autonomous_driving_traffic_lights_kinetic.md  %} 
 </section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
+### [Traffic Lights](#traffic-lights)
 {% include en/platform/turtlebot3/autonomous_driving/noetic/autonomous_driving_sim_traffic_lights_noetic.md %}
 </section>
 
-### [Intersection](#intersection)
-
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
+### [Intersection](#intersection)
 {% include en/platform/turtlebot3/autonomous_driving/kinetic/autonomous_driving_intersection_kinetic.md  %}
 </section> 
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
+### [Intersection](#intersection)
 {% include en/platform/turtlebot3/autonomous_driving/noetic/autonomous_driving_sim_intersection_noetic.md %}
 </section>
 
-### [Construction](#construction)
-
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
+### [Construction](#construction)
 {% include en/platform/turtlebot3/autonomous_driving/kinetic/autonomous_driving_construction_kinetic.md  %}
 </section> 
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
+### [Construction](#construction)
 {% include en/platform/turtlebot3/autonomous_driving/noetic/autonomous_driving_sim_construction_noetic.md %}
 </section>
 
-### [Parking](#parking)
-
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
+### [Parking](#parking)
 {% include en/platform/turtlebot3/autonomous_driving/kinetic/autonomous_driving_parking_kinetic.md  %}
 </section> 
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
+### [Parking](#parking)
 {% include en/platform/turtlebot3/autonomous_driving/noetic/autonomous_driving_sim_parking_noetic.md %}
 </section>
 
-### [Level Crossing](#level-crossing)
-
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
+### [Level Crossing](#level-crossing)
 {% include en/platform/turtlebot3/autonomous_driving/kinetic/autonomous_driving_level_crossing_kinetic.md  %}
 </section> 
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
+### [Level Crossing](#level-crossing)
 {% include en/platform/turtlebot3/autonomous_driving/noetic/autonomous_driving_sim_level_crossing_noetic.md %}
 </section>
 
-### [Tunnel](#tunnel)
-
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
+### [Tunnel](#tunnel)
 {% include en/platform/turtlebot3/autonomous_driving/kinetic/autonomous_driving_tunnel_kinetic.md  %}
 </section> 
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
+### [Tunnel](#tunnel)
 {% include en/platform/turtlebot3/autonomous_driving/noetic/autonomous_driving_sim_tunnel_noetic.md %}
 </section>
