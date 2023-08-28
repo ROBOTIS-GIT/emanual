@@ -94,3 +94,4 @@ In order to check the topics of TurtleBot3, we will use [rqt][rqt] provided by R
 [teleoperation]: /docs/en/platform/turtlebot3/teleoperation/
 [basic_examples]: /docs/en/platform/turtlebot3/basic_examples/
 [additional_sensors]: /docs/en/platform/turtlebot3/additional_sensors/
+[appendix_opencr1_0]: /docs/en/platform/turtlebot3/appendix_opencr1_0/

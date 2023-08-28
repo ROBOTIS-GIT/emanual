@@ -121,3 +121,4 @@ $ rqt
 [rqt]: http://wiki.ros.org/rqt
 [rc100]: /docs/en/parts/communication/rc-100/
 [bt410]: /docs/en/parts/communication/bt-410/
+[appendix_opencr1_0]: /docs/en/platform/turtlebot3/appendix_opencr1_0/

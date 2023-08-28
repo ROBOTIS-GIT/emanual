@@ -206,3 +206,4 @@ The Windows implementation of the Joystick control uses the [Open Source Simple 
 [ros_control]: https://play.google.com/store/apps/details?id=com.robotca.ControlApp
 [leap_setup]: https://www.leapmotion.com/setup
 [leap_sdk]: https://developer.leapmotion.com/get-started/
+[appendix_opencr1_0]: /docs/en/platform/turtlebot3/appendix_opencr1_0/
