@@ -13,8 +13,11 @@ sidebar:
 
 # [개요](#개요)
 
+다이나믹셀을 제어하기 위해서는 다이나믹셀의 프로토콜에 맞추어 통신을 해야 합니다.  
+다이나믹셀은 binary 형태의 데이터를 받아 구동됩니다. 이러한 데이터를 전송하기 위한 프로그램 예제는 다이나믹셀 전용 Controller 또는 USB2DYNAMIXEL, U2D2 의 사용자 설명서에 자세히 기술되어 있습니다. 따라서 본 다이나믹셀의 사용자 설명서에서는 Main controller 가binary 형태의 데이터를 전송할 수 있다는 가정하에 다이나믹셀에서 사용하는 통신 방식에 대한 설명과 통신 프로토콜에 대한 설명만을 기술하였습니다
+
 - 다이나믹셀 프로토콜 2.0을 지원하는 다이나믹셀: MX-28(2.0), MX-64(2.0), MX-106(2.0), X 시리즈 (2X 시리즈 포함), PRO 시리즈, P 시리즈.
-- 다이나믹셀 프로토콜 2.0을 지원하는 제어기: CM-50, CM-150, CM-200, OpenCM7.0, OpenCM9.04, CM-550, OpenCR
+- 다이나믹셀 프로토콜 2.0을 지원하는 제어기: CM-50, CM-150, CM-200, OpenCM7.0, OpenCM9.04, CM-550, OpenCR, OpenRB-150
 - 다이나믹셀 프로토콜 2.0을 지원하는 소프트웨어: 로보플러스 스마트 앱, 로보플러스 2.0, 로보플러스 3.0, 다이나믹셀 위자드 2.0
 
 **참고**: [다이나믹셀 프로토콜 호환표](/docs/kr/popup/faq_protocol_compatibility_table/){: .popup} 참고.
@@ -22,6 +25,86 @@ sidebar:
 
 **참고**: MX(2.0)은 프로토콜 2.0을 지원하는 MX 시리즈의 별도 펌웨어를 의미함. DYNAMIXEL Wizard2.0의 [펌웨어 복구](/docs/kr/software/dynamixel/dynamixel_wizard2/#펌웨어-복구) 기능을 활용하여 MX(2.0) 펌웨어로 업그레이드 가능. 
 {: .notice}
+
+## [Packet](#packet)
+
+Main Controller와 다이나믹셀은 Packet이라고 불리는 데이터를 주고 받으며 통신합니다. Packet에는 두 가지 종류가 있습니다. Main Controller가 다이나믹셀을 제어하기 위해 전송하는 Instruction Packet과 다이나믹셀이 Main Controller로 답변하는 Status Packet이 그것입니다.
+
+## [ID](#id)
+
+ID는 한 개의 버스에 여러 개의 다이나믹셀이 연결되었을 때 각각의 다이나믹셀들을 구별하기 위해 만든 고유 번호입니다.
+Instruction Packet과 Status Packet에 ID를 넣음으로써 Main Controller는 제어하고자 하는 다이나믹셀만을 제어할 수 있습니다.
+
+## [DYNAMIXEL Protocol](#dynamixel-protocol)
+
+다이나믹셀은 8 bit, 1 Stop bit, None Parity의 Asynchronous Serial 통신을 합니다.
+
+만약 같은 ID 를 가진 다이나믹셀이 연결되었을 경우 Packet 충돌이 일어나서 통신에 문제를 일으키게 됩니다.
+그러므로 ID가 같은 다이나믹셀이 존재하지 않도록 ID설정을 해야 합니다. ID 설정을 위해서는, 다이나믹셀 위자드 2.0에서 [컨트롤 테이블](/docs/kr/software/dynamixel/dynamixel_wizard2/#다이나믹셀-컨트롤-테이블)을 참고 하세요.
+
+**참고** : 다이나믹셀은 공장출하시, 초기 ID는 1번 입니다.
+{: .notice}
+
+## [Half Duplex](#half-duplex)
+
+Half Duplex란 TxD, RxD를 하나의 선으로 공유하는 통신 방식으로 다이나믹셀은 Half Duplex 방식을 사용하고 있습니다.
+보통 하나의 BUS에 여러 개의 통신 장치를 연결할 경우에 사용합니다.
+여러 개의 장치가 송신하는 동안 그 외의 다른 모든 장치들은 입력 상태이어야 하기 때문에 통신 방향을 제어하는 Direction Port가 필요합니다.
+다이나믹셀을 제어하는 Main Controller는 통신 방향을 입력으로 설정해 놓고 있다가 Instructon Packet을 전송하는 동안만 통신 방향을 출력으로 설정해야 합니다.
+
+![](/assets/images/dxl/halfduplex.png)
+
+## [Tx, Rx Direction](#tx-rx-direction)
+
+Half Duplex 통신 방식을 사용하기 위해 필요한 제어 방법입니다.
+RS485 UART 에서는 송신이 끝나는 Timing 을 잘 맞춰서 Direction 을 수신 Mode 로 바꾸어야 합니다.
+CPU 에서는 일반적으로 UART_STATUS 를 표시해주는 REGISTER 내에 다음과 같은 의미의 BIT 가 있습니다.
+
+- **TXD_BUFFER_READY_BIT**: Transmission DATA 를 Buffer 에 적재할 수 있는 상태임을 뜻합니다. 상태는 SERIAL TX BUFFER 가 비어 있다는 의미이지, 이전에 전송한 데이터가 모두 CPU 밖으로 배출된 상태를 의미하는 것은 아닙니다.
+- **TXD_SHIFT_REGISTER_EMPTY_BIT**: Transmission Data 가 모두 CPU 밖으로 배출되었을 때 SET 됩니다.
+
+
+TXD_BUFFER_READY_BIT 의 경우는 Serial 통신에서 한 Byte 를 송신할 때 사용되며 그 예는 다음과 같습니다.
+
+```c
+TxDByte(byte bData)
+{
+  while(!TXD_BUFFER_READY_BIT); //wait until data can be loaded.
+  SerialTxDBuffer = bData; //data load to TxD buffer
+}
+```
+
+Direction을 전환하는 시점에서는 TXD_SHIFT_REGISTER_EMPTY_BIT를 확인해야 합니다. 다음은 Instruction packet을 전송하는 예제 프로그램입니다.
+
+```c
+1  DIRECTION_PORT = TX_DIRECTION;
+2  TxDByte(0xff);
+3  TxDByte(0xff);
+4  TxDByte(0xfd);
+5  TxDByte(0x00);
+6  TxDByte(bID);
+7  TxDByte(bLengthLow);
+8  TxDByte(bLengthHigh);
+9  TxDByte(bInstruction);
+10  TxDByte(Parameter0); TxDByte(Parameter1); ...
+11  TxDByte(bCrcLow);
+12  DisableInterrupt(); // interrupt should be disable
+13  TxDByte(bCrcHigh);  // last TxD
+14  while(!TXD_SHIFT_REGISTER_EMPTY_BIT); // Wait till last data bit has been sent
+15  DIRECTION_PORT = RX_DIRECTION; // Direction change to RXD
+16  EnableInterrupt(); // enable interrupt again
+
+```
+
+**주의**: 주의할 부분은 LINE 12부터 LINE 16입니다. LINE 12이 필요한 이유는 그 시점에서 Interrupt 가 발생하여 Return Delay Time 보다 긴 시간 동안 Interrupt routine이 수행될 경우 Status Packet의 앞부분이 손상되기 때문입니다.
+{: .notice--warning}
+
+## [Byte to Byte Time](#byte-to-byte-time)
+
+Instruction Packet을 전송할 때 Byte와 Byte사이의 Delay Time을 의미하는데, 이 시간이 1.5 msec가 넘을 경우 다이나믹셀은 전송 장해가 발생한 것으로 간주하고, 다시 Packet의 header(0xff 0xff 0xfd)를 기다립니다
+
+![](/assets/images/dxl/protocol2/protocol20_BytetoByteTime.png)
+
 
 # [Instruction Packet](#instruction-packet)
 Instruction Packet은 Main Controller가 장치(Device)로 보내는 명령 패킷. 
