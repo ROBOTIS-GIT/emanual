@@ -49,8 +49,7 @@
 ![](/assets/images/icon_warning.png)  
 **ATTENTION**  
 (May cause injury or damage to product)
-{% if page.product_group=='dxl_xw540' or page.product_group=='dxl_xw430' %} - Comply with the operating environment. (Depth 1 m, 24 hr in normal fresh water) {% endif %}
-
+{% if page.product_group=='dxl_xw540' or page.product_group=='dxl_xw430' %} - Comply with the operating environment. (Depth 1 m, 24 hr in normal fresh water){else} - Comply with the operating environment such as Operating Temperature, Input Voltage from Specifications. {% endif %}
 - Do not disassemble or modify product.
 - Do not drop or apply strong shock to product.
 {% if page.product_group== 'xl330' or page.ref == 'xc330-m181' or page.ref == 'xc330-m288' %}
