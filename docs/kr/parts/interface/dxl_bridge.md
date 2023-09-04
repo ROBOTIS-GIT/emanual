@@ -42,6 +42,8 @@ sidebar:
 | 허용 전류 | 3.0 A          |
 | 통신 속도 | 최대 6 Mbps    |
 
+{% include kr/dxl/warning.md %}
+
 # [각 부 명칭](#각-부-명칭)
 
 ![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_layout_front_kr.png){: width='600px'}

@@ -47,8 +47,9 @@ Unlike the U2D2, the DYNAMIXEL Communication Bridge features a signal conversion
 | Current Raiting   | 3.0 A          |
 | Baud Rate         | Max 6 Mbps     |
 
-# [Layout](#layout)
+{% include en/dxl/warning.md %}
 
+# [Layout](#layout)
 
 ![](/assets/images/parts/interface/dxl_bridge/dxl_bridge_layout_front.png){: width='600px'}  
 

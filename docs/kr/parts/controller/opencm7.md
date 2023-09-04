@@ -33,6 +33,8 @@ sidebar:
 | 내부 I/O장치  | 마이크(소리 감지용) × 1<br>버저(Buzzer) × 1<br>LED × 3 (R / G / B)<br>사용자 입력버튼 × 1                        |
 | 외부 I/O 장치 | 4핀 통신 포트(무선 조종 및 다운로드용) × 1<br>모터 연결 포트(감속 모터용) × 2<br>다목적 포트(센서 및 출력용) × 4 |
 
+{% include kr/dxl/warning.md %}
+
 # [각 부 명칭](#각-부-명칭)
 
 ![](/assets/images/parts/controller/opencm7/r+iot_46.jpg)

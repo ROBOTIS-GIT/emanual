@@ -55,6 +55,8 @@ Please refer to [DYNAMIXEL Shield Libraries](#dynamixel-shield-libraries) sectio
 <sup>3</sup> The battery connector is compatible with ROBOTIS batteries [LB-010](http://en.robotis.com/shop_en/item.php?it_id=903-0143-000) or [LB-020](http://en.robotis.com/shop_en/item.php?it_id=903-0277-000).
 {: .notice}
 
+{% include en/dxl/warning.md %}
+
 ## [Supported DYNAMIXEL](#supported-dynamixel)
 
 DYNAMIXEL Shield MKR only supports `TTL` based DYNAMIXEL lineups.
