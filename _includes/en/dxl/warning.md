@@ -39,8 +39,7 @@
 ![](/assets/images/icon_warning.png)  
 **CAUTION**  
 (May cause injury or damage to product)
-
-- Do not operate the product at a temperature exceeding {{ site.data[target_file][page.ref].temperature }} range.
+{% if page.product_group=='dxl_xw540' or page.product_group=='dxl_xw430' %} - Comply with the operating environment. (Depth 1 m, 24 hr in normal fresh water){%else%} - Comply with the operating environment such as voltage, and temperature. {% endif %}
 - Do not insert sharp blades nor pins during product operation.
 {% endcapture %}
 <div class="notice--warning">{{ dxl_caution | markdownify }}</div>
@@ -49,7 +48,6 @@
 ![](/assets/images/icon_warning.png)  
 **ATTENTION**  
 (May cause injury or damage to product)
-{% if page.product_group=='dxl_xw540' or page.product_group=='dxl_xw430' %} - Comply with the operating environment. (Depth 1 m, 24 hr in normal fresh water){else} - Comply with the operating environment such as Operating Temperature, Input Voltage from Specifications. {% endif %}
 - Do not disassemble or modify product.
 - Do not drop or apply strong shock to product.
 {% if page.product_group== 'xl330' or page.ref == 'xc330-m181' or page.ref == 'xc330-m288' %}
