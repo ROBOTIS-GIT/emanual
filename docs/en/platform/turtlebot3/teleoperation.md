@@ -85,6 +85,12 @@ The settings for [ROBOTIS RC-100B][rc100] controller is included in the OpenCR f
 
 ![](/assets/images/platform/turtlebot3/example/rc100b_with_bt410.png)
 
+1. Connect BT-410 to OpenCR UART1 port (as described [here][appendix_opencr1_0]).
+
+2. Control TurtleBot3 with RC-100.
+  - Up / Down : Increase or decrease linear velocity
+  - Left / Right : Increase or decrease angular velocity
+
 ## [PS3 Joystick](#ps3-joystick)
 
 **[Remote PC]** Connect PS3 Joystick to the remote PC via Bluetooth or with USB cable.
@@ -200,3 +206,4 @@ The Windows implementation of the Joystick control uses the [Open Source Simple 
 [ros_control]: https://play.google.com/store/apps/details?id=com.robotca.ControlApp
 [leap_setup]: https://www.leapmotion.com/setup
 [leap_sdk]: https://developer.leapmotion.com/get-started/
+[appendix_opencr1_0]: /docs/en/platform/turtlebot3/appendix_opencr1_0/

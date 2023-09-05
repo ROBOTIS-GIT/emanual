@@ -37,11 +37,11 @@ CTRL-C to quit
 
 #### [RC100](#rc100)
 
-The settings for [ROBOTIS RC-100B][rc100] controller is included in the OpenCR firmware for TurtleBot3 Burger, Waffle and Waffle Pi. This controller can be used with the Bluetooth module [BT410][bt410]. The TurtleBot3 Waffle Pi includes the RC-100 controller and Bluetooth modules. When using RC-100, it is not necessary to execute a specific node because `turtlebot_core` node creates a `/cmd_vel` topic in the firmware directly connected to OpeCR.
+The settings for [ROBOTIS RC-100B][rc100] controller is included in the OpenCR firmware for TurtleBot3 Burger, Waffle and Waffle Pi. This controller can be used with the Bluetooth module [BT410][bt410]. The TurtleBot3 Waffle Pi includes the RC-100 controller and Bluetooth modules. When using RC-100, it is not necessary to execute a specific node because `turtlebot_core` node creates a `/cmd_vel` topic in the firmware directly connected to OpenCR.
 
 ![](/assets/images/platform/turtlebot3/example/rc100b_with_bt410.png)
 
-1. Connect BT-410 to any of OpenCR UART ports.
+1. Connect BT-410 to OpenCR UART1 port (as described [here][appendix_opencr1_0]).
 
 2. Control TurtleBot3 with RC-100.
   - Up / Down : Increase or decrease linear velocity
@@ -94,3 +94,4 @@ In order to check the topics of TurtleBot3, we will use [rqt][rqt] provided by R
 [teleoperation]: /docs/en/platform/turtlebot3/teleoperation/
 [basic_examples]: /docs/en/platform/turtlebot3/basic_examples/
 [additional_sensors]: /docs/en/platform/turtlebot3/additional_sensors/
+[appendix_opencr1_0]: /docs/en/platform/turtlebot3/appendix_opencr1_0/
