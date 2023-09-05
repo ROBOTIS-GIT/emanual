@@ -40,7 +40,7 @@
 ![](/assets/images/icon_warning.png)  
 **경고**  
 (상해나 제품 손상의 원인이 됩니다.)
-- {% if page.product_group=='dxl_xw540' or page.product_group=='dxl_xw430' %} 제품의 사용 환경을 준수하세요. (IP68, 담수에서 수심 1 m, 24 hr) {% elsif page.product_group=='opencm904' or page.product_group=='ln-101' or page.product_group=='u2d2' or page.product_group=='u2d2_power_hub' or page.product_group=='dynamixel_shield' %}{% else %} 제품의 사용 환경을 준수하세요. (전압, 온도 등){% endif %}
+- {% if page.product_group=='dxl_xw540' or page.product_group=='dxl_xw430' %} 제품의 사용 환경을 준수하세요. (IP68, 담수에서 수심 1 m, 24 hr) {% elsif page.product_group=='opencm904' or page.product_group=='ln-101' or page.product_group=='u2d2' or page.product_group=='u2d2_power_hub' or page.product_group=='dynamixel_shield' or page.product_group=='cm-50' or page.product_group=='openrb-150' or page.product_group=='opencm485exp' %} 제품의 사용 환경을 준수하세요. {% else %} 제품의 사용 환경을 준수하세요. (전압, 온도 등){% endif %}
 - 작동 중인 제품 내부로 칼날, 압정, 불씨 등을 흡입시키지 마세요.
 {% endcapture %}
 <div class="notice--warning">{{ dxl_caution | markdownify }}</div>

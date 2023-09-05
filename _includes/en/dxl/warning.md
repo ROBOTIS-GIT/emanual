@@ -39,7 +39,7 @@
 ![](/assets/images/icon_warning.png)  
 **CAUTION**  
 (May cause injury or damage to product)
-{% if page.product_group=='dxl_xw540' or page.product_group=='dxl_xw430' %} - Comply with the operating environment. (Depth 1 m, 24 hr in normal fresh water) {% elsif page.product_group=='opencm904' or page.product_group=='ln-101' or page.product_group=='u2d2' or page.product_group=='u2d2_power_hub' or page.product_group=='dynamixel_shield' %}{% else %} - Comply with the operating environment. {% else %} - Comply with the operating environment such as voltage and temperature. {% endif %}
+{% if page.product_group=='dxl_xw540' or page.product_group=='dxl_xw430' %} - Comply with the operating environment. (Depth 1 m, 24 hr in normal fresh water) {% elsif page.product_group=='opencm904' or page.product_group=='ln-101' or page.product_group=='u2d2' or page.product_group=='u2d2_power_hub' or page.product_group=='dynamixel_shield' or page.product_group=='cm-50' or page.product_group=='openrb-150' or page.product_group=='opencm485exp' %} {% else %} - Comply with the operating environment such as voltage and temperature. {% endif %}
 - Do not insert sharp blades nor pins during product operation.
 {% endcapture %}
 <div class="notice--warning">{{ dxl_caution | markdownify }}</div>
