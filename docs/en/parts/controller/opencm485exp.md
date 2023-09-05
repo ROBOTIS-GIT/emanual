@@ -36,6 +36,8 @@ sidebar:
 |    Serial3 RX     |     Header Pin #25      |
 | Direction Control |     Header Pin #22      |
 
+{% include kr/dxl/warning.md %}
+
 # [Layout](#layout)
 
 ![](/assets/images/parts/controller/opencm904/opencm485exp_01.jpg)

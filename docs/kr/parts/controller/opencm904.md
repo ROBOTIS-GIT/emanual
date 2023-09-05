@@ -64,7 +64,6 @@ sidebar:
 |          크기           |          27mm x 66.5mm          |
 
 {% capture opencm904_caution_01 %}
-**경고**:
 - USB전원으로는 다이나믹셀을 구동할 수 없습니다. 별도의 전원을 공급해주세요.  
   (OpenCM9.04 는 USB나 배터리 또는 + - 터미널 중에 하나 이상의 전원이 공급되면 동작합니다.)
 - 별도의 전원공급시 연결되는 주변장치의 동작전압을 확인해주세요. 제어기에 입력된 전압이 다이나믹셀에 바로 공급됩니다.
@@ -73,6 +72,7 @@ sidebar:
 
 <div class="notice--danger">{{ opencm904_caution_01 | markdownify }}</div>
 
+{% include kr/dxl/warning.md %}
 
 # [컨트롤 테이블](#컨트롤-테이블)
 

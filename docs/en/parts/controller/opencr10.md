@@ -50,6 +50,8 @@ The development environment for OpenCR1.0 is wide open from Arduino IDE and Scra
 **NOTE** : Hot swap power switch between "shore power"(12V, 4.5A SMPS) and "mobile power"(battery) from OpenCR1.0 board enables UPS(Uninterrupted Power Supply) feature.
 {: .notice}
 
+{% include en/dxl/warning.md %}
+
 # [Layout/Pin Map](#layoutpin-map)
 
 ![](/assets/images/parts/controller/opencr10/opencr_pinout.png)
