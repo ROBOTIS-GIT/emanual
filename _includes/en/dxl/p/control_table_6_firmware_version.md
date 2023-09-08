@@ -1,1 +1,1 @@
-This address stores the firmware version of the DYNAMIXEL.
+This address stores the version number of the firmware installed on your DYNAMIXEL actuator.
