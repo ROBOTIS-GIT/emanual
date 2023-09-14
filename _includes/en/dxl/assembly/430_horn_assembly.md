@@ -1,29 +1,29 @@
 
 ### [Normal Horn Assembly](#normal-horn-assembly)
 
-A normal horn is the standard horn for the DYNAMIXEL X540 series. The normal horn can be assembled to the output shaft wheel gear of a front case of DYNAMIXEL, and it can be used to connect DYNAMIXEL with frames. 
+The standard DYNAMIXEL output horn is assembled by attaching it to the output shaft located on the front casing of the DYNAMIXEL servo, and is used to connect the actuator's output to frames and other accessories.
 
 ![Horn_Assembly](/assets/images/dxl/x/assembly/x430/hn12-n101_assembly.png)
 
-**WARNNING**: Be sure to align the thrust washer properly with the output shaft. Otherwise, the thrust washer can be damaged by the assembled horn.  
+**WARNING**: Be sure to properly align the thrust washer with the output shaft or the thrust washer may be damaged by the assembled horn.
   ![HowTo_Thrust_Washer](/assets/images/dxl/x/assembly/common/thrust_washer_02.png)
 {: .notice--warning}
 
-**NOTE**: Note that the position of align mark of the horn should be lined to the position of the align mark of the output shaft in assembly.  
+**NOTE**: Ensure that the indexing mark on the output horn is aligned with the index marking on the output shaft.<br>
   ![Horn_Marking](/assets/images/dxl/x/assembly/common/horn_assembly_marking.png)
 {: .notice}
 
 ### [Idler Horn Assembly](#idler-horn-assembly)
 
-The idler horn can be used for an hinge frame assembly with the DYNAMIXEL normal horn. 
+An idler horn is required in addition to a DYNAMIXEL's output horn for installation of hinge frame accessories.
 
-Additionally, utilizing the hole of the idler horn provides a neat cable wiring solution. Click the ![](/assets/images/icon_unfold.png) note below for how-to. 
+Additionally, the hollow shaft of an installed idler horn provides a neat cable wiring solution.
 
 ![HowTo_Idler_Assembly](/assets/images/dxl/x/assembly/common/idler_assembly.png)
 
 <details>
 <summary>
-![](/assets/images/icon_unfold.png) **Find Cable Wiring Throuh a Back Case Here**  
+![](/assets/images/icon_unfold.png) **Hollow Shaft cable passthrough information**  
 </summary>
 
 ![](/assets/images/dxl/x/wiring_through_back_case.jpg)
@@ -33,6 +33,6 @@ Additionally, utilizing the hole of the idler horn provides a neat cable wiring 
 
 #### [Idler Horn Disassembly](#idler-horn-disassembly)
 
-To disassemble the attached idler horn, push the button located on the reverse side of a back case and pull a hook to disconnect.
+To remove an attached idler horn, push the button located on the reverse side of the back case and gently lift the side hooks to disengage the idler.
 
 ![HowTo_Idler_Disassembly](/assets/images/dxl/x/assembly/common/idler_disassably.png)

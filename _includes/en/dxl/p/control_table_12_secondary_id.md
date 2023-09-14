@@ -1,33 +1,33 @@
-Set Secondary ID(12) of an unit. 
+Configure the secondary ID of your DYNAMIXEL servo.
 
-Unlike ID(7) which should not overlap with other DYNAMIXELs', Secondary ID(12) can share the same ID to group DYNAMIXELs, and to synchronize the movement of units. 
+Unlike the primary ID(7) overlapping Secondary ID(12) settings are allowed, allowing simple synchronization of multiple DYNAMIXEL actuators.
 
-The differences between Secondary ID(12) and ID(7) are as follows :
-1. Secondary ID(12) is not a unique value. i.e., devices can have the same Secondary ID.
-2. ID(7) has a greater priority than the Secondary ID(12). If Secondary ID(12) and ID(7) are the same, ID(7) will be applied first.
-3. The EEPROM area of the Control Table cannot be modified using Secondary ID(12). With Secondary ID, the RAM area can be modified only.
-4. If Instruction Packet ID is the same as Secondary ID(12), a Status Packet will not be returned.
-5. If the value of Secondary ID(12) is 253 or higher, the Secondary ID function is deactivated.
+The primary and secondary IDs differ in several ways.
+1. Secondary ID(12) do not need to be unique, and can be shared among any number of DYNAMIXEL servos. 
+2. The primary ID(7) has a greater priority than the Secondary ID(12). If the Secondary ID(12) and primary ID(7) are the same, the servo will act as if the instruction has been sent only to it's primary ID.
+3. The EEPROM area of the Control Table cannot be modified using Secondary ID(12), changes can only be made to the RAM area when addressed to secondary IDs.
+4. Status packets will not be returned for instructions sent to secondary IDs.
+5. The secondary ID function is completely disabled when it has been set to a value higher than 253.
 
-|  Values   |                      Description                      |
-|:---------:|:-----------------------------------------------------:|
-|  0 ~ 252  |            Activate Secondary ID function             |
-| 253 ~ 255 | Deactivate Secondary ID function, Default value ‘255’ |
+|  Values   |                                      Description                                     |
+|:---------:|:------------------------------------------------------------------------------------:|
+|  0 ~ 252  |            Enable the secondary ID feature with the configured ID value.             |
+| 253 ~ 255 |  Deactivate the Secondary ID function. The Default value  of the setting is ‘255’.   |
 
-The following are examples of operation when there are five devices with ID (7) set from 1 to 5.
+The following example showcases some of the functionality of DYNAMIXEL's secondary ID function using DYNAMIXELs with primary ID's from 1-5:
 
 {% capture secondary_id_ex1 %}
 1. Set all five devices' Secondary ID(12) to '5'.
-2. Send Write Instruction Packet(ID = 1, LED Red(513) = 255).
-3. Turn on the LED of the device with ID '1' and return the Status Packet.
-4. Send Write Instruction Packet(ID = 5, LED Red(513) = 255).
-5. Turn on the LED of five devices. However, Status Packet of the device with ID ‘5’ will be returned.
+2. Send a Write Instruction Packet to ID 1 turning on the LED: LED Red(513) = 255.
+3. DYNAMIXEL ID 1's LED will illuminate, and a status packet will be returned.
+4. Send a Write Instruction Packet to ID 5 turning on the LED:  LED Red(513) = 255.
+5. The LEDs of all five devices will turn on, but a status packet will only be returned from DYNAMIXEL ID 5.
 6. Set the Secondary ID(12) of all five devices to ‘100’.
-7. Send Write Instruction Packet(ID = 100, LED Red(513) = 0).
-8. Turn off the LED of the five devices. However, as there is no device with ID ‘100’, Status Packet is not returned.
+7. Send a Write Instruction Packet to ID 100: LED Red(513) = 0.
+8. The LEDs of all five devices will turn off, but no status packet will be returned as there is no device with primary ID 100.
 {% endcapture %}
 
 <div class="notice--success">{{ secondary_id_ex1 | markdownify }}</div>
 
-**WARNING** : Modebus-RTU dose not support Secondary ID(12).    
+**WARNING** : Modbus-RTU communication does not support Secondary ID(12) functionality.    
 {: .notice--warning}

@@ -1,12 +1,10 @@
 
 ![](/assets/images/dxl/x/assembly/common/x-series_cable_assembly.png)
 
-> Precaution in cable assembly through a hollow case (Model: XM430-W250)
+> Hollow shaft cable assembly precautions
 
 {% capture hollow_assy %}
-**CAUTION** : DYNAMIXEL-X series cable assembly through hollow case
-- Organize the entangled cable before assembling the back case.
-- Do not assemble the back case with entangled cable. The entangled cable can be squashed by the case and cause communication error.
+**CAUTION**: To ensure correct DYNAMIXEL-X series cable assembly untangle the DYNAMIXEL cable prior to insertion through the hollow shaft. Do not assemble the back case with a tangled cable, tangled cables may be crushed by the case and cause communication errors or damage to your DYNAMIXEL hardware.
 {% endcapture %}
 
 <div class="notice--warning">{{ hollow_assy | markdownify }}</div>

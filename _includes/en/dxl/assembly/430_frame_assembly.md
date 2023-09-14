@@ -1,24 +1,23 @@
 
 ### [How To Use Spacer Ring](#how-to-use-spacer-ring)
 
-To protect your assembled frame, use the spacer rings which fills the gap between assembled frame and DYNAMIXEL case.
+To prevent damage to your frames during assembly, use the included spacer rings to fill the gaps between assembled frames and your DYNAMIXEL case.
 
 ![HowTo_SpacerRing](/assets/images/dxl/x/assembly/common/howto_spacering.png)
 
-### [Precaution of Frame and Horn Assembly](#precaution-of-frame-and-horn-assembly)
+### [Frame and Horn Assembly Precautions](#precaution-of-frame-and-horn-assembly)
 
-Be sure to use screws in proper length by considering the depth of the thickness of frame plus thickness (T) of DYNAMIXEL horn.  
-If the length of screw is longer than the depth of them, it may cause a damage to the DYNAMIXEL during work. 
+WARNING: Before assembling your DYNAMIXEL accessories, ensure that all screws and bolts are the correct length by considering the depth of your DYNAMIXEL’s mounting points. If the length of screw is larger than the depth of the mounting point your frame or DYNAMIXEL may be damaged during assembly.
 {: .notice--warning}
 
 ![Warn_HornAssembly](/assets/images/dxl/x/assembly/x430/warning_horn_assembly_x430.png)
 
-**NOTE**: Find useful data (Size, Depth and etc) for your horn or frame assembly from [Drawings](#drawings).
+**NOTE**: Information regarding size and depth of DYNAMIXEL servo mounting points can be found in the [Drawings](#drawings) section of the product's eManual page.
 {: .notice}
 
 ### [Hinge Frame Assembly](#hinge-frame-assembly)
 
-A hinge frame can be assembled to the output shaft wheel gear of DYNAMIXEL.
+DYNAMIXEL hinge frames are assembled by attaching them to the idler and output horn of your servo.
 
 ![Hinge_Assembly](/assets/images/dxl/x/assembly/x430/fr12-h101k.png)
 
@@ -36,18 +35,18 @@ A hinge frame can be assembled to the output shaft wheel gear of DYNAMIXEL.
 
 > FR12-H103GM
 
-**NOTE**: Find useful data (Size, Depth and etc) for your horn or frame assembly from [Drawings](#drawings).
+**NOTE**: Information regarding size and depth of DYNAMIXEL servo mounting points can be found in the [Drawings](#drawings) section of the product's eManual page.
 {: .notice}
 
-**NOTE**: In hinge assembly, the idler horn should be assembled to the back case of DYNAMIXEL. See [Idler Horn Assembly](#idler-horn-assembly).
+**NOTE**: An idler horn is required for the installation of DYNAMIXEL hinge frames. See the [Idler Horn Assembly] instructions for more information.
 {: .notice}
 
-**WARNNING**: In hinge assembly, make sure to use the proper screw. See [Precaution of Frame and Horn Assembly](#precaution-of-frame-and-horn-assembly).
+**WARNING**: During hinge assembly, ensure that all screws are the proper length before installation. See [Frame and Horn Assembly Precautions] for more information.
 {: .notice--warning}
 
 ### [Side Frame Assembly](#side-frame-assembly)
 
-A side frame can be assembled to the side and bottom of case of DYNAMIXEL. 
+DYNAMIXEL side frames are assembled by attaching them to the mounting points on the sides of your DYNAMIXEL actuator.
 
 ![Side_Assembly_Side](/assets/images/dxl/x/assembly/x430/fr12_s101k.png)
 
@@ -57,10 +56,10 @@ A side frame can be assembled to the side and bottom of case of DYNAMIXEL.
 
 > FR12-S102K
 
-**NOTE**: Find useful data (Size, Depth and etc) for your horn or frame assembly from [Drawings](#drawings).
+**NOTE**: Information regarding size and depth of DYNAMIXEL servo mounting points can be found in the [Drawings](#drawings) section of the product's eManual page.
 {: .notice}
 
-**NOTE**: Use spacer rings to protect assembled frame. See [How To Use Spacer Ring](#how-to-use-spacer-ring).
+**NOTE**: Use spacer rings to protect assembled DYNAMIXEL frames. See [How To Use Spacer Rings](#how-to-use-spacer-ring) for more information.
 {: .notice}
 
 ### [Gripper Assembly](#gripper-assembly)
@@ -69,39 +68,39 @@ A side frame can be assembled to the side and bottom of case of DYNAMIXEL.
 
 > FR12-G101GM (FR12-E170 + FR12-E171) 
 
-**NOTE**: Find useful data (Size, Depth and etc) for your horn or frame assembly from [Drawings](#drawings).
+**NOTE**: Information regarding size and depth of DYNAMIXEL servo mounting points can be found in the [Drawings](#drawings) section of the product's eManual page.
 {: .notice}
 
-**NOTE**: Use spacer rings to protect assembled frame. See [How To Use Spacer Ring](#how-to-use-spacer-ring).
+**NOTE**: Use spacer rings to protect assembled DYNAMIXEL frames see [How To Use Spacer Rings](#how-to-use-spacer-ring) for more information.
 {: .notice}
 
 ### [Frame Combination](#frame-combination)
 
-Make various combination with hinge and side frames.
+Hinge and side frames can be combined in a variety of ways to provide complex mounting options.
 
 ![Frame_Example](/assets/images/dxl/x/assembly/x430/x430_frame_example.png)
 
 ### [Custom Frame Assembly](#custom-frame-assembly)
 
-If you make custom frames for your application, see the next assembly example. 
+Custom made DYNAMIXEL frames can also be installed by following the instructions below.
 
 #### [Front (Wrench Bolt)](#front-wrench-bolt)
 
-1. Step 1  
+* Step 1  
 
     ![ETC_FrameAssembly](/assets/images/dxl/x/assembly/x430/x430_etc_assembly_example_front1_01.png)
 
-2. Step 2  
+* Step 2  
 
     ![ETC_FrameAssembly](/assets/images/dxl/x/assembly/x430/x430_etc_assembly_example_front1_02.png)
 
-**NOTE**: Note that the frame in the image is not for sale. 
+**NOTE**: The example frame included in the image is not available for sale.
 {: .notice}
 
-**NOTE**: Use spacer rings to protect assembled frame. See [How To Use Spacer Ring](#how-to-use-spacer-ring).
+**NOTE**: Use spacer rings to protect assembled DYNAMIXEL frames see [How To Use Spacer Rings](#how-to-use-spacer-ring) for more information.
 {: .notice}
 
-**NOTE**: Find useful data (Size, Depth and etc) for your horn or frame assembly from [Drawings](#drawings).
+**NOTE**: Information regarding size and depth of DYNAMIXEL servo mounting points can be found in the [Drawings](#drawings) section of the product's eManual page.
 {: .notice}
 
 #### [Front (Flat Head Wrench Bolt)](#front-flat-head-wrench-bolt)
@@ -114,13 +113,13 @@ If you make custom frames for your application, see the next assembly example.
 
     ![ETC_FrameAssembly](/assets/images/dxl/x/assembly/x430/x430_etc_assembly_example_front2_02.png)
 
-**NOTE**: Note that the frame in the image is not for sale. 
+**NOTE**: The example frame included in the image is not available for sale.
 {: .notice}
 
-**NOTE**: Use spacer rings to protect assembled frame. See [How To Use Spacer Ring](#how-to-use-spacer-ring).
+**NOTE**: Use spacer rings to protect assembled DYNAMIXEL frames see [How To Use Spacer Rings](#how-to-use-spacer-ring) for more information.
 {: .notice}
 
-**NOTE**: Find useful data (Size, Depth and etc) for your horn or frame assembly from [Drawings](#drawings).
+**NOTE**: Information regarding size and depth of DYNAMIXEL servo mounting points can be found in the [Drawings](#drawings) section of the product's eManual page.
 {: .notice}
 
 #### [Side](#side)
@@ -128,7 +127,7 @@ If you make custom frames for your application, see the next assembly example.
   ![ETC_FrameAssembly](/assets/images/dxl/x/assembly/x430/x430_etc_assembly_example_side.png)
   
   {% capture sidetab_warning_3mm %}
-  **WARNNING**: Be sure to use the proper length of screws when assembling a frame to the side tab.
+  **WARNING**: Before installing DYNAMIXEL side frames verify that the length of your mounting hardware does not exceed the available depth of the mounting points.
   
   ![3mm_Mount_Deep_Warning](/assets/images/dxl/x/assembly/common/3mm_mount_warning.jpg)
   
@@ -136,10 +135,13 @@ If you make custom frames for your application, see the next assembly example.
   
   <div class="notice--warning">{{ sidetab_warning_3mm | markdownify }}</div> 
   
-**NOTE**: Note that the frame in the image is not for sale. 
+**NOTE**: The example frame included in the image is not available for sale.
 {: .notice}
 
-**NOTE**: Find useful data (Size, Depth and etc) for your horn or frame assembly from [Drawings](#drawings).
+**NOTE**: Use spacer rings to protect assembled DYNAMIXEL frames see [How To Use Spacer Rings](#how-to-use-spacer-ring) for more information.
+{: .notice}
+
+**NOTE**: Information regarding size and depth of DYNAMIXEL servo mounting points can be found in the [Drawings](#drawings) section of the product's eManual page.
 {: .notice}
   
 #### [Bottom](#bottom)
@@ -148,11 +150,11 @@ If you make custom frames for your application, see the next assembly example.
   
   <div class="notice--warning">{{ sidetab_warning_3mm | markdownify }}</div> 
   
-**NOTE**: Note that the frame in the image is not for sale. 
+**NOTE**: The example frame included in the image is not available for sale.
 {: .notice}
 
-**NOTE**: Use spacer rings to protect assembled frame. See [How To Use Spacer Ring](#how-to-use-spacer-ring).
+**NOTE**: Use spacer rings to protect assembled DYNAMIXEL frames see [How To Use Spacer Rings](#how-to-use-spacer-ring) for more information.
 {: .notice}
 
-**NOTE**: Find useful data (Size, Depth and etc) for your horn or frame assembly from [Drawings](#drawings).
+**NOTE**: Information regarding size and depth of DYNAMIXEL servo mounting points can be found in the [Drawings](#drawings) section of the product's eManual page.
 {: .notice}

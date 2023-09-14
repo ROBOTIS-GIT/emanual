@@ -1,4 +1,4 @@
-Baud Rate determines serial communication speed between controller and device.
+The Baud Rate setting determines the serial communication speed between your controller and DYNAMIXEL actuators.
 
 |   Value    |   Baud Rate   | Actual Baud Rate | Margin of Error |
 |:----------:|:-------------:|:----------------:|:---------------:|
@@ -13,9 +13,8 @@ Baud Rate determines serial communication speed between controller and device.
 | 1(Default) | 57,600 [bps]  |      57,613      |     0.023%      |
 |     0      |  9,600 [bps]  |      9,600       |     0.000%      |
 
-**NOTE** : Less than 3% of the baud rate error margin will not affect to UART communication.
+**NOTE**: UART communications will remain stable with a margin of error of up to 3%. 
 {: .notice}
 
-**NOTE** : For the stable communication with higher baudrate using U2D2, configure USB Latency value to the lower.  
-[USB Latency Setting](/docs/en/software/dynamixel/dynamixel_wizard2/#usb-latency-setting) 
+**NOTE**: For stable high speed communication over USB serial connections, you may need to adjust the [USB latency settings](/docs/en/software/dynamixel/dynamixel_wizard2/#usb-latency-setting) in your PC's settings.
 {: .notice}
