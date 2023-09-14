@@ -4,7 +4,7 @@ The range of acceptable values includes 0 to 254 (0XFE) with each unit represent
 
 | Unit  | Value Range |                         Description                            |
 |:-----:|:-----------:|:--------------------------------------------------------------:|
-| 2μsec |   0 ~ 254   | Default Value: ‘250’ (500μs) <br> Maximum Value: ‘254’ (508μs) |
+| 2μsec |   0 ~ 254   | Default Value: ‘250’(500 [μs]) <br> Maximum Value: 508 [μs]    |
 
 
 **WARNING** : Modbus-RTU communication does not support the Return Delay Time(9) feature. 

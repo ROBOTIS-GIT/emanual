@@ -22,7 +22,7 @@ In order to use Modbus-RTU on your RH-P12-RN(A) servo you must update to firmwar
 **WARNING**: [DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/) is required to change the communications protocol of your DYNAMIXEL servo, as R+ Manager 2.0 does not support Modbus-RTU communication.
 {: .notice--warning}
 
-{% capture warn01 %k
+{% capture warn01 %}
 **WARNING** : The following Control Table items are not supported by Modbus-RTU communications.
 [Return Delay Time(9)](#return-delay-time9)  
 [Secondary ID(12)](#secondary-id12)  
@@ -31,4 +31,5 @@ In order to use Modbus-RTU on your RH-P12-RN(A) servo you must update to firmwar
 [Indirect Address](#indirect-address)  
 [Indirect Data](#indirect-data)
 {% endcapture %}
+
 <div class="notice--warning">{{ warn01 | markdownify }}</div>
