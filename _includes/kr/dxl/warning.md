@@ -7,7 +7,7 @@
 
 {% endif %}
 
-{% capture dxl_danger %}  
+{% capture common_danger %}  
 ![](/assets/images/icon_warning.png)  
 **위험**  
 (심각한 상해 또는 사망에 이르게 할 수 있습니다.)
@@ -15,9 +15,9 @@
 - 작동 중인 제품에 손, 발과 같은 신체 또는 신체의 일부를 넣지 마세요.
 - 제품에서 이상한 냄새가 나거나, 연기가 발생하면 전원 연결을 즉시 끊어주세요.
 - 아이들이 제품으로 장난치지 않도록 하세요.
-- 전원의 극성을 반드시 확인 후 배선하세요.
+- 전원공급 시 극성을 반드시 확인해 주세요.
 {% endcapture %}
-<div class="notice--danger">{{ dxl_danger | markdownify }}</div>
+<div class="notice--danger">{{ common_danger | markdownify }}</div>
 
 {% if page.product_group=='dxl_ax' or page.product_group=='dxl_dx' or page.product_group=='dxl_ex' or page.product_group=='dxl_rx' %}
   {% assign target_file = 'dxl_info' %}
@@ -40,7 +40,7 @@
 ![](/assets/images/icon_warning.png)  
 **경고**  
 (상해나 제품 손상의 원인이 됩니다.)
-- {% if page.product_group=='dxl_xw540' or page.product_group=='dxl_xw430' %} 제품의 사용 환경을 준수하세요. (IP68, 담수에서 수심 1 m, 24 hr) {% else %} 제품의 사용 환경을 준수하세요. (온도 : {{ site.data[target_file][page.ref].temperature }}) {% endif %}
+- {% if page.product_group=='dxl_xw540' or page.product_group=='dxl_xw430' %} 제품의 사용 환경을 준수하세요. (IP68, 담수에서 수심 1 m, 24 hr) {% elsif page.product_group=='opencm904' or page.product_group=='ln-101' or page.product_group=='u2d2' or page.product_group=='u2d2_power_hub' or page.product_group=='dynamixel_shield' or page.product_group=='cm-50' or page.product_group=='openrb-150' or page.product_group=='opencm485exp' %} 제품의 사용 환경을 준수하세요. {% else %} 제품의 사용 환경을 준수하세요. (전압, 온도 등){% endif %}
 - 작동 중인 제품 내부로 칼날, 압정, 불씨 등을 흡입시키지 마세요.
 {% endcapture %}
 <div class="notice--warning">{{ dxl_caution | markdownify }}</div>

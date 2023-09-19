@@ -68,7 +68,6 @@ sidebar:
 |    Dimensions     |          27mm x 66.5mm          |
 
 {% capture opencm904_caution_01 %}
-**WARNING**
 - USB power is cannot be used to operate DYNAMIXEL's. Separate power supply needs to be provided.  
   (OpenCM9.04 can operate using power supplied via USB, battery, + - terminal.)
 - Check the operating voltage for peripheral devices when using power supply. DYNAMIXEL or XL-series receives the exact same voltage.
@@ -76,6 +75,8 @@ sidebar:
 {% endcapture %}
 
 <div class="notice--danger">{{ opencm904_caution_01 | markdownify }}</div>
+
+{% include en/dxl/warning.md %}
 
 # [Control Table](#control-table)
 

@@ -56,6 +56,8 @@ sidebar:
 <sup>3</sup> 배터리 커넥터는 다음의 로보티즈 배터리와 호환됩니다. [LB-010](https://www.robotis.com/shop/item.php?it_id=903-0143-000) 또는 [LB-020](https://www.robotis.com/shop/item.php?it_id=903-0277-000).
 {: .notice}
 
+{% include kr/dxl/warning.md %}
+
 ## [지원하는 다이나믹셀](#지원하는-다이나믹셀)
 
 다이나믹셀 쉴드 MKR은 `TTL` 기반의 다이나믹셀 제품을 지원합니다.

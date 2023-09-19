@@ -23,6 +23,8 @@ Combined with U2D2, it can supply various kinds of external power supply to supp
 | Operaing Voltage | 3.5V ~ 24.0V |
 | Maximum Current  |    10.0A     |
 
+{% include en/dxl/warning.md %}
+
 # [Layout](#layout)
 
 ![](/assets/images/parts/interface/u2d2_power_hub/layout.png)

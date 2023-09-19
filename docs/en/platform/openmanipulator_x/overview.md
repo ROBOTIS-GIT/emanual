@@ -21,13 +21,13 @@ page_number: 1
 
 <img src="/assets/images/platform/openmanipulator_x/OpenManipulator_Introduction.jpg" width="1000">
 
-ROS-enabled OpenMANIPULATOR-X (RM-X52-TNM) is a full open robot platform consisting of **OpenSoftware**​, **OpenHardware** and **OpenCR(Embedded board)​**.
+ROS compatible OpenMANIPULATOR-X (RM-X52-TNM) is a robot platform consisting of **Open Source Software**​, **Open Source Hardware** and is compatible with **OpenCR(Embedded controller)​**.
 
-## [OpenSoftware](#opensoftware)
-OpenMANIPULATOR-X is based on ROS ​and OpenSource. ROS official hardware platform, TurtleBot series has been supporting "TurtleBot Arm". The OpenMANIPULATOR-X has full hardware compatibility with TurtleBot3​. Users can also control it more easily by adopting the MoveIt! package. Even if you do not have an actual robot, you can control the robot in the Gazebo simulator​. 
+## [Open Source Software](#open-source-software)
+OpenMANIPULATOR-X supports ROS. The official ROS platform TurtleBot series has been supporting "TurtleBot Arm". The OpenMANIPULATOR-X is fullly compatibile with TurtleBot3​. Users can easily control it through the `MoveIt!` ROS package. Even if you do not have an actual robot, you can control the robot in the Gazebo simulator​. 
 
-## [OpenHardware](#openhardware)
-OpenMANIPULATOR-X RM-X52-TNM is an open-hardware oriented platform​. Most of the components are uploaded as [STL files](http://www.robotis.com/service/download.php?no=690) so that users can easily 3d print them. It also allows users to modify the length of the links or the design of the robot for their own purposes. OpenMANIPULATOR-X RM-X52-TNM is made of **DYNAMIXEL-X ​Series** which is used in TurtleBot 3.
+## [Open Source Hardware](#open-source-hardware)
+OpenMANIPULATOR-X (RM-X52-TNM) is an open source hardware oriented platform​. Most of the components are uploaded as [STL files](http://www.robotis.com/service/download.php?no=690) so that users can easily create them using a 3D printer. It also allows users to modify the length of the links or the design of the robot for their own purposes. OpenMANIPULATOR-X (RM-X52-TNM) is made of **DYNAMIXEL-X ​Series** which is used in TurtleBot3.
 ![](/assets/images/platform/openmanipulator_x/OpenManipulator_Chain_OnShape.png)  
 > Base Plate is not included in the package
 

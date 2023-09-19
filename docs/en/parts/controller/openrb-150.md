@@ -61,13 +61,14 @@ The OpenRB-150 also features 4 dedicated DYNAMIXEL ports, and supports the DYNAM
 `*` 24V models require a separate power connection.
 
 {% capture openrb-150_caution_01 %}
-**WARNING**
 - The current from the USB port is limited to 500mA with the built-in fuse, but a high current draw may cause damage to USB ports used to power the OpenRB-150.
 - For applications requiring rapid movement or high torque, use of the terminal block to supply power is recommended.
 - Always confirm the operating voltage of your DYNAMIXEL modules before connecting them to the OpenRB-150.
 {% endcapture %}
 
 <div class="notice--danger">{{ openrb-150_caution_01 | markdownify }}</div>
+
+{% include en/dxl/warning.md %}
 
 # [Hardware Layout](#hardware-layout)
 

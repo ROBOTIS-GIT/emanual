@@ -21809,10 +21809,10 @@ openmanipulator_x:
   - title: "Overview"
     url: /platform/openmanipulator_x/overview
     children:
-    - title: "OpenSoftware"
-      url: /platform/openmanipulator_x/overview/#opensoftware
-    - title: "OpenHardware"
-      url: /platform/openmanipulator_x/overview/#openhardware
+    - title: "Open Source Software"
+      url: /platform/openmanipulator_x/overview/#open-source-software
+    - title: "Open Source Hardware"
+      url: /platform/openmanipulator_x/overview/#open-source-hardware
     - title: "OpenCR (Embedded board)"
       url: /platform/openmanipulator_x/overview/#opencr-embedded-board
     - title: "DYNAMIXEL Examples"

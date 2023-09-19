@@ -4,4 +4,4 @@ layout: popup
 
 # Model Number
 
-This address stores model number of DYNAMIXEL
+This address stores the model number of your DYNAMIXEL servo.

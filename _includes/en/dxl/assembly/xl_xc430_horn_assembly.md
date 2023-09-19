@@ -1,9 +1,9 @@
 
 ### [Idler Horn Assembly](#idler-horn-assembly)
 
-The idler horn can be used for an hinge frame assembly with the DYNAMIXEL normal horn. 
+An idler horn is required in addition to a DYNAMIXEL's output horn for installation of hinge frame accessories.
 
-Additionally, utilizing the hole of the idler horn provides a neat cable wiring solution. 
+Additionally, the hollow shaft of an installed idler horn provides a neat cable wiring solution.
 
 ![HowTo_Idler_Assembly](/assets/images/dxl/x/assembly/xl430/xl_xc430_idler_assembly_new.jpg)
 

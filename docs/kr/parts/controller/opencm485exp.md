@@ -31,6 +31,8 @@ sidebar:
 |   Serial3 RX    |       헤더 핀 #25       |
 |  통신방향 제어  |       헤더 핀 #22       |
 
+{% include kr/dxl/warning.md %}
+
 # [각 부 명칭](#각-부-명칭)
 
 ![](/assets/images/parts/controller/opencm904/opencm485exp_01.jpg)
