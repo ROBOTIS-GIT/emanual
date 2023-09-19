@@ -101,7 +101,7 @@ Direction을 전환하는 시점에서는 TXD_SHIFT_REGISTER_EMPTY_BIT를 확인
 
 ## [Byte to Byte Time](#byte-to-byte-time)
 
-Instruction Packet을 전송할 때 Byte와 Byte사이의 Delay Time을 의미하는데, 이 시간이 1.5 msec가 넘을 경우 다이나믹셀은 전송 장해가 발생한 것으로 간주하고, 다시 Packet의 header(0xff 0xff 0xfd)를 기다립니다
+Instruction Packet을 전송할 때 Byte와 Byte사이의 Delay Time을 의미하는데, 이 시간이 1.5 msec가 넘을 경우 다이나믹셀은 전송 장애가 발생한 것으로 간주하고, 다시 Packet의 header(0xff 0xff 0xfd)를 기다립니다
 
 ![](/assets/images/dxl/protocol2/protocol20_bytetobytetime.png)
 
