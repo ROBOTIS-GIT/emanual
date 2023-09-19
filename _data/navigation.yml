@@ -18593,6 +18593,11 @@ protocol2:
     titlekr: "개요"
     url: /dxl/protocol2/#introduction
     urlkr: /dxl/protocol2/#개요
+    children: 
+      - title: "Packet"
+        titlekr: "Packet"
+        url: /dxl/protocol2/#packet
+        urlkr: /dxl/protocol2/#packet
   - title: "Instruction Packet"
     titlekr: "Instruction Packet"
     url: /dxl/protocol2/#instruction-packet
