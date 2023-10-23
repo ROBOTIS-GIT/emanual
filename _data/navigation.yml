@@ -26876,6 +26876,49 @@ cm-900:
       url: /parts/controller/cm-900/#certifications
       urlkr: /parts/controller/cm-900/#인증-획득
 
+#rb-86 sidebar
+rb-86:
+  - title: "개요"
+    urlkr: /parts/controller/rb-86/#개요
+  - title: "제품사양"
+    urlkr: /parts/controller/rb-86/#제품-사양
+  - title: "각 부 명칭"
+    urlkr: /parts/controller/rb-86/#각-부-명칭
+  - title: "전원 연결"
+    urlkr: /parts/controller/rb-86/#전원-연결      
+  - title: "제어기 모드 선택"
+    urlkr: /parts/controller/rb-86/#제어기-모드-선택
+    children:
+    - title: "Play 모드"
+      url: /parts/controller/rb-86/#play-모드
+    - title: "Manage 모드"
+      url: /parts/controller/rb-86/#manage-모드
+    - title: "언플러그드 코딩 모드"
+      url: /parts/controller/rb-86/#언플러그드-코딩-모드      
+  - title: "복구 모드"
+    urlkr: /parts/controller/rb-86/#복구-모드
+    children:
+    - title: "제어기 종료"
+      url: /parts/controller/rb-86/#제어기-종료  
+  - title: "십자혼 조립 방법"
+    urlkr: /parts/controller/rb-86/#십자혼-조립-방법    
+    children:
+    - title: "PC에서 연결"
+      url: /parts/controller/rb-86/#pc에서-연결     
+    - title: "모바일에서 연결"
+      url: /parts/controller/rb-86/#모바일에서-연결   
+  - title: "펌웨어 업데이트"
+    urlkr: /parts/controller/rb-86/#펌웨어-업데이트          
+  - title: "조종기 연결"
+    urlkr: /parts/controller/rb-86/#조종기-연결
+    children:
+    - title: "RC-100B 또는 RC-300 연결"
+      url: /parts/controller/rb-86/#rc-100b-또는-rc-300-연결    
+    - title: "STEAMCUP에서 조종기 연결"
+      url: /parts/controller/rb-86/#steamcup에서-조종기-연결      
+  - title: "직진성 보정"
+    urlkr: /parts/controller/rb-86/#직진성-보정   
+
 #OpenCM 9.04_JP sidebar
 opencm904_jp:
   - title: "イントロダクション"
