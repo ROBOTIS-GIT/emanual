@@ -18593,11 +18593,25 @@ protocol2:
     titlekr: "개요"
     url: /dxl/protocol2/#introduction
     urlkr: /dxl/protocol2/#개요
-    children: 
+    children:
       - title: "Packet"
         titlekr: "Packet"
         url: /dxl/protocol2/#packet
-        urlkr: /dxl/protocol2/#packet
+      - title: "ID"
+        titlekr: "ID"
+        url: /dxl/protocol2/#id
+      - title: "DYNAMIXEL Protocol"
+        titlekr: "DYNAMIXEL Protocol"
+        url: /dxl/protocol2/#dynamixel-protocol
+      - title: "Half Duplex"
+        titlekr: "Half Duplex"
+        url: /dxl/protocol2/#half-duplex
+      - title: "Tx, Rx Direction"
+        titlekr: "Tx, Rx Direction"
+        url: /dxl/protocol2/#tx-rx-direction
+      - title: "Byte to Byte Time"
+        titlekr: "Byte to Byte Time"
+        url: /dxl/protocol2/#byte-to-byte-time
   - title: "Instruction Packet"
     titlekr: "Instruction Packet"
     url: /dxl/protocol2/#instruction-packet
