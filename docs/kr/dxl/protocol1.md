@@ -88,7 +88,7 @@ EnableInterrupt(); // enable interrupt again
 
 ## [Byte to Byte Time](#byte-to-byte-time)
 
-Instruction Packet을 전송할 때 Byte와 Byte사이의 Delay Time을 의미하는데, 이 시간이 100msec가 넘을 경우 RX-64는 전송 장해가 발생한 것으로 간주하고, 다시 Packet의 header(0xff 0xff)를 기다립니다.
+Instruction Packet을 전송할 때 Byte와 Byte사이의 Delay Time을 의미하는데, 이 시간이 100msec가 넘을 경우 RX-64는 전송 장애가 발생한 것으로 간주하고, 다시 Packet의 header(0xff 0xff)를 기다립니다.
 
 ![](/assets/images/dxl/byte2bytetime.png)
 
