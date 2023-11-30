@@ -26876,6 +26876,92 @@ cm-900:
       url: /parts/controller/cm-900/#certifications
       urlkr: /parts/controller/cm-900/#인증-획득
 
+#rb-86 sidebar
+rb-86:
+  - titlekr: "개요"
+    urlkr: /parts/controller/rb-86/#개요
+  - titlekr: "제품사양"
+    urlkr: /parts/controller/rb-86/#제품-사양
+  - titlekr: "각 부 명칭"
+    urlkr: /parts/controller/rb-86/#각-부-명칭
+  - titlekr: "전원 연결"
+    urlkr: /parts/controller/rb-86/#전원-연결      
+  - titlekr: "제어기 모드 선택"
+    urlkr: /parts/controller/rb-86/#제어기-모드-선택
+    children:
+    - titlekr: "Play 모드"
+      urlkr: /parts/controller/rb-86/#play-모드
+    - titlekr: "Manage 모드"
+      urlkr: /parts/controller/rb-86/#manage-모드
+    - titlekr: "언플러그드 코딩 모드"
+      urlkr: /parts/controller/rb-86/#언플러그드-코딩-모드      
+    - titlekr: "복구 모드"
+      urlkr: /parts/controller/rb-86/#복구-모드
+    - titlekr: "제어기 종료"
+      urlkr: /parts/controller/rb-86/#제어기-종료  
+  - titlekr: "십자혼 조립 방법"
+    urlkr: /parts/controller/rb-86/#십자혼-조립-방법  
+  - titlekr : "STEAMCUP 연결"
+    urlkr : /parts/controller/rb-86/#steamcup 연결  
+    children:
+    - titlekr: "PC에서 연결"
+      urlkr: /parts/controller/rb-86/#pc에서-연결     
+    - titlekr: "모바일에서 연결"
+      urlkr: /parts/controller/rb-86/#모바일에서-연결   
+  - titlekr: "펌웨어 업데이트"
+    urlkr: /parts/controller/rb-86/#펌웨어-업데이트          
+  - titlekr: "조종기 연결"
+    urlkr: /parts/controller/rb-86/#조종기-연결
+    children:
+    - titlekr: "RC-100B 또는 RC-300 연결"
+      urlkr: /parts/controller/rb-86/#rc-100b-또는-rc-300-연결    
+    - titlekr: "STEAMCUP에서 조종기 연결"
+      urlkr: /parts/controller/rb-86/#steamcup에서-조종기-연결      
+  - titlekr: "직진성 보정"
+    urlkr: /parts/controller/rb-86/#직진성-보정   
+
+#rb-88 sidebar
+rb-88:
+  - titlekr: "개요"
+    urlkr: /parts/controller/rb-88/#개요
+  - titlekr: "제품사양"
+    urlkr: /parts/controller/rb-88/#제품-사양
+  - titlekr: "각 부 명칭"
+    urlkr: /parts/controller/rb-88/#각-부-명칭
+  - titlekr: "전원 연결"
+    urlkr: /parts/controller/rb-88/#전원-연결      
+  - titlekr: "제어기 모드 선택"
+    urlkr: /parts/controller/rb-88/#제어기-모드-선택
+    children:
+    - titlekr: "Play 모드"
+      urlkr: /parts/controller/rb-88/#play-모드
+    - titlekr: "Manage 모드"
+      urlkr: /parts/controller/rb-88/#manage-모드
+    - titlekr: "복구 모드"
+      urlkr: /parts/controller/rb-88/#복구-모드
+    - titlekr: "제어기 종료"
+      urlkr: /parts/controller/rb-88/#제어기-종료  
+  - titlekr: "십자혼 조립 방법"
+    urlkr: /parts/controller/rb-88/#십자혼-조립-방법  
+  - titlekr : "STEAMCUP 연결"
+    urlkr : /parts/controller/rb-88/#steamcup 연결  
+    children:
+    - titlekr: "PC에서 연결"
+      urlkr: /parts/controller/rb-88/#pc에서-연결     
+    - titlekr: "모바일에서 연결"
+      urlkr: /parts/controller/rb-88/#모바일에서-연결   
+  - titlekr: "펌웨어 업데이트"
+    urlkr: /parts/controller/rb-88/#펌웨어-업데이트          
+  - titlekr: "조종기 연결"
+    urlkr: /parts/controller/rb-88/#조종기-연결
+    children:
+    - titlekr: "RC-100B 또는 RC-300 연결"
+      urlkr: /parts/controller/rb-88/#rc-100b-또는-rc-300-연결    
+    - titlekr: "STEAMCUP에서 조종기 연결"
+      urlkr: /parts/controller/rb-88/#steamcup에서-조종기-연결      
+  - titlekr: "직진성 보정"
+    urlkr: /parts/controller/rb-88/#직진성-보정   
+
 #OpenCM 9.04_JP sidebar
 opencm904_jp:
   - title: "イントロダクション"
