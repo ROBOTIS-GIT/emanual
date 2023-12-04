@@ -26902,7 +26902,7 @@ rb-86:
   - titlekr: "십자혼 조립 방법"
     urlkr: /parts/controller/rb-86/#십자혼-조립-방법  
   - titlekr : "STEAMCUP 연결"
-    urlkr : /parts/controller/rb-86/#steamcup 연결  
+    urlkr : /parts/controller/rb-86/#steamcup-연결  
     children:
     - titlekr: "PC에서 연결"
       urlkr: /parts/controller/rb-86/#pc에서-연결     
@@ -26944,7 +26944,7 @@ rb-88:
   - titlekr: "십자혼 조립 방법"
     urlkr: /parts/controller/rb-88/#십자혼-조립-방법  
   - titlekr : "STEAMCUP 연결"
-    urlkr : /parts/controller/rb-88/#steamcup 연결  
+    urlkr : /parts/controller/rb-88/#steamcup-연결  
     children:
     - titlekr: "PC에서 연결"
       urlkr: /parts/controller/rb-88/#pc에서-연결     
