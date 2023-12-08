@@ -34,7 +34,7 @@ The OpenRB-150 also features 4 dedicated DYNAMIXEL ports, and supports the DYNAM
 | BOARD POWER SUPPLY              | (USB 3.0) 5 V<br />(VIN -or Terminal) 3.7 ~ 12.6 V          |
 | SUPPORTED BATTERY               | Li-Po 1 - 3 cell (3.7 - 11.1 V)<br />XT60 connector ready   |
 | DC CURRENT FOR 3.3V PIN         | 300 mA                                                      |
-| DC CURRENT FOR 5V PIN           | 300 mA (~2023)<br />150 mA(2024~)                           |
+| DC CURRENT FOR 5V PIN           | 300 mA (~2023)<br />150 mA (2024~)                          |
 | DC CURRENT FOR DYNAMIXEL PORTs  | 3,000 mA                                                    |
 | CIRCUIT OPERATING VOLTAGE       | 3.3 V                                                       |
 | DIGITAL I/O PINS                | 24                                                          |
