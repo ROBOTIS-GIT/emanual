@@ -33,8 +33,8 @@ OpenRB-150은 아두이노와 호환되는 오픈소스 제어기입니다.
 | CPU              | SAMD21 Cortex-M0+ 32bit low power ARM® MCU                  |
 | 동작 전압           | (USB 3.0) 5 V<br />(VIN -or Terminal) 3.7 ~ 12.6 V          |
 | 지원 배터리                  | Li-Po 1 - 3 cell (3.7 - 11.1 V)<br />XT60 connector ready   |
-| DC 전류 (3.3V)            | 300 mA                                                        |
-| DC 전류 (5V)              | 300 mA (~2023)<br />150 mA (2024~)                            |
+| DC 전류 (3.3V)            | 300 mA                                                      |
+| DC 전류 (5V)              | 300 mA (~2023)<br />150 mA (2024~)                          |
 | 다이나믹셀 포트 전류       | 3,000 mA                                                     |
 | 회로 동작 전압               | 3.3 V                                                       |
 | 디지털 입출력 I/O 핀         | 24                                                          |

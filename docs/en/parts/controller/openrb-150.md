@@ -60,7 +60,8 @@ The OpenRB-150 also features 4 dedicated DYNAMIXEL ports, and supports the DYNAM
 `*` RS-485 models will require [DYNAMIXEL Communication Bridge](/docs/en/parts/interface/dxl_bridge/) to convert TTL to RS-485.  
 `*` 24V models require a separate power connection.
 
-**NOTE**: The DC current for 5V pin value change, since 2024, as The 5V regulator is changed. (300mA -> 150mA) 
+**NOTE**: The DC current for 5V pin value change, since 2024, as The 5V regulator is changed. (300mA -> 150mA)
+{: .notice}
 
 {% capture openrb-150_caution_01 %}
 - The current from the USB port is limited to 500mA with the built-in fuse, but a high current draw may cause damage to USB ports used to power the OpenRB-150.
@@ -69,6 +70,7 @@ The OpenRB-150 also features 4 dedicated DYNAMIXEL ports, and supports the DYNAM
 - The maximum voltage that the I/O pins can tolerate is 3.3V. Applying voltages higher than 3.3V to any I/O pin could damage the board.
 - Do not connect or disconnect DYNAMIXEL actuator cables while power is being supplied.
 {% endcapture %}
+
 <div class="notice--danger">{{ openrb-150_caution_01 | markdownify }}</div>
 
 {% include en/dxl/warning.md %}
