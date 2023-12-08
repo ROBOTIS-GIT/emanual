@@ -34,7 +34,7 @@ The OpenRB-150 also features 4 dedicated DYNAMIXEL ports, and supports the DYNAM
 | BOARD POWER SUPPLY              | (USB 3.0) 5 V<br />(VIN -or Terminal) 3.7 ~ 12.6 V          |
 | SUPPORTED BATTERY               | Li-Po 1 - 3 cell (3.7 - 11.1 V)<br />XT60 connector ready   |
 | DC CURRENT FOR 3.3V PIN         | 300 mA                                                      |
-| DC CURRENT FOR 5V PIN           | 300 mA                                                      |
+| DC CURRENT FOR 5V PIN           | 300 mA (~2023)<br />150 mA(2024~)                           |
 | DC CURRENT FOR DYNAMIXEL PORTs  | 3,000 mA                                                    |
 | CIRCUIT OPERATING VOLTAGE       | 3.3 V                                                       |
 | DIGITAL I/O PINS                | 24                                                          |
@@ -60,12 +60,15 @@ The OpenRB-150 also features 4 dedicated DYNAMIXEL ports, and supports the DYNAM
 `*` RS-485 models will require [DYNAMIXEL Communication Bridge](/docs/en/parts/interface/dxl_bridge/) to convert TTL to RS-485.  
 `*` 24V models require a separate power connection.
 
+**NOTE**: The DC current for 5V pin value change, since 2024, as The 5V regulator is changed. (300mA -> 150mA) 
+
 {% capture openrb-150_caution_01 %}
 - The current from the USB port is limited to 500mA with the built-in fuse, but a high current draw may cause damage to USB ports used to power the OpenRB-150.
 - For applications requiring rapid movement or high torque, use of the terminal block to supply power is recommended.
 - Always confirm the operating voltage of your DYNAMIXEL modules before connecting them to the OpenRB-150.
+- The maximum voltage that the I/O pins can tolerate is 3.3V. Applying voltages higher than 3.3V to any I/O pin could damage the board.
+- Do not connect or disconnect DYNAMIXEL actuator cables while power is being supplied.
 {% endcapture %}
-
 <div class="notice--danger">{{ openrb-150_caution_01 | markdownify }}</div>
 
 {% include en/dxl/warning.md %}
