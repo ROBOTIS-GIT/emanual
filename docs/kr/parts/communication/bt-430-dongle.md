@@ -26,16 +26,16 @@ sidebar:
 
 **1. BT-430 동글과 연동 가능한 제어기 및 무선통신 모듈**
   - RB-100
-  - CM-151
-  - RB-86 / RB-88
-  - BT-410 SLAVE 모듈
+  - [CM-151]
+  - [RB-86] / [RB-88]
+  - [BT-410 SLAVE 모듈]
 
 **2. BT-430 동글과 연동 불가능한 무선통신 모듈**
-  - BT-410 MASTER 모듈
-- BT-210 MASTER 모듈
-- BT-210 SLAVE 모듈
-- BT-100/110A
-- ZIG-100/110A
+  - [BT-410 MASTER 모듈]
+  - BT-210 MASTER 모듈
+  - BT-210 SLAVE 모듈
+  - BT-100/110A
+  - ZIG-100/110A
 
 ## 사용 예시
 
@@ -62,18 +62,19 @@ sidebar:
 # [호환성](#호환성)
 BT-430 동글과 BLE지원 제어기 및 BT-410 SLAVE 모듈의 조합으로 가능한 작업
 
-|     제품     | 알모션<br />| FW 복구/업데이트<br />R+ Manager 2.0 | Entry | [R+ Scratch] | Task 2.0<br />다운로드 | R+ Motion 2.0<br />다운로드 |
-|:------------:|:--------------------------------------:|:------------------------------------------:|:-----:|:------------:|:------------------------:|:----------------------:|
-|    RB-100     |                   O                    |                     X                      |   O   | X |            X             |           X            |
-|   CM-151   |                   X                    |                     O                      |   O   |      O       |            O             |           O            |
-|   RB-86/88   |                   X                    |                     X                      |   O   |      X       |            X             |           X            |
-|   CM-50   |                   X                    |                     O                      |   -   |      O       |            O             |           -            |
-|   [CM-150]   |                   X                    |                     O                      |   -   |      O       |            O             |           -            |
-|   [CM-200]   |                   X                    |                     O                      |   -   |      O       |            O             |           O            |
-|   [CM-530]   |                   X                    |                     O                      |   -   |      -       |            O             |           O            |
-| [OpenCM7.0]  |                   X                    |                     O                      |   O   |      O       |            O             |           -            |
-| [OpenCM9.04] |                   X                    |                     O                      |   -   |      -       |            O             |           O            |
-| [자동차로봇] |                   X                    |                     -                      |   O   |      O       |            -             |           -            |
+|     제품      | [알블록] | [알모션]| FW 복구/업데이트<br />R+ Manager 2.0 | Entry | [R+ Scratch] | Task 2.0<br />다운로드 | R+ Motion 2.0<br />다운로드 |
+|:-------------:|:-------:|:--------:|:----------------------------------------:|:-----:|:------------:|:-----------------------:|:---------------------------:|
+|     RB-100    |    O    |    O     |                    X                     |   O   |       X      |            X            |             X               |
+|    [CM-151]   |    O    |    X     |                    O                     |   O   |       O      |            O            |             O               |
+|[RB-86] / [RB-88] | O    |    X     |                    X                     |   O   |       X      |            X            |             X               |
+|     CM-50     |    X    |    X     |                    O                     |   -   |       O      |            O            |             -               |
+|    [CM-150]   |    X    |    X     |                    O                     |   -   |       O      |            O            |             -               |
+|    [CM-200]   |    X    |    X     |                    O                     |   -   |       O      |            O            |             O               |
+|    [CM-530]   |    X    |    X     |                    O                     |   -   |       -      |            O            |             O               |
+|  [OpenCM7.0]  |    X    |    X     |                    O                     |   O   |       O      |            O            |             -               |
+| [OpenCM9.04]  |    X    |    X     |                    O                     |   -   |       -      |            O            |             O               |
+|  [Car Robot]  |    X    |    X     |                    -                     |   O   |       -      |            -            |             -               |
+
 
 # [통신 모드](#통신-모드)
 
@@ -210,7 +211,9 @@ BT-430 동글 드라이버가 PC에 바르게 설치되었는지 확인하는 �
 5. 앞서 다운로드 한 드라이버의 경로를 입력하고 [Next]버튼을 클릭하여 드라이버를 설치합니다.
 
     ![img](/assets/images/parts/communication/bt-430_dongle_11.jpg)
+
     ![img](/assets/images/parts/communication/bt-430_dongle_12.jpg)
+
     ![img](/assets/images/parts/communication/bt-430_dongle_13.jpg)
 
 # [참고자료](#참고자료)
@@ -219,10 +222,17 @@ BT-430 동글 드라이버가 PC에 바르게 설치되었는지 확인하는 �
 표기되지 않은 인증에 대해서는 별도 문의하시기 바랍니다.
 - KC
 
+[알블록]: https://rblock.steamcup.org/?lang=en
+[알모션]: https://rmotion.steamcup.org/?lang=en
 [R+ Scratch]: /docs/kr/software/rplus2/scratch/
-[CM-150]: /doc/kr/parts/controller/cm-150
-[CM-200]: /doc/kr/parts/controller/cm-200
-[CM-530]: /doc/kr/parts/controller/cm-530
+[RB-86]: /docs/kr/parts/controller/rb-86
+[RB-88]: /docs/kr/parts/controller/rb-88
+[CM-151]: /docs/kr/parts/controller/cm-151
+[CM-150]: /docs/kr/parts/controller/cm-150
+[CM-200]: /docs/kr/parts/controller/cm-200
+[CM-530]: /docs/kr/parts/controller/cm-530
+[BT-410 SLAVE 모듈]: /docs/kr/parts/communication/bt-410/
+[BT-410 MASTER 모듈]: /docs/kr/parts/communication/bt-410/
 [OpenCM7.0]: /docs/kr/parts/controller/opencm70/
 [OpenCM9.04]: /docs/kr/parts/controller/opencm904/
 [자동차로봇]: /docs/kr/edu/car/
