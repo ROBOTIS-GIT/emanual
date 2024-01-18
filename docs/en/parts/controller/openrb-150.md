@@ -65,7 +65,8 @@ The OpenRB-150 also features 4 dedicated DYNAMIXEL ports, and supports the DYNAM
 |57,600 [bps]  |  -0.160 [%]   |
 |9,600 [bps]   |   0.000 [%]   |
 
-`2` RS-485 models will require [DYNAMIXEL Communication Bridge](/docs/en/parts/interface/dxl_bridge/) to convert TTL to RS-485.  
+`1` RS-485 models will require [DYNAMIXEL Communication Bridge](/docs/en/parts/interface/dxl_bridge/) to convert TTL to RS-485. 
+
 `2` 24V models require a separate power connection.  
 
 **NOTE**: The 5V regulator has been updated as of 2024, resulting in a modification to the DC current (5V) value from 300mA to 150mA.
