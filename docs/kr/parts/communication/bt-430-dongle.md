@@ -73,7 +73,7 @@ BT-430 동글과 BLE지원 제어기 및 BT-410 SLAVE 모듈의 조합으로 가
 |    [CM-530]   |    X    |    X     |                    O                     |   -   |       -      |            O            |             O               |
 |  [OpenCM7.0]  |    X    |    X     |                    O                     |   O   |       O      |            O            |             -               |
 | [OpenCM9.04]  |    X    |    X     |                    O                     |   -   |       -      |            O            |             O               |
-|  [Car Robot]  |    X    |    X     |                    -                     |   O   |       -      |            -            |             -               |
+|  [자동차로봇]  |    X    |    X     |                   -                     |   O   |       -      |            -            |             -               |
 
 
 # [통신 모드](#통신-모드)
@@ -222,8 +222,8 @@ BT-430 동글 드라이버가 PC에 바르게 설치되었는지 확인하는 �
 표기되지 않은 인증에 대해서는 별도 문의하시기 바랍니다.
 - KC
 
-[알블록]: https://rblock.steamcup.org/?lang=en
-[알모션]: https://rmotion.steamcup.org/?lang=en
+[알블록]: https://rblock.steamcup.org/?lang=ko
+[알모션]: https://rmotion.steamcup.org/?lang=ko
 [R+ Scratch]: /docs/kr/software/rplus2/scratch/
 [RB-86]: /docs/kr/parts/controller/rb-86
 [RB-88]: /docs/kr/parts/controller/rb-88
@@ -233,6 +233,6 @@ BT-430 동글 드라이버가 PC에 바르게 설치되었는지 확인하는 �
 [CM-530]: /docs/kr/parts/controller/cm-530
 [BT-410 SLAVE 모듈]: /docs/kr/parts/communication/bt-410/
 [BT-410 MASTER 모듈]: /docs/kr/parts/communication/bt-410/
-[OpenCM7.0]: /docs/kr/parts/controller/opencm70/
+[OpenCM7.0]: /docs/kr/parts/controller/opencm7/
 [OpenCM9.04]: /docs/kr/parts/controller/opencm904/
 [자동차로봇]: /docs/kr/edu/car/

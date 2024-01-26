@@ -71,10 +71,7 @@ Work possible with combinations of BT-430 Dongle and BLE-supported controllers o
 |    [CM-150]   |    X    |    X     |                    O                     |   -   |       O      |            O            |             -               |
 |    [CM-200]   |    X    |    X     |                    O                     |   -   |       O      |            O            |             O               |
 |    [CM-530]   |    X    |    X     |                    O                     |   -   |       -      |            O            |             O               |
-|  [OpenCM7.0]  |    X    |    X     |                    O                     |   O   |       O      |            O            |             -               |
 | [OpenCM9.04]  |    X    |    X     |                    O                     |   -   |       -      |            O            |             O               |
-|  [Car Robot]  |    X    |    X     |                    -                     |   O   |       -      |            -            |             -               |
-
 
 
 # [Communication Modes](#communication-modes)
@@ -126,9 +123,10 @@ The BT-430 Dongle can establish reliable 1:1 communication through pairing.
 
 7. Enter `!` as shown
 
- below in the terminal, and when OK appears, it enters command mode. Here, if OK continues to appear when entering AT, it means that the BT-430 Dongle has successfully connected, and you can configure it.
+    below in the terminal, and when OK appears, it enters command mode. Here, if OK continues to appear when entering AT, it means that the BT-430 Dongle has successfully connected, and you can configure it.
 
     ![img](/assets/images/parts/communication/bt-410_dongle_09.png)
+
 
 8. This is the device search feature. Enter AT+BTINQ=DBE7DF000001 and press Enter, and devices with MAC addresses greater than or equal to DBE7DF000001 among nearby BLE devices will be searched.
 
@@ -170,7 +168,7 @@ You can change the settings of the BT-430 Dongle using AT commands in the termin
 
     A success message will be displayed after a few seconds.
 
-    ![img](/assets/images/parts/communication/bt-410_dongle_16.jpg)
+    ![img](/assets/images/parts/communication/bt-410_dongle_16.png)
 
 # [Check Driver](#check-driver)
 How to check whether the BT-430 Dongle driver is installed correctly is as follows.
@@ -230,14 +228,12 @@ Please inquire us for information regarding unlisted certifications.
 [R-Block]: https://rblock.steamcup.org/?lang=en
 [R-Motion]: https://rmotion.steamcup.org/?lang=en
 [R+ Scratch]: /docs/en/software/rplus2/scratch/
-[RB-86]: /docs/en/parts/controller/rb-86
-[RB-88]: /docs/en/parts/controller/rb-88
-[CM-151]: /docs/en/parts/controller/cm-151
-[CM-150]: /docs/en/parts/controller/cm-150
+[RB-86]: /docs/en/parts/controller/rb-86/
+[RB-88]: /docs/en/parts/controller/rb-88/
+[CM-151]: /docs/en/parts/controller/cm-151/
+[CM-150]: /docs/en/parts/controller/cm-150/
 [BT-410 SLAVE module]: /docs/en/parts/communication/bt-410/
 [BT-410 MASTER module]: /docs/en/parts/communication/bt-410/
-[CM-200]: /docs/en/parts/controller/cm-200
-[CM-530]: /docs/en/parts/controller/cm-530
-[OpenCM7.0]: /docs/en/parts/controller/opencm70/
+[CM-200]: /docs/en/parts/controller/cm-200/
+[CM-530]: /docs/en/parts/controller/cm-530/
 [OpenCM9.04]: /docs/en/parts/controller/opencm904/
-[Car Robot]: /docs/en/edu/car/
