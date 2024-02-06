@@ -26882,204 +26882,162 @@ cm-900:
 
 #rb-86 sidebar
 rb-86:
-  - titlekr: "개요"
-    urlkr: /parts/controller/rb-86/#개요
-  - titlekr: "제품사양"
-    urlkr: /parts/controller/rb-86/#제품-사양
-  - titlekr: "각 부 명칭"
-    urlkr: /parts/controller/rb-86/#각-부-명칭
-  - titlekr: "전원 연결"
-    urlkr: /parts/controller/rb-86/#전원-연결      
-  - titlekr: "제어기 모드 선택"
-    urlkr: /parts/controller/rb-86/#제어기-모드-선택
-    children:
-    - titlekr: "Play 모드"
-      urlkr: /parts/controller/rb-86/#play-모드
-    - titlekr: "Manage 모드"
-      urlkr: /parts/controller/rb-86/#manage-모드
-    - titlekr: "언플러그드 코딩 모드"
-      urlkr: /parts/controller/rb-86/#언플러그드-코딩-모드      
-    - titlekr: "복구 모드"
-      urlkr: /parts/controller/rb-86/#복구-모드
-    - titlekr: "제어기 종료"
-      urlkr: /parts/controller/rb-86/#제어기-종료  
-  - titlekr: "십자혼 조립 방법"
-    urlkr: /parts/controller/rb-86/#십자혼-조립-방법  
-  - titlekr : "STEAMCUP 연결"
-    urlkr : /parts/controller/rb-86/#steamcup-연결  
-    children:
-    - titlekr: "PC에서 연결"
-      urlkr: /parts/controller/rb-86/#pc에서-연결     
-    - titlekr: "모바일에서 연결"
-      urlkr: /parts/controller/rb-86/#모바일에서-연결   
-  - titlekr: "펌웨어 업데이트"
-    urlkr: /parts/controller/rb-86/#펌웨어-업데이트          
-  - titlekr: "조종기 연결"
-    urlkr: /parts/controller/rb-86/#조종기-연결
-    children:
-    - titlekr: "RC-100B 또는 RC-300 연결"
-      urlkr: /parts/controller/rb-86/#rc-100b-또는-rc-300-연결    
-    - titlekr: "STEAMCUP에서 조종기 연결"
-      urlkr: /parts/controller/rb-86/#steamcup에서-조종기-연결      
-  - titlekr: "직진성 보정"
-    urlkr: /parts/controller/rb-86/#직진성-보정   
-
   - title: "Introduction"
     titlekr: "개요"
-    url: /parts/controller/rb-86/#introduction
+    # url: /parts/controller/rb-86/#introduction
     urlkr: /parts/controller/rb-86/#개요
   - title: "Specifications"
     titlekr: "제품사양"
-    url: /parts/controller/rb-86/#specifications
+    # url: /parts/controller/rb-86/#specifications
     urlkr: /parts/controller/rb-86/#제품-사양
   - title: "Layout"
     titlekr: "각 부 명칭"
-    url: /parts/controller/rb-86/#layout
+    # url: /parts/controller/rb-86/#layout
     urlkr: /parts/controller/rb-86/#각-부-명칭
   - title: "Power Supply"
     titlekr: "전원 연결"
-    url: /parts/controller/rb-86/#power-supply
+    # url: /parts/controller/rb-86/#power-supply
     urlkr: /parts/controller/rb-86/#전원-연결      
   - title: "Controller Modes"
     titlekr: "제어기 모드 선택"
-    url: /parts/controller/rb-86/#controller-modes
+    # url: /parts/controller/rb-86/#controller-modes
     urlkr: /parts/controller/rb-86/#제어기-모드-선택
     children:
     - title: "Play Mode"
       titlekr: "Play 모드"
-      url: /parts/controller/rb-86/#play-mode
+      # url: /parts/controller/rb-86/#play-mode
       urlkr: /parts/controller/rb-86/#play-모드
     - title: "Manage Mode"
       titlekr: "Manage 모드"
-      url: /parts/controller/rb-86/#manage-mode
+      # url: /parts/controller/rb-86/#manage-mode
       urlkr: /parts/controller/rb-86/#manage-모드
     - title: "Unplugged Coding Mode"
       titlekr: "언플러그드 코딩 모드"
-      url: /parts/controller/rb-86/#unplugged-coding-mode
+      # url: /parts/controller/rb-86/#unplugged-coding-mode
       urlkr: /parts/controller/rb-86/#언플러그드-코딩-모드    
     - title: "Recovery Mode"
       titlekr: "복구 모드"
-      url: /parts/controller/rb-86/#recovery-mode
+      # url: /parts/controller/rb-86/#recovery-mode
       urlkr: /parts/controller/rb-86/#복구-모드
     - title: "Controller Shutdown"
       titlekr: "제어기 종료"
-      url: /parts/controller/rb-86/#controller-shutdown
+      # url: /parts/controller/rb-86/#controller-shutdown
       urlkr: /parts/controller/rb-86/#제어기-종료  
   - title: "Cross Hub Assembly"
     titlekr: "십자혼 조립 방법"
-    url: /parts/controller/rb-86/#cross-hub-assembly
+    # url: /parts/controller/rb-86/#cross-hub-assembly
     urlkr: /parts/controller/rb-86/#십자혼-조립-방법  
   - title: "Connect to STEAMCUP"
     titlekr : "STEAMCUP 연결"
-    url: /parts/controller/rb-86/#connect-to-steamcup
+    # url: /parts/controller/rb-86/#connect-to-steamcup
     urlkr : /parts/controller/rb-86/#steamcup-연결  
     children:
     - title: "Connect from PC"
       titlekr: "PC에서 연결"
-      url: /parts/controller/rb-86/#connect-from-pc
+      # url: /parts/controller/rb-86/#connect-from-pc
       urlkr: /parts/controller/rb-86/#pc에서-연결     
     - title: "Connect from Mobile"
       titlekr: "모바일에서 연결"
-      url: /parts/controller/rb-86/#connect-from-mobile
+      # url: /parts/controller/rb-86/#connect-from-mobile
       urlkr: /parts/controller/rb-86/#모바일에서-연결   
   - title: "Firmware Update"
     titlekr: "펌웨어 업데이트"
-    url: /parts/controller/rb-86/#firmware-update
+    # url: /parts/controller/rb-86/#firmware-update
     urlkr: /parts/controller/rb-86/#펌웨어-업데이트          
   - title: "Connect to Remote Controller"
     titlekr: "조종기 연결"
-    url: /parts/controller/rb-86/#connect-to-remote-controller
+    # url: /parts/controller/rb-86/#connect-to-remote-controller
     urlkr: /parts/controller/rb-86/#조종기-연결
     children:
     - title: "Connect to RC-100B or RC-300"
       titlekr: "RC-100B 또는 RC-300 연결"
-      url: /parts/controller/rb-86/#connect-to-rc-100b-or-rc-300
+      # url: /parts/controller/rb-86/#connect-to-rc-100b-or-rc-300
       urlkr: /parts/controller/rb-86/#rc-100b-또는-rc-300-연결    
     - title: "Connect from STEAMCUP to Remote Controller"
       titlekr: "STEAMCUP에서 조종기 연결"
-      url: /parts/controller/rb-86/#connect-from-steamcup-to-remote-controller
+      # url: /parts/controller/rb-86/#connect-from-steamcup-to-remote-controller
       urlkr: /parts/controller/rb-86/#steamcup에서-조종기-연결      
   - title: "Straightness Calibration"
     titlekr: "직진성 보정"
-    url: /parts/controller/rb-86/#straightness-calibration
+    # url: /parts/controller/rb-86/#straightness-calibration
     urlkr: /parts/controller/rb-86/#직진성-보정
 
 #rb-88 sidebar
 rb-88:
   - title: "Introduction"
     titlekr: "개요"
-    url: /parts/controller/rb-88/#introduction
+    # url: /parts/controller/rb-88/#introduction
     urlkr: /parts/controller/rb-88/#개요
   - title: "Specifications"
     titlekr: "제품사양"
-    url: /parts/controller/rb-88/#specifications
+    # url: /parts/controller/rb-88/#specifications
     urlkr: /parts/controller/rb-88/#제품-사양
   - title: "Layout"
     titlekr: "각 부 명칭"
-    url: /parts/controller/rb-88/#layout
+    # url: /parts/controller/rb-88/#layout
     urlkr: /parts/controller/rb-88/#각-부-명칭
   - title: "Power Supply"
     titlekr: "전원 연결"
-    url: /parts/controller/rb-88/#power-supply
+    # url: /parts/controller/rb-88/#power-supply
     urlkr: /parts/controller/rb-88/#전원-연결      
   - title: "Controller Modes"
     titlekr: "제어기 모드 선택"
-    url: /parts/controller/rb-88/#controller-modes
+    # url: /parts/controller/rb-88/#controller-modes
     urlkr: /parts/controller/rb-88/#제어기-모드-선택
     children:
     - title: "Play Mode"
       titlekr: "Play 모드"
-      url: /parts/controller/rb-88/#play-mode
+      # url: /parts/controller/rb-88/#play-mode
       urlkr: /parts/controller/rb-88/#play-모드
     - title: "Manage Mode"
       titlekr: "Manage 모드"
-      url: /parts/controller/rb-88/#manage-mode
+      # url: /parts/controller/rb-88/#manage-mode
       urlkr: /parts/controller/rb-88/#manage-모드
     - title: "Recovery Mode"
       titlekr: "복구 모드"
-      url: /parts/controller/rb-88/#recovery-mode
+      # url: /parts/controller/rb-88/#recovery-mode
       urlkr: /parts/controller/rb-88/#복구-모드
     - title: "Controller Shutdown"
       titlekr: "제어기 종료"
-      url: /parts/controller/rb-88/#controller-shutdown
+      # url: /parts/controller/rb-88/#controller-shutdown
       urlkr: /parts/controller/rb-88/#제어기-종료  
   - title: "Cross Hub Assembly"
     titlekr: "십자혼 조립 방법"
-    url: /parts/controller/rb-88/#cross-hub-assembly
+    # url: /parts/controller/rb-88/#cross-hub-assembly
     urlkr: /parts/controller/rb-88/#십자혼-조립-방법  
   - title: "Connect to STEAMCUP"
     titlekr : "STEAMCUP 연결"
-    url: /parts/controller/rb-88/#connect-to-steamcup
+    # url: /parts/controller/rb-88/#connect-to-steamcup
     urlkr : /parts/controller/rb-88/#steamcup-연결  
     children:
     - title: "Connect from PC"
       titlekr: "PC에서 연결"
-      url: /parts/controller/rb-88/#connect-from-pc
+      # url: /parts/controller/rb-88/#connect-from-pc
       urlkr: /parts/controller/rb-88/#pc에서-연결     
     - title: "Connect from Mobile"
       titlekr: "모바일에서 연결"
-      url: /parts/controller/rb-88/#connect-from-mobile
+      # url: /parts/controller/rb-88/#connect-from-mobile
       urlkr: /parts/controller/rb-88/#모바일에서-연결   
   - title: "Firmware Update"
     titlekr: "펌웨어 업데이트"
-    url: /parts/controller/rb-88/#firmware-update
+    # url: /parts/controller/rb-88/#firmware-update
     urlkr: /parts/controller/rb-88/#펌웨어-업데이트          
   - title: "Connect to Remote Controller"
     titlekr: "조종기 연결"
-    url: /parts/controller/rb-88/#connect-to-remote-controller
+    # url: /parts/controller/rb-88/#connect-to-remote-controller
     urlkr: /parts/controller/rb-88/#조종기-연결
     children:
     - title: "Connect to RC-100B or RC-300"
       titlekr: "RC-100B 또는 RC-300 연결"
-      url: /parts/controller/rb-88/#connect-to-rc-100b-or-rc-300
+      # url: /parts/controller/rb-88/#connect-to-rc-100b-or-rc-300
       urlkr: /parts/controller/rb-88/#rc-100b-또는-rc-300-연결    
     - title: "Connect from STEAMCUP to Remote Controller"
       titlekr: "STEAMCUP에서 조종기 연결"
-      url: /parts/controller/rb-88/#connect-from-steamcup-to-remote-controller
+      # url: /parts/controller/rb-88/#connect-from-steamcup-to-remote-controller
       urlkr: /parts/controller/rb-88/#steamcup에서-조종기-연결      
   - title: "Straightness Calibration"
     titlekr: "직진성 보정"
-    url: /parts/controller/rb-88/#straightness-calibration
+    # url: /parts/controller/rb-88/#straightness-calibration
     urlkr: /parts/controller/rb-88/#직진성-보정
 
 #OpenCM 9.04_JP sidebar
