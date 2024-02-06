@@ -52,13 +52,22 @@ The OpenRB-150 also features 4 dedicated DYNAMIXEL ports, and supports the DYNAM
 | EEPROM                          | no                                                          |
 | CLOCK SPEED                     | 32.768 kHz (RTC), 48 MHz                                    |
 | LED_BUILTIN                     | 3                                                           |
-| DYNAMIXEL TTL Port              | 4 (Max 1 Mbps)                                              |
+| DYNAMIXEL TTL Port `1`          | 4 (Max 1 Mbps)                                              |
 | Board Dimensions                | 25 x 66 mm                                                  |
 | Supported Software              | [Arduino IDE], [DYNAMIXEL Wizard 2.0]                       |
-| Supported DYNAMIXEL<sup>*</sup> | [X Series], [MX Series], [AX Series], [P Series]            |
+| Supported DYNAMIXEL`2`          | [X Series], [MX Series], [AX Series], [P Series]            |
 
-`*` RS-485 models will require [DYNAMIXEL Communication Bridge](/docs/en/parts/interface/dxl_bridge/) to convert TTL to RS-485.  
-`*` 24V models require a separate power connection.
+`1`
+|  Baud Rate   |Margin od Error|
+|:------------:|:-------------:|
+|1M [bps]      |   0.000 [%]   |
+|115,200 [bps] |  -0.160 [%]   |
+|57,600 [bps]  |  -0.160 [%]   |
+|9,600 [bps]   |   0.000 [%]   |
+
+`1` RS-485 models will require [DYNAMIXEL Communication Bridge](/docs/en/parts/interface/dxl_bridge/) to convert TTL to RS-485. 
+
+`2` 24V models require a separate power connection.  
 
 **NOTE**: The 5V regulator has been updated as of 2024, resulting in a modification to the DC current (5V) value from 300mA to 150mA.
 {: .notice}
