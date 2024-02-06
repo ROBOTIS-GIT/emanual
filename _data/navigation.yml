@@ -26882,89 +26882,163 @@ cm-900:
 
 #rb-86 sidebar
 rb-86:
-  - titlekr: "개요"
+  - title: "Introduction"
+    titlekr: "개요"
+    # url: /parts/controller/rb-86/#introduction
     urlkr: /parts/controller/rb-86/#개요
-  - titlekr: "제품사양"
+  - title: "Specifications"
+    titlekr: "제품사양"
+    # url: /parts/controller/rb-86/#specifications
     urlkr: /parts/controller/rb-86/#제품-사양
-  - titlekr: "각 부 명칭"
+  - title: "Layout"
+    titlekr: "각 부 명칭"
+    # url: /parts/controller/rb-86/#layout
     urlkr: /parts/controller/rb-86/#각-부-명칭
-  - titlekr: "전원 연결"
+  - title: "Power Supply"
+    titlekr: "전원 연결"
+    # url: /parts/controller/rb-86/#power-supply
     urlkr: /parts/controller/rb-86/#전원-연결      
-  - titlekr: "제어기 모드 선택"
+  - title: "Controller Modes"
+    titlekr: "제어기 모드 선택"
+    # url: /parts/controller/rb-86/#controller-modes
     urlkr: /parts/controller/rb-86/#제어기-모드-선택
     children:
-    - titlekr: "Play 모드"
+    - title: "Play Mode"
+      titlekr: "Play 모드"
+      # url: /parts/controller/rb-86/#play-mode
       urlkr: /parts/controller/rb-86/#play-모드
-    - titlekr: "Manage 모드"
+    - title: "Manage Mode"
+      titlekr: "Manage 모드"
+      # url: /parts/controller/rb-86/#manage-mode
       urlkr: /parts/controller/rb-86/#manage-모드
-    - titlekr: "언플러그드 코딩 모드"
-      urlkr: /parts/controller/rb-86/#언플러그드-코딩-모드      
-    - titlekr: "복구 모드"
+    - title: "Unplugged Coding Mode"
+      titlekr: "언플러그드 코딩 모드"
+      # url: /parts/controller/rb-86/#unplugged-coding-mode
+      urlkr: /parts/controller/rb-86/#언플러그드-코딩-모드    
+    - title: "Recovery Mode"
+      titlekr: "복구 모드"
+      # url: /parts/controller/rb-86/#recovery-mode
       urlkr: /parts/controller/rb-86/#복구-모드
-    - titlekr: "제어기 종료"
+    - title: "Controller Shutdown"
+      titlekr: "제어기 종료"
+      # url: /parts/controller/rb-86/#controller-shutdown
       urlkr: /parts/controller/rb-86/#제어기-종료  
-  - titlekr: "십자혼 조립 방법"
+  - title: "Cross Hub Assembly"
+    titlekr: "십자혼 조립 방법"
+    # url: /parts/controller/rb-86/#cross-hub-assembly
     urlkr: /parts/controller/rb-86/#십자혼-조립-방법  
-  - titlekr : "STEAMCUP 연결"
+  - title: "Connect to STEAMCUP"
+    titlekr : "STEAMCUP 연결"
+    # url: /parts/controller/rb-86/#connect-to-steamcup
     urlkr : /parts/controller/rb-86/#steamcup-연결  
     children:
-    - titlekr: "PC에서 연결"
+    - title: "Connect from PC"
+      titlekr: "PC에서 연결"
+      # url: /parts/controller/rb-86/#connect-from-pc
       urlkr: /parts/controller/rb-86/#pc에서-연결     
-    - titlekr: "모바일에서 연결"
+    - title: "Connect from Mobile"
+      titlekr: "모바일에서 연결"
+      # url: /parts/controller/rb-86/#connect-from-mobile
       urlkr: /parts/controller/rb-86/#모바일에서-연결   
-  - titlekr: "펌웨어 업데이트"
+  - title: "Firmware Update"
+    titlekr: "펌웨어 업데이트"
+    # url: /parts/controller/rb-86/#firmware-update
     urlkr: /parts/controller/rb-86/#펌웨어-업데이트          
-  - titlekr: "조종기 연결"
+  - title: "Connect to Remote Controller"
+    titlekr: "조종기 연결"
+    # url: /parts/controller/rb-86/#connect-to-remote-controller
     urlkr: /parts/controller/rb-86/#조종기-연결
     children:
-    - titlekr: "RC-100B 또는 RC-300 연결"
+    - title: "Connect to RC-100B or RC-300"
+      titlekr: "RC-100B 또는 RC-300 연결"
+      # url: /parts/controller/rb-86/#connect-to-rc-100b-or-rc-300
       urlkr: /parts/controller/rb-86/#rc-100b-또는-rc-300-연결    
-    - titlekr: "STEAMCUP에서 조종기 연결"
+    - title: "Connect from STEAMCUP to Remote Controller"
+      titlekr: "STEAMCUP에서 조종기 연결"
+      # url: /parts/controller/rb-86/#connect-from-steamcup-to-remote-controller
       urlkr: /parts/controller/rb-86/#steamcup에서-조종기-연결      
-  - titlekr: "직진성 보정"
-    urlkr: /parts/controller/rb-86/#직진성-보정   
+  - title: "Straightness Calibration"
+    titlekr: "직진성 보정"
+    # url: /parts/controller/rb-86/#straightness-calibration
+    urlkr: /parts/controller/rb-86/#직진성-보정
 
 #rb-88 sidebar
 rb-88:
-  - titlekr: "개요"
+  - title: "Introduction"
+    titlekr: "개요"
+    # url: /parts/controller/rb-88/#introduction
     urlkr: /parts/controller/rb-88/#개요
-  - titlekr: "제품사양"
+  - title: "Specifications"
+    titlekr: "제품사양"
+    # url: /parts/controller/rb-88/#specifications
     urlkr: /parts/controller/rb-88/#제품-사양
-  - titlekr: "각 부 명칭"
+  - title: "Layout"
+    titlekr: "각 부 명칭"
+    # url: /parts/controller/rb-88/#layout
     urlkr: /parts/controller/rb-88/#각-부-명칭
-  - titlekr: "전원 연결"
+  - title: "Power Supply"
+    titlekr: "전원 연결"
+    # url: /parts/controller/rb-88/#power-supply
     urlkr: /parts/controller/rb-88/#전원-연결      
-  - titlekr: "제어기 모드 선택"
+  - title: "Controller Modes"
+    titlekr: "제어기 모드 선택"
+    # url: /parts/controller/rb-88/#controller-modes
     urlkr: /parts/controller/rb-88/#제어기-모드-선택
     children:
-    - titlekr: "Play 모드"
+    - title: "Play Mode"
+      titlekr: "Play 모드"
+      # url: /parts/controller/rb-88/#play-mode
       urlkr: /parts/controller/rb-88/#play-모드
-    - titlekr: "Manage 모드"
+    - title: "Manage Mode"
+      titlekr: "Manage 모드"
+      # url: /parts/controller/rb-88/#manage-mode
       urlkr: /parts/controller/rb-88/#manage-모드
-    - titlekr: "복구 모드"
+    - title: "Recovery Mode"
+      titlekr: "복구 모드"
+      # url: /parts/controller/rb-88/#recovery-mode
       urlkr: /parts/controller/rb-88/#복구-모드
-    - titlekr: "제어기 종료"
+    - title: "Controller Shutdown"
+      titlekr: "제어기 종료"
+      # url: /parts/controller/rb-88/#controller-shutdown
       urlkr: /parts/controller/rb-88/#제어기-종료  
-  - titlekr: "십자혼 조립 방법"
+  - title: "Cross Hub Assembly"
+    titlekr: "십자혼 조립 방법"
+    # url: /parts/controller/rb-88/#cross-hub-assembly
     urlkr: /parts/controller/rb-88/#십자혼-조립-방법  
-  - titlekr : "STEAMCUP 연결"
+  - title: "Connect to STEAMCUP"
+    titlekr : "STEAMCUP 연결"
+    # url: /parts/controller/rb-88/#connect-to-steamcup
     urlkr : /parts/controller/rb-88/#steamcup-연결  
     children:
-    - titlekr: "PC에서 연결"
+    - title: "Connect from PC"
+      titlekr: "PC에서 연결"
+      # url: /parts/controller/rb-88/#connect-from-pc
       urlkr: /parts/controller/rb-88/#pc에서-연결     
-    - titlekr: "모바일에서 연결"
+    - title: "Connect from Mobile"
+      titlekr: "모바일에서 연결"
+      # url: /parts/controller/rb-88/#connect-from-mobile
       urlkr: /parts/controller/rb-88/#모바일에서-연결   
-  - titlekr: "펌웨어 업데이트"
+  - title: "Firmware Update"
+    titlekr: "펌웨어 업데이트"
+    # url: /parts/controller/rb-88/#firmware-update
     urlkr: /parts/controller/rb-88/#펌웨어-업데이트          
-  - titlekr: "조종기 연결"
+  - title: "Connect to Remote Controller"
+    titlekr: "조종기 연결"
+    # url: /parts/controller/rb-88/#connect-to-remote-controller
     urlkr: /parts/controller/rb-88/#조종기-연결
     children:
-    - titlekr: "RC-100B 또는 RC-300 연결"
+    - title: "Connect to RC-100B or RC-300"
+      titlekr: "RC-100B 또는 RC-300 연결"
+      # url: /parts/controller/rb-88/#connect-to-rc-100b-or-rc-300
       urlkr: /parts/controller/rb-88/#rc-100b-또는-rc-300-연결    
-    - titlekr: "STEAMCUP에서 조종기 연결"
+    - title: "Connect from STEAMCUP to Remote Controller"
+      titlekr: "STEAMCUP에서 조종기 연결"
+      # url: /parts/controller/rb-88/#connect-from-steamcup-to-remote-controller
       urlkr: /parts/controller/rb-88/#steamcup에서-조종기-연결      
-  - titlekr: "직진성 보정"
-    urlkr: /parts/controller/rb-88/#직진성-보정   
+  - title: "Straightness Calibration"
+    titlekr: "직진성 보정"
+    # url: /parts/controller/rb-88/#straightness-calibration
+    urlkr: /parts/controller/rb-88/#직진성-보정
 
 #OpenCM 9.04_JP sidebar
 opencm904_jp:
@@ -28097,7 +28171,39 @@ rc-200:
       url: /parts/communication/rc-200/#straightness-tuning-for-cm-50
       urlkr: /parts/communication/rc-200/#cm-50-직진성-보정하기
 
-
+#RC-300 sidebar
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /parts/communication/rc-300/#introduction
+    urlkr: /parts/communication/rc-300/#개요
+  - title: "Specifications"
+    titlekr: "제품 사양"
+    url: /parts/communication/rc-300/#specifications
+    urlkr: /parts/communication/rc-300/#제품-사양
+  - title: "How to Use"
+    titlekr: "사용 방법"
+    url: /parts/communication/rc-300/#how-to-use
+    urlkr: /parts/communication/rc-300/#사용-방법
+  - title: "How to Connect"
+    titlekr: "연결하기"
+    url: /parts/communication/rc-300/#how-to-connect
+    urlkr: /parts/communication/rc-300/#연결하기
+  - title: "Code Map"
+    titlekr: "리모콘 코드 맵"
+    url: /parts/communication/rc-300/#code-map
+    urlkr: /parts/communication/rc-300/#리모콘-코드-맵
+  - title: "Communication Packet"
+    titlekr: "통신 패킷"
+    url: /parts/communication/rc-300/#communication-packet
+    urlkr: /parts/communication/rc-300/#통신-패킷
+  - title: "How to Insert Batteries"
+    titlekr: "건전지 넣는 방법"
+    url: /parts/communication/rc-300/#how-to-insert-batteries
+    urlkr: /parts/communication/rc-300/#건전지-넣는-방법
+  - title: "Tutorials"
+    titlekr: "활용 방법"
+    url: /parts/communication/rc-300/#tutorials
+    urlkr: /parts/communication/rc-300/#활용-방법
 
 #ZIG-100/110 sidebar
 zig-110:
@@ -28265,44 +28371,44 @@ bt-410-dongle:
 bt-430-dongle:
   - title: "Introduction"
     titlekr: "개요"
-    # url: /parts/communication/bt-430-dongle/#introduction
+    url: /parts/communication/bt-430-dongle/#introduction
     urlkr: /parts/communication/bt-430-dongle/#개요
   - title: "Specifications"
     titlekr: "제품 사양"
-    # url: /parts/communication/bt-410-dongle/#specifications
+    url: /parts/communication/bt-410-dongle/#specifications
     urlkr: /parts/communication/bt-430-dongle/#제품-사양
   - title: "Compatibility"
     titlekr: "호환성"
-    # url: /parts/communication/bt-430-dongle/#compatibility
+    url: /parts/communication/bt-430-dongle/#compatibility
     urlkr: /parts/communication/bt-430-dongle/#호환성
   - title: "Communication Mode"
     titlekr: "통신 모드"
-    # url: /parts/communication/bt-430-dongle/#communication-mode
+    url: /parts/communication/bt-430-dongle/#communication-mode
     urlkr: /parts/communication/bt-430-dongle/#통신-모드
   - title: "BT-410 Dongle Setting"
     titlekr: "BT-430 동글 설정하기"
-    # url: /parts/communication/bt-430-dongle/#bt-430-dongle-setting
+    url: /parts/communication/bt-430-dongle/#bt-430-dongle-setting
     urlkr: /parts/communication/bt-430-dongle/#bt-430-동글-설정하기
   - title: "AT Commands"
     titlekr: "AT 명령어"
-    # url: /parts/communication/bt-430-dongle/#at-commands
+    url: /parts/communication/bt-430-dongle/#at-commands
     urlkr: /parts/communication/bt-430-dongle/#at-명령어
   - title: "Check Driver"
     titlekr: "드라이버 설치 확인방법"
-    # url: /parts/communication/bt-430-dongle/#check-driver
+    url: /parts/communication/bt-430-dongle/#check-driver
     urlkr: /parts/communication/bt-430-dongle/#드라이버-설치-확인방법
   - title: "Install Driver Manually"
     titlekr: "드라이버 수동 설치"
-    # url: /parts/communication/bt-430-dongle/#install-driver-manually
+    url: /parts/communication/bt-430-dongle/#install-driver-manually
     urlkr: /parts/communication/bt-430-dongle/#드라이버-수동-설치
   - title: "References"
     titlekr: "참고자료"
-    # url: /parts/communication/bt-430-dongle/#references
+    url: /parts/communication/bt-430-dongle/#references
     urlkr: /parts/communication/bt-430-dongle/#참고자료
     children:
     - title: "Certifications"
       titlekr: "인증 획득"
-      # url: /parts/communication/bt-430-dongle/#certifications
+      url: /parts/communication/bt-430-dongle/#certifications
       urlkr: /parts/communication/bt-430-dongle/#인증-획득
 
 
