@@ -593,9 +593,11 @@ main:
       titlekr: "제어기"
       url: /parts/controller/controller_compatibility/
       children:
-      - titlekr: "RB-86"
+      - title: "RB-86"
+        titlekr: "RB-86"
         url: /parts/controller/rb-86/
-      - titlekr: "RB-88"
+      - title: "RB-88"
+        titlekr: "RB-88"
         url: /parts/controller/rb-88/
       - title: "CM-50"
         titlekr: "CM-50"
