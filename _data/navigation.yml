@@ -656,6 +656,9 @@ main:
       - title: "RC-200"
         titlekr: "RC-200"
         url: /parts/communication/rc-200/
+        - title: "RC-300"
+        titlekr: "RC-300"
+        url: /parts/communication/rc-300/
       - title: "BT-210"
         titlekr: "BT-210"
         url: /parts/communication/bt-210/
@@ -665,7 +668,8 @@ main:
       - title: "BT-410 Dongle"
         titlekr: "BT-410 동글"
         url: /parts/communication/bt-410-dongle/
-      - titlekr: "BT-430 동글"
+      - title: "BT-430 Dongle"
+        titlekr: "BT-430 동글"
         url: /parts/communication/bt-430-dongle/
       - title: "*ZIG-100/110A"
         titlekr: "*ZIG-100/110A"
