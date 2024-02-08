@@ -28178,6 +28178,7 @@ rc-200:
       urlkr: /parts/communication/rc-200/#cm-50-직진성-보정하기
 
 #RC-300 sidebar
+rc-300:
   - title: "Introduction"
     titlekr: "개요"
     url: /parts/communication/rc-300/#introduction
