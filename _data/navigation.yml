@@ -656,7 +656,7 @@ main:
       - title: "RC-200"
         titlekr: "RC-200"
         url: /parts/communication/rc-200/
-        - title: "RC-300"
+      - title: "RC-300"
         titlekr: "RC-300"
         url: /parts/communication/rc-300/
       - title: "BT-210"
