@@ -138,7 +138,7 @@
   {% capture sidetab_warning_3mm %}
   **주의**: 케이스 측면 (Side Tab)에 프레임 결합 시, 나사 길이에 유의하세요.  
   
-  ![3mm_Mount_Deep_Warning](/assets/images/dxl/x/assembly/xl430/etc/xl430_3mm_mount_warning.jpg)
+  ![3mm_Mount_Deep_Warning](/assets/images/dxl/x/assembly/xl430/etc/xl430_4mm_mount_warning.png)
   
   {% endcapture %}
   
