@@ -132,7 +132,7 @@ Custom made DYNAMIXEL frames can also be installed by following the instructions
   {% capture sidetab_warning_3mm %}
 WARNING: Before assembling your DYNAMIXEL accessories, ensure that all screws and bolts are the correct length by considering the depth of your DYNAMIXEL’s mounting points. If the length of screw is larger than the depth of the mounting point your frame or DYNAMIXEL may be damaged during assembly.
   
-  ![3mm_Mount_Deep_Warning](/assets/images/dxl/x/assembly/xl430/etc/xl430_3mm_mount_warning.jpg)
+  ![3mm_Mount_Deep_Warning](/assets/images/dxl/x/assembly/xl430/etc/xl430_4mm_mount_warning.png)
   
   {% endcapture %}
   
