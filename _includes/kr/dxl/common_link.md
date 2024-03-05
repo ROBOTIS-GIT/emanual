@@ -70,6 +70,43 @@
 [Goal Position(564)]: #goal-position564
 [Velocity Limit(44)]: #velocity-limit44
 
+<!-- DXL-Y -->
+
+[Drive Mode(32)]: #drive-mode32
+[Position Limit Threshold(38)]: #position-limit-threshold38
+[Following Error Threshold(44)]: #following-error-threshold44
+[Inverter Temperature Limit(56)]: #inverter-temperature-limit56
+[Motor Temperature Limit(57)]: #motor-temperature-limit57
+[Max Voltage Limit(60)]: #maxmin-voltage-limit60-62
+[Min Voltage Limit(62)]: #maxmin-voltage-limit60-62
+[Max/Min Voltage Limit(60, 62)]: #maxmin-voltage-limit60-62
+[PWM Limit(64)]: #pwm-litim64
+[Current Limit(66)]: #current-limit66
+[Stuatus Return Level (68)]: #stuatus-returnlevel68
+[Velocity Limit(72)]: #velocity-limit72
+[Max position limit(76)]: #max-position-limit76-84
+[Min Position limit(84)]: #min-position-limit76-84
+[Controller State(152)]: #controller-state152
+[Error Code(153)]: #error-code153
+[Profile Acceleration(240)]: #profile-acceleration240
+[Profile Velocity(244)]: #profile-velocity244
+[Profile Acceleration Time(248)]: #profile-acceleration-time248
+[Profile Time(252)]: #profile-time252
+[Torque Enable(512)]: #torque-enable512
+[Goal PWM(524)]: #goal-pwm524
+[Goal Current(526)]: #goal-current526
+[Goal Velocity(528)]: #goal-velocity528
+[Goal Position(532)]: #goal-position532
+[Moving Status(541)]: #moving-status541
+[Present Velocity(548)]: #present-velocity548
+[Present Position(552)]: #present-position552
+[Position Trajectory(560)]: #position-trajectory560
+[Velocity Trajectory(564)]: #velocity-trajectory564
+[Present Input Voltage(568)]: #present-input-voltage568
+[Present Inverter Temperature(570)]: #present-inverter-temperature570
+[Present Motor Temperature(571)]: #present-motor-temperature571
+
+
 <!--Common Links -->
 
 [호환성 가이드]: http://www.robotis.com/service/compatibility_table.php?cate=dx
