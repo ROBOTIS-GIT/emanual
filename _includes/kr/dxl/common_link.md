@@ -73,6 +73,7 @@
 <!-- DXL-Y -->
 
 [Drive Mode(32)]: #drive-mode32
+[Operating Mode(33)]: #operating-mode33
 [Position Limit Threshold(38)]: #position-limit-threshold38
 [Following Error Threshold(44)]: #following-error-threshold44
 [Inverter Temperature Limit(56)]: #inverter-temperature-limit56
@@ -90,8 +91,6 @@
 [Error Code(153)]: #error-code153
 [Profile Acceleration(240)]: #profile-acceleration240
 [Profile Velocity(244)]: #profile-velocity244
-[Profile Acceleration Time(248)]: #profile-acceleration-time248
-[Profile Time(252)]: #profile-time252
 [Torque Enable(512)]: #torque-enable512
 [Goal PWM(524)]: #goal-pwm524
 [Goal Current(526)]: #goal-current526

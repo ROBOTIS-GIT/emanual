@@ -12,7 +12,7 @@
 ![](/assets/images/dxl/y/operating_mode_1.PNG)
 
 #### [속도 제어 모드](#속도-제어-모드)
-![](/assets/images/dxl/y/operating_mode_1.PNG)
+![](/assets/images/dxl/y/operating_mode_2.PNG)
 
  #### [위치 제어 모드](#위치-제어-모드)
-![](/assets/images/dxl/y/operating_mode_1.PNG)
+![](/assets/images/dxl/y/operating_mode_3.PNG)
