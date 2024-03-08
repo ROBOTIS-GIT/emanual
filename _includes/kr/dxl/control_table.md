@@ -73,6 +73,7 @@ Packet에 대한 자세한 내용은 [{{ protocol }}]을 참고해주세요.
 {% else %} 
 **EEPROM Area에 위치한 모든 데이터는 Torque Enable({{ torque_enable }})의 값이 '0'(Torque OFF)일 때만 변경할 수 있습니다.**
 {: .notice--warning}
+{% endif %}
 
 ### [크기](#크기)
 데이터의 크기는 용도에 따라 {{ data_size }} byte로 정해져 있습니다. Instruction Packet을 통해 데이터를 변경할 때는 해당 데이터의 크기를 확인하시기 바랍니다.  
