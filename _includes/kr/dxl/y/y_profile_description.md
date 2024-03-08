@@ -21,12 +21,11 @@ Profile이란 모터 구동 시 급격하게 변하는 속도와 가속도를 �
 
 <div class="notice--success">{{ profile_vel_ex1 | markdownify }}</div>
 
-| 조건                                           
-               | 프로파일 형태              |
-|:--------------------------------------------------------------|:---------------------------|
-| Profile Velocity(244) = 0                                     | 프로파일 미사용(Step 명령) |
-| (Profile Velocity(244) ≠ 0) & (Profile Acceleration(240) = 0) | 사각 프로파일              |
-| (Profile Velocity(244) ≠ 0) & (Profile Acceleration(240) ≠ 0) | 사다리꼴 프로파일          |
+| 조건                                                           | 프로파일 형태              |
+|:--------------------------------------------------------------:|:---------------------------|
+| Profile Velocity(244) = 0                                      | 프로파일 미사용(Step 명령) |
+| (Profile Velocity(244) ≠ 0) & (Profile Acceleration(240) = 0)  | 사각 프로파일              |
+| (Profile Velocity(244) ≠ 0) & (Profile Acceleration(240) ≠ 0)  | 사다리꼴 프로파일          |
 
 ![](/assets/images/dxl/y//profile_2.PNG)
 
