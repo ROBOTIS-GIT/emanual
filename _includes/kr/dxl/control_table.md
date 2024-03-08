@@ -62,9 +62,6 @@ Packet에 대한 자세한 내용은 [{{ protocol }}]을 참고해주세요.
 {% else %}
 **참고** : 음수의 표현 방법은 2의 보수(Two’s complement) 규칙을 따릅니다. 2의 보수에 대한 자세한 설명은 위키피디아의 [Two's complement]를 참고하세요.
 {: .notice}
-{% endif %}
-
-{% if page.product_group=='dxl_y' %}
 
 {% else %}
 ### [영역 (EEPROM, RAM)](#영역-eeprom-ram)
