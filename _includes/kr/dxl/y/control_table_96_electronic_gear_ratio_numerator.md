@@ -4,7 +4,7 @@
 [실제 모터 목표 펄스] = [Goal Position(532)] &#10005; $\frac{Electronic Gear Ratio Numerator(96)}{Electronic Gear Ratio Denominator(100)}$  
 Goal Position532 = 실제 모터 목표 펄스 &#10005; $\frac{Electronic Gear Ratio Denominator(100)}{Electronic Electronic Gear Ratio Numerator(96)}$
 
-![](1/assets/images/dxl/y/electronic_gear.PNG)
+![](/assets/images/dxl/y/electronic_gear.PNG)
 
 전자 기어비 설정 예시는 다음과 같습니다.
 

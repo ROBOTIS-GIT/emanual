@@ -34,7 +34,6 @@ Address는 Instruction Packet으로 컨트롤 테이블의 특정 데이터를 �
         <td>RAM 영역은 전원이 인가될 때마다 다시 기본값으로 설정됩니다(Volatile).<br />
             이 영역의 값은 Torque Enable의 값에 상관 없이 변경 가능.
         </td>
-</td>
     </tr>
     <tr>
         <td align="center" bgcolor= "#e2efd9" >Hybrid</td>
