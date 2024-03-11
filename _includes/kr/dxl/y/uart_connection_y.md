@@ -1,6 +1,6 @@
 
 
-### [RS-485 통신](#rs485-통신)
+### [RS-485 통신](#rs-485-통신)
 Main Controller를 직접 제작하여 DYNAMIXEL-Y를 제어하기 위해서는 Main Controller UART의 신호를 RS485 type으로 변환시켜 주어야 합니다. 다음은 권장 회로도 입니다.
 
 ![](/assets/images/dxl/y/uart_connection.PNG)

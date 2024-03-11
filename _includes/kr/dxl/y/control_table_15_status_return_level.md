@@ -9,4 +9,4 @@ Status Packet의 반환하는 방식을 결정합니다.
 **참고**: Instruction packet 의 ID가 Broadcast ID(0xFE) 인 경우는 Status Return Level(15)의 설정 값과 무관하게 Read Instruction 또는 Write Instruction에 대한 Status Packet은 반환되지 않습니다. 더 자세한 설명은 [Protocol 2.0]의 [Status Packet]항목을 참조하세요.
 {: .notice}
 
-[Status Packet] : /docs/kr/dxl/protocol2/#packet
+[Status Packet]: /docs/kr/dxl/protocol2/#packet

@@ -21,3 +21,4 @@ Bus Watchdog(8)의 값을 ‘0’으로 변경하거나 Error Clear Packet을 �
 Goal Velocity(528)에 ‘150’을 쓰면, 장치는 CCW 방향으로 회전합니다.
 {% endcapture %}
 
+<div class="notice--success">{{ bus_watchdog_ex1 | markdownify }}</div>
