@@ -29,7 +29,8 @@ Multi-Turn Backup Battery를 교체한 후에 반드시 실행하여야 정상�
 
 #### [Error Clear Packet](#error-clear-packet)
 
-DYNAMIXEL-Y에서 Error가 발생한 경우 Clear가 가능합니다. Error Code(140)가 0이 아닌 경우 Clear Instruction Packet으로 초기화가 가능합니다. 초기화가 불가능한 경우 Status Packet의 Error 필드에 Result Fail(0x01) 발생합니다. 
+DYNAMIXEL-Y에서 Error가 발생한 경우 Clear가 가능합니다.  
+Error Code(140)가 0이 아닌 경우 Clear Instruction Packet으로 초기화가 가능합니다. 초기화가 불가능한 경우 Status Packet의 Error 필드에 Result Fail(0x01) 발생합니다. 
 
 ### [Multi-Turn backup Battery 교체](#multi-turn-backup-battery-교체)
 

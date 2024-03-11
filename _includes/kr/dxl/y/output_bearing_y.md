@@ -1,5 +1,5 @@
 
-### [출력 베어링 사양 (L10=7,000hours@rated output speed)](#출력-베어링-사양-L107000hoursrated-output-speed)
+### [출력 베어링 사양 (L10=7,000hours@rated output speed)](#출력-베어링-사양-l107000hoursrated-output-speed)
 
 | Modle             | Basic dynamic load rating, C [N] |  Offset from flange, df [m] | Roller pitch circle diameter, Dp [m] | `1`Allowable Dynamic equivalent radial load, Pc_max [N] | `2`Allowable moment load, M_max [N.m] |
 |:-----------------:|:-----:|:------:|:------:|:------:|:----:|
@@ -15,12 +15,12 @@
 
 ![](/assets/images/dxl/y/bearing_formula_1.jpg)
 
-- L<sub>10</sub> Bearing life [hour]
-- N<sub>a</sub> Average output speed [rpm]
-- C Basic dynamic load rating [N]
-- P<sub>c</sub> Dynamic equivalent radial load [N]
-- T<sub>f</sub> Temperature factor (Tf=1.0 less 100℃)
-- L<sub>f</sub> Load factor (Table.B2)
+- L<sub>10</sub> - Bearing life [hour]
+- N<sub>a</sub> - Average output speed [rpm]
+- C - Basic dynamic load rating [N]
+- P<sub>c</sub> - Dynamic equivalent radial load [N]
+- T<sub>f</sub> - Temperature factor (Tf=1.0 less 100℃)
+- L<sub>f</sub> - Load factor (Table.B2)
 
 
 ### [동적 등가 반경방향 하중](#동적-등가-반경방향-하중)
@@ -28,40 +28,40 @@
 ![](/assets/images/dxl/y/bearing_formula_2.jpg)  
 ![](/assets/images/dxl/y/dynamic_equivalent_radial_load.PNG)
 
-- P<sub>c</sub> Dynamic equivalent radial load [N]
-- F<sub>r</sub> Radial load [N]
-- F<sub>a</sub> Axial load [N]
-- M Moment [N.m]
-- X Dynamic radial factor (Table.B3)
-- Y Dynamic axial factor (Table.B3)
-- D<sub>p</sub> Roller pitch circle diameter [m]
+- P<sub>c</sub> - Dynamic equivalent radial load [N]
+- F<sub>r</sub> - Radial load [N]
+- F<sub>a</sub> - Axial load [N]
+- M - Moment [N.m]
+- X - Dynamic radial factor (Table.B3)
+- Y - Dynamic axial factor (Table.B3)
+- D<sub>p</sub> - Roller pitch circle diameter [m]
 
 
 ### [동적 등가 반경방향 허용 하중](#동적-등가-반경방향-허용-하중)
 
 ![](/assets/images/dxl/y/bearing_formula_3.jpg)
 
-- L<sub>10</sub> Bearing life [hour] @ 7,000 hour
-- N<sub>n</sub> Nominal output speed [rpm] @ input speed 2,000rpm ÷ gear ratio
-- C Basic dynamic load rating [N]
-- T<sub>f</sub> Temperature factor (Tf=1.0 less 100℃) @ Tf = 1.0
-- L<sub>f</sub> Load factor (Table.B2) @ Lf=1.0
-- P<sub>c_max</sub> Allowable dynamic equivalent radial load [N]
+- L<sub>10</sub> - Bearing life [hour] @ 7,000 hour
+- N<sub>n</sub> - Nominal output speed [rpm] @ input speed 2,000rpm ÷ gear ratio
+- C- Basic dynamic load rating [N]
+- T<sub>f</sub> - Temperature factor (Tf=1.0 less 100℃) @ Tf = 1.0
+- L<sub>f</sub> - Load factor (Table.B2) @ Lf=1.0
+- P<sub>c_max</sub> - Allowable dynamic equivalent radial load [N]
 
 
 ### [반경방향 허용 하중](#반경방향-허용-하중)
 
 ![](/assets/images/dxl/y/bearing_formula_4.jpg)
 
-- P<sub>c_max</sub> Allowable dynamic equivalent radial load [N]
-- F<sub>a</sub> Axial load [N]
-- M Moment [N.m]
-- X Dynamic radial factor (Table.B3)
-- Y Dynamic axial factor (Table.B3)
-- D<sub>p</sub> Roller pitch circle diameter [m] (Table.B1)
-- d<sub>f</sub> Offset from flange [m]
-- L<sub>r</sub> Distance of radial load [m]
-- F<sub>r_max</sub> Allowable radial load [N]
+- P<sub>c_max</sub> - Allowable dynamic equivalent radial load [N]
+- F<sub>a</sub> - Axial load [N]
+- M - Moment [N.m]
+- X - Dynamic radial factor (Table.B3)
+- Y - Dynamic axial factor (Table.B3)
+- D<sub>p</sub> - Roller pitch circle diameter [m] (Table.B1)
+- d<sub>f</sub> - Offset from flange [m]
+- L<sub>r</sub> - Distance of radial load [m]
+- F<sub>r_max</sub> - Allowable radial load [N]
 
 ### [테이블](#테이블)
 

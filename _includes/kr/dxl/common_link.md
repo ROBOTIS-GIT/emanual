@@ -76,17 +76,17 @@
 [Operating Mode(33)]: #operating-mode33
 [Position Limit Threshold(38)]: #position-limit-threshold38
 [Following Error Threshold(44)]: #following-error-threshold44
-[Inverter Temperature Limit(56)]: #inverter-temperature-limit56
-[Motor Temperature Limit(57)]: #motor-temperature-limit57
+[Inverter Temperature Limit(56)]: #invertermotor-temperature-limit56-57
+[Motor Temperature Limit(57)]: #invertermotor-temperature-limit56-57
 [Max Voltage Limit(60)]: #maxmin-voltage-limit60-62
 [Min Voltage Limit(62)]: #maxmin-voltage-limit60-62
 [Max/Min Voltage Limit(60, 62)]: #maxmin-voltage-limit60-62
-[PWM Limit(64)]: #pwm-litim64
+[PWM Limit(64)]: #pwm-limit64
 [Current Limit(66)]: #current-limit66
 [Stuatus Return Level (68)]: #stuatus-returnlevel68
 [Velocity Limit(72)]: #velocity-limit72
-[Max position limit(76)]: #max-position-limit76-84
-[Min Position limit(84)]: #min-position-limit76-84
+[Max position limit(76)]: #maxmin-position-limit76-84
+[Min Position limit(84)]: #maxmin-position-limit76-84
 [Controller State(152)]: #controller-state152
 [Error Code(153)]: #error-code153
 [Profile Acceleration(240)]: #profile-acceleration240

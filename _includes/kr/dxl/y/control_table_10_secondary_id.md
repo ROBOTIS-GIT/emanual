@@ -27,7 +27,7 @@ Secondary ID(10)와 ID(7)의 차이는 다음과 같습니다.
 8. 5개의 장치들은 모두 LED를 끕니다. 단, ID ‘100’인 장치가 없으므로 Status Packet은 반환되지 않습니다.
 {% endcapture %}
 
-<div class="notice--success">{{ secondary_id_ex1 | markdownify }}</div>
+<div class="notice">{{ secondary_id_ex1 | markdownify }}</div>
 
 **주의** : Secondary ID(10)은 Modbus-RTU 프로토콜에서 동작되지 않습니다.   
 {: .notice--warning}
