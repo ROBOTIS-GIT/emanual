@@ -9,5 +9,5 @@
 [Modbus-RTU, Industrial Standard Protocol]: http://modbus.org/docs/PI_MBUS_300.pdf
 
 **참고** : Modbus RTU Protocol은 추후 제공될 예정입니다.
-{: .notice--warning}
+{: .notice}
 

@@ -29,5 +29,3 @@ Secondary ID(10)와 ID(7)의 차이는 다음과 같습니다.
 
 <div class="notice">{{ secondary_id_ex1 | markdownify }}</div>
 
-**주의** : Secondary ID(10)은 Modbus-RTU 프로토콜에서 동작되지 않습니다.   
-{: .notice--warning}

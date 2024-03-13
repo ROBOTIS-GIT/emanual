@@ -16,3 +16,6 @@
 
 #### [위치 제어 모드](#위치-제어-모드)
 ![](/assets/images/dxl/y/operating_mode_3.PNG)
+
+**참고:** DYNAMIXEL-Y는 Multi-turn이 저장됩니다. **Extended Position Mode가 별도로 없으며, Position Mode에서도 Multi-Turn으로 회전이 가능**합니다. 전원을 끄고 켜거나, Reboot Instruction 사용, 전원이 꺼진 상태에서 외력으로 회전시켜도 Multi-turn이 감지되며 절대 위치가 유지되고, Clear Instruction을 통해서 Multi-turn을 ‘0’으로 초기화 할 수 있습니다.
+{: .notice}

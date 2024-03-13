@@ -3,7 +3,7 @@ Bus Watchdog 기능은 Torque Enable(512)가 ‘1’(Torque ON)인 경우, 제�
 측정된 통신 간격(시간)이 Bus Watchdog(8)의 설정값 보다 클 경우, 장치는 정지합니다.  이때 Bus Watchdog(8)은 ‘-1’(Bus Watchdog Error)로 변경됩니다.  
 Bus Watchdog Error 상태가 되면, Goal Value(Goal PWM(524), Goal Current(526), Goal Velocity(528), Goal Position(532))의 Access(접근 속성)은 읽기 전용(Read Only)로 변경됩니다.  
 따라서 Goal Value에 새로운 값을 쓸 경우, Status Packet은 Error 필드를 통해서 Data Range Error를 전송합니다.  
-Bus Watchdog Error 해제는 Bus Wathdog(8)의 값을 ‘0’으로 변경하거나 Error Clear Packet을 전송하여 가능합니다.
+Bus Watchdog Error 해제는 Bus Watchdog(8)의 값을 ‘0’으로 변경하거나 Error Clear Packet을 전송하여 가능합니다.
 
 **참고** : Data Range Error에 대한 자세한 사항은 [프로토콜](https://emanual.robotis.com/docs/kr/dxl/protocol2/#status-packet)을 참고해주세요.
 {: .notice}

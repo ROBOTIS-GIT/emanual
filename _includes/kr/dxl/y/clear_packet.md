@@ -24,13 +24,13 @@ Multi-Turn Backup Battery를 교체한 후에 반드시 실행하여야 정상�
 5. Status Packet이 수신될 때까지 대기합니다. 수신된 Packet에 Error가 있는지 확인합니다.
 
 
-**참고**: 참고 : 패킷 창에 대한 자세한 내용은 [DYNAMIXEL Wizard 2.0]과 [Dynamixel Protocol 2.0] E-Manual을 참고해주시기 바랍니다.
+**참고**: 패킷 창에 대한 자세한 내용은 [DYNAMIXEL Wizard 2.0]과 [Dynamixel Protocol 2.0] E-Manual을 참고해주시기 바랍니다.
 {: .notice}
 
 #### [Error Clear Packet](#error-clear-packet)
 
 DYNAMIXEL-Y에서 Error가 발생한 경우 Clear가 가능합니다.  
-Error Code(140)가 0이 아닌 경우 Clear Instruction Packet으로 초기화가 가능합니다. 초기화가 불가능한 경우 Status Packet의 Error 필드에 Result Fail(0x01) 발생합니다. 
+Error Code(140)가 0이 아닌 경우 [Clear Instruction Packet]으로 초기화가 가능합니다. 초기화가 불가능한 경우 Status Packet의 Error 필드에 Result Fail(0x01) 발생합니다. 
 
 ### [Multi-Turn backup Battery 교체](#multi-turn-backup-battery-교체)
 
@@ -45,8 +45,9 @@ DYNAMIXEL-Y는 Multi-Turn Backup을 위해 Battery가 내장되어 있습니다.
 3. 커넥터 방향에 주의하여 Battery를 연결해줍니다.
 4. Battery를 커버에 끼워줍니다.
 5. Battery 커버를 조립합니다.
-6. 전원을 공급한 뒤 Multi-Turn Clear를 진행합니다.
+6. 전원을 공급한 뒤 ‘인코더 배터리 교체’를 진행합니다
 
 
 [DYNAMIXEL Wizard 2.0]: https://emanual.robotis.com/docs/kr/software/dynamixel/dynamixel_wizard2/
 [Dynamixel Protocol 2.0]: https://emanual.robotis.com/docs/kr/dxl/protocol2/
+[Clear Instruction Packet]: https://emanual.robotis.com/docs/kr/dxl/protocol2/

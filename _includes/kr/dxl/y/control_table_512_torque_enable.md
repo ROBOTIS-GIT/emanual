@@ -10,10 +10,10 @@ Torque ON/OFF를 제어합니다. ‘1’을 쓰면 Torque ON 상태가 되고, 
 Torque Enable에 ‘1’을 쓰면 아래 순서로 Torque ON 작업이 진행됩니다.  
 Torque ON 🡪 Brake Release 🡪 Start Goal Data Update  
 Torque Enable에 ‘0’을 쓰면 아래 순서로 Torque OFF 작업이 진행됩니다.  
-Stop Goal Data Update 🡪 Slow Stop 🡪 Lock Brake 🡪 Torque OFF  
+Stop Goal Data Update 🡪 Slow Stop 🡪 Brake Lock 🡪 Torque OFF  
 
 **참고** : [Gain Save(170)]의 값이 ‘0’인 경우, 장치가 재부팅되거나 전원이 차단되면 변경사항이 저장되지 않습니다.
 {: .notice}
 
-**참고** : [Controller State(152)]의 값이 Process Torque On, Process Torque Off일 때, Torque Enable(512), [Goal PWM(524)], [Goal Current(526)], [Goal Velocity(528)], [Goal Position(532)]에 값을 쓰면 Result Fail이 Return 됩니다
+**참고** : [Controller State(152)]의 값이 Process Torque On(4), Process Torque Off(6)일 때, Torque Enable(512), [Goal PWM(524)], [Goal Current(526)], [Goal Velocity(528)], [Goal Position(532)]에 값을 쓰면 Result Fail이 Return 됩니다
 {: .notice}
