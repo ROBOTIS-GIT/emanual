@@ -72,6 +72,7 @@
 
 <!-- DXL-Y -->
 
+[Stuatus Return Level(15)]: stuatus-return-level15
 [Drive Mode(32)]: #drive-mode32
 [Operating Mode(33)]: #operating-mode33
 [Position Limit Threshold(38)]: #position-limit-threshold38
@@ -89,6 +90,7 @@
 [Min Position limit(84)]: #maxmin-position-limit76-84
 [Controller State(152)]: #controller-state152
 [Error Code(153)]: #error-code153
+[Gain Save(170)]: #gain-save170
 [Profile Acceleration(240)]: #profile-acceleration240
 [Profile Velocity(244)]: #profile-velocity244
 [Torque Enable(512)]: #torque-enable512

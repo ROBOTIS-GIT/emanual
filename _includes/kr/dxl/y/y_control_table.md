@@ -5,10 +5,11 @@
 사용자는 Instruction Packet을 통해 컨트롤 테이블의 특정 데이터를 읽어서(READ Instruction) 장치의 상태를 파악할 수 있고, 데이터를 변경함으로써(WRITE Instruction) 장치를 제어할 수 있습니다.
 
 ## [컨트롤 테이블, 데이터, 주소](#컨트롤-테이블-데이터-주소)
-컨트롤 테이블은 장치의 상태와 제어를 위한 다수의 데이터 필드로 구성된 집합체입니다.
-사용자는 READ Instruction Packet을 통해 컨트롤 테이블의 특정 데이터를 읽어서 장치의 상태를 파악할 수 있습니다. 또한 WRITE Instruction Packet을 통해 컨트롤 테이블의 특정 데이터를 변경함으로써 장치를 제어할 수 있습니다.
-Address는 Instruction Packet으로 컨트롤 테이블의 특정 데이터를 접근할 때 사용하는 고유 값입니다.
-장치의 데이터를 읽거나 쓰기 위해서는 Instruction Packet에 해당 데이터의 주소를 지정해 주어야 합니다. Packet에 대한 자세한 내용은 다이나믹셀 프로토콜 2.0을 참고해 주세요.  
+컨트롤 테이블은 장치의 상태와 제어를 위한 다수의 데이터 필드로 구성된 집합체입니다.  
+사용자는 READ Instruction Packet을 통해 컨트롤 테이블의 특정 데이터를 읽어서 장치의 상태를 파악할 수 있습니다. 또한 WRITE Instruction Packet을 통해 컨트롤 테이블의 특정 데이터를 변경함으로써 장치를 제어할 수 있습니다.  
+Address는 Instruction Packet으로 컨트롤 테이블의 특정 데이터를 접근할 때 사용하는 고유 값입니다.  
+장치의 데이터를 읽거나 쓰기 위해서는 Instruction Packet에 해당 데이터의 주소를 지정해 주어야 합니다. Packet에 대한 자세한 내용은 [다이나믹셀 프로토콜 2.0]을 참고해 주세요.  
+
 **참고**: 음수의 표현 방법은 2의 보수(Two’s complement) 규칙을 따릅니다. 2의 보수에 대한 자세한 설명은 위키피디아의 [Two's complement]를 참고하세요.
 {: .notice}
 

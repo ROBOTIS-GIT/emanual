@@ -19,10 +19,10 @@
 | 모터                      | {{ site.data.dxl_y_info[page.ref].motor }}              |
 | Rated Speed              | {{ site.data.dxl_y_info[page.ref].ratedspeed }}          |
 | Rated Torque             | {{ site.data.dxl_y_info[page.ref].ratedtorque }}         |
-| `1`Rated Current         | {{ site.data.dxl_y_info[page.ref].ratedcurrent }}        |
+| `1` Rated Current         | {{ site.data.dxl_y_info[page.ref].ratedcurrent }}        |
 | Maximum Speed            | {{ site.data.dxl_y_info[page.ref].maximumspeed }}        |
 | Maximum Torque           | {{ site.data.dxl_y_info[page.ref].maximumtorque }}       |
-| `1`Maximum Current       | {{ site.data.dxl_y_info[page.ref].maximumcurrent }}      |
+| `1` Maximum Current       | {{ site.data.dxl_y_info[page.ref].maximumcurrent }}      |
 | 출력                      | {{ site.data.dxl_y_info[page.ref].output }}             |
 
 `1` 전류 값은 모터의 상전류 값 입니다.

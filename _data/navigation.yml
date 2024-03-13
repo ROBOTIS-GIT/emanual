@@ -4303,6 +4303,17 @@ dxl_x_main:
         titlekr: "XL 시리즈"
         url: /dxl/x/#xl-series
         urlkr: /dxl/x/#xl-시리즈
+        
+#Y-Series Main sidebar
+dxl_y_main:
+  - title: "Features"
+    titlekr: "특징"
+    url: /dxl/x/#features
+    urlkr: /dxl/y/#특징
+  - title: "Y Series"
+    titlekr: "Y 시리즈"
+    url: /dxl/y/#y-series
+    urlkr: /dxl/y/#y-시리즈
 
 #XL320 sidebar
 xl320:
@@ -18545,7 +18556,7 @@ ym070-210-m001-rh:
           - title: "Area(EEPROM, RAM)"
             titlekr: "영역 (EEPROM, RAM, Hybrid)"
             url: /dxl/y/ym070-210-m001-rh/#area-eeprom-ram
-            urlkr: /dxl/y/ym070-210-m001-rh/#영역-eeprom-ram-Hybrid
+            urlkr: /dxl/y/ym070-210-m001-rh/#영역-eeprom-ram-hybrid
           - title: "Size"
             titlekr: "크기"
             url: /dxl/y/ym070-210-m001-rh/#size
@@ -18664,9 +18675,6 @@ ym070-210-m001-rh:
           - title: "Brake Delay(106), Goal Update Delay(108)"
             titlekr: "Brake Delay(106), Goal Update Delay(108)"
             url: /dxl/y/ym070-210-m001-rh/#brake-delay106-goal-update-delay108
-          - title: "Overexcitation Voltage(110), Normal Excitation Voltage(111), Overexcitation Time(112)"
-            titlekr: "Overexcitation Voltage(110), Normal Excitation Voltage(111), Overexcitation Time(112)"
-            url: /dxl/y/ym070-210-m001-rh/#overexcitation-voltage110-normal-excitation-voltage111-overexcitation-time112
           - title: "Notch Filter Frequency(126), Notch Filter Bandwidth(128), Notch Filter Depth(130)"
             titlekr: "Notch Filter Frequency(126), Notch Filter Bandwidth(128), Notch Filter Depth(130)"
             url: /dxl/y/ym070-210-m001-rh/#notch-filter-frequency126-notch-filter-bandwidth128-notch-filter-depth130
@@ -18761,18 +18769,18 @@ ym070-210-m001-rh:
             titlekr: "Backup Ready(919)"
             url: /dxl/y/ym070-210-m001-rh/#backup-ready919
   - title: "How to Assemble"
-    titlekr: "조립 예시"
+    titlekr: "제품 조립"
     url: /dxl/y/ym070-210-m001-rh/#how-to-assemble
-    urlkr: /dxl/y/ym070-210-m001-rh/#조립-예시
+    urlkr: /dxl/y/ym070-210-m001-rh/#제품-조립
     children:
       - title: "Option Frame Assembly"
         titlekr: "옵션프레임 조립"
         url: /dxl/y/ym070-210-m001-rh/#option-frame-assembly
         urlkr: /dxl/y/ym070-210-m001-rh/#옵션프레임-조립
   - title: "Maintenance"
-    titlekr: "유지보수"
+    titlekr: "유지 보수"
     url: /dxl/y/ym070-210-m001-rh/#maintenance
-    urlkr: /dxl/y/ym070-210-m001-rh/#유지보수
+    urlkr: /dxl/y/ym070-210-m001-rh/#유지-보수
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/y/ym070-210-m001-rh/#reference
@@ -18825,9 +18833,9 @@ ym070-210-m001-rh:
         url: /dxl/y/ym070-210-m001-rh/#multi-turn-backup-battery   
         urlkr: /dxl/y/ym070-210-m001-rh/#multi-turn-backup-battery-교체  
         children:
-          - title: "Multi-Turn Clear Packet"
-            titlekr: "Multi-Turn Clear Packet"
-            url: /dxl/y/ym070-210-m001-rh/#multi-turn-clear-packet
+          - title: "Battery"
+            titlekr: "Battery 교체 방법"
+            urlkr: /dxl/y/ym070-210-m001-rh/#battery-교체-방법
   - title: "출력 베어링 (감속기 옵션)"
     titlekr: "출력 베어링 (감속기 옵션)"
     url: /dxl/y/ym070-210-m001-rh/#출력-베어링-감속기-옵션

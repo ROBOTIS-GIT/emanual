@@ -11,12 +11,12 @@ Profile이란 모터 구동 시 급격하게 변하는 속도와 가속도를 �
 다음은 [Operating Mode(33)]가 위치 제어 모드 일 때 [Goal Position(532)] 명령에 대한 Profile의 동작 과정을 나타냅니다.
 
 {% capture profile_vel_ex1 %}
-1. 사용자의 요청이 통신 버스를 통해 [Goal Position(532)]에 등록됩니다.
-2. [Profile Velocity(244)]와 [Profile Acceleration(240)]에 의해서 가속 시간(t1)이 결정됩니다.  
-3. [Profile Velocity(244)], [Profile Acceleration(240)] 그리고 총 이동거리(ΔPos, 목표 위치와 현재 위치의 차이)에 의해서 Profile의 형태가 다음과 같이 결정됩니다.
-4. 최종 선정된 Profile의 형태는 [Moving Status(541)]에 표기됩니다.
+1. 사용자의 요청이 통신 버스를 통해 [Goal Position(532)](#goal-position532)에 등록됩니다.
+2. [Profile Velocity(244)](#profile-acceleration240-profile-velocity244)와 [Profile Acceleration(240)](#profile-acceleration240-profile-velocity244)에 의해서 가속 시간(t1)이 결정됩니다.  
+3. [Profile Velocity(244)](#profile-acceleration240-profile-velocity244), [Profile Acceleration(240)](#profile-acceleration240-profile-velocity244) 그리고 총 이동거리(ΔPos, 목표 위치와 현재 위치의 차이)에 의해서 Profile의 형태가 다음과 같이 결정됩니다.
+4. 최종 선정된 Profile의 형태는 [Moving Status(541)](#moving-status541)에 표기됩니다.
 5. 장치는 Profile에 의해 산출된 목표 궤적에 따라 이동하게 됩니다.
-6. Profile에 의한 목표 속도 궤적과 목표 위치 궤적은 [Velocity Trajectory(560)]와 [Position Trajectory(564)]에 표기됩니다.
+6. Profile에 의한 목표 속도 궤적과 목표 위치 궤적은 [Position Trajectory(560)](#position-trajectory560)와 [Velocity Trajectory(564)](#velocity-trajectory564)에 표기됩니다.
 {% endcapture %}
 
 <div class="notice--success">{{ profile_vel_ex1 | markdownify }}</div>
@@ -44,3 +44,5 @@ Velocity Override 기능은 동일하게 동작합니다.
 </div>
 
 [Profile Acceleration Time(248)]: #profile-acceleration-time248-profile-time252 
+[Profile Velocity(244)]: #profile-acceleration240-profile-velocity244
+[Profile Acceleration(240)]: #profile-acceleration240-profile-velocity244
