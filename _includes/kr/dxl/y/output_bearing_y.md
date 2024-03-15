@@ -1,19 +1,26 @@
 
 ### [출력 베어링 사양 (L10=7,000hours@rated output speed)](#출력-베어링-사양-l107000hoursrated-output-speed)
 
-| Modle             | Basic dynamic load rating, C [N] |  Offset from flange, df [m] | Roller pitch circle diameter, Dp [m] | `1`Allowable Dynamic equivalent radial load, Pc_max [N] | `2`Allowable moment load, M_max [N.m] |
+| Model             | Basic dynamic load rating, C [N] |  Offset from flange, df [m] | Roller pitch circle diameter, Dp [m] | <sup>1</sup>Allowable Dynamic equivalent radial load, Pc_max [N] | <sup>2</sup>Allowable moment load, M_max [N.m] |
 |:-----------------:|:-----:|:------:|:------:|:------:|:----:|
 | YM070-210-R051-RH | 5,182 | 0.0086 | 0.0498 | 1677.1 | 44.5 |
 | YM070-210-R099-RH | 5,182 | 0.0086 | 0.0498 | 2046.4 | 54.4 |
 | YM080-230-R051-RH | 6,842 | 0.0093 | 0.0569 | 2091.3 | 63.0 |
 | YM080-230-R099-RH | 6,842 | 0.0093 | 0.0569 | 2551.7 | 76.9 |
 
-`1` Allow dynamic equivalent radial load (Pc_mac)는 절대 이 값을 넘으면 안됩니다.  
-`2` Allowable moment load, Ma는 Lr + df = 0, 그리고 La = 0 입니다.
+
+{% capture output_bearing_notice1 %}  
+**참고 :**  
+1&#41; Allow dynamic equivalent radial load (Pc_mac)는 절대 이 값을 넘으면 안됩니다.  
+2&#41; Allowable moment load, Ma는 Lr + df = 0, 그리고 La = 0 입니다.
+{% endcapture %}
+
+<div class="notice">{{ output_bearing_notice1 | markdownify }}</div>
 
 ### [베어링 수명](#베어링-수명)
 
-![](/assets/images/dxl/y/bearing_formula_1.jpg)
+![](/assets/images/dxl/y/bearing_formula_1.jpg)  
+
 
 - L<sub>10</sub> - Bearing life [hour]
 - N<sub>a</sub> - Average output speed [rpm]
@@ -25,8 +32,7 @@
 
 ### [동적 등가 반경방향 하중](#동적-등가-반경방향-하중)
 
-![](/assets/images/dxl/y/bearing_formula_2.jpg)  
-![](/assets/images/dxl/y/dynamic_equivalent_radial_load.PNG)
+![](/assets/images/dxl/y/bearing_formula_2.jpg)   
 
 - P<sub>c</sub> - Dynamic equivalent radial load [N]
 - F<sub>r</sub> - Radial load [N]
@@ -39,7 +45,7 @@
 
 ### [동적 등가 반경방향 허용 하중](#동적-등가-반경방향-허용-하중)
 
-![](/assets/images/dxl/y/bearing_formula_3.jpg)
+![](/assets/images/dxl/y/bearing_formula_3.jpg)  
 
 - L<sub>10</sub> - Bearing life [hour] @ 7,000 hour
 - N<sub>n</sub> - Nominal output speed [rpm] @ input speed 2,000rpm ÷ gear ratio
@@ -51,7 +57,8 @@
 
 ### [반경방향 허용 하중](#반경방향-허용-하중)
 
-![](/assets/images/dxl/y/bearing_formula_4.jpg)
+![](/assets/images/dxl/y/bearing_formula_4.jpg)  
+
 
 - P<sub>c_max</sub> - Allowable dynamic equivalent radial load [N]
 - F<sub>a</sub> - Axial load [N]

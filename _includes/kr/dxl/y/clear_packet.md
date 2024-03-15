@@ -13,7 +13,7 @@ Multi-Turn Backup Battery를 교체한 후에 반드시 실행하여야 정상�
 **참고**: Multi-Turn Clear는 ‘모터’ 기준 1회전 이내의 절대 위치 값으로 초기화 됩니다. 감속기가 부착된 모델은 감속기 기준 절대위치를 잃어버릴 수 있습니다. 감속기 기준 절대위치를 0점에 맞추고 Multi-Turn Clear를 진행하시기 바랍니다.
 {: .notice}
 
-#### [Multi-Turn Clear 방법](#multi-turn-clear-방법)
+### [Multi-Turn Clear 방법](#multi-turn-clear-방법)
 
 ![](/assets/images/dxl/y/multi-turn_clear_guide.PNG)
 
@@ -27,7 +27,7 @@ Multi-Turn Backup Battery를 교체한 후에 반드시 실행하여야 정상�
 **참고**: 패킷 창에 대한 자세한 내용은 [DYNAMIXEL Wizard 2.0]과 [Dynamixel Protocol 2.0] E-Manual을 참고해주시기 바랍니다.
 {: .notice}
 
-#### [Error Clear Packet](#error-clear-packet)
+### [Error Clear Packet](#error-clear-packet)
 
 DYNAMIXEL-Y에서 Error가 발생한 경우 Clear가 가능합니다.  
 Error Code(140)가 0이 아닌 경우 [Clear Instruction Packet]으로 초기화가 가능합니다. 초기화가 불가능한 경우 Status Packet의 Error 필드에 Result Fail(0x01) 발생합니다. 
@@ -41,11 +41,13 @@ DYNAMIXEL-Y는 Multi-Turn Backup을 위해 Battery가 내장되어 있습니다.
 ![](/assets/images/dxl/y/brtterry_replacement_guide.PNG)
 
 1. DYNAMIXEL-Y와 Battery를 준비합니다.
-2. DYNAMIXEL-Y의 전원을 차단하고, Battery 커버를 열어줍니다.
-3. 커넥터 방향에 주의하여 Battery를 연결해줍니다.
-4. Battery를 커버에 끼워줍니다.
-5. Battery 커버를 조립합니다.
-6. 전원을 공급한 뒤 ‘인코더 배터리 교체’를 진행합니다
+2. 전원을 공급하고, DYNAMIXEL Wizard2.0을 통해서 DYNAMIXEL-Y을 검색한 뒤,  
+    도구 → 인코더 배터리 교체 메뉴를 클릭합니다.
+3. 감속기 모델인 경우는 원점 위치가 일치하는지 확인하고 다음 버튼을 클릭합니다.  
+    (원점위치가 아닌 경우, 원점 위치로 맞춰주세요.)
+4. Battery를 커버를 열어서 새 배터리로 교체하고, 커버를 닫고 다음 버튼을 클릭합니다.
+5. 작업 진행을 기다립니다.
+6. 작업이 완료되고 확인 버튼을 클릭하여 메뉴를 끝냅니다.
 
 
 [DYNAMIXEL Wizard 2.0]: https://emanual.robotis.com/docs/kr/software/dynamixel/dynamixel_wizard2/

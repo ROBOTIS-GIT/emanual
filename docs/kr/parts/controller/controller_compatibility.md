@@ -44,7 +44,8 @@ sidebar:
 |    XH Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |                   X(O)                   |      X       |    O     |        O         |
 |    XD Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |                   X(O)                   |      X       |    O     | O([Comm Bridge]) |
 |    XW Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |                   X(O)                   |      X       |    O     | O([Comm Bridge]) |
-|    PRO Series    |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                   X(O)                   |      X       |    O     | O([Comm Bridge]) |
+|    P Series      |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                   X(O)                   |      X       |    O     | O([Comm Bridge]) |
+|    Y Series      |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                   X(O)                   |      X       |    O     | O([Comm Bridge]) |
 
 **참고**: OpenCM9.04을 OpenCM 485 확장보드와 함께 사용하면, 모든 다이나믹셀을 제어할수 있습니다.
 {: .notice}
