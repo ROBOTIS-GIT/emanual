@@ -2,7 +2,7 @@ Brake 입력 전압을 제어하기 위한 값입니다. Brake 요구 값에 맞
 
 ![](/assets/images/dxl/y/overexcitation_voltage.PNG)
 
-| 컨트롤 테이블 항목              | 단위      | 범위       |
+| 항목                           | 단위      | 범위       |
 |:-------------------------------|:---------|:-----------|
 | Overexcitation Voltage(110)    | 1.0 [%]  | 0 ~ 100    |
 | Normal Excitation Voltage(111) | 1.0 [%]  | 0 ~ 100    |

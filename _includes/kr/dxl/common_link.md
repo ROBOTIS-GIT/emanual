@@ -106,6 +106,7 @@
 [Present Input Voltage(568)]: #present-input-voltage568
 [Present Inverter Temperature(570)]: #present-inverter-temperature570
 [Present Motor Temperature(571)]: #present-motor-temperature571
+[Error Clear Packet]: #error-clear-packet
 
 
 <!--Common Links -->

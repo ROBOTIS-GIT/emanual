@@ -11,14 +11,14 @@ Bus Watchdog Error 해제는 Bus Watchdog(8)의 값을 ‘0’으로 변경하�
 다음은 Bus Watchdog 기능의 동작 예시입니다.
 
 {% capture bus_watchdog_ex1 %}
-Operating Mode(33)를 속도 제어 모드로 설정한 후, Torque Enable(512)를 ‘1’로 변경 합니다.  
-Goal Velocity(528)에 ‘50’을 쓰면, 장치는 CCW 방향으로 회전합니다.  
-Bus Watchdog(546)의 값을 ‘100’(2,000 [ms])으로 변경합니다.(Bus Watchdog 기능 활성화)  
-2,000[msec] 동안 Instruction packet이 수신되지 않으면, 장치는 고정된 감속도로 정지합니다.  
-Bus Watchdog(8)의 값은 ‘-1’(Bus Watchdog Error)으로 변경됩니다. 이때 Goal Value의 접근속성(Access)은 모두 읽기전용(Read Only)으로 변경됩니다.  
-Goal Velocity(528)에 ‘150’을 쓰면, Status Packet을 통해 Data Range Error를 회신합니다.  
-Bus Watchdog(8)의 값을 ‘0’으로 변경하거나 Error Clear Packet을 전송하면, Bus Watchdog Error가 해제됩니다.  
-Goal Velocity(528)에 ‘150’을 쓰면, 장치는 CCW 방향으로 회전합니다.
+1. Operating Mode(33)를 속도 제어 모드로 설정한 후, Torque Enable(512)를 ‘1’로 변경 합니다.  
+2. Goal Velocity(528)에 ‘50’을 쓰면, 장치는 CCW 방향으로 회전합니다.  
+3. Bus Watchdog(546)의 값을 ‘100’(2,000 [ms])으로 변경합니다.(Bus Watchdog 기능 활성화)  
+4. 2,000[msec] 동안 Instruction packet이 수신되지 않으면, 장치는 고정된 감속도로 정지합니다.  
+5. Bus Watchdog(8)의 값은 ‘-1’(Bus Watchdog Error)으로 변경됩니다. 이때 Goal Value의 접근속성(Access)은 모두 읽기전용(Read Only)으로 변경됩니다.  
+6. Goal Velocity(528)에 ‘150’을 쓰면, Status Packet을 통해 Data Range Error를 회신합니다.  
+7. Bus Watchdog(8)의 값을 ‘0’으로 변경하거나 Error Clear Packet을 전송하면, Bus Watchdog Error가 해제됩니다.  
+8. Goal Velocity(528)에 ‘150’을 쓰면, 장치는 CCW 방향으로 회전합니다.
 {% endcapture %}
 
 <div class="notice--success">{{ bus_watchdog_ex1 | markdownify }}</div>

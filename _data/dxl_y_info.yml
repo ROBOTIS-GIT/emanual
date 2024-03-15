@@ -15,6 +15,7 @@ common_y_specs:
   id:                 &id                 "0 ~ 253 (1)"
   standbycurrent:     &standbycurrent     "40 [mA]"
   encoderspec:        &encoderspec        "Single-Turn: 19Bit (524,288 [Pulse/Rev])<br />Multi-Turn: 18Bit (262,144 [Rev])"
+  motor:              &motor             "BLDC(Frameless)"
 
 
 ym070-210-m001-rh:
@@ -35,7 +36,7 @@ ym070-210-m001-rh:
   encoderspec:        *encoderspec
   opmode_en:          *opmode_en
   opmode:             *opmode
-  motor:              "BLDC"
+  motor:              *motor
   ratedspeed:         "4,583 [RPM]"
   ratedtorque:        "0.32 [N.m]"
   ratedcurrent:       "10.4 [A]"
@@ -52,7 +53,7 @@ ym070-210-r051-rh:
   radialload:         *radialload_070
   radialload_en:      *radialload_070_en
   mcu:                *mcu
-  control command:    *command
+  controlcommand:    *command
   physicalconnection: *rs485
   id:                 *id
   baudrate:           *baudrate
@@ -62,7 +63,7 @@ ym070-210-r051-rh:
   encoderspec:        *encoderspec
   opmode_en:          *opmode_en
   opmode:             *opmode
-  motor:              "BLDC"
+  motor:              *motor
   ratedspeed:         "39.2 [RPM]"
   ratedtorque:        "6.5 [N.m]"
   ratedcurrent:       "10.4 [A]"
@@ -71,7 +72,7 @@ ym070-210-r051-rh:
   maximumcurrent:     "20.8 [A]"
   output:             "210 [W]"
 
-  ym070-210-r099-rh:
+ym070-210-r099-rh:
   dimensions:         "Ø70 x 71.1 [mm]"
   weight:             "790 [g]"   
   gearratio:          "99:1"
@@ -79,7 +80,7 @@ ym070-210-r051-rh:
   radialload:         *radialload_070
   radialload_en:      *radialload_070_en
   mcu:                *mcu
-  control command:    *command
+  controlcommand:    *command
   physicalconnection: *rs485
   id:                 *id
   baudrate:           *baudrate
@@ -89,7 +90,7 @@ ym070-210-r051-rh:
   encoderspec:        *encoderspec
   opmode_en:          *opmode_en
   opmode:             *opmode
-  motor:              "BLDC"
+  motor:              *motor
   ratedspeed:         "20.2 [RPM]"
   ratedtorque:        "12.7 [N.m]"
   ratedcurrent:       "10.4 [A]"
@@ -98,7 +99,7 @@ ym070-210-r051-rh:
   maximumcurrent:     "20.8 [A]"
   output:             "210 [W]"
 
-  ym080-230-m001-rh:
+ym080-230-m001-rh:
   dimensions:         "Ø80 x 53.1 [mm]"
   weight:             "530 [g]"   
   gearratio:          "-"
@@ -106,7 +107,7 @@ ym070-210-r051-rh:
   radialload:         *radialload_070
   radialload_en:      *radialload_070_en
   mcu:                *mcu
-  control command:    *command
+  controlcommand:    *command
   physicalconnection: *rs485
   id:                 *id
   baudrate:           *baudrate
@@ -116,7 +117,7 @@ ym070-210-r051-rh:
   encoderspec:        *encoderspec
   opmode_en:          *opmode_en
   opmode:             *opmode
-  motor:              "BLDC"
+  motor:              *motor
   ratedspeed:         "2,292 [RPM]"
   ratedtorque:        "0.62 [N.m]"
   ratedcurrent:       "11.2 [A]"
@@ -133,7 +134,7 @@ ym080-230-r051-rh:
   radialload:         *radialload_070
   radialload_en:      *radialload_070_en
   mcu:                *mcu
-  control command:    *command
+  controlcommand:    *command
   physicalconnection: *rs485
   id:                 *id
   baudrate:           *baudrate
@@ -143,7 +144,7 @@ ym080-230-r051-rh:
   encoderspec:        *encoderspec
   opmode_en:          *opmode_en
   opmode:             *opmode
-  motor:              "BLDC"
+  motor:              *motor
   ratedspeed:         "39.2 [RPM]"
   ratedtorque:        "12.6 [N.m]"
   ratedcurrent:       "11.2 [A]"
@@ -152,7 +153,7 @@ ym080-230-r051-rh:
   maximumcurrent:     "22.4 [A]"
   output:             "230 [W]"
 
-  ym080-230-r099-rh:
+ym080-230-r099-rh:
   dimensions:         "Ø80 x 78.1 [mm]"
   weight:             "1200 [g]"   
   gearratio:          "99:1"
@@ -160,7 +161,7 @@ ym080-230-r051-rh:
   radialload:         *radialload_070
   radialload_en:      *radialload_070_en
   mcu:                *mcu
-  control command:    *command
+  controlcommand:    *command
   physicalconnection: *rs485
   id:                 *id
   baudrate:           *baudrate
@@ -170,7 +171,7 @@ ym080-230-r051-rh:
   encoderspec:        *encoderspec
   opmode_en:          *opmode_en
   opmode:             *opmode
-  motor:              "BLDC"
+  motor:              *motor
   ratedspeed:         "20.2 [RPM]"
   ratedtorque:        "24.6 [N.m]"
   ratedcurrent:       "11.2 [A]"

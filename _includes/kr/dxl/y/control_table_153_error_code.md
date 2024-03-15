@@ -29,7 +29,8 @@
 #### [에러 해제 방법](#에러-해제-방법)
 
 장치에 에러가 발생한 경우 에러 해제가 가능한 에러에 대해서는 아래 방법으로 해결 가능합니다.   
-1. Error Clear Packet: 에러 해제가 가능한 에러는 Error Clear Packet으로 초기화 가능합니다.
+1. Error Clear Packet: 에러 해제가 가능한 에러는 [Error Clear Packet]으로 초기화 가능합니다.
 2. Dynamixel Wizard 2.0: 우측 Error Code 옆에 Clear 버튼을 눌러 에러 해제가 가능합니다.
 
 ![](/assets/images/dxl/y/clear_error.png)
+

@@ -5,12 +5,11 @@ Error가 발생한 후에는 Status Packet은 Error 필드를 통해서 Alert Bi
 
 | 주소      | 명칭                | 변경 값                                             | 설명                                                                                       |
 |:---------:|:------------------:|:----------------------------------------------------|:------------------------------------------------------------------------------------------|
-| 139       | [Controller State]   | 9 (Hardware Fault)                                  | 내부 제어기가 Hardware Fault 상태로 변경됨                                                  |
-| 182       | [Error Code]         | 3 (Inverter Overheating)<br />4 (Motor Overheating) | Inverter의 온도가 Inverter Temperature Limit(56) 보다 높음<br />Motor의 온도가 Motor Temperature Limit(57) 보다 높음 |
+| 152       | [Control State]   | 9 (Hardware Fault)                                  | 내부 제어기가 Hardware Fault 상태로 변경됨                                                  |
+| 153       | [Error Code]         | 3 (Inverter Overheating)<br />4 (Motor Overheating) | Inverter의 온도가 Inverter Temperature Limit(56) 보다 높음<br />Motor의 온도가 Motor Temperature Limit(57) 보다 높음 |
 | 512       | [Torque Enable]      | 0 (Torque OFF)                                      | 에러가 발생하여 장치의 Torque를 차단                                                         |
-| 183 ~ 198 | [Error Code History] | Error Code                                          | Error Code History에 현재 발생한 Error Code가 추가됨                                        |
+| 154 ~ 169 | Error Code History | Error Code                                          | Error Code History에 현재 발생한 Error Code가 추가됨                                        |
 
-[Controller State]: #controller-state139
-[Error Code]: #error-code182
+[Control State]: #control-state152
+[Error Code]: #error-code153
 [Torque Enable]: #torque-enable512
-[Error Code History]: #error-code-history183
