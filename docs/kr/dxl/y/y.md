@@ -38,8 +38,8 @@ DYNAMIXEL-Y is ROBOTIS’ industrialized premium smart actuator solution for ful
 
 
 [YM070-210-M001-RH]: /docs/kr/dxl/y/ym070-210-m001-rh/
-[YM070-210-R051-RH]: /docs/kr/dxl/y/ym070-210-R051-rh/
-[YM070-210-R099-RH]: /docs/kr/dxl/y/ym070-210-R099-rh/
+[YM070-210-R051-RH]: /docs/kr/dxl/y/ym070-210-r051-rh/
+[YM070-210-R099-RH]: /docs/kr/dxl/y/ym070-210-r099-rh/
 [YM080-230-M001-RH]: /docs/kr/dxl/y/ym080-230-m001-rh/
-[YM080-230-R051-RH]: /docs/kr/dxl/y/ym080-230-R051-rh/
-[YM080-230-R099-RH]: /docs/kr/dxl/y/ym080-230-R099-rh/
+[YM080-230-R051-RH]: /docs/kr/dxl/y/ym080-230-r051-rh/
+[YM080-230-R099-RH]: /docs/kr/dxl/y/ym080-230-r099-rh/
