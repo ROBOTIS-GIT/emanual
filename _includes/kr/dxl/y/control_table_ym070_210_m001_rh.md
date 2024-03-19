@@ -58,7 +58,7 @@
 | 134  | 2         | [Goal Current LPF Frequency](#goal-current-lpf-frequency)               | RW   | -     | -                       | -                 |
 | 136  | 2         | [Position FF LPF Time](#position-ff-lpf-time)                           | RW   | -     | -                       | -                 |
 | 138  | 2         | [Velocity FF LPF Time](#velocity-ff-lpf-time)                           | RW   | -     | -                       | -                 |
-| 152  | 1         | [Control State](#control-state)                                         | R    | -     | -                       | -                 |
+| 152  | 1         | [Controller State](#controller-state)                                         | R    | -     | -                       | -                 |
 | 153  | 1         | [Error Code](#error-code)                                               | R    | -     | -                       | -                 |
 | 154  | 1         | [Error Code History 1](#error-code-history1)                            | R    | -     | -                       | -                 |
 | 155  | 1         | [Error Code History 2](#error-code-history2)                            | R    | -     | -                       | -                 |
@@ -77,11 +77,11 @@
 | 244  | 4         | [Profile Velocity](#profile-velocity)                                   | RW   | -     | -                       | -                 |
 | 248  | 4         | [Profile Acceleration Time](#profile-acceleration-time)                 | RW   | -     | -                       | -                 |
 | 252  | 4         | [Profile Time](#profile-time)                                           | RW   | -     | -                       | -                 |
-| 256  | 2         | [Indirect Address 1](#indirect-address1)                                | RW   | -     | -                       | -                 |
-| 258  | 2         | [Indirect Address 2](#indirect-address2)                                | RW   | -     | -                       | -                 |
+| 256  | 2         | [Indirect Address 1]                                                    | RW   | -     | -                       | -                 |
+| 258  | 2         | [Indirect Address 2]                                                    | RW   | -     | -                       | -                 |
 | ...  | ...       | ...                                                                     | ...  | ...   | ...                     | ...               |
-| 509  | 2         | [Indirect Address 127](#indirect-address127)                            | RW   | -     | -                       | -                 |
-| 510  | 2         | [Indirect Address 128](#indirect-address128)                            | RW   | -     | -                       | -                 |
+| 509  | 2         | [Indirect Address 127]                                                  | RW   | -     | -                       | -                 |
+| 510  | 2         | [Indirect Address 128]                                                  | RW   | -     | -                       | -                 |
 | 512  | 1         | [Torque Enable](#torque-enable)                                         | RW   | -     | -                       | -                 |
 | 513  | 1         | [LED](#led)                                                             | RW   | -     | -                       | -                 |
 | 516  | 2         | [PWM Offset](#pwm-offset)                                               | RW   | -     | -                       | -                 |

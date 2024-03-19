@@ -52,4 +52,4 @@ DYNAMIXEL-Y는 Multi-Turn Backup을 위해 Battery가 내장되어 있습니다.
 
 [DYNAMIXEL Wizard 2.0]: https://emanual.robotis.com/docs/kr/software/dynamixel/dynamixel_wizard2/
 [Dynamixel Protocol 2.0]: https://emanual.robotis.com/docs/kr/dxl/protocol2/
-[Clear Instruction Packet]: https://emanual.robotis.com/docs/kr/dxl/protocol2/
+[Clear Instruction Packet]: https://emanual.robotis.com/docs/kr/dxl/protocol2/#clear-0x10

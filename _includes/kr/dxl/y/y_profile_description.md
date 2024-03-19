@@ -16,7 +16,7 @@ Profile이란 모터 구동 시 급격하게 변하는 속도와 가속도를 �
 3. [Profile Velocity(244)](#profile-acceleration240-profile-velocity244), [Profile Acceleration(240)](#profile-acceleration240-profile-velocity244) 그리고 총 이동거리(ΔPos, 목표 위치와 현재 위치의 차이)에 의해서 Profile의 형태가 다음과 같이 결정됩니다.
 4. 최종 선정된 Profile의 형태는 [Moving Status(541)](#moving-status541)에 표기됩니다.
 5. 장치는 Profile에 의해 산출된 목표 궤적에 따라 이동하게 됩니다.
-6. Profile에 의한 목표 속도 궤적과 목표 위치 궤적은 [Position Trajectory(560)](#position-trajectory560)와 [Velocity Trajectory(564)](#velocity-trajectory564)에 표기됩니다.
+6. Profile에 의한 목표 속도 궤적과 목표 위치 궤적은 [Velocity Trajectory(564)](#velocity-trajectory564)와 [Position Trajectory(560)](#position-trajectory560)에 표기됩니다.
 {% endcapture %}
 
 <div class="notice--success">{{ profile_vel_ex1 | markdownify }}</div>
