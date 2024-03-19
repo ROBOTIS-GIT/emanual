@@ -72,7 +72,7 @@
 
 <!-- DXL-Y -->
 
-[Stuatus Return Level(15)]: stuatus-return-level15
+[Status Return Level(15)]: status-return-level15
 [Drive Mode(32)]: #drive-mode32
 [Operating Mode(33)]: #operating-mode33
 [Position Limit Threshold(38)]: #position-limit-threshold38
@@ -88,11 +88,12 @@
 [Velocity Limit(72)]: #velocity-limit72
 [Max position limit(76)]: #maxmin-position-limit76-84
 [Min Position limit(84)]: #maxmin-position-limit76-84
+[Gear Ratio Num(96)/Den(100)]: #electronic-gear-ratio-numeratordenominator96-100
 [Controller State(152)]: #controller-state152
 [Error Code(153)]: #error-code153
 [Gain Save(170)]: #gain-save170
-[Profile Acceleration(240)]: #profile-acceleration240
-[Profile Velocity(244)]: #profile-velocity244
+[Profile Acceleration(240)]: #profile-acceleration240-profile-velocity244
+[Profile Velocity(244)]: #profile-acceleration240-profile-velocity244
 [Torque Enable(512)]: #torque-enable512
 [Goal PWM(524)]: #goal-pwm524
 [Goal Current(526)]: #goal-current526

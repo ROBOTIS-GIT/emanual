@@ -18703,9 +18703,9 @@ ym070-210-m001-rh:
           - title: "Velocity FF LPF Time(138)"
             titlekr: "Velocity FF LPF Time(138)"
             url: /dxl/y/ym070-210-m001-rh/#velocity-ff-lpf-time138
-          - title: "Control State(152)"
-            titlekr: "Control State(152)"
-            url: /dxl/y/ym070-210-m001-rh/#control-state152
+          - title: "Controller State(152)"
+            titlekr: "Controller State(152)"
+            url: /dxl/y/ym070-210-m001-rh/#controller-state152
           - title: "Error Code(153)"
             titlekr: "Error Code(153)"
             url: /dxl/y/ym070-210-m001-rh/#error-code153
@@ -18785,6 +18785,11 @@ ym070-210-m001-rh:
     titlekr: "제품 조립"
     url: /dxl/y/ym070-210-m001-rh/#how-to-assemble
     urlkr: /dxl/y/ym070-210-m001-rh/#제품-조립
+    children:
+      - title: Option Frame Assembly
+        titlekr: 옵션프레임 조립
+        url: /dxl/y/ym070-210-m001-rh/#option-frame-assembly
+        urlkr: /dxl/y/ym070-210-m001-rh/#옵션프레임-조립
   - title: "Maintenance"
     titlekr: "유지 보수"
     url: /dxl/y/ym070-210-m001-rh/#maintenance
@@ -19002,9 +19007,9 @@ ym070-210-r051-rh:
           - title: "Velocity FF LPF Time(138)"
             titlekr: "Velocity FF LPF Time(138)"
             url: /dxl/y/ym070-210-r051-rh/#velocity-ff-lpf-time138
-          - title: "Control State(152)"
-            titlekr: "Control State(152)"
-            url: /dxl/y/ym070-210-r051-rh/#control-state152
+          - title: "Controller State(152)"
+            titlekr: "Controller State(152)"
+            url: /dxl/y/ym070-210-r051-rh/#controller-state152
           - title: "Error Code(153)"
             titlekr: "Error Code(153)"
             url: /dxl/y/ym070-210-r051-rh/#error-code153
@@ -19084,6 +19089,11 @@ ym070-210-r051-rh:
     titlekr: "제품 조립"
     url: /dxl/y/ym070-210-r051-rh/#how-to-assemble
     urlkr: /dxl/y/ym070-210-r051-rh/#제품-조립
+    children:
+      - title: Option Frame Assembly
+        titlekr: 옵션프레임 조립
+        url: /dxl/y/ym070-210-r051-rh/#option-frame-assembly
+        urlkr: /dxl/y/ym070-210-r051-rh/#옵션프레임-조립 
   - title: "Maintenance"
     titlekr: "유지 보수"
     url: /dxl/y/ym070-210-r051-rh/#maintenance
@@ -19317,9 +19327,9 @@ ym070-210-r099-rh:
           - title: "Velocity FF LPF Time(138)"
             titlekr: "Velocity FF LPF Time(138)"
             url: /dxl/y/ym070-210-r099-rh/#velocity-ff-lpf-time138
-          - title: "Control State(152)"
-            titlekr: "Control State(152)"
-            url: /dxl/y/ym070-210-r099-rh/#control-state152
+          - title: "Controller State(152)"
+            titlekr: "Controller State(152)"
+            url: /dxl/y/ym070-210-r099-rh/#controller-state152
           - title: "Error Code(153)"
             titlekr: "Error Code(153)"
             url: /dxl/y/ym070-210-r099-rh/#error-code153
@@ -19399,6 +19409,11 @@ ym070-210-r099-rh:
     titlekr: "제품 조립"
     url: /dxl/y/ym070-210-r099-rh/#how-to-assemble
     urlkr: /dxl/y/ym070-210-r099-rh/#제품-조립
+    children:
+      - title: Option Frame Assembly
+        titlekr: 옵션프레임 조립
+        url: /dxl/y/ym070-210-r099-rh/#option-frame-assembly
+        urlkr: /dxl/y/ym070-210-r099-rh/#옵션프레임-조립
   - title: "Maintenance"
     titlekr: "유지 보수"
     url: /dxl/y/ym070-210-r099-rh/#maintenance
@@ -19632,9 +19647,9 @@ ym080-230-m001-rh:
           - title: "Velocity FF LPF Time(138)"
             titlekr: "Velocity FF LPF Time(138)"
             url: /dxl/y/ym080-230-m001-rh/#velocity-ff-lpf-time138
-          - title: "Control State(152)"
-            titlekr: "Control State(152)"
-            url: /dxl/y/ym080-230-m001-rh/#control-state152
+          - title: "Controller State(152)"
+            titlekr: "Controller State(152)"
+            url: /dxl/y/ym080-230-m001-rh/#controller-state152
           - title: "Error Code(153)"
             titlekr: "Error Code(153)"
             url: /dxl/y/ym080-230-m001-rh/#error-code153
@@ -19714,6 +19729,11 @@ ym080-230-m001-rh:
     titlekr: "제품 조립"
     url: /dxl/y/ym080-230-m001-rh/#how-to-assemble
     urlkr: /dxl/y/ym080-230-m001-rh/#제품-조립
+    children:
+      - title: Option Frame Assembly
+        titlekr: 옵션프레임 조립
+        url: /dxl/y/ym080-230-m001-rh/#option-frame-assembly
+        urlkr: /dxl/y/ym080-230-m001-rh/#옵션프레임-조립
   - title: "Maintenance"
     titlekr: "유지 보수"
     url: /dxl/y/ym080-230-m001-rh/#maintenance
@@ -19931,9 +19951,9 @@ ym080-230-r051-rh:
           - title: "Velocity FF LPF Time(138)"
             titlekr: "Velocity FF LPF Time(138)"
             url: /dxl/y/ym080-230-r051-rh/#velocity-ff-lpf-time138
-          - title: "Control State(152)"
-            titlekr: "Control State(152)"
-            url: /dxl/y/ym080-230-r051-rh/#control-state152
+          - title: "Controller State(152)"
+            titlekr: "Controller State(152)"
+            url: /dxl/y/ym080-230-r051-rh/#controller-state152
           - title: "Error Code(153)"
             titlekr: "Error Code(153)"
             url: /dxl/y/ym080-230-r051-rh/#error-code153
@@ -20013,6 +20033,11 @@ ym080-230-r051-rh:
     titlekr: "제품 조립"
     url: /dxl/y/ym080-230-r051-rh/#how-to-assemble
     urlkr: /dxl/y/ym080-230-r051-rh/#제품-조립
+    children:
+      - title: Option Frame Assembly
+        titlekr: 옵션프레임 조립
+        url: /dxl/y/ym080-230-r051-rh/#option-frame-assembly
+        urlkr: /dxl/y/ym080-230-r051-rh/#옵션프레임-조립
   - title: "Maintenance"
     titlekr: "유지 보수"
     url: /dxl/y/ym080-230-r051-rh/#maintenance
@@ -20246,9 +20271,9 @@ ym080-230-r099-rh:
           - title: "Velocity FF LPF Time(138)"
             titlekr: "Velocity FF LPF Time(138)"
             url: /dxl/y/ym080-230-r099-rh/#velocity-ff-lpf-time138
-          - title: "Control State(152)"
-            titlekr: "Control State(152)"
-            url: /dxl/y/ym080-230-r099-rh/#control-state152
+          - title: "Controller State(152)"
+            titlekr: "Controller State(152)"
+            url: /dxl/y/ym080-230-r099-rh/#controller-state152
           - title: "Error Code(153)"
             titlekr: "Error Code(153)"
             url: /dxl/y/ym080-230-r099-rh/#error-code153
@@ -20328,6 +20353,11 @@ ym080-230-r099-rh:
     titlekr: "제품 조립"
     url: /dxl/y/ym080-230-r099-rh/#how-to-assemble
     urlkr: /dxl/y/ym080-230-r099-rh/#제품-조립
+    children:
+      - title: Option Frame Assembly
+        titlekr: 옵션프레임 조립
+        url: /dxl/y/ym080-230-r099-rh/#option-frame-assembly
+        urlkr: /dxl/y/ym080-230-r099-rh/#옵션프레임-조립
   - title: "Maintenance"
     titlekr: "유지 보수"
     url: /dxl/y/ym080-230-r099-rh/#maintenance

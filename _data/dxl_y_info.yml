@@ -1,8 +1,10 @@
 common_y_specs:
   mcu:                &mcu                "ARM Cortex-M4 (168 [Mhz], 32 [bit])"  
+  motor:              &motor              "Frameless BLDC"
   baudrate:           &baudrate           "9,600 [bps] ~ 10,500,000 [bps] (57,600 [bps])"
   opmode:             &opmode             "위치 제어모드<br />속도 제어모드<br />전류 제어모드"
-  opmode_en:          &opmode_en          "Torque Control Mode<br />Velocity Control Mode<br />Position Control Mode<br />Extended Position Control Mode<br />PWM Control Mode(Voltage Control Mode)"
+  opmode_en:          &opmode_en          "Position Control Mode<br />Velocity Control Mode<br />Current Control Mode"
+  encoderspec:        &encoderspec        "Single-Turn: 19Bit (524,288 [Pulse/Rev])<br />**Multi-Turn: 18Bit (262,144 [Rev])**"
   backlash:           &backlash           "< 3.0 [arcmin]"
   radialload_070:     &radialload_070     "TBD"
   radialload_080:     &radialload_080     "TBD"
@@ -11,171 +13,175 @@ common_y_specs:
   temperature:        &temperature        "-5 ~ +55 [&deg;C]"
   voltage:            &voltage            "24 [V]"
   command:            &command            "Digital Packet"
-  rs485:              &rs485              "RS485"
-  id:                 &id                 "0 ~ 253 (1)"
+  rs485:              &rs485              "RS485 Multidrop Bus<br />RS485 비동기 시리얼 통신 (8bit, 1stop, No Parity)"
+  id:                 &id                 "0 ~ 253 (0 ~ 252)"
   standbycurrent:     &standbycurrent     "40 [mA]"
-  encoderspec:        &encoderspec        "Single-Turn: 19Bit (524,288 [Pulse/Rev])<br />Multi-Turn: 18Bit (262,144 [Rev])"
-  motor:              &motor             "BLDC(Frameless)"
 
 
 ym070-210-m001-rh:
+  mcu:                *mcu
+  motor:              *motor
+  baudrate:           *baudrate
+  opmode_en:          *opmode_en
+  opmode:             *opmode
+  weight:             "340 [g]"
   dimensions:         "Ø70 x 50.9 [mm]"
-  weight:             "340 [g]"   
+  encoderspec:        *encoderspec
   gearratio:          "-"
   backlash:           "-"
   radialload:         *radialload_070
   radialload_en:      *radialload_070_en
-  mcu:                *mcu
-  controlcommand:     *command
-  physicalconnection: *rs485
-  id:                 *id
-  baudrate:           *baudrate
-  temperature:        *temperature
-  voltage:            *voltage
-  standbycurrent:     *standbycurrent
-  encoderspec:        *encoderspec
-  opmode_en:          *opmode_en
-  opmode:             *opmode
-  motor:              *motor
-  ratedspeed:         "4,583 [RPM]"
-  ratedtorque:        "0.32 [N.m]"
-  ratedcurrent:       "10.4 [A]"
-  maximumspeed:       "5,973 [RPM]"
+  noloadspeed:        "5,973 [rev/min]"
+  contspeed:          "4,583 [rev/min]"
+  conttorque:         "0.32 [N.m]"
+  contcurrent:        "10.4 [A]"
   maximumtorque:      "0.64 [N.m]"
   maximumcurrent:     "20.8 [A]"
   output:             "210 [W]"
+  temperature:        *temperature
+  opvoltage:          *voltage
+  commandsignal:      *command
+  commandsignalkr:    *command_kr
+  physicalconnection: *rs485
+  id:                 *id
+  standbycurrent:     *standbycurrent
 
 ym070-210-r051-rh:
+  mcu:                *mcu
+  motor:              *motor
+  baudrate:           *baudrate
+  opmode_en:          *opmode_en
+  opmode:             *opmode
+  weight:             "790 [g]"
   dimensions:         "Ø70 x 71.1 [mm]"
-  weight:             "790 [g]"   
+  encoderspec:        *encoderspec
   gearratio:          "51:1"
   backlash:           *backlash
   radialload:         *radialload_070
   radialload_en:      *radialload_070_en
-  mcu:                *mcu
-  controlcommand:    *command
-  physicalconnection: *rs485
-  id:                 *id
-  baudrate:           *baudrate
-  temperature:        *temperature
-  voltage:            *voltage
-  standbycurrent:     *standbycurrent
-  encoderspec:        *encoderspec
-  opmode_en:          *opmode_en
-  opmode:             *opmode
-  motor:              *motor
-  ratedspeed:         "39.2 [RPM]"
-  ratedtorque:        "6.5 [N.m]"
-  ratedcurrent:       "10.4 [A]"
-  maximumspeed:       "117.1 [RPM]"
+  noloadspeed:        "117.1 [rev/min]"
+  contspeed:          "4,583 [rev/min]"
+  conttorque:         "0.32 [N.m]"
+  contcurrent:        "10.4 [A]"
   maximumtorque:      "21.0 [N.m]"
   maximumcurrent:     "20.8 [A]"
   output:             "210 [W]"
+  temperature:        *temperature
+  opvoltage:          *voltage
+  commandsignal:      *command
+  commandsignalkr:    *command_kr
+  physicalconnection: *rs485
+  id:                 *id
+  standbycurrent:     *standbycurrent
 
 ym070-210-r099-rh:
+  mcu:                *mcu
+  motor:              *motor
+  baudrate:           *baudrate
+  opmode_en:          *opmode_en
+  opmode:             *opmode
+  weight:             "790 [g]"
   dimensions:         "Ø70 x 71.1 [mm]"
-  weight:             "790 [g]"   
+  encoderspec:        *encoderspec
   gearratio:          "99:1"
   backlash:           *backlash
   radialload:         *radialload_070
   radialload_en:      *radialload_070_en
-  mcu:                *mcu
-  controlcommand:    *command
-  physicalconnection: *rs485
-  id:                 *id
-  baudrate:           *baudrate
-  temperature:        *temperature
-  voltage:            *voltage
-  standbycurrent:     *standbycurrent
-  encoderspec:        *encoderspec
-  opmode_en:          *opmode_en
-  opmode:             *opmode
-  motor:              *motor
-  ratedspeed:         "20.2 [RPM]"
-  ratedtorque:        "12.7 [N.m]"
-  ratedcurrent:       "10.4 [A]"
-  maximumspeed:       "60.3 [RPM]"
+  noloadspeed:        "60.3 [rev/min]"
+  contspeed:          "20.2 [rev/min]"
+  conttorque:         "12.7 [N.m]"
+  contcurrent:        "10.4 [A]"
   maximumtorque:      "40.8 [N.m]"
   maximumcurrent:     "20.8 [A]"
   output:             "210 [W]"
-
-ym080-230-m001-rh:
-  dimensions:         "Ø80 x 53.1 [mm]"
-  weight:             "530 [g]"   
-  gearratio:          "-"
-  backlash:           "-"
-  radialload:         *radialload_070
-  radialload_en:      *radialload_070_en
-  mcu:                *mcu
-  controlcommand:    *command
+  temperature:        *temperature
+  opvoltage:          *voltage
+  commandsignal:      *command
+  commandsignalkr:    *command_kr
   physicalconnection: *rs485
   id:                 *id
-  baudrate:           *baudrate
-  temperature:        *temperature
-  voltage:            *voltage
   standbycurrent:     *standbycurrent
-  encoderspec:        *encoderspec
+
+ym080-230-m001-rh:
+  mcu:                *mcu
+  motor:              *motor
+  baudrate:           *baudrate
   opmode_en:          *opmode_en
   opmode:             *opmode
-  motor:              *motor
-  ratedspeed:         "2,292 [RPM]"
-  ratedtorque:        "0.62 [N.m]"
-  ratedcurrent:       "11.2 [A]"
-  maximumspeed:       "3,358 [RPM]"
+  weight:             "530 [g]"
+  dimensions:         "Ø80 x 54.1 [mm]"
+  encoderspec:        *encoderspec
+  gearratio:          "-"
+  backlash:           "-"
+  radialload:         *radialload_080
+  radialload_en:      *radialload_080_en
+  noloadspeed:        "3,358 [rev/min]"
+  contspeed:          "2,292 [rev/min]"
+  conttorque:         "0.62 [N.m]"
+  contcurrent:        "11.2 [A]"
   maximumtorque:      "1.24 [N.m]"
   maximumcurrent:     "22.4 [A]"
   output:             "230 [W]"
-
-ym080-230-r051-rh:
-  dimensions:         "Ø80 x 78.1 [mm]"
-  weight:             "1200 [g]"   
-  gearratio:          "51:1"
-  backlash:           *backlash
-  radialload:         *radialload_070
-  radialload_en:      *radialload_070_en
-  mcu:                *mcu
-  controlcommand:    *command
+  temperature:        *temperature
+  opvoltage:          *voltage
+  commandsignal:      *command
+  commandsignalkr:    *command_kr
   physicalconnection: *rs485
   id:                 *id
-  baudrate:           *baudrate
-  temperature:        *temperature
-  voltage:            *voltage
   standbycurrent:     *standbycurrent
-  encoderspec:        *encoderspec
+
+ym080-230-r051-rh:
+  mcu:                *mcu
+  motor:              *motor
+  baudrate:           *baudrate
   opmode_en:          *opmode_en
   opmode:             *opmode
-  motor:              *motor
-  ratedspeed:         "39.2 [RPM]"
-  ratedtorque:        "12.6 [N.m]"
-  ratedcurrent:       "11.2 [A]"
-  maximumspeed:       "65.8 [RPM]"
+  weight:             "1,200 [g]"
+  dimensions:         "Ø80 x 78.1 [mm]"
+  encoderspec:        *encoderspec
+  gearratio:          "51:1"
+  backlash:           *backlash
+  radialload:         *radialload_080
+  radialload_en:      *radialload_080_en
+  noloadspeed:        "65.8 [rev/min]"
+  contspeed:          "39.2 [rev/min]"
+  conttorque:         "12.6 [N.m]"
+  contcurrent:        "11.2 [A]"
   maximumtorque:      "41.0 [N.m]"
   maximumcurrent:     "22.4 [A]"
   output:             "230 [W]"
-
-ym080-230-r099-rh:
-  dimensions:         "Ø80 x 78.1 [mm]"
-  weight:             "1200 [g]"   
-  gearratio:          "99:1"
-  backlash:           *backlash
-  radialload:         *radialload_070
-  radialload_en:      *radialload_070_en
-  mcu:                *mcu
-  controlcommand:    *command
+  temperature:        *temperature
+  opvoltage:          *voltage
+  commandsignal:      *command
+  commandsignalkr:    *command_kr
   physicalconnection: *rs485
   id:                 *id
-  baudrate:           *baudrate
-  temperature:        *temperature
-  voltage:            *voltage
   standbycurrent:     *standbycurrent
-  encoderspec:        *encoderspec
+
+ym080-230-r099-rh:
+  mcu:                *mcu
+  motor:              *motor
+  baudrate:           *baudrate
   opmode_en:          *opmode_en
   opmode:             *opmode
-  motor:              *motor
-  ratedspeed:         "20.2 [RPM]"
-  ratedtorque:        "24.6 [N.m]"
-  ratedcurrent:       "11.2 [A]"
-  maximumspeed:       "33.9 [RPM]"
+  weight:             "1,200 [g]"
+  dimensions:         "Ø80 x 78.1 [mm]"
+  encoderspec:        *encoderspec
+  gearratio:          "99:1"
+  backlash:           *backlash
+  radialload:         *radialload_080
+  radialload_en:      *radialload_080_en
+  noloadspeed:        "33.9 [rev/min]"
+  contspeed:          "20.2 [rev/min]"
+  conttorque:         "24.6 [N.m]"
+  contcurrent:        "11.2 [A]"
   maximumtorque:      "79.6 [N.m]"
   maximumcurrent:     "22.4 [A]"
   output:             "230 [W]"
+  temperature:        *temperature
+  opvoltage:          *voltage
+  commandsignal:      *command
+  commandsignalkr:    *command_kr
+  physicalconnection: *rs485
+  id:                 *id
+  standbycurrent:     *standbycurrent

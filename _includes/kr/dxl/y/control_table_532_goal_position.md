@@ -8,4 +8,3 @@ Goal Position(532)을 통해 목표 위치를 설정 할 수 있습니다.
 **참고** : 전자 기어비 [Gear Ratio Num(96)/Den(100)] 값이 1이 아닌 경우 Goal Position(532) 값에 해당 값을 곱하여 제어기에 반영됩니다.
 {: .notice}
 
-[Gear Ratio Num(96)/Den(100)]: #electronic-gear-ratio-numeratorDenominator96-100
