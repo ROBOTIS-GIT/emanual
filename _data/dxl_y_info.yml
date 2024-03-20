@@ -10,10 +10,13 @@ common_y_specs:
   radialload_080:     &radialload_080     "TBD"
   radialload_070_en:  &radialload_070_en  "TBD"
   radialload_080_en:  &radialload_080_en  "TBD"
+  output_070:         &output_070         "210 [W]"
+  output_080:         &output_080         "230 [W]"
   temperature:        &temperature        "-5 ~ +55 [&deg;C]"
   voltage:            &voltage            "24 [V]"
   command:            &command            "Digital Packet"
-  rs485:              &rs485              "RS485 Multidrop Bus<br />RS485 비동기 시리얼 통신 (8bit, 1stop, No Parity)"
+  rs485_kr:           &rs485_kr           "RS485 Multidrop Bus<br />RS485 비동기 시리얼 통신 (8bit, 1stop, No Parity)"
+  rs485_en:           &rs485_en           "RS485 Multidrop Bus<br />RS485 비동기 시리얼 통신 (8bit, 1stop, No Parity)"  
   id:                 &id                 "0 ~ 253 (0 ~ 252)"
   standbycurrent:     &standbycurrent     "40 [mA]"
 
@@ -26,23 +29,24 @@ ym070-210-m001-rh:
   opmode:             *opmode
   weight:             "340 [g]"
   dimensions:         "Ø70 x 50.9 [mm]"
+  resolution:         "0.00068665 [pulse/rev]"
   encoderspec:        *encoderspec
   gearratio:          "-"
   backlash:           "-"
   radialload:         *radialload_070
   radialload_en:      *radialload_070_en
-  noloadspeed:        "5,973 [rev/min]"
-  contspeed:          "4,583 [rev/min]"
+  noloadspeed:        "5,675 [rev/min]"
+  contspeed:          "4,664 [rev/min]"
   conttorque:         "0.32 [N.m]"
-  contcurrent:        "10.4 [A]"
+  contcurrent:        "11.9 [A]"
   maximumtorque:      "0.64 [N.m]"
   maximumcurrent:     "20.8 [A]"
-  output:             "210 [W]"
+  output:             *output_070
   temperature:        *temperature
   opvoltage:          *voltage
   commandsignal:      *command
-  commandsignalkr:    *command_kr
-  physicalconnection: *rs485
+  connection_kr:      *rs485_kr
+  connection_en:      *rs485_en
   id:                 *id
   standbycurrent:     *standbycurrent
 
@@ -54,23 +58,24 @@ ym070-210-r051-rh:
   opmode:             *opmode
   weight:             "790 [g]"
   dimensions:         "Ø70 x 71.1 [mm]"
+  resolution:         "0.000013464 [pulse/rev]"
   encoderspec:        *encoderspec
   gearratio:          "51:1"
   backlash:           *backlash
   radialload:         *radialload_070
   radialload_en:      *radialload_070_en
-  noloadspeed:        "117.1 [rev/min]"
-  contspeed:          "4,583 [rev/min]"
-  conttorque:         "0.32 [N.m]"
-  contcurrent:        "10.4 [A]"
-  maximumtorque:      "21.0 [N.m]"
+  noloadspeed:        "111.3 [rev/min]"
+  contspeed:          "39.2 [rev/min]"
+  conttorque:         "8.2 [N.m]"
+  contcurrent:        "11.9 [A]"
+  maximumtorque:      "16.3 [N.m]"
   maximumcurrent:     "20.8 [A]"
-  output:             "210 [W]"
+  output:             *output_070
   temperature:        *temperature
   opvoltage:          *voltage
   commandsignal:      *command
-  commandsignalkr:    *command_kr
-  physicalconnection: *rs485
+  connection_kr:      *rs485_kr
+  connection_en:      *rs485_en
   id:                 *id
   standbycurrent:     *standbycurrent
 
@@ -82,23 +87,24 @@ ym070-210-r099-rh:
   opmode:             *opmode
   weight:             "790 [g]"
   dimensions:         "Ø70 x 71.1 [mm]"
+  resolution:         "0.0000069358 [pulse/rev]"
   encoderspec:        *encoderspec
   gearratio:          "99:1"
   backlash:           *backlash
   radialload:         *radialload_070
   radialload_en:      *radialload_070_en
-  noloadspeed:        "60.3 [rev/min]"
+  noloadspeed:        "57.3 [rev/min]"
   contspeed:          "20.2 [rev/min]"
-  conttorque:         "12.7 [N.m]"
-  contcurrent:        "10.4 [A]"
-  maximumtorque:      "40.8 [N.m]"
+  conttorque:         "14.6 [N.m]"
+  contcurrent:        "11.0 [A]"
+  maximumtorque:      "31.7 [N.m]"
   maximumcurrent:     "20.8 [A]"
-  output:             "210 [W]"
+  output:             *output_070
   temperature:        *temperature
   opvoltage:          *voltage
   commandsignal:      *command
-  commandsignalkr:    *command_kr
-  physicalconnection: *rs485
+  connection_kr:      *rs485_kr
+  connection_en:      *rs485_en
   id:                 *id
   standbycurrent:     *standbycurrent
 
@@ -110,23 +116,24 @@ ym080-230-m001-rh:
   opmode:             *opmode
   weight:             "530 [g]"
   dimensions:         "Ø80 x 54.1 [mm]"
+  resolution:         "0.00068665 [pulse/rev]"
   encoderspec:        *encoderspec
   gearratio:          "-"
   backlash:           "-"
   radialload:         *radialload_080
   radialload_en:      *radialload_080_en
-  noloadspeed:        "3,358 [rev/min]"
-  contspeed:          "2,292 [rev/min]"
+  noloadspeed:        "3,190 [rev/min]"
+  contspeed:          "2,597 [rev/min]"
   conttorque:         "0.62 [N.m]"
-  contcurrent:        "11.2 [A]"
+  contcurrent:        "12.6 [A]"
   maximumtorque:      "1.24 [N.m]"
   maximumcurrent:     "22.4 [A]"
-  output:             "230 [W]"
+  output:             *output_080
   temperature:        *temperature
   opvoltage:          *voltage
   commandsignal:      *command
-  commandsignalkr:    *command_kr
-  physicalconnection: *rs485
+  connection_kr:      *rs485_kr
+  connection_en:      *rs485_en
   id:                 *id
   standbycurrent:     *standbycurrent
 
@@ -138,23 +145,24 @@ ym080-230-r051-rh:
   opmode:             *opmode
   weight:             "1,200 [g]"
   dimensions:         "Ø80 x 78.1 [mm]"
+  resolution:         "0.000013464 [pulse/rev]"
   encoderspec:        *encoderspec
   gearratio:          "51:1"
   backlash:           *backlash
   radialload:         *radialload_080
   radialload_en:      *radialload_080_en
-  noloadspeed:        "65.8 [rev/min]"
+  noloadspeed:        "62.5 [rev/min]"
   contspeed:          "39.2 [rev/min]"
-  conttorque:         "12.6 [N.m]"
-  contcurrent:        "11.2 [A]"
-  maximumtorque:      "41.0 [N.m]"
+  conttorque:         "15.8 [N.m]"
+  contcurrent:        "12.6 [A]"
+  maximumtorque:      "31.6 [N.m]"
   maximumcurrent:     "22.4 [A]"
-  output:             "230 [W]"
+  output:             *output_080
   temperature:        *temperature
   opvoltage:          *voltage
   commandsignal:      *command
-  commandsignalkr:    *command_kr
-  physicalconnection: *rs485
+  connection_kr:      *rs485_kr
+  connection_en:      *rs485_en
   id:                 *id
   standbycurrent:     *standbycurrent
 
@@ -166,22 +174,23 @@ ym080-230-r099-rh:
   opmode:             *opmode
   weight:             "1,200 [g]"
   dimensions:         "Ø80 x 78.1 [mm]"
+  resolution:         "0.0000069358 [pulse/rev]"
   encoderspec:        *encoderspec
   gearratio:          "99:1"
   backlash:           *backlash
   radialload:         *radialload_080
   radialload_en:      *radialload_080_en
-  noloadspeed:        "33.9 [rev/min]"
+  noloadspeed:        "32.2 [rev/min]"
   contspeed:          "20.2 [rev/min]"
-  conttorque:         "24.6 [N.m]"
-  contcurrent:        "11.2 [A]"
-  maximumtorque:      "79.6 [N.m]"
+  conttorque:         "26.0 [N.m]"
+  contcurrent:        "10.7 [A]"
+  maximumtorque:      "61.4 [N.m]"
   maximumcurrent:     "22.4 [A]"
-  output:             "230 [W]"
+  output:             *output_080
   temperature:        *temperature
   opvoltage:          *voltage
   commandsignal:      *command
-  commandsignalkr:    *command_kr
-  physicalconnection: *rs485
+  connection_kr:      *rs485_kr
+  connection_en:      *rs485_en
   id:                 *id
   standbycurrent:     *standbycurrent
