@@ -5,6 +5,28 @@ main:
     url: /dxl/
     urlkr: /dxl/
     children:
+    - #title: "Y Series"
+      titlekr: "Y 시리즈"
+      url: /dxl/y/
+      children:
+      - #title: "YM070-210-M001-RH"
+        titlekr: "YM070-210-M001-RH"
+        url: /dxl/y/ym070-210-m001-rh/
+      - #title: "YM070-210-R051-RH"
+        titlekr: "YM070-210-R051-RH"
+        url: /dxl/y/ym070-210-r051-rh/
+      - #title: "YM070-210-R099-RH"
+        titlekr: "YM070-210-R099-RH"
+        url: /dxl/y/ym070-210-r099-rh/
+      - #title: "YM080-230-M001-RH"
+        titlekr: "YM080-230-M001-RH"
+        url: /dxl/y/ym080-230-m001-rh/
+      - #title: "YM080-230-R051-RH"
+        titlekr: "YM080-230-R051-RH"
+        url: /dxl/y/ym080-230-r051-rh/
+      - #title: "YM080-230-R099-RH"
+        titlekr: "YM080-230-R099-RH"
+        url: /dxl/y/ym080-230-r099-rh/
     - title: "P Series"
       titlekr: "P 시리즈"
       url: /dxl/p/
