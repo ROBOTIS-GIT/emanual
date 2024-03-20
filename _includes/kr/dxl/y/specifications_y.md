@@ -15,8 +15,8 @@
 | No Load Speed            | {{ site.data.dxl_y_info[page.ref].noloadspeed }}        |
 | Continuous Speed         | {{ site.data.dxl_y_info[page.ref].contspeed }}          |
 | Continuous Torque        | {{ site.data.dxl_y_info[page.ref].conttorque }}         |
-| Continuous Current<sup>2)<sup>  | {{ site.data.dxl_y_info[page.ref].contcurrent }}        |
-| Maximum Torque<sup>1)<sup>       | {{ site.data.dxl_y_info[page.ref].maximumtorque }}       |
+| Continuous Current<sup>1)<sup>  | {{ site.data.dxl_y_info[page.ref].contcurrent }}        |
+| Maximum Torque<sup>2)<sup>       | {{ site.data.dxl_y_info[page.ref].maximumtorque }}       |
 | Maximum Current<sup>1) 2)<sup>  | {{ site.data.dxl_y_info[page.ref].maximumcurrent }}      |
 | 출력                      | {{ site.data.dxl_y_info[page.ref].output }}             |
 | 동작 온도                 | {{ site.data.dxl_y_info[page.ref].temperature }}         |

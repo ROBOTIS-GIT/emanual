@@ -794,18 +794,18 @@ main:
 
 all-dynamixel:
   - #title: "Y Series"
-    #titlekr: "Y 시리즈"
+    titlekr: "Y 시리즈"
     #url: /dxl/#y-series
-    #urlkr: /dxl/#y-시리즈
-    #children:
+    urlkr: /dxl/#y-시리즈
+    children:
       - #title: "YM070 Series"
-        #titlekr: "YM070 시리즈"
+        titlekr: "YM070 시리즈"
         #url: /dxl/#ym070-series
-        #urlkr: /dxl/#ym070-시리즈
+        urlkr: /dxl/#ym070-시리즈
       - #title: "YM080 Series"
-        #titlekr: "YM080 시리즈"
+        titlekr: "YM080 시리즈"
         #url: /dxl/#ym080-series
-        #urlkr: /dxl/#ym080-시리즈
+        urlkr: /dxl/#ym080-시리즈
   - title: "P Series"
     titlekr: "P 시리즈"
     url: /dxl/#p-series
