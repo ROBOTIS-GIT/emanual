@@ -1,3 +1,12 @@
+{% capture inspection %}
+**점검**
+- 제품을 사용하시기 전, 설명서의 내용을 숙지하시기 바랍니다. 잘못된 조립으로 제품을 작동할 경우 진동, 수명 단축 및/또는 영구적인 손상이 발생할 수 있습니다.
+- 모델 번호와 형식이 주문한 제품과 일치하는지 확인하십시오.
+- 제품 패키지에 모든 구성 요소가 포함되어 있는지 확인하십시오.
+- 제품의 표면 및 외관에 손상이 있는지 확인하세요.
+- 작동하기 전에 포함된 배터리를 연결하고 다중 회전 초기화를 수행하십시오.
+{% endcapture %}
+<div class="notice--info">{{ inspection | markdownify }}</div>
 
 {% capture common_danger %}  
 ![](/assets/images/icon_warning.png)  
@@ -44,9 +53,14 @@
 {% endcapture %}
 <div class="notice--warning">{{ dxl_attention | markdownify }}</div>
 
-{% capture pawer_danger %}
-**주의: 전원 공급 시 주의사항**
-- 전원이 꺼진 상태에서 다이나믹셀과 전원을 연결하시고 스위치로 ON/OFF를 해주세요
+{% capture guarantee %}
+**보증 기간 및 범위**
+- 본 제품은 구입일로부터 1년간 보증이 적용됩니다. (* 제품은 정상적인 작동 조건에서 사용해야 합니다)
+- 보증기간 내에 제조상의 결함으로 인한 문제가 발생한 경우, 로보티즈는 추가 비용 없이 제품을 수리 또는 교체해 드립니다.
+- 사용자가 제품을 부적절하게 사용하거나 취급한 것으로 판단되는 경우 보증은 무효화됩니다.
+- 제품을 어떤 방식으로든 분해, 수리 또는 개조한 경우 보증이 무효화됩니다.
+- 외부 부품에 의해 제품이 손상된 경우 보증이 무효화됩니다.
+- 제품이 천재지변 및/또는 통제할 수 없는 상황으로 인해 영향을 받은 경우 보증이 무효화됩니다.
+- 해당품의 고장으로 유발되는 다른 손해 및 장비에 설치에 관련되는 기타 비용 등은 당사의 부담에서 제외됩니다.
 {% endcapture %}
-
-<div class="notice--danger">{{ pawer_danger | markdownify }}</div>
+<div class="notice--success">{{ guarantee | markdownify }}</div>
