@@ -61,9 +61,9 @@ DYNAMIXEL-Y 커넥터의 핀 배열은 아래 그림과 같습니다.
 ![](/assets/images/dxl/y/70_connect_cable_2.png)
 
 ### [YM080](#ym080)
-![](/assets/images/dxl/y/80_connect_cable_1.png)
+![](/assets/images/dxl/y/80_connect_cable_1.PNG)
 
-![](/assets/images/dxl/y/80_connect_cable_2.png)
+![](/assets/images/dxl/y/80_connect_cable_2.PNG)
 
 **경고**: 배선 시에는 핀 배열이 틀리지 않도록 각별히 주의하십시오. 올바르게 연결되지 않을 경우 다이나믹셀의 심각한 손상을 초래할 수 있습니다.
 {: .notice--warning}
