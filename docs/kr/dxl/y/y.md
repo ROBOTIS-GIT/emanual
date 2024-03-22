@@ -52,7 +52,7 @@ Main Controller를 직접 제작하여 다이나믹셀-Y를 제어하기 위해�
 - TX_Enable_5V =High인 경우: TxD의 신호가 D+, D-로 출력
 - TX_Enable_5V =Low인 경우: D+, D-의 신호가 RxD로 입력
 
-## [핀 배열](#핀-배열)
+## [케이블 연결](#케이블-연결)
 DYNAMIXEL-Y 커넥터의 핀 배열은 아래 그림과 같습니다.
 
 ### [YM070](#ym070)
