@@ -1,4 +1,4 @@
-제어기와 RS485통신하기 위한 통신 속도 입니다.
+The communication speed for communication between the controller and servo over the RS485 serial bus is called the "Baud Rate."
 
 |      Value      |   Baud Rate<br>[bps]  | Actual Baud Rate<br>[bps] |  Error Rate<br>[%] |
 |:---------------:|:---------------------:|:-------------------------:|:------------------:|

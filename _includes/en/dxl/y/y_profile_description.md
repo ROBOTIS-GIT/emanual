@@ -34,8 +34,8 @@ The following outlines the profile operation process for the [Goal Position(532)
 The Velocity Override function operates in a similar manner.  
 The acceleration time (t1) in this case is as follows.  
 
-**Velocity-based Profile: t1 = 600 * {Profile Velocity(240) / Profile Acceleration(244)} [ms]**  
-**Time-based Profile: t1 = Profile Acceleration Time(252) [ms]**
+**Velocity-based Profile : t<sub>1</sub> = 64 * {[Profile Velocity(112)](#profile-velocity112) / [Profile Acceleration(108)](#profile-acceleration108)}**  
+**Time-based Profile : t<sub>1</sub> = [Profile Acceleration(108)](#profile-acceleration108)**
 {% endcapture %}
 
 <div class="notice">

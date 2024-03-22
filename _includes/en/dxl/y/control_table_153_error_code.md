@@ -3,8 +3,8 @@ This represents the code for the issue occurring in the device. The list of erro
 | Value |           Label              | Torque ON | *Hold | Error Clear | Description                                                                |
 |:-----:|:----------------------------:|:---------:|:-----:|:-----------:|:---------------------------------------------------------------------------|
 | 0     | No Error                     | -         | -     | -           | No error                                                                   |
-| 1     | Over Voltage Error           | N         | -     | Y           | Device supply voltage exceeds the Max [Voltage Limit(60)]                  |
-| 2     | Low Voltage Error            | N         | -     | Y           | Device supply voltage exceeds the Min [Voltage Limit(62)]                  |
+| 1     | Over Voltage Error           | N         | -     | Y           | Device supply voltage exceeds the [Max Voltage Limit(60)]                  |
+| 2     | Low Voltage Error            | N         | -     | Y           | Device supply voltage exceeds the [Min Voltage Limit(62)]                  |
 | 3     | Inverter Overheating Error   | N         | -     | Y           | The inverter temperature has exceeded the [Inverter Temperature Limit(56)] |
 | 4     | Motor Overheating Error      | N         | -     | Y           | The motor temperature has exceeded the [Motor Temperature Limit(57)].      |
 | 5     | Overload Error               | N         | -     | Y           | Operating current exceeding rated current for an extended duration         |

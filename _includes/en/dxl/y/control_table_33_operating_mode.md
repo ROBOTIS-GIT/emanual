@@ -1,10 +1,10 @@
 Control mode can be set. DYNAMIXEL-Y supports three control modes.
 
-| Value      | Operating Mode        | Description                                                                                                                         |
-|:-----------|:----------------------|:------------------------------------------------------------------------------------------------------------------------------------|
-| 0          | Current Control Mode  | Controls current. Does not control velocity and position.                                                                           |
-| 1          | Velocity Control Mode | Controls velocity and current. Does not control position.                                                                           |
-| 3(Default) | Position Control Mode | Controls position, velocity, and current.<br>Operates within the range defined by Max Position Limit(76) to Min Position Limit(84). | 
+| Value      | Operating Mode        | Description                                                                                                                             |
+|:-----------|:----------------------|:----------------------------------------------------------------------------------------------------------------------------------------|
+| 0          | Current Control Mode  | Controls current. Does not control velocity and position.                                                                               |
+| 1          | Velocity Control Mode | Controls velocity and current. Does not control position.                                                                               |
+| 3(Default) | Position Control Mode | Controls position, velocity, and current.<br>Operates within the range defined by Max [Position Limit(76)] to Min [Position Limit(84)]. | 
 
 The control block diagram for each control mode is as follows:
 

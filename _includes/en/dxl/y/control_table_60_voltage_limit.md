@@ -1,5 +1,5 @@
 These are the upper and lower limits of the operating voltage.  
-If the Present [Input Voltage(568)] indicating the currently applied voltage goes beyond the range of Max Voltage Limit (60) or Min Voltage Limit (62), an error occurs. In such cases, the values in the control table are changed as shown in the table below, and the device comes to a stop. Since an error has occurred in the device, the Status Packet transmits an Alert Bit (0x80) through the Error field.
+If the [Present Input Voltage(568)] indicating the currently applied voltage goes beyond the range of Max Voltage Limit(60) or Min Voltage Limit(62), an error occurs. In such cases, the values in the control table are changed as shown in the table below, and the device comes to a stop. Since an error has occurred in the device, the Status Packet transmits an Alert Bit (0x80) through the Error field.
 
 
 | Address   | Label                | Value Change                                        | Description                                                                             |
