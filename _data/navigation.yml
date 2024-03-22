@@ -1059,6 +1059,15 @@ dynamixel_y:
     titlekr: "통신 회로"
     url: /dxl/y/#communication-circuitry
     urlkr: /dxl/y/#통신-회로
+    children:
+      - titel: "UART Connection Circuit Diagram"
+        titelkr: "UART 통신 회로도"
+        url: /dxl/y/#uart-connecion-circuit-diagram
+        urlkr: /dxl/y/#uart-통신-회로도
+      - title: "Cable Connection"
+        titlekr: "케이블 연결"
+        url: /dxl/y/#cable-connection
+        urlkr: /dxl/y/#케이블-연결
 
 #AX-12W sidebar
 ax-12w:
