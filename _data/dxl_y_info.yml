@@ -16,7 +16,7 @@ common_y_specs:
   voltage:            &voltage            "24 [V]"
   command:            &command            "Digital Packet"
   rs485_kr:           &rs485_kr           "RS485 Multidrop Bus<br />RS485 비동기 시리얼 통신 (8bit, 1stop, No Parity)"
-  rs485_en:           &rs485_en           "RS485 Multidrop Bus<br />RS485 비동기 시리얼 통신 (8bit, 1stop, No Parity)"  
+  rs485_en:           &rs485_en           "RS485 Multidrop Bus<br />RS485 Asynchronous Serial Communication (8bit, 1stop, No Parity)"  
   id:                 &id                 "0 ~ 253 (0 ~ 252)"
   standbycurrent:     &standbycurrent     "40 [mA]"
 
@@ -29,7 +29,7 @@ ym070-210-m001-rh:
   opmode:             *opmode
   weight:             "340 [g]"
   dimensions:         "Ø70 x 50.9 [mm]"
-  resolution:         "0.00068665 [pulse/rev]"
+  resolution:         "524,288 [pulse/rev]"
   encoderspec:        *encoderspec
   gearratio:          "-"
   backlash:           "-"
@@ -58,7 +58,7 @@ ym070-210-r051-rh:
   opmode:             *opmode
   weight:             "790 [g]"
   dimensions:         "Ø70 x 71.1 [mm]"
-  resolution:         "0.000013464 [pulse/rev]"
+  resolution:         "26,738,688 [pulse/rev]"
   encoderspec:        *encoderspec
   gearratio:          "51:1"
   backlash:           *backlash
@@ -87,7 +87,7 @@ ym070-210-r099-rh:
   opmode:             *opmode
   weight:             "790 [g]"
   dimensions:         "Ø70 x 71.1 [mm]"
-  resolution:         "0.0000069358 [pulse/rev]"
+  resolution:         "51,904,512 [pulse/rev]"
   encoderspec:        *encoderspec
   gearratio:          "99:1"
   backlash:           *backlash
@@ -116,7 +116,7 @@ ym080-230-m001-rh:
   opmode:             *opmode
   weight:             "530 [g]"
   dimensions:         "Ø80 x 54.1 [mm]"
-  resolution:         "0.00068665 [pulse/rev]"
+  resolution:         "524,288 [pulse/rev]"
   encoderspec:        *encoderspec
   gearratio:          "-"
   backlash:           "-"
@@ -145,7 +145,7 @@ ym080-230-r051-rh:
   opmode:             *opmode
   weight:             "1,200 [g]"
   dimensions:         "Ø80 x 78.1 [mm]"
-  resolution:         "0.000013464 [pulse/rev]"
+  resolution:         "26,738,688 [pulse/rev]"
   encoderspec:        *encoderspec
   gearratio:          "51:1"
   backlash:           *backlash
@@ -174,7 +174,7 @@ ym080-230-r099-rh:
   opmode:             *opmode
   weight:             "1,200 [g]"
   dimensions:         "Ø80 x 78.1 [mm]"
-  resolution:         "0.0000069358 [pulse/rev]"
+  resolution:         "51,904,512 [pulse/rev]"
   encoderspec:        *encoderspec
   gearratio:          "99:1"
   backlash:           *backlash

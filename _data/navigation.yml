@@ -1046,6 +1046,20 @@ dynamixel_p:
     url: /dxl/p/#drawing
     urlkr: /dxl/p/#기구-도면
 
+dynamixel_y:
+  - title: "Product Lineup"
+    titlekr: "제품 라인업"
+    url: /dxl/y/#product-lineup
+    urlkr: /dxl/y/#제품-라인업
+  - title: "Key Specifications"
+    titlekr: "주요 사양"
+    url: /dxl/y/#key-specifications
+    urlkr: /dxl/y/#주요-사양
+  - title: "Communication Circuitry"
+    titlekr: "통신 회로"
+    url: /dxl/y/#communication-circuitry
+    urlkr: /dxl/y/#통신-회로
+
 #AX-12W sidebar
 ax-12w:
   - title: "Specifications"
@@ -4338,17 +4352,6 @@ dxl_x_main:
         titlekr: "XL 시리즈"
         url: /dxl/x/#xl-series
         urlkr: /dxl/x/#xl-시리즈
-        
-#Y-Series Main sidebar
-dxl_y_main:
-  - title: "Features"
-    titlekr: "특징"
-    url: /dxl/x/#features
-    urlkr: /dxl/y/#특징
-  - title: "Y Series"
-    titlekr: "Y 시리즈"
-    url: /dxl/y/#y-series
-    urlkr: /dxl/y/#y-시리즈
 
 #XL320 sidebar
 xl320:
@@ -18590,23 +18593,23 @@ ym070-210-m001-rh:
         children:
           - title: "Area(EEPROM, RAM)"
             titlekr: "영역 (EEPROM, RAM, Hybrid)"
-            url: /dxl/y/ym070-210-m001-rh/#area-eeprom-ram
+            url: /dxl/y/ym070-210-m001-rh/#area-eeprom-ram-hybrid
             urlkr: /dxl/y/ym070-210-m001-rh/#영역-eeprom-ram-hybrid
           - title: "Size"
             titlekr: "크기"
             url: /dxl/y/ym070-210-m001-rh/#size
             urlkr: /dxl/y/ym070-210-m001-rh/#크기
-          - title: "Access"
+          - title: "Access Authorization"
             titlekr: "접근권한"
-            url: /dxl/y/ym070-210-m001-rh/#access
+            url: /dxl/y/ym070-210-m001-rh/#access-authorization
             urlkr: /dxl/y/ym070-210-m001-rh/#접근권한
-          - title: "Initial Value"
+          - title: "Default Values"
             titlekr: "기본값"
-            url: /dxl/y/ym070-210-m001-rh/#initial-value
+            url: /dxl/y/ym070-210-m001-rh/#default-values
             urlkr: /dxl/y/ym070-210-m001-rh/#기본값
-      - title: "RAM Area"
+      - title: "Control Table Configuration"
         titlekr: "컨트롤 테이블 구성"
-        url: /dxl/y/ym070-210-m001-rh/#control-table-of-ram-area
+        url: /dxl/y/ym070-210-m001-rh/#control-table-configuration
         urlkr: /dxl/y/ym070-210-m001-rh/#컨트롤-테이블-구성
       - title: "Control Table Description"
         titlekr: "컨트롤 테이블 설명"
@@ -18652,13 +18655,6 @@ ym070-210-m001-rh:
           - title: "Operating Mode(33)"
             titlekr: "Operating Mode(33)"
             url: /dxl/y/ym070-210-m001-rh/#operating-mode33
-            children:
-              - titlekr: "전류 제어 모드"
-                url: /dxl/y/ym070-210-m001-rh/#전류-제어-모드
-              - titlekr: "속도 제어 모드"
-                url: /dxl/y/ym070-210-m001-rh/#속도-제어-모드
-              - titlekr: "위치 제어 모드"
-                url: /dxl/y/ym070-210-m001-rh/#위치-제어-모드    
           - title: "Startup Configuration(34)"
             titlekr: "Startup Configuration(34)"
             url: /dxl/y/ym070-210-m001-rh/#startup-configuration34
@@ -18808,9 +18804,9 @@ ym070-210-m001-rh:
     url: /dxl/y/ym070-210-m001-rh/#how-to-assemble
     urlkr: /dxl/y/ym070-210-m001-rh/#조립-예시
     children:
-      - title: Option Frame Assembly
+      - title: Assembly Guide
         titlekr: 조립가이드
-        url: /dxl/y/ym070-210-m001-rh/#option-frame-assembly
+        url: /dxl/y/ym070-210-m001-rh/#assembly-guide
         urlkr: /dxl/y/ym070-210-m001-rh/#조립가이드
   - title: "Maintenance"
     titlekr: "유지 보수"
@@ -18821,9 +18817,9 @@ ym070-210-m001-rh:
     url: /dxl/y/ym070-210-m001-rh/#reference
     urlkr: /dxl/y/ym070-210-m001-rh/#참고자료
     children:
-      - title: "What is the Profile"
+      - title: "Profile"
         titlekr: "Profile"
-        url: /dxl/y/ym070-210-m001-rh/#what-is-the-profile
+        url: /dxl/y/ym070-210-m001-rh/#profile
         urlkr: /dxl/y/ym070-210-m001-rh/#profile
       - title: "Certifications"
         titlekr: "인증 획득"
@@ -18837,9 +18833,9 @@ ym070-210-m001-rh:
         titlekr: "통신 회로"
         url: /dxl/y/ym070-210-m001-rh/#communication-circuit
         urlkr: /dxl/y/ym070-210-m001-rh/#통신-회로
-      - title: "--"
+      - title: "Cable Connection"
         titlekr: "케이블 연결"
-        url: /dxl/y/ym070-210-m001-rh/#--
+        url: /dxl/y/ym070-210-m001-rh/#cable-connection
         urlkr: /dxl/y/ym070-210-m001-rh/#케이블-연결
       - title: "Drawings"
         titlekr: "도면"
@@ -18856,21 +18852,23 @@ ym070-210-m001-rh:
       - title: "Multi-Turn Clear Packet"
         titlekr: "Multi-Turn Clear Packet"
         url: /dxl/y/ym070-210-m001-rh/#multi-turn-clear-packet
-      - title: "Multi-Turn Clear "
-        titlekr: "Multi-Turn Clear 방법"
-        url: /dxl/y/ym070-210-m001-rh/#multi-turn-clear
-        urlkr: /dxl/y/ym070-210-m001-rh/#multi-turn-clear-방법
+        children:
+          - title: "Multi-Turn Clear Method"
+            titlekr: "Multi-Turn Clear 방법"
+            url: /dxl/y/ym070-210-m001-rh/#multi-turn-clear-method
+            urlkr: /dxl/y/ym070-210-m001-rh/#multi-turn-clear-방법
       - title: "Error Clear Packet"
         titlekr: "Error Clear Packet"
         url: /dxl/y/ym070-210-m001-rh/#error-clear-packet
-      - title: "Multi-Turn backup Battery "
-        titlekr: "Multi-Turn backup Battery 교체"
-        url: /dxl/y/ym070-210-m001-rh/#multi-turn-backup-battery   
-        urlkr: /dxl/y/ym070-210-m001-rh/#multi-turn-backup-battery-교체  
-        children:
-          - title: "Battery"
-            titlekr: "Battery 교체 방법"
-            urlkr: /dxl/y/ym070-210-m001-rh/#battery-교체-방법
+  - title: "Multi-Turn backup Battery Replacement"
+    titlekr: "Multi-Turn Backup 배터리 교체"
+    url: /dxl/y/ym070-210-m001-rh/#multi-turn-backup-battery-replacement 
+    urlkr: /dxl/y/ym070-210-m001-rh/#multi-turn-backup-배터리-교체
+    children:
+      - title: "Procedure for Battery Replacement"
+        titlekr: "배터리 교체 방법"
+        url: /dxl/y/ym070-210-m001-rh/#procedure-for-battery-replacement
+        urlkr: /dxl/y/ym070-210-m001-rh/#배터리-교체-방법
 
 ym070-210-r051-rh:
   - title: "Specifications"
@@ -18894,23 +18892,23 @@ ym070-210-r051-rh:
         children:
           - title: "Area(EEPROM, RAM)"
             titlekr: "영역 (EEPROM, RAM, Hybrid)"
-            url: /dxl/y/ym070-210-r051-rh/#area-eeprom-ram
+            url: /dxl/y/ym070-210-r051-rh/#area-eeprom-ram-hybrid
             urlkr: /dxl/y/ym070-210-r051-rh/#영역-eeprom-ram-hybrid
           - title: "Size"
             titlekr: "크기"
             url: /dxl/y/ym070-210-r051-rh/#size
             urlkr: /dxl/y/ym070-210-r051-rh/#크기
-          - title: "Access"
+          - title: "Access Authorization"
             titlekr: "접근권한"
-            url: /dxl/y/ym070-210-r051-rh/#access
+            url: /dxl/y/ym070-210-r051-rh/#access-authorization
             urlkr: /dxl/y/ym070-210-r051-rh/#접근권한
-          - title: "Initial Value"
+          - title: "Default Values"
             titlekr: "기본값"
-            url: /dxl/y/ym070-210-r051-rh/#initial-value
+            url: /dxl/y/ym070-210-r051-rh/#default-values
             urlkr: /dxl/y/ym070-210-r051-rh/#기본값
-      - title: "RAM Area"
+      - title: "Control Table Configuration"
         titlekr: "컨트롤 테이블 구성"
-        url: /dxl/y/ym070-210-r051-rh/#control-table-of-ram-area
+        url: /dxl/y/ym070-210-r051-rh/#control-table-configuration
         urlkr: /dxl/y/ym070-210-r051-rh/#컨트롤-테이블-구성
       - title: "Control Table Description"
         titlekr: "컨트롤 테이블 설명"
@@ -18956,13 +18954,6 @@ ym070-210-r051-rh:
           - title: "Operating Mode(33)"
             titlekr: "Operating Mode(33)"
             url: /dxl/y/ym070-210-r051-rh/#operating-mode33
-            children:
-              - titlekr: "전류 제어 모드"
-                url: /dxl/y/ym070-210-r051-rh/#전류-제어-모드
-              - titlekr: "속도 제어 모드"
-                url: /dxl/y/ym070-210-r051-rh/#속도-제어-모드
-              - titlekr: "위치 제어 모드"
-                url: /dxl/y/ym070-210-r051-rh/#위치-제어-모드    
           - title: "Startup Configuration(34)"
             titlekr: "Startup Configuration(34)"
             url: /dxl/y/ym070-210-r051-rh/#startup-configuration34
@@ -19112,10 +19103,10 @@ ym070-210-r051-rh:
     url: /dxl/y/ym070-210-r051-rh/#how-to-assemble
     urlkr: /dxl/y/ym070-210-r051-rh/#조립-예시
     children:
-      - title: Option Frame Assembly
+      - title: Assembly Guide
         titlekr: 조립가이드
-        url: /dxl/y/ym070-210-r051-rh/#option-frame-assembly
-        urlkr: /dxl/y/ym070-210-r051-rh/#조립가이드 
+        url: /dxl/y/ym070-210-r051-rh/#assembly-guide
+        urlkr: /dxl/y/ym070-210-r051-rh/#조립가이드
   - title: "Maintenance"
     titlekr: "유지 보수"
     url: /dxl/y/ym070-210-r051-rh/#maintenance
@@ -19125,9 +19116,9 @@ ym070-210-r051-rh:
     url: /dxl/y/ym070-210-r051-rh/#reference
     urlkr: /dxl/y/ym070-210-r051-rh/#참고자료
     children:
-      - title: "What is the Profile"
+      - title: "Profile"
         titlekr: "Profile"
-        url: /dxl/y/ym070-210-r051-rh/#what-is-the-profile
+        url: /dxl/y/ym070-210-r051-rh/#profile
         urlkr: /dxl/y/ym070-210-r051-rh/#profile
       - title: "Certifications"
         titlekr: "인증 획득"
@@ -19141,9 +19132,9 @@ ym070-210-r051-rh:
         titlekr: "통신 회로"
         url: /dxl/y/ym070-210-r051-rh/#communication-circuit
         urlkr: /dxl/y/ym070-210-r051-rh/#통신-회로
-      - title: "--"
+      - title: "Cable Connection"
         titlekr: "케이블 연결"
-        url: /dxl/y/ym070-210-r051-rh/#--
+        url: /dxl/y/ym070-210-r051-rh/#cable-connection
         urlkr: /dxl/y/ym070-210-r051-rh/#케이블-연결
       - title: "Drawings"
         titlekr: "도면"
@@ -19160,36 +19151,51 @@ ym070-210-r051-rh:
       - title: "Multi-Turn Clear Packet"
         titlekr: "Multi-Turn Clear Packet"
         url: /dxl/y/ym070-210-r051-rh/#multi-turn-clear-packet
-      - title: "Multi-Turn Clear "
-        titlekr: "Multi-Turn Clear 방법"
-        url: /dxl/y/ym070-210-r051-rh/#multi-turn-clear
-        urlkr: /dxl/y/ym070-210-r051-rh/#multi-turn-clear-방법
+        children:
+          - title: "Multi-Turn Clear Method"
+            titlekr: "Multi-Turn Clear 방법"
+            url: /dxl/y/ym070-210-r051-rh/#multi-turn-clear-method
+            urlkr: /dxl/y/ym070-210-r051-rh/#multi-turn-clear-방법
       - title: "Error Clear Packet"
         titlekr: "Error Clear Packet"
         url: /dxl/y/ym070-210-r051-rh/#error-clear-packet
-      - title: "Multi-Turn backup Battery "
-        titlekr: "Multi-Turn backup Battery 교체"
-        url: /dxl/y/ym070-210-r051-rh/#multi-turn-backup-battery   
-        urlkr: /dxl/y/ym070-210-r051-rh/#multi-turn-backup-battery-교체  
-        children:
-          - title: "Battery"
-            titlekr: "Battery 교체 방법"
-            urlkr: /dxl/y/ym070-210-r051-rh/#battery-교체-방법    
-  - title: "출력 베어링 (감속기 옵션)"
-    titlekr: "출력 베어링 (감속기 옵션)"
-    url: /dxl/y/ym070-210-r051-rh/#출력-베어링-감속기-옵션
+  - title: "Multi-Turn backup Battery Replacement"
+    titlekr: "Multi-Turn Backup 배터리 교체"
+    url: /dxl/y/ym070-210-r051-rh/#multi-turn-backup-battery-replacement 
+    urlkr: /dxl/y/ym070-210-r051-rh/#multi-turn-backup-배터리-교체 
     children:
-      - titlekr: "출력 베어링 사양 (L10=7,000hours@rated output speed)"
+      - title: "Procedure for Battery Replacement"
+        titlekr: "배터리 교체 방법"
+        url: /dxl/y/ym070-210-r051-rh/#procedure-for-battery-replacement
+        urlkr: /dxl/y/ym070-210-r051-rh/#배터리-교체-방법
+  - title: "Output Bearing"
+    titlekr: "출력 베어링"
+    url: /dxl/y/ym070-210-r051-rh/#output-bearing
+    urlkr: /dxl/y/ym070-210-r051-rh/#출력-베어링
+    children:
+      - title: "Output Bearing Specifications (L10=7,000hours@rated output speed)"
+        titlekr: "출력 베어링 사양 (L10=7,000hours@rated output speed)"
+        url: /dxl/y/ym070-210-r051-rh/output-bearing-specifications-l107000hoursrated-output-speed
         urlkr: /dxl/y/ym070-210-r051-rh/#출력-베어링-사양-l107000hoursrated-output-speed
-      - titlekr: "베어링 수명"
+      - title: "Bearing Life"
+        titlekr: "베어링 수명"
+        url: /dxl/y/ym070-210-r051-rh/#bearing-life
         urlkr: /dxl/y/ym070-210-r051-rh/#베어링-수명
-      - titlekr: "동적 등가 반경방향 하중"
+      - title: "Dynamic Equivalent Radial Load"
+        titlekr: "동적 등가 반경방향 하중"
+        url: /dxl/y/ym070-210-r051-rh/#dynamic-equivalent-radial-load
         urlkr: /dxl/y/ym070-210-r051-rh/#동적-등가-반경방향-하중
-      - titlekr: "동적 등가 반경방향 허용 하중"
+      - title: "Dynamic Equivalent Radial Allowable Load"
+        titlekr: "동적 등가 반경방향 허용 하중"
+        url: /dxl/y/ym070-210-r051-rh/#dynamic-equivalent-radial-allowable-load
         urlkr: /dxl/y/ym070-210-r051-rh/#동적-등가-반경방향-허용-하중
-      - titlekr: "반경방향 허용 하중"
+      - title: "Allowable Radial Load"
+        titlekr: "반경방향 허용 하중"
+        url: /dxl/y/ym070-210-r051-rh/#allowable-radial-load
         urlkr: /dxl/y/ym070-210-r051-rh/#반경방향-허용-하중
-      - titlekr: "테이블"
+      - title: "Table"
+        titlekr: "테이블"
+        url: /dxl/y/ym070-210-r051-rh/#table
         urlkr: /dxl/y/ym070-210-r051-rh/#테이블
 
 ym070-210-r099-rh:
@@ -19214,23 +19220,23 @@ ym070-210-r099-rh:
         children:
           - title: "Area(EEPROM, RAM)"
             titlekr: "영역 (EEPROM, RAM, Hybrid)"
-            url: /dxl/y/ym070-210-r099-rh/#area-eeprom-ram
+            url: /dxl/y/ym070-210-r099-rh/#area-eeprom-ram-hybrid
             urlkr: /dxl/y/ym070-210-r099-rh/#영역-eeprom-ram-hybrid
           - title: "Size"
             titlekr: "크기"
             url: /dxl/y/ym070-210-r099-rh/#size
             urlkr: /dxl/y/ym070-210-r099-rh/#크기
-          - title: "Access"
+          - title: "Access Authorization"
             titlekr: "접근권한"
-            url: /dxl/y/ym070-210-r099-rh/#access
+            url: /dxl/y/ym070-210-r099-rh/#access-authorization
             urlkr: /dxl/y/ym070-210-r099-rh/#접근권한
-          - title: "Initial Value"
+          - title: "Default Values"
             titlekr: "기본값"
-            url: /dxl/y/ym070-210-r099-rh/#initial-value
+            url: /dxl/y/ym070-210-r099-rh/#default-values
             urlkr: /dxl/y/ym070-210-r099-rh/#기본값
-      - title: "RAM Area"
+      - title: "Control Table Configuration"
         titlekr: "컨트롤 테이블 구성"
-        url: /dxl/y/ym070-210-r099-rh/#control-table-of-ram-area
+        url: /dxl/y/ym070-210-r099-rh/#control-table-configuration
         urlkr: /dxl/y/ym070-210-r099-rh/#컨트롤-테이블-구성
       - title: "Control Table Description"
         titlekr: "컨트롤 테이블 설명"
@@ -19276,13 +19282,6 @@ ym070-210-r099-rh:
           - title: "Operating Mode(33)"
             titlekr: "Operating Mode(33)"
             url: /dxl/y/ym070-210-r099-rh/#operating-mode33
-            children:
-              - titlekr: "전류 제어 모드"
-                url: /dxl/y/ym070-210-r099-rh/#전류-제어-모드
-              - titlekr: "속도 제어 모드"
-                url: /dxl/y/ym070-210-r099-rh/#속도-제어-모드
-              - titlekr: "위치 제어 모드"
-                url: /dxl/y/ym070-210-r099-rh/#위치-제어-모드    
           - title: "Startup Configuration(34)"
             titlekr: "Startup Configuration(34)"
             url: /dxl/y/ym070-210-r099-rh/#startup-configuration34
@@ -19432,9 +19431,9 @@ ym070-210-r099-rh:
     url: /dxl/y/ym070-210-r099-rh/#how-to-assemble
     urlkr: /dxl/y/ym070-210-r099-rh/#조립-예시
     children:
-      - title: Option Frame Assembly
+      - title: Assembly Guide
         titlekr: 조립가이드
-        url: /dxl/y/ym070-210-r099-rh/#option-frame-assembly
+        url: /dxl/y/ym070-210-r099-rh/#assembly-guide
         urlkr: /dxl/y/ym070-210-r099-rh/#조립가이드
   - title: "Maintenance"
     titlekr: "유지 보수"
@@ -19445,9 +19444,9 @@ ym070-210-r099-rh:
     url: /dxl/y/ym070-210-r099-rh/#reference
     urlkr: /dxl/y/ym070-210-r099-rh/#참고자료
     children:
-      - title: "What is the Profile"
+      - title: "Profile"
         titlekr: "Profile"
-        url: /dxl/y/ym070-210-r099-rh/#what-is-the-profile
+        url: /dxl/y/ym070-210-r099-rh/#profile
         urlkr: /dxl/y/ym070-210-r099-rh/#profile
       - title: "Certifications"
         titlekr: "인증 획득"
@@ -19461,9 +19460,9 @@ ym070-210-r099-rh:
         titlekr: "통신 회로"
         url: /dxl/y/ym070-210-r099-rh/#communication-circuit
         urlkr: /dxl/y/ym070-210-r099-rh/#통신-회로
-      - title: "--"
+      - title: "Cable Connection"
         titlekr: "케이블 연결"
-        url: /dxl/y/ym070-210-r099-rh/#--
+        url: /dxl/y/ym070-210-r099-rh/#cable-connection
         urlkr: /dxl/y/ym070-210-r099-rh/#케이블-연결
       - title: "Drawings"
         titlekr: "도면"
@@ -19480,36 +19479,51 @@ ym070-210-r099-rh:
       - title: "Multi-Turn Clear Packet"
         titlekr: "Multi-Turn Clear Packet"
         url: /dxl/y/ym070-210-r099-rh/#multi-turn-clear-packet
-      - title: "Multi-Turn Clear "
-        titlekr: "Multi-Turn Clear 방법"
-        url: /dxl/y/ym070-210-r099-rh/#multi-turn-clear
-        urlkr: /dxl/y/ym070-210-r099-rh/#multi-turn-clear-방법
+        children:
+          - title: "Multi-Turn Clear Method"
+            titlekr: "Multi-Turn Clear 방법"
+            url: /dxl/y/ym070-210-r099-rh/#multi-turn-clear-method
+            urlkr: /dxl/y/ym070-210-r099-rh/#multi-turn-clear-방법
       - title: "Error Clear Packet"
         titlekr: "Error Clear Packet"
         url: /dxl/y/ym070-210-r099-rh/#error-clear-packet
-      - title: "Multi-Turn backup Battery "
-        titlekr: "Multi-Turn backup Battery 교체"
-        url: /dxl/y/ym070-210-r099-rh/#multi-turn-backup-battery   
-        urlkr: /dxl/y/ym070-210-r099-rh/#multi-turn-backup-battery-교체  
-        children:
-          - title: "Battery"
-            titlekr: "Battery 교체 방법"
-            urlkr: /dxl/y/ym070-210-r099-rh/#battery-교체-방법    
-  - title: "출력 베어링 (감속기 옵션)"
-    titlekr: "출력 베어링 (감속기 옵션)"
-    url: /dxl/y/ym070-210-r099-rh/#출력-베어링-감속기-옵션
+  - title: "Multi-Turn backup Battery Replacement"
+    titlekr: "Multi-Turn Backup 배터리 교체"
+    url: /dxl/y/ym070-210-r099-rh/#multi-turn-backup-battery-replacement 
+    urlkr: /dxl/y/ym070-210-r099-rh/#multi-turn-backup-배터리-교체 
     children:
-      - titlekr: "출력 베어링 사양 (L10=7,000hours@rated output speed)"
+      - title: "Procedure for Battery Replacement"
+        titlekr: "배터리 교체 방법"
+        url: /dxl/y/ym070-210-r099-rh/#procedure-for-battery-replacement
+        urlkr: /dxl/y/ym070-210-r099-rh/#배터리-교체-방법
+  - title: "Output Bearing"
+    titlekr: "출력 베어링"
+    url: /dxl/y/ym070-210-r099-rh/#output-bearing
+    urlkr: /dxl/y/ym070-210-r099-rh/#출력-베어링
+    children:
+      - title: "Output Bearing Specifications (L10=7,000hours@rated output speed)"
+        titlekr: "출력 베어링 사양 (L10=7,000hours@rated output speed)"
+        url: /dxl/y/ym070-210-r099-rh/output-bearing-specifications-l107000hoursrated-output-speed
         urlkr: /dxl/y/ym070-210-r099-rh/#출력-베어링-사양-l107000hoursrated-output-speed
-      - titlekr: "베어링 수명"
+      - title: "Bearing Life"
+        titlekr: "베어링 수명"
+        url: /dxl/y/ym070-210-r099-rh/#bearing-life
         urlkr: /dxl/y/ym070-210-r099-rh/#베어링-수명
-      - titlekr: "동적 등가 반경방향 하중"
+      - title: "Dynamic Equivalent Radial Load"
+        titlekr: "동적 등가 반경방향 하중"
+        url: /dxl/y/ym070-210-r099-rh/#dynamic-equivalent-radial-load
         urlkr: /dxl/y/ym070-210-r099-rh/#동적-등가-반경방향-하중
-      - titlekr: "동적 등가 반경방향 허용 하중"
+      - title: "Dynamic Equivalent Radial Allowable Load"
+        titlekr: "동적 등가 반경방향 허용 하중"
+        url: /dxl/y/ym070-210-r099-rh/#dynamic-equivalent-radial-allowable-load
         urlkr: /dxl/y/ym070-210-r099-rh/#동적-등가-반경방향-허용-하중
-      - titlekr: "반경방향 허용 하중"
+      - title: "Allowable Radial Load"
+        titlekr: "반경방향 허용 하중"
+        url: /dxl/y/ym070-210-r099-rh/#allowable-radial-load
         urlkr: /dxl/y/ym070-210-r099-rh/#반경방향-허용-하중
-      - titlekr: "테이블"
+      - title: "Table"
+        titlekr: "테이블"
+        url: /dxl/y/ym070-210-r099-rh/#table
         urlkr: /dxl/y/ym070-210-r099-rh/#테이블
 
 ym080-230-m001-rh:
@@ -19534,23 +19548,23 @@ ym080-230-m001-rh:
         children:
           - title: "Area(EEPROM, RAM)"
             titlekr: "영역 (EEPROM, RAM, Hybrid)"
-            url: /dxl/y/ym080-230-m001-rh/#area-eeprom-ram
+            url: /dxl/y/ym080-230-m001-rh/#area-eeprom-ram-hybrid
             urlkr: /dxl/y/ym080-230-m001-rh/#영역-eeprom-ram-hybrid
           - title: "Size"
             titlekr: "크기"
             url: /dxl/y/ym080-230-m001-rh/#size
             urlkr: /dxl/y/ym080-230-m001-rh/#크기
-          - title: "Access"
+          - title: "Access Authorization"
             titlekr: "접근권한"
-            url: /dxl/y/ym080-230-m001-rh/#access
+            url: /dxl/y/ym080-230-m001-rh/#access-authorization
             urlkr: /dxl/y/ym080-230-m001-rh/#접근권한
-          - title: "Initial Value"
+          - title: "Default Values"
             titlekr: "기본값"
-            url: /dxl/y/ym080-230-m001-rh/#initial-value
+            url: /dxl/y/ym080-230-m001-rh/#default-values
             urlkr: /dxl/y/ym080-230-m001-rh/#기본값
-      - title: "RAM Area"
+      - title: "Control Table Configuration"
         titlekr: "컨트롤 테이블 구성"
-        url: /dxl/y/ym080-230-m001-rh/#control-table-of-ram-area
+        url: /dxl/y/ym080-230-m001-rh/#control-table-configuration
         urlkr: /dxl/y/ym080-230-m001-rh/#컨트롤-테이블-구성
       - title: "Control Table Description"
         titlekr: "컨트롤 테이블 설명"
@@ -19596,13 +19610,6 @@ ym080-230-m001-rh:
           - title: "Operating Mode(33)"
             titlekr: "Operating Mode(33)"
             url: /dxl/y/ym080-230-m001-rh/#operating-mode33
-            children:
-              - titlekr: "전류 제어 모드"
-                url: /dxl/y/ym080-230-m001-rh/#전류-제어-모드
-              - titlekr: "속도 제어 모드"
-                url: /dxl/y/ym080-230-m001-rh/#속도-제어-모드
-              - titlekr: "위치 제어 모드"
-                url: /dxl/y/ym080-230-m001-rh/#위치-제어-모드    
           - title: "Startup Configuration(34)"
             titlekr: "Startup Configuration(34)"
             url: /dxl/y/ym080-230-m001-rh/#startup-configuration34
@@ -19752,9 +19759,9 @@ ym080-230-m001-rh:
     url: /dxl/y/ym080-230-m001-rh/#how-to-assemble
     urlkr: /dxl/y/ym080-230-m001-rh/#조립-예시
     children:
-      - title: Option Frame Assembly
+      - title: Assembly Guide
         titlekr: 조립가이드
-        url: /dxl/y/ym080-230-m001-rh/#option-frame-assembly
+        url: /dxl/y/ym080-230-m001-rh/#assembly-guide
         urlkr: /dxl/y/ym080-230-m001-rh/#조립가이드
   - title: "Maintenance"
     titlekr: "유지 보수"
@@ -19765,9 +19772,9 @@ ym080-230-m001-rh:
     url: /dxl/y/ym080-230-m001-rh/#reference
     urlkr: /dxl/y/ym080-230-m001-rh/#참고자료
     children:
-      - title: "What is the Profile"
+      - title: "Profile"
         titlekr: "Profile"
-        url: /dxl/y/ym080-230-m001-rh/#what-is-the-profile
+        url: /dxl/y/ym080-230-m001-rh/#profile
         urlkr: /dxl/y/ym080-230-m001-rh/#profile
       - title: "Certifications"
         titlekr: "인증 획득"
@@ -19781,9 +19788,9 @@ ym080-230-m001-rh:
         titlekr: "통신 회로"
         url: /dxl/y/ym080-230-m001-rh/#communication-circuit
         urlkr: /dxl/y/ym080-230-m001-rh/#통신-회로
-      - title: "--"
+      - title: "Cable Connection"
         titlekr: "케이블 연결"
-        url: /dxl/y/ym080-230-m001-rh/#--
+        url: /dxl/y/ym080-230-m001-rh/#cable-connection
         urlkr: /dxl/y/ym080-230-m001-rh/#케이블-연결
       - title: "Drawings"
         titlekr: "도면"
@@ -19800,21 +19807,23 @@ ym080-230-m001-rh:
       - title: "Multi-Turn Clear Packet"
         titlekr: "Multi-Turn Clear Packet"
         url: /dxl/y/ym080-230-m001-rh/#multi-turn-clear-packet
-      - title: "Multi-Turn Clear "
-        titlekr: "Multi-Turn Clear 방법"
-        url: /dxl/y/ym080-230-m001-rh/#multi-turn-clear
-        urlkr: /dxl/y/ym080-230-m001-rh/#multi-turn-clear-방법
+        children:
+          - title: "Multi-Turn Clear Method"
+            titlekr: "Multi-Turn Clear 방법"
+            url: /dxl/y/ym080-230-m001-rh/#multi-turn-clear-method
+            urlkr: /dxl/y/ym080-230-m001-rh/#multi-turn-clear-방법
       - title: "Error Clear Packet"
         titlekr: "Error Clear Packet"
         url: /dxl/y/ym080-230-m001-rh/#error-clear-packet
-      - title: "Multi-Turn backup Battery "
-        titlekr: "Multi-Turn backup Battery 교체"
-        url: /dxl/y/ym080-230-m001-rh/#multi-turn-backup-battery   
-        urlkr: /dxl/y/ym080-230-m001-rh/#multi-turn-backup-battery-교체  
-        children:
-          - title: "Battery"
-            titlekr: "Battery 교체 방법"
-            urlkr: /dxl/y/ym080-230-m001-rh/#battery-교체-방법
+  - title: "Multi-Turn backup Battery Replacement"
+    titlekr: "Multi-Turn Backup 배터리 교체"
+    url: /dxl/y/ym080-230-m001-rh/#multi-turn-backup-battery-replacement 
+    urlkr: /dxl/y/ym080-230-m001-rh/#multi-turn-backup-배터리-교체
+    children:
+      - title: "Procedure for Battery Replacement"
+        titlekr: "배터리 교체 방법"
+        url: /dxl/y/ym080-230-m001-rh/#procedure-for-battery-replacement
+        urlkr: /dxl/y/ym080-230-m001-rh/#배터리-교체-방법
 
 ym080-230-r051-rh:
   - title: "Specifications"
@@ -19838,23 +19847,23 @@ ym080-230-r051-rh:
         children:
           - title: "Area(EEPROM, RAM)"
             titlekr: "영역 (EEPROM, RAM, Hybrid)"
-            url: /dxl/y/ym080-230-r051-rh/#area-eeprom-ram
+            url: /dxl/y/ym080-230-r051-rh/#area-eeprom-ram-hybrid
             urlkr: /dxl/y/ym080-230-r051-rh/#영역-eeprom-ram-hybrid
           - title: "Size"
             titlekr: "크기"
             url: /dxl/y/ym080-230-r051-rh/#size
             urlkr: /dxl/y/ym080-230-r051-rh/#크기
-          - title: "Access"
+          - title: "Access Authorization"
             titlekr: "접근권한"
-            url: /dxl/y/ym080-230-r051-rh/#access
+            url: /dxl/y/ym080-230-r051-rh/#access-authorization
             urlkr: /dxl/y/ym080-230-r051-rh/#접근권한
-          - title: "Initial Value"
+          - title: "Default Values"
             titlekr: "기본값"
-            url: /dxl/y/ym080-230-r051-rh/#initial-value
+            url: /dxl/y/ym080-230-r051-rh/#default-values
             urlkr: /dxl/y/ym080-230-r051-rh/#기본값
-      - title: "RAM Area"
+      - title: "Control Table Configuration"
         titlekr: "컨트롤 테이블 구성"
-        url: /dxl/y/ym080-230-r051-rh/#control-table-of-ram-area
+        url: /dxl/y/ym080-230-r051-rh/#control-table-configuration
         urlkr: /dxl/y/ym080-230-r051-rh/#컨트롤-테이블-구성
       - title: "Control Table Description"
         titlekr: "컨트롤 테이블 설명"
@@ -19900,13 +19909,6 @@ ym080-230-r051-rh:
           - title: "Operating Mode(33)"
             titlekr: "Operating Mode(33)"
             url: /dxl/y/ym080-230-r051-rh/#operating-mode33
-            children:
-              - titlekr: "전류 제어 모드"
-                url: /dxl/y/ym080-230-r051-rh/#전류-제어-모드
-              - titlekr: "속도 제어 모드"
-                url: /dxl/y/ym080-230-r051-rh/#속도-제어-모드
-              - titlekr: "위치 제어 모드"
-                url: /dxl/y/ym080-230-r051-rh/#위치-제어-모드    
           - title: "Startup Configuration(34)"
             titlekr: "Startup Configuration(34)"
             url: /dxl/y/ym080-230-r051-rh/#startup-configuration34
@@ -20056,9 +20058,9 @@ ym080-230-r051-rh:
     url: /dxl/y/ym080-230-r051-rh/#how-to-assemble
     urlkr: /dxl/y/ym080-230-r051-rh/#조립-예시
     children:
-      - title: Option Frame Assembly
+      - title: Assembly Guide
         titlekr: 조립가이드
-        url: /dxl/y/ym080-230-r051-rh/#option-frame-assembly
+        url: /dxl/y/ym080-230-r051-rh/#assembly-guide
         urlkr: /dxl/y/ym080-230-r051-rh/#조립가이드
   - title: "Maintenance"
     titlekr: "유지 보수"
@@ -20069,9 +20071,9 @@ ym080-230-r051-rh:
     url: /dxl/y/ym080-230-r051-rh/#reference
     urlkr: /dxl/y/ym080-230-r051-rh/#참고자료
     children:
-      - title: "What is the Profile"
+      - title: "Profile"
         titlekr: "Profile"
-        url: /dxl/y/ym080-230-r051-rh/#what-is-the-profile
+        url: /dxl/y/ym080-230-r051-rh/#profile
         urlkr: /dxl/y/ym080-230-r051-rh/#profile
       - title: "Certifications"
         titlekr: "인증 획득"
@@ -20085,9 +20087,9 @@ ym080-230-r051-rh:
         titlekr: "통신 회로"
         url: /dxl/y/ym080-230-r051-rh/#communication-circuit
         urlkr: /dxl/y/ym080-230-r051-rh/#통신-회로
-      - title: "--"
+      - title: "Cable Connection"
         titlekr: "케이블 연결"
-        url: /dxl/y/ym080-230-r051-rh/#--
+        url: /dxl/y/ym080-230-r051-rh/#cable-connection
         urlkr: /dxl/y/ym080-230-r051-rh/#케이블-연결
       - title: "Drawings"
         titlekr: "도면"
@@ -20104,36 +20106,51 @@ ym080-230-r051-rh:
       - title: "Multi-Turn Clear Packet"
         titlekr: "Multi-Turn Clear Packet"
         url: /dxl/y/ym080-230-r051-rh/#multi-turn-clear-packet
-      - title: "Multi-Turn Clear "
-        titlekr: "Multi-Turn Clear 방법"
-        url: /dxl/y/ym080-230-r051-rh/#multi-turn-clear
-        urlkr: /dxl/y/ym080-230-r051-rh/#multi-turn-clear-방법
+        children:
+          - title: "Multi-Turn Clear Method"
+            titlekr: "Multi-Turn Clear 방법"
+            url: /dxl/y/ym080-230-r051-rh/#multi-turn-clear-method
+            urlkr: /dxl/y/ym080-230-r051-rh/#multi-turn-clear-방법
       - title: "Error Clear Packet"
         titlekr: "Error Clear Packet"
         url: /dxl/y/ym080-230-r051-rh/#error-clear-packet
-      - title: "Multi-Turn backup Battery "
-        titlekr: "Multi-Turn backup Battery 교체"
-        url: /dxl/y/ym080-230-r051-rh/#multi-turn-backup-battery   
-        urlkr: /dxl/y/ym080-230-r051-rh/#multi-turn-backup-battery-교체  
-        children:
-          - title: "Battery"
-            titlekr: "Battery 교체 방법"
-            urlkr: /dxl/y/ym080-230-r051-rh/#battery-교체-방법    
-  - title: "출력 베어링 (감속기 옵션)"
-    titlekr: "출력 베어링 (감속기 옵션)"
-    url: /dxl/y/ym080-230-r051-rh/#출력-베어링-감속기-옵션
+  - title: "Multi-Turn backup Battery Replacement"
+    titlekr: "Multi-Turn Backup 배터리 교체"
+    url: /dxl/y/ym080-230-r051-rh/#multi-turn-backup-battery-replacement 
+    urlkr: /dxl/y/ym080-230-r051-rh/#multi-turn-backup-배터리-교체 
     children:
-      - titlekr: "출력 베어링 사양 (L10=7,000hours@rated output speed)"
+      - title: "Procedure for Battery Replacement"
+        titlekr: "배터리 교체 방법"
+        url: /dxl/y/ym080-230-r051-rh/#procedure-for-battery-replacement
+        urlkr: /dxl/y/ym080-230-r051-rh/#배터리-교체-방법
+  - title: "Output Bearing"
+    titlekr: "출력 베어링"
+    url: /dxl/y/ym080-230-r051-rh/#output-bearing
+    urlkr: /dxl/y/ym080-230-r051-rh/#출력-베어링
+    children:
+      - title: "Output Bearing Specifications (L10=7,000hours@rated output speed)"
+        titlekr: "출력 베어링 사양 (L10=7,000hours@rated output speed)"
+        url: /dxl/y/ym080-230-r051-rh/output-bearing-specifications-l107000hoursrated-output-speed
         urlkr: /dxl/y/ym080-230-r051-rh/#출력-베어링-사양-l107000hoursrated-output-speed
-      - titlekr: "베어링 수명"
+      - title: "Bearing Life"
+        titlekr: "베어링 수명"
+        url: /dxl/y/ym080-230-r051-rh/#bearing-life
         urlkr: /dxl/y/ym080-230-r051-rh/#베어링-수명
-      - titlekr: "동적 등가 반경방향 하중"
+      - title: "Dynamic Equivalent Radial Load"
+        titlekr: "동적 등가 반경방향 하중"
+        url: /dxl/y/ym080-230-r051-rh/#dynamic-equivalent-radial-load
         urlkr: /dxl/y/ym080-230-r051-rh/#동적-등가-반경방향-하중
-      - titlekr: "동적 등가 반경방향 허용 하중"
+      - title: "Dynamic Equivalent Radial Allowable Load"
+        titlekr: "동적 등가 반경방향 허용 하중"
+        url: /dxl/y/ym080-230-r051-rh/#dynamic-equivalent-radial-allowable-load
         urlkr: /dxl/y/ym080-230-r051-rh/#동적-등가-반경방향-허용-하중
-      - titlekr: "반경방향 허용 하중"
+      - title: "Allowable Radial Load"
+        titlekr: "반경방향 허용 하중"
+        url: /dxl/y/ym080-230-r051-rh/#allowable-radial-load
         urlkr: /dxl/y/ym080-230-r051-rh/#반경방향-허용-하중
-      - titlekr: "테이블"
+      - title: "Table"
+        titlekr: "테이블"
+        url: /dxl/y/ym080-230-r051-rh/#table
         urlkr: /dxl/y/ym080-230-r051-rh/#테이블
 
 ym080-230-r099-rh:
@@ -20158,23 +20175,23 @@ ym080-230-r099-rh:
         children:
           - title: "Area(EEPROM, RAM)"
             titlekr: "영역 (EEPROM, RAM, Hybrid)"
-            url: /dxl/y/ym080-230-r099-rh/#area-eeprom-ram
+            url: /dxl/y/ym080-230-r099-rh/#area-eeprom-ram-hybrid
             urlkr: /dxl/y/ym080-230-r099-rh/#영역-eeprom-ram-hybrid
           - title: "Size"
             titlekr: "크기"
             url: /dxl/y/ym080-230-r099-rh/#size
             urlkr: /dxl/y/ym080-230-r099-rh/#크기
-          - title: "Access"
+          - title: "Access Authorization"
             titlekr: "접근권한"
-            url: /dxl/y/ym080-230-r099-rh/#access
+            url: /dxl/y/ym080-230-r099-rh/#access-authorization
             urlkr: /dxl/y/ym080-230-r099-rh/#접근권한
-          - title: "Initial Value"
+          - title: "Default Values"
             titlekr: "기본값"
-            url: /dxl/y/ym080-230-r099-rh/#initial-value
+            url: /dxl/y/ym080-230-r099-rh/#default-values
             urlkr: /dxl/y/ym080-230-r099-rh/#기본값
-      - title: "RAM Area"
+      - title: "Control Table Configuration"
         titlekr: "컨트롤 테이블 구성"
-        url: /dxl/y/ym080-230-r099-rh/#control-table-of-ram-area
+        url: /dxl/y/ym080-230-r099-rh/#control-table-configuration
         urlkr: /dxl/y/ym080-230-r099-rh/#컨트롤-테이블-구성
       - title: "Control Table Description"
         titlekr: "컨트롤 테이블 설명"
@@ -20220,13 +20237,6 @@ ym080-230-r099-rh:
           - title: "Operating Mode(33)"
             titlekr: "Operating Mode(33)"
             url: /dxl/y/ym080-230-r099-rh/#operating-mode33
-            children:
-              - titlekr: "전류 제어 모드"
-                url: /dxl/y/ym080-230-r099-rh/#전류-제어-모드
-              - titlekr: "속도 제어 모드"
-                url: /dxl/y/ym080-230-r099-rh/#속도-제어-모드
-              - titlekr: "위치 제어 모드"
-                url: /dxl/y/ym080-230-r099-rh/#위치-제어-모드    
           - title: "Startup Configuration(34)"
             titlekr: "Startup Configuration(34)"
             url: /dxl/y/ym080-230-r099-rh/#startup-configuration34
@@ -20376,9 +20386,9 @@ ym080-230-r099-rh:
     url: /dxl/y/ym080-230-r099-rh/#how-to-assemble
     urlkr: /dxl/y/ym080-230-r099-rh/#조립-예시
     children:
-      - title: Option Frame Assembly
+      - title: Assembly Guide
         titlekr: 조립가이드
-        url: /dxl/y/ym080-230-r099-rh/#option-frame-assembly
+        url: /dxl/y/ym080-230-r099-rh/#assembly-guide
         urlkr: /dxl/y/ym080-230-r099-rh/#조립가이드
   - title: "Maintenance"
     titlekr: "유지 보수"
@@ -20389,9 +20399,9 @@ ym080-230-r099-rh:
     url: /dxl/y/ym080-230-r099-rh/#reference
     urlkr: /dxl/y/ym080-230-r099-rh/#참고자료
     children:
-      - title: "What is the Profile"
+      - title: "Profile"
         titlekr: "Profile"
-        url: /dxl/y/ym080-230-r099-rh/#what-is-the-profile
+        url: /dxl/y/ym080-230-r099-rh/#profile
         urlkr: /dxl/y/ym080-230-r099-rh/#profile
       - title: "Certifications"
         titlekr: "인증 획득"
@@ -20405,9 +20415,9 @@ ym080-230-r099-rh:
         titlekr: "통신 회로"
         url: /dxl/y/ym080-230-r099-rh/#communication-circuit
         urlkr: /dxl/y/ym080-230-r099-rh/#통신-회로
-      - title: "--"
+      - title: "Cable Connection"
         titlekr: "케이블 연결"
-        url: /dxl/y/ym080-230-r099-rh/#--
+        url: /dxl/y/ym080-230-r099-rh/#cable-connection
         urlkr: /dxl/y/ym080-230-r099-rh/#케이블-연결
       - title: "Drawings"
         titlekr: "도면"
@@ -20424,36 +20434,51 @@ ym080-230-r099-rh:
       - title: "Multi-Turn Clear Packet"
         titlekr: "Multi-Turn Clear Packet"
         url: /dxl/y/ym080-230-r099-rh/#multi-turn-clear-packet
-      - title: "Multi-Turn Clear "
-        titlekr: "Multi-Turn Clear 방법"
-        url: /dxl/y/ym080-230-r099-rh/#multi-turn-clear
-        urlkr: /dxl/y/ym080-230-r099-rh/#multi-turn-clear-방법
+        children:
+          - title: "Multi-Turn Clear Method"
+            titlekr: "Multi-Turn Clear 방법"
+            url: /dxl/y/ym080-230-r099-rh/#multi-turn-clear-method
+            urlkr: /dxl/y/ym080-230-r099-rh/#multi-turn-clear-방법
       - title: "Error Clear Packet"
         titlekr: "Error Clear Packet"
         url: /dxl/y/ym080-230-r099-rh/#error-clear-packet
-      - title: "Multi-Turn backup Battery "
-        titlekr: "Multi-Turn backup Battery 교체"
-        url: /dxl/y/ym080-230-r099-rh/#multi-turn-backup-battery   
-        urlkr: /dxl/y/ym080-230-r099-rh/#multi-turn-backup-battery-교체  
-        children:
-          - title: "Battery"
-            titlekr: "Battery 교체 방법"
-            urlkr: /dxl/y/ym080-230-r099-rh/#battery-교체-방법    
-  - title: "출력 베어링 (감속기 옵션)"
-    titlekr: "출력 베어링 (감속기 옵션)"
-    url: /dxl/y/ym080-230-r099-rh/#출력-베어링-감속기-옵션
+  - title: "Multi-Turn backup Battery Replacement"
+    titlekr: "Multi-Turn Backup 배터리 교체"
+    url: /dxl/y/ym080-230-r099-rh/#multi-turn-backup-battery-replacement 
+    urlkr: /dxl/y/ym080-230-r099-rh/#multi-turn-backup-배터리-교체 
     children:
-      - titlekr: "출력 베어링 사양 (L10=7,000hours@rated output speed)"
+      - title: "Procedure for Battery Replacement"
+        titlekr: "배터리 교체 방법"
+        url: /dxl/y/ym080-230-r099-rh/#procedure-for-battery-replacement
+        urlkr: /dxl/y/ym080-230-r099-rh/#배터리-교체-방법
+  - title: "Output Bearing"
+    titlekr: "출력 베어링"
+    url: /dxl/y/ym080-230-r099-rh/#output-bearing
+    urlkr: /dxl/y/ym080-230-r099-rh/#출력-베어링
+    children:
+      - title: "Output Bearing Specifications (L10=7,000hours@rated output speed)"
+        titlekr: "출력 베어링 사양 (L10=7,000hours@rated output speed)"
+        url: /dxl/y/ym080-230-r099-rh/output-bearing-specifications-l107000hoursrated-output-speed
         urlkr: /dxl/y/ym080-230-r099-rh/#출력-베어링-사양-l107000hoursrated-output-speed
-      - titlekr: "베어링 수명"
+      - title: "Bearing Life"
+        titlekr: "베어링 수명"
+        url: /dxl/y/ym080-230-r099-rh/#bearing-life
         urlkr: /dxl/y/ym080-230-r099-rh/#베어링-수명
-      - titlekr: "동적 등가 반경방향 하중"
+      - title: "Dynamic Equivalent Radial Load"
+        titlekr: "동적 등가 반경방향 하중"
+        url: /dxl/y/ym080-230-r099-rh/#dynamic-equivalent-radial-load
         urlkr: /dxl/y/ym080-230-r099-rh/#동적-등가-반경방향-하중
-      - titlekr: "동적 등가 반경방향 허용 하중"
+      - title: "Dynamic Equivalent Radial Allowable Load"
+        titlekr: "동적 등가 반경방향 허용 하중"
+        url: /dxl/y/ym080-230-r099-rh/#dynamic-equivalent-radial-allowable-load
         urlkr: /dxl/y/ym080-230-r099-rh/#동적-등가-반경방향-허용-하중
-      - titlekr: "반경방향 허용 하중"
+      - title: "Allowable Radial Load"
+        titlekr: "반경방향 허용 하중"
+        url: /dxl/y/ym080-230-r099-rh/#allowable-radial-load
         urlkr: /dxl/y/ym080-230-r099-rh/#반경방향-허용-하중
-      - titlekr: "테이블"
+      - title: "Table"
+        titlekr: "테이블"
+        url: /dxl/y/ym080-230-r099-rh/#table
         urlkr: /dxl/y/ym080-230-r099-rh/#테이블
 
 #Protocol 1.0 sidebar
