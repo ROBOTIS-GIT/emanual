@@ -10,7 +10,7 @@ This represents the code for the issue occurring in the device. The list of erro
 | 5     | Overload Error               | N         | -     | Y           | Operating current exceeding rated current for an extended duration         |
 | 7     | Inverter Error               | N         | -     | N           | An issue has occurred with the inverter                                    |
 | 9     | Battery Warning              | Y         | N     | N           | Low Multi-Turn battery voltage. Replacement recommended                    |
-| 10    | Batter Error                 | N         | -     | N           | Multi-Turn battery voltage is too low, causing issues                      |
+| 10    | Battery Error                | N         | -     | N           | Multi-Turn battery voltage is too low, causing issues                      |
 | 11    | Magnet Error                 | N         | -     | N           | Multi-Turn position lost. Multi-Turn reset required                        |
 | 12    | Multi-Turn Error             | N         | -     | N           | An issue has occurred with the Multi-Turn IC                               |
 | 13    | Encoder Error                | N         | -     | N           | An issue has occurred with the Encoder IC                                  |
