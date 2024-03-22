@@ -11,7 +11,7 @@
 
 {% capture output_bearing_notice1 %}  
 **note :**  
-1&#41; Allow dynamic equivalent radial load (Pc_mac) must not exceed this value.
+1&#41; Allow dynamic equivalent radial load (Pc_mac) must not exceed this value.  
 2&#41; Allowable moment load, Ma is Lr + df = 0, and La = 0
 {% endcapture %}
 

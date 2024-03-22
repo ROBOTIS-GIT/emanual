@@ -1060,8 +1060,8 @@ dynamixel_y:
     url: /dxl/y/#communication-circuitry
     urlkr: /dxl/y/#통신-회로
     children:
-      - titel: "UART Connection Circuit Diagram"
-        titelkr: "UART 통신 회로도"
+      - title: "UART Connection Circuit Diagram"
+        titlekr: "UART 통신 회로도"
         url: /dxl/y/#uart-connecion-circuit-diagram
         urlkr: /dxl/y/#uart-통신-회로도
       - title: "Cable Connection"
@@ -19555,7 +19555,7 @@ ym080-230-m001-rh:
         url: /dxl/y/ym080-230-m001-rh/#control-table-data-address
         urlkr: /dxl/y/ym080-230-m001-rh/#컨트롤-테이블-데이터-주소
         children:
-          - title: "Area(EEPROM, RAM)"
+          - title: "Area(EEPROM, RAM, Hybrid)"
             titlekr: "영역 (EEPROM, RAM, Hybrid)"
             url: /dxl/y/ym080-230-m001-rh/#area-eeprom-ram-hybrid
             urlkr: /dxl/y/ym080-230-m001-rh/#영역-eeprom-ram-hybrid

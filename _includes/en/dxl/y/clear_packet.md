@@ -39,7 +39,7 @@ DYNAMIXEL-Y features an internal battery for Multi-Turn Position Backup. After r
 
 ## [Procedure for Battery Replacement](#procedure-for-battery-replacement)
 
-![](/assets/images/dxl/y/brtterry_replacement_guide_en.PNG)
+![](/assets/images/dxl/y/brtterry_replacement_guide_en.png)
 
 1. Prepare the DYNAMIXEL-Y and a new battery.
 2. After supplying power and searching for DYNAMIXEL-Y through DYNAMIXEL Wizard 2.0, click

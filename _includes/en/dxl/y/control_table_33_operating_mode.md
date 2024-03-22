@@ -9,13 +9,13 @@ Control mode can be set. DYNAMIXEL-Y supports three control modes.
 The control block diagram for each control mode is as follows:
 
 #### [Current Control Mode](#current-control-mode)
-![](/assets/images/dxl/y/operating_mode_1_en.PNG)
+![](/assets/images/dxl/y/operating_mode_1_en.png)
 
 #### [Velocity Control Mode](#velocity-control-mode)
-![](/assets/images/dxl/y/operating_mode_2_en.PNG)
+![](/assets/images/dxl/y/operating_mode_2_en.png)
 
 #### [Position Control Mode](#position-control-mode)
-![](/assets/images/dxl/y/operating_mode_3_en.PNG)
+![](/assets/images/dxl/y/operating_mode_3_en.png)
 
 **Note:** DYNAMIXEL-Y stores persistent Multi-turn information. Even if the power is turned off and on, or if the Reboot Instruction is used, the current Multi-turn position is accurately tracked through even manual rotations while the power is off, and the absolute position value is updated. The Multi-turn position can be reset to '0' using the Clear Instruction.
 {: .notice}
