@@ -1,0 +1,1 @@
+Additional DYNAMIXEL model information.

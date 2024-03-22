@@ -69,6 +69,45 @@
 [Goal Position(564)]: #goal-position564
 [Velocity Limit(44)]: #velocity-limit44
 
+<!-- DXL-Y -->
+
+[Status Return Level(15)]: status-return-level15
+[Drive Mode(32)]: #drive-mode32
+[Operating Mode(33)]: #operating-mode33
+[Position Limit Threshold(38)]: #position-limit-threshold38
+[Following Error Threshold(44)]: #following-error-threshold44
+[Inverter Temperature Limit(56)]: #invertermotor-temperature-limit56-57
+[Motor Temperature Limit(57)]: #invertermotor-temperature-limit56-57
+[Max Voltage Limit(60)]: #maxmin-voltage-limit60-62
+[Min Voltage Limit(62)]: #maxmin-voltage-limit60-62
+[Max/Min Voltage Limit(60, 62)]: #maxmin-voltage-limit60-62
+[PWM Limit(64)]: #pwm-limit64
+[Current Limit(66)]: #current-limit66
+[Stuatus Return Level (68)]: #stuatus-returnlevel68
+[Velocity Limit(72)]: #velocity-limit72
+[Max position limit(76)]: #maxmin-position-limit76-84
+[Min Position limit(84)]: #maxmin-position-limit76-84
+[Gear Ratio Num(96)/Den(100)]: #electronic-gear-ratio-numeratordenominator96-100
+[Controller State(152)]: #controller-state152
+[Error Code(153)]: #error-code153
+[Gain Save(170)]: #gain-save170
+[Profile Acceleration(240)]: #profile-acceleration240-profile-velocity244
+[Profile Velocity(244)]: #profile-acceleration240-profile-velocity244
+[Torque Enable(512)]: #torque-enable512
+[Goal PWM(524)]: #goal-pwm524
+[Goal Current(526)]: #goal-current526
+[Goal Velocity(528)]: #goal-velocity528
+[Goal Position(532)]: #goal-position532
+[Moving Status(541)]: #moving-status541
+[Present Velocity(548)]: #present-velocity548
+[Present Position(552)]: #present-position552
+[Position Trajectory(560)]: #position-trajectory560
+[Velocity Trajectory(564)]: #velocity-trajectory564
+[Present Input Voltage(568)]: #present-input-voltage568
+[Present Inverter Temperature(570)]: #present-inverter-temperature570
+[Present Motor Temperature(571)]: #present-motor-temperature571
+[Error Clear Packet]: #error-clear-packet
+
 <!--Common Links -->
 
 [Compatibility Guide]: http://en.robotis.com/service/compatibility_table.php?cate=dx

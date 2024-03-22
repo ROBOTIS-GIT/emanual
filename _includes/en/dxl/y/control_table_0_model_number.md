@@ -1,0 +1,1 @@
+The DYNAMIXEL model number.
