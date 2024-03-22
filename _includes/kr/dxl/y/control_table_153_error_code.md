@@ -10,7 +10,7 @@
 | 5  | Overload Error               | N         | -     | Y        | 정격 전류를 초과하는 전류를 장시간 사용                          |
 | 7  | Inverter Error               | N         | -     | N        | Inverter에 문제가 발생함                                       |
 | 9  | Battery Warning              | Y         | N     | N        | Multi-Turn 배터리 전압이 낮음. 교체 권장                        |
-| 10 | Batter Error                 | N         | -     | N        | Multi-Turn 배터리 전압이 너무 낮아 문제 발생                    |
+| 10 | Battery Error                | N         | -     | N        | Multi-Turn 배터리 전압이 너무 낮아 문제 발생                    |
 | 11 | Magnet Error                 | N         | -     | N        | Multi-Turn 위치를 잃어버림. Multi-Turn Clear 필요              |
 | 12 | Multi-Turn Error             | N         | -     | N        | Multi-Turn IC에 문제가 발생함                                  |
 | 13 | Encoder Error                | N         | -     | N        | Encoder IC에 문제가 발생함                                     |

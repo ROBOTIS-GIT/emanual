@@ -1,0 +1,1 @@
+This is the limit value of the profile acceleration value. The [Profile Acceleration(240)] cannot be set to a value greater than the Acceleration Limit(68). If a value greater than this limit is set, the Status Packet transmits a Data Limit Error through the Error field.
