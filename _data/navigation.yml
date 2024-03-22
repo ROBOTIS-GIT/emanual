@@ -1061,9 +1061,9 @@ dynamixel_y:
     urlkr: /dxl/y/#통신-회로
     children:
       - title: "UART Connection Circuit Diagram"
-        titlekr: "UART 통신 회로도"
+        titlekr: "UART 연결 회로도"
         url: /dxl/y/#uart-connecion-circuit-diagram
-        urlkr: /dxl/y/#uart-통신-회로도
+        urlkr: /dxl/y/#uart-연결-회로도
       - title: "Cable Connection"
         titlekr: "케이블 연결"
         url: /dxl/y/#cable-connection
