@@ -1,5 +1,5 @@
 
-### [출력 베어링 사양 (L10=7,000hours@rated output speed)](#출력-베어링-사양-l107000hoursrated-output-speed)
+## [출력 베어링 사양 (L10=7,000hours@rated output speed)](#출력-베어링-사양-l107000hoursrated-output-speed)
 
 | Model             | Basic dynamic load rating, C [N] |  Offset from flange, df [m] | Roller pitch circle diameter, Dp [m] | <sup>1</sup>Allowable Dynamic equivalent radial load, Pc_max [N] | <sup>2</sup>Allowable moment load, M_max [N.m] |
 |:-----------------:|:-----:|:------:|:------:|:------:|:----:|
@@ -17,7 +17,7 @@
 
 <div class="notice">{{ output_bearing_notice1 | markdownify }}</div>
 
-### [베어링 수명](#베어링-수명)
+## [베어링 수명](#베어링-수명)
 
 ![](/assets/images/dxl/y/bearing_formula_1.jpg)  
 
@@ -30,7 +30,7 @@
 - L<sub>f</sub> - Load factor (Table.B2)
 
 
-### [동적 등가 반경방향 하중](#동적-등가-반경방향-하중)
+## [동적 등가 반경방향 하중](#동적-등가-반경방향-하중)
 
 ![](/assets/images/dxl/y/bearing_formula_2.jpg)   
 
@@ -43,7 +43,7 @@
 - D<sub>p</sub> - Roller pitch circle diameter [m]
 
 
-### [동적 등가 반경방향 허용 하중](#동적-등가-반경방향-허용-하중)
+## [동적 등가 반경방향 허용 하중](#동적-등가-반경방향-허용-하중)
 
 ![](/assets/images/dxl/y/bearing_formula_3.jpg)  
 
@@ -55,7 +55,7 @@
 - P<sub>c_max</sub> - Allowable dynamic equivalent radial load [N]
 
 
-### [반경방향 허용 하중](#반경방향-허용-하중)
+## [반경방향 허용 하중](#반경방향-허용-하중)
 
 ![](/assets/images/dxl/y/bearing_formula_4.jpg)  
 
@@ -70,7 +70,7 @@
 - L<sub>r</sub> - Distance of radial load [m]
 - F<sub>r_max</sub> - Allowable radial load [N]
 
-### [테이블](#테이블)
+## [테이블](#테이블)
 
 Table.B2 Load factor
 
