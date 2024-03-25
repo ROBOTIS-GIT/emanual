@@ -815,18 +815,18 @@ main:
         url: /faq/general
 
 all-dynamixel:
-  - #title: "Y Series"
+  - title: "Y Series"
     titlekr: "Y 시리즈"
-    #url: /dxl/#y-series
+    url: /dxl/#y-series
     urlkr: /dxl/#y-시리즈
     children:
-      - #title: "YM070 Series"
+      - title: "YM070 Series"
         titlekr: "YM070 시리즈"
-        #url: /dxl/#ym070-series
+        url: /dxl/#ym070-series
         urlkr: /dxl/#ym070-시리즈
-      - #title: "YM080 Series"
+      - title: "YM080 Series"
         titlekr: "YM080 시리즈"
-        #url: /dxl/#ym080-series
+        url: /dxl/#ym080-series
         urlkr: /dxl/#ym080-시리즈
   - title: "P Series"
     titlekr: "P 시리즈"
