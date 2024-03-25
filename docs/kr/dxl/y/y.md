@@ -14,7 +14,9 @@ DYNAMIXEL-Y is ROBOTIS’ industrialized premium smart actuator solution for ful
 
 # [제품 라인업](#제품-라인업)
 
-![](/assets/images/dxl/y/dxl_y_productline_kr.png)
+![](/assets/images/dxl/y/model_numbering_kr.png)
+
+![](/assets/images/dxl/y/y_productline.png)
 
 > 다이나믹셀-Y 시리즈 라인업
 
@@ -25,6 +27,10 @@ DYNAMIXEL-Y is ROBOTIS’ industrialized premium smart actuator solution for ful
 - Integrated Dynamixel Drive(DYD)
 - Compact & Simple Design with Hollow Shaft
 - Dynamic Motor Controller
+
+![](/assets/images/dxl/y/y_type.png)
+
+![](/assets/images/dxl/y/y_exploded_view.png)
 
 # [주요 사양](#주요-사양)
 
