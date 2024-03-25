@@ -15,14 +15,14 @@ sidebar:
 |                               Motor                         |                                                        Reducer                                                    |
 |:-----------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------:|
 |  ![](/assets/images/dxl/y/ym070-210-m-rh_porduct.png){: width="100"}       |                               ![](/assets/images/dxl/y/ym070-210-r-rh_porduct.png)                 |
-|  [YM070-210-M001-RH](/docs/kr/dxl/y/ym070-210-m001-rh)      |  [YM070-210-R051-RH](/docs/kr/dxl/y/ym070-210-R051-rh)<br>[YM070-210-R099-RH](/docs/kr/dxl/y/ym070-210-R099-rh)   |
+|  [YM070-210-M001-RH](/docs/kr/dxl/y/ym070-210-m001-rh)      |  [YM070-210-R051-RH](/docs/kr/dxl/y/ym070-210-r051-rh)<br>[YM070-210-R099-RH](/docs/kr/dxl/y/ym070-210-r099-rh)   |
 
 ## [YM080 시리즈](#ym080-시리즈)
 
 |                               motor                         |                                                        Reducer                                                    |
 |:-----------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------:|
 |  ![](/assets/images/dxl/y/ym080-230-m-rh_porduct.png){: width="100"}       |                              ![](/assets/images/dxl/y/ym080-230-r-rh_porduct.png)                  |
-|  [YM080-230-M001-RH](/docs/kr/dxl/y/ym080-230-m001-rh)      |  [YM080-230-R051-RH](/docs/kr/dxl/y/ym080-230-R051-rh)<br>[YM080-230-R099-RH](/docs/kr/dxl/y/ym080-230-R099-rh)   |
+|  [YM080-230-M001-RH](/docs/kr/dxl/y/ym080-230-m001-rh)      |  [YM080-230-R051-RH](/docs/kr/dxl/y/ym080-230-r051-rh)<br>[YM080-230-R099-RH](/docs/kr/dxl/y/ym080-230-r099-rh)   |
 
 # [P 시리즈](#p-시리즈)
 

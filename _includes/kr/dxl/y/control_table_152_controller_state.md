@@ -4,7 +4,7 @@
 |:--:|:-------------------:|:-----------------------------------------------------------|
 | 0  | Start               | 장치에 전원이 인가됨                                         |
 | 1  | Init System         | 장치 초기화 진행 중                                          |
-| 2  | Inverter OFF        | Torque OFF 상태. Inverter가 OFF되 있음                       |
+| 2  | Inverter OFF        | Torque OFF 상태. 인버터가 OFF되어 있음                        |
 | 3  | Dynamic Brake       | Torque OFF 상태. Dynamic Brake가 활성화됨                    |
 | 4  | Process Torque ON   | Torque ON 작업을 진행 중                                     |
 | 5  | Running             | Torque ON 상태                                              |
