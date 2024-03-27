@@ -10,7 +10,7 @@ sidebar:
 
 ![](/assets/images/dxl/y/y_series_product.png)
 
-DYNAMIXEL-Y is ROBOTIS’ industrialized premium smart actuator solution for full scale Robots
+DYNAMIXEL-Y is ROBOTIS’ industrialized premium smart actuator solution for full scale robots
 
 # [Product Lineup](#product-lineup)
 
@@ -21,11 +21,11 @@ DYNAMIXEL-Y is ROBOTIS’ industrialized premium smart actuator solution for ful
 > DYNAMIXEL-Y Lineups
 
 **Features**
-- High Performance Frameless motor
-- Multi-turn Absolute Encoder
-- Integrated Electric Brake for Safety
-- Integrated Dynamixel Drive(DYD)
-- Compact & Simple Design with Hollow Shaft
+- High Performance Frameless Motor
+- Persistent Multi-turn Absolute Encoder
+- Optional Integrated Electric Brake for Safety
+- Optional Integrated DYNAMIXEL Drive (DYD)
+- Compact & Simple Design Featuring Hollow Shaft for Cable Routing
 - Dynamic Motor Controller
 
 ![](/assets/images/dxl/y/y_type.png)
@@ -47,19 +47,19 @@ DYNAMIXEL-Y is ROBOTIS’ industrialized premium smart actuator solution for ful
 
 ## [UART Connection Circuit Diagram](#uart-connection-circuit-diagram)
 
-To control DYNAMIXEL-Y with a custom made Main Controller, the signal of the Main Controller UART should be converted into RS-485. Below is the recommended circuit diagram.
+DYNAMIXEL-Y servomotors require half-duplex RS-484 serial communications for control. The following schematic is the recommended circuit diagram to convert full-duplex RS-484 to half-duplex for use with DYNAMIXEL servos.
 
 ![](/assets/images/dxl/y/uart_connection.PNG)
 
-**Note**: The circuit above is suitable for MCUs that use 5V power or when the IO is 5V tolerant. For other cases, use a Level Shifter to match the voltage. 
+**Note**: The circuit above is suitable for MCUs with a 5v logic level. For controllers using other logic levels, a level shifter is required to match DYNAMIXEL's 5v logic level.
 {: .notice}
 
-The above circuit is integrated into DYNAMIXEL-exclusive controllers. In the provided circuit diagram, the direction of the data signal of TTL Level TxD and RxD is determined based on the level of TX_Enable_5V as indicated below.
-- If TX_Enable_5V =High : The TxD signal is transferred to D+ and D-
-- If TX_Enable_5V =Low : The D+ and D- signals are transferred to RxD
+The above communication circuit is integrated into ROBOTIS' DYNAMIXEL controllers. In the provided circuit diagram, the direction of data transmission is determined based on the signal level of TX_Enable_5V:
+- If TX_Enable_5V is High: The TxD signal is sent out over the D+ and D- lines.
+- If TX_Enable_5V is Low: The input signals from D+ and D- signals are received and output to the RxD line.
 
 ## [Cable Connection](#cable-connection)
-The pin configuration of the DYNAMIXEL-Y connector is shown below.
+The DYNAMIXEL-Y connector pinout and recommended connection layout are shown in the diagram below below.
 
 ### [YM070](#ym070)
 ![](/assets/images/dxl/y/70_connect_cable_1.png) 
@@ -71,7 +71,7 @@ The pin configuration of the DYNAMIXEL-Y connector is shown below.
 
 ![](/assets/images/dxl/y/80_connect_cable_2.PNG)
 
-**WARNING**: When wiring please pay attention to the pin arrangement. Incorrectly connected DYNAMIXEL-P may be damaged severely.
+**WARNING**: When wiring please pay attention to pin assignments and polarity. Incorrectly connecting the cables of your DYNAMIXEL-Y may cause severe damage.
 {: .notice--warning}
 
 [YM070-210-M001-RH]: /docs/en/dxl/y/ym070-210-m001-rh/

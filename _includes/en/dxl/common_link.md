@@ -71,6 +71,8 @@
 
 <!-- DXL-Y -->
 
+[Bus Watchdog(8)]: #bus-watchdog8
+[Secondary ID(10)]: #secondary-id10
 [Status Return Level(15)]: status-return-level15
 [Drive Mode(32)]: #drive-mode32
 [Operating Mode(33)]: #operating-mode33
