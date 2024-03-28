@@ -90,6 +90,8 @@
 [Max position limit(76)]: #maxmin-position-limit76-84
 [Min Position limit(84)]: #maxmin-position-limit76-84
 [Gear Ratio Num(96)/Den(100)]: #electronic-gear-ratio-numeratordenominator96-100
+[Safe Stop Time(104)]: #safe-stop-time104
+[Overexcitation Time(112)]: #overexcitation-voltage110-normal-excitation-voltage111-overexcitation-time112
 [Controller State(152)]: #controller-state152
 [Error Code(153)]: #error-code153
 [Gain Save(170)]: #gain-save170
