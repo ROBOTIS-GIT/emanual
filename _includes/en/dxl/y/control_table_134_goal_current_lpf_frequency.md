@@ -1,4 +1,4 @@
-The frequency of the Low-Pass Filter for Target Current. This is the setting value of [Goal Current Filter] in the block diagram of the Operating Mode(33). Control performance can be improved by reducing the frequency that causes a decrease in system control performance.
+The cut-off frequency of the Low-Pass Filter for Target Current. This is the setting value of [Goal Current Filter] in the block diagram of the Operating Mode(33). Control performance can be improved by reducing the frequency that causes a decrease in system control performance.
 
 | Unit     | Range      |
 |:---------|:-----------|

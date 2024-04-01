@@ -3,10 +3,11 @@
 |:--------------------------|:---------------------------------------------------------------|
 | MCU                       | {{ site.data.dxl_y_info[page.ref].mcu }}                |
 | 모터                      | {{ site.data.dxl_y_info[page.ref].motor }}              |
-| 통신속도(초기값)           | {{ site.data.dxl_y_info[page.ref].baudrate }}            |
+| 통신속도                  | {{ site.data.dxl_y_info[page.ref].baudrate }}            |
 | 동작모드                  | {{ site.data.dxl_y_info[page.ref].opmode }}              |
 | 무게                      | {{ site.data.dxl_y_info[page.ref].weight }}             |
 | 크기 (W x H x D)          | {{ site.data.dxl_y_info[page.ref].dimensions }}         |
+| 중공 크기                 | {{ site.data.dxl_y_info[page.ref].holesize }}         |
 | 해상도                    | {{ site.data.dxl_y_info[page.ref].resolution }}          |
 | 엔코더 사양               | {{ site.data.dxl_y_info[page.ref].encoderspec }}         |
 | 감속비                    | {{ site.data.dxl_y_info[page.ref].gearratio }}          |
@@ -22,8 +23,8 @@
 | 동작 온도                 | {{ site.data.dxl_y_info[page.ref].temperature }}         |
 | 사용 전압                 | {{ site.data.dxl_y_info[page.ref].opvoltage }}             |
 | Command Signal           | {{ site.data.dxl_y_info[page.ref].commandsignal }}      |
-| 통신 방식                 | {{ site.data.dxl_y_info[page.ref].connection_kr }}       |
-| ID                        | {{ site.data.dxl_y_info[page.ref].id }}                 |
+| Physical Connection      | {{ site.data.dxl_y_info[page.ref].connection_kr }}       |
+| ID                       | {{ site.data.dxl_y_info[page.ref].id }}                 |
 | 대기 전류                 | {{ site.data.dxl_y_info[page.ref].standbycurrent }}      |
 
 {% capture spec_notice %}

@@ -8,6 +8,6 @@ If you enter '1' in this field, the value of the Hybrid area will be saved.
 | 2     | Saved              | The values in the Hybrid area have been saved.                                                         |
 
 
-**Note** : If the value of Gain Save (514) is '0', changes will not be saved if the device is rebooted or power is disconnected.
+**Note** : If the value of Hybrid Save(170) is '0', changes will not be saved if the device is rebooted or power is disconnected.
 {: .notice}
 

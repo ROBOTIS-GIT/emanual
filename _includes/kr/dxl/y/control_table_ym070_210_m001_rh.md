@@ -65,7 +65,7 @@
 | ...  | ...       | ...                                                                     | ...  | ...   | ...                     | ...               |
 | 168  | 1         | [Error Code History 15](#error-code-history15)                          | R    | -     | -                       | -                 |
 | 169  | 1         | [Error Code History 16](#error-code-history16)                          | R    | -     | -                       | -                 |
-| 170  | 1         | [Gain Save](#gain-save)                                                 | RW   | -     | -                       | -                 |
+| 170  | 1         | [Hybrid Save](#hybrid-save)                                                 | RW   | -     | -                       | -                 |
 | 212  | 4         | [Velocity I Gain](#velocity-i-gain)                                     | RW   | -     | -                       | -                 |
 | 216  | 4         | [Velocity P Gain](#velocity-p-gain)                                     | RW   | -     | -                       | -                 |
 | 220  | 4         | [Velocity FF Gain](#velocity-ff-gain)                                   | RW   | -     | -                       | -                 |

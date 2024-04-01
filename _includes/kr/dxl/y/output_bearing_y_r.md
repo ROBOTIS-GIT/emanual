@@ -1,7 +1,8 @@
 
-## [출력 베어링 사양 (L10=7,000hours@rated output speed)](#출력-베어링-사양-l107000hoursrated-output-speed)
+## [출력부 베어링 사양 (Table.B1)](#출력부-베어링-사양-tableb1)
 
-| Model             | Basic dynamic load rating, C [N] |  Offset from flange, df [m] | Roller pitch circle diameter, Dp [m] | <sup>1</sup>Allowable Dynamic equivalent radial load, Pc_max [N] | <sup>2</sup>Allowable moment load, M_max [N.m] |
+
+| Model             | Basic dynamic load rating, C [N] |  Offset from flange, df [m] | Roller pitch circle diameter, Dp [m] | Allowable Dynamic equivalent radial load, Pc_max [N]<sup>1)</sup> | Allowable moment load, M_max [N.m]<sup>2)</sup> |
 |:-----------------:|:-----:|:------:|:------:|:------:|:----:|
 | YM070-210-R051-RH | 5,182 | 0.0086 | 0.0498 | 1677.1 | 44.5 |
 | YM070-210-R099-RH | 5,182 | 0.0086 | 0.0498 | 2046.4 | 54.4 |
@@ -11,41 +12,28 @@
 
 {% capture output_bearing_notice1 %}  
 **참고 :**  
-1&#41; Allow dynamic equivalent radial load (Pc_mac)는 절대 이 값을 넘으면 안됩니다.  
-2&#41; Allowable moment load, Ma는 Lr + df = 0, 그리고 La = 0 입니다.
+1&#41; 허용 동등가 하중값 (Pc_max)을 초과하여 사용하지 마십시오.  
+2&#41; 허용모멘트 하중, Ma는 Lr+df=0, La=0 입니다.
 {% endcapture %}
 
 <div class="notice">{{ output_bearing_notice1 | markdownify }}</div>
 
 ## [베어링 수명](#베어링-수명)
+Dynamixel-Y 출력부의 베어링 수명은 다음식으로 결정할 수 있습니다.
 
-![](/assets/images/dxl/y/bearing_formula_1.jpg)  
-
+![](/assets/images/dxl/y/bearing_formula/r_1.png)  
 
 - L<sub>10</sub> - Bearing life [hour]
 - N<sub>a</sub> - Average output speed [rpm]
 - C - Basic dynamic load rating [N]
-- P<sub>c</sub> - Dynamic equivalent radial load [N]
+- P<sub>c</sub> - Dynamic equivalent load [N]
 - T<sub>f</sub> - Temperature factor (Tf=1.0 less 100℃)
 - L<sub>f</sub> - Load factor (Table.B2)
 
 
-## [동적 등가 반경방향 하중](#동적-등가-반경방향-하중)
+## [허용 동등가 하중, Pc_max](#허용-동등가-하중-pc_max)
 
-![](/assets/images/dxl/y/bearing_formula_2.jpg)   
-
-- P<sub>c</sub> - Dynamic equivalent radial load [N]
-- F<sub>r</sub> - Radial load [N]
-- F<sub>a</sub> - Axial load [N]
-- M - Moment [N.m]
-- X - Dynamic radial factor (Table.B3)
-- Y - Dynamic axial factor (Table.B3)
-- D<sub>p</sub> - Roller pitch circle diameter [m]
-
-
-## [동적 등가 반경방향 허용 하중](#동적-등가-반경방향-허용-하중)
-
-![](/assets/images/dxl/y/bearing_formula_3.jpg)  
+![](/assets/images/dxl/y/bearing_formula/r_2.png)   
 
 - L<sub>10</sub> - Bearing life [hour] @ 7,000 hour
 - N<sub>n</sub> - Nominal output speed [rpm] @ input speed 2,000rpm ÷ gear ratio
@@ -55,10 +43,25 @@
 - P<sub>c_max</sub> - Allowable dynamic equivalent radial load [N]
 
 
-## [반경방향 허용 하중](#반경방향-허용-하중)
+## [동등가 하중, Pc](#동등가-하중-pc)
+Dynamixel-Y 출력부 베어링의 동등가 하중은 다음식으로 결정할 수 있습니다.
 
-![](/assets/images/dxl/y/bearing_formula_4.jpg)  
+![](/assets/images/dxl/y/bearing_formula/r_3.png) 
 
+- P<sub>c</sub> - Dynamic equivalent radial load [N]
+- F<sub>r</sub> - Radial load [N]
+- F<sub>a</sub> - Axial load [N]
+- M - Moment [N.m]
+- X - Dynamic radial factor (Table.B3)
+- Y - Dynamic axial factor (Table.B3)
+- D<sub>p</sub> - Roller pitch circle diameter [m]
+
+![](/assets/images/dxl/y/bearing_formula/r_4.png) 
+
+
+## [허용 반경방향 하중, Fr_max](#허용-반경방향-하중-fr_max)
+
+![](/assets/images/dxl/y/bearing_formula/r_5.png) 
 
 - P<sub>c_max</sub> - Allowable dynamic equivalent radial load [N]
 - F<sub>a</sub> - Axial load [N]
@@ -78,7 +81,8 @@ Table.B2 Load factor
 |:-----------------------------|:---------:|
 | Smooth motion without impact | 1.0 ~ 1.2 |
 | Normal motion                | 1.2 ~ 1.5 |
-| Motion with severe impact    | 1.5 ~ 3.0 |
+| Motion with severe impact    | 1.5 ~ 3.0 |  
+
 
 Table.B3 Dynamic radial/axial factor
 
@@ -86,4 +90,5 @@ Table.B3 Dynamic radial/axial factor
 |:------------------------------------------|:----:|:----:|
 | F_a/(F_r+2M/Dp)≤1.5                       | 1.0  | 0.45 |
 | F_a/(F_r+2M/Dp)≤1.5                       | 0.67 | 0.67 |
-| If, Fr=0 and M=0, assuming X=0.67, Y=0.67 |      |      |
+
+- If, Fr=0 and M=0, assuming X=0.67, Y=0.67

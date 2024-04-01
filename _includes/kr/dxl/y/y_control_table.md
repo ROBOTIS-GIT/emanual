@@ -40,7 +40,7 @@ Address는 Instruction Packet으로 컨트롤 테이블의 특정 데이터를 �
         <td align="center" bgcolor= "#e2efd9" >Hybrid</td>
         <td>Hybrid 영역은 전원이 꺼져도 그 값이 보존되고, Torque Enable 값에 상관 없이 변경이 가능함.<br />
             Torque Disable(Torque Enable = 0)인 경우 EEPROM영역과 같음. 값을 변경하면 즉시 저장.<br />
-            Torque Enable(Torque Enable = 1)인 경우 RAM 영역과 같음. 값 변경이 가능하지만 저장되지 않음. Torque Disable일 때 Gain Save(170)를 사용하여 변경 사항을 저장 가능.
+            Torque Enable(Torque Enable = 1)인 경우 RAM 영역과 같음. 값 변경이 가능하지만 저장되지 않음. Torque Disable일 때 Hybrid Save(170)를 사용하여 변경 사항을 저장 가능.
         </td>
     </tr>
 </table>
