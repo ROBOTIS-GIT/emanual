@@ -25,6 +25,7 @@ The bearing life of the Dynamixel-Y output bearing is obtained from the followin
 - P<sub>c</sub> - Dynamic equivalent load [N]
 - T<sub>f</sub> - Temperature factor (Tf=1.0 less 100℃)
 - L<sub>f</sub> - Load factor (Table.B2)
+- P<sub>c_max</sub> - Allowable dynamic equivalent radial load [N]
 
 
 ## [Allowable dynamic equivalent load, Pc_max](#allowable-dynamic-equivalent-load-pc_max)
@@ -45,7 +46,7 @@ The dynamic equivalent load of the Dynamixel-Y output bearing is obtained from t
 ![](/assets/images/dxl/y/bearing_formula/m_3.png) 
 
 - P<sub>c</sub> - Dynamic equivalent radial load[N]
-- F<sub>r</sub> - Radial load[N]
+- F<sub>a</sub> - Radial load[N]
 - F<sub>a</sub> - Axial load [N]
 - d<sub>f</sub> - Offset from flange [m] (Table.B1)
 - L<sub>r</sub> - Distance of radial load [m]
