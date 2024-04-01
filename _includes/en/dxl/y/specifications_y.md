@@ -28,8 +28,8 @@
 
 
 {% capture spec_notice %}
-1&#41; The current value represents the phase current of the motor.  
-2&#41; Maximum Torque and Current are values that can be used instantaneously. Continuously exceeding these ratings will initiate an overload error to protect the device. 
+1. Current values are based on the phase current of the internal motor.
+2. The Maximum Torque and Current values represent the servo's maximum instantaneous output. Continuous operation at or near these values will initiate an overload error to protect the device from damage. 
 {% endcapture %}
 <div class="notice">{{ spec_notice | markdownify }}</div>
 

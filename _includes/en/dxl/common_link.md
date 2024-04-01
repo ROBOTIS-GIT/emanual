@@ -71,6 +71,8 @@
 
 <!-- DXL-Y -->
 
+[Bus Watchdog(8)]: #bus-watchdog8
+[Secondary ID(10)]: #secondary-id10
 [Status Return Level(15)]: status-return-level15
 [Drive Mode(32)]: #drive-mode32
 [Operating Mode(33)]: #operating-mode33
@@ -89,6 +91,8 @@
 [Min Position limit(84)]: #maxmin-position-limit76-84
 [Max/Min Position Limit(76, 84)]: #maxmin-position-limit76-84
 [Gear Ratio Num(96)/Den(100)]: #electronic-gear-ratio-numeratordenominator96-100
+[Safe Stop Time(104)]: #safe-stop-time104
+[Overexcitation Time(112)]: #overexcitation-voltage110-normal-excitation-voltage111-overexcitation-time112
 [Controller State(152)]: #controller-state152
 [Error Code(153)]: #error-code153
 [Hybrid Save(170)]: #hybrid-save170
