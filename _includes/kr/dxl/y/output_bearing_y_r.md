@@ -13,7 +13,7 @@
 {% capture output_bearing_notice1 %}  
 **참고 :**  
 1&#41; 허용 동등가 하중값 (Pc_max)을 초과하여 사용하지 마십시오.  
-2&#41; 허용모멘트 하중, Ma는 Lr+df=0, La=0 입니다.
+2&#41; 허용모멘트 하중, M_max는 Lr+df=0, La=0 입니다.
 {% endcapture %}
 
 <div class="notice">{{ output_bearing_notice1 | markdownify }}</div>
