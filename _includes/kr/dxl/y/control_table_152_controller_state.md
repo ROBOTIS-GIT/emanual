@@ -13,5 +13,5 @@
 | 8  | HW Fault            | 하드웨어 문제. 발생한 문제는 [Error Code(153)]을 통해 확인 가능   |
 
 
-**참고** : [Controller State(152)]의 값이 Process Torque On(4), Process Torque Off(6)일 때, [Torque Enable(512)], [Goal PWM(524)], [Goal Current(526)], [Goal Velocity(528)], [Goal Position(532)]에 값을 쓰면 Result Fail이 Return 됩니다.
+**참고** : [Controller State(152)]의 값이 '4' Process Torque On, '6' Process Torque Off일 때, [Torque Enable(512)], [Goal PWM(524)], [Goal Current(526)], [Goal Velocity(528)], [Goal Position(532)]에 값을 쓰면 Status Packet은 Error 필드를 통해서 Result Fail을 전송합니다.
 {: .notice}

@@ -17,5 +17,5 @@ The control block diagram for each control mode is as follows:
 #### [Position Control Mode](#position-control-mode)
 ![](/assets/images/dxl/y/operating_mode_3_en.png)
 
-**Note:** DYNAMIXEL-Y stores persistent Multi-turn information. Even if the power is turned off and on, or if the Reboot Instruction is used, the current Multi-turn position is accurately tracked through even manual rotations while the power is off, and the absolute position value is updated. The Multi-turn position can be reset to '0' using the Clear Instruction.
+**Note:** DYNAMIXEL-Y stores persistent Multi-turn information. There is no separate Extended Position Mode, and rotation is possible with Multi-turn even in Position Mode. Even if the power is turned off and on, or if the Reboot Instruction is used, the current Multi-turn position is accurately tracked through even manual rotations while the power is off, and the absolute position value is updated. The Multi-turn position can be reset to '0' using the Clear Instruction.
 {: .notice}

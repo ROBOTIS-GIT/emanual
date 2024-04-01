@@ -1,4 +1,4 @@
-The frequency of the Low-Pass Filter for the Feedforward value of the Velocity Controller. Control performance can be improved by reducing the frequency that causes a decrease in system control performance.
+The window size of the Low-Pass Filter for the Feedforward value of the Velocity Controller. Control performance can be improved by reducing the frequency that causes a decrease in system control performance.
 
 
 | Unit     | Range     |

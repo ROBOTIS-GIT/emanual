@@ -13,7 +13,7 @@ Generally, the Maximum Torque shown through Performance Graph testing is less th
 
 {% capture caution_power %}
 **CAUTION - When supplying power:**
-{% unless page.product_group == 'dxl_p' or page.product_group == 'dxl_pro' or page.product_group == 'dxl_pro_a' or page.ref == 'xh430-v210'or page.ref == 'xh430-v350'or page.ref == 'xh540-v150' or page.ref == 'xh540-v270' %} 
+{% unless page.product_group == 'dxl_p' or page.product_group == 'dxl_pro' or page.product_group == 'dxl_pro_a' or page.ref == 'xh430-v210'or page.ref == 'xh430-v350'or page.ref == 'xh540-v150' or page.ref == 'xh540-v270' or page.product_group == 'dxl_y_m' or page.product_group == 'dxl_y_b' or page.product_group == 'dxl_y_r' or page.product_group == 'dxl_y_a' %}
 - It is recommended to use a ROBOTIS controller or SMPS2DYNAMIXEL power adapter.
 {% endunless %}
 - Do not connect or disconnect DYNAMIXEL actuator cables while power is being supplied.

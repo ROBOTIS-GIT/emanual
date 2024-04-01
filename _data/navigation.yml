@@ -18736,9 +18736,9 @@ ym070-210-m001-rh:
           - title: "Error Code(153)"
             titlekr: "Error Code(153)"
             url: /dxl/y/ym070-210-m001-rh/#error-code153
-          - title: "Gain Save(170)"
-            titlekr: "Gain Save(170)"
-            url: /dxl/y/ym070-210-m001-rh/#gain-save170
+          - title: "Hybrid Save(170)"
+            titlekr: "Hybrid Save(170)"
+            url: /dxl/y/ym070-210-m001-rh/#hybrid-save170
           - title: "Velocity I Gain(212), Velocity P Gain(216), Velocity FF Gain(220)"
             titlekr: "Velocity I Gain(212), Velocity P Gain(216), Velocity FF Gain(220)"
             url: /dxl/y/ym070-210-m001-rh/#velocity-i-gain212-velocity-p-gain216-velocity-ff-gain220
@@ -18751,6 +18751,9 @@ ym070-210-m001-rh:
           - title: "Profile Acceleration Time(248), Profile Time(252)"
             titlekr: "Profile Acceleration Time(248), Profile Time(252)"
             url: /dxl/y/ym070-210-m001-rh/#profile-acceleration-time248-profile-time252
+          - title: "Indirect Address"
+            titlekr: "Indirect Address/Data"
+            url: /dxl/y/ym070-210-m001-rh/#indirect-address-indirect-data            
           - title: "Torque Enable(512)"
             titlekr: "Torque Enable(512)"
             url: /dxl/y/ym070-210-m001-rh/#torque-enable512
@@ -18858,19 +18861,19 @@ ym070-210-m001-rh:
     titlekr: "Clear Packet"
     url: /dxl/y/ym070-210-m001-rh/#clear-packet
     children:
-      - title: "Multi-Turn Clear Packet"
-        titlekr: "Multi-Turn Clear Packet"
+      - title: "Multi-turn Clear Packet"
+        titlekr: "Multi-turn Clear Packet"
         url: /dxl/y/ym070-210-m001-rh/#multi-turn-clear-packet
         children:
-          - title: "Multi-Turn Clear Method"
-            titlekr: "Multi-Turn Clear 방법"
+          - title: "Multi-turn Clear Method"
+            titlekr: "Multi-turn Clear 방법"
             url: /dxl/y/ym070-210-m001-rh/#multi-turn-clear-method
             urlkr: /dxl/y/ym070-210-m001-rh/#multi-turn-clear-방법
       - title: "Error Clear Packet"
         titlekr: "Error Clear Packet"
         url: /dxl/y/ym070-210-m001-rh/#error-clear-packet
-  - title: "Multi-Turn backup Battery Replacement"
-    titlekr: "Multi-Turn Backup 배터리 교체"
+  - title: "Multi-turn backup Battery Replacement"
+    titlekr: "Multi-turn Backup 배터리 교체"
     url: /dxl/y/ym070-210-m001-rh/#multi-turn-backup-battery-replacement 
     urlkr: /dxl/y/ym070-210-m001-rh/#multi-turn-backup-배터리-교체
     children:
@@ -18878,6 +18881,31 @@ ym070-210-m001-rh:
         titlekr: "배터리 교체 방법"
         url: /dxl/y/ym070-210-m001-rh/#procedure-for-battery-replacement
         urlkr: /dxl/y/ym070-210-m001-rh/#배터리-교체-방법
+  - title: "Output Bearing"
+    titlekr: "출력 베어링"
+    url: /dxl/y/ym070-210-m001-rh/#output-bearing
+    urlkr: /dxl/y/ym070-210-m001-rh/#출력-베어링
+    children:
+      - title: "Output bearing specifications (Table.B1)"
+        titlekr: "출력부 베어링 사양 (Table.B1)"
+        url: /dxl/y/ym070-210-m001-rh/#output-bearing-specifications-tableb1
+        urlkr: /dxl/y/ym070-210-m001-rh/#출력부-베어링-사양-tableb1
+      - title: "Output bearing life"
+        titlekr: "베어링 수명"
+        url: /dxl/y/ym070-210-m001-rh/#output-bearing-life
+        urlkr: /dxl/y/ym070-210-m001-rh/#베어링-수명
+      - title: "Allowable dynamic equivalent load, Pc_max"
+        titlekr: "허용 동등가 하중, Pc_max"
+        url: /dxl/y/ym070-210-m001-rh/#allowable-dynamic-equivalent-load-pc_max
+        urlkr: /dxl/y/ym070-210-m001-rh/#허용-동등가-하중-pc_max
+      - title: "Dynamic equivalent load, Pc"
+        titlekr: "동등가 하중, Pc"
+        url: /dxl/y/ym070-210-m001-rh/#dynamic-equivalent-load-pc
+        urlkr: /dxl/y/ym070-210-m001-rh/#동등가-하중-pc
+      - title: "Tables"
+        titlekr: "테이블"
+        url: /dxl/y/ym070-210-m001-rh/#tables
+        urlkr: /dxl/y/ym070-210-m001-rh/#테이블
 
 ym070-210-r051-rh:
   - title: "Specifications"
@@ -19035,9 +19063,9 @@ ym070-210-r051-rh:
           - title: "Error Code(153)"
             titlekr: "Error Code(153)"
             url: /dxl/y/ym070-210-r051-rh/#error-code153
-          - title: "Gain Save(170)"
-            titlekr: "Gain Save(170)"
-            url: /dxl/y/ym070-210-r051-rh/#gain-save170
+          - title: "Hybrid Save(170)"
+            titlekr: "Hybrid Save(170)"
+            url: /dxl/y/ym070-210-r051-rh/#hybrid-save170
           - title: "Velocity I Gain(212), Velocity P Gain(216), Velocity FF Gain(220)"
             titlekr: "Velocity I Gain(212), Velocity P Gain(216), Velocity FF Gain(220)"
             url: /dxl/y/ym070-210-r051-rh/#velocity-i-gain212-velocity-p-gain216-velocity-ff-gain220
@@ -19050,6 +19078,9 @@ ym070-210-r051-rh:
           - title: "Profile Acceleration Time(248), Profile Time(252)"
             titlekr: "Profile Acceleration Time(248), Profile Time(252)"
             url: /dxl/y/ym070-210-r051-rh/#profile-acceleration-time248-profile-time252
+          - title: "Indirect Address/Data"
+            titlekr: "Indirect Address/Data"
+            url: /dxl/y/ym070-210-r051-rh/#indirect-address-indirect-data    
           - title: "Torque Enable(512)"
             titlekr: "Torque Enable(512)"
             url: /dxl/y/ym070-210-r051-rh/#torque-enable512
@@ -19157,19 +19188,19 @@ ym070-210-r051-rh:
     titlekr: "Clear Packet"
     url: /dxl/y/ym070-210-r051-rh/#clear-packet
     children:
-      - title: "Multi-Turn Clear Packet"
-        titlekr: "Multi-Turn Clear Packet"
+      - title: "Multi-turn Clear Packet"
+        titlekr: "Multi-turn Clear Packet"
         url: /dxl/y/ym070-210-r051-rh/#multi-turn-clear-packet
         children:
-          - title: "Multi-Turn Clear Method"
-            titlekr: "Multi-Turn Clear 방법"
+          - title: "Multi-turn Clear Method"
+            titlekr: "Multi-turn Clear 방법"
             url: /dxl/y/ym070-210-r051-rh/#multi-turn-clear-method
             urlkr: /dxl/y/ym070-210-r051-rh/#multi-turn-clear-방법
       - title: "Error Clear Packet"
         titlekr: "Error Clear Packet"
         url: /dxl/y/ym070-210-r051-rh/#error-clear-packet
-  - title: "Multi-Turn backup Battery Replacement"
-    titlekr: "Multi-Turn Backup 배터리 교체"
+  - title: "Multi-turn backup Battery Replacement"
+    titlekr: "Multi-turn Backup 배터리 교체"
     url: /dxl/y/ym070-210-r051-rh/#multi-turn-backup-battery-replacement 
     urlkr: /dxl/y/ym070-210-r051-rh/#multi-turn-backup-배터리-교체 
     children:
@@ -19182,29 +19213,29 @@ ym070-210-r051-rh:
     url: /dxl/y/ym070-210-r051-rh/#output-bearing
     urlkr: /dxl/y/ym070-210-r051-rh/#출력-베어링
     children:
-      - title: "Output Bearing Specifications (L10=7,000hours@rated output speed)"
-        titlekr: "출력 베어링 사양 (L10=7,000hours@rated output speed)"
-        url: /dxl/y/ym070-210-r051-rh/#output-bearing-specifications-l107000hoursrated-output-speed
-        urlkr: /dxl/y/ym070-210-r051-rh/#출력-베어링-사양-l107000hoursrated-output-speed
-      - title: "Bearing Life"
+      - title: "Output bearing specifications (Table.B1)"
+        titlekr: "출력부 베어링 사양 (Table.B1)"
+        url: /dxl/y/ym070-210-r051-rh/#output-bearing-specifications-tableb1
+        urlkr: /dxl/y/ym070-210-r051-rh/#출력부-베어링-사양-tableb1
+      - title: "Output bearing life"
         titlekr: "베어링 수명"
-        url: /dxl/y/ym070-210-r051-rh/#bearing-life
+        url: /dxl/y/ym070-210-r051-rh/#output-bearing-life
         urlkr: /dxl/y/ym070-210-r051-rh/#베어링-수명
-      - title: "Dynamic Equivalent Radial Load"
-        titlekr: "동적 등가 반경방향 하중"
-        url: /dxl/y/ym070-210-r051-rh/#dynamic-equivalent-radial-load
-        urlkr: /dxl/y/ym070-210-r051-rh/#동적-등가-반경방향-하중
-      - title: "Dynamic Equivalent Radial Allowable Load"
-        titlekr: "동적 등가 반경방향 허용 하중"
-        url: /dxl/y/ym070-210-r051-rh/#dynamic-equivalent-radial-allowable-load
-        urlkr: /dxl/y/ym070-210-r051-rh/#동적-등가-반경방향-허용-하중
-      - title: "Allowable Radial Load"
-        titlekr: "반경방향 허용 하중"
-        url: /dxl/y/ym070-210-r051-rh/#allowable-radial-load
-        urlkr: /dxl/y/ym070-210-r051-rh/#반경방향-허용-하중
-      - title: "Table"
+      - title: "Allowable dynamic equivalent load, Pc_max"
+        titlekr: "허용 동등가 하중, Pc_max"
+        url: /dxl/y/ym070-210-r051-rh/#allowable-dynamic-equivalent-load-pc_max
+        urlkr: /dxl/y/ym070-210-r051-rh/#허용-동등가-하중-pc_max
+      - title: "Dynamic equivalent load, Pc"
+        titlekr: "동등가 하중, Pc"
+        url: /dxl/y/ym070-210-r051-rh/#dynamic-equivalent-load-pc
+        urlkr: /dxl/y/ym070-210-r051-rh/#동등가-하중-pc
+      - title: "Allowable radial load, Fr_max"
+        titlekr: "허용 반경방향 하중, Fr_max"
+        url: /dxl/y/ym070-210-r051-rh/#allowable-radial-load-fr_max
+        urlkr: /dxl/y/ym070-210-r051-rh/#허용-반경방향-하중-fr_max
+      - title: "Tables"
         titlekr: "테이블"
-        url: /dxl/y/ym070-210-r051-rh/#table
+        url: /dxl/y/ym070-210-r051-rh/#tables
         urlkr: /dxl/y/ym070-210-r051-rh/#테이블
 
 ym070-210-r099-rh:
@@ -19363,9 +19394,9 @@ ym070-210-r099-rh:
           - title: "Error Code(153)"
             titlekr: "Error Code(153)"
             url: /dxl/y/ym070-210-r099-rh/#error-code153
-          - title: "Gain Save(170)"
-            titlekr: "Gain Save(170)"
-            url: /dxl/y/ym070-210-r099-rh/#gain-save170
+          - title: "Hybrid Save(170)"
+            titlekr: "Hybrid Save(170)"
+            url: /dxl/y/ym070-210-r099-rh/#hybrid-save170
           - title: "Velocity I Gain(212), Velocity P Gain(216), Velocity FF Gain(220)"
             titlekr: "Velocity I Gain(212), Velocity P Gain(216), Velocity FF Gain(220)"
             url: /dxl/y/ym070-210-r099-rh/#velocity-i-gain212-velocity-p-gain216-velocity-ff-gain220
@@ -19378,6 +19409,9 @@ ym070-210-r099-rh:
           - title: "Profile Acceleration Time(248), Profile Time(252)"
             titlekr: "Profile Acceleration Time(248), Profile Time(252)"
             url: /dxl/y/ym070-210-r099-rh/#profile-acceleration-time248-profile-time252
+          - title: "Indirect Address/Data"
+            titlekr: "Indirect Address/Data"
+            url: /dxl/y/ym070-210-r099-rh/#indirect-address-indirect-data
           - title: "Torque Enable(512)"
             titlekr: "Torque Enable(512)"
             url: /dxl/y/ym070-210-r099-rh/#torque-enable512
@@ -19485,19 +19519,19 @@ ym070-210-r099-rh:
     titlekr: "Clear Packet"
     url: /dxl/y/ym070-210-r099-rh/#clear-packet
     children:
-      - title: "Multi-Turn Clear Packet"
-        titlekr: "Multi-Turn Clear Packet"
+      - title: "Multi-turn Clear Packet"
+        titlekr: "Multi-turn Clear Packet"
         url: /dxl/y/ym070-210-r099-rh/#multi-turn-clear-packet
         children:
-          - title: "Multi-Turn Clear Method"
-            titlekr: "Multi-Turn Clear 방법"
+          - title: "Multi-turn Clear Method"
+            titlekr: "Multi-turn Clear 방법"
             url: /dxl/y/ym070-210-r099-rh/#multi-turn-clear-method
             urlkr: /dxl/y/ym070-210-r099-rh/#multi-turn-clear-방법
       - title: "Error Clear Packet"
         titlekr: "Error Clear Packet"
         url: /dxl/y/ym070-210-r099-rh/#error-clear-packet
-  - title: "Multi-Turn backup Battery Replacement"
-    titlekr: "Multi-Turn Backup 배터리 교체"
+  - title: "Multi-turn backup Battery Replacement"
+    titlekr: "Multi-turn Backup 배터리 교체"
     url: /dxl/y/ym070-210-r099-rh/#multi-turn-backup-battery-replacement 
     urlkr: /dxl/y/ym070-210-r099-rh/#multi-turn-backup-배터리-교체 
     children:
@@ -19510,29 +19544,29 @@ ym070-210-r099-rh:
     url: /dxl/y/ym070-210-r099-rh/#output-bearing
     urlkr: /dxl/y/ym070-210-r099-rh/#출력-베어링
     children:
-      - title: "Output Bearing Specifications (L10=7,000hours@rated output speed)"
-        titlekr: "출력 베어링 사양 (L10=7,000hours@rated output speed)"
-        url: /dxl/y/ym070-210-r099-rh/#output-bearing-specifications-l107000hoursrated-output-speed
-        urlkr: /dxl/y/ym070-210-r099-rh/#출력-베어링-사양-l107000hoursrated-output-speed
-      - title: "Bearing Life"
+      - title: "Output bearing specifications (Table.B1)"
+        titlekr: "출력부 베어링 사양 (Table.B1)"
+        url: /dxl/y/ym070-210-r099-rh/#output-bearing-specifications-tableb1
+        urlkr: /dxl/y/ym070-210-r099-rh/#출력부-베어링-사양-tableb1
+      - title: "Output bearing life"
         titlekr: "베어링 수명"
-        url: /dxl/y/ym070-210-r099-rh/#bearing-life
+        url: /dxl/y/ym070-210-r099-rh/#output-bearing-life
         urlkr: /dxl/y/ym070-210-r099-rh/#베어링-수명
-      - title: "Dynamic Equivalent Radial Load"
-        titlekr: "동적 등가 반경방향 하중"
-        url: /dxl/y/ym070-210-r099-rh/#dynamic-equivalent-radial-load
-        urlkr: /dxl/y/ym070-210-r099-rh/#동적-등가-반경방향-하중
-      - title: "Dynamic Equivalent Radial Allowable Load"
-        titlekr: "동적 등가 반경방향 허용 하중"
-        url: /dxl/y/ym070-210-r099-rh/#dynamic-equivalent-radial-allowable-load
-        urlkr: /dxl/y/ym070-210-r099-rh/#동적-등가-반경방향-허용-하중
-      - title: "Allowable Radial Load"
-        titlekr: "반경방향 허용 하중"
-        url: /dxl/y/ym070-210-r099-rh/#allowable-radial-load
-        urlkr: /dxl/y/ym070-210-r099-rh/#반경방향-허용-하중
-      - title: "Table"
+      - title: "Allowable dynamic equivalent load, Pc_max"
+        titlekr: "허용 동등가 하중, Pc_max"
+        url: /dxl/y/ym070-210-r099-rh/#allowable-dynamic-equivalent-load-pc_max
+        urlkr: /dxl/y/ym070-210-r099-rh/#허용-동등가-하중-pc_max
+      - title: "Dynamic equivalent load, Pc"
+        titlekr: "동등가 하중, Pc"
+        url: /dxl/y/ym070-210-r099-rh/#dynamic-equivalent-load-pc
+        urlkr: /dxl/y/ym070-210-r099-rh/#동등가-하중-pc
+      - title: "Allowable radial load, Fr_max"
+        titlekr: "허용 반경방향 하중, Fr_max"
+        url: /dxl/y/ym070-210-r099-rh/#allowable-radial-load-fr_max
+        urlkr: /dxl/y/ym070-210-r099-rh/#허용-반경방향-하중-fr_max
+      - title: "Tables"
         titlekr: "테이블"
-        url: /dxl/y/ym070-210-r099-rh/#table
+        url: /dxl/y/ym070-210-r099-rh/#tables
         urlkr: /dxl/y/ym070-210-r099-rh/#테이블
 
 ym080-230-m001-rh:
@@ -19691,9 +19725,9 @@ ym080-230-m001-rh:
           - title: "Error Code(153)"
             titlekr: "Error Code(153)"
             url: /dxl/y/ym080-230-m001-rh/#error-code153
-          - title: "Gain Save(170)"
-            titlekr: "Gain Save(170)"
-            url: /dxl/y/ym080-230-m001-rh/#gain-save170
+          - title: "Hybrid Save(170)"
+            titlekr: "Hybrid Save(170)"
+            url: /dxl/y/ym080-230-m001-rh/#hybrid-save170
           - title: "Velocity I Gain(212), Velocity P Gain(216), Velocity FF Gain(220)"
             titlekr: "Velocity I Gain(212), Velocity P Gain(216), Velocity FF Gain(220)"
             url: /dxl/y/ym080-230-m001-rh/#velocity-i-gain212-velocity-p-gain216-velocity-ff-gain220
@@ -19706,6 +19740,9 @@ ym080-230-m001-rh:
           - title: "Profile Acceleration Time(248), Profile Time(252)"
             titlekr: "Profile Acceleration Time(248), Profile Time(252)"
             url: /dxl/y/ym080-230-m001-rh/#profile-acceleration-time248-profile-time252
+          - title: "Indirect Address/Data"
+            titlekr: "Indirect Address/Data"
+            url: /dxl/y/ym080-230-m001-rh/#indirect-address-indirect-data
           - title: "Torque Enable(512)"
             titlekr: "Torque Enable(512)"
             url: /dxl/y/ym080-230-m001-rh/#torque-enable512
@@ -19813,19 +19850,19 @@ ym080-230-m001-rh:
     titlekr: "Clear Packet"
     url: /dxl/y/ym080-230-m001-rh/#clear-packet
     children:
-      - title: "Multi-Turn Clear Packet"
-        titlekr: "Multi-Turn Clear Packet"
+      - title: "Multi-turn Clear Packet"
+        titlekr: "Multi-turn Clear Packet"
         url: /dxl/y/ym080-230-m001-rh/#multi-turn-clear-packet
         children:
-          - title: "Multi-Turn Clear Method"
-            titlekr: "Multi-Turn Clear 방법"
+          - title: "Multi-turn Clear Method"
+            titlekr: "Multi-turn Clear 방법"
             url: /dxl/y/ym080-230-m001-rh/#multi-turn-clear-method
             urlkr: /dxl/y/ym080-230-m001-rh/#multi-turn-clear-방법
       - title: "Error Clear Packet"
         titlekr: "Error Clear Packet"
         url: /dxl/y/ym080-230-m001-rh/#error-clear-packet
-  - title: "Multi-Turn backup Battery Replacement"
-    titlekr: "Multi-Turn Backup 배터리 교체"
+  - title: "Multi-turn backup Battery Replacement"
+    titlekr: "Multi-turn Backup 배터리 교체"
     url: /dxl/y/ym080-230-m001-rh/#multi-turn-backup-battery-replacement 
     urlkr: /dxl/y/ym080-230-m001-rh/#multi-turn-backup-배터리-교체
     children:
@@ -19833,6 +19870,31 @@ ym080-230-m001-rh:
         titlekr: "배터리 교체 방법"
         url: /dxl/y/ym080-230-m001-rh/#procedure-for-battery-replacement
         urlkr: /dxl/y/ym080-230-m001-rh/#배터리-교체-방법
+  - title: "Output Bearing"
+    titlekr: "출력 베어링"
+    url: /dxl/y/ym080-230-m001-rh/#output-bearing
+    urlkr: /dxl/y/ym080-230-m001-rh/#출력-베어링
+    children:
+      - title: "Output bearing specifications (Table.B1)"
+        titlekr: "출력부 베어링 사양 (Table.B1)"
+        url: /dxl/y/ym080-230-m001-rh/#output-bearing-specifications-tableb1
+        urlkr: /dxl/y/ym080-230-m001-rh/#출력부-베어링-사양-tableb1
+      - title: "Output bearing life"
+        titlekr: "베어링 수명"
+        url: /dxl/y/ym080-230-m001-rh/#output-bearing-life
+        urlkr: /dxl/y/ym080-230-m001-rh/#베어링-수명
+      - title: "Allowable dynamic equivalent load, Pc_max"
+        titlekr: "허용 동등가 하중, Pc_max"
+        url: /dxl/y/ym080-230-m001-rh/#allowable-dynamic-equivalent-load-pc_max
+        urlkr: /dxl/y/ym080-230-m001-rh/#허용-동등가-하중-pc_max
+      - title: "Dynamic equivalent load, Pc"
+        titlekr: "동등가 하중, Pc"
+        url: /dxl/y/ym080-230-m001-rh/#dynamic-equivalent-load-pc
+        urlkr: /dxl/y/ym080-230-m001-rh/#동등가-하중-pc
+      - title: "Tables"
+        titlekr: "테이블"
+        url: /dxl/y/ym080-230-m001-rh/#tables
+        urlkr: /dxl/y/ym080-230-m001-rh/#테이블
 
 ym080-230-r051-rh:
   - title: "Specifications"
@@ -19990,9 +20052,9 @@ ym080-230-r051-rh:
           - title: "Error Code(153)"
             titlekr: "Error Code(153)"
             url: /dxl/y/ym080-230-r051-rh/#error-code153
-          - title: "Gain Save(170)"
-            titlekr: "Gain Save(170)"
-            url: /dxl/y/ym080-230-r051-rh/#gain-save170
+          - title: "Hybrid Save(170)"
+            titlekr: "Hybrid Save(170)"
+            url: /dxl/y/ym080-230-r051-rh/#hybrid-save170
           - title: "Velocity I Gain(212), Velocity P Gain(216), Velocity FF Gain(220)"
             titlekr: "Velocity I Gain(212), Velocity P Gain(216), Velocity FF Gain(220)"
             url: /dxl/y/ym080-230-r051-rh/#velocity-i-gain212-velocity-p-gain216-velocity-ff-gain220
@@ -20005,6 +20067,9 @@ ym080-230-r051-rh:
           - title: "Profile Acceleration Time(248), Profile Time(252)"
             titlekr: "Profile Acceleration Time(248), Profile Time(252)"
             url: /dxl/y/ym080-230-r051-rh/#profile-acceleration-time248-profile-time252
+          - title: "Indirect Address/Data"
+            titlekr: "Indirect Address/Data"
+            url: /dxl/y/ym080-230-r051-rh/#indirect-address-indirect-data
           - title: "Torque Enable(512)"
             titlekr: "Torque Enable(512)"
             url: /dxl/y/ym080-230-r051-rh/#torque-enable512
@@ -20112,19 +20177,19 @@ ym080-230-r051-rh:
     titlekr: "Clear Packet"
     url: /dxl/y/ym080-230-r051-rh/#clear-packet
     children:
-      - title: "Multi-Turn Clear Packet"
-        titlekr: "Multi-Turn Clear Packet"
+      - title: "Multi-turn Clear Packet"
+        titlekr: "Multi-turn Clear Packet"
         url: /dxl/y/ym080-230-r051-rh/#multi-turn-clear-packet
         children:
-          - title: "Multi-Turn Clear Method"
-            titlekr: "Multi-Turn Clear 방법"
+          - title: "Multi-turn Clear Method"
+            titlekr: "Multi-turn Clear 방법"
             url: /dxl/y/ym080-230-r051-rh/#multi-turn-clear-method
             urlkr: /dxl/y/ym080-230-r051-rh/#multi-turn-clear-방법
       - title: "Error Clear Packet"
         titlekr: "Error Clear Packet"
         url: /dxl/y/ym080-230-r051-rh/#error-clear-packet
-  - title: "Multi-Turn backup Battery Replacement"
-    titlekr: "Multi-Turn Backup 배터리 교체"
+  - title: "Multi-turn backup Battery Replacement"
+    titlekr: "Multi-turn Backup 배터리 교체"
     url: /dxl/y/ym080-230-r051-rh/#multi-turn-backup-battery-replacement 
     urlkr: /dxl/y/ym080-230-r051-rh/#multi-turn-backup-배터리-교체 
     children:
@@ -20137,29 +20202,29 @@ ym080-230-r051-rh:
     url: /dxl/y/ym080-230-r051-rh/#output-bearing
     urlkr: /dxl/y/ym080-230-r051-rh/#출력-베어링
     children:
-      - title: "Output Bearing Specifications (L10=7,000hours@rated output speed)"
-        titlekr: "출력 베어링 사양 (L10=7,000hours@rated output speed)"
-        url: /dxl/y/ym080-230-r051-rh/#output-bearing-specifications-l107000hoursrated-output-speed
-        urlkr: /dxl/y/ym080-230-r051-rh/#출력-베어링-사양-l107000hoursrated-output-speed
-      - title: "Bearing Life"
+      - title: "Output bearing specifications (Table.B1)"
+        titlekr: "출력부 베어링 사양 (Table.B1)"
+        url: /dxl/y/ym080-230-r051-rh/#output-bearing-specifications-tableb1
+        urlkr: /dxl/y/ym080-230-r051-rh/#출력부-베어링-사양-tableb1
+      - title: "Output bearing life"
         titlekr: "베어링 수명"
-        url: /dxl/y/ym080-230-r051-rh/#bearing-life
+        url: /dxl/y/ym080-230-r051-rh/#output-bearing-life
         urlkr: /dxl/y/ym080-230-r051-rh/#베어링-수명
-      - title: "Dynamic Equivalent Radial Load"
-        titlekr: "동적 등가 반경방향 하중"
-        url: /dxl/y/ym080-230-r051-rh/#dynamic-equivalent-radial-load
-        urlkr: /dxl/y/ym080-230-r051-rh/#동적-등가-반경방향-하중
-      - title: "Dynamic Equivalent Radial Allowable Load"
-        titlekr: "동적 등가 반경방향 허용 하중"
-        url: /dxl/y/ym080-230-r051-rh/#dynamic-equivalent-radial-allowable-load
-        urlkr: /dxl/y/ym080-230-r051-rh/#동적-등가-반경방향-허용-하중
-      - title: "Allowable Radial Load"
-        titlekr: "반경방향 허용 하중"
-        url: /dxl/y/ym080-230-r051-rh/#allowable-radial-load
-        urlkr: /dxl/y/ym080-230-r051-rh/#반경방향-허용-하중
-      - title: "Table"
+      - title: "Allowable dynamic equivalent load, Pc_max"
+        titlekr: "허용 동등가 하중, Pc_max"
+        url: /dxl/y/ym080-230-r051-rh/#allowable-dynamic-equivalent-load-pc_max
+        urlkr: /dxl/y/ym080-230-r051-rh/#허용-동등가-하중-pc_max
+      - title: "Dynamic equivalent load, Pc"
+        titlekr: "동등가 하중, Pc"
+        url: /dxl/y/ym080-230-r051-rh/#dynamic-equivalent-load-pc
+        urlkr: /dxl/y/ym080-230-r051-rh/#동등가-하중-pc
+      - title: "Allowable radial load, Fr_max"
+        titlekr: "허용 반경방향 하중, Fr_max"
+        url: /dxl/y/ym080-230-r051-rh/#allowable-radial-load-fr_max
+        urlkr: /dxl/y/ym080-230-r051-rh/#허용-반경방향-하중-fr_max
+      - title: "Tables"
         titlekr: "테이블"
-        url: /dxl/y/ym080-230-r051-rh/#table
+        url: /dxl/y/ym080-230-r051-rh/#tables
         urlkr: /dxl/y/ym080-230-r051-rh/#테이블
 
 ym080-230-r099-rh:
@@ -20318,9 +20383,9 @@ ym080-230-r099-rh:
           - title: "Error Code(153)"
             titlekr: "Error Code(153)"
             url: /dxl/y/ym080-230-r099-rh/#error-code153
-          - title: "Gain Save(170)"
-            titlekr: "Gain Save(170)"
-            url: /dxl/y/ym080-230-r099-rh/#gain-save170
+          - title: "Hybrid Save(170)"
+            titlekr: "Hybrid Save(170)"
+            url: /dxl/y/ym080-230-r099-rh/#hybrid-save170
           - title: "Velocity I Gain(212), Velocity P Gain(216), Velocity FF Gain(220)"
             titlekr: "Velocity I Gain(212), Velocity P Gain(216), Velocity FF Gain(220)"
             url: /dxl/y/ym080-230-r099-rh/#velocity-i-gain212-velocity-p-gain216-velocity-ff-gain220
@@ -20333,6 +20398,9 @@ ym080-230-r099-rh:
           - title: "Profile Acceleration Time(248), Profile Time(252)"
             titlekr: "Profile Acceleration Time(248), Profile Time(252)"
             url: /dxl/y/ym080-230-r099-rh/#profile-acceleration-time248-profile-time252
+          - title: "Indirect Address/Data"
+            titlekr: "Indirect Address/Data"
+            url: /dxl/y/ym080-230-r099-rh/#indirect-address-indirect-data
           - title: "Torque Enable(512)"
             titlekr: "Torque Enable(512)"
             url: /dxl/y/ym080-230-r099-rh/#torque-enable512
@@ -20440,19 +20508,19 @@ ym080-230-r099-rh:
     titlekr: "Clear Packet"
     url: /dxl/y/ym080-230-r099-rh/#clear-packet
     children:
-      - title: "Multi-Turn Clear Packet"
-        titlekr: "Multi-Turn Clear Packet"
+      - title: "Multi-turn Clear Packet"
+        titlekr: "Multi-turn Clear Packet"
         url: /dxl/y/ym080-230-r099-rh/#multi-turn-clear-packet
         children:
-          - title: "Multi-Turn Clear Method"
-            titlekr: "Multi-Turn Clear 방법"
+          - title: "Multi-turn Clear Method"
+            titlekr: "Multi-turn Clear 방법"
             url: /dxl/y/ym080-230-r099-rh/#multi-turn-clear-method
             urlkr: /dxl/y/ym080-230-r099-rh/#multi-turn-clear-방법
       - title: "Error Clear Packet"
         titlekr: "Error Clear Packet"
         url: /dxl/y/ym080-230-r099-rh/#error-clear-packet
-  - title: "Multi-Turn backup Battery Replacement"
-    titlekr: "Multi-Turn Backup 배터리 교체"
+  - title: "Multi-turn backup Battery Replacement"
+    titlekr: "Multi-turn Backup 배터리 교체"
     url: /dxl/y/ym080-230-r099-rh/#multi-turn-backup-battery-replacement 
     urlkr: /dxl/y/ym080-230-r099-rh/#multi-turn-backup-배터리-교체 
     children:
@@ -20465,29 +20533,29 @@ ym080-230-r099-rh:
     url: /dxl/y/ym080-230-r099-rh/#output-bearing
     urlkr: /dxl/y/ym080-230-r099-rh/#출력-베어링
     children:
-      - title: "Output Bearing Specifications (L10=7,000hours@rated output speed)"
-        titlekr: "출력 베어링 사양 (L10=7,000hours@rated output speed)"
-        url: /dxl/y/ym080-230-r099-rh/#output-bearing-specifications-l107000hoursrated-output-speed
-        urlkr: /dxl/y/ym080-230-r099-rh/#출력-베어링-사양-l107000hoursrated-output-speed
-      - title: "Bearing Life"
+      - title: "Output bearing specifications (Table.B1)"
+        titlekr: "출력부 베어링 사양 (Table.B1)"
+        url: /dxl/y/ym080-230-r099-rh/#output-bearing-specifications-tableb1
+        urlkr: /dxl/y/ym080-230-r099-rh/#출력부-베어링-사양-tableb1
+      - title: "Output bearing life"
         titlekr: "베어링 수명"
-        url: /dxl/y/ym080-230-r099-rh/#bearing-life
+        url: /dxl/y/ym080-230-r099-rh/#output-bearing-life
         urlkr: /dxl/y/ym080-230-r099-rh/#베어링-수명
-      - title: "Dynamic Equivalent Radial Load"
-        titlekr: "동적 등가 반경방향 하중"
-        url: /dxl/y/ym080-230-r099-rh/#dynamic-equivalent-radial-load
-        urlkr: /dxl/y/ym080-230-r099-rh/#동적-등가-반경방향-하중
-      - title: "Dynamic Equivalent Radial Allowable Load"
-        titlekr: "동적 등가 반경방향 허용 하중"
-        url: /dxl/y/ym080-230-r099-rh/#dynamic-equivalent-radial-allowable-load
-        urlkr: /dxl/y/ym080-230-r099-rh/#동적-등가-반경방향-허용-하중
-      - title: "Allowable Radial Load"
-        titlekr: "반경방향 허용 하중"
-        url: /dxl/y/ym080-230-r099-rh/#allowable-radial-load
-        urlkr: /dxl/y/ym080-230-r099-rh/#반경방향-허용-하중
-      - title: "Table"
+      - title: "Allowable dynamic equivalent load, Pc_max"
+        titlekr: "허용 동등가 하중, Pc_max"
+        url: /dxl/y/ym080-230-r099-rh/#allowable-dynamic-equivalent-load-pc_max
+        urlkr: /dxl/y/ym080-230-r099-rh/#허용-동등가-하중-pc_max
+      - title: "Dynamic equivalent load, Pc"
+        titlekr: "동등가 하중, Pc"
+        url: /dxl/y/ym080-230-r099-rh/#dynamic-equivalent-load-pc
+        urlkr: /dxl/y/ym080-230-r099-rh/#동등가-하중-pc
+      - title: "Allowable radial load, Fr_max"
+        titlekr: "허용 반경방향 하중, Fr_max"
+        url: /dxl/y/ym080-230-r099-rh/#allowable-radial-load-fr_max
+        urlkr: /dxl/y/ym080-230-r099-rh/#허용-반경방향-하중-fr_max
+      - title: "Tables"
         titlekr: "테이블"
-        url: /dxl/y/ym080-230-r099-rh/#table
+        url: /dxl/y/ym080-230-r099-rh/#tables
         urlkr: /dxl/y/ym080-230-r099-rh/#테이블
 
 #Protocol 1.0 sidebar

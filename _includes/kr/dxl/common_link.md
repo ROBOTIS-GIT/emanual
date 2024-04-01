@@ -88,10 +88,11 @@
 [Velocity Limit(72)]: #velocity-limit72
 [Max position limit(76)]: #maxmin-position-limit76-84
 [Min Position limit(84)]: #maxmin-position-limit76-84
+[Max/Min Position Limit(76, 84)]: #maxmin-position-limit76-84
 [Gear Ratio Num(96)/Den(100)]: #electronic-gear-ratio-numeratordenominator96-100
 [Controller State(152)]: #controller-state152
 [Error Code(153)]: #error-code153
-[Gain Save(170)]: #gain-save170
+[Hybrid Save(170)]: #hybrid-save170
 [Profile Acceleration(240)]: #profile-acceleration240-profile-velocity244
 [Profile Velocity(244)]: #profile-acceleration240-profile-velocity244
 [Torque Enable(512)]: #torque-enable512

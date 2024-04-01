@@ -1,24 +1,20 @@
 common_y_specs:
-  mcu:                &mcu                "ARM Cortex-M4 (168 [Mhz], 32 [bit])"  
-  motor:              &motor              "Frameless BLDC"
-  baudrate:           &baudrate           "9,600 [bps] ~ 10,500,000 [bps] (57,600 [bps])"
-  opmode:             &opmode             "위치 제어모드<br />속도 제어모드<br />전류 제어모드"
-  opmode_en:          &opmode_en          "Position Control Mode<br />Velocity Control Mode<br />Current Control Mode"
-  encoderspec:        &encoderspec        "Single-Turn: 19Bit (524,288 [Pulse/Rev])<br />**Multi-Turn: 18Bit (262,144 [Rev])**"
-  backlash:           &backlash           "< 3.0 [arcmin]"
-  radialload_070:     &radialload_070     "TBD"
-  radialload_080:     &radialload_080     "TBD"
-  radialload_070_en:  &radialload_070_en  "TBD"
-  radialload_080_en:  &radialload_080_en  "TBD"
-  output_070:         &output_070         "210 [W]"
-  output_080:         &output_080         "230 [W]"
-  temperature:        &temperature        "-5 ~ +55 [&deg;C]"
-  voltage:            &voltage            "24 [V]"
-  command:            &command            "Digital Packet"
-  rs485_kr:           &rs485_kr           "RS485 Multidrop Bus<br />RS485 비동기 시리얼 통신 (8bit, 1stop, No Parity)"
-  rs485_en:           &rs485_en           "RS485 Multidrop Bus<br />RS485 Asynchronous Serial Communication (8bit, 1stop, No Parity)"  
-  id:                 &id                 "0 ~ 253 (0 ~ 252)"
-  standbycurrent:     &standbycurrent     "40 [mA]"
+  mcu:                  &mcu                  "ARM Cortex-M4 (168 [Mhz], 32 [bit])"  
+  motor:                &motor                "Frameless BLDC"
+  baudrate:             &baudrate             "9,600 [bps] ~ 10,500,000 [bps]"
+  opmode:               &opmode               "위치 제어모드<br />속도 제어모드<br />전류 제어모드"
+  opmode_en:            &opmode_en            "Position Control Mode<br />Velocity Control Mode<br />Current Control Mode"
+  encoderspec:          &encoderspec          "Single-Turn: 19Bit (524,288 [Pulse/Rev])<br />**Multi-Turn: 18Bit (262,144 [Rev])**"
+  backlash:             &backlash             "< 3.0 [arcmin]"
+  output_070:           &output_070           "210 [W]"
+  output_080:           &output_080           "230 [W]"
+  temperature:          &temperature          "-5 ~ +55 [&deg;C]"
+  voltage:              &voltage              "24 [V]"
+  command:              &command              "Digital Packet"
+  rs485_kr:             &rs485_kr             "RS485 Multidrop Bus<br />RS485 비동기 시리얼 통신 (8bit, 1stop, No Parity)"
+  rs485_en:             &rs485_en             "RS485 Multidrop Bus<br />RS485 Asynchronous Serial Communication (8bit, 1stop, No Parity)"  
+  id:                   &id                   "253 (0 ~ 252)"
+  standbycurrent:       &standbycurrent       "40 [mA]"
 
 
 ym070-210-m001-rh:
@@ -29,12 +25,13 @@ ym070-210-m001-rh:
   opmode:             *opmode
   weight:             "340 [g]"
   dimensions:         "Ø70 x 50.9 [mm]"
+  holesize:           "Ø14[mm]"
   resolution:         "524,288 [pulse/rev]"
   encoderspec:        *encoderspec
   gearratio:          "-"
   backlash:           "-"
-  radialload:         *radialload_070
-  radialload_en:      *radialload_070_en
+  radialload:         "42 [N] (출력부 베어링 참조)"
+  radialload_en:      "42 [N] (see the output bearing section)"
   noloadspeed:        "5,675 [rev/min]"
   contspeed:          "4,664 [rev/min]"
   conttorque:         "0.32 [N.m]"
@@ -58,12 +55,13 @@ ym070-210-r051-rh:
   opmode:             *opmode
   weight:             "790 [g]"
   dimensions:         "Ø70 x 71.1 [mm]"
+  holesize:           "Ø14[mm]"
   resolution:         "26,738,688 [pulse/rev]"
   encoderspec:        *encoderspec
   gearratio:          "51:1"
   backlash:           *backlash
-  radialload:         *radialload_070
-  radialload_en:      *radialload_070_en
+  radialload:         "1,240 [N] (출력부 베어링 참조)"
+  radialload_en:      "1,240 [N] (see the output bearing section)"
   noloadspeed:        "111.3 [rev/min]"
   contspeed:          "39.2 [rev/min]"
   conttorque:         "8.2 [N.m]"
@@ -87,12 +85,13 @@ ym070-210-r099-rh:
   opmode:             *opmode
   weight:             "790 [g]"
   dimensions:         "Ø70 x 71.1 [mm]"
+  holesize:           "Ø14[mm]"
   resolution:         "51,904,512 [pulse/rev]"
   encoderspec:        *encoderspec
   gearratio:          "99:1"
   backlash:           *backlash
-  radialload:         *radialload_070
-  radialload_en:      *radialload_070_en
+  radialload:         "1,520 [N] (출력부 베어링 참조)"
+  radialload_en:      "1,520 [N] (see the output bearing section)"
   noloadspeed:        "57.3 [rev/min]"
   contspeed:          "20.2 [rev/min]"
   conttorque:         "14.6 [N.m]"
@@ -116,12 +115,13 @@ ym080-230-m001-rh:
   opmode:             *opmode
   weight:             "530 [g]"
   dimensions:         "Ø80 x 54.1 [mm]"
+  holesize:           "Ø19[mm]"
   resolution:         "524,288 [pulse/rev]"
   encoderspec:        *encoderspec
   gearratio:          "-"
   backlash:           "-"
-  radialload:         *radialload_080
-  radialload_en:      *radialload_080_en
+  radialload:         "52 [N] (출력부 베어링 참조)"
+  radialload_en:      "52 [N] (see the output bearing section)"
   noloadspeed:        "3,190 [rev/min]"
   contspeed:          "2,597 [rev/min]"
   conttorque:         "0.62 [N.m]"
@@ -145,12 +145,13 @@ ym080-230-r051-rh:
   opmode:             *opmode
   weight:             "1,200 [g]"
   dimensions:         "Ø80 x 78.1 [mm]"
+  holesize:           "Ø19[mm]"
   resolution:         "26,738,688 [pulse/rev]"
   encoderspec:        *encoderspec
   gearratio:          "51:1"
   backlash:           *backlash
-  radialload:         *radialload_080
-  radialload_en:      *radialload_080_en
+  radialload:         "1,570 [N] (see the output bearing section)"
+  radialload_en:      "1,570 [N] (출력부 베어링 참조)"
   noloadspeed:        "62.5 [rev/min]"
   contspeed:          "39.2 [rev/min]"
   conttorque:         "15.8 [N.m]"
@@ -174,12 +175,13 @@ ym080-230-r099-rh:
   opmode:             *opmode
   weight:             "1,200 [g]"
   dimensions:         "Ø80 x 78.1 [mm]"
+  holesize:           "Ø19[mm]"
   resolution:         "51,904,512 [pulse/rev]"
   encoderspec:        *encoderspec
   gearratio:          "99:1"
   backlash:           *backlash
-  radialload:         *radialload_080
-  radialload_en:      *radialload_080_en
+  radialload:         "1,920 [N] (출력부 베어링 참조)"
+  radialload_en:      "1,920 [N] (see the output bearing section)"
   noloadspeed:        "32.2 [rev/min]"
   contspeed:          "20.2 [rev/min]"
   conttorque:         "26.0 [N.m]"
