@@ -37,8 +37,7 @@ Dynamixel-Y 출력부의 베어링 수명은 다음식으로 결정할 수 있�
 - C - Basic dynamic load rating [N]
 - T<sub>f</sub> - Temperature factor (Tf=1.0 less 100℃) @ Tf = 1.0
 - L<sub>f</sub> - Load factor (Table.B2) @ Lf=1.0
-- P<sub>c_max</sub> - Allowable dynamic equivalent radial load [N]
-
+s
 
 ## [동등가 하중, Pc](#동등가-하중-pc)
 Dynamixel-Y 출력부 베어링의 동등가 하중은 다음식으로 결정할 수 있습니다.
@@ -46,7 +45,7 @@ Dynamixel-Y 출력부 베어링의 동등가 하중은 다음식으로 결정할
 ![](/assets/images/dxl/y/bearing_formula/m_3.png) 
 
 - P<sub>c</sub> - Dynamic equivalent radial load[N]
-- F<sub>a</sub> - Radial load[N]
+- F<sub>r</sub> - Radial load[N]
 - F<sub>a</sub> - Axial load [N]
 - d<sub>f</sub> - Offset from flange [m] (Table.B1)
 - L<sub>r</sub> - Distance of radial load [m]
