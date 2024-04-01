@@ -1,4 +1,4 @@
-Offset value for Goal PWM / Current / Velocity 
+Offset values for Goal PWM, Current, and Velocity. These offsets will be applied to goal values provided to the servo.
 
 | item                 | Unit        |       Control Mode                                  |          Description              |
 |:--------------------:|:-----------:| :---------------------------------------------------|:----------------------------------|

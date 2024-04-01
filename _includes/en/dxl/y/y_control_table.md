@@ -37,7 +37,7 @@ The control table is divided into three areas: EEPROM, RAM, and Hybrid. Here are
         <td align="center" bgcolor= "#e2efd9" >Hybrid</td>
         <td>The Hybrid area retains its values even when power is turned off, and changes can be made regardless of the Torque Enable value.<br />
             When torque is disabled (Torque Enable = 0), it behaves like the EEPROM area. Values are immediately stored when changed.<br />
-            When torque is enabled (Torque Enable = 1), it behaves like the RAM area. Changes are possible but not immediately stored. To save changes made in this state, use Hybrid Save (170) when torque has been disabled.
+            When torque is enabled (Torque Enable = 1), it behaves like the RAM area. Changes are possible but not immediately stored. To save changes made in this state, use Gain Save (170) when torque has been disabled.
         </td>
     </tr>
 </table>

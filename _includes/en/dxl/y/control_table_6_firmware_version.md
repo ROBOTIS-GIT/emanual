@@ -1,1 +1,1 @@
-The firmware version installed on your DYNAMIXEL.
+The firmware version installed on the DYNAMIXEL.

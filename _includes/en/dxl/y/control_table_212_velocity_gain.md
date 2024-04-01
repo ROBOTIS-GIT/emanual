@@ -1,4 +1,4 @@
-This is the control gain value for the velocity controller. The value is set in the [Velocity Controller](#velocity-control-mode) block within the block diagram of the Operating Mode (33) item. 
+These are the control gain values for the internal velocity controller used to generate velocity trajectories in the [Velocity Controller](#velocity-control-mode) block within the block diagram of the [Operating Mode(33)] item. 
 
 |       item                |   Gain Notation   |    Range          | Description                    |
 |:-------------------------:|:-----------------:|:-----------------:|:-------------------------------|

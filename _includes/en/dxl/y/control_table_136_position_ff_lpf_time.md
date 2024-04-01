@@ -1,4 +1,4 @@
-The window size of the Low-Pass Filter for Feedforward value of the Position Controller. Control performance can be improved by reducing the frequency that causes a decrease in system control performance.
+The frequency of the Low-Pass Filter for the Feedforward value of the Position Controller. Control performance may be improved by reducing unwanted frequencies in the control signal.
 
 
 | Unit     | Range   |

@@ -1,4 +1,4 @@
-This is the time value of the device. It can be used as a timestamp for packets, providing a more accurate time value than a PC.
+A realtime counter of the uptime of the device. It can be used as a timestamp for packets, providing a more accurate time value than a PC.
 
 | Unit   | Range      | Description                                                                  |
 | :---:  | :--------: | :--------------------------------------------------------------------------: |

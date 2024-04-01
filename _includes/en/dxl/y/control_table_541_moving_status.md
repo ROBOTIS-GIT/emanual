@@ -1,4 +1,4 @@
-Provides additional information about movement. The In-Position Bit(0x01) is only used in position control mode.
+Provides additional information about the movement status of the actuator. The In-Position Bit(0x01) is only used in position control mode.
 
 |     Value    |        Item       |    Description                                                                                                                            |
 | :----------: | :---------------: | :---------------------------------------------------------------------------------------------------------------------------------------- |
@@ -10,5 +10,5 @@ Provides additional information about movement. The In-Position Bit(0x01) is onl
 | Bit 1 (0x02) | Profile ongoing   | Whether the profile is in progress according to the [Goal Position(532)] command<br />0 : Profile complete<br />1 : Profile in progress   |
 | Bit 0 (0x01) | In-Position       | Whether the [Goal Position(532)] has been reached<br />0 : Not reached<br />1 : Reached                                                   |
  
-**Note** : A triangular velocity profile is set when the [Profile Velocity(244)] is not reached under trapezoidal velocity profile conditions.
+**Note** : A triangular velocity profile is set automatically when the [Profile Velocity(244)] is not reached under trapezoidal velocity profile conditions.
 {: .notice}

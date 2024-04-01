@@ -1,4 +1,7 @@
-In current control mode, the Goal Current (526) value operates as the target current value. In velocity control mode, position control mode, and extended position control mode, it operates within the limit of the current controller input (current). Goal Current(526) cannot exceed the [Current Limit(66)].
+{% if page.product_group=='dxl_y_m' %}
+{% assign current_limit= "[Current Limit(66)]" %}
+{% endif %}
+In current control mode, the Goal Current is used to specify the desired output current. In velocity control mode, position control mode, and extended position control mode it functions as a limit on the current controller's output current. Goal Current cannot exceed the configured {{ current_limit }}.
 
 | Unit       | Range                                      |  Control Mode                                           |               Description                  |
 |:----------:|:------------------------------------------:| :-------------------------------------------------------|:-------------------------------------------|
