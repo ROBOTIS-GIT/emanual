@@ -10,9 +10,9 @@
 
 
 {% capture output_bearing_notice1 %}  
-**note :**  
-1&#41; Allowable dynamic equivalent load (Pc_max)  must not exceed this value   
-2&#41; Allowable moment load, Ma is Lr+df=0 and La=0
+**Note :**  
+1. Allowable dynamic equivalent load (Pc_max)  must not exceed this value   
+2. Allowable moment load, Ma is Lr+df=0 and La=0
 {% endcapture %}
 
 <div class="notice">{{ output_bearing_notice1 | markdownify }}</div>

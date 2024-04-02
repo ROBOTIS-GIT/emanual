@@ -1,7 +1,7 @@
 ## [Multi-Turn Clear Packet](#multi-turn-clear-packet)
 
 DYNAMIXEL-Y is capable of backing up Multi-Turn position information, ensuring that it is preserved even after a power outage. A Multi-Turn Clear Packet is required to reset this value. After a Multi-Turn Clear, DYNAMIXEL will undergo a reboot.  
-After replacing the Multi-Turn backup battery, it is essential to perform this process prior to resuming operation.
+After replacing the Multi-Turn Backup Battery, it is essential to perform this process prior to resuming operation.
 
 | Packet Type      | P1   | P2 ~ P5                                | Description                                                                            |
 |:----------------:|:----:|:--------------------------------------:|:--------------------------------------------------------------------------------|
@@ -33,17 +33,17 @@ The Error Clear Packet can be used to clear the error state of a DYNAMIXEL Y act
 
 # [Multi-Turn backup Battery Replacement](#multi-turn-backup-battery-replacement)
 
-DYNAMIXEL-Y features an internal battery for Multi-Turn Position Backup. After replacing the battery, it is necessary to perform the Multi-Turn Clear operation to reset the Multi-Turn position to ensure accuracy.
+DYNAMIXEL-Y features an internal Multi-turn Backup Battery for Multi-Turn Position Backup. After replacing the battery, it is necessary to perform the Multi-Turn Clear operation to reset the Multi-Turn position to ensure accuracy.
 
 ## [Procedure for Battery Replacement](#procedure-for-battery-replacement)
 
 ![](/assets/images/dxl/y/brtterry_replacement_guide_en.png)
 
-1. Prepare the DYNAMIXEL-Y and new battery.
-2. After supplying power and connecting the DYNAMIXEL-Y to DYNAMIXEL Wizard 2.0, click
+1. Prepare the DYNAMIXEL-Y and new Multi-turn Backup Battery.
+2. After supplying power and connecting the DYNAMIXEL-Y to DYNAMIXEL Wizard 2.0, enter the
    Tools → Encoder Battery Replacement menu. 
 3. In the case of a model with an included reducer, ensure that the reducer is positioned at it's origin point. (Position 0)
-4. Open the battery cover, install the new battery, close the cover, and click the Next button.
+4. Open the battery cover, install the new Multi-turn Backup Battery, close the cover, and click the Next button.
 5. Wait for the operation to complete. 
 6. Once finished, exit the menu by clicking the OK button.
 

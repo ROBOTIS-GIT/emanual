@@ -6,7 +6,6 @@ LED controls the indicator LED on the back of the servo.
 | 1     | Turns on the LED at the back of the device.  |
 
 
-{% if page.product_group=='dxl_y_m' %}
 {% capture LED %}
 **Note** : The LED also functions as an indicator displaying the device's current condition:
 
@@ -15,8 +14,7 @@ LED controls the indicator LED on the back of the servo.
 | Boot-up       | Single blink    |
 | Factory Reset | Four blinks     |
 | Alarm         | Steady blinking |
-| Boot Mode     | Illuminated     |
+|Bootloader Mode| Illuminated     |
 {% endcapture %}
 
 <div class="notice">{{ LED | markdownify }}</div>
-{% endif %}

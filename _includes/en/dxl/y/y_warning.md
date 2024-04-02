@@ -4,7 +4,7 @@
 - Please verify that the model number and format match the product you are referencing.
 - Ensure that all components are included in the product package.
 - Check for any damage to the surface and appearance of the product.
-- Before initial operation, connect the included battery and perform a multi-turn initialization.
+- Before initial operation, connect the included Multi-turn Backup Battery and perform a multi-turn initialization.
 
 {% endcapture %}
 <div class="notice--info">{{ inspection | markdownify }}</div>
