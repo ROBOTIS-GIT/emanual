@@ -1,4 +1,3 @@
-{% if page.product_group=='dxl_y_m' %}
 {% assign bus_watchdog= "[Bus Watchdog(8)]" %}
 {% assign torque_enable= "[Torque Enable(512)]" %}
 {% assign goal_pwm= "[Goal PWM(524)]" %}
@@ -6,7 +5,6 @@
 {% assign goal_velocity= "[Goal Velocity(528)]" %}
 {% assign goal_position= "[Goal Position(532)]" %}
 {% assign operating_mode= "[Operating Mode(33)]" %}
-{% endif %}
 
 The {{ bus_watchdog }} serves as a fail-safe mechanism to halt the device in case communication between the controller and the device is interrupted.
 When {{ torque_enable }} is '1' (Torque is ON), the {{ bus_watchdog }} feature monitors the interval of communication between the controller and the device. If the measured communication interval exceeds the configured {{ bus_watchdog }} timer, the DYNAMIXEL will stop moving to ensure safety.  

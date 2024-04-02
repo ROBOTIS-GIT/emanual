@@ -1,6 +1,4 @@
-{% if page.product_group=='dxl_y_m' %}
 {% assign pwm_limit= "[PWM Limit(64)]" %}
-{% endif %}
 
 Goal PWM is used as an upper limiting value for the output PWM of the motor in all control modes. Supplied Goal PWM values cannot exceed the configured {{ pwm_limit }}
 

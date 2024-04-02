@@ -1,7 +1,5 @@
-{% if page.product_group=='dxl_y_m' %}
 {% assign secondary_id= "[Secondary ID(10)]" %}
 {% assign id= "[ID(7)]" %}
-{% endif %}
 
 The {{ secondary_id }} is another value that can be used to identify devices on the DYNAMIXEL network, similar to {{ id }}.  
 There are several important differences between {{ id }} and {{ secondary_id }}:

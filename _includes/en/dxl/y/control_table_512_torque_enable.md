@@ -1,7 +1,5 @@
-{% if page.product_group=='dxl_y_m' %}
 {% assign safe_stop_time= "[Safe Stop Time(104)]" %}
 {% assign overexcitation_time= "[Overexcitation Time(112)]" %}
-{% endif %}
 
 Controls Torque ON/OFF state. Setting the value to '1' enables Torque state and prevents writing data in the EEPROM area. If Torque cannot be enabled, the Result Fail bit in the returned status packet will be set to '1'.
 

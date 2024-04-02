@@ -1,7 +1,5 @@
-{% if page.product_group=='dxl_y_m' %}
 {% assign safe_stop_time= "[Safe Stop Time(104)]" %}
 {% assign overexcitation_time= "[Overexcitation Time(112)]" %}
-{% endif %}
 
 Timing Chart for the {{ safe_stop_time }} ~ {{ overexcitation_time }} features.
 

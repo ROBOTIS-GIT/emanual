@@ -1,8 +1,6 @@
-{% if page.product_group=='dxl_y_m' %}
 {% assign moving_status= "[Moving Status(541)]" %}
 {% assign goal_position= "[Goal Position(532)]" %}
 {% assign present_position= "[Present Position(552)]" %}
-{% endif %}
 The threshold for determining the In-Position Bit of {{ moving_status }}. If the difference between the {{ goal_position }} and {{ present_position }} is smaller than this value, the In-Position Bit of the {{ moving_status }} register will be set to '1'. 
 
 |   Unit    |      Range        |

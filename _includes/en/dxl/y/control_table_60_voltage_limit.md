@@ -1,6 +1,4 @@
-{% if page.product_group=='dxl_y_m' %}
 {% assign present_input_voltage= "[Present Input Voltage(568)]" %}
-{% endif %}
 
 Min/Max Voltage Limit is used to configure the upper and lower limits of the input voltage.  
 If the {{ present_input_voltage }} voltage exits the range between Max Voltage Limit or Min Voltage Limit, an input voltage error will be triggered. In such cases, the values in the control table are changed as shown in the table below, and the device comes to a stop. Since an error has occurred in the device, the next Status Packet transmitted will include an Alert Bit (0x80) in the Error field.

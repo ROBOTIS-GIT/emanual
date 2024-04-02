@@ -1,7 +1,5 @@
-{% if page.product_group=='dxl_y_m' %}
 {% assign min_position_limit= "[Min Position Limit(84)]" %}
 {% assign max_position_limit= "[Max Position Limit(76)]" %}
-{% endif %}
 
 The Goal Position is used to specify the target position in position control mode. The Goal Position is limited by the configured {{ min_position_limit }} and {{ max_position_limit }}.
 

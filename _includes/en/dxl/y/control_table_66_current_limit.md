@@ -1,6 +1,4 @@
-{% if page.product_group=='dxl_y_m' %}
 {% assign goal_current= "[Goal Current(526)]" %}
-{% endif %}
 
 Current Limit is used to set the maximum output current in current controlled operating modes. The {{ goal_current }} cannot be set to a value greater than the Current Limit. If a value greater than this limit is set, returned status packets will include a Data Limit Error in the Error field.
 

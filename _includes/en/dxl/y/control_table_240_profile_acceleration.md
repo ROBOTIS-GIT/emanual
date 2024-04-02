@@ -1,6 +1,4 @@
-{% if page.product_group=='dxl_y_m' %}
 {% assign drive_mode= "[Drive Mode(32)]" %}
-{% endif %}
 
 If a velocity-acceleration-based profile is selected as the {{ drive_mode }}, the Profile Acceleration and Profile Velocity will be used to generate and limit movement trajectories.
 

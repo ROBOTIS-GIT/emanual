@@ -1,11 +1,9 @@
-{% if page.product_group=='dxl_y_m' %}
 {% assign error_code= "[Error Code(153)]" %}
 {% assign torque_enable= "[Torque Enable(512)]" %}
 {% assign goal_pwm= "[Goal PWM(524)]" %}
 {% assign goal_current= "[Goal Current(526)]" %}
 {% assign goal_velocity= "[Goal Velocity(528)]" %}
 {% assign goal_position= "[Goal Position(532)]" %}
-{% endif %}
 
 Controller State allows the monitoring of the current activity state of the internal motor controller.
 
