@@ -11,7 +11,7 @@
 | Encoder Specifications         | {{ site.data.dxl_y_info[page.ref].encoderspec }}          |
 | Gear Ratio                     | {{ site.data.dxl_y_info[page.ref].gearratio }}            |
 | Backlash                       | {{ site.data.dxl_y_info[page.ref].backlash }}             |
-| Radial Load                    | {{ site.data.dxl_y_info[page.ref].radialload }}           |
+| Radial Load                    | {{ site.data.dxl_y_info[page.ref].radialload_en }}        |
 | No Load Speed                  | {{ site.data.dxl_y_info[page.ref].noloadspeed }}          |
 | Continuous Speed               | {{ site.data.dxl_y_info[page.ref].contspeed }}            |
 | Continuous Torque              | {{ site.data.dxl_y_info[page.ref].conttorque }}           |

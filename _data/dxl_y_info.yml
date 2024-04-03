@@ -30,8 +30,8 @@ ym070-210-m001-rh:
   encoderspec:        *encoderspec
   gearratio:          "-"
   backlash:           "-"
-  radialload:         "42 [N] (출력부 베어링 참조)"
-  radialload_en:      "42 [N] (see the output bearing section)"
+  radialload:         "42 [N] [(출력부 베어링 참조)](#출력-베어링)"
+  radialload_en:      "42 [N] [(see the output bearing section)](#output-bearing)"
   noloadspeed:        "5,675 [rev/min]"
   contspeed:          "4,664 [rev/min]"
   conttorque:         "0.32 [N.m]"
@@ -60,8 +60,8 @@ ym070-210-r051-rh:
   encoderspec:        *encoderspec
   gearratio:          "51:1"
   backlash:           *backlash
-  radialload:         "1,240 [N] (출력부 베어링 참조)"
-  radialload_en:      "1,240 [N] (see the output bearing section)"
+  radialload:         "1,240 [N] [(출력부 베어링 참조)](#출력-베어링)"
+  radialload_en:      "1,240 [N] [(see the output bearing section)](#output-bearing)"
   noloadspeed:        "111.3 [rev/min]"
   contspeed:          "39.2 [rev/min]"
   conttorque:         "8.2 [N.m]"
@@ -90,8 +90,8 @@ ym070-210-r099-rh:
   encoderspec:        *encoderspec
   gearratio:          "99:1"
   backlash:           *backlash
-  radialload:         "1,520 [N] (출력부 베어링 참조)"
-  radialload_en:      "1,520 [N] (see the output bearing section)"
+  radialload:         "1,520 [N] [(출력부 베어링 참조)](#출력-베어링)"
+  radialload_en:      "1,520 [N] [(see the output bearing section)](#output-bearing)"
   noloadspeed:        "57.3 [rev/min]"
   contspeed:          "20.2 [rev/min]"
   conttorque:         "14.6 [N.m]"
@@ -120,8 +120,8 @@ ym080-230-m001-rh:
   encoderspec:        *encoderspec
   gearratio:          "-"
   backlash:           "-"
-  radialload:         "52 [N] (출력부 베어링 참조)"
-  radialload_en:      "52 [N] (see the output bearing section)"
+  radialload:         "52 [N] [(출력부 베어링 참조)](#출력-베어링)"
+  radialload_en:      "52 [N] [(see the output bearing section)](#output-bearing)"
   noloadspeed:        "3,190 [rev/min]"
   contspeed:          "2,597 [rev/min]"
   conttorque:         "0.62 [N.m]"
@@ -150,8 +150,8 @@ ym080-230-r051-rh:
   encoderspec:        *encoderspec
   gearratio:          "51:1"
   backlash:           *backlash
-  radialload:         "1,570 [N] (see the output bearing section)"
-  radialload_en:      "1,570 [N] (출력부 베어링 참조)"
+  radialload:         "1,570 [N] [(출력부 베어링 참조)](#출력-베어링)"
+  radialload_en:      "1,570 [N] [(see the output bearing section)](#output-bearing)"
   noloadspeed:        "62.5 [rev/min]"
   contspeed:          "39.2 [rev/min]"
   conttorque:         "15.8 [N.m]"
@@ -180,8 +180,8 @@ ym080-230-r099-rh:
   encoderspec:        *encoderspec
   gearratio:          "99:1"
   backlash:           *backlash
-  radialload:         "1,920 [N] (출력부 베어링 참조)"
-  radialload_en:      "1,920 [N] (see the output bearing section)"
+  radialload:         "1,920 [N] [(출력부 베어링 참조)](#출력-베어링)"
+  radialload_en:      "1,920 [N] [(see the output bearing section)](#output-bearing)"
   noloadspeed:        "32.2 [rev/min]"
   contspeed:          "20.2 [rev/min]"
   conttorque:         "26.0 [N.m]"
