@@ -1,6 +1,6 @@
 {% if page.product_group== 'xl330' %}
 {% capture x330_ttl %}  
-**NOTE**: Though the communication bus of XL330 series is 3.3 V TTL logic level unlike other DYNAMIXELs, the XL330 series can be also compatible with 5V TTL logic level.
+**NOTE**: Though the communication bus of XL330 series has a 3.3 V TTL logic level unlike other DYNAMIXELs, the XL330 is tolerant of a with a 5V TTL logic level.
 {% endcapture %}
 <div class="notice">{{ x330_ttl | markdownify }}</div>
 {% endif %}
@@ -10,11 +10,11 @@
 **DANGER**  
 (May cause serious injury or death)
 
-- {% if page.product_group=='dxl_xw540' or page.product_group=='dxl_xw430' %} Never place flammables near the product. {% else %} Never place items containing water, flammables, and solvents near product. {% endif %}
+- {% if page.product_group=='dxl_xw540' or page.product_group=='dxl_xw430' %} Never place flammables near the product. {% else %} Never place items containing water, flammables, or solvents near the product. {% endif %}
 - Never place fingers, arms, toes, and other body parts near product during operation.
-- Cut power off if product emits strange odors or smoke.
+- Cut the power off if the product begins to emit strange odors or smoke.
 - Keep product out of reach of children.
-- Check the power's polarity before wiring.
+- Check input polarity before installing wiring or cables.
 {% endcapture %}
 <div class="notice--danger">{{ dxl_danger | markdownify }}</div>
 
@@ -39,8 +39,8 @@
 ![](/assets/images/icon_warning.png)  
 **CAUTION**  
 (May cause injury or damage to product)
-{% if page.product_group=='dxl_xw540' or page.product_group=='dxl_xw430' %} - Comply with the operating environment. (Depth 1 m, 24 hr in normal fresh water) {% elsif page.product_group=='opencm904' or page.product_group=='ln-101' or page.product_group=='u2d2' or page.product_group=='u2d2_power_hub' or page.product_group=='dynamixel_shield' or page.product_group=='cm-50' or page.product_group=='openrb-150' or page.product_group=='opencm485exp' %} {% else %} - Comply with the operating environment such as voltage and temperature. {% endif %}
-- Do not insert sharp blades nor pins during product operation.
+{% if page.product_group=='dxl_xw540' or page.product_group=='dxl_xw430' %} - Comply with the operating environment. (Depth 1 m, 24 hr in normal fresh water) {% elsif page.product_group=='opencm904' or page.product_group=='ln-101' or page.product_group=='u2d2' or page.product_group=='u2d2_power_hub' or page.product_group=='dynamixel_shield' or page.product_group=='cm-50' or page.product_group=='openrb-150' or page.product_group=='opencm485exp' %} {% else %} - Always comply with operating environment specifications including voltage, current, and temperature. {% endif %}
+- Do not insert blades or other sharp objects during product operation.
 {% endcapture %}
 <div class="notice--warning">{{ dxl_caution | markdownify }}</div>
 
@@ -48,14 +48,14 @@
 ![](/assets/images/icon_warning.png)  
 **ATTENTION**  
 (May cause injury or damage to product)
-- Do not disassemble or modify product.
-- Do not drop or apply strong shock to product.
+- Do not disassemble or modify the product.
+- Do not drop or apply strong impacts to the product.
 {% if page.product_group== 'xl330' or page.ref == 'xc330-m181' or page.ref == 'xc330-m288' %}
-- To ensure a stable power supply, it is recommended using a ROBOTIS controller, or [LB-041 battery](http://en.robotis.com/shop_en/item.php?it_id=903-0220-001).
-- Do not connect or disconnect DYNAMIXEL when power is being supplied.
+- To ensure a stable power supply, it is recommended to use a ROBOTIS controller, or [LB-041 battery](http://en.robotis.com/shop_en/item.php?it_id=903-0220-001).
+- Do not connect or disconnect DYNAMIXEL cables while power is being supplied.
 {% elsif page.ref == 'xc330-t288' or page.ref == 'xc330-t181' %}
-- To ensure a stable power supply, it is recommended using a ROBOTIS controller, or [LB-020 battery](http://en.robotis.com/shop_en/item.php?it_id=903-0277-000).
-- Do not connect or disconnect DYNAMIXEL when power is being supplied.
+- To ensure a stable power supply, it is recommended to use a ROBOTIS controller, or [LB-020 battery](http://en.robotis.com/shop_en/item.php?it_id=903-0277-000).
+- Do not connect or disconnect DYNAMIXEL cables while power is being supplied.
 {% else %}
 {% endif %}
 {% endcapture %}

@@ -1,4 +1,3 @@
-
 ## [Output Bearing Specifications (L10=7,000hours@rated output speed)](#output-bearing-specifications-l107000hoursrated-output-speed)
 
 | Model             | Basic dynamic load rating, C [N] |  Offset from flange, df [m] | Roller pitch circle diameter, Dp [m] | <sup>1</sup>Allowable Dynamic equivalent radial load, Pc_max [N] | <sup>2</sup>Allowable moment load, M_max [N.m] |

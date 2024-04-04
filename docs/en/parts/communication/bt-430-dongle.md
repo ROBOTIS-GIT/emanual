@@ -19,20 +19,20 @@ sidebar:
 
 > BT-430 Dongle
 
-The `BT-430 Dongle` is a component that features a USB 2.0 interface and Bluetooth 5 Low Energy standard communication interface (master function) and converts between these two interfaces. It can perform the same functions as the `BT-410 Dongle`.
+The `BT-430 Dongle` a USB 2.0 interface and Bluetooth 5 Low Energy standard communication interface that provides USB to Bluetooth functionality for robot control, as the updated replacement to the `BT-410 Dongle`.
 
-In other words, by attaching the `BT-430 Dongle` to a PC and pairing it with a BLE-supported controller (1 piece) or `BT-410 SLAVE module` (1 piece), data can be exchanged between the PC and `BT-410 SLAVE module`. (Refer to the respective component's description page for how to attach each component.)
+In other words, by attaching the `BT-430 Dongle` to a PC and pairing it with a BLE-supported controller or `BT-410 follower module`, data can be exchanged between the PC and `BT-410 follower module`. (Refer to the respective component's description page for how to attach each component.)
 
 **1. Controllers and Wireless Modules Compatible with BT-430 Dongle**
   - RB-100
   - [CM-151]
   - [RB-86] / [RB-88]
-  - [BT-410 SLAVE module]
+  - [BT-410 Follower Module]
 
 **2. Wireless Modules Not Compatible with BT-430 Dongle**
-  - [BT-410 MASTER module]
-  - BT-210 MASTER module
-  - BT-210 SLAVE module
+  - [BT-410 Leader Module]
+  - BT-210 Leader Module
+  - BT-210 Follower Module
   - BT-100/110A
   - ZIG-100/110A
 
@@ -56,22 +56,22 @@ In other words, by attaching the `BT-430 Dongle` to a PC and pairing it with a B
 | Antenna | PCB Pattern Antenna |
 | Interface | USB 2.0 Full Speed |
 | Sensitivity | -81dBm (Typical) |
-| Transmit Power | -6 ~ 4dBm (Class 2) |
+| Transmission Power | -6 ~ 4dBm (Class 2) |
 
 # [Compatibility](#compatibility)
 
-Work possible with combinations of BT-430 Dongle and BLE-supported controllers or BT-410 SLAVE module
+Work possible with combinations of BT-430 Dongle and BLE-supported controllers or BT-410 follower module
 
 |    Product    | R-Block | R-Motion | FW Recovery/Update<br />R+ Manager 2.0   | Entry | [R+ Scratch] | Task 2.0<br />Download  | R+ Motion 2.0<br />Download |
 |:-------------:|:-------:|:--------:|:----------------------------------------:|:-----:|:------------:|:-----------------------:|:---------------------------:|
-|     RB-100    |    O    |    O     |                    X                     |   O   |       X      |            X            |             X               |
-|    [CM-151]   |    O    |    X     |                    O                     |   O   |       O      |            O            |             O               |
-|[RB-86] / [RB-88] | O    |    X     |                    X                     |   O   |       X      |            X            |             X               |
-|     CM-50     |    X    |    X     |                    O                     |   -   |       O      |            O            |             -               |
-|    [CM-150]   |    X    |    X     |                    O                     |   -   |       O      |            O            |             -               |
-|    [CM-200]   |    X    |    X     |                    O                     |   -   |       O      |            O            |             O               |
-|    [CM-530]   |    X    |    X     |                    O                     |   -   |       -      |            O            |             O               |
-| [OpenCM9.04]  |    X    |    X     |                    O                     |   -   |       -      |            O            |             O               |
+|     RB-100    |    ✓    |    ✓     |                    X                     |   ✓   |       X      |            X            |             X               |
+|    [CM-151]   |    ✓    |    X     |                    ✓                     |   ✓   |       ✓      |            ✓            |             ✓               |
+|[RB-86] / [RB-88] | ✓    |    X     |                    X                     |   ✓   |       X      |            X            |             X               |
+|     CM-50     |    X    |    X     |                    ✓                     |   X   |       ✓      |            ✓            |             X               |
+|    [CM-150]   |    X    |    X     |                    ✓                     |   X   |       ✓      |            ✓            |             X               |
+|    [CM-200]   |    X    |    X     |                    ✓                     |   X   |       ✓      |            ✓            |             ✓               |
+|    [CM-530]   |    X    |    X     |                    ✓                     |   X   |       X      |            ✓            |             ✓               |
+| [OpenCM9.04]  |    X    |    X     |                    ✓                     |   X   |       X      |            ✓            |             ✓               |
 
 
 # [Communication Modes](#communication-modes)
@@ -80,13 +80,13 @@ The BT-430 Dongle can establish reliable 1:1 communication through pairing.
 
 ## [1:1 Communication](#11-communication)
 
-- When connected to a powered-on PC's USB port, the blue LED blinks, and when it successfully pairs with a BLE-supported controller or BT-410 SLAVE module, the blue LED remains lit.
-- **Automatic Pairing Method**: When the blue LED of BT-430 Dongle blinks (not paired), if you bring the BT-410 SLAVE module close (within 10cm), it will automatically pair. (Afterward, pairing is possible even from a longer distance.)
+- When connected to a powered-on PC's USB port, the blue LED blinks, and when it successfully pairs with a BLE-supported controller or BT-410 follower module, the blue LED remains lit.
+- **Automatic Pairing Method**: When the blue LED of BT-430 Dongle blinks (not paired), if you bring the BT-410 follower module close (within 10cm), it will automatically pair. (Afterward, pairing is possible even from a longer distance.)
 
 # [BT-430 Dongle Setting](bt-430-dongle-setting)
 
 - Resettable System
-- Configurable SLAVE Address
+- Configurable follower Address
 - Enable/Disable Auto-Pairing Feature
 
 ## [Setup](#setup)
@@ -105,7 +105,7 @@ The BT-430 Dongle can establish reliable 1:1 communication through pairing.
 
     ![img](/assets/images/parts/communication/bt-410_dongle_04.png)
 
-3. Serial Port Configuration Window.
+3. Enter the Serial Port Configuration Window.
 
     ![img](/assets/images/parts/communication/bt-410_dongle_05.png)
 
@@ -113,7 +113,7 @@ The BT-430 Dongle can establish reliable 1:1 communication through pairing.
 
     ![img](/assets/images/parts/communication/bt-410_dongle_06.png)
 
-5. Terminal Configuration Window.
+5. Enter the Terminal Configuration Window.
 
     ![img](/assets/images/parts/communication/bt-410_dongle_07.png)
 
@@ -121,39 +121,37 @@ The BT-430 Dongle can establish reliable 1:1 communication through pairing.
 
     ![img](/assets/images/parts/communication/bt-410_dongle_08.png)
 
-7. Enter `!` as shown
-
-    below in the terminal, and when OK appears, it enters command mode. Here, if OK continues to appear when entering AT, it means that the BT-430 Dongle has successfully connected, and you can configure it.
+7. Enter `!` as shown below in the terminal to enter command mode. Here, if OK continues to appear after entering `AT`, it means that the BT-430 Dongle has successfully connected, and you can now configure it.
 
     ![img](/assets/images/parts/communication/bt-410_dongle_09.png)
 
 
-8. This is the device search feature. Enter AT+BTINQ=DBE7DF000001 and press Enter, and devices with MAC addresses greater than or equal to DBE7DF000001 among nearby BLE devices will be searched.
+8. Enter AT+BTINQ=DBE7DF000001 and press Enter to search for devices with MAC addresses greater than or equal to DBE7DF000001 among nearby BLE devices.
 
     ![img](/assets/images/parts/communication/bt-410_dongle_10.png)
 
-9. Device connection is done by searching for nearby devices with the AT+BTINQ command, and then pairing with the displayed Bluetooth address (12 digits in hexadecimal) without dashes. For example, if you enter ATDDBE7DF000001 and press Enter without dashes, it will attempt to connect.
+9. Device connection is done by searching for nearby devices with the AT+BTINQ command, and then pairing with the displayed Bluetooth address (12 digits in hexadecimal) without dashes. For example, if you enter `ATDDBE7DF000001` and press Enter, it will attempt to connect to the listed BLE device.
 
 
 # [AT Commands](#at-commands)
 
 You can change the settings of the BT-430 Dongle using AT commands in the terminal as follows.
 
-1. Restart the system.  
-  Enter ATZ and press Enter to restart the BT-430 Dongle. If you have made any changes to the settings, it will restart in the changed mode.
+1. Restart the system: 
+  Enter `ATZ` and press Enter to restart the BT-430 Dongle. If you have made any changes to the settings, they will persist across restarts.
 
     ![img](/assets/images/parts/communication/bt-410_dongle_11.png)
 
-2. Device Discovery  
-  Enter AT+BTINQ as shown below and press Enter to search for devices with MAC addresses greater than or equal to DBE7DF000001 among nearby BLE devices.
+2. Device Discovery: 
+  Enter `AT+BTINQ=DBE7DF000001` as shown below and press Enter to search for devices with MAC addresses greater than or equal to DBE7DF000001 among nearby BLE devices.
 
     ![img](/assets/images/parts/communication/bt-410_dongle_12.png)
 
-3. Automatic Pairing  
-  Unpaired BT-430 SLAVE modules will automatically pair when brought close to the BT-430 Dongle (within about 10cm).
+3. Automatic Pairing:
+  Unpaired BT-430 follower modules will automatically pair when brought close to the BT-430 Dongle (within about 10cm).
 
-4. Disable Automatic Pairing  
-  Enter AT+BTAUTOPAIR=0 and press ENTER.
+4. Disable Automatic Pairing:
+  Enter `AT+BTAUTOPAIR=0` and press ENTER.
 
     ![img](/assets/images/parts/communication/bt-410_dongle_13.png)
 
@@ -161,8 +159,8 @@ You can change the settings of the BT-430 Dongle using AT commands in the termin
 
     ![img](/assets/images/parts/communication/bt-410_dongle_14.png)
 
-5. Enable Automatic Pairing  
-  Enter AT+BTAUTOPAIR=1 and press ENTER.
+5. Enable Automatic Pairing:  
+  Enter `AT+BTAUTOPAIR=1` and press ENTER.
 
     ![img](/assets/images/parts/communication/bt-410_dongle_15.png)
 
@@ -171,8 +169,6 @@ You can change the settings of the BT-430 Dongle using AT commands in the termin
     ![img](/assets/images/parts/communication/bt-410_dongle_16.png)
 
 # [Check Driver](#check-driver)
-How to check whether the BT-430 Dongle driver is installed correctly is as follows.
-
 To check if the BT-430 Dongle driver is correctly installed on your PC, follow these steps:
 
 1. Connect the BT-430 Dongle to a USB port on your PC.
@@ -192,7 +188,7 @@ To check if the BT-430 Dongle driver is correctly installed on your PC, follow t
 **Note**: If you install RoboPlus, the driver for the BT-430 Dongle will be installed automatically. If you choose not to install RoboPlus and need to install the driver manually, or if the driver did not install correctly when RoboPlus was installed, follow these steps.
 {: .notice}
 
-1. Connect the device to your PC. If the driver is not installed when checked in Device Manager, it will be displayed as an "Unknown Device."
+1. Connect the device to your PC. If the driver is not installed the BT-430 will be displayed as an "Unknown Device" when checked in Device Manager. 
 
     ![img](/assets/images/parts/communication/bt-430_dongle_07.jpg)
 
@@ -202,7 +198,7 @@ To check if the BT-430 Dongle driver is correctly installed on your PC, follow t
 
     ![img](/assets/images/parts/communication/bt-430_dongle_08.jpg)
 
-3. Start the driver installation for the USB device in Device Manager.
+3. Start the driver installation for the USB device through the Device Manager.
 
     ![img](/assets/images/parts/communication/bt-430_dongle_09.jpg)
 
@@ -232,8 +228,8 @@ Please inquire us for information regarding unlisted certifications.
 [RB-88]: /docs/en/parts/controller/rb-88/
 [CM-151]: /docs/en/parts/controller/cm-151/
 [CM-150]: /docs/en/parts/controller/cm-150/
-[BT-410 SLAVE module]: /docs/en/parts/communication/bt-410/
-[BT-410 MASTER module]: /docs/en/parts/communication/bt-410/
+[BT-410 follower module]: /docs/en/parts/communication/bt-410/
+[BT-410 Leader module]: /docs/en/parts/communication/bt-410/
 [CM-200]: /docs/en/parts/controller/cm-200/
 [CM-530]: /docs/en/parts/controller/cm-530/
 [OpenCM9.04]: /docs/en/parts/controller/opencm904/
