@@ -7,7 +7,7 @@ This represents the code for the issue occurring in the device. The list of erro
 | 2 (0x02)  | Low Voltage Error            | N         | -     | Y           | Device supply voltage exceeds the [Min Voltage Limit(62)]                  |
 | 3 (0x03)  | Inverter Overheating Error   | N         | -     | Y           | The inverter temperature has exceeded the [Inverter Temperature Limit(56)] |
 | 4 (0x04)  | Motor Overheating Error      | N         | -     | Y           | The motor temperature has exceeded the [Motor Temperature Limit(57)].      |
-| 5 (0x05)  | Overload Error               | N         | -     | Y           | Operating current exceeding rated current for an extended duration         |
+| 5 (0x05)  | Overload Error               | N         | -     | N           | Operating current exceeding rated current for an extended duration         |
 | 7 (0x07)  | Inverter Error               | N         | -     | N           | An issue has occurred with the inverter                                    |
 | 9 (0x09)  | Battery Warning              | Y         | N     | N           | Low Multi-turn Backup Battery voltage. Replacement recommended             |
 | 10 (0x0A) | Battery Error                | N         | -     | N           | Multi-turn Backup Battery voltage is too low, causing issues               |

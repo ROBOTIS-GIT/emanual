@@ -7,7 +7,7 @@
 | 2 (0x02)  | Low Voltage Error            | N         | -     | Y        | 장치 인가 전압이 [Min Voltage Limit(62)] 범위를 넘음            |
 | 3 (0x03)  | Inverter Overheating Error   | N         | -     | Y        | 인버터의 온도가 [Inverter Temperature Limit(56)]을 넘음        |
 | 4 (0x04)  | Motor Overheating Error      | N         | -     | Y        | 모터의 온도가 [Motor Temperature Limit(57)]을 넘음            |
-| 5 (0x05)  | Overload Error               | N         | -     | Y        | 정격 전류를 초과하는 전류를 장시간 사용                          |
+| 5 (0x05)  | Overload Error               | N         | -     | N        | 정격 전류를 초과하는 전류를 장시간 사용                          |
 | 7 (0x07)  | Inverter Error               | N         | -     | N        | 인버터에 문제가 발생함                                         |
 | 9 (0x09)  | Battery Warning              | Y         | N     | N        | Multi-turn 배터리 전압이 낮음. 교체 권장                        |
 | 10 (0x0A) | Battery Error                | N         | -     | N        | Multi-turn 배터리 전압이 너무 낮아 문제 발생                    |
