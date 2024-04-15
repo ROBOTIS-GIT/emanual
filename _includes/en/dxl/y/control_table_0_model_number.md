@@ -1,1 +1,1 @@
-The DYNAMIXEL model number.
+The model number of the DYNAMIXEL actuator.

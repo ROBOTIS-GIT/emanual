@@ -1,4 +1,8 @@
-The threshold value for determining the Following Error Bit of [Moving Status(541)]. If the difference between [Position Trajectory(560)] and [Present Position(552)] is greater than this value, the Following Error Bit of the [Moving Status(541)] register will be set to '1'.
+{% assign moving_status= "[Moving Status(541)]" %}
+{% assign position_trajectory= "[Position Trajectory(560)]" %}
+{% assign present_position= "[Present Position(552)]" %}
+
+The threshold value for determining the Following Error Bit of {{ moving_status }}. If the difference between {{ position_trajectory }} and {{ present_position }} is greater than this value, the Following Error Bit of the [Moving Status(541)] register will be set to '1'.
 
 |   Unit    |      Range        |
 |:---------:|:-----------------:|

@@ -1,4 +1,4 @@
-This is the control gain value for the position controller. The value is set in the [Position Controller](#position-control-mode) block within the block diagram of the Operating Mode (33) item.
+These are the control gain values for the position controller. These values configure the [Position Controller](#position-control-mode) block within the block diagram of the [Operating Mode(33)].
 
 |       item                |  Gain Notation    |    Range          | Description                |
 |:-------------------------:|:-----------------:|:-----------------:|:---------------------------|

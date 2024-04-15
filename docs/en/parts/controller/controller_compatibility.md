@@ -15,14 +15,14 @@ sidebar:
 
 | Baudrate(bps) | [CM-5] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04] | [OpenCR] | [OpenRB-150] |
 |:-------------:|:------:|:--------:|:--------:|:--------:|:--------:|:--------:|:------------:|:--------:|:------------:|
-|     9600      |   O    |    O     |    O     |    O     |    O     |    O     |      O       |    O     |      O       |
-|     57600     |   O    |    O     |    O     |    O     |    O     |    O     |      O       |    O     |      O       |
-|    115200     |   O    |    O     |    O     |    O     |    O     |    O     |      O       |    O     |      O       |
-|      1M       |   O    |    O     |    O     |    O     |    O     |    O     |      O       |    O     |      O       |
-|      2M       |   X    |    X     |    X     |    O     |    X     |    X     |      X       |    O     |      X       |
-|      3M       |   X    |    X     |    X     |    O     |    X     |    X     |      X       |    O     |      X       |
-|      4M       |   X    |    X     |    X     |    X     |    X     |    X     |      X       |    O     |      X       |
-|     4.5M      |   X    |    X     |    X     |    X     |    X     |    X     |      X       |    O     |      X       |
+|     9600      |   ✓    |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |      ✓       |    ✓     |      ✓       |
+|     57600     |   ✓    |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |      ✓       |    ✓     |      ✓       |
+|    115200     |   ✓    |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |      ✓       |    ✓     |      ✓       |
+|      1M       |   ✓    |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |      ✓       |    ✓     |      ✓       |
+|      2M       |   X    |    X     |    X     |    ✓     |    X     |    X     |      X       |    ✓     |      X       |
+|      3M       |   X    |    X     |    X     |    ✓     |    X     |    X     |      X       |    ✓     |      X       |
+|      4M       |   X    |    X     |    X     |    X     |    X     |    X     |      X       |    ✓     |      X       |
+|     4.5M      |   X    |    X     |    X     |    X     |    X     |    X     |      X       |    ✓     |      X       |
 
 
 # [Compatibility Table](#compatibility-table)
@@ -31,20 +31,20 @@ sidebar:
 
 |      Model       | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-151] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[OpenCM 485 EXP]) | [OpenCM7.0] | [OpenCR] | [OpenRB-150] |
 |:----------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:-----------------------------------:|:-----------:|:--------:|:------------:|
-|    AX Series     |   O    |    X    |    X     |    X     |    X     |    X     |    O     |    O     |    X     |    O     |    O     |                X(O)                 |      X      |    O     |      O       |
-|    DX Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    O     |                X(O)                 |      X      |    O     |      X       |
-|    RX Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    O     |                X(O)                 |      X      |    O     |      X       |
-|    EX Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    O     |                X(O)                 |      X      |    O     |      X       |
-|  MX Series(TTL)  |   O    |    X    |    X     |    X     |    X     |    X     |    O     |    O     |    X     |    O     |    O     |                X(O)                 |      X      |    O     |      O       |
-| MX Series(RS485) |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    O     |                X(O)                 |      X      |    O     |O([Comm Bridge])|
-|      XL-320      |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    O     |                O(X)                 |      X      |    X     |      O       |
-|    XL Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |                X(O)                 |      X      |    O     |      O       |
-|    XC Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |                X(O)                 |      X      |    O     |      O       |
-|    XM Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |                X(O)                 |      X      |    O     |      O       |
-|    XH Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |                X(O)                 |      X      |    O     |      O       |
-|    XD Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |                X(O)                 |      X      |    O     |O([Comm Bridge])|
-|    XW Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |                X(O)                 |      X      |    O     |O([Comm Bridge])|
-|    PRO Series    |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    O     |    X     |                X(O)                 |      X      |    O     |O([Comm Bridge])|
+|    AX Series     |   ✓    |    X    |    X     |    X     |    X     |    X     |    ✓     |    ✓     |    X     |    ✓     |    ✓     |                X(O)                 |      X      |    ✓     |      ✓       |
+|    DX Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    ✓     |    ✓     |                X(O)                 |      X      |    ✓     |      X       |
+|    RX Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    ✓     |    ✓     |                X(O)                 |      X      |    ✓     |      X       |
+|    EX Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    ✓     |    ✓     |                X(O)                 |      X      |    ✓     |      X       |
+|  MX Series(TTL)  |   ✓    |    X    |    X     |    X     |    X     |    X     |    ✓     |    ✓     |    X     |    ✓     |    ✓     |                X(O)                 |      X      |    ✓     |      ✓       |
+| MX Series(RS485) |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    ✓     |    ✓     |                X(O)                 |      X      |    ✓     |O([Comm Bridge])|
+|      XL-320      |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    ✓     |                O(X)                 |      X      |    X     |      ✓       |
+|    XL Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    ✓     |    X     |    X     |                X(O)                 |      X      |    ✓     |      ✓       |
+|    XC Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    ✓     |    X     |    X     |                X(O)                 |      X      |    ✓     |      ✓       |
+|    XM Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    ✓     |    X     |    X     |                X(O)                 |      X      |    ✓     |      ✓       |
+|    XH Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    ✓     |    X     |    X     |                X(O)                 |      X      |    ✓     |      ✓       |
+|    XD Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    ✓     |    X     |    X     |                X(O)                 |      X      |    ✓     |O([Comm Bridge])|
+|    XW Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    ✓     |    X     |    X     |                X(O)                 |      X      |    ✓     |O([Comm Bridge])|
+|    PRO Series    |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    ✓     |    X     |                X(O)                 |      X      |    ✓     |O([Comm Bridge])|
 
 **NOTE**: OpenCM9.04 with OpenCM 485 EXP can use all types of DYNAMIXEL.
 {: .notice}
@@ -54,40 +54,40 @@ sidebar:
 
 |                  Model                   | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-151] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[OpenCM 485 EXP]) | [OpenCM7.0] | [OpenCR] |
 |:----------------------------------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:-----------------------------------:|:-----------:|:--------:|
-|           Bioloid Serial Cable           |   O    |    X    |    X     |    X     |    X     |    X     |    O     |    X     |    X     |    X     |    X     |                  X                  |      X      |    X     |
-|                 Mini USB                 |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    O     |    X     |    X     |    X     |                  X                  |      X      |    X     |
-|               Micro USB(B)               |   X    |    X    |    X     |    O     |    O     |    X     |    X     |    X     |    O     |    X     |    O     |                  O                  |      O      |    O     |
-|                  LN-101                  |   X    |    X    |    O     |    O     |    O     |    O     |    X     |    X     |    O     |    O     |    O     |                  O                  |      O      |    O     |
-|                 IRSS-10                  |   X    |    X    |    O     |    O     |    O     |    O     |    O     |    O     |    O     |    O     |    O     |                  O                  |      O      |    O     |
-|           TS-10(Touch Sensor)            |   X    |    X    |    O     |    O     |    O     |    O     |    O     |    O     |    O     |    O     |    O     |                  O                  |      O      |    O     |
-|         DMS-80 (Distance Sensor)         |   X    |    X    |    X     |    X     |    X     |    X     |    O     |    O     |    O     |    O     |    O     |                  O                  |      O      |    O     |
-|             IR Array Sensor              |   O    |    X    |    X     |    X     |    X     |    X     |    O     |    O     |    X     |    O     |    X     |                  O                  |      X      |    O     |
-|           GS-12 (Gyro Sensor)            |   X    |    X    |    X     |    X     |    X     |    X     |    O     |    O     |    X     |    O     |    O     |                  O                  |      O      |    O     |
-|           CS-10 (Color Sensor)           |   X    |    X    |    X     |    O     |    O     |    O     |    X     |    O     |    O     |    X     |    O     |                  O                  |      O      |    O     |
-|        MGSS-10 (Magnetic Sensor)         |   X    |    X    |    X     |    O     |    O     |    O     |    X     |    O     |    O     |    X     |    O     |                  O                  |      O      |    O     |
-|          PIR-10 (Motion Sensor)          |   X    |    X    |    X     |    O     |    O     |    O     |    O     |    O     |    O     |    X     |    O     |                  O                  |      O      |    O     |
-|       TPS-10 (Temperature Sensor)        |   X    |    X    |    X     |    O     |    O     |    O     |    O     |    O     |    O     |    X     |    O     |                  O                  |      O      |    O     |
-| TMS-10 (Temperature and Moisture sensor) |   X    |    X    |    X     |    O     |    O     |    O     |    X     |    O     |    O     |    X     |    O     |                  O                  |      O      |    O     |
-|        AX-S1 (Integrated Sensor)         |   O    |    X    |    X     |    X     |    X     |    X     |    O     |    O     |    X     |    O     |    X     |                  O                  |      X      |    O     |
-|           SM-10 (Servo Motor)            |   X    |    X    |    O     |    O     |    O     |    O     |    X     |    O     |    O     |    X     |    O     |                  X                  |      O      |    O     |
-|          GM-10A (Geared Motor)           |   X    |    X    |    O     |    O     |    O     |    O     |    X     |    X     |    X     |    X     |    O     |                  X                  |      O      |    O     |
-|         High Speed Geared Motor          |   X    |    O    |    O     |    O     |    O     |    X     |    X     |    X     |    X     |    X     |    O     |                  X                  |      O      |    O     |
-|          Low Speed Geared Motor          |   X    |    O    |    O     |    O     |    O     |    X     |    X     |    X     |    X     |    X     |    O     |                  X                  |      O      |    O     |
-|            LM-10 (LED Module)            |   X    |    O    |    O     |    O     |    O     |    O     |    X     |    O     |    O     |    X     |    O     |                  O                  |      O      |    O     |
-|                IR Sensor                 |   X    |    X    |    O     |    O     |    O     |    X     |    O     |    O     |    O     |    O     |    X     |                  O                  |      X      |    O     |
-|                 ZIG-100                  |   O    |    O    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  X                  |      X      |    X     |
-|                 ZIG-110A                 |   X    |    O    |    O     |    O     |    O     |    O     |    O     |    O     |    O     |    O     |    O     |                  O                  |      O      |    O     |
-|                 BT-110A                  |   X    |    O    |    O     |    O     |    O     |    O     |    O     |    O     |    O     |    O     |    O     |                  O                  |      O      |    O     |
-|                  BT-210                  |   X    |    O    |    O     |    O     |    O     |    O     |    O     |    O     |    O     |    O     |    O     |                  O                  |      O      |    O     |
-|                  BT-410                  |   X    |    O    |    O     |    O     |    O     |    O     |    O     |    O     |    O     |    O     |    O     |                  O                  |      O      |    O     |
-|      LB-04 Series (Li-ion Battery)       |   X    |    X    |    X     |    O     |    O     |    O     |    X     |    X     |    X     |    X     |    O     |                  X                  |      O      |    X     |
-|                11.1V LiPo                |   X    |    X    |    X     |    X     |    X     |    X     |    O     |    O     |    O     |    O     |    X     |                  O                  |      X      |    O     |
-|                9.6V NiMH                 |   O    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  X                  |      X      |    X     |
-|                 OBB-10A                  |   X    |    X    |    O     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  X                  |      X      |    X     |
-|                 ABB-030                  |   X    |    X    |    X     |    X     |    X     |    O     |    X     |    X     |    X     |    X     |    X     |                  X                  |      X      |    X     |
-|                  LFU-10                  |   X    |    X    |    X     |    X     |    X     |    X     |    O     |    O     |    O     |    O     |    X     |                  O                  |      X      |    O     |
-|                   FU-5                   |   O    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  X                  |      X      |    X     |
-|               User Device                |   X    |    O    |    X     |    O     |    O     |    O     |    O     |    O     |    O     |    O     |    O     |                  O                  |      O      |    O     |
+|           Bioloid Serial Cable           |   ✓    |    X    |    X     |    X     |    X     |    X     |    ✓     |    X     |    X     |    X     |    X     |                  X                  |      X      |    X     |
+|                 Mini USB                 |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    ✓     |    X     |    X     |    X     |                  X                  |      X      |    X     |
+|               Micro USB(B)               |   X    |    X    |    X     |    ✓     |    ✓     |    X     |    X     |    X     |    ✓     |    X     |    ✓     |                  ✓                  |      ✓      |    ✓     |
+|                  LN-101                  |   X    |    X    |    ✓     |    ✓     |    ✓     |    ✓     |    X     |    X     |    ✓     |    ✓     |    ✓     |                  ✓                  |      ✓      |    ✓     |
+|                 IRSS-10                  |   X    |    X    |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |                  ✓                  |      ✓      |    ✓     |
+|           TS-10(Touch Sensor)            |   X    |    X    |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |                  ✓                  |      ✓      |    ✓     |
+|         DMS-80 (Distance Sensor)         |   X    |    X    |    X     |    X     |    X     |    X     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |                  ✓                  |      ✓      |    ✓     |
+|             IR Array Sensor              |   ✓    |    X    |    X     |    X     |    X     |    X     |    ✓     |    ✓     |    X     |    ✓     |    X     |                  ✓                  |      X      |    ✓     |
+|           GS-12 (Gyro Sensor)            |   X    |    X    |    X     |    X     |    X     |    X     |    ✓     |    ✓     |    X     |    ✓     |    ✓     |                  ✓                  |      ✓      |    ✓     |
+|           CS-10 (Color Sensor)           |   X    |    X    |    X     |    ✓     |    ✓     |    ✓     |    X     |    ✓     |    ✓     |    X     |    ✓     |                  ✓                  |      ✓      |    ✓     |
+|        MGSS-10 (Magnetic Sensor)         |   X    |    X    |    X     |    ✓     |    ✓     |    ✓     |    X     |    ✓     |    ✓     |    X     |    ✓     |                  ✓                  |      ✓      |    ✓     |
+|          PIR-10 (Motion Sensor)          |   X    |    X    |    X     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    X     |    ✓     |                  ✓                  |      ✓      |    ✓     |
+|       TPS-10 (Temperature Sensor)        |   X    |    X    |    X     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    X     |    ✓     |                  ✓                  |      ✓      |    ✓     |
+| TMS-10 (Temperature and Moisture sensor) |   X    |    X    |    X     |    ✓     |    ✓     |    ✓     |    X     |    ✓     |    ✓     |    X     |    ✓     |                  ✓                  |      ✓      |    ✓     |
+|        AX-S1 (Integrated Sensor)         |   ✓    |    X    |    X     |    X     |    X     |    X     |    ✓     |    ✓     |    X     |    ✓     |    X     |                  ✓                  |      X      |    ✓     |
+|           SM-10 (Servo Motor)            |   X    |    X    |    ✓     |    ✓     |    ✓     |    ✓     |    X     |    ✓     |    ✓     |    X     |    ✓     |                  X                  |      ✓      |    ✓     |
+|          GM-10A (Geared Motor)           |   X    |    X    |    ✓     |    ✓     |    ✓     |    ✓     |    X     |    X     |    X     |    X     |    ✓     |                  X                  |      ✓      |    ✓     |
+|         High Speed Geared Motor          |   X    |    ✓    |    ✓     |    ✓     |    ✓     |    X     |    X     |    X     |    X     |    X     |    ✓     |                  X                  |      ✓      |    ✓     |
+|          Low Speed Geared Motor          |   X    |    ✓    |    ✓     |    ✓     |    ✓     |    X     |    X     |    X     |    X     |    X     |    ✓     |                  X                  |      ✓      |    ✓     |
+|            LM-10 (LED Module)            |   X    |    ✓    |    ✓     |    ✓     |    ✓     |    ✓     |    X     |    ✓     |    ✓     |    X     |    ✓     |                  ✓                  |      ✓      |    ✓     |
+|                IR Sensor                 |   X    |    X    |    ✓     |    ✓     |    ✓     |    X     |    ✓     |    ✓     |    ✓     |    ✓     |    X     |                  ✓                  |      X      |    ✓     |
+|                 ZIG-100                  |   ✓    |    ✓    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  X                  |      X      |    X     |
+|                 ZIG-110A                 |   X    |    ✓    |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |                  ✓                  |      ✓      |    ✓     |
+|                 BT-110A                  |   X    |    ✓    |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |                  ✓                  |      ✓      |    ✓     |
+|                  BT-210                  |   X    |    ✓    |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |                  ✓                  |      ✓      |    ✓     |
+|                  BT-410                  |   X    |    ✓    |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |                  ✓                  |      ✓      |    ✓     |
+|      LB-04 Series (Li-ion Battery)       |   X    |    X    |    X     |    ✓     |    ✓     |    ✓     |    X     |    X     |    X     |    X     |    ✓     |                  X                  |      ✓      |    X     |
+|                11.1V LiPo                |   X    |    X    |    X     |    X     |    X     |    X     |    ✓     |    ✓     |    ✓     |    ✓     |    X     |                  ✓                  |      X      |    ✓     |
+|                9.6V NiMH                 |   ✓    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  X                  |      X      |    X     |
+|                 OBB-10A                  |   X    |    X    |    ✓     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  X                  |      X      |    X     |
+|                 ABB-030                  |   X    |    X    |    X     |    X     |    X     |    ✓     |    X     |    X     |    X     |    X     |    X     |                  X                  |      X      |    X     |
+|                  LFU-10                  |   X    |    X    |    X     |    X     |    X     |    X     |    ✓     |    ✓     |    ✓     |    ✓     |    X     |                  ✓                  |      X      |    ✓     |
+|                   FU-5                   |   ✓    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  X                  |      X      |    X     |
+|               User Device                |   X    |    ✓    |    X     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |                  ✓                  |      ✓      |    ✓     |
 
 `1` IR Receiver with OpenCM 9.04 is not supported on R+Task
 
@@ -97,9 +97,9 @@ sidebar:
 
 |      Model       | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-151] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[OpenCM 485 EXP]) | [OpenCM7.0] | [OpenCR] |
 |:----------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:-----------------------------------:|:-----------:|:--------:|
-|  [R+ Task 1.0]   |   O    |    X    |    O     |    O     |    x     |    O     |    O     |    O     |    X     |    O     |    X     |                O(X)                 |      X      |    X     |
-| [R+ Manager 1.0] |   O    |    X    |    O     |    O     |    x     |    O     |    O     |    O     |    X     |    O     |    X     |                O(X)                 |      X      |    X     |
-| [R+ Motion  1.0] |   O    |    X    |    X     |    O     |    x     |    O     |    O     |    O     |    X     |    O     |    X     |                O(X)                 |      X      |    X     |
+|  [R+ Task 1.0]   |   ✓    |    X    |    ✓     |    ✓     |    x     |    ✓     |    ✓     |    ✓     |    X     |    ✓     |    X     |                O(X)                 |      X      |    X     |
+| [R+ Manager 1.0] |   ✓    |    X    |    ✓     |    ✓     |    x     |    ✓     |    ✓     |    ✓     |    X     |    ✓     |    X     |                O(X)                 |      X      |    X     |
+| [R+ Motion  1.0] |   ✓    |    X    |    X     |    ✓     |    x     |    ✓     |    ✓     |    ✓     |    X     |    ✓     |    X     |                O(X)                 |      X      |    X     |
 
 {% capture notice_01 %}
 **NOTE**: 
@@ -113,34 +113,34 @@ sidebar:
 
 |      Model       | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-151] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[OpenCM 485 EXP]) | [OpenCM7.0] | [OpenCR] |
 |:----------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:-----------------------------------:|:-----------:|:--------:|
-|  [R+ Task 2.0]   |   O    |    O    |    O     |    O     |    x     |    O     |    O     |    O     |    X     |    O     |    X     |                O(X)                 |      X      |    X     |
-| [R+ Manager 2.0] |   O    |    X    |    X     |    O     |    o     |    O     |    O     |    O     |    X     |    O     |    X     |                O(X)                 |      X      |    X     |
-| [R+ Motion 2.0]  |   O    |    X    |    X     |    O     |    x     |    O     |    O     |    O     |    X     |    O     |    X     |                O(X)                 |      X      |    X     |
+|  [R+ Task 2.0]   |   ✓    |    ✓    |    ✓     |    ✓     |    x     |    ✓     |    ✓     |    ✓     |    X     |    ✓     |    X     |                O(X)                 |      X      |    X     |
+| [R+ Manager 2.0] |   ✓    |    X    |    X     |    ✓     |    o     |    ✓     |    ✓     |    ✓     |    X     |    ✓     |    X     |                O(X)                 |      X      |    X     |
+| [R+ Motion 2.0]  |   ✓    |    X    |    X     |    ✓     |    x     |    ✓     |    ✓     |    ✓     |    X     |    ✓     |    X     |                O(X)                 |      X      |    X     |
 
 ### [R+ 3.0](#r-30)
 
 |     Model     | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-151] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[OpenCM 485 EXP]) | [OpenCM7.0] | [OpenCR] |
 |:-------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:-----------------------------------:|:-----------:|:--------:|
-| [R+ Task 3.0] |   O    |    O    |    O     |    O     |    O     |    O     |    O     |    O     |    O     |    O     |    X     |                O(X)                 |      O      |    X     |
+| [R+ Task 3.0] |   ✓    |    ✓    |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    X     |                O(X)                 |      ✓      |    X     |
 
 
 ### [R+ Mobile](#r-mobile)
 
 |      Model       | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-151] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[OpenCM 485 EXP]) | [OpenCM7.0] | [OpenCR] |
 |:----------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:-----------------------------------:|:-----------:|:--------:|
-|   [R+ m.Task]    |   O    |    O    |    O     |    O     |    x     |    O     |    O     |    O     |    X     |    O     |    X     |                O(X)                 |      O      |    X     |
-| [R+ m.Task 2.0]  |   O    |    O    |    X     |    O     |    x     |    O     |    O     |    O     |    X     |    X     |    X     |                O(X)                 |      O      |    X     |
-| [R+ m.Motion 2.0] |   O    |    X    |    X     |    X     |    X     |    O     |    O     |    O     |    X     |    O     |    X     |                O(X)                 |      X      |    X     |
-|  [R+ m.Design]   |   O    |    X    |    O     |    O     |    O     |    O     |    O     |    O     |    X     |    X     |    X     |                O(X)                 |      X      |    X     |
+|   [R+ m.Task]    |   ✓    |    ✓    |    ✓     |    ✓     |    x     |    ✓     |    ✓     |    ✓     |    X     |    ✓     |    X     |                O(X)                 |      ✓      |    X     |
+| [R+ m.Task 2.0]  |   ✓    |    ✓    |    X     |    ✓     |    x     |    ✓     |    ✓     |    ✓     |    X     |    X     |    X     |                O(X)                 |      ✓      |    X     |
+| [R+ m.Motion 2.0] |   ✓    |    X    |    X     |    X     |    X     |    ✓     |    ✓     |    ✓     |    X     |    ✓     |    X     |                O(X)                 |      X      |    X     |
+|  [R+ m.Design]   |   ✓    |    X    |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    X     |    X     |    X     |                O(X)                 |      X      |    X     |
 
 ### [R+ Mobile (STEAM KIT)](#r-mobile-steam-kit)
 
 |             Model              | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-151] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[OpenCM 485 EXP]) | [OpenCM7.0] | [OpenCR] |
 |:------------------------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:-----------------------------------:|:-----------:|:--------:|
-| R+ SMART <br> ( I / II / III ) |   X    |    X    |    X     |    X     |    X     |    O     |    X     |    X     |    X     |    X     |    X     |                  X                  |      X      |    X     |
-|           [R+ Block]           |   X    |    O    |    X     |    O     |    O     |    X     |    X     |    X     |    X     |    X     |    X     |                  X                  |      O      |    X     |
-|             R+ IoT             |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  X                  |      O      |    X     |
-|         [R+ Play 700]          |   X    |    O    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  X                  |      X      |    X     |
+| R+ SMART <br> ( I / II / III ) |   X    |    X    |    X     |    X     |    X     |    ✓     |    X     |    X     |    X     |    X     |    X     |                  X                  |      X      |    X     |
+|           [R+ Block]           |   X    |    ✓    |    X     |    ✓     |    ✓     |    X     |    X     |    X     |    X     |    X     |    X     |                  X                  |      ✓      |    X     |
+|             R+ IoT             |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  X                  |      ✓      |    X     |
+|         [R+ Play 700]          |   X    |    ✓    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  X                  |      X      |    X     |
 |         [ROBOTIS MINI]         |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                O(X)                 |      X      |    X     |
 
 
@@ -150,15 +150,15 @@ sidebar:
 
 |             Model             | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-151] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[OpenCM 485 EXP]) | [OpenCM7.0] | [OpenCR] |
 |:-----------------------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:-----------------------------------:|:-----------:|:--------:|
-|         [R+ Scratch]          |   X    |    O    |    X     |    O     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  X                  |      O      |    X     |
-|         [OpenCM IDE]          |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  O                  |      X      |    X     |
-|        [DYNAMIXEL SDK]        |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  O                  |      X      |    O     |
-|     [DYNAMIXEL Workbench]     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  O                  |      X      |    O     |
+|         [R+ Scratch]          |   X    |    ✓    |    X     |    ✓     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  X                  |      ✓      |    X     |
+|         [OpenCM IDE]          |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  ✓                  |      X      |    X     |
+|        [DYNAMIXEL SDK]        |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  ✓                  |      X      |    ✓     |
+|     [DYNAMIXEL Workbench]     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  ✓                  |      X      |    ✓     |
 |      [DYNAMIXEL Wizard]       |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  X                  |      X      |    X     |
-|    [DYNAMIXEL Wizard 2.0]     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  X                  |      X      |    O     |
-| [ROBOTIS Manipulator library] |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  X                  |      X      |    O     |
-| [Embeded SDK(CM-510/530/700)] |   X    |    X    |    X     |    X     |    X     |    X     |    O     |    O     |    X     |    O     |    X     |                  X                  |      X      |    X     |
-|          Arduino IDE          |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  O                  |      X      |    O     |
+|    [DYNAMIXEL Wizard 2.0]     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  X                  |      X      |    ✓     |
+| [ROBOTIS Manipulator library] |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  X                  |      X      |    ✓     |
+| [Embeded SDK(CM-510/530/700)] |   X    |    X    |    X     |    X     |    X     |    X     |    ✓     |    ✓     |    X     |    ✓     |    X     |                  X                  |      X      |    X     |
+Z          Arduino IDE          |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  ✓                  |      X      |    ✓     |
 
 {% capture etc %}
 - Users can build their own manipulator with ROBOTIS Manipulator library offerd by ROBOTIS.

@@ -1,5 +1,8 @@
-The Secondary ID (10) is used to identify devices, similar to ID (7).  
-There are several important differences between ID (7)and Secondary ID (10):
+{% assign secondary_id= "[Secondary ID(10)]" %}
+{% assign id= "[ID(7)]" %}
+
+The {{ secondary_id }} is another value that can be used to identify devices on the DYNAMIXEL network, similar to {{ id }}.  
+There are several important differences between {{ id }} and {{ secondary_id }}:
 1. The Secondary ID does not need to be a unique value. This means that multiple devices can share the same Secondary ID value, allowing the creation of device groups.
 2. The primary ID has a higher priority than the Secondary ID. If the Secondary ID and ID are the same, the primary ID takes precedence. 
 You cannot use the Secondary ID to change values in the EEPROM area of the control table. Only values in the RAM area can be changed. 
@@ -12,7 +15,7 @@ You cannot use the Secondary ID to change values in the EEPROM area of the contr
 |  0 ~ 252  | Enable Secondary ID function                              |
 | 253 ~ 255 | Disable Secondary ID function,<br />Default value : ‘255’ |
 
-Here is an example scenario with 5 devices with IDs (7) ranging from 1 to 5:
+Here is an example scenario with 5 devices with IDs ranging from 1 to 5:
 
 {% capture secondary_id_ex1 %}
 1. Set the Secondary ID (12) to '5' for all 5 devices. 

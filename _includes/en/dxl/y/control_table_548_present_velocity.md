@@ -1,1 +1,3 @@
-This is the velocity value at which the device is currently rotating. Please refer to the Goal [Velocity(528)] for further details. 
+{% assign goal_velocity= "[Goal Velocity(528)]" %}
+
+Present Velocity reports the current rotational velocity of the device. Please refer to {{ goal_velocity }} for further details. 

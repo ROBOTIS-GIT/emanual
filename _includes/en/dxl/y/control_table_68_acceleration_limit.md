@@ -1,1 +1,3 @@
-This is the limit value of the profile acceleration value. The [Profile Acceleration(240)] cannot be set to a value greater than the Acceleration Limit(68). If a value greater than this limit is set, the Status Packet transmits a Data Limit Error through the Error field.
+{% assign profile_acceleration= "[Profile Acceleration(240)]" %}
+
+Acceleration Limit allows the setting of a maximum acceleration value for trajectory generation. The {{ profile_acceleration }} cannot be set to a value greater than the configured Acceleration Limit. If a value greater than this limit is set, the returned status packet will include a Data Limit Error in the Error field.

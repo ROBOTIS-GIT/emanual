@@ -7,8 +7,8 @@
 | YM080-230-M001-RH | 1,143 | 0.0197 | 0.0099 | 78.2 |
 
 {% capture output_bearing_notice1 %}  
-**note :**  
-1&#41; Allowable dynamic equivalent load (Pc_max)  must not exceed this value
+**Note :**  
+1. Allowable dynamic equivalent load (Pc_max)  must not exceed this value   
 {% endcapture %}
 
 <div class="notice">{{ output_bearing_notice1 | markdownify }}</div>

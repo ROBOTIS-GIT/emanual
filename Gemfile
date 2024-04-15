@@ -23,6 +23,7 @@ group :jekyll_plugins do
   gem "jekyll-gist"
   gem "jekyll-feed"
   gem "jemoji"
+  gem "json"
   gem "webrick"
   gem 'jekyll-livereload'
   gem 'kramdown-parser-gfm'
