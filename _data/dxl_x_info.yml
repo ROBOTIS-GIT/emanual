@@ -64,7 +64,7 @@ xl330-m077:
   radialload:         "N/A"
   radialload_en:      "N/A"
   axialload:          "N/A"
-  temperature:        "-5 ~ +60 [&deg;C]"
+  temperature:        "-5 ~ +70 [&deg;C]"
   voltage:            *voltage_05
   voltage_en:         *voltage_05_en
   command:            *command
@@ -94,7 +94,7 @@ xl330-m288:
   radialload:         "N/A"
   radialload_en:      "N/A"
   axialload:          "N/A"
-  temperature:        "-5 ~ +60 [&deg;C]"
+  temperature:        "-5 ~ +70 [&deg;C]"
   voltage:            *voltage_05
   voltage_en:         *voltage_05_en
   command:            *command
@@ -124,7 +124,7 @@ xc330-m181:
   radialload:         "N/A"
   radialload_en:      "N/A"
   axialload:          "N/A"
-  temperature:        "-5 ~ +60 [&deg;C]"
+  temperature:        "-5 ~ +70 [&deg;C]"
   voltage:            *voltage_05
   voltage_en:         *voltage_05_en
   command:            *command
@@ -154,7 +154,7 @@ xc330-m288:
   radialload:         "N/A"
   radialload_en:      "N/A"
   axialload:          "N/A"
-  temperature:        "-5 ~ +60 [&deg;C]"
+  temperature:        "-5 ~ +70 [&deg;C]"
   voltage:            *voltage_05
   voltage_en:         *voltage_05_en
   command:            *command
@@ -184,7 +184,7 @@ xc330-t181:
   radialload:         "N/A"
   radialload_en:      "N/A"
   axialload:          "N/A"
-  temperature:        "-5 ~ +60 [&deg;C]"
+  temperature:        "-5 ~ +70 [&deg;C]"
   voltage:            *voltage_6_12
   voltage_en:         *voltage_6_12_en
   command:            *command
@@ -214,7 +214,7 @@ xc330-t288:
   radialload:         "N/A"
   radialload_en:      "N/A"
   axialload:          "N/A"
-  temperature:        "-5 ~ +60 [&deg;C]"
+  temperature:        "-5 ~ +70 [&deg;C]"
   voltage:            *voltage_6_12
   voltage_en:         *voltage_6_12_en
   command:            *command
