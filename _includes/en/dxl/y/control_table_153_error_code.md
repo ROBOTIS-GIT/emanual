@@ -17,10 +17,10 @@ Error Code stores the value of any currently active error statuses. The list of 
 | 4 (0x04)  | Motor Overheating Error      | N         | -     | Y           | The motor temperature has exceeded the {{ motor_temperature_limit }}.      |
 | 5 (0x05)  | Overload Error               | N         | -     | Y           | Operating current exceeding rated current for an extended duration         |
 | 7 (0x07)  | Inverter Error               | N         | -     | N           | An issue has occurred with the inverter                                    |
-| 9 (0x09)  | Battery Warning              | Y         | N     | N           | Low Multi-Turn battery voltage. Replacement recommended                    |
-| 10 (0x0A) | Battery Error                | N         | -     | N           | Multi-Turn battery voltage is too low, causing issues                      |
-| 11 (0x0B) | Magnet Error                 | N         | -     | N           | Multi-Turn position lost. Multi-Turn reset required                        |
-| 12 (0x0C) | Multi-Turn Error             | N         | -     | N           | An issue has occurred with the Multi-Turn IC                               |
+| 9 (0x09)  | Battery Warning              | Y         | N     | N           | Low Multi-turn battery voltage. Replacement recommended                    |
+| 10 (0x0A) | Battery Error                | N         | -     | N           | Multi-turn battery voltage is too low, causing issues                      |
+| 11 (0x0B) | Magnet Error                 | N         | -     | N           | Multi-turn position lost. Multi-turn reset required                        |
+| 12 (0x0C) | Multi-turn Error             | N         | -     | N           | An issue has occurred with the Multi-turn IC                               |
 | 13 (0x0D) | Encoder Error                | N         | -     | N           | An issue has occurred with the Encoder IC                                  |
 | 14 (0x0E) | Hall Sensor Error            | N         | -     | N           | An issue has occurred with the Hall Sensor                                 |
 | 15 (0x0F) | Calibration Error            | N         | -     | N           | Cannot find calibration Data                                               |

@@ -58,6 +58,7 @@ The OpenRB-150 also features 4 dedicated DYNAMIXEL ports, and supports the DYNAM
 | Supported DYNAMIXEL`2`          | [X Series], [MX Series], [AX Series], [P Series]            |
 
 `1`
+
 |  Baud Rate   |Margin od Error|
 |:------------:|:-------------:|
 |1M [bps]      |   0.000 [%]   |

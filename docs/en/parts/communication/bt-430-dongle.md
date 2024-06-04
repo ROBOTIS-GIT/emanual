@@ -21,18 +21,18 @@ sidebar:
 
 The `BT-430 Dongle` a USB 2.0 interface and Bluetooth 5 Low Energy standard communication interface that provides USB to Bluetooth functionality for robot control, as the updated replacement to the `BT-410 Dongle`.
 
-In other words, by attaching the `BT-430 Dongle` to a PC and pairing it with a BLE-supported controller or `BT-410 follower module`, data can be exchanged between the PC and `BT-410 follower module`. (Refer to the respective component's description page for how to attach each component.)
+In other words, by attaching the `BT-430 Dongle` to a PC and pairing it with a BLE-supported controller or `BT-410 SLAVE module`, data can be exchanged between the PC and `BT-410 SLAVE module`. (Refer to the respective component's description page for how to attach each component.)
 
 **1. Controllers and Wireless Modules Compatible with BT-430 Dongle**
   - RB-100
   - [CM-151]
   - [RB-86] / [RB-88]
-  - [BT-410 Follower Module]
+  - [BT-410 SLAVE Module]
 
 **2. Wireless Modules Not Compatible with BT-430 Dongle**
-  - [BT-410 Leader Module]
-  - BT-210 Leader Module
-  - BT-210 Follower Module
+  - [BT-410 MASTER Module]
+  - BT-210 MASTER Module
+  - BT-210 SLAVE Module
   - BT-100/110A
   - ZIG-100/110A
 
@@ -60,7 +60,7 @@ In other words, by attaching the `BT-430 Dongle` to a PC and pairing it with a B
 
 # [Compatibility](#compatibility)
 
-Work possible with combinations of BT-430 Dongle and BLE-supported controllers or BT-410 follower module
+Work possible with combinations of BT-430 Dongle and BLE-supported controllers or BT-410 SLAVE module
 
 |    Product    | R-Block | R-Motion | FW Recovery/Update<br />R+ Manager 2.0   | Entry | [R+ Scratch] | Task 2.0<br />Download  | R+ Motion 2.0<br />Download |
 |:-------------:|:-------:|:--------:|:----------------------------------------:|:-----:|:------------:|:-----------------------:|:---------------------------:|
@@ -80,13 +80,13 @@ The BT-430 Dongle can establish reliable 1:1 communication through pairing.
 
 ## [1:1 Communication](#11-communication)
 
-- When connected to a powered-on PC's USB port, the blue LED blinks, and when it successfully pairs with a BLE-supported controller or BT-410 follower module, the blue LED remains lit.
-- **Automatic Pairing Method**: When the blue LED of BT-430 Dongle blinks (not paired), if you bring the BT-410 follower module close (within 10cm), it will automatically pair. (Afterward, pairing is possible even from a longer distance.)
+- When connected to a powered-on PC's USB port, the blue LED blinks, and when it successfully pairs with a BLE-supported controller or BT-410 SLAVE module, the blue LED remains lit.
+- **Automatic Pairing Method**: When the blue LED of BT-430 Dongle blinks (not paired), if you bring the BT-410 SLAVE module close (within 10cm), it will automatically pair. (Afterward, pairing is possible even from a longer distance.)
 
 # [BT-430 Dongle Setting](bt-430-dongle-setting)
 
 - Resettable System
-- Configurable follower Address
+- Configurable SLAVE Address
 - Enable/Disable Auto-Pairing Feature
 
 ## [Setup](#setup)
@@ -148,7 +148,7 @@ You can change the settings of the BT-430 Dongle using AT commands in the termin
     ![img](/assets/images/parts/communication/bt-410_dongle_12.png)
 
 3. Automatic Pairing:
-  Unpaired BT-430 follower modules will automatically pair when brought close to the BT-430 Dongle (within about 10cm).
+  Unpaired BT-430 SLAVE modules will automatically pair when brought close to the BT-430 Dongle (within about 10cm).
 
 4. Disable Automatic Pairing:
   Enter `AT+BTAUTOPAIR=0` and press ENTER.
@@ -228,8 +228,8 @@ Please inquire us for information regarding unlisted certifications.
 [RB-88]: /docs/en/parts/controller/rb-88/
 [CM-151]: /docs/en/parts/controller/cm-151/
 [CM-150]: /docs/en/parts/controller/cm-150/
-[BT-410 follower module]: /docs/en/parts/communication/bt-410/
-[BT-410 Leader module]: /docs/en/parts/communication/bt-410/
+[BT-410 SLAVE module]: /docs/en/parts/communication/bt-410/
+[BT-410 MASTER module]: /docs/en/parts/communication/bt-410/
 [CM-200]: /docs/en/parts/controller/cm-200/
 [CM-530]: /docs/en/parts/controller/cm-530/
 [OpenCM9.04]: /docs/en/parts/controller/opencm904/

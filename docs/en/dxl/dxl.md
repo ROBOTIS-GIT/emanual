@@ -62,7 +62,7 @@ sidebar:
 |                                        XD540                                         |                                        XD430                                         |
 |:------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------:|
 |                  ![](/assets/images/dxl/x/x540-series_product.png)                   |                    ![](/assets/images/dxl/x/x_series_product.png)                    |
-| [XD540-T270](/docs/en/dxl/x/xd540-t270/)<br>[XD540-T150](/docs/en/dxl/x/xd540-t150/) | [XD430-T350](/docs/en/dxl/x/xd430-t350/)<br>[XD430-T210](/docs/en/dxl/x/xd430-t350/) |
+| [XD540-T270](/docs/en/dxl/x/xd540-t270/)<br>[XD540-T150](/docs/en/dxl/x/xd540-t150/) | [XD430-T350](/docs/en/dxl/x/xd430-t350/)<br>[XD430-T210](/docs/en/dxl/x/xd430-t210/) |
 
 ## [XH Series](#xh-series)
 
