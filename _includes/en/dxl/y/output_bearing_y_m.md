@@ -8,35 +8,47 @@
 
 {% capture output_bearing_notice1 %}  
 **Note :**  
-1. Allowable dynamic equivalent load (Pc_max)  must not exceed this value   
+1. Allowable dynamic equivalent load (Pc_max)  must not exceed this value during operation.
 {% endcapture %}
 
 <div class="notice">{{ output_bearing_notice1 | markdownify }}</div>
 
 ## [Output bearing life](#output-bearing-life)
-The bearing life of the Dynamixel-Y output bearing is obtained from the following equation.
+An estimate of the bearing life for the Dynamixel-Y output bearing can be calculated using the following equation:
 
 ![](/assets/images/dxl/y/bearing_formula/m_1.png)  
 
 
-- L<sub>10</sub> - Bearing life [hour]
+- L<sub>10</sub> - Bearing service life [hours]
 - N<sub>a</sub> - Average output speed [rpm]
 - C - Basic dynamic load rating [N]
 - P<sub>c</sub> - Dynamic equivalent load [N]
+<<<<<<< HEAD
 - T<sub>f</sub> - Temperature factor (Tf=1.0 less 100℃)
 - L<sub>f</sub> - Load factor (Table.B2)
+=======
+- T<sub>f</sub> - Temperature factor (Tf=1.0 in environments of less than 100℃)
+- L<sub>f</sub> - Load factor (Available in [Table.B2](#tables))
+- P<sub>c_max</sub> - Allowable dynamic equivalent radial load [N]
+>>>>>>> bd667d4ef (Proofreading DYNAMIXEL Protocol 2)
 
 
 ## [Allowable dynamic equivalent load, Pc_max](#allowable-dynamic-equivalent-load-pc_max)
 
 ![](/assets/images/dxl/y/bearing_formula/m_2.png)   
 
-- L<sub>10</sub> - Bearing life [hour] @ 20,000 hour
+- L<sub>10</sub> - Bearing service life [hour] @ 20,000 hour
 - N<sub>n</sub> - Nominal output speed [rpm]
 - C - Basic dynamic load rating [N]
+<<<<<<< HEAD
 - T<sub>f</sub> - Temperature factor (Tf=1.0 less 100℃) @ Tf = 1.0
 - L<sub>f</sub> - Load factor (Table.B2) @ Lf=1.0
 - P<sub>c_max</sub> - Allowable dynamic equivalent load [N]
+=======
+- T<sub>f</sub> - Temperature factor (Tf=1.0 in environments of less than 100℃)
+- L<sub>f</sub> - Load factor (Available in [Table.B2](#tables))
+- P<sub>c_max</sub> - Allowable dynamic equivalent radial load [N]
+>>>>>>> bd667d4ef (Proofreading DYNAMIXEL Protocol 2)
 
 
 ## [Dynamic equivalent load, Pc](#dynamic-equivalent-load-pc)
@@ -49,9 +61,9 @@ The dynamic equivalent load of the Dynamixel-Y output bearing is obtained from t
 - F<sub>a</sub> - Axial load [N]
 - d<sub>f</sub> - Offset from flange [m] (Table.B1)
 - L<sub>r</sub> - Distance of radial load [m]
-- L<sub>c</sub> - Length between bearings 1 and 2 [m] (Table.B1)
-- X - Dynamic radial factor (Table.B3)
-- Y - Dynamic axial factor (Table.B3)
+- L<sub>c</sub> - Length between bearings 1 and 2 [m] (Available in [Table.B1](#output-bearing-specifications-tableb1))
+- X - Dynamic radial factor (Available in [Table.B3](#tables))
+- Y - Dynamic axial factor (Available in [Table.B3](#tables))
 
 ![](/assets/images/dxl/y/bearing_formula/m_4.png) 
 
@@ -59,11 +71,11 @@ The dynamic equivalent load of the Dynamixel-Y output bearing is obtained from t
 
 Table.B2 Load factor
 
-| Conditions                   | Lf        |
-|:-----------------------------|:---------:|
-| Smooth motion without impact | 1.0 ~ 1.2 |
-| Normal motion                | 1.2 ~ 1.5 |
-| Motion with severe impact    | 1.5 ~ 3.0 |
+| Conditions                           | Lf        |
+|:-------------------------------------|:---------:|
+| Smooth motion without impact         | 1.0 ~ 1.2 |
+| Normal motion with occasional impact | 1.2 ~ 1.5 |
+| Motion with severe impact            | 1.5 ~ 3.0 |
 
 Table.B3 Dynamic radial/axial factor
 

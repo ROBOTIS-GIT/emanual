@@ -31,20 +31,20 @@ sidebar:
 
 |      Model       | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-151] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[OpenCM 485 EXP]) | [OpenCM7.0] | [OpenCR] | [OpenRB-150] |
 |:----------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:-----------------------------------:|:-----------:|:--------:|:------------:|
-|    AX Series     |   ✓    |    X    |    X     |    X     |    X     |    X     |    ✓     |    ✓     |    X     |    ✓     |    ✓     |                X(O)                 |      X      |    ✓     |      ✓       |
-|    DX Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    ✓     |    ✓     |                X(O)                 |      X      |    ✓     |      X       |
-|    RX Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    ✓     |    ✓     |                X(O)                 |      X      |    ✓     |      X       |
-|    EX Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    ✓     |    ✓     |                X(O)                 |      X      |    ✓     |      X       |
-|  MX Series(TTL)  |   ✓    |    X    |    X     |    X     |    X     |    X     |    ✓     |    ✓     |    X     |    ✓     |    ✓     |                X(O)                 |      X      |    ✓     |      ✓       |
-| MX Series(RS485) |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    ✓     |    ✓     |                X(O)                 |      X      |    ✓     |O([Comm Bridge])|
-|      XL-320      |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    ✓     |                O(X)                 |      X      |    X     |      ✓       |
-|    XL Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    ✓     |    X     |    X     |                X(O)                 |      X      |    ✓     |      ✓       |
-|    XC Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    ✓     |    X     |    X     |                X(O)                 |      X      |    ✓     |      ✓       |
-|    XM Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    ✓     |    X     |    X     |                X(O)                 |      X      |    ✓     |      ✓       |
-|    XH Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    ✓     |    X     |    X     |                X(O)                 |      X      |    ✓     |      ✓       |
-|    XD Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    ✓     |    X     |    X     |                X(O)                 |      X      |    ✓     |O([Comm Bridge])|
-|    XW Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    ✓     |    X     |    X     |                X(O)                 |      X      |    ✓     |O([Comm Bridge])|
-|    PRO Series    |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    ✓     |    X     |                X(O)                 |      X      |    ✓     |O([Comm Bridge])|
+|    AX Series     |   ✓    |    X    |    X     |    X     |    X     |    X     |    ✓     |    ✓     |    X     |    ✓     |    ✓     |                X(✓)                  |      X      |    ✓     |      ✓       |
+|    DX Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    ✓     |    ✓     |                X(✓)                  |      X      |    ✓     |      X       |
+|    RX Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    ✓     |    ✓     |                X(✓)                  |      X      |    ✓     |      X       |
+|    EX Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    ✓     |    ✓     |                X(✓)                  |      X      |    ✓     |      X       |
+|  MX Series(TTL)  |   ✓    |    X    |    X     |    X     |    X     |    X     |    ✓     |    ✓     |    X     |    ✓     |    ✓     |                X(✓)                  |      X      |    ✓     |      ✓       |
+| MX Series(RS485) |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    ✓     |    ✓     |                X(✓)                  |      X      |    ✓     |O([Comm Bridge])|
+|      XL-320      |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    ✓     |                ✓(X)                 |      X      |    X     |      ✓       |
+|    XL Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    ✓     |    X     |    X     |                X(✓)                  |      X      |    ✓     |      ✓       |
+|    XC Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    ✓     |    X     |    X     |                X(✓)                  |      X      |    ✓     |      ✓       |
+|    XM Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    ✓     |    X     |    X     |                X(✓)                  |      X      |    ✓     |      ✓       |
+|    XH Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    ✓     |    X     |    X     |                X(✓)                  |      X      |    ✓     |      ✓       |
+|    XD Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    ✓     |    X     |    X     |                X(✓)                  |      X      |    ✓     |O([Comm Bridge])|
+|    XW Series     |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    ✓     |    X     |    X     |                X(✓)                  |      X      |    ✓     |O([Comm Bridge])|
+|    PRO Series    |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    ✓     |    X     |                X(✓)                  |      X      |    ✓     |O([Comm Bridge])|
 
 **NOTE**: OpenCM9.04 with OpenCM 485 EXP can use all types of DYNAMIXEL.
 {: .notice}
@@ -97,9 +97,9 @@ sidebar:
 
 |      Model       | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-151] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[OpenCM 485 EXP]) | [OpenCM7.0] | [OpenCR] |
 |:----------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:-----------------------------------:|:-----------:|:--------:|
-|  [R+ Task 1.0]   |   ✓    |    X    |    ✓     |    ✓     |    x     |    ✓     |    ✓     |    ✓     |    X     |    ✓     |    X     |                O(X)                 |      X      |    X     |
-| [R+ Manager 1.0] |   ✓    |    X    |    ✓     |    ✓     |    x     |    ✓     |    ✓     |    ✓     |    X     |    ✓     |    X     |                O(X)                 |      X      |    X     |
-| [R+ Motion  1.0] |   ✓    |    X    |    X     |    ✓     |    x     |    ✓     |    ✓     |    ✓     |    X     |    ✓     |    X     |                O(X)                 |      X      |    X     |
+|  [R+ Task 1.0]   |   ✓    |    X    |    ✓     |    ✓     |    X     |    ✓     |    ✓     |    ✓     |    X     |    ✓     |    X     |                ✓(X)                 |      X      |    X     |
+| [R+ Manager 1.0] |   ✓    |    X    |    ✓     |    ✓     |    X     |    ✓     |    ✓     |    ✓     |    X     |    ✓     |    X     |                ✓(X)                 |      X      |    X     |
+| [R+ Motion  1.0] |   ✓    |    X    |    X     |    ✓     |    X     |    ✓     |    ✓     |    ✓     |    X     |    ✓     |    X     |                ✓(X)                 |      X      |    X     |
 
 {% capture notice_01 %}
 **NOTE**: 
@@ -113,25 +113,25 @@ sidebar:
 
 |      Model       | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-151] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[OpenCM 485 EXP]) | [OpenCM7.0] | [OpenCR] |
 |:----------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:-----------------------------------:|:-----------:|:--------:|
-|  [R+ Task 2.0]   |   ✓    |    ✓    |    ✓     |    ✓     |    x     |    ✓     |    ✓     |    ✓     |    X     |    ✓     |    X     |                O(X)                 |      X      |    X     |
-| [R+ Manager 2.0] |   ✓    |    X    |    X     |    ✓     |    o     |    ✓     |    ✓     |    ✓     |    X     |    ✓     |    X     |                O(X)                 |      X      |    X     |
-| [R+ Motion 2.0]  |   ✓    |    X    |    X     |    ✓     |    x     |    ✓     |    ✓     |    ✓     |    X     |    ✓     |    X     |                O(X)                 |      X      |    X     |
+|  [R+ Task 2.0]   |   ✓    |    ✓    |    ✓     |    ✓     |    X     |    ✓     |    ✓     |    ✓     |    X     |    ✓     |    X     |                ✓(X)                 |      X      |    X     |
+| [R+ Manager 2.0] |   ✓    |    X    |    X     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    X     |    ✓     |    X     |                ✓(X)                 |      X      |    X     |
+| [R+ Motion 2.0]  |   ✓    |    X    |    X     |    ✓     |    X     |    ✓     |    ✓     |    ✓     |    X     |    ✓     |    X     |                ✓(X)                 |      X      |    X     |
 
 ### [R+ 3.0](#r-30)
 
 |     Model     | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-151] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[OpenCM 485 EXP]) | [OpenCM7.0] | [OpenCR] |
 |:-------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:-----------------------------------:|:-----------:|:--------:|
-| [R+ Task 3.0] |   ✓    |    ✓    |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    X     |                O(X)                 |      ✓      |    X     |
+| [R+ Task 3.0] |   ✓    |    ✓    |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    X     |                ✓(X)                 |      ✓      |    X     |
 
 
 ### [R+ Mobile](#r-mobile)
 
 |      Model       | [CM-5] | [CM-50] | [CM-100] | [CM-150] | [CM-151] | [CM-200] | [CM-510] | [CM-530] | [CM-550] | [CM-700] | [CM-900] | [OpenCM9.04]<br>(+[OpenCM 485 EXP]) | [OpenCM7.0] | [OpenCR] |
 |:----------------:|:------:|:-------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:-----------------------------------:|:-----------:|:--------:|
-|   [R+ m.Task]    |   ✓    |    ✓    |    ✓     |    ✓     |    x     |    ✓     |    ✓     |    ✓     |    X     |    ✓     |    X     |                O(X)                 |      ✓      |    X     |
-| [R+ m.Task 2.0]  |   ✓    |    ✓    |    X     |    ✓     |    x     |    ✓     |    ✓     |    ✓     |    X     |    X     |    X     |                O(X)                 |      ✓      |    X     |
-| [R+ m.Motion 2.0] |   ✓    |    X    |    X     |    X     |    X     |    ✓     |    ✓     |    ✓     |    X     |    ✓     |    X     |                O(X)                 |      X      |    X     |
-|  [R+ m.Design]   |   ✓    |    X    |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    X     |    X     |    X     |                O(X)                 |      X      |    X     |
+|   [R+ m.Task]    |   ✓    |    ✓    |    ✓     |    ✓     |    X     |    ✓     |    ✓     |    ✓     |    X     |    ✓     |    X     |                ✓(X)                 |      ✓      |    X     |
+| [R+ m.Task 2.0]  |   ✓    |    ✓    |    X     |    ✓     |    X     |    ✓     |    ✓     |    ✓     |    X     |    X     |    X     |                ✓(X)                 |      ✓      |    X     |
+| [R+ m.Motion 2.0] |   ✓    |    X    |    X     |    X     |    X     |    ✓     |    ✓     |    ✓     |    X     |    ✓     |    X     |                ✓(X)                 |      X      |    X     |
+|  [R+ m.Design]   |   ✓    |    X    |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    X     |    X     |    X     |                ✓(X)                 |      X      |    X     |
 
 ### [R+ Mobile (STEAM KIT)](#r-mobile-steam-kit)
 
@@ -141,7 +141,7 @@ sidebar:
 |           [R+ Block]           |   X    |    ✓    |    X     |    ✓     |    ✓     |    X     |    X     |    X     |    X     |    X     |    X     |                  X                  |      ✓      |    X     |
 |             R+ IoT             |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  X                  |      ✓      |    X     |
 |         [R+ Play 700]          |   X    |    ✓    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                  X                  |      X      |    X     |
-|         [ROBOTIS MINI]         |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                O(X)                 |      X      |    X     |
+|         [ROBOTIS MINI]         |   X    |    X    |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |    X     |                ✓(X)                 |      X      |    X     |
 
 
 [How to install ROBOTIS virtual COM port for Windows]: /docs/en/popup/usb_driver_install/
