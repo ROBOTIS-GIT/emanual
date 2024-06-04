@@ -30,6 +30,7 @@ GEM
       net-http
     ffi (1.16.3)
     ffi (1.16.3-x64-mingw-ucrt)
+    ffi (1.16.3-x64-mingw32)
     forwardable-extended (2.6.0)
     gemoji (4.1.0)
     html-pipeline (2.14.3)
@@ -71,6 +72,7 @@ GEM
       gemoji (>= 3, < 5)
       html-pipeline (~> 2.2)
       jekyll (>= 3.0, < 5.0)
+    json (2.7.2)
     kramdown (2.4.0)
       rexml
     kramdown-parser-gfm (1.1.0)
@@ -96,6 +98,8 @@ GEM
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     nokogiri (1.16.2-x64-mingw-ucrt)
+      racc (~> 1.4)
+    nokogiri (1.16.2-x64-mingw32)
       racc (~> 1.4)
     nokogiri (1.16.2-x86_64-linux)
       racc (~> 1.4)
@@ -139,6 +143,7 @@ DEPENDENCIES
   jekyll-paginate
   jekyll-sitemap
   jemoji
+  json
   kramdown (>= 2.3.1)
   kramdown-parser-gfm
   minimal-mistakes-jekyll
