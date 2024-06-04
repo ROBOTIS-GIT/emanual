@@ -10,7 +10,7 @@ sidebar:
 
 ![](/assets/images/dxl/y/y_series_product.png)
 
-DYNAMIXEL-Y is ROBOTIS’ industrialized premium smart actuator solution for full scale Robots
+DYNAMIXEL-Y is ROBOTIS’ industrialized premium robot actuator solution for full scale Robots
 
 # [Product Lineup](#product-lineup)
 
