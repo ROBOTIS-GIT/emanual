@@ -41,7 +41,7 @@ $ mkdir -p ~/catkin_ws/src
 $ cd ~/catkin_ws
 $ echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 $ echo "export ROS_MASTER_URI=http://localhost:11311" >> ~/.bashrc
-$ echo "export ROS_HOSTNAME=localhost" >> ~/.bashrc"
+$ echo "export ROS_HOSTNAME=localhost" >> ~/.bashrc
 $ source ~/.bashrc
 ```
 {% endcapture %}
