@@ -56,7 +56,7 @@ $ cd ~/catkin_ws && catkin_make
 $ echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
 $ echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 $ echo "export ROS_MASTER_URI=http://localhost:11311" >> ~/.bashrc
-$ echo "export ROS_HOSTNAME=localhost" >> ~/.bashrc"
+$ echo "export ROS_HOSTNAME=localhost" >> ~/.bashrc
 $ source ~/.bashrc
 ```
 </details>
