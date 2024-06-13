@@ -51,9 +51,10 @@ The `install_ros_noetic.sh` script file automatically configures the basic ROS e
 ```bash
 $ sudo apt install git
 $ mkdir -p ~/catkin_ws/src
+$ echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
+$ source ~/.bashrc
 $ catkin_init_workspace
 $ cd ~/catkin_ws && catkin_make
-$ echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
 $ echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 $ echo "export ROS_MASTER_URI=http://localhost:11311" >> ~/.bashrc
 $ echo "export ROS_HOSTNAME=localhost" >> ~/.bashrc
