@@ -3,9 +3,9 @@
 
 Stall torque is the maximum momentary torque output the servo is capable of, an is generally how RC servos are measured. The Performance graph, or N-T curve, from the above graph is measured under conditions simulating a gradually increasing load.
 
-The actual real world performance of the servo will generally be closer to the performance graph measurements, not the rated stall torque. For this reason, the performance graph is broadly used in the industrial field.
-
 Generally, the Maximum Torque shown through Performance Graph testing is less than the maximum Stall Torque.
+
+The actual real world performance of the servo will generally be closer to the performance graph measurements, not the rated stall torque.
 
 {% endcapture %}
 
