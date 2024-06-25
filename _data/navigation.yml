@@ -28950,6 +28950,10 @@ rb-86:
     titlekr: "제품사양"
     url: /parts/controller/rb-86/#specifications
     urlkr: /parts/controller/rb-86/#제품-사양
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /parts/controller/rb-86/#control-table
+    urlkr: /parts/controller/rb-86/#컨트롤-테이블 
   - title: "Layout"
     titlekr: "각 부 명칭"
     url: /parts/controller/rb-86/#layout
@@ -28982,7 +28986,11 @@ rb-86:
     - title: "Controller Shutdown"
       titlekr: "제어기 종료"
       url: /parts/controller/rb-86/#controller-shutdown
-      urlkr: /parts/controller/rb-86/#제어기-종료  
+      urlkr: /parts/controller/rb-86/#제어기-종료
+  - title: "Control Dynamixels via Bluetooth"
+    titlekr: "블루투스를 통한 다이나믹셀 제어"
+    url: /parts/controller/rb-86/#control-dynamixels-via-bluetooth
+    urlkr: /parts/controller/rb-86/#블루투스를-통한-다이나믹셀-제어  
   - title: "Cross Hub Assembly"
     titlekr: "십자혼 조립 방법"
     url: /parts/controller/rb-86/#cross-hub-assembly
@@ -29032,6 +29040,10 @@ rb-88:
     titlekr: "제품사양"
     url: /parts/controller/rb-88/#specifications
     urlkr: /parts/controller/rb-88/#제품-사양
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /parts/controller/rb-88/#control-table
+    urlkr: /parts/controller/rb-88/#컨트롤-테이블
   - title: "Layout"
     titlekr: "각 부 명칭"
     url: /parts/controller/rb-88/#layout
@@ -29060,7 +29072,11 @@ rb-88:
     - title: "Controller Shutdown"
       titlekr: "제어기 종료"
       url: /parts/controller/rb-88/#controller-shutdown
-      urlkr: /parts/controller/rb-88/#제어기-종료  
+      urlkr: /parts/controller/rb-88/#제어기-종료
+  - title: "Control Dynamixels via Bluetooth"
+    titlekr: "블루투스를 통한 다이나믹셀 제어"
+    url: /parts/controller/rb-88/#control-dynamixels-via-bluetooth
+    urlkr: /parts/controller/rb-88/#블루투스를-통한-다이나믹셀-제어          
   - title: "Cross Hub Assembly"
     titlekr: "십자혼 조립 방법"
     url: /parts/controller/rb-88/#cross-hub-assembly
