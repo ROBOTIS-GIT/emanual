@@ -871,7 +871,7 @@ xw540-h260:
   weight:             "185 [g]"
   dimensions:         "33.5 x 58.5 x 45.9 [mm]"
   gearratio:          "260.6 : 1"
-  stalltorque:        "8.3 [N.m] (at 24 [V], 2.4 [A])"
+  stalltorque:        "8.7 [N.m] (at 24 [V], 2.4 [A])"
   noloadspeed:        "32 [rev/min] (at 24 [V])"
   radialload:         *radialload
   radialload_en:      *radialload_en
