@@ -9859,13 +9859,13 @@ xw540-h260:
         titlekr: "Profile"
         url: /dxl/x/xw540-h260/#what-is-the-profile
         urlkr: /dxl/x/xw540-h260/#profile
-      - title: "Certifications"
-        titlekr: "인증 획득"
-        url: /dxl/x/xw540-h260/#certifications
-        urlkr: /dxl/x/xw540-h260/#인증-획득
-      - title: "Quick Start"
-        titlekr: "퀵스타트"
-        url: /dxl/x/xw540-h260/#quick-start
+#      - title: "Certifications"
+#        titlekr: "인증 획득"
+#        url: /dxl/x/xw540-h260/#certifications
+#       urlkr: /dxl/x/xw540-h260/#인증-획득
+#      - title: "Quick Start"
+#        titlekr: "퀵스타트"
+#        url: /dxl/x/xw540-h260/#quick-start
         urlkr: /dxl/x/xw540-h260/#퀵스타트
       - title: "Connector Information"
         titlekr: "커넥터 정보"
