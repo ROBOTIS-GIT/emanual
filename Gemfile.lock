@@ -27,7 +27,10 @@ GEM
       faraday-net_http (>= 2.0, < 3.2)
     faraday-net_http (3.1.0)
       net-http
+<<<<<<< HEAD
     ffi (1.16.3)
+=======
+>>>>>>> ROBOTIS-GIT-master
     ffi (1.16.3-x64-mingw-ucrt)
     ffi (1.16.3-x64-mingw32)
     forwardable-extended (2.6.0)
