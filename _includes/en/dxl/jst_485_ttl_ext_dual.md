@@ -1,4 +1,4 @@
-{% if page.ref=='xw540-t140' or page.ref=='xw540-t260' or page.ref=='xw430-t200' or page.ref=='xw430-t333' %}
+{% if page.ref=='xw540-t140' or page.ref=='xw540-t260' or page.ref=='xw430-t200' or page.ref=='xw430-t333' or page.ref=='xw540-h260' %}
 
 |           Item           |                            RS-485                            |
 |:------------------------:|:------------------------------------------------------------:|
