@@ -43,6 +43,7 @@ The DYNAMIXEL SDK supports **all DYNAMIXEL series**.
 | **PRO H(A)**     | [H42-20-S300-R(A)]                                           | [H54-100-S500-R(A)]               | [H54-200-S500-R(A)]            |                                |                 |
 | **PM**           | [PM54-060-S250-R]                                            | [PM54-040-S250-R]                 | [PM42-010-S260-R]              |                                |                 |
 | **PH**           | [PH42-020-S300-R]                                            | [PH54-100-S500-R]                 | [PH54-200-S500-R]              |                                |                 |
+| **YM**           | [YM070-210-M001-RH]<br>[YM070-210-R051-RH]<br>[YM070-210-R099-RH] | [YM080-230-M001-RH]<br/>[YM080-230-R051-RH]<br/>[YM080-230-R099-RH]    |           |                                |                 |
  
 ## [Supported Protocols](#supported-protocols)
 
@@ -147,3 +148,9 @@ In addition, DYNAMIXEL SDK supports **ROS**, so it can be used as ROS library us
 [PM54-060-S250-R]: /docs/en/dxl/p/pm54-060-s250-r/
 [PM54-040-S250-R]: /docs/en/dxl/p/pm54-040-s250-r/
 [PM42-010-S260-R]: /docs/en/dxl/p/pm42-010-s260-r/
+[YM070-210-M001-RH]: /docs/en/dxl/y/ym070-210-m001-rh
+[YM070-210-R051-RH]: /docs/en/dxl/y/ym070-210-r051-rh
+[YM070-210-R099-RH]: /docs/en/dxl/y/ym070-210-r099-rh
+[YM080-230-M001-RH]: /docs/en/dxl/y/ym080-230-m001-rh
+[YM080-230-R051-RH]: /docs/en/dxl/y/ym080-230-r051-rh
+[YM080-230-R099-RH]: /docs/en/dxl/y/ym080-230-r099-rh

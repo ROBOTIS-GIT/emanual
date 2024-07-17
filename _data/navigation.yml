@@ -9638,6 +9638,256 @@ xw540-t260:
         url: /dxl/x/xw540-t260/#moment-of-inertia
         urlkr: /dxl/x/xw540-t260/#moment-of-inertia
 
+xw540-h260:
+  - title: "Specifications"
+    titlekr: "주요 사양"
+    url: /dxl/x/xw540-h260/#specifications
+    urlkr: /dxl/x/xw540-h260/#주요-사양
+    children:
+      - title: "Performance Graph"
+        titlekr: "성능 그래프"
+        url: /dxl/x/xw540-h260/#performance-graph
+        urlkr: /dxl/x/xw540-h260/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/x/xw540-h260/#control-table
+    urlkr: /dxl/x/xw540-h260/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/x/xw540-h260/#control-table-data-address
+        urlkr: /dxl/x/xw540-h260/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
+            url: /dxl/x/xw540-h260/#area-eeprom-ram
+            urlkr: /dxl/x/xw540-h260/#영역-eeprom-ram
+          - title: "Size"
+            titlekr: "크기"
+            url: /dxl/x/xw540-h260/#size
+            urlkr: /dxl/x/xw540-h260/#크기
+          - title: "Access"
+            titlekr: "접근권한"
+            url: /dxl/x/xw540-h260/#access
+            urlkr: /dxl/x/xw540-h260/#접근권한
+          - title: "Initial Value"
+            titlekr: "기본값"
+            url: /dxl/x/xw540-h260/#initial-value
+            urlkr: /dxl/x/xw540-h260/#기본값
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/x/xw540-h260/#control-table-of-eeprom-area
+        urlkr: /dxl/x/xw540-h260/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/x/xw540-h260/#control-table-of-ram-area
+        urlkr: /dxl/x/xw540-h260/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/x/xw540-h260/#control-table-description
+        urlkr: /dxl/x/xw540-h260/#컨트롤-테이블-설명
+        children:
+        - title: "Model Number(0)"
+          titlekr: "Model Number(0)"
+          url: /dxl/x/xw540-h260/#model-number0
+        - title: "Firmware Version(6)"
+          titlekr: "Firmware Version(6)"
+          url: /dxl/x/xw540-h260/#firmware-version6
+        - title: "ID(7)"
+          titlekr: "ID(7)"
+          url: /dxl/x/xw540-h260/#id7
+        - title: "Baud Rate(8)"
+          titlekr: "Baud Rate(8)"
+          url: /dxl/x/xw540-h260/#baud-rate8
+        - title: "Return Delay Time(9)"
+          titlekr: "Return Delay Time(9)"
+          url: /dxl/x/xw540-h260/#return-delay-time9
+        - title: "Drive Mode(10)"
+          titlekr: "Drive Mode(10)"
+          url: /dxl/x/xw540-h260/#drive-mode10
+        - title: "Operating Mode(11)"
+          titlekr: "Operating Mode(11)"
+          url: /dxl/x/xw540-h260/#operating-mode11
+        - title: "Secondary(Shadow) ID(12)"
+          titlekr: "Secondary(Shadow) ID(12)"
+          url: /dxl/x/xw540-h260/#secondaryshadow-id12
+        - title: "Protocol Type(13)"
+          titlekr: "Protocol Type(13)"
+          url: /dxl/x/xw540-h260/#protocol-type13
+        - title: "Homing Offset(20)"
+          titlekr: "Homing Offset(20)"
+          url: /dxl/x/xw540-h260/#homing-offset20
+        - title: "Moving Threshold(24)"
+          titlekr: "Moving Threshold(24)"
+          url: /dxl/x/xw540-h260/#moving-threshold24
+        - title: "Temperature Limit(31)"
+          titlekr: "Temperature Limit(31)"
+          url: /dxl/x/xw540-h260/#temperature-limit31
+        - title: "Min/Max Voltage Limit(32,34)"
+          titlekr: "Min/Max Voltage Limit(32,34)"
+          url: /dxl/x/xw540-h260/#minmax-voltage-limit32-34
+        - title: "PWM Lmit(36)"
+          titlekr: "PWM Limit(36)"
+          url: /dxl/x/xw540-h260/#pwm-limit36
+        - title: "Current Limit(38)"
+          titlekr: "Current Limit(38)"
+          url: /dxl/x/xw540-h260/#current-limit38
+        - title: "Velocity Limit(44)"
+          titlekr: "Velocity Limit(44)"
+          url: /dxl/x/xw540-h260/#velocity-limit44
+        - title: "Min/Max Position Limit(48, 52)"
+          titlekr: "Min/Max Position Limit(48, 52)"
+          url: /dxl/x/xw540-h260/#minmax-position-limit48-52
+        - title: "Startup Configuration(60)"
+          titlekr: "Startup Configuration(60)"
+          url: /dxl/x/xw540-h260/#startup-configuration60
+        - title: "Shutdown(63)"
+          titlekr: "Shutdown(63)"
+          url: /dxl/x/xw540-h260/#shutdown63
+        - title: "Torque Enable(64)"
+          titlekr: "Torque Enable(64)"
+          url: /dxl/x/xw540-h260/#torque-enable64
+        - title: "Status Return Level(68)"
+          titlekr: "Status Return Level(68)"
+          url: /dxl/x/xw540-h260/#status-return-level68
+        - title: "Registered Instruction(69)"
+          titlekr: "Registered Instruction(69)"
+          url: /dxl/x/xw540-h260/#registered-instruction69
+        - title: "Hardware Error Status(70)"
+          titlekr: "Hardware Error Status(70)"
+          url: /dxl/x/xw540-h260/#hardware-error-status70
+        - title: "Velocity PI Gain(76, 78)"
+          titlekr: "Velocity PI Gain(76, 78)"
+          url: /dxl/x/xw540-h260/#velocity-pi-gain76-78
+        - title: "Position PID Gain(80, 82, 84)"
+          titlekr: "Position PID Gain(80, 82, 84)"
+          url: /dxl/x/xw540-h260/#position-pid-gain80-82-84
+        - title: "Feedforward 1st/2nd Gains(88, 90)"
+          titlekr: "Feedforward 1st/2nd Gains(88, 90)"
+          url: /dxl/x/xw540-h260/#feedforward-1st2nd-gains88-90
+        - title: "BUS Watchdog(98)"
+          titlekr: "BUS Watchdog(98)"
+          url: /dxl/x/xw540-h260/#bus-watchdog98
+        - title: "Goal PWM(100)"
+          titlekr: "Goal PWM(100)"
+          url: /dxl/x/xw540-h260/#goal-pwm100
+        - title: "Goal Current(102)"
+          titlekr: "Goal Current(102)"
+          url: /dxl/x/xw540-h260/#goal-current102
+        - title: "Goal Velocity(104)"
+          titlekr: "Goal Velocity(104)"
+          url: /dxl/x/xw540-h260/#goal-velocity104
+        - title: "Profile Acceleration(108)"
+          titlekr: "Profile Acceleration(108)"
+          url: /dxl/x/xw540-h260/#profile-acceleration108
+        - title: "Profile Velocity(112)"
+          titlekr: "Profile Velocity(112)"
+          url: /dxl/x/xw540-h260/#profile-velocity112
+        - title: "Goal Position(116)"
+          titlekr: "Goal Position(116)"
+          url: /dxl/x/xw540-h260/#goal-position116
+        - title: "Realtime Tick(120)"
+          titlekr: "Realtime Tick(120)"
+          url: /dxl/x/xw540-h260/#realtime-tick120
+        - title: "Moving(122)"
+          titlekr: "Moving(122)"
+          url: /dxl/x/xw540-h260/#moving122
+        - title: "Moving Status(123)"
+          titlekr: "Moving Status(123)"
+          url: /dxl/x/xw540-h260/#moving-status123
+        - title: "Present PWM(124)"
+          titlekr: "Present PWM(124)"
+          url: /dxl/x/xw540-h260/#present-pwm124
+        - title: "Present Current(126)"
+          titlekr: "Present Current(126)"
+          url: /dxl/x/xw540-h260/#present-current126
+        - title: "Present Velocity(128)"
+          titlekr: "Present Velocity(128)"
+          url: /dxl/x/xw540-h260/#present-velocity128
+        - title: "Present Position(132)"
+          titlekr: "Present Position(132)"
+          url: /dxl/x/xw540-h260/#present-position132
+        - title: "Velocity Trajectory(136)"
+          titlekr: "Velocity Trajectory(136)"
+          url: /dxl/x/xw540-h260/#velocity-trajectory136
+        - title: "Position Trajectory(140)"
+          titlekr: "Position Trajectory(140)"
+          url: /dxl/x/xw540-h260/#position-trajectory140
+        - title: "Present Input Voltage(144)"
+          titlekr: "Present Input Voltage(144)"
+          url: /dxl/x/xw540-h260/#present-input-voltage144
+        - title: "Present Temperature(146)"
+          titlekr: "Present Temperature(146)"
+          url: /dxl/x/xw540-h260/#present-temperature146
+        - title: "Indirect Address"
+          titlekr: "Indirect Address"
+          url: /dxl/x/xw540-h260/#indirect-address
+        - title: "Backup Ready(147)"
+          titlekr: "Backup Ready(147)"
+          url: /dxl/x/xw540-h260/#backup-ready147
+        - title: "Indirect Data"
+          titlekr: "Indirect Data"
+          url: /dxl/x/xw540-h260/#indirect-data
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/x/xw540-h260/#how-to-assemble
+    urlkr: /dxl/x/xw540-h260/#조립-예시
+    children:
+      - title: "Frame Assembly"
+        titlekr: "프레임 조립"
+        url: /dxl/x/xw540-h260/#frame-assembly
+        urlkr: /dxl/x/xw540-h260/#프레임-조립
+      - title: "Idler Horn Assembly"
+        titlekr: "아이들러 혼 조립"
+        url: /dxl/x/xw540-h260/#idler-horn-assembly
+        urlkr: /dxl/x/xw540-h260/#아이들러-혼-조립
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/x/xw540-h260/#maintenance
+    urlkr: /dxl/x/xw540-h260/#유지보수
+    children:
+      - title: "Horn, Gear Replacement"
+        titlekr: "혼과 기어 교체"
+        url: /dxl/x/xw540-h260/#horn-and-gear-replacement
+        urlkr: /dxl/x/xw540-h260/#혼과-기어-교체
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/x/xw540-h260/#reference
+    urlkr: /dxl/x/xw540-h260/#참고자료
+    children:
+      - title: "What is the Profile"
+        titlekr: "Profile"
+        url: /dxl/x/xw540-h260/#what-is-the-profile
+        urlkr: /dxl/x/xw540-h260/#profile
+#      - title: "Certifications"
+#        titlekr: "인증 획득"
+#        url: /dxl/x/xw540-h260/#certifications
+#       urlkr: /dxl/x/xw540-h260/#인증-획득
+#      - title: "Quick Start"
+#        titlekr: "퀵스타트"
+#        url: /dxl/x/xw540-h260/#quick-start
+        urlkr: /dxl/x/xw540-h260/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/x/xw540-h260/#connector-information
+        urlkr: /dxl/x/xw540-h260/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/x/xw540-h260/#communication-circuit
+        urlkr: /dxl/x/xw540-h260/#통신-회로
+      - title: "How to Use the Water Proof Cable"
+        titlekr: "케이블 연결 및 분리"
+        url: /dxl/x/xw540-h260/#how-to-use-the-water-proof-cable
+        urlkr: /dxl/x/xw540-h260/#케이블-연결-및-분리
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/x/xw540-h260/#drawings
+        urlkr: /dxl/x/xw540-h260/#도면
+      - title: "Moment of Inertia"
+        titlekr: "Moment of Inertia"
+        url: /dxl/x/xw540-h260/#moment-of-inertia
+        urlkr: /dxl/x/xw540-h260/#moment-of-inertia
+
 #XW430-T333 sidebar
 xw430-t333:
   - title: "Specifications"
@@ -18910,6 +19160,336 @@ ym070-210-m001-rh:
         url: /dxl/y/ym070-210-m001-rh/#tables
         urlkr: /dxl/y/ym070-210-m001-rh/#테이블
 
+ym070-210-b001-rh:
+  - title: "Specifications"
+    titlekr: "주요 사양"
+    url: /dxl/y/ym070-210-b001-rh/#specifications
+    urlkr: /dxl/y/ym070-210-b001-rh/#주요-사양
+    children:
+      - title: "Performance Graph"
+        titlekr: "성능 그래프"
+        url: /dxl/y/ym070-210-b001-rh/#performance-graph
+        urlkr: /dxl/y/ym070-210-b001-rh/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/y/ym070-210-b001-rh/#control-table
+    urlkr: /dxl/y/ym070-210-b001-rh/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/y/ym070-210-b001-rh/#control-table-data-address
+        urlkr: /dxl/y/ym070-210-b001-rh/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM, Hybrid)"
+            url: /dxl/y/ym070-210-b001-rh/#area-eeprom-ram-hybrid
+            urlkr: /dxl/y/ym070-210-b001-rh/#영역-eeprom-ram-hybrid
+          - title: "Size"
+            titlekr: "크기"
+            url: /dxl/y/ym070-210-b001-rh/#size
+            urlkr: /dxl/y/ym070-210-b001-rh/#크기
+          - title: "Access Authorization"
+            titlekr: "접근권한"
+            url: /dxl/y/ym070-210-b001-rh/#access-authorization
+            urlkr: /dxl/y/ym070-210-b001-rh/#접근권한
+          - title: "Default Values"
+            titlekr: "기본값"
+            url: /dxl/y/ym070-210-b001-rh/#default-values
+            urlkr: /dxl/y/ym070-210-b001-rh/#기본값
+      - title: "Control Table Configuration"
+        titlekr: "컨트롤 테이블 구성"
+        url: /dxl/y/ym070-210-b001-rh/#control-table-configuration
+        urlkr: /dxl/y/ym070-210-b001-rh/#컨트롤-테이블-구성
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/y/ym070-210-b001-rh/#control-table-description
+        urlkr: /dxl/y/ym070-210-b001-rh/#컨트롤-테이블-설명
+        children:
+          - title: "Model Number(0)"
+            titlekr: "Model Number(0)"
+            url: /dxl/y/ym070-210-b001-rh/#model-number0
+          - title: "Model Information(2)"
+            titlekr: "Model Information(2)"
+            url: /dxl/y/ym070-210-b001-rh/#model-information2
+          - title: "Firmware Version(6)"
+            titlekr: "Firmware Version(6)"
+            url: /dxl/y/ym070-210-b001-rh/#firmware-version6
+          - title: "ID(7)"
+            titlekr: "ID(7)"
+            url: /dxl/y/ym070-210-b001-rh/#id7
+          - title: "Bus Watchdog(8)"
+            titlekr: "Bus Watchdog(8)"
+            url: /dxl/y/ym070-210-b001-rh/#bus-watchdog8
+          - title: "Secondary(Shadow) ID(10)"
+            titlekr: "Secondary(Shadow) ID(10)"
+            url: /dxl/y/ym070-210-b001-rh/#secondaryshadow-id10
+          - title: "Protocol Type(11)"
+            titlekr: "Protocol Type(11)"
+            url: /dxl/y/ym070-210-b001-rh/#protocol-type11
+          - title: "Baud Rate (Bus)(12)"
+            titlekr: "Baud Rate (Bus)(12)"
+            url: /dxl/y/ym070-210-b001-rh/#baud-rate-bus12
+          - title: "Return Delay Time(13)"
+            titlekr: "Return Delay Time(13)"
+            url: /dxl/y/ym070-210-b001-rh/#return-delay-time13
+          - title: "Status Return Level(15)"
+            titlekr: "Status Return Level(15)"
+            url: /dxl/y/ym070-210-b001-rh/#status-return-level15
+          - title: "Registered Instruction(16)"
+            titlekr: "Registered Instruction(16)"
+            url: /dxl/y/ym070-210-b001-rh/#registered-instruction16
+          - title: "Drive Mode(32)"
+            titlekr: "Drive Mode(32)"
+            url: /dxl/y/ym070-210-b001-rh/#drive-mode32
+          - title: "Operating Mode(33)"
+            titlekr: "Operating Mode(33)"
+            url: /dxl/y/ym070-210-b001-rh/#operating-mode33
+          - title: "Startup Configuration(34)"
+            titlekr: "Startup Configuration(34)"
+            url: /dxl/y/ym070-210-b001-rh/#startup-configuration34
+          - title: "Position Limit Threshold(38)"
+            titlekr: "Position Limit Threshold(38)"
+            url: /dxl/y/ym070-210-b001-rh/#position-limit-threshold38
+          - title: "In-Position Threshold(40)"
+            titlekr: "In-Position Threshold(40)"
+            url: /dxl/y/ym070-210-b001-rh/#in-position-threshold40
+          - title: "Following Error Threshold(44)"
+            titlekr: "Following Error Threshold(44)"
+            url: /dxl/y/ym070-210-b001-rh/#following-error-threshold44
+          - title: "Moving Threshold(48)"
+            titlekr: "Moving Threshold(48)"
+            url: /dxl/y/ym070-210-b001-rh/#moving-threshold48
+          - title: "Homing Offset(52)"
+            titlekr: "Homing Offset(52)"
+            url: /dxl/y/ym070-210-b001-rh/#homing-offset52
+          - title: "Inverter/Motor Temperature Limit(56, 57) "
+            titlekr: "Inverter/Motor Temperature Limit(56, 57) "
+            url: /dxl/y/ym070-210-b001-rh/#invertermotor-temperature-limit56-57
+          - title: "Max/Min Voltage Limit(60, 62)"
+            titlekr: "Max/Min Voltage Limit(60, 62)"
+            url: /dxl/y/ym070-210-b001-rh/#maxmin-voltage-limit60-62
+          - title: "PWM Limit(64)"
+            titlekr: "PWM Limit(64)"
+            url: /dxl/y/ym070-210-b001-rh/#pwm-limit64
+          - title: "Current Limit(66)"
+            titlekr: "Current Limit(66)"
+            url: /dxl/y/ym070-210-b001-rh/#current-limit66
+          - title: "Acceleration Limit(68)"
+            titlekr: "Acceleration Limit(68)"
+            url: /dxl/y/ym070-210-b001-rh/#acceleration-limit68
+          - title: "Velocity Limit(72)"
+            titlekr: "Velocity Limit(72)"
+            url: /dxl/y/ym070-210-b001-rh/#velocity-limit72
+          - title: "Max/Min Position Limit(76, 84)"
+            titlekr: "Max/Min Position Limit(76, 84)"
+            url: /dxl/y/ym070-210-b001-rh/#maxmin-position-limit76-84
+          - title: "Electronic Gear Ratio Numerator/Denominator(96, 100)"
+            titlekr: "Electronic Gear Ratio Numerator/Denominator(96, 100)"
+            url: /dxl/y/ym070-210-b001-rh/#electronic-gear-ratio-numeratordenominator96-100
+          - title: "Torque ON-OFF Timing Chart"
+            titlekr: "Torque ON-OFF Timing Chart"
+            url: /dxl/y/ym070-210-b001-rh/#torque-on-off-timing-chart          
+          - title: "Safe Stop Time(104)"
+            titlekr: "Safe Stop Time(104)"
+            url: /dxl/y/ym070-210-b001-rh/#safe-stop-time104
+          - title: "Brake Delay(106), Goal Update Delay(108)"
+            titlekr: "Brake Delay(106), Goal Update Delay(108)"
+            url: /dxl/y/ym070-210-b001-rh/#brake-delay106-goal-update-delay108
+          - title: "Overexcitation Voltage(110), Normal Excitation Voltage(111), Overexcitation Time(112)"
+            titlekr: "Overexcitation Voltage(110), Normal Excitation Voltage(111), Overexcitation Time(112)"
+            url: /dxl/y/ym070-210-b001-rh/#overexcitation-voltage110-normal-excitation-voltage111-overexcitation-time112
+          - title: "Present Velocity LPF Frequency(132)"
+            titlekr: "Present Velocity LPF Frequency(132)"
+            url: /dxl/y/ym070-210-b001-rh/#present-velocity-lpf-frequency132
+          - title: "Goal Current LPF Frequency(134)"
+            titlekr: "Goal Current LPF Frequency(134)"
+            url: /dxl/y/ym070-210-b001-rh/#goal-current-lpf-frequency134
+          - title: "Position FF LPF Time(136)"
+            titlekr: "Position FF LPF Time(136)"
+            url: /dxl/y/ym070-210-b001-rh/#position-ff-lpf-time136
+          - title: "Velocity FF LPF Time(138)"
+            titlekr: "Velocity FF LPF Time(138)"
+            url: /dxl/y/ym070-210-b001-rh/#velocity-ff-lpf-time138
+          - title: "Controller State(152)"
+            titlekr: "Controller State(152)"
+            url: /dxl/y/ym070-210-b001-rh/#controller-state152
+          - title: "Error Code(153)"
+            titlekr: "Error Code(153)"
+            url: /dxl/y/ym070-210-b001-rh/#error-code153
+          - title: "Error Code History"
+            titlekr: "Error Code History"
+            url: /dxl/y/ym070-210-b001-rh/#error-code-history
+          - title: "Hybrid Save(170)"
+            titlekr: "Hybrid Save(170)"
+            url: /dxl/y/ym070-210-b001-rh/#hybrid-save170
+          - title: "Velocity I Gain(212), Velocity P Gain(216), Velocity FF Gain(220)"
+            titlekr: "Velocity I Gain(212), Velocity P Gain(216), Velocity FF Gain(220)"
+            url: /dxl/y/ym070-210-b001-rh/#velocity-i-gain212-velocity-p-gain216-velocity-ff-gain220
+          - title: "Position D Gain(224), Position I Gain(228), Position P Gain(232), Position FF Gain(236)"
+            titlekr: "Position D Gain(224), Position I Gain(228), Position P Gain(232), Position FF Gain(236)"
+            url: /dxl/y/ym070-210-b001-rh/#position-d-gain224-position-i-gain228-position-p-gain232-position-ff-gain236
+          - title: "Profile Acceleration(240), Profile Velocity(244)"
+            titlekr: "Profile Acceleration(240), Profile Velocity(244)"
+            url: /dxl/y/ym070-210-b001-rh/#profile-acceleration240-profile-velocity244
+          - title: "Profile Acceleration Time(248), Profile Time(252)"
+            titlekr: "Profile Acceleration Time(248), Profile Time(252)"
+            url: /dxl/y/ym070-210-b001-rh/#profile-acceleration-time248-profile-time252
+          - title: "Indirect Address"
+            titlekr: "Indirect Address/Data"
+            url: /dxl/y/ym070-210-b001-rh/#indirect-address-indirect-data            
+          - title: "Torque Enable(512)"
+            titlekr: "Torque Enable(512)"
+            url: /dxl/y/ym070-210-b001-rh/#torque-enable512
+          - title: "LED(513)"
+            titlekr: "LED(513)"
+            url: /dxl/y/ym070-210-b001-rh/#led513
+          - title: "PWM/Current/Velocity Offset(516, 518, 520)"
+            titlekr: "PWM/Current/Velocity Offset(516, 518, 520)"
+            url: /dxl/y/ym070-210-b001-rh/#pwmcurrentvelocity-offset516-518-520
+          - title: "Goal PWM(524)"
+            titlekr: "Goal PWM(524)"
+            url: /dxl/y/ym070-210-b001-rh/#goal-pwm524
+          - title: "Goal Current(526)"
+            titlekr: "Goal Current(526)"
+            url: /dxl/y/ym070-210-b001-rh/#goal-current526
+          - title: "Goal Velocity(528)"
+            titlekr: "Goal Velocity(528)"
+            url: /dxl/y/ym070-210-b001-rh/#goal-velocity528
+          - title: "Goal Position(532)"
+            titlekr: "Goal Position(532)"
+            url: /dxl/y/ym070-210-b001-rh/#goal-position532
+          - title: "Moving Status(541)"
+            titlekr: "Moving Status(541)"
+            url: /dxl/y/ym070-210-b001-rh/#moving-status541
+          - title: "Realtime Tick(542)"
+            titlekr: "Realtime Tick(542)"
+            url: /dxl/y/ym070-210-b001-rh/#realtime-tick542
+          - title: "Present PWM(544)"
+            titlekr: "Present PWM(544)"
+            url: /dxl/y/ym070-210-b001-rh/#present-pwm544
+          - title: "Present Current(546)"
+            titlekr: "Present Current(546)"
+            url: /dxl/y/ym070-210-b001-rh/#present-current546
+          - title: "Present Velocity(548)"
+            titlekr: "Present Velocity(548)"
+            url: /dxl/y/ym070-210-b001-rh/#present-velocity548
+          - title: "Present Position(552)"
+            titlekr: "Present Position(552)"
+            url: /dxl/y/ym070-210-b001-rh/#present-position552
+          - title: "Position Trajectory(560)"
+            titlekr: "Position Trajectory(560)"
+            url: /dxl/y/ym070-210-b001-rh/#position-trajectory560
+          - title: "Velocity Trajectory(564)"
+            titlekr: "Velocity Trajectory(564)"
+            url: /dxl/y/ym070-210-b001-rh/#velocity-trajectory564
+          - title: "Present Input Voltage(568)"
+            titlekr: "Present Input Voltage(568)"
+            url: /dxl/y/ym070-210-b001-rh/#present-input-voltage568
+          - title: "Present Inverter Temperature(570)"
+            titlekr: "Present Inverter Temperature(570)"
+            url: /dxl/y/ym070-210-b001-rh/#present-inverter-temperature570
+          - title: "Present Motor Temperature(571)"
+            titlekr: "Present Motor Temperature(571)"
+            url: /dxl/y/ym070-210-b001-rh/#present-motor-temperature571
+          - title: "Backup Ready(919)"
+            titlekr: "Backup Ready(919)"
+            url: /dxl/y/ym070-210-b001-rh/#backup-ready919
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/y/ym070-210-b001-rh/#how-to-assemble
+    urlkr: /dxl/y/ym070-210-b001-rh/#조립-예시
+    children:
+      - title: Assembly Guide
+        titlekr: 조립가이드
+        url: /dxl/y/ym070-210-b001-rh/#assembly-guide
+        urlkr: /dxl/y/ym070-210-b001-rh/#조립가이드
+  - title: "Maintenance"
+    titlekr: "유지 보수"
+    url: /dxl/y/ym070-210-b001-rh/#maintenance
+    urlkr: /dxl/y/ym070-210-b001-rh/#유지-보수
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/y/ym070-210-b001-rh/#reference
+    urlkr: /dxl/y/ym070-210-b001-rh/#참고자료
+    children:
+      - title: "Profile"
+        titlekr: "Profile"
+        url: /dxl/y/ym070-210-b001-rh/#profile
+        urlkr: /dxl/y/ym070-210-b001-rh/#profile
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/y/ym070-210-b001-rh/#certifications
+        urlkr: /dxl/y/ym070-210-b001-rh/#인증-획득
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/y/ym070-210-b001-rh/#connector-information
+        urlkr: /dxl/y/ym070-210-b001-rh/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/y/ym070-210-b001-rh/#communication-circuit
+        urlkr: /dxl/y/ym070-210-b001-rh/#통신-회로
+      - title: "Cable Connection"
+        titlekr: "케이블 연결"
+        url: /dxl/y/ym070-210-b001-rh/#cable-connection
+        urlkr: /dxl/y/ym070-210-b001-rh/#케이블-연결
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/y/ym070-210-b001-rh/#drawings
+        urlkr: /dxl/y/ym070-210-b001-rh/#도면
+      - title: "Moment of Inertia"
+        titlekr: "Moment of Inertia"
+        url: /dxl/y/ym070-210-b001-rh/#moment-of-inertia
+        urlkr: /dxl/y/ym070-210-b001-rh/#moment-of-inertia
+  - title: "Clear Packet"
+    titlekr: "Clear Packet"
+    url: /dxl/y/ym070-210-b001-rh/#clear-packet
+    children:
+      - title: "Multi-turn Clear Packet"
+        titlekr: "Multi-turn Clear Packet"
+        url: /dxl/y/ym070-210-b001-rh/#multi-turn-clear-packet
+        children:
+          - title: "Multi-turn Clear Method"
+            titlekr: "Multi-turn Clear 방법"
+            url: /dxl/y/ym070-210-b001-rh/#multi-turn-clear-method
+            urlkr: /dxl/y/ym070-210-b001-rh/#multi-turn-clear-방법
+      - title: "Error Clear Packet"
+        titlekr: "Error Clear Packet"
+        url: /dxl/y/ym070-210-b001-rh/#error-clear-packet
+  - title: "Multi-turn backup Battery Replacement"
+    titlekr: "Multi-turn Backup 배터리 교체"
+    url: /dxl/y/ym070-210-b001-rh/#multi-turn-backup-battery-replacement 
+    urlkr: /dxl/y/ym070-210-b001-rh/#multi-turn-backup-배터리-교체
+    children:
+      - title: "Procedure for Battery Replacement"
+        titlekr: "배터리 교체 방법"
+        url: /dxl/y/ym070-210-b001-rh/#procedure-for-battery-replacement
+        urlkr: /dxl/y/ym070-210-b001-rh/#배터리-교체-방법
+  - title: "Output Bearing"
+    titlekr: "출력 베어링"
+    url: /dxl/y/ym070-210-b001-rh/#output-bearing
+    urlkr: /dxl/y/ym070-210-b001-rh/#출력-베어링
+    children:
+      - title: "Output bearing specifications (Table.B1)"
+        titlekr: "출력부 베어링 사양 (Table.B1)"
+        url: /dxl/y/ym070-210-b001-rh/#output-bearing-specifications-tableb1
+        urlkr: /dxl/y/ym070-210-b001-rh/#출력부-베어링-사양-tableb1
+      - title: "Output bearing life"
+        titlekr: "베어링 수명"
+        url: /dxl/y/ym070-210-b001-rh/#output-bearing-life
+        urlkr: /dxl/y/ym070-210-b001-rh/#베어링-수명
+      - title: "Allowable dynamic equivalent load, Pc_max"
+        titlekr: "허용 동등가 하중, Pc_max"
+        url: /dxl/y/ym070-210-b001-rh/#allowable-dynamic-equivalent-load-pc_max
+        urlkr: /dxl/y/ym070-210-b001-rh/#허용-동등가-하중-pc_max
+      - title: "Dynamic equivalent load, Pc"
+        titlekr: "동등가 하중, Pc"
+        url: /dxl/y/ym070-210-b001-rh/#dynamic-equivalent-load-pc
+        urlkr: /dxl/y/ym070-210-b001-rh/#동등가-하중-pc
+      - title: "Tables"
+        titlekr: "테이블"
+        url: /dxl/y/ym070-210-b001-rh/#tables
+        urlkr: /dxl/y/ym070-210-b001-rh/#테이블
+
 ym070-210-r051-rh:
   - title: "Specifications"
     titlekr: "주요 사양"
@@ -19578,6 +20158,674 @@ ym070-210-r099-rh:
         url: /dxl/y/ym070-210-r099-rh/#tables
         urlkr: /dxl/y/ym070-210-r099-rh/#테이블
 
+ym070-210-a051-rh:
+  - title: "Specifications"
+    titlekr: "주요 사양"
+    url: /dxl/y/ym070-210-a051-rh/#specifications
+    urlkr: /dxl/y/ym070-210-a051-rh/#주요-사양
+    children:
+      - title: "Performance Graph"
+        titlekr: "성능 그래프"
+        url: /dxl/y/ym070-210-a051-rh/#performance-graph
+        urlkr: /dxl/y/ym070-210-a051-rh/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/y/ym070-210-a051-rh/#control-table
+    urlkr: /dxl/y/ym070-210-a051-rh/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/y/ym070-210-a051-rh/#control-table-data-address
+        urlkr: /dxl/y/ym070-210-a051-rh/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM, Hybrid)"
+            url: /dxl/y/ym070-210-a051-rh/#area-eeprom-ram-hybrid
+            urlkr: /dxl/y/ym070-210-a051-rh/#영역-eeprom-ram-hybrid
+          - title: "Size"
+            titlekr: "크기"
+            url: /dxl/y/ym070-210-a051-rh/#size
+            urlkr: /dxl/y/ym070-210-a051-rh/#크기
+          - title: "Access Authorization"
+            titlekr: "접근권한"
+            url: /dxl/y/ym070-210-a051-rh/#access-authorization
+            urlkr: /dxl/y/ym070-210-a051-rh/#접근권한
+          - title: "Default Values"
+            titlekr: "기본값"
+            url: /dxl/y/ym070-210-a051-rh/#default-values
+            urlkr: /dxl/y/ym070-210-a051-rh/#기본값
+      - title: "Control Table Configuration"
+        titlekr: "컨트롤 테이블 구성"
+        url: /dxl/y/ym070-210-a051-rh/#control-table-configuration
+        urlkr: /dxl/y/ym070-210-a051-rh/#컨트롤-테이블-구성
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/y/ym070-210-a051-rh/#control-table-description
+        urlkr: /dxl/y/ym070-210-a051-rh/#컨트롤-테이블-설명
+        children:
+          - title: "Model Number(0)"
+            titlekr: "Model Number(0)"
+            url: /dxl/y/ym070-210-a051-rh/#model-number0
+          - title: "Model Information(2)"
+            titlekr: "Model Information(2)"
+            url: /dxl/y/ym070-210-a051-rh/#model-information2
+          - title: "Firmware Version(6)"
+            titlekr: "Firmware Version(6)"
+            url: /dxl/y/ym070-210-a051-rh/#firmware-version6
+          - title: "ID(7)"
+            titlekr: "ID(7)"
+            url: /dxl/y/ym070-210-a051-rh/#id7
+          - title: "Bus Watchdog(8)"
+            titlekr: "Bus Watchdog(8)"
+            url: /dxl/y/ym070-210-a051-rh/#bus-watchdog8
+          - title: "Secondary(Shadow) ID(10)"
+            titlekr: "Secondary(Shadow) ID(10)"
+            url: /dxl/y/ym070-210-a051-rh/#secondaryshadow-id10
+          - title: "Protocol Type(11)"
+            titlekr: "Protocol Type(11)"
+            url: /dxl/y/ym070-210-a051-rh/#protocol-type11
+          - title: "Baud Rate (Bus)(12)"
+            titlekr: "Baud Rate (Bus)(12)"
+            url: /dxl/y/ym070-210-a051-rh/#baud-rate-bus12
+          - title: "Return Delay Time(13)"
+            titlekr: "Return Delay Time(13)"
+            url: /dxl/y/ym070-210-a051-rh/#return-delay-time13
+          - title: "Status Return Level(15)"
+            titlekr: "Status Return Level(15)"
+            url: /dxl/y/ym070-210-a051-rh/#status-return-level15
+          - title: "Registered Instruction(16)"
+            titlekr: "Registered Instruction(16)"
+            url: /dxl/y/ym070-210-a051-rh/#registered-instruction16
+          - title: "Drive Mode(32)"
+            titlekr: "Drive Mode(32)"
+            url: /dxl/y/ym070-210-a051-rh/#drive-mode32
+          - title: "Operating Mode(33)"
+            titlekr: "Operating Mode(33)"
+            url: /dxl/y/ym070-210-a051-rh/#operating-mode33
+          - title: "Startup Configuration(34)"
+            titlekr: "Startup Configuration(34)"
+            url: /dxl/y/ym070-210-a051-rh/#startup-configuration34
+          - title: "Position Limit Threshold(38)"
+            titlekr: "Position Limit Threshold(38)"
+            url: /dxl/y/ym070-210-a051-rh/#position-limit-threshold38
+          - title: "In-Position Threshold(40)"
+            titlekr: "In-Position Threshold(40)"
+            url: /dxl/y/ym070-210-a051-rh/#in-position-threshold40
+          - title: "Following Error Threshold(44)"
+            titlekr: "Following Error Threshold(44)"
+            url: /dxl/y/ym070-210-a051-rh/#following-error-threshold44
+          - title: "Moving Threshold(48)"
+            titlekr: "Moving Threshold(48)"
+            url: /dxl/y/ym070-210-a051-rh/#moving-threshold48
+          - title: "Homing Offset(52)"
+            titlekr: "Homing Offset(52)"
+            url: /dxl/y/ym070-210-a051-rh/#homing-offset52
+          - title: "Inverter/Motor Temperature Limit(56, 57) "
+            titlekr: "Inverter/Motor Temperature Limit(56, 57) "
+            url: /dxl/y/ym070-210-a051-rh/#invertermotor-temperature-limit56-57
+          - title: "Max/Min Voltage Limit(60, 62)"
+            titlekr: "Max/Min Voltage Limit(60, 62)"
+            url: /dxl/y/ym070-210-a051-rh/#maxmin-voltage-limit60-62
+          - title: "PWM Limit(64)"
+            titlekr: "PWM Limit(64)"
+            url: /dxl/y/ym070-210-a051-rh/#pwm-limit64
+          - title: "Current Limit(66)"
+            titlekr: "Current Limit(66)"
+            url: /dxl/y/ym070-210-a051-rh/#current-limit66
+          - title: "Acceleration Limit(68)"
+            titlekr: "Acceleration Limit(68)"
+            url: /dxl/y/ym070-210-a051-rh/#acceleration-limit68
+          - title: "Velocity Limit(72)"
+            titlekr: "Velocity Limit(72)"
+            url: /dxl/y/ym070-210-a051-rh/#velocity-limit72
+          - title: "Max/Min Position Limit(76, 84)"
+            titlekr: "Max/Min Position Limit(76, 84)"
+            url: /dxl/y/ym070-210-a051-rh/#maxmin-position-limit76-84
+          - title: "Electronic Gear Ratio Numerator/Denominator(96, 100)"
+            titlekr: "Electronic Gear Ratio Numerator/Denominator(96, 100)"
+            url: /dxl/y/ym070-210-a051-rh/#electronic-gear-ratio-numeratordenominator96-100
+          - title: "Torque ON-OFF Timing Chart"
+            titlekr: "Torque ON-OFF Timing Chart"
+            url: /dxl/y/ym070-210-a051-rh/#torque-on-off-timing-chart          
+          - title: "Safe Stop Time(104)"
+            titlekr: "Safe Stop Time(104)"
+            url: /dxl/y/ym070-210-a051-rh/#safe-stop-time104
+          - title: "Brake Delay(106), Goal Update Delay(108)"
+            titlekr: "Brake Delay(106), Goal Update Delay(108)"
+            url: /dxl/y/ym070-210-a051-rh/#brake-delay106-goal-update-delay108
+          - title: "Overexcitation Voltage(110), Normal Excitation Voltage(111), Overexcitation Time(112)"
+            titlekr: "Overexcitation Voltage(110), Normal Excitation Voltage(111), Overexcitation Time(112)"
+            url: /dxl/y/ym070-210-a051-rh/#overexcitation-voltage110-normal-excitation-voltage111-overexcitation-time112
+          - title: "Present Velocity LPF Frequency(132)"
+            titlekr: "Present Velocity LPF Frequency(132)"
+            url: /dxl/y/ym070-210-a051-rh/#present-velocity-lpf-frequency132
+          - title: "Goal Current LPF Frequency(134)"
+            titlekr: "Goal Current LPF Frequency(134)"
+            url: /dxl/y/ym070-210-a051-rh/#goal-current-lpf-frequency134
+          - title: "Position FF LPF Time(136)"
+            titlekr: "Position FF LPF Time(136)"
+            url: /dxl/y/ym070-210-a051-rh/#position-ff-lpf-time136
+          - title: "Velocity FF LPF Time(138)"
+            titlekr: "Velocity FF LPF Time(138)"
+            url: /dxl/y/ym070-210-a051-rh/#velocity-ff-lpf-time138
+          - title: "Controller State(152)"
+            titlekr: "Controller State(152)"
+            url: /dxl/y/ym070-210-a051-rh/#controller-state152
+          - title: "Error Code(153)"
+            titlekr: "Error Code(153)"
+            url: /dxl/y/ym070-210-a051-rh/#error-code153
+          - title: "Error Code History"
+            titlekr: "Error Code History"
+            url: /dxl/y/ym070-210-a051-rh/#error-code-history
+          - title: "Hybrid Save(170)"
+            titlekr: "Hybrid Save(170)"
+            url: /dxl/y/ym070-210-a051-rh/#hybrid-save170
+          - title: "Velocity I Gain(212), Velocity P Gain(216), Velocity FF Gain(220)"
+            titlekr: "Velocity I Gain(212), Velocity P Gain(216), Velocity FF Gain(220)"
+            url: /dxl/y/ym070-210-a051-rh/#velocity-i-gain212-velocity-p-gain216-velocity-ff-gain220
+          - title: "Position D Gain(224), Position I Gain(228), Position P Gain(232), Position FF Gain(236)"
+            titlekr: "Position D Gain(224), Position I Gain(228), Position P Gain(232), Position FF Gain(236)"
+            url: /dxl/y/ym070-210-a051-rh/#position-d-gain224-position-i-gain228-position-p-gain232-position-ff-gain236
+          - title: "Profile Acceleration(240), Profile Velocity(244)"
+            titlekr: "Profile Acceleration(240), Profile Velocity(244)"
+            url: /dxl/y/ym070-210-a051-rh/#profile-acceleration240-profile-velocity244
+          - title: "Profile Acceleration Time(248), Profile Time(252)"
+            titlekr: "Profile Acceleration Time(248), Profile Time(252)"
+            url: /dxl/y/ym070-210-a051-rh/#profile-acceleration-time248-profile-time252
+          - title: "Indirect Address/Data"
+            titlekr: "Indirect Address/Data"
+            url: /dxl/y/ym070-210-a051-rh/#indirect-address-indirect-data    
+          - title: "Torque Enable(512)"
+            titlekr: "Torque Enable(512)"
+            url: /dxl/y/ym070-210-a051-rh/#torque-enable512
+          - title: "LED(513)"
+            titlekr: "LED(513)"
+            url: /dxl/y/ym070-210-a051-rh/#led513
+          - title: "PWM/Current/Velocity Offset(516, 518, 520)"
+            titlekr: "PWM/Current/Velocity Offset(516, 518, 520)"
+            url: /dxl/y/ym070-210-a051-rh/#pwmcurrentvelocity-offset516-518-520
+          - title: "Goal PWM(524)"
+            titlekr: "Goal PWM(524)"
+            url: /dxl/y/ym070-210-a051-rh/#goal-pwm524
+          - title: "Goal Current(526)"
+            titlekr: "Goal Current(526)"
+            url: /dxl/y/ym070-210-a051-rh/#goal-current526
+          - title: "Goal Velocity(528)"
+            titlekr: "Goal Velocity(528)"
+            url: /dxl/y/ym070-210-a051-rh/#goal-velocity528
+          - title: "Goal Position(532)"
+            titlekr: "Goal Position(532)"
+            url: /dxl/y/ym070-210-a051-rh/#goal-position532
+          - title: "Moving Status(541)"
+            titlekr: "Moving Status(541)"
+            url: /dxl/y/ym070-210-a051-rh/#moving-status541
+          - title: "Realtime Tick(542)"
+            titlekr: "Realtime Tick(542)"
+            url: /dxl/y/ym070-210-a051-rh/#realtime-tick542
+          - title: "Present PWM(544)"
+            titlekr: "Present PWM(544)"
+            url: /dxl/y/ym070-210-a051-rh/#present-pwm544
+          - title: "Present Current(546)"
+            titlekr: "Present Current(546)"
+            url: /dxl/y/ym070-210-a051-rh/#present-current546
+          - title: "Present Velocity(548)"
+            titlekr: "Present Velocity(548)"
+            url: /dxl/y/ym070-210-a051-rh/#present-velocity548
+          - title: "Present Position(552)"
+            titlekr: "Present Position(552)"
+            url: /dxl/y/ym070-210-a051-rh/#present-position552
+          - title: "Position Trajectory(560)"
+            titlekr: "Position Trajectory(560)"
+            url: /dxl/y/ym070-210-a051-rh/#position-trajectory560
+          - title: "Velocity Trajectory(564)"
+            titlekr: "Velocity Trajectory(564)"
+            url: /dxl/y/ym070-210-a051-rh/#velocity-trajectory564
+          - title: "Present Input Voltage(568)"
+            titlekr: "Present Input Voltage(568)"
+            url: /dxl/y/ym070-210-a051-rh/#present-input-voltage568
+          - title: "Present Inverter Temperature(570)"
+            titlekr: "Present Inverter Temperature(570)"
+            url: /dxl/y/ym070-210-a051-rh/#present-inverter-temperature570
+          - title: "Present Motor Temperature(571)"
+            titlekr: "Present Motor Temperature(571)"
+            url: /dxl/y/ym070-210-a051-rh/#present-motor-temperature571
+          - title: "Backup Ready(919)"
+            titlekr: "Backup Ready(919)"
+            url: /dxl/y/ym070-210-a051-rh/#backup-ready919
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/y/ym070-210-a051-rh/#how-to-assemble
+    urlkr: /dxl/y/ym070-210-a051-rh/#조립-예시
+    children:
+      - title: Assembly Guide
+        titlekr: 조립가이드
+        url: /dxl/y/ym070-210-a051-rh/#assembly-guide
+        urlkr: /dxl/y/ym070-210-a051-rh/#조립가이드
+  - title: "Maintenance"
+    titlekr: "유지 보수"
+    url: /dxl/y/ym070-210-a051-rh/#maintenance
+    urlkr: /dxl/y/ym070-210-a051-rh/#유지-보수
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/y/ym070-210-a051-rh/#reference
+    urlkr: /dxl/y/ym070-210-a051-rh/#참고자료
+    children:
+      - title: "Profile"
+        titlekr: "Profile"
+        url: /dxl/y/ym070-210-a051-rh/#profile
+        urlkr: /dxl/y/ym070-210-a051-rh/#profile
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/y/ym070-210-a051-rh/#certifications
+        urlkr: /dxl/y/ym070-210-a051-rh/#인증-획득
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/y/ym070-210-a051-rh/#connector-information
+        urlkr: /dxl/y/ym070-210-a051-rh/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/y/ym070-210-a051-rh/#communication-circuit
+        urlkr: /dxl/y/ym070-210-a051-rh/#통신-회로
+      - title: "Cable Connection"
+        titlekr: "케이블 연결"
+        url: /dxl/y/ym070-210-a051-rh/#cable-connection
+        urlkr: /dxl/y/ym070-210-a051-rh/#케이블-연결
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/y/ym070-210-a051-rh/#drawings
+        urlkr: /dxl/y/ym070-210-a051-rh/#도면
+      - title: "Moment of Inertia"
+        titlekr: "Moment of Inertia"
+        url: /dxl/y/ym070-210-a051-rh/#moment-of-inertia
+        urlkr: /dxl/y/ym070-210-a051-rh/#moment-of-inertia
+  - title: "Clear Packet"
+    titlekr: "Clear Packet"
+    url: /dxl/y/ym070-210-a051-rh/#clear-packet
+    children:
+      - title: "Multi-turn Clear Packet"
+        titlekr: "Multi-turn Clear Packet"
+        url: /dxl/y/ym070-210-a051-rh/#multi-turn-clear-packet
+        children:
+          - title: "Multi-turn Clear Method"
+            titlekr: "Multi-turn Clear 방법"
+            url: /dxl/y/ym070-210-a051-rh/#multi-turn-clear-method
+            urlkr: /dxl/y/ym070-210-a051-rh/#multi-turn-clear-방법
+      - title: "Error Clear Packet"
+        titlekr: "Error Clear Packet"
+        url: /dxl/y/ym070-210-a051-rh/#error-clear-packet
+  - title: "Multi-turn backup Battery Replacement"
+    titlekr: "Multi-turn Backup 배터리 교체"
+    url: /dxl/y/ym070-210-a051-rh/#multi-turn-backup-battery-replacement 
+    urlkr: /dxl/y/ym070-210-a051-rh/#multi-turn-backup-배터리-교체 
+    children:
+      - title: "Procedure for Battery Replacement"
+        titlekr: "배터리 교체 방법"
+        url: /dxl/y/ym070-210-a051-rh/#procedure-for-battery-replacement
+        urlkr: /dxl/y/ym070-210-a051-rh/#배터리-교체-방법
+  - title: "Output Bearing"
+    titlekr: "출력 베어링"
+    url: /dxl/y/ym070-210-a051-rh/#output-bearing
+    urlkr: /dxl/y/ym070-210-a051-rh/#출력-베어링
+    children:
+      - title: "Output bearing specifications (Table.B1)"
+        titlekr: "출력부 베어링 사양 (Table.B1)"
+        url: /dxl/y/ym070-210-a051-rh/#output-bearing-specifications-tableb1
+        urlkr: /dxl/y/ym070-210-a051-rh/#출력부-베어링-사양-tableb1
+      - title: "Output bearing life"
+        titlekr: "베어링 수명"
+        url: /dxl/y/ym070-210-a051-rh/#output-bearing-life
+        urlkr: /dxl/y/ym070-210-a051-rh/#베어링-수명
+      - title: "Allowable dynamic equivalent load, Pc_max"
+        titlekr: "허용 동등가 하중, Pc_max"
+        url: /dxl/y/ym070-210-a051-rh/#allowable-dynamic-equivalent-load-pc_max
+        urlkr: /dxl/y/ym070-210-a051-rh/#허용-동등가-하중-pc_max
+      - title: "Dynamic equivalent load, Pc"
+        titlekr: "동등가 하중, Pc"
+        url: /dxl/y/ym070-210-a051-rh/#dynamic-equivalent-load-pc
+        urlkr: /dxl/y/ym070-210-a051-rh/#동등가-하중-pc
+      - title: "Allowable radial load, Fr_max"
+        titlekr: "허용 반경방향 하중, Fr_max"
+        url: /dxl/y/ym070-210-a051-rh/#allowable-radial-load-fr_max
+        urlkr: /dxl/y/ym070-210-a051-rh/#허용-반경방향-하중-fr_max
+      - title: "Tables"
+        titlekr: "테이블"
+        url: /dxl/y/ym070-210-a051-rh/#tables
+        urlkr: /dxl/y/ym070-210-a051-rh/#테이블
+
+ym070-210-a099-rh:
+  - title: "Specifications"
+    titlekr: "주요 사양"
+    url: /dxl/y/ym070-210-a099-rh/#specifications
+    urlkr: /dxl/y/ym070-210-a099-rh/#주요-사양
+    children:
+      - title: "Performance Graph"
+        titlekr: "성능 그래프"
+        url: /dxl/y/ym070-210-a099-rh/#performance-graph
+        urlkr: /dxl/y/ym070-210-a099-rh/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/y/ym070-210-a099-rh/#control-table
+    urlkr: /dxl/y/ym070-210-a099-rh/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/y/ym070-210-a099-rh/#control-table-data-address
+        urlkr: /dxl/y/ym070-210-a099-rh/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM, Hybrid)"
+            url: /dxl/y/ym070-210-a099-rh/#area-eeprom-ram-hybrid
+            urlkr: /dxl/y/ym070-210-a099-rh/#영역-eeprom-ram-hybrid
+          - title: "Size"
+            titlekr: "크기"
+            url: /dxl/y/ym070-210-a099-rh/#size
+            urlkr: /dxl/y/ym070-210-a099-rh/#크기
+          - title: "Access Authorization"
+            titlekr: "접근권한"
+            url: /dxl/y/ym070-210-a099-rh/#access-authorization
+            urlkr: /dxl/y/ym070-210-a099-rh/#접근권한
+          - title: "Default Values"
+            titlekr: "기본값"
+            url: /dxl/y/ym070-210-a099-rh/#default-values
+            urlkr: /dxl/y/ym070-210-a099-rh/#기본값
+      - title: "Control Table Configuration"
+        titlekr: "컨트롤 테이블 구성"
+        url: /dxl/y/ym070-210-a099-rh/#control-table-configuration
+        urlkr: /dxl/y/ym070-210-a099-rh/#컨트롤-테이블-구성
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/y/ym070-210-a099-rh/#control-table-description
+        urlkr: /dxl/y/ym070-210-a099-rh/#컨트롤-테이블-설명
+        children:
+          - title: "Model Number(0)"
+            titlekr: "Model Number(0)"
+            url: /dxl/y/ym070-210-a099-rh/#model-number0
+          - title: "Model Information(2)"
+            titlekr: "Model Information(2)"
+            url: /dxl/y/ym070-210-a099-rh/#model-information2
+          - title: "Firmware Version(6)"
+            titlekr: "Firmware Version(6)"
+            url: /dxl/y/ym070-210-a099-rh/#firmware-version6
+          - title: "ID(7)"
+            titlekr: "ID(7)"
+            url: /dxl/y/ym070-210-a099-rh/#id7
+          - title: "Bus Watchdog(8)"
+            titlekr: "Bus Watchdog(8)"
+            url: /dxl/y/ym070-210-a099-rh/#bus-watchdog8
+          - title: "Secondary(Shadow) ID(10)"
+            titlekr: "Secondary(Shadow) ID(10)"
+            url: /dxl/y/ym070-210-a099-rh/#secondaryshadow-id10
+          - title: "Protocol Type(11)"
+            titlekr: "Protocol Type(11)"
+            url: /dxl/y/ym070-210-a099-rh/#protocol-type11
+          - title: "Baud Rate (Bus)(12)"
+            titlekr: "Baud Rate (Bus)(12)"
+            url: /dxl/y/ym070-210-a099-rh/#baud-rate-bus12
+          - title: "Return Delay Time(13)"
+            titlekr: "Return Delay Time(13)"
+            url: /dxl/y/ym070-210-a099-rh/#return-delay-time13
+          - title: "Status Return Level(15)"
+            titlekr: "Status Return Level(15)"
+            url: /dxl/y/ym070-210-a099-rh/#status-return-level15
+          - title: "Registered Instruction(16)"
+            titlekr: "Registered Instruction(16)"
+            url: /dxl/y/ym070-210-a099-rh/#registered-instruction16
+          - title: "Drive Mode(32)"
+            titlekr: "Drive Mode(32)"
+            url: /dxl/y/ym070-210-a099-rh/#drive-mode32
+          - title: "Operating Mode(33)"
+            titlekr: "Operating Mode(33)"
+            url: /dxl/y/ym070-210-a099-rh/#operating-mode33
+          - title: "Startup Configuration(34)"
+            titlekr: "Startup Configuration(34)"
+            url: /dxl/y/ym070-210-a099-rh/#startup-configuration34
+          - title: "Position Limit Threshold(38)"
+            titlekr: "Position Limit Threshold(38)"
+            url: /dxl/y/ym070-210-a099-rh/#position-limit-threshold38
+          - title: "In-Position Threshold(40)"
+            titlekr: "In-Position Threshold(40)"
+            url: /dxl/y/ym070-210-a099-rh/#in-position-threshold40
+          - title: "Following Error Threshold(44)"
+            titlekr: "Following Error Threshold(44)"
+            url: /dxl/y/ym070-210-a099-rh/#following-error-threshold44
+          - title: "Moving Threshold(48)"
+            titlekr: "Moving Threshold(48)"
+            url: /dxl/y/ym070-210-a099-rh/#moving-threshold48
+          - title: "Homing Offset(52)"
+            titlekr: "Homing Offset(52)"
+            url: /dxl/y/ym070-210-a099-rh/#homing-offset52
+          - title: "Inverter/Motor Temperature Limit(56, 57) "
+            titlekr: "Inverter/Motor Temperature Limit(56, 57) "
+            url: /dxl/y/ym070-210-a099-rh/#invertermotor-temperature-limit56-57
+          - title: "Max/Min Voltage Limit(60, 62)"
+            titlekr: "Max/Min Voltage Limit(60, 62)"
+            url: /dxl/y/ym070-210-a099-rh/#maxmin-voltage-limit60-62
+          - title: "PWM Limit(64)"
+            titlekr: "PWM Limit(64)"
+            url: /dxl/y/ym070-210-a099-rh/#pwm-limit64
+          - title: "Current Limit(66)"
+            titlekr: "Current Limit(66)"
+            url: /dxl/y/ym070-210-a099-rh/#current-limit66
+          - title: "Acceleration Limit(68)"
+            titlekr: "Acceleration Limit(68)"
+            url: /dxl/y/ym070-210-a099-rh/#acceleration-limit68
+          - title: "Velocity Limit(72)"
+            titlekr: "Velocity Limit(72)"
+            url: /dxl/y/ym070-210-a099-rh/#velocity-limit72
+          - title: "Max/Min Position Limit(76, 84)"
+            titlekr: "Max/Min Position Limit(76, 84)"
+            url: /dxl/y/ym070-210-a099-rh/#maxmin-position-limit76-84
+          - title: "Electronic Gear Ratio Numerator/Denominator(96, 100)"
+            titlekr: "Electronic Gear Ratio Numerator/Denominator(96, 100)"
+            url: /dxl/y/ym070-210-a099-rh/#electronic-gear-ratio-numeratordenominator96-100
+          - title: "Torque ON-OFF Timing Chart"
+            titlekr: "Torque ON-OFF Timing Chart"
+            url: /dxl/y/ym070-210-a099-rh/#torque-on-off-timing-chart          
+          - title: "Safe Stop Time(104)"
+            titlekr: "Safe Stop Time(104)"
+            url: /dxl/y/ym070-210-a099-rh/#safe-stop-time104
+          - title: "Brake Delay(106), Goal Update Delay(108)"
+            titlekr: "Brake Delay(106), Goal Update Delay(108)"
+            url: /dxl/y/ym070-210-a099-rh/#brake-delay106-goal-update-delay108
+          - title: "Overexcitation Voltage(110), Normal Excitation Voltage(111), Overexcitation Time(112)"
+            titlekr: "Overexcitation Voltage(110), Normal Excitation Voltage(111), Overexcitation Time(112)"
+            url: /dxl/y/ym070-210-a099-rh/#overexcitation-voltage110-normal-excitation-voltage111-overexcitation-time112
+          - title: "Present Velocity LPF Frequency(132)"
+            titlekr: "Present Velocity LPF Frequency(132)"
+            url: /dxl/y/ym070-210-a099-rh/#present-velocity-lpf-frequency132
+          - title: "Goal Current LPF Frequency(134)"
+            titlekr: "Goal Current LPF Frequency(134)"
+            url: /dxl/y/ym070-210-a099-rh/#goal-current-lpf-frequency134
+          - title: "Position FF LPF Time(136)"
+            titlekr: "Position FF LPF Time(136)"
+            url: /dxl/y/ym070-210-a099-rh/#position-ff-lpf-time136
+          - title: "Velocity FF LPF Time(138)"
+            titlekr: "Velocity FF LPF Time(138)"
+            url: /dxl/y/ym070-210-a099-rh/#velocity-ff-lpf-time138
+          - title: "Controller State(152)"
+            titlekr: "Controller State(152)"
+            url: /dxl/y/ym070-210-a099-rh/#controller-state152
+          - title: "Error Code(153)"
+            titlekr: "Error Code(153)"
+            url: /dxl/y/ym070-210-a099-rh/#error-code153
+          - title: "Error Code History"
+            titlekr: "Error Code History"
+            url: /dxl/y/ym070-210-a099-rh/#error-code-history
+          - title: "Hybrid Save(170)"
+            titlekr: "Hybrid Save(170)"
+            url: /dxl/y/ym070-210-a099-rh/#hybrid-save170
+          - title: "Velocity I Gain(212), Velocity P Gain(216), Velocity FF Gain(220)"
+            titlekr: "Velocity I Gain(212), Velocity P Gain(216), Velocity FF Gain(220)"
+            url: /dxl/y/ym070-210-a099-rh/#velocity-i-gain212-velocity-p-gain216-velocity-ff-gain220
+          - title: "Position D Gain(224), Position I Gain(228), Position P Gain(232), Position FF Gain(236)"
+            titlekr: "Position D Gain(224), Position I Gain(228), Position P Gain(232), Position FF Gain(236)"
+            url: /dxl/y/ym070-210-a099-rh/#position-d-gain224-position-i-gain228-position-p-gain232-position-ff-gain236
+          - title: "Profile Acceleration(240), Profile Velocity(244)"
+            titlekr: "Profile Acceleration(240), Profile Velocity(244)"
+            url: /dxl/y/ym070-210-a099-rh/#profile-acceleration240-profile-velocity244
+          - title: "Profile Acceleration Time(248), Profile Time(252)"
+            titlekr: "Profile Acceleration Time(248), Profile Time(252)"
+            url: /dxl/y/ym070-210-a099-rh/#profile-acceleration-time248-profile-time252
+          - title: "Indirect Address/Data"
+            titlekr: "Indirect Address/Data"
+            url: /dxl/y/ym070-210-a099-rh/#indirect-address-indirect-data
+          - title: "Torque Enable(512)"
+            titlekr: "Torque Enable(512)"
+            url: /dxl/y/ym070-210-a099-rh/#torque-enable512
+          - title: "LED(513)"
+            titlekr: "LED(513)"
+            url: /dxl/y/ym070-210-a099-rh/#led513
+          - title: "PWM/Current/Velocity Offset(516, 518, 520)"
+            titlekr: "PWM/Current/Velocity Offset(516, 518, 520)"
+            url: /dxl/y/ym070-210-a099-rh/#pwmcurrentvelocity-offset516-518-520
+          - title: "Goal PWM(524)"
+            titlekr: "Goal PWM(524)"
+            url: /dxl/y/ym070-210-a099-rh/#goal-pwm524
+          - title: "Goal Current(526)"
+            titlekr: "Goal Current(526)"
+            url: /dxl/y/ym070-210-a099-rh/#goal-current526
+          - title: "Goal Velocity(528)"
+            titlekr: "Goal Velocity(528)"
+            url: /dxl/y/ym070-210-a099-rh/#goal-velocity528
+          - title: "Goal Position(532)"
+            titlekr: "Goal Position(532)"
+            url: /dxl/y/ym070-210-a099-rh/#goal-position532
+          - title: "Moving Status(541)"
+            titlekr: "Moving Status(541)"
+            url: /dxl/y/ym070-210-a099-rh/#moving-status541
+          - title: "Realtime Tick(542)"
+            titlekr: "Realtime Tick(542)"
+            url: /dxl/y/ym070-210-a099-rh/#realtime-tick542
+          - title: "Present PWM(544)"
+            titlekr: "Present PWM(544)"
+            url: /dxl/y/ym070-210-a099-rh/#present-pwm544
+          - title: "Present Current(546)"
+            titlekr: "Present Current(546)"
+            url: /dxl/y/ym070-210-a099-rh/#present-current546
+          - title: "Present Velocity(548)"
+            titlekr: "Present Velocity(548)"
+            url: /dxl/y/ym070-210-a099-rh/#present-velocity548
+          - title: "Present Position(552)"
+            titlekr: "Present Position(552)"
+            url: /dxl/y/ym070-210-a099-rh/#present-position552
+          - title: "Position Trajectory(560)"
+            titlekr: "Position Trajectory(560)"
+            url: /dxl/y/ym070-210-a099-rh/#position-trajectory560
+          - title: "Velocity Trajectory(564)"
+            titlekr: "Velocity Trajectory(564)"
+            url: /dxl/y/ym070-210-a099-rh/#velocity-trajectory564
+          - title: "Present Input Voltage(568)"
+            titlekr: "Present Input Voltage(568)"
+            url: /dxl/y/ym070-210-a099-rh/#present-input-voltage568
+          - title: "Present Inverter Temperature(570)"
+            titlekr: "Present Inverter Temperature(570)"
+            url: /dxl/y/ym070-210-a099-rh/#present-inverter-temperature570
+          - title: "Present Motor Temperature(571)"
+            titlekr: "Present Motor Temperature(571)"
+            url: /dxl/y/ym070-210-a099-rh/#present-motor-temperature571
+          - title: "Backup Ready(919)"
+            titlekr: "Backup Ready(919)"
+            url: /dxl/y/ym070-210-a099-rh/#backup-ready919
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/y/ym070-210-a099-rh/#how-to-assemble
+    urlkr: /dxl/y/ym070-210-a099-rh/#조립-예시
+    children:
+      - title: Assembly Guide
+        titlekr: 조립가이드
+        url: /dxl/y/ym070-210-a099-rh/#assembly-guide
+        urlkr: /dxl/y/ym070-210-a099-rh/#조립가이드
+  - title: "Maintenance"
+    titlekr: "유지 보수"
+    url: /dxl/y/ym070-210-a099-rh/#maintenance
+    urlkr: /dxl/y/ym070-210-a099-rh/#유지-보수
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/y/ym070-210-a099-rh/#reference
+    urlkr: /dxl/y/ym070-210-a099-rh/#참고자료
+    children:
+      - title: "Profile"
+        titlekr: "Profile"
+        url: /dxl/y/ym070-210-a099-rh/#profile
+        urlkr: /dxl/y/ym070-210-a099-rh/#profile
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/y/ym070-210-a099-rh/#certifications
+        urlkr: /dxl/y/ym070-210-a099-rh/#인증-획득
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/y/ym070-210-a099-rh/#connector-information
+        urlkr: /dxl/y/ym070-210-a099-rh/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/y/ym070-210-a099-rh/#communication-circuit
+        urlkr: /dxl/y/ym070-210-a099-rh/#통신-회로
+      - title: "Cable Connection"
+        titlekr: "케이블 연결"
+        url: /dxl/y/ym070-210-a099-rh/#cable-connection
+        urlkr: /dxl/y/ym070-210-a099-rh/#케이블-연결
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/y/ym070-210-a099-rh/#drawings
+        urlkr: /dxl/y/ym070-210-a099-rh/#도면
+      - title: "Moment of Inertia"
+        titlekr: "Moment of Inertia"
+        url: /dxl/y/ym070-210-a099-rh/#moment-of-inertia
+        urlkr: /dxl/y/ym070-210-a099-rh/#moment-of-inertia
+  - title: "Clear Packet"
+    titlekr: "Clear Packet"
+    url: /dxl/y/ym070-210-a099-rh/#clear-packet
+    children:
+      - title: "Multi-turn Clear Packet"
+        titlekr: "Multi-turn Clear Packet"
+        url: /dxl/y/ym070-210-a099-rh/#multi-turn-clear-packet
+        children:
+          - title: "Multi-turn Clear Method"
+            titlekr: "Multi-turn Clear 방법"
+            url: /dxl/y/ym070-210-a099-rh/#multi-turn-clear-method
+            urlkr: /dxl/y/ym070-210-a099-rh/#multi-turn-clear-방법
+      - title: "Error Clear Packet"
+        titlekr: "Error Clear Packet"
+        url: /dxl/y/ym070-210-a099-rh/#error-clear-packet
+  - title: "Multi-turn backup Battery Replacement"
+    titlekr: "Multi-turn Backup 배터리 교체"
+    url: /dxl/y/ym070-210-a099-rh/#multi-turn-backup-battery-replacement 
+    urlkr: /dxl/y/ym070-210-a099-rh/#multi-turn-backup-배터리-교체 
+    children:
+      - title: "Procedure for Battery Replacement"
+        titlekr: "배터리 교체 방법"
+        url: /dxl/y/ym070-210-a099-rh/#procedure-for-battery-replacement
+        urlkr: /dxl/y/ym070-210-a099-rh/#배터리-교체-방법
+  - title: "Output Bearing"
+    titlekr: "출력 베어링"
+    url: /dxl/y/ym070-210-a099-rh/#output-bearing
+    urlkr: /dxl/y/ym070-210-a099-rh/#출력-베어링
+    children:
+      - title: "Output bearing specifications (Table.B1)"
+        titlekr: "출력부 베어링 사양 (Table.B1)"
+        url: /dxl/y/ym070-210-a099-rh/#output-bearing-specifications-tableb1
+        urlkr: /dxl/y/ym070-210-a099-rh/#출력부-베어링-사양-tableb1
+      - title: "Output bearing life"
+        titlekr: "베어링 수명"
+        url: /dxl/y/ym070-210-a099-rh/#output-bearing-life
+        urlkr: /dxl/y/ym070-210-a099-rh/#베어링-수명
+      - title: "Allowable dynamic equivalent load, Pc_max"
+        titlekr: "허용 동등가 하중, Pc_max"
+        url: /dxl/y/ym070-210-a099-rh/#allowable-dynamic-equivalent-load-pc_max
+        urlkr: /dxl/y/ym070-210-a099-rh/#허용-동등가-하중-pc_max
+      - title: "Dynamic equivalent load, Pc"
+        titlekr: "동등가 하중, Pc"
+        url: /dxl/y/ym070-210-a099-rh/#dynamic-equivalent-load-pc
+        urlkr: /dxl/y/ym070-210-a099-rh/#동등가-하중-pc
+      - title: "Allowable radial load, Fr_max"
+        titlekr: "허용 반경방향 하중, Fr_max"
+        url: /dxl/y/ym070-210-a099-rh/#allowable-radial-load-fr_max
+        urlkr: /dxl/y/ym070-210-a099-rh/#허용-반경방향-하중-fr_max
+      - title: "Tables"
+        titlekr: "테이블"
+        url: /dxl/y/ym070-210-a099-rh/#tables
+        urlkr: /dxl/y/ym070-210-a099-rh/#테이블
+
 ym080-230-m001-rh:
   - title: "Specifications"
     titlekr: "주요 사양"
@@ -19907,6 +21155,336 @@ ym080-230-m001-rh:
         titlekr: "테이블"
         url: /dxl/y/ym080-230-m001-rh/#tables
         urlkr: /dxl/y/ym080-230-m001-rh/#테이블
+
+ym080-230-b001-rh:
+  - title: "Specifications"
+    titlekr: "주요 사양"
+    url: /dxl/y/ym080-230-b001-rh/#specifications
+    urlkr: /dxl/y/ym080-230-b001-rh/#주요-사양
+    children:
+      - title: "Performance Graph"
+        titlekr: "성능 그래프"
+        url: /dxl/y/ym080-230-b001-rh/#performance-graph
+        urlkr: /dxl/y/ym080-230-b001-rh/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/y/ym080-230-b001-rh/#control-table
+    urlkr: /dxl/y/ym080-230-b001-rh/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/y/ym080-230-b001-rh/#control-table-data-address
+        urlkr: /dxl/y/ym080-230-b001-rh/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM, Hybrid)"
+            titlekr: "영역 (EEPROM, RAM, Hybrid)"
+            url: /dxl/y/ym080-230-b001-rh/#area-eeprom-ram-hybrid
+            urlkr: /dxl/y/ym080-230-b001-rh/#영역-eeprom-ram-hybrid
+          - title: "Size"
+            titlekr: "크기"
+            url: /dxl/y/ym080-230-b001-rh/#size
+            urlkr: /dxl/y/ym080-230-b001-rh/#크기
+          - title: "Access Authorization"
+            titlekr: "접근권한"
+            url: /dxl/y/ym080-230-b001-rh/#access-authorization
+            urlkr: /dxl/y/ym080-230-b001-rh/#접근권한
+          - title: "Default Values"
+            titlekr: "기본값"
+            url: /dxl/y/ym080-230-b001-rh/#default-values
+            urlkr: /dxl/y/ym080-230-b001-rh/#기본값
+      - title: "Control Table Configuration"
+        titlekr: "컨트롤 테이블 구성"
+        url: /dxl/y/ym080-230-b001-rh/#control-table-configuration
+        urlkr: /dxl/y/ym080-230-b001-rh/#컨트롤-테이블-구성
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/y/ym080-230-b001-rh/#control-table-description
+        urlkr: /dxl/y/ym080-230-b001-rh/#컨트롤-테이블-설명
+        children:
+          - title: "Model Number(0)"
+            titlekr: "Model Number(0)"
+            url: /dxl/y/ym080-230-b001-rh/#model-number0
+          - title: "Model Information(2)"
+            titlekr: "Model Information(2)"
+            url: /dxl/y/ym080-230-b001-rh/#model-information2
+          - title: "Firmware Version(6)"
+            titlekr: "Firmware Version(6)"
+            url: /dxl/y/ym080-230-b001-rh/#firmware-version6
+          - title: "ID(7)"
+            titlekr: "ID(7)"
+            url: /dxl/y/ym080-230-b001-rh/#id7
+          - title: "Bus Watchdog(8)"
+            titlekr: "Bus Watchdog(8)"
+            url: /dxl/y/ym080-230-b001-rh/#bus-watchdog8
+          - title: "Secondary(Shadow) ID(10)"
+            titlekr: "Secondary(Shadow) ID(10)"
+            url: /dxl/y/ym080-230-b001-rh/#secondaryshadow-id10
+          - title: "Protocol Type(11)"
+            titlekr: "Protocol Type(11)"
+            url: /dxl/y/ym080-230-b001-rh/#protocol-type11
+          - title: "Baud Rate (Bus)(12)"
+            titlekr: "Baud Rate (Bus)(12)"
+            url: /dxl/y/ym080-230-b001-rh/#baud-rate-bus12
+          - title: "Return Delay Time(13)"
+            titlekr: "Return Delay Time(13)"
+            url: /dxl/y/ym080-230-b001-rh/#return-delay-time13
+          - title: "Status Return Level(15)"
+            titlekr: "Status Return Level(15)"
+            url: /dxl/y/ym080-230-b001-rh/#status-return-level15
+          - title: "Registered Instruction(16)"
+            titlekr: "Registered Instruction(16)"
+            url: /dxl/y/ym080-230-b001-rh/#registered-instruction16
+          - title: "Drive Mode(32)"
+            titlekr: "Drive Mode(32)"
+            url: /dxl/y/ym080-230-b001-rh/#drive-mode32
+          - title: "Operating Mode(33)"
+            titlekr: "Operating Mode(33)"
+            url: /dxl/y/ym080-230-b001-rh/#operating-mode33
+          - title: "Startup Configuration(34)"
+            titlekr: "Startup Configuration(34)"
+            url: /dxl/y/ym080-230-b001-rh/#startup-configuration34
+          - title: "Position Limit Threshold(38)"
+            titlekr: "Position Limit Threshold(38)"
+            url: /dxl/y/ym080-230-b001-rh/#position-limit-threshold38
+          - title: "In-Position Threshold(40)"
+            titlekr: "In-Position Threshold(40)"
+            url: /dxl/y/ym080-230-b001-rh/#in-position-threshold40
+          - title: "Following Error Threshold(44)"
+            titlekr: "Following Error Threshold(44)"
+            url: /dxl/y/ym080-230-b001-rh/#following-error-threshold44
+          - title: "Moving Threshold(48)"
+            titlekr: "Moving Threshold(48)"
+            url: /dxl/y/ym080-230-b001-rh/#moving-threshold48
+          - title: "Homing Offset(52)"
+            titlekr: "Homing Offset(52)"
+            url: /dxl/y/ym080-230-b001-rh/#homing-offset52
+          - title: "Inverter/Motor Temperature Limit(56, 57) "
+            titlekr: "Inverter/Motor Temperature Limit(56, 57) "
+            url: /dxl/y/ym080-230-b001-rh/#invertermotor-temperature-limit56-57
+          - title: "Max/Min Voltage Limit(60, 62)"
+            titlekr: "Max/Min Voltage Limit(60, 62)"
+            url: /dxl/y/ym080-230-b001-rh/#maxmin-voltage-limit60-62
+          - title: "PWM Limit(64)"
+            titlekr: "PWM Limit(64)"
+            url: /dxl/y/ym080-230-b001-rh/#pwm-limit64
+          - title: "Current Limit(66)"
+            titlekr: "Current Limit(66)"
+            url: /dxl/y/ym080-230-b001-rh/#current-limit66
+          - title: "Acceleration Limit(68)"
+            titlekr: "Acceleration Limit(68)"
+            url: /dxl/y/ym080-230-b001-rh/#acceleration-limit68
+          - title: "Velocity Limit(72)"
+            titlekr: "Velocity Limit(72)"
+            url: /dxl/y/ym080-230-b001-rh/#velocity-limit72
+          - title: "Max/Min Position Limit(76, 84)"
+            titlekr: "Max/Min Position Limit(76, 84)"
+            url: /dxl/y/ym080-230-b001-rh/#maxmin-position-limit76-84
+          - title: "Electronic Gear Ratio Numerator/Denominator(96, 100)"
+            titlekr: "Electronic Gear Ratio Numerator/Denominator(96, 100)"
+            url: /dxl/y/ym080-230-b001-rh/#electronic-gear-ratio-numeratordenominator96-100
+          - title: "Torque ON-OFF Timing Chart"
+            titlekr: "Torque ON-OFF Timing Chart"
+            url: /dxl/y/ym080-230-b001-rh/#torque-on-off-timing-chart          
+          - title: "Safe Stop Time(104)"
+            titlekr: "Safe Stop Time(104)"
+            url: /dxl/y/ym080-230-b001-rh/#safe-stop-time104
+          - title: "Brake Delay(106), Goal Update Delay(108)"
+            titlekr: "Brake Delay(106), Goal Update Delay(108)"
+            url: /dxl/y/ym080-230-b001-rh/#brake-delay106-goal-update-delay108
+          - title: "Overexcitation Voltage(110), Normal Excitation Voltage(111), Overexcitation Time(112)"
+            titlekr: "Overexcitation Voltage(110), Normal Excitation Voltage(111), Overexcitation Time(112)"
+            url: /dxl/y/ym080-230-b001-rh/#overexcitation-voltage110-normal-excitation-voltage111-overexcitation-time112
+          - title: "Present Velocity LPF Frequency(132)"
+            titlekr: "Present Velocity LPF Frequency(132)"
+            url: /dxl/y/ym080-230-b001-rh/#present-velocity-lpf-frequency132
+          - title: "Goal Current LPF Frequency(134)"
+            titlekr: "Goal Current LPF Frequency(134)"
+            url: /dxl/y/ym080-230-b001-rh/#goal-current-lpf-frequency134
+          - title: "Position FF LPF Time(136)"
+            titlekr: "Position FF LPF Time(136)"
+            url: /dxl/y/ym080-230-b001-rh/#position-ff-lpf-time136
+          - title: "Velocity FF LPF Time(138)"
+            titlekr: "Velocity FF LPF Time(138)"
+            url: /dxl/y/ym080-230-b001-rh/#velocity-ff-lpf-time138
+          - title: "Controller State(152)"
+            titlekr: "Controller State(152)"
+            url: /dxl/y/ym080-230-b001-rh/#controller-state152
+          - title: "Error Code(153)"
+            titlekr: "Error Code(153)"
+            url: /dxl/y/ym080-230-b001-rh/#error-code153
+          - title: "Error Code History"
+            titlekr: "Error Code History"
+            url: /dxl/y/ym080-230-b001-rh/#error-code-history
+          - title: "Hybrid Save(170)"
+            titlekr: "Hybrid Save(170)"
+            url: /dxl/y/ym080-230-b001-rh/#hybrid-save170
+          - title: "Velocity I Gain(212), Velocity P Gain(216), Velocity FF Gain(220)"
+            titlekr: "Velocity I Gain(212), Velocity P Gain(216), Velocity FF Gain(220)"
+            url: /dxl/y/ym080-230-b001-rh/#velocity-i-gain212-velocity-p-gain216-velocity-ff-gain220
+          - title: "Position D Gain(224), Position I Gain(228), Position P Gain(232), Position FF Gain(236)"
+            titlekr: "Position D Gain(224), Position I Gain(228), Position P Gain(232), Position FF Gain(236)"
+            url: /dxl/y/ym080-230-b001-rh/#position-d-gain224-position-i-gain228-position-p-gain232-position-ff-gain236
+          - title: "Profile Acceleration(240), Profile Velocity(244)"
+            titlekr: "Profile Acceleration(240), Profile Velocity(244)"
+            url: /dxl/y/ym080-230-b001-rh/#profile-acceleration240-profile-velocity244
+          - title: "Profile Acceleration Time(248), Profile Time(252)"
+            titlekr: "Profile Acceleration Time(248), Profile Time(252)"
+            url: /dxl/y/ym080-230-b001-rh/#profile-acceleration-time248-profile-time252
+          - title: "Indirect Address/Data"
+            titlekr: "Indirect Address/Data"
+            url: /dxl/y/ym080-230-b001-rh/#indirect-address-indirect-data
+          - title: "Torque Enable(512)"
+            titlekr: "Torque Enable(512)"
+            url: /dxl/y/ym080-230-b001-rh/#torque-enable512
+          - title: "LED(513)"
+            titlekr: "LED(513)"
+            url: /dxl/y/ym080-230-b001-rh/#led513
+          - title: "PWM/Current/Velocity Offset(516, 518, 520)"
+            titlekr: "PWM/Current/Velocity Offset(516, 518, 520)"
+            url: /dxl/y/ym080-230-b001-rh/#pwmcurrentvelocity-offset516-518-520
+          - title: "Goal PWM(524)"
+            titlekr: "Goal PWM(524)"
+            url: /dxl/y/ym080-230-b001-rh/#goal-pwm524
+          - title: "Goal Current(526)"
+            titlekr: "Goal Current(526)"
+            url: /dxl/y/ym080-230-b001-rh/#goal-current526
+          - title: "Goal Velocity(528)"
+            titlekr: "Goal Velocity(528)"
+            url: /dxl/y/ym080-230-b001-rh/#goal-velocity528
+          - title: "Goal Position(532)"
+            titlekr: "Goal Position(532)"
+            url: /dxl/y/ym080-230-b001-rh/#goal-position532
+          - title: "Moving Status(541)"
+            titlekr: "Moving Status(541)"
+            url: /dxl/y/ym080-230-b001-rh/#moving-status541
+          - title: "Realtime Tick(542)"
+            titlekr: "Realtime Tick(542)"
+            url: /dxl/y/ym080-230-b001-rh/#realtime-tick542
+          - title: "Present PWM(544)"
+            titlekr: "Present PWM(544)"
+            url: /dxl/y/ym080-230-b001-rh/#present-pwm544
+          - title: "Present Current(546)"
+            titlekr: "Present Current(546)"
+            url: /dxl/y/ym080-230-b001-rh/#present-current546
+          - title: "Present Velocity(548)"
+            titlekr: "Present Velocity(548)"
+            url: /dxl/y/ym080-230-b001-rh/#present-velocity548
+          - title: "Present Position(552)"
+            titlekr: "Present Position(552)"
+            url: /dxl/y/ym080-230-b001-rh/#present-position552
+          - title: "Position Trajectory(560)"
+            titlekr: "Position Trajectory(560)"
+            url: /dxl/y/ym080-230-b001-rh/#position-trajectory560
+          - title: "Velocity Trajectory(564)"
+            titlekr: "Velocity Trajectory(564)"
+            url: /dxl/y/ym080-230-b001-rh/#velocity-trajectory564
+          - title: "Present Input Voltage(568)"
+            titlekr: "Present Input Voltage(568)"
+            url: /dxl/y/ym080-230-b001-rh/#present-input-voltage568
+          - title: "Present Inverter Temperature(570)"
+            titlekr: "Present Inverter Temperature(570)"
+            url: /dxl/y/ym080-230-b001-rh/#present-inverter-temperature570
+          - title: "Present Motor Temperature(571)"
+            titlekr: "Present Motor Temperature(571)"
+            url: /dxl/y/ym080-230-b001-rh/#present-motor-temperature571
+          - title: "Backup Ready(919)"
+            titlekr: "Backup Ready(919)"
+            url: /dxl/y/ym080-230-b001-rh/#backup-ready919
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/y/ym080-230-b001-rh/#how-to-assemble
+    urlkr: /dxl/y/ym080-230-b001-rh/#조립-예시
+    children:
+      - title: Assembly Guide
+        titlekr: 조립가이드
+        url: /dxl/y/ym080-230-b001-rh/#assembly-guide
+        urlkr: /dxl/y/ym080-230-b001-rh/#조립가이드
+  - title: "Maintenance"
+    titlekr: "유지 보수"
+    url: /dxl/y/ym080-230-b001-rh/#maintenance
+    urlkr: /dxl/y/ym080-230-b001-rh/#유지-보수
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/y/ym080-230-b001-rh/#reference
+    urlkr: /dxl/y/ym080-230-b001-rh/#참고자료
+    children:
+      - title: "Profile"
+        titlekr: "Profile"
+        url: /dxl/y/ym080-230-b001-rh/#profile
+        urlkr: /dxl/y/ym080-230-b001-rh/#profile
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/y/ym080-230-b001-rh/#certifications
+        urlkr: /dxl/y/ym080-230-b001-rh/#인증-획득
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/y/ym080-230-b001-rh/#connector-information
+        urlkr: /dxl/y/ym080-230-b001-rh/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/y/ym080-230-b001-rh/#communication-circuit
+        urlkr: /dxl/y/ym080-230-b001-rh/#통신-회로
+      - title: "Cable Connection"
+        titlekr: "케이블 연결"
+        url: /dxl/y/ym080-230-b001-rh/#cable-connection
+        urlkr: /dxl/y/ym080-230-b001-rh/#케이블-연결
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/y/ym080-230-b001-rh/#drawings
+        urlkr: /dxl/y/ym080-230-b001-rh/#도면
+      - title: "Moment of Inertia"
+        titlekr: "Moment of Inertia"
+        url: /dxl/y/ym080-230-b001-rh/#moment-of-inertia
+        urlkr: /dxl/y/ym080-230-b001-rh/#moment-of-inertia
+  - title: "Clear Packet"
+    titlekr: "Clear Packet"
+    url: /dxl/y/ym080-230-b001-rh/#clear-packet
+    children:
+      - title: "Multi-turn Clear Packet"
+        titlekr: "Multi-turn Clear Packet"
+        url: /dxl/y/ym080-230-b001-rh/#multi-turn-clear-packet
+        children:
+          - title: "Multi-turn Clear Method"
+            titlekr: "Multi-turn Clear 방법"
+            url: /dxl/y/ym080-230-b001-rh/#multi-turn-clear-method
+            urlkr: /dxl/y/ym080-230-b001-rh/#multi-turn-clear-방법
+      - title: "Error Clear Packet"
+        titlekr: "Error Clear Packet"
+        url: /dxl/y/ym080-230-b001-rh/#error-clear-packet
+  - title: "Multi-turn backup Battery Replacement"
+    titlekr: "Multi-turn Backup 배터리 교체"
+    url: /dxl/y/ym080-230-b001-rh/#multi-turn-backup-battery-replacement 
+    urlkr: /dxl/y/ym080-230-b001-rh/#multi-turn-backup-배터리-교체
+    children:
+      - title: "Procedure for Battery Replacement"
+        titlekr: "배터리 교체 방법"
+        url: /dxl/y/ym080-230-b001-rh/#procedure-for-battery-replacement
+        urlkr: /dxl/y/ym080-230-b001-rh/#배터리-교체-방법
+  - title: "Output Bearing"
+    titlekr: "출력 베어링"
+    url: /dxl/y/ym080-230-b001-rh/#output-bearing
+    urlkr: /dxl/y/ym080-230-b001-rh/#출력-베어링
+    children:
+      - title: "Output bearing specifications (Table.B1)"
+        titlekr: "출력부 베어링 사양 (Table.B1)"
+        url: /dxl/y/ym080-230-b001-rh/#output-bearing-specifications-tableb1
+        urlkr: /dxl/y/ym080-230-b001-rh/#출력부-베어링-사양-tableb1
+      - title: "Output bearing life"
+        titlekr: "베어링 수명"
+        url: /dxl/y/ym080-230-b001-rh/#output-bearing-life
+        urlkr: /dxl/y/ym080-230-b001-rh/#베어링-수명
+      - title: "Allowable dynamic equivalent load, Pc_max"
+        titlekr: "허용 동등가 하중, Pc_max"
+        url: /dxl/y/ym080-230-b001-rh/#allowable-dynamic-equivalent-load-pc_max
+        urlkr: /dxl/y/ym080-230-b001-rh/#허용-동등가-하중-pc_max
+      - title: "Dynamic equivalent load, Pc"
+        titlekr: "동등가 하중, Pc"
+        url: /dxl/y/ym080-230-b001-rh/#dynamic-equivalent-load-pc
+        urlkr: /dxl/y/ym080-230-b001-rh/#동등가-하중-pc
+      - title: "Tables"
+        titlekr: "테이블"
+        url: /dxl/y/ym080-230-b001-rh/#tables
+        urlkr: /dxl/y/ym080-230-b001-rh/#테이블
 
 ym080-230-r051-rh:
   - title: "Specifications"
@@ -20575,6 +22153,674 @@ ym080-230-r099-rh:
         titlekr: "테이블"
         url: /dxl/y/ym080-230-r099-rh/#tables
         urlkr: /dxl/y/ym080-230-r099-rh/#테이블
+
+ym080-230-a051-rh:
+  - title: "Specifications"
+    titlekr: "주요 사양"
+    url: /dxl/y/ym080-230-a051-rh/#specifications
+    urlkr: /dxl/y/ym080-230-a051-rh/#주요-사양
+    children:
+      - title: "Performance Graph"
+        titlekr: "성능 그래프"
+        url: /dxl/y/ym080-230-a051-rh/#performance-graph
+        urlkr: /dxl/y/ym080-230-a051-rh/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/y/ym080-230-a051-rh/#control-table
+    urlkr: /dxl/y/ym080-230-a051-rh/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/y/ym080-230-a051-rh/#control-table-data-address
+        urlkr: /dxl/y/ym080-230-a051-rh/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM, Hybrid)"
+            url: /dxl/y/ym080-230-a051-rh/#area-eeprom-ram-hybrid
+            urlkr: /dxl/y/ym080-230-a051-rh/#영역-eeprom-ram-hybrid
+          - title: "Size"
+            titlekr: "크기"
+            url: /dxl/y/ym080-230-a051-rh/#size
+            urlkr: /dxl/y/ym080-230-a051-rh/#크기
+          - title: "Access Authorization"
+            titlekr: "접근권한"
+            url: /dxl/y/ym080-230-a051-rh/#access-authorization
+            urlkr: /dxl/y/ym080-230-a051-rh/#접근권한
+          - title: "Default Values"
+            titlekr: "기본값"
+            url: /dxl/y/ym080-230-a051-rh/#default-values
+            urlkr: /dxl/y/ym080-230-a051-rh/#기본값
+      - title: "Control Table Configuration"
+        titlekr: "컨트롤 테이블 구성"
+        url: /dxl/y/ym080-230-a051-rh/#control-table-configuration
+        urlkr: /dxl/y/ym080-230-a051-rh/#컨트롤-테이블-구성
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/y/ym080-230-a051-rh/#control-table-description
+        urlkr: /dxl/y/ym080-230-a051-rh/#컨트롤-테이블-설명
+        children:
+          - title: "Model Number(0)"
+            titlekr: "Model Number(0)"
+            url: /dxl/y/ym080-230-a051-rh/#model-number0
+          - title: "Model Information(2)"
+            titlekr: "Model Information(2)"
+            url: /dxl/y/ym080-230-a051-rh/#model-information2
+          - title: "Firmware Version(6)"
+            titlekr: "Firmware Version(6)"
+            url: /dxl/y/ym080-230-a051-rh/#firmware-version6
+          - title: "ID(7)"
+            titlekr: "ID(7)"
+            url: /dxl/y/ym080-230-a051-rh/#id7
+          - title: "Bus Watchdog(8)"
+            titlekr: "Bus Watchdog(8)"
+            url: /dxl/y/ym080-230-a051-rh/#bus-watchdog8
+          - title: "Secondary(Shadow) ID(10)"
+            titlekr: "Secondary(Shadow) ID(10)"
+            url: /dxl/y/ym080-230-a051-rh/#secondaryshadow-id10
+          - title: "Protocol Type(11)"
+            titlekr: "Protocol Type(11)"
+            url: /dxl/y/ym080-230-a051-rh/#protocol-type11
+          - title: "Baud Rate (Bus)(12)"
+            titlekr: "Baud Rate (Bus)(12)"
+            url: /dxl/y/ym080-230-a051-rh/#baud-rate-bus12
+          - title: "Return Delay Time(13)"
+            titlekr: "Return Delay Time(13)"
+            url: /dxl/y/ym080-230-a051-rh/#return-delay-time13
+          - title: "Status Return Level(15)"
+            titlekr: "Status Return Level(15)"
+            url: /dxl/y/ym080-230-a051-rh/#status-return-level15
+          - title: "Registered Instruction(16)"
+            titlekr: "Registered Instruction(16)"
+            url: /dxl/y/ym080-230-a051-rh/#registered-instruction16
+          - title: "Drive Mode(32)"
+            titlekr: "Drive Mode(32)"
+            url: /dxl/y/ym080-230-a051-rh/#drive-mode32
+          - title: "Operating Mode(33)"
+            titlekr: "Operating Mode(33)"
+            url: /dxl/y/ym080-230-a051-rh/#operating-mode33
+          - title: "Startup Configuration(34)"
+            titlekr: "Startup Configuration(34)"
+            url: /dxl/y/ym080-230-a051-rh/#startup-configuration34
+          - title: "Position Limit Threshold(38)"
+            titlekr: "Position Limit Threshold(38)"
+            url: /dxl/y/ym080-230-a051-rh/#position-limit-threshold38
+          - title: "In-Position Threshold(40)"
+            titlekr: "In-Position Threshold(40)"
+            url: /dxl/y/ym080-230-a051-rh/#in-position-threshold40
+          - title: "Following Error Threshold(44)"
+            titlekr: "Following Error Threshold(44)"
+            url: /dxl/y/ym080-230-a051-rh/#following-error-threshold44
+          - title: "Moving Threshold(48)"
+            titlekr: "Moving Threshold(48)"
+            url: /dxl/y/ym080-230-a051-rh/#moving-threshold48
+          - title: "Homing Offset(52)"
+            titlekr: "Homing Offset(52)"
+            url: /dxl/y/ym080-230-a051-rh/#homing-offset52
+          - title: "Inverter/Motor Temperature Limit(56, 57) "
+            titlekr: "Inverter/Motor Temperature Limit(56, 57) "
+            url: /dxl/y/ym080-230-a051-rh/#invertermotor-temperature-limit56-57
+          - title: "Max/Min Voltage Limit(60, 62)"
+            titlekr: "Max/Min Voltage Limit(60, 62)"
+            url: /dxl/y/ym080-230-a051-rh/#maxmin-voltage-limit60-62
+          - title: "PWM Limit(64)"
+            titlekr: "PWM Limit(64)"
+            url: /dxl/y/ym080-230-a051-rh/#pwm-limit64
+          - title: "Current Limit(66)"
+            titlekr: "Current Limit(66)"
+            url: /dxl/y/ym080-230-a051-rh/#current-limit66
+          - title: "Acceleration Limit(68)"
+            titlekr: "Acceleration Limit(68)"
+            url: /dxl/y/ym080-230-a051-rh/#acceleration-limit68
+          - title: "Velocity Limit(72)"
+            titlekr: "Velocity Limit(72)"
+            url: /dxl/y/ym080-230-a051-rh/#velocity-limit72
+          - title: "Max/Min Position Limit(76, 84)"
+            titlekr: "Max/Min Position Limit(76, 84)"
+            url: /dxl/y/ym080-230-a051-rh/#maxmin-position-limit76-84
+          - title: "Electronic Gear Ratio Numerator/Denominator(96, 100)"
+            titlekr: "Electronic Gear Ratio Numerator/Denominator(96, 100)"
+            url: /dxl/y/ym080-230-a051-rh/#electronic-gear-ratio-numeratordenominator96-100
+          - title: "Torque ON-OFF Timing Chart"
+            titlekr: "Torque ON-OFF Timing Chart"
+            url: /dxl/y/ym080-230-a051-rh/#torque-on-off-timing-chart          
+          - title: "Safe Stop Time(104)"
+            titlekr: "Safe Stop Time(104)"
+            url: /dxl/y/ym080-230-a051-rh/#safe-stop-time104
+          - title: "Brake Delay(106), Goal Update Delay(108)"
+            titlekr: "Brake Delay(106), Goal Update Delay(108)"
+            url: /dxl/y/ym080-230-a051-rh/#brake-delay106-goal-update-delay108
+          - title: "Overexcitation Voltage(110), Normal Excitation Voltage(111), Overexcitation Time(112)"
+            titlekr: "Overexcitation Voltage(110), Normal Excitation Voltage(111), Overexcitation Time(112)"
+            url: /dxl/y/ym080-230-a051-rh/#overexcitation-voltage110-normal-excitation-voltage111-overexcitation-time112
+          - title: "Present Velocity LPF Frequency(132)"
+            titlekr: "Present Velocity LPF Frequency(132)"
+            url: /dxl/y/ym080-230-a051-rh/#present-velocity-lpf-frequency132
+          - title: "Goal Current LPF Frequency(134)"
+            titlekr: "Goal Current LPF Frequency(134)"
+            url: /dxl/y/ym080-230-a051-rh/#goal-current-lpf-frequency134
+          - title: "Position FF LPF Time(136)"
+            titlekr: "Position FF LPF Time(136)"
+            url: /dxl/y/ym080-230-a051-rh/#position-ff-lpf-time136
+          - title: "Velocity FF LPF Time(138)"
+            titlekr: "Velocity FF LPF Time(138)"
+            url: /dxl/y/ym080-230-a051-rh/#velocity-ff-lpf-time138
+          - title: "Controller State(152)"
+            titlekr: "Controller State(152)"
+            url: /dxl/y/ym080-230-a051-rh/#controller-state152
+          - title: "Error Code(153)"
+            titlekr: "Error Code(153)"
+            url: /dxl/y/ym080-230-a051-rh/#error-code153
+          - title: "Error Code History"
+            titlekr: "Error Code History"
+            url: /dxl/y/ym080-230-a051-rh/#error-code-history
+          - title: "Hybrid Save(170)"
+            titlekr: "Hybrid Save(170)"
+            url: /dxl/y/ym080-230-a051-rh/#hybrid-save170
+          - title: "Velocity I Gain(212), Velocity P Gain(216), Velocity FF Gain(220)"
+            titlekr: "Velocity I Gain(212), Velocity P Gain(216), Velocity FF Gain(220)"
+            url: /dxl/y/ym080-230-a051-rh/#velocity-i-gain212-velocity-p-gain216-velocity-ff-gain220
+          - title: "Position D Gain(224), Position I Gain(228), Position P Gain(232), Position FF Gain(236)"
+            titlekr: "Position D Gain(224), Position I Gain(228), Position P Gain(232), Position FF Gain(236)"
+            url: /dxl/y/ym080-230-a051-rh/#position-d-gain224-position-i-gain228-position-p-gain232-position-ff-gain236
+          - title: "Profile Acceleration(240), Profile Velocity(244)"
+            titlekr: "Profile Acceleration(240), Profile Velocity(244)"
+            url: /dxl/y/ym080-230-a051-rh/#profile-acceleration240-profile-velocity244
+          - title: "Profile Acceleration Time(248), Profile Time(252)"
+            titlekr: "Profile Acceleration Time(248), Profile Time(252)"
+            url: /dxl/y/ym080-230-a051-rh/#profile-acceleration-time248-profile-time252
+          - title: "Indirect Address/Data"
+            titlekr: "Indirect Address/Data"
+            url: /dxl/y/ym080-230-a051-rh/#indirect-address-indirect-data
+          - title: "Torque Enable(512)"
+            titlekr: "Torque Enable(512)"
+            url: /dxl/y/ym080-230-a051-rh/#torque-enable512
+          - title: "LED(513)"
+            titlekr: "LED(513)"
+            url: /dxl/y/ym080-230-a051-rh/#led513
+          - title: "PWM/Current/Velocity Offset(516, 518, 520)"
+            titlekr: "PWM/Current/Velocity Offset(516, 518, 520)"
+            url: /dxl/y/ym080-230-a051-rh/#pwmcurrentvelocity-offset516-518-520
+          - title: "Goal PWM(524)"
+            titlekr: "Goal PWM(524)"
+            url: /dxl/y/ym080-230-a051-rh/#goal-pwm524
+          - title: "Goal Current(526)"
+            titlekr: "Goal Current(526)"
+            url: /dxl/y/ym080-230-a051-rh/#goal-current526
+          - title: "Goal Velocity(528)"
+            titlekr: "Goal Velocity(528)"
+            url: /dxl/y/ym080-230-a051-rh/#goal-velocity528
+          - title: "Goal Position(532)"
+            titlekr: "Goal Position(532)"
+            url: /dxl/y/ym080-230-a051-rh/#goal-position532
+          - title: "Moving Status(541)"
+            titlekr: "Moving Status(541)"
+            url: /dxl/y/ym080-230-a051-rh/#moving-status541
+          - title: "Realtime Tick(542)"
+            titlekr: "Realtime Tick(542)"
+            url: /dxl/y/ym080-230-a051-rh/#realtime-tick542
+          - title: "Present PWM(544)"
+            titlekr: "Present PWM(544)"
+            url: /dxl/y/ym080-230-a051-rh/#present-pwm544
+          - title: "Present Current(546)"
+            titlekr: "Present Current(546)"
+            url: /dxl/y/ym080-230-a051-rh/#present-current546
+          - title: "Present Velocity(548)"
+            titlekr: "Present Velocity(548)"
+            url: /dxl/y/ym080-230-a051-rh/#present-velocity548
+          - title: "Present Position(552)"
+            titlekr: "Present Position(552)"
+            url: /dxl/y/ym080-230-a051-rh/#present-position552
+          - title: "Position Trajectory(560)"
+            titlekr: "Position Trajectory(560)"
+            url: /dxl/y/ym080-230-a051-rh/#position-trajectory560
+          - title: "Velocity Trajectory(564)"
+            titlekr: "Velocity Trajectory(564)"
+            url: /dxl/y/ym080-230-a051-rh/#velocity-trajectory564
+          - title: "Present Input Voltage(568)"
+            titlekr: "Present Input Voltage(568)"
+            url: /dxl/y/ym080-230-a051-rh/#present-input-voltage568
+          - title: "Present Inverter Temperature(570)"
+            titlekr: "Present Inverter Temperature(570)"
+            url: /dxl/y/ym080-230-a051-rh/#present-inverter-temperature570
+          - title: "Present Motor Temperature(571)"
+            titlekr: "Present Motor Temperature(571)"
+            url: /dxl/y/ym080-230-a051-rh/#present-motor-temperature571
+          - title: "Backup Ready(919)"
+            titlekr: "Backup Ready(919)"
+            url: /dxl/y/ym080-230-a051-rh/#backup-ready919
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/y/ym080-230-a051-rh/#how-to-assemble
+    urlkr: /dxl/y/ym080-230-a051-rh/#조립-예시
+    children:
+      - title: Assembly Guide
+        titlekr: 조립가이드
+        url: /dxl/y/ym080-230-a051-rh/#assembly-guide
+        urlkr: /dxl/y/ym080-230-a051-rh/#조립가이드
+  - title: "Maintenance"
+    titlekr: "유지 보수"
+    url: /dxl/y/ym080-230-a051-rh/#maintenance
+    urlkr: /dxl/y/ym080-230-a051-rh/#유지-보수
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/y/ym080-230-a051-rh/#reference
+    urlkr: /dxl/y/ym080-230-a051-rh/#참고자료
+    children:
+      - title: "Profile"
+        titlekr: "Profile"
+        url: /dxl/y/ym080-230-a051-rh/#profile
+        urlkr: /dxl/y/ym080-230-a051-rh/#profile
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/y/ym080-230-a051-rh/#certifications
+        urlkr: /dxl/y/ym080-230-a051-rh/#인증-획득
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/y/ym080-230-a051-rh/#connector-information
+        urlkr: /dxl/y/ym080-230-a051-rh/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/y/ym080-230-a051-rh/#communication-circuit
+        urlkr: /dxl/y/ym080-230-a051-rh/#통신-회로
+      - title: "Cable Connection"
+        titlekr: "케이블 연결"
+        url: /dxl/y/ym080-230-a051-rh/#cable-connection
+        urlkr: /dxl/y/ym080-230-a051-rh/#케이블-연결
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/y/ym080-230-a051-rh/#drawings
+        urlkr: /dxl/y/ym080-230-a051-rh/#도면
+      - title: "Moment of Inertia"
+        titlekr: "Moment of Inertia"
+        url: /dxl/y/ym080-230-a051-rh/#moment-of-inertia
+        urlkr: /dxl/y/ym080-230-a051-rh/#moment-of-inertia
+  - title: "Clear Packet"
+    titlekr: "Clear Packet"
+    url: /dxl/y/ym080-230-a051-rh/#clear-packet
+    children:
+      - title: "Multi-turn Clear Packet"
+        titlekr: "Multi-turn Clear Packet"
+        url: /dxl/y/ym080-230-a051-rh/#multi-turn-clear-packet
+        children:
+          - title: "Multi-turn Clear Method"
+            titlekr: "Multi-turn Clear 방법"
+            url: /dxl/y/ym080-230-a051-rh/#multi-turn-clear-method
+            urlkr: /dxl/y/ym080-230-a051-rh/#multi-turn-clear-방법
+      - title: "Error Clear Packet"
+        titlekr: "Error Clear Packet"
+        url: /dxl/y/ym080-230-a051-rh/#error-clear-packet
+  - title: "Multi-turn backup Battery Replacement"
+    titlekr: "Multi-turn Backup 배터리 교체"
+    url: /dxl/y/ym080-230-a051-rh/#multi-turn-backup-battery-replacement 
+    urlkr: /dxl/y/ym080-230-a051-rh/#multi-turn-backup-배터리-교체 
+    children:
+      - title: "Procedure for Battery Replacement"
+        titlekr: "배터리 교체 방법"
+        url: /dxl/y/ym080-230-a051-rh/#procedure-for-battery-replacement
+        urlkr: /dxl/y/ym080-230-a051-rh/#배터리-교체-방법
+  - title: "Output Bearing"
+    titlekr: "출력 베어링"
+    url: /dxl/y/ym080-230-a051-rh/#output-bearing
+    urlkr: /dxl/y/ym080-230-a051-rh/#출력-베어링
+    children:
+      - title: "Output bearing specifications (Table.B1)"
+        titlekr: "출력부 베어링 사양 (Table.B1)"
+        url: /dxl/y/ym080-230-a051-rh/#output-bearing-specifications-tableb1
+        urlkr: /dxl/y/ym080-230-a051-rh/#출력부-베어링-사양-tableb1
+      - title: "Output bearing life"
+        titlekr: "베어링 수명"
+        url: /dxl/y/ym080-230-a051-rh/#output-bearing-life
+        urlkr: /dxl/y/ym080-230-a051-rh/#베어링-수명
+      - title: "Allowable dynamic equivalent load, Pc_max"
+        titlekr: "허용 동등가 하중, Pc_max"
+        url: /dxl/y/ym080-230-a051-rh/#allowable-dynamic-equivalent-load-pc_max
+        urlkr: /dxl/y/ym080-230-a051-rh/#허용-동등가-하중-pc_max
+      - title: "Dynamic equivalent load, Pc"
+        titlekr: "동등가 하중, Pc"
+        url: /dxl/y/ym080-230-a051-rh/#dynamic-equivalent-load-pc
+        urlkr: /dxl/y/ym080-230-a051-rh/#동등가-하중-pc
+      - title: "Allowable radial load, Fr_max"
+        titlekr: "허용 반경방향 하중, Fr_max"
+        url: /dxl/y/ym080-230-a051-rh/#allowable-radial-load-fr_max
+        urlkr: /dxl/y/ym080-230-a051-rh/#허용-반경방향-하중-fr_max
+      - title: "Tables"
+        titlekr: "테이블"
+        url: /dxl/y/ym080-230-a051-rh/#tables
+        urlkr: /dxl/y/ym080-230-a051-rh/#테이블
+
+ym080-230-a099-rh:
+  - title: "Specifications"
+    titlekr: "주요 사양"
+    url: /dxl/y/ym080-230-a099-rh/#specifications
+    urlkr: /dxl/y/ym080-230-a099-rh/#주요-사양
+    children:
+      - title: "Performance Graph"
+        titlekr: "성능 그래프"
+        url: /dxl/y/ym080-230-a099-rh/#performance-graph
+        urlkr: /dxl/y/ym080-230-a099-rh/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/y/ym080-230-a099-rh/#control-table
+    urlkr: /dxl/y/ym080-230-a099-rh/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/y/ym080-230-a099-rh/#control-table-data-address
+        urlkr: /dxl/y/ym080-230-a099-rh/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM, Hybrid)"
+            url: /dxl/y/ym080-230-a099-rh/#area-eeprom-ram-hybrid
+            urlkr: /dxl/y/ym080-230-a099-rh/#영역-eeprom-ram-hybrid
+          - title: "Size"
+            titlekr: "크기"
+            url: /dxl/y/ym080-230-a099-rh/#size
+            urlkr: /dxl/y/ym080-230-a099-rh/#크기
+          - title: "Access Authorization"
+            titlekr: "접근권한"
+            url: /dxl/y/ym080-230-a099-rh/#access-authorization
+            urlkr: /dxl/y/ym080-230-a099-rh/#접근권한
+          - title: "Default Values"
+            titlekr: "기본값"
+            url: /dxl/y/ym080-230-a099-rh/#default-values
+            urlkr: /dxl/y/ym080-230-a099-rh/#기본값
+      - title: "Control Table Configuration"
+        titlekr: "컨트롤 테이블 구성"
+        url: /dxl/y/ym080-230-a099-rh/#control-table-configuration
+        urlkr: /dxl/y/ym080-230-a099-rh/#컨트롤-테이블-구성
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/y/ym080-230-a099-rh/#control-table-description
+        urlkr: /dxl/y/ym080-230-a099-rh/#컨트롤-테이블-설명
+        children:
+          - title: "Model Number(0)"
+            titlekr: "Model Number(0)"
+            url: /dxl/y/ym080-230-a099-rh/#model-number0
+          - title: "Model Information(2)"
+            titlekr: "Model Information(2)"
+            url: /dxl/y/ym080-230-a099-rh/#model-information2
+          - title: "Firmware Version(6)"
+            titlekr: "Firmware Version(6)"
+            url: /dxl/y/ym080-230-a099-rh/#firmware-version6
+          - title: "ID(7)"
+            titlekr: "ID(7)"
+            url: /dxl/y/ym080-230-a099-rh/#id7
+          - title: "Bus Watchdog(8)"
+            titlekr: "Bus Watchdog(8)"
+            url: /dxl/y/ym080-230-a099-rh/#bus-watchdog8
+          - title: "Secondary(Shadow) ID(10)"
+            titlekr: "Secondary(Shadow) ID(10)"
+            url: /dxl/y/ym080-230-a099-rh/#secondaryshadow-id10
+          - title: "Protocol Type(11)"
+            titlekr: "Protocol Type(11)"
+            url: /dxl/y/ym080-230-a099-rh/#protocol-type11
+          - title: "Baud Rate (Bus)(12)"
+            titlekr: "Baud Rate (Bus)(12)"
+            url: /dxl/y/ym080-230-a099-rh/#baud-rate-bus12
+          - title: "Return Delay Time(13)"
+            titlekr: "Return Delay Time(13)"
+            url: /dxl/y/ym080-230-a099-rh/#return-delay-time13
+          - title: "Status Return Level(15)"
+            titlekr: "Status Return Level(15)"
+            url: /dxl/y/ym080-230-a099-rh/#status-return-level15
+          - title: "Registered Instruction(16)"
+            titlekr: "Registered Instruction(16)"
+            url: /dxl/y/ym080-230-a099-rh/#registered-instruction16
+          - title: "Drive Mode(32)"
+            titlekr: "Drive Mode(32)"
+            url: /dxl/y/ym080-230-a099-rh/#drive-mode32
+          - title: "Operating Mode(33)"
+            titlekr: "Operating Mode(33)"
+            url: /dxl/y/ym080-230-a099-rh/#operating-mode33
+          - title: "Startup Configuration(34)"
+            titlekr: "Startup Configuration(34)"
+            url: /dxl/y/ym080-230-a099-rh/#startup-configuration34
+          - title: "Position Limit Threshold(38)"
+            titlekr: "Position Limit Threshold(38)"
+            url: /dxl/y/ym080-230-a099-rh/#position-limit-threshold38
+          - title: "In-Position Threshold(40)"
+            titlekr: "In-Position Threshold(40)"
+            url: /dxl/y/ym080-230-a099-rh/#in-position-threshold40
+          - title: "Following Error Threshold(44)"
+            titlekr: "Following Error Threshold(44)"
+            url: /dxl/y/ym080-230-a099-rh/#following-error-threshold44
+          - title: "Moving Threshold(48)"
+            titlekr: "Moving Threshold(48)"
+            url: /dxl/y/ym080-230-a099-rh/#moving-threshold48
+          - title: "Homing Offset(52)"
+            titlekr: "Homing Offset(52)"
+            url: /dxl/y/ym080-230-a099-rh/#homing-offset52
+          - title: "Inverter/Motor Temperature Limit(56, 57) "
+            titlekr: "Inverter/Motor Temperature Limit(56, 57) "
+            url: /dxl/y/ym080-230-a099-rh/#invertermotor-temperature-limit56-57
+          - title: "Max/Min Voltage Limit(60, 62)"
+            titlekr: "Max/Min Voltage Limit(60, 62)"
+            url: /dxl/y/ym080-230-a099-rh/#maxmin-voltage-limit60-62
+          - title: "PWM Limit(64)"
+            titlekr: "PWM Limit(64)"
+            url: /dxl/y/ym080-230-a099-rh/#pwm-limit64
+          - title: "Current Limit(66)"
+            titlekr: "Current Limit(66)"
+            url: /dxl/y/ym080-230-a099-rh/#current-limit66
+          - title: "Acceleration Limit(68)"
+            titlekr: "Acceleration Limit(68)"
+            url: /dxl/y/ym080-230-a099-rh/#acceleration-limit68
+          - title: "Velocity Limit(72)"
+            titlekr: "Velocity Limit(72)"
+            url: /dxl/y/ym080-230-a099-rh/#velocity-limit72
+          - title: "Max/Min Position Limit(76, 84)"
+            titlekr: "Max/Min Position Limit(76, 84)"
+            url: /dxl/y/ym080-230-a099-rh/#maxmin-position-limit76-84
+          - title: "Electronic Gear Ratio Numerator/Denominator(96, 100)"
+            titlekr: "Electronic Gear Ratio Numerator/Denominator(96, 100)"
+            url: /dxl/y/ym080-230-a099-rh/#electronic-gear-ratio-numeratordenominator96-100
+          - title: "Torque ON-OFF Timing Chart"
+            titlekr: "Torque ON-OFF Timing Chart"
+            url: /dxl/y/ym080-230-a099-rh/#torque-on-off-timing-chart          
+          - title: "Safe Stop Time(104)"
+            titlekr: "Safe Stop Time(104)"
+            url: /dxl/y/ym080-230-a099-rh/#safe-stop-time104
+          - title: "Brake Delay(106), Goal Update Delay(108)"
+            titlekr: "Brake Delay(106), Goal Update Delay(108)"
+            url: /dxl/y/ym080-230-a099-rh/#brake-delay106-goal-update-delay108
+          - title: "Overexcitation Voltage(110), Normal Excitation Voltage(111), Overexcitation Time(112)"
+            titlekr: "Overexcitation Voltage(110), Normal Excitation Voltage(111), Overexcitation Time(112)"
+            url: /dxl/y/ym080-230-a099-rh/#overexcitation-voltage110-normal-excitation-voltage111-overexcitation-time112
+          - title: "Present Velocity LPF Frequency(132)"
+            titlekr: "Present Velocity LPF Frequency(132)"
+            url: /dxl/y/ym080-230-a099-rh/#present-velocity-lpf-frequency132
+          - title: "Goal Current LPF Frequency(134)"
+            titlekr: "Goal Current LPF Frequency(134)"
+            url: /dxl/y/ym080-230-a099-rh/#goal-current-lpf-frequency134
+          - title: "Position FF LPF Time(136)"
+            titlekr: "Position FF LPF Time(136)"
+            url: /dxl/y/ym080-230-a099-rh/#position-ff-lpf-time136
+          - title: "Velocity FF LPF Time(138)"
+            titlekr: "Velocity FF LPF Time(138)"
+            url: /dxl/y/ym080-230-a099-rh/#velocity-ff-lpf-time138
+          - title: "Controller State(152)"
+            titlekr: "Controller State(152)"
+            url: /dxl/y/ym080-230-a099-rh/#controller-state152
+          - title: "Error Code(153)"
+            titlekr: "Error Code(153)"
+            url: /dxl/y/ym080-230-a099-rh/#error-code153
+          - title: "Error Code History"
+            titlekr: "Error Code History"
+            url: /dxl/y/ym080-230-a099-rh/#error-code-history
+          - title: "Hybrid Save(170)"
+            titlekr: "Hybrid Save(170)"
+            url: /dxl/y/ym080-230-a099-rh/#hybrid-save170
+          - title: "Velocity I Gain(212), Velocity P Gain(216), Velocity FF Gain(220)"
+            titlekr: "Velocity I Gain(212), Velocity P Gain(216), Velocity FF Gain(220)"
+            url: /dxl/y/ym080-230-a099-rh/#velocity-i-gain212-velocity-p-gain216-velocity-ff-gain220
+          - title: "Position D Gain(224), Position I Gain(228), Position P Gain(232), Position FF Gain(236)"
+            titlekr: "Position D Gain(224), Position I Gain(228), Position P Gain(232), Position FF Gain(236)"
+            url: /dxl/y/ym080-230-a099-rh/#position-d-gain224-position-i-gain228-position-p-gain232-position-ff-gain236
+          - title: "Profile Acceleration(240), Profile Velocity(244)"
+            titlekr: "Profile Acceleration(240), Profile Velocity(244)"
+            url: /dxl/y/ym080-230-a099-rh/#profile-acceleration240-profile-velocity244
+          - title: "Profile Acceleration Time(248), Profile Time(252)"
+            titlekr: "Profile Acceleration Time(248), Profile Time(252)"
+            url: /dxl/y/ym080-230-a099-rh/#profile-acceleration-time248-profile-time252
+          - title: "Indirect Address/Data"
+            titlekr: "Indirect Address/Data"
+            url: /dxl/y/ym080-230-a099-rh/#indirect-address-indirect-data
+          - title: "Torque Enable(512)"
+            titlekr: "Torque Enable(512)"
+            url: /dxl/y/ym080-230-a099-rh/#torque-enable512
+          - title: "LED(513)"
+            titlekr: "LED(513)"
+            url: /dxl/y/ym080-230-a099-rh/#led513
+          - title: "PWM/Current/Velocity Offset(516, 518, 520)"
+            titlekr: "PWM/Current/Velocity Offset(516, 518, 520)"
+            url: /dxl/y/ym080-230-a099-rh/#pwmcurrentvelocity-offset516-518-520
+          - title: "Goal PWM(524)"
+            titlekr: "Goal PWM(524)"
+            url: /dxl/y/ym080-230-a099-rh/#goal-pwm524
+          - title: "Goal Current(526)"
+            titlekr: "Goal Current(526)"
+            url: /dxl/y/ym080-230-a099-rh/#goal-current526
+          - title: "Goal Velocity(528)"
+            titlekr: "Goal Velocity(528)"
+            url: /dxl/y/ym080-230-a099-rh/#goal-velocity528
+          - title: "Goal Position(532)"
+            titlekr: "Goal Position(532)"
+            url: /dxl/y/ym080-230-a099-rh/#goal-position532
+          - title: "Moving Status(541)"
+            titlekr: "Moving Status(541)"
+            url: /dxl/y/ym080-230-a099-rh/#moving-status541
+          - title: "Realtime Tick(542)"
+            titlekr: "Realtime Tick(542)"
+            url: /dxl/y/ym080-230-a099-rh/#realtime-tick542
+          - title: "Present PWM(544)"
+            titlekr: "Present PWM(544)"
+            url: /dxl/y/ym080-230-a099-rh/#present-pwm544
+          - title: "Present Current(546)"
+            titlekr: "Present Current(546)"
+            url: /dxl/y/ym080-230-a099-rh/#present-current546
+          - title: "Present Velocity(548)"
+            titlekr: "Present Velocity(548)"
+            url: /dxl/y/ym080-230-a099-rh/#present-velocity548
+          - title: "Present Position(552)"
+            titlekr: "Present Position(552)"
+            url: /dxl/y/ym080-230-a099-rh/#present-position552
+          - title: "Position Trajectory(560)"
+            titlekr: "Position Trajectory(560)"
+            url: /dxl/y/ym080-230-a099-rh/#position-trajectory560
+          - title: "Velocity Trajectory(564)"
+            titlekr: "Velocity Trajectory(564)"
+            url: /dxl/y/ym080-230-a099-rh/#velocity-trajectory564
+          - title: "Present Input Voltage(568)"
+            titlekr: "Present Input Voltage(568)"
+            url: /dxl/y/ym080-230-a099-rh/#present-input-voltage568
+          - title: "Present Inverter Temperature(570)"
+            titlekr: "Present Inverter Temperature(570)"
+            url: /dxl/y/ym080-230-a099-rh/#present-inverter-temperature570
+          - title: "Present Motor Temperature(571)"
+            titlekr: "Present Motor Temperature(571)"
+            url: /dxl/y/ym080-230-a099-rh/#present-motor-temperature571
+          - title: "Backup Ready(919)"
+            titlekr: "Backup Ready(919)"
+            url: /dxl/y/ym080-230-a099-rh/#backup-ready919
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/y/ym080-230-a099-rh/#how-to-assemble
+    urlkr: /dxl/y/ym080-230-a099-rh/#조립-예시
+    children:
+      - title: Assembly Guide
+        titlekr: 조립가이드
+        url: /dxl/y/ym080-230-a099-rh/#assembly-guide
+        urlkr: /dxl/y/ym080-230-a099-rh/#조립가이드
+  - title: "Maintenance"
+    titlekr: "유지 보수"
+    url: /dxl/y/ym080-230-a099-rh/#maintenance
+    urlkr: /dxl/y/ym080-230-a099-rh/#유지-보수
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/y/ym080-230-a099-rh/#reference
+    urlkr: /dxl/y/ym080-230-a099-rh/#참고자료
+    children:
+      - title: "Profile"
+        titlekr: "Profile"
+        url: /dxl/y/ym080-230-a099-rh/#profile
+        urlkr: /dxl/y/ym080-230-a099-rh/#profile
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/y/ym080-230-a099-rh/#certifications
+        urlkr: /dxl/y/ym080-230-a099-rh/#인증-획득
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/y/ym080-230-a099-rh/#connector-information
+        urlkr: /dxl/y/ym080-230-a099-rh/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/y/ym080-230-a099-rh/#communication-circuit
+        urlkr: /dxl/y/ym080-230-a099-rh/#통신-회로
+      - title: "Cable Connection"
+        titlekr: "케이블 연결"
+        url: /dxl/y/ym080-230-a099-rh/#cable-connection
+        urlkr: /dxl/y/ym080-230-a099-rh/#케이블-연결
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/y/ym080-230-a099-rh/#drawings
+        urlkr: /dxl/y/ym080-230-a099-rh/#도면
+      - title: "Moment of Inertia"
+        titlekr: "Moment of Inertia"
+        url: /dxl/y/ym080-230-a099-rh/#moment-of-inertia
+        urlkr: /dxl/y/ym080-230-a099-rh/#moment-of-inertia
+  - title: "Clear Packet"
+    titlekr: "Clear Packet"
+    url: /dxl/y/ym080-230-a099-rh/#clear-packet
+    children:
+      - title: "Multi-turn Clear Packet"
+        titlekr: "Multi-turn Clear Packet"
+        url: /dxl/y/ym080-230-a099-rh/#multi-turn-clear-packet
+        children:
+          - title: "Multi-turn Clear Method"
+            titlekr: "Multi-turn Clear 방법"
+            url: /dxl/y/ym080-230-a099-rh/#multi-turn-clear-method
+            urlkr: /dxl/y/ym080-230-a099-rh/#multi-turn-clear-방법
+      - title: "Error Clear Packet"
+        titlekr: "Error Clear Packet"
+        url: /dxl/y/ym080-230-a099-rh/#error-clear-packet
+  - title: "Multi-turn backup Battery Replacement"
+    titlekr: "Multi-turn Backup 배터리 교체"
+    url: /dxl/y/ym080-230-a099-rh/#multi-turn-backup-battery-replacement 
+    urlkr: /dxl/y/ym080-230-a099-rh/#multi-turn-backup-배터리-교체 
+    children:
+      - title: "Procedure for Battery Replacement"
+        titlekr: "배터리 교체 방법"
+        url: /dxl/y/ym080-230-a099-rh/#procedure-for-battery-replacement
+        urlkr: /dxl/y/ym080-230-a099-rh/#배터리-교체-방법
+  - title: "Output Bearing"
+    titlekr: "출력 베어링"
+    url: /dxl/y/ym080-230-a099-rh/#output-bearing
+    urlkr: /dxl/y/ym080-230-a099-rh/#출력-베어링
+    children:
+      - title: "Output bearing specifications (Table.B1)"
+        titlekr: "출력부 베어링 사양 (Table.B1)"
+        url: /dxl/y/ym080-230-a099-rh/#output-bearing-specifications-tableb1
+        urlkr: /dxl/y/ym080-230-a099-rh/#출력부-베어링-사양-tableb1
+      - title: "Output bearing life"
+        titlekr: "베어링 수명"
+        url: /dxl/y/ym080-230-a099-rh/#output-bearing-life
+        urlkr: /dxl/y/ym080-230-a099-rh/#베어링-수명
+      - title: "Allowable dynamic equivalent load, Pc_max"
+        titlekr: "허용 동등가 하중, Pc_max"
+        url: /dxl/y/ym080-230-a099-rh/#allowable-dynamic-equivalent-load-pc_max
+        urlkr: /dxl/y/ym080-230-a099-rh/#허용-동등가-하중-pc_max
+      - title: "Dynamic equivalent load, Pc"
+        titlekr: "동등가 하중, Pc"
+        url: /dxl/y/ym080-230-a099-rh/#dynamic-equivalent-load-pc
+        urlkr: /dxl/y/ym080-230-a099-rh/#동등가-하중-pc
+      - title: "Allowable radial load, Fr_max"
+        titlekr: "허용 반경방향 하중, Fr_max"
+        url: /dxl/y/ym080-230-a099-rh/#allowable-radial-load-fr_max
+        urlkr: /dxl/y/ym080-230-a099-rh/#허용-반경방향-하중-fr_max
+      - title: "Tables"
+        titlekr: "테이블"
+        url: /dxl/y/ym080-230-a099-rh/#tables
+        urlkr: /dxl/y/ym080-230-a099-rh/#테이블
 
 #Protocol 1.0 sidebar
 protocol1:
@@ -28950,6 +31196,10 @@ rb-86:
     titlekr: "제품사양"
     url: /parts/controller/rb-86/#specifications
     urlkr: /parts/controller/rb-86/#제품-사양
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /parts/controller/rb-86/#control-table
+    urlkr: /parts/controller/rb-86/#컨트롤-테이블 
   - title: "Layout"
     titlekr: "각 부 명칭"
     url: /parts/controller/rb-86/#layout
@@ -28982,7 +31232,11 @@ rb-86:
     - title: "Controller Shutdown"
       titlekr: "제어기 종료"
       url: /parts/controller/rb-86/#controller-shutdown
-      urlkr: /parts/controller/rb-86/#제어기-종료  
+      urlkr: /parts/controller/rb-86/#제어기-종료
+  - title: "Control Dynamixels via Bluetooth"
+    titlekr: "블루투스를 통한 다이나믹셀 제어"
+    url: /parts/controller/rb-86/#control-dynamixels-via-bluetooth
+    urlkr: /parts/controller/rb-86/#블루투스를-통한-다이나믹셀-제어  
   - title: "Cross Hub Assembly"
     titlekr: "십자혼 조립 방법"
     url: /parts/controller/rb-86/#cross-hub-assembly
@@ -29032,6 +31286,10 @@ rb-88:
     titlekr: "제품사양"
     url: /parts/controller/rb-88/#specifications
     urlkr: /parts/controller/rb-88/#제품-사양
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /parts/controller/rb-88/#control-table
+    urlkr: /parts/controller/rb-88/#컨트롤-테이블
   - title: "Layout"
     titlekr: "각 부 명칭"
     url: /parts/controller/rb-88/#layout
@@ -29060,7 +31318,11 @@ rb-88:
     - title: "Controller Shutdown"
       titlekr: "제어기 종료"
       url: /parts/controller/rb-88/#controller-shutdown
-      urlkr: /parts/controller/rb-88/#제어기-종료  
+      urlkr: /parts/controller/rb-88/#제어기-종료
+  - title: "Control Dynamixels via Bluetooth"
+    titlekr: "블루투스를 통한 다이나믹셀 제어"
+    url: /parts/controller/rb-88/#control-dynamixels-via-bluetooth
+    urlkr: /parts/controller/rb-88/#블루투스를-통한-다이나믹셀-제어          
   - title: "Cross Hub Assembly"
     titlekr: "십자혼 조립 방법"
     url: /parts/controller/rb-88/#cross-hub-assembly
