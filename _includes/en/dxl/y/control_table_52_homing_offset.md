@@ -6,4 +6,4 @@ Used to adjust the zero position of the servo. This value is added to the actual
 
 |   Unit    |       Range                    |
 |:---------:|:------------------------------:|
-| 1 [Pulse] | -2,147,483,647 ~ 2,147,483,647 |
+| 1 [Pulse] | -2,147,483,648 ~ 2,147,483,647 |
