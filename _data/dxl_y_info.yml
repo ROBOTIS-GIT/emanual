@@ -318,7 +318,7 @@ ym080-230-r099-rh:
   id:                 *id
   standbycurrent:     *standbycurrent
 
-  ym080-230-a051-rh:
+ym080-230-a051-rh:
   mcu:                *mcu
   motor:              *motor
   baudrate:           *baudrate
