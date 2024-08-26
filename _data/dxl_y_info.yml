@@ -6,6 +6,7 @@ common_y_specs:
   opmode_en:            &opmode_en            "Position Control Mode<br />Velocity Control Mode<br />Current Control Mode"
   encoderspec:          &encoderspec          "Single-Turn: 19Bit (524,288 [Pulse/Rev])<br />**Multi-Turn: 18Bit (262,144 [Rev])**"
   backlash:             &backlash             "< 3.0 [arcmin]"
+  brake:                &brake                "Spring applied brake"
   output_070:           &output_070           "210 [W]"
   output_080:           &output_080           "230 [W]"
   temperature:          &temperature          "-5 ~ +55 [&deg;C]"
@@ -32,6 +33,7 @@ ym070-210-m001-rh:
   backlash:           "-"
   radialload:         "42 [N] [(출력부 베어링 참조)](#출력-베어링)"
   radialload_en:      "42 [N] [(see the output bearing section)](#output-bearing)"
+  brake:              "-"
   noloadspeed:        "5,675 [rev/min]"
   contspeed:          "4,664 [rev/min]"
   conttorque:         "0.32 [N.m]"
@@ -53,8 +55,8 @@ ym070-210-b001-rh:
   baudrate:           *baudrate
   opmode_en:          *opmode_en
   opmode:             *opmode
-  weight:             "340 [g]"
-  dimensions:         "Ø70 x 50.9 [mm]"
+  weight:             "530 [g]"
+  dimensions:         "Ø70 x 710 [mm]"
   holesize:           "Ø14[mm]"
   resolution:         "524,288 [pulse/rev]"
   encoderspec:        *encoderspec
@@ -62,6 +64,7 @@ ym070-210-b001-rh:
   backlash:           "-"
   radialload:         "42 [N] [(출력부 베어링 참조)](#출력-베어링)"
   radialload_en:      "42 [N] [(see the output bearing section)](#output-bearing)"
+  brake:              *brake
   noloadspeed:        "5,675 [rev/min]"
   contspeed:          "4,664 [rev/min]"
   conttorque:         "0.32 [N.m]"
@@ -92,6 +95,7 @@ ym070-210-r051-rh:
   backlash:           *backlash
   radialload:         "1,240 [N] [(출력부 베어링 참조)](#출력-베어링)"
   radialload_en:      "1,240 [N] [(see the output bearing section)](#output-bearing)"
+  brake:              "-"
   noloadspeed:        "111.3 [rev/min]"
   contspeed:          "39.2 [rev/min]"
   conttorque:         "8.2 [N.m]"
@@ -122,6 +126,7 @@ ym070-210-r099-rh:
   backlash:           *backlash
   radialload:         "1,520 [N] [(출력부 베어링 참조)](#출력-베어링)"
   radialload_en:      "1,520 [N] [(see the output bearing section)](#output-bearing)"
+  brake:              "-"
   noloadspeed:        "57.3 [rev/min]"
   contspeed:          "20.2 [rev/min]"
   conttorque:         "14.6 [N.m]"
@@ -144,7 +149,7 @@ ym070-210-a051-rh:
   opmode_en:          *opmode_en
   opmode:             *opmode
   weight:             "790 [g]"
-  dimensions:         "Ø70 x 71.1 [mm]"
+  dimensions:         "Ø70 x 91.2 [mm]"
   holesize:           "Ø14[mm]"
   resolution:         "26,738,688 [pulse/rev]"
   encoderspec:        *encoderspec
@@ -152,6 +157,7 @@ ym070-210-a051-rh:
   backlash:           *backlash
   radialload:         "1,240 [N] [(출력부 베어링 참조)](#출력-베어링)"
   radialload_en:      "1,240 [N] [(see the output bearing section)](#output-bearing)"
+  brake:              *brake
   noloadspeed:        "111.3 [rev/min]"
   contspeed:          "39.2 [rev/min]"
   conttorque:         "8.2 [N.m]"
@@ -174,7 +180,7 @@ ym070-210-a099-rh:
   opmode_en:          *opmode_en
   opmode:             *opmode
   weight:             "790 [g]"
-  dimensions:         "Ø70 x 71.1 [mm]"
+  dimensions:         "Ø70 x 91.2 [mm]"
   holesize:           "Ø14[mm]"
   resolution:         "51,904,512 [pulse/rev]"
   encoderspec:        *encoderspec
@@ -182,6 +188,7 @@ ym070-210-a099-rh:
   backlash:           *backlash
   radialload:         "1,520 [N] [(출력부 베어링 참조)](#출력-베어링)"
   radialload_en:      "1,520 [N] [(see the output bearing section)](#output-bearing)"
+  brake:              *brake
   noloadspeed:        "57.3 [rev/min]"
   contspeed:          "20.2 [rev/min]"
   conttorque:         "14.6 [N.m]"
@@ -213,6 +220,7 @@ ym080-230-m001-rh:
   backlash:           "-"
   radialload:         "52 [N] [(출력부 베어링 참조)](#출력-베어링)"
   radialload_en:      "52 [N] [(see the output bearing section)](#output-bearing)"
+  brake:              "-"
   noloadspeed:        "3,190 [rev/min]"
   contspeed:          "2,597 [rev/min]"
   conttorque:         "0.62 [N.m]"
@@ -234,8 +242,8 @@ ym080-230-b001-rh:
   baudrate:           *baudrate
   opmode_en:          *opmode_en
   opmode:             *opmode
-  weight:             "530 [g]"
-  dimensions:         "Ø80 x 54.1 [mm]"
+  weight:             "890 [g]"
+  dimensions:         "Ø80 x 76.1 [mm]"
   holesize:           "Ø19[mm]"
   resolution:         "524,288 [pulse/rev]"
   encoderspec:        *encoderspec
@@ -243,6 +251,7 @@ ym080-230-b001-rh:
   backlash:           "-"
   radialload:         "52 [N] [(출력부 베어링 참조)](#출력-베어링)"
   radialload_en:      "52 [N] [(see the output bearing section)](#output-bearing)"
+  brake:              *brake
   noloadspeed:        "3,190 [rev/min]"
   contspeed:          "2,597 [rev/min]"
   conttorque:         "0.62 [N.m]"
@@ -273,6 +282,7 @@ ym080-230-r051-rh:
   backlash:           *backlash
   radialload:         "1,570 [N] [(출력부 베어링 참조)](#출력-베어링)"
   radialload_en:      "1,570 [N] [(see the output bearing section)](#output-bearing)"
+  brake:              "-"
   noloadspeed:        "62.5 [rev/min]"
   contspeed:          "39.2 [rev/min]"
   conttorque:         "15.8 [N.m]"
@@ -303,6 +313,7 @@ ym080-230-r099-rh:
   backlash:           *backlash
   radialload:         "1,920 [N] [(출력부 베어링 참조)](#출력-베어링)"
   radialload_en:      "1,920 [N] [(see the output bearing section)](#output-bearing)"
+  brake:              "-"
   noloadspeed:        "32.2 [rev/min]"
   contspeed:          "20.2 [rev/min]"
   conttorque:         "26.0 [N.m]"
@@ -324,8 +335,8 @@ ym080-230-a051-rh:
   baudrate:           *baudrate
   opmode_en:          *opmode_en
   opmode:             *opmode
-  weight:             "1,200 [g]"
-  dimensions:         "Ø80 x 78.1 [mm]"
+  weight:             "1,550 [g]"
+  dimensions:         "Ø80 x 100.1 [mm]"
   holesize:           "Ø19[mm]"
   resolution:         "26,738,688 [pulse/rev]"
   encoderspec:        *encoderspec
@@ -333,6 +344,7 @@ ym080-230-a051-rh:
   backlash:           *backlash
   radialload:         "1,570 [N] [(출력부 베어링 참조)](#출력-베어링)"
   radialload_en:      "1,570 [N] [(see the output bearing section)](#output-bearing)"
+  brake:              *brake
   noloadspeed:        "62.5 [rev/min]"
   contspeed:          "39.2 [rev/min]"
   conttorque:         "15.8 [N.m]"
@@ -354,8 +366,8 @@ ym080-230-a099-rh:
   baudrate:           *baudrate
   opmode_en:          *opmode_en
   opmode:             *opmode
-  weight:             "1,200 [g]"
-  dimensions:         "Ø80 x 78.1 [mm]"
+  weight:             "1,550 [g]"
+  dimensions:         "Ø80 x 100.1 [mm]"
   holesize:           "Ø19[mm]"
   resolution:         "51,904,512 [pulse/rev]"
   encoderspec:        *encoderspec
@@ -363,6 +375,7 @@ ym080-230-a099-rh:
   backlash:           *backlash
   radialload:         "1,920 [N] [(출력부 베어링 참조)](#출력-베어링)"
   radialload_en:      "1,920 [N] [(see the output bearing section)](#output-bearing)"
+  brake:              *brake
   noloadspeed:        "32.2 [rev/min]"
   contspeed:          "20.2 [rev/min]"
   conttorque:         "26.0 [N.m]"

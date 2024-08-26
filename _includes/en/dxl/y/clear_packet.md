@@ -46,7 +46,7 @@ DYNAMIXEL-Y features an internal Multi-turn Backup Battery for Multi-turn Positi
 4. Open the battery cover, install the new Multi-turn Backup Battery, close the cover, and click the Next button.
 5. Wait for the operation to complete. 
 6. Once finished, exit the menu by clicking the OK button.
-
+7. Reset the Multi-turn to its initial state by sending the [Multi-turn Clear Packet](#multi-turn-clear-packet).
 
 
 [DYNAMIXEL Wizard 2.0]: https://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_wizard2/

@@ -12,7 +12,8 @@
 | 엔코더 사양               | {{ site.data.dxl_y_info[page.ref].encoderspec }}         |
 | 감속비                    | {{ site.data.dxl_y_info[page.ref].gearratio }}          |
 | 백래쉬                    | {{ site.data.dxl_y_info[page.ref].backlash }}           |
-| 반경방향 하중              | {{ site.data.dxl_y_info[page.ref].radialload }}         |
+| 반경방향 하중             | {{ site.data.dxl_y_info[page.ref].radialload }}         |
+| 브레이크 타입             | {{ site.data.dxl_y_info[page.ref].brake }}              |
 | No Load Speed            | {{ site.data.dxl_y_info[page.ref].noloadspeed }}        |
 | Continuous Speed         | {{ site.data.dxl_y_info[page.ref].contspeed }}          |
 | Continuous Torque        | {{ site.data.dxl_y_info[page.ref].conttorque }}         |
