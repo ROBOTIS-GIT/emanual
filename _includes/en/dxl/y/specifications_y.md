@@ -13,6 +13,7 @@
 | Gear Ratio                     | {{ site.data.dxl_y_info[page.ref].gearratio }}            |
 | Backlash                       | {{ site.data.dxl_y_info[page.ref].backlash }}             |
 | Radial Load                    | {{ site.data.dxl_y_info[page.ref].radialload_en }}        |
+| Brake type                     | {{ site.data.dxl_y_info[page.ref].brake }}                |
 | No Load Speed                  | {{ site.data.dxl_y_info[page.ref].noloadspeed }}          |
 | Continuous Speed               | {{ site.data.dxl_y_info[page.ref].contspeed }}            |
 | Continuous Torque              | {{ site.data.dxl_y_info[page.ref].conttorque }}           |

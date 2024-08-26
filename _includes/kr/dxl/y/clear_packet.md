@@ -48,6 +48,7 @@ DYNAMIXEL-Y는 Multi-turn Backup을 위해 배터리가 내장되어 있습니�
 4. 배터리 커버를 열어서 새 배터리로 교체하고, 커버를 닫고 다음 버튼을 클릭합니다.
 5. 작업 진행을 기다립니다.
 6. 작업이 완료되고 확인 버튼을 클릭하여 메뉴를 끝냅니다.
+7. [Multi-turn Clear Packet](#multi-turn-clear-packet)을 통하여 Multi-turn을 초기화 시켜줍니다.
 
 
 [DYNAMIXEL Wizard 2.0]: https://emanual.robotis.com/docs/kr/software/dynamixel/dynamixel_wizard2/
