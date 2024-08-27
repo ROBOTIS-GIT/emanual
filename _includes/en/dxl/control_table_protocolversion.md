@@ -20,7 +20,8 @@ The `Experimental S.BUS` and `Experimental iBUS` protocol are an experimental pr
 {% capture protocol_note_01 %}
 **NOTE**
 
-- In case that a RC Protocol type (Experimental S.BUS, Experimental iBUS, RC-PWM) is set, DYNAMIXEL will switch to DYNAMIXEL Protocol 2.0 on condition that RC protocol is not detected during booting. Therefore, it is possible for DYNAMIXEL to access to its Control Table in using software such as [DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/).
+- In case that a RC Protocol type (Experimental S.BUS, Experimental iBUS, RC-PWM) is set, DYNAMIXEL will switch to DYNAMIXEL Protocol 2.0 on condition that RC protocol is not detected during booting. Therefore, it is possible for DYNAMIXEL to access to its Control Table in using software such as [DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/).</br>
+At this point, the LED will light up and you can see that RC protocol mode has failed. (Supported firmware version V52 and late)
 - If RC protocol type is detected during the booting and operates as its RC mode, DYNAMIXEL will be automatically **Torque On** status.
 {% endcapture %}
 <div class="notice">{{ protocol_note_01 | markdownify }}</div>

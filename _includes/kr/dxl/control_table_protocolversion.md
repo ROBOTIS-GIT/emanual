@@ -20,7 +20,8 @@
 {% capture protocol_note_01 %}
 **참고**
 - 프로토콜 타입이 RC 프로토콜 타입(Experimental S.BUS, Experimental iBUS, RC-PWM)으로 설정된 경우, 부팅시 일정 시간동안 해당 신호가 감지되지 않으면, DYNAMIXEL Protocol 2.0으로 동작합니다.
-따라서, DYNAMIXEL Protocol 2.0으로 설정되어 있지 않아도, [다이나믹셀 위자드 2.0](/docs/kr/software/dynamixel/dynamixel_wizard2/) 등을 이용하여 컨트롤 테이블 접근이 가능합니다.
+따라서, DYNAMIXEL Protocol 2.0으로 설정되어 있지 않아도, [다이나믹셀 위자드 2.0](/docs/kr/software/dynamixel/dynamixel_wizard2/) 등을 이용하여 컨트롤 테이블 접근이 가능합니다.</br>
+이때, LED가 켜지며 RC 프로토콜 모드 진입에 실패함을 확인할 수 있습니다. (펌웨어 버전 V52 이상부터 지원)
 - RC 프로토콜 타입 (Experimental S.BUS, Experimental iBUS, RC-PWM) 설정 후 부팅시 해당하는 프로토콜이 감지되면 RC 모드로 동작되며 자동으로 **Torque On** 상태가 됩니다.
 {% endcapture %}
 <div class="notice">{{ protocol_note_01 | markdownify }}</div>
