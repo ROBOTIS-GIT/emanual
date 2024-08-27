@@ -15,7 +15,7 @@ Goal Position(116) is used to set the actuator's desired output position.
 
 
 {% capture notice_01 %}
-**NOTE** : [Profile Velocity(112)](#profile-velocity112) and [Profile Acceleration(108)](#profile-acceleration108) are active:
+**NOTE** : [Profile Velocity(112)](#profile-velocity112) and [Profile Acceleration(108)](#profile-acceleration108) are active under the following conditions:
 - When the [Operating Mode(11)](#operating-mode11) is **Position Control Mode**, [Profile Velocity(112)](#profile-velocity112) and [Profile Acceleration(108)](#profile-acceleration108) are used to create a new profile when the [Goal Position(116)](#goal-position116) is updated.  
 - When the [Operating Mode(11)](#operating-mode11) is **Velocity Control Mode**, [Profile Acceleration(108)](#profile-acceleration108) is used to create a new profile when [Goal Velocity(104)](#goal-velocity104) is updated.
 {% endcapture %}

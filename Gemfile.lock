@@ -97,7 +97,11 @@ GEM
     mutex_m (0.3.0)
     net-http (0.6.0)
       uri
+<<<<<<< HEAD
     nokogiri (1.16.8-x86_64-linux)
+=======
+    nokogiri (1.16.2-x86_64-linux)
+>>>>>>> 1188bcb77 (jkljl)
       racc (~> 1.4)
     octokit (4.25.1)
       faraday (>= 1, < 3)
