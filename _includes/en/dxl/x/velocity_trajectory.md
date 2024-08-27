@@ -1,0 +1,3 @@
+This register stores the current target velocity for the active trajectory created by the current Profile. The specific values and behavior of this register may change based on the active operating mode. For more details, please refer to [Profile Velocity(112)].
+1. **Velocity Control Mode** : When the generated Profile reaches it's endpoint, [Velocity Trajectory(136)] becomes equal to [Goal Velocity(104)].
+2. **Position Control Mode, Extended Position Control Mode** : Velocity Trajectory is used to create the [Position Trajectory(140)] used for the movement. When the Profile reaches an endpoint, [Velocity Trajectory(136)] is set to '0'.
