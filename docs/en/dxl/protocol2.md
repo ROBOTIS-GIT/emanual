@@ -468,7 +468,7 @@ Note that given examples use the following abbreviation to provide clear informa
 ## [Reboot (0x08)](#reboot-0x08)
 
 ### Description
-- Instruction to reboot the device
+- Instruction to reboot the device. While rebooting, the servo will not respond to requests.
 
 ### Example
 
