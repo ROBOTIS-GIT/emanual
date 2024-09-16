@@ -4,45 +4,12 @@ The Control Table is a data structure used by DYNAMIXEL actuators to manage the 
 {% assign protocol= "DYNAMIXEL Protocol 2.0" %}
 {% assign data_size= "1 ~ 4" %}
 
-{% if page.product_group=='dxl_p' %}
-**WARNING** : DYNAMIXEL-P servos use a different Control Table layout than DYNAMIXEL PRO series actuators. Please verify the control table addresses used in your control program attention when transitioning from DYNAMIXEL PRO to DYNAMIXEL-P.
-{: .notice--warning}
-{% assign torque_enable= "512" %}
-
-{% elsif page.product_group=='dxl_pro_a' %}
-**WARNING** : PRO(A) series use different Control Table from DYNAMIXEL PRO series. Please pay attention when upgrading DYNAMIXEL PRO to PRO(A).
-{: .notice--warning}
-{% assign torque_enable= "512" %}
-
-{% elsif page.product_group=='rh_p12_rna' %}
-**WARNING** : RH-P12-RN(A) uses different Control Table from RH-P12-RN. Please pay attention when upgrading RH-P12-RN to RH-P12-RN(A).
-{: .notice--warning}
-{% assign torque_enable= "512" %}
-
-{% elsif page.product_group=='dxl_pro' %}
-{% assign torque_enable= "562" %}
-
-{% elsif page.product_group=='dxl_mx2' %}
-{% capture mx2_control_table %}
-**CAUTION**
-1. MX(2.0) Firmware is different from MX series' control table and address. Please check the control table address before usage.
-2. MX(2.0) Firmware inherits DYNAMIXEL-X function. Therefore, it supports [DYNAMIXEL Protocol 1.0](/docs/en/dxl/protocol1/) and [DYNAMIXEL Protocol 2.0](/docs/en/dxl/protocol2/), and various Operating Modes, Secondary ID, Drive Mode, Bus Watchdog, etc. Please refer to the control table for more details.
-{% endcapture %}
-
-<div class="notice--warning">{{ mx2_control_table | markdownify }}</div>
-{% assign torque_enable= "64" %}
-
-{% elsif page.product_group=='dxl_x430' or page.product_group=='dxl_xl430' or page.product_group=='dxl_x540' or page.product_group=='dxl_xw540' or page.product_group=='dxl_xw430' %}
+{% if page.product_group=='dxl_x430' or page.product_group=='dxl_xl430' or page.product_group=='dxl_x540' or page.product_group=='dxl_xw540' or page.product_group=='dxl_xw430' %}
 {% assign torque_enable= "64" %}
 
 {% elsif page.product_group=='dxl_xl320' %}
 {% assign torque_enable= "24" %}
 {% assign protocol= "DYNAMIXEL Protocol 2.0" %}
-{% assign data_size= "1 ~ 2" %}
-
-{% elsif page.product_group=='dxl_ax' or page.product_group=='dxl_dx' or page.product_group=='dxl_ex' or page.product_group=='dxl_mx' or page.product_group=='dxl_rx' %}
-{% assign torque_enable= "24" %}
-{% assign protocol= "DYNAMIXEL Protocol 1.0" %}
 {% assign data_size= "1 ~ 2" %}
 
 {% endif %}
@@ -61,10 +28,10 @@ The Control Table is divided into 2 Areas. Data in the RAM Area is reset to init
 
 {% if page.product_group=='dxl_ax' or page.product_group=='dxl_dx' or page.product_group=='dxl_ex' or page.product_group=='dxl_mx' or page.product_group=='dxl_rx' %}
 {% elsif page.ref=='2xc430-w250' or page.ref =='2xl430-w250' %}
-**Data of [EEPROM Area](#eeprom-area) can only be written when [Torque Enable(64)](#torque-enable) value of the control table for each axle is all set as ‘0’.**
+**Data in the [EEPROM Area](#eeprom-area) can only be modified when [Torque Enable(64)](#torque-enable) for all axis are set to ‘0’ (Torque is OFF).**
 {: .notice--warning}
 {% else %} 
-**Data in the EEPROM Area can only be written to if Torque Enable({{ torque_enable }}) is cleared to '0'(Torque OFF).**
+**Data in the EEPROM Area can only be modified if Torque Enable({{ torque_enable }}) is set to '0' (Torque is OFF).**
 {: .notice--warning}
 {% endif %}
 
