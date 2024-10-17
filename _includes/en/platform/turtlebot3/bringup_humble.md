@@ -2,18 +2,21 @@
 
 ### [Bringup TurtleBot3](#bringup-turtlebot3)
 1. Open a new terminal from PC with `Ctrl` + `Alt` + `T` and connect to Raspberry Pi with its IP address.  
-  The default password is **turtlebot**.  
+  Enter your `password` of Ubuntu OS in `Raspberry pi` .  
+  **[Remote PC]**  
   ```bash
 $ ssh ubuntu@{IP_ADDRESS_OF_RASPBERRY_PI}
-  ```
+  ```  
 
 2. Bring up basic packages to start TurtleBot3 applications. Please use the proper keyword among `burger`, `waffle_pi` for the `TURTLEBOT3_MODEL` parameter.  
+**[TurtleBot3 SBC]**  
   ```bash
 $ export TURTLEBOT3_MODEL=burger
 $ ros2 launch turtlebot3_bringup robot.launch.py
   ```
 
 3. When the TURTLEBOT3_MODEL is set to `burger`, the terminal output will look like below.  
+**[TurtleBot3 SBC]**  
   ```bash
 $ export TURTLEBOT3_MODEL=burger
 $ ros2 launch turtlebot3_bringup robot.launch.py
@@ -67,10 +70,24 @@ urdf_file_name : turtlebot3_burger.urdf
   ```
 
 4. Topics and services can be listed with commands below.  
-List of topics and services may vary depend on ROS pacakage version.
+- `Remote PC` can subscribe topic published by `Turtlebot3 SBC` by connecting both in same network environment.  
+- If it doesn't show operating like below bash, check the below list.  
+    1. Check that `Remote PC` and `TurtleBot3 SBC` have same ROS_DOMAIN_ID. They must have same ROS_DOMAIN_ID.  
+    **[Remote PC]**,**[TurtleBot3 SBC]**  
+    ```bash  
+    export ROS_DOMAIN_ID=30  
+    ```  
+    2. Check that `Remote PC` and `TurtleBot3 SBC` have same RMW(ROS Middleware) implementation.  
+    **[Remote PC]**,**[TurtleBot3 SBC]**  
+    ```bash  
+    export RMW_IMPLEMENTATION=rmw_fastrtps_cpp  
+    ```  
+    3. Check that your wifi router supports `multi cast`. If it does, set your router permit `multi cast`. Else try with Hotspot of your phone is recommended.  
 
-- **Topic list**
-  ```bash
+1. 
+  List of topics and services may vary depend on ROS pacakage version.  
+  - **Topic list**  
+  ```bash  
 $ ros2 topic list
 /battery_state
 /cmd_vel
@@ -85,10 +102,9 @@ $ ros2 topic list
 /sensor_state
 /tf
 /tf_static
-  ```
-
-- **Service list**
-  ```bash
+  ```  
+  - **Service list**  
+  ```bash  
 $ ros2 service list
 /diff_drive_controller/describe_parameters
 /diff_drive_controller/get_parameter_types
@@ -117,20 +133,19 @@ $ ros2 service list
 /turtlebot3_node/list_parameters
 /turtlebot3_node/set_parameters
 /turtlebot3_node/set_parameters_atomically
-  ```
-
-<details>
-<summary>
-![](/assets/images/icon_unfold.png) **Read more about launching RViz**
+  ```  
+<details>  
+<summary>  
+![](/assets/images/icon_unfold.png) **Read more about launching RViz**  
 </summary>
-### [Load TurtleBot3 on Rviz](#load-turtlebot3-on-rviz)
+### [Load TurtleBot3 on Rviz](#load-turtlebot3-on-rviz)  
 
-1. Make sure to bring up the TurtleBot3
+1. Make sure to bring up the TurtleBot3  
 
 2. Open a new terminal and enter the below command to launch RViz.  
-  ```bash
-$ ros2 launch turtlebot3_bringup rviz2.launch.py
+  ```bash  
+$ ros2 launch turtlebot3_bringup rviz2.launch.py  
   ```  
-  ![](/assets/images/platform/turtlebot3/bringup/run_rviz.jpg)
+  ![](/assets/images/platform/turtlebot3/bringup/run_rviz.jpg)  
 
-</details>
+</details>  

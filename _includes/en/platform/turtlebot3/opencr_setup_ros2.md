@@ -1,29 +1,33 @@
 
 ## [OpenCR Setup](#opencr-setup)
 
-1. Connect the [OpenCR] to the Rasbperry Pi using the micro USB cable.
-
+1. Connect the [OpenCR] to the Rasbperry Pi using the micro USB cable.  
+![](/assets/images/platform/turtlebot3/opencr/opencr_setup.png)  
 2. Install required packages on the Raspberry Pi to upload the [OpenCR] firmware.
+**[TurtleBot3 SBC]**  
   ```bash
 $ sudo dpkg --add-architecture armhf
 $ sudo apt update
 $ sudo apt install libc6:armhf
   ```
 
-3. Depending on the platform, use either `burger` or `waffle` for the **OPENCR_MODEL** name.
+3. Depending on the platform, use either `burger` or `waffle` for the **OPENCR_MODEL** name.  
+**[TurtleBot3 SBC]**  
   ```bash
 $ export OPENCR_PORT=/dev/ttyACM0
 $ export OPENCR_MODEL=burger
 $ rm -rf ./opencr_update.tar.bz2
   ```
 
-4. Download the firmware and loader, then extract the file.
+4. Download the firmware and loader, then extract the file.  
+**[TurtleBot3 SBC]**  
   ```bash
 $ wget https://github.com/ROBOTIS-GIT/OpenCR-Binaries/raw/master/turtlebot3/ROS2/latest/opencr_update.tar.bz2
 $ tar -xvf ./opencr_update.tar.bz2
   ```
 
-5. Upload firmware to the OpenCR.
+5. Upload firmware to the OpenCR.  
+**[TurtleBot3 SBC]**  
   ```bash
 $ cd ~/opencr_update
 $ ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr
@@ -49,7 +53,7 @@ Please be aware that [OpenCR] board manager **does not support Arduino IDE on AR
 In order to upload the [OpenCR] firmware using Arduino IDE, please follow the below instructions on your PC.
 {: .notice--danger}
 
-1. If you are using Linux, please configure the USB port for OpenCR. For other OS(OSX or Windows), you can skip this step.
+1. If you are using Linux, please configure the USB port for OpenCR. For other OS(OSX or Windows), you can skip this step.  
   ```bash
 $ wget https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCR/master/99-opencr-cdc.rules
 $ sudo cp ./99-opencr-cdc.rules /etc/udev/rules.d/
