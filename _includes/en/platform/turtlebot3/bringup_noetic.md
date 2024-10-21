@@ -2,8 +2,8 @@
 
 ### [Run roscore](#run-roscore)
 
-Run roscore from PC.
-
+Run roscore from PC.  
+**[Remote PC]**  
 ```bash
 $ roscore
 ```
@@ -14,12 +14,14 @@ $ roscore
 {: .notice--success}
 
 1. Open a new terminal from PC with `Ctrl` + `Alt` + `T` and connect to Raspberry Pi with its IP address.  
-  The default password is **turtlebot**.  
-  ```bash
-$ ssh ubuntu@{IP_ADDRESS_OF_RASPBERRY_PI}
-  ```
+The default password is **turtlebot**.  
+  **[Remote PC]**  
+  ```bash  
+$ ssh ubuntu@{IP_ADDRESS_OF_RASPBERRY_PI}  
+  ```  
 
-2. Bring up basic packages to start TurtleBot3 applications.
+2. Bring up basic packages to start TurtleBot3 applications.  
+**[Turtlebot3 SBC]**  
   ```bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ roslaunch turtlebot3_bringup turtlebot3_robot.launch

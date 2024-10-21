@@ -20,7 +20,7 @@
 **NOTE**: This instruction was tested on Linux with `Ubuntu 20.04` and `ROS1 Noetic Ninjemys`.
 {: .notice--info}
 
-### [Download and Install Ubuntu on PC](#download-and-install-ubuntu-on-pc)
+### [Download and Install Ubuntu on Remote PC](#download-and-install-ubuntu-on-pc)
 
 1. Download the proper `Ubuntu 20.04 LTS Desktop` image for your PC from the links below.
   - [Ubuntu 20.04 LTS Desktop image (64-bit)](https://releases.ubuntu.com/20.04/){: .blank}

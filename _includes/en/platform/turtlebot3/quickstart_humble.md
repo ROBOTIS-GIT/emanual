@@ -56,7 +56,7 @@ echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 source ~/.bashrc  
   ```
   
-</details> 
+</details>  
 
 
 
