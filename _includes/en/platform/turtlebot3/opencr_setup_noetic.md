@@ -1,8 +1,8 @@
 
 ## [OpenCR Setup](#opencr-setup)
 
-1. Connect the [OpenCR] to the Rasbperry Pi using the micro USB cable.
-
+1. Connect the [OpenCR] to the Rasbperry Pi using the micro USB cable.  
+![](/assets/images/platform/turtlebot3/opencr/opencr_setup.png)  
 2. Install required packages on the Raspberry Pi to upload the [OpenCR] firmware.  
 **[Turtlebot3 SBC]**  
   ```bash  

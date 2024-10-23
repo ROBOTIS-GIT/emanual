@@ -2,6 +2,7 @@ Once SLAM node is successfully up and running, TurtleBot3 will be exploring unkn
 
 1. Open a new terminal and run the teleoperation node from the Remote PC.  
   Please use the proper keyword among `burger`, `waffle`, `waffle_pi` for the `TURTLEBOT3_MODEL` parameter.  
+**[Remote PC]**  
   ```bash
 $ export TURTLEBOT3_MODEL=burger
 $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch

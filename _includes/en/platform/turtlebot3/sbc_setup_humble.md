@@ -34,7 +34,7 @@ Please refer to [this article](https://www.raspberrypi.org/blog/raspberry-pi-ima
 
 ![](/assets/images/icon_unfold.png) **Click here to expand more details about How to install Raspberry Pi Imager.**
 </summary>  
-Choose one way to install rsi-imager between `deb` and `apt`  
+Choose one way to install rpi-imager between `deb` and `apt`  
 
 1. `deb`  
 Download deb file  
@@ -46,9 +46,6 @@ $ sudo dpkg -i imager_[you_rversion]_amd64.deb #check the file name downloaded
 If you have any dependency error, use below CLI
   ```bash
 $ sudo apt-get install -f
-  ```  
-
-  ```bash
 $ rpi-imager
   ```    
 2. `apt`

@@ -32,6 +32,7 @@
 
 Open the terminal with `Ctrl`+`Alt`+`T` and enter below commands one at a time.  
 In order to check the details of the easy installation script, please refer to [the script file](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_noetic.sh).  
+**[Remote PC]**  
 ```bash
 $ sudo apt update
 $ sudo apt upgrade
@@ -42,8 +43,8 @@ $ bash ./install_ros_noetic.sh
 
 If the above installation fails, please refer to [the official ROS1 Noetic installation guide](http://wiki.ros.org/noetic/Installation/Ubuntu).
 
-### [Install Dependent ROS Packages](#install-dependent-ros-packages)
-
+### [Install Dependent ROS Packages](#install-dependent-ros-packages)  
+**[Remote PC]**  
 ```bash
 $ sudo apt-get install ros-noetic-joy ros-noetic-teleop-twist-joy \
   ros-noetic-teleop-twist-keyboard ros-noetic-laser-proc \
@@ -57,8 +58,8 @@ $ sudo apt-get install ros-noetic-joy ros-noetic-teleop-twist-joy \
 
 ### [Install TurtleBot3 Packages](#install-turtlebot3-packages)
 
-Install TurtleBot3 via Debian Packages.
-
+Install TurtleBot3 via Debian Packages.  
+**[Remote PC]**  
 ```bash
 $ sudo apt install ros-noetic-dynamixel-sdk
 $ sudo apt install ros-noetic-turtlebot3-msgs
@@ -71,6 +72,8 @@ $ sudo apt install ros-noetic-turtlebot3
 </summary>
 In case you need to download the source codes and build them, please use the commands below.  
 Make sure to remove the identical packages to avoid redundancy.  
+  
+**[Remote PC]**  
 ```bash
 $ sudo apt remove ros-noetic-dynamixel-sdk
 $ sudo apt remove ros-noetic-turtlebot3-msgs
@@ -90,12 +93,14 @@ $ echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 ![](/assets/images/platform/turtlebot3/software/network_configuration.png)
 
 1. Connect PC to a WiFi device and find the assigned IP address with the command below.  
+**[Remote PC]**  
   ```bash
 $ ifconfig
   ```  
   ![](/assets/images/platform/turtlebot3/software/network_configuration2.png)
 
 2. Open the file and update the ROS IP settings with the command below.  
+**[Remote PC]**  
   ```bash
 $ nano ~/.bashrc
   ```
@@ -105,6 +110,7 @@ $ nano ~/.bashrc
   ![](/assets/images/platform/turtlebot3/software/network_configuration3.png)
 
 4. Source the bashrc with below command.  
+**[Remote PC]**  
   ```bash
 $ source ~/.bashrc
   ```
