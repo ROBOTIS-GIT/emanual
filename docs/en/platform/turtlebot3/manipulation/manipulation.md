@@ -148,7 +148,7 @@ page_number: 17
 </section>
 
 <section data-id="{{ page.tab_title6 }}" class="tab_contents">
-{% include en/platform/turtlebot3/manipulation/manipulation_opencr_setup_foxy.md %}
+{% include en/platform/turtlebot3/manipulation/manipulation_opencr_setup_humble.md %}
 </section>
 
 <section data-id="{{ page.tab_title7 }}" class="tab_contents">
