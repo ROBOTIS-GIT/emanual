@@ -3,23 +3,25 @@
 
 ### [Teleoperation](#teleoperation)
 
-**WARNING**: Make sure to run the [Bringup][bringup] from the TurtleBot3 SBC before teleoperation. Teleoperate the robot, and be careful when testing the robot on the table as the robot might fall.
-{: .notice--warning}
-
 The TurtleBot3 can be teleoperated by various remote controllers. Make sure that the necessary ROS packages are supported for your SBC and ROS version. 
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/Z4s18hlazb4" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/Z4s18hlazb4" frameborder="0" allowfullscreen></iframe>  
+
+**WARNING**: Make sure to run the [Bringup][bringup] from the TurtleBot3 SBC before teleoperation. Teleoperate the robot, and be careful when testing the robot on the table as the robot might fall.
+{: .notice--warning}  
 
 #### [Keyboard](#keyboard)
 
 1. Open a terminal on **Remote PC**.
-2. Run teleoperation node. Replace the `${TB3_MODEL}` with `burger` or `waffle` or `waffle_pi`, if TURTLEBOT3_MODEL parameter is not predefined.
+2. Run teleoperation node. Replace the `${TB3_MODEL}` with `burger` or `waffle` or `waffle_pi`, if TURTLEBOT3_MODEL parameter is not predefined.  
+**[Remote PC]**  
 ```bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ ros2 run turtlebot3_teleop teleop_keyboard
 ```
 
 3. If the node is successfully launched, the following instruction will be appeared to the terminal window.  
+**[Remote PC]**  
 ```bash
 Control Your Turtlebot3
 Moving around
@@ -48,18 +50,21 @@ The settings for [ROBOTIS RC-100B][rc100] is included in an OpenCR firmware for 
 
 1. Connect PS3 Joystick to **Remote PC** via Bluetooth or a USB cable.
 
-2. Install `ds4drv` packages by using pip.
+2. Install `ds4drv` packages by using pip.  
+**[Remote PC]**  
   ```bash
 $ sudo pip install ds4drv
   ```
 
 3. Launch the joystick node.  
+**[Remote PC]**  
   ```bash
 $ sudo ds4drv
 $ ros2 run joy joy_node
   ```
 
 4. Open a new terminal and launch the teleoperation node.  
+**[Remote PC]**  
   ```bash
 $ ros2 run teleop_twist_joy teleop_node
   ```
@@ -71,11 +76,13 @@ $ ros2 run teleop_twist_joy teleop_node
 2. Open a terminal on **Remote PC**.
 
 3. Launch the joystick node.  
+**[Remote PC]**    
   ```bash
 $ ros2 run joy joy_node
   ```
 
 4. Open a new terminal and launch the teleoperation node.  
+**[Remote PC]**  
   ```bash
 $ ros2 run teleop_twist_joy teleop_node
   ```
@@ -89,7 +96,8 @@ $ ros2 run teleop_twist_joy teleop_node
 In order to check topics of TurtleBot3, Use [rqt][rqt] provided by ROS, which is a Qt-based framework for GUI development for ROS. It is a tool displaying all topics of TurtleBot3 with a topic name, type, bandwidth, Hz, and value.
 </details>
 
-1. Run the rqt from PC with the command below. If the topic monitor window is not displayed, select the `plugin` -> `Topics` -> `Topic Monitor`.
+1. Run the rqt from PC with the command below. If the topic monitor window is not displayed, select the `plugin` -> `Topics` -> `Topic Monitor`.  
+**[Remote PC]**  
   ```bash
 $ rqt
   ```  

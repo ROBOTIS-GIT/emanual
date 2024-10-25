@@ -1,19 +1,19 @@
-
-<div style="counter-reset: h1 3"></div>
+<div style="counter-reset: h1 2"></div>
 <div style="counter-reset: h2 1"></div>
+
 
 ## [SBC Setup](#sbc-setup)
 
 {% capture warning_01 %}
 **WARNING**
 - This process may take long time. Please do not use battery while following this section.
-- An HDMI monitor and input devices such as a keyboard and a mouse will be required to complete this setup.
+- **An HDMI monitor and input devices such as a keyboard and a mouse will be required to complete this setup.**
 - In order to use the webOS Robotics Platform, please refer to [webOS Robotics Platform](https://github.com/ros/meta-ros/wiki/OpenEmbedded-Build-Instructions) instruction. Packages will be cross-compiled using OpenEmbedded on a higher performance PC and an image file is created.
 {% endcapture %}
 <div class="notice--danger">{{ warning_01 | markdownify }}</div>
 
 ### [Prepare microSD Card and Reader](#prepare-microsd-card-and-reader)
-If you PC do not have a microSD slot, please use a microSD card reader to burn the recovery image.  
+If your PC do not have a microSD slot, please use a microSD card reader to burn the recovery image.  
 ![](/assets/images/platform/turtlebot3/setup/micro_sd_reader.png)
 
 The microSD card reader is not included in the TurtleBot3 package.
@@ -28,13 +28,43 @@ Please refer to [this article](https://www.raspberrypi.org/blog/raspberry-pi-ima
 [![](/assets/images/icon_download.png) **Download** Raspberry Pi Imager from raspberrypi.org](https://www.raspberrypi.org/software/){: .blank}
 {% endcapture %}
 <div class="notice--success">{{ download_rpi_imager | markdownify }}</div>
+  
+<details>
+<summary>
 
+![](/assets/images/icon_unfold.png) **Click here to expand more details about How to install Raspberry Pi Imager.**
+</summary>  
+Choose one way to install rpi-imager between `deb` and `apt`  
+
+1. `deb`  
+Download deb file  
+![](/assets/images/platform/turtlebot3/sbc_setup/sbc_setup1.png)  
+  ```bash
+$ cd Downloads
+$ sudo dpkg -i imager_[you_rversion]_amd64.deb #check the file name downloaded
+  ```  
+If you have any dependency error, use below CLI
+  ```bash
+$ sudo apt-get install -f
+$ rpi-imager
+  ```    
+2. `apt`
+
+  ```bash
+$ sudo apt install rpi-imager
+$ rpi-imager
+  ```
+  
+</details> 
+  
 ### Install Ubuntu 22.04
 1. Run Raspberry Pi Imager
 2. Click `CHOOSE OS`.  
 3. Select `Other gerneral-purpose OS`.  
 4. Select `Ubuntu`.  
-5. Select `Ubuntu Server 22.04.5 LTS (64-bit)` that support RPi 3/4/400.
+5. Select `Ubuntu Server 22.04.5 LTS (64-bit)` that support RPi 3/4/400.  
+(Choose Server OS, not desktop OS)  
+![](/assets/images/platform/turtlebot3/sbc_setup/sbc_setup2.png)  
 6. Click `CHOOSE STORAGE` and select the micro SD card.
 7. Click `WRITE` to install the Ubuntu.
 
@@ -44,15 +74,18 @@ HDMI cable must be connected before powering the Raspberry Pi, or else the HDMI 
 {: .notice--warning}
 
 1. Boot Up the Raspberry Pi  
+  \* You can get the information about where to connect HDMI, power and input device in [here](https://www.raspberrypi.com/documentation/computers/getting-started.html)  
   a. Connect the HDMI cable of the monitor to the HDMI port of Raspberry Pi.  
-  b. Connect input devices to the USB port of Raspberry Pi.  
-  c. Insert the microSD card.  
+  b. Connect input devices(generally keyboard) to the USB port of Raspberry Pi.  
+  c. Insert the microSD card into Raspberry Pi.  
   d. Connect the power (either with USB or OpenCR) to turn on the Raspberry Pi.  
-  e. Login with ID `ubuntu` and PASSWORD `ubuntu`. Once logged in, you'll be asked to change the password.
+  e. Login with ID `ubuntu` and PASSWORD `ubuntu`. Once logged in, you'll be asked to change the password.  
+  ![](/assets/images/platform/turtlebot3/sbc_setup/sbc_setup3.png)  
 
 2. Open the network configuration file with the command below.  
+**[TurtleBot3 SBC]**  
 ```bash
-$ sudo nano /writable/etc/netplan/50-cloud-init.yaml
+$ sudo nano /etc/netplan/50-cloud-init.yaml
 ```  
 
 3. When the editor is opened, edit the content as below while replacing the `WIFI_SSID` and `WIFI_PASSWORD` with your actual wifi SSID and password.  
@@ -62,11 +95,13 @@ $ sudo nano /writable/etc/netplan/50-cloud-init.yaml
 
 
 5. Enter the command below to edit automatic update setting file.  
+**[TurtleBot3 SBC]**  
 ```bash
 $ sudo nano /etc/apt/apt.conf.d/20auto-upgrades
 ```
 
-6. Change the update settings as below.
+6. Change the update settings as below.  
+**[TurtleBot3 SBC]**  
 ```bash
 APT::Periodic::Update-Package-Lists "0";
 APT::Periodic::Unattended-Upgrade "0";
@@ -74,26 +109,61 @@ APT::Periodic::Unattended-Upgrade "0";
 
 7. Save the file with `Ctrl`+`S` and exit with `Ctrl`+`X`.  
 
-8. Set the `systemd` to prevent boot-up delay even if there is no network at startup. Run the command below to set mask the `systemd` process using the following command.
+8. Set the `systemd` to prevent boot-up delay even if there is no network at startup. Run the command below to set mask the `systemd` process using the following command.  
+**[TurtleBot3 SBC]**  
 ```bash
 $ systemctl mask systemd-networkd-wait-online.service
 ```
 
-9. Disable Suspend and Hibernation
+9. Disable Suspend and Hibernation  
+**[TurtleBot3 SBC]**  
 ```bash
 $ sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
 ```
 
-10. Reboot the Raspberry Pi.
+10. Reboot the Raspberry Pi.  
+**[TurtleBot3 SBC]**  
 ```bash
 $ reboot
 ```
 
-11. After rebooting the Raspberry Pi, if you wish to work from the Remote PC using SSH, use below command from the remote PC terminal. Make sure to use the password you set in `Step 1`.
+11. After rebooting the Raspberry Pi, if you wish to work from the Remote PC using SSH, use below command from the remote PC terminal. Make sure to use the password you set in `Step 1`.  
+**[Remote PC]**  
 ```bash
 $ ssh ubuntu@{IP Address of Raspberry PI}
 ```
+<details>
+<summary>
+![](/assets/images/icon_unfold.png) **Click here to expand more details about How to connect ssh**
+</summary>
 
+1. Setup Raspberry Pi to be possible to use password for connecting ssh  
+**[TurtleBot3 SBC]**  
+```bash
+$ sudo nano /etc/ssh/sshd_config  
+```  
+2. Edit the content as below  
+![](/assets/images/platform/turtlebot3/sbc_setup/sshd_config.png)  
+3. Edit here, too  
+**[TurtleBot3 SBC]**  
+```bash
+$ sudo nano /etc/ssh/sshd_config.d/50-cloud-init.conf
+```  
+![](/assets/images/platform/turtlebot3/sbc_setup/sshd_config2.png) 
+4. Install net-tools and check your ip.  
+**[TurtleBot3 SBC]**  
+```bash
+$ sudo apt update
+$ sudo apt install net-tools
+$ ifconfig
+```  
+![](/assets/images/platform/turtlebot3/sbc_setup/sshd_config3.png)  
+5. Enter command below in `remote PC` and use your `password` that you changed before.  
+**[Remote PC]**  
+```bash
+$ ssh ubuntu@{IP Address of Raspberry PI}
+```  
+</details>
 12. Install ROS2 Humble Hawksbill  
 Follow the instruction in [the official ROS2 Humble installation guide](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html).
 
@@ -118,7 +188,8 @@ $ echo 'source ~/turtlebot3_ws/install/setup.bash' >> ~/.bashrc
 $ source ~/.bashrc
 ```
 
-14. USB Port Setting for OpenCR
+14. USB Port Setting for OpenCR  
+**[TurtleBot3 SBC]**  
 ```bash
 $ sudo cp `ros2 pkg prefix turtlebot3_bringup`/share/turtlebot3_bringup/script/99-turtlebot3-cdc.rules /etc/udev/rules.d/
 $ sudo udevadm control --reload-rules
@@ -129,7 +200,7 @@ $ sudo udevadm trigger
 In ROS2 DDS communication, `ROS_DOMAIN_ID` must be matched between **Remote PC** and **TurtleBot3** for communication under the same network environment. Following commands shows how to assign a `ROS_DOMAIN_ID` to SBC in TurtleBot3.
 - A default ID of **TurtleBot3** is `30`.  
 - Configuring the `ROS_DOMAIN_ID` of Remote PC and SBC in TurtleBot3 to `30` is recommended.  
-
+**[TurtleBot3 SBC]**  
 ```bash
 $ echo 'export ROS_DOMAIN_ID=30 #TURTLEBOT3' >> ~/.bashrc
 $ source ~/.bashrc
@@ -146,12 +217,14 @@ If you have purchased TurtleBot3 after 2022, please use `LDS-02` for the LDS_MOD
 |:---:|:---:|
 |![](/assets/images/platform/turtlebot3/appendix_lds/lds_small.png)|![](/assets/images/platform/turtlebot3/appendix_lds/lds_ld08_small.png)|
 
-Depending on your LDS model, use `LDS-01` or `LDS-02`.
+Depending on your LDS model, use `LDS-01` or `LDS-02`.  
+**[TurtleBot3 SBC]**  
 ```bash
 $ echo 'export LDS_MODEL=LDS-02' >> ~/.bashrc
 ```
 
-Apply changes with the command below.
+Apply changes with the command below.  
+**[TurtleBot3 SBC]**  
 ```bash
 $ source ~/.bashrc
 ```

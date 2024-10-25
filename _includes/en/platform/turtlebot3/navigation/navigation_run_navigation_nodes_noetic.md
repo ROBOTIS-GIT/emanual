@@ -1,12 +1,14 @@
 
-1. If `roscore` is not running on the Remote PC, run roscore. **Skip this step if roscore is already running**.
+1. If `roscore` is not running on the Remote PC, run roscore. **Skip this step if roscore is already running**.  
+**[Remote PC]**  
   ```bash
 $ roscore
   ```
 
 2. If the `Bringup` is not running on the TurtleBot3 SBC, launch the Bringup. **Skip this step if you have launched bringup previously**.  
   - Open a new terminal from Remote PC with `Ctrl` + `Alt` + `T` and connect to Raspberry Pi with its IP address.
-The default password is **turtlebot**.  Please use the proper keyword among `burger`, `waffle`, `waffle_pi` for the `TURTLEBOT3_MODEL` parameter.
+The default password is **turtlebot**.  Please use the proper keyword among `burger`, `waffle`, `waffle_pi` for the `TURTLEBOT3_MODEL` parameter.  
+**[Remote PC]**  
   ```bash
 $ ssh ubuntu@{IP_ADDRESS_OF_RASPBERRY_PI}
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
@@ -15,6 +17,7 @@ $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
 
 3. Launch the Navigation.  
   Please use the proper keyword among `burger`, `waffle`, `waffle_pi` for the `TURTLEBOT3_MODEL` parameter.  
+**[Remote PC]**  
   ```bash
 $ export TURTLEBOT3_MODEL=burger
 $ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/map.yaml
