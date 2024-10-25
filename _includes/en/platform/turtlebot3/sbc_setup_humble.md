@@ -153,6 +153,7 @@ $ sudo nano /etc/ssh/sshd_config.d/50-cloud-init.conf
 4. Install net-tools and check your ip.  
 **[TurtleBot3 SBC]**  
 ```bash
+$ reboot
 $ sudo apt update
 $ sudo apt install net-tools
 $ ifconfig
@@ -165,7 +166,7 @@ $ ssh ubuntu@{IP Address of Raspberry PI}
 ```  
 </details>
 12. Install ROS2 Humble Hawksbill  
-Follow the instruction in [the official ROS2 Humble installation guide](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html).
+Follow the instruction in [the official ROS2 Humble installation guide](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html).  Installing ROS-Base(Bare Bones) is recommended.
 
 13. Install and Build ROS Packages.  
 Building the `turtlebot3` package may take longer than an hour. Please use the SMPS to ensure the system is always powered.
