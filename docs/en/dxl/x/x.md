@@ -14,27 +14,27 @@ sidebar:
 
 ![](/assets/images/dxl/x/dxl_x_productline.png)
 
-> DYNAMIXEL-X Series Lineups
+> DYNAMIXEL-X Series Lineup
 
 ## Features
-- Improved Torque, Compact Size.
-- Enhanced Durability and Expansibility.
-- Hollow Back Case Minimizes Cable Stress (3-way-routing).
-- Direct Screw Assembly to the Case (without Nut Insert).
-- Improved Heat Sink Featuring an Aluminum Case.
+- High Torque, Compact Size.
+- Enhanced Durability and Expandability.
+- Hollow Back Case to minimize Cable Stress.
+- Direct to Case Accessory Assembly.
+- Improved Heat Dissipation with Integrated Aluminum Casing.
 
 ## Various Control Functions
 - Current-Based Torque Control.
 - Profile Control for Smooth Motion Planning.
-- Trajectory Data and Moving Status (In-Position, Following Error, etc).
-- Energy Saving (Reduced Current from 100mA to 40mA).
-- Various Operating Modes
-  - Current based Position Control (XW/XH/XM/XC330/XL330 only).
-  - Current Control (XW/XH/XM/XC330/XL330 only only).
-  - Velocity Control.
-  - Position Control.
-  - Extended Position Control.
-  - PWM Control (Voltage Control Mode).
+- Real Time Trajectory Data and Moving Status Feedback. 
+- Energy Efficient Standby Current as low as 40mA.
+- Various Supported Operating Modes
+  - Current based Position Control (XW/XH/XM/X330 only)
+  - Current Control (XW/XH/XM/X330 only)
+  - Velocity Control
+  - Position Control
+  - Extended Position Control
+  - PWM Control (Voltage Control Mode)
 
 # [X Series](#x-series)
 **Common Specifications**
@@ -48,7 +48,7 @@ sidebar:
   - XC Series : Coreless
   - XL Series : Cored
 
-XL320 has different specifications from other XL-Series. Please refer to [XL-320 Specifications](/docs/en/dxl/x/xl320/#주요-사양) for more details.
+XL320 servos have different specifications from other XL-Series models. Please refer to the [XL-320 Specifications](/docs/en/dxl/x/xl320) documentation for more details.
 {: .notice--info}
 
 ## [XW Series](#xw-series)
