@@ -15,7 +15,8 @@ Please connect all DYNAMIXEL modules to the OpenCR before uploading the OpenCR f
 
 After OpenMANIPULATOR is properly mounted on TurtleBot3, the OpenCR firmware needs to be updated to control connected DYNAMIXEL. Please follow the firmware update instructions below.
 
-1. **[TurtleBot3 SBC]** Download the OpenCR firmware file on Raspberry Pi (SBC) and upload the correct firmware with the following commands.
+1. Download the OpenCR firmware file on Raspberry Pi (SBC) and upload the correct firmware with the following commands.  
+**[TurtleBot3 SBC]**  
 ```bash
 $ export OPENCR_PORT=/dev/ttyACM0
 $ export OPENCR_MODEL=om_with_tb3_noetic
