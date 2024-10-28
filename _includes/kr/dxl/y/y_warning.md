@@ -53,6 +53,17 @@
 {% endcapture %}
 <div class="notice--warning">{{ dxl_attention | markdownify }}</div>
 
+{% capture dxl_attention %}  
+![](/assets/images/icon_warning.png)  
+**주의**  
+(상해나 제품 손상의 원인이 됩니다.)
+- 재질 특성상 사용 환경에 따라 녹이 발생할 수 있습니다.
+- 이에 따른 수리진행은 비용이 발생할 수 있으니 녹 발생을 방지하기 위해 아래 사용 환경을 참고해 주세요.
+- 사용 환경의 습도를 낮추고, 통풍이 잘 되도록 해 습기를 제거해 주세요.
+- 정기적으로 염분을 제거하고 방청 처리를 해주세요.
+{% endcapture %}
+<div class="notice--warning">{{ dxl_attention | markdownify }}</div>
+
 {% capture guarantee %}
 **보증 기간 및 범위**
 - 본 제품은 구입일로부터 1년간 보증이 적용됩니다. (* 제품은 정상적인 작동 조건에서 사용해야 합니다)
