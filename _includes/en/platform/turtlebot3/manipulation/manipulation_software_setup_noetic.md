@@ -1,15 +1,21 @@
 
-**NOTE**: Before installing the `open_manipulator_with_tb3` package, install `turtlebot3` and `open_manipulator` packages on the Remote PC.
+**NOTE**: Before installing the `turtlebot3_manipulation` package, install `turtlebot3` and `open_manipulator` packages on the Remote PC.
 {: .notice--info}
 
-1. **[Remote PC]** Download and build the package using the following commands in order to use assembled OpenMANIPULATOR-X.
+{% capture notice_01 %}  
+**The TurtleBot3 Manipulation Package requires turtlebot3 and turtlebot3_msgs packages as prerequisite. Without these prerequisite packages, the TurtleBot3 Manipulator cannot be launched. Please follow [Quick Start Guide](/docs/en/platform/turtlebot3/quick-start) instructions if you did not install required packages and dependent packages.**  
+{% endcapture %}
+<div class="notice--danger">{{ notice_01 | markdownify }}</div>
 
+
+1. Download and build the package using the following commands in order to use assembled OpenMANIPULATOR-X.  
+**[Remote PC]**  
 ```bash
 $ cd ~/catkin_ws/src/
 $ git clone https://github.com/ROBOTIS-GIT/turtlebot3_manipulation.git
 $ git clone https://github.com/ROBOTIS-GIT/turtlebot3_manipulation_simulations.git
 $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_dependencies.git
-$ sudo apt install ros-noetic-ros-control* ros-noetic-control* ros-noetic-moveit*
+$ sudo apt install ros-noetic-ros-control* ros-noetic-control* ros-noetic-moveit* ros-noetic-dwa-local-planner
 $ cd ~/catkin_ws && catkin_make
 ```
 

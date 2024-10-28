@@ -3,8 +3,8 @@ Simulate TurtleBot3 Manipulation using Gazebo by following this section.
 
 ### [Run Gazebo](#run-gazebo)
 
-**[Remote PC]** Load TurtleBot3 with OpenMANIPULATOR-X into Gazebo world with the following command.
-
+Load TurtleBot3 with OpenMANIPULATOR-X into Gazebo world with the following command.  
+**[Remote PC]**  
 ```bash
 $ roslaunch turtlebot3_manipulation_gazebo turtlebot3_manipulation_gazebo.launch
 ```
@@ -19,18 +19,18 @@ $ ROS_NAMESPACE=om_with_tb3 roslaunch open_manipulator_with_tb3_tools om_with_tb
 
 ### [Run move_group Node](#run-move-group-node)
 
-**[Remote PC]** In order to use Moveit feature, launch **move_group** node. If you press **\[▶]** button in Gazebo to start simulation, use the following command.  
-With a successful launch, **"You can start planning now!"** message will be printed on the terminal.
-
+In order to use MoveIt feature, launch **move_group** node. If you press **\[▶]** button in Gazebo to start simulation, use the following command.  
+With a successful launch, **"You can start planning now!"** message will be printed on the terminal.  
+**[Remote PC]**  
 ```bash
 $ roslaunch turtlebot3_manipulation_moveit_config move_group.launch
 ```
 
 ### [Run RViz](#run-rviz)
 
-**[Remote PC]** Use Moveit feature in RViz by reading `moveit.rviz` file where Moveit enviroment data is configured.  
-You can control the mounted manipulator using an interactive marker, and simulate the motion of goal position, which helps preventing a possible physical contact by simulating the motion in advance.
-
+Use MoveIt feature in RViz by reading `moveit.rviz` file where MoveIt enviroment data is configured.  
+You can control the mounted manipulator using an interactive marker, and simulate the motion of goal position, which helps preventing a possible physical contact by simulating the motion in advance.  
+**[Remote PC]**  
 ```bash
 $ roslaunch turtlebot3_manipulation_moveit_config moveit_rviz.launch
 ```
@@ -59,11 +59,11 @@ $ ROS_NAMESPACE=om_with_tb3 rosrun map_server map_saver -f ~/map
 
 ### [Run ROBOTIS GUI Controller](#run-robotis-gui-controller)
 
-**[Remote PC]** You can also use ROBOTIS GUI to control the OpenMANIPULATOR-X in Gazebo. The GUI supports **Task Space** and **Joint Space** controls. Use any control methods you prefer.
+You can also use ROBOTIS GUI to control the OpenMANIPULATOR-X in Gazebo. The GUI supports **Task Space** and **Joint Space** controls. Use any control methods you prefer.
 
 - `Task Space Control`: Control based on the valid gripping position (represented as a small red cube between the grippers) of the end-effector of the OpenMANIPULATOR-X.
-- `Joint Space Control`: Control based on each joint angle.
-
+- `Joint Space Control`: Control based on each joint angle.  
+**[Remote PC]**  
 ```bash
 $ roslaunch turtlebot3_manipulation_gui turtlebot3_manipulation_gui.launch
 ```
