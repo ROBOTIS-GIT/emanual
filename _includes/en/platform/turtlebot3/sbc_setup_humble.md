@@ -137,20 +137,13 @@ $ ssh ubuntu@{IP Address of Raspberry PI}
 ![](/assets/images/icon_unfold.png) **Click here to expand more details about How to connect ssh**
 </summary>
 
-1. Setup Raspberry Pi to be possible to use password for connecting ssh  
-**[TurtleBot3 SBC]**  
-```bash
-$ sudo nano /etc/ssh/sshd_config  
-```  
-2. Edit the content as below  
-![](/assets/images/platform/turtlebot3/sbc_setup/sshd_config.png)  
-3. Edit here, too  
+1. Edit here  
 **[TurtleBot3 SBC]**  
 ```bash
 $ sudo nano /etc/ssh/sshd_config.d/50-cloud-init.conf
 ```  
-![](/assets/images/platform/turtlebot3/sbc_setup/sshd_config2.png) 
-4. Install net-tools and check your ip.  
+![](/assets/images/platform/turtlebot3/sbc_setup/sshd_config2.png)  
+2. Install net-tools and check your ip.  
 **[TurtleBot3 SBC]**  
 ```bash
 $ reboot
@@ -159,7 +152,7 @@ $ sudo apt install net-tools
 $ ifconfig
 ```  
 ![](/assets/images/platform/turtlebot3/sbc_setup/sshd_config3.png)  
-5. Enter command below in `remote PC` and use your `password` that you changed before.  
+3. Enter command below in `remote PC` and use your `password` that you changed before.  
 **[Remote PC]**  
 ```bash
 $ ssh ubuntu@{IP Address of Raspberry PI}
