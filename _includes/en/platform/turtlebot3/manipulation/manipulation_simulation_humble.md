@@ -1,17 +1,6 @@
 
 Simulate the TurtleBot3 Manipulation using Gazebo by following the instructions below.
 
-### TurtleBot3 Bringup
-
- Open a terminal on **TurtleBot3 SBC**
-Bring up the TurtleBot3 Manipulation using the following command.
-
-**[TurtleBot3 SBC]**
-
-  ```bash
-  $ ros2 launch turtlebot3_manipulation_bringup hardware.launch.py
-  ```
-
 ### [How to Run Gazebo](#how-to-run-gazebo)
 
 Bringup the TurtleBot3 with OpenMANIPULATOR-X into Gazebo world with the following command.
