@@ -44,7 +44,7 @@ DYNAMIXEL-Y features an internal Multi-turn Backup Battery for Multi-turn Positi
    Tools → Encoder Battery Replacement menu. 
 3. In the case of a model with an included reducer, ensure that the reducer is positioned at it's origin point. (Position 0)
 4. Open the battery cover, install the new Multi-turn Backup Battery, close the cover, and click the Next button.
-5. Wait for the operation to complete. 
+5. Set the multi-turn encoder mode. Note that a higher allowable angular acceleration will decrease battery life. Please set an appropriate value for your system.
 6. Once finished, exit the menu by clicking the OK button.
 7. Reset the Multi-turn to its initial state by sending the [Multi-turn Clear Packet](#multi-turn-clear-packet).
 

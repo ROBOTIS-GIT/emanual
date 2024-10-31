@@ -10,3 +10,9 @@
 
 **Caution**: Before operation, ensure that 24V power is supplied through the power port. During setup, take special care to ensure that the polarity of all connections are correct. Incorrect connection may result in serious damage to the DYNAMIXEL.
 {: .notice--warning}
+
+**Note**: DYNAMIXEL-Y uses a new connector to enhance the utility of its hollow structure and ensure stable current supply and communication. The JST connector used in existing DYNAMIXEL models cannot reliably supply the current required to operate DYNAMIXEL-Y. Therefore, it is essential to use the designated connector.
+{: .notice}
+
+**Note**: If communication between DYNAMIXEL-Y and U2D2 is unstable, please connect the GND of the power line to the GND of the U2D2.
+{: .notice}
