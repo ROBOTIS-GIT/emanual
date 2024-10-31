@@ -39,7 +39,10 @@
 ![](/assets/images/icon_warning.png)  
 **CAUTION**  
 (May cause injury or damage to product)
-{% if page.product_group=='dxl_xw540' or page.product_group=='dxl_xw430' %} - Comply with the operating environment. (Depth 1 m, 24 hr in normal fresh water) {% elsif page.product_group=='opencm904' or page.product_group=='ln-101' or page.product_group=='u2d2' or page.product_group=='u2d2_power_hub' or page.product_group=='dynamixel_shield' or page.product_group=='cm-50' or page.product_group=='openrb-150' or page.product_group=='opencm485exp' %} {% else %} - Always comply with operating environment specifications including voltage, current, and temperature. {% endif %}
+{% if page.product_group=='dxl_xw540' or page.product_group=='dxl_xw430' %} - Comply with the operating environment. (Depth 1 m, 24 hr in normal fresh water) 
+- Do not pull the rubber cap of the connector. 
+- The rubber cap is connected to the rubber packing, and any deformation may cause leakage.
+- the rubber cap is designed for dust protection and is not waterproof. When using underwater, please connect a waterproof cable.{% elsif page.product_group=='opencm904' or page.product_group=='ln-101' or page.product_group=='u2d2' or page.product_group=='u2d2_power_hub' or page.product_group=='dynamixel_shield' or page.product_group=='cm-50' or page.product_group=='openrb-150' or page.product_group=='opencm485exp' %} {% else %} - Always comply with operating environment specifications including voltage, current, and temperature. {% endif %}
 - Do not insert blades or other sharp objects during product operation.
 {% endcapture %}
 <div class="notice--warning">{{ dxl_caution | markdownify }}</div>

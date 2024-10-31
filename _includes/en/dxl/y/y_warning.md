@@ -45,6 +45,17 @@
 {% endcapture %}
 <div class="notice--warning">{{ dxl_caution | markdownify }}</div>
 
+{% capture dxl_caution %}  
+![](/assets/images/icon_warning.png)  
+**Warning**  
+(May cause injury or damage to the product.)
+- Due to the material properties, rust may occur depending on the user environment.
+- Repairs due to rust may incur costs, so please refer to the following guidelines to prevent rust.
+- Please take steps to reduce humidity and improve ventilation.
+- Salt removal and anti-corrosion treatment should be performed on a regular basis.
+{% endcapture %}
+<div class="notice--warning">{{ dxl_caution | markdownify }}</div>
+
 {% capture guarantee %}
 **Warranty Coverage**
 - This product is covered under warranty for 1 year after the purchase date for usage under normal operating conditions.

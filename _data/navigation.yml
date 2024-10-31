@@ -19064,7 +19064,7 @@ ym070-210-m001-rh:
           - title: "Backup Ready(919)"
             titlekr: "Backup Ready(919)"
             url: /dxl/y/ym070-210-m001-rh/#backup-ready919
-          - #title: "Factory Reset, Reboot, Clear Instruction (Modbus)"
+          - title: "Factory Reset, Reboot, Clear Instruction (Modbus)"
             titlekr: "Factory Reset, Reboot, Clear Instruction (Modbus)"
             url: /dxl/y/ym070-210-m001-rh/#factory-reset-reboot-clear-instruction-modbus
   - title: "How to Assemble"
@@ -19397,7 +19397,7 @@ ym070-210-b001-rh:
           - title: "Backup Ready(919)"
             titlekr: "Backup Ready(919)"
             url: /dxl/y/ym070-210-b001-rh/#backup-ready919
-          - #title: "Factory Reset, Reboot, Clear Instruction (Modbus)"
+          - title: "Factory Reset, Reboot, Clear Instruction (Modbus)"
             titlekr: "Factory Reset, Reboot, Clear Instruction (Modbus)"
             url: /dxl/y/ym070-210-b001-rh/#factory-reset-reboot-clear-instruction-modbus
   - title: "How to Assemble"
@@ -19730,7 +19730,7 @@ ym070-210-r051-rh:
           - title: "Backup Ready(919)"
             titlekr: "Backup Ready(919)"
             url: /dxl/y/ym070-210-r051-rh/#backup-ready919
-          - #title: "Factory Reset, Reboot, Clear Instruction (Modbus)"
+          - title: "Factory Reset, Reboot, Clear Instruction (Modbus)"
             titlekr: "Factory Reset, Reboot, Clear Instruction (Modbus)"
             url: /dxl/y/ym070-210-r051-rh/#factory-reset-reboot-clear-instruction-modbus
   - title: "How to Assemble"
@@ -20067,7 +20067,7 @@ ym070-210-r099-rh:
           - title: "Backup Ready(919)"
             titlekr: "Backup Ready(919)"
             url: /dxl/y/ym070-210-r099-rh/#backup-ready919
-          - #title: "Factory Reset, Reboot, Clear Instruction (Modbus)"
+          - title: "Factory Reset, Reboot, Clear Instruction (Modbus)"
             titlekr: "Factory Reset, Reboot, Clear Instruction (Modbus)"
             url: /dxl/y/ym070-210-r099-rh/#factory-reset-reboot-clear-instruction-modbus
   - title: "How to Assemble"
@@ -20404,7 +20404,7 @@ ym070-210-a051-rh:
           - title: "Backup Ready(919)"
             titlekr: "Backup Ready(919)"
             url: /dxl/y/ym070-210-a051-rh/#backup-ready919
-          - #title: "Factory Reset, Reboot, Clear Instruction (Modbus)"
+          - title: "Factory Reset, Reboot, Clear Instruction (Modbus)"
             titlekr: "Factory Reset, Reboot, Clear Instruction (Modbus)"
             url: /dxl/y/ym070-210-a051-rh/#factory-reset-reboot-clear-instruction-modbus
   - title: "How to Assemble"
@@ -20741,7 +20741,7 @@ ym070-210-a099-rh:
           - title: "Backup Ready(919)"
             titlekr: "Backup Ready(919)"
             url: /dxl/y/ym070-210-a099-rh/#backup-ready919
-          - #title: "Factory Reset, Reboot, Clear Instruction (Modbus)"
+          - title: "Factory Reset, Reboot, Clear Instruction (Modbus)"
             titlekr: "Factory Reset, Reboot, Clear Instruction (Modbus)"
             url: /dxl/y/ym070-210-a099-rh/#factory-reset-reboot-clear-instruction-modbus
   - title: "How to Assemble"
@@ -21078,7 +21078,7 @@ ym080-230-m001-rh:
           - title: "Backup Ready(919)"
             titlekr: "Backup Ready(919)"
             url: /dxl/y/ym080-230-m001-rh/#backup-ready919
-          - #title: "Factory Reset, Reboot, Clear Instruction (Modbus)"
+          - title: "Factory Reset, Reboot, Clear Instruction (Modbus)"
             titlekr: "Factory Reset, Reboot, Clear Instruction (Modbus)"
             url: /dxl/y/ym080-230-m001-rh/#factory-reset-reboot-clear-instruction-modbus
   - title: "How to Assemble"
@@ -21411,7 +21411,7 @@ ym080-230-b001-rh:
           - title: "Backup Ready(919)"
             titlekr: "Backup Ready(919)"
             url: /dxl/y/ym080-230-b001-rh/#backup-ready919
-          - #title: "Factory Reset, Reboot, Clear Instruction (Modbus)"
+          - title: "Factory Reset, Reboot, Clear Instruction (Modbus)"
             titlekr: "Factory Reset, Reboot, Clear Instruction (Modbus)"
             url: /dxl/y/ym080-230-b001-rh/#factory-reset-reboot-clear-instruction-modbus
   - title: "How to Assemble"
@@ -21744,7 +21744,7 @@ ym080-230-r051-rh:
           - title: "Backup Ready(919)"
             titlekr: "Backup Ready(919)"
             url: /dxl/y/ym080-230-r051-rh/#backup-ready919
-          - #title: "Factory Reset, Reboot, Clear Instruction (Modbus)"
+          - title: "Factory Reset, Reboot, Clear Instruction (Modbus)"
             titlekr: "Factory Reset, Reboot, Clear Instruction (Modbus)"
             url: /dxl/y/ym080-230-r051-rh/#factory-reset-reboot-clear-instruction-modbus
   - title: "How to Assemble"
@@ -22081,7 +22081,7 @@ ym080-230-r099-rh:
           - title: "Backup Ready(919)"
             titlekr: "Backup Ready(919)"
             url: /dxl/y/ym080-230-r099-rh/#backup-ready919
-          - #title: "Factory Reset, Reboot, Clear Instruction (Modbus)"
+          - title: "Factory Reset, Reboot, Clear Instruction (Modbus)"
             titlekr: "Factory Reset, Reboot, Clear Instruction (Modbus)"
             url: /dxl/y/ym080-230-r099-rh/#factory-reset-reboot-clear-instruction-modbus
   - title: "How to Assemble"
@@ -22418,7 +22418,7 @@ ym080-230-a051-rh:
           - title: "Backup Ready(919)"
             titlekr: "Backup Ready(919)"
             url: /dxl/y/ym080-230-a051-rh/#backup-ready919
-          - #title: "Factory Reset, Reboot, Clear Instruction (Modbus)"
+          - title: "Factory Reset, Reboot, Clear Instruction (Modbus)"
             titlekr: "Factory Reset, Reboot, Clear Instruction (Modbus)"
             url: /dxl/y/ym080-230-a051-rh/#factory-reset-reboot-clear-instruction-modbus
   - title: "How to Assemble"
@@ -22755,7 +22755,7 @@ ym080-230-a099-rh:
           - title: "Backup Ready(919)"
             titlekr: "Backup Ready(919)"
             url: /dxl/y/ym080-230-a099-rh/#backup-ready919
-          - #title: "Factory Reset, Reboot, Clear Instruction (Modbus)"
+          - title: "Factory Reset, Reboot, Clear Instruction (Modbus)"
             titlekr: "Factory Reset, Reboot, Clear Instruction (Modbus)"
             url: /dxl/y/ym080-230-a099-rh/#factory-reset-reboot-clear-instruction-modbus
   - title: "How to Assemble"

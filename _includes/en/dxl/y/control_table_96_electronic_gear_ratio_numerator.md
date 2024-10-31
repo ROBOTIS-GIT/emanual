@@ -18,5 +18,5 @@ Re: Electronic Gear Ratio   R: Actual Gear Ratio  L: Ball Screw Lead
 | System Form                        | Setting Unit  | Description                             |
 |:----------------------------------:|:-------------:|:----------------------------------------|
 | Direct Drive System                | 0.01 [deg]    | DYNAMIXEL-Y Resolution: 524,288 [pulse/rev]<br />![](/assets/images/dxl/y/dy_equation_2.jpg)  |
-| Gearbox Attachment<br />R = 100:1  | 0.01 [deg]    | DYNAMIXEL-Y Resolution: 524,288 [pulse/rev]<br />![](/assets/images/dxl/y/dy_equation_2.jpg)  |
-| Ball Screw System<br />L: 10mm/rev | 0.01 [mm]     | DYNAMIXEL-Y Resolution: 524,288<br /><br />![](/assets/images/dxl/y/dy_equation_3.jpg)        |
+| Gearbox Attachment<br />R = 100:1  | 0.01 [deg]    | DYNAMIXEL-Y Resolution: 524,288 [pulse/rev]<br />![](/assets/images/dxl/y/dy_equation_3.jpg)  |
+| Ball Screw System<br />L: 10mm/rev | 0.01 [mm]     | DYNAMIXEL-Y Pulse per 1Rev = 524,288<br />Resolution of DYNAMIXEL-Y: 524,288 [pulse/rev]<br />![](/assets/images/dxl/y/dy_equation_4.jpg)        |

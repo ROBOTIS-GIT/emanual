@@ -14,5 +14,5 @@ Re: 전자 기어비 R: 실제 기어비 L: 볼스크류 리드
 | 시스템 형태                      | 설정 단위    | 설명                             |
 |:-------------------------------:|:-----------:|:--------------------------------|
 | Direct Drive 시스템              | 0.01 [deg] | Dynamixel-Y의 분해능: 524,288 [pulse/rev]<br />![](/assets/images/dxl/y/dy_equation_2.jpg)  |
-| 감속기 부착 시스템<br />R = 100:1 | 0.01 [deg] | Dynamixel-Y의 분해능: 524,288 [pulse/rev]<br />![](/assets/images/dxl/y/dy_equation_2.jpg)  |
-| 볼스크류 시스템<br />L: 10mm/rev  | 0.01 [mm]  | Dynamixel-Y 1Rev당 Pulse = 524,288<br />Dynamixel-Y의 분해능: 524,288 [pulse/rev]<br />![](/assets/images/dxl/y/dy_equation_3.jpg)  |
+| 감속기 부착 시스템<br />R = 100:1 | 0.01 [deg] | Dynamixel-Y의 분해능: 524,288 [pulse/rev]<br />![](/assets/images/dxl/y/dy_equation_3.jpg)  |
+| 볼스크류 시스템<br />L: 10mm/rev  | 0.01 [mm]  | Dynamixel-Y 1Rev당 Pulse = 524,288<br />Dynamixel-Y의 분해능: 524,288 [pulse/rev]<br />![](/assets/images/dxl/y/dy_equation_4.jpg)  |
