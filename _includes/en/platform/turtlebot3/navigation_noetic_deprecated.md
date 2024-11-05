@@ -16,7 +16,8 @@ The [Navigation][navigation] enables a robot to move from the current pose to th
 
 ## [Run Navigation Nodes](#run-navigation-nodes)
 
-1. If `roscore` is not running on the Remote PC, run roscore. **Skip this step if roscore is already running**.
+1. If `roscore` is not running on the Remote PC, run roscore. **Skip this step if roscore is already running**.  
+**[Remote PC]**  
   ```bash
 $ roscore
   ```
@@ -24,16 +25,21 @@ $ roscore
 2. If the `Bringup` is not running on the TurtleBot3 SBC, launch the Bringup. **Skip this step if you have launched bringup previously**.  
   - Open a new terminal from Remote PC with `Ctrl` + `Alt` + `T` and connect to Raspberry Pi with its IP address.
 The default password is **ubuntu**.  
+**[Remote PC]**  
   ```bash
 $ ssh ubuntu@{IP_ADDRESS_OF_RASPBERRY_PI}
+  ```  
+**[Remote PC]**  
+  ```bash  
 $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
-  ```
+  ```  
 
-3. Launch the Navigation. Depending on the platform, replace **${TB3_MODEL}** in the below command with `burger`, `waffle` or `waffle_pi`.
-  ```bash
+3. Launch the Navigation. Depending on the platform, replace **${TB3_MODEL}** in the below command with `burger`, `waffle` or `waffle_pi`.  
+**[Remote PC]**  
+  ```bash  
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/map.yaml
-  ```
+  ```  
 
 <details>
 <summary>

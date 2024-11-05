@@ -3,7 +3,9 @@ Simulate the TurtleBot3 Manipulation using Gazebo by following the instructions 
 
 ### [How to Run Gazebo](#how-to-run-gazebo)
 
-**[Remote PC]** Bringup the TurtleBot3 with OpenMANIPULATOR-X into Gazebo world with the following command.
+Bringup the TurtleBot3 with OpenMANIPULATOR-X into Gazebo world with the following command.
+
+**[Remote PC]** 
 
 ```bash
 $ ros2 launch turtlebot3_manipulation_bringup gazebo.launch.py
@@ -17,20 +19,21 @@ $ ros2 launch turtlebot3_manipulation_bringup gazebo.launch.py
 **TIP**
 
 In order to run with RViz, append the `start_rviz` parameter as below.  
+**[Remote PC]**  
 ```bash
 $ ros2 launch turtlebot3_manipulation_bringup gazebo.launch.py start_rviz:=true
 ```
 {% endcapture %}
 <div class="notice--info">{{ tip_01 | markdownify }}</div>
 
-To control the TurtleBot3 in the Gazebo simulation, the servo server node of the MoveIt must be launched first.
-
+To control the TurtleBot3 in the Gazebo simulation, the servo server node of the MoveIt must be launched first.  
+**[Remote PC]**  
 ```bash
 $ ros2 launch turtlebot3_manipulation_moveit_config servo.launch.py
 ```
 
-Launch the keyboard teleoperation node.
-
+Launch the keyboard teleoperation node.  
+**[Remote PC]**  
 ```bash
 $ ros2 run turtlebot3_manipulation_teleop turtlebot3_manipulation_teleop
 ```
@@ -50,8 +53,10 @@ Use 1|2|3|4|q|w|e|r keys to joint jog.
 
 ### [Simulation with MoveIt](#simulation-with-moveit)
 
-**[Remote PC]** In order to use MoveIt to operate the OpenMANIPULATOR-X in the Gazebo, terminate other Gazebo and RViz tools first.  
+In order to use MoveIt to operate the OpenMANIPULATOR-X in the Gazebo, terminate other Gazebo and RViz tools first.  
 Enter the below command to launch RViz with MoveIt configuration.
+
+**[Remote PC]** 
 
 ```bash
 $ ros2 launch turtlebot3_manipulation_moveit_config moveit_gazebo.launch.py

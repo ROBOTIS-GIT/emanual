@@ -1,28 +1,30 @@
+Be sure to read [Navigation](/docs/en/platform/turtlebot3/navigation/#navigation) manual before use of the following instruction.
+{: .notice--warning}
 
 Send TurtleBot3 with OpenMANIPULATOR to the desired position in the map using Navigation node.
 
 ### [Run roscore](#run-roscore)
 
-**[Remote PC]** Run roscore to use ROS 1.
-
+Run roscore to use ROS 1.  
+**[Remote PC]**  
 ```bash
 $ roscore
 ```
 
 ### [Run Bringup](#run-bringup)
 
-**[TurtleBot3 SBC]** Run Bringup node for TurtleBot3, and start rosserial and LDS sensor using following command.
-
+Run Bringup node for TurtleBot3, and start rosserial and LDS sensor using following command.  
+**[TurtleBot3 SBC]**  
 ```bash
 $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
 ```
 
 ### [Run Navigation Node](#run-navigation-node)
 
-**[Remote PC]** Run Navigation node with the following command, which will call Unified Robot Description Format (urdf) and configuration data of RViz to set GUI enviroment, parmeters for Navigation and updated map.
-
+Run Navigation node with the following command, which will call Unified Robot Description Format (urdf) and configuration data of RViz to set GUI enviroment, parmeters for Navigation and updated map.  
+**[Remote PC]**  
 ```bash
-$ roslaunch turtlebot3_manipulation_navigation navigation.launch
+$ roslaunch turtlebot3_manipulation_navigation navigation.launch map_file:=$HOME/map.yaml 
 ```
 
 ![](/assets/images/platform/turtlebot3/manipulation/tb3_omx_nav.png)
@@ -34,16 +36,16 @@ However, when TurtleBot3 is in motion, the movement of OpenMANIPULATOR will be u
 
 #### [Run Bringup node for OpenMANIPULATOR](#run-bringup-for-openmanipulator)
 
-**[Remote PC]** Run **turtlebot3_manipulation_bringup** node just as use of single OpenMANIPULATOR. This node contains **arm_controller** and **gripper_controller**.
-
+Run **turtlebot3_manipulation_bringup** node just as use of single OpenMANIPULATOR. This node contains **arm_controller** and **gripper_controller**.  
+**[Remote PC]**  
 ```bash
 $ roslaunch turtlebot3_manipulation_bringup turtlebot3_manipulation_bringup.launch
 ```
 
 #### [Run move_group Node](#run-move-group-node)
 
-**move_group** node supports two interfaces to control OpenMANIPULATOR; **Moveit!** and **ROBOTIS GUI**. Choose either of them according to your preference. In this section, GUI Controller is introduced only.
-
+**move_group** node supports two interfaces to control OpenMANIPULATOR; **MoveIt!** and **ROBOTIS GUI**. Choose either of them according to your preference. In this section, GUI Controller is introduced only.  
+**[Remote PC]**  
 ```bash
 $ roslaunch turtlebot3_manipulation_moveit_config move_group.launch
 ```
@@ -53,9 +55,8 @@ $ roslaunch turtlebot3_manipulation_moveit_config move_group.launch
 
 ### [Run GUI Controller](#run-gui-controller)
 
-Using this interface, you can control OpenMANIPULATOR on TurtleBot3
-**[Remote PC]**
-
+Using this interface, you can control OpenMANIPULATOR on TurtleBot3  
+**[Remote PC]**  
 ```bash
 $ roslaunch turtlebot3_manipulation_gui turtlebot3_manipulation_gui.launch
 ```

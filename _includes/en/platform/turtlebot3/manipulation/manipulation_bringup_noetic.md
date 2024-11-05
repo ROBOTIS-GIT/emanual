@@ -4,16 +4,16 @@
 
 ### [Run roscore](#run-roscore)
 
-**[Remote PC]** Run the roscore to use ROS.
-
+Run the roscore to use ROS.  
+**[Remote PC]**  
 ```bash
 $ roscore
 ```
 
 ### [Define TurtleBot3 Model](#define-turtlebot3-model)
 
-**[TurtleBot3 SBC]** Export TurtleBot3 model (`waffle` or `waffle_pi`) if the **TURTLEBOT3_MODEL** is not defined in the `.bashrc` file.
-
+Export TurtleBot3 model (`waffle` or `waffle_pi`) if the **TURTLEBOT3_MODEL** is not defined in the `.bashrc` file.  
+**[TurtleBot3 SBC]**  
 ```bash
 $ export TURTLEBOT3_MODEL=waffle_pi
 ```
@@ -36,8 +36,8 @@ $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
 
 ### [Run Bringup](#run-bringup)
 
-**[TurtleBot3 SBC]** Run Bringup node for TurtleBot3, and start rosserial and LDS sensor using following command.
-
+Run Bringup node for TurtleBot3, and start rosserial and LDS sensor using following command.  
+**[TurtleBot3 SBC]**  
 ```bash
 $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
 ```

@@ -6,7 +6,8 @@ After creating a complete map of desired area, save the map data to the local dr
 
 1. Launch the **map_saver_cli** node in the nav2_map_server package to create map files.  
   The map file is saved in the directory where the map_saver_cli node is launched at.  
-  Unless a specific file name is provided, `map` will be used as a default file name and create `map.pgm` and `map.yaml`.
+  Unless a specific file name is provided, `map` will be used as a default file name and create `map.pgm` and `map.yaml`.  
+  **[Remote PC]**  
 ```bash
 $ ros2 run nav2_map_server map_saver_cli -f ~/map
 ```

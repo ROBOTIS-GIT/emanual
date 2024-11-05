@@ -1,4 +1,4 @@
-Please be aware that the acutual hardware operation requires [Bringup](#bringup) from the TurtleBot3 SBC.
+Please be aware that the actual hardware operation requires [Bringup](#bringup) from the TurtleBot3 SBC.
 
 **[Remote PC]** Enter the command below to launch the MoveIt on RViz.
 

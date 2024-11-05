@@ -13,34 +13,21 @@ Please connect all DYNAMIXEL modules to the OpenCR before uploading the OpenCR f
 {: .notice--warning}
 
 
-After OpenMANIPULATOR is properly mounted on TurtleBot3, the OpenCR firmware needs to be updated to control connected DYNAMIXEL. Please follow the firmware update instructions below.
+After OpenMANIPULATOR-X is properly mounted on TurtleBot3, the OpenCR firmware needs to be updated to control connected DYNAMIXEL. Please follow the firmware update instructions below.
 
 1. Download the OpenCR firmware file on Raspberry Pi (SBC) and upload the correct firmware with the following commands.  
 **[TurtleBot3 SBC]**  
 ```bash
 $ export OPENCR_PORT=/dev/ttyACM0
-$ export OPENCR_MODEL=om_with_tb3_noetic
+$ export OPENCR_MODEL=turtlebot3_manipulation
 $ rm -rf ./opencr_update.tar.bz2
-$ wget https://github.com/ROBOTIS-GIT/OpenCR-Binaries/raw/master/turtlebot3/ROS1/latest/opencr_update.tar.bz2
+$ wget https://github.com/ROBOTIS-GIT/OpenCR-Binaries/raw/master/turtlebot3/ROS2/latest/opencr_update.tar.bz2
 $ tar -xvf opencr_update.tar.bz2
 $ cd ./opencr_update
 $ ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr
 ```
 
-2. When the firmware is completely uploaded, you will see a text string on the terminal: **jump_to_fw**
-
-{% capture notice_01 %}
-**DANGER**
-
-**Please be aware of pinching your body between the robot joints!!!**
-
-When the firmware is successfully uploaded, OpenCR board will reboot and **the OpenMANIPULATOR-X will move to the initial pose**.  
-It is recommended to put the OpenMANIPULATOR-X as a similar pose as shown below image to avoid any physical damage during the initial pose.
-
-![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_gazebo_1.png)
-{% endcapture %}
-
-<div class="notice--danger">{{ notice_01 | markdownify }}</div>
+2. When the firmware is successfully uploaded to the OpenCR, **jump_to_fw** will appear on the terminal.
 
 ### [Arduino IDE](#arduino-ide)
 
@@ -53,7 +40,7 @@ In order to upload the OpenCR firmware using Arduino IDE, please follow the belo
 ![](/assets/images/icon_unfold.png) Click here to expand more details about the firmware upload using **Arduino IDE**
 </summary>
 
-1. If you are using Linux, please configure the USB port for OpenCR. For other OS(OSX or Windows), you can skip this step.
+1. If you are using Linux, please configure the USB port for OpenCR. For other OS(OSX or Windows), you can skip to the step 2 "Install Arduino IDE".
   ```bash
 $ wget https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCR/master/99-opencr-cdc.rules
 $ sudo cp ./99-opencr-cdc.rules /etc/udev/rules.d/
@@ -68,29 +55,33 @@ $ sudo apt install libncurses5-dev:i386
 
 4. Press `Ctrl` + `,` to open the Preferences menu
 
-5. Enter below address in the `Additional Boards Manager URLs`.  
+5. Enter below addresses in the `Additional Boards Manager URLs`.  
   ```bash
 https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCR/master/arduino/opencr_release/package_opencr_index.json
   ```  
   ![](/assets/images/platform/turtlebot3/preparation/ide1.png)
 
-6. Open the TurtleBot3 with OpenMANIPULATOR firmware.
-  - TurtleBot3 with OpenMANIPULATOR : ***File > Examples > turtlebot3 > turtlebot3_with_open_manipulator > turtlebot3_with_open_manipulator_core***
+6. Select `Sketch > Include Library > Manage Libraries...` to install the DYNAMIXEL2Arduino library.
+  ![](/assets/images/parts/interface/dynamixel_shield/library_manager_01.png)
 
-7. Uncomment `#define NOETIC_SUPPORT` on `turtlebot3_with_open_manipulator_core.h`, and save it with any name.
+7. Search for `DYNAMIXEL2Arduino` from the Library Manager and install the library.
+  ![](/assets/images/parts/interface/dynamixel_shield/library_manager_02.png)
 
-8. Connect OpenCR to the PC and Select ***OpenCR > OpenCR Board*** from ***Tools > Board*** menu.
+8. Open the `TurtleBot3 Manipulation` example.
+  - ***File > Examples > turtlebot3 > turtlebot3_manipulation > turtlebot3_manipulation***
 
-9. Select the OpenCR connected USB port from ***Tools > Port*** menu.
+9. Connect the micro USB of the OpenCR to the PC and select ***Tools > Board > OpenCR > OpenCR Board*** from Arduino IDE.
 
-10. Upload the TurtleBot3 firmware sketch with `Ctrl` + `U` or the upload icon.  
-  ![](/assets/images/platform/turtlebot3/opencr/o2.png)  
+10. Select the port connected to the OpenCR from ***Tools > Port*** menu.
+
+11. Upload the TurtleBot3 firmware sketch with `Ctrl` + `U` or the upload icon.  
   ![](/assets/images/platform/turtlebot3/opencr/o3.png)
 
-11. If firmware upload fails, try uploading with the recovery mode. Below sequence activates the recovery mode of OpenCR. Under the recovery mode, the `STATUS` led of OpenCR will blink periodically.
+12. If firmware upload fails, try uploading the firmware under the recovery mode. Below sequence activates the recovery mode of OpenCR and the `STATUS` led of OpenCR will blink periodically.
   - Hold down the `PUSH SW2` button.
   - Press the `Reset` button.
   - Release the `Reset` button.
   - Release the `PUSH SW2` button.
+
   ![](/assets/images/parts/controller/opencr10/bootloader_19.png)
 </details>

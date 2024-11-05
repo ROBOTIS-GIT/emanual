@@ -9,7 +9,7 @@ Use one of the following commands to load the Gazebo environment.
 
 In this instruction, TurtleBot3 World will be used.  
 Please use the proper keyword among `burger`, `waffle`, `waffle_pi` for the `TURTLEBOT3_MODEL` parameter.  
-
+**[Remote PC]**  
 ```bash
 $ export TURTLEBOT3_MODEL=burger
 $ roslaunch turtlebot3_gazebo turtlebot3_world.launch
@@ -28,7 +28,7 @@ $ roslaunch turtlebot3_gazebo turtlebot3_house.launch
 ### Run SLAM Node  
 Open a new terminal from Remote PC with `Ctrl` + `Alt` + `T` and run the SLAM node. Gmapping SLAM method is used by default.  
 Please use the proper keyword among `burger`, `waffle`, `waffle_pi` for the `TURTLEBOT3_MODEL` parameter.  
-
+**[Remote PC]**  
 ```bash
 $ export TURTLEBOT3_MODEL=burger
 $ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
@@ -37,7 +37,7 @@ $ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
 ### Run Teleoperation Node  
 Open a new terminal from Remote PC with `Ctrl` + `Alt` + `T` and run the teleoperation node from the Remote PC.  
 Please use the proper keyword among `burger`, `waffle`, `waffle_pi` for the `TURTLEBOT3_MODEL` parameter.  
-
+**[Remote PC]**  
 ```bash
 $ export TURTLEBOT3_MODEL=burger
 $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
@@ -59,8 +59,8 @@ $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ### Save Map
 When the map is created successfully, open a new terminal from Remote PC with `Ctrl` + `Alt` + `T` and save the map.
 
-![](/assets/images/platform/turtlebot3/simulation/virtual_slam.png)
-
+![](/assets/images/platform/turtlebot3/simulation/virtual_slam.png)  
+**[Remote PC]**  
 ```bash
 $ rosrun map_server map_saver -f ~/map
 ```

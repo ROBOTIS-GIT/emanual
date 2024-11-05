@@ -7,7 +7,7 @@
 {% capture warning_01 %}
 **WARNING**
 - This process may take long time. Please do not use battery while following this section.
-- An HDMI monitor and input devices such as a keyboard and a mouse will be required to complete this setup.
+- **An HDMI monitor and input devices such as a keyboard and a mouse will be required to complete this setup.**
 {% endcapture %}
 <div class="notice--danger">{{ warning_01 | markdownify }}</div>
 
@@ -51,7 +51,16 @@ Please refer to [this article](https://www.raspberrypi.org/blog/raspberry-pi-ima
 {% capture download_rpi_imager %}
 [![](/assets/images/icon_download.png) **Download** Raspberry Pi Imager from raspberrypi.org](https://www.raspberrypi.org/software/){: .blank}
 {% endcapture %}
-<div class="notice--success">{{ download_rpi_imager | markdownify }}</div>
+<div class="notice--success">{{ download_rpi_imager | markdownify }}</div>  
+
+If you have dependency error in download imager through `.deb`, use `snap install` like below CLI.(This version of imager is not latest, so it may be a little different from the picture below)  
+**[Remote PC]**  
+```bash  
+$ sudo snap install rpi-imager
+$ rpi-imager  
+```  
+
+
 
 ![](/assets/images/platform/turtlebot3/setup/rpi_imager.gif)  
 1. Click `CHOOSE OS`.  
@@ -85,10 +94,11 @@ Please resize the partition to use the unallocated space.
 5. Click `Resize/Move` button.  
 6. Click the `Apply All Operations` green check button at the top.
 
-### Configure the WiFi Network Setting
+### Configure the WiFi Network Setting  
 1. Open a terminal window with `Alt`+`Ctrl`+`T` and go to the netplan directory in the microSD card.  
 Start editing the `50-cloud-init.yaml` file with a superuser permission `sudo`.  
-```bash
+**[Remote PC]**  
+```bash  
 $ cd /media/$USER/writable/etc/netplan
 $ sudo nano 50-cloud-init.yaml
 ```  
@@ -96,16 +106,17 @@ When the editor is opened, replace the `WIFI_SSID` and `WIFI_PASSWORD` with your
 ![](/assets/images/platform/turtlebot3/setup/ros2_sbc_netcfg.png)  
 Save the file with `Ctrl`+`S` and exit with `Ctrl`+`X`.  
 ![](/assets/images/platform/turtlebot3/setup/network_setup.gif)  
-
-If "No such file or directory" is returned, make sure the microSD is mounted to the system.
-{: .notice--warning}
+  
+If "No such file or directory" is returned, make sure the microSD is mounted to the system.  
+{: .notice--warning}  
 
 2. Boot Up the Raspberry Pi  
   a. Connect the HDMI cable of the monitor to the HDMI port of Raspberry Pi.  
   b. Connect input devices to the USB port of Raspberry Pi.  
   c. Insert the microSD card.  
   d. Connect the power (either with USB or OpenCR) to turn on the Raspberry Pi.  
-  e. Login with ID `ubuntu` and PASSWORD `turtlebot`.
+  e. Login with ID `ubuntu` and PASSWORD `turtlebot`.`  
+  ![](/assets/images/platform/turtlebot3/sbc_setup/sbc_setup3.png)  
 
 HDMI cable has to be connected before powering the Raspberry Pi, or else the HDMI port of the Raspberry Pi will be disabled.
 {: .notice--warning}
@@ -115,29 +126,34 @@ HDMI cable has to be connected before powering the Raspberry Pi, or else the HDM
 {% include en/platform/turtlebot3/ros_gpg_key_expiration_incident.md %}
 
 Please follow the instructions below on the **SBC (Raspberry Pi)**.
-1. Confirm the WiFi IP address.
-  ```bash
-$ ifconfig
-  ```
-
-2. Edit the `.bashrc` file.
-  ```bash
-$ nano ~/.bashrc
-  ```
-
-3. Find the `ROS_MASTER_URI` and `ROS_HOSTNAME` setting section, then modify the IP adddresses accordingly.
-  ```bash
-export ROS_MASTER_URI=http://{IP_ADDRESS_OF_REMOTE_PC}:11311
-export ROS_HOSTNAME={IP_ADDRESS_OF_RASPBERRY_PI_3}
-  ```
-
-4. Save the file with `Ctrl` + `S` and exit the nano editor with `Ctrl` + `X`.
-
-5. Apply changes with the command below.
-  ```bash
-$ source ~/.bashrc
+1. Confirm the WiFi IP address.  
+**[Turtlebot3 SBC]**  
+  ```bash  
+$ ifconfig  
   ```  
-![](/assets/images/platform/turtlebot3/setup/ros1_sbc_netcfg.gif)
+
+2. Edit the `.bashrc` file.  
+**[Turtlebot3 SBC]**  
+  ```bash  
+$ nano ~/.bashrc  
+  ```  
+  
+
+3. Find the `ROS_MASTER_URI` and `ROS_HOSTNAME` setting section, then modify the IP adddresses accordingly.  
+**[Turtlebot3 SBC]**  
+  ```bash  
+export ROS_MASTER_URI=http://{IP_ADDRESS_OF_REMOTE_PC}:11311  
+export ROS_HOSTNAME={IP_ADDRESS_OF_RASPBERRY_PI_3}  
+  ```  
+  
+4. Save the file with `Ctrl` + `S` and exit the nano editor with `Ctrl` + `X`.  
+
+5. Apply changes with the command below.  
+**[Turtlebot3 SBC]**    
+  ```bash  
+$ source ~/.bashrc  
+  ```  
+![](/assets/images/platform/turtlebot3/setup/ros1_sbc_netcfg.gif)  
 
 ### NEW LDS-02 Configuration
 
@@ -148,7 +164,8 @@ $ source ~/.bashrc
 The TurtleBot3 LDS has been updated to LDS-02 since 2022 models.  
 Please follow the instructions below on the **SBC (Raspberry Pi)** of TurtleBot3.
 
-1. Install the LDS-02 driver and update TurtleBot3 package
+1. Install the LDS-02 driver and update TurtleBot3 package  
+**[Turtlebot3 SBC]**  
 ```bash
 $ sudo apt update
 $ sudo apt install libudev-dev
@@ -159,7 +176,8 @@ $ rm -r turtlebot3_description/ turtlebot3_teleop/ turtlebot3_navigation/ turtle
 $ cd ~/catkin_ws && catkin_make
 ```
 
-2. Export the LDS_MODEL to the bashrc file. Depending on your LDS model, use `LDS-01` or `LDS-02`.
+2. Export the LDS_MODEL to the bashrc file. Depending on your LDS model, use `LDS-01` or `LDS-02`.  
+**[Turtlebot3 SBC]**  
 ```bash
 $ echo 'export LDS_MODEL=LDS-02' >> ~/.bashrc
 $ source ~/.bashrc

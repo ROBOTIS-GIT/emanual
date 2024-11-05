@@ -1,32 +1,36 @@
 
 ## [OpenCR Setup](#opencr-setup)
 
-1. Connect the [OpenCR] to the Rasbperry Pi using the micro USB cable.
+1. Connect the [OpenCR] to the Rasbperry Pi using the micro USB cable.  
+![](/assets/images/platform/turtlebot3/opencr/opencr_setup.png)  
+2. Install required packages on the Raspberry Pi to upload the [OpenCR] firmware.  
+**[Turtlebot3 SBC]**  
+  ```bash  
+$ sudo dpkg --add-architecture armhf  
+$ sudo apt-get update  
+$ sudo apt-get install libc6:armhf  
+  ```  
 
-2. Install required packages on the Raspberry Pi to upload the [OpenCR] firmware.
-  ```bash
-$ sudo dpkg --add-architecture armhf
-$ sudo apt-get update
-$ sudo apt-get install libc6:armhf
-  ```
+3. Depending on the platform, use either `burger` or `waffle` for the **OPENCR_MODEL** name.  
+**[Turtlebot3 SBC]**  
+  ```bash  
+$ export OPENCR_PORT=/dev/ttyACM0  
+$ export OPENCR_MODEL=burger_noetic  
+$ rm -rf ./opencr_update.tar.bz2  
+  ```  
 
-3. Depending on the platform, use either `burger` or `waffle` for the **OPENCR_MODEL** name.
-  ```bash
-$ export OPENCR_PORT=/dev/ttyACM0
-$ export OPENCR_MODEL=burger_noetic
-$ rm -rf ./opencr_update.tar.bz2
-  ```
-
-4. Download the firmware and loader, then extract the file.
-  ```bash
-$ wget https://github.com/ROBOTIS-GIT/OpenCR-Binaries/raw/master/turtlebot3/ROS1/latest/opencr_update.tar.bz2 
+4. Download the firmware and loader, then extract the file.  
+**[Turtlebot3 SBC]**  
+  ```bash  
+$ wget https://github.com/ROBOTIS-GIT/OpenCR-Binaries/raw/master/turtlebot3/ROS1/latest/opencr_update.tar.bz2   
 $ tar -xvf opencr_update.tar.bz2 
-  ```
+  ```  
 
-5. Upload firmware to the OpenCR.
-  ```bash
-$ cd ./opencr_update
-$ ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr
+5. Upload firmware to the OpenCR.  
+**[Turtlebot3 SBC]**  
+  ```bash  
+$ cd ./opencr_update  
+$ ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr  
   ```  
 
 6. A successful firmware upload for TurtleBot3 Burger will look like below.  

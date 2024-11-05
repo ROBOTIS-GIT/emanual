@@ -6,12 +6,14 @@ The default password is **ubuntu**.
 $ ssh ubuntu@{IP_ADDRESS_OF_RASPBERRY_PI}
   ```
   Please use the proper keyword among `burger`, `waffle`, `waffle_pi` for the `TURTLEBOT3_MODEL` parameter.  
+  **[TurtleBot3 SBC]**  
   ```bash
 $ export TURTLEBOT3_MODEL=burger
 $ ros2 launch turtlebot3_bringup robot.launch.py
   ```
 
-2. Open a new terminal from Remote PC with `Ctrl` + `Alt` + `T` and launch the SLAM node. The Cartographer is used as a default SLAM method.
+2. Open a new terminal from Remote PC with `Ctrl` + `Alt` + `T` and launch the SLAM node. The Cartographer is used as a default SLAM method.  
+**[Remote PC]**  
   ```bash
 $ export TURTLEBOT3_MODEL=burger
 $ ros2 launch turtlebot3_cartographer cartographer.launch.py
@@ -26,12 +28,14 @@ The `$ export TURTLEBOT3_MODEL=${TB3_MODEL}` command can be omitted if the **TUR
 The `.bashrc` file is automatically loaded when a terminal window is created.  
 
 - Example of defining `TurtlBot3 Burger` as a default model.  
+**[Remote PC]**  
 ```bash
 $ echo 'export TURTLEBOT3_MODEL=burger' >> ~/.bashrc
 $ source ~/.bashrc
 ```
 
 - Example of defining `TurtlBot3 Waffle Pi` as a default model.  
+**[Remote PC]**
 ```bash
 $ echo 'export TURTLEBOT3_MODEL=waffle_pi' >> ~/.bashrc
 $ source ~/.bashrc
