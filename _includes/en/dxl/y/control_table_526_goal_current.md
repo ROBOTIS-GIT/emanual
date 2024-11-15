@@ -1,5 +1,5 @@
 {% assign current_limit= "[Current Limit(66)]" %}
-In current control mode, the Goal Current is used to specify the desired output current. In velocity control mode, position control mode, and extended position control mode it functions as a limit on the current controller's output current. Goal Current cannot exceed the configured {{ current_limit }}.
+In current control mode, the Goal Current is used to specify the desired output current. In velocity control mode and position control mode, it functions as a limit on the current controller's output current. Goal Current cannot exceed the configured {{ current_limit }}.
 
 | Unit       | Range                                      |  Control Mode                                           |               Description                  |
 |:----------:|:------------------------------------------:| :-------------------------------------------------------|:-------------------------------------------|
