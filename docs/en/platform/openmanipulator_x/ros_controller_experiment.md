@@ -11,7 +11,8 @@ tab_title1: Kinetic
 tab_title2: Noetic
 tab_title3: Dashing
 tab_title4: Foxy
-tab_title5: Arduino
+tab_title5: Humble
+tab_title6: Arduino
 sidebar:
   title: "OpenMANIPULATOR-X"
   nav: "openmanipulator_x"
@@ -55,6 +56,10 @@ This section introduces other experimental controllers. These controllers may no
 </section>
 
 <section data-id="{{ page.tab_title5 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/controller/moveit_dashing.md %}
+</section>
+
+<section data-id="{{ page.tab_title6 }}" class="tab_contents">
 Not supported
 {: .notice--warning}
 </section>
@@ -78,6 +83,10 @@ Not supported
 </section>
 
 <section data-id="{{ page.tab_title5 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/controller/gravity_compensation_dashing.md %}
+</section>
+
+<section data-id="{{ page.tab_title6 }}" class="tab_contents">
 Not supported
 {: .notice--warning}
 </section>

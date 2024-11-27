@@ -11,7 +11,8 @@ tab_title1: Kinetic
 tab_title2: Noetic
 tab_title3: Dashing
 tab_title4: Foxy
-tab_title5: Arduino
+tab_title5: Humble
+tab_title6: Arduino
 sidebar:
   title: "OpenMANIPULATOR-X"
   nav: "openmanipulator_x"
@@ -42,12 +43,16 @@ page_number: 4
 </section>
 
 <section data-id="{{ page.tab_title5 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/quick_start_guide/ros_intro.md %}
+</section>
+
+<section data-id="{{ page.tab_title6 }}" class="tab_contents">
 {% include en/platform/openmanipulator_x/quick_start_guide/arduino_intro.md %}
 </section>
 
 ## [Setup](#setup)
 
-<section data-id="{{ page.tab_title5 }}" class="tab_contents">
+<section data-id="{{ page.tab_title6 }}" class="tab_contents">
 {% include en/platform/openmanipulator_x/quick_start_guide/quickstart_arduino.md %}
 </section>
 
@@ -70,6 +75,10 @@ page_number: 4
 </section>
 
 <section data-id="{{ page.tab_title5 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/quick_start_guide/quickstart_foxy.md %}
+</section>
+
+<section data-id="{{ page.tab_title6 }}" class="tab_contents">
 Not required.
 {: .notice--warning}
 </section>
@@ -93,6 +102,10 @@ Not required.
 </section>
 
 <section data-id="{{ page.tab_title5 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/quick_start_guide/quickstart_foxy_ros.md %}
+</section>
+
+<section data-id="{{ page.tab_title6 }}" class="tab_contents">
 Not required.
 {: .notice--warning}
 </section>
@@ -116,6 +129,10 @@ Not required.
 </section>
 
 <section data-id="{{ page.tab_title5 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/quick_start_guide/quickstart_foxy_ros_packages.md %}
+</section>
+
+<section data-id="{{ page.tab_title6 }}" class="tab_contents">
 Not required.
 {: .notice--warning}
 </section>
@@ -139,6 +156,10 @@ Not required.
 </section>
 
 <section data-id="{{ page.tab_title5 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/quick_start_guide/quickstart_comm_interface_foxy.md %}
+</section>
+
+<section data-id="{{ page.tab_title6 }}" class="tab_contents">
 Not required.
 {: .notice--warning}
 </section>
