@@ -10,10 +10,10 @@ sidebar:
   title: R+ Task 3.0
   nav: "rplustask3"
 product_group: rplustask3
-page_number: 6
+page_number: 7
 ---
 
-<div style="counter-reset: h1 6"></div>
+<div style="counter-reset: h1 7"></div>
 
 # [Useful Tips](#useful-tips)
 
