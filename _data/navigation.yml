@@ -28259,6 +28259,45 @@ rplustask3:
       titlekr: "모션 목록"
       url: /software/rplustask3/task_parameters/#motion-list
       urlkr: /software/rplustask3/task_parameters/#모션-목록
+  - title: "Task Python API"
+    url: /software/rplustask3/python_api/#task-python-api
+    children:
+    - title: "pycm module"
+      url: /software/rplustask3/python_api/#pycm-module
+    - title: "Submodules of pycm"
+      url: /software/rplustask3/python_api/#submodules-of-pycm
+    - title: "Const Submodule"
+      url: /software/rplustask3/python_api/#const-submodule
+    - title: "Led submodule"
+      url: /software/rplustask3/python_api/#led-submodule
+    - title: "Info Submodule"
+      url: /software/rplustask3/python_api/#info-submodule)
+    - title: "EEPROM Submodule"
+      url: /software/rplustask3/python_api/#eeprom-submodule
+    - title: "RC Submodule"
+      url: /software/rplustask3/python_api/#rc-submodule
+    - title: "Etc Submodule"
+      url: /software/rplustask3/python_api/#etc-submodule
+    - title: "Timer Submodule"
+      url: /software/rplustask3/python_api/#timer-submodule
+    - title: "Button Submodule"
+      url: /software/rplustask3/python_api/#button-submodule
+    - title: "Dxlbus Submodule"
+      url: /software/rplustask3/python_api/#dxlbus-submodule
+    - title: "Motion Submodule"
+      url: /software/rplustask3/python_api/#motion-submodule
+    - title: "Buzzer Submodule"
+      url: /software/rplustask3/python_api/#buzzer-submodule
+    - title: "IMU Submodule"
+      url: /software/rplustask3/python_api/#imu-submodule
+    - title: "OLLO Submodule"
+      url: /software/rplustask3/python_api/#ollo-submodule
+    - title: "DXL Submodule"
+      url: /software/rplustask3/python_api/#dxl-submodule
+    - title: "RPI Submodule"
+      url: /software/rplustask3/python_api/#rpi-submodule
+  - titlekr: "태스크 파이썬 API"
+    urlkr: /software/rplustask3/python_api/#태스크-파이썬-api
   - title: "Motion Programming"
     titlekr: "모션 프로그래밍"
     url: /software/rplustask3/motion_programming/#motion-programming

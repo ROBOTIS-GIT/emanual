@@ -7,31 +7,30 @@ share: true
 author_profile: false
 permalink: /docs/en/software/rplustask3/python_api/
 sidebar:
-  title: TASK 3.0 PYTHON API
-  nav: "task_3_python_api"
+  title: R+ Task 3.0
+  nav: "rplustask3"
+product_group: rplustask3
+page_number: 5
 ---
 
-<div style="counter-reset: h1 6"></div>
-<div style="counter-reset: h2 4"></div>
-<div style="counter-reset: h3 0"></div>
+<div style="counter-reset: h1 5"></div>
 
-<!--[dummy Header 1]>
-  <h1 id="api-reference"><a href="#api-reference">API Reference</a></h1>
-  <h2 id="python"><a href="#python">Python</a></h2>
-<![end dummy Header 1]-->
+# [Task Python API](#task-python-api)
 
-### [pycm module](#task3-python-pycm)
+## [pycm Module](#pycm-module)
 
 Here we introduce two ways to use pycm module.
 
 1. 
+
 ```python
 import pycm # pycm should NOT be omitted in the following code
 
 pycm.led.on(pycm.const.RED)
 ```
 
-2. 
+2.
+
 ```python
 from pycm import * # pycm should be omitted in the following code
 
@@ -49,7 +48,7 @@ We assume the SECOND case in the following description.
 | ``` micros() -> None ```            | Microseconds since controller turns on         |None                           | 0 ~ 4294967295 | ``` pre_time = micros() ``` |
 
 
-### Submodules of pycm
+## [Submodules of pycm](#submodules-of-pycm)
 
 | Submodules of pycm                          | Description                                                |
 |:--------------------------------------------|:-----------------------------------------------------------|
@@ -71,7 +70,7 @@ We assume the SECOND case in the following description.
 | **[rpi](#rpi-submodule)**                   | Raspberry Pi interface                                     |
 
 
-### const submodule
+## [Const Submodule](#const-submodule)
 
 | Constant members of const             | Description                                                  | Example                                           |
 |:--------------------------------------|:-------------------------------------------------------------|:--------------------------------------------------|
@@ -102,7 +101,7 @@ We assume the SECOND case in the following description.
 | WHEEL                                 | Wheel mode of Dynamixel actuator                             | ``` DXL(3).mode(const.WHEEL) ```                  |
 
 
-### led submodule
+## [Led Submodule](#led-submodule)
 
 | Methods                               | Description                                    |Parameter                                                             |Return| Example                                     |
 |:--------------------------------------|:-----------------------------------------------|:---------------------------------------------------------------------|:-----|:--------------------------------------------|
@@ -112,7 +111,7 @@ We assume the SECOND case in the following description.
 | ``` toggle(color: int) -> None ```    | Toggle specified color of controller's LED     |```color```: LED name<br>- ```const.RED / const.BLUE / const.GREEN``` | None |``` led.toggle(const.GREEN \| const.BLUE) ```|
 
 
-### info submodule
+## [Info Submodule](#info-submodule)
 
 | Methods of info submobule        | Description                                  | Example                                           |
 |:---------------------------------|:---------------------------------------------|:--------------------------------------------------|
@@ -125,7 +124,7 @@ We assume the SECOND case in the following description.
 | ```address() -> str```           | Return controller's BLE MAC address as string| ``` info.address() ```                            |
 
 
-### eeprom submodule
+## [EEPROM Submodule](#eeprom-submodule)
 
 | Methods of eeprom submobule        | Description                                  | Parameter  | Return     | Example                             |
 |:-----------------------------------|:---------------------------------------------|:-----------|:-----------|:------------------------------------|
@@ -138,7 +137,7 @@ We assume the SECOND case in the following description.
 
 
 
-### rc submodule
+## [RC Submodule](#rc-submodule)
 
 | Methods of rc submobule        | Description                                       | Parameter  | Return     | Example                             |
 |:-------------------------------|:--------------------------------------------------|:-----------|:-----------|:------------------------------------|
@@ -148,17 +147,17 @@ We assume the SECOND case in the following description.
 | ```write(data: int) -> None``` | Send remote control packet value                  | 0 ~ 65535 | None | ``` rc.write(128) ```              |
 
 
-### etc submodule
+## [Etc Submodule](#etc-submodule)
 
-| Methods of etc submobule                | Description                                           | Parameter  | Return     | Example                             |
-|:----------------------------------------|:------------------------------------------------------|:-----------|:-----------|:------------------------------------|
-| ```print_screen(val: int) -> None```    | Print an integer value to task monitor with a space   | -2,147,483,647 ~ 2,147,483,647 | None |``` etc.print_screen(100) ```               |
-| ```println_screen(val: int) -> None```  | Print an integer value to task monitor with a new line| -2,147,483,647 ~ 2,147,483,647 | None |``` etc.println_screen(100) ```       |
-| ```print_string(str: str) -> None```    | Print a string to task monitor with a space           | max 19 bytes | None |``` etc.print_string("Hello world!") ```               |
-| ```println_string(str: str) -> None```  | Print a string to task monitor with a new line        | max 19 bytes | None |``` etc.println_string("Hello world!") ```               |
-| ```port(ch: int) -> None```             | Set controller's print screen channel                 |BLE (0)<br>UART (1)<br>USB (2)  | None |``` etc.port(BLE) ``` |
+| Methods of etc submobule                | Description                                           | Parameter                       | Return   | Example                                    |
+|:----------------------------------------|:------------------------------------------------------|:--------------------------------|:---------|:-------------------------------------------|
+| ```print_screen(val: int) -> None```    | Print an integer value to task monitor with a space   | -2,147,483,647 ~ 2,147,483,647  | None     |``` etc.print_screen(100) ```               |
+| ```println_screen(val: int) -> None```  | Print an integer value to task monitor with a new line| -2,147,483,647 ~ 2,147,483,647  | None     |``` etc.println_screen(100) ```             |
+| ```print_string(str: str) -> None```    | Print a string to task monitor with a space           | max 19 bytes                    | None     |``` etc.print_string("Hello world!") ```    |
+| ```println_string(str: str) -> None```  | Print a string to task monitor with a new line        | max 19 bytes                    | None     |``` etc.println_string("Hello world!") ```  |
+| ```port(ch: int) -> None```             | Set controller's print screen channel                 |BLE (0)<br>UART (1)<br>USB (2)   | None     |``` etc.port(BLE) ```                       |
 
-### timer submodule
+## [Timer Submodule](#timer-submodule)
 
 | Methods of etc submobule                       | Description                                           | Parameter  | Return     | Example                             |
 |:-----------------------------------------------|:------------------------------------------------------|:-----------|:-----------|:------------------------------------|
@@ -166,7 +165,7 @@ We assume the SECOND case in the following description.
 | ```start() -> None```                          | Start the registered function callback process        | None       | None       |``` timer.start() ```                |
 | ```stop() -> None```                           | stop the registered function callback process         | None       | None       |``` timer.stop() ```                 |
 
-### button submodule
+## [Button Submodule](#button-submodule)
 
 | Methods of button submobule        | Description                                                  | Parameter  | Return     | Example                             |
 |:-----------------------------------|:-------------------------------------------------------------|:-----------|:-----------|:------------------------------------|
@@ -176,7 +175,7 @@ We assume the SECOND case in the following description.
 | ```seconds() -> int ```            | Return last pressed time in seconds                          | None       | 0 ~ 255   | ``` button.seconds() ``` |
 
 
-### dxlbus submodule
+## [Dxlbus Submodule](#dxlbus-submodule)
 
 | Methods of dxlbus submobule        | Description                                                  | Parameter  | Return     | Example                             |
 |:-----------------------------------|:-------------------------------------------------------------|:-----------|:-----------|:------------------------------------|
@@ -189,7 +188,7 @@ We assume the SECOND case in the following description.
 | ```reboot() -> None ```            | Reboot all dynamixel(s)                                      | None       | None       | ``` dxlbus.reboot() ``` |
 
 
-### motion submodule
+## [Motion Submodule](#motion-submodule)
 
 | Methods of motion submobule          | Description                                                  | Parameter  | Return     | Example                             |
 |:-------------------------------------|:-------------------------------------------------------------|:-----------|:-----------|:------------------------------------|
@@ -204,7 +203,7 @@ We assume the SECOND case in the following description.
 
 
 
-### buzzer submodule
+## [Buzzer Submodule](#buzzer-submodule)
 
 | Methods of buzzer submobule          | Description                                                  | Parameter  | Return     | Example                             |
 |:-------------------------------------|:-------------------------------------------------------------|:-----------|:-----------|:------------------------------------|
@@ -214,7 +213,7 @@ We assume the SECOND case in the following description.
 | ```wait() -> None ```                | Wait until current melody or note ends                       | None       | None       | ``` buzzer.wait() ``` |
 
 
-### mic submodule
+## [Mic Submodule](#mic-submodule)
 
 | Methods of mic submobule          | Description                                                                 | Parameter  | Return     | Example                             |
 |:----------------------------------|:----------------------------------------------------------------------------|:-----------|:-----------|:------------------------------------|
@@ -224,7 +223,7 @@ We assume the SECOND case in the following description.
 
 
 
-### imu submodule
+## [IMU Submodule](#imu-submodule)
 
 | Methods of imu submobule          | Description                                                  | Parameter  | Return                                   | Example                      |
 |:----------------------------------|:-------------------------------------------------------------|:-----------|:-----------------------------------------|:-----------------------------|
@@ -239,7 +238,7 @@ We assume the SECOND case in the following description.
 | ```accel_z() -> int ```           | Return the accelerometer Z axis value of CM-550 controller   | None       | -32768 ~ 32767 (unit: 0.01G)             | ``` imu.accel_z() ```        |
 
 
-### OLLO submodule
+## [OLLO Submodule](#ollo-submodule)
 
 | Methods of OLLO submobule          | Description                                                  | Parameter  | Return     | Example                             |
 |:-------------------------------------|:-------------------------------------------------------------|:-----------|:-----------|:------------------------------------|
@@ -253,28 +252,28 @@ We assume the SECOND case in the following description.
 | ```write(left, right) -> None ```         | Set LED status of left and right output port of User Device<br>(```mode```: const.OLLO_USER)          | 0, 1  | None       | ``` obj.write(1, 1) ```            |
 
 
-### DXL submodule
+## [DXL Submodule](#dxl-submodule)
 
 | Methods of DXL submobule          | Description                                                  | Parameter  | Return     | Example                             |
 |:-------------------------------------|:-------------------------------------------------------------|:-----------|:-----------|:------------------------------------|
 | ```DXL(id) -> object ```           | Create an Dynamixel object with specified ID                      | 0 ~ 252 : Single ID<br>254 : Broadcast ID     | Dynamixel object    | ``` obj = DXL(1) ```            |
-| ```mode() -> int ```[Link]([Link](https://emanual.robotis.com/docs/en/dxl/x/xl430-w250/#goal-velocity104))           | Return mode number of Dynamixel object                      | None     | 1 : Velocity Control Mode<br>3 : Position Control Mode<br>4 : Multi-turn Mode<br>    | ``` obj.mode() ```            |
-| ```mode(mode) -> None ```[Link]([Link](https://emanual.robotis.com/docs/en/dxl/x/xl430-w250/#goal-velocity104))           | Set mode for Dynamixel object                      | 1 : Velocity Control Mode<br>3 : Position Control Mode<br>4 : Multi-turn Mode<br> | None   | ``` obj.mode(3) ```            |
+| [```mode() -> int ```](https://emanual.robotis.com/docs/en/dxl/x/xl430-w250/#operating-mode11)           | Return mode number of Dynamixel object                      | None     | 1 : Velocity Control Mode<br>3 : Position Control Mode<br>4 : Multi-turn Mode<br>    | ``` obj.mode() ```            |
+| [```mode(mode) -> None ```](https://emanual.robotis.com/docs/en/dxl/x/xl430-w250/#operating-mode11)           | Set mode for Dynamixel object                      | 1 : Velocity Control Mode<br>3 : Position Control Mode<br>4 : Multi-turn Mode<br> | None   | ``` obj.mode(3) ```            |
 | ```torque_on() -> None ```           | Turn on torque for Dynamixel object                 | None    | None   | ``` obj.torque_on() ```            |
 | ```torque_off() -> None ```          | Turn off torque for Dynamixel object                 | None    | None   | ``` obj.torque_off() ```            |
 | ```led_on() -> None ```          | Turn on LED for Dynamixel object                 | None    | None   | ``` obj.led_on() ```            |
 | ```led_off() -> None ```          | Turn off LED for Dynamixel object                 | None    | None   | ``` obj.led_off() ```            |
 | ```led_toggle() -> None ```       | Toggle LED for Dynamixel object                 | None    | None   | ``` obj.led_toggle() ```            |
-| ```goal_velocity() -> int ```[Link](https://emanual.robotis.com/docs/en/dxl/x/xl430-w250/#goal-velocity104)       | Return goal velocity value                 | None    | -1023 ~ 1023 (unit: 0.229 rev/min)  | ``` obj.goal_velocity() ```            |
-| ```goal_velocity(v) -> None ```[Link](https://emanual.robotis.com/docs/en/dxl/x/xl430-w250/#goal-velocity104)       | Set goal velocity value                 | -1023 ~ 1023  (unit: 0.229 rev/min)   |  None  | ``` obj.goal_velocity(100) ```            |
-| ```goal_position() -> int ```[Link](https://emanual.robotis.com/docs/en/dxl/x/xl430-w250/#goal-position116)       | Return goal position value                 | None    | -4095 ~ 4095  | ``` obj.goal_position() ```            |
-| ```goal_position(p) -> None ```[Link](https://emanual.robotis.com/docs/en/dxl/x/xl430-w250/#goal-position116)       | Set goal position value                 | -4095 ~ 4095   |  None  | ``` obj.goal_position(1024) ```            |
-| ```is_moving() -> bool ```[Link](https://emanual.robotis.com/docs/en/dxl/x/xl430-w250/#moving122)       | Return moving status                 | None    | True : Dynamixel is moving<br>False : Dyanmixel is not moving  | ``` obj.is_moving() ```            |
-| ```present_velocity() -> int ```[Link](https://emanual.robotis.com/docs/en/dxl/x/xl430-w250/#present-velocity128)       | Return present velocity value                 | None    | -1023 ~ 1023 (unit: 0.229 rev/min)  | ``` obj.present_velocity() ```            |
-| ```present_position() -> int ```[Link](https://emanual.robotis.com/docs/en/dxl/x/xl430-w250/#present-position132)       | Return present position value                 | None    | -4095 ~ 4095  | ``` obj.present_position() ```            |
+| [```goal_velocity() -> int ```](https://emanual.robotis.com/docs/en/dxl/x/xl430-w250/#goal-velocity104)       | Return goal velocity value                 | None    | -1023 ~ 1023 (unit: 0.229 rev/min)  | ``` obj.goal_velocity() ```            |
+| [```goal_velocity(v) -> None ```](https://emanual.robotis.com/docs/en/dxl/x/xl430-w250/#goal-velocity104)       | Set goal velocity value                 | -1023 ~ 1023  (unit: 0.229 rev/min)   |  None  | ``` obj.goal_velocity(100) ```            |
+| [```goal_position() -> int ```](https://emanual.robotis.com/docs/en/dxl/x/xl430-w250/#goal-position116)       | Return goal position value                 | None    | -4095 ~ 4095  | ``` obj.goal_position() ```            |
+| [```goal_position(p) -> None ```](https://emanual.robotis.com/docs/en/dxl/x/xl430-w250/#goal-position116)       | Set goal position value                 | -4095 ~ 4095   |  None  | ``` obj.goal_position(1024) ```            |
+| [```is_moving() -> bool ```](https://emanual.robotis.com/docs/en/dxl/x/xl430-w250/#moving122)       | Return moving status                 | None    | True : Dynamixel is moving<br>False : Dyanmixel is not moving  | ``` obj.is_moving() ```            |
+| [```present_velocity() -> int ```](https://emanual.robotis.com/docs/en/dxl/x/xl430-w250/#present-velocity128)       | Return present velocity value                 | None    | -1023 ~ 1023 (unit: 0.229 rev/min)  | ``` obj.present_velocity() ```            |
+| [```present_position() -> int ```](https://emanual.robotis.com/docs/en/dxl/x/xl430-w250/#present-position132)       | Return present position value                 | None    | -4095 ~ 4095  | ``` obj.present_position() ```            |
 
 
-### rpi submodule
+## [RPI Submodule](#rpi-submodule)
 
 | Methods of rpi submodule      | Description                                                    | Parameter                | Return                                 | Example                 |
 |:------------------------------|:---------------------------------------------------------------|:-------------------------|:---------------------------------------|:------------------------|
