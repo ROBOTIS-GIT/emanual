@@ -66,7 +66,7 @@ Please note that this instruction is written for the **ROBOTIS official OpenMANI
 </section>
 
 <section data-id="{{ page.tab_title5 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/quick_start_guide/launch_controller_foxy.md %}
+{% include en/platform/openmanipulator_x/quick_start_guide/launch_controller_humble.md %}
 </section>
 
 <section data-id="{{ page.tab_title6 }}" class="tab_contents">
@@ -92,7 +92,7 @@ Please note that this instruction is written for the **ROBOTIS official OpenMANI
 </section>
 
 <section data-id="{{ page.tab_title5 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/quick_start_guide/keyboard_teleop_foxy.md %}
+{% include en/platform/openmanipulator_x/quick_start_guide/keyboard_teleop_humble.md %}
 </section>
 
 <section data-id="{{ page.tab_title6 }}" class="tab_contents">
