@@ -53,7 +53,8 @@ page_number: 7
 </section>
 
 <section data-id="{{ page.tab_title5 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/controller/check_setting_dashing.md %}
+Not supported.
+{: .notice--warning}
 </section>
 
 <section data-id="{{ page.tab_title6 }}" class="tab_contents">
@@ -80,7 +81,7 @@ Not supported
 </section>
 
 <section data-id="{{ page.tab_title5 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/controller/check_setting_rviz_dashing.md %}
+{% include en/platform/openmanipulator_x/controller/check_setting_rviz_humble.md %}
 </section>
 
 <section data-id="{{ page.tab_title6 }}" class="tab_contents">
