@@ -55,10 +55,10 @@ Coming Soon (2021 4Q)
 {: .notice--success}
 </section>
 
-<section data-id="{{ page.tab_title5 }}" class="tab_contents">
+<!-- <section data-id="{{ page.tab_title5 }}" class="tab_contents">
 Coming Soon (2021 4Q)
 {: .notice--success}
-</section>
+</section> -->
 
 <section data-id="{{ page.tab_title6 }}" class="tab_contents">
 Not supported with Arduino
@@ -73,6 +73,10 @@ Not supported with Arduino
 
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
 {% include en/platform/openmanipulator_x/simulation/launch_gazebo_noetic.md %}
+</section>
+
+<section data-id="{{ page.tab_title5 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/simulation/launch_gazebo_humble.md %}
 </section>
 
 <section data-id="{{ page.tab_title6 }}" class="tab_contents">
@@ -90,6 +94,10 @@ Not supported with Arduino
 {% include en/platform/openmanipulator_x/simulation/gazebo_controller_noetic.md %}
 </section>
 
+<section data-id="{{ page.tab_title5 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/simulation/gazebo_controller_humble.md %}
+</section>
+
 <section data-id="{{ page.tab_title6 }}" class="tab_contents">
 Not supported with Arduino
 {: .notice--warning}
@@ -103,6 +111,10 @@ Not supported with Arduino
 
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
 {% include en/platform/openmanipulator_x/simulation/gazebo_operation_noetic.md %}
+</section>
+
+<section data-id="{{ page.tab_title5 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/simulation/gazebo_operation_humble.md %}
 </section>
 
 <section data-id="{{ page.tab_title6 }}" class="tab_contents">
