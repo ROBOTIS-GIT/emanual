@@ -23,10 +23,7 @@ page_number: 37
 <![end dummy Header 1]-->
 
 ## [Other ROS Versions](#other-ros-versions)
-Below versions are archived TurtleBot3 manuals.
+Download archived TurtleBot3 manual as of Nov 2024.  
+In order to switch the ROS version, select the ROS version on the top of the page.
 
-* ROS KINETIC manual: [Download](http:)
-* ROS MELODIC manual: [Download](http:)
-* ROS NOETIC manual: [Download](http:)
-* ROS2 DASHING manual: [Download](http:)
-* ROS2 FOXY manual: [Download](http:)
+* TurtleBot3 eManual Archive [Download](https://drive.google.com/file/d/1wsNby1dpdzj2eD2oZtRQyHYqoY4o25io/view?usp=sharing)
