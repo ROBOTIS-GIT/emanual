@@ -66,7 +66,7 @@ page_number: 10
 </section>
 
 <section data-id="{{ page.tab_title5 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/operation/gui_program_dashing.md %}
+{% include en/platform/openmanipulator_x/operation/gui_program_humble.md %}
 </section>
 
 <section data-id="{{ page.tab_title6 }}" class="tab_contents">
@@ -92,7 +92,7 @@ page_number: 10
 </section>
 
 <section data-id="{{ page.tab_title5 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/operation/teleop_foxy.md %}
+{% include en/platform/openmanipulator_x/operation/teleop_humble.md %}
 </section>
 
 <section data-id="{{ page.tab_title6 }}" class="tab_contents">
