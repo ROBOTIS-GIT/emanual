@@ -43,7 +43,7 @@ page_number: 6
 </section>
 
 <section data-id="{{ page.tab_title5 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/controller/launch_controller_pkg_foxy.md %}
+{% include en/platform/openmanipulator_x/controller/launch_controller_pkg_humble.md %}
 </section>
 
 <section data-id="{{ page.tab_title6 }}" class="tab_contents">
@@ -70,7 +70,7 @@ Arduino sketch for OpenCR OpenMANIPULATOR-X includes the controller in the code.
 </section>
 
 <section data-id="{{ page.tab_title5 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/controller/launch_controller_foxy.md %}
+{% include en/platform/openmanipulator_x/controller/launch_controller_humble.md %}
 </section>
 
 <section data-id="{{ page.tab_title6 }}" class="tab_contents">
