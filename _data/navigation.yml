@@ -26159,6 +26159,8 @@ turtlebot3:
         url: /platform/turtlebot3/contact_us/#about-robotis
       - title: "About OST (Open Source Team)"
         url: /platform/turtlebot3/contact_us/#about-ost-open-source-team
+    - title: "Other ROS Versions"
+      url: /platform/turtlebot3/other_ros_versions/
   - title: "FAQ"
     url: /platform/turtlebot3/faq/#faq
 
