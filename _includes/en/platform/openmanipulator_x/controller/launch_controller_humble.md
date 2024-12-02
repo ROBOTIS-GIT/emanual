@@ -1,4 +1,4 @@
-Open a new terminal and launch the open_manipulator_controller package.
+Open a new terminal and launch the open_manipulator_x packages.
 
 - When operating with `U2D2`  
 Close all terminal and enter the command below in each new terminal.
@@ -7,10 +7,12 @@ $ ros2 launch open_manipulator_x_bringup hardware.launch.py
 $ ros2 launch open_manipulator_x_moveit_config servo.launch.py
 ```
 
-<!-- - When operating with `OpenCR`
+- When operating with `OpenCR`  
+Close all terminal and enter the command below in the new terminal.
 ```bash
-$ ros2 launch open_manipulator_x_controller open_manipulator_x_controller.launch.py usb_port:=/dev/ttyACM0
-``` -->
+$ ros2 launch open_manipulator_x_bringup hardware.launch.py port_name:=/dev/ttyACM0
+$ ros2 launch open_manipulator_x_moveit_config servo.launch.py
+```
 
 {% capture warning_01 %}
 **WARNING** :  
@@ -174,7 +176,7 @@ $ ros2 launch open_manipulator_x_moveit_config servo.launch.py
 {% endcapture %}
 <div class="notice--success">{{ notice_01 | markdownify }}</div>
 
-<!-- {% capture notice_02 %}
+{% capture notice_02 %}
 **NOTE**: OpenMANIPULATOR-X controller is compatible with [Protocol 2.0](/docs/en/dxl/protocol2/) which supports `MX 2.0`, `X` and `Pro` series. [Protocol 1.0](/docs/en/dxl/protocol1/) does not support SyncRead instructions to access to multiple DYNAMIXEL's's simultaneously.  
 {% endcapture %}
-<div class="notice--info">{{ notice_02 | markdownify}}</div> -->
+<div class="notice--info">{{ notice_02 | markdownify}}</div>

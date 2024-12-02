@@ -5,14 +5,15 @@ After running this section, software controller that controls the OpenMANIPULAOT
 Close all terminal and enter the command below in each new terminal.
 ```bash
 $ ros2 launch open_manipulator_x_bringup hardware.launch.py
-$ ros2 launch open_manipulator_x_moveit_config moveit_core.launch.py
+$ ros2 launch open_manipulator_x_moveit_config servo.launch.py
 ```
 
-<!-- - When operating with `OpenCR`  
+- When operating with `OpenCR`  
 Close all terminal and enter the command below in the new terminal.
 ```bash
-$ ros2 launch open_manipulator_x_controller open_manipulator_x_controller.launch.py usb_port:=/dev/ttyACM0
-``` -->
+$ ros2 launch open_manipulator_x_bringup hardware.launch.py port_name:=/dev/ttyACM0
+$ ros2 launch open_manipulator_x_moveit_config servo.launch.py
+```
 
 {% capture warning_01 %}
 **WARNING** :  
