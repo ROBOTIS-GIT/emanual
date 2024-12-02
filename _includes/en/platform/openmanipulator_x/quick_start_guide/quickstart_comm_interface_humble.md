@@ -19,11 +19,11 @@ In Linux(Ubuntu platform) environment, USB latency time is set to 16ms by defaul
 
 Open a terminal window and enter the following command to set usb latency time. The command below will set the USB latency to **1 ms**.
 
-**TIP**: You can open a new terminal window by pressing `ALT` + `CTRL` + `T`.
+**TIP**: You can open a new terminal window by pressing `CTRL` + `ALT` + `T`.
 {: .notice}
 
 ``` bash
-$ ros2 run open_manipulator_x_controller create_udev_rules
+$ ros2 run open_manipulator_x_bringup create_udev_rules
 ```
 
 {% capture notice_01 %}

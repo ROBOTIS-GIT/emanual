@@ -5,7 +5,7 @@
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-1. Before Launch the GUI program, the [OpenMANIPULATOR-X Controller](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) must be running on another terminal. Plus launch moveit_core using this command in the new terminal.
+1. Before Launch the GUI program, the [OpenMANIPULATOR-X Controller](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) must be running on another terminal. Plus, launch moveit_core using this command in the new terminal.
 ```bash
 $ ros2 launch open_manipulator_x_moveit_config moveit_core.launch.py
 ```

@@ -47,13 +47,13 @@ In this example, if the user is holding the master OpenMANIPULATOR, the slave Op
 </section>
 
 <section data-id="{{ page.tab_title4 }}" class="tab_contents">
-Coming Soon (2021 4Q)
-{: .notice--success}
+Not supported
+{: .notice--warning}
 </section>
 
 <section data-id="{{ page.tab_title5 }}" class="tab_contents">
-Coming Soon (2021 4Q)
-{: .notice--success}
+Not supported
+{: .notice--warning}
 </section>
 
 <section data-id="{{ page.tab_title6 }}" class="tab_contents">
