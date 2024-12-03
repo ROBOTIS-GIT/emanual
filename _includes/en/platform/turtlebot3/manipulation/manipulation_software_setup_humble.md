@@ -16,7 +16,7 @@ Follow the instructions below to install the required package and its dependenci
 2. Install packages for TurtleBot3 Manipulation.  
 **[TurtleBot3 SBC]**  
   ```bash
-  $ sudo apt install ros-humble-hardware-interface ros-humble-xacro ros-humble-ros2-control ros-humble-ros2-controllers ros-humble-gripper-controllers ros-humble-moveit-ros-planning-interface
+  $ sudo apt install ros-humble-hardware-interface ros-humble-xacro ros-humble-ros2-control ros-humble-ros2-controllers ros-humble-gripper-controllers
   $ cd ~/turtlebot3_ws/src/
   $ git clone -b humble-devel https://github.com/ROBOTIS-GIT/turtlebot3_manipulation.git
   $ cd ~/turtlebot3_ws && colcon build --symlink-install
@@ -27,7 +27,7 @@ Follow the instructions below to install the required package and its dependenci
 2. Install dependent packages using the following commands.  
 **[Remote PC]**  
   ```bash
-  $ sudo apt install ros-humble-dynamixel-sdk ros-humble-ros2-control ros-humble-ros2-controllers ros-humble-gripper-controllers ros-humble-moveit ros-humble-moveit*
+  $ sudo apt install ros-humble-dynamixel-sdk ros-humble-ros2-control ros-humble-ros2-controllers ros-humble-gripper-controllers ros-humble-moveit*
   $ cd ~/turtlebot3_ws/src/
   $ git clone -b humble-devel https://github.com/ROBOTIS-GIT/turtlebot3_manipulation.git
   $ cd ~/turtlebot3_ws && colcon build --symlink-install
