@@ -10,7 +10,7 @@
 {: .notice--danger}
 
 {% capture warning_01 %}
-**Compatibility WARNING**
+**Compatibility WARNING**  
 - `Jetson Nano` does not support native Ubuntu 20.04. Please refer to [NVIDIA developer forum]{: .blank} for more details.
 
 [NVIDIA developer forum]: https://forums.developer.nvidia.com/t/when-will-jetpack-move-to-ubuntu-20-04/142517
@@ -30,21 +30,21 @@
 
 ### [Install ROS on Remote PC](#install-ros-on-remote-pc)
 
-Open the terminal with `Ctrl`+`Alt`+`T` and enter below commands one at a time.
-In order to check the details of the easy installation script, please refer to [the script file](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_noetic.sh).
-**[Remote PC]**
+Open the terminal with `Ctrl`+`Alt`+`T` and enter below commands one at a time.  
+In order to check the details of the easy installation script, please refer to [the script file](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_noetic.sh).  
+**[Remote PC]**  
 ```bash
 $ sudo apt update
 $ sudo apt upgrade
 $ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_noetic.sh
-$ chmod 755 ./install_ros_noetic.sh
+$ chmod 755 ./install_ros_noetic.sh 
 $ bash ./install_ros_noetic.sh
 ```
 
 If the above installation fails, please refer to [the official ROS1 Noetic installation guide](http://wiki.ros.org/noetic/Installation/Ubuntu).
 
-### [Install Dependent ROS Packages](#install-dependent-ros-packages)
-**[Remote PC]**
+### [Install Dependent ROS Packages](#install-dependent-ros-packages)  
+**[Remote PC]**  
 ```bash
 $ sudo apt-get install ros-noetic-joy ros-noetic-teleop-twist-joy \
   ros-noetic-teleop-twist-keyboard ros-noetic-laser-proc \
@@ -58,8 +58,8 @@ $ sudo apt-get install ros-noetic-joy ros-noetic-teleop-twist-joy \
 
 ### [Install TurtleBot3 Packages](#install-turtlebot3-packages)
 
-Install TurtleBot3 via Debian Packages.
-**[Remote PC]**
+Install TurtleBot3 via Debian Packages.  
+**[Remote PC]**  
 ```bash
 $ sudo apt install ros-noetic-dynamixel-sdk
 $ sudo apt install ros-noetic-turtlebot3-msgs
@@ -70,19 +70,19 @@ $ sudo apt install ros-noetic-turtlebot3
 <summary>
 ![](/assets/images/icon_unfold.png) **Click here to expand more details about building TurtleBot3 package from source.**
 </summary>
-In case you need to download the source codes and build them, please use the commands below.
-Make sure to remove the identical packages to avoid redundancy.
-
-**[Remote PC]**
+In case you need to download the source codes and build them, please use the commands below.  
+Make sure to remove the identical packages to avoid redundancy.  
+  
+**[Remote PC]**  
 ```bash
 $ sudo apt remove ros-noetic-dynamixel-sdk
 $ sudo apt remove ros-noetic-turtlebot3-msgs
 $ sudo apt remove ros-noetic-turtlebot3
 $ mkdir -p ~/catkin_ws/src
 $ cd ~/catkin_ws/src/
-$ git clone -b noetic https://github.com/ROBOTIS-GIT/DynamixelSDK.git
-$ git clone -b noetic https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
-$ git clone -b noetic https://github.com/ROBOTIS-GIT/turtlebot3.git
+$ git clone -b noetic-devel https://github.com/ROBOTIS-GIT/DynamixelSDK.git
+$ git clone -b noetic-devel https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
+$ git clone -b noetic-devel https://github.com/ROBOTIS-GIT/turtlebot3.git
 $ cd ~/catkin_ws && catkin_make
 $ echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 ```
@@ -92,25 +92,25 @@ $ echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 
 ![](/assets/images/platform/turtlebot3/software/network_configuration.png)
 
-1. Connect PC to a WiFi device and find the assigned IP address with the command below.
-**[Remote PC]**
+1. Connect PC to a WiFi device and find the assigned IP address with the command below.  
+**[Remote PC]**  
   ```bash
 $ ifconfig
-  ```
+  ```  
   ![](/assets/images/platform/turtlebot3/software/network_configuration2.png)
 
-2. Open the file and update the ROS IP settings with the command below.
-**[Remote PC]**
+2. Open the file and update the ROS IP settings with the command below.  
+**[Remote PC]**  
   ```bash
 $ nano ~/.bashrc
   ```
 
-3. Press `Ctrl`+`END` or `Alt`+`/` to move the cursor to the end of line.
-  Modify the address of `localhost` in the `ROS_MASTER_URI` and `ROS_HOSTNAME` with the IP address acquired from the above terminal window.
+3. Press `Ctrl`+`END` or `Alt`+`/` to move the cursor to the end of line.  
+  Modify the address of `localhost` in the `ROS_MASTER_URI` and `ROS_HOSTNAME` with the IP address acquired from the above terminal window.  
   ![](/assets/images/platform/turtlebot3/software/network_configuration3.png)
 
-4. Source the bashrc with below command.
-**[Remote PC]**
+4. Source the bashrc with below command.  
+**[Remote PC]**  
   ```bash
 $ source ~/.bashrc
   ```

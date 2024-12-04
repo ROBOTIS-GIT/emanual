@@ -41,12 +41,12 @@ The following instructions describes how to install packages and to calibrate ca
 1. Install AutoRace package on both `Remote PC` and `SBC`.
 ```bash
 $ cd ~/catkin_ws/src/
-$ git clone -b noetic https://github.com/ROBOTIS-GIT/turtlebot3_autorace_2020.git
+$ git clone -b feature-raspicam https://github.com/ROBOTIS-GIT/turtlebot3_autorace_2020.git
 $ cd ~/catkin_ws && catkin_make
 ```
 
 2. Install additional dependent packages on `SBC`.
-    - Create a swap file to prevent lack of memory in building OpenCV.
+    - Create a swap file to prevent lack of memory in building OpenCV. 
 
         ```bash
         $ sudo fallocate -l 4G /swapfile
@@ -55,7 +55,7 @@ $ cd ~/catkin_ws && catkin_make
         $ sudo swapon /swapfile
         ```
 
-    - Install required dependencies.
+    - Install required dependencies. 
         ```bash
         $ sudo apt-get update
         $ sudo apt-get install build-essential cmake gcc g++ git unzip pkg-config
@@ -106,7 +106,7 @@ $ cd ~/catkin_ws && catkin_make
         ```
 
     * It will take an hour or two to build.
-
+    
         ```bash
         $ cd ~/opencv/build
         $ make -j4
@@ -124,12 +124,12 @@ $ cd ~/catkin_ws && catkin_make
         ```
 
     * Install additional dependent packages
-
+    
         ```bash
         $ sudo apt install ros-noetic-cv-camera
         ```
 
 3. Install additional dependent packages on `Remote PC`.
 ```bash
-$ sudo apt install ros-noetic-image-transport ros-noetic-image-transport-plugins ros-noetic-cv-bridge ros-noetic-vision-opencv python3-opencv libopencv-dev ros-noetic-image-proc ros-noetic-cv-camera ros-noetic-camera-calibration
+$ sudo apt install ros-noetic-image-transport ros-noetic-image-transport-plugins ros-noetic-cv-bridge ros-noetic-vision-opencv python3-opencv libopencv-dev ros-noetic-image-proc ros-noetic-cv-camera ros-noetic-camera-calibration 
 ```

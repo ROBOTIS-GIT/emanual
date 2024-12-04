@@ -31,37 +31,37 @@ This Gazebo Simulation uses **ROS Gazebo package**, therefore, proper Gazebo ver
 
 
 ### [Install Simulation Package](#install-simulation-package)
-The **TurtleBot3 Simulation Package** requires `turtlebot3` and `turtlebot3_msgs` packages as prerequisite. Without these prerequisite packages, the Simulation cannot be launched.
+The **TurtleBot3 Simulation Package** requires `turtlebot3` and `turtlebot3_msgs` packages as prerequisite. Without these prerequisite packages, the Simulation cannot be launched.  
 Please follow the [PC Setup](/docs/en/platform/turtlebot3/quick-start/) instructions if you did not install required packages and dependent packages.
 
 ```bash
 $ cd ~/turtlebot3_ws/src/
-$ git clone -b humble https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
+$ git clone -b humble-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
 $ cd ~/turtlebot3_ws && colcon build --symlink-install
 ```
 
 ### [Launch Simulation World](#launch-simulation-world)
 
-Three simulation environments are prepared for TurtleBot3. Please select one of these environments to launch Gazebo.
+Three simulation environments are prepared for TurtleBot3. Please select one of these environments to launch Gazebo.  
 
 **Please make sure to completely terminate other Simulation world before launching a new world.**
 {: .notice--warning}
 
-1. Empty World
+1. Empty World  
 ![](/assets/images/platform/turtlebot3/simulation/turtlebot3_empty_world.png)
 ```bash
 $ export TURTLEBOT3_MODEL=burger
 $ ros2 launch turtlebot3_gazebo empty_world.launch.py
 ```
 
-2. TurtleBot3 World
+2. TurtleBot3 World  
 ![](/assets/images/platform/turtlebot3/ros2/gazebo_world.png)
 ```bash
 $ export TURTLEBOT3_MODEL=waffle
 $ ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
 ```
 
-3. TurtleBot3 House
+3. TurtleBot3 House  
 ![](/assets/images/platform/turtlebot3/simulation/turtlebot3_house.png)
 ```bash
 $ export TURTLEBOT3_MODEL=waffle_pi
@@ -84,7 +84,7 @@ $ ros2 run turtlebot3_teleop teleop_keyboard
 <summary>
 ![](/assets/images/icon_unfold.png) Read more about **How to run Autonomous Collision Avoidance**
 </summary>
-A simple collision avoidance node is prepared which keeps certain distance from obstacles and make turns to avoid collision.
+A simple collision avoidance node is prepared which keeps certain distance from obstacles and make turns to avoid collision.  
 In order to autonomously drive a TurtleBot3 in the **TurtleBot3 world**, please follow the instruction below.
 
 1. Terminate the turtlebot3_teleop_key node by entering `Ctrl` + `C` to the terminal that runs the teleop node.

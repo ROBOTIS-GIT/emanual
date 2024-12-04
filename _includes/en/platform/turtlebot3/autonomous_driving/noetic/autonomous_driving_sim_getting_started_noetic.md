@@ -2,12 +2,12 @@
 **NOTE**
 - Autorace package is mainly developed on `Ubuntu 20.04` with `ROS1 Noetic Ninjemys`.
 - Autorace package is mainly tested under the Gazebo simulation.
-- To simulate given examples properly, complete [Simulation](/docs/en/platform/turtlebot3/simulation/).
+- To simulate given examples properly, complete [Simulation](/docs/en/platform/turtlebot3/simulation/). 
 {% endcapture %}
 
 <div class="notice">{{ notice_01 | markdownify }}</div>
 
-**Tip**: If you have actual TurtleBot3, you can perform up to **[Lane Detection](#lane-detection)** from our Autonomus Driving package. For more details, clcik expansion note (![](/assets/images/icon_unfold.png)**Click to expand:** ) at the end of content in each sub section.
+**Tip**: If you have actual TurtleBot3, you can perform up to **[Lane Detection](#lane-detection)** from our Autonomus Driving package. For more details, clcik expansion note (![](/assets/images/icon_unfold.png)**Click to expand:** ) at the end of content in each sub section. 
 {: .notice--success}
 
 The contents in e-Manual are subject to be updated without a prior notice. Therefore, some video may differ from the contents in e-Manual.
@@ -53,7 +53,7 @@ The contents in e-Manual are subject to be updated without a prior notice. There
 1. Install the AutoRace 2020 meta package on `Remote PC`.
 ```bash
 $ cd ~/catkin_ws/src/
-$ git clone -b noetic https://github.com/ROBOTIS-GIT/turtlebot3_autorace_2020.git
+$ git clone -b noetic-devel https://github.com/ROBOTIS-GIT/turtlebot3_autorace_2020.git
 $ cd ~/catkin_ws && catkin_make
 ```
 
@@ -74,12 +74,12 @@ The following instructions describes how to install packages and to calibrate ca
 1. Install AutoRace package on both `Remote PC` and `SBC`.
 ```bash
 $ cd ~/catkin_ws/src/
-$ git clone -b noetic https://github.com/ROBOTIS-GIT/turtlebot3_autorace_2020.git
+$ git clone -b feature-raspicam https://github.com/ROBOTIS-GIT/turtlebot3_autorace_2020.git
 $ cd ~/catkin_ws && catkin_make
 ```
 
 2. Install additional dependent packages on `SBC`.
-    - Create a swap file to prevent lack of memory in building OpenCV.
+    - Create a swap file to prevent lack of memory in building OpenCV. 
 
         ```bash
         $ sudo fallocate -l 4G /swapfile
@@ -88,7 +88,7 @@ $ cd ~/catkin_ws && catkin_make
         $ sudo swapon /swapfile
         ```
 
-    - Install required dependencies.
+    - Install required dependencies. 
         ```bash
         $ sudo apt-get update
         $ sudo apt-get install build-essential cmake gcc g++ git unzip pkg-config
@@ -139,7 +139,7 @@ $ cd ~/catkin_ws && catkin_make
         ```
 
     * It will take an hour or two to build.
-
+    
         ```bash
         $ cd ~/opencv/build
         $ make -j4
@@ -157,14 +157,14 @@ $ cd ~/catkin_ws && catkin_make
         ```
 
     * Install additional dependent packages
-
+    
         ```bash
         $ sudo apt install ros-noetic-cv-camera
         ```
 
 3. Install additional dependent packages on `Remote PC`.
 ```bash
-$ sudo apt install ros-noetic-image-transport ros-noetic-image-transport-plugins ros-noetic-cv-bridge ros-noetic-vision-opencv python3-opencv libopencv-dev ros-noetic-image-proc ros-noetic-cv-camera ros-noetic-camera-calibration
+$ sudo apt install ros-noetic-image-transport ros-noetic-image-transport-plugins ros-noetic-cv-bridge ros-noetic-vision-opencv python3-opencv libopencv-dev ros-noetic-image-proc ros-noetic-cv-camera ros-noetic-camera-calibration 
 ```
 
 </details>
