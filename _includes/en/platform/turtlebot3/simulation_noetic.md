@@ -36,7 +36,7 @@ Please follow the [PC Setup](/docs/en/platform/turtlebot3/quick-start/) instruct
 **[Remote PC]**  
 ```bash
 $ cd ~/catkin_ws/src/
-$ git clone -b noetic-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
+$ git clone -b noetic https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
 $ cd ~/catkin_ws && catkin_make
 ```
 
