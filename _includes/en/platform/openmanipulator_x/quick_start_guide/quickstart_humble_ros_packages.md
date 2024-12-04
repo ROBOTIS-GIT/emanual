@@ -15,13 +15,22 @@ $ sudo apt install \
   ros-humble-joint-trajectory-controller \
   ros-humble-gripper-controllers \
   ros-humble-hardware-interface \
-  ros-humble-xacro \
-  ros-humble-warehouse-ros-mongo
+  ros-humble-xacro
 ```
 
 ```bash
+$ mkdir -p colcon_ws/src
 $ cd ~/colcon_ws/src/
 $ git clone -b humble-devel https://github.com/ROBOTIS-GIT/open_manipulator.git
 # $ git clone -b humble-devel https://github.com/ROBOTIS-GIT/dynamixel_hardware_interface.git
 $ cd ~/colcon_ws && colcon build --symlink-install
+```
+
+Set the ROS environment for PC
+
+```bash
+$ echo 'source /usr/share/gazebo/setup.sh' >> ~/.bashrc
+$ echo 'source /usr/share/gazebo-11/setup.sh' >> ~/.bashrc
+$ echo 'source ~/colcon_ws/install/local_setup.bash' >> ~/.bashrc
+$ source ~/.bashrc
 ```
