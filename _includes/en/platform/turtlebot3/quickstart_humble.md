@@ -9,7 +9,7 @@
 {: .notice--danger}
 
 {% capture warning_01 %}
-**Compatibility WARNING**:  
+**Compatibility WARNING**:
 - `Jetson Nano` does not support Ubuntu 20.04 and later. Please refer to [NVIDIA developer forum]{: .blank} for more details.
 
 [NVIDIA developer forum]: https://forums.developer.nvidia.com/t/jetpack-5-0-2/223564/2
@@ -30,33 +30,33 @@
 
 ### [Install ROS 2 on Remote PC](#install-ros-2-on-remote-pc)
 
-Please follow [the official ROS2 documentation](https://docs.ros.org/en/humble/Installation.html) to install the ROS2 Humble.  
-  
-For most Linux users, [Debian package installation](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html) method is strongly recommended.  
-  
+Please follow [the official ROS2 documentation](https://docs.ros.org/en/humble/Installation.html) to install the ROS2 Humble.
+
+For most Linux users, [Debian package installation](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html) method is strongly recommended.
+
 
 <details>
 <summary>
 
 ![](/assets/images/icon_unfold.png) **Click here to expand more details about How to install ROS2.**
 </summary>
-  
-1. Visit [Debian package installation](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html) page.  
-  
-2. Copy the CLI in the green box and paste into your terminal in order with `ctrl` + `shift` + `v`  
-  ![](/assets/images/platform/turtlebot3/ros2_install/ros2_install1-.png)    
-  
-3. Generally, ros-humble-desktop is recomended in `Remote PC`  
-  ![](/assets/images/platform/turtlebot3/ros2_install/ros2_install2-.png)  
-  
-4. Add setup bash in bashrc  
-**[Remote PC]**  
+
+1. Visit [Debian package installation](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html) page.
+
+2. Copy the CLI in the green box and paste into your terminal in order with `ctrl` + `shift` + `v`
+  ![](/assets/images/platform/turtlebot3/ros2_install/ros2_install1-.png)
+
+3. Generally, ros-humble-desktop is recomended in `Remote PC`
+  ![](/assets/images/platform/turtlebot3/ros2_install/ros2_install2-.png)
+
+4. Add setup bash in bashrc
+**[Remote PC]**
   ```bash
-echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc  
-source ~/.bashrc  
+echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+source ~/.bashrc
   ```
-  
-</details>  
+
+</details>
 
 
 
@@ -64,19 +64,19 @@ source ~/.bashrc
 ### [Install Dependent ROS 2 Packages](#install-dependent-ros-2-packages)
 
 1. Open the terminal with `Ctrl`+`Alt`+`T` from **Remote PC**.
-2. Install Gazebo  
-**[Remote PC]**  
+2. Install Gazebo
+**[Remote PC]**
   ```bash
 $ sudo apt install ros-humble-gazebo-*
   ```
-3. Install Cartographer  
-**[Remote PC]**  
+3. Install Cartographer
+**[Remote PC]**
   ```bash
 $ sudo apt install ros-humble-cartographer
 $ sudo apt install ros-humble-cartographer-ros
   ```
-4. Install Navigation2  
-**[Remote PC]**  
+4. Install Navigation2
+**[Remote PC]**
   ```bash
 $ sudo apt install ros-humble-navigation2
 $ sudo apt install ros-humble-nav2-bringup
@@ -84,15 +84,15 @@ $ sudo apt install ros-humble-nav2-bringup
 
 ### [Install TurtleBot3 Packages](#install-turtlebot3-packages)
 
-Install TurtleBot3 Packages.  
+Install TurtleBot3 Packages.
 
-**[Remote PC]**  
-```bash  
+**[Remote PC]**
+```bash
 $ mkdir -p ~/turtlebot3_ws/src
 $ cd ~/turtlebot3_ws/src/
-$ git clone -b humble-devel https://github.com/ROBOTIS-GIT/DynamixelSDK.git
-$ git clone -b humble-devel https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
-$ git clone -b humble-devel https://github.com/ROBOTIS-GIT/turtlebot3.git
+$ git clone -b humble https://github.com/ROBOTIS-GIT/DynamixelSDK.git
+$ git clone -b humble https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
+$ git clone -b humble https://github.com/ROBOTIS-GIT/turtlebot3.git
 $ sudo apt install python3-colcon-common-extensions
 $ cd ~/turtlebot3_ws
 $ colcon build --symlink-install
@@ -102,11 +102,10 @@ $ source ~/.bashrc
 
 ### [Environment Configuration](#environment-configuration)
 
-1. Set the ROS environment for PC.  
-**[Remote PC]**  
+1. Set the ROS environment for PC.
+**[Remote PC]**
   ```bash
 $ echo 'export ROS_DOMAIN_ID=30 #TURTLEBOT3' >> ~/.bashrc
 $ echo 'source /usr/share/gazebo/setup.sh' >> ~/.bashrc
 $ source ~/.bashrc
   ```
-
