@@ -7,13 +7,8 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/turtlebot3/simulation/
 tabs: "ROS"
-tab_title1: Kinetic
-tab_title2: Melodic
 tab_title3: Noetic
-tab_title4: Dashing
-tab_title5: Foxy
 tab_title6: Humble
-tab_title7: Windows
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"

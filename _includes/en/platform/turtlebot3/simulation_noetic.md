@@ -32,11 +32,11 @@ This Gazebo Simulation uses **ROS Gazebo package**, therefore, proper Gazebo ver
 
 ### [Install Simulation Package](#install-simulation-package)
 The **TurtleBot3 Simulation Package** requires `turtlebot3` and `turtlebot3_msgs` packages as prerequisite. Without these prerequisite packages, the Simulation cannot be launched.  
-Please follow the [PC Setup](/docs/en/platform/turtlebot3/quick-start/) instructions if you did not install required packages and dependent packages.
-
+Please follow the [PC Setup](/docs/en/platform/turtlebot3/quick-start/) instructions if you did not install required packages and dependent packages.  
+**[Remote PC]**  
 ```bash
 $ cd ~/catkin_ws/src/
-$ git clone -b noetic-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
+$ git clone -b noetic https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
 $ cd ~/catkin_ws && catkin_make
 ```
 
@@ -48,21 +48,24 @@ Three simulation environments are prepared for TurtleBot3. Please select one of 
 {: .notice--warning}
 
 1. Empty World  
-![](/assets/images/platform/turtlebot3/simulation/turtlebot3_empty_world.png)
+![](/assets/images/platform/turtlebot3/simulation/turtlebot3_empty_world.png)  
+**[Remote PC]**  
 ```bash
 $ export TURTLEBOT3_MODEL=burger
 $ roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch
 ```
 
 2. TurtleBot3 World  
-![](/assets/images/platform/turtlebot3/simulation/turtlebot3_world_bugger.png)
+![](/assets/images/platform/turtlebot3/simulation/turtlebot3_world_bugger.png)  
+**[Remote PC]**  
 ```bash
 $ export TURTLEBOT3_MODEL=waffle
 $ roslaunch turtlebot3_gazebo turtlebot3_world.launch
 ```
 
 3. TurtleBot3 House  
-![](/assets/images/platform/turtlebot3/simulation/turtlebot3_house.png)
+![](/assets/images/platform/turtlebot3/simulation/turtlebot3_house.png)  
+**[Remote PC]**  
 ```bash
 $ export TURTLEBOT3_MODEL=waffle_pi
 $ roslaunch turtlebot3_gazebo turtlebot3_house.launch
@@ -74,8 +77,8 @@ $ roslaunch turtlebot3_gazebo turtlebot3_house.launch
 
 ### [Operate TurtleBot3](#operate-turtlebot3)
 
-In order to teleoperate the TurtleBot3 with the keyboard, launch the teleoperation node with below command in a new terminal window.
-
+In order to teleoperate the TurtleBot3 with the keyboard, launch the teleoperation node with below command in a new terminal window.  
+**[Remote PC]**  
 ```bash
 $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ```
@@ -89,7 +92,8 @@ In order to autonomously drive a TurtleBot3 in the **TurtleBot3 world**, please 
 
 1. Terminate the turtlebot3_teleop_key node by entering `Ctrl` + `C` to the terminal that runs the teleop node.
 
-2. Enter the below command to the terminal.
+2. Enter the below command to the terminal.  
+**[Remote PC]**  
 ```bash
 $ roslaunch turtlebot3_gazebo turtlebot3_simulation.launch
 ```
@@ -99,8 +103,8 @@ $ roslaunch turtlebot3_gazebo turtlebot3_simulation.launch
 <summary>
 ![](/assets/images/icon_unfold.png) Read more about **How to visualize Simulation data(RViz)**
 </summary>
-RViz visualizes published topics while simulation is running. You can launch RViz in a new terminal window by entering below command.
-
+RViz visualizes published topics while simulation is running. You can launch RViz in a new terminal window by entering below command.  
+**[Remote PC]**  
 ```bash
 $ roslaunch turtlebot3_gazebo turtlebot3_gazebo_rviz.launch
 ```

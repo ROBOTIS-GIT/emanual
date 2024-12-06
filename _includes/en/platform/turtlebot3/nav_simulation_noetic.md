@@ -9,7 +9,7 @@ Terminate all applications with `Ctrl` + `C` that were launced in the previous s
 In the previous [SLAM][slam] section, TurtleBot3 World is used to creat a map. The same Gazebo environment will be used for Navigation.
 
 Please use the proper keyword among `burger`, `waffle`, `waffle_pi` for the `TURTLEBOT3_MODEL` parameter.  
-
+**[Remote PC]**  
 ```bash
 $ export TURTLEBOT3_MODEL=burger
 $ roslaunch turtlebot3_gazebo turtlebot3_world.launch
@@ -19,6 +19,8 @@ $ roslaunch turtlebot3_gazebo turtlebot3_world.launch
 <summary>
 ![](/assets/images/icon_unfold.png) Read more about **How to load TurtleBot3 House**
 </summary>
+
+**[Remote PC]**  
 ```bash
 $ export TURTLEBOT3_MODEL=burger
 $ roslaunch turtlebot3_gazebo turtlebot3_house.launch
@@ -26,8 +28,8 @@ $ roslaunch turtlebot3_gazebo turtlebot3_house.launch
 </details>
 
 ### Run Navigation Node 
-Open a new terminal from Remote PC with `Ctrl` + `Alt` + `T` and run the Navigation node. 
-
+Open a new terminal from Remote PC with `Ctrl` + `Alt` + `T` and run the Navigation node.   
+**[Remote PC]**  
 ```bash
 $ export TURTLEBOT3_MODEL=burger
 $ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/map.yaml
@@ -41,7 +43,8 @@ $ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/m
   ![](/assets/images/platform/turtlebot3/navigation/2d_pose_button.png)
 2. Click on the map where the actual robot is located and drag the large green arrow toward the direction where the robot is facing.
 3. Repeat step 1 and 2 until the LDS sensor data is overlayed on the saved map. 
-4. Launch keyboard teleoperation node to precisely locate the robot on the map.
+4. Launch keyboard teleoperation node to precisely locate the robot on the map.  
+**[Remote PC]**  
   ```bash
 $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
   ```

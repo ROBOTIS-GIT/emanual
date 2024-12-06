@@ -41,7 +41,7 @@ The following instructions describes how to install packages and to calibrate ca
 1. Install AutoRace package on both `Remote PC` and `SBC`.
 ```bash
 $ cd ~/catkin_ws/src/
-$ git clone -b feature-raspicam https://github.com/ROBOTIS-GIT/turtlebot3_autorace_2020.git
+$ git clone -b noetic https://github.com/ROBOTIS-GIT/turtlebot3_autorace_2020.git
 $ cd ~/catkin_ws && catkin_make
 ```
 
