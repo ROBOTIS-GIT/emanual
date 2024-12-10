@@ -1,6 +1,4 @@
-Baud Rate determines serial communication speed between a controller and DYNAMIXEL.
-Available value range is 0 ~ 254(0xFE), and below is the equation for BPS calculation.  
-**Baudrate(BPS) = 2,000,000 / (Value + 1)**
+Baud Rate determines serial communication speed between a DYNAMIXEL and it's controller.
 
 | Value     | Baud Rate(bps)     | Margin of Error     |
 |:------------:|:------------:|:------------:|
@@ -15,9 +13,9 @@ Available value range is 0 ~ 254(0xFE), and below is the equation for BPS calcul
 |103|19200| -0.160 [%]|
 |207|9600| -0.160 [%]|
 
-**NOTE** : Less than 3% of the baud rate error margin will not affect to UART communication.
+**NOTE** : A margin of error of less than 3% will not affect UART communication.
 {: .notice}
 
-**NOTE** : For the stable communication with higher Baudrate, configure USB Latency value to the lower.  
-[USB Latency Setting](/docs/en/software/dynamixel/dynamixel_wizard2/#usb-latency-setting) 
+**NOTE** : For stable communication with higher Baudrates, configure [USB Latency Settings](/docs/en/software/dynamixel/dynamixel_wizard2/#usb-latency-setting) to the lowest value supported by your hardware.  
+ 
 {: .notice}
