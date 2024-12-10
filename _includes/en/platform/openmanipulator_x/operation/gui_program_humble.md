@@ -10,7 +10,7 @@
 $ ros2 launch open_manipulator_x_moveit_config moveit_core.launch.py
 ```
 
-2. Launch the GUI program. 
+2. Launch the GUI program.  
 ```bash
 $ ros2 launch open_manipulator_x_gui open_manipulator_x_gui.launch.py
 ```
