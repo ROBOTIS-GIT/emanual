@@ -21,12 +21,12 @@
 ![](/assets/images/dxl/y/bearing_formula_1.jpg)  
 
 
-- L<sub>10</sub> - Bearing life [hour]
+- L<sub>10</sub> - Bearing service life [hour]
 - N<sub>a</sub> - Average output speed [rpm]
 - C - Basic dynamic load rating [N]
 - P<sub>c</sub> - Dynamic equivalent radial load [N]
-- T<sub>f</sub> - Temperature factor (Tf=1.0 less 100℃)
-- L<sub>f</sub> - Load factor (Table.B2)
+- T<sub>f</sub> - Temperature factor (Tf=1.0 in environments of less than 100℃)
+- L<sub>f</sub> - Load factor (Available in [Table.B2](#tables))
 
 
 ## [Dynamic Equivalent Radial Load](#dynamic-equivalent-radial-load)
@@ -37,8 +37,8 @@
 - F<sub>r</sub> - Radial load [N]
 - F<sub>a</sub> - Axial load [N]
 - M - Moment [N.m]
-- X - Dynamic radial factor (Table.B3)
-- Y - Dynamic axial factor (Table.B3)
+- X - Dynamic radial factor (Available in [Table.B3](#tables))
+- Y - Dynamic axial factor (Available in [Table.B3](#tables))
 - D<sub>p</sub> - Roller pitch circle diameter [m]
 
 
@@ -49,8 +49,8 @@
 - L<sub>10</sub> - Bearing life [hour] @ 7,000 hour
 - N<sub>n</sub> - Nominal output speed [rpm] @ input speed 2,000rpm ÷ gear ratio
 - C- Basic dynamic load rating [N]
-- T<sub>f</sub> - Temperature factor (Tf=1.0 less 100℃) @ Tf = 1.0
-- L<sub>f</sub> - Load factor (Table.B2) @ Lf=1.0
+- T<sub>f</sub> - Temperature factor (Tf=1.0 in environments of less than 100℃)
+- L<sub>f</sub> - Load factor (Available in [Table.B2](#tables))
 - P<sub>c_max</sub> - Allowable dynamic equivalent radial load [N]
 
 
@@ -73,11 +73,11 @@
 
 Table.B2 Load factor
 
-| Conditions                   | Lf        |
-|:-----------------------------|:---------:|
-| Smooth motion without impact | 1.0 ~ 1.2 |
-| Normal motion                | 1.2 ~ 1.5 |
-| Motion with severe impact    | 1.5 ~ 3.0 |
+| Conditions                           | Lf        |
+|:-------------------------------------|:---------:|
+| Smooth motion without impact         | 1.0 ~ 1.2 |
+| Normal motion with occasional impact | 1.2 ~ 1.5 |
+| Motion with severe impact            | 1.5 ~ 3.0 |
 
 Table.B3 Dynamic radial/axial factor
 

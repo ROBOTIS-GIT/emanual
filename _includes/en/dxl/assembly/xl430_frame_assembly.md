@@ -38,10 +38,10 @@ DYNAMIXEL hinge frames are assembled by attaching them to the idler and output h
 **NOTE**: Information regarding size and depth of DYNAMIXEL servo mounting points can be found in the [Drawings](#drawings) section of the product's eManual page.
 {: .notice}
 
-**NOTE**: An idler horn is required for the installation of DYNAMIXEL hinge frames. See the [Idler Horn Assembly] instructions for more information.
+**NOTE**: An idler horn is required for the installation of DYNAMIXEL hinge frames. See the Idler Horn Assembly instructions for more information.
 {: .notice}
 
-**WARNING**: During hinge assembly, ensure that all screws are the proper length before installation. See [Frame and Horn Assembly Precautions] for more information.
+**WARNING**: During hinge assembly, ensure that all screws are the proper length before installation. See Frame and Horn Assembly Precautions for more information.
 {: .notice--warning}
 
 ### [Side Frame Assembly](#side-frame-assembly)
