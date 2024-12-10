@@ -23,7 +23,7 @@ If a specific address is allocated an Indirect Address, the corresponding Indire
 4. Indirect Address 5(176) : change the value to '119' which is the fourth address of Goal Position.
 5. Write the 4 byte value '1,024' to Indirect Data 2 : [Goal Position(116)] also becomes '1024' and the DYNAMIXEL moves.
 
-**NOTE** : In order to allocate Data in the Control Table longer than 2[byte] to Indirect Address, all address must be allocated to Indirect Address like Example 2 above.
+**NOTE** : In order to allocate Data in the Control Table longer than 2[byte] to Indirect Addresses, all addresses must be allocated to Indirect Address like Example 2 above.
 {: .notice}
 
 {% else %}
@@ -40,12 +40,26 @@ If a specific address is allocated an Indirect Address, the corresponding Indire
 
 #### [Indirect Address and Indirect Data Examples](#indirect-address-and-indirect-data-examples)
 
+<<<<<<< HEAD
 `Example 1` Allocating [LED(65)] to Indirect Data 1(224).
 1. Change the value of Indirect Address 1(168) to '65' which is the address used for LED control.
 2. Set Indirect Data 1(224) to ‘1’, LED(65) also changes to '1' and the LED is turned on.
 3. Set Indirect Data 1(224) to ‘0’, LED(65) also changes to ‘0’ and the LED is turned off.
 
 `Example 2` Allocating [Goal Position(116)] to Indirect Data 2(225), 4 sequential bytes have to be allocated.
+=======
+`Example 1` Allocating Size 1 byte [LED(65)] to Indirect Data 1(224).
+1. Indirect Address 1(168) : change the value to '65' which is the address of LED.
+2. Set Indirect Data 1(224) to ‘1’ : LED(65) also becomes '1' and LED is turned on.
+3. Set Indirect Data 1(224) to ‘0’ : LED(65) also becomes ‘0’ and LED is turned off.
+
+{% if page.product_group=='dxl_xw540' or page.product_group=='dxl_xw430'%}
+**NOTE**: XW series does not use [LED(65)].
+{: .notice}
+{% endif %}
+
+`Example 2` Allocating Size 4 byte [Goal Position(116)] to Indirect Data 2(225), 4 sequential bytes have to be allocated.
+>>>>>>> aae312bc64c47aeeed478e1d589438e2bc5883ee
 1. Indirect Address 2(170) : change the value to '116' which is the first address of Goal Position.
 2. Indirect Address 3(172) : change the value to '117' which is the second address of Goal Position.
 3. Indirect Address 4(174) : change the value to '118' which is the third address of Goal Position.
