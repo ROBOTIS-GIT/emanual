@@ -22,8 +22,8 @@ page_number: 37
   <p class="dummy_content">Contact Point regarding use of TurtleBot3</p>
 <![end dummy Header 1]-->
 
-## [Other ROS Versions](#other-ros-versions)
+## [Other ROS Distros](#other-ros-distros)
 Download archived TurtleBot3 manual as of Nov 2024.  
-In order to switch the ROS version, select the ROS version on the top of the page.
+In order to switch the ROS Distros, select the ROS Distro on the top of the page.
 
 * TurtleBot3 eManual Archive [Download](https://drive.google.com/file/d/1wsNby1dpdzj2eD2oZtRQyHYqoY4o25io/view?usp=sharing)
