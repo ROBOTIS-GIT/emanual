@@ -7,7 +7,7 @@ The following instruction describes how to install packages and to use MoveIt! w
 ```bash
 $ cd ~/catkin_ws/src/
 $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_controls.git
-$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_dependencies.git
+$ git clone -b noetic https://github.com/ROBOTIS-GIT/open_manipulator_dependencies.git
 $ cd ~/catkin_ws && catkin_make
 ```
 
