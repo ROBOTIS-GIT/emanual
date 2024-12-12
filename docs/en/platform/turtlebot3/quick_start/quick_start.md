@@ -21,9 +21,11 @@ page_number: 4
 
 {::options parse_block_html="true" /}
 
-O : Available  
-&#8710; : Need to check  
-X : Unavailable
+**Only ROS1 Noetic and ROS2 Humble are officially supported by ROBOTIS at this time. However, development of TurtleBot features for other ROS distributions is ongoing. The following chart provides an overview of the features supported by each ROS Distribution**
+
+O : Available  <br>
+&#8710; : Unverified<br>
+X : Unavailable<br>
 
 |        Features        | Kinetic | Melodic | Noetic | Dashing | Foxy | Galactic | Humble |
 |:----------------------:|:-------:|:-------:|:------:|:-------:|:----:|:--------:|:------:|
@@ -46,9 +48,12 @@ X : Unavailable
 |       Follower       |    O    |    X    |   X    |    X    |  X   |    X     |   X    |
 |       Panorama       |    O    |    X    |   X    |    X    |  X   |    X     |   X    |
 |     Auto Parking     |    O    |    X    |   X    |    O    |  X   |    X     |   X    |
-| Auto Parking(Vision) |    O    |    X    |   X    |    X    |  X   |    X     |   X    |
+| Auto Parking (Vision)|    O    |    X    |   X    |    X    |  X   |    X     |   X    |
 |   Multi TurtleBot3   |    O    |    X    |   X    |    X    |  X   |    X     |   X    |
 
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
+{% include en/platform/turtlebot3/quickstart_noetic.md %}
+</section>
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/turtlebot3/quickstart_kinetic.md %}
@@ -56,10 +61,6 @@ X : Unavailable
 
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
 {% include en/platform/turtlebot3/quickstart_melodic.md %}
-</section>
-
-<section data-id="{{ page.tab_title3 }}" class="tab_contents">
-{% include en/platform/turtlebot3/quickstart_noetic.md %}
 </section>
 
 <section data-id="{{ page.tab_title4 }}" class="tab_contents">
