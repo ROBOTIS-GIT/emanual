@@ -23,6 +23,7 @@ $ mkdir -p colcon_ws/src
 $ cd ~/colcon_ws/src/
 $ git clone -b humble https://github.com/ROBOTIS-GIT/open_manipulator.git
 $ git clone -b humble https://github.com/ROBOTIS-GIT/dynamixel_hardware_interface.git
+$ git clone -b humble https://github.com/ROBOTIS-GIT/dynamixel_interfaces.git
 $ cd ~/colcon_ws && colcon build --symlink-install
 ```
 

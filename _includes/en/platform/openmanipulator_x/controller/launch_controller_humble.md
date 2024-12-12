@@ -4,31 +4,27 @@ Open a new terminal and launch the open_manipulator_x packages.
 Close all terminal and enter the command below in each new terminal.
 ```bash
 $ ros2 launch open_manipulator_x_bringup hardware.launch.py
-$ ros2 launch open_manipulator_x_moveit_config servo.launch.py
 ```
 
 - When operating with `OpenCR`  
 Close all terminal and enter the command below in the new terminal.
 ```bash
 $ ros2 launch open_manipulator_x_bringup hardware.launch.py port_name:=/dev/ttyACM0
-$ ros2 launch open_manipulator_x_moveit_config servo.launch.py
 ```
 
 {% capture warning_01 %}
 **WARNING** :  
 Please check each joint position before running OpenMANIPULATOR-X. The manipulator will not operate if any joint is out of operable range.  
 The following image describes the recommended pose of OpenMANIPULATOR-X at start up. Please adjust the pose before the torque is turned on by the controller.  
-<img src="/assets/images/platform/openmanipulator_x/open_manipulator_start_pose.png" width="250">
+<img src="/assets/images/platform/openmanipulator_x/real_omx_init_pose.png" width="250">
 {% endcapture %}
 <div class="notice--warning">{{ warning_01 | markdownify }}</div>
 
 Follwing message will be shown in the Terminal after the process done successfully with `U2D2`.  
 
-```bash
+```
 $ ros2 launch open_manipulator_x_bringup hardware.launch.py
-```
 
-```
 [INFO] [launch]: All log files can be found below /home/omx/.ros/log/2024-12-10-16-13-03-846807-omx-3063
 [INFO] [launch]: Default logging verbosity is set to INFO
 [INFO] [ros2_control_node-1]: process started with pid [3066]
@@ -165,25 +161,6 @@ $ ros2 launch open_manipulator_x_bringup hardware.launch.py
 [INFO] [spawner-5]: process has finished cleanly [pid 3116]
 ```
 
-```bash
-$ ros2 launch open_manipulator_x_moveit_config servo.launch.py
-```
-```
-[INFO] [launch]: All log files can be found below /home/omx/.ros/log/2024-11-28-15-51-38-138154-omx-22594
-[INFO] [launch]: Default logging verbosity is set to INFO
-[INFO] [servo_node_main-1]: process started with pid [22595]
-[servo_node_main-1] [WARN] [1732776698.266193749] [moveit_servo.servo_node]: Intra-process communication is disabled, consider enabling it by adding: 
-[servo_node_main-1] extra_arguments=[{'use_intra_process_comms' : True}]
-[servo_node_main-1] to the Servo composable node in the launch file
-[servo_node_main-1] [INFO] [1732776698.270341102] [moveit_rdf_loader.rdf_loader]: Loaded robot model in 0.00252236 seconds
-[servo_node_main-1] [INFO] [1732776698.270367397] [moveit_robot_model.robot_model]: Loading robot model 'open_manipulator_x'...
-[servo_node_main-1] [WARN] [1732776698.329940951] [moveit_robot_model.robot_model]: Link end_effector_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
-[servo_node_main-1] [INFO] [1732776698.542474436] [moveit_ros.current_state_monitor]: Listening to joint states on topic '/joint_states'
-[servo_node_main-1] [INFO] [1732776698.544878602] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to '/attached_collision_object' for attached collision objects
-[servo_node_main-1] [INFO] [1732776698.544895196] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Starting planning scene monitor
-[servo_node_main-1] [INFO] [1732776698.545435210] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to '/planning_scene'
-[servo_node_main-1] [INFO] [1732776698.545607100] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Publishing maintained planning scene on '/servo_node/publish_planning_scene'
-```
 
 {% capture notice_01 %}
 **TIP**:

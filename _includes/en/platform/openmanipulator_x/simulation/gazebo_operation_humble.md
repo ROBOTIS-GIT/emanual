@@ -1,4 +1,5 @@
-In order to control the simulated OpenMANIPULATOR-X, launch the [OpenManipulator control GUI](/docs/en/platform/openmanipulator_x/ros_operation/#gui-program) or [Keyboard teleoperation](/docs/en/platform/openmanipulator_x/ros_operation/#keyboard)
+In order to control the simulated OpenMANIPULATOR-X, launch the [OpenManipulator control GUI](/docs/en/platform/openmanipulator_x/ros_operation/#gui-program) or [Keyboard teleoperation](/docs/en/platform/openmanipulator_x/ros_operation/#keyboard)  
+Click to view detailed instructions.
 
 - GUI Program
   ```bash
@@ -7,6 +8,14 @@ In order to control the simulated OpenMANIPULATOR-X, launch the [OpenManipulator
   ![](/assets/images/platform/openmanipulator_x/OpenManipulator_x_GUI.png)
 
 - Keyboard Teleoperation
+
+  Open a terminal and execute the servo launch file below; MoveIt Servo provides real-time, smooth, and responsive control for robotic manipulators in joint or Cartesian space.
+  ```bash
+  $ ros2 launch open_manipulator_x_moveit_config servo.launch.py
+  ```  
+  
+  Open another terminal
+
   ```bash
   $ ros2 run open_manipulator_x_teleop open_manipulator_x_teleop
   ```  

@@ -29,6 +29,7 @@ $ ros2 launch open_manipulator_x_gui open_manipulator_x_gui.launch.py
 
 7. Create a task constructor with OpenMANIPULATOR-X.  
 7.1. Click the `Read task` button to prepare for saving tasks.  
+ (You can create or modify the pre-saved joint values in the **robot_joint_log.csv** file. The file's load path can be checked in the terminal when the GUI node is launched.)  
 7.2. Adjust the manipulator's posture and save it by clicking `Save pose`.  
 7.3. Save multiple postures to complete the preparation.   
 ![](/assets/images/platform/openmanipulator_x/OpenManipulator_x_GUI6.png)  

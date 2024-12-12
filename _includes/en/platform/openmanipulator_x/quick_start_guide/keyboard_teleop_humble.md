@@ -1,11 +1,17 @@
 
+Open a terminal and execute the servo launch file below; MoveIt Servo provides real-time, smooth, and responsive control for robotic manipulators in joint or Cartesian space.
+```bash
+$ ros2 launch open_manipulator_x_moveit_config servo.launch.py
+```  
+
+
 Open another terminal and enter below command.  
 ```bash
 $ ros2 run open_manipulator_x_teleop open_manipulator_x_teleop
 ```
 
+You will see the interface below in the terminal window after a successful launch, and you can now easily control the OM-X using the keyboard.
 
-You will see below interface on the terminal window after a successful launch.
 ```
 [INFO] [1732776371.215661501] [servo_keyboard_input]: SUCCESS TO CONNECT SERVO START SERVER
 [INFO] [1732776371.216112752] [servo_keyboard_input]: SUCCESS TO CONNECT SERVO STOP SERVER
