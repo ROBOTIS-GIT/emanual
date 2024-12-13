@@ -37,7 +37,7 @@
 1. **[Remote PC]** Install Home Service Challenge packages.
 ```bash
 $ cd ~/catkin_ws/src/
-$ git clone -b noetic-devel https://github.com/ROBOTIS-GIT/turtlebot3_home_service_challenge.git
+$ git clone -b noetic https://github.com/ROBOTIS-GIT/turtlebot3_home_service_challenge.git
 $ git clone -b noetic-devel https://github.com/machinekoder/ar_track_alvar
 $ cd ~/catkin_ws && catkin_make
 ```

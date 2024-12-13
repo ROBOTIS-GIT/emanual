@@ -36,7 +36,7 @@ Please follow the [PC Setup](/docs/en/platform/turtlebot3/quick-start/) instruct
 
 ```bash
 $ cd ~/turtlebot3_ws/src/
-$ git clone -b humble-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
+$ git clone -b humble https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
 $ cd ~/turtlebot3_ws && colcon build --symlink-install
 ```
 

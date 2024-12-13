@@ -56,7 +56,7 @@ ym070-210-b001-rh:
   opmode_en:          *opmode_en
   opmode:             *opmode
   weight:             "530 [g]"
-  dimensions:         "Ø70 x 710 [mm]"
+  dimensions:         "Ø70 x 71.0 [mm]"
   holesize:           "Ø14[mm]"
   resolution:         "524,288 [pulse/rev]"
   encoderspec:        *encoderspec
@@ -148,7 +148,7 @@ ym070-210-a051-rh:
   baudrate:           *baudrate
   opmode_en:          *opmode_en
   opmode:             *opmode
-  weight:             "790 [g]"
+  weight:             "980 [g]"
   dimensions:         "Ø70 x 91.2 [mm]"
   holesize:           "Ø14[mm]"
   resolution:         "26,738,688 [pulse/rev]"
@@ -179,7 +179,7 @@ ym070-210-a099-rh:
   baudrate:           *baudrate
   opmode_en:          *opmode_en
   opmode:             *opmode
-  weight:             "790 [g]"
+  weight:             "980 [g]"
   dimensions:         "Ø70 x 91.2 [mm]"
   holesize:           "Ø14[mm]"
   resolution:         "51,904,512 [pulse/rev]"

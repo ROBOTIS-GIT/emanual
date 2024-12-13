@@ -1,7 +1,7 @@
 {% assign velocity_limit= "[Velocity Limit(72)]" %}
 
 In velocity control mode, the Goal Velocity value is used to specify the target velocity value.  
-In position control mode and extended position control mode, it is used to set a limit on the maximum movement velocity. Goal Velocity cannot exceed the configured {{ velocity_limit }}.
+In position control mode, it is used to set a limit on the maximum movement velocity. Goal Velocity cannot exceed the configured {{ velocity_limit }}.
 
 | Unit       | Range                                         |  Control Mode                                                 |               Description                  |
 |:----------:|:---------------------------------------------:| :-------------------------------------------------------------|:-------------------------------------------|

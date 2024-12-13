@@ -16,12 +16,14 @@ The TurtleBot3 can be teleoperated by various remote controllers. Make sure that
 {: .notice--success}
 
 1. Launch `turtlebot3_teleop_key` node from Remote PC for the teleoperation using a keyboard. Replace the `${TB3_MODEL}` parameter with your model name such as `burger`, `waffle`, `waffle_pi`.  
+**[Remote PC]**  
 ```bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ```
 
 2. If the node is successfully launched, the following instruction will be appeared to the terminal window.  
+**[Remote PC]**  
 ```bash
 Control Your Turtlebot3
 Moving around
@@ -70,11 +72,13 @@ The settings for [ROBOTIS RC-100B][rc100] controller is included in the OpenCR f
 1. Connect the PS3 Joystick to the remote PC via Bluetooth or a USB cable.
 
 2. Install packages for teleoperation using PS3 joystick.  
+**[Remote PC]**  
   ```bash
 $ sudo apt install ros-noetic-joy ros-noetic-joystick-drivers ros-noetic-teleop-twist-joy
   ```
 
 3. Launch the teleoperation node.  
+**[Remote PC]**  
   ```bash
 $ roslaunch teleop_twist_joy teleop.launch
   ```
@@ -84,11 +88,13 @@ $ roslaunch teleop_twist_joy teleop.launch
 1. Connect XBOX 360 Joystick to the remote PC with Wireless Adapter or USB cable.
 
 2. Install packages for teleoperation using XBOX 360 joystick.  
+**[Remote PC]**  
   ```bash
 $ sudo apt install xboxdrv ros-noetic-joy ros-noetic-joystick-drivers ros-noetic-teleop-twist-joy
   ```
 
 3. Launch teleoperation packages for XBOX 360 joystick.  
+**[Remote PC]**  
   ```bash
 $ sudo xboxdrv --silent
 $ roslaunch teleop_twist_joy teleop.launch
@@ -98,7 +104,8 @@ $ roslaunch teleop_twist_joy teleop.launch
 
 1. Connect Wii remote to the remote PC via Bluetooth.
 
-2. Install packages for teleoperation using Wii remote.
+2. Install packages for teleoperation using Wii remote.  
+**[Remote PC]**  
   ```bash
 $ sudo apt install ros-noetic-wiimote libbluetooth-dev libcwiid-dev
 $ cd ~/catkin_ws/src
@@ -106,7 +113,8 @@ $ git clone https://github.com/ros-drivers/joystick_drivers.git
 $ cd ~/catkin_ws && catkin_make
   ```
 
-3. Run teleoperation packages for Wii remote.
+3. Run teleoperation packages for Wii remote.  
+**[Remote PC]**  
   ```bash
 $ rosrun wiimote wiimote_node
 $ rosrun wiimote teleop_wiimote
