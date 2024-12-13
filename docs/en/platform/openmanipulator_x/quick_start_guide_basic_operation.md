@@ -11,7 +11,8 @@ tab_title1: Kinetic
 tab_title2: Noetic
 tab_title3: Dashing
 tab_title4: Foxy
-tab_title5: Arduino
+tab_title5: Humble
+tab_title6: Arduino
 sidebar:
   title: "OpenMANIPULATOR-X"
   nav: "openmanipulator_x"
@@ -65,6 +66,10 @@ Please note that this instruction is written for the **ROBOTIS official OpenMANI
 </section>
 
 <section data-id="{{ page.tab_title5 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/quick_start_guide/launch_controller_humble.md %}
+</section>
+
+<section data-id="{{ page.tab_title6 }}" class="tab_contents">
 {% include en/platform/openmanipulator_x/quick_start_guide/launch_controller_arduino.md %}
 </section>
 
@@ -87,6 +92,10 @@ Please note that this instruction is written for the **ROBOTIS official OpenMANI
 </section>
 
 <section data-id="{{ page.tab_title5 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/quick_start_guide/keyboard_teleop_humble.md %}
+</section>
+
+<section data-id="{{ page.tab_title6 }}" class="tab_contents">
 Not supported.
 {: .notice--warning}
 </section>
