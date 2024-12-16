@@ -275,7 +275,7 @@ $ sudo apt install ros-noetic-hls-lfcd-lds-driver
 $ sudo apt install ros-noetic-turtlebot3-msgs
 $ sudo apt install ros-noetic-dynamixel-sdk
 $ cd ~/catkin_ws/src
-$ git clone -b noetic-devel https://github.com/ROBOTIS-GIT/turtlebot3.git
+$ git clone -b noetic https://github.com/ROBOTIS-GIT/turtlebot3.git
 $ cd ~/catkin_ws/src/turtlebot3
 $ rm -r turtlebot3_description/ turtlebot3_teleop/ turtlebot3_navigation/ turtlebot3_slam/ turtlebot3_example/
 $ cd ~/catkin_ws/

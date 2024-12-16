@@ -11,7 +11,8 @@ tab_title1: Kinetic
 tab_title2: Noetic
 tab_title3: Dashing
 tab_title4: Foxy
-tab_title5: Arduino
+tab_title5: Humble
+tab_title6: Arduino
 sidebar:
   title: "OpenMANIPULATOR-X"
   nav: "openmanipulator_x"
@@ -46,11 +47,16 @@ In this example, if the user is holding the master OpenMANIPULATOR, the slave Op
 </section>
 
 <section data-id="{{ page.tab_title4 }}" class="tab_contents">
-Coming Soon (2021 4Q)
-{: .notice--success}
+Not supported
+{: .notice--warning}
 </section>
 
 <section data-id="{{ page.tab_title5 }}" class="tab_contents">
+Not supported
+{: .notice--warning}
+</section>
+
+<section data-id="{{ page.tab_title6 }}" class="tab_contents">
 Master and Slave is not supported in Arduino
 {: .notice--warning}
 </section>
