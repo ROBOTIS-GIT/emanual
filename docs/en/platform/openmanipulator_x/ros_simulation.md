@@ -11,7 +11,8 @@ tabs: "ROS"
 tab_title2: Noetic
 #tab_title3: Dashing
 #tab_title4: Foxy
-tab_title5: Arduino
+tab_title5: Humble
+tab_title6: Arduino
 sidebar:
   title: "OpenMANIPULATOR-X"
   nav: "openmanipulator_x"
@@ -54,7 +55,12 @@ Coming Soon (2021 4Q)
 {: .notice--success}
 </section> -->
 
-<section data-id="{{ page.tab_title5 }}" class="tab_contents">
+<!-- <section data-id="{{ page.tab_title5 }}" class="tab_contents">
+Coming Soon (2021 4Q)
+{: .notice--success}
+</section> -->
+
+<section data-id="{{ page.tab_title6 }}" class="tab_contents">
 Not supported with Arduino
 {: .notice--warning}
 </section>
@@ -69,10 +75,14 @@ Not supported with Arduino
 {% include en/platform/openmanipulator_x/simulation/launch_gazebo_noetic.md %}
 </section>
 
-<!-- <section data-id="{{ page.tab_title5 }}" class="tab_contents">
+<section data-id="{{ page.tab_title5 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/simulation/launch_gazebo_humble.md %}
+</section>
+
+<section data-id="{{ page.tab_title6 }}" class="tab_contents">
 Not supported with Arduino
 {: .notice--warning}
-</section> -->
+</section>
 
 ## [Controller for Gazebo](#controller-for-gazebo)
 
@@ -85,6 +95,10 @@ Not supported with Arduino
 </section>
 
 <section data-id="{{ page.tab_title5 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/simulation/gazebo_controller_humble.md %}
+</section>
+
+<section data-id="{{ page.tab_title6 }}" class="tab_contents">
 Not supported with Arduino
 {: .notice--warning}
 </section>
@@ -100,6 +114,10 @@ Not supported with Arduino
 </section>
 
 <section data-id="{{ page.tab_title5 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/simulation/gazebo_operation_humble.md %}
+</section>
+
+<section data-id="{{ page.tab_title6 }}" class="tab_contents">
 Not supported with Arduino
 {: .notice--warning}
 </section>

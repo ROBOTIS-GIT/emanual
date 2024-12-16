@@ -11,7 +11,8 @@ tabs: "ROS"
 tab_title2: Noetic
 #tab_title3: Dashing
 #tab_title4: Foxy
-tab_title5: Arduino
+tab_title5: Humble
+tab_title6: Arduino
 sidebar:
   title: "OpenMANIPULATOR-X"
   nav: "openmanipulator_x"
@@ -65,6 +66,15 @@ Please launch the [OpenMANIPULATOR-X Controller](/docs/en/platform/openmanipulat
 The controller uses **topic** and **service** to control and check the status of OpenMANIPULATOR-X.
 </section> -->
 
+<section data-id="{{ page.tab_title5 }}" class="tab_contents">
+**NOTE**:  
+If you want to learn more, please refer to the official documentation for MoveIt 2 and ros2_control:  
+[MoveIt 2 Documentation](https://moveit.picknik.ai/main/index.html)  
+[ros2_control Documentation](https://control.ros.org/humble/index.html)  
+{: .notice--info}
+</section>
+
+
 ### [Topic](#topic)
 
 <!-- <section data-id="{{ page.tab_title1 }}" class="tab_contents">
@@ -88,6 +98,11 @@ Not supported
 {: .notice--warning}
 </section>
 
+<section data-id="{{ page.tab_title6 }}" class="tab_contents">
+Not supported
+{: .notice--warning}
+</section>
+
 ### [Service](#service)
 
 <!-- <section data-id="{{ page.tab_title1 }}" class="tab_contents">
@@ -107,6 +122,11 @@ Not supported
 </section> -->
 
 <section data-id="{{ page.tab_title5 }}" class="tab_contents">
+Not supported
+{: .notice--warning}
+</section>
+
+<section data-id="{{ page.tab_title6 }}" class="tab_contents">
 Not supported
 {: .notice--warning}
 </section>

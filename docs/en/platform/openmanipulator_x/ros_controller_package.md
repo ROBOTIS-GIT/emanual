@@ -11,7 +11,8 @@ tabs: "ROS"
 tab_title2: Noetic
 #tab_title3: Dashing
 #tab_title4: Foxy
-tab_title5: Arduino
+tab_title5: Humble
+tab_title6: Arduino
 sidebar:
   title: "OpenMANIPULATOR-X"
   nav: "openmanipulator_x"
@@ -42,6 +43,10 @@ page_number: 6
 </section> -->
 
 <section data-id="{{ page.tab_title5 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/controller/launch_controller_pkg_humble.md %}
+</section>
+
+<section data-id="{{ page.tab_title6 }}" class="tab_contents">
 Arduino sketch for OpenCR OpenMANIPULATOR-X includes the controller in the code.
 {: .notice}
 </section>
@@ -65,6 +70,10 @@ Arduino sketch for OpenCR OpenMANIPULATOR-X includes the controller in the code.
 </section> -->
 
 <section data-id="{{ page.tab_title5 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/controller/launch_controller_humble.md %}
+</section>
+
+<section data-id="{{ page.tab_title6 }}" class="tab_contents">
 {% capture note_01 %}
 - Arduino sketch for OpenCR OpenMANIPULATOR-X includes the controller in the code.  
 - Connecting the OpenMANIPULATOR-X and 12V power source, and turning on the power switch of the OpenCR 1.0 will automatically launch the controller.  
