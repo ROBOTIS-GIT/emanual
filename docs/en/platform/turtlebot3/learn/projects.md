@@ -14,8 +14,7 @@ page_number: 26
 ---
 
 <style>body {counter-reset: h1 12 !important;}</style>
-<div style="counter-reset: h2 7"></div>
-<div style="counter-reset: h3 2"></div>
+<div style="counter-reset: h2 8"></div>
 
 <!--[dummy Header 1] >
   <h1 id="dummy">Learn</h1>
@@ -24,9 +23,9 @@ page_number: 26
   <p class="dummy_content">User Projects</p>
 <![end dummy Header 1]-->
 
-### [Projects](#projects)
+## [Projects](#projects)
 
-#### [TurtleBot3 Collaboration Project](#turtlebot3-collaboration-project)
+### [TurtleBot3 Collaboration Project](#turtlebot3-collaboration-project)
 
 TurtleBot3 is a collaboration project among [Open Robotics][open_robotics], [ROBOTIS][robotis], and more partners like [The Construct][the_construct], [Intel][intel], [Onshape][onshape], [OROCA][oroca], [AuTURBO][auturbo], [ROS in Robotclub Malaysia][ros_in_robotclub_malaysia], [Astana Digital][astana digital], [Polariant Experiment][polariant_experiment], [Tokyo University of Agriculture and Technology, GVlab][gvlab], [Networked Control Robotics Lab at National Chiao Tung University][nctu], [SIM Group at TU Darmstadt][sim_group]. The Open Robotics is in charge of software and community activities, while ROBOTIS is in charge of manufacturing and global distribution.
 
@@ -34,17 +33,17 @@ The most important part of this TurtleBot3 collaboration project is open source 
 
 If you are interested in partnership with us to realize open source robotics, please fill out form [here][partners].
 
-##### TurtleBot3 Providers
+#### TurtleBot3 Providers
 
 ![](/assets/images/platform/turtlebot3/logo_platform_providers.png)
 
-##### TurtleBot3 Partners and Research Collaborators
+#### TurtleBot3 Partners and Research Collaborators
 
 ![](/assets/images/platform/turtlebot3/logo_platform_sponsors.png)
 
 \* Each collaboration member's web page can be found [here][partners].
 
-##### TurtleBot3 Distributors
+#### TurtleBot3 Distributors
 
 ![](/assets/images/platform/turtlebot3/logo_platform_players.png)
 
@@ -65,7 +64,7 @@ If you are interested in partnership with us to realize open source robotics, pl
 [sim_group]: https://www.sim.informatik.tu-darmstadt.de/en/index/
 [partners]: https://www.turtlebot.com/partners
 
-#### [TurtleBot3 Awesome Projects](#turtlebot3-awesome-projects)
+### [TurtleBot3 Awesome Projects](#turtlebot3-awesome-projects)
 
 **[TurtleBot3 Autorace Simulation Circuit]**
 

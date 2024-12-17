@@ -14,7 +14,7 @@ page_number: 25
 ---
 
 <style>body {counter-reset: h1 12 !important;}</style>
-<div style="counter-reset: h2 6"></div>
+<div style="counter-reset: h2 7"></div>
 
 <!--[dummy Header 1]>
   <h1 id="dummy">Learn</h1>
