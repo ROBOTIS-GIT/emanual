@@ -6,7 +6,7 @@
 
 {% capture warning_01 %}
 **WARNING**
-- This process may take long time. Please do not use battery while following this section.
+- This process may take long time. Do not use battery power while following this section, us a DC wall power supply.
 - **An HDMI monitor and input devices such as a keyboard and a mouse will be required to complete this setup.**
 - In order to use the webOS Robotics Platform, please refer to [webOS Robotics Platform](https://github.com/ros/meta-ros/wiki/OpenEmbedded-Build-Instructions) instruction. Packages will be cross-compiled using OpenEmbedded on a higher performance PC and an image file is created.
 {% endcapture %}

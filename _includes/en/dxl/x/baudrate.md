@@ -1,10 +1,4 @@
-<<<<<<< HEAD
 Baud Rate determines serial communication speed between a DYNAMIXEL and it's controller.
-=======
-Baud Rate determines serial communication speed between a controller and DYNAMIXEL.
-Available value range is 0 ~ 254(0xFE), and below is the equation for BPS calculation.  
-**Baudrate(BPS) = 2,000,000 / (Value + 1)**
->>>>>>> aae312bc64c47aeeed478e1d589438e2bc5883ee
 
 | Value     | Baud Rate(bps)     | Margin of Error     |
 |:------------:|:------------:|:------------:|

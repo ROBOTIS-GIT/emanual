@@ -1,4 +1,3 @@
-
 # Quick Start Guide
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8w3xhG1GPdo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -84,7 +83,7 @@ $ sudo apt install ros-humble-nav2-bringup
 
 ### [Install TurtleBot3 Packages](#install-turtlebot3-packages)
 
-Install TurtleBot3 Packages.  
+Install the required TurtleBot3 Packages.  
 
 **[Remote PC]**  
 ```bash  

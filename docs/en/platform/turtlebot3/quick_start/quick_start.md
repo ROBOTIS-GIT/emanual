@@ -23,33 +23,33 @@ page_number: 4
 
 **Only ROS1 Noetic and ROS2 Humble are officially supported by ROBOTIS at this time. However, development of TurtleBot features for other ROS distributions is ongoing. The following chart provides an overview of the features supported by each ROS Distribution**
 
-O : Available  <br>
-&#8710; : Unverified<br>
+✓ : Available  <br>
+? : Unverified<br>
 X : Unavailable<br>
 
 |        Features        | Kinetic | Melodic | Noetic | Dashing | Foxy | Galactic | Humble |
 |:----------------------:|:-------:|:-------:|:------:|:-------:|:----:|:--------:|:------:|
-|         Teleop         |    O    |    O    |   O    |    O    |  O   |    O     |   O    |
-|          SLAM          |    O    |    O    |   O    |    O    |  O   |    O     |   O    |
-|       Navigation       |    O    |    O    |   O    |    O    |  O   |    O     |   O    |
-|       Simulation       |    O    |    O    |   O    |    O    |  O   |    O     |   O    |
-|      Manipulation      |    O    |    O    |   O    |    O    |  O   | &#8710;  |   O    |
-| Home Service Challenge |    O    |    O    |   O    |    X    |  X   |    X     |   X    |
-|   Autonomous Driving   |    O    |    X    |   O    |    X    |  X   |    X     |   X    |
-|    Machine Learning    |    O    |    O    |   X    |    O    |  X   |    X     |   X    |
+|         Teleop         |    ✓    |    ✓    |   ✓    |    ✓    |  ✓   |    ✓     |   ✓    |
+|          SLAM          |    ✓    |    ✓    |   ✓    |    ✓    |  ✓   |    ✓     |   ✓    |
+|       Navigation       |    ✓    |    ✓    |   ✓    |    ✓    |  ✓   |    ✓     |   ✓    |
+|       Simulation       |    ✓    |    ✓    |   ✓    |    ✓    |  ✓   |    ✓     |   ✓    |
+|      Manipulation      |    ✓    |    ✓    |   ✓    |    ✓    |  ✓   |    ?     |   ✓    |
+| Home Service Challenge |    ✓    |    ✓    |   ✓    |    X    |  X   |    X     |   X    |
+|   Autonomous Driving   |    ✓    |    X    |   ✓    |    X    |  X   |    X     |   X    |
+|    Machine Learning    |    ✓    |    ✓    |   X    |    ✓    |  X   |    X     |   X    |
 
 |       Examples       | Kinetic | Melodic | Noetic | Dashing | Foxy | Galactic | Humble |
 |:--------------------:|:-------:|:-------:|:------:|:-------:|:----:|:--------:|:------:|
-| Interactive Markers  |    O    |    X    |   X    |    X    |  X   |    X     |   X    |
-|  Obstacle Detection  |    O    |    X    |   X    |    O    |  X   |    X     |   X    |
-|   Position Control   |    O    |    X    |   X    |    O    |  X   |    X     |   X    |
-|   Point Operation    |    O    |    X    |   X    |    O    |  X   |    X     |   X    |
-|        Patrol        |    O    |    X    |   X    |    O    |  X   |    X     |   X    |
-|       Follower       |    O    |    X    |   X    |    X    |  X   |    X     |   X    |
-|       Panorama       |    O    |    X    |   X    |    X    |  X   |    X     |   X    |
-|     Auto Parking     |    O    |    X    |   X    |    O    |  X   |    X     |   X    |
-| Auto Parking (Vision)|    O    |    X    |   X    |    X    |  X   |    X     |   X    |
-|   Multi TurtleBot3   |    O    |    X    |   X    |    X    |  X   |    X     |   X    |
+| Interactive Markers  |    ✓    |    X    |   X    |    X    |  X   |    X     |   X    |
+|  Obstacle Detection  |    ✓    |    X    |   X    |    ✓    |  X   |    X     |   X    |
+|   Position Control   |    ✓    |    X    |   X    |    ✓    |  X   |    X     |   X    |
+|   Point Operation    |    ✓    |    X    |   X    |    ✓    |  X   |    X     |   X    |
+|        Patrol        |    ✓    |    X    |   X    |    ✓    |  X   |    X     |   X    |
+|       Follower       |    ✓    |    X    |   X    |    X    |  X   |    X     |   X    |
+|       Panorama       |    ✓    |    X    |   X    |    X    |  X   |    X     |   X    |
+|     Auto Parking     |    ✓    |    X    |   X    |    ✓    |  X   |    X     |   X    |
+| Auto Parking (Vision)|    ✓    |    X    |   X    |    X    |  X   |    X     |   X    |
+|   Multi TurtleBot3   |    ✓    |    X    |   X    |    X    |  X   |    X     |   X    |
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
 {% include en/platform/turtlebot3/quickstart_noetic.md %}
