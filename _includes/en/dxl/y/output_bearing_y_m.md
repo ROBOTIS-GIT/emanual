@@ -35,27 +35,9 @@ An estimate of the bearing life for the Dynamixel-Y output bearing can be calcul
 - L<sub>10</sub> - Bearing service life [hour] @ 20,000 hour
 - N<sub>n</sub> - Nominal output speed [rpm]
 - C - Basic dynamic load rating [N]
-<<<<<<< HEAD
-<<<<<<< HEAD
-- T<sub>f</sub> - Temperature factor (Tf=1.0 less 100℃) @ Tf = 1.0
-- L<sub>f</sub> - Load factor (Table.B2) @ Lf=1.0
-- P<sub>c_max</sub> - Allowable dynamic equivalent load [N]
-=======
 - T<sub>f</sub> - Temperature factor (Tf=1.0 in environments of less than 100℃)
 - L<sub>f</sub> - Load factor (Available in [Table.B2](#tables))
 - P<sub>c_max</sub> - Allowable dynamic equivalent radial load [N]
->>>>>>> bd667d4ef (Proofreading DYNAMIXEL Protocol 2)
-=======
-- T<sub>f</sub> - Temperature factor (Tf=1.0 in environments of less than 100℃)
-- L<sub>f</sub> - Load factor (Available in [Table.B2](#tables))
-- P<sub>c_max</sub> - Allowable dynamic equivalent radial load [N]
-=======
-- T<sub>f</sub> - Temperature factor (Tf=1.0 less 100℃) @ Tf = 1.0
-- L<sub>f</sub> - Load factor (Table.B2) @ Lf=1.0
-- P<sub>c_max</sub> - Allowable dynamic equivalent load [N]
->>>>>>> f19c5f9e183a321d74dc901612fe7f30a3d79517
->>>>>>> aae312bc64c47aeeed478e1d589438e2bc5883ee
-
 
 ## [Dynamic equivalent load, Pc](#dynamic-equivalent-load-pc)
 The dynamic equivalent load of the Dynamixel-Y output bearing is obtained from the following equation.
