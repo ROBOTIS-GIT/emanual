@@ -13,7 +13,7 @@ product_group: openmanipulator_x
 page_number: 1
 ---
 
-<div style="counter-reset: h1 0"></div>
+<style>body {counter-reset: h1 0 !important;}</style>
 
 # [Overview](#overview)
 

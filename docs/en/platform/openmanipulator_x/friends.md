@@ -13,7 +13,7 @@ product_group: openmanipulator_x
 page_number: 16
 ---
 
-<div style="counter-reset: h1 11"></div>
+<style>body {counter-reset: h1 11 !important;}</style>
 
 # [Friends](#friends)
 

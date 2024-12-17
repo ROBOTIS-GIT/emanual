@@ -13,7 +13,7 @@ product_group: openmanipulator_x
 page_number: 14
 ---
 
-<div style="counter-reset: h1 9"></div>
+<style>body {counter-reset: h1 9 !important;}</style>
 
 
 # [Tool Modification](#tool-modification)

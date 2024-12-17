@@ -20,7 +20,7 @@ product_group: openmanipulator_x
 page_number: 12
 ---
 
-<div style="counter-reset: h1 7"></div>
+<style>body {counter-reset: h1 7 !important;}</style>
 
 {::options parse_block_html="true" /}
 
