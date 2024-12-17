@@ -23,6 +23,11 @@ page_number: 1
 
 ROS compatible OpenMANIPULATOR-X (RM-X52-TNM) is a robot platform consisting of **Open Source Software**​, **Open Source Hardware** and is compatible with **OpenCR(Embedded controller)​**.
 
+**Other ROS/ROS2 Distro manuals**  
+Download archived OpenMANIPULATOR-X emanual as of Dec 2024.  
+[Download](https://drive.google.com/file/d/1LLDGkGQYzVRr7LKFGqiWBP591Eg3CHV9/view?usp=drive_link)
+{: .notice--warning}
+
 ## [Open Source Software](#open-source-software)
 OpenMANIPULATOR-X supports ROS. The official ROS platform TurtleBot series has been supporting "TurtleBot Arm". The OpenMANIPULATOR-X is fullly compatibile with TurtleBot3​. Users can easily control it through the `MoveIt!` ROS package. Even if you do not have an actual robot, you can control the robot in the Gazebo simulator​. 
 
