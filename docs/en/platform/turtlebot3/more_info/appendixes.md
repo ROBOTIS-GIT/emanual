@@ -13,7 +13,7 @@ product_group: turtlebot3
 page_number: 27
 ---
 
-<div style="counter-reset: h1 12"></div>
+<style>body {counter-reset: h1 12 !important;}</style>
 
 # [More Info](#more-info)
 

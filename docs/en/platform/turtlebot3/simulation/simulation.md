@@ -16,7 +16,7 @@ product_group: turtlebot3
 page_number: 12
 ---
 
-<div style="counter-reset: h1 5"></div>
+<style>body {counter-reset: h1 5 !important;}</style>
 
 # [Simulation](#simulation)
 
