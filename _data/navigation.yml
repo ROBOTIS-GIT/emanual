@@ -363,7 +363,7 @@ main:
       - title: "*ROBOTIS OP2"
         titlekr: "*로보티즈 OP2"
         url: /platform/op2/getting_started/
-      - title: "*OBOTIS OP3"
+      - title: "*ROBOTIS OP3"
         titlekr: "*로보티즈 OP3"
         url: /platform/op3/introduction/
     - title: "*THORMANG3"

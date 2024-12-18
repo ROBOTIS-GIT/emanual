@@ -23,15 +23,15 @@ page_number: 1
 
 {% capture info_00 %}
 ![](/assets/images/platform/turtlebot3/logo_raspberry_pi.png){: width="30px"} **Rasbperry Pi 4**  
-TurtleBot3 has been upgraded with `Raspberry Pi 4`.
+The TurtleBot3 platform has been upgraded to include the `Raspberry Pi 4` as the standard onboard SBC.
 {% endcapture %}
 <div class="notice--success">{{ info_00 | markdownify }}</div>
 
 {% capture info_01 %}
 ![](/assets/images/platform/turtlebot3/logo_nvidia.jpg){: width="65px"} **Jetson Nano**  
-TurtleBot3 Hardware is compatible with `Jetson Nano` SBC.  
-Please refer to the video below in order to set up the Jetson Nano for TurtleBot3.  
-The [Jetson Nano Developer Kit setup](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit) must be completed first.
+TurtleBot3 Hardware also supports the use of the Nvidia `Jetson Nano` SBC.  
+Please refer to the video below in order to set up a Jetson Nano for use with a TurtleBot3.  
+The [Jetson Nano Developer Kit setup](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit) instructions must be completed prior to preparation for TurtleBot3 useage.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fGEq_0aWpoA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 {% endcapture %}
@@ -39,25 +39,23 @@ The [Jetson Nano Developer Kit setup](https://developer.nvidia.com/embedded/lear
 
 **What is TurtleBot?**
 
-[TurtleBot][turtlebot] is a [ROS][ros] standard platform robot. Turtle is derived from the Turtle robot, which was driven by the educational computer programming language [Logo][logo] in 1967. In addition, the [turtlesim node][turtlesim], which first appears in the basic tutorial of ROS, is a program that mimics the command system of the [Logo turtle program][logo_primer]. It is also used to create the [Turtle icon][tuturtle] as a symbol of ROS. The nine dots used in the ROS logo derived from the back shell of the turtle. TurtleBot, which originated from the Turtle of Logo, is designed to easily teach people who are new to ROS through TurtleBot as well as to teach computer programming language using Logo. Since then TurtleBot has become the standard platform of ROS, which is the most popular platform among developers and students.
+[TurtleBot][turtlebot] is a standardized robotic platform developed for [ROS][ros] education and research. The concept of the TurtleBot platform is derived from [Turtle robots](https://en.wikipedia.org/wiki/Turtle_(robot)) used to teach foundational robotics and computer science since the early 1940s. TurtleBot is designed as a simplified, easily upgradable platform to teach people who are new to ROS, and to provide a capable base system for more advanced development. Since it's inception TurtleBot has become the standard educational ROS platform, as well as the most popular robotics platform among developers and students worldwide.
 
-There are 3 versions of the [TurtleBot][turtlebot] model. TurtleBot1 was developed by Tully (Platform Manager at Open Robotics) and Melonee (CEO of Fetch Robotics) from Willow Garage on top of the iRobot’s Roomba-based research robot, Create, for ROS deployment. It was developed in 2010 and has been on sale since 2011. In 2012, TurtleBot2 was developed by Yujin Robot based on the research robot, iClebo Kobuki. In 2017, TurtleBot3 was developed with features to supplement the lacking functions of its predecessors, and the demands of users. The TurtleBot3 adopts ROBOTIS smart actuator [DYNAMIXEL][dynamixel] for driving. For more information on the TurtleBot series, please see the following [link][history].
+There are 4 versions of the [TurtleBot][turtlebot] available now. TurtleBot1 was developed by Tully (Platform Manager at Open Robotics) and Melonee (CEO of Fetch Robotics) at Willow Garage on top of the iRobot’s Roomba-based research robot, Create, for ROS deployment. It was developed in 2010 and has been on sale since 2011. In 2012, TurtleBot2 was developed by Yujin Robot based on the research robot, iClebo Kobuki. In 2017, TurtleBot3 was developed by ROBOTIS as an improved modular design to supplement the function of its predecessors, and the demands of users. The TurtleBot4, developed by ClearPath Robotics features an iRobot Create3 base as a less modular alternative to the TurtleBot3 platform. For more information on the TurtleBot series, visit [the official TurtleBot Website][history] for a full history of the platform.
 
-TurtleBot3 is a small, affordable, programmable, ROS-based mobile robot for use in education, research, hobby, and product prototyping. The goal of TurtleBot3 is to dramatically reduce the size of the platform and lower the price without having to sacrifice its functionality and quality, while at the same time offering expandability. The TurtleBot3 can be customized into various ways depending on how you reconstruct the mechanical parts and use optional parts such as the computer and sensor. In addition, TurtleBot3 is evolved with cost-effective and small-sized SBC that is suitable for robust embedded system, 360 degree distance sensor and 3D printing technology.
-
-The TurtleBot3’s core technology is [SLAM][slam], [Navigation][navigation] and [Manipulation][manipulation], making it suitable for home service robots. The TurtleBot can run SLAM(simultaneous localization and mapping) algorithms to build a map and can drive around your room. Also, it can be controlled remotely from a laptop, joypad or Android-based smart phone. The TurtleBot can also follow a person’s legs as they walk in a room. Also the TurtleBot3 can be used as a mobile manipulator capable of manipulating an object by attaching a manipulator like OpenMANIPULATOR. The [OpenMANIPULATOR][openmanipulator] has the advantage of being compatible with TurtleBot3 Waffle and Waffle Pi. Through this compatibility can compensate for the lack of freedom and can have greater completeness as a service robot with the the SLAM and navigation capabilities that the TurtleBot3 has.
+The TurtleBot3 in specific is a small, affordable, and customizable, ROS-based mobile robot for use in education, research, hobby projects, and product prototyping. The goal of TurtleBot3 is to provide a low cost, highly flexible robotics development platform without having to sacrifice functionality and quality, while at the same time offering enough expandability to fit a wide variety of complex robotics applications. The TurtleBot3 can be customized in various ways using simple mechanical components and through the use of upgraded electronic components including custom computers and sensors. In addition, the TurtleBot3 has continued to evolve it's out of the box performance by continually upgrading the included cost-effective and small-sized SBC suitable for robust embedded systems. The TurtleBot3’s core technology of [SLAM][slam], [Navigation][navigation] and [Manipulation][manipulation] makes it suitable for a wide variety of research and service robotics applications.
 
 **How to contribute to ROS and TurtleBot?**
 
 <details>
 <summary>
-![](/assets/images/icon_unfold.png) TurtleBot3 is a collaboration project...
+![](/assets/images/icon_unfold.png) TurtleBot3 is a collaborative project...
 </summary>
-TurtleBot3 is a collaboration project among [Open Robotics][open_robotics], [ROBOTIS][robotis], and more partners like [The Construct][the_construct], [Intel][intel], [Onshape][onshape], [OROCA][oroca], [AuTURBO][auturbo], [ROS in Robotclub Malaysia][ros_in_robotclub_malaysia], [Astana Digital][astana digital], [Polariant Experiment][polariant_experiment], [Tokyo University of Agriculture and Technology, GVlab][gvlab], [Networked Control Robotics Lab at National Chiao Tung University][nctu], [SIM Group at TU Darmstadt][sim_group]. The Open Robotics is in charge of software and community activities, while ROBOTIS is in charge of manufacturing and global distribution.
+TurtleBot3 is a collaborative project between [Open Robotics][open_robotics], [ROBOTIS][robotis], and many more partners including [The Construct][the_construct], [Intel][intel], [Onshape][onshape], [OROCA][oroca], [AuTURBO][auturbo], [ROS in Robotclub Malaysia][ros_in_robotclub_malaysia], [Astana Digital][astana digital], [Polariant Experiment][polariant_experiment], [Tokyo University of Agriculture and Technology, GVlab][gvlab], [Networked Control Robotics Lab at National Chiao Tung University][nctu], [SIM Group at TU Darmstadt][sim_group]. Open Robotics is in charge of software and community activities, while ROBOTIS is in charge of manufacturing and global distribution.
 
-The most important part of this TurtleBot3 collaboration project is open source based software, hardware, and content. We are encouraging more partners and research collaborators to participate in this project to enrich the robotics field.
+The most important part of the TurtleBot3 collaboration project is the open source based software, hardware, and community around the platform. As such, ROBOTIS is always encouraging more partners and research collaborators to participate in this project to enrich the robotics field as a whole.
 
-If you are interested in partnership with us to realize open source robotics, please fill out form [here][partners].
+If you are interested in partnership with us to continue to further the development of open source robotics, please fill out [this form][partners] to learn more about how we can work together.
 
 - TurtleBot3 Providers  
   ![](/assets/images/platform/turtlebot3/logo_platform_providers.png)
@@ -82,9 +80,9 @@ If you are interested in partnership with us to realize open source robotics, pl
 
 <details>
 <summary>
-![](/assets/images/icon_unfold.png) Checkout ROS and TurtleBot3 Publications
+![](/assets/images/icon_unfold.png) Check out these ROS and TurtleBot3 Publications:
 </summary>
-- 09/06/2021 TurtleBot3 is upgraded with Raspberry Pi 4!!!
+- 09/06/2021 TurtleBot3 has been upgraded with Raspberry Pi 4!!!
 - 05/28/2021 [TurtleBot3 Autorace 2020 now runs with ROS Noetic](https://www.youtube.com/playlist?list=PLRG6WP3c31_WsNjwmYID2ulX5g4WcjKbI)
 - 05/24/2021 [ROS 2 Galactic Geochelone Release](https://discourse.ros.org/t/ros-2-galactic-geochelone-released/20559)
 - 12/20/2020 [Webots supports TurtleBot3 with ROS 2 Foxy](https://discourse.ros.org/t/turtlebot3-and-webots/17880)
@@ -150,7 +148,7 @@ If you are interested in partnership with us to realize open source robotics, pl
 
 <details>
 <summary>
-![](/assets/images/icon_unfold.png) Click to expand the recent news
+![](/assets/images/icon_unfold.png) Click to expand recent news.
 </summary>
 - 11/12/2020 [ROS World 2020: ROBOTIS TurtleBot3 Parallel Session](https://vimeo.com/480460365)
 - 07/22/2019 [Top 10 ROS-based robotics companies in 2019, The Robot Report

@@ -1,11 +1,11 @@
 # [Control Table](#control-table)
-The Control Table is a structure of data implemented in the device. Users can read a specific Data to get status of the device with Read Instruction Packets, and modify Data as well to control the device with WRITE Instruction Packets.
+The Control Table is a data structure used by DYNAMIXEL actuators to manage the state of the device. Users can read data registers to get information about the status of the device with Read Instruction Packets, and modify data registers to control the device with Write Instruction Packets.
 
 {% assign protocol= "DYNAMIXEL Protocol 2.0" %}
 {% assign data_size= "1 ~ 4" %}
 
 {% if page.product_group=='dxl_p' %}
-**WARNING** : DYNAMIXEL-P use different Control Table from DYNAMIXEL PRO series. Please pay attention when replacing DYNAMIXEL PRO with DYNAMIXEL-P.
+**WARNING** : DYNAMIXEL-P servos use a different Control Table layout than DYNAMIXEL PRO series actuators. Please verify the control table addresses used in your control program attention when transitioning from DYNAMIXEL PRO to DYNAMIXEL-P.
 {: .notice--warning}
 {% assign torque_enable= "512" %}
 
