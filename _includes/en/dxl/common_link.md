@@ -9,6 +9,7 @@
 [ID(7)]: #id7
 [Baud Rate(8)]: #baud-rate8
 [Return Delay time(9)]: #return-delay-time-9
+[Drive Mode(10)]: #drive-mode10
 [Operating Mode(11)]: #operating-mode11
 [Homing Offset(13)]: #homing-offset13
 [Protocol Type(13)]: #protocol-type13
@@ -17,6 +18,8 @@
 [Moving Threshold(24)]: #moving-threshold24
 [Acceleration Limit(26)]: #acceleration-limit26
 [Goal Position(30)]: #goal-position-30
+[Temperature Limit (31)]: #temperature-limit31
+[Max/Min Voltage Limit(32, 34)]: #minmax-voltage-limit32-34
 [Torque Limit(34)]: #torque-limit-34
 [PWM Limit(36)]: #pwm-limit36
 [Current Limit(38)]: #current-limit38
@@ -36,6 +39,7 @@
 [Profile Velocity(112)]: #profile-velocity112
 [Goal Position(116)]: #goal-position116
 [Moving(122)]: #moving122
+[Moving Status(123)]: #moving-status123
 [Present PWM(124)]: #present-pwm124
 [Present Current(126)]: #present-current126
 [Present load(126)]: #present-load126

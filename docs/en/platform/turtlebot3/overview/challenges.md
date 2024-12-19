@@ -28,7 +28,7 @@ page_number: 2
 
 #### [Online Competition using TurtleBot3](#online-competition-using-turtlebot3)
 
-We are preparing an online competition on [ROS Development Studio (RDS)][rds] with TurtleBot3 AutoRace and Task Mission using TurtleBot3 and OpenManipulator. You can participate free of charge in this online competition and learn about SLAM, Navigatin, Autonomous driving, Manipulation in a defined rule. Let's play each other in this online competition!
+ROBOTIS has prepared an online competition on [ROS Development Studio (RDS)][rds] for the TurtleBot3 AutoRace and Task Mission using TurtleBot3 and OpenManipulator. You can participate free of charge in this online competition and learn about SLAM, Navigatin, Autonomous driving, Manipulation in a structured experimental environment.
 
 - [ROS Development Studio Howto](https://www.youtube.com/playlist?list=PLK0b4e05LnzYGvX6EJN1gOQEl6aa3uyKS)
 
@@ -38,7 +38,7 @@ We are preparing an online competition on [ROS Development Studio (RDS)][rds] wi
 
 - [TurtleBot3 AutoRace](https://rds.theconstructsim.com/tc_projects/use_project_share_link/21e00583-6e60-415a-aa66-bd2c78e0733a)
 
-If you need more information about it or you want to launch it in your remote PC, please visit [Autonomous Driving](/docs/en/platform/turtlebot3/autonomous_driving/#autonomous-driving) section.
+For more information or if you want to launch it in your remote PC, please visit [Autonomous Driving](/docs/en/platform/turtlebot3/autonomous_driving/#autonomous-driving) section.
 
 #### Task Mission using TurtleBot3 and OpenManipulator on RDS
 
@@ -46,7 +46,7 @@ If you need more information about it or you want to launch it in your remote PC
 
 - [Task Mission using TurtleBot3 and OpenManipulator](https://rds.theconstructsim.com/tc_projects/use_project_share_link/b345dbb4-c806-4822-919e-84b7cf00c8c0)
 
-If you need more information about it or you want to launch it in your remote PC, please visit [Manipulation](/docs/en/platform/turtlebot3/manipulation/#bringup) section.
+For more information about it or if you want to launch it in your remote PC, please visit [Manipulation](/docs/en/platform/turtlebot3/manipulation/#bringup) section.
 
 #### [ROS Development Studio (RDS)](#ros-development-studio-RDS)
 

@@ -28,42 +28,41 @@ page_number: 3
 
 **World's Most Popular ROS Platform**
 
-- TurtleBot is the most popular open source robot for education and research. The new generation `TurtleBot3` is a `small`, `low cost`, `fully programmable`, `ROS based mobile robot`. It is intended to be used for education, research, hobby and product prototyping.
+- TurtleBot is the most popular open source robot for education and research. The `TurtleBot3` in specific is a small, low cost, fully customizable, ROS based mobile robot platform intended to be used for education, research, hobby projects, and product prototyping.
 
-**Affordable Cost**
+**Affordable**
 
-- TurtleBot was developed to meet the cost-conscious needs of schools, laboratories and companies. TurtleBot3 is the most affordable robot among the SLAM-able mobile robots equipped with a 360&deg; Laser Distance Sensor LDS-01.
+- TurtleBot3 was developed to meet the cost-conscious needs of schools, laboratories and companies. TurtleBot3 is the most affordable SLAM-able mobile robot equipped with a 360&deg; Laser Distance Sensor LDS-02.
 
 **Small Size**
 
-- The dimension of TurtleBot3 Burger is only 138mm x 178mm x 192mm (L x W x H). Its size is about 1/4 of the size of the predecessor. Imagine keeping TurtleBot3 in your backpack and develop your program and test it anywhere you go.
+- The dimensions of the TurtleBot3 Burger are only 138mm x 178mm x 192mm (L x W x H). It's size is about 1/4 of the size of it's predecessor. Imagine keeping TurtleBot3 in your backpack, providing the ability develop your system and test it anywhere you go.
 
 **ROS Standard**
 
-- The TurtleBot brand is managed by [Open Robotics][open_robotics], which develops and maintains ROS. Nowadays, ROS has become the go-to platform for all the roboticists around the world. TurtleBot can be integrated with existing ROS-based robot components, but TurtleBot3 can be an affordable platform for whom want to get started learning ROS.
+- The TurtleBot brand is managed by [Open Robotics][open_robotics], which develops and maintains ROS. Nowadays, ROS has become the go-to platform for roboticists around the world. The TurtleBot family can be integrated with existing ROS-based robot components, but TurtleBot3 is designed to be an affordable base platform for those who want to get started learning ROS.
 
 **Extensibility**
 
-- TurtleBot3 encourages users to customize its mechanical structure with some alternative options: open source embedded board (as a control board), computer and sensors. TurtleBot3 Burger is a two-wheeled differential drive type platform but it is able to be structurally and mechanically customized in many ways: Cars, Bikes, Trailers and so on. Extend your ideas beyond imagination with various SBC, sensors and motors on a scalable structure.
+- TurtleBot3 encourages users to customize its mechanical structure with some alternative options: The platform consists of an open source embedded board (as a motor control board), a single board computer as the main compute unit, and lidar or visual sensors plased on a a two-wheeled differential drive platform. Beyond this the TurtleBot3 platform is able to be structurally and mechanically customized in many ways: Cars, Bikes, Trailers and so on. Extend your ideas beyond imagination with various SBC, sensors and motors on a scalable structure.
 
 **Modular Actuator for Mobile Robot**
 
-- TurtleBot3 is able to get a precise spatial data by using 2 DYNAMIXEL's in the wheel joints. DYNAMIXEL XM series can be operated by one of 6 operating modes(XL series: 4 operating modes): Velocity control mode for wheels, Torque control mode or Position control mode for joint, etc. DYNAMIXEL can be used even to make a mobile manipulator which is light but can be precisely controlled with velocity, torque and position control. DYNAMIXEL is a core component that makes TurtleBot3 perfect. It is easy to assemble, maintain, replace and reconfigure.
+- TurtleBot3 is able to get a precise spatial data by using 2 DYNAMIXEL smart servos in the wheel joints. The DYNAMIXEL XM series can be operated in one of 6 operating modes(XL series: 4 operating modes): Velocity control mode for wheels, Torque control mode or Position control mode for joint, etc. DYNAMIXELs can also used even to make a mobile manipulator which is light but can be precisely controlled with velocity, torque and position control. DYNAMIXEL is a core component that makes TurtleBot3 more flexible than other competing platforms, making it easy to assemble, maintain, replace and reconfigure.
 
 **Open Control Board for ROS**
 
-- The control board is open-sourced in hardware wise and in software wise for ROS communication. The open source control board OpenCR1.0 is powerful enough to control not only DYNAMIXEL's but also [ROBOTIS][robotis] sensors that are frequently being used for basic recognition tasks in cost effective way. Various sensors such as Touch sensor, Infrared sensor, Color sensor and a handful more are available. The OpenCR1.0 has an IMU sensor inside the board so that it can enhance precise control for countless applications. The board has 3.3V, 5V, 12V power supplies to reinforce the available computer device lineups.
+- The control board is open-source hardware and software for ROS communication. The open source control board OpenCR1.0 is powerful enough to control not only DYNAMIXEL's but also [ROBOTIS][robotis] sensors that are frequently being used for basic recognition tasks in cost effective way. Various sensors such including Touch sensors, Infrared sensors, Color sensors and a handful more are available. The OpenCR1.0 has an IMU sensor inside the board to provide precision motion tracking for countless applications. The board has 3.3V, 5V, and 12V power supplies to maximize compatibility with external components.
 
 **Strong Sensor Lineups**
 
-- TurtleBot3 Burger uses enhanced 360&deg; LiDAR, 9-Axis Inertial Measurement Unit and precise encoder for your research and development. TurtleBot3 Waffle is equipped with an identical 360&deg; LiDAR as well but additionally proposes a powerful Intel® RealSense™ with the recognition SDK. TurtleBot3 Waffle Pi uses high utilized Raspberry Pi Camera. This will be the best hardware solution for making a mobile robot.
+- The TurtleBot3 Burger features enhanced 360&deg; LiDAR, a 9-Axis Inertial Measurement Unit and precise encoder to empower your research and development. TurtleBot3 Waffle is equipped with an identical 360&deg; LiDAR as well but additionally proposes a powerful RaspberryPi Camera for visual recognition.
 
 **Open Source**
 
-- The hardware, firmware and software of TurtleBot3 are open source which means that users are welcomed to download, modify and share source codes. All components of TurtleBot3 are manufactured with injection molded plastic to achieve low cost, however, the 3D CAD data is also available for 3D printing.  
+- The hardware, firmware and software of TurtleBot3 are open source which means that users are welcome to download, modify and share the source code. All components of TurtleBot3 are manufactured with injection molded plastic to achieve low cost, however, the 3D CAD data is also available for 3D printing.  
   The 3D CAD data is released via Onshape which is a full-cloud 3D CAD editor. Users can get an access with a web browser on desktop PC, laptop and even portable devices. Onshape allows to draw 3D models and to assemble them with colleagues.
-  Besides, for the users who want to make OpenCR1.0 board by themselves, all details of the OpenCR1.0 board such as schematics, PCB gerber files, BOM and firmware source code are fully opened under the open-source licenses for users and ROS community.
-  You can modify downloaded source code and hardware to share it with your friends.
+  Besides, for the users who want to make or modify an OpenCR1.0 board by themselves, all details of the OpenCR1.0 board such as schematics, PCB gerber files, BOM and firmware source code are fully available under open-source licenses for users and the ROS community.
 </details>
 
 
@@ -80,28 +79,28 @@ page_number: 3
 | Maximum payload                    | 15kg                                                             | 30kg                                                             |
 | Size (L x W x H)                   | 138mm x 178mm x 192mm                                            | 281mm x 306mm x 141mm                                            |
 | Weight (+ SBC + Battery + Sensors) | 1kg                                                              | 1.8kg                                                            |
-| Threshold of climbing              | 10 mm or lower                                                   | 10 mm or lower                                                   |
+| Climbing Threshold                 | 10 mm or lower                                                   | 10 mm or lower                                                   |
 | Expected operating time            | 2h 30m                                                           | 2h                                                               |
 | Expected charging time             | 2h 30m                                                           | 2h 30m                                                           |
-| SBC (Single Board Computers)       | Raspberry Pi                                                     | Raspberry Pi                                                     |
+| SBC (Single Board Computer)        | Raspberry Pi 4                                                   | Raspberry Pi 4                                                   |
 | MCU                                | 32-bit ARM Cortex®-M7 with FPU (216 MHz, 462 DMIPS)              | 32-bit ARM Cortex®-M7 with FPU (216 MHz, 462 DMIPS)              |
 | Remote Controller                  | -                                                                | RC-100B + BT-410 Set (Bluetooth 4, BLE)                          |
 | Actuator                           | XL430-W250                                                       | XM430-W210                                                       |
-| LDS(Laser Distance Sensor)         | 360 Laser Distance Sensor [LDS-01] or [LDS-02]                   | 360 Laser Distance Sensor [LDS-01] or [LDS-02]                   |
+| LDS (Laser Distance Sensor)        | 360 Laser Distance Sensor [LDS-02]                               | 360 Laser Distance Sensor [LDS-02]                               |
 | Camera                             | -                                                                | Raspberry Pi Camera Module v2.1                                  |
 | IMU                                | Gyroscope 3 Axis<br />Accelerometer 3 Axis                       | Gyroscope 3 Axis<br />Accelerometer 3 Axis                       |
 | Power connectors                   | 3.3V / 800mA<br />5V / 4A<br />12V / 1A                          | 3.3V / 800mA<br />5V / 4A<br />12V / 1A                          |
 | Expansion pins                     | GPIO 18 pins<br />Arduino 32 pin                                 | GPIO 18 pins<br />Arduino 32 pin                                 |
-| Peripheral                         | UART x3, CAN x1, SPI x1, I2C x1, ADC x5, 5pin OLLO x4            | UART x3, CAN x1, SPI x1, I2C x1, ADC x5, 5pin OLLO x4            |
+| Peripheral Connections             | UART x3, CAN x1, SPI x1, I2C x1, ADC x5, 5pin OLLO x4            | UART x3, CAN x1, SPI x1, I2C x1, ADC x5, 5pin OLLO x4            |
 | DYNAMIXEL ports                    | RS485 x 3, TTL x 3                                               | RS485 x 3, TTL x 3                                               |
 | Audio                              | Several programmable beep sequences                              | Several programmable beep sequences                              |
 | Programmable LEDs                  | User LED x 4                                                     | User LED x 4                                                     |
 | Status LEDs                        | Board status LED x 1<br />Arduino LED x 1<br />Power LED x 1     | Board status LED x 1<br />Arduino LED x 1<br />Power LED x 1     |
 | Buttons and Switches               | Push buttons x 2, Reset button x 1, Dip switch x 2               | Push buttons x 2, Reset button x 1, Dip switch x 2               |
 | Battery                            | Lithium polymer 11.1V 1800mAh / 19.98Wh 5C                       | Lithium polymer 11.1V 1800mAh / 19.98Wh 5C                       |
-| PC connection                      | USB                                                              | USB                                                              |
-| Firmware upgrade                   | via USB / via JTAG                                               | via USB / via JTAG                                               |
-| Power adapter (SMPS)               | Input : 100-240V, AC 50/60Hz, 1.5A @max<br />Output : 12V DC, 5A | Input : 100-240V, AC 50/60Hz, 1.5A @max<br />Output : 12V DC, 5A |
+| PC Connection                      | USB                                                              | USB                                                              |
+| Firmware Upgrade                   | via USB / via JTAG                                               | via USB / via JTAG                                               |
+| Power Adapter (SMPS)               | Input : 100-240V, AC 50/60Hz, 1.5A @max<br />Output : 12V DC, 5A | Input : 100-240V, AC 50/60Hz, 1.5A @max<br />Output : 12V DC, 5A |
 
 ### [Dimension and Mass](#dimension-and-mass)
 
@@ -143,7 +142,7 @@ The following table shows the lists of components. The major differences between
 | .                      | RC-100B (Remote Controller)       |      0 |         1 |
 | **Sensors**            | <sup>**</sup>[LDS-01] or [LDS-02] |      1 |         1 |
 | .                      | [Raspberry Pi Camera v2.1]        |      0 |         1 |
-| **Memorys**            | MicroSD Card                      |      1 |         1 |
+| **Memory**            | MicroSD Card                      |      1 |         1 |
 | **Cables**             | Raspberry Pi Power Cable          |      1 |         1 |
 | .                      | Li-Po Battery Extension Cable     |      1 |         1 |
 | .                      | DYNAMIXEL to OpenCR Cable         |      2 |         2 |
@@ -173,18 +172,16 @@ The following table shows the lists of components. The major differences between
 | .                      | Bracket                           |      5 |         6 |
 | .                      | Adapter Plate                     |      1 |         1 |
 
-<sup>*</sup> [Raspberry Pi 3 Model B+] is applied since 2019. Earlier model is equipped with [Raspberry Pi 3 Model B].  
-<sup>*</sup> [Raspberry Pi 4 Model B] is applied since 2021 September.  
-<sup>**</sup> [LDS-02] is applied since 2022.
+<sup>*</sup> The [Raspberry Pi 3 Model B+] was included as standard starting in 2019. Earlier models are equipped with a [Raspberry Pi 3 Model B].  
+<sup>*</sup> The [Raspberry Pi 4 Model B] has been included as standard since 2021 September.<br>
+<sup>*</sup> The [LDS-02] has replaced the previous generation [LDS-01] since 2022.
 
-TurtleBot3 Waffle is discontinued due to the EOL of [Intel® Joule™ 570x].
+The TurtleBot3 Waffle is discontinued due to the EOL of the [Intel® Joule™ 570x] SBC.
 {: .notice}
 
 ### [Open Source Hardware](#open-source-hardware)
 
-Core components of Turtlebot3 are the followings: Chassis, Motors, Wheels, OpenCR, SBC, Sensors and Battery. The chassis are Waffle Plates that holds other components. The Waffle Plate plays an important role as a chassis although its size is as small as your palm. The Waffle Plate is manufactured with injection mold method to lower the manufacturing cost. However, the CAD data of Waffle Plate for 3D printing is also available via [Onshape][waffle_plate_on_onshape]. Turtlebot3 Burger is a Two-wheeled differential drive type platform, but it is customizable structurally and mechanically in many ways: Segway, Tank, Bike, Trailer and so on.
-
-The CAD data is released to the Onshape, which is a full-cloud 3D CAD editor. Get access through a web browser from your PC or from portable devices. Onshape allows drawing and assemblying parts with co-workers.
+Complete CAD data is available in Onshape, a full-cloud 3D CAD editor accessible through a web browser from your PC or from portable devices.
 
 - [TurtleBot3 Burger 3D Model](http://www.robotis.com/service/download.php?no=676)
 - [TurtleBot3 Waffle 3D Model](http://www.robotis.com/service/download.php?no=677)
