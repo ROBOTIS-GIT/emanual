@@ -122,13 +122,3 @@ A REBOOT is the only method to reset [{{ torque_enable }}] to ‘1’(Torque ON)
 <div class="notice">{{ shutdown_01 | markdownify }}</div>
 {% endif %}
 
-[Shutdown(18)]: #shutdown
-[Shutdown(48)]: #shutdown
-[Shutdown(63)]: #shutdown
-[Torque Enable(24)]: #torque-enable
-[Torque Enable(64)]: #torque-enable
-[Torque Enable(512)]: #torque-enable
-[Torque Enable(562)]: #torque-enable
-[Hardware Error Status(70)]: #hardware-error-status
-[Hardware Error Status(518)]: #hardware-error-status
-[Hardware Error Status(892)]: #hardware-error-status

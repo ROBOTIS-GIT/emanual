@@ -9,14 +9,13 @@
   - [제어기 다이나믹셀 호환표](/docs/kr/parts/controller/controller_compatibility/#다이나믹셀-호환표)
 {% endif %}
 - OS가 설치된 PC.
-- PC와 다이나믹셀 연결장치 ([U2D2] 또는 [USB2Dynamixel])
+- PC와 다이나믹셀 연결장치 ([U2D2] 또는 [OpenRB-150])
 - [호환 소프트웨어](#호환-소프트웨어)
 
 
 
 {% capture warn_01 %}
 **주의**: 
-- USB2DYNAMIXEL은 현재 단종되어 더 이상 판매되지 않습니다.
 - 사용하는 소프트웨어에 따라, 호환되는 OS가 다를수 있습니다. 해당 소프트웨어 매뉴얼에서 지원하는 OS를 참조하세요. 
 {% endcapture %}
 <div class="notice--warning">{{ warn_01 | markdownify }}</div>
@@ -29,33 +28,6 @@
 <div class="notice">{{ notice_01 | markdownify }}</div>
 
 ### [호환 소프트웨어](#호환-소프트웨어)
-
-다이나믹셀을 제어 및 관리하기위한 소프트웨어 입니다. 아래 호환 표를 참고하세요.
-
-| 모델                  | AX Series | DX Series | RX Series | EX Series | MX Series | X-Series       | PRO Series | P Series |
-|:----------------------|:----------|:----------|:----------|:----------|:----------|:---------------|:-----------|:---------|
-| R+ Manager 2.0 | X         | X         | X         | X         | O         | O              | O          | O        |
-| 다이나믹셀 위자드     | O         | X         | X         | O         | O         | X (XL320 지원) | O          | X        |
-| 다이나믹셀 위자드2.0  | O         | O         | O         | O         | O         | O              | O          | O        |
-| 다이나믹셀 SDK        | O         | O         | O         | O         | O         | O              | O          | O        |
-| 다이나믹셀 워크벤치   | O         | O         | O         | O         | O         | O              | O          | O        |
-
-{% capture notice_02 %}
-**참고**: 로보티즈에서 제공하는 제어기와 다이나믹셀을 함께사용할수 있는 소프트웨어가 있습니다. 아래를 참고하세요.
-- [제어기 다이나믹셀 호환표](/docs/kr/parts/controller/controller_compatibility/#다이나믹셀-호환표)
-- [제어기 소프트웨어 호환표](/docs/kr/parts/controller/controller_compatibility/#소프트웨어-호환표)
-{% endcapture %}
-<div class="notice">{{ notice_02 | markdownify }}</div>
-
-#### [로보플러스 매니저](#로보플러스-매니저)
-
-[로보플러스 매니저]는 로봇을 구성하는 각 장치들을 관리해줍니다. 이 프로그램의 주요 역할은 다음과 같습니다.
-
-- 제어기 펌웨어를 관리합니다. [(업데이트 및 복구 기능)](/docs/kr/software/rplus1/manager/#펌웨어-관리)
-- 사용에 필요한 모드설정 또는 제어기 및 주변 장치들의 상태를 점검합니다. [(테스트 및 설정기능)](/docs/kr/software/rplus1/manager/#테스트-및-설정)
-
-**참고**: 로보플러스 매니저 1.0은 기능의 제약이 있습니다. 최신버전인 [R+ Manager 2.0](#r-manger-20) 또는 [다이나믹셀 위자드 2.0](#다이나믹셀-위자드-20)을 사용하세요. 
-{: .notice}
 
 #### [R+ Manager 2.0](#r-manger-20)
 
@@ -96,21 +68,15 @@
 - ROS
 - Arduino
 
-#### [다이나믹셀 워크벤치](#다이나믹셀-워크벤치)
-
-[다이나믹셀 워크벤치]는 DYNAMIXEL SDK 를 기반으로 보다 간단하고 사용하기 쉽게 만든 라이브러리입니다. 
-
-**지원목록**:
-- C++
-- Linux, MacOS
-- ROS
-- Arduino
-
-**참고**: 다이나믹셀 워크벤치는 DYNAMIXEL SDK 와 비교하여 기능상의 제약이 있을수 있습니다.
-{: .notice}
+{% capture notice_02 %}
+**참고**: 로보티즈에서 제공하는 제어기와 다이나믹셀을 함께사용할수 있는 소프트웨어가 있습니다. 아래를 참고하세요.
+- [제어기 다이나믹셀 호환표](/docs/kr/parts/controller/controller_compatibility/#다이나믹셀-호환표)
+- [제어기 소프트웨어 호환표](/docs/kr/parts/controller/controller_compatibility/#소프트웨어-호환표)
+{% endcapture %}
+<div class="notice">{{ notice_02 | markdownify }}</div>
 
 [U2D2]: /docs/kr/parts/interface/u2d2/
-[USB2Dynamixel]: /docs/kr/parts/interface/usb2dynamixel/
+[OpenRB-150]: /docs/kr/parts/controller/openrb-150/
 [로보플러스 매니저]: /docs/kr/software/rplus1/manager/
 [R+ Manager 2.0]: /docs/kr/software/rplus2/manager/
 [다이나믹셀 SDK]: /docs/kr/software/dynamixel/dynamixel_sdk/overview/

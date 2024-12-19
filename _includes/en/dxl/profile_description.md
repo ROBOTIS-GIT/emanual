@@ -1,8 +1,8 @@
 The Profile is a generated movement trajectory intended to reduce vibration, noise and load of the motor by dynamically changing velocity and acceleration during movements.
-DYNAMIXEL servos provide 3 different types of Profile:
-![](/assets/images/dxl/x/profile_types.png)
+DYNAMIXEL servos provide 3 different types of Profile:  
+![](/assets/images/dxl/x/profile_types.png)  
 
-</br>Profiles are usually selected according to the combination of [Profile Velocity(112)] and [Profile Acceleration(108)].  
+Profiles are usually selected according to the combination of [Profile Velocity(112)] and [Profile Acceleration(108)].  
 
 
 When given a new [Goal Position(116)], the DYNAMIXEL's profile settings creates a desired velocity trajectory based on present movement velocity.

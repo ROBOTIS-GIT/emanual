@@ -35,5 +35,3 @@ For more detailed information, see [What is the Profile](#what-is-the-profile).
 
 {% endif %}
 
-[Moving Status(123)]: #moving-status123
-[Drive Mode(10)]: #drive-mode10
