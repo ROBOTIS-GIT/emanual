@@ -1,7 +1,7 @@
 
 ### [Idler Horn Assembly](#idler-horn-assembly)
 
-An idler horn is required in addition to a DYNAMIXEL's output horn for installation of hinge frame accessories.
+An idler horn is required for installation of hinge frame accessories.
 
 Additionally, the hollow shaft of an installed idler horn provides a neat cable wiring solution.
 
