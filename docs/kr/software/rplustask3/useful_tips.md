@@ -13,7 +13,7 @@ product_group: rplustask3
 page_number: 7
 ---
 
-<div style="counter-reset: h1 7"></div>
+<style>body {counter-reset: h1 7 !important;}</style>
 
 # [유용한 정보](#유용한-정보)
 

@@ -11,7 +11,7 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h1 1"></div>
+<style>body {counter-reset: h1 1 !important;}</style>
 
 # [Download](#download)
 

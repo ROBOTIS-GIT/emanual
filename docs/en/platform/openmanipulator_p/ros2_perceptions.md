@@ -13,7 +13,7 @@ product_group: openmanipulator_p
 page_number: 17
 ---
 
-<div style="counter-reset: h1 16"></div>
+<style>body {counter-reset: h1 16 !important;}</style>
 
 # [[ROS 2] Perceptions](#ros-2-perceptions)
 

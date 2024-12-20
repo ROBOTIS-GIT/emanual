@@ -13,7 +13,7 @@ product_group: rplustask3
 page_number: 6
 ---
 
-<div style="counter-reset: h1 6"></div>
+<style>body {counter-reset: h1 6 !important;}</style>
 
 # [Motion Programming](#motion-programming)
 

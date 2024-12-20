@@ -28272,10 +28272,10 @@ rplustask3:
       url: /software/rplustask3/python_api/#submodules-of-pycm
     - title: "Const Submodule"
       url: /software/rplustask3/python_api/#const-submodule
-    - title: "Led submodule"
+    - title: "Led Submodule"
       url: /software/rplustask3/python_api/#led-submodule
     - title: "Info Submodule"
-      url: /software/rplustask3/python_api/#info-submodule)
+      url: /software/rplustask3/python_api/#info-submodule
     - title: "EEPROM Submodule"
       url: /software/rplustask3/python_api/#eeprom-submodule
     - title: "RC Submodule"

@@ -13,7 +13,7 @@ product_group: op2
 page_number: 2
 ---
 
-<div style="counter-reset: h1 5"></div>
+<style>body {counter-reset: h1 5 !important;}</style>
 
 # [ROBOTIS-OP2 ROS Packages](#robotis-op2-ros-packages)
 

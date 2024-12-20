@@ -13,7 +13,7 @@ product_group: rplustask3
 page_number: 2
 ---
 
-<div style="counter-reset: h1 2"></div>
+<style>body {counter-reset: h1 2 !important;}</style>
 
 # [Task Programming](#task-programming)
 

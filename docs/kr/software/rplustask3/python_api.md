@@ -13,7 +13,7 @@ product_group: rplustask3
 page_number: 5
 ---
 
-<div style="counter-reset: h1 5"></div>
+<style>body {counter-reset: h1 5 !important;}</style>
 
 # [태스크 파이썬 API](#태스크-파이썬-api)
 

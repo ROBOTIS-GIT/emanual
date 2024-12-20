@@ -13,7 +13,7 @@ product_group: rplustask3
 page_number: 4
 ---
 
-<div style="counter-reset: h1 4"></div>
+<style>body {counter-reset: h1 4 !important;}</style>
 
 # [태스크 파라미터](#태스크-파라미터)
 

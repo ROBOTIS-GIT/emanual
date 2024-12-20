@@ -13,7 +13,7 @@ product_group: manipulator_h
 page_number: 6
 ---
 
-<div style="counter-reset: h1 5"></div>
+<style>body {counter-reset: h1 5 !important;}</style>
 
 # [ROBOTIS Manipulator ROS](#robotis-manipulator-ros)
 

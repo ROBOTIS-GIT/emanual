@@ -11,8 +11,7 @@ sidebar:
   nav: "rplustask1"
 ---
 
-<div style="counter-reset: h1 2">
-</div>
+<style>body {counter-reset: h1 2 !important;}</style>
 
 # [프로그래밍](#프로그래밍)
 
