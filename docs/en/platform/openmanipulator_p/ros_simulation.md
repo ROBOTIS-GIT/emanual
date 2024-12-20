@@ -13,7 +13,7 @@ product_group: openmanipulator_p
 page_number: 7
 ---
 
-<div style="counter-reset: h1 6"></div>
+<style>body {counter-reset: h1 6 !important;}</style>
 
 # [[ROS] Simulation](#ros-simulation)
 

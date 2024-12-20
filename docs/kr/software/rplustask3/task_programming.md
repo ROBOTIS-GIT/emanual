@@ -13,7 +13,7 @@ product_group: rplustask3
 page_number: 2
 ---
 
-<div style="counter-reset: h1 2"></div>
+<style>body {counter-reset: h1 2 !important;}</style>
 
 # [태스크 프로그래밍](#태스크-프로그래밍)
 

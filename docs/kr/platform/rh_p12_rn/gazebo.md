@@ -13,7 +13,7 @@ product_group: rh_p12_rn
 page_number: 3
 ---
 
-<div style="counter-reset: h1 6"></div>
+<style>body {counter-reset: h1 6 !important;}</style>
 
 # [Gazebo Simulation](gazebo-simulation)
 

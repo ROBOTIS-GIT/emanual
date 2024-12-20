@@ -13,7 +13,7 @@ product_group: openmanipulator_x
 page_number: 2
 ---
 
-<div style="counter-reset: h1 1"></div>
+<style>body {counter-reset: h1 1 !important;}</style>
 
 # [Specification](#specification)
 

@@ -11,7 +11,7 @@ sidebar:
   nav: "openmanipulator_p"
 ---
 
-<div style="counter-reset: h1 4"></div>
+<style>body {counter-reset: h1 4 !important;}</style>
 
 # [[ROS] Manipulator Manager](#ros-manipulator-manager)
 

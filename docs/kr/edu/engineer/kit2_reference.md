@@ -13,7 +13,7 @@ product_group: kit2
 page_number: 4
 ---
 
-<div style="counter-reset: h1 3"></div>
+<style>body {counter-reset: h1 3 !important;}</style>
 
 # [참고자료](#참고자료)
 

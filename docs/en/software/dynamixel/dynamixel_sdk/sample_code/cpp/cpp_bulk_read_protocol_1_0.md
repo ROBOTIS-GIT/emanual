@@ -11,7 +11,7 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h1 5"></div>
+<style>body {counter-reset: h1 5 !important;}</style>
 <div style="counter-reset: h2 5"></div>
 <div style="counter-reset: h3 3"></div>
 

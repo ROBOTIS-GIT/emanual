@@ -11,7 +11,7 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h1 3"></div>
+<style>body {counter-reset: h1 3 !important;}</style>
 
 # [Library Setup](#library-setup)
 

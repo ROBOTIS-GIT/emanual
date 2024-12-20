@@ -13,7 +13,7 @@ product_group: rh_p12_rn
 page_number: 2
 ---
 
-<div style="counter-reset: h1 5"></div>
+<style>body {counter-reset: h1 5 !important;}</style>
 
 # [Examples](#examples)
 

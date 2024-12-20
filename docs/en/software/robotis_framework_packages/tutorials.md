@@ -11,7 +11,7 @@ sidebar:
   nav: "robotis_framework_packages"
 ---
 
-<div style="counter-reset: h1 1"></div>
+<style>body {counter-reset: h1 1 !important;}</style>
 
 # [Tutorials](#tutorials)
 
