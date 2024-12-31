@@ -55,29 +55,32 @@ X : Unavailable<br>
 {% include en/platform/turtlebot3/quickstart_noetic.md %}
 </section>
 
-<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+<!-- <!-- <section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/turtlebot3/quickstart_kinetic.md %}
-</section>
+</section> -->
 
-<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+<!-- <section data-id="{{ page.tab_title2 }}" class="tab_contents">
 {% include en/platform/turtlebot3/quickstart_melodic.md %}
-</section>
+</section> -->
+
 
 <section data-id="{{ page.tab_title4 }}" class="tab_contents">
-{% include en/platform/turtlebot3/quickstart_dashing.md %}
-</section>
 
-<section data-id="{{ page.tab_title5 }}" class="tab_contents">
+<!-- <section data-id="{{ page.tab_title4 }}" class="tab_contents">
+{% include en/platform/turtlebot3/quickstart_dashing.md %}
+</section> -->
+
+<!-- <section data-id="{{ page.tab_title5 }}" class="tab_contents">
 {% include en/platform/turtlebot3/quickstart_foxy.md %}
-</section>
+</section> -->
 
 <section data-id="{{ page.tab_title6 }}" class="tab_contents">
 {% include en/platform/turtlebot3/quickstart_humble.md %}
 </section>
 
-<section data-id="{{ page.tab_title7 }}" class="tab_contents">
+<!-- <section data-id="{{ page.tab_title7 }}" class="tab_contents">
 {% include en/platform/turtlebot3/quickstart_windows.md %}
-</section>
+</section> -->
 
 <!--
 

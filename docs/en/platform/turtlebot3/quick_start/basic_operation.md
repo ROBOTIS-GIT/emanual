@@ -27,30 +27,30 @@ page_number: 9
   <p class="dummy_content">Basic Opearation Features</p>
 <![end dummy Header 1]-->
 
-<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+<!-- <section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/turtlebot3/basic_operation_kinetic.md %}
-</section>
+</section> -->
 
-<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+<!-- <section data-id="{{ page.tab_title2 }}" class="tab_contents">
 {% include en/platform/turtlebot3/basic_operation_melodic.md %}
-</section>
+</section> -->
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
 {% include en/platform/turtlebot3/basic_operation_noetic.md %}
 </section>
 
-<section data-id="{{ page.tab_title4 }}" class="tab_contents">
+<!-- <section data-id="{{ page.tab_title4 }}" class="tab_contents">
 {% include en/platform/turtlebot3/basic_operation_dashing.md %}
-</section>
+</section> -->
 
-<section data-id="{{ page.tab_title5 }}" class="tab_contents">
+<!-- <section data-id="{{ page.tab_title5 }}" class="tab_contents">
 {% include en/platform/turtlebot3/basic_operation_foxy.md %}
-</section>
+</section> -->
 
 <section data-id="{{ page.tab_title6 }}" class="tab_contents">
 {% include en/platform/turtlebot3/basic_operation_humble.md %}
 </section>
 
-<section data-id="{{ page.tab_title7 }}" class="tab_contents">
+<!-- <section data-id="{{ page.tab_title7 }}" class="tab_contents">
 {% include en/platform/turtlebot3/basic_operation_windows.md %}
-</section>
+</section> -->

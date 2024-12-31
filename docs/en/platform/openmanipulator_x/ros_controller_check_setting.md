@@ -7,10 +7,10 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_x/ros_controller_check_setting/
 tabs: "ROS"
-tab_title1: Kinetic
+#tab_title1: Kinetic
 tab_title2: Noetic
-tab_title3: Dashing
-tab_title4: Foxy
+#tab_title3: Dashing
+#tab_title4: Foxy
 tab_title5: Humble
 tab_title6: Arduino
 
@@ -36,21 +36,21 @@ page_number: 7
 
 ### [Manipulator Description](#manipulator-description)
 
-<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+<!-- <section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/openmanipulator_x/controller/check_setting_kinetic.md %}
-</section>
+</section> -->
 
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
 {% include en/platform/openmanipulator_x/controller/check_setting_noetic.md %}
 </section>
 
-<section data-id="{{ page.tab_title3 }}" class="tab_contents">
+<!-- <section data-id="{{ page.tab_title3 }}" class="tab_contents">
 {% include en/platform/openmanipulator_x/controller/check_setting_dashing.md %}
-</section>
+</section> -->
 
-<section data-id="{{ page.tab_title4 }}" class="tab_contents">
+<!-- <section data-id="{{ page.tab_title4 }}" class="tab_contents">
 {% include en/platform/openmanipulator_x/controller/check_setting_dashing.md %}
-</section>
+</section> -->
 
 <section data-id="{{ page.tab_title5 }}" class="tab_contents">
 Not supported.
@@ -64,21 +64,21 @@ Not supported
 
 ### [RViz](#rviz)
 
-<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+<!-- <section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/openmanipulator_x/controller/check_setting_rviz_kinetic.md %}
-</section>
+</section> -->
 
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
 {% include en/platform/openmanipulator_x/controller/check_setting_rviz_noetic.md %}
 </section>
 
-<section data-id="{{ page.tab_title3 }}" class="tab_contents">
+<!-- <section data-id="{{ page.tab_title3 }}" class="tab_contents">
 {% include en/platform/openmanipulator_x/controller/check_setting_rviz_dashing.md %}
-</section>
+</section> -->
 
-<section data-id="{{ page.tab_title4 }}" class="tab_contents">
+<!-- <section data-id="{{ page.tab_title4 }}" class="tab_contents">
 {% include en/platform/openmanipulator_x/controller/check_setting_rviz_dashing.md %}
-</section>
+</section> -->
 
 <section data-id="{{ page.tab_title5 }}" class="tab_contents">
 {% include en/platform/openmanipulator_x/controller/check_setting_rviz_humble.md %}
