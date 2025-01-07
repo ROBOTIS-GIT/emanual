@@ -63,9 +63,6 @@ X : Unavailable<br>
 {% include en/platform/turtlebot3/quickstart_melodic.md %}
 </section> -->
 
-
-<section data-id="{{ page.tab_title4 }}" class="tab_contents">
-
 <!-- <section data-id="{{ page.tab_title4 }}" class="tab_contents">
 {% include en/platform/turtlebot3/quickstart_dashing.md %}
 </section> -->
