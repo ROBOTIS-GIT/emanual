@@ -150,6 +150,9 @@ BT-430 동글은 페어링 연결을 통해 신뢰성 있는 1:1 통신을 할 �
   - 컴퓨터의 `내 PC` 에 "`BT-430 BOOT`" 라는 이름의 USB 메모리 장치가 표시됩니다.
   - [링크](/assets/images/parts/communication/bt430_fw_v2.2.1.uf2)의 uf2파일을 PC에 다운로드 하고 이 파일을 해당 USB 장치에 복사합니다.
   - 복사가 완료되면 BT-430 동글은 자동으로 재부팅 됩니다.
+  - 구버전 부트로더를 사용하는 BT-430 동글의 경우 펌웨어 복사후 아래와 같은 경고창이 표시될 수 있으나 펌웨어 업데이트는 정상적으로 된 것입니다.
+    ![img](/assets/images/parts/communication/bt-430_dongle_fw_copy_warning_ko.png)
+    
   - 만약 재부팅 이후 BT-430의 COM포트를 찾을 수 없으면 다음 방법들을 시도해 주세요.
     1. BT-430 동글의 USB 연결을 분리하고 다시 연결
     2. 만약 BT-430이 USB허브에 연결되었다면 USB허브와 PC를 연결한 USB 커넥터를 분리하고 다시 연결

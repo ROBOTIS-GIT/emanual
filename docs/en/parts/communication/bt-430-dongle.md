@@ -146,7 +146,10 @@ If you enter ? in the terminal, the BT-430 version will be displayed as `BT-430,
   - Enter `AT+BTBOOT` in the terminal and press ENTER to make the BT-430 enter bootloader mode, and the red LED will turn on.  
   - A USB storage device named "`BT-430 BOOT`" will appear in `This PC` on the computer.  
   - Download the uf2 file from [link](/assets/images/parts/communication/bt430_fw_v2.2.1.uf2) to your PC and copy this file to the USB device.  
-  - Once the copy is complete, the BT-430 dongle will automatically reboot.  
+  - Once the copy is complete, the BT-430 dongle will automatically reboot.
+  - For BT-430 dongles using an older version of the bootloader, the following warning window may appear after copying the firmware, but the firmware update has been completed successfully.  
+  ![img](/assets/images/parts/communication/bt-430_dongle_fw_copy_warning_en.png)
+
   - If you cannot find the COM port of the BT-430 after rebooting, please try the following methods:
     1. Disconnect and reconnect the USB connection of the BT-430 dongle.
     2. If the BT-430 is connected via a USB hub, disconnect and reconnect the USB connector that connects the USB hub to the PC.
