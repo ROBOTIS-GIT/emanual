@@ -11,17 +11,17 @@ sidebar:
 
 ## [YM070 Series](#ym070-series)
 
-|                               Motor                         |                                                        Reducer                                                    |
-|:-----------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------:|
-|  ![](/assets/images/dxl/y/ym070-210-m-rh_porduct.png){: width="100"}       |                               ![](/assets/images/dxl/y/ym070-210-r-rh_porduct.png)                 |
-|  [YM070-210-M001-RH](/docs/en/dxl/y/ym070-210-m001-rh)      |  [YM070-210-R051-RH](/docs/en/dxl/y/ym070-210-r051-rh)<br>[YM070-210-R099-RH](/docs/en/dxl/y/ym070-210-r099-rh)   |
+|                               Motor                         |                         Brake                                   |                                                   Reducer                                                    |                                All in one                                    |
+|:------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------:|
+|  ![](/assets/images/dxl/y/ym070-210-m-rh_porduct.png){: width="100"}       |       ![](/assets/images/dxl/y/ym070-210-b-rh_porduct.png){: width="100"}        |                ![](/assets/images/dxl/y/ym070-210-r-rh_porduct.png)                 |![](/assets/images/dxl/y/ym070-210-a-rh_porduct.png) |
+|  [YM070-210-M001-RH](/docs/en/dxl/y/ym070-210-m001-rh)      |  [YM070-210-B001-RH](/docs/en/dxl/y/ym070-210-b001-rh) | [YM070-210-R051-RH](/docs/en/dxl/y/ym070-210-r051-rh)<br>[YM070-210-R099-RH](/docs/en/dxl/y/ym070-210-r099-rh)   | [YM070-210-A051-RH](/docs/en/dxl/y/ym070-210-a051-rh)<br>[YM070-210-A099-RH](/docs/en/dxl/y/ym070-210-a099-rh) | 
 
 ## [YM080 Series](#ym080-series)
 
-|                               motor                         |                                                        Reducer                                                    |
-|:-----------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------:|
-|  ![](/assets/images/dxl/y/ym080-230-m-rh_porduct.png){: width="100"}       |                              ![](/assets/images/dxl/y/ym080-230-r-rh_porduct.png)                  |
-|  [YM080-230-M001-RH](/docs/en/dxl/y/ym080-230-m001-rh)      |  [YM080-230-R051-RH](/docs/en/dxl/y/ym080-230-r051-rh)<br>[YM080-230-R099-RH](/docs/en/dxl/y/ym080-230-r099-rh)   |
+|                               Motor                         |                         Brake                                   |                                                   Reducer                                                    |                                All in one                                    |
+|:------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------:|
+|  ![](/assets/images/dxl/y/ym080-230-m-rh_porduct.png){: width="100"}       |       ![](/assets/images/dxl/y/ym080-230-b-rh_porduct.png){: width="100"}                |       ![](/assets/images/dxl/y/ym080-230-r-rh_porduct.png)                  |  ![](/assets/images/dxl/y/ym080-230-a-rh_porduct.png)  |
+|  [YM080-230-M001-RH](/docs/en/dxl/y/ym080-230-m001-rh)      |   [YM080-230-B001-RH](/docs/en/dxl/y/ym080-230-b001-rh)  |  [YM080-230-R051-RH](/docs/en/dxl/y/ym080-230-r051-rh)<br>[YM080-230-R099-RH](/docs/en/dxl/y/ym080-230-r099-rh)   |   [YM080-230-A051-RH](/docs/en/dxl/y/ym080-230-a051-rh)<br>[YM080-230-A099-RH](/docs/en/dxl/y/ym080-230-a099-rh)  |
 
 # [P Series](#p-series)
 
