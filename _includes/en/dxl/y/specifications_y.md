@@ -21,6 +21,7 @@
 | Maximum Torque<sup>2)<sup>     | {{ site.data.dxl_y_info[page.ref].maximumtorque }}        |
 | Maximum Current<sup>1) 2)<sup> | {{ site.data.dxl_y_info[page.ref].maximumcurrent }}       |
 | Output                         | {{ site.data.dxl_y_info[page.ref].output }}               |
+| Input Voltage                  | {{ site.data.dxl_y_info[page.ref].opvoltage }}            |
 | Operating Temperature          | {{ site.data.dxl_y_info[page.ref].temperature }}          |
 | Command Signal                 | {{ site.data.dxl_y_info[page.ref].commandsignal }}        |
 | Physical Connection            | {{ site.data.dxl_y_info[page.ref].connection_en }}        |
