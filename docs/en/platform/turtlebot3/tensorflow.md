@@ -11,7 +11,7 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 13"></div>
+<style>body {counter-reset: h1 13 !important;}</style>
 
 # [Tensorflow](#Tensorflow)
 

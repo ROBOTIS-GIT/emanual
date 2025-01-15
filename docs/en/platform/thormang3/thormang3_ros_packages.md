@@ -13,7 +13,7 @@ product_group: thormang3
 page_number: 4
 ---
 
-<div style="counter-reset: h1 3"></div>
+<style>body {counter-reset: h1 3 !important;}</style>
 
 # [THORMANG3 ROS Packages](#thormang3-ros-packages)
 

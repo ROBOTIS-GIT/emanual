@@ -26,6 +26,3 @@ The {{ status_return_lv }} is used to set the DYNAMIXEL's response policy when a
 
 **NOTE** : If the [Instruction Packet ID](/docs/en/dxl/protocol2/) is set to the [Broadcast ID(0xFE)](/docs/en/dxl/protocol2/#packet-id), a Status Packet will not be returned for READ or WRITE Instructions regardless of {{ status_return_lv }}. For more details, please refer to the `Status Packet` section of the [{{ protocol }}] page.
 {: .notice}
-
-[DYNAMIXEL Protocol 1.0]: /docs/en/dxl/protocol1/
-[DYNAMIXEL Protocol 2.0]: /docs/en/dxl/protocol2/

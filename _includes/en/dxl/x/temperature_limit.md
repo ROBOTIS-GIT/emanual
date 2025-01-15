@@ -1,5 +1,5 @@
 The Temperature Limit(31) is used to configure an upper limit on DYNAMIXEL operating temperature.  
-When the [Present Temperature(146)](#present-temperature146) is greater than the Temperature Limit(31), the **Overheating Error Bit(0x04)** and **Alert Bit(0x80)** in the [Hardware Error Status(70)](hardware-error-status70) register will be set. If the Overheating Error Bit(0x04) is configured in [Shutdown(63)], [Torque Enable(64)] will be set to ‘0’ (Torque OFF). 
+When the [Present Temperature(146)] is greater than the Temperature Limit(31), the **Overheating Error Bit(0x04)** and **Alert Bit(0x80)** in the [Hardware Error Status(70)] register will be set. If the Overheating Error Bit(0x04) is configured in [Shutdown(63)], [Torque Enable(64)] will be set to ‘0’ (Torque OFF). 
 See [Shutdown(63)] for more detailed information.
 
 |     Unit     | Value Range | Description  |

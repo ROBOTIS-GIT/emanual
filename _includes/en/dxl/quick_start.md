@@ -48,8 +48,15 @@ The following features are provided by DYNAMIXEL Wizard 2.0:
 - ROS
 - Arduino
 
+{% capture notice_02 %}
+**NOTE**: You can also use more variety of software. For more information, see the following to check software provided by ROBOTIS.
+- [DYNAMIXEL to software Compatibility Table ](/docs/en/parts/controller/controller_compatibility/#dynamixel)
+- [Controller to software Compatibility Table](/docs/en/parts/controller/controller_compatibility/#software)
+{% endcapture %}
+<div class="notice">{{ notice_02 | markdownify }}</div>
+
 [U2D2]: /docs/en/parts/interface/u2d2/
-[USB2DYNAMIXEL]: /docs/en/parts/interface/usb2dynamixel/
+[OpenRB-150]: /docs/en/parts/controller/openrb-150/
 [R+ Manager]: /docs/en/software/rplus1/manager/
 [R+ Manager 2.0]: /docs/en/software/rplus2/manager/
 [DYNAMIXEL SDK]: /docs/en/software/dynamixel/dynamixel_sdk/overview/

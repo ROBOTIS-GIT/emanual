@@ -12,21 +12,39 @@ main:
       - title: "YM070-210-M001-RH"
         titlekr: "YM070-210-M001-RH"
         url: /dxl/y/ym070-210-m001-rh/
+      - title: "YM070-210-B001-RH"
+        titlekr: "YM070-210-B001-RH"
+        url: /dxl/y/ym070-210-b001-rh/
       - title: "YM070-210-R051-RH"
         titlekr: "YM070-210-R051-RH"
         url: /dxl/y/ym070-210-r051-rh/
       - title: "YM070-210-R099-RH"
         titlekr: "YM070-210-R099-RH"
         url: /dxl/y/ym070-210-r099-rh/
+      - title: "YM070-210-A051-RH"
+        titlekr: "YM070-210-A051-RH"
+        url: /dxl/y/ym070-210-a051-rh/
+      - title: "YM070-210-A099-RH"
+        titlekr: "YM070-210-A099-RH"
+        url: /dxl/y/ym070-210-a099-rh/
       - title: "YM080-230-M001-RH"
         titlekr: "YM080-230-M001-RH"
         url: /dxl/y/ym080-230-m001-rh/
+      - title: "YM080-230-B001-RH"
+        titlekr: "YM080-230-B001-RH"
+        url: /dxl/y/ym080-230-b001-rh/
       - title: "YM080-230-R051-RH"
         titlekr: "YM080-230-R051-RH"
         url: /dxl/y/ym080-230-r051-rh/
       - title: "YM080-230-R099-RH"
         titlekr: "YM080-230-R099-RH"
         url: /dxl/y/ym080-230-r099-rh/
+      - title: "YM080-230-A051-RH"
+        titlekr: "YM080-230-A051-RH"
+        url: /dxl/y/ym080-230-a051-rh/
+      - title: "YM080-230-A099-RH"
+        titlekr: "YM080-230-A099-RH"
+        url: /dxl/y/ym080-230-a099-rh/
     - title: "P Series"
       titlekr: "P 시리즈"
       url: /dxl/p/
@@ -26098,6 +26116,8 @@ turtlebot3:
       url: /platform/turtlebot3/learn/#aws-robomaker-with-turtlebot3
     - title: "Data Collection via Matlab"
       url: /platform/turtlebot3/learn/#data-collection-via-matlab
+    - title: "The Construct"
+      url: /platform/turtlebot3/learn/#the-construct
     - title: "TurtleBot3 Blockly"
       url: /platform/turtlebot3/learn/#turtlebot3-blockly
     - title: "TurtleBot3 Simulation on ROS Indigo"
@@ -26113,8 +26133,8 @@ turtlebot3:
         url: /platform/turtlebot3/videos/#videos-from-open-source-team
       - title: "ROBOTIS Channel"
         url: /platform/turtlebot3/videos/#videos-from-robotis-channel
-      - title: "Projects"
-        url: /platform/turtlebot3/projects/
+    - title: "Projects"
+      url: /platform/turtlebot3/projects/
   - title: "More Info"
     url: /platform/turtlebot3/appendixes/#more-info
     children:
@@ -28270,10 +28290,10 @@ rplustask3:
       url: /software/rplustask3/python_api/#submodules-of-pycm
     - title: "Const Submodule"
       url: /software/rplustask3/python_api/#const-submodule
-    - title: "Led submodule"
+    - title: "Led Submodule"
       url: /software/rplustask3/python_api/#led-submodule
     - title: "Info Submodule"
-      url: /software/rplustask3/python_api/#info-submodule)
+      url: /software/rplustask3/python_api/#info-submodule
     - title: "EEPROM Submodule"
       url: /software/rplustask3/python_api/#eeprom-submodule
     - title: "RC Submodule"
