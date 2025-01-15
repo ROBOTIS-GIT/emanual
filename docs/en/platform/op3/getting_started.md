@@ -13,7 +13,7 @@ product_group: op3
 page_number: 3
 ---
 
-<div style="counter-reset: h1 2"></div>
+<style>body {counter-reset: h1 2 !important;}</style>
 
 # [Getting Started](#getting-started)
 

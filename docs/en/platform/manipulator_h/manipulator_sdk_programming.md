@@ -13,7 +13,7 @@ product_group: manipulator_h
 page_number: 3
 ---
 
-<div style="counter-reset: h1 2"></div>
+<style>body {counter-reset: h1 2 !important;}</style>
 
 # [Manipulator SDK Programming](#manipulator-sdk-programming)
 

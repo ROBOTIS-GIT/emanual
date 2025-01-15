@@ -13,7 +13,7 @@ product_group: manipulator_h
 page_number: 5
 ---
 
-<div style="counter-reset: h1 4"></div>
+<style>body {counter-reset: h1 4 !important;}</style>
 
 
 # [References](#references)

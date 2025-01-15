@@ -13,7 +13,7 @@ product_group: manipulator_h
 page_number: 9
 ---
 
-<div style="counter-reset: h1 8"></div>
+<style>body {counter-reset: h1 8 !important;}</style>
 
 # [Firmware Recovery](#firmware-recovery)
 

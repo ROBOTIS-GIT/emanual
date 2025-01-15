@@ -13,7 +13,7 @@ product_group: turtlebot3
 page_number: 
 ---
 
-<div style="counter-reset: h1 9"></div>
+<style>body {counter-reset: h1 9 !important;}</style>
 <div style="counter-reset: h2 1"></div>
 
 # [[ROS 1] Applications](#ros-1-applications)

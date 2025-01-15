@@ -11,8 +11,7 @@ sidebar:
   nav: "opencmide"
 ---
 
-<div style="counter-reset: h1 3">
-</div>
+<style>body {counter-reset: h1 3 !important;}</style>
 
 # [API References](#api-references)
 

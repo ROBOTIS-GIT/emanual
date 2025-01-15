@@ -16,7 +16,7 @@ product_group: turtlebot3
 page_number: 14
 ---
 
-<div style="counter-reset: h1 6"></div>
+<style>body {counter-reset: h1 6 !important;}</style>
 <div style="counter-reset: h2 2"></div>
 
 <!--[dummy Header 1]>

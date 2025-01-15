@@ -13,7 +13,7 @@ product_group: turtlebot3
 page_number: 23
 ---
 
-<div style="counter-reset: h1 10"></div>
+<style>body {counter-reset: h1 10 !important;}</style>
 <div style="counter-reset: h2 1"></div>
 
 # [Locomotion](#locomotion)

@@ -13,7 +13,7 @@ product_group: op3
 page_number: 8
 ---
 
-<div style="counter-reset: h1 7"></div>
+<style>body {counter-reset: h1 7 !important;}</style>
 
 # [Recovery](#recovery)
 

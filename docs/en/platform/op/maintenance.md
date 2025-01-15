@@ -13,7 +13,7 @@ product_group: op
 page_number: 4
 ---
 
-<div style="counter-reset: h1 5"></div>
+<style>body {counter-reset: h1 5 !important;}</style>
 
 # [Maintenance](#maintenance)
 

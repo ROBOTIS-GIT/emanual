@@ -13,8 +13,7 @@ product_group: thormang3
 page_number: 5
 ---
 
-<div style="counter-reset: h1 4">
-</div>
+<style>body {counter-reset: h1 4 !important;}</style>
 
 # [THORMANG3 Operation](#thormang3-operation)
 

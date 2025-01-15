@@ -13,7 +13,7 @@ product_group: thormang3
 page_number: 7
 ---
 
-<div style="counter-reset: h1 6"></div>
+<style>body {counter-reset: h1 6 !important;}</style>
 
 # [References](#references)
 

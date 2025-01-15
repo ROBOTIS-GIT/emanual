@@ -13,7 +13,7 @@ product_group: openmanipulator_p
 page_number: 19
 ---
 
-<div style="counter-reset: h1 18"></div>
+<style>body {counter-reset: h1 18 !important;}</style>
 
 # [[ROS 2] Applications](#ros-2-applications)
 

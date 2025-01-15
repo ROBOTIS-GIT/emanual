@@ -13,7 +13,7 @@ product_group: openmanipulator_p
 page_number: 5
 ---
 
-<div style="counter-reset: h1 4"></div>
+<style>body {counter-reset: h1 4 !important;}</style>
 
 # [[ROS] Controller Package](#ros-controller-package)
 
