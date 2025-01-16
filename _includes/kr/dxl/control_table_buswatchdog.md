@@ -1,5 +1,5 @@
 {% if page.ref=='xd430-t210' or page.ref=='xd430-t350' or page.ref=='xd540-t150' or page.ref=='xd540-t270' or page.ref=='xd430-t200' or page.ref=='xw430-t333' or page.ref=='xw540-t140' or page.ref=='xw540-t260' %}
-{% assign communication= "(RS486)" %}
+{% assign communication= "(RS485)" %}
 {% else %}
 {% assign communication= "(RS485, TTL)" %}
 {% endif %}
