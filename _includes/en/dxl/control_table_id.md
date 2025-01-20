@@ -2,21 +2,24 @@
 
 {% assign stauts_return_lv = "Stuatus Return Level (16)" %}
 {% assign protocol= "DYNAMIXEL Protocol 1.0" %}
+{% assign id= "0~253 (0xFD)" %}
 
 {% elsif page.product_group == 'dxl_xl320' %}
 
 {% assign stauts_return_lv = "Stuatus Return Level (17)" %}
 {% assign protocol= "DYNAMIXEL Protocol 2.0" %}
+{% assign id= "0~252 (0xFC)" %}
 
 {% else %}
 
 {% assign stauts_return_lv = "Stuatus Return Level (68)" %} <!-- X / MX 2.0  -->
 {% assign protocol= "DYNAMIXEL Protocol 2.0" %}
+{% assign id= "0~252 (0xFC)" %}
 
 {% endif %}
 
 The ID is a unique value in the network to identify each DYNAMIXEL with an Instruction Packet.
-0~253 (0xFD) values can be used as an ID, and 254(0xFE) is occupied as a broadcast ID. The Broadcast ID(254, 0xFE) can send an Instruction Packet to all connected DYNAMIXEL simultaneously.
+{{ id }} values can be used as an ID, and 254(0xFE) is occupied as a broadcast ID. The Broadcast ID(254, 0xFE) can send an Instruction Packet to all connected DYNAMIXEL simultaneously.
 
 **NOTE** : Please avoid using an identical ID for multiple DYNAMIXEL. You may face communication failure or may not be able to detect DYNAMIXEL with an identical ID.
 {: .notice}
