@@ -2,21 +2,24 @@
 
 {% assign stauts_return_lv = "Stuatus Return Level (16)" %}
 {% assign protocol= "다이나믹셀 프로토콜 1.0" %}
+{% assign id= "0~253 (0xFD)" %}
 
 {% elsif page.product_group == 'dxl_xl320' %}
 
 {% assign stauts_return_lv = "Stuatus Return Level (17)" %}
 {% assign protocol= "다이나믹셀 프로토콜 2.0" %}
+{% assign id= "0~252 (0xFC)" %}
 
 {% else %}
 
 {% assign stauts_return_lv = "Stuatus Return Level (68)" %}  <!-- X / MX 2.0  -->
 {% assign protocol= "다이나믹셀 프로토콜 2.0" %}
+{% assign id= "0~252 (0xFC)" %}
 
 {% endif %}
 
 Instruction Packet으로 장치를 식별하기 위한 고유 번호입니다.
-0~253 (0xFD) 까지 사용 가능하며, 254(0xFE)는 브로드캐스트(Broadcast) ID로 특수하게 사용됩니다.
+{{ id }} 까지 사용 가능하며, 254(0xFE)는 브로드캐스트(Broadcast) ID로 특수하게 사용됩니다.
 브로드캐스트 ID(254, 0xFE)로 Instruction Packet을 전송하면 모든 장치에 명령을 내릴 수 있습니다.
 
 **참고** : 연결된 장치의 ID가 중복되지 않도록 주의해야 합니다. 장치의 ID가 중복되면, 통신 오류 및 고유의 ID를 가지는 다이나믹셀 검색에 실패합니다.
