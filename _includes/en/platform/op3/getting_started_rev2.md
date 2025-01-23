@@ -1,26 +1,4 @@
----
-layout: archive
-lang: en
-ref: op3_getting_started
-read_time: true
-share: true
-author_profile: false
-permalink: /docs/en/platform/op3/getting_started/
-tabs: "Revision"
-tab_title1: "2025 ~"
-tab_title2: "~ 2023"
-sidebar:
-  title: ROBOTIS OP3
-  nav: "op3"
-product_group: op3
-page_number: 3
----
-
-<style>body {counter-reset: h1 2 !important;}</style>
-
-<section data-id="{{ page.tab_title1 }}" class="tab_contents">
-
-# [Getting Started](#getting-started) - (2025 ~)
+# [Getting Started](#getting-started) - (~ 2023)
 
 ## [How to Connect](#how-to-connect)
 
@@ -127,10 +105,4 @@ $ sudo service OP3-demo restart
 ```
 
 
-
 [robot_upstart]: http://wiki.ros.org/robot_upstart
-</section>
-
-<section data-id="{{ page.tab_title2 }}" class="tab_contents">
-{% include en/platform/op3/getting_started_rev2.md %}
-</section>
