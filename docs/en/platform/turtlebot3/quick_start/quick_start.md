@@ -21,35 +21,23 @@ page_number: 4
 
 {::options parse_block_html="true" /}
 
-**Only ROS1 Noetic and ROS2 Humble are officially supported by ROBOTIS at this time. However, development of TurtleBot features for other ROS distributions is ongoing. The following chart provides an overview of the features supported by each ROS Distribution**
+**Currently, ROS 1 Noetic and ROS 2 Humble are officially supported by ROBOTIS. In 2025, additional resources will be allocated for managing the open platform, with plans to complete example support for Humble in Q1 and extend support to Jazzy by Q2. The following chart provides an overview of the features supported by each ROS distribution.**
 
 ✓ : Available  <br>
 ? : Unverified<br>
 X : Unavailable<br>
 
-|        Features        | Kinetic | Melodic | Noetic | Dashing | Foxy | Galactic | Humble |
-|:----------------------:|:-------:|:-------:|:------:|:-------:|:----:|:--------:|:------:|
-|         Teleop         |    ✓    |    ✓    |   ✓    |    ✓    |  ✓   |    ✓     |   ✓    |
-|          SLAM          |    ✓    |    ✓    |   ✓    |    ✓    |  ✓   |    ✓     |   ✓    |
-|       Navigation       |    ✓    |    ✓    |   ✓    |    ✓    |  ✓   |    ✓     |   ✓    |
-|       Simulation       |    ✓    |    ✓    |   ✓    |    ✓    |  ✓   |    ✓     |   ✓    |
-|      Manipulation      |    ✓    |    ✓    |   ✓    |    ✓    |  ✓   |    ?     |   ✓    |
-| Home Service Challenge |    ✓    |    ✓    |   ✓    |    X    |  X   |    X     |   X    |
-|   Autonomous Driving   |    ✓    |    X    |   ✓    |    X    |  X   |    X     |   X    |
-|    Machine Learning    |    ✓    |    ✓    |   X    |    ✓    |  X   |    X     |   X    |
+|        Features        | Noetic | Humble | Jazzy(soon)|
+|:----------------------:|:------:|:--------:|:--------:|
+|         Teleop         |   ✓    |    ✓     |   X      |
+|          SLAM          |   ✓    |    ✓     |   X      |
+|       Navigation       |   ✓    |    ✓     |   X      |
+|       Simulation       |   ✓    |    ✓     |   X      |
+|      Manipulation      |   ✓    |    ✓     |   X      |
+| Home Service Challenge |   ✓    |    X     |   X      |
+|   Autonomous Driving   |   ✓    |    X     |   X      |
+|    Machine Learning    |   X    |    X     |   X      |
 
-|       Examples       | Kinetic | Melodic | Noetic | Dashing | Foxy | Galactic | Humble |
-|:--------------------:|:-------:|:-------:|:------:|:-------:|:----:|:--------:|:------:|
-| Interactive Markers  |    ✓    |    X    |   X    |    X    |  X   |    X     |   X    |
-|  Obstacle Detection  |    ✓    |    X    |   X    |    ✓    |  X   |    X     |   X    |
-|   Position Control   |    ✓    |    X    |   X    |    ✓    |  X   |    X     |   X    |
-|   Point Operation    |    ✓    |    X    |   X    |    ✓    |  X   |    X     |   X    |
-|        Patrol        |    ✓    |    X    |   X    |    ✓    |  X   |    X     |   X    |
-|       Follower       |    ✓    |    X    |   X    |    X    |  X   |    X     |   X    |
-|       Panorama       |    ✓    |    X    |   X    |    X    |  X   |    X     |   X    |
-|     Auto Parking     |    ✓    |    X    |   X    |    ✓    |  X   |    X     |   X    |
-| Auto Parking (Vision)|    ✓    |    X    |   X    |    X    |  X   |    X     |   X    |
-|   Multi TurtleBot3   |    ✓    |    X    |   X    |    X    |  X   |    X     |   X    |
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
 {% include en/platform/turtlebot3/quickstart_noetic.md %}

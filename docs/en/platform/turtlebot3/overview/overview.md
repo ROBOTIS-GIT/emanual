@@ -19,6 +19,9 @@ page_number: 1
 
 # [Overview](#overview)
 
+**Notice**: With the establishment of the Platform Team at ROBOTIS in 2025, significant resources will be allocated to the management and development of the open platform. As a priority, TurtleBot3 will receive dedicated support for **ROS 2 Humble**, with full example support planned for Q1. In Q2, we will extend support to the **ROS 2 Jazzy** version. We appreciate your continued interest and support.
+{: .notice--danger}
+
 ![](/assets/images/platform/turtlebot3/overview/turtlebot3_with_logo.png)
 
 {% capture info_00 %}
@@ -82,6 +85,7 @@ If you are interested in partnership with us to continue to further the developm
 <summary>
 ![](/assets/images/icon_unfold.png) Check out these ROS and TurtleBot3 Publications:
 </summary>
+- 23/01/2025 Official resumption of TurtleBot3 maintenance and development!
 - 09/06/2021 TurtleBot3 has been upgraded with Raspberry Pi 4!!!
 - 05/28/2021 [TurtleBot3 Autorace 2020 now runs with ROS Noetic](https://www.youtube.com/playlist?list=PLRG6WP3c31_WsNjwmYID2ulX5g4WcjKbI)
 - 05/24/2021 [ROS 2 Galactic Geochelone Release](https://discourse.ros.org/t/ros-2-galactic-geochelone-released/20559)
