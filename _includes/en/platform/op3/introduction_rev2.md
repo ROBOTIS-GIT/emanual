@@ -1,23 +1,3 @@
----
-layout: archive
-lang: en
-ref: op3_introduction
-read_time: true
-share: true
-author_profile: false
-permalink: /docs/en/platform/op3/introduction/
-tabs: "Revision"
-tab_title1: "2025 ~"
-tab_title2: "~ 2023"
-sidebar:
-  title: ROBOTIS OP3
-  nav: "op3"
-product_group: op3
-page_number: 1
----
-
-{::options parse_block_html="true" /}
-<section data-id="{{ page.tab_title1 }}" class="tab_contents">
 
 # [Introduction](#introduction)
 
@@ -179,9 +159,3 @@ The battery of ROBOTIS-OP3 can be replaced without shutting down the robot.
 To replace battery during operation, please follow the below procedure.
 
 ![](/assets/images/platform/op3/op3_009.png)
-
-</section>
-
-<section data-id="{{ page.tab_title2 }}" class="tab_contents">
-{% include en/platform/op3/introduction_rev2.md %}
-</section>

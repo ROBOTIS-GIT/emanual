@@ -1,25 +1,3 @@
----
-layout: archive
-lang: en
-ref: op3_tutorials
-read_time: true
-share: true
-author_profile: false
-permalink: /docs/en/platform/op3/tutorials/
-tabs: "Revision"
-tab_title1: "2025 ~"
-tab_title2: "~ 2023"
-sidebar:
-  title: ROBOTIS OP3
-  nav: "op3"
-product_group: op3
-page_number: 5
----
-
-<style>body {counter-reset: h1 4 !important;}</style>
-
-{::options parse_block_html="true" /}
-<section data-id="{{ page.tab_title1 }}" class="tab_contents">
 
 # [Tutorials](#tutorials)
 
@@ -1674,9 +1652,3 @@ $ roslaunch op3_read_write_demo op3_read_write.launch
 [How to connect]: /docs/en/platform/op3/quick_start/#example--ssh-client-for-windows
 [detail of parameter]: /docs/en/platform/op3/tutorials/#how-to-use-ball-detector
 [read_write.cpp]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Demo/blob/master/op3_read_write_demo/src/read_write.cpp
-
-</section>
-
-<section data-id="{{ page.tab_title2 }}" class="tab_contents">
-{% include en/platform/op3/tutorials_rev2.md %}
-</section>

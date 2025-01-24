@@ -1,25 +1,3 @@
----
-layout: archive
-lang: en
-ref: op3_robotis_ros_packages
-read_time: true
-share: true
-author_profile: false
-permalink: /docs/en/platform/op3/robotis_ros_packages/
-tabs: "Revision"
-tab_title1: "2025 ~"
-tab_title2: "~ 2023"
-sidebar:
-  title: ROBOTIS OP3
-  nav: "op3"
-product_group: op3
-page_number: 4
----
-
-<style>body {counter-reset: h1 3 !important;}</style>
-
-{::options parse_block_html="true" /}
-<section data-id="{{ page.tab_title1 }}" class="tab_contents">
 
 # [ROBOTIS ROS Packages](#robotis-ros-packages)
 
@@ -1320,9 +1298,3 @@ Please refer to [How to use walking tuner].
 [How to use tuner client]: /docs/en/platform/op3/tutorials/#how-to-use-tuner-client
 [ball_detector_params.yaml]: https://raw.githubusercontent.com/ROBOTIS-GIT/ROBOTIS-OP3-Demo/master/op3_ball_detector/config/ball_detector_params.yaml
 [How to use ball detector]: /docs/en/platform/op3/tutorials/#how-to-use-ball-detector
-
-</section>
-
-<section data-id="{{ page.tab_title2 }}" class="tab_contents">
-{% include en/platform/op3/robotis_ros_packages_rev2.md %}
-</section>

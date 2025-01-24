@@ -1,25 +1,3 @@
----
-layout: archive
-lang: en
-ref: op3_simulation
-read_time: true
-share: true
-author_profile: false
-permalink: /docs/en/platform/op3/simulation/
-tabs: "Revision"
-tab_title1: "2025 ~"
-tab_title2: "~ 2023"
-sidebar:
-  title: ROBOTIS OP3
-  nav: "op3"
-product_group: op3
-page_number: 6
----
-
-<style>body {counter-reset: h1 5 !important;}</style>
-
-{::options parse_block_html="true" /}
-<section data-id="{{ page.tab_title1 }}" class="tab_contents">
 
 # [Simulation](#simulation)
 
@@ -83,9 +61,3 @@ $ roslaunch op3_manager op3_gazebo.launch
 [OP3 Tutorials]: /docs/en/platform/op3/tutorials/#tutorials
 [Controller File]: /docs/en/popup/position_controller.yaml/
 [World File]: /docs/en/popup/robotis_op3_gazebo_worlds_empty.world/
-
-</section>
-
-<section data-id="{{ page.tab_title2 }}" class="tab_contents">
-{% include en/platform/op3/simulation_rev2.md %}
-</section>

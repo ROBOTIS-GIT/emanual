@@ -1,25 +1,3 @@
----
-layout: archive
-lang: en
-ref: op3_quick_start
-read_time: true
-share: true
-author_profile: false
-permalink: /docs/en/platform/op3/quick_start/
-tabs: "Revision"
-tab_title1: "2025 ~"
-tab_title2: "~ 2023"
-sidebar:
-  title: ROBOTIS OP3
-  nav: "op3"
-product_group: op3
-page_number: 2
----
-
-<style>body {counter-reset: h1 1 !important;}</style>
-
-{::options parse_block_html="true" /}
-<section data-id="{{ page.tab_title1 }}" class="tab_contents">
 
 # [Quick Start](#quick-start)
 
@@ -607,9 +585,3 @@ The calculation will take for 2 seconds and then each bit will be reset to 0.
 [http://www.realvnc.com/]: http://www.realvnc.com/
 [http://en.robotis.com/index/service_04.php?tab=4]: http://en.robotis.com/index/service_04.php?tab=4
 [http://support.robotis.com]: http://support.robotis.com
-
-</section>
-
-<section data-id="{{ page.tab_title2 }}" class="tab_contents">
-{% include en/platform/op3/quick_start_rev2.md %}
-</section>

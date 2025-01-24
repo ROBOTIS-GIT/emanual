@@ -18,9 +18,11 @@ page_number: 3
 
 <style>body {counter-reset: h1 2 !important;}</style>
 
+{::options parse_block_html="true" /}
+
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
 
-# [Getting Started](#getting-started) - (2025 ~)
+# [Getting Started](#getting-started)
 
 ## [How to Connect](#how-to-connect)
 

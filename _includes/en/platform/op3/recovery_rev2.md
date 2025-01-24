@@ -1,25 +1,3 @@
----
-layout: archive
-lang: en
-ref: op3_recovery
-read_time: true
-share: true
-author_profile: false
-permalink: /docs/en/platform/op3/recovery/
-tabs: "Revision"
-tab_title1: "2025 ~"
-tab_title2: "~ 2023"
-sidebar:
-  title: ROBOTIS OP3
-  nav: "op3"
-product_group: op3
-page_number: 8
----
-
-<style>body {counter-reset: h1 7 !important;}</style>
-
-{::options parse_block_html="true" /}
-<section data-id="{{ page.tab_title1 }}" class="tab_contents">
 
 # [Recovery](#recovery)
 
@@ -374,9 +352,3 @@ Clonezilla is used to recover ROBOTIS-OP3 with the image file in the provided US
 [rosbridge_server]: http://wiki.ros.org/rosbridge_server
 [web_video_server]: http://wiki.ros.org/web_video_server
 [How to use Web Setting Tool]: /docs/en/platform/op3/tutorials/#how-to-use-web-setting-tool
-
-</section>
-
-<section data-id="{{ page.tab_title2 }}" class="tab_contents">
-{% include en/platform/op3/recovery_rev2.md %}
-</section>
