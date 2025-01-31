@@ -19,7 +19,7 @@ page_number: 1
 
 # [Overview](#overview)
 
-**Notice**: With the establishment of the Platform Team at ROBOTIS in 2025, significant resources will be allocated to the management and development of the open platform. As a priority, TurtleBot3 will receive dedicated support for **ROS 2 Humble**, with full example support planned for Q1. In Q2, we will extend support to the **ROS 2 Jazzy** version. We appreciate your continued interest and support.
+**Notice**: With the formation of the Platform Team in 2025, substantial resources will be dedicated to advancing the open platform. As a priority, **TurtleBot3** will receive full support for ROS 2 Humble, with **comprehensive example implementations** set for release in Q1 2025. In Q2, support will expand to **ROS 2 Jazzy** and **Gazebo Sim**, ensuring seamless integration with the latest advancements in the ROS ecosystem and simulation environments.
 {: .notice--danger}
 
 ![](/assets/images/platform/turtlebot3/overview/turtlebot3_with_logo.png)

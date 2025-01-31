@@ -21,7 +21,7 @@ page_number: 4
 
 {::options parse_block_html="true" /}
 
-**Currently, ROS 1 Noetic and ROS 2 Humble are officially supported by ROBOTIS. In 2025, additional resources will be allocated for managing the open platform, with plans to complete example support for Humble in Q1 and extend support to Jazzy by Q2. The following chart provides an overview of the features supported by each ROS distribution.**
+**Currently, ROS 1 Noetic and ROS 2 Humble are officially supported. In 2025, additional resources will be allocated for managing the open platform, with plans to complete example support for Humble in Q1 and extend support to Jazzy by Q2. The following chart provides an overview of the features supported by each ROS distribution.**
 
 ✓ : Available  <br>
 ? : Unverified<br>
