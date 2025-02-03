@@ -40,8 +40,8 @@ page_number: 19
 </section>
 
 <section data-id="{{ page.tab_title6 }}" class="tab_contents">
-**NOTE**: TurtleBot3 Autorace is only officially supported in ROS Kinetic and Noetic
-{: .notice--warning}
+## Getting Started
+{% include en/platform/turtlebot3/autonomous_driving/humble/autonomous_driving_getting_started_humble.md %}
 </section>
 
 <section data-id="{{ page.tab_title7 }}" class="tab_contents">
