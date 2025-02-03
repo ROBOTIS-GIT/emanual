@@ -1,5 +1,7 @@
+**WARNING**: This version is a temporarily uploaded manual that was originally supported in **Kinetic**. It needs to be ported to Noetic examples and is planned to be supported with **Humble** examples soon.
+{: .notice--danger}
 
-**WARNING**: Make sure to run the [Bringup][bringup] instruction before performing this examples, and be careful when testing the robot on the table as the robot might fall.
+ Make sure to run the [Bringup][bringup] instruction before performing this examples, and be careful when testing the robot on the table as the robot might fall.
 {: .notice--warning}
 
 {% capture notice_01 %}
