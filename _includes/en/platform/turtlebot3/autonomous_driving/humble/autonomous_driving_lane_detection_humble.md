@@ -1,5 +1,4 @@
-
-<!-- ### [Lane Detection](#lane-detection) -->
+## [Lane Detection](#lane-detection)
 
 Lane detection package that runs on the `Remote PC` receives camera images either from TurtleBot3 or Gazebo simulation to detect driving lanes and to drive the Turtlebot3 along them.  
 The following instructions describe how to use and calibrate the lane detection feature via rqt.

@@ -1,4 +1,3 @@
 <!-- #### [Intrinsic Camera Calibration](#intrinsic-camera-calibration) -->
 
-Intrinsic Camera Calibration is not required in Gazebo simulation.
-
+Using a checkerboard for intrinsic camera calibration is not required in Gazebo simulation.

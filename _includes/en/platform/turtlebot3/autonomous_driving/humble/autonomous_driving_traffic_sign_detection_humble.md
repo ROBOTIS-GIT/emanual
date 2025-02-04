@@ -1,5 +1,4 @@
-
-<!-- ### [Traffic Sign Detection](#traffic-sign-detection) -->
+## [Traffic Sign Detection](#traffic-sign-detection)
 
 TurtleBot3 can detect various signs with the `SIFT` algorithm which compares the source image and the camera image, and perform programmed tasks while it drives.  
 Follow the instructions below to test the traffic sign detection.

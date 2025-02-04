@@ -17,7 +17,6 @@ page_number: 19
 ---
 
 <style>body {counter-reset: h1 7 !important;}</style>
-<div style="counter-reset: h2 0"></div>
 
 {::options parse_block_html="true" /}
 
@@ -26,7 +25,6 @@ page_number: 19
 # [Autonomous Driving](#autonomous-driving)
 
 <section data-id="{{ page.tab_title6 }}" class="tab_contents">
-## Getting Started
 {% include en/platform/turtlebot3/autonomous_driving/humble/autonomous_driving_getting_started_humble.md %}
 </section>
 
@@ -43,9 +41,9 @@ page_number: 19
 Calibrating the camera is very important for autonomous driving. The following describes how to simply calibrate the camera step by step.
 </section>
 
+
 <section data-id="{{ page.tab_title6 }}" class="tab_contents">
-## [Camera Calibration](#camera-calibration)
-Calibrating the camera is very important for autonomous driving. The following describes how to simply calibrate the camera step by step.
+{% include en/platform/turtlebot3/autonomous_driving/humble/autonomous_driving_camera_calibration_humble.md %}
 </section>
 
 
@@ -99,7 +97,6 @@ Calibrating the camera is very important for autonomous driving. The following d
 </section>
 
 <section data-id="{{ page.tab_title6 }}" class="tab_contents">
-## [Lane Detection](#lane-detection)
 {% include en/platform/turtlebot3/autonomous_driving/humble/autonomous_driving_lane_detection_humble.md %}
 </section>
 
@@ -110,7 +107,6 @@ Calibrating the camera is very important for autonomous driving. The following d
 </section> 
 
 <section data-id="{{ page.tab_title6 }}" class="tab_contents">
-## [Traffic Sign Detection](#traffic-sign-detection)
 {% include en/platform/turtlebot3/autonomous_driving/humble/autonomous_driving_traffic_sign_detection_humble.md %}
 </section> 
 
