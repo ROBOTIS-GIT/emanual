@@ -1,32 +1,36 @@
 ## [Lane Detection](#lane-detection)
 
-Lane detection package that runs on the `Remote PC` receives camera images either from TurtleBot3 or Gazebo simulation to detect driving lanes and to drive the Turtlebot3 along them.  
-The following instructions describe how to use and calibrate the lane detection feature via rqt.
+Lane detection allows TurtleBot3 to recognize lane markings and follow them autonomously. The system processes camera images from either a real TurtleBot3 or Gazebo simulation, applies color filtering, and identifies lane boundaries.
 
-1. Launch the course in gazebo.
+This section explains how to launch the lane detection system, visualize the detected lane markings, and calibrate the parameters to ensure accurate tracking.
+
+**Launching Lane Detection in Simulation**
+
+To begin, start the Gazebo simulation with a pre-defined lane-tracking course:
 ``` bash
-$ ros2 launch turtlebot3_gazebo lane_tracking_example.launch.py
+ros2 launch turtlebot3_gazebo lane_tracking_example.launch.py
 ```  
-2. Launch the instrinsic calibration node.
+Next, run the camera calibration processes, which ensure that the detected lanes are accurately mapped to the robot’s perspective:
 ``` bash
-$ ros2 launch turtlebot3_lane_tracking_camera instrinsic_camera_calibration.launch.py
+ros2 launch turtlebot3_lane_tracking_camera instrinsic_camera_calibration.launch.py
+```  
+``` bash
+ros2 launch turtlebot3_lane_tracking_camera extrinsic_camera_calibration.launch.py
+```  
+These steps activate intrinsic and extrinsic calibration to correct any distortions in the camera feed.
+
+Finally, launch the lane detection node in calibration mode to begin detecting lanes:
+``` bash
+ros2 launch turtlebot3_lane_tracking_detect detect_lane.launch.py calibration_mode:=True
 ```  
 
-3. Launch the extrinsic calibration node as calibration mode.
-``` bash
-$ ros2 launch turtlebot3_lane_tracking_camera extinsic_camera_calibration.launch.py
-```  
+**Visualizing Lane Detection Output**
 
-4. Launch the detect lane node  
+To inspect the detected lanes, open rqt on `Remote PC`:
 ``` bash
-$ ros2 launch turtlebot3_lane_tracking_detect detect_lane.launch.py calibration_mode:=True
+rqt
 ```  
-
-5. Open the rqt.
-``` bash
-$ rqt
-```  
-Display three topics at each image viewer
+Then navigate to **Plugins** > **Visualization** > **Image View** and open three image viewers to display different lane detection results:
   - `/detect/image_lane/compressed`  
   ![](/assets/images/platform/turtlebot3/autonomous_driving/noetic_detect_image_lane.png)
   - `/detect/image_yellow_lane_marker/compressed` : a yellow range color filtered image.  
@@ -34,10 +38,28 @@ Display three topics at each image viewer
   - `/detect/image_white_lane_marker/compressed` : a white range color filtered image.  
   ![](/assets/images/platform/turtlebot3/autonomous_driving/noetic_detect_white_lane.png)
 
-6. Apply the parameters you selected to the YAML file.  
-  It determines the default parameter values when launching without calibration_mode.  
-``` bash
-$ cd ~/turtlebot3_ws/src/turtlebot3_example/turtlebot3_lane_tracking_detect/param/lane
-$ gedit lane.yaml
-```  
-![](/assets/images/platform/turtlebot3/lane_tracking/detect_yaml.png)  
+These visualizations help confirm that the lane detection algorithm is correctly identifying lane boundaries.
+
+**Calibrating Lane Detection Parameters**
+
+For better accuracy, tuning detection parameters is necessary. Adjusting these parameters ensures the robot properly identifies lanes under different lighting and environmental conditions.
+
+1. Open **lane.yaml** file located in **turtlebot3_autorace_detect/param/lane/**. You need to write modified values to the file. This will make the camera set its parameters as you set here from next launching. 
+    ``` bash
+    $ cd ~/turtlebot3_ws/src/turtlebot3_example/turtlebot3_lane_tracking_detect/param/lane
+    $ gedit lane.yaml
+    ```  
+    ![](/assets/images/platform/turtlebot3/autonomous_driving/humble_lane_yaml.png)
+    > Modified lane.yaml file
+
+**Running Lane Tracking Operation**
+
+Once calibration is complete, restart the lane detection node without the calibration option:
+```bash
+ros2 launch turtlebot3_autorace_detect detect_lane.launch.py
+```
+
+Then, launch the lane following control node, which enables TurtleBot3 to automatically follow the detected lanes:
+```bash
+ros2 launch turtlebot3_autorace_driving control_lane.launch.py
+```
