@@ -48,50 +48,6 @@ Calibrating the camera is very important for autonomous driving. The following d
 
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
-### [Camera Imaging Calibration](#camera-imaging-calibration)
-{% include en/platform/turtlebot3/autonomous_driving/noetic/autonomous_driving_sim_camera_imaging_calibration_noetic.md %}
-</section>
-
-<section data-id="{{ page.tab_title6 }}" class="tab_contents">
-### [Camera Imaging Calibration](#camera-imaging-calibration)
-{% include en/platform/turtlebot3/autonomous_driving/humble/autonomous_driving_camera_imaging_calibration_humble.md %}
-</section>
-
-
-<section data-id="{{ page.tab_title3 }}" class="tab_contents">
-### [Intrinsic Camera Calibration](#intrinsic-camera-calibration)
-{% include en/platform/turtlebot3/autonomous_driving/noetic/autonomous_driving_sim_intrinsic_camera_calibration_noetic.md %}
-</section>
-
-<section data-id="{{ page.tab_title6 }}" class="tab_contents">
-### [Intrinsic Camera Calibration](#intrinsic-camera-calibration)
-{% include en/platform/turtlebot3/autonomous_driving/humble/autonomous_driving_intrinsic_camera_calibration_humble.md %}
-</section>
-
-
-<section data-id="{{ page.tab_title3 }}" class="tab_contents">
-### [Extrinsic Camera Calibration](#extrinsic-camera-calibration)
-{% include en/platform/turtlebot3/autonomous_driving/noetic/autonomous_driving_sim_extrinsic_camera_calibration_noetic.md %}
-</section>
-
-<section data-id="{{ page.tab_title6 }}" class="tab_contents">
-### [Extrinsic Camera Calibration](#extrinsic-camera-calibration)
-{% include en/platform/turtlebot3/autonomous_driving/humble/autonomous_driving_extrinsic_camera_calibration_humble.md %}
-</section>
-
-
-<section data-id="{{ page.tab_title3 }}" class="tab_contents">
-### [Check Calibration Result](#check-calibration-result)
-{% include en/platform/turtlebot3/autonomous_driving/noetic/autonomous_driving_sim_check_calibration_result_noetic.md %}
-</section>
-
-<section data-id="{{ page.tab_title6 }}" class="tab_contents">
-### [Check Calibration Result](#check-calibration-result)
-{% include en/platform/turtlebot3/autonomous_driving/humble/autonomous_driving_check_calibration_result_humble.md %}
-</section>
-
-
-<section data-id="{{ page.tab_title3 }}" class="tab_contents">
 ## [Lane Detection](#lane-detection)
 {% include en/platform/turtlebot3/autonomous_driving/noetic/autonomous_driving_sim_lane_detection_noetic.md %}
 </section>
