@@ -26,10 +26,10 @@ Open Platform Humanoid Project
 
 ![](/assets/images/platform/op3/op3_product_rev2.png)
 
-ROBOTIS OP3 is the latest miniature humanoid robot platform from ROBOTIS that succeeds ROBOTIS OP(aka “DARWIN OP”) and ROBOTIS OP2(aka “DARWIN 2” or “DARWIN OP2”). One of the noticeable changes of ROBOTIS OP3 is made in actuator by replacing MX-28 actuators with XM-430 actuators. Another significant change is also made in internal PC by replacing Atom based SBC(Single Board Computer) with Intel i3 based NUC. With the XM-430 which supports DYNAMIXEL Protocol 2.0, OP3 has improved torque along with current based control and loaded with various functions. Intel NUC allows highly improved computing power that supports 64-bit OS and Bluetooth 4.1. In addition, OP3 is developed under ROS(Robot Operating System) to utilize various packages in ROS ecosystem. All these hardware improvements and ROS support allows developers to focus more on research and development compare to the preceding robots.
+ROBOTIS OP3 is the latest miniature humanoid robot platform from ROBOTIS, succeeding ROBOTIS OP(aka “DARWIN OP”) and ROBOTIS OP2(aka “DARWIN 2” or “DARWIN OP2”). One of the most noticeable changes in ROBOTIS OP3 is the replacement of MX-28 actuators with XM-430 actuators. Another major upgrade is the internal PC, where the Atom-based SBC(Single Board Computer) has been replaced with an Intel i3-based NUC. With the XM-430, which supports DYNAMIXEL Protocol 2.0, OP3 offers improved torque, current-based control, and various additional functions. The Intel NUC provides significantly enhanced computing power, supporting a 64-bit OS and Bluetooth 5. Additionally, OP3 is developed using ROS2(Robot Operating System 2), allowing developers to leverage a wide range of packages from the ROS ecosystem. All these hardware improvements, combined with ROS2 support, enable developers to focus more on research and development compared to its predecessors.
 
 - Physical Differences from ROBOTIS OP2  
-  - ROBOTIS OP3 does not come with a design skin, however, 3D modeling files are provided in order to support 3D print for the default design skin.
+  - ROBOTIS OP3 does not include a design skin by default; however, 3D modeling files are provided to support 3D printing for the default design skin.
 
   ![](/assets/images/platform/op3/op3_002_rev2.png)
 
@@ -64,10 +64,10 @@ There are 1 RGB LED and 3 LEDs, 4 buttons on the back of OP3. From left to right
 |:-------------:|:------------------------------------------------------------:|:-------------------------------------------------------------------------------:|
 |   Actuator    |                            MX-28                             |                                   XM430-W350                                    |
 |      CPU      |           Intel Atom N2600<br />@1.6GHz dual core            |                     Intel Core i3 processor<br />dual core                      |
-|      RAM      |       2GB DDR3 SODIMM 1066MHz<br />(user-replaceable)        |      8GB DDR4 SODIMMs 2133MHz<br />(32GB maximum)<br />(user-replaceable)       |
-|    Storage    |    half-size mSATA module (32GB)<br />(user-replaceable)     |                 M.2 SSD module (128GB)<br />(user-replaceable)                  |
+|      RAM      |       2GB DDR3 SODIMM 1066MHz<br />(user-replaceable)        |      8GB DDR4 SODIMMs 2666MHz<br />(32GB maximum)<br />(user-replaceable)       |
+|    Storage    |    half-size mSATA module (32GB)<br />(user-replaceable)     |                 M.2 SSD module (250GB)<br />(user-replaceable)                  |
 | Compatible OS | any Linux release (32-bit)<br />any Windows release (32-bit) |   any Linux release (32-bit/64-bit)<br />any Windows release (32-bit/64-bit)    |
-|  Networking   | Realtek 10/100/1000 Mbps Ethernet<br />802.11n (2.4GHz-only) | Intel 10/100/1000 Mbps Ethernet<br />802.11ac (2.4GHz, 5GHz)<br />Bluetooth 4.1 |
+|  Networking   | Realtek 10/100/1000 Mbps Ethernet<br />802.11n (2.4GHz-only) | Intel 10/100/1000 Mbps Ethernet<br />802.11ax (2.4GHz, 5GHz)<br />Bluetooth 5 |
 |    Camera     |                  Logitech C905 (1600x1200)                   |                            Logitech C920 (1920x1080)                            |
 
 ROBOTIS OP3 is an affordable, miniature humanoid robot platform with advanced computational power, sophisticated sensors, high payload capacity, and dynamic motion ability to enable many exciting research and education activities.
@@ -100,14 +100,14 @@ ROBOTIS OP3 is an affordable, miniature humanoid robot platform with advanced co
 |            Weight            |                                     About 3.5kg (without skin cover)                                     |
 |             DOF              |                                                    20                                                    |
 |           Actuator           |                                               XM430-W350-R                                               |
-|       Main Controller        | INTEL NUC i3<br />Intel Core i3 processor dual core<br />8GB RAM DDR4 SODIMMs 2133MHz<br />128GB M.2 SSD |
+|       Main Controller        | INTEL NUC i3<br />Intel Core i3 processor dual core<br />8GB RAM DDR4 SODIMMs 2666MHz<br />250GB M.2 SSD |
 |        Sub Controller        |                                                  OpenCR                                                  |
 |            Camera            |                                       Logitech C920 HD Pro Webcam                                        |
 |          IMU Sensor          |                       3-Axis Gyroscope, 3-Axis Accelerometer, 3-Axis Magnetometer                        |
-|           Battery            |                                         Lipo 3cell 11.1v 1800mA                                          |
+|           Battery            |                                         Lipo 3cell 11.1v 3300mA                                          |
 |          IO Device           |                     RGB LED x 1, LED x 3 (Red, Green, Blue), Button x 4, Speaker x 1                     |
 |        Installable OS        |                any Linux release (32-bit/64-bit)<br />any Windows release (32-bit/64-bit)                |
-| Development<br />Environment |                             OS : Linux (64-bit)<br />C++, ROS, DYNAMIXEL SDK                             |
+| Development<br />Environment |                            OS : Linux (64-bit)<br />C++, ROS2, DYNAMIXEL SDK                             |
 
 
 ## [Safety Information](#safety-information)
@@ -134,19 +134,17 @@ Check your ROBOTIS OP3 package for the following items.
 | 2  | USB Thumb Drive (with recovery software) |    1     |
 | 3  | Fuse                                     |    2     |
 | 4  | Ball                                     |    1     |
-| 5  | Quick Start Manual                       |    1     |
-| 6  | Spare Cables                             |  1 pack  |
-| 7  | Loctite                                  |    1     |
-| 8  | Wrench & Screw Driver                    |  1 set   |
-| 9  | Power Cable                              |    1     |
-| 10 | DC Power Supply                          |    1     |
-| 11 | Spare Bolts and Nuts                     |  1 pack  |
-| 12 | Ethernet Cable                           |    1     |
-| 13 | Battery Charger                          |    1     |
-| 14 | Battery Pack                             |    3     |
-| 15 | Hard Case                                |    1     |
+| 5  | Spare Cables                             |  1 pack  |
+| 6  | Wrench & Screw Driver                    |  1 set   |
+| 7  | Power Cable                              |    1     |
+| 8  | DC Power Supply                          |    1     |
+| 9  | Spare Bolts and Nuts                     |  1 pack  |
+| 10 | Ethernet Cable                           |    1     |
+| 11 | Battery Charger                          |    1     |
+| 12 | Battery Pack                             |    3     |
+| 13 | Hard Case                                |    1     |
 
-![](/assets/images/platform/op3/op3_005_rev2-1.png)
+![](/assets/images/platform/op3/op3_005_rev3-1.png)
 
 ## [Layout](#layout)
 
