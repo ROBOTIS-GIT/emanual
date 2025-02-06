@@ -3,6 +3,7 @@
 Lane detection allows TurtleBot3 to recognize lane markings and follow them autonomously. The system processes camera images from either a real TurtleBot3 or Gazebo simulation, applies color filtering, and identifies lane boundaries.
 
 This section explains how to launch the lane detection system, visualize the detected lane markings, and calibrate the parameters to ensure accurate tracking.
+<br>
 
 **Launching Lane Detection in Simulation**
 
@@ -12,7 +13,7 @@ ros2 launch turtlebot3_gazebo lane_tracking_example.launch.py
 ```  
 Next, run the camera calibration processes, which ensure that the detected lanes are accurately mapped to the robot’s perspective:
 ``` bash
-ros2 launch turtlebot3_lane_tracking_camera instrinsic_camera_calibration.launch.py
+ros2 launch turtlebot3_lane_tracking_camera intrinsic_camera_calibration.launch.py
 ```  
 ``` bash
 ros2 launch turtlebot3_lane_tracking_camera extrinsic_camera_calibration.launch.py
@@ -23,6 +24,7 @@ Finally, launch the lane detection node in calibration mode to begin detecting l
 ``` bash
 ros2 launch turtlebot3_lane_tracking_detect detect_lane.launch.py calibration_mode:=True
 ```  
+<br>
 
 **Visualizing Lane Detection Output**
 
@@ -39,6 +41,7 @@ Then navigate to **Plugins** > **Visualization** > **Image View** and open three
   ![](/assets/images/platform/turtlebot3/autonomous_driving/noetic_detect_white_lane.png)
 
 These visualizations help confirm that the lane detection algorithm is correctly identifying lane boundaries.
+<br><br>
 
 **Calibrating Lane Detection Parameters**
 
@@ -46,11 +49,13 @@ For better accuracy, tuning detection parameters is necessary. Adjusting these p
 
 1. Open **lane.yaml** file located in **turtlebot3_autorace_detect/param/lane/**. You need to write modified values to the file. This will make the camera set its parameters as you set here from next launching. 
     ``` bash
-    $ cd ~/turtlebot3_ws/src/turtlebot3_example/turtlebot3_lane_tracking_detect/param/lane
+    $ cd ~/turtlebot3_ws/src/turtlebot3_autorace_2020/turtlebot3_autorace_detect/param/lane
     $ gedit lane.yaml
     ```  
     ![](/assets/images/platform/turtlebot3/autonomous_driving/humble_lane_yaml.png)
     > Modified lane.yaml file
+
+<br>
 
 **Running Lane Tracking Operation**
 

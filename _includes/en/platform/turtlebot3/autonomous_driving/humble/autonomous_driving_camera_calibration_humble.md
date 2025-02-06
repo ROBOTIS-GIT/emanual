@@ -5,7 +5,9 @@ Camera calibration typically consists of two steps: **intrinsic calibration**, w
 
 ### [Camera Imaging Calibration](#camera-imaging-calibration)
 
-In Gazebo simulation, camera imaging calibration is unnecessary because the simulated camera does not have lens distortion. To begin, launch the Gazebo simulation on the Remote PC by running the following command:
+In Gazebo simulation, camera imaging calibration is unnecessary because the simulated camera does not have lens distortion. 
+
+To begin, launch the Gazebo simulation on the Remote PC by running the following command:
 
 ```bash
 ros2 launch turtlebot3_gazebo turtlebot3_autorace_2020.launch.py
@@ -41,59 +43,48 @@ rqt
 
 2. Navigate **Plugins** > **Visualization** > **Image view**. Create two image view windows.
 
-3. Select `/camera/image_extrinsic_calib/compressed` topic on one window and `/camera/image_projected_compensated` on the other.
+3. Select `/camera/image_extrinsic_calib/compressed` topic on one window and `/camera/image_projected` on the other.
    - The first topic shows an image with a red trapezoidal shape and the latter shows the ground projected view (Bird's eye view).
 
-      ![](/assets/images/platform/turtlebot3/autonomous_driving/noetic_extrinsic_calibration.png)
-      > `/camera/image_extrinsic_calib/compressed` (Left) and `/camera/image_projected_compensated` (Right)
+      ![](/assets/images/platform/turtlebot3/autonomous_driving/humble_extrinsic_calibration.png)
+      > `/camera/image_extrinsic_calib/compressed` (Left) and `/camera/image_projected` (Right)
 
 4. Navigate **Plugins** > **Configuration** > **Dynamic Reconfigure**.
 
-5. Adjust parameters in `/camera/image_projection` and `/camera/image_compensation_projection`.
+5. Adjust parameters in `/camera/image_projection` and `/camera/image_compensation`.
    - Change `/camera/image_projection` parameter value. It affects `/camera/image_extrinsic_calib/compressed` topic.
    - Intrinsic camera calibration modifies the perspective of the image in the red trapezoid.
-   - Adjust parameters in `/camera/image_compensation_projection` to fine-tune the bird’s-eye view.
+   - Adjust parameters in `/camera/image_compensation` to fine-tune the bird’s-eye view.
 
-      ![](/assets/images/platform/turtlebot3/autonomous_driving/noetic_extrinsic_calibration_reconfigure.png)
+      ![](/assets/images/platform/turtlebot3/autonomous_driving/humble_extrinsic_calibration_reconfigure.png)
       > rqt_reconfigure
 
 **Saving Calibration Data**
 
-Once the best projection settings are found, the calibration data must be saved to ensure that the parameters persist across sessions. There are two ways to save the extrinsic calibration data:
+Once the best projection settings are found, the calibration data must be saved to ensure that the parameters persist across sessions. One way to save the extrinsic calibration data is by manually editing the YAML configuration files.
 
-The first method involves manually editing the YAML configuration files.
 1. Navigate to the directory where the calibration files are stored:
 ```bash
-cd ~/turtlebot3_ws/src/turtlebot3_autorace_camera/calibration/extrinsic_calibration/
+cd ~/turtlebot3_ws/src/turtlebot3_autorace_2020/turtlebot3_autorace_camera/calibration/extrinsic_calibration/
 ```
-2. Open the relevant YAML file (e.g., `projection.yaml`) in a text editor:
+1. Open the relevant YAML file (e.g., `projection.yaml`) in a text editor:
 ```bash
 gedit projection.yaml
 ```
 
-3. Modify the projection parameters based on the values obtained from dynamic reconfiguration.
+1. Modify the projection parameters based on the values obtained from dynamic reconfiguration.
 
-4. Save the file and exit (`CTRL + X`, then `Y`, and `Enter`).
+This method ensures that the extrinsic calibration parameters are correctly loaded in future runs.
 
-Alternatively, you can use ROS2 to automatically export the current calibration values into a YAML file.
+<p align="center">
+  <img src="/assets/images/platform/turtlebot3/autonomous_driving/humble_projection_yaml.png" width="700"/>
+  <img src="/assets/images/platform/turtlebot3/autonomous_driving/humble_compensation_yaml.png" width="700"/>
+</p>
 
-1. Open a new terminal and run:
-```bash
-ros2 param dump /camera/image_projection > ~/turtlebot3_ws/src/turtlebot3_autorace_camera/calibration/extrinsic_calibration/projection.yaml
-```
-This will save the current projection parameters directly into the YAML file, replacing any previous settings.
-
-2. (Optional) To verify that the data was saved correctly, check the contents of the YAML file:
-```bash
-cat ~/turtlebot3_ws/src/turtlebot3_autorace_camera/calibration/extrinsic_calibration/projection.yaml
-``` 
-These methods ensure that the extrinsic calibration parameters are correctly loaded in future runs.
-
-      ![](/assets/images/platform/turtlebot3/autonomous_driving/humble_compensation_yaml.png)
-      > turtlebot3_autorace_camera/calibration/extrinsic_calibration/`compensation.yaml`
-
-      ![](/assets/images/platform/turtlebot3/autonomous_driving/humble_projection_yaml.png)  
-      > turtlebot3_autorace_camera/calibration/extrinsic_calibration/`projection.yaml`
+<p align="center">
+  <em>turtlebot3_autorace_camera/calibration/extrinsic_calibration/ <code>projection.yaml</code> (Left) &nbsp; | &nbsp; 
+  turtlebot3_autorace_camera/calibration/extrinsic_calibration/ <code>compensation.yaml</code> (Right)</em>
+</p>
 
 ### [Check Calibration Result](#check-calibration-result)
 
@@ -116,10 +107,10 @@ ros2 launch turtlebot3_autorace_camera intrinsic_camera_calibration.launch.py
 ros2 launch turtlebot3_autorace_camera extrinsic_camera_calibration.launch.py
 ```
 
-5. Open a new terminal and launch the rqt image viewer.
+5. Execute rqt and navigate **Plugins** > **Visualization** > **Image view**.
 ```bash
-rqt_image_view
+rqt
 ```
 
-6. With successful calibration settings, the bird-eye view image should appear as below when the `/camera/image_projected_compensated` topic is selected.
-![](/assets/images/platform/turtlebot3/autonomous_driving/noetic_camera_calibration_rqt_image_view.png)
+6. With successful calibration settings, the bird-eye view image should appear as below when the `/camera/image_projected` topic is selected.
+![](/assets/images/platform/turtlebot3/autonomous_driving/humble_camera_calibration_rqt_image_view.png)
