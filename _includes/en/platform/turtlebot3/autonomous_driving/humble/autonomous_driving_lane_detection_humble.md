@@ -9,20 +9,20 @@ This section explains how to launch the lane detection system, visualize the det
 
 To begin, start the Gazebo simulation with a pre-defined lane-tracking course:
 ``` bash
-ros2 launch turtlebot3_gazebo lane_tracking_example.launch.py
+ros2 launch turtlebot3_gazebo turtlebot3_autorace_2020.launch.py
 ```  
 Next, run the camera calibration processes, which ensure that the detected lanes are accurately mapped to the robot’s perspective:
 ``` bash
-ros2 launch turtlebot3_lane_tracking_camera intrinsic_camera_calibration.launch.py
+ros2 launch turtlebot3_autorace_detect intrinsic_camera_calibration.launch.py
 ```  
 ``` bash
-ros2 launch turtlebot3_lane_tracking_camera extrinsic_camera_calibration.launch.py
+ros2 launch turtlebot3_autorace_detect extrinsic_camera_calibration.launch.py
 ```  
 These steps activate intrinsic and extrinsic calibration to correct any distortions in the camera feed.
 
 Finally, launch the lane detection node in calibration mode to begin detecting lanes:
 ``` bash
-ros2 launch turtlebot3_lane_tracking_detect detect_lane.launch.py calibration_mode:=True
+ros2 launch turtlebot3_autorace_detect detect_lane.launch.py calibration_mode:=True
 ```  
 <br>
 

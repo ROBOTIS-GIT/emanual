@@ -43,16 +43,16 @@ rqt
 
 2. Navigate **Plugins** > **Visualization** > **Image view**. Create two image view windows.
 
-3. Select `/camera/image_extrinsic_calib/compressed` topic on one window and `/camera/image_projected` on the other.
+3. Select `/camera/image_extrinsic_calib` topic on one window and `/camera/image_projected` on the other.
    - The first topic shows an image with a red trapezoidal shape and the latter shows the ground projected view (Bird's eye view).
 
       ![](/assets/images/platform/turtlebot3/autonomous_driving/humble_extrinsic_calibration.png)
-      > `/camera/image_extrinsic_calib/compressed` (Left) and `/camera/image_projected` (Right)
+      > `/camera/image_extrinsic_calib` (Left) and `/camera/image_projected` (Right)
 
 4. Navigate **Plugins** > **Configuration** > **Dynamic Reconfigure**.
 
 5. Adjust parameters in `/camera/image_projection` and `/camera/image_compensation`.
-   - Change `/camera/image_projection` parameter value. It affects `/camera/image_extrinsic_calib/compressed` topic.
+   - Change `/camera/image_projection` parameter value. It affects `/camera/image_extrinsic_calib` topic.
    - Intrinsic camera calibration modifies the perspective of the image in the red trapezoid.
    - Adjust parameters in `/camera/image_compensation` to fine-tune the bird’s-eye view.
 
@@ -88,29 +88,21 @@ This method ensures that the extrinsic calibration parameters are correctly load
 
 ### [Check Calibration Result](#check-calibration-result)
 
-After completing calibrations, run the step-by-step instructions below on `Remote PC` to check the calibration result.
+After completing the calibration process, follow the instructions below on `Remote PC` to verify the calibration results.
 
-1. Close all of the terminals.
+1. **Stop the current extrinsic calibration process.**  
+  If the extrinsic calibration was launched in `calibration_mode:=True`, stop the process by closing the terminal or pressing `Ctrl + C`.
 
-2. Open a new terminal and launch Autorace Gazebo simulation. 
-```bash
-ros2 launch turtlebot3_gazebo turtlebot3_autorace_2020.launch.py
-```
-
-3. Open a new terminal and launch the intrinsic calibration node.
-```bash
-ros2 launch turtlebot3_autorace_camera intrinsic_camera_calibration.launch.py
-```
-
-4. Open a new terminal and launch the extrinsic calibration node.
+2. **Launch the extrinsic calibration node without calibration mode.**  
+  This ensures that the system applies the saved calibration parameters for verification.
 ```bash
 ros2 launch turtlebot3_autorace_camera extrinsic_camera_calibration.launch.py
 ```
 
-5. Execute rqt and navigate **Plugins** > **Visualization** > **Image view**.
+1. Execute rqt and navigate **Plugins** > **Visualization** > **Image view**.
 ```bash
 rqt
 ```
 
-6. With successful calibration settings, the bird-eye view image should appear as below when the `/camera/image_projected` topic is selected.
+1. With successful calibration settings, the bird-eye view image should appear as below when the `/camera/image_projected` topic is selected.
 ![](/assets/images/platform/turtlebot3/autonomous_driving/humble_camera_calibration_rqt_image_view.png)
