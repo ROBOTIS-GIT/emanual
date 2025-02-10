@@ -161,7 +161,7 @@ URDF defines a robot using the following key elements:
 - **Collisions**: Define simplified geometries used for physics-based interactions.  
 - **Inertial properties**: Specify mass, center of gravity, and inertia tensor for physics simulation.  
   
-For a more detailed understanding of URDF, we recommend referring to the [URDF Tutorial](https://wiki.ros.org/urdf/Tutorials/Building%20a%20Visual%20Robot%20Model%20with%20URDF%20from%20Scratch) on the ROS Wiki. The best way to understand and learn URDF is to build a simple robot yourself.
+For a more detailed understanding of URDF, we recommend referring to the [URDF Tutorial](https://docs.ros.org/en/rolling/Tutorials/Intermediate/URDF/Building-a-Visual-Robot-Model-with-URDF-from-Scratch.html) on the ROS 2 Wiki. The best way to understand and learn URDF is to build a simple robot yourself.
 
 ### Visualizing the OpenManipulator-X URDF Structure  
 Understanding the **hierarchical structure** of the OpenManipulator-X is crucial before diving into the URDF breakdown. The following URDF graph visually represents the **parent-child relationships** between links and joints.
