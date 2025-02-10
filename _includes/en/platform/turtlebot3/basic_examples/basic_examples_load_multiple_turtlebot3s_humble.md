@@ -5,11 +5,11 @@
 
 ### Description  
 
-  - **What is Load Multiple Turtlebot3s example?**  
-    - This example shows how to operate multiple Turtlebot3s in one Remote PC.  
+  - **What is Load Multiple TurtleBot3s example?**  
+    - This example shows how to operate multiple TurtleBot3s in one Remote PC.  
     - If you operate multiple TurtleBots as if you were operating just one, you won’t be able to distinguish which topic belongs to which robot.  
     ![](/assets/images/platform/turtlebot3/basic_examples/load_multiple_turtlebot3s/explain1.png)  
-    - You can assign namespace to each Turtlebot3's `node`, `topic`, `frame` as so you can identify each of Turtlebot3.  
+    - You can assign namespace to each TurtleBot3's `node`, `topic`, `frame` as so you can identify each of TurtleBot3.  
     ![](/assets/images/platform/turtlebot3/basic_examples/load_multiple_turtlebot3s/explain2.png)  
 
   - **Function of launch files**  
@@ -19,7 +19,7 @@
     2. robot_state_publisher.launch.py → robot_state_publisher node  
       - Read model urdf and make `/tf` of hardware of robot.  
     3. multi_spawn_turtlebot3.launch.py → spawn_entity.py  
-      - Read model.sdf and spawn turtlebot3 model in gazebo world.  
+      - Read model.sdf and spawn TurtleBot3 model in gazebo world.  
       - Sensor data is made by plugin that is written in model.sdf.  
 
 ### [Multi Robot launch in Gazebo](#multi-robot-launch-in-gazebo)  
@@ -34,7 +34,7 @@
 ```  
 <br>
 
-- You can see three Turtlebot3s as below picture.  
+- You can see three TurtleBot3s as below picture.  
    ![](/assets/images/platform/turtlebot3/basic_examples/load_multiple_turtlebot3s/multi_robot_gazebo.png)  
 <br>
 
@@ -70,8 +70,8 @@
   ![](/assets/images/platform/turtlebot3/basic_examples/load_multiple_turtlebot3s/multi_robot_code.png)  
 <br>
 
-**Turtlebot3 World Example**  
-- You can see three Turtlebot3s as below picture.  
+**TurtleBot3 World Example**  
+- You can see three TurtleBot3s as below picture.  
 <div class="notice--info">
   `number_of_robot` = 4  
   `pose` = [[-2,-0.5], [0.5,-2], [2,0.5], [-0.5,2]]  
