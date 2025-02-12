@@ -26213,6 +26213,8 @@ openmanipulator_x:
       url: /platform/openmanipulator_x/specification/#dimension
     - title: "Inertia"
       url: /platform/openmanipulator_x/specification/#inertia
+    - title: "Understanding URDF"
+      url: /platform/openmanipulator_x/specification/#understanding-urdf
   - title: "Assembly"
     url: /platform/openmanipulator_x/assembly
     children:
