@@ -157,3 +157,8 @@ page_number: 22
 **NOTE**: This feature is available for Kinetic. 
 {: .notice}
 </section> -->
+
+
+<section data-id="{{ page.tab_title6 }}" class="tab_contents"> 
+{% include en/platform/turtlebot3/basic_examples/basic_examples_load_multiple_turtlebot3s_humble.md %}
+</section>
