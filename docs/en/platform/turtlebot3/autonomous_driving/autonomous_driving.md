@@ -24,8 +24,33 @@ page_number: 19
 
 # [Autonomous Driving](#autonomous-driving)
 
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+**NOTE**: TurtleBot3 Autorace is only officially supported in ROS Kinetic and Noetic
+{: .notice--warning}
+</section>
+
+<section data-id="{{ page.tab_title4 }}" class="tab_contents">
+**NOTE**: TurtleBot3 Autorace is only officially supported in ROS Kinetic and Noetic
+{: .notice--warning}
+</section>
+
+<section data-id="{{ page.tab_title5 }}" class="tab_contents">
+**NOTE**: TurtleBot3 Autorace is only officially supported in ROS Kinetic and Noetic
+{: .notice--warning}
+</section>
+
 <section data-id="{{ page.tab_title6 }}" class="tab_contents">
 {% include en/platform/turtlebot3/autonomous_driving/humble/autonomous_driving_getting_started_humble.md %}
+</section>
+
+<section data-id="{{ page.tab_title7 }}" class="tab_contents">
+**NOTE**: TurtleBot3 Autorace is only officially supported in ROS Kinetic and Noetic
+{: .notice--warning}
+</section>
+
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+## Getting Started
+{% include en/platform/turtlebot3/autonomous_driving/kinetic/autonomous_driving_getting_started_kinetic.md %}
 </section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
@@ -40,6 +65,11 @@ page_number: 19
 {% include en/platform/turtlebot3/autonomous_driving/humble/autonomous_driving_camera_calibration_humble.md %}
 </section>
 
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+## [Camera Calibration](#camera-calibration)
+Calibrating the camera is very important for autonomous driving. The following describes how to simply calibrate the camera step by step.
+</section>
+
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
 ## [Camera Calibration](#camera-calibration)
 Calibrating the camera is very important for autonomous driving. The following describes how to simply calibrate the camera step by step.
@@ -49,6 +79,11 @@ Calibrating the camera is very important for autonomous driving. The following d
 
 <section data-id="{{ page.tab_title6 }}" class="tab_contents">
 {% include en/platform/turtlebot3/autonomous_driving/humble/autonomous_driving_lane_detection_humble.md %}
+</section>
+
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+## [Lane Detection](#lane-detection)
+{% include en/platform/turtlebot3/autonomous_driving/kinetic/autonomous_driving_lane_detection_kinetic.md  %}
 </section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
@@ -61,11 +96,16 @@ Calibrating the camera is very important for autonomous driving. The following d
 
 <section data-id="{{ page.tab_title6 }}" class="tab_contents">
 {% include en/platform/turtlebot3/autonomous_driving/humble/autonomous_driving_traffic_sign_detection_humble.md %}
-</section> 
+</section>
+
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+## [Traffic Sign Detection](#traffic-sign-detection)
+{% include en/platform/turtlebot3/autonomous_driving/kinetic/autonomous_driving_traffic_sign_detection_kinetic.md %}
+</section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
 ## [Traffic Sign Detection](#traffic-sign-detection)
 {% include en/platform/turtlebot3/autonomous_driving/noetic/autonomous_driving_sim_traffic_sign_detection_noetic.md %}
-</section> 
+</section>
 
 <!-- Mission -->
