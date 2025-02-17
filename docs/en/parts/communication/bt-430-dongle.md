@@ -99,7 +99,9 @@ The BT-430 Dongle can establish reliable 1:1 communication through pairing.
 
     ![img](/assets/images/parts/communication/bt-410_dongle_02.png)
 
-    - Run the Tera Term terminal program, click File > New Connection.
+    - Run the Tera Term terminal program(ttermpro.exe), then click File > New Connection.
+
+    ![img](/assets/images/parts/communication/ttermpro-exe.png)
 
     ![img](/assets/images/parts/communication/bt-410_dongle_03.png)
 
@@ -148,6 +150,7 @@ If you enter ? in the terminal, the BT-430 version will be displayed as `BT-430,
   - Download the uf2 file from [link](/assets/images/parts/communication/bt430_fw_v2.2.1.uf2) to your PC and copy this file to the USB device.  
   - Once the copy is complete, the BT-430 dongle will automatically reboot.
   - For BT-430 dongles using an older version of the bootloader, the following warning window may appear after copying the firmware, but the firmware update has been completed successfully.  
+
   ![img](/assets/images/parts/communication/bt-430_dongle_fw_copy_warning_en.png)
 
   - If you cannot find the COM port of the BT-430 after rebooting, please try the following methods:
@@ -155,9 +158,9 @@ If you enter ? in the terminal, the BT-430 version will be displayed as `BT-430,
     2. If the BT-430 is connected via a USB hub, disconnect and reconnect the USB connector that connects the USB hub to the PC.
 
 #### [Restart the system](#restart-the-system)  
-  Enter `ATZ` and press Enter to restart the BT-430 Dongle. If you have made any changes to the settings, they will persist across restarts.
-
-  ![img](/assets/images/parts/communication/bt-410_dongle_11.png)
+  Enter `ATZ` and press Enter to restart the BT-430 Dongle. If you have made any changes to the settings, they will persist across restart. 
+  
+  After a restart, in order to send AT commands to BT-430 Dongle, first you need to disconnect(File > Disconnect) current connection and then make a [new connection](#setup).
 
 #### [Device discovery](#device-discovery)
   Enter `AT+BTINQ=DBE7DF000001` as shown below and press Enter to search for devices with MAC addresses greater than or equal to DBE7DF000001 among nearby BLE devices.
