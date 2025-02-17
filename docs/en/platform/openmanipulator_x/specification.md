@@ -145,3 +145,151 @@ Total Mass : 711.37 gram
   - I1 : 1.6873182e+05
   - I2 : 2.0769694e+05
   - I3 : 2.7228452e+05
+
+## [Understanding URDF](#understanding-urdf)
+
+**Understanding URDF (Universal Robot Description Format) with OpenManipulator-X**  
+
+### What is URDF?
+URDF (Universal Robot Description Format) is an XML-based format used to describe a robot’s physical structure, kinematics, dynamics, and visualization properties. It is widely used in ROS (Robot Operating System) to define robot models for simulation, motion planning, and visualization.
+
+URDF defines a robot using the following key elements:
+
+- **Links**: Define a robot’s visual representation, collision geometry, and inertial properties.  
+- **Joints**: Define the connections and movement constraints between links.  
+- **Visuals**: Describe how the robot appears in visualization tools.  
+- **Collisions**: Define simplified geometries used for physics-based interactions.  
+- **Inertial properties**: Specify mass, center of gravity, and inertia tensor for physics simulation.  
+  
+For a more detailed understanding of URDF, we recommend referring to the [URDF Tutorial](https://docs.ros.org/en/rolling/Tutorials/Intermediate/URDF/Building-a-Visual-Robot-Model-with-URDF-from-Scratch.html) on the ROS 2 Wiki. The best way to understand and learn URDF is to build a simple robot yourself.
+
+### Visualizing the OpenManipulator-X URDF Structure  
+Understanding the **hierarchical structure** of the OpenManipulator-X is crucial before diving into the URDF breakdown. The following URDF graph visually represents the **parent-child relationships** between links and joints.
+
+![](/assets/images/platform/openmanipulator_x/omx_urdf_graph.png)  
+
+  
+**Key Features of the URDF Graph**  
+- **Root Node(world):**
+  - The robot is fixed to the world frame via world_fixed.
+- **Link Structure:**(Represent the rigid bodies of the robot)
+  - The manipulator consists of five main links (link1 to link5), which form the robotic arm.
+  - The end-effector (end_effector_link) is attached to link5.
+  - The gripper mechanism includes gripper_left_link and gripper_right_link.
+
+- **Joint Connections:** (Define how each link moves relative to another)
+  - Each link is connected via revolute (joint1 to joint4) or prismatic joints (gripper_left_joint, gripper_right_joint).
+  - The gripper operates with a mimic joint (gripper_right_joint_mimic), ensuring both fingers move symmetrically.
+  
+The following image shows the OpenManipulator-X URDF model as visualized in RViz. It includes the joint positions and link dimensions, providing a clear representation of the robot's structure.
+![](/assets/images/platform/openmanipulator_x/rviz_om_view.png) 
+
+
+### URDF with Xacro  
+The provided URDF uses **Xacro (XML Macros)** to simplify and modularize the robot description. Xacro allows **reusing components** and making the URDF more maintainable.  
+The following explanation is based on the Xacro file:
+```bash
+open_manipulator/open_manipulator_x_description/urdf/open_manipulator_x.urdf.xacro
+```
+At the beginning of the file, a **macro** is defined:
+
+```xml
+<xacro:macro name="open_manipulator_x" params="prefix=''">
+```
+This allows the reuse of the same structure with different prefixes, making it flexible for multi-robot environments.
+
+
+###  Defining a Link  
+A **link** represents a rigid body in the robot. Each link has **visual, collision, and inertial properties**.
+
+**Example of `link1` in OpenManipulator-X:**
+```xml
+<link name="${prefix}link1">
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="${meshes_file_direction}/link1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="grey"/>
+  </visual>
+  
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="${meshes_file_direction}/link1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+
+  <inertial>
+    <origin xyz="3.0876154e-04 0.0000000e+00 -1.2176461e-04" />
+    <mass value="7.9119962e-02" />
+    <inertia ixx="1.2505234e-05" ixy="0.0" ixz="-1.7855208e-07"
+             iyy="2.1898364e-05" iyz="0.0"
+             izz="1.9267361e-05" />
+  </inertial>
+</link>
+```
+**Explanation**
+- **`<visual>`**: Defines how the link appears in a simulation or visualization tool (e.g., RViz) using a 3D mesh (`link1.stl`).  
+- **`<collision>`**: Specifies the simplified geometry used for physics-based interactions (e.g., collisions).  
+- **`<inertial>`**: Defines the mass, center of gravity, and inertia tensor, which are crucial for realistic physics simulations.  
+
+
+### Defining a Joint  
+A **joint** connects two links and defines how they move relative to each other.
+
+**Example of `joint1` in OpenManipulator-X:**
+```xml
+<joint name="${prefix}joint1" type="revolute">
+  <parent link="${prefix}link1"/>
+  <child link="${prefix}link2"/>
+  <origin xyz="0.012 0.0 0.017" rpy="0 0 0"/>
+  <axis xyz="0 0 1"/>
+  <limit velocity="4.8" effort="1" lower="${-pi}" upper="${pi}" />
+  <dynamics damping="0.1"/>
+</joint>
+```
+**Explanation**
+- **`type="revolute"`**: Defines a rotating joint (common in robotic arms).  
+- **`<parent>` and `<child>`**: Specifies the two links connected by the joint.  
+- **`<origin>`**: Defines the joint’s position relative to the parent link.  
+- **`<axis>`**: Specifies the rotation axis (`0 0 1` means rotation around the Z-axis).  
+- **`<limit>`**: Defines movement constraints (speed, torque, and range).  
+- **`<dynamics>`**: Includes damping, which affects how smoothly the joint moves.  
+
+
+### Adding a Prismatic Joint
+Prismatic joints allow **linear motion** rather than rotation.  
+
+**Example from OpenManipulator-X gripper:**
+```xml
+<joint name="${prefix}gripper_left_joint" type="prismatic">
+  <parent link="${prefix}link5"/>
+  <child link="${prefix}gripper_left_link"/>
+  <origin xyz="0.0817 0.021 0.0" rpy="0 0 0"/>
+  <axis xyz="0 1 0"/>
+  <limit velocity="4.8" effort="1" lower="-0.010" upper="0.019" />
+  <dynamics damping="0.1"/>
+</joint>
+```
+**Explanation**
+- **`type="prismatic"`**: Allows linear motion along the defined axis.  
+- **`<limit>`**: Restricts the movement range (from -0.010m to 0.019m).  
+- **Used for**: The gripper’s movement (opening and closing).  
+
+
+### Using a Fixed Joint  
+Fixed joints are used when a link **does not move** relative to another.  
+
+**Example:**
+```xml
+<joint name="${prefix}end_effector_joint" type="fixed">
+  <parent link="${prefix}link5"/>
+  <child link="${prefix}end_effector_link"/>
+  <origin xyz="0.126 0.0 0.0" rpy="0 0 0"/>
+</joint>
+```
+**Explanation**
+- **`type="fixed"`**: No relative motion between links.  
+- **Used for**: End-effectors or components that do not move.  
+

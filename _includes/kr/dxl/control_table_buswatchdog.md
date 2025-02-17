@@ -1,3 +1,9 @@
+{% if page.ref=='xd430-t210' or page.ref=='xd430-t350' or page.ref=='xd540-t150' or page.ref=='xd540-t270' or page.ref=='xd430-t200' or page.ref=='xw430-t333' or page.ref=='xw540-t140' or page.ref=='xw540-t260' %}
+{% assign communication= "(RS485)" %}
+{% else %}
+{% assign communication= "(RS485, TTL)" %}
+{% endif %}
+
 Bus Watchdog(98)은 특정할 수 없는 오류에 의해 제어기와 장치의 통신(RS485, TTL)이 단절된 경우, 장치를 정지시키기 위한 안전장치(Fail-safe) 입니다.  
 여기서 통신이란 프로토콜에서 정의된 모든 Instruction Packet을 의미합니다.
 

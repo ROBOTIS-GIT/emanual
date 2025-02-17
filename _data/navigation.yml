@@ -12,21 +12,39 @@ main:
       - title: "YM070-210-M001-RH"
         titlekr: "YM070-210-M001-RH"
         url: /dxl/y/ym070-210-m001-rh/
+      - title: "YM070-210-B001-RH"
+        titlekr: "YM070-210-B001-RH"
+        url: /dxl/y/ym070-210-b001-rh/
       - title: "YM070-210-R051-RH"
         titlekr: "YM070-210-R051-RH"
         url: /dxl/y/ym070-210-r051-rh/
       - title: "YM070-210-R099-RH"
         titlekr: "YM070-210-R099-RH"
         url: /dxl/y/ym070-210-r099-rh/
+      - title: "YM070-210-A051-RH"
+        titlekr: "YM070-210-A051-RH"
+        url: /dxl/y/ym070-210-a051-rh/
+      - title: "YM070-210-A099-RH"
+        titlekr: "YM070-210-A099-RH"
+        url: /dxl/y/ym070-210-a099-rh/
       - title: "YM080-230-M001-RH"
         titlekr: "YM080-230-M001-RH"
         url: /dxl/y/ym080-230-m001-rh/
+      - title: "YM080-230-B001-RH"
+        titlekr: "YM080-230-B001-RH"
+        url: /dxl/y/ym080-230-b001-rh/
       - title: "YM080-230-R051-RH"
         titlekr: "YM080-230-R051-RH"
         url: /dxl/y/ym080-230-r051-rh/
       - title: "YM080-230-R099-RH"
         titlekr: "YM080-230-R099-RH"
         url: /dxl/y/ym080-230-r099-rh/
+      - title: "YM080-230-A051-RH"
+        titlekr: "YM080-230-A051-RH"
+        url: /dxl/y/ym080-230-a051-rh/
+      - title: "YM080-230-A099-RH"
+        titlekr: "YM080-230-A099-RH"
+        url: /dxl/y/ym080-230-a099-rh/
     - title: "P Series"
       titlekr: "P 시리즈"
       url: /dxl/p/
@@ -26030,8 +26048,6 @@ turtlebot3:
         url: /platform/turtlebot3/autonomous_driving/#level-crossing
       - title: "Tunnel"
         url: /platform/turtlebot3/autonomous_driving/#tunnel
-    - title: "TurtleBot3 AutoRace 2019"
-      url: /platform/turtlebot3/autonomous_driving_autorace/
   - title: "Machine Learning"
     url: /platform/turtlebot3/machine_learning/#machine-learning
     children:
@@ -26197,6 +26213,8 @@ openmanipulator_x:
       url: /platform/openmanipulator_x/specification/#dimension
     - title: "Inertia"
       url: /platform/openmanipulator_x/specification/#inertia
+    - title: "Understanding URDF"
+      url: /platform/openmanipulator_x/specification/#understanding-urdf
   - title: "Assembly"
     url: /platform/openmanipulator_x/assembly
     children:
