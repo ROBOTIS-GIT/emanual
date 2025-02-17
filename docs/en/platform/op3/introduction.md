@@ -44,7 +44,7 @@ There are 1 RGB LED and 3 LEDs, 4 buttons on the back of OP3. From left to right
   - Location of the ports
   - ROBOTIS OP3 no longer has the 3.5mm microphone and audio jacks
 
-  ![](/assets/images/platform/op3/op3_003_rev2.png)
+  ![](/assets/images/platform/op3/op3_003_rev3.png)
 
   > Moderate changes have been made in the back panel of OP3.
 
@@ -148,9 +148,9 @@ Check your ROBOTIS OP3 package for the following items.
 
 ## [Layout](#layout)
 
-![](/assets/images/platform/op3/op3_006_rev2.png)
+![](/assets/images/platform/op3/op3_006_rev3.png)
 
-![](/assets/images/platform/op3/op3_007_rev2.png)
+![](/assets/images/platform/op3/op3_007_rev3.png)
 
 **CAUTION** : Layout of the front and back panel is subject to change depends on the selected built-in PC.
 {: .notice--warning}

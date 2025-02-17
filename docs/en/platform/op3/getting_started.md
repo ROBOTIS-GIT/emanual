@@ -57,6 +57,7 @@ Keyboard and monitor are directly connected to ROBOTIS-OP3.
     ![](/assets/images/platform/op3/op3_connection_ssh2.png)
 
  - VNC  
+   
    **CAUTION** : The robot must be booted with a physical monitor connected for VNC connection to work.
    {: .notice--warning}
 
