@@ -28,7 +28,9 @@ This manual describes how to use simulation tools (Gazebo and Webots) for the RO
 ### Gazebo 
 * [Gazebo Tutorials]   
 * [Gazebo Installation]   
-*  ※ Before install Gazebo, please check the table of compatible ROS and Gazebo Combinations [here](https://gazebosim.org/docs/harmonic/ros_installation/). 
+
+  **CAUTION** : Before install Gazebo, please check the table of compatible ROS and Gazebo Combinations [here](https://gazebosim.org/docs/harmonic/ros_installation/).  
+  {: .notice--warning}
 
 ### Additional Installation for Gazebo
 If you are using ros2 jazzy, the following packages need to be installed.
@@ -40,8 +42,8 @@ $ sudo apt install ros-jazzy-gz-ros2-control
 ```
 
 ### Webots 
-[Webots Tutorials]   
-[Webots Installation]   
+* [Webots Tutorials]   
+* [Webots Installation]   
 
 ### Additional Installation for Webots
 If you are using ros2 jazzy, the following packages need to be installed.
@@ -49,9 +51,9 @@ If you are using ros2 jazzy, the following packages need to be installed.
 $ sudo apt-get install ros-jazzy-webots-ros2
 ```
 
-### Download Packages
-[ROBOTIS OP3 Common]   
-[ROBOTIS OP3 Simulations]   
+### Download Packages  
+* [ROBOTIS OP3 Common]   
+* [ROBOTIS OP3 Simulations]   
 
 
 ## [Gazebo Simulation](#gazebo-simulation)
@@ -108,13 +110,14 @@ $ ros2 launch op3_manager op3_simulation.launch.py
 
 
 
+[ROBOTIS OP3 Common]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-common
+[op3_manager]: /docs/en/platform/op3/robotis_ros_packages/#op3-manager
+[OP3 Tutorials]: /docs/en/platform/op3/tutorials/#tutorials
+
 [Gazebo Tutorials]: https://gazebosim.org/docs/harmonic/getstarted/   
 [Gazebo Installation]: https://gazebosim.org/docs/harmonic/install/   
-[ROBOTIS OP3 Common]: /docs/en/platform/op3/robotis_ros_packages/#op3-common   
 <!-- may need to change op3 simulation link  -->   
 [ROBOTIS OP3 Simulations]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Simulations 
-[op3_manager]: /docs/en/platform/op3/robotis_ros_packages/#op3-manager     
-[OP3 Tutorials]: /docs/en/platform/op3/tutorials/#tutorials   
 <!-- not supported in ros2 but want to keep due to possible re-usability
 <!-- [Controller File]: /docs/en/popup/position_controller.yaml/   -->
 <!-- [World File]: /docs/en/popup/robotis_op3_gazebo_worlds_empty.world/   -->
