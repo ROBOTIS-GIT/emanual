@@ -100,7 +100,7 @@ This is the most recommended mode to change the power source.
 
 ![](/assets/images/platform/op3/op3_016_rev2.png)
 
-### [Autonomous Mode](#autonomous-mode)
+### [Autonomous Soccer Mode](#autonomous-soccer-mode)
 
 ROBOTIS OP3 follows and kicks a red ball (user can change the color of ball) and plays soccer by itself.  
 If ROBOTIS OP3 falls down (either on its back or belly) it will stand up and resume ball tracking, then pursuit.
@@ -206,11 +206,15 @@ Then connect to ROBOTIS OP3 wifi network(SSID : ROBOTIS-OP3-share). Password is 
   ![](/assets/images/platform/op3/op3_024.png)
 
 #### Example: VNC client (for Windows)
+
+**CAUTION** : The robot must be booted with a physical monitor connected for VNC connection to work.
+{: .notice--warning}
+
 - Users who are familiar to graphical interface may use remote desktop softwares.
 - Execute VNC client program (ex: Ultra VNC Viewer)
 - Input the ROBOTIS OP3’s IP address : `10.42.0.1`
 - Input the ROBOTIS OP3’s Password : `111111`  
-  ![](/assets/images/platform/op3/op3_025.png)
+  ![](/assets/images/platform/op3/op3_025_rev3.png)
 
 ### [Development Environment](#development-environment)
 
@@ -311,6 +315,8 @@ Based on the type of internal PC, ROBOTIS-OP3 will be revised accordingly.
 ![](/assets/images/platform/op3/op3_rev1.png)  
 
 ![](/assets/images/platform/op3/op3_rev2.png)  
+
+![](/assets/images/platform/op3/op3_rev3.png)  
 
 
 ### [Warranty](#warranty)
@@ -585,11 +591,11 @@ The calculation will take for 2 seconds and then each bit will be reset to 0.
 [https://github.com/ROBOTIS-GIT/face_detection]: https://github.com/ROBOTIS-GIT/face_detection
 [http://wiki.ros.org/usb_cam]: http://wiki.ros.org/usb_cam
 [https://github.com/ros-drivers/usb_cam]: https://github.com/ros-drivers/usb_cam
-[ROBOTIS Framework WIKI]: https://emanual.robotis.com/docs/en/software/robotis_framework_packages/
-[ROBOTIS OP3 WIKI]: https://emanual.robotis.com/docs/en/platform/op3/introduction/
-[ROBOTIS OP3 Recovery]: https://emanual.robotis.com/docs/en/platform/op3/recovery/#recovery-of-robotis-op3
-[ROBOTIS OP3 Tutorial]: https://emanual.robotis.com/docs/en/platform/op3/tutorials/
-[ROBOTIS OP3 Camera Setting]: https://emanual.robotis.com/docs/en/platform/op3/tutorials/#camera-setting-parameters
+[ROBOTIS Framework WIKI]: /docs/en/software/robotis_framework_packages/
+[ROBOTIS OP3 WIKI]: /docs/en/platform/op3/introduction/
+[ROBOTIS OP3 Recovery]: /docs/en/platform/op3/recovery/#recovery-of-robotis-op3
+[ROBOTIS OP3 Tutorial]: /docs/en/platform/op3/tutorials/
+[ROBOTIS OP3 Camera Setting]: /docs/en/platform/op3/tutorials/#camera-setting-parameters
 [https://github.com/ROBOTIS-GIT/DynamixelSDK]: https://github.com/ROBOTIS-GIT/DynamixelSDK
 [https://github.com/ROBOTIS-GIT/face_detection]: https://github.com/ROBOTIS-GIT/face_detection
 [https://github.com/ROBOTIS-GIT/ROBOTIS-Framework]: https://github.com/ROBOTIS-GIT/ROBOTIS-Framework

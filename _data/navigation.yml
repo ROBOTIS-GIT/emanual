@@ -25019,8 +25019,8 @@ op3:
         url: /platform/op3/quick_start/#running-demonstration-programs
       - title: "Demonstration Ready Mode"
         url: /platform/op3/quick_start/#demonstration-ready-mode
-      - title: "Autonomous Mode"
-        url: /platform/op3/quick_start/#autonomous-mode
+      - title: "Autonomous Soccer Mode"
+        url: /platform/op3/quick_start/#autonomous-soccer-mode
       - title: "Interactive Motion Mode"
         url: /platform/op3/quick_start/#interactive-motion-mode
       - title: "Vision Processing Mode"

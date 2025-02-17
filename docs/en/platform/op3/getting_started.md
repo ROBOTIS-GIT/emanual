@@ -55,8 +55,8 @@ Keyboard and monitor are directly connected to ROBOTIS-OP3.
     5. Input ROBOTIS-OP3’s password : 111111  
 
     ![](/assets/images/platform/op3/op3_connection_ssh2.png)
- - VNC
 
+ - VNC  
    **CAUTION** : The robot must be booted with a physical monitor connected for VNC connection to work.
    {: .notice--warning}
 
@@ -65,7 +65,7 @@ Keyboard and monitor are directly connected to ROBOTIS-OP3.
     3. Input ROBOTIS-OP3’s password : 111111
     4. Accessing ROBOTIS-OP3 via remote desktop may result in slower performance.
 
-    ![](/assets/images/platform/op3/op3_connection_vnc2.png)
+    ![](/assets/images/platform/op3/op3_025_rev3.png)
     
 ## [How to stop the demo program](#how-to-stop-the-demo-program)
 

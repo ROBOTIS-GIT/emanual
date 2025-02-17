@@ -26,9 +26,9 @@ Action contains all joint angles per each time frame.
 - Subscribed Topics  
   `/robotis/action/page_num`([std_msgs/Int32]{: .popup})  
   &emsp;&emsp; The page number of action to run in the Module.  
-  &emsp;&emsp; 1 ~ 255 : play action  
-  &emsp;&emsp; -1 : stop action  
-  &emsp;&emsp; -2 : brake action  
+  &emsp;&emsp; &emsp; 1 ~ 255 : play action  
+  &emsp;&emsp; &emsp; -1 : stop action  
+  &emsp;&emsp; &emsp; -2 : brake action  
 
 - Published Topics  
   `/robotis/status`([robotis_controller_msgs/StatusMsg]{: .popup})  
@@ -39,7 +39,7 @@ Action contains all joint angles per each time frame.
   &emsp;&emsp; Service that checks whether the action is running or not.  
 
 ###### Parameters
-  `/action file path`(string, default : "op3_action_module/data/motion_4,095.bin")  
+  `/action file path`(string, default : "op3_action_module/data/motion_4095.bin")  
   &emsp;&emsp; File path that indicates the location of action libraries for OP3.  
 
 ##### [op3_base_module](#op3-base-module)

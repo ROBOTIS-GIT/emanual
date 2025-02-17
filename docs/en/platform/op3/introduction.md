@@ -131,17 +131,17 @@ Check your ROBOTIS OP3 package for the following items.
 | No | Item                                     | Quantity |
 |:---|:-----------------------------------------|:--------:|
 | 1  | Fully-assembled ROBOTIS OP3 robot        |    1     |
-| 2  | USB Thumb Drive (with recovery software) |    1     |
-| 3  | Fuse                                     |    2     |
-| 4  | Ball                                     |    1     |
-| 5  | Spare Cables                             |  1 pack  |
-| 6  | Wrench & Screw Driver                    |  1 set   |
-| 7  | Power Cable                              |    1     |
-| 8  | DC Power Supply                          |    1     |
+| 2  | Battery Pack                             |    3     |
+| 3  | Battery Charger                          |    1     |
+| 4  | DC Power Supply                          |    1     |
+| 5  | Power Cable                              |    1     |
+| 6  | Ethernet Cable                           |    1     |
+| 7  | Wrenches x 2 & Screw Driver x 2          |  1 set   |
+| 8  | Spare Cables                             |  1 pack  |
 | 9  | Spare Bolts and Nuts                     |  1 pack  |
-| 10 | Ethernet Cable                           |    1     |
-| 11 | Battery Charger                          |    1     |
-| 12 | Battery Pack                             |    3     |
+| 10 | Ball                                     |    1     |
+| 11 | USB Thumb Drive (with recovery software) |    1     |
+| 12 | Fuse                                     |    2     |
 | 13 | Hard Case                                |    1     |
 
 ![](/assets/images/platform/op3/op3_005_rev3-1.png)

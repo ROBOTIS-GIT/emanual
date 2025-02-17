@@ -32,17 +32,17 @@ This chapter explains how to install software and configure ROBOTIS OP3.
 
 #### OS Installation  
   OS Installation  
- - Linux Mint 18.1 Xfce
+ - Linux Mint 22 Xfce
   > Reference : [How to Install Linux Mint]
 
 #### PC Setting
 - WiFi Hotspot
- 1. Click the Network icon from the bottom right corner of the system tray and select "Edit Connections...".
+ 1. Right-click on the Network icon in the system tray at the bottom right corner of your screen and select "Edit Connections...".
  2. In the Network Connections window, click Add button.
  3. In the Choose a Connection Type window, select Wi-Fi from the Hardware group.
  4. Click Create... button.
  5. Modify the Connection name to "OP3-Hotspot" in the new window.
- 6. Change the SSID to "ROBOTIS-OP3-share" in the Wi-Fi tab.
+ 6. Change the SSID to "ROBOTIS-OP3-Share" in the Wi-Fi tab.
  7. Select Hotspot Mode and click Save button.
  8. Close the Network Connections window.
  9. Click the Network icon from the bottom right corner of the system tray and select "Connect to Hidden Wi-Fi Network...".
@@ -352,7 +352,7 @@ Clonezilla is used to recover ROBOTIS-OP3 with the image file in the provided US
 	![](/assets/images/platform/op3/op3_recovery_08.jpg)  
 
 
-[How to Install Linux Mint]: https://www.linuxmint.com/documentation/user-guide/Cinnamon/english_18.0.pdf
+[How to Install Linux Mint]: https://linuxmint-installation-guide.readthedocs.io/en/latest/index.html
 [ROBOTIS-OP3]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3
 [ROBOTIS-OP3-Demo]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-demo
 [ROBOTIS-OP3-msgs]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-msgs

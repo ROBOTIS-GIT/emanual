@@ -78,7 +78,7 @@ This is the most recommended mode to change the power source.
 
 ![](/assets/images/platform/op3/op3_016_rev2.png)
 
-### [Autonomous Mode](#autonomous-mode)
+### [Autonomous Soccer Mode](#autonomous-soccer-mode)
 
 ROBOTIS OP3 follows and kicks a red ball (user can change the color of ball) and plays soccer by itself.  
 If ROBOTIS OP3 falls down (either on its back or belly) it will stand up and resume ball tracking, then pursuit.
