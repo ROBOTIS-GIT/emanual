@@ -1,4 +1,4 @@
-This manual describes how to set up and run the TurtleBot3 example on ROS 2 Humble. The Action Client sends patrol parameters (e.g., shape, area, or iteration count) to the Action Server, which then translates these parameters into `cmd_vel` commands to move the TurtleBot3. Please refer to the above [tutorial video][tutorial_video] for more detailed usage.
+This section explains how to configure and execute the TurtleBot3 patrol function, enabling autonomous movement along predefined and custom routes using ROS 2 Humble. The Action Client sends patrol parameters (e.g., shape, area, or iteration count) to the Action Server, which then translates these parameters into `cmd_vel` commands to move the TurtleBot3. Please refer to the above [tutorial video][tutorial_video] for more detailed usage.
 
 
 **Understanding the Overall Flow**
@@ -51,5 +51,14 @@ ros2 run turtlebot3_example turtlebot3_patrol_client
 
 When the client starts, you will be prompted to select the patrol shape (square or triangle) and enter any required parameters (such as side length or number of iterations). Type in the desired values and press Enter.
 The client sends the provided information to the server, and the TurtleBot3 begins its patrol accordingly.
+
+**4. Visualizing TurtleBot3 in Rviz *(Optional)***
+
+**[Remote PC]** To view the TurtleBot3’s movements and visualize the robot in RViz, you can launch the RViz visualization tool.
+```bash
+ros2 launch turtlebot3_bringup rviz2.launch.py
+```
+
+Once RViz is open, you will be able to see the TurtleBot3 as it performs the patrol according to the parameters you set.
 
 To further explore the functionality of the system, it is recommended to experiment with different patrol parameters, such as varying the side length of the patrol shape, adjusting the number of repetitions, or modifying the patrol speed. These adjustments will allow you to observe how the patrol behavior changes and deepen your understanding of how the action client-server framework coordinates movement. By systematically testing different configurations, you can refine your usage of the patrol system and optimize it for specific applications.
