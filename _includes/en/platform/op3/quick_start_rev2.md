@@ -1,25 +1,3 @@
----
-layout: archive
-lang: en
-ref: op3_quick_start
-read_time: true
-share: true
-author_profile: false
-permalink: /docs/en/platform/op3/quick_start/
-tabs: "Revision"
-tab_title1: "2025 ~"
-tab_title2: "~ 2023"
-sidebar:
-  title: ROBOTIS OP3
-  nav: "op3"
-product_group: op3
-page_number: 2
----
-
-<style>body {counter-reset: h1 1 !important;}</style>
-
-{::options parse_block_html="true" /}
-<section data-id="{{ page.tab_title1 }}" class="tab_contents">
 
 # [Quick Start](#quick-start)
 
@@ -107,8 +85,9 @@ If ROBOTIS OP3 falls down (either on its back or belly) it will stand up and res
 
 - Start Autonomous Soccer Mode
   1. Press `MODE` button until LED1(red) is lit.  
-    ROBOTIS OP3 will verbally announce “Autonomous soccer mode”.  
-    ![](/assets/images/platform/op3/op3_017_rev2.png)
+    ROBOTIS OP3 will verbally announce “Autonomous soccer mode”.
+
+      ![](/assets/images/platform/op3/op3_017_rev2.png)
 
   2. Press `START` button to begin.  
     ROBOTIS OP3 will stand up and walk around to find the ball.ROBOTIS-OP3 will verbally announce “Start soccer demonstration”
@@ -125,12 +104,13 @@ If ROBOTIS OP3 falls down (either on its back or belly) it will stand up and res
 ROBOTIS OP3 performs pre-programmed motions sequentially while talking.
 
 - Start Interactive Motion Mode
-  1. Press `MODE` button until LED 3(blue) is lit. ROBOTIS OP3 will verbally announce “Interactive motion mode”.  
-    ![](/assets/images/platform/op3/op3_019_rev2.png)
+  1. Press `MODE` button until LED 3(blue) is lit. ROBOTIS OP3 will verbally announce “Interactive motion mode”.
 
-  2. Press `START` button to begin. ROBOTIS OP3 will stand up and announce “Start motion demonstration”.  
-   
-  3. ROBOTIS OP3 will perform following actions sequentially.  
+      ![](/assets/images/platform/op3/op3_019_rev2.png)
+
+  2. Press `START` button to begin. ROBOTIS OP3 will stand up and announce “Start motion demonstration”.
+  3. ROBOTIS OP3 will perform following actions sequentially.
+
     ![](/assets/images/platform/op3/op3_020_rev2.png)
 
 - Stop Interactive Motion Mode
@@ -138,17 +118,17 @@ ROBOTIS OP3 performs pre-programmed motions sequentially while talking.
 
 ### [Vision Processing Mode](#vision-processing-mode)
 
-The new vision processing demo for ROBOTIS OP3 is “Face detection and tracking”. ROBOTIS OP3 is developed with ROS2.  
-Therefore various ROS2 packages such as face detecting package can be applied for vision processing mode to track recognized face in front of the robot.  
+The new vision processing demo for ROBOTIS OP3 is “Face detection and tracking”. ROBOTIS OP3 is developed with ROS.  
+Therefore various ROS packages such as face detecting package can be applied for vision processing mode to track recognized face in front of the robot.  
 Please refer the below website link.  
-Face detecting : [https://github.com/ROBOTIS-GIT/face_detection] forked from [https://github.com/phil333/face_detection]
+Face detecting : [https://github.com/phil333/face_detection]
 
 - Start Vision Processing Mode
-  1. Press `MODE` button until LED 2(green) is lit. ROBOTIS OP3 will verbally announce “Vision processing mode”.  
-    ![](/assets/images/platform/op3/op3_018_rev2.png)
+  1. Press `MODE` button until LED 2(green) is lit. ROBOTIS OP3 will verbally announce “Vision processing mode”.
 
-  2. Press `START` button to begin. ROBOTIS OP3 will verbally announce “Start vision processing demonstration” and stand up.  
-   
+      ![](/assets/images/platform/op3/op3_018_rev2.png)
+
+  2. Press `START` button to begin. ROBOTIS OP3 will verbally announce “Start vision processing demonstration” and stand up.
   3. The target face should be located approximately 90cm(36”) away from ROBOTIS OP3.  
     If ROBOTIS OP3 detects the target face, chest LED will be lit in white whereas the LED will be off if ROBOTIS OP3 doesn’t detect the face.  
     ROBOTIS OP3 will keep track on the first recognized target face.
@@ -159,7 +139,7 @@ Face detecting : [https://github.com/ROBOTIS-GIT/face_detection] forked from [ht
 - ETC
   - Modifying parameters of the ‘face_detection’ package might improve recognition of the face. Please refer to the following website for more details.
   - face_detection package : [https://github.com/ROBOTIS-GIT/face_detection]
-  - usb_cam package : [https://github.com/ros-drivers/usb_cam]
+  - usb_cam package : [http://wiki.ros.org/usb_cam]
 
 ## [Camera Calibration](#camera-calibration)
 
@@ -172,12 +152,15 @@ Please refer to the wiki manual from below link.
 
 Please perform below procedures in order to shutdown the computer inside ROBOTIS OP3.
 
-1. Press PC power button which is located on the belly. ROBOTIS OP3 will verbally announce “bye-bye” and initiate shutdown process.  
-  ![](/assets/images/platform/op3/op3_021_rev2.png)  
-  When the internal computer of ROBOTIS OP3 is turned off, blue LED at the chest will be off.  
-  After the blue LED is turned off, shutdown the main power with the switch in the back of the robot.
+1. Press PC power button which is located on the belly. ROBOTIS OP3 will verbally announce “bye-bye” and initiate shutdown process.
 
-2. If ROBOTIS OP3 does not announce “bye-bye” then you may need to force shutdown by holding the power button until the blue LED at the chest turns off.  
+    ![](/assets/images/platform/op3/op3_021_rev2.png)
+
+    When the internal computer of ROBOTIS OP3 is turned off, blue LED at the chest will be off.  
+    After the blue LED is turned off, shutdown the main power with the switch in the back of the robot.
+
+2. If ROBOTIS OP3 does not announce “bye-bye” then you may need to force shutdown by holding the power button until the blue LED at the chest turns off.
+
   ![](/assets/images/platform/op3/op3_022_rev2.png)
 
 **NOTE** : If power supply is cut off before the blue LED is turned off, ROBOTIS OP3 may have problems in the next startup.
@@ -196,44 +179,42 @@ Then connect to ROBOTIS OP3 wifi network(SSID : ROBOTIS-OP3-share). Password is 
 - Input ROBOTIS OP3’s IP address: `10.42.0.1`
 - Select `SSH` as a connection type and open the connection.
 - Input ROBOTIS OP3’s user name : `robotis`
-- Input ROBOTIS OP3’s Password : `111111`  
-  ![](/assets/images/platform/op3/op3_023.png)
+- Input ROBOTIS OP3’s Password : `111111`
+
+![](/assets/images/platform/op3/op3_023.png)
 
 #### Example: SSH Client (for Linux)
 - Open the terminal window.
 - Input the following SSH command with ROBOTIS OP3’s user name and IP address : `$ ssh robotis@10.42.0.1`
-- Input ROBOTIS OP3’s Password : `111111`    
-  ![](/assets/images/platform/op3/op3_024.png)
+- Input ROBOTIS OP3’s Password : `111111`
+
+![](/assets/images/platform/op3/op3_024.png)
 
 #### Example: VNC client (for Windows)
-
-**CAUTION** : The robot must be booted with a physical monitor connected for VNC connection to work.
-{: .notice--warning}
-
 - Users who are familiar to graphical interface may use remote desktop softwares.
 - Execute VNC client program (ex: Ultra VNC Viewer)
 - Input the ROBOTIS OP3’s IP address : `10.42.0.1`
-- Input the ROBOTIS OP3’s Password : `111111`  
-  ![](/assets/images/platform/op3/op3_025_rev3.png)
+- Input the ROBOTIS OP3’s Password : `111111`
+
+![](/assets/images/platform/op3/op3_025.png)
 
 ### [Development Environment](#development-environment)
 
 The following is the list of tools for source code development.
 - OS : Linux (64-bit)
-- Compiler : GNU project C and C++ Compiler, colcon
+- Compiler : GNU project C and C++ Compiler, Catkin
 - Programming Language : C++
 
 
 ### [Source Code](#source-code)
 
-You may find the source code directory at `/home/robotis/robotis_ws/src` from ROBOTIS OP3's PC.
+You may find the source code directory at `/robotis` from ROBOTIS OP3's PC.
 
-![](/assets/images/platform/op3/op3_026_rev3.png)
+![](/assets/images/platform/op3/op3_026.png)
 
 The pre-installed source code may be updated without prior notice. Please check for updates periodically.
 You may obtain updated source code from the below GitHub links :
 - [https://github.com/ROBOTIS-GIT/DynamixelSDK]
-- [https://github.com/ROBOTIS-GIT/face_detection]
 - [https://github.com/ROBOTIS-GIT/ROBOTIS-Framework]
 - [https://github.com/ROBOTIS-GIT/ROBOTIS-Framework-msgs]
 - [https://github.com/ROBOTIS-GIT/ROBOTIS-Math]
@@ -260,12 +241,8 @@ The tools are located in the following directory :
 home/robotis/catkin_ws/src/ROBOTIS-OP3/ROBOTIS-OP3-Tools
 
 In the directory you can find code for :
-- **op3_action_editor** : motion creation
-- **op3_gui_demo** : configuring the motion control module, parameter tuning for walking, module testing features
-- **op3_tuner_client** : adjust offset and gain of ROBOTIS-OP3
-- **op3_camera_setting_tool** : used with op3_manager to modify settings of a USB camera
-- **op3_web_setting_tool** : used with op3_demo to modify settings via a web page
 
+![](/assets/images/platform/op3/op3_028.png)
 
 ### [Recovery Software](#recovery-software)
 
@@ -293,15 +270,15 @@ You can download other ROBOTIS OP3-related items and more detailed information f
 
 The below diagram illustrates the overall system structure of ROBOTIS OP3.
 
-![](/assets/images/platform/op3/op3_029_rev3.png)
+![](/assets/images/platform/op3/op3_029.png)
 
 1. Main Controller is powered by Intel i3 dual-core(Intel NUC i3)
 2. Sub Controller is powered by STMicroelectronics Cortex-M7 32F746GT6 (clocked at 216MHz).
-3. Camera  
-    - 1080p Full HD movie recording
-    - Carl Zeiss® optics with 20-step autofocus
-    - Built-in dual stereo mics with noise reduction
-    - H.264 video encoding
+3. Camera
+  - 1080p Full HD movie recording
+  - Carl Zeiss® optics with 20-step autofocus
+  - Built-in dual stereo mics with noise reduction
+  - H.264 video encoding
 
 ### [ID Map](#id-map)
 
@@ -315,8 +292,6 @@ Based on the type of internal PC, ROBOTIS-OP3 will be revised accordingly.
 ![](/assets/images/platform/op3/op3_rev1.png)  
 
 ![](/assets/images/platform/op3/op3_rev2.png)  
-
-![](/assets/images/platform/op3/op3_rev3.png)  
 
 
 ### [Warranty](#warranty)
@@ -590,14 +565,12 @@ The calculation will take for 2 seconds and then each bit will be reset to 0.
 [https://github.com/phil333/face_detection]: https://github.com/phil333/face_detection
 [https://github.com/ROBOTIS-GIT/face_detection]: https://github.com/ROBOTIS-GIT/face_detection
 [http://wiki.ros.org/usb_cam]: http://wiki.ros.org/usb_cam
-[https://github.com/ros-drivers/usb_cam]: https://github.com/ros-drivers/usb_cam
-[ROBOTIS Framework WIKI]: /docs/en/software/robotis_framework_packages/
-[ROBOTIS OP3 WIKI]: /docs/en/platform/op3/introduction/
-[ROBOTIS OP3 Recovery]: /docs/en/platform/op3/recovery/#recovery-of-robotis-op3
-[ROBOTIS OP3 Tutorial]: /docs/en/platform/op3/tutorials/
-[ROBOTIS OP3 Camera Setting]: /docs/en/platform/op3/tutorials/#camera-setting-parameters
+[ROBOTIS Framework WIKI]: http://emanual.robotis.com/docs/en/software/robotis_framework_packages/
+[ROBOTIS OP3 WIKI]: http://emanual.robotis.com/docs/en/platform/op3/introduction/
+[ROBOTIS OP3 Recovery]: http://emanual.robotis.com/docs/en/platform/op3/recovery/#recovery-of-robotis-op3
+[ROBOTIS OP3 Tutorial]: emanual.robotis.com/docs/en/platform/op3/tutorials
+[ROBOTIS OP3 Camera Setting]: http://emanual.robotis.com/docs/en/platform/op3/tutorials/#camera-setting-parameters
 [https://github.com/ROBOTIS-GIT/DynamixelSDK]: https://github.com/ROBOTIS-GIT/DynamixelSDK
-[https://github.com/ROBOTIS-GIT/face_detection]: https://github.com/ROBOTIS-GIT/face_detection
 [https://github.com/ROBOTIS-GIT/ROBOTIS-Framework]: https://github.com/ROBOTIS-GIT/ROBOTIS-Framework
 [https://github.com/ROBOTIS-GIT/ROBOTIS-Framework-msgs]: https://github.com/ROBOTIS-GIT/ROBOTIS-Framework-msgs
 [https://github.com/ROBOTIS-GIT/ROBOTIS-Math]: https://github.com/ROBOTIS-GIT/ROBOTIS-Math
@@ -612,9 +585,3 @@ The calculation will take for 2 seconds and then each bit will be reset to 0.
 [http://www.realvnc.com/]: http://www.realvnc.com/
 [http://en.robotis.com/index/service_04.php?tab=4]: http://en.robotis.com/index/service_04.php?tab=4
 [http://support.robotis.com]: http://support.robotis.com
-
-</section>
-
-<section data-id="{{ page.tab_title2 }}" class="tab_contents">
-{% include en/platform/op3/quick_start_rev2.md %}
-</section>
