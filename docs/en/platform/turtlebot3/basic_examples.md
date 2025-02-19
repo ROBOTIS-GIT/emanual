@@ -104,6 +104,10 @@ page_number: 22
 {% include en/platform/turtlebot3/basic_examples/basic_examples_patrol_dashing.md %}
 </section> -->
 
+<section data-id="{{ page.tab_title6 }}" class="tab_contents">
+{% include en/platform/turtlebot3/basic_examples/basic_examples_patrol_humble.md %}
+</section>
+
 ## [TurtleBot Follower Demo](#turtlebot-follower-demo)
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
