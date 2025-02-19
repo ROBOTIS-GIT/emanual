@@ -22,9 +22,9 @@ page_number: 22
 
 # [Examples](#examples)
 
-<!-- <section data-id="{{ page.tab_title1 }}" class="tab_contents">
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
 {% include en/platform/turtlebot3/basic_examples/basic_examples_intro_kinetic.md %}
-</section> -->
+</section>
 
 <!-- <section data-id="{{ page.tab_title2 }}" class="tab_contents">
 **NOTE**: This feature is available for ROS Kinetic and ROS2 Dashing. 
@@ -46,20 +46,16 @@ page_number: 22
 </section> -->
 
 <section data-id="{{ page.tab_title6 }}" class="tab_contents">
-**NOTE**: This feature is available for ROS Kinetic and ROS2 Dashing. 
-{: .notice}
+**NOTE**: The examples will be added as quickly as possible based on **Humble**. We appreciate your interest and support. 
+{: .notice--danger}
 </section>
 
-<!-- <section data-id="{{ page.tab_title7 }}" class="tab_contents">
-**NOTE**: This feature is available for ROS Kinetic and ROS2 Dashing. 
-{: .notice}
-</section> -->
 
 ## [Move using Interactive Markers](#move-using-interactive-markers)
 
-<!-- <section data-id="{{ page.tab_title1 }}" class="tab_contents">
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
 {% include en/platform/turtlebot3/basic_examples/basic_examples_move_using_interactive_markers_kinetic.md %}
-</section> -->
+</section>
 
 <!-- <section data-id="{{ page.tab_title4 }}" class="tab_contents">
 **NOTE**: This feature is available for Kinetic. 
@@ -68,9 +64,9 @@ page_number: 22
 
 ## [Obstacle Detection](#obstacle-detection)
 
-<!-- <section data-id="{{ page.tab_title1 }}" class="tab_contents">
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
 {% include en/platform/turtlebot3/basic_examples/basic_examples_obstacle_detection_kinetic.md %}
-</section> -->
+</section>
 
 <!-- <section data-id="{{ page.tab_title4 }}" class="tab_contents">
 {% include en/platform/turtlebot3/basic_examples/basic_examples_obstacle_detection_dashing.md %}
@@ -79,10 +75,10 @@ page_number: 22
 
 ## [Position Control](#position-control)
 
-<!-- <section data-id="{{ page.tab_title1 }}" class="tab_contents">
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
 **NOTE**: This feature is available for Dashing. 
 {: .notice}
-</section> -->
+</section>
 
 <!-- <section data-id="{{ page.tab_title4 }}" class="tab_contents">
 {% include en/platform/turtlebot3/basic_examples/basic_examples_position_control_dashing.md %}
@@ -90,9 +86,9 @@ page_number: 22
 
 ## [Point Operation](#point-operation)
 
-<!-- <section data-id="{{ page.tab_title1 }}" class="tab_contents">
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
 {% include en/platform/turtlebot3/basic_examples/basic_examples_point_operation_kinetic.md %}
-</section> -->
+</section>
 
 <!-- <section data-id="{{ page.tab_title4 }}" class="tab_contents">
 {% include en/platform/turtlebot3/basic_examples/basic_examples_point_operation_dashing.md %}
@@ -100,9 +96,9 @@ page_number: 22
 
 ## [Patrol](#patrol)
 
-<!-- <section data-id="{{ page.tab_title1 }}" class="tab_contents">
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
 {% include en/platform/turtlebot3/basic_examples/basic_examples_patrol_kinetic.md %}
-</section> -->
+</section>
 
 <!-- <section data-id="{{ page.tab_title4 }}" class="tab_contents">
 {% include en/platform/turtlebot3/basic_examples/basic_examples_patrol_dashing.md %}
@@ -110,9 +106,9 @@ page_number: 22
 
 ## [TurtleBot Follower Demo](#turtlebot-follower-demo)
 
-<!-- <section data-id="{{ page.tab_title1 }}" class="tab_contents">
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
 {% include en/platform/turtlebot3/basic_examples/basic_examples_turtlebot_follower_demo_kinetic.md %}
-</section> -->
+</section>
 
 <!-- <section data-id="{{ page.tab_title4 }}" class="tab_contents">
 **NOTE**: This feature is available for Kinetic. 
@@ -121,9 +117,9 @@ page_number: 22
 
 ## [TurtleBot Panorama Demo](#turtlebot-panorama-demo)
 
-<!-- <section data-id="{{ page.tab_title1 }}" class="tab_contents">
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
 {% include en/platform/turtlebot3/basic_examples/basic_examples_turtlebot_panorama_demo_kinetic.md %}
-</section> -->
+</section>
 
 <!-- <section data-id="{{ page.tab_title4 }}" class="tab_contents">
 **NOTE**: This feature is available for Kinetic. 
@@ -132,9 +128,9 @@ page_number: 22
 
 ## [Automatic Parking](#automatic-parking)
 
-<!-- <section data-id="{{ page.tab_title1 }}" class="tab_contents">
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
 {% include en/platform/turtlebot3/basic_examples/basic_examples_automatic_parking_kinetic.md %}
-</section> -->
+</section>
 
 <!-- <section data-id="{{ page.tab_title4 }}" class="tab_contents">
 {% include en/platform/turtlebot3/basic_examples/basic_examples_automatic_parking_dashing.md %}
@@ -142,9 +138,9 @@ page_number: 22
 
 ## [Automatic Parking Vision](#automatic-parking-vision)
 
-<!-- <section data-id="{{ page.tab_title1 }}" class="tab_contents">
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
 {% include en/platform/turtlebot3/basic_examples/basic_examples_automatic_parking_vision_kinetic.md %}
-</section> -->
+</section>
 
 <!-- <section data-id="{{ page.tab_title4 }}" class="tab_contents">
 **NOTE**: This feature is available for Kinetic. 
@@ -153,11 +149,16 @@ page_number: 22
 
 ## [Load Multiple TurtleBot3s](#load-multiple-turtlebot3s)
 
-<!-- <section data-id="{{ page.tab_title1 }}" class="tab_contents">
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
 {% include en/platform/turtlebot3/basic_examples/basic_examples_load_multiple_turtlebot3s_kinetic.md %}
-</section> -->
+</section>
 
 <!-- <section data-id="{{ page.tab_title4 }}" class="tab_contents">
 **NOTE**: This feature is available for Kinetic. 
 {: .notice}
 </section> -->
+
+
+<section data-id="{{ page.tab_title6 }}" class="tab_contents"> 
+{% include en/platform/turtlebot3/basic_examples/basic_examples_load_multiple_turtlebot3s_humble.md %}
+</section>

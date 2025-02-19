@@ -26048,8 +26048,6 @@ turtlebot3:
         url: /platform/turtlebot3/autonomous_driving/#level-crossing
       - title: "Tunnel"
         url: /platform/turtlebot3/autonomous_driving/#tunnel
-    - title: "TurtleBot3 AutoRace 2019"
-      url: /platform/turtlebot3/autonomous_driving_autorace/
   - title: "Machine Learning"
     url: /platform/turtlebot3/machine_learning/#machine-learning
     children:
@@ -26215,6 +26213,8 @@ openmanipulator_x:
       url: /platform/openmanipulator_x/specification/#dimension
     - title: "Inertia"
       url: /platform/openmanipulator_x/specification/#inertia
+    - title: "Understanding URDF"
+      url: /platform/openmanipulator_x/specification/#understanding-urdf
   - title: "Assembly"
     url: /platform/openmanipulator_x/assembly
     children:

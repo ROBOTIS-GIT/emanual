@@ -5,7 +5,7 @@
   - As soon as x, y, &theta; are set, the TurtleBot3 will start moving to the destination immediately.
   ![](/assets/images/platform/turtlebot3/ros2/tb3_navigation2_rviz_02.png)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VtyqUuuZAFA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dndO3_HvDtw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <details>
 <summary>
