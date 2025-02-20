@@ -1,5 +1,5 @@
 
-The TurtleBot3 can be moved by 2D `point (x, y)` and `z-angular`. For example, if you insert (0.5, 0.3, 60), TurtleBot3 moves to point (x = 0.5m, y = 0.3m) and then rotates 60 deg.
+The TurtleBot3 can be moved in a 2D plane using `point (x, y)` and `z-angular` instructions. For example, if you send (0.5, 0.3, 60), the TurtleBot3 moves to point (x = 0.5m, y = 0.3m) and then rotates to face 60 degrees.
 
 **[Remote PC]** launch the pointop file.
 

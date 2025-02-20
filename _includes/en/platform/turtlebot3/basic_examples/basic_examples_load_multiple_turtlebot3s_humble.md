@@ -6,39 +6,39 @@
 ### Description  
 <iframe width="640" height="360" src="https://www.youtube.com/embed/IVut8qZOrEk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   - **What is Load Multiple TurtleBot3s example?**  
-    - This example shows how to operate multiple TurtleBot3s in one Remote PC.  
+    - This example shows how to operate multiple TurtleBot3s from one Remote PC.  
     - If you operate multiple TurtleBots as if you were operating just one, you won’t be able to distinguish which topic belongs to which robot.  
     ![](/assets/images/platform/turtlebot3/basic_examples/load_multiple_turtlebot3s/explain1.png)  
-    - You can assign namespace to each TurtleBot3's `node`, `topic`, `frame` as so you can identify each of TurtleBot3.  
+    - You can assign a unique namespace to each TurtleBot3's `node`, `topic`, `frame` so you can identify each TurtleBot3.  
     ![](/assets/images/platform/turtlebot3/basic_examples/load_multiple_turtlebot3s/explain2.png)  
 
-  - **Function of launch files**  
+  - **launch files**  
     1. multi_robot.launch.py  
-      - Launch sub launch files(gzsever, gzclient, robot_state_publisher, multi_spawn_turtlebot3) with parameter.  
-      - Modifying model SDF temporarily for changing odom frame_id and base scan's target frame_id.  
+      - Launch sub launch files(gzsever, gzclient, robot_state_publisher, multi_spawn_turtlebot3) with parameters.
+      - Modify the model SDF temporarily for changing odom frame_id and base scan's target frame_id.  
     2. robot_state_publisher.launch.py → robot_state_publisher node  
-      - Read model urdf and make `/tf` of hardware of robot.  
+      - Read model URDF and publish `/tf` based on robot hardware.  
     3. multi_spawn_turtlebot3.launch.py → spawn_entity.py  
-      - Read model.sdf and spawn TurtleBot3 model in gazebo world.  
+      - Read model.sdf and spawn the TurtleBot3 model in gazebo world.  
       - Sensor data is made by plugin that is written in model.sdf.  
 
 ### [Multi Robot launch in Gazebo](#multi-robot-launch-in-gazebo)  
 
 <div class="notice">  
-  **In this chapter, we show how to launch multi robot in gazebo and result of that**  
+  **In this chapter, we show how to launch multi robot gazebo**  
 </div>  
 
-- Launch the multi_robot.launch in gazebo package.  
+- Launch the multi_robot.launch gazebo package. 
 ```bash
   $ ros2 launch turtlebot3_gazebo multi_robot.launch.py  
 ```  
 <br>
 
-- You can see three TurtleBot3s as below picture.  
+- You can see three TurtleBot3s as in the picture below.  
    ![](/assets/images/platform/turtlebot3/basic_examples/load_multiple_turtlebot3s/multi_robot_gazebo.png)  
 <br>
 
-- Nodes and topics are completely saparated by namespace.  
+- Nodes and topics are completely separated by namespace.  
   ![](/assets/images/platform/turtlebot3/basic_examples/load_multiple_turtlebot3s/node_graph_gazebo.png)  
 
 <div class="notice--info">
@@ -55,13 +55,13 @@
 ### [Modifing Multi Robot launch in Gazebo](#modifing-multi-robot-launch)  
 
 <div class="notice">
-  **In this chapter, we will learn how to modify the launch files to fit Gazebo simulation for your own project**  
+  **In this chapter, we will learn how to modify the launch files to fit the Gazebo simulation for your own project**  
 </div>
 
 - **Change robot number.**  
   - multi_robot.launch → Change value of `number_of_robot` variable.  
 - **Change world model.**  
-  - multi_robot.launch → Change value of `world` varible to your world file path.  
+  - multi_robot.launch → Change value of `world` variable to your world file path.  
 - **Change robot spawn location.**  
   - multi_robot.launch → Change value of `pose` list. Row means robot number, column[0] is `x_pose`, column[1] is `y_pose`  
 - **Change robot namespace.**  
@@ -71,7 +71,7 @@
 <br>
 
 **TurtleBot3 World Example**  
-- You can see three TurtleBot3s as below picture.  
+- You can see three TurtleBot3s in the picture below.  
 <div class="notice--info">
   `number_of_robot` = 4  
   `pose` = [[-2,-0.5], [0.5,-2], [2,0.5], [-0.5,2]]  
@@ -83,12 +83,12 @@
 ### [Multi Robot launch in reality](#multi-robot-launch-in-reality)  
 
 <div class="notice">
-  **In this chapter, we show how to launch multi robot in reality and result of that**  
+  **In this chapter, we show how to launch multiple robots in reality**  
 </div>
 
 - Modify the frame_id of the topic header. This allows sensor data to be viewed separately in RViz2.  
 <div class="notice--danger">
-  **This task should be performed on the files located on the TurtleBot SBC where bringup is operated.**  
+  **This task should be performed on the files located on the TurtleBot SBC where bringup is run.**  
 </div>
 
 ```bash
@@ -102,20 +102,20 @@ $ nano ~/turtlebot3_ws/src/ld08_driver/src/lipkg.cpp
   ![](/assets/images/platform/turtlebot3/basic_examples/load_multiple_turtlebot3s/lipkg_cpp.png)  
 <br>
 
-- Launch bringup with argument namespace.  
+- Launch bringup with the namespace as an argument.  
 ```bash
 $ ros2 launch turtlebot3_bringup robot.launch.py namespace:=tb3_1 # Insert what you want to use as namespace
 ```
 <br>
 
-- Nodes and topics are completely saparated by namespace.  
+- Nodes and topics are completely separated by namespace.  
   ![](/assets/images/platform/turtlebot3/basic_examples/load_multiple_turtlebot3s/node_graph_reality.png)  
 
 
 
 ### [Multi Robot Teleop](#multi-robot-teleop)
 <div class="notice">
-  **In this chapter, we will control multi robot with teleop in Gazebo simulation.**  
+  **In this chapter, we will control multiple robots with teleop in Gazebo simulation.**  
 </div>
 
 ```bash

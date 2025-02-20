@@ -4,12 +4,12 @@
 {% capture notice_04 %}
 **NOTE**:
 
-- The `turtlebot3_automatic_parking` demo was using a 360 laser Distance Sensor LDS-01 and a reflective tape. The LaserScan topic has intensity and distance data from LDS. The TurtleBot3 uses this to locate the reflective tape.
-- The `turtlebot3_automatic_parking` demo requires `NumPy` package.
+- The `turtlebot3_automatic_parking` demo was using an LDS-01 360 laser Distance Sensor and reflective tape. The LaserScan topic has intensity and distance data from LDS. The TurtleBot3 uses this to locate the reflective tape.
+- The `turtlebot3_automatic_parking` demo requires the `NumPy` package.
 {% endcapture %}
 <div class="notice--info">{{ notice_04 | markdownify }}</div>
 
-1. **[Remote PC]** Install `NumPy` package with below commands. If you already installed numpy, you can **skip** below commands.
+1. **[Remote PC]** Install `NumPy`. If you already installed numpy, you can **skip** these commands.
 ```bash
 $ sudo apt-get install python-pip
 $ sudo pip install -U numpy
@@ -26,12 +26,12 @@ $ roscore
 $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
 ```
 
-4. **[Remote PC]** If you use TurtleBot3 Burger, set the model of TurtleBot3 like command below.
+4. **[Remote PC]** Export your TurtleBot3 model according to the version you will be using.
 ```bash
 $ export TURTLEBOT3_MODEL=burger
 ```
 
-    **NOTE**: Specify `${TB3_MODEL}`: `burger`, `waffle`, `waffle_pi` before excuting the command. Set the permanent export setting by following [Export TURTLEBOT3_MODEL](/docs/en/platform/turtlebot3/export_turtlebot3_model){: .popup} instruction.
+    **NOTE**: Specify `${TB3_MODEL}`: `burger`, `waffle`, `waffle_pi` before excuting the command. You can permanently configure your TurtleBot model according to the [Export TURTLEBOT3_MODEL](/docs/en/platform/turtlebot3/export_turtlebot3_model){: .popup} instructions.
     {: .notice--info}
 
 5. **[Remote PC]** Run RViz.
