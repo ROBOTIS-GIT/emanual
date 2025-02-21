@@ -21,43 +21,57 @@ In this setup, different nodes work together to accomplish the patrol behavior:
   - Interfaces with hardware drivers so that the robot can perform physical movements.
 
 
-**Running the Example**
+### [Running the Patrol Example](#Patrol)
 
-**1. Bringup**
+**1. Bringup TurtleBot3**
+1. Open a new first terminal on the remote PC with `Ctrl` + `Alt` + `T` and connect to the Raspberry Pi via SSH using its IP address.  
+  Enter your `password` of Ubuntu OS in `Raspberry pi` .  
+  **[Remote PC]**  
+  ```bash
+  $ ssh ubuntu@{IP_ADDRESS_OF_RASPBERRY_PI}
+  ```  
 
-**[TurtleBot3 SBC]** Before running the patrol example, you must launch the basic TurtleBot3 bringup to start essential nodes for controlling and monitoring the robot:
+2. Bring up basic packages to start essential TurtleBot3 applications. You will need to specify your specific TurtleBot3 model.  
+**[TurtleBot3 SBC]**  
+  ```bash
+  $ export TURTLEBOT3_MODEL=burger
+  $ ros2 launch turtlebot3_bringup robot.launch.py
+  ```
 
-```bash
-ros2 launch turtlebot3_bringup robot.launch.py
-```
-
-Wait until the bringup process finishes and the TurtleBot3 is ready before proceeding.
+Wait until the bringup process finishes and the TurtleBot3 is ready before proceeding.  
 
 **2. Start the Patrol Server**
 
-**[Remote PC]** Run the patrol server node.
+1. Open a new second terminal on the remote PC with `Ctrl` + `Alt` + `T` and connect to the Raspberry Pi via SSH using its IP address.  
+  Enter your `password` of Ubuntu OS in `Raspberry pi` .  
+  **[Remote PC]**  
+  ```bash
+  $ ssh ubuntu@{IP_ADDRESS_OF_RASPBERRY_PI}
+  ```  
 
-```bash
-ros2 run turtlebot3_example turtlebot3_patrol_server
-```
+2. Run the patrol server node.  
+**[TurtleBot3 SBC]**  
+  ```bash
+  ros2 run turtlebot3_example turtlebot3_patrol_server
+  ```
 
 **3. Start the Patrol Client**
-
-**[Remote PC]** Run the patrol client node.
-
-```bash
-ros2 run turtlebot3_example turtlebot3_patrol_client
-```
+Open a new third terminal on the remote PC and run the patrol client node.  
+**[Remote PC]**  
+  ```bash
+  $ export TURTLEBOT3_MODEL=burger
+  ros2 run turtlebot3_example turtlebot3_patrol_client
+  ```
 
 When the client starts, you will be prompted to select the patrol shape (square or triangle) and enter any required parameters (such as side length or number of iterations). Type in the desired values and press Enter.
 The client sends the provided information to the server, and the TurtleBot3 begins its patrol accordingly.
 
-**4. Visualizing TurtleBot3 in Rviz *(Optional)***
-
-**[Remote PC]** To view the TurtleBot3’s movements and visualize the robot in RViz, you can launch the RViz visualization tool.
-```bash
-ros2 launch turtlebot3_bringup rviz2.launch.py
-```
+**4. Visualizing TurtleBot3 in RViz *(Optional)***
+To view the TurtleBot3’s movements and visualize the robot in RViz, you can launch the RViz visualization tool.  
+**[Remote PC]**  
+  ```bash
+  ros2 launch turtlebot3_bringup rviz2.launch.py
+  ```
 
 Once RViz is open, you will be able to see the TurtleBot3 as it performs the patrol according to the parameters you set.
 
