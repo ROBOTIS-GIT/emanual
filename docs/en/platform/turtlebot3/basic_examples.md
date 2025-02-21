@@ -23,6 +23,11 @@ page_number: 22
 
 # [Examples](#examples)
 
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+**NOTE**: The examples will be added as quickly as possible based on **Humble**. We appreciate your interest and support. 
+{: .notice--danger}
+</section>
+
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
 {% include en/platform/turtlebot3/basic_examples/basic_examples_intro_kinetic.md %}
 </section>
@@ -31,12 +36,6 @@ page_number: 22
 **NOTE**: This feature is available for ROS Kinetic and ROS2 Dashing. 
 {: .notice}
 </section>
-
-<section data-id="{{ page.tab_title1 }}" class="tab_contents">
-**NOTE**: The examples will be added as quickly as possible based on **Humble**. We appreciate your interest and support. 
-{: .notice--danger}
-</section>
-
 
 ## [Move using Interactive Markers](#move-using-interactive-markers)
 
@@ -96,10 +95,10 @@ page_number: 22
 
 ## [Load Multiple TurtleBot3s](#load-multiple-turtlebot3s)
 
-<section data-id="{{ page.tab_title3 }}" class="tab_contents">
-{% include en/platform/turtlebot3/basic_examples/basic_examples_load_multiple_turtlebot3s_kinetic.md %}
-</section>
-
 <section data-id="{{ page.tab_title1 }}" class="tab_contents"> 
 {% include en/platform/turtlebot3/basic_examples/basic_examples_load_multiple_turtlebot3s_humble.md %}
+</section>
+
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
+{% include en/platform/turtlebot3/basic_examples/basic_examples_load_multiple_turtlebot3s_kinetic.md %}
 </section>

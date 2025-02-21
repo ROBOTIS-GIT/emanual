@@ -27,10 +27,10 @@ page_number: 5
   <p class="dummy_content">SBC is your Remote PC</p>
 <![end dummy Header 1]-->
 
-<section data-id="{{ page.tab_title3 }}" class="tab_contents">
-{% include en/platform/turtlebot3/sbc_setup_noetic.md %}
-</section>
-
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/turtlebot3/sbc_setup_humble.md %}
+</section>
+
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
+{% include en/platform/turtlebot3/sbc_setup_noetic.md %}
 </section>

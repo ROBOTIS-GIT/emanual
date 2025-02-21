@@ -39,12 +39,12 @@ X : Unavailable<br>
 |    Machine Learning    |   X    |    X     |   X      |
 
 
-<section data-id="{{ page.tab_title3 }}" class="tab_contents">
-{% include en/platform/turtlebot3/quickstart_noetic.md %}
-</section>
-
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/turtlebot3/quickstart_humble.md %}
+</section>
+
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
+{% include en/platform/turtlebot3/quickstart_noetic.md %}
 </section>
 
 <!--

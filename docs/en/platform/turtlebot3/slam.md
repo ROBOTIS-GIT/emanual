@@ -22,62 +22,62 @@ page_number: 10
 
 # [SLAM](#slam)
 
-<section data-id="{{ page.tab_title3 }}" class="tab_contents">
-{% include en/platform/turtlebot3/slam/slam_intro_noetic.md %}
-</section>
-
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/turtlebot3/slam/slam_intro_humble.md %}
 </section>
 
-## [Run SLAM Node](#run-slam-node)
-
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
-{% include en/platform/turtlebot3/slam/slam_run_slam_node_noetic.md %}
+{% include en/platform/turtlebot3/slam/slam_intro_noetic.md %}
 </section>
+
+## [Run SLAM Node](#run-slam-node)
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/turtlebot3/slam/slam_run_slam_node_humble.md %}
 </section>
 
-## [Run Teleoperation Node](#run-teleoperation-node)
-
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
-{% include en/platform/turtlebot3/slam/slam_run_teleoperation_node_noetic.md %}
+{% include en/platform/turtlebot3/slam/slam_run_slam_node_noetic.md %}
 </section>
+
+## [Run Teleoperation Node](#run-teleoperation-node)
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/turtlebot3/slam/slam_run_teleoperation_node_humble.md %}
 </section>
 
-## [Tuning Guide](#tuning-guide)
-
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
-{% include en/platform/turtlebot3/slam/slam_tuning_guide_noetic.md %}
+{% include en/platform/turtlebot3/slam/slam_run_teleoperation_node_noetic.md %}
 </section>
+
+## [Tuning Guide](#tuning-guide)
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/turtlebot3/slam/slam_tuning_guide_humble.md %}
 </section>
 
-## [Save Map](#save-map)
-
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
-{% include en/platform/turtlebot3/slam/slam_save_map_noetic.md %}
+{% include en/platform/turtlebot3/slam/slam_tuning_guide_noetic.md %}
 </section>
+
+## [Save Map](#save-map)
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/turtlebot3/slam/slam_save_map_humble.md %}
 </section>
 
-## [Map](#map)
-
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
-{% include en/platform/turtlebot3/slam/slam_map_noetic.md %}
+{% include en/platform/turtlebot3/slam/slam_save_map_noetic.md %}
 </section>
+
+## [Map](#map)
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/turtlebot3/slam/slam_map_humble.md %}
+</section>
+
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
+{% include en/platform/turtlebot3/slam/slam_map_noetic.md %}
 </section>
 
 [navigation]: /docs/en/platform/turtlebot3/navigation/#navigation

@@ -29,12 +29,12 @@ page_number: 16
 
 {::options parse_block_html="true" /}
 
-<section data-id="{{ page.tab_title3 }}" class="tab_contents">
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
 **NOTE**: This feature is available for Kinetic only.
 {: .notice}
 </section>
 
-<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
 **NOTE**: This feature is available for Kinetic only.
 {: .notice}
 </section>

@@ -24,6 +24,11 @@ page_number: 19
 
 # [Autonomous Driving](#autonomous-driving)
 
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+**NOTE**: The TurtleBot3 Autorace Humble version is scheduled to be released soon
+{: .notice--warning}
+</section>
+
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
 
 ## Getting Started
@@ -76,9 +81,3 @@ To provide various conditions for a robot application development, the game prov
 ### [Tunnel](#tunnel)
 {% include en/platform/turtlebot3/autonomous_driving/noetic/autonomous_driving_sim_tunnel_noetic.md %}
 </section>
-
-<section data-id="{{ page.tab_title1 }}" class="tab_contents">
-**NOTE**: The TurtleBot3 Autorace Humble version is scheduled to be released soon
-{: .notice--warning}
-</section>
-

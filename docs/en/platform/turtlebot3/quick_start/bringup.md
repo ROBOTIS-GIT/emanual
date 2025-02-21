@@ -26,10 +26,10 @@ page_number: 8
   <p class="dummy_content">Wake up your TurtleBot3 using the Bringup package</p>
 <![end dummy Header 1]-->
 
-<section data-id="{{ page.tab_title3 }}" class="tab_contents">
-{% include en/platform/turtlebot3/bringup_noetic.md %}
-</section>
-
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/turtlebot3/bringup_humble.md %}
+</section>
+
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
+{% include en/platform/turtlebot3/bringup_noetic.md %}
 </section>

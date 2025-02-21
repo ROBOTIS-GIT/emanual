@@ -23,12 +23,12 @@ page_number: 6
 
 # [Controller](#controller)
 
-<section data-id="{{ page.tab_title2 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/controller/launch_controller_pkg_noetic.md %}
-</section>
-
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/openmanipulator_x/controller/launch_controller_pkg_humble.md %}
+</section>
+
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/controller/launch_controller_pkg_noetic.md %}
 </section>
 
 <section data-id="{{ page.tab_title6 }}" class="tab_contents">
@@ -38,12 +38,12 @@ Arduino sketch for OpenCR OpenMANIPULATOR-X includes the controller in the code.
 
 ## [Launch Controller](#launch-controller)
 
-<section data-id="{{ page.tab_title2 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/controller/launch_controller_noetic.md %}
-</section>
-
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/openmanipulator_x/controller/launch_controller_humble.md %}
+</section>
+
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/controller/launch_controller_noetic.md %}
 </section>
 
 <section data-id="{{ page.tab_title6 }}" class="tab_contents">

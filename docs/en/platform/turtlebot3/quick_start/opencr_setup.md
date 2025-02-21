@@ -27,10 +27,10 @@ page_number: 6
   <p class="dummy_content">OpenCR Setup</p>
 <![end dummy Header 1]-->
 
-<section data-id="{{ page.tab_title3 }}" class="tab_contents">
-{% include en/platform/turtlebot3/opencr_setup_noetic.md %}
-</section>
-
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/turtlebot3/opencr_setup_ros2.md %}
+</section>
+
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
+{% include en/platform/turtlebot3/opencr_setup_noetic.md %}
 </section>

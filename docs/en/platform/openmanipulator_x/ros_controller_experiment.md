@@ -31,19 +31,19 @@ page_number: 9
 ## [Experimental](#experimental)
 
 {% if page.tab_title1 != "Humble" %}
-**WARNING**  
+**WARNING**
 This section introduces other experimental controllers. These controllers may not fully compatible with OpenMANIPULATOR-X.
 {: .notice--warning}
 {% endif %}
 
 ### [MoveIt!](#moveit)
 
-<section data-id="{{ page.tab_title2 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/controller/moveit_noetic.md %}
-</section>
-
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/openmanipulator_x/controller/moveit_humble.md %}
+</section>
+
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/controller/moveit_noetic.md %}
 </section>
 
 <section data-id="{{ page.tab_title6 }}" class="tab_contents">
@@ -53,12 +53,12 @@ Not supported
 
 ### [Gravity Compensation](#gravity-compensation)
 
-<section data-id="{{ page.tab_title2 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/controller/gravity_compensation_noetic.md %}
-</section>
-
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/openmanipulator_x/controller/gravity_compensation_dashing.md %}
+</section>
+
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/controller/gravity_compensation_noetic.md %}
 </section>
 
 <section data-id="{{ page.tab_title6 }}" class="tab_contents">

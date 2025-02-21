@@ -22,62 +22,43 @@ page_number: 21
 
 # [Machine Learning](#machine-learning)
 
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+**NOTE**: This manual is currently based on ROS 2 Dashing and will be migrated to **Humble** soon! 
+{: .notice--danger}
+{% include en/platform/turtlebot3/machine_learning/machine_learning_intro_dashing.md %}
+</section> 
+
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
 **NOTE**: This manual is currently based on Melodic and needs to be upgraded to the **Noetic** version!. 
 {: .notice--danger}
 </section> 
 
-<section data-id="{{ page.tab_title1 }}" class="tab_contents">
-**NOTE**: This manual is currently based on ROS 2 Dashing and will be migrated to **Humble** soon! 
-{: .notice--danger}
-{% include en/platform/turtlebot3/machine_learning/machine_learning_intro_dashing.md %}
-
-</section> 
-
 ## [Software Setup](#software-setup)
 
-<section data-id="{{ page.tab_title2 }}" class="tab_contents">
-
-{% include en/platform/turtlebot3/machine_learning/machine_learning_software_setup_melodic.md %}
-
-</section> 
-
-
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-
 {% include en/platform/turtlebot3/machine_learning/machine_learning_software_setup_dashing.md %}
+</section>
 
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+{% include en/platform/turtlebot3/machine_learning/machine_learning_software_setup_melodic.md %}
 </section>
 
 ## [Set parameters](#set-parameters)
 
-<section data-id="{{ page.tab_title2 }}" class="tab_contents">
-
-{% include en/platform/turtlebot3/machine_learning/machine_learning_set_parameter_melodic.md %}
-
-</section> 
-
-
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-
 {% include en/platform/turtlebot3/machine_learning/machine_learning_set_parameter_dashing.md %}
-
 </section>
 
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+{% include en/platform/turtlebot3/machine_learning/machine_learning_set_parameter_melodic.md %}
+</section>
 
 ## [Run Machine Learning](#run-machine-learning)
 
-<section data-id="{{ page.tab_title2 }}" class="tab_contents">
-
-{% include en/platform/turtlebot3/machine_learning/machine_learning_run_machine_learning_melodic.md %}
-
-</section> 
-
-
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-
 {% include en/platform/turtlebot3/machine_learning/machine_learning_run_machine_learning_dashing.md %}
-
 </section>
 
-
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+{% include en/platform/turtlebot3/machine_learning/machine_learning_run_machine_learning_melodic.md %}
+</section>

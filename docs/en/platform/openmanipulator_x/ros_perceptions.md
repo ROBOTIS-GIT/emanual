@@ -31,13 +31,13 @@ Please run the instructions below on a PC with ROS packages installed.
 
 ## [Camera](#camera)
 
-<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
 This example is not supported.  
 [https://github.com/ROBOTIS-GIT/open_manipulator_perceptions](https://github.com/ROBOTIS-GIT/open_manipulator_perceptions)
 {: .notice--warning}
 </section>
 
-<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
 This example is not supported.  
 [https://github.com/ROBOTIS-GIT/open_manipulator_perceptions](https://github.com/ROBOTIS-GIT/open_manipulator_perceptions)
 {: .notice--warning}
