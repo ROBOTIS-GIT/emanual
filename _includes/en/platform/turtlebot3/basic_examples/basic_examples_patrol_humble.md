@@ -45,6 +45,7 @@ Wait until the bringup process finishes and the TurtleBot3 is ready before proce
 Open a new second terminal on the remote PC and run the patrol server node.  
 **[TurtleBot3 SBC]**  
   ```bash
+  $ export TURTLEBOT3_MODEL=burger
   $ ros2 run turtlebot3_example turtlebot3_patrol_server
   ```
 
@@ -53,7 +54,6 @@ Open a new second terminal on the remote PC and run the patrol server node.
 Open a new third terminal on the remote PC and run the patrol client node.  
 **[Remote PC]**  
   ```bash
-  $ export TURTLEBOT3_MODEL=burger
   $ ros2 run turtlebot3_example turtlebot3_patrol_client
   ```
 
