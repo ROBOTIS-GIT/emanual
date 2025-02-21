@@ -29,15 +29,18 @@ These components work together to allow real-time interactive control of the Tur
 
 **1. Bringup**
 
-**[TurtleBot3 SBC]** Before running the interactive marker example, you must launch the basic TurtleBot3 bringup to start essential nodes for controlling and monitoring the robot.
+Before running the interactive marker example, you must launch the basic TurtleBot3 bringup to start essential nodes for controlling and monitoring the robot.
+
+**[TurtleBot3 SBC]**
 ```bash
 ros2 launch turtlebot3_bringup robot.launch.py
 ```
 
 **2. Start the Interactive Marker Server**
 
-**[Remote PC]** Run the interactive marker node
+The interactive marker node must be launched to generate the markers in RViz and process user input. Run the following command to start the interactive marker node:
 
+**[Remote PC]**
 ```bash
 ros2 run turtlebot3_example turtlebot3_interactive_marker
 ```
@@ -45,9 +48,9 @@ This node initializes the interactive markers in RViz, allowing users to control
 
 **3. Visualizing TurtleBot3 Model in Rviz**
 
-Before using interactive markers, RViz must be configured properly to visualize the robot model and enable marker-based control.
+Before using interactive markers, RViz must be configured properly to visualize the robot model and enable marker-based control. Start RViz2:
 
-**[Remote PC]** Start RViz2:
+**[Remote PC]**
 ```bash
 rviz2
 ```
