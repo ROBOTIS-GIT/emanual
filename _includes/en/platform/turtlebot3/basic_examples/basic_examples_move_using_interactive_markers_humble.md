@@ -23,9 +23,8 @@ To successfully use Interactive Markers to control TurtleBot3, several key compo
     - Publishes the `/robot_description` and maintains the robot's kinematic model in RViz.
 
 These components work together to allow real-time interactive control of the TurtleBot3 directly from RViz, enabling linear movement and rotation through intuitive marker interactions.
-<br><br>
 
-**Running the Example**
+### **Running the Interactive Marker Example**
 
 **1. Bringup**
 
@@ -33,7 +32,7 @@ Before running the interactive marker example, you must launch the basic TurtleB
 
 **[TurtleBot3 SBC]**
 ```bash
-ros2 launch turtlebot3_bringup robot.launch.py
+$ ros2 launch turtlebot3_bringup robot.launch.py
 ```
 
 **2. Start the Interactive Marker Server**
@@ -42,7 +41,7 @@ The interactive marker node must be launched to generate the markers in RViz and
 
 **[Remote PC]**
 ```bash
-ros2 run turtlebot3_example turtlebot3_interactive_marker
+$ ros2 run turtlebot3_example turtlebot3_interactive_marker
 ```
 This node initializes the interactive markers in RViz, allowing users to control the robot by dragging the visual markers.
 
@@ -52,7 +51,7 @@ Before using interactive markers, RViz must be configured properly to visualize 
 
 **[Remote PC]**
 ```bash
-rviz2
+$ rviz2
 ```
 Once RViz2 opens, follow these steps to configure the display:
 - **Add the Robot Model**:
