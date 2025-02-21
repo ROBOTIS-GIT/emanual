@@ -7,11 +7,8 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_x/quick_start_guide_basic_operation/
 tabs: "ROS"
-#tab_title1: Kinetic
+tab_title1: Humble
 tab_title2: Noetic
-#tab_title3: Dashing
-#tab_title4: Foxy
-tab_title5: Humble
 tab_title6: Arduino
 sidebar:
   title: "OpenMANIPULATOR-X"
@@ -49,24 +46,12 @@ Please note that this instruction is written for the **ROBOTIS official OpenMANI
 
 ### [Launch Controller](#launch-controller)
 
-<!-- <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/quick_start_guide/launch_controller_kinetic.md %}
-</section> -->
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/quick_start_guide/launch_controller_humble.md %}
+</section>
 
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
 {% include en/platform/openmanipulator_x/quick_start_guide/launch_controller_noetic.md %}
-</section>
-
-<!-- <section data-id="{{ page.tab_title3 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/quick_start_guide/launch_controller_dashing.md %}
-</section> -->
-
-<!-- <section data-id="{{ page.tab_title4 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/quick_start_guide/launch_controller_foxy.md %}
-</section> -->
-
-<section data-id="{{ page.tab_title5 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/quick_start_guide/launch_controller_humble.md %}
 </section>
 
 <section data-id="{{ page.tab_title6 }}" class="tab_contents">
@@ -75,24 +60,12 @@ Please note that this instruction is written for the **ROBOTIS official OpenMANI
 
 ### [Keyboard Teleoperation](#keyboard-teleoperation)
 
-<!-- <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/quick_start_guide/keyboard_teleop_kinetic.md %}
-</section> -->
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/quick_start_guide/keyboard_teleop_humble.md %}
+</section>
 
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
 {% include en/platform/openmanipulator_x/quick_start_guide/keyboard_teleop_noetic.md %}
-</section>
-
-<!-- <section data-id="{{ page.tab_title3 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/quick_start_guide/keyboard_teleop_dashing.md %}
-</section> -->
-
-<!-- <section data-id="{{ page.tab_title4 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/quick_start_guide/keyboard_teleop_foxy.md %}
-</section> -->
-
-<section data-id="{{ page.tab_title5 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/quick_start_guide/keyboard_teleop_humble.md %}
 </section>
 
 <section data-id="{{ page.tab_title6 }}" class="tab_contents">
