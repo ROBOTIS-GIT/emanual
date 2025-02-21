@@ -7,11 +7,8 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_x/ros_perceptions/
 tabs: "ROS"
-#tab_title1: Kinetic
+tab_title1: Humble
 tab_title2: Noetic
-#tab_title3: Dashing
-#tab_title4: Foxy
-tab_title5: Humble
 tab_title6: Arduino
 sidebar:
   title: "OpenMANIPULATOR-X"
@@ -34,29 +31,13 @@ Please run the instructions below on a PC with ROS packages installed.
 
 ## [Camera](#camera)
 
-<!-- <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-The OpenMAIPULATOR-X can work with some cameras to recognize a front object. Use the following packages with introduced cameras: [Astro Pro](#astra-pro), [Realsense D435](#realsense-d435), [Raspberry Pi Camera V2](#raspberry-pi-camera-v2).
-</section> -->
-
-<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
 This example is not supported.  
 [https://github.com/ROBOTIS-GIT/open_manipulator_perceptions](https://github.com/ROBOTIS-GIT/open_manipulator_perceptions)
 {: .notice--warning}
 </section>
 
-<!-- <section data-id="{{ page.tab_title3 }}" class="tab_contents">
-This example is not supported.  
-[https://github.com/ROBOTIS-GIT/open_manipulator_perceptions](https://github.com/ROBOTIS-GIT/open_manipulator_perceptions)
-{: .notice--warning}
-</section> -->
-
-<!-- <section data-id="{{ page.tab_title4 }}" class="tab_contents">
-This example is not supported.  
-[https://github.com/ROBOTIS-GIT/open_manipulator_perceptions](https://github.com/ROBOTIS-GIT/open_manipulator_perceptions)
-{: .notice--warning}
-</section> -->
-
-<section data-id="{{ page.tab_title5 }}" class="tab_contents">
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
 This example is not supported.  
 [https://github.com/ROBOTIS-GIT/open_manipulator_perceptions](https://github.com/ROBOTIS-GIT/open_manipulator_perceptions)
 {: .notice--warning}
@@ -71,10 +52,6 @@ The Arduino sketch code can be found from [OpenCR examples](https://github.com/R
 
 ### [Install Camera Package](#install-camera-package)
 
-<!-- <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/perceptions/camera_kinetic.md %}
-</section> -->
-
 <section data-id="{{ page.tab_title6 }}" class="tab_contents">
 Not supported in Arduino
 {: .notice--warning}
@@ -82,20 +59,12 @@ Not supported in Arduino
 
 ### [Install AR Marker Package](#install-ar-marker-package)
 
-<!-- <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/perceptions/ar_marker_kinetic.md %}
-</section> -->
-
 <section data-id="{{ page.tab_title6 }}" class="tab_contents">
 Not supported in Arduino
 {: .notice--warning}
 </section>
 
 ### [Pick and Place Example](#pick-and-place-example)
-
-<!-- <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/perceptions/pick_place_kinetic.md %}
-</section> -->
 
 <section data-id="{{ page.tab_title6 }}" class="tab_contents">
 Not supported in Arduino

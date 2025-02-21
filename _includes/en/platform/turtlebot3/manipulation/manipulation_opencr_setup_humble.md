@@ -1,21 +1,20 @@
 
 {% capture notice_01 %}
-**NOTE**: To use OpenMANIPULATOR-X, you need to upload a firmware into OpenCR by using either **shell script** or **Arduino IDE**.
+**NOTE**: To use the OpenMANIPULATOR-X, you need to upload specific firmware to the OpenCR by using either a **shell script** or the **Arduino IDE**.
 
-1. **[Shell script](#shell-script)** is highly recommended to upload the firmware as it uses a pre-built binary file
-2. **[Arduino IDE](#arduino-ide)** builds from the provided source code and uploads the generated binary file.  
-The OpenCR Arduino board manager does not support ARM based processors such as Raspberry Pi or Jetson Nano.
+1. The **[Shell script](#shell-script)** is recommended to upload the firmware as it uses a pre-built binary file
+2. The **[Arduino IDE](#arduino-ide)** builds from the provided source code and uploads the generated binary file. The OpenCR Arduino board manager does not support ARM based processors such as Raspberry Pi or Jetson Nano.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
 **WARNING**  
-Please connect all DYNAMIXEL modules to the OpenCR before uploading the OpenCR firmware.
+Please connect all DYNAMIXEL motors to the OpenCR before uploading the OpenCR firmware.
 {: .notice--warning}
 
 
-After OpenMANIPULATOR-X is properly mounted on TurtleBot3, the OpenCR firmware needs to be updated to control connected DYNAMIXEL. Please follow the firmware update instructions below.
+After the OpenMANIPULATOR-X is properly mounted on TurtleBot3, the OpenCR firmware needs to be updated to control the connected DYNAMIXELs. Please follow the firmware update instructions below.
 
-1. Download the OpenCR firmware file on Raspberry Pi (SBC) and upload the correct firmware with the following commands.  
+1. Download the OpenCR firmware file on the Raspberry Pi (SBC) and upload the correct firmware with the following commands.  
 **[TurtleBot3 SBC]**  
 ```bash
 $ export OPENCR_PORT=/dev/ttyACM0
@@ -27,7 +26,7 @@ $ cd ./opencr_update
 $ ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr
 ```
 
-2. When the firmware is successfully uploaded to the OpenCR, **jump_to_fw** will appear on the terminal.
+2. When the firmware is successfully uploaded to the OpenCR, **jump_to_fw** will be printed to the terminal used to upload the firmware.
 
 ### [Arduino IDE](#arduino-ide)
 
@@ -40,7 +39,7 @@ In order to upload the OpenCR firmware using Arduino IDE, please follow the belo
 ![](/assets/images/icon_unfold.png) Click here to expand more details about the firmware upload using **Arduino IDE**
 </summary>
 
-1. If you are using Linux, please configure the USB port for OpenCR. For other OS(OSX or Windows), you can skip to the step 2 "Install Arduino IDE".
+1. If you are using Linux, please configure the USB port for the OpenCR. For other OS(OSX or Windows), you can skip to the step 2 "Install Arduino IDE".
   ```bash
 $ wget https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCR/master/99-opencr-cdc.rules
 $ sudo cp ./99-opencr-cdc.rules /etc/udev/rules.d/
@@ -70,14 +69,14 @@ https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCR/master/arduino/opencr_relea
 8. Open the `TurtleBot3 Manipulation` example.
   - ***File > Examples > turtlebot3 > turtlebot3_manipulation > turtlebot3_manipulation***
 
-9. Connect the micro USB of the OpenCR to the PC and select ***Tools > Board > OpenCR > OpenCR Board*** from Arduino IDE.
+9. Connect the micro USB of the OpenCR to the PC and select ***Tools > Board > OpenCR > OpenCR Board*** in the Arduino IDE.
 
-10. Select the port connected to the OpenCR from ***Tools > Port*** menu.
+10. Select the port connected to the OpenCR from the ***Tools > Port*** menu.
 
 11. Upload the TurtleBot3 firmware sketch with `Ctrl` + `U` or the upload icon.  
   ![](/assets/images/platform/turtlebot3/opencr/o3.png)
 
-12. If firmware upload fails, try uploading the firmware under the recovery mode. Below sequence activates the recovery mode of OpenCR and the `STATUS` led of OpenCR will blink periodically.
+12. If firmware upload fails, try uploading the firmware in recovery mode. the following sequence activates the recovery mode of the OpenCR. When in recovery mode, the `STATUS` led of the OpenCR will blink periodically.
   - Hold down the `PUSH SW2` button.
   - Press the `Reset` button.
   - Release the `Reset` button.

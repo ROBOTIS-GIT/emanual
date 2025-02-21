@@ -1,9 +1,9 @@
 
-The TurtleBot3 can be moved by [Interactive Markers][interactive_markers] on RViz. You can move the TurtleBot3 to rotate or linear using Interactive Markers.
+The TurtleBot3 can be moved using [Interactive Markers][interactive_markers] in RViz.
 
 **[Remote PC]** Open a new terminal and launch the remote file.
 
-**TIP**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `burger`,` waffle`, `waffle_pi`. If you want to permanently set the export settings, please refer to [Export TURTLEBOT3_MODEL][export_turtlebot3_model]{: .popup} page.
+**TIP**: Before executing this command, you have to specify the model name of the TurtleBot3 variant you will be using. The `${TB3_MODEL}` variable must be set to name of the model you are using ( `burger`,` waffle`, or `waffle_pi` ). This can also be permanently set in your ROS environment configuration according to the [Export TURTLEBOT3_MODEL][export_turtlebot3_model]{: .popup} instructions.
 {: .notice--success}
 
 ```bash
