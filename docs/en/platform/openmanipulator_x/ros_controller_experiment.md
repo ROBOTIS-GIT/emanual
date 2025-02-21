@@ -7,11 +7,8 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_x/ros_controller_experiment/
 tabs: "ROS"
-#tab_title1: Kinetic
 tab_title1: Humble
 tab_title2: Noetic
-#tab_title3: Dashing
-#tab_title4: Foxy
 tab_title6: Arduino
 sidebar:
   title: "OpenMANIPULATOR-X"
@@ -41,21 +38,9 @@ This section introduces other experimental controllers. These controllers may no
 
 ### [MoveIt!](#moveit)
 
-<!-- <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/controller/moveit_kinetic.md %}
-</section> -->
-
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
 {% include en/platform/openmanipulator_x/controller/moveit_noetic.md %}
 </section>
-
-<!-- <section data-id="{{ page.tab_title3 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/controller/moveit_dashing.md %}
-</section> -->
-
-<!-- <section data-id="{{ page.tab_title4 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/controller/moveit_dashing.md %}
-</section> -->
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/openmanipulator_x/controller/moveit_humble.md %}
@@ -68,21 +53,9 @@ Not supported
 
 ### [Gravity Compensation](#gravity-compensation)
 
-<!-- <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/controller/gravity_compensation_kinetic.md %}
-</section> -->
-
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
 {% include en/platform/openmanipulator_x/controller/gravity_compensation_noetic.md %}
 </section>
-
-<!-- <section data-id="{{ page.tab_title3 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/controller/gravity_compensation_dashing.md %}
-</section> -->
-
-<!-- <section data-id="{{ page.tab_title4 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/controller/gravity_compensation_dashing.md %}
-</section> -->
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/openmanipulator_x/controller/gravity_compensation_dashing.md %}

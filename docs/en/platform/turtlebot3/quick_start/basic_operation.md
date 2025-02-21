@@ -34,7 +34,3 @@ page_number: 9
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/turtlebot3/basic_operation_humble.md %}
 </section>
-
-<!-- <section data-id="{{ page.tab_title7 }}" class="tab_contents">
-{% include en/platform/turtlebot3/basic_operation_windows.md %}
-</section> -->

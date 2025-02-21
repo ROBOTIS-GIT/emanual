@@ -36,12 +36,6 @@ page_number: 21
 
 ## [Software Setup](#software-setup)
 
-<!-- <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-
-{% include en/platform/turtlebot3/machine_learning/machine_learning_software_setup_kinetic.md %}
-
-</section> -->
-
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
 
 {% include en/platform/turtlebot3/machine_learning/machine_learning_software_setup_melodic.md %}
@@ -56,13 +50,6 @@ page_number: 21
 </section>
 
 ## [Set parameters](#set-parameters)
-
-<!-- <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-
-{% include en/platform/turtlebot3/machine_learning/machine_learning_set_parameter_kinetic.md %}
-
-</section> -->
-
 
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
 
@@ -79,14 +66,6 @@ page_number: 21
 
 
 ## [Run Machine Learning](#run-machine-learning)
-
-<!-- <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-
-
-{% include en/platform/turtlebot3/machine_learning/machine_learning_run_machine_learning_kinetic.md %}
-
-</section> -->
-
 
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
 

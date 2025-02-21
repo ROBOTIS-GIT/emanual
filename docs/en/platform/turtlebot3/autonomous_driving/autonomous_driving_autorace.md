@@ -7,12 +7,8 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/turtlebot3/autonomous_driving_autorace/
 tabs: "ROS"
-#tab_title1: Kinetic
 tab_title2: Humble
-#tab_title3: Dashing
-#tab_title4: Foxy
 tab_title5: Noetic
-#tab_title6: Windows
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
@@ -33,31 +29,12 @@ page_number: 20
 
 ## [TurtleBot3 AutoRace 2019](#turtlebot3-autorace)
 
-<!-- <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-{% include en/platform/turtlebot3/autonomous_driving_autorace_kinetic.md %}
-</section> -->
-
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
 
 **NOTE**: This feature is available for Kinetic only. 
 {: .notice}
-
 </section>
 
-
-<!-- <section data-id="{{ page.tab_title3 }}" class="tab_contents">
-
-**NOTE**: This feature is available for Kinetic only. 
-{: .notice}
-
-</section> -->
-
-<!-- <section data-id="{{ page.tab_title4 }}" class="tab_contents">
-
-**NOTE**: This feature is available for Kinetic only. 
-{: .notice}
-
-</section> -->
 
 <section data-id="{{ page.tab_title5 }}" class="tab_contents">
 
