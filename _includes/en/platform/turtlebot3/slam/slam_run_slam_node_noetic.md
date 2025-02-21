@@ -1,13 +1,14 @@
 
-1. Run roscore from Remote PC.  
+1. Run roscore on the Remote PC.  
 **[Remote PC]**  
   ```bash
 $ roscore
   ```
 
-2. If the `Bringup` is not running on the TurtleBot3 SBC, launch the Bringup. **Skip this step if you have launched bringup previously**.  
-  - Open a new terminal from Remote PC with `Ctrl` + `Alt` + `T` and connect to Raspberry Pi with its IP address.
-The default password is **turtlebot**. Please use the proper keyword among `burger`, `waffle`, `waffle_pi` for the `TURTLEBOT3_MODEL` parameter.  
+2. If `Bringup` is not running on the TurtleBot3 SBC, launch Bringup.
+**Skip this step if bringup is already running**.  
+  - Open a new terminal on the Remote PC with `Ctrl` + `Alt` + `T` and connect to Raspberry Pi with its IP address.
+The default password is **turtlebot**. Specify your TurtleBot3 model (`burger`, `waffle`, `waffle_pi`) using the `TURTLEBOT3_MODEL` parameter.
 **[Remote PC]**  
   ```bash
 $ ssh pi@{IP_ADDRESS_OF_RASPBERRY_PI}
@@ -15,8 +16,8 @@ $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
   ```
 
-3. Open a new terminal from Remote PC with `Ctrl` + `Alt` + `T` and launch the SLAM node. The Gmapping is used as a default SLAM method.
-  Please use the proper keyword among `burger`, `waffle`, `waffle_pi` for the `TURTLEBOT3_MODEL` parameter.  
+3. Open a new terminal on the Remote PC with `Ctrl` + `Alt` + `T` and launch the SLAM node. The Gmapping is used as the default SLAM method.
+Specify your TurtleBot3 model (`burger`, `waffle`, `waffle_pi`) using the `TURTLEBOT3_MODEL` parameter.
 **[Remote PC]**  
   ```bash
 $ export TURTLEBOT3_MODEL=burger
@@ -27,17 +28,17 @@ $ roslaunch turtlebot3_slam turtlebot3_slam.launch
 <summary>
 ![](/assets/images/icon_unfold.png) **How to save the TURTLEBOT3_MODEL parameter?**
 </summary>
-The `$ export TURTLEBOT3_MODEL=${TB3_MODEL}` command can be omitted if the **TURTLEBOT3_MODEL** parameter is predefined in the `.bashrc` file.  
+The `$ export TURTLEBOT3_MODEL=${TB3_MODEL}` command can be omitted if the **TURTLEBOT3_MODEL** parameter is predefined in your system's `.bashrc` file.  
 The `.bashrc` file is automatically loaded when a terminal window is created.  
 
-- Example of defining `TurtlBot3 Burger` as a default model.  
+- Example defining `TurtlBot3 Burger` as the default model.  
 **[Remote PC]**  
 ```bash
 $ echo 'export TURTLEBOT3_MODEL=burger' >> ~/.bashrc
 $ source ~/.bashrc
 ```
 
-- Example of defining `TurtlBot3 Waffle Pi` as a default model.  
+- Example defining `TurtlBot3 Waffle Pi` as the default model.  
 **[Remote PC]**  
 ```bash
 $ echo 'export TURTLEBOT3_MODEL=waffle_pi' >> ~/.bashrc
@@ -50,7 +51,7 @@ $ source ~/.bashrc
 ![](/assets/images/icon_unfold.png) Read more about **other SLAM methods**
 </summary>
 - **Gmapping** ([ROS WIKI](http://wiki.ros.org/gmapping), [Github](https://github.com/ros-perception/slam_gmapping))
-  1. Install dependent packages on PC.  
+  1. Install required packages on the remote PC.  
     Packages related to Gmapping have already been installed on [PC Setup](/docs/en/platform/turtlebot3/quick-start) section.
   2. Launch the Gmapping SLAM node.  
  **[Remote PC]**  
@@ -58,8 +59,8 @@ $ source ~/.bashrc
   $ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
   ```
 - **Cartographer** ([ROS WIKI](http://wiki.ros.org/cartographer), [Github](https://github.com/googlecartographer/cartographer))
-  1. Download and build packages on PC.  
-  The Cartographer currently does not provide the binary installation method for ROS1 Noetic. Please download and build the source code as follows. Please refer to [official wiki page](https://google-cartographer-ros.readthedocs.io/en/latest/#building-installation) for more details.  
+  1. Download and build required packages on the remote PC.  
+  The Cartographer currently does not provide a binary installation method for ROS1 Noetic. Please download and build the source code as follows. Please refer to the [official wiki page](https://google-cartographer-ros.readthedocs.io/en/latest/#building-installation) for more details.  
 
   **[Remote PC]**  
   ```bash
