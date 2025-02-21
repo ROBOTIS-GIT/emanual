@@ -7,8 +7,9 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/turtlebot3/basic_examples/
 tabs: "ROS"
+tab_title1: Humble
 tab_title3: Noetic
-tab_title6: Humble
+
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
@@ -45,7 +46,7 @@ page_number: 22
 {: .notice}
 </section> -->
 
-<section data-id="{{ page.tab_title6 }}" class="tab_contents">
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
 **NOTE**: The examples will be added as quickly as possible based on **Humble**. We appreciate your interest and support. 
 {: .notice--danger}
 </section>
@@ -159,6 +160,6 @@ page_number: 22
 </section> -->
 
 
-<section data-id="{{ page.tab_title6 }}" class="tab_contents"> 
+<section data-id="{{ page.tab_title1 }}" class="tab_contents"> 
 {% include en/platform/turtlebot3/basic_examples/basic_examples_load_multiple_turtlebot3s_humble.md %}
 </section>

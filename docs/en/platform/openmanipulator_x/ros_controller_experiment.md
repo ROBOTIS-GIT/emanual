@@ -8,10 +8,10 @@ author_profile: false
 permalink: /docs/en/platform/openmanipulator_x/ros_controller_experiment/
 tabs: "ROS"
 #tab_title1: Kinetic
+tab_title1: Humble
 tab_title2: Noetic
 #tab_title3: Dashing
 #tab_title4: Foxy
-tab_title5: Humble
 tab_title6: Arduino
 sidebar:
   title: "OpenMANIPULATOR-X"
@@ -33,7 +33,7 @@ page_number: 9
 
 ## [Experimental](#experimental)
 
-{% if page.tab_title5 != "Humble" %}
+{% if page.tab_title1 != "Humble" %}
 **WARNING**  
 This section introduces other experimental controllers. These controllers may not fully compatible with OpenMANIPULATOR-X.
 {: .notice--warning}
@@ -57,7 +57,7 @@ This section introduces other experimental controllers. These controllers may no
 {% include en/platform/openmanipulator_x/controller/moveit_dashing.md %}
 </section> -->
 
-<section data-id="{{ page.tab_title5 }}" class="tab_contents">
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/openmanipulator_x/controller/moveit_humble.md %}
 </section>
 
@@ -84,7 +84,7 @@ Not supported
 {% include en/platform/openmanipulator_x/controller/gravity_compensation_dashing.md %}
 </section> -->
 
-<section data-id="{{ page.tab_title5 }}" class="tab_contents">
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/openmanipulator_x/controller/gravity_compensation_dashing.md %}
 </section>
 

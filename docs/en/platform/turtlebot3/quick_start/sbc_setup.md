@@ -7,8 +7,8 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/turtlebot3/sbc_setup/
 tabs: "ROS"
+tab_title1: Humble
 tab_title3: Noetic
-tab_title6: Humble
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
@@ -31,6 +31,6 @@ page_number: 5
 {% include en/platform/turtlebot3/sbc_setup_noetic.md %}
 </section>
 
-<section data-id="{{ page.tab_title6 }}" class="tab_contents">
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/turtlebot3/sbc_setup_humble.md %}
 </section>

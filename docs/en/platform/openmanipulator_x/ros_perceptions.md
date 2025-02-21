@@ -8,10 +8,10 @@ author_profile: false
 permalink: /docs/en/platform/openmanipulator_x/ros_perceptions/
 tabs: "ROS"
 #tab_title1: Kinetic
+tab_title1: Humble
 tab_title2: Noetic
 #tab_title3: Dashing
 #tab_title4: Foxy
-tab_title5: Humble
 tab_title6: Arduino
 sidebar:
   title: "OpenMANIPULATOR-X"
@@ -56,7 +56,7 @@ This example is not supported.
 {: .notice--warning}
 </section> -->
 
-<section data-id="{{ page.tab_title5 }}" class="tab_contents">
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
 This example is not supported.  
 [https://github.com/ROBOTIS-GIT/open_manipulator_perceptions](https://github.com/ROBOTIS-GIT/open_manipulator_perceptions)
 {: .notice--warning}

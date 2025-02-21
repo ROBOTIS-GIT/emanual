@@ -7,8 +7,8 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/turtlebot3/autonomous_driving/
 tabs: "ROS"
+tab_title1: Humble
 tab_title2: Noetic
-tab_title5: Humble
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
@@ -77,7 +77,7 @@ To provide various conditions for a robot application development, the game prov
 {% include en/platform/turtlebot3/autonomous_driving/noetic/autonomous_driving_sim_tunnel_noetic.md %}
 </section>
 
-<section data-id="{{ page.tab_title5 }}" class="tab_contents">
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
 **NOTE**: The TurtleBot3 Autorace Humble version is scheduled to be released soon
 {: .notice--warning}
 </section>

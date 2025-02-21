@@ -7,8 +7,8 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/turtlebot3/navigation/
 tabs: "ROS"
+tab_title1: Humble
 tab_title3: Noetic
-tab_title6: Humble
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
@@ -60,7 +60,7 @@ The [Navigation][navigation] enables a robot to move from the current pose to th
 {% include en/platform/turtlebot3/navigation/navigation_run_navigation_nodes_foxy.md %}
 </section> -->
 
-<section data-id="{{ page.tab_title6 }}" class="tab_contents">
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/turtlebot3/navigation/navigation_run_navigation_nodes_foxy.md %}
 </section>
 
@@ -92,7 +92,7 @@ The [Navigation][navigation] enables a robot to move from the current pose to th
 {% include en/platform/turtlebot3/navigation/navigation_estimate_initial_pose_foxy.md %}
 </section> -->
 
-<section data-id="{{ page.tab_title6 }}" class="tab_contents">
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/turtlebot3/navigation/navigation_estimate_initial_pose_foxy.md %}
 </section>
 
@@ -124,7 +124,7 @@ The [Navigation][navigation] enables a robot to move from the current pose to th
 {% include en/platform/turtlebot3/navigation/navigation_set_navigation_goal_foxy.md %}
 </section> -->
 
-<section data-id="{{ page.tab_title6 }}" class="tab_contents">
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/turtlebot3/navigation/navigation_set_navigation_goal_foxy.md %}
 </section>
 
@@ -155,7 +155,7 @@ The [Navigation][navigation] enables a robot to move from the current pose to th
 {% include en/platform/turtlebot3/navigation/navigation_tuning_guide_foxy.md %}
 </section> -->
 
-<section data-id="{{ page.tab_title6 }}" class="tab_contents">
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/turtlebot3/navigation/navigation_tuning_guide_foxy.md %}
 </section>
 

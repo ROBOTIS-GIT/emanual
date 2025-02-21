@@ -8,10 +8,10 @@ author_profile: false
 permalink: /docs/en/platform/openmanipulator_x/ros_controller_check_setting/
 tabs: "ROS"
 #tab_title1: Kinetic
+tab_title1: Humble
 tab_title2: Noetic
 #tab_title3: Dashing
 #tab_title4: Foxy
-tab_title5: Humble
 tab_title6: Arduino
 
 sidebar:
@@ -52,7 +52,7 @@ page_number: 7
 {% include en/platform/openmanipulator_x/controller/check_setting_dashing.md %}
 </section> -->
 
-<section data-id="{{ page.tab_title5 }}" class="tab_contents">
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
 Not supported.
 {: .notice--warning}
 </section>
@@ -80,7 +80,7 @@ Not supported
 {% include en/platform/openmanipulator_x/controller/check_setting_rviz_dashing.md %}
 </section> -->
 
-<section data-id="{{ page.tab_title5 }}" class="tab_contents">
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/openmanipulator_x/controller/check_setting_rviz_humble.md %}
 </section>
 

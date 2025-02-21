@@ -8,10 +8,10 @@ author_profile: false
 permalink: /docs/en/platform/openmanipulator_x/ros_applications/
 tabs: "ROS"
 #tab_title1: Kinetic
+tab_title1: Humble
 tab_title2: Noetic
 #tab_title3: Dashing
 #tab_title4: Foxy
-tab_title5: Humble
 tab_title6: Arduino
 sidebar:
   title: "OpenMANIPULATOR-X"
@@ -51,7 +51,7 @@ Not supported
 {: .notice--warning}
 </section> -->
 
-<section data-id="{{ page.tab_title5 }}" class="tab_contents">
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
 Not supported
 {: .notice--warning}
 </section>

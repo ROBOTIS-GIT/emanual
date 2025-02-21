@@ -9,10 +9,10 @@ permalink: /docs/en/platform/turtlebot3/home_service_challenge/
 tabs: "ROS"
 tabs: "ROS"
 #tab_title1: Kinetic
+tab_title1: Humble
 tab_title2: Noetic
 #tab_title3: Dashing
 #tab_title4: Foxy
-tab_title5: Humble
 #tab_title6: Windows
 sidebar:
   title: TurtleBot3
@@ -52,12 +52,12 @@ page_number: 18
 {: .notice}
 </section> -->
 
-<!-- <section data-id="{{ page.tab_title5 }}" class="tab_contents">
+<!-- <section data-id="{{ page.tab_title1 }}" class="tab_contents">
 **NOTE**: This feature is available for Kinetic and Noetic. 
 {: .notice}
 </section> -->
 
-<section data-id="{{ page.tab_title5 }}" class="tab_contents">
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
 **NOTE**: This feature is available for Kinetic and Noetic. 
 {: .notice}
 </section>

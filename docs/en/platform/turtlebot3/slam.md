@@ -7,8 +7,8 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/turtlebot3/slam/
 tabs: "ROS"
+tab_title1: Humble
 tab_title3: Noetic
-tab_title6: Humble
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
@@ -42,7 +42,7 @@ page_number: 10
 {% include en/platform/turtlebot3/slam/slam_intro_foxy.md %}
 </section> -->
 
-<section data-id="{{ page.tab_title6 }}" class="tab_contents">
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/turtlebot3/slam/slam_intro_humble.md %}
 </section>
 
@@ -72,7 +72,7 @@ page_number: 10
 {% include en/platform/turtlebot3/slam/slam_run_slam_node_foxy.md %}
 </section> -->
 
-<section data-id="{{ page.tab_title6 }}" class="tab_contents">
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/turtlebot3/slam/slam_run_slam_node_humble.md %}
 </section>
 
@@ -102,7 +102,7 @@ page_number: 10
 {% include en/platform/turtlebot3/slam/slam_run_teleoperation_node_foxy.md %}
 </section> -->
 
-<section data-id="{{ page.tab_title6 }}" class="tab_contents">
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/turtlebot3/slam/slam_run_teleoperation_node_humble.md %}
 </section>
 
@@ -132,7 +132,7 @@ page_number: 10
 {% include en/platform/turtlebot3/slam/slam_tuning_guide_foxy.md %}
 </section> -->
 
-<section data-id="{{ page.tab_title6 }}" class="tab_contents">
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/turtlebot3/slam/slam_tuning_guide_humble.md %}
 </section>
 
@@ -162,7 +162,7 @@ page_number: 10
 {% include en/platform/turtlebot3/slam/slam_save_map_foxy.md %}
 </section> -->
 
-<section data-id="{{ page.tab_title6 }}" class="tab_contents">
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/turtlebot3/slam/slam_save_map_humble.md %}
 </section>
 
@@ -192,7 +192,7 @@ page_number: 10
 {% include en/platform/turtlebot3/slam/slam_map_foxy.md %}
 </section> -->
 
-<section data-id="{{ page.tab_title6 }}" class="tab_contents">
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/turtlebot3/slam/slam_map_humble.md %}
 </section>
 

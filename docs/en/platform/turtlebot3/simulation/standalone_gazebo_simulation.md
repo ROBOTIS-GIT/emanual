@@ -7,8 +7,8 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/turtlebot3/standalone_gazebo_simulation/
 tabs: "ROS"
+tab_title1: Humble
 tab_title3: Noetic
-tab_title6: Humble
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
@@ -58,7 +58,7 @@ page_number: 16
 {: .notice}
 </section> -->
 
-<section data-id="{{ page.tab_title6 }}" class="tab_contents">
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
 **NOTE**: This feature is available for Kinetic only.
 {: .notice}
 </section>
