@@ -7,7 +7,7 @@ Three Gazebo environments are prepared, but for creating a map with SLAM, it is 
 Use one of the following commands to load the Gazebo environment.  
 
 In this tutorial, TurtleBot3 World will be used.  
-Specify your TurtleBot model (`burger`, `waffle`, `waffle_pi`) using the `TURTLEBOT3_MODEL` parameter.
+Specify your TurtleBot3 model (`burger`, `waffle`, `waffle_pi`) using the `TURTLEBOT3_MODEL` parameter.  
 **[Remote PC]**  
 ```bash
 $ export TURTLEBOT3_MODEL=burger
@@ -26,7 +26,7 @@ $ roslaunch turtlebot3_gazebo turtlebot3_house.launch
 
 ### Run SLAM Node  
 Open a new terminal on the Remote PC with `Ctrl` + `Alt` + `T` and run the SLAM node. The Gmapping SLAM method is used by default.  
-Specify your TurtleBot model (`burger`, `waffle`, `waffle_pi`) using the `TURTLEBOT3_MODEL` parameter.
+Specify your TurtleBot3 model (`burger`, `waffle`, `waffle_pi`) using the `TURTLEBOT3_MODEL` parameter.  
 **[Remote PC]**  
 ```bash
 $ export TURTLEBOT3_MODEL=burger
@@ -35,7 +35,7 @@ $ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
 
 ### Run Teleoperation Node  
 Open a new terminal on the Remote PC with `Ctrl` + `Alt` + `T` and run the teleoperation node from the Remote PC.  
-Specify your TurtleBot model (`burger`, `waffle`, `waffle_pi`) using the `TURTLEBOT3_MODEL` parameter.
+Specify your TurtleBot3 model (`burger`, `waffle`, `waffle_pi`) using the `TURTLEBOT3_MODEL` parameter.  
 **[Remote PC]**  
 ```bash
 $ export TURTLEBOT3_MODEL=burger

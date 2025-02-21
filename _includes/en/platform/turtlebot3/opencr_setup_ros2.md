@@ -15,14 +15,14 @@ $ sudo apt-get install libc6:armhf
 **[Turtlebot3 SBC]**  
   ```bash  
 $ export OPENCR_PORT=/dev/ttyACM0  
-$ export OPENCR_MODEL=burger_noetic  
+$ export OPENCR_MODEL=burger
 $ rm -rf ./opencr_update.tar.bz2  
   ```  
 
 4. Download the firmware and required loader, then extract the file to prepare for upload.
 **[Turtlebot3 SBC]**  
   ```bash  
-$ wget https://github.com/ROBOTIS-GIT/OpenCR-Binaries/raw/master/turtlebot3/ROS1/latest/opencr_update.tar.bz2   
+$ wget https://github.com/ROBOTIS-GIT/OpenCR-Binaries/raw/master/turtlebot3/ROS2/latest/opencr_update.tar.bz2   
 $ tar -xvf opencr_update.tar.bz2 
   ```  
 
@@ -75,20 +75,18 @@ https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCR/master/arduino/opencr_relea
   ![](/assets/images/platform/turtlebot3/preparation/ide1.png)
 
 6. Open the TurtleBot3 firmware. Please select the correct firmware, depending on your specific model .
-  - Burger : ***File > Examples > turtlebot3 > turtlebot3_burger > turtlebot3_core***
-  - Waffle/Waffle Pi : ***File > Examples > turtlebot3 > turtlebot3_waffle > turtlebot3_core***
+  - Burger : ***File > Examples > Turtlebot3 ROS2 > turtlebot3_burger***
+  - Waffle/Waffle Pi : ***File > Examples > Turtlebot3 ROS2 > turtlebot3_waffle***
 
-7. Open the `turtlebot3_core_config.h` and uncomment the **NOETIC_SUPPORT** definition on line 21.
+7. Connect the [OpenCR] to the PC and Select ***OpenCR > OpenCR Board*** from the ***Tools > Board*** menu.
 
-8. Connect the [OpenCR] to the PC and Select ***OpenCR > OpenCR Board*** from the ***Tools > Board*** menu.
+8. Select the USB port with the [OpenCR] connected from the ***Tools > Port*** menu.
 
-9. Select the USB port with the [OpenCR] connected from the ***Tools > Port*** menu.
-
-10. Upload the TurtleBot3 firmware sketch with `Ctrl` + `U` or the upload icon.  
+9. Upload the TurtleBot3 firmware sketch with `Ctrl` + `U` or the upload icon.  
   ![](/assets/images/platform/turtlebot3/opencr/o2.png)  
   ![](/assets/images/platform/turtlebot3/opencr/o3.png)
 
-11. If the firmware upload fails, try uploading again through recovery mode according to the following instructions. While in recovery mode, the `STATUS` led of the [OpenCR] will blink periodically.
+10. If the firmware upload fails, try uploading again through recovery mode according to the following instructions. While in recovery mode, the `STATUS` led of the [OpenCR] will blink periodically.
   - Hold down the `PUSH SW2` button.
   - Press the `Reset` button.
   - Release the `Reset` button.

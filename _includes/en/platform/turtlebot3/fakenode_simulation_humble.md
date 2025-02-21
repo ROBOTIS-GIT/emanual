@@ -8,7 +8,7 @@ To use a virtual TurtleBot3, execute `turtlebot3_fake_node.launch.py` in a `turt
 Follow the instructions to bring TurtleBot3 into the virtual world using Fake Node.
 
 1. Execute `turtlebot3_fake_node.launch.py` file.  
-Specify your TurtleBot model (`burger`, `waffle`, `waffle_pi`) using the `TURTLEBOT3_MODEL` parameter.
+Specify your TurtleBot3 model (`burger`, `waffle`, `waffle_pi`) using the `TURTLEBOT3_MODEL` parameter.
   ``` bash
 $ export TURTLEBOT3_MODEL=burger
 $ ros2 launch turtlebot3_fake_node turtlebot3_fake_node.launch.py

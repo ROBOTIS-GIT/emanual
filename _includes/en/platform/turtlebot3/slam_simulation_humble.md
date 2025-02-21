@@ -8,7 +8,7 @@ Three Gazebo environments are prepared, but for creating a map with SLAM, it is 
 Use one of the following commands to load the Gazebo environment.  
 
 In this tutorial, TurtleBot3 World will be used.  
-Specify your TurtleBot model (`burger`, `waffle`, `waffle_pi`) using the `TURTLEBOT3_MODEL` parameter.
+Specify your TurtleBot3 model (`burger`, `waffle`, `waffle_pi`) using the `TURTLEBOT3_MODEL` parameter.
 
 ```bash
 $ export TURTLEBOT3_MODEL=burger
@@ -18,7 +18,7 @@ $ ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
 <details>
 <summary>
 ![](/assets/images/icon_unfold.png) Read more about **How to load TurtleBot3 House**
-Specify your TurtleBot model (`burger`, `waffle`, `waffle_pi`) using the `TURTLEBOT3_MODEL` parameter.
+Specify your TurtleBot3 model (`burger`, `waffle`, `waffle_pi`) using the `TURTLEBOT3_MODEL` parameter.
 </summary>
 ```bash
 $ export TURTLEBOT3_MODEL=burger
@@ -28,7 +28,7 @@ $ ros2 launch turtlebot3_gazebo turtlebot3_house.launch.py
 
 ### Run SLAM Node  
 Open a new terminal on the Remote PC with `Ctrl` + `Alt` + `T` and run the SLAM node. Cartographer SLAM method is used by default.
-Specify your TurtleBot model (`burger`, `waffle`, `waffle_pi`) using the `TURTLEBOT3_MODEL` parameter.
+Specify your TurtleBot3 model (`burger`, `waffle`, `waffle_pi`) using the `TURTLEBOT3_MODEL` parameter.
 
 ```bash
 $ export TURTLEBOT3_MODEL=burger
@@ -37,7 +37,7 @@ $ ros2 launch turtlebot3_cartographer cartographer.launch.py use_sim_time:=True
 
 ### Run Teleoperation Node  
 Open a new terminal on the Remote PC with `Ctrl` + `Alt` + `T` and run the teleoperation node from the Remote PC.
-Specify your TurtleBot model (`burger`, `waffle`, `waffle_pi`) using the `TURTLEBOT3_MODEL` parameter.
+Specify your TurtleBot3 model (`burger`, `waffle`, `waffle_pi`) using the `TURTLEBOT3_MODEL` parameter.
 
 ```bash
 $ export TURTLEBOT3_MODEL=burger

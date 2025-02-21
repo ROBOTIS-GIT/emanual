@@ -8,7 +8,7 @@
 $ ssh ubuntu@{IP_ADDRESS_OF_RASPBERRY_PI}
   ```  
 
-2. Bring up basic packages to start essential TurtleBot3 applications. You will need to specify your specific TurtleBot3 model.
+2. Bring up basic packages to start essential TurtleBot3 applications. You will need to specify your specific TurtleBot3 model.  
 **[TurtleBot3 SBC]**  
   ```bash
 $ export TURTLEBOT3_MODEL=burger

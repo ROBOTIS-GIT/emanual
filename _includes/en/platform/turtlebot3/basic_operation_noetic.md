@@ -39,13 +39,13 @@ CTRL-C to quit
 </summary>
 The `export TURTLEBOT3_MODEL=${TB3_MODEL}` command can be omitted if the **TURTLEBOT3_MODEL** parameter is predefined in your system's `.bashrc` file. The `.bashrc` file is automatically loaded when a terminal window is created.  
 
-- Example defining TurtlBot3 Burger as the default in the .bashrc file.  
+- Example defining TurtlBot3 Burger as the default in the `.bashrc` file.  
 ```bash
 $ echo 'export TURTLEBOT3_MODEL=burger' >> ~/.bashrc
 $ source ~/.bashrc
 ```
 
-- Example defining TurtlBot3 waffle_pi as the default in the .bashrc file.  
+- Example defining TurtlBot3 waffle_pi as the default in the `.bashrc` file.  
 ```bash
 $ echo 'export TURTLEBOT3_MODEL=waffle_pi' >> ~/.bashrc
 $ source ~/.bashrc
