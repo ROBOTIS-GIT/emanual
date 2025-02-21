@@ -1,5 +1,5 @@
 
-**NOTE**: This application must be set firmware version `1.2.1` or higher.
+**NOTE**: This example can only be run on firmware version `1.2.1` or higher.
 {: .notice--info}
 
 1. **[Remote PC]** Run roscore.
@@ -7,19 +7,19 @@
 $ roscore
 ```
 
-2. Bringup multiple turtlebot3s with different namespace. We recommend the namespace includes common words such as `tb3_0`, `tb3_1` or `my_robot_0`, `my_robot_1`
+2. Bringup multiple TurtleBot3s with different namespaces. We recommend that the namespace is easy to remember, and to identify multiple units like `tb3_0`, `tb3_1` or `my_robot_0`, `my_robot_1`
 
-   - **[TurtleBot(tb3_0)]** Bring up basic packages with `ROS NAMESPACE` for nodes, `multi_robot_name` for tf prefix and `set_lidar_frame_id` for lidar frame id. This parameters must be the same.
+   - **[TurtleBot(tb3_0)]** Bring up basic packages with `ROS NAMESPACE` for nodes, `multi_robot_name` for tf prefix and `set_lidar_frame_id` for lidar frame id. These parameters must be the same.
    ```bash
    $ ROS_NAMESPACE=tb3_0 roslaunch turtlebot3_bringup turtlebot3_robot.launch multi_robot_name:="tb3_0" set_lidar_frame_id:="tb3_0/base_scan"
    ```
 
-   - **[TurtleBot(tb3_1)]** Bring up basic packages with `ROS NAMESPACE` for nodes, `multi_robot_name` for tf prefix and `set_lidar_frame_id` for lidar frame id. This parameters must be the same but different other robots.
+   - **[TurtleBot(tb3_1)]** Bring up basic packages with `ROS NAMESPACE` for nodes, `multi_robot_name` for tf prefix and `set_lidar_frame_id` for lidar frame id. These parameters must be the same but different other robots.
    ```bash
    $ ROS_NAMESPACE=tb3_1 roslaunch turtlebot3_bringup turtlebot3_robot.launch multi_robot_name:="tb3_1" set_lidar_frame_id:="tb3_1/base_scan"
    ```
 
-3. Then the terminal you launched `tb3_0` will represents below messages. You can watch TF messages have prefix `tb3_0`
+3. Then the terminal for `tb3_0` will output the messages below. You can watch TF for messages with the prefix `tb3_0`
    ```bash
    SUMMARY
    ========
@@ -73,7 +73,7 @@ $ roscore
    [INFO] [1531356284.585490]: Calibration End
    ```
 
-4. **[Remote PC]** Launch robot state publisher with same namespace.
+4. **[Remote PC]** Launch the robot state publisher with the same namespace.
 - **[TurtleBot(tb3_0)]**
   ```bash
   $ ROS_NAMESPACE=tb3_0 roslaunch turtlebot3_bringup turtlebot3_remote.launch multi_robot_name:=tb3_0
@@ -83,14 +83,14 @@ $ roscore
   $ ROS_NAMESPACE=tb3_1 roslaunch turtlebot3_bringup turtlebot3_remote.launch multi_robot_name:=tb3_1
   ```
 
-5. Before start another application, check topics and TF tree to open rqt
+5. Before starting another application, check topics and the TF tree to open rqt
 ```bash
 $ rqt
 ```
 
     ![](/assets/images/platform/turtlebot3/application/multi_turtlebot_rqt.png)
 
-To use this setup, each turtlebot3 makes map using SLAM and these maps are merged simutaneously by [multi_map_merge][multi_map_merge] packages. You can get more information about this to visit [Virtual SLAM by Multiple TurtleBot3s][virtual slam by multiple turtlebot3s] sections
+To use this setup, each TurtleBot3 makes a map using SLAM and these maps are merged simultaneously by the [multi_map_merge][multi_map_merge] package. You can get more information about this by visiting [Virtual SLAM by Multiple TurtleBot3s][virtual slam by multiple turtlebot3s].
 
 
 [turtlebot3_applications]: https://github.com/ROBOTIS-GIT/turtlebot3_applications

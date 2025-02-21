@@ -1,8 +1,8 @@
 
 {% capture notice_01 %}
 **NOTE**
-- Please run the Simulation on **Remote PC**.
-- Launching the Simulation for the first time on the Remote PC may take a while to setup the environment.
+- The Simulation should be run from the **Remote PC**.
+- Launching the Simulation for the first time on the Remote PC may take some time to setup the environment.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -10,12 +10,10 @@
 <summary>
 ![](/assets/images/icon_unfold.png) Read more about **TurtleBot3 Simulation**
 </summary>
-TurtleBot3 supports simulation development environment that can be programmed and developed with a virtual robot in the simulation. There are two development environments to do this, one is using a **fake node with 3D visualization tool RViz**, and the other is using the **3D robot simulator Gazebo**.
+TurtleBot3 supports simulation development environments that can allow for development with a virtual robot. There are two development environments to do this, one using **fake node with 3D visualization in RViz**, and the other is the **3D robot simulator Gazebo**.
 
-- The **fake node** is suitable for testing with the robot model and movement, but it does not support sensors.
--  If you need to perform SLAM or Navigation, **Gazebo** would be a feasible solution as it supports sensors such as IMU, LDS, and camera.
-
-In this instruction, Gazebo will be mainly introduced which is most widely used among ROS developers.
+- **fake node** simulation is suitable for testing the robot model and movement, but it does not support sensors.
+-  If you need to perform SLAM or Navigation, **Gazebo** would be the preferred solution as it supports sensors such as IMU, LDS, and camera.
 
 - **Gazebo Tutorials** : [http://gazebosim.org/tutorials](http://gazebosim.org/tutorials)
 </details>
@@ -24,14 +22,14 @@ In this instruction, Gazebo will be mainly introduced which is most widely used 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UzOoJ6a_mOg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-The contents in e-Manual can be updated without a prior notice and video contents could be outdated.
+The content in the e-Manual may be updated without prior notice and video content may be outdated.
 {: .notice--warning}
 
-This Gazebo Simulation uses **ROS Gazebo package**, therefore, proper Gazebo version for ROS2 Humble has to be installed before running this instruction.
+This Gazebo Simulation uses the **ROS Gazebo package**, Gazebo version ROS2 Humble has to be installed before running these instructions.
 
 
 ### [Install Simulation Package](#install-simulation-package)
-The **TurtleBot3 Simulation Package** requires `turtlebot3` and `turtlebot3_msgs` packages as prerequisite. Without these prerequisite packages, the Simulation cannot be launched.  
+The **TurtleBot3 Simulation Package** requires `turtlebot3` and `turtlebot3_msgs` packages. Without these prerequisite packages, the Simulation cannot be launched.  
 Please follow the [PC Setup](/docs/en/platform/turtlebot3/quick-start/) instructions if you did not install required packages and dependent packages.
 
 ```bash
@@ -44,7 +42,7 @@ $ cd ~/turtlebot3_ws && colcon build --symlink-install
 
 Three simulation environments are prepared for TurtleBot3. Please select one of these environments to launch Gazebo.  
 
-**Please make sure to completely terminate other Simulation world before launching a new world.**
+**Please make sure to completely terminate any other Simulation world before launching a new world.**
 {: .notice--warning}
 
 1. Empty World  
@@ -68,13 +66,13 @@ $ export TURTLEBOT3_MODEL=waffle_pi
 $ ros2 launch turtlebot3_gazebo turtlebot3_house.launch.py
 ```
 
-**NOTE**: If TurtleBot3 House is launched for the first time, downloading the map may take more than a few minutes depending the network status.
+**NOTE**: If TurtleBot3 House is launched for the first time, downloading the map may take more than a few minutes depending on network status.
 {: .notice}
 
 
 ### [Operate TurtleBot3](#operate-turtlebot3)
 
-In order to teleoperate the TurtleBot3 with the keyboard, launch the teleoperation node with below command in a new terminal window.
+In order to teleoperate the TurtleBot3 with a keyboard, launch the teleoperation node with the command below in a new terminal window.
 
 ```bash
 $ ros2 run turtlebot3_teleop teleop_keyboard
@@ -84,12 +82,12 @@ $ ros2 run turtlebot3_teleop teleop_keyboard
 <summary>
 ![](/assets/images/icon_unfold.png) Read more about **How to run Autonomous Collision Avoidance**
 </summary>
-A simple collision avoidance node is prepared which keeps certain distance from obstacles and make turns to avoid collision.  
-In order to autonomously drive a TurtleBot3 in the **TurtleBot3 world**, please follow the instruction below.
+A simple collision avoidance node which keeps a safe distance from obstacles and makes turns to avoid collisions is provided with the TurtleBot3 simulation packages.  
+In order to autonomously drive a TurtleBot3 in the **TurtleBot3 world**, please follow the instructions below.
 
-1. Terminate the turtlebot3_teleop_key node by entering `Ctrl` + `C` to the terminal that runs the teleop node.
+1. Terminate the turtlebot3_teleop_key node by entering `Ctrl` + `C` in the terminal running the teleop node.
 
-2. Enter the below command to the terminal.
+2. Enter the command below in the terminal.
 ```bash
 $ ros2 run turtlebot3_gazebo turtlebot3_drive
 ```
@@ -99,7 +97,7 @@ $ ros2 run turtlebot3_gazebo turtlebot3_drive
 <summary>
 ![](/assets/images/icon_unfold.png) Read more about **How to visualize Simulation data(RViz2)**
 </summary>
-RViz2 visualizes published topics while simulation is running. You can launch RViz2 in a new terminal window by entering below command.
+RViz2 visualizes published topics while simulation is running. You can launch RViz2 in a new terminal window with the following command.
 
 ```bash
 $ ros2 launch turtlebot3_bringup rviz2.launch.py

@@ -27,6 +27,8 @@ page_number: 14
 
 ## [Navigation Simulation](#navigation-simulation)
 
+Just like with SLAM in the Gazebo simulator, you can select or create various environments and robot models in the virtual Navigation world. However, a complete map has to be prepared before running Navigation. Other than the preparation of a simulation environment instead of bringing up the robot, Navigation Simulation is pretty similar to that of real-world TurtleBot3 [Navigation][navigation].  
+
 {::options parse_block_html="true" /}
 
 <!-- <section data-id="{{ page.tab_title1 }}" class="tab_contents">

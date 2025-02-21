@@ -1,14 +1,11 @@
-
-Just like the SLAM in Gazebo simulator, you can select or create various environments and robot models in virtual Navigation world. However, proper map has to be prepared before running the Navigation2. Other than preparing simulation environment instead of bringing up the robot, Navigation Simulation is pretty similar to that of [Navigation][navigation].  
-
 ### Launch Simulation World
 
-Terminate all applications with `Ctrl` + `C` that were launced in the previous sections.
+Terminate `Ctrl` + `C` all applications that were launched in the previous sections.
 {: .notice--warning}
 
-In the previous [SLAM][slam] section, TurtleBot3 World is used to creat a map. The same Gazebo environment will be used for Navigation.
+In the previous [SLAM][slam] section, TurtleBot3 World was used to create a map. The same Gazebo environment will be used for Navigation.
 
-Please use the proper keyword among `burger`, `waffle`, `waffle_pi` for the `TURTLEBOT3_MODEL` parameter.  
+Specify your TurtleBot model (`burger`, `waffle`, `waffle_pi`) using the `TURTLEBOT3_MODEL` parameter.
 
 ```bash
 $ export TURTLEBOT3_MODEL=burger
@@ -35,11 +32,11 @@ $ ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=True ma
 
 ### [Estimate Initial Pose](#estimate-initial-pose)
 
-**Initial Pose Estimation** must be performed before running the Navigation as this process initializes the AMCL parameters that are critical in Navigation. TurtleBot3 has to be correctly located on the map with the LDS sensor data that neatly overlaps the displayed map.
+**Initial Pose Estimation** must be performed before running Navigation as this process initializes the AMCL parameters that are critical for accurate Navigation. TurtleBot3 has to be correctly located on the map with the LDS sensor data that neatly overlaps the displayed map.
 
 1. Click the `2D Pose Estimate` button in the RViz2 menu.
 2. Click on the map where the actual robot is located and drag the large green arrow toward the direction where the robot is facing.
-3. Repeat step 1 and 2 until the LDS sensor data is overlayed on the saved map. 
+3. Repeat step 1 and 2 until the LDS sensor data is overlaid on the saved map. 
   ![](/assets/images/platform/turtlebot3/ros2/tb3_navigation2_rviz_01.png)
 4. Launch keyboard teleoperation node to precisely locate the robot on the map.
   ```bash
