@@ -62,6 +62,10 @@ page_number: 22
 {: .notice}
 </section> -->
 
+<section data-id="{{ page.tab_title6 }}" class="tab_contents">
+{% include en/platform/turtlebot3/basic_examples/basic_examples_move_using_interactive_markers_humble.md %}
+</section>
+
 ## [Obstacle Detection](#obstacle-detection)
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
