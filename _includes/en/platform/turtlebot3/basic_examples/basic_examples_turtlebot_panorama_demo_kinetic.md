@@ -3,8 +3,8 @@
 **NOTE**:
 
 - The `turtlebot3_panorama` demo uses `pano_ros` for taking snapshots and stitching them together to create panoramic image.
-- Panorama demo requires to install `raspicam_node` package. Instructions for installing this package can be found at [Gihub Link](https://github.com/UbiquityRobotics/raspicam_node)
-- Panorama demo requires to install OpenCV and cvbridge packages. Instructions for installing OpenCV can be found at [OpenCV Tutorial Link](http://docs.opencv.org/2.4/doc/tutorials/introduction/linux_install/linux_install.html)
+- Panorama demo requires the `raspicam_node` package. Instructions for installing this package can be found [here](https://github.com/UbiquityRobotics/raspicam_node)
+- Panorama demo requires the OpenCV and cvbridge packages. Instructions for installing OpenCV can be found [here](http://docs.opencv.org/2.4/doc/tutorials/introduction/linux_install/linux_install.html)
 {% endcapture %}
 <div class="notice--info">{{ notice_03 | markdownify }}</div>
 

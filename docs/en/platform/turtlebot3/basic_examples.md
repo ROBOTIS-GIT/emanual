@@ -64,6 +64,10 @@ page_number: 22
 
 ## [Patrol](#patrol)
 
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+{% include en/platform/turtlebot3/basic_examples/basic_examples_patrol_humble.md %}
+</section>
+
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
 {% include en/platform/turtlebot3/basic_examples/basic_examples_patrol_kinetic.md %}
 </section>
