@@ -12,7 +12,7 @@ The TurtleBot3 can be teleoperated by remote control. Make sure that the necessa
 
 #### [Keyboard](#keyboard)
 
-1. Launch the `turtlebot3_teleop_key` node from the Remote PC for teleoperation. Replace the `${TB3_MODEL}` parameter with your specific model name (`burger` or `waffle`). 
+1. Launch the `turtlebot3_teleop_key` node from the Remote PC for teleoperation. Replace the `${TB3_MODEL}` parameter with your specific model name (`burger` or `waffle` or `waffle_pi`).  
 **[Remote PC]**  
 ```bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
