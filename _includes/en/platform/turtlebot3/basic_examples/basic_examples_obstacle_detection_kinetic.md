@@ -1,4 +1,4 @@
-The TurtleBot3 can be moved or stopped by LDS data. When the TurtleBot3 moves, it stops when it detects an obstacle ahead.
+The TurtleBot3 can move or stop in response to LDS readings. When the TurtleBot3 is moving, it will stop when it detects an obstacle ahead.
 
 **[Remote PC]** Launch the obstacle file.
 

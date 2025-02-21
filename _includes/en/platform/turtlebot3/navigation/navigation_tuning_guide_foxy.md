@@ -1,11 +1,10 @@
-
-Navigation2 stack has many parameters to change performances for different robots. Although it's similar to the ROS1 Navigation, please refer to the [Configuration Guide of Navigation2](https://navigation.ros.org/configuration/index.html) or [ROS Navigation Tuning Guide by Kaiyu Zheng](http://kaiyuzheng.me/documents/navguide.pdf) for more details.
+The Navigation2 stack has many parameters to change performances for different robots. Although it's similar to ROS1 Navigation, please refer to the [Configuration Guide of Navigation2](https://navigation.ros.org/configuration/index.html) or [ROS Navigation Tuning Guide by Kaiyu Zheng](http://kaiyuzheng.me/documents/navguide.pdf) for more details.
 
 ### Costmap Parameters
   
 #### inflation_layer.inflation_radius
 - Defined in `turtlebot3_navigation2/param/${TB3_MODEL}.yaml`
-- This parameter makes inflation area from the obstacle. Path would be planned in order that it does not across this area. It is safe that to set this to be bigger than robot radius. For more information, please refer to the [costmap_2d wiki](http://wiki.ros.org/costmap_2d#Inflation).
+- This parameter defines an inflation area of inaccesability around detected obstacles. Generated paths will be planned not to cross this area. It is safe to set this value to be slightly bigger than robot radius. For more information, please refer to [costmap_2d wiki](http://wiki.ros.org/costmap_2d#Inflation).
 
 ![](/assets/images/platform/turtlebot3/navigation/tuning_inflation_radius.png)
 
@@ -21,11 +20,11 @@ Navigation2 stack has many parameters to change performances for different robot
   
 #### max_vel_x 
 - Defined in `turtlebot3_navigation2/param/${TB3_MODEL}.yaml`
-- This factor is set the maximum value of translational velocity. 
+- This factor sets the maximum value for translational velocity. 
 
 #### min_vel_x 
 - Defined in `turtlebot3_navigation2/param/${TB3_MODEL}.yaml`
-- This factor is set the minimum value of translational velocity. If set this negative, the robot can move backwards.
+- This factor sets the minimum value for translational velocity. If set this negative, the robot can move backwards.
 
 #### max_vel_y
 - Defined in `turtlebot3_navigation2/param/${TB3_MODEL}.yaml`
@@ -37,11 +36,11 @@ Navigation2 stack has many parameters to change performances for different robot
   
 #### max_vel_theta  
 - Defined in `turtlebot3_navigation2/param/${TB3_MODEL}.yaml`
-- Actual value of the maximum rotational velocity. The robot can not be faster than this.
+- Value setting the maximum rotational velocity. The robot can not spin faster than this.
 
 #### min_speed_theta
 - Defined in `turtlebot3_navigation2/param/${TB3_MODEL}.yaml`
-- Actual value of the minimum rotational speed. The robot can not be slower than this.
+- Value setting the minimum rotational velocity. The robot can not spin slower than this.
 
 #### max_speed_xy
 - Defined in `turtlebot3_navigation2/param/${TB3_MODEL}.yaml`
@@ -85,11 +84,11 @@ Navigation2 stack has many parameters to change performances for different robot
 
 #### transform_tolerance
 - Defined in `turtlebot3_navigation2/param/${TB3_MODEL}.yaml`
-- It allows the latency for tf messages.
+- The allowance for latency for tf messages.
   
 #### sim_time
 - Defined in `turtlebot3_navigation2/param/${TB3_MODEL}.yaml`
-- This factor is set forward simulation in seconds. Setting this too small makes robot difficult to pass a narrow space while large value limits dynamic turns. You can observe the defferences of length of the yellow line in below image that represents the simulation path.
+- This factor sets forward simulation time in seconds. Setting this too small makes it difficult for the robot to pass through narrow spaces while large values limit dynamic turns. You can observe the differences in length of the yellow line in the below image that representing the simulation path.
 
 ![](/assets/images/platform/turtlebot3/navigation/tuning_sim_time.png)  
     
