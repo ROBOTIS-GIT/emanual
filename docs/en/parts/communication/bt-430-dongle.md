@@ -141,10 +141,10 @@ The BT-430 Dongle can establish reliable 1:1 communication through pairing.
 
 You can change the settings of the BT-430 Dongle using AT commands in the terminal as follows.
 
-#### [Check firmware version](#check-firmware-version)  
-If you enter ? in the terminal, the BT-430 version will be displayed as `BT-430,2.1.1`.
+## [Check firmware version](#check-firmware-version)  
+If you enter '?' in the terminal, the BT-430 version will be displayed as `BT-430,2.1.1`.
 
-#### [Firmware Update](#firmware-update)  
+## [Firmware Update](#firmware-update)  
   - Enter `AT+BTBOOT` in the terminal and press ENTER to make the BT-430 enter bootloader mode, and the red LED will turn on.  
   - A USB storage device named "`BT-430 BOOT`" will appear in `This PC` on the computer.  
   - Download the uf2 file from [link](/assets/images/parts/communication/bt430_fw_v2.2.1.uf2) to your PC and copy this file to the USB device.  
@@ -157,20 +157,20 @@ If you enter ? in the terminal, the BT-430 version will be displayed as `BT-430,
     1. Disconnect and reconnect the USB connection of the BT-430 dongle.
     2. If the BT-430 is connected via a USB hub, disconnect and reconnect the USB connector that connects the USB hub to the PC.
 
-#### [Restart the system](#restart-the-system)  
+## [Restart the system](#restart-the-system)  
   Enter `ATZ` and press Enter to restart the BT-430 Dongle. If you have made any changes to the settings, they will persist across restart. 
   
   After a restart, in order to send AT commands to BT-430 Dongle, first you need to disconnect(File > Disconnect) current connection and then make a [new connection](#setup).
 
-#### [Device discovery](#device-discovery)
+## [Device discovery](#device-discovery)
   Enter `AT+BTINQ=DBE7DF000001` as shown below and press Enter to search for devices with MAC addresses greater than or equal to DBE7DF000001 among nearby BLE devices.
 
   ![img](/assets/images/parts/communication/bt-410_dongle_12.png)
 
-#### [Automatic pairing](#automatic-pairing)
+## [Automatic pairing](#automatic-pairing)
   Unpaired BT-430 SLAVE modules will automatically pair when brought close to the BT-430 Dongle (within about 10cm).
 
-#### [Disable automatic pairing](#disable-automatic-pairing)
+## [Disable automatic pairing](#disable-automatic-pairing)
   Enter `AT+BTAUTOPAIR=0` and press ENTER.
 
   ![img](/assets/images/parts/communication/bt-410_dongle_13.png)
@@ -179,7 +179,7 @@ If you enter ? in the terminal, the BT-430 version will be displayed as `BT-430,
 
   ![img](/assets/images/parts/communication/bt-410_dongle_14.png)
 
-#### [Enable automatic pairng](#enable-automatic-pairng)
+## [Enable automatic pairng](#enable-automatic-pairng)
   Enter `AT+BTAUTOPAIR=1` and press ENTER.
 
   ![img](/assets/images/parts/communication/bt-410_dongle_15.png)
@@ -188,7 +188,7 @@ If you enter ? in the terminal, the BT-430 version will be displayed as `BT-430,
 
   ![img](/assets/images/parts/communication/bt-410_dongle_16.png)
 
-#### [Multi-Pairing](#multi-pairing)  
+## [Multi-Pairing](#multi-pairing)  
   (__Available from Firmware V2.2.1__)  
   __Enable__: Enter `AT+BTMULTIPAIR=1` and press ENTER  
   - When the multi-pairing feature is activated:  
