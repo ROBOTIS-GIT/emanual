@@ -85,9 +85,11 @@ The BT-430 Dongle can establish reliable 1:1 communication through pairing.
 
 # [BT-430 Dongle Setting](bt-430-dongle-setting)
 
+- **[Firmware update](#firmware-update)**
 - Resettable System
 - Configurable SLAVE Address
 - Enable/Disable Auto-Pairing Feature
+- Enable/Disable [Multi-Pairing](#multi-pairing) Feature
 
 ## [Setup](#setup)
 
@@ -97,7 +99,9 @@ The BT-430 Dongle can establish reliable 1:1 communication through pairing.
 
     ![img](/assets/images/parts/communication/bt-410_dongle_02.png)
 
-    - Run the Tera Term terminal program, click File > New Connection.
+    - Run the Tera Term terminal program(ttermpro.exe), then click File > New Connection.
+
+    ![img](/assets/images/parts/communication/ttermpro-exe.png)
 
     ![img](/assets/images/parts/communication/bt-410_dongle_03.png)
 
@@ -137,36 +141,71 @@ The BT-430 Dongle can establish reliable 1:1 communication through pairing.
 
 You can change the settings of the BT-430 Dongle using AT commands in the terminal as follows.
 
-1. Restart the system: 
-  Enter `ATZ` and press Enter to restart the BT-430 Dongle. If you have made any changes to the settings, they will persist across restarts.
+#### [Check firmware version](#check-firmware-version)  
+If you enter ? in the terminal, the BT-430 version will be displayed as `BT-430,2.1.1`.
 
-    ![img](/assets/images/parts/communication/bt-410_dongle_11.png)
+#### [Firmware Update](#firmware-update)  
+  - Enter `AT+BTBOOT` in the terminal and press ENTER to make the BT-430 enter bootloader mode, and the red LED will turn on.  
+  - A USB storage device named "`BT-430 BOOT`" will appear in `This PC` on the computer.  
+  - Download the uf2 file from [link](/assets/images/parts/communication/bt430_fw_v2.2.1.uf2) to your PC and copy this file to the USB device.  
+  - Once the copy is complete, the BT-430 dongle will automatically reboot.
+  - For BT-430 dongles using an older version of the bootloader, the following warning window may appear after copying the firmware, but the firmware update has been completed successfully.  
 
-2. Device Discovery: 
+  ![img](/assets/images/parts/communication/bt-430_dongle_fw_copy_warning_en.png)
+
+  - If you cannot find the COM port of the BT-430 after rebooting, please try the following methods:
+    1. Disconnect and reconnect the USB connection of the BT-430 dongle.
+    2. If the BT-430 is connected via a USB hub, disconnect and reconnect the USB connector that connects the USB hub to the PC.
+
+#### [Restart the system](#restart-the-system)  
+  Enter `ATZ` and press Enter to restart the BT-430 Dongle. If you have made any changes to the settings, they will persist across restart. 
+  
+  After a restart, in order to send AT commands to BT-430 Dongle, first you need to disconnect(File > Disconnect) current connection and then make a [new connection](#setup).
+
+#### [Device discovery](#device-discovery)
   Enter `AT+BTINQ=DBE7DF000001` as shown below and press Enter to search for devices with MAC addresses greater than or equal to DBE7DF000001 among nearby BLE devices.
 
-    ![img](/assets/images/parts/communication/bt-410_dongle_12.png)
+  ![img](/assets/images/parts/communication/bt-410_dongle_12.png)
 
-3. Automatic Pairing:
+#### [Automatic pairing](#automatic-pairing)
   Unpaired BT-430 SLAVE modules will automatically pair when brought close to the BT-430 Dongle (within about 10cm).
 
-4. Disable Automatic Pairing:
+#### [Disable automatic pairing](#disable-automatic-pairing)
   Enter `AT+BTAUTOPAIR=0` and press ENTER.
 
-    ![img](/assets/images/parts/communication/bt-410_dongle_13.png)
+  ![img](/assets/images/parts/communication/bt-410_dongle_13.png)
 
-    A success message will be displayed after a few seconds.
+  A success message will be displayed after a few seconds.
 
-    ![img](/assets/images/parts/communication/bt-410_dongle_14.png)
+  ![img](/assets/images/parts/communication/bt-410_dongle_14.png)
 
-5. Enable Automatic Pairing:  
+#### [Enable automatic pairng](#enable-automatic-pairng)
   Enter `AT+BTAUTOPAIR=1` and press ENTER.
 
-    ![img](/assets/images/parts/communication/bt-410_dongle_15.png)
+  ![img](/assets/images/parts/communication/bt-410_dongle_15.png)
 
-    A success message will be displayed after a few seconds.
+  A success message will be displayed after a few seconds.
 
-    ![img](/assets/images/parts/communication/bt-410_dongle_16.png)
+  ![img](/assets/images/parts/communication/bt-410_dongle_16.png)
+
+#### [Multi-Pairing](#multi-pairing)  
+  (__Available from Firmware V2.2.1__)  
+  __Enable__: Enter `AT+BTMULTIPAIR=1` and press ENTER  
+  - When the multi-pairing feature is activated:  
+    - If you bring a Slave device close to the BT-430 dongle, it will automatically pair.  
+    - Up to 8 Peripheral devices can be connected simultaneously.  
+    - If no device is connected, the BLUE LED blinks with a 50% duty cycle (equal on and off times).  
+    - If 1 to 7 device(s) are connected, the BLUE LED will blink briefly based on the number of connected Slave devices.  
+    - If 8 devices are connected, the BLUE LED will remain solidly ON.  
+  - When the automatic pairing feature is enabled:  
+    - The BT-430 remembers the last 8 connected devices (even if BT-430 is powered off).  
+    - These devices will automatically pair, even if they are far away.  
+  - When the automatic pairing feature is disabled:  
+    - The BT-430 does not remember previously connected devices.  
+    - You must always perform proximity pairing for any Slave device to connect.  
+
+  __Disable__: Enter `AT+BTMULTIPAIR=0` and press ENTER
+
 
 # [Check Driver](#check-driver)
 To check if the BT-430 Dongle driver is correctly installed on your PC, follow these steps:

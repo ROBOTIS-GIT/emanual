@@ -86,11 +86,17 @@ BT-430 동글은 페어링 연결을 통해 신뢰성 있는 1:1 통신을 할 �
 - **자동페어링 방법** : BT-430 동글의 파란 LED가 깜박일 때(페어링 되어 있지 않음) BT-410 SLAVE 모듈을 가까이 갖다 대면(10cm 이내) 자동으로 페어링이 됩니다. (그 이후는 먼 거리에서도 페어링 되어 통신 가능.)
 
 # [BT-430 동글 설정하기](#bt-430-동글-설정하기)
+
+- **[펌웨어 업데이트](#펌웨어-업데이트)**
 - 시스템 리셋 가능
 - SLAVE 주소 설정 가능
-- 자동페어링 기능 활성화/비활성화가능
+- 자동 페어링 기능 활성화/비활성화가능
+- [멀티 페어링](#멀티-페어링) 기능 활성화/비활성화가능
 
-## [설정](#설정)
+
+2. BT-430 동글을 PC에 연결한 다음
+
+## [설정 준비](#설정)
 
 1. BT-430 동글을 PC에 연결 한 다음 드라이버 설치 후 COM포트 번호를 확인 합니다.
 
@@ -98,7 +104,9 @@ BT-430 동글은 페어링 연결을 통해 신뢰성 있는 1:1 통신을 할 �
 
     ![img](/assets/images/parts/communication/bt-410_dongle_02.png)
 
-    - 해당 COM포트로 Tera Term 터미널 프로그램을 실행하고 File > New connection 을 클릭합니다.
+    - 해당 COM포트로 Tera Term 터미널 프로그램(ttermpro.exe)을 실행하고 File > New connection 을 클릭합니다.
+
+    ![img](/assets/images/parts/communication/ttermpro-exe.png)
 
     ![img](/assets/images/parts/communication/bt-410_dongle_03.png)
 
@@ -136,38 +144,69 @@ BT-430 동글은 페어링 연결을 통해 신뢰성 있는 1:1 통신을 할 �
 
 아래와 같이 터미널에서 AT 커맨드를 통해 BT-430 동글의 설정을 변경할 수 있고 AT 커맨드의 종류는 아래와 같습니다.
 
-1. 시스템 재시작  
-  ATZ를 입력 후 엔터를 누르면 아래와 같이 BT-430 동글이 재시작 됩니다. 만약 설정을 변경하였다면 변경된 모드로 재시작합니다.
+#### [펌웨어 버전 확인](#펌웨어-버전-확인) 
+  터미널에 ?를 입력하면 `BT-430,2.1.1` 과 같이 BT-430의 버전이 출력됩니다.
 
-    ![img](/assets/images/parts/communication/bt-410_dongle_11.png)
+#### [펌웨어 업데이트](#펌웨어-업데이트) 
+  - 터미널에 AT+BTBOOT를 입력 후 엔터를 누르면 BT-430은 부트로더로 진입하게 되고 빨강 LED 1개가 켜지게 됩니다.
+  - 컴퓨터의 `내 PC` 에 "`BT-430 BOOT`" 라는 이름의 USB 메모리 장치가 표시됩니다.
+  - [링크](/assets/images/parts/communication/bt430_fw_v2.2.1.uf2)의 uf2파일을 PC에 다운로드 하고 이 파일을 해당 USB 장치에 복사합니다.
+  - 복사가 완료되면 BT-430 동글은 자동으로 재부팅 됩니다.
+  - 구버전 부트로더를 사용하는 BT-430 동글의 경우 펌웨어 복사후 아래와 같은 경고창이 표시될 수 있으나 펌웨어 업데이트는 정상적으로 된 것입니다.
 
-2. 주변장치 검색  
-  아래와 같이 AT+BTINQ를 입력 후 엔터를 누르면 현재 주변 BLE 장치 중 MAC 주소가 DBE7DF000001 이상인 장치들이 검색됩니다.
+    ![img](/assets/images/parts/communication/bt-430_dongle_fw_copy_warning_ko.png)
+    
+  - 만약 재부팅 이후 BT-430의 COM포트를 찾을 수 없으면 다음 방법들을 시도해 주세요.
+    1. BT-430 동글의 USB 연결을 분리하고 다시 연결
+    2. 만약 BT-430이 USB허브에 연결되었다면 USB허브와 PC를 연결한 USB 커넥터를 분리하고 다시 연결
 
-    ![img](/assets/images/parts/communication/bt-410_dongle_12.png)
+#### [시스템 재시작](#시스템-재시작)
+  ATZ를 입력 후 엔터를 누르면 BT-430 동글이 재시작 됩니다. 만약 설정을 변경하였다면 변경된 모드로 재시작합니다.  
+  재시작 이후 다시 AT명령을 사용하시려면 먼저 현재 연결을 끊고(File > Disconnect) [재연결](#setup) 하셔야 합니다.
 
-3. 장치 자동 페어링  
+#### [주변장치 검색  ](#주변장치-검색)
+  아래와 같이 AT+BTINQ를 입력 후 엔터를 누르면 현재 주변 BLE 장치 중 MAC 주소가 DBE7DF000001 이상인 장치들이 검색됩니다.  
+
+  ![img](/assets/images/parts/communication/bt-410_dongle_12.png)
+
+#### [장치 자동 페어링](#장치-자동-페어링)
   페어링 되지 않은 BT-430 SLAVE 모듈을 BT-430 동글 가까이(대략 10cm 이내) 근접시키면 자동으로 페어링 됩니다.
 
-4. 자동 페어링 기능 비활성화  
-  AT+BTAUTOPAIR=0 을 입력 후 ENTER 키 입력
+#### [자동 페어링 기능 비활성화](#자동-페어링-기능-비활성화)
+  AT+BTAUTOPAIR=0 을 입력 후 ENTER 키 입력  
 
-    ![img](/assets/images/parts/communication/bt-410_dongle_13.png)
+  ![img](/assets/images/parts/communication/bt-410_dongle_13.png)
 
-    몇 초 뒤에 아래와 같이 성공메세지가 출력됨
+  몇 초 뒤에 아래와 같이 성공메세지가 출력됨  
 
-    ![img](/assets/images/parts/communication/bt-410_dongle_14.png)
+  ![img](/assets/images/parts/communication/bt-410_dongle_14.png)
 
-5. 자동 페어링 기능 활성화  
-  AT+BTAUTOPAIR=1 을 입력 후 ENTER 키 입력
+#### [자동 페어링 기능 활성화](#자동-페어링-기능-활성화)  
+  AT+BTAUTOPAIR=1 을 입력 후 ENTER 키 입력  
+  ![img](/assets/images/parts/communication/bt-410_dongle_15.png)  
+    몇 초 뒤에 아래와 같이 성공 메세지가 출력됨   
+    
+  ![img](/assets/images/parts/communication/bt-410_dongle_16.png)  
 
-    ![img](/assets/images/parts/communication/bt-410_dongle_15.png)
+  ![img](/assets/images/parts/communication/bt-430_dongle_04.jpg)
 
-    몇 초 뒤에 아래와 같이 성공 메세지가 출력됨
+#### [멀티 페어링](#멀티-페어링)
+  (__펌웨어 V2.2.1 부터 가능__)  
+  __활성화__: AT+BTMULTIPAIR=1 을 입력 후 ENTER 키 입력
+  - 멀티 페어링 기능이 활성화 되면 
+    - Slave 장치를 BT-430 동글 가까이에 가져가면 자동으로 페어링 됩니다.
+    - 최대 8개의 Peripheral 장치와 동시에 연결될 수 있습니다.
+    - 하나도 연결되지 않은 경우 BLUE LED가 50%의 duty로 깜박입니다. (켜진 시간과 꺼진 시간 동일)
+    - 1 ~ 7개가 연결된 경우 BLUE LED는 연결된 Slave장치의 갯수만큼 짧게 깜박입니다.
+    - 8개가 연결된 경우 BLUE LED는 계속 켜져있습니다.
+  - 자동 페어링 기능이 활성화 되면
+    - BT-430은(전원이 꺼져도) 마지막으로 연결된 8개의 장치를 기억합니다.
+    - 이 장치들이 멀리에 있어도 자동으로 페어링 됩니다.
+  - 자동 페어링 기능이 비활성화 되면
+    - BT-430은 과거에 연결되었던 장치를 기억하지 않습니다.
+    - 매번 어떤 Slave 장치를 페어링 시킬 때 항상 근접페어링을 해야 합니다.
 
-    ![img](/assets/images/parts/communication/bt-410_dongle_16.png)  
-   ![img](/assets/images/parts/communication/bt-430_dongle_04.jpg)
-
+  __비활성화__: AT+BTMULTIPAIR=0 을 입력 후 ENTER 키 입력
 
 # [드라이버 설치 확인방법](#드라이버-설치-확인방법)
 
