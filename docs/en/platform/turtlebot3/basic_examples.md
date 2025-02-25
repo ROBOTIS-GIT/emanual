@@ -49,11 +49,21 @@ page_number: 22
 
 ## [Obstacle Detection](#obstacle-detection)
 
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+**NOTE**: This feature is not supported yet.
+{: .notice}
+</section>
+
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
 {% include en/platform/turtlebot3/basic_examples/basic_examples_obstacle_detection_kinetic.md %}
 </section>
 
 ## [Position Control](#position-control)
+
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+**NOTE**: This feature is not supported yet.
+{: .notice}
+</section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
 **NOTE**: This feature is available for Dashing.
@@ -61,6 +71,11 @@ page_number: 22
 </section>
 
 ## [Point Operation](#point-operation)
+
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+**NOTE**: This feature is not supported yet.
+{: .notice}
+</section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
 {% include en/platform/turtlebot3/basic_examples/basic_examples_point_operation_kinetic.md %}
@@ -78,11 +93,21 @@ page_number: 22
 
 ## [TurtleBot Follower Demo](#turtlebot-follower-demo)
 
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+**NOTE**: This feature is not supported yet.
+{: .notice}
+</section>
+
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
 {% include en/platform/turtlebot3/basic_examples/basic_examples_turtlebot_follower_demo_kinetic.md %}
 </section>
 
 ## [TurtleBot Panorama Demo](#turtlebot-panorama-demo)
+
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+**NOTE**: This feature is not supported yet.
+{: .notice}
+</section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
 {% include en/platform/turtlebot3/basic_examples/basic_examples_turtlebot_panorama_demo_kinetic.md %}
@@ -90,16 +115,25 @@ page_number: 22
 
 ## [Automatic Parking](#automatic-parking)
 
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+**NOTE**: This feature is not supported yet.
+{: .notice}
+</section>
+
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
 {% include en/platform/turtlebot3/basic_examples/basic_examples_automatic_parking_kinetic.md %}
 </section>
 
 ## [Automatic Parking Vision](#automatic-parking-vision)
 
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+**NOTE**: This feature is not supported yet.
+{: .notice}
+</section>
+
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
 {% include en/platform/turtlebot3/basic_examples/basic_examples_automatic_parking_vision_kinetic.md %}
 </section>
-
 
 ## [Load Multiple TurtleBot3s](#load-multiple-turtlebot3s)
 
