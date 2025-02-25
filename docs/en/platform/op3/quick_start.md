@@ -141,7 +141,10 @@ ROBOTIS OP3 performs pre-programmed motions sequentially while talking.
 The new vision processing demo for ROBOTIS OP3 is “Face detection and tracking”. ROBOTIS OP3 is developed with ROS2.  
 Therefore various ROS2 packages such as face detecting package can be applied for vision processing mode to track recognized face in front of the robot.  
 Please refer the below website link.  
-Face detecting : [https://github.com/ROBOTIS-GIT/face_detection] forked from [https://github.com/phil333/face_detection]
+
+[https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-ETC]  
+  > **face detection** forked from [https://github.com/phil333/face_detection]  
+  > **usb_cam** forked from [https://github.com/ros-drivers/usb_cam]  
 
 - Start Vision Processing Mode
   1. Press `MODE` button until LED 2(green) is lit. ROBOTIS OP3 will verbally announce “Vision processing mode”.  
@@ -158,8 +161,8 @@ Face detecting : [https://github.com/ROBOTIS-GIT/face_detection] forked from [ht
 
 - ETC
   - Modifying parameters of the ‘face_detection’ package might improve recognition of the face. Please refer to the following website for more details.
-  - face_detection package : [https://github.com/ROBOTIS-GIT/face_detection]
-  - usb_cam package : [https://github.com/ros-drivers/usb_cam]
+  - **face_detection** package : [https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-ETC (face_detection)]
+  - **usb_cam** package : [https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-ETC (usb_cam)]
 
 ## [Camera Calibration](#camera-calibration)
 
@@ -231,23 +234,24 @@ You may find the source code directory at `/home/robotis/robotis_ws/src` from RO
 ![](/assets/images/platform/op3/op3_026_rev3.png)
 
 The pre-installed source code may be updated without prior notice. Please check for updates periodically.
-You may obtain updated source code from the below GitHub links :
-- [https://github.com/ROBOTIS-GIT/DynamixelSDK]
-- [https://github.com/ROBOTIS-GIT/face_detection]
-- [https://github.com/ROBOTIS-GIT/ROBOTIS-Framework]
-- [https://github.com/ROBOTIS-GIT/ROBOTIS-Framework-msgs]
-- [https://github.com/ROBOTIS-GIT/ROBOTIS-Math]
-- [https://github.com/ROBOTIS-GIT/ROBOTIS-OP3]
-- [https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Common]
-- [https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Demo]
-- [https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-msgs]
-- [https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Tools]
-- [https://github.com/ROBOTIS-GIT/ROBOTIS-Utility]
+You may obtain updated source code from the below GitHub links :  
+
+- [https://github.com/ROBOTIS-GIT/DynamixelSDK `branch:jazzy`]
+- [https://github.com/ROBOTIS-GIT/ROBOTIS-Framework `branch:jazzy-devel`]
+- [https://github.com/ROBOTIS-GIT/ROBOTIS-Framework-msgs `branch:jazzy-devel`]
+- [https://github.com/ROBOTIS-GIT/ROBOTIS-Math `branch:jazzy-devel`]
+- [https://github.com/ROBOTIS-GIT/ROBOTIS-OP3 `branch:jazzy-devel`]
+- [https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Common `branch:jazzy-devel`]
+- [https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Demo `branch:jazzy-devel`]
+- [https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-ETC `branch:jazzy-devel`]
+- [https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-msgs `branch:jazzy-devel`]
+- [https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Tools `branch:jazzy-devel`]
+- [https://github.com/ROBOTIS-GIT/ROBOTIS-Utility `branch:jazzy-devel`]
 
 ### [Framework](#framework)
 
 The following flow diagram represent class breakdown and data pipelines.  
-You may modify the framework at “/home/robotis/catkin_ws/src/ROBOTIS-Framework”.  
+You may modify the framework at `/home/robotis/catkin_ws/src/ROBOTIS-Framework`.  
 For more information, please refer to the WIKI.  
 [ROBOTIS Framework WIKI]
 
@@ -257,7 +261,7 @@ For more information, please refer to the WIKI.
 
 User who wishes to customize or diagnose ROBOTIS OP3 should establish a connection with the robot via SSH or Remote Desktop(VNC).
 The tools are located in the following directory :
-home/robotis/catkin_ws/src/ROBOTIS-OP3/ROBOTIS-OP3-Tools
+`/home/robotis/catkin_ws/src/ROBOTIS-OP3-Tools`
 
 In the directory you can find code for :
 - **op3_action_editor** : motion creation
@@ -588,7 +592,6 @@ The calculation will take for 2 seconds and then each bit will be reset to 0.
 
 
 [https://github.com/phil333/face_detection]: https://github.com/phil333/face_detection
-[https://github.com/ROBOTIS-GIT/face_detection]: https://github.com/ROBOTIS-GIT/face_detection
 [http://wiki.ros.org/usb_cam]: http://wiki.ros.org/usb_cam
 [https://github.com/ros-drivers/usb_cam]: https://github.com/ros-drivers/usb_cam
 [ROBOTIS Framework WIKI]: /docs/en/software/robotis_framework_packages/
@@ -596,22 +599,26 @@ The calculation will take for 2 seconds and then each bit will be reset to 0.
 [ROBOTIS OP3 Recovery]: /docs/en/platform/op3/recovery/#recovery-of-robotis-op3
 [ROBOTIS OP3 Tutorial]: /docs/en/platform/op3/tutorials/
 [ROBOTIS OP3 Camera Setting]: /docs/en/platform/op3/tutorials/#camera-setting-parameters
-[https://github.com/ROBOTIS-GIT/DynamixelSDK]: https://github.com/ROBOTIS-GIT/DynamixelSDK
-[https://github.com/ROBOTIS-GIT/face_detection]: https://github.com/ROBOTIS-GIT/face_detection
-[https://github.com/ROBOTIS-GIT/ROBOTIS-Framework]: https://github.com/ROBOTIS-GIT/ROBOTIS-Framework
-[https://github.com/ROBOTIS-GIT/ROBOTIS-Framework-msgs]: https://github.com/ROBOTIS-GIT/ROBOTIS-Framework-msgs
-[https://github.com/ROBOTIS-GIT/ROBOTIS-Math]: https://github.com/ROBOTIS-GIT/ROBOTIS-Math
-[https://github.com/ROBOTIS-GIT/ROBOTIS-OP3]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3
-[https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Common]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Common
-[https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Demo]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Demo
-[https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-msgs]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-msgs
-[https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Tools]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Tools
-[https://github.com/ROBOTIS-GIT/ROBOTIS-Utility]: https://github.com/ROBOTIS-GIT/ROBOTIS-Utility
 
 [http://www.chiark.greenend.org.uk/~sgtatham/putty/]: http://www.chiark.greenend.org.uk/~sgtatham/putty/
 [http://www.realvnc.com/]: http://www.realvnc.com/
 [http://en.robotis.com/index/service_04.php?tab=4]: http://en.robotis.com/index/service_04.php?tab=4
 [http://support.robotis.com]: http://support.robotis.com
+
+[https://github.com/ROBOTIS-GIT/DynamixelSDK `branch:jazzy`]: https://github.com/ROBOTIS-GIT/DynamixelSDK/tree/jazzy
+[https://github.com/ROBOTIS-GIT/ROBOTIS-Framework `branch:jazzy-devel`]: https://github.com/ROBOTIS-GIT/ROBOTIS-Framework/tree/jazzy-devel
+[https://github.com/ROBOTIS-GIT/ROBOTIS-Framework-msgs `branch:jazzy-devel`]: https://github.com/ROBOTIS-GIT/ROBOTIS-Framework-msgs/tree/jazzy-devel
+[https://github.com/ROBOTIS-GIT/ROBOTIS-Math `branch:jazzy-devel`]: https://github.com/ROBOTIS-GIT/ROBOTIS-Math/tree/jazzy-devel
+[https://github.com/ROBOTIS-GIT/ROBOTIS-OP3 `branch:jazzy-devel`]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3/tree/jazzy-devel
+[https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Common `branch:jazzy-devel`]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Common/tree/jazzy-devel
+[https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Demo `branch:jazzy-devel`]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Demo/tree/jazzy-devel
+[https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-ETC `branch:jazzy-devel`]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-ETC/tree/jazzy-devel
+[https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-msgs `branch:jazzy-devel`]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-msgs/tree/jazzy-devel
+[https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Tools `branch:jazzy-devel`]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Tools/tree/jazzy-devel
+[https://github.com/ROBOTIS-GIT/ROBOTIS-Utility `branch:jazzy-devel`]: https://github.com/ROBOTIS-GIT/ROBOTIS-Utility/tree/jazzy-devel
+
+[https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-ETC (usb_cam)]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-ETC/tree/jazzy-devel/usb_cam
+[https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-ETC (face_detection)]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-ETC/tree/jazzy-devel/face_detection
 
 </section>
 

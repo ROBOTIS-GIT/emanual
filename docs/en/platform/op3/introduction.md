@@ -131,7 +131,7 @@ Check your ROBOTIS OP3 package for the following items.
 | No | Item                                     | Quantity |
 |:---|:-----------------------------------------|:--------:|
 | 1  | Fully-assembled ROBOTIS OP3 robot        |    1     |
-| 2  | Battery Pack                             |    3     |
+| 2  | Battery Pack                             |    2     |
 | 3  | Battery Charger                          |    1     |
 | 4  | DC Power Supply                          |    1     |
 | 5  | Power Cable                              |    1     |

@@ -43,7 +43,7 @@ The `op3_manager` cooperates with other programs such as `op3_demo` and `op3_gui
 #### Stop the Linux service that run default demo
 ROBOTIS-OP3 runs default demo automatically. If you would run `op3_bringup` demo, you have to stop the default demo service.  
 
-```
+```bash
 $ sudo systemctl stop op3_demo.service
 [sudo] password for robotis: 111111
 ```
@@ -51,7 +51,7 @@ $ sudo systemctl stop op3_demo.service
 #### Bringup
 Type below commands in the terminal window.  
 
-```
+```bash
 $ ros2 launch op3_bringup op3_bringup.launch.py  
 ```
 
@@ -81,7 +81,7 @@ When `op3_bringup` runs, robot moves to initial posture.
 
 4. If user turn off the program, press `ctrl+c` in terminal window.
 
-#### `op3_bringup.launch`
+#### op3_bringup.launch.py
 ```py
 import launch
 from launch import LaunchDescription
@@ -108,7 +108,10 @@ def generate_launch_description():
       'image_height': 720,
       'framerate': 30.0,
       'camera_frame_id': 'cam_link',
-      'camera_name': 'camera'
+      'camera_name': 'camera',
+      'io_method': 'mmap',
+      'pixel_format': 'mjpeg2rgb',
+      'av_device_format': 'YUV422P',
     }],
     remappings=[('/image_raw', '/usb_cam_node/image_raw')]
   )
@@ -119,16 +122,16 @@ def generate_launch_description():
   ])
 ```  
 
-- op3_manager : framework to control of ROBOTIS-OP3
+- `op3_manager` : framework to control of ROBOTIS-OP3
   - Robot file : `op3_manager/config/OP3.robot`   
   - Joint initialize file : `op3_manager/config/dxl_init_OP3.yaml`  
   - Offset file : `op3_manager/config/offset.yaml`  
-- usb_cam : package for usb camera of ROBOTIS-OP3    
+- `usb_cam` : package for usb camera of ROBOTIS-OP3    
 
 ### Visualization
 Type below commands in the terminal window for visualization.   
 
-```
+```bash
 $ ros2 launch op3_bringup op3_bringup_visualization.launch.py  
 ```  
 - rviz2 screen  
@@ -153,8 +156,7 @@ def generate_launch_description():
   op3_urdf_path = PathJoinSubstitution([op3_description_path, 'urdf', 'robotis_op3.urdf.xacro'])
   op3_description_content = ParameterValue(Command(['xacro ', op3_urdf_path]), value_type=str)
 
-  op3_bringup_path = FindPackageShare('op3_bringup')
-  default_rviz_config_path = PathJoinSubstitution([op3_bringup_path, 'rviz', 'op3_bringup.rviz'])
+  default_rviz_config_path = PathJoinSubstitution([op3_description_path, 'rviz', 'op3.rviz'])
 
   # Launch description 
   # joint_state_publisher 
@@ -193,9 +195,9 @@ def generate_launch_description():
   return ld
 ```
 
-- joint_state_publisher_gui : visualization of joint value of ROBOTIS-OP3
-- robot_state_publisher : making TF message for robot model
-- rviz2 : visualization tool
+- `joint_state_publisher_gui` : visualization of joint value of ROBOTIS-OP3
+- `robot_state_publisher` : making TF message for robot model
+- `rviz2` : visualization tool
 
 ### Description
 This section explains configuration files used in `op3_manager`(within `op3_bringup.launch.py`).  
@@ -255,12 +257,12 @@ Set initialization values for properties of DYNAMIXEL or sensor.
   r_sho_pitch :   # XM-430
      return_delay_time        : 1    # item name : value
      min_position_limit       : 0
-     max_position_limit       : 4,095
+     max_position_limit       : 4095
 
   r_sho_pitch :   # XM-430
      return_delay_time        : 1    # item name : value
      min_position_limit       : 0
-     max_position_limit       : 4,095
+     max_position_limit       : 4095
 
   ...
   ```
@@ -277,27 +279,6 @@ Offset file contains offset angles of each joint(radian) to correct distortion a
 
   ```yaml
   offset:
-    head_pan: 0
-    head_tilt: 0
-    l_ank_pitch: 0
-    l_ank_roll: 0
-    l_el: 0
-    l_hip_pitch: 0
-    l_hip_roll: 0
-    l_hip_yaw: 0
-    l_knee: 0
-    l_sho_pitch: 0
-    l_sho_roll: 0
-    r_ank_pitch: 0
-    r_ank_roll: 0
-    r_el: 0
-    r_hip_pitch: 0
-    r_hip_roll: 0
-    r_hip_yaw: 0
-    r_knee: 0
-    r_sho_pitch: 0
-    r_sho_roll: 0
-  init_pose_for_offset_tuner:
     head_pan: 0
     head_tilt: 0
     l_ank_pitch: 0
@@ -386,7 +367,7 @@ From the left, each button is assigned for Mode, Start, User and Reset.
   (ROBOTIS-OP3 will announce "Vision processing mode" and green LED in the back will be lit.)  
   When the demo begins, ROBOTIS-OP3 will announce "Start vision processing demonstration" and stand up to search for a face.  
   If a face is detected, RGB-LED on the chest and back turns into white color and OP3's head will follow the detected face.  
-    > Reference : [Face Tracker - ROS Package]
+    > Reference : [Face Tracker - `branch:jazzy-devel`]
 
 2. Return to Demonstration Ready Mode  
   Pressing and holding the mode button for 3 seconds will make ROBOTIS-OP3 to take the initial posture and return to Demonstration ready mode.  
@@ -491,10 +472,9 @@ Basic demo uses saved walking parameters.
 ##### Setting Module
 Activate `walking_module` on the lower body part of ROBOTIS-OP3 for walking test.   
 Confirm that the joints used for walking are set as `walking_module`, then move to `Walking` tab.  
-(When the walking module is activated, ROBOTIS-OP3 will take the initial posture for walking.)    
-
 ![](/assets/images/platform/op3/op3_gui_walking_tuner_01_ros2.png)
 
+When the walking module is activated, ROBOTIS-OP3 will take the initial posture for walking.  
 ![](/assets/images/platform/op3/op3_gui_walking_tuner_02.png)
 
 ##### Start / Stop Walking  
@@ -542,20 +522,18 @@ Operator can get different camera view angle by controlling head joints.
 > Reference : [op3_head_control_module]
 
 #### Head Joint Control  
-##### Setting the Module : Click `head_control_module` button  
 
-##### Select `Head Control` tab of the gui demo program.  
+1. Setting the Module : Click `head_control_module` button  
+2. Select `Head Control` tab of the gui demo program.  
+  ![](/assets/images/platform/op3/op3_gui_control_head_01_ros2.png)
 
-![](/assets/images/platform/op3/op3_gui_control_head_01_ros2.png)
-
-##### Change the value for the specific joint.  
-1. Use the slide bar to control the head joint.  
-2. Enter desired values in the text box to control the head joint.  
-3. Bring the head joint to center position.  
-
-  ![](/assets/images/platform/op3/op3_gui_control_head_02_ros2.png)
-
-  ![](/assets/images/platform/op3/op3_gui_control_head_03.png)
+3. Change the value for the specific joint.  
+   1. Use the slide bar to control the head joint.  
+   2. Enter desired values in the text box to control the head joint.  
+   3. Bring the head joint to center position.  
+   
+    ![](/assets/images/platform/op3/op3_gui_control_head_02_ros2.png)  
+    ![](/assets/images/platform/op3/op3_gui_control_head_03.png)  
   
   
 ## [How to use offset tuner](#how-to-use-offset-tuner)
@@ -593,7 +571,7 @@ In the past, we were able to adjust the offset by using op3_offset_server and op
 Tuner is consisted of op3_manager and client program so that other PC in the same ROS network can tune offsets and gains.  
 
 Execute the `op3_manager` first.  
-(Other programs such as op3_action_editor` and `op3_walking_tuner` should be terminated to run the `op3_manager`).  
+(Other programs such as `op3_action_editor` and `op3_walking_tuner` should be terminated to run the `op3_manager`).  
 
 ```
 $ ros2 launch op3_manager op3_manager.launch.py  
@@ -671,8 +649,8 @@ $ ros2 launch op3_tuner_client op3_tuner.launch.xml
 (If you want to tune other joint, delete topics and add topics that you want to tune)    
 5. Click the `Save Gain` button for saving to file.  
 
-  > Reference : Order of the joint name in the topic(`/robotis/goal_joint_states`)
-  
+  > Reference : Order of the joint name in the topic(`/robotis/goal_joint_states`)    
+
   ```
   0 : haed_pan  
   1 : haed_tilt  
@@ -696,8 +674,8 @@ $ ros2 launch op3_tuner_client op3_tuner.launch.xml
   19 : r_sho_roll   
   ```
   
-  > If you want to check in your hand, type like the belows
-  
+  > If you want to check in your hand, type like the belows    
+
   ```
   $ rostopic echo /robotis/goal_joint_states -n 1
   ```
@@ -739,7 +717,7 @@ $ ros2 run op3_action_editor executor.py
 - **Next**: Next indicates whether to continue action on a different page. To continue actions, just list the page number where the action is to be continued. Number 0 indicates that action does not continue onto another page (default value). Linking page does not have to have the numerical order.  
 - **Play Count**: Play Count is the number of times the action of the page is to be played.  
 - **Exit**: There might be some cases when an action has to be stopped. In these cases, the robot may be in unstable position. Exit is much like "Next", so "Exit" should be linked to a page where ROBOTIS-OP3 can return to a stable pose. If "Exit" is 0, it means that there is no linked exit page (default value).  
-  `Tip`: When calling an action requires multiple pages, ROBOTIS strongly suggests user to call the action from the starting page. For example, clap starts at page 7 and ends at page 8. This means you should call page 7 when calling clap. Calling the page 8 may cause unexpected behavior of the robot.  
+  `Tip` : When calling an action requires multiple pages, ROBOTIS strongly suggests user to call the action from the starting page. For example, clap starts at page 7 and ends at page 8. This means you should call page 7 when calling clap. Calling the page 8 may cause unexpected behavior of the robot.  
 - **STP7**: "STP7" column is the current position of DYNAMIXEL which converted to 4,095 resolution from its original resolution. "----" means that torque has been released.  
 - **PauseTime**: "PauseTime" is the pause duration period for motion playback for step STP[x].  
 - **Time(x 8msec)** : "Time" is the time period for ROBOTIS-OP3 to complete step STP[x]. Each time unit account for 8ms of time.  
@@ -750,26 +728,35 @@ It is strongly advised that when user tests user's own newly-created or edited a
 #### The Contents of The Default Action File
 The below table shows the contents of the default action file.  
 
-| page number | page title | brief description of page                             | number of pages |
-|:-----------:|:-----------|:------------------------------------------------------|:---------------:|
-|      1      | walki_init | initial standing pose                                 |        1        |
-|      2      | hello      | greeting                                              |        1        |
-|      3      | thank_you  | Thank you                                             |        1        |
-|      4      | yes        | yes                                                   |        1        |
-|      5      | no         | no                                                    |        1        |
-|      6      | fighting   | fighting                                              |        1        |
-|      7      | clap       | clap                                                  |        2        |
-|      9      | S_H_RE     | ready for shaking hands                               |        1        |
-|     10      | S_H        | shaking hands                                         |        1        |
-|     11      | S_H_END    | move to initialpose fram ready pose for shaking hands |        1        |
-|     12      | scanning   | looking around                                        |        1        |
-|     13      | ceremony   | ceremony                                              |        1        |
+| page number | page title    | brief description of page                             | number of pages |
+|:-----------:|:--------------|:------------------------------------------------------|:---------------:|
+|      1      | standup       | Standing-up                                           |        1        |
+|      4      | thankyou      | Thank you                                             |        1        |
+|      9      | walkready     | Walking-ready                                         |        1        |
+|     15      | sit down      | Sitting-down                                          |        1        |
+|     23      | yes go        | Yes Go                                                |        1        |
+|     24      | wow1          | Wow                                                   |        2        |
+|     27      | oops          | Oops                                                  |        1        |
+|     38      | bye1          | Bye                                                   |        2        |
+|     41      | talk2         | Introduction                                          |        7        |
+|     54      | clapplz1      | Clap please                                           |        2        |
+|     60      | keep_re       | Keeper Ready                                          |        1        |
+|     61      | keep_r        | Defence to Right                                      |        1        |
+|     62      | keep_l        | Defence to Left                                       |        1        |
+|     80      | walk_ready    | Soccer Init pose                                      |        1        |
+|    120      | l_kick_170519 | Soccer Left Kick                                      |        1        |
+|    121      | r_kick_170519 | Soccer Right Kick                                     |        1        |
+|    122      | f_get_up      | Get up (Front)                                        |        1        |
+|    123      | b_get_up      | Get up (Back)                                         |        1        |
+|    126      | push up       | Push-up                                               |        4        |
+|    202      | b_getup_dumb  | Roll back                                             |        1        |
+|    204      | see_right_up  | Look                                                  |        1        |
 
 
 #### Basic Command of Action Editor
 After typing "help", the commend list will appear as shown below.  
 
-![](/assets/images/platform/op3/thormang3_action_editor_tui_command_list.jpg)
+![](/assets/images/platform/op3/op3_action_editor_command_list.png)
 
 - **exit**: exits the program.  
 - **re**: refreshes the screen.  
@@ -782,11 +769,19 @@ After typing "help", the commend list will appear as shown below.
 - **set [value]**: sets position value on chosen actuator. For example If you want ID19 (head pan) to have a value of 512 then using the keyboard's directional keys place the cursor on ID19 and type set 512.  
 - **save**: saves any changes you've made. the saved motion file (motion_4096.bin can be found at "op3_action_module/data")  
 - **play**: plays motion(s) of current page.  
+- **playboth [index]**: plays motion(s) of current page with [index] mp3.
+- **g [index]**: plays motion of STP[index].
 - **name**: changes the name of the current page. You can view the name of the page at the top right portion of the screen. For example, page 2 is titled hello; to change the name type name and press the "ENTER" key. "name:" will appear at the bottom of the screen. Input the desired name for the page, good for instance, and press the "ENTER" key again.  
+- **time**: change time base playing.
+- **speed**: change speed base playing.
+- **w [index]**: overwrites the data of STP[index] with the data of STP7(current pose).
 - **i**: inserts data from STP7 to STP0. Moves data from STP[x] to STP[x + 1] if any.  
 - **i [index]**: inserts data from STP7 to STP[index]. Moves data from STP[index] to STP[index + 1] if any.  
 - **m [index] [index2]**: moves data from [index2] to [index].  
 - **d [index]**: deletes data from STP[index]. Moves data from STP[index] to STP[index - 1].  
+- **mlr [index]**: mirrors the left-side values of STP[index] to the right-side values.
+- **mrl [index]**: mirrors the right-side values of STP[index] to the left-side values.
+- **ms [index]**: swaps the left and right values of STP[index].
 - **on/off**: turns on/off torque from all DYNAMIXEL.  
 - **on/off [index1] [index2] [index3] ...** : turns torque on/off from ID[index1] ID[index2] ID[index3]. For example off 20 releases torque from ID20. Notice that STP7 for ID20 will read [----]. Typing on 20 turns torque from ID20 on again and the screen outputs the current position data of ID20.  
 
@@ -794,15 +789,15 @@ After typing "help", the commend list will appear as shown below.
 
 #### Example Action editing with op3_action_editor
 1. Run the op3_action_editor  
-2. Find the page where the "walking_init page" is by typing "list"  
+2. Type `list` to find where the `walking_ready` page is located.  
 
-    ![](/assets/images/platform/op3/thormang3_action_editor_tui_action_editing_example1.jpg)
+    ![](/assets/images/platform/op3/op3_action_editor_list.png)
 
-3. Exit the list and go to any blank page by typing "page [x]"(for example, page 15).
+3. Exit the list and go to any blank page by typing `page [x]` (for example, page 12).
 
-    ![](/assets/images/platform/op3/thormang3_action_editor_tui_action_editing_example2.jpg)
+    ![](/assets/images/platform/op3/op3_action_editor_example2.png)
 
-4. And copy the page 1 to page [x].  
+4. And copy the page 1 to
 
     ![](/assets/images/platform/op3/thormang3_action_editor_tui_action_editing_example3.jpg)
 
@@ -911,8 +906,8 @@ $ ros2 launch op3_demo demo.launch.xml
   This chapter explains how to set the parameters of ROBOTIS-OP3 through a web page.
 
   > Reference : [ROBOT WEB TOOL]  
-  > Reference : [web_video_server]   
-  > Reference : [rosbridge_server]  
+  > Reference : [web_video_server - ros2]   
+  > Reference : [rosbridge_suite - ros2]  
 
 
 ### Getting started  
@@ -1001,7 +996,7 @@ Connect to ROBOTIS-OP3 WiFi with below information
   - min circle distance: Minimum distance between circles  
   - hough accum threshold: Accumulator threshold to decide center detection  
   - min radius: Minimum circle radius allowed, pixels. (if unknown, set to 0 as a default.)  
-  - max radius: Maximum circle radius allowed, pixels. (if unknown, set to 0 as a default.)
+  - max radius: Maximum circle radius allowed, pixels. (if unknown, set to 0 as a default.)  
   - ellipse size: Ellipse size    
   - Hue min: Minimum threshold of H filter  
   - Hue max: Maximum threshold of H filter  
@@ -1157,18 +1152,18 @@ $ ros2 launch op3_read_write_demo op3_read_write.launch.xml
    - `reset` button : torque off all joints  
 
 #### Source Code  
-- [read_write.cpp]  
+- [read_write.cpp `branch:jazzy-devel`]  
 
   ```cpp
-  #include <ros/ros.h>
-  #include <std_msgs/String.h>
-  #include <sensor_msgs/JointState.h>
+  #include <rclcpp/rclcpp.hpp>
+  #include <std_msgs/msg/string.hpp>
+  #include <sensor_msgs/msg/joint_state.hpp>
 
-  #include "robotis_controller_msgs/SetModule.h"
-  #include "robotis_controller_msgs/SyncWriteItem.h"
+  #include "robotis_controller_msgs/srv/set_module.hpp"
+  #include "robotis_controller_msgs/msg/sync_write_item.hpp"
 
-  void buttonHandlerCallback(const std_msgs::String::ConstPtr& msg);
-  void jointstatesCallback(const sensor_msgs::JointState::ConstPtr& msg);
+  void buttonHandlerCallback(const std_msgs::msg::String::SharedPtr msg);
+  void jointstatesCallback(const sensor_msgs::msg::JointState::SharedPtr msg);
   void readyToDemo();
   void setModule(const std::string& module_name);
   void goInitPose();
@@ -1187,90 +1182,90 @@ $ ros2 launch op3_read_write_demo op3_read_write.launch.xml
   const int SPIN_RATE = 30;
   const bool DEBUG_PRINT = false;
 
-  ros::Publisher init_pose_pub;
-  ros::Publisher sync_write_pub;
-  ros::Publisher dxl_torque_pub;
-  ros::Publisher write_joint_pub;
-  ros::Publisher write_joint_pub2;
-  ros::Subscriber buttuon_sub;
-  ros::Subscriber read_joint_sub;
+  rclcpp::Publisher<std_msgs::msg::String>::SharedPtr init_pose_pub;
+  rclcpp::Publisher<robotis_controller_msgs::msg::SyncWriteItem>::SharedPtr sync_write_pub;
+  rclcpp::Publisher<std_msgs::msg::String>::SharedPtr dxl_torque_pub;
+  rclcpp::Publisher<sensor_msgs::msg::JointState>::SharedPtr write_joint_pub;
+  rclcpp::Publisher<sensor_msgs::msg::JointState>::SharedPtr write_joint_pub2;
+  rclcpp::Subscription<std_msgs::msg::String>::SharedPtr button_sub;
+  rclcpp::Subscription<sensor_msgs::msg::JointState>::SharedPtr read_joint_sub;
 
-  ros::ServiceClient set_joint_module_client;
+  rclcpp::Client<robotis_controller_msgs::srv::SetModule>::SharedPtr set_joint_module_client;
 
   int control_module = None;
   bool demo_ready = false;
+
+  rclcpp::Node::SharedPtr node;
 
   //node main
   int main(int argc, char **argv)
   {
     //init ros
-    ros::init(argc, argv, "read_write");
+    rclcpp::init(argc, argv);
 
-    ros::NodeHandle nh(ros::this_node::getName());
+    node = rclcpp::Node::make_shared("read_write_demo");
 
-    init_pose_pub = nh.advertise<std_msgs::String>("/robotis/base/ini_pose", 0);
-    sync_write_pub = nh.advertise<robotis_controller_msgs::SyncWriteItem>("/robotis/sync_write_item", 0);
-    dxl_torque_pub = nh.advertise<std_msgs::String>("/robotis/dxl_torque", 0);
-    write_joint_pub = nh.advertise<sensor_msgs::JointState>("/robotis/set_joint_states", 0);
-    write_joint_pub2 = nh.advertise<sensor_msgs::JointState>("/robotis/direct_control/set_joint_states", 0);
+    init_pose_pub = node->create_publisher<std_msgs::msg::String>("/robotis/base/ini_pose", 5);
+    sync_write_pub = node->create_publisher<robotis_controller_msgs::msg::SyncWriteItem>("/robotis/sync_write_item", 10);
+    dxl_torque_pub = node->create_publisher<std_msgs::msg::String>("/robotis/dxl_torque", 10);
+    write_joint_pub = node->create_publisher<sensor_msgs::msg::JointState>("/robotis/set_joint_states", 10);
+    write_joint_pub2 = node->create_publisher<sensor_msgs::msg::JointState>("/robotis/direct_control/set_joint_states", 10);
 
-    read_joint_sub = nh.subscribe("/robotis/present_joint_states", 1, jointstatesCallback);
-    buttuon_sub = nh.subscribe("/robotis/open_cr/button", 1, buttonHandlerCallback);
+    read_joint_sub = node->create_subscription<sensor_msgs::msg::JointState>("/robotis/present_joint_states", 10, jointstatesCallback);
+    button_sub = node->create_subscription<std_msgs::msg::String>("/robotis/open_cr/button", 10, buttonHandlerCallback);
 
     // service
-    set_joint_module_client = nh.serviceClient<robotis_controller_msgs::SetModule>("/robotis/set_present_ctrl_modules");
+    set_joint_module_client = node->create_client<robotis_controller_msgs::srv::SetModule>("/robotis/set_present_ctrl_modules");
 
-    ros::start();
-
-    //set node loop rate
-    ros::Rate loop_rate(SPIN_RATE);
+    rclcpp::Rate loop_rate(SPIN_RATE);
 
     // wait for starting of op3_manager
     std::string manager_name = "/op3_manager";
-    while (ros::ok())
+    while (rclcpp::ok())
     {
-      ros::Duration(1.0).sleep();
+      rclcpp::sleep_for(std::chrono::seconds(1));
 
       if (checkManagerRunning(manager_name) == true)
       {
+        RCLCPP_INFO(node->get_logger(), "Succeed to connect");
         break;
-        ROS_INFO_COND(DEBUG_PRINT, "Succeed to connect");
       }
-      ROS_WARN("Waiting for op3 manager");
+      RCLCPP_WARN(node->get_logger(), "Waiting for op3 manager");
     }
 
     readyToDemo();
 
     //node loop
-    while (ros::ok())
+    while (rclcpp::ok())
     {
       // process
 
       //execute pending callbacks
-      ros::spinOnce();
+      rclcpp::spin_some(node);
 
       //relax to fit output rate
       loop_rate.sleep();
     }
 
     //exit program
+    rclcpp::shutdown();
     return 0;
   }
 
-  void buttonHandlerCallback(const std_msgs::String::ConstPtr& msg)
+  void buttonHandlerCallback(const std_msgs::msg::String::SharedPtr msg)
   {
     // starting demo using robotis_controller
     if (msg->data == "mode")
     {
       control_module = Framework;
-      ROS_INFO("Button : mode | Framework");
+      RCLCPP_INFO(node->get_logger(), "Button : mode | Framework");
       readyToDemo();
     }
     // starting demo using direct_control_module
     else if (msg->data == "start")
     {
       control_module = DirectControlModule;
-      ROS_INFO("Button : start | Direct control module");
+      RCLCPP_INFO(node->get_logger(), "Button : start | Direct control module");
       readyToDemo();
     }
     // torque on all joints of ROBOTIS-OP3
@@ -1281,12 +1276,12 @@ $ ros2 launch op3_read_write_demo op3_read_write.launch.xml
     }
   }
 
-  void jointstatesCallback(const sensor_msgs::JointState::ConstPtr& msg)
+  void jointstatesCallback(const sensor_msgs::msg::JointState::SharedPtr msg)
   {
     if(control_module == None)
       return;
 
-    sensor_msgs::JointState write_msg;
+    sensor_msgs::msg::JointState write_msg;
     write_msg.header = msg->header;
 
     for(int ix = 0; ix < msg->name.size(); ix++)
@@ -1320,26 +1315,26 @@ $ ros2 launch op3_read_write_demo op3_read_write.launch.xml
 
     // publish a message to set the joint angles
     if(control_module == Framework)
-      write_joint_pub.publish(write_msg);
+      write_joint_pub->publish(write_msg);
     else if(control_module == DirectControlModule)
-      write_joint_pub2.publish(write_msg);
+      write_joint_pub2->publish(write_msg);
   }
 
   void readyToDemo()
   {
-    ROS_INFO("Start Read-Write Demo");
+    RCLCPP_INFO(node->get_logger(), "Start Read-Write Demo");
     // turn off LED
     setLED(0x04);
 
     torqueOnAll();
-    ROS_INFO("Torque on All joints");
+    RCLCPP_INFO(node->get_logger(), "Torque on All joints");
 
     // send message for going init posture
     goInitPose();
-    ROS_INFO("Go Init pose");
+    RCLCPP_INFO(node->get_logger(), "Go Init pose");
 
     // wait while ROBOTIS-OP3 goes to the init posture.
-    ros::Duration(4.0).sleep();
+    rclcpp::sleep_for(std::chrono::seconds(4));
 
     // turn on R/G/B LED [0x01 | 0x02 | 0x04]
     setLED(control_module);
@@ -1348,79 +1343,85 @@ $ ros2 launch op3_read_write_demo op3_read_write.launch.xml
     if(control_module == Framework)
     {
       setModule("none");
-      ROS_INFO("Change module to none");
+      RCLCPP_INFO(node->get_logger(), "Change module to none");
     }
     else if(control_module == DirectControlModule)
     {
       setModule("direct_control_module");
-      ROS_INFO("Change module to direct_control_module");
+      RCLCPP_INFO(node->get_logger(), "Change module to direct_control_module");
     }
     else
+    {
+      RCLCPP_ERROR(node->get_logger(), "Invalid control module : %d", control_module);
       return;
+    }
 
     // torque off : right arm
     torqueOff("right");
-    ROS_INFO("Torque off");
+    RCLCPP_INFO(node->get_logger(), "Torque off");
   }
 
   void goInitPose()
   {
-    std_msgs::String init_msg;
+    std_msgs::msg::String init_msg;
     init_msg.data = "ini_pose";
 
-    init_pose_pub.publish(init_msg);
+    init_pose_pub->publish(init_msg);
   }
 
   void setLED(int led)
   {
-    robotis_controller_msgs::SyncWriteItem syncwrite_msg;
+    robotis_controller_msgs::msg::SyncWriteItem syncwrite_msg;
     syncwrite_msg.item_name = "LED";
     syncwrite_msg.joint_name.push_back("open-cr");
     syncwrite_msg.value.push_back(led);
 
-    sync_write_pub.publish(syncwrite_msg);
+    sync_write_pub->publish(syncwrite_msg);
   }
 
   bool checkManagerRunning(std::string& manager_name)
   {
-    std::vector<std::string> node_list;
-    ros::master::getNodes(node_list);
+    auto node_list = node->get_node_names();
 
-    for (unsigned int node_list_idx = 0; node_list_idx < node_list.size(); node_list_idx++)
+    for (const auto& node_name : node_list)
     {
-      if (node_list[node_list_idx] == manager_name)
+      if (node_name == manager_name)
         return true;
     }
 
-    ROS_ERROR("Can't find op3_manager");
+    RCLCPP_ERROR(node->get_logger(), "Can't find op3_manager");
     return false;
   }
 
   void setModule(const std::string& module_name)
   {
-    robotis_controller_msgs::SetModule set_module_srv;
-    set_module_srv.request.module_name = module_name;
+    auto request = std::make_shared<robotis_controller_msgs::srv::SetModule::Request>();
+    request->module_name = module_name;
 
-    if (set_joint_module_client.call(set_module_srv) == false)
+    if (!set_joint_module_client->wait_for_service(std::chrono::seconds(1)))
     {
-      ROS_ERROR("Failed to set module");
+      RCLCPP_ERROR(node->get_logger(), "Service not available");
       return;
     }
 
-    return ;
+    auto future = set_joint_module_client->async_send_request(request,
+        [module_name](rclcpp::Client<robotis_controller_msgs::srv::SetModule>::SharedFuture result)
+        {
+          RCLCPP_INFO(node->get_logger(), "read_write setModule(%s) : result : %d", module_name.c_str(), result.get()->result);
+        });
   }
 
   void torqueOnAll()
   {
-    std_msgs::String check_msg;
+    std_msgs::msg::String check_msg;
     check_msg.data = "check";
 
-    dxl_torque_pub.publish(check_msg);
+    dxl_torque_pub->publish(check_msg);
   }
 
   void torqueOff(const std::string& body_side)
   {
-    robotis_controller_msgs::SyncWriteItem syncwrite_msg;
+    robotis_controller_msgs::msg::SyncWriteItem syncwrite_msg;
     int torque_value = 0;
     syncwrite_msg.item_name = "torque_enable";
 
@@ -1445,7 +1446,7 @@ $ ros2 launch op3_read_write_demo op3_read_write.launch.xml
     else
       return;
 
-    sync_write_pub.publish(syncwrite_msg);
+    sync_write_pub->publish(syncwrite_msg);
   }
   ```
 
@@ -1598,14 +1599,13 @@ $ ros2 launch op3_read_write_demo op3_read_write.launch.xml
 [humanoid_navigation]: /docs/en/platform/common/humanoid_navigation/#humanoid-navigation
 [How to run op3_manager]: /docs/en/platform/op3/robotis_ros_packages/#op3-manager
 
-[op3_navigation]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Tools/tree/master/op3_navigation
-[Face Tracker - ROS Package]: https://github.com/ROBOTIS-GIT/face_detection
-[ROBOT WEB TOOL]: http://robotwebtools.org/
-[web_video_server]: http://wiki.ros.org/rosbridge_server  
-[rosbridge_server]: http://wiki.ros.org/web_video_server
+[Face Tracker - `branch:jazzy-devel`]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-ETC/tree/jazzy-devel/face_detection
+[ROBOT WEB TOOL]: https://robotwebtools.github.io/
+[web_video_server - ros2]: https://github.com/RobotWebTools/web_video_server  
+[rosbridge_suite - ros2]: https://github.com/RobotWebTools/rosbridge_suite
 [How to connect]: /docs/en/platform/op3/quick_start/#example--ssh-client-for-windows
 [detail of parameter]: /docs/en/platform/op3/tutorials/#how-to-use-ball-detector
-[read_write.cpp]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Demo/blob/master/op3_read_write_demo/src/read_write.cpp
+[read_write.cpp `branch:jazzy-devel`]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Demo/blob/jazzy-devel/op3_read_write_demo/src/read_write.cpp
 
 </section>
 

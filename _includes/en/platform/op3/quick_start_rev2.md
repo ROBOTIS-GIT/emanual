@@ -565,11 +565,11 @@ The calculation will take for 2 seconds and then each bit will be reset to 0.
 [https://github.com/phil333/face_detection]: https://github.com/phil333/face_detection
 [https://github.com/ROBOTIS-GIT/face_detection]: https://github.com/ROBOTIS-GIT/face_detection
 [http://wiki.ros.org/usb_cam]: http://wiki.ros.org/usb_cam
-[ROBOTIS Framework WIKI]: http://emanual.robotis.com/docs/en/software/robotis_framework_packages/
-[ROBOTIS OP3 WIKI]: http://emanual.robotis.com/docs/en/platform/op3/introduction/
-[ROBOTIS OP3 Recovery]: http://emanual.robotis.com/docs/en/platform/op3/recovery/#recovery-of-robotis-op3
-[ROBOTIS OP3 Tutorial]: emanual.robotis.com/docs/en/platform/op3/tutorials
-[ROBOTIS OP3 Camera Setting]: http://emanual.robotis.com/docs/en/platform/op3/tutorials/#camera-setting-parameters
+[ROBOTIS Framework WIKI]: /docs/en/software/robotis_framework_packages/
+[ROBOTIS OP3 WIKI]: /docs/en/platform/op3/introduction/
+[ROBOTIS OP3 Recovery]: /docs/en/platform/op3/recovery/#recovery-of-robotis-op3
+[ROBOTIS OP3 Tutorial]: /docs/en/platform/op3/tutorials/
+[ROBOTIS OP3 Camera Setting]: /docs/en/platform/op3/tutorials/#camera-setting-parameters
 [https://github.com/ROBOTIS-GIT/DynamixelSDK]: https://github.com/ROBOTIS-GIT/DynamixelSDK
 [https://github.com/ROBOTIS-GIT/ROBOTIS-Framework]: https://github.com/ROBOTIS-GIT/ROBOTIS-Framework
 [https://github.com/ROBOTIS-GIT/ROBOTIS-Framework-msgs]: https://github.com/ROBOTIS-GIT/ROBOTIS-Framework-msgs

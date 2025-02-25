@@ -478,28 +478,24 @@ Operator can get different camera view angle by controlling head joints.
 > Reference : [op3_head_control_module]
 
 #### Head Joint Control  
-##### Setting the Module : Click `head_control_module` button  
 
-##### Select `Head Control` tab of the gui demo program.  
+1. Setting the Module : Click `head_control_module` button  
+2. Select `Head Control` tab of the gui demo program.  
+  ![](/assets/images/platform/op3/op3_gui_control_head_01.png)
 
-![](/assets/images/platform/op3/op3_gui_control_head_01.png)
-
-##### Change the value for the specific joint.  
-1. Use the slide bar to control the head joint.  
-2. Enter desired values in the text box to control the head joint.  
-3. Bring the head joint to center position.  
-
-  ![](/assets/images/platform/op3/op3_gui_control_head_02.png)
-
-  ![](/assets/images/platform/op3/op3_gui_control_head_03.png)
+3. Change the value for the specific joint.  
+   1. Use the slide bar to control the head joint.  
+   2. Enter desired values in the text box to control the head joint.  
+   3. Bring the head joint to center position.  
+  ![](/assets/images/platform/op3/op3_gui_control_head_02.png)  
+  ![](/assets/images/platform/op3/op3_gui_control_head_03.png)  
 
 ### [How to control upgraded walking(online walking)](#how-to-control-upgraded-walkingonline-walking)
 
 #### Overview   
 This page explains how to control upgraded walking(online walking).  
 
-> Reference 1 : [Introduction to Humanoid Robotics]
-
+> Reference 1 : [Introduction to Humanoid Robotics]  
 > Reference 2 : [op3_online_walking_module]
 
 #### Description
@@ -566,7 +562,7 @@ In the past, we were able to adjust the offset by using op3_offset_server and op
 Tuner is consisted of op3_manager and client program so that other PC in the same ROS network can tune offsets and gains.  
 
 Execute the `op3_manager` first.  
-(Other programs such as op3_action_editor` and `op3_walking_tuner` should be terminated to run the `op3_manager`).  
+(Other programs such as `op3_action_editor` and `op3_walking_tuner` should be terminated to run the `op3_manager`).  
 
 ```
 $ roslaunch op3_manager op3_manager.launch  
@@ -1646,7 +1642,7 @@ $ roslaunch op3_read_write_demo op3_read_write.launch
 
 [op3_navigation]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Tools/tree/master/op3_navigation
 [Face Tracker - ROS Package]: https://github.com/ROBOTIS-GIT/face_detection
-[ROBOT WEB TOOL]: http://robotwebtools.org/
+[ROBOT WEB TOOL]: https://robotwebtools.github.io/
 [web_video_server]: http://wiki.ros.org/rosbridge_server  
 [rosbridge_server]: http://wiki.ros.org/web_video_server
 [How to connect]: /docs/en/platform/op3/quick_start/#example--ssh-client-for-windows
