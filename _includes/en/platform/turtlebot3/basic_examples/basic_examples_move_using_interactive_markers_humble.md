@@ -26,14 +26,23 @@ These components work together to allow real-time interactive control of the Tur
 
 ### [**Running the Interactive Marker Example**](#running-the-interactive-marker-example)
 
-**1. Bringup**
+**1. Bringup TurtleBot3**
 
-Before running the interactive marker example, you must launch the basic TurtleBot3 bringup to start essential nodes for controlling and monitoring the robot.
+1. Open a new first terminal on the remote PC with `Ctrl` + `Alt` + `T` and connect to the Raspberry Pi via SSH using its IP address.  
+  Enter your `password` of Ubuntu OS in `Raspberry pi` .  
+  **[Remote PC]**  
+  ```bash
+  $ ssh ubuntu@{IP_ADDRESS_OF_RASPBERRY_PI}
+  ```  
 
-**[TurtleBot3 SBC]**
-```bash
-$ ros2 launch turtlebot3_bringup robot.launch.py
-```
+2. Bring up basic packages to start essential TurtleBot3 applications. You will need to specify your specific TurtleBot3 model.  
+**[TurtleBot3 SBC]**  
+  ```bash
+  $ export TURTLEBOT3_MODEL=burger
+  $ ros2 launch turtlebot3_bringup robot.launch.py
+  ```
+
+Wait until the bringup process finishes and the TurtleBot3 is ready before proceeding.  
 
 **2. Start the Interactive Marker Server**
 
