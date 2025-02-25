@@ -28,7 +28,7 @@ page_number: 7
 
 ### [Assembly Manual](#assembly-manual)
 
-TurtleBots3 is delivered as unassembled parts in the boxes. Follow the instructions to assemble TurtleBot3.
+TurtleBots3 is delivered unassembled. Follow the instructions below to assemble the TurtleBot3.
 
 - `Download PDF` [Assembly manual for TurtleBot3 Burger](http://www.robotis.com/service/download.php?no=748)
 - `Download PDF` [Assembly manual for TurtleBot3 Waffle](http://www.robotis.com/service/download.php?no=749)
@@ -36,7 +36,7 @@ TurtleBots3 is delivered as unassembled parts in the boxes. Follow the instructi
 
 ### [Assembly Video](#assembly-video)
 
-If it is difficult to assemble with the assembly manual, please refer to the following assembly video.
+ROBOTIS also provides the following video assembly instructions.
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/rvm-m2ogrLA" frameborder="0" allowfullscreen></iframe>
 

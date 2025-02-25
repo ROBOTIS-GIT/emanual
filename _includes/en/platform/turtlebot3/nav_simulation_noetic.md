@@ -1,14 +1,11 @@
-
-Just like the SLAM in Gazebo simulator, you can select or create various environments and robot models in virtual Navigation world. However, proper map has to be prepared before running the Navigation. Other than preparing simulation environment instead of bringing up the robot, Navigation Simulation is pretty similar to that of [Navigation][navigation].  
-
 ### Launch Simulation World
 
-Terminate all applications with `Ctrl` + `C` that were launced in the previous sections.
+Terminate `Ctrl` + `C` all applications that were launced in the previous sections.
 {: .notice--warning}
 
-In the previous [SLAM][slam] section, TurtleBot3 World is used to creat a map. The same Gazebo environment will be used for Navigation.
+In the previous [SLAM][slam] section, TurtleBot3 World was used to create a map. The same Gazebo environment will be used for Navigation.
 
-Please use the proper keyword among `burger`, `waffle`, `waffle_pi` for the `TURTLEBOT3_MODEL` parameter.  
+Specify your TurtleBot model (`burger`, `waffle`, `waffle_pi`) using the `TURTLEBOT3_MODEL` parameter.
 **[Remote PC]**  
 ```bash
 $ export TURTLEBOT3_MODEL=burger
@@ -28,7 +25,7 @@ $ roslaunch turtlebot3_gazebo turtlebot3_house.launch
 </details>
 
 ### Run Navigation Node 
-Open a new terminal from Remote PC with `Ctrl` + `Alt` + `T` and run the Navigation node.   
+Open a new terminal on the Remote PC with `Ctrl` + `Alt` + `T` and run the Navigation node.   
 **[Remote PC]**  
 ```bash
 $ export TURTLEBOT3_MODEL=burger
@@ -37,13 +34,13 @@ $ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/m
 
 ### [Estimate Initial Pose](#estimate-initial-pose)
 
-**Initial Pose Estimation** must be performed before running the Navigation as this process initializes the AMCL parameters that are critical in Navigation. TurtleBot3 has to be correctly located on the map with the LDS sensor data that neatly overlaps the displayed map.
+**Initial Pose Estimation** must be performed before running Navigation as this process initializes the AMCL parameters that are critical for correct Navigation. TurtleBot3 has to be correctly located on the map with LDS sensor data that neatly overlaps the displayed map.
 
 1. Click the `2D Pose Estimate` button in the RViz menu.  
   ![](/assets/images/platform/turtlebot3/navigation/2d_pose_button.png)
 2. Click on the map where the actual robot is located and drag the large green arrow toward the direction where the robot is facing.
-3. Repeat step 1 and 2 until the LDS sensor data is overlayed on the saved map. 
-4. Launch keyboard teleoperation node to precisely locate the robot on the map.  
+3. Repeat step 1 and 2 until the LDS sensor data is overlaid on the saved map. 
+4. Launch the keyboard teleoperation node to precisely locate the robot on the map.  
 **[Remote PC]**  
   ```bash
 $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
@@ -59,7 +56,7 @@ $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 1. Click the `2D Nav Goal` button in the RViz menu.    
   ![](/assets/images/platform/turtlebot3/navigation/2d_nav_goal_button.png)
 2. Click on the map to set the destination of the robot and drag the green arrow toward the direction where the robot will be facing. 
-  - This green arrow is a marker that can specify the destination of the robot. 
+  - This green arrow is a marker to specify the destination of the robot. 
   - The root of the arrow is `x`, `y` coordinate of the destination, and the angle `θ` is determined by the orientation of the arrow.
   - As soon as x, y, &theta; are set, TurtleBot3 will start moving to the destination immediately.
   ![](/assets/images/platform/turtlebot3/navigation/2d_nav_goal.png)

@@ -1,3 +1,4 @@
+{::options parse_block_html="true" /}
 # Quick Start Guide
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8w3xhG1GPdo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
