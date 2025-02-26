@@ -26,15 +26,21 @@ Position the robot so that traffic signs are clearly visible in the camera feed.
 
 **Capturing and Storing Traffic Sign Images**
 
-To ensure accurate recognition, the system requires pre-captured traffic sign images as reference data.
+To ensure accurate recognition, the system requires pre-captured traffic sign images as reference data. While the repository provides default images, recognition accuracy may vary depending on conditions. If the SIFT algorithm does not perform well with the provided images, capturing and using your own traffic sign images can improve recognition results.
 
-Open `rqt`, then navigate to Plugins > Visualization > Image View. Create a new image view window and select the topic:`/camera/image_compensated` to display the camera image.
+1. Open `rqt`, then navigate to Plugins > Visualization > Image View.
+2. Create a new image view window and select the topic: `/camera/image_compensated` to display the camera feed.
+3. Position the TurtleBot3 so that traffic signs are clearly visible in the camera view.
+4. Capture images of each traffic sign and crop any unnecessary background, focusing only on the sign itself.
+5. For the best performance, use the original traffic signs from the track whenever possible.
 
-Position the TurtleBot3 so that traffic signs are clearly visible in the camera view. Capture images of each traffic sign and crop any unnecessary background to focus only on the sign itself.
-For the best performance, it is recommended to use original traffic sign images used in the track.
+Save the images in the turtlebot3_autorace_detect package **/turtlebot3_autorace/turtlebot3_autorace_detect/image/**.
 
-Save the images in the turtlebot3_autorace_detect package **/turtlebot3_autorace_2020/turtlebot3_autorace_detect/image/**. The file name should match with the name used in the source code.
+Ensure that the file names match those used in the source code, as the system references these names:
 - `construction.png`, `intersection.png`, `left.png`, `right.png`, `parking.png`, `stop.png`, `tunnel.png` file names are used by default.
+
+
+If recognition performance is inconsistent with the default images, manually captured traffic sign images may enhance accuracy and improve overall detection reliability.
 <br><br>
 
 **Running Traffic Sign Detection**

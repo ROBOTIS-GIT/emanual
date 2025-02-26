@@ -65,7 +65,7 @@ Once the best projection settings are found, the calibration data must be saved 
 
 1. Navigate to the directory where the calibration files are stored:
 ```bash
-cd ~/turtlebot3_ws/src/turtlebot3_autorace_2020/turtlebot3_autorace_camera/calibration/extrinsic_calibration/
+cd ~/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace_camera/calibration/extrinsic_calibration/
 ```
 1. Open the relevant YAML file (e.g., `projection.yaml`) in a text editor:
 ```bash
