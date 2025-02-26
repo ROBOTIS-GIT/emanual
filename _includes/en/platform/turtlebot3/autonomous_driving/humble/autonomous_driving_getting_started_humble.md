@@ -23,17 +23,31 @@ The contents in e-Manual are subject to be updated without a prior notice. There
 - ROS 2 Humble installed Laptop or desktop PC.
 - This instruction is based on Gazebo simulation, but can be ported to the actual robot later.
 
-
 ### [Install Autorace Packages](#install-autorace-packages)
 
 1. Install the AutoRace 2020 meta package on `Remote PC`.
 ```bash
-$ cd ~/turtlebot3_ws/src/
-$ git clone -b humble https://github.com/ROBOTIS-GIT/turtlebot3_autorace_2020.git
-$ cd ~/turtlebot3_ws && colcon build --symlink-install
+cd ~/turtlebot3_ws/src/
+git clone -b humble https://github.com/ROBOTIS-GIT/turtlebot3_autorace_2020.git
+cd ~/turtlebot3_ws && colcon build --symlink-install
 ```
 
 2. Install additional dependent packages on `Remote PC`.
 ```bash
-$ sudo apt install ros-humble-image-transport ros-humble-cv-bridge ros-humble-vision-opencv python3-opencv libopencv-dev ros-humble-image-pipeline
+sudo apt install ros-humble-image-transport ros-humble-cv-bridge ros-humble-vision-opencv python3-opencv libopencv-dev ros-humble-image-pipeline
 ```
+
+### [Setting world plugin](#setting-world-plugin)
+
+1. Open the bashrc file.
+```bash
+gedit ~/.bashrc
+```
+
+2. Add export line. Put your workspace name in {your_ws}.
+``` bash
+export GAZEBO_PLUGIN_PATH=$HOME/{your_ws}/build/turtlebot3_gazebo:$GAZEBO_PLUGIN_PATH
+```
+
+3. This plugin allows you to animate dynamic environments in your world. Now you can launch `ros2 launch turtlebot3_gazebo turtlebot3_autorace_2020.launch.py`
+
