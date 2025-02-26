@@ -37,6 +37,6 @@ $ ros2 launch turtlebot3_autorace_camera extrinsic_camera_calibration.launch.py
 $ ros2 launch turtlebot3_autorace_construction mission_construction.launch.py
 ```
 
-6. On the image window, you can watch the tracking visualization. The tracked object's lidar point, object ID, and danger zone are displayed.
+6. On the image window, you can watch the LiDAR visualization. The detected lidar points, and danger zone are displayed.
 
 <img src='/assets/images/platform/turtlebot3/autonomous_driving/humble_construction_image_window.png' width='500'>
