@@ -14,27 +14,27 @@ This section describes how you can pass a traffic light mission. TurtleBot3 reco
 
 1. Open a new terminal and launch Autorace Gazebo simulation.
 ```bash
-ros2 launch turtlebot3_gazebo turtlebot3_autorace_2020.launch.py
+$ ros2 launch turtlebot3_gazebo turtlebot3_autorace_2020.launch.py
 ```
 
 2. Open a new terminal and launch the intrinsic calibration node.
 ```bash
-ros2 launch turtlebot3_autorace_camera intrinsic_camera_calibration.launch.py
+$ ros2 launch turtlebot3_autorace_camera intrinsic_camera_calibration.launch.py
 ```
 
 3. Open a new terminal and launch the extrinsic calibration node.
 ```bash
-ros2 launch turtlebot3_autorace_camera extrinsic_camera_calibration.launch.py
+$ ros2 launch turtlebot3_autorace_camera extrinsic_camera_calibration.launch.py
 ```
 
 4. Open a new terminal and launch the traffic light detection node with a calibration option.
 ```bash
-ros2 launch turtlebot3_autorace_detect detect_traffic_light.launch.py calibration_mode:=True
+$ ros2 launch turtlebot3_autorace_detect detect_traffic_light.launch.py calibration_mode:=True
 ```
 
 5. Execute rqt on `Remote PC`.
 ```bash
-rqt
+$ rqt
 ```
 
 6. Navigate **Plugins** > **Visualization** > **Image view**. Create two image view windows.
@@ -61,7 +61,7 @@ rqt
 
 1. Open the `traffic_light.yaml` file located at ***turtlebot3_autorace_detect/param/traffic_light/***.
 ```bash
-gedit ~/turtlebot3_ws/src/turtlebot3_autorace_2020/turtlebot3_autorace_detect/param/traffic_light/traffic_light.yaml
+$ gedit ~/turtlebot3_ws/src/turtlebot3_autorace_2020/turtlebot3_autorace_detect/param/traffic_light/traffic_light.yaml
 ```
 
       ![](/assets/images/platform/turtlebot3/autonomous_driving/humble_traffic_light_yaml.png)
@@ -75,27 +75,27 @@ gedit ~/turtlebot3_ws/src/turtlebot3_autorace_2020/turtlebot3_autorace_detect/pa
 
 2. Open a new terminal and launch Autorace Gazebo simulation.
 ```bash
-ros2 launch turtlebot3_gazebo turtlebot3_autorace_2020.launch.py
+$ ros2 launch turtlebot3_gazebo turtlebot3_autorace_2020.launch.py
 ```
 
 3. Open a new terminal and launch the intrinsic calibration node.
 ```bash
-ros2 launch turtlebot3_autorace_camera intrinsic_camera_calibration.launch.py
+$ ros2 launch turtlebot3_autorace_camera intrinsic_camera_calibration.launch.py
 ```
 
 4. Open a new terminal and launch the extrinsic calibration node.
 ```bash
-ros2 launch turtlebot3_autorace_camera extrinsic_camera_calibration.launch.py
+$ ros2 launch turtlebot3_autorace_camera extrinsic_camera_calibration.launch.py
 ```
 
 5. Open a new terminal and launch the traffic light detection node.
 ```bash
-ros2 launch turtlebot3_autorace_detect detect_traffic_light.launch.py
+$ ros2 launch turtlebot3_autorace_detect detect_traffic_light.launch.py
 ```
 
 6. Open a new terminal and execute the rqt_image_view.
 ```bash
-rqt
+$ rqt
 ```
 
 7. Check each topics: `/detect/image_red_light`, `/detect/image_yellow_light`, `/detect/image_green_light`.

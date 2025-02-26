@@ -34,14 +34,14 @@ $ cd ~/turtlebot3_ws && colcon build --symlink-install
 
 2. Install additional dependent packages on `Remote PC`.
 ```bash
-sudo apt install ros-humble-image-transport ros-humble-cv-bridge ros-humble-vision-opencv python3-opencv libopencv-dev ros-humble-image-pipeline
+$ sudo apt install ros-humble-image-transport ros-humble-cv-bridge ros-humble-vision-opencv python3-opencv libopencv-dev ros-humble-image-pipeline
 ```
 
 ### [Setting world plugin](#setting-world-plugin)
 
 1. Open the bashrc file.
 ```bash
-gedit ~/.bashrc
+$ gedit ~/.bashrc
 ```
 
 2. Add export line. Put your workspace name in {your_ws}.

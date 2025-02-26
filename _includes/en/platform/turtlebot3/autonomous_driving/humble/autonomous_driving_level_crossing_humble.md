@@ -18,27 +18,27 @@ This section describes how you can detect a traffic bar. TurtleBot should detect
 
 2. Open a new terminal and launch Autorace Gazebo simulation.
 ```bash
-ros2 launch turtlebot3_gazebo turtlebot3_autorace_2020.launch.py
+$ ros2 launch turtlebot3_gazebo turtlebot3_autorace_2020.launch.py
 ```
 
 3. Open a new terminal and launch the intrinsic calibration node.
 ```bash
-ros2 launch turtlebot3_autorace_camera intrinsic_camera_calibration.launch.py
+$ ros2 launch turtlebot3_autorace_camera intrinsic_camera_calibration.launch.py
 ```
 
 4. Open a new terminal and launch the extrinsic calibration node.
 ```bash
-ros2 launch turtlebot3_autorace_camera extrinsic_camera_calibration.launch.py
+$ ros2 launch turtlebot3_autorace_camera extrinsic_camera_calibration.launch.py
 ```
 
 5. Open a new terminal and launch the level crossing detection node with a calibration option.
 ```bash
-ros2 launch turtlebot3_autorace_detect detect_level_crossing.launch.py calibration_mode:=True
+$ ros2 launch turtlebot3_autorace_detect detect_level_crossing.launch.py calibration_mode:=True
 ```
 
 6. Open a new terminal and execute rqt.
 ```bash
-rqt
+$ rqt
 ```
 
 7. Select two topics on Image View Plugin: `/detect/image_level_color_filtered/compressed`, `/detect/image_level/compressed`.
@@ -49,7 +49,7 @@ rqt
 
 9.   Open `level.yaml` file located at ***turtlebot3_autorace_detect/param/level/***.
 ```bash
-gedit ~/turtlebot3_ws/src/turtlebot3_autorace_2020/turtlebot3_autorace_detect/param/level/level.yaml
+$ gedit ~/turtlebot3_ws/src/turtlebot3_autorace_2020/turtlebot3_autorace_detect/param/level/level.yaml
 ```
         ![](/assets/images/platform/turtlebot3/autonomous_driving/humble_level_yaml.png)
 
@@ -61,27 +61,27 @@ gedit ~/turtlebot3_ws/src/turtlebot3_autorace_2020/turtlebot3_autorace_detect/pa
 
 2. Open a new terminal and launch Autorace Gazebo simulation.
 ```bash
-ros2 launch turtlebot3_gazebo turtlebot3_autorace_2020.launch.py
+$ ros2 launch turtlebot3_gazebo turtlebot3_autorace_2020.launch.py
 ```
 
 3. Open a new terminal and launch the intrinsic calibration node.
 ```bash
-ros2 launch turtlebot3_autorace_camera intrinsic_camera_calibration.launch.py
+$ ros2 launch turtlebot3_autorace_camera intrinsic_camera_calibration.launch.py
 ```
 
 4. Open a new terminal and launch the extrinsic calibration node.
 ```bash
-ros2 launch turtlebot3_autorace_camera extrinsic_camera_calibration.launch.py
+$ ros2 launch turtlebot3_autorace_camera extrinsic_camera_calibration.launch.py
 ```
 
 5. Open a new terminal and launch the level crossing detection node.
 ```bash
-ros2 launch turtlebot3_autorace_detect detect_level_crossing.launch.py
+$ ros2 launch turtlebot3_autorace_detect detect_level_crossing.launch.py
 ```
 
 6. Open a new terminal and execute the rqt_image_view.
 ```bash
-rqt
+$ rqt
 ```
 
 7. Check the image topic: `/detect/image_level/compressed` on Image View Plugin.

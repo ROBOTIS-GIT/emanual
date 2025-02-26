@@ -19,22 +19,22 @@ This section describes how you can pass a construction mission. If Turtlebot enc
 
 2. Open a new terminal and launch Autorace Gazebo simulation.
 ```bash
-ros2 launch turtlebot3_gazebo turtlebot3_autorace_2020.launch.py
+$ ros2 launch turtlebot3_gazebo turtlebot3_autorace_2020.launch.py
 ```
 
 3. Open a new terminal and launch the intrinsic calibration node.
 ```bash
-ros2 launch turtlebot3_autorace_camera intrinsic_camera_calibration.launch.py
+$ ros2 launch turtlebot3_autorace_camera intrinsic_camera_calibration.launch.py
 ```
 
 4. Open a new terminal and launch the extrinsic calibration node.
 ```bash
-ros2 launch turtlebot3_autorace_camera extrinsic_camera_calibration.launch.py
+$ ros2 launch turtlebot3_autorace_camera extrinsic_camera_calibration.launch.py
 ```
 
 5. Open a new terminal and launch the construction mission node.
 ```bash
-ros2 launch turtlebot3_autorace_construction mission_construction.launch.py
+$ ros2 launch turtlebot3_autorace_construction mission_construction.launch.py
 ```
 
 6. On the image window, you can watch the tracking visualization. The tracked object's lidar point, object ID, and danger zone are displayed.

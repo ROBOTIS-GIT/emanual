@@ -9,20 +9,20 @@ This section explains how to launch the lane detection system, visualize the det
 
 To begin, start the Gazebo simulation with a pre-defined lane-tracking course:
 ``` bash
-ros2 launch turtlebot3_gazebo turtlebot3_autorace_2020.launch.py
+$ ros2 launch turtlebot3_gazebo turtlebot3_autorace_2020.launch.py
 ```  
 Next, run the camera calibration processes, which ensure that the detected lanes are accurately mapped to the robot’s perspective:
 ``` bash
-ros2 launch turtlebot3_autorace_camera intrinsic_camera_calibration.launch.py
+$ ros2 launch turtlebot3_autorace_camera intrinsic_camera_calibration.launch.py
 ```  
 ``` bash
-ros2 launch turtlebot3_autorace_camera extrinsic_camera_calibration.launch.py
+$ ros2 launch turtlebot3_autorace_camera extrinsic_camera_calibration.launch.py
 ```  
 These steps activate intrinsic and extrinsic calibration to correct any distortions in the camera feed.
 
 Finally, launch the lane detection node in calibration mode to begin detecting lanes:
 ``` bash
-ros2 launch turtlebot3_autorace_camera detect_lane.launch.py calibration_mode:=True
+$ ros2 launch turtlebot3_autorace_camera detect_lane.launch.py calibration_mode:=True
 ```  
 <br>
 
@@ -30,7 +30,7 @@ ros2 launch turtlebot3_autorace_camera detect_lane.launch.py calibration_mode:=T
 
 To inspect the detected lanes, open rqt on `Remote PC`:
 ``` bash
-rqt
+$ rqt
 ```  
 Then navigate to **Plugins** > **Visualization** > **Image View** and open three image viewers to display different lane detection results:
   - `/detect/image_lane/compressed`  
@@ -61,10 +61,10 @@ For better accuracy, tuning detection parameters is necessary. Adjusting these p
 
 Once calibration is complete, restart the lane detection node without the calibration option:
 ```bash
-ros2 launch turtlebot3_autorace_detect detect_lane.launch.py
+$ ros2 launch turtlebot3_autorace_detect detect_lane.launch.py
 ```
 
 Then, launch the lane following control node, which enables TurtleBot3 to automatically follow the detected lanes:
 ```bash
-ros2 launch turtlebot3_autorace_driving control_lane.launch.py
+$ ros2 launch turtlebot3_autorace_driving control_lane.launch.py
 ```
