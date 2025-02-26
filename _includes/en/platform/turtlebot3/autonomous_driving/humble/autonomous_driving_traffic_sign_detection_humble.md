@@ -14,7 +14,7 @@ Please refer to the link below for related information.
 
 Start the Autorace Gazebo simulation to set up the environment:
 ```bash
-ros2 launch turtlebot3_gazebo turtlebot3_autorace.launch
+ros2 launch turtlebot3_gazebo turtlebot3_autorace_2020.launch
 ```
 
 Then, control TurtleBot3 manually using the keyboard to navigate the vehicle toward traffic signs:

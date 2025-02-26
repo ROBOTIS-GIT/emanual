@@ -26,10 +26,10 @@ The contents in e-Manual are subject to be updated without a prior notice. There
 
 ### [Install Autorace Packages](#install-autorace-packages)
 
-1. Install the AutoRace 2020 meta package on `Remote PC`.
+1. Install the AutoRace meta package on `Remote PC`.
 ```bash
 $ cd ~/turtlebot3_ws/src/
-$ git clone -b humble https://github.com/ROBOTIS-GIT/turtlebot3_autorace_2020.git
+$ git clone -b humble https://github.com/ROBOTIS-GIT/turtlebot3_autorace.git
 $ cd ~/turtlebot3_ws && colcon build --symlink-install
 ```
 

@@ -49,7 +49,7 @@ For better accuracy, tuning detection parameters is necessary. Adjusting these p
 
 1. Open **lane.yaml** file located in **turtlebot3_autorace_detect/param/lane/**. You need to write modified values to the file. This will make the camera set its parameters as you set here from next launching. 
     ``` bash
-    $ cd ~/turtlebot3_ws/src/turtlebot3_autorace_2020/turtlebot3_autorace_detect/param/lane
+    $ cd ~/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace_detect/param/lane
     $ gedit lane.yaml
     ```  
     ![](/assets/images/platform/turtlebot3/autonomous_driving/humble_lane_yaml.png)
