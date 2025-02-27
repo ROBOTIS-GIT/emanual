@@ -677,7 +677,7 @@ $ ros2 launch op3_tuner_client op3_tuner.launch.xml
   > If you want to check in your hand, type like the belows    
 
   ```
-  $ rostopic echo /robotis/goal_joint_states -n 1
+  $ ros2 topic echo /robotis/goal_joint_states --once
   ```
 
 ## [How to create the motions](#how-to-create-the-motions)
@@ -687,9 +687,9 @@ ROBOTIS-OP3 Action Editor Node.
 This chapter explains how to create and edit action file used in the [op3_action_module] of ROBOTIS-OP3.   
 
 #### Action File
-The action file contains ROBOTIS-OP3's poses and time data. The current position describes positions of DYNAMIXEL which converted from actual DYNAMIXEL resolution to 4,095 resolution. The action file is written as binary file so users can read its contents with op3_action_editor. ROBOTIS currently provides a default action file with source code. It is located in "op3_action_module/data" directory.  
+The action file contains ROBOTIS-OP3's poses and time data. The `Current position` describes positions of DYNAMIXEL, which are converted from the actual DYNAMIXEL resolution to a 4,095 resolution. The `action file` is written as a binary file, so users can read its contents with `op3_action_editor`. ROBOTIS currently provides a default action file with the source code. It is located in the `op3_action_module/data` directory.  
 
-The action file contains 256 pages. Each page can store up to 7 stages (or steps) of action data. The default action file does not use all pages and user can add own actions by writing them on the empty page.   
+The action file contains 256 pages. Each page can store up to 7 stages (or steps) of action data. The default action file does not use all pages, and users can add their own actions by writing them to the empty pages.   
 
 
 ### Getting started
@@ -706,7 +706,7 @@ $ ros2 run op3_action_editor executor.py
 
 #### UI
 
-![](/assets/images/platform/op3/thormang3_action_editor_tui.jpg)
+![](/assets/images/platform/op3/op3_action_editor_tui.png)
 
 - **Page number**: Page number is the listed page number. If user wants to create a new action poses, user can use any empty page.  
 - **Page title**: ROBOTIS recommends user to use a page title when creating a new action on an empty page.  
@@ -715,7 +715,7 @@ $ ros2 run op3_action_editor executor.py
   User can turn off the torque of specific DYNAMIXEL. This is very convenient when acquiring position values directly from DYNAMIXEL for a new robot posture instead of calculating those values. To do that, turn off the torque of desired DYNAMIXEL, then make a posture and hold the robot joint by hand until turn the torque back on. The robot will be remaining at current posture and user can read position values of corresponding DYNAMIXEL.  
 - **Steps or stages**: Each page can store up to 7 steps, from STP0 to STP6. However, some actions may be required more than 7 stages to perform completely. This can be resolved by simply using multiple pages and link them with Next
 - **Next**: Next indicates whether to continue action on a different page. To continue actions, just list the page number where the action is to be continued. Number 0 indicates that action does not continue onto another page (default value). Linking page does not have to have the numerical order.  
-- **Play Count**: Play Count is the number of times the action of the page is to be played.  
+- **Play Count**: The number of times the page's action will be executed.  
 - **Exit**: There might be some cases when an action has to be stopped. In these cases, the robot may be in unstable position. Exit is much like "Next", so "Exit" should be linked to a page where ROBOTIS-OP3 can return to a stable pose. If "Exit" is 0, it means that there is no linked exit page (default value).  
   `Tip` : When calling an action requires multiple pages, ROBOTIS strongly suggests user to call the action from the starting page. For example, clap starts at page 7 and ends at page 8. This means you should call page 7 when calling clap. Calling the page 8 may cause unexpected behavior of the robot.  
 - **STP7**: "STP7" column is the current position of DYNAMIXEL which converted to 4,095 resolution from its original resolution. "----" means that torque has been released.  
@@ -789,7 +789,7 @@ After typing "help", the commend list will appear as shown below.
 
 #### Example Action editing with op3_action_editor
 1. Run the op3_action_editor  
-2. Type `list` to find where the `walking_ready` page is located.  
+2. Type `list` to find where the `walkready` page is located.  
 
     ![](/assets/images/platform/op3/op3_action_editor_list.png)
 
@@ -797,24 +797,24 @@ After typing "help", the commend list will appear as shown below.
 
     ![](/assets/images/platform/op3/op3_action_editor_example2.png)
 
-4. And copy the page 1 to
+4. And copy the page 9 to page [x] by typing `copy 9`.
 
-    ![](/assets/images/platform/op3/thormang3_action_editor_tui_action_editing_example3.jpg)
+    ![](/assets/images/platform/op3/op3_action_editor_example3.png)
 
-5. Go to "walking_init" pose by typing "play"  
-6. Turn off the torque of ID 2, 4 and 8 by typing "off 2 4 8"  
+5. Go to `walkready` pose by typing `play`  
+6. Turn off the torque of ID 2, 4 and 8 by typing `off 2 4 8`  
 
-    ![](/assets/images/platform/op3/thormang3_action_editor_tui_action_editing_example4.jpg)
+    ![](/assets/images/platform/op3/op3_action_editor_example4.png)
 
-7. After getting the desired pose turn torque on again by simple typing on. And insert the pose to step 1 by typing "i 1"  
+7. After getting the desired pose turn torque on again by simple typing `on`. And insert the pose to step 1 by typing `i 1`  
 
-    ![](/assets/images/platform/op3/thormang3_action_editor_tui_action_editing_example5.jpg)
+    ![](/assets/images/platform/op3/op3_action_editor_example5.png)
 
-8. Edit "Pause Time", "Time" of STP1 and "Page Step" as shown below.  
+8. Edit `Pause Time`, `Time` of STP1 and `Page Step` as shown below.  
 
-    ![](/assets/images/platform/op3/thormang3_action_editor_tui_action_editing_example6.jpg)
+    ![](/assets/images/platform/op3/op3_action_editor_example6.png)
 
-9. Type "play" and check the ROBOTIS-OP3's action  
+9. Type `play` and check the ROBOTIS-OP3's action  
 
 ## [How to use ball detector](#how-to-use-ball-detector)
 
@@ -825,7 +825,7 @@ This chapter explains how to calibrate the `ball_detector_node` to find a ball. 
 #### Run the program  
 
 ```
-$ ros2 launch ball_detector ball_detector_from_usb_cam.launch.py
+$ ros2 launch op3_ball_detector ball_detector_from_usb_cam.launch.py
 ```
 
 or
@@ -845,24 +845,21 @@ $ ros2 launch op3_demo demo.launch.xml
     - Open `Dynamic Reconfigure`   
       Select `Plugins -> Configuration -> Dynamic Reconfigure`
 
-      ![](/assets/images/platform/op3/ball_detector_node_01.png)
+      ![](/assets/images/platform/op3/ball_detector_node_01_rev3.png)
 
     - Open `Image View`  
       Select `Plugins -> Visualization -> Image View`  
 
-      ![](/assets/images/platform/op3/ball_detector_node_02.png)
+      ![](/assets/images/platform/op3/ball_detector_node_02_rev3.png)
 
 2. Parameters    
-  The description for each parameter will pop up when hovering the mouse cursor over each parameter.  
-
-    ![](/assets/images/platform/op3/ball_detector_node_03.png)
-
-    - gaussian_blur_size: Size of Gaussian Blur Kernel (odd value)  
-    - gaussian_blur_sigma: Std deviation of Gaussian Blur  
     - canny_edge_th: Threshold of the edge detector  
+    - ellipse_size: Ellipse size  
+    - gaussian_blur_sigma: Std deviation of Gaussian Blur  
+    - gaussian_blur_size: Size of Gaussian Blur Kernel (odd value)  
     - hough_accum_resolution: Resolution of the Hough accumulator, in terms of inverse ratio of image resolution  
-    - min_circle_dist: Minimum distance between circles  
     - hough_accum_th: Accumulator threshold to decide center detection  
+    - min_circle_dist: Minimum distance between circles  
     - min_radius: Minimum circle radius allowed, pixels. (if unknown, put 0 for a detault.)  
     - max_radius: Maximum circle radius allowed, pixels. (if unknown, put 0 for a detault.)  
     - filter_h_min: Minimum threshold of H filter  
@@ -878,7 +875,6 @@ $ ros2 launch op3_demo demo.launch.xml
     - filter2_s_max: Maximum threshold of S filter  
     - filter2_v_min: Minimum threshold of V filter  
     - filter2_v_max: Maximum threshold of V filter  
-    - ellipse_size: Ellipse size  
     - debug_image: Show filtered image to debug  
 
 3. Description  
@@ -891,11 +887,11 @@ $ ros2 launch op3_demo demo.launch.xml
 
         - If you check the `use_second_filter` you can get an image which is detected with two HSV variations.   
 
-          ![](/assets/images/platform/op3/ball_detector_node_04.png)
+          ![](/assets/images/platform/op3/ball_detector_node_04_rev3.png)
 
         - If you check the `debug_image` you can check the HSV filtered, binary image.   
 
-          ![](/assets/images/platform/op3/ball_detector_node_05.png)
+          ![](/assets/images/platform/op3/ball_detector_node_05_rev3.png)
 
         - After you set the HSV range, you could calibrate the threshold value to detect the edge better.  
 
@@ -914,31 +910,31 @@ $ ros2 launch op3_demo demo.launch.xml
 #### Installation
 - web_video_server  
   ```
-  $ sudo apt install ros-kinetic-web-video-server
+  $ sudo apt install ros-jazzy-web-video-server
   ```
 
 - rosbridge_server  
   ```
-  $ sudo apt install ros-kinetic-rosbridge-server
+  $ sudo apt install ros-jazzy-rosbridge-server
   ```
 
 - Update and build source
   - ROBOTIS-OP3-Demo  
     ```
-    $ cd ~/catkin_ws/src/ROBOTIS-OP3-Demo
+    $ cd ~/robotis_ws/src/ROBOTIS-OP3-Demo
     $ git pull
     ```
 
   - ROBOTIS-OP3-Tools  
     ```
-    $ cd ~/catkin_ws/src/ROBOTIS-OP3-Tools
+    $ cd ~/robotis_ws/src/ROBOTIS-OP3-Tools
     $ git pull
     ```
 
   - Build source  
     ```
-    $ cd ~/catkin_ws
-    $ catkin_make
+    $ cd ~/robotis_ws
+    $ colcon build --symlink-install
     ```
 
 
@@ -953,7 +949,7 @@ $ ros2 launch op3_demo demo.launch.xml
 
 - Copy files from ROBOTIS-OP3-Tools folder to the web server folder : github
   ```
-  $ cd ~/catkin_ws/src/ROBOTIS-OP3-Tools/op3_web_setting
+  $ cd ~/robotis_ws/src/ROBOTIS-OP3-Tools/op3_web_setting_tool
   $ sudo cp -r ./html /var/www
   ```  
 
@@ -1090,7 +1086,7 @@ op3_manager provides a way to control each joint of the robot with the following
 Stop the default demo  
 
 ```
-$ sudo service OP3-demo stop
+$ sudo systemctl stop op3_demo
 [sudo] password for robotis: 111111
 ```  
 
@@ -1099,31 +1095,29 @@ Run read-write demo
 $ ros2 launch op3_read_write_demo op3_read_write.launch.xml
 ```
 
-#### `op3_read_write.launch`  
-```
+#### op3_read_write.launch.xml  
+```xml
 <?xml version="1.0" ?>
-<launch>    
-  <param name="gazebo"                   value="false"    type="bool"/>
-  <param name="gazebo_robot_name"        value="robotis_op3"/>
+<launch>
+        
+    <!-- OP3 Manager -->
+    <node pkg="op3_manager" exec="op3_manager" output="screen">
+        <param name="angle_unit" value="30.0" />
 
-  <param name="offset_file_path"         value="$(find op3_manager)/config/offset.yaml"/>
-  <param name="robot_file_path"          value="$(find op3_manager)/config/OP3.robot"/>
-  <param name="init_file_path"           value="$(find op3_manager)/config/dxl_init_OP3.yaml"/>
-  <param name="device_name"              value="/dev/ttyUSB0"/>
+        <param name="gazebo" value="false"/>
+        <param name="gazebo_robot_name" value="robotis_op3"/>
+            
+        <param name="offset_file_path" value="$(find-pkg-share op3_manager)/config/offset.yaml"/>
+        <param name="robot_file_path" value="$(find-pkg-share op3_manager)/config/OP3.robot"/>
+        <param name="init_file_path" value="$(find-pkg-share op3_manager)/config/dxl_init_OP3.yaml"/>
+        <param name="device_name" value="/dev/ttyUSB0"/>
+        
+        <param name="/robotis/direct_control/default_moving_time" value="0.04"/>
+        <param name="/robotis/direct_control/default_moving_angle" value="90.0"/>
+    </node>
 
-  <param name="/robotis/direct_control/default_moving_time"     value="0.04"/>
-  <param name="/robotis/direct_control/default_moving_angle"    value="90"/>
-
-  <!-- OP3 Manager -->
-  <node pkg="op3_manager" type="op3_manager" name="op3_manager" output="screen">
-    <param name="angle_unit" value="30" />
-  </node>
-
-  <!-- OP3 Localization -->
-  <node pkg="op3_localization" type="op3_localization" name="op3_localization" output="screen"/>
-
-  <!-- OP3 Read-Write demo -->
-  <node pkg="op3_read_write_demo" type="read_write" name="op3_read_write" output="screen"/>
+    <!-- OP3 Read-Write demo -->
+    <node pkg="op3_read_write_demo" exec="read_write" output="screen"/>
 </launch>
 ```  
  - parameters
@@ -1137,10 +1131,9 @@ $ ros2 launch op3_read_write_demo op3_read_write.launch.xml
    - `/robitis/direct_control/default_moving_angle` : moving angle per 1 sec, used in direct_control_module  
  - node  
    - `op3_manager` : This node controls ROBOTIS-OP3 hardware  
-   - `op3_localization` : simple localization node for op3_online_walking
    - `op3_read_write` : read-write demo, described in this chapter  
  - rqt_graph  
-   ![](/assets/images/platform/op3/op3_read_write_graph.png)
+   ![](/assets/images/platform/op3/op3_read_write_graph_rev3.png)
 
 #### How to Operate  
 
