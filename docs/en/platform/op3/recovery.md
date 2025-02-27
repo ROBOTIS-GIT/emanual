@@ -37,75 +37,97 @@ This chapter explains how to install software and configure ROBOTIS OP3.
 
 #### PC Setting
 - WiFi Hotspot
- 1. Right-click on the Network icon in the system tray at the bottom right corner of your screen and select "Edit Connections...".
- 2. In the Network Connections window, click Add button.
- 3. In the Choose a Connection Type window, select Wi-Fi from the Hardware group.
- 4. Click Create... button.
- 5. Modify the Connection name to "OP3-Hotspot" in the new window.
- 6. Change the SSID to "ROBOTIS-OP3-Share" in the Wi-Fi tab.
- 7. Select Hotspot Mode and click Save button.
- 8. Close the Network Connections window.
- 9. Click the Network icon from the bottom right corner of the system tray and select "Connect to Hidden Wi-Fi Network...".
- 10. Select OP3-Hotspot for the Connection in the Hidden Wi-Fi network and click Connect button.
+ 1. Right-click on the Network icon in the system tray at the bottom right corner of your screen and select `Edit Connections...`.
+ 2. In the `Network Connections` window, click Add(+) button.
+ 3. In the `Choose a Connection Type` window, select `Wi-Fi` from the Hardware group.
+ 4. Click `Create...` button.
+ 5. Modify the `Connection name` to `OP3-Hotspot` in the new window.
+ 6. Change the SSID to `ROBOTIS-OP3-Share` in the Wi-Fi tab.
+ 7. Select `Hotspot` Mode and click `Save` button.
+ 8. Close the `Network Connections` window.
+ 9. Click the Network icon from the bottom right corner of the system tray and select `Connect to Hidden Wi-Fi Network...`.
+ 10. Select `OP3-Hotspot` for the `Connection` in the `Hidden Wi-Fi network` and click `Connect` button.
 
 
 - Other Settings
-    1. Increase real-time scheduling priority (rtprio) for current user group
-        ```
+    1. Increase real-time scheduling priority (rtprio) for current user's group
+        ```sh
         $ sudo bash -c 'echo "@robotis - rtprio 99" > /etc/security/limits.d/robotis-rtprio.conf'
         ```
     2. Add user to appropriate groups
+        ```sh
+        $ sudo usermod -aG dialout,video,audio robotis
         ```
-        $ sudo usermod -aG dialout robotis
-        ```
+    3. Configure USB latency tmer to 1ms at startup  
+        - create a udev rules file  
+            ```sh
+            $ sudo nano /etc/udev/rules.d/50-latency-timer.rules
+            ```   
+        - add the following rule to the file
+            ```sh
+            ACTION=="add", SUBSYSTEM=="usb-serial", DRIVER=="ftdi_sio", ATTR{latency_timer}="1"
+            ```
+        - reload udev rules
+            ```sh
+            $ sudo udevadmin control --reload-rules
+            $ sudo udevadmin trigger
+            ```
 
 
  - Server Settings
      - openssh Installation
-     ```
-     $ sudo apt install openssh-server
-     ```
+        ```sh
+        $ sudo apt install openssh-server
+        ```
      - Desktop sharing
-         1. Open a terminal window.
-         2. Install dconf-editor with `$ sudo apt install dconf-editor` command.
-         3. Run the editor with `$ dconf-editor` command.
-         4. Go to org > gnome > desktop > remote-access and uncheck require-encryption
-         5. Execute `$ vino-preferences`
-         6. In the Sharing section of the Desktop Sharing Preferences windows, apply followings
-             1. Check on the Allow other users to view your desktop option.
-             2. Check on the Allow other users to control your desktop option.
-         7. In the Security section, apply followings  
-             1. Uncheck the You must confirm each access to this machine option.
-             2. Check on the Require the user to enter this password option and enter `111111`.
-         8. Click Close button
-         9. Reboot the system.
+         1. Vino Installation and configuration 
+            ```sh
+            $ sudo apt install vino
+            $ gsettings set org.gnome.Vino require-encryption false
+            $ gsettings set org.gnome.Vino prompt-enabled false
+            $ gsettings set org.gnome.Vino authentication-methods "['vnc']"
+            $ gsettings set org.gnome.Vino vnc-password $(echo -n '111111'|base64)
+            ```
+         2. `Start` → `Session and Startup` → `Application Autostart` → `Add` button  
+            - `Name` : Desktop Sharing
+            - `Description` : vnc server
+            - `Command` : /usr/lib/vino/vino-server --sm-disable
+            - `Trigger` : on login
+         3. `OK` button
+         4. logout & login
 
      - Samba
          1. Installation
+             ```sh
+             $ sudo apt install -y samba samba-common
              ```
-             $ sudo apt install samba samba-common python-glade2 system-config-samba
-             ```
-         2. Configuration
-             ```
-             $ sudo touch /etc/libuser.conf
-             $ sudo system-config-samba
-             ```
-             - Go to Preferences > Samba Users...
-                 1. Click `Add User` button
-                 2. Select the Unix Username (ex : robotis)
-                 3. Enter the Windows Username (ex : robotis)
-                 4. Enter the Password (ex : 111111)
-             - Click `Add Share` button
-                 - In the Basic tab
-                     1. Enter `/` in the Directory.
-                     2. Check on the Writable / Visible option.
-                 - In the Access tab
-                     1. Select Only allow access to specific users
-                     2. Select samba user
+         2. Create a samba user  
+             ```sh  
+             $ sudo smbpasswd -a robotis
+             [sudo] password for robotis: 111111
+             New SMB password: 111111
+             Retype new SMB password: 111111
+             ```  
+         3. Append the following to the `/etc/samba/smb.conf` file  
+             ```conf  
+             [root directory]
+                 comment = Root Directory
+                 path = /
+                 browseable = yes
+                 read only = no
+                 writable = yes
+                 create mask = 0755
+                 directory mask = 0755
+                 valid users = @robotis
+             ```  
+         4. Restart service  
+             ```sh
+             $ sudo service smbd restart
+             ``` 
 
      - Apache(for web_setting_tool)
         1. Install web server(APACHE2)
-            ```
+            ```sh
             $ sudo apt install apache2
             ```
         2. Check the default page from a web browser  
@@ -120,87 +142,6 @@ This chapter explains how to install software and configure ROBOTIS OP3.
 2. **ROS Environment Setup**   
     > Reference : [ROS Environment and Network Settings]
 
-#### Installing additional applications for ROBOTIS ROS Package   
- Prerequisites for ROBOTIS ROS package  
- - ROBOTIS-OP3 : libncurses5-dev, v4l-utils
-   ```
-   $ sudo apt install libncurses5-dev v4l-utils
-   ```  
- - ROBOTIS-Utility : madplay, mpg321  
-   ```
-   $ sudo apt install madplay mpg321
-   ```
- - ETC : g++, git
-   ```
-   $ sudo apt install g++ git
-   ```
-   
-#### Installing ROS packages for ROBOTIS-OP3
-- face_detection  
-    ROS Package used for vision demo  
-    ```
-    $ cd ~/catkin_ws/src
-    $ git clone https://github.com/ROBOTIS-GIT/face_detection.git
-    $ cd ~/catkin_ws
-    $ catkin_make
-    ```
-
-
-- robot_upstart  
-    ROS Package that automatically executes basic demo of ROBOTIS-OP3  
-    - Installation  
-        ```   
-        $ sudo apt install ros-kinetic-robot-upstart  
-        ```  
-    - [Setting for automatic startup]
-
-
-- usb_cam  
-    ROS Package for USB Camera  
-    ```
-    $ cd ~/catkin_ws/src
-    $ git clone https://github.com/bosch-ros-pkg/usb_cam.git
-    $ cd ~/catkin_ws
-    $ catkin_make
-    $ sudo apt install v4l-utils
-    ```
-
-
-- qt_ros
-    ```
-    $ sudo apt install ros-kinetic-qt-ros
-    ```      
-
-- [humanoid_navigation]  
-    Package for footstep planner.
-    - Install prerequisite packages
-      ```
-      $ sudo apt-get install ros-kinetic-map-server
-      $ sudo apt-get install ros-kinetic-humanoid-nav-msgs
-      $ sudo apt-get install ros-kinetic-nav-msgs
-      $ sudo apt-get install ros-kinetic-octomap
-      $ sudo apt-get install ros-kinetic-octomap-msgs
-      $ sudo apt-get install ros-kinetic-octomap-ros
-      $ sudo apt-get install ros-kinetic-octomap-server
-      ```  
-
-    - Install library from sources
-        * sbpl  
-
-          > Reference : [https://github.com/sbpl/sbpl]
-
-    - Install humanoid_navigation
-        ```
-        $ cd ~/catkin_ws/src
-        $ git clone https://github.com/ROBOTIS-GIT/humanoid_navigation.git
-        $ cd ~/catkin_ws
-        ```  
-    - [rosbridge_server], [web_video_server]    
-      Packages for web_setting_tool  
-      ```
-      $ sudo apt install ros-kinetic-rosbridge-server ros-kinetic-web-video-server
-      ```
-
 #### [Installing ROBOTIS ROS Packages](#installing-robotis-ros-packages)  
 
  - ROBOTIS ROS Packages
@@ -209,39 +150,66 @@ This chapter explains how to install software and configure ROBOTIS OP3.
    -  [ROBOTIS-Framerowk-msgs] : Messages used in the ROBOTIS-Framework  
    -  [ROBOTIS-Math] : basic calculation related to transformation and trajectory functions  
    -  [ROBOTIS-OP3] : ROS packages running in the ROBOTIS-OP3  
+   -  [ROBOTIS-OP3-Common]
    -  [ROBOTIS-OP3-Demo] : ROBOTIS-OP3 uses this package when running a demonstration
+   -  [ROBOTIS-OP3-ETC]
    -  [ROBOTIS-OP3-msgs] : This package contains ROS messages that are used for ROBOTIS-OP3
    -  [ROBOTIS-OP3-Tools] : This package contains useful tools for ROBOTIS-OP3
-   -  [ROBOTIS-OP3-Common]
-   -  ROBOTIS-Utility   
+   -  [ROBOTIS-Utility]   
 
  - How to install ROBOTIS ROS packages
    - Download sources from Github.  
       ```
-      $ cd ~/catkin_ws/src
-      $ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git
-      $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-Framework.git
-      $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-Framework-msgs.git
-      $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-Math.git
-      $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-OP3.git
-      $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Demo.git
-      $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-msgs.git
-      $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Tools.git
-      $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Common.git
-      $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-Utility.git
+      $ cd ~/robotis_ws/src
+      $ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git --branch=jazzy-devl
+      $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-Framework.git --branch=jazzy-devl
+      $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-Framework-msgs.git --branch=jazzy-devl
+      $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-Math.git --branch=jazzy-devl
+      $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-OP3.git --branch=jazzy-devl
+      $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Common.git --branch=jazzy-devl
+      $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Demo.git --branch=jazzy-devl
+      $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-ETC.git --branch=jazzy-devl
+      $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-msgs.git --branch=jazzy-devl
+      $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Tools.git --branch=jazzy-devl
+      $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-Utility.git --branch=jazzy-devl
       ```
 
    - Build downloaded sources.  
       ```
-      $ cd ~/catkin_ws
-      $ catkin_make
+      $ cd ~/robotis_ws
+      $ colcon build --symlink-install && source ~/.bashrc
       ```
+
+#### Installing additional applications for ROBOTIS ROS Package   
+ - update package list
+   ```
+   $ sudo apt update
+   ```
+ - install python3-rosdep  
+   ```
+   $ sudo apt install python3-rosdep
+   ```
+ - initialize rosdep and update the rosdep database
+   ```
+   $ sudo rosdep init
+   $ rosdep udpate
+   ```
+ - use rosdep to install dependencies
+   ```
+   $ cd ~/robotis_ws
+   $ rosdep install --from-paths src --ignore-src -r -y --os=ubuntu:noble
+   ```
+   - `--from-paths src` : specifies the source directory where your ROS packages are located.
+   - `--ignore-src` : ignores packages within the source directory itself.
+   - `-r` : resolves dependencies recursively.
+   - `-y` : automatically answers "yes" to all prompts.
+
 
 #### ETC Setting   
 - Configure web_setting_tool  
     1. Copy files from ROBOTIS-OP3-Tools folder to the web server folder : github
         ```
-        $ cd ~/catkin_ws/src/ROBOTIS-OP3-Tools/op3_web_setting_tool
+        $ cd ~/robotis_ws/src/ROBOTIS-OP3-Tools/op3_web_setting_tool
         $ sudo cp -r ./html /var/www
         ```   
     2. Check the default page from a web browser  
@@ -252,27 +220,30 @@ This chapter explains how to install software and configure ROBOTIS OP3.
 - Configure Shutdown Sound  
     1. Create `/etc/init.d/shutdown-snd` file.   
         Create the above file with a text editor.  
-        ```
+        ```sh
         $ sudo xed /etc/init.d/shutdown-snd
         ```
     2. Append below information to the file and save.  
-        ```
+        ```sh
         #! /bin/sh
         /usr/bin/madplay "/usr/share/sounds/byebye.mp3"
         ```
     3. Add execution permission to the file.  
-        ```
+        ```sh
         $ sudo chmod +x /etc/init.d/shutdown-snd
         ```
     4. Copy shutdown mp3 to `/usr/share/sounds/` folder.  
+       ```sh
+       $ sudo cp ~/robotis_ws/src/ROBOTIS-OP3-Demo/op3_demo/data/mp3/Bye\ bye.mp3 /usr/share/sounds/byebye.mp3
+       ```
     5. Create a service for the shutdown sound.
         1. Create `/etc/systemd/system/shutdown_sound.service` file  
             Create the above file with a text editor.    
-            ```
+            ```sh
             $ sudo xed /etc/systemd/system/shutdown_sound.service
             ```
         2. Append below information to the file and save.  
-            ```
+            ```conf
             [Unit]
             Description=shutdown sound
             After=network.target
@@ -294,8 +265,8 @@ This chapter explains how to install software and configure ROBOTIS OP3.
             ```
 
 - Configure Power Button for shutdown
-    1. Go to Start Button > Settings > Power Manager.
-    2. Go to General > Buttons > When power button is pressed and change the option to "Shutdown".    
+    1. Go to Start Button > `Settings` > `Power Manager`.
+    2. Go to `General` > `Buttons` > `When power button is pressed` and change the option to `Shutdown`.    
 
 ## [Recovery of ROBOTIS-OP3](#recovery-of-robotis-op3)
 
@@ -306,42 +277,49 @@ This chapter explains how to recover ROBOTIS-OP3 softwares using recovery USB im
 Clonezilla is used to recover ROBOTIS-OP3 with the image file in the provided USB.  
 
 #### How to creat a recovery USB media  
-- Format a USB drive (Required 4GB space or above)  
-- Go to [sourceforge.net][sourceforge.net] and download an recovery image file. 
+- Format a USB drive (Required 8GB space or above)  
+- Go to [sourceforge.net] and download an recovery image file. 
 
 **NOTE**: The required image file may differ depending on a generation of the provided SBC. Be sure to see the following table and download an appropriate image file with your NUC PC.
 {: .notice}
 
-| Recovery Image List                                      | Description                   |
-|:---------------------------------------------------------|:------------------------------|
-| clonezilla-live-ROBOTIS-OP3_Recovery_181019(NUC_7th).zip | NUC 7 only                    |
-| clonezilla-live-ROBOTIS-OP3_Recovery_180402.zip          | Latest version for NUC 6 only |
-| clonezilla-live-ROBOTIS-OP3_Recovery_171013.zip          | Older image for NUC 6 only    |
+| Recovery Image List                                        | Description                      |
+|:-----------------------------------------------------------|:---------------------------------|
+| *clonezilla-live-ROBOTIS-OP3_Recovery_250GB_250226.zip*    | OP3 Rev.3 only (SSD 250GB)       |
+| *clonezilla-live-ROBOTIS-OP3_Recovery_181019(NUC_7th).zip* | OP3 Rev.2 only (NUC7)            |
+| *clonezilla-live-ROBOTIS-OP3_Recovery_180402.zip*          | Latest version for NUC 6 only    |
+| *clonezilla-live-ROBOTIS-OP3_Recovery_171013.zip*          | Older image for NUC 6 only       |
+    
     
 - Extract the zipped foler to the root folder of the USB drive. The folder structure is as follows. 
   ```
   .
+  ├── .disk
+  ├── [BOOT]
   ├── boot
   │   └── grub
   ├── EFI
-  │   ├── boot
-  │   └── images
+  │   └── boot
   ├── home
   │   └── partimag
-  │       └── ROBOTIS-OP3_transcend
+  │       └── ROBOTIS-OP3_Recovery_250GB_25xxxx
   ├── live
   ├── syslinux
   └── utils
+      ├── linux
+      ├── mbr
+      ├── win32
+      └── win64
   ```
 
 #### How to recover ROBOTIS-OP3
 
 1. Go to boot manager : Press **F10**  
-	![](/assets/images/platform/op3/op3_recovery_01.jpg)  
+	![](/assets/images/platform/op3/op3_recovery_01_nuc10.jpg)  
 2. Select the boot device : Recovery USB media  
-	![](/assets/images/platform/op3/op3_recovery_02.jpg)  
-3. Select the image : clonezilla live with img ROBOTIS-OP3_Transcend (Default settings, VGA 1024x768)  
-	![](/assets/images/platform/op3/op3_recovery_03.jpg)  
+	![](/assets/images/platform/op3/op3_recovery_02_nuc10.jpg)  
+3. Select the image : `Clonezilla live (VGA 800x600)`  
+	![](/assets/images/platform/op3/op3_recovery_03_nuc10.jpg)  
 4. Confirm to continue : enter `y`  
 	![](/assets/images/platform/op3/op3_recovery_04.jpg)  
 5. Confirm to continue : enter `y`  
