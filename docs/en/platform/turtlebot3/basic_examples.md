@@ -51,7 +51,7 @@ page_number: 22
 ## [Obstacle Detection](#obstacle-detection)
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-**NOTE**: This feature is not supported yet.
+**NOTE**: This feature is not supported yet. We are currently working on it.
 {: .notice}
 </section>
 
@@ -62,19 +62,19 @@ page_number: 22
 ## [Position Control](#position-control)
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-**NOTE**: This feature is not supported yet.
+**NOTE**: This feature is not supported yet. We are currently working on it.
 {: .notice}
 </section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
-**NOTE**: This feature is available for Dashing.
+**NOTE**: This feature is not supported in ROS 1. We are currently working on it in ROS 2 Humble.
 {: .notice}
 </section>
 
 ## [Point Operation](#point-operation)
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-**NOTE**: This feature is not supported yet.
+**NOTE**: This feature is not supported yet. We are currently working on it.
 {: .notice}
 </section>
 
@@ -95,7 +95,7 @@ page_number: 22
 ## [TurtleBot Follower Demo](#turtlebot-follower-demo)
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-**NOTE**: This feature is not supported yet.
+**NOTE**: This feature is not supported yet. We are currently working on it.
 {: .notice}
 </section>
 
@@ -106,7 +106,7 @@ page_number: 22
 ## [TurtleBot Panorama Demo](#turtlebot-panorama-demo)
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-**NOTE**: This feature is not supported yet.
+**NOTE**: This feature is not supported yet. We are currently working on it.
 {: .notice}
 </section>
 
@@ -117,7 +117,7 @@ page_number: 22
 ## [Automatic Parking](#automatic-parking)
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-**NOTE**: This feature is not supported yet.
+**NOTE**: This feature is not supported yet. We are currently working on it.
 {: .notice}
 </section>
 
@@ -128,7 +128,7 @@ page_number: 22
 ## [Automatic Parking Vision](#automatic-parking-vision)
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-**NOTE**: This feature is not supported yet.
+**NOTE**: This feature is not supported yet. We are currently working on it.
 {: .notice}
 </section>
 
