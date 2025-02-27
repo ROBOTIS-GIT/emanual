@@ -33,7 +33,8 @@ page_number: 22
 </section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
-**NOTE**: This feature is available for ROS Kinetic
+**NOTE**: This feature is available for ROS Kinetic.
+
 {: .notice}
 </section>
 
