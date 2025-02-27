@@ -10,7 +10,7 @@ In Gazebo simulation, camera imaging calibration is unnecessary because the simu
 To begin, launch the Gazebo simulation on the Remote PC by running the following command:
 
 ```bash
-ros2 launch turtlebot3_gazebo turtlebot3_autorace_2020.launch.py
+$ ros2 launch turtlebot3_gazebo turtlebot3_autorace_2020.launch.py
 ```
 
 ### [Intrinsic Camera Calibration](#intrinsic-camera-calibration)
@@ -20,7 +20,7 @@ In real robots, this process is essential, but in Gazebo simulation, intrinsic c
 
 To execute the intrinsic calibration process as it would run on real hardware, launch:
 ```bash
-ros2 launch turtlebot3_autorace_camera intrinsic_camera_calibration.launch.py
+$ ros2 launch turtlebot3_autorace_camera intrinsic_camera_calibration.launch.py
 ```
 This step will not modify the image output but ensures that the correct topics (`/camera/image_rect` or `/camera/image_rect_color/compressed`) are available for subsequent processing.
 
@@ -30,7 +30,7 @@ Extrinsic calibration aligns the camera’s perspective with the robot’s coord
 
 Once the simulation is running, launch the extrinsic calibration process:
 ```bash
-ros2 launch turtlebot3_autorace_camera extrinsic_camera_calibration.launch.py calibration_mode:=True
+$ ros2 launch turtlebot3_autorace_camera extrinsic_camera_calibration.launch.py calibration_mode:=True
 ```
 This will activate the nodes responsible for camera-to-ground projection and compensation.
 
@@ -38,7 +38,7 @@ This will activate the nodes responsible for camera-to-ground projection and com
 
 1. Execute rqt on `Remote PC`.
 ```bash
-rqt
+$ rqt
 ```
 
 2. Navigate **Plugins** > **Visualization** > **Image view**. Create two image view windows.
@@ -65,11 +65,11 @@ Once the best projection settings are found, the calibration data must be saved 
 
 1. Navigate to the directory where the calibration files are stored:
 ```bash
-cd ~/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace_camera/calibration/extrinsic_calibration/
+$ cd ~/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace_camera/calibration/extrinsic_calibration/
 ```
 1. Open the relevant YAML file (e.g., `projection.yaml`) in a text editor:
 ```bash
-gedit projection.yaml
+$ gedit projection.yaml
 ```
 
 1. Modify the projection parameters based on the values obtained from dynamic reconfiguration.
@@ -96,12 +96,12 @@ After completing the calibration process, follow the instructions below on `Remo
 2. **Launch the extrinsic calibration node without calibration mode.**  
   This ensures that the system applies the saved calibration parameters for verification.
 ```bash
-ros2 launch turtlebot3_autorace_camera extrinsic_camera_calibration.launch.py
+$ ros2 launch turtlebot3_autorace_camera extrinsic_camera_calibration.launch.py
 ```
 
 1. Execute rqt and navigate **Plugins** > **Visualization** > **Image view**.
 ```bash
-rqt
+$ rqt
 ```
 
 1. With successful calibration settings, the bird-eye view image should appear as below when the `/camera/image_projected` topic is selected.

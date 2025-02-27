@@ -14,12 +14,12 @@ This section describes how you can pass a tunnel mission. TurtleBot must use map
 
 2. Open a new terminal and launch Autorace Gazebo simulation.
 ```bash
-ros2 launch turtlebot3_gazebo turtlebot3_autorace_2020.launch.py
+$ ros2 launch turtlebot3_gazebo turtlebot3_autorace_2020.launch.py
 ```
 
 3. Open a new terminal and launch the tunnel mission node. This node runs the navigation and specifies the initial and target locations.
 ```bash
-ros2 launch turtlebot3_autorace_tunnel mission_tunnel.launch.py
+$ ros2 launch turtlebot3_autorace_tunnel mission_tunnel.launch.py
 ```
 4. On the Rviz2 screen, you can watch the TurtleBot generate and follow a path in real-time.
 
@@ -31,7 +31,7 @@ You can modify the initial position and goal position to fit your plan.
 
 1. Open the `navigation.yaml` file located at ***turtlebot3_autorace_mission/param/***.
 ```bash
-gedit ~/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace_mission/param/navigation.yaml
+$ gedit ~/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace_mission/param/navigation.yaml
 ```
 <img src='/assets/images/platform/turtlebot3/autonomous_driving/humble_tunnel_yaml.png'>
 1. Write modified values and save the file.
