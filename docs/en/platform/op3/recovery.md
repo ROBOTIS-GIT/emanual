@@ -320,14 +320,8 @@ Clonezilla is used to recover ROBOTIS-OP3 with the image file in the provided US
 	![](/assets/images/platform/op3/op3_recovery_02_nuc10.jpg)  
 3. Select the image : `Clonezilla live (VGA 800x600)`  
 	![](/assets/images/platform/op3/op3_recovery_03_nuc10.jpg)  
-4. Confirm to continue : enter `y`  
-	![](/assets/images/platform/op3/op3_recovery_04.jpg)  
-5. Confirm to continue : enter `y`  
-	![](/assets/images/platform/op3/op3_recovery_05.jpg)  
-6. Check the progress  
-	![](/assets/images/platform/op3/op3_recovery_06.jpg)  
-7. Turn off or reboot ROBOTIS-OP3  
-	![](/assets/images/platform/op3/op3_recovery_08.jpg)  
+4. Recovery will automatically start, and the PC will turn off when it's done.  
+	![](/assets/images/platform/op3/op3_recovery_04_nuc10.jpg)  
 
 
 [How to Install Linux Mint]: https://linuxmint-installation-guide.readthedocs.io/en/latest/index.html
