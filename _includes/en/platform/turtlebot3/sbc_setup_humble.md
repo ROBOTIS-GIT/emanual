@@ -155,10 +155,12 @@ $ ssh ubuntu@{IP Address of Raspberry PI}
 ```  
 </details>
 12. Install ROS2 Humble Hawksbill  
+**[TurtleBot3 SBC]**  
 Follow the instruction in [the official ROS2 Humble installation guide](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html).  Installing ROS-Base(Bare Bones) is recommended.
 
 13. Install and Build ROS Packages.  
-Building the `turtlebot3` package may take longer than an hour. Please use the SMPS to ensure the system is always powered.
+Building the `turtlebot3` package may take longer than an hour. Please use the SMPS to ensure the system is always powered.  
+**[TurtleBot3 SBC]**  
 ```bash
 $ sudo apt install python3-argcomplete python3-colcon-common-extensions libboost-system-dev build-essential
 $ sudo apt install ros-humble-hls-lfcd-lds-driver
