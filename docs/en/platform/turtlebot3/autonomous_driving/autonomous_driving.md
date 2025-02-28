@@ -51,6 +51,7 @@ To provide various conditions for a robot application development, the game prov
 
 ### [Intersection](#intersection)
 This mission no longer supports example source code.
+{: .notice}
 
 <!--construction-->
 ### [Construction](#construction)
@@ -58,6 +59,7 @@ This mission no longer supports example source code.
 
 ### [Parking](#parking)
 This mission no longer supports example source code.
+{: .notice}
 
 <!--level_crossing-->
 ### [Level Crossing](#level-crossing)
