@@ -7,8 +7,8 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/turtlebot3/autonomous_driving/
 tabs: "ROS"
-tab_title3: Noetic
-tab_title6: Humble
+tab_title1: Humble
+tab_title2: Noetic
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
@@ -49,14 +49,14 @@ page_number: 19
 </section>
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-## Getting Started
-{% include en/platform/turtlebot3/autonomous_driving/kinetic/autonomous_driving_getting_started_kinetic.md %}
+**NOTE**: The TurtleBot3 Autorace Humble version is scheduled to be released soon
+{: .notice--warning}
 </section>
 
-<section data-id="{{ page.tab_title3 }}" class="tab_contents">
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+
 ## Getting Started
 {% include en/platform/turtlebot3/autonomous_driving/noetic/autonomous_driving_sim_getting_started_noetic.md %}
-</section>
 
 
 <!-- Camera Calli -->
@@ -68,7 +68,6 @@ page_number: 19
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
 ## [Camera Calibration](#camera-calibration)
 Calibrating the camera is very important for autonomous driving. The following describes how to simply calibrate the camera step by step.
-</section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
 ## [Camera Calibration](#camera-calibration)
@@ -81,15 +80,8 @@ Calibrating the camera is very important for autonomous driving. The following d
 {% include en/platform/turtlebot3/autonomous_driving/humble/autonomous_driving_lane_detection_humble.md %}
 </section>
 
-<section data-id="{{ page.tab_title1 }}" class="tab_contents">
-## [Lane Detection](#lane-detection)
-{% include en/platform/turtlebot3/autonomous_driving/kinetic/autonomous_driving_lane_detection_kinetic.md  %}
-</section>
-
-<section data-id="{{ page.tab_title3 }}" class="tab_contents">
 ## [Lane Detection](#lane-detection)
 {% include en/platform/turtlebot3/autonomous_driving/noetic/autonomous_driving_sim_lane_detection_noetic.md %}
-</section>
 
 
 <!-- Traffic Sign Detection -->
@@ -139,7 +131,6 @@ To provide various conditions for a robot application development, the game prov
 
 ### [Traffic Lights](#traffic-lights)
 {% include en/platform/turtlebot3/autonomous_driving/noetic/autonomous_driving_sim_traffic_lights_noetic.md %}
-</section>
 
 <!--intersection-->
 
@@ -147,7 +138,6 @@ To provide various conditions for a robot application development, the game prov
 
 ### [Intersection](#intersection)
 {% include en/platform/turtlebot3/autonomous_driving/noetic/autonomous_driving_sim_intersection_noetic.md %}
-</section>
 
 <!--construction-->
 
@@ -161,7 +151,6 @@ To provide various conditions for a robot application development, the game prov
 
 ### [Construction](#construction)
 {% include en/platform/turtlebot3/autonomous_driving/noetic/autonomous_driving_sim_construction_noetic.md %}
-</section>
 
 <!--parking-->
 
@@ -169,7 +158,6 @@ To provide various conditions for a robot application development, the game prov
 
 ### [Parking](#parking)
 {% include en/platform/turtlebot3/autonomous_driving/noetic/autonomous_driving_sim_parking_noetic.md %}
-</section>
 
 <!--level_crossing-->
 
@@ -183,7 +171,6 @@ To provide various conditions for a robot application development, the game prov
 
 ### [Level Crossing](#level-crossing)
 {% include en/platform/turtlebot3/autonomous_driving/noetic/autonomous_driving_sim_level_crossing_noetic.md %}
-</section>
 
 <!--tunnel-->
 

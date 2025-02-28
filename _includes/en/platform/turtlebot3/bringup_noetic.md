@@ -2,7 +2,7 @@
 
 ### [Run roscore](#run-roscore)
 
-Run roscore from PC.  
+Run roscore on the remote PC.  
 **[Remote PC]**  
 ```bash
 $ roscore
@@ -10,24 +10,21 @@ $ roscore
 
 ### [Bringup TurtleBot3](#bringup-turtlebot3)
 
-**TIP**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `burger`, `waffle`, `waffle_pi`.  
-{: .notice--success}
-
-1. Open a new terminal from PC with `Ctrl` + `Alt` + `T` and connect to Raspberry Pi with its IP address.  
+1. Open a new terminal on the remote PC with `Ctrl` + `Alt` + `T` and connect to Raspberry Pi using SSH.  
 The default password is **turtlebot**.  
   **[Remote PC]**  
   ```bash  
 $ ssh ubuntu@{IP_ADDRESS_OF_RASPBERRY_PI}  
   ```  
 
-2. Bring up basic packages to start TurtleBot3 applications.  
+2. Bring up basic packages to start the required TurtleBot3 applications.  
 **[Turtlebot3 SBC]**  
   ```bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
   ```
 
-3. If the TurtleBot3 model is `burger`, the terminal will print below messages.  
+3. If the TurtleBot3 model is `burger`, the terminal will print the messages below.  
 **[Turtlebot3 SBC]**  
   ```bash
     SUMMARY
@@ -88,20 +85,20 @@ $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
 </summary>
 ### [Load TurtleBot3 on Rviz](#load-turtlebot3-on-rviz)
 
-1. Open a new terminal in `Remote PC` and launch the robot state publisher.  
+1. Open a new terminal on the `Remote PC` and launch the robot state publisher.  
 **[Remote PC]**  
   ```bash
 $ roslaunch turtlebot3_bringup turtlebot3_remote.launch
   ```
 
-2. Open a new terminal and enter the below command to run RViz.  
+2. Open a new terminal and enter the command below to run RViz.  
 
-- If you used `apt` for download turtlebot3 package, enter below command.  
+- If you used `apt` to install the TurtleBot3 packages, enter the command below.  
 **[Remote PC]**
   ```bash
 $ rosrun rviz rviz -d `rospack find turtlebot3_description`/rviz/model.rviz
   ```  
-- If you used `git clone` for download turtlebot3 package, enter below command. You need to specify the model name of TurtleBot3  
+- If you used `git clone` for to install the TurtleBot3 packages, enter the command below. You will need to specify the model of your TurtleBot3  
 **[Remote PC]**    
   ```bash
 $ rosrun rviz rviz -d `rospack find turtlebot3_description`/rviz/{burger, waffle_pi}.rviz

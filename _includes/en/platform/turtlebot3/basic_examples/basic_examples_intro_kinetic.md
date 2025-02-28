@@ -1,16 +1,18 @@
+**WARNING**: This content is a temporarily upload of the manual originally supporting **Kinetic**. It will soon be ported to Noetic and support is planned for **Humble** examples soon.
+{: .notice--danger}
 
-**WARNING**: Make sure to run the [Bringup][bringup] instruction before performing this examples, and be careful when testing the robot on the table as the robot might fall.
+ Make sure to run the [Bringup][bringup] instruction before performing these examples, and be careful when testing the robot on tables or other areas where the robot could be damaged by unexpected movement.
 {: .notice--warning}
 
 {% capture notice_01 %}
 **NOTE**:
 
-- This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-- This instruction is supposed to be running on the remote PC. Follow the instruction on your **Remote PC**.
+- These instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+- These instructions are intended to be run on the remote PC.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Xg1pKFQY5p4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-The contents in e-Manual are subject to be updated without a prior notice. Therefore, some video may differ from the contents in e-Manual.
+The contents in the e-Manual are subject change without prior notice. Some video content may differ from the contents in the e-Manual.
 {: .notice--warning}

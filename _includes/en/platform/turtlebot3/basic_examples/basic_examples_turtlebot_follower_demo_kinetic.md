@@ -1,8 +1,8 @@
 
 {% capture warning_01 %}
-In order to try examples in the below, you have to install the [turtlebot3_applications][turtlebot3_applications] and [turtlebot3_applications_msgs][turtlebot3_applications_msgs] packages.
+In order to follow along with the examples below, you have to install the [turtlebot3_applications][turtlebot3_applications] and [turtlebot3_applications_msgs][turtlebot3_applications_msgs] packages.
 
-**[Remote PC]** Go to `catkin workspace` directory (/home/(user_name)/catkin_ws/src) and clone the turtlebot3_applications and turtlebot3_applications_msgs repository. Then run the `catkin_make` to build the new packages.
+**[Remote PC]** Go to your `catkin workspace` directory (/home/(user_name)/catkin_ws/src) and clone the turtlebot3_applications and turtlebot3_applications_msgs repository. Then run `catkin_make` to build the new packages.
 
 ```bash
 $ sudo apt-get install ros-kinetic-ar-track-alvar
@@ -20,8 +20,8 @@ $ cd ~/catkin_ws && catkin_make
 {% capture notice_02 %}
 **NOTE**:
 
-- The follower demo was implemented only using a 360 Laser Distance Sensor LDS-01. A classification algorithm is used based on previous fitting with samples of person and obstacles positions to take actions. It follows someone in front of the robot within a 50 centimeter range and 140 degrees.
-- Running the follower demo in an area with obstacles may not work well. Therefore, it is recommended to run the demo in an open area without obstacles.
+- The follower demo was implemented only using the integrated LDS-01 360 Laser Distance Sensor. A classification algorithm is used based on previous fitting with samples of person and obstacle positions. The example follows someone in front of the robot within a 50 centimeter range and 140 degree arc.
+- Running the follower demo in an area with obstacles may not work well. Therefore, it is recommended to run the demo in an open area.
 {% endcapture %}
 <div class="notice--info">{{ notice_02 | markdownify }}</div>
 

@@ -1,10 +1,10 @@
 
-**NOTE**: Be sure that OpenCR port is properly assigned on PC. See [turtlebot3_core.launch][turtlebot3_core].
+**NOTE**: Be sure that the OpenCR port is properly assigned in the [turtlebot3_core.launch][turtlebot3_core] bringup file.
 {: .notice--info}
 
 ### [Run roscore](#run-roscore)
 
-Run the roscore to use ROS.  
+Run roscore to start ROS.  
 **[Remote PC]**  
 ```bash
 $ roscore
@@ -12,14 +12,11 @@ $ roscore
 
 ### [Define TurtleBot3 Model](#define-turtlebot3-model)
 
-Export TurtleBot3 model (`waffle` or `waffle_pi`) if the **TURTLEBOT3_MODEL** is not defined in the `.bashrc` file.  
+Export your TurtleBot3 model (`waffle` or `waffle_pi`) if the **TURTLEBOT3_MODEL** is not defined in your `.bashrc` file.  
 **[TurtleBot3 SBC]**  
 ```bash
 $ export TURTLEBOT3_MODEL=waffle_pi
 ```
-
-**NOTE**: TurtleBot3 Model may differ from the hardware configuration of TurtleBot3 such as `burger` or `waffle` or `waffle_pi`.
-{: .notice--info}
 
 <!--
 ```bash
@@ -36,7 +33,7 @@ $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
 
 ### [Run Bringup](#run-bringup)
 
-Run Bringup node for TurtleBot3, and start rosserial and LDS sensor using following command.  
+Run the Bringup node for TurtleBot3, and start rosserial and LDS sensor using the following command.  
 **[TurtleBot3 SBC]**  
 ```bash
 $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
