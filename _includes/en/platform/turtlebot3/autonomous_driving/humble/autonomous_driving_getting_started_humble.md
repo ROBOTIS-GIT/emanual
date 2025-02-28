@@ -3,7 +3,7 @@
 
 {% capture notice_01 %}
 **NOTE**
-- Autorace package is mainly developed on `Ubuntu 22.04` with `ROS2 Humble Hawksbill`.
+- Autorace package is mainly developed on `Ubuntu 22.04` with `ROS 2 Humble Hawksbill`.
 - Autorace package is mainly tested under the Gazebo simulation.
 - To simulate given examples properly, complete [Simulation](/docs/en/platform/turtlebot3/simulation/). 
 {% endcapture %}
