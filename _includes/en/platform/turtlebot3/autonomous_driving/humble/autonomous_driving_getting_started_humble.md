@@ -37,5 +37,5 @@ $ sudo apt install ros-humble-image-transport ros-humble-cv-bridge ros-humble-vi
 
 1. Add export line. Put your workspace name in {your_ws}. This plugin allows you to animate dynamic environments in your world.  
 ``` bash
-echo 'export GAZEBO_PLUGIN_PATH=$HOME/{your_ws}/build/turtlebot3_gazebo:$GAZEBO_PLUGIN_PATH' >> ~/.bashrc
+$ echo 'export GAZEBO_PLUGIN_PATH=$HOME/{your_ws}/build/turtlebot3_gazebo:$GAZEBO_PLUGIN_PATH' >> ~/.bashrc
 ```
