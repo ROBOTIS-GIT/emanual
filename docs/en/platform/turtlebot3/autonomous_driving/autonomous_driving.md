@@ -40,7 +40,6 @@ page_number: 19
 ## [Missions](#missions)
 
 AutoRace is a competition for autonomous driving robot platforms designed to provide varied test conditions for autonomous robotics development. The provided open source libraries are based on ROS and are intended to be used as a base for further competitor development. Join Autorace and show off your development skill!
-
 **WARNING**: Be sure to read [Autonomous Driving](#autonomous-driving) in order to start missions.
 {: .notice--warning}
 
