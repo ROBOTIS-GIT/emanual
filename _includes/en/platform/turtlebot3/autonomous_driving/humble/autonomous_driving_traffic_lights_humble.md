@@ -3,7 +3,7 @@
 
 This section describes how to complete the traffic light mission by having TurtleBot3 recognize the traffic lights and complete the course.
 
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/d2cP8OTMbwI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+<iframe width="640" height="360" src="https://www.youtube.com/embed/SaU8PjXT5lA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ##### [Traffic Lights detection process](#the-detection-process)
 1. Filter the image to extract the red, yellow, green color mask images.
