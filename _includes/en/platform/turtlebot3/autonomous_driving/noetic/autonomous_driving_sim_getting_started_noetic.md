@@ -1,6 +1,6 @@
 {% capture notice_01 %}
 **NOTE**
-- Autorace package was developed on `Ubuntu 20.04` running `ROS1 Noetic Ninjemys`.
+- The Autorace package was developed on `Ubuntu 20.04` running `ROS1 Noetic Ninjemys`.
 - The Autorace package has only been comprehensively tested for operation in the Gazebo simulator.
 - Instructions for correct simulation setup are available in the [Simulation](/docs/en/platform/turtlebot3/simulation/) section of the manual.
 {% endcapture %}
@@ -18,7 +18,7 @@ The contents of the e-Manual are subject to change without prior notice. Therefo
 `Remote PC`
 
 - ROS 1 Noetic installed on your Laptop or desktop PC.
-- These instructions are based on Gazebo simulation, but can be ported to the actual robot later.
+- These instructions are intended for use in a Gazebo simulation, but can be ported to the actual robot later.
 
 <details>
 <summary>
@@ -29,18 +29,18 @@ The contents of the e-Manual are subject to change without prior notice. Therefo
 
 `TurtleBot3 Burger`
 
-- The basic model for AutoRace packages for the autonomous driving on ROS.
-- Provided source code and AutoRace Packages are made based on TurtleBot3 Burger.
+- The basic model for AutoRace packages for autonomous driving on ROS.
+- Provided source code and AutoRace Packages are made based on the TurtleBot3 Burger.
 
 `Remote PC`
 
-- It communicates with the single board computer (SBC) on Turtlebot3.
-- Laptop, desktop, or other devices with ROS 1.
+- Communicates with the single board computer (SBC) on the Turtlebot3.
+- Laptop, desktop, or other device running ROS 1.
 
 `Raspberry Pi camera module with a camera mount`
 
 - You can use a different module if ROS supports it.
-- Source code provided to calibrate the camera are created based on ([Fisheye Lens](https://www.waveshare.com/rpi-camera-g.htm)) module.
+- Source code provided to calibrate the camera was created for the ([Fisheye Lens](https://www.waveshare.com/rpi-camera-g.htm)) module.
 
 `AutoRace tracks and objects`
 
@@ -57,7 +57,7 @@ $ git clone -b noetic https://github.com/ROBOTIS-GIT/turtlebot3_autorace_2020.gi
 $ cd ~/catkin_ws && catkin_make
 ```
 
-2. Install additional dependent packages on the `Remote PC`.
+2. Install additional required packages on the `Remote PC`.
 ```bash
 $ sudo apt install ros-noetic-image-transport ros-noetic-cv-bridge ros-noetic-vision-opencv python3-opencv libopencv-dev ros-noetic-image-proc
 ```
@@ -69,17 +69,17 @@ $ sudo apt install ros-noetic-image-transport ros-noetic-cv-bridge ros-noetic-vi
 
 <!-- ### [Autorace Package Installation for an actual TurtleBot3](#autorace-package-installation-for-an-actual-turtlebot3) -->
 
-The following instructions describes how to install packages and to calibrate camera.
+The following instructions describes how to install packages and to calibrate the camera for an actual TurtleBot3.
 
-1. Install AutoRace package on both `Remote PC` and `SBC`.
+1. Install AutoRace packages on both the `Remote PC` and `SBC`.
 ```bash
 $ cd ~/catkin_ws/src/
 $ git clone -b noetic https://github.com/ROBOTIS-GIT/turtlebot3_autorace_2020.git
 $ cd ~/catkin_ws && catkin_make
 ```
 
-2. Install additional dependent packages on `SBC`.
-    - Create a swap file to prevent lack of memory in building OpenCV. 
+2. Install additional required packages on the `SBC`.
+    - Create a swap file to prevent lack of memory when building OpenCV. 
 
         ```bash
         $ sudo fallocate -l 4G /swapfile
@@ -149,20 +149,20 @@ $ cd ~/catkin_ws && catkin_make
         $ sudo apt-get update
         ```
 
-    * Turn off Raspberry Pi, take out the microSD card and edit the config.txt in system-boot section. add start_x=1 before the enable_uart=1 line.
+    * Turn off the Raspberry Pi, take out the microSD card and edit the config.txt in the system-boot section. add start_x=1 before the enable_uart=1 line.
 
         ```bash
         $ sudo apt install ffmpeg
         $ ffmpeg -f video4linux2 -s 640x480 -i /dev/video0 -ss 0:0:2 -frames 1 capture_test.jpg
         ```
 
-    * Install additional dependent packages
+    * Install additional required packages
     
         ```bash
         $ sudo apt install ros-noetic-cv-camera
         ```
 
-3. Install additional dependent packages on `Remote PC`.
+3. Install additional required packages on `Remote PC`.
 ```bash
 $ sudo apt install ros-noetic-image-transport ros-noetic-image-transport-plugins ros-noetic-cv-bridge ros-noetic-vision-opencv python3-opencv libopencv-dev ros-noetic-image-proc ros-noetic-cv-camera ros-noetic-camera-calibration 
 ```
