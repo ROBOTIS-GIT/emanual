@@ -1,16 +1,16 @@
 
 <!-- #### [Traffic Lights](#traffic-lights) -->
 
-Traffic Light is the first mission of AutoRace. TurtleBot3 recognizes the traffic lights and starts the course.
+Traffic Light is the first mission of AutoRace. TurtleBot3 must recognize the traffic lights and start the course.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d2cP8OTMbwI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ##### [Traffic Lights Detection](#traffic-lights-detection)
 
-**NOTE**: In order to fix the traffic ligth to a specific color in Gazebo, you may modify the controlMission method in the `core_node_mission` file in the ***turtlebot3_autorace_2020/turtlebot3_autorace_core/nodes/*** directory.
+**NOTE**: In order to fix the traffic light to a specific color in Gazebo, you may modify the controlMission method in the `core_node_mission` file in the ***turtlebot3_autorace_2020/turtlebot3_autorace_core/nodes/*** directory.
 {: .notice}
 
-1. Open a new terminal and launch Autorace Gazebo simulation. The `roscore` will be automatically launched with the **roslaunch** command.
+1. Open a new terminal and launch Autorace Gazebo simulation. Launch `roscore` with the **roslaunch** command.
 ```bash
 $ roslaunch turtlebot3_gazebo turtlebot3_autorace_2020.launch
 ```
@@ -25,7 +25,7 @@ $ roslaunch turtlebot3_autorace_camera intrinsic_camera_calibration.launch
 $ roslaunch turtlebot3_autorace_camera extrinsic_camera_calibration.launch
 ```
 
-4. Open a new terminal and launch the traffic light detection node with a calibration option.
+4. Open a new terminal and launch the traffic light detection node with the calibration option.
 ```bash
 $ roslaunch turtlebot3_autorace_detect detect_traffic_light.launch mode:=calibration
 ```
@@ -51,7 +51,7 @@ $ rqt
 $ rosrun rqt_reconfigure rqt_reconfigure
 ```
 
-8. Select `detect_traffic_light` on the left column and adjust parameters properly so that the colors of the traffic light can be well detected.
+8. Select `detect_traffic_light` in the left column and adjust parameters properly so that the colors of the traffic light can be detected and differentiated.
 
     ![](/assets/images/platform/turtlebot3/autonomous_driving/noetic_traffic_light_reconfigure.png)  
     > Traffic light reconfigure
@@ -60,13 +60,13 @@ $ rosrun rqt_reconfigure rqt_reconfigure
 
       ![](/assets/images/platform/turtlebot3/autonomous_driving/noetic_traffic_light_yaml.png)
 
-10. Write modified values and save the file.
+10. Write the modified values and save the file.
 
 ##### [Testing Traffic Light Detection](#testing-traffic-light-detection)
 
 1. Close all terminals or terminate them with `Ctrl` + `C`
 
-2. Open a new terminal and launch Autorace Gazebo simulation. The `roscore` will be automatically launched with the **roslaunch** command.
+2. Open a new terminal and launch Autorace Gazebo simulation. Launch `roscore` with the **roslaunch** command.
 ```bash
 $ roslaunch turtlebot3_gazebo turtlebot3_autorace_2020.launch
 ```
@@ -91,16 +91,16 @@ $ roslaunch turtlebot3_autorace_detect detect_traffic_light.launch
 $ rqt_image_view
 ```
 
-7. Check each topics: `/detect/image_red_light`, `/detect/image_yellow_light`, `/detect/image_green_light`.
+7. Check each topic: `/detect/image_red_light`, `/detect/image_yellow_light`, `/detect/image_green_light`.
 
 ##### [How to Run Traffic Light Mission](#how-to-run-traffic-light-mission)
 
-**WARNING**: Please calibrate the color as described in the [Traffic Lights Detecion](#traffic-lights-detection) section before running the traffic light mission.  
+**WARNING**: Please calibrate the color as described in [Traffic Lights Detection](#traffic-lights-detection) section before running the traffic light mission.  
 {: .notice--warning}
 
 1. Close all terminals or terminate them with `Ctrl` + `C`
 
-2. Open a new terminal and launch Autorace Gazebo simulation. The `roscore` will be automatically launched with the **roslaunch** command.
+2. Open a new terminal and launch the Autorace Gazebo simulation. Launch `roscore` with the **roslaunch** command.
 ```bash
 $ roslaunch turtlebot3_gazebo turtlebot3_autorace_2020.launch
 ```

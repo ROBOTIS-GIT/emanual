@@ -10,7 +10,7 @@ This section describes how you can detect a traffic bar. TurtleBot should detect
 1. Filter the image to extract the red color mask image.
 2. Find the rectangle in the masked image.
 3. Connect the three squares to make a straight line.
-4. Determine whether a line is open or closed by measuring the slope of the line.
+4. Determine whether the bar is open or closed by measuring the slope of the line.
 
 ##### [Level Crossing Detection](#level-crossing-detection)
 

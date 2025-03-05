@@ -9,7 +9,7 @@ The following instructions describe how to use the lane detection feature and to
    **NOTE**: Be sure that yellow lane is placed left side of the robot and White lane is placed right side of the robot.
    {: .notice}
 
-2. Launch roscore on `Remote PC`.
+2. Launch roscore on the `Remote PC`.
 ```bash
 $ roscore
 ```

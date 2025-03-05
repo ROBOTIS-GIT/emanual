@@ -1,7 +1,7 @@
 
 <!-- #### [Intersection](#intersection) -->
 
-Intersection is the second mission of AutoRace. TurtleBot3 must detect the directional sign at the intersection, and proceed to the directed path.
+Intersection is the second mission of AutoRace. The TurtleBot3 must detect the directional sign at the intersection, and proceed to the correct path.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/F101PDx20nc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -9,7 +9,7 @@ Intersection is the second mission of AutoRace. TurtleBot3 must detect the direc
 
 1. Close all terminals or terminate them with `Ctrl` + `C`
 
-2. Open a new terminal and launch Autorace Gazebo simulation. The `roscore` will be automatically launched with the **roslaunch** command.
+2. Open a new terminal and launch Autorace Gazebo simulation. Launch `roscore` with the **roslaunch** command.
 ```bash
 $ roslaunch turtlebot3_gazebo turtlebot3_autorace_2020.launch
 ```

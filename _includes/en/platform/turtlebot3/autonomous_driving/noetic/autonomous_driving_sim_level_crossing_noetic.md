@@ -1,7 +1,7 @@
 
 <!-- #### [Level Crossing](#level-crossing) -->
 
-Level Crossing is the fifth mission of TurtleBot3 AutoRace 2020. TurtleBot3 must detect the stop sign and wait until the crossing gate is lifted.
+Level Crossing is the fifth mission of TurtleBot3 AutoRace 2020. The TurtleBot3 must detect the stop sign and wait until the crossing gate is lifted.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PMOYhx9kiDk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -9,7 +9,7 @@ Level Crossing is the fifth mission of TurtleBot3 AutoRace 2020. TurtleBot3 must
 
 1. Close all terminals or terminate them with `Ctrl` + `C`
 
-2. Open a new terminal and launch Autorace Gazebo simulation. The `roscore` will be automatically launched with the **roslaunch** command.
+2. Open a new terminal and launch Autorace Gazebo simulation. Launch `roscore` with the **roslaunch** command.
 ```bash
 $ roslaunch turtlebot3_gazebo turtlebot3_autorace_2020.launch
 ```
@@ -42,20 +42,20 @@ $ rqt
 $ rosrun rqt_reconfigure rqt_reconfigure
 ```
 
-9. Adjust parameters in the `detect_level_crossing` in the left column to enhance the detection of crossing gate.
+9. Adjust parameters in the `detect_level_crossing` in the left column to enhance the detection of the crossing gate.
 ![](/assets/images/platform/turtlebot3/autonomous_driving/noetic_level_reconfigure.png)
 
 10. Open `level.yaml` file located at ***turtlebot3_autorace_detect/param/level/***.
 
     ![](/assets/images/platform/turtlebot3/autonomous_driving/noetic_level_yaml.png)
 
-11. Write modified values to the file and save.
+11. Write any modified values to the file and save.
 
 ##### Testing Level Crossing Detection
 
 1. Close all terminals or terminate them with `Ctrl` + `C`
 
-2. Open a new terminal and launch Autorace Gazebo simulation. The `roscore` will be automatically launched with the **roslaunch** command.
+2. Open a new terminal and launch Autorace Gazebo simulation. Launch `roscore` with the **roslaunch** command.
 ```bash
 $ roslaunch turtlebot3_gazebo turtlebot3_autorace_2020.launch
 ```
@@ -86,7 +86,7 @@ $ rqt_image_view
 
 1. Close all terminals or terminate them with `Ctrl` + `C`
 
-2. Open a new terminal and launch Autorace Gazebo simulation. The `roscore` will be automatically launched with the **roslaunch** command.
+2. Open a new terminal and launch Autorace Gazebo simulation. Lauch `roscore` with the **roslaunch** command.
 ```bash
 $ roslaunch turtlebot3_gazebo turtlebot3_autorace_2020.launch
 ```
