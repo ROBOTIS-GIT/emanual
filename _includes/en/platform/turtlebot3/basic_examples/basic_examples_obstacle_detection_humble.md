@@ -3,7 +3,7 @@
 To successfully detect obstacles and prevent collisions, several key components must be launched. The interaction between these components enables real-time obstacle detection and autonomous stopping of the robot when an obstacle is detected within a certain distance.
 
 - **TurtleBot3 Obstacle Detection Node (`turtlebot3_obstacle_detection node`)**
-    - Subscribes to LaserScan messages from the LiDAR sensor (/scan).
+    - Subscribes to LaserScan messages from the LiDAR sensor `/scan`.
     - Analyzes scan data to detect obstacles in a defined stop zone (e.g., within 0.5m distance, -90 to +90 degrees in front).
     - Publishes appropriate `cmd_vel` commands to control the robot’s motion.
 
@@ -39,7 +39,7 @@ To activate the Obstacle Detection system, launch the following node:
   ```bash
   $ ros2 run turtlebot3_example turtlebot3_obstacle_detection
   ```
-This node subscribes to LaserScan (/scan) and processes LiDAR data to determine whether there are obstacles within the predefined range.
+This node subscribes to LaserScan `/scan` and processes LiDAR data to determine whether there are obstacles within the predefined range.
 
 **3. Testing Obstacle Detection**  
 Once the system is set up, you can test the obstacle detection functionality to verify its behavior in real-time.
@@ -56,5 +56,3 @@ Once the system is set up, you can test the obstacle detection functionality to 
     2. It monitors the distance to the closest obstacle within the front 180° field of view (-90° to +90°).
     3. If any object is detected within 0.5m, the robot sets linear.x = 0.0, stopping the movement.
     4. If no obstacles are detected, the robot resumes its normal movement (linear.x = 0.2).
-
-
