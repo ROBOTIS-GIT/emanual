@@ -76,7 +76,7 @@ This mission does not have any associated example code.
 
 ## [Camera Calibration](#camera-calibration)
 Calibrating the camera is very important for autonomous driving. The following instructions provide a step by step guide on how to calibrate the camera.
-
+The following instructions provide a step by step guide on how to calibrate the camera.
 ### [Camera Imaging Calibration](#camera-imaging-calibration)
 {% include en/platform/turtlebot3/autonomous_driving/noetic/autonomous_driving_sim_camera_imaging_calibration_noetic.md %}
 
