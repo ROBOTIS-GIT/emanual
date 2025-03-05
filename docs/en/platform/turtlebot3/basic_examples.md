@@ -51,7 +51,7 @@ page_number: 22
 ## [Obstacle Detection](#obstacle-detection)
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-**NOTE**: This feature is not supported yet. We are currently working on it.
+{% include en/platform/turtlebot3/basic_examples/basic_examples_obstacle_detection_humble.md %}
 {: .notice}
 </section>
 
