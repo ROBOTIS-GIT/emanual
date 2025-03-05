@@ -1,7 +1,7 @@
 
 <!-- #### [Tunnel](#tunnel) -->
 
-This section describes how you can complete the tunnel mission. The TurtleBot must use maps and navigation to proceed through obstacle areas with no lanes.
+This section describes how to complete the tunnel mission. The TurtleBot must use maps and navigation to proceed through obstacle areas with no lanes.
 
 <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/Qx3vbgoSNO8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
