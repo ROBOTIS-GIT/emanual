@@ -1,11 +1,11 @@
 
 <!-- #### [Check Calibration Result](#check-calibration-result) -->
 
-After completing calibrations, run the step by step instructions below on `Remote PC` to check the calibration result.
+After completing calibration, follow the step by step instructions below on the `Remote PC` to check the calibration result.
 
-1. Close all of terminal.
+1. Close all terminals.
 
-2. Open a new terminal and launch Autorace Gazebo simulation. The `roscore` will be automatically launched with the **roslaunch** command.
+2. Open a new terminal and launch Autorace Gazebo simulation. Launch `roscore` with the **roslaunch** command.
 ```bash
 $ roslaunch turtlebot3_gazebo turtlebot3_autorace_2020.launch
 ```
@@ -25,7 +25,7 @@ $ roslaunch turtlebot3_autorace_camera extrinsic_camera_calibration.launch
 $ rqt_image_view
 ```
 
-6. With successful calibration settings, the bird eye view image should appear as below when the `/camera/image_projected_compensated` topic is selected.
+6. With successful calibration settings, the bird eye view image should appear like the image below when the `/camera/image_projected_compensated` topic is selected.
 ![](/assets/images/platform/turtlebot3/autonomous_driving/noetic_camera_calibration_rqt_image_view.png)
 
 <details>
@@ -67,6 +67,6 @@ $ rqt
     > rqt_reconfigure 
 
 
-From now, the following descriptions will mainly adjust `feature detector / color filter` for object recognition. Every adjustment after here is independent to each other's process. However, if you want to adjust each parameters in series, complete every adjustment perfectly, then continue to next.
+From now, the following descriptions will mainly adjust `feature detector / color filter` for object recognition. Every adjustment after here is independent to each other process. However, if you want to adjust each parameters in series, complete each individual adjustment, then continue to next.
 
 </details>

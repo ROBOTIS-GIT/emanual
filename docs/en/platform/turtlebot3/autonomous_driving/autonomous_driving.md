@@ -39,9 +39,7 @@ page_number: 19
 <!-- Mission -->
 ## [Missions](#missions)
 
-The AutoRace is a competition for autonomous driving robot platforms.
-To provide various conditions for a robot application development, the game provide structural regulation as less as possible. Provided open sources are based on ROS, and can be applied to this competition. The contents can be continually updated. Join the competition and show your skill.
-
+AutoRace is a competition for autonomous driving robot platforms designed to provide varied test conditions for autonomous robotics development. The provided open source libraries are based on ROS and are intended to be used as a base for further competitor development. Join Autorace and show off your development skill!
 **WARNING**: Be sure to read [Autonomous Driving](#autonomous-driving) in order to start missions.
 {: .notice--warning}
 
@@ -50,7 +48,7 @@ To provide various conditions for a robot application development, the game prov
 {% include en/platform/turtlebot3/autonomous_driving/humble/autonomous_driving_traffic_lights_humble.md %}
 
 ### [Intersection](#intersection)
-This mission no longer supports example source code.
+This mission does not have any associated example code.
 {: .notice}
 
 <!--construction-->
@@ -58,7 +56,7 @@ This mission no longer supports example source code.
 {% include en/platform/turtlebot3/autonomous_driving/humble/autonomous_driving_construction_humble.md %}
 
 ### [Parking](#parking)
-This mission no longer supports example source code.
+This mission does not have any associated example code.
 {: .notice}
 
 <!--level_crossing-->
@@ -77,8 +75,8 @@ This mission no longer supports example source code.
 {% include en/platform/turtlebot3/autonomous_driving/noetic/autonomous_driving_sim_getting_started_noetic.md %}
 
 ## [Camera Calibration](#camera-calibration)
-Calibrating the camera is very important for autonomous driving. The following describes how to simply calibrate the camera step by step.
-
+Calibrating the camera is very important for autonomous driving. The following instructions provide a step by step guide on how to calibrate the camera.
+The following instructions provide a step by step guide on how to calibrate the camera.
 ### [Camera Imaging Calibration](#camera-imaging-calibration)
 {% include en/platform/turtlebot3/autonomous_driving/noetic/autonomous_driving_sim_camera_imaging_calibration_noetic.md %}
 
@@ -99,9 +97,7 @@ Calibrating the camera is very important for autonomous driving. The following d
 
 ## [Missions](#missions)
 
-The AutoRace is a competition for autonomous driving robot platforms.  
-To provide various conditions for a robot application development, the game provide structural regulation as less as possible. Provided open sources are based on ROS, and can be applied to this competition. The contents can be continually updated. Join the competition and show your skill.
-
+AutoRace is a competition for autonomous driving robot platforms designed to provide varied test conditions for autonomous robotics development. The provided open source libraries are based on ROS and are intended to be used as a base for further competitor development. Join Autorace and show off your development skill!
 **WARNING**: Be sure to read [Autonomous Driving](#autonomous-driving) in order to start missions.
 {: .notice--warning}
 

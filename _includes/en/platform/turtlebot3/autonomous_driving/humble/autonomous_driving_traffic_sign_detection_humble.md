@@ -1,15 +1,16 @@
 ## [Traffic Sign Detection](#traffic-sign-detection)
 
+Traffic sign detection allows the TurtleBot3 to recognize and respond to traffic signs while driving autonomously.
+
 <iframe width="640" height="360" src="https://www.youtube.com/embed/DhSZo3dGW6A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Traffic sign detection allows TurtleBot3 to recognize and respond to traffic signs while driving autonomously.
+
 This feature uses the `SIFT` (Scale-Invariant Feature Transform) algorithm, which detects key feature points in an image and compares them to a stored reference image for recognition. Signs with more distinct edges tend to yield better recognition results.
 
-This section explains how to capture and store traffic sign images, configure detection parameters, and run the detection process in Gazebo simulation.
+This section explains how to capture and store traffic sign images, configure detection parameters, and run the detection process in the Gazebo simulation.
 
-**NOTE**: More edges in the traffic sign increase recognition results from the SIFT algorithm.  
-Please refer to the link below for related information.  
-[https://docs.opencv.org/master/da/df5/tutorial_py_sift_intro.html](https://docs.opencv.org/master/da/df5/tutorial_py_sift_intro.html)
+**NOTE**: More and better defined edges in the traffic sign increase recognition results from the SIFT algorithm.  
+Please refer to [this SIFT documentation](https://docs.opencv.org/master/da/df5/tutorial_py_sift_intro.html) for additional information.
 {: .notice}
 
 **Launching Traffic Sign Detection in Simulation**
@@ -19,7 +20,7 @@ Start the Autorace Gazebo simulation to set up the environment:
 $ ros2 launch turtlebot3_gazebo turtlebot3_autorace_2020.launch
 ```
 
-Then, control TurtleBot3 manually using the keyboard to navigate the vehicle toward traffic signs:
+Then, control the TurtleBot3 manually using the keyboard to navigate the vehicle toward traffic signs:
 ```bash
 $ ros2 run turtlebot3_teleop teleop_keyboard
 ```
@@ -28,7 +29,7 @@ Position the robot so that traffic signs are clearly visible in the camera feed.
 
 **Capturing and Storing Traffic Sign Images**
 
-To ensure accurate recognition, the system requires pre-captured traffic sign images as reference data. While the repository provides default images, recognition accuracy may vary depending on conditions. If the SIFT algorithm does not perform well with the provided images, capturing and using your own traffic sign images can improve recognition results.
+To ensure accurate recognition, the system requires pre-captured traffic sign images as reference data. While the repository provides default images, recognition accuracy may vary depending on conditions. **If the SIFT algorithm does not perform well with the provided images, capturing and using your own traffic sign images can improve recognition results**.
 
 1. Open `rqt`, then navigate to Plugins > Visualization > Image View.
 2. Create a new image view window and select the topic: `/camera/image_compensated` to display the camera feed.
@@ -39,7 +40,7 @@ To ensure accurate recognition, the system requires pre-captured traffic sign im
 Save the images in the turtlebot3_autorace_detect package **/turtlebot3_autorace/turtlebot3_autorace_detect/image/**.
 
 Ensure that the file names match those used in the source code, as the system references these names:
-- `construction.png`, `intersection.png`, `left.png`, `right.png`, `parking.png`, `stop.png`, `tunnel.png` file names are used by default.
+- The `construction.png`, `intersection.png`, `left.png`, `right.png`, `parking.png`, `stop.png` and `tunnel.png` file names are used by default.
 
 
 If recognition performance is inconsistent with the default images, manually captured traffic sign images may enhance accuracy and improve overall detection reliability.
@@ -53,15 +54,15 @@ $ ros2 launch turtlebot3_autorace_camera intrinsic_camera_calibration.launch.py
 $ ros2 launch turtlebot3_autorace_camera extrinsic_camera_calibration.launch.py
 ```
 
-Then, launch the traffic sign detection node, specifying the mission type:
-A specific mission for the ***mission*** argument must be selected among below.
+Then, launch the traffic sign detection node, specifying the mission type:<br>
+A specific mission for the ***mission*** argument must be selected from the following options:
 - `intersection`, `construction`, `parking`, `level_crossing`, `tunnel`
 ```bash
 $ ros2 launch turtlebot3_autorace_detect detect_sign.launch.py mission:=SELECT_MISSION
 ```
 This command starts the detection process and allows TurtleBot3 to recognize and respond to the selected traffic sign.
     
-    **NOTE**: Replace the `SELECT_MISSION` keyword with one of available options in the above.
+    **NOTE**: Replace the `SELECT_MISSION` keyword with one of the available options above.
     {: .notice}
 <br>
 
