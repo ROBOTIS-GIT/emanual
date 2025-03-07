@@ -51,8 +51,7 @@ page_number: 22
 ## [Obstacle Detection](#obstacle-detection)
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-**NOTE**: This feature is not supported yet. We are currently working on it.
-{: .notice}
+{% include en/platform/turtlebot3/basic_examples/basic_examples_obstacle_detection_humble.md %}
 </section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
@@ -74,8 +73,7 @@ page_number: 22
 ## [Point Operation](#point-operation)
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-**NOTE**: This feature is not supported yet. We are currently working on it.
-{: .notice}
+{% include en/platform/turtlebot3/basic_examples/basic_examples_point_operation_humble.md %}
 </section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
