@@ -1,7 +1,7 @@
 
 <!-- #### [Parking](#parking) -->
 
-Parking is the fourth mission of TurtleBot3 AutoRace 2020. TurtleBot3 must detect the parking sign, and park at an empty parking spot.
+Parking is the fourth mission in TurtleBot3 AutoRace 2020. The TurtleBot3 must detect the parking sign, and park in an empty parking spot.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZRuX_nYwohI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

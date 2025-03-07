@@ -1,18 +1,18 @@
 
 <!-- #### [Tunnel](#tunnel) -->
 
-This section describes how you can pass a tunnel mission. TurtleBot must use maps and navigation to navigate through obstacle areas with no lanes.
+This section describes how to complete the tunnel mission. The TurtleBot must use maps and navigation to proceed through obstacle areas with no lanes.
 
 <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/Qx3vbgoSNO8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
 ##### [How to Run Tunnel Mission](#how-to-run-tunnel-mission)
 
-**NOTE**: Change the navigation parameters in the **turtlebot3/turtlebot3_navigation2/param/buger_cam** file. If you slam and make a new map, Place the new map to turtlebot3_autorace package you've placed **/turtlebot3_autorace/turtlebot3_autorace_tunnel/map/**.
+**NOTE**: Change the navigation parameters in the **turtlebot3/turtlebot3_navigation2/param/buger_cam** file. If you slam and make a new map, Place the new map in the turtlebot3_autorace package at **/turtlebot3_autorace/turtlebot3_autorace_tunnel/map/**.
 {: .notice}
 
 1. Close all terminals or terminate them with `Ctrl` + `C`
 
-2. Open a new terminal and launch Autorace Gazebo simulation.
+2. Open a new terminal and launch the Autorace Gazebo simulation.
 ```bash
 $ ros2 launch turtlebot3_gazebo turtlebot3_autorace_2020.launch.py
 ```

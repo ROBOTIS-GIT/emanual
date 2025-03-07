@@ -1,6 +1,8 @@
 ## [Lane Detection](#lane-detection)
 
-Lane detection allows TurtleBot3 to recognize lane markings and follow them autonomously. The system processes camera images from either a real TurtleBot3 or Gazebo simulation, applies color filtering, and identifies lane boundaries.
+Lane detection allows the TurtleBot3 to recognize lane markings and follow them autonomously. The system processes camera images from either a real TurtleBot3 or Gazebo simulation, applies color filtering, and identifies lane boundaries.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IqV4huXGBEk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 This section explains how to launch the lane detection system, visualize the detected lane markings, and calibrate the parameters to ensure accurate tracking.
 <br>
@@ -45,9 +47,9 @@ These visualizations help confirm that the lane detection algorithm is correctly
 
 **Calibrating Lane Detection Parameters**
 
-For better accuracy, tuning detection parameters is necessary. Adjusting these parameters ensures the robot properly identifies lanes under different lighting and environmental conditions.
+For optimal accuracy, tuning detection parameters is necessary. Adjusting these parameters ensures the robot properly identifies lanes under different lighting and environmental conditions.
 
-1. Open **lane.yaml** file located in **turtlebot3_autorace_detect/param/lane/**. You need to write modified values to the file. This will make the camera set its parameters as you set here from next launching. 
+1. Open the **lane.yaml** file located in **turtlebot3_autorace_detect/param/lane/** and write your modified values to this file. This will ensure the camera uses the modified parameters for future launches.
     ``` bash
     $ cd ~/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace_detect/param/lane
     $ gedit lane.yaml
@@ -57,7 +59,7 @@ For better accuracy, tuning detection parameters is necessary. Adjusting these p
 
 <br>
 
-**Running Lane Tracking Operation**
+**Running Lane Tracking**
 
 Once calibration is complete, restart the lane detection node without the calibration option:
 ```bash
