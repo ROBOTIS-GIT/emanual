@@ -1,25 +1,3 @@
----
-layout: archive
-lang: en
-ref: op3_hardware
-read_time: true
-share: true
-author_profile: false
-permalink: /docs/en/platform/op3/hardware/
-tabs: "Revision"
-tab_title1: "2025 ~"
-tab_title2: "~ 2023"
-sidebar:
-  title: ROBOTIS OP3
-  nav: "op3"
-product_group: op3
-page_number: 7
----
-
-<style>body {counter-reset: h1 6 !important;}</style>
-
-{::options parse_block_html="true" /}
-<section data-id="{{ page.tab_title1 }}" class="tab_contents">
 
 # [Hardware](#hardware)
 
@@ -66,9 +44,3 @@ ROBOTIS provides STP files for ROBOTIS-OP3 parts and assembly. Users can view fr
 ### ETC
 - USB Camera : [Logitech C920](https://github.com/ROBOTIS-GIT/ROBOTIS-OP-Series-Data/blob/master/ROBOTIS-OP3/Hardware/Electronics/Logitech%20C920.pdf)
 - [Speaker](https://github.com/ROBOTIS-GIT/ROBOTIS-OP-Series-Data/blob/master/ROBOTIS-OP3/Hardware/Electronics/ROBOTIS-OP3_Speaker.pdf)
-
-</section>
-
-<section data-id="{{ page.tab_title2 }}" class="tab_contents">
-{% include en/platform/op3/hardware_rev2.md %}
-</section>
