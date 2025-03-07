@@ -1,5 +1,5 @@
-This section explains how to configure and execute the TurtleBot3 patrol function, enabling autonomous movement along predefined and custom routes using ROS 2 Humble. The Action Client sends patrol parameters (e.g., shape, area, or iteration count) to the Action Server, which then translates these parameters into `cmd_vel` commands to move the TurtleBot3. Please refer to the above [tutorial video][tutorial_video] for more detailed usage.
-
+This section explains how to configure and execute the TurtleBot3 patrol function, enabling autonomous movement along predefined and custom routes using ROS 2 Humble. The Action Client sends patrol parameters (e.g., shape, area, or iteration count) to the Action Server, which then translates these parameters into `cmd_vel` commands to move the TurtleBot3. Please refer to the below video for more detailed usage.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6ZyaFREFhnk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Understanding the Overall Flow**
 

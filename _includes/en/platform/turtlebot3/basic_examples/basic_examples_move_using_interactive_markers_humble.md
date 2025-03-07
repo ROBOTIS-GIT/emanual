@@ -1,5 +1,5 @@
-This example demonstrates how to control TurtleBot3 in RViz using Interactive Markers. Interactive Markers allow users to move the robot by manipulating on-screen controls in RViz, enabling both linear movement and rotation without the need for a physical joystick or command-line inputs. Please refer to the above [tutorial video][tutorial_video] for more detailed usage.
-<br><br>
+This example demonstrates how to control TurtleBot3 in RViz using Interactive Markers. Interactive Markers allow users to move the robot by manipulating on-screen controls in RViz, enabling both linear movement and rotation without the need for a physical joystick or command-line inputs. Please refer to the above video for more detailed usage.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/im7HX76zR7U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Understanding the Overall Flow**
 
