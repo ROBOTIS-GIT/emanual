@@ -1,7 +1,7 @@
 
 <!-- #### [Construction](#construction) -->
 
-Construction is the third mission of TurtleBot3 AutoRace 2020. TurtleBot3 must avoid obstacles in the construction area.
+Construction is the third mission in TurtleBot3 AutoRace 2020. The TurtleBot3 must avoid obstacles in the construction area.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pO9SXz7ad7M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

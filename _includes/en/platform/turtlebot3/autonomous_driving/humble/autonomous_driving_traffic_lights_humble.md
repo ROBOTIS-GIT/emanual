@@ -1,9 +1,9 @@
 
 <!-- ### [Traffic Lights](#traffic-lights) -->
 
-This section describes how you can pass a traffic light mission. TurtleBot3 recognizes the traffic lights and starts the course.
+This section describes how to complete the traffic light mission by having TurtleBot3 recognize the traffic lights and complete the course.
 
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/d2cP8OTMbwI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+<iframe width="640" height="360" src="https://www.youtube.com/embed/SaU8PjXT5lA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ##### [Traffic Lights detection process](#the-detection-process)
 1. Filter the image to extract the red, yellow, green color mask images.
@@ -37,7 +37,7 @@ $ ros2 launch turtlebot3_autorace_detect detect_traffic_light.launch.py calibrat
 $ rqt
 ```
 
-6. Navigate **Plugins** > **Visualization** > **Image view**. Create two image view windows.
+6. Navigate to **Plugins** > **Visualization** > **Image view**. Create two image view windows.
 
 7. In one window, select the `/detect/image_traffic_light/compressed` topic. In another window, select one of the four topics to view the masked images:   
    `/detect/image_red_light`, `/detect/image_yellow_light`, `/detect/image_green_light`, `/detect/image_traffic_light`.
@@ -51,8 +51,8 @@ $ rqt
     <img src="/assets/images/platform/turtlebot3/autonomous_driving/noetic_detect_traffic_light_red.png" width="800">
     > Detecting the Red light. The image on the right displays `/detect/image_red_light` topic.
 
-8.  Navigate **Plugins** > **Configuration** > **Dynamic Reconfigure**.
-9.  Adjust parameters in `/detect/traffic_light`. It affects each masked image topic.
+8.  Navigate to **Plugins** > **Configuration** > **Dynamic Reconfigure**.
+9.  Adjust the parameters in `/detect/traffic_light` to adjust the configuration of each masked image topic.
 
     <img src="/assets/images/platform/turtlebot3/autonomous_driving/noetic_traffic_light_reconfigure.png" width="900">
     > Traffic light reconfigure
@@ -67,7 +67,7 @@ $ gedit ~/turtlebot3_ws/src/turtlebot3_autorace_2020/turtlebot3_autorace_detect/
       ![](/assets/images/platform/turtlebot3/autonomous_driving/humble_traffic_light_yaml.png)
       > turtlebot3_autorace_detect/param/traffic_light/'traffic_light.yaml'
 
-1. Write modified values and save the file.
+1. Write the modified values and save the file to keep your changes.
 
 ##### [Testing Traffic Light Detection](#testing-traffic-light-detection)
 
