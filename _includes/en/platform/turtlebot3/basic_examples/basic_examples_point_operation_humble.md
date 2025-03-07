@@ -39,7 +39,7 @@ Once connected, launch the essential TurtleBot3 bringup package:
 
 Wait until the bringup process finishes and the TurtleBot3 is ready before proceeding.
 
-**Step 3: Start the Absolute Position Control Node**  
+**Step 3: Start the Position Control Absolute Node**  
 Open a new terminal and run:  
   **[Remote PC]**  
   ```bash
