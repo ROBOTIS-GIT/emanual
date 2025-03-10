@@ -5,7 +5,7 @@ layout: popup
 - File: `robotis_controller_msgs/msg/StatusMsg.msg`
 
 - Message Definition
-  ```c
+  ```py
   # Status Constants
   uint8 STATUS_UNKNOWN = 0
   uint8 STATUS_INFO = 1

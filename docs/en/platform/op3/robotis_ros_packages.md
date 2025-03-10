@@ -65,7 +65,7 @@ Action contains all joint angles per each time frame.
   &emsp;&emsp; -&emsp;action_failed : action failed  
 
 - Services  
-  `/robotis/action/is_running`([op3_action_module_msgs/msg/IsRunning]{: .popup})  
+  `/robotis/action/is_running`([op3_action_module_msgs/srv/IsRunning]{: .popup})  
   &emsp;&emsp; Service that checks whether the action is running or not.  
 
 ###### Parameters
@@ -1197,28 +1197,23 @@ $ rosrun op3_offset_tuner_client op3_offset_tuner_client
 &emsp;&emsp; The service obtains saved joint offset
 
 
-[op3_action_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_action_module
-[op3_base_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_base_module
-[op3_head_control_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_head_control_module
-[op3_walking_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_walking_module
-[op3_online_walking_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_online_walking_module
-[open_cr_module]: /docs/en/platform/op3/robotis_ros_packages/#open_cr_module
-[std_msgs/msg/Int32]: /docs/en/popup/std_msgs_int32_message_ros2/
-[std_msgs/msg/String]: /docs/en/popup/std_msgs_string_ros2/
-[std_msgs/msg/Bool]: /docs/en/popup/std_msgs_bool_msg_ros2/
-[std_msgs/msg/Float64]: /docs/en/popup/std_msgs_float64_msg_ros2/
-[std_msgs/msg/Header]: /docs/en/popup/std_msgs_header_ros2/
-[sensor_msgs/msg/JointState]: /docs/en/popup/sensor_msgs_JointState_msg/
-[sensor_msgs/msg/Imu]: /docs/en/popup/sensor_msgs_IMU_msg/
-[sensor_msgs/msg/Image]: /docs/en/popup/sensor_msgs_Image/
-[sensor_msgs/msg/CameraInfo]: /docs/en/popup/sensor_msgs_CameraInfo_msg/
-[geometry_msgs/msg/Pose]: /docs/en/popup/geometry_msgs_Pose_msg/  
-[geometry_msgs/msg/PoseStamped]: /docs/en/popup/geometry_msgs_PoseStamped_msg/
-[robotis_controller_msgs/msg/StatusMsg]: /docs/en/popup/StatusMsg.msg/
-[robotis_controller_msgs/msg/JointCtrlModule]: /docs/en/popup/JointCtrlModule.msg/
+[std_msgs/msg/Int32]: /docs/en/popup/op3_ros2/std_msgs_int32_message
+[std_msgs/msg/String]: /docs/en/popup/op3_ros2/std_msgs_string
+[std_msgs/msg/Bool]: /docs/en/popup/op3_ros2/std_msgs_bool_msg
+[std_msgs/msg/Float64]: /docs/en/popup/op3_ros2/std_msgs_float64_msg
+[std_msgs/msg/Header]: /docs/en/popup/op3_ros2/std_msgs_Header
+[sensor_msgs/msg/JointState]: /docs/en/popup/op3_ros2/sensor_msgs_JointState_msg
+[sensor_msgs/msg/Imu]: /docs/en/popup/op3_ros2/sensor_msgs_Imu_msg
+[sensor_msgs/msg/Image]: /docs/en/popup/op3_ros2/sensor_msgs_Image
+[sensor_msgs/msg/CameraInfo]: /docs/en/popup/op3_ros2/sensor_msgs_CameraInfo_msg
+[geometry_msgs/msg/Point]: /docs/en/popup/op3_ros2/geometry_msgs_Point_msg/
+[geometry_msgs/msg/Pose]: /docs/en/popup/op3_ros2/geometry_msgs_Pose_msg
+[geometry_msgs/msg/PoseStamped]: /docs/en/popup/op3_ros2/geometry_msgs_PoseStamped_msg
+[robotis_controller_msgs/msg/StatusMsg]: /docs/en/popup/op3_ros2/StatusMsg.msg
+[robotis_controller_msgs/msg/JointCtrlModule]: /docs/en/popup/JointCtrlModule.msg
 [robotis_controller_msgs/msg/GetJointModule]: /docs/en/popup/GetJointModule.srv/
-[op3_action_module_msgs/msg/StartAction]: /docs/en/popup/op3_StartAction.msg/
-[op3_action_module_msgs/msg/IsRunning]: /docs/en/popup/op3_IsRunning.srv/
+[op3_action_module_msgs/msg/StartAction]: /docs/en/popup/op3_ros2/op3_StartAction.msg/
+[op3_action_module_msgs/srv/IsRunning]: /docs/en/popup/op3_IsRunning.srv/
 [op3_walking_module_msgs/msg/WalkingParam]: /docs/en/popup/op3_WalkingParam.msg/
 [WalkingParam.msg]: /docs/en/popup/op3_WalkingParam.msg/
 [op3_walking_module_msgs/msg/GetWalkingParam]: /docs/en/popup/op3_GetWalkingParam.srv/
@@ -1230,8 +1225,36 @@ $ rosrun op3_offset_tuner_client op3_offset_tuner_client
 [op3_online_walking_module_msgs/msg/GetJointPose]: /docs/en/popup/op3_GetJointPose.srv/
 [op3_online_walking_module_msgs/msg/GetKinematicsPose]: /docs/en/popup/op3_KinematicsPose.msg/
 [op3_online_walking_module_msgs/msg/GetPreviewMatrix]: /docs/en/popup/op3_GetPreviewMatrix.srv/
+[op3_offset_tuner_msgs/msg/JointOffsetData]: /docs/en/popup/JointOffsetData.msg/
+[op3_offset_tuner_msgs/msg/JointOffsetData]: /docs/en/popup/op3_JointOffsetData.msg/
+[op3_offset_tuner_msgs/msg/JointTorqueOnOffArray]: /docs/en/popup/JointTorqueOnOffArray.msg/
+[op3_offset_tuner_msgs/msg/JointTorqueOnOffArray]: /docs/en/popup/op3_JointTorqueOnOffArray.msg/
+[op3_offset_tuner_msgs/msg/GetPresentJointOffsetData]: /docs/en/popup/GetPresentJointOffsetData.srv/
+[op3_offset_tuner_msgs/msg/GetPresentJointOffsetData]: /docs/en/popup/op3_GetPresentJointOffsetData.srv/
+[op3_tuning_module_msgs/msg/JointOffsetData]: /docs/en/popup/(op3_tuning_module_msgs)JointOffsetData.msg/
+[op3_tuning_module_msgs/msg/JointTorqueOnOffArray]: /docs/en/popup/(op3_tuning_module_msgs)JointTorqueOnOffArray.msg/ 
+[op3_tuning_module_msgs/msg/GetPresentJointOffsetData]: /docs/en/popup/(op3_tuning_module_msgs)GetPresentJointOffsetData.srv/
+[robotis_controller_msgs/msg/SetModule]: /docs/en/popup/SetModule.srv/  
+[robotis_controller_msgs/msg/LoadOffset]: /docs/en/popup/LoadOffset.srv/  
+
+</section>
+
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+{% include en/platform/op3/robotis_ros_packages_rev2.md %}
+</section>
+
+
+[op3_manager]: /docs/en/platform/op3/robotis_ros_packages/#op3-manager
+[op3_action_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_action_module
+[op3_base_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_base_module
+[op3_head_control_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_head_control_module
+[op3_walking_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_walking_module
+[op3_online_walking_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_online_walking_module
+[open_cr_module]: /docs/en/platform/op3/robotis_ros_packages/#open_cr_module
+
 [Creating new robot manager]: /docs/en/software/robotis_framework_packages/tutorials/#creating-new-robot-manager
 [Introduction to Humanoid Robotics]: http://www.springer.com/gp/book/9783642545351
+
 [StartAction.msg]: /docs/en/popup/op3_StartAction.msg/
 [IsRunning.srv]: /docs/en/popup/op3_IsRunning.srv/
 [WalkingParam.msg]: /docs/en/popup/op3_WalkingParam.msg/
@@ -1249,27 +1272,27 @@ $ rosrun op3_offset_tuner_client op3_offset_tuner_client
 [GetJointPose.srv]: /docs/en/popup/op3_GetJointPose.srv/
 [GetKinematicsPose.srv]: /docs/en/popup/op3_GetKinematicsPose.srv/
 [GetPreviewMatrix.srv]: /docs/en/popup/op3_GetPreviewMatrix.srv/
-[op3_offset_tuner_server]: /docs/en/platform/op3/robotis_ros_packages/#op3_offset_tuner_server
-[op3_offset_tuner_client]: /docs/en/platform/op3/robotis_ros_packages/#op3_offset_tuner_client
 [JointOffsetData.msg]: /docs/en/popup/op3_JointOffsetData.msg/
 [JointOffsetPositionData.msg]: /docs/en/popup/op3_JointOffsetPositionData.msg/
 [JointTorqueOnOff.msg]: /docs/en/popup/op3_JointTorqueOnOff.msg/
 [JointTorqueOnOffArray.msg]: /docs/en/popup/op3_JointTorqueOnOffArray.msg/
 [GetPresentJointOffsetData.srv]: /docs/en/popup/op3_GetPresentJointOffsetData.srv/
 [ball_detector/circleSetStamped]: /docs/en/popup/ball_detector_CircleSetStamped_msg/
-[geometry_msgs/msg/Point]: /docs/en/popup/geometry_msgs_Point_msg/
+[JointOffsetData.msg]: /docs/en/popup/(op3_tuning_module_msgs)JointOffsetData.msg/
+[JointOffsetPositionData.msg]: /docs/en/popup/(op3_tuning_module_msgs)JointOffsetPositionData.msg/
+[JointTorqueOnOff.msg]: /docs/en/popup/(op3_tuning_module_msgs)JointTorqueOnOff.msg/ 
+[JointTorqueOnOffArray.msg]: /docs/en/popup/(op3_tuning_module_msgs)JointTorqueOnOffArray.msg/ 
+[GetPresentJointOffsetData.srv]: /docs/en/popup/(op3_tuning_module_msgs)GetPresentJointOffsetData.srv/
+
+[op3_offset_tuner_server]: /docs/en/platform/op3/robotis_ros_packages/#op3_offset_tuner_server
+[op3_offset_tuner_client]: /docs/en/platform/op3/robotis_ros_packages/#op3_offset_tuner_client
 [`usb_cam`]: http://wiki.ros.org/usb_cam
 [HSV color]: https://en.wikipedia.org/wiki/HSL_and_HSV
 [How to execute Default Demo]: /docs/en/platform/op3/tutorials/#how-to-exectue-default-demo
 [How to execute GUI program]: /docs/en/platform/op3/tutorials/#how-to-exectue-gui-program
 [URDF-ROS Wiki]: http://wiki.ros.org/urdf
 [Connect to ROS]: http://gazebosim.org/tutorials?cat=connect_ros
-[op3_offset_tuner_msgs/msg/JointOffsetData]: /docs/en/popup/JointOffsetData.msg/
-[op3_offset_tuner_msgs/msg/JointOffsetData]: /docs/en/popup/op3_JointOffsetData.msg/
-[op3_offset_tuner_msgs/msg/JointTorqueOnOffArray]: /docs/en/popup/JointTorqueOnOffArray.msg/
-[op3_offset_tuner_msgs/msg/JointTorqueOnOffArray]: /docs/en/popup/op3_JointTorqueOnOffArray.msg/
-[op3_offset_tuner_msgs/msg/GetPresentJointOffsetData]: /docs/en/popup/GetPresentJointOffsetData.srv/
-[op3_offset_tuner_msgs/msg/GetPresentJointOffsetData]: /docs/en/popup/op3_GetPresentJointOffsetData.srv/
+
 [op3_gui_demo]: /docs/en/platform/op3/robotis_ros_packages/#op3_gui_demo
 [How to use walking tuner]: /docs/en/platform/op3/tutorials/#how-to-use-walking-tuner
 [How to use offset tuner]: /docs/en/platform/op3/tutorials/#how-to-use-offset-tuner
@@ -1277,24 +1300,9 @@ $ rosrun op3_offset_tuner_client op3_offset_tuner_client
 [/op3_walking_module/config/param.yaml]: /docs/en/popup/op3_walking_module_param.yaml/
 [/op3_base_module/data/ini_pose.yaml]: /docs/en/popup/op3_base_module_ini_pose.yaml/
 [OPENCR]: /docs/en/platform/common/arduino_examples_op3/#opencr-op3
-[op3_tuning_module_msgs/msg/JointOffsetData]: /docs/en/popup/(op3_tuning_module_msgs)JointOffsetData.msg/
-[op3_tuning_module_msgs/msg/JointTorqueOnOffArray]: /docs/en/popup/(op3_tuning_module_msgs)JointTorqueOnOffArray.msg/ 
-[op3_tuning_module_msgs/msg/GetPresentJointOffsetData]: /docs/en/popup/(op3_tuning_module_msgs)GetPresentJointOffsetData.srv/
-[robotis_controller_msgs/msg/SetModule]: /docs/en/popup/SetModule.srv/  
-[robotis_controller_msgs/msg/LoadOffset]: /docs/en/popup/LoadOffset.srv/  
+
 [op3_direct_control_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_direct_control_module
 [op3_tuning_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_tuning_module
-[JointOffsetData.msg]: /docs/en/popup/(op3_tuning_module_msgs)JointOffsetData.msg/
-[JointOffsetPositionData.msg]: /docs/en/popup/(op3_tuning_module_msgs)JointOffsetPositionData.msg/
-[JointTorqueOnOff.msg]: /docs/en/popup/(op3_tuning_module_msgs)JointTorqueOnOff.msg/ 
-[JointTorqueOnOffArray.msg]: /docs/en/popup/(op3_tuning_module_msgs)JointTorqueOnOffArray.msg/ 
-[GetPresentJointOffsetData.srv]: /docs/en/popup/(op3_tuning_module_msgs)GetPresentJointOffsetData.srv/
 [How to use tuner client]: /docs/en/platform/op3/tutorials/#how-to-use-tuner-client
 [ball_detector_params.yaml]: https://raw.githubusercontent.com/ROBOTIS-GIT/ROBOTIS-OP3-Demo/master/op3_ball_detector/config/ball_detector_params.yaml
 [How to use ball detector]: /docs/en/platform/op3/tutorials/#how-to-use-ball-detector
-
-</section>
-
-<section data-id="{{ page.tab_title2 }}" class="tab_contents">
-{% include en/platform/op3/robotis_ros_packages_rev2.md %}
-</section>

@@ -2,12 +2,12 @@
 layout: popup
 ---
 
-- File: `op3_action_module_msgs/StartAction.msg`
+- File: `op3_action_module_msgs/msg/StartAction.msg`
 - Message Definition
- ```c
- int32     page_num
- string[]  joint_name_array
- ```
+    ```py
+    int32     page_num
+    string[]  joint_name_array
+    ```
 
 - Description
 The message that contain a page number will be played and specified joints name will be applied action plaing result  
