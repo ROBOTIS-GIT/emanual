@@ -4,7 +4,6 @@ Install dependent packages for OpenMANIPULATOR-X. Run the following commands in 
 
 ```bash
 $ sudo apt install \
-  ros-humble-dynamixel-sdk \
   ros-humble-ros2-control \
   ros-humble-moveit* \
   ros-humble-gazebo-ros2-control \
@@ -21,6 +20,7 @@ $ sudo apt install \
 ```bash
 $ mkdir -p colcon_ws/src
 $ cd ~/colcon_ws/src/
+$ git clone -b humble https://github.com/ROBOTIS-GIT/DynamixelSDK.git
 $ git clone -b humble https://github.com/ROBOTIS-GIT/open_manipulator.git
 $ git clone -b humble https://github.com/ROBOTIS-GIT/dynamixel_hardware_interface.git
 $ git clone -b humble https://github.com/ROBOTIS-GIT/dynamixel_interfaces.git
