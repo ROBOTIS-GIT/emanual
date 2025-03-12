@@ -181,11 +181,12 @@ $ free -h
 ```  
 ![](/assets/images/platform/turtlebot3/sbc_setup/swap.png)
 </details>
+
 1. Install ROS2 Humble Hawksbill  
 **[TurtleBot3 SBC]**  
 Follow the instruction in [the official ROS2 Humble installation guide](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html).  Installing ROS-Base(Bare Bones) is recommended.
 
-1. Install and Build ROS Packages.  
+2. Install and Build ROS Packages.  
 Building the `turtlebot3` package may take longer than an hour. Please use the SMPS to ensure the system is always powered.  
 **[TurtleBot3 SBC]**  
 ```bash
@@ -207,7 +208,7 @@ $ echo 'source ~/turtlebot3_ws/install/setup.bash' >> ~/.bashrc
 $ source ~/.bashrc
 ```
 
-1. USB Port Setting for OpenCR  
+3. USB Port Setting for OpenCR  
 **[TurtleBot3 SBC]**  
 ```bash
 $ sudo cp `ros2 pkg prefix turtlebot3_bringup`/share/turtlebot3_bringup/script/99-turtlebot3-cdc.rules /etc/udev/rules.d/
@@ -215,7 +216,7 @@ $ sudo udevadm control --reload-rules
 $ sudo udevadm trigger
 ```
 
-1. ROS Domain ID Setting
+4. ROS Domain ID Setting
 In ROS2 DDS communication, `ROS_DOMAIN_ID` must be matched between **Remote PC** and **TurtleBot3** for communication under the same network environment. Following commands shows how to assign a `ROS_DOMAIN_ID` to SBC in TurtleBot3.
 - A default ID of **TurtleBot3** is `30`.  
 - Configuring the `ROS_DOMAIN_ID` of Remote PC and SBC in TurtleBot3 to `30` is recommended.  
