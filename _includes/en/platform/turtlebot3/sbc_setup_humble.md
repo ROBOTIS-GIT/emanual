@@ -46,10 +46,10 @@ $ rpi-imager
   ```    
 2. `apt`
 
-  ```bash
+```bash
 $ sudo apt install rpi-imager
 $ rpi-imager
-  ```
+```
   
 </details> 
   
@@ -155,11 +155,37 @@ $ ifconfig
 $ ssh ubuntu@{IP Address of Raspberry PI}
 ```  
 </details>
-12. Install ROS2 Humble Hawksbill  
+
+## Install pakage in Raspberry PI
+
+<details>
+<summary>
+![](/assets/images/icon_unfold.png) **If you are using the TurtleBot3 2GB, make sure to create swap memory for build.**
+</summary>
+**If you are using a Raspberry Pi 2GB, the build process may stop, and the process could terminate. In this case, creating swap memory will allow the build to proceed normally.**
+- Create 2GB swap memory.
+**[Remote PC]**  
+```bash
+$ sudo fallocate -l 2G /swapfile
+$ sudo chmod 600 /swapfile
+$ sudo mkswap /swapfile
+$ sudo swapon /swapfile
+```
+- The following command ensures that the swap file is automatically activated when the system is rebooted.  
+```bash
+$ echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+```
+- Check swap memory.  
+```bash
+$ free -h
+```  
+![](/assets/images/platform/turtlebot3/sbc_setup/swap.png)
+</details>
+1. Install ROS2 Humble Hawksbill  
 **[TurtleBot3 SBC]**  
 Follow the instruction in [the official ROS2 Humble installation guide](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html).  Installing ROS-Base(Bare Bones) is recommended.
 
-13. Install and Build ROS Packages.  
+1. Install and Build ROS Packages.  
 Building the `turtlebot3` package may take longer than an hour. Please use the SMPS to ensure the system is always powered.  
 **[TurtleBot3 SBC]**  
 ```bash
@@ -181,7 +207,7 @@ $ echo 'source ~/turtlebot3_ws/install/setup.bash' >> ~/.bashrc
 $ source ~/.bashrc
 ```
 
-14. USB Port Setting for OpenCR  
+1. USB Port Setting for OpenCR  
 **[TurtleBot3 SBC]**  
 ```bash
 $ sudo cp `ros2 pkg prefix turtlebot3_bringup`/share/turtlebot3_bringup/script/99-turtlebot3-cdc.rules /etc/udev/rules.d/
@@ -189,7 +215,7 @@ $ sudo udevadm control --reload-rules
 $ sudo udevadm trigger
 ```
 
-15. ROS Domain ID Setting
+1. ROS Domain ID Setting
 In ROS2 DDS communication, `ROS_DOMAIN_ID` must be matched between **Remote PC** and **TurtleBot3** for communication under the same network environment. Following commands shows how to assign a `ROS_DOMAIN_ID` to SBC in TurtleBot3.
 - A default ID of **TurtleBot3** is `30`.  
 - Configuring the `ROS_DOMAIN_ID` of Remote PC and SBC in TurtleBot3 to `30` is recommended.  
