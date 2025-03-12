@@ -156,7 +156,7 @@ $ ssh ubuntu@{IP Address of Raspberry PI}
 ```  
 </details>
 
-## Install pakage in Raspberry PI
+## Install package in Raspberry PI
 
 <details>
 <summary>
