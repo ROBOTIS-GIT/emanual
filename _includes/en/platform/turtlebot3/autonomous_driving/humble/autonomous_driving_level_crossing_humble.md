@@ -3,7 +3,8 @@
 
 This section describes how you can detect a traffic bar. TurtleBot should detect the stop sign and wait for the crossing gate to open.
 
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/PMOYhx9kiDk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+<iframe width="640" height="360" src="https://www.youtube.com/embed/sy8LAX8KEY0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 ##### [Level Crossing detection process](#the-detection-process)
 
