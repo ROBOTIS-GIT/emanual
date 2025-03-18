@@ -26,7 +26,7 @@ A service to add StepData to [thormang3_walking_module].
 &emsp;&emsp; An array of StepData to be added
 
   - Response  
-    * ` int32 result`  
+    * `int32 result`  
 &emsp;&emsp; Result of the "AddStepDataArray" Service  
 &emsp;&emsp; Walking will be enabled only with NO_ERRROR result.  
 

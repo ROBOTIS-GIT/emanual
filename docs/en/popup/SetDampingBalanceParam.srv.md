@@ -17,7 +17,7 @@ layout: popup
 A service that can modify Balance Algorithm Parameter.
 
   - Request  
-    * ` float32      updating_duration`  
+    * `float32      updating_duration`  
 &emsp;&emsp; Time duration when updating Balance Parameter.  
 &emsp;&emsp; The Parameter is gradually updated based on configured time.  
 &emsp;&emsp; 0 or negative value will update the Balance Parameter immediately.  
@@ -26,7 +26,7 @@ A service that can modify Balance Algorithm Parameter.
 &emsp;&emsp; The Balance Parameter to be applied  
 
   - Response  
-    * ` int32 result`  
+    * `int32 result`  
 &emsp;&emsp; Result of the "SetDampingBalanceParam" Service  
 
       | Name                           | Value | Description                                   |

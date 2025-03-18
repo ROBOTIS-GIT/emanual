@@ -12,5 +12,5 @@ layout: popup
 - Description  
 This message is used when thormang3_tuning_module send the information to the tuner_client.  
 
-    * ` JointOffsetPositionData[] present_data_array`  
+    * `JointOffsetPositionData[] present_data_array`  
 &emsp;&emsp; present goal, offset, gain of joints

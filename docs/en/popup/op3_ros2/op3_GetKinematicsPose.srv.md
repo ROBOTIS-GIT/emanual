@@ -16,7 +16,7 @@ layout: popup
 This service acquires parameters that are applied on op3_online_walking_module.  
 
   - Request  
-    * ` string    name`   
+    * `string    name`   
 &emsp;&emsp; group name (such as body, left_foot, right_foot)
 
   - Response  

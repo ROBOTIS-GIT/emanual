@@ -11,7 +11,7 @@ layout: popup
 
 - Description  
 The message used to create [JointTorqueOnOffArray.msg]  
-    * ` string  joint_name`  
+    * `string  joint_name`  
 &emsp;&emsp; joint name  
 
     * `bool    torque_enable`  

@@ -17,7 +17,7 @@ A service to start walking THORMANG3 with existing StepData.
     * `empty`  
 
   - Response  
-    * ` int32 result`  
+    * `int32 result`  
 &emsp;&emsp; Result of the "WalkingStart" Service.
 
       | Name                       | Value | Description                                  |

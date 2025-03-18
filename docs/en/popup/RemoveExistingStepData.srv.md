@@ -17,7 +17,7 @@ A service to delete existing StepData.
     * `empty`
 
   - Response  
-    * ` int32 result`  
+    * `int32 result`  
 &emsp;&emsp; Result of the "RemoveExistingStepData" Service
 
         | Name                       | Value | Description                                    |

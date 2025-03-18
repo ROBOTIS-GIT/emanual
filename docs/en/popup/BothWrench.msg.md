@@ -14,7 +14,7 @@ layout: popup
 - Description  
 This message is used when publishing values to calibrate FT sensors in the [thormang3_feet_ft_module].
 
-    * ` string name`
+    * `string name`
 &emsp;&emsp; name
 &emsp;&emsp; This field should be either "ft_air" or "ft_gnd".
 

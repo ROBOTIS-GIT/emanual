@@ -16,17 +16,19 @@ sidebar:
 - File: `op3_online_walking_module_msgs/KinematicsPose.msg`
 
 - Message Definition
- ```c
- string   name
- float64  mov_time
- geometry_msgs/Pose pose
- ```
+    ```cpp
+    string   name
+    float64  mov_time
+    geometry_msgs/Pose pose
+    ```
 
-- Description
+- Description  
 
     * `name`   
 &emsp;&emsp; target group name      
+
     * `mov_time`    
 &emsp;&emsp; movement time   
+
     * `pose`    
 &emsp;&emsp; target pose   
