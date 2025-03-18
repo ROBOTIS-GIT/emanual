@@ -2,7 +2,7 @@
 layout: popup
 ---
 
-- File : `geometry_msgs/PoseStamped.msg`
+- File : `geometry_msgs/msg/PoseStamped.msg`
 - Raw Message Definition
 
   ```py

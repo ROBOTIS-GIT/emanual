@@ -47,16 +47,15 @@ Keyboard and monitor are directly connected to ROBOTIS-OP3.
  When using wired connection, connect ROBOTIS OP3 to the same Router with PC so that OP3 can be connected as a DHCP client.  
 
 #### How to connect
- - SSH
+ - **SSH**
     1. Execute SSH client program (ex: PuTTY)
     2. Input ROBOTIS-OP3’s IP address : 10.42.0.1
     3. Select SSH as a connection type and then open it.
     4. Input ROBOTIS-OP3’s user name : robotis
     5. Input ROBOTIS-OP3’s password : 111111  
+   ![](/assets/images/platform/op3/op3_connection_ssh2.png)
 
-    ![](/assets/images/platform/op3/op3_connection_ssh2.png)
-
- - VNC  
+ - **VNC**  
    
    **CAUTION** : The robot must be booted with a physical monitor connected for VNC connection to work.
    {: .notice--warning}

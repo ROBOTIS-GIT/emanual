@@ -4,13 +4,13 @@ layout: popup
 
 - File: `op3_offset_tuner_msgs/srv/GetPresentJointOffsetData.srv`
 
-- Message Definition
- ```c
- ---
- JointOffsetPositionData[] present_data_array
- ```
+- Message Definition  
+  ```c
+  ---
+  JointOffsetPositionData[] present_data_array
+  ```
 
-- Description
+- Description  
 The service to get offset data of each joint.
 
   - Request

@@ -6,32 +6,32 @@ layout: popup
 
 ## Download the **ROS-INDUSTRIAL CORE** package  
 
-```
+```sh
 $ git clone https://github.com/ros-industrial/industrial_core.git
 ```
 
 ## Check ‘industrial_trajectory_filters’ in downloaded ros-industrial package  
 
-```
+```sh
 $ cd ~/catkin_ws/src/industrial_core/industrial_trajectory_filters/
 ```
 
 ## Copy ***planning_request_adapters_plugin_description.xml***, ***src*** and ***include*** folders in the ***industrial_trajectory_filters*** folder and paste it into the moveit package you created earlier  
 
-```
+```sh
 $ cp -r planning_request_adapters_plugin_description.xml src include ~/catkin_ws/src/$(YOUR_MOVEIT_CONFIGURATION_PACKAGE)/
 ```
 
 ## Create ‘smoothing_filter_params.yaml’ in the config folder and specify the coefficient  
 
-```
+```sh
 $ cd ~/catkin_ws/src/$(YOUR_MOVEIT_CONFIGURATION_PACKAGE)/config
-$ gedit smoothing_filter_params.yaml
+$ nano smoothing_filter_params.yaml
 ```
 
 Copy and Paste below texts
 
-```
+```yaml
 smoothing_filter_name: /move_group/smoothing_5_coef  
 smoothing_5_coef:  
 - 0.25  
@@ -44,9 +44,9 @@ smoothing_5_coef:
 
 ## Open ***ompl_planning_pipeline.launch.xml*** in the launch folder and add the following filter  to planning_adapters    
 
-```
+```sh
 $ cd ~/catkin_ws/src/$(YOUR_MOVEIT_CONFIGURATION_PACKAGE)/launch
-$ gedit ompl_planning_pipeline.launch.xml
+$ nano ompl_planning_pipeline.launch.xml
 ```
 
 Copy and Paste below texts
@@ -59,14 +59,14 @@ industrial_trajectory_filters/AddSmoothingFilter
 
 ## Add the following parameters to the same file.   
 
-```
+```xml
 <param name="sample_duration" value="0.030" />  
 <rosparam command="load" file="$(YOUR_MOVEIT_CONFIGURATION_PACKAGE)veit)/config/smoothing_filter_params.yaml"/>  
 ```
 
 ## The contents of the launch file when you insert contents 5 and 6 are shown in the following example.
 
-```
+```xml
 <launch>
 <!-- OMPL Plugin for MoveIt! -->
 <arg name="planning_plugin" value="ompl_interface/OMPLPlanner" />

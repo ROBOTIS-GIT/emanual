@@ -1,7 +1,7 @@
 ---
 layout: popup
 ---
-```c
+```xml
 <?xml version="1.0" ?>
 <sdf version='1.4'>
   <world name='default'>

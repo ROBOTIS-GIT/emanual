@@ -10,12 +10,12 @@ layout: popup
   bool is_running
   ```
 
-- Description
+- Description  
 A service that identifies whether OP3 is playing the action or not.  
 
-  - Request  
+  - Request   
     * `empty`   
 
-  - Response
+  - Response  
     * `bool is_running`   
 &emsp;&emsp; True will be returned if OP3 is playing the action. Otherwise, False will be returned.   

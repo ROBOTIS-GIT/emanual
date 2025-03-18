@@ -2,7 +2,7 @@
 layout: popup
 ---
 
-- File : `geometry_msgs/Point.msg`
+- File : `geometry_msgs/msg/Point.msg`
 - Raw Message Definition
 
   ```py
@@ -10,7 +10,6 @@ layout: popup
   float64 x
   float64 y
   float64 z
-
   ```
 
 - Compact Message Definition

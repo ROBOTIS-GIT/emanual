@@ -18,10 +18,10 @@ layout: popup
   string status_msg
   ```
 
-- Description
+- Description  
 This message is used to identify the status of each module.
 
-    * `header` ([std_msgs/Header])  
+    * `header` ([std_msgs/msg/Header])  
 &emsp;&emsp; This field specifies recorded time of the status message.
 
     * `type`  
@@ -37,4 +37,4 @@ This message is used to identify the status of each module.
     * `status_msg`  
 &emsp;&emsp; This field contains contents of the status message.
 
-[std_msgs/Header]: /docs/en/platform/msgs/std_msgs_header/#std-msgs-header
+[std_msgs/msg/Header]: /docs/en/platform/msgs/std_msgs_header/#std-msgs-header

@@ -5,20 +5,20 @@ layout: popup
 - File: `robotis_controller_msgs/LoadOffset.srv`
 
 - Service Definition
- ```
- ---
- string file_path
- ---
- bool result
- ```
+  ```
+  ---
+  string file_path
+  ---
+  bool result
+  ```
 
-- Description
+- Description  
 A service to read the states of all joints.
 
-  - Request
+  - Request  
     * `file_path`   
 &emsp;&emsp; offset file path to re-load  
 
-  - Response
+  - Response  
     * `result`   
 &emsp;&emsp; 

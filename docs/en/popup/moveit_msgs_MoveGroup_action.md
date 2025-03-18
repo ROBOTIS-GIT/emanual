@@ -6,24 +6,21 @@ layout: popup
 
 - Action Definition
 
-```c
+    ```c
     RobotTrajectory trajectory
     ---
     MoveItErrorCodes error_code
     ---
     string state
-```
+    ```
 
-- Description
+- Description  
 
-The trajectory to execute
+    The trajectory to execute  
+    `RobotTrajectory trajectory`
 
-`RobotTrajectory trajectory`
+    Error code - encodes the overall reason for failure  
+    `MoveItErrorCodes error_code`
 
-Error code - encodes the overall reason for failure
-
-`MoveItErrorCodes error_code`
-
-The internal state that the move group action currently is in
-
-`string state`
+    The internal state that the move group action currently is in  
+    `string state`

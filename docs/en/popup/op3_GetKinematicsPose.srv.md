@@ -6,11 +6,11 @@ layout: popup
 
 - Message Definition
 
- ```c
- string    name
- ---
- op3_online_walking_module_msgs/KinematicsPose pose
- ```
+  ```c
+  string    name
+  ---
+  op3_online_walking_module_msgs/KinematicsPose pose
+  ```
 
 - Description  
 This service acquires parameters that are applied on op3_online_walking_module.  

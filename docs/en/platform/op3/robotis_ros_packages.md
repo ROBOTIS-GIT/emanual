@@ -248,82 +248,6 @@ This module is compiled to a library to be used in [op3_manager].
 
    - d_gain: not yet implemented
 
-##### [op3_online_walking_module](#op3-online-walking-module)
-
-###### Overview
-This chapter explains the module to control OP3's walking.  
-This module is compiled to a library to be used in [op3_manager].  
-Online walking algorithm is described in this book ([Introduction to Humanoid Robotics]).
-
-###### Getting started  
-- Download & Build
-  > Reference : [Installing ROBOTIS ROS Package]
-
-- Usage
-The Motion Module is used in the manager in the form of library.  
-  > Reference : [Creating new robot manager]
-
-###### ROS API
-- Subscribed Topics  
-  `/robotis/online_walking/reset_body` ([std_msgs/msg/Bool]{: .popup})  
- &emsp;&emsp;This message will reset the body pose to default value.  
-
-  `/robotis/online_walking/goal_joint_pose`  
-([op3_online_walking_module_msgs/msg/JointPose]{: .popup})  
-&emsp;&emsp; This message will set desired pose in joint space.  
-
-  `/robotis/online_walking/goal_kinematics_pose`  
-([op3_online_walking_module_msgs/msg/KinematicsPose]{: .popup})  
-&emsp;&emsp; This message will set desired pose in task space.  
-
-  `/robotis/online_walking/foot_step_command`  
-([op3_online_walking_module_msgs/msg/FootStepCommand]{: .popup})  
-&emsp;&emsp; This message will set walking command.  
-
-  `/robotis/online_walking/foot_step_command`  
-([op3_online_walking_module_msgs/msg/FootStepCommand]{: .popup})  
-&emsp;&emsp; This message will execute desired walking performance.  
-
-  `/robotis/online_walking/walking_param`  
-([op3_online_walking_module_msgs/msg/WalkingParam]{: .popup})  
-&emsp;&emsp; This message will set walking parameter.
-
-  `/robotis/online_walking/body_offset`  
-([geometry_msgs/msg/Pose]{: .popup})  
-&emsp;&emsp; This message will set desired body offset.
-
-  `/robotis/online_walking/foot_distance`  
-([std_msgs/msg/Float64]{: .popup})  
-&emsp;&emsp; This message will set desired foot distance between left and right foot.
-
-  `/robotis/online_walking/footsteps_2d`  
-([op3_online_walking_module_msgs/msg/Step2DArray]{: .popup})  
-&emsp;&emsp; This message will set desired foot step from foot step generator.
-
-
-- Published Topics  
-  `/robotis/status`([robotis_controller_msgs/msg/StatusMsg]{: .popup})  
-&emsp;&emsp; This message notifies the status of head_control_module.  
-
-  `/robotis/movement_done`([std_msgs/msg/String]{: .popup})  
-&emsp;&emsp; This message notifies the end of movement.  
-
-  `/robotis/pelvis_pose`([geometry_msgs/msg/PoseStamped]{: .popup})  
-&emsp;&emsp; This message send desired pelvis pose for localization.  
-
-- Service Server  
-  `/robotis/online_walking/get_joint_pose`  
-([op3_online_walking_module_msgs/msg/GetJointPose]{: .popup})  
-&emsp;&emsp; This service is used to get current desired joint pose.  
-
-  `/robotis/online_walking/get_kinematics_pose`  
-([op3_online_walking_module_msgs/msg/GetKinematicsPose]{: .popup})  
-&emsp;&emsp; This service is used to get current desired kinematics pose.  
-
-- Service Client
-  `/robotis/online_walking/get_preview_matrix`  
-([op3_online_walking_module_msgs/msg/GetPreviewMatrix]{: .popup})  
-&emsp;&emsp; This service is used to calculate matrix for online walking.  
 
 ##### [op3_direct_control_module](#op3-direct-control-module)
 
@@ -588,10 +512,10 @@ This node publish TF data from /world to /body_link.
 The followings are Messages and Services used for the [op3_action_module].  
 
 ##### ROS Message Type
-* [StartAction.msg]{: .popup}
+* [op3_action_module_msgs/msg/StartAction]{: .popup}
 
 ##### ROS Service Type
-* [IsRunning.srv]{: .popup}
+* [op3_action_module_msgs/srv/IsRunning]{: .popup}
 
 #### [op3_walking_module_msgs](#op3-walking-module-msgs)
 
@@ -1212,30 +1136,40 @@ $ rosrun op3_offset_tuner_client op3_offset_tuner_client
 [robotis_controller_msgs/msg/StatusMsg]: /docs/en/popup/op3_ros2/StatusMsg.msg
 [robotis_controller_msgs/msg/JointCtrlModule]: /docs/en/popup/JointCtrlModule.msg
 [robotis_controller_msgs/msg/GetJointModule]: /docs/en/popup/GetJointModule.srv/
+
 [op3_action_module_msgs/msg/StartAction]: /docs/en/popup/op3_ros2/op3_StartAction.msg/
-[op3_action_module_msgs/srv/IsRunning]: /docs/en/popup/op3_IsRunning.srv/
-[op3_walking_module_msgs/msg/WalkingParam]: /docs/en/popup/op3_WalkingParam.msg/
-[WalkingParam.msg]: /docs/en/popup/op3_WalkingParam.msg/
-[op3_walking_module_msgs/msg/GetWalkingParam]: /docs/en/popup/op3_GetWalkingParam.srv/
-[op3_online_walking_module_msgs/msg/JointPose]: /docs/en/popup/op3_JointPose.msg/
-[op3_online_walking_module_msgs/msg/KinematicsPose]: /docs/en/popup/op3_KinematicsPose.msg/
-[op3_online_walking_module_msgs/msg/FootStepCommand]: /docs/en/popup/op3_FootStepCommand.msg/
-[op3_online_walking_module_msgs/msg/WalkingParam]: /docs/en/popup/op3_online_WalkingParam.msg/
-[op3_online_walking_module_msgs/msg/Step2DArray]: /docs/en/popup/op3_Step2DArray.msg/
-[op3_online_walking_module_msgs/msg/GetJointPose]: /docs/en/popup/op3_GetJointPose.srv/
-[op3_online_walking_module_msgs/msg/GetKinematicsPose]: /docs/en/popup/op3_KinematicsPose.msg/
-[op3_online_walking_module_msgs/msg/GetPreviewMatrix]: /docs/en/popup/op3_GetPreviewMatrix.srv/
-[op3_offset_tuner_msgs/msg/JointOffsetData]: /docs/en/popup/JointOffsetData.msg/
+[op3_action_module_msgs/srv/IsRunning]: /docs/en/popup/op3_ros2/op3_IsRunning.srv/
+
 [op3_offset_tuner_msgs/msg/JointOffsetData]: /docs/en/popup/op3_JointOffsetData.msg/
-[op3_offset_tuner_msgs/msg/JointTorqueOnOffArray]: /docs/en/popup/JointTorqueOnOffArray.msg/
 [op3_offset_tuner_msgs/msg/JointTorqueOnOffArray]: /docs/en/popup/op3_JointTorqueOnOffArray.msg/
-[op3_offset_tuner_msgs/msg/GetPresentJointOffsetData]: /docs/en/popup/GetPresentJointOffsetData.srv/
 [op3_offset_tuner_msgs/msg/GetPresentJointOffsetData]: /docs/en/popup/op3_GetPresentJointOffsetData.srv/
+
 [op3_tuning_module_msgs/msg/JointOffsetData]: /docs/en/popup/(op3_tuning_module_msgs)JointOffsetData.msg/
 [op3_tuning_module_msgs/msg/JointTorqueOnOffArray]: /docs/en/popup/(op3_tuning_module_msgs)JointTorqueOnOffArray.msg/ 
+
 [op3_tuning_module_msgs/msg/GetPresentJointOffsetData]: /docs/en/popup/(op3_tuning_module_msgs)GetPresentJointOffsetData.srv/
 [robotis_controller_msgs/msg/SetModule]: /docs/en/popup/SetModule.srv/  
 [robotis_controller_msgs/msg/LoadOffset]: /docs/en/popup/LoadOffset.srv/  
+[op3_walking_module_msgs/msg/WalkingParam]: /docs/en/popup/op3_WalkingParam.msg/
+[WalkingParam.msg]: /docs/en/popup/op3_WalkingParam.msg/
+[op3_walking_module_msgs/msg/GetWalkingParam]: /docs/en/popup/op3_GetWalkingParam.srv/
+[GetWalkingParam.srv]: /docs/en/popup/op3_GetWalkingParam.srv/
+[SetWalkingParam.srv]: /docs/en/popup/op3_SetWalkingParam.srv/
+[GetJointPose.srv]: /docs/en/popup/op3_GetJointPose.srv/
+[GetKinematicsPose.srv]: /docs/en/popup/op3_GetKinematicsPose.srv/
+[GetPreviewMatrix.srv]: /docs/en/popup/op3_GetPreviewMatrix.srv/
+[JointOffsetData.msg]: /docs/en/popup/op3_JointOffsetData.msg/
+[JointOffsetPositionData.msg]: /docs/en/popup/op3_JointOffsetPositionData.msg/
+[JointTorqueOnOff.msg]: /docs/en/popup/op3_JointTorqueOnOff.msg/
+[JointTorqueOnOffArray.msg]: /docs/en/popup/op3_JointTorqueOnOffArray.msg/
+[GetPresentJointOffsetData.srv]: /docs/en/popup/op3_GetPresentJointOffsetData.srv/
+[ball_detector/circleSetStamped]: /docs/en/popup/ball_detector_CircleSetStamped_msg/
+
+[JointOffsetData.msg]: /docs/en/popup/(op3_tuning_module_msgs)JointOffsetData.msg/
+[JointOffsetPositionData.msg]: /docs/en/popup/(op3_tuning_module_msgs)JointOffsetPositionData.msg/
+[JointTorqueOnOff.msg]: /docs/en/popup/(op3_tuning_module_msgs)JointTorqueOnOff.msg/ 
+[JointTorqueOnOffArray.msg]: /docs/en/popup/(op3_tuning_module_msgs)JointTorqueOnOffArray.msg/ 
+[GetPresentJointOffsetData.srv]: /docs/en/popup/(op3_tuning_module_msgs)GetPresentJointOffsetData.srv/
 
 </section>
 
@@ -1254,35 +1188,6 @@ $ rosrun op3_offset_tuner_client op3_offset_tuner_client
 
 [Creating new robot manager]: /docs/en/software/robotis_framework_packages/tutorials/#creating-new-robot-manager
 [Introduction to Humanoid Robotics]: http://www.springer.com/gp/book/9783642545351
-
-[StartAction.msg]: /docs/en/popup/op3_StartAction.msg/
-[IsRunning.srv]: /docs/en/popup/op3_IsRunning.srv/
-[WalkingParam.msg]: /docs/en/popup/op3_WalkingParam.msg/
-[GetWalkingParam.srv]: /docs/en/popup/op3_GetWalkingParam.srv/
-[SetWalkingParam.srv]: /docs/en/popup/op3_SetWalkingParam.srv/
-[FootStepArray.msg]: /docs/en/popup/op3_FootStepArray.msg/  
-[FootStepCommand.msg]: /docs/en/popup/op3_FootStepCommand.msg/
-[JointPose.msg]: /docs/en/popup/op3_JointPose.msg/  
-[KinematicsPose.msg]: /docs/en/popup/op3_KinematicsPose.msg/
-[PreviewRequest.msg]: /docs/en/popup/op3_PreviewRequest.msg/
-[PreviewResponse.msg]: /docs/en/popup/op3_PreviewResponse.msg/
-[Step2D.msg]: /docs/en/popup/op3_Step2D.msg/
-[Step2DArray.msg]: /docs/en/popup/op3_Step2DArray.msg/
-[WalkingParam.msg]: /docs/en/popup/op3_online_WalkingParam.msg/  
-[GetJointPose.srv]: /docs/en/popup/op3_GetJointPose.srv/
-[GetKinematicsPose.srv]: /docs/en/popup/op3_GetKinematicsPose.srv/
-[GetPreviewMatrix.srv]: /docs/en/popup/op3_GetPreviewMatrix.srv/
-[JointOffsetData.msg]: /docs/en/popup/op3_JointOffsetData.msg/
-[JointOffsetPositionData.msg]: /docs/en/popup/op3_JointOffsetPositionData.msg/
-[JointTorqueOnOff.msg]: /docs/en/popup/op3_JointTorqueOnOff.msg/
-[JointTorqueOnOffArray.msg]: /docs/en/popup/op3_JointTorqueOnOffArray.msg/
-[GetPresentJointOffsetData.srv]: /docs/en/popup/op3_GetPresentJointOffsetData.srv/
-[ball_detector/circleSetStamped]: /docs/en/popup/ball_detector_CircleSetStamped_msg/
-[JointOffsetData.msg]: /docs/en/popup/(op3_tuning_module_msgs)JointOffsetData.msg/
-[JointOffsetPositionData.msg]: /docs/en/popup/(op3_tuning_module_msgs)JointOffsetPositionData.msg/
-[JointTorqueOnOff.msg]: /docs/en/popup/(op3_tuning_module_msgs)JointTorqueOnOff.msg/ 
-[JointTorqueOnOffArray.msg]: /docs/en/popup/(op3_tuning_module_msgs)JointTorqueOnOffArray.msg/ 
-[GetPresentJointOffsetData.srv]: /docs/en/popup/(op3_tuning_module_msgs)GetPresentJointOffsetData.srv/
 
 [op3_offset_tuner_server]: /docs/en/platform/op3/robotis_ros_packages/#op3_offset_tuner_server
 [op3_offset_tuner_client]: /docs/en/platform/op3/robotis_ros_packages/#op3_offset_tuner_client
