@@ -1,4 +1,4 @@
-This example demonstrates how to control TurtleBot3 in RViz using Interactive Markers. Interactive Markers allow users to move the robot by manipulating on-screen controls in RViz, enabling both linear movement and rotation without the need for a physical joystick or command-line inputs. Please refer to the above video for more detailed usage.
+This example demonstrates how to control the TurtleBot3 in RViz using Interactive Markers. Interactive Markers allow users to move the robot by manipulating on-screen controls in RViz, enabling both linear movement and rotation without the need for a physical joystick or command-line inputs.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/im7HX76zR7U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Understanding the Overall Flow**
@@ -6,13 +6,13 @@ This example demonstrates how to control TurtleBot3 in RViz using Interactive Ma
 To successfully use Interactive Markers to control TurtleBot3, several key components must be launched. The interaction between these components enables real-time manual control of the robot in RViz.
 
 - **TurtleBot3 Interactive Marker (`turtlebot3_interactive_marker node`)**
-    - Manages interactive markers that allow users to control TurtleBot3 within RViz.
+    - Manages interactive markers that allow users to control the TurtleBot3 within RViz.
     - Publishes updates via `/turtlebot3_interactive_marker/update`.
     - Receives user interactions and provides feedback through `/turtlebot3_interactive_marker/feedback`.
-    - Converts interactive marker movements into `cmd_vel` commands, sending them to TurtleBot3 Node.
+    - Converts interactive marker movements into `cmd_vel` commands, sending them to the TurtleBot3 Node.
 
 - **TurtleBot3 Node (`turtlebot3_node`)**
-    - Subscribes to `cmd_vel` to control the actual movement of TurtleBot3.
+    - Subscribes to `cmd_vel` to control the actual movement of the TurtleBot3.
 
 - **Differential Drive Controller (`diff_drive_controller`)**
     - Receives odometry data and sends it to `/odom`.
@@ -28,21 +28,20 @@ These components work together to allow real-time interactive control of the Tur
 
 **1. Bringup TurtleBot3**
 
-1. Open a new first terminal on the remote PC with `Ctrl` + `Alt` + `T` and connect to the Raspberry Pi via SSH using its IP address.  
-  Enter your `password` of Ubuntu OS in `Raspberry pi` .  
+1. Open a new terminal on the remote PC with `Ctrl` + `Alt` + `T` and connect to the Raspberry Pi via SSH using its IP address.  
   **[Remote PC]**  
   ```bash
   $ ssh ubuntu@{IP_ADDRESS_OF_RASPBERRY_PI}
   ```  
 
-2. Bring up basic packages to start essential TurtleBot3 applications. You will need to specify your specific TurtleBot3 model.  
+2. Bring up the basic packages to start essential TurtleBot3 applications. You will need to specify your TurtleBot3 model.  
 **[TurtleBot3 SBC]**  
   ```bash
   $ export TURTLEBOT3_MODEL=burger
   $ ros2 launch turtlebot3_bringup robot.launch.py
   ```
 
-Wait until the bringup process finishes and the TurtleBot3 is ready before proceeding.  
+Wait until the bringup process finishes and the TurtleBot3 is ready before proceeding.
 
 **2. Start the Interactive Marker Server**
 
@@ -72,7 +71,7 @@ Once RViz2 opens, follow these steps to configure the display:
     2. Navigate to the "**By topic**" tab.
     3. Locate and select "**InteractiveMarkers**.
 
-At this point, TurtleBot3 should appear in RViz, along with interactive markers that allow you to control its movement.
+At this point, the TurtleBot3 should appear in RViz, along with interactive markers that allow you to control its movement.
 
 **4. Controlling TurtleBot3 with Interactive Markers**
 
