@@ -1,6 +1,7 @@
 **Understanding the Overall Flow**
 
 To successfully detect obstacles and prevent collisions, several key components must be launched. The interaction between these components enables real-time obstacle detection and autonomous stopping of the robot when an obstacle is detected within a certain distance.
+<iframe width="640" height="360" src="https://www.youtube.com/embed/0y7YgwJRLhg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 - **TurtleBot3 Obstacle Detection Node (`turtlebot3_obstacle_detection node`)**
     - Subscribes to LaserScan messages from the LiDAR sensor `/scan`.
