@@ -1,3 +1,4 @@
+
 This example explains how to use the TurtleBot3 Absolute Position Control feature, which enables precise navigation to an absolute coordinate in the odometry frame. The system uses odometry data and quaternion-based orientation calculations to move the robot to a target position and heading.  
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/23gX5w4ZzkE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -21,7 +22,7 @@ To successfully move TurtleBot3 to a desired absolute position, several key comp
 **Step 1: Preparing TurtleBot3 (Odom Reset)**  
 Before running the absolute position control system, follow these steps to initialize the odometry frame `odom` properly:
 1. Place TurtleBot3 on a stable surface in the desired starting location.
-2. Ensure the robot is facing the correct forward direction.
+2. Ensure the robot is facing the correct direction.
 3. Turn on the power, allowing the system to reset the odometry frame `odom = (0,0,0)` at the starting position.  
 If you do not reset the odometry properly, the robot may navigate incorrectly due to incorrect initial position data.
 
@@ -72,7 +73,7 @@ This will move the robot to `1.5, 2.0` and rotate it to face `90°`.
 - **1. Position Control**  
     The system calculates the distance between the current position and the goal.
     The robot moves toward the goal while adjusting its angle to minimize deviation.
-    If the distance to the goal is within 0.05m, the robot stops linear motion and transitions to heading alignment.
+    If the distance to the goal is under 0.05m, the robot stops linear motion and transitions to heading alignment.
 
 - **2. Heading Control**  
     Once the robot reaches the target `x, y`, it calculates the heading error (difference between current and goal heading).
