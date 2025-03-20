@@ -1,4 +1,7 @@
-This example explains how to use the TurtleBot3's Absolute Position Control feature, which enables precise navigation to an absolute coordinate in the odometry frame. The system uses odometry data and quaternion-based orientation calculations to move the robot to a target position and heading.
+
+This example explains how to use the TurtleBot3 Absolute Position Control feature, which enables precise navigation to an absolute coordinate in the odometry frame. The system uses odometry data and quaternion-based orientation calculations to move the robot to a target position and heading.  
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/23gX5w4ZzkE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Understanding the Overall Flow**
 
