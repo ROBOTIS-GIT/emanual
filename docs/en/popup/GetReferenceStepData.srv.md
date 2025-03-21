@@ -6,23 +6,21 @@ layout: popup
 
 - Message Definition
 
- ```c
- ---
- StepData reference_step_data
- ```
+  ```c
+  ---
+  StepData reference_step_data
+  ```
 
 
-- Description
-A service that acquires current status of THORMANG3 from the [thormang3_walking_module].
-System time and pose of current [thormang3_walking_module] are provided in StepData format.
-&emsp;
+- Description  
+A service that acquires current status of THORMANG3 from the [thormang3_walking_module].  
+System time and pose of current [thormang3_walking_module] are provided in StepData format.  
 
-  - Request
-    * `empty`
-&emsp;&emsp;
+  - Request  
+    * `empty`  
 
-  - Response
-    * `StepData reference_step_data`([thormang3_walking_module_msgs/StepData])
+  - Response  
+    * `StepData reference_step_data`([thormang3_walking_module_msgs/StepData])  
 &emsp;&emsp; Reference Step Data
 
 

@@ -5,7 +5,7 @@ layout: popup
 - File : `laser_assembler/AssemblerScan2.srv`
 - Raw Message Definition
 
-  ```c
+  ```py
   # The time interval on which we want to aggregate scans
   time begin
   # The end of the interval on which we want to assemble scans or clouds
@@ -20,7 +20,7 @@ layout: popup
 - Compact Message Definition
 
   ```c
- time begin
- time end
- sensor_msgs/PointCloud2 cloud
+  time begin
+  time end
+  sensor_msgs/PointCloud2 cloud
   ```

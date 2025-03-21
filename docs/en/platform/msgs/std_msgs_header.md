@@ -13,7 +13,9 @@ sidebar:
 
 # [std_msgs_header](#std-msgs-header)
 
-  ```c
+- File : `std_msgs/Header.msg`
+- Raw Message Definition
+  ```py
   # Standard metadata for higher-level stamped data types.
   # This is generally used to communicate timestamped data
   # in a particular coordinate frame.
