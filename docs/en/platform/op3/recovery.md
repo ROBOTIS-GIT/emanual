@@ -109,7 +109,7 @@ This chapter explains how to install software and configure ROBOTIS OP3.
              Retype new SMB password: 111111
              ```  
          3. Append the following to the `/etc/samba/smb.conf` file  
-             ```conf  
+             ```ini  
              [root directory]
                  comment = Root Directory
                  path = /
@@ -142,6 +142,77 @@ This chapter explains how to install software and configure ROBOTIS OP3.
 2. **ROS Environment Setup**   
     > Reference : [ROS Environment and Network Settings]
 
+#### DDS Middleware and Network tuning
+ - Change DDS Middleware
+   - Install CycloneDDS
+     ```
+     $ sudo apt install ros-jazzy-rmw-cyclonedds-cpp
+     ```
+   - Append the following in your `~/.bashrc` file:
+     ```bash
+     export ROS2_WS='robotis_ws'
+     source /opt/ros/jazzy/setup.bash
+     source ~/$ROS2_WS/install/local_setup.bash
+
+     export ROS_DOMAIN_ID=1
+     export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+     export CYCLONEDDS_URI=file:///home/robotis/.ros/cyclonedds.xml
+     ```
+ - Tuning for large messages  
+   All DDS implementations are not designed to handle large messages (such as images). Therefore, it is necessary to tune them and the network parameters to prevent data loss and system overloading.  
+     
+   - Increase the minimum socket receive buffer and maximum size of messages for CycloneDDS  
+     Create the CycloneDDS configuration file:
+      ```sh
+      $ nano ~/.ros/cyclonedds.xml
+      ```
+      ```xml
+      <?xml version="1.0" encoding="UTF-8" ?>
+      <CycloneDDS xmlns="https://cdds.io/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://cdds.io/config https://raw.githubusercontent.com/eclipse-cyclonedds/cyclonedds/master/etc/cyclonedds.xsd">
+        <Domain id="any">
+          <General>
+            <Interfaces>
+              <NetworkInterface name="lo" />
+            </Interfaces>
+            <AllowMulticast>false</AllowMulticast>
+            <MaxMessageSize>65500B</MaxMessageSize>
+          </General>
+          <Internal>
+            <SocketReceiveBufferSize min="10MB"/>
+            <Watermarks>
+              <WhcHigh>500kB</WhcHigh>
+            </Watermarks>
+          </Internal>
+          <Discovery>
+            <ParticipantIndex>auto</ParticipantIndex>
+            <MaxAutoParticipantIndex>100</MaxAutoParticipantIndex>
+            <Peers>
+              <Peer Address="127.0.0.1"/>
+            </Peers>
+          </Discovery>
+        </Domain>
+      </CycloneDDS>
+      ```
+   - Create a network configuration file:
+       ```sh
+       $ sudo nano /etc/sysctl.d/10-cyclone-max.conf
+       ```
+       ```ini
+       # IP fragmentation settings
+       net.ipv4.ipfrag_time=3  # in seconds, default is 30 s
+       net.ipv4.ipfrag_high_thresh=33554432  # 32 MiB, default is 4 MiB
+
+       # Increase the maximum receive buffer size for network packets
+       net.core.rmem_max=134217728  # 128 MiB, default is 208 KiB
+       ```
+   - Save the file and reboot. Validate the sysctl settings, after a reboot:
+       ```sh
+       $ sysctl net.core.rmem_max net.ipv4.ipfrag_time net.ipv4.ipfrag_high_thresh
+       net.core.rmem_max = 134217728
+       net.ipv4.ipfrag_time = 3
+       net.ipv4.ipfrag_high_thresh = 33554432
+       ```
+
 #### [Installing ROBOTIS ROS Packages](#installing-robotis-ros-packages)  
 
  - ROBOTIS ROS Packages
@@ -152,14 +223,15 @@ This chapter explains how to install software and configure ROBOTIS OP3.
    -  [ROBOTIS-OP3] : ROS packages running in the ROBOTIS-OP3  
    -  [ROBOTIS-OP3-Common]
    -  [ROBOTIS-OP3-Demo] : ROBOTIS-OP3 uses this package when running a demonstration
-   -  [ROBOTIS-OP3-ETC]
+   -  ROBOTIS-OP3-ETC : : This package contains modified version of the usb_cam driver and face_detection used in ROBOTIS-OP3
    -  [ROBOTIS-OP3-msgs] : This package contains ROS messages that are used for ROBOTIS-OP3
    -  [ROBOTIS-OP3-Tools] : This package contains useful tools for ROBOTIS-OP3
-   -  [ROBOTIS-Utility]   
+   -  ROBOTIS-Utility : This package contains sound player for ROBOTIS-OP3  
 
  - How to install ROBOTIS ROS packages
    - Download sources from Github.  
       ```
+      $ mkdir -p ~/robotis_ws/src
       $ cd ~/robotis_ws/src
       $ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git --branch=jazzy-devl
       $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-Framework.git --branch=jazzy-devl
@@ -202,7 +274,16 @@ This chapter explains how to install software and configure ROBOTIS OP3.
    - `--from-paths src` : specifies the source directory where your ROS packages are located.
    - `--ignore-src` : ignores packages within the source directory itself.
    - `-r` : resolves dependencies recursively.
-   - `-y` : automatically answers "yes" to all prompts.
+   - `-y` : automatically answers "yes" to all prompts.  
+ - install additional packages  
+   - for ROBOTIS-Utility : madplay, mpg321
+        ```
+        $ sudo apt install -y madplay mpg321
+        ```
+   - ETC.
+        ```
+        $ sudo apt install -y ros-jazzy-xacro ros-jazzy-imu-tools python3-pydantic
+        ```
 
 
 #### ETC Setting   
@@ -268,6 +349,8 @@ This chapter explains how to install software and configure ROBOTIS OP3.
     1. Go to Start Button > `Settings` > `Power Manager`.
     2. Go to `General` > `Buttons` > `When power button is pressed` and change the option to `Shutdown`.    
 
+
+
 ## [Recovery of ROBOTIS-OP3](#recovery-of-robotis-op3)
 
 ### Overview
@@ -325,26 +408,12 @@ Clonezilla is used to recover ROBOTIS-OP3 with the image file in the provided US
 
 
 [How to Install Linux Mint]: https://linuxmint-installation-guide.readthedocs.io/en/latest/index.html
-[ROBOTIS-OP3]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3
-[ROBOTIS-OP3-Demo]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-demo
-[ROBOTIS-OP3-msgs]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-msgs
-[ROBOTIS-OP3-Tools]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-tools
-[ROBOTIS-OP3-Common]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-common
 [ROS Installation]: /docs/en/platform/common/op3_robot_operating_system/#how-to-install-ros
 [ROS Environment and Network Settings]: /docs/en/platform/common/op3_robot_operating_system/#setup
 [Setting for automatic startup]: /docs/en/platform/op3/getting_started/#how-to-kill-the-demo-program
-[e-manual]: /docs/en/platform/op3/recovery/#recovery-of-robotis-op3
 [sourceforge.net]: https://sourceforge.net/projects/darwinop/files/Software/Main%20Controller/Recovery%20USB/
 
-[DYNAMIXEL SDK]: /docs/en/software/robotis_framework_packages/#dynamixelsdk
-[ROBOTIS-Framerowk]: /docs/en/software/robotis_framework_packages/#robotis-framework
-[ROBOTIS-Framerowk-msgs]: /docs/en/software/robotis_framework_packages/#robotis-framework-msgs
-[ROBOTIS-Math]: /docs/en/platform/common/robotis_math/#robotis-math
-
 [humanoid_navigation]: /docs/en/platform/thormang3/thormang3_ros_packages/#humanoid_navigation
-[https://github.com/sbpl/sbpl]: https://github.com/sbpl/sbpl
-[rosbridge_server]: http://wiki.ros.org/rosbridge_server
-[web_video_server]: http://wiki.ros.org/web_video_server
 [How to use Web Setting Tool]: /docs/en/platform/op3/tutorials/#how-to-use-web-setting-tool
 
 </section>
@@ -352,3 +421,21 @@ Clonezilla is used to recover ROBOTIS-OP3 with the image file in the provided US
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
 {% include en/platform/op3/recovery_rev2.md %}
 </section>
+
+[https://github.com/sbpl/sbpl]: https://github.com/sbpl/sbpl
+[rosbridge_server]: http://wiki.ros.org/rosbridge_server
+[web_video_server]: http://wiki.ros.org/web_video_server
+
+[DYNAMIXEL SDK]: /docs/en/software/robotis_framework_packages/#dynamixelsdk
+[ROBOTIS-Framerowk]: /docs/en/software/robotis_framework_packages/#robotis-framework
+[ROBOTIS-Framerowk-msgs]: /docs/en/software/robotis_framework_packages/#robotis-framework-msgs
+[ROBOTIS-Math]: /docs/en/platform/common/robotis_math/#robotis-math
+
+[e-manual]: /docs/en/platform/op3/recovery/#recovery-of-robotis-op3
+
+[ROBOTIS-OP3]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3
+[ROBOTIS-OP3-Common]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-common
+[ROBOTIS-OP3-Demo]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-demo
+[ROBOTIS-OP3-msgs]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-msgs
+[ROBOTIS-OP3-Tools]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-tools
+
