@@ -145,7 +145,7 @@ This chapter explains how to install software and configure ROBOTIS OP3.
 #### DDS Middleware and Network tuning
  - Change DDS Middleware
    - Install CycloneDDS
-     ```
+     ```sh
      $ sudo apt install ros-jazzy-rmw-cyclonedds-cpp
      ```
    - Append the following in your `~/.bashrc` file:
@@ -233,7 +233,7 @@ This chapter explains how to install software and configure ROBOTIS OP3.
       ```
       $ mkdir -p ~/robotis_ws/src
       $ cd ~/robotis_ws/src
-      $ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git --branch=jazzy-devl
+      $ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git --branch=jazzy
       $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-Framework.git --branch=jazzy-devl
       $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-Framework-msgs.git --branch=jazzy-devl
       $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-Math.git --branch=jazzy-devl
@@ -244,12 +244,6 @@ This chapter explains how to install software and configure ROBOTIS OP3.
       $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-msgs.git --branch=jazzy-devl
       $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Tools.git --branch=jazzy-devl
       $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-Utility.git --branch=jazzy-devl
-      ```
-
-   - Build downloaded sources.  
-      ```
-      $ cd ~/robotis_ws
-      $ colcon build --symlink-install && source ~/.bashrc
       ```
 
 #### Installing additional applications for ROBOTIS ROS Package   
@@ -284,6 +278,12 @@ This chapter explains how to install software and configure ROBOTIS OP3.
         ```
         $ sudo apt install -y ros-jazzy-xacro ros-jazzy-imu-tools python3-pydantic
         ```
+
+#### Build downloaded ROBOTIS ROS packages.   
+```
+$ cd ~/robotis_ws
+$ colcon build --symlink-install && source ~/.bashrc
+```
 
 
 #### ETC Setting   
