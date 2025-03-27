@@ -9,7 +9,7 @@ It is a built-in BUTTON test on the OpenCM9.04 board.
 # Test
 There is one Push switche in OpenCM9.04. The pin number is defined as below, so you can see the status of the current button when you input the data of that pin.
 
-```
+```c++
 #define BOARD_BUTTON_PIN        23  
 ```
 

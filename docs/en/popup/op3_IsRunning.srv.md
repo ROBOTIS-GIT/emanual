@@ -5,12 +5,12 @@ layout: popup
 - File: `op3_action_module_msgs/IsRunning.srv`
 
 - Message Definition
- ```c
- ---
- bool is_running
- ```
+  ```c
+  ---
+  bool is_running
+  ```
 
-- Description
+- Description  
 A service that identifies whether OP3 is playing the action or not.  
 
   - Request  

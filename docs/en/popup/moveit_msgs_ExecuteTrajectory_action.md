@@ -7,15 +7,15 @@ layout: popup
 - Action Definition
 
   ```c
-    RobotTrajectory trajectory
-    ---
-    MoveItErrorCodes error_code
-    ---
-    string state
+  RobotTrajectory trajectory
+  ---
+  MoveItErrorCodes error_code
+  ---
+  string state
   ```
 
 
-- Description
+- Description  
 
   The trajectory to execute `RobotTrajectory trajectory`
 
