@@ -4,7 +4,7 @@
 1. Connect the [OpenCR] to the Rasbperry Pi using a micro USB cable.  
 ![](/assets/images/platform/turtlebot3/opencr/opencr_setup.png)  
 2. Install the required packages on the Raspberry Pi in order to upload the [OpenCR] firmware.  
-**[Turtlebot3 SBC]**  
+**[TurtleBot3 SBC]**  
   ```bash  
 $ sudo dpkg --add-architecture armhf  
 $ sudo apt-get update  
@@ -12,7 +12,7 @@ $ sudo apt-get install libc6:armhf
   ```  
 
 3. Depending on your specific model, specify either `burger` or `waffle` for the **OPENCR_MODEL** name.  
-**[Turtlebot3 SBC]**  
+**[TurtleBot3 SBC]**  
   ```bash  
 $ export OPENCR_PORT=/dev/ttyACM0  
 $ export OPENCR_MODEL=burger
@@ -20,14 +20,14 @@ $ rm -rf ./opencr_update.tar.bz2
   ```  
 
 4. Download the firmware and required loader, then extract the file to prepare for upload.
-**[Turtlebot3 SBC]**  
+**[TurtleBot3 SBC]**  
   ```bash  
 $ wget https://github.com/ROBOTIS-GIT/OpenCR-Binaries/raw/master/turtlebot3/ROS2/latest/opencr_update.tar.bz2   
 $ tar -xvf opencr_update.tar.bz2 
   ```  
 
 5. Upload firmware to the OpenCR.  
-**[Turtlebot3 SBC]**  
+**[TurtleBot3 SBC]**  
   ```bash  
 $ cd ./opencr_update  
 $ ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr  
