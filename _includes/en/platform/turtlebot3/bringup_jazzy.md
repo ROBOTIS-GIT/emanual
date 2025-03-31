@@ -1,6 +1,10 @@
 ## [Bringup](#bringup)
 
 ### [Bringup TurtleBot3](#bringup-turtlebot3)
+<div class="notice--danger">
+From the Jazzy version, the `cmd_vel` topic uses the `TwistStamped` type.  
+If you want to use the `Twist` type, set the `enable_stamped_cmd_vel` parameter in the bringup package to false.  
+</div>
 1. Open a new terminal on the remote PC with `Ctrl` + `Alt` + `T` and connect to the Raspberry Pi via SSH using its IP address.  
   Enter your `password` of Ubuntu OS in `Raspberry pi` .  
   **[Remote PC]**  
