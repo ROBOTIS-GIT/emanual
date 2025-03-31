@@ -187,7 +187,7 @@ $ free -h
 ![](/assets/images/platform/turtlebot3/sbc_setup/swap.png)
 </details>
 
-1. Install ROS2 Jazzy Hawksbill  
+1. Install ROS2 Jazzy Jalisco  
 **[TurtleBot3 SBC]**  
 Follow the instructions from [the official ROS2 Jazzy installation guide](https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debians.html).  Installing ROS-Base(Bare Bones) is recommended.
 

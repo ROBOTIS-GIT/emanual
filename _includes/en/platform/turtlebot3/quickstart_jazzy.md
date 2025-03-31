@@ -41,12 +41,12 @@ For most Linux users, the [Debian package installation method](https://docs.ros.
 ![](/assets/images/icon_unfold.png) **Click here to expand more details about How to install ROS2.**
 </summary>
   
-1. Visit the [Debian package installation](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html) page.  
+1. Visit the [Debian package installation](https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html) page.  
   
 2. Copy the CLI commands located in the green box and paste into your terminal with `ctrl` + `shift` + `v`  
   ![](/assets/images/platform/turtlebot3/ros2_install/ros2_install1-.png)    
   
-3. Generally, ros-humble-desktop is recommended for the `Remote PC`  
+3. Generally, ros-jazzy-desktop is recommended for the `Remote PC`  
   ![](/assets/images/platform/turtlebot3/ros2_install/ros2_install2-.png)  
   
 4. Add a line sourcing your environment to your bashrc.
