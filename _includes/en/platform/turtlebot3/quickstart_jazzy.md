@@ -32,7 +32,7 @@
 
 Please follow [the official ROS2 documentation](https://docs.ros.org/en/jazzy/Installation.html) to install ROS2 Jazzy.  
   
-For most Linux users, the [Debian package installation method](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html) is strongly recommended.  
+For most Linux users, the [Debian package installation method](https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debians.html) is strongly recommended.  
   
 
 <details>
@@ -94,6 +94,7 @@ Install the required TurtleBot3 Packages.
 
 **[Remote PC]**  
 ```bash  
+$ source /opt/ros/jazzy/setup.bash
 $ mkdir -p ~/turtlebot3_ws/src
 $ cd ~/turtlebot3_ws/src/
 $ git clone -b jazzy https://github.com/ROBOTIS-GIT/DynamixelSDK.git
@@ -112,6 +113,6 @@ $ source ~/.bashrc
 **[Remote PC]**  
   ```bash
 $ echo 'export ROS_DOMAIN_ID=30 #TURTLEBOT3' >> ~/.bashrc
-$ echo 'source /usr/share/gazebo/setup.sh' >> ~/.bashrc
+$ echo 'source /opt/ros/jazzy/setup.bash' >> ~/.bashrc
 $ source ~/.bashrc
   ```

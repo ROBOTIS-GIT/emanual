@@ -67,6 +67,7 @@ $ rpi-imager
 ![](/assets/images/platform/turtlebot3/sbc_setup/sbc_config_set.png)  
 9. Set `username and password`, `Configure wireless LAN`, `Wireless LAN country`. And activate `Enable SSH` with `Use password authenication` in SERVIES tab.  
 ![](/assets/images/platform/turtlebot3/sbc_setup/sbc_config_set2.png)
+![](/assets/images/platform/turtlebot3/sbc_setup/sbc_config_set3.png)  
 10. By completing this configuring setup process, the following Wi-Fi configuration steps (up to step 4) can be skipped.  
 
 ### Configure the Raspberry Pi
@@ -125,7 +126,7 @@ $ sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.
 10. Reboot the Raspberry Pi.  
 **[TurtleBot3 SBC]**  
 ```bash
-$ reboot
+$ sudo reboot
 ```
 
 11. After rebooting the Raspberry Pi, if you wish to work from a Remote PC using SSH, use the command below from the remote PC terminal. Make sure to use the password you set in `Step 1`.  

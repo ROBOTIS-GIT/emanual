@@ -88,6 +88,7 @@ Install the required TurtleBot3 Packages.
 
 **[Remote PC]**  
 ```bash  
+$ source /opt/ros/humble/setup.bash
 $ mkdir -p ~/turtlebot3_ws/src
 $ cd ~/turtlebot3_ws/src/
 $ git clone -b humble https://github.com/ROBOTIS-GIT/DynamixelSDK.git
@@ -107,5 +108,6 @@ $ source ~/.bashrc
   ```bash
 $ echo 'export ROS_DOMAIN_ID=30 #TURTLEBOT3' >> ~/.bashrc
 $ echo 'source /usr/share/gazebo/setup.sh' >> ~/.bashrc
+$ echo 'source /opt/ros/humble/setup.bash' >> ~/.bashrc
 $ source ~/.bashrc
   ```
