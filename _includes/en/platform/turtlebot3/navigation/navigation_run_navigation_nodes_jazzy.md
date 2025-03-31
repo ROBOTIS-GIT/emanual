@@ -1,3 +1,7 @@
+<div class="notice--danger">
+From the Jazzy version, the `cmd_vel` topic uses the `TwistStamped` type.  
+If you want to use the Twist type, set the enable_stamped_cmd_vel parameter to false in both the turtlebot3_bringup and turtlebot3_navigation2 packages.  
+</div>
 1. If `Bringup` is not running on the TurtleBot3 SBC, launch Bringup.
   - Open a new terminal from Remote PC with `Ctrl` + `Alt` + `T` and connect to Raspberry Pi with its IP address.
 The default password is **ubuntu**.  
@@ -8,7 +12,7 @@ $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ ros2 launch turtlebot3_bringup robot.launch.py
   ```
 
-2. Open a new terminal from Remote PC with `Ctrl` + `Alt` + `T` and launch the Navigation node. ROS 2 uses [Navigation2][nav2].
+1. Open a new terminal from Remote PC with `Ctrl` + `Alt` + `T` and launch the Navigation node. ROS 2 uses [Navigation2][nav2].
   Specify your TurtleBot3 model (`burger`, `waffle`, `waffle_pi`) using the `TURTLEBOT3_MODEL` parameter.  
 **[Remote PC]**  
   ```bash
