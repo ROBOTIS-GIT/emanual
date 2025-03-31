@@ -8,6 +8,7 @@ author_profile: false
 permalink: /docs/en/platform/turtlebot3/slam/
 tabs: "ROS"
 tab_title1: Humble
+tab_title2: Jazzy
 tab_title3: Noetic
 sidebar:
   title: TurtleBot3
@@ -26,6 +27,10 @@ page_number: 10
 {% include en/platform/turtlebot3/slam/slam_intro_humble.md %}
 </section>
 
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+{% include en/platform/turtlebot3/slam/slam_intro_jazzy.md %}
+</section>
+
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
 {% include en/platform/turtlebot3/slam/slam_intro_noetic.md %}
 </section>
@@ -34,6 +39,10 @@ page_number: 10
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/turtlebot3/slam/slam_run_slam_node_humble.md %}
+</section>
+
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+{% include en/platform/turtlebot3/slam/slam_run_slam_node_jazzy.md %}
 </section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
@@ -46,6 +55,10 @@ page_number: 10
 {% include en/platform/turtlebot3/slam/slam_run_teleoperation_node_humble.md %}
 </section>
 
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+{% include en/platform/turtlebot3/slam/slam_run_teleoperation_node_jazzy.md %}
+</section>
+
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
 {% include en/platform/turtlebot3/slam/slam_run_teleoperation_node_noetic.md %}
 </section>
@@ -54,6 +67,10 @@ page_number: 10
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/turtlebot3/slam/slam_tuning_guide_humble.md %}
+</section>
+
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+{% include en/platform/turtlebot3/slam/slam_tuning_guide_jazzy.md %}
 </section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
@@ -66,6 +83,10 @@ page_number: 10
 {% include en/platform/turtlebot3/slam/slam_save_map_humble.md %}
 </section>
 
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+{% include en/platform/turtlebot3/slam/slam_save_map_jazzy.md %}
+</section>
+
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
 {% include en/platform/turtlebot3/slam/slam_save_map_noetic.md %}
 </section>
@@ -74,6 +95,10 @@ page_number: 10
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/turtlebot3/slam/slam_map_humble.md %}
+</section>
+
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+{% include en/platform/turtlebot3/slam/slam_map_jazzy.md %}
 </section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">

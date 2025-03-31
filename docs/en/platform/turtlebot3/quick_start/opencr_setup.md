@@ -8,6 +8,7 @@ author_profile: false
 permalink: /docs/en/platform/turtlebot3/opencr_setup/
 tabs: "ROS"
 tab_title1: Humble
+tab_title2: Jazzy
 tab_title3: Noetic
 sidebar:
   title: TurtleBot3
@@ -28,6 +29,10 @@ page_number: 6
 <![end dummy Header 1]-->
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
+{% include en/platform/turtlebot3/opencr_setup_ros2.md %}
+</section>
+
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
 {% include en/platform/turtlebot3/opencr_setup_ros2.md %}
 </section>
 
