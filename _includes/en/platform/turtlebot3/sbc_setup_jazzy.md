@@ -187,9 +187,9 @@ $ free -h
 ![](/assets/images/platform/turtlebot3/sbc_setup/swap.png)
 </details>
 
-1. Install ROS2 Jazzy Jalisco  
+1. Install ROS 2 Jazzy Jalisco  
 **[TurtleBot3 SBC]**  
-Follow the instructions from [the official ROS2 Jazzy installation guide](https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debians.html).  Installing ROS-Base(Bare Bones) is recommended.
+Follow the instructions from [the official ROS 2 Jazzy installation guide](https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debians.html).  Installing ROS-Base(Bare Bones) is recommended.
 
 2. Install and Build ROS Packages.  
 Building the `turtlebot3` package may take longer than an hour. Please use a wall plug power supply to ensure the system is always powered.  
@@ -222,7 +222,7 @@ $ sudo udevadm trigger
 ```
 
 4. ROS Domain ID Setting
-In ROS2 DDS communication, `ROS_DOMAIN_ID` must match between the **Remote PC** and **TurtleBot3** for communication in the same network environment.The following commands show how to assign a `ROS_DOMAIN_ID` to the SBC of the TurtleBot3.
+In ROS 2 DDS communication, `ROS_DOMAIN_ID` must match between the **Remote PC** and **TurtleBot3** for communication in the same network environment.The following commands show how to assign a `ROS_DOMAIN_ID` to the SBC of the TurtleBot3.
 - The default ID of the **TurtleBot3** is `30`.
 - Configuring the `ROS_DOMAIN_ID` for the Remote PC and SBC of the TurtleBot3 to `30` is recommended.  
 **[TurtleBot3 SBC]**  

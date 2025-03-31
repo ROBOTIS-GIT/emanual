@@ -25,7 +25,7 @@ TurtleBot3 supports simulation development environments that can allow for devel
 The content in the e-Manual may be updated without prior notice and video content may be outdated.
 {: .notice--warning}
 
-This Gazebo Simulation uses the **ROS Gazebo package**, Gazebo version ROS2 Humble has to be installed before running these instructions.
+This Gazebo Simulation uses the **ROS Gazebo package**, Gazebo version ROS 2 Humble has to be installed before running these instructions.
 
 
 ### [Install Simulation Package](#install-simulation-package)

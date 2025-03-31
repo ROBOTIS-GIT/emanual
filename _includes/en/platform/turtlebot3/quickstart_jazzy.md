@@ -16,7 +16,7 @@
 {% endcapture %}
 <div class="notice--danger">{{ warning_01 | markdownify }}</div>
 
-**NOTE**: This instruction was tested on the `Ubuntu 24.04` linux distribution running `ROS2 Jazzy Jalisco`.
+**NOTE**: This instruction was tested on the `Ubuntu 24.04` linux distribution running `ROS 2 Jazzy Jalisco`.
 {: .notice--info}
 
 ### [Download and Install Ubuntu on Remote PC](#download-and-install-ubuntu-on-pc)
@@ -30,7 +30,7 @@
 
 ### [Install ROS 2 on Remote PC](#install-ros-2-on-remote-pc)
 
-Please follow [the official ROS2 documentation](https://docs.ros.org/en/jazzy/Installation.html) to install ROS2 Jazzy.  
+Please follow [the official ROS 2 documentation](https://docs.ros.org/en/jazzy/Installation.html) to install ROS 2 Jazzy.  
   
 For most Linux users, the [Debian package installation method](https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debians.html) is strongly recommended.  
   
@@ -38,7 +38,7 @@ For most Linux users, the [Debian package installation method](https://docs.ros.
 <details>
 <summary>
 
-![](/assets/images/icon_unfold.png) **Click here to expand more details about How to install ROS2.**
+![](/assets/images/icon_unfold.png) **Click here to expand more details about How to install ROS 2.**
 </summary>
   
 1. Visit the [Debian package installation](https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html) page.  
