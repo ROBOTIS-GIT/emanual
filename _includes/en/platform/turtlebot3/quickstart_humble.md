@@ -1,7 +1,7 @@
 {::options parse_block_html="true" /}
 # Quick Start Guide
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8w3xhG1GPdo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2I_29m_Z3WA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## [PC Setup](#pc-setup)
 
@@ -16,7 +16,7 @@
 {% endcapture %}
 <div class="notice--danger">{{ warning_01 | markdownify }}</div>
 
-**NOTE**: This instruction was tested on the `Ubuntu 22.04` linux distribution running `ROS2 Humble Hawksbill`.
+**NOTE**: This instruction was tested on the `Ubuntu 22.04` linux distribution running `ROS 2 Humble Hawksbill`.
 {: .notice--info}
 
 ### [Download and Install Ubuntu on Remote PC](#download-and-install-ubuntu-on-pc)
@@ -30,7 +30,7 @@
 
 ### [Install ROS 2 on Remote PC](#install-ros-2-on-remote-pc)
 
-Please follow [the official ROS2 documentation](https://docs.ros.org/en/humble/Installation.html) to install ROS2 Humble.  
+Please follow [the official ROS 2 documentation](https://docs.ros.org/en/humble/Installation.html) to install ROS 2 Humble.  
   
 For most Linux users, the [Debian package installation method](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html) is strongly recommended.  
   
@@ -38,7 +38,7 @@ For most Linux users, the [Debian package installation method](https://docs.ros.
 <details>
 <summary>
 
-![](/assets/images/icon_unfold.png) **Click here to expand more details about How to install ROS2.**
+![](/assets/images/icon_unfold.png) **Click here to expand more details about How to install ROS 2.**
 </summary>
   
 1. Visit the [Debian package installation](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html) page.  
