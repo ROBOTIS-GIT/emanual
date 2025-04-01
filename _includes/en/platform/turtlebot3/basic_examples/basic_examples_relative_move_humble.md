@@ -1,5 +1,5 @@
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/23gX5w4ZzkE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> #동영상 첨부 
+<iframe width="640" height="360" src="https://www.youtube.com/embed/23gX5w4ZzkE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
 
 **What is Relative Move?**  
 This example demonstrates how *TurtleBot3* can move to a relative position and orientation based on its current pose. Users input the relative position `(x, y)` and heading angle `theta` via the terminal. The robot will then move accordingly using *odometry* data.    
@@ -59,10 +59,10 @@ theta: goal orientation (range: -180 ~ 180, unit: deg)
 *Example Input:*  
 ```bash
 Input x: 1.0
-Input y: 0.5
+Input y: 1.0
 Input theta (deg): 90
 ```
-*The robot will move 1 meter **forward** and 0.5 meters to the **left**, then rotates to **90 degrees** from its current heading.*  
+*The robot will move 1 meter **forward** and 1 meter to the **left**, then rotate to **90 degrees** from its current heading. The robot first turns 45° to face the target point, and rotates an **additional 45°** to reach the final heading of 90° after moving forward.*  
 
 {% capture notice_04 %}
 **NOTE**:
