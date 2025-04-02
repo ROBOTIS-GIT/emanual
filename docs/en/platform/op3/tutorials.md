@@ -440,7 +440,7 @@ There are three options to run the GUI program.
 - Execution result  
   ![](/assets/images/platform/op3/op3_gui_ros2.png)
 
-### [How to take the initial pose of ROBOTIS-OP3](#how-to-take-the-initial-pose)
+### [How to take the initial pose](#how-to-take-the-initial-pose)
 Clicking the button surrounded by the red dashed rectangle will let the `base_module` control each joint of ROBOTIS-OP3 and take the initial posture.
 
 ![](/assets/images/platform/op3/op3_gui_initial_pose_ros2.png)
@@ -535,6 +535,10 @@ Operator can get different camera view angle by controlling head joints.
     ![](/assets/images/platform/op3/op3_gui_control_head_02_ros2.png)  
     ![](/assets/images/platform/op3/op3_gui_control_head_03.png)  
   
+### [How to control upgraded walking(online walking)](#how-to-control-upgraded-walkingonline-walking)
+
+This version does not support it.
+{: .notice--warning}
   
 ## [How to use offset tuner](#how-to-use-offset-tuner)
 
@@ -895,6 +899,10 @@ $ ros2 launch op3_demo demo.launch.xml
 
         - After you set the HSV range, you could calibrate the threshold value to detect the edge better.  
 
+## [How to control upgraded walking using footstep planner](#how-to-control-upgraded-walking-using-footstep-planner)
+
+This version does not support it.
+{: .notice--warning}
 
 ## [How to use Web Setting Tool](#how-to-use-web-setting-tool)
 

@@ -22,8 +22,11 @@ page_number: 6
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
 
 # [Simulation](#simulation)
-### Overview
+
+## Overview
 This manual describes how to use simulation tools (Gazebo and Webots) for the ROBOTIS-OP3 robot. Install or download the below required packages. Note that all the below packages need to be installed or downloaded to to use simulation properly. 
+
+## [Gazebo Installation](#gazebo-installation)
 
 ### Gazebo 
 * [Gazebo Tutorials]   
@@ -41,7 +44,9 @@ $ sudo apt install ros-jazzy-ros-gz
 $ sudo apt install ros-jazzy-gz-ros2-control
 ```
 
-### Webots 
+## [Webots Installation](#webots-installation)
+
+## Webots 
 * [Webots Tutorials]   
 * [Webots Installation]   
 
@@ -56,9 +61,9 @@ $ sudo apt-get install ros-jazzy-webots-ros2
 * [ROBOTIS OP3 Simulations]   
 
 
-## [Gazebo Simulation](#gazebo-simulation)
+## [How to execute Gazebo Simulation](#how-to-execute-gazebo-simulation)
 
-### How to execute Gazebo Simulation
+### How to execute
 USe the below command to call ROBOTIS-OP3 in Gazebo
 ```
 $ ros2 launch op3_gazebo_ros2 robot_sim.launch.py 
@@ -86,10 +91,9 @@ $ ros2 launch op3_manager op3_simulation.launch.py
 [World File]{: .popup}
 -->
 
+## [How to execute Webots Simulation](#how-to-execute-webots-simulation)
 
-## [Webots Simulation](#webots-simulation)
-
-### How to execute Webots Simulation
+### How to execute
 USe the below command to call ROBOTIS-OP3 in Gazebo
 ```
 $ ros2 launch op3_webots_ros2 robot_launch.py 

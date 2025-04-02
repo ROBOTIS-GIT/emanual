@@ -371,19 +371,19 @@ main:
         url: /platform/robothand_rx28/
       - titlekr: "*로봇핸드 MX28"
         url: /platform/robothand_mx28/
-    - title: "*ROBOTIS OP"
-      titlekr: "*로보티즈 OP"
+    - title: "ROBOTIS OP"
+      titlekr: "로보티즈 OP"
       url: /platform/op/getting_started/
       children:
+      - title: "ROBOTIS OP3"
+        titlekr: "로보티즈 OP3"
+        url: /platform/op3/introduction/
       - title: "*ROBOTIS OP"
         titlekr: "*로보티즈 OP"
         url: /platform/op/getting_started/
       - title: "*ROBOTIS OP2"
         titlekr: "*로보티즈 OP2"
         url: /platform/op2/getting_started/
-      - title: "*ROBOTIS OP3"
-        titlekr: "*로보티즈 OP3"
-        url: /platform/op3/introduction/
     - title: "*THORMANG3"
       titlekr: "*똘망3"
       url: /platform/thormang3/introduction/
@@ -25122,7 +25122,7 @@ op3:
       children:
       - title: "Run the program"
         url: /platform/op3/tutorials/#run-the-program
-      - title: "How to take the initial pose of ROBOTIS-OP3"
+      - title: "How to take the initial pose"
         url: /platform/op3/tutorials/#how-to-take-the-initial-pose
       - title: "How to set the Module"
         url: /platform/op3/tutorials/#how-to-set-the-module
@@ -25153,8 +25153,12 @@ op3:
     children:
     - title: "Gazebo Installation"
       url: /platform/op3/simulation/#gazebo-installation
+    - title: "Webots Installation"
+      url: /platform/op3/simulation/#webots-installation
     - title: "How to execute Gazebo Simulation"
       url: /platform/op3/simulation/#how-to-execute-gazebo-simulation
+    - title: "How to execute Webots Simulation"
+      url: /platform/op3/simulation/#how-to-execute-webots-simulation
   - title: "Hardware"
     url: /platform/op3/hardware/#hardware
     children:

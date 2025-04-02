@@ -377,7 +377,7 @@ from ROBOTIS before their standard warranty period is over.
 {: .notice--warning}
 
 
-### [Control Table](#contrl-table)
+### [Control Table](#control-table)
 Control Table consists of data regarding the current status and operation of OpenCR. The user can control OpenCR by changing data of Control Table via Instruction packet.
 
 #### EEPROM and RAM
