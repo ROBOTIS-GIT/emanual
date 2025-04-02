@@ -5,7 +5,7 @@ layout: popup
 - File : `geometry_msgs/Pose.msg`
 - Raw Message Definition
 
-  ```c
+  ```py
   # A representation of pose in free space, composed of position and orientation.
   Point position
   Quaternion orientation

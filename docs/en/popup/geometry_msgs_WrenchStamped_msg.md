@@ -5,7 +5,7 @@ layout: popup
 - File : `geometry_msgs/WrenchStamped.msg`
 - Raw Message Definition
 
-  ```c
+  ```py
   # A wrench with reference coordinate frame and timestamp
   Header header
   Wrench wrench

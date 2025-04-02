@@ -16,7 +16,6 @@ layout: popup
   float64 final_eps
   float64 planning_time
   int64 expanded_states
-
   ```
 - Compact Message Definition
 
@@ -29,5 +28,4 @@ layout: popup
   float64 final_eps
   float64 planning_time
   int64 expanded_states
-
   ```

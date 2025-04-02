@@ -6,6 +6,9 @@ read_time: true
 share: true
 author_profile: false
 permalink: /docs/en/platform/op3/robotis_ros_packages/
+tabs: "Revision"
+tab_title1: "2025 ~"
+tab_title2: "~ 2023"
 sidebar:
   title: ROBOTIS OP3
   nav: "op3"
@@ -14,6 +17,9 @@ page_number: 4
 ---
 
 <style>body {counter-reset: h1 3 !important;}</style>
+
+{::options parse_block_html="true" /}
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
 
 # [ROBOTIS ROS Packages](#robotis-ros-packages)
 
@@ -40,22 +46,30 @@ Action contains all joint angles per each time frame.
 
 ###### ROS API  
 - Subscribed Topics  
-  `/robotis/action/page_num`([std_msgs/Int32]{: .popup})  
+  `/robotis/action/page_num`([std_msgs/msg/Int32]{: .popup})  
   &emsp;&emsp; The page number of action to run in the Module.  
-  &emsp;&emsp; 1 ~ 255 : play action  
-  &emsp;&emsp; -1 : stop action  
-  &emsp;&emsp; -2 : brake action  
+  &emsp;&emsp; -&emsp;1 ~ 255 : play action  
+  &emsp;&emsp; -&emsp;-1 : stop action  
+  &emsp;&emsp; -&emsp;-2 : brake action  
+
+  `/robotis/action/start_action`([op3_action_module_msgs/msg/StartAction]{: .popup})  
+  &emsp;&emsp; Message that contain a page number will be played and specified joints name will be applied action plaing result.    
 
 - Published Topics  
-  `/robotis/status`([robotis_controller_msgs/StatusMsg]{: .popup})  
+  `/robotis/status`([robotis_controller_msgs/msg/StatusMsg]{: .popup})  
   &emsp;&emsp; Message that describes status of action_module.  
 
+  `/robotis/movement_done`([std_msgs/msg/String]{: .popup})  
+  &emsp;&emsp; Message that describes the robot has finished its movement.  
+  &emsp;&emsp; -&emsp;action : action finished  
+  &emsp;&emsp; -&emsp;action_failed : action failed  
+
 - Services  
-  `/robotis/action/is_running`([op3_action_module_msgs/IsRunning]{: .popup})  
+  `/robotis/action/is_running`([op3_action_module_msgs/srv/IsRunning]{: .popup})  
   &emsp;&emsp; Service that checks whether the action is running or not.  
 
 ###### Parameters
-  `/action file path`(string, default : "op3_action_module/data/motion_4,095.bin")  
+  `/action file path`(string, default : "op3_action_module/data/motion_4095.bin")  
   &emsp;&emsp; File path that indicates the location of action libraries for OP3.  
 
 ##### [op3_base_module](#op3-base-module)
@@ -74,14 +88,14 @@ This module is compiled to a library to be used in [op3_manager].
 
 ###### ROS API  
 - Subscribed Topics  
-  `/robotis/base/ini_pose`([std_msgs/String]{: .popup})  
+  `/robotis/base/ini_pose`([std_msgs/msg/String]{: .popup})  
   &emsp;&emsp; This message will have OP3 to take the initial posture(This command is effective even when the base &emsp;&emsp; module is inactive).  
 
 - Published Topics  
-  `/robotis/enable_ctrl_module`([std_msgs/String]{: .popup})  
+  `/robotis/enable_ctrl_module`([std_msgs/msg/String]{: .popup})  
   &emsp;&emsp; This message activates `op3_base_module` to take the initial posture.  
 
-  `/robotis/status`([robotis_controller_msgs/StatusMsg]{: .popup})  
+  `/robotis/status`([robotis_controller_msgs/msg/StatusMsg]{: .popup})  
   &emsp;&emsp; This message notifies the status of `op3_base_module`.  
 
 ###### Data  
@@ -89,7 +103,7 @@ This module is compiled to a library to be used in [op3_manager].
 
  - data file path : [/op3_base_module/data/ini_pose.yaml]  
 
- - YAML format
+ - YAML format  
    - mov_time : Estimated time to move to target points(unit in second)  
    - via_num : Number of waypoints  
    - via_time : Estimated time between waypoints(array structure)   
@@ -103,7 +117,7 @@ This chapter explains the module to control OP3's head.
 This module is compiled to a library to be used in [op3_manager].  
 
 ###### Getting started  
-- Download & Build
+- Download & Build  
   > Reference : [Installing ROBOTIS ROS Package]    
 
 - Usage  
@@ -112,18 +126,18 @@ This module is compiled to a library to be used in [op3_manager].
 
 ###### ROS API
 - Subscribed Topics  
-  `/robotis/head_control/scan_command`([std_msgs/String]{: .popup})  
+  `/robotis/head_control/scan_command`([std_msgs/msg/String]{: .popup})  
   &emsp;&emsp; This message will request a looking around head motion to scan the environment.  
 
-  `/robotis/head_control/set_joint_states`([sensor_msgs/JointState]{: .popup})  
+  `/robotis/head_control/set_joint_states`([sensor_msgs/msg/JointState]{: .popup})  
   &emsp;&emsp; Head joints will rotate to corresponding angles written in the message.  
 
-  `/robotis/head_control/set_joint_states_offset`([sensor_msgs/JointState]{: .popup})  
+  `/robotis/head_control/set_joint_states_offset`([sensor_msgs/msg/JointState]{: .popup})  
   &emsp;&emsp; Head joints will adjust angles by offset values written in the message.  
 
 
 - Published Topics  
-  `/robotis/status`([robotis_controller_msgs/StatusMsg]{: .popup})  
+  `/robotis/status`([robotis_controller_msgs/msg/StatusMsg]{: .popup})  
   &emsp;&emsp; This message notifies the status of head_control_module.  
 
 ##### [op3_walking_module](#op3-walking-module)
@@ -142,18 +156,18 @@ This module is compiled to a library to be used in [op3_manager].
 
 ###### ROS API
 - Subscribed Topics  
-  `/robotis/walking/command`([std_msgs/String]{: .popup})  
+  `/robotis/walking/command`([std_msgs/msg/String]{: .popup})  
   &emsp;&emsp; This message requests start and stop for walking.  
 
-  `/robotis/walking/set_params`([op3_walking_module_msgs/WalkingParam]{: .popup})  
+  `/robotis/walking/set_params`([op3_walking_module_msgs/msg/WalkingParam]{: .popup})  
   &emsp;&emsp; This message sets necessary parameters for walking. For details, refer to [WalkingParam.msg].  
 
 - Published Topics  
-  `/robotis/status`([robotis_controller_msgs/StatusMsg]{: .popup})  
+  `/robotis/status`([robotis_controller_msgs/msg/StatusMsg]{: .popup})  
   &emsp;&emsp; This message notifies the status of op3_walking_module.  
 
 - Services  
-  `/robotis/walking/get_params`([op3_walking_module_msgs/GetWalkingParam]{: .popup})  
+  `/robotis/walking/get_params`([op3_walking_module_msgs/msg/GetWalkingParam]{: .popup})  
   &emsp;&emsp; This service acquires walking parameters.  
 
 ###### Parameters
@@ -167,149 +181,60 @@ This module is compiled to a library to be used in [op3_manager].
 
  - YAML format
    - x_offset: offset in the x-direction (front and back) [m]  
-
      ![](/assets/images/platform/op3/op3_walking_module_image142.jpg)
 
    - y_offset: offset in the y-direction (left and right) [m]  
-
      ![](/assets/images/platform/op3/op3_walking_module_image143.jpg)
 
    - z_offset: offset in the z-direction (up and down) [m]  
-
      ![](/assets/images/platform/op3/op3_walking_module_image144.jpg)
 
    - roll_offset: roll offset (x-coordinate) [degree]  
-
      ![](/assets/images/platform/op3/op3_walking_module_image145.jpg)
 
    - pitch_offset: pitch offset (y-coordinate) [degree]  
-
      ![](/assets/images/platform/op3/op3_walking_module_image146.jpg)
 
    - yaw_offset: yaw offset (z-coordinate) [degree]  
-
      ![](/assets/images/platform/op3/op3_walking_module_image2.gif)
 
    - hip_pitch_offset: pitch offset (y-coordinate) at the hip level. Values are for DYNAMIXEL position values for hip pitch joints. [degree]  
-
      ![](/assets/images/platform/op3/op3_walking_module_image147.jpg)
 
    - period_time: Time required for ROBOTIS-OP3 to complete two full steps (left and right foot) [ms]  
-
      ![](/assets/images/platform/op3/op3_walking_module_image148.jpg)
 
    - dsp_ratio: Time ratio of the period when both feet are touching the ground to the period of walking cycle.  
-
      ![](/assets/images/platform/op3/op3_walking_module_image149.jpg)
 
    - foot_height: foot elevation during walk [m]  
-
      ![](/assets/images/platform/op3/op3_walking_module_image152.jpg)
 
-   - swing_right_left: swing to either left or right during walk [m]
-
+   - swing_right_left: swing to either left or right during walk [m]  
      ![](/assets/images/platform/op3/op3_walking_module_image153.jpg)
 
    - swing_top_down: up and down body swing during walk [m]  
-
      ![](/assets/images/platform/op3/op3_walking_module_image154.jpg)
 
    - pelvis_offset: roll offset (x-coordinate) at the pelvis level. Values are for DYNAMIXEL position values for hip roll joints [degree]  
-
      ![](/assets/images/platform/op3/op3_walking_module_image155.jpg)
 
-   - arm_swing_gain: Arm swing gain with respect to Step forward/back. If the left foot moves forward then the right arm swings.
+   - arm_swing_gain: Arm swing gain with respect to Step forward/back. If the left foot moves forward then the right arm swings.  
 
-   - balance_hip_roll_gain: Gain with respect to the gyroscope roll
+   - balance_hip_roll_gain: Gain with respect to the gyroscope roll  
 
-   - balance_knee_gain: Gain with respect to the gyroscope pitch
+   - balance_knee_gain: Gain with respect to the gyroscope pitch  
 
-   - balance_ankle_roll_gain: Gain with respect to the gyroscope roll
+   - balance_ankle_roll_gain: Gain with respect to the gyroscope roll  
 
-   - balance_ankle_pitch_gain: Gain with respect to the gyroscope pitch
+   - balance_ankle_pitch_gain: Gain with respect to the gyroscope pitch  
 
-   - p_gain: not yet implemented
+   - p_gain: not yet implemented  
 
-   - i_gain: not yet implemented
+   - i_gain: not yet implemented  
 
-   - d_gain: not yet implemented
+   - d_gain: not yet implemented  
 
-##### [op3_online_walking_module](#op3-online-walking-module)
-
-###### Overview
-This chapter explains the module to control OP3's walking.  
-This module is compiled to a library to be used in [op3_manager].  
-Online walking algorithm is described in this book ([Introduction to Humanoid Robotics]).
-
-###### Getting started  
-- Download & Build
-  > Reference : [Installing ROBOTIS ROS Package]
-
-- Usage
-The Motion Module is used in the manager in the form of library.  
-  > Reference : [Creating new robot manager]
-
-###### ROS API
-- Subscribed Topics  
-  `/robotis/online_walking/reset_body` ([std_msgs/Bool]{: .popup})  
- &emsp;&emsp;This message will reset the body pose to default value.  
-
-  `/robotis/online_walking/goal_joint_pose`  
-([op3_online_walking_module_msgs/JointPose]{: .popup})  
-&emsp;&emsp; This message will set desired pose in joint space.  
-
-  `/robotis/online_walking/goal_kinematics_pose`  
-([op3_online_walking_module_msgs/KinematicsPose]{: .popup})  
-&emsp;&emsp; This message will set desired pose in task space.  
-
-  `/robotis/online_walking/foot_step_command`  
-([op3_online_walking_module_msgs/FootStepCommand]{: .popup})  
-&emsp;&emsp; This message will set walking command.  
-
-  `/robotis/online_walking/foot_step_command`  
-([op3_online_walking_module_msgs/FootStepCommand]{: .popup})  
-&emsp;&emsp; This message will execute desired walking performance.  
-
-  `/robotis/online_walking/walking_param`  
-([op3_online_walking_module_msgs/WalkingParam]{: .popup})  
-&emsp;&emsp; This message will set walking parameter.
-
-  `/robotis/online_walking/body_offset`  
-([geometry_msgs/Pose]{: .popup})  
-&emsp;&emsp; This message will set desired body offset.
-
-  `/robotis/online_walking/foot_distance`  
-([std_msgs/Float64]{: .popup})  
-&emsp;&emsp; This message will set desired foot distance between left and right foot.
-
-  `/robotis/online_walking/footsteps_2d`  
-([op3_online_walking_module_msgs/Step2DArray]{: .popup})  
-&emsp;&emsp; This message will set desired foot step from foot step generator.
-
-
-- Published Topics  
-  `/robotis/status`([robotis_controller_msgs/StatusMsg]{: .popup})  
-&emsp;&emsp; This message notifies the status of head_control_module.  
-
-  `/robotis/movement_done`([std_msgs/String]{: .popup})  
-&emsp;&emsp; This message notifies the end of movement.  
-
-  `/robotis/pelvis_pose`([geometry_msgs/PoseStamped]{: .popup})  
-&emsp;&emsp; This message send desired pelvis pose for localization.  
-
-- Service Server  
-  `/robotis/online_walking/get_joint_pose`  
-([op3_online_walking_module_msgs/GetJointPose]{: .popup})  
-&emsp;&emsp; This service is used to get current desired joint pose.  
-
-  `/robotis/online_walking/get_kinematics_pose`  
-([op3_online_walking_module_msgs/GetKinematicsPose]{: .popup})  
-&emsp;&emsp; This service is used to get current desired kinematics pose.  
-
-- Service Client
-  `/robotis/online_walking/get_preview_matrix`  
-([op3_online_walking_module_msgs/GetPreviewMatrix]{: .popup})  
-&emsp;&emsp; This service is used to calculate matrix for online walking.  
 
 ##### [op3_direct_control_module](#op3-direct-control-module)
 
@@ -326,18 +251,20 @@ This chapter explains the module to control the joints of ROBOTIS-OP3 directly.
 
 ###### ROS API  
 - Subscribed Topics  
-  `/robotis/direct_control/set_joint_states`([sensor_msgs/JointState]{: .popup})  
+  `/robotis/direct_control/set_joint_states`([sensor_msgs/msg/JointState]{: .popup})  
   &emsp;&emsp; Message that include the joint value user want to move.  
 
 - Published Topics  
-  `/robotis/status`([robotis_controller_msgs/StatusMsg]{: .popup})  
+  `/robotis/status`([robotis_controller_msgs/msg/StatusMsg]{: .popup})  
   &emsp;&emsp; Message that describes status of action_module.  
 
 ###### Parameters  
   `/robotis/direct_control/default_moving_time`(double, default : 0.5)  
   &emsp;&emsp; minimum time to move to target position  
+
   `/robotis/direct_control/default_moving_angle`(double, default : 30)  
   &emsp;&emsp; angle moving to target position per 1 sec  
+  
   `/robotis/direct_control/check_collision`(bool, default : true)  
   &emsp;&emsp; enable of pseudo self-collision checking  
   
@@ -356,41 +283,50 @@ This chapter explains the module used for offset and gain adjustment.
 
 ###### ROS API  
 - Subscribed Topics  
-  `/robotis/tuning_module/tuning_pose`([std_msgs/String]{: .popup})  
+  `/robotis/tuning_module/tuning_pose`([std_msgs/msg/String]{: .popup})  
   &emsp;&emsp; Message that is used to change the posture for tuning a gain  
-  `/robotis/tuning_module/joint_offset_data`([op3_tuning_module_msgs/JointOffsetData]{: .popup})  
+
+  `/robotis/tuning_module/joint_offset_data`([op3_tuning_module_msgs/msg/JointOffsetData]{: .popup})  
   &emsp;&emsp; Message used to change the offset  
-  `/robotis/tuning_module/joint_gain_data`([op3_tuning_module_msgs/JointOffsetData]{: .popup})  
+
+  `/robotis/tuning_module/joint_gain_data`([op3_tuning_module_msgs/msg/JointOffsetData]{: .popup})  
   &emsp;&emsp; Message used to change the gain  
-  `/robotis/tuning_module/torque_enable`([op3_tuning_module_msgs/JointTorqueOnOffArray]{: .popup})  
+
+  `/robotis/tuning_module/torque_enable`([op3_tuning_module_msgs/msg/JointTorqueOnOffArray]{: .popup})  
   &emsp;&emsp; Message used to en/disable the torque of joints  
-  `/robotis/tuning_module/command`([std_msgs/String]{: .popup})  
+
+  `/robotis/tuning_module/command`([std_msgs/msg/String]{: .popup})  
   &emsp;&emsp; Message for command(ex. save gain, save offset)  
 
 - Published Topics  
-  `/robotis/status`([robotis_controller_msgs/StatusMsg]{: .popup})  
+  `/robotis/status`([robotis_controller_msgs/msg/StatusMsg]{: .popup})  
   &emsp;&emsp; Message that describes status of action_module.    
-  `/robotis/enable_ctrl_module`([std_msgs/String]{: .popup})  
+
+  `/robotis/enable_ctrl_module`([std_msgs/msg/String]{: .popup})  
   &emsp;&emsp; Message for changing a motion module of robotis_controller  
-  `/robotis/sync_write_item`([robotis_controller_msgs/SyncWriteItem]{: .popup})  
+
+  `/robotis/sync_write_item`([robotis_controller_msgs/msg/SyncWriteItem]{: .popup})  
   &emsp;&emsp; Message for sync write with dynamixel in robotis_controller  
-  `/robotis/enable_offset`([std_msgs/Bool]{: .popup})  
+
+  `/robotis/enable_offset`([std_msgs/msg/Bool]{: .popup})  
   &emsp;&emsp; Messages for turning on / off offsets in robotis_controller  
     
 - Service Server  
-  `/robotis/tuning_module/get_present_joint_offset_data`  ([op3_tuning_module_msgs/GetPresentJointOffsetData]{: .popup})  
+  `/robotis/tuning_module/get_present_joint_offset_data`  ([op3_tuning_module_msgs/msg/GetPresentJointOffsetData]{: .popup})  
   &emsp;&emsp; Service used to notify joint states including offset  
    
 - Service Client  
-  `/robotis/set_present_ctrl_modules`([robotis_controller_msgs/SetModule]{: .popup})  
+  `/robotis/set_present_ctrl_modules`([robotis_controller_msgs/msg/SetModule]{: .popup})  
   &emsp;&emsp; Service for changing a motion module of robotis_controller  
-  `/robotis/load_offset`([robotis_controller_msgs/LoadOffset]{: .popup})  
+
+  `/robotis/load_offset`([robotis_controller_msgs/msg/LoadOffset]{: .popup})  
   &emsp;&emsp; Service used to apply the new offset in robotis_controller  
   
 
 ###### Parameters  
   `offset_file_path`(string, default : `~/data/tune_pose.yaml`)  
   &emsp;&emsp; This path indicates the location of the file that contains offset data of each joint.  
+
   `init_file_path`(string, default : `~/data/offset.yaml`)  
   &emsp;&emsp; This path indicates the location of the file that contains initialization information of each joint  
 
@@ -398,15 +334,15 @@ This chapter explains the module used for offset and gain adjustment.
 
 ##### [open_cr_module](#open-cr-module)
 
-###### Overview
-This chapter introduces the module that utilizes OpenCR as sensor and IO interface.
+###### Overview  
+This chapter introduces the module that utilizes OpenCR as sensor and IO interface.  
 This module provides Gyro, Acceleration, Button and LED functions.
 
   > Reference : [OPENCR]
 
 ###### Getting started
-- Download & Build
- > Reference : [Installing ROBOTIS ROS Package]   
+- Download & Build  
+  > Reference : [Installing ROBOTIS ROS Package]   
 
 ###### Usage
 The Sensor Module is used in the manager in the form of library.  
@@ -414,13 +350,13 @@ The Sensor Module is used in the manager in the form of library.
 
 ###### ROS API
 - Published Topics  
-  `/robotis/status`([robotis_controller_msgs/StatusMsg]{: .popup})  
+  `/robotis/status`([robotis_controller_msgs/msg/StatusMsg]{: .popup})  
 &emsp;&emsp; This message notifies the status of open_cr_module.  
 
-  `/robotis/open_cr/imu`([sensor_msgs/Imu]{: .popup})  
+  `/robotis/open_cr/imu`([sensor_msgs/msg/Imu]{: .popup})  
 &emsp;&emsp; This message contains IMU data from OpenCR.  
 
-  `/robotis/open_cr/button`([std_msgs/String]{: .popup})  
+  `/robotis/open_cr/button`([std_msgs/msg/String]{: .popup})  
 &emsp;&emsp; This message notifies the status of the button connected to OpenCR GPIO.  
 
 ### [OP3 Manager](#op3-manager)
@@ -439,10 +375,10 @@ Execute the program with a `.launch` file in order to load ROS parameters.
 The command should be executed under the root account to configure the attribute of Thread.  
 `op3_manager` has a direct control over ROBOTIS-OP3, therefore other control programs such as `op3_walking_tuner` and `op3_action_editor` should not be running.  
 Before executing the `op3_manager` launch file, other programs should be terminated.  
-```
+```bash
 $ sudo bash  
 [sudo] password for robotis:   
-# roslaunch op3_manager op3_manager.launch  
+# ros2 launch op3_manager op3_manager.launch.py  
 ```
 
 #### ROS API  
@@ -481,9 +417,8 @@ Actual control is processed within each modules.
  2. [op3_base_module] : This module manages initial posture and basic functions.  
  3. [op3_head_control_module] : This module controls OP3 head.  
  4. [op3_walking_module] : This module controls walking.  
- 5. [op3_online_walking_module] : This module controls upgraded walking.
- 6. [op3_direct_control_module] :  This module controls ROBOTIS-OP3 directly.  
- 7. [op3_tuning_module] : This module is used to tune the gain and offset.  
+ 5. [op3_direct_control_module] :  This module controls ROBOTIS-OP3 directly.  
+ 6. [op3_tuning_module] : This module is used to tune the gain and offset.  
 
 ##### Sensor Module  
  1. [open_cr_module] : This module is required to use OpenCR as a sensor.  
@@ -497,7 +432,7 @@ Structure of `op3_manager`
  - According to the frequency stated in the `.robot` file, exchange data with DYNAMIXEL and OpenCR.
 
 
-```
+```cpp
 ...
 
 // initialize robot
@@ -547,22 +482,12 @@ This node publish TF data from /world to /body_link.
 ##### ROS API
 
 ###### Subscribed Topics
-`/robotis/pelvis_pose`([geometry_msgs/PoseStamped]{: .popup})  
+`/robotis/pelvis_pose`([geometry_msgs/msg/PoseStamped]{: .popup})  
 &emsp;&emsp; This message will set the body_link pose from /world.  
 
-`/robotis/pelvis_pose_reset`([std_msgs/String]{: .popup})  
+`/robotis/pelvis_pose_reset`([std_msgs/msg/String]{: .popup})  
 &emsp;&emsp; This message will reset the body_link pose to default value.  
 
-#### [op3_optimization](#op3-optimization)
-
-##### Overview  
-`op3_optimization` is ros node for online walking pattern generation.  
-
-##### ROS API
-
-###### Service Server  
-`/robotis/get_preview_matrix`([op3_online_walking_module_msgs/GetPreviewMatrix]{: .popup})  
-&emsp;&emsp; This service will return preview control matrix for online walking pattern generation.  
 
 ## [ROBOTIS OP3 msgs](#robotis-op3-msgs)
 
@@ -574,10 +499,10 @@ This node publish TF data from /world to /body_link.
 The followings are Messages and Services used for the [op3_action_module].  
 
 ##### ROS Message Type
-* [StartAction.msg]{: .popup}
+* [op3_action_module_msgs/msg/StartAction]{: .popup}
 
 ##### ROS Service Type
-* [IsRunning.srv]{: .popup}
+* [op3_action_module_msgs/srv/IsRunning]{: .popup}
 
 #### [op3_walking_module_msgs](#op3-walking-module-msgs)
 
@@ -591,26 +516,6 @@ Messages and Services used in the [op3_walking_module]
 * [GetWalkingParam.srv]{: .popup}
 * [SetWalkingParam.srv]{: .popup}
 
-#### [op3_online_walking_module_msgs](#op3-online-walking-module-msgs)
-
-##### Overview
-Messages and Services used in the [op3_online_walking_module]  
-
-##### ROS Message Type
-* [FootStepArray.msg]{: .popup}
-* [FootStepCommand.msg]{: .popup}
-* [JointPose.msg]{: .popup}
-* [KinematicsPose.msg]{: .popup}
-* [PreviewRequest.msg]{: .popup}
-* [PreviewResponse.msg]{: .popup}
-* [Step2D.msg]{: .popup}
-* [Step2DArray.msg]{: .popup}
-* [WalkingParam.msg]{: .popup}
-
-##### ROS Service Type  
-* [GetJointPose.srv]{: .popup}
-* [GetKinematicsPose.srv]{: .popup}
-* [GetPreviewMatrix.srv]{: .popup}
 
 #### [op3_tuning_module_msgs](#op3-tuning-module-msgs)
 
@@ -655,47 +560,41 @@ The package utilizes OpenCV library in order to search for a ball with a specifi
   > Reference : [Installing ROBOTIS ROS Package]    
 
 ##### Run
-- Standalone   
-Execute the program with a `.launch` file in order to load ROS parameters of ball_detector.  
-  ```
-  $ roslaunch op3_ball_detector ball_detector.launch
-  ```
-
 - Launch with usb_cam package  
 Execute the program with a `.launch` file in order to load ROS parameters.  
+  ```bash
+  $ ros2 launch op3_ball_detector ball_detector_from_usb_cam.launch.py
   ```
-  $ roslaunch op3_ball_detector ball_detector_from_usb_cam.launch
-  ```
- > Reference : [`usb_cam`]  
- > Reference : The following software must be pre-installed to use `usb_cam` package.  
- > `$ sudo apt-get install v4l-utils`
+  > Reference : [`usb_cam`]  
+  > Reference : The following software must be pre-installed to use `usb_cam` package.  
+  > `$ sudo apt-get install v4l-utils`
 
 #### ROS API
 
 ##### Subscribed Topics  
-`~/enable`([std_msgs/Bool]{: .popup})  
+`~/enable`([std_msgs/msg/Bool]{: .popup})  
 &emsp;&emsp; OP3 will start searching for a ball with a `True` message, and stop with a `False` message.  
 
-`~/image_in`([sensor_msgs/Image]{: .popup})  
+`~/image_in`([sensor_msgs/msg/Image]{: .popup})  
 &emsp;&emsp; The message in this topic contains camera input image for ball searching.  
 
-`~/cameraInfo_in`([sensor_msgs/CameraInfo]{: .popup})  
+`~/cameraInfo_in`([sensor_msgs/msg/CameraInfo]{: .popup})  
 &emsp;&emsp; The message in this topic contains camera information of the corresponding input image.  
 
 ##### Published Topics  
-`~/image_out`([sensor_msgs/Image]{: .popup})  
+`~/image_out`([sensor_msgs/msg/Image]{: .popup})  
 &emsp;&emsp; The message in this topic contains an output image after the ball searching process.  
 
-`~/camera_info`([sensor_msgs/CameraInfo]{: .popup})  
+`~/camera_info`([sensor_msgs/msg/CameraInfo]{: .popup})  
 &emsp;&emsp; The message in this topic contains camera information of the output image.  
 
 `~/circle_set`([ball_detector/circleSetStamped]{: .popup})  
-&emsp;&emsp; Detected ball information
- - `header`([std_msgs/Header]{: .popup}) : Header information
- - `circles`([geometry_msgs/Point]{: .popup}) : Detecetd balls
-   - `x` X coordinate of the center of ball in the image coordinate system
-   - `y` Y coordinate of the center of ball in the image coordinate system
-   - `z` Radius of the detected ball
+&emsp;&emsp; Detected ball information  
+  - `header`([std_msgs/msg/Header]{: .popup}) : Header information  
+  - `circles`([geometry_msgs/msg/Point]{: .popup}) : Detecetd balls  
+    - `x` X coordinate of the center of ball in the image coordinate system  
+    - `y` Y coordinate of the center of ball in the image coordinate system  
+    - `z` Radius of the detected ball  
 
 #### Parameters
 `/yaml_path`(string, default : "")  
@@ -722,9 +621,10 @@ Execute the program with a `.launch` file in order to load ROS parameters.
 `/min_radius`, `/max_radius`(int, default : )  
 &emsp;&emsp; Minimum and maximum radius of the ball to detect
 
+> Reference : [HSV color]  
+
 `/filter_h_min`, `/filter_h_max`(int, default : )  
 &emsp;&emsp; Minimum and maximum value of H filter in HSV color representation  
-> Reference : [HSV color]
 
 `/filter_s_min`, `/filter_s_max`(int, default : )  
 &emsp;&emsp; Minimum and maximum value of S filter in HSV color representation  
@@ -743,34 +643,34 @@ Execute the program with a `.launch` file in order to load ROS parameters.
 
 ##### using the `.yaml`  
 - [ball_detector_params.yaml]  
- ```
- gaussian_blur_size: 7
- gaussian_blur_sigma: 2
- canny_edge_th: 100
- hough_accum_resolution: 1
- min_circle_dist: 100
- hough_accum_th: 28
- min_radius: 20
- max_radius: 300
- filter_h_min: 350
- filter_h_max: 15
- filter_s_min: 200
- filter_s_max: 255
- filter_v_min: 60
- filter_v_max: 255
- use_second_filter: false
- filter2_h_min: 30
- filter2_h_max: 355
- filter2_s_min: 0
- filter2_s_max: 40
- filter2_v_min: 200
- filter2_v_max: 255
- ellipse_size: 2
- filter_debug: false
- ```
+  ```yaml
+  gaussian_blur_size: 7
+  gaussian_blur_sigma: 2
+  canny_edge_th: 100
+  hough_accum_resolution: 1
+  min_circle_dist: 100
+  hough_accum_th: 28
+  min_radius: 20
+  max_radius: 300
+  filter_h_min: 350
+  filter_h_max: 15
+  filter_s_min: 200
+  filter_s_max: 255
+  filter_v_min: 60
+  filter_v_max: 255
+  use_second_filter: false
+  filter2_h_min: 30
+  filter2_h_max: 355
+  filter2_s_min: 0
+  filter2_s_max: 40
+  filter2_v_min: 200
+  filter2_v_max: 255
+  ellipse_size: 2
+  filter_debug: false
+  ```
 
 ##### using the `dynamic_reconfigure`  
-![](/assets/images/platform/op3/ball_detector_node_02.png)
+  ![](/assets/images/platform/op3/ball_detector_node_02.png)
 
 ### [op3_demo](#op3-demo)
 
@@ -786,8 +686,8 @@ Face detection and tracking will be demonstrated for vision.
 
 ##### Run
 - Execute `.launch` file to initiate demonstration  
- ```
- $ roslaunch op3_demo demo.launch
+ ```bash
+ $ ros2 launch op3_demo demo.launch.xml  
  ```
 - With a successful launch of the program, OP3 will announce that it is ready for the demonstration.  
 
@@ -812,23 +712,24 @@ Face detection and tracking will be demonstrated for vision.
  ROS APIs used in each demo will be explained in corresponding wiki pages.  
 
 ##### Subscribed Topics
-`/robotis/open_cr/button"`([std_msgs/String]{: .popup})  
+`/robotis/open_cr/button`([std_msgs/msg/String]{: .popup})  
 &emsp;&emsp; The message in this topic is used to process button control.
 
 ##### Published Topics
-`/robotis/base/ini_pose`([std_msgs/String]{: .popup})  
+`/robotis/base/ini_pose`([std_msgs/msg/String]{: .popup})  
 &emsp;&emsp; The message in this topic is used for initial posture of ROBOTIS-OP3.
 
-`/robotis/sync_write_item`([std_msgs/String]{: .popup})  
+`/robotis/sync_write_item`([std_msgs/msg/String]{: .popup})  
 &emsp;&emsp; This topic has a message to sync write data on ROBOTIS-OP3   
 &emsp;&emsp; ex) LED controls
 
-`/play_sound_file`([std_msgs/String]{: .popup})  
+`/play_sound_file`([std_msgs/msg/String]{: .popup})  
 &emsp;&emsp; The message in this topic contains path of the voice file for verbal announcement.
 
 #### Demos
 The followings are the list of available demonstration.  
 Buttons on the back of ROBOTIS-OP3 can be used to select and play demo.  
+
 ##### [Soccer Demo](#soccer-demo)
 OP3 will search for a colored ball selected by the user and play with it.
 
@@ -889,11 +790,11 @@ The action file contains 256 pages. Each page can store up to 7 stages (or steps
   > Reference : [Installing ROBOTIS ROS Package]  
 
 ##### Run
-Execute the launch file.  
+Run the executor file.  
 `op3_action_editor` has a direct control over ROBOTIS-OP3, therefore other control programs such as `op3_manager`, `op3_offset_tuner` and `op3_walking_tuner` should not be running.  
-Before executing the `op3_action_editor` launch file, other programs should be terminated.  
-```
-$ roslaunch op3_action_editor op3_action_editor.launch
+Before running the `op3_action_editor` executor file, other programs should be terminated.  
+```bash
+$ ros2 run op3_action_editor executor.py
 ```
 
 ##### UI
@@ -1002,8 +903,8 @@ Within this program, user can perform module settings, walking tuner, head joint
 
 ##### Run
 Execute the launch file.  
-```
-$ roslaunch op3_gui_demo op3_demo.launch
+```bash
+$ ros2 launch op3_gui_demo op3_demo.launch.py
 ```
 
 ##### UI
@@ -1016,46 +917,46 @@ $ roslaunch op3_gui_demo op3_demo.launch
 #### ROS API
 
 ##### Subscribed Topics
-`/robotis/status`([std_msgs/String]{: .popup})  
+`/robotis/status`([std_msgs/msg/String]{: .popup})  
 &emsp;&emsp; This message describes status of ROBOTIS-OP3.
 
-`/robotis/present_joint_ctrl_modules`([robotis_controller_msgs/JointCtrlModule]{: .popup})  
+`/robotis/present_joint_ctrl_modules`([robotis_controller_msgs/msg/JointCtrlModule]{: .popup})  
 &emsp;&emsp; This message reports which module is currently in use for ROBOTIS-OP3.
 
-`/robotis/head_control/present_joint_states`([sensor_msgs/JointState]{: .popup})  
+`/robotis/head_control/present_joint_states`([sensor_msgs/msg/JointState]{: .popup})  
 &emsp;&emsp; This message reports present angles for each joint.  
 
 ##### Published Topics
-`/robotis/base/ini_pose`([std_msgs/String]{: .popup})  
+`/robotis/base/ini_pose`([std_msgs/msg/String]{: .popup})  
 &emsp;&emsp; This message will have ROBOTIS-OP3 to take the initial posture.
 
-`/robotis/enable_ctrl_module`([std_msgs/String]{: .popup})  
+`/robotis/enable_ctrl_module`([std_msgs/msg/String]{: .popup})  
 &emsp;&emsp; This message notifies framework to activate a specific module for ROBOTIS-OP3.  
 
-`/robotis/sync_write_item`([std_msgs/String]{: .popup})  
+`/robotis/sync_write_item`([std_msgs/msg/String]{: .popup})  
 &emsp;&emsp; This message contains data to be written to ROBOTIS-OP3 with the Sync Write command.  
 &emsp;&emsp; ex) LED control
 
-`/robotis/head_control/set_joint_states_offset`([sensor_msgs/JointState]{: .popup})  
+`/robotis/head_control/set_joint_states_offset`([sensor_msgs/msg/JointState]{: .popup})  
 &emsp;&emsp; This message controls head joints.
 
-`/play_sound_file`([std_msgs/String]{: .popup})  
+`/play_sound_file`([std_msgs/msg/String]{: .popup})  
 &emsp;&emsp; This message contains the path of voice files for speaking.
 
-`/robotis/walking/command"`([std_msgs/String]{: .popup})  
+`/robotis/walking/command"`([std_msgs/msg/String]{: .popup})  
 &emsp;&emsp; This message commands walking module of ROBOTIS-OP3.
 
-`/robotis/walking/set_params"`([op3_walking_module_msgs/WalkingParam]{: .popup})  
+`/robotis/walking/set_params"`([op3_walking_module_msgs/msg/WalkingParam]{: .popup})  
 &emsp;&emsp; This message configures walking parameters of the walking module.
 
-`/robotis/action/page_num`([std_msgs/Int32]{: .popup})  
+`/robotis/action/page_num`([std_msgs/msg/Int32]{: .popup})  
 &emsp;&emsp; This message transfers page number to action_module to play actions.
 
 ##### Services
-`/robotis/get_present_joint_ctrl_modules`([robotis_controller_msgs/GetJointModule]{: .popup})  
+`/robotis/get_present_joint_ctrl_modules`([robotis_controller_msgs/msg/GetJointModule]{: .popup})  
 &emsp;&emsp; This service acquires which module is currently in use for ROBOTIS-OP3.  
 
-`/robotis/walking/get_params`([op3_walking_module_msgs/GetWalkingParam]{: .popup})  
+`/robotis/walking/get_params`([op3_walking_module_msgs/msg/GetWalkingParam]{: .popup})  
 &emsp;&emsp; This service acquires walking parameters.  
 
 #### Parameters
@@ -1074,8 +975,8 @@ It is used with the [op3_manager].
 > Reference : [Installing ROBOTIS ROS Package]
 
 ##### Run
-```
-$ roslaunch op3_tuner_client op3_tuner_client.launch
+```bash
+$ ros2 launch op3_tuner_client op3_tuner_client.launch.xml
 ```
 
 ##### Usage
@@ -1084,19 +985,23 @@ $ roslaunch op3_tuner_client op3_tuner_client.launch
 #### ROS API
 
 ##### Published Topics
-`/robotis/tuning_module/tuning_pose`([std_msgs/String]{: .popup})  
+`/robotis/tuning_module/tuning_pose`([std_msgs/msg/String]{: .popup})  
 &emsp;&emsp; Message that is used to change the posture for tuning a gain  
-`/robotis/tuning_module/joint_offset_data`([op3_tuning_module_msgs/JointOffsetData]{: .popup})  
+
+`/robotis/tuning_module/joint_offset_data`([op3_tuning_module_msgs/msg/JointOffsetData]{: .popup})  
 &emsp;&emsp; Message used to change the offset  
-`/robotis/tuning_module/joint_gain_data`([op3_tuning_module_msgs/JointOffsetData]{: .popup})  
+
+`/robotis/tuning_module/joint_gain_data`([op3_tuning_module_msgs/msg/JointOffsetData]{: .popup})  
 &emsp;&emsp; Message used to change the gain  
-`/robotis/tuning_module/torque_enable`([op3_tuning_module_msgs/JointTorqueOnOffArray]{: .popup})  
+
+`/robotis/tuning_module/torque_enable`([op3_tuning_module_msgs/msg/JointTorqueOnOffArray]{: .popup})  
 &emsp;&emsp; Message used to en/disable the torque of joints  
-`/robotis/tuning_module/command`([std_msgs/String]{: .popup})  
+
+`/robotis/tuning_module/command`([std_msgs/msg/String]{: .popup})  
 &emsp;&emsp; Message for command(ex. save gain, save offset)   
 
 ##### Services
-`/robotis/tuning_module/get_present_joint_offset_data`([op3_tuning_module_msgs/GetPresentJointOffsetData]{: .popup})  
+`/robotis/tuning_module/get_present_joint_offset_data`([op3_tuning_module_msgs/msg/GetPresentJointOffsetData]{: .popup})  
 &emsp;&emsp; Service used to get the joint states including offset
 
 ### [op3_offset_tuner_server](#op3-offset-tuner-server)
@@ -1115,8 +1020,8 @@ It is used with the [op3_offset_tuner_client].
 Execute the launch file to start offset tuner server.  
 `op3_offset_tuner_server` has a direct control over ROBOTIS-OP3, therefore other control programs such as `op3_manager`, `op3_action_editor` and `op3_walking_tuner` should not be running.
 Before executing the `op3_offset_tuner_server` launch file, other programs should be terminated.    
-```
-$ roslaunch op3_offset_tuner_server op3_offset_tuner_server.launch
+```bash
+$ ros2 launch op3_offset_tuner_server op3_offset_tuner_server.launch.xml
 ```
 
 ##### Usage
@@ -1125,22 +1030,22 @@ $ roslaunch op3_offset_tuner_server op3_offset_tuner_server.launch
 #### ROS API
 
 ##### Subscribed Topics
-* `/robotis/base/send_tra`([std_msgs/String]{: .popup})  
+* `/robotis/base/send_tra`([std_msgs/msg/String]{: .popup})  
 &emsp;&emsp; The topic informs the start and end of trajectory following.  
 
-* `/robotis/offset_tuner/joint_offset_data`([op3_offset_tuner_msgs/JointOffsetData]{: .popup})  
+* `/robotis/offset_tuner/joint_offset_data`([op3_offset_tuner_msgs/msg/JointOffsetData]{: .popup})  
 &emsp;&emsp; The topic updates joint offset related parameters.  
 
-* `/robotis/offset_tuner/torque_enable`([op3_offset_tuner_msgs/JointTorqueOnOffArray]{: .popup})  
+* `/robotis/offset_tuner/torque_enable`([op3_offset_tuner_msgs/msg/JointTorqueOnOffArray]{: .popup})  
 &emsp;&emsp; The topic transfers Torque enable/disable command for joints.
 
-* `/robotis/offset_tuner/command`([std_msgs/String]{: .popup})  
+* `/robotis/offset_tuner/command`([std_msgs/msg/String]{: .popup})  
 &emsp;&emsp; The topic transfers command to the [op3_offset_tuner_client].  
 &emsp;&emsp; - "save"     : Saves current offset to yaml  
 &emsp;&emsp; - "ini_pose" : Take the initial posture for offset tuning  
 
 ##### Services
-* `robotis/offset_tuner/get_present_joint_offset_data`([op3_offset_tuner_msgs/GetPresentJointOffsetData]{: .popup})  
+* `robotis/offset_tuner/get_present_joint_offset_data`([op3_offset_tuner_msgs/msg/GetPresentJointOffsetData]{: .popup})  
 &emsp;&emsp; The service obtains current offset data from the [op3_offset_tuner_client].  
 
 ##### Parameters
@@ -1175,123 +1080,97 @@ $ rosrun op3_offset_tuner_client op3_offset_tuner_client
 #### ROS API
 
 ##### Published Topics
-`/robotis/offset_tuner/joint_offset_data`([op3_offset_tuner_msgs/JointOffsetData]{: .popup})            
+`/robotis/offset_tuner/joint_offset_data`([op3_offset_tuner_msgs/msg/JointOffsetData]{: .popup})            
 &emsp;&emsp; The topic transfers Joint offset   
 
-`/robotis/offset_tuner/torque_enable`([op3_offset_tuner_msgs/JointTorqueOnOffArray]{: .popup})    
+`/robotis/offset_tuner/torque_enable`([op3_offset_tuner_msgs/msg/JointTorqueOnOffArray]{: .popup})    
 &emsp;&emsp; The topic executes Torque on/off command   
 
-`/robotis/offset_tuner/command`([std_msgs/String]{: .popup})    
+`/robotis/offset_tuner/command`([std_msgs/msg/String]{: .popup})    
 &emsp;&emsp; The topic transfers other commands(save, initial posture, etc).   
 
 ##### Services
-`/robotis/offset_tuner/get_present_joint_offset_data`([op3_offset_tuner_msgs/GetPresentJointOffsetData]{: .popup})  
+`/robotis/offset_tuner/get_present_joint_offset_data`([op3_offset_tuner_msgs/msg/GetPresentJointOffsetData]{: .popup})  
 &emsp;&emsp; The service obtains saved joint offset
 
-### [op3_walking_tuner](#op3-walking-tuner)
 
-#### Overview   
-This Node tunes walking parameters of ROBOTIS-OP3.  
-Walking tuner function is included in the [op3_gui_demo].  
-`op3_walking_tuner` runs on a terminal window while [op3_gui_demo] creates its own GUI window.    
+[std_msgs/msg/Int32]: /docs/en/popup/op3_ros2/std_msgs_int32_message
+[std_msgs/msg/String]: /docs/en/popup/op3_ros2/std_msgs_string
+[std_msgs/msg/Bool]: /docs/en/popup/op3_ros2/std_msgs_bool_msg
+[std_msgs/msg/Float64]: /docs/en/popup/op3_ros2/std_msgs_float64_msg
+[std_msgs/msg/Header]: /docs/en/popup/op3_ros2/std_msgs_Header
+[sensor_msgs/msg/JointState]: /docs/en/popup/op3_ros2/sensor_msgs_JointState_msg
+[sensor_msgs/msg/Imu]: /docs/en/popup/op3_ros2/sensor_msgs_Imu_msg
+[sensor_msgs/msg/Image]: /docs/en/popup/op3_ros2/sensor_msgs_Image
+[sensor_msgs/msg/CameraInfo]: /docs/en/popup/op3_ros2/sensor_msgs_CameraInfo_msg
+[geometry_msgs/msg/Point]: /docs/en/popup/op3_ros2/geometry_msgs_Point_msg/
+[geometry_msgs/msg/Pose]: /docs/en/popup/op3_ros2/geometry_msgs_Pose_msg
+[geometry_msgs/msg/PoseStamped]: /docs/en/popup/op3_ros2/geometry_msgs_PoseStamped_msg
+[robotis_controller_msgs/msg/StatusMsg]: /docs/en/popup/op3_ros2/StatusMsg.msg
+[robotis_controller_msgs/msg/JointCtrlModule]: /docs/en/popup/JointCtrlModule.msg
+[robotis_controller_msgs/msg/GetJointModule]: /docs/en/popup/GetJointModule.srv/
 
-#### Getting started
+[op3_action_module_msgs/msg/StartAction]: /docs/en/popup/op3_ros2/op3_StartAction.msg/
+[op3_action_module_msgs/srv/IsRunning]: /docs/en/popup/op3_ros2/op3_IsRunning.srv/
 
-##### Download & Build
-> Reference : [Installing ROBOTIS ROS Package]  
+[op3_offset_tuner_msgs/msg/JointOffsetData]: /docs/en/popup/op3_JointOffsetData.msg/
+[op3_offset_tuner_msgs/msg/JointTorqueOnOffArray]: /docs/en/popup/op3_JointTorqueOnOffArray.msg/
+[op3_offset_tuner_msgs/msg/GetPresentJointOffsetData]: /docs/en/popup/op3_GetPresentJointOffsetData.srv/
 
-> Reference : `libncurses5-dev` must be pre-installed in order to build `op3_walking_tuner`.  
-   ```
-   $ sudo apt install libncurses5-dev
-   ```
+[op3_tuning_module_msgs/msg/JointOffsetData]: /docs/en/popup/(op3_tuning_module_msgs)JointOffsetData.msg/
+[op3_tuning_module_msgs/msg/JointTorqueOnOffArray]: /docs/en/popup/(op3_tuning_module_msgs)JointTorqueOnOffArray.msg/ 
 
-##### Run
-Execute the launch file.  
-`op3_walking_tuner` has a direct control over ROBOTIS-OP3, therefore other control programs such as `op3_manager`, `op3_action_editor` and `op3_offset_tuner_server` should not be running.  
-Before executing the `op3_walking_tuner` launch file, other programs should be terminated.  
-```
-$ roslaunch op3_walking_tuner op3_walking_tuner.launch
-```
-
-##### UI
-
-![](/assets/images/platform/op3/op3_walk_tuner.png)
-
-##### Usage
-Please refer to [How to use walking tuner].
-
-[op3_action_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_action_module
-[op3_base_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_base_module
-[op3_head_control_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_head_control_module
-[op3_walking_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_walking_module
-[op3_online_walking_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_online_walking_module
-[open_cr_module]: /docs/en/platform/op3/robotis_ros_packages/#open_cr_module
-[std_msgs/Int32]: /docs/en/popup/std_msgs_int32_message/
-[std_msgs/String]: /docs/en/popup/std_msgs_string/
-[std_msgs/Bool]: /docs/en/popup/std_msgs_bool_msg/
-[std_msgs/Float64]: /docs/en/popup/std_msgs_float64_msg/
-[std_msgs/Header]: /docs/en/popup/std_msgs_header/
-[sensor_msgs/JointState]: /docs/en/popup/sensor_msgs_JointState_msg/
-[sensor_msgs/Imu]: /docs/en/popup/sensor_msgs_IMU_msg/
-[sensor_msgs/Image]: /docs/en/popup/sensor_msgs_Image/
-[sensor_msgs/CameraInfo]: /docs/en/popup/sensor_msgs_CameraInfo_msg/
-[geometry_msgs/Pose]: /docs/en/popup/geometry_msgs_Pose_msg/  
-[geometry_msgs/PoseStamped]: /docs/en/popup/geometry_msgs_PoseStamped_msg/
-[robotis_controller_msgs/StatusMsg]: /docs/en/popup/StatusMsg.msg/
-[robotis_controller_msgs/JointCtrlModule]: /docs/en/popup/JointCtrlModule.msg/
-[robotis_controller_msgs/GetJointModule]: /docs/en/popup/GetJointModule.srv/
-[op3_action_module_msgs/IsRunning]: /docs/en/popup/op3_IsRunning.srv/
-[op3_walking_module_msgs/WalkingParam]: /docs/en/popup/op3_WalkingParam.msg/
+[op3_tuning_module_msgs/msg/GetPresentJointOffsetData]: /docs/en/popup/(op3_tuning_module_msgs)GetPresentJointOffsetData.srv/
+[robotis_controller_msgs/msg/SetModule]: /docs/en/popup/SetModule.srv/  
+[robotis_controller_msgs/msg/LoadOffset]: /docs/en/popup/LoadOffset.srv/  
+[op3_walking_module_msgs/msg/WalkingParam]: /docs/en/popup/op3_WalkingParam.msg/
 [WalkingParam.msg]: /docs/en/popup/op3_WalkingParam.msg/
-[op3_walking_module_msgs/GetWalkingParam]: /docs/en/popup/op3_GetWalkingParam.srv/
-[op3_online_walking_module_msgs/JointPose]: /docs/en/popup/op3_JointPose.msg/
-[op3_online_walking_module_msgs/KinematicsPose]: /docs/en/popup/op3_KinematicsPose.msg/
-[op3_online_walking_module_msgs/FootStepCommand]: /docs/en/popup/op3_FootStepCommand.msg/
-[op3_online_walking_module_msgs/WalkingParam]: /docs/en/popup/op3_online_WalkingParam.msg/
-[op3_online_walking_module_msgs/Step2DArray]: /docs/en/popup/op3_Step2DArray.msg/
-[op3_online_walking_module_msgs/GetJointPose]: /docs/en/popup/op3_GetJointPose.srv/
-[op3_online_walking_module_msgs/GetKinematicsPose]: /docs/en/popup/op3_KinematicsPose.msg/
-[op3_online_walking_module_msgs/GetPreviewMatrix]: /docs/en/popup/op3_GetPreviewMatrix.srv/
-[Creating new robot manager]: /docs/en/software/robotis_framework_packages/tutorials/#creating-new-robot-manager
-[Introduction to Humanoid Robotics]: http://www.springer.com/gp/book/9783642545351
-[StartAction.msg]: /docs/en/popup/op3_StartAction.msg/
-[IsRunning.srv]: /docs/en/popup/op3_IsRunning.srv/
-[WalkingParam.msg]: /docs/en/popup/op3_WalkingParam.msg/
+[op3_walking_module_msgs/msg/GetWalkingParam]: /docs/en/popup/op3_GetWalkingParam.srv/
 [GetWalkingParam.srv]: /docs/en/popup/op3_GetWalkingParam.srv/
 [SetWalkingParam.srv]: /docs/en/popup/op3_SetWalkingParam.srv/
-[FootStepArray.msg]: /docs/en/popup/op3_FootStepArray.msg/  
-[FootStepCommand.msg]: /docs/en/popup/op3_FootStepCommand.msg/
-[JointPose.msg]: /docs/en/popup/op3_JointPose.msg/  
-[KinematicsPose.msg]: /docs/en/popup/op3_KinematicsPose.msg/
-[PreviewRequest.msg]: /docs/en/popup/op3_PreviewRequest.msg/
-[PreviewResponse.msg]: /docs/en/popup/op3_PreviewResponse.msg/
-[Step2D.msg]: /docs/en/popup/op3_Step2D.msg/
-[Step2DArray.msg]: /docs/en/popup/op3_Step2DArray.msg/
-[WalkingParam.msg]: /docs/en/popup/op3_online_WalkingParam.msg/  
 [GetJointPose.srv]: /docs/en/popup/op3_GetJointPose.srv/
 [GetKinematicsPose.srv]: /docs/en/popup/op3_GetKinematicsPose.srv/
 [GetPreviewMatrix.srv]: /docs/en/popup/op3_GetPreviewMatrix.srv/
-[op3_offset_tuner_server]: /docs/en/platform/op3/robotis_ros_packages/#op3_offset_tuner_server
-[op3_offset_tuner_client]: /docs/en/platform/op3/robotis_ros_packages/#op3_offset_tuner_client
 [JointOffsetData.msg]: /docs/en/popup/op3_JointOffsetData.msg/
 [JointOffsetPositionData.msg]: /docs/en/popup/op3_JointOffsetPositionData.msg/
 [JointTorqueOnOff.msg]: /docs/en/popup/op3_JointTorqueOnOff.msg/
 [JointTorqueOnOffArray.msg]: /docs/en/popup/op3_JointTorqueOnOffArray.msg/
 [GetPresentJointOffsetData.srv]: /docs/en/popup/op3_GetPresentJointOffsetData.srv/
 [ball_detector/circleSetStamped]: /docs/en/popup/ball_detector_CircleSetStamped_msg/
-[geometry_msgs/Point]: /docs/en/popup/geometry_msgs_Point_msg/
+
+[JointOffsetData.msg]: /docs/en/popup/(op3_tuning_module_msgs)JointOffsetData.msg/
+[JointOffsetPositionData.msg]: /docs/en/popup/(op3_tuning_module_msgs)JointOffsetPositionData.msg/
+[JointTorqueOnOff.msg]: /docs/en/popup/(op3_tuning_module_msgs)JointTorqueOnOff.msg/ 
+[JointTorqueOnOffArray.msg]: /docs/en/popup/(op3_tuning_module_msgs)JointTorqueOnOffArray.msg/ 
+[GetPresentJointOffsetData.srv]: /docs/en/popup/(op3_tuning_module_msgs)GetPresentJointOffsetData.srv/
+
+</section>
+
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+{% include en/platform/op3/robotis_ros_packages_rev2.md %}
+</section>
+
+
+[op3_manager]: /docs/en/platform/op3/robotis_ros_packages/#op3-manager
+[op3_action_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_action_module
+[op3_base_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_base_module
+[op3_head_control_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_head_control_module
+[op3_walking_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_walking_module
+[op3_online_walking_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_online_walking_module
+[open_cr_module]: /docs/en/platform/op3/robotis_ros_packages/#open_cr_module
+
+[Creating new robot manager]: /docs/en/software/robotis_framework_packages/tutorials/#creating-new-robot-manager
+[Introduction to Humanoid Robotics]: http://www.springer.com/gp/book/9783642545351
+
+[op3_offset_tuner_server]: /docs/en/platform/op3/robotis_ros_packages/#op3_offset_tuner_server
+[op3_offset_tuner_client]: /docs/en/platform/op3/robotis_ros_packages/#op3_offset_tuner_client
 [`usb_cam`]: http://wiki.ros.org/usb_cam
 [HSV color]: https://en.wikipedia.org/wiki/HSL_and_HSV
 [How to execute Default Demo]: /docs/en/platform/op3/tutorials/#how-to-exectue-default-demo
 [How to execute GUI program]: /docs/en/platform/op3/tutorials/#how-to-exectue-gui-program
 [URDF-ROS Wiki]: http://wiki.ros.org/urdf
 [Connect to ROS]: http://gazebosim.org/tutorials?cat=connect_ros
-[op3_offset_tuner_msgs/JointOffsetData]: /docs/en/popup/JointOffsetData.msg/
-[op3_offset_tuner_msgs/JointOffsetData]: /docs/en/popup/op3_JointOffsetData.msg/
-[op3_offset_tuner_msgs/JointTorqueOnOffArray]: /docs/en/popup/JointTorqueOnOffArray.msg/
-[op3_offset_tuner_msgs/JointTorqueOnOffArray]: /docs/en/popup/op3_JointTorqueOnOffArray.msg/
-[op3_offset_tuner_msgs/GetPresentJointOffsetData]: /docs/en/popup/GetPresentJointOffsetData.srv/
-[op3_offset_tuner_msgs/GetPresentJointOffsetData]: /docs/en/popup/op3_GetPresentJointOffsetData.srv/
+
 [op3_gui_demo]: /docs/en/platform/op3/robotis_ros_packages/#op3_gui_demo
 [How to use walking tuner]: /docs/en/platform/op3/tutorials/#how-to-use-walking-tuner
 [How to use offset tuner]: /docs/en/platform/op3/tutorials/#how-to-use-offset-tuner
@@ -1299,18 +1178,9 @@ Please refer to [How to use walking tuner].
 [/op3_walking_module/config/param.yaml]: /docs/en/popup/op3_walking_module_param.yaml/
 [/op3_base_module/data/ini_pose.yaml]: /docs/en/popup/op3_base_module_ini_pose.yaml/
 [OPENCR]: /docs/en/platform/common/arduino_examples_op3/#opencr-op3
-[op3_tuning_module_msgs/JointOffsetData]: /docs/en/popup/(op3_tuning_module_msgs)JointOffsetData.msg/
-[op3_tuning_module_msgs/JointTorqueOnOffArray]: /docs/en/popup/(op3_tuning_module_msgs)JointTorqueOnOffArray.msg/ 
-[op3_tuning_module_msgs/GetPresentJointOffsetData]: /docs/en/popup/(op3_tuning_module_msgs)GetPresentJointOffsetData.srv/
-[robotis_controller_msgs/SetModule]: /docs/en/popup/SetModule.srv/  
-[robotis_controller_msgs/LoadOffset]: /docs/en/popup/LoadOffset.srv/  
+
 [op3_direct_control_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_direct_control_module
 [op3_tuning_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_tuning_module
-[JointOffsetData.msg]: /docs/en/popup/(op3_tuning_module_msgs)JointOffsetData.msg/
-[JointOffsetPositionData.msg]: /docs/en/popup/(op3_tuning_module_msgs)JointOffsetPositionData.msg/
-[JointTorqueOnOff.msg]: /docs/en/popup/(op3_tuning_module_msgs)JointTorqueOnOff.msg/ 
-[JointTorqueOnOffArray.msg]: /docs/en/popup/(op3_tuning_module_msgs)JointTorqueOnOffArray.msg/ 
-[GetPresentJointOffsetData.srv]: /docs/en/popup/(op3_tuning_module_msgs)GetPresentJointOffsetData.srv/
 [How to use tuner client]: /docs/en/platform/op3/tutorials/#how-to-use-tuner-client
 [ball_detector_params.yaml]: https://raw.githubusercontent.com/ROBOTIS-GIT/ROBOTIS-OP3-Demo/master/op3_ball_detector/config/ball_detector_params.yaml
 [How to use ball detector]: /docs/en/platform/op3/tutorials/#how-to-use-ball-detector

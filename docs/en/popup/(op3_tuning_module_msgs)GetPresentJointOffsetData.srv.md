@@ -5,10 +5,10 @@ layout: popup
 - File: `op3_tuning_module_msgs/GetPresentJointOffsetData.srv`
 
 - Service Definition  
- ```
- ---
- JointOffsetPositionData[] present_data_array
- ```
+  ```
+  ---
+  JointOffsetPositionData[] present_data_array
+  ```
 
 - Description  
 A service to read the states of all joints.

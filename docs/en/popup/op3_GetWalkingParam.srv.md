@@ -5,13 +5,13 @@ layout: popup
 - File: `op3_walking_module_msgs/GetWalkingParam.srv`
 
 - Message Definition
- ```c
- bool	         get_param
- ---
- WalkingParam     parameters
- ```
+  ```c
+  bool	         get_param
+  ---
+  WalkingParam     parameters
+  ```
 
-- Description
+- Description  
 This service acquires parameters that are applied on current op3_walking_module.  
 
   - Request  

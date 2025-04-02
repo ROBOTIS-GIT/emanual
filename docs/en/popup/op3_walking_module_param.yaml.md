@@ -1,7 +1,7 @@
 ---
 layout: popup
 ---
-```c
+```yaml
 x_offset: -0.02
 y_offset: 0.015
 z_offset: 0.035
@@ -24,5 +24,4 @@ balance_ankle_pitch_gain: 0.9
 p_gain: 0
 i_gain: 0
 d_gain: 0
-
 ```

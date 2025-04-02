@@ -5,16 +5,16 @@ layout: popup
 - File: `thormang3_feet_ft_module_msgs/BothWrench.msg`
 
 - Message Definition
- ```
-  string                  name
- geometry_msgs/Wrench    right
- geometry_msgs/Wrench    left
- ```
+    ```py
+    string                  name
+    geometry_msgs/Wrench    right
+    geometry_msgs/Wrench    left
+    ```
 
-- Description
+- Description  
 This message is used when publishing values to calibrate FT sensors in the [thormang3_feet_ft_module].
 
-    * ` string name`
+    * `string name`
 &emsp;&emsp; name
 &emsp;&emsp; This field should be either "ft_air" or "ft_gnd".
 

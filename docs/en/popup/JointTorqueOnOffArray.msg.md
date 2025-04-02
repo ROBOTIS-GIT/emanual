@@ -5,14 +5,14 @@ layout: popup
 - File: `thormang3_offset_tuner_msgs/JointTorqueOnOffArray.msg`
 
 - Message Definition
- ```
- JointTorqueOnOff[] torque_enable_data
- ```
+    ```
+    JointTorqueOnOff[] torque_enable_data
+    ```
 
-- Description
+- Description  
 The message to turn on/off the torque of each joint
 
-    * `JointTorqueOnOff[] torque_enable_data`([thormang3_offset_tuner_msgs/JointTorqueOnOff])
+    * `JointTorqueOnOff[] torque_enable_data`([thormang3_offset_tuner_msgs/JointTorqueOnOff])  
 &emsp;&emsp; Array data of the joint to enable/disable torque
 
 [thormang3_offset_tuner_msgs/JointTorqueOnOff]: /docs/en/platform/msgs/JointTorqueOnOff_msg/#jointtorqueonoff-msg

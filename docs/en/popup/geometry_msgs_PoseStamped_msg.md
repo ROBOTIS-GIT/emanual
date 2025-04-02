@@ -5,7 +5,7 @@ layout: popup
 - File : `geometry_msgs/PoseStamped.msg`
 - Raw Message Definition
 
-  ```c
+  ```py
   # A Pose with reference coordinate frame and timestamp
   Header header
   Pose pose
