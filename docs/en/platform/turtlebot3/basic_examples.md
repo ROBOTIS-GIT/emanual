@@ -58,26 +58,25 @@ page_number: 22
 {% include en/platform/turtlebot3/basic_examples/basic_examples_obstacle_detection_kinetic.md %}
 </section>
 
-## [Position Control](#position-control)
+## [Relative Move](#relative-move)
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-**NOTE**: This feature is not supported yet. We are currently working on it.
-{: .notice}
+{% include en/platform/turtlebot3/basic_examples/basic_examples_relative_move_humble.md %}
 </section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
-**NOTE**: This feature is not supported in ROS 1. We are currently working on it in ROS 2 Humble.
+**NOTE**: This feature has been implemented in ROS 2 Humble and later. Unfortunately, it is not available in ROS 1. 
 {: .notice}
 </section>
 
-## [Point Operation](#point-operation)
+## [Absolute Move](#absolute-move)
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-{% include en/platform/turtlebot3/basic_examples/basic_examples_point_operation_humble.md %}
+{% include en/platform/turtlebot3/basic_examples/basic_examples_absolute_move_humble.md %}
 </section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
-{% include en/platform/turtlebot3/basic_examples/basic_examples_point_operation_kinetic.md %}
+{% include en/platform/turtlebot3/basic_examples/basic_examples_absolute_move_kinetic.md %}
 </section>
 
 ## [Patrol](#patrol)
