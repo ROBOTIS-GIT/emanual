@@ -126,10 +126,20 @@ $ sudo chmod a+rw /dev/ttyUSB0
 $ roslaunch hls_lfcd_lds_driver hlds_laser.launch
 ```
 
+- ROS 2:
+``` bash
+$ ros2 launch hls_lfcd_lds_driver hlds_laser.launch.py
+```
+
 #### Run hlds_laser_publisher Node with RViz
 
 ``` bash
 $ roslaunch hls_lfcd_lds_driver view_hlds_laser.launch
+```
+
+- ROS 2:
+``` bash
+$ ros2 launch hls_lfcd_lds_driver view_hlds_laser.launch.py
 ```
 
 #### [User Guide (for Driver)](#user-guide-for-driver)
