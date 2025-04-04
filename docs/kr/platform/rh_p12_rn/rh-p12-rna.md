@@ -258,7 +258,7 @@ Present Position = 실제 위치 + Homing offset(20) 이 됩니다.
 {% include kr/dxl/p/control_table_56_external_port.md %}
 
 ### <a name="shutdown"></a>**[Shutdown(63)](#shutdown63)**
-{% include kr/dxl/p/control_table_63_shutdown.md %}
+{% include kr/dxl/control_table_63_shutdown.md %}
 
 ### <a name="indirect-address"></a><a name="indirect-data"></a>**[Indirect Address](#indirect-address)**, **[Indirect Data](#indirect-data)**
 {% include kr/dxl/p/control_table_168_indirect.md %}
