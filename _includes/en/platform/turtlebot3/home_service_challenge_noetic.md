@@ -54,15 +54,9 @@ $ roslaunch turtlebot3_manipulation_description turtlebot3_manipulation_view.lau
 
     > Rviz View. Specify ${TB3_MODEL} : waffle_pi
 
-### [Camera Calibration](#camera-calibration)
+### [Ready for actual robots](#ready-for-actual-robots)
 {% capture notice_01 %}
-**NOTE**: This chapter is for actual robots only. Gazebo does not proceed.
-{% endcapture %}
-<div class="notice">{{ notice_01 | markdownify }}</div>
-
-### [SLAM](#slam)
-{% capture notice_01 %}
-**NOTE**: This chapter is for actual robots only. Gazebo does not proceed.
+**NOTE**: Actual robots are supported starting with ROS2 Humble.
 {% endcapture %}
 <div class="notice">{{ notice_01 | markdownify }}</div>
 
