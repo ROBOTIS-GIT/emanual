@@ -16,7 +16,7 @@ sidebar:
 - File : `geometry_msgs/Pose.msg`
 - Raw Message Definition
 
-  ```c
+  ```py
   # A representation of pose in free space, composed of position and orientation.
   Point position
   Quaternion orientation
@@ -24,7 +24,7 @@ sidebar:
 
 - Compact Message Definition
 
-  ```c
+  ```py
   geometry_msgs/Point position
   geometry_msgs/Quaternion orientation
   ```

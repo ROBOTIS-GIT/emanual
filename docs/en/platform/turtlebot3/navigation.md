@@ -8,6 +8,7 @@ author_profile: false
 permalink: /docs/en/platform/turtlebot3/navigation/
 tabs: "ROS"
 tab_title1: Humble
+tab_title2: Jazzy
 tab_title3: Noetic
 sidebar:
   title: TurtleBot3
@@ -39,7 +40,11 @@ page_number: 11
 ## [Run Navigation Nodes](#run-navigation-nodes)
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-{% include en/platform/turtlebot3/navigation/navigation_run_navigation_nodes_foxy.md %}
+{% include en/platform/turtlebot3/navigation/navigation_run_navigation_nodes_humble.md %}
+</section>
+
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+{% include en/platform/turtlebot3/navigation/navigation_run_navigation_nodes_jazzy.md %}
 </section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
@@ -49,7 +54,11 @@ page_number: 11
 ## [Estimate Initial Pose](#estimate-initial-pose)
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-{% include en/platform/turtlebot3/navigation/navigation_estimate_initial_pose_foxy.md %}
+{% include en/platform/turtlebot3/navigation/navigation_estimate_initial_pose_humble.md %}
+</section>
+
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+{% include en/platform/turtlebot3/navigation/navigation_estimate_initial_pose_jazzy.md %}
 </section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
@@ -59,7 +68,11 @@ page_number: 11
 ## [Set Navigation Goal](#set-navigation-goal)
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-{% include en/platform/turtlebot3/navigation/navigation_set_navigation_goal_foxy.md %}
+{% include en/platform/turtlebot3/navigation/navigation_set_navigation_goal_humble.md %}
+</section>
+
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+{% include en/platform/turtlebot3/navigation/navigation_set_navigation_goal_jazzy.md %}
 </section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
@@ -69,7 +82,11 @@ page_number: 11
 ## [Tuning Guide](#tuning-guide)
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-{% include en/platform/turtlebot3/navigation/navigation_tuning_guide_foxy.md %}
+{% include en/platform/turtlebot3/navigation/navigation_tuning_guide_humble.md %}
+</section>
+
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+{% include en/platform/turtlebot3/navigation/navigation_tuning_guide_jazzy.md %}
 </section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">

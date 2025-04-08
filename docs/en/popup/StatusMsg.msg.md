@@ -18,7 +18,7 @@ layout: popup
   string status_msg
   ```
 
-- Description
+- Description  
 This message is used to identify the status of each module.
 
     * `header` ([std_msgs/Header])  

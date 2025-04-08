@@ -2,7 +2,7 @@
 layout: popup
 ---
 
-```
+```yaml
 robotis_op3:
 
   # Publish all joint states -----------------------------------

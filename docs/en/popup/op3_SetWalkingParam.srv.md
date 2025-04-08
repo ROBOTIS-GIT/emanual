@@ -5,13 +5,13 @@ layout: popup
 - File: `op3_walking_module_msgs/SetWalkingParam.srv`
 
 - Message Definition
- ```c
- WalkingParam        parameters
- ---
- bool                result
- ```
+  ```c
+  WalkingParam        parameters
+  ---
+  bool                result
+  ```
 
-- Description
+- Description  
 This service configures parameters in `op3_walking_module` for walking control.  
 
   - Request  

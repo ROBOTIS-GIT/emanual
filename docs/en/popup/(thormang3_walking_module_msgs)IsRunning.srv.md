@@ -6,12 +6,12 @@ layout: popup
 
 - Message Definition
 
- ```
- ---
- bool is_running
- ```
+  ```
+  ---
+  bool is_running
+  ```
 
-- Description
+- Description  
 A service that identifies whether THORMANG3 is walking or not.
 
   - Request

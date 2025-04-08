@@ -6,11 +6,11 @@ layout: popup
 
 - Message Definition  
 
- ```c 
- 
- ---
- op3_online_walking_module_msgs/JointPose pose
- ```
+  ```c 
+  
+  ---
+  op3_online_walking_module_msgs/JointPose pose
+  ```
 
 - Description  
 This service acquires parameters that are applied on op3_online_walking_module.  

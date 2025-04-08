@@ -153,7 +153,7 @@ To replace the battery during operation, please follow the procedures below.
 
 ![](/assets/images/platform/op2/op2_012.png)
 
-### [Autonomous Mode](#autonomous-mode)
+### [Autonomous Soccer Mode](#autonomous-soccer-mode)
 
 ![](/assets/images/platform/op2/op2_013.png)
 

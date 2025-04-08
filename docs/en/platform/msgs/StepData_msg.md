@@ -16,20 +16,20 @@ sidebar:
 - File: `thormang3_walking_module_msgs/StepData.msg`
 
 - Message Definition
- ```c
- StepPositionData position_data
- StepTimeData     time_data
- ```
+  ```c
+  StepPositionData position_data
+  StepTimeData     time_data
+  ```
 
-- Description
-The format of StepData used in the [thormang3_walking_module].
-Users can define most parameters required for the StepData.
-&emsp;
+- Description  
+The format of StepData used in the [thormang3_walking_module].  
+Users can define most parameters required for the StepData.  
 
-  * `StepPositionData position_data`([thormang3_walking_module_msgs/StepPositionData]{: .popup})
-&emsp;&emsp; Position related Step Data Parameter
-  * `StepTimeData  time_data` ([thormang3_walking_module_msgs/StepTimeData]{: .popup})
-&emsp;&emsp; Time related Step Data Parameter
+  * `StepPositionData position_data`([thormang3_walking_module_msgs/StepPositionData]{: .popup})  
+    &emsp;&emsp; Position related Step Data Parameter
+
+  * `StepTimeData  time_data` ([thormang3_walking_module_msgs/StepTimeData]{: .popup})  
+    &emsp;&emsp; Time related Step Data Parameter
 
 [thormang3_walking_module_msgs/StepPositionData]: /docs/en/popup/StepPositionData.msg
 [thormang3_walking_module_msgs/StepTimeData]: /docs/en/popup/StepTimeData.msg
