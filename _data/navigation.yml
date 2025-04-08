@@ -26011,12 +26011,12 @@ turtlebot3:
       children:
       - title: "Getting Started"
         url: /platform/turtlebot3/home_service_challenge/#getting-started
-      - title: "Ready for actual robots"
-        url: /platform/turtlebot3/home_service_challenge/#ready-for-actual-robots
-      - title: "Missions"
-        url: /platform/turtlebot3/home_service_challenge/#missions
       - title: "Simulation"
         url: /platform/turtlebot3/home_service_challenge/#simulation
+      - title: "Actual robot"
+        url: /platform/turtlebot3/home_service_challenge/#actual-robot
+      - title: "Missions"
+        url: /platform/turtlebot3/home_service_challenge/#missions
   - title: "Autonomous Driving"
     url: /platform/turtlebot3/autonomous_driving/#autonomous-driving
     children:

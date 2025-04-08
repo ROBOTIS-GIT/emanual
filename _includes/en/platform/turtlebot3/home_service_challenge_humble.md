@@ -40,23 +40,9 @@ $ git clone -b humble https://github.com/ROBOTIS-GIT/turtlebot3_home_service_ch
 $ cd ~/turtlebot3_ws && colcon build --symlink-install
 ```
 
-### [Ready for actual robots](#ready-for-actual-robots)
-If you want to run the scenario with TurtleBot3, check the below lists.  
-1. Create a custom map, then create and save the map with [SLAM](/docs/en/platform/turtlebot3/manipulation/#slam).
-2. Set up the [Rpi-camera](/docs/en/platform/turtlebot3/sbc_setup/#rpi-camera).
-3. Run hardware bringup and camera node.  
-  **[TurtleBot SBC]**
-  ```bash
-  $ ros2 launch turtlebot3_manipulation_bringup hardware.launch.py
-  ```
-  **[TurtleBot SBC]**
-  ```bash
-  $ ros2 run camera_ros camera_node --ros-args -p format:='RGB888' -p width:=320 -p height:=240
-  ```
+### [Simulation](#simulation)
 
-### [Missions](#missions)
-
-#### [Run a Demo and Core Pacakge](#run-a-demo-and-core-package)
+Simulate TurtleBot3 with OpenMANIPULATOR-X in Gazebo.
 
 1. Run the Gazebo Simulation.  
 **[Remote PC]**
@@ -64,7 +50,7 @@ If you want to run the scenario with TurtleBot3, check the below lists.
 $ ros2 launch turtlebot3_home_service_challenge_simulation competition.launch.py
 ```
 
-2. Run a Nav2 for Gazebo and set `2D Pose Estimate` in Rviz. If you want to use a custom map file, run it with the launch argument. Ex) `map_yaml_file:=$HOME/map.yaml`  
+2. Run a Nav2 for Gazebo and set `2D Pose Estimate` in Rviz.  
 **[Remote PC]**
 ```bash
 $ ros2 launch turtlebot3_home_service_challenge_tools navigation2.launch.py
@@ -72,11 +58,51 @@ $ ros2 launch turtlebot3_home_service_challenge_tools navigation2.launch.py
 
     ![simulation_rviz](/assets/images/platform/turtlebot3/home_service_challenge/humble/navigation2_rviz.png)
 
-2. Run the core package used to carry out Home Service Challenge's mission.  
+3. Run the core package used to carry out Home Service Challenge's mission.  
 **[Remote PC]**
 ```bash
 $ ros2 launch turtlebot3_home_service_challenge_core core_node.launch.py
 ```
+
+4. Use the Home Service Challenge commands, See [Commands](#commands)
+
+### [Actual robot](#actual-robot)
+
+#### [Ready for actual robot](#ready-for-actual-robot)
+If you want to run the scenario with TurtleBot3 with OpenMANIPULATOR-X, check the below lists.  
+- Create a custom map, then create and save the map with [SLAM](/docs/en/platform/turtlebot3/manipulation/#slam).
+- Set up the [Rpi-camera](/docs/en/platform/turtlebot3/sbc_setup/#rpi-camera).
+
+#### [Run Home Service Challenge with actual robot](#run-home-service-challenge-with-actual-robot)
+1. Run hardware bringup.  
+**[TurtleBot SBC]**
+```bash
+$ ros2 launch turtlebot3_manipulation_bringup hardware.launch.py
+```
+
+2. Run camera node.  
+**[TurtleBot SBC]**
+```bash
+$ ros2 run camera_ros camera_node --ros-args -p format:='RGB888' -p width:=320 -p height:=240
+```
+
+3. Run a Nav2 for Gazebo and set 2D Pose Estimate in Rviz. If you want to use a custom map, run it with the launch argument.  
+Ex) `map_yaml_file:=$HOME/map.yaml`  
+**[Remote PC]**
+```bash
+$ ros2 launch turtlebot3_home_service_challenge_tools navigation2.launch.py map_yaml_file:=$HOME/map.yaml
+```
+
+4. Run the core package used to carry out Home Service Challenge's mission. Specify the launch mode and ArUco marker size with the launch argument.  
+Ex) `launch_mode:='actual'` , `marker_size:=0.04`  
+**[Remote PC]**
+```bash
+$ ros2 launch turtlebot3_home_service_challenge_aruco aruco_node.launch.py launch_mode:='actual' marker_size:=0.04
+```
+
+5. Use the Home Service Challenge commands, See [Commands](#commands)
+
+### [Missions](#missions)
 
 #### [Commands](#commands)
 
@@ -158,31 +184,3 @@ Using the demo package, the process of moving objects in Home Service Challenge 
 6. Returning to the starting point using the Nav2 package.
 
    ![demo_4](/assets/images/platform/turtlebot3/home_service_challenge/noetic/demo_4.PNG)
-
-
-
-### [Simulation](#simulation)
-
-Simulate TurtleBot3 with OpenMANIPULATOR-X in Gazebo.
-
-1. Run Gazebo.  
-**[Remote PC]**
-```bash
-$ ros2 launch turtlebot3_home_service_challenge_simulation competition.launch.py
-```
-
-   ![gazebo](/assets/images/platform/turtlebot3/home_service_challenge/noetic/simulation_gazebo.png)
-
-2. **[Remote PC]** Run a simulation demo for Gazebo.
-```bash
-$ ros2 launch turtlebot3_home_service_challenge_tools navigation2.launch.py
-```
-
-   ![simulation_rviz](/assets/images/platform/turtlebot3/home_service_challenge/humble/navigation2_rviz.png)
-
-3. **[Remote PC]** Run Home Service Core.
-```bash
-$ ros2 launch turtlebot3_home_service_challenge_core core_node.launch.py
-```
-
-4. Use the Home Service Challenge commands, See [Commands](#commands)
