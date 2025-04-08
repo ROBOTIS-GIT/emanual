@@ -169,7 +169,7 @@ $ ssh ubuntu@{IP Address of Raspberry PI}
 ![](/assets/images/icon_unfold.png) **If you are using the TurtleBot3 2GB, make sure to create swap memory for building packages.** Otherwise, you may run out of memory and package building may fail.
 </summary>
 - Create 2GB swap memory.
-**[Remote PC]**  
+**[TurtleBot3 SBC]**  
 ```bash
 $ sudo fallocate -l 2G /swapfile
 $ sudo chmod 600 /swapfile
