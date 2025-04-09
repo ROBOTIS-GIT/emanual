@@ -35,13 +35,13 @@ $ sudo apt install ros-humble-image-transport ros-humble-cv-bridge ros-humble-vi
 
 ### [Setting World Plugin](#setting-world-plugin)
 
-Add an export line to your .bashrc, put your workspace name in {your_ws}. This plugin allows you to animate dynamic environments in your world.  
+Add an export line to your ~/.bashrc, put your workspace name in {your_ws}. This plugin allows you to animate dynamic environments in your world.  
 ``` bash
 $ echo 'export GAZEBO_PLUGIN_PATH=$HOME/{your_ws}/build/turtlebot3_gazebo:$GAZEBO_PLUGIN_PATH' >> ~/.bashrc
 ```
 
-### [Setting TurtleBot3 Model](#setting-turtlebot3-modle)
-Add an export line to your .bashrc. Autorace only supports the burger_cam model.
+### [Setting TurtleBot3 Model](#setting-turtlebot3-model)
+Add an export line to your ~/.bashrc. Autorace only supports the burger_cam model.
 ``` bash
 $ echo 'export TURTLEBOT3_MODEL=burger_cam' >> ~/.bashrc
 ```
