@@ -33,7 +33,7 @@ X : Unavailable<br>
 |         Teleop         |   ✓    |    ✓     |   ✓      |
 |          SLAM          |   ✓    |    ✓     |   ✓      |
 |       Navigation       |   ✓    |    ✓     |   ✓      |
-|       Simulation       |   ✓    |    ✓     |   X      |
+|       Simulation       |   ✓    |    ✓     |   ✓      |
 |      Manipulation      |   ✓    |    ✓     |   X      |
 | Home Service Challenge |   ✓    |    X     |   X      |
 |   Autonomous Driving   |   ✓    |    ✓     |   X      |
