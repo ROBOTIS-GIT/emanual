@@ -7,8 +7,9 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/turtlebot3/sbc_setup/
 tabs: "ROS"
+tab_title1: Humble
+tab_title2: Jazzy
 tab_title3: Noetic
-tab_title6: Humble
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
@@ -27,10 +28,14 @@ page_number: 5
   <p class="dummy_content">SBC is your Remote PC</p>
 <![end dummy Header 1]-->
 
-<section data-id="{{ page.tab_title3 }}" class="tab_contents">
-{% include en/platform/turtlebot3/sbc_setup_noetic.md %}
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+{% include en/platform/turtlebot3/sbc_setup_humble.md %}
 </section>
 
-<section data-id="{{ page.tab_title6 }}" class="tab_contents">
-{% include en/platform/turtlebot3/sbc_setup_humble.md %}
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+{% include en/platform/turtlebot3/sbc_setup_jazzy.md %}
+</section>
+
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
+{% include en/platform/turtlebot3/sbc_setup_noetic.md %}
 </section>

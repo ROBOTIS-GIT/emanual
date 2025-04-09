@@ -367,6 +367,8 @@ main:
       - title: "RH-P12-RN-UR"
         titlekr: "RH-P12-RN-UR"
         url: /platform/rh_p12_rn_ur/
+      - titlekr: "RH-P12-RN-DR"
+        url: /platform/rh_p12_rn_dr/
       - titlekr: "*로봇핸드 RX28"
         url: /platform/robothand_rx28/
       - titlekr: "*로봇핸드 MX28"

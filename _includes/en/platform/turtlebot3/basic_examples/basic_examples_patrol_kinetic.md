@@ -1,4 +1,4 @@
-The TurtleBot3 can be moved by custom routes. There are three routes(rectangle, triangle and circle). This example uses action topic. Action client translates patrol data(mode, area, count) to action server. And then action server translates `cmd_vel` to TurtleBot3. Please refer to the above [tutorial video][tutorial_video] for more detailed usage.
+The TurtleBot3 can also be programmed to move according to custom routes. The example program features three route shapes: rectangle, triangle and circle. Please refer to the [tutorial video][tutorial_video] for a more detailed usage demonstration.
 
 **[Remote PC]** Launch the patrol server file.
 

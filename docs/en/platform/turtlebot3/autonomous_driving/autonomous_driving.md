@@ -7,8 +7,8 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/turtlebot3/autonomous_driving/
 tabs: "ROS"
+tab_title1: Humble
 tab_title2: Noetic
-tab_title5: Humble
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
@@ -24,14 +24,59 @@ page_number: 19
 
 # [Autonomous Driving](#autonomous-driving)
 
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+{% include en/platform/turtlebot3/autonomous_driving/humble/autonomous_driving_getting_started_humble.md %}
+
+<!-- Camera Calli -->
+{% include en/platform/turtlebot3/autonomous_driving/humble/autonomous_driving_camera_calibration_humble.md %}
+
+<!-- Lane Detection -->
+{% include en/platform/turtlebot3/autonomous_driving/humble/autonomous_driving_lane_detection_humble.md %}
+
+<!-- Traffic Sign Detection -->
+{% include en/platform/turtlebot3/autonomous_driving/humble/autonomous_driving_traffic_sign_detection_humble.md %}
+
+<!-- Mission -->
+## [Missions](#missions)
+
+AutoRace is a competition for autonomous driving robot platforms designed to provide varied test conditions for autonomous robotics development. The provided open source libraries are based on ROS and are intended to be used as a base for further competitor development. Join Autorace and show off your development skill!
+**WARNING**: Be sure to read [Autonomous Driving](#autonomous-driving) in order to start missions.
+{: .notice--warning}
+
+<!--traffic_light-->
+### [Traffic Lights](#traffic-lights)
+{% include en/platform/turtlebot3/autonomous_driving/humble/autonomous_driving_traffic_lights_humble.md %}
+
+### [Intersection](#intersection)
+This mission does not have any associated example code.
+{: .notice}
+
+<!--construction-->
+### [Construction](#construction)
+{% include en/platform/turtlebot3/autonomous_driving/humble/autonomous_driving_construction_humble.md %}
+
+### [Parking](#parking)
+This mission does not have any associated example code.
+{: .notice}
+
+<!--level_crossing-->
+### [Level Crossing](#level-crossing)
+{% include en/platform/turtlebot3/autonomous_driving/humble/autonomous_driving_level_crossing_humble.md %}
+
+<!--tunnel-->
+### [Tunnel](#tunnel)
+{% include en/platform/turtlebot3/autonomous_driving/humble/autonomous_driving_tunnel_humble.md %}
+</section>
+
+
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
 
 ## Getting Started
 {% include en/platform/turtlebot3/autonomous_driving/noetic/autonomous_driving_sim_getting_started_noetic.md %}
 
 ## [Camera Calibration](#camera-calibration)
-Calibrating the camera is very important for autonomous driving. The following describes how to simply calibrate the camera step by step.
-
+Calibrating the camera is very important for autonomous driving. The following instructions provide a step by step guide on how to calibrate the camera.
+The following instructions provide a step by step guide on how to calibrate the camera.
 ### [Camera Imaging Calibration](#camera-imaging-calibration)
 {% include en/platform/turtlebot3/autonomous_driving/noetic/autonomous_driving_sim_camera_imaging_calibration_noetic.md %}
 
@@ -52,9 +97,7 @@ Calibrating the camera is very important for autonomous driving. The following d
 
 ## [Missions](#missions)
 
-The AutoRace is a competition for autonomous driving robot platforms.  
-To provide various conditions for a robot application development, the game provide structural regulation as less as possible. Provided open sources are based on ROS, and can be applied to this competition. The contents can be continually updated. Join the competition and show your skill.
-
+AutoRace is a competition for autonomous driving robot platforms designed to provide varied test conditions for autonomous robotics development. The provided open source libraries are based on ROS and are intended to be used as a base for further competitor development. Join Autorace and show off your development skill!
 **WARNING**: Be sure to read [Autonomous Driving](#autonomous-driving) in order to start missions.
 {: .notice--warning}
 
@@ -76,9 +119,3 @@ To provide various conditions for a robot application development, the game prov
 ### [Tunnel](#tunnel)
 {% include en/platform/turtlebot3/autonomous_driving/noetic/autonomous_driving_sim_tunnel_noetic.md %}
 </section>
-
-<section data-id="{{ page.tab_title5 }}" class="tab_contents">
-**NOTE**: The TurtleBot3 Autorace Humble version is scheduled to be released soon
-{: .notice--warning}
-</section>
-

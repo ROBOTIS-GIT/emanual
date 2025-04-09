@@ -2,8 +2,8 @@
 {% capture notice_05 %}
 **NOTE**:
 
-- The `turtlebot3_automatic_parking_vision` uses raspberry pi camera and so the robot which is a default platform used for this demo is TurtleBot3 Waffle Pi. Since it parks from finding out AR marker on some wall, printed AR marker should be prepared. Whole process uses the image get from the camera, so if the process is not well being done, configure the parameters, such as brightness, contrast, etc.
-- The `turtlebot3_automatic_parking_vision` uses rectified image based on `image_proc` nodes. To get rectified image, the robot should get optic calibration data for raspberry pi camera. (Every downloaded turtlebot3 packages already have the camera calibration data as raspberry pi camera v2 default.)
+- The `turtlebot3_automatic_parking_vision` uses the RaspberryPi camera, the default platform used for this demo is TurtleBot3 Waffle Pi. Since it parks according to an AR marker on a visible wall, a printed AR marker should be prepared.
+- The `turtlebot3_automatic_parking_vision` uses a rectified image based on `image_proc` nodes. To get a rectified image, the robot should use optical calibration data for the RaspberryPi camera. (Every downloaded turtlebot3 package should have the camera calibration data for RaspberryPi camera v2 by default.)
 - The `turtlebot3_automatic_parking_vision` package requires `ar_track_alvar` package.
 {% endcapture %}
 <div class="notice--info">{{ notice_05 | markdownify }}</div>
@@ -18,12 +18,12 @@ $ roscore
 $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
 ```
 
-3. **[TurtleBot]** Start the raspberry pi camera nodes.
+3. **[TurtleBot]** Start the RaspberryPi camera nodes.
 ```bash
 $ roslaunch turtlebot3_bringup turtlebot3_rpicamera.launch
 ```
 
-4. **[Remote PC]** Raspberry pi package will publish compressed type image for fast communication. However, what will be needed in image rectification in `image_proc` node is raw type image. Hence, compressed image should be transform to raw image.
+4. **[Remote PC]** The RaspberryPi package will publish compressed images for fast communication. However, what will be needed in image rectification in the `image_proc` node is raw image data. The compressed image should be transformed to a raw image.
 ```bash
 $ rosrun image_transport republish compressed in:=raspicam_node/image raw out:=raspicam_node/image
 ```
@@ -33,7 +33,7 @@ $ rosrun image_transport republish compressed in:=raspicam_node/image raw out:=r
 $ ROS_NAMESPACE=raspicam_node rosrun image_proc image_proc image_raw:=image _approximate_s=true _queue_size:=20
 ```
 
-6. **[Remote PC]** Now should start the AR marker detection. Before running related launch file, the model of what will be used by this example code should be exported. After running the launch file, RViz will be automatically run under preset environments.
+6. **[Remote PC]** Now the AR marker detection can start. Before running related launch file, the model of what will be used by this example code should be exported. After running the launch file, RViz will be automatically run under preset environments.
 ```bash
 $ export TURTLEBOT3_MODEL=waffle_pi
 $ roslaunch turtlebot3_automatic_parking_vision turtlebot3_automatic_parking_vision.launch

@@ -1,10 +1,9 @@
-
 1. Click the `2D Nav Goal` button in the RViz menu.  
   ![](/assets/images/platform/turtlebot3/navigation/2d_nav_goal_button.png)
 2. Click on the map to set the destination of the robot and drag the green arrow toward the direction where the robot will be facing. 
-  - This green arrow is a marker that can specify the destination of the robot. 
-  - The root of the arrow is `x`, `y` coordinate of the destination, and the angle `θ` is determined by the orientation of the arrow.
-  - As soon as x, y, &theta; are set, TurtleBot3 will start moving to the destination immediately.
+  - This green arrow is a marker to specify the destination of the robot. 
+  - The root of the arrow is the `x`, `y` coordinate of the destination, and the angle `θ` is determined by the orientation of the arrow.
+  - As soon as x, y, &theta; are set, the TurtleBot3 will start moving to the destination immediately.
   ![](/assets/images/platform/turtlebot3/navigation/2d_nav_goal.png)
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/VYlMywwYALU" frameborder="0" allowfullscreen></iframe>
@@ -13,7 +12,7 @@
 <summary>
 ![](/assets/images/icon_unfold.png) Read more about **Navigation**
 </summary>
-- The robot will create a path to reach to the Navigation Goal based on the global path planner. Then, the robot moves along the path. If an obstacle is placed in the path, the Navigation will use local path planner to avoid the obstacle.
+- The robot will create a path to reach to the Navigation Goal based on the global path planner. Then, the robot will move along the path. If an obstacle is placed in the path, the Navigation will use a local path planner to avoid the obstacle.
 
 - Setting a Navigation Goal might fail if the path to the Navigation Goal cannot be created. If you wish to stop the robot before it reaches to the goal position, set the current position of TurtleBot3 as a Navigation Goal.
 

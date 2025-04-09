@@ -7,8 +7,9 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/turtlebot3/bringup/
 tabs: "ROS"
+tab_title1: Humble
+tab_title2: Jazzy
 tab_title3: Noetic
-tab_title6: Humble
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
@@ -26,30 +27,15 @@ page_number: 8
   <p class="dummy_content">Wake up your TurtleBot3 using the Bringup package</p>
 <![end dummy Header 1]-->
 
-<!-- <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-{% include en/platform/turtlebot3/bringup_kinetic.md %}
-</section> -->
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+{% include en/platform/turtlebot3/bringup_humble.md %}
+</section>
 
-<!-- <section data-id="{{ page.tab_title2 }}" class="tab_contents">
-{% include en/platform/turtlebot3/bringup_melodic.md %}
-</section> -->
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+{% include en/platform/turtlebot3/bringup_jazzy.md %}
+</section>
+
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
 {% include en/platform/turtlebot3/bringup_noetic.md %}
 </section>
-
-<!-- <section data-id="{{ page.tab_title4 }}" class="tab_contents">
-{% include en/platform/turtlebot3/bringup_dashing.md %}
-</section> -->
-
-<!-- <section data-id="{{ page.tab_title5 }}" class="tab_contents">
-{% include en/platform/turtlebot3/bringup_foxy.md %}
-</section> -->
-
-<section data-id="{{ page.tab_title6 }}" class="tab_contents">
-{% include en/platform/turtlebot3/bringup_humble.md %}
-</section>
-
-<!-- <section data-id="{{ page.tab_title7 }}" class="tab_contents">
-{% include en/platform/turtlebot3/bringup_windows.md %}
-</section> -->

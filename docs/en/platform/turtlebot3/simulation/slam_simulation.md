@@ -7,8 +7,9 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/turtlebot3/slam_simulation/
 tabs: "ROS"
+tab_title1: Humble
+tab_title2: Jazzy
 tab_title3: Noetic
-tab_title6: Humble
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
@@ -29,30 +30,14 @@ page_number: 13
 
 {::options parse_block_html="true" /}
 
-<!-- <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-{% include en/platform/turtlebot3/slam_simulation_kinetic.md %}
-</section> -->
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+{% include en/platform/turtlebot3/slam_simulation_humble.md %}
+</section>
 
-<!-- <section data-id="{{ page.tab_title2 }}" class="tab_contents">
-{% include en/platform/turtlebot3/slam_simulation_melodic.md %}
-</section> -->
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+{% include en/platform/turtlebot3/slam_simulation_jazzy.md %}
+</section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
 {% include en/platform/turtlebot3/slam_simulation_noetic.md %}
 </section>
-
-<!-- <section data-id="{{ page.tab_title4 }}" class="tab_contents">
-{% include en/platform/turtlebot3/slam_simulation_dashing.md %}
-</section> -->
-
-<!-- <section data-id="{{ page.tab_title5 }}" class="tab_contents">
-{% include en/platform/turtlebot3/slam_simulation_foxy.md %}
-</section> -->
-
-<section data-id="{{ page.tab_title6 }}" class="tab_contents">
-{% include en/platform/turtlebot3/slam_simulation_humble.md %}
-</section>
-
-<!-- <section data-id="{{ page.tab_title7 }}" class="tab_contents">
-{% include en/platform/turtlebot3/slam_simulation_windows.md %}
-</section> -->

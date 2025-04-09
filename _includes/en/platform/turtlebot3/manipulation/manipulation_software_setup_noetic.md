@@ -1,14 +1,8 @@
 
-**NOTE**: Before installing the `turtlebot3_manipulation` package, install `turtlebot3` and `open_manipulator` packages on the Remote PC.
+**NOTE**: Before installing the `turtlebot3_manipulation` package, ensure that the `turtlebot3` and `open_manipulator` packages are installed on the Remote PC.
 {: .notice--info}
 
-{% capture notice_01 %}  
-**The TurtleBot3 Manipulation Package requires turtlebot3 and turtlebot3_msgs packages as prerequisite. Without these prerequisite packages, the TurtleBot3 Manipulator cannot be launched. Please follow [Quick Start Guide](/docs/en/platform/turtlebot3/quick-start) instructions if you did not install required packages and dependent packages.**  
-{% endcapture %}
-<div class="notice--danger">{{ notice_01 | markdownify }}</div>
-
-
-1. Download and build the package using the following commands in order to use assembled OpenMANIPULATOR-X.  
+1. Download and build the package using the following commands.
 **[Remote PC]**  
 ```bash
 $ cd ~/catkin_ws/src/
@@ -19,6 +13,7 @@ $ sudo apt install ros-noetic-ros-control* ros-noetic-control* ros-noetic-moveit
 $ cd ~/catkin_ws && catkin_make
 ```
 
+- If `catkin_make` completes without any errors, the OpenMANIPULATOR package has successfully been installed. You can then load a TurtleBot3 Waffle or Waffle Pi with an attached OpenMANIPULATOR in RViz. -->
 <!--
 ```bash
 $ cd ~/catkin_ws && catkin_make
@@ -31,9 +26,8 @@ $ sudo apt-get install ros-melodic-smach* ros-melodic-ar-track-alvar ros-melodic
 $ cd ~/catkin_ws && catkin_make
 ```
 
-- If `catkin_make` command is completed without any errors, the preparation for OpenMANIPULATOR is done. Then load a TurtleBot3 Waffle or Waffle Pi with OpenMANIPULATOR on RViz. -->
 
-<!-- **TIP**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `waffle`, `waffle_pi`. If you want to permanently set the export settings, please refer to [Export TURTLEBOT3_MODEL][export_turtlebot3_model]{: .popup} page.
+<!-- **TIP**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using (`waffle`, `waffle_pi`). If you want to permanently set this value, please refer to [Export TURTLEBOT3_MODEL][export_turtlebot3_model]{: .popup} page.
 {: .notice--success}
 
 **[RemotePC]**

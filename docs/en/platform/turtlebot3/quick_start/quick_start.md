@@ -7,8 +7,9 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/turtlebot3/quick-start/
 tabs: "ROS"
+tab_title1: Humble
+tab_title2: Jazzy
 tab_title3: Noetic
-tab_title6: Humble
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
@@ -29,43 +30,27 @@ X : Unavailable<br>
 
 |        Features        | Noetic | Humble | Jazzy(soon)|
 |:----------------------:|:------:|:--------:|:--------:|
-|         Teleop         |   ✓    |    ✓     |   X      |
-|          SLAM          |   ✓    |    ✓     |   X      |
-|       Navigation       |   ✓    |    ✓     |   X      |
-|       Simulation       |   ✓    |    ✓     |   X      |
+|         Teleop         |   ✓    |    ✓     |   ✓      |
+|          SLAM          |   ✓    |    ✓     |   ✓      |
+|       Navigation       |   ✓    |    ✓     |   ✓      |
+|       Simulation       |   ✓    |    ✓     |   ✓      |
 |      Manipulation      |   ✓    |    ✓     |   X      |
 | Home Service Challenge |   ✓    |    X     |   X      |
-|   Autonomous Driving   |   ✓    |    X     |   X      |
+|   Autonomous Driving   |   ✓    |    ✓     |   X      |
 |    Machine Learning    |   X    |    X     |   X      |
 
+
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+{% include en/platform/turtlebot3/quickstart_humble.md %}
+</section>
+
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+{% include en/platform/turtlebot3/quickstart_jazzy.md %}
+</section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
 {% include en/platform/turtlebot3/quickstart_noetic.md %}
 </section>
-
-<!-- <!-- <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-{% include en/platform/turtlebot3/quickstart_kinetic.md %}
-</section> -->
-
-<!-- <section data-id="{{ page.tab_title2 }}" class="tab_contents">
-{% include en/platform/turtlebot3/quickstart_melodic.md %}
-</section> -->
-
-<!-- <section data-id="{{ page.tab_title4 }}" class="tab_contents">
-{% include en/platform/turtlebot3/quickstart_dashing.md %}
-</section> -->
-
-<!-- <section data-id="{{ page.tab_title5 }}" class="tab_contents">
-{% include en/platform/turtlebot3/quickstart_foxy.md %}
-</section> -->
-
-<section data-id="{{ page.tab_title6 }}" class="tab_contents">
-{% include en/platform/turtlebot3/quickstart_humble.md %}
-</section>
-
-<!-- <section data-id="{{ page.tab_title7 }}" class="tab_contents">
-{% include en/platform/turtlebot3/quickstart_windows.md %}
-</section> -->
 
 <!--
 

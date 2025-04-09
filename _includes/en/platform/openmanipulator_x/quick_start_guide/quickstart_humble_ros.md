@@ -1,6 +1,6 @@
 ![](/assets/images/platform/openmanipulator_p/logo_ros.png)
 
-Please follow [the official ROS2 documentation](https://docs.ros.org/en/humble/Installation.html) to install the ROS2 Humble.  
+Please follow [the official ROS 2 documentation](https://docs.ros.org/en/humble/Installation.html) to install the ROS 2 Humble.  
 For most Linux users, [Debian package installation](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html) method is strongly recommended.
 
 <!-- For beginners, it is strongly recommended to install ROS with the script provided in the below command.

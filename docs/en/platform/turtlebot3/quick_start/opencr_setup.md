@@ -7,8 +7,9 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/turtlebot3/opencr_setup/
 tabs: "ROS"
+tab_title1: Humble
+tab_title2: Jazzy
 tab_title3: Noetic
-tab_title6: Humble
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
@@ -27,30 +28,14 @@ page_number: 6
   <p class="dummy_content">OpenCR Setup</p>
 <![end dummy Header 1]-->
 
-<!-- <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-{% include en/platform/turtlebot3/opencr_setup_kinetic.md %}
-</section> -->
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+{% include en/platform/turtlebot3/opencr_setup_ros2.md %}
+</section>
 
-<!-- <section data-id="{{ page.tab_title2 }}" class="tab_contents">
-{% include en/platform/turtlebot3/opencr_setup_melodic.md %}
-</section> -->
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+{% include en/platform/turtlebot3/opencr_setup_ros2.md %}
+</section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
 {% include en/platform/turtlebot3/opencr_setup_noetic.md %}
 </section>
-
-<!-- <section data-id="{{ page.tab_title4 }}" class="tab_contents">
-{% include en/platform/turtlebot3/opencr_setup_dashing.md %}
-</section> -->
-
-<!-- <section data-id="{{ page.tab_title5 }}" class="tab_contents">
-{% include en/platform/turtlebot3/opencr_setup_ros2.md %}
-</section> -->
-
-<section data-id="{{ page.tab_title6 }}" class="tab_contents">
-{% include en/platform/turtlebot3/opencr_setup_ros2.md %}
-</section>
-
-<!-- <section data-id="{{ page.tab_title6 }}" class="tab_contents">
-{% include en/platform/turtlebot3/opencr_setup_windows.md %}
-</section> -->
