@@ -8,6 +8,7 @@ author_profile: false
 permalink: /docs/en/platform/turtlebot3/fakenode_simulation/
 tabs: "ROS"
 tab_title1: Humble
+tab_title2: Jazzy
 tab_title3: Noetic
 sidebar:
   title: TurtleBot3
@@ -31,6 +32,11 @@ page_number: 15
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/turtlebot3/fakenode_simulation_humble.md %}
+</section>
+
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+**NOTE**: This feature is available for Humble and Noetic.
+{: .notice}
 </section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
