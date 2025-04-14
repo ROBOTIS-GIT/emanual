@@ -1,7 +1,10 @@
+<iframe width="640" height="360" src="https://www.youtube.com/embed/_-bv8VPwkZs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 <div class="notice--danger">
 From the Jazzy version, the `cmd_vel` topic uses the `TwistStamped` type.  
 If you want to use the Twist type, set the enable_stamped_cmd_vel parameter to false in both the turtlebot3_bringup and turtlebot3_navigation2 packages.  
 </div>
+
 1. If `Bringup` is not running on the TurtleBot3 SBC, launch Bringup.
   - Open a new terminal from Remote PC with `Ctrl` + `Alt` + `T` and connect to Raspberry Pi with its IP address.
 The default password is **ubuntu**.  
