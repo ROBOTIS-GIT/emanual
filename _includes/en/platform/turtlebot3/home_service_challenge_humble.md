@@ -17,16 +17,16 @@
 
 {% capture HSC_Note %}
 **NOTE**: Be sure to complete the following instructions before installing Home Service Challenge packages in the pc.
-
 - [TurtleBot3 PC Set up](/docs/en/platform/turtlebot3/quick-start/#pc-setup)
 - [TurtleBot3 SBC Set up](/docs/en/platform/turtlebot3/sbc_setup/#sbc-setup)
-- [TB3 & OpenMANIPULATOR-X](/docs/en/platform/turtlebot3/manipulation/#software-setup) packages
-{% endcapture %}
-<div class="notice">{{ HSC_Note | markdownify }}</div>
+- [TB3 & OpenMANIPULATOR-X](/docs/en/platform/turtlebot3/manipulation/#software-setup) packages  
 
-**Prerequisites**  
+**Prerequisites**:
 - ROS 2 Humble installed Laptop or desktop PC.
 - This instruction is based on Gazebo simulation.
+{% endcapture %}
+<div class="notice">{{ HSC_Note | markdownify }}</div>  
+<br>
 
 **Remote PC Setup**  
 Install Home Service Challenge packages.  
@@ -64,9 +64,10 @@ $ ros2 launch turtlebot3_home_service_challenge_core core_node.launch.py
 ### [Actual robot](#actual-robot)
 
 **Ready for actual robot**  
-If you want to run the scenario with TurtleBot3 with OpenMANIPULATOR-X, check the below lists.  
-- Create a custom map, then create and save the map with [SLAM](/docs/en/platform/turtlebot3/manipulation/#slam).
-- Set up the [Rpi-camera](/docs/en/platform/turtlebot3/sbc_setup/#rpi-camera).
+- If you want to run the scenario with TurtleBot3 with OpenMANIPULATOR-X, check the below lists.  
+  - Create a custom map, then create and save the map with [SLAM](/docs/en/platform/turtlebot3/manipulation/#slam).
+  - Set up the [Rpi-camera](/docs/en/platform/turtlebot3/sbc_setup/#rpi-camera).  
+<br>
 
 **Run Home Service Challenge with actual robot**  
 1. Run hardware bringup.  
@@ -91,18 +92,20 @@ $ ros2 launch turtlebot3_home_service_challenge_tools navigation2.launch.py map_
 **[Remote PC]**
 ```bash
 $ ros2 launch turtlebot3_home_service_challenge_core core_node.launch.py launch_mode:='actual' marker_size:=0.04
-```
+```  
+<br>
+
 **Arguments**  
 `launch_mode`
 - default: simulation
 - describtion: Select whether you want to run the Home Service Challenge as a simulation or as an actual robot.
 
-    `marker_size`
-    - default: 0.088
-    - describtion: Specifies the size of the ArUco markers used in the custom map.  
+`marker_size`
+- default: 0.088
+- describtion: Specifies the size of the ArUco markers used in the custom map.  
 
-    **NOTE**: core_node contains nodes for ArUco marker detection, parking, and manipulator control, which core_node uses to perform scenario integration control. The core_node performs and controls the behavior in the scenario sequence. After running core_node, we can see the TF of the ArUco marker in rviz and we can run the scenario. See [Missions](#missions) for more detailed descriptions and to run the scenario.
-    {: .notice}
+  **NOTE**: core_node contains nodes for ArUco marker detection, parking, and manipulator control, which core_node uses to perform scenario integration control. The core_node performs and controls the behavior in the scenario sequence. After running core_node, we can see the TF of the ArUco marker in rviz and we can run the scenario. See [Missions](#missions) for more detailed descriptions and to run the scenario.
+  {: .notice}
 
 ### [Missions](#missions)
 
@@ -123,7 +126,8 @@ Use the following commands during Home Service Challenge.
 ```bash
 $  ros2 topic pub -1 /manipulator_control std_msgs/msg/String "{data: 'pick_target'}"
 $  ros2 topic pub -1 /manipulator_control std_msgs/msg/String "{data: 'place_target'}"
-```
+```  
+<br>
 
 **Run scenario**  
 TurtleBot3 will perform **individual actions** for `$SCENARIO_NAME` based on the scenario written.
@@ -149,7 +153,8 @@ Modify data in configuration files according to the given environment.
         goal_pose: [0.9, 0.5, 0.0, 0.0, 0.0, 0.7071, 0.7071]  # The coordinates and orientation of the room where the goal marker is located.
         goal_marker_id: 4  # ArUco Marker's ID
         end_pose: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0]  # Coordinates and orientation of the location to return to.
-    ```
+    ```  
+<br>
 - `turtlebot3_hsc_manipulation.srdf` : This configuration file contains manipulator's position data. By changing the joint values or adding new `group_state`, you can specify the tmanipulator's pose.
   - File Path : **/turtlebot3_home_service_challenge/turtlebot3_home_service_challenge_tools/config/turtlebot3_hsc_manipulation.srdf**
   - Script
