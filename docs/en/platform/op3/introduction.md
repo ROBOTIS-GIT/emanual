@@ -22,40 +22,35 @@ page_number: 1
 # [Introduction](#introduction)
 
 ## [What is OP3?](#what-is-op3)
-Open Platform Humanoid Project
 
 ![](/assets/images/platform/op3/op3_product_rev2.png)
 
-ROBOTIS OP3 is the latest miniature humanoid robot platform from ROBOTIS, succeeding ROBOTIS OP(aka “DARWIN OP”) and ROBOTIS OP2(aka “DARWIN 2” or “DARWIN OP2”). One of the most noticeable changes in ROBOTIS OP3 is the replacement of MX-28 actuators with XM-430 actuators. Another major upgrade is the internal PC, where the Atom-based SBC(Single Board Computer) has been replaced with an Intel i3-based NUC. With the XM-430, which supports DYNAMIXEL Protocol 2.0, OP3 offers improved torque, current-based control, and various additional functions. The Intel NUC provides significantly enhanced computing power, supporting a 64-bit OS and Bluetooth 5. Additionally, OP3 is developed using ROS2(Robot Operating System 2), allowing developers to leverage a wide range of packages from the ROS ecosystem. All these hardware improvements, combined with ROS2 support, enable developers to focus more on research and development compared to its predecessors.
+The ROBOTIS OP3 is the latest miniature humanoid robot platform from ROBOTIS, the successor to the ROBOTIS OP (or “DARWIN OP”) and ROBOTIS OP2 (“DARWIN 2” or “DARWIN OP2”). One of the most noticeable changes for the ROBOTIS OP3 is the replacement of MX-28 actuators with the more modern XM-430 DYNAMIXEL Protocol 2.0 servos featuring improved torque, current-based control, and various additional performance improvements. Another major upgrade is the change from an Intel Atom based SBC to a complete Intel i3-based NUC. The Intel NUC provides significantly enhanced computing power, supporting a 64-bit OS and Bluetooth 5. Additionally, the new 2025 OP3 re-release has been developed from the ground up for ROS2 operation (Robot Operating System 2), allowing developers to leverage a wide range of packages from the ROS ecosystem. All these hardware improvements, combined with ROS2 support, enable developers to focus more on research and development compared to the OP3's predecessors and competitors.
 
-- Physical Differences from ROBOTIS OP2  
-  - ROBOTIS OP3 does not include a design skin by default; however, 3D modeling files are provided to support 3D printing for the default design skin.
+- Physical Differences from ROBOTIS OP2: 
 
-  ![](/assets/images/platform/op3/op3_002_rev2.png)
-
-OP3 looks quite different from OP2 as default skin is not provided. Users can download design skin files.  
-Downloaded skin files can be used for 3D printing.  
-ROBOTIS OP3 is loaded Intel NUC with i3 processor to achieve significant improvement in computing power.  
 OP3 supports HDMI and Display Port(DP) while OP2 only supports mini HDMI.  
 There are 1 RGB LED and 3 LEDs, 4 buttons on the back of OP3. From left to right, each button stands for Mode, Start, User, Reset.
 
 - Here are some mechanical differences :
-  - New mini HDMI port connector on the ROBOTIS OP2
-  - Location of the ports
-  - ROBOTIS OP3 no longer has the 3.5mm microphone and audio jacks
+  - The ROBOTIS OP3 features HDMI and DisplayPort output, while the OP2 only supports mini HDMI.
+  - ROBOTIS OP3 no longer has 3.5mm microphone and audio jacks
+  - ROBOTIS OP3 does not include an aesthetic skin by default; however, 3D model files are provided to enable 3D printing the default design skin, or the customization of your own.
+
+  ![](/assets/images/platform/op3/op3_002_rev2.png)
+  - The location of the I/O ports has been changed.
 
   ![](/assets/images/platform/op3/op3_003_rev3.png)
 
-  > Moderate changes have been made in the back panel of OP3.
+  > Moderate changes have been made to the back panel of the OP3.
 
-- Advantages of developing with ROBOTIS OP3 compared to ROBOTIS OP2  
-  As mentioned above, there are several changes in OP3 and advantages of the new OP3 are listed as follows:
-  - New Actuators(higher torque)
-  - Increase of SSD capacity
-  - Increase of RAM capacity
+- Advantages of developing with the ROBOTIS OP3 compared to ROBOTIS OP2  
+  - New Actuators (higher torque)
+  - Increased SSD capacity
+  - Increased RAM capacity
   - Dramatic improvement in computational power
   - Replacing Mini HDMI with HDMI
-  - User friendly sub-controller(CM-730 → OpenCR)
+  - User friendly sub-controller (CM-730 → OpenCR)
   - Improved camera
 
 - Hardware Spec Comparison
@@ -84,9 +79,9 @@ ROBOTIS OP3 is an affordable, miniature humanoid robot platform with advanced co
 | No Load Speed |          55 RPM          |          46 RPM          |
 |   Protocol    |         1.0 Only         |         1.0, 2.0         |
 
-- XM430 series actuator is easier to assemble and maintain as well as supporting various control algorithms.
+- Our new X-series XM430 series actuator is easier to assemble and maintain and also supports new control algorithms and operational features.
   - Reduced size and increased torque
-  - Metal case with integrated assembly bolt taps
+  - Metal case with integrated tapped assembly points
   - Hollow back case with cable cover
   - 6 operating modes
   - Current-based torque control
@@ -112,17 +107,17 @@ ROBOTIS OP3 is an affordable, miniature humanoid robot platform with advanced co
 
 ## [Safety Information](#safety-information)
 
-**CAUTION** : ROBOTIS will not be responsible for any loss or damage whatsoever caused resulting from user’s negligence or misuse of the product.
+**CAUTION** : ROBOTIS is not responsible for any loss or damage whatsoever caused resulting from the end user’s negligence or misuse of the product.
 {: .notice--warning}
 
-- Read the instruction carefully before getting started.
+- Read the instruction manual carefully before getting started.
 - Not suitable for children under 15 years old.
-- Do not use any other tools other than those provided in the kit.
-- Keep the robot away from your face and body when the robot is operating.
-- Prevent from getting your fingers stuck between frames.
-- Do not place the robot near water, heat or fire.
+- Do not use any tools other than those provided in the kit.
+- Keep the robot away from your face and body when the robot is in motion.
+- Take appropriate caution to prevent getting your fingers pinched between frames.
+- Do not place the robot in or near water, heat or fire.
 - Only use the battery and charger included in the kit.
-- Gears must be replaced after long excessive use.
+- Servo Gears must be replaced occasionally following use, in order to maintain maximum lifetime and performance.
 
 ## [Package Contents](#package-contents)
 
@@ -152,14 +147,14 @@ Check your ROBOTIS OP3 package for the following items.
 
 ![](/assets/images/platform/op3/op3_007_rev3.png)
 
-**CAUTION** : Layout of the front and back panel is subject to change depends on the selected built-in PC.
+**CAUTION** : The Layout of the front and back panel is subject to change depending on the availability of the built-in PC.
 {: .notice--warning}
 
 ## [Charging Battery](#charging-battery)
 
 This section describes how to charge a battery using the provided charger.
 
-Use either of instructions depending on a provided charger.   
+Use the appropriate instruction set depending on the model of charger you intend to use.
 
 ### [Using LBC-010](#using-lbc-010)
 
@@ -167,14 +162,14 @@ Use either of instructions depending on a provided charger.
 
 ### [Using IMAX B6MINI CHARGER](#using-imax-b6mini-charger)
 
-Follow the next instruction and learn how to charge a battery using IMAX B6MINI CHARGER.
+The following image provides instructions on how to charge a battery using the IMAX B6MINI charger.
 
 ![](/assets/images/platform/op3/op3_008.png)
 
 ## [Battery Hot Swap](#battery-hot-swap)
 
-The battery of ROBOTIS-OP3 can be replaced without shutting down the robot.  
-To replace battery during operation, please follow the below procedure.
+The ROBOTIS-OP3 battery can be replaced without shutting down the robot.  
+To replace the battery during operation, please follow the procedure below.
 
 ![](/assets/images/platform/op3/op3_009.png)
 

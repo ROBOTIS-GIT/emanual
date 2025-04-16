@@ -39,12 +39,12 @@ Keyboard and monitor are directly connected to ROBOTIS-OP3.
 
 #### Connection Type  
  - Via Wireless(WLAN)  
- IP address will be automatically assigned when connecting to ROBOTIS-OP3-Share.  
+An IP address will be automatically assigned when connecting to ROBOTIS-OP3-Share.  
  After establishing Wi-Fi connection, use one of the connection methods described in the next section.
  (_password : 111111_)  
 
  - Via Wired(Ethernet)   
- When using wired connection, connect ROBOTIS OP3 to the same Router with PC so that OP3 can be connected as a DHCP client.  
+ When using wired connection, connect ROBOTIS OP3 to the same Router as your control PC so the OP3 can be connected as a DHCP client.  
 
 #### How to connect
  - **SSH**
@@ -70,7 +70,7 @@ Keyboard and monitor are directly connected to ROBOTIS-OP3.
 ## [How to stop the demo program](#how-to-stop-the-demo-program)
 
 ### Stop the demo program
-In order to terminate automatically executed demo program, enter below command in the terminal window.  
+In order to terminate the automatically executed demo program, enter the command below in the terminal window.  
 ```bash
 $ sudo systemctl stop op3_demo.service
 ```
@@ -145,9 +145,9 @@ This chapter explains how to set up the system to automatically run a demo at st
 ## [How to restart the demo program](#how-to-restart-the-demo-program)
 
 ### When to restart the demo
-- When camera has lost its connection due to electrical or mechanical issue.  
-- When USB2DYNAMIXEL has lost its connection due to electrical or mechanical issue.  
-- When resetting DYNAMIXEL with Reset button due to DYNAMIXEL error.  
+- When camera has lost its connection due to electrical or mechanical issues.  
+- When USB2DYNAMIXEL has lost its connection due to electrical or mechanical issues.  
+- When resetting DYNAMIXEL with the Reset button due to DYNAMIXEL error.  
 
 
 ### How to restart the demo  
