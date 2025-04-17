@@ -26216,7 +26216,7 @@ openmanipulator_x:
     - title: "Dimension"
       url: /platform/openmanipulator_x/specification/#dimension
     - title: "Inertia"
-      url: /platform/openmanipulator_x/specification/#inertia
+      url: /platform/openmanipulator_x/specification/#intertia
     - title: "Understanding URDF"
       url: /platform/openmanipulator_x/specification/#understanding-urdf
   - title: "Assembly"
@@ -27544,7 +27544,7 @@ rplusmotion1:
         urlkr: /software/rplus1/motion/#페이지-반복속도-설정
       - title: "Inertial Force Control"
         titlekr: "관성력 조절"
-        url: /software/rplus1/motion/#inertial-force-control
+        url: /software/rplus1/motion/#intertial-force-control
         urlkr: /software/rplus1/motion/#관성력-조절
       - title: "Joint Softness"
         titlekr: "관절 유연성"
