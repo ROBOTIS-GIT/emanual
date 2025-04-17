@@ -34,9 +34,10 @@ More lidar points can be used, but they require more computing resources. To use
 |:-----------------------------------------------------------------------:|:----------------------------------------------------------------------:|
 |                            **sample = 360**                             |                            **sample = 24**                             |
 
-### [Set action](#set-action)
+<br>
 
-Action is what an agent can do in each state. Here, turtlebot3 has always 0.15 m/s of linear velocity. angular velocity is determined by action.
+**Set action**  
+- Action is what an agent can do in each state. Here, turtlebot3 has always 0.15 m/s of linear velocity. angular velocity is determined by action.  
 
 | Action | Angular velocity(rad/s) |
 |:------:|:-----------------------:|
@@ -46,12 +47,14 @@ Action is what an agent can do in each state. Here, turtlebot3 has always 0.15 m
 |   3    |         -0.75           |
 |   4    |          -1.5           |
 
-### [Set reward](#set-reward)
+<br>
 
-When turtlebot3 takes an action in a state, it receives a reward. The reward design is very important for learning. A reward can be positive or negative. When turtlebot3 gets to the goal, it gets big positive reward. When turtlebot3
-collides with an obstacle, it gets big negative reward. If you want to apply your reward design, modify `calculate_reward` function at `/turtlebot3_machine_learning/turtlebot3_dqn/turtlebot3_dqn/dqn_environment/dqn_environment.py`.
+**Set reward**  
+- When turtlebot3 takes an action in a state, it receives a reward. The reward design is very important for learning. A reward can be positive or negative. When turtlebot3 gets to the goal, it gets big positive reward. When turtlebot3
+collides with an obstacle, it gets big negative reward. If you want to apply your reward design, modify `calculate_reward` function at `/turtlebot3_machine_learning/turtlebot3_dqn/turtlebot3_dqn/dqn_environment/dqn_environment.py`.  
+<br>
 
-**Distance reward**  
+1. **Distance reward**  
 - Distance rewards use the difference between the previous distance to the goal and the present distance to the goal. And the distance to the goal in the present step becomes the distance to the goal in the next step.
 ```python
 distance_reward = self.prev_goal_distance - self.goal_distance
@@ -59,7 +62,7 @@ self.prev_goal_distance = self.goal_distance
 ```  
 <br>
 
-**Yaw reward**  
+2. **Yaw reward**  
 - Yaw reward uses a square root based reward function. This has the following advantages over a linear function.
   ```python
   yaw_reward = (1 - 2 * math.sqrt(math.fabs(self.goal_angle / math.pi)))
@@ -67,10 +70,9 @@ self.prev_goal_distance = self.goal_distance
   - The smaller the angular error, the faster the compensation increases, making the rotation more sensitive to fine alignment and thus more accurate.
   - Rewards decrease modestly when errors are large, encouraging exploration without penalizing too much early on in learning.
   - Good balance between initial stability and final alignment accuracy.  
-
 ![yaw_reward_graph](/assets/images/platform/turtlebot3/machine_learning/yaw_reward.png)
 
-**Obstacle reward**  
+3. **Obstacle reward**  
 - Obstacle reward will negatively reward when TurtleBot get closer than 0.5 meters to an obstacle.
 ```python
 obstacle_reward = 0.0
@@ -79,15 +81,15 @@ if self.min_obstacle_distance < 0.50:
 ```  
 <br>
 
-**Total reward**  
+4. **Total reward**  
 - Total reward uses the sum of the three rewards above. You can weight each reward to adjust the balance.
 ```bash
 reward = (distance_reward * 10) + (yaw_reward / 5) + obstacle_reward
-```
+```  
+<br>
 
-### [Set hyper parameters](#set-hyper-parameters)
-
-This tutorial has been learned using DQN. DQN is a reinforcement learning method that selects a deep neural network by approximating the action-value function(Q-value). Agent has follow hyper parameters at `/turtlebot3_machine_learning/turtlebot3_dqn/nodes/turtlebot3_dqn_stage_#`.
+**Set hyper parameters**  
+- This tutorial has been learned using DQN. DQN is a reinforcement learning method that selects a deep neural network by approximating the action-value function(Q-value). Agent has follow hyper parameters at `/turtlebot3_machine_learning/turtlebot3_dqn/nodes/turtlebot3_dqn_stage_#`.
 
 |     Hyper parameter    | default |                                                          description                                                            |
 |:----------------------:|:-------:|:-------------------------------------------------------------------------------------------------------------------------------:|
