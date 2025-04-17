@@ -36,7 +36,7 @@ Before the start of an episode, reset the position of the goal and regenerate th
 <br>
 
 2. **Select an action**  
-The behavior is determined by the abscissa value, which decreases as training progresses.  
+The behavior is determined by epsilon value, which decreases as training progresses.  
 <br>
     - **What is Q-value?**
         - Q-value is a key concept in reinforcement learning, meaning the expected cumulative reward for performing an action in a state.
