@@ -3,7 +3,7 @@
 **NOTE**:
 
 - This instructions were tested on `Ubuntu 22.04` and `ROS2 Humble Hawksbill`.
-- For more informationn, see [OpenMANIPULATOR e-Manual](/docs/en/platform/openmanipulator/) and [[ROS 2] Turtlebot3 Manipulation](/docs/en/platform/turtlebot3/manipulation)
+- For more information, see [OpenMANIPULATOR e-Manual](/docs/en/platform/openmanipulator/) and [[ROS 2] Turtlebot3 Manipulation](/docs/en/platform/turtlebot3/manipulation)
 {% endcapture %}
 <div class="notice">{{ notice_01 | markdownify }}</div>
 
