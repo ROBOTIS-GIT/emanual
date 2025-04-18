@@ -275,26 +275,26 @@ $ sudo apt-get install ros-humble-camera-ros ros-humble-image-transport-plugins 
 2. Run camera_node.  
 **[TurtleBot3 SBC]**  
 ```bash
-$ ros2 run camera_ros camera_node --ros-args -p format:='RGB888' -p width:=640 -p height:=480
+$ ros2 run camera_ros camera_node --ros-args -p format:='RGB888' -p width:=320 -p height:=240
 ```
-3. The error message `Unable to open camera calibration file [/home/ubuntu/.ros/camera_info/imx219__base_soc_i2c0mux_i2c_1_imx219_10_640x480.yaml]`
+3. The error message `Unable to open camera calibration file [/home/ubuntu/.ros/camera_info/imx219__base_soc_i2c0mux_i2c_1_imx219_10_320x240.yaml]`
 will appear if the camera calibration file is missing. After performing camera calibration, place the corresponding info file in the specified folder.  
-The camera_name should be set as `imx219__base_soc_i2c0mux_i2c_1_imx219_10_640x480`  
+The camera_name should be set as `imx219__base_soc_i2c0mux_i2c_1_imx219_10_320x240`  
 **Calibration yaml file example**  
 ```
-image_width: 640
-image_height: 480
-camera_name: imx219__base_soc_i2c0mux_i2c_1_imx219_10_640x480
+image_width: 320
+image_height: 240
+camera_name: imx219__base_soc_i2c0mux_i2c_1_imx219_10_320x240
 frame_id: camera
 camera_matrix:
   rows: 3
   cols: 3
-  data: [322.0704122808738, 0, 199.2680620421962, 0, 320.8673986158544, 155.2533082600705, 0, 0, 1]
+  data: [161.0352, 0, 99.6340, 0, 160.4337, 77.6267, 0, 0, 1]
 distortion_model: plumb_bob
 distortion_coefficients:
   rows: 1
   cols: 5
-  data: [0.1639958233797625, -0.271840030972792, 0.001055841660100477, -0.00166555973740089, 0]
+  data: [0.1639958, -0.2718400, 0.0010558, -0.0016656, 0]
 rectification_matrix:
   rows: 3
   cols: 3
@@ -302,7 +302,7 @@ rectification_matrix:
 projection_matrix:
   rows: 3
   cols: 4
-  data: [329.2483825683594, 0, 198.4101510452074, 0, 0, 329.1044006347656, 155.5057121208347, 0, 0, 0, 1, 0]
+  data: [164.6242, 0, 99.2051, 0, 0, 164.5522, 77.7529, 0, 0, 0, 1, 0]
 ```  
 
 <div class="notice--danger">
