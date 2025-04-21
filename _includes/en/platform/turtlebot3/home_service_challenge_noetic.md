@@ -56,7 +56,7 @@ $ roslaunch turtlebot3_manipulation_description turtlebot3_manipulation_view.lau
 
 ### [Ready for actual robots](#ready-for-actual-robots)
 {% capture notice_01 %}
-**NOTE**: Actual robots are supported starting with ROS2 Humble.
+**NOTE**: Actual robots are supported starting with ROS 2 Humble.
 {% endcapture %}
 <div class="notice">{{ notice_01 | markdownify }}</div>
 
