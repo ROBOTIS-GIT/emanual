@@ -26078,8 +26078,8 @@ turtlebot3:
       url: /platform/turtlebot3/basic_examples/#patrol
     - title: "TurtleBot Follower Demo"
       url: /platform/turtlebot3/basic_examples/#turtlebot-follower-demo
-    - title: "TurtleBot Panorama Demo"
-      url: /platform/turtlebot3/basic_examples/#turtlebot-panorama-demo
+    - title: "Panorama"
+      url: /platform/turtlebot3/basic_examples/#panorama
     - title: "Automatic Parking"
       url: /platform/turtlebot3/basic_examples/#automatic-parking
     - title: "Automatic Parking Vision"

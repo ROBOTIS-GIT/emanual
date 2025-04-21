@@ -100,15 +100,14 @@ page_number: 22
 {% include en/platform/turtlebot3/basic_examples/basic_examples_turtlebot_follower_demo_kinetic.md %}
 </section>
 
-## [TurtleBot Panorama Demo](#turtlebot-panorama-demo)
+## [Panorama](#panorama)
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-**NOTE**: This feature is not supported yet. We are currently working on it.
-{: .notice}
+{% include en/platform/turtlebot3/basic_examples/basic_examples_panorama_humble.md %}
 </section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
-{% include en/platform/turtlebot3/basic_examples/basic_examples_turtlebot_panorama_demo_kinetic.md %}
+{% include en/platform/turtlebot3/basic_examples/basic_examples_panorama_kinetic.md %}
 </section>
 
 ## [Automatic Parking](#automatic-parking)
