@@ -26080,6 +26080,8 @@ turtlebot3:
       url: /platform/turtlebot3/basic_examples/#panorama
     - title: "Automatic Parking"
       url: /platform/turtlebot3/basic_examples/#automatic-parking
+    - title: "ArUco Tracker"
+      url: /platform/turtlebot3/basic_examples/#aruco-tracker
     - title: "Automatic Parking Vision"
       url: /platform/turtlebot3/basic_examples/#automatic-parking-vision
     - title: "Load Multiple TurtleBot3s"

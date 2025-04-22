@@ -254,7 +254,7 @@ Apply changes with the command below.
 $ source ~/.bashrc
 ```
 
-### Rpi Camera
+### [Rpi Camera](#rpi-camera)
 Introducing the use of the RPi camera with TurtleBot3. There are various ways to publish the output of a RPi camera as a topic.  
 One method is to use the `camera-ros` package, and another method is to use the `v4l2-camera` package.  
 
