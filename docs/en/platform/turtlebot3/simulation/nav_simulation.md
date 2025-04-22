@@ -8,6 +8,7 @@ author_profile: false
 permalink: /docs/en/platform/turtlebot3/nav_simulation/
 tabs: "ROS"
 tab_title1: Humble
+tab_title2: Jazzy
 tab_title3: Noetic
 sidebar:
   title: TurtleBot3
@@ -33,6 +34,10 @@ Just like with SLAM in the Gazebo simulator, you can select or create various en
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/turtlebot3/nav_simulation_humble.md %}
+</section>
+
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+{% include en/platform/turtlebot3/nav_simulation_jazzy.md %}
 </section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">

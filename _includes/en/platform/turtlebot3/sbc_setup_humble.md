@@ -169,7 +169,7 @@ $ ssh ubuntu@{IP Address of Raspberry PI}
 ![](/assets/images/icon_unfold.png) **If you are using the TurtleBot3 2GB, make sure to create swap memory for building packages.** Otherwise, you may run out of memory and package building may fail.
 </summary>
 - Create 2GB swap memory.
-**[Remote PC]**  
+**[TurtleBot3 SBC]**  
 ```bash
 $ sudo fallocate -l 2G /swapfile
 $ sudo chmod 600 /swapfile
@@ -275,11 +275,11 @@ $ sudo apt-get install ros-humble-camera-ros ros-humble-image-transport-plugins 
 2. Run camera_node.  
 **[TurtleBot3 SBC]**  
 ```bash
-$ ros2 run camera_ros camera_node --ros-args -p format:='RGB888' -p width:=640 -p height:=480
+$ ros2 run camera_ros camera_node --ros-args -p format:='RGB888' -p width:=320 -p height:=240
 ```
-3. The error message `Unable to open camera calibration file [/home/ubuntu/.ros/camera_info/imx219__base_soc_i2c0mux_i2c_1_imx219_10_640x480.yaml]`
+3. The error message `Unable to open camera calibration file [/home/ubuntu/.ros/camera_info/imx219__base_soc_i2c0mux_i2c_1_imx219_10_320x240.yaml]`
 will appear if the camera calibration file is missing. After performing camera calibration, place the corresponding info file in the specified folder.  
-The camera_name should be set as `imx219__base_soc_i2c0mux_i2c_1_imx219_10_640x480`  
+The camera_name should be set as `imx219__base_soc_i2c0mux_i2c_1_imx219_10_320x240`  
 **Calibration yaml file example**  
 ```
 image_width: 320
