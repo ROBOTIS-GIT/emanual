@@ -135,7 +135,7 @@ TurtleBot3 will perform **individual actions** for `$SCENARIO_NAME` based on the
 $ ros2 topic pub -1 /scenario_selection std_msgs/msg/String "{data: '$SCENARIO_NAME'}"
 ```
 
-  **NOTE**: When using this command, be sure to include one of the senario name from a `scenario.yaml` file. The provided scenario file contains `room1` through `room4`. For detailed information on the scenario, see [Details](#details-about-the-home-service-mission) description below at this section.
+  **NOTE**: When using this command, be sure to include one of the scenario name from a `scenario.yaml` file. The provided scenario file contains `room1` through `room4`. For detailed information on the scenario, see [Details](#details-about-the-home-service-mission) description below at this section.
   {: .notice}
 
 
