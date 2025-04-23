@@ -26074,8 +26074,8 @@ turtlebot3:
       url: /platform/turtlebot3/basic_examples/#absolute-move
     - title: "Patrol"
       url: /platform/turtlebot3/basic_examples/#patrol
-    - title: "TurtleBot Follower Demo"
-      url: /platform/turtlebot3/basic_examples/#turtlebot-follower-demo
+    - title: "Follower"
+      url: /platform/turtlebot3/basic_examples/#follower
     - title: "Panorama"
       url: /platform/turtlebot3/basic_examples/#panorama
     - title: "Automatic Parking"
