@@ -24,7 +24,7 @@ These steps activate intrinsic and extrinsic calibration to correct any distorti
 
 Finally, launch the lane detection node in calibration mode to begin detecting lanes:
 ``` bash
-$ ros2 launch turtlebot3_autorace_camera detect_lane.launch.py calibration_mode:=True
+$ ros2 launch turtlebot3_autorace_detect detect_lane.launch.py calibration_mode:=True
 ```  
 <br>
 
@@ -68,5 +68,5 @@ $ ros2 launch turtlebot3_autorace_detect detect_lane.launch.py
 
 Then, launch the lane following control node, which enables TurtleBot3 to automatically follow the detected lanes:
 ```bash
-$ ros2 launch turtlebot3_autorace_driving control_lane.launch.py
+$ ros2 launch turtlebot3_autorace_mission control_lane.launch.py
 ```
