@@ -51,39 +51,48 @@ The behavior is determined by epsilon value, which decreases as training progres
 After the robot performs an action, it receives a reward or penalty for its behavior and checks to see if it reached its goal.  
 <br>
 
+**Machine Learning launch argument**  
+`stage`
+- default: 1
+- describtion: This package has stations numbered 1 through 4, as described above. Specify the stage you want to run as an integer.  
+
+`max_training_episodes`
+- default: 1000
+- describtion: The number of episodes you want to run. A minimum of 600 episodes is required for testing. More complex stages may require more episodes to learn enough.  
+<br>
+
 **Run machine learning**  
-1. **Bring the stage 1 in Gazebo map.**
+1. **Bring the stage in Gazebo map.**
 ``` bash
-$ ros2 launch turtlebot3_gazebo turtlebot3_dqn_stage1.launch.py
+$ ros2 launch turtlebot3_gazebo turtlebot3_dqn_{$stage}.launch.py
 ```  
 <br>
 
-2. **Run Gazebo environment node.**  
-This node manages the Gazebo environment. It regenerates the Goal and initializes the TurtleBot's location when an episode starts anew. Enter the number of the stage as the first argument.
+1. **Run Gazebo environment node.**  
+This node manages the Gazebo environment. It regenerates the Goal and initializes the TurtleBot's location when an episode starts anew.
 ```bash
-$ ros2 run turtlebot3_dqn dqn_gazebo $stage
+$ ros2 run turtlebot3_dqn dqn_gazebo {$stage}
 ```  
 <br>
 
-3. **Run DQN environment node.**  
+1. **Run DQN environment node.**  
 This node manages the DQN environment. It calculates the state of the TurtleBot and uses it to determine rewards, success, and failure.
 ```bash
 $ ros2 run turtlebot3_dqn dqn_environment
 ```  
 <br>
 
-4. **Run DQN agent node.**  
-This node trains the TurtleBot. It trains TurtleBot with calculated rewards and determines its next behavior. Enter the number of the stage as the first argument.  
-**Optional**: As a second argument, enter the maximum number of episodes you want to perform. (default: 1000)
+1. **Run DQN agent node.**  
+This node trains the TurtleBot. It trains TurtleBot with calculated rewards and determines its next behavior.
 ```bash
-$ ros2 run turtlebot3_dqn dqn_agent $stage $max_training_episodes
+$ ros2 run turtlebot3_dqn dqn_agent {$stage} {$max_training_episodes}
 ```  
 <br>
 
-5. **Test traind model.**  
-To test the trained model, run test node instead of DQN agent node from the beginning. The model trained up to the 600th episode is used. Enter the number of the stage as the first argument.
+1. **Test traind model.**  
+After training at least 600 episodes, to test the trained model, run test node instead of DQN agent node.
 ``` bash
-$ ros2 run turtlebot3_dqn dqn_test $stage
+$ ros2 run turtlebot3_dqn dqn_test {$stage}
 ```  
 <br>
 
@@ -95,8 +104,10 @@ $ ros2 run turtlebot3_dqn action_graph
 ```  
 <br>
 
-2. **Result graph**  
+1. **Result graph**  
 The Result graph is a linear plot of the average of the maximum values of Q-Value and the total reward as each episode progresses.
 ```bash
 $ ros2 run turtlebot3_dqn result_graph
 ```  
+    **NOTE**: The graph is recorded from the time you run the node. For full recording, turn it on before you start learning.
+    {: .notice}

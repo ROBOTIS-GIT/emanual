@@ -27,7 +27,7 @@ Turtlebot3's LDS default is set to 360. You can modify sample of LDS at `/turtle
 ```  
 
 **Note**  
-More lidar points can be used, but they require more computing resources. To use a different number of lidar points, replace `state_size` in [Hyper parameter](#set-hyper-parameters).
+More lidar points can be used, but they require more computing resources. To use a different number of lidar points, replace `state_size` in **Hyper parameter**.
 {: .notice}
 
 | ![](/assets/images/platform/turtlebot3/machine_learning/sample_360.png) | ![](/assets/images/platform/turtlebot3/machine_learning/sample_24.png) |
@@ -51,7 +51,7 @@ More lidar points can be used, but they require more computing resources. To use
 
 **Set reward**  
 - When turtlebot3 takes an action in a state, it receives a reward. The reward design is very important for learning. A reward can be positive or negative. When turtlebot3 gets to the goal, it gets big positive reward. When turtlebot3
-collides with an obstacle, it gets big negative reward. If you want to apply your reward design, modify `calculate_reward` function at `/turtlebot3_machine_learning/turtlebot3_dqn/turtlebot3_dqn/dqn_environment/dqn_environment.py`.  
+collides with an obstacle, it gets big negative reward. If you want to apply your reward design, modify `calculate_reward` function at `turtlebot3_machine_learning/turtlebot3_dqn/turtlebot3_dqn/dqn_environment.py`.  
 <br>
 
 1. **Distance reward**  
@@ -62,7 +62,7 @@ self.prev_goal_distance = self.goal_distance
 ```  
 <br>
 
-2. **Yaw reward**  
+1. **Yaw reward**  
 - Yaw reward uses a square root based reward function. This has the following advantages over a linear function.
   ```python
   yaw_reward = (1 - 2 * math.sqrt(math.fabs(self.goal_angle / math.pi)))
@@ -72,7 +72,7 @@ self.prev_goal_distance = self.goal_distance
   - Good balance between initial stability and final alignment accuracy.  
 ![yaw_reward_graph](/assets/images/platform/turtlebot3/machine_learning/yaw_reward.png)
 
-3. **Obstacle reward**  
+1. **Obstacle reward**  
 - Obstacle reward will negatively reward when TurtleBot get closer than 0.5 meters to an obstacle.
 ```python
 obstacle_reward = 0.0
@@ -81,7 +81,7 @@ if self.min_obstacle_distance < 0.50:
 ```  
 <br>
 
-4. **Total reward**  
+1. **Total reward**  
 - Total reward uses the sum of the three rewards above. You can weight each reward to adjust the balance.
 ```bash
 reward = (distance_reward * 10) + (yaw_reward / 5) + obstacle_reward
@@ -89,7 +89,7 @@ reward = (distance_reward * 10) + (yaw_reward / 5) + obstacle_reward
 <br>
 
 **Set hyper parameters**  
-- This tutorial has been learned using DQN. DQN is a reinforcement learning method that selects a deep neural network by approximating the action-value function(Q-value). Agent has follow hyper parameters at `/turtlebot3_machine_learning/turtlebot3_dqn/nodes/turtlebot3_dqn_stage_#`.
+- This tutorial has been learned using DQN. DQN is a reinforcement learning method that selects a deep neural network by approximating the action-value function(Q-value). Agent has follow hyper parameters at `/turtlebot3_machine_learning/turtlebot3_dqn/turtlebot3_dqn/dqn_agent.py`.
 
 |     Hyper parameter    | default |                                                          description                                                            |
 |:----------------------:|:-------:|:-------------------------------------------------------------------------------------------------------------------------------:|
@@ -97,7 +97,6 @@ reward = (distance_reward * 10) + (yaw_reward / 5) + obstacle_reward
 |     discount_factor    |  0.99   |                          Represents how much future events lose their value according to how far away.                          |
 |      learning_rate     | 0.0007  |      Learning speed. If the value is too large, learning does not work well, and if it is too small, learning time is long.     |
 |         epsilon        |   1.0   |                                           The probability of choosing a random action.                                          |
-|      epsilon_decay     |  0.99   |                              Reduction rate of epsilon. When one episode ends, the epsilon reduce.                              |
 |       epsilon_min      |  0.05   |                                                    The minimum of epsilon.                                                      |
 |       batch_size       |   128   |                                              Size of a group of training samples.                                               |
 | min_replay_memory_size |  5000   |                                  Start training if the replay memory size is greater than 5000.                                 |
