@@ -1,4 +1,4 @@
-Bus Watchdog(546) is a safety feature(Fail-safe) that stops the device if the communication(RS485, TTL) between the controller and the device is disconnected due to an unidentified error.  
+Bus Watchdog(546) is a safety feature(Fail-safe) that stops the device if the communication(RS-485, TTL) between the controller and the device is disconnected due to an unidentified error.  
 The "communication" can be seen as all the Instruction Packets defined in the protocol.
 
 |       |  Value  | Description                                                     |

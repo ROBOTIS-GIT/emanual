@@ -12,8 +12,8 @@ common_y_specs:
   temperature:          &temperature          "-5 ~ +55 [&deg;C]"
   voltage:              &voltage              "24 [V]"
   command:              &command              "Digital Packet"
-  rs485_kr:             &rs485_kr             "RS485 Multidrop Bus<br />RS485 비동기 시리얼 통신 (8bit, 1stop, No Parity)"
-  rs485_en:             &rs485_en             "RS485 Multidrop Bus<br />RS485 Asynchronous Serial Communication (8bit, 1stop, No Parity)"  
+  rs485_kr:             &rs485_kr             "RS-485 Multidrop Bus<br />RS-485 비동기 시리얼 통신 (8bit, 1stop, No Parity)"
+  rs485_en:             &rs485_en             "RS-485 Multidrop Bus<br />RS-485 Asynchronous Serial Communication (8bit, 1stop, No Parity)"  
   id:                   &id                   "253 (0 ~ 252)"
   standbycurrent:       &standbycurrent       "40 [mA]"
 
