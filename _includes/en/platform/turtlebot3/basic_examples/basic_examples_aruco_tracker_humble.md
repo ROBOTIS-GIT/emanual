@@ -1,8 +1,8 @@
 This section explains how to configure and execute the TurtleBot3 ArUco Tracker function. The camera vision recognizes the ArUco marker and broadcasts it via TF conversion.  
-
-**NOTE**:  
-- The `turtlebot3_aruco_tracker` uses the RaspberryPi camera. To use camera module, you must follow [SBC Setup](/docs/en/platform/turtlebot3/sbc_setup/#rpi-camera).  
-- If you want to perform Automatic Parking Vision, need to set the TurtleBot3 model to `waffle_pi`.
+If you want more information, check out the [OpenCV Docs](https://docs.opencv.org/4.x/d5/dae/tutorial_aruco_detection.html).
+- **NOTE**:  
+  - The `turtlebot3_aruco_tracker` uses the RaspberryPi camera. To use camera module, you must follow [SBC Setup](/docs/en/platform/turtlebot3/sbc_setup/#rpi-camera).  
+  - If you want to perform Automatic Parking Vision, need to set the TurtleBot3 model to `waffle_pi`.
 {: .notice}
 <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/6ZyaFREFhnk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
@@ -40,7 +40,7 @@ Launch the RViz to view the TurtleBot3’s movements and visualize TF.
   $ ros2 launch turtlebot3_bringup rviz2.launch.py
   ```
 
-4. **Tracking ArUco markers**  
+1. **Tracking ArUco markers**  
 Launch a node that tracks ArUco markers  
 **[Remote PC]**
   ```bash
