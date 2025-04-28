@@ -29,8 +29,7 @@ sidebar:
   ```
   
 2) **Option 2**: Direct Download
-- [DYNAMIXEL SDK 3.7.31.zip (For ROS1, Python, C, C++, C#, MATLAB, LabView, Java)](https://github.com/ROBOTIS-GIT/DynamixelSDK/archive/3.7.31.zip)
-- [DYNAMIXEL SDK 3.7.30.zip (For ROS2 only)](https://github.com/ROBOTIS-GIT/DynamixelSDK/archive/3.7.30.zip)
+- [DYNAMIXEL SDK Releases](https://github.com/ROBOTIS-GIT/DynamixelSDK/releases)
 
 3) **Option 3**: Install ROS library (C++ library and Python module)
 
