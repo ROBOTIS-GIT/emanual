@@ -1,4 +1,3 @@
-
 {% capture notice_04 %}
 **NOTE**:
 
@@ -7,13 +6,13 @@
 
   - **Relative Move**: inputs are **relative** to the robot’s current pose  
   - **Absolute Move**: inputs are **absolute** coordinates in the global odometry frame  
-*So make sure to choose the appropriate example depending on the type of control you need.*
+*So make sure to choose the appropriate example depending on the type of control you need.*  
 
 {% endcapture %}
 <div class="notice--info">{{ notice_04 | markdownify }}</div>
 This example explains how to use the TurtleBot3 Absolute Move feature, which enables precise navigation to an absolute coordinate in the odometry frame. The system uses odometry data and quaternion-based orientation calculations to move the robot to a target position and heading.  
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/23gX5w4ZzkE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/FrJTGl4bPfc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
 
 **Understanding the Overall Flow**
 
