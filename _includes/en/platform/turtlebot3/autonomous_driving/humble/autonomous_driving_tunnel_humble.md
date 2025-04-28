@@ -20,7 +20,7 @@ $ ros2 launch turtlebot3_gazebo turtlebot3_autorace_2020.launch.py
 
 3. Open a new terminal and launch the tunnel mission node. This node runs the navigation and specifies the initial and target locations.
 ```bash
-$ ros2 launch turtlebot3_autorace_tunnel mission_tunnel.launch.py
+$ ros2 launch turtlebot3_autorace_mission mission_tunnel.launch.py
 ```
 4. On the Rviz2 screen, you can watch the TurtleBot generate and follow a path in real-time.
 

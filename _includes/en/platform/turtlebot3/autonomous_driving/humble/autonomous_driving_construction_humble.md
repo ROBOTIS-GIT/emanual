@@ -35,7 +35,7 @@ $ ros2 launch turtlebot3_autorace_camera extrinsic_camera_calibration.launch.py
 
 5. Open a new terminal and launch the construction mission node.
 ```bash
-$ ros2 launch turtlebot3_autorace_construction mission_construction.launch.py
+$ ros2 launch turtlebot3_autorace_mission mission_construction.launch.py
 ```
 
 6. On the image window, you can watch the LiDAR visualization. The detected lidar points, and danger zone are displayed.
