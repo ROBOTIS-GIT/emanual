@@ -11,6 +11,10 @@ State is an observation of environment and describes the current situation. Here
 Turtlebot3's LDS default is set to 360. You can modify sample of LDS at `/turtlebot3_simulations/turtlebot3_gazebo/models/turtlebot3_burger/model.sdf`.
 
 ```bash
+gedit ~/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models/turtlebot3_burger/model.sdf
+```
+
+```bash
 <sensor name="hls_lfcd_lds" type="ray">    # Find the "hls_lfcd_lds"
   <visualize>true</visualize>    # Visualization of LDS. If you don't want to see LDS, set to `false`
 ```
