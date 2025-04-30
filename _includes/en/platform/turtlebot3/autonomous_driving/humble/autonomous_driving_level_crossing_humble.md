@@ -50,7 +50,7 @@ $ rqt
 
 9.   Open `level.yaml` file located at ***turtlebot3_autorace_detect/param/level/***.
 ```bash
-$ gedit ~/turtlebot3_ws/src/turtlebot3_autorace_2020/turtlebot3_autorace_detect/param/level/level.yaml
+$ gedit ~/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace_detect/param/level/level.yaml
 ```
         ![](/assets/images/platform/turtlebot3/autonomous_driving/humble_level_yaml.png)
 
