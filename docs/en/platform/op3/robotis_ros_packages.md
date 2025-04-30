@@ -33,40 +33,40 @@ page_number: 4
 
 ###### Overview  
 `op3_action_module` manages OP3 actions.  
-This module is compiled as a libary so that it can be loaded from the `op3_manager`.
-Action contains all joint angles per each time frame.
+This module is compiled as a libary so that it can be loaded in the `op3_manager`.
+Actions contain all joint angles required for each time frame to define a complete motion.
 
 ###### Getting started  
 - Download & Build  
   > Reference : [Installing ROBOTIS ROS Package]
 
 - Usage  
-  Motion Module is used in the form of lib in the manager.  
+  The Action Module is used in the form of a library in the manager to call actions to have the OP3 execute.
   > Reference : [Creating new robot manager]
 
 ###### ROS API  
 - Subscribed Topics  
   `/robotis/action/page_num`([std_msgs/msg/Int32]{: .popup})  
-  &emsp;&emsp; The page number of action to run in the Module.  
+  &emsp;&emsp; The page number of the action to run with the Module.  
   &emsp;&emsp; -&emsp;1 ~ 255 : play action  
   &emsp;&emsp; -&emsp;-1 : stop action  
   &emsp;&emsp; -&emsp;-2 : brake action  
 
   `/robotis/action/start_action`([op3_action_module_msgs/msg/StartAction]{: .popup})  
-  &emsp;&emsp; Message that contain a page number will be played and specified joints name will be applied action plaing result.    
+  &emsp;&emsp; Messages that contain a page number will cause that action to be played and any specified joint name and angles will be applied to the action execution result.    
 
 - Published Topics  
   `/robotis/status`([robotis_controller_msgs/msg/StatusMsg]{: .popup})  
-  &emsp;&emsp; Message that describes status of action_module.  
+  &emsp;&emsp; Message that describes the current status of action_module.  
 
   `/robotis/movement_done`([std_msgs/msg/String]{: .popup})  
-  &emsp;&emsp; Message that describes the robot has finished its movement.  
+  &emsp;&emsp; Message published after the robot has finished its movement.  
   &emsp;&emsp; -&emsp;action : action finished  
   &emsp;&emsp; -&emsp;action_failed : action failed  
 
 - Services  
   `/robotis/action/is_running`([op3_action_module_msgs/srv/IsRunning]{: .popup})  
-  &emsp;&emsp; Service that checks whether the action is running or not.  
+  &emsp;&emsp; Service that checks whether an action is running or not.  
 
 ###### Parameters
   `/action file path`(string, default : "op3_action_module/data/motion_4095.bin")  
@@ -75,28 +75,28 @@ Action contains all joint angles per each time frame.
 ##### [op3_base_module](#op3-base-module)
 
 ###### Overview  
-`op3_base_module` is a module for initial posture.  
-This module is compiled to a library to be used in [op3_manager].  
+`op3_base_module` is the module managing the initial default posture.  
+This module is compiled as a library to be used in [op3_manager].  
 
 ###### Getting started  
 - Download & Build  
   > Reference : [Installing ROBOTIS ROS Package]
 
 - Usage  
-  The Motion Module is used in the manager in the form of library.  
+  The Base Module is used in the manager in the form of library.  
   > Reference : [Creating new robot manager]
 
 ###### ROS API  
 - Subscribed Topics  
   `/robotis/base/ini_pose`([std_msgs/msg/String]{: .popup})  
-  &emsp;&emsp; This message will have OP3 to take the initial posture(This command is effective even when the base &emsp;&emsp; module is inactive).  
+  &emsp;&emsp; Sending a message on this topic will have OP3 move to it's initial default posture. (This command is will still execute even when the base &emsp;&emsp; module is inactive).  
 
 - Published Topics  
   `/robotis/enable_ctrl_module`([std_msgs/msg/String]{: .popup})  
-  &emsp;&emsp; This message activates `op3_base_module` to take the initial posture.  
+  &emsp;&emsp; This message activates `op3_base_module` and has the OP3 move to it's initial posture.  
 
   `/robotis/status`([robotis_controller_msgs/msg/StatusMsg]{: .popup})  
-  &emsp;&emsp; This message notifies the status of `op3_base_module`.  
+  &emsp;&emsp; This message publishes the status of the `op3_base_module`.  
 
 ###### Data  
 - Init posture  
@@ -104,16 +104,16 @@ This module is compiled to a library to be used in [op3_manager].
  - data file path : [/op3_base_module/data/ini_pose.yaml]  
 
  - YAML format  
-   - mov_time : Estimated time to move to target points(unit in second)  
+   - mov_time : Estimated time to move to target points (in seconds)  
    - via_num : Number of waypoints  
-   - via_time : Estimated time between waypoints(array structure)   
-   - via_pose : Angle of every joint for each waypoint(unit in degree, array structure)  
+   - via_time : Estimated time between waypoints (as an array)   
+   - via_pose : Angle of every joint for each waypoint (in degrees, as an array)  
    - tar_pose : Target joint angles for initial posture
 
 ##### [op3_head_control_module](#op3-head-control-module)
 
 ###### Overview
-This chapter explains the module to control OP3's head.  
+Controls the OP3's head movement.
 This module is compiled to a library to be used in [op3_manager].  
 
 ###### Getting started  
@@ -121,19 +121,19 @@ This module is compiled to a library to be used in [op3_manager].
   > Reference : [Installing ROBOTIS ROS Package]    
 
 - Usage  
-  The Motion Module is used in the manager in the form of library.  
+  The Head Module is used in the manager in the form of library.  
   > Reference : [Creating new robot manager]
 
 ###### ROS API
 - Subscribed Topics  
   `/robotis/head_control/scan_command`([std_msgs/msg/String]{: .popup})  
-  &emsp;&emsp; This message will request a looking around head motion to scan the environment.  
+  &emsp;&emsp; Publishing a message on this topic will request a "looking around" head motion to scan the environment.  
 
   `/robotis/head_control/set_joint_states`([sensor_msgs/msg/JointState]{: .popup})  
-  &emsp;&emsp; Head joints will rotate to corresponding angles written in the message.  
+  &emsp;&emsp; Head joints will rotate to match angles written in messages published to this topic.  
 
   `/robotis/head_control/set_joint_states_offset`([sensor_msgs/msg/JointState]{: .popup})  
-  &emsp;&emsp; Head joints will adjust angles by offset values written in the message.  
+  &emsp;&emsp; Head joints will adjust their current angles according to offset values written in messages published to this topic.  
 
 
 - Published Topics  
@@ -143,36 +143,36 @@ This module is compiled to a library to be used in [op3_manager].
 ##### [op3_walking_module](#op3-walking-module)
 
 ###### Overview
-This chapter explains the module to control OP3 walking.  
-This module is compiled to a library to be used in [op3_manager].  
+This module controls the OP3's walking state.
+This module is compiled as a library to be used in [op3_manager].  
 
 ###### Getting started
 - Download & Build
   > Reference : [Installing ROBOTIS ROS Package]
 
 - Usage
-  The Motion Module is used in the manager in the form of library.  
+  The Walking Module is used in the manager in the form of library.  
   > Reference : [Creating new robot manager]
 
 ###### ROS API
 - Subscribed Topics  
   `/robotis/walking/command`([std_msgs/msg/String]{: .popup})  
-  &emsp;&emsp; This message requests start and stop for walking.  
+  &emsp;&emsp; Messages on this topic request starts and stops for walking.  
 
   `/robotis/walking/set_params`([op3_walking_module_msgs/msg/WalkingParam]{: .popup})  
-  &emsp;&emsp; This message sets necessary parameters for walking. For details, refer to [WalkingParam.msg].  
+  &emsp;&emsp; Messages on this topic set necessary parameters for walking. For details, refer to [WalkingParam.msg].  
 
 - Published Topics  
   `/robotis/status`([robotis_controller_msgs/msg/StatusMsg]{: .popup})  
-  &emsp;&emsp; This message notifies the status of op3_walking_module.  
+  &emsp;&emsp; This topic publishes the current status of the op3_walking_module.  
 
 - Services  
   `/robotis/walking/get_params`([op3_walking_module_msgs/msg/GetWalkingParam]{: .popup})  
-  &emsp;&emsp; This service acquires walking parameters.  
+  &emsp;&emsp; This service reads walking parameters.  
 
 ###### Parameters
 `/walking_param_path`(string, default : "op3_walking_module/config/param.yaml")  
-&emsp;&emsp; File path that indicates the location of the walking parameters.  
+&emsp;&emsp; File path that indicates the location of walking parameters.  
 
 ###### Data
 - Walking parameters
@@ -204,7 +204,7 @@ This module is compiled to a library to be used in [op3_manager].
    - period_time: Time required for ROBOTIS-OP3 to complete two full steps (left and right foot) [ms]  
      ![](/assets/images/platform/op3/op3_walking_module_image148.jpg)
 
-   - dsp_ratio: Time ratio of the period when both feet are touching the ground to the period of walking cycle.  
+   - dsp_ratio: Time ratio of the period when both feet are touching the ground to the period of time with only one foot on the ground in each walking cycle.  
      ![](/assets/images/platform/op3/op3_walking_module_image149.jpg)
 
    - foot_height: foot elevation during walk [m]  
@@ -239,104 +239,104 @@ This module is compiled to a library to be used in [op3_manager].
 ##### [op3_direct_control_module](#op3-direct-control-module)
 
 ###### Overview  
-This chapter explains the module to control the joints of ROBOTIS-OP3 directly.  
+This module allows for direct control over OP3 joints.
 
 ###### Getting started  
 - Download & Build  
   > Reference : [Installing ROBOTIS ROS Package]
 
 - Usage  
-  Motion Module is used in the form of lib in the manager.  
+  The Direct Control Module is used in the form of lib in the manager.  
   > Reference : [Creating new robot manager]
 
 ###### ROS API  
 - Subscribed Topics  
   `/robotis/direct_control/set_joint_states`([sensor_msgs/msg/JointState]{: .popup})  
-  &emsp;&emsp; Message that include the joint value user want to move.  
+  &emsp;&emsp; Listens for messages that include parameters and joint information for the joint the user wants to move.  
 
 - Published Topics  
   `/robotis/status`([robotis_controller_msgs/msg/StatusMsg]{: .popup})  
-  &emsp;&emsp; Message that describes status of action_module.  
+  &emsp;&emsp; Message that describes the current status of the action_module.  
 
 ###### Parameters  
   `/robotis/direct_control/default_moving_time`(double, default : 0.5)  
   &emsp;&emsp; minimum time to move to target position  
 
   `/robotis/direct_control/default_moving_angle`(double, default : 30)  
-  &emsp;&emsp; angle moving to target position per 1 sec  
+  &emsp;&emsp; angular movement speed per second for moving to target position
   
   `/robotis/direct_control/check_collision`(bool, default : true)  
-  &emsp;&emsp; enable of pseudo self-collision checking  
+  &emsp;&emsp; enable pseudo self-collision checking  
   
 ##### [op3_tuning_module](#op3-tuning-module)
 
 ###### Overview  
-This chapter explains the module used for offset and gain adjustment.  
+This module is used for motion tuning and gain adjustment.
 
 ###### Getting started  
 - Download & Build  
   > Reference : [Installing ROBOTIS ROS Package]
 
 - Usage  
-  Motion Module is used in the form of lib in the manager.  
+  The Tuning Module is used in the form of lib in the manager.  
   > Reference : [Creating new robot manager]
 
 ###### ROS API  
 - Subscribed Topics  
   `/robotis/tuning_module/tuning_pose`([std_msgs/msg/String]{: .popup})  
-  &emsp;&emsp; Message that is used to change the posture for tuning a gain  
+  &emsp;&emsp; Listens for messages to change the posture for gain tuning
 
   `/robotis/tuning_module/joint_offset_data`([op3_tuning_module_msgs/msg/JointOffsetData]{: .popup})  
-  &emsp;&emsp; Message used to change the offset  
+  &emsp;&emsp; Listens for messages used to change the offset of joints
 
   `/robotis/tuning_module/joint_gain_data`([op3_tuning_module_msgs/msg/JointOffsetData]{: .popup})  
-  &emsp;&emsp; Message used to change the gain  
+  &emsp;&emsp; Listens for messages used to change joint gains
 
   `/robotis/tuning_module/torque_enable`([op3_tuning_module_msgs/msg/JointTorqueOnOffArray]{: .popup})  
-  &emsp;&emsp; Message used to en/disable the torque of joints  
+  &emsp;&emsp; Listens for messages to enable or disable torque to joints
 
   `/robotis/tuning_module/command`([std_msgs/msg/String]{: .popup})  
-  &emsp;&emsp; Message for command(ex. save gain, save offset)  
+  &emsp;&emsp; Listens for command messages to save gains or offsets
 
 - Published Topics  
   `/robotis/status`([robotis_controller_msgs/msg/StatusMsg]{: .popup})  
-  &emsp;&emsp; Message that describes status of action_module.    
+  &emsp;&emsp; Describes the current status of the action_module.    
 
   `/robotis/enable_ctrl_module`([std_msgs/msg/String]{: .popup})  
-  &emsp;&emsp; Message for changing a motion module of robotis_controller  
+  &emsp;&emsp; Messages publishing updates for motion module changes from the robotis_controller  
 
   `/robotis/sync_write_item`([robotis_controller_msgs/msg/SyncWriteItem]{: .popup})  
-  &emsp;&emsp; Message for sync write with dynamixel in robotis_controller  
+  &emsp;&emsp; Messages to sync write directly to DYNAMIXELs using robotis_controller  
 
   `/robotis/enable_offset`([std_msgs/msg/Bool]{: .popup})  
   &emsp;&emsp; Messages for turning on / off offsets in robotis_controller  
     
 - Service Server  
   `/robotis/tuning_module/get_present_joint_offset_data`  ([op3_tuning_module_msgs/msg/GetPresentJointOffsetData]{: .popup})  
-  &emsp;&emsp; Service used to notify joint states including offset  
+  &emsp;&emsp; Service to request joint state information, including offset  
    
 - Service Client  
   `/robotis/set_present_ctrl_modules`([robotis_controller_msgs/msg/SetModule]{: .popup})  
-  &emsp;&emsp; Service for changing a motion module of robotis_controller  
+  &emsp;&emsp; Service for changing the motion module of robotis_controller  
 
   `/robotis/load_offset`([robotis_controller_msgs/msg/LoadOffset]{: .popup})  
-  &emsp;&emsp; Service used to apply the new offset in robotis_controller  
+  &emsp;&emsp; Service to apply new offsets to robotis_controller  
   
 
 ###### Parameters  
   `offset_file_path`(string, default : `~/data/tune_pose.yaml`)  
-  &emsp;&emsp; This path indicates the location of the file that contains offset data of each joint.  
+  &emsp;&emsp; This path indicates the location of the file that contains the offset data for each joint.  
 
   `init_file_path`(string, default : `~/data/offset.yaml`)  
-  &emsp;&emsp; This path indicates the location of the file that contains initialization information of each joint  
+  &emsp;&emsp; This path indicates the location of the file that contains initialization information for each joint  
 
 ##### Sensor Module
 
 ##### [open_cr_module](#open-cr-module)
 
 ###### Overview  
-This chapter introduces the module that utilizes OpenCR as sensor and IO interface.  
-This module provides Gyro, Acceleration, Button and LED functions.
+   
+This module provides OpenCR sensor and IO interface control for Gyro, Acceleration, Button and LED functions.
 
   > Reference : [OPENCR]
 
@@ -351,18 +351,18 @@ The Sensor Module is used in the manager in the form of library.
 ###### ROS API
 - Published Topics  
   `/robotis/status`([robotis_controller_msgs/msg/StatusMsg]{: .popup})  
-&emsp;&emsp; This message notifies the status of open_cr_module.  
+&emsp;&emsp; This message contains the current status of the open_cr_module.  
 
   `/robotis/open_cr/imu`([sensor_msgs/msg/Imu]{: .popup})  
-&emsp;&emsp; This message contains IMU data from OpenCR.  
+&emsp;&emsp; This message contains current IMU data from the OpenCR.  
 
   `/robotis/open_cr/button`([std_msgs/msg/String]{: .popup})  
-&emsp;&emsp; This message notifies the status of the button connected to OpenCR GPIO.  
+&emsp;&emsp; This message contains the status of the buttons connected to the OpenCR GPIO.  
 
 ### [OP3 Manager](#op3-manager)
 
 #### Overview  
-`op3_manager` package applies ROBOTIS Framework to ROBOTIS OP3.  
+`op3_manager` package controls the ROBOTIS Framework on the ROBOTIS OP3.  
 Refer to the below link to create a new robot manager.  
 > Reference : [Creating new robot manager]
 
@@ -372,8 +372,8 @@ Refer to the below link to create a new robot manager.
 
 ##### Run  
 Execute the program with a `.launch` file in order to load ROS parameters.  
-The command should be executed under the root account to configure the attribute of Thread.  
-`op3_manager` has a direct control over ROBOTIS-OP3, therefore other control programs such as `op3_walking_tuner` and `op3_action_editor` should not be running.  
+The command should be executed under the root account to configure the correct Tread attributes.  
+`op3_manager` has direct control over ROBOTIS-OP3, other control programs such as `op3_walking_tuner` and `op3_action_editor` should not be running.  
 Before executing the `op3_manager` launch file, other programs should be terminated.  
 ```bash
 $ sudo bash  
@@ -387,47 +387,45 @@ $ sudo bash
 launch parameters  
 
 `gazebo` (bool, default: false)  
-&emsp;&emsp; Configure whether to run the program in gazebo mode.  
+&emsp;&emsp; Whether to run the program in gazebo mode.  
 
 `gazebo_robot_name` (string, default: "")  
-&emsp;&emsp; Configure the robot name for joint_state topic name when running in gazebo mode.  
-&emsp;&emsp; ex) If `op3` is the `gazebo_robot_name`, `/op3/joint_states` will be subscribed.
+&emsp;&emsp; Configure the robot name for the joint_state topic when running in gazebo mode.  
+&emsp;&emsp; ex) If `op3` is the `gazebo_robot_name`, `/op3/joint_states` will be the joint state node.
 
 `offset_file_path` (string, default: "")  
 &emsp;&emsp; This path indicates the location of the file that contains offset data of each joint and initial posture data for offset adjustment.
 
 `robot_file_path` (string, default: "")  
-&emsp;&emsp; This path indicates the location of .robot file that contains robot description data.
+&emsp;&emsp; This path indicates the location of the .robot file that contain robot description data.
 
 `init_file_path` (string, default: "")  
-&emsp;&emsp; This path indicates the location of the file that contains initialization information of each joint.
+&emsp;&emsp; This path indicates the location of the file that contains initialization information for each joint.
 
 `device_name` (string, default: "/dev/ttyUSB0")  
-&emsp;&emsp; This port name is used to open the communication port of OpenCR that manages DYNAMIXEL power supply.
+&emsp;&emsp; This port is used to communicate with the OpenCR that manages the DYNAMIXEL power supply.
 
 `baud_rate` (int, default: "2000000")  
-&emsp;&emsp; This baud rate is used to open the communication port of OpenCR that manages DYNAMIXEL power supply.
+&emsp;&emsp; This baud rate is used to communicate with the OpenCR that manages the DYNAMIXEL power supply.
 
 #### Modules  
-This chapter explains various modules in `op3_manager`.  
-Actual control is processed within each modules.  
 
-##### Motion Module
- 1. [op3_action_module] : This manages every joint actions.  
+##### Motion Modules
+ 1. [op3_action_module] : This manages all joint actions.  
  2. [op3_base_module] : This module manages initial posture and basic functions.  
- 3. [op3_head_control_module] : This module controls OP3 head.  
+ 3. [op3_head_control_module] : This module controls the OP3's head.  
  4. [op3_walking_module] : This module controls walking.  
- 5. [op3_direct_control_module] :  This module controls ROBOTIS-OP3 directly.  
+ 5. [op3_direct_control_module] :  This module controls ROBOTIS-OP3 joints directly.  
  6. [op3_tuning_module] : This module is used to tune the gain and offset.  
 
 ##### Sensor Module  
- 1. [open_cr_module] : This module is required to use OpenCR as a sensor.  
+ 1. [open_cr_module] : This module is required to use the OpenCR as a sensor.  
 
 #### Source  
-Structure of `op3_manager`  
- - Initialize with Robot file(`.robot`)and Joint initialize file (`.yaml`).  
+Structure of the `op3_manager`:
+ - Initialize with Robot file (`.robot`)and Joint initialize file (`.yaml`).  
  - Apply offset file(`.yaml`).  
- - Add modules(each module manages calculation for control or sensor related functions).  
+ - Add modules (each module manages calculation for control or sensor related functions).  
  - Initiate timer in the controller.  
  - According to the frequency stated in the `.robot` file, exchange data with DYNAMIXEL and OpenCR.
 
@@ -470,23 +468,22 @@ controller->startTimer();
 ##### Overview  
 `op3_balance_control` is a library for balance control.  
 This library is used to improve walking performance.  
-Currently, this library is not implemented because of sensors (ft & IMU).  
-We will update how to used is library.  
+Currently, this library is not implemented because of sensor requirements (ft & IMU).  
 
 #### [op3_localization](#op3-localization)
 
 ##### Overview  
-`op3_localization` is ros node for localization.  
-This node publish TF data from /world to /body_link.  
+`op3_localization` is a ros node for localization.  
+This node publishes TF data from /world to /body_link.  
 
 ##### ROS API
 
 ###### Subscribed Topics
 `/robotis/pelvis_pose`([geometry_msgs/msg/PoseStamped]{: .popup})  
-&emsp;&emsp; This message will set the body_link pose from /world.  
+&emsp;&emsp; This topic will receive the body_link pose from /world.  
 
 `/robotis/pelvis_pose_reset`([std_msgs/msg/String]{: .popup})  
-&emsp;&emsp; This message will reset the body_link pose to default value.  
+&emsp;&emsp; This topic will reset the body_link pose to default value.  
 
 
 ## [ROBOTIS OP3 msgs](#robotis-op3-msgs)
@@ -536,7 +533,7 @@ Messages and Services used in the [op3_tuning_module]
 #### [op3_offset_tuner_msgs](#op3-offset-tuner-msgs)
 
 ##### Overview
-The following are Messages and Service used for the [op3_offset_tuner_server] and the [op3_offset_tuner_client].  
+The following Messages and Services are used for the [op3_offset_tuner_server] and the [op3_offset_tuner_client].  
 
 ##### ROS Message Type
 * [JointOffsetData.msg]{: .popup}
@@ -552,7 +549,7 @@ The following are Messages and Service used for the [op3_offset_tuner_server] an
 
 #### Overview
 This chapter explain ball detecting package for ROBOTIS OP3's vision demonstration.  
-The package utilizes OpenCV library in order to search for a ball with a specific color.
+The package utilizes the OpenCV library in order to search for a ball with a specific color.
 
 #### Getting started
 
@@ -566,32 +563,32 @@ Execute the program with a `.launch` file in order to load ROS parameters.
   $ ros2 launch op3_ball_detector ball_detector_from_usb_cam.launch.py
   ```
   > Reference : [`usb_cam`]  
-  > Reference : The following software must be pre-installed to use `usb_cam` package.  
+  > Reference : The following software must be pre-installed to use the `usb_cam` package.  
   > `$ sudo apt-get install v4l-utils`
 
 #### ROS API
 
 ##### Subscribed Topics  
 `~/enable`([std_msgs/msg/Bool]{: .popup})  
-&emsp;&emsp; OP3 will start searching for a ball with a `True` message, and stop with a `False` message.  
+&emsp;&emsp; OP3 will start searching for a ball when a `True` message, and stop when a `False` message is published to this topic.
 
 `~/image_in`([sensor_msgs/msg/Image]{: .popup})  
 &emsp;&emsp; The message in this topic contains camera input image for ball searching.  
 
 `~/cameraInfo_in`([sensor_msgs/msg/CameraInfo]{: .popup})  
-&emsp;&emsp; The message in this topic contains camera information of the corresponding input image.  
+&emsp;&emsp; The message in this topic contains camera information for the corresponding input image.  
 
 ##### Published Topics  
 `~/image_out`([sensor_msgs/msg/Image]{: .popup})  
 &emsp;&emsp; The message in this topic contains an output image after the ball searching process.  
 
 `~/camera_info`([sensor_msgs/msg/CameraInfo]{: .popup})  
-&emsp;&emsp; The message in this topic contains camera information of the output image.  
+&emsp;&emsp; The message in this topic contains camera information for the output image.  
 
 `~/circle_set`([ball_detector/circleSetStamped]{: .popup})  
 &emsp;&emsp; Detected ball information  
   - `header`([std_msgs/msg/Header]{: .popup}) : Header information  
-  - `circles`([geometry_msgs/msg/Point]{: .popup}) : Detecetd balls  
+  - `circles`([geometry_msgs/msg/Point]{: .popup}) : Count of detected balls  
     - `x` X coordinate of the center of ball in the image coordinate system  
     - `y` Y coordinate of the center of ball in the image coordinate system  
     - `z` Radius of the detected ball  
@@ -675,9 +672,7 @@ Execute the program with a `.launch` file in order to load ROS parameters.
 ### [op3_demo](#op3-demo)
 
 #### Overview
-Basic demonstrations of OP3 are playing soccer, vision and sequence of various actions.  
-Playing soccer and action sequence are originated from OP2.  
-Face detection and tracking will be demonstrated for vision.  
+The included basic demonstrations for OP3 are playing soccer, vision based face tracking and a sequence of various simple actions.  
 
 #### Getting started
 
@@ -695,49 +690,49 @@ Face detection and tracking will be demonstrated for vision.
   > Reference : [How to execute Default Demo]
 
  - Button Functions  
- From the left, each button is assigned for Mode, Start, User and Reset.  
+ From the left, the buttons are Mode, Start, User and Reset.  
    - Mode button  
-     - short press : In Ready Mode, mode button switches to the next demo(soccer > vision > action)  
-     - long press : While playing a specific demo, press and hold the mode button to return to demo Ready Mode.  
+     - short press : In Ready Mode, mode button switches to the next demo (soccer > vision > action)  
+     - long press : While playing a demo, press and hold the mode button to return to Demo Ready Mode.  
 
    - Start button  
-     - short press : Play selected demo from Ready Mode. If demo is running, start button will pause or resume demo.    
+     - short press : Play selected demo from Ready Mode. If a demo is running, the start button will pause or resume the demo.    
 
-   - User button  
+   - User button
+    - Additional button provided for user defined features, not used by the included demos.
 
    - Reset button  
-     - Reset button will cut off the power to all DYNAMIXEL.  
+     - Pressing the Reset button will cut off the power to all connected DYNAMIXEL actuators in the OP3.  
 
 #### ROS API
- ROS APIs used in each demo will be explained in corresponding wiki pages.  
+ The ROS APIs used in each demo will be explained in their corresponding sections.  
 
 ##### Subscribed Topics
 `/robotis/open_cr/button`([std_msgs/msg/String]{: .popup})  
-&emsp;&emsp; The message in this topic is used to process button control.
+&emsp;&emsp; Messages in this topic are used to process button control.
 
 ##### Published Topics
 `/robotis/base/ini_pose`([std_msgs/msg/String]{: .popup})  
-&emsp;&emsp; The message in this topic is used for initial posture of ROBOTIS-OP3.
+&emsp;&emsp; Messages in this topic are used for the initial posture of ROBOTIS-OP3.
 
 `/robotis/sync_write_item`([std_msgs/msg/String]{: .popup})  
-&emsp;&emsp; This topic has a message to sync write data on ROBOTIS-OP3   
+&emsp;&emsp; Messages to this topic are used to sync write included data to the ROBOTIS-OP3.
 &emsp;&emsp; ex) LED controls
 
 `/play_sound_file`([std_msgs/msg/String]{: .popup})  
-&emsp;&emsp; The message in this topic contains path of the voice file for verbal announcement.
+&emsp;&emsp; Messages to this topic must contain the path a voice file to use for verbal announcement.
 
 #### Demos
-The followings are the list of available demonstration.  
-Buttons on the back of ROBOTIS-OP3 can be used to select and play demo.  
+The following is the list of available demonstrations.  
 
 ##### [Soccer Demo](#soccer-demo)
-OP3 will search for a colored ball selected by the user and play with it.
+OP3 will search for a colored ball and play with it.
 
 ##### [Vision Demo](#vision-demo)
-OP3 will detect face and trace it.
+OP3 will detect faces and follow them.
 
-##### [Action Demo](#action-demo)
-OP3 will play sequence of pre-defined actions while speaking.
+##### [Action Demo](#action
+OP3 will play a sequence of pre-defined actions while speaking.
 
 ## [ROBOTIS OP3 Common](#robotis-op3-common)
 
@@ -752,9 +747,9 @@ ROBOTIS OP3 URDF Model
 [URDF-ROS Wiki]
 
 #### Package
-`doc` : document for ROBOTIS OP3 joint & link information   
+`doc` : documentation for ROBOTIS OP3 joint & link information   
 `launch` : launch file to execute Rviz   
-`stl` : STL files of ROBOTIS OP3's each parts   
+`stl` : STL files of ROBOTIS OP3 parts   
 `src` : ROS node for Rviz to publish imaginary gripper joint   
 `urdf` : urdf & xacro files for Thormang3 model
 
@@ -776,13 +771,12 @@ ROBOTIS OP3 Gazebo Simulation
 ### [op3_action_editor](#op3-action-editor)
 
 #### Overview   
-ROBOTIS-OP3 Action Editor Node   
-This chapter explains how to create and edit action file used in the [op3_action_module] of ROBOTIS-OP3.   
+This section explains how to create and edit action file used in the [op3_action_module] of ROBOTIS-OP3.   
 
 ##### Action File
-The action file contains ROBOTIS-OP3's poses and time data. The current position describes positions of DYNAMIXEL which converted from actual DYNAMIXEL resolution to 4,095 resolution. The action file is written as binary file so users can read its contents with op3_action_editor. ROBOTIS currently provides a default action file with source code. It is located in "op3_action_module/data" directory.  
+An action file contains ROBOTIS-OP3's poses and time data. The action file is written as binary file so users can read its contents with op3_action_editor. ROBOTIS currently provides a default action file with source code. It is located in "op3_action_module/data" directory.  
 
-The action file contains 256 pages. Each page can store up to 7 stages (or steps) of action data. The default action file does not use all pages and user can add own actions by writing them on the empty page.   
+The action file contains 256 pages. Each page can store up to 7 stages (or steps) of action data. The default action file does not use all pages and users can add their own actions by writing them on an empty page.   
 
 #### Getting started
 
@@ -791,8 +785,7 @@ The action file contains 256 pages. Each page can store up to 7 stages (or steps
 
 ##### Run
 Run the executor file.  
-`op3_action_editor` has a direct control over ROBOTIS-OP3, therefore other control programs such as `op3_manager`, `op3_offset_tuner` and `op3_walking_tuner` should not be running.  
-Before running the `op3_action_editor` executor file, other programs should be terminated.  
+`op3_action_editor` has direct control over ROBOTIS-OP3, other control programs such as `op3_manager`, `op3_offset_tuner` and `op3_walking_tuner` should not be running.  
 ```bash
 $ ros2 run op3_action_editor executor.py
 ```
@@ -801,42 +794,41 @@ $ ros2 run op3_action_editor executor.py
 
 ![](/assets/images/platform/op3/thormang3_action_editor_tui.jpg)
 
-**Page number**: Page number is the listed page number. If user wants to create a new action poses, user can use any empty page.  
-**Page title**: ROBOTIS recommends user to use a page title when creating a new action on an empty page.  
-**Current position**: The current position describes position of DYNAMIXEL which converted from actual DYNAMIXEL resolution to 4,095 resolution. This data is represented by STP7 in op3_action_editor. Sometimes the position may be read as ---- in op3_action_editor. This means position of DYNAMIXEL has not been read (or torque is off).
-If user turns DYNAMIXEL off, current position cannot be read until turn it back on.
-User can turn off the torque of specific DYNAMIXEL. This is very convenient when acquiring position values directly from DYNAMIXEL for a new robot posture instead of calculating those values. To do that, turn off the torque of desired DYNAMIXEL, then make a posture and hold the robot joint by hand until turn the torque back on. The robot will be remaining at current posture and user can read position values of corresponding DYNAMIXEL.  
-**Steps or stages**: Each page can store up to 7 steps, from STP0 to STP6. However, some actions may be required more than 7 stages to perform completely. This can be resolved by simply using multiple pages and link them with
-**Next**: Next indicates whether to continue action on a different page. To continue actions, just list the page number where the action is to be continued. Number 0 indicates that action does not continue onto another page (default value). Linking page does not have to have the numerical order.  
-**Play Count**: Play Count is the number of times the action of the page is to be played.  
-**Exit**: There might be some cases when an action has to be stopped. In these cases, the robot may be in unstable position. Exit is much like "Next", so "Exit" should be linked to a page where ROBOTIS-OP3 can return to a stable pose. If "Exit" is 0, it means that there is no linked exit page (default value).  
-Tip: When calling an action requires multiple pages, ROBOTIS strongly suggests user to call the action from the starting page. For example, clap starts at page 7 and ends at page 8. This means you should call page 7 when calling clap. Calling the page 8 may cause unexpected behavior of the robot.  
-**STP7**: "STP7" column is the current position of DYNAMIXEL which converted to 4,095 resolution from its original resolution. "----" means that torque has been released.  
-**PauseTime**: "PauseTime" is the pause duration period for motion playback for step STP[x].  
-**Time(x 8msec)** : "Time" is the time period for ROBOTIS-OP3 to complete step STP[x]. Each time unit account for 8ms of time.  
+**Page number**: Page number is the listed page number for the current action. If the user wants to create a new action pose, they can use any empty page.  
+**Page title**: ROBOTIS recommends adding a page title when creating a new action on an empty page.  
+**Current position**: The current position describes the position of the DYNAMIXEL servos in the OP3. This data is represented by STP7 in op3_action_editor. Sometimes the position may be displayed as ---- in op3_action_editor. This means the position of the DYNAMIXEL has not been read (or torque is off).
+If user turns a DYNAMIXEL off, current position cannot be read until turn it back on.
+User can turn off the torque to specific DYNAMIXELs. This is very convenient when acquiring position values directly from DYNAMIXELs for a new robot posture instead of calculating those values. To do that, turn off the torque of desired DYNAMIXEL, then move the robot to the desired posture by hand until and turn the torque back on. The robot will remain at the current posture and the user can read position values from the corresponding DYNAMIXEL.  
+**Steps or stages**: Each page can store up to 7 steps, from STP0 to STP6. However, some actions may require more than 7 stages to perform completely. This can be resolved by simply using multiple pages and linking them with **Next**: Next indicates whether to continue an action on a different page. To continue actions, just list the page number where the action is to be continued. Number 0 indicates that action does not continue onto another page (default value). Linked page do not have to be in numerical order.  
+**Play Count**: Play Count is the number of times the action on the page is to be played. 
+**Exit**: There might be some cases when an action has to be stopped. In these cases, the robot may be in an unstable position. Exit is much like "Next", but is used to define an action to help the OP3 return to a stable pose if an action is exited during execution. If "Exit" is 0, it means that there are no linked exit page (default value).  
+Tip: When calling an action requires multiple pages, ROBOTIS strongly suggests the user to call the action from the starting page. For example, clap starts at page 7 and ends at page 8. This means you should call page 7 when calling clap. Calling the page 8 may cause unexpected behavior from the robot.  
+**STP7**: "STP7" column is the current position of connected DYNAMIXELs. "----" means that torque has been disabled or the servo is not connected.  
+**PauseTime**: "PauseTime" is the pause duration period for motion playback for the step STP[x].  
+**Time(x 8msec)** : "Time" is the time period for ROBOTIS-OP3 to complete the step STP[x]. Each time unit is 8ms of real time.  
 
-It is strongly advised that when user tests user's own newly-created or edited actions, there should be small incremental changes in position, speed/time, and pause values for the sake of ROBOTIS-OP3's stability.  
+It is strongly advised that when testing newly-created or edited actions, there should be small incremental changes in position, speed/time, and pause values for the sake of ROBOTIS-OP3's stability.  
 
 ##### The Contents of The Default Action File
 The below table shows the contents of the default action file.  
 
-| page number | page title | brief description of page                             | number of pages |
-|:------------|:-----------|:------------------------------------------------------|:----------------|
-| 1           | walki_init | initial standing pose                                 | 1               |
-| 2           | hello      | greeting                                              | 1               |
-| 3           | thank_you  | Thank you                                             | 1               |
-| 4           | yes        | yes                                                   | 1               |
-| 5           | no         | no                                                    | 1               |
-| 6           | fighting   | fighting                                              | 1               |
-| 7           | clap       | clap                                                  | 2               |
-| 9           | S_H_RE     | ready for shaking hands                               | 1               |
-| 10          | S_H        | shaking hands                                         | 1               |
-| 11          | S_H_END    | move to initialpose fram ready pose for shaking hands | 1               |
-| 12          | scanning   | looking around                                        | 1               |
-| 13          | ceremony   | ceremony                                              | 1               |
+| page number | page title | brief description of page                              | number of pages |
+|:------------|:-----------|:-------------------------------------------------------|:----------------|
+| 1           | walki_init | Initial standing pose                                  | 1               |
+| 2           | hello      | Greeting                                               | 1               |
+| 3           | thank_you  | Thank you                                              | 1               |
+| 4           | yes        | Yes                                                    | 1               |
+| 5           | no         | No                                                     | 1               |
+| 6           | fighting   | Fighting                                               | 1               |
+| 7           | clap       | Clap                                                   | 2               |
+| 9           | S_H_RE     | Ready for shaking hands                                | 1               |
+| 10          | S_H        | Shaking hands                                          | 1               |
+| 11          | S_H_END    | Move to initial pose from ready pose for shaking hands | 1               |
+| 12          | scanning   | looking around                                         | 1               |
+| 13          | ceremony   | ceremony                                               | 1               |
 
 ##### Basic Command of Action Editor
-After typing "help", the commend list will appear as shown below.  
+The following command list can also be seen inside the action editor by typing 'help'
 
 ![](/assets/images/platform/op3/thormang3_action_editor_tui_command_list.jpg)
 
@@ -844,19 +836,19 @@ After typing "help", the commend list will appear as shown below.
 **re**: refreshes the screen.  
 **b**: moves to the previous page.  
 **n**: moves to the next page.  
-**page [index]**: moves to the [index] page. For example typing page 5 outputs data from page 5 on screen.  
+**page [index]**: moves to the [index] page. Typing page 5 outputs data from page 5 on screen.  
 **list**: outputs a list of pages.  
 **new**: initializes current page by clearing all actuator position data.  
 **copy [index]**: copies data from page [index] to current page. For example if you are on page 5 and want to copy page 9 then type copy 9.  
-**set [value]**: sets position value on chosen actuator. For example If you want ID19 (head pan) to have a value of 512 then using the keyboard's directional keys place the cursor on ID19 and type set 512.  
-**save**: saves any changes you've made. the saved motion file (motion_4096.bin can be found at "op3_action_module/data")  
+**set [value]**: sets position value on the chosen actuator. For example If you want ID19 (head pan) to have a value of 512 then using the keyboard's directional keys place the cursor on ID19 and type set 512.  
+**save**: saves any changes you've made. The saved motion file motion_4096.bin can be found at "op3_action_module/data"
 **play**: plays motion(s) of current page.  
 **name**: changes the name of the current page. You can view the name of the page at the top right portion of the screen. For example, page 2 is titled hello; to change the name type name and press the "ENTER" key. "name:" will appear at the bottom of the screen. Input the desired name for the page, good for instance, and press the "ENTER" key again.  
 **i**: inserts data from STP7 to STP0. Moves data from STP[x] to STP[x + 1] if any.  
 **i [index]**: inserts data from STP7 to STP[index]. Moves data from STP[index] to STP[index + 1] if any.  
 **m [index] [index2]**: moves data from [index2] to [index].  
 **d [index]**: deletes data from STP[index]. Moves data from STP[index] to STP[index - 1].  
-**on/off**: turns on/off torque from all DYNAMIXEL.  
+**on/off**: turns on/off torque for all connected DYNAMIXELs.  
 **on/off [index1] [index2] [index3]** : turns torque on/off from ID[index1] ID[index2] ID[index3]. For example off 20 releases torque from ID20. Notice that STP7 for ID20 will read [----]. Typing on 20 turns torque from ID20 on again and the screen outputs the current position data of ID20.  
 
 ##### Example Action editing with op3_action_editor
@@ -869,7 +861,7 @@ After typing "help", the commend list will appear as shown below.
 
     ![](/assets/images/platform/op3/thormang3_action_editor_tui_action_editing_example2.jpg)
 
-4. And copy the page 1 to page [x].  
+4. Copy page 1 to page [x].  
 
     ![](/assets/images/platform/op3/thormang3_action_editor_tui_action_editing_example3.jpg)
 
@@ -878,7 +870,7 @@ After typing "help", the commend list will appear as shown below.
 
     ![](/assets/images/platform/op3/thormang3_action_editor_tui_action_editing_example4.jpg)
 
-7. After getting the desired pose turn torque on again by simple typing on. And insert the pose to step 1 by typing "i 1"  
+7. After getting the desired pose turn torque on again by typing on, insert the pose to step 1 by typing "i 1"  
 
     ![](/assets/images/platform/op3/thormang3_action_editor_tui_action_editing_example5.jpg)
 
@@ -891,8 +883,8 @@ After typing "help", the commend list will appear as shown below.
 ### [op3_gui_demo](#op3-gui-demo)
 
 #### Overview   
-`op3_gui_demo` is a GUI software to control ROBOTIS-OP3.  
-Within this program, user can perform module settings, walking tuner, head joint control and play actions.  
+`op3_gui_demo` is a GUI application to control ROBOTIS-OP3.  
+Within this program, the user can adjust module settings, walking tuner, head joint control and play actions.  
 
 ![](/assets/images/platform/op3/op3_gui_diagram.png)
 
@@ -918,17 +910,17 @@ $ ros2 launch op3_gui_demo op3_demo.launch.py
 
 ##### Subscribed Topics
 `/robotis/status`([std_msgs/msg/String]{: .popup})  
-&emsp;&emsp; This message describes status of ROBOTIS-OP3.
+&emsp;&emsp; This message describes the current status of the ROBOTIS-OP3.
 
 `/robotis/present_joint_ctrl_modules`([robotis_controller_msgs/msg/JointCtrlModule]{: .popup})  
-&emsp;&emsp; This message reports which module is currently in use for ROBOTIS-OP3.
+&emsp;&emsp; This message reports which module is currently in use on the ROBOTIS-OP3.
 
 `/robotis/head_control/present_joint_states`([sensor_msgs/msg/JointState]{: .popup})  
 &emsp;&emsp; This message reports present angles for each joint.  
 
 ##### Published Topics
 `/robotis/base/ini_pose`([std_msgs/msg/String]{: .popup})  
-&emsp;&emsp; This message will have ROBOTIS-OP3 to take the initial posture.
+&emsp;&emsp; This message will instruct the ROBOTIS-OP3 to move to the initial posture.
 
 `/robotis/enable_ctrl_module`([std_msgs/msg/String]{: .popup})  
 &emsp;&emsp; This message notifies framework to activate a specific module for ROBOTIS-OP3.  
@@ -954,7 +946,7 @@ $ ros2 launch op3_gui_demo op3_demo.launch.py
 
 ##### Services
 `/robotis/get_present_joint_ctrl_modules`([robotis_controller_msgs/msg/GetJointModule]{: .popup})  
-&emsp;&emsp; This service acquires which module is currently in use for ROBOTIS-OP3.  
+&emsp;&emsp; This service acquires which module is currently in use on the ROBOTIS-OP3.  
 
 `/robotis/walking/get_params`([op3_walking_module_msgs/msg/GetWalkingParam]{: .popup})  
 &emsp;&emsp; This service acquires walking parameters.  
@@ -966,7 +958,7 @@ $ ros2 launch op3_gui_demo op3_demo.launch.py
 ### [op3_tuner_client](#op3-tuner-client)
 
 #### Overview
-The GUI Node that can adjust offset and gain of ROBOTIS-OP3.  
+A GUI Node that can adjust the offset and gain of the ROBOTIS-OP3.  
 It is used with the [op3_manager].  
 
 #### Getting started
@@ -986,19 +978,19 @@ $ ros2 launch op3_tuner_client op3_tuner_client.launch.xml
 
 ##### Published Topics
 `/robotis/tuning_module/tuning_pose`([std_msgs/msg/String]{: .popup})  
-&emsp;&emsp; Message that is used to change the posture for tuning a gain  
+&emsp;&emsp; Message that is used to change the posture for gain tuning
 
 `/robotis/tuning_module/joint_offset_data`([op3_tuning_module_msgs/msg/JointOffsetData]{: .popup})  
-&emsp;&emsp; Message used to change the offset  
+&emsp;&emsp; Message used to change the joint offset  
 
 `/robotis/tuning_module/joint_gain_data`([op3_tuning_module_msgs/msg/JointOffsetData]{: .popup})  
-&emsp;&emsp; Message used to change the gain  
+&emsp;&emsp; Message used to change the joint gain  
 
 `/robotis/tuning_module/torque_enable`([op3_tuning_module_msgs/msg/JointTorqueOnOffArray]{: .popup})  
-&emsp;&emsp; Message used to en/disable the torque of joints  
+&emsp;&emsp; Message used to enable/disable the torque of joints  
 
 `/robotis/tuning_module/command`([std_msgs/msg/String]{: .popup})  
-&emsp;&emsp; Message for command(ex. save gain, save offset)   
+&emsp;&emsp; Message to execute commands (ex. save gain, save offset)   
 
 ##### Services
 `/robotis/tuning_module/get_present_joint_offset_data`([op3_tuning_module_msgs/msg/GetPresentJointOffsetData]{: .popup})  
@@ -1018,8 +1010,7 @@ It is used with the [op3_offset_tuner_client].
 
 ##### Run
 Execute the launch file to start offset tuner server.  
-`op3_offset_tuner_server` has a direct control over ROBOTIS-OP3, therefore other control programs such as `op3_manager`, `op3_action_editor` and `op3_walking_tuner` should not be running.
-Before executing the `op3_offset_tuner_server` launch file, other programs should be terminated.    
+`op3_offset_tuner_server` has direct control over ROBOTIS-OP3, other control programs such as `op3_manager`, `op3_action_editor` and `op3_walking_tuner` should not be running.
 ```bash
 $ ros2 launch op3_offset_tuner_server op3_offset_tuner_server.launch.xml
 ```
@@ -1031,13 +1022,13 @@ $ ros2 launch op3_offset_tuner_server op3_offset_tuner_server.launch.xml
 
 ##### Subscribed Topics
 * `/robotis/base/send_tra`([std_msgs/msg/String]{: .popup})  
-&emsp;&emsp; The topic informs the start and end of trajectory following.  
+&emsp;&emsp; The topic for specifying the start and end of trajectory following.  
 
 * `/robotis/offset_tuner/joint_offset_data`([op3_offset_tuner_msgs/msg/JointOffsetData]{: .popup})  
-&emsp;&emsp; The topic updates joint offset related parameters.  
+&emsp;&emsp; The topic for updating joint offset related parameters.  
 
 * `/robotis/offset_tuner/torque_enable`([op3_offset_tuner_msgs/msg/JointTorqueOnOffArray]{: .popup})  
-&emsp;&emsp; The topic transfers Torque enable/disable command for joints.
+&emsp;&emsp; The topic for updating Torque enable/disable command for joints.
 
 * `/robotis/offset_tuner/command`([std_msgs/msg/String]{: .popup})  
 &emsp;&emsp; The topic transfers command to the [op3_offset_tuner_client].  
@@ -1061,7 +1052,7 @@ $ ros2 launch op3_offset_tuner_server op3_offset_tuner_server.launch.xml
 ### [op3_offset_tuner_client](#op3-offset-tuner-client)
 
 #### Overview
-The GUI Node that can adjust offset of ROBOTIS-OP3.  
+The GUI Node that can adjust offset values for ROBOTIS-OP3.  
 It is used with the [op3_offset_tuner_server].  
 
 #### Getting started
@@ -1081,17 +1072,17 @@ $ rosrun op3_offset_tuner_client op3_offset_tuner_client
 
 ##### Published Topics
 `/robotis/offset_tuner/joint_offset_data`([op3_offset_tuner_msgs/msg/JointOffsetData]{: .popup})            
-&emsp;&emsp; The topic transfers Joint offset   
+&emsp;&emsp; The topic specifies Joint offset data   
 
 `/robotis/offset_tuner/torque_enable`([op3_offset_tuner_msgs/msg/JointTorqueOnOffArray]{: .popup})    
-&emsp;&emsp; The topic executes Torque on/off command   
+&emsp;&emsp; The topic executes the Torque on/off command for each DYNAMIXEL
 
 `/robotis/offset_tuner/command`([std_msgs/msg/String]{: .popup})    
-&emsp;&emsp; The topic transfers other commands(save, initial posture, etc).   
+&emsp;&emsp; The topic executes other utility commands (save, initial posture, etc).   
 
 ##### Services
 `/robotis/offset_tuner/get_present_joint_offset_data`([op3_offset_tuner_msgs/msg/GetPresentJointOffsetData]{: .popup})  
-&emsp;&emsp; The service obtains saved joint offset
+&emsp;&emsp; The service obtains saved joint offset values
 
 
 [std_msgs/msg/Int32]: /docs/en/popup/op3_ros2/std_msgs_int32_message

@@ -27,8 +27,7 @@ page_number: 3
 ## [How to Connect](#how-to-connect)
 
 ### Direct Connection  
-Keyboard and monitor are directly connected to ROBOTIS-OP3.  
-
+Directly connect a keyboard and monitor to the ROBOTIS-OP3's main controller.
 
 ### Remote Connection
 
@@ -38,21 +37,20 @@ Keyboard and monitor are directly connected to ROBOTIS-OP3.
 
 
 #### Connection Type  
- - Via Wireless(WLAN)  
-An IP address will be automatically assigned when connecting to ROBOTIS-OP3-Share.  
- After establishing Wi-Fi connection, use one of the connection methods described in the next section.
- (_password : 111111_)  
+ - Wireless Network (WLAN)  
+ Connect to the ROBOTIS-OP3-Share network broadcast by the OP3 when powered on. After establishing a Wi-Fi connection, use one of the connection methods described in the next section to control the robot.
+ (_Default Network Password : 111111_)  
 
- - Via Wired(Ethernet)   
- When using wired connection, connect ROBOTIS OP3 to the same Router as your control PC so the OP3 can be connected as a DHCP client.  
+ - Wired Network (Ethernet)   
+ To use a wired connection, connect the ROBOTIS OP3 to the same Router as your remote PC so the OP3 can connect as a DHCP client.  
 
-#### How to connect
+#### How to Connect
  - **SSH**
     1. Execute SSH client program (ex: PuTTY)
-    2. Input ROBOTIS-OP3’s IP address : 10.42.0.1
-    3. Select SSH as a connection type and then open it.
-    4. Input ROBOTIS-OP3’s user name : robotis
-    5. Input ROBOTIS-OP3’s password : 111111  
+    2. Input the ROBOTIS-OP3’s IP address : 10.42.0.1
+    3. Select SSH as a connection type and then initiate the connection.
+    4. Input ROBOTIS-OP3’s user name (Default: robotis)
+    5. Input ROBOTIS-OP3’s password (Default: 111111)
    ![](/assets/images/platform/op3/op3_connection_ssh2.png)
 
  - **VNC**  
@@ -63,14 +61,14 @@ An IP address will be automatically assigned when connecting to ROBOTIS-OP3-Shar
     1. Execute VNC client program (ex: Ultra VNC Viewer)
     2. Input ROBOTIS-OP3’s IP address : 10.42.0.1
     3. Input ROBOTIS-OP3’s password : 111111
-    4. Accessing ROBOTIS-OP3 via remote desktop may result in slower performance.
+    4. Accessing the ROBOTIS-OP3 via remote desktop may result in slower performance.
 
     ![](/assets/images/platform/op3/op3_025_rev3.png)
     
 ## [How to stop the demo program](#how-to-stop-the-demo-program)
 
 ### Stop the demo program
-In order to terminate the automatically executed demo program, enter the command below in the terminal window.  
+In order to terminate the demo program, enter the command below in a terminal window.  
 ```bash
 $ sudo systemctl stop op3_demo.service
 ```
@@ -79,7 +77,7 @@ $ sudo systemctl stop op3_demo.service
 This chapter explains how to set up the system to automatically run a demo at startup.  
 
 #### Automatically run the demo program at startup  
-1. Create the systemd service file  
+1. Create a systemd service file  
    Create a new systemd service file at `/etc/systemd/system/op3_demo.service` using a text editor:  
    ```bash
    $ sudo nano /etc/systemd/system/op3_demo.service
@@ -109,7 +107,7 @@ This chapter explains how to set up the system to automatically run a demo at st
    ```
    Save and exit (`Ctrl + X`, then `Y` and `Enter`).
 
-2. Reload systemd daemon  
+2. Reload the systemd daemon  
    After creating the service file, reload the systemd daemon to recognize the new service:
     ```bash
     $ sudo systemctl daemon-reload
@@ -146,12 +144,12 @@ This chapter explains how to set up the system to automatically run a demo at st
 
 ### When to restart the demo
 - When camera has lost its connection due to electrical or mechanical issues.  
-- When USB2DYNAMIXEL has lost its connection due to electrical or mechanical issues.  
-- When resetting DYNAMIXEL with the Reset button due to DYNAMIXEL error.  
+- When the U2D2 has lost its connection due to electrical or mechanical issues.  
+- When resetting connected DYNAMIXELs with the Reset button due to a DYNAMIXEL error.  
 
 
 ### How to restart the demo  
-In order to restart autorun demo, execute following command in the terminal window.  
+In order to restart the demo, execute the following command in a terminal window.  
 _(password : 111111)_  
 
 ```bash
