@@ -1,21 +1,6 @@
 
 ### **What is Panorama?**  
-This example allows the TurtleBot3 to rotate in place while capturing images and stitching them into a panoramic image using OpenCV’s Stitcher module.  
-
-The application supports *three* capture modes:  
-
-- **SNAP_AND_ROTATE**: The robot stops to take a snapshot, then rotates to the next angle.  
-- **CONTINUOUS**: The robot keeps rotating while taking snapshots. (slower, for smoother capture)   
-- **STOP**: Stops an ongoing panorama creation.  
-
-The final stitched panorama is published as a ROS topic and saved as a JPEG file locally.  
-
-{% capture notice_04 %}
-**NOTE**:
-- A working camera is required to run this example. Depending on your system setup, you can use a Raspberry Pi Camera with a compatible driver such as `camera-ros` or `v4l2-camera`.  
-
-{% endcapture %}
-<div class="notice--info">{{ notice_04 | markdownify }}</div>
+This example allows the TurtleBot3 to rotate in place while capturing images and combining them into a panoramic image using OpenCV’s Stitcher module. The process is initiated via a ROS service call, and depending on the selected mode, the robot either pauses to take snapshots or rotates continuously. The final stitched panorama is published as a ROS topic and saved as a JPEG file locally.  
 
 ### **Installation**
 Before running the panorama example, make sure to clone and build the required packages.
@@ -51,13 +36,22 @@ $ ssh ubuntu@{IP_ADDRESS_OF_RASPBERRY_PI}
 ```
 Depending on your setup, use one of the following:  
 **[TurtleBot3 SBC]**  
+
+{% capture notice_04 %}
+**NOTE**:
+- A working camera is required to run this example. Depending on your system setup, you can use a Raspberry Pi Camera with a compatible driver such as `camera-ros` or `v4l2-camera`. Please refer to [SBC Setup](/docs/en/platform/turtlebot3/sbc_setup/#rpi-camera) to use the Pi Camera.    
+
+{% endcapture %}
+<div class="notice--info">{{ notice_04 | markdownify }}</div>
+
 - For `camera-ros`  
 ```bash
 $ ros2 run camera_ros camera_node --ros-args -p format:='RGB888' -p width:=640 -p height:=480
 ```
 - For `v4l2-camera`  
+Adding `__ns:=/camera` organizes all topics published by the node under the `/camera` namespace.   
 ```bash
-$ ros2 run v4l2_camera v4l2_camera_node --ros-args -p image_size:=[640,480] -p camera_info_url:="file:///home/ubuntu/calibration.yaml" -p output_encoding:="yuv422_yuy2"
+$ ros2 run v4l2_camera v4l2_camera_node --ros-args -p image_size:=[640,480] -p camera_info_url:="file:///home/ubuntu/calibration.yaml" -p output_encoding:="yuv422_yuy2"  --ros-args __ns:=/camera
 ```
 
 **Step 3:  Launch the panorama application**  
@@ -67,18 +61,20 @@ $ ros2 launch turtlebot3_panorama turtlebot3_panorama.launch.py
 ```
 
 **Step 4: Start panorama capture**  
+The application supports *three* capture modes:  
+
 **[Remote PC]**  
-- SNAP_AND_ROTATE mode  
+- **SNAP_AND_ROTATE**: The robot rotates by a fixed angle, stops completely, and then takes a snapshot. This process repeats until a full sweep(180°) is completed. It ensures more stable images by avoiding motion blur and is suitable for environments where sharpness and stitching accuracy are important.  
 ```bash
 $ ros2 service call /take_pano turtlebot3_applications_msgs/srv/TakePanorama "{mode: 0}"
 ```
 
-- CONTINUOUS mode
+- **CONTINUOUS**: The robot rotates continuously while taking snapshots. This mode captures the scene more quickly and smoothly, but may result in slightly less precise stitching due to motion blur or misalignment.   
 ```bash
 $ ros2 service call /take_pano turtlebot3_applications_msgs/srv/TakePanorama "{mode: 1}"
 ```
 
-- STOP mode  
+- **STOP**: Stops an ongoing panorama creation process that was started using either the SNAP_AND_ROTATE or CONTINUOUS mode. This command can be used at any time to immediately halt rotation and discard the images collected so far.  
 ```bash
 $ ros2 service call /take_pano turtlebot3_applications_msgs/srv/TakePanorama "{mode: 2}"
 ```
