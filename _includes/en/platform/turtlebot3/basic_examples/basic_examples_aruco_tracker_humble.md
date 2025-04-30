@@ -6,41 +6,44 @@ If you want more information, check out the [OpenCV Docs](https://docs.opencv.or
 {: .notice}
 <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/6ZyaFREFhnk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
-1. **Bringup TurtleBot3**
-    1. Connect to the Raspberry Pi.  
-    **[Remote PC]**  
-    ```bash
-    $ ssh ubuntu@{IP_ADDRESS_OF_RASPBERRY_PI}
-    ```
+1. **Installation**  
+Before running the example, make sure the required packages is installed.  
+  ```bash
+  $ cd ~/turtlebot3_ws/src/
+  $ git clone -b humble https://github.com/ROBOTIS-GIT/turtlebot3_applications.git
+  $ git clone -b humble https://github.com/ROBOTIS-GIT/turtlebot3_applications_msgs.git
+  $ cd ~/turtlebot3_ws/
+  $ colcon build --symlink-install
+  $ source ~/.bashrc
+  ```  
+<br>
 
-    2. Bring up basic packages to start essential TurtleBot3 applications. You will need to specify your specific TurtleBot3 model.  
-    **[TurtleBot3 SBC]**  
-    ```bash
-    $ export TURTLEBOT3_MODEL=burger
-    $ ros2 launch turtlebot3_bringup robot.launch.py
-    ```
-    Wait until the bringup process finishes and the TurtleBot3 is ready before proceeding.  
+2. **Bringup TurtleBot3**  
+Bring up basic packages to start essential TurtleBot3 applications. You will need to specify your specific TurtleBot3 model.  
+**[TurtleBot3 SBC]**  
+  ```bash
+  $ export TURTLEBOT3_MODEL=burger
+  $ ros2 launch turtlebot3_bringup robot.launch.py
+  ```
+<br>
 
-2. **Start the Camear node**  
-    1. Connect to the Raspberry Pi.  
-    **[Remote PC]**  
-    ```bash
-    $ ssh ubuntu@{IP_ADDRESS_OF_RASPBERRY_PI}
-    ```
-    2. Run camera_node..  
-    **[TurtleBot3 SBC]**  
-    ```bash
-    $ ros2 run camera_ros camera_node --ros-args -p format:='RGB888' -p width:=320 -p height:=240
-    ```
+3. **Start the Camear node**  
+Run camera_node.  
+  **[TurtleBot3 SBC]**  
+  ```bash
+  $ ros2 run camera_ros camera_node --ros-args -p format:='RGB888' -p width:=320 -p height:=240
+  ```
+<br>
 
-3. **Visualizing TurtleBot3 and TF of ArUco markers in RViz**  
+4. **Visualizing TurtleBot3 and TF of ArUco markers in RViz**  
 Launch the RViz to view the TurtleBot3’s movements and visualize TF.  
 **[Remote PC]**
   ```bash
   $ ros2 launch turtlebot3_bringup rviz2.launch.py
   ```
+<br>
 
-1. **Tracking ArUco markers**  
+5. **Tracking ArUco markers**  
 Launch a node that tracks ArUco markers  
 **[Remote PC]**
   ```bash
