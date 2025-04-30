@@ -49,9 +49,9 @@ Depending on your setup, use one of the following:
 $ ros2 run camera_ros camera_node --ros-args -p format:='RGB888' -p width:=640 -p height:=480
 ```
 - For `v4l2-camera`  
-Adding `__ns:=/camera` organizes all topics published by the node under the `/camera` namespace.   
+Adding `-r __ns:=/camera` organizes all topics published by the node under the `/camera` namespace.   
 ```bash
-$ ros2 run v4l2_camera v4l2_camera_node --ros-args -p image_size:=[640,480] -p camera_info_url:="file:///home/ubuntu/calibration.yaml" -p output_encoding:="yuv422_yuy2"  --ros-args -r __ns:=/camera
+$ ros2 run v4l2_camera v4l2_camera_node --ros-args -p image_size:=[640,480] -p camera_info_url:="file:///home/ubuntu/calibration.yaml" -p output_encoding:="yuv422_yuy2" -r __ns:=/camera
 ```
 
 **Step 3:  Launch the panorama application**  
