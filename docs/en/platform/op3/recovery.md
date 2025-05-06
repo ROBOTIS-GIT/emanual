@@ -26,7 +26,7 @@ page_number: 8
 ## [OP3 Manual Installation](#op3-manual-installation)
 
 ### Overview
-This chapter explains how to install software and configure ROBOTIS OP3.
+This chapter explains how to manually install and configure the main software of the ROBOTIS-OP3.
 
 ### User Installation  
 
@@ -35,7 +35,7 @@ This chapter explains how to install software and configure ROBOTIS OP3.
  - Linux Mint 22 Xfce
   > Reference : [How to Install Linux Mint]
 
-#### PC Setting
+#### PC Setup
 - WiFi Hotspot
  1. Right-click on the Network icon in the system tray at the bottom right corner of your screen and select `Edit Connections...`.
  2. In the `Network Connections` window, click Add(+) button.
@@ -46,7 +46,7 @@ This chapter explains how to install software and configure ROBOTIS OP3.
  7. Select `Hotspot` Mode and click `Save` button.
  8. Close the `Network Connections` window.
  9. Click the Network icon from the bottom right corner of the system tray and select `Connect to Hidden Wi-Fi Network...`.
- 10. Select `OP3-Hotspot` for the `Connection` in the `Hidden Wi-Fi network` and click `Connect` button.
+ 10. Select `OP3-Hotspot` for the `Connection` in the `Hidden Wi-Fi network` and click the `Connect` button.
 
 
 - Other Settings
@@ -58,7 +58,7 @@ This chapter explains how to install software and configure ROBOTIS OP3.
         ```sh
         $ sudo usermod -aG dialout,video,audio robotis
         ```
-    3. Configure USB latency tmer to 1ms at startup  
+    3. Configure USB latency timer to 1ms at startup  
         - create a udev rules file  
             ```sh
             $ sudo nano /etc/udev/rules.d/50-latency-timer.rules
@@ -148,7 +148,7 @@ This chapter explains how to install software and configure ROBOTIS OP3.
      ```sh
      $ sudo apt install ros-jazzy-rmw-cyclonedds-cpp
      ```
-   - Append the following in your `~/.bashrc` file:
+   - Append the following to your `~/.bashrc` file:
      ```bash
      export ROS2_WS='robotis_ws'
      source /opt/ros/jazzy/setup.bash
@@ -159,7 +159,7 @@ This chapter explains how to install software and configure ROBOTIS OP3.
      export CYCLONEDDS_URI=file:///home/robotis/.ros/cyclonedds.xml
      ```
  - Tuning for large messages  
-   All DDS implementations are not designed to handle large messages (such as images). Therefore, it is necessary to tune them and the network parameters to prevent data loss and system overloading.  
+   DDS implementations are not designed to handle large messages (such as images). Therefore, it is necessary to tune them and the network parameters to prevent data loss and system overloading.  
      
    - Increase the minimum socket receive buffer and maximum size of messages for CycloneDDS  
      Create the CycloneDDS configuration file:
@@ -217,16 +217,16 @@ This chapter explains how to install software and configure ROBOTIS OP3.
 
  - ROBOTIS ROS Packages
    -  [DYNAMIXEL SDK] : SDK for DYNAMIXEL  
-   -  [ROBOTIS-Framerowk] : The package to use ROS (Robot Operating System) for robots assembled with ROBOTIS products.  
-   -  [ROBOTIS-Framerowk-msgs] : Messages used in the ROBOTIS-Framework  
+   -  [ROBOTIS-Framework] : The ROS (Robot Operating System) package for robots assembled with ROBOTIS products.  
+   -  [ROBOTIS-Framework-msgs] : Messages used in the ROBOTIS-Framework  
    -  [ROBOTIS-Math] : basic calculation related to transformation and trajectory functions  
-   -  [ROBOTIS-OP3] : ROS packages running in the ROBOTIS-OP3  
+   -  [ROBOTIS-OP3] : ROS packages running on the ROBOTIS-OP3  
    -  [ROBOTIS-OP3-Common]
-   -  [ROBOTIS-OP3-Demo] : ROBOTIS-OP3 uses this package when running a demonstration
-   -  ROBOTIS-OP3-ETC : : This package contains modified version of the usb_cam driver and face_detection used in ROBOTIS-OP3
-   -  [ROBOTIS-OP3-msgs] : This package contains ROS messages that are used for ROBOTIS-OP3
-   -  [ROBOTIS-OP3-Tools] : This package contains useful tools for ROBOTIS-OP3
-   -  ROBOTIS-Utility : This package contains sound player for ROBOTIS-OP3  
+   -  [ROBOTIS-OP3-Demo] : ROBOTIS-OP3 demonstration package.
+   -  ROBOTIS-OP3-ETC : : This package contains a modified version of the usb_cam driver and face_detection used for the ROBOTIS-OP3
+   -  [ROBOTIS-OP3-msgs] : This package contains the ROS messages that are used for the ROBOTIS-OP3
+   -  [ROBOTIS-OP3-Tools] : This package contains useful tools for the ROBOTIS-OP3
+   -  ROBOTIS-Utility : This package contains the audio player for the ROBOTIS-OP3  
 
  - How to install ROBOTIS ROS packages
    - Download sources from Github.  
@@ -296,7 +296,7 @@ $ colcon build --symlink-install && source ~/.bashrc
     2. Check the default page from a web browser  
         - http://10.42.0.1  
         ![](/assets/images/platform/op3/op3_web_setting_01.png)
-    3. [How to use Web Setting Tool]  
+    3. [How to Use the Web Setting Tool]  
 
 - Configure Shutdown Sound  
     1. Create `/etc/init.d/shutdown-snd` file.   
@@ -304,7 +304,7 @@ $ colcon build --symlink-install && source ~/.bashrc
         ```sh
         $ sudo xed /etc/init.d/shutdown-snd
         ```
-    2. Append below information to the file and save.  
+    2. Append the following information to the file and save.  
         ```sh
         #! /bin/sh
         /usr/bin/madplay "/usr/share/sounds/byebye.mp3"
@@ -318,12 +318,11 @@ $ colcon build --symlink-install && source ~/.bashrc
        $ sudo cp ~/robotis_ws/src/ROBOTIS-OP3-Demo/op3_demo/data/mp3/Bye\ bye.mp3 /usr/share/sounds/byebye.mp3
        ```
     5. Create a service for the shutdown sound.
-        1. Create `/etc/systemd/system/shutdown_sound.service` file  
-            Create the above file with a text editor.    
+        1. Create the `/etc/systemd/system/shutdown_sound.service` file  
             ```sh
             $ sudo xed /etc/systemd/system/shutdown_sound.service
             ```
-        2. Append below information to the file and save.  
+        2. Append the below information to the file and save.  
             ```conf
             [Unit]
             Description=shutdown sound
@@ -354,16 +353,16 @@ $ colcon build --symlink-install && source ~/.bashrc
 ## [Recovery of ROBOTIS-OP3](#recovery-of-robotis-op3)
 
 ### Overview
-This chapter explains how to recover ROBOTIS-OP3 softwares using recovery USB image.
+This chapter explains how to recover the ROBOTIS-OP3 software using the recovery USB image.
 
 ### CloneZilla recovery  
-Clonezilla is used to recover ROBOTIS-OP3 with the image file in the provided USB.  
+Clonezilla can be used to recover the ROBOTIS-OP3 software from the image file in the provided backup USB.  
 
 #### How to creat a recovery USB media  
-- Format a USB drive (Required 8GB space or above)  
-- Go to [sourceforge.net] and download an recovery image file. 
+- Format a USB drive (8GB or more space is required)  
+- Go to [sourceforge.net] and download a recovery image file. 
 
-**NOTE**: The required image file may differ depending on a generation of the provided SBC. Be sure to see the following table and download an appropriate image file with your NUC PC.
+**NOTE**: The required image file may differ depending on the generation of the installed SBC. Be sure to check the following table and download the appropriate image file for your NUC PC.
 {: .notice}
 
 | Recovery Image List                                        | Description                      |
@@ -374,7 +373,7 @@ Clonezilla is used to recover ROBOTIS-OP3 with the image file in the provided US
 | *clonezilla-live-ROBOTIS-OP3_Recovery_171013.zip*          | Older image for NUC 6 only       |
     
     
-- Extract the zipped foler to the root folder of the USB drive. The folder structure is as follows. 
+- Extract the zipped folder to the root folder of the USB drive. The folder structure is as follows. 
   ```
   .
   ├── .disk
@@ -414,7 +413,7 @@ Clonezilla is used to recover ROBOTIS-OP3 with the image file in the provided US
 [sourceforge.net]: https://sourceforge.net/projects/darwinop/files/Software/Main%20Controller/Recovery%20USB/
 
 [humanoid_navigation]: /docs/en/platform/thormang3/thormang3_ros_packages/#humanoid_navigation
-[How to use Web Setting Tool]: /docs/en/platform/op3/tutorials/#how-to-use-web-setting-tool
+[How to Use the Web Setting Tool]: /docs/en/platform/op3/tutorials/#how-to-use-web-setting-tool
 
 </section>
 
@@ -427,8 +426,8 @@ Clonezilla is used to recover ROBOTIS-OP3 with the image file in the provided US
 [web_video_server]: http://wiki.ros.org/web_video_server
 
 [DYNAMIXEL SDK]: /docs/en/software/robotis_framework_packages/#dynamixelsdk
-[ROBOTIS-Framerowk]: /docs/en/software/robotis_framework_packages/#robotis-framework
-[ROBOTIS-Framerowk-msgs]: /docs/en/software/robotis_framework_packages/#robotis-framework-msgs
+[ROBOTIS-Framework]: /docs/en/software/robotis_framework_packages/#robotis-framework
+[ROBOTIS-Framework-msgs]: /docs/en/software/robotis_framework_packages/#robotis-framework-msgs
 [ROBOTIS-Math]: /docs/en/platform/common/robotis_math/#robotis-math
 
 [e-manual]: /docs/en/platform/op3/recovery/#recovery-of-robotis-op3
