@@ -127,7 +127,7 @@ page_number: 22
 </section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
-**NOTE**: This feature is supported on ROS2.
+**NOTE**: This feature is supported on ROS 2.
 {: .notice}
 </section>
 

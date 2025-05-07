@@ -399,7 +399,7 @@ Depending on the network, subscribing directly to the image_raw topic may result
 Use a black and white Checkerboard, usually 7×6 or 8×6 in size, print it out and attach it to a solid surface, and measure the squares of your checkerboard accurately.  
 <br>
 
-2. **Install the ROS2 Camera Calibration Package**  
+2. **Install the ROS 2 Camera Calibration Package**  
 **[Remote PC]**
 ```bash
 $ sudo apt update
@@ -408,7 +408,7 @@ $ source /opt/ros/humble/setup.bash
 ```  
 <br>
 
-3. **Run the Camear node**  
+3. **Run the Camera node**  
 Run the camera node based on the camera package you installed.
 - For `camera-ros`  
 **[TurtleBot3 SBC]**  
