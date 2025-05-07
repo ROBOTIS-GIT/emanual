@@ -8,6 +8,7 @@ If you want more information, check out the [OpenCV Docs](https://docs.opencv.or
 
 1. **Installation**  
 Before running the example, make sure the required packages is installed.  
+**[Remote PC]**  
 ```bash
 $ cd ~/turtlebot3_ws/src/
 $ git clone -b humble https://github.com/ROBOTIS-GIT/turtlebot3_applications.git
@@ -19,7 +20,8 @@ $ source ~/.bashrc
 <br>
 
 2. **Setup environment**  
-Opencv-contrib-python is a package that contains contributed modules in addition to the usual OpenCV core modules.
+Opencv-contrib-python is a package that contains contributed modules in addition to the usual OpenCV core modules.  
+**[Remote PC]**  
 ```bash
 $ pip install opencv-contrib-python
 ```  
@@ -42,13 +44,14 @@ $ ros2 launch turtlebot3_bringup robot.launch.py
 
 5. **Start the Camear node**  
 Run camera_node. To use camera module, you must follow [SBC Setup](/docs/en/platform/turtlebot3/sbc_setup/#rpi-camera) and camera calibration. If you don't perform the calibration correctly, tracking will not work properly.  
-**[TurtleBot3 SBC]**  
 - For `camera-ros`  
+**[TurtleBot3 SBC]**  
 ```bash
 $ ros2 run camera_ros camera_node --ros-args -p format:='RGB888' -p width:=320 -p height:=240
 ```
 - For `v4l2-camera`  
 Adding `-r __ns:=/camera` organizes all topics published by the node under the `/camera` namespace.   
+**[TurtleBot3 SBC]**  
 ```bash
 $ ros2 run v4l2_camera v4l2_camera_node --ros-args -p image_size:=[320,240] -p camera_info_url:="file:///home/ubuntu/calibration.yaml" -p output_encoding:="yuv422_yuy2" -r __ns:=/camera
 ```
@@ -66,7 +69,7 @@ $ ros2 launch turtlebot3_bringup rviz2.launch.py
 **Launch argument**  
 `marker_size`
 - default: 0.04
-- description: The size of the marker to use. Unit of meters.  
+- description: An integer value for the size of the marker to use. Unit of meters.  
 
     **[Remote PC]**
     ```bash

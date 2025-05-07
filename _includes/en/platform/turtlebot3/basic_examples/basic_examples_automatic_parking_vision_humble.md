@@ -26,6 +26,7 @@ Automatic Parking Vision uses sequence control. The following describes the sequ
 
 1. **Installation**  
 Before running the example, make sure the required packages is installed.  
+**[Remote PC]**  
   ```bash
   $ cd ~/turtlebot3_ws/src/
   $ git clone -b humble https://github.com/ROBOTIS-GIT/turtlebot3_applications.git
@@ -41,16 +42,16 @@ This example uses the ArUco tracker example, so you'll need to follow the [ArUco
 <br>
 
 3. **Launch vision parking node**  
+This node receives the `/target_marker_id` topic and performs the process of parking in front of the corresponding ArUco marker.  
 **[Remote PC]**  
-This node receives the `/target_marker_id` topic and performs the process of parking in front of the corresponding ArUco marker.
 ```bash
 $ ros2 launch turtlebot3_automatic_parking_vision turtlebot3_automatic_parking_vision.launch.py
 ```
 <br>
 
 4. **Publish /target_marker_id topic.**  
+To park in front of the desired ArUco marker, put the marker ID as an integer after `data: `. ( In this command, to park in front of marker ID 0. )  
 **[Remote PC]**  
-To park in front of the desired ArUco marker, put the marker ID as an integer after `data: `. ( In this command, to park in front of marker ID 0. )
 ```bash
 $ ros2 topic pub -1 /target_marker_id std_msgs/msg/Int32 "{data: 0}"
 ```
