@@ -461,7 +461,7 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 
 7. Clicking the sent packet shows the detailed packet information.
 
-    ![](/assets/images/sw/dynamixel/wizard2/new_wizard2_packet_007_kr.png)
+    ![](/assets/images/sw/dynamixel/wizard2/new_wizard2_packet_007.png)
 
 ## [Firmware Update](#firmware-update)
 

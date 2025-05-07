@@ -26,8 +26,8 @@ page_number: 5
 ## [ROBOTIS-OP3 Bringup](#robotis-op3-bringup)
 
 ### Overview   
-This chapter explains how to run ROBOTIS-OP3. `op3_bringup` demo launches `op3_manager`.   
-Several modules of `op3_manager` are controlling ROBOTIS-OP3 and various topics and services transmit commands and report status.  
+This chapter explains how to operate the ROBOTIS-OP3. The `op3_bringup` demo launches `op3_manager`.   
+Several modules of `op3_manager` are used to control the ROBOTIS-OP3 and various topics and services transmit commands and report current status.  
 The `op3_manager` cooperates with other programs such as `op3_demo` and `op3_gui_demo`.  
 
 > Reference : [op3_manager]
@@ -41,7 +41,7 @@ The `op3_manager` cooperates with other programs such as `op3_demo` and `op3_gui
  > Reference : [Installing ROBOTIS ROS Package]
 
 #### Stop the Linux service that run default demo
-ROBOTIS-OP3 runs default demo automatically. If you would run `op3_bringup` demo, you have to stop the default demo service.  
+ROBOTIS-OP3 runs the default demo automatically. To run the `op3_bringup` demo, you have to stop the default demo service.  
 
 ```bash
 $ sudo systemctl stop op3_demo.service
@@ -49,13 +49,13 @@ $ sudo systemctl stop op3_demo.service
 ```
 
 #### Bringup
-Type below commands in the terminal window.  
+Type the commands below in a terminal window.  
 
 ```bash
 $ ros2 launch op3_bringup op3_bringup.launch.py  
 ```
 
-Note that, if `op3_bringup` package is missing, update the package to download the missing pacakge by following the given insturction.
+Note that, if the `op3_bringup` package is missing, update the package to download the missing package by following the given instruction.
 ```bash
 $ cd ~/robotis_ws/src/ROBOTIS-OP3-Demo
 $ git pull
@@ -64,7 +64,7 @@ $ colcon build --symlink-install
 ```
 
 #### Execution result
-When `op3_bringup` runs, robot moves to initial posture.  
+When `op3_bringup` runs, the robot moves to it's initial posture.  
 
 1. execution result screen  
 
@@ -73,11 +73,11 @@ When `op3_bringup` runs, robot moves to initial posture.
     If you get an error for offset.yaml, run op3_offset_tuner(server and client) and save the offset.
     {: .notice}
 
-2. execution result of ROBOTIS-OP3(Init pose in RVIZ)  
+2. execution result on ROBOTIS-OP3 (Init pose in RVIZ)  
 
     ![](/assets/images/platform/op3/op3_manager_02.png)
 
-3. It's ready to move, now user can control ROBOTIS-OP3 using a program such as [op3_gui_demo].  
+3. It's ready to move, now the user can control ROBOTIS-OP3 using a program such as [op3_gui_demo].  
 
 4. If user turn off the program, press `ctrl+c` in terminal window.
 
@@ -129,7 +129,7 @@ def generate_launch_description():
 - `usb_cam` : package for usb camera of ROBOTIS-OP3    
 
 ### Visualization
-Type below commands in the terminal window for visualization.   
+Type the commands below in a terminal window for visualization.   
 
 ```bash
 $ ros2 launch op3_bringup op3_bringup_visualization.launch.py  
@@ -200,13 +200,13 @@ def generate_launch_description():
 - `rviz2` : visualization tool
 
 ### Description
-This section explains configuration files used in `op3_manager`(within `op3_bringup.launch.py`).  
+This section explains configuration files used in the `op3_manager` (within `op3_bringup.launch.py`).  
 
 #### Robot file(`.robot`)  
-Information of the robot to operate.  
-Control frequency, communication interface, baud rate, available devices and their properties are defined.  
+Information required for the robot to operate.  
+Control frequency, communication interface, baud rate, available devices and their properties are defined here.
 
-- Default path of Robot File : `op3_manager/config/OP3.robot`
+- Default path to Robot File : `op3_manager/config/OP3.robot`
 
 - Contents
 
@@ -271,8 +271,8 @@ Set initialization values for properties of DYNAMIXEL or sensor.
 
 
 #### Offset file(`.yaml`)
-If the robot is mechanically distorted due to assembly tolerance and other reasons, adjusting offset can help to correct the error.  
-Offset file contains offset angles of each joint(radian) to correct distortion and initial posture joint angles for Offset Tuner.  
+If the robot is mechanically distorted due to assembly tolerance or other reasons, adjusting offsets can help to correct the error.  
+The offset file contains offset angles for each joint, in radians, to correct distortion and initial posture joint angles for Offset Tuner.  
 - Default path of Offset file : `op3_manager/config/offset.yaml`  
 
 - Contents  
@@ -307,8 +307,8 @@ Offset file contains offset angles of each joint(radian) to correct distortion a
 ## [How to execute Default Demo](#how-to-execute-default-demo)
 
 ### Overview   
-This chapter explains how to play basic demonstrations of OP3.
-There are three available demos; playing soccer, vision and sequence of various actions.
+This chapter explains how to use the basic demonstrations of the OP3.
+There are three available demos; playing soccer, vision and a sequence of various actions.
 > Reference : [op3_demo]
 
 ### Getting started
@@ -317,10 +317,10 @@ There are three available demos; playing soccer, vision and sequence of various 
 
 #### Run
 1. Auto Start  
-  ROBOTIS-OP3 begins to play demo when startup.  
+  ROBOTIS-OP3 begins to play the demo on startup.  
 
 2. Manual Start  
-  Connect to ROBOTIS-OP3 and open the terminal window.  
+  Connect to the ROBOTIS-OP3 and open the terminal window.  
   The demo launch file executes `op3_demo` and `op3_manager`.  
   
     ```
@@ -328,49 +328,50 @@ There are three available demos; playing soccer, vision and sequence of various 
     ```
 
 #### Execution result
-DYNAMIXEL of ROBOTIS-OP3 will be powered and take the initial posture.  
+DYNAMIXELs in the ROBOTIS-OP3 will be powered and move to the initial posture.  
 
 
 ### Description
 #### Button Functions
-From the left, each button is assigned for Mode, Start, User and Reset.  
+Starting from the left, the buttons are Mode, Start, User and Reset.  
   - Mode button
     - short press : In Ready Mode, mode button switches to the next demo(soccer > vision > action)
     - long press : While demo is running, press and hold the mode button to switch to Ready Mode.  
 
   - Start button
-    - short press : Play selected demo from Ready Mode. If demo is running, start button will pause or resume demo.  
+    - short press : Play selected demo from Ready Mode. If demo is running, the start button will pause or resume the demo.  
 
   - User button
+   - Reserved for user defined functions, not used by the default demos.
 
   - Reset button
-    - Reset button will cut off the power to all DYNAMIXEL.
+    - The reset button will cut off the power to all connected DYNAMIXELs.
 
 #### Soccer Demo
 1. How to play  
-  Press the mode button once from demonstration ready mode to switch to autonomous soccer mode, then play soccer demo by pressing the start button.  
-  (ROBOTIS-OP3 will announce "Autonomous soccer mode" and red LED in the back will be lit.)  
+  Press the mode button once from demonstration ready mode to switch to autonomous soccer mode, then start the soccer demo by pressing the start button.  
+  (ROBOTIS-OP3 will announce "Autonomous soccer mode" and the red LED in the back will be lit.)  
   When the demo begins, ROBOTIS-OP3 will announce "Start soccer demonstration" and stand up to search for a ball.  
-  If desired ball is detected, walk close to the ball and kick it.  
+  If the desired ball is detected, it will walk close to the ball and kick it.  
 
 2. Setting Walking Parameters  
-  Walking motion imports parameters saved in the `op3_walking_module` in `op3_manager`. Default parameters can be configured by using walking tuner in the `op3_gui_demo`.  
+  Walking motion imports parameters saved in the `op3_walking_module` in `op3_manager`. Default parameters can be configured by using the walking tuner in the `op3_gui_demo`.  
     > Reference : [How to use walking tuner]
 
 3. Return to Demonstration Ready Mode  
-  Pressing and holding the mode button for 3 seconds will make ROBOTIS-OP3 to take the initial posture and return to Demonstration ready mode.  
+  Pressing and holding the mode button for 3 seconds will make ROBOTIS-OP3 return to the initial posture and return to Demonstration ready mode.  
 
 
 #### Vision Demo
 1. How to Play  
   Press the mode button twice from demonstration ready mode to switch to vision processing mode, then play vision demo by pressing the start button.
-  (ROBOTIS-OP3 will announce "Vision processing mode" and green LED in the back will be lit.)  
+  (ROBOTIS-OP3 will announce "Vision processing mode" and the green LED in the back will be lit.)  
   When the demo begins, ROBOTIS-OP3 will announce "Start vision processing demonstration" and stand up to search for a face.  
-  If a face is detected, RGB-LED on the chest and back turns into white color and OP3's head will follow the detected face.  
+  If a face is detected, the RGB-LED on the chest and back will illuminate white and OP3's head will follow the detected face.  
     > Reference : [Face Tracker - `branch:jazzy-devel`]
 
 2. Return to Demonstration Ready Mode  
-  Pressing and holding the mode button for 3 seconds will make ROBOTIS-OP3 to take the initial posture and return to Demonstration ready mode.  
+  Pressing and holding the mode button for 3 seconds will make ROBOTIS-OP3 to return to the initial posture and return to Demonstration ready mode.  
 
 
 #### Action Demo
@@ -427,7 +428,7 @@ From the left, each button is assigned for Mode, Start, User and Reset.
 There are three options to run the GUI program.  
 1. Connect input devices and display device directly to ROBOTIS-OP3 and run the GUI program on the robot.  
 2. Use VNC from a remote PC to obtain control over the OP3 SBC(Intel NUC) and initiate the GUI program remotely.  
-3. Run the GUI program on a remote PC in the same ROS network with ROBOTIS-OP3.  
+3. Run the GUI program on a remote PC on the same ROS network with ROBOTIS-OP3.  
   Open the terminal window and enter the following command.  
   `op3_manager` should be running before executing GUI demo program.  
 
@@ -441,12 +442,12 @@ There are three options to run the GUI program.
   ![](/assets/images/platform/op3/op3_gui_ros2.png)
 
 ### [How to take the initial pose](#how-to-take-the-initial-pose)
-Clicking the button surrounded by the red dashed rectangle will let the `base_module` control each joint of ROBOTIS-OP3 and take the initial posture.
+Clicking the button surrounded by the red dashed rectangle will let the `base_module` control each joint of ROBOTIS-OP3 and move to the initial posture.
 
 ![](/assets/images/platform/op3/op3_gui_initial_pose_ros2.png)
 
 ### [How to set the Module](#how-to-set-the-module)
-- Follow the below procedure to configure modules that control corresponding joint of ROBOTIS-OP3.  
+- Follow the below procedure to configure modules that control the corresponding joints of ROBOTIS-OP3.  
     1. Click the module button to configure.  
       - `none`  
       - `head_control_module`  
@@ -465,13 +466,13 @@ Clicking the button surrounded by the red dashed rectangle will let the `base_mo
 
 #### Overview   
 This chapter explains how to configure walking parameters and test them with ROBOTIS-OP3.  
-Basic demo uses saved walking parameters.  
+The basic demo uses these saved walking parameters.  
 
 
 #### Description
 ##### Setting Module
 Activate `walking_module` on the lower body part of ROBOTIS-OP3 for walking test.   
-Confirm that the joints used for walking are set as `walking_module`, then move to `Walking` tab.  
+Confirm that the joints used for walking are set in the `walking_module`, then move to the `Walking` tab.  
 ![](/assets/images/platform/op3/op3_gui_walking_tuner_01_ros2.png)
 
 When the walking module is activated, ROBOTIS-OP3 will take the initial posture for walking.  
@@ -484,9 +485,9 @@ When the walking module is activated, ROBOTIS-OP3 will take the initial posture 
   ![](/assets/images/platform/op3/op3_gui_walking_tuner_03_ros2.png)
 
 ##### Apply Parameters
-1. `Refresh` button : Acquire all parameter currently applied on `walking_module`.  
-2. `Save` button : Save all parameter currently applied on `walking_module` as default parameter and use it for other program such as `op3_demo`.  
-3. `Apply` button : Apply modified parameters from the GUI to `walking_module`.  
+1. `Refresh` button : Acquire all parameters currently applied to the `walking_module`.  
+2. `Save` button : Save all parameters currently applied to the `walking_module` as default parameters.
+3. `Apply` button : Apply modified parameters from the GUI to the `walking_module`.  
 
   ![](/assets/images/platform/op3/op3_gui_walking_tuner_04_ros2.png)
 
@@ -517,7 +518,7 @@ The `action_module` controls each joint of ROBOTIS-OP3.
 
 #### Overview   
 This chapter explains how to control the head joint of ROBOTIS-OP3.  
-Operator can get different camera view angle by controlling head joints.  
+The operator can get different camera view angles by controlling head joints.  
 
 > Reference : [op3_head_control_module]
 
@@ -537,7 +538,7 @@ Operator can get different camera view angle by controlling head joints.
   
 ### [How to control upgraded walking(online walking)](#how-to-control-upgraded-walkingonline-walking)
 
-This version does not support it.
+This version does not support this feature.
 {: .notice--warning}
   
 ## [How to use offset tuner](#how-to-use-offset-tuner)
@@ -558,7 +559,7 @@ This chapter has been merged into [How to use tuner client](#how-to-use-tuner-cl
 
 ### Overview     
 this chapter explains how to adjust kinematic offset and position gain of ROBOTIS-OP3.
-In the past, we were able to adjust the offset by using op3_offset_server and op3_offset_client. Now we can set both offset and gain using new op3_tuning_module and op3_tuner_client. we made an op3_tuning_module and used it with op3_manager, so you do not need to run the server for using just to tune the offset.
+In the past, we were able to adjust the offset by using op3_offset_server and op3_offset_client. Now we can set both offset and gain using new op3_tuning_module and op3_tuner_client. We made an op3_tuning_module and used it with op3_manager, so you do not need to run the server just to tune the offset.
  
 > Reference : [op3_tuning_module]  
 > Reference : [op3_tuner_client]
@@ -572,7 +573,7 @@ In the past, we were able to adjust the offset by using op3_offset_server and op
 
 ### How to launch programs  
 #### Launching `op3_manager` and `op3_tuner_client` program separately
-Tuner is consisted of op3_manager and client program so that other PC in the same ROS network can tune offsets and gains.  
+The tuner consists of op3_manager and client programs so that other PC in the same ROS network can tune offsets and gains.  
 
 Execute the `op3_manager` first.  
 (Other programs such as `op3_action_editor` and `op3_walking_tuner` should be terminated to run the `op3_manager`).  
@@ -638,10 +639,10 @@ $ ros2 launch op3_tuner_client op3_tuner.launch.xml
 ### How to use tuner client GUI program   
 #### How to tune the offset  
 ![](/assets/images/platform/op3/op3_tuner_offset_01.png)  
-1. go `Initial Pose`   
-2. Select tab of `Kinematics Group`  
-3. Click the `Refresh` Button for getting current states of joints  
-4. tune the offset of joints  
+1. Go to the `Initial Pose`   
+2. Select the `Kinematics Group` tab
+3. Click the `Refresh` Button to update the current states of joints  
+4. Tune the offset of joints  
 5. Click the `Save Offset` button for saving to file.  
 
 #### How to tune the gain  
@@ -678,7 +679,7 @@ $ ros2 launch op3_tuner_client op3_tuner.launch.xml
   19 : r_sho_roll   
   ```
   
-  > If you want to check in your hand, type like the belows    
+  > Use the following command to check the saved values
 
   ```
   $ ros2 topic echo /robotis/goal_joint_states --once
@@ -688,7 +689,7 @@ $ ros2 launch op3_tuner_client op3_tuner.launch.xml
 
 ### Overview   
 ROBOTIS-OP3 Action Editor Node.  
-This chapter explains how to create and edit action file used in the [op3_action_module] of ROBOTIS-OP3.   
+This chapter explains how to create and edit action files used in the [op3_action_module] of ROBOTIS-OP3.   
 
 #### Action File
 The action file contains ROBOTIS-OP3's poses and time data. The `Current position` describes positions of DYNAMIXEL, which are converted from the actual DYNAMIXEL resolution to a 4,095 resolution. The `action file` is written as a binary file, so users can read its contents with `op3_action_editor`. ROBOTIS currently provides a default action file with the source code. It is located in the `op3_action_module/data` directory.  
@@ -702,8 +703,7 @@ The action file contains 256 pages. Each page can store up to 7 stages (or steps
 
 #### Run
 Run the executor file.  
-`op3_action_editor` has a direct control over ROBOTIS-OP3, therefore other control programs such as `op3_manager`, `op3_offset_tuner` and `op3_walking_tuner` should not be running.  
-Before running the `op3_action_editor` executor file, other programs should be terminated.  
+`op3_action_editor` has direct control over ROBOTIS-OP3, other control programs such as `op3_manager`, `op3_offset_tuner` and `op3_walking_tuner` should not be running.  
 ```
 $ ros2 run op3_action_editor executor.py
 ```
@@ -712,8 +712,8 @@ $ ros2 run op3_action_editor executor.py
 
 ![](/assets/images/platform/op3/op3_action_editor_tui.png)
 
-- **Page number**: Page number is the listed page number. If user wants to create a new action poses, user can use any empty page.  
-- **Page title**: ROBOTIS recommends user to use a page title when creating a new action on an empty page.  
+- **Page number**: Page number is the listed page number. If user wants to create a new action pose, the user can use any empty page.  
+- **Page title**: ROBOTIS recommends the use of a page title when creating a new action on an empty page.  
 - **Current position**: The current position describes position of DYNAMIXEL which converted from actual DYNAMIXEL resolution to 4,095 resolution. This data is represented by STP7 in op3_action_editor. Sometimes the position may be read as ---- in op3_action_editor. This means position of DYNAMIXEL has not been read (or torque is off).  
   If user turns DYNAMIXEL off, current position cannot be read until turn it back on.  
   User can turn off the torque of specific DYNAMIXEL. This is very convenient when acquiring position values directly from DYNAMIXEL for a new robot posture instead of calculating those values. To do that, turn off the torque of desired DYNAMIXEL, then make a posture and hold the robot joint by hand until turn the torque back on. The robot will be remaining at current posture and user can read position values of corresponding DYNAMIXEL.  
