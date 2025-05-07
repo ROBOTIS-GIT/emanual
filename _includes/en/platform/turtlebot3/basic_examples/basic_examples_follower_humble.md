@@ -1,6 +1,6 @@
 <div class="notice--danger">
 
-In order to follow along with the examples below, you have to install the [turtlebot3_applications][turtlebot3_applications] and [turtlebot3_applications_msgs][turtlebot3_applications_msgs] packages.  
+In order to follow along with the examples below, you have to install the [turtlebot3_applications][turtlebot3_applications] packages.  
 Also it uses the navigation2 package, make sure that the `Navigation2` package and `turtlebot3_simulation` are properly installed by following the Quick Start Guide.  
 
 Go to your `turtlebot3_ws` directory and clone the `turtlebot3_applications` and `turtlebot3_applications_msgs` repository. Then build the new packages.  
@@ -9,7 +9,6 @@ Go to your `turtlebot3_ws` directory and clone the `turtlebot3_applications` and
 $ sudo apt install ros-humble-navigation2
 $ cd ~/turtlebot3_ws/src
 $ git clone https://github.com/ROBOTIS-GIT/turtlebot3_applications.git
-$ git clone https://github.com/ROBOTIS-GIT/turtlebot3_applications_msgs.git
 $ cd ~/turtlebot3_ws && colcon build --symlink-install
 ```
 </div>
