@@ -93,7 +93,7 @@ $ ros2 launch turtlebot3_follower turtlebot3_follower.launch.py
 ```bash
 $ rviz2
 ```
-![](/assets/images/platform/turtlebot3/basic_examples/follower/rivz_reality_robot.png)
+![](/assets/images/platform/turtlebot3/basic_examples/follower/rviz_reality_robot.png)
 
 6. Teleop leader robot.  
 **[Remote PC]**
