@@ -42,7 +42,7 @@ $ ros2 launch turtlebot3_bringup robot.launch.py
 ```
 <br>
 
-5. **Start the Camear node**  
+5. **Start the Camera node**  
 Run camera_node. To use camera module, you must follow [SBC Setup](/docs/en/platform/turtlebot3/sbc_setup/#rpi-camera) and camera calibration. If you don't perform the calibration correctly, tracking will not work properly.  
 - For `camera-ros`  
 **[TurtleBot3 SBC]**  
@@ -75,4 +75,4 @@ $ ros2 launch turtlebot3_bringup rviz2.launch.py
     ```bash
     $ ros2 launch turtlebot3_aruco_tracker turtlebot3_aruco_tracker.launch.py marker_size:=0.04
     ```
-    ![ArUco Tracker Rviz](/assets/images/platform/turtlebot3/application/aruco_tracker_rviz.png)  
+    ![ArUco Tracker RViz](/assets/images/platform/turtlebot3/application/aruco_tracker_rviz.png)  
