@@ -27,8 +27,8 @@ $ pip install opencv-contrib-python
 ```  
 <br>
 
-3. **Prepare an Arco marker**  
-ArUco markers are divided into multiple dictionaries to balance the number of markers, identification reliability, and detection speed. In this example, we used the `DICT_5X5_250` dictionary. Prepare an image of an Aruko marker and measure the size of the marker.  
+3. **Prepare an ArUco marker**  
+ArUco markers are divided into multiple dictionaries to balance the number of markers, identification reliability, and detection speed. In this example, we used the `DICT_5X5_250` dictionary. Prepare an image of an ArUco marker and measure the size of the marker.  
 
       ![ArUco marker](/assets/images/platform/turtlebot3/application/aruco_marker.jpg)  
 <br>
