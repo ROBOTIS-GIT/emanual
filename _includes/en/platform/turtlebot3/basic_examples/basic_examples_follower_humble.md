@@ -52,7 +52,7 @@ Set the variable `number_of_follower`. In the demo, we used 5 robots in total, s
 $ ros2 launch turtlebot3_follower turtlebot3_follower.launch.py use_sim_time:=true
 ```
 
-5. Open the Rviz2 and click `file` → `Open Config` → `follower.rviz` in `turtlebot3_follower_package`.  
+5. Open the RViz2 and click `file` → `Open Config` → `follower.rviz` in `turtlebot3_follower_package`.  
 **[Remote PC]**
 ```bash
 $ rviz2
@@ -88,7 +88,7 @@ $ ros2 launch turtlebot3_bringup robot.launch.py namespace:=TB3_2 # TB3_3, TB3_4
 ```bash
 $ ros2 launch turtlebot3_follower turtlebot3_follower.launch.py
 ```
-5. Open the Rviz2 and click `file` → `Open Config` → `follower.rviz` in `turtlebot3_follower_package`.  
+5. Open the RViz2 and click `file` → `Open Config` → `follower.rviz` in `turtlebot3_follower_package`.  
 **[Remote PC]**  
 ```bash
 $ rviz2
