@@ -4,7 +4,7 @@ If you want more information, check out the [OpenCV Docs](https://docs.opencv.or
   - The `turtlebot3_aruco_tracker` uses the RaspberryPi camera.  
   - If you want to perform Automatic Parking Vision, need to set the TurtleBot3 model to `waffle_pi`.
 {: .notice}
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/6ZyaFREFhnk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3DATI4FJnPw" frameborder="0" allowfullscreen></iframe>
 
 1. **Installation**  
 Before running the example, make sure the required packages is installed.  

@@ -1,6 +1,7 @@
 
 ### **What is Panorama?**  
 This example allows the TurtleBot3 to rotate in place while capturing images and combining them into a panoramic image using OpenCV’s Stitcher module. The process is initiated via a ROS service call, and depending on the selected mode, the robot either pauses to take snapshots or rotates continuously. The final stitched panorama is published as a ROS topic and saved as a JPEG file locally.  
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hsi4WSZwX_c" frameborder="0" allowfullscreen></iframe>  
 
 ### **Installation**
 Before running the panorama example, make sure to clone and build the required packages.  
