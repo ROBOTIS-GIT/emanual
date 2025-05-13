@@ -254,7 +254,7 @@ Apply changes with the command below.
 $ source ~/.bashrc
 ```
 
-### Rpi Camera
+### [Rpi Camera](#rpi-camera)
 Introducing the use of the RPi camera with TurtleBot3. There are various ways to publish the output of a RPi camera as a topic.  
 One method is to use the `camera-ros` package, and another method is to use the `v4l2-camera` package.  
 
@@ -389,12 +389,103 @@ Depending on the network, subscribing directly to the image_raw topic may result
 </div>
 
 </details>
+
+<details>
+<summary>
+![](/assets/images/icon_unfold.png) **Camera calibration for using vision features..**
+</summary>
+
+1. **Prepare the Checkerboard pattern**  
+Use a black and white Checkerboard, usually 7×6 or 8×6 in size, print it out and attach it to a solid surface, and measure the squares of your checkerboard accurately.  
+<br>
+
+2. **Install the ROS 2 Camera Calibration Package**  
+**[Remote PC]**
+```bash
+$ sudo apt update
+$ sudo apt install ros-humble-camera-calibration
+$ source /opt/ros/humble/setup.bash
+```  
+<br>
+
+3. **Run the Camera node**  
+Run the camera node based on the camera package you installed.
+- For `camera-ros`  
+**[TurtleBot3 SBC]**  
+```bash
+$ ros2 run camera_ros camera_node --ros-args -p format:='RGB888' -p width:=320 -p height:=240
+```
+- For `v4l2-camera`  
+Adding `-r __ns:=/camera` organizes all topics published by the node under the `/camera` namespace.   
+**[TurtleBot3 SBC]**  
+```bash
+$ ros2 run v4l2_camera v4l2_camera_node --ros-args -p image_size:=[320,240] -p camera_info_url:="file:///home/ubuntu/calibration.yaml" -p output_encoding:="yuv422_yuy2" -r __ns:=/camera
+```
+<br>
+
+4. **Run calibration node**  
+Specify the size of the checkerboard and the size of the squares as execution arguments. The size of the checkerboard is the number of intersections.  
+**[Remote PC]**
+```bash
+$ ros2 run camera_calibration cameracalibrator \
+  --size 8x6 --square 0.023 \
+  image:=/camera/image_raw camera:=/camera
+```  
+<br>
+
+5. **Proceed with the calibration**  
+When a checkerboard is detected, each intersection is connected. Modify the position of the checkerboard until the green bar on the right is filled to activate the button.  
+    ![calibration](/assets/images/platform/turtlebot3/sbc_setup/calibration.png)  
+<br>
+
+6. **Apply calibration**  
+Use the results to modify the format of the calibration yaml file you created when you installed the camera package.  
+**[Result]**
+    ```bash
+    **** Calibrating ****
+    mono pinhole calibration...
+    D = [0.03044862133677453, 1.051149543007478, -0.010043417242237722, -0.004408001911603297, 0.0]
+    K = [630.410302346659, 0.0, 153.7660597801437, 0.0, 630.2122426630051, 112.97681709327331, 0.0, 0.0, 1.0]
+    R = [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+    P = [638.0872192382812, 0.0, 152.86851810362077, 0.0, 0.0, 636.0022583007812, 111.61012624808154, 0.0, 0.0, 0.0, 1.0, 0.0]
+    None
+    # oST version 5.0 parameters
+
+
+    [image]
+
+    width
+    320
+
+    height
+    240
+
+    [narrow_stereo]
+
+    camera matrix
+    630.410302 0.000000 153.766060
+    0.000000 630.212243 112.976817
+    0.000000 0.000000 1.000000
+
+    distortion
+    0.030449 1.051150 -0.010043 -0.004408 0.000000
+
+    rectification
+    1.000000 0.000000 0.000000
+    0.000000 1.000000 0.000000
+    0.000000 0.000000 1.000000
+
+    projection
+    638.087219 0.000000 152.868518 0.000000
+    0.000000 636.002258 111.610126 0.000000
+    0.000000 0.000000 1.000000 0.000000
+    ```
+</details>
 <br>
 
 **This is it! Now you are done with SBC setup :)**  
 Next Step : [OpenCR Setup](/docs/en/platform/turtlebot3/opencr_setup/#opencr-setup)
 {: .notice--success}
-
 
 {% capture ubuntu_blog %}
 Please refer to the Ubuntu Blog posts below for more useful information.  

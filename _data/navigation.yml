@@ -26074,12 +26074,14 @@ turtlebot3:
       url: /platform/turtlebot3/basic_examples/#absolute-move
     - title: "Patrol"
       url: /platform/turtlebot3/basic_examples/#patrol
-    - title: "TurtleBot Follower Demo"
-      url: /platform/turtlebot3/basic_examples/#turtlebot-follower-demo
-    - title: "TurtleBot Panorama Demo"
-      url: /platform/turtlebot3/basic_examples/#turtlebot-panorama-demo
+    - title: "Follower"
+      url: /platform/turtlebot3/basic_examples/#follower
+    - title: "Panorama"
+      url: /platform/turtlebot3/basic_examples/#panorama
     - title: "Automatic Parking"
       url: /platform/turtlebot3/basic_examples/#automatic-parking
+    - title: "ArUco Tracker"
+      url: /platform/turtlebot3/basic_examples/#aruco-tracker
     - title: "Automatic Parking Vision"
       url: /platform/turtlebot3/basic_examples/#automatic-parking-vision
     - title: "Load Multiple TurtleBot3s"
