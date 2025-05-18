@@ -345,10 +345,13 @@ main:
     - title: "TurtleBot3"
       titlekr: "터틀봇3"
       url: /platform/turtlebot3/overview/
-    - title: "OpenMANIPULATOR"
-      titlekr: "오픈매니퓰레이터"
-      url: /platform/openmanipulator_main
+    - title: "AI Manipulator"
+      titlekr: " AI 매니퓰레이터"
+      url: /platform/ai_manipulator_main
       children:
+      - title: "OMY"
+        titlekr: "OMY"
+        url: /platform/omy/overview/
       - title: "OpenMANIPULATOR-P"
         titlekr: "OpenMANIPULATOR-P"
         url: /platform/openmanipulator_p/overview/
@@ -933,10 +936,10 @@ all-platform:
     titlekr: "터틀봇3"
     url: /platform/#turtlebot3
     urlkr: /platform/#터틀봇3
-  - title: "OpenMANIPULATOR"
-    titlekr: "오픈매니퓰레이터"
-    url: /platform/#openmanipulator
-    urlkr: /platform/#오픈매니퓰레이터
+  - title: "AI Manipulator"
+    titlekr: "AI 매니퓰레이터"
+    url: /platform/#ai-manipulator
+    urlkr: /platform/#AI-매니퓰레이터
   - title: "ROBOTIS OP"
     titlekr: "로보티즈 OP"
     url: /platform/#robotis-op
@@ -26188,12 +26191,40 @@ turtlebot3:
   - title: "FAQ"
     url: /platform/turtlebot3/faq/#faq
 
-#OpenMANIPULATOR-MAIN
+#AI Manipulator-MAIN
 openmanipulator:
+  - title : "OMY"
+    url: /platform/ai_manipulator_main/#omy
   - title : "OpenMANIPULATOR-X"
-    url: /platform/openmanipulator_main/#openmanipulator-x
+    url: /platform/ai_manipulator_main/#openmanipulator-x
   - title : "OpenMANIPULATOR-P"
-    url: /platform/openmanipulator_main/#openmanipulator-p
+    url: /platform/ai_manipulator_main/#openmanipulator-p
+
+#OMY sidebar
+omy:
+  - title: "Overview"
+    url: /platform/omy/overview
+  - title: "Specification"
+    url: /platform/omy/specification/#specification
+    children:
+    - title: "[Follower] Hardware"
+      url: /platform/omy/specification/#follower-hardware
+    - title: "[Follower] Workspace"
+      url: /platform/omy/specification/#follower-workspace
+    - title: "[Follower] Layout"
+      url: /platform/omy/specification/#follower-layout
+    - title: "[Follower] Base Unit"
+      url: /platform/omy/specification/#follower-base-unit
+    - title: "[Follower] End Unit"
+      url: /platform/omy/specification/#follower-end-unit
+    - title: "[Leader] Hardware"
+      url: /platform/omy/specification/#leader-hardware
+  - title: "Quick Start Guide"
+    url: /platform/omy/quick_start_guide/#quick-start-guide
+  - title: "Operation"
+    url: /platform/omy/ros2_operation/#operation
+  - title: "Simulation"
+    url: /platform/omy/ros2_simulation/#simulation
 
 #OpenMANIPULATOR-X sidebar
 openmanipulator_x:
