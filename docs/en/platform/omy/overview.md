@@ -19,13 +19,19 @@ page_number: 1
 
 ![](/assets/images/platform/omy/omy_product.png)
 
-## Feature
+- Gripper offers haptic feedback, customizable triggers.
+- Gravity/Friction compensation for smooth and intuitive operation.
+- It supports ROS2, standard URDF and various DXL SDKs for easy development and integration.
+- As open source, it allows for community contributions and flexible customization.
 
-- Gripper Haptic Support
-- Gripper Trigger Support
-- Gravity Compensation Support
-- Friction Compensation Support
-- ROS2 Support
-- Standardized URDF Provided
-- Open Source
-- Extensive DXL SDK Support
+## [OpenSoftware](#opensoftware)
+
+OMY (OMY-AI3M, OMY-L100) is based on ROS and OpenSource. Users can also control it more easily by linking it with the MoveIt! package. Even if you don’t have an actual robot, you can control the robot in the Gazebo simulator​.
+
+## [Physical AI Ready](#physical-ai-ready)
+
+< Text : Physical AI Support >
+
+## [Introduction Video](#introduction-video)
+
+< Youtube : Teleoperation >

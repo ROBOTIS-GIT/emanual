@@ -26203,7 +26203,14 @@ openmanipulator:
 #OMY sidebar
 omy:
   - title: "Overview"
-    url: /platform/omy/overview
+    url: /platform/omy/overview/#overview
+    children:
+    - title: "OpenSoftware"
+      url: /platform/omy/overview/#opensoftware
+    - title: "Physical AI Ready"
+      url: /platform/omy/overview/#physical-ai-ready
+    - title: "Introduction Video"
+      url: /platform/omy/overview/#introduction-video
   - title: "Specification"
     url: /platform/omy/specification/#specification
     children:
@@ -26223,13 +26230,13 @@ omy:
     url: /platform/omy/quick_start_guide/#quick-start-guide
     children:
     - title: "Power connection"
-      url: "/platform/omy/quick_start_guide/#power-connection"
+      url: /platform/omy/quick_start_guide/#power-connection
     - title: "SSH connection"
-      url: "/platform/omy/quick_start_guide/#ssh-connection"
+      url: /platform/omy/quick_start_guide/#ssh-connection
     - title: "Unpacking"
-      url: "/platform/omy/quick_start_guide/#unpacking"
+      url: /platform/omy/quick_start_guide/#unpacking
     - title: "Teleoperation"
-      url: "/platform/omy/quick_start_guide/#teleoperation"
+      url: /platform/omy/quick_start_guide/#teleoperation
   - title: "Operation"
     url: /platform/omy/ros2_operation/#operation
   - title: "Simulation"
