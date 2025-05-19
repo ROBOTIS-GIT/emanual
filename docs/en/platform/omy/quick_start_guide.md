@@ -17,10 +17,10 @@ page_number: 3
 
 # [Quick Start Guide](#quick-start-guide)
 
-## Power connection
+## [Power connection](#power-connection)
 ![](/assets/images/platform/omy/omy_power.png)
 
-## SSH connection
+## [SSH connection](#ssh-connection)
 
 ### Network Access Method
 Start by connecting the SBC to the same network as your PC using a LAN cable, then power on the OM-Y (press and release the power button until it turns white).  
@@ -39,7 +39,7 @@ To access via SSH from a Linux environment, use the following command:
 ssh root@omy-SNPR44B9999.local
 ```
 
-## Unpacking
+## [Unpacking](#unpacking)
 
 {% capture unpacking_danger_01 %}
 `DANGER`
@@ -50,7 +50,7 @@ During the first operation, the Unpacking script must be executed to prevent sel
 {% endcapture %}
 <div class="notice--danger">{{ unpacking_danger_01 | markdownify }}</div>
 
-## Teleoperation
+## [Teleoperation](#teleoperation)
 
 Execute the following command:
 ```

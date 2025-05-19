@@ -26221,6 +26221,15 @@ omy:
       url: /platform/omy/specification/#leader-hardware
   - title: "Quick Start Guide"
     url: /platform/omy/quick_start_guide/#quick-start-guide
+    children:
+    - title: "Power connection"
+      url: "/platform/omy/quick_start_guide/#power-connection"
+    - title: "SSH connection"
+      url: "/platform/omy/quick_start_guide/#ssh-connection"
+    - title: "Unpacking"
+      url: "/platform/omy/quick_start_guide/#unpacking"
+    - title: "Teleoperation"
+      url: "/platform/omy/quick_start_guide/#teleoperation"
   - title: "Operation"
     url: /platform/omy/ros2_operation/#operation
   - title: "Simulation"
