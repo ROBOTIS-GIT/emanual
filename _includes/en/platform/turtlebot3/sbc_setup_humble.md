@@ -282,11 +282,6 @@ $ sudo apt-get install ros-humble-camera-ros ros-humble-image-transport-plugins 
 $ ros2 run camera_ros camera_node --ros-args -p format:='RGB888' -p width:=320 -p height:=240
 ```
 
-<div class="notice--primary">
-**Trouble Shooting**  
-If the error message `Unable to open camera calibration file [/home/ubuntu/.ros/camera_info/imx219__base_soc_i2c0mux_i2c_1_imx219_10_320x240.yaml]` appears, check the solution [here](/docs/en/platform/turtlebot3/appendix_raspi_cam/#trouble-shooting).  
-</div>
-
 </details>
 
 <details>
@@ -364,7 +359,7 @@ In this case, camera name is **mmal_service_16.1**.
 7. Run v4l2_camera_node.  
 **[TurtleBot3 SBC]**  
 ```bash
-$ ros2 run v4l2_camera v4l2_camera_node --ros-args -p image_size:=[640,480]
+$ ros2 run v4l2_camera v4l2_camera_node --ros-args -p image_size:=[320,240]
 ```
 
 </details>  
@@ -379,10 +374,11 @@ Subscribing directly to the `/camera/image_raw` topic can cause significant late
 Higher resolutions require more bandwidth, which can cause lag. So, lowering the resolution can reduce latency and improve performance. 
 </div>
 
-<div class="notice--success">
-**Camera calibration**  
+> **Camera calibration**  
 If you plan to use advanced vision features like camera calibration, you can find the detailed instructions [here](/docs/en/platform/turtlebot3/appendix_raspi_cam/#camera-calibration).  
-</div>
+
+> **Trouble Shooting**  
+If the error message `Unable to open camera calibration file` appears, check the solution [here](/docs/en/platform/turtlebot3/appendix_raspi_cam/#trouble-shooting).  
 
 {% capture ubuntu_blog %}
 Please refer to the Ubuntu Blog posts below for more useful information.  

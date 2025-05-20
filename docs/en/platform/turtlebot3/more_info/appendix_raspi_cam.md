@@ -140,38 +140,10 @@ Run the camera node based on the camera package you installed.
 $ ros2 run camera_ros camera_node --ros-args -p format:='RGB888' -p width:=320 -p height:=240
 ```
 - For `v4l2-camera`  
-Create a YAML file containing calibration information. You can create the file using the `camera_calibration` package. (Currently, this step is skipped in the manual.)  
-**[TurtleBot3 SBC]**  
-```bash
-$ nano ~/calibration.yaml
-```
-```
-image_width: 640
-image_height: 480
-camera_name: your_camera_name
-frame_id: camera
-camera_matrix:
-  rows: 3
-  cols: 3
-  data: [322.0704122808738, 0, 199.2680620421962, 0, 320.8673986158544, 155.2533082600705, 0, 0, 1]
-distortion_model: plumb_bob
-distortion_coefficients:
-  rows: 1
-  cols: 5
-  data: [0.1639958233797625, -0.271840030972792, 0.001055841660100477, -0.00166555973740089, 0]
-rectification_matrix:
-  rows: 3
-  cols: 3
-  data: [1, 0, 0, 0, 1, 0, 0, 0, 1]
-projection_matrix:
-  rows: 3
-  cols: 4
-  data: [329.2483825683594, 0, 198.4101510452074, 0, 0, 329.1044006347656, 155.5057121208347, 0, 0, 0, 1, 0]
-```
 Adding `-r __ns:=/camera` organizes all topics published by the node under the `/camera` namespace.   
 **[TurtleBot3 SBC]**  
 ```bash
-$ ros2 run v4l2_camera v4l2_camera_node --ros-args -p image_size:=[320,240] -p camera_info_url:="file:///home/ubuntu/calibration.yaml" -p output_encoding:="rgb8" -r __ns:=/camera
+$ ros2 run v4l2_camera v4l2_camera_node --ros-args -p image_size:=[320,240] -p output_encoding:="rgb8" -r __ns:=/camera
 ```
 <br>
 
@@ -237,7 +209,7 @@ Use the results to modify the format of the calibration yaml file you created wh
 
 ### [Trouble Shooting](#trouble-shooting)
 
-The error message `Unable to open camera calibration file [/home/ubuntu/.ros/camera_info/imx219__base_soc_i2c0mux_i2c_1_imx219_10_320x240.yaml]` appears when the camera calibration file is missing.  
+The error message `Unable to open camera calibration file [/home/ubuntu/.ros/camera_info/<camera_name>.yaml]` appears when the camera calibration file is missing.  
 
 1. Create the calibration directory (if it doesn't exist)  
 **[TurtleBot3 SBC]**  
@@ -248,13 +220,14 @@ $ mkdir -p /home/ubuntu/.ros/camera_info/
 2. Create the calibration file  
 **[TurtleBot3 SBC]**  
 ```bash
-$ nano /home/ubuntu/.ros/camera_info/imx219__base_soc_i2c0mux_i2c_1_imx219_10_320x240.yaml
+$ nano /home/ubuntu/.ros/camera_info/<camera_name>.yaml
 ```
-**Calibration yaml file example**  
+**Calibration yaml file example**   
+Make sure to update the `image_width`, `image_height` values and `camera_name` to match your actual camera settings. Ensure the `camera_name` in the `.yaml` file matches the actual camera name.  
 ```
-image_width: 320
-image_height: 240
-camera_name: imx219__base_soc_i2c0mux_i2c_1_imx219_10_320x240
+image_width: 320   # Update to your camera's actual resolution
+image_height: 240   # Update to your camera's actual resolution
+camera_name: imx219__base_soc_i2c0mux_i2c_1_imx219_10_320x240   # Replace with the actual camera name
 frame_id: camera
 camera_matrix:
   rows: 3
@@ -274,7 +247,6 @@ projection_matrix:
   cols: 4
   data: [164.6242, 0, 99.2051, 0, 0, 164.5522, 77.7529, 0, 0, 0, 1, 0]
 ```  
-Ensure the *camera_name* in the `.yaml` file is set as `imx219__base_soc_i2c0mux_i2c_1_imx219_10_320x240` to match the actual camera name.  
 
 ### [References](#references)
 
