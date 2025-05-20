@@ -29,7 +29,7 @@ The Camera Module can be used to take high-definition video, as well as stills p
 
 ### [Introduction Video](#introduction-video)
 
-The TurtleBot3 Waffle Pi uses Raspberry Pi Camera Module v2 as a default vision sensor. Check this video out that shows how Raspberry Pi Camera Module v2 can be used in TurtleBot3 Waffle Pi.
+The TurtleBot3 uses Raspberry Pi Camera Module v2 as a default vision sensor. Check this video out that shows how Raspberry Pi Camera Module v2 can be used in TurtleBot3.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/AyZ5lcz5IzM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
@@ -127,8 +127,8 @@ Use a black and white Checkerboard, usually 7×6 or 8×6 in size, print it out a
 **[Remote PC]**
 ```bash
 $ sudo apt update
-$ sudo apt install ros-humble-camera-calibration
-$ source /opt/ros/humble/setup.bash
+$ sudo apt install ros-${ROS_DISTRO}-camera-calibration
+$ source /opt/ros/h${ROS_DISTRO}/setup.bash
 ```  
 <br>
 
@@ -137,13 +137,13 @@ Run the camera node based on the camera package you installed.
 - For `camera-ros`  
 **[TurtleBot3 SBC]**  
 ```bash
-$ ros2 run camera_ros camera_node --ros-args -p format:='RGB888' -p width:=320 -p height:=240
+$ ros2 run camera_ros camera_node --ros-args -p format:='RGB888'
 ```
 - For `v4l2-camera`  
 Adding `-r __ns:=/camera` organizes all topics published by the node under the `/camera` namespace.   
 **[TurtleBot3 SBC]**  
 ```bash
-$ ros2 run v4l2_camera v4l2_camera_node --ros-args -p image_size:=[320,240] -p output_encoding:="rgb8" -r __ns:=/camera
+$ ros2 run v4l2_camera v4l2_camera_node --ros-args -r __ns:=/camera
 ```
 <br>
 

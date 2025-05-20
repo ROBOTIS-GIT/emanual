@@ -279,7 +279,7 @@ $ sudo apt-get install ros-humble-camera-ros ros-humble-image-transport-plugins 
 2. Run camera_node.  
 **[TurtleBot3 SBC]**  
 ```bash
-$ ros2 run camera_ros camera_node --ros-args -p format:='RGB888' -p width:=320 -p height:=240
+$ ros2 run camera_ros camera_node --ros-args -p format:='RGB888'
 ```
 
 </details>
@@ -321,34 +321,33 @@ Open the configuration file `/boot/firmware/config.txt`.
 $ sudo nano /boot/firmware/config.txt
 ```
 
-Modify or add the following lines.  
+4. Modify or add the following lines.  
 ```bash
-# Disable libcamera auto detect
-camera_auto_detect=0
-display_auto_detect=0
-
-# Enable legacy camera stack for bcm2835-v4l2
-start_x=1
-gpu_mem=128
-dtoverlay=vc4-kms-v3d
-dtoverlay=imx219  # Raspberry Pi Camera Module v2 (IMX219 sensor)
+  # Disable libcamera auto detect
+  camera_auto_detect=0
+  display_auto_detect=0
+  # Enable legacy camera stack for bcm2835-v4l2
+  start_x=1
+  gpu_mem=128
+  dtoverlay=vc4-kms-v3d
+  dtoverlay=imx219  # Raspberry Pi Camera Module v2 (IMX219 sensor)
 ```  
-Before editing the `/boot/firmware/config.txt` file, make sure to check the official [Raspberry Pi documentation](https://www.raspberrypi.com/documentation/computers/camera_software.html#configuration) for the correct dtoverlay settings for your specific camera module.  
+Before modifying the configuration file, make sure to check the [official Raspberry Pi documentation](https://www.raspberrypi.com/documentation/computers/camera_software.html#configuration) for your specific camera module.  
 
-4. Load the Camera Driver
+5. Load the Camera Driver
 Manually load the `bcm2835-v4l2` module.  
 **[TurtleBot3 SBC]**  
 ```bash
 $ sudo modprobe bcm2835-v4l2
 ```
 
-5. Reboot the System  
+6. Reboot the System  
 **[TurtleBot3 SBC]**  
 ```bash
 $ sudo reboot
 ```
 
-6. You can check camera_name by this command.  
+7. You can check camera_name by this command.  
 **[TurtleBot3 SBC]**  
 ```bash
 $ v4l2-ctl --list-devices
@@ -356,10 +355,10 @@ $ v4l2-ctl --list-devices
 In this case, camera name is **mmal_service_16.1**.  
 ![](/assets/images/platform/turtlebot3/sbc_setup/camera_name.png)  
 
-7. Run v4l2_camera_node.  
+8. Run v4l2_camera_node.  
 **[TurtleBot3 SBC]**  
 ```bash
-$ ros2 run v4l2_camera v4l2_camera_node --ros-args -p image_size:=[320,240]
+$ ros2 run v4l2_camera v4l2_camera_node
 ```
 
 </details>  
@@ -371,10 +370,13 @@ To optimize camera data transmission speed, try the following methods.
 Subscribing directly to the `/camera/image_raw` topic can cause significant latency if the network is slow or bandwidth is limited. You can select `/camera/image_raw/compressed` in *rqt_image_view*.
 
 - Adjust Resolution  
-Higher resolutions require more bandwidth, which can cause lag. So, lowering the resolution can reduce latency and improve performance. 
+Higher resolutions require more bandwidth, which can cause lag. So, lowering the resolution can reduce latency and improve performance. A recommended resolution is 320x240, which strikes a good balance between image quality and transmission speed and can be adjusted via command.  
 </div>
 
-> **Camera calibration**  
+> **More Info**  
+For detailed specifications and advanced settings, please check the [13.More Info - 13.1.Appendixes - Raspberry Pi Camera](/docs/en/platform/turtlebot3/appendix_raspi_cam) for a comprehensive guide on hardware capabilities and software features. 
+
+> **Camera Calibration**  
 If you plan to use advanced vision features like camera calibration, you can find the detailed instructions [here](/docs/en/platform/turtlebot3/appendix_raspi_cam/#camera-calibration).  
 
 > **Trouble Shooting**  

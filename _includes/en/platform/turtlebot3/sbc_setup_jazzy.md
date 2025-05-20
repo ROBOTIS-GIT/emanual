@@ -279,7 +279,7 @@ $ sudo apt-get install ros-jazzy-camera-ros ros-jazzy-image-transport-plugins v4
 2. Run camera_node.  
 **[TurtleBot3 SBC]**  
 ```bash
-$ ros2 run camera_ros camera_node --ros-args -p format:='RGB888' -p width:=320 -p height:=240
+$ ros2 run camera_ros camera_node --ros-args -p format:='RGB888'
 ```
 
 </details>
@@ -329,7 +329,7 @@ In this case, camera name is **mmal_service_16.1**.
 5. Run v4l2_camera_node.  
 **[TurtleBot3 SBC]**  
 ```bash
-$ ros2 run v4l2_camera v4l2_camera_node --ros-args -p image_size:=[320,240]
+$ ros2 run v4l2_camera v4l2_camera_node
 ```
 
 </details>  
@@ -341,10 +341,13 @@ To optimize camera data transmission speed, try the following methods.
 Subscribing directly to the `/camera/image_raw` topic can cause significant latency if the network is slow or bandwidth is limited. You can select `/camera/image_raw/compressed` in *rqt_image_view*.
 
 - Adjust Resolution  
-Higher resolutions require more bandwidth, which can cause lag. So, lowering the resolution can reduce latency and improve performance. 
+Higher resolutions require more bandwidth, which can cause lag. So, lowering the resolution can reduce latency and improve performance. A recommended resolution is 320x240, which strikes a good balance between image quality and transmission speed and can be adjusted via command.
 </div>
 
-> **Camera calibration**  
+> **More Info**  
+For detailed specifications and advanced settings, please check the [13.More Info - 13.1.Appendixes - Raspberry Pi Camera](/docs/en/platform/turtlebot3/appendix_raspi_cam) for a comprehensive guide on hardware capabilities and software features. 
+
+> **Camera Calibration**  
 If you plan to use advanced vision features like camera calibration, you can find the detailed instructions [here](/docs/en/platform/turtlebot3/appendix_raspi_cam/#camera-calibration).  
 
 > **Trouble Shooting**  
