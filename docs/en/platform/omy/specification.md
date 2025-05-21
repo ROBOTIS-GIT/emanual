@@ -19,6 +19,8 @@ page_number: 2
 
 ## [[Follower] Hardware](#follower-hardware)
 
+![](/assets/images/platform/omy/omy_f3m.png)
+
 | Item | OMY-F3M |
 |:---:|:---:|
 | DOF | 6 |
@@ -38,15 +40,81 @@ page_number: 2
 | Robot Hand | RH-P12-RN |
 | Camera | Intel RealSense D405 |
 
+## [[Follower] Dimension](#follower-dimension)
+
+< Picture : OMY-F3M dimension >
+
 ## [[Follower] Workspace](#follower-workspace)
 
-## [[Follower] Layout](#follower-layout)
+![](/assets/images/platform/omy/omy_workspace.png)
+
+## [[Follower] D-H Configuration](#follower-d-h-configuration)
+
+< Picture : OMY-F3M d-h configuration>
+
+< Table : OMY-F3M d-h parameter >
+
+## [[Follower] Inertia](#follower-inertia)
+
+### Link 1
+
+< Picture : OMY-F3M Link 1 >
+
+- Mass [gram] : 1.9536110e+03
+- Center of Gravity [mm]
+  - X : 0.0000000e+00
+  - Y : -5.6914372e-01
+  - Z : 2.6565513e+01
+- Inertia Tensor with respect to C1 coordinate frame: [GRAM * MM^2]
+  - Ixx Ixy Ixz :  3.3673385e+06  3.8517468e+03 -1.0672291e+03
+  - Iyx Iyy Iyz :  3.8517468e+03  3.0875305e+06 -1.1544309e+03
+  - Izx Izy Izz : -1.0672291e+03 -1.1544309e+03  2.0888250e+06
+- Inertia Tensor at CENTER OF GRAVITY with respect to coordinate frame: [GRAM * MM^2]
+  - Ixx Ixy Ixz : 2.6573794e+06  5.1094132e+03  3.1007520e+03
+  - Iyx Iyy Iyz : 5.1094132e+03  2.4367919e+06  1.9519447e+05
+  - Izx Izy Izz : 3.1007520e+03  1.9519447e+05  2.0295510e+06
+- Principal Moments of Inertia: [GRAM * MM^2]
+  - I1 : 1.7606162e+04
+  - I2 : 2.9573501e+04
+  - I3 : 3.3802078e+04
+
+### Link 2
+
+< Picture : OMY-F3M Link 2 >
+
+### Link 3
+
+< Picture : OMY-F3M Link 3 >
+
+### Link 4
+
+< Picture : OMY-F3M Link 4 >
+
+### Link 5
+
+< Picture : OMY-F3M Link 5 >
+
+### Link 6
+
+< Picture : OMY-F3M Link 6 >
 
 ## [[Follower] Base Unit](#follower-base-unit)
 
+### Back Panel
+
+![](/assets/images/platform/omy/omy_base_unit.png)
+
+### Pin Assignment
+
+![](/assets/images/platform/omy/omy_base_panel.png)
+
 ## [[Follower] End Unit](#follower-end-unit)
 
+< Picture : OMY-F3M End Unit >
+
 ## [[Leader] Hardware](#leader-hardware)
+
+![](/assets/images/platform/omy/omy_l100.png)
 
 | Item | OMY-L100 |
 |:---:|:---:|
@@ -60,3 +128,35 @@ page_number: 2
 | Host Interface | U2D2 (USB 2.0) |
 | Internal Communications | TTL Multidrop Bus |
 | Communication Baudrate | 4 [Mbps] |
+
+## [[Leader] Dimension](#leader-dimension)
+
+< Picture : OMY-L100 dimension >
+
+## [[Leader] Inertia](#leader-inertia)
+
+< Picture : OMY-L100 inertia >
+
+### Link 1
+
+< Picture : OMY-L100 Link 1 >
+
+### Link 2
+
+< Picture : OMY-L100 Link 2 >
+
+### Link 3
+
+< Picture : OMY-L100 Link 3 >
+
+### Link 4
+
+< Picture : OMY-L100 Link 4 >
+
+### Link 5
+
+< Picture : OMY-L100 Link 5 >
+
+### Link 6
+
+< Picture : OMY-L100 Link 6 >

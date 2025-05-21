@@ -50,6 +50,14 @@ During the first operation, the Unpacking script must be executed to prevent sel
 {% endcapture %}
 <div class="notice--danger">{{ unpacking_danger_01 | markdownify }}</div>
 
+```
+ros2 launch open_manipulator_bringup unpack_y.launch.py
+```
+
+```
+ros2 launch open_manipulator_bringup pack_y.launch.py
+```
+
 ## [Teleoperation](#teleoperation)
 
 Execute the following command:
