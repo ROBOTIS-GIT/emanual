@@ -267,19 +267,42 @@ One method is to use the `camera-ros` package, and another method is to use the 
 
 This method is suitable for Raspberry Pi cameras using the libcamera stack. It is ideal for projects that demand high-quality imaging and fine-tuned control over camera settings. For more information about camera_ros, see the [camera_ros website](https://docs.ros.org/en/ros2_packages/humble/api/camera_ros/).
 
-1. Install `camera-ros`, `ros-humble-image-transport-plugins`, `v4l-utils`.  
+1. Set Up a New Workspace and Install Tools  
 **[TurtleBot3 SBC]**  
 ```bash
-$ sudo apt-get install ros-humble-camera-ros ros-humble-image-transport-plugins v4l-utils
+$ sudo apt update
+$ sudo apt install python3-colcon-meson
+$ mkdir -p ~/camera_ws/src
+$ cd ~/camera_ws/src
 ```
-- `camera-ros`: A package that publishes camera output as a topic.
-- `ros-humble-image-transport-plugins`: Converts image_raw to compressed images for smoother transmission.  
-- `v4l-utils`: A utility that assists with connection.
 
-2. Run camera_node.  
+2. Clone Required Repositories  
 **[TurtleBot3 SBC]**  
 ```bash
-$ ros2 run camera_ros camera_node --ros-args -p format:='RGB888'
+# Raspberry Pi's libcamera fork (required for full camera support)
+$ git clone https://github.com/raspberrypi/libcamera.git
+# camera_ros package
+$ git clone https://github.com/christianrauch/camera_ros.git
+```
+
+3. Install Dependencies  
+**[TurtleBot3 SBC]**  
+```bash
+$ cd ~/camera_ws
+$ rosdep install --from-paths src --ignore-src --skip-keys=libcamera -y
+```
+
+4. Build the Workspace   
+**[TurtleBot3 SBC]**  
+```bash
+$ colcon build --event-handlers=console_direct+
+$ source install/setup.bash
+```
+
+2. Launch the Camera Node  
+**[TurtleBot3 SBC]**  
+```bash
+$ ros2 launch turtlebot3_camera camera.launch.py
 ```
 
 </details>
