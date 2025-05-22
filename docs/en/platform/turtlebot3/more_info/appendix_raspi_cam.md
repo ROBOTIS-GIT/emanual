@@ -220,7 +220,7 @@ $ mkdir -p /home/ubuntu/.ros/camera_info/
 2. Create the calibration file  
 **[TurtleBot3 SBC]**  
 ```bash
-$ nano /home/ubuntu/.ros/camera_info/<camera_name>.yaml
+$ sudo nano /home/ubuntu/.ros/camera_info/<camera_name>.yaml
 ```
 **Calibration yaml file example**   
 Make sure to update the `image_width`, `image_height` values and `camera_name` to match your actual camera settings. Ensure the `camera_name` in the `.yaml` file matches the actual camera name.  
