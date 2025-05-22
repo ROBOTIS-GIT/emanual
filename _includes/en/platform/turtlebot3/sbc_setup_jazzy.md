@@ -267,7 +267,7 @@ One method is to use the `camera-ros` package, and another method is to use the 
 
 This method is suitable for Raspberry Pi cameras using the libcamera stack. It is ideal for projects that demand high-quality imaging and fine-tuned control over camera settings. For more information about camera_ros, see the [camera_ros documentation](https://docs.ros.org/en/ros2_packages/jazzy/api/camera_ros/).
 
-1. Install Required Tools 
+1. Install Required Tools  
 **[TurtleBot3 SBC]**  
 ```bash
 $ sudo apt update
@@ -276,14 +276,14 @@ $ sudo apt install python3-colcon-meson python3-ply
 - `python3-colcon-meson` : Enables colcon to build Meson-based packages like *libcamera*
 - `python3-ply` : Required by libcamera’s code generation tools
 
-2. Set up the Workspace
+2. Set up the Workspace  
 **[TurtleBot3 SBC]**  
 ```bash
 $ mkdir -p ~/camera_ws/src
 $ cd ~/camera_ws/src
 ```
 
-3. Clone Required Repositories  
+3. Clone Required Repositories   
 **[TurtleBot3 SBC]**  
 ```bash
 # Raspberry Pi libcamera fork (for full camera module support)
@@ -292,7 +292,7 @@ $ git clone https://github.com/raspberrypi/libcamera.git
 $ git clone https://github.com/christianrauch/camera_ros.git
 ```
 
-4. Install Dependencies  
+4. Install Dependencies   
 **[TurtleBot3 SBC]**  
 ```bash
 $ cd ~/camera_ws
@@ -306,7 +306,7 @@ $ colcon build --event-handlers=console_direct+
 $ source install/setup.bash
 ```
 
-6. Launch the Camera Node  
+6. Launch the Camera Node   
 You can now launch the camera node using the provided launch file.  
 **[TurtleBot3 SBC]**  
 ```bash
