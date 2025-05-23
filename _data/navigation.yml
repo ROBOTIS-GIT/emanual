@@ -939,7 +939,7 @@ all-platform:
   - title: "AI Manipulator"
     titlekr: "AI 매니퓰레이터"
     url: /platform/#ai-manipulator
-    urlkr: /platform/#AI-매니퓰레이터
+    urlkr: /platform/#ai-매니퓰레이터
   - title: "ROBOTIS OP"
     titlekr: "로보티즈 OP"
     url: /platform/#robotis-op
@@ -26193,12 +26193,18 @@ turtlebot3:
 
 #AI Manipulator-MAIN
 openmanipulator:
-  - title : "OMY"
+  - title: "OMY"
+    titlekr: "OMY"
     url: /platform/ai_manipulator_main/#omy
-  - title : "OpenMANIPULATOR-X"
+    urlkr: /platform/ai_manipulator_main/#omy
+  - title: "OpenMANIPULATOR-X"
+    titlekr: "OpenMANIPULATOR-X"
     url: /platform/ai_manipulator_main/#openmanipulator-x
-  - title : "OpenMANIPULATOR-P"
+    urlkr: /platform/ai_manipulator_main/#오픈매니퓰레이터-x
+  - title: "OpenMANIPULATOR-P"
+    titlekr: "OpenMANIPULATOR-P"
     url: /platform/ai_manipulator_main/#openmanipulator-p
+    urlkr: /platform/ai_manipulator_main/#오픈매니퓰레이터-p
 
 #OMY sidebar
 omy:
