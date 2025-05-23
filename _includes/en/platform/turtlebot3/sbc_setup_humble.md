@@ -272,9 +272,11 @@ This method is suitable for Raspberry Pi cameras using the libcamera stack. It i
 ```bash
 $ sudo apt update
 $ sudo apt install python3-colcon-meson python3-ply
+$ sudo apt install ros-humble-camera-ros
 ```
 - `python3-colcon-meson` : Enables colcon to build Meson-based packages like *libcamera*
 - `python3-ply` : Required by libcamera’s code generation tools
+- `ros-humble-camera-ros`: Installs the *camera_ros* node that uses *libcamera*
 
 2. Set up the Workspace
 **[TurtleBot3 SBC]**  
@@ -283,34 +285,29 @@ $ mkdir -p ~/camera_ws/src
 $ cd ~/camera_ws/src
 ```
 
-3. Clone Required Repositories  
+3. Clone libcamera Source  
 **[TurtleBot3 SBC]**  
+This step clones the official Raspberry Pi fork of libcamera, which provides full compatibility and optimized support for Raspberry Pi camera modules.  
 ```bash
-# Raspberry Pi libcamera fork (for full camera module support)
-$ git clone https://github.com/raspberrypi/libcamera.git
-# camera_ros package
-$ git clone https://github.com/christianrauch/camera_ros.git
+$ git clone --recursive https://github.com/raspberrypi/libcamera.git
 ```
 
-4. Install Dependencies  
-**[TurtleBot3 SBC]**  
+4. Build and Install libcamera  
+**[TurtleBot3 SBC]**   
+This installs *libcamera* to /usr/local and makes it available system-wide. 
 ```bash
-$ cd ~/camera_ws
-$ rosdep install --from-paths src --ignore-src --rosdistro humble --skip-keys=libcamera -y
+$ cd ~/camera_ws/src/libcamera
+$ meson setup build
+$ ninja -C build
+$ sudo ninja -C build install
+$ sudo ldconfig
 ```
 
-5. Build the Workspace   
-**[TurtleBot3 SBC]**  
-```bash
-$ colcon build --event-handlers=console_direct+
-$ source install/setup.bash
-```
-
-6. Launch the Camera Node  
+5. Launch the Camera Node  
 You can now launch the camera node using the provided launch file.  
 **[TurtleBot3 SBC]**  
 ```bash
-$ ros2 launch turtlebot3_camera camera.launch.py
+$ ros2 launch turtlebot3_bringup camera.launch.py
 ```
 
 </details>
@@ -363,20 +360,13 @@ $ sudo nano /boot/firmware/config.txt
 Before modifying the configuration file, make sure to check the [official Raspberry Pi documentation](https://www.raspberrypi.com/documentation/computers/camera_software.html#configuration) for your specific camera module. 
 If you plan to use the camera-ros package after this step, make sure to remove or comment out the lines `camera_auto_detect=0`, `start_x=1`, `dtoverlay=imx219` in your configuration file.
 
-5. Load the Camera Driver
-Manually load the `bcm2835-v4l2` module.  
-**[TurtleBot3 SBC]**  
-```bash
-$ sudo modprobe bcm2835-v4l2
-```
-
-6. Reboot the System  
+5. Reboot the System  
 **[TurtleBot3 SBC]**  
 ```bash
 $ sudo reboot
 ```
 
-7. You can check camera_name by this command.  
+6. You can check camera_name by this command.  
 **[TurtleBot3 SBC]**  
 ```bash
 $ v4l2-ctl --list-devices
@@ -384,7 +374,7 @@ $ v4l2-ctl --list-devices
 In this case, camera name is **mmal_service_16.1**.  
 ![](/assets/images/platform/turtlebot3/sbc_setup/camera_name.png)  
 
-8. Run v4l2_camera_node.  
+7. Run v4l2_camera_node.  
 **[TurtleBot3 SBC]**  
 ```bash
 $ ros2 run v4l2_camera v4l2_camera_node
