@@ -356,14 +356,12 @@ $ sudo nano /boot/firmware/config.txt
 ```bash
   # Disable libcamera auto detect
   camera_auto_detect=0
-  display_auto_detect=0
   # Enable legacy camera stack for bcm2835-v4l2
   start_x=1
-  gpu_mem=128
-  dtoverlay=vc4-kms-v3d
   dtoverlay=imx219  # Raspberry Pi Camera Module v2 (IMX219 sensor)
 ```  
-Before modifying the configuration file, make sure to check the [official Raspberry Pi documentation](https://www.raspberrypi.com/documentation/computers/camera_software.html#configuration) for your specific camera module.  
+Before modifying the configuration file, make sure to check the [official Raspberry Pi documentation](https://www.raspberrypi.com/documentation/computers/camera_software.html#configuration) for your specific camera module. 
+If you plan to use the camera-ros package after this step, make sure to remove or comment out the lines `camera_auto_detect=0`, `start_x=1`, `dtoverlay=imx219` in your configuration file.
 
 5. Load the Camera Driver
 Manually load the `bcm2835-v4l2` module.  
