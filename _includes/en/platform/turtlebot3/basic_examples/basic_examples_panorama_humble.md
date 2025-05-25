@@ -40,7 +40,7 @@ Depending on your setup, use one of the following:
 
 {% capture notice_04 %}
 **NOTE**:
-- A working camera is required to run this example. Depending on your system setup, you can use a Raspberry Pi Camera with a compatible driver such as `camera-ros` or `v4l2-camera`. Please refer to [SBC Setup](/docs/en/platform/turtlebot3/sbc_setup/#rpi-camera) to use the Pi Camera.    
+- A working camera is required to run this example. Depending on your system setup, you can use a Raspberry Pi Camera with a compatible driver such as `camera-ros` or `v4l2-camera`. Please refer to [SBC Setup](/docs/en/platform/turtlebot3/sbc_setup/#raspberry-pi-camera) to use the Pi Camera.    
 
 {% endcapture %}
 <div class="notice--info">{{ notice_04 | markdownify }}</div>
