@@ -31,7 +31,7 @@ The Camera Module can be used to take high-definition video, as well as stills p
 
 The TurtleBot3 uses Raspberry Pi Camera Module v2 as a default vision sensor. Check this video out that shows how Raspberry Pi Camera Module v2 can be used in TurtleBot3.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/AyZ5lcz5IzM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UqYR_z3q9a0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### [Specifications](#specifications)
 
