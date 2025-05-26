@@ -128,7 +128,7 @@ Use a black and white Checkerboard, usually 7×6 or 8×6 in size, print it out a
 ```bash
 $ sudo apt update
 $ sudo apt install ros-${ROS_DISTRO}-camera-calibration
-$ source /opt/ros/h${ROS_DISTRO}/setup.bash
+$ source /opt/ros/${ROS_DISTRO}/setup.bash
 ```  
 <br>
 
