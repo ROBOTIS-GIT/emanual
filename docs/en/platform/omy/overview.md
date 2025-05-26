@@ -17,6 +17,8 @@ page_number: 1
 
 # [Overview](#overview)
 
+![](/assets/images/platform/omy/omy_logo.png)
+
 ![](/assets/images/platform/omy/omy_product.png)
 
 - Gripper offers haptic feedback, customizable triggers.

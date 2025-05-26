@@ -13,6 +13,8 @@ sidebar:
 
 # [OMY](#omy)
 
+![](/assets/images/platform/omy/omy_logo.png)
+
 ![](/assets/images/platform/omy/omy_product.png)
 
 ## Feature

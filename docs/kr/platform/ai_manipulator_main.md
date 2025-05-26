@@ -13,6 +13,8 @@ sidebar:
 
 # [OMY](#omy)
 
+![](/assets/images/platform/omy/omy_logo.png)
+
 ![](/assets/images/platform/omy/omy_product.png)
 
 OMY는 현재 영문으로만 지원되고 있습니다. [영문 e매뉴얼의 OMY]를 이용하시기 바랍니다.
