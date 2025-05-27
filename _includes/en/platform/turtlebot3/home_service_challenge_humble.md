@@ -66,7 +66,7 @@ $ ros2 launch turtlebot3_home_service_challenge_core core_node.launch.py
 **Ready for actual robot**  
 - If you want to run the scenario with TurtleBot3 with OpenMANIPULATOR-X, check the below lists.  
   - Create a custom map, then create and save the map with [SLAM](/docs/en/platform/turtlebot3/manipulation/#slam).
-  - Set up the [Rpi-camera](/docs/en/platform/turtlebot3/sbc_setup/#rpi-camera).  
+  - Set up the [Rpi-camera](/docs/en/platform/turtlebot3/sbc_setup/#raspberry-pi-camera).  
 <br>
 
 **Run Home Service Challenge with actual robot**  
