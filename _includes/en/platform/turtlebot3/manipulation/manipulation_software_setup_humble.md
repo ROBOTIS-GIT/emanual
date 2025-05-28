@@ -8,24 +8,24 @@
 
 1. Connect to the **TurtleBot3 SBC** using the ssh command below.   
 **[Remote PC]**  
-  ```bash
-  $ ssh ubuntu@{IP_ADDRESS_OF_TURTLEBOT3}
-  ```
+```bash
+$ ssh ubuntu@{IP_ADDRESS_OF_TURTLEBOT3}
+```
 2. Install the packages for TurtleBot3 Manipulation.  
 **[TurtleBot3 SBC]**  
-  ```bash
-  $ sudo apt install ros-humble-hardware-interface ros-humble-xacro ros-humble-ros2-control ros-humble-ros2-controllers ros-humble-gripper-controllers
-  $ cd ~/turtlebot3_ws/src/
-  $ git clone -b humble https://github.com/ROBOTIS-GIT/turtlebot3_manipulation.git
-  $ cd ~/turtlebot3_ws && colcon build --symlink-install
-  ```
+```bash
+$ sudo apt install ros-humble-hardware-interface ros-humble-xacro ros-humble-ros2-control ros-humble-ros2-controllers ros-humble-gripper-controllers
+$ cd ~/turtlebot3_ws/src/
+$ git clone -b humble https://github.com/ROBOTIS-GIT/turtlebot3_manipulation.git
+$ cd ~/turtlebot3_ws && colcon build --symlink-install
+```
 
 
 1. Open a terminal on the **Remote PC** and install the required packages using the following commands.  
 **[Remote PC]**  
-  ```bash
-  $ sudo apt install ros-humble-dynamixel-sdk ros-humble-ros2-control ros-humble-ros2-controllers ros-humble-gripper-controllers ros-humble-moveit*
-  $ cd ~/turtlebot3_ws/src/
-  $ git clone -b humble https://github.com/ROBOTIS-GIT/turtlebot3_manipulation.git
-  $ cd ~/turtlebot3_ws && colcon build --symlink-install
-  ```
+```bash
+$ sudo apt install ros-humble-dynamixel-sdk ros-humble-ros2-control ros-humble-ros2-controllers ros-humble-gripper-controllers ros-humble-moveit*
+$ cd ~/turtlebot3_ws/src/
+$ git clone -b humble https://github.com/ROBOTIS-GIT/turtlebot3_manipulation.git
+$ cd ~/turtlebot3_ws && colcon build --symlink-install
+```
