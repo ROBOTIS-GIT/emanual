@@ -26011,14 +26011,12 @@ turtlebot3:
       children:
       - title: "Getting Started"
         url: /platform/turtlebot3/home_service_challenge/#getting-started
-      - title: "Camera Calibration"
-        url: /platform/turtlebot3/home_service_challenge/#camera-calibration
-      - title: "SLAM"
-        url: /platform/turtlebot3/home_service_challenge/#slam
-      - title: "Missions"
-        url: /platform/turtlebot3/home_service_challenge/#missions
       - title: "Simulation"
         url: /platform/turtlebot3/home_service_challenge/#simulation
+      - title: "Actual robot"
+        url: /platform/turtlebot3/home_service_challenge/#actual-robot
+      - title: "Missions"
+        url: /platform/turtlebot3/home_service_challenge/#missions
   - title: "Autonomous Driving"
     url: /platform/turtlebot3/autonomous_driving/#autonomous-driving
     children:
@@ -26070,18 +26068,20 @@ turtlebot3:
       url: /platform/turtlebot3/basic_examples/#move-using-interactive-markers
     - title: "Obstacle Detection"
       url: /platform/turtlebot3/basic_examples/#obstacle-detection
-    - title: "Position Control"
-      url: /platform/turtlebot3/basic_examples/#position-control
-    - title: "Point Operation"
-      url: /platform/turtlebot3/basic_examples/#point-operation
+    - title: "Relative Move"
+      url: /platform/turtlebot3/basic_examples/#relative-move
+    - title: "Absolute Move"
+      url: /platform/turtlebot3/basic_examples/#absolute-move
     - title: "Patrol"
       url: /platform/turtlebot3/basic_examples/#patrol
-    - title: "TurtleBot Follower Demo"
-      url: /platform/turtlebot3/basic_examples/#turtlebot-follower-demo
-    - title: "TurtleBot Panorama Demo"
-      url: /platform/turtlebot3/basic_examples/#turtlebot-panorama-demo
+    - title: "Follower"
+      url: /platform/turtlebot3/basic_examples/#follower
+    - title: "Panorama"
+      url: /platform/turtlebot3/basic_examples/#panorama
     - title: "Automatic Parking"
       url: /platform/turtlebot3/basic_examples/#automatic-parking
+    - title: "ArUco Tracker"
+      url: /platform/turtlebot3/basic_examples/#aruco-tracker
     - title: "Automatic Parking Vision"
       url: /platform/turtlebot3/basic_examples/#automatic-parking-vision
     - title: "Load Multiple TurtleBot3s"
@@ -26218,7 +26218,7 @@ openmanipulator_x:
     - title: "Dimension"
       url: /platform/openmanipulator_x/specification/#dimension
     - title: "Inertia"
-      url: /platform/openmanipulator_x/specification/#inertia
+      url: /platform/openmanipulator_x/specification/#intertia
     - title: "Understanding URDF"
       url: /platform/openmanipulator_x/specification/#understanding-urdf
   - title: "Assembly"
@@ -27546,7 +27546,7 @@ rplusmotion1:
         urlkr: /software/rplus1/motion/#페이지-반복속도-설정
       - title: "Inertial Force Control"
         titlekr: "관성력 조절"
-        url: /software/rplus1/motion/#inertial-force-control
+        url: /software/rplus1/motion/#intertial-force-control
         urlkr: /software/rplus1/motion/#관성력-조절
       - title: "Joint Softness"
         titlekr: "관절 유연성"

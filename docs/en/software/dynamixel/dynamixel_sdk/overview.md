@@ -17,7 +17,7 @@ sidebar:
 
 ![](/assets/images/sw/sdk/dynamixel_sdk/overview/dynamixel_sdk_concept_logo.jpg)
 
-**DYNAMIXEL SDK** is a software development kit that provides DYNAMIXEL control functions using packet communication. The API of DYNAMIXEL SDK is designed for DYNAMIXEL actuators and DYNAMIXEL-based platforms. You need to be familiar with C/C++ programming language for right use of the software. This e-Manual provides comprehensive information on ROBOTIS products and applications.
+The **DYNAMIXEL SDK** provides a set of functions for creating and processing DYNAMIXEL Protocol packets to manage DYNAMIXEL servos. The SDK provides libraries for a wide variety of programming languages including Java, C, and Python.
 
 ## [Supported DYNAMIXEL](#supported-dynamixels)
 
@@ -47,31 +47,31 @@ The DYNAMIXEL SDK supports **all DYNAMIXEL series**.
  
 ## [Supported Protocols](#supported-protocols)
 
-To control DYNAMIXEL, communication should be established according to the protocol of DYNAMIXEL. There are **versions 1.0 and 2.0 of the DYNAMIXEL protocol**. The DYNAMIXEL SDK supports both, and the user can use both protocols simultaneously using the DYNAMIXEL SDK. Refer to the following manuals for details on the protocols.
+DYNAMIXEL servos use digital serial communications to send and receive instructions. There are **versions 1.0 and 2.0 of the DYNAMIXEL protocol**, and some models of DYNAMIXEL only support one protocol version. The DYNAMIXEL SDK provides support for both, and the user can even use both protocols simultaneously using the DYNAMIXEL SDK. Refer to the following manuals for details on the protocol structure.
 
 - [DYNAMIXEL Protocol 1.0](/docs/en/dxl/protocol1/)
 - [DYNAMIXEL Protocol 2.0 (Recommended protocoltype)](/docs/en/dxl/protocol2/)
 
 ## [Supported Devices](#supported-devices)
 
-The DYNAMIXEL SDK can be used on PCs such as **desktops** or **laptops**, as well as on **tablets**, and also on **SBCs** like Raspberry Pi and UpBoards. In addition, it can be used with **embedded boards** that support the Arduino IDE. DYNAMIXEL uses TTL and RS485 communication. In order to use computer and DYNAMIXEL, we recommend [USB2DYNAMIXEL](http://emanual.robotis.com/docs/en/parts/interface/usb2dynamixel/) or [U2D2](http://emanual.robotis.com/docs/en/parts/interface/u2d2/) as interface device.
+The DYNAMIXEL SDK is available for use on PCs (**desktops** or **laptops**), and also on **SBCs** like Raspberry Pi and UpBoards. In addition, it has support for **embedded boards** through the Arduino IDE and C/C++ libraries. DYNAMIXEL servos use half-duplex TTL or RS485 communication, in order to connect your computer and DYNAMIXEL, ROBOTIS recommends the [U2D2](http://emanual.robotis.com/docs/en/parts/interface/u2d2/) USB to Serial interface.
 
 ## [Supported Operating Systems](#supported-operating-systems)
 
-The DYNAMIXEL SDK supports all three operating systems: **Windows**, **Linux**, and **MacOS**.
+The DYNAMIXEL SDK supports all three major operating systems: **Windows**, **Linux**, and **MacOS**.
 
 ## [Supported Languages](#supported-languages)
 
-The DYNAMIXEL SDK supports various programming languages: **C**, **C++**, **C#**, **Python**, **Java**, **MATLAB** and **LabVIEW**.  
-In addition, DYNAMIXEL SDK supports **ROS**, so it can be used as ROS library using C++ or Python modules.
-
-- **C**: *Dynamic library and source code of this library and examples
-- **C#, Java, MATLAB, LabVIEW**: Support based on dynamic library using C language
-- **C++**: *Dynamic library and source code of this library and examples
+The DYNAMIXEL SDK supports a variety of programming languages:
+- **C**: *Dynamic library and source code for this library and examples
+- **C#, Java, MATLAB, LabVIEW**: Support based on dynamic library for the C language
+- **C++**: *Dynamic library and source code for this library and examples
 - **Python**: Python module and examples
-- **ROS**:  ROS library using C++ and Python modules
+- **ROS/ROS2**:  ROS library using C++ and Python modules
 
-(* Dynamic library (*.dll, *.so, and *.dylib files) / .dll: dynamic-link library on Windows / .so: shared object on Linux / .dylib: dynamic library on macOS)
+*Dynamic library (.dll, .so, and .dylib files) / .dll: dynamic-link library on Windows / .so: shared object on Linux / .dylib: dynamic library on macOS
+{: .notice--warning}
+
 
 [AX-12W]: /docs/en/dxl/ax/ax-12w/
 [AX-12+/12A]: /docs/en/dxl/ax/ax-12a/
