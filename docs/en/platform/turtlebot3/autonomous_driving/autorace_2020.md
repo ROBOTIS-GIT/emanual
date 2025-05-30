@@ -1,11 +1,11 @@
 ---
 layout: archive
 lang: en
-ref: autonomous_driving
+ref: autorace_2020
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/turtlebot3/autonomous_driving/
+permalink: /docs/en/platform/turtlebot3/autonomous_driving/autorace_2020/
 tabs: "ROS"
 tab_title1: Humble
 tab_title2: Noetic
@@ -16,13 +16,13 @@ product_group: turtlebot3
 page_number: 19
 ---
 
-<style>body {counter-reset: h1 7 !important;}</style>
+<style>body {counter-reset: h1 !important;}</style>
 
 {::options parse_block_html="true" /}
 
 ![](/assets/images/platform/turtlebot3/autonomous_driving/autorace_rbiz_challenge_2017_robots_1.png)
 
-# [Autonomous Driving](#autonomous-driving)
+# [Autorace 2020](#autorace-2020)
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/turtlebot3/autonomous_driving/humble/autonomous_driving_getting_started_humble.md %}
