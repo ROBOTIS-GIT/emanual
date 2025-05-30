@@ -26211,12 +26211,10 @@ omy:
   - title: "Overview"
     url: /platform/omy/overview/#overview
     children:
-    - title: "OpenSoftware"
-      url: /platform/omy/overview/#opensoftware
-    - title: "Physical AI Ready"
-      url: /platform/omy/overview/#physical-ai-ready
-    - title: "Introduction Video"
-      url: /platform/omy/overview/#introduction-video
+    - title: "Open Source"
+      url: /platform/omy/overview/#open-source
+    - title: "Physical AI-based Imitation Learning"
+      url: /platform/omy/overview/#physical-ai-based-imitation-learning
   - title: "Specification"
     url: /platform/omy/specification/#specification
     children:

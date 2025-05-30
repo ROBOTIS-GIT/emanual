@@ -26,14 +26,12 @@ page_number: 1
 - It supports ROS2, standard URDF and various DXL SDKs for easy development and integration.
 - As open source, it allows for community contributions and flexible customization.
 
-## [OpenSoftware](#opensoftware)
+## [Open Source](#open-source)
 
-OMY (OMY-AI3M, OMY-L100) is based on ROS and OpenSource. Users can also control it more easily by linking it with the MoveIt! package. Even if you don’t have an actual robot, you can control the robot in the Gazebo simulator​.
+OMY (OMY-AI3M, OMY-L100) is based on ROS and OpenSource. Users can also control it more easily by linking it with the MoveIt! package.  
+Even if you don’t have an actual robot, you can control the robot in the Gazebo simulator​.  
+Access all source code, models, documentation, and training data for development and customization.
 
-## [Physical AI Ready](#physical-ai-ready)
+## [Physical AI-based Imitation Learning](#physical-ai-based-imitation-learning)
 
-< Text : Physical AI Support >
-
-## [Introduction Video](#introduction-video)
-
-< Youtube : Teleoperation >
+Learn from human demonstrations and adapt to environmental changes through real-world interaction and intelligence.
