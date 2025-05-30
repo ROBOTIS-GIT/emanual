@@ -345,10 +345,13 @@ main:
     - title: "TurtleBot3"
       titlekr: "터틀봇3"
       url: /platform/turtlebot3/overview/
-    - title: "OpenMANIPULATOR"
-      titlekr: "오픈매니퓰레이터"
-      url: /platform/openmanipulator_main
+    - title: "AI Manipulator"
+      titlekr: " AI 매니퓰레이터"
+      url: /platform/ai_manipulator_main
       children:
+      - title: "OMY"
+        titlekr: "OMY"
+        url: /platform/omy/overview/
       - title: "OpenMANIPULATOR-P"
         titlekr: "OpenMANIPULATOR-P"
         url: /platform/openmanipulator_p/overview/
@@ -933,10 +936,10 @@ all-platform:
     titlekr: "터틀봇3"
     url: /platform/#turtlebot3
     urlkr: /platform/#터틀봇3
-  - title: "OpenMANIPULATOR"
-    titlekr: "오픈매니퓰레이터"
-    url: /platform/#openmanipulator
-    urlkr: /platform/#오픈매니퓰레이터
+  - title: "AI Manipulator"
+    titlekr: "AI 매니퓰레이터"
+    url: /platform/#ai-manipulator
+    urlkr: /platform/#ai-매니퓰레이터
   - title: "ROBOTIS OP"
     titlekr: "로보티즈 OP"
     url: /platform/#robotis-op
@@ -26188,12 +26191,87 @@ turtlebot3:
   - title: "FAQ"
     url: /platform/turtlebot3/faq/#faq
 
-#OpenMANIPULATOR-MAIN
+#AI Manipulator-MAIN
 openmanipulator:
-  - title : "OpenMANIPULATOR-X"
-    url: /platform/openmanipulator_main/#openmanipulator-x
-  - title : "OpenMANIPULATOR-P"
-    url: /platform/openmanipulator_main/#openmanipulator-p
+  - title: "OMY"
+    titlekr: "OMY"
+    url: /platform/ai_manipulator_main/#omy
+    urlkr: /platform/ai_manipulator_main/#omy
+  - title: "OpenMANIPULATOR-X"
+    titlekr: "OpenMANIPULATOR-X"
+    url: /platform/ai_manipulator_main/#openmanipulator-x
+    urlkr: /platform/ai_manipulator_main/#오픈매니퓰레이터-x
+  - title: "OpenMANIPULATOR-P"
+    titlekr: "OpenMANIPULATOR-P"
+    url: /platform/ai_manipulator_main/#openmanipulator-p
+    urlkr: /platform/ai_manipulator_main/#오픈매니퓰레이터-p
+
+#OMY sidebar
+omy:
+  - title: "Overview"
+    url: /platform/omy/overview/#overview
+    children:
+    - title: "Open Source"
+      url: /platform/omy/overview/#open-source
+    - title: "Physical AI-based Imitation Learning"
+      url: /platform/omy/overview/#physical-ai-based-imitation-learning
+  - title: "Specification"
+    url: /platform/omy/specification/#specification
+    children:
+    - title: "[Follower] Hardware"
+      url: /platform/omy/specification/#follower-hardware
+    - title: "[Follower] Dimension"
+      url: /platform/omy/specification/#follower-dimension
+    - title: "[Follower] Workspace"
+      url: /platform/omy/specification/#follower-workspace
+    - title: "[Follower] D-H Configuration"
+      url: /platform/omy/specification/#follower-d-h-configuration
+    - title: "[Follower] Inertia"
+      url: /platform/omy/specification/#follower-inertia
+    - title: "[Follower] Base Unit"
+      url: /platform/omy/specification/#follower-base-unit
+    - title: "[Follower] End Unit"
+      url: /platform/omy/specification/#follower-end-unit
+    - title: "[Leader] Hardware"
+      url: /platform/omy/specification/#leader-hardware
+    - title: "[Leader] Dimension"
+      url: /platform/omy/specification/#leader-dimension
+    - title: "[Leader] Inertia"
+      url: /platform/omy/specification/#leader-inertia
+  - title: "Quick Start Guide"
+    url: /platform/omy/quick_start_guide/#quick-start-guide
+    children:
+    - title: "Power connection"
+      url: /platform/omy/quick_start_guide/#power-connection
+    - title: "SSH connection"
+      url: /platform/omy/quick_start_guide/#ssh-connection
+    - title: "Docker Setup"
+      url: /platform/omy/quick_start_guide/#docker-setup
+    - title: "Unpacking"
+      url: /platform/omy/quick_start_guide/#unpacking
+  - title: "Operation"
+    url: /platform/omy/ros2_operation/#operation
+    children:
+    - title: "AI Teleoperation"
+      url: /platform/omy/ros2_operation/#AI-teleoperation
+    - title: "GUI Program"
+      url: /platform/omy/ros2_operation/#gui-program
+    - title: "Keyboard Teleoperation"
+      url: /platform/omy/ros2_operation/#keyboard-teleoperation
+  - title: "Controller"
+    url: /platform/omy/ros2_controller/#controller
+    children:
+    - title : "Moveit"
+      url: /platform/omy/ros2_controller/#moveit
+  - title: "Simulation"
+    url: /platform/omy/ros2_simulation/#simulation
+    children:
+    - title: "Gazebo"
+      url: /platform/omy/ros2_simulation/#gazebo
+    - title: "Mujoco"
+      url: /platform/omy/ros2_simulation/#mujoco
+    - title: "Issac Sim"
+      url: /platform/omy/ros2_simulation/#issac-sim
 
 #OpenMANIPULATOR-X sidebar
 openmanipulator_x:

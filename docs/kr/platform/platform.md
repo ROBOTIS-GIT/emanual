@@ -17,11 +17,11 @@ sidebar:
 | :--------------------------------------------------------------------------: |
 | [![](/assets/tb3_burger_Waffle.png)](/docs/en/platform/turtlebot3/overview/) |
 
-# [오픈매니퓰레이터](#오픈매니퓰레이터)
+# [AI 매니퓰레이터](#ai-매니퓰레이터)
 
-|                                                OpenMANIPULATOR-P                                                |                                                        OpenMANIPULATOR-X                                                         |                                                    Manipulator-H                                                    |
-| :-------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------: |
-| [![](/assets/images/platform/openmanipulator_p/product_img.png)](/docs/en/platform/openmanipulator_p/overview/) | [![](/assets/images/platform/openmanipulator_x/OpenManipulator_Introduction.jpg)](/docs/en/platform/openmanipulator_x/overview/) | [![](/assets/images/platform/manipulator_h/manipulator_product.png)](/docs/en/platform/manipulator_h/introduction/) |
+|                                                    OMY                                                     |                                                OpenMANIPULATOR-P                                                |                                                        OpenMANIPULATOR-X                                                         |                                                    Manipulator-H                                                    |
+| :--------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------: |
+| [![](/assets/images/platform/omy/omy_product.png)](/docs/en/platform/omy/overview/) | [![](/assets/images/platform/openmanipulator_p/product_img.png)](/docs/en/platform/openmanipulator_p/overview/) | [![](/assets/images/platform/openmanipulator_x/OpenManipulator_Introduction.jpg)](/docs/en/platform/openmanipulator_x/overview/) | [![](/assets/images/platform/manipulator_h/manipulator_product.png)](/docs/en/platform/manipulator_h/introduction/) |
 
 **주의** : Manipulator-H 는 현재 단종되어 더 이상 판매되지 않습니다.
 {: .notice--warning}
