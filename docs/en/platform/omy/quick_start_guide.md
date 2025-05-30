@@ -39,16 +39,34 @@ To access via SSH from a Linux environment, use the following command:
 ssh root@omy-SNPR44B9999.local
 ```
 
-## [Unpacking](#unpacking)
+## Docker Access
+
+1. Connect to OMY via SSH.
+2. Check running containers using `docker ps`.
+3. Docker-related files are located in `/data/docker/open_manipulator/docker`. Navigate to this location using `cd`.
+```bash
+cd /data/docker/open_manipulator/docker
+```
+4. Access the container using `./container.sh enter`.
 
 {% capture unpacking_danger_01 %}
+
+**Note**: The `/workspace` folder inside the container is volume mapped (a feature that links file systems) to `/data/docker/open_manipulator/workspace` on the host. All other areas are volatile and will be lost if the container is damaged or deleted, so please be careful.
+{% endcapture %}
+<div class="notice--danger">{{ unpacking_danger_01 | markdownify }}</div>
+
+
+
+## [Unpacking](#unpacking)
+
+{% capture unpacking_danger_02 %}
 `DANGER`
 
 During the first operation, the Unpacking script must be executed to prevent self-collision.  
 (always run ONLY in the packed posture)
 
 {% endcapture %}
-<div class="notice--danger">{{ unpacking_danger_01 | markdownify }}</div>
+<div class="notice--danger">{{ unpacking_danger_02 | markdownify }}</div>
 
 ```
 ros2 launch open_manipulator_bringup unpack_y.launch.py
@@ -57,15 +75,3 @@ ros2 launch open_manipulator_bringup unpack_y.launch.py
 ```
 ros2 launch open_manipulator_bringup pack_y.launch.py
 ```
-
-## [Teleoperation](#teleoperation)
-
-Execute the following command:
-```
-ros2 launch open_manipulator_bringup ai_teleoperation.launch.py
-```
-
-The following procedures will be performed sequentially, enabling operation of the Leader-Follower system:
-1. Move Follower to initial position
-2. Start gravity compensation for Leader
-3. Synchronize Leader and Follower

@@ -26245,14 +26245,33 @@ omy:
       url: /platform/omy/quick_start_guide/#power-connection
     - title: "SSH connection"
       url: /platform/omy/quick_start_guide/#ssh-connection
+    - title: "Docker Setup"
+      url: /platform/omy/quick_start_guide/#docker-setup
     - title: "Unpacking"
       url: /platform/omy/quick_start_guide/#unpacking
-    - title: "Teleoperation"
-      url: /platform/omy/quick_start_guide/#teleoperation
   - title: "Operation"
     url: /platform/omy/ros2_operation/#operation
+    children:
+    - title: "AI Teleoperation"
+      url: /platform/omy/ros2_operation/#AI-teleoperation
+    - title: "GUI Program"
+      url: /platform/omy/ros2_operation/#gui-program
+    - title: "Keyboard Teleoperation"
+      url: /platform/omy/ros2_operation/#keyboard-teleoperation
+  - title: "Controller"
+    url: /platform/omy/ros2_controller/#controller
+    children:
+    - title : "Moveit"
+      url: /platform/omy/ros2_controller/#moveit
   - title: "Simulation"
     url: /platform/omy/ros2_simulation/#simulation
+    children:
+    - title: "Gazebo"
+      url: /platform/omy/ros2_simulation/#gazebo
+    - title: "Mujoco"
+      url: /platform/omy/ros2_simulation/#mujoco
+    - title: "Issac Sim"
+      url: /platform/omy/ros2_simulation/#issac-sim
 
 #OpenMANIPULATOR-X sidebar
 openmanipulator_x:
