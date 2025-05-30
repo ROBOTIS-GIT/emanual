@@ -14,11 +14,11 @@ page_number: 7
 ---
 
 
-# ROBOTIS-OP3 Ball Recognition Object Detection Model Application
+# Real-Time Ball Detection with YOLOv8 and OpenVINO on ROBOTIS-OP3
 
 ## Limitations and Problems of Existing Methods
 
-The current ball recognition method of ROBOTIS-OP3 relies on multi-stage manual feature extraction and rule-based processing. This approach sequentially applies HSV color space filtering, morphological operations, and Hough circle transform to detect balls. However, this approach reveals several serious limitations.
+The current ball detection method of ROBOTIS-OP3 relies on multi-stage manual feature extraction and rule-based processing. This approach sequentially applies HSV color space filtering, morphological operations, and Hough circle transform to detect balls. However, this approach reveals several serious limitations.
 
 - **Vulnerability of color-based filtering**: Dramatic degradation in detection performance when the ball's color changes due to lighting variations, shadows, reflections, etc.
 - **Lack of response to shape changes**: Hough circle transform assumes perfect circular objects, so it fails to detect when balls appear elliptical due to motion blur from high-speed movement or when balls are partially occluded.
@@ -42,11 +42,11 @@ The transition from existing rule-based systems to deep learning-based object de
 - **Improved maintainability**: System performance can be improved through data-centric approaches instead of complex parameter adjustments, and adaptation to new environments can be automated through retraining.
 - **Securing scalability**: Once built, deep learning models can be easily applied to various environments and are easy to integrate with additional object detection tasks.
 
-Under this background, this tutorial will provide step-by-step guidance on the specific methods and actual implementation process for transitioning from existing traditional computer vision-based ball recognition systems to state-of-the-art deep learning-based object detection models.
+Under this background, this tutorial will provide step-by-step guidance on the specific methods and actual implementation process for transitioning from existing traditional computer vision-based ball detection systems to state-of-the-art deep learning-based object detection models.
 
 ## Lightweight Object Detection Model Selection and Performance Analysis
 
-One of the most important decisions in building a deep learning-based ball recognition system is selecting an appropriate object detection model. In real-time sports environments, the balance between accuracy and speed is crucial, and hardware constraints must also be considered.
+One of the most important decisions in building a deep learning-based ball detection system is selecting an appropriate object detection model. In real-time sports environments, the balance between accuracy and speed is crucial, and hardware constraints must also be considered.
 
 ### **YOLO Series Model Performance Comparison**
 
@@ -94,7 +94,7 @@ Based on comprehensive analysis, using YOLOv8m model with OpenVINO optimization 
 - **Robustness**: Maintains consistent detection performance under various lighting conditions and complex backgrounds, fundamentally solving traditional method limitations.
 - **Scalability**: Easy customization for specific sports or environments through transfer learning based on pre-trained models.
 
-Through this selection, we can overcome the limitations of existing HSV + Hough transform methods and build a ball recognition system that simultaneously satisfies the high accuracy and real-time performance required in actual sports environments.
+Through this selection, we can overcome the limitations of existing HSV + Hough transform methods and build a ball detection system that simultaneously satisfies the high accuracy and real-time performance required in actual sports environments.
 
 ## Environment Setup
 
@@ -145,9 +145,9 @@ pip install "numpy<2.0"
 ```
 
 
-## ROS2 Package Creation and Node Implementation (YOLOv8m + OpenVINO-based Ball Recognition)
+## ROS2 Package Creation and Node Implementation (YOLOv8m + OpenVINO-based Ball detection)
 
-This section explains the complete process of creating a ROS2 package from scratch for use in ROBOTIS-OP3, completing and running a YOLOv8m + OpenVINO-based ball recognition node.
+This section explains the complete process of creating a ROS2 package from scratch for use in ROBOTIS-OP3, completing and running a YOLOv8m + OpenVINO-based ball detection node.
 
 ### 1. ROS2 Package Creation (Python-based)
 
