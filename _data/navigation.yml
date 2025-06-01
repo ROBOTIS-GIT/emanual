@@ -26018,40 +26018,25 @@ turtlebot3:
       - title: "Missions"
         url: /platform/turtlebot3/home_service_challenge/#missions
   - title: "Autonomous Driving"
-    url: /platform/turtlebot3/autonomous_driving/#autonomous-driving
     children:
-    - title: "Getting Started"
-      url: /platform/turtlebot3/autonomous_driving/#getting-started
-    - title: "Camera Calibration"
-      url: /platform/turtlebot3/autonomous_driving/#camera-calibration
+    - title: "Autorace 2020"
+      url: /platform/turtlebot3/autorace_2020/
       children:
-      - title: "Camera Imaging Calibration"
-        url: /platform/turtlebot3/autonomous_driving/#camera-imaging-calibration
-      - title: "Intrinsic Camera Calibration"
-        url: /platform/turtlebot3/autonomous_driving/#intrinsic-camera-calibration
-      - title: "Extrinsic Camera Calibration"
-        url: /platform/turtlebot3/autonomous_driving/#extrinsic-camera-calibration
-      - title: "Check Calibration Result"
-        url: /platform/turtlebot3/autonomous_driving/#check-calibration-result
-    - title: "Lane Detection"
-      url: /platform/turtlebot3/autonomous_driving/#lane-detection
-    - title: "Traffic Sign Detection"
-      url: /platform/turtlebot3/autonomous_driving/#traffic-sign-detection
-    - title: "Missions"
-      url: /platform/turtlebot3/autonomous_driving/#missions
+      - title: "Getting Started"
+        url: /platform/turtlebot3/autorace_2020/#getting-started
+      - title: "Camera Calibration"
+        url: /platform/turtlebot3/autorace_2020/#camera-calibration
+      - title: "Lane Detection"
+        url: /platform/turtlebot3/autorace_2020/#lane-detection
+      - title: "Traffic Sign Detection"
+        url: /platform/turtlebot3/autorace_2020/#traffic-sign-detection
+      - title: "Missions"
+        url: /platform/turtlebot3/autorace_2020/#missions
+    - title: "Autorace 2025"
+      url: /platform/turtlebot3/autorace_2025/
       children:
-      - title: "Traffic Lights"
-        url: /platform/turtlebot3/autonomous_driving/#traffic-lights
-      - title: "Intersection"
-        url: /platform/turtlebot3/autonomous_driving/#intersection
-      - title: "Construction"
-        url: /platform/turtlebot3/autonomous_driving/#construction
-      - title: "Parking"
-        url: /platform/turtlebot3/autonomous_driving/#parking
-      - title: "Level Crossing"
-        url: /platform/turtlebot3/autonomous_driving/#level-crossing
-      - title: "Tunnel"
-        url: /platform/turtlebot3/autonomous_driving/#tunnel
+      - title: "Object Detection"
+        url: /platform/turtlebot3/autorace_2025/#object-detection
   - title: "Machine Learning"
     url: /platform/turtlebot3/machine_learning/#machine-learning
     children:

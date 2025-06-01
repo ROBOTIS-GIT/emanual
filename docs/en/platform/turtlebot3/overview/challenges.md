@@ -38,7 +38,7 @@ ROBOTIS has prepared an online competition on [ROS Development Studio (RDS)][rds
 
 - [TurtleBot3 AutoRace](https://rds.theconstructsim.com/tc_projects/use_project_share_link/21e00583-6e60-415a-aa66-bd2c78e0733a)
 
-For more information or if you want to launch it in your remote PC, please visit [Autonomous Driving](/docs/en/platform/turtlebot3/autonomous_driving/#autonomous-driving) section.
+For more information or if you want to launch it in your remote PC, please visit [Autonomous Driving](/docs/en/platform/turtlebot3/autorace_2020/#autorace-2020) section.
 
 #### Task Mission using TurtleBot3 and OpenManipulator on RDS
 
