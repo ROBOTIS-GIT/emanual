@@ -26086,6 +26086,8 @@ turtlebot3:
       url: /platform/turtlebot3/basic_examples/#automatic-parking-vision
     - title: "Load Multiple TurtleBot3s"
       url: /platform/turtlebot3/basic_examples/#load-multiple-turtlebot3s
+    - title: "YOLO Object Detection"
+      url: /platform/turtlebot3/basic_examples/#yolo-object-detection
   - title: "Friends(Locomotion)"
     url: /platform/turtlebot3/locomotion/#friendslocomotion
     children:
