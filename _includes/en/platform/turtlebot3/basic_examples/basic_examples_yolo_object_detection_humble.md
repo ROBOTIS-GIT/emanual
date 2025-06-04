@@ -37,6 +37,7 @@ Copy the dataset loading code from Roboflow. It is provided after exporting.
 
 **Step 3: Train the Model**  
 
+**[Colab]**  
 ```bash
 from ultralytics import YOLO
 model=YOLO("yolov8n.pt")
@@ -46,7 +47,8 @@ model.train(data='{data_path}/data.yaml',epochs=100)
 - `epochs` refers to the number of times the model iterates over the entire dataset during training. If set too low, the model may not learn effectively. If set too high, training can take a long time or exceed Google Colab's GPU usage limit (approximately 12 hours). 
 
 **Step 4: Download the Trained Model**  
-After training, the best-performing weights(`best.pt`) will be saved at `/content/runs/detect/train/weights`.
+After training, the best-performing weights(`best.pt`) will be saved at `/content/runs/detect/train/weights`.  
+**[Colab]**  
 ```bash
 from google.colab import files
 files.download('/content/runs/detect/train/weights/best.pt')
@@ -62,6 +64,7 @@ scp best.pt ubuntu@{IP_ADDRESS_OF_RASPBERRY_PI}:/home/ubuntu/
 ### [**SBC Environment Setup**](#sbc-environment-setup)  
 
 **Step 1: Set up Python Virtual Environment**  
+Creating a virtual environment helps isolate the YOLO-related dependencies from the system Python environment. This ensures compatibility and prevents version conflicts with other packages on your SBC.  
 **[TurtleBot3 SBC]**  
 ```bash
 sudo apt install python3-venv
@@ -83,10 +86,18 @@ pip3 install ultralytics
 The `turtlebot3_yolo_object_detection.py` script runs the YOLOv8 model on live camera images from TurtleBot3 and publishes the detection results with bounding boxes. This allows you to visually confirm which objects are detected in real-time.  
 
 **Step 1: Customize the Script**  
+If you haven't already cloned and built the `turtlebot3_applications` package, run thr following commands first.  
+**[TurtleBot3 SBC]**  
+```bash
+$ cd ~/turtlebot3_ws/src/
+$ git clone -b humble https://github.com/ROBOTIS-GIT/turtlebot3_applications.git
+$ cd ~/turtlebot3_ws && colcon build --symlink-install
+``` 
+
 Open and edit the following file to update the model path and other parameters.  
 **[TurtleBot3 SBC]**  
 ```bash
-nano ~/turtlebot3_ws/src/turtlebot3/turtlebot3_example/turtlebot3_example/turtlebot3_yolo_object_detection/turtlebot3_yolo_object_detection.py
+nano ~/turtlebot3_ws/src/turtlebot3_applications/turtlebot3_yolo_object_detection/turtlebot3_yolo_object_detection/turtlebot3_yolo_object_detection.py
 ``` 
 
 Update the line with the correct path to your `best.pt` file.
@@ -98,18 +109,22 @@ Then, build your workspace.
 **[TurtleBot3 SBC]**  
 ```bash
 cd ~/turtlebot3_ws
-colcon build --packages-select turtlebot3_example
-source install/setup.bash
+colcon build --packages-select turtlebot3_yolo_object_detection
 ``` 
 
-**Step 2: Run the Detection Node**  
+**Step 2: Launch the Camera Node**  
+**[TurtleBot3 SBC]**  
+```bash
+ ros2 launch turtlebot3_bringup camera.launch.py
+ ``` 
 
+**Step 3: Run the Detection Node**  
 **[TurtleBot3 SBC]**  
 ```bash
 ros2 run turtlebot3_example turtlebot3_object_detection_node
 ``` 
 
-**Step 3: Visualize the Detection Results**  
+**Step 4: Visualize the Detection Results**  
 Open rqt_image_view and select the `/camera/detections/compressed` topic to view the camera feed with detection results.  
 **[Remote PC]**  
 ```bash

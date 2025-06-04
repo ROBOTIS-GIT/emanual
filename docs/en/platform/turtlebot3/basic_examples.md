@@ -23,11 +23,6 @@ page_number: 22
 
 # [Examples](#examples)
 
-<section data-id="{{ page.tab_title1 }}" class="tab_contents">
-**NOTE**: The examples will be added as quickly as possible based on **Humble**. We appreciate your interest and support.
-{: .notice--danger}
-</section>
-
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
 {% include en/platform/turtlebot3/basic_examples/basic_examples_intro_kinetic.md %}
 </section>
@@ -151,7 +146,7 @@ page_number: 22
 {% include en/platform/turtlebot3/basic_examples/basic_examples_load_multiple_turtlebot3s_kinetic.md %}
 </section>
 
-<section data-id="{{ page.tab_title1 }}" class="tab_contents">
 ## [YOLO Object Detection](#yolo-object-detection)
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/turtlebot3/basic_examples/basic_examples_yolo_object_detection_humble.md %}
 </section>
