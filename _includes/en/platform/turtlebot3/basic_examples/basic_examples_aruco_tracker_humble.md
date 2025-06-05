@@ -13,7 +13,7 @@ Before running the example, make sure the required packages is installed.
 $ cd ~/turtlebot3_ws/src/
 $ git clone -b humble https://github.com/ROBOTIS-GIT/turtlebot3_applications.git
 $ cd ~/turtlebot3_ws/
-$ colcon build --symlink-install
+$ colcon build --symlink-install --packages-select turtlebot3_aruco_tracker
 ```  
 <br>
 

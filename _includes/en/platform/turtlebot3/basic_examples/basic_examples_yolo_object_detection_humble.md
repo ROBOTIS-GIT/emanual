@@ -43,7 +43,7 @@ model=YOLO("yolov8n.pt")
 model.train(data='{data_path}/data.yaml',epochs=100)
 ```  
 - In this example, we use `yolov8n.pt`, a lightweight model optimized for speed and efficiency. You may use other variants like `yolov8s`, `m`, or `l` based on your needs.  
-- `epochs` refers to the number of times the model iterates over the entire dataset during training. If set too low, the model may not learn effectively. If set too high, training can take a long time or exceed Google Colab's GPU usage limit (approximately 12 hours). 
+- `epochs` refers to the number of times the model iterates over the entire dataset during training. If set too low, the model may not learn effectively. If set too high, training can take a long time or exceed Google Colab's GPU usage limit. 
 
 **Step 5: Download the Trained Model**  
 After training, the best-performing weights(`best.pt`) will be saved at `/content/runs/detect/train/weights`.  
@@ -57,13 +57,22 @@ files.download('/content/runs/detect/train/weights/best.pt')
 Transfer the `best.pt` model to your TurtleBot3 SBC.  
 **[Remote PC]**  
 ```bash
-$ scp best.pt ubuntu@{IP_ADDRESS_OF_RASPBERRY_PI}:/home/ubuntu/
+$ scp ~/Downloads/best.pt ubuntu@{IP_ADDRESS_OF_RASPBERRY_PI}:/home/ubuntu/
 ```  
 Replace `/home/ubuntu/` with the actual target directory on your SBC where you want to store the model file.
 
 ### [**SBC Environment Setup**](#sbc-environment-setup)  
 
-**Step 1: Set up Python Virtual Environment**  
+**Step 1: ROS2 Package Setup**  
+If you haven't already cloned and built the `turtlebot3_applications` package, run thr following commands first.  
+**[TurtleBot3 SBC]**  
+```bash
+$ cd ~/turtlebot3_ws/src/
+$ git clone -b humble https://github.com/ROBOTIS-GIT/turtlebot3_applications.git
+$ cd ~/turtlebot3_ws && colcon build --symlink-install --packages-select turtlebot3_yolo_object_detection
+``` 
+
+**Step 2: Set up Python Virtual Environment**  
 Creating a virtual environment helps isolate the YOLO-related dependencies from the system Python environment. This ensures compatibility and prevents version conflicts with other packages on your SBC.  
 **[TurtleBot3 SBC]**  
 ```bash
@@ -73,11 +82,10 @@ $ python3 -m venv yolo_env
 $ source ~/venv/yolo_env/bin/activate
 ```  
 
-**Step 2: Install the Required Dependencies**  
+**Step 3: Install the Required Dependencies**  
 Install PyTorch and Ultralytics.  
 **[TurtleBot3 SBC]**  
 ```bash
-$ pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 $ pip3 install ultralytics
 ```  
 
@@ -85,13 +93,6 @@ $ pip3 install ultralytics
 The `turtlebot3_yolo_object_detection.py` script runs the YOLOv8 model on live camera images from TurtleBot3 and publishes the detection results with bounding boxes. This allows you to visually confirm which objects are detected in real-time.  
 
 **Step 1: Customize the Script**  
-If you haven't already cloned and built the `turtlebot3_applications` package, run thr following commands first.  
-**[TurtleBot3 SBC]**  
-```bash
-$ cd ~/turtlebot3_ws/src/
-$ git clone -b humble https://github.com/ROBOTIS-GIT/turtlebot3_applications.git
-$ cd ~/turtlebot3_ws && colcon build --symlink-install
-``` 
 
 Open and edit the following file to update the model path and other parameters.  
 **[TurtleBot3 SBC]**  
