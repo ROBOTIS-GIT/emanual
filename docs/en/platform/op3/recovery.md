@@ -349,7 +349,7 @@ $ colcon build --symlink-install && source ~/.bashrc
     2. Go to `General` > `Buttons` > `When power button is pressed` and change the option to `Shutdown`.    
 
 - Running the demo at the startup  
-    > Reference : [Running the demo at the startup]
+    > Reference: [Running the demo at the startup]
 
 
 
