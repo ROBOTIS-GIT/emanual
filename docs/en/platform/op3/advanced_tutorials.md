@@ -586,7 +586,7 @@ def compressed_image_callback(self, msg: CompressedImage) -> None:
         for result in results:
             if result.boxes is not None:
                 for box in result.boxes:
-                    x1, y1, x2, y2 = box.xyxy[^0].cpu().numpy()
+                    x1, y1, x2, y2 = box.xyxy[0].cpu().numpy()
                     conf = float(box.conf[^0].cpu().numpy())
                     
                     detections.append({
