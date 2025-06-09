@@ -25150,6 +25150,11 @@ op3:
       url: /platform/op3/tutorials/#how-to-use-web-setting-tool
     - title: "Read-Write Tutorial"
       url: /platform/op3/tutorials/#read-write-tutorial
+  - title: "Advanced Tutorials"
+    url: /platform/op3/advanced_tutorials/#advanced-tutorials
+    children:
+    - title: "Real-Time Ball Detection with YOLOv8 and OpenVINO"
+      url: /platform/op3/advanced_tutorials/#real-time-ball-detection-with-yolov8-and-openvino-on-robotis-op3
   - title: "Simulation"
     url: /platform/op3/simulation/#simulation
     children:

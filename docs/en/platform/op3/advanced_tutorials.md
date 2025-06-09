@@ -1,22 +1,36 @@
 ---
 layout: archive
 lang: en
-ref: op3_tutorial_1_yolo
+ref: op3_advanced_tutorials
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/op3/tutorial_1_yolo/
+permalink: /docs/en/platform/op3/advanced_tutorials/
+tabs: "Revision"
+tab_title1: "2025 ~"
+tab_title2: "~ 2023"
 sidebar:
   title: ROBOTIS OP3
   nav: "op3"
 product_group: op3
-page_number: 7
+page_number: 6
 ---
 
+<style>body {counter-reset: h1 5 !important;}</style>
 
-# Real-Time Ball Detection with YOLOv8 and OpenVINO on ROBOTIS-OP3
+{::options parse_block_html="true" /}
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
 
-## Limitations and Problems of Existing Methods
+# [Advanced Tutorials](#advanced-tutorials)
+
+
+## Real-Time Ball Detection with YOLOv8 and OpenVINO on ROBOTIS-OP3
+
+This tutorial provides a comprehensive guide to implementing real-time ball detection on the ROBOTIS-OP3 humanoid robot using the YOLOv8 object detection model and Intel OpenVINO toolkit. The goal is to transition from traditional computer vision methods to a deep learning-based approach, significantly improving detection accuracy and robustness in dynamic sports environments.  
+
+<iframe width="1024" height="576" src="https://www.youtube.com/embed/phvHhRuzCzI" title="Real-Time Ball Detection with YOLOv8 and OpenVINO on ROBOTIS-OP3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+### Limitations and Problems of Existing Methods
 
 The current ball detection method of ROBOTIS-OP3 relies on multi-stage manual feature extraction and rule-based processing. This approach sequentially applies HSV color space filtering, morphological operations, and Hough circle transform to detect balls. However, this approach reveals several serious limitations.
 
@@ -25,7 +39,7 @@ The current ball detection method of ROBOTIS-OP3 relies on multi-stage manual fe
 - **Complexity of parameter adjustment**: 23 different parameters must be manually adjusted according to the environment, which greatly limits the system's versatility.
 
 
-## Deep Learning-Based Object Detection Solution
+### Deep Learning-Based Object Detection Solution
 
 Deep learning-based object detection models provide an innovative approach that can fundamentally solve the limitations of traditional methods.
 
@@ -34,7 +48,7 @@ Deep learning-based object detection models provide an innovative approach that 
 - **Utilization of transfer learning**: By applying transfer learning based on pre-trained models, high performance can be achieved with relatively small amounts of specialized data.
 
 
-## Necessity and Expected Effects of System Transition
+### Necessity and Expected Effects of System Transition
 
 The transition from existing rule-based systems to deep learning-based object detection represents not just a technical upgrade but a fundamental paradigm shift.
 
@@ -44,11 +58,11 @@ The transition from existing rule-based systems to deep learning-based object de
 
 Under this background, this tutorial will provide step-by-step guidance on the specific methods and actual implementation process for transitioning from existing traditional computer vision-based ball detection systems to state-of-the-art deep learning-based object detection models.
 
-## Lightweight Object Detection Model Selection and Performance Analysis
+### Lightweight Object Detection Model Selection and Performance Analysis
 
 One of the most important decisions in building a deep learning-based ball detection system is selecting an appropriate object detection model. In real-time sports environments, the balance between accuracy and speed is crucial, and hardware constraints must also be considered.
 
-### **YOLO Series Model Performance Comparison**
+#### **YOLO Series Model Performance Comparison**
 
 Let's compare major candidates from the YOLO series, which is currently the most widely used real-time object detection model.
 
@@ -63,7 +77,7 @@ Let's compare major candidates from the YOLO series, which is currently the most
 
 **YOLOv8 Advantage**: The YOLOv8 series achieves **9-10% higher mAP** compared to YOLOv5 models of the same size, with YOLOv8n showing **33% improved accuracy** over YOLOv5n. This is the result of latest architectural improvements, enabling more stable detection performance in complex sports environments.
 
-### **Comparison with Lightweight Models**
+#### **Comparison with Lightweight Models**
 
 Comparison with lightweight models for mobile and edge devices is also important:
 
@@ -77,7 +91,7 @@ Comparison with lightweight models for mobile and edge devices is also important
 
 EfficientDet and SSD MobileNet series have **smaller model sizes and faster inference speeds**, but show significant differences in accuracy compared to YOLOv8. Especially considering the complex backgrounds and fast movements in sports environments, these accuracy differences greatly affect practicality.
 
-### Performance Improvement through OpenVINO Optimization
+#### Performance Improvement through OpenVINO Optimization
 
 Using Intel OpenVINO toolkit can improve YOLOv8 model CPU inference speed by up to 3 times. This is key technology that enables real-time processing even in environments without GPUs.
 
@@ -85,7 +99,7 @@ Using Intel OpenVINO toolkit can improve YOLOv8 model CPU inference speed by up 
 
 OpenVINO automatically utilizes various hardware including Intel CPUs, integrated GPUs, and VPUs to provide additional performance improvements. This allows maximum utilization of available hardware resources without code changes.
 
-### Final Model Selection
+#### Final Model Selection
 
 Based on comprehensive analysis, using YOLOv8m model with OpenVINO optimization is the optimal choice.
 
@@ -96,7 +110,7 @@ Based on comprehensive analysis, using YOLOv8m model with OpenVINO optimization 
 
 Through this selection, we can overcome the limitations of existing HSV + Hough transform methods and build a ball detection system that simultaneously satisfies the high accuracy and real-time performance required in actual sports environments.
 
-## Environment Setup
+### Environment Setup
 
 - **Python Environment**: Create a Python virtual environment to prevent package conflicts.
 
@@ -145,11 +159,11 @@ pip install "numpy<2.0"
 ```
 
 
-## ROS2 Package Creation and Node Implementation (YOLOv8m + OpenVINO-based Ball detection)
+### ROS2 Package Creation and Node Implementation (YOLOv8m + OpenVINO-based Ball detection)
 
 This section explains the complete process of creating a ROS2 package from scratch for use in ROBOTIS-OP3, completing and running a YOLOv8m + OpenVINO-based ball detection node.
 
-### 1. ROS2 Package Creation (Python-based)
+#### 1. ROS2 Package Creation (Python-based)
 
 ```bash
 cd ~/robotis_ws/src
@@ -159,7 +173,7 @@ ros2 pkg create op3_advanced_detector \
 ```
 
 
-### 2. Package Directory Structure
+#### 2. Package Directory Structure
 
 The created `op3_advanced_detector` directory has the following structure:
 
@@ -172,7 +186,7 @@ op3_advanced_detector/
 ```
 
 
-### 3. Node Basic File Creation
+#### 3. Node Basic File Creation
 
 The final created `op3_advanced_detector` directory has the following structure:
 
@@ -195,9 +209,9 @@ op3_advanced_detector/
 ```
 
 
-## Code Structure and Description
+### Code Structure and Description
 
-### Main Class: OP3AdvancedDetector class
+#### Main Class: OP3AdvancedDetector class
 
 ```python
 class OP3AdvancedDetector(Node):
@@ -224,7 +238,7 @@ class OP3AdvancedDetector(Node):
 ```
 
 
-### Initialization Functions
+#### Initialization Functions
 
 **`__init__(self)`: Main Constructor**
 
@@ -371,7 +385,7 @@ class OP3AdvancedDetector(Node):
 1. OpenVINO (Intel optimization): Best performance
 2. PyTorch CPU: Compatibility backup
 
-### Image Processing Functions
+#### Image Processing Functions
 
 **`image_callback(self, msg)`: Main Image Processing Loop**
 
@@ -494,7 +508,7 @@ def compressed_image_callback(self, msg: CompressedImage) -> None:
 - Compatibility: Support various camera types
 
 
-### AI Model Inference Functions
+#### AI Model Inference Functions
 
 **`_detect_balls(self, image)`: Execute Ball Detection**
 
@@ -665,7 +679,7 @@ Class score positions:
 - Effect: Leave only one box per ball
 
 
-### Result Publishing Functions
+#### Result Publishing Functions
 
 **`_publish_results(self, detections, transform_info, original_shape)`: Integrated Result Publishing**
 
@@ -874,7 +888,7 @@ Class score positions:
 - Color coding: First ball (green), others (yellow)
 
 
-### Performance Monitoring Functions
+#### Performance Monitoring Functions
 
 **`_update_performance(self, process_time, ball_count)`: Performance Update**
 
@@ -934,7 +948,7 @@ Class score positions:
 - Max time: Worst-case latency
 
 
-### Utility Functions
+#### Utility Functions
 
 **`_try_openvino_setup(self)`: Attempt OpenVINO Setup**
 
@@ -1058,7 +1072,7 @@ Class score positions:
 - Optimization: Complete runtime optimization
 
 
-### Error Handling and State Management
+#### Error Handling and State Management
 
 **`_handle_no_detection(self)`: Handle Detection Failure**
 
@@ -1093,7 +1107,7 @@ Class score positions:
 - `"ERROR:..."`: System error
 
 
-### Main Execution Function
+#### Main Execution Function
 
 **`main(args=None)`: Program Entry Point**
 
@@ -1129,3 +1143,8 @@ def main(args=None):
 
 In this tutorial, we solved the vulnerabilities of the HSV + Hough method with AI object detection. The YOLOv8m + OpenVINO combination enabled robust ball detection even with environmental changes and achieved real-time performance of ≥15FPS even in CPU-only environments. The code structure is easily extensible to various objects (e.g., goals, opposing players). For example, by retraining the YOLOv8 model with goal data or training additional classes, the same node can be extended to detect multiple objects.
 
+</section>
+
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+{% include en/platform/op3/advanced_tutorials_rev2.md %}
+</section>

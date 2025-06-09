@@ -13,10 +13,10 @@ sidebar:
   title: ROBOTIS OP3
   nav: "op3"
 product_group: op3
-page_number: 7
+page_number: 8
 ---
 
-<style>body {counter-reset: h1 6 !important;}</style>
+<style>body {counter-reset: h1 7 !important;}</style>
 
 {::options parse_block_html="true" /}
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
