@@ -42,7 +42,7 @@ Simulate TurtleBot3 with OpenMANIPULATOR-X in Gazebo.
 **[Remote PC]**  
 1. Run the Gazebo Simulation.  
 ```bash
-$ ros2 launch turtlebot3_home_service_challenge_simulation competition.launch.py
+$ ros2 launch turtlebot3_manipulation_gazebo turtlebot3_home_service_challenge.launch.py
 ```
 
     ![gazebo_simulation](/assets/images/platform/turtlebot3/home_service_challenge/humble/gazebo_simulation.png)
