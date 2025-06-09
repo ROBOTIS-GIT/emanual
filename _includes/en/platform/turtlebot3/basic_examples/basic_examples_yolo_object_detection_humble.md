@@ -11,6 +11,25 @@ YOLO(You Only Look Once) is a real-time object detection model. It views the ent
 
 **Step 1: Data Annotation (Labeling)**  
 To create your own custom datset, you need to go through a *data annotation(labeling)* process. 
+- Option A: Upload Your Own Images  
+1. Go to [Roboflow](https://roboflow.com/) and create a new project  
+2. Upload your images (from TurtleBot3 camera or bag files)
+3. Click `Annotate` and draw bounding boxes for each object  
+3. Create class names  
+4. Click `Generate` to finalize the dataset  
+
+For detailed guidance, see the official [Roboflow Annotate Documentation](https://docs.roboflow.com/annotate/use-roboflow-annotate).
+
+{% capture notice_04 %}
+**NOTE**:
+- Label at least 50–100 images per class
+- Ensure variation in lighting, angles, and backgrounds
+- Include some empty images (no objects) to reduce false positives    
+
+{% endcapture %}
+<div class="notice--info">{{ notice_04 | markdownify }}</div>
+
+- Option B: Use Public Dataset (Quick Start)
 In this example, we are using a public dataset from Roboflow, which is already labeled. To explore a public dataset, go [here](https://universe.roboflow.com/).
 
 **Step 2: Export the Dataset**  
