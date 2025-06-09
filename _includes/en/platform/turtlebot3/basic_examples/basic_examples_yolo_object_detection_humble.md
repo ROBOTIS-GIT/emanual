@@ -43,7 +43,8 @@ model=YOLO("yolov8n.pt")
 model.train(data='{data_path}/data.yaml',epochs=100)
 ```  
 - In this example, we use `yolov8n.pt`, a lightweight model optimized for speed and efficiency. You may use other variants like `yolov8s`, `m`, or `l` based on your needs.  
-- `epochs` refers to the number of times the model iterates over the entire dataset during training. If set too low, the model may not learn effectively. If set too high, training can take a long time or exceed Google Colab's GPU usage limit. 
+- `epochs` refers to the number of times the model iterates over the entire dataset during training. If set too low, the model may not learn effectively. If set too high, training can take a long time or exceed Google Colab's GPU usage limit.  
+- `data_path` refers to the directory where your dataset and `data.yaml` file are located.  
 
 **Step 5: Download the Trained Model**  
 After training, the best-performing weights(`best.pt`) will be saved at `/content/runs/detect/train/weights`.  
@@ -53,28 +54,38 @@ from google.colab import files
 files.download('/content/runs/detect/train/weights/best.pt')
 ```  
 
-**Step 6: Transfer to SBC**  
-Transfer the `best.pt` model to your TurtleBot3 SBC.  
-**[Remote PC]**  
-```bash
-$ scp ~/Downloads/best.pt ubuntu@{IP_ADDRESS_OF_RASPBERRY_PI}:/home/ubuntu/
-```  
-Replace `/home/ubuntu/` with the actual target directory on your SBC where you want to store the model file.
-
-### [**SBC Environment Setup**](#sbc-environment-setup)  
+### [**Remote PC Setup**](#remote-pc-setup)  
 
 **Step 1: ROS2 Package Setup**  
-If you haven't already cloned and built the `turtlebot3_applications` package, run thr following commands first.  
-**[TurtleBot3 SBC]**  
+If you haven't already cloned and built the `turtlebot3_applications` package, run the following commands first.  
+**[Remote PC]**  
 ```bash
 $ cd ~/turtlebot3_ws/src/
 $ git clone -b humble https://github.com/ROBOTIS-GIT/turtlebot3_applications.git
 $ cd ~/turtlebot3_ws && colcon build --symlink-install --packages-select turtlebot3_yolo_object_detection
 ``` 
 
-**Step 2: Set up Python Virtual Environment**  
-Creating a virtual environment helps isolate the YOLO-related dependencies from the system Python environment. This ensures compatibility and prevents version conflicts with other packages on your SBC.  
-**[TurtleBot3 SBC]**  
+**Step 2: Customize the Script**  
+The `turtlebot3_yolo_object_detection.py` script runs the YOLOv8 model on live camera images from TurtleBot3 and publishes the detection results with bounding boxes. This allows you to visually confirm which objects are detected in real-time.  
+
+Open and edit the following file to update the model path and other parameters.  
+**[Remote PC]**  
+```bash
+$ nano ~/turtlebot3_ws/src/turtlebot3_applications/turtlebot3_yolo_object_detection/turtlebot3_yolo_object_detection/turtlebot3_yolo_object_detection.py
+``` 
+Update the line with the correct path to your `best.pt` file.
+```bash
+self.model = YOLO("~/Downloads/best.pt")  # Update with your actual model path
+``` 
+Then, build your workspace.  
+**[Remote PC]**  
+```bash
+$ cd ~/turtlebot3_ws && colcon build --symlink-install --packages-select turtlebot3_yolo_object_detection
+``` 
+
+**Step 3: Set up Python Virtual Environment**  
+Creating a virtual environment helps isolate the YOLO-related dependencies from the system Python environment. This ensures compatibility and prevents version conflicts with other packages on your remote PC.  
+**[Remote PC]**  
 ```bash
 $ sudo apt install python3-venv
 $ mkdir ~/venv && cd ~/venv
@@ -82,50 +93,39 @@ $ python3 -m venv yolo_env
 $ source ~/venv/yolo_env/bin/activate
 ```  
 
-**Step 3: Install the Required Dependencies**  
+**Step 4: Install the Required Dependencies**  
 Install PyTorch and Ultralytics.  
-**[TurtleBot3 SBC]**  
+Visit the official [PyTorch Installation Guide](https://pytorch.org/get-started/locally/) to install the correct version for your system.  
+**[Remote PC]**  
 ```bash
-$ pip3 install ultralytics
+# For CPU-only (example)
+$ pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+```  
+Once PyTorch is installed,  
+**[Remote PC]**  
+```bash
+$ pip3 install ultralytics opencv-python
 ```  
 
-### [**ROS2 Integration & Prediction**](#ros2-integration-prediction)  
-The `turtlebot3_yolo_object_detection.py` script runs the YOLOv8 model on live camera images from TurtleBot3 and publishes the detection results with bounding boxes. This allows you to visually confirm which objects are detected in real-time.  
+### [**Camera Stream Setup**](#camera-stream-setup)  
 
-**Step 1: Customize the Script**  
-
-Open and edit the following file to update the model path and other parameters.  
-**[TurtleBot3 SBC]**  
-```bash
-$ nano ~/turtlebot3_ws/src/turtlebot3_applications/turtlebot3_yolo_object_detection/turtlebot3_yolo_object_detection/turtlebot3_yolo_object_detection.py
-``` 
-
-Update the line with the correct path to your `best.pt` file.
-```bash
-self.model = YOLO("/home/ubuntu/best.pt")  # Update with your actual model path
-``` 
-
-Then, build your workspace.  
-**[TurtleBot3 SBC]**  
-```bash
-$ cd ~/turtlebot3_ws
-$ colcon build --packages-select turtlebot3_yolo_object_detection
-``` 
-
-**Step 2: Launch the Camera Node**  
+**Launch the Camera Node**  
+Ensure that the SBC and Remote PC are on the same network and ROS2 DDS communication is properly set(e.g., `ROS_DOMAIN_ID`, `ROS_LOCALHOST_ONLY=0`).  
 **[TurtleBot3 SBC]**  
 ```bash
  $ ros2 launch turtlebot3_bringup camera.launch.py
  ``` 
 
-**Step 3: Run the Detection Node**  
-**[TurtleBot3 SBC]**  
+### [**Prediction**](#prediction)  
+
+**Step 1: Run the Detection Node**  
+**[Remote PC]**  
 ```bash
-$ ros2 run turtlebot3_example turtlebot3_object_detection_node
+$ ros2 run turtlebot3_yolo_object_detection turtlebot3_object_detection_node
 ``` 
 
-**Step 4: Visualize the Detection Results**  
-Open rqt_image_view and select the `/camera/detections/compressed` topic to view the camera feed with detection results.  
+**Step 2: Visualize the Detection Results**  
+Open rqt_image_view and select the `/camera/detections/compressed` topic to view the camera feed with detection results. The detection node publishes the result as annotated image to the `/camera/detections/compressed` topic using OpenCV.  
 **[Remote PC]**  
 ```bash
 $ rqt_image_view
