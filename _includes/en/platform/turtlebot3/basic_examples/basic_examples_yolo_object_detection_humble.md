@@ -82,6 +82,7 @@ If you haven't already cloned and built the `turtlebot3_applications` package, r
 $ cd ~/turtlebot3_ws/src/
 $ git clone -b humble https://github.com/ROBOTIS-GIT/turtlebot3_applications.git
 $ cd ~/turtlebot3_ws && colcon build --symlink-install --packages-select turtlebot3_yolo_object_detection
+$ source install/setup.bash
 ``` 
 
 **Step 2: Customize the Script**  
@@ -100,19 +101,10 @@ Then, build your workspace.
 **[Remote PC]**  
 ```bash
 $ cd ~/turtlebot3_ws && colcon build --symlink-install --packages-select turtlebot3_yolo_object_detection
+$ source install/setup.bash
 ``` 
 
-**Step 3: Set up Python Virtual Environment**  
-Creating a virtual environment helps isolate the YOLO-related dependencies from the system Python environment. This ensures compatibility and prevents version conflicts with other packages on your remote PC.  
-**[Remote PC]**  
-```bash
-$ sudo apt install python3-venv
-$ mkdir ~/venv && cd ~/venv
-$ python3 -m venv yolo_env
-$ source ~/venv/yolo_env/bin/activate
-```  
-
-**Step 4: Install the Required Dependencies**  
+**Step 3: Install the Required Dependencies**  
 Install PyTorch and Ultralytics.  
 Visit the official [PyTorch Installation Guide](https://pytorch.org/get-started/locally/) to install the correct version for your system.  
 **[Remote PC]**  
@@ -123,7 +115,7 @@ $ pip3 install torch torchvision torchaudio --index-url https://download.pytorch
 Once PyTorch is installed,  
 **[Remote PC]**  
 ```bash
-$ pip3 install ultralytics opencv-python
+$ pip3 install ultralytics opencv-python "numpy<2.0"
 ```  
 
 ### [**Camera Stream Setup**](#camera-stream-setup)  
@@ -132,7 +124,7 @@ $ pip3 install ultralytics opencv-python
 Ensure that the SBC and Remote PC are on the same network and ROS2 DDS communication is properly set(e.g., `ROS_DOMAIN_ID`, `ROS_LOCALHOST_ONLY=0`).  
 **[TurtleBot3 SBC]**  
 ```bash
- $ ros2 launch turtlebot3_bringup camera.launch.py
+ $ ros2 launch turtlebot3_bringup camera.launch.py format:=BGR888
  ``` 
 
 ### [**Prediction**](#prediction)  
@@ -140,7 +132,7 @@ Ensure that the SBC and Remote PC are on the same network and ROS2 DDS communica
 **Step 1: Run the Detection Node**  
 **[Remote PC]**  
 ```bash
-$ ros2 run turtlebot3_yolo_object_detection turtlebot3_object_detection_node
+$ ros2 run turtlebot3_yolo_object_detection turtlebot3_yolo_object_detection
 ``` 
 
 **Step 2: Visualize the Detection Results**  
