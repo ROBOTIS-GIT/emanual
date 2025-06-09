@@ -68,7 +68,7 @@ After the robot performs an action, it receives a reward or penalty for its beha
 **Run machine learning**  
 1. **Bring the stage in Gazebo map.**
 ``` bash
-$ ros2 launch turtlebot3_gazebo turtlebot3_dqn_{$stage_num}.launch.py
+$ ros2 launch turtlebot3_gazebo turtlebot3_dqn_stage{$stage_num}.launch.py
 ```  
 <br>
 
