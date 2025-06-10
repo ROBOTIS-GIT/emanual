@@ -1,7 +1,7 @@
 
 **What is YOLO?**  
 YOLO(You Only Look Once) is a real-time object detection model. It views the entire image in a single pass("only once") and predicts both the bounding boxes and class probabilities directly. This makes YOLO extremely fast and efficient, making it ideal for real-time applications on TurtleBot3.  
-> In this example, we use *YOLOv8* to perform real-time object detection using the TurtleBot3 camera. We will train a custom model and integrate it into a ROS2 node for deployment on the robot. By the end of this tutorial, you’ll be able to train a YOLO model to recognize specific objects and run real-time detection directly on your TurtleBot3.   
+> In this example, we use *YOLOv8* to perform real-time object detection using the TurtleBot3 camera. We will train a custom model and integrate it into a ROS 2 node for deployment on the robot. By the end of this tutorial, you’ll be able to train a YOLO model to recognize specific objects and run real-time detection directly on your TurtleBot3.   
 
 **What Tools Are Used?**
 - [Roboflow](https://roboflow.com/) : Dataset preparation & export in YOLO format
@@ -75,7 +75,7 @@ files.download('/content/runs/detect/train/weights/best.pt')
 
 ### [**Remote PC Setup**](#remote-pc-setup)  
 
-**Step 1: ROS2 Package Setup**  
+**Step 1: ROS 2 Package Setup**  
 If you haven't already cloned and built the `turtlebot3_applications` package, run the following commands first.  
 **[Remote PC]**  
 ```bash
@@ -121,7 +121,7 @@ $ pip3 install ultralytics opencv-python "numpy<2.0"
 ### [**Camera Stream Setup**](#camera-stream-setup)  
 
 **Launch the Camera Node**  
-Ensure that the SBC and Remote PC are on the same network and ROS2 DDS communication is properly set(e.g., `ROS_DOMAIN_ID`, `ROS_LOCALHOST_ONLY=0`).  
+Ensure that the SBC and Remote PC are on the same network and ROS 2 DDS communication is properly set(e.g., `ROS_DOMAIN_ID`, `ROS_LOCALHOST_ONLY=0`).  
 **[TurtleBot3 SBC]**  
 ```bash
  $ ros2 launch turtlebot3_bringup camera.launch.py format:=BGR888
