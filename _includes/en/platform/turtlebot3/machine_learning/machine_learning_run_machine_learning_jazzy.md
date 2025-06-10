@@ -44,7 +44,7 @@ The behavior is determined by epsilon value, which decreases as training progres
     - **What is epsilon?**
         - Epsilon is the probability of an agent doing an 'Exploration'.
         - Exploration means trying out different behaviors because you don't know much about the environment, so the Q value isn't accurate yet.
-        - If the epsilon value is high, behaviors with high Q-values are more likely to be selected, and if the epsilon value is low, random behaviors (exploration) are more likely to be selected.  
+        - If the epsilon value is high, random behaviors (exploration) are more likely to be selected. If the epsilon value is low, behaviors with high Q-values (exploitation) are more likely to be selected.  
 <br>
 
 3. **Training model**  

@@ -9,4 +9,4 @@ The contents in e-Manual are subject to be updated without a prior notice. There
 {: .notice--warning} 
 
 This shows reinforcement learning with TurtleBot3 in gazebo.
-This reinforcement learning is applied DQN(Deep Q-Learning) algorithm with LDS.  
+This reinforcement learning example uses the Deep Q-Network (DQN) algorithm, utilizing data from the robot's Laser Distance Sensor (LDS).

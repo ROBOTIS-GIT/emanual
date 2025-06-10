@@ -65,7 +65,6 @@ At each step, it determines whether it succeeded or failed, and calculates a rew
 def calculate_reward(self):
   yaw_reward = 1 - (2 * abs(self.goal_angle) / math.pi)
   obstacle_reward = self.compute_weighted_obstacle_reward()
-  print('directional_reward: %f, obstacle_reward: %f' % (yaw_reward, obstacle_reward))
   reward = yaw_reward + obstacle_reward
   if self.succeed:
         reward = 100.0

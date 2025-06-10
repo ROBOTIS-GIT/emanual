@@ -29,7 +29,6 @@ page_number: 21
 
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
 {% include en/platform/turtlebot3/machine_learning/machine_learning_intro_jazzy.md %}
-{: .notice--danger}
 </section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">

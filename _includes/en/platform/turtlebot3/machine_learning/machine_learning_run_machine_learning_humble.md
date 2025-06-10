@@ -44,7 +44,7 @@ The behavior is determined by epsilon value, which decreases as training progres
     - **What is epsilon?**
         - Epsilon is the probability of an agent doing an 'Exploration'.
         - Exploration means trying out different behaviors because you don't know much about the environment, so the Q value isn't accurate yet.
-        - If the epsilon value is high, behaviors with high Q-values are more likely to be selected, and if the epsilon value is low, random behaviors (exploration) are more likely to be selected.  
+        - If the epsilon value is high, random behaviors (exploration) are more likely to be selected. If the epsilon value is low, behaviors with high Q-values (exploitation) are more likely to be selected.  
 <br>
 
 3. **Training model**  
@@ -54,15 +54,15 @@ After the robot performs an action, it receives a reward or penalty for its beha
 **Machine Learning launch argument**  
 `stage_num`
 - default: 1
-- describtion: The integer value of stage you want to run. This package has stations numbered 1 through 4, as described above.  
+- description: The integer value of stage you want to run. This package has stations numbered 1 through 4, as described above.  
 
 `max_training_episodes`
 - default: 1000
-- describtion: The integer value of an episode you want to run.  
+- description: The integer value of an episode you want to run.  
 
 `load_episode`
 - default: 600
-- describtion: The integer value of an episode you want to test. More complex stages may require more episodes to learn enough.  
+- description: The integer value of an episode you want to test. More complex stages may require more episodes to learn enough.  
 <br>
 
 **Run machine learning**  
