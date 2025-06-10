@@ -82,7 +82,7 @@ $ ros2 launch turtlebot3_manipulation_bringup hardware.launch.py
 $ ros2 run camera_ros camera_node --ros-args -p format:='RGB888' -p width:=320 -p height:=240
 ```
 
-3. Run a Nav2 for Gazebo and set 2D Pose Estimate in Rviz. If you want to use a custom map, run it with the launch argument.  
+3. Run a Nav2 and set 2D Pose Estimate in Rviz. If you want to use a custom map, run it with the launch argument.  
 **[Remote PC]**
 ```bash
 $ ros2 launch turtlebot3_home_service_challenge_tools navigation2.launch.py map_yaml_file:=$HOME/map.yaml
