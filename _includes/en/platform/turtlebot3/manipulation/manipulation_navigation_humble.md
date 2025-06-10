@@ -11,7 +11,7 @@ Bring up the TurtleBot3 Manipulation `Actual` or `Simulation` using the followin
 OR  
 `Simulation` **[Remote PC]**  
   ```bash
-  $ ros2 launch turtlebot3_manipulation_bringup gazebo.launch.py
+  $ ros2 launch turtlebot3_manipulation_gazebo gazebo.launch.py
   ```
 
 ### Run Navigation Nodes  
