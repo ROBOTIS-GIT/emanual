@@ -42,7 +42,7 @@ sidebar:
 
 {% capture notice_01 %}
 **WARNING**:
-If the library file needs to be built in a lower or higher version of Visual Studio, change the `Platform Toolset` into the needed value. (ex: To use the DynamixelSDK c ver. library file in the MATLAB 2010 or LabVIEW 2010, the `Platform Toolset` should be changed into `Visual Studio 2009` lower.)
+If the library file needs to be built in a lower or higher version of Visual Studio, change the `Platform Toolset` into the needed value. (ex: To use the DynamixelSDK c ver. library file in the MATLAB 2010 or LabVIEW 2010, the `Platform Toolset` should be changed to `Visual Studio 2009` lower.)
 {% endcapture %}
 <div class="notice--warning">{{ notice_01 | markdownify }}</div>
 
