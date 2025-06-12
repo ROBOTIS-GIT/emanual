@@ -19,5 +19,8 @@ page_number: 4
 
 # [Controller](#controller)
 
+## [Launch Controller](#launch-controller)
+{% include en/platform/omy/controller/launch_controller_jazzy.md %}
+
 ## [MoveIt](#moveit)
 {% include en/platform/omy/controller/moveit_jazzy.md %}

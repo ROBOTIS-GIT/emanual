@@ -13,6 +13,5 @@ $ sudo apt-get install gz-harmonic
 ``` bash
 $ ros2 launch open_manipulator_bringup gazebo.launch.py
 ```
-
-2. The red cube indicates the end-effector link.  
-**Image**
+![](/assets/images/platform/omy/OMY_Gazebo.png)
+2. Run [Operation](/docs/en/platform/omy/ros2_operation) in Gazebo simulation

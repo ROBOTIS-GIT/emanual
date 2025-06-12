@@ -26257,6 +26257,8 @@ omy:
   - title: "Controller"
     url: /platform/omy/ros2_controller/#controller
     children:
+    - title : "Launch Controller"
+      url: /platform/omy/ros2_controller/#launch-controller
     - title : "Moveit"
       url: /platform/omy/ros2_controller/#moveit
   - title: "Operation"

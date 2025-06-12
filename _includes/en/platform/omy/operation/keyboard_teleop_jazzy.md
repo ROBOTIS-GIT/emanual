@@ -1,6 +1,6 @@
 Control the manipulator (simulation or hardware) using your keyboard
 ```bash
-ros2 run open_manipulator_teleop keyboard_control_y.py
+ros2 run open_manipulator_teleop keyboard_control_y
 ```
 **Joint Control**
 - `1` / `q` - Joint 1
