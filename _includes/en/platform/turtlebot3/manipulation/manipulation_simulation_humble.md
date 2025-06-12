@@ -1,14 +1,24 @@
 
 Simulate the TurtleBot3 Manipulation using Gazebo by following the instructions below.
 
+### [Install Simulation Package](#install-simulation-package)
+
+Install the packages for TurtleBot3 Manipulation Gazebo simulation.
+
+**[Remote PC]**  
+```bash
+$ cd ~/turtlebot3_ws/src/
+$ git clone -b humble https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
+$ cd ~/turtlebot3_ws && colcon build --symlink-install
+```
+
 ### [How to Run Gazebo](#how-to-run-gazebo)
 
 Bringup the TurtleBot3 with OpenMANIPULATOR-X in Gazebo world with the following command.
 
-**[Remote PC]** 
-
+**[Remote PC]**  
 ```bash
-$ ros2 launch turtlebot3_manipulation_bringup gazebo.launch.py
+$ ros2 launch turtlebot3_manipulation_gazebo gazebo.launch.py
 ```
 
 ![](/assets/images/platform/turtlebot3/manipulation/tb3_manipulation_ros2_gazebo.png)
@@ -21,7 +31,7 @@ $ ros2 launch turtlebot3_manipulation_bringup gazebo.launch.py
 In order to run with RViz, append the `start_rviz` parameter as below.  
 **[Remote PC]**  
 ```bash
-$ ros2 launch turtlebot3_manipulation_bringup gazebo.launch.py start_rviz:=true
+$ ros2 launch turtlebot3_manipulation_gazebo gazebo.launch.py start_rviz:=true
 ```
 {% endcapture %}
 <div class="notice--info">{{ tip_01 | markdownify }}</div>

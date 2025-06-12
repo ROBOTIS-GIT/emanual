@@ -199,10 +199,10 @@ It is not a mandatory and it may require more time to replace the cable afterwar
 
 ## [App Installation](#app-installation)
 
-- ROBOTIS ENGIEER KIT supports R+Task 3.0.
+- ROBOTIS ENGINEER KIT supports R+Task 3.0.
 - R+ Task 3.0 is an integrated software tool that combines R+ Task 2.0 and R+ Motion 2.0.
-- Program the robot with a task tool.
-- Make any motios easily with a motion tool. 
+- Easily program your robot with the R+ task tool.
+- Make any motion easily with the integrated motion tool. 
 
 {% capture software_install_01 %} 
 ![](/assets/images/edu/engineer/kit1/icon_task_48.png)  

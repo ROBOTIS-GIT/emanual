@@ -13,10 +13,10 @@ sidebar:
   title: ROBOTIS OP3
   nav: "op3"
 product_group: op3
-page_number: 8
+page_number: 9
 ---
 
-<style>body {counter-reset: h1 7 !important;}</style>
+<style>body {counter-reset: h1 8 !important;}</style>
 
 {::options parse_block_html="true" /}
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
@@ -348,6 +348,9 @@ $ colcon build --symlink-install && source ~/.bashrc
     1. Go to Start Button > `Settings` > `Power Manager`.
     2. Go to `General` > `Buttons` > `When power button is pressed` and change the option to `Shutdown`.    
 
+- Running the demo at the startup  
+    > Reference: [Running the demo at the startup]
+
 
 
 ## [Recovery of ROBOTIS-OP3](#recovery-of-robotis-op3)
@@ -414,6 +417,8 @@ Clonezilla can be used to recover the ROBOTIS-OP3 software from the image file i
 
 [humanoid_navigation]: /docs/en/platform/thormang3/thormang3_ros_packages/#humanoid_navigation
 [How to Use the Web Setting Tool]: /docs/en/platform/op3/tutorials/#how-to-use-web-setting-tool
+
+[Running the demo at the startup]: /docs/en/platform/op3/getting_started/#running-the-demo-at-startup
 
 </section>
 

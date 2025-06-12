@@ -26,18 +26,18 @@ DYNAMIXEL servos communicate using one of the following digital serial interface
 * TTL: TTL-based DYNAMIXEL's have 3 pin connectors
 * RS485: RS485-based DYNAMIXEL's have 4 pin connectors. 
 
-The SDK and its examples were written for compatibility with the ROBOTIS [U2D2](docs/en/parts/interface/u2d2/) USB to Serial converter, which is shown below. You can use any other converter as long as it generates TTL or RS485-level signals. 
+The SDK and its examples were written for compatibility with the ROBOTIS [U2D2](docs/en/parts/interface/u2d2/) USB to Serial converter, which is shown below. You can use any other converter as long as it generates half-duplex TTL or RS485 signals. 
 
 ![](/assets/images/parts/interface/u2d2_product.jpg)
 
 Since other signal ports, such as UART, I2C, etc., may differ based on your controller specification, advanced users may wish to modify the SDK themselves to optimize for their specific controllers.
 
 The U2D2 requires the configuration of the following settings for communication with connected DYNAMIXEL servos:
- * DEVICENAME: `/dev/ttyUSB0` for Linux, `COM1` for Windows (for examples using MultiPort, + `/dev/ttyUSB1` for Linux, + `COM2` for Windows)
+ * DEVICENAME: The default is `/dev/ttyUSB0` for Linux and Mac or `COM1` for Windows
  * DYNAMIXEL ID: Each connected DYNAMIXEL must have a unique ID.
 
 ### [Controllers](#controllers)
-The SDK was tested on desktop PC and some common SBCs such as Raspberry Pi and ODROID, with the following OS configurations:
+The SDK was tested on desktop PCs and common SBCs such as the Raspberry Pi and ODROID, in the following OS configurations:
 
 |                 | PC | Intel Joule | Up Board | Raspberry Pi | ODROID |
 |:---------------:|:--:|:-----------:|:--------:|:------------:|:------:|
@@ -89,7 +89,7 @@ If you don't want to install R+, install the latest VCP driver from the [FTDI Dr
   ![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/ftdi_driver_install/ln101_driverinstall_01.png)
 
 * Choose your driver's directory.  
-a. The driver must be in **LN101** folder of the R+ installation folder.  
+a. The driver must be in the **LN101** folder of the R+ installation folder.  
 b. If you don't want to install R+, install the latest VCP driver from the [FTDI Driver Download page](http://www.ftdichip.com/Drivers/VCP.htm).
  
 * Click **Next** to start the installation. 
@@ -102,7 +102,7 @@ b. If you don't want to install R+, install the latest VCP driver from the [FTDI
 
 #### [Installation in Linux](#installation-in-linux)
 
-Recent Linux releases include the kernel which contains the FT232RL driver for the FTDI driver used by the U2D2. **Hence, most users won't need to install the driver manually.**
+Recent Linux releases include the kernel which contains the FT232RL driver for the FTDI driver used by the U2D2. **Most users won't need to install the driver manually.**
 
 ## [DYNAMIXEL](#dynamixel)
 
@@ -143,14 +143,14 @@ SDK examples were tested with the following DYNAMIXEL's:
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/dynamixel_setting/1.png)
 
-* 24V for PRO 
+* 24V for P and Y series
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/dynamixel_setting/2.png)
 
 ### [DYNAMIXEL Parameters](#dynamixel-parameters)
 
-To run the SDK examples, the following DYNAMIXEL parameters need to be changed: 
-* ID = 1 (and 2, when the example uses two DYNAMIXEL's) 
+To run the SDK examples, the following DYNAMIXEL parameters may need to be changed: 
+* ID = 1 (and 2, when the example uses two DYNAMIXELs) 
 * Baud Rate = 57600 bps (baud value = 34 for MX, 1 for PRO.)
 
 To change DYNAMIXEL parameters, use [DYNAMIXEL Wizard](http://emanual.robotis.com/docs/en/software/rplus1/dynamixel_wizard/#introduction) or [RoboPlus Manager](http://emanual.robotis.com/docs/en/software/rplus2/manager/).

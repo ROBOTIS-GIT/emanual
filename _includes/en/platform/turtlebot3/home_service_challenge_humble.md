@@ -42,7 +42,7 @@ Simulate TurtleBot3 with OpenMANIPULATOR-X in Gazebo.
 **[Remote PC]**  
 1. Run the Gazebo Simulation.  
 ```bash
-$ ros2 launch turtlebot3_home_service_challenge_simulation competition.launch.py
+$ ros2 launch turtlebot3_manipulation_gazebo turtlebot3_home_service_challenge.launch.py
 ```
 
     ![gazebo_simulation](/assets/images/platform/turtlebot3/home_service_challenge/humble/gazebo_simulation.png)
@@ -66,7 +66,7 @@ $ ros2 launch turtlebot3_home_service_challenge_core core_node.launch.py
 **Ready for actual robot**  
 - If you want to run the scenario with TurtleBot3 with OpenMANIPULATOR-X, check the below lists.  
   - Create a custom map, then create and save the map with [SLAM](/docs/en/platform/turtlebot3/manipulation/#slam).
-  - Set up the [Rpi-camera](/docs/en/platform/turtlebot3/sbc_setup/#rpi-camera).  
+  - Set up the [Rpi-camera](/docs/en/platform/turtlebot3/sbc_setup/#raspberry-pi-camera).  
 <br>
 
 **Run Home Service Challenge with actual robot**  
@@ -82,7 +82,7 @@ $ ros2 launch turtlebot3_manipulation_bringup hardware.launch.py
 $ ros2 run camera_ros camera_node --ros-args -p format:='RGB888' -p width:=320 -p height:=240
 ```
 
-3. Run a Nav2 for Gazebo and set 2D Pose Estimate in Rviz. If you want to use a custom map, run it with the launch argument.  
+3. Run a Nav2 and set 2D Pose Estimate in Rviz. If you want to use a custom map, run it with the launch argument.  
 **[Remote PC]**
 ```bash
 $ ros2 launch turtlebot3_home_service_challenge_tools navigation2.launch.py map_yaml_file:=$HOME/map.yaml
