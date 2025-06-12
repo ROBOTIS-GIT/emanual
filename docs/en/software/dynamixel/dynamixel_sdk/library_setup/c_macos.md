@@ -5,7 +5,7 @@ ref: c_macos
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/software/dynamixel/dynamixel_sdk/library_setup/c_macos/dummy_dummy_dummy
+permalink: /docs/en/software/dynamixel/dynamixel_sdk/library_setup/c_macos/
 sidebar:
   title: DYNAMIXEL SDK
   nav: "dynamixel_sdk"
@@ -24,17 +24,18 @@ sidebar:
 
 #### [Compiler](#compiler)
 
-* GNU gcc ver. 5.4.0 20160609 or higher
-* To check the version of your gcc compiler:  
-
+The DYNAMIXEL SDK for Mac requires GNU gcc ver. 5.4.0 20160609 or higher
+You'll need to install Homebrew in order to install the required gcc compiler
   ``` bash
-  $ gcc -v 
+  $ xcode-select --install
+  $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  $ brew install gcc
   ```
 
-* Download the required compiler:  
+You can verify your gcc installation with the following command:
 
   ``` bash 
-  $ sudo apt-get install gcc-5
+  $ gcc --version
   ```
 
 #### [Builder](#builder)
