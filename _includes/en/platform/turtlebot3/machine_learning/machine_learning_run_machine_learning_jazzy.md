@@ -1,6 +1,3 @@
-
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/5uIZU8PCHT8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
 The contents in e-Manual are subject to be updated without a prior notice. Therefore, some video may differ from the contents in e-Manual.
 {: .notice--warning}  
 <br>
@@ -12,19 +9,19 @@ Stage 1 is a 4x4 map with no obstacles.
     ![](/assets/images/platform/turtlebot3/machine_learning/stage_1.jpg)  
 <br>
 
-2. **Stage 2 (Static Obstacle)**  
+1. **Stage 2 (Static Obstacle)**  
 Stage 2 is a 4x4 map with four cylinders of static obstacles.
 
     ![](/assets/images/platform/turtlebot3/machine_learning/stage_2.jpg)  
 <br>
 
-3. **Stage 3 (Moving Obstacle)**  
+1. **Stage 3 (Moving Obstacle)**  
 Stage 3 is a 4x4 map with four cylinders of moving obstacles.
 
     ![](/assets/images/platform/turtlebot3/machine_learning/stage_3.jpg)  
 <br>
 
-4. **Stage 4 (Combination Obstacle)**  
+1. **Stage 4 (Combination Obstacle)**  
 Stage 4 is a 5x5 map with walls and two cylinders of moving obstacles.
 
     ![](/assets/images/platform/turtlebot3/machine_learning/stage_4.jpg)  
