@@ -85,26 +85,7 @@ $ cd ~/turtlebot3_ws && colcon build --symlink-install --packages-select turtleb
 $ source install/setup.bash
 ``` 
 
-**Step 2: Customize the Script**  
-The `turtlebot3_yolo_object_detection.py` script runs the YOLOv8 model on live camera images from TurtleBot3 and publishes the detection results with bounding boxes. This allows you to visually confirm which objects are detected in real-time.  
-
-Open and edit the following file to update the model path and other parameters.  
-**[Remote PC]**  
-```bash
-$ nano ~/turtlebot3_ws/src/turtlebot3_applications/turtlebot3_yolo_object_detection/turtlebot3_yolo_object_detection/turtlebot3_yolo_object_detection.py
-``` 
-Update the line with the correct path to your `best.pt` file.
-```bash
-self.model = YOLO("~/Downloads/best.pt")  # Update with your actual model path
-``` 
-Then, build your workspace.  
-**[Remote PC]**  
-```bash
-$ cd ~/turtlebot3_ws && colcon build --symlink-install --packages-select turtlebot3_yolo_object_detection
-$ source install/setup.bash
-``` 
-
-**Step 3: Install the Required Dependencies**  
+**Step 2: Install the Required Dependencies**  
 Install PyTorch and Ultralytics.  
 Visit the official [PyTorch Installation Guide](https://pytorch.org/get-started/locally/) to install the correct version for your system.  
 **[Remote PC]**  
@@ -130,9 +111,10 @@ Ensure that the SBC and Remote PC are on the same network and ROS 2 DDS communic
 ### [**Prediction**](#prediction)  
 
 **Step 1: Run the Detection Node**  
+You can pass the path to your `best.pt` model file as a parameter at runtime.
 **[Remote PC]**  
 ```bash
-$ ros2 run turtlebot3_yolo_object_detection turtlebot3_yolo_object_detection
+$ ros2 run turtlebot3_yolo_object_detection turtlebot3_yolo_object_detection --ros-args -p model_path:=<path_to_best.pt>
 ``` 
 
 **Step 2: Visualize the Detection Results**  
