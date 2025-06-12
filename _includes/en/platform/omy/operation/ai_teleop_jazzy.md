@@ -1,5 +1,4 @@
-
-#### AI Teleoperation Execution  
+### AI Teleoperation Execution  
 After accessing the Docker container, use the following command:  
 ```
 ros2 launch open_manipulator_bringup ai_teleoperation.launch.py

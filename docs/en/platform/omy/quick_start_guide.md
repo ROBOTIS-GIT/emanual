@@ -39,7 +39,7 @@ To access via SSH from a Linux environment, use the following command:
 ssh root@omy-SNPR44B9999.local
 ```
 
-## Docker Access
+## [Docker Setup](#docker-setup)
 
 1. Connect to OMY via SSH.
 2. Check running containers using `docker ps`.
@@ -60,7 +60,7 @@ cd /data/docker/open_manipulator/docker
 ## [Unpacking](#unpacking)
 
 {% capture unpacking_danger_02 %}
-`DANGER`
+**DANGER**
 
 During the first operation, the Unpacking script must be executed to prevent self-collision.  
 (always run ONLY in the packed posture)

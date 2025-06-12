@@ -12,12 +12,12 @@ sidebar:
   title: "OMY"
   nav: "omy"
 product_group: omy
-page_number: 6
+page_number: 4
 ---
 
-<style>body {counter-reset: h1 4 !important;}</style>
+<style>body {counter-reset: h1 3 !important;}</style>
 
 # [Controller](#controller)
-<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+
+## [MoveIt](#moveit)
 {% include en/platform/omy/controller/moveit_jazzy.md %}
-</section>

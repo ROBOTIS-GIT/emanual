@@ -26254,20 +26254,20 @@ omy:
       url: /platform/omy/quick_start_guide/#docker-setup
     - title: "Unpacking"
       url: /platform/omy/quick_start_guide/#unpacking
-  - title: "Operation"
-    url: /platform/omy/ros2_operation/#operation
-    children:
-    - title: "AI Teleoperation"
-      url: /platform/omy/ros2_operation/#AI-teleoperation
-    - title: "GUI Program"
-      url: /platform/omy/ros2_operation/#gui-program
-    - title: "Keyboard Teleoperation"
-      url: /platform/omy/ros2_operation/#keyboard-teleoperation
   - title: "Controller"
     url: /platform/omy/ros2_controller/#controller
     children:
     - title : "Moveit"
       url: /platform/omy/ros2_controller/#moveit
+  - title: "Operation"
+    url: /platform/omy/ros2_operation/#operation
+    children:
+    - title: "AI Teleoperation"
+      url: /platform/omy/ros2_operation/#ai-teleoperation
+    - title: "GUI Program"
+      url: /platform/omy/ros2_operation/#gui-program
+    - title: "Keyboard Teleoperation"
+      url: /platform/omy/ros2_operation/#keyboard-teleoperation
   - title: "Simulation"
     url: /platform/omy/ros2_simulation/#simulation
     children:

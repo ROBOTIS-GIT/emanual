@@ -12,17 +12,15 @@ sidebar:
   title: "OMY"
   nav: "omy"
 product_group: omy
-page_number: 7
+page_number: 6
 ---
 
-<style>body {counter-reset: h1 4 !important;}</style>
+<style>body {counter-reset: h1 5 !important;}</style>
 
 # [Simulation](#simulation)
 
-## [Launch gazebo](#launch-gazebo)
-<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+## [Gazebo](#gazebo)
 {% include en/platform/omy/simulation/gazebo_jazzy.md %}
-</section>
 
 ## [Mujoco](#Mujoco)
 {% include en/platform/omy/simulation/mujoco.md %}
