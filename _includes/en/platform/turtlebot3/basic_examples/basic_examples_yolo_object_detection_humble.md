@@ -111,11 +111,12 @@ Ensure that the SBC and Remote PC are on the same network and ROS 2 DDS communic
 ### [**Prediction**](#prediction)  
 
 **Step 1: Run the Detection Node**  
-You can pass the path to your `best.pt` model file as a parameter at runtime.
+You can pass the path to your `best.pt` model file as a parameter at runtime. Replace the `model_path` with the path to your custom-trained `.pt` file.  
 **[Remote PC]**  
 ```bash
-$ ros2 run turtlebot3_yolo_object_detection turtlebot3_yolo_object_detection --ros-args -p model_path:=<path_to_best.pt>
+$ ros2 launch turtlebot3_yolo_object_detection turtlebot3_yolo_object_detection.launch.py model_path:=<path_to_best.pt>
 ``` 
+> To test quickly without training or downloading a model, set `model_path:=yolov8n.pt` to use the COCO pre-trained YOLOv8 model.  
 
 **Step 2: Visualize the Detection Results**  
 Open rqt_image_view and select the `/camera/detections/compressed` topic to view the camera feed with detection results. The detection node publishes the result as annotated image to the `/camera/detections/compressed` topic using OpenCV.  
