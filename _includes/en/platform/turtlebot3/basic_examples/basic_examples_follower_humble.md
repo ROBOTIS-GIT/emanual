@@ -9,7 +9,7 @@ Go to your `turtlebot3_ws` directory and clone the `turtlebot3_applications` and
 $ sudo apt install ros-humble-navigation2
 $ cd ~/turtlebot3_ws/src
 $ git clone https://github.com/ROBOTIS-GIT/turtlebot3_applications.git
-$ cd ~/turtlebot3_ws && colcon build --symlink-install
+$ cd ~/turtlebot3_ws && colcon build --symlink-install --packages-select turtlebot3_follower
 ```
 </div>
 
