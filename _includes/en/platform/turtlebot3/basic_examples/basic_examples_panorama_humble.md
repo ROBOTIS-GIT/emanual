@@ -47,13 +47,13 @@ Depending on your setup, use one of the following:
 - For `camera-ros`  
 **[TurtleBot3 SBC]**  
 ```bash
-$  ros2 launch turtlebot3_bringup camera.launch.py
+$  ros2 launch turtlebot3_bringup camera.launch.py format:=BGR888
 ```
 - For `v4l2-camera`  
 Adding `-r __ns:=/camera` organizes all topics published by the node under the `/camera` namespace.   
 **[TurtleBot3 SBC]**  
 ```bash
-$ ros2 run v4l2_camera v4l2_camera_node
+$ ros2 run v4l2_camera v4l2_camera_node --ros-args -p output_encoding:="bgr8" -r __ns:=/camera
 ```
 
 **Step 3:  Launch the panorama application**  

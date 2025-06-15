@@ -105,7 +105,7 @@ $ pip3 install ultralytics opencv-python "numpy<2.0"
 Ensure that the SBC and Remote PC are on the same network and ROS 2 DDS communication is properly set(e.g., `ROS_DOMAIN_ID`, `ROS_LOCALHOST_ONLY=0`).  
 **[TurtleBot3 SBC]**  
 ```bash
- $ ros2 launch turtlebot3_bringup camera.launch.py format:=BGR888
+ $ ros2 launch turtlebot3_bringup camera.launch.py format:=RGB888
  ``` 
 
 ### [**Prediction**](#prediction)  
