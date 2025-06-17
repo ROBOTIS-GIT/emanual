@@ -68,10 +68,20 @@ During the first operation, the Unpacking script must be executed to prevent sel
 {% endcapture %}
 <div class="notice--danger">{{ unpacking_danger_02 | markdownify }}</div>
 
+When you first receive the OMY, the manipulator is folded as shown in the image below.  
+You can move it to the initial position by running the following command for unpacking:  
+<img src="/assets/images/platform/omy/omy_pack.png" width="600"/>
+
+The image below shows the initial position after UNPACKING.  
+
+<img src="/assets/images/platform/omy/omy_unpack.png" width="600"/>
+
+This is the command to UNPACK the manipulator,  
 ```
 ros2 launch open_manipulator_bringup unpack_y.launch.py
 ```
 
+and the following is the command to PACK it back.  
 ```
 ros2 launch open_manipulator_bringup pack_y.launch.py
 ```

@@ -12,7 +12,7 @@ sidebar:
   title: "OMY"
   nav: "omy"
 product_group: omy
-page_number: 6
+page_number: 5
 ---
 
 <style>body {counter-reset: h1 5 !important;}</style>

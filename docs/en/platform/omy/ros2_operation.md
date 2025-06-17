@@ -12,7 +12,7 @@ sidebar:
   title: "OMY"
   nav: "omy"
 product_group: omy
-page_number: 5
+page_number: 4
 ---
 
 <style>body {counter-reset: h1 4 !important;}</style>
@@ -22,6 +22,12 @@ page_number: 5
 
 ## [AI Teleoperation](#ai-teleoperation)
 {% include en/platform/omy/operation/ai_teleop_jazzy.md %}
+
+## [Launch Controller](#launch-controller)
+{% include en/platform/omy/operation/launch_controller_jazzy.md %}
+
+## [MoveIt](#moveit)
+{% include en/platform/omy/operation/moveit_jazzy.md %}
 
 ## [GUI Program](#gui-program)
 {% include en/platform/omy/operation/gui_program_jazzy.md %}

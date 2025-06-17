@@ -26256,18 +26256,15 @@ omy:
       url: /platform/omy/quick_start_guide/#docker-setup
     - title: "Unpacking"
       url: /platform/omy/quick_start_guide/#unpacking
-  - title: "Controller"
-    url: /platform/omy/ros2_controller/#controller
-    children:
-    - title : "Launch Controller"
-      url: /platform/omy/ros2_controller/#launch-controller
-    - title : "Moveit"
-      url: /platform/omy/ros2_controller/#moveit
   - title: "Operation"
     url: /platform/omy/ros2_operation/#operation
     children:
     - title: "AI Teleoperation"
       url: /platform/omy/ros2_operation/#ai-teleoperation
+    - title: "Bringup"
+      url: /platform/omy/ros2_operation/#launch-controller
+    - title: "Moveit"
+      url: /platform/omy/ros2_operation/#moveit
     - title: "GUI Program"
       url: /platform/omy/ros2_operation/#gui-program
     - title: "Keyboard Teleoperation"
@@ -26281,7 +26278,15 @@ omy:
       url: /platform/omy/ros2_simulation/#mujoco
     - title: "Issac Sim"
       url: /platform/omy/ros2_simulation/#issac-sim
-
+  - title: "Physical AI Tools"
+    url: /platform/omy/ros2_ai/#physical-ai-tools
+    children:
+    - title: "Data Collection"
+      url: /platform/omy/ros2_ai/#data-collection
+    - title: "Model Training"
+      url: /platform/omy/ros2_ai/#model-training
+    - title: "Model Inference"
+      url: /platform/omy/ros2_ai/#model-inference
 #OpenMANIPULATOR-X sidebar
 openmanipulator_x:
   - title: "Overview"

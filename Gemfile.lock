@@ -33,8 +33,7 @@ GEM
       logger
     faraday-net_http (3.4.0)
       net-http (>= 0.5.0)
-    ffi (1.17.1-x64-mingw-ucrt)
-    ffi (1.17.1-x86_64-linux-gnu)
+    ffi (1.17.2)
     forwardable-extended (2.6.0)
     gemoji (4.1.0)
     html-pipeline (2.14.3)
