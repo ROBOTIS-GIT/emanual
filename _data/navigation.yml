@@ -26225,12 +26225,10 @@ omy:
     children:
     - title: "[Follower] Hardware"
       url: /platform/omy/specification/#follower-hardware
-    - title: "[Follower] Dimension"
-      url: /platform/omy/specification/#follower-dimension
+    - title: "[Follower] Layout"
+      url: /platform/omy/specification/#follower-layout
     - title: "[Follower] Workspace"
       url: /platform/omy/specification/#follower-workspace
-    - title: "[Follower] D-H Configuration"
-      url: /platform/omy/specification/#follower-d-h-configuration
     - title: "[Follower] Inertia"
       url: /platform/omy/specification/#follower-inertia
     - title: "[Follower] Base Unit"
@@ -26239,8 +26237,8 @@ omy:
       url: /platform/omy/specification/#follower-end-unit
     - title: "[Leader] Hardware"
       url: /platform/omy/specification/#leader-hardware
-    - title: "[Leader] Dimension"
-      url: /platform/omy/specification/#leader-dimension
+    - title: "[Leader] Layout"
+      url: /platform/omy/specification/#leader-layout
     - title: "[Leader] Inertia"
       url: /platform/omy/specification/#leader-inertia
   - title: "Quick Start Guide"
