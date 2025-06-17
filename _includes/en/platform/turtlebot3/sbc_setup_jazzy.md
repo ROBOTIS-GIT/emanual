@@ -254,10 +254,138 @@ Apply changes with the command below.
 $ source ~/.bashrc
 ```
 
-**This is it! Now you are done with SBC setup :)**  
-Next Step : [OpenCR Setup](/docs/en/platform/turtlebot3/opencr_setup/#opencr-setup)
-{: .notice--success}
+### [Raspberry Pi Camera](#raspberry-pi-camera)
+![](/assets/images/platform/turtlebot3/appendix_raspi_cam/Pi-Camera-front.jpg)
 
+Introducing how to use the RPi camera with TurtleBot3 running Ubuntu 24.04 on a Raspberry Pi. There are various ways to publish the output of a RPi camera as a topic.  
+One method is to use the `camera-ros` package, which relies on the libcamera stack, and another method is to use the `v4l2-camera` package, which uses the V4L2 (Video4Linux2) framework. In Ubuntu 24.04, and using libcamera for camera management is highly recommended. The shift away from V4L2 is in line with the overall trend to use libcamera for better performance and compatibility with modern hardware.
+
+<details>
+<summary>
+![](/assets/images/icon_unfold.png) **Method 1. Using the camera-ros package**  
+</summary>
+
+This method is suitable for Raspberry Pi cameras using the libcamera stack. It is ideal for projects that demand high-quality imaging and fine-tuned control over camera settings. For more information about camera_ros, see the [camera_ros documentation](https://docs.ros.org/en/ros2_packages/jazzy/api/camera_ros/).
+
+**1. Install Required Tools**  
+**[TurtleBot3 SBC]**  
+```bash
+$ sudo apt update
+$ sudo apt install -y python3-pip git python3-jinja2 \
+libboost-dev libgnutls28-dev openssl libtiff-dev pybind11-dev \
+qtbase5-dev libqt5core5a libqt5widgets5 meson cmake \
+python3-yaml python3-ply \
+libglib2.0-dev libgstreamer-plugins-base1.0-dev
+$ sudo apt install ros-jazzy-camera-ros
+```
+- `python3-colcon-meson` : Enables colcon to build Meson-based packages like *libcamera*
+- `python3-ply` : Required by libcamera’s code generation tools
+- `ros-jazzy-camera-ros`: Installs the *camera_ros* node that uses *libcamera*
+
+**2. Clone libcamera Source**  
+This step clones the official Raspberry Pi fork of libcamera, which provides full compatibility and optimized support for Raspberry Pi camera modules.    
+**[TurtleBot3 SBC]**  
+```bash
+$ git clone https://github.com/raspberrypi/libcamera.git
+```
+
+**3. Build and Install libcamera**  
+This installs *libcamera* to /usr/local and makes it available system-wide.  
+**[TurtleBot3 SBC]**   
+```bash
+$ cd libcamera
+$ meson setup build --buildtype=release -Dpipelines=rpi/vc4,rpi/pisp -Dipas=rpi/vc4,rpi/pisp -Dv4l2=true -Dgstreamer=enabled -Dtest=false -Dlc-compliance=disabled -Dcam=disabled -Dqcam=disabled -Ddocumentation=disabled -Dpycamera=enabled
+$ ninja -C build
+$ sudo ninja -C build install
+$ sudo ldconfig
+```
+
+**4. Launch the Camera Node**   
+You can now launch the camera node using the provided launch file.  
+**[TurtleBot3 SBC]**  
+```bash
+$ ros2 launch turtlebot3_bringup camera.launch.py
+```
+
+**5. View Camera Input**  
+You can verify that the camera node is publishing image data correctly using `rqt_image_view`, a GUI tool for displaying ROS 2 image topics.  
+**[Remote PC]**  
+```bash
+$ rqt_image_view
+```
+
+</details>
+
+<details>
+<summary>
+![](/assets/images/icon_unfold.png) **Method 2. Using the v4l2-camera package**
+</summary>
+
+This method is better suited for USB cameras and legacy Raspberry Pi camera setups. It relies on the V4L2 (Video4Linux2) framework, making it simpler to set up and compatible with a broader range of devices. For more information about v4l2_camera, see the [v4l2_camera documentation](https://docs.ros.org/en/jazzy/p/v4l2_camera/).
+
+**1. Install `ros-jazzy-v4l2-camera`, `raspi-config`, `ros-jazzy-image-transport-plugins`, `v4l-utils`**  
+**[TurtleBot3 SBC]**  
+```bash
+$ sudo apt-get install ros-jazzy-v4l2-camera raspi-config ros-jazzy-image-transport-plugins v4l-utils
+```
+- `ros-jazzy-v4l2-camera`: A package that publishes camera output as a topic.
+- `raspi-config`: A tool for configuring camera device connections on Raspberry Pi.  
+- `ros-jazzy-image-transport-plugins`: Converts image_raw to compressed images for smoother transmission.  
+- `v4l-utils`: A utility that assists with connection.
+
+**2. Run raspi-config**   
+`v4l2-camera` package uses the legacy driver. So we must configure the use of the legacy driver. If this step is completed, the camera node of the camera-ros package will no longer be able to detect the camera. To use the camera-ros package after this step, you must disable the legacy driver again.  
+**[TurtleBot3 SBC]**  
+```bash
+$ sudo raspi-config
+```
+Select `Interface Options`.  
+![](/assets/images/platform/turtlebot3/sbc_setup/rpi_config1.png)  
+Select  `I1` and set enable legacy camera support. This allows the use of the legacy driver, `bcm2835 MMAL`. Then, reboot the system to apply the changes.  
+![](/assets/images/platform/turtlebot3/sbc_setup/rpi_config2.png)  
+
+
+**3. You can check camera_name by this command.**  
+**[TurtleBot3 SBC]**  
+```bash
+$ v4l2-ctl --list-devices
+```
+In this case, camera name is **mmal_service_16.1**.  
+![](/assets/images/platform/turtlebot3/sbc_setup/camera_name.png)  
+
+**4. Run v4l2_camera_node**  
+**[TurtleBot3 SBC]**  
+```bash
+$ ros2 run v4l2_camera v4l2_camera_node
+```
+
+**5. View Camera Input**  
+You can verify that the camera node is publishing image data correctly using `rqt_image_view`, a GUI tool for displaying ROS 2 image topics.  
+**[Remote PC]**  
+```bash
+$ rqt_image_view
+``` 
+
+</details>  
+
+<div class="notice--success">
+**NOTE**  
+To optimize camera data transmission speed, try the following methods.
+- Use `/camera/image_raw/compressed`  
+Subscribing directly to the `/camera/image_raw` topic can cause significant latency if the network is slow or bandwidth is limited. You can select `/camera/image_raw/compressed` in *rqt_image_view*.
+
+- Adjust Resolution  
+Higher resolutions require more bandwidth, which can cause lag. So, lowering the resolution can reduce latency and improve performance. A recommended resolution is 320x240, which strikes a good balance between image quality and transmission speed and can be adjusted via command.
+</div>
+
+> **More Info**  
+For detailed specifications and advanced settings, please check the [13.More Info - 13.1.Appendixes - Raspberry Pi Camera](/docs/en/platform/turtlebot3/appendix_raspi_cam) for a comprehensive guide on hardware capabilities and software features. 
+
+> **Camera Calibration**  
+If you plan to use advanced vision features like camera calibration, you can find the detailed instructions [here](/docs/en/platform/turtlebot3/appendix_raspi_cam/#camera-calibration).  
+
+> **Trouble Shooting**  
+If the error message `Unable to open camera calibration file` appears, check the solution [here](/docs/en/platform/turtlebot3/appendix_raspi_cam/#trouble-shooting).  
 
 {% capture ubuntu_blog %}
 Please refer to the Ubuntu Blog posts below for more useful information.  
@@ -265,4 +393,8 @@ Please refer to the Ubuntu Blog posts below for more useful information.
 - [Improving User Experience of TurtleBot3 Waffle Pi](https://ubuntu.com/blog/building-a-better-turtlebot3)
 - [How to set up TurtleBot3 Waffle Pi in minutes with Snaps](https://ubuntu.com/blog/how-to-set-up-turtlebot3-in-minutes-with-snaps)
 {% endcapture %}
-<div class="notice--success">{{ ubuntu_blog | markdownify }}</div>
+<div class="notice--primary">{{ ubuntu_blog | markdownify }}</div>
+
+**This is it! Now you are done with SBC setup :)**  
+Next Step : [OpenCR Setup](/docs/en/platform/turtlebot3/opencr_setup/#opencr-setup)
+{: .notice--primary}

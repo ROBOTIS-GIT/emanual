@@ -20,11 +20,11 @@ sidebar:
 
 ## [CSharp Windows](#csharp-windows)
 
-For C#, only the Windows source is provided.
+For C# source code is only provided for Windows.
 
 ### [Compiler and Builder](#compiler-and-builder)
 
-* [Download Visual Express for Windows Desktop](https://www.visualstudio.com/en-us/products/visual-studio-express-vs.aspx)
+* [Download Visual Studio Community for Windows Desktop](https://www.visualstudio.com/en-us/products/visual-studio-express-vs.aspx)
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/csharp/vs.png)
 
@@ -36,13 +36,13 @@ For C#, only the Windows source is provided.
 
 ### [Building and Running the Sample Code](#building-and-running-the-sample-code)
 
-DYNAMIXEL SDK example code for C# uses the library files(.dll for Windows) built in C language.
+The DYNAMIXEL SDK sample code for C# uses the library files (.dll for Windows) compiled from the C# language source.
 
-Each released DYNAMIXEL SDK have latest library files in:
+Each released DYNAMIXEL SDK has the latest library files in:
 
 `[DynamixelSDK folder]/c/build/[winXX]/output/dxl_xYY_c.dll`
 
-which were built by its own source code.
+built by their own source code.
 
 * Open `read_write.sln` from `[DynamixelSDK folder]/C#/protocol2.0/read_write/win64/`
 

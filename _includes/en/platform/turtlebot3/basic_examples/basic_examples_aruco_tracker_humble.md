@@ -43,7 +43,7 @@ $ ros2 launch turtlebot3_bringup robot.launch.py
 <br>
 
 5. **Start the Camera node**  
-Run camera_node. To use camera module, you must follow [SBC Setup](/docs/en/platform/turtlebot3/sbc_setup/#rpi-camera) and camera calibration. If you don't perform the calibration correctly, tracking will not work properly.  
+Run camera_node. To use camera module, you must follow [SBC Setup](/docs/en/platform/turtlebot3/sbc_setup/#raspberry-pi-camera) and camera calibration. If you don't perform the calibration correctly, tracking will not work properly.  
 - For `camera-ros`  
 **[TurtleBot3 SBC]**  
 ```bash

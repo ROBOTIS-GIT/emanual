@@ -162,7 +162,7 @@ $ ssh ubuntu@{IP Address of Raspberry PI}
 ```  
 </details>
 
-## Install packages on Raspberry PI
+### Install packages on Raspberry PI
 
 <details>
 <summary>
@@ -254,70 +254,78 @@ Apply changes with the command below.
 $ source ~/.bashrc
 ```
 
-### [Rpi Camera](#rpi-camera)
-Introducing the use of the RPi camera with TurtleBot3. There are various ways to publish the output of a RPi camera as a topic.  
+### [Raspberry Pi Camera](#raspberry-pi-camera)
+![](/assets/images/platform/turtlebot3/appendix_raspi_cam/Pi-Camera-front.jpg)
+
+Introducing how to use the RPi camera with TurtleBot3 running Ubuntu 22.04 on a Raspberry Pi. There are various ways to publish the output of a RPi camera as a topic.  
 One method is to use the `camera-ros` package, and another method is to use the `v4l2-camera` package.  
 
 <details>
 <summary>
-![](/assets/images/icon_unfold.png) **Using the camera-ros package to use the Pi Camera..**
+![](/assets/images/icon_unfold.png) **Method 1. Using the camera-ros package**  
 </summary>
 
-1. Install `camera-ros`, `ros-humble-image-transport-plugins`, `v4l-utils`.  
+This method is suitable for Raspberry Pi cameras using the libcamera stack. It is ideal for projects that demand high-quality imaging and fine-tuned control over camera settings. For more information about camera_ros, see the [camera_ros website](https://docs.ros.org/en/ros2_packages/humble/api/camera_ros/).
+
+**1. Install Required Tools**   
 **[TurtleBot3 SBC]**  
 ```bash
-$ sudo apt-get install ros-humble-camera-ros ros-humble-image-transport-plugins v4l-utils
+$ sudo apt update
+$ sudo apt install -y python3-pip git python3-jinja2 \
+libboost-dev libgnutls28-dev openssl libtiff-dev pybind11-dev \
+qtbase5-dev libqt5core5a libqt5widgets5 meson cmake \
+python3-yaml python3-ply \
+libglib2.0-dev libgstreamer-plugins-base1.0-dev
+$ sudo apt install ros-humble-camera-ros
 ```
-- `camera-ros`: A package that publishes camera output as a topic.
-- `ros-humble-image-transport-plugins`: Converts image_raw to compressed images for smoother transmission.  
-- `v4l-utils`: A utility that assists with connection.
+- `python3-colcon-meson` : Enables colcon to build Meson-based packages like *libcamera*
+- `python3-ply` : Required by libcamera’s code generation tools
+- `ros-humble-camera-ros`: Installs the *camera_ros* node that uses *libcamera*
 
-2. Run camera_node.  
+**2. Clone libcamera Source**  
+This step clones the official Raspberry Pi fork of libcamera, which provides full compatibility and optimized support for Raspberry Pi camera modules.   
+**[TurtleBot3 SBC]**   
+```bash
+$ git clone https://github.com/raspberrypi/libcamera.git
+```
+
+**3. Build and Install libcamera**  
+This installs *libcamera* to /usr/local and makes it available system-wide.  
+**[TurtleBot3 SBC]**   
+```bash
+$ cd libcamera
+$ meson setup build --buildtype=release -Dpipelines=rpi/vc4,rpi/pisp -Dipas=rpi/vc4,rpi/pisp -Dv4l2=true -Dgstreamer=enabled -Dtest=false -Dlc-compliance=disabled -Dcam=disabled -Dqcam=disabled -Ddocumentation=disabled -Dpycamera=enabled
+$ ninja -C build
+$ sudo ninja -C build install
+$ sudo ldconfig
+```
+
+**4. Launch the Camera Node**  
+You can now launch the camera node using the provided launch file.  
 **[TurtleBot3 SBC]**  
 ```bash
-$ ros2 run camera_ros camera_node --ros-args -p format:='RGB888' -p width:=320 -p height:=240
+$ ros2 launch turtlebot3_bringup camera.launch.py
 ```
-3. The error message `Unable to open camera calibration file [/home/ubuntu/.ros/camera_info/imx219__base_soc_i2c0mux_i2c_1_imx219_10_320x240.yaml]`
-will appear if the camera calibration file is missing. After performing camera calibration, place the corresponding info file in the specified folder.  
-The camera_name should be set as `imx219__base_soc_i2c0mux_i2c_1_imx219_10_320x240`  
-**Calibration yaml file example**  
-```
-image_width: 320
-image_height: 240
-camera_name: imx219__base_soc_i2c0mux_i2c_1_imx219_10_320x240
-frame_id: camera
-camera_matrix:
-  rows: 3
-  cols: 3
-  data: [161.0352, 0, 99.6340, 0, 160.4337, 77.6267, 0, 0, 1]
-distortion_model: plumb_bob
-distortion_coefficients:
-  rows: 1
-  cols: 5
-  data: [0.1639958, -0.2718400, 0.0010558, -0.0016656, 0]
-rectification_matrix:
-  rows: 3
-  cols: 3
-  data: [1, 0, 0, 0, 1, 0, 0, 0, 1]
-projection_matrix:
-  rows: 3
-  cols: 4
-  data: [164.6242, 0, 99.2051, 0, 0, 164.5522, 77.7529, 0, 0, 0, 1, 0]
-```  
 
-<div class="notice--danger">
-**NOTE**  
-Depending on the network, subscribing directly to the image_raw topic may result in very slow transmission. You can access the image by decoding the image_raw/compressed topic using image_transport.
-</div>
+**5. View Camera Input**  
+You can verify that the camera node is publishing image data correctly using `rqt_image_view`, a GUI tool for displaying ROS 2 image topics.  
+**[Remote PC]**  
+```bash
+$ rqt_image_view
+```
 
 </details>
 
 <details>
 <summary>
-![](/assets/images/icon_unfold.png) **Using the v4l2-camera package to use the Pi Camera..**
+![](/assets/images/icon_unfold.png) **Method 2. Using the v4l2-camera package**
 </summary>
 
-1. Install `ros-humble-v4l2-camera`, `raspi-config`, `ros-humble-image-transport-plugins`, `v4l-utils`.  
+This method is better suited for USB cameras and legacy Raspberry Pi camera setups. It relies on the V4L2 (Video4Linux2) framework, making it simpler to set up and compatible with a broader range of devices. For more information about v4l2_camera, see the [v4l2_camera website](https://docs.ros.org/en/humble/p/v4l2_camera/).
+
+**NOTE:** These instructions are specifically for Raspberry Pi devices running Ubuntu 22.04.
+
+**1. Install `ros-humble-v4l2-camera`, `raspi-config`, `ros-humble-image-transport-plugins`, `v4l-utils`.**  
 **[TurtleBot3 SBC]**  
 ```bash
 $ sudo apt-get install ros-humble-v4l2-camera raspi-config ros-humble-image-transport-plugins v4l-utils
@@ -327,8 +335,8 @@ $ sudo apt-get install ros-humble-v4l2-camera raspi-config ros-humble-image-tran
 - `ros-humble-image-transport-plugins`: Converts image_raw to compressed images for smoother transmission.  
 - `v4l-utils`: A utility that assists with connection.
 
-2. Run raspi-config. `v4l2-camera` package uses the legacy driver. So we must configure the use of the legacy driver.  
-If this step is completed, the camera node of the camera-ros package will no longer be able to detect the camera. To use the camera-ros package after this step, you must disable the legacy driver again.  
+**2. Run raspi-config**   
+`v4l2-camera` package uses the legacy driver. So we must configure the use of the legacy driver. If this step is completed, the camera node of the camera-ros package will no longer be able to detect the camera. To use the camera-ros package after this step, you must disable the legacy driver again.  
 **[TurtleBot3 SBC]**  
 ```bash
 $ sudo raspi-config
@@ -338,35 +346,29 @@ Select `Interface Options`.
 Select  `I1` and set enable legacy camera support. This allows the use of the legacy driver, `bcm2835 MMAL`.
 ![](/assets/images/platform/turtlebot3/sbc_setup/rpi_config2.png)  
 
-3. Create a YAML file containing calibration information. You can create the file using the `camera_calibration` package. (Currently, this step is skipped in the manual.)  
+**3. Enable Legacy Camera Stack**  
+Open the configuration file `/boot/firmware/config.txt`.  
 **[TurtleBot3 SBC]**  
 ```bash
-$ nano ~/calibration.yaml
+$ sudo nano /boot/firmware/config.txt
 ```
+
+**4. Modify or add the following lines**  
+```bash
+  # Disable libcamera auto detect
+  camera_auto_detect=0
+  # Enable legacy camera stack for bcm2835-v4l2
+  start_x=1
+```  
+If you plan to use the camera-ros package after this step, make sure to remove or comment out the lines `camera_auto_detect=0`, `start_x=1`, `dtoverlay=imx219` in your configuration file.
+
+**5. Reboot the System**  
+**[TurtleBot3 SBC]**  
+```bash
+$ sudo reboot
 ```
-image_width: 640
-image_height: 480
-camera_name: your_camera_name
-frame_id: camera
-camera_matrix:
-  rows: 3
-  cols: 3
-  data: [322.0704122808738, 0, 199.2680620421962, 0, 320.8673986158544, 155.2533082600705, 0, 0, 1]
-distortion_model: plumb_bob
-distortion_coefficients:
-  rows: 1
-  cols: 5
-  data: [0.1639958233797625, -0.271840030972792, 0.001055841660100477, -0.00166555973740089, 0]
-rectification_matrix:
-  rows: 3
-  cols: 3
-  data: [1, 0, 0, 0, 1, 0, 0, 0, 1]
-projection_matrix:
-  rows: 3
-  cols: 4
-  data: [329.2483825683594, 0, 198.4101510452074, 0, 0, 329.1044006347656, 155.5057121208347, 0, 0, 0, 1, 0]
-```
-4. You can check camera_name by this command.  
+
+**6. You can check camera_name by this command.**  
 **[TurtleBot3 SBC]**  
 ```bash
 $ v4l2-ctl --list-devices
@@ -374,118 +376,39 @@ $ v4l2-ctl --list-devices
 In this case, camera name is **mmal_service_16.1**.  
 ![](/assets/images/platform/turtlebot3/sbc_setup/camera_name.png)  
 
-5. Run v4l2_camera_node.  
+**7. Run v4l2_camera_node**   
 **[TurtleBot3 SBC]**  
 ```bash
-$ ros2 run v4l2_camera v4l2_camera_node --ros-args -p image_size:=[640,480] -p camera_info_url:="file:///home/ubuntu/calibration.yaml" -p output_encoding:="yuv422_yuy2"
+$ ros2 run v4l2_camera v4l2_camera_node
 ```
-`output_encoding` parameter refers to the image encoding type. The default value is rgb8, but since it involves a conversion process, it can be slow.  
-Therefore, it is recommended to set it to "yuv422_yuy2" and perform the conversion on the **remote PC** after subscribing to the topic.
-In this case, the image_compressed topic cannot be viewed directly using rqt. So if you want to view the camera using rqt, change it to rgb8.  
 
-<div class="notice--danger">
+**8. View Camera Input**  
+You can verify that the camera node is publishing image data correctly using `rqt_image_view`, a GUI tool for displaying ROS 2 image topics.  
+**[Remote PC]**  
+```bash
+$ rqt_image_view
+```
+
+</details>  
+
+<div class="notice--success">
 **NOTE**  
-Depending on the network, subscribing directly to the image_raw topic may result in very slow transmission. You can access the image by decoding the image_raw/compressed topic using image_transport.
+To optimize camera data transmission speed, try the following methods.
+- Use `/camera/image_raw/compressed`  
+Subscribing directly to the `/camera/image_raw` topic can cause significant latency if the network is slow or bandwidth is limited. You can select `/camera/image_raw/compressed` in *rqt_image_view*.
+
+- Adjust Resolution  
+Higher resolutions require more bandwidth, which can cause lag. So, lowering the resolution can reduce latency and improve performance. A recommended resolution is 320x240, which strikes a good balance between image quality and transmission speed and can be adjusted via command.  
 </div>
 
-</details>
+> **More Info**  
+For detailed specifications and advanced settings, please check the [13.More Info - 13.1.Appendixes - Raspberry Pi Camera](/docs/en/platform/turtlebot3/appendix_raspi_cam) for a comprehensive guide on hardware capabilities and software features. 
 
-<details>
-<summary>
-![](/assets/images/icon_unfold.png) **Camera calibration for using vision features..**
-</summary>
+> **Camera Calibration**  
+If you plan to use advanced vision features like camera calibration, you can find the detailed instructions [here](/docs/en/platform/turtlebot3/appendix_raspi_cam/#camera-calibration).  
 
-1. **Prepare the Checkerboard pattern**  
-Use a black and white Checkerboard, usually 7×6 or 8×6 in size, print it out and attach it to a solid surface, and measure the squares of your checkerboard accurately.  
-<br>
-
-2. **Install the ROS 2 Camera Calibration Package**  
-**[Remote PC]**
-```bash
-$ sudo apt update
-$ sudo apt install ros-humble-camera-calibration
-$ source /opt/ros/humble/setup.bash
-```  
-<br>
-
-3. **Run the Camera node**  
-Run the camera node based on the camera package you installed.
-- For `camera-ros`  
-**[TurtleBot3 SBC]**  
-```bash
-$ ros2 run camera_ros camera_node --ros-args -p format:='RGB888' -p width:=320 -p height:=240
-```
-- For `v4l2-camera`  
-Adding `-r __ns:=/camera` organizes all topics published by the node under the `/camera` namespace.   
-**[TurtleBot3 SBC]**  
-```bash
-$ ros2 run v4l2_camera v4l2_camera_node --ros-args -p image_size:=[320,240] -p camera_info_url:="file:///home/ubuntu/calibration.yaml" -p output_encoding:="yuv422_yuy2" -r __ns:=/camera
-```
-<br>
-
-4. **Run calibration node**  
-Specify the size of the checkerboard and the size of the squares as execution arguments. The size of the checkerboard is the number of intersections.  
-**[Remote PC]**
-```bash
-$ ros2 run camera_calibration cameracalibrator \
-  --size 8x6 --square 0.023 \
-  image:=/camera/image_raw camera:=/camera
-```  
-<br>
-
-5. **Proceed with the calibration**  
-When a checkerboard is detected, each intersection is connected. Modify the position of the checkerboard until the green bar on the right is filled to activate the button.  
-    ![calibration](/assets/images/platform/turtlebot3/sbc_setup/calibration.png)  
-<br>
-
-6. **Apply calibration**  
-Use the results to modify the format of the calibration yaml file you created when you installed the camera package.  
-**[Result]**
-    ```bash
-    **** Calibrating ****
-    mono pinhole calibration...
-    D = [0.03044862133677453, 1.051149543007478, -0.010043417242237722, -0.004408001911603297, 0.0]
-    K = [630.410302346659, 0.0, 153.7660597801437, 0.0, 630.2122426630051, 112.97681709327331, 0.0, 0.0, 1.0]
-    R = [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
-    P = [638.0872192382812, 0.0, 152.86851810362077, 0.0, 0.0, 636.0022583007812, 111.61012624808154, 0.0, 0.0, 0.0, 1.0, 0.0]
-    None
-    # oST version 5.0 parameters
-
-
-    [image]
-
-    width
-    320
-
-    height
-    240
-
-    [narrow_stereo]
-
-    camera matrix
-    630.410302 0.000000 153.766060
-    0.000000 630.212243 112.976817
-    0.000000 0.000000 1.000000
-
-    distortion
-    0.030449 1.051150 -0.010043 -0.004408 0.000000
-
-    rectification
-    1.000000 0.000000 0.000000
-    0.000000 1.000000 0.000000
-    0.000000 0.000000 1.000000
-
-    projection
-    638.087219 0.000000 152.868518 0.000000
-    0.000000 636.002258 111.610126 0.000000
-    0.000000 0.000000 1.000000 0.000000
-    ```
-</details>
-<br>
-
-**This is it! Now you are done with SBC setup :)**  
-Next Step : [OpenCR Setup](/docs/en/platform/turtlebot3/opencr_setup/#opencr-setup)
-{: .notice--success}
+> **Trouble Shooting**  
+If the error message `Unable to open camera calibration file` appears, check the solution [here](/docs/en/platform/turtlebot3/appendix_raspi_cam/#trouble-shooting).  
 
 {% capture ubuntu_blog %}
 Please refer to the Ubuntu Blog posts below for more useful information.  
@@ -493,4 +416,8 @@ Please refer to the Ubuntu Blog posts below for more useful information.
 - [Improving User Experience of TurtleBot3 Waffle Pi](https://ubuntu.com/blog/building-a-better-turtlebot3)
 - [How to set up TurtleBot3 Waffle Pi in minutes with Snaps](https://ubuntu.com/blog/how-to-set-up-turtlebot3-in-minutes-with-snaps)
 {% endcapture %}
-<div class="notice--success">{{ ubuntu_blog | markdownify }}</div>
+<div class="notice--primary">{{ ubuntu_blog | markdownify }}</div>
+
+**This is it! Now you are done with SBC setup :)**  
+Next Step : [OpenCR Setup](/docs/en/platform/turtlebot3/opencr_setup/#opencr-setup)
+{: .notice--primary}

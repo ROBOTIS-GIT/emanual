@@ -20,11 +20,13 @@ sidebar:
 
 ## [C Linux](#c-linux)
 
+This tutorial is written assuming you are using the latest version of Ubuntu. Commands may not be the same for alternative distributions of Linux.
+
 ### [Compiler and Builder](#compiler-and-builder)
 
 #### [Compiler](#compiler)
 
-* GNU gcc ver. 5.4.0 20160609 or higher
+* The DYNAMIXEL SKD requires GNU gcc ver. 5.4.0 20160609 or higher
 * To check the version of your gcc compiler:  
 
   ``` bash
@@ -34,7 +36,7 @@ sidebar:
 * Download the required compiler:  
 
   ``` bash 
-  $ sudo apt-get install gcc-5
+  $ sudo apt-get install gcc
   ```
 
 #### [Builder](#builder)
@@ -57,16 +59,16 @@ sidebar:
 
 #### [Build the Library](#build-the-library)
 
-* Choose which format (32bit or 64bit) do you want to build in.  
-  The Makefile is located in the following folder: `[DynamixelSDK folder]/c/build/linux32` OR `[DynamixelSDK folder]/c/build/linux64` folder for 64-bit platforms OR `[DynamixelSDK folder]/c/build/linux_sbc` folder for SBCs.  
-  Please note that if you will be building the 32-bit example source, you should build the 32-bit library.
+* Choose which format (32bit or 64bit) of the library you will be bulding.
+  The Makefile is located in the following folder: `[DynamixelSDK folder]/c/build/linux32` OR `[DynamixelSDK folder]/c/build/linux64` folder for 32/64-bit platforms OR `[DynamixelSDK folder]/c/build/linux_sbc` folder for ARM SBCs.  
+  Please note that if you intend to use the 32-bit example applications, you must build the 32-bit library.
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/c/linux/library_file/c6.png)
 
 * Go to the Makefile's directory located in `[DynamixelSDK folder]/c/build/linux32` OR `[DynamixelSDK folder]/c/build/linux64` OR `[DynamixelSDK folder]/c/build/linux_sbc` using $ `cd`.
 
 
-* To build the library file:  
+* Build the library file:  
 
   ``` bash
   $ make
@@ -75,13 +77,13 @@ sidebar:
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/c/linux/library_file/c1.png)
 
 
-* If there is an error:  
+* If there is an error, try rebuilding the package after cleaning any leftover files.
 
   ``` bash
   $ make clean && make
   ```
 
-* To delete the library file and object files:  
+* To delete the library file and object files after a successful build:
 
   ``` bash
   $ make clean
@@ -91,7 +93,7 @@ sidebar:
 
 ##### Copy (Install) the Library to the Root Directory
 
-* To make library file and copy it to the root directory (to handle the serial port):  
+* Make the library file and copy it to the root directory (to handle the serial port):  
 
   ``` bash
   $ sudo make install
@@ -99,7 +101,7 @@ sidebar:
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/c/linux/library_file/c3.png)
 
-* If there is an error:  
+* If there is an error, you can retry the installation:
 
   ``` bash
   $ sudo make uninstall && sudo make install
@@ -110,6 +112,7 @@ sidebar:
   ``` bash
   $ sudo make reinstall
   ```
+  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/c/linux/library_file/c4.png)
 
 * To delete the library file from the root directory:  
 
@@ -117,22 +120,15 @@ sidebar:
   $ sudo make uninstall
   ```
 
-  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/c/linux/library_file/c4.png)
-
-* To recopy the library file to the root directory:  
-
-  ``` bash
-  $ sudo make reinstall
-  ```
-
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/c/linux/library_file/c5.png)
+
 
 * You will see the built library file in `[DynamixelSDK folder]/c/build/[linuxXX]/libdxl_xYY_c.so`
 
 ### [Building and Running the Sample Code](#building-and-running-the-sample-code)
 
-The DYNAMIXEL SDK example code for C uses a .so (Linux) library built in C.  
-By doing above, each released DYNAMIXEL SDK have latest library files in `[DynamixelSDK folder]/c/build/[linuxXX]/libdxl_xYY_c.so` which were built by its own source code. 
+The DYNAMIXEL SDK example code for C uses a .so (Linux Shared Object) library built in C.  
+The previous instructions walk you through building the latest library files in `[DynamixelSDK folder]/c/build/[linuxXX]/libdxl_xYY_c.so` built by its own source code. 
 
 * Go to the Makefile's directory using `cd`:  
 
