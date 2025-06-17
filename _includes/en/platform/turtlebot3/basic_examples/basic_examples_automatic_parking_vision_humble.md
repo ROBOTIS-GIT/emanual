@@ -33,7 +33,6 @@ Before running the example, make sure the required packages is installed.
   $ git clone -b humble https://github.com/ROBOTIS-GIT/turtlebot3_applications_msgs.git
   $ cd ~/turtlebot3_ws/
   $ colcon build --symlink-install
-  $ source ~/.bashrc
   ```  
 <br>
 
