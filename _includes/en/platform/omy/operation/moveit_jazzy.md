@@ -7,7 +7,8 @@ For more information about MoveIt, check out the [official documentation](https:
 $ ros2 launch open_manipulator_moveit_config moveit_core.launch.py
 ```
 Move interactive markers to position the robotic arm, then click Plan and Execute.  
-  ![](/assets/images/platform/omy/moveit2_core.png)  
+<img src="/assets/images/platform/omy/moveit2_core.png" width="700"/>
+
 **Simple Instructions for Using MOVEIT 2:**  
 1. You can move the robot to your desired pose using the **Interactive Marker** visible in RViz.
 2. Use the **Plan** option in the Commands column to simulate the motion of the robotic arm.
