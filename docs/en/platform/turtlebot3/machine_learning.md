@@ -8,7 +8,8 @@ author_profile: false
 permalink: /docs/en/platform/turtlebot3/machine_learning/
 tabs: "ROS"
 tab_title1: Humble
-tab_title2: Noetic
+tab_title2: Jazzy
+tab_title3: Noetic
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
@@ -24,12 +25,16 @@ page_number: 21
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
 {% include en/platform/turtlebot3/machine_learning/machine_learning_intro_humble.md %}
-</section> 
+</section>
 
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
-**NOTE**: This manual is currently based on Melodic and needs to be upgraded to the **Noetic** version!. 
+{% include en/platform/turtlebot3/machine_learning/machine_learning_intro_jazzy.md %}
+</section>
+
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
+**NOTE**: This manual is currently based on Melodic and needs to be upgraded to the **Noetic** version!.
 {: .notice--danger}
-</section> 
+</section>
 
 ## [Software Setup](#software-setup)
 
@@ -38,6 +43,10 @@ page_number: 21
 </section>
 
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
+{% include en/platform/turtlebot3/machine_learning/machine_learning_software_setup_jazzy.md %}
+</section>
+
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
 {% include en/platform/turtlebot3/machine_learning/machine_learning_software_setup_melodic.md %}
 </section>
 
@@ -48,6 +57,10 @@ page_number: 21
 </section>
 
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
+{% include en/platform/turtlebot3/machine_learning/machine_learning_set_parameter_jazzy.md %}
+</section>
+
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
 {% include en/platform/turtlebot3/machine_learning/machine_learning_set_parameter_melodic.md %}
 </section>
 
@@ -58,5 +71,9 @@ page_number: 21
 </section>
 
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
+{% include en/platform/turtlebot3/machine_learning/machine_learning_run_machine_learning_jazzy.md %}
+</section>
+
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
 {% include en/platform/turtlebot3/machine_learning/machine_learning_run_machine_learning_melodic.md %}
 </section>

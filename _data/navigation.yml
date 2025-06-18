@@ -375,7 +375,7 @@ main:
         url: /platform/robothand_mx28/
     - title: "ROBOTIS OP"
       titlekr: "로보티즈 OP"
-      url: /platform/op/getting_started/
+      url: /platform/op3/introduction/
       children:
       - title: "ROBOTIS OP3"
         titlekr: "로보티즈 OP3"
@@ -25150,6 +25150,11 @@ op3:
       url: /platform/op3/tutorials/#how-to-use-web-setting-tool
     - title: "Read-Write Tutorial"
       url: /platform/op3/tutorials/#read-write-tutorial
+  - title: "Advanced Tutorials"
+    url: /platform/op3/advanced_tutorials/#advanced-tutorials
+    children:
+    - title: "Real-Time Ball Detection with YOLOv8 and OpenVINO"
+      url: /platform/op3/advanced_tutorials/#real-time-ball-detection-with-yolov8-and-openvino-on-robotis-op3
   - title: "Simulation"
     url: /platform/op3/simulation/#simulation
     children:
@@ -26071,6 +26076,8 @@ turtlebot3:
       url: /platform/turtlebot3/basic_examples/#automatic-parking-vision
     - title: "Load Multiple TurtleBot3s"
       url: /platform/turtlebot3/basic_examples/#load-multiple-turtlebot3s
+    - title: "YOLO Object Detection"
+      url: /platform/turtlebot3/basic_examples/#yolo-object-detection
   - title: "Friends(Locomotion)"
     url: /platform/turtlebot3/locomotion/#friendslocomotion
     children:
@@ -26203,7 +26210,7 @@ openmanipulator_x:
     - title: "Dimension"
       url: /platform/openmanipulator_x/specification/#dimension
     - title: "Inertia"
-      url: /platform/openmanipulator_x/specification/#intertia
+      url: /platform/openmanipulator_x/specification/#inertia
     - title: "Understanding URDF"
       url: /platform/openmanipulator_x/specification/#understanding-urdf
   - title: "Assembly"
@@ -27531,7 +27538,7 @@ rplusmotion1:
         urlkr: /software/rplus1/motion/#페이지-반복속도-설정
       - title: "Inertial Force Control"
         titlekr: "관성력 조절"
-        url: /software/rplus1/motion/#intertial-force-control
+        url: /software/rplus1/motion/#inertial-force-control
         urlkr: /software/rplus1/motion/#관성력-조절
       - title: "Joint Softness"
         titlekr: "관절 유연성"
