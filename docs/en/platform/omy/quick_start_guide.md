@@ -18,7 +18,8 @@ page_number: 3
 # [Quick Start Guide](#quick-start-guide)
 
 ## [Power connection](#power-connection)
-![](/assets/images/platform/omy/omy_power.png)
+
+<img src="/assets/images/platform/omy/omy_power.png" width="600"/>
 
 ## [SSH connection](#ssh-connection)
 
@@ -30,7 +31,7 @@ In environments where UDP Multicast is available (such as being on the same rout
 you can discover and connect to the IP address.  
 Static IP assignment and other network settings are supported through the Manager.
 
-![](/assets/images/platform/omy/omy_serial_number.png)
+<img src="/assets/images/platform/omy/omy_serial_number.png" width="600"/>
 
 ### SSH Access Method
 (Assuming the SN is ‘SNPR44B9999’)
@@ -85,3 +86,111 @@ and the following is the command to PACK it back.
 ```
 ros2 launch open_manipulator_bringup pack_y.launch.py
 ```
+
+## [Software Setup](#software-setup)
+
+
+###  Software Setup for OMY
+
+The **ROBOTIS OMY** robotic arm utilizes two key software packages to enable intelligent manipulation through **Physical AI**:
+
+- **open_manipulator**: Provides control of the **6-DOF OMY arm** via ros2_control using **DYNAMIXEL-Y** actuators. Supports teleoperation and low-level control.
+- **physical_ai_tools**: A toolkit for **imitation learning**, including modules for data collection, training, inference, and visualization.
+
+> ⚠️ This setup is intended for development on a **user PC**. The robot PC included with OMY comes pre-configured with the same software stack.
+
+
+### Prerequisites
+
+* **Operating System**: Any Linux distribution
+
+  * The container runs **Ubuntu 24.04 + ROS 2 Jazzy**
+  * Host OS version does **not** need to match
+
+* **Docker Engine**
+
+  * Install using the [official Docker guide](https://docs.docker.com/engine/install/)
+  * After installation:
+
+    ```bash
+    sudo usermod -aG docker $USER
+    sudo systemctl enable docker
+    docker run hello-world
+    ```
+
+* **Git**
+
+  ```bash
+  sudo apt install git
+  ```
+
+### Docker Volume Configuration
+
+The Docker container uses volume mappings for **hardware access**, **development**, and **data persistence**:
+
+```bash
+volumes:
+  # Hardware and system access
+  - /dev:/dev
+  - /tmp/.X11-unix:/tmp/.X11-unix:rw
+  - /tmp/.docker.xauth:/tmp/.docker.xauth:rw
+
+  # Development and data directories
+  - ./workspace:/workspace
+  - ../:/root/ros2_ws/src/open_manipulator/
+  - ./lerobot/outputs:/root/ros2_ws/src/physical_ai_tools/lerobot/outputs
+  - ./huggingface:/root/.cache/huggingface
+````
+
+>  **Data Persistence Tips**
+>
+> * Store your development code in `/workspace`
+> * Save model outputs in `lerobot/outputs`
+> * Track code changes in the mapped `open_manipulator` folder
+> * Use `huggingface` volume to cache pretrained models
+
+
+## Container Lifecycle
+
+### Initial Setup
+
+```bash
+# Clone the open_manipulator repository
+cd ~
+git clone -b jazzy https://github.com/ROBOTIS-GIT/open_manipulator.git
+cd open_manipulator
+```
+
+### Starting and Managing the Container
+
+```bash
+# Start container (without Gazebo)
+./docker/container.sh start without_gz
+
+# Enter the running container
+./docker/container.sh enter
+
+# Stop the container
+./docker/container.sh stop
+```
+
+### Docker Command Reference
+
+| Command            | Description                    |
+| ------------------ | ------------------------------ |
+| `help`             | Display usage help             |
+| `start with_gz`    | Start container with Gazebo    |
+| `start without_gz` | Start container without Gazebo |
+| `enter`            | Enter the running container    |
+| `stop`             | Stop the container             |
+
+### Example Usage
+
+```bash
+./container.sh help
+./container.sh start with_gz
+./container.sh start without_gz
+./container.sh enter
+./container.sh stop
+```
+

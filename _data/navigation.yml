@@ -26217,11 +26217,6 @@ openmanipulator:
 omy:
   - title: "Overview"
     url: /platform/omy/overview/#overview
-    children:
-    - title: "Open Source"
-      url: /platform/omy/overview/#open-source
-    - title: "Physical AI-based Imitation Learning"
-      url: /platform/omy/overview/#physical-ai-based-imitation-learning
   - title: "Specification"
     url: /platform/omy/specification/#specification
     children:
@@ -26254,6 +26249,8 @@ omy:
       url: /platform/omy/quick_start_guide/#docker-setup
     - title: "Unpacking"
       url: /platform/omy/quick_start_guide/#unpacking
+    - title: "Software Setup"
+      url: /platform/omy/quick_start_guide/#software-setup
   - title: "Operation"
     url: /platform/omy/ros2_operation/#operation
     children:

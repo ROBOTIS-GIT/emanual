@@ -21,17 +21,28 @@ page_number: 1
 
 ![](/assets/images/platform/omy/omy_product.png)
 
-- Gripper offers haptic feedback, customizable triggers.
-- Gravity/Friction compensation for smooth and intuitive operation.
-- It supports ROS2, standard URDF and various DXL SDKs for easy development and integration.
-- As open source, it allows for community contributions and flexible customization.
+**About OMY**
 
-## [Open Source](#open-source)
+**The ROBOTIS OMY** is a 6-DOF robotic manipulator designed for **Physical AI research** and intelligent automation. Built with the high-performance **DYNAMIXEL-Y** series actuators, OMY enables skill acquisition through human demonstration, supporting imitation learning and reinforcement learning to perform increasingly complex manipulation tasks.
 
-OMY (OMY-AI3M, OMY-L100) is based on ROS and OpenSource. Users can also control it more easily by linking it with the MoveIt! package.  
-Even if you don’t have an actual robot, you can control the robot in the Gazebo simulator​.  
-Access all source code, models, documentation, and training data for development and customization.
+Optimized for pick-and-place, assembly, and inspection in academic, industrial, and development environments, OMY delivers high torque, smooth motion, and precise control. Its compact structure, modular design, and full **ROS 2 compatibility** make it a robust platform for AI-driven robotics development.
 
-## [Physical AI-based Imitation Learning](#physical-ai-based-imitation-learning)
+Discover the future of intelligent manipulation with **OMY** and the **DYNAMIXEL-Y** series.
 
-Learn from human demonstrations and adapt to environmental changes through real-world interaction and intelligence.
+## 🧠Physical AI-based Skill Acquisition
+The OMY manipulator leverages Physical AI to acquire new skills through human demonstrations. This enables intuitive teaching and adaptation to diverse tasks and environments without the need for extensive programming.
+
+## ⚡Real-time Precision Manipulation
+OMY perceives the workspace in real-time and responds immediately based on learned policies, making it well-suited for dynamic tasks that require responsiveness and reliability.
+
+## 🦾6-DOF Arm with DYNAMIXEL-Y Actuators
+Built with the high-torque, high-resolution DYNAMIXEL-Y series, OMY delivers smooth, precise motion across 6 degrees of freedom, enabling accurate manipulation for industrial and research applications.
+
+## 🔄End-to-End Imitation Learning Pipeline
+OMY supports the full imitation learning process—from demonstration-based data collection to model inference—providing a seamless interface for training and deploying intelligent motion policies.
+
+## 📦Modular & ROS 2 Native
+OMY’s modular design ensures flexibility in integration, while full ROS 2 compatibility supports real-time control, easy customization, and access to a robust open-source ecosystem.
+
+## 🤖Compact, Deployable, and Developer-Friendly
+With its lightweight structure and intuitive control interface, OMY is ideal for labs, classrooms, and automation setups, empowering developers and researchers to experiment and innovate efficiently.
