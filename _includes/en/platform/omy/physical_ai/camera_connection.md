@@ -45,6 +45,7 @@ ros2 launch realsense2_camera rs_camera.launch.py
 * `enable_depth:=true`
 * `enable_color:=true`
 * `initial_reset:=true`
+
 ### Verifying Operation
 
  **1. Check Topics**
