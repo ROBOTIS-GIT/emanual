@@ -225,4 +225,4 @@ Once the server is running, access [http://127.0.0.1:9091](http://127.0.0.1:9091
 Or, on another device connected to the same network as the `User PC`, access `http://{IP address of the host machine}:9091` to preview the dataset.
 
 You should see a web interface similar to the one below:  
-<img src="/assets/images/platform/omy/data_visualization.png" width="400"/>
+<img src="/assets/images/platform/omy/data_visualization.png" width="700"/>

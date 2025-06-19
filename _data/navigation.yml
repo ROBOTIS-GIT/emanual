@@ -26257,7 +26257,7 @@ omy:
     - title: "AI Teleoperation"
       url: /platform/omy/ros2_operation/#ai-teleoperation
     - title: "Bringup"
-      url: /platform/omy/ros2_operation/#launch-controller
+      url: /platform/omy/ros2_operation/#launch-bringip
     - title: "Moveit"
       url: /platform/omy/ros2_operation/#moveit
     - title: "GUI Program"

@@ -15,17 +15,9 @@ product_group: omy
 page_number: 5
 ---
 
-<style>body {counter-reset: h1 5 !important;}</style>
+<style>body {counter-reset: h1 4 !important;}</style>
 
 # [Simulation](#simulation)
-
-{% capture operation %}
-**Note: The basic commands in this manual are written for OMY_F3M. When running with the OMY_3M model, replace omy_f3m with omy_3m in the commands.**
-```bash
-$ ros2 launch open_manipulator_bringup omy_3m_gazebo.launch.py
-```
-{% endcapture %}
-<div class="notice--danger">{{ operation | markdownify }}</div>
 
 ## [Gazebo](#gazebo)
 {% include en/platform/omy/simulation/gazebo_jazzy.md %}

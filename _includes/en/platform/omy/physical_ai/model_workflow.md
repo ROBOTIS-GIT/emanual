@@ -75,7 +75,7 @@ huggingface-cli upload ${HF_USER}/act_omy_test \
 
 This makes your model accessible from anywhere and simplifies deployment.
 
-###Model Inference
+### Model Inference
 
 Once your model is trained, you can deploy it on the AI Worker for inference.
 
@@ -115,7 +115,9 @@ ros2 service call /set_robot_type physical_ai_interfaces/srv/SetRobotType "
 }"
 ```
 
-**7. Send Service Call for Evaluation**
+**7. Send Service Call for Evaluation**  
+You can now observe the robot performing motions driven by real-time inference from a trained model!
+
 ```bash
 ros2 service call /task/command physical_ai_interfaces/srv/SendCommand "
 {

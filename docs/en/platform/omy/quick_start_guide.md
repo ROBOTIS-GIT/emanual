@@ -19,17 +19,14 @@ page_number: 3
 
 ## [Power connection](#power-connection)
 
-<img src="/assets/images/platform/omy/omy_power.png" width="600"/>
+<img src="/assets/images/platform/omy/omy_power.png" width="800"/>
 
 ## [SSH connection](#ssh-connection)
 
 ### Network Access Method
-Start by connecting the SBC to the same network as your PC using a LAN cable, then power on the OM-Y (press and release the power button until it turns white).  
-OM-Y OS uses mDNS technology to discover or access its IP address.  
-Each time OM-Y OS boots, it sets the SBC’s hostname to the serial number (SN) written on the product (e.g., SNPR44B9999).  
-In environments where UDP Multicast is available (such as being on the same router),  
-you can discover and connect to the IP address.  
-Static IP assignment and other network settings are supported through the Manager.
+Start by connecting the `robot pc` to the same network as `user PC` using a LAN cable, then power on the OMY (press and release the power button until it turns white). OMY OS uses mDNS technology to discover or access its IP address.  
+Each time OMY OS boots, it sets the SBC’s hostname to the serial number (SN) written on the product (e.g., SNPR44B9999).  
+In environments where UDP Multicast is available (such as being on the same router), you can discover and connect to the IP address. Static IP assignment and other network settings are supported through the Manager.
 
 <img src="/assets/images/platform/omy/omy_serial_number.png" width="600"/>
 
@@ -50,11 +47,11 @@ cd /data/docker/open_manipulator/docker
 ```
 4. Access the container using `./container.sh enter`.
 
-{% capture unpacking_danger_01 %}
+{% capture unpacking_info_01 %}
 
 **Note**: The `/workspace` folder inside the container is volume mapped (a feature that links file systems) to `/data/docker/open_manipulator/workspace` on the host. All other areas are volatile and will be lost if the container is damaged or deleted, so please be careful.
 {% endcapture %}
-<div class="notice--danger">{{ unpacking_danger_01 | markdownify }}</div>
+<div class="notice--info">{{ unpacking_info_01 | markdownify }}</div>
 
 
 
@@ -89,16 +86,13 @@ ros2 launch open_manipulator_bringup pack_y.launch.py
 
 ## [Software Setup](#software-setup)
 
-
+> ⚠️ This setup is intended for development on a **user PC**. **The robot PC** included with OMY comes pre-configured with the same software stack.
 ###  Software Setup for OMY
 
 The **ROBOTIS OMY** robotic arm utilizes two key software packages to enable intelligent manipulation through **Physical AI**:
 
-- **open_manipulator**: Provides control of the **6-DOF OMY arm** via ros2_control using **DYNAMIXEL-Y** actuators. Supports teleoperation and low-level control.
-- **physical_ai_tools**: A toolkit for **imitation learning**, including modules for data collection, training, inference, and visualization.
-
-> ⚠️ This setup is intended for development on a **user PC**. **The robot** PC included with OMY comes pre-configured with the same software stack.
-
+- **[open_manipulator](https://github.com/ROBOTIS-GIT/open_manipulator)**: Provides control of the **6-DOF OMY arm** via ros2_control using **DYNAMIXEL-Y** actuators. Supports teleoperation and low-level control.
+- **[physical_ai_tools](https://github.com/ROBOTIS-GIT/physical_ai_tools)**: A toolkit for **imitation learning**, including modules for data collection, training, inference, and visualization.
 
 ### Prerequisites
 
@@ -164,8 +158,8 @@ cd open_manipulator
 ### Starting and Managing the Container
 
 ```bash
-# Start container (without Gazebo)
-./docker/container.sh start without_gz
+# Start container
+./docker/container.sh start
 
 # Enter the running container
 ./docker/container.sh enter
@@ -179,8 +173,7 @@ cd open_manipulator
 | Command            | Description                    |
 | ------------------ | ------------------------------ |
 | `help`             | Display usage help             |
-| `start with_gz`    | Start container with Gazebo    |
-| `start without_gz` | Start container without Gazebo |
+| `start`    | Start container     |
 | `enter`            | Enter the running container    |
 | `stop`             | Stop the container             |
 
@@ -188,8 +181,7 @@ cd open_manipulator
 
 ```bash
 ./container.sh help
-./container.sh start with_gz
-./container.sh start without_gz
+./container.sh start
 ./container.sh enter
 ./container.sh stop
 ```
