@@ -5,7 +5,7 @@ To begin, access the `Robot PC` via SSH.(Refer to the Quick Start Guide for inst
 
 **1. Launch the ROS 2 teleoperation node**
 
-Open a new terminal and enter the Docker container:  
+Open a new terminal in `Robot PC` and enter the Docker container:  
 
 ```bash
 docker exec -it open_manipulator /bin/bash
@@ -25,31 +25,19 @@ ros2 launch open_manipulator_bringup ai_teleoperation.launch.py
 The _Physical AI Server_ is the backend that connects with the Web UI. It should be running to use the interface for data recording.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify}}</div>
-{% capture notice_01 %}
 
-**NOTE:**
-This step must be performed on the `User PC`.
-{% endcapture %}
-<div class="notice--info">{{ notice_01 | markdownify}}</div>
-
-Open another terminal and start the Docker container in `User PC`.:
+Open a new terminal in `User PC` and start the Docker container.:
 
 ```bash
-cd physical_ai_tools
-./docker/container.sh start
+cd physical_ai_tools/docker
+.container.sh start
 ```
 
-enter the Docker container
+Enter the Docker container
 ```bash
-cd physical_ai_tools
-./docker/container.sh start
+cd physical_ai_tools/docker
+.container.sh enter
 ```
-
-{% capture notice_01 %}
-**NOTE:**
-
-{% endcapture %}
-<div class="notice--info">{{ notice_01 | markdownify}}</div>
 
 Launch Physical AI Server with the following command:  
 
@@ -63,7 +51,7 @@ Or, use shortcut command:
 ai_server
 ```
 
-**4. Open the Web UI**
+**3. Open the Web UI**
 
 
 **Access the Web UI in Your Browser**
