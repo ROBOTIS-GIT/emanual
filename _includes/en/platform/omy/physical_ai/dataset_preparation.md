@@ -1,5 +1,5 @@
 
-###Prerequisites
+### Prerequisites
 
 To begin, access the `Robot PC` via SSH.(Refer to the Quick Start Guide for instructions on how to connect via SSH.)  
 
@@ -8,15 +8,15 @@ To begin, access the `Robot PC` via SSH.(Refer to the Quick Start Guide for inst
 Open a new terminal and enter the Docker container:  
 
 ```bash
-cd ai_worker
-./docker/container.sh enter
+docker exec -it open_manipulator /bin/bash
 ```
 
 Launch the ROS 2 teleoperation node:  
 
 ```bash
-ffw_bg2_ai
+ros2 launch open_manipulator_bringup ai_teleoperation.launch.py
 ```
+
 
 **2. Launch Physical AI Server**
 
@@ -25,13 +25,31 @@ ffw_bg2_ai
 The _Physical AI Server_ is the backend that connects with the Web UI. It should be running to use the interface for data recording.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify}}</div>
+{% capture notice_01 %}
 
-Open another terminal and enter the Docker container:  
+**NOTE:**
+This step must be performed on the `User PC`.
+{% endcapture %}
+<div class="notice--info">{{ notice_01 | markdownify}}</div>
+
+Open another terminal and start the Docker container in `User PC`.:
 
 ```bash
-cd ai_worker
-./docker/container.sh enter
+cd physical_ai_tools
+./docker/container.sh start
 ```
+
+enter the Docker container
+```bash
+cd physical_ai_tools
+./docker/container.sh start
+```
+
+{% capture notice_01 %}
+**NOTE:**
+
+{% endcapture %}
+<div class="notice--info">{{ notice_01 | markdownify}}</div>
 
 Launch Physical AI Server with the following command:  
 
@@ -47,19 +65,13 @@ ai_server
 
 **4. Open the Web UI**
 
-{% capture notice_01 %}
-INFO: This step must be performed on the **host machine** (or another device on the same network).
-{% endcapture %}
-<div class="notice--info">{{ notice_01 | markdownify}}</div>
-
-Identify the serial number of the OMY robot.  
-In this example, the serial number is `SNPR44B0000`.  
 
 **Access the Web UI in Your Browser**
 
-Open your web browser and go to `http://ffw-{serial number}.local`, replacing `{serial number}` with the serial number from the previous step.  
+Open web browser on `User PC` and go to `http://127.0.0.1`.
 
-In this example, the address becomes `http://ffw-SNPR44B0000.local`.  
+Or, from another device connected to the same network, go to `http://{IP address of the User PC}`.
+
 
 Once connected, you should see the web UI as shown below.  
 
@@ -71,7 +83,7 @@ Once connected, you should see the web UI as shown below.
 
 On the **Home** page, select the type of robot you are using.  
 
-<img src="/assets/images/platform/omy/web_ui_robot_type_selection.png" width="500"/>
+<img src="/assets/images/platform/omy/web_ui_robot_type_selection.png" width="300"/>
 
 **2. Go to Record page**
 
@@ -202,7 +214,7 @@ cd /root/ros2_ws/src/physical_ai_tools/lerobot
 python lerobot/scripts/visualize_dataset_html.py \
   --host 0.0.0.0 \
   --port 9091 \
-  --repo-id ${HF_USER}/ffw_test
+  --repo-id ${HF_USER}/omy_test
 ```
 
 You should see an output similar to the following:  
@@ -225,8 +237,4 @@ Access http://127.0.0.1:9091 to view the dataset. You should see a web interface
 
 Once the server is running, open [http://127.0.0.1:9091](http://127.0.0.1:9091) in your browser to preview the dataset.  
 
-On a device connected to the same network as the host machine, open `http://ffw-{serial number}.local:9091` in your browser to   preview the dataset.  
-
-For example, `http://ffw-SNPR48A0000.local:9091`.  
-
-
+On a device connected to the same network as the host machine, open `http://{IP address of the host machine}:9091` in your browser to   preview the dataset.  
