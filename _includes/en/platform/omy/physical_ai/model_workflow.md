@@ -10,7 +10,7 @@ After preparing your dataset, you can proceed to train the policy model.
 
 Open a terminal on the Jetson device and enter the Docker container:
 ```bash
-cd ai_worker
+cd open_manipulator
 ./docker/container.sh enter
 ```
 
@@ -26,10 +26,10 @@ Execute the following command to start training:
 
 ```bash
 python lerobot/scripts/train.py \
-  --dataset.repo_id=${HF_USER}/ffw_test \
+  --dataset.repo_id=${HF_USER}/omy_test \
   --policy.type=act \
-  --output_dir=outputs/train/act_ffw_test \
-  --job_name=act_ffw_test \
+  --output_dir=outputs/train/act_omy_test \
+  --job_name=act_omy_test \
   --policy.device=cuda \
   --log_freq=100 \
   --save_freq=1000
@@ -69,8 +69,8 @@ Training time depends on your hardware and dataset size, but typically ranges fr
 To upload the latest trained checkpoint to the Hugging Face Hub:
 
 ```bash
-huggingface-cli upload ${HF_USER}/act_ffw_test \
-  outputs/train/act_ffw_test/checkpoints/last/pretrained_model
+huggingface-cli upload ${HF_USER}/act_omy_test \
+  outputs/train/act_omy_test/checkpoints/last/pretrained_model
 ```
 
 This makes your model accessible from anywhere and simplifies deployment.
@@ -81,69 +81,91 @@ Once your model is trained, you can deploy it on the AI Worker for inference.
 
 **1. Open a Terminal and Enter Docker Container**
 ```bash
-cd ai_worker
+cd 
 ./docker/container.sh enter
 ```
 
 **2. Launch the ROS 2 Follower Node**
 ```bash
-ffw_bg2_follower_ai
+ros2 launch open_manipulator_bringup omy_follower_ai.launch.py
 ```
 
 **3. Open a New Terminal and Run Docker Container**
 ```bash
-cd ai_worker
+cd 
 ./docker/container.sh enter
 ```
 
-**4. # Navigate to the `LeRobot` Directory**
+**4. Launch the Camera Node**
+```bash
+ros2 launch realsense2_camera rs_camera.launch.py
+```
+
+**5. Open a New Terminal and Run Docker Container**
+```bash
+cd 
+./docker/container.sh enter
+```
+
+**6. Set the Robot Type to `omy`**
+```bash
+ros2 service call /set_robot_type physical_ai_interfaces/srv/SetRobotType "
+{
+  robot_type: 'omy'
+}"
+```
+
+**7. Send Service Call for Evaluation**
+```bash
+ros2 service call /task/command physical_ai_interfaces/srv/SendCommand "
+{
+  command: 2,
+  task_info: {
+    task_name: 'pick_and_place',
+    task_type: 'inference',
+    user_id: '[USER_ID]',
+    task_instruction: 'Pick up the object and place it in the box',
+    fps: 30
+  },
+  model_path: '[REPO_ID]'
+}"
+```
+ Key Inference Parameters
+
+| Parameter | Description |
+|-----------|-------------|
+| `task_name` | The name used to identify the task |
+| `task_type` | The mode of execution |
+| `user_id` | The Hugging Face dataset repository ID |
+| `task_instruction` | The name of the task you are performing |
+| `fps` | Frame rate for dataset recording |
+| `model_path` | Where to save model checkpoints and logs |
+
+### Visualizing Inference Results
+
+After running inference, you can visualize the results using the same visualization tool used for datasets.
+
+First, navigate to the `LeRobot` Directory:
 ```bash
 cd /root/ros2_ws/src/physical_ai_tools/lerobot
 ```
 
-**5.  Run the Following Command for Evaluation**
-```bash
-python lerobot/scripts/control_robot.py \
-  --robot.type=ffw \
-  --control.type=record \
-  --control.single_task="pick and place objects" \
-  --control.fps=15 \
-  --control.repo_id=${HF_USER}/eval_ffw_test \
-  --control.tags='["tutorial"]' \
-  --control.episode_time_s=20 \
-  --control.reset_time_s=10 \
-  --control.num_episodes=10 \
-  --control.push_to_hub=true \
-  --control.policy.path=outputs/train/act_ffw_test/checkpoints/last/pretrained_model \
-  --control.play_sounds=false
-```
- Key Inference Parameters  
-
-| Parameter | Description |
-|-----------|-------------|
-| `--control.type=record` | Records the policy performance for later evaluation |
-| `--control.policy.path` | Path to your trained model checkpoint |
-| `--control.episode_time_s` | Duration of each inference episode (in seconds) |
-| `--control.repo_id` | Hugging Face repo where evaluation results will be saved |
-
-### Visualizing Inference Results
-
-After running inference, you can visualize the results using the same visualization tool used for datasets:
+Then, launch the visualization server with the following command:
 
 ```bash
 python lerobot/scripts/visualize_dataset_html.py \
   --host 0.0.0.0 \
   --port 9091 \
-  --repo-id ${HF_USER}/eval_ffw_test
+  --repo-id ${HF_USER}/eval_omy_test
 ```
 
-Then open [http://127.0.0.1:9091](http://127.0.0.1:9091) in your browser to see how your model performed.
+Finally, open [http://127.0.0.1:9091](http://127.0.0.1:9091) in your browser to see how your model performed.
 
 {% capture notice_01 %}
 **TIP:**
-If you have a another device connected to the same network as the host machine, open `http://ffw-{serial number}.local:9091` in your browser to see how your model performed.
+If you have a another device connected to the same network as the host machine, open `http://omy-{serial number}.local:9091` in your browser to see how your model performed.
 
-For example, `http://ffw-SNPR48A0000.local:9091`.
+For example, `http://omy-SNPR48A0000.local:9091`.
 {% endcapture %}
 <div class="notice--succuess">{{ notice_01 | markdownify}}</div>
 

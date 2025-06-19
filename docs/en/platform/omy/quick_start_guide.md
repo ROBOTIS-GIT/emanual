@@ -97,7 +97,7 @@ The **ROBOTIS OMY** robotic arm utilizes two key software packages to enable int
 - **open_manipulator**: Provides control of the **6-DOF OMY arm** via ros2_control using **DYNAMIXEL-Y** actuators. Supports teleoperation and low-level control.
 - **physical_ai_tools**: A toolkit for **imitation learning**, including modules for data collection, training, inference, and visualization.
 
-> ⚠️ This setup is intended for development on a **user PC**. The robot PC included with OMY comes pre-configured with the same software stack.
+> ⚠️ This setup is intended for development on a **user PC**. **The robot** PC included with OMY comes pre-configured with the same software stack.
 
 
 ### Prerequisites
