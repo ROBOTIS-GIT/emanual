@@ -1,6 +1,3 @@
-
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/5uIZU8PCHT8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
 The contents in e-Manual are subject to be updated without a prior notice. Therefore, some video may differ from the contents in e-Manual.
 {: .notice--warning}  
 <br>
@@ -12,19 +9,19 @@ Stage 1 is a 4x4 map with no obstacles.
     ![](/assets/images/platform/turtlebot3/machine_learning/stage_1.jpg)  
 <br>
 
-2. **Stage 2 (Static Obstacle)**  
+1. **Stage 2 (Static Obstacle)**  
 Stage 2 is a 4x4 map with four cylinders of static obstacles.
 
     ![](/assets/images/platform/turtlebot3/machine_learning/stage_2.jpg)  
 <br>
 
-3. **Stage 3 (Moving Obstacle)**  
+1. **Stage 3 (Moving Obstacle)**  
 Stage 3 is a 4x4 map with four cylinders of moving obstacles.
 
     ![](/assets/images/platform/turtlebot3/machine_learning/stage_3.jpg)  
 <br>
 
-4. **Stage 4 (Combination Obstacle)**  
+1. **Stage 4 (Combination Obstacle)**  
 Stage 4 is a 5x5 map with walls and two cylinders of moving obstacles.
 
     ![](/assets/images/platform/turtlebot3/machine_learning/stage_4.jpg)  
@@ -54,21 +51,21 @@ After the robot performs an action, it receives a reward or penalty for its beha
 **Machine Learning launch argument**  
 `stage_num`
 - default: 1
-- description: The integer value of stage you want to run. This package has stations numbered 1 through 4, as described above.  
+- describtion: The integer value of stage you want to run. This package has stations numbered 1 through 4, as described above.  
 
 `max_training_episodes`
 - default: 1000
-- description: The integer value of an episode you want to run.  
+- describtion: The integer value of an episode you want to run.  
 
 `load_episode`
 - default: 600
-- description: The integer value of an episode you want to test. More complex stages may require more episodes to learn enough.  
+- describtion: The integer value of an episode you want to test. More complex stages may require more episodes to learn enough.  
 <br>
 
 **Run machine learning**  
 1. **Bring the stage in Gazebo map.**
 ``` bash
-$ ros2 launch turtlebot3_gazebo turtlebot3_dqn_{$stage_num}.launch.py
+$ ros2 launch turtlebot3_gazebo turtlebot3_dqn_stage{$stage_num}.launch.py
 ```  
 <br>
 
