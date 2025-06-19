@@ -46,3 +46,19 @@ OMY’s modular design ensures flexibility in integration, while full ROS 2 comp
 
 ## 🤖Compact, Deployable, and Developer-Friendly
 With its lightweight structure and intuitive control interface, OMY is ideal for labs, classrooms, and automation setups, empowering developers and researchers to experiment and innovate efficiently.
+
+## OMY Lineup Overview
+
+<img src="/assets/images/platform/omy/omy_models.png" width="700"/>
+
+The OMY series offers multiple configurations to suit various teleoperation and manipulation tasks. Below is a description of the available models:
+
+- **OMY-L100:**
+This is the leader unit designed for teleoperation. It provides an intuitive interface for controlling other OMY units remotely.
+
+- **OMY-F3M:**
+This model is equipped with a 2-finger gripper and an Intel RealSense D405 depth camera, making it ideal for object manipulation and perception tasks.
+
+- **OMY-3M:**
+The base configuration of OMY, without a gripper. It is suitable for general motion control or as a foundation for custom end-effector integration.
+
