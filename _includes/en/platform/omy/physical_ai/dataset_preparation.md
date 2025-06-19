@@ -220,9 +220,9 @@ INFO 2025-05-15 16:18:07 _internal.py:97 WARNING: This is a development server. 
 INFO 2025-05-15 16:18:07 _internal.py:97 Press CTRL+C to quit
 ```
 
-Access http://127.0.0.1:9091 to view the dataset. You should see a web interface similar to the one below:  
+Once the server is running, access [http://127.0.0.1:9091](http://127.0.0.1:9091) in your browser on the `User PC` to preview the dataset.
+
+Or, on another device connected to the same network as the `User PC`, access `http://{IP address of the host machine}:9091` to preview the dataset.
+
+You should see a web interface similar to the one below:  
 <img src="/assets/images/platform/omy/data_visualization.png" width="400"/>
-
-Once the server is running, open [http://127.0.0.1:9091](http://127.0.0.1:9091) in your browser to preview the dataset.  
-
-On a device connected to the same network as the host machine, open `http://{IP address of the host machine}:9091` in your browser to   preview the dataset.  
