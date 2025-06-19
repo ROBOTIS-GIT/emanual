@@ -1,6 +1,6 @@
 Control the manipulator (simulation or hardware) using your keyboard
 ```bash
-ros2 run open_manipulator_teleop keyboard_control_y
+ros2 run open_manipulator_teleop omy_f3m_teleop
 ```
 **Joint Control**
 - `1` / `q` - Joint 1
@@ -13,3 +13,7 @@ ros2 run open_manipulator_teleop keyboard_control_y
 **Gripper Control**
 - `o` - Open gripper
 - `p` - Close gripper
+
+### Keyboard Teleop Demo
+<img src="/assets/images/platform/omy/omy_f3m_teleoperation.gif" width="700"/>
+

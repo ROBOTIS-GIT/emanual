@@ -1,11 +1,11 @@
 ### Launch MoveIt
 ```bash
-ros2 launch open_manipulator_moveit_config move_group.launch.py
+ros2 launch open_manipulator_moveit_config omy_f3m_moveit.launch.py
 ```
 
 ### Launch the OpenMANIPULATOR GUI
 ```bash
-ros2 launch open_manipulator_gui open_manipulator_y_gui.launch.py
+ros2 launch open_manipulator_gui omy_f3m_gui.launch.py
 ```
 
 ### Explore GUI Features
@@ -49,6 +49,9 @@ ros2 launch open_manipulator_gui open_manipulator_y_gui.launch.py
 
 6. Press the `Play` button to make the manipulator move sequentially according to the saved tasks. Completed tasks will have their status changed to <span style="color: green; font-weight: bold;">Done</span>  
 <img src="/assets/images/platform/omy/OMY_GUI6.png" width="700"/>
+
+#### OMY GUI Demo
+<img src="/assets/images/platform/omy/omy_f3m_gui.gif" width="700"/>
 
 [task space]: /docs/en/popup/open_manipulator_coordinates/
 [joint space]: /docs/en/popup/open_manipulator_coordinates/

@@ -4,7 +4,7 @@ MoveIt 2! is a set of packages for your robot to manipulate for Motion Planning,
 Enable MoveIt functionality for advanced motion planning in RViz.  
 For more information about MoveIt, check out the [official documentation](https://moveit.picknik.ai/main/doc/how_to_guides/how_to_guides.html).
 ```bash
-$ ros2 launch open_manipulator_moveit_config moveit_core.launch.py
+$ ros2 launch open_manipulator_moveit_config omy_f3m_moveit.launch.py
 ```
 Move interactive markers to position the robotic arm, then click Plan and Execute.  
 <img src="/assets/images/platform/omy/moveit2_core.png" width="700"/>
