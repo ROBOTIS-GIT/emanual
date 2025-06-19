@@ -17,13 +17,17 @@ page_number: 6
 
 <style>body {counter-reset: h1 5 !important;}</style>
 
-# [Physical AI Tools](#physical_ai_tools)
+# [lmitation Learning](#lmitation-Learning)
 
-## [Data Collection](#data-collection)
-{% include en/platform/omy/physical_ai/data_collection.md %}
+## [Overview](#overview)
+{% include en/platform/omy/physical_ai/overview.md %}
 
-## [Model Training](#model-training)
-{% include en/platform/omy/physical_ai/model_training.md %}
+## [Camera Connection](#camera-connection)
+{% include en/platform/omy/physical_ai/camera_connection.md %}
 
-## [Model Inference](#model-inference)
-{% include en/platform/omy/physical_ai/model_inference.md %}
+## [Dataset Preparation](#dataset-preparation)
+{% include en/platform/omy/physical_ai/dataset_preparation.md %}
+
+## [Model Workflow](#model-workflow)
+{% include en/platform/omy/physical_ai/model_workflow.md %}
+

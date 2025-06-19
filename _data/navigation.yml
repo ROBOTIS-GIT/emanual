@@ -26273,15 +26273,17 @@ omy:
       url: /platform/omy/ros2_simulation/#mujoco
     - title: "Issac Sim"
       url: /platform/omy/ros2_simulation/#issac-sim
-  - title: "Physical AI Tools"
-    url: /platform/omy/ros2_ai/#physical-ai-tools
+  - title: "Imitation Learning"
+    url: /platform/omy/ros2_ai/#imitation-learning
     children:
-    - title: "Data Collection"
-      url: /platform/omy/ros2_ai/#data-collection
-    - title: "Model Training"
-      url: /platform/omy/ros2_ai/#model-training
-    - title: "Model Inference"
-      url: /platform/omy/ros2_ai/#model-inference
+    - title: "Overview"
+      url: /platform/omy/ros2_ai/#overview
+    - title: "Camera Connection"
+      url: /platform/omy/ros2_ai/#camera-connection
+    - title: "Dataset Preparation"
+      url: /platform/omy/ros2_ai/#dataset-preparation
+    - title: "Model Workflow"
+      url: /platform/omy/ros2_ai/#model-workflow
 #OpenMANIPULATOR-X sidebar
 openmanipulator_x:
   - title: "Overview"
