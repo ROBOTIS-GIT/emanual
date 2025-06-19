@@ -1,57 +1,51 @@
 
-### Overview
-
-* **Purpose**: Explain how to connect and configure the camera properly.
-* **Applicable Models**: (e.g., Realsense D435, ZED2, USB Camera...)
-* **System Requirements**:
-
-  * USB Port: USB 3.0 or higher
-  * Required Packages: `librealsense`, `ros2_camera_driver`, etc.
-
-
 ### Hardware Setup
 
 **1. Connect the Camera**
 
-* Plug the camera into a USB 2.0 port.
+* Plug the camera into a **USB 2.0 port**.
+
+**Warning:**
+The RealSense camera mounted on the OMY uses a USB 2.0 cable and must be connected directly to the user PC.
+Due to variations in USB configurations across different PCs, the camera image may not appear immediately.
+In such cases, connecting the camera through a USB hub has been observed to resolve the issue in some environments.
+{: .notice--warning}
+
 * Ensure the USB cable is properly connected and not loose.
 
 
-### Software Installation
+### Software Installation [USER PC]
 
- **1. Install Required Packages**
 
-```bash
-sudo apt update
-sudo apt install ros-${ROS_DISTRO}-realsense2-camera
-```
+**1. Start the Docker Containers**
 
-**2. Verify Camera Recognition**
+Launch the containers using your preferred method or registered aliases:
 
 ```bash
-lsusb
-# or
-rs-enumerate-devices
+open_manipulator docker start
+physical_ai_server docker start
 ```
 
+**2. Run AI Server via Alias**
 
-**3. Launching the Camera Node**
+Inside the `open_manipulator` container, run the AI Server using the registered alias:
 
 ```bash
-ros2 launch realsense2_camera rs_camera.launch.py
+docker enter
+ai_server
 ```
 
-**4. Launch File Parameters (Optional)**
-* `enable_depth:=true`
-* `enable_color:=true`
-* `initial_reset:=true`
-### Verifying Operation
+This will start the Physical AI Task (PAT) runtime system.  
 
- **1. Check Topics**
+**3. Launch Mounted Camera (Intel RealSense)**
+
+To enable the mounted RealSense D405 camera:
 
 ```bash
-ros2 topic list
+ros2 launch realsense2_camera rs_launch.py camera_name:='cam_wrist'
 ```
+
+Make sure the camera is properly connected and recognized inside the container.
 
 ### Troubleshooting
 
@@ -60,13 +54,4 @@ ros2 topic list
 | Camera not recognized | Check USB cable, use `lsusb`, reboot                          |
 | No image stream       | Check topics, verify node is running                          |
 | Permission denied     | Add user to `video` group:<br> `sudo usermod -aG video $USER` |
-
-### Appendix
-
-* Useful Links
-
-  * [Intel RealSense ROS2 Documentation](https://github.com/IntelRealSense/realsense-ros)
-  * [ROS 2 Camera Driver Guide (Generic)](https://index.ros.org/p/ros2_camera_driver)
-* Launch file templates
-* Configuration file samples
 
