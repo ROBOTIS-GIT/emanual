@@ -38,4 +38,4 @@ $ rqt_image_view
 ```
    ![](/assets/images/platform/turtlebot3/autorace_2025/autorace_object_detection_rqt.png)
 
-The node automatically shuts down after a successful detection and state trigger(`rclpy.shutdown()`).
+Once object detection is finalized, the node sends the result and waits for a response. So the node may appear to be paused. So restart the node manually if you want to run detection again.  

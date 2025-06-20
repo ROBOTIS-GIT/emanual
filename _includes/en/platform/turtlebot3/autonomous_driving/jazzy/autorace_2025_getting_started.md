@@ -3,14 +3,13 @@ The Autorace package was developed for `Ubuntu 24.04` running `ROS 2 Jazzy JALIS
 
 ### [Prerequisites](#prerequisites)
 
-`Remote PC`
+`Remote PC`/`TurtleBot3 SBC`
 - Ubuntu 24.04 installed  
 - ROS 2 Jazzy installed  
 
 ### [Install Autorace Packages](#install-autorace-packages)
 
 1. Clone the AutoRace repository.  
-**[Remote PC]**  
 ```bash
 $ cd ~/turtlebot3_ws/src/
 $ git clone https://github.com/ROBOTIS-GIT/turtlebot3_autorace.git
@@ -18,7 +17,6 @@ $ cd ~/turtlebot3_ws && colcon build --symlink-install
 ```
 
 2. Install additional dependent packages.  
-**[Remote PC]**  
 ```bash
 $ sudo apt install ros-jazzy-image-transport ros-jazzy-cv-bridge ros-jazzy-vision-opencv python3-opencv libopencv-dev ros-jazzy-image-pipeline
 ```
