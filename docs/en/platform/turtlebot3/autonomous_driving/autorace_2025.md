@@ -7,7 +7,6 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/turtlebot3/autorace_2025/
 tabs: "ROS"
-tab_title1: Jazzy
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
@@ -22,8 +21,6 @@ page_number: 19
 ![](/assets/images/platform/turtlebot3/autonomous_driving/autorace_rbiz_challenge_2017_robots_1.png)
 
 # [Autorace 2025](#autorace-2025)
-
-<section data-id="{{ page.tab_title1 }}" class="tab_contents">
 
 ## [Getting Started](#getting-started)
 {% include en/platform/turtlebot3/autonomous_driving/jazzy/autorace_2025_getting_started.md %}

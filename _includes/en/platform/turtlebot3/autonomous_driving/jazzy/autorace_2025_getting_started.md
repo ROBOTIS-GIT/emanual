@@ -1,15 +1,12 @@
 <!-- ## Getting Started -->
-{% capture notice_01 %}
-**NOTE**
 - The Autorace package was developed for `Ubuntu 24.04` running `ROS 2 Jazzy JALISCO`.
 - Instructions for correct simulation setup are available in the [Simulation](/docs/en/platform/turtlebot3/simulation/) section of the manual.
-{% endcapture %}
 
 ### [Prerequisites](#prerequisites)
 
 `Remote PC`
 
-- ROS 2 Humble installed on a Laptop or desktop PC.
+- ROS 2 Jazzy installed on a Laptop or desktop PC.
 
 ### [Install Autorace Packages](#install-autorace-packages)
 
@@ -22,7 +19,7 @@ $ cd ~/turtlebot3_ws && colcon build --symlink-install
 
 2. Install additional dependent packages on the `Remote PC`.
 ```bash
-$ sudo apt install ros-humble-image-transport ros-humble-cv-bridge ros-humble-vision-opencv python3-opencv libopencv-dev ros-humble-image-pipeline
+$ sudo apt install ros-jazzy-image-transport ros-jazzy-cv-bridge ros-jazzy-vision-opencv python3-opencv libopencv-dev ros-jazzy-image-pipeline
 ```
 
 ### [Setting TurtleBot3 Model](#setting-turtlebot3-model)
