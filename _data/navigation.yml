@@ -25155,6 +25155,8 @@ op3:
     children:
     - title: "Real-Time Ball Detection with YOLOv8 and OpenVINO"
       url: /platform/op3/advanced_tutorials/#real-time-ball-detection-with-yolov8-and-openvino-on-robotis-op3
+    - title: "Voice Control System Implementation"
+      url: /platform/op3/advanced_tutorials/#voice-control-system-implementation
   - title: "Simulation"
     url: /platform/op3/simulation/#simulation
     children:
@@ -26091,8 +26093,6 @@ turtlebot3:
       url: /platform/turtlebot3/basic_examples/#automatic-parking-vision
     - title: "Load Multiple TurtleBot3s"
       url: /platform/turtlebot3/basic_examples/#load-multiple-turtlebot3s
-    - title: "YOLO Object Detection"
-      url: /platform/turtlebot3/basic_examples/#yolo-object-detection
   - title: "Friends(Locomotion)"
     url: /platform/turtlebot3/locomotion/#friendslocomotion
     children:
