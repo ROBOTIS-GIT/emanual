@@ -349,9 +349,9 @@ main:
       titlekr: " AI 매니퓰레이터"
       url: /platform/ai_manipulator_main
       children:
-      - title: "OMY"
-        titlekr: "OMY"
-        url: /platform/omy/overview/
+      #- title: "OMY"
+      #  titlekr: "OMY"
+      #  url: /platform/omy/overview/
       - title: "OpenMANIPULATOR-P"
         titlekr: "OpenMANIPULATOR-P"
         url: /platform/openmanipulator_p/overview/
@@ -26200,10 +26200,10 @@ turtlebot3:
 
 #AI Manipulator-MAIN
 openmanipulator:
-  - title: "OMY"
-    titlekr: "OMY"
-    url: /platform/ai_manipulator_main/#omy
-    urlkr: /platform/ai_manipulator_main/#omy
+  #- title: "OMY"
+  #  titlekr: "OMY"
+  #  url: /platform/ai_manipulator_main/#omy
+  #  urlkr: /platform/ai_manipulator_main/#omy
   - title: "OpenMANIPULATOR-X"
     titlekr: "OpenMANIPULATOR-X"
     url: /platform/ai_manipulator_main/#openmanipulator-x

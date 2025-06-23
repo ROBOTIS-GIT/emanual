@@ -10,7 +10,7 @@ sidebar:
   title: AI Manipulator
   nav: "openmanipulator"
 ---
-
+<!--
 # [OMY](#omy)
 
 ![](/assets/images/platform/omy/omy_logo.png)
@@ -67,7 +67,7 @@ sidebar:
 | Communication Baudrate | 4 [Mbps] |
 
 - [OMY](/docs/en/platform/omy/overview/) 
-
+-->
 # [OpenMANIPULATOR-X](#openmanipulator-x)
 
 ![](/assets/images/platform/openmanipulator_x/OpenManipulator.resized.png)

@@ -15,13 +15,23 @@ sidebar:
 | [![](/assets/tb3_burger_Waffle.png)](/docs/en/platform/turtlebot3/overview/) |
 
 # [AI Manipulator](#ai-manipulator)
-
+<!--
 |                                                    OMY                                                     |                                                OpenMANIPULATOR-P                                                |                                                        OpenMANIPULATOR-X                                                         |                                                    Manipulator-H                                                    |
 | :--------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------: |
 | [![](/assets/images/platform/omy/omy_product.png)](/docs/en/platform/omy/overview/) | [![](/assets/images/platform/openmanipulator_p/product_img.png)](/docs/en/platform/openmanipulator_p/overview/) | [![](/assets/images/platform/openmanipulator_x/OpenManipulator_Introduction.jpg)](/docs/en/platform/openmanipulator_x/overview/) | [![](/assets/images/platform/manipulator_h/manipulator_product.png)](/docs/en/platform/manipulator_h/introduction/) |
 
 **WARNING** : Manipulator-H has been discontinued.
 {: .notice--warning}
+-->
+
+|                                                OpenMANIPULATOR-P                                                |                                                        OpenMANIPULATOR-X                                                         |                                                    Manipulator-H                                                    |
+| :-------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------: |
+| [![](/assets/images/platform/openmanipulator_p/product_img.png)](/docs/en/platform/openmanipulator_p/overview/) | [![](/assets/images/platform/openmanipulator_x/OpenManipulator_Introduction.jpg)](/docs/en/platform/openmanipulator_x/overview/) | [![](/assets/images/platform/manipulator_h/manipulator_product.png)](/docs/en/platform/manipulator_h/introduction/) |
+
+**WARNING** : Manipulator-H has been discontinued.
+{: .notice--warning}
+
+
 
 # [ROBOTIS OP](#robotis-op)
 
