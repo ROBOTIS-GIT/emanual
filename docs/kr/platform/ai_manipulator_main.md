@@ -10,7 +10,7 @@ sidebar:
   title: AI 매니퓰레이터
   nav: "openmanipulator"
 ---
-
+<!--
 # [OMY](#omy)
 
 ![](/assets/images/platform/omy/omy_logo.png)
@@ -59,7 +59,7 @@ OMY는 현재 영문으로만 지원되고 있습니다. [영문 e매뉴얼의 O
 | Host Interface | U2D2 (USB 2.0) |
 | Internal Communications | TTL Multidrop Bus |
 | Communication Baudrate | 4 [Mbps] |
-
+-->
 # [오픈매니퓰레이터-X](#오픈매니퓰레이터-x)
 
 ![](/assets/images/platform/openmanipulator_x/OpenManipulator.resized.png)
