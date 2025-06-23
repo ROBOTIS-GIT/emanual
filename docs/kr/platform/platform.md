@@ -26,6 +26,7 @@ sidebar:
 **주의** : Manipulator-H 는 현재 단종되어 더 이상 판매되지 않습니다.
 {: .notice--warning}
 -->
+
 |                                                OpenMANIPULATOR-P                                                |                                                        OpenMANIPULATOR-X                                                         |                                                    Manipulator-H                                                    |
 | :-------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------: |
 | [![](/assets/images/platform/openmanipulator_p/product_img.png)](/docs/en/platform/openmanipulator_p/overview/) | [![](/assets/images/platform/openmanipulator_x/OpenManipulator_Introduction.jpg)](/docs/en/platform/openmanipulator_x/overview/) | [![](/assets/images/platform/manipulator_h/manipulator_product.png)](/docs/en/platform/manipulator_h/introduction/) |
