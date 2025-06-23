@@ -10,8 +10,7 @@
 **NOTE** : When the value of the Operating Mode(11) register changes, the  [Velocity PI(76, 78)](#velocity-pi-gain76-78); [Position PID(80, 82, 84)](#position-pid-gain80-82-84); [Feedforward(88, 90)](#position-pid-gain80-82-84), will be reset according to the selected Operating Mode(11). Aside from this, the following registers will also be reset: 
 
 1. [Profile Velocity(112)](#profile-velocity112) and [Profile Acceleration(108)](#profile-acceleration108) will be set to ‘0’
-2. [Goal PWM(100)](#goal-pwm100) and [Goal Current(102)](#goal-current102) are reset to the value of [PWM Limit(36)](#pwm-limit36) and [Current Limit(38)](#current-limit38) respectively
-3. When the Operating Mode(11) is set to **Current-based Position Control Mode**, [Position PID(80, 82, 84)](#position-pid-gain80-82-84) and [PWM Limit(36)](#pwm-limit36) values will be reset. 
+2. [Goal PWM(100)](#goal-pwm100) is reset to the value of [PWM Limit(36)](#pwm-limit36)
 {% endcapture %}
 <div class="notice">{{ group_notice_01 | markdownify }}</div>
 
