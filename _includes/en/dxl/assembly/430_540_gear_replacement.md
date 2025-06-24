@@ -1,12 +1,12 @@
-DYNAMIXEL's internal gears are subject to wear and tear through regular use. Regular maintinence and replacement of DYNAMIXEL gears is required to ensure maximum performance and precision.
+DYNAMIXEL's internal gears are subject to wear and tear through regular use. Regular maintenance and replacement of DYNAMIXEL gears is required to ensure maximum performance and precision.
 
-The following video provides instructions on the DYNAMXIEL gear replacement process.
+The following video provides instructions on the DYNAMIXEL gear replacement process.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wKxcZNMrrCQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ### [DYNAMIXEL Calibration](#dynamixel-calibration)
 
-After a gear replacement has been completed, your DYNAMXIEL must be recalibrated to ensure positional accuracy.
+After a gear replacement has been completed, your DYNAMIXEL must be recalibrated to ensure positional accuracy.
 
 See the following video on how to calibrate your DYNAMIXEL using R+ Manager 2.0.
 

@@ -309,6 +309,13 @@ bool syncWriteEnd(void);
 {% include en/dxl/485_ttl_connection_x.md %}
 
 
+# [Download](#download)
+
+- [DYNAMIXEL Shield Schematic(PDF)](https://www.robotis.com/service/download.php?no=2206)
+  ![](/assets/images/parts/interface/dynamixel_shield/dynamixel_shield_schematic01.png)
+  ![](/assets/images/parts/interface/dynamixel_shield/dynamixel_shield_schematic02.png)
+
+
 [AX-12W]: /docs/en/dxl/ax/ax-12w/
 [AX-12+/12A]: /docs/en/dxl/ax/ax-12a/
 [AX-18F/18A]: /docs/en/dxl/ax/ax-18a/

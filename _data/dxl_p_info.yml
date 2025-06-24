@@ -14,9 +14,9 @@ common_pro_plus_specs:
   voltage:            &voltage            "24.0 [V]"
   command:            &command            "Digital Packet"
   command_kr:         &command_kr         "Digital Packet"
-  rs485:              &rs485              "RS485 Asynchronous Serial Communication<br />(8bit, 1stop, No Parity)"
-  rs485_kr:           &rs485_kr           "RS485 비동기 시리얼 통신 (8bit, 1stop, No Parity)"
-  rs485_connection:   &rs485_connection   "RS485 Multidrop Bus"
+  rs485:              &rs485              "RS-485 Asynchronous Serial Communication<br />(8bit, 1stop, No Parity)"
+  rs485_kr:           &rs485_kr           "RS-485 비동기 시리얼 통신 (8bit, 1stop, No Parity)"
+  rs485_connection:   &rs485_connection   "RS-485 Multidrop Bus"
   id:                 &id                 "253 ID (0 ~ 252)"
   standbycurrent_42:  &standbycurrent_42  "30 [mA]"
   standbycurrent_54:  &standbycurrent_54  "40 [mA]"
@@ -47,7 +47,7 @@ ph42-020-s300-r:
   commandsignalkr:    *command_kr
   protocoltype:       *rs485
   protocoltypekr:     *rs485_kr
-  physicalconnection: "RS485 Multidrop Bus"
+  physicalconnection: "RS-485 Multidrop Bus"
   id:                 *id
   standbycurrent:     *standbycurrent_42
 
@@ -77,7 +77,7 @@ ph54-100-s500-r:
   commandsignalkr:    *command_kr
   protocoltype:       *rs485
   protocoltypekr:     *rs485_kr
-  physicalconnection: "RS485 Multidrop Bus"
+  physicalconnection: "RS-485 Multidrop Bus"
   id:                 *id
   standbycurrent:     *standbycurrent_54
 
@@ -107,7 +107,7 @@ ph54-200-s500-r:
   commandsignalkr:    *command_kr
   protocoltype:       *rs485
   protocoltypekr:     *rs485_kr
-  physicalconnection: "RS485 Multidrop Bus"
+  physicalconnection: "RS-485 Multidrop Bus"
   id:                 *id
   standbycurrent:     *standbycurrent_54
 
@@ -137,7 +137,7 @@ pm42-010-s260-r:
   commandsignalkr:    *command_kr
   protocoltype:       *rs485
   protocoltypekr:     *rs485_kr
-  physicalconnection: "RS485 Multidrop Bus"
+  physicalconnection: "RS-485 Multidrop Bus"
   id:                 *id
   standbycurrent:     *standbycurrent_42
 
@@ -167,7 +167,7 @@ pm54-040-s250-r:
   commandsignalkr:    *command_kr
   protocoltype:       *rs485
   protocoltypekr:     *rs485_kr
-  physicalconnection: "RS485 Multidrop Bus"
+  physicalconnection: "RS-485 Multidrop Bus"
   id:                 *id
   standbycurrent:     *standbycurrent_54
 
@@ -197,6 +197,6 @@ pm54-060-s250-r:
   commandsignalkr:    *command_kr
   protocoltype:       *rs485
   protocoltypekr:     *rs485_kr
-  physicalconnection: "RS485 Multidrop Bus"
+  physicalconnection: "RS-485 Multidrop Bus"
   id:                 *id
   standbycurrent:     *standbycurrent_54

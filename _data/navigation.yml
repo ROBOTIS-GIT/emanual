@@ -32438,6 +32438,10 @@ dynamixel_shield:
       titlekr: "통신 회로"
       url: /parts/interface/dynamixel_shield/#communication-circuit
       urlkr: /parts/interface/dynamixel_shield/#통신-회로
+  - title: "Download"
+    titlekr: "다운로드"
+    url: /parts/interface/dynamixel_shield/#download
+    urlkr: /parts/interface/dynamixel_shield/#다운로드
 
 mkr_shield:
   - title: "Introduction"
@@ -32512,10 +32516,6 @@ mkr_shield:
     titlekr: "다운로드"
     url: /parts/interface/mkr_shield/#download
     urlkr: /parts/interface/mkr_shield/#다운로드
-  - title: "FAQ"
-    titlekr: "FAQ"
-    url: /parts/interface/mkr_shield/#faq
-    urlkr: /parts/interface/mkr_shield/#faq
 
 u2d2_power_hub:
   - title: "Introduction"
