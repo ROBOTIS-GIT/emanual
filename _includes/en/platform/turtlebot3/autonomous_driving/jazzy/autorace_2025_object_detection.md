@@ -9,14 +9,20 @@ The Object Detection module is used in three main phases of the Autorace deliver
 2. **Store Pickup**: Move the robot to the detected store for pickup.
 3. **Delivery**: Confirm the delivery destination using the detected room number.  
 
-**Launch the Node**  
-1. **Open a new terminal and run the Object Detection node.**  
+**Launch the Object Detection Node**  
+1. **Launch the camera node.**  
+**[TurtleBot3 SBC]**  
+```bash
+ $ ros2 launch turtlebot3_bringup camera.launch.py
+ ``` 
+
+2. **Open a new terminal and run the Object Detection node.**  
 Replace `<path_to_best.pt>` with your actual model path. For reference, the model file `best.pt` is stored at `/turtlebot3_ws/src/turtlebot3_autorace/turtlebot3_autorace_detect/model/best.pt`. You can fine-tune the model using your own dataset or replace it with a different YOLOv8 model.  
 ```bash
 $ ros2 launch turtlebot3_autorace_detect object_detection.launch.py model_path:=<path_to_best.pt>
 ```
 
-2. **Activate the life cycle node.**  
+3. **Activate the life cycle node.**  
 The node uses the ROS 2 Lifecycle interface, so you need to manually transition it.  
 **Configure**  
 ```bash
@@ -26,7 +32,7 @@ $ ros2 lifecycle set /object_detection_node configure
 ```bash
 $ ros2 lifecycle set /object_detection_node activate
 ```
-3. **Verify the output.**  
+4. **Verify the output.**  
 You can check the detection result via terminal logs or rqt.    
 **Terminal Logs**
 ```bash

@@ -1,1 +1,2 @@
-overall
+**TurtleBot3 Autorace 2025 - Dash & Deliver** is a vision-based autonomous delivery competition using TurtleBot3. The robot must recognize orders, navigate complex paths, avoid obstacles, and deliver items to designated locations.  
+> Participants will complete three delivery rounds within a 10-minute limit. The final ranking is based on total score and completion time. The competition is designed to be accessible, educational, and exciting for university students and beginners.  

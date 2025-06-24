@@ -22,11 +22,11 @@ page_number: 19
 
 # [Autorace 2025](#autorace-2025)
 
-## [Getting Started](#getting-started)
-{% include en/platform/turtlebot3/autonomous_driving/jazzy/autorace_2025_getting_started.md %}
-
 ## [Overall](#overall)
 {% include en/platform/turtlebot3/autonomous_driving/jazzy/autorace_2025_overall.md %}
+
+## [Getting Started](#getting-started)
+{% include en/platform/turtlebot3/autonomous_driving/jazzy/autorace_2025_getting_started.md %}
 
 ## [Missions](#missions)
 

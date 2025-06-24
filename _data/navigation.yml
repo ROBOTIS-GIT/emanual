@@ -26040,10 +26040,10 @@ turtlebot3:
     - title: "Autorace 2025"
       url: /platform/turtlebot3/autorace_2025/
       children:
-      - title: "Getting Started"
-        url: /platform/turtlebot3/autorace_2025/#getting-started
       - title: "Overall"
         url: /platform/turtlebot3/autorace_2025/#overall
+      - title: "Getting Started"
+        url: /platform/turtlebot3/autorace_2025/#getting-started
       - title: "Missions"
         url: /platform/turtlebot3/autorace_2025/#missions
   - title: "Machine Learning"

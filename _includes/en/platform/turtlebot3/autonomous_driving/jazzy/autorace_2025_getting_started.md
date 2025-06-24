@@ -22,7 +22,7 @@ $ sudo apt install ros-jazzy-image-transport ros-jazzy-cv-bridge ros-jazzy-visio
 ```
 
 ### [Setting TurtleBot3 Model](#setting-turtlebot3-model)
-Add an export line to your ~/.bashrc. Autorace only supports the burger_cam model.
+Add an export line to your `~/.bashrc.` Autorace only supports the *burger_cam* model.
 ``` bash
 $ echo 'export TURTLEBOT3_MODEL=burger_cam' >> ~/.bashrc
 ```
