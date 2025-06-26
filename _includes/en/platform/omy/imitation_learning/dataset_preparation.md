@@ -56,9 +56,9 @@ ai_server
 
 **Access the Web UI in Your Browser**
 
-Open web browser on `User PC` and go to `http://127.0.0.1`.
+Open a web browser `User PC` and go to `http://127.0.0.1`.
 
-Or, from another device connected to the same network, go to `http://{IP address of the User PC}`.
+Alternatively, from another device connected to the same network, go to `http://{IP address of the User PC}`.
 
 
 Once connected, you should see the web UI as shown below.  

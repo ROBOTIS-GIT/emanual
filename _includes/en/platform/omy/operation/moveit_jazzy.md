@@ -1,8 +1,8 @@
-MoveIt 2! is a set of packages for your robot to manipulate for Motion Planning, Manipulation, Inverse Kinematics, Control, 3D Perception and Collision Checking.
+MoveIt 2 is a set of packages for your robot to manipulate for Motion Planning, Manipulation, Inverse Kinematics, Control, 3D Perception and Collision Checking.
 
-###  MoveIt! Launch
-Enable MoveIt functionality for advanced motion planning in RViz.  
-For more information about MoveIt, check out the [official documentation](https://moveit.picknik.ai/main/doc/how_to_guides/how_to_guides.html).
+###  Launching MoveIt 2
+Enable MoveIt 2 functionality for advanced motion planning in RViz.  
+For more information about MoveIt 2, check out the [official documentation](https://moveit.picknik.ai/main/doc/how_to_guides/how_to_guides.html).
 ```bash
 $ ros2 launch open_manipulator_moveit_config omy_f3m_moveit.launch.py
 ```

@@ -6,7 +6,7 @@ To use ROBOTIS [software](/docs/en/software/#roboplus-r) (R+ Task, R+ Motion 및
 {: .notice}
 
 {% if page.ref=='opencm904' %}
-**NOTE**: With [OpenCM485 EXP Board](/docs/en/parts/controller/opencm485exp/), DYNAMIXEL-X with 24V and RS485 Communication Port can be used.  
+**NOTE**: With [OpenCM485 EXP Board](/docs/en/parts/controller/opencm485exp/), DYNAMIXEL-X with 24V and RS-485 Communication Port can be used.  
 ![](/assets/images/sw/rplus2/manager/rplusmanager2_30_kr.jpg)  
 {: .notice}
 

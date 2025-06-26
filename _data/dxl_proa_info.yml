@@ -17,9 +17,9 @@ common_proa_specs:
   voltage:            &voltage            "24.0 [V]"
   command:            &command            "Digital Packet"
   command_kr:         &command_kr         "디지털 패킷"
-  rs485:              &rs485              "RS485 Asynchronous Serial Communication<br />(8bit, 1stop, No Parity)"
-  rs485_kr:           &rs485_kr           "RS485 비동기 시리얼 통신 (8bit, 1stop, No Parity)"
-  rs485_connection:   &rs485_connection   "RS485 Multidrop Bus"
+  rs485:              &rs485              "RS-485 Asynchronous Serial Communication<br />(8bit, 1stop, No Parity)"
+  rs485_kr:           &rs485_kr           "RS-485 비동기 시리얼 통신 (8bit, 1stop, No Parity)"
+  rs485_connection:   &rs485_connection   "RS-485 Multidrop Bus"
   id:                 &id                 "253 ID (0 ~ 252)"
   standbycurrent:     &standbycurrent     "80 [mA]"
 
@@ -49,7 +49,7 @@ h42-20-s300-ra:
   commandsignalkr:    *command_kr
   protocoltype:       *rs485
   protocoltypekr:     *rs485_kr
-  physicalconnection: "RS485 Multidrop Bus"
+  physicalconnection: "RS-485 Multidrop Bus"
   id:                 *id
   standbycurrent:     *standbycurrent
 
@@ -79,7 +79,7 @@ h54-100-s500-ra:
   commandsignalkr:    *command_kr
   protocoltype:       *rs485
   protocoltypekr:     *rs485_kr
-  physicalconnection: "RS485 Multidrop Bus"
+  physicalconnection: "RS-485 Multidrop Bus"
   id:                 *id
   standbycurrent:     *standbycurrent
 
@@ -109,7 +109,7 @@ h54-200-s500-ra:
   commandsignalkr:    *command_kr
   protocoltype:       *rs485
   protocoltypekr:     *rs485_kr
-  physicalconnection: "RS485 Multidrop Bus"
+  physicalconnection: "RS-485 Multidrop Bus"
   id:                 *id
   standbycurrent:     *standbycurrent
 
@@ -139,7 +139,7 @@ m42-10-s260-ra:
   commandsignalkr:    *command_kr
   protocoltype:       *rs485
   protocoltypekr:     *rs485_kr
-  physicalconnection: "RS485 Multidrop Bus"
+  physicalconnection: "RS-485 Multidrop Bus"
   id:                 *id
   standbycurrent:     *standbycurrent
 
@@ -169,7 +169,7 @@ m54-40-s250-ra:
   commandsignalkr:    *command_kr
   protocoltype:       *rs485
   protocoltypekr:     *rs485_kr
-  physicalconnection: "RS485 Multidrop Bus"
+  physicalconnection: "RS-485 Multidrop Bus"
   id:                 *id
   standbycurrent:     *standbycurrent
 
@@ -199,6 +199,6 @@ m54-60-s250-ra:
   commandsignalkr:    *command_kr
   protocoltype:       *rs485
   protocoltypekr:     *rs485_kr
-  physicalconnection: "RS485 Multidrop Bus"
+  physicalconnection: "RS-485 Multidrop Bus"
   id:                 *id
   standbycurrent:     *standbycurrent

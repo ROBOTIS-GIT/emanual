@@ -266,7 +266,7 @@ CAN2DYNAMIXEL converts CAN based DYNAMIXEL Protocol into DYNAMIXEL Protocol 2.0.
 
 CAN shield board with MCP2515 is required and `107-Arduino-MCP2515` library can be installed via Library Manager of Arduino IDE.
 
-### Download
+### Download Examples
 The example is included in the `DYNAMIXEL Shield library` and can be found at **File > Examples > DynamixelShield > advanced > can2dynamixel** from Arduino IDE.
 
 ### Tested Environment
@@ -322,7 +322,7 @@ The RC signal sent from the RC controller is translated into PWM signal by the R
 
 The example provides a couple safety features such as `Soft Start` that prevents sudden movement of DYNAMIXEL when the RC receiver is powered, and `Fail Safe` that returns DYNAMIXEL to certain position when the power of the RC receiver is cut off.
 
-### Download
+### Download Examples
 The example is included in the `DYNAMIXEL Shield library` and can be found from **File > Examples > DynamixelShield > advanced > rc_pwm2dynamixel**
 
 ### Tested Environment
@@ -358,7 +358,6 @@ The RC receiver and the DYNAMIXEL Shield MKR can be connected as below.
 - [DYNAMIXEL Shield MKR Schematic(PDF)](https://www.robotis.com/service/download.php?no=1988)  
   ![](/assets/images/parts/interface/mkr_shield/mkr_schematic.png)
 
-# [FAQ](#faq)
 
 [ax-12w]: /docs/en/dxl/ax/ax-12w/
 [ax-12+/12a]: /docs/en/dxl/ax/ax-12a/
