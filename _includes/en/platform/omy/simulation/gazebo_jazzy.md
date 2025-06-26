@@ -20,7 +20,7 @@ xhost +
 ``` bash
 $ ros2 launch open_manipulator_bringup omy_f3m_gazebo.launch.py
 ```
-2. Run [MoveIt 2, GUI Operation](/docs/en/platform/omy/ros2_operation) in Gazebo simulation.
+2. Run [Moveit, GUI Operation](/docs/en/platform/omy/ros2_operation) in Gazebo simulation.
 
 #### OMY_F3M
 <img src="/assets/images/platform/omy/omy_f3m_gazebo.png" width="700"/>
