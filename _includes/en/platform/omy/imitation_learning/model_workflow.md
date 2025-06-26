@@ -1,6 +1,6 @@
 
 
-This guide explains the process of **training** and **deploying imitation learning models** for the AI Worker using your prepared datasets.
+This guide explains the process of **training** and **deploying imitation learning models** for the OMY using your prepared datasets.
 
 ### Model Training
 
@@ -77,7 +77,7 @@ This makes your model accessible from anywhere and simplifies deployment.
 
 ### Model Inference
 
-Once your model is trained, you can deploy it on the AI Worker for inference.
+Once your model is trained, you can deploy it on the OMY for inference.
 
 **1. Open a Terminal and Enter Docker Container**
 ```bash
@@ -107,7 +107,7 @@ cd
 ./docker/container.sh enter
 ```
 
-**6. Set the Robot Type to `omy`**
+**6. Set the Robot Type to 'omy'**
 ```bash
 ros2 service call /set_robot_type physical_ai_interfaces/srv/SetRobotType "
 {

@@ -26,7 +26,7 @@ page_number: 4
 ## [Launch Bringup](#launch-bringup)
 {% include en/platform/omy/operation/bringup_jazzy.md %}
 
-## [MoveIt](#moveit)
+## [MoveIt 2](#moveit-2)
 {% include en/platform/omy/operation/moveit_jazzy.md %}
 
 ## [GUI Program](#gui-program)

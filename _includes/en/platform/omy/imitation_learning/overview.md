@@ -25,7 +25,7 @@ Once trained, the models are deployed on the OMY product to execute real-time in
 
 **Dataset Schema**
 
-The dataset follows the standard [🤗 Hugging Face datasets format](https://huggingface.co/docs/datasets/index) and contains imitation learning demonstrations collected from the AI Worker via ROS 2 teleoperation using the [lerobot](https://github.com/huggingface/lerobot) framework.  
+The dataset follows the standard [🤗 Hugging Face datasets format](https://huggingface.co/docs/datasets/index) and contains imitation learning demonstrations collected from the OMY via ROS 2 teleoperation using the [lerobot](https://github.com/huggingface/lerobot) framework.  
 
 | Field              | Type            | Description          |
 |--------------------|-----------------|----------------------|
