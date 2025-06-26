@@ -26258,8 +26258,8 @@ omy:
       url: /platform/omy/ros2_operation/#ai-teleoperation
     - title: "Bringup"
       url: /platform/omy/ros2_operation/#launch-bringip
-    - title: "MoveIt 2"
-      url: /platform/omy/ros2_operation/#moveit-2
+    - title: "Moveit"
+      url: /platform/omy/ros2_operation/#moveit
     - title: "GUI Program"
       url: /platform/omy/ros2_operation/#gui-program
     - title: "Keyboard Teleoperation"
