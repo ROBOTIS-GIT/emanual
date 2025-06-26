@@ -1,4 +1,4 @@
- The Bus Watchdog(98) is a fail-safe system used to stop DYNAMIXEL motion if communication between the controller and DYNAMIXEL (RS485, TTL) is disconnected.
+ The Bus Watchdog(98) is a fail-safe system used to stop DYNAMIXEL motion if communication between the controller and DYNAMIXEL (RS-485, TTL) is disconnected.
 
 |       | Values  | Description                                                |
 |:------|:-------:|:-----------------------------------------------------------|

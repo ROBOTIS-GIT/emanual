@@ -6,7 +6,8 @@ The episode ends when the TurtleBot3 crashes on an obstacle or after a certain p
 
 ### [Set state](#set-state)
 
-State is an observation of environment and describes the current situation. Here, `state_size` is 26 and has 24 LDS values, distance to goal, and angle to goal.
+State is an observation of environment and describes the current situation. Here, `state_size` is 26 and has 24 LDS values, distance to goal, and angle to goal.  
+LDS values use a forward 180-degree range, so you need 48 values in a 360-degree range.
 
 Turtlebot3's LDS default is set to 360. You can modify sample of LDS at `/turtlebot3_simulations/turtlebot3_gazebo/models/turtlebot3_burger/model.sdf`.
 
@@ -22,7 +23,7 @@ gedit ~/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models/turtle
 ```bash
 <scan>
   <horizontal>
-    <samples>360</samples>    # The number of sample. Modify it to 24
+    <samples>360</samples>    # The number of sample. Modify it to 48
     <resolution>1.000000</resolution>
     <min_angle>0.000000</min_angle>
     <max_angle>6.280000</max_angle>
@@ -58,38 +59,71 @@ More lidar points can be used, but they require more computing resources. To use
 collides with an obstacle, it gets big negative reward. If you want to apply your reward design, modify `calculate_reward` function at `turtlebot3_machine_learning/turtlebot3_dqn/turtlebot3_dqn/dqn_environment.py`.  
 <br>
 
-1. **Distance reward**  
-- Distance rewards use the difference between the previous distance to the goal and the present distance to the goal. And the distance to the goal in the present step becomes the distance to the goal in the next step.
+1. **Calculate reward**  
+At each step, it determines whether it succeeded or failed, and calculates a reward for TurtleBot3's behavior.  
 ```python
-distance_reward = self.prev_goal_distance - self.goal_distance
-self.prev_goal_distance = self.goal_distance
-```  
+def calculate_reward(self):
+  yaw_reward = 1 - (2 * abs(self.goal_angle) / math.pi)
+  obstacle_reward = self.compute_weighted_obstacle_reward()
+  reward = yaw_reward + obstacle_reward
+  if self.succeed:
+        reward = 100.0
+  elif self.fail:
+        reward = -50.0
+  return reward
+```
 <br>
 
 1. **Yaw reward**  
-- Yaw reward uses a square root based reward function. This has the following advantages over a linear function.
-  ```python
-  yaw_reward = (1 - 2 * math.sqrt(math.fabs(self.goal_angle / math.pi)))
-  ```  
-  - The smaller the angular error, the faster the compensation increases, making the rotation more sensitive to fine alignment and thus more accurate.
-  - Rewards decrease modestly when errors are large, encouraging exploration without penalizing too much early on in learning.
-  - Good balance between initial stability and final alignment accuracy.  
-![yaw_reward_graph](/assets/images/platform/turtlebot3/machine_learning/yaw_reward.png)
+Yaw reward uses a square root based reward function. This has the following advantages over a linear function.
+```python
+yaw_reward = 1 - (2 * abs(self.goal_angle) / math.pi)
+```  
+<img src="/assets/images/platform/turtlebot3/machine_learning/yaw_reward.png" width="700">
 
 1. **Obstacle reward**  
-- Obstacle reward will negatively reward when TurtleBot get closer than 0.5 meters to an obstacle.
+Obstacle reward is a function that calculates a penalty based on the distance and angle of obstacles within 0.5 meters in front of the robot, quantitatively assessing the degree of risk.  
+
+
+- `compute_directional_weights()` : Calculate the importance of each obstacle angle.  
 ```python
-obstacle_reward = 0.0
-if self.min_obstacle_distance < 0.50:
-    obstacle_reward = -1.0
-```  
+def compute_directional_weights(self, relative_angles, max_weight=10.0):
+    power = 6
+    raw_weights = (numpy.cos(relative_angles))**power + 0.1
+    scaled_weights = raw_weights * (max_weight / numpy.max(raw_weights))
+    normalized_weights = scaled_weights / numpy.sum(scaled_weights)
+    return normalized_weights
+```
+  - The closer to the front, the higher the weight, and the higher the `power`, the stronger this weight. After that, we scale and normalize by max_weight.  
 <br>
 
-1. **Total reward**  
-- Total reward uses the sum of the three rewards above. You can weight each reward to adjust the balance.
-```bash
-reward = (distance_reward * 10) + (yaw_reward / 5) + obstacle_reward
-```  
+- `compute_weighted_obstacle_reward()` : Apply the weights to calculate the obastcle reward.  
+  ```python
+  def compute_weighted_obstacle_reward(self):
+      if not self.front_ranges or not self.front_angles:
+          return 0.0
+
+      front_ranges = numpy.array(self.front_ranges)
+      front_angles = numpy.array(self.front_angles)
+      valid_mask = front_ranges <= 0.5
+      if not numpy.any(valid_mask):
+          return 0.0
+
+      front_ranges = front_ranges[valid_mask]
+      front_angles = front_angles[valid_mask]
+
+      relative_angles = numpy.unwrap(front_angles)
+      relative_angles[relative_angles > numpy.pi] -= 2 * numpy.pi
+
+      weights = self.compute_directional_weights(relative_angles, max_weight=10.0)
+      safe_dists = numpy.clip(front_ranges - 0.25, 1e-2, 3.5)
+      decay = numpy.exp(-3.0 * safe_dists)
+      weighted_decay = numpy.dot(weights, decay)
+
+      reward = - (1.0 + 4.0 * weighted_decay)
+      return reward
+  ```
+  - Select only obstacles located within 0.5 meters and penalize obstacles in range proportional to their distance. Closer obstacles are weighted more heavily to encourage TurtleBot3 to avoid them when they are in front of it.
 <br>
 
 **Set hyper parameters**  

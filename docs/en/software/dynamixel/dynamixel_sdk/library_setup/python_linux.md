@@ -22,9 +22,7 @@ sidebar:
 
 ### [Recommended Editor](#recommended-editor)
 
-![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/python/atom-logo.jpg)
-
-* [Download Atom Editor for Linux (`.deb` or `.rpm`)](https://atom.io/)
+* [Zed Editor for Linux (`.deb` or `.rpm`)](https://zed.dev/)
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/python/linux/library_file/a1.png)
 
@@ -32,13 +30,16 @@ sidebar:
 
 ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/python/python.png)
 
-* [Download Python for Linux (`ver. 3` or `ver. 2`)](https://www.python.org/downloads/)
+* [Download Python3 for Linux](https://www.python.org/downloads/)
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/python/linux/library_file/b1.png)
-
+* Or install it using your distribution's package manager
+  ``` bash
+  $ sudo apt update; sudo apt upgrade; sudo apt install python3
+  ```
 ### [Building the Library](#building-the-library)
 
-* Run setup.py by entering following command on the command prompt (`python setup.py install`).
+* Navigate to the [`DynamixelSDK python folder`] in your terminal (`cd [DynamixelSDK folder]\python`) and run the command `pip install .` to start the installation.
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/python/linux/library_file/py1.png)
 
@@ -46,19 +47,19 @@ sidebar:
 
 ### [Building and Running the Sample Code](#building-and-running-the-sample-code)
 
-The DYNAMIXEL SDK example code for Python uses the library files built in previous step.
+The DYNAMIXEL SDK example code for Python uses the library files installed in the previous step.
 
 #### Run Example
 
-* Open `python` folder with `Atom`. Modify the settings that is needed for the DYNAMIXEL control. 
+* Open the `python` folder with your preferred editor. Modify any required settings that is needed for control of your specific DYNAMIXEL servos. 
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/python/linux/sample_code/py5.png)
 
 
-* Run `read_write.py` by double click
+* Run `read_write.py` by double clicking the file,
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/python/linux/sample_code/py2.png)
 
-* Or run it manually through command prompt, using `cd`. 
+* Or run it manually through the command prompt.
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/python/linux/sample_code/py4.png)

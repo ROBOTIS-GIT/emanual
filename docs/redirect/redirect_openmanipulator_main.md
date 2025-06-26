@@ -3,7 +3,7 @@ layout: redirect
 lang: en
 ref: redirect_openmanipulator_main
 permalink: /openmanipulator/
-redirecturl: /docs/en/platform/openmanipulator_main
+redirecturl: /docs/en/platform/ai_manipulator_main
 ---
 
 <br><br><br><br><br><br>

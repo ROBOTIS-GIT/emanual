@@ -266,7 +266,7 @@ CAN2DYNAMIXEL는 CAN 기반의 다이나믹셀 프로토콜을 다이나믹셀 �
 
 MCP2515를 사용하는 CAN shield board를 사용해야 하며, 107-Arduino-MCP2515 라이브러리는 아두이노 IDE의 Library Manager에서 검색 후 설치할 수 있습니다.
 
-### 다운로드
+### 예제 다운로드
 본 예제는 `DYNAMIXEL Shield library`에 포함되어 있으며 Arduino IDE의 **File > Examples > DynamixelShield > advanced > can2dynamixel**에서 찾을 수 있습니다.
 
 ### 테스트 환경
@@ -325,7 +325,7 @@ RC 조종기에서 송신된 명령어가 RC 수신기에서 PWM 신호로 출�
 
 RC 수신기의 전원 인가시 갑작스러운 움직임으로 인한 사고를 방지하기 위한 `Soft Start` 기능과, RC 수신기의 전원이 차단되었을 때 안전한 위치로 다이나믹셀을 이동시키는 `Fail Safe` 기능이 구현되어 있습니다.
 
-### 다운로드
+### 예제 다운로드
 본 예제는 `DYNAMIXEL Shield library`에 포함되어 있으며 Arduino IDE의 **File > Examples > DynamixelShield > advanced > rc_pwm2dynamixel**에서 찾을 수 있습니다.
 
 ### 테스트 환경
@@ -363,7 +363,6 @@ RC 수신기와 DYNAMIXEL Shield MKR은 아래와 같이 연결할 수 있습니
 - [다이나믹셀 쉴드 MKR 회로도(PDF)](https://www.robotis.com/service/download.php?no=1988)  
   ![](/assets/images/parts/interface/mkr_shield/mkr_schematic.png)
 
-# [FAQ](#faq)
 
 [ax-12w]: /docs/kr/dxl/ax/ax-12w/
 [ax-12+/12a]: /docs/kr/dxl/ax/ax-12a/

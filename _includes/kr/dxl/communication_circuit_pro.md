@@ -1,5 +1,5 @@
 {% if page.ref=='dxl_pro' or page.ref=='dxl_p' %}## [UART 연결 회로도](#uart-연결-회로도) {% else %}### [UART 연결 회로도](#uart-연결-회로도) {% endif %}
-Main Controller를 직접 제작하여 {% if page.product_group=='dxl_p' %}다이나믹셀-P{% else %}다이나믹셀 PRO 시리즈{% endif %}를 제어하기 위해서는 Main Controller UART의 신호를 RS485 type으로 변환시켜 주어야 합니다. 다음은 권장 회로도 입니다.
+Main Controller를 직접 제작하여 {% if page.product_group=='dxl_p' %}다이나믹셀-P{% else %}다이나믹셀 PRO 시리즈{% endif %}를 제어하기 위해서는 Main Controller UART의 신호를 RS-485 type으로 변환시켜 주어야 합니다. 다음은 권장 회로도 입니다.
 
 ![](/assets/images/dxl/x/x_series_485_circuit.jpg)
 
