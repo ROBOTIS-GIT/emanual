@@ -3,13 +3,16 @@ In the Object Detection mission, the goal is to detect store signs(*pizza*,*burg
 **NOTE**: The Object Detection module is based on the [YOLO Object Detection](/docs/en/platform/turtlebot3/basic_examples/#yolo-object-detection) example.
 {: .notice} 
 
-**Mission Scenario**  
+- **Mission Scenario**  
+<div style="margin-left: 2em;">
 The Object Detection module is used in three main phases of the Autorace delivery mission.  
 > 1. **Order Information Recognition**: Detect one store and one room number per delivery cycle.  
 > 2. **Store Pickup**: Move the robot to the detected store for pickup.
 > 3. **Delivery**: Confirm the delivery destination using the detected room number.  
+</div>
 
-**How to Launch the Object Detection Node?**  
+- **How to Launch the Object Detection Node?**  
+<div style="margin-left: 2em;">
 1. **Launch the camera node.**  
 **[TurtleBot3 SBC]**  
 ```bash
@@ -48,3 +51,4 @@ Stop the image subscription and terminate the detection process.
 ```bash
 $ ros2 lifecycle set /object_detection_node deactivate
 ```
+</div>

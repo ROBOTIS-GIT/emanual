@@ -29,6 +29,13 @@ page_number: 19
 {% include en/platform/turtlebot3/autonomous_driving/jazzy/autorace_2025_getting_started.md %}
 
 ## [Missions](#missions)
+- [1. Undocking](#undocking)  
+- [2. Object Detection](#object-detection)  
+- [3. Alley](#alley)  
+- [4. Pick up](#pick-up)  
+- [5. Bollard](#bollard)  
+- [6. Place](#place)  
+- [7. Docking](#docking)  
 
 ### [Undocking](#undocking)
 {% include en/platform/turtlebot3/autonomous_driving/jazzy/autorace_2025_undocking.md %}
@@ -43,7 +50,7 @@ page_number: 19
 {% include en/platform/turtlebot3/autonomous_driving/jazzy/autorace_2025_pickup.md %}
 
 ### [Bollard](#bollard)
-{% include en/platform/turtlebot3/autonomous_driving/jazzy/autorace_2025_bollad.md %}
+{% include en/platform/turtlebot3/autonomous_driving/jazzy/autorace_2025_bollard.md %}
 
 ### [Place](#place)
 {% include en/platform/turtlebot3/autonomous_driving/jazzy/autorace_2025_place.md %}
