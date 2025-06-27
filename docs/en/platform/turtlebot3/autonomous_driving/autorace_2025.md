@@ -28,7 +28,7 @@ page_number: 19
 ## [Getting Started](#getting-started)
 {% include en/platform/turtlebot3/autonomous_driving/jazzy/autorace_2025_getting_started.md %}
 
-## [Missions](#missions)
+## [Tasks](#tasks)
 - [1. Undocking](#undocking)  
 - [2. Object Detection](#object-detection)  
 - [3. Alley](#alley)  
