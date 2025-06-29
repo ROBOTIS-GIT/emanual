@@ -26040,8 +26040,8 @@ turtlebot3:
         url: /platform/turtlebot3/autorace_2020/#lane-detection
       - title: "Traffic Sign Detection"
         url: /platform/turtlebot3/autorace_2020/#traffic-sign-detection
-      - title: "Tasks"
-        url: /platform/turtlebot3/autorace_2020/#tasks
+      - title: "Missions"
+        url: /platform/turtlebot3/autorace_2020/#missions
     - title: "Autorace 2025"
       url: /platform/turtlebot3/autorace_2025/
       children:
