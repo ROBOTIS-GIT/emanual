@@ -26265,16 +26265,17 @@ omy:
     - title: "Issac Sim"
       url: /platform/omy/ros2_simulation/#issac-sim
   - title: "Imitation Learning"
-    url: /platform/omy/ros2_ai/#imitation-learning
+    url: /platform/omy/imitation_learning/#imitation-learning
     children:
     - title: "Overview"
-      url: /platform/omy/ros2_ai/#overview
+      url: /platform/omy/imitation_learning/#overview
     - title: "Camera Connection"
-      url: /platform/omy/ros2_ai/#camera-connection
+      url: /platform/omy/imitation_learning/#camera-connection
     - title: "Dataset Preparation"
-      url: /platform/omy/ros2_ai/#dataset-preparation
+      url: /platform/omy/imitation_learning/#dataset-preparation
     - title: "Model Workflow"
-      url: /platform/omy/ros2_ai/#model-workflow
+      url: /platform/omy/imitation_learning/#model-workflow
+
 #OpenMANIPULATOR-X sidebar
 openmanipulator_x:
   - title: "Overview"

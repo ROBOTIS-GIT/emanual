@@ -1,4 +1,4 @@
-### Launch MoveIt
+### Launch MoveIt 2
 ```bash
 ros2 launch open_manipulator_moveit_config omy_f3m_moveit.launch.py
 ```
