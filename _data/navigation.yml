@@ -26040,17 +26040,17 @@ turtlebot3:
         url: /platform/turtlebot3/autorace_2020/#lane-detection
       - title: "Traffic Sign Detection"
         url: /platform/turtlebot3/autorace_2020/#traffic-sign-detection
-      - title: "Missions"
-        url: /platform/turtlebot3/autorace_2020/#missions
+      - title: "Tasks"
+        url: /platform/turtlebot3/autorace_2020/#tasks
     - title: "Autorace 2025"
       url: /platform/turtlebot3/autorace_2025/
       children:
-      - title: "Getting Started"
-        url: /platform/turtlebot3/autorace_2025/#getting-started
       - title: "Overall"
         url: /platform/turtlebot3/autorace_2025/#overall
-      - title: "Missions"
-        url: /platform/turtlebot3/autorace_2025/#missions
+      - title: "Getting Started"
+        url: /platform/turtlebot3/autorace_2025/#getting-started
+      - title: "Tasks"
+        url: /platform/turtlebot3/autorace_2025/#tasks
   - title: "Machine Learning"
     url: /platform/turtlebot3/machine_learning/#machine-learning
     children:

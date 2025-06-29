@@ -1,5 +1,6 @@
 In the Pick Up mission, the goal is to accurately park in front of a basket of ordered food and hook the basket onto the robot arm.  
-**Pick Up process**  
+- **Pick Up process**  
+<div style="margin-left: 2em;">
 1. Visits each pickup location in turn and uses object detection to determine if it's the right place.
 2. Once you're in the right place, use `aruco_tracker.py` to track the ArUco marker.
 3. Use `aruco_parking.py` to park in front of the ArUco marker.
@@ -7,8 +8,10 @@ In the Pick Up mission, the goal is to accurately park in front of a basket of o
 
 **NOTE**: The Pick Up process is based on the [Autonomous Parking Vision](/docs/en/platform/turtlebot3/basic_examples/#automatic-parking-vision) example and [ArUco Tracker](/docs/en/platform/turtlebot3/basic_examples/#aruco-tracker) example.
 {: .notice}
+</div>
 
-**Run Pick Up Node**  
+- **Run Pick Up Node**  
+<div style="margin-left: 2em;">
 1. Open a new terminal and run the ArUco tracker node.
 ```bash
 $ ros2 run turtlebot3_autorace_detect aruco_tracker
@@ -32,8 +35,10 @@ $ ros2 lifecycle set /aruco_parking activate
 $ ros2 launch turtlebot3_bringup rviz2.launch.py
 ```
    ![](/assets/images/platform/turtlebot3/autorace_2025/autorace_aruco_tracker_rviz.png)
+</div>
 
-**Feature enhancement tips**
+- **Feature enhancement tips**
+<div style="margin-left: 2em;">
 
 Parking that relies solely on ArUco markers **can be inaccurate if the ArUco marker tracking is noisy**.  
 To improve the accuracy of your pakring, you can try the methods below:
@@ -42,4 +47,4 @@ To improve the accuracy of your pakring, you can try the methods below:
 3. After you hang the basket, use the camera to check that it's hooked up properly.
 
 These attempts will allow us to develop a more accurate and robust Pick Up feature.
-
+</div>
