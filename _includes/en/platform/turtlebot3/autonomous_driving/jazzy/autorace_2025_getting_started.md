@@ -12,7 +12,8 @@ The Autorace package was developed for `Ubuntu 24.04` running `ROS 2 Jazzy JALIS
 1. Clone the AutoRace repository.  
 ```bash
 $ cd ~/turtlebot3_ws/src/
-$ git clone https://github.com/ROBOTIS-GIT/turtlebot3_autorace.git
+$ git clone -b jazzy https://github.com/ROBOTIS-GIT/turtlebot3_autorace.git
+$ rosdep install --from-paths . --ignore-src -r -y
 $ cd ~/turtlebot3_ws && colcon build --symlink-install
 ```
 
