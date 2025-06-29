@@ -23,5 +23,3 @@ $ ros2 lifecycle set /alley_mission_node configure
 $ ros2 lifecycle set /alley_mission_node activate
 ```
 </div>
-
-
