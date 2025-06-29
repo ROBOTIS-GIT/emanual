@@ -1,7 +1,7 @@
 {% if page.ref=='xd430-t210' or page.ref=='xd430-t350' or page.ref=='xd540-t150' or page.ref=='xd540-t270' or page.ref=='xd430-t200' or page.ref=='xw430-t333' or page.ref=='xw540-t140' or page.ref=='xw540-t260' %}
-{% assign communication= "(RS485)" %}
+{% assign communication= "(RS-485)" %}
 {% else %}
-{% assign communication= "(RS485, TTL)" %}
+{% assign communication= "(RS-485, TTL)" %}
 {% endif %}
 
 The Bus Watchdog(98) is a safety device (Fail-safe) to stops the DYNAMIXEL if the communication between the controller and DYNAMIXEL communication {{ communication }} is disconnected due to an unspecified error.

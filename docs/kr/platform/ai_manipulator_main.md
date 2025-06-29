@@ -1,17 +1,66 @@
 ---
 layout: archive
 lang: kr
-ref: openmanipulator_overview
+ref: ai_manipulator_main
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/kr/platform/openmanipulator_main
+permalink: /docs/kr/platform/ai_manipulator_main
 sidebar:
-  title: 오픈매니퓰레이터
+  title: AI 매니퓰레이터
   nav: "openmanipulator"
 ---
+<!--
+# [OMY](#omy)
 
-# 오픈매니퓰레이터-X
+![](/assets/images/platform/omy/omy_logo.png)
+
+![](/assets/images/platform/omy/omy_product.png)
+
+OMY는 현재 영문으로만 지원되고 있습니다. [영문 e매뉴얼의 OMY]를 이용하시기 바랍니다.
+{: .notice--warning}
+
+[영문 e매뉴얼의 OMY]: /docs/en/platform/omy/overview/
+
+## 주요 사양
+
+### 팔로워
+
+| Item | OMY-F3M |
+|:---:|:---:|
+| DOF | 6 |
+| Payload | 3 [kg] |
+| Reach | 580 [mm] |
+| Weight | 13.5 [kg] |
+| Operating Voltage | 24 [VDC] |
+| Joint Resolution | -π(rad) ~ π(rad), -262,144 ~ 262,144[pulse/rev] |
+| Joint Range | Joint 1, 2 : ±360°<br>Joint 3 : ±150°<br>Joint 4, 5, 6 : ±360° |
+| DYNAMIXEL-Y Specification | Joint 1,2 : YM080-230-A099-RH<br>Joint 3,4,5,6 : YM070-210-A099-RH |
+| Repeatability | ±0.05 [mm] |
+| Brake Force | 200% of the continuous torque for each joint |
+| TCP Speed | < 900 [mm/s] |
+| Host Interface | Ethernet |
+| Internal Communications | RS485 |
+| Communication Baudrate | 4 [Mbps] |
+| Robot Hand | RH-P12-RN |
+| Camera | Intel RealSense D405 |
+
+### 리더
+
+| Item | OMY-L100 |
+|:---:|:---:|
+| DOF | 7 |
+| Reach | 560 [mm] |
+| Weight | 1.46 [kg] |
+| Operating Voltage | 12 [VDC] |
+| Joint Resolution | -π(rad) ~ π(rad), -2,048 ~ 2,048 [pulse/rev] |
+| Joint Range | Joint 1 : ±180°<br>Joint 2 : -70° ~ +100°<br>Joint 3, 4, 5, 6 : ±180°<br>Joint 7 : -90° ~ +60° |
+| DYNAMIXEL-Y Specification | Joint 1,23 : XH540-W150<br>Joint 4,5,6 : XC330-T288<br>Joint 7 : XC330-T181 |
+| Host Interface | U2D2 (USB 2.0) |
+| Internal Communications | TTL Multidrop Bus |
+| Communication Baudrate | 4 [Mbps] |
+-->
+# [오픈매니퓰레이터-X](#오픈매니퓰레이터-x)
 
 ![](/assets/images/platform/openmanipulator_x/OpenManipulator.resized.png)
 
@@ -40,12 +89,11 @@ sidebar:
 | **Software**        | -       | ROS, 다이나믹셀 SDK, Arduino, Processing              |
 | **Main Controller** | -       | PC, OpenCR                                            |
 
-# 오픈매니퓰레이터-P
+# [오픈매니퓰레이터-P](#오픈매니퓰레이터-p)
 
 ![](/assets/images/platform/openmanipulator_p/logo.png)  
 
-<img src="/assets/images/platform/openmanipulator_p/product_img.png" width="1250">  
-
+![](/assets/images/platform/openmanipulator_p/product_img.png)
 
 OpenMANIPULATOR-P는 현재 영문으로만 지원되고 있습니다. [영문 e매뉴얼의 OpenMANIPULATOR-P]를 이용하시기 바랍니다.
 {: .notice--warning}

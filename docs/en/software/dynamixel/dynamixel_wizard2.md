@@ -294,14 +294,14 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
     
     <!-- ![](/assets/images/sw/dynamixel/wizard2/wizard2_004_velocity_mode_joypad.png)-->
     ![](/assets/images/sw/dynamixel/wizard2/new_wizard2_004_velocity_mode_joypad.png)  
-    - When selecting `Velocitiy control`/`Current control`/`PWM control` from Operation Mode, you can use a virtual joypad.
+    - When selecting `Velocity control`/`Current control`/`PWM control` from Operation Mode, you can use a virtual joypad.
     - Move a horn to CW / CCW by using the controller.
     - Input values into the input window to increase (or decrease) the speed of a horn of DYNAMIXEL.
     - More information on the virtual controller is available at [Modifying Control Value](#modifying-control-values)
 
 6. `Communication Status` on the buttom left corner represents communication status between PC and DYNAMIXEL's.
 
-7. The `Packet Status` section indicates the status of responded packet from DYNAMIXEL.
+7. The `Packet Status` section indicates the status of response packet from DYNAMIXEL.
 
 8. The `Hardware Alarm` section in the Device Status indicates hardware error status of DYNAMIXEL.
 
@@ -481,7 +481,7 @@ When positioning your mouse cursor over the model name, **Firmware update is Ava
     
     <!-- ![](/assets/images/sw/dynamixel/wizard2/wizard2_015.png) -->
 
-2. Firmware update will begin with a breif instruction. Please do NOT disconnect or turn off DYNAMIXEL.
+2. Firmware update will begin with a brief instruction. Please do NOT disconnect or turn off DYNAMIXEL.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_update_001.png)
 
@@ -521,7 +521,7 @@ When positioning your mouse cursor over the model name, **Firmware update is Ava
     
     <!-- ![](/assets/images/sw/dynamixel/wizard2/wizard2_017.png) -->
 
-2. Firmware recovery will begin with a breif instruction. Please do **NOT** disconnect or turn off DYNAMIXEL.
+2. Firmware recovery will begin with a brief instruction. Please do **NOT** disconnect or turn off DYNAMIXEL.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_001.png)
 
@@ -630,7 +630,7 @@ This can be useful if the DYNAMIXEL are reset after the [Firmware Recovery](#fir
 The stored data by `backup` can be restored in using `Restore EEPROM`.
 
 See the available items in Control Table for data backup, 
-- All Data in EERPOM
+- All Data in EEPROM
 - Velocity P.I Gains
 - Position P.I.D Gains
 - Feedforward 1st & 2nd Gains
@@ -683,7 +683,7 @@ See the available items in Control Table for data backup,
    
 ### [Save and Load Backup File](#save-and-load-backup-file)
 
-Save and Load backup data of EEPROM field as .ctd file. Utilizing "Save and Load Backup File" reduces the consuming time tasks of DYNAMIXEL configuration, and loewer the possibility of configuration error.
+Save and Load backup data of EEPROM field as .ctd file. Utilizing "Save and Load Backup File" reduces the consuming time tasks of DYNAMIXEL configuration, and lowers the possibility of configuration error.
 
 **NOTE**: Saved backup file(.cd) can be used between the same DYNAMIXEL models.
 {: .notice}
@@ -700,7 +700,7 @@ The resulting log shows the restored item.
    
 ## [Modifying Control Values](#modifying-control-values)
 
-1. Drag or slide the interface (Moderately changes value)
+1. Drag or slide the interface (Moderately changes values)
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_005.png)
 
@@ -747,7 +747,7 @@ If the horn is misaligned after gear set replacement or reassembly, please perfo
     **WARNING** : Only one DYNAMIXEL has to be connected to the port when calibrating DYNAMIXEL.
     {: .notice--warning}    
 
-2. Calibration will begin with a breif instruction.
+2. Calibration will begin with a brief instruction.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_002.png)
 
@@ -792,7 +792,7 @@ In order to find error in DYNAMIXEL, self diagnosis can be performed.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_self_001.png)
 
-2. Self diagnosis will begin with a breif instruction.
+2. Self diagnosis will begin with a brief instruction.
 
     **WARNING** : DYNAMIXEL will be factory reset during self diagnosis.
     {: .notice--warning}

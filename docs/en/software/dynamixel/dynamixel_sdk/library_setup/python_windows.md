@@ -22,23 +22,21 @@ sidebar:
 
 ### [Recommended Editor](#recommended-editor)
 
-![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/python/atom-logo.jpg)
+* [Download Visual Studio Community for Windows Desktop](https://www.visualstudio.com/en-us/products/visual-studio-express-vs.aspx)
 
-* [Download Atom Editor for Windows](https://atom.io/)
-
-  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/python/windows/library_file/a1.png)
+  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/c/vs.png)
 
 ### [Compiler and Builder](#compiler-and-builder)
 
 ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/python/python.png)
 
-* [Download Python for Windows (`ver. 3` or `ver. 2`)](https://www.python.org/downloads/)
+* [Download Python3 for Windows](https://www.python.org/downloads/), and be sure to install it to your path when prompted.
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/python/windows/library_file/b1.png)
 
 ### [Building the Library](#building-the-library)
-* Go to the [`DynamixelSDK folder`] following command on the command prompt. (`cd [DynamixelSDK folder]\python`).
- Run setup.py by entering following command on the command prompt (`python setup.py install`).
+* Navigate to the [`DynamixelSDK python folder`] in the Windows command prompt. (`cd [DynamixelSDK folder]\python`).
+ Then, run the installation by entering the following command on the command prompt from inside the folder (`pip install .`).
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/python/windows/library_file/py3.png)
 
@@ -47,19 +45,19 @@ sidebar:
 
 ### [Building and Running the Sample Code](#building-and-running-the-sample-code)
 
-The DYNAMIXEL SDK example code for Python uses the library files built in previous step.
+The DYNAMIXEL SDK example code for Python uses the library files installed in the previous step.
 
 #### Run Example
 
-* Open `python` folder with `Atom`. Modify the settings that is needed for the Dynamixel control.
+* Open the `python` folder using your preffered development environment and modify any settings that may be needed for accurate control of the DYNAMIXEL servos you'll be using.
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/python/windows/sample_code/py2.png)
 
 
-* Run `read_write.py` by double click
+* Run the `read_write.py` example to check your installation.
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/python/windows/sample_code/py4.png)
 
-* Or run it manually through command prompt, using `cd`.
+* Or run the script manually through the command prompt.
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/python/windows/sample_code/py6.png)

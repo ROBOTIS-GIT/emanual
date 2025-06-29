@@ -28,7 +28,7 @@ page_number: 6
 
 This tutorial provides a comprehensive guide to implementing real-time ball detection on the ROBOTIS-OP3 humanoid robot using the YOLOv8 object detection model and Intel OpenVINO toolkit. The goal is to transition from traditional computer vision methods to a deep learning-based approach, significantly improving detection accuracy and robustness in dynamic sports environments.  
 
-<iframe width="1024" height="576" src="https://www.youtube.com/embed/phvHhRuzCzI" title="Real-Time Ball Detection with YOLOv8 and OpenVINO on ROBOTIS-OP3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="1284" height="722" src="https://www.youtube.com/embed/RviMAbVH12w?list=PLRG6WP3c31_Vvp_xDjmtWmrhJnQXw-sRh" title="Real-Time Ball Detection with YOLOv8 and OpenVINO on ROBOTIS-OP3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Limitations and Problems of Existing Methods
 
@@ -1139,9 +1139,393 @@ def main(args=None):
 3. Main loop: `rclpy.spin()` - callback processing
 4. Cleanup: `rclpy.shutdown()`
 
-## Conclusion
+### Conclusion
 
 In this tutorial, we solved the vulnerabilities of the HSV + Hough method with AI object detection. The YOLOv8m + OpenVINO combination enabled robust ball detection even with environmental changes and achieved real-time performance of ≥15FPS even in CPU-only environments. The code structure is easily extensible to various objects (e.g., goals, opposing players). For example, by retraining the YOLOv8 model with goal data or training additional classes, the same node can be extended to detect multiple objects.
+
+
+## Voice Control System Implementation
+
+### Introduction
+
+#### Limitations of the Existing ROBOTIS-OP3
+
+The ROBOTIS-OP3 is a humanoid robot with powerful hardware capabilities, but its basic software does not include the functionality to interact with the robot through voice. This meant that users could only control the robot through buttons or a remote GUI.
+
+This tutorial provides a comprehensive guide to building a system that adds real-time Speech-to-Text and Text-to-Speech (TTS) capabilities to the ROBOTIS-OP3, allowing users to communicate with and control the robot using voice commands.
+
+<iframe width="1282" height="721" src="https://www.youtube.com/embed/N5UKY-E_Esg" title="Voice Control System Implementation on ROBOTIS-OP3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+#### Tutorial Goals
+
+- Implement a stable voice recognition system that works even in environments with robot motor noise.
+- Build a hybrid TTS system that can handle both online and offline environments.
+- Implement multi-stage filtering to prevent the echo phenomenon where TTS output is fed back into the microphone.
+- Integrate the implemented voice control system with the existing OP3 demo framework.
+
+
+### Voice Recognition Model and TTS Selection Rationale
+
+#### Voice Recognition: Vosk Engine
+
+In this system, Vosk was chosen as the primary voice recognition engine.
+
+
+| **Feature** | **Vosk** | **Google Speech API** | **Mozilla DeepSpeech** |
+| :-- | :-- | :-- | :-- |
+| Offline Operation | ✓ (Fully offline) | ✗ (Online required) | ✓ (Offline) |
+| Model Size | 50MB (lightweight model) | N/A (Cloud) | ~200MB |
+| Language Support | 20+ languages | 100+ languages | English-centric |
+| Accuracy | Medium-High | Very High | Medium-High |
+| Resource Usage | Low | Network dependent | Medium |
+| Real-time Processing | ✓ (Streaming API) | ✓ (Streaming) | ✓ |
+| Customization | ✓ (Vocabulary reconfiguration) | Limited | ✓ (Model training) |
+| Ease of Installation | ✓ (pip install) | ✓ (API key required) | Complex |
+| Suitability for Robot Environment | ★★★★★ | ★★☆☆☆ | ★★★☆☆ |
+
+Reasons for choosing Vosk:
+
+- **Complete Offline Operation**: All voice recognition is processed inside the NUC without an internet connection. This ensures the robot's autonomy and fundamentally blocks issues like network latency or instability.
+- **Lightweight and High Performance**: It uses a lightweight model of about 50MB, making it suitable for embedded systems, while enabling real-time continuous voice processing through its streaming API.
+- **Easy Integration**: It can be easily installed with Python's `pip` and is easy to integrate into a ROS2 node.
+
+
+#### Speech Synthesis: Multi-layered TTS System Configuration
+
+This system adopts a hybrid approach that utilizes different TTS engines depending on the situation.
+
+
+| **Feature** | **gTTS** | **Festival** | **espeak** |
+| :-- | :-- | :-- | :-- |
+| Offline Operation | ✗ (Online required) | ✓ (Fully offline) | ✓ (Fully offline) |
+| Voice Quality | Very High (Natural speech) | Medium (Robotic) | Low (Robotic) |
+| Language Support | 100+ languages | English-centric | 100+ languages |
+| Ease of Installation | ✓ (pip install) | Complex (Compilation required) | ✓ (Package manager) |
+| Resource Usage | Network dependent | Medium | Very Low |
+| Suitability for Robot Environment | ★★★☆☆ | ★★★★☆ | ★★★★★ |
+| Response Speed | Network dependent | Fast | Very Fast |
+| Customization | Limited | ✓ (High) | Medium |
+
+Role of each TTS engine:
+
+1. **gTTS (Primary Engine)**: An online engine that uses Google's TTS API, providing the most natural and high-quality voice. It is used preferentially in an online environment.
+2. **Festival (1st Offline Fallback)**: An offline engine that automatically switches over if gTTS fails (e.g., network disconnection). It is highly stable and uses few system resources.
+3. **espeak (2nd Offline Fallback)**: The final backup engine in case Festival also fails. It is very light and fast, but the voice quality is relatively robotic.
+
+### Environment Preparation and Installation
+
+#### Dependency Package Installation
+
+Open a terminal and run the following commands in order to install the necessary system libraries and Python packages.
+
+```bash
+# Update system packages
+sudo apt update && sudo apt upgrade -y
+
+# Install audio and TTS related system libraries
+sudo apt install -y python3-pip portaudio19-dev python3-pyaudio
+sudo apt install -y festival festival-dev espeak espeak-data
+
+# Create and activate a Python virtual environment (recommended)
+sudo apt install -y python3.12-venv
+python3 -m venv ~/yolo_env
+source ~/yolo_env/bin/activate
+
+# Install Python dependencies
+pip install vosk sounddevice numpy scipy librosa noisereduce
+pip install gtts pygame rclpy std-msgs geometry-msgs
+pip install PyYAML jinja2 setuptools typeguard
+```
+
+
+#### Download Vosk Model
+
+```bash
+# Create model directory
+mkdir -p ~/op3_voice_tutorial/models
+cd ~/op3_voice_tutorial/models
+
+# Download and unzip the lightweight English model (approx. 45MB)
+wget https://alphacephei.com/vosk/models/vosk-model-small-en-us-0.15.zip
+unzip vosk-model-small-en-us-0.15.zip
+mv vosk-model-small-en-us-0.15 vosk-model-small-en-us
+```
+
+
+### Package Creation and Code Addition
+
+#### Create ROS2 Package
+
+```bash
+# Move to workspace
+cd ~/robotis_ws/src/ROBOTIS-OP3-Tutorials
+
+# Create package
+ros2 pkg create --build-type ament_python op3_voice_control \
+  --dependencies rclpy std_msgs geometry_msgs
+```
+
+
+#### Set Up Package Structure
+
+```bash
+op3_voice_control/
+├── launch/
+│    └── voice_control.launch.py      # ROS2 launch file
+├── op3_voice_control/
+│    ├── __init__.py                  # Python package initialization
+│    ├── speech_recognition_node.py   # Speech recognition node
+│    └── command_processor.py         # Command processor node
+├── scripts/
+│    └── start_voice_control.sh       # System start script
+├── package.xml                       # Package metadata
+└── setup.py                          # Python installation setup
+```
+> **Note**: You can download the complete package source from the GitHub repository:  
+> https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Tutorials/op3_voice_control
+
+
+#### Modify Existing OP3 Demo Code
+
+Some modifications to the existing demo code are required for the voice control system to interact with the OP3's basic motion modules.
+
+**op3_demo/src/demo_node.cpp** modifications:
+
+```cpp
+// Add demo mode command callback for voice control
+void demoModeCommandCallback(const std_msgs::msg::String::SharedPtr msg)
+{
+    // ... existing code ...
+    
+    else if(msg->data == "action")
+    {
+        desired_status = ActionDemo;
+        apply_desired = true;
+        // Enable voice control mode
+        action_demo->setVoiceControlMode(true);
+        RCLCPP_INFO(node->get_logger(), "Voice control mode enabled for action demo");
+        
+        dxlTorqueChecker();
+        playSound(default_mp3_path + "Start motion demonstration.mp3");
+        if (DEBUG_PRINT)
+            RCLCPP_INFO(node->get_logger(), "= Start Demo Mode : %d", desired_status);
+    }
+}
+```
+
+**op3_demo/include/op3_demo/action_demo.h** modifications:
+
+```cpp
+class ActionDemo : public OPDemo
+{
+public:
+    // ... existing methods ...
+    void setVoiceControlMode(bool voice_mode);
+    
+    // Public methods for voice control
+    void playAction(int motion_index);
+    void stopAction();
+    void brakeAction();
+    bool isActionRunning();
+
+protected:
+    // ... existing members ...
+    bool voice_control_mode_;         // Voice control mode flag
+    bool stop_action_executed_;       // Flag to prevent duplicate stops
+};
+```
+
+
+### Key Code Explanation
+
+#### System Architecture and Data Flow
+
+The voice control system consists of two core nodes that communicate organically through ROS2 topics.  
+   1. **Microphone Input**: `sounddevice` captures the audio stream.
+   2. **speech\_recognition\_node**:
+       - Applies noise filtering to the audio stream.
+       - Converts the filtered audio to text via the Vosk engine.
+       - Publishes the recognized text to the `/voice_command` topic.
+   3. **command\_processor**:
+       - Subscribes to the `/voice_command` topic.
+       - Analyzes the received text to determine if it is an echo and matches it against registered command patterns.
+       - Publishes robot control commands to the `/robotis/action/page_num` or `/robotis/mode_command` topics based on the matched command.
+       - Simultaneously calls the TTS engine to play audio for user feedback.
+<br/><br/>
+
+- **speech\_recognition\_node.py**: Speech Recognition and Noise Filtering  
+    This node is responsible for receiving microphone input in real-time and converting it to text.  
+
+   - **2-Stage Noise Filtering**  
+        To handle both specific frequency noises like motor sounds, a major problem in robot environments, and general background noise, a 2-stage filtering strategy is used.
+
+        1. **Notch Filter**: Precisely removes noise in specific frequency bands (50Hz, 100Hz, 200Hz, etc.) commonly generated by robot motors using `scipy.signal.iirnotch`.  
+        2. **Broadband Noise Reduction**: Generally reduces the remaining background noise (like fan noise) not caught by the notch filter using the `noisereduce` library.  
+
+            ```python        
+            def apply_noise_filtering(self, audio_data):
+                """Apply noise filtering"""
+                if not self.noise_reduction:
+                    return audio_data
+                    
+                # Type conversion
+                audio_float = audio_data.astype(np.float32) / 32768.0
+                
+                # Apply notch filter (motor noise removal)
+                filtered_audio = audio_float
+                for b, a in self.notch_filters:
+                    filtered_audio = signal.filtfilt(b, a, filtered_audio)
+                
+                # Apply advanced noise reduction
+                try:
+                    # Use first 0.5 seconds as noise profile
+                    if len(filtered_audio) > self.sample_rate // 2:
+                        noise_sample = filtered_audio[:self.sample_rate // 2]
+                        filtered_audio = nr.reduce_noise(
+                            y=filtered_audio, 
+                            sr=self.sample_rate,
+                            y_noise=noise_sample,
+                            prop_decrease=0.8
+                        )
+                except Exception as e:
+                    self.get_logger().warn(f"Advanced noise reduction failed: {e}")
+                
+                # Convert back to int16
+                return (filtered_audio * 32768.0).astype(np.int16)
+            ```
+
+   - **Asynchronous Processing**: Audio Callback and Recognition Thread  
+      - `audio_callback`: Called automatically by the `sounddevice` library whenever data comes in from the audio hardware. This function only applies noise filtering and puts the processed data into `self.audio_queue` to prevent audio drops.
+      - `recognition_loop`: Runs in a separate thread and continuously checks for data accumulating in the `audio_queue`. The actual recognition work of fetching data from the queue and passing it to the Vosk engine is done in this thread, so it does not interfere with real-time processing like audio capture.
+
+- **command\_processor.py**: Command Processing and Multi-level Echo Prevention  
+    This node acts as the brain of the system, interpreting recognized text, controlling the robot, and responding with voice.
+
+  - **Multi-level Echo Cancellation Architecture**
+
+      To break the feedback loop where TTS speech is fed back into the microphone, a 5-stage echo prevention system is implemented in the `voice_command_callback` function.
+
+    1. **TTS Playback Status Flag (`is_speaking`)**: Immediately ignores all incoming voice commands while TTS is active.
+    2. **TTS Cooldown Timer (`tts_cooldown`)**: Ignores commands that come in for 2.0 seconds after TTS playback finishes to prevent echoes from slight audio delays.
+    3. **Echo Pattern Filtering (`is_tts_echo`)**: If a pattern matching the system's frequent response phrases like "entering ready mode" is detected, it is considered an echo and filtered out.
+    4. **Recent TTS Text Similarity Check (`is_similar_to_recent_tts`)**: Calculates the word similarity between recent TTS output history and the received text. If they match by 70% or more, it's judged as an echo.
+    5. **Physical Microphone Deactivation**: Just before TTS playback, it publishes a "disable" message to the `/mic_control` topic, and an "enable" message after playback ends, fundamentally blocking echo influx at the hardware level. This topic is received by `speech_recognition_node` to control the audio stream.
+
+  - **Flexible Command Matching**
+
+      Regular expressions (`re`) are used to match various forms of commands like "stand up", "get up", and "standup" to the same action (`stand_up`), enhancing user convenience.
+
+  - **Duplicate Command Filtering**
+
+      A cooldown of 0.5 seconds for emergency commands like `"stop"` and 1.0 second for general commands is applied to prevent users from unintentionally executing the same command in quick succession.
+
+  - **Non-blocking TTS Playback (`speak` function)**
+
+      The process of generating and playing a TTS file can take time. If this task were handled in the main thread, the entire ROS node would freeze. To prevent this, the `speak` function creates a separate thread called `tts_thread` to handle TTS-related tasks asynchronously.
+
+      ```python
+      def speak(self, text):
+          """High-quality TTS speech (with echo prevention)"""
+          def tts_thread():
+              with self.tts_lock: # Prevent simultaneous thread access
+                  try:
+                      self.disable_microphone()
+                      self.is_speaking = True
+                      # ... gTTS, Festival, etc. TTS playback logic ...
+                  finally:
+                      self.is_speaking = False
+                      self.enable_microphone()
+
+          # Run TTS in a separate thread to avoid blocking the main node
+          thread = threading.Thread(target=tts_thread)
+          thread.daemon = True
+          thread.start()
+      ```
+
+- **C++ Code Integration: Control Transfer through State Management**
+
+    The `voice_control_mode_` flag added to `action_demo.h` is a key state management device that prevents system malfunction by clearly distinguishing the control subject (button or voice) within the same ActionDemo mode.
+    - **When entering mode via voice**: `setVoiceControlMode(true)` is called from `demo_node.cpp`. This puts `ActionDemo` in a state where it waits for an external voice command topic.
+    - **When entering mode via button**: `setVoiceControlMode(false)` is called from the `buttonHandlerCallback` in `demo_node.cpp`. In this state, the existing logic based on button input operates.
+  
+- **`voice_control.launch.py`: Flexible System Execution**
+
+    The launch file is designed to go beyond simply running nodes, allowing for flexible system configuration.
+    - **Launch Arguments**: Key settings like `model_path` or `device_id` are exposed as launch arguments, allowing settings to be changed from the terminal, such as `ros2 launch … model_path:=/path/to/my/model`, without modifying the code.
+    - **Virtual Environment Integration (`prefix`)**: The `prefix='/home/robotis/yolo_env/bin/python3'` setting ensures that these nodes run within the specified Python virtual environment. This is a crucial setting that prevents conflicts with system-wide installed packages and facilitates project-specific dependency management.
+
+
+### Execution and Testing Methods
+
+#### System Build and Execution
+
+  1. **Build ROS2 Package**
+
+      ```bash
+      cd ~/robotis_ws
+      colcon build --packages-select op3_voice_control
+      ```
+
+  2. **Set Environment and Run**
+
+      The provided `start_voice_control.sh` script handles virtual environment activation, ROS2 environment setup, and launch file execution all at once.
+
+      ```bash
+      # Grant execution permission
+      chmod +x ~/robotis_ws/src/ROBOTIS-OP3-Tutorials/op3_voice_control/scripts/start_voice_control.sh
+
+      # Run the script
+      ~/robotis_ws/src/ROBOTIS-OP3-Tutorials/op3_voice_control/scripts/start_voice_control.sh
+      ```
+
+      Alternatively, you can run the launch file manually:
+
+      ```bash
+      # Activate virtual environment
+      source ~/yolo_env/bin/activate
+      # Set up ROS2 environment
+      source ~/robotis_ws/install/setup.bash
+      # Run launch file
+      ros2 launch op3_voice_control voice_control.launch.py
+      ```
+
+
+#### Testing
+
+Once the system is running, you can test its functionality with the following voice commands.  
+- **Mode Change**: "action mode", "motion mode", "ready mode"
+- **Basic Actions**: "stand up", "sit down"
+- **Stop**: "stop", "halt"
+- **Emotions**: "bye bye", "clap", "wow"
+- **Status Check**: "status", "how are you"
+
+**Expected Results:**  
+- When you speak a command, the recognized text will be printed in the terminal.
+- The robot will respond with voice, such as "Entering action mode".
+- The robot motion corresponding to the command will be executed.
+- While the robot is speaking, it will not recognize new voice commands.
+
+
+### Troubleshooting Tips
+
+- **If "Failed to initialize audio stream" error occurs**:
+
+    Check if the microphone device ID is correct. You can check the list of available devices using `sounddevice` and modify the `device_id` argument in the launch file.
+
+    ```bash
+    # Check device list
+    python3 -c "import sounddevice as sd; print(sd.query_devices())"
+
+    # Run with a specific device ID (e.g., if ID is 2)
+    ros2 launch op3_voice_control voice_control.launch.py device_id:=2
+    ```
+
+- **If voice recognition is poor**:
+
+    Check if the microphone is too far away or if there is excessive ambient noise. You can test by setting the `noise_reduction` parameter to `False` in the `voice_control.launch.py` file to turn off the noise filtering feature.
+
+
+
 
 </section>
 

@@ -300,8 +300,13 @@ bool syncWriteEnd(void);
 | Crimp 터미널  |                     [JST SEH-001T-P0.6]                      |                     [JST SEH-001T-P0.6]                      |                         [MOLEX 50212-8000]                          |
 | 다이나믹셀 전선규격 |                            21 AWG                            |                            21 AWG                            |                               24 AWG                                |
 
-
 {% include kr/dxl/485_ttl_connection_x.md %}
+
+# [다운로드](#다운로드)
+
+- [다이나믹셀 쉴드 MKR 회로도(PDF)](https://www.robotis.com/service/download.php?no=2206)
+  ![](/assets/images/parts/interface/dynamixel_shield/dynamixel_shield_schematic01.png)
+  ![](/assets/images/parts/interface/dynamixel_shield/dynamixel_shield_schematic02.png)
 
 [AX-12W]: /docs/kr/dxl/ax/ax-12w/
 [AX-12+/12A]: /docs/kr/dxl/ax/ax-12a/

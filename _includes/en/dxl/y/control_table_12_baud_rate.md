@@ -1,4 +1,4 @@
-The Baud Rate is used to configure the communication speed for communication between the controller and servo over the RS485 serial bus.
+The Baud Rate is used to configure the communication speed for communication between the controller and servo over the RS-485 serial bus.
 
 |      Value      |  Nominal Baud Rate<br>[bps]  | Actual Baud Rate<br>[bps] |  Error Rate<br>[%] |
 |:---------------:|:---------------------:|:-------------------------:|:------------------:|
