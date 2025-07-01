@@ -2,8 +2,7 @@
 <div style="margin-left: 2em;">
 [video]  
 `Place Mission` involves safely docking in front of the door and placing the delivery goods in the designated area.  
-We use LiDAR data to dock perpendicular to the door.
-By comparing the distances from the LiDAR at `+10°` and `-10°`, the robot aligns itself so that the distances are equal, and then proceeds to dock until it reaches a specified distance from the door.
+We use LiDAR data to dock perpendicular to the door. By comparing the distances from the LiDAR at `+10°` and `-10°`, the robot aligns itself so that the distances are equal, and then proceeds to dock until it reaches a specified distance from the door.
 </div>
 
 - **Running Module**
