@@ -1,9 +1,10 @@
+- **Description**  
 In the Pick Up mission, the goal is to accurately park in front of a basket of ordered food and hook the basket onto the robot arm.  
 - **Pick Up process**  
 <div style="margin-left: 2em;">
 1. Visits each pickup location in turn and uses object detection to determine if it's the right place.
-2. Once you're in the right place, use `aruco_tracker.py` to track the ArUco marker.
-3. Use `aruco_parking.py` to park in front of the ArUco marker.
+2. Once you're in the right place, use `aruco_tracker_node` to track the ArUco marker.
+3. Use `aruco_parking_node` to park in front of the ArUco marker.
 4. After parking, hang the basket using a simple arm in 1 DOF.  
 
 **NOTE**: The Pick Up process is based on the [Autonomous Parking Vision](/docs/en/platform/turtlebot3/basic_examples/#automatic-parking-vision) example and [ArUco Tracker](/docs/en/platform/turtlebot3/basic_examples/#aruco-tracker) example.

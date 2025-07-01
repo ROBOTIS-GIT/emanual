@@ -22,7 +22,7 @@ $ cd ~/turtlebot3_ws && colcon build --symlink-install
 $ sudo apt install ros-jazzy-image-transport ros-jazzy-cv-bridge ros-jazzy-vision-opencv python3-opencv libopencv-dev ros-jazzy-image-pipeline
 ```
 
-### [Setting TurtleBot3 Model](#setting-turtlebot3-model)
+<!-- ### [Setting TurtleBot3 Model](#setting-turtlebot3-model)
 Add an export line to your `~/.bashrc.` Autorace only supports the *burger_cam* model.
 ``` bash
 $ echo 'export TURTLEBOT3_MODEL=burger_cam' >> ~/.bashrc
@@ -36,4 +36,4 @@ Launch the Gazebo simulation.
 ``` bash
 $ ros2 launch turtlebot3_gazebo turtlebot3_autorace_2025.launch.py
 ```
-- Instructions for correct simulation setup are available in the [Simulation](/docs/en/platform/turtlebot3/simulation/) section of the manual.
+- Instructions for correct simulation setup are available in the [Simulation](/docs/en/platform/turtlebot3/simulation/) section of the manual. -->

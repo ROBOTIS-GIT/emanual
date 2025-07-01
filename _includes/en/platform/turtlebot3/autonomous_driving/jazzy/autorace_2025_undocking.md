@@ -1,7 +1,7 @@
 - **Description**  
 <div style="margin-left: 2em;">
 [video]  
-`Undocking module` is used in the charge station, pickup, and place missions.  
+Undocking module is used in the `charge station`, `pickup`, and `place` missions.  
 It performs a simple straight backward movement to a specific position based on AMCL localization.This node does not perform alignment. It simply undocks the robot by reversing.  
 </div>
 
@@ -19,7 +19,8 @@ $ ros2 lifecycle set /alley_mission_node configure
 $ ros2 lifecycle set /alley_mission_node activate
 ```
 
-3. Send the target goal position via a service. Either the x or y coordinate must be exactly 0.0. This node performs backward movement toward the target based on either the x or y coordinate.  
+3. Send the target goal position via a service. Either the x or y coordinate must be exactly 0.0. This node performs reverse movement based on a single coordinate axis.
+It moves backward until the non-zero coordinate reaches the target value, while the coordinate set to 0.0 is ignored.  
 ``` bash
 $ ros2 service call /undocking_target turtlebot3_autorace_msgs/srv/UndockingTarget "{target_x: 0.5, target_y: 0.0}"
 ```

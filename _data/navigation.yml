@@ -26028,6 +26028,7 @@ turtlebot3:
       - title: "Missions"
         url: /platform/turtlebot3/home_service_challenge/#missions
   - title: "Autonomous Driving"
+    url: /platform/turtlebot3/autorace_2025/#overall
     children:
     - title: "Autorace 2020"
       url: /platform/turtlebot3/autorace_2020/
