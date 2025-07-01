@@ -5,13 +5,14 @@ With the goal of delivering three items accurately and quickly, the robot must r
 > Participants will complete three delivery rounds within a 10-minute limit. The final ranking is based on total score and completion time. The competition is designed to be accessible, educational, and exciting for university students and beginners.  
 </div>
 
-- **Mission configuration**
-  - `Order Recognition`: Recognizes store signs and door numbers to determine the delivery destination.  
-  - `Alley Path`: Navigates through a narrow 30 cm-wide alley.  
-  - `Pick Up`: Detects store signs to determine whether the store is the correct pickup location, performs precise parking, and picks up the item accurately.  
-  - `Static Obstacle Path`: Detects static obstacles and safely passes through the path.  
-  - `Delivery`: Identifies the correct delivery location, docks at the door, and places the item down.  
-  - `Station Docking`: Docks at the charging station automatically after completing all missions.  
+- **Task configuration**
+  - [`Undocking`](/docs/en/platform/turtlebot3/autorace_2025/#undocking):
+  - [`Order Recognition`](/docs/en/platform/turtlebot3/autorace_2025/#order-recognition): Recognizes store signs and door numbers to determine the delivery destination.  
+  - [`Alley Path`](/docs/en/platform/turtlebot3/autorace_2025/#alley-path): Navigates through a narrow 30 cm-wide alley.  
+  - [`Pick Up`](/docs/en/platform/turtlebot3/autorace_2025/#pick-up): Detects store signs to determine whether the store is the correct pickup location, performs precise parking, and picks up the item accurately.  
+  - [`Static Obstacle Path`](/docs/en/platform/turtlebot3/autorace_2025/#static-obstacle-path): Detects static obstacles and safely passes through the path.  
+  - [`Delivery`](/docs/en/platform/turtlebot3/autorace_2025/#delivery): Identifies the correct delivery location, docks at the door, and places the item down.  
+  - [`Station Docking`](/docs/en/platform/turtlebot3/autorace_2025/#station-docking): Docks at the charging station automatically after completing all missions.  
 
 - **Provided module**  
   - `undocking_node`: A module that performs straight backward movement to a specified coordinate.  

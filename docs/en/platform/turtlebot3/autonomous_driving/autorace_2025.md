@@ -29,33 +29,33 @@ page_number: 19
 {% include en/platform/turtlebot3/autonomous_driving/jazzy/autorace_2025_getting_started.md %}
 
 ## [Tasks](#tasks)
-- [1. Undocking](#undocking)  
-- [2. Object Detection](#object-detection)  
-- [3. Alley](#alley)  
-- [4. Pick up](#pick-up)  
-- [5. Bollard](#bollard)  
-- [6. Place](#place)  
-- [7. Docking](#docking)  
+[1. Undocking](#undocking)  
+[2. Order Recognition](#order-recognition)  
+[3. Alley Path](#alley-path)  
+[4. Pick up](#pick-up)  
+[5. Static Obstacle Path](#static-obstacle-path)  
+[6. Delivery](#delivery)  
+[7. Station Docking](#station-docking)  
 
 ### [Undocking](#undocking)
 {% include en/platform/turtlebot3/autonomous_driving/jazzy/autorace_2025_undocking.md %}
 
-### [Object Detection](#object-detection)
+### [Order Recognition](#order-recognition)
 {% include en/platform/turtlebot3/autonomous_driving/jazzy/autorace_2025_object_detection.md %}
 
-### [Alley](#alley)
+### [Alley Path](#alley-path)
 {% include en/platform/turtlebot3/autonomous_driving/jazzy/autorace_2025_alley.md %}
 
 ### [Pick up](#pick-up)
 {% include en/platform/turtlebot3/autonomous_driving/jazzy/autorace_2025_pickup.md %}
 
-### [Bollard](#bollard)
+### [Static Obstacle Path](#static-obstacle-path)
 {% include en/platform/turtlebot3/autonomous_driving/jazzy/autorace_2025_bollard.md %}
 
-### [Place](#place)
+### [Delivery](#delivery)
 {% include en/platform/turtlebot3/autonomous_driving/jazzy/autorace_2025_place.md %}
 
-### [Docking](#docking)
+### [Station Docking](#station-docking)
 {% include en/platform/turtlebot3/autonomous_driving/jazzy/autorace_2025_docking.md %}
 
 </section>
