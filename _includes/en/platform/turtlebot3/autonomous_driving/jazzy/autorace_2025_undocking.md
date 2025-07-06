@@ -1,7 +1,7 @@
 - **Description**  
 <div style="margin-left: 2em;">
 [video]  
-Undocking module is used in the `charge station`, `pickup`, and `place` missions.  
+Undocking Task is used in the `charge station`, `pickup`, and `place` missions.  
 It performs a simple straight backward movement to a specific position based on AMCL localization.This node does not perform alignment. It simply undocks the robot by reversing.  
 </div>
 
