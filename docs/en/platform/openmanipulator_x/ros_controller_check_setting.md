@@ -7,8 +7,9 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_x/ros_controller_check_setting/
 tabs: "ROS"
-tab_title1: Humble
-tab_title2: Noetic
+tab_title1: Jazzy
+tab_title2: Humble
+tab_title3: Noetic
 tab_title6: Arduino
 
 sidebar:
@@ -34,11 +35,15 @@ page_number: 7
 ### [Manipulator Description](#manipulator-description)
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/controller/check_setting_jazzy.md %}
+</section>
+
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
 Not supported.
 {: .notice--warning}
 </section>
 
-<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
 {% include en/platform/openmanipulator_x/controller/check_setting_noetic.md %}
 </section>
 
@@ -50,10 +55,14 @@ Not supported
 ### [RViz](#rviz)
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/controller/check_setting_rviz_humble.md %}
+{% include en/platform/openmanipulator_x/controller/check_setting_rviz_jazzy.md %}
 </section>
 
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/controller/check_setting_rviz_humble.md %}
+</section>
+
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
 {% include en/platform/openmanipulator_x/controller/check_setting_rviz_noetic.md %}
 </section>
 

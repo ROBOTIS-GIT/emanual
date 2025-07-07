@@ -7,8 +7,9 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_x/ros_perceptions/
 tabs: "ROS"
-tab_title1: Humble
-tab_title2: Noetic
+tab_title1: Jazzy
+tab_title2: Humble
+tab_title3: Noetic
 tab_title6: Arduino
 sidebar:
   title: "OpenMANIPULATOR-X"
@@ -24,20 +25,18 @@ page_number: 12
 # [Perceptions](#perceptions)
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-**NOTE**
-Please run the instructions below on a PC with ROS packages installed.
-{: .notice--info}
-</section>
-
-## [Camera](#camera)
-
-<section data-id="{{ page.tab_title1 }}" class="tab_contents">
 This example is not supported.  
 [https://github.com/ROBOTIS-GIT/open_manipulator_perceptions](https://github.com/ROBOTIS-GIT/open_manipulator_perceptions)
 {: .notice--warning}
 </section>
 
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
+This example is not supported.  
+[https://github.com/ROBOTIS-GIT/open_manipulator_perceptions](https://github.com/ROBOTIS-GIT/open_manipulator_perceptions)
+{: .notice--warning}
+</section>
+
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
 This example is not supported.  
 [https://github.com/ROBOTIS-GIT/open_manipulator_perceptions](https://github.com/ROBOTIS-GIT/open_manipulator_perceptions)
 {: .notice--warning}
