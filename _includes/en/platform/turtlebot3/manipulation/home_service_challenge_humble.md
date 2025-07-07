@@ -7,7 +7,7 @@
 {% endcapture %}
 <div class="notice">{{ notice_01 | markdownify }}</div>
 
-![](/assets/images/platform/turtlebot3/mainpulation/home_service_challenge/kinetic/hsc_stadium_2.png)
+![](/assets/images/platform/turtlebot3/manipulation/home_service_challenge/kinetic/hsc_stadium_2.png)
 
 > Home Service Challenge Stadium and Objects
 
@@ -45,14 +45,14 @@ Simulate TurtleBot3 with OpenMANIPULATOR-X in Gazebo.
 $ ros2 launch turtlebot3_manipulation_gazebo turtlebot3_home_service_challenge.launch.py
 ```
 
-    ![gazebo_simulation](/assets/images/platform/turtlebot3/mainpulation/home_service_challenge/humble/gazebo_simulation.png)
+    ![gazebo_simulation](/assets/images/platform/turtlebot3/manipulation/home_service_challenge/humble/gazebo_simulation.png)
 
 2. Run a Nav2 for Gazebo and set `2D Pose Estimate` in Rviz.  
 ```bash
 $ ros2 launch turtlebot3_home_service_challenge_tools navigation2.launch.py
 ```
 
-    ![simulation_rviz](/assets/images/platform/turtlebot3/mainpulation/home_service_challenge/humble/navigation2_rviz.png)
+    ![simulation_rviz](/assets/images/platform/turtlebot3/manipulation/home_service_challenge/humble/navigation2_rviz.png)
 
 3. Run the core package used to carry out Home Service Challenge's mission.  
 ```bash
@@ -176,18 +176,18 @@ Using the demo package, the process of moving objects in Home Service Challenge 
 1. Approaching the target.
   - For the approach to the target with precise, TurtleBot3 wheels are directly controlled by computing target's location from AR marker. (Used Topic : `/target_maker_id`, `/cmd_vel`) Try twice for reliable performance.
     
-    ![demo1](/assets/images/platform/turtlebot3/mainpulation/home_service_challenge/humble/demo1.png)
+    ![demo1](/assets/images/platform/turtlebot3/manipulation/home_service_challenge/humble/demo1.png)
 
 2. Picking the target with OpenMANIPULATOR-X's gripper.
   - Use the MoveIt package to perform joint space control, workspace control, and gripper control to pick the target object. (Used Topic : `/manipulator_control`)
 
-    ![manipulation_diagram](/assets/images/platform/turtlebot3/mainpulation/home_service_challenge/kinetic/manipulation_diagram.png)
+    ![manipulation_diagram](/assets/images/platform/turtlebot3/manipulation/home_service_challenge/kinetic/manipulation_diagram.png)
     > MoveIt Diagram
 
 3. Navigating to the next room where the object will be placed.
    -Reach the next room saved in a yaml file using the Nav2 package.
     
-    ![demo2](/assets/images/platform/turtlebot3/mainpulation/home_service_challenge/humble/demo2.png)
+    ![demo2](/assets/images/platform/turtlebot3/manipulation/home_service_challenge/humble/demo2.png)
 
 4. Approaching the target.
 
@@ -195,4 +195,4 @@ Using the demo package, the process of moving objects in Home Service Challenge 
 
 6. Returning to the starting point using the Nav2 package.
 
-   ![demo3](/assets/images/platform/turtlebot3/mainpulation/home_service_challenge/humble/demo3.png)
+   ![demo3](/assets/images/platform/turtlebot3/manipulation/home_service_challenge/humble/demo3.png)

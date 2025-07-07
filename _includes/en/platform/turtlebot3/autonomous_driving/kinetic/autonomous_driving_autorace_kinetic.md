@@ -434,7 +434,7 @@ Until now, all the preprocess of image must have been tested.
 
 ### [TurtleBot3 AutoRace Online Competition](#turtlebot3-autorace-online-competition)
 
-![](/assets/images/platform/turtlebot3/overview/challenges/competition_autorace.png)
+![](/assets/images/platform/turtlebot3/overview/overview/challenges/competition_autorace.png)
 
 - [TurtleBot3 AutoRace](http://emanual.robotis.com/docs/en/platform/turtlebot3/challenges/#online-competition-on-rds)
 
