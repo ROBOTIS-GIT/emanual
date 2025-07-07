@@ -46,10 +46,10 @@ For most Linux users, the [Debian package installation method](https://docs.ros.
 2. Copy the CLI commands located in the green box and paste into your terminal with `ctrl` + `shift` + `v`  
   ![](/assets/images/platform/turtlebot3/quick_start/quick_start/ros2_install1-.png)    
   
-1. Generally, ros-humble-desktop is recommended for the `Remote PC`  
+3. Generally, ros-humble-desktop is recommended for the `Remote PC`  
   ![](/assets/images/platform/turtlebot3/quick_start/quick_start/ros2_install2-.png)  
   
-1. Add a line sourcing your environment to your bashrc.
+4. Add a line sourcing your environment to your bashrc.
 <br>**[Remote PC]**  
   ```bash
 echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc  
