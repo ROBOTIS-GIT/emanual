@@ -35,4 +35,4 @@ $ rosservice call turtlebot3_panorama/take_pano 0 360.0 30.0 0.3
 ```bash
 $ rqt_image_view image:=/turtlebot3_panorama/panorama
 ```
-  ![](/assets/images/platform/turtlebot3/application/panorama_view.png)
+  ![](/assets/images/platform/turtlebot3/basic_examples/panorama/panorama_view.png)

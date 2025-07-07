@@ -159,7 +159,7 @@ $ ros2 run camera_calibration cameracalibrator \
 
 5. **Proceed with the calibration**  
 When a checkerboard is detected, each intersection is connected. Modify the position of the checkerboard until the green bar on the right is filled to activate the button.  
-    ![calibration](/assets/images/platform/turtlebot3/sbc_setup/calibration.png)  
+    ![calibration](/assets/images/platform/turtlebot3/quick_start/sbc_setup/calibration.png)  
 <br>
 
 6. **Apply calibration**  

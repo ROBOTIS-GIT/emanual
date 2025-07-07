@@ -36,7 +36,7 @@ If you need more help with installing Ubuntu, check out the step-by-step guide f
 
 ### [Install ROS on PC](#install-ros-on-pc)
 
-![](/assets/images/platform/turtlebot3/logo_ros.png)
+![](/assets/images/platform/turtlebot3/logo/logo_ros.png)
 
 The following script will allow you to simplify the ROS installation procedure. Run the following command in a terminal window. The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. The shortcut key to open a terminal is `Ctrl`+`Alt`+`t`. After installing ROS, please reboot PC.
 

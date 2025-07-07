@@ -4,7 +4,7 @@
   - This green arrow is a marker that can specify the destination of the robot. 
   - The root of the arrow is `x`, `y` coordinate of the destination, and the angle `θ` is determined by the orientation of the arrow.
   - As soon as x, y, &theta; are set, TurtleBot3 will start moving to the destination immediately.
-  ![](/assets/images/platform/turtlebot3/ros2/tb3_navigation2_rviz_02.png)
+  ![](/assets/images/platform/turtlebot3/navigation/tb3_navigation2_rviz_02.png)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VtyqUuuZAFA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

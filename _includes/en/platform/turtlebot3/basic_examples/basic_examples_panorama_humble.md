@@ -89,5 +89,5 @@ Images will be saved automatically under `~/panorama_results/`. You can simply o
 > Individual snapshots: snapshot_1.jpg, snapshot_2.jpg, ...  
 > Final panorama: stitched_result.jpg  
 
-  ![](/assets/images/platform/turtlebot3/application/panorama_stitched_result.jpg)
+  ![](/assets/images/platform/turtlebot3/application/basic_examples/panorama/panorama_stitched_result.jpg)
   *Example of the final stitched panorama image(stitched_result.jpg) captured by TurtleBot3.*

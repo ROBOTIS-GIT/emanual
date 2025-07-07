@@ -52,7 +52,7 @@ DYNAMIXEL Workbenchの目的は、**任意のDYNAMIXELをよりシンプルに�
 
 ### PCにROSをインストール
 
-![](/assets/images/platform/turtlebot3/logo_ros.png)
+![](/assets/images/platform/turtlebot3/logo/logo_ros.png)
 
 以下のスクリプトを使用すると、ROSのインストール手順を簡略化することができます。ターミナルウィンドウで以下のコマンドを実行します。ターミナルアプリは、画面左上のUbuntu検索アイコンから見つけることができます。もしくは、ショートカットキーである`Ctrl`+`Alt`+`T`を使うことでも見つけられます。ROSをインストールした後は、PCを再起動してください。  
 

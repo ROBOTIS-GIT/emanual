@@ -26,7 +26,7 @@ So we recommend that add your settings in `bashrc` file. The following example i
 $ gedit ~/.bashrc
 ```
 
-![](/assets/images/platform/turtlebot3/bringup/bashrc.png)
+![](/assets/images/platform/turtlebot3/quick_start/bringup/bashrc.png)
 
 ``` bash
 $ source ~/.bashrc
