@@ -1,6 +1,6 @@
 {% capture notice_01 %}
 **NOTE**: 
-For ROS 2 Jazzy, we recommend using Docker for a more reliable and isolated development environment. Please refer to the [Install ROS on PC](#install-ros-on-pc) section for Docker installation instructions.
+For ROS 2 Jazzy, we recommend using Docker for a more reliable and isolated development environment. Please refer to the [Docker Environment](#docker-environment) section for Docker installation instructions.
 {: .notice--info}
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
