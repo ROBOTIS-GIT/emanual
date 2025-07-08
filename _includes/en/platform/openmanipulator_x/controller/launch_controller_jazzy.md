@@ -268,4 +268,4 @@ $ ros2 launch open_manipulator_bringup omx.launch.py
 {% capture notice_02 %}
 **NOTE**: OMX controller is compatible with [Protocol 2.0](/docs/en/dxl/protocol2/) which supports `MX 2.0`, `X` and `Pro` series. [Protocol 1.0](/docs/en/dxl/protocol1/) does not support SyncRead instructions to access to multiple DYNAMIXEL's's simultaneously.  
 {% endcapture %}
-<div class="notice--info">{{ notice_02 | markdownify}}</div> 
+<div class="notice--info">{{ notice_02 | markdownify }}</div>
