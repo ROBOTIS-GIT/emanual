@@ -1,8 +1,6 @@
-## Docker Installation (Recommended)
-
 This method provides an isolated environment with all dependencies pre-installed.
 
-### Install Docker and Docker Compose
+#### Install Docker and Docker Compose
 
 **Container Engine**: Docker Engine
 
@@ -14,13 +12,13 @@ Follow the [official Docker installation guide](https://docs.docker.com/engine/i
 3. Enable Docker to start on boot
 4. Verify installation with `docker run hello-world`
 
-### Clone the Repository
+#### Clone the Repository
 ```bash
 $ git clone -b jazzy https://github.com/ROBOTIS-GIT/open_manipulator.git
 $ cd open_manipulator
 ```
 
-### Container Management
+#### Container Management
 The repository includes a container management script with the following commands:
 
 ```bash
@@ -42,7 +40,7 @@ $ ./docker/container.sh stop
 {% endcapture %}
 <div class="notice--warning">{{ warning_01 | markdownify }}</div>
 
-### Data Persistence
+#### Data Persistence
 The container maps the following directories for data persistence:
 
 - `./docker/workspace:/workspace` - The workspace directory inside the docker folder is mapped to `/workspace` inside the container
