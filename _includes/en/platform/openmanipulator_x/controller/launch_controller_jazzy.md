@@ -1,4 +1,4 @@
-Open a new terminal and launch the OMX packages for ROS 2 Jazzy.
+Open a new terminal and launch the OM packages for ROS 2 Jazzy.
 
 - When operating with `U2D2`  
 Close all terminal and enter the command below in each new terminal.
@@ -7,7 +7,7 @@ $ ros2 launch open_manipulator_bringup omx.launch.py
 ```
 
 - When operating with `OpenCR`  
-Close all terminal and enter the command below in the new terminal.
+Close all terminals and enter the command below in the new terminal.
 ```bash
 $ ros2 launch open_manipulator_bringup omx.launch.py port_name:=/dev/ttyACM0
 ```
@@ -268,4 +268,4 @@ $ ros2 launch open_manipulator_bringup omx.launch.py
 {% capture notice_02 %}
 **NOTE**: OMX controller is compatible with [Protocol 2.0](/docs/en/dxl/protocol2/) which supports `MX 2.0`, `X` and `Pro` series. [Protocol 1.0](/docs/en/dxl/protocol1/) does not support SyncRead instructions to access to multiple DYNAMIXEL's's simultaneously.  
 {% endcapture %}
-<div class="notice--info">{{ notice_02 | markdownify}}</div> 
+<div class="notice--info">{{ notice_02 | markdownify }}</div>

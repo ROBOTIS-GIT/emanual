@@ -7,4 +7,4 @@ Gravity compensation is a feature that compensates for the gravitational force a
 
 To enable gravity compensation, you need to modify the controller configuration. The gravity compensation parameters are defined in the URDF file and the controller configuration files.
 
-For more information about gravity compensation, please refer to the [ROS 2 Control documentation](https://control.ros.org/). 
+For more information about gravity compensation, please refer to the [ROS 2 Control documentation](https://control.ros.org/jazzy/).

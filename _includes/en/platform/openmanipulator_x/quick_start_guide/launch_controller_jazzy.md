@@ -37,7 +37,7 @@ $ ros2 launch open_manipulator_bringup omx.launch.py port_name:=/dev/ttyACM0
 {% capture warning_01 %}
 **WARNING** :  
 Please check each joint position before running OMX. If joints are set inappropriately, OMX might not start operating.
-The picture of OMX below is showing you the ideal pose of OMX. Please adjust each joints along with the following picture when DYNAMIXEL torque is not enabled.    
+The picture of OMX below is showing you the ideal pose of OMX. Please adjust each joint to match the following picture when DYNAMIXEL torque is not enabled.
         
 <img src="/assets/images/platform/openmanipulator_x/real_omx_init_pose.png" width="250">
 {% endcapture %}

@@ -15,7 +15,7 @@ In order to run this Quick Start Guide, you should be prepared with below items.
 
 {% capture note_01 %}
 **NOTE**
-- OMX is **operable as a standalone device** without ROS when connected with a Arduino programmed **OpenCR1.0**.  
+- OMX is **operable as a standalone device** without ROS when connected with an Arduino programmed **OpenCR1.0**.
 - Please select `Arduino` at the top of each page as below to find more details.
 
   ![](/assets/images/content_select_button.png)
