@@ -7,7 +7,7 @@ $ ros2 launch open_manipulator_bringup omx.launch.py
 ```
 
 - When operating with `OpenCR`  
-Close all terminal and enter the command below in the new terminal.
+Close all terminals and enter the command below in the new terminal.
 ```bash
 $ ros2 launch open_manipulator_bringup omx.launch.py port_name:=/dev/ttyACM0
 ```
