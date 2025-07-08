@@ -1,4 +1,4 @@
-Open a new terminal and launch the OMX packages for ROS 2 Jazzy.
+Open a new terminal and launch the OM packages for ROS 2 Jazzy.
 
 - When operating with `U2D2`  
 Close all terminal and enter the command below in each new terminal.
