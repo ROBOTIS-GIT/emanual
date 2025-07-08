@@ -3,7 +3,16 @@
 This method provides an isolated environment with all dependencies pre-installed.
 
 ### Install Docker and Docker Compose
-Follow the official Docker installation guide: [Install Docker Engine](https://docs.docker.com/engine/install/)
+
+**Container Engine**: Docker Engine
+
+Follow the [official Docker installation guide](https://docs.docker.com/engine/install/ubuntu/) and complete the [post-installation steps](https://docs.docker.com/engine/install/linux-postinstall/).
+
+**Required steps**:
+1. [Install Docker Engine](https://docs.docker.com/engine/install/ubuntu/) using the repository method
+2. Add your user to the docker group
+3. Enable Docker to start on boot
+4. Verify installation with `docker run hello-world`
 
 ### Clone the Repository
 ```bash
