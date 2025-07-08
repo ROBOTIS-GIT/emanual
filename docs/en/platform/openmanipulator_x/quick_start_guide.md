@@ -49,8 +49,7 @@ page_number: 4
 </section>
 
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
-Docker Environment is not supported for ROS 2 Humble. Please use the Host Installation method below.
-{: .notice--info}
+{% include en/platform/openmanipulator_x/quick_start_guide/quickstart_humble_docker.md %}
 </section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
