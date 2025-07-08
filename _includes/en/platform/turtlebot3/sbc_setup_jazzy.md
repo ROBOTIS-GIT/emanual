@@ -199,6 +199,7 @@ $ sudo apt install python3-argcomplete python3-colcon-common-extensions libboost
 $ sudo apt install ros-jazzy-hls-lfcd-lds-driver
 $ sudo apt install ros-jazzy-turtlebot3-msgs
 $ sudo apt install ros-jazzy-dynamixel-sdk
+$ sudo apt install ros-jazzy-xacro
 $ sudo apt install libudev-dev
 $ mkdir -p ~/turtlebot3_ws/src && cd ~/turtlebot3_ws/src
 $ git clone -b jazzy https://github.com/ROBOTIS-GIT/turtlebot3.git
