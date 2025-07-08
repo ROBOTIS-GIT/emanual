@@ -68,7 +68,8 @@ A list of service servers that open_manipulator_controller has.
 ##### /set_actuator_state
 - [open_manipulator_msgs/SetActuatorState]{: .popup}
 - The user can use this service to control the state of actucators.   
-- If the user set true at set_actuator_state valuable, the actuator will be enabled.  
+- The user can use this service to control the state of actuators.
+- If the user set true at set_actuator_state variable, the actuator will be enabled.
 - If the user set false at set_actuator_state valuable, the actuator will be disabled.
 
 ##### /goal_drawing_trajectory
