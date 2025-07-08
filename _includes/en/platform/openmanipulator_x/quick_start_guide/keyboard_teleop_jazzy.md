@@ -1,4 +1,4 @@
-## Option 1: Using Docker
+#### Option 1: Using Docker
 
 {% capture notice_01 %}
 **NOTE**: 
@@ -11,7 +11,7 @@ Open a terminal and enter below command.
 $ ros2 run open_manipulator_teleop omx_teleop
 ```
 
-## Option 2: Host Installation
+#### Option 2: Host Installation
 
 Open a terminal and enter below command.  
 ```bash

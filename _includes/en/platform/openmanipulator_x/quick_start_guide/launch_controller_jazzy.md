@@ -1,6 +1,6 @@
 After running this section, software controller that controls the OMX will be launched and each joint of the OMX will be locked (Torque On).  
 
-## Option 1: Using Docker
+#### Option 1: Using Docker
 
 {% capture notice_01 %}
 **NOTE**: 
@@ -20,7 +20,7 @@ Close all terminal and enter the command below in the new terminal.
 $ ros2 launch open_manipulator_bringup omx.launch.py port_name:=/dev/ttyACM0
 ```
 
-## Option 2: Host Installation
+#### Option 2: Host Installation
 
 - When operating with `U2D2`  
 Close all terminal and enter the command below in each new terminal.

@@ -1,11 +1,9 @@
-## Docker Installation (Available)
-
 This method provides an isolated environment with all dependencies pre-installed.
 
 **NOTE**: Docker Environment is supported for ROS 2 Humble, but detailed manual documentation is provided starting from the Jazzy version. Please refer to the [Jazzy Docker Environment](/docs/en/platform/openmanipulator_x/quick_start_guide/#docker-environment) for comprehensive setup instructions.
 {: .notice--info}
 
-### Install Docker and Docker Compose
+#### Install Docker and Docker Compose
 
 **Container Engine**: Docker Engine
 
@@ -17,13 +15,13 @@ Follow the [official Docker installation guide](https://docs.docker.com/engine/i
 3. Enable Docker to start on boot
 4. Verify installation with `docker run hello-world`
 
-### Clone the Repository
+#### Clone the Repository
 ```bash
 $ git clone -b humble https://github.com/ROBOTIS-GIT/open_manipulator.git
 $ cd open_manipulator
 ```
 
-### Container Management
+#### Container Management
 Use Docker Compose to manage the container:
 
 ```bash
@@ -39,7 +37,7 @@ $ docker compose down
 {% endcapture %}
 <div class="notice--warning">{{ warning_01 | markdownify }}</div>
 
-### Data Persistence
+#### Data Persistence
 The container maps the following directories for data persistence:
 
 - `./docker/workspace:/workspace` - The workspace directory inside the docker folder is mapped to `/workspace` inside the container
