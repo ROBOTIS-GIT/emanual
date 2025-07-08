@@ -47,7 +47,7 @@ A list of topics that the open_manipulator_controller publishes.
 **NOTE**: These topics are messages for checking the status of the robot regardless of the robot's motion.
 {: .notice--info}
 
-#### [Subscribed Topic List](#published-topic-list)
+#### [Subscribed Topic List](#subscribed-topic-list)
 
 A list of topics that the open_manipulator_controller subscribes.
 

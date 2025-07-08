@@ -6,7 +6,7 @@ After completing this section, turn on the power switch and check if all DYNAMIX
 ![](/assets/images/icon_unfold.png) **Option 1(Recommended) : Use U2D2 as a communication interface**
 </summary>
 
-#### Connection
+#### U2D2 Connection
 Connect micro USB (connected to PC), DYNAMIXEL's(OpenMANIPULATOR-X), and 12V Power to U2D2 and U2D2 power hub board as shown below.
 
 <img src="/assets/images/platform/openmanipulator_x/OpenManipulator_u2d2_setup2.png" width="800">
@@ -51,7 +51,7 @@ $ cat /sys/bus/usb-serial/devices/ttyUSB0/latency_timer
 This section describes how to set up OpenCR as a communication board between **ROS Packages** of PC and DYNAMIXEL's of OpenMANIPULATOR-X.  
 If you want to operate OpenMANIPULATOR-X on embedded system (OpenCR) without ROS, please select the `Arduino` tab at the top of the page.
 
-#### Connection
+#### OpenCR Connection
 
 Connect micro USB (connected to PC), DYNAMIXEL's(OpenMANIPULATOR-X), and 12V Power to OpenCR as shown below.
 
