@@ -22,7 +22,7 @@ $ ros2 launch open_manipulator_moveit_config omx_moveit.launch.py
 5. Change the **Planning Group** to `gripper` and use **Goal State** options such as `close` or `open` to open and close the gripper.  
 
 #### [Using MoveIt! with Gazebo](#using-moveit-with-gazebo)
-Gazebo is a tool to simulate and test your robot in a virtual enviroment, without an actual robot.  
+Gazebo is a tool to simulate and test your robot in a virtual environment, without an actual robot.
 
 Also, you can use MoveIt feature using your virtual robot in the Gazebo enviroment with the following commands.
 
