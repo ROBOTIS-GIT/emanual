@@ -32,9 +32,9 @@ $ git clone -b jazzy https://github.com/ROBOTIS-GIT/DynamixelSDK.git && \
 
 ```bash
 $ cd ~/ros2_ws
-$ rosdep init
+$ sudo rosdep init
 $ rosdep update
-$ rosdep install -i --from-path src --rosdistro $ROS_DISTRO --skip-keys="librealsense2 dynamixel_hardware_interface dynamixel_interfaces dynamixel_sdk open_manipulator" -y
+$ rosdep install --from-paths src -y --ignore-src
 ```
 
 ### Build the Package
