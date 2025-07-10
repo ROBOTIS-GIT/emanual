@@ -204,6 +204,7 @@ $ sudo apt install libudev-dev
 $ mkdir -p ~/turtlebot3_ws/src && cd ~/turtlebot3_ws/src
 $ git clone -b humble https://github.com/ROBOTIS-GIT/turtlebot3.git
 $ git clone -b humble https://github.com/ROBOTIS-GIT/ld08_driver.git
+$ git clone -b humble https://github.com/ROBOTIS-GIT/coin_d4_driver
 $ cd ~/turtlebot3_ws/src/turtlebot3
 $ rm -r turtlebot3_cartographer turtlebot3_navigation2
 $ cd ~/turtlebot3_ws/
@@ -236,17 +237,17 @@ $ source ~/.bashrc
 {: .notice--warning}
 
 ### LDS Configuration
-The TurtleBot3 LDS has been updated to the LDS-02 since 2022.  
-If you have purchased a TurtleBot3 after 2022, please use `LDS-02` for your LDS_MODEL.
+The TurtleBot3 LDS has been updated to the LDS-03 since 2025.  
+If you have purchased a TurtleBot3 after 2025, please use `LDS-03` for your LDS_MODEL.
 
-|LDS-01|LDS-02|
-|:---:|:---:|
-|![](/assets/images/platform/turtlebot3/appendix_lds/lds_small.png)|![](/assets/images/platform/turtlebot3/appendix_lds/lds_ld08_small.png)|
+|LDS-01|LDS-02|LDS-03|
+|:---:|:---:|:---:|
+|![](/assets/images/platform/turtlebot3/appendix_lds/lds_small.png)|![](/assets/images/platform/turtlebot3/appendix_lds/lds_ld08_small.png)|![](/assets/images/platform/turtlebot3/appendix_lds/lds_coind4_small.png)
 
-Depending on your LDS model, use `LDS-01` or `LDS-02`.  
+Depending on your LDS model, use `LDS-01`, `LDS-02` or `LDS-03`.  
 **[TurtleBot3 SBC]**  
 ```bash
-$ echo 'export LDS_MODEL=LDS-02' >> ~/.bashrc
+$ echo 'export LDS_MODEL=LDS-03' >> ~/.bashrc
 ```
 
 Apply changes with the command below.  
