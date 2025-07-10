@@ -28,7 +28,7 @@ page_number: 47
 
 ### [DYNAMIXEL](#appendix-dynamixel)
 
-![](/assets/images/platform/turtlebot3/appendix_dynamixel/dynamixel_x.jpg)
+![](/assets/images/platform/turtlebot3/more_info/appendix_dynamixel/dynamixel_x.jpg)
 
 #### [Overview](#overview)
 

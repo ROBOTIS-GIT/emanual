@@ -22,16 +22,16 @@ page_number: 1
 **Notice**: With the formation of the Platform Team in 2025, substantial resources will be dedicated to advancing the open platform. As a priority, **TurtleBot3** will receive full support for ROS 2 Humble, with **comprehensive example implementations** set for release in Q1 2025. In Q2, support will expand to **ROS 2 Jazzy** and **Gazebo Sim**, ensuring seamless integration with the latest advancements in the ROS ecosystem and simulation environments.
 {: .notice--danger}
 
-![](/assets/images/platform/turtlebot3/overview/turtlebot3_with_logo.png)
+![](/assets/images/platform/turtlebot3/overview/overview/turtlebot3_with_logo.png)
 
 {% capture info_00 %}
-![](/assets/images/platform/turtlebot3/logo_raspberry_pi.png){: width="30px"} **Rasbperry Pi 4**  
+![](/assets/images/platform/turtlebot3/logo/logo_raspberry_pi.png){: width="30px"} **Rasbperry Pi 4**  
 The TurtleBot3 platform has been upgraded to include the `Raspberry Pi 4` as the standard onboard SBC.
 {% endcapture %}
 <div class="notice--success">{{ info_00 | markdownify }}</div>
 
 {% capture info_01 %}
-![](/assets/images/platform/turtlebot3/logo_nvidia.jpg){: width="65px"} **Jetson Nano**  
+![](/assets/images/platform/turtlebot3/logo/logo_nvidia.jpg){: width="65px"} **Jetson Nano**  
 TurtleBot3 Hardware also supports the use of the Nvidia `Jetson Nano` SBC.  
 Please refer to the video below in order to set up a Jetson Nano for use with a TurtleBot3.  
 The [Jetson Nano Developer Kit setup](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit) instructions must be completed prior to preparation for TurtleBot3 useage.
@@ -61,15 +61,15 @@ The most important part of the TurtleBot3 collaboration project is the open sour
 If you are interested in partnership with us to continue to further the development of open source robotics, please fill out [this form][partners] to learn more about how we can work together.
 
 - TurtleBot3 Providers  
-  ![](/assets/images/platform/turtlebot3/logo_platform_providers.png)
+  ![](/assets/images/platform/turtlebot3/logo/logo_platform_providers.png)
 
 - TurtleBot3 Partners and Research Collaborators  
-  ![](/assets/images/platform/turtlebot3/logo_platform_sponsors.png)
+  ![](/assets/images/platform/turtlebot3/logo/logo_platform_sponsors.png)
 
   \* Each collaboration member's web page can be found [here][partners].
 
 - TurtleBot3 Distributors  
-  ![](/assets/images/platform/turtlebot3/logo_platform_players.png)
+  ![](/assets/images/platform/turtlebot3/logo/logo_platform_players.png)
 
   \* Each collaboration member's web page can be found [here][partners].
 
