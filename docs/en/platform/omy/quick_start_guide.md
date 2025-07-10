@@ -24,22 +24,22 @@ page_number: 3
 ## [SSH connection](#ssh-connection)
 
 ### Network Access Method
-Start by connecting the `robot pc` to the same network as `user PC` using a LAN cable, then power on the OMY (press and release the power button until it turns white). OMY OS uses mDNS technology to discover or access its IP address.  
+Start by connecting the `robot pc` to the same network as the `user PC` using a LAN cable, then power on the OMY (press and release the power button until it turns white). The OMY OS uses mDNS technology to discover its IP address.  
 Each time OMY OS boots, it sets the SBC’s hostname to the serial number (SN) written on the product (e.g., SNPR44B9999).  
-In environments where UDP Multicast is available (such as being on the same router), you can discover and connect to the IP address. Static IP assignment and other network settings are supported through the Manager.
+In environments where UDP Multicast is available (such as being on the same router), you can connect directly to the `robot pc` using the hostname. Static IP assignment and other network settings for more advanced connection options are supported through the Manager.
 
 <img src="/assets/images/platform/omy/omy_serial_number.png" width="600"/>
 
 ### SSH Access Method
 (Assuming the SN is ‘SNPR44B9999’)
-To access via SSH from a Linux environment, use the following command:
+To access via SSH over the local network from a Linux environment, use the following command:
 ```
 ssh root@omy-SNPR44B9999.local
 ```
 
 ## [Docker Setup](#docker-setup)
 
-1. Connect to OMY via SSH.
+1. Connect to the OMY via SSH.
 2. Check running containers using `docker ps`.
 3. Docker-related files are located in `/data/docker/open_manipulator/docker`. Navigate to this location using `cd`.
 ```bash
@@ -49,7 +49,7 @@ cd /data/docker/open_manipulator/docker
 
 {% capture unpacking_info_01 %}
 
-**Note**: The `/workspace` folder inside the container is volume mapped (a feature that links file systems) to `/data/docker/open_manipulator/workspace` on the host. All other areas are volatile and will be lost if the container is damaged or deleted, so please be careful.
+**Note**: The `/workspace` folder inside the container is volume mapped (a feature that links file systems) to `/data/docker/open_manipulator/workspace` on the host. All other areas are volatile and will be lost if the container is damaged or deleted.
 {% endcapture %}
 <div class="notice--info">{{ unpacking_info_01 | markdownify }}</div>
 
@@ -60,8 +60,8 @@ cd /data/docker/open_manipulator/docker
 {% capture unpacking_danger_02 %}
 **DANGER**
 
-During the first operation, the Unpacking script must be executed to prevent self-collision.  
-(always run ONLY in the packed posture)
+Following initial setup, the Unpacking script must be executed to prevent self-collision.  
+(run this script ONLY in the packed posture, running it in any other orientation may cause damage)
 
 {% endcapture %}
 <div class="notice--danger">{{ unpacking_danger_02 | markdownify }}</div>
@@ -79,14 +79,14 @@ This is the command to UNPACK the manipulator,
 ros2 launch open_manipulator_bringup unpack_y.launch.py
 ```
 
-and the following is the command to PACK it back.  
+and the following is the command to PACK it back into it's folded configuration.  
 ```
 ros2 launch open_manipulator_bringup pack_y.launch.py
 ```
 
 ## [Software Setup](#software-setup)
 
-> ⚠️ This setup is intended for development on a **user PC**. **The robot PC** included with OMY comes pre-configured with the same software stack.
+> ⚠️ This setup is intended for development on the **user PC**. The **robot PC** included with OMY comes pre-configured with the same software stack.
 ###  Software Setup for OMY
 
 The **ROBOTIS OMY** robotic arm utilizes two key software packages to enable intelligent manipulation through **Physical AI**:
@@ -99,7 +99,7 @@ The **ROBOTIS OMY** robotic arm utilizes two key software packages to enable int
 * **Operating System**: Any Linux distribution
 
   * The container runs **Ubuntu 24.04 + ROS 2 Jazzy**
-  * Host OS version does **not** need to match
+  * The Host OS version does **not** need to match.
 
 * **Docker Engine**
 
@@ -141,7 +141,7 @@ volumes:
 > * Store your development code in `/workspace`
 > * Save model outputs in `lerobot/outputs`
 > * Track code changes in the mapped `open_manipulator` folder
-> * Use `huggingface` volume to cache pretrained models
+> * Use the `huggingface` volume to cache pretrained models
 
 
 ## Container Lifecycle
